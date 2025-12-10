@@ -39,11 +39,11 @@ function A(e) {
     onClose: P,
     application: R
   } = e, {
-    themeType: D
-  } = (0, h.z)(), w = (0, c.q)(R), x = (0, f.L)(null != (t = null == A ? true : A.application_id) ? t : null == R ? true : R.id), {
+    themeType: w
+  } = (0, h.z)(), D = (0, c.q)(R), x = (0, f.L)(null != (t = null == A ? true : A.application_id) ? t : null == R ? true : R.id), {
     analyticsLocations: L
-  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), j = D === C.l.MODAL || D === C.l.MODAL_V2;
-  return x || !w || null == R || j ? (0, s.Z)(A) ? (0, r.jsx)(O.Z, {
+  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), j = w === C.l.MODAL || w === C.l.MODAL_V2;
+  return x || !D || null == R || j ? (0, s.Z)(A) ? (0, r.jsx)(O.Z, {
     platformType: T.ABu.XBOX,
     icon: () => (0, r.jsx)(m.Z, {}),
     onAction: N

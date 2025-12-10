@@ -17,7 +17,7 @@ require.d(exports, {
   ib: () => P,
   lh: () => J,
   mF: () => q,
-  ub: () => w,
+  ub: () => D,
   v1: () => k,
   x6: () => M,
   zi: () => Q
@@ -95,18 +95,18 @@ let P = () => {
     return module.minutes() >= 30 && (t += 1), module.hour(exports).minutes(0).seconds(0)
   },
   R = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? h : g),
-  D = (e, t) => {
+  w = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
     return n > 1 || n < 0 ? R(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
-function w(e, t, n) {
+function D(e, t, n) {
   null == n && (n = a()());
   let r = a()(e),
     i = null != t && "" !== t ? a()(t) : true,
     o = null != t && r.isSame(i, "day");
   return {
-    startDateTimeString: D(r, n),
+    startDateTimeString: w(r, n),
     endDateTimeString: null != i ? o ? i.format(E) : R(i, n) : true,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= a()().add(1, "hour"),

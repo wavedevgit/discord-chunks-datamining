@@ -76,8 +76,8 @@ function P(e) {
     onView: b,
     partyStatusElement: P,
     presenceActivity: R
-  } = e, D = (0, s.ye)(d), {
-    iconSrc: w,
+  } = e, w = (0, s.ye)(d), {
+    iconSrc: D,
     name: x
   } = N(E, d), L = null != (n = (0, S.v)({
     messageId: E.id,
@@ -96,7 +96,7 @@ function P(e) {
       trackingArea: f.j_.CLOUD_PLAY,
       onClick: k
     }
-  }, [k]), G = (0, p.G)(d), Z = i.useMemo(() => null != j ? j : null != G && D ? G : true, [D, j, G]), B = l.Z.useConfig({
+  }, [k]), G = (0, p.G)(d), Z = i.useMemo(() => null != j ? j : null != G && w ? G : true, [w, j, G]), B = l.Z.useConfig({
     location: "RichPresenceGameActivityInviteEmbed"
   }), {
     canStartAuthorization: F,
@@ -111,11 +111,11 @@ function P(e) {
     header: K,
     currentUserId: m,
     launchableAppId: M,
-    isEmbeddedApplication: D,
+    isEmbeddedApplication: w,
     tryWithGdnAction: U,
     staticBannerSrc: L,
     onClickContent: Z,
-    iconSrc: w,
+    iconSrc: D,
     onView: b,
     presenceActivity: R,
     analyticsLocations: a,
@@ -129,11 +129,11 @@ function P(e) {
     header: K,
     currentUserId: m,
     launchableAppId: M,
-    isEmbeddedApplication: D,
+    isEmbeddedApplication: w,
     tryWithGdnAction: U,
     staticBannerSrc: L,
     onClickContent: Z,
-    iconSrc: w,
+    iconSrc: D,
     onView: b,
     presenceActivity: R,
     currentUserPresenceActivity: h,

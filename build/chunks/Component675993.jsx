@@ -52,8 +52,8 @@ function R(e) {
   }
   return e
 }
-let D = 2,
-  w = 2e3;
+let w = 2,
+  D = 2e3;
 
 function x(e) {
   let {
@@ -236,7 +236,7 @@ function U(e) {
         is_bot_user_id_non_null: null != h,
         show_try_it_out_button: g
       })
-    }, w);
+    }, D);
     return () => clearTimeout(e)
   }, [a, u, h, g]), (0, y.BQ)(a) && (0, y.ye)(a)) ? null != u && null != h ? (0, r.jsxs)(l.ButtonGroup, {
     fullWidth: true,
@@ -275,7 +275,7 @@ function G(e) {
       let e = c * u;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, D * c),
+        minHeightOverride: Math.min(e, w * c),
         maxHeightOverride: e
       }
     }, [u, c]),
@@ -297,13 +297,13 @@ function G(e) {
         ref: s,
         className: N.markup,
         variant: "text-sm/medium",
-        lineClamp: m ? true : D,
+        lineClamp: m ? true : w,
         style: {
           maxHeight: m ? true : d.minHeightOverride
         },
         children: o
       })
-    }), null != u && u > D ? (0, r.jsxs)(l.P3F, {
+    }), null != u && u > w ? (0, r.jsxs)(l.P3F, {
       className: A.expandableDescriptionClickable,
       onClick: () => a(e => !e),
       children: [(0, r.jsx)(l.Text, {

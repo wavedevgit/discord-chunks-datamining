@@ -39,8 +39,8 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = {},
-  w = null,
+let w = {},
+  D = null,
   x = [],
   L = new Chunk810457.Z,
   j = false,
@@ -90,12 +90,12 @@ function Y(e) {
 }
 
 function W() {
-  if (null == w) {
+  if (null == D) {
     G = Chunk709054.default.fromTimestamp(Date.now());
     return
   }
-  for (let e of w.toSorted((e, t) => S.default.compare(b.ZP.lastMessageId(t), b.ZP.lastMessageId(e)))) {
-    let t = D[module];
+  for (let e of D.toSorted((e, t) => S.default.compare(b.ZP.lastMessageId(t), b.ZP.lastMessageId(e)))) {
+    let t = w[module];
     if (exports.loadState === Chunk982183.a7.UNLOADED && null != exports.mostRecentMessageId) {
       G = exports.mostRecentMessageId;
       return
@@ -109,33 +109,33 @@ function K() {
     notifyingChannelIds: e,
     staleChannelIds: t
   } = H();
-  w = module, x = exports, a()(null != w, "notifyingChannelIds should not be null");
-  let n = w.filter(e => null == D[e]),
-    r = Object.keys(D).filter(e => !(null == w ? true : w.includes(e)));
-  if (0 !== w.length && 0 === require.length && 0 === r.length) returnfalse;
-  for (let e of r) delete D[module];
+  D = module, x = exports, a()(null != D, "notifyingChannelIds should not be null");
+  let n = D.filter(e => null == w[e]),
+    r = Object.keys(w).filter(e => !(null == D ? true : D.includes(e)));
+  if (0 !== D.length && 0 === require.length && 0 === r.length) returnfalse;
+  for (let e of r) delete w[module];
   for (let e of require)
-    if (D[module] = {
+    if (w[module] = {
         loadState: Chunk982183.a7.UNLOADED,
         mostRecentMessageId: Chunk306680.ZP.lastMessageId(module)
       }, Chunk375954.Z.isReady(module)) {
       let t = Y(module);
       if (null != exports) {
         var i, o;
-        D[module].loadState = Chunk982183.a7.LOADED, D[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : D[module].mostRecentMessageId
+        w[module].loadState = Chunk982183.a7.LOADED, w[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : w[module].mostRecentMessageId
       }
-    } L.updateChannelIds(w), W()
+    } L.updateChannelIds(D), W()
 }
 
 function z() {
-  D = {}, w = null, x = [], L = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), Z = true, U = false, F = null, B = null
+  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), Z = true, U = false, F = null, B = null
 }
 
 function q() {
   var e, t, n;
-  for (let n of (K(), null != w ? w : [])) {
+  for (let n of (K(), null != D ? D : [])) {
     let r = Y(require);
-    null != r && (D[require].loadState = Chunk982183.a7.LOADED, D[require].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : module.id) ? exports : null, W())
+    null != r && (w[require].loadState = Chunk982183.a7.LOADED, w[require].mostRecentMessageId = null != (t = null == (e = r.last()) ? true : module.id) ? exports : null, W())
   }
   let r = null != (n = Chunk455199.ZP.getSettingsFilteredMentions()) ? require : [];
   L.addMessages(r.map(e => {
@@ -170,8 +170,8 @@ function $(e) {
     channelId: i,
     message: a
   } = e;
-  if (null == w || (null == (t = a.author) ? true : t.id) === (null == (n = v.default.getCurrentUser()) ? true : n.id)) returnfalse;
-  let o = w.includes(i);
+  if (null == D || (null == (t = a.author) ? true : t.id) === (null == (n = v.default.getCurrentUser()) ? true : n.id)) returnfalse;
+  let o = D.includes(i);
   if ((0, l.zd)(i)) returnfalse;
   let s = J(a),
     c = s.mentioned;
@@ -193,11 +193,11 @@ function ee(e) {
   let {
     channelId: t
   } = e;
-  if (!(null == w ? true : w.includes(t))) returnfalse;
+  if (!(null == D ? true : D.includes(t))) returnfalse;
   let n = Y(t);
   if (null == n) returnfalse;
   let r = n.length >= A.AQ || n.hasFetched && !n.hasMoreBefore;
-  D[t].loadState !== A.a7.LOADED && (D[t].loadState = r ? A.a7.LOADED : A.a7.LOADED_UNREAD), W()
+  w[t].loadState !== A.a7.LOADED && (w[t].loadState = r ? A.a7.LOADED : A.a7.LOADED_UNREAD), W()
 }
 
 function et(e) {
@@ -254,7 +254,7 @@ function eo(e) {
   return null != (null == (t = (0, I.Ag)({
     location: "NotificationsInboxStore.canLoadMore",
     autoTrackExposure: false
-  })) ? true : t.notificationCenterVariant) && null != w && !j && !M && (!n || !U) && Z
+  })) ? true : t.notificationCenterVariant) && null != D && !j && !M && (!n || !U) && Z
 }
 
 function es() {
@@ -364,10 +364,10 @@ class eE extends(r = Chunk442837.ZP.Store) {
     return L.getMessages()
   }
   getNotifyingChannelIds() {
-    return w
+    return D
   }
   getChannelInfoMap() {
-    return D
+    return w
   }
   get oldestDisplayedMessageId() {
     return G

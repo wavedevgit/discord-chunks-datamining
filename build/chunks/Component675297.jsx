@@ -59,25 +59,25 @@ function I(e) {
     cardHeight: N,
     thumbnailHeight: P,
     descriptionTextVariant: R = "text-sm/normal",
-    showOpaqueBackground: D = false
-  } = e, w = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
+    showOpaqueBackground: w = false
+  } = e, D = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
     var e;
     return c.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.lds)
-  }), L = (0, o.U)(t, S), j = (0, h.C)(t), M = (0, f.SO)(w), {
+  }), L = (0, o.U)(t, S), j = (0, h.C)(t), M = (0, f.SO)(D), {
     shouldHideGuildPurchaseEntryPoints: k
   } = (0, l.uP)(n), U = (0, h.k)(t), G = (0, E.Z)({
     guildId: n,
     guildProductListingId: t.id,
     sourceAnalyticsLocations: O
   });
-  if (null == w || k) return null;
+  if (null == D || k) return null;
   let Z = () => (0, b.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: O
     }),
     B = () => {
-      _.h(w.id, t.id)
+      _.h(D.id, t.id)
     },
     F = () => {
       (0, s.x)({
@@ -115,7 +115,7 @@ function I(e) {
     onShowFullDescription: Z,
     onTapCard: Z,
     actionMenu: H,
-    showOpaqueBackground: D,
+    showOpaqueBackground: w,
     hideRoleTag: T,
     lineClamp: C,
     cardWidth: A,

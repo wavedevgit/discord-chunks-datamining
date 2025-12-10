@@ -102,8 +102,8 @@ function y(e) {
     sparkle: N,
     notification: P,
     "aria-label": R,
-    "aria-expanded": D,
-    "aria-haspopup": w,
+    "aria-expanded": w,
+    "aria-haspopup": D,
     "aria-controls": x,
     noHover: L
   } = e, j = (0, l.Yzy)(null != g, h(_({}, b), {
@@ -128,8 +128,8 @@ function y(e) {
   return (0, r.jsxs)(l.P3F, {
     innerRef: t,
     "aria-label": R,
-    "aria-expanded": D,
-    "aria-haspopup": w,
+    "aria-expanded": w,
+    "aria-haspopup": D,
     "aria-controls": x,
     "aria-disabled": i,
     className: o()(n, f.button, {

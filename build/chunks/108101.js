@@ -28,8 +28,8 @@ var Chunk687249 = require("./687249.js"),
   N = "[object Array]",
   P = "[object Boolean]",
   R = "[object Date]",
-  D = "[object Error]",
-  w = "[object Function]",
+  w = "[object Error]",
+  D = "[object Function]",
   x = "[object GeneratorFunction]",
   L = "[object Map]",
   j = "[object Number]",
@@ -53,37 +53,37 @@ var Chunk687249 = require("./687249.js"),
   $ = {};
 
 function ee(e, t, n, N, P, R) {
-  var D, L = t & I,
+  var w, L = t & I,
     j = t & T,
     k = t & C;
-  if (n && (D = P ? n(e, N, P, R) : n(e)), true !== D) return D;
+  if (n && (w = P ? n(e, N, P, R) : n(e)), true !== w) return w;
   if (!O(e)) return e;
   var U = E(e);
   if (U) {
-    if (D = m(e), !L) return c(e, D)
+    if (w = m(e), !L) return c(e, w)
   } else {
     var G = _(e),
-      Z = G == w || G == x;
+      Z = G == D || G == x;
     if (b(e)) return l(e, L);
     if (G == M || G == A || Z && !P) {
-      if (D = j || Z ? {} : g(e), !L) return j ? d(e, s(D, e)) : u(e, o(D, e))
+      if (w = j || Z ? {} : g(e), !L) return j ? d(e, s(w, e)) : u(e, o(w, e))
     } else {
       if (!$[G]) return P ? e : {};
-      D = h(e, G, L)
+      w = h(e, G, L)
     }
   }
   R || (R = new r);
   var B = R.get(e);
   if (B) return B;
-  R.set(e, D), v(e) ? e.forEach(function(r) {
-    D.add(ee(r, t, n, r, e, R))
+  R.set(e, w), v(e) ? e.forEach(function(r) {
+    w.add(ee(r, t, n, r, e, R))
   }) : y(e) && e.forEach(function(r, i) {
-    D.set(i, ee(r, t, n, i, e, R))
+    w.set(i, ee(r, t, n, i, e, R))
   });
   var F = k ? j ? p : f : j ? keysIn : S,
     V = U ? true : F(e);
   return i(V || e, function(r, i) {
-    V && (r = e[i = r]), a(D, i, ee(r, t, n, i, e, R))
-  }), D
+    V && (r = e[i = r]), a(w, i, ee(r, t, n, i, e, R))
+  }), w
 }
-$[A] = $[N] = $[F] = $[V] = $[P] = $[R] = $[H] = $[Y] = $[W] = $[K] = $[z] = $[L] = $[j] = $[M] = $[k] = $[U] = $[G] = $[Z] = $[q] = $[Q] = $[X] = $[J] = true, $[D] = $[w] = $[B] = false, module.exports = ee
+$[A] = $[N] = $[F] = $[V] = $[P] = $[R] = $[H] = $[Y] = $[W] = $[K] = $[z] = $[L] = $[j] = $[M] = $[k] = $[U] = $[G] = $[Z] = $[q] = $[Q] = $[X] = $[J] = true, $[w] = $[D] = $[B] = false, module.exports = ee

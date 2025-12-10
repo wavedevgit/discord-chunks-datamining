@@ -5,7 +5,7 @@ let r;
 require.d(exports, {
   FZ: () => ek,
   ZP: () => tt,
-  b6: () => ew,
+  b6: () => eD,
   ik: () => eL,
   ow: () => eS,
   rH: () => eP
@@ -301,7 +301,7 @@ z.forEach(e => {
 });
 let eR = new Set(["1314395942253756416"]);
 
-function eD(e) {
+function ew(e) {
   let t = null;
   if ("id" in e) {
     var n;
@@ -314,7 +314,7 @@ function eD(e) {
   return null != t && (0, O.YB)("getRawOverlayGameStatus") && eR.has(t)
 }
 
-function ew(e) {
+function eD(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     [n, r] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [I.Z, T.Z],
     i = eS(e);
@@ -344,7 +344,7 @@ function ew(e) {
     }
   }
   let o = (0, x.supportsOutOfProcess)() && !t,
-    s = eD(null != a ? a : i),
+    s = ew(null != a ? a : i),
     l = b.v.legacyEnabled,
     c = o && !s,
     u = es.enableOverlay[eP(i)],
@@ -389,7 +389,7 @@ function ex(e) {
     n = es.enableOverlay[eP(t)],
     r = es.enableOverlayV3[eP(t)];
   if (null != n || null != r) return null != n ? n : r;
-  let i = ew(t);
+  let i = eD(t);
   return i.enabledLegacy || i.enabledOOP
 }
 
@@ -494,7 +494,7 @@ function eV() {
 
 function eH(e, t) {
   if (true === t) {
-    let t = w.ZP.getDiscordUtils();
+    let t = D.ZP.getDiscordUtils();
     if (null != t && null != t.getWindowHandleFromPid) {
       let n = t.getWindowHandleFromPid(e);
       return null != n && "0" !== n ? n : null
@@ -623,8 +623,8 @@ function e5(e) {
 
 function e8(e) {
   var t;
-  if (__OVERLAY__ || !D.isPlatformEmbedded) return;
-  let n = w.ZP.getDiscordUtils().notifyGameLaunched;
+  if (__OVERLAY__ || !w.isPlatformEmbedded) return;
+  let n = D.ZP.getDiscordUtils().notifyGameLaunched;
   if (null == n) return;
   let r = I.Z.getDetectableGame(e.applicationId);
   null != r && n(r.id, r.name, null != (t = e.pids) ? t : [])
@@ -650,7 +650,7 @@ function e7(e) {
     a = (0, Chunk145597.supportsOutOfProcess)();
   for (let e of require) {
     var o, s, l, c;
-    let t = eD(module),
+    let t = ew(module),
       n = Chunk392711 && !exports || Chunk593472.r.enabledOOP,
       r = null != (o = module.overlay) ? o : Chunk593472.r.enabled;
     ec[module.id] = {
@@ -860,12 +860,12 @@ class e9 extends(i = Chunk442837.ZP.Store) {
   }
   getOverlayEnabledForGame(e) {
     if (e.isLauncher || e.elevated || e.sandboxed) return V.verbose("getOverlayEnabledForGame: Overlay not supported.", e), false;
-    let t = ew(e);
+    let t = eD(e);
     return t.enabledLegacy || t.enabledOOP
   }
   getGameOverlayStatus(e) {
     if (e.isLauncher || e.elevated || e.sandboxed) return V.verbose("getGameOverlayStatus: Overlay not supported.", e), null;
-    let t = ew(e);
+    let t = eD(e);
     return t.enabledLegacy || t.enabledOOP ? t : null
   }
   getObservedAppNameForWindow(e) {

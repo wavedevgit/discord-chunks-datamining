@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   HR: () => M,
-  PR: () => D,
+  PR: () => w,
   default: () => U,
-  sF: () => w
+  sF: () => D
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -83,7 +83,7 @@ let R = e => {
       onClose: t
     }) : null
   },
-  D = e => {
+  w = e => {
     let {
       handleClose: t
     } = e, {
@@ -93,7 +93,7 @@ let R = e => {
       n === _.A.COMPLETED && t()
     }, [n, t])
   },
-  w = e => {
+  D = e => {
     var t;
     let {
       skuId: n,
@@ -154,7 +154,7 @@ let R = e => {
       analyticsSourceLocation: u,
       rentalDuration: d
     } = (0, O.CH)();
-    D({
+    w({
       handleClose: t
     });
     let {
@@ -164,7 +164,7 @@ let R = e => {
       isStepLoading: m,
       showCollectiblesDiscountWarning: h,
       errorMessage: b
-    } = w({
+    } = D({
       skuId: n,
       onRedeemVirtualCurrency: i,
       orbRedemptionError: s,

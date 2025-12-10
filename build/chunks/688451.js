@@ -180,12 +180,12 @@ function R(e, t, n) {
   true === n && (n = false), !e.l && e.h.D && e.m && h(t, n)
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = e[W];
   return (n ? _(n) : e)[t]
 }
 
-function w(e, t) {
+function D(e, t) {
   if (t in e)
     for (var n = Object.getPrototypeOf(e); n;) {
       var r = Object.getOwnPropertyDescriptor(n, t);
@@ -284,11 +284,11 @@ var U, G, Z = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       if (t === W) return e;
       var n = _(e);
       if (!l(n, t)) return function(e, t, n) {
-        var r, i = w(t, n);
+        var r, i = D(t, n);
         return i ? "value" in i ? i.value : null == (r = i.get) ? true : r.call(e.k) : true
       }(e, n, t);
       var r = n[t];
-      return e.I || !a(r) ? r : r === D(e.t, t) ? (L(e), e.o[t] = j(e.A.h, r, e)) : r
+      return e.I || !a(r) ? r : r === w(e.t, t) ? (L(e), e.o[t] = j(e.A.h, r, e)) : r
     },
     has: function(e, t) {
       return t in _(e)
@@ -297,10 +297,10 @@ var U, G, Z = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       return Reflect.ownKeys(_(e))
     },
     set: function(e, t, n) {
-      var r = w(_(e), t);
+      var r = D(_(e), t);
       if (null == r ? true : r.set) return r.set.call(e.k, n), true;
       if (!e.P) {
-        var i = D(_(e), t),
+        var i = w(_(e), t),
           a = null == i ? true : i[W];
         if (a && a.t === n) return e.o[t] = n, e.R[t] = false, true;
         if (d(n, i) && (true !== n || l(e.t, t))) returntrue;
@@ -309,7 +309,7 @@ var U, G, Z = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
       return e.o[t] === n && (true !== n || t in e.o) || Number.isNaN(n) && Number.isNaN(e.o[t]) || (e.o[t] = n, e.R[t] = true), true
     },
     deleteProperty: function(e, t) {
-      return true !== D(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
+      return true !== w(e.t, t) || t in e.t ? (e.R[t] = false, L(e), x(e)) : delete e.R[t], e.o && delete e.o[t], true
     },
     getOwnPropertyDescriptor: function(e, t) {
       var n = _(e),

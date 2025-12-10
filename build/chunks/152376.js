@@ -6,7 +6,7 @@ require.d(exports, {
   Mo: () => A,
   QG: () => N,
   XQ: () => S,
-  _U: () => D,
+  _U: () => w,
   dM: () => P,
   k$: () => I
 }), require("./388685.js");
@@ -216,7 +216,7 @@ function R(e) {
   (0, f.PS)(e, e => (!(0, i.yE)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_CLEARED) || !!(0, i.yE)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_SHOWN)) && (e.guildOnboardingProgress = (0, i.pj)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_CLEARED), e.guildOnboardingProgress = (0, i.mB)(e.guildOnboardingProgress, a.nI.GUILD_NOTICE_SHOWN, false), true), f.fy.INFREQUENT_USER_ACTION)
 }
 
-function D(e, t) {
+function w(e, t) {
   o.Z.dispatch({
     type: "DISMISS_FAVORITE_SUGGESTION",
     guildId: e,

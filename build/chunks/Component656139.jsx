@@ -41,7 +41,7 @@ let C = e => {
     } = (0, O.q)({
       searchQuery: v,
       selectedUsers: p
-    }), [D, w] = i.useState(false), x = C.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), L = () => (0, r.jsx)(d.Z, {
+    }), [w, D] = i.useState(false), x = C.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), L = () => (0, r.jsx)(d.Z, {
       className: T.searchbar,
       size: d.Z.Sizes.MEDIUM,
       tags: [...p.values()].map(e => g.ZP.getName(e)),
@@ -67,13 +67,13 @@ let C = e => {
         className: o()(T.footer, T.footerSeparator),
         children: (0, r.jsx)(c.Button, {
           variant: "primary",
-          disabled: 0 === p.size && !s || D,
+          disabled: 0 === p.size && !s || w,
           text: i,
           size: "md",
           fullWidth: true,
           onClick: async () => {
             if (s) return void t();
-            w(true), await n([...p.values()]), w(false)
+            D(true), await n([...p.values()]), D(false)
           }
         })
       })

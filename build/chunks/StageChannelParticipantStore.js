@@ -44,7 +44,7 @@ function R(e) {
   return null != (t = e.getGuildId()) ? t : C
 }
 
-function D(e) {
+function w(e) {
   return A.values(null != e ? e : true, true).map(e => {
     let {
       id: t
@@ -53,7 +53,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   N.has(e) || (N.add(e), s()(_.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
     j(e) && A.set(e.id, e)
   }))
@@ -63,7 +63,7 @@ function x(e) {
   let t = P[e];
   if (null != t) return t;
   let n = _.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() && (w(n.guild_id), j(n)) ? L(e) : null
+  return null != n && n.isGuildStageVoice() && (D(n.guild_id), j(n)) ? L(e) : null
 }
 
 function L(e) {
@@ -81,7 +81,7 @@ function M(e, t) {
 }
 
 function k(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : D();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
   return t.reduce((t, n) => {
     let r = L(n);
     return e(r) ? (M(n, r), true) : t
@@ -89,7 +89,7 @@ function k(e) {
 }
 
 function U(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : D();
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : w();
   return k(t => t.updateParticipant(e), t)
 }
 
@@ -134,7 +134,7 @@ function H(e) {
 
 function Y(e) {
   let t = false;
-  for (let n of D(e.guildId)) t = L(n).rebuild() || t;
+  for (let n of w(e.guildId)) t = L(n).rebuild() || t;
   return t
 }
 
@@ -203,7 +203,7 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  if (N.has(t)) return k(e => e.rebuild(), D(t))
+  if (N.has(t)) return k(e => e.rebuild(), w(t))
 }
 let ee = [];
 class et extends(r = Chunk442837.ZP.Store) {
@@ -231,7 +231,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = x(e)) ? true : n.size(t)) ? r : 0
   }
   getChannels(e) {
-    return w(null != e ? e : C), A.values(null != e ? e : C)
+    return D(null != e ? e : C), A.values(null != e ? e : C)
   }
   getChannelsVersion() {
     return A.version

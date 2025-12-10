@@ -5,11 +5,11 @@ require.d(exports, {
   EU: () => O,
   UD: () => R,
   ZL: () => P,
-  ao: () => D,
+  ao: () => w,
   kZ: () => S,
   lr: () => v,
   ny: () => I,
-  p2: () => w,
+  p2: () => D,
   rq: () => y,
   zL: () => b
 }), require("./388685.js"), require("./539854.js");
@@ -185,7 +185,7 @@ function R(e) {
   }, [a, null == t ? true : t.items, n, i])
 }
 
-function D(e) {
+function w(e) {
   let {
     location: t,
     isGift: n,
@@ -208,7 +208,7 @@ function D(e) {
   }, [n, a, u, p, d, o])
 }
 
-function w() {
+function D() {
   return x((0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId()))
 }
 

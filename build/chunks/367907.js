@@ -42,7 +42,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -58,7 +58,7 @@ function x(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -159,14 +159,14 @@ function B(e) {
     i = "guild_id" in t ? t.guild_id : r ? v.Z.getGuildId() : null,
     a = "channel_id" in t ? t.channel_id : r ? O.Z.getChannelId(i) : null,
     o = u.Z.getChannel(a),
-    s = x({}, t, j(Z(o, i)), null != i && null != a && (0, D.AB)(a) ? M(i, a) : U(o));
+    s = x({}, t, j(Z(o, i)), null != i && null != a && (0, w.AB)(a) ? M(i, a) : U(o));
   C.default.track(e, s, {
     flush: n
   })
 }
 
 function F(e) {
-  if ((0, D.AB)(e)) return {
+  if ((0, w.AB)(e)) return {
     channel_static_route: e
   };
   let t = u.Z.getChannel(e);

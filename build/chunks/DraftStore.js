@@ -172,11 +172,11 @@ function R(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   e.isSwitchingAccount || (b = {})
 }
 
-function w(e) {
+function D(e) {
   e.userId in b && delete b[e.userId]
 }
 
@@ -258,8 +258,8 @@ p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migra
 }]);
 let j = new L(Chunk570140.Z, {
   CONNECTION_OPEN: A,
-  LOGOUT: D,
-  MULTI_ACCOUNT_REMOVE_ACCOUNT: w,
+  LOGOUT: w,
+  MULTI_ACCOUNT_REMOVE_ACCOUNT: D,
   GUILD_DELETE: N,
   CHANNEL_DELETE: P,
   THREAD_DELETE: P,

@@ -32,7 +32,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk504333 = require("./504333.js"),
   Chunk982710 = require("./982710.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,14 +41,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -116,7 +116,7 @@ function U(e) {
         var {
           ref: t
         } = e, a = j(e, ["ref"]);
-        return (0, i.jsx)(b.Z, L(w({
+        return (0, i.jsx)(b.Z, L(D({
           className: P.verticalFit,
           currentPageIndex: c,
           onChangePage: E,
@@ -201,7 +201,7 @@ class G extends(r = Chunk473749.PureComponent) {
     }) : null
   }
   constructor(...e) {
-    super(...e), D(this, "scrollerRef", a.createRef())
+    super(...e), w(this, "scrollerRef", a.createRef())
   }
 }
 
@@ -234,11 +234,11 @@ function B(e) {
     l() || p.Z.wait(() => {
       o.forEach(e => (0, h.GZ)(e, true, true, true, true))
     })
-  }, [l, o]), (0, i.jsx)(G, L(w({}, e), {
+  }, [l, o]), (0, i.jsx)(G, L(D({}, e), {
     payments: c,
     subscription: n
   }))
 }
-D(G, "defaultProps", {
+w(G, "defaultProps", {
   compactMode: false
 })

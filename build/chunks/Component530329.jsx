@@ -44,8 +44,8 @@ function h(e) {
       })
     }, [t, n]),
     A = (0, s.e7)([o.default], () => o.default.getCurrentUser()),
-    j = c.ZP.canUseAnimatedAvatar(A),
-    y = a.useMemo(() => {
+    y = c.ZP.canUseAnimatedAvatar(A),
+    j = a.useMemo(() => {
       switch (t) {
         case p.pC.AVATAR:
           return g.intl.format(g.t["pvw/HH"], {
@@ -59,7 +59,7 @@ function h(e) {
           return ""
       }
     }, [t, b]);
-  return t !== p.pC.AVATAR && t !== p.pC.BANNER || t === p.pC.AVATAR && j ? null : (0, r.jsx)(u.p, function(e) {
+  return t !== p.pC.AVATAR && t !== p.pC.BANNER || t === p.pC.AVATAR && y ? null : (0, r.jsx)(u.p, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -77,7 +77,7 @@ function h(e) {
     }
     return e
   }({
-    text: y,
+    text: j,
     button: g.intl.string(g.t.BmJkbd),
     buttonAnalyticsObject: {
       section: f.jXE.USER_PROFILE

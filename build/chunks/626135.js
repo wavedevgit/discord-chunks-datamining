@@ -101,8 +101,8 @@ let A = {
   N = Chunk473749.createContext(A),
   P = {},
   R = 1e3,
-  D = 1e4,
-  w = 6e4,
+  w = 1e4,
+  D = 6e4,
   x = 12e4,
   L = 3e5,
   j = 9e5,
@@ -157,7 +157,7 @@ let V = {
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.ACTIVITY_UPDATED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.application_id],
     deduplicate: true
   },
@@ -193,7 +193,7 @@ let V = {
     }
   },
   [Chunk981631.rMx.QUICKSWITCHER_OPENED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
@@ -243,11 +243,11 @@ let V = {
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [Chunk981631.rMx.PREMIUM_UPSELL_VIEWED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SEARCHED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SCROLLED]: {
@@ -255,11 +255,11 @@ let V = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.user_id]
   },
   [Chunk981631.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
@@ -287,7 +287,7 @@ let V = {
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
@@ -325,11 +325,11 @@ let V = {
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [Chunk981631.rMx.OPEN_MODAL]: e => e.type === g.jXE.MEDIA_VIEWER ? {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.type]
   } : true,
   [Chunk981631.rMx.MODERATOR_QUEUE_ACTION]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.NOTIFICATION_PERMISSION_STATUS]: {

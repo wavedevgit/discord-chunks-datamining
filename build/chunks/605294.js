@@ -49,7 +49,7 @@ function m(e) {
     return u.current = n, () => {
       for (let e of n) e.removeEventListener(p, r)
     }
-  }, [t]), P(u, o, n), y(u, n), D(u, o, n), N(u, s), (0, d.useEffect)(() => {
+  }, [t]), P(u, o, n), y(u, n), w(u, o, n), N(u, s), (0, d.useEffect)(() => {
     let e = (0, i.vY)((0, a.r3)(u.current ? u.current[0] : true)),
       t = null;
     if (v(e, u.current)) {
@@ -314,7 +314,7 @@ function R(e) {
   return (null == t ? true : t.scopeRef) === e
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   let o = (0, d.useRef)("undefined" != typeof document ? (0, i.vY)((0, a.r3)(e.current ? e.current[0] : true)) : null);
   (0, r.b)(() => {
     let r = e.current,
@@ -366,11 +366,11 @@ function D(e, t, n) {
           if (r.activeElement === r.body) {
             let n = t.getTreeNode(e);
             for (; n;) {
-              if (n.nodeToRestore && n.nodeToRestore.isConnected) return void w(n.nodeToRestore);
+              if (n.nodeToRestore && n.nodeToRestore.isConnected) return void D(n.nodeToRestore);
               n = n.parent
             }
             for (n = t.getTreeNode(e); n;) {
-              if (n.scopeRef && n.scopeRef.current && U.getTreeNode(n.scopeRef)) return void w(C(n.scopeRef.current, true));
+              if (n.scopeRef && n.scopeRef.current && U.getTreeNode(n.scopeRef)) return void D(C(n.scopeRef.current, true));
               n = n.parent
             }
           }
@@ -380,7 +380,7 @@ function D(e, t, n) {
   }, [e, t])
 }
 
-function w(e) {
+function D(e) {
   e.dispatchEvent(new CustomEvent(p, {
     bubbles: true,
     cancelable: true

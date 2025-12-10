@@ -94,8 +94,8 @@ function O(e) {
     S(false)
   }, []), C = "username" === t, A = "dot" === t, N = null != c && null != c.primaryColor && null != c.secondaryColor, P = C && N, {
     gradientStyle: R,
-    gradientClassname: D,
-    gradientGlowClassname: w
+    gradientClassname: w,
+    gradientGlowClassname: D
   } = (0, f.Ic)({
     colorStrings: c,
     roleStyle: "username",
@@ -103,11 +103,11 @@ function O(e) {
   }), x = (0, f.EJ)(n), L = {
     className: o()(_.name, g, y, {
       [_.username]: C,
-      [D]: P
+      [w]: P
     }),
     children: x
   }, j = {
-    className: o()(_.nameGlow, w, y),
+    className: o()(_.nameGlow, D, y),
     children: n
   }, M = A ? (0, r.jsx)(p.F, {
     color: a,

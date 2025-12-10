@@ -71,7 +71,7 @@ function A(e) {
     isDisabled: u,
     isPressed: v,
     preventFocusOnPress: A,
-    shouldCancelOnPointerExit: D,
+    shouldCancelOnPointerExit: w,
     allowTextSelectionOnPress: x,
     ref: L,
     ...j
@@ -127,7 +127,7 @@ function A(e) {
       t.disposables = []
     }
   }), Y = (0, f.i)(e => {
-    D && H(e)
+    w && H(e)
   }), W = (0, f.i)(e => {
     u || null == l || l(e)
   }), K = (0, f.i)((e, t) => {
@@ -141,7 +141,7 @@ function A(e) {
         onKeyDown(t) {
           if (P(t.nativeEvent, t.currentTarget) && (0, p.bE)(t.currentTarget, (0, p.NI)(t.nativeEvent))) {
             var r;
-            w((0, p.NI)(t.nativeEvent), t.key) && t.preventDefault();
+            D((0, p.NI)(t.nativeEvent), t.key) && t.preventDefault();
             let i = true;
             if (!e.isPressed && !t.repeat) {
               e.target = t.currentTarget, e.isPressed = true, e.pointerType = "keyboard", i = B(t, "keyboard");
@@ -175,7 +175,7 @@ function A(e) {
       n = t => {
         var n, r, i;
         if (e.isPressed && e.target && P(t, e.target)) {
-          w((0, p.NI)(t), t.key) && t.preventDefault();
+          D((0, p.NI)(t), t.key) && t.preventDefault();
           let n = (0, p.NI)(t),
             i = (0, p.bE)(e.target, (0, p.NI)(t));
           F(R(e.target, t), "keyboard", i), i && K(t, e.target), Z(), "Enter" !== t.key && N(e.target) && (0, p.bE)(e.target, n) && !t[I] && (t[I] = true, (0, g.nG)(e.target, t, false)), e.isPressed = false, null == (r = e.metaKeyEvents) || r.delete(t.key)
@@ -288,12 +288,12 @@ function R(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   return !(e instanceof HTMLInputElement) && (e instanceof HTMLButtonElement ? "submit" !== e.type && "reset" !== e.type : !N(e))
 }
 
-function w(e, t) {
-  return e instanceof HTMLInputElement ? !L(e, t) : D(e)
+function D(e, t) {
+  return e instanceof HTMLInputElement ? !L(e, t) : w(e)
 }
 let x = new Set(["checkbox", "radio", "range", "color", "file", "image", "button", "submit", "reset"]);
 

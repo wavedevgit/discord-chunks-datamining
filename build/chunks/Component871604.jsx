@@ -84,11 +84,11 @@ function C(e) {
         applicationId: C.id
       }, C)))
     }, [C, N, P, null == A ? true : A.guild_id, n]),
-    D = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
+    w = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
   if (null == C || !(0, u.Eb)(C)) return null;
   let {
-    customInstallUrl: w
-  } = C, x = null == w || m.Z.isDiscordUrl(w) ? o.qJs : o.Gr1, L = N ? true : x;
+    customInstallUrl: D
+  } = C, x = null == D || m.Z.isDiscordUrl(D) ? o.qJs : o.Gr1, L = N ? true : x;
   return _.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: T,
     renderPopout: e => {
@@ -116,7 +116,7 @@ function C(e) {
       return (0, r.jsx)(b.O1, S({
         buttonRef: T,
         action: "PRESS_ADD_APP",
-        text: D,
+        text: w,
         icon: L,
         onContextMenu: t,
         onClick: R
@@ -124,7 +124,7 @@ function C(e) {
     }
   }) : (0, r.jsx)(b.O1, S({
     action: "PRESS_ADD_APP",
-    text: D,
+    text: w,
     icon: L,
     onClick: R,
     variant: "primary"

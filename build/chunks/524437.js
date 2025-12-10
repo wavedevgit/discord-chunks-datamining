@@ -29,7 +29,7 @@ require.d(exports, {
   l1: () => T,
   n9: () => C,
   nI: () => d,
-  o8: () => w,
+  o8: () => D,
   os: () => M,
   p5: () => H,
   sf: () => e_,
@@ -107,7 +107,7 @@ var Chunk230367 = require("./230367.js"),
   R = function(e) {
     return e[e.VOICE = 0] = "VOICE", e[e.STREAM = 1] = "STREAM", e[e.VIDEO_BACKGROUND = 2] = "VIDEO_BACKGROUND", e[e.ACTIVITY = 3] = "ACTIVITY", e[e.IN_APP_REPORTS = 4] = "IN_APP_REPORTS", e[e.BLOCK_USER = 6] = "BLOCK_USER", e[e.VOICE_FILTER = 7] = "VOICE_FILTER", e[e.SEARCH_RESULTS = 8] = "SEARCH_RESULTS", e[e.AGE_VERIFICATION = 9] = "AGE_VERIFICATION", e
   }({});
-class D extends Chunk495852.C {
+class w extends Chunk495852.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.C, {
@@ -339,7 +339,7 @@ class D extends Chunk495852.C {
     }])
   }
 }
-let w = new D;
+let D = new w;
 class x extends Chunk495852.C {
   create(e) {
     let t = {
@@ -2822,7 +2822,7 @@ class eP extends Chunk495852.C {
   }
 }
 let eR = new eP;
-class eD extends Chunk495852.C {
+class ew extends Chunk495852.C {
   create(e) {
     let t = {
       colors: [],
@@ -2901,7 +2901,7 @@ class eD extends Chunk495852.C {
     }])
   }
 }
-let ew = new eD;
+let eD = new ew;
 class ex extends Chunk495852.C {
   create(e) {
     let t = {};
@@ -2920,7 +2920,7 @@ class ex extends Chunk495852.C {
           a.backgroundGradientPresetId = s.yC.internalBinaryRead(e, e.uint32(), n, a.backgroundGradientPresetId);
           break;
         case 4:
-          a.customUserThemeSettings = ew.internalBinaryRead(e, e.uint32(), n, a.customUserThemeSettings);
+          a.customUserThemeSettings = eD.internalBinaryRead(e, e.uint32(), n, a.customUserThemeSettings);
           break;
         default:
           let o = n.readUnknownField;
@@ -2932,7 +2932,7 @@ class ex extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.backgroundGradientPresetId && s.yC.internalBinaryWrite(e.backgroundGradientPresetId, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.customUserThemeSettings && ew.internalBinaryWrite(e.customUserThemeSettings, t.tag(4, r.TD.LengthDelimited).fork(), n).join();
+    e.backgroundGradientPresetId && s.yC.internalBinaryWrite(e.backgroundGradientPresetId, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.customUserThemeSettings && eD.internalBinaryWrite(e.customUserThemeSettings, t.tag(4, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -2946,7 +2946,7 @@ class ex extends Chunk495852.C {
       no: 4,
       name: "custom_user_theme_settings",
       kind: "message",
-      T: () => ew
+      T: () => eD
     }])
   }
 }

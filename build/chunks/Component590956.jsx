@@ -135,7 +135,7 @@ let T = e => {
       enableClick: d = true,
       channelId: E,
       messageId: O
-    } = e, [S, T] = i.useState(String(Date.now())), [C, N] = i.useState(false), [P, R] = i.useState(false), D = i.useRef(null), w = e => (0, r.jsx)(u.Z, {
+    } = e, [S, T] = i.useState(String(Date.now())), [C, N] = i.useState(false), [P, R] = i.useState(false), w = i.useRef(null), D = e => (0, r.jsx)(u.Z, {
       emojiName: t.name,
       size: null != e ? e : t.jumboable ? "jumbo" : "default",
       emojiId: t.emojiId,
@@ -144,7 +144,7 @@ let T = e => {
       channelId: E,
       messageId: O
     }), x = (0, s.Z)(), L = e => (0, r.jsx)(l.i_, I(v({
-      asset: w("jumbo"),
+      asset: D("jumbo"),
       title: t.name,
       body: d ? b.intl.string(b.t["515vjG"]) : "",
       ariaHidden: true
@@ -159,7 +159,7 @@ let T = e => {
         }), (0, f.x)(g.qR.CustomEmojiTooltipShown))
       },
       children: (0, r.jsx)(c.P3F, I(v({}, e), {
-        innerRef: D,
+        innerRef: w,
         onMouseEnter: () => {
           var t;
           null == e || null == (t = e.onMouseEnter) || t.call(e)
@@ -178,7 +178,7 @@ let T = e => {
           [y.emojiContainerClickable]: d,
           [y.emojiJumbo]: t.jumboable
         }),
-        children: w()
+        children: D()
       }))
     }));
     if (!d) return L();
@@ -200,7 +200,7 @@ let T = e => {
       position: "right",
       renderPopout: j,
       positionKey: S,
-      targetElementRef: D,
+      targetElementRef: w,
       children: L
     })
   },

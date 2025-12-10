@@ -150,7 +150,7 @@ function es(e) {
   } = e, s = i.useRef(null), [l, c] = i.useState(false), u = i.useMemo(() => o().debounce(e => {
     (0, v.yw)(K.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
       query: e,
-      source: w.Z.entrypoint(),
+      source: D.Z.entrypoint(),
       location: I.Vh.APP_LAUNCHER_HOME
     })
   }, 400, {
@@ -158,7 +158,7 @@ function es(e) {
     trailing: true
   }), []), d = i.useCallback(() => n(""), [n]), f = i.useCallback(() => {
     c(true), (0, v.yw)(K.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
-      source: w.Z.entrypoint(),
+      source: D.Z.entrypoint(),
       location: I.Vh.APP_LAUNCHER_HOME
     })
   }, []), p = i.useCallback(() => {
@@ -461,7 +461,7 @@ function ep(e) {
           application: e.application,
           installOnDemand: s(e.application)
         }
-      }).filter(D.lm);
+      }).filter(w.lm);
       return (0, p.yE)(a.flags, l.b.APPENDS_REMAINING_ACTIVITIES) && e.push(...o.map(e => {
         let {
           application: t
@@ -640,7 +640,7 @@ function eE(e) {
     handleViewMore: () => {
       (0, v.yw)(K.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
         section_name: o,
-        source: w.Z.entrypoint(),
+        source: D.Z.entrypoint(),
         num: r.length
       }), l({
         type: U.gc.LIST,

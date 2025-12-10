@@ -348,7 +348,7 @@ function Y(e) {
   }
 
   function _() {
-    null != o && y.Z.open(o, D.pNK.GUILD_AUTOMOD, true, D.KsC.AUTOMOD_MENTION_SPAM)
+    null != o && y.Z.open(o, w.pNK.GUILD_AUTOMOD, true, w.KsC.AUTOMOD_MENTION_SPAM)
   }
   return (0, r.jsx)(W, {
     compact: a,
@@ -479,7 +479,7 @@ function K(e) {
               className: L.username,
               children: x.intl.string(x.t.hG1StD)
             }), (0, r.jsx)(_.Z, {
-              type: w.Hb.SYSTEM_DM,
+              type: D.Hb.SYSTEM_DM,
               className: L.systemTag
             }), f && (0, r.jsx)(p.Text, {
               variant: "text-md/normal",

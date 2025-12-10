@@ -4,7 +4,7 @@
 require.d(exports, {
   Qk: () => A,
   WG: () => R,
-  ZP: () => D
+  ZP: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -105,7 +105,7 @@ function R(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     items: t,
     onIndexChange: n,
@@ -125,10 +125,10 @@ function D(e) {
       m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_PREV, t)
     }
   }, [R, A]);
-  let D = t[f],
-    w = (0, u.g4)({
+  let w = t[f],
+    D = (0, u.g4)({
       type: l.l.GenericMedia,
-      media: D
+      media: w
     }, c),
     x = d ? e => {
       e.stopPropagation(), e.preventDefault()
@@ -157,10 +157,10 @@ function D(e) {
       items: t,
       currentIndex: f,
       children: (e, t) => (0, r.jsx)(P, {
-        isObscured: !h && w,
-        src: D.url,
+        isObscured: !h && D,
+        src: w.url,
         children: n => (0, r.jsx)(S.ZP, {
-          media: D,
+          media: w,
           maxWidth: e,
           maxHeight: t,
           obscured: n,

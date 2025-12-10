@@ -221,8 +221,8 @@ let A = new Chunk710845.Z("GuildSettingsActionCreators"),
         discoverySplash: N,
         publicUpdatesChannelId: P,
         premiumProgressBarEnabled: R,
-        profile: D,
-        moderatorReportingEnabled: w
+        profile: w,
+        moderatorReportingEnabled: D
       } = t, x = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, L = I(v({
         name: n,
         description: r,
@@ -247,8 +247,8 @@ let A = new Chunk710845.Z("GuildSettingsActionCreators"),
       }, null != R ? {
         premium_progress_bar_enabled: R
       } : null), {
-        profile: null != D ? (0, l.n)(D) : D,
-        moderator_reporting_enabled: w
+        profile: null != w ? (0, l.n)(w) : w,
+        moderator_reporting_enabled: D
       });
       return a.Z.dispatch({
         type: "GUILD_SETTINGS_SUBMIT"

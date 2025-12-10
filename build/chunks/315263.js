@@ -60,7 +60,7 @@ async function G(e) {
   }
   if (null == n) return;
   if (n.state === M.r2o.EXPIRED || n.state === M.r2o.BANNED || n.state === M.r2o.ERROR) return void await U(n, e.code);
-  let r = w.ZP.getFlattenedGuildIds(),
+  let r = D.ZP.getFlattenedGuildIds(),
     i = null == n || null == (t = n.guild) ? true : t.id;
   null != i && r.includes(i) ? s.ZP.transitionToInviteSync(n) : await U(n, e.code)
 }
@@ -90,7 +90,7 @@ function B(e) {
     } : null != (i = (0, p.Q)(o)) ? i : {
       applicationId: true,
       skuId: true
-    }, c = null != (a = D.Z.getGuildId()) ? a : true;
+    }, c = null != (a = w.Z.getGuildId()) ? a : true;
     return null == s ? (0, j.Z)(e) : (x.default.track(M.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
@@ -203,12 +203,12 @@ function B(e) {
     }), true
   };
   let {
-    host: w,
+    host: D,
     hostname: U,
     pathname: B,
     search: F,
     hash: V
-  } = null != (t = L.Z.toURLSafe(e)) ? t : {}, H = L.Z.isDiscordHostname(null != U ? U : null) || L.Z.isDiscordLocalhost(null != w ? w : null, null != U ? U : null);
+  } = null != (t = L.Z.toURLSafe(e)) ? t : {}, H = L.Z.isDiscordHostname(null != U ? U : null) || L.Z.isDiscordLocalhost(null != D ? D : null, null != U ? U : null);
   if (H && ((null == B ? true : B.startsWith("/application-directory")) || (null == B ? true : B.startsWith("/discovery/applications")))) {
     let e = B.split("/"),
       t = null == B ? true : B.startsWith("/discovery/applications"),
@@ -256,7 +256,7 @@ function B(e) {
   let Y = (0, O.Ao)(B);
   if (null != B && H && null != Y) return e => {
     null == e || e.preventDefault();
-    let t = D.Z.getGuildId();
+    let t = w.Z.getGuildId();
     null != Y.guildId && "" !== Y.guildId && Y.guildId !== t && (0, v.Z)(M.Z5c.CHANNEL(Y.guildId));
     let n = b.ZP.getGuildScheduledEvent(Y.guildEventId);
     return null != n && (0, E.bO)({

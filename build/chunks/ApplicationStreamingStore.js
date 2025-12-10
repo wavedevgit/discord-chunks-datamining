@@ -47,7 +47,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -133,7 +133,7 @@ function V(e) {
   let {
     streamKey: t
   } = e, n = (0, _.my)(t);
-  r.delete(t), r.set(t, w(R({}, n), {
+  r.delete(t), r.set(t, D(R({}, n), {
     state: A.jm8.CONNECTING
   })), n.ownerId === b.default.getId() && (L[n.channelId] = false)
 }
@@ -195,7 +195,7 @@ function W(e) {
   let a = false;
   for (let e in o) {
     let t = r.get(e);
-    null != t && (r.set(e, w(R({}, t), {
+    null != t && (r.set(e, D(R({}, t), {
       state: A.jm8.FAILED,
       endReason: n,
       errorCode: i
@@ -238,7 +238,7 @@ function q(e) {
     viewerIds: i,
     paused: o
   } = e;
-  r.set(t, w(R({}, (0, _.my)(t)), {
+  r.set(t, D(R({}, (0, _.my)(t)), {
     state: o ? A.jm8.PAUSED : A.jm8.ACTIVE
   })), a[t] = {
     streamKey: t,
@@ -287,7 +287,7 @@ function J(e) {
       n(e)
     }), l = A.jm8.ENDED
   } else s.state === A.jm8.FAILED && o === A.si2.USER_REQUESTED && (l = A.jm8.FAILED);
-  r.set(t, w(R({}, s), {
+  r.set(t, D(R({}, s), {
     state: l
   })), l === A.jm8.ENDED && x !== t && G(t)
 }
@@ -297,7 +297,7 @@ function $(e) {
     streamKey: t
   } = e, n = r.get(t);
   if (null == n) returnfalse;
-  r.set(t, w(R({}, n), {
+  r.set(t, D(R({}, n), {
     state: A.jm8.FAILED
   }))
 }
@@ -319,7 +319,7 @@ function ee(e) {
       a = A.jm8.ACTIVE
   }
   if (a === i.state) returnfalse;
-  r.set(t, w(R({}, i), {
+  r.set(t, D(R({}, i), {
     state: a
   }))
 }

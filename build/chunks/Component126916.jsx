@@ -91,7 +91,7 @@ function b(e) {
     blockId: v,
     pageIndex: I,
     responses: y
-  }), [n, v, I, y]), D = i.useCallback(() => {
+  }), [n, v, I, y]), w = i.useCallback(() => {
     if (null == n || null == v) return;
     let e = (0, d.KZ)(n, {
       blockId: v,
@@ -101,9 +101,9 @@ function b(e) {
     b(t, R), e.isComplete && l.ZP.submitSurveyResponse(t, y), S(e.blockId), T(e.pageIndex), A(e.isComplete)
   }, [n, v, I, y, t, R, b]);
   i.useEffect(() => {
-    0 === R.length && D()
-  }, [R, D]);
-  let w = e => 0 === R.length ? null : (0, r.jsx)("div", {
+    0 === R.length && w()
+  }, [R, w]);
+  let D = e => 0 === R.length ? null : (0, r.jsx)("div", {
       className: _.content,
       children: R.map(t => {
         let n = e.Questions[t];
@@ -152,14 +152,14 @@ function b(e) {
     actions: [{
       variant: "primary",
       text: p.intl.string(p.t.PDTjLN),
-      onClick: D,
+      onClick: w,
       disabled: !x
     }],
     children: (0, r.jsx)("div", {
       style: {
         width: "100%"
       },
-      children: w(n)
+      children: D(n)
     })
   })
 }

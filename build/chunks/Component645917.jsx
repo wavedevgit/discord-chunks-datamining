@@ -114,9 +114,9 @@ function y(e) {
       onNudgeChange: P
     } = e,
     R = g(e, ["title", "body", "graphic", "size", "actions", "gradientColor", "onRequestClose", "position", "caretConfig", "scrollBehavior", "showCloseButton", "isCaretHoverable", "shouldTrapFocus", "returnRef", "onNudgeChange"]);
-  let [D, w] = i.useState(null != v ? v : "top");
+  let [w, D] = i.useState(null != v ? v : "top");
   i.useEffect(() => {
-    null != v && w(v)
+    null != v && D(v)
   }, [v]);
   let x = i.useMemo(() => {
       var e;
@@ -132,14 +132,14 @@ function y(e) {
       null == O || O(e)
     }, [O]),
     M = i.useCallback(e => {
-      w(e)
+      D(e)
     }, []),
     k = C ? f.caretHoverable : true,
     U = _({
       targetElementRef: R.targetElementRef,
       shouldShow: R.shouldShow,
       hasVideo: R.hasVideo,
-      position: D,
+      position: w,
       caretConfig: x,
       onRequestClose: L,
       gradientColor: y,

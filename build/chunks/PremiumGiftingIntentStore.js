@@ -61,9 +61,9 @@ let A = C(),
   N = [],
   P = new Set,
   R = {},
-  D = null;
+  w = null;
 
-function w(e, t) {
+function D(e, t) {
   let n = new Date,
     r = new Date(e.getTime());
   r.setFullYear(t);
@@ -74,11 +74,11 @@ function w(e, t) {
 }
 
 function x(e) {
-  return !w(e, e.getFullYear()) && w(e, new Date().getFullYear())
+  return !D(e, e.getFullYear()) && D(e, new Date().getFullYear())
 }
 
 function L() {
-  if (null != D) return void X(D);
+  if (null != w) return void X(w);
   if (k(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
@@ -180,7 +180,7 @@ function Q(e) {
     total: t
   } = e;
   if (null == t) {
-    D = null, L();
+    w = null, L();
     return
   }
   X(t)
@@ -194,7 +194,7 @@ function X(e) {
     location: "PremiumGiftingIntentStore generateFriendAnniversaries"
   });
   if (!t) return;
-  D = e;
+  w = e;
   let n = p.Z.getFriendIDs().filter(e => !p.Z.isIgnored(e));
   a().sampleSize(n, e).forEach(e => {
     let t = p.Z.getSince(e);
@@ -245,7 +245,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     return null != A.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
-    return D
+    return w
   }
 }
 h(J, "displayName", "PremiumGiftingIntentStore"), h(J, "persistKey", "PremiumGiftingIntentStore"), h(J, "migrations", [e => {

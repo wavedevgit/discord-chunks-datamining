@@ -47,7 +47,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,8 +58,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -274,7 +274,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
         selectedChannelIds: M,
         mostRecentSelectedTextChannelIds: U
       };
-      null != require.knownThreadIds && (G = new Set(require.knownThreadIds)), s = require.selectedVoiceChannelId, o = require.lastChannelFollowingDestination, l = require.lastConnectedTime, U = null != (t = require.mostRecentSelectedTextChannelIds) ? exports : {}, null != require.selectedChannelIds && (M = w(R({}, require.selectedChannelIds), {
+      null != require.knownThreadIds && (G = new Set(require.knownThreadIds)), s = require.selectedVoiceChannelId, o = require.lastChannelFollowingDestination, l = require.lastConnectedTime, U = null != (t = require.mostRecentSelectedTextChannelIds) ? exports : {}, null != require.selectedChannelIds && (M = D(R({}, require.selectedChannelIds), {
         null: null
       }))
     }

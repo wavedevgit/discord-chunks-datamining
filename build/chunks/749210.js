@@ -34,7 +34,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,14 +43,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -196,7 +196,7 @@ let F = {
   async transitionToGuildSync(e, t, n, r) {
     let i = B((await Z(e)).id, n),
       a = t;
-    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = L(w({}, t), {
+    (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = L(D({}, t), {
       welcomeModalChannelId: null != i ? i : true
     })), (0, d.Z)(N.Z5c.CHANNEL(e, i, r), a), await new Promise(setImmediate)
   },
@@ -352,7 +352,7 @@ let F = {
       unicodeEmoji: i
     } = n, o = j(n, ["icon", "unicodeEmoji"]), s = null === r || (null == r ? true : r.startsWith("data:")) ? r : true, l = await a.tn.patch({
       url: N.ANM.GUILD_ROLE(e, t),
-      body: L(w({}, o), {
+      body: L(D({}, o), {
         icon: s,
         unicode_emoji: i
       }),

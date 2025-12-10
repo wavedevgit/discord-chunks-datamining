@@ -32,8 +32,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk550770 = require("./550770.js"),
   Chunk807808 = require("./807808.js");
 let R = 2.8,
-  D = 2,
-  w = 1e3,
+  w = 2,
+  D = 1e3,
   x = 500,
   L = 1e3 + Chunk935212.t;
 
@@ -61,13 +61,13 @@ function j(e) {
     pause: a
   });
   i.useEffect(() => {
-    null != M.current && (M.current.playbackRate = D)
+    null != M.current && (M.current.playbackRate = w)
   }, []), i.useEffect(() => {
     if (G) {
       null != M.current && (M.current.currentTime = .2);
       let e = setTimeout(() => {
         j(false)
-      }, w);
+      }, D);
       return () => clearTimeout(e)
     }
   }, [G]);

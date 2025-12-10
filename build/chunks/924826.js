@@ -58,7 +58,7 @@ function u(e) {
         r = (0, l.x3)(e);
       N(n, r), (0, a.h)(t, r, g)
     }, [t, g, N]),
-    D = r.useMemo(() => (0, i.E)({
+    w = r.useMemo(() => (0, i.E)({
       getFocusableElements: () => c(t, I),
       getActiveElement() {
         var e;
@@ -67,11 +67,11 @@ function u(e) {
       scrollToStart: d,
       scrollToEnd: f
     }), [t, d, f]),
-    [w, x] = r.useState(false),
-    L = r.useRef(w);
+    [D, x] = r.useState(false),
+    L = r.useRef(D);
   r.useLayoutEffect(() => {
-    L.current = w
-  }, [w]), r.useLayoutEffect(() => {
+    L.current = D
+  }, [D]), r.useLayoutEffect(() => {
     let e = I.current;
     if (null != e && u) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", i), e.addEventListener("scroll", a, {
       passive: true
@@ -122,15 +122,15 @@ function u(e) {
       }
     }), [E, b]),
     M = r.useCallback(async () => {
-      let e = await D.getNextFocusableElement(j),
+      let e = await w.getNextFocusableElement(j),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? R(t) : null == e && null != _ && _()
-    }, [D, j, _, R]),
+    }, [w, j, _, R]),
     k = r.useCallback(async () => {
-      let e = await D.getPreviousFocusableElement(j),
+      let e = await w.getPreviousFocusableElement(j),
         t = null == e ? true : e.getAttribute(l.ie);
       null != t ? R(t) : null == e && null != p && p()
-    }, [D, j, p, R]),
+    }, [w, j, p, R]),
     U = r.useCallback(e => {
       if (!T.current || !E && !L.current) return;
       let n = y === s.hy.HORIZONTAL ? s.R8.RIGHT : s.R8.DOWN,
@@ -179,7 +179,7 @@ function u(e) {
     containerProps: {
       onKeyDown: U,
       ref: I,
-      tabIndex: w && g ? false : 0
+      tabIndex: D && g ? false : 0
     },
     orientation: y,
     setFocus: G,
@@ -199,5 +199,5 @@ function u(e) {
       let e = v.current;
       return e ? (0, l.x3)(e) : null
     }
-  }), [t, U, y, w, g, G, k, M, R])
+  }), [t, U, y, D, g, G, k, M, R])
 }

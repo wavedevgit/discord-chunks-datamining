@@ -127,11 +127,11 @@ function R(e) {
   m = null != (t = e.section) ? t : _
 }
 
-function D() {
+function w() {
   P()
 }
 
-function w(e) {
+function D(e) {
   null != e.channelId && (N(), g.clear())
 }
 
@@ -304,14 +304,14 @@ class V extends(r = Chunk442837.ZP.Store) {
 f(V, "displayName", "RTCDebugStore");
 let H = new V(Chunk570140.Z, {
   RTC_DEBUG_MODAL_OPEN: R,
-  RTC_DEBUG_MODAL_CLOSE: D,
+  RTC_DEBUG_MODAL_CLOSE: w,
   RTC_DEBUG_MODAL_SET_SECTION: L,
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: Z,
   RTC_DEBUG_SET_RECORDING_FLAG: B,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
-  VOICE_CHANNEL_SELECT: w,
+  VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: x,
   MEDIA_ENGINE_CONNECTION_STATS: M
 })

@@ -109,13 +109,13 @@ function R() {
   null != module && (O = module)
 }
 
-function D() {
+function w() {
   if (0 === Object.values(b[Chunk397047.$k.THIRD_PARTY_OUTBOUND]).length) returnfalse;
   let e = P();
   null != module && (O = module, p.lastSeenOutboundPromotionStartDate = module)
 }
 
-function w(e) {
+function D(e) {
   let {
     data: t
   } = e, n = l.Z.createFromServer(t);
@@ -197,7 +197,7 @@ let M = new j(Chunk570140.Z, {
   ACTIVE_BOGO_PROMOTION_FETCH: S,
   ACTIVE_BOGO_PROMOTION_FETCH_FAIL: I,
   OUTBOUND_PROMOTION_NOTICE_DISMISS: R,
-  OUTBOUND_PROMOTIONS_SEEN: D,
+  OUTBOUND_PROMOTIONS_SEEN: w,
   LOGOUT: x,
-  PREMIUM_MARKETING_PREVIEW: w
+  PREMIUM_MARKETING_PREVIEW: D
 })

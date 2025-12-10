@@ -74,8 +74,7 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     },
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
-      getDismissibleContentTypes: Chunk620163.OF,
-      stronglyDiscouragedBadgeComponent: Chunk620163.W8
+      getDismissibleContentTypes: Chunk620163.OF
     },
     buildLayout: () => [A]
   })

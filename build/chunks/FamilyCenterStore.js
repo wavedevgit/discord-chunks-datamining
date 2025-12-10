@@ -67,8 +67,8 @@ let m = null,
   N = [],
   P = null,
   R = null,
-  D = {},
-  w = {};
+  w = {},
+  D = {};
 
 function x() {
   var e, t, n, r;
@@ -113,18 +113,18 @@ function U(e, t) {
 }
 
 function G(e) {
-  w = e.reduce((e, t) => {
+  D = e.reduce((e, t) => {
     var n;
     return _(f({}, e), {
       [t.id]: _(f({}, (0, o.dangerouslyConstructGuildRecordFromUntypedObject)(t)), {
         approximateMemberCount: null != (n = t.approximate_member_count) ? n : 0
       })
     })
-  }, w)
+  }, D)
 }
 
 function Z(e) {
-  D = e.reduce((e, t) => {
+  w = e.reduce((e, t) => {
     if (null != t.invoice_items && t.invoice_items.length > 0) {
       let n = t.invoice_items[0],
         r = n.sku_id,
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  m = null, h = null, g = {}, b = L(), y = j(), w = {}, I = false, T = null, v = x(), E = false, A = [], N = [], P = null, R = null, D = {}
+  m = null, h = null, g = {}, b = L(), y = j(), D = {}, I = false, T = null, v = x(), E = false, A = [], N = [], P = null, R = null, w = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -306,7 +306,7 @@ class ei extends Chunk750041.Z {
         linkedUsers: Object.values(g),
         teenActivityTotals: et(),
         teenActivity: ee(),
-        guilds: Object.values(w)
+        guilds: Object.values(D)
       }
     }
   }
@@ -335,7 +335,7 @@ class ei extends Chunk750041.Z {
     return O
   }
   getGuild(e) {
-    return w[e]
+    return D[e]
   }
   getSelectedTab() {
     return v
@@ -368,7 +368,7 @@ class ei extends Chunk750041.Z {
     return R
   }
   getPurchaseInfo(e) {
-    return D[e]
+    return w[e]
   }
   canRefetch() {
     return null === T || Chunk709054.default.age(T) > Chunk292352.Of

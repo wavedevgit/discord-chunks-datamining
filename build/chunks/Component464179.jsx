@@ -87,8 +87,8 @@ let v = "US",
   N = (0, Chunk313201.hQ)(),
   P = (0, Chunk313201.hQ)(),
   R = (0, Chunk313201.hQ)(),
-  D = (0, Chunk313201.hQ)(),
   w = (0, Chunk313201.hQ)(),
+  D = (0, Chunk313201.hQ)(),
   x = (0, Chunk313201.hQ)(),
   L = (0, Chunk313201.hQ)();
 var j = function(e) {
@@ -160,7 +160,7 @@ let k = {
   }),
   F = e => ({
     name: "line2",
-    id: D,
+    id: w,
     title: () => _.intl.string(_.t.i2Z0gI),
     placeholder: () => _.intl.string(_.t.fKLoNo),
     autoComplete: "address-line2",
@@ -169,7 +169,7 @@ let k = {
   }),
   V = e => ({
     name: "city",
-    id: w,
+    id: D,
     title: () => _.intl.string(_.t.bUSWlw),
     autoComplete: "address-level2",
     placeholder: () => _.intl.string(_.t["5rRx31"]),

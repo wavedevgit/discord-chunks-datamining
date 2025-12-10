@@ -203,7 +203,7 @@ function R(e, t) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     channelId: n
@@ -211,7 +211,7 @@ function D(e) {
   return R(n, t)
 }
 
-function w(e) {
+function D(e) {
   let {
     ids: t,
     channelId: n
@@ -282,8 +282,8 @@ let U = new k(Chunk570140.Z, {
   LOAD_FORUM_POSTS: M,
   MESSAGE_CREATE: T,
   MESSAGE_UPDATE: A,
-  MESSAGE_DELETE: D,
-  MESSAGE_DELETE_BULK: w,
+  MESSAGE_DELETE: w,
+  MESSAGE_DELETE_BULK: D,
   CREATE_PENDING_REPLY: x,
   CHANNEL_DELETE: N,
   THREAD_DELETE: N,

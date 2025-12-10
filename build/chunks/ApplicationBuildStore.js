@@ -39,14 +39,14 @@ let v = new Set,
   N = 10 * Chunk70956.Z.Millis.MINUTE,
   P = 6 * Chunk70956.Z.Millis.HOUR,
   R = 10 * Chunk70956.Z.Millis.MINUTE,
-  D = new Chunk846519.V7;
+  w = new Chunk846519.V7;
 
-function w(e) {
-  D.start(e + Math.random() * N, c.o)
+function D(e) {
+  w.start(e + Math.random() * N, c.o)
 }
 
 function x() {
-  return !Chunk695346.bm.getSetting() && (w(P), L())
+  return !Chunk695346.bm.getSetting() && (D(P), L())
 }
 
 function L() {
@@ -160,15 +160,15 @@ function V(e) {
     }
     A[t] = r
   }
-  w(P)
+  D(P)
 }
 
 function H() {
-  w(R)
+  D(R)
 }
 
 function Y() {
-  D.stop()
+  w.stop()
 }
 
 function W(e) {

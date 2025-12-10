@@ -34,7 +34,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk467415 = require("./467415.js");
 let R = (e, t, n) => (0, T.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function D(e) {
+function w(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -60,7 +60,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t, n, r, i, a;
   let {
     quest: o,
@@ -248,7 +248,7 @@ let j = e => {
         }), (0, r.jsx)(u.Text, {
           variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
           color: "text-muted",
-          children: w({
+          children: D({
             quest: n,
             locale: F,
             isQuestExpired: p,
@@ -274,7 +274,7 @@ let j = e => {
         align: "center",
         justify: "end",
         fullWidth: "lg" !== c,
-        children: [(0, r.jsx)(D, {
+        children: [(0, r.jsx)(w, {
           containerSize: c,
           onClick: B,
           text: N.intl.string(N.t.LLLLPD)

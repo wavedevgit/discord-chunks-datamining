@@ -7,7 +7,7 @@ require.d(exports, {
   G1: () => O,
   JR: () => T,
   U$: () => C,
-  ZP: () => D,
+  ZP: () => w,
   e7: () => S,
   wv: () => I,
   yK: () => v
@@ -225,7 +225,7 @@ async function R(e) {
     throw new c.Hx(e)
   }
 }
-let D = {
+let w = {
   setSummaryFeedback: C,
   updateVisibleMessages: T,
   setSelectedSummary: I,

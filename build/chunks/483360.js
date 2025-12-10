@@ -132,8 +132,8 @@ let ey = new Chunk710845.Z("AutocompleteUtils"),
   eN = 3,
   eP = 5,
   eR = 3,
-  eD = 11,
-  ew = 6,
+  ew = 11,
+  eD = 6,
   ex = 8,
   eL = 1,
   ej = 1e3,
@@ -283,9 +283,9 @@ function e0(e) {
 function e1(e) {
   switch (e) {
     case R.MO.STICKER_NAME:
-      return eD;
-    case R.MO.CORRELATED_EMOJI:
       return ew;
+    case R.MO.CORRELATED_EMOJI:
+      return eD;
     case R.MO.TAG:
       return eL;
     case R.MO.GUILD_NAME:
@@ -547,7 +547,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         } = e,
         h = e5(n, c),
         g = e3(l);
-      t = null != r ? s()(B.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? m ? U.Z.getAllThreadsForGuild(r) : D.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? D.Z.computeAllActiveJoinedThreads() : []).value();
+      t = null != r ? s()(B.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? m ? U.Z.getAllThreadsForGuild(r) : w.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? w.Z.computeAllActiveJoinedThreads() : []).value();
       let E = {},
         b = [],
         y = G.Z.getMaxScore();
@@ -567,7 +567,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
             }
             c = Math.min(eS - eC, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eA, eC / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), w.Z.hasJoined(e.id) || (c -= eP)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= eS ? eO : eS), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eA, eC / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), D.Z.hasJoined(e.id) || (c -= eP)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= eS ? eO : eS), b.push({
             type: (0, L.bw)(e.type) ? eu.h8.VOICE_CHANNEL : eu.h8.TEXT_CHANNEL,
             record: e,
             score: eK(c, d[e.id]),

@@ -98,14 +98,14 @@ function R(e) {
   null != e.editInfo.timeout && clearTimeout(e.editInfo.timeout), e.editInfo = (0, g.JC)()
 }
 
-function D(e) {
+function w(e) {
   let {
     userSettingsProto: t
   } = e;
   y.proto = (0, h.ac)(t), a()("string" != typeof y.proto, "UserSettingsProto cannot be a string")
 }
 
-function w(e) {
+function D(e) {
   let {
     settings: {
       proto: t,
@@ -246,12 +246,12 @@ class U extends(r = Chunk442837.ZP.PersistedStore) {
 E(U, "displayName", "UserSettingsProtoStore"), E(U, "persistKey", "UserSettingsProtoStore-Cache");
 let G = new U(Chunk570140.Z, {
   CACHE_LOADED: L,
-  USER_SETTINGS_PROTO_UPDATE: w,
-  USER_SETTINGS_PROTO_ENQUEUE_UPDATE: w,
+  USER_SETTINGS_PROTO_UPDATE: D,
+  USER_SETTINGS_PROTO_ENQUEUE_UPDATE: D,
   USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: x,
   CONNECTION_OPEN: C,
   CONNECTION_CLOSED: A,
   CONNECTION_RESUMED: A,
-  OVERLAY_INITIALIZE: D,
+  OVERLAY_INITIALIZE: w,
   LOGOUT: N
 })

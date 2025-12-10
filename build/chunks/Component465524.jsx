@@ -79,7 +79,7 @@ function R(e, t) {
   }), e
 }
 
-function D(e) {
+function w(e) {
   let {
     searchContext: t,
     filter: n,
@@ -111,7 +111,7 @@ function D(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     user: t,
     guildId: n,
@@ -140,7 +140,7 @@ function x(e, t) {
       filterAutocompleteResults: u,
       handleFocusFilter: d,
       autocompleteStoreState: f
-    } = D({
+    } = w({
       searchContext: e,
       filter: t,
       queryString: l
@@ -150,7 +150,7 @@ function x(e, t) {
         t = new Set;
       if (u.length > 0) u.forEach(n => {
         let i = n.user,
-          o = w({
+          o = D({
             user: i,
             guildId: r,
             channelId: a
@@ -165,7 +165,7 @@ function x(e, t) {
           let n = i.getData("userId"),
             o = _.default.getUser(n);
           if (null != o) {
-            let n = w({
+            let n = D({
               user: o,
               guildId: r,
               channelId: a
@@ -178,7 +178,7 @@ function x(e, t) {
         if (t.has(n)) return;
         let i = _.default.getUser(n);
         if (null == i) return;
-        let o = w({
+        let o = D({
           user: i,
           guildId: r,
           channelId: a
@@ -247,7 +247,7 @@ function j(e) {
       filterAutocompleteResults: s,
       handleFocusFilter: l,
       autocompleteStoreState: c
-    } = D({
+    } = w({
       searchContext: e,
       filter: T.dCx.FILTER_IN,
       queryString: a
@@ -350,7 +350,7 @@ function k(e) {
     {
       filterAutocompleteResults: o,
       handleFocusFilter: s
-    } = D({
+    } = w({
       searchContext: e,
       filter: T.dCx.FILTER_HAS,
       queryString: ""
@@ -512,7 +512,7 @@ function B(e) {
     {
       filterAutocompleteResults: o,
       handleFocusFilter: s
-    } = D({
+    } = w({
       searchContext: e,
       filter: T.dCx.FILTER_AUTHOR_TYPE,
       queryString: ""

@@ -437,7 +437,7 @@ function eR(e) {
   ey(t.id), es.delete(t.id), eO()
 }
 
-function eD(e) {
+function ew(e) {
   var t;
   let {
     guildId: n,
@@ -446,7 +446,7 @@ function eD(e) {
   r.id === (null == (t = R.default.getCurrentUser()) ? true : t.id) && (ev(n), eO())
 }
 
-function ew(e) {
+function eD(e) {
   if (!e.optimistic) returnfalse;
   let t = null != e.emoji.id && "0" !== e.emoji.id ? e.emoji : G.ZP.getByName(G.ZP.convertSurrogateToName(e.emoji.name, false));
   if (null == t) returnfalse;
@@ -644,7 +644,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
     let d = null != n ? n.getGuildId() : null,
       f = eh.get(d),
       p = f.nameMatchesChain(t).reduce((e, t) => {
-        let r = w.ZP.getEmojiUnavailableReason({
+        let r = D.ZP.getEmojiUnavailableReason({
           emoji: t,
           channel: n,
           intention: a,
@@ -690,12 +690,12 @@ let eV = new eF(Chunk570140.Z, {
   CONNECTION_OPEN: eS,
   OVERLAY_INITIALIZE: eI,
   CACHED_EMOJIS_LOADED: ef,
-  GUILD_MEMBER_UPDATE: eD,
+  GUILD_MEMBER_UPDATE: ew,
   GUILD_CREATE: eA,
   GUILD_UPDATE: eN,
   GUILD_EMOJIS_UPDATE: eP,
   GUILD_DELETE: eR,
-  MESSAGE_REACTION_ADD: ew,
+  MESSAGE_REACTION_ADD: eD,
   EMOJI_TRACK_USAGE: eM,
   USER_SETTINGS_PROTO_UPDATE: ej,
   GUILD_ROLE_CREATE: eG,

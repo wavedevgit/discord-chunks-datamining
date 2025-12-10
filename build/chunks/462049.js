@@ -30,8 +30,8 @@ function g(e, t) {
     } = E(e, t);
   if (_ < r) return;
   let h = e.getUint32(t + n);
-  if (h === o) return D(e, m, _);
-  if (h === s) return w(e, t, m, _);
+  if (h === o) return w(e, m, _);
+  if (h === s) return D(e, t, m, _);
   if (h === f) return x(e, t, m, _);
   if (h === p) return L(e, m, _);
   let g = e.getUint8(m);
@@ -143,7 +143,7 @@ function R(e) {
   } catch (e) {}
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   let r = 4;
   return {
     type: "ftyp",
@@ -152,7 +152,7 @@ function D(e, t, n) {
   }
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   return {
     type: "iprp",
     subBoxes: k(e, n, r - (n - t)),

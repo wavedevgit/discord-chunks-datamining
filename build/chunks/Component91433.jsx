@@ -50,8 +50,8 @@ function E(e) {
     A(), I({
       action: b ? "IGNORE_GAME_FRIEND_REQUEST" : "IGNORE_FRIEND_REQUEST"
     })
-  }, [A, b, I]), R = null != E, D = (0, c.q)(E);
-  return R && null == D ? null : (0, r.jsxs)("div", {
+  }, [A, b, I]), R = null != E, w = (0, c.q)(E);
+  return R && null == w ? null : (0, r.jsxs)("div", {
     className: o()(g.container, y),
     children: [R ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
@@ -59,10 +59,10 @@ function E(e) {
         username: S,
         applicationIcon: () => (0, r.jsx)(u.Z, {
           className: g.gameIcon,
-          game: D,
+          game: w,
           size: u.A.XXSMALL
-        }, null == D ? true : D.id),
-        applicationName: null == D ? true : D.name
+        }, null == w ? true : w.id),
+        applicationName: null == w ? true : w.name
       })
     }) : (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",

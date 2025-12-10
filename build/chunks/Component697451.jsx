@@ -235,7 +235,7 @@ function Y(e, t, n) {
       var {
         onClick: t
       } = e, i = G(e, ["onClick"]);
-      if (a.type === w.uaV.CHAT_INPUT_COMMAND || a.type === w.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, U(M({}, i), {
+      if (a.type === D.uaV.CHAT_INPUT_COMMAND || a.type === D.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(f.P3F, U(M({}, i), {
         tag: "span",
         onClick: s,
         innerRef: n,
@@ -257,7 +257,7 @@ function Y(e, t, n) {
       });
       {
         let e = () => {
-            C.S.dispatchToLastSubscribed(w.CkL.OPEN_APP_LAUNCHER, {
+            C.S.dispatchToLastSubscribed(D.CkL.OPEN_APP_LAUNCHER, {
               applicationId: a.applicationId
             })
           },
@@ -300,7 +300,7 @@ function K(e) {
     T = (0, d.e7)([I.default], () => I.default.getCurrentUser()),
     C = i.useRef(null),
     P = i.useRef(null),
-    w = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != T, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(v.Z, U(M({}, e), {
+    D = i.useMemo(() => (e, t, n) => (l()(null != t, "ExecutedCommand: user cannot be undefined"), l()(null != T, "ExecutedCommand: currentUser cannot be undefined"), l()(null != s, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(v.Z, U(M({}, e), {
       user: t,
       currentUser: T,
       guildId: s.guild_id,
@@ -318,21 +318,21 @@ function K(e) {
     Z = (null == k ? true : k.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     B = (0, N.Sw)(null == (t = a.interaction) ? true : t.user, s),
     F = (0, N.Sw)(G, s),
-    K = i.useMemo(() => e.compact ? (0, D.Z)((0, A.vc)(u()(), "LT")) : null, [e.compact]),
+    K = i.useMemo(() => e.compact ? (0, w.Z)((0, A.vc)(u()(), "LT")) : null, [e.compact]),
     z = (0, _.NX)(s.id),
     q = a.interaction;
   if (null == q || null == B) return null;
   let Q = () => {
-      let t = V(e, q.user, 0, B, e => w(e, q.user, [h.Z.AVATAR]), C),
-        n = H(e, q.user, 0, B, e => w(e, q.user));
+      let t = V(e, q.user, 0, B, e => D(e, q.user, [h.Z.AVATAR]), C),
+        n = H(e, q.user, 0, B, e => D(e, q.user));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "user")
     },
     X = () => {
       if (null == G) return null;
-      let t = V(e, G, 1, F, e => w(e, G, [h.Z.AVATAR]), C),
-        n = H(e, G, 1, F, e => w(e, G));
+      let t = V(e, G, 1, F, e => D(e, G, [h.Z.AVATAR]), C),
+        n = H(e, G, 1, F, e => D(e, G));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "target")

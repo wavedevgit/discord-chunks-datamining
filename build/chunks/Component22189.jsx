@@ -90,12 +90,12 @@ let ey = () => {
   }).enabled, eR = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
     analyticsLocations: module
-  }), eD = () => {
+  }), ew = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.APPEARANCE_PANEL, {
       section: Chunk981631.oAB.APPEARANCE,
       analyticsLocations: module
     })
-  }, ew = () => {
+  }, eD = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
       section: Chunk981631.oAB.GUILD_BOOSTING,
       analyticsLocations: module
@@ -145,7 +145,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.CjRASJ),
       description: Chunk388032.intl.string(Chunk388032.t.jBTTws),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      onCtaClick: eD,
+      onCtaClick: ew,
       perkImage: Chunk567396
     },
     clips: eS ? {
@@ -238,7 +238,7 @@ let ey = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t["4pEwXL"]),
       description: eC ? "" : Chunk388032.intl.string(Chunk388032.t.jsyNHm),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      onCtaClick: eC ? true : ew,
+      onCtaClick: eC ? true : eD,
       perkImage: Chunk46245,
       hideOnNarrowScreen: !eC,
       imageOverlayText: eC ? Chunk388032.intl.string(Chunk388032.t["/VzCKE"]).toLocaleUpperCase() : true

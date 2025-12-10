@@ -540,8 +540,8 @@
                   for (m = 0; m < 2; m++) T.push(r.float_array(S)), C.push(r.float_array(S)), A.push(r.float_array(S)), N.push(r.float_array(h));
                   var P = r.float_array(S),
                     R = r.float_array(S),
-                    D = 0,
                     w = 0,
+                    D = 0,
                     x = [{
                       in_time: 0,
                       out_time: 0,
@@ -567,11 +567,11 @@
                         for (t = 0; t < u.length; t++) u[t] = 0;
                         for (t = 0; t < d.length; t++) d[t] = 0;
                         if (e) {
-                          w = Math.max(0, w - e), D = B.mapOutputToInputTime(w);
-                          for (var r = x.length - 1; w <= x[r].out_time && r >= 0;) x.pop(), r--;
+                          D = Math.max(0, D - e), w = B.mapOutputToInputTime(D);
+                          for (var r = x.length - 1; D <= x[r].out_time && r >= 0;) x.pop(), r--;
                           x.push({
-                            in_time: D,
-                            out_time: w,
+                            in_time: w,
+                            out_time: D,
                             tempo: a
                           })
                         }
@@ -585,9 +585,9 @@
                           return .9 / r
                         }(_, p), a = e;
                         var t = x[x.length - 1];
-                        t.out_time == w ? t.tempo = e : x.push({
-                          in_time: D,
-                          out_time: w,
+                        t.out_time == D ? t.tempo = e : x.push({
+                          in_time: w,
+                          out_time: D,
                           tempo: e
                         })
                       }
@@ -631,9 +631,9 @@
                           O > 0 && Z - f[O - 1] < f[O] - Z && (v = O - 1);
                           var S = Z * o;
                           if (Math.abs(f[v] - Z) < S && u[Math.round(f[v])] > .1 * m[Math.round(Z)]) {
-                            var D = F(t, n, Z),
-                              w = p[v] + _[v] + V(D, Z, p[v], f[v], a) - D;
-                            b[G] = D, y[G] = w, P[G] = Math.cos(w), R[G] = Math.sin(w)
+                            var w = F(t, n, Z),
+                              D = p[v] + _[v] + V(w, Z, p[v], f[v], a) - w;
+                            b[G] = w, y[G] = D, P[G] = Math.cos(D), R[G] = Math.sin(D)
                           } else b[G] = F(t, n, Z), y[G] = 0, P[G] = 1, R[G] = 0
                         }
                         g[E] = 2 * s;
@@ -687,7 +687,7 @@
                         }
                         B.flush(0), n = _, e = m
                       }
-                      return D += n / t, w += n / t, e
+                      return w += n / t, D += n / t, e
                     }
                     var g = 2 * Math.floor(Math.max(0, G + n - (s - f)) / (2 * f)),
                       E = Z + p * g + Math.floor(k + U * g);
@@ -700,7 +700,7 @@
                         r.blit(i, y, u, G, n - y), G += n - y, y = n;
                         break
                       }
-                      I <= 0 ? G -= 2 * f : (r.blit(i, y, u, G, I), y += I, G = s - f), S = Y(), D += 2 * f / t, w += S / t, (v = O + S - E) < 0 && (v = 0), r.blit(d, 0, b, O, S - v), O += S
+                      I <= 0 ? G -= 2 * f : (r.blit(i, y, u, G, I), y += I, G = s - f), S = Y(), w += 2 * f / t, D += S / t, (v = O + S - E) < 0 && (v = 0), r.blit(d, 0, b, O, S - v), O += S
                     }
                     r.blit(d, S - v, d, 0, v), Z = v;
                     var T = [];
@@ -1340,8 +1340,8 @@
             N = "LOADED",
             P = "PRELOAD",
             R = "READY",
-            D = "PLAYING",
-            w = "SEEKING",
+            w = "PLAYING",
+            D = "SEEKING",
             x = "ERROR",
             L = "NOT_SEEKING",
             j = "BISECT_TO_TARGET",
@@ -1392,7 +1392,7 @@
                 },
                 currentTime: {
                   get: function() {
-                    return this._state == w ? this._seekTargetTime : this._codec ? this._state != D || this._paused ? this._initialPlaybackOffset : this._getPlaybackTime() : this._initialSeekTime
+                    return this._state == D ? this._seekTargetTime : this._codec ? this._state != w || this._paused ? this._initialPlaybackOffset : this._getPlaybackTime() : this._initialSeekTime
                   },
                   set: function(e) {
                     this._seek(e, U)
@@ -1415,7 +1415,7 @@
                 },
                 seeking: {
                   get: function() {
-                    return this._state == w
+                    return this._state == D
                   }
                 },
                 muted: {
@@ -1716,7 +1716,7 @@
                 if (this._stream && !this._stream.seekable) throw Error("Cannot seek a non-seekable stream");
                 if (this._codec && !this._codec.seekable) throw Error("Cannot seek in a non-seekable file");
                 var r = function(r) {
-                  n._stream && n._stream.buffering && n._stream.abort(), n._stream && n._stream.seeking && n._stream.abort(), n._actionQueue.splice(0, n._actionQueue.length), n._stopPlayback(), n._prebufferingAudio = false, n._audioFeeder && n._audioFeeder.flush(), n._state = w, n._seekTargetTime = e, n._seekMode = t, n._codec ? n._codec.flush(r) : r()
+                  n._stream && n._stream.buffering && n._stream.abort(), n._stream && n._stream.seeking && n._stream.abort(), n._actionQueue.splice(0, n._actionQueue.length), n._stopPlayback(), n._prebufferingAudio = false, n._audioFeeder && n._audioFeeder.flush(), n._state = D, n._seekTargetTime = e, n._seekMode = t, n._codec ? n._codec.flush(r) : r()
                 };
                 r(function() {
                   n._isProcessing() || n._pingProcessing(0)
@@ -1730,7 +1730,7 @@
               key: "_doSeek",
               value: function(e) {
                 var t = this;
-                this._streamEnded = false, this._dataEnded = false, this._ended = false, this._state = w, this._seekTargetTime = e, this._lastSeekPosition = false, this._decodedFrames = [], this._pendingFrames = [], this._pendingFrame = 0, this._pendingAudio = 0, this._didSeek = false, this._codec.seekToKeypoint(e, function(n) {
+                this._streamEnded = false, this._dataEnded = false, this._ended = false, this._state = D, this._seekTargetTime = e, this._lastSeekPosition = false, this._decodedFrames = [], this._pendingFrames = [], this._pendingFrame = 0, this._pendingAudio = 0, this._didSeek = false, this._codec.seekToKeypoint(e, function(n) {
                   if (n) return t._seekState = k, t._fireEventAsync("seeking"), t._didSeek ? true : void t._pingProcessing();
                   t._codec.getKeypointOffset(e, function(e) {
                     e > 0 ? (t._seekState = k, t._seekStream(e)) : (t._seekState = j, t._startBisection(t._seekTargetTime)), t._fireEventAsync("seeking")
@@ -1853,8 +1853,8 @@
                 else if (this._state == N) this._doProcessLoaded();
                 else if (this._state == P) this._doProcessPreload();
                 else if (this._state == R) this._doProcessReady();
-                else if (this._state == w) this._doProcessSeeking();
-                else if (this._state == D) this._doProcessPlay();
+                else if (this._state == D) this._doProcessSeeking();
+                else if (this._state == w) this._doProcessPlay();
                 else {
                   if (this._state != x) throw Error("Unexpected OGVPlayer state " + this._state);
                   this._doProcessError()
@@ -1914,7 +1914,7 @@
                 } else if (this._paused) this._log("paused while in ready");
                 else {
                   var n = function() {
-                    e._log("finishStartPlaying"), e._state = D, e._lastFrameTimestamp = S(), e._codec.hasAudio && e._audioFeeder ? e._prebufferingAudio = true : e._startPlayback(), e._pingProcessing(0), e._fireEventAsync("play"), e._fireEventAsync("playing")
+                    e._log("finishStartPlaying"), e._state = w, e._lastFrameTimestamp = S(), e._codec.hasAudio && e._audioFeeder ? e._prebufferingAudio = true : e._startPlayback(), e._pingProcessing(0), e._fireEventAsync("play"), e._fireEventAsync("playing")
                   };
                   !this._codec.hasAudio || this._audioFeeder || this._muted ? n() : (this._initAudioFeeder(), this._audioFeeder.waitUntilReady(n))
                 }
@@ -2157,7 +2157,7 @@
             }, {
               key: "play",
               value: function() {
-                this._muted || this._options.audioContext || n.initSharedAudioContext(), this._paused && (this._startedPlaybackInDocument = document.body.contains(this), this._paused = false, this._state == w || (this._started && this._codec && this._codec.loadedMetadata ? (this._ended && this._stream && this._byteLength ? (this._log(".play() starting over after end"), this._seek(0)) : this._log(".play() while already started"), this._state = R, this._isProcessing() || this._pingProcessing()) : this._loading ? this._log(".play() while loading") : (this._log(".play() before started"), this._stream || this.load())))
+                this._muted || this._options.audioContext || n.initSharedAudioContext(), this._paused && (this._startedPlaybackInDocument = document.body.contains(this), this._paused = false, this._state == D || (this._started && this._codec && this._codec.loadedMetadata ? (this._ended && this._stream && this._byteLength ? (this._log(".play() starting over after end"), this._seek(0)) : this._log(".play() while already started"), this._state = R, this._isProcessing() || this._pingProcessing()) : this._loading ? this._log(".play() while loading") : (this._log(".play() before started"), this._stream || this.load())))
               }
             }, {
               key: "getPlaybackStats",
@@ -3912,14 +3912,14 @@
                   N = 0,
                   P = 0,
                   R = 0,
-                  D = 0;
+                  w = 0;
                 if (1 == a && 1 == o)
-                  for (y = 0, O = p, D = 0, P = 0; P < i; P += 2) {
-                    for (h = (m = P * u | 0) + u | 0, g = D * d | 0, E = D * f | 0, N = 0; N < r; N += 2) v = 0 | l[g++], T = (409 * (S = 0 | c[E++]) | 0) - 57088 | 0, C = (100 * v | 0) + (208 * S | 0) - 34816 | 0, A = (516 * v | 0) - 70912 | 0, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - C >> 8, n[y + 2] = I + A >> 8, y += 4, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - C >> 8, n[y + 2] = I + A >> 8, y += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - C >> 8, n[O + 2] = I + A >> 8, O += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - C >> 8, n[O + 2] = I + A >> 8, O += 4;
-                    y += p, O += p, D++
+                  for (y = 0, O = p, w = 0, P = 0; P < i; P += 2) {
+                    for (h = (m = P * u | 0) + u | 0, g = w * d | 0, E = w * f | 0, N = 0; N < r; N += 2) v = 0 | l[g++], T = (409 * (S = 0 | c[E++]) | 0) - 57088 | 0, C = (100 * v | 0) + (208 * S | 0) - 34816 | 0, A = (516 * v | 0) - 70912 | 0, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - C >> 8, n[y + 2] = I + A >> 8, y += 4, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - C >> 8, n[y + 2] = I + A >> 8, y += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - C >> 8, n[O + 2] = I + A >> 8, O += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - C >> 8, n[O + 2] = I + A >> 8, O += 4;
+                    y += p, O += p, w++
                   } else
                     for (b = 0, P = 0; P < i; P++)
-                      for (R = 0, _ = P * u | 0, g = (D = P >> o) * d | 0, E = D * f | 0, N = 0; N < r; N++) v = 0 | l[g + (R = N >> a)], T = (409 * (S = 0 | c[E + R]) | 0) - 57088 | 0, C = (100 * v | 0) + (208 * S | 0) - 34816 | 0, A = (516 * v | 0) - 70912 | 0, I = 298 * s[_++] | 0, n[b] = I + T >> 8, n[b + 1] = I - C >> 8, n[b + 2] = I + A >> 8, b += 4
+                      for (R = 0, _ = P * u | 0, g = (w = P >> o) * d | 0, E = w * f | 0, N = 0; N < r; N++) v = 0 | l[g + (R = N >> a)], T = (409 * (S = 0 | c[E + R]) | 0) - 57088 | 0, C = (100 * v | 0) + (208 * S | 0) - 34816 | 0, A = (516 * v | 0) - 70912 | 0, I = 298 * s[_++] | 0, n[b] = I + T >> 8, n[b + 1] = I - C >> 8, n[b + 2] = I + A >> 8, b += 4
               }
             }
           }()

@@ -170,11 +170,11 @@ function R(e) {
   return i = e.sessionId, b = null, O = null, P(), false
 }
 
-function D() {
+function w() {
   i = null, b = null, O = null, P()
 }
 
-function w(e) {
+function D(e) {
   let {
     voiceStates: t
   } = e;
@@ -390,7 +390,7 @@ class z extends(a = Chunk442837.ZP.Store) {
 h(z, "displayName", "RTCConnectionStore");
 let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   CONNECTION_OPEN: R,
-  CONNECTION_CLOSED: D,
+  CONNECTION_CLOSED: w,
   RTC_CONNECTION_STATE: B,
   RTC_CONNECTION_PING: V,
   RTC_CONNECTION_LOSS_RATE: V,
@@ -400,7 +400,7 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_CLIENT_DISCONNECT: V,
   RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS: H,
   VIDEO_SIZE_UPDATE: K,
-  VOICE_STATE_UPDATES: w,
+  VOICE_STATE_UPDATES: D,
   VOICE_CHANNEL_SELECT: G,
   AUDIO_SET_NOISE_CANCELLATION: F,
   VOICE_SERVER_UPDATE: x,

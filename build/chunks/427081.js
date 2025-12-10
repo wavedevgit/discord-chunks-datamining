@@ -46,7 +46,7 @@ function R(e) {
   return !(0, O.zi)(e) && null != e.userStatus && null != e.userStatus.enrolledAt && null == e.userStatus.completedAt
 }
 
-function D(e) {
+function w(e) {
   for (let r of E.Z.quests.values()) {
     var t, n;
     let a = (0, v.Mo)(r);
@@ -58,7 +58,7 @@ function D(e) {
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   return null != t && e.some(e => e === c.eB) && (0, u.le)(t)
 }
 
@@ -116,7 +116,7 @@ class L extends Chunk147913.Z {
         let a = Chunk754700.find(e => e === t);
         null != Chunk147913 ? module.set(Chunk670081.id, {
           applicationId: Chunk147913
-        }) : w(Chunk754700, require) && module.set(Chunk670081.id, {
+        }) : D(Chunk754700, require) && module.set(Chunk670081.id, {
           applicationId: Chunk817788.eB
         })
       }
@@ -243,7 +243,7 @@ class L extends Chunk147913.Z {
         let {
           applicationId: t
         } = e;
-        D(t)
+        w(t)
       },
       EMBEDDED_ACTIVITY_UPDATE_V2: () => this.syncHeartbeats([r.X.PLAY_ACTIVITY], "EMBEDDED_ACTIVITY_UPDATE_V2", e => !x(e)),
       QUEST_APPLICATION_START_TIMER: e => {

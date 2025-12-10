@@ -289,13 +289,13 @@ function A(e) {
     onClose: O,
     onSelect: S,
     onInteraction: A
-  } = e, N = I(b), R = T(N), D = i.useRef([]);
-  l()(D.current, R) || (D.current = R);
-  let w = (0, p.c)("Menu"),
+  } = e, N = I(b), R = T(N), w = i.useRef([]);
+  l()(w.current, R) || (w.current = R);
+  let D = (0, p.c)("Menu"),
     x = null == (t = N.find(e => null != e.key)) ? true : t.key,
     L = (0, c.Z)({
       navId: n,
-      items: D.current,
+      items: w.current,
       initialFocusPath: f.Z.keyboardModeEnabled && null != x ? [x] : [],
       closeMenu: O,
       defaultIsUsingKeyboardNavigation: f.Z.keyboardModeEnabled
@@ -315,7 +315,7 @@ function A(e) {
     children: (0, r.jsx)("div", v(y({
       className: o()(E.menu, E[a], _),
       style: {
-        "--custom-menu-viewport-padding": w ? "".concat(g.sb, "px") : "".concat(g.F3, "px")
+        "--custom-menu-viewport-padding": D ? "".concat(g.sb, "px") : "".concat(g.F3, "px")
       }
     }, L.getContainerProps()), {
       ref: j,

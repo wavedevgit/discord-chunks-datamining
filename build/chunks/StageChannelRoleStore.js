@@ -109,7 +109,7 @@ function R(e) {
   return null != n && null != t && C(n.id, t)
 }
 
-function D(e) {
+function w(e) {
   let {
     voiceStates: t
   } = e;
@@ -122,7 +122,7 @@ function D(e) {
   }, false)
 }
 
-function w(e) {
+function D(e) {
   return A(e.guildId)
 }
 
@@ -172,8 +172,8 @@ let M = new j(Chunk570140.Z, {
   GUILD_MEMBER_REMOVE: R,
   GUILD_MEMBER_UPDATE: R,
   GUILD_ROLE_UPDATE: P,
-  PASSIVE_UPDATE_V2: w,
-  VOICE_STATE_UPDATES: D,
+  PASSIVE_UPDATE_V2: D,
+  VOICE_STATE_UPDATES: w,
   GUILD_CREATE: L,
   GUILD_DELETE: L
 })

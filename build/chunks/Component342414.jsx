@@ -119,10 +119,10 @@ let ee = (e, t, i) => {
       buttonVisibilityRef: N
     } = eo(), {
       analyticsLocations: R
-    } = (0, p.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, T.H)(o.I.MARKETING_PAGE_BANNER), M = null;
-    null != D && "marketingPageBanner" === D.properties.properties.oneofKind ? M = (0, r.jsx)(C.u, {
-      componentId: D.id,
-      promotionBannerMarketingComponentFields: D.properties.properties.marketingPageBanner
+    } = (0, p.ZP)(f.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, T.H)(o.I.MARKETING_PAGE_BANNER), M = null;
+    null != w && "marketingPageBanner" === w.properties.properties.oneofKind ? M = (0, r.jsx)(C.u, {
+      componentId: w.id,
+      promotionBannerMarketingComponentFields: w.properties.properties.marketingPageBanner
     }) : l ? M = (0, r.jsx)(A.Z, {
       variant: A.C.SUBSCRIBER_HOME
     }) : c ? M = (0, r.jsx)(F.Z, {}) : _ && (M = (0, r.jsx)(P._, {}));
@@ -178,7 +178,7 @@ let ee = (e, t, i) => {
             size: "md",
             text: Y.intl.string(Y.t.zrCzVB),
             onClick: () => ee(R, Z, k.R.CONFIRM_DISCOUNT)
-          }), (0, r.jsx)(w.Z, {
+          }), (0, r.jsx)(D.Z, {
             variant: $ || z ? "secondary" : "expressive",
             size: "md",
             buttonTextOverride: Y.intl.string(Y.t["3KomGa"])
@@ -231,7 +231,7 @@ let ee = (e, t, i) => {
           })
         }), (0, r.jsxs)("div", {
           className: W.heroHeadingOriginalButtonContainer,
-          children: [N && (0, r.jsx)(D.Z, {
+          children: [N && (0, r.jsx)(w.Z, {
             color: c.Tt.BRAND,
             className: a()(W.button, W.subscribeButton),
             subscriptionTier: null != (n = null == v || null == (t = v.subscription_trial) ? true : t.sku_id) ? n : C
@@ -244,7 +244,7 @@ let ee = (e, t, i) => {
               text: Y.intl.string(Y.t.zrCzVB),
               onClick: () => ee(E, y, k.R.CONFIRM_DISCOUNT),
               fullWidth: true
-            }), (0, r.jsx)(w.Z, {
+            }), (0, r.jsx)(D.Z, {
               variant: "overlay-secondary",
               size: "md",
               buttonTextOverride: Y.intl.string(Y.t.Ve9Ge6),

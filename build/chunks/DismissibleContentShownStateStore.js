@@ -8,7 +8,7 @@ require.d(exports, {
   ZP: () => H,
   bn: () => G,
   cI: () => U,
-  cv: () => w,
+  cv: () => D,
   f0: () => L,
   gE: () => j,
   og: () => M
@@ -103,7 +103,7 @@ let h = new(require("./499303.js")).I,
     })), e.candidates.get(t[Math.floor(Math.random() * t.length)])
   },
   R = e => null != e.prevFatigableCandidate && e.candidates.has(e.prevFatigableCandidate.content) && null == e.shownFatigableCandidate,
-  D = e => {
+  w = e => {
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > g;
     return R(e) && !t ? (h.unschedule(), A(e, N(e))) : (null != e.shownFatigableCandidate && !t || h.scheduled() || x(e) || h.schedule(() => {
@@ -115,7 +115,7 @@ let h = new(require("./499303.js")).I,
       })
     }, 250), e)
   },
-  w = () => x(y.getState()),
+  D = () => x(y.getState()),
   x = e => {
     let t = new Date().getTime();
     return null == e.shownFatigableCandidate && t - e.lastWinnerTime < E
@@ -125,7 +125,7 @@ let h = new(require("./499303.js")).I,
     (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
-        return O ? r : t ? I(r, e) : D(T(r, e))
+        return O ? r : t ? I(r, e) : w(T(r, e))
       })
     })
   },
@@ -133,7 +133,7 @@ let h = new(require("./499303.js")).I,
     (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
-        return t ? D(S(C(r, e), e)) : S(C(r, e), e)
+        return t ? w(S(C(r, e), e)) : S(C(r, e), e)
       })
     })
   },

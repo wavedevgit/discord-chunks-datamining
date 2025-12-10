@@ -34,7 +34,7 @@ function y(e) {
     selectedSkuId: b
   } = (0, d.JL)(), [y, O] = i.useState(n), [v, S] = i.useState(), [I, T] = i.useState(false), C = (0, u.pO)(y), A = h;
   C && (A = null != f ? f : m);
-  let [N, P] = i.useState(A), R = (0, l.hi)(), D = (0, l.yX)(), [w, x] = i.useState(), [L, j] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [M, k] = i.useState(true), [U, G] = i.useState(true), Z = (0, u.E5)(b, t), [B, F] = i.useState(false), [V, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
+  let [N, P] = i.useState(A), R = (0, l.hi)(), w = (0, l.yX)(), [D, x] = i.useState(), [L, j] = i.useState(t && (0, u.MY)(y) === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == c ? _.intl.string(_.t.ZkOo1U) : c), [M, k] = i.useState(true), [U, G] = i.useState(true), Z = (0, u.E5)(b, t), [B, F] = i.useState(false), [V, H] = i.useState(false), [Y, W] = i.useState(), K = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -70,8 +70,8 @@ function y(e) {
       recommendedGiftSkuIds: z,
       giftingOrigin: p,
       claimableRewards: R,
-      claimableVariants: D,
-      selectedGiftingPromotionReward: w,
+      claimableVariants: w,
+      selectedGiftingPromotionReward: D,
       setSelectedGiftingPromotionReward: x
     },
     children: E

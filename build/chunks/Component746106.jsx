@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => D
+  w: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -103,7 +103,7 @@ function R(e, t, n, r, o) {
   }, [l]), u
 }
 
-function D(e) {
+function w(e) {
   let {
     windowKey: t,
     themeOverride: n,
@@ -113,8 +113,8 @@ function D(e) {
     theme: b,
     focused: N,
     currentWindow: P,
-    fontScale: D,
-    fontScaleClass: w,
+    fontScale: w,
+    fontScaleClass: D,
     keyboardModeEnabled: x,
     saturation: L,
     desaturateUserColors: j,
@@ -174,8 +174,8 @@ function D(e) {
         theme: b,
         density: Y,
         focused: N,
-        fontScale: D,
-        fontScaleClass: w,
+        fontScale: w,
+        fontScaleClass: D,
         keyboardModeEnabled: x,
         mouseMode: V,
         saturation: L,

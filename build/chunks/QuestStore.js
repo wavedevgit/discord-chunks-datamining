@@ -74,7 +74,7 @@ function en() {
 function er(e, t) {
   var n, r, i, a;
   if (null != t.userStatus)
-    for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, R.isNil)(o) && D.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? E.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && E.delete(e))
+    for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, R.isNil)(o) && w.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? E.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && E.delete(e))
 }
 
 function ei(e, t) {
@@ -109,7 +109,7 @@ function es(e) {
   let {
     entitlements: n
   } = e, r = null == (t = n.items[0].tenantMetadata) ? true : t.questRewards.reward;
-  return (null == r ? true : r.tag) !== w.w.REWARD_CODE ? null : r.rewardCode
+  return (null == r ? true : r.tag) !== D.w.REWARD_CODE ? null : r.rewardCode
 }
 
 function el(e, t) {
@@ -288,14 +288,14 @@ function eR(e) {
   n.delete(t), m = n
 }
 
-function eD(e) {
+function ew(e) {
   let {
     questId: t
   } = e, n = new Set(_);
   n.add(t), _ = n
 }
 
-function ew(e) {
+function eD(e) {
   let {
     questId: t,
     entitlements: n
@@ -637,8 +637,8 @@ let e2 = new e3(Chunk570140.Z, {
     QUESTS_FETCH_REWARD_CODE_BEGIN: eN,
     QUESTS_FETCH_REWARD_CODE_SUCCESS: eP,
     QUESTS_FETCH_REWARD_CODE_FAILURE: eR,
-    QUESTS_CLAIM_REWARD_BEGIN: eD,
-    QUESTS_CLAIM_REWARD_SUCCESS: ew,
+    QUESTS_CLAIM_REWARD_BEGIN: ew,
+    QUESTS_CLAIM_REWARD_SUCCESS: eD,
     QUESTS_CLAIM_REWARD_FAILURE: ex,
     QUESTS_DISMISS_CONTENT_BEGIN: ej,
     QUESTS_DISMISS_CONTENT_SUCCESS: eM,

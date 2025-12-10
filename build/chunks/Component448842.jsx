@@ -93,7 +93,7 @@ function v(e) {
       onSelect: () => p.Z.openSearchFiltersModal(n)
     })
   }, [n]), {
-    items: D
+    items: w
   } = (0, ({
     [b.Sap.EMPTY]: () => {
       let e = [];
@@ -398,9 +398,9 @@ function v(e) {
         items: [...t]
       }
     }
-  })[T.type])(), w = i.useMemo(() => {
+  })[T.type])(), D = i.useMemo(() => {
     let e = [];
-    return D.forEach(t => {
+    return w.forEach(t => {
       switch (t.type) {
         case d.i.ROW:
           e.push(t);
@@ -409,9 +409,9 @@ function v(e) {
           t.data.rows.forEach(t => e.push(t))
       }
     }), e
-  }, [D]);
+  }, [w]);
   return {
-    items: D,
-    itemsData: w
+    items: w,
+    itemsData: D
   }
 }

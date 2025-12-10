@@ -19,11 +19,11 @@ let d = {
     useDisabled: Chunk734934.p,
     useDisabledMessage: () => (0, Chunk734934.p)() ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true
   },
-  g = {
+  S = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
-  S = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
+  g = (0, Chunk509613.qs)(Chunk313789.n.SELECTED_CHANNEL_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.TzjwV9),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel() && !Chunk292959.Z.getDisableAllSounds()),
     setValue: t => l.default.setNotifyMessagesInSelectedChannel(t),
@@ -43,5 +43,5 @@ let d = {
         (0, Chunk407458.WY)()
       }
     },
-    buildLayout: () => [(0, Chunk407458.j$)(d), S, (0, Chunk407458.j$)(g), T]
+    buildLayout: () => [(0, Chunk407458.j$)(d), g, (0, Chunk407458.j$)(S), T]
   })

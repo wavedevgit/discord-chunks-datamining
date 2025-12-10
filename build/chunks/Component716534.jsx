@@ -90,16 +90,16 @@ function q(e) {
       hasPaymentSources: eN,
       enablePremiumBrandRefresh: eP,
       premiumBrandRefreshBackgroundClassName: eR,
-      isPremiumGroupPurchase: eD
+      isPremiumGroupPurchase: ew
     } = (0, b.JL)(),
     {
-      isGift: ew,
+      isGift: eD,
       giftRecipient: ex,
       selectedGiftStyle: eL
     } = (0, E.wD)(),
     ej = (0, j.N)(),
     eM = null == ej || null == (t = ej.discount) ? true : t.plan_ids.some(e => Y.GP[e].skuId === ey),
-    ek = !ew && null != ej && null != ey && eM,
+    ek = !eD && null != ej && null != ey && eM,
     eU = (0, u.e7)([A.Z], () => A.Z.get(X));
   l()(null != eU, "Missing plan");
   let eG = [{
@@ -113,7 +113,7 @@ function q(e) {
     [eH, eY] = (0, L.ED)({
       items: eG,
       renewal: false,
-      preventFetch: eC || ew || eZ,
+      preventFetch: eC || eD || eZ,
       applyEntitlements: true,
       paymentSourceId: ee.paymentSourceId,
       currency: ee.currency,
@@ -124,7 +124,7 @@ function q(e) {
       subscriptionId: null == eb ? true : eb.id,
       items: eG,
       renewal: true,
-      preventFetch: ew || eZ,
+      preventFetch: eD || eZ,
       trialId: el,
       paymentSourceId: ee.paymentSourceId,
       currency: ee.currency,
@@ -147,10 +147,10 @@ function q(e) {
       skuId: ey,
       subscriptionPlanId: X,
       currency: ee.currency,
-      preventFetch: !ew || eZ,
+      preventFetch: !eD || eZ,
       loadId: eT.loadId
     }),
-    eJ = ew && (0, R.pO)(ex),
+    eJ = eD && (0, R.pO)(ex),
     e$ = null != (a = null != (n = null != eY ? eY : eK) ? n : eq) ? a : eX;
   i.useEffect(() => {
     eA(e$)
@@ -161,12 +161,12 @@ function q(e) {
     {
       hasEntitlements: e2,
       entitlements: e4
-    } = (0, V.H)(eU.id, ew),
-    e5 = (0, D.Ap)(ee.paymentSourceId),
+    } = (0, V.H)(eU.id, eD),
+    e5 = (0, w.Ap)(ee.paymentSourceId),
     e8 = (0, O.sE)(el, e1, X),
     e6 = (0, v.Kp)({
       isTrial: em,
-      isGift: ew,
+      isGift: eD,
       selectedSkuId: ey,
       startedPaymentFlowWithPaymentSources: eS.current,
       inReverseTrial: eC
@@ -181,7 +181,7 @@ function q(e) {
       excludeReverseTrialFromCountdown: true
     }),
     tt = !e6 && te.isFractionalPremiumActive && Y.dJ.has(X),
-    tn = i.useMemo(() => (0, D.V7)({
+    tn = i.useMemo(() => (0, w.V7)({
       skuId: ey,
       isPremium: ev,
       multiMonthPlans: [],
@@ -191,9 +191,9 @@ function q(e) {
     tr = (0, v.$g)(e6, eH, eU),
     ti = i.useMemo(() => em && null != eH ? eH : eC && null != eW ? eW : true, [eC, em, eH, eW]);
   if (i.useEffect(() => {
-      ew ? eI(eQ) : eI(eH)
-    }, [ew, eI, eQ, eH]), null != e$);
-  else if (ew && null != eQ) Q = (0, r.jsx)(F.e9, {
+      eD ? eI(eQ) : eI(eH)
+    }, [eD, eI, eQ, eH]), null != e$);
+  else if (eD && null != eQ) Q = (0, r.jsx)(F.e9, {
     plan: eU,
     className: o()(z.invoice, eR),
     isPrepaidPaymentSource: e5,
@@ -213,7 +213,7 @@ function q(e) {
         }), (0, r.jsx)(f.Text, {
           variant: "text-md/normal",
           children: K.intl.format(K.t.hXcaLT, {
-            price: (0, w.T4)(0, ti.currency, {
+            price: (0, D.T4)(0, ti.currency, {
               minimumFractionDigits: 0,
               maximumFractionDigits: 0
             })
@@ -261,7 +261,7 @@ function q(e) {
     to = K.intl.formatToPlainString(K.t["sBpy9/"], {
       planName: eU.name
     });
-  ew && !eJ ? to = K.intl.string(K.t.J5a0eb) : ew && eJ ? to = "" : (0, D.PV)(eU.id) && (to = D.ZP.getBillingReviewSubheader(null, eU));
+  eD && !eJ ? to = K.intl.string(K.t.J5a0eb) : eD && eJ ? to = "" : (0, w.PV)(eU.id) && (to = w.ZP.getBillingReviewSubheader(null, eU));
   let ts = null != eV && eV.length > 0 && (e1 === N.c || null === e3) && eN ? Z.w.SELECT_PAYMENT_METHOD : true;
   return e8 ? null : (0, r.jsxs)("div", {
     className: z.stepBody,
@@ -279,7 +279,7 @@ function q(e) {
         variant: "text-sm/normal",
         children: eu
       })]
-    }), e6 && !eD && (0, r.jsxs)("div", {
+    }), e6 && !ew && (0, r.jsxs)("div", {
       children: [(0, r.jsx)(M.UN, {
         negativeMarginTop: true,
         negativeMarginBottom: true
@@ -359,10 +359,10 @@ function q(e) {
           hide: em || eh,
           subscriptionPlan: eU,
           renewalInvoice: eW,
-          isGift: ew,
+          isGift: eD,
           paymentSourceType: e3,
           isEmbeddedIAP: eE,
-          basePrice: (0, D.aS)(eU.id, false, ew, ee)
+          basePrice: (0, w.aS)(eU.id, false, eD, ee)
         }),
         showPricingLink: eU.currency !== W.pK.USD,
         showWithdrawalWaiver: ta,
@@ -371,7 +371,7 @@ function q(e) {
         inReverseTrial: eC,
         isDiscount: eh,
         subscriptionPlan: eU,
-        isGift: ew
+        isGift: eD
       })
     })]
   })

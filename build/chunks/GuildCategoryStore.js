@@ -139,7 +139,7 @@ function R(e) {
   return null == t && null != h ? P(c.Z.getChannel(h), null) : P(c.Z.getChannel(t), t)
 }
 
-function D(e) {
+function w(e) {
   let {
     voiceStates: t
   } = e;
@@ -152,7 +152,7 @@ function D(e) {
   }, false)
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t
   } = e;
@@ -178,7 +178,7 @@ class j extends(r = Chunk442837.ZP.Store) {
 }
 p(j, "displayName", "GuildCategoryStore");
 let M = new j(Chunk570140.Z, {
-  CHANNEL_SELECT: w,
+  CHANNEL_SELECT: D,
   CONNECTION_OPEN: O,
   OVERLAY_INITIALIZE: O,
   CACHE_LOADED_LAZY: O,
@@ -196,5 +196,5 @@ let M = new j(Chunk570140.Z, {
   IMPERSONATE_UPDATE: N,
   IMPERSONATE_STOP: N,
   VOICE_CHANNEL_SELECT: R,
-  VOICE_STATE_UPDATES: D
+  VOICE_STATE_UPDATES: w
 })

@@ -36,12 +36,12 @@ function A(e) {
     message: a,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, f = i.useRef(null), [_, h] = i.useState(true), [A, P] = i.useState(false), R = t.state === O.r2o.ACCEPTING, D = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, f = i.useRef(null), [_, h] = i.useState(true), [A, P] = i.useState(false), R = t.state === O.r2o.ACCEPTING, w = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
     P((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > I)
   }, [P]);
-  let w = (0, p.PC)(t),
+  let D = (0, p.PC)(t),
     x = i.useCallback(() => {
       A && _ && h(false)
     }, [_, A]),
@@ -52,10 +52,10 @@ function A(e) {
       var e;
       return A && (null == (e = f.current) ? true : e.clientHeight) != null ? {
         height: _ ? I : f.current.clientHeight + T + C,
-        transition: D ? true : "height 0.2s ease"
+        transition: w ? true : "height 0.2s ease"
       } : {}
-    }, [_, A, D]);
-  return null == w ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.kL8, {
+    }, [_, A, w]);
+  return null == D ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.kL8, {
     className: o()(S.guildInviteContainer, {
       [S.clickable]: A && _
     }),
@@ -66,14 +66,14 @@ function A(e) {
       className: S.cardHeightMeasure,
       ref: f,
       children: [(0, r.jsx)(E.Z7, {
-        profile: w,
+        profile: D,
         className: S.banner
       }), (0, r.jsx)(E.N3, {
-        profile: w
+        profile: D
       }), (0, r.jsx)(g.Z, {
-        profile: w
+        profile: D
       }), (0, r.jsx)(m.E, {
-        profile: w,
+        profile: D,
         className: S.mainContent
       }), (0, r.jsx)(b.Z, {
         invite: t
@@ -101,7 +101,7 @@ function A(e) {
           className: S.buttonContainer,
           children: (0, r.jsx)(N, {
             invite: t,
-            profile: w,
+            profile: D,
             isMemberOfGuild: n,
             message: a,
             submitting: R,

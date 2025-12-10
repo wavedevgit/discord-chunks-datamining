@@ -45,13 +45,13 @@ let y = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       includeNonProfile: R
     } = p.fN.useExperiment({
       location: "useDisplayNameStylesFont"
-    }), D = (0, m.Y)({
+    }), w = (0, m.Y)({
       location: "UserNameWithEffects"
-    }), w = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), x = null != (t = null == i ? true : i.effectId) ? t : s.m.SOLID, L = (0, d.qgQ)(n), j = (0, u.EJ)(L, x === s.m.TOON ? b.emoji : true), M = (0, _.Z)({
-      displayNameStyles: D ? i : null,
-      backgroundColor: w
+    }), D = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), x = null != (t = null == i ? true : i.effectId) ? t : s.m.SOLID, L = (0, d.qgQ)(n), j = (0, u.EJ)(L, x === s.m.TOON ? b.emoji : true), M = (0, _.Z)({
+      displayNameStyles: w ? i : null,
+      backgroundColor: D
     });
-    if (!D || !O && !R || null == i) return n;
+    if (!w || !O && !R || null == i) return n;
     let k = (0, g.K)(x, M, {
         shouldWrap: T,
         fontOpacity: y.includes(i.fontId) ? C : 1

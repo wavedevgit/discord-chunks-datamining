@@ -36,7 +36,7 @@ function f(e) {
     eventCapture: N,
     assetLoader: P,
     onLoad: R
-  } = e, D = i.useContext(l.S), w = (0, s.C)(), x = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : w, [L, j] = i.useState(true), M = i.useRef(null), {
+  } = e, w = i.useContext(l.S), D = (0, s.C)(), x = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : D, [L, j] = i.useState(true), M = i.useRef(null), {
     rive: k,
     RiveComponent: U
   } = (0, o.useRive)({
@@ -94,7 +94,7 @@ function f(e) {
     dynamicDataBinding: C,
     onDataBindingChange: I
   }), i.useEffect(() => {
-    if (null != k && "short-loop" === y && D.reducedMotion.enabled) {
+    if (null != k && "short-loop" === y && w.reducedMotion.enabled) {
       let e = () => {
           k.isPlaying && (M.current = setTimeout(() => {
             k.pause()
@@ -107,7 +107,7 @@ function f(e) {
         k.off(o.EventType.Play, e), k.off(o.EventType.Pause, t), k.off(o.EventType.Stop, t)
       }
     }
-  }, [k, y, D.reducedMotion.enabled]), i.useLayoutEffect(() => {
+  }, [k, y, w.reducedMotion.enabled]), i.useLayoutEffect(() => {
     null != k && "layout" === m && (k.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
       k.resizeDrawingSurfaceToCanvas()
     }, 100))
@@ -123,12 +123,12 @@ function f(e) {
   i.useEffect(() => {
     if (null == k) return;
     let e = t => {
-      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && D.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(o.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && w.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(o.EventType.Advance, e)))
     };
     return k.on(o.EventType.Advance, e), p && k.play(), () => {
       k.off(o.EventType.Advance, e)
     }
-  }, [k, D.reducedMotion.enabled, y, p]);
+  }, [k, w.reducedMotion.enabled, y, p]);
   let Z = i.useRef(false);
   return i.useEffect(() => {
     if (null != k) return !x && Z.current && k.isPlaying && G.current > 0 ? k.pause() : x && !k.isPlaying && Z.current && k.play(), () => {

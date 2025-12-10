@@ -67,8 +67,8 @@ let h = "x-science-test",
   N = 0,
   P = 0,
   R = 0,
-  D = null,
-  w = 0,
+  w = null,
+  D = 0,
   x = Number.MAX_SAFE_INTEGER,
   L = 0,
   j = 0,
@@ -78,7 +78,7 @@ let h = "x-science-test",
   G = null;
 
 function Z() {
-  A = 0, N = 0, P = 0, w = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, D = Date.now(), R = C
+  A = 0, N = 0, P = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, w = Date.now(), R = C
 }
 
 function B(e) {
@@ -135,7 +135,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function $() {
       if (W = null, !X()) return Promise.resolve();
       let e = Y.slice();
-      Y = [], w = B(w);
+      Y = [], D = B(D);
       let t = e.length;
       x = Math.min(x, t), L = Math.max(L, t), j = B(j, t);
       let n = ee(e);
@@ -189,13 +189,13 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
           rpc_failure_count: P,
           first_seen_event_sequence_number: R,
           last_seen_event_sequence_number: C,
-          telemetry_period_start_timestamp: D,
+          telemetry_period_start_timestamp: w,
           telemetry_period_end_timestamp: Date.now(),
           event_queue_rejection_count: A,
-          event_queue_batch_count: w,
+          event_queue_batch_count: D,
           event_queue_batch_min_size: x === Number.MAX_SAFE_INTEGER ? 0 : x,
           event_queue_batch_max_size: L,
-          event_queue_batch_avg_size: w > 0 ? j / w : 0,
+          event_queue_batch_avg_size: D > 0 ? j / D : 0,
           science_request_id: G,
           science_response: U,
           launch_signature: q()

@@ -88,13 +88,13 @@ i.prototype.parse = function(e, t, n) {
     false === A && (A = y.length), this.host = y.slice(0, A), y = y.slice(A), this.parseHost(), this.hostname = this.hostname || "";
     var R = "[" === this.hostname[0] && "]" === this.hostname[this.hostname.length - 1];
     if (!R)
-      for (var D = this.hostname.split(/\./), N = 0, w = D.length; N < w; N++) {
-        var x = D[N];
+      for (var w = this.hostname.split(/\./), N = 0, D = w.length; N < D; N++) {
+        var x = w[N];
         if (x && !x.match(f)) {
           for (var L = "", j = 0, M = x.length; j < M; j++) x.charCodeAt(j) > 127 ? L += "x" : L += x[j];
           if (!L.match(f)) {
-            var k = D.slice(0, N),
-              U = D.slice(N + 1),
+            var k = w.slice(0, N),
+              U = w.slice(N + 1),
               G = x.match(p);
             G && (k.push(G[1]), U.unshift(G[2])), U.length && (y = "/" + U.join(".") + y), this.hostname = k.join(".");
             break
@@ -107,7 +107,7 @@ i.prototype.parse = function(e, t, n) {
     this.host = B + Z, this.href += this.host, R && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== y[0] && (y = "/" + y))
   }
   if (!_[S])
-    for (var N = 0, w = l.length; N < w; N++) {
+    for (var N = 0, D = l.length; N < D; N++) {
       var F = l[N];
       if (false !== y.indexOf(F)) {
         var V = encodeURIComponent(F);

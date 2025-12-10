@@ -121,12 +121,12 @@ true === b && (b = E), b(function(e, t) {
         strict: S
       }) : null,
       R = !!(h ? h(P, n) : P),
-      D = R ? y(_, u) : _,
-      w = R ? (0, s.Z)({}, I, {}, p) : I,
+      w = R ? y(_, u) : _,
+      D = R ? (0, s.Z)({}, I, {}, p) : I,
       x = (0, s.Z)({
         "aria-current": R && i || null,
-        className: D,
-        style: w,
+        className: w,
+        style: D,
         to: o
       }, A);
     return E !== b ? x.ref = t || C : x.innerRef = C, a.createElement(g, x)

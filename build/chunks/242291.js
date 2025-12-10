@@ -66,11 +66,11 @@ function R(e, t, n, r) {
   (0, E.XE)(t, e, y.YQ.SOUNDBOARD), (0, d.kq)(t, e, __OVERLAY__, n, r)
 }
 
-function D(e, t) {
+function w(e, t) {
   (0, E.XE)(t, e, y.YQ.JOINED_VOICE_CHANNEL), (0, d.vy)(t, e, __OVERLAY__)
 }
 
-function w() {
+function D() {
   var e, t;
   return Object.values(null != (t = null == (e = Chunk581883.Z.settings.guilds) ? true : module.guilds) ? exports : {}).some(e => null != e.joinSound)
 }
@@ -84,7 +84,7 @@ async function x(e) {
     a = b.Z.getSound(i, r.soundId);
   if (null != a) {
     if (!A(a, n) || !N(t, a, n, true) || !P(n)) return null;
-    D(a, n.id)
+    w(a, n.id)
   }
 }
 
@@ -92,7 +92,7 @@ function L(e) {
   let {
     isSoundboardButtonDisabled: t = false
   } = e, n = (0, r.e7)([_.default], () => _.default.getCurrentUser()), a = [];
-  if (!t && !w()) {
+  if (!t && !D()) {
     let e = (0, g.Fc)(n);
     (h.ZP.canUseCustomCallSounds(n) || e) && a.push(i.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL)
   }

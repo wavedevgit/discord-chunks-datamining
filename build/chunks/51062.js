@@ -62,24 +62,24 @@ function O(e, t) {
 function v(e, t, n) {
   var E, y, v, S, I, T, C, A, N, P, R;
   let {
-    channel: D,
-    type: w
+    channel: w,
+    type: D
   } = e, [x, L] = r.useState(() => (0, _.PA)()), j = (0, i.Z)(), M = (0, a.e7)([u.ZP, p.default], () => {
     var e, t;
     let n = p.default.getCurrentUser();
-    return null != (t = null != D.guild_id && null != n ? null == (e = u.ZP.getMember(D.guild_id, n.id)) ? true : e.isPending : null) && t
+    return null != (t = null != w.guild_id && null != n ? null == (e = u.ZP.getMember(w.guild_id, n.id)) ? true : e.isPending : null) && t
   }), {
     canMentionEveryone: k,
     hidePersonalInformation: U
   } = (0, a.cj)([d.Z, f.Z], () => ({
-    canMentionEveryone: D.isPrivate() || M || w === l.Ie.RULES_INPUT || d.Z.can(h.Plq.MENTION_EVERYONE, D),
+    canMentionEveryone: w.isPrivate() || M || D === l.Ie.RULES_INPUT || d.Z.can(h.Plq.MENTION_EVERYONE, w),
     hidePersonalInformation: f.Z.hidePersonalInformation
-  }), [D, w, M]), {
+  }), [w, D, M]), {
     activeCommand: G,
     activeCommandOption: Z
   } = (0, a.cj)([s.Z], () => ({
-    activeCommand: s.Z.getActiveCommand(D.id),
-    activeCommandOption: s.Z.getActiveOption(D.id)
+    activeCommand: s.Z.getActiveCommand(w.id),
+    activeCommandOption: s.Z.getActiveOption(w.id)
   })), B = (0, m.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
@@ -92,11 +92,11 @@ function v(e, t, n) {
       activeCommand: G,
       activeCommandOption: Z,
       activeInlineAutocompleteInput: H,
-      canMentionUsers: null != (A = null == (v = w.users) ? true : v.allowMentioning) && A,
+      canMentionUsers: null != (A = null == (v = D.users) ? true : v.allowMentioning) && A,
       canMentionEveryone: k,
       hidePersonalInformation: U,
-      hideMentionDescription: w === l.Ie.RULES_INPUT,
-      emojiIntention: w === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
+      hideMentionDescription: D === l.Ie.RULES_INPUT,
+      emojiIntention: D === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
       currentWord: null != (N = null == F ? true : F.word) ? N : "",
       currentWordIsAtStart: (null == F ? true : F.isAtStart) === true,
       currentFullWord: null != (P = null == F ? true : F.fullWord) ? P : "",

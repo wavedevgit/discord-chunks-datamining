@@ -88,7 +88,7 @@ require.d(exports, {
   qJ: () => Y,
   qb: () => eg,
   qt: () => tm,
-  r3: () => ew,
+  r3: () => eD,
   rs: () => T,
   sB: () => e6,
   uX: () => ec,
@@ -105,7 +105,7 @@ require.d(exports, {
   yR: () => et,
   yg: () => ee,
   yu: () => ef,
-  z3: () => eD,
+  z3: () => ew,
   z9: () => ep,
   zF: () => eV,
   zr: () => td
@@ -283,8 +283,8 @@ function P(e, t, n) {
 function R(e, t, n, i) {
   r.closure611_externref_shim(e, t, n, i)
 }
-let D = ["bytes"],
-  w = ["omit", "same-origin", "include"],
+let w = ["bytes"],
+  D = ["omit", "same-origin", "include"],
   x = ["same-origin", "no-cors", "cors", "navigate"],
   L = "undefined" == typeof FinalizationRegistry ? {
     register: () => {},
@@ -359,7 +359,7 @@ class G {
     r.intounderlyingbytesource_start(this.__wbg_ptr, e)
   }
   get type() {
-    return D[r.intounderlyingbytesource_type(this.__wbg_ptr)]
+    return w[r.intounderlyingbytesource_type(this.__wbg_ptr)]
   }
   cancel() {
     let e = this.__destroy_into_raw();
@@ -656,13 +656,13 @@ function eR(e, t, n) {
   return new Uint8Array(e, t >>> 0, n >>> 0)
 }
 
-function eD() {
+function ew() {
   return u(function(e, t) {
     return new Response(e, t)
   }, arguments)
 }
 
-function ew() {
+function eD() {
   return u(function(e, t, n) {
     return new Request(l(e, t), n)
   }, arguments)
@@ -739,7 +739,7 @@ function eK(e, t) {
 }
 
 function ez(e, t) {
-  e.credentials = w[t]
+  e.credentials = D[t]
 }
 
 function eq(e, t) {

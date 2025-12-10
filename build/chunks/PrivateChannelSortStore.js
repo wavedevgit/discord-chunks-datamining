@@ -109,12 +109,12 @@ function R(e) {
   return null != r && v.set(t, T(r, n.id))
 }
 
-function D(e) {
+function w(e) {
   let t = e.guild.id;
   return v.delete(t)
 }
 
-function w() {
+function D() {
   let e = Chunk592125.Z.getMutablePrivateChannels();
   for (let t in module) v.set(exports, T(module[exports]))
 }
@@ -164,12 +164,12 @@ let j = new L(Chunk570140.Z, {
   CONNECTION_OPEN: C,
   CONNECTION_OPEN_SUPPLEMENTAL: C,
   OVERLAY_INITIALIZE: C,
-  CACHE_LOADED: w,
-  CACHE_LOADED_LAZY: w,
+  CACHE_LOADED: D,
+  CACHE_LOADED_LAZY: D,
   CHANNEL_UPDATES: N,
   CHANNEL_CREATE: A,
   CHANNEL_DELETE: P,
   MESSAGE_CREATE: R,
-  GUILD_CREATE: D,
+  GUILD_CREATE: w,
   LOGOUT: S
 })

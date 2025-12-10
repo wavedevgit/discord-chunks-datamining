@@ -31,15 +31,15 @@ let v = function(e) {
     metadata: C
   } = (0, E.oq)(), A = [];
   !n && null == T && (S && !v && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
-  let [N, P] = (0, _.US)(A, y.R.SIDEBAR, true), R = N === a.z.CLIENT_THEMES_COACHMARK, D = N === a.z.CUSTOM_THEME_COACHMARK;
+  let [N, P] = (0, _.US)(A, y.R.SIDEBAR, true), R = N === a.z.CLIENT_THEMES_COACHMARK, w = N === a.z.CUSTOM_THEME_COACHMARK;
   if ((0, d.HA)(I, N), n) return null;
-  let w = T === E.wh.CLIENT_THEMES || R,
+  let D = T === E.wh.CLIENT_THEMES || R,
     x = T === E.wh.APP_ICON,
-    L = T === E.wh.CUSTOM_THEME || D,
+    L = T === E.wh.CUSTOM_THEME || w,
     j = T === E.wh.APPLICATION_TEST_MODE_DEBUG;
-  if (!(w || x || L || j)) return null;
+  if (!(D || x || L || j)) return null;
   let M = () => (0, r.jsxs)(r.Fragment, {
-    children: [w && (0, r.jsx)(u.Z, {
+    children: [D && (0, r.jsx)(u.Z, {
       markAsDismissed: R ? P : () => {
         (0, p.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: y.L.INDIRECT_ACTION,
@@ -53,7 +53,7 @@ let v = function(e) {
     }), L && (0, r.jsx)(f.Z, {
       metadata: null != C ? C : {},
       markAsDismissed: P,
-      isCoachmark: D,
+      isCoachmark: w,
       isMobile: t
     }), j && (0, r.jsx)(s.Z, {})]
   });

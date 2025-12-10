@@ -2,7 +2,7 @@
 /** chunk id: 593545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -245,7 +245,7 @@ function P(e) {
     children: (0, r.jsx)(u.P3F, {
       className: g.openFullPreviewSection,
       onClick: () => {
-        (0, u.h7j)(t => (0, r.jsx)(D, y({}, e, t)))
+        (0, u.h7j)(t => (0, r.jsx)(w, y({}, e, t)))
       },
       children: (0, r.jsx)(u.bJT, {
         size: "xs",
@@ -276,7 +276,7 @@ function R(e) {
   }));
   let I = (null == b ? true : b.slice(0, O).join("\n")) + S,
     R = (0, f.nM)(I),
-    D = l || O < y;
+    w = l || O < y;
   return (0, r.jsxs)("div", {
     className: o()(E, g.container),
     children: [(0, r.jsx)("div", {
@@ -293,7 +293,7 @@ function R(e) {
       color: "text-default",
       className: g.footer,
       variant: "text-sm/normal",
-      children: [D ? (0, r.jsxs)(r.Fragment, {
+      children: [w ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(C, {
           expanded: l,
           setExpanded: c,
@@ -322,7 +322,7 @@ function R(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     url: t,
     fileName: n,
@@ -369,7 +369,7 @@ function D(e) {
     })
   })
 }
-let w = Chunk473749.memo(function(e) {
+let D = Chunk473749.memo(function(e) {
   let {
     url: t,
     fileName: n,

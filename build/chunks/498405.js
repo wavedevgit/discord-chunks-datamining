@@ -141,9 +141,9 @@ function h(e) {
         let i = _(null != (r = e.target.ownerDocument) ? r : document, p(t, S));
         null == i || i.click()
     }
-  }, [v, t, S, c, g]), D = r.useCallback(() => {
+  }, [v, t, S, c, g]), w = r.useCallback(() => {
     I || T(true)
-  }, [I]), w = r.useCallback(e => {
+  }, [I]), D = r.useCallback(e => {
     e.target !== e.currentTarget && !e.currentTarget.contains(e.relatedTarget) && I && T(false)
   }, [I]), x = r.useCallback(() => {
     O({
@@ -155,11 +155,11 @@ function h(e) {
     id: t,
     tabIndex: false,
     onKeyDown: R,
-    onFocus: D,
-    onBlur: w,
+    onFocus: w,
+    onBlur: D,
     onMouseLeave: x,
     "aria-activedescendant": S.length > 0 ? (0, o.qR)(t, S.join(d)) : true
-  }), [t, R, D, w, x, S]), M = r.useCallback(e => {
+  }), [t, R, w, D, x, S]), M = r.useCallback(e => {
     let {
       path: n
     } = e;

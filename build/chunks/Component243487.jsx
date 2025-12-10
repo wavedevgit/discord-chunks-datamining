@@ -151,13 +151,13 @@ let K = Chunk473749.memo(function(e) {
       contentInventoryIds: []
     })
   }, [O, T, I]);
-  let N = () => d || !_ ? null : (0, r.jsx)(D.E, {
+  let N = () => d || !_ ? null : (0, r.jsx)(w.E, {
       emptyText: U.intl.string(U.t.hEh0l1),
       icon: l.gj8
     }),
     P = y !== j.Og ? S.slice(0, y) : S,
-    w = y !== j.Og ? S.slice(y) : [],
-    x = v.get(w[0]),
+    D = y !== j.Og ? S.slice(y) : [],
+    x = v.get(D[0]),
     Z = u === M.OYC.ALWAYS && y !== j.Og;
   return I ? (0, r.jsxs)("div", {
     className: G.voiceUserContainer,
@@ -176,7 +176,7 @@ let K = Chunk473749.memo(function(e) {
         displayUserMode: u,
         locked: d
       }, e)
-    }), Z && 1 === w.length && null != x && (0, r.jsx)(L.ZP, {
+    }), Z && 1 === D.length && null != x && (0, r.jsx)(L.ZP, {
       sortedVoiceState: x,
       channel: a,
       widgetId: t,
@@ -188,8 +188,8 @@ let K = Chunk473749.memo(function(e) {
       displayNameMode: c,
       displayUserMode: u,
       locked: d
-    }, w[0]), Z && w.length > 1 && (0, r.jsx)(Y, {
-      hiddenVoiceStates: w,
+    }, D[0]), Z && D.length > 1 && (0, r.jsx)(Y, {
+      hiddenVoiceStates: D,
       voiceStateMap: v,
       size: (0, L.px)(b),
       locked: d,
@@ -253,13 +253,13 @@ function q(e) {
   var t;
   let {
     isSettingsPreview: n
-  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), _ = (0, s.cj)([E.Z, C.default, w.Z], () => {
+  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), _ = (0, s.cj)([E.Z, C.default, D.Z], () => {
     let e = E.Z.getCurrentUserActiveStream();
     return {
       displayUserMode: C.default.getDisplayUserMode(),
       displayNameMode: C.default.getDisplayNameMode(),
       avatarSizeMode: C.default.getAvatarSizeMode(),
-      streamApplication: (null == l ? true : l.pid) === w.Z.getTargetPID() ? (0, p.Z)(c) : null,
+      streamApplication: (null == l ? true : l.pid) === D.Z.getTargetPID() ? (0, p.Z)(c) : null,
       stream: e
     }
   });

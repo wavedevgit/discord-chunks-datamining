@@ -179,10 +179,10 @@ function G(e) {
     onClick: d,
     disabled: s,
     variant: "secondary",
-    "aria-label": D.intl.formatToPlainString(D.t.UXw6W2, {
+    "aria-label": w.intl.formatToPlainString(w.t.UXw6W2, {
       commandName: n.untranslatedName
     }),
-    text: D.intl.string(D.t.TXNS7S),
+    text: w.intl.string(w.t.TXNS7S),
     icon: l.U,
     iconPosition: "end",
     size: "md"
@@ -270,13 +270,13 @@ function B(e) {
       context: n,
       section: _,
       commands: y,
-      headerName: D.intl.string(D.t.acSE0h),
+      headerName: w.intl.string(w.t.acSE0h),
       sectionName: o
     }), (0, r.jsx)(Z, {
       context: n,
       section: _,
       commands: p ? M : E,
-      headerName: D.intl.string(D.t.DUU9L3),
+      headerName: w.intl.string(w.t.DUU9L3),
       sectionName: o,
       children: b && (0, r.jsx)(N.Z, {
         sortOrder: h,

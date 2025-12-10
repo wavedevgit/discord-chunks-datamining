@@ -44,11 +44,11 @@ function R() {
   O = false, v = true, S = false, I = false, T = null, C = Chunk683860.z.LATEST_ACTIVITY, r = new Set, N = 0, A = [], P = Chunk697988.z.MATCH_SOME
 }
 
-function D(e, t) {
+function w(e, t) {
   return t === l.z.LATEST_ACTIVITY ? h.ZP.lastMessageId(e.id) : e.id
 }
 
-function w(e) {
+function D(e) {
   e.channelId === T && e.sortOrder === C && (0, c.O)(e.tagFilter, r) && e.tagSetting === P || R(), T = e.channelId, C = e.sortOrder, r = e.tagFilter instanceof Set ? e.tagFilter : new Set(e.tagFilter), P = e.tagSetting, O = true, v = false
 }
 
@@ -75,7 +75,7 @@ function j() {
   if (null == T) returnfalse;
   let e = !S,
     t = Chunk592125.Z.getChannel(A[A.length - 1]),
-    n = null == exports ? null : D(exports, C);
+    n = null == exports ? null : w(exports, C);
   A = o()(Chunk592125.Z.getAllThreadsForParent(T)).filter(e => e.isArchivedThread()).filter(t => {
     if (0 !== r.size) {
       var i, a;
@@ -88,10 +88,10 @@ function j() {
     }
     if (e || null == n) returntrue;
     {
-      let e = null == t ? null : D(t, C);
+      let e = null == t ? null : w(t, C);
       return null != e && g.default.compare(e, n) >= 0
     }
-  }).sort((e, t) => g.default.compare(D(e, C), D(t, C))).map(e => e.id).reverse().value()
+  }).sort((e, t) => g.default.compare(w(e, C), w(t, C))).map(e => e.id).reverse().value()
 }
 
 function M(e) {
@@ -149,7 +149,7 @@ let V = new F(Chunk570140.Z, {
   THREAD_DELETE: G,
   THREAD_UPDATE: Z,
   CHANNEL_DELETE: k,
-  LOAD_ARCHIVED_THREADS: w,
+  LOAD_ARCHIVED_THREADS: D,
   LOAD_ARCHIVED_THREADS_SUCCESS: x,
   LOAD_ARCHIVED_THREADS_FAIL: M,
   RESORT_THREADS: L

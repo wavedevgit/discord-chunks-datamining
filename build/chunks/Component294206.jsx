@@ -234,9 +234,9 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     playSoundboardSound: em,
     previewSound: eh,
     isPlayingSound: eg
-  } = (0, N.Z)(I, null != (u = null == T ? true : T.id) ? u : null, null != (m = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? m : 100, !eo && (null == T ? true : T.isVocal()) ? w.w.VOICE : w.w.DEFAULT), {
+  } = (0, N.Z)(I, null != (u = null == T ? true : T.id) ? u : null, null != (m = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? m : 100, !eo && (null == T ? true : T.isVocal()) ? D.w.VOICE : D.w.DEFAULT), {
     createMultipleConfettiAt: eE
-  } = i.useContext(h.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(F), eS = i.useRef(new c.Xp), eI = I.soundId === B, eT = "sound-".concat(I.soundId), eC = (0, s.JA)(eT), eA = null != ed || null != ef, eN = !(0, A.Nq)(ep, I, T) && !eo, eP = Z || Q && !eN, eR = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > eR ? "top" : "bottom", [ew, ex] = i.useState(false), eL = i.useCallback(() => {
+  } = i.useContext(h.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(F), eS = i.useRef(new c.Xp), eI = I.soundId === B, eT = "sound-".concat(I.soundId), eC = (0, s.JA)(eT), eA = null != ed || null != ef, eN = !(0, A.Nq)(ep, I, T) && !eo, eP = Z || Q && !eN, eR = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, ew = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > eR ? "top" : "bottom", [eD, ex] = i.useState(false), eL = i.useCallback(() => {
     ex(true)
   }, []), ej = i.useCallback(() => {
     ex(false)
@@ -248,7 +248,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
 
   function eU(e) {
     if (eI && !eO && (ev.current = Math.min(ev.current + H, V), Math.random() < ev.current && eE(ey.x, ey.y, true, true, {
-        sprite: D.vv
+        sprite: w.vv
       })), null != $) return void $(e);
     ek()
   }
@@ -353,8 +353,8 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     children: [(0, r.jsx)(d.u, {
       "aria-label": null != el ? I.name : true,
       __unsupportedReactNodeAsText: null != el ? el : I.name,
-      position: eD,
-      shouldShow: !ew,
+      position: ew,
+      shouldShow: !eD,
       delay: 500,
       children: (0, r.jsxs)(f.kL8, U(M({}, ec), {
         buttonProps: U(M({}, eC), {
@@ -401,7 +401,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       }))
     }), !I.available && (0, r.jsx)(d.u, {
       text: x.intl.string(x.t.MDOXJR),
-      shouldShow: !ew,
+      shouldShow: !eD,
       children: (0, r.jsx)("div", {
         className: L.unavailableTooltip,
         children: !er && (0, r.jsxs)("div", {

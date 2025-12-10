@@ -136,7 +136,7 @@ function R(e, t, n) {
   return null == r || null == r.primarySkuId ? null : n.get(r.primarySkuId)
 }
 
-function D(e, t, n) {
+function w(e, t, n) {
   var r;
   let i = null != (r = n.getNowPlaying(e)) ? r : {},
     a = y.default.keys(i).map(e => {
@@ -152,7 +152,7 @@ function D(e, t, n) {
   }
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = n.getStatisticsForApplication(e);
   if (null == r) return null;
   let i = r.map(e => {
@@ -175,7 +175,7 @@ function L(e, t, n, r, a) {
   let s = o.applicationId,
     l = [],
     c = [],
-    u = D(s, n, r);
+    u = w(s, n, r);
   null != u && (l.push(u), c = u.userInfo.map(e => {
     let {
       user: t
@@ -186,7 +186,7 @@ function L(e, t, n, r, a) {
   if (null != d) {
     let e = d.map(e => e.user_id);
     if (i().difference(e, c).length > 0) {
-      let e = w(s, n, a);
+      let e = D(s, n, a);
       null != e && l.push(e)
     }
   }

@@ -41,9 +41,9 @@ let d = {},
   N = null,
   P = false,
   R = Chunk800530.oE.NONE,
-  D = null;
+  w = null;
 
-function w(e) {
+function D(e) {
   _ = true
 }
 
@@ -168,26 +168,26 @@ function q(e) {
 
 function Q(e) {
   let {} = e;
-  R = c.oE.LOADING, D = null
+  R = c.oE.LOADING, w = null
 }
 
 function X(e) {
   let {} = e;
-  R = c.oE.LOADING, D = null, A += 1
+  R = c.oE.LOADING, w = null, A += 1
 }
 
 function J(e) {
   let {
     success: t
   } = e;
-  R = t ? c.oE.SUCCESS : A < c.o6 ? c.oE.LOADING : c.oE.FAILURE, D = null
+  R = t ? c.oE.SUCCESS : A < c.o6 ? c.oE.LOADING : c.oE.FAILURE, w = null
 }
 
 function $(e) {
   let {
     error: t
   } = e;
-  R = c.oE.ERROR, D = t
+  R = c.oE.ERROR, w = t
 }
 
 function ee() {
@@ -257,7 +257,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return R
   }
   getAgeCheckError() {
-    return D
+    return w
   }
   getAgeCheckAttempts() {
     return A
@@ -265,7 +265,7 @@ class et extends(r = Chunk442837.ZP.Store) {
 }
 u(et, "displayName", "SafetyHubStore");
 let en = new et(Chunk570140.Z, {
-  SAFETY_HUB_FETCH_START: w,
+  SAFETY_HUB_FETCH_START: D,
   SAFETY_HUB_FETCH_SUCCESS: x,
   SAFETY_HUB_FETCH_FAILURE: L,
   SAFETY_HUB_FETCH_CLASSIFICATION_START: j,

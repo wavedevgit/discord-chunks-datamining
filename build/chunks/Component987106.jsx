@@ -112,9 +112,9 @@ function T(e) {
     N = (0, f.s)(O),
     P = null != O && i === d.ZJ.PREMIUM,
     R = P && (null == N ? true : N.disabled),
-    D = P ? null == N ? true : N.label : n,
-    w = null != g,
-    x = null != D && D.length > 0,
+    w = P ? null == N ? true : N.label : n,
+    D = null != g,
+    x = null != w && w.length > 0,
     L = i === d.ZJ.LINK && null != b && b.length > 0,
     j = C === h.gH.LOADING || P && null == N;
   return t = L ? () => {
@@ -146,7 +146,7 @@ function T(e) {
           size: "xs",
           color: "white"
         })
-      }) : null, w ? (0, r.jsx)(u.Z, {
+      }) : null, D ? (0, r.jsx)(u.Z, {
         className: a()({
           [E.textEmoji]: x
         }),
@@ -156,7 +156,7 @@ function T(e) {
         animated: g.animated
       }) : null, x ? (0, r.jsx)("div", {
         className: E.label,
-        children: D
+        children: w
       }) : null, L ? (0, r.jsx)(l.rgF, {
         size: "xs",
         color: "currentColor",

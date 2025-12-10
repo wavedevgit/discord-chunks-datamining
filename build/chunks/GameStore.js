@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Z: () => B,
-  m: () => w
+  m: () => D
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var i, a, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -39,9 +39,9 @@ let b = "GameStoreReportedGames",
   N = false,
   P = null,
   R = [],
-  D = [];
+  w = [];
 
-function w(e) {
+function D(e) {
   var t, n, r, i, a, o, s, l, c, u;
   return {
     id: e.id,
@@ -106,7 +106,7 @@ function U(e) {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && C !== n && (v.clear(), S = {}, I = {}, C = n), t)) L(w(e));
+  for (let e of (null != n && C !== n && (v.clear(), S = {}, I = {}, C = n), t)) L(D(e));
   r = true, A = Date.now(), N = true
 }
 
@@ -115,7 +115,7 @@ function G(e) {
     executables: t,
     patterns: n
   } = e;
-  R = t.map(e => e.toLowerCase()), D = n.map(e => RegExp(e, "i")), P = Date.now()
+  R = t.map(e => e.toLowerCase()), w = n.map(e => RegExp(e, "i")), P = Date.now()
 }
 class Z extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -203,7 +203,7 @@ class Z extends(a = Chunk442837.ZP.PersistedStore) {
     return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(a)) ? n : r
   }
   shouldBlock(e) {
-    return !!(null != e.exePath && (null != R.find(t => e.exePath.includes(t)) || D.some(t => t.test(e.exePath)))) || false
+    return !!(null != e.exePath && (null != R.find(t => e.exePath.includes(t)) || w.some(t => t.test(e.exePath)))) || false
   }
   shouldReport(e) {
     if (this.shouldBlock(e)) returnfalse;

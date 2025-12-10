@@ -130,12 +130,12 @@ function V(e) {
             analyticsSource: c.Z.VIRTUAL_CURRENCY_ORB_PROFILE_BADGE
           });
           if (u) {
-            if (t.preventDefault(), I.default.track(w.rMx.TIERED_TENURE_BADGE_CLICKED, {
+            if (t.preventDefault(), I.default.track(D.rMx.TIERED_TENURE_BADGE_CLICKED, {
                 badge: e.id,
                 premium_type: q,
                 viewed_user_id: null == v ? true : v.userId
               }), q) {
-              p ? (0, y.uL)(w.Z5c.NITRO_HOME) : (0, g.k)({
+              p ? (0, y.uL)(D.Z5c.NITRO_HOME) : (0, g.k)({
                 analyticsLocations: Y,
                 displayProfile: v
               }), null == U || U();
@@ -159,7 +159,7 @@ function V(e) {
           if (null != n) return null == U || U(), n(t)
         },
         T = () => {
-          e.id === P.i && I.default.track(w.rMx.QUEST_CONTENT_VIEWED, B(G({}, (0, E.mH)(b.jn.QUEST_BADGE)), {
+          e.id === P.i && I.default.track(D.rMx.QUEST_CONTENT_VIEWED, B(G({}, (0, E.mH)(b.jn.QUEST_BADGE)), {
             is_targeted: false
           })), K({
             action: "HOVER_BADGE"
@@ -173,7 +173,7 @@ function V(e) {
         Q = (0, r.jsx)("img", {
           alt: " ",
           "aria-hidden": true,
-          src: null != (n = e.iconSrc) ? n : (0, D.Ej)(e.icon),
+          src: null != (n = e.iconSrc) ? n : (0, w.Ej)(e.icon),
           className: o()(k.badge, h)
         }),
         ee = {
@@ -194,7 +194,7 @@ function V(e) {
           children: (0, r.jsx)(_.Z, {
             targetElementRef: H,
             mode: "tooltip",
-            tooltipDelay: D.vB,
+            tooltipDelay: w.vB,
             children: n
           })
         }, "".concat(e.id, "-").concat(t))
@@ -226,11 +226,11 @@ function V(e) {
             badgeId: e.id,
             targetElementRef: H,
             mode: "tooltip",
-            tooltipDelay: D.vB,
+            tooltipDelay: w.vB,
             body: e.description,
             actions: o,
             onShow: () => {
-              I.default.track(w.rMx.TOOLTIP_VIEWED, {
+              I.default.track(D.rMx.TOOLTIP_VIEWED, {
                 type: "tiered_tenure_badge_profile_" + (p ? "self" : "other")
               })
             },
@@ -251,7 +251,7 @@ function V(e) {
         text: en,
         "aria-label": e.description,
         forceOpen: null != Z && Z(e.id),
-        delay: D.vB,
+        delay: w.vB,
         children: et
       }, "".concat(e.id, "-").concat(t))
     })

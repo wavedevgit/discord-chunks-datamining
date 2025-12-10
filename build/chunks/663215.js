@@ -127,12 +127,12 @@ function T(e) {
       let n = s.Z.getGuild(t);
       null != n && e.push(n)
     }), e
-  }), D = d.ZP.canUseSoundboardEverywhere(o), w = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? true : e.guild_id)), x = (0, i.e7)([l.Z], () => {
+  }), w = d.ZP.canUseSoundboardEverywhere(o), D = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? true : e.guild_id)), x = (0, i.e7)([l.Z], () => {
     let {
       canCreateExpressions: e
-    } = (0, a.Gw)(w);
+    } = (0, a.Gw)(D);
     return e
-  }, [w]), {
+  }, [D]), {
     canSeeRecentlyHeard: L,
     canSeeFrequentlyPlayed: j
   } = (0, f.k)({
@@ -175,19 +175,19 @@ function T(e) {
       allSounds: y,
       potentialSoundIdsForSection: M.map(e => e.soundId),
       sectionType: m.bg.FREQUENTLY_USED
-    }), true !== w && S(i, w, {
+    }), true !== D && S(i, D, {
       currentGuildHasAddPermissions: x,
       allSounds: y,
       filterOutEmptyCurrentGuild: t,
       sortSoundsFn: N
-    }), D || I(i, y), v({
+    }), w || I(i, y), v({
       sections: i,
       guilds: R,
-      currentGuildId: null == w ? true : w.id,
+      currentGuildId: null == D ? true : D.id,
       allSounds: y,
       hasNitro: u,
       sortSoundsFn: N
-    }), D && I(i, y), i.forEach(t => {
+    }), w && I(i, y), i.forEach(t => {
       t.categoryInfo.type === m.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
@@ -199,7 +199,7 @@ function T(e) {
         lockedCustomSoundCount: r
       }
     }
-  }, [P, y, T, k, M, j, L, w, x, t, D, R, n, C, u, N])
+  }, [P, y, T, k, M, j, L, D, x, t, w, R, n, C, u, N])
 }
 
 function C(e, t, n) {

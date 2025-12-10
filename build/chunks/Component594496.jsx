@@ -99,7 +99,7 @@ function M(e) {
     el = e => eo(e, null == X ? true : X.avatar, N.I5);
   return (0, r.jsxs)("div", {
     className: j.sectionsContainer,
-    children: [(0, r.jsx)(D.Z, {
+    children: [(0, r.jsx)(w.Z, {
       errors: null != (i = null == W ? true : W.nick) ? i : null == Q ? true : Q.nick,
       username: A.ZP.getName(U),
       pendingNick: B,
@@ -114,7 +114,7 @@ function M(e) {
       },
       pendingPronouns: H,
       currentPronouns: ea
-    }, "pronouns"), (0, r.jsxs)(w.Z, {
+    }, "pronouns"), (0, r.jsxs)(D.Z, {
       user: U,
       showOverlay: !ee,
       children: [(0, r.jsx)(m.Z, {

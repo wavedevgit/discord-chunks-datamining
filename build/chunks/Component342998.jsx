@@ -42,7 +42,7 @@ let y = (0, Chunk663042.U)(e => ({
     }), I = (0, m.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), T = null != S && !I && n, {
       activeEntryId: C,
       setActiveEntryId: A
-    } = y(), N = C === t.id, P = T && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [R, D] = (0, h.US)(P), w = R === s.z.CLOUD_PLAY_POPOVER;
+    } = y(), N = C === t.id, P = T && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [R, w] = (0, h.US)(P), D = R === s.z.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
       T && null === C && A(t.id)
     }, [C, T, t.id, A]);
@@ -50,12 +50,12 @@ let y = (0, Chunk663042.U)(e => ({
       null == S || S()
     };
     i.useEffect(() => () => {
-      w && (D(g.L.USER_DISMISS), A(null))
-    }, [w, D, A]);
+      D && (w(g.L.USER_DISMISS), A(null))
+    }, [D, w, A]);
     let [L, j] = i.useState(false);
     i.useEffect(() => {
-      w && !L && j(true)
-    }, [w, L]), (0, p.Z)({
+      D && !L && j(true)
+    }, [D, L]), (0, p.Z)({
       name: o.ImpressionNames.CLOUD_PLAY_CTA,
       type: o.ImpressionTypes.VIEW,
       properties: {
@@ -65,13 +65,13 @@ let y = (0, Chunk663042.U)(e => ({
       disableTrack: !L
     }, [L]);
     let M = () => {
-      D(g.L.USER_DISMISS), A(null)
+      w(g.L.USER_DISMISS), A(null)
     };
     return (0, r.jsx)(l.J2, {
       title: E.intl.string(E.t["+WNDtV"]),
       body: E.intl.string(E.t["5QKxGI"]),
       targetElementRef: a,
-      shouldShow: w,
+      shouldShow: D,
       position: "left",
       caretConfig: {
         align: "center"

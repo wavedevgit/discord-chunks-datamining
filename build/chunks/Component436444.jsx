@@ -94,7 +94,7 @@ let T = {
       totalAvailableBoostsCount: P
     } = e, {
       analyticsLocations: R
-    } = (0, c.ZP)(), D = (0, u.Z)(), w = m.oCV[A], x = w - P, L = A <= N || y, j = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, U = i.premiumTier < A && P >= w, {
+    } = (0, c.ZP)(), w = (0, u.Z)(), D = m.oCV[A], x = D - P, L = A <= N || y, j = L && A <= i.premiumTier, M = L && A < i.premiumTier, k = L && A === i.premiumTier, U = i.premiumTier < A && P >= D, {
       scaleFactor: G
     } = (0, l.q_F)({
       from: {
@@ -137,7 +137,7 @@ let T = {
         guild: i
       }))
     }
-    let F = !j && D.fractionalState === h.a$.NONE,
+    let F = !j && w.fractionalState === h.a$.NONE,
       V = F ? l.P3F : "div",
       H = F ? {
         onClick: B

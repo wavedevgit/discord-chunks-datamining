@@ -69,12 +69,12 @@ let y = (e, t, n, r) => {
       })
     }, [null == v ? true : v.src, t, N, n, C, P, A, S]);
     if (null == S || null == N || null == P || !(0, p.qy)(P)) return null;
-    let D = null != n.extra.platform ? f.v[n.extra.platform] : null;
+    let w = null != n.extra.platform ? f.v[n.extra.platform] : null;
     return (0, r.jsxs)(m.yR, {
       children: [(0, r.jsx)(m.wG, {
         channel: t,
-        headerIcons: null == D ? null : (0, r.jsx)(h.Z, {
-          Icon: D,
+        headerIcons: null == w ? null : (0, r.jsx)(h.Z, {
+          Icon: w,
           "aria-label": E.intl.string(E.t.YR4cHH)
         }),
         entry: n,

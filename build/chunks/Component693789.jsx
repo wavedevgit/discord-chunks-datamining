@@ -147,8 +147,8 @@ function v(e) {
     onDoubleClick: N,
     onMouseDown: P,
     onMouseUp: R,
-    onMouseEnter: D,
-    onMouseLeave: w,
+    onMouseEnter: w,
+    onMouseLeave: D,
     onKeyDown: x,
     children: L,
     rel: j,
@@ -159,7 +159,7 @@ function v(e) {
     submittingFinishedLabel: Z
   } = e, B = m(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let F = p || h,
-    V = F && (null != D || null != w),
+    V = F && (null != w || null != D),
     H = V ? null : I,
     Y = y(k, t),
     W = i.useRef(false);
@@ -176,8 +176,8 @@ function v(e) {
       onDoubleClick: F ? e => e.preventDefault() : N,
       onMouseUp: p ? true : R,
       onMouseDown: p ? true : P,
-      onMouseEnter: D,
-      onMouseLeave: w,
+      onMouseEnter: w,
+      onMouseLeave: D,
       onKeyDown: p ? true : x,
       type: v,
       disabled: p,
@@ -208,8 +208,8 @@ function v(e) {
       [u.fullWidth]: s
     }),
     children: [K, (0, r.jsx)("span", {
-      onMouseEnter: D,
-      onMouseLeave: w,
+      onMouseEnter: w,
+      onMouseLeave: D,
       className: u.disabledButtonOverlay
     })]
   }) : K

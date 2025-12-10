@@ -95,7 +95,7 @@ let R = e => {
       })
     })
   },
-  D = e => {
+  w = e => {
     let {
       numSentReferrals: t,
       placement: n
@@ -112,7 +112,7 @@ let R = e => {
       })]
     })
   },
-  w = e => {
+  D = e => {
     let {
       userRecords: t
     } = e, n = t.length, i = n < 1 ? null : t[0], a = n < 2 ? null : t[1], o = n < 3 ? null : t[2];
@@ -121,13 +121,13 @@ let R = e => {
       children: [(0, r.jsx)(R, {
         userRecord: i,
         placement: 1
-      }), (0, r.jsx)(D, {
+      }), (0, r.jsx)(w, {
         numSentReferrals: n,
         placement: 1
       }), (0, r.jsx)(R, {
         userRecord: a,
         placement: 2
-      }), (0, r.jsx)(D, {
+      }), (0, r.jsx)(w, {
         numSentReferrals: n,
         placement: 2
       }), (0, r.jsx)(R, {
@@ -188,7 +188,7 @@ let R = e => {
             children: (0, O.$s)({
               hasSentAll: m
             })
-          }), (0, r.jsx)(w, {
+          }), (0, r.jsx)(D, {
             userRecords: l
           }), (0, r.jsx)(u.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
@@ -220,22 +220,22 @@ let R = e => {
           })]
         })]
       }),
-      D = p.redeemed === b.Q;
+      w = p.redeemed === b.Q;
     return (0, r.jsx)(f.Gt, {
       value: A,
       children: (0, r.jsx)("div", {
         className: o()({
-          [I.containerWithGlowWithoutBanner]: D,
-          [I.containerWithoutGlow]: !D,
+          [I.containerWithGlowWithoutBanner]: w,
+          [I.containerWithoutGlow]: !w,
           [I.containerWithMargins]: !t,
-          [I.containerWithGlowOnSettingsPage]: D && t
+          [I.containerWithGlowOnSettingsPage]: w && t
         }),
         children: (0, r.jsx)("div", {
           ref: N,
           className: o()({
             [I.expandedProgressBarContainer]: !t,
             [I.expandedProgressBarContainerSettingsPage]: t,
-            [I.allReferralsSentBorder]: D
+            [I.allReferralsSentBorder]: w
           }),
           children: R
         })

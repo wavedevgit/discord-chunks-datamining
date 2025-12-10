@@ -86,7 +86,7 @@ class z extends Chunk473749.PureComponent {
   }
   tokenize(e) {
     let t = (0, C.kG)(v.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
-    return v.lv(t, e, D.ZP)
+    return v.lv(t, e, w.ZP)
   }
   clearSearch() {
     let {
@@ -211,7 +211,7 @@ class z extends Chunk473749.PureComponent {
       let {
         isSearchFiltersRedesignEnabled: e
       } = this.props;
-      return e ? (0, r.jsx)(w.Z, {
+      return e ? (0, r.jsx)(D.Z, {
         ref: this._searchFiltersRedesignPopoutRef,
         searchContext: this.props.searchContext,
         navId: W,
@@ -284,7 +284,7 @@ class z extends Chunk473749.PureComponent {
           _editorRef: e
         } = this;
         null == e || e.focus(), this.handleSetSearchQuery({
-          query: D.ZP[B.dCx.FILTER_IN].key + "".concat(o, " "),
+          query: w.ZP[B.dCx.FILTER_IN].key + "".concat(o, " "),
           replace: true,
           searchQuerySource: G.w7.SEARCH_TEXT_INPUT
         })
@@ -473,7 +473,7 @@ function q(e) {
   i.useEffect(() => {
     l && c.current !== l && (c.current = l, L.Z.ensureSearchInputDecorators(t))
   }, [l, t]);
-  let f = i.useMemo(() => null != s ? s : v.nR(S.Jl(D.ZP)), [s]),
+  let f = i.useMemo(() => null != s ? s : v.nR(S.Jl(w.ZP)), [s]),
     {
       isSearching: p,
       hasResults: m
@@ -486,7 +486,7 @@ function q(e) {
     }),
     O = (0, u.e7)([g.ZP], () => g.ZP.getCurrentSearchContextId()),
     [I, A] = i.useState(false),
-    w = i.useRef(I),
+    D = i.useRef(I),
     j = (0, u.e7)([g.ZP, y.Z, E.Z], () => {
       let e = y.Z.getCurrentlySelectedChannelId(),
         t = E.Z.getChannel(e);
@@ -499,9 +499,9 @@ function q(e) {
   let G = (0, d.VXO)(Z.L),
     V = M || G;
   i.useEffect(() => {
-    w.current && !I && (w.current = false, (0, U.IZ)({
+    D.current && !I && (D.current = false, (0, U.IZ)({
       searchContext: t
-    })), !w.current && I && (w.current = true)
+    })), !D.current && I && (D.current = true)
   }, [t, I]);
   let H = i.useCallback(e => {
       let {

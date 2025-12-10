@@ -40,7 +40,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = o().throttle(() => {
+let w = o().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -48,7 +48,7 @@ let D = o().throttle(() => {
   }, 100, {
     trailing: false
   }),
-  w = 10 * Chunk70956.Z.Millis.SECOND;
+  D = 10 * Chunk70956.Z.Millis.SECOND;
 
 function x(e) {
   var t, n;
@@ -59,7 +59,7 @@ function x(e) {
     onDisable: c,
     onCrashDisabled: u
   } = e, p = i.useMemo(() => new s.SpringValue(1), []), h = i.useRef(null), [g, y] = i.useState(false), [O, v] = i.useState(false), S = (0, d.e7)([E.default], () => E.default.getCurrentUser());
-  (0, m.ZP)(() => (h.current = setTimeout(R, w), _.Z.track(A.rMx.NOTIFICATION_VIEWED, {
+  (0, m.ZP)(() => (h.current = setTimeout(R, D), _.Z.track(A.rMx.NOTIFICATION_VIEWED, {
     notif_type: C.n0.OverlayCrashed
   }), () => {
     null != h.current && clearTimeout(h.current)
@@ -67,7 +67,7 @@ function x(e) {
   let R = i.useCallback(() => {
       p.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
     }, [p, o, u]),
-    D = i.useCallback(e => {
+    w = i.useCallback(e => {
       O || (v(true), null == o || o(), _.Z.track(A.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
@@ -117,7 +117,7 @@ function x(e) {
       className: P.notificationIcon
     }),
     onNotificationClick: x,
-    onConfirmClick: D,
+    onConfirmClick: w,
     onCancelClick: null != j ? L : true,
     onDismissClick: o,
     expand: true,
@@ -153,7 +153,7 @@ class L extends Chunk473749.PureComponent {
       error_stack: e.stack,
       sentry_issue_id: i,
       error_level: "fatal"
-    }), D(), this.pid = r
+    }), w(), this.pid = r
   }
   render() {
     let {

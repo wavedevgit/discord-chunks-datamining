@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -77,7 +77,7 @@ function x(e) {
     highlightAddPaymentMethodButton: a,
     dropdownClassName: s,
     analyticsLocation: P,
-    currentInvoicePreview: D,
+    currentInvoicePreview: w,
     disabled: x = false
   } = e, j = (0, c.e7)([E.Z], () => E.Z.hidePersonalInformation), [M, k] = (0, c.Wu)([b.Z], () => [b.Z.paymentSources, b.Z.hasFetchedPaymentSources]), U = (0, g.V)((0, S.yb)(t)), {
     analyticsLocations: G
@@ -98,7 +98,7 @@ function x(e) {
         amount: i.subtotal,
         currency: i.currency
       };
-    D.currency !== i.currency || D.currency === i.currency && D.total !== i.total ? await L(i, () => {
+    w.currency !== i.currency || w.currency === i.currency && w.total !== i.total ? await L(i, () => {
       r(e, n, a)
     }, () => {
       F(false)
@@ -115,7 +115,7 @@ function x(e) {
       W(e, K(e), Y)
     }), "function" == typeof n && n(e.id)
   }, Q = () => {
-    (0, u.ZDy)(async () => e => (0, r.jsx)(p.default, w(R({}, e), {
+    (0, u.ZDy)(async () => e => (0, r.jsx)(p.default, D(R({}, e), {
       onAddPaymentSource: q,
       analyticsLocation: P
     })), {

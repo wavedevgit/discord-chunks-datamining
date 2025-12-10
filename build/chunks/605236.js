@@ -9,11 +9,11 @@ require.d(exports, {
   J0: () => A,
   JO: () => F,
   ME: () => k,
-  OA: () => w,
+  OA: () => D,
   Ow: () => V,
   UJ: () => R,
   XM: () => I,
-  XY: () => D,
+  XY: () => w,
   ZF: () => T,
   bj: () => U,
   kk: () => j,
@@ -169,14 +169,14 @@ function R(e, t, n) {
   return f && p
 }
 
-function D(e, t) {
+function w(e, t) {
   if ((0, h.Bh)(e)) returntrue;
   let n = s.Z.getGuildDismissedContentState(t);
   return null != n && null != n[e] && true === n[e].dismissed
 }
 
-function w(e, t) {
-  return (0, r.e7)([s.Z], () => D(e, t))
+function D(e, t) {
+  return (0, r.e7)([s.Z], () => w(e, t))
 }
 
 function x(e, t) {

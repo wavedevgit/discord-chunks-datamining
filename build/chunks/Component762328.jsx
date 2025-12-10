@@ -76,9 +76,9 @@ function b(e) {
       children: N,
       renderLayer: P,
       viewportPadding: R = g,
-      trigger: D = "click"
+      trigger: w = "click"
     } = e,
-    w = i.useRef(null),
+    D = i.useRef(null),
     x = i.useMemo(() => {
       let e = [(0, a.cv)(v)];
       return S && e.push((0, a.RR)({
@@ -113,7 +113,7 @@ function b(e) {
     whileElementsMounted: s.Me,
     elements: n
   }), Z = (0, o.bQ)(G), B = (0, o.XI)(G, {
-    enabled: "hover" === D,
+    enabled: "hover" === w,
     handleClose: (0, o.xp)({
       blockPointerEvents: true
     })
@@ -136,7 +136,7 @@ function b(e) {
         ref: L.setFloating
       }, V()), {
         children: (0, r.jsx)(u.Jc, {
-          containerRef: w,
+          containerRef: D,
           children: P({
             placement: M,
             update: U,

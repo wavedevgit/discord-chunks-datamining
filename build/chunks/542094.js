@@ -70,7 +70,7 @@ function T(e) {
     launchingComponentId: c,
     commandOrigin: d,
     source: f
-  }), D = C(p, t.activity);
+  }), w = C(p, t.activity);
   return {
     imageBackground: v,
     videoUrl: S,
@@ -78,7 +78,7 @@ function T(e) {
     activityAction: P,
     onActivityItemSelected: R,
     labelType: O ? E.label_type : a.ww.NONE,
-    staffReleasePhase: D
+    staffReleasePhase: w
   }
 }
 

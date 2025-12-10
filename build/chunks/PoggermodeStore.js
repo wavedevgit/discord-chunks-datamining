@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => M,
-  wU: () => w
+  wU: () => D
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -158,7 +158,7 @@ function R(e) {
   N(n)
 }
 
-function D(e) {
+function w(e) {
   let {
     comboMessage: t
   } = e;
@@ -166,7 +166,7 @@ function D(e) {
   P(t)
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   return !(e !== t || null == n || r.has(n)) && (r.add(n), true)
 }
 
@@ -182,7 +182,7 @@ function x(e) {
   } = e;
   if (!d.Z.isEnabled()) returnfalse;
   let s = l.default.getId();
-  if (!w(null == a ? true : a.id, s, o, S)) returnfalse;
+  if (!D(null == a ? true : a.id, s, o, S)) returnfalse;
   let c = I.get(A({
     userId: null != (t = null == a ? true : a.id) ? t : "???",
     channelId: r
@@ -234,7 +234,7 @@ class L extends(r = Chunk442837.ZP.Store) {
 m(L, "displayName", "PoggermodeStore");
 let j = new L(Chunk570140.Z, {
     POGGERMODE_UPDATE_COMBO: R,
-    POGGERMODE_UPDATE_MESSAGE_COMBO: D,
+    POGGERMODE_UPDATE_MESSAGE_COMBO: w,
     MESSAGE_CREATE: x
   }),
   M = j

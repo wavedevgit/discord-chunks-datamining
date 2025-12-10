@@ -45,7 +45,7 @@ let b = 1e3,
     let {
       mediaUrls: P,
       isSuccess: R
-    } = (0, _.Z)(!y && a && A), D = (0, i.useRef)(null), [w, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
+    } = (0, _.Z)(!y && a && A), w = (0, i.useRef)(null), [D, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
         a && n && !U && "none" === M && (y || !R ? (k("static"), y || (G(true), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.Z.dispatch({
@@ -105,9 +105,9 @@ let b = 1e3,
         className: h.wowAnimation,
         children: (0, r.jsx)(l.zec, {
           fit: "layout",
-          ref: D,
+          ref: w,
           dataBinding: {
-            ExitTrigger: w,
+            ExitTrigger: D,
             EntryTrigger: L
           },
           listenOnDocumentBody: true
@@ -117,7 +117,7 @@ let b = 1e3,
         children: t
       })]
     });
-    let Z = !w;
+    let Z = !D;
     return "static" === M ? (0, r.jsxs)(r.Fragment, {
       children: [Z && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("img", {

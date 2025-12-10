@@ -103,7 +103,7 @@ function P(e) {
   let t, n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = O[e.id],
     i = true !== e.id && e.id === h.default.getId();
-  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = D((0, p.QI)(r), r.premiumType));
+  if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = w((0, p.QI)(r), r.premiumType));
   else if (n) {
     var a;
     let n = A(e);
@@ -116,18 +116,18 @@ function P(e) {
 function R(e) {
   var t;
   let n = null != (t = e.premium_type) ? t : e.premiumType,
-    r = D((0, p.VR)(e), n);
+    r = w((0, p.VR)(e), n);
   return true !== e.premiumType ? e.premiumType = r : true !== e.premium_type && (e.premium_type = r), e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (!e) return t;
   let n = d.Z.getPremiumTypeOverride(),
     r = d.Z.getPremiumTypeActual();
   return n === b.F_ ? r : n
 }
 
-function w(e, t) {
+function D(e, t) {
   if ((null == e ? true : e.users) == null) returnfalse;
   for (let n in e.users) {
     let r = e.users[n];
@@ -144,7 +144,7 @@ function x(e, t) {
     null == (n = e.clip_participants) || n.forEach(e => {
       N(e) && P(e, t)
     })
-  }), w(e.resolved, t), (null == (o = e.interaction_metadata) ? true : o.user) != null && N(e.interaction_metadata.user) && P(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
+  }), D(e.resolved, t), (null == (o = e.interaction_metadata) ? true : o.user) != null && N(e.interaction_metadata.user) && P(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
     var n, r, i, a, o, s, l;
     (null == (r = e.moderator_report) || null == (n = r.reported_member) ? true : n.user) != null && P(e.moderator_report.reported_member.user, t), (null == (a = e.moderator_report) || null == (i = a.reporting_member) ? true : i.user) != null && P(e.moderator_report.reporting_member.user, t), Object.values(null != (l = null == (s = e.message) || null == (o = s.resolved) ? true : o.users) ? l : {}).forEach(e => {
       N(e) && P(e, t)
@@ -628,14 +628,14 @@ function eR(e) {
   }, false)
 }
 
-function eD(e) {
+function ew(e) {
   let {
     participants: t
   } = e;
   return t.reduce((e, t) => (0, o.Z)(t) && P(t.member.user) || e, false)
 }
 
-function ew(e) {
+function eD(e) {
   let {} = e, t = O[h.default.getId()];
   return null != t && (O[h.default.getId()] = t.set("ageVerificationStatus", a.F$.CLIENT_ONLY_PENDING), true)
 }
@@ -651,7 +651,7 @@ function eL(e) {
   let {
     resolved: t
   } = e;
-  return w(t, true)
+  return D(t, true)
 }
 
 function ej(e) {
@@ -779,8 +779,8 @@ class eM extends Chunk750041.Z {
       FAMILY_CENTER_REQUEST_LINK_SUCCESS: eC,
       MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eP,
       LOAD_ICYMI_HYDRATED: eR,
-      EMBEDDED_ACTIVITY_UPDATE_V2: eD,
-      INITIATE_AGE_VERIFICATION: ew,
+      EMBEDDED_ACTIVITY_UPDATE_V2: ew,
+      INITIATE_AGE_VERIFICATION: eD,
       CLOSE_AGE_VERIFICATION_MODAL: ex,
       INTERACTION_MODAL_CREATE: eL
     })

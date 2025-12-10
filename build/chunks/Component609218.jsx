@@ -79,7 +79,7 @@ function M(e) {
     X = (0, S.Z)(T.Si.TIER_2);
   if (Q) {
     let e;
-    e = F ? (0, h.rO)() ? D.Z : w.Z : (0, h.rO)() ? x.Z : L.Z;
+    e = F ? (0, h.rO)() ? w.Z : D.Z : (0, h.rO)() ? x.Z : L.Z;
     let t = F ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.ZMr, {

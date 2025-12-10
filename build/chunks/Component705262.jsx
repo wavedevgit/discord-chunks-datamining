@@ -112,7 +112,7 @@ let H = Object.freeze({
       analyticsLocations: r
     } = e;
     I.default.track(R.rMx.CLIENT_THEME_UPDATED, {
-      feature_name: D.QP.CLIENT_THEME,
+      feature_name: w.QP.CLIENT_THEME,
       theme_name: n,
       is_persisted: t,
       location_stack: r
@@ -154,7 +154,7 @@ let H = Object.freeze({
       isPreview: o,
       isCoachmark: s
     } = e;
-    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2 && o) return null;
+    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2 && o) return null;
     let l = (0, a.EQ)({
       type: i,
       isPreview: o,
@@ -188,10 +188,10 @@ let H = Object.freeze({
       isCoachmark: s
     } = e, {
       type: l
-    } = i.useContext(Y), [c] = (0, o.Wu)([C.Z], () => [C.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2;
+    } = i.useContext(Y), [c] = (0, o.Wu)([C.Z], () => [C.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2;
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
-      type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-      subscriptionTier: D.Si.TIER_2,
+      type: w.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+      subscriptionTier: w.Si.TIER_2,
       children: j.intl.format(j.t.G8yQXi, {
         onPremiumClick: () => h.z
       })
@@ -234,7 +234,7 @@ let H = Object.freeze({
           }), h && "SETTINGS" === a ? R(e) : (0, u.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
-            useSystemTheme: h ? w.KW.OFF : true
+            useSystemTheme: h ? D.KW.OFF : true
           }, l), null != t) {
           if (E && b(false), t <= y || 0 === t) return void O(0);
           O(e => e + 1)
@@ -244,9 +244,9 @@ let H = Object.freeze({
         await (0, u.ZI)({
           backgroundGradientPresetId: e.id,
           theme: e.theme,
-          useSystemTheme: h ? w.KW.OFF : true
+          useSystemTheme: h ? D.KW.OFF : true
         }, x.fy.SLOW_USER_ACTION), (0, _.XO)(_.wh.CLIENT_THEMES), (0, S.default)()
-      }, D = () => {
+      }, w = () => {
         if (!E) return null;
         let e = P.qt[s.Us.EASTER_EGG];
         if (null == e) return null;
@@ -290,7 +290,7 @@ let H = Object.freeze({
         tabIndex: 0 !== n || t ? true : 0,
         showBadge: false,
         showLockedBadge: false
-      }, e.id)), D()]
+      }, e.id)), w()]
     })
   },
   X = e => {
@@ -326,7 +326,7 @@ let H = Object.freeze({
       delay: a
     } = i.useContext(Y), {
       analyticsLocations: s
-    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, C.Z], () => [y.Z.theme, null == C.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === w.KW.ON]), _ = e => {
+    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, C.Z], () => [y.Z.theme, null == C.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === D.KW.ON]), _ = e => {
       (0, T.xs)(), W({
         isPersisted: true,
         analyticsLocations: s,

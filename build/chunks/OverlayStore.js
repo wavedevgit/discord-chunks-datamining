@@ -443,10 +443,10 @@ function R(e) {
   let {
     widgetId: t
   } = e;
-  return N(t, (e, t) => D(t, e.id))
+  return N(t, (e, t) => w(t, e.id))
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = H(e);
   n.sort((e, t) => e.zIndex - t.zIndex);
   let r = n.findIndex(e => e.id === t);
@@ -456,7 +456,7 @@ function D(e, t) {
   returntrue
 }
 
-function w(e) {
+function D(e) {
   let {
     widgetId: t,
     meta: n
@@ -853,7 +853,7 @@ let q = new z(Chunk570140.Z, {
   LAYOUT_DELETE_WIDGET: U,
   LAYOUT_DELETE_ALL_WIDGETS: G,
   LAYOUT_CREATE_WIDGETS: Z,
-  LAYOUT_SET_WIDGET_META: w,
+  LAYOUT_SET_WIDGET_META: D,
   LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: k,
   LAYOUT_SET_DEFAULT_CONFIG: B
 })

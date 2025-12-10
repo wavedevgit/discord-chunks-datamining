@@ -82,8 +82,8 @@ function T(e) {
     onView: N,
     presenceActivity: P,
     analyticsLocations: R,
-    showAuthButton: D,
-    startAuthorization: w
+    showAuthButton: w,
+    startAuthorization: D
   } = e, x = (0, s.e7)([h.Z], () => h.Z.getMessages(o.id)), L = i.useMemo(() => {
     let e = [],
       r = true;
@@ -97,18 +97,18 @@ function T(e) {
           embedded: m
         })
       }
-    }] : null != S && (e = [S], r = false), D && r && e.push({
+    }] : null != S && (e = [S], r = false), w && r && e.push({
       label: O.intl.string(O.t.lw71Nf),
       trackingArea: d.j_.CONNECT_ACCOUNT,
       onClick: () => {
-        w({
+        D({
           analyticsLocations: R
         })
       },
       icon: l.uIJ,
       iconButton: true
     }), e.length > 0 && !(0, E.b)(t.id, x, n.id, P)) ? [] : e
-  }, [m, _, S, x, P, n.id, t.id, D, w, R]), j = L.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
+  }, [m, _, S, x, P, n.id, t.id, w, D, R]), j = L.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
   (0, b.Z)(j, R);
   let M = L.length > 0,
     k = i.useMemo(() => (0, r.jsx)(l.Text, {

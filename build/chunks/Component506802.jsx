@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   aM: () => k,
-  gq: () => w,
+  gq: () => D,
   jS: () => U,
   r6: () => T
 }), require("./415506.js"), require("./388685.js");
@@ -100,7 +100,7 @@ let C = 16,
     red: Chunk855711.tooltipRed
   });
 
-function D(e, t, n) {
+function w(e, t, n) {
   let r = "left" === e || "right" === e,
     i = r ? "top" : "left",
     a = r ? "top" : "left",
@@ -111,7 +111,7 @@ function D(e, t, n) {
     [i]: "calc(".concat(s, " + ").concat(l, "px)")
   }
 }
-let w = e => {
+let D = e => {
     let {
       targetElementRef: t,
       align: n = "center",
@@ -153,10 +153,10 @@ let w = e => {
           "data-mtctest-ignore": v,
           children: [(0, i.jsx)("div", {
             className: s()(E.tooltipPointer, E.tooltipPointerBg, b),
-            style: D(null != t ? t : r, n, p)
+            style: w(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipPointer, b),
-            style: D(null != t ? t : r, n, p)
+            style: w(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipContent, {
               [E.tooltipContentAllowOverflow]: h
@@ -195,7 +195,7 @@ let w = e => {
       enter: j,
       leave: s.enabled ? L : x,
       onRest: n
-    }, "animate-always")((e, t) => t ? (0, i.jsx)(w, y({
+    }, "animate-always")((e, t) => t ? (0, i.jsx)(D, y({
       "data-migration-pending": true,
       animationStyle: e,
       targetElementRef: r

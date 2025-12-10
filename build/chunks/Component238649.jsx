@@ -38,7 +38,7 @@ let P = (e, t) => {
       offerExpiresAt: P
     } = e, {
       analyticsLocations: R
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, _.Nx)(), w = (0, v.$)(), x = (0, m.Z)(), L = null != x, j = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), w = (0, _.Nx)(), D = (0, v.$)(), x = (0, m.Z)(), L = null != x, j = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
       visibilityPercentageRef: M,
       visibilityPercentage: k
     } = (0, I.E)(!j), U = (0, l.e7)([p.Z], () => p.Z.affinities), G = !L && U.length > 0, Z = (0, h.H)(s.I.MARKETING_PAGE_BANNER);
@@ -54,7 +54,7 @@ let P = (e, t) => {
             className: N.contentContainer,
             children: [(0, r.jsx)(C.Z, {
               containerVisibilityPercentage: k
-            }), D && (null != P ? (0, r.jsx)(y.Z, {
+            }), w && (null != P ? (0, r.jsx)(y.Z, {
               expiresAt: P,
               className: N.heroOfferCountdown
             }) : (0, r.jsx)("div", {
@@ -87,13 +87,13 @@ let P = (e, t) => {
                   enablePremiumBrandRefresh: true
                 })
               }), (0, r.jsxs)("div", {
-                className: D ? N.singleButtonContainer : N.twoButtonContainer,
+                className: w ? N.singleButtonContainer : N.twoButtonContainer,
                 children: [(0, r.jsx)(b.Z, {
                   size: "md",
-                  fullWidth: D,
+                  fullWidth: w,
                   hasActivePromotion: !!a,
                   subscriptionTier: i
-                }), !D && (0, r.jsx)(E.Z, {
+                }), !w && (0, r.jsx)(E.Z, {
                   variant: "secondary",
                   size: "md"
                 })]
@@ -103,7 +103,7 @@ let P = (e, t) => {
                   color: "text-muted",
                   variant: "text-xs/medium",
                   children: A.intl.format(A.t.kt9wxs, {
-                    cheapestMonthlyPrice: w
+                    cheapestMonthlyPrice: D
                   })
                 })
               }), null != Z && "marketingPageBanner" === Z.properties.properties.oneofKind && (0, r.jsx)(g.u, {

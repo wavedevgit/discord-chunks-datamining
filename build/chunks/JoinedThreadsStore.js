@@ -176,7 +176,7 @@ function R(e) {
   }, O(e.id)
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     userId: n,
@@ -196,7 +196,7 @@ function D(e) {
   } : delete m[t]
 }
 
-function w(e) {
+function D(e) {
   var t, n;
   let r = false;
   return (null == (t = e.removedMemberIds) ? true : t.includes(u.default.getId())) && e.id in m && (m = f({}, m), delete m[e.id], r = true), null == (n = e.addedMembers) || n.forEach(t => {
@@ -253,7 +253,7 @@ let L = new x(Chunk570140.Z, {
     LOAD_ARCHIVED_THREADS_SUCCESS: A,
     THREAD_DELETE: P,
     THREAD_MEMBER_UPDATE: R,
-    THREAD_MEMBER_LOCAL_UPDATE: D,
-    THREAD_MEMBERS_UPDATE: w
+    THREAD_MEMBER_LOCAL_UPDATE: w,
+    THREAD_MEMBERS_UPDATE: D
   }),
   j = L

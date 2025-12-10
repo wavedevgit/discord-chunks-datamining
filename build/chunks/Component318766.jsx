@@ -87,7 +87,7 @@ let A = 20,
     tension: 800,
     friction: 24
   },
-  D = () => {
+  w = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk345857.premiumTooltipContainer,
@@ -107,7 +107,7 @@ let A = 20,
     })
   };
 
-function w(e) {
+function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : N;
   return {
     "--custom-emoji-sprite-size": "".concat(t, "px"),
@@ -129,11 +129,11 @@ function x(e) {
     spriteSize: b,
     ref: O
   } = e, S = T(e, ["className", "renderButtonContents", "active", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "spriteClassName", "spriteSize", "ref"]);
-  let [C, A] = i.useState(false), [N, D] = i.useState(50), x = C || a, L = (0, h.l)(y, "emojiButton", x ? "Hovered" : "Normal"), j = w(N, b), M = i.useCallback(() => {
+  let [C, A] = i.useState(false), [N, w] = i.useState(50), x = C || a, L = (0, h.l)(y, "emojiButton", x ? "Hovered" : "Normal"), j = D(N, b), M = i.useCallback(() => {
     if (x) return;
     let e = Math.floor(Math.random() * P);
-    A(true), D(e), (0, _.x)(E.qR.EmojiButtonMouseEntered)
-  }, [x, A, D]), k = i.useCallback(() => {
+    A(true), w(e), (0, _.x)(E.qR.EmojiButtonMouseEntered)
+  }, [x, A, w]), k = i.useCallback(() => {
     A(false)
   }, [A]), U = i.useCallback(() => (0, _.x)(E.qR.EmojiButtonFocused), []), G = (0, l.e7)([f.Z], () => f.Z.useReducedMotion);
   return (0, r.jsx)(d.P3F, I(v({
@@ -218,7 +218,7 @@ function L(e) {
   return null == n ? P({}) : C ? (0, r.jsx)(d.aML, {
     "data-migration-pending": true,
     targetElementRef: N,
-    text: () => (0, r.jsx)(D, {}),
+    text: () => (0, r.jsx)(w, {}),
     "aria-label": b.intl.formatToMarkdownString(b.t["/7R4q4"], {}),
     position: "top",
     shouldShow: true,

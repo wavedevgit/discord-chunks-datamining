@@ -197,12 +197,12 @@ let R = [
     ["TAB", "⇥"],
     ["SPACE", "␣"]
   ],
-  D = e => {
+  w = e => {
     for (let [t, n] of R)
       if (t === e.toUpperCase()) return n;
     return e
   },
-  w = e => {
+  D = e => {
     for (let [t, n] of R)
       if (n === e.toUpperCase()) return t.toLowerCase();
     return e
@@ -245,7 +245,7 @@ function k(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(),
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.Z.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
-    let i = A(w(r), t, n);
+    let i = A(D(r), t, n);
     return null != i && e.push([n, i, t]), e
   }, [])
 }
@@ -260,7 +260,7 @@ function U(e) {
       }
       return t === d.Mo.MOUSE_BUTTON ? "mouse".concat(n) : t === d.Mo.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
-  return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(D) : r).join(" + ").toUpperCase() : r.join("+")
+  return t ? (false !== n.g.navigator.appVersion.indexOf("Mac OS X") ? r.map(w) : r).join(" + ").toUpperCase() : r.join("+")
 }
 
 function G(e, t) {

@@ -40,8 +40,8 @@ function P(e, t, n) {
 }
 let R = window.DiscordNative;
 Chunk955132.Wb.dispatcher.getDispatchHandler = Chunk344651.Z;
-let D = new Chunk710845.Z("ConnectionStore"),
-  w = 100,
+let w = new Chunk710845.Z("ConnectionStore"),
+  D = 100,
   x = 0,
   L = null,
   j = true,
@@ -49,15 +49,15 @@ let D = new Chunk710845.Z("ConnectionStore"),
   k = null;
 
 function U() {
-  return Chunk955132.Wb.isClosed() ? (D.verbose("Socket is reconnecting because of starting new session"), Chunk955132.Wb.connect()) : (D.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
+  return Chunk955132.Wb.isClosed() ? (w.verbose("Socket is reconnecting because of starting new session"), Chunk955132.Wb.connect()) : (w.verbose("Socket is not reconnecting during a new session because it is not closed"), false)
 }
 
 function G(e) {
-  e.isSwitchingAccount && I.RR.handleAccountSwitch(), D.verbose("Closing socket because of logout"), I.Wb.close()
+  e.isSwitchingAccount && I.RR.handleAccountSwitch(), w.verbose("Closing socket because of logout"), I.Wb.close()
 }
 
 function Z() {
-  return D.verbose("session refresh dispatched", {
+  return w.verbose("session refresh dispatched", {
     isEstablished: Chunk955132.Wb.isSessionEstablished()
   }), !!Chunk955132.Wb.isSessionEstablished() && (Chunk955132.Wb.close(), Chunk955132.Wb.connect())
 }
@@ -80,7 +80,7 @@ async function B(e) {
 }
 
 function F() {
-  D.verbose("connection closed dispatched"), x = Date.now()
+  w.verbose("connection closed dispatched"), x = Date.now()
 }
 
 function V() {
@@ -114,7 +114,7 @@ function z(e) {
   return t.reduce((e, t) => {
     if (p.default.getId() !== t.userId) return e;
     if (t.sessionId === L) {
-      if (null != k) return D.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
+      if (null != k) return w.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
       I.GC.setState({
         guildId: t.guildId,
         channelId: t.channelId
@@ -178,7 +178,7 @@ function et() {
 }
 
 function en(e) {
-  return I.Wb.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(w).forEach(t => {
+  return I.Wb.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(D).forEach(t => {
     I.Wb.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences

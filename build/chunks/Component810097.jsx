@@ -87,7 +87,7 @@ function T(e) {
     onInteractionPopoutTargetRefChange: R
   } = (0, p.Xo)();
   if (t.bot || A || !N) return null;
-  let D = () => {
+  let w = () => {
       R(O), n === _.n_.AVATAR ? v({
         action: "PRESS_REACT_AVATAR"
       }) : n === _.n_.STATUS ? v({
@@ -100,7 +100,7 @@ function T(e) {
         interactionSourceId: b
       })
     },
-    w = () => {
+    D = () => {
       R(O), n === _.n_.AVATAR ? v({
         action: "PRESS_REPLY_AVATAR"
       }) : n === _.n_.STATUS ? v({
@@ -128,7 +128,7 @@ function T(e) {
       delay: 0,
       ariaHidden: true,
       children: (0, r.jsx)(u.zx, {
-        onClick: D,
+        onClick: w,
         className: h.button,
         "aria-label": S[n](),
         "aria-haspopup": "dialog",
@@ -144,7 +144,7 @@ function T(e) {
       delay: 0,
       ariaHidden: true,
       children: (0, r.jsx)(u.zx, {
-        onClick: w,
+        onClick: D,
         className: h.button,
         "aria-label": I[n](),
         "aria-haspopup": "dialog",

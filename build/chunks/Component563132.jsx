@@ -125,7 +125,7 @@ function ee(e) {
     setCurrency: eI,
     currencyLoading: eT,
     currencies: eC
-  } = (0, w.Z)({
+  } = (0, D.Z)({
     activeSubscription: K,
     skuIDs: $,
     paymentSourceId: eE,
@@ -133,8 +133,8 @@ function ee(e) {
     excludeSubscriptionPlansBySKU: es
   }), eA = (0, U.Z)(), [eN, eP] = i.useState(false), {
     step: eR,
-    setStep: eD,
-    steps: ew,
+    setStep: ew,
+    steps: eD,
     breadcrumbsData: ex,
     previousStepRef: eL
   } = (0, Z.Z)({
@@ -180,7 +180,7 @@ function ee(e) {
     paymentGateway: eo,
     loadId: C
   }), [eE, eo, C]);
-  (0, D.m)(ep, td);
+  (0, w.m)(ep, td);
   let {
     skusById: tf,
     hasFetchedSkus: tp,
@@ -213,15 +213,15 @@ function ee(e) {
     tA = (0, u.e7)([T.Z], () => null != eV ? T.Z.getForSKU(eV) : null, [eV]),
     [tN, tP] = i.useState(null),
     tR = null != (o = null == K ? true : K.inReverseTrial) && o && !ee,
-    tD = (0, y.Z)({
+    tw = (0, y.Z)({
       location: "PaymentModal"
     }) && ts,
     {
-      isDisplayingWowMomentConfirmation: tw
+      isDisplayingWowMomentConfirmation: tD
     } = (0, u.cj)([b.Z], () => ({
       isDisplayingWowMomentConfirmation: b.Z.isDisplayingWowMomentConfirmation
     })),
-    tx = tD ? W.premiumBrandRefreshBackground : true,
+    tx = tw ? W.premiumBrandRefreshBackground : true,
     {
       enabled: tL
     } = (0, E.l)({
@@ -260,8 +260,8 @@ function ee(e) {
       hasAcceptedTerms: eN,
       setHasAcceptedTerms: eP,
       step: eR,
-      setStep: eD,
-      steps: ew,
+      setStep: ew,
+      steps: eD,
       stepConfigs: q,
       breadcrumbs: ex,
       previousStepRef: eL,
@@ -319,8 +319,8 @@ function ee(e) {
       invoicePreview: tN,
       setInvoicePreview: tP,
       inReverseTrial: tR,
-      enablePremiumBrandRefresh: tD,
-      isDisplayingWowMomentConfirmation: tw,
+      enablePremiumBrandRefresh: tw,
+      isDisplayingWowMomentConfirmation: tD,
       premiumBrandRefreshBackgroundClassName: tx,
       wasTier2PremiumBeforePurchase: ec,
       customCheckoutFlow: tM,

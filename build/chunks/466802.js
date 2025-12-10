@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 466802, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  J: () => g
+  J: () => S
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -16,7 +16,7 @@ let d = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk748717.Z,
     buildLayout: () => []
   }),
-  g = (0, Chunk509613.m7)(Chunk313789.n.NITRO_SIDEBAR_ITEM, {
+  S = (0, Chunk509613.m7)(Chunk313789.n.NITRO_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkog),
     getLegacySearchKey: () => Chunk726985.s6.PREMIUM,
     icon: Chunk657707.SrA,

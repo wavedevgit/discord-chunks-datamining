@@ -95,9 +95,9 @@ let v = Chunk473749.memo(function(e) {
     N = C === f.O.BURST,
     P = (0, p.y4)(E, b, C),
     R = (0, d.v)(N && null != O ? O : []),
-    D = i ? m : _,
-    w = N ? y : g,
-    x = (0, u.y)(w, p.aO),
+    w = i ? m : _,
+    D = N ? y : g,
+    x = (0, u.y)(D, p.aO),
     L = {};
   if (N && null != R) {
     var j;
@@ -114,23 +114,23 @@ let v = Chunk473749.memo(function(e) {
     borderColor: n
   };
   return (0, r.jsxs)("div", {
-    className: o()(D.reaction, D.reactionInner, h, {
-      [D.reactionMe]: P,
-      [D.reactionReadOnly]: v && !S && !T && !I
+    className: o()(w.reaction, w.reactionInner, h, {
+      [w.reactionMe]: P,
+      [w.reactionReadOnly]: v && !S && !T && !I
     }),
     style: L,
     children: [(0, r.jsx)(c.Z, {
       className: o()({
-        [D.hideEmoji]: a
+        [w.hideEmoji]: a
       }),
       emojiId: s.id,
       emojiName: s.name,
       size: A,
       animated: N && s.animated
     }), (0, r.jsx)("div", {
-      className: D.reactionCount,
+      className: w.reactionCount,
       style: M,
-      children: w
+      children: D
     })]
   })
 });

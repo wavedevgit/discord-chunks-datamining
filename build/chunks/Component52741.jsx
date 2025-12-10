@@ -55,7 +55,7 @@ function v(e) {
     headerClassName: A,
     headingVariant: N = "heading-md/normal",
     headingColor: P
-  } = e, R = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), D = (0, l.e7)([u.default], () => u.default.getCurrentUser()), w = (0, p.t7)(), x = (0, p.lr)(), L = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, j = (null == R ? true : R.hasActiveTrial) ? null == D ? true : D.premiumType : w ? E.PremiumTypes.TIER_2 : null, M = (0, m.N)(), k = (0, _.N)(), U = null == M ? true : M.subscription_trial;
+  } = e, R = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), w = (0, l.e7)([u.default], () => u.default.getCurrentUser()), D = (0, p.t7)(), x = (0, p.lr)(), L = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, j = (null == R ? true : R.hasActiveTrial) ? null == w ? true : w.premiumType : D ? E.PremiumTypes.TIER_2 : null, M = (0, m.N)(), k = (0, _.N)(), U = null == M ? true : M.subscription_trial;
   if (!T && !t && null != j && n === j && null != R && null != R.planIdFromItems) {
     let e = null != R.trialEndsAt ? s()(null == R ? true : R.trialEndsAt).diff(s()(), "d") : 0,
       t = E.GP[R.planIdFromItems],

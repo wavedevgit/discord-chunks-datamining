@@ -129,11 +129,11 @@ function P(e) {
     T(false), e.stopPropagation(), null == t || t(e.currentTarget.checked)
   }
 
-  function D(e) {
+  function w(e) {
     a || e.repeat || (" " === e.key || "Enter" === e.key) && T(true)
   }
 
-  function w(e) {
+  function D(e) {
     var t;
     a || !I || e.repeat || (T(false), "Enter" === e.key && (null == (t = S.current) || t.click()))
   }
@@ -203,8 +203,8 @@ function P(e) {
           },
           className: _.input,
           tabIndex: a ? false : 0,
-          onKeyDown: D,
-          onKeyUp: w,
+          onKeyDown: w,
+          onKeyUp: D,
           onChange: R,
           checked: n,
           disabled: a

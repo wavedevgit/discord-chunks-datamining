@@ -45,7 +45,6 @@ let _ = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
     buildLayout: () => [_],
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
-      getDismissibleContentTypes: Chunk620163._x,
-      stronglyDiscouragedBadgeComponent: Chunk620163.ec
+      getDismissibleContentTypes: Chunk620163._x
     }
   })

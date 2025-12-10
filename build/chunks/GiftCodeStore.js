@@ -91,14 +91,14 @@ function R(e) {
   return g = g.filter(e => e !== t.code), b.includes(t.code) || (b = [...b, t.code]), I(t)
 }
 
-function D(e) {
+function w(e) {
   let {
     code: t
   } = e;
   g = g.filter(e => e !== t), b.includes(t) || (b = [...b, t])
 }
 
-function w(e) {
+function D(e) {
   let {
     code: t
   } = e;
@@ -293,11 +293,11 @@ let q = new z(Chunk570140.Z, {
     CHANNEL_SELECT: N,
     GIFT_CODE_RESOLVE: P,
     GIFT_CODE_RESOLVE_SUCCESS: R,
-    GIFT_CODE_RESOLVE_FAILURE: D,
+    GIFT_CODE_RESOLVE_FAILURE: w,
     GIFT_CODE_REDEEM: x,
     GIFT_CODE_REDEEM_SUCCESS: G,
     GIFT_CODE_REDEEM_FAILURE: Z,
-    GIFT_CODE_REVOKE_SUCCESS: w,
+    GIFT_CODE_REVOKE_SUCCESS: D,
     GIFT_CODE_CREATE_SUCCESS: L,
     GIFT_CODES_FETCH: M,
     GIFT_CODES_FETCH_SUCCESS: U,

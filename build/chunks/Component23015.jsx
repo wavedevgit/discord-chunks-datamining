@@ -35,7 +35,7 @@ function h(e) {
     enabled: N
   } = l.Q.useConfig({
     location: "rich_presence_spotify_invite"
-  }), P = (0, f.g)(I, O), R = (0, u.Lz)(O, b.author, "Invite Embed"), D = i.useMemo(() => {
+  }), P = (0, f.g)(I, O), R = (0, u.Lz)(O, b.author, "Invite Embed"), w = i.useMemo(() => {
     let e = [];
     if (!P) {
       var t;
@@ -50,7 +50,7 @@ function h(e) {
       })
     }
     return e
-  }, [P, R]), w = null != O && null != O.details && null != O.state ? _.intl.formatToPlainString(_.t.JCvHtx, {
+  }, [P, R]), D = null != O && null != O.details && null != O.state ? _.intl.formatToPlainString(_.t.JCvHtx, {
     track: O.details,
     artist: O.state
   }) : E.name, x = null != (h = null == O || null == (t = O.timestamps) ? true : t.start) ? h : null == O ? true : O.created_at, L = i.useMemo(() => {
@@ -82,10 +82,10 @@ function h(e) {
   }), [L, v, S]);
   return (0, r.jsx)(o.W, {
     header: y,
-    title: w,
+    title: D,
     iconSrc: null != (g = (0, d.Z)(O, E.id)) ? g : true,
     info: j,
-    actions: D,
+    actions: w,
     onClickContent: T,
     trackingConfig: {
       id: E.id,

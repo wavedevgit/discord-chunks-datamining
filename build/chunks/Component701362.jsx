@@ -63,13 +63,13 @@ function R(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -180,11 +180,11 @@ function j(e) {
   var {
     user: t,
     channel: n
-  } = e, a = w(e, ["user", "channel"]);
+  } = e, a = D(e, ["user", "channel"]);
   let [o, l] = (0, s.Wu)([b.Z, h.Z, g.Z, p.default], () => (0, O.p9)(n, b.Z, h.Z, g.Z, p.default)), c = (0, s.e7)([_.Z], () => _.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([_.Z], () => _.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([m.default], () => m.default.getId()), y = (0, v.Cf)(c), S = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), I = i.useMemo(() => ({
     [n.guild_id]: [t.id]
   }), [n.guild_id, t.id]);
-  return (0, u.$)(I, "StreamPreviewPopout"), (0, r.jsx)(L, D(P({}, a), {
+  return (0, u.$)(I, "StreamPreviewPopout"), (0, r.jsx)(L, w(P({}, a), {
     canWatch: o,
     unavailableReason: l,
     user: t,

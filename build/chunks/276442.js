@@ -80,8 +80,8 @@ function O(e) {
     setPurchaseError: N,
     purchaseErrorBlockRef: P,
     paymentAuthenticationState: R,
-    selectedSkuId: D,
-    activeSubscription: w,
+    selectedSkuId: w,
+    activeSubscription: D,
     previousStepRef: x,
     setPurchaseState: L,
     paymentElementsEnabled: j,
@@ -96,9 +96,9 @@ function O(e) {
     setPurchaseError: N,
     purchaseErrorBlockRef: P,
     paymentAuthenticationState: R,
-    selectedSkuId: D,
+    selectedSkuId: w,
     isGift: k
-  }), G = (0, o.N)(h), Z = !k && null != G && null != D && m.nG[G.trial_id].skus.includes(D), B = () => {
+  }), G = (0, o.N)(h), Z = !k && null != G && null != w && m.nG[G.trial_id].skus.includes(w), B = () => {
     c(Object.values(I).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE
     })
@@ -136,7 +136,7 @@ function O(e) {
       }))
     },
     isEligibleForTrial: Z,
-    allowDesktopRedirectPurchase: y(D, k, w),
+    allowDesktopRedirectPurchase: y(w, k, D),
     continueSessionToInitialStep: O
   })
 }

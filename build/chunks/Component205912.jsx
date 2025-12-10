@@ -95,8 +95,8 @@ function I(e) {
   } = (0, p.X)(C), {
     disabled: P,
     errorMessage: R,
-    required: D = false
-  } = N, w = {
+    required: w = false
+  } = N, D = {
     hasError: null != R && "" !== R
   }, {
     refs: x,
@@ -132,7 +132,7 @@ function I(e) {
   return (0, r.jsx)(p.g, O(b({}, N), {
     children: e => (0, r.jsx)(m.U, O(b({
       className: g.inputField,
-      validation: w,
+      validation: D,
       ref: x.setReference
     }, G()), {
       children: (0, r.jsxs)(o.Mt, {
@@ -144,7 +144,7 @@ function I(e) {
         value: t,
         onChange: F,
         isDisabled: P,
-        isRequired: D,
+        isRequired: w,
         minValue: i,
         maxValue: E,
         placeholderValue: y,

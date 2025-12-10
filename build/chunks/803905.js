@@ -11,7 +11,7 @@ require.d(exports, {
   O1: () => O,
   O8: () => R,
   Pl: () => v,
-  Uw: () => w,
+  Uw: () => D,
   ZE: () => L,
   _G: () => y,
   _O: () => I,
@@ -77,8 +77,8 @@ let p = new f(Chunk848246.q.ANIMATED_EMOJIS),
   N = new f("freeBoosts"),
   P = new f(Chunk848246.q.STREAM_MID_QUALITY),
   R = new f(Chunk848246.q.STREAM_HIGH_QUALITY),
-  D = new f(Chunk848246.q.CUSTOM_NOTIFICATION_SOUNDS),
-  w = new f("fancyVoiceChannelReactions"),
+  w = new f(Chunk848246.q.CUSTOM_NOTIFICATION_SOUNDS),
+  D = new f("fancyVoiceChannelReactions"),
   x = new f("installPremiumApplications"),
   L = new f("redeemPremiumPerks"),
   j = new f(Chunk848246.q.VIDEO_FILTER_ASSETS);
@@ -90,8 +90,8 @@ let M = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
   Z = new f("warpPrivateBrowsing"),
   B = Object.freeze({
     [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [p, _, m, v, j, U, G, T]),
-    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, _, b, y, v, A, P, w, U, G, T]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, _, m, h, g, b, y, O, v, S, C, A, N, P, R, w, x, L, j, M, k, U, G, T, I, D, E, Z])
+    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, _, b, y, v, A, P, D, U, G, T]),
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, _, m, h, g, b, y, O, v, S, C, A, N, P, R, D, x, L, j, M, k, U, G, T, I, w, E, Z])
   }),
   F = [A, N, Z],
   V = [Z];

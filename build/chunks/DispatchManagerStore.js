@@ -40,7 +40,7 @@ let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
   P = false,
   R = null;
 
-function D() {
+function w() {
   let e = {
     queue: v,
     paused: I,
@@ -49,7 +49,7 @@ function D() {
   Chunk433517.K.set(O, module)
 }
 
-function w(e, t) {
+function D(e, t) {
   return null != T && T.applicationId === e && T.branchId === t || null != C && C.applicationId === e && C.branchId === t
 }
 
@@ -63,7 +63,7 @@ function x() {
       applicationId: r,
       branchId: i
     } = (0, Chunk780570.CP)(exports);
-    if (!w(r, Chunk392711)) {
+    if (!D(r, Chunk392711)) {
       let e = Chunk314897.default.getToken(),
         t = Chunk314897.default.getId();
       if (null == module) throw Error("missing user token");
@@ -86,7 +86,7 @@ function j(e, t, n, r) {
     o = S.indexOf(i);
   false !== o && S.splice(o, 1);
   let s = L(e, t);
-  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && I && _.Z.resume(), D()
+  0 !== s && (n ? false === s && (v.push(a), x()) : (s > 0 && v.splice(s, 1), v.unshift(a), x())), !n && I && _.Z.resume(), w()
 }
 
 function M(e, t) {
@@ -94,7 +94,7 @@ function M(e, t) {
     r = S.indexOf(n);
   false !== r && S.splice(r, 1);
   let i = L(e, t);
-  false !== i && (v.splice(i, 1), D()), x()
+  false !== i && (v.splice(i, 1), w()), x()
 }
 
 function k(e) {
@@ -140,7 +140,7 @@ function F(e) {
     branchId: n
   } = e, r = L(t, n);
   if (r < 1) returnfalse;
-  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.Z.resume(), D()
+  v.splice(0, 0, v.splice(r, 1)[0]), x(), I && _.Z.resume(), w()
 }
 
 function V(e) {
@@ -180,7 +180,7 @@ function H(e) {
       return r = true, false
     }
     returntrue
-  }), x(), (r || n !== I) && D()
+  }), x(), (r || n !== I) && w()
 }
 
 function Y() {

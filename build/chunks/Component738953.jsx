@@ -213,7 +213,7 @@ function B(e) {
                 channelId: B,
                 themeType: L.l.POPOUT,
                 onOpenProfile: K ? true : ed
-              }), (0, r.jsx)(D.Z, {
+              }), (0, r.jsx)(w.Z, {
                 ref: es,
                 user: n,
                 guildId: G,
@@ -222,7 +222,7 @@ function B(e) {
                 onCloseProfile: Y,
                 prompt: ec ? eu : null
               })]
-            }), (0, r.jsx)(w.Z, {
+            }), (0, r.jsx)(D.Z, {
               user: n,
               currentUser: k,
               displayProfile: en,

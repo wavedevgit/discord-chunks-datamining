@@ -35,7 +35,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk892902 = require("./892902.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let w = e => {
+let D = e => {
   let t = true;
   return e.forEach(e => {
     e() || (t = false)
@@ -74,7 +74,7 @@ function j(e, t) {
     customId: i,
     components: a
   } = e, s = (0, f.Z)(), [u, p] = r.useState(null), [_, m] = r.useState(null), [h, g] = r.useState({}), b = (0, o.e7)([N.Z], () => N.Z.getModalState(_), [_]), y = (0, d.Z)(() => new Set), O = r.useCallback(async () => {
-    if (p(null), m(null), w(y)) {
+    if (p(null), m(null), D(y)) {
       let t = I.default.fromTimestamp(Date.now());
       m(t), await G(e, s, t)
     }
@@ -83,7 +83,7 @@ function j(e, t) {
     b === N.i.SUCCEEDED && (l.Z.dispatch({
       type: "CLEAR_INTERACTION_MODAL_STATE",
       customId: i
-    }), c.Z.removeFiles(e.channelId, U(e.channelId, i).map(e => e.id), E.d.InteractionModal), t()), b === N.i.ERRORED && p(D.intl.string(D.t.uJgdEu))
+    }), c.Z.removeFiles(e.channelId, U(e.channelId, i).map(e => e.id), E.d.InteractionModal), t()), b === N.i.ERRORED && p(w.intl.string(w.t.uJgdEu))
   }, [_, b, t, i, e.channelId]);
   let {
     applicationIconURL: v,

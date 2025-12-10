@@ -85,15 +85,15 @@ let A = function(e) {
       src: N,
       backgroundSrc: P,
       userId: R,
-      guildId: D,
-      pulseSpeakingIndicator: w = false,
+      guildId: w,
+      pulseSpeakingIndicator: D = false,
       speaking: x = false
     } = e,
     L = T(e, ["style", "src", "backgroundSrc", "userId", "guildId", "pulseSpeakingIndicator", "speaking"]);
   let j = null != P ? P : N,
     M = (0, c.ZP)(j, s.Z.unsafe_rawColors.PRIMARY_800.css),
     k = (0, u.c)(true, "VideoBackground-web").enabled,
-    U = (0, p.ZP)(null != R ? R : E.lds, D),
+    U = (0, p.ZP)(null != R ? R : E.lds, w),
     G = null != (O = (0, f.V3)(null == U || null == (t = U.themeColors) ? true : t[0])) ? O : E.BRd.DARK,
     {
       profileThemeStyle: Z,
@@ -114,10 +114,10 @@ let A = function(e) {
     H = V || k;
   if (i.useEffect(() => {
       null != R && H && (0, m.Z)(R, true, {
-        guildId: D,
+        guildId: w,
         dispatchWait: true
       })
-    }, [H, R, D]), null == N) return null;
+    }, [H, R, w]), null == N) return null;
   let Y = (0, r.jsx)(l.qEK, v({
       className: y.avatarWrapper,
       src: N
@@ -130,7 +130,7 @@ let A = function(e) {
     className: o()(y.background, {
       [B]: V
     }),
-    children: w ? (0, r.jsx)(d.Z, {
+    children: D ? (0, r.jsx)(d.Z, {
       shouldAnimate: x,
       children: Y
     }) : Y

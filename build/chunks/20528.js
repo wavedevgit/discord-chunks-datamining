@@ -52,8 +52,8 @@ let C = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
   N = {},
   P = 3 * Chunk70956.Z.Millis.MINUTE,
   R = 5 * Chunk70956.Z.Millis.SECOND,
-  D = 12 * Chunk70956.Z.Millis.SECOND,
-  w = null;
+  w = 12 * Chunk70956.Z.Millis.SECOND,
+  D = null;
 
 function x(e) {
   var t;
@@ -72,7 +72,7 @@ function j(e, t) {
   let r = d.Z.getStreamForUser(t, n.getGuildId());
   if (null == r) returnfalse;
   let i = (0, O.V9)(r);
-  return i !== w && (w = i, (0, o.rn)(r, {
+  return i !== D && (D = i, (0, o.rn)(r, {
     noFocus: true
   }), true)
 }
@@ -86,7 +86,7 @@ function k(e, t) {
   var n;
   if (g.Z.getAllActiveStreamKeys().includes(e)) return;
   let r = null != (n = N[e]) ? n : new i.V7;
-  N[e] = r, r.start(t ? D : R, () => {
+  N[e] = r, r.start(t ? w : R, () => {
     a.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e
@@ -157,7 +157,7 @@ class U extends Chunk147913.Z {
         channelId: t
       } = e;
       if (null == t) return;
-      w = null;
+      D = null;
       let n = d.Z.getAllApplicationStreamsForChannel(t).filter(e => {
         let {
           ownerId: t

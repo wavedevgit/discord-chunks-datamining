@@ -2,7 +2,7 @@
 /** chunk id: 606304, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js"), require("./997841.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -189,7 +189,7 @@ class R extends(r = Chunk442837.ZP.Store) {
   }
 }
 _(R, "displayName", "SpeakingStore");
-let D = new R(Chunk570140.Z, {
+let w = new R(Chunk570140.Z, {
   CONNECTION_OPEN: C,
   OVERLAY_INITIALIZE: C,
   SPEAKING: A,

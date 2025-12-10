@@ -196,7 +196,7 @@ function R(e) {
   return Object.prototype.toString.call(e)
 }
 
-function D(e) {
+function w(e) {
   return e < 10 ? "0" + e.toString(10) : e.toString(10)
 }
 exports.debuglog = function(e) {
@@ -239,12 +239,12 @@ exports.debuglog = function(e) {
 }, exports.isUndefined = I, exports.isRegExp = T, exports.types.isRegExp = T, exports.isObject = C, exports.isDate = A, exports.types.isDate = A, exports.isError = N, exports.types.isNativeError = N, exports.isFunction = P, exports.isPrimitive = function(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || true === e
 }, exports.isBuffer = require("./102439.js");
-var w = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 function x() {
   var e = new Date,
-    t = [D(module.getHours()), D(module.getMinutes()), D(module.getSeconds())].join(":");
-  return [module.getDate(), w[module.getMonth()], exports].join(" ")
+    t = [w(module.getHours()), w(module.getMinutes()), w(module.getSeconds())].join(":");
+  return [module.getDate(), D[module.getMonth()], exports].join(" ")
 }
 
 function L(e, t) {

@@ -39,8 +39,8 @@ let I = false,
   N = [],
   P = [],
   R = false,
-  D = true,
-  w = Object.freeze([]),
+  w = true,
+  D = Object.freeze([]),
   x = Object.freeze([]),
   L = [],
   j = [];
@@ -80,12 +80,12 @@ function G(e) {
 }
 
 function Z() {
-  D = true, C = T, B()
+  w = true, C = T, B()
 }
 
 function B() {
   var e;
-  if (A = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, R = Chunk517100.Z.isAFK(), D) T = C;
+  if (A = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, R = Chunk517100.Z.isAFK(), w) T = C;
   else if (I) T = Chunk981631.Skl.INVISIBLE;
   else {
     let e = Chunk695346.co.getSetting();
@@ -93,12 +93,12 @@ function B() {
   }
   T === Chunk981631.Skl.ONLINE && A > 0 && (T = Chunk981631.Skl.IDLE);
   let t = false,
-    n = D || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
+    n = w || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
   a()(N, require) || (N = require, P = M(require), t = true);
   let r = Chunk797258.Z.getRemoteActivities();
-  w !== r && (w = r, t = true);
+  D !== r && (D = r, t = true);
   let i = Chunk797258.Z.getHiddenActivities();
-  x !== Chunk348327 && (x = Chunk348327), exports && (j = M(L = s()([...N, ...w.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+  x !== Chunk348327 && (x = Chunk348327), exports && (j = M(L = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function F(e) {
@@ -110,7 +110,7 @@ function V() {
 }
 
 function H() {
-  D = false, C = Chunk981631.Skl.UNKNOWN, B(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
+  w = false, C = Chunk981631.Skl.UNKNOWN, B(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
 function Y() {

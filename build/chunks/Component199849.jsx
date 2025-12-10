@@ -154,11 +154,11 @@ function R(e) {
   return null == e ? true : e.label
 }
 
-function D(e) {
+function w(e) {
   return e.map(e => R(e)).join(", ")
 }
 
-function w(e) {
+function D(e) {
   let {
     options: t,
     placeholder: n = g.intl.string(g.t.XqMe3N),
@@ -173,10 +173,10 @@ function w(e) {
     onClose: I,
     onOpen: T,
     renderOptionLabel: C = R,
-    renderOptionValue: A = D,
+    renderOptionValue: A = w,
     popoutClassName: N,
     popoutPosition: P = "bottom",
-    popoutLayerContext: w,
+    popoutLayerContext: D,
     optionClassName: L,
     closeOnSelect: j,
     select: M,
@@ -258,7 +258,7 @@ function w(e) {
       })
     },
     position: P,
-    layerContext: w,
+    layerContext: D,
     children: (e, t) => {
       var {
         onClick: i,
@@ -361,10 +361,10 @@ function x(e) {
     async scrollToStart() {},
     isEnabled: true,
     wrap: true
-  }), D = i.useRef(null);
-  (0, u.Tbt)(D), i.useLayoutEffect(() => {
+  }), w = i.useRef(null);
+  (0, u.Tbt)(w), i.useLayoutEffect(() => {
     var e;
-    null == (e = D.current) || e.focus()
+    null == (e = w.current) || e.focus()
   }, []), i.useEffect(() => {
     O > 0 && I()
   }, [O, I]), (0, m.Z)(I), i.useLayoutEffect(() => {
@@ -374,7 +374,7 @@ function x(e) {
   }, [_, f.length]), i.useEffect(() => {
     I()
   }, [I, C]);
-  let w = i.useCallback((e, t) => {
+  let D = i.useCallback((e, t) => {
       n(e), c && !t && a()
     }, [a, n, c]),
     x = i.useMemo(() => f.map((e, t) => {
@@ -383,13 +383,13 @@ function x(e) {
         isSelected: d(e.value),
         value: e.value,
         label: h(e),
-        onSelect: w,
+        onSelect: D,
         className: b,
         isDisabled: e.disabled,
         preventCloseOnSelect: e.preventCloseOnSelect,
         serialize: g
       }, null != (n = e.key) ? n : t)
-    }), [w, d, b, f, h, g]),
+    }), [D, d, b, f, h, g]),
     j = f.length <= _ ? u.xVE : u.h21;
   return (0, r.jsx)(l.bG, {
     navigator: R,
@@ -410,7 +410,7 @@ function x(e) {
             ref: e => {
               var t;
               let r = null != (t = null == e ? true : e.getScrollerNode()) ? t : null;
-              n.current = r, D.current = r
+              n.current = r, w.current = r
             }
           }, i), {
             role: "listbox",
@@ -491,8 +491,8 @@ function j(e) {
     {
       fieldProps: R
     } = (0, u.XF_)(o),
-    D = "text-only" === N || null != P;
-  if (s && !D) {
+    w = "text-only" === N || null != P;
+  if (s && !w) {
     let e = null == R.label && null != C;
     return (0, r.jsx)(f.P, v(y({
       id: c,
@@ -539,7 +539,7 @@ function j(e) {
       children: [null == t ? true : t(e), e.label, null == n ? true : n(e)]
     })
   }
-  return (0, r.jsx)(w, v(y({}, o, l), {
+  return (0, r.jsx)(D, v(y({}, o, l), {
     renderOptionLabel: null != P ? P : x()
   }))
 }
@@ -570,11 +570,11 @@ function M(e) {
       renderOptionLabel: R
     } = o,
     {
-      fieldProps: D
+      fieldProps: w
     } = (0, u.XF_)(o),
     x = "text-only" === N || null != R;
   if (s && !x) {
-    let e = null == D.label && null != A;
+    let e = null == w.label && null != A;
     return (0, r.jsx)(f.P, v(y({
       id: l,
       selectionMode: "single",
@@ -608,9 +608,9 @@ function M(e) {
       closeOnSelect: I,
       maxOptionsVisible: T,
       placeholder: C
-    }, D), {
-      label: e ? A : D.label,
-      hideLabel: true === D.hideLabel || e
+    }, w), {
+      label: e ? A : w.label,
+      hideLabel: true === w.hideLabel || e
     }))
   }
 
@@ -620,7 +620,7 @@ function M(e) {
       children: [null == i ? true : i(e), e.label, null == a ? true : a(e)]
     })
   }
-  return (0, r.jsx)(w, v(y({}, o), {
+  return (0, r.jsx)(D, v(y({}, o), {
     renderOptionLabel: null != R ? R : L()
   }))
 }

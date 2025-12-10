@@ -12,7 +12,7 @@ require.d(exports, {
   eu: () => R,
   hW: () => L,
   lY: () => N,
-  qB: () => D
+  qB: () => w
 }), require("./415506.js"), require("./953529.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -193,7 +193,7 @@ function R(e, t, n) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   o.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
@@ -201,12 +201,12 @@ function D(e, t) {
   })
 }
 
-function w(e) {
+function D(e) {
   return d.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != _.Z.getStickerById(e))
 }
 
 function x(e) {
-  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = w(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
+  u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= g.oX) ? (s.Z.show({
     title: E.intl.string(E.t["+XYXtZ"]),
     body: E.intl.formatToPlainString(E.t.JaIyFi, {
       count: g.oX
@@ -216,6 +216,6 @@ function x(e) {
 
 function L(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
-    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = w(t.stickerIds)
+    t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = D(t.stickerIds)
   }, g.fy.INFREQUENT_USER_ACTION)
 }

@@ -466,7 +466,7 @@ async function es(e) {
 }
 async function el(e) {
   e(true), c.K.set("turnedOffNewNotifications", true), j.default.track(H.rMx.NOTIFICATION_MIGRATION_OPTOUT, {
-    num_guilds_with_new_setting: D.Z.getGuildsArray().filter(e => x.ZP.resolveGuildUnreadSetting(e) === W.i.ONLY_MENTIONS).length
+    num_guilds_with_new_setting: w.Z.getGuildsArray().filter(e => x.ZP.resolveGuildUnreadSetting(e) === W.i.ONLY_MENTIONS).length
   }), await p.Z.setAccountFlag(Y.c.USE_NEW_NOTIFICATIONS, false), e(false)
 }
 

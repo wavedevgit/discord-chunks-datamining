@@ -195,7 +195,7 @@ function ey(e) {
     s = (0, d.e7)([g.Z], () => g.Z.useReducedMotion),
     l = i === K.PremiumTypes.TIER_1,
     c = () => {
-      a(), (0, w.openUserSettings)(D.n.PROFILE_PANEL, {
+      a(), (0, D.openUserSettings)(w.n.PROFILE_PANEL, {
         section: z.oAB.PROFILE_CUSTOMIZATION
       }), M.default.track(z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "user_profile_customization"
@@ -361,7 +361,7 @@ function eS(e) {
     c = null != s && l > 0,
     f = eg().boostItemVisual,
     h = () => {
-      n(), (0, w.openUserSettings)(D.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+      n(), (0, D.openUserSettings)(w.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         section: z.oAB.GUILD_BOOSTING
       }), M.default.track(z.rMx.PREMIUM_UNCANCEL_WINBACK_CTA_CLICKED, {
         action: "boosts"

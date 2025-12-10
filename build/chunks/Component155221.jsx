@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk188785 = require("./188785.js"),
   Chunk436620 = require("./436620.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,14 +43,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -337,7 +337,7 @@ class ea extends Chunk473749.Component {
         }
       }), (0, Chunk54381.jsx)(Chunk828700.l_, {
         from: Chunk981631.Z5c.CONNECT_AUTHORIZE,
-        to: L(w({}, location), {
+        to: L(D({}, location), {
           pathname: Chunk981631.Z5c.OAUTH2_AUTHORIZE
         })
       }), (0, Chunk54381.jsx)(Chunk828700.AW, {
@@ -380,7 +380,7 @@ function eo() {
 
 function es(e) {
   let t = eo();
-  return (0, r.jsx)(ea, L(w({}, e), {
+  return (0, r.jsx)(ea, L(D({}, e), {
     skipsSettingDefaultPageTitle: t
   }))
 }

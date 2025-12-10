@@ -98,7 +98,7 @@ function eR(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eD(e) {
+function ew(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -111,7 +111,7 @@ function eD(e) {
   return e
 }
 
-function ew(e, t) {
+function eD(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -123,7 +123,7 @@ function ew(e, t) {
 }
 
 function ex(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ew(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eD(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -630,7 +630,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           currentUser: n
         } = e, r = null != (t = e_.Z.paymentSources) ? t : {};
-        return D.Z.getIsTargeted() && !(0, ey.I5)(n) && 0 !== Object.keys(r).length
+        return w.Z.getIsTargeted() && !(0, ey.I5)(n) && 0 !== Object.keys(r).length
       }
     },
     [Chunk981631.kVF.BLOCK_USER_FEEDBACK_NAGBAR]: {
@@ -681,7 +681,7 @@ function e$() {
         premiumSubscription: Chunk913527,
         selectedGuildId: a
       });
-      eV = ex(eD({}, eF), {
+      eV = ex(ew({}, eF), {
         type: require,
         metadata: Chunk442837
       });

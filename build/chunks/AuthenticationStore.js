@@ -38,8 +38,8 @@ function N(e, t, n) {
 }
 let P = new Chunk710845.Z("AuthenticationStore"),
   R = "fingerprint",
-  D = "analytics_installation",
-  w = "user_id_cache",
+  w = "analytics_installation",
+  D = "user_id_cache",
   x = null,
   L = null,
   j = null,
@@ -74,7 +74,7 @@ function ee(e) {
 function et() {
   var e;
   let t = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  if (k = Chunk433517.K.get(R), G = null != (e = Chunk433517.K.get(D)) ? module : null, null != q) return q;
+  if (k = Chunk433517.K.get(R), G = null != (e = Chunk433517.K.get(w)) ? module : null, null != q) return q;
   let n = null != k ? k : Chunk213919.getToken();
   !(0, Chunk703656.m1)() || !exports && null != require || Chunk117240.Z.isHandoffAvailable() || en({
     withGuildExperiments: true
@@ -244,7 +244,7 @@ function ev(e) {
     installation: t
   } = e;
   if (null != G && G.length > 0) returnfalse;
-  G = t, b.Z.canUseInstallationId() && u.K.set(D, t)
+  G = t, b.Z.canUseInstallationId() && u.K.set(w, t)
 }
 
 function eS(e) {
@@ -264,7 +264,7 @@ function eI(e) {
     auth: o,
     staticAuthSessionId: s
   } = e;
-  ee("handleConnectionOpen called"), S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, j = i, M = s, ea(a), x = n.id, true !== o && (V = o.authenticator_types), u.K.set(w, n.id)
+  ee("handleConnectionOpen called"), S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, j = i, M = s, ea(a), x = n.id, true !== o && (V = o.authenticator_types), u.K.set(D, n.id)
 }
 
 function eT(e) {
@@ -275,7 +275,7 @@ function eT(e) {
     analyticsToken: i,
     token: a
   } = e;
-  S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, Z = i, ei(a, n.id), null != i && ea(i), er(), x = n.id, u.K.set(w, n.id)
+  S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, Z = i, ei(a, n.id), null != i && ea(i), er(), x = n.id, u.K.set(D, n.id)
 }
 
 function eC(e) {
@@ -287,7 +287,7 @@ function eC(e) {
   if (4004 === t) {
     if (F || r(A.$$) || r(A.dG)) return void eP();
     O.default.track(C.rMx.APP_USER_DEAUTHENTICATED, {
-      user_id: u.K.get(w)
+      user_id: u.K.get(D)
     }), eR(), setImmediate(() => (0, E.uL)(C.Z5c.DEFAULT_LOGGED_OUT))
   }
 }
@@ -320,14 +320,14 @@ function eR(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && er(), et()), l.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), T.Z.clearAll(), h.ZH(), S.Z.clearUser(), u.K.remove(w), x = null, L = null, B = (null == e ? true : e.isSwitchingAccount) ? C.u34.LOGGING_IN : C.u34.NONE, H = "", W = null, Y = false, X = false, J = false, e_()
-}
-
-function eD() {
-  B = Chunk981631.u34.FORGOT_PASSWORD
+  }), T.Z.clearAll(), h.ZH(), S.Z.clearUser(), u.K.remove(D), x = null, L = null, B = (null == e ? true : e.isSwitchingAccount) ? C.u34.LOGGING_IN : C.u34.NONE, H = "", W = null, Y = false, X = false, J = false, e_()
 }
 
 function ew() {
+  B = Chunk981631.u34.FORGOT_PASSWORD
+}
+
+function eD() {
   B = Chunk981631.u34.NONE
 }
 
@@ -335,7 +335,7 @@ function ex(e) {
   let {
     user: t
   } = e;
-  x = t.id, true !== t.authenticator_types && (V = t.authenticator_types), u.K.set(w, t.id)
+  x = t.id, true !== t.authenticator_types && (V = t.authenticator_types), u.K.set(D, t.id)
 }
 
 function eL(e) {
@@ -350,7 +350,7 @@ function ej() {
 }
 class eM extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    x = Chunk433517.K.get(w), null == Chunk213919.getToken() && et(), this.addChangeListener(() => (0, Chunk670890.u)(x))
+    x = Chunk433517.K.get(D), null == Chunk213919.getToken() && et(), this.addChangeListener(() => (0, Chunk670890.u)(x))
   }
   getLoginStatus() {
     return B
@@ -433,8 +433,8 @@ let ek = new eM(Chunk570140.Z, {
   FINGERPRINT: eO,
   INSTALLATION_DEFINED: ev,
   REGISTER_SUCCESS: eS,
-  FORGOT_PASSWORD_REQUEST: eD,
-  FORGOT_PASSWORD_SENT: ew,
+  FORGOT_PASSWORD_REQUEST: ew,
+  FORGOT_PASSWORD_SENT: eD,
   UPDATE_TOKEN: eA,
   EXPERIMENTS_FETCH: en,
   CURRENT_USER_UPDATE: ex,

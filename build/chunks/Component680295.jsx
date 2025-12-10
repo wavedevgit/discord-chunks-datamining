@@ -62,15 +62,15 @@ let S = e => {
     (0, b.Z)(E);
     let [C, A] = i.useState(0), [N, P] = i.useState(0), {
       accessibilityLabel: R
-    } = E, D = v ? f.JH : .1, [w, x] = i.useState(-D), {
+    } = E, w = v ? f.JH : .1, [D, x] = i.useState(-w), {
       stop: L,
       reset: j,
       ticking: M
     } = (0, _.Z)(e => {
       x(t => t + e)
-    }), k = i.useRef(D);
+    }), k = i.useRef(w);
     i.useEffect(() => {
-      k.current = D
+      k.current = w
     }), i.useEffect(() => {
       x(-k.current), T((0, h.H)(E.effects))
     }, [E]), i.useEffect(() => {
@@ -114,7 +114,7 @@ let S = e => {
             layerConfig: e,
             animationType: E.animationType,
             ticking: M.current,
-            time: w,
+            time: D,
             hasPlayedThrough: U,
             setHasPlayedThrough: G,
             urlQueryString: m,

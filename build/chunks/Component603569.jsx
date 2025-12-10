@@ -30,7 +30,7 @@ let E = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
       useCustomDecoration: function(t) {
         let e = (0, u.gU)();
         return t === s.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(r.IGR, {
-          text: S.intl.string(S.t.y2b7CA)
+          text: g.intl.string(g.t.y2b7CA)
         }) : e > 0 ? (0, i.jsx)(r.mAB, {
           count: e
         }) : null

@@ -116,7 +116,7 @@ function P(e) {
 }
 
 function R(e) {
-  var t, n, c, d, R, D, w, x, L, j, M, k;
+  var t, n, c, d, R, w, D, x, L, j, M, k;
   let {
     stats: U,
     onClose: G
@@ -195,7 +195,7 @@ function R(e) {
           children: C
         }), (0, r.jsx)("span", {
           className: l.statValue,
-          children: m(null != (w = U.codecInfo.isProgressive) ? w : null, null != (x = U.codecInfo.isFragmented) ? x : null)
+          children: m(null != (D = U.codecInfo.isProgressive) ? D : null, null != (x = U.codecInfo.isFragmented) ? x : null)
         })]
       }), null != U.codecInfo && (0, r.jsxs)("div", {
         className: l.statRow,
@@ -233,7 +233,7 @@ function R(e) {
           className: l.statValue,
           children: [null != (k = null != (M = U.codecInfo.audioCodecDescription) ? M : U.codecInfo.audioCodec) ? k : "Unknown", null != U.codecInfo.audioBitrate && " @ ".concat((0, s.TB)(U.codecInfo.audioBitrate))]
         })]
-      }), (null == (D = U.codecInfo) ? true : D.audioChannels) != null && (0, r.jsxs)("div", {
+      }), (null == (w = U.codecInfo) ? true : w.audioChannels) != null && (0, r.jsxs)("div", {
         className: l.statRow,
         children: [(0, r.jsx)("span", {
           className: l.statLabel,

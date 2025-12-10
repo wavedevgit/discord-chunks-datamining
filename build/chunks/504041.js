@@ -56,18 +56,18 @@ function E(e, t, n) {
   let {
     column: N,
     direction: P
-  } = t.sortDescriptor || {}, R = (0, m.q)(g(i.Z), "@react-aria/table"), D = (0, h.useMemo)(() => {
+  } = t.sortDescriptor || {}, R = (0, m.q)(g(i.Z), "@react-aria/table"), w = (0, h.useMemo)(() => {
     var e, n;
     let r = null != (n = null == (e = t.collection.columns.find(e => e.key === N)) ? true : e.textValue) ? n : "";
     return P && N ? R.format(`${P}Sort`, {
       columnName: r
     }) : true
-  }, [P, N, t.collection.columns]), w = (0, c.P)(D);
+  }, [P, N, t.collection.columns]), D = (0, c.P)(w);
   return (0, u.r)(() => {
-    D && (0, o.xQ)(D, "assertive", 500)
-  }, [D]), {
-    gridProps: (0, d.d)(A, w, {
-      "aria-describedby": [w["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ")
+    w && (0, o.xQ)(w, "assertive", 500)
+  }, [w]), {
+    gridProps: (0, d.d)(A, D, {
+      "aria-describedby": [D["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ")
     })
   }
 }

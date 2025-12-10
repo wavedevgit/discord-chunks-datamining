@@ -68,7 +68,7 @@ function N(e, t) {
 let P = [8, 8, 8, 8],
   R = 40;
 
-function D(e) {
+function w(e) {
   let {
     icon: t,
     isSelected: n,
@@ -87,24 +87,24 @@ function D(e) {
   }))
 }
 
-function w(e, t, n, i, a) {
+function D(e, t, n, i, a) {
   switch (e.categoryInfo.type) {
     case E.bg.FAVORITES:
-      return (0, r.jsx)(D, {
+      return (0, r.jsx)(w, {
         icon: u.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: i
       }, e.key);
     case E.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(D, {
+      return (0, r.jsx)(w, {
         icon: u.T39,
         onClick: t,
         isSelected: n,
         listItemProps: i
       }, e.key);
     case E.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(D, {
+      return (0, r.jsx)(w, {
         icon: u.IeX,
         onClick: t,
         isSelected: n,
@@ -121,7 +121,7 @@ function w(e, t, n, i, a) {
         })
       }), e.key);
     case E.bg.DEFAULTS:
-      return (0, r.jsx)(D, {
+      return (0, r.jsx)(w, {
         icon: u.gw7,
         onClick: t,
         isSelected: n,
@@ -157,12 +157,12 @@ function L(e) {
   } = e, l = (0, s.JA)("soundboard_guild_".concat(n));
   return t.categoryInfo.type === E.bg.GUILD ? (0, r.jsx)(_.V, {
     guild: t.categoryInfo.guild,
-    children: w(t, i, a, l, o)
+    children: D(t, i, a, l, o)
   }) : (0, r.jsx)(c.u, {
     text: x(t),
     position: "right",
     align: "center",
-    children: w(t, i, a, l, o)
+    children: D(t, i, a, l, o)
   })
 }
 

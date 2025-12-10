@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk564355 = require("./564355.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function x(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -227,7 +227,7 @@ class U extends Chunk473749.Component {
       canOnlyUseTextCommands: T,
       className: N,
       id: R,
-      required: w,
+      required: D,
       maxCharacterCount: L,
       allowNewLines: M,
       isEditorIdle: k,
@@ -247,7 +247,7 @@ class U extends Chunk473749.Component {
       }),
       id: Chunk388032,
       placeholder: this.getPlaceholder(),
-      required: w,
+      required: D,
       accessibilityLabel: B,
       disabled: Chunk430742 || false,
       submitting: V,
@@ -310,12 +310,12 @@ class U extends Chunk473749.Component {
   }
   constructor(e) {
     var t;
-    super(e), t = this, w(this, "ref", i.createRef()), w(this, "_focusBlurQueue", Promise.resolve()), w(this, "_unsubscribe", true), w(this, "_initTimeoutId", null), w(this, "_cachedEditorWindow", null), w(this, "handleSelectionChange", () => {
+    super(e), t = this, D(this, "ref", i.createRef()), D(this, "_focusBlurQueue", Promise.resolve()), D(this, "_unsubscribe", true), D(this, "_initTimeoutId", null), D(this, "_cachedEditorWindow", null), D(this, "handleSelectionChange", () => {
       if (this.props.focused) {
         var e, t, n;
         this.props.onSelectionChanged(null == (t = (n = document).getSelection) || null == (e = t.call(n)) ? true : e.toString())
       }
-    }), w(this, "focus", () => {
+    }), D(this, "focus", () => {
       var e;
       null == (e = this._focusBlurQueue) || e.then(() => {
         this.setState({
@@ -325,41 +325,41 @@ class U extends Chunk473749.Component {
           null != e && e.focus()
         })
       })
-    }), w(this, "saveCurrentText", function() {
+    }), D(this, "saveCurrentText", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         {
           type: n,
           channel: r
         } = t.props;
       n.drafts.autoSave && (e && t.saveCurrentTextThrottled.cancel(), t.handleSaveCurrentText(r.id))
-    }), w(this, "handleBeforeUnload", () => this.saveCurrentText()), w(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), w(this, "handleEnter", e => {
+    }), D(this, "handleBeforeUnload", () => this.saveCurrentText()), D(this, "saveCurrentTextThrottled", l().throttle(this.saveCurrentText.bind(this, false), 500)), D(this, "handleEnter", e => {
       var t, n;
       return null == (t = (n = this.props).onEnter) ? true : t.call(n, e)
-    }), w(this, "handleTab", () => {
+    }), D(this, "handleTab", () => {
       var e, t;
       return null == (e = (t = this.props).onTab) ? true : e.call(t)
-    }), w(this, "handleMoveSelection", e => {
+    }), D(this, "handleMoveSelection", e => {
       var t, n;
       return null == (t = (n = this.props).onMoveSelection) ? true : t.call(n, e)
-    }), w(this, "maybeShowAutocomplete", () => {
+    }), D(this, "maybeShowAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onMaybeShowAutocomplete) ? true : e.call(t)
-    }), w(this, "hideAutocomplete", () => {
+    }), D(this, "hideAutocomplete", () => {
       var e, t;
       return null == (e = (t = this.props).onHideAutocomplete) ? true : e.call(t)
-    }), w(this, "handleSaveCurrentText", e => {
+    }), D(this, "handleSaveCurrentText", e => {
       d.Z.saveDraft(e, this.props.textValue, this.props.type.drafts.type)
-    }), w(this, "handleClearText", () => {
+    }), D(this, "handleClearText", () => {
       var e, t;
       null == (e = (t = this.props).onChange) || e.call(t, null, "", (0, S.JM)(""))
-    }), w(this, "handleInsertText", e => {
+    }), D(this, "handleInsertText", e => {
       let {
         plainText: t,
         rawText: n,
         addSpace: r = false
       } = e;
       this.props.disabled || (this.appendText(t, n, r), this.focus())
-    }), w(this, "handleFocus", e => {
+    }), D(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props, {
@@ -368,7 +368,7 @@ class U extends Chunk473749.Component {
       null == t || t(e), n || this.setState({
         focused: true
       })
-    }), w(this, "handleBlur", e => {
+    }), D(this, "handleBlur", e => {
       let {
         onBlur: t
       } = this.props, {
@@ -377,7 +377,7 @@ class U extends Chunk473749.Component {
       null == t || t(e), n && this.setState({
         focused: false
       })
-    }), w(this, "handlePaste", e => {
+    }), D(this, "handlePaste", e => {
       var t, n, r;
       let i = null == (n = e.target) || null == (t = n.ownerDocument) ? true : t.defaultView,
         {

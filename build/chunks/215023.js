@@ -5,12 +5,12 @@ require.d(exports, {
   AW: () => O,
   As: () => G,
   Cm: () => C,
-  HU: () => w,
+  HU: () => D,
   Hi: () => B,
   Hl: () => F,
   IV: () => N,
   J0: () => P,
-  K8: () => D,
+  K8: () => w,
   RE: () => S,
   Vt: () => L,
   aK: () => I,
@@ -60,8 +60,8 @@ let v = ["avatar-decorations", "profile-effects", "nameplates", "bundles"],
   N = 12,
   P = 518,
   R = 5,
-  D = 3,
-  w = ["1212569433839636530", "1212570343567261736", "1212582298893946880"];
+  w = 3,
+  D = ["1212569433839636530", "1212570343567261736", "1212582298893946880"];
 var x = function(e) {
   return e[e.FIAT = 0] = "FIAT", e[e.ORB = 1] = "ORB", e[e.PREMIUM_PURCHASE = 2] = "PREMIUM_PURCHASE", e[e.PROMOTIONAL = 3] = "PROMOTIONAL", e[e.TENURE_REWARD = 4] = "TENURE_REWARD", e[e.GIFT = 5] = "GIFT", e
 }({});

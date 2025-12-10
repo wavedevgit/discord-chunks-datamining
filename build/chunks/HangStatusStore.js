@@ -103,7 +103,7 @@ function R(e) {
   }
 }
 
-function D(e) {
+function w(e) {
   let {
     status: t,
     emoji: n,
@@ -128,7 +128,7 @@ function D(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     applicationId: t,
     saveAsDefault: n
@@ -230,8 +230,8 @@ O(k, "displayName", "HangStatusStore"), O(k, "persistKey", "HangStatusStore"), O
 let U = new k(Chunk570140.Z, {
   LOGOUT: P,
   UPDATE_HANG_STATUS: R,
-  UPDATE_HANG_STATUS_CUSTOM: D,
-  UPDATE_HANG_STATUS_GAME_ACTIVITY: w,
+  UPDATE_HANG_STATUS_CUSTOM: w,
+  UPDATE_HANG_STATUS_GAME_ACTIVITY: D,
   DELETE_INVALID_HANG_STATUSES: M,
   CLEAR_HANG_STATUS: x,
   UPDATE_FAVORITE_HANG_STATUS: L,

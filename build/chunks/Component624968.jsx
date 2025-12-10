@@ -27,23 +27,23 @@ let f = 200,
     })), [t]), [v, S] = i.useState(false), [I, T] = i.useState(false), [C, A] = i.useState(true), N = () => {
       S(g.current > h.current)
     }, P = i.useCallback(() => {
-      let e = w.current;
+      let e = D.current;
       null != e && (y.current = Math.floor((E.current + e.clientWidth / 2) / (e.scrollWidth / e.childElementCount)))
     }, []), R = i.useCallback(() => {
-      let e = w.current;
+      let e = D.current;
       null != e && (T(E.current > 0), A(E.current + e.clientWidth < e.scrollWidth), P())
-    }, [P]), D = (0, c.y)(e => {
+    }, [P]), w = (0, c.y)(e => {
       let {
         contentRect: t
       } = e;
-      if (h.current = t.width, null != w.current) {
+      if (h.current = t.width, null != D.current) {
         var n;
-        E.current = null == (n = w.current) ? true : n.scrollLeft
+        E.current = null == (n = D.current) ? true : n.scrollLeft
       }
       N(), R()
-    }), w = i.useRef(null);
+    }), D = i.useRef(null);
     i.useEffect(() => {
-      let e = w.current;
+      let e = D.current;
       if (null == e) return;
       let t = new ResizeObserver(() => {
         g.current = e.scrollWidth, N(), R()
@@ -63,7 +63,7 @@ let f = 200,
       }
     }, [R]);
     let x = i.useMemo(() => (0, s.throttle)(() => {
-        let e = w.current;
+        let e = D.current;
         if (null == e) return;
         let {
           scrollLeft: t
@@ -76,7 +76,7 @@ let f = 200,
         }), R()
       }, f), [h, R]),
       L = i.useMemo(() => (0, s.throttle)(() => {
-        let e = w.current;
+        let e = D.current;
         if (null == e) return;
         let {
           scrollLeft: t
@@ -89,7 +89,7 @@ let f = 200,
         }), R()
       }, f), [h, R]),
       j = i.useCallback(() => {
-        let e = w.current;
+        let e = D.current;
         if (null == e) returnfalse;
         for (let t of e.children) {
           let e = t;
@@ -100,7 +100,7 @@ let f = 200,
       M = () => {
         setTimeout(() => {
           if (!j()) {
-            let e = w.current;
+            let e = D.current;
             if (null != e)
               for (let t of (e.setAttribute("tabIndex", "0"), e.children)) t.setAttribute("tabIndex", "-1")
           }
@@ -110,7 +110,7 @@ let f = 200,
         "--custom-edge-fade-width": p(a)
       };
     return (0, r.jsxs)("div", {
-      ref: D,
+      ref: w,
       style: k,
       className: d.container,
       children: [v && (0, r.jsxs)("div", {
@@ -143,7 +143,7 @@ let f = 200,
       }), (0, r.jsx)(l.Kqy, {
         direction: "horizontal",
         gap: n,
-        ref: w,
+        ref: D,
         className: o()(d.children, {
           [d.scrollLeft]: I,
           [d.scrollRight]: C,
@@ -151,7 +151,7 @@ let f = 200,
         }),
         tabIndex: 0,
         onFocus: e => {
-          let t = w.current;
+          let t = D.current;
           if (null != t) {
             if (e.preventDefault(), false !== t.tabIndex) {
               var n;
@@ -166,7 +166,7 @@ let f = 200,
         },
         onKeyDown: e => {
           var t;
-          let n = w.current;
+          let n = D.current;
           if (null == n) return;
           let r = n.children,
             i = null != (t = y.current) ? t : 0,

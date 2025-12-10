@@ -78,7 +78,7 @@ function v(e) {
       document.removeEventListener("keydown", e)
     }
   }, [I, T]);
-  let D = async e => {
+  let w = async e => {
     if (null == e) return;
     p === m.n_.AVATAR ? S({
       action: "SEND_REACT_AVATAR"
@@ -115,7 +115,7 @@ function v(e) {
         emoji: t,
         willClose: n
       } = e;
-      await D(t), n && (T(), null == I || I())
+      await w(t), n && (T(), null == I || I())
     },
     pickerIntention: h.Hz.PROFILE
   })

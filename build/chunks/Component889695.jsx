@@ -57,7 +57,7 @@ function C(e) {
   } = (0, o.cj)([b.Z], () => ({
     impersonateType: b.Z.getImpersonateType(t),
     viewingRoles: b.Z.getViewingRoles(t)
-  })), D = P === y.z.SERVER_SHOP, w = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), x = null != I ? C[(0, u.lV)(I)] : null, [L, j] = i.useState(() => {
+  })), w = P === y.z.SERVER_SHOP, D = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), x = null != I ? C[(0, u.lV)(I)] : null, [L, j] = i.useState(() => {
     let e = null == R ? [] : g.default.keys(R);
     return null != x && e.push(x.id), e
   }), M = i.useRef(I);
@@ -74,11 +74,11 @@ function C(e) {
       })
     }
   }, [L, P, C]);
-  let k = null != I && null != n && null != w ? N.find(e => w.roles.includes(e.id)) : true,
+  let k = null != I && null != n && null != D ? N.find(e => D.roles.includes(e.id)) : true,
     U = i.useMemo(() => null != I && null != n ? N.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
-      return !D || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
-    }).filter(e => (null == k ? true : k.id) === e.id || h.r6(I, n.id, k, e)) : [], [I, n, D, k, N]),
+      return !w || (null == (t = e.tags) ? true : t.subscription_listing_id) != null
+    }).filter(e => (null == k ? true : k.id) === e.id || h.r6(I, n.id, k, e)) : [], [I, n, w, k, N]),
     G = i.useMemo(() => {
       let e = Array.from(U).map(e => ({
         leading: A(e),
@@ -95,9 +95,9 @@ function C(e) {
         disabled: true
       }), e
     }, [U, I, x]);
-  if (null == n || null == I || null == w) return null;
+  if (null == n || null == I || null == D) return null;
   let Z = {};
-  return (w.roles.forEach(e => {
+  return (D.roles.forEach(e => {
     let t = C[e];
     null != t && (Z[t.id] = t)
   }), a.e$(h.I0({

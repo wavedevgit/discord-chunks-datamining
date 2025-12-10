@@ -263,7 +263,7 @@ let ef = e => {
       dmChannelMuted: U.ZP.isChannelMuted(null, M)
     }), [V, H] = i.useState(false), [Q, X] = i.useState(false), eo = () => {
       let e = [];
-      for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRq));
+      for (let n of t) e.push(...(0, D.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRq));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
         className: er.appDetailsSection,
         isExpanded: Q,
@@ -327,7 +327,7 @@ let ef = e => {
         className: ei.markup,
         variant: "text-sm/normal",
         color: "text-default",
-        children: (0, D.parseBioReact)(a.description)
+        children: (0, w.parseBioReact)(a.description)
       })
     }, [a.description]), ec = () => {
       let e = null != a.description && "" !== a.description,

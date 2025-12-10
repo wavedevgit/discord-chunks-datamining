@@ -97,7 +97,7 @@ function y(e) {
     R = i.useCallback(() => {
       null == S || S("user:explicit")
     }, [S]),
-    D = m({
+    w = m({
       targetElementRef: N.targetElementRef,
       shouldShow: N.shouldShow,
       hasVideo: N.hasVideo,
@@ -112,7 +112,7 @@ function y(e) {
     } : {
       alignmentStrategy: "trigger-center"
     });
-  return (0, r.jsx)(l.m, g(m({}, D), {
+  return (0, r.jsx)(l.m, g(m({}, w), {
     children: (0, r.jsxs)("div", {
       ref: I,
       "data-mana-component": "popover",

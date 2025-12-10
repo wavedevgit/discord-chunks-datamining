@@ -47,7 +47,7 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,8 +59,8 @@ function D(e) {
   }
   return e
 }
-let w = () => Promise.resolve();
-w = require("./346329.js").playApplication;
+let D = () => Promise.resolve();
+D = require("./346329.js").playApplication;
 let x = Object.freeze({
     [Chunk212819.xQ.USER]: Chunk212819.h8.USER,
     [Chunk212819.xQ.TEXT_CHANNEL]: Chunk212819.h8.TEXT_CHANNEL,
@@ -164,7 +164,7 @@ function G() {
 function Z() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND",
     t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "";
-  k(module), Chunk570140.Z.dispatch(D({
+  k(module), Chunk570140.Z.dispatch(w({
     type: "QUICKSWITCHER_SHOW"
   }, M(exports)))
 }
@@ -179,7 +179,7 @@ function F() {
 }
 
 function V(e) {
-  i.Z.dispatch(D({
+  i.Z.dispatch(w({
     type: "QUICKSWITCHER_SEARCH"
   }, M(e)))
 }
@@ -235,7 +235,7 @@ function Y(e) {
       break;
     case d.h8.APPLICATION:
       let T = y.Z.getActiveLibraryApplication(v.id);
-      w(v.id, T, {
+      D(v.id, T, {
         analyticsParams: {
           source: A.Sbl.QUICK_SWITCHER,
           location: A.Sbl.QUICK_SWITCHER

@@ -70,9 +70,9 @@ let y = ["discordapp.com/gifts", "discord.com/gifts"],
   N = A(4, 4),
   P = A(4, 6),
   R = A(5, 3),
-  D = "WUMP-?",
-  w = [N, P, R, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-  x = new RegExp("^(".concat(D, ")?(").concat(w, ")$")),
+  w = "WUMP-?",
+  D = [N, P, R, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+  x = new RegExp("^(".concat(w, ")?(").concat(D, ")$")),
   L = "-";
 var j = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", e[e.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD = 2] = "CUSTOM_MESSAGE_EMOJI_SOUNDBOARD", e

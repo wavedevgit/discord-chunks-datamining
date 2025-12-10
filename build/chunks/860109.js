@@ -75,12 +75,12 @@ function s(e) {
             break;
           case "trigger":
             let R = null != A && ("boolean" == typeof A ? A : 0 !== A),
-              D = y(E.current, s);
-            R && D !== A && (null == (O = t.viewModelInstance) || null == (_ = O.trigger(s)) || _.trigger());
+              w = y(E.current, s);
+            R && w !== A && (null == (O = t.viewModelInstance) || null == (_ = O.trigger(s)) || _.trigger());
             break;
           case "string":
-            let w = null == (v = t.viewModelInstance) ? true : v.string(s);
-            null != w && (w.value = A);
+            let D = null == (v = t.viewModelInstance) ? true : v.string(s);
+            null != D && (D.value = A);
             break;
           case "image":
             if (null != A) {

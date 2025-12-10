@@ -57,12 +57,12 @@ function R(e) {
   I = true, T = a, m = false, f = t, p = new Set(n), C = r, _ = i
 }
 
-function D(e) {
+function w(e) {
   let {} = e;
   I = false, T = false, C = null, m = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
 
-function w(e) {
+function D(e) {
   let {
     userTrialOffer: t
   } = e;
@@ -188,8 +188,8 @@ let Y = new H(Chunk570140.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: G,
   BILLING_REFERRALS_REMAINING_FETCH_START: P,
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: R,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: D,
-  BILLING_CREATE_REFERRAL_SUCCESS: w,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: w,
+  BILLING_CREATE_REFERRAL_SUCCESS: D,
   CREATE_REFERRALS_SUCCESS: x,
   BILLING_REFERRAL_RESOLVE_SUCCESS: j,
   BILLING_REFERRAL_RESOLVE_FAIL: M,

@@ -81,7 +81,7 @@ module.exports = function(e) {
       match: /->/,
       relevance: 0
     },
-    D = [R, {
+    w = [R, {
       className: "operator",
       relevance: 0,
       variants: [{
@@ -90,15 +90,15 @@ module.exports = function(e) {
         match: `\\.(\\.|${h})+`
       }]
     }],
-    w = "([0-9]_*)+",
+    D = "([0-9]_*)+",
     x = "([0-9a-fA-F]_*)+",
     L = {
       className: "number",
       relevance: 0,
       variants: [{
-        match: `\\b(${w})(\\.(${w}))?([eE][+-]?(${w}))?\\b`
+        match: `\\b(${D})(\\.(${D}))?([eE][+-]?(${D}))?\\b`
       }, {
-        match: `\\b0x(${x})(\\.(${x}))?([pP][+-]?(${w}))?\\b`
+        match: `\\b0x(${x})(\\.(${x}))?([pP][+-]?(${D}))?\\b`
       }, {
         match: /\b0o([0-7]_*)+\b/
       }, {
@@ -183,7 +183,7 @@ module.exports = function(e) {
           begin: /\(/,
           end: /\)/,
           keywords: S,
-          contains: [...D, L, Z]
+          contains: [...w, L, Z]
         }]
       }
     }, {
@@ -230,7 +230,7 @@ module.exports = function(e) {
         match: r(y, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...m, H, ...N, ...P, ...D, L, Z, ...W, ...K, z]
+      }, ...m, H, ...N, ...P, ...w, L, Z, ...W, ...K, z]
     },
     X = {
       begin: /</,
@@ -253,7 +253,7 @@ module.exports = function(e) {
           className: "params",
           match: y
         }]
-      }, ...m, ...N, ...D, L, Z, ...K, z, Q],
+      }, ...m, ...N, ...w, L, Z, ...K, z, Q],
       endsParent: true,
       illegal: /["']/
     },
@@ -327,7 +327,7 @@ module.exports = function(e) {
   for (let e of Z.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = A;
-    let n = [...N, ...P, ...D, L, Z, ...W];
+    let n = [...N, ...P, ...w, L, Z, ...W];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -342,6 +342,6 @@ module.exports = function(e) {
       end: /$/,
       contains: [...m],
       relevance: 0
-    }, H, ...N, ...P, ...D, L, Z, ...W, ...K, z, Q]
+    }, H, ...N, ...P, ...w, L, Z, ...W, ...K, z, Q]
   }
 }

@@ -69,7 +69,7 @@ function P(e, t) {
 
 function R(e, t) {
   if (null == e) return {};
-  var n, r, i = D(e, t);
+  var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -77,14 +77,14 @@ function R(e, t) {
   return i
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let w = {
+let D = {
   [Chunk284363.Q.STAFF]: {
     IconComponent: Chunk481060.Ymb,
     foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
@@ -211,7 +211,7 @@ function j(e) {
     disableBoostClick: C,
     "aria-label": N = false
   } = e;
-  let D = null != (a = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
+  let w = null != (a = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
     x = (0, s.e7)([h.default, m.ZP], () => {
       let e = h.default.getCurrentUser();
       return m.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
@@ -239,13 +239,13 @@ function j(e) {
     premiumBackgroundColor: Y,
     premiumForegroundColor: W,
     sizeAdjustment: K
-  } = w[k];
+  } = D[k];
   if (null == Z) return null;
   M.premium && (t = W, n = Y);
   let z = (0, c.wj)(j) ? V : H,
     q = (0, c.wj)(j) ? B : F;
   t = null != t ? t : z, n = null != n ? n : q;
-  let Q = Math.floor(.75 * D) - (null != K ? K : 0);
+  let Q = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.aML, {
     color: l,
     position: d,
@@ -264,7 +264,7 @@ function j(e) {
         allowFullSizedIcon: true,
         color: null != n ? n : I,
         stroke: v,
-        size: D,
+        size: w,
         children: (0, r.jsx)(Z, {
           size: "custom",
           width: Q,

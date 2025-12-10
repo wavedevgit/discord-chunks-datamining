@@ -32,16 +32,16 @@ function v(e, t) {
   } = e, [S, I] = i.useState(false), T = (0, l.e7)([p.Z], () => {
     var e, t;
     return S && Object.values(null != (t = null == (e = p.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? true : e.gifs) ? t : {}).length <= 2
-  }), [C, A, N, P] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.X), R = i.useRef(0), D = i.useCallback(() => {
+  }), [C, A, N, P] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.X), R = i.useRef(0), w = i.useCallback(() => {
     I(true), clearTimeout(R.current), R.current = setTimeout(() => {
       I(false), R.current = 0
     }, 2e3)
   }, []);
   (0, _.yp)({
     event: E.CkL.FAVORITE_GIF,
-    handler: D
+    handler: w
   });
-  let w = i.useCallback(() => {
+  let D = i.useCallback(() => {
       (0, f.RO)(b.X1.GIF, a, v.id)
     }, [a, v.id]),
     {
@@ -66,7 +66,7 @@ function v(e, t) {
         onMouseEnter: L.onMouseEnter,
         onMouseLeave: L.onMouseLeave,
         onClick: () => {
-          w(), j()
+          D(), j()
         },
         isActive: U,
         pulse: S,

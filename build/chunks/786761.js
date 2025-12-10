@@ -6,7 +6,7 @@ require.d(exports, {
   e5: () => P,
   gx: () => R,
   lp: () => k,
-  wi: () => D
+  wi: () => w
 }), require("./997841.js"), require("./388685.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -85,7 +85,7 @@ function N(e) {
   return new u.pi(I(v({}, e), {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
-    attachments: w(e),
+    attachments: D(e),
     embeds: L(e),
     components: (0, o.uZ)(null != (t = e.components) ? t : []),
     codedLinks: y.V$x.NON_PARSED.has(e.type) ? [] : (0, a.ZP)(e.content)
@@ -102,8 +102,8 @@ function P(e) {
     T = null != (i = null == (t = e.mentions) ? true : t.map(e => e.id)) ? i : [],
     P = null != (a = e.mention_roles) ? a : [],
     R = null != (o = e.mention_channels) ? o : [],
-    D = null != (l = e.mention_games) ? l : [],
-    w = e.message_reference,
+    w = null != (l = e.mention_games) ? l : [],
+    D = e.message_reference,
     L = C(e),
     k = null,
     U = null == e ? true : e.gift_info,
@@ -127,15 +127,15 @@ function P(e) {
     mentions: T,
     mentionRoles: P,
     mentionChannels: R,
-    mentionGames: D,
-    messageReference: w,
+    mentionGames: w,
+    messageReference: D,
     mentioned: (0, E.Sz)({
       userId: f.default.getId(),
       channelId: e.channel_id,
       mentionEveryone: null != (d = e.mention_everyone) && d,
       mentionUsers: T,
       mentionRoles: P,
-      mentionGames: D.map(e => e.id)
+      mentionGames: w.map(e => e.id)
     }),
     giftCodes: (0, h.Fp)(e) ? (0, h.Q_)(null == e ? true : e.embeds[0].url) : (0, h.Q_)(e.content),
     content: F,
@@ -164,14 +164,14 @@ function R(e, t) {
   }) : v({}, e, t)
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null != t.edited_timestamp) return P(t, {
     reactions: e.reactions,
     interactionData: e.interactionData
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", w(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", L(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", M(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
+  if (null != t.call && (n = n.set("call", x(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", D(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", L(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", M(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
     n = n.set("reactions", j(null != (i = e.reactions) ? i : t.reactions))
   }
@@ -181,7 +181,7 @@ function D(e, t) {
   }))), n
 }
 
-function w(e) {
+function D(e) {
   return null == e.attachments ? [] : e.attachments.map(e => I(v({}, e), {
     spoiler: e.filename.startsWith(b._j)
   }))

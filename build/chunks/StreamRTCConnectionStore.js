@@ -39,8 +39,8 @@ let T = {},
   N = {},
   P = {},
   R = {},
-  D = Chunk981631.hVg.THEATRE,
-  w = {};
+  w = Chunk981631.hVg.THEATRE,
+  D = {};
 
 function x(e, t, n, i) {
   return o()(null != r, "Creating RTCConnection without session."), new p.Z({
@@ -48,15 +48,15 @@ function x(e, t, n, i) {
     streamKey: e,
     serverId: t,
     channelId: n,
-    initialLayout: D,
+    initialLayout: w,
     analyticsContext: i,
     parentMediaSessionId: O.Z.getMediaSessionId()
   })
 }
 
 function L() {
-  l().forEach(w, (e, t) => {
-    e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete w[t], delete R[t]
+  l().forEach(D, (e, t) => {
+    e.destroy(e.isOwner ? "sender-disconnect" : "receiver-disconnect"), delete D[t], delete R[t]
   })
 }
 
@@ -90,7 +90,7 @@ function k(e) {
   if (T[h] = {
       appContext: o,
       analyticsLocations: m
-    }, l().forEach(w, e => {
+    }, l().forEach(D, e => {
       let {
         analyticsContext: t,
         isOwner: n
@@ -105,8 +105,8 @@ function k(e) {
       distributor: e.distributor,
       sku: e.sku,
       gameMetadata: e.gameMetadata
-    }), null == (t = w[h]) || t.analyticsContext.updateStreamApplication(C[h])
-  } else null == (n = w[h]) || n.analyticsContext.updateStreamApplication(null);
+    }), null == (t = D[h]) || t.analyticsContext.updateStreamApplication(C[h])
+  } else null == (n = D[h]) || n.analyticsContext.updateStreamApplication(null);
   null != p ? P[h] = p : delete P[h]
 }
 
@@ -118,7 +118,7 @@ function U(e) {
   T[n] = {
     appContext: t,
     analyticsLocations: true
-  }, l().forEach(w, e => {
+  }, l().forEach(D, e => {
     let {
       analyticsContext: n,
       isOwner: r
@@ -134,7 +134,7 @@ function G(e) {
     rtcChannelId: r,
     region: i,
     viewerIds: a
-  } = e, o = w[t], s = (0, _.my)(t);
+  } = e, o = D[t], s = (0, _.my)(t);
   if (null == o && null != n) {
     var l, c;
     null == A[t] && (C[t] = null), null == C[t] && null == N[t] && (C[t] = (0, m.L2)(s, y.Z));
@@ -147,7 +147,7 @@ function G(e) {
       goLiveModalDurationMs: P[t],
       analyticsLocations: null == (c = T[t]) ? true : c.analyticsLocations
     });
-    o = x(t, n, r, e), w[t] = o
+    o = x(t, n, r, e), D[t] = o
   }
   delete R[t], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
@@ -156,7 +156,7 @@ function G(e) {
 }
 
 function Z(e) {
-  let t = w[e.streamKey];
+  let t = D[e.streamKey];
   if (null == t) returnfalse;
   t.connect(e.endpoint, e.token)
 }
@@ -165,7 +165,7 @@ function B(e) {
   let {
     connectionStats: t
   } = e;
-  l().forEach(w, (e, n) => {
+  l().forEach(D, (e, n) => {
     e.updateStats(t)
   })
 }
@@ -175,7 +175,7 @@ function F(e) {
     streamKey: t,
     viewerIds: n,
     paused: r
-  } = e, i = w[t];
+  } = e, i = D[t];
   if (null == i) returnfalse;
   null != n && i.analyticsContext.trackViewerCount(n.length), i.streamUpdate(r)
 }
@@ -183,19 +183,19 @@ function F(e) {
 function V(e) {
   let {
     streamKey: t
-  } = e, n = w[t];
+  } = e, n = D[t];
   if (null == n) returnfalse;
   d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: n.getMediaEngineConnectionId()
-  }), n.destroy("stream-end"), delete w[t]
+  }), n.destroy("stream-end"), delete D[t]
 }
 
 function H(e) {
   let {
     layout: t
   } = e;
-  D = t, Object.values(w).forEach(e => e.layoutChange(t))
+  w = t, Object.values(D).forEach(e => e.layoutChange(t))
 }
 
 function Y() {
@@ -215,7 +215,7 @@ function W(e) {
     channelId: a,
     ownerId: r
   });
-  if (t !== u.Yn.STREAM || null == w[o] || !Object.entries(n).some(e => {
+  if (t !== u.Yn.STREAM || null == D[o] || !Object.entries(n).some(e => {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
@@ -223,7 +223,7 @@ function W(e) {
 }
 
 function K(e) {
-  return l().some(w, t => t === e.connection)
+  return l().some(D, t => t === e.connection)
 }
 
 function z(e) {
@@ -232,7 +232,7 @@ function z(e) {
     context: n,
     quality: r
   } = e;
-  l().forEach(w, e => {
+  l().forEach(D, e => {
     e.setSimulcastDebugOverride(t, n, r)
   })
 }
@@ -243,7 +243,7 @@ function q(e) {
     width: n,
     height: r
   } = e;
-  l().forEach(w, e => {
+  l().forEach(D, e => {
     null == e || e.setVideoSize(t, n, r)
   })
 }
@@ -253,7 +253,7 @@ function Q(e) {
     streamId: t,
     zoom: n
   } = e;
-  l().forEach(w, e => {
+  l().forEach(D, e => {
     null == e || e.setVideoZoom(t, n)
   })
 }
@@ -276,46 +276,46 @@ class J extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk131951.Z, Chunk19780.Z, Chunk594190.ZP)
   }
   getRTCConnections() {
-    return w
+    return D
   }
   getAllActiveStreamKeys() {
-    return Object.keys(w)
+    return Object.keys(D)
   }
   getRTCConnection(e) {
-    return w[e]
+    return D[e]
   }
   getQuality(e) {
     var t, n;
-    return (0, h.Z)(b.Z) && null != e && null != (n = null == (t = w[e]) ? true : t.quality) ? n : v.IE4.UNKNOWN
+    return (0, h.Z)(b.Z) && null != e && null != (n = null == (t = D[e]) ? true : t.quality) ? n : v.IE4.UNKNOWN
   }
   getMediaSessionId(e) {
     if (null == e) return null;
-    let t = w[e];
+    let t = D[e];
     if (null != t) return null != t ? t.getMediaSessionId() : null
   }
   getRtcConnectionId(e) {
     if (null == e) return null;
-    let t = w[e];
+    let t = D[e];
     if (null != t) return null != t ? t.getRTCConnectionId() : null
   }
   getVideoStats(e) {
     if (null == e) return null;
-    let t = w[e];
+    let t = D[e];
     return null != t ? t.getVideoStats() : null
   }
   getHostname(e) {
     if (null == e) return "";
-    let t = w[e];
+    let t = D[e];
     return null != t && null != t.hostname ? t.hostname : ""
   }
   getRegion(e) {
     if (null == e) return null;
-    let t = w[e];
+    let t = D[e];
     return null != t ? t.getRegion() : null
   }
   getMaxViewers(e) {
     if (null == e) return null;
-    let t = w[e];
+    let t = D[e];
     return null != t ? t.getMaxViewers() : null
   }
   getStreamSourceId(e) {
@@ -325,19 +325,19 @@ class J extends(i = Chunk442837.ZP.Store) {
     return R[e]
   }
   getUserIds(e) {
-    let t = w[e];
+    let t = D[e];
     return null == t ? true : t.getUserIds()
   }
   isUserConnected(e, t) {
-    let n = w[e];
+    let n = D[e];
     return null == n ? true : n.getIsUserConnected(t)
   }
   getSecureFramesState(e) {
-    let t = w[e];
+    let t = D[e];
     return null == t ? true : t.getSecureFramesState()
   }
   getSecureFramesRosterMapEntry(e, t) {
-    let n = w[e],
+    let n = D[e],
       r = null == n ? true : n.getSecureFramesRosterMap();
     return null == r ? true : r.get(t)
   }

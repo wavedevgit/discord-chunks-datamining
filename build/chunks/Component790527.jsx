@@ -2,7 +2,7 @@
 /** chunk id: 790527, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -49,7 +49,7 @@ function R(e, t) {
   return i
 }
 
-function D(e) {
+function w(e) {
   switch (e) {
     case I.cd.ANIMATED_AVATAR_MODAL_UPSELL:
     case I.cd.ANIMATED_BANNER_MODAL_UPSELL:
@@ -64,10 +64,10 @@ function D(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   var t, n, a, {
       title: R,
-      type: w,
+      type: D,
       guildBoostProps: x,
       analyticsSource: L,
       analyticsLocation: j,
@@ -118,7 +118,7 @@ function w(e) {
       analyticsLocations: ey,
       analyticsSource: L,
       guildBoostProps: x,
-      type: w
+      type: D
     },
     ev = i.useRef(eO);
   i.useEffect(() => {
@@ -147,7 +147,7 @@ function w(e) {
     })
   }, [eh, en, er]);
   let eS = (0, s.e7)([g.Z], () => g.Z.affinities),
-    eI = eS.length > 1 && D(w),
+    eI = eS.length > 1 && w(D),
     eT = (0, s.e7)([g.Z], () => g.Z.hasFetched);
   i.useEffect(() => {
     eT || u.MH()
@@ -210,7 +210,7 @@ function w(e) {
       className: o()(eo ? A.enhancedContent : A.content, !eb && Z),
       children: er ? (0, r.jsx)(c.$jN, {}) : eb ? (0, r.jsx)(v.ZP, {
         onClose: W,
-        type: w,
+        type: D,
         subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
         headingText: R,
         context: k,

@@ -153,12 +153,12 @@ let z = Chunk473749.forwardRef(function(e, t) {
       tabIndex: P
     } = N,
     R = F(N, ["tabIndex"]),
-    D = (0, S.p9)({
+    w = (0, S.p9)({
       roleId: E.id,
       size: 16,
       guildId: v
     }),
-    w = (0, p.e7)([b.Z], () => b.Z.roleStyle),
+    D = (0, p.e7)([b.Z], () => b.Z.roleStyle),
     x = (0, T._f)(v, E, E.colorStrings),
     L = (null == (a = E.tags) ? true : a.guild_connections) === null,
     j = i.useCallback(e => {
@@ -182,7 +182,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     iconClassName: d ? k.roleVerifiedIcon : true,
     color: Z,
     size: 14
-  }) : "dot" === w ? (0, r.jsx)(m.FhE, {
+  }) : "dot" === D ? (0, r.jsx)(m.FhE, {
     className: k.roleDot,
     color: Z,
     colors: x,
@@ -225,9 +225,9 @@ let z = Chunk473749.forwardRef(function(e, t) {
           className: k.roleRemoveIcon,
           "aria-hidden": true
         }) : null]
-      }), null != D ? (0, r.jsx)(C.Z, B(G({
+      }), null != w ? (0, r.jsx)(C.Z, B(G({
         className: k.roleIcon
-      }, D), {
+      }, w), {
         enableTooltip: false
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": true,
@@ -284,9 +284,9 @@ function Q(e) {
     } = e,
     f = (0, u.JA)("overflow-add-roles-".concat(a.id)),
     _ = (0, p.e7)([b.Z], () => b.Z.roleStyle),
-    h = w.Z.getHighestRole(n),
+    h = D.Z.getHighestRole(n),
     g = R.ZP.getMember(n.id, a.id),
-    E = e => !(0, P.fI)(e) && !e.managed && w.Z.isRoleHigher(n, h, e) && (null == g || false === g.roles.indexOf(e.id));
+    E = e => !(0, P.fI)(e) && !e.managed && D.Z.isRoleHigher(n, h, e) && (null == g || false === g.roles.indexOf(e.id));
   return (0, r.jsx)(m.yRy, {
     targetElementRef: t,
     renderPopout: e => {
@@ -349,7 +349,7 @@ function X(e) {
       t.includes(e) || (t = [...t, e]), I.Z.updateMemberRoles(a.id, n.id, t, [e], [])
     }, [s, a.id, n.id]),
     [T, C] = i.useState(null),
-    N = (0, p.Wu)([D.Z], () => D.Z.getManyRoles(a.id, s).sort(A.Z)),
+    N = (0, p.Wu)([w.Z], () => w.Z.getManyRoles(a.id, s).sort(A.Z)),
     P = i.useMemo(() => null != T ? N.slice(0, T) : N, [N, T]),
     R = s.length - P.length;
   i.useLayoutEffect(() => {
@@ -370,7 +370,7 @@ function X(e) {
   }, [f, _, P]);
   let U = x.default.getCurrentUser();
   l()(null != U, "MemberRolesList: currentUser cannot be undefined");
-  let Z = !h && w.Z.can(j.Plq.MANAGE_ROLES, a),
+  let Z = !h && D.Z.can(j.Plq.MANAGE_ROLES, a),
     V = L.e9(a, U.id),
     K = i.useMemo(() => "roles-".concat((0, c.Z)()), []),
     X = (0, d.ZP)({
@@ -419,8 +419,8 @@ function X(e) {
 let J = (0, Chunk112724.Z)(X);
 
 function $(e) {
-  return (0, p.e7)([w.Z], () => {
+  return (0, p.e7)([D.Z], () => {
     var t;
-    return w.Z.getGuildVersion(null == (t = e.guild) ? true : t.id)
+    return D.Z.getGuildVersion(null == (t = e.guild) ? true : t.id)
   }), false === e.wrap ? (0, r.jsx)(J, G({}, e)) : (0, r.jsx)(X, G({}, e))
 }

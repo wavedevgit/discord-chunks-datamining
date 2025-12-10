@@ -120,12 +120,12 @@ function R() {
   u = Chunk981631.QZA.OPEN, _ = {}
 }
 
-function D(e) {
+function w(e) {
   var t;
   if (u !== s.QZA.SUBMITTING) returnfalse;
   u = s.QZA.OPEN, d = s.oAB.ACCOUNT, _ = null != (t = e.errors) ? t : {}
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk594174.default)
   }
@@ -160,14 +160,14 @@ class w extends(r = Chunk442837.ZP.Store) {
     return y
   }
 }
-l(w, "displayName", "UserSettingsModalStore");
-let x = new w(Chunk570140.Z, {
+l(D, "displayName", "UserSettingsModalStore");
+let x = new D(Chunk570140.Z, {
   USER_SETTINGS_MODAL_OPEN: O,
   USER_SETTINGS_MODAL_INIT: v,
   USER_SETTINGS_MODAL_CLOSE: S,
   LOGOUT: S,
   USER_SETTINGS_MODAL_SUBMIT: N,
-  USER_SETTINGS_MODAL_SUBMIT_FAILURE: D,
+  USER_SETTINGS_MODAL_SUBMIT_FAILURE: w,
   USER_SETTINGS_MODAL_SET_SECTION: I,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
   USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: C,

@@ -101,9 +101,9 @@ let S = e => {
       P = (0, _.Z)(),
       R = (0, h.mN)(),
       {
-        fractionalState: D
+        fractionalState: w
       } = (0, l.Z)(),
-      w = (0, d.W)(),
+      D = (0, d.W)(),
       x = (0, u.bg)({
         location: "PremiumPerks"
       }),
@@ -118,8 +118,8 @@ let S = e => {
         variant: n,
         hideCardsOnNarrowScreen: false,
         isPremiumSubscriber: R,
-        fractionalState: D,
-        isInReverseTrial: w,
+        fractionalState: w,
+        isInReverseTrial: D,
         showProfileWidgets: x,
         showDisplayNameStyles: L,
         recurring3PPromotionExperiment: j

@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 756893, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  g: () => S
+  g: () => g
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk103644 = require("./103644.jsx"),
   Chunk320851 = require("./320851.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.k4)(Chunk313789.n.SOUNDS_CATEGORY, {
+let g = (0, Chunk509613.k4)(Chunk313789.n.SOUNDS_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.MKWyKc),
   useNotice: function() {
     let t = (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds());

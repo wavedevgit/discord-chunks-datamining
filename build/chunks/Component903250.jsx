@@ -2,7 +2,7 @@
 /** chunk id: 903250, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,8 +37,8 @@ let R = (e, t) => {
       buttonClassName: i,
       subscriptionTier: a,
       isDarkMode: R,
-      isEligibleForBogoPromotion: D,
-      videoRef: w
+      isEligibleForBogoPromotion: w,
+      videoRef: D
     } = e, {
       analyticsLocations: x
     } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, h.Nx)(), M = (0, s.e7)([m.Z], () => m.Z.affinities), k = (0, E.Z)(), U = null != k, G = R ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, B = T.intl.string(T.t.YCZldK), F = (0, _.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
@@ -83,7 +83,7 @@ let R = (e, t) => {
               buttonClassName: i,
               isApplicationHome: true,
               isDarkMode: R,
-              isEligibleForBogoPromotion: D
+              isEligibleForBogoPromotion: w
             }), (0, r.jsx)(v._O, {
               variant: "text-sm/normal",
               withBottomMargin: false,
@@ -99,7 +99,7 @@ let R = (e, t) => {
             poster: N.Z,
             loop: true,
             className: C.heroHeadingV2Art,
-            ref: w,
+            ref: D,
             children: (0, r.jsx)("source", {
               src: F ? A.Z : P.Z,
               type: F ? I.m.MP4 : I.m.WEBM
@@ -109,4 +109,4 @@ let R = (e, t) => {
       })
     })
   },
-  D = Chunk473749.forwardRef(R)
+  w = Chunk473749.forwardRef(R)

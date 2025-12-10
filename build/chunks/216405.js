@@ -51,20 +51,20 @@ class T extends Chunk147913.Z {
     if (null == C || C.numDatapoints < A) return;
     let N = Chunk594174.default.getCurrentUser(),
       P = Chunk430824.Z.getGuild(Chunk147913.guildId),
-      [R, D] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == P ? true : P.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
-      [w, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == P ? true : P.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
+      [R, w] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == P ? true : P.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
+      [D, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == P ? true : P.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
       L = null;
-    if (C.entropy < y && (T.resolution !== R || T.fps !== D) ? (S.info("Low entropy average, switching to screenshare preset."), L = {
+    if (C.entropy < y && (T.resolution !== R || T.fps !== w) ? (S.info("Low entropy average, switching to screenshare preset."), L = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
           resolution: R,
-          frameRate: D
+          frameRate: w
         },
         context: Chunk46973.Yn.STREAM
-      }) : C.entropy > O && (T.resolution !== w || T.fps !== x) && (S.info("High entropy average, switching to video preset."), L = {
+      }) : C.entropy > O && (T.resolution !== D || T.fps !== x) && (S.info("High entropy average, switching to video preset."), L = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
-          resolution: w,
+          resolution: D,
           frameRate: x
         },
         context: Chunk46973.Yn.STREAM

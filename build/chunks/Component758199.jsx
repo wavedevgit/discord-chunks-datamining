@@ -79,7 +79,7 @@ function v(e) {
   let {
     primaryColor: P,
     secondaryColor: R
-  } = (0, p.Z)(null != S ? S : h), D = "linear-gradient(45deg, ".concat(P, ", ").concat(R, ")"), w = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), x = i.useRef(false), L = (0, l.O)(e => {
+  } = (0, p.Z)(null != S ? S : h), w = "linear-gradient(45deg, ".concat(P, ", ").concat(R, ")"), D = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), x = i.useRef(false), L = (0, l.O)(e => {
     if (false === x.current && e) {
       var t;
       null == C || null == (t = C.onView) || t.call(C), (0, m.GF)({
@@ -92,7 +92,7 @@ function v(e) {
         messageId: C.messageId
       }), x.current = true
     }
-  }, true), j = null != h, M = null != b && false === w, k = j || M, U = 0 === v ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, G = i.useRef(null), Z = i.useCallback(() => {
+  }, true), j = null != h, M = null != b && false === D, k = j || M, U = 0 === v ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, G = i.useRef(null), Z = i.useCallback(() => {
     let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), B = i.useMemo(() => !!M && new URL(b).pathname.endsWith(".gif"), [M, b]), F = i.useMemo(() => {
@@ -147,7 +147,7 @@ function v(e) {
       })]
     }), (0, r.jsxs)("div", {
       style: {
-        background: D
+        background: w
       },
       children: [(0, r.jsxs)("div", {
         className: E.contentContainer,

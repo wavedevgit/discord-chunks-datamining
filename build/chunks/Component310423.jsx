@@ -2,7 +2,7 @@
 /** chunk id: 310423, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./467055.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -86,18 +86,18 @@ function R(e) {
       channel: v,
       guild: S,
       messageId: T,
-      parentOptionKey: D,
-      commandOptionSpec: w,
+      parentOptionKey: w,
+      commandOptionSpec: D,
       sourceAnalyticsLocations: x
     } = e,
-    L = null != D ? D + " " + g.name : g.name;
+    L = null != w ? w + " " + g.name : g.name;
   if (g.type === c.jw.SUB_COMMAND || g.type === c.jw.SUB_COMMAND_GROUP) {
     let e = [(0, r.jsxs)(i.Fragment, {
         children: [" ", (0, r.jsx)(l.Text, C(I({}, A), {
-          children: null != (n = null == w ? true : w.name_localized) ? n : g.name
+          children: null != (n = null == D ? true : D.name_localized) ? n : g.name
         }))]
       }, L)],
-      s = Object.fromEntries(null == (t = null != (a = null == w ? true : w.options) ? a : []) ? true : t.map(e => [e.name, e]));
+      s = Object.fromEntries(null == (t = null != (a = null == D ? true : D.options) ? a : []) ? true : t.map(e => [e.name, e]));
     for (let t of null != (o = g.options) ? o : []) e = e.concat(R({
       option: t,
       channel: v,
@@ -171,18 +171,18 @@ function R(e) {
       f = P(O.intl.string(O.t.nONJVc));
       break;
     default: {
-      let e = null == w || null == (s = w.choices) ? true : s.find(e => e.value === g.value);
+      let e = null == D || null == (s = D.choices) ? true : s.find(e => e.value === g.value);
       null != e && (j = null != (u = e.name_localized) ? u : e.name)
     }
   }
   return null == f && (f = P(null == j ? true : j.toString())), [(0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsxs)(l.Text, C(I({}, A), {
-      children: [" ", null != (d = null == w ? true : w.name_localized) ? d : g.name, ": "]
+      children: [" ", null != (d = null == D ? true : D.name_localized) ? d : g.name, ": "]
     })), f]
   }, L)]
 }
 
-function D(e) {
+function w(e) {
   var t, n, a, o, p, _;
   let m, {
       channel: h,
@@ -238,4 +238,4 @@ function D(e) {
     })]
   })
 }
-let w = Chunk473749.memo(D)
+let D = Chunk473749.memo(w)

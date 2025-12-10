@@ -2,10 +2,10 @@
 /** chunk id: 675478, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => w,
+  BU: () => D,
   Cd: () => M,
   DZ: () => P,
-  PS: () => D,
+  PS: () => w,
   T6: () => C,
   Z1: () => G,
   aj: () => R,
@@ -284,12 +284,12 @@ let N = new A(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
     [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: P
   };
 
-function D(e, t, n) {
+function w(e, t, n) {
   return N.updateAsync("guilds", n => (0, E.u0)(n, e, t), n)
 }
 
-function w(e, t, n, r) {
-  return D(e, e => (0, E.uL)(e, t, n), r)
+function D(e, t, n, r) {
+  return w(e, e => (0, E.uL)(e, t, n), r)
 }
 
 function x(e) {
@@ -316,7 +316,7 @@ async function M(e, t) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 async function k(e, t, n) {
-  return await D(t, t => {
+  return await w(t, t => {
     t.guildDismissibleContentStates[e] = v({}, t.guildDismissibleContentStates[e], n)
   }, b.fy.INFREQUENT_USER_ACTION)
 }

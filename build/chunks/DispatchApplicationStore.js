@@ -66,8 +66,8 @@ let I = 200,
   N = "content",
   P = "file://",
   R = false,
-  D = 0,
   w = 0,
+  D = 0,
   x = 0,
   L = [],
   j = [],
@@ -256,9 +256,9 @@ function X(e) {
       let o = (0, _.Tu)(e, t);
       if (n[o] = Z(r[e][t]), null != A[o]) {
         let e = Q(n, o, B);
-        e > 0 && K(D += e);
+        e > 0 && K(w += e);
         let r = Q(n, o, F);
-        r > 0 && q(w += r);
+        r > 0 && q(D += r);
         let s = Q(n, o, V);
         if (s > 0 && z(x += s), i === t) {
           let e = n[o];

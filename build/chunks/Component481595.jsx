@@ -102,8 +102,8 @@ function G(e) {
   let ed = (0, c.e7)([h.Z, C.Z], () => C.Z.inTestModeForApplication(G.id) || h.Z.inDevModeForApplication(G.id), [G.id]),
     ef = (0, c.e7)([v.Z], () => v.Z.enabled),
     ep = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
-    e_ = Z === D.A.PURCHASING || Z === D.A.COMPLETED,
-    em = (0, w.m)(B, F),
+    e_ = Z === w.A.PURCHASING || Z === w.A.COMPLETED,
+    em = (0, D.m)(B, F),
     eh = null != em ? em.type : null;
   i.useEffect(() => {
     ea && F === ei && ei !== T.c && null == eu && (0, d.x2)(eo.applicationId, eo.id, ei, {

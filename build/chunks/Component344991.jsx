@@ -88,13 +88,13 @@ function S(e) {
     type: b,
     maxValues: v,
     disabled: S
-  } = t, I = (0, _.Wo)(t), [T, C] = i.useState(false), [A, N] = i.useState(false), [P, R] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [D, w] = i.useState(new Set(P.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
+  } = t, I = (0, _.Wo)(t), [T, C] = i.useState(false), [A, N] = i.useState(false), [P, R] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [w, D] = i.useState(new Set(P.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
     L(e);
     let t = new Map(null == g ? true : g.map(e => [e.value, e]));
-    R(t), w(new Set(t.keys())), M(e => e + 1)
+    R(t), D(new Set(t.keys())), M(e => e + 1)
   }, [g, x]);
   let k = (0, f.CJ)();
   l()(null != k, "SearchableSelectActionComponent must be rendered inside a ComponentStateContext");
@@ -111,18 +111,18 @@ function S(e) {
   i.useEffect(() => {
     if ((null == U ? true : U.type) === u.re.USER_SELECT || (null == U ? true : U.type) === u.re.ROLE_SELECT || (null == U ? true : U.type) === u.re.MENTIONABLE_SELECT || (null == U ? true : U.type) === u.re.CHANNEL_SELECT) {
       let e = new Map(U.selectedOptions.map(e => [e.value, e]));
-      R(e), w(new Set(e.keys()))
+      R(e), D(new Set(e.keys()))
     }
   }, [U]);
   let W = i.useCallback(() => {
     G({
       type: b,
       selectedOptions: Array.from(P.values())
-    }) && w(new Set(P.keys()))
+    }) && D(new Set(P.keys()))
   }, [G, b, P]);
   i.useEffect(() => {
-    !T && !A && (P.size === D.size && Array.from(P.keys()).every(e => D.has(e)) || W())
-  }, [T, A, D, P, W]);
+    !T && !A && (P.size === w.size && Array.from(P.keys()).every(e => w.has(e)) || W())
+  }, [T, A, w, P, W]);
   let K = e => {
       T || N(true), R(new Map(e.map(e => [e.value, e])))
     },

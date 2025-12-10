@@ -57,14 +57,14 @@ function l(e, t, n) {
     isDisabled: l || c
   }), {
     focusableProps: P
-  } = (0, s.kc)(e, n), R = (0, r.d)(T, P), D = (0, i.z)(e, {
+  } = (0, s.kc)(e, n), R = (0, r.d)(T, P), w = (0, i.z)(e, {
     labelable: true
   });
   return (0, a.y)(n, t.defaultSelected, t.setSelected), {
     labelProps: (0, r.d)(A, {
       onClick: e => e.preventDefault()
     }),
-    inputProps: (0, r.d)(D, {
+    inputProps: (0, r.d)(w, {
       "aria-invalid": g || "invalid" === h || true,
       "aria-errormessage": e["aria-errormessage"],
       "aria-controls": e["aria-controls"],

@@ -158,8 +158,8 @@ class R extends Chunk473749.PureComponent {
         lossless: N,
         iconSize: R
       } = require,
-      D = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
-      w = P[Chunk442837],
+      w = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
+      D = P[Chunk442837],
       x = null != Chunk372769 ? Chunk481060.P3F : "div",
       L = (0, Chunk601964.gM)(r);
     return (0, Chunk54381.jsxs)(x, I(v({
@@ -170,11 +170,11 @@ class R extends Chunk473749.PureComponent {
       }),
       "aria-hidden": A,
       style: null == r.icon ? v({
-        fontSize: (null != (t = w[L.length]) ? exports : w[w.length - 1]) * Chunk681715
+        fontSize: (null != (t = D[L.length]) ? exports : D[D.length - 1]) * Chunk681715
       }, Chunk692547) : Chunk692547,
       onClick: null != Chunk451478 || null == Chunk372769 ? true : Chunk372769,
       tabIndex: S
-    }, D), {
+    }, w), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))
   }
@@ -213,7 +213,7 @@ class R extends Chunk473749.PureComponent {
     }) : this.renderTooltip()
   }
 }
-let D = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
+let w = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
   let {
     guild: t,
     animate: n,
@@ -229,12 +229,12 @@ let D = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
     })
   }
 })((0, Chunk891819.N)(e => (0, i.jsx)(R, v({}, e))));
-class w extends(r = Chunk473749.PureComponent) {
+class D extends(r = Chunk473749.PureComponent) {
   render() {
-    return (0, Chunk54381.jsx)(D, v({}, this.props))
+    return (0, Chunk54381.jsx)(w, v({}, this.props))
   }
 }
-O(w, "Sizes", A), O(w, "defaultProps", {
+O(D, "Sizes", A), O(D, "defaultProps", {
   size: A.LARGE,
   textScale: 1,
   showBadge: false,
@@ -244,4 +244,4 @@ O(w, "Sizes", A), O(w, "defaultProps", {
   badgeStrokeColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
   animate: false
 });
-let x = w
+let x = D

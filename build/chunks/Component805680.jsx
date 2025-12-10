@@ -132,7 +132,7 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
       positionContainerRef: t,
       drawerRef: n,
       orientation: r
-    } = e, a = (0, d.e7)([D.ZP], () => D.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : j._j.MIN), f = i.useMemo(() => {
+    } = e, a = (0, d.e7)([w.ZP], () => w.ZP.expressionPickerWidth), [o, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != a ? a : j._j.MIN), f = i.useMemo(() => {
       switch (c) {
         case j._j.MIN:
           return j.Om;
@@ -176,7 +176,7 @@ function J(e) {
   let {
     positionTargetRef: l,
     hideGifFavorites: m,
-    includeCreateEmojiButton: D,
+    includeCreateEmojiButton: w,
     onSelectGIF: V,
     onSelectEmoji: H,
     onSelectSticker: Y,
@@ -200,7 +200,7 @@ function J(e) {
     windowDispatch: ef
   } = i.useContext(T.ZP), ep = (0, d.e7)([P.Z], () => !P.Z.hasLoadedStickerPacks), e_ = (0, C.V2)({
     location: "expression_picker"
-  }), em = (0, d.e7)([w.Z], () => w.Z.isOpen()), eh = null != en, eg = (0, p.useIsModalAtTop)(null != en ? en : ""), {
+  }), em = (0, d.e7)([D.Z], () => D.Z.isOpen()), eh = null != en, eg = (0, p.useIsModalAtTop)(null != en ? en : ""), {
     reorderExpressionPickerTabs: eE
   } = b.n.useConfig({
     location: "expression_picker"
@@ -254,8 +254,8 @@ function J(e) {
   });
   let eP = i.useCallback((e, t) => null == W ? true : W(e, "emoji_picker", t), [W]),
     eR = i.useCallback((e, t) => null == W ? true : W(e, "soundboard_picker", t), [W]),
-    eD = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
-    ew = "left" === $ ? "right" : "left",
+    ew = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
+    eD = "left" === $ ? "right" : "left",
     ex = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
     eL = eb ? (0, r.jsx)(Q, {
       id: U._3,
@@ -318,7 +318,7 @@ function J(e) {
               className: F.resizeHandle,
               onMouseDown: el,
               style: {
-                [ew]: false
+                [eD]: false
               }
             }), (0, r.jsxs)("div", {
               className: F.contentWrapper,
@@ -332,7 +332,7 @@ function J(e) {
                     children: [eM, eL, ej]
                   }) : (0, r.jsxs)(r.Fragment, {
                     children: [eL, ej, eM]
-                  }), e_ && eD && (0, r.jsx)(Q, {
+                  }), e_ && ew && (0, r.jsx)(Q, {
                     id: U.Hr,
                     "aria-controls": U.gV,
                     "aria-selected": ec === j.X1.SOUNDBOARD,
@@ -365,7 +365,7 @@ function J(e) {
                 persistSearch: true,
                 channel: K,
                 containerWidth: es,
-                includeCreateEmojiButton: D,
+                includeCreateEmojiButton: w,
                 emojiSize: null != es && es < q ? U.Su.MEDIUM : U.Su.LARGE,
                 pickerIntention: G.Hz.CHAT,
                 closePopout: eI,

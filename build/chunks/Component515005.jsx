@@ -2,7 +2,7 @@
 /** chunk id: 515005, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -83,8 +83,8 @@ function N(e, t) {
 }
 let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions),
   R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewPadding),
-  D = 250,
-  w = Chunk473749.memo(function(e) {
+  w = 250,
+  D = Chunk473749.memo(function(e) {
     let {
       isDisplayingIndividualStickers: t = false,
       preferAnimation: a = true,
@@ -92,7 +92,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       getStickerRowProps: S,
       gutterWidth: T,
       inspectedStickerPosition: N,
-      isScrolling: w,
+      isScrolling: D,
       isUsingKeyboardNavigation: x,
       onInspect: L,
       onSelect: j,
@@ -127,13 +127,13 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
           S = e.type === h.al.STICKER && F && f,
           T = t => {
-            if ((null == w ? true : w.current) === true || (null == x ? true : x.current) === true) return;
+            if ((null == D ? true : D.current) === true || (null == x ? true : x.current) === true) return;
             let n = t.altKey;
             n && e.type === h.al.STICKER && !(0, g.gM)(e.sticker.id) && X(e.sticker.id), null == j || j(e, n)
           },
           P = (0, s.throttle)(() => {
-            (null == w ? true : w.current) === true || (null == x ? true : x.current) === true || f || null == L || L(e)
-          }, D),
+            (null == D ? true : D.current) === true || (null == x ? true : x.current) === true || f || null == L || L(e)
+          }, w),
           R = () => {
             e.type === h.al.CREATE_STICKER && (_.default.track(y.rMx.OPEN_MODAL, {
               type: y.jXE.CREATE_STICKER_MODAL,

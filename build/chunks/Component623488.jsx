@@ -93,9 +93,9 @@ function m(e) {
     thumbnailHeight: A = 187,
     descriptionTextVariant: N = "text-sm/normal",
     isDraft: P = false
-  } = e, R = (0, s.hQ)(), D = e => {
+  } = e, R = (0, s.hQ)(), w = e => {
     e.stopPropagation()
-  }, w = (0, r.jsxs)(r.Fragment, {
+  }, D = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p, {
       showDraftBadge: P,
       hidePurchaseToUnlockBadge: true,
@@ -149,7 +149,7 @@ function m(e) {
         children: b
       }), (0, r.jsx)("div", {
         className: f.productActionButton,
-        onClick: D,
+        onClick: w,
         children: h
       })]
     })]
@@ -157,7 +157,7 @@ function m(e) {
   return null == y ? (0, r.jsx)("article", {
     className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground),
     "aria-labelledby": R,
-    children: w
+    children: D
   }) : (0, r.jsx)("div", {
     style: {
       width: T,
@@ -170,7 +170,7 @@ function m(e) {
       }),
       className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground, f.cardClickableContainer),
       onClick: y,
-      children: w
+      children: D
     })
   })
 }

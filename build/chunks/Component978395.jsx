@@ -73,7 +73,7 @@ function L(e) {
       pronouns: null == L ? true : L.pronouns,
       tags: (0, r.jsx)(_.Z, {
         displayProfile: L,
-        themeType: D.l.POPOUT,
+        themeType: w.l.POPOUT,
         onClose: G
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -109,7 +109,7 @@ function L(e) {
     }), t.isProvisional ? (0, r.jsx)(S.Z.Overlay, {
       className: x.card,
       children: (0, r.jsx)(y.Z, {
-        heading: w.intl.string(w.t.Iyka0U),
+        heading: D.intl.string(D.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY

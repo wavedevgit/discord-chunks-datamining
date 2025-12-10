@@ -19,7 +19,7 @@ require.d(exports, {
   wj: () => y,
   xN: () => g,
   xn: () => p,
-  zG: () => D
+  zG: () => w
 }), require("./388685.js");
 var Chunk991998 = require("./991998.js"),
   Chunk551910 = require("./551910.js"),
@@ -152,7 +152,7 @@ function R(e) {
   return n.assignmentMethod === i.j.TIERED && n.rewards.length > 0 && n.rewards.every(e => e.type === o.w.REWARD_CODE)
 }
 
-function D(e) {
+function w(e) {
   let t = e.rewardsConfig.platforms;
   return t.length > 0 ? t[0] : s.y$.CROSS_PLATFORM
 }

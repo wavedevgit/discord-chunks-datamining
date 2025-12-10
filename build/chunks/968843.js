@@ -26,9 +26,9 @@ require.d(exports, {
   bA: () => em,
   e5: () => ep,
   eN: () => eh,
-  fN: () => eD,
+  fN: () => ew,
   iO: () => eP,
-  kJ: () => ew,
+  kJ: () => eD,
   m4: () => e1,
   me: () => eB,
   qI: () => eH,
@@ -487,7 +487,7 @@ function eR(e) {
   return (0, p.Z)(t)
 }
 
-function eD(e) {
+function ew(e) {
   let t = (0, c.e7)([N.Z], () => N.Z.quests),
     n = eR(Array.from(t.values())),
     i = r.useMemo(() => {
@@ -497,7 +497,7 @@ function eD(e) {
   return eE(i) ? null : i
 }
 
-function ew(e) {
+function eD(e) {
   return r.useMemo(() => ({
     handleComplete: () => (0, T.Wf)(e),
     handleProgress: t => (0, T.Wf)(e, t),

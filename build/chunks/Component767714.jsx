@@ -92,8 +92,8 @@ let y = function(e) {
     confirmationFooter: N,
     color: P,
     iconColor: R = "currentColor"
-  } = e, D = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]);
-  let w = (0, o.e7)([c.Z], () => c.Z.isFocused()),
+  } = e, w = E(e, ["subscriptionTier", "onClick", "size", "className", "textOptions", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "shinyButtonClassName", "showGradient", "confirmationFooter", "color", "iconColor"]);
+  let D = (0, o.e7)([c.Z], () => c.Z.isFocused()),
     x = (0, d.Z)({
       subscriptionTier: t,
       buttonTextOverride: null == h ? true : h.textOverride,
@@ -128,9 +128,9 @@ let y = function(e) {
             [p.tier2Gradient]: A && t === f.Si.TIER_2,
             [p.tier1Gradient]: A && t === f.Si.TIER_1
           }, _),
-          buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? p.brandShine : true,
-          pauseAnimation: !w || I
-        }, D, e), {
+          buttonShineClassName: "buttonShineClassName" in w ? w.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? p.brandShine : true,
+          pauseAnimation: !D || I
+        }, w, e), {
           children: [S && (0, r.jsx)(l.SrA, {
             size: "md",
             color: R,

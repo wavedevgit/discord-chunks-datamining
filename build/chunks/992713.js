@@ -2,7 +2,7 @@
 /** chunk id: 992713, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js"), require("./642613.js");
 var Chunk108131 = require("./108131.js"),
   i = require.n(Chunk108131),
@@ -131,4 +131,4 @@ function R(e, t) {
     stickers: i
   })
 }
-let D = new y
+let w = new y

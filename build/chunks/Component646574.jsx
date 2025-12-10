@@ -34,7 +34,7 @@ function O(e) {
     id: a = "burst-reaction-toggle-button"
   } = e, O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), v = _.default.getCurrentUser(), S = null == v || (0, m.I5)(v) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, T] = (0, p.US)(S), [C, A] = i.useState(false), [N, P] = (0, d.q_F)(() => ({})), R = (0, s.animated)(d.Pt5);
 
-  function D() {
+  function w() {
     P({
       from: {
         rotate: t ? "360deg" : "0deg"
@@ -49,12 +49,12 @@ function O(e) {
     let e = I === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
     e && (T(h.L.DISMISS), setTimeout(() => A(e), 200))
   }, [I, T]);
-  let w = C ? g.intl.string(g.t["Osi/uy"]) : t ? g.intl.string(g.t["5cRA/b"]) : g.intl.string(g.t.buV4av),
+  let D = C ? g.intl.string(g.t["Osi/uy"]) : t ? g.intl.string(g.t["5cRA/b"]) : g.intl.string(g.t.buV4av),
     x = C ? g.intl.string(g.t.ORK94p) : true;
   return (0, r.jsx)(u.i, {
     position: "top",
     title: x,
-    body: w,
+    body: D,
     asset: (0, r.jsx)(d.SrA, {
       size: "md",
       color: "currentColor"
@@ -62,11 +62,11 @@ function O(e) {
     assetSize: 20,
     forceOpen: C,
     children: (0, r.jsxs)("div", {
-      "aria-label": w,
+      "aria-label": D,
       children: [(0, r.jsx)("input", {
         className: E.visuallyHidden,
         checked: t,
-        onChange: D,
+        onChange: w,
         id: a,
         type: "checkbox"
       }), (0, r.jsxs)("label", {

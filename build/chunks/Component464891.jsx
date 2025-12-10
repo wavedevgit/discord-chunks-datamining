@@ -181,7 +181,7 @@ let et = Chunk473749.memo(function(e) {
     }
   }, "role-icon-children") : 2 === A ? (0, r.jsx)(v.Z, X(q({}, l), {
     className: W.roleIcon
-  }), "role-icon-children") : null, [A, l, C]), P = (0, c.e7)([w.default], () => w.default.getCurrentUser()), D = i.useMemo(() => {
+  }), "role-icon-children") : null, [A, l, C]), P = (0, c.e7)([D.default], () => D.default.getCurrentUser()), w = i.useMemo(() => {
     let e = [],
       n = j.ZP.isPremium(t.author),
       i = j.ZP.isPremium(P),
@@ -213,7 +213,7 @@ let et = Chunk473749.memo(function(e) {
       onPopoutRequestClose: E,
       decorations: {
         [U.a.SYSTEM_TAG]: I,
-        [U.a.BADGES]: D
+        [U.a.BADGES]: w
       },
       previewGuildId: o,
       preview: b,
@@ -281,9 +281,9 @@ function er(e) {
     onClickAvatar: v,
     onPopoutRequestClose: S,
     showAvatarPopout: I
-  } = o, A = i.useRef(null), [R, D] = i.useState(false), {
+  } = o, A = i.useRef(null), [R, w] = i.useState(false), {
     analyticsLocations: j
-  } = (0, p.ZP)(f.Z.AVATAR), M = (0, c.e7)([w.default], () => w.default.getCurrentUser()), k = (0, c.e7)([P.ZP], () => {
+  } = (0, p.ZP)(f.Z.AVATAR), M = (0, c.e7)([D.default], () => D.default.getCurrentUser()), k = (0, c.e7)([P.ZP], () => {
     var e;
     return null != (e = o.displayCompactAvatars) ? e : P.ZP.displayCompactAvatars
   }), U = (0, V.Z)(m), G = g ? J : $, {
@@ -321,7 +321,7 @@ function er(e) {
     }, false, G) : F
   }, [K, m.author.avatar, m.author.id, m.author.discriminator, null == (n = m.application) ? true : n.icon, null == (a = m.application) ? true : a.id, m.webhookId, F, G, h.guildMemberAvatar]);
   if (i.useEffect(() => {
-      if (null != E) return L.S.subscribeKeyed(H.LPv.ANIMATE_CHAT_AVATAR, "".concat(E, ":").concat(m.author.id), D), () => void L.S.unsubscribeKeyed(H.LPv.ANIMATE_CHAT_AVATAR, "".concat(E, ":").concat(m.author.id), D)
+      if (null != E) return L.S.subscribeKeyed(H.LPv.ANIMATE_CHAT_AVATAR, "".concat(E, ":").concat(m.author.id), w), () => void L.S.unsubscribeKeyed(H.LPv.ANIMATE_CHAT_AVATAR, "".concat(E, ":").concat(m.author.id), w)
     }, [m.author.id, E]), !g || k) return null != u && null != I ? (0, r.jsx)(p.Gt, {
     value: j,
     children: (0, r.jsx)(N.Z, {
@@ -461,15 +461,15 @@ let es = Chunk473749.memo(function(e) {
       className: b,
       channel: y,
       preview: v
-    } = e, I = i.useMemo(() => null != s ? e => s(e, t) : true, [s, t]), [, T] = (0, h.ZP)(t.author.id, e.guildId), C = (0, c.e7)([D.Z, R.Z], () => {
+    } = e, I = i.useMemo(() => null != s ? e => s(e, t) : true, [s, t]), [, T] = (0, h.ZP)(t.author.id, e.guildId), C = (0, c.e7)([w.Z, R.Z], () => {
       let n = R.Z.getGuild(e.guildId);
-      return null != t.author && null != n && D.Z.canManageUser(H.Plq.MODERATE_MEMBERS, t.author, n)
+      return null != t.author && null != n && w.Z.canManageUser(H.Plq.MODERATE_MEMBERS, t.author, n)
     }, [t.author, e.guildId]), A = T && C, N = er({
       props: e,
       guildId: e.guildId,
       handleRenderPopout: I,
       showCommunicationDisabledStyles: A
-    }), w = (0, c.e7)([P.ZP], () => {
+    }), D = (0, c.e7)([P.ZP], () => {
       var t;
       return null != (t = e.displayCompactAvatars) ? t : P.ZP.displayCompactAvatars
     }), x = i.useMemo(() => (0, F.b)({
@@ -478,7 +478,7 @@ let es = Chunk473749.memo(function(e) {
       user: null == t ? true : t.author,
       compact: a,
       isRepliedMessage: false
-    }), [t, y, a]), L = (0, c.e7)([R.Z], () => eo(a, w, p, R.Z.getGuild(e.guildId)), [a, w, p, e.guildId]), j = i.useMemo(() => {
+    }), [t, y, a]), L = (0, c.e7)([R.Z], () => eo(a, D, p, R.Z.getGuild(e.guildId)), [a, D, p, e.guildId]), j = i.useMemo(() => {
       let e = [];
       return (0, l.yE)(t.flags, H.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(S.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(E.Z, {
         message: t

@@ -108,8 +108,8 @@ function S(e) {
     onNext: P,
     onPaymentSourceAdd: R
   } = e, {
-    application: D,
-    selectedPlan: w,
+    application: w,
+    selectedPlan: D,
     hasAcceptedTerms: x,
     purchaseType: L,
     paymentSourceId: j,
@@ -118,7 +118,7 @@ function S(e) {
     hasPaymentSources: U
   } = (0, u.JL)(), G = O({
     purchaseType: L,
-    plan: w,
+    plan: D,
     premiumSubscription: g,
     isGift: b,
     planGroup: S,
@@ -158,7 +158,7 @@ function S(e) {
       disabled: true
     }))
   });
-  if ((0, o.yE)(null != (t = null == D ? true : D.flags) ? t : 0, _.udG.EMBEDDED) && k === l.O.LOADING) return (0, r.jsx)(s.aML, {
+  if ((0, o.yE)(null != (t = null == w ? true : w.flags) ? t : 0, _.udG.EMBEDDED) && k === l.O.LOADING) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: h.intl.string(h.t.cjA5tj),
     children: e => (0, r.jsx)(s.Button, y(E({

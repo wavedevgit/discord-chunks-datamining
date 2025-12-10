@@ -68,7 +68,7 @@ function I(e) {
         let n = r.query(e);
         g.set(e, n), n > E && (E = n), t = true
       }
-  v(g, p), t && w.emitChange()
+  v(g, p), t && D.emitChange()
 }
 
 function T() {
@@ -111,7 +111,7 @@ let P = e => {
     } = e;
     return N([t])
   };
-class D extends(i = Chunk442837.ZP.PersistedStore) {
+class w extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(s.Z), null != e) {
       var t;
@@ -145,10 +145,10 @@ class D extends(i = Chunk442837.ZP.PersistedStore) {
     return null != t && t > h
   }
 }
-d(D, "displayName", "WordFrequencyStore"), d(D, "persistKey", "WordFrequencyStore");
-let w = new D(Chunk570140.Z, {
+d(w, "displayName", "WordFrequencyStore"), d(w, "persistKey", "WordFrequencyStore");
+let D = new w(Chunk570140.Z, {
     LOAD_MESSAGES_SUCCESS: P,
     MESSAGE_CREATE: R,
     DEV_TOOLS_WORD_FREQUENCY_RESET: A
   }),
-  x = w
+  x = D

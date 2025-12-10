@@ -2,7 +2,7 @@
 /** chunk id: 431, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js"), require("./825670.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -132,7 +132,7 @@ function R() {
   }
   returnfalse
 }
-class D extends(r = Chunk442837.ZP.PersistedStore) {
+class w extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     b = null != e ? e : E, this.waitFor(c.Z, o.Z, d.Z, l.default), this.syncWith([l.default], A), this.syncWith([d.Z], N), this.syncWith([o.Z], R)
   }
@@ -210,7 +210,7 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
     return b.lastFetchSuccessful
   }
 }
-p(D, "displayName", "UserOfferStore"), p(D, "persistKey", "UserOfferStore"), p(D, "migrations", [e => {
+p(w, "displayName", "UserOfferStore"), p(w, "persistKey", "UserOfferStore"), p(w, "migrations", [e => {
   let t = null == e ? true : e.userDiscounts;
   if (null != t) return h(_({}, e), {
     userDiscountOffers: t
@@ -222,7 +222,7 @@ p(D, "displayName", "UserOfferStore"), p(D, "persistKey", "UserOfferStore"), p(D
     isFetching: false
   }) : e
 }]);
-let w = new D(Chunk570140.Z, {
+let D = new w(Chunk570140.Z, {
   BILLING_USER_OFFER_FETCH_START: y,
   BILLING_USER_TRIAL_OFFER_FETCH_SUCCESS: O,
   BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS: I,

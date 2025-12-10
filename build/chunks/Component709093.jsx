@@ -85,8 +85,8 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
       showTrialBadge: b = false,
       showDiscountBadge: y = false,
       isPremiumGroupPurchase: C = false
-    } = e, A = g === p.PremiumTypes.TIER_2, N = (0, c.Fv)(E), P = (0, d.N)(), R = null == P || null == (t = P.discount) ? true : t.amount, D = A ? v : O, {
-      step: w,
+    } = e, A = g === p.PremiumTypes.TIER_2, N = (0, c.Fv)(E), P = (0, d.N)(), R = null == P || null == (t = P.discount) ? true : t.amount, w = A ? v : O, {
+      step: D,
       breadcrumbs: x,
       startedPaymentFlowWithPaymentSourcesRef: L,
       isDisplayingWowMomentConfirmation: j
@@ -107,10 +107,10 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
         let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
           n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
         return !E || E && (t || n)
-      })).find(e => e.id === w),
+      })).find(e => e.id === D),
       U = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
-      G = null != U && null != w,
-      Z = N && G && w === l.h8.REVIEW,
+      G = null != U && null != D,
+      Z = N && G && D === l.h8.REVIEW,
       B = A ? "nitro-pink" : "nitro-green",
       F = T(A, C);
     return j ? (0, r.jsx)("div", {
@@ -134,7 +134,7 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
           onClick: m,
           className: h.closeButtonPosition
         }), (0, r.jsx)("img", {
-          src: D,
+          src: w,
           alt: "",
           className: Z ? h.bigWumpus : h.wumpus
         }), (0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
       }), G && (0, r.jsx)(S, {
         isOneStepCheckout: N,
         headerText: U,
-        step: w,
+        step: D,
         filteredBreadcrumbs: M
       }), Z && (0, r.jsx)("div", {
         className: h.bodyGradientContainer,

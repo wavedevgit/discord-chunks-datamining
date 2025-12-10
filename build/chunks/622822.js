@@ -15,7 +15,7 @@ require.d(exports, {
   bN: () => P,
   dl: () => k,
   ft: () => q,
-  hO: () => D,
+  hO: () => w,
   kH: () => G,
   qF: () => K,
   xi: () => $,
@@ -98,11 +98,11 @@ function R(e) {
   return A.includes(e.nsfwLevel)
 }
 
-function D(e) {
-  return null != e && w(p.Z.getGuild(e))
+function w(e) {
+  return null != e && D(p.Z.getGuild(e))
 }
 
-function w(e) {
+function D(e) {
   let t = (0, o.u)("age_verification_utils"),
     n = (0, s.yo)();
   return t && n && (null == e ? true : e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
@@ -250,7 +250,7 @@ let B = () => {
   Y = e => !!H(e) && ((0, g.mN)(E.L0.NSFW_VOICE_CHANNEL), true);
 
 function W(e, t, n) {
-  if (D(e)) return void(0, g.mN)(E.L0.ACCESS_LARGE_GUILD_UNDERAGE);
+  if (w(e)) return void(0, g.mN)(E.L0.ACCESS_LARGE_GUILD_UNDERAGE);
   if (F(e)) {
     let e = null != n && N.has(n) ? n : E.L0.NSFW_SERVER;
     (0, g.mN)(e);

@@ -39,7 +39,7 @@ let I = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
         className: Chunk53179.keybindContainer,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           defaultValue: module,
-          onChange: t => r.Z.setMode(S.pM4.PUSH_TO_TALK, {
+          onChange: t => r.Z.setMode(g.pM4.PUSH_TO_TALK, {
             shortcut: t
           })
         })

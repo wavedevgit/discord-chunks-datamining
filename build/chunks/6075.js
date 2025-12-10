@@ -39,18 +39,18 @@ let A = {
   N = Chunk890742.Z;
 
 function P(e, t = {}) {
-  return R(e) ? (t.async = true, D(e, t).then(e => Z(e, t))) : U(e) ? (t.async = true, G(e).then(e => Z(e, t))) : Z(e, t)
+  return R(e) ? (t.async = true, w(e, t).then(e => Z(e, t))) : U(e) ? (t.async = true, G(e).then(e => Z(e, t))) : Z(e, t)
 }
 
 function R(e) {
   return "string" == typeof e
 }
 
-function D(e, t) {
-  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? w(e, t) : x(e, t) : j(e) ? Promise.resolve((0, r.u0)(e)) : M(e, t)
+function w(e, t) {
+  return /^\w+:\/\//.test(e) ? "undefined" != typeof fetch ? D(e, t) : x(e, t) : j(e) ? Promise.resolve((0, r.u0)(e)) : M(e, t)
 }
 
-function w(e, {
+function D(e, {
   length: t
 } = {}) {
   let n = {
@@ -167,8 +167,8 @@ function V(e, {
     {
       fileType: P,
       fileDataOffset: R,
-      jfifDataOffset: D,
-      tiffHeaderOffset: w,
+      jfifDataOffset: w,
+      tiffHeaderOffset: D,
       iptcDataOffset: x,
       xmpChunks: L,
       iccChunks: j,
@@ -184,17 +184,17 @@ function V(e, {
     let n = u.Z.read(e, R);
     t ? A.file = n : A = (0, r.wB)({}, A, n)
   }
-  if (a.Z.USE_JPEG && a.Z.USE_JFIF && Y(D)) {
+  if (a.Z.USE_JPEG && a.Z.USE_JFIF && Y(w)) {
     C = true;
-    let n = d.Z.read(e, D);
+    let n = d.Z.read(e, w);
     t ? A.jfif = n : A = (0, r.wB)({}, A, n)
   }
-  if (a.Z.USE_EXIF && W(w)) {
+  if (a.Z.USE_EXIF && W(D)) {
     C = true;
     let {
       tags: n,
       byteOrder: s
-    } = l.Z.read(e, w, i);
+    } = l.Z.read(e, D, i);
     if (n.Thumbnail && (A.Thumbnail = n.Thumbnail, delete n.Thumbnail), t ? (A.exif = n, K(A)) : A = (0, r.wB)({}, A, n), a.Z.USE_TIFF && a.Z.USE_IPTC && n["IPTC-NAA"] && !z(x)) {
       let e = f.Z.read(n["IPTC-NAA"].value, 0, i);
       t ? A.iptc = e : A = (0, r.wB)({}, A, e)
@@ -218,10 +218,10 @@ function V(e, {
     }
     if (a.Z.USE_MAKER_NOTES && n.MakerNote) {
       if (X(n)) {
-        let a = h.Z.read(e, w, n.MakerNote.__offset, s, i);
+        let a = h.Z.read(e, D, n.MakerNote.__offset, s, i);
         t ? A.makerNotes = a : A = (0, r.wB)({}, A, a)
       } else if (J(n)) {
-        let a = g.Z.read(e, w, n.MakerNote.__offset, i);
+        let a = g.Z.read(e, D, n.MakerNote.__offset, i);
         t ? A.makerNotes = a : A = (0, r.wB)({}, A, a)
       }
     }
@@ -277,7 +277,7 @@ function V(e, {
   }
   let F = I.Z.get(A, t);
   F && (t ? A.composite = F : A = (0, r.wB)({}, A, F));
-  let ea = (a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_EXIF && a.Z.USE_THUMBNAIL && S.Z.get(e, A.Thumbnail, w);
+  let ea = (a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_EXIF && a.Z.USE_THUMBNAIL && S.Z.get(e, A.Thumbnail, D);
   if (ea ? (C = true, A.Thumbnail = ea) : delete A.Thumbnail, P && (t ? (A.file || (A.file = {}), A.file.FileType = P) : A.FileType = P, C = true), !C) throw new T.Z.MetadataMissingError;
   if (n) return Promise.all(N).then(() => A);
   return A;

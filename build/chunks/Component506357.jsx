@@ -69,11 +69,11 @@ function T(e) {
   } = e, T = (0, a.e7)([f.Z], () => f.Z.getGuildId()), C = (0, a.e7)([d.Z], () => null != T ? d.Z.getChannelId(T) : null, [T]), A = null != T ? T : null, N = (0, a.e7)([u.Z], () => null != A ? u.Z.getGuild(A) : null, [A]), {
     shouldShowIncidentActions: P,
     incidentData: R,
-    isUnderLockdown: D
-  } = (0, _.mI)(A), w = (0, l.n2)(null != (t = null == N ? true : N.id) ? t : g.lds), x = i.useCallback(() => null != N && (0, c._X)(N.id), [N]);
+    isUnderLockdown: w
+  } = (0, _.mI)(A), D = (0, l.n2)(null != (t = null == N ? true : N.id) ? t : g.lds), x = i.useCallback(() => null != N && (0, c._X)(N.id), [N]);
   if (null == N || null == R || !P) return null;
   let L = e => {
-      if (e && w && C !== E.oC.MEMBER_SAFETY && x()) return void p.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
+      if (e && D && C !== E.oC.MEMBER_SAFETY && x()) return void p.default.track(g.rMx.APP_NOTICE_PRIMARY_CTA_OPENED, {
         notice_type: g.kVF.GUILD_RAID_NOTIFICATION,
         guild_id: N.id
       });
@@ -97,7 +97,7 @@ function T(e) {
       size: s.Z.Sizes.MINI
     }),
     M = (0, h.OY)(R, N.name);
-  if (null != (null != (O = R.dmsDisabledUntil) ? O : R.invitesDisabledUntil) && D) return (0, r.jsxs)(o.qXd, {
+  if (null != (null != (O = R.dmsDisabledUntil) ? O : R.invitesDisabledUntil) && w) return (0, r.jsxs)(o.qXd, {
     className: y.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
@@ -124,7 +124,7 @@ function T(e) {
     }) : b.intl.formatToPlainString(b.t.W87xDE, {
       guildName: N.name
     }),
-    U = w && C === E.oC.MEMBER_SAFETY;
+    U = D && C === E.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
     className: y.notice,
     color: o.DM8.WARNING,

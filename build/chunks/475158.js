@@ -54,7 +54,7 @@ function u(e) {
     N = C.styles,
     P = C.forceUpdate,
     R = C.update,
-    D = r.useMemo(function() {
+    w = r.useMemo(function() {
       return {
         ref: O,
         style: N.popper,
@@ -69,5 +69,5 @@ function u(e) {
         update: R || l
       }
     }, [O, I, n, A, N, R, P]);
-  return (0, a.$p)(g)(D)
+  return (0, a.$p)(g)(w)
 }

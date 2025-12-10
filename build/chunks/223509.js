@@ -27,8 +27,8 @@ var r, i, Chunk754793 = require("./754793.js"),
   N = 5,
   P = 6,
   R = 7,
-  D = 8,
-  w = 9,
+  w = 8,
+  D = 9,
   x = 10,
   L = 11,
   j = 12,
@@ -190,16 +190,16 @@ function e_(e, t) {
         do eO = r[et + eu++], n.head && eO && n.length < 65536 && (n.head.name += String.fromCharCode(eO)); while (eO && eu < er);
         if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, eO) break i
       } else n.head && (n.head.name = null);
-      n.length = 0, n.mode = D;
-    case D:
+      n.length = 0, n.mode = w;
+    case w:
       if (4096 & n.flags) {
         if (0 === er) break i;
         eu = 0;
         do eO = r[et + eu++], n.head && eO && n.length < 65536 && (n.head.comment += String.fromCharCode(eO)); while (eO && eu < er);
         if (512 & n.flags && (n.check = s(n.check, r, eu, et)), er -= eu, et += eu, eO) break i
       } else n.head && (n.head.comment = null);
-      n.mode = w;
-    case w:
+      n.mode = D;
+    case D:
       if (512 & n.flags) {
         for (; es < 16;) {
           if (0 === er) break i;

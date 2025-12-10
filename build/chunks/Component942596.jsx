@@ -134,7 +134,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     } : module
   }
   getTypeClass(e, t) {
-    return (0, D.l)(F, e, this.props.type, t)
+    return (0, w.l)(F, e, this.props.type, t)
   }
   isStreamerOnTypeActivityFeed() {
     return (0, Chunk420660.Z)(this.activity) && "ActivityFeed" === this.props.type
@@ -168,7 +168,7 @@ class $ extends(r = Chunk473749.PureComponent) {
         });
         break;
       case Z.IIU.PLAYING:
-        t = (0, w.Z)(l);
+        t = (0, D.Z)(l);
         break;
       case Z.IIU.COMPETING:
         t = B.intl.formatToPlainString(B.t.SQCo6D, {
@@ -188,7 +188,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     return (null == l ? true : l.type) === Z.IIU.HANG_STATUS && (t = B.intl.string(B.t["74vS/x"])), (0, i.jsxs)("div", {
       className: F.headerContainer,
       children: [(0, i.jsx)(p.Heading, {
-        className: s()((0, D.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
+        className: s()((0, w.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
         variant: a ? "text-xs/semibold" : "eyebrow",
         children: (0, i.jsx)(d.Z, {
           children: t
@@ -348,7 +348,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     }) : (0, N.dS)(e) && (u = e.name)), null == u) ? null : (0, i.jsx)(p.Text, {
       title: c,
       variant: "text-sm/semibold",
-      className: s()((0, D.l)(F, "name", t.bot ? "wrap" : "normal")),
+      className: s()((0, w.l)(F, "name", t.bot ? "wrap" : "normal")),
       children: u
     })
   }

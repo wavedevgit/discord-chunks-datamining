@@ -81,11 +81,11 @@ function R(e) {
   }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = false
 }
 
-function D() {
+function w() {
   O = true
 }
 
-function w() {
+function D() {
   v = true
 }
 
@@ -133,8 +133,8 @@ let k = new M(Chunk570140.Z, {
   INSTANT_INVITE_CREATE_SUCCESS: T,
   INSTANT_INVITE_CREATE_FAILURE: C,
   INSTANT_INVITE_REVOKE_SUCCESS: A,
-  FRIEND_INVITE_REVOKE_REQUEST: D,
-  FRIEND_INVITE_CREATE_REQUEST: w,
+  FRIEND_INVITE_REVOKE_REQUEST: w,
+  FRIEND_INVITE_CREATE_REQUEST: D,
   FRIEND_INVITES_FETCH_REQUEST: x,
   FRIEND_INVITES_FETCH_RESPONSE: L,
   INSTANT_INVITE_CLEAR: j

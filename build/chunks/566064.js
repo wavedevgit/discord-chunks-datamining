@@ -68,17 +68,17 @@ function f(e) {
     }
   }));
   r.useEffect(() => () => R.clean(), [R]);
-  let D = r.useCallback(e => {
+  let w = r.useCallback(e => {
       if (!v.current || !y) returnfalse;
       e.focus()
     }, [y]),
-    w = r.useCallback((e, n) => {
+    D = r.useCallback((e, n) => {
       let r = c(t, e, n);
       (null != m ? m(e, n, r) : Promise.resolve()).then(() => {
         let e = u(r);
-        null != e ? (D(e), A(false)) : requestAnimationFrame(() => A(true))
+        null != e ? (w(e), A(false)) : requestAnimationFrame(() => A(true))
       })
-    }, [t, m, D]),
+    }, [t, m, w]),
     x = r.useCallback(function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
         [n, r] = null != h ? h(f, p) : [f, p];
@@ -88,25 +88,25 @@ function f(e) {
           y: r
         }), !e)) return void P(true);
       let a = u(c(t, n, r));
-      null != a && (P(true), D(a))
-    }, [g, f, p, h, t, D]),
+      null != a && (P(true), w(a))
+    }, [g, f, p, h, t, w]),
     [L, j] = r.useState(false);
   r.useEffect(() => {
     if (!L || !I) return;
     j(false);
     let e = u(c(t, f, p));
-    if (null != e) return void D(e);
+    if (null != e) return void w(e);
     T(false);
     let n = u(c(t));
-    null != n && D(n)
-  }, [t, L, I, D, f, p]);
+    null != n && w(n)
+  }, [t, L, I, w, f, p]);
   let M = r.useCallback(e => {
     v.current && null == e && j(true)
   }, []);
   r.useEffect(() => {
-    I && C && null != S && (D(S), A(false))
+    I && C && null != S && (w(S), A(false))
   }, [C, S]), r.useEffect(() => {
-    I && (N || w(f, p), P(false))
+    I && (N || D(f, p), P(false))
   }, [f, p]);
   let k = r.useCallback(e => {
       if (!v.current) return;
@@ -135,7 +135,7 @@ function f(e) {
           }), null != _ ? _(f, p, e) : null != S && S.click()
       }
     }, [x, g, y, S, _, f, p]),
-    U = r.useCallback(e => e.currentTarget !== e.target ? (I || (T(true), P(true)), false) : I ? (x(false), false) : void(E && null != S ? w(f, p) : x(true)), [I, E, S, x, w, f, p]),
+    U = r.useCallback(e => e.currentTarget !== e.target ? (I || (T(true), P(true)), false) : I ? (x(false), false) : void(E && null != S ? D(f, p) : x(true)), [I, E, S, x, D, f, p]),
     G = r.useCallback(e => {
       if (e.target !== e.currentTarget) {
         if (e.currentTarget.contains(e.relatedTarget)) returnfalse;

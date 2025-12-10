@@ -410,8 +410,8 @@ class y extends Chunk47770.Z {
         pliCount: N,
         qpSum: P,
         pauseCount: R,
-        freezeCount: D,
-        totalPausesDuration: w,
+        freezeCount: w,
+        totalPausesDuration: D,
         totalFreezesDuration: x,
         totalFramesDuration: L,
         keyframes: j,
@@ -429,7 +429,7 @@ class y extends Chunk47770.Z {
         qualitySizeMismatches: K
       } = e.aggregatedProperties,
       z = (null != U ? U : 0) - (null != (t = e.cryptorFailureBeforeSuccessCount) ? t : 0);
-    return e instanceof p.nt ? (b.sender_freeze_count = D, b.sender_total_freezes_duration = x, b.sender_total_frames_duration = L) : (b.receiver_freeze_count = D, b.receiver_total_freezes_duration = x, b.receiver_total_frames_duration = L, b.receiver_pause_count = R, b.receiver_total_pauses_duration = w), g(m({}, b), {
+    return e instanceof p.nt ? (b.sender_freeze_count = w, b.sender_total_freezes_duration = x, b.sender_total_frames_duration = L) : (b.receiver_freeze_count = w, b.receiver_total_freezes_duration = x, b.receiver_total_frames_duration = L, b.receiver_pause_count = R, b.receiver_total_pauses_duration = D), g(m({}, b), {
       avg_bitrate: i > 0 ? Math.round((null != y ? y : 0) * 8 / i) : 0,
       avg_fps: i > 0 ? Math.round((null != S ? S : 0) / i) : 0,
       num_bytes: y,

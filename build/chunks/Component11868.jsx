@@ -33,19 +33,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk182279 = require("./182279.js");
-let D = (e, t) => n => {
+let w = (e, t) => n => {
     n.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, false), null == t || t(n)
   },
-  w = (e, t) => n => {
+  D = (e, t) => n => {
     let r = _.Z.getChannel(e.channel_id);
     null != r && (n.stopPropagation(), (0, p.Cq)(r), null == t || t(n))
   },
   x = (e, t) => {
     switch (null == e ? true : e.entity_type) {
       case N.WX.STAGE_INSTANCE:
-        return w(e, t);
+        return D(e, t);
       case N.WX.VOICE:
-        return D(e, t)
+        return w(e, t)
     }
     return () => {}
   },

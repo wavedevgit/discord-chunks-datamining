@@ -137,7 +137,7 @@ function B(e) {
         users: K,
         guildId: Y.id,
         channelId: W.id,
-        maxUsers: D.W,
+        maxUsers: w.W,
         size: l.EFr.SIZE_16,
         onClickOverflow: e => {
           null == e || e.stopPropagation(), null == Q || Q({
@@ -150,7 +150,7 @@ function B(e) {
         "aria-label": M.intl.string(M.t["jNqDh/"])
       }), V === j.l.MODAL_V2 && ec()]
     }),
-    el = () => V === j.l.MODAL || V === j.l.MODAL_V2 ? null : (0, r.jsx)(D.Z, {
+    el = () => V === j.l.MODAL || V === j.l.MODAL_V2 ? null : (0, r.jsx)(w.Z, {
       user: t,
       guild: Y,
       channel: W,
@@ -159,7 +159,7 @@ function B(e) {
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: k.actions,
-      children: (0, r.jsx)(w.Z, {
+      children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: Q,
         onClose: F

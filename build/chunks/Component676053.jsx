@@ -90,8 +90,8 @@ function T(e) {
         align: "center"
       },
       badge: R,
-      textLink: D,
-      onWatchVideo: w,
+      textLink: w,
+      onWatchVideo: D,
       onRequestClose: x,
       popoverRef: L,
       position: j
@@ -126,8 +126,8 @@ function T(e) {
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
-      }), null == x || x(), null == w || w()
-    }, [F, w, x]),
+      }), null == x || x(), null == D || D()
+    }, [F, D, x]),
     W = B ? (0, r.jsx)(o.zsu, {
       type: "image",
       src: C
@@ -179,7 +179,7 @@ function T(e) {
         title: O,
         body: I,
         badge: R,
-        textLink: D
+        textLink: w
       }), null != N ? (0, r.jsx)(d.k, {
         actions: [N]
       }) : null]

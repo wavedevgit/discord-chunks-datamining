@@ -31,8 +31,8 @@ let A = 10,
   N = /^\/([a-zA-Z0-9-]+)$/,
   P = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
   R = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
-  D = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
-  w = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
+  w = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
+  D = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/?((about|images|privacy)\/?)?$/,
   x = /^\/(application-directory|discovery\/applications)\/([0-9-]+)\/store\/?([0-9-]+)?\/?$/,
   L = /^\/activities\/([0-9-]+)\/?$/,
   j = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
@@ -96,7 +96,7 @@ function er(e) {
 
 function ei(e) {
   if (null == e) return null;
-  let t = e.match(D);
+  let t = e.match(w);
   return null != t && t.length >= 4 ? {
     guildId: t[1],
     guildEventId: t[2],
@@ -181,7 +181,7 @@ function es(e) {
         t = e.clientId;
       null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== E.x.APPLICATIONS_COMMANDS)) || d(T.g.APP_OAUTH2_LINK, t)
     }
-    let m = null == u ? true : u.match(w);
+    let m = null == u ? true : u.match(D);
     if (null != m) {
       let e = m[2];
       d(T.g.APP_DIRECTORY_PROFILE, e)
@@ -206,8 +206,8 @@ function es(e) {
     null != I && d(T.g.SERVER_SHOP, I[1]);
     let C = null == u ? true : u.match(M);
     null != C && d(T.g.SOCIAL_LAYER_STOREFRONT, "".concat(C[3], "-").concat(null != (o = C[1]) ? o : C[2]));
-    let D = el(e);
-    if (null != D && d(T.g.QUESTS_EMBED, D), "/shop" === u) {
+    let w = el(e);
+    if (null != w && d(T.g.QUESTS_EMBED, w), "/shop" === u) {
       let e = null != r.query ? (0, _.parse)(r.query).tab : null,
         t = null == (s = r.hash) ? true : s.match(Z);
       d(T.g.COLLECTIBLES_SHOP, "".concat(null != e ? e : "", "-").concat(null != (l = null == t ? true : t[1]) ? l : ""))

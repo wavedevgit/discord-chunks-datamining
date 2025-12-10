@@ -79,7 +79,7 @@ function O(e) {
   }), N = "application_id" in O.extra ? O.extra.application_id : null, P = (0, l.Z)({
     id: N,
     label: _.intl.string(_.t["FfCL+6"])
-  }), R = (0, f.dX)(O), D = (0, u.Z)({
+  }), R = (0, f.dX)(O), w = (0, u.Z)({
     location: "ContentPopoutContextMenu",
     applicationId: R && true !== S ? null == (t = O.extra) ? true : t.application_id : true,
     source: c.m1.ActivityCardContextMenu,
@@ -104,11 +104,11 @@ function O(e) {
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(o.kSQ, {
-            children: [C, null != D && (0, r.jsx)(o.sNh, {
+            children: [C, null != w && (0, r.jsx)(o.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGn),
               action: e => {
-                D(e), null == T || T()
+                w(e), null == T || T()
               }
             })]
           }), (0, r.jsxs)(o.kSQ, {

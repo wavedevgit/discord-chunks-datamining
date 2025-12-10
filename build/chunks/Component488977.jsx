@@ -41,7 +41,7 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function w(e, t) {
+function D(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,7 +66,7 @@ function w(e, t) {
 }
 
 function x(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function L(e) {
   let {
     application: a,
     context: R,
-    className: w,
+    className: D,
     sectionName: L
   } = e, j = i.useRef(null), M = (0, l.e7)([S.Z], () => S.Z.entrypoint()), k = (0, I.L1)(a), U = (0, _.Eb)(k), G = (0, f.R)(a.id), Z = (0, l.e7)([E.Z], () => {
     var e;
@@ -99,7 +99,7 @@ function L(e) {
         let e = Y ? (0, p.H)({
           applicationId: a.id,
           referrerId: null == F ? true : F.id
-        }) : (0, p.J)(D({
+        }) : (0, p.J)(w({
           id: a.id
         }, k));
         (0, O.JG)(e, () => (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["L/PwZf"]), c.ToastType.SUCCESS))), y.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
@@ -107,7 +107,7 @@ function L(e) {
           source: M
         })
       },
-      className: o()(P.clickable, w),
+      className: o()(P.clickable, D),
       "aria-label": N.intl.string(N.t.WqhZss),
       children: (0, r.jsx)(c.xPt, {
         size: "sm",
@@ -146,7 +146,7 @@ function L(e) {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == k.customInstallUrl && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, B), (0, v.L)(x(D({}, k), {
+                null == k.customInstallUrl && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, B), (0, v.L)(x(w({}, k), {
                   oauth2Callback: e => {
                     let {
                       location: t
@@ -177,11 +177,11 @@ function L(e) {
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(c.P3F, x(D({
+      children: e => (0, r.jsx)(c.P3F, x(w({
         innerRef: j
       }, e), {
         onClick: e.onClick,
-        className: o()(P.clickable, w),
+        className: o()(P.clickable, D),
         "aria-label": N.intl.string(N.t["UKOtz+"]),
         children: (0, r.jsx)(c.xhG, {
           size: "sm",

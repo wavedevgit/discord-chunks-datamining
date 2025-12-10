@@ -106,7 +106,7 @@ let R = e => {
   return !!(!n || r || i || (null == t ? true : t.isLockedThread()) && !s || (null == t ? true : t.isArchivedThread()) && !l) || !!o
 };
 
-function D(e, t) {
+function w(e, t) {
   var n, r;
   let a = i.useContext(M),
     o = i.useCallback(t => {
@@ -129,7 +129,7 @@ function D(e, t) {
   }
 }
 
-function w(e, t, n, r) {
+function D(e, t, n, r) {
   var o;
   let s = (0, a.e7)([O.Z], () => O.Z.getInteractionComponentState(e.id, n.id)),
     l = (0, a.e7)([u.ZP], () => u.ZP.getInteraction(e), [e]),
@@ -137,7 +137,7 @@ function w(e, t, n, r) {
     {
       error: d,
       validate: p
-    } = D(n, s),
+    } = w(n, s),
     _ = null != (o = e.applicationId) ? o : e.author.id;
   return {
     state: s,
@@ -167,7 +167,7 @@ function x(e, t, n) {
     {
       error: s,
       validate: c
-    } = D(t, r),
+    } = w(t, r),
     u = i.useCallback(n => null == n || (o.Z.dispatch({
       type: "SET_INTERACTION_COMPONENT_STATE",
       rootContainerId: e.customId,
@@ -210,7 +210,7 @@ function k(e) {
     shouldDisableInteractiveComponents: u = false
   } = e, d = i.useMemo(() => {
     if (null != n) return {
-      useComponentState: w.bind(null, n, u),
+      useComponentState: D.bind(null, n, u),
       channelId: n.channel_id,
       containerId: n.id,
       message: n,

@@ -83,11 +83,11 @@ function u(e) {
         (true === d || isNaN(d) || true === n || isNaN(n) || n > d) && R(60)
       }, e)
     }),
-    D = e => {
+    w = e => {
       e.preventDefault()
     },
     {
-      addGlobalListener: w,
+      addGlobalListener: D,
       removeAllGlobalListeners: x
     } = (0, s.x)();
   return {
@@ -106,7 +106,7 @@ function u(e) {
     },
     incrementButtonProps: {
       onPressStart: () => {
-        P(400), w(window, "contextmenu", D)
+        P(400), D(window, "contextmenu", w)
       },
       onPressEnd: () => {
         S(), x()
@@ -116,7 +116,7 @@ function u(e) {
     },
     decrementButtonProps: {
       onPressStart: () => {
-        R(400), w(window, "contextmenu", D)
+        R(400), D(window, "contextmenu", w)
       },
       onPressEnd: () => {
         S(), x()

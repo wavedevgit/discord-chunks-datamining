@@ -196,13 +196,13 @@ let Z = function() {
 
   function B() {
     var e;
-    let t = require.find(e => e.giftCodeBatchId === w.m8 && !e.consumed),
-      i = null != (e = require.filter(e => e.giftCodeBatchId === w.rX && !e.consumed)) ? module : [],
+    let t = require.find(e => e.giftCodeBatchId === D.m8 && !e.consumed),
+      i = null != (e = require.filter(e => e.giftCodeBatchId === D.rX && !e.consumed)) ? module : [],
       [s, c] = l().partition(Chunk473749, e => {
         let {
           subscriptionPlanId: t
         } = e;
-        return t === w.Xh.PREMIUM_YEAR_TIER_2
+        return t === D.Xh.PREMIUM_YEAR_TIER_2
       }),
       d = (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",

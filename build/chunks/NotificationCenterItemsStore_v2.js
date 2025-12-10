@@ -174,7 +174,7 @@ function R(e) {
   y.notifCenterIds.add(t.id), y.notifCenterItems = [t, ...y.notifCenterItems], y.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id))
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t
   } = e;
@@ -182,7 +182,7 @@ function D(e) {
   y.notifCenterIds.delete(t), y.notifCenterItems = y.notifCenterItems.filter(e => e.id !== t)
 }
 
-function w(e, t) {
+function D(e, t) {
   y.notifCenterItems = y.notifCenterItems.map(n => e.includes(n.id) ? b(g({}, n), {
     acked: t
   }) : n).filter(O)
@@ -192,14 +192,14 @@ function x(e) {
   let {
     ids: t
   } = e;
-  w(t, true)
+  D(t, true)
 }
 
 function L(e) {
   let {
     ids: t
   } = e;
-  w(t, false)
+  D(t, false)
 }
 
 function j(e) {
@@ -380,7 +380,7 @@ let z = new K(Chunk570140.Z, {
   NOTIFICATION_CENTER_ITEMS_ACK_FAILURE: L,
   GUILD_SCHEDULED_EVENT_UPDATE: H,
   NOTIFICATION_CENTER_ITEM_CREATE: R,
-  NOTIFICATION_CENTER_ITEM_DELETE: D,
+  NOTIFICATION_CENTER_ITEM_DELETE: w,
   NOTIFICATION_CENTER_ITEM_DELETE_FAILURE: R,
   LOAD_NOTIFICATION_CENTER_ITEMS: I,
   LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: T,

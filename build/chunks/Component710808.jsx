@@ -2,7 +2,7 @@
 /** chunk id: 710808, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W2: () => w,
+  W2: () => D,
   ZP: () => k,
   rT: () => j,
   xI: () => M
@@ -66,12 +66,12 @@ function R(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function w() {
+async function D() {
   let e = await Chunk579806.Z.fileManager.getLogPath();
   Chunk579806.Z.fileManager.showItemInFolder(module)
 }
@@ -93,7 +93,7 @@ function L(e) {
     o = C.intl.formatToPlainString(C.t.ejOT95, {
       errorCode: a
     });
-  (0, c.h7j)(e => (0, r.jsx)(c.VoidConfirmModal, D(P({
+  (0, c.h7j)(e => (0, r.jsx)(c.VoidConfirmModal, w(P({
     header: n,
     confirmButtonColor: l.zx.Colors.BRAND,
     confirmText: C.intl.string(C.t.BddRzS)
@@ -219,7 +219,7 @@ function k() {
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "secondary",
             text: Chunk388032.intl.string(Chunk388032.t.nuPtYi),
-            onClick: w
+            onClick: D
           })]
         })]
       })

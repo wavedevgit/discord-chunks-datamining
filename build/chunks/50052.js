@@ -34,7 +34,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       hideInstantInvites: t
     })
   }),
-  g = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
+  S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.OrqYDP),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -46,7 +46,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       disableSounds: t
     })
   }),
-  S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
+  g = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.sUAbLd),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -78,5 +78,5 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
   E = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
     variant: "separators",
-    buildLayout: () => [c, d, g, S, T]
+    buildLayout: () => [c, d, S, g, T]
   })

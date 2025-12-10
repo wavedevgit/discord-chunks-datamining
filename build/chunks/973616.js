@@ -155,7 +155,7 @@ class h extends m {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, o, s, l, c, d, f, p, _, m, g, E, b, y, O, v, S, I, T, C, A, N, P, R, D, w, x, L, j, M, k, U, G, Z, B, F, V, H, Y, W, K;
+    var t, n, r, i, a, o, s, l, c, d, f, p, _, m, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k, U, G, Z, B, F, V, H, Y, W, K;
     return new h({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -185,8 +185,8 @@ class h extends m {
       maxParticipants: null != (N = e.maxParticipants) ? N : this.maxParticipants,
       tags: null != (P = e.tags) ? P : this.tags,
       embeddedActivityConfig: null != (R = e.embeddedActivityConfig) ? R : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : true,
-      type: null != (D = e.type) ? D : this.type,
-      team: null != (w = e.team) ? w : this.team,
+      type: null != (w = e.type) ? w : this.type,
+      team: null != (D = e.team) ? D : this.team,
       roleConnectionsVerificationUrl: null != (x = e.roleConnectionsVerificationUrl) ? x : this.roleConnectionsVerificationUrl,
       connectionEntrypointUrl: null != (L = e.connectionEntrypointUrl) ? L : this.connectionEntrypointUrl,
       integrationTypesConfig: null != (j = e.integrationTypesConfig) ? j : this.integrationTypesConfig,

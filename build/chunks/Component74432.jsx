@@ -177,10 +177,10 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
   R = e => (0, r.jsx)(P, O(b({}, e), {
     storyType: "joined-payment-address-elements"
   })),
-  D = e => (0, r.jsx)(P, O(b({}, e), {
+  w = e => (0, r.jsx)(P, O(b({}, e), {
     storyType: "stripe-payment-element"
   })),
-  w = e => (0, r.jsx)(P, O(b({}, e), {
+  D = e => (0, r.jsx)(P, O(b({}, e), {
     storyType: "stripe-address-element"
   })),
   x = {
@@ -225,12 +225,12 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
     stories: [{
       name: "Stripe Payment Element",
       id: "stripe-payment-element",
-      component: D,
+      component: w,
       controls: b({}, x)
     }, {
       name: "Stripe Address Element",
       id: "stripe-address-element",
-      component: w,
+      component: D,
       controls: b({}, x)
     }, L]
   }

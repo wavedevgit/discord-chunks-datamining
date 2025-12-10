@@ -163,7 +163,7 @@ function A(e) {
       let t = a.find(t => t.id === e);
       null != _ && _(t)
     }
-  }, D = [...null != d ? [d] : [], ...a, S].map((e, t) => {
+  }, w = [...null != d ? [d] : [], ...a, S].map((e, t) => {
     if (e instanceof p.ZP) {
       let {
         label: t
@@ -179,7 +179,7 @@ function A(e) {
       value: e.value,
       label: e.label
     }
-  }), w = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), x = C(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
+  }), D = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), x = C(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
   if (null == n && null != N && N.length > 0) {
     let e = a.filter(e => N.includes(e.paymentGateway));
     n = 0 === e.length ? v : e[0].id
@@ -191,7 +191,7 @@ function A(e) {
       onClick: m,
       text: g.intl.string(g.t.eQ2bLp)
     }) : (0, r.jsx)(l.y6, {
-      options: D,
+      options: w,
       value: n,
       label: t,
       onChange: R,
@@ -205,9 +205,9 @@ function A(e) {
         let [t] = e;
         return A ? (0, r.jsx)(u.$jN, {
           type: u.RAz.SPINNING_CIRCLE
-        }) : T(null == t.value ? true : w.get(t.value), t, f)
+        }) : T(null == t.value ? true : D.get(t.value), t, f)
       },
-      renderOptionLabel: e => T(null == e.value ? true : w.get(e.value), e, f)
+      renderOptionLabel: e => T(null == e.value ? true : D.get(e.value), e, f)
     }), null != x ? (0, r.jsxs)("div", {
       className: E.paymentSourceWarning,
       children: [(0, r.jsx)(u.Mgn, {

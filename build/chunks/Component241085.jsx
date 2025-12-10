@@ -91,7 +91,7 @@ function R(e) {
   })
 }
 
-function D() {
+function w() {
   return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk975279.mainWrapper, Chunk975279.mainBody),
     children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
@@ -109,7 +109,7 @@ function D() {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     upload: n,
@@ -213,7 +213,7 @@ function x(e) {
     return null == e || e.addEventListener("dragover", k), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", Z), () => {
       null == e || e.removeEventListener("dragover", k), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", Z)
     }
-  }, [k, U, Z]), 1 === a && 1 === L.length) ? (0, r.jsx)(w, {
+  }, [k, U, Z]), 1 === a && 1 === L.length) ? (0, r.jsx)(D, {
     upload: L[0],
     handleRemoveFile: F,
     singleFileInput: true
@@ -223,7 +223,7 @@ function x(e) {
       [P.dropping]: m,
       [P.error]: null != j
     }),
-    children: [v.length >= a ? (0, r.jsx)(D, {}) : (0, r.jsx)(R, {
+    children: [v.length >= a ? (0, r.jsx)(w, {}) : (0, r.jsx)(R, {
       dropping: m,
       fileInputRef: s,
       minValues: n,
@@ -231,7 +231,7 @@ function x(e) {
       guildId: M.guild_id
     }), L.length > 0 && (0, r.jsx)("div", {
       className: P.files,
-      children: L.map(e => (0, r.jsx)(w, {
+      children: L.map(e => (0, r.jsx)(D, {
         upload: e,
         handleRemoveFile: F
       }, e.id))

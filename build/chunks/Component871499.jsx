@@ -99,8 +99,8 @@ function S(e) {
     buttonRef: N,
     grow: P,
     "aria-label": R,
-    look: D,
-    buttonText: w,
+    look: w,
+    buttonText: D,
     size: x,
     color: L
   } = e;
@@ -121,7 +121,7 @@ function S(e) {
         } = e, C = O(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zx, y(E({
           "data-migration-pending": true,
-          look: null != D ? D : l.zx.Looks.BLANK,
+          look: null != w ? w : l.zx.Looks.BLANK,
           size: null != x ? x : l.zx.Sizes.NONE,
           color: L,
           onKeyDown: e => {
@@ -150,7 +150,7 @@ function S(e) {
           },
           disabled: S,
           innerClassName: o()(h.lineHeightReset, {
-            [h.buttonInnerWithText]: null != w
+            [h.buttonInnerWithText]: null != D
           }),
           className: o()({
             [h.active]: I
@@ -163,12 +163,12 @@ function S(e) {
           children: [(0, r.jsx)(b, {
             size: s.Z.md,
             className: o()(m, {
-              [h.controlIcon]: null == w,
+              [h.controlIcon]: null == D,
               [h.themeable]: v,
               [h.active]: I
             }),
             color: g
-          }), w]
+          }), D]
         }))
       }
     })
@@ -214,8 +214,8 @@ function C(e) {
       applyStyles: P = false
     } = e,
     R = O(e, ["ref", "color", "caretColor", "isActive", "className", "iconClassName", "onPopoutClick", "popoutOpen", "popoutDisabled", "isTrayButton", "applyStyles"]);
-  let D = (0, _.Z)(a, l),
-    w = null != s ? s : D,
+  let w = (0, _.Z)(a, l),
+    D = null != s ? s : w,
     x = (0, u.Z)("(max-width: 456px)"),
     L = i.useRef(null),
     j = i.useContext(f.h9);
@@ -230,16 +230,16 @@ function C(e) {
       grow: false,
       onContextMenu: M,
       iconClassName: o()(b, h.centerIcon, k && h.fullRegionIcon),
-      className: o()(x || P ? g : null, l && h.active, h.centerButton, T[D], k && h.fullRegionButton, G && h.attachedButton)
+      className: o()(x || P ? g : null, l && h.active, h.centerButton, T[w], k && h.fullRegionButton, G && h.attachedButton)
     }));
   return x ? Z : (0, r.jsxs)("div", {
     ref: n,
-    className: o()(h.attachedCaretButtonContainer, C && h.popoutOpen, g, U && [h.fullRegionDropdownButton, I[D]]),
+    className: o()(h.attachedCaretButtonContainer, C && h.popoutOpen, g, U && [h.fullRegionDropdownButton, I[w]]),
     children: [Z, null != v ? (0, r.jsx)(p.Z, {
       children: (0, r.jsx)(c.P3F, {
         "aria-label": m.intl.string(m.t.PdRCRg),
         onClick: A ? true : v,
-        className: o()(h.contextMenuNub, N && h.attachedCaret, T[w], C && [h.popoutOpen, h.active], A && h.disabled),
+        className: o()(h.contextMenuNub, N && h.attachedCaret, T[D], C && [h.popoutOpen, h.active], A && h.disabled),
         children: (0, r.jsx)(d.Z, {
           className: o()(h.contextMenuCaret, C && h.open, A && h.disabled)
         })

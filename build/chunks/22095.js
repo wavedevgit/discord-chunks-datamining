@@ -4,7 +4,7 @@
 require.d(exports, {
   AH: () => G,
   Ag: () => q,
-  CS: () => w,
+  CS: () => D,
   EW: () => K,
   Kh: () => ei,
   MG: () => en,
@@ -91,8 +91,8 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = 5;
-async function w(e) {
+let w = 5;
+async function D(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   try {
     let n = (await i.tn.post({
@@ -108,7 +108,7 @@ async function w(e) {
       user_status: n.quest_user_status
     });
     else if (null != n.error_hints_v2 && n.error_hints_v2.length > 0) return {
-      errorHints: n.error_hints_v2.slice(0, D)
+      errorHints: n.error_hints_v2.slice(0, w)
     }
   } catch (r) {
     var n;

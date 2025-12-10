@@ -110,8 +110,8 @@ function R(e) {
     label: A
   } = e, R = C(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
   let {
-    setDevice: D,
-    Icon: w,
+    setDevice: w,
+    Icon: D,
     getCanSetDevice: x,
     getWarningMessage: L,
     getLocation: j
@@ -138,12 +138,12 @@ function R(e) {
     });
     else {
       var n;
-      (null == (n = null == O ? true : O(e)) || n) && D(e, {
+      (null == (n = null == O ? true : O(e)) || n) && w(e, {
         location: Z,
         analyticsLocations: M
       })
     }
-  }, [t, Z, B.length, F.length, M, O, D]);
+  }, [t, Z, B.length, F.length, M, O, w]);
 
   function q(e) {
     let t, i, {
@@ -171,7 +171,7 @@ function R(e) {
       }),
       children: [!I && (0, r.jsx)("div", {
         className: S.deviceIcon,
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(D, {
           size: "custom",
           width: 20,
           height: 20,

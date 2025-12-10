@@ -47,13 +47,13 @@ function E(e, t, n) {
     P = (0, a.H)(t, n),
     R = C["aria-labelledby"] || C.id,
     {
-      locale: D
+      locale: w
     } = (0, m.j)(),
-    w = t.formatValue(D, {
+    D = t.formatValue(w, {
       month: "long"
     }),
-    x = w ? O.format("selectedDateDescription", {
-      date: w
+    x = D ? O.format("selectedDateDescription", {
+      date: D
     }) : "",
     L = (0, l.P)(x),
     j = [L["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ") || true,

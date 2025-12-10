@@ -52,8 +52,8 @@ function Y(e, t, n) {
   let i = null != n ? new URLSearchParams(n) : null;
   null != (r = H[t]) && r.call(H, i) || (0, C.uL)(t)
 }
-let W = e => V.render((0, l.jsx)(w.w, {
-  children: (0, l.jsx)(D.Z, {
+let W = e => V.render((0, l.jsx)(D.w, {
+  children: (0, l.jsx)(w.Z, {
     children: (0, l.jsx)(e, {})
   })
 }));

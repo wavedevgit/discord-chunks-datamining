@@ -43,7 +43,7 @@ function O(e) {
     iconURL: O,
     scrollerRef: v,
     sectionName: S
-  } = e, I = (0, l.ap)((0, u.ZP)()), T = i.useRef(null), C = i.useRef(null), A = i.useRef(null), N = i.useRef(null), P = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), R = (0, d.ZP)("number" == typeof O ? "" : O, null != P ? P : ""), D = i.useMemo(() => {
+  } = e, I = (0, l.ap)((0, u.ZP)()), T = i.useRef(null), C = i.useRef(null), A = i.useRef(null), N = i.useRef(null), P = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), R = (0, d.ZP)("number" == typeof O ? "" : O, null != P ? P : ""), w = i.useMemo(() => {
     var e, t;
     return null != (t = null == (e = (0, f.wh)({
       foreground: o()(R),
@@ -51,13 +51,13 @@ function O(e) {
       ratio: 5,
       saturationFactor: .6
     })) ? true : e.hex()) ? t : R
-  }, [R, I]), w = y(T), x = y(C), L = i.useCallback(() => {
+  }, [R, I]), D = y(T), x = y(C), L = i.useCallback(() => {
     var e, t, n;
     let r = v.current,
       i = T.current,
       a = A.current,
       o = null == N ? true : N.current,
-      l = parseInt(null != (e = null == w ? true : w.height) ? e : ""),
+      l = parseInt(null != (e = null == D ? true : D.height) ? e : ""),
       c = parseInt(null != (t = null == x ? true : x.height) ? t : "");
     if (null != r && null != i && null != a && !isNaN(l) && !isNaN(c)) {
       let e = null != (n = r.scrollTop) ? n : 0,
@@ -66,9 +66,9 @@ function O(e) {
         d = c - l,
         f = (0, s.clamp)(t - u, d + 1, c + g),
         p = E(e, d, f);
-      i.style.filter = "brightness(".concat(b(1, I ? 1.4 : .6, p), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(R, " ").concat((1 - p) * 100, "%, ").concat(D, ")"), a.style.opacity = "".concat(b(0, 1, p)), a.style.transform = "translateY(".concat(b(l / 4, 0, p), "px)"), null != o && (o.style.opacity = "".concat(b(1, 0, p)))
+      i.style.filter = "brightness(".concat(b(1, I ? 1.4 : .6, p), ")"), i.style.backgroundColor = "color-mix(in oklab,".concat(R, " ").concat((1 - p) * 100, "%, ").concat(w, ")"), a.style.opacity = "".concat(b(0, 1, p)), a.style.transform = "translateY(".concat(b(l / 4, 0, p), "px)"), null != o && (o.style.opacity = "".concat(b(1, 0, p)))
     }
-  }, [D, R, null == x ? true : x.height, I, v, null == w ? true : w.height]);
+  }, [w, R, null == x ? true : x.height, I, v, null == D ? true : D.height]);
   return i.useEffect(() => {
     L()
   }, [L, I]), i.useEffect(() => {

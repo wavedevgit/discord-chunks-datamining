@@ -90,14 +90,14 @@ function R() {
   y = false
 }
 
-function D(e) {
+function w(e) {
   let {
     libraryApplications: t
   } = e;
   O = {}, P(t), y = true
 }
 
-function w(e) {
+function D(e) {
   let {
     libraryApplications: t
   } = e;
@@ -230,8 +230,8 @@ class F extends(r = Chunk442837.ZP.Store) {
 _(F, "displayName", "LibraryApplicationStore");
 let V = new F(Chunk570140.Z, {
   LOGOUT: R,
-  LIBRARY_FETCH_SUCCESS: D,
-  SKU_PURCHASE_SUCCESS: w,
+  LIBRARY_FETCH_SUCCESS: w,
+  SKU_PURCHASE_SUCCESS: D,
   LIBRARY_APPLICATION_FLAGS_UPDATE_START: x,
   LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: L,
   LIBRARY_APPLICATION_UPDATE: L,

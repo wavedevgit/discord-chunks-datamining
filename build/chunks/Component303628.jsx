@@ -84,14 +84,14 @@ function P(e, t) {
 }
 let R = [];
 
-function D(e) {
+function w(e) {
   let {
     channelId: t,
     type: n,
     ignoreFile: a,
     smallAttachments: I = false
-  } = e, C = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), P = (0, _.Z)("attachments", l.hy.HORIZONTAL), D = (0, c.e7)([h.Z], () => h.Z.getUploads(t, n.drafts.type)), {
-    isApplicationCommand: w,
+  } = e, C = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), P = (0, _.Z)("attachments", l.hy.HORIZONTAL), w = (0, c.e7)([h.Z], () => h.Z.getUploads(t, n.drafts.type)), {
+    isApplicationCommand: D,
     commandOptions: x,
     commandOptionStates: L
   } = (0, c.cj)([m.Z], () => {
@@ -128,7 +128,7 @@ function D(e) {
     handler: U
   });
   let G = {
-      isApplicationCommand: w,
+      isApplicationCommand: D,
       previousUploadOptions: M,
       uploadOptions: j
     },
@@ -150,8 +150,8 @@ function D(e) {
       }), k(i)
     }
   }, [t, j.length, n]);
-  let B = D.filter(e => e.filename !== a);
-  return !w && 0 === B.length || w && 0 === j.length ? null : (0, r.jsx)(s.bG, {
+  let B = w.filter(e => e.filename !== a);
+  return !D && 0 === B.length || D && 0 === j.length ? null : (0, r.jsx)(s.bG, {
     navigator: P,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
@@ -162,7 +162,7 @@ function D(e) {
           ref: i
         }, a), {
           className: o()(v.channelAttachmentArea, S.scrollbarGhost),
-          children: w ? j.map(e => (0, r.jsx)(b.Z, {
+          children: D ? j.map(e => (0, r.jsx)(b.Z, {
             channelId: t,
             keyboardModeEnabled: C,
             option: e
@@ -180,7 +180,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     channelId: t,
     type: n,
@@ -188,11 +188,11 @@ function w(e) {
     ignoreFile: a,
     smallAttachments: o = false
   } = e;
-  return i ? (0, r.jsx)(D, {
+  return i ? (0, r.jsx)(w, {
     channelId: t,
     type: n,
     ignoreFile: a,
     smallAttachments: o
   }) : null
 }
-let x = Chunk473749.memo(w)
+let x = Chunk473749.memo(D)

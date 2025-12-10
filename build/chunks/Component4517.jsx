@@ -53,7 +53,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -119,7 +119,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
         let {
           default: e
         } = await n.e("76215").then(n.bind(n, 66630));
-        return t => (0, r.jsx)(e, w(R({}, t), {
+        return t => (0, r.jsx)(e, D(R({}, t), {
           sourceAnalyticsLocations: l,
           prompt: a
         }))
@@ -185,7 +185,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       trackUserProfileAction: P
     } = (0, y.KZ)(), R = (0, h.p)({
       location: "CustomStatusBubble"
-    }), D = null != p ? C.Hp : 0, w = C.hT + D, x = C.YF + D, L = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useRef(w), G = i.useRef(x), Z = null != p && null == _, [B, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!Z && S), K = S && B, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), w = null != p ? C.Hp : 0, D = C.hT + w, x = C.YF + w, L = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useRef(D), G = i.useRef(x), Z = null != p && null == _, [B, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!Z && S), K = S && B, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == I || I.onInteractionPopoutTargetRefChange(L)
     }, [I]);
@@ -201,9 +201,9 @@ let M = Chunk473749.forwardRef(function(e, t) {
       let e = M.current.getBoundingClientRect().height,
         t = k.current.getBoundingClientRect().height;
       W(t > e), U.current = e, G.current = t, X({
-        maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? w : x), "px")
+        maxHeight: "".concat(Math.min(V ? U.current : G.current, V ? D : x), "px")
       })
-    }, [K, _, p, X, V, w, x]);
+    }, [K, _, p, X, V, D, x]);
     let J = e => {
         Y && (e ? X({
           maxHeight: "".concat(Math.min(G.current, x), "px"),
@@ -213,7 +213,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
             duration: z ? 0 : C.R1
           }
         }) : X({
-          maxHeight: "".concat(Math.min(U.current, w), "px"),
+          maxHeight: "".concat(Math.min(U.current, D), "px"),
           delay: 0
         }), z ? H(!e) : q.start(e ? C.zS : C.Sq, () => H(!e)))
       },
@@ -332,7 +332,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       onCloseProfile: o
     } = e, s = x(e, ["emoji", "text", "onCloseProfile"]);
     let [l, c] = i.useState(false);
-    return (0, r.jsx)(k, w(R({}, s), {
+    return (0, r.jsx)(k, D(R({}, s), {
       ref: t,
       emoji: n,
       text: a,
@@ -367,8 +367,8 @@ function G(e) {
   }, [f, p, t, n]);
   let [C, A] = i.useState(false), P = i.useCallback(e => {
     (e || !h) && A(e)
-  }, [h]), D = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : E.ZP.translateSurrogatesToInlineEmoji(e.name), L = (e, t) => null == e ? t : "".concat(e, " ").concat(t), j = () => {
-    let e = D(t);
+  }, [h]), w = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : E.ZP.translateSurrogatesToInlineEmoji(e.name), L = (e, t) => null == e ? t : "".concat(e, " ").concat(t), j = () => {
+    let e = w(t);
     return null == n ? e : L(e, n)
   };
   return (0, r.jsx)(v.Z, {
@@ -380,7 +380,7 @@ function G(e) {
     sourceType: T.n_.STATUS,
     onAction: u,
     onClose: () => A(false),
-    children: () => (0, r.jsx)(k, w(R({}, c), {
+    children: () => (0, r.jsx)(k, D(R({}, c), {
       ref: g,
       emoji: t,
       text: n,

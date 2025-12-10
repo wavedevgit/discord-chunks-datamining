@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => x,
-  r: () => w
+  r: () => D
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -188,7 +188,7 @@ function R(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     file: t,
     alt: n,
@@ -227,7 +227,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     upload: n,
@@ -240,7 +240,7 @@ function w(e) {
     spoiler: n.spoiler,
     size: a,
     onMouseEnter: s
-  }) : !l && n.isVideo && n.item.platform === f.ow.WEB ? (0, r.jsx)(D, {
+  }) : !l && n.isVideo && n.item.platform === f.ow.WEB ? (0, r.jsx)(w, {
     file: n.item.file,
     size: a,
     alt: n.description,
@@ -358,7 +358,7 @@ function x(e) {
     className: o()({
       [S.attachmentItemSmall]: N
     }),
-    children: [(0, r.jsx)(w, {
+    children: [(0, r.jsx)(D, {
       upload: a,
       size: m
     }), !E && !C && (0, r.jsx)("div", {

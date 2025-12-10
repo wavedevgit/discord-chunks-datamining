@@ -51,7 +51,7 @@ function x(e) {
   } = e, {
     id: s,
     storageHash: u,
-    description: d = j.intl.string(j.t.lqaIxI)
+    description: d = y.intl.string(y.t.lqaIxI)
   } = t, {
     avatarSrc: f,
     eventHandlers: p
@@ -61,37 +61,37 @@ function x(e) {
   }), {
     onMouseEnter: g,
     onMouseLeave: h
-  } = p, b = null != d ? d : u.substring(0, 6).toUpperCase(), A = j.intl.formatToPlainString(j.t.tmJ75y, {
+  } = p, b = null != d ? d : u.substring(0, 6).toUpperCase(), A = y.intl.formatToPlainString(y.t.tmJ75y, {
     orderNumber: n + 1,
     description: b
-  }), C = j.intl.formatToPlainString(j.t.pBzwhc, {
+  }), C = y.intl.formatToPlainString(y.t.pBzwhc, {
     orderNumber: n + 1,
     description: b
   });
   return (0, r.jsxs)("div", {
-    className: y.recentAvatarButtonContainer,
+    className: j.recentAvatarButtonContainer,
     children: [(0, r.jsx)(c.P3F, {
       onClick: () => a(t),
       onMouseEnter: g,
       onMouseLeave: h,
-      className: y.recentAvatarButton,
+      className: j.recentAvatarButton,
       "aria-label": A,
       innerRef: i,
       children: (0, r.jsx)("img", {
         src: f,
         alt: d,
-        className: y.recentAvatar
+        className: j.recentAvatar
       })
     }), (0, r.jsx)(o.u, {
-      text: j.intl.string(j.t.N86XcP),
+      text: y.intl.string(y.t.N86XcP),
       children: (0, r.jsx)(c.P3F, {
         "aria-label": C,
         onClick: e => l(e, n, s, u, C),
-        className: y.deleteButton,
+        className: j.deleteButton,
         children: (0, r.jsx)(c.XHJ, {
           size: "xs",
           color: "currentColor",
-          className: y.deleteIcon
+          className: j.deleteIcon
         })
       })
     })]
@@ -105,9 +105,9 @@ function v(e) {
     avatars: i,
     loading: o,
     error: m
-  } = (0, p.S)(), v = a.useRef([]), E = a.useRef(null), O = a.useRef(i.length), N = a.useRef(null), [S, T] = a.useState(false), [w, P] = a.useState(false), [R, F] = a.useState(null), _ = null != R ? R : null == m ? true : m.message, Z = i.length, I = Math.max(A.iZ - Z, 0), D = (0, c.vRw)(), k = a.useCallback(async e => {
+  } = (0, p.S)(), v = a.useRef([]), E = a.useRef(null), O = a.useRef(i.length), N = a.useRef(null), [S, T] = a.useState(false), [w, R] = a.useState(false), [P, _] = a.useState(null), F = null != P ? P : null == m ? true : m.message, Z = i.length, I = Math.max(A.iZ - Z, 0), k = (0, c.vRw)(), D = a.useCallback(async e => {
     if (null == l || S) return;
-    T(true), F(null);
+    T(true), _(null);
     let {
       id: a,
       storageHash: i,
@@ -142,16 +142,16 @@ function v(e) {
           showUpsellHeader: true
         }, n))
       }, {
-        contextKey: D
+        contextKey: k
       })
     } catch (e) {
-      F(j.intl.string(j.t.fZRH9P))
+      _(y.intl.string(y.t.fZRH9P))
     } finally {
       T(false)
     }
-  }, [D, S, t, l]), M = a.useCallback((e, t, a, l, s) => {
+  }, [k, S, t, l]), M = a.useCallback((e, t, a, l, s) => {
     let o = t + 1 < i.length ? t + 1 : t - 1;
-    N.current = o >= 0 ? v.current[o] : E.current, e.shiftKey ? (0, f.B)(a) : (P(true), (0, c.ZDy)(async () => {
+    N.current = o >= 0 ? v.current[o] : E.current, e.shiftKey ? (0, f.B)(a) : (R(true), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70871").then(n.bind(n, 225525));
@@ -180,7 +180,7 @@ function v(e) {
           onConfirmDelete: () => (0, f.B)(a),
           onClose: async () => {
             await n(), requestAnimationFrame(() => {
-              P(false)
+              R(false)
             })
           }
         }, i))
@@ -195,23 +195,23 @@ function v(e) {
       null == (e = N.current) || e.focus()
     }), O.current = i.length)
   }, [i.length, w]), o) ? (0, r.jsx)(c.$jN, {
-    className: y.spinner
+    className: j.spinner
   }) : (0, r.jsxs)("div", {
-    className: y.recentAvatarContainer,
-    children: [null != _ && !o && (0, r.jsx)(c.Text, {
+    className: j.recentAvatarContainer,
+    children: [null != F && !o && (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      children: _
+      children: F
     }), (0, r.jsxs)("div", {
-      className: y.recentAvatarSlots,
+      className: j.recentAvatarSlots,
       children: [Z > 0 && (0, r.jsx)("ul", {
-        "aria-label": j.intl.string(j.t.lsU63N),
-        className: y.recentAvatarList,
+        "aria-label": y.intl.string(y.t.lsU63N),
+        className: j.recentAvatarList,
         children: i.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(x, {
             avatar: e,
             index: t,
-            onSelectRecentAvatar: k,
+            onSelectRecentAvatar: D,
             onDeleteRecentAvatar: M,
             avatarButtonRef: e => {
               v.current[t] = e
@@ -219,17 +219,17 @@ function v(e) {
           })
         }, e.id))
       }), I > 0 && (0, r.jsxs)("div", {
-        className: y.emptyAvatarSlots,
+        className: j.emptyAvatarSlots,
         tabIndex: false,
         ref: E,
         children: [(0, r.jsxs)(c.nn4, {
           children: [0 === Z && (0, r.jsxs)(r.Fragment, {
-            children: [j.intl.string(j.t.x0DsRS), " "]
-          }), j.intl.format(j.t["8W2HO3"], {
+            children: [y.intl.string(y.t.x0DsRS), " "]
+          }), y.intl.format(y.t["8W2HO3"], {
             numberOfEmptyAvatarSlots: I
           })]
         }), [...Array(I)].map((e, t) => (0, r.jsx)(g.Z, {
-          className: y.avatarPlaceholder
+          className: j.avatarPlaceholder
         }, t))]
       })]
     })]
@@ -242,10 +242,10 @@ function E(e) {
     onComplete: n
   } = e;
   return (0, r.jsx)("div", {
-    className: i()(y.container, t),
+    className: i()(j.container, t),
     children: (0, r.jsx)(c.gNt, {
-      label: j.intl.string(j.t.Bnq9zK),
-      description: j.intl.format(j.t["+CyJu3"], {
+      label: y.intl.string(y.t.Bnq9zK),
+      description: y.intl.format(y.t["+CyJu3"], {
         recentAvatarsLimit: A.iZ
       }),
       children: (0, r.jsx)(v, {

@@ -65,13 +65,13 @@ function R(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -305,8 +305,8 @@ function V(e) {
             children: e => {
               var {
                 ref: t
-              } = e, n = w(e, ["ref"]);
-              return (0, r.jsx)("div", D(P({
+              } = e, n = D(e, ["ref"]);
+              return (0, r.jsx)("div", w(P({
                 ref: t
               }, n), {
                 children: F
@@ -344,7 +344,7 @@ function H(e) {
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
 
-  function D(e, n) {
+  function w(e, n) {
     let r = () => {
       let {
         id: r,
@@ -355,13 +355,13 @@ function H(e) {
     (0, S.Z)(e, r) && !R && r()
   }
 
-  function w(e) {
+  function D(e) {
     let {
       message: t,
       channel: n
     } = e;
     if (null == t) return [];
-    if (null != b) return b(t, e => D(t, e));
+    if (null != b) return b(t, e => w(t, e));
     let i = [];
     return null == n ? [] : (i.push((0, r.jsxs)("div", {
       className: A.messageGroupWrapper,
@@ -374,7 +374,7 @@ function H(e) {
         message: t,
         jumping: R,
         canCloseAllMessages: p,
-        jumpTo: D,
+        jumpTo: w,
         onCloseMessage: C,
         closeAriaLabel: P
       })]
@@ -398,7 +398,7 @@ function H(e) {
     hasMore: s,
     loadMore: c,
     getProTip: y,
-    renderItem: w,
+    renderItem: D,
     listName: N,
     "aria-label": e["aria-label"]
   })

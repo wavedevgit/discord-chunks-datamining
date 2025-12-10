@@ -138,7 +138,7 @@ let h = {
           alt: P
         }, e)
       }
-    }, [a, N, P, g, E, b, y]), D = {
+    }, [a, N, P, g, E, b, y]), w = {
       title: t,
       body: n,
       graphic: R,
@@ -169,7 +169,7 @@ let h = {
         },
         children: [(0, r.jsx)(l.B, m(p({
           targetElementRef: T
-        }, D), {
+        }, w), {
           children: (0, r.jsx)(s.Button, {
             buttonRef: T,
             variant: "primary",
@@ -177,7 +177,7 @@ let h = {
           })
         })), (0, r.jsx)(l.B, m(p({
           targetElementRef: C
-        }, D), {
+        }, w), {
           children: (0, r.jsx)(s.Button, {
             buttonRef: C,
             variant: "primary",

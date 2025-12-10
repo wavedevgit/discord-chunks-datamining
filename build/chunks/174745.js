@@ -82,11 +82,11 @@ module.exports = function(e) {
       var N = S[A],
         P = N.getKey(),
         R = N.getType(),
-        D = n(N),
-        w = true,
+        w = n(N),
+        D = true,
         x = true,
         L = true;
-      D && (w = D.component, x = D.props, L = D.editable);
+      w && (D = w.component, x = w.props, L = w.editable);
       var j = g || v.get(P),
         M = c.encode(P, 0, 0),
         k = {
@@ -113,7 +113,7 @@ module.exports = function(e) {
         var V = C !== G || null === T || B > T;
         F = f(F, _(R, B, V, j))
       }
-      var H = w || l,
+      var H = D || l,
         Y = {
           className: F,
           "data-block": true,

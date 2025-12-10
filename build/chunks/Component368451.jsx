@@ -156,7 +156,7 @@ function I(e) {
   } = T.useComponentState(e, I.length > 0 ? {
     type: t,
     values: I
-  } : true), D = null != T.modal, w = s > 1, x = N === _.gH.LOADING, [L, j] = i.useState(false), [M, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(M), Z = i.useMemo(() => n.some(e => null != e.emoji), [n]);
+  } : true), w = null != T.modal, D = s > 1, x = N === _.gH.LOADING, [L, j] = i.useState(false), [M, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(M), Z = i.useMemo(() => n.some(e => null != e.emoji), [n]);
   i.useEffect(() => {
     if ((null == C ? true : C.type) === d.re.STRING_SELECT) {
       let e = new Set(C.values);
@@ -176,7 +176,7 @@ function I(e) {
     !L && (M.size === U.size && Array.from(U).every(e => M.has(e)) || B())
   }, [L, M, U, B]);
   let F = c.UN;
-  w ? F = c.gz : 0 === u && (F = c.s6);
+  D ? F = c.gz : 0 === u && (F = c.s6);
   let V = (0, c.cY)({
     value: M,
     onChange: e => k(e),
@@ -189,26 +189,26 @@ function I(e) {
         isProcessing: x,
         isDisabled: g || N === _.gH.DISABLED || P,
         className: o()(h.select, {
-          [h.inModal]: D
+          [h.inModal]: w
         }),
         options: n.map(e => y(E({}, e), {
-          disabled: w && !M.has(e.value) && M.size === s
+          disabled: D && !M.has(e.value) && M.size === s
         })),
         placeholder: b,
         onClose: () => j(false),
         onOpen: () => j(true),
         maxVisibleItems: 5,
-        closeOnSelect: !w,
+        closeOnSelect: !D,
         optionClassName: h.selectOption,
         renderOptionLabel: e => (0, r.jsx)(O, y(E({}, e), {
-          isDisabled: w && !M.has(e.value) && M.size === s,
+          isDisabled: D && !M.has(e.value) && M.size === s,
           isOffset: Z
         })),
-        renderOptionValue: e => w ? (0, r.jsx)(S, {
+        renderOptionValue: e => D ? (0, r.jsx)(S, {
           options: e
         }) : (0, r.jsx)(v, E({}, e[0]))
       }, V))
-    }), null == R || D ? null : (0, r.jsx)(f.st, y(E({}, (0, f.c4)(R)), {
+    }), null == R || w ? null : (0, r.jsx)(f.st, y(E({}, (0, f.c4)(R)), {
       className: h.error
     }))]
   })

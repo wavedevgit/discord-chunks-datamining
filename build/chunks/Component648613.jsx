@@ -90,8 +90,8 @@ function S(e) {
     isGift: A,
     children: N
   } = e, P = (0, i.e7)([f.default], () => f.default.getCurrentUser()), R = (0, i.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), {
-    analyticsLocations: D
-  } = (0, o.ZP)(), w = (0, _.N)(), x = !A && null != w && null != g && m.nG[w.trial_id].skus.includes(g);
+    analyticsLocations: w
+  } = (0, o.ZP)(), D = (0, _.N)(), x = !A && null != D && null != g && m.nG[D.trial_id].skus.includes(g);
   return N({
     onClick: e => {
       var i;
@@ -130,13 +130,13 @@ function S(e) {
           }))
         }
       });
-      let o = x ? null == (i = w.subscription_trial) ? true : i.id : null,
+      let o = x ? null == (i = D.subscription_trial) ? true : i.id : null,
         f = h.AnalyticsObjectTypes.BUY;
       null != o ? f = h.AnalyticsObjectTypes.TRIAL : A && (f = h.AnalyticsObjectTypes.GIFT), (0, l.Z)({
         isGift: A,
         initialPlanId: null,
         subscriptionTier: g,
-        analyticsLocations: D,
+        analyticsLocations: w,
         analyticsObject: E({
           object: h.qAy.BUTTON_CTA,
           objectType: f

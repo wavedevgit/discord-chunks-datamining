@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   RegisterWebAuthnCredentialModal: () => R,
-  Z: () => w
+  Z: () => D
 }), require("./388685.js"), require("./49124.js"), require("./457542.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -76,17 +76,17 @@ function R(e) {
     challenge: c,
     showAccountSettingsButton: u = false,
     initialSlide: h = v.x.INIT
-  } = e, O = (0, d.Dt)(), [C, A] = i.useState(I.intl.string(I.t["I/sJtJ"])), [N, P] = i.useState(false), [R, D] = i.useState(h), [w, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
+  } = e, O = (0, d.Dt)(), [C, A] = i.useState(I.intl.string(I.t["I/sJtJ"])), [N, P] = i.useState(false), [R, w] = i.useState(h), [D, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
     let e;
-    D(v.x.REGISTER);
+    w(v.x.REGISTER);
     let t = g.isPlatformEmbedded && b.ZP.supportsFeature(S.eRX.WEBAUTHN) ? b.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
-      E.Z.captureException(e), j(I.intl.string(I.t.xSCvBf)), D(v.x.INIT);
+      E.Z.captureException(e), j(I.intl.string(I.t.xSCvBf)), w(v.x.INIT);
       return
     }
-    x(e), D(v.x.NAME)
+    x(e), w(v.x.NAME)
   };
   return (0, r.jsxs)(l.Y0X, {
     transitionState: t,
@@ -162,10 +162,10 @@ function R(e) {
         id: v.x.NAME,
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), y.Sr(C, s, w).then(async () => {
-              u ? D(v.x.SUCCESS) : (await (0, _.Yn)(false), o())
+            e.preventDefault(), y.Sr(C, s, D).then(async () => {
+              u ? w(v.x.SUCCESS) : (await (0, _.Yn)(false), o())
             }).catch(() => {
-              j(I.intl.string(I.t.fEptJP)), D(v.x.INIT)
+              j(I.intl.string(I.t.fEptJP)), w(v.x.INIT)
             })
           },
           children: [(0, r.jsxs)(l.hzk, {
@@ -203,7 +203,7 @@ function R(e) {
                 variant: "secondary",
                 text: I.intl.string(I.t["13/7kX"]),
                 onClick: () => {
-                  D(v.x.INIT)
+                  w(v.x.INIT)
                 }
               })]
             })
@@ -249,7 +249,7 @@ function R(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     onSelect: t,
     credential: i
@@ -283,7 +283,7 @@ function D(e) {
   })
 }
 
-function w() {
+function D() {
   let {
     credentials: e,
     hasFetchedCredentials: t,
@@ -355,7 +355,7 @@ function L(e) {
       color: s.zx.Colors.TRANSPARENT,
       size: s.zx.Sizes.ICON,
       onClick: t => {
-        (0, c.vq)(t, t => (0, r.jsx)(D, P(A({}, t), {
+        (0, c.vq)(t, t => (0, r.jsx)(w, P(A({}, t), {
           credential: e
         })))
       },

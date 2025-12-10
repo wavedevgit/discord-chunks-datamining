@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk569319 = require("./569319.js");
 
-function w(e) {
+function D(e) {
   let {
     premiumSubscription: t,
     fractionalPremiumInfo: n,
@@ -70,9 +70,9 @@ function w(e) {
     title: u,
     actions: d,
     children: (0, r.jsxs)("div", {
-      className: D.body,
+      className: w.body,
       children: [(0, r.jsx)("div", {
-        className: D.cancelImage
+        className: w.cancelImage
       }), (0, r.jsx)("div", {
         children: c
       })]
@@ -106,7 +106,7 @@ function j(e) {
     onBack: d,
     onNext: _,
     onClose: O
-  } = e, [S, I] = i.useState(false), [P, w] = i.useState(null), [x, j] = i.useMemo(() => {
+  } = e, [S, I] = i.useState(false), [P, D] = i.useState(null), [x, j] = i.useMemo(() => {
     try {
       return [(0, g.g)(o, false), false]
     } catch (e) {
@@ -179,9 +179,9 @@ function j(e) {
       onClose: O
     }), (0, r.jsxs)(c.hzk, {
       "data-migration-pending": true,
-      className: D.body,
+      className: w.body,
       children: [null !== P && (0, r.jsx)("div", {
-        className: D.error,
+        className: w.error,
         children: (0, r.jsx)(c.M14, {
           type: "critical",
           children: P
@@ -189,7 +189,7 @@ function j(e) {
       }), (0, r.jsx)("div", {
         children: z
       }), (0, r.jsxs)(E.aO, {
-        className: D.invoiceTable,
+        className: w.invoiceTable,
         children: [(0, r.jsx)(E.Z9, {
           children: R.intl.string(R.t.iqhIp4)
         }), (0, r.jsx)(E.B1, {
@@ -197,7 +197,7 @@ function j(e) {
             subscriptionCount: 1
           }),
           value: (0, C.og)((0, C.T4)(Y, o.currency), W, K),
-          className: D.invoiceCancelRow
+          className: w.invoiceCancelRow
         }), null != B && B.length > 0 ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)(E.UN, {}), (0, r.jsx)(y.nd, {
             premiumSubscription: o,
@@ -216,9 +216,9 @@ function j(e) {
         disabled: S,
         onClick: async () => {
           try {
-            I(true), w(null), await L(o, x, G, s), _()
+            I(true), D(null), await L(o, x, G, s), _()
           } catch (e) {
-            w(R.intl.string(R.t["5mlOCW"])), I(false)
+            D(R.intl.string(R.t["5mlOCW"])), I(false)
           }
         }
       }), (0, r.jsx)(b.Z, {
@@ -248,9 +248,9 @@ function M(e) {
     title: R.intl.string(R.t["fZzV/B"]),
     actions: l,
     children: (0, r.jsxs)("div", {
-      className: D.body,
+      className: w.body,
       children: [(0, r.jsx)("div", {
-        className: D.cancelImage
+        className: w.cancelImage
       }), (0, r.jsx)("div", {
         children: R.intl.format(R.t["H+z0ns"], {
           endDate: o
@@ -281,7 +281,7 @@ function k(e) {
   });
   else switch (m) {
     case 1:
-      t = (0, r.jsx)(w, {
+      t = (0, r.jsx)(D, {
         premiumSubscription: s,
         fractionalPremiumInfo: d,
         isInventory: null == n.premiumGuildSubscription,

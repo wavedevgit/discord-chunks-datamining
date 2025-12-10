@@ -42,14 +42,14 @@ function E(e) {
     className: g.clickableUsername,
     "aria-label": h.intl.string(h.t["+Xp3hq"]),
     children: e
-  }), R = null != v && v.length > 0, D = (0, c.D)(t), w = (0, d.Z)({
+  }), R = null != v && v.length > 0, w = (0, c.D)(t), D = (0, d.Z)({
     userId: t.id,
     guildId: n,
     pendingDisplayNameStyles: O
-  }), x = null != w;
+  }), x = null != D;
   return (0, r.jsxs)("div", {
     className: a()(g.container, {
-      [g.bot]: null != D
+      [g.bot]: null != w
     }, S),
     children: [(0, r.jsxs)("div", {
       className: g.usernameRow,
@@ -57,7 +57,7 @@ function E(e) {
         variant: N,
         children: (0, r.jsx)(p.Z, {
           userName: b,
-          displayNameStyles: w,
+          displayNameStyles: D,
           effectDisplayType: f.F.ANIMATED,
           textClassName: g.nicknameWithDisplayNameStyles,
           shouldWrap: true,
@@ -69,8 +69,8 @@ function E(e) {
         className: g.nickname,
         variant: N,
         children: b
-      })), null != D && (0, r.jsx)(u.Z, {
-        type: D,
+      })), null != w && (0, r.jsx)(u.Z, {
+        type: w,
         verified: t.isVerifiedBot()
       }), null != y && (0, r.jsx)("div", {
         className: g.nicknameIcons,
@@ -79,7 +79,7 @@ function E(e) {
     }), (0, r.jsxs)("div", {
       className: a()(g.tags, {
         [g.pronouns]: R,
-        [g.bot]: null != D
+        [g.bot]: null != w
       }),
       children: [!t.isProvisional && P((0, r.jsx)(l.Z, {
         user: t,

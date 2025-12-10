@@ -96,11 +96,11 @@ function F(e) {
     isMoreLoading: y
   } = (0, E.G)({
     onError: a
-  }), O = (0, m.E2)(n).get(t), [S, I] = i.useState(w.iB), N = i.useCallback(() => {
-    I(e => e + w.iB), g(t)
+  }), O = (0, m.E2)(n).get(t), [S, I] = i.useState(D.iB), N = i.useCallback(() => {
+    I(e => e + D.iB), g(t)
   }, [t, g]);
   l()(O, "No text for action type: ".concat(t));
-  let P = t === w.MY.PURCHASES && null != f ? O.sectionHeader(f) : O.sectionHeader(u),
+  let P = t === D.MY.PURCHASES && null != f ? O.sectionHeader(f) : O.sectionHeader(u),
     R = i.useCallback(e => {
       let {
         row: t
@@ -127,7 +127,7 @@ function F(e) {
       }
       return null
     }, [c, O.timestampFormatter]),
-    D = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
+    w = i.useCallback(() => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Text, {
         className: M.sectionHeader,
         variant: "text-md/semibold",
@@ -143,7 +143,7 @@ function F(e) {
   let x = c.slice(0, S);
   return (0, r.jsxs)("div", {
     className: M.actionSection,
-    children: [D(), (0, r.jsx)("div", {
+    children: [w(), (0, r.jsx)("div", {
       className: M.actions,
       style: {
         maxHeight: x.length * Z
@@ -165,7 +165,7 @@ function F(e) {
         className: M.loadMore,
         variant: "text-sm/bold",
         children: j.intl.format(L.default["7dMmJY"], {
-          pageSize: Math.max(1, Math.min(u - x.length, w.iB))
+          pageSize: Math.max(1, Math.min(u - x.length, D.iB))
         })
       })
     }) : null]
@@ -227,7 +227,7 @@ let Y = () => {
       } = (0, Chunk985002.G)({}),
       a = e => {
         n(e), f.default.track(x.rMx.FAMILY_CENTER_ACTION, {
-          action: w.YC.SelectTeen
+          action: D.YC.SelectTeen
         })
       },
       o = module.map(e => ({

@@ -2,7 +2,7 @@
 /** chunk id: 333451, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -68,7 +68,7 @@ function R(e, t) {
   }), e
 }
 
-function D(e) {
+function w(e) {
   let {
     shouldUpsellFromNoneTier: t
   } = e, n = (0, s.e7)([E.default], () => E.default.locale);
@@ -104,7 +104,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     premiumSubscriptionPlan: n,
@@ -116,7 +116,7 @@ function w(e) {
     analyticsSourceLocation: A,
     priceOptions: P
   } = e, {
-    analyticsLocations: w,
+    analyticsLocations: D,
     sourceAnalyticsLocations: x
   } = (0, f.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: L
@@ -145,7 +145,7 @@ function w(e) {
         children: null != Z ? T.intl.string(T.t.AoSzEr) : T.intl.format(T.t["7vePZb"], {
           monthlyPrice: U
         })
-      }), (0, r.jsx)(D, {
+      }), (0, r.jsx)(w, {
         shouldUpsellFromNoneTier: M
       })]
     }), (0, r.jsxs)(u.mzw, {
@@ -168,7 +168,7 @@ function w(e) {
             a(), (0, _.Z)({
               initialPlanId: null,
               subscriptionTier: I.Si.TIER_2,
-              analyticsLocations: w,
+              analyticsLocations: D,
               analyticsObject: R(N({}, y), {
                 section: S.jXE.PREMIUM_GUILD_PURCHASE_MODAL
               }),

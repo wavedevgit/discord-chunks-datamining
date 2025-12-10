@@ -80,7 +80,7 @@ function C(e) {
 }
 
 function A(e, t) {
-  let n, r = w((0, h.aF)(e.name, 32));
+  let n, r = D((0, h.aF)(e.name, 32));
   return {
     type: "channel",
     content: [n = "italics" === t ? {
@@ -95,7 +95,7 @@ function A(e, t) {
 function N(e, t) {
   let n = {
     type: "channel",
-    content: [w(e.roleSubscriptionGated ? e.name : y.intl.string(y.t["/YzI63"]))],
+    content: [D(e.roleSubscriptionGated ? e.name : y.intl.string(y.t["/YzI63"]))],
     channelType: e.roleSubscriptionGated ? e.type : b.d4z.UNKNOWN,
     iconType: "locked"
   };
@@ -112,7 +112,7 @@ function N(e, t) {
 function P(e) {
   return {
     type: "channel",
-    content: [w("")],
+    content: [D("")],
     iconType: e ? "post" : "message"
   }
 }
@@ -153,7 +153,7 @@ function R(e, t) {
   } : null
 }
 
-function D(e) {
+function w(e) {
   return {
     type: "link",
     content: [{
@@ -165,7 +165,7 @@ function D(e) {
   }
 }
 
-function w(e) {
+function D(e) {
   return {
     type: "text",
     content: e
@@ -173,7 +173,7 @@ function w(e) {
 }
 
 function x(e) {
-  return null != e ? D(e) : w("#".concat(y.intl.string(y.t.J90oLW)))
+  return null != e ? w(e) : D("#".concat(y.intl.string(y.t.J90oLW)))
 }
 
 function L() {
@@ -236,7 +236,7 @@ function M(e, t, n, r) {
 
 function k(e, t, n, r) {
   if (!e.canViewChannel) return N(e, t);
-  if (!e.isMentionable) return w("#".concat(e.name));
+  if (!e.isMentionable) return D("#".concat(e.name));
   let i = {
       type: "channelMention",
       channelId: e.id,
@@ -283,7 +283,7 @@ let U = {
           i = e[1],
           a = e[2],
           o = e[3];
-        if (null == a) return D(r);
+        if (null == a) return w(r);
         let s = R(a, null);
         return null == s ? j(i, a, o, T(n.channelId), r) : k(s, o, T(n.channelId), r)
       }
@@ -298,7 +298,7 @@ let U = {
           a = e[2],
           o = e[3],
           s = e[4];
-        if (null == a || null == o) return D(r);
+        if (null == a || null == o) return w(r);
         let l = R(o, null);
         if (null != l) return k(l, s, T(n.channelId), r);
         let c = R(a, null);

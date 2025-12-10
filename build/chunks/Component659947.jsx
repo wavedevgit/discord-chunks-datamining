@@ -123,7 +123,7 @@ function N(e) {
         align: u.Z.Align.STRETCH,
         children: [(0, r.jsx)("div", {
           className: E.selectedVoiceChannel,
-          children: (0, r.jsx)(D, {
+          children: (0, r.jsx)(w, {
             channelId: c
           })
         }), (0, r.jsx)(u.Z.Child, {
@@ -228,7 +228,7 @@ function R(e) {
         O >= S - 1 ? v(0) : v(O + 1)
     }
   }
-  let D = (() => {
+  let w = (() => {
       if (null != y) {
         var e;
         return null == (e = y[O]) ? true : e.id
@@ -236,7 +236,7 @@ function R(e) {
       let t = b[O];
       if ((null == t ? true : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
     })(),
-    w = S > 0 || "" === p ? {
+    D = S > 0 || "" === p ? {
       innerId: l,
       innerRole: "listbox",
       innerAriaLabel: g.intl.string(g.t["+N3fW7"]),
@@ -265,16 +265,16 @@ function R(e) {
       role: "combobox",
       "aria-controls": l,
       "aria-expanded": S > 0,
-      "aria-activedescendant": S > 0 && null != D ? D : true,
+      "aria-activedescendant": S > 0 && null != w ? w : true,
       "aria-autocomplete": "list",
       spellCheck: false,
       autoFocus: true
     }),
-    listProps: w
+    listProps: D
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     channelId: t
   } = e, {

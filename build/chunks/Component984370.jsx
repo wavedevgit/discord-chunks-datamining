@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   O: () => N,
-  Z: () => w
+  Z: () => D
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -106,8 +106,8 @@ function P(e) {
     "aria-labelledby": A,
     scrollable: P,
     role: R,
-    hideSearch: D,
-    showDivider: w,
+    hideSearch: w,
+    showDivider: D,
     disableDoubleClick: x
   } = e, L = null == s || (0, y.AB)(s) ? null : s, j = (0, a.e7)([m.Z], () => m.Z.isInChannel(L) || false), M = (0, a.e7)([c.Z], () => null != L && c.Z.getParticipantsListOpen(L)), {
     enabled: k,
@@ -122,13 +122,13 @@ function P(e) {
 
   function Z() {
     if (null == I) return null;
-    let e = null != s && !D;
+    let e = null != s && !w;
     return i.tq ? T : (0, r.jsxs)(r.Fragment, {
       children: [I, e && !(0, y.AB)(s) ? (0, r.jsx)(p.ZP, {
         guildId: h,
         channelId: s,
         className: O.search
-      }, null != h ? h : s) : null, w && (0, r.jsx)(E.ZP.Divider, {}), k && !U ? (0, r.jsx)(f.Z, {}) : null, G && j && null != L && !M && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
+      }, null != h ? h : s) : null, D && (0, r.jsx)(E.ZP.Divider, {}), k && !U ? (0, r.jsx)(f.Z, {}) : null, G && j && null != L && !M && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: O.controlButtonWrapper,
         children: [(0, r.jsx)(E.ZP.Divider, {}), (0, r.jsx)(_.Z, {
           onClick: () => o.Z.toggleParticipantsList(L, !M)
@@ -170,7 +170,7 @@ function R(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     isAuthenticated: t = true
   } = e, n = C(e, ["isAuthenticated"]);
@@ -186,5 +186,5 @@ function D(e) {
     }))
   })
 }
-D.Title = Chunk665149.ZP.Title, D.Icon = Chunk665149.ZP.Icon, D.ChannelIcon = Chunk665149.ZP.ChannelIcon, D.Divider = Chunk665149.ZP.Divider, D.Caret = Chunk665149.ZP.Caret;
-let w = D
+w.Title = Chunk665149.ZP.Title, w.Icon = Chunk665149.ZP.Icon, w.ChannelIcon = Chunk665149.ZP.ChannelIcon, w.Divider = Chunk665149.ZP.Divider, w.Caret = Chunk665149.ZP.Caret;
+let D = w

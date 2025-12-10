@@ -774,7 +774,7 @@ class P extends Chunk495852.C {
   }
 }
 let R = new P;
-class D extends Chunk495852.C {
+class w extends Chunk495852.C {
   create(e) {
     let t = {
       isoCountry: "",
@@ -825,7 +825,7 @@ class D extends Chunk495852.C {
     }])
   }
 }
-let w = new D;
+let D = new w;
 class x extends Chunk495852.C {
   create(e) {
     let t = {
@@ -847,7 +847,7 @@ class x extends Chunk495852.C {
         case 1:
           a.location = {
             oneofKind: "isoRegion",
-            isoRegion: w.internalBinaryRead(e, e.uint32(), n, a.location.isoRegion)
+            isoRegion: D.internalBinaryRead(e, e.uint32(), n, a.location.isoRegion)
           };
           break;
         case 2:
@@ -872,7 +872,7 @@ class x extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "isoRegion" === e.location.oneofKind && w.internalBinaryWrite(e.location.isoRegion, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), "isEu" === e.location.oneofKind && t.tag(2, r.TD.Varint).bool(e.location.isEu), "place" === e.location.oneofKind && R.internalBinaryWrite(e.location.place, t.tag(3, r.TD.LengthDelimited).fork(), n).join();
+    "isoRegion" === e.location.oneofKind && D.internalBinaryWrite(e.location.isoRegion, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), "isEu" === e.location.oneofKind && t.tag(2, r.TD.Varint).bool(e.location.isEu), "place" === e.location.oneofKind && R.internalBinaryWrite(e.location.place, t.tag(3, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -882,7 +882,7 @@ class x extends Chunk495852.C {
       name: "iso_region",
       kind: "message",
       oneof: "location",
-      T: () => w
+      T: () => D
     }, {
       no: 2,
       name: "is_eu",

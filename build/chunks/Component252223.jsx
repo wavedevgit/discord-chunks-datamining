@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk80568 = require("./80568.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,14 +42,14 @@ function D(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -141,7 +141,7 @@ function Z(e) {
     textSize: y = "xs",
     animateEmoji: O = true,
     hasQuest: P = false,
-    hideEmoji: D = false,
+    hideEmoji: w = false,
     hideTooltip: x = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
@@ -227,16 +227,16 @@ function Z(e) {
           hideText: false,
           canTruncate: false
         };
-      return null != j && e.push((0, r.jsx)(S.Z, L(w({
+      return null != j && e.push((0, r.jsx)(S.Z, L(D({
         stream: j,
         game: null == n ? true : n.find(d.Z)
       }, t), {
         showChannelName: true
       }), "stream")), H.forEach((n, i) => {
-        e.push((0, r.jsx)(T.Z, w({
+        e.push((0, r.jsx)(T.Z, D({
           activity: n
         }, t), "activity-".concat(i)))
-      }), Q && e.push((0, r.jsx)(C.Z, L(w({
+      }), Q && e.push((0, r.jsx)(C.Z, L(D({
         channel: l
       }, t), {
         showChannelName: true
@@ -257,7 +257,7 @@ function Z(e) {
       delay: A.X,
       text: en(),
       "aria-label": ee,
-      children: e => (0, r.jsxs)("div", L(w({
+      children: e => (0, r.jsxs)("div", L(D({
         className: o()(R.activityContainer, $ && R.iconOnly)
       }, e), {
         children: [et(true), er()]
@@ -271,7 +271,7 @@ function Z(e) {
       customStatusActivity: B,
       textSize: y,
       animateEmoji: O,
-      hideEmoji: D,
+      hideEmoji: w,
       hideTooltip: x,
       textClassName: p,
       iconClassName: _,

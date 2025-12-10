@@ -22,8 +22,8 @@ function p(e) {
     onSuccess: h,
     onClose: g,
     requirementsUpdated: E
-  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, C] = i.useState(null), [A, N] = i.useState(null), P = (0, o.e7)([c.Z], () => c.Z.getErrors()), R = (0, o.e7)([c.Z], () => c.Z.getFormState()), D = i.useRef(null);
-  async function w(e) {
+  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, C] = i.useState(null), [A, N] = i.useState(null), P = (0, o.e7)([c.Z], () => c.Z.getErrors()), R = (0, o.e7)([c.Z], () => c.Z.getFormState()), w = i.useRef(null);
+  async function D(e) {
     e.preventDefault(), (0, l.b9)();
     let t = false;
     if ("" === O ? (C(f.intl.string(f.t["/7/oPU"])), t = true) : C(null), O !== S ? (N(f.intl.string(f.t["IEKYZ/"])), t = true) : N(null), t) return;
@@ -40,10 +40,10 @@ function p(e) {
   return i.useEffect(() => {
     if (m === s.Dvm.ENTERED) {
       var e;
-      null == (e = D.current) || e.focus()
+      null == (e = w.current) || e.focus()
     }
   }, [m]), (0, r.jsx)("form", {
-    onSubmit: w,
+    onSubmit: D,
     children: (0, r.jsx)(a.Modal, {
       transitionState: m,
       onClose: g,
@@ -67,7 +67,7 @@ function p(e) {
           type: "password",
           value: b,
           onChange: y,
-          inputRef: D,
+          inputRef: w,
           autoComplete: "current-password",
           required: true
         }), (0, r.jsx)(s.oil, {

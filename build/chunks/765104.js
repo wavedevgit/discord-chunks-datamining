@@ -63,8 +63,8 @@ function P(e, t) {
   }), e
 }
 let R = {},
-  D = {},
   w = {},
+  D = {},
   x = [],
   L = {},
   j = {
@@ -111,18 +111,18 @@ class B extends(s = Chunk442837.ZP.PersistedStore) {
     return null != o && o.channelId === e && null != o.summaryId ? this.findSummary(e, null == o ? true : o.summaryId) : null
   }
   summaryFeedback(e) {
-    return null == e ? null : w[e.id]
+    return null == e ? null : D[e.id]
   }
   isFetching(e, t) {
     var n, r;
-    return null != t ? (null == (r = D[e]) ? true : r.summaryId) === t : (null == (n = D[e]) ? true : n.fetching) === true
+    return null != t ? (null == (r = w[e]) ? true : r.summaryId) === t : (null == (n = w[e]) ? true : n.fetching) === true
   }
   status(e) {
-    return D[e]
+    return w[e]
   }
   shouldFetch(e, t) {
     var n, r;
-    let i = D[e],
+    let i = w[e],
       a = h.Z.getChannel(e);
     if (!(0, f.Lp)(a)) returnfalse;
     if (null != t) {
@@ -195,14 +195,14 @@ let V = new B(Chunk570140.Z, {
         a = n.findIndex(t => t.id === (null == e ? true : e.id));
       a > false ? n[a] = e : n.push(e), R[i] = n
     }
-    let s = P(A({}, null != (n = D[i]) ? n : {
+    let s = P(A({}, null != (n = w[i]) ? n : {
       fetching: false
     }), {
       summaryId: true,
       summaryIdLastReceivedAt: o,
       summaryIdError: a
     });
-    D[i] = s
+    w[i] = s
   },
   REQUEST_CHANNEL_SUMMARY(e) {
     var t;
@@ -211,7 +211,7 @@ let V = new B(Chunk570140.Z, {
       summaryId: r,
       requestedAt: i
     } = e;
-    D[n] = P(A({}, null != (t = D[n]) ? t : {
+    w[n] = P(A({}, null != (t = w[n]) ? t : {
       fetching: false
     }), {
       summaryId: r,
@@ -231,16 +231,16 @@ let V = new B(Chunk570140.Z, {
       null != e && a.push(e)
     }
     R[n] = (0, l.sortBy)(a, e => S.default.extractTimestamp(e.startId)).reverse();
-    let c = P(A({}, D[n]), {
+    let c = P(A({}, w[n]), {
       fetching: false,
       error: true,
       lastReceivedAt: i
     });
-    null != r && (c.error = r), D[n] = c
+    null != r && (c.error = r), w[n] = c
   },
   REQUEST_CHANNEL_SUMMARIES(e) {
     var t;
-    D[e.channelId] = P(A({}, null != (t = D[e.channelId]) ? t : {}), {
+    w[e.channelId] = P(A({}, null != (t = w[e.channelId]) ? t : {}), {
       fetching: true,
       lastRequestedAt: e.requestedAt
     })
@@ -280,7 +280,7 @@ let V = new B(Chunk570140.Z, {
       summary: t,
       rating: n
     } = e;
-    null != n ? w[t.id] = n : delete w[t.id]
+    null != n ? D[t.id] = n : delete D[t.id]
   },
   REQUEST_CHANNEL_AFFINITIES() {
     j = P(A({}, j), {
@@ -312,14 +312,14 @@ let V = new B(Chunk570140.Z, {
       requestedAt: n
     } = e, r = t.reduce((e, t) => {
       var r;
-      let i = null != (r = D[t]) ? r : {};
+      let i = null != (r = w[t]) ? r : {};
       return e[t] = P(A({}, i), {
         fetching: true,
         lastRequestedAt: n,
         error: true
       }), e
     }, {});
-    D = A({}, D, r)
+    w = A({}, w, r)
   },
   RECEIVE_CHANNEL_SUMMARIES_BULK(e) {
     let {
@@ -334,7 +334,7 @@ let V = new B(Chunk570140.Z, {
       return e[n] = i, e
     }, {}), o = i.reduce((e, t) => {
       var i;
-      let o = null != (i = D[t]) ? i : {},
+      let o = null != (i = w[t]) ? i : {},
         s = a[t];
       return null != s && (e.summariesByChannel[t] = s), e.summaryFetchStatusByChannel[t] = P(A({}, o), {
         fetching: false,
@@ -345,7 +345,7 @@ let V = new B(Chunk570140.Z, {
       summariesByChannel: {},
       summaryFetchStatusByChannel: {}
     });
-    R = A({}, R, o.summariesByChannel), D = A({}, D, o.summaryFetchStatusByChannel)
+    R = A({}, R, o.summariesByChannel), w = A({}, w, o.summaryFetchStatusByChannel)
   },
   CONVERSATION_SUMMARY_UPDATE(e) {
     var t, n, r;
@@ -354,14 +354,14 @@ let V = new B(Chunk570140.Z, {
       summaries: a,
       guild_id: o
     } = e, s = Date.now(), l = c().chain(a).sortBy(e => S.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, I.b)(e, i)).reverse().value(), u = null != (n = R[i]) ? n : [], d = c().chain(l).concat(u).sortBy(e => S.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
-    R[i] = d, D[i] = P(A({}, D[i]), {
+    R[i] = d, w[i] = P(A({}, w[i]), {
       error: true,
-      fetching: null != (r = null == (t = D[i]) ? true : t.fetching) && r,
+      fetching: null != (r = null == (t = w[i]) ? true : t.fetching) && r,
       lastReceivedAt: s
     })
   },
   CLEAR_CONVERSATION_SUMMARIES() {
-    R = {}, D = {}
+    R = {}, w = {}
   },
   DELETE_SUMMARY(e) {
     var t;

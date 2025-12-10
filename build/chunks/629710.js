@@ -4,7 +4,7 @@
 require.d(exports, {
   AT: () => E,
   DQ: () => C,
-  Hz: () => D,
+  Hz: () => w,
   LD: () => A,
   MD: () => T,
   SI: () => R,
@@ -52,7 +52,7 @@ let g = false,
   },
   O = e => {
     let t = E();
-    return null == e ? h.qn.NONE : D(t.map(t => U(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(p.lm))
+    return null == e ? h.qn.NONE : w(t.map(t => U(t.getUserSettingsWithDefaults()[e]) ? t.harmType : null).filter(p.lm))
   };
 
 function v(e) {
@@ -139,19 +139,19 @@ function C(e) {
 
 function A(e, t) {
   if (t === h.qn.NONE) return [];
-  let n = w(t);
+  let n = D(t);
   return 0 === n.length ? [] : n.filter(t => R(t, e)).map(e => h.Fj[e].obscureReason)
 }
 
 function N(e, t) {
   if (t === h.qn.NONE) returnfalse;
-  let n = w(t);
+  let n = D(t);
   return 0 !== n.length && n.filter(t => R(t, e)).length > 0
 }
 
 function P(e, t) {
   if (t === h.qn.NONE || o.ZP.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
-  let n = w(t);
+  let n = D(t);
   if (0 === n.length) returnfalse;
   switch (e.type) {
     case _.l.Embed:
@@ -182,7 +182,7 @@ function R(e, t) {
   }
 }
 
-function D(e) {
+function w(e) {
   let t = h.qn.NONE;
   for (let n of e) switch (n) {
     case h._.EXPLICIT:
@@ -197,7 +197,7 @@ function D(e) {
   return t
 }
 
-function w(e) {
+function D(e) {
   if (e === h.qn.NONE) return [];
   let t = [];
   for (let n of E())(e & n.bitmask) > 0 && t.push(n.harmType);

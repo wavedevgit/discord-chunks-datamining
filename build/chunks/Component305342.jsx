@@ -42,21 +42,21 @@ let x = 24,
       benefits: t,
       header: n,
       guildId: a
-    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, L), u = t.length > L, f = t.length - L, p = D.intl.formatToPlainString(D.t.XSdy72, {
+    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, L), u = t.length > L, f = t.length - L, p = w.intl.formatToPlainString(w.t.XSdy72, {
       numTruncated: f
     }), _ = () => s(e => !e), h = (0, d.Dt)();
     return 0 === t.length ? null : (0, r.jsxs)("div", {
-      className: w.benefitsSection,
+      className: D.benefitsSection,
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-xs/bold",
         color: "text-default",
-        className: w.sectionHeader,
+        className: D.sectionHeader,
         id: h,
         children: n
       }), (0, r.jsx)(c.LZC, {
         size: 12
       }), (0, r.jsx)("ul", {
-        className: w.benefitsList,
+        className: D.benefitsList,
         "aria-labelledby": h,
         children: l.map((e, t) => (0, r.jsx)("li", {
           children: (0, r.jsx)(T.Z, {
@@ -85,25 +85,25 @@ let x = 24,
       })
     }
     return 0 === o.length ? null : (0, r.jsxs)("div", {
-      className: w.benefitsSection,
+      className: D.benefitsSection,
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-xs/bold",
         color: "text-default",
-        className: w.sectionHeader,
-        children: D.intl.format(D.t.NAnXEo, {
+        className: D.sectionHeader,
+        children: w.intl.format(w.t.NAnXEo, {
           count: o.length
         })
       }), (0, r.jsx)(c.LZC, {
         size: 12
       }), (0, r.jsx)("div", {
-        className: w.emojiList,
+        className: D.emojiList,
         children: o.map((e, t) => {
           var n;
           return (0, r.jsx)(l.u, {
             text: e.name,
             "aria-label": false,
             children: (0, r.jsx)("img", {
-              className: w.emojiListEmoji,
+              className: D.emojiListEmoji,
               src: s(e),
               width: x,
               height: x,
@@ -121,27 +121,27 @@ let x = 24,
       className: i
     } = e, a = (0, O.Z)(n, t), [s] = g.UE(t), l = (0, v.Z)(s), [u] = g.R7(t), d = g.qs(t, n), [f] = g.XZ(t, n);
     return null == a && 0 === l.length && 0 === u.length && 0 === f.size ? null : (0, r.jsxs)("div", {
-      className: o()(w.subscriptionPerks, i),
+      className: o()(D.subscriptionPerks, i),
       children: [null != a && (0, r.jsxs)(c.y5t, {
         component: (0, r.jsx)(c.Heading, {
           variant: "text-xs/bold",
           color: "text-default",
-          className: w.sectionHeader,
-          children: D.intl.string(D.t.FJZmYx)
+          className: D.sectionHeader,
+          children: w.intl.string(w.t.FJZmYx)
         }),
         children: [(0, r.jsx)(c.LZC, {
           size: 8
         }), (0, r.jsx)(S.Z, {
           role: d,
           guildId: n,
-          className: w.roleMessagePreview
+          className: D.roleMessagePreview
         })]
       }), (0, r.jsx)(j, {
-        header: D.intl.string(D.t.LtfhAj),
+        header: w.intl.string(w.t.LtfhAj),
         benefits: l,
         guildId: n
       }), (0, r.jsx)(j, {
-        header: D.intl.string(D.t["8oxWpO"]),
+        header: w.intl.string(w.t["8oxWpO"]),
         benefits: u,
         guildId: n
       }), (0, r.jsx)(M, {
@@ -155,7 +155,7 @@ let x = 24,
       onToggle: t,
       isViewAll: n,
       showMoreText: i
-    } = e, a = n ? D.intl.string(D.t["r/xxPU"]) : i;
+    } = e, a = n ? w.intl.string(w.t["r/xxPU"]) : i;
     return (0, r.jsx)(c.Avr, {
       text: a,
       onClick: t,
@@ -180,31 +180,31 @@ let x = 24,
     } = (0, E.Z)(a), j = (null == L ? true : L.id) === t, M = (null == x ? true : x.status) === R.O0b.CANCELED, [G, Z] = i.useState(false), [B, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
-    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, Q = () => Z(e => !e), X = (0, u.Z)(P.iP), [J, $] = i.useState(false), ee = J || !X, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = D.intl.string(D.t.KzmEA9);
+    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, Q = () => Z(e => !e), X = (0, u.Z)(P.iP), [J, $] = i.useState(false), ee = J || !X, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = w.intl.string(w.t.KzmEA9);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
-      className: w.container,
+      className: D.container,
       "aria-label": H,
       children: [q && (0, r.jsxs)("div", {
-        className: o()(w.tierTrialIndicator, w.tierTopIndicator),
-        children: [D.intl.format(D.t.L2ouip, {
+        className: o()(D.tierTrialIndicator, D.tierTopIndicator),
+        children: [w.intl.format(w.t.L2ouip, {
           trialPeriodDuration: (0, m.iG)({
             interval: W.interval,
             interval_count: W.interval_count
           })
         }), (0, r.jsx)(l.u, {
-          text: D.intl.formatToPlainString(D.t.FYyR4o, {
+          text: w.intl.formatToPlainString(w.t.FYyR4o, {
             activeTrialUserLimit: null != K ? K : 0
           }),
           children: (0, r.jsx)(c.d3s, {
             size: "xs",
             color: "currentColor",
-            className: w.tierTrialIndicatorIcon
+            className: D.tierTrialIndicatorIcon
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: q ? true : w.cardContainerWithoutTopIndicator,
+        className: q ? true : D.cardContainerWithoutTopIndicator,
         children: [(0, r.jsxs)("div", {
-          className: w.tierInfoContainer,
+          className: D.tierInfoContainer,
           children: [X ? (0, r.jsx)(A.e, {
             listingId: t,
             isListingPublished: er,
@@ -216,20 +216,20 @@ let x = 24,
           }), ee && (0, r.jsxs)(c.Kqy, {
             gap: 16,
             children: [X && (0, r.jsx)("div", {
-              className: w.divider
+              className: D.divider
             }), j ? (0, r.jsx)(c.Button, {
               disabled: true,
               fullWidth: true,
               variant: M ? "secondary" : "primary",
-              text: M ? D.intl.string(D.t.iKHmu0) : D.intl.string(D.t.XvAuMo)
+              text: M ? w.intl.string(w.t.iKHmu0) : w.intl.string(w.t.XvAuMo)
             }) : (0, r.jsxs)(r.Fragment, {
               children: [O ? null : (0, r.jsx)(c.Wn, {
-                className: w.helpMessage,
+                className: D.helpMessage,
                 messageType: c.QYI.INFO,
                 children: v
               }), (0, r.jsx)(c.Button, {
                 fullWidth: true,
-                text: D.intl.string(D.t.fM5ZsX),
+                text: w.intl.string(w.t.fM5ZsX),
                 disabled: !O || T,
                 loading: S,
                 onClick: y,
@@ -242,7 +242,7 @@ let x = 24,
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                className: o()((!B || !G) && w.tierDescriptionTruncate),
+                className: o()((!B || !G) && D.tierDescriptionTruncate),
                 children: (0, r.jsx)("div", {
                   ref: V,
                   children: Y

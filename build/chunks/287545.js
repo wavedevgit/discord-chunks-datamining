@@ -172,9 +172,9 @@ function X(e) {
   if (o && null != C && C.isPrivate() && a && null == b && s.Z.selectParticipant(C.id, null), null == b) return;
   let P = E.Z.getMediaSessionId(),
     R = c.compositeInstanceId,
-    D = null == P && (null == C ? true : C.isVocal()) === true && (null == C ? true : C.isPrivate()) === false;
-  if (null == R || D) return;
-  let w = (0, i.Z)(),
+    w = null == P && (null == C ? true : C.isVocal()) === true && (null == C ? true : C.isPrivate()) === false;
+  if (null == R || w) return;
+  let D = (0, i.Z)(),
     x = "location" in c ? 2 : 1,
     j = y.default.getCurrentUser();
   if (null == j) return;
@@ -192,7 +192,7 @@ function X(e) {
     W = null != P ? [P] : [],
     K = {
       activitySessionId: R,
-      activityUserSessionId: w,
+      activityUserSessionId: D,
       launchId: c.launchId,
       mediaSessionIds: W,
       activitiesInfraVersion: x
@@ -213,7 +213,7 @@ function X(e) {
     release_phase: B,
     shelf_rank: null == G || null == (t = G.activity) ? true : t.shelf_rank,
     shelf_sorted_rank: Z > 0 ? Z : null,
-    activity_user_session_id: w,
+    activity_user_session_id: D,
     channel_type: null == C ? true : C.type,
     source: null == z ? true : z.source,
     command_context_type: null != C ? (0, d.Vh)(C, r) : null,
@@ -228,7 +228,7 @@ function X(e) {
     application_id: r,
     instance_id: c.launchId,
     initial_media_session_id: W[0],
-    activity_user_session_id: w,
+    activity_user_session_id: D,
     raw_thermal_state: H,
     is_activity_start: o,
     shelf_rank: null == G || null == (n = G.activity) ? true : n.shelf_rank,
@@ -369,7 +369,7 @@ class $ extends Chunk317770.Z {
       let u = A.ZP.getSelfEmbeddedActivityForChannel(i);
       if ((null == u ? true : u.applicationId) === a) return;
       let d = await f.ZP.fetchApplication(a);
-      if (!(0, w.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTp));
+      if (!(0, D.a)()) return void this.showLaunchErrorModal(G.intl.string(G.t.UXoQTp));
       if (!(0, M.Z)(null == d || null == (t = d.embedded_activity_config) ? true : t.supported_platforms)) return void this.showLaunchErrorModal(G.intl.string(G.t.uGDCcw));
       let p = null != (n = null == c ? true : c.getGuildId()) ? n : true,
         {
@@ -401,7 +401,7 @@ class $ extends Chunk317770.Z {
         inputApplication: null,
         analyticsLocations: o,
         inviterUserId: l
-      }) : await (0, D.Z)({
+      }) : await (0, w.Z)({
         targetApplicationId: a,
         channelId: i,
         analyticsLocations: o,

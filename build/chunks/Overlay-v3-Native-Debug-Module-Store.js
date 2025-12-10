@@ -88,18 +88,18 @@ function P(e) {
 function R(e, t) {
   if (!f.Z.isOverlayEnabled) {
     if (0 === y.length) return;
-    D("overlay_disabled");
+    w("overlay_disabled");
     return
   }
   C(e, t), y = e, O = [...e]
 }
 
-function D(e) {
+function w(e) {
   for (let e of Object.values(v)) null != e && clearTimeout(e);
   v = {}, y = [], O = [], C([], e)
 }
 
-function w() {
+function D() {
   0 !== y.length && (O = [...y], y = [], C([], "store_click_zones"))
 }
 
@@ -125,7 +125,7 @@ function L(e, t, n, r) {
 }
 
 function j(e) {
-  return D("crashed"), true
+  return w("crashed"), true
 }
 
 function M(e) {
@@ -136,7 +136,7 @@ function M(e) {
 }
 
 function k() {
-  return D("refresh_host_window"), true
+  return w("refresh_host_window"), true
 }
 
 function U() {
@@ -151,7 +151,7 @@ function Z(e) {
   let {
     pid: t
   } = e;
-  return 0 === t ? w() : x(), true
+  return 0 === t ? D() : x(), true
 }
 class B extends(r = Chunk442837.ZP.Store) {
   initialize() {

@@ -299,10 +299,10 @@ let R = {
       }
     }
   },
-  D = /(-# +)/,
-  w = (0, Chunk364458.Z)([C, R]),
+  w = /(-# +)/,
+  D = (0, Chunk364458.Z)([C, R]),
   x = (0, Chunk364458.Z)([A, R]),
-  L = Chunk25209._p(w),
+  L = Chunk25209._p(D),
   j = Chunk25209._p(x),
   M = {
     max: 1 / 0,
@@ -547,7 +547,7 @@ function V(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: D.exec(r.input)[1],
+    before: w.exec(r.input)[1],
     after: ""
   };
   let i = I["link" === t ? "url" : t];

@@ -73,11 +73,11 @@ let v = {
   N = false,
   P = Chunk70956.Z.Millis.DAY,
   R = 10 * Chunk70956.Z.Millis.HOUR,
-  D = 7;
-var w = function(e) {
+  w = 7;
+var D = function(e) {
   return e.IS_OWNER = "is_owner", e.IS_ADMIN = "is_admin", e.IS_COMMUNITY = "is_community", e.GUILD_SIZE = "guild_size", e.IS_HUB = "is_hub", e.IS_VIEWING = "is_viewing", e.GUILD_PERMISSIONS = "guild_permissions", e.GUILD_SIZE_ALL = "guild_size_all", e
-}(w || {});
-let x = new Set(Object.values(w));
+}(D || {});
+let x = new Set(Object.values(D));
 
 function L() {
   return null == S.lastFetched || Date.now() - S.lastFetched >= P
@@ -153,7 +153,7 @@ function Z(e) {
   let r = null != t,
     i = r && null == S.hiddenSurveys[t.key],
     a = r && M(t);
-  G(D);
+  G(w);
   let o = false;
   A = i && a && !o ? t : null
 }

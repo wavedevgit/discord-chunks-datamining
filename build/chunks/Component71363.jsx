@@ -36,12 +36,12 @@ let C = e => {
     } = e,
     P = i.useRef(null),
     R = i.useRef(null),
-    D = Object.entries((0, b.Z)()).reduce((e, t) => {
+    w = Object.entries((0, b.Z)()).reduce((e, t) => {
       let [n, r] = t;
       returnfalse !== r.canReveal && "upcomingDropUntimed" !== r.name && (e[n] = r), e
     }, {}),
     {
-      analyticsLocations: w
+      analyticsLocations: D
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [x, L] = i.useState(false),
     j = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
@@ -70,7 +70,7 @@ let C = e => {
         [I.hiddenGradient]: !N
       }),
       children: (0, r.jsxs)(f.Gt, {
-        value: w,
+        value: D,
         children: [N ? (0, r.jsx)(g.Z, {
           onBackClick: G
         }) : (0, r.jsx)(h.Z, {
@@ -88,7 +88,7 @@ let C = e => {
           }), (0, r.jsx)(E.Z, {
             className: I.cardCarousel,
             cards: (0, O.ZM)({
-              perksCards: D,
+              perksCards: w,
               variant: y.gM.CARD_CAROUSEL_FIRST_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
@@ -104,7 +104,7 @@ let C = e => {
           }), (0, r.jsx)(E.Z, {
             className: I.cardCarousel,
             cards: (0, O.ZM)({
-              perksCards: D,
+              perksCards: w,
               variant: y.gM.CARD_CAROUSEL_SECOND_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
@@ -120,7 +120,7 @@ let C = e => {
           }), (0, r.jsx)(E.Z, {
             className: I.cardCarousel,
             cards: (0, O.ZM)({
-              perksCards: D,
+              perksCards: w,
               variant: y.gM.CARD_CAROUSEL_THIRD_ROW,
               isPremiumSubscriber: M,
               hideCardsOnNarrowScreen: true,
@@ -135,7 +135,7 @@ let C = e => {
           innerRef: R,
           onChange: e => {
             e && !x && (_.default.track(v.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-              location_stack: w
+              location_stack: D
             }), L(true))
           },
           children: (0, r.jsx)("div", {

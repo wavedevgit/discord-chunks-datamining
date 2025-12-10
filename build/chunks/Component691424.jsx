@@ -382,13 +382,13 @@ let K = {
 function z(e) {
   return F(Z({}, K), {
     link: (0, x.Z)(e),
-    devLink: (0, D.Z)(e),
+    devLink: (0, w.Z)(e),
     emoji: V(e),
     customEmoji: H(e),
     channelMention: (0, P.Z)(e),
     commandMention: (0, R.ZP)(e),
     attachmentLink: (0, N.Z)(e),
     shopLink: (0, L.Z)(e),
-    gameMention: w.Z
+    gameMention: D.Z
   })
 }

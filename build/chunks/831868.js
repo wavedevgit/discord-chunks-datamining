@@ -29,8 +29,8 @@ var f = 0,
   N = 17,
   P = 18,
   R = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0],
-  D = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
-  w = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
+  w = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
+  D = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 7],
   x = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
   L = 512,
   j = Array(576);
@@ -115,16 +115,16 @@ function X() {
   for (o = 0, n = 0; Chunk754793 < g - 1; Chunk754793++)
     for (e = 0, G[Chunk754793] = require; module < 1 << R[Chunk754793]; module++) U[require++] = Chunk754793;
   for (U[require - 1] = Chunk754793, s = 0, o = 0; Chunk754793 < 16; Chunk754793++)
-    for (e = 0, Z[Chunk754793] = s; module < 1 << D[Chunk754793]; module++) k[s++] = Chunk754793;
+    for (e = 0, Z[Chunk754793] = s; module < 1 << w[Chunk754793]; module++) k[s++] = Chunk754793;
   for (s >>= 7; Chunk754793 < y; Chunk754793++)
-    for (e = 0, Z[Chunk754793] = s << 7; module < 1 << D[Chunk754793] - 7; module++) k[256 + s++] = Chunk754793;
+    for (e = 0, Z[Chunk754793] = s << 7; module < 1 << w[Chunk754793] - 7; module++) k[256 + s++] = Chunk754793;
   for (t = 0; exports <= S; exports++) l[exports] = 0;
   for (e = 0; module <= 143;) j[2 * module + 1] = 8, module++, l[8]++;
   for (; module <= 255;) j[2 * module + 1] = 9, module++, l[9]++;
   for (; module <= 279;) j[2 * module + 1] = 7, module++, l[7]++;
   for (; module <= 287;) j[2 * module + 1] = 8, module++, l[8]++;
   for (Q(j, b + 1, l), e = 0; module < y; module++) M[2 * module + 1] = 5, M[2 * module] = K(module, 5);
-  r = new B(j, R, E + 1, b, S), i = new B(M, D, 0, y, S), a = new B([], w, 0, O, T)
+  r = new B(j, R, E + 1, b, S), i = new B(M, w, 0, y, S), a = new B([], D, 0, O, T)
 }
 
 function J(e) {
@@ -157,7 +157,7 @@ function en(e, t, n) {
 function er(e, t, n) {
   var r, i, a, o, s = 0;
   if (0 !== e.last_lit)
-    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = R[a]) && Y(e, i -= G[a], o), W(e, a = V(--r), n), 0 !== (o = D[a]) && Y(e, r -= Z[a], o)); while (s < e.last_lit);
+    do r = e.pending_buf[e.d_buf + 2 * s] << 8 | e.pending_buf[e.d_buf + 2 * s + 1], i = e.pending_buf[e.l_buf + s], s++, 0 === r ? W(e, i, t) : (W(e, (a = U[i]) + E + 1, t), 0 !== (o = R[a]) && Y(e, i -= G[a], o), W(e, a = V(--r), n), 0 !== (o = w[a]) && Y(e, r -= Z[a], o)); while (s < e.last_lit);
   W(e, C, t)
 }
 

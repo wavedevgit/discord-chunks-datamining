@@ -141,7 +141,7 @@ function Z(e) {
     value: x,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: D.intl.format(D.t["/PTB2E"], {
+      children: w.intl.format(w.t["/PTB2E"], {
         helpCenterLink: S.Z.getArticleURL(R.BhN.GUILD_PROFILES)
       })
     }), null != a ? (0, r.jsxs)(r.Fragment, {
@@ -153,8 +153,8 @@ function Z(e) {
       }), (0, r.jsx)(h.Z, {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
-          className: w.profilePreviewTitle,
-          children: D.intl.formatToPlainString(D.t.Tc0slG, {
+          className: D.profilePreviewTitle,
+          children: w.intl.formatToPlainString(w.t.Tc0slG, {
             guildName: null == a ? true : a.name
           })
         }),
@@ -171,7 +171,7 @@ function Z(e) {
           user: j,
           guildId: null == a ? true : a.id,
           nameplate: z,
-          className: null == z ? w.nameplatePreviewPlaceholder : true,
+          className: null == z ? D.nameplatePreviewPlaceholder : true,
           isHighlighted: true
         })),
         children: (0, r.jsx)(N.Z, {})

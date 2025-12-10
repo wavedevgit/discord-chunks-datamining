@@ -65,12 +65,12 @@ function R(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = {
+let D = {
     [Chunk397047.fA]: {
       title: Chunk388032.t.sfGgOG,
       body: Chunk388032.t.igiSKe,
@@ -94,7 +94,7 @@ let w = {
       asset: Chunk180964.Z
     }
   },
-  x = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? w[e].logos.dark : w[e].logos.light,
+  x = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? D[e].logos.dark : D[e].logos.light,
   L = e => {
     let {
       recurrence: t
@@ -134,7 +134,7 @@ let w = {
       })
     })
   },
-  j = () => Object.entries(w).map(e => {
+  j = () => Object.entries(D).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
       className: T.promoCardContainer,
@@ -228,7 +228,7 @@ let w = {
                     promotionId: e.id,
                     analyticsLocations: []
                   }).then(n => {
-                    c([...l.slice(0, t), D(P({}, e), {
+                    c([...l.slice(0, t), w(P({}, e), {
                       code: n.code
                     }), ...l.slice(t + 1)])
                   }).catch(t => {
@@ -285,7 +285,7 @@ let w = {
     let {
       promotion: n
     } = e;
-    return null != (t = w[n.outboundTitle.toLowerCase()]) ? t : null
+    return null != (t = D[n.outboundTitle.toLowerCase()]) ? t : null
   },
   G = e => {
     let {

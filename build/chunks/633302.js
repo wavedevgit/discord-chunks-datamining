@@ -129,11 +129,11 @@ function R() {
   return c
 }
 
-function D() {
+function w() {
   return Object.keys(b)
 }
 
-function w(e) {
+function D(e) {
   let t = I(e);
   return null != t ? A(t) : null
 }
@@ -231,13 +231,13 @@ function Y(e) {
 }
 
 function W(e) {
-  return w(Y(d.reduce((e, t) => e.replace(t, ""), e), false))
+  return D(Y(d.reduce((e, t) => e.replace(t, ""), e), false))
 }
 let K = {
   getDefaultDiversitySurrogate: R,
   setDefaultDiversitySurrogate: P,
-  getCategories: D,
-  getByName: w,
+  getCategories: w,
+  getByName: D,
   getByCategory: L,
   contentHasUnicodeOrEmoji: j,
   translateInlineEmojiToSurrogates: M,

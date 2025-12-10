@@ -77,8 +77,8 @@ function f(e) {
   } = e, S = (0, a.Z)(), I = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), C = _(), A = Math.min(null != m ? m : 1 / 0, C.offsetWidth), N = null != m ? Math.max(0, C.offsetWidth - m) : 0, {
     dirty: P,
     chunkStart: R,
-    chunkEnd: D,
-    forceUpdateOnChunkChange: w
+    chunkEnd: w,
+    forceUpdateOnChunkChange: D
   } = (0, o.Z)({
     chunkSize: p,
     getScrollerState: _,
@@ -99,9 +99,9 @@ function f(e) {
     paddingHorizontal: O,
     marginLeft: N / 2,
     dir: v
-  }), T.computeVisibleSections(Math.max(0, R * p), D * p), T.getState()), [P, T, t, n, s, c, f, R, D, p, h, g, E, b, y, O, A, N, v]), u(l({}, I.current), {
+  }), T.computeVisibleSections(Math.max(0, R * p), w * p), T.getState()), [P, T, t, n, s, c, f, R, w, p, h, g, E, b, y, O, A, N, v]), u(l({}, I.current), {
     masonryComputer: T,
-    forceUpdateOnChunkChange: w,
+    forceUpdateOnChunkChange: D,
     forceUpdate: S
   })
 }

@@ -173,8 +173,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       {
         getItemProps: eP,
         getRowProps: eR,
-        gridContainerProps: eD,
-        handleGridContainerKeyDown: ew,
+        gridContainerProps: ew,
+        handleGridContainerKeyDown: eD,
         isUsingKeyboardNavigation: ex
       } = (0, P.t)({
         columnCounts: eA,
@@ -223,11 +223,11 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         className: U.header,
         children: (0, r.jsx)(x.Z, {
           ref: er,
-          onKeyDown: ew,
+          onKeyDown: eD,
           stickersListRef: ee,
           channel: c
         })
-      }), ec ? (0, r.jsx)(D.Z, {
+      }), ec ? (0, r.jsx)(w.Z, {
         className: U.emptyState,
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
@@ -235,8 +235,8 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           ref: Q,
           className: U.listWrapper,
           id: M.Vr
-        }, eD), {
-          children: null != eu ? (0, r.jsx)(w.Z, {
+        }, ew), {
+          children: null != eu ? (0, r.jsx)(D.Z, {
             ref: ee,
             collapsedStickersCategories: ef,
             filteredStickers: e_,

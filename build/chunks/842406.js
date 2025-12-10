@@ -115,11 +115,11 @@ function R(e) {
   return h(e, p)
 }
 
-function D(e) {
+function w(e) {
   return l && h(e, _)
 }
 
-function w(e) {
+function D(e) {
   return c && h(e, m)
 }
 exports.isSharedArrayBuffer = A, exports.isAsyncFunction = function(e) {
@@ -132,8 +132,8 @@ exports.isSharedArrayBuffer = A, exports.isAsyncFunction = function(e) {
   return "[object Generator]" === u(e)
 }, exports.isWebAssemblyCompiledModule = function(e) {
   return "[object WebAssembly.Module]" === u(e)
-}, exports.isNumberObject = N, exports.isStringObject = P, exports.isBooleanObject = R, exports.isBigIntObject = D, exports.isSymbolObject = w, exports.isBoxedPrimitive = function(e) {
-  return N(e) || P(e) || R(e) || D(e) || w(e)
+}, exports.isNumberObject = N, exports.isStringObject = P, exports.isBooleanObject = R, exports.isBigIntObject = w, exports.isSymbolObject = D, exports.isBoxedPrimitive = function(e) {
+  return N(e) || P(e) || R(e) || w(e) || D(e)
 }, exports.isAnyArrayBuffer = function(e) {
   return "undefined" != typeof Uint8Array && (v(e) || A(e))
 }, ["isProxy", "isExternal", "isModuleNamespaceObject"].forEach(function(e) {

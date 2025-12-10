@@ -57,11 +57,11 @@ function b(e) {
     v(e)
   }
 
-  function D(e) {
+  function w(e) {
     C(e)
   }
 
-  function w() {
+  function D() {
     return null == b ? null : (0, r.jsx)("div", {
       className: h.marginBottom20,
       children: (0, r.jsx)(l.M14, {
@@ -100,7 +100,7 @@ function b(e) {
     actions: M,
     onClose: t,
     transitionState: n,
-    children: [w(), (0, r.jsxs)(f.Z, {
+    children: [D(), (0, r.jsxs)(f.Z, {
       direction: f.Z.Direction.VERTICAL,
       align: f.Z.Align.START,
       children: [(0, r.jsx)("div", {
@@ -129,7 +129,7 @@ function b(e) {
             label: _.intl.string(_.t.uaksyW),
             key: "proxy"
           }],
-          onChange: D,
+          onChange: w,
           placeholder: "URL Origin Type"
         })
       }), x()]

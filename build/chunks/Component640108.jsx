@@ -1080,12 +1080,12 @@ class et extends(i = Chunk473749.PureComponent) {
       } = this.mediaRef, {
         disableArrowKeySeek: n
       } = this.props;
-      if (e.which === w.yXg.SPACE) e.preventDefault(), this.setPlay(!this.state.playing);
-      else if (e.which !== w.yXg.ARROW_LEFT || null == t || n)
-        if (e.which !== w.yXg.ARROW_RIGHT || null == t || n) {
-          if (e.which >= w.yXg.DIGIT_0 && e.which <= w.yXg.DIGIT_9 && null != t) {
+      if (e.which === D.yXg.SPACE) e.preventDefault(), this.setPlay(!this.state.playing);
+      else if (e.which !== D.yXg.ARROW_LEFT || null == t || n)
+        if (e.which !== D.yXg.ARROW_RIGHT || null == t || n) {
+          if (e.which >= D.yXg.DIGIT_0 && e.which <= D.yXg.DIGIT_9 && null != t) {
             e.preventDefault(), e.stopPropagation();
-            let n = (e.which - w.yXg.DIGIT_0) / 10;
+            let n = (e.which - D.yXg.DIGIT_0) / 10;
             t.currentTime = t.duration * n, this.setPlay(true)
           }
         } else {

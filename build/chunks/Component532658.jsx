@@ -79,9 +79,9 @@ function k(e, t) {
 
 function U(e) {
   switch (e) {
-    case D.ipw.LARGE:
+    case w.ipw.LARGE:
       return c.EFr.SIZE_32;
-    case D.ipw.SMALL:
+    case w.ipw.SMALL:
       return c.EFr.SIZE_24;
     default:
       return c.EFr.SIZE_32
@@ -207,7 +207,7 @@ let K = Chunk473749.memo(function(e) {
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-default",
-            children: w.intl.format(w.t.uFcReq, {
+            children: D.intl.format(D.t.uFcReq, {
               nick: t
             })
           })
@@ -257,13 +257,13 @@ let K = Chunk473749.memo(function(e) {
       nick: u,
       displayNameMode: d,
       displayUserMode: f,
-      size: h = D.ipw.LARGE,
+      size: h = w.ipw.LARGE,
       onClick: g,
       onContextMenu: E,
       context: O,
       guildId: T,
       isSettingsPreview: P = false,
-      voiceState: w,
+      voiceState: D,
       showStreamPreview: L,
       onShowStreamPreview: j,
       onWatchStream: M,
@@ -274,13 +274,13 @@ let K = Chunk473749.memo(function(e) {
       width: V
     } = (0, _.ZP)(), {
       showConnectedAnimation: H
-    } = W(k, P), Y = null == w ? true : w.sessionId, Q = t.id, X = s.id, [J] = (0, l.e7)([A.Z], () => {
+    } = W(k, P), Y = null == D ? true : D.sessionId, Q = t.id, X = s.id, [J] = (0, l.e7)([A.Z], () => {
       var e;
       return [null != (e = A.Z.getVoiceStateForChannel(Q, X)) ? e : A.Z.getVoiceStateForSession(X, Y), A.Z.getVoiceStateVersion()]
-    }, [Q, X, Y], N.Q), $ = P ? w : null != J ? J : w, [ee, et, en] = (0, l.Wu)([C.Z], () => B ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), false] : [!C.Z.isSupported() || C.Z.isLocalMute(s.id), false, C.Z.isLocalVideoDisabled(s.id)], [B, s.id]), er = (0, l.e7)([S.Z], () => {
+    }, [Q, X, Y], N.Q), $ = P ? D : null != J ? J : D, [ee, et, en] = (0, l.Wu)([C.Z], () => B ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), false] : [!C.Z.isSupported() || C.Z.isLocalMute(s.id), false, C.Z.isLocalVideoDisabled(s.id)], [B, s.id]), er = (0, l.e7)([S.Z], () => {
       let e = S.Z.getCurrentUserActiveStream();
       return null != e && e.ownerId !== s.id && S.Z.getViewerIds(e).filter(e => e === s.id).length > 0
-    }, [s.id]), ei = P && (null == w ? true : w.discoverable), ea = (0, m.Z)({
+    }, [s.id]), ei = P && (null == D ? true : D.discoverable), ea = (0, m.Z)({
       userId: s.id,
       context: O
     }) || ei, eo = (0, l.e7)([S.Z], () => S.Z.getStreamForUser(s.id, T)), es = null != eo, el = i.useCallback(() => {
@@ -296,14 +296,14 @@ let K = Chunk473749.memo(function(e) {
       },
       onAction: () => M,
       previewIsOpen: L,
-      location: D.Sbl.UNLOCKED_OVERLAY,
+      location: w.Sbl.UNLOCKED_OVERLAY,
       hideTip: true
     }), [s, t, eo, L, el, M]), eu = i.useCallback(e => {
       a || null == E || E(e, s)
     }, [a, E, s]), ed = i.useCallback(() => {
       a || null != es && j(s.id)
     }, [a, j, es, s]), ef = a || P, ep = i.useMemo(() => U(h), [h]), e_ = i.useMemo(() => G(ep), [ep]), em = i.useMemo(() => s.getAvatarURL(T, e_), [s, T, e_]);
-    return f === D.OYC.ONLY_WHILE_SPEAKING && ef && !ea || null == $ ? null : n ? (0, r.jsxs)(c.P3F, {
+    return f === w.OYC.ONLY_WHILE_SPEAKING && ef && !ea || null == $ ? null : n ? (0, r.jsxs)(c.P3F, {
       innerRef: Z,
       className: o()(x.voiceUser, {
         [x.speaking]: ea,
@@ -315,7 +315,7 @@ let K = Chunk473749.memo(function(e) {
       onContextMenu: eu,
       onMouseEnter: ed,
       onMouseLeave: el,
-      children: [ef && (d === D.wC$.NEVER || !ea && d === D.wC$.ONLY_WHILE_SPEAKING) ? null : (0, r.jsx)(c.yRy, {
+      children: [ef && (d === w.wC$.NEVER || !ea && d === w.wC$.ONLY_WHILE_SPEAKING) ? null : (0, r.jsx)(c.yRy, {
         targetElementRef: F,
         position: "left",
         renderPopout: ec,
@@ -347,7 +347,7 @@ let K = Chunk473749.memo(function(e) {
             className: x.clanTag,
             disableGuildProfile: true,
             onShowProfile: () => {
-              (0, R.Ws)(D.Odu.VOICE_V3, {
+              (0, R.Ws)(w.Odu.VOICE_V3, {
                 type: R.Qu.VOICE,
                 value: R.bk.PROFILE_OPENED,
                 userId: s.id
@@ -398,7 +398,7 @@ let K = Chunk473749.memo(function(e) {
         connectedOn: k,
         isSettingsPreview: P,
         voiceBackgroundWidth: V
-      }), ef && (d === D.wC$.NEVER || !ea && d === D.wC$.ONLY_WHILE_SPEAKING) ? null : (0, r.jsx)(c.yRy, {
+      }), ef && (d === w.wC$.NEVER || !ea && d === w.wC$.ONLY_WHILE_SPEAKING) ? null : (0, r.jsx)(c.yRy, {
         targetElementRef: F,
         position: "right",
         renderPopout: ec,
@@ -421,7 +421,7 @@ let K = Chunk473749.memo(function(e) {
             className: x.clanTag,
             disableGuildProfile: true,
             onShowProfile: () => {
-              (0, R.Ws)(D.Odu.VOICE_V3, {
+              (0, R.Ws)(w.Odu.VOICE_V3, {
                 type: R.Qu.VOICE,
                 value: R.bk.PROFILE_OPENED,
                 userId: s.id
@@ -469,12 +469,12 @@ let K = Chunk473749.memo(function(e) {
     i.useEffect(() => {
       c && N(null)
     }, [c]), i.useEffect(() => {
-      null != I && (0, R.Ws)(D.Odu.VOICE_V3, {
+      null != I && (0, R.Ws)(w.Odu.VOICE_V3, {
         type: R.Qu.GO_LIVE,
         value: R.bk.STREAM_PREVIEWED
       })
     }, [I]);
-    let w = e => {
+    let D = e => {
         C(e)
       },
       x = (e, t) => {
@@ -482,7 +482,7 @@ let K = Chunk473749.memo(function(e) {
           let {
             default: e
           } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
-          return (0, R.Ws)(D.Odu.VOICE_V3, {
+          return (0, R.Ws)(w.Odu.VOICE_V3, {
             type: R.Qu.VOICE,
             value: R.bk.SETTINGS_OPENED,
             userId: t.id
@@ -492,9 +492,9 @@ let K = Chunk473749.memo(function(e) {
             guildId: null == a ? true : a.guild_id,
             mediaEngineContext: g,
             onShowProfile: () => N(t.id),
-            appContext: D.IlC.OVERLAY,
+            appContext: w.IlC.OVERLAY,
             onWatchStream: () => {
-              (0, R.Ws)(D.Odu.VOICE_V3, {
+              (0, R.Ws)(w.Odu.VOICE_V3, {
                 type: R.Qu.GO_LIVE,
                 value: R.bk.ENABLED,
                 userId: t.id
@@ -506,14 +506,14 @@ let K = Chunk473749.memo(function(e) {
       L = i.useCallback(e => {
         var n, r;
         let i = null == (n = T.Z.getWidget(t)) ? true : n.layoutId,
-          o = null != i ? null == (r = T.Z.getWidgetsForLayout(i)) ? true : r.find(e => e.type === D.Odu.GO_LIVE) : null;
-        null == o || o.pinned || ((0, d.xh)(o.id), f.Z.track(D.rMx.OVERLAY_PIN_TOGGLED, {
+          o = null != i ? null == (r = T.Z.getWidgetsForLayout(i)) ? true : r.find(e => e.type === w.Odu.GO_LIVE) : null;
+        null == o || o.pinned || ((0, d.xh)(o.id), f.Z.track(w.rMx.OVERLAY_PIN_TOGGLED, {
           pinned: true,
           guild_id: null == a ? true : a.guild_id,
           channel_id: null == a ? true : a.id,
           channel_type: null == a ? true : a.type,
-          widget_type: D.Odu.GO_LIVE
-        })), null != e && null != o && (0, R.Ws)(D.Odu.VOICE_V3, {
+          widget_type: w.Odu.GO_LIVE
+        })), null != e && null != o && (0, R.Ws)(w.Odu.VOICE_V3, {
           type: R.Qu.GO_LIVE,
           value: R.bk.ENABLED,
           userId: e.ownerId
@@ -526,7 +526,7 @@ let K = Chunk473749.memo(function(e) {
       user: b,
       guildId: a.guild_id,
       channelId: a.id,
-      appContext: D.IlC.OVERLAY,
+      appContext: w.IlC.OVERLAY,
       shouldShow: A === b.id,
       onRequestClose: () => N(null),
       spacing: 24,
@@ -549,7 +549,7 @@ let K = Chunk473749.memo(function(e) {
           context: g,
           channel: a,
           showStreamPreview: b.id === I,
-          onShowStreamPreview: w,
+          onShowStreamPreview: D,
           onWatchStream: L,
           isSettingsPreview: h
         })

@@ -65,13 +65,13 @@ function R(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -100,7 +100,7 @@ function j(e) {
     isOpen: o,
     setIsOpen: l,
     options: c
-  } = e, u = w(e, ["children", "isCollapsible", "maxOptionsVisible", "isOpen", "setIsOpen", "options"]);
+  } = e, u = D(e, ["children", "isCollapsible", "maxOptionsVisible", "isOpen", "setIsOpen", "options"]);
   let {
     selectionMode: d,
     disabled: f,
@@ -112,7 +112,7 @@ function j(e) {
     customMatchSorter: E,
     matchSorterOptions: b,
     required: O
-  } = u, S = i.useId(), I = i.useRef(null), [T, C] = i.useState(null), [A, N] = i.useState(false), [R, D] = i.useState(""), [x, j] = i.useState(""), {
+  } = u, S = i.useId(), I = i.useRef(null), [T, C] = i.useState(null), [A, N] = i.useState(false), [R, w] = i.useState(""), [x, j] = i.useState(""), {
     options: M,
     loading: k,
     onQueryChange: U
@@ -121,7 +121,7 @@ function j(e) {
     options: c,
     renderOption: m
   }), G = i.useCallback((e, t) => {
-    j(e), D(null != t ? t : e)
+    j(e), w(null != t ? t : e)
   }, []);
   i.useEffect(() => {
     U(R)
@@ -175,17 +175,17 @@ function j(e) {
 function M(e) {
   var {
     ref: t
-  } = e, n = w(e, ["ref"]);
+  } = e, n = D(e, ["ref"]);
   let {
     fieldProps: a,
     props: o
   } = (0, c.X)(n), s = (0, h.dQu)(_.Z.modules.select.MAX_WIDTH), l = i.useMemo(() => ({
     horizontalControlColumnWidth: "minmax(".concat(s, ", auto)")
   }), [s]);
-  return (0, r.jsx)(c.g, D(P({}, a), {
+  return (0, r.jsx)(c.g, w(P({}, a), {
     "data-mana-component": "combobox",
     layoutConfig: l,
-    children: (0, r.jsx)(k, D(P({}, o), {
+    children: (0, r.jsx)(k, w(P({}, o), {
       ref: t
     }))
   }))
@@ -206,7 +206,7 @@ function k(e) {
     onKeyDown: v,
     wrapTags: N,
     ref: R
-  } = e, w = i.useRef(null), x = i.useRef(null), L = i.useRef(null), j = i.useContext(u.z), {
+  } = e, D = i.useRef(null), x = i.useRef(null), L = i.useRef(null), j = i.useContext(u.z), {
     activeDescendantIndex: M,
     setActiveDescendantIndex: k,
     selectionMode: U,
@@ -309,9 +309,9 @@ function k(e) {
           Q("single" === U ? [r] : (0, S.cq)(U, et, r));
           break;
         case "Backspace":
-          if ("multiple" === U && "" === er && et.length > 0 && null != w.current) {
+          if ("multiple" === U && "" === er && et.length > 0 && null != D.current) {
             var i;
-            e.preventDefault(), e.stopPropagation(), null == (i = w.current.lastChild) || i.focus()
+            e.preventDefault(), e.stopPropagation(), null == (i = D.current.lastChild) || i.focus()
           }
           break;
         case "Escape":
@@ -337,7 +337,7 @@ function k(e) {
         let e = Array.from(et)[0];
         return (0, r.jsx)("div", {
           className: C.singleSelectOption,
-          children: (0, r.jsx)(b.W, D(P({}, e), {
+          children: (0, r.jsx)(b.W, w(P({}, e), {
             onClick: em,
             "aria-hidden": true,
             inInput: true
@@ -356,7 +356,7 @@ function k(e) {
         }
       });
       return (0, r.jsx)(p.QSK, {
-        listRef: w,
+        listRef: D,
         label: T.intl.string(I.default.VMNfsY),
         items: e,
         layout: "inline",

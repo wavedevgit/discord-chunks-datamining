@@ -92,8 +92,8 @@ function C(e) {
       activeDescendantIndex: C,
       shouldFocusWrap: P = false,
       renderListItem: R,
-      renderEmptyState: D,
-      maxVisibleItems: w = 5,
+      renderEmptyState: w,
+      maxVisibleItems: D = 5,
       loading: x = false,
       onBlur: L,
       onFocus: j,
@@ -151,7 +151,7 @@ function C(e) {
   });
   else if (G.length > 0) t = (0, r.jsx)(p._2, {
     style: {
-      height: null != w ? "".concat(Math.min(G.length, w) * T, "px") : "100%"
+      height: null != D ? "".concat(Math.min(G.length, D) * T, "px") : "100%"
     },
     role: true,
     rowHeight: T,
@@ -178,7 +178,7 @@ function C(e) {
   });
   else {
     var q;
-    t = null != (q = null == D ? true : D()) ? q : (0, r.jsx)(h.z, {})
+    t = null != (q = null == w ? true : w()) ? q : (0, r.jsx)(h.z, {})
   }
   return (0, r.jsx)(c.bG, {
     navigator: H,
@@ -200,7 +200,7 @@ function C(e) {
           role: "listbox",
           "aria-multiselectable": "multiple" === d,
           className: o()(E.listBox, {
-            [E.scrollable]: G.length > w
+            [E.scrollable]: G.length > D
           }),
           "data-mana-component": "listbox",
           children: t

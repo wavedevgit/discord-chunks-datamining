@@ -49,15 +49,15 @@ function E(e, t, n) {
     P = t.isValueInvalid && !!("highlightedRange" in t ? !t.anchorDate && t.highlightedRange && b.compare(t.highlightedRange.start) >= 0 && 0 >= b.compare(t.highlightedRange.end) : t.value && (0, a.KC)(t.value, b));
   P && (T = true), b = (0, o.v)(b, a.N9);
   let R = (0, h.useMemo)(() => b.toDate(t.timeZone), [b, t.timeZone]),
-    D = (0, a.zk)(b, t.timeZone),
-    w = (0, h.useMemo)(() => {
+    w = (0, a.zk)(b, t.timeZone),
+    D = (0, h.useMemo)(() => {
       let e = "";
-      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.KC)(b, t.value.start) || (0, a.KC)(b, t.value.end)) && (e = v + ", "), e += I.format(R), D ? e = S.format(T ? "todayDateSelected" : "todayDate", {
+      return "highlightedRange" in t && t.value && !t.anchorDate && ((0, a.KC)(b, t.value.start) || (0, a.KC)(b, t.value.end)) && (e = v + ", "), e += I.format(R), w ? e = S.format(T ? "todayDateSelected" : "todayDate", {
         date: e
       }) : T && (e = S.format("dateSelected", {
         date: e
       })), t.minValue && (0, a.KC)(b, t.minValue) ? e += ", " + S.format("minimumDate") : t.maxValue && (0, a.KC)(b, t.maxValue) && (e += ", " + S.format("maximumDate")), e
-    }, [I, R, S, T, D, b, t, v]),
+    }, [I, R, S, T, w, b, t, v]),
     x = "";
   "anchorDate" in t && C && !t.isReadOnly && N && (x = t.anchorDate ? S.format("finishRangeSelectionPrompt") : S.format("startRangeSelectionPrompt"));
   let L = (0, s.P)(x),
@@ -136,7 +136,7 @@ function E(e, t, n) {
       tabIndex: E,
       role: "button",
       "aria-disabled": !N || true,
-      "aria-label": w,
+      "aria-label": D,
       "aria-invalid": P || true,
       "aria-describedby": [P ? O : true, L["aria-describedby"]].filter(Boolean).join(" ") || true,
       onPointerEnter(e) {

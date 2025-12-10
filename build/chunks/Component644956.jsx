@@ -167,7 +167,7 @@ function B(e) {
         t = null == n || n === _ ? e : e.filter(e => e.roles.includes(n));
       return o()(t).filter(e => null != R.default.getUser(e.userId)).sortBy(e => {
         var t;
-        return null != (t = e.nick) ? t : D.ZP.getName(R.default.getUser(e.userId))
+        return null != (t = e.nick) ? t : w.ZP.getName(R.default.getUser(e.userId))
       }).value()
     }, [a, n, _]),
     h = (0, l.e7)([N.Z], () => {
@@ -182,7 +182,7 @@ function B(e) {
       role: h
     }, e.userId)) : [], [s, a, h, m]);
   if (null == h) return null;
-  let O = null == E ? h.name : w.intl.formatToPlainString(w.t.CuAQkJ, {
+  let O = null == E ? h.name : D.intl.formatToPlainString(D.t.CuAQkJ, {
     title: h.name,
     count: E
   });
@@ -196,7 +196,7 @@ function B(e) {
         className: x.roleScroller,
         children: [(0, r.jsx)(g.Z, {
           className: x.roleHeader,
-          "aria-label": w.intl.formatToPlainString(w.t.Uaqbke, {
+          "aria-label": D.intl.formatToPlainString(D.t.Uaqbke, {
             title: h.name,
             count: y.length
           }),
@@ -206,7 +206,7 @@ function B(e) {
           })
         }), y, null == E || E <= y.length ? null : (0, r.jsx)(g.Z, {
           className: x.roleHeader,
-          children: w.intl.formatToPlainString(w.t["9oMmZC"], {
+          children: D.intl.formatToPlainString(D.t["9oMmZC"], {
             count: E - y.length
           })
         })]

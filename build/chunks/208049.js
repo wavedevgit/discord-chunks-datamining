@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   $d: () => R,
-  AA: () => D,
+  AA: () => w,
   Db: () => G,
   Dx: () => P,
   R: () => k,
-  TB: () => w,
+  TB: () => D,
   XE: () => j,
   hs: () => x,
   w: () => N,
@@ -165,7 +165,7 @@ async function R(e) {
   });
   return (0, p.o3)(l.body, t)
 }
-async function D(e, t) {
+async function w(e, t) {
   await a.tn.del({
     url: g.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
     oldFormErrors: true,
@@ -173,7 +173,7 @@ async function D(e, t) {
   })
 }
 
-function w(e) {
+function D(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= E.oX ? (s.Z.show({
     title: b.intl.string(b.t["+XYXtZ"]),
     body: b.intl.formatToPlainString(b.t.JaIyFi, {

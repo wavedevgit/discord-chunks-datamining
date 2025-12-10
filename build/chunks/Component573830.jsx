@@ -2,7 +2,7 @@
 /** chunk id: 573830, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => D
+  J: () => w
 }), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -97,7 +97,7 @@ function R(e, t, n) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     checked: t,
     disabled: n,
@@ -110,7 +110,7 @@ function D(e) {
     innerRef: I
   } = e, {
     reducedMotion: T
-  } = i.useContext(f.S), D = i.useRef(null), w = i.useRef(null), x = null != I ? I : w, L = (0, l.l)({
+  } = i.useContext(f.S), w = i.useRef(null), D = i.useRef(null), x = null != I ? I : D, L = (0, l.l)({
     isSelected: t,
     onChange: E,
     isDisabled: n
@@ -148,14 +148,14 @@ function D(e) {
     })
   };
   return (0, r.jsx)(p.tE, b(g({}, y), {
-    ringTarget: D,
+    ringTarget: w,
     focusTarget: x,
     within: true,
     offset: false,
     children: (0, r.jsxs)("label", b(g({}, M), {
       className: m.container,
       children: [(0, r.jsx)(s.animated.div, b(g({}, U), {
-        ref: D,
+        ref: w,
         className: m.switchIndicator,
         "data-size": "md",
         "data-mana-component": "switch",
