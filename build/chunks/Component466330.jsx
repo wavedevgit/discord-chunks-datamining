@@ -1,20 +1,18 @@
 /** Chunk was on 99905 **/
 /** chunk id: 466330, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk340541 = require("./340541.js"),
   Chunk159300 = require("./159300.js"),
-  Chunk984933 = require("./984933.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(n) {
+function s(n) {
   for (var e = 1; e < arguments.length; e++) {
     var t = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(t);
@@ -33,46 +31,38 @@ function d(n) {
   return n
 }
 
-function E(n) {
+function b(n) {
   let {
     source: e,
     guild: t,
     channel: r,
-    stageInstance: i
-  } = n, b = (0, l.e7)([a.ZP], () => null != t ? a.ZP.getDefaultChannel(t.id, true, s.Plq.CREATE_INSTANT_INVITE) : null), d = (0, l.e7)([u.Z], () => (0, o.b)(u.Z, t, r, i)), E = (0, c._k)({
-    location: "invite_people_menu_item"
-  }), f = E.isInCallEntrypointEnabled || E.isVoiceChannelEntrypointEnabled || d && null != r ? r : b, O = p(e, t, f), j = y(e, f);
-  return d ? O : j
+    stageInstance: l
+  } = n, a = (0, c.e7)([o.Z], () => (0, i.b)(o.Z, t, r, l)), u = f(e, t, r), s = O(e, r);
+  return a ? u : s
 }
 
-function f(n, e) {
-  let t = (0, c.LK)({
-    location: "invite_menu_item"
-  });
-  if (t.isGuildEntrypointEnabled && null != e && [s.t4x.GUILD_HEADER, s.t4x.GUILD_CONTEXT_MENU].includes(e)) return b.intl.string(b.t.Sd8Ixw);
-  if (null == n) return t.isGuildEntrypointEnabled ? b.intl.string(b.t.Sd8Ixw) : b.intl.string(b.t.BN75l9);
-  let r = n.type === s.d4z.GUILD_VOICE;
-  return t.isVoiceChannelEntrypointEnabled && r ? b.intl.string(b.t["EE+P0H"]) : t.isTextChannelEntrypointEnabled ? b.intl.string(b.t["0jeAXt"]) : b.intl.string(b.t.BN75l9)
+function d(n, e) {
+  return null != e && [a.t4x.GUILD_HEADER, a.t4x.GUILD_CONTEXT_MENU].includes(e) || null == n ? u.intl.string(u.t.Sd8Ixw) : n.type === a.d4z.GUILD_VOICE ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["0jeAXt"])
 }
-let p = (n, e, l) => {
+let f = (n, e, c) => {
     if (null == e) return null;
-    let c = f(l, n);
-    return (0, r.jsx)(i.sNh, {
+    let i = d(c, n);
+    return (0, r.jsx)(l.sNh, {
       id: "invite-people",
-      label: c,
+      label: i,
       color: "brand",
-      icon: n === s.t4x.GUILD_HEADER ? i.ejJ : true,
-      action: () => (0, i.ZDy)(async () => {
+      icon: n === a.t4x.GUILD_HEADER ? l.ejJ : true,
+      action: () => (0, l.ZDy)(async () => {
         let {
-          default: i
+          default: l
         } = await Promise.all([t.e("7654"), t.e("89772")]).then(t.bind(t, 560114));
         return t => {
-          var c, o;
-          return (0, r.jsx)(i, (c = d({}, t), o = o = {
+          var i, o;
+          return (0, r.jsx)(l, (i = s({}, t), o = o = {
             guild: e,
-            channel: l,
+            channel: c,
             source: n
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(o)) : (function(n, e) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(n, e) {
             var t = Object.keys(n);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(n);
@@ -80,24 +70,24 @@ let p = (n, e, l) => {
             }
             return t
           })(Object(o)).forEach(function(n) {
-            Object.defineProperty(c, n, Object.getOwnPropertyDescriptor(o, n))
-          }), c))
+            Object.defineProperty(i, n, Object.getOwnPropertyDescriptor(o, n))
+          }), i))
         }
       })
     })
   },
-  y = (n, e) => {
-    let l = f(e, n);
-    return (0, r.jsx)(i.sNh, {
+  O = (n, e) => {
+    let c = d(e, n);
+    return (0, r.jsx)(l.sNh, {
       id: "invite-people",
-      label: l,
+      label: c,
       color: "brand",
-      icon: n === s.t4x.GUILD_HEADER ? i.ejJ : true,
-      action: () => (0, i.ZDy)(async () => {
+      icon: n === a.t4x.GUILD_HEADER ? l.ejJ : true,
+      action: () => (0, l.ZDy)(async () => {
         let {
           default: n
         } = await t.e("18332").then(t.bind(t, 633057));
-        return e => (0, r.jsx)(n, d({}, e))
+        return e => (0, r.jsx)(n, s({}, e))
       })
     })
   }

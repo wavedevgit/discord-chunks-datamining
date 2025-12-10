@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk762762 = require("./762762.js"),
+  Chunk448222 = require("./448222.js"),
   Chunk973772 = require("./973772.js"),
-  Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk810878 = require("./810878.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -34,7 +34,7 @@ function b(e) {
     isLoading: E,
     error: S,
     onShowDeactivate: I
-  } = (0, f.ZP)(l, b), P = (0, d.ZP)(l, b), N = P.type !== h.A3.INACTIVE, {
+  } = (0, d.Z)(l, b), P = (0, f.ZP)(l, b), N = P.type !== h.A3.INACTIVE, {
     disabled: Z,
     reason: w
   } = (0, u.Z)(l, b, N), T = null != w ? {
@@ -125,7 +125,9 @@ function b(e) {
           variant: N ? "secondary" : "primary",
           "aria-label": g.intl.string(N ? p.default.TZsu1U : p.default.gSxlHf),
           disabled: Z,
-          onClick: N ? I : C,
+          onClick: e => {
+            e.stopPropagation(), N ? I() : C()
+          },
           loading: E,
           fullWidth: v,
           size: null != O ? O : _ ? "md" : true,

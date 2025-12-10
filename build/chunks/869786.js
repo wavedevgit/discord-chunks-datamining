@@ -2,7 +2,6 @@
 /** chunk id: 869786, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container_f37cb1",
-  clickable: "clickable_f37cb1",
   animatedBannerHoverLayer: "animatedBannerHoverLayer_f37cb1",
   animatedContainer: "animatedContainer_f37cb1",
   bannerImage: "bannerImage_f37cb1",
@@ -11,7 +10,6 @@ module.exports = {
   header: "header_f37cb1",
   headerContent: "headerContent_f37cb1",
   primaryInfo: "primaryInfo_f37cb1",
-  headerButton: "headerButton_f37cb1",
   headerChildren: "headerChildren_f37cb1",
   communityInfoContainer: "communityInfoContainer_f37cb1",
   hasSubheader: "hasSubheader_f37cb1",
@@ -20,16 +18,14 @@ module.exports = {
   communityInfoPill: "communityInfoPill_f37cb1",
   communityIcon: "communityIcon_f37cb1",
   bannerVisible: "bannerVisible_f37cb1",
-  selected: "selected_f37cb1",
   hasBanner: "hasBanner_f37cb1",
   name: "name_f37cb1",
   favoritesIcon: "favoritesIcon_f37cb1",
+  guildDropdown: "guildDropdown_f37cb1",
+  guildBadgeAndName: "guildBadgeAndName_f37cb1",
+  inviteButton: "inviteButton_f37cb1",
   themedHeaderMobile: "themedHeaderMobile_f37cb1",
   headerEllipseForeground: "headerEllipseForeground_f37cb1",
   headerEllipseBackdrop: "headerEllipseBackdrop_f37cb1",
-  headerGlass: "headerGlass_f37cb1",
-  invitesRefresh: "invitesRefresh_f37cb1",
-  guildDropdown: "guildDropdown_f37cb1",
-  guildBadgeAndName: "guildBadgeAndName_f37cb1",
-  inviteButton: "inviteButton_f37cb1"
+  headerGlass: "headerGlass_f37cb1"
 }

@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk434404 = require("./434404.js"),
   Chunk905128 = require("./905128.js"),
+  Chunk238343 = require("./238343.jsx"),
   Chunk639777 = require("./639777.js"),
-  Chunk279604 = require("./279604.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk810878 = require("./810878.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
 
 function x(e, t) {
   var x;
-  let _ = null != (x = (0, c.Z)(t)) && x,
+  let _ = null != (x = (0, d.Z)(t)) && x,
     b = (0, o.e7)([u.Z], () => {
       var e;
       return null == (e = u.Z.getStateForGuild(t)) ? true : e.allPowerups
@@ -37,11 +37,11 @@ function x(e, t) {
           canUseBoosts: i,
           allPowerups: o,
           unlockedPowerups: u
-        } = e, c = m.intl.string(f.default.KC9HRW), x = m.intl.string(f.default.GJiSmP), _ = null == o ? true : o[l.IN], b = (null == u ? true : u[l.IN]) != null, h = m.intl.string(f.default["/egwJA"]), j = b ? true : m.intl.string(f.default.W6Vwn3), C = b ? true : m.intl.string(f.default.lvk1Gc), Z = b ? m.intl.string(f.default["9CfkLO"]) : m.intl.string(m.t["+7XY31"]), w = b ? "secondary" : "expressive", I = i ? () => {
-          b ? s.Z.open(t, p.pNK.TAG, p.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != _ && (0, d.KE)(t, _), (0, a.pTH)()
+        } = e, d = m.intl.string(f.default.KC9HRW), x = m.intl.string(f.default.GJiSmP), _ = null == o ? true : o[l.IN], b = (null == u ? true : u[l.IN]) != null, h = m.intl.string(f.default["/egwJA"]), j = b ? true : m.intl.string(f.default.W6Vwn3), C = b ? true : m.intl.string(f.default.lvk1Gc), Z = b ? m.intl.string(f.default["9CfkLO"]) : m.intl.string(m.t["+7XY31"]), w = b ? "secondary" : "expressive", I = i ? () => {
+          b ? s.Z.open(t, p.pNK.TAG, p.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != _ && (0, c.KE)(t, _), (0, a.pTH)()
         } : true;
         return {
-          title: c,
+          title: d,
           description: x,
           openModal: function(e) {
             let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
@@ -68,7 +68,7 @@ function x(e, t) {
                 return e
               }({
                 guildId: t,
-                title: c,
+                title: d,
                 description: m.intl.string(f.default.BBRFRd),
                 powerups: e,
                 footerInfoText: C,

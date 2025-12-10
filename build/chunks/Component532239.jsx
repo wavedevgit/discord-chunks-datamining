@@ -1,27 +1,26 @@
 /** Chunk was on 73755 **/
 /** chunk id: 532239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk340541 = require("./340541.js"),
   Chunk728285 = require("./728285.jsx"),
   Chunk493754 = require("./493754.jsx"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t, n, d) {
-  let p = {
+function u(e, t, n, u) {
+  let d = {
       streamUserId: n,
       channel: e,
-      applicationId: d,
-      appContext: (0, a.bp)()
+      applicationId: u,
+      appContext: (0, l.bp)()
     },
-    h = () => {
-      null != t && e.type === c.d4z.GUILD_VOICE && (0, o.W)(function(e) {
+    p = () => {
+      null != t && e.type === s.d4z.GUILD_VOICE && (0, a.W)(function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -40,24 +39,17 @@ function d(e, t, n, d) {
         return e
       }({
         guild: t
-      }, p))
-    },
-    f = (0, l._k)({
-      location: "more_settings_invite_item"
-    }),
-    m = f.isInCallEntrypointEnabled ? r.oLu : r.ejJ;
-  if (null != d) return (0, i.jsx)(r.sNh, {
+      }, d))
+    };
+  return null != u ? (0, i.jsx)(r.sNh, {
     id: "invite-to-stream",
-    label: u.intl.string(u.t["OzOM/q"]),
-    action: h,
+    label: c.intl.string(c.t["OzOM/q"]),
+    action: p,
     icon: r.ejJ
-  });
-  if (null == t || null == e || !s.Z.can(c.Plq.CREATE_INSTANT_INVITE, e)) return null;
-  let g = f.isInCallEntrypointEnabled ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["6Qgrev"]);
-  return (0, i.jsx)(r.sNh, {
+  }) : null != t && null != e && o.Z.can(s.Plq.CREATE_INSTANT_INVITE, e) ? (0, i.jsx)(r.sNh, {
     id: "invite-friends",
-    label: g,
-    action: h,
-    icon: m
-  })
+    label: c.intl.string(c.t["EE+P0H"]),
+    action: p,
+    icon: r.oLu
+  }) : null
 }

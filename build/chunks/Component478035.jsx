@@ -14,13 +14,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let t = (0, i.e7)([c.Z], () => c.Z.getGuildId()),
+  let t = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
     n = (0, o.D)();
   return __OVERLAY__ || t !== s.I_8 && !n ? null : (0, r.jsx)(l.sNh, {
     id: "go-to-original-guild",
     label: u.intl.string(u.t.WYj55Y),
     action: function() {
-      (0, a.XU)(e.guild_id, e.id)
+      (0, c.XU)(e.guild_id, e.id)
     }
   })
 }

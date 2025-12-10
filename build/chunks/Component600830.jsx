@@ -1,7 +1,7 @@
 /** Chunk was on 56944 **/
-/** chunk id: 600830, original params: n,t,e (module,exports,require) **/
+/** chunk id: 600830, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,39 +18,39 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(n) {
+function O(t) {
   let {
-    channel: t,
-    onSelect: e,
-    onInteraction: g
-  } = n, y = (0, p.Z)(), h = d.Fg.useSetting(), j = function(n) {
-    let t = (0, i.e7)([a.Z], () => a.Z.getWindow(f.KJ3.CHANNEL_CALL_POPOUT));
-    return null == n || null != t ? null : (0, l.jsx)(r.sNh, {
+    channel: e,
+    onSelect: n,
+    onInteraction: O
+  } = t, g = (0, p.Z)(), h = d.Fg.useSetting(), v = function(t) {
+    let e = (0, l.e7)([a.Z], () => a.Z.getWindow(f.KJ3.CHANNEL_CALL_POPOUT));
+    return null == t || null != e ? null : (0, r.jsx)(i.sNh, {
       id: "popout-call",
-      label: E.intl.string(E.t.JzWezz),
-      icon: r.rgF,
-      action: () => s.openChannelCallPopout(n)
+      label: j.intl.string(j.t.JzWezz),
+      icon: i.rgF,
+      action: () => s.openChannelCallPopout(t)
     })
-  }(null != t ? t : true), O = function(n) {
-    let t = (0, i.e7)([b.Z], () => b.Z.getGuild(null == n ? true : n.guild_id)),
-      e = (0, c.Z)(null != n ? n : null, null != t ? t : null),
-      o = (0, u.Z)(null != n ? n : null);
-    return null != n && n.isGuildVocal() ? (0, l.jsxs)(r.kSQ, {
-      children: [e, o]
+  }(null != e ? e : true), y = function(t) {
+    let e = (0, l.e7)([b.Z], () => b.Z.getGuild(null == t ? true : t.guild_id)),
+      n = (0, c.Z)(null != t ? t : null, null != e ? e : null),
+      o = (0, u.Z)(null != t ? t : null);
+    return null != t && t.isGuildVocal() ? (0, r.jsxs)(i.kSQ, {
+      children: [n, o]
     }) : null
-  }(t);
-  return (0, l.jsxs)(r.v2r, {
+  }(e);
+  return (0, r.jsxs)(i.v2r, {
     navId: "rtc-channel",
-    "aria-label": E.intl.string(E.t.ogxXGq),
+    "aria-label": j.intl.string(j.t.ogxXGq),
     onClose: o.Zy,
-    onSelect: e,
-    onInteraction: g,
-    children: [y, O, (0, l.jsxs)(r.kSQ, {
-      children: [j, (0, l.jsx)(r.S89, {
+    onSelect: n,
+    onInteraction: O,
+    children: [g, y, (0, r.jsxs)(i.kSQ, {
+      children: [v, (0, r.jsx)(i.S89, {
         id: "show-voice-states",
         checked: h,
         action: () => d.Fg.updateSetting(!h),
-        label: E.intl.string(E.t.vkbSB0)
+        label: j.intl.string(j.t.vkbSB0)
       })]
     })]
   })

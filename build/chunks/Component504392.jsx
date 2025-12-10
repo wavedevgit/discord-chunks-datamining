@@ -18,6 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk773149 = require("./773149.jsx"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
+  Chunk238343 = require("./238343.jsx"),
   Chunk639777 = require("./639777.js"),
   Chunk169010 = require("./169010.js"),
   Chunk27237 = require("./27237.jsx"),
@@ -26,7 +27,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk184478 = require("./184478.jsx"),
   Chunk877362 = require("./877362.jsx"),
   Chunk460608 = require("./460608.jsx"),
-  Chunk279604 = require("./279604.jsx"),
   Chunk385902 = require("./385902.js"),
   Chunk332538 = require("./332538.jsx"),
   Chunk857666 = require("./857666.jsx"),
@@ -47,7 +47,7 @@ function R(e) {
     (0, v.Sn)(t), (0, v.BN)(t)
   }, [t]), (0, T.Wj)(t);
   let L = (0, a.e7)([x.Z], () => x.Z.getStateForGuild(t)),
-    U = (0, _.Z)(t),
+    U = (0, b.Z)(t),
     M = i.useRef(false),
     {
       shouldShow: D,
@@ -56,13 +56,13 @@ function R(e) {
     G = null == l && null != V,
     B = [];
   D && G && B.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-  let [W, F] = (0, c.US)(B), z = (0, b._P)(t, R), K = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), X = (0, y.f)(K, t);
+  let [W, F] = (0, c.US)(B), z = (0, h._P)(t, R), K = z.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), X = (0, y.f)(K, t);
   return (i.useEffect(() => {
     if (null != l && !M.current)
       for (let e of z)
         for (let n of e.listings) {
           if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === l) {
-            (0, E.KE)(t, n.powerup), M.current = true;
+            (0, _.KE)(t, n.powerup), M.current = true;
             return
           }
           if ("multiPerk" === n.type && (n.group === l || n.powerups.some(e => e.skuId === l))) {
@@ -170,19 +170,19 @@ function R(e) {
                 switch (e.type) {
                   case "singleLevel":
                     var l;
-                    return (0, r.jsx)(h.ZP, {
+                    return (0, r.jsx)(j.ZP, {
                       guildId: t,
                       index: n,
                       powerup: e.powerup,
                       nextPowerup: null == (l = i[n + 1]) ? true : l.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "singlePerk":
-                    return (0, r.jsx)(C.Z, {
+                    return (0, r.jsx)(Z.Z, {
                       guildId: t,
                       powerup: e.powerup
                     }, "powerup-".concat(e.powerup.skuId));
                   case "multiPerk":
-                    return (0, r.jsx)(j.Z, {
+                    return (0, r.jsx)(C.Z, {
                       guildId: t,
                       group: e.group,
                       powerups: e.powerups
@@ -198,11 +198,11 @@ function R(e) {
         })
       }), (0, r.jsxs)("div", {
         className: k.sidebarContainer,
-        children: [U ? (0, r.jsx)(Z.Z, {
+        children: [U ? (0, r.jsx)(w.Z, {
           guildId: t
-        }) : (0, r.jsx)(w.Z, {
+        }) : (0, r.jsx)(I.Z, {
           guildId: t
-        }), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(E.Z, {
           guildId: t
         })]
       })]

@@ -18,9 +18,9 @@ function p(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, p = a.ZP.getDefaultChannel(t.id, true, s.Plq.CREATE_INSTANT_INVITE), b = (0, o.Z)(t.id), y = (0, c.Z)(t), f = (0, u.Z)({
+  } = e, p = c.ZP.getDefaultChannel(t.id, true, u.Plq.CREATE_INSTANT_INVITE), b = (0, o.Z)(t.id), y = (0, a.Z)(t), O = (0, s.Z)({
     guild: t,
-    source: s.t4x.GUILD_CONTEXT_MENU,
+    source: u.t4x.GUILD_CONTEXT_MENU,
     channel: p
   });
   return (0, r.jsxs)(i.v2r, {
@@ -31,7 +31,7 @@ function p(e) {
     children: [(0, r.jsx)(i.kSQ, {
       children: b
     }), (0, r.jsxs)(i.kSQ, {
-      children: [y, f]
+      children: [y, O]
     })]
   })
 }

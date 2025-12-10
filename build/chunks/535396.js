@@ -10,6 +10,7 @@ require.d(exports, {
   Hk: () => O,
   NL: () => C,
   NO: () => d,
+  P2: () => R,
   Q1: () => h,
   Rx: () => S,
   T1: () => m,
@@ -162,5 +163,8 @@ let C = new Set([Chunk494497.MB, Chunk494497.Vk]),
   },
   N = "powerupId";
 var P = function(e) {
-  return e[e.AVAILABLE = 0] = "AVAILABLE", e[e.SPENT = 1] = "SPENT", e[e.TOTAL = 2] = "TOTAL", e
-}({})
+    return e[e.AVAILABLE = 0] = "AVAILABLE", e[e.SPENT = 1] = "SPENT", e[e.TOTAL = 2] = "TOTAL", e
+  }({}),
+  R = function(e) {
+    return e[e.NONE = 0] = "NONE", e[e.LEVEL = 1] = "LEVEL", e[e.PERK = 2] = "PERK", e
+  }({})

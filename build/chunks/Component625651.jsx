@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk430824 = require("./430824.js"),
   Chunk870246 = require("./870246.js"),
   Chunk158638 = require("./158638.js"),
+  Chunk448222 = require("./448222.js"),
   Chunk795338 = require("./795338.jsx"),
   Chunk17622 = require("./17622.jsx"),
-  Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk810878 = require("./810878.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -138,10 +138,10 @@ function h(e) {
     onDeactivate: h,
     error: y,
     isLoading: w
-  } = (0, g.ZP)(t, n), {
+  } = (0, p.Z)(t, n), {
     onClose: C
   } = l, E = o.useCallback(e => {
-    h(e).then(() => {
+    e.stopPropagation(), h().then(() => {
       null == C || C()
     })
   }, [C, h]), S = function(e, t) {
@@ -203,11 +203,11 @@ function h(e) {
     body: (() => {
       switch (n.type) {
         case x.Us.LEVEL:
-          return (0, r.jsx)(k.Z, {
+          return (0, r.jsx)(g.Z, {
             powerup: n
           });
         case x.Us.PERK:
-          return (0, r.jsx)(p.m, {
+          return (0, r.jsx)(k.m, {
             className: I.image,
             powerup: n
           })

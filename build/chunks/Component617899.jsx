@@ -1,13 +1,12 @@
 /** Chunk was on 1272 **/
 /** chunk id: 617899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
-  Chunk340541 = require("./340541.js"),
   Chunk944486 = require("./944486.js"),
   Chunk82950 = require("./82950.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -15,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk589148 = require("./589148.js");
 
-function g(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,21 +22,15 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends Chunk473749.PureComponent {
-  getInviteText() {
-    return (0, Chunk340541.LK)({
-      location: "invite_notice"
-    }).isGuildEntrypointEnabled ? Chunk388032.intl.string(Chunk388032.t.Sd8Ixw) : Chunk388032.intl.string(Chunk388032.t.BN75l9)
-  }
+class g extends Chunk473749.PureComponent {
   render() {
-    let e = "".concat(Chunk388032.intl.string(Chunk388032.t.VWqWZQ), "\n").concat(Chunk388032.intl.string(Chunk388032.t["0Lgb/K"])),
-      t = this.getInviteText();
+    let e = "".concat(Chunk388032.intl.string(Chunk388032.t.VWqWZQ), "\n").concat(Chunk388032.intl.string(Chunk388032.t["0Lgb/K"]));
     return (0, Chunk54381.jsx)(Chunk82950.Z, {
       guild: this.props.guild,
       onDismissed: this.handleClose,
       onClick: this.handleInvite,
       message: module,
-      cta: exports,
+      cta: Chunk388032.intl.string(Chunk388032.t.Sd8Ixw),
       trackingSource: Chunk981631.PsQ.INVITE_NOTICE,
       type: Chunk981631.vID.INVITE,
       image: Chunk589148,
@@ -45,7 +38,7 @@ class h extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "handleInvite", () => {
+    super(...e), f(this, "handleInvite", () => {
       let {
         guild: e
       } = this.props;
@@ -71,22 +64,22 @@ class h extends Chunk473749.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              g(e, t, n[t])
+              f(e, t, n[t])
             })
           }
           return e
         }({}, n), {
           guild: e,
-          source: u.t4x.INVITE_NOTICE
+          source: c.t4x.INVITE_NOTICE
         }))
       })
-    }), g(this, "handleClose", () => {
-      let e = o.Z.getChannelId(),
-        t = p.intl.formatToPlainString(p.t.DEn7nu, {
-          invitePeople: this.getInviteText()
+    }), f(this, "handleClose", () => {
+      let e = s.Z.getChannelId(),
+        t = d.intl.formatToPlainString(d.t.DEn7nu, {
+          invitePeople: d.intl.string(d.t.Sd8Ixw)
         });
-      this.props.markAsDismissed(d.L.UNKNOWN), null != e && a.Z.sendBotMessage(e, t)
+      this.props.markAsDismissed(u.L.UNKNOWN), null != e && a.Z.sendBotMessage(e, t)
     })
   }
 }
-let m = h
+let h = g
