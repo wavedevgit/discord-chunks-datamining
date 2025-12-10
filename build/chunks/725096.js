@@ -2,51 +2,52 @@
 /** chunk id: 725096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => _
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk15624 = require("./15624.js"),
   Chunk70956 = require("./70956.js"),
   Chunk22095 = require("./22095.js"),
   Chunk616022 = require("./616022.js"),
   Chunk704161 = require("./704161.js"),
   Chunk862657 = require("./862657.js");
-let u = 10 * Chunk70956.Z.Millis.MINUTE;
+let d = 10 * Chunk70956.Z.Millis.MINUTE;
 
-function d(e) {
+function f(e) {
   return null != e && e.fetchedAt + e.ttlMillis >= Date.now()
 }
 
-function f(e, t, n) {
-  if (d(e) || s.Z.isFetchingQuestToDeliverByPlacement(t)) return;
+function p(e, t, n) {
+  if ("focused" !== a.Z.getState() || f(e) || l.Z.isFetchingQuestToDeliverByPlacement(t)) return;
   let {
     enableNewRequestBehavior: r
-  } = l.Z.getConfig({
+  } = c.Z.getConfig({
     location: "maybeRefreshAd"
   });
-  r && ((0, o.xw)(), (0, o.w)(t, n))
+  r && ((0, s.xw)(), (0, s.w)(t, n))
 }
 
-function p(e) {
+function _(e) {
   let t = (0, r.useRef)(null),
-    n = (0, i.e7)([s.Z], () => s.Z.questDeliveryOverride),
-    a = (0, i.e7)([s.Z], () => {
+    n = (0, i.e7)([l.Z], () => l.Z.questDeliveryOverride),
+    a = (0, i.e7)([l.Z], () => {
       var t;
-      return null != (t = s.Z.questAdDecisionByPlacement.get(e)) ? t : null
+      return null != (t = l.Z.questAdDecisionByPlacement.get(e)) ? t : null
     }),
-    o = (0, i.e7)([s.Z], () => {
+    o = (0, i.e7)([l.Z], () => {
       var e;
-      return (null == a ? true : a.questId) != null && null != (e = s.Z.quests.get(a.questId)) ? e : null
+      return (null == a ? true : a.questId) != null && null != (e = l.Z.quests.get(a.questId)) ? e : null
     });
   return ((0, r.useEffect)(() => {
     if (null != t.current && clearInterval(t.current), null != n) return;
-    f(a, e, "questBar-open"), t.current = setInterval(() => {
+    p(a, e, "questBar-open"), t.current = setInterval(() => {
       var t;
-      f(null != (t = s.Z.questAdDecisionByPlacement.get(e)) ? t : null, e, "questBar-interval")
-    }, u);
+      p(null != (t = l.Z.questAdDecisionByPlacement.get(e)) ? t : null, e, "questBar-interval")
+    }, d);
     let r = t.current;
     return () => {
       null != r && clearInterval(r)
     }
-  }, [a, e, n]), null != n) ? n : null == o || (0, c.zi)(o) ? null : o
+  }, [a, e, n]), null != n) ? n : null == o || (0, u.zi)(o) ? null : o
 }

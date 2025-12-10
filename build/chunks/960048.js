@@ -123,5 +123,7 @@ let f = {
   profiledRootComponent: e => e,
   crash() {
     throw Error("crash")
-  }
+  },
+  markCrashHandled(e) {},
+  getLastCrashReport: () => Promise.resolve(null)
 }

@@ -60,23 +60,23 @@ function m(e, t) {
 }
 
 function h(e, t, n) {
-  var s, l, u, f;
+  var s, l, u, f, m;
   if (Math.random() > _) return;
-  let m = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
-    h = (0, i.d)();
+  let h = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
+    g = (0, i.d)();
   o.default.track(c.rMx.QUEST_DECISION_ROUNDTRIP, p(d(p(d({}, (0, r.Z)()), {
     endpoint: e.endpoint,
     was_successful: e.wasSuccessful,
-    api_latency_ms: m,
+    api_latency_ms: h,
     mobile_network_type: a.Z.getType()
-  }), null != h && {
-    mobile_signal_strength_level: h
+  }), null != g && {
+    mobile_signal_strength_level: g
   }), {
     caller_source: e.callerSource,
     ad_request_id: e.adRequestId,
     fetched_at: n,
-    previous_ad_request_id: null != (u = null == (s = e.previousAdDecision) ? true : s.adRequestId) ? u : null,
-    previous_fetched_at: null != (f = null == (l = e.previousAdDecision) ? true : l.fetchedAt) ? f : null,
+    previous_ad_request_id: null != (f = null == (l = e.previousAdDecision) || null == (s = l.adDecisionData) ? true : s.decision_id) ? f : null,
+    previous_fetched_at: null != (m = null == (u = e.previousAdDecision) ? true : u.fetchedAt) ? m : null,
     transition_case: t
   }))
 }
@@ -123,8 +123,9 @@ class g {
           questId: i,
           fetchedAt: a,
           ttlMillis: 0,
-          adSetId: null,
-          adRequestId: r
+          adDecisionData: null != r ? {
+            decision_id: r
+          } : true
         } : null;
         t = m(o.previousAdDecision, e), s = a
       } else t = "legacy", s = null;

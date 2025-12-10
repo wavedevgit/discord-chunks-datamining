@@ -428,13 +428,15 @@ function eY(e) {
     location: "handleFetchQuestToDeliverSuccess"
   });
   if (d) {
-    var p, _, m;
+    var p;
     let e = {
       questId: null != (p = null == t ? true : t.id) ? p : null,
       fetchedAt: u,
       ttlMillis: eW(s),
-      adSetId: null != (_ = null == r ? true : r.ad_set_id) ? _ : null,
-      adRequestId: null != (m = null == r ? true : r.decision_id) ? m : null
+      adDecisionData: r,
+      adContext: o,
+      metadataRaw: l,
+      metadataSealed: c
     };
     (A = new Map(A)).set(n, e)
   } else null == t ? I.delete(n) : I.set(n, {
