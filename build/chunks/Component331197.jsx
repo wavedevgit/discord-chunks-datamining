@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -54,7 +54,7 @@ function E(e) {
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
 
-  function W(e) {
+  function z(e) {
     null != A && (0, c.jW)(e, async () => {
       let {
         default: e
@@ -97,7 +97,7 @@ function E(e) {
     })
   }
 
-  function z() {
+  function W() {
     (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
@@ -116,7 +116,7 @@ function E(e) {
       let {
         closePopout: n
       } = e;
-      return L ? null : (0, i.jsx)(_.Z, {
+      return L ? null : (0, i.jsx)(v.Z, {
         children: (0, i.jsx)("div", {
           onMouseEnter: H,
           onMouseLeave: G,
@@ -133,15 +133,15 @@ function E(e) {
         })
       })
     },
-    children: () => (0, i.jsx)(v.d, {
+    children: () => (0, i.jsx)(_.d, {
       ref: q,
       isTrayButton: true,
       themeable: E,
       label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
-      onContextMenu: W,
-      onClick: z,
+      onContextMenu: z,
+      onClick: W,
       onMouseEnter: () => {
         H(), T()
       },

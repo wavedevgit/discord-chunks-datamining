@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -23,16 +23,16 @@ function h(e) {
   let {
     tags: n,
     isCurrentUser: l,
-    widgetType: c,
-    applicationId: s,
+    widgetType: s,
+    applicationId: c,
     className: u,
     disableInteraction: h = false
-  } = e, v = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = v.length > 0, _ = o.qH, P = l && !h && (0, f.M8)(c) && v.length < _, {
+  } = e, v = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = v.length > 0, P = o.qH, _ = l && !h && (0, f.M8)(s) && v.length < P, {
     trackUserProfileAction: I
   } = (0, d.KZ)(), w = (0, i.useRef)(new Map), S = (0, i.useRef)(null), E = (0, i.useRef)(null), [T, C] = (0, i.useState)(0), [D, k] = (0, i.useState)(false), N = x(S, E, v, w, C);
   if ((0, i.useEffect)(() => (N(), window.addEventListener("resize", N), () => {
       window.removeEventListener("resize", N)
-    }), [N, null == v ? true : v.join("")]), !O && !P) return null;
+    }), [N, null == v ? true : v.join("")]), !O && !_) return null;
   let A = D ? v : v.slice(0, v.length - T);
   return (0, r.jsxs)("div", {
     className: a()(b.tagListContainer, u),
@@ -43,8 +43,8 @@ function h(e) {
         children: A.map(e => (0, r.jsx)(y, {
           tag: e,
           isCurrentUser: l,
-          applicationId: s,
-          widgetType: c,
+          applicationId: c,
+          widgetType: s,
           ref: t => {
             null != t && w.current.set(e, t)
           },
@@ -66,10 +66,10 @@ function h(e) {
         },
         disableInteraction: h
       })]
-    }), P && (0, r.jsx)(g.Z, {
+    }), _ && (0, r.jsx)(g.Z, {
       tags: n,
-      widgetType: c,
-      applicationId: s,
+      widgetType: s,
+      applicationId: c,
       ref: E
     })]
   })
@@ -95,14 +95,14 @@ let y = e => {
     ref: o,
     children: [(0, r.jsx)(y, {
       size: "xxs"
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-xxs/medium",
       color: "text-subtle",
       children: h()
-    }), n && !a && (0, r.jsx)(c.u, {
+    }), n && !a && (0, r.jsx)(s.u, {
       text: m.intl.string(m.t.Otv9fP),
       ariaHidden: true,
-      children: (0, r.jsx)(s.P3F, {
+      children: (0, r.jsx)(c.P3F, {
         onClick: () => {
           (0, f.RZ)(l, i, t), u({
             action: "TAG_REMOVED",
@@ -114,7 +114,7 @@ let y = e => {
         "aria-label": m.intl.formatToPlainString(m.t.GCn1ne, {
           tag: h()
         }),
-        children: (0, r.jsx)(s.Dio, {
+        children: (0, r.jsx)(c.Dio, {
           size: "xxs",
           color: "currentColor"
         })
@@ -127,7 +127,7 @@ function v(e) {
   let {
     numberOfOverflowingTags: t
   } = e;
-  return (0, r.jsx)(s.Text, {
+  return (0, r.jsx)(c.Text, {
     variant: "text-xxs/medium",
     color: "none",
     children: "+".concat(t)
@@ -160,10 +160,10 @@ function j(e) {
     children: (0, r.jsx)(v, {
       numberOfOverflowingTags: n
     })
-  }) : (0, r.jsx)(c.u, {
+  }) : (0, r.jsx)(s.u, {
     text: u,
     ariaHidden: t,
-    children: (0, r.jsx)(s.P3F, {
+    children: (0, r.jsx)(c.P3F, {
       innerRef: o,
       onClick: t ? l : i,
       "aria-label": d,
@@ -175,10 +175,10 @@ function j(e) {
   })
 }
 let x = (e, t, n, r, l) => (0, i.useCallback)(() => {
-  var i, a, o, c;
+  var i, a, o, s;
   if (null == n) return void l(0);
-  let s = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,
-    u = null != (c = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? c : 0,
+  let c = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,
+    u = null != (s = null == (a = t.current) ? true : a.getBoundingClientRect().width) ? s : 0,
     d = u > 0 ? 8 : 4,
     f = 0,
     g = 0,
@@ -194,7 +194,7 @@ let x = (e, t, n, r, l) => (0, i.useCallback)(() => {
   for (let e = f; e < n.length; e++) {
     let t = p.get(n[e]);
     if (null != t) {
-      if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
+      if ((g += t.offsetWidth + 4) > 296 - c - u - d) break;
       f++
     }
   }

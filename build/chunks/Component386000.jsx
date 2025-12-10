@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 386000, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -39,12 +39,12 @@ function d(e) {
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
     parentAnalyticsLocation: C
-  } = (0, a.ZP)(), y = t || n || d, _ = p ? u.d : u.Z, v = (0, o.Z)(t, n, d, h), {
+  } = (0, a.ZP)(), y = t || n || d, v = p ? u.d : u.Z, _ = (0, o.Z)(t, n, d, h), {
     events: O,
     play: x,
     Component: E
   } = (0, c.b)(y), j = n || d ? l.v0G : E;
-  return r.useEffect(() => () => x(), [x, y]), (0, i.jsx)(_, function(e) {
+  return r.useEffect(() => () => x(), [x, y]), (0, i.jsx)(v, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -66,7 +66,7 @@ function d(e) {
     isTrayButton: true,
     caretColor: y ? "red" : "primaryDark",
     color: y ? "red" : true,
-    label: v,
+    label: _,
     onMouseEnter: e => {
       null == f || f(e), O.onMouseEnter()
     },

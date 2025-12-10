@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 272289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -34,7 +34,7 @@ function u(e) {
     onAddGame: d
   } = (0, o.K)(t), {
     setExpanded: f
-  } = (0, c.g)(), {
+  } = (0, s.g)(), {
     trackUserProfileEditAction: g
   } = (0, l.KZ)(), p = i.useCallback((e, n, r) => {
     d(e), f(true), (0, a.ES)(t, {
@@ -47,7 +47,7 @@ function u(e) {
       widgetEdited: t
     })
   }, [d, t, g, f]);
-  return (0, r.jsx)(s.Z, function(e) {
+  return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

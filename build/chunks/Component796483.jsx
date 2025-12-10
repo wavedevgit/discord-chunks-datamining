@@ -1,4 +1,4 @@
-/** Chunk was on 12356 **/
+/** Chunk was on 74330 **/
 /** chunk id: 796483, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -32,7 +32,7 @@ function u(e) {
 let d = Chunk473749.memo(function(e) {
   var {
     item: t,
-    cardSize: r = c.U.MEDIUM,
+    cardSize: r = a.U.MEDIUM,
     showOverlayButton: i = true,
     isDragging: d = false
   } = e, f = function(e, t) {
@@ -50,7 +50,7 @@ let d = Chunk473749.memo(function(e) {
     }
     return i
   }(e, ["item", "cardSize", "showOverlayButton", "isDragging"]);
-  return (0, o.Q)(t) ? (0, n.jsx)(a.ZP, u({
+  return (0, o.Q)(t) ? (0, n.jsx)(c.ZP, u({
     item: t,
     cardSize: r,
     showOverlayButton: i,

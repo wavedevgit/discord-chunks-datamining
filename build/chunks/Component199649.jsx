@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 199649, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -25,14 +25,14 @@ function g(e) {
     children: C
   } = e, y = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
   (0, o.Z)(b.id);
-  let _ = (0, s.Z)(b.id),
-    v = b.isSystemDM(),
-    O = y && !v && !b.isMultiUserDM(),
+  let v = (0, s.Z)(b.id),
+    _ = b.isSystemDM(),
+    O = y && !_ && !b.isMultiUserDM(),
     x = {};
-  if (v) {
-    let e = _ ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
-    x.message = m.intl.string(m.t.Bt2N7D), x.subtitle = m.intl.string(m.t["n/Vzkw"]), x.buttonText = e, x.buttonIcon = _ ? l.rgF : true, x.onButtonClick = () => {
-      if (_) {
+  if (_) {
+    let e = v ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
+    x.message = m.intl.string(m.t.Bt2N7D), x.subtitle = m.intl.string(m.t["n/Vzkw"]), x.buttonText = e, x.buttonIcon = v ? l.rgF : true, x.onButtonClick = () => {
+      if (v) {
         open(f.D2), u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
           target: f.D2

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 367207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -115,7 +115,7 @@ class O extends Chunk317770.Z {
       })
     }), b(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
-      null != e && e.verified && !(0, f.I5)(e) && p.Z.shouldFetchCheckoutRecovery() && await (0, h.o)()
+      null != e && e.verified && !(0, f.I5)(e) && h.Z.shouldFetchCheckoutRecovery() && await (0, p.o)()
     }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e

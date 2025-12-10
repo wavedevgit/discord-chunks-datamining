@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 977416, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -24,7 +24,7 @@ function h(e) {
       gameName: i,
       onClick: l
     } = e,
-    s = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -44,12 +44,12 @@ function h(e) {
       game: g
     }),
     y = (0, a.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
-  return (0, d.kO)(s.applicationId) || y ? (0, r.jsx)("div", {
+  return (0, d.kO)(c.applicationId) || y ? (0, r.jsx)("div", {
     className: m.loadingCover
   }) : (0, r.jsx)(o.u, {
     text: h,
     ariaHidden: true,
-    children: (0, r.jsxs)(c.P3F, {
+    children: (0, r.jsxs)(s.P3F, {
       className: b.addButton,
       onClick: l,
       "aria-label": h,
@@ -73,7 +73,7 @@ function h(e) {
       }({
         className: b.cover,
         gameName: i
-      }, s), n = n = {
+      }, c), n = n = {
         disableInteraction: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -84,10 +84,10 @@ function h(e) {
         return n
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t)), (0, r.jsx)(c.svS, {
+      }), t)), (0, r.jsx)(s.svS, {
         size: "md",
         className: b.addIcon,
-        color: c.TVs.colors.WHITE
+        color: s.TVs.colors.WHITE
       })]
     })
   })
@@ -100,21 +100,21 @@ function y(e) {
     onDismiss: i,
     onClick: a,
     className: o
-  } = e, u = (0, s.Dt)();
+  } = e, u = (0, c.Dt)();
   return (0, r.jsxs)("aside", {
     className: l()(b.container, o),
     "aria-labelledby": u,
     children: [(0, r.jsxs)("div", {
       className: b.header,
-      children: [(0, r.jsx)(c.P3F, {
+      children: [(0, r.jsx)(s.P3F, {
         className: b.dismissButton,
         "aria-label": p.intl.string(p.t["pUR+3g"]),
         onClick: i,
-        children: (0, r.jsx)(c.Dio, {
+        children: (0, r.jsx)(s.Dio, {
           size: "sm",
           color: "currentColor"
         })
-      }), (0, r.jsx)(c.Heading, {
+      }), (0, r.jsx)(s.Heading, {
         id: u,
         variant: "text-xs/medium",
         color: "text-subtle",

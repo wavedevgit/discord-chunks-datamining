@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 98597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CN: () => P,
@@ -93,9 +93,9 @@ function w(e) {
     isDefaultChannel: r = false,
     locked: o,
     tabIndex: d,
-    forceShowButtons: p,
+    forceShowButtons: h,
     hasChannelInfo: b = false
-  } = e, v = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), j = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), S = (0, s.e7)([f.ZP], () => f.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([O.Z], () => (0, h.b)(O.Z, v, t, j)), N = (0, s.e7)([], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE ? C.intl.string(C.t["EE+P0H"]) : C.intl.string(C.t["0jeAXt"])), Z = l.useRef(null);
+  } = e, v = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), j = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), S = (0, s.e7)([f.ZP], () => f.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([O.Z], () => (0, p.b)(O.Z, v, t, j)), N = (0, s.e7)([], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE ? C.intl.string(C.t["EE+P0H"]) : C.intl.string(C.t["0jeAXt"])), Z = l.useRef(null);
   if (o || !P || t.isModeratorReportChannel()) return null;
   let w = (0, i.jsx)(u.oLu, {
     size: "xs",
@@ -115,7 +115,7 @@ function w(e) {
     asContainer: true,
     text: N,
     children: (0, i.jsx)(u.P3F, {
-      className: a()(E.iconItem, p ? E.alwaysShown : true, b ? E.iconWithChannelInfo : E.iconNoChannelInfo),
+      className: a()(E.iconItem, h ? E.alwaysShown : true, b ? E.iconWithChannelInfo : E.iconNoChannelInfo),
       onClick: function() {
         if (null != v) {
           let e = _.Z.getAllActiveStreams().filter(e => e.state !== x.jm8.ENDED && e.channelId === t.id);
@@ -162,7 +162,7 @@ function T(e) {
     children: (0, i.jsx)(u.P3F, {
       className: E.iconItem,
       onClick: () => {
-        (0, p._U)(t.guild_id, t.id)
+        (0, h._U)(t.guild_id, t.id)
       },
       "aria-label": C.intl.string(C.t["ROh4T+"]),
       children: (0, i.jsx)(u.Dio, {
@@ -184,7 +184,7 @@ function A(e) {
     children: (0, i.jsx)(u.P3F, {
       className: E.iconItem,
       onClick: () => {
-        (0, p.dM)(t.guild_id, t.id, true, {
+        (0, h.dM)(t.guild_id, t.id, true, {
           section: x.jXE.CHANNEL_LIST
         })
       },

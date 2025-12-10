@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -60,7 +60,7 @@ function E(e) {
   let {
     userId: C,
     channel: y
-  } = e, _ = r.useRef(null), {
+  } = e, v = r.useRef(null), {
     analyticsLocations: E
   } = (0, d.ZP)(u.Z.USERNAME), j = (0, o.e7)([g.default], () => g.default.getUser(C)), S = (0, o.e7)([m.ZP], () => null != C ? m.ZP.getMember(y.guild_id, C) : null), P = (0, h.X7)(y.guild_id, null != C ? C : true, null != (t = null == S ? true : S.colorStrings) ? t : null);
 
@@ -80,21 +80,21 @@ function E(e) {
   let Z = null != (p = null != (l = null == S ? true : S.nick) ? l : b.ZP.getName(j)) ? p : "???",
     T = null == S ? true : S.colorString;
   return null == j ? (0, i.jsx)("span", {
-    className: a()(v.threadCreatorName, v.unknownCreatorName),
+    className: a()(_.threadCreatorName, _.unknownCreatorName),
     children: Z
   }) : (0, i.jsx)(d.Gt, {
     value: E,
     children: (0, i.jsx)(f.Z, {
-      targetElementRef: _,
+      targetElementRef: v,
       user: j,
       guildId: y.guild_id,
       channelId: y.id,
       roleId: null == S ? true : S.colorRoleId,
       clickTrap: true,
       children: e => (0, i.jsx)(s.P3F, x(O({}, e), {
-        innerRef: _,
+        innerRef: v,
         tag: "span",
-        className: v.threadCreatorName,
+        className: _.threadCreatorName,
         onContextMenu: I,
         children: (0, i.jsx)(s.PUh, {
           name: Z,
@@ -121,8 +121,8 @@ function j(e) {
       variant: "text-md/normal",
       color: "text-default",
       children: (0, i.jsx)("div", {
-        className: v.subtitle,
-        children: _.intl.format(_.t.imPXd5, {
+        className: _.subtitle,
+        children: v.intl.format(v.t.imPXd5, {
           usernameHook: (e, n) => (0, i.jsx)(E, {
             userId: t.ownerId,
             channel: t
@@ -132,7 +132,7 @@ function j(e) {
     }), t.type === y.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: _.intl.string(_.t["1awbZG"])
+      children: v.intl.string(v.t["1awbZG"])
     }) : null]
   })
 }
@@ -145,9 +145,9 @@ function S(e) {
   return (0, i.jsxs)(C.ZP, {
     channelId: n.id,
     children: [(0, i.jsx)("div", {
-      className: v.iconWrapper,
+      className: _.iconWrapper,
       children: (0, i.jsx)(r, {
-        className: v.icon
+        className: _.icon
       })
     }), (0, i.jsx)(C.Ot, {
       children: n.name

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -26,21 +26,21 @@ function y(e) {
     onContextMenuParticipant: n,
     height: l,
     channel: y,
-    participants: _,
-    onSelectParticipant: v
+    participants: v,
+    onSelectParticipant: _
   } = e, [O, x] = function() {
     let [e, t] = r.useState(() => s.K.get(C, f.VD2.BOTTOM_RIGHT));
     return [e, r.useCallback(e => {
       s.K.set(C, e), t(e)
     }, [])]
-  }(), E = r.useRef(null), j = null == y.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = _.length, I = S * P + 8 * (P - 1), Z = r.useMemo(() => ({
+  }(), E = r.useRef(null), j = null == y.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = v.length, I = S * P + 8 * (P - 1), Z = r.useMemo(() => ({
     minWidth: m.Rv[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1),
     maxWidth: m.$i[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1)
   }), [P]);
   r.useLayoutEffect(() => {
     var e;
     null == (e = E.current) || e.ensureIsInPosition()
-  }, [_.length]);
+  }, [v.length]);
   let T = r.useCallback(e => {
       let t = 0 === P ? e : (e - 8 * (P - 1)) / P;
       c.d7(t, m.cL.CAMERA_PREVIEW)
@@ -66,7 +66,7 @@ function y(e) {
       resizeConfig: Z,
       children: (0, i.jsx)("div", {
         className: g.tileContainer,
-        children: _.map(e => (0, i.jsx)(h.ZP, {
+        children: v.map(e => (0, i.jsx)(h.ZP, {
           participant: e,
           channel: y,
           onContextMenu: n,
@@ -75,7 +75,7 @@ function y(e) {
           inCall: true,
           popoutType: u.P.NO_POPOUT,
           width: 160,
-          onClick: v
+          onClick: _
         }, e.id))
       })
     })

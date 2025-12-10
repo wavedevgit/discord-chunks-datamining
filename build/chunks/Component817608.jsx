@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 817608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -33,7 +33,7 @@ function h(e) {
       user: g,
       guild: b
     }),
-    _ = [(0, u.Z)({
+    v = [(0, u.Z)({
       channel: t,
       message: n,
       user: g,
@@ -43,8 +43,8 @@ function h(e) {
       user: g,
       guild: b
     })].filter(e => null != e);
-  return t.isModeratorReportChannel() && 0 !== _.length ? (0, i.jsx)(i.Fragment, {
-    children: _.map((e, t) => (0, i.jsx)(r.Fragment, {
+  return t.isModeratorReportChannel() && 0 !== v.length ? (0, i.jsx)(i.Fragment, {
+    children: v.map((e, t) => (0, i.jsx)(r.Fragment, {
       children: e
     }, t))
   }) : null

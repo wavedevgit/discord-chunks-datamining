@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 993397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -76,11 +76,11 @@ let y = Chunk473749.memo(function(e) {
     collapsedReason: u
   } = e, {
     hasJumpTarget: h = false
-  } = n, [m, y] = r.useState(h), _ = r.useCallback(() => y(e => !e), []);
+  } = n, [m, y] = r.useState(h), v = r.useCallback(() => y(e => !e), []);
   r.useEffect(() => {
     h && y(true)
   }, [h]);
-  let v = n.hasUnread ? n.content.length - 1 : n.content.length;
+  let _ = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, i.jsxs)("div", {
     className: a()({
       [b.groupStart]: true,
@@ -90,10 +90,10 @@ let y = Chunk473749.memo(function(e) {
       isUnread: true,
       id: s
     }, "divider") : null, (0, i.jsx)(C, {
-      count: v,
+      count: _,
       compact: o,
       expanded: m,
-      onClick: _,
+      onClick: v,
       collapsedReason: u
     }, "collapsed-message-item"), m ? n.content.map((e, t) => {
       if (e.type === f.ys_.DIVIDER && t > 0) {

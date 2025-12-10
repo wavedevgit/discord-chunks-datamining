@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 602147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -31,14 +31,14 @@ let m = Chunk473749.forwardRef(function(e, t) {
       case f.GlobalDiscoveryTab.QUESTS:
         return (0, c.transitionToGlobalDiscovery)({
           tab: f.GlobalDiscoveryTab.QUESTS,
-          location: p.dr.DISCOVERY_COMPASS,
+          location: h.dr.DISCOVERY_COMPASS,
           questContent: l.j.DISCOVERY_COMPASS,
           questId: b
         });
       case f.GlobalDiscoveryTab.SERVERS:
         return (0, c.transitionToGlobalDiscovery)({
           tab: f.GlobalDiscoveryTab.SERVERS,
-          entrypoint: h.Qq.GUILDS_BAR
+          entrypoint: p.Qq.GUILDS_BAR
         });
       case f.GlobalDiscoveryTab.APPS:
         return (0, c.transitionToGlobalDiscovery)({

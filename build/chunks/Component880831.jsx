@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 880831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T,
@@ -38,17 +38,17 @@ function Z(e) {
   } = e, {
     isBlocked: l,
     isIgnored: o
-  } = (0, c.cj)([v.Z], () => ({
-    isBlocked: v.Z.isBlockedForMessage(n),
-    isIgnored: v.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, g.Uj)(n), d = r.useContext(f.Z), [_, x] = r.useState(false), E = r.useCallback(e => {
+  } = (0, c.cj)([_.Z], () => ({
+    isBlocked: _.Z.isBlockedForMessage(n),
+    isIgnored: _.Z.isIgnoredForMessage(n)
+  }), [n]), s = (0, g.Uj)(n), d = r.useContext(f.Z), [v, x] = r.useState(false), E = r.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
       flash: true
     }))
   }, [n.channel_id, n.id]), j = null != n.content && "" !== n.content ? (0, m.ZP)(n, {
-    isInteracting: _
+    isInteracting: v
   }).content : null, {
     contentPlaceholder: I,
     renderedContent: Z,
@@ -62,7 +62,7 @@ function Z(e) {
     className: P.sticker,
     size: 128,
     sticker: e,
-    isInteracting: _
+    isInteracting: v
   }, e.id)) : null;
   return (0, i.jsxs)(u.P3F, {
     className: P.toast,
@@ -132,7 +132,7 @@ function T(e) {
     let g = null != (t = h.current) ? t : o;
     return {
       toastsHidden: u,
-      toastMessages: (0, c.Wu)([_.Z], () => g.map(e => _.Z.getMessage(n, e)), [n, g]).filter(E.lm)
+      toastMessages: (0, c.Wu)([v.Z], () => g.map(e => v.Z.getMessage(n, e)), [n, g]).filter(E.lm)
     }
   }({
     channelId: t,
@@ -153,12 +153,12 @@ function T(e) {
       e[i.id] = t, t += r + 8
     }(0, o.isEqual)(e, y.current) || b(e)
   }, [f]);
-  let v = f.map(e => ({
+  let _ = f.map(e => ({
       message: e,
       height: m.current[e.id],
       y: g[e.id]
     })),
-    O = (0, u.Yzy)(v, {
+    O = (0, u.Yzy)(_, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0

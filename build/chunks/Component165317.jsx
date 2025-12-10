@@ -1,7 +1,7 @@
 /** Chunk was on 75909 **/
 /** chunk id: 165317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,8 +22,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk559072 = require("./559072.js");
 let b = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
-function C(e) {
-  var t, n, C, S;
+function S(e) {
+  var t, n, S, C;
   let {
     tooltipPosition: _
   } = e, {
@@ -37,13 +37,13 @@ function C(e) {
   }), [D, T] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, m.w8)(y.config), {
     completedRatio: L,
     completedRatioDisplay: k
-  } = (0, d.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (C = y.userStatus) ? true : C.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && P ? O.t.NRp4K4 : O.t["12IWP2"], {
+  } = (0, d.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (S = y.userStatus) ? true : S.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && P ? O.t.NRp4K4 : O.t["12IWP2"], {
     rewardName: w
   });
   o.useEffect(() => {
     var e, t;
     null == I.current && (null == (e = y.userStatus) ? true : e.completedAt) != null && P && A(true), I.current = null == (t = y.userStatus) ? true : t.completedAt
-  }, [null == (S = y.userStatus) ? true : S.completedAt, P]);
+  }, [null == (C = y.userStatus) ? true : C.completedAt, P]);
   let F = (0, v.D)({
       quest: y,
       questContent: c.jn.QUEST_HOME_DESKTOP,

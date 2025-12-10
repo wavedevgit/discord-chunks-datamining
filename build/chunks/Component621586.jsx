@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 621586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -71,20 +71,20 @@ function E(e) {
           className: O.title,
           variant: "text-lg/bold",
           color: "text-strong",
-          children: v.intl.string(v.t.xLP3bi)
+          children: _.intl.string(_.t.xLP3bi)
         }), (0, i.jsx)(a.xvT, {
           className: O.subtitle,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: v.intl.format(v.t["+SqhBF"], {
-            applicationName: null != (t = null == P ? true : P.name) ? t : v.intl.string(v.t["/1hhto"])
+          children: _.intl.format(_.t["+SqhBF"], {
+            applicationName: null != (t = null == P ? true : P.name) ? t : _.intl.string(_.t["/1hhto"])
           })
         }), (0, i.jsx)("div", {
           className: O.wishlistItemsContainer,
           children: Z || 0 === T.length ? (0, i.jsx)(a.$jN, {
             className: O.loading
           }) : T.map(e => (0, i.jsx)(s.i_, {
-            body: v.intl.string(v.t["4yiU7x"]),
+            body: _.intl.string(_.t["4yiU7x"]),
             asset: I,
             assetSize: p.EU,
             position: "top",
@@ -99,7 +99,7 @@ function E(e) {
               hideButtonIcon: true,
               showPrice: true,
               showIcons: false,
-              giftingOrigin: _.Wt.SHOP_PAGE
+              giftingOrigin: v.Wt.SHOP_PAGE
             })
           }, e.skuId))
         })]

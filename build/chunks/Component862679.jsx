@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 862679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -24,13 +24,13 @@ let d = function(e) {
     animationSrc: b,
     secondaryButtonText: C,
     onSecondaryButtonClick: y,
-    children: _,
-    useReducedMotion: v = false,
+    children: v,
+    useReducedMotion: _ = false,
     buttonVariant: O
   } = e, x = (0, a.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
   if (l.tq && x) return null;
   if (null == t) return (0, i.jsx)(i.Fragment, {
-    children: r.Children.only(_)
+    children: r.Children.only(v)
   });
   let E = null;
   return null != g ? E = (0, i.jsx)("img", {
@@ -39,7 +39,7 @@ let d = function(e) {
     className: u.image
   }) : null != b && (E = (0, i.jsx)(o.Fmz, {
     importData: b,
-    shouldAnimate: !v,
+    shouldAnimate: !_,
     className: u.animation
   })), (0, i.jsxs)("div", {
     className: u.wrapper,

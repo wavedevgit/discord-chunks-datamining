@@ -67,7 +67,7 @@ function N(e) {
     channelId: t,
     baseChannelId: l,
     channelViewSource: N = "Split View"
-  } = e, R = (0, s.e7)([O.Z], () => O.Z.getChannel(t)), w = (0, s.e7)([j.Z], () => j.Z.getGuild(null == R ? true : R.getGuildId())), A = (0, f.ZP)(R);
+  } = e, R = (0, s.e7)([O.Z], () => O.Z.getChannel(t)), w = (0, s.e7)([x.Z], () => x.Z.getGuild(null == R ? true : R.getGuildId())), A = (0, f.ZP)(R);
   var D = R;
   let L = (0, s.e7)([v.Z], () => null != D && !a().isEmpty(v.Z.getVoiceStatesForChannel(D.id)));
   i.useEffect(() => {
@@ -96,7 +96,7 @@ function N(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
       channel: R,
-      draftType: x.d.ChannelMessage
+      draftType: j.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
       toolbar: k,
       "aria-label": E.intl.string(E.t.Pwe8tN),

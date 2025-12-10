@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -35,7 +35,7 @@ function E(e) {
   let {
     onClick: d,
     selectedOverride: f = false,
-    popoutProps: p,
+    popoutProps: h,
     ref: _
   } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), I = (0, m.D)(), P = f || I, {
     notificationCenterVariant: N
@@ -77,7 +77,7 @@ function E(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(P), A = N === g.jP.LEGACY ? s.xx7 : s.Dkj, R = (0, o.e7)([h.Z], () => h.Z.getChannelId()), D = i.useMemo(() => {
+  }(P), A = N === g.jP.LEGACY ? s.xx7 : s.Dkj, R = (0, o.e7)([p.Z], () => p.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
@@ -110,7 +110,7 @@ function E(e) {
             })
           }
           return e
-        }({}, j, p), n = n = {
+        }({}, j, h), n = n = {
           onClick: d,
           to: D,
           selected: P || E,

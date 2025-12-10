@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -26,8 +26,8 @@ function m(e) {
     comparator: b,
     selected: C,
     checked: y,
-    disabled: _ = false,
-    inlineUsername: v = true,
+    disabled: v = false,
+    inlineUsername: _ = true,
     onClick: O,
     onMouseEnter: x,
     "aria-setsize": E,
@@ -53,7 +53,7 @@ function m(e) {
   }({
     id: "user-row-".concat(m),
     className: l()(f.friendWrapper, {
-      [f.disabled]: _
+      [f.disabled]: v
     }),
     onClick: () => {
       null != O && O(r.id)
@@ -64,14 +64,14 @@ function m(e) {
   }, P), n = n = {
     role: "option",
     "aria-selected": y,
-    "aria-disabled": _,
+    "aria-disabled": v,
     "aria-setsize": E,
     "aria-posinset": j,
     children: (0, i.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {
         [f.friendSelected]: C,
-        [f.twoRows]: !v
+        [f.twoRows]: !_
       }),
       children: [(0, i.jsx)(u.Z, {
         user: r,
@@ -80,7 +80,7 @@ function m(e) {
       }), (0, i.jsxs)(d.Z, {
         className: f.match,
         align: d.Z.Align.BASELINE,
-        direction: v ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
+        direction: _ ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(s.Text, {
           tag: "strong",
           className: f.nickname,
@@ -101,7 +101,7 @@ function m(e) {
         })]
       }), (0, i.jsx)(s.FZ5, {
         checked: y,
-        disabled: _
+        disabled: v
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

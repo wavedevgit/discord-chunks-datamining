@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -173,8 +173,8 @@ class en extends Chunk98597.ZP {
       locked: s,
       sorting: d,
       isUserOver: f,
-      connectChannelDropTarget: h,
-      connectChannelDragSource: p,
+      connectChannelDropTarget: p,
+      connectChannelDragSource: h,
       connectUserDropTarget: g,
       connectDragPreview: m,
       canReorderChannel: b,
@@ -302,7 +302,7 @@ class en extends Chunk98597.ZP {
     }), $(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = L.Z.getGuild(t.getGuildId());
+      } = this.props, i = M.Z.getGuild(t.getGuildId());
       null != i && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -412,9 +412,9 @@ function ei(e) {
   } = e, u = (0, a.cj)([G.ZP], () => ({
     unread: G.ZP.hasUnread(n.id),
     mentionCount: G.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), f = (0, a.cj)([D.Z, M.Z, k.Z], () => {
+  })), d = (0, a.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), f = (0, a.cj)([D.Z, L.Z, k.Z], () => {
     let e = D.Z.getChannel(n.parent_id),
-      r = M.Z.getCheck(n.guild_id);
+      r = L.Z.getCheck(n.guild_id);
     return {
       canManageChannel: k.Z.can(q.Plq.MANAGE_CHANNELS, n),
       canReorderChannel: true !== i && (t.id === X._ || (null != e ? k.Z.can(q.Plq.MANAGE_CHANNELS, e) : k.Z.can(q.Plq.MANAGE_CHANNELS, t))),
@@ -423,7 +423,7 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), p = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), O = (0, a.e7)([_.Z], () => null != _.Z.getStartTime(n), [n]), {
+  }), p = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), O = (0, a.e7)([_.Z], () => null != _.Z.getStartTime(n), [n]), {
     isSubscriptionGated: j,
     needSubscriptionToAccess: x
   } = (0, I.Z)(n.id), E = (0, C.Z)(), S = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), N = e.connected || (null == E ? true : E.channelId) === n.id, {
@@ -440,9 +440,9 @@ function ei(e) {
   }, {
     autoTrackExposure: false
   }), {
-    enableHighlight: L,
+    enableHighlight: M,
     enableWaveformIcon: F
-  } = (0, b.M)(t.id, "VoiceChannel"), V = null != c && c.length > 0, z = L && V, W = F && V, K = (0, H.Z)({
+  } = (0, b.M)(t.id, "VoiceChannel"), V = null != c && c.length > 0, z = M && V, W = F && V, K = (0, H.Z)({
     channel: n,
     isChannelSelected: o,
     isChannelCollapsed: s,
@@ -454,9 +454,9 @@ function ei(e) {
   }), Y = N && null == K;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
-    embeddedApps: p,
+    embeddedApps: h,
     embeddedActivityType: q.IIU.PLAYING,
-    video: h,
+    video: p,
     hasActiveEvent: null != y,
     isSubscriptionGated: j,
     needSubscriptionToAccess: x

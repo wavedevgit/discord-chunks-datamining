@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -24,16 +24,16 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: r,
     onError: b
-  } = e, C = (0, f.Z)(), [y, _] = i.useState(false), [v, O] = i.useState(false), [x, E] = i.useState(false), [j, S] = i.useState(false), [P, I] = i.useState(false), Z = y || v || x, T = i.useCallback(async e => {
+  } = e, C = (0, f.Z)(), [y, v] = i.useState(false), [_, O] = i.useState(false), [x, E] = i.useState(false), [j, S] = i.useState(false), [P, I] = i.useState(false), Z = y || _ || x, T = i.useCallback(async e => {
     if (!Z) {
-      _(true);
+      v(true);
       try {
         await (0, p.e4)(e), S(true), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        _(false)
+        v(false)
       }
     }
   }, [Z, n, b]), N = i.useCallback(async e => {
@@ -125,7 +125,7 @@ function b(e) {
     rejectAll: A,
     markAsNotSpam: M,
     isAcceptLoading: y,
-    isRejectLoading: v,
+    isRejectLoading: _,
     isUserProfileLoading: x,
     isOptimisticAccepted: j,
     isOptimisticRejected: P

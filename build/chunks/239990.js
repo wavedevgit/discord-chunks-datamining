@@ -1,7 +1,9 @@
-/** Chunk was on 91053 **/
-/** chunk id: 239990, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 239990, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   card: "card__6d190",
+  cardSmall: "cardSmall__6d190 card__6d190",
   cardSingle: "cardSingle__6d190 card__6d190",
   cardPreview: "cardPreview__6d190",
   cardPreviewNoScale: "cardPreviewNoScale__6d190",

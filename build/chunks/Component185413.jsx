@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => x
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk257803 = require("./257803.js");
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -67,7 +67,7 @@ function x(e) {
     h.default.track(C.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == l || null == o) ? null : (0, i.jsx)(E, v({
+  }, []), null == l || null == o) ? null : (0, i.jsx)(E, _({
     guild: o,
     channel: l
   }, n))
@@ -119,32 +119,32 @@ function E(e) {
     roles: w,
     members: M,
     getRichTag: R,
-    children: (0, i.jsx)(l.Modal, (t = v({}, x), n = n = {
+    children: (0, i.jsx)(l.Modal, (t = _({}, x), n = n = {
       title: y.intl.string(y.t.dMJ3Y6),
       onClose: p,
       input: (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(o.Text, {
-          className: _.channelName,
+          className: v.channelName,
           variant: "text-lg/normal",
           color: "text-default",
           children: [(0, i.jsx)(U, {
-            className: _.channelIcon,
+            className: v.channelIcon,
             size: "sm",
             color: "currentColor"
           }), d.name]
         }), d.isGuildStageVoice() && (0, i.jsx)(o.Text, {
           color: "text-default",
-          className: _.description,
+          className: v.description,
           variant: "text-sm/normal",
           children: y.intl.string(y.t.f7VbhF)
         }), (0, i.jsx)(m.Z.SearchBox, {
           placeholderText: y.intl.string(y.t.iezLLn)
         }), (0, i.jsx)(o.Text, {
-          className: _.subtext,
+          className: v.subtext,
           variant: "text-xs/normal",
           children: y.intl.string(y.t.rwFx85)
         }), null != T ? (0, i.jsx)(o.Text, {
-          className: _.subtext,
+          className: v.subtext,
           variant: "text-xs/normal",
           color: "text-feedback-critical",
           children: T.getAnyErrorMessage()

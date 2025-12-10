@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -28,7 +28,7 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let _ = {
+let v = {
   SCALE_MIN: .7,
   SCALE_MAX: 1,
   DURATION_IN: 300,
@@ -36,7 +36,7 @@ let _ = {
   EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
   EASING_OUT: Chunk748780.Z.Easing.quad
 };
-class v extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -54,8 +54,8 @@ class v extends Chunk473749.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), o.Z.parallel([o.Z.timing(t, {
       toValue: 1,
-      duration: _.DURATION_IN,
-      easing: _.EASING_IN
+      duration: v.DURATION_IN,
+      easing: v.EASING_IN
     }), o.Z.timing(n, {
       toValue: 1,
       duration: 200
@@ -76,8 +76,8 @@ class v extends Chunk473749.PureComponent {
     }));
     o.Z.sequence([o.Z.timing(t, {
       toValue: 0,
-      duration: _.DURATION_OUT,
-      easing: _.EASING_OUT
+      duration: v.DURATION_OUT,
+      easing: v.EASING_OUT
     }), o.Z.sequence(l), o.Z.timing(r, {
       toValue: 0,
       duration: 125
@@ -91,7 +91,7 @@ class v extends Chunk473749.PureComponent {
       transform: [{
         scale: module.interpolate({
           inputRange: [0, 1],
-          outputRange: [_.SCALE_MIN, _.SCALE_MAX]
+          outputRange: [v.SCALE_MIN, v.SCALE_MAX]
         })
       }],
       opacity: module
@@ -154,7 +154,7 @@ function O(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), _ = (0, s.e7)([h.Z], () => h.Z.isFocused()), O = n.map(e => {
+  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([h.Z], () => h.Z.isFocused()), O = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -164,7 +164,7 @@ function O(e) {
       latched: c,
       ringing: u
     } = e;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(_, {
       className: g.participant,
       width: (0, d.dcp)(y),
       theme: C,
@@ -174,7 +174,7 @@ function O(e) {
         onContextMenu: t => null == r ? true : r(e, t),
         children: (0, i.jsx)(f.Z, {
           userId: l.id,
-          src: l.getAvatarURL(b, (0, d.dcp)(y), s && _),
+          src: l.getAvatarURL(b, (0, d.dcp)(y), s && v),
           size: y,
           muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
           deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,

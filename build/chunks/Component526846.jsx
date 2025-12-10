@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => w
@@ -42,7 +42,7 @@ function A(e) {
     } = e,
     {
       fetchState: g,
-      voiceBannerCollection: _
+      voiceBannerCollection: v
     } = function() {
       let e = (0, c.e7)([O.default], () => O.default.onlyShowPreviewAppCollections) ? a.E.PREVIEW : a.E.ACTIVE;
       return r.useEffect(() => {
@@ -61,11 +61,11 @@ function A(e) {
         }))[0]
       }
     }(),
-    v = g === C.M.FETCHING,
+    _ = g === C.M.FETCHING,
     x = r.useMemo(() => {
-      let e = null == _ ? true : _.application_directory_collection_items[0];
+      let e = null == v ? true : v.application_directory_collection_items[0];
       return null == e ? null : e.type === s.C.APPLICATION_BANNER ? e : null
-    }, [null == _ ? true : _.application_directory_collection_items]),
+    }, [null == v ? true : v.application_directory_collection_items]),
     {
       trackItemImpressionRef: E
     } = (0, f.Z)({
@@ -76,7 +76,7 @@ function A(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != x ? (0, h.dF)(x.application) : true
     });
-  return null == x || null == _ || v ? null : (null != x.id && null != x.image_hash && (n = (0, y.$_)({
+  return null == x || null == v || _ ? null : (null != x.id && null != x.image_hash && (n = (0, y.$_)({
     itemId: x.id,
     hash: x.image_hash,
     containerWidth: 584
@@ -127,7 +127,7 @@ let w = Chunk473749.forwardRef(function(e, t) {
   }, [b, C]), r.useEffect(() => {
     a || o()
   }, [o, a]);
-  let y = (0, _.bp)(),
+  let y = (0, v.bp)(),
     {
       analyticsLocations: O,
       newestAnalyticsLocation: T
@@ -160,7 +160,7 @@ let w = Chunk473749.forwardRef(function(e, t) {
     }, [s, l]);
   return (0, i.jsx)(p.Gt, {
     value: O,
-    children: (0, i.jsx)(v.Z, {
+    children: (0, i.jsx)(_.Z, {
       children: (0, i.jsxs)(u.VqE, {
         ref: t,
         "aria-labelledby": N,

@@ -1,7 +1,7 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 27454 **/
 /** chunk id: 372564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,10 +39,10 @@ function b(e) {
   return e
 }
 
-function _(e) {
+function j(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends Chunk473749.Component {
+class v extends Chunk473749.Component {
   render() {
     let {
       channel: e
@@ -70,15 +70,15 @@ class y extends Chunk473749.Component {
   constructor(...e) {
     super(...e), m(this, "_mouseDown", false), m(this, "_mouseUp", false), m(this, "handleOpenTopic", e => {
       let t = e.target;
-      if ((0, a.kK)(t)) {
-        if (_(t)) return;
+      if ((0, l.kK)(t)) {
+        if (j(t)) return;
         let e = t.parentNode;
-        if ((0, a.kK)(e) && _(e)) return
+        if ((0, l.kK)(e) && j(e)) return
       }(0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("65631").then(n.bind(n, 10722));
-        return t => (0, r.jsx)(e, b({}, t, this.props))
+        return t => (0, r.jsx)(e, g({}, t, this.props))
       })
     }), m(this, "onMouseDown", () => {
       this._mouseDown = true
@@ -94,7 +94,7 @@ class y extends Chunk473749.Component {
       (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("57804"), n.e("49049"), n.e("89250"), n.e("62856"), n.e("66201"), n.e("91315"), n.e("91053"), n.e("24783"), n.e("82082")]).then(n.bind(n, 439635));
+        } = await Promise.all([n.e("57804"), n.e("49049"), n.e("89250"), n.e("62856"), n.e("66201"), n.e("91315"), n.e("91053"), n.e("24783"), n.e("80598")]).then(n.bind(n, 439635));
         return n => (0, r.jsx)(e, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -106,7 +106,7 @@ class y extends Chunk473749.Component {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(b({}, n), {
+        }(g({}, n), {
           channel: t,
           guild: i,
           includeTopic: true
@@ -121,4 +121,4 @@ class y extends Chunk473749.Component {
     })
   }
 }
-let O = y
+let y = v

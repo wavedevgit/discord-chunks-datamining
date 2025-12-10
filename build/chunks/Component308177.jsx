@@ -28,8 +28,8 @@ let O = (0, Chunk112724.Z)(e => {
   let {
     channel: a,
     width: O,
-    onScroll: x,
-    popoutType: j
+    onScroll: j,
+    popoutType: x
   } = e, {
     selectedParticipantId: v,
     largeStream: C,
@@ -93,7 +93,7 @@ let O = (0, Chunk112724.Z)(e => {
               channel: a,
               participant: l[0],
               width: H,
-              popoutType: j
+              popoutType: x
             })
           }, "selected-participant");
         case 1:
@@ -104,7 +104,7 @@ let O = (0, Chunk112724.Z)(e => {
               channel: a,
               participants: l,
               selectedParticipant: Z,
-              popoutType: j
+              popoutType: x
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
@@ -130,6 +130,6 @@ let O = (0, Chunk112724.Z)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
     className: _.scroller,
     chunkSize: 60,
-    onScroll: x
+    onScroll: j
   })
 })

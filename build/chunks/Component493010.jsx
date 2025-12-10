@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 493010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,11 +21,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952899 = require("./952899.js");
-let v = function(e) {
+let _ = function(e) {
   let {
     channel: t,
     guild: n,
-    maxWidth: v
+    maxWidth: _
   } = e;
   r.useEffect(() => {
     (0, p.Q3)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
@@ -42,7 +42,7 @@ let v = function(e) {
     });
   return (0, i.jsxs)(u.Z, {
     sidebarType: u.y.CallChatSidebar,
-    maxWidth: v,
+    maxWidth: _,
     floatingLayer: g.ZP,
     children: [(0, i.jsx)(s.Z, {
       channel: t,
@@ -57,7 +57,7 @@ let v = function(e) {
         children: t.name
       })]
     }), (0, i.jsx)("div", {
-      className: _.chat,
+      className: v.chat,
       children: (0, i.jsx)(c.Z, {
         channel: t,
         guild: n,

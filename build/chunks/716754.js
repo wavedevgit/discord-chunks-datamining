@@ -1,5 +1,6 @@
-/** Chunk was on 83037 **/
-/** chunk id: 716754, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 59231 **/
+/** chunk id: 716754, original params: e,n,t (module,exports,require) **/
+"use strict";
 require.r(module.exports = {
   pill: "pill_a2c9e8",
   clickable: "clickable_a2c9e8",

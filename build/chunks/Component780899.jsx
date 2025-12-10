@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 780899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y9: () => m,
@@ -81,13 +81,13 @@ function m(e) {
     end: g
   });
   i.useEffect(() => {
-    p && O((0, s.r)(), {
+    p && O((0, c.r)(), {
       captureDraggingState: true
     })
   }, [O, p]);
   let [{
     dragSourcePosition: j
-  }, x] = (0, c.L)({
+  }, x] = (0, s.L)({
     accept: m,
     drop: e => {
       let t = e.index;
@@ -116,8 +116,8 @@ let b = Chunk473749.memo(function(e) {
     className: n,
     draggingClassName: l,
     dropBeforeClassName: o,
-    dropAfterClassName: c,
-    "aria-label": s,
+    dropAfterClassName: s,
+    "aria-label": c,
     children: u
   } = e, d = p(e, ["index", "className", "draggingClassName", "dropBeforeClassName", "dropAfterClassName", "aria-label", "children"]);
   let f = i.useRef(null),
@@ -134,8 +134,8 @@ let b = Chunk473749.memo(function(e) {
     O = y && t > h;
   return (0, r.jsx)("div", {
     ref: f,
-    className: a()(n, b && l, v && o, O && c),
-    "aria-label": s,
+    className: a()(n, b && l, v && o, O && s),
+    "aria-label": c,
     children: u
   })
 });

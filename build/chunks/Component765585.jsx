@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -40,8 +40,8 @@ let b = Chunk473749.forwardRef(function(e, t) {
     maxWidth: A = 280,
     hideDismissButton: R = false,
     pointerClassName: D,
-    dismissIconClassName: L,
-    dismissIcon: M,
+    dismissIconClassName: M,
+    dismissIcon: L,
     onDismissIconClick: k,
     tryItButtonColor: G
   } = e, U = I ? a.zx.Sizes.LARGE : a.zx.Sizes.MAX, [B, F] = i.useState(false), {
@@ -71,13 +71,13 @@ let b = Chunk473749.forwardRef(function(e, t) {
         [m.contentNoArt]: null == b || E,
         [m.contentPremium]: S
       }),
-      children: [null != M && (0, r.jsx)(s.P3F, {
+      children: [null != L && (0, r.jsx)(s.P3F, {
         onClick: k,
-        className: L,
-        children: M
+        className: M,
+        children: L
       }), (0, r.jsxs)("div", {
         className: o()(b, E ? m.artInline : m.artAbsolute),
-        children: [P && (0, r.jsx)(h.Z, {
+        children: [P && (0, r.jsx)(p.Z, {
           className: m.gifTag
         }), T]
       }), (0, r.jsxs)("div", {
@@ -104,7 +104,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
             className: m.button,
             size: U,
             onClick: e => {
-              null == x || x(e), j(e), z(p.L.PRIMARY)
+              null == x || x(e), j(e), z(h.L.PRIMARY)
             },
             color: null != G ? G : S ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
             children: null != O ? O : g.intl.string(g.t.IHf1RN)
@@ -112,7 +112,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
             className: m.button,
             size: U,
             onClick: e => {
-              null == x || x(e), z(p.L.DISMISS)
+              null == x || x(e), z(h.L.DISMISS)
             },
             color: S ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
@@ -122,7 +122,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
           className: m.button,
           size: a.zx.Sizes.MAX,
           onClick: e => {
-            null == x || x(e), z(p.L.PRIMARY)
+            null == x || x(e), z(h.L.PRIMARY)
           },
           color: a.zx.Colors.WHITE,
           children: g.intl.string(g.t.HU2IR5)

@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -44,10 +44,10 @@ function k(e) {
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: i,
     socialLayerStorefrontApplicationId: T.t9
-  }) : (0, r.jsx)(s.Button, {
+  }) : (0, r.jsx)(c.Button, {
     variant: "secondary",
     size: "sm",
-    icon: s.EOn,
+    icon: c.EOn,
     text: C.intl.string(C.t["i/yzHs"]),
     onClick: n
   })
@@ -69,10 +69,10 @@ function N(e) {
       handleOpenCollectiblesShop: i,
       handleOpenGameShop: l,
       socialLayerStorefrontApplicationId: o
-    }) : (0, r.jsx)(s.Button, {
+    }) : (0, r.jsx)(c.Button, {
       variant: "secondary",
       size: "sm",
-      icon: s.qJs,
+      icon: c.qJs,
       text: C.intl.string(C.t.SDUwM0),
       onClick: i
     }), (0, r.jsx)(S.Z, {
@@ -114,7 +114,10 @@ function A(e) {
   let {
     wishlist: W,
     error: H
-  } = (0, h.kZ)(S, n.id), z = (0, p.Z)({
+  } = (0, h.kZ)({
+    wishlistId: S,
+    userId: n.id
+  }), z = (0, p.Z)({
     location: "user-profile-modal-v2-wishlist",
     wishlist: W
   }), K = i.useCallback(e => {
@@ -154,78 +157,78 @@ function A(e) {
       guildId: (0, g.ac)()
     })
   }, []);
-  return null != H ? null : null == W || 0 === W.items.length ? (0, r.jsx)(P.F, {
+  return null != H ? null : null == W || 0 === W.items.length ? (0, r.jsx)(_.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: D.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
         className: D.emptyStateText,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
           children: C.intl.string(C.t.HGnLLT)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: C.intl.string(C.t["/X1ny6"])
         })]
-      }), (0, r.jsxs)(s.ButtonGroup, {
+      }), (0, r.jsxs)(c.ButtonGroup, {
         size: "sm",
-        children: [L && (0, r.jsx)(s.Button, {
+        children: [L && (0, r.jsx)(c.Button, {
           variant: "primary",
           size: "sm",
-          icon: s.EOn,
+          icon: c.EOn,
           text: C.intl.string(C.t.ZbS4QB),
           onClick: Y
-        }), z && (0, r.jsx)(s.Button, {
+        }), z && (0, r.jsx)(c.Button, {
           variant: "primary",
           size: "sm",
-          icon: s.EOn,
+          icon: c.EOn,
           text: B === T.t9 ? C.intl.string(C.t["kq/75v"]) : C.intl.string(C.t.apFNLU),
           onMouseDown: X,
           onClick: Q
         })]
       })]
     })
-  }) : (0, r.jsxs)(P.F, {
+  }) : (0, r.jsxs)(_.F, {
     scrollerRef: w,
     className: D.scroller,
     fade: true,
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(P.Z, {
       scrollerRef: w
     }), (0, r.jsxs)("div", {
       ref: V,
       className: D.headerRow,
       children: [(0, r.jsxs)("div", {
         className: D.teenDisclaimer,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "text-subtle",
           children: C.intl.format(C.t.r6Y1Lg, {
             count: W.items.length
           })
-        }), !F && (0, r.jsx)(c.u, {
+        }), !F && (0, r.jsx)(s.u, {
           text: C.intl.string(C.t.RX7D9h),
           asContainer: true,
-          children: (0, r.jsx)(s.tEY, {
+          children: (0, r.jsx)(c.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(s.kZF, {
+              children: (0, r.jsx)(c.kZF, {
                 size: "custom",
                 width: 16,
                 height: 16
               })
             })
           })
-        }), F && M && (0, r.jsx)(c.u, {
+        }), F && M && (0, r.jsx)(s.u, {
           text: C.intl.string(C.t.d78ChW),
           asContainer: true,
-          children: (0, r.jsx)(s.tEY, {
+          children: (0, r.jsx)(c.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(s.d3s, {
+              children: (0, r.jsx)(c.d3s, {
                 size: "custom",
                 width: 16,
                 height: 16

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -48,30 +48,30 @@ function O(e) {
   }, {
     disableTrack: j
   }, [t.id]), j) ? null : (0, i.jsxs)("div", {
-    className: l()(v.themed, v.chatHeaderBar),
+    className: l()(_.themed, _.chatHeaderBar),
     children: [(0, i.jsxs)("div", {
-      className: v.chatHeaderBarInfo,
+      className: _.chatHeaderBarInfo,
       children: [(0, i.jsx)(f.ZP, {
-        className: v.mask,
+        className: _.mask,
         mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
         children: null == E ? (0, i.jsx)("div", {
-          className: l()(v.guildIcon, v.guildIconWithoutImage),
+          className: l()(_.guildIcon, _.guildIconWithoutImage),
           children: (0, i.jsx)("div", {
-            className: v.guildAcronym,
+            className: _.guildAcronym,
             children: null != O ? (0, g.gM)(O) : null
           })
         }) : (0, i.jsx)("img", {
           alt: null == O ? true : O.name,
           src: E,
-          className: v.guildIcon
+          className: _.guildIcon
         })
       }), (0, i.jsx)(c.Text, {
-        className: v.chatHeaderBarText,
+        className: _.chatHeaderBarText,
         variant: "text-md/medium",
         color: "text-default",
-        children: _.intl.format(_.t.f2tNxH, {
+        children: v.intl.format(v.t.f2tNxH, {
           username: null == t ? true : t.globalName,
           channelName: (0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -93,7 +93,7 @@ function x(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: r
-  } = e, l = r ? _.intl.string(_.t.ygslb0) : _.intl.string(_.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, l = r ? v.intl.string(v.t.ygslb0) : v.intl.string(v.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, m.Kh)(t)
   };
   return (0, i.jsx)(s.zxk, {

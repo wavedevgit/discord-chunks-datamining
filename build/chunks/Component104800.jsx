@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk273339 = require("./273339.js");
 
-function C(e) {
+function S(e) {
   let {
     quest: t,
     sourceQuestContent: n
@@ -42,7 +42,7 @@ function C(e) {
   })
 }
 
-function S(e) {
+function C(e) {
   let {
     title: t,
     subtitle: n,
@@ -116,12 +116,12 @@ function _(e) {
     subtitle: null != (t = _.config.ctaConfig.subtitle) ? t : h.intl.string(h.t.mxaHfx)
   };
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(C, {
+    children: [(0, r.jsx)(S, {
       quest: _,
       sourceQuestContent: g
     }), (0, r.jsx)("div", {
       className: b.videoContOverlay
-    }), (0, r.jsx)(S, {
+    }), (0, r.jsx)(C, {
       title: T,
       subtitle: R,
       icon: a.d4D,

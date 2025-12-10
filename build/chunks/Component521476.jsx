@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 521476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  h: () => v
+  h: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -51,7 +51,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   var t, n;
   let {
     guild: r
@@ -86,7 +86,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t
   } = e, n = (0, r.e7)([u.default, d.ZP], () => {
@@ -94,11 +94,11 @@ function v(e) {
     let e = u.default.getId();
     return (0, p.no)(d.ZP.getMember(t.id, e))
   }, [t]);
-  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(_, {
+  return n.has(m.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || n.has(m.q.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(v, {
     guild: t
   }) : n.has(m.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(y, {
     guild: t
-  }) : (0, i.jsx)(_, {
+  }) : (0, i.jsx)(v, {
     guild: t
   })
 }

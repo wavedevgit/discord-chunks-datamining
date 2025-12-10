@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -27,7 +27,7 @@ function p(e) {
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), h = (0, a.e7)([c.default], () => c.default.getCurrentUser()), y = (0, o.zPA)(), v = i.useMemo(() => {
+  })), h = (0, a.e7)([s.default], () => s.default.getCurrentUser()), y = (0, o.zPA)(), v = i.useMemo(() => {
     if (null == h || null == m) return null;
     let {
       id: e,
@@ -47,7 +47,7 @@ function p(e) {
         imageSrc: t,
         gameName: i
       } = n;
-      return (0, r.jsx)(s.Z, {
+      return (0, r.jsx)(c.Z, {
         className: g.gamePreview,
         imageSrc: t,
         gameName: i,
@@ -105,15 +105,15 @@ function p(e) {
   null == O.current && j();
   let {
     x: x,
-    y: _
+    y: P
   } = null != (t = O.current) ? t : {
     x: 0,
     y: 0
-  }, P = b.x - x - 60 * !!y, I = b.y - _;
+  }, _ = b.x - x - 60 * !!y, I = b.y - P;
   return (0, r.jsx)("div", {
     className: g.container,
     style: {
-      transform: "translate3d(".concat(P, "px, ").concat(I, "px, 0)")
+      transform: "translate3d(".concat(_, "px, ").concat(I, "px, 0)")
     },
     children: v
   })

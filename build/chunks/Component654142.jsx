@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -81,7 +81,7 @@ let _ = Chunk473749.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, p.Z)(t), {
+  }(t), I = (0, h.Z)(t), {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z
@@ -104,7 +104,7 @@ let _ = Chunk473749.memo(function(e) {
       }))
     })
   }, [y, O, v, Z, P]);
-  return (0, r.jsx)(h.Z, b(m({}, _), {
+  return (0, r.jsx)(p.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
     selected: null != C && x.includes(C),

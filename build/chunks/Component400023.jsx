@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Y
@@ -64,7 +64,7 @@ function G(e) {
   return e
 }
 
-function W(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function W(e, t) {
   }), e
 }
 
-function z(e, t) {
+function W(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -103,8 +103,8 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
       messages: g,
       unreadCount: b,
       showNewMessagesBar: C,
-      messageDisplayCompact: _,
-      channelStream: v,
+      messageDisplayCompact: v,
+      channelStream: _,
       uploads: O,
       hasUnreads: E,
       editingMessageId: S,
@@ -115,7 +115,7 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [D, K] = r.useState(null != (n = j.Z.isAtBottom(m.id)) && n), Y = r.useMemo(() => _ ? (0, L.aJ)({
+    } = e, [D, K] = r.useState(null != (n = j.Z.isAtBottom(m.id)) && n), Y = r.useMemo(() => v ? (0, L.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -129,10 +129,10 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
       attachments: 8,
       fontSize: P,
       groupSpacing: o
-    }), [_, P, o]), X = (0, U.ZP)({
+    }), [v, P, o]), X = (0, U.ZP)({
       messages: g,
       channel: m,
-      compact: _,
+      compact: v,
       hasUnreads: E,
       focusId: S,
       placeholderHeight: Y.totalHeight,
@@ -156,8 +156,8 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
       messages: g,
       unreadCount: b,
       showNewMessagesBar: C,
-      messageDisplayCompact: _,
-      channelStream: v,
+      messageDisplayCompact: v,
+      channelStream: _,
       uploads: O,
       loadMore: X.loadMore,
       scrollManager: X,
@@ -208,7 +208,7 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
       {
         ref: ea
       } = el,
-      eo = z(el, ["ref"]),
+      eo = W(el, ["ref"]),
       es = (0, h.Z)(e => {
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
@@ -224,7 +224,7 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
       navigator: J,
       children: [null != ei && ei, (0, i.jsxs)("div", {
         className: a()(H.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == ei && ee, (0, i.jsxs)(q, W(G({
+        children: [null == ei && ee, (0, i.jsxs)(q, z(G({
           ref: es,
           customTheme: true,
           className: a()(p, H.scroller, ec ? ed : true),
@@ -236,7 +236,7 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
         }, er), {
           tabIndex: false,
           role: "group",
-          children: [en, (0, i.jsxs)("ol", W(G({
+          children: [en, (0, i.jsxs)("ol", z(G({
             className: a()(H.scrollerInner, {
               [H.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
@@ -271,7 +271,7 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
       forceCompact: a = false,
       forceCozy: o = false,
       typingGradient: s = false
-    } = e, u = z(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy", "typingGradient"]);
+    } = e, u = W(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy", "typingGradient"]);
     let {
       canManageMessages: d,
       permissionVersion: h,
@@ -345,11 +345,11 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
         o = null != (n = null == (t = A.default.getUser(E.default.getId())) ? true : t.hasFlag(F.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
-        d = (0, c.Wu)([v.Z], () => {
+        d = (0, c.Wu)([_.Z], () => {
           var t;
-          return s && u && null != (t = v.Z.summaries(e.id)) ? t : []
+          return s && u && null != (t = _.Z.summaries(e.id)) ? t : []
         }, [s, e.id, u]),
-        h = (0, c.e7)([v.Z], () => s ? v.Z.selectedSummary(e.id) : null, [s, e.id]),
+        h = (0, c.e7)([_.Z], () => s ? _.Z.selectedSummary(e.id) : null, [s, e.id]),
         f = function(e) {
           let t = r.useMemo(() => {
             let t = new Set;
@@ -378,10 +378,10 @@ let q = (0, Chunk467721.animated)(Chunk481060.eTT),
         })
       }
     }(t);
-    return (0, i.jsx)(_.aQ.Provider, {
+    return (0, i.jsx)(v.aQ.Provider, {
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(D.v, {
-        children: (0, i.jsx)(K, W(G({}, u), {
+        children: (0, i.jsx)(K, z(G({}, u), {
           messageGroupSpacing: x,
           showNewMessagesBar: true,
           channel: t,

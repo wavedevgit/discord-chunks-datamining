@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 919498, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => d,
@@ -31,7 +31,7 @@ function d(e) {
     }
     return i
   }(e, ["applicationId"]);
-  let i = (0, c.Z)(t);
+  let i = (0, s.Z)(t);
   return i.length > 0 ? (0, r.jsx)(o.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -50,7 +50,7 @@ function d(e) {
     }
     return e
   }({
-    label: s.intl.formatToPlainString(s.t.ujhJdG, {
+    label: c.intl.formatToPlainString(c.t.ujhJdG, {
       numFriends: i.length
     }),
     users: i,
@@ -65,18 +65,18 @@ function f(e) {
     guildId: d,
     channelId: f,
     className: g
-  } = e, p = (0, c.Z)(n), m = p.length > 0, b = function(e, t, n) {
+  } = e, p = (0, s.Z)(n), m = p.length > 0, b = function(e, t, n) {
     let r = e.slice(0, 3).map(e => a.ZP.getName(t, n, e));
-    return 1 === e.length ? s.intl.formatToPlainString(s.t.FURqTU, {
+    return 1 === e.length ? c.intl.formatToPlainString(c.t.FURqTU, {
       name: r[0]
-    }) : 2 === e.length ? s.intl.formatToPlainString(s.t["08Usu/"], {
+    }) : 2 === e.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
       name1: r[0],
       name2: r[1]
-    }) : 3 === e.length ? s.intl.formatToPlainString(s.t.NTYHag, {
+    }) : 3 === e.length ? c.intl.formatToPlainString(c.t.NTYHag, {
       name1: r[0],
       name2: r[1],
       name3: r[2]
-    }) : s.intl.formatToPlainString(s.t["i/5oAn"], {
+    }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
       name1: r[0],
       name2: r[1],
       name3: r[2],

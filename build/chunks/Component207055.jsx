@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 207055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -51,7 +51,7 @@ let U = Chunk473749.memo(e => {
   } = e, T = C.id, k = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), B = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), H = (0, c.Z)({
     userId: T,
     checkSoundSharing: true
-  }), G = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), W = k && G, z = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(y.guild_id, T)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(y.id).has(T)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
+  }), G = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), z = k && G, W = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(y.guild_id, T)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(y.id).has(T)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
     let {
       userIds: t
     } = e;
@@ -64,13 +64,13 @@ let U = Chunk473749.memo(e => {
   }), er = (0, f.ZP)(y, true, C), el = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), ea = (0, b.j)(T), eo = (0, x.Eu)(y.id, T), {
     enableVCStatusIcons: es,
     enableRequestToStream: ec
-  } = v.A.useExperiment({
+  } = _.A.useExperiment({
     guildId: y.guild_id,
     location: "VoiceUsers"
   }, {
     autoTrackExposure: (null == X ? true : X.session_id) != null
   });
-  return (0, i.jsx)(_.Z, {
+  return (0, i.jsx)(v.Z, {
     shakeLocation: D.oZ.VOICE_USER,
     isShaking: H,
     children: (0, i.jsx)(R.ZP, (r = function(e) {
@@ -92,7 +92,7 @@ let U = Chunk473749.memo(e => {
       return e
     }({}, e), l = l = {
       nick: null != Z ? Z : et,
-      canDrag: e.canDrag && !z,
+      canDrag: e.canDrag && !W,
       disconnected: eo,
       otherClientSessionType: null == ee || null == (t = ee.clientInfo) ? true : t.os,
       voicePlatform: en,
@@ -101,13 +101,13 @@ let U = Chunk473749.memo(e => {
       mute: a || U,
       deaf: s || V,
       speaking: H,
-      latched: W,
+      latched: z,
       ringing: q,
       priority: B,
       embeddedApplication: Y[0],
       isStreaming: null != Q && Q.channelId === y.id,
       isWatching: null != $ && $.state !== L.jm8.ENDED,
-      isGuest: z,
+      isGuest: W,
       isSelf: k,
       requestToStreamActivity: ec ? X : true,
       application: (es || ei) && (null == X ? true : X.session_id) != null ? J : true,
@@ -139,8 +139,8 @@ let V = [],
       location: m,
       numAudience: g,
       withGuildIcon: b = false,
-      className: _,
-      children: v,
+      className: v,
+      children: _,
       isThread: O = false
     } = e, [j, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, x.Es)(l.id, null != c ? c : V), {
       shouldShow: M,
@@ -153,7 +153,7 @@ let V = [],
       t && (N(true), B.current.cancel(), A.current = e, F.current.delay())
     }, [t]), G = r.useCallback(e => {
       t && (F.current.cancel(), A.current = null, N(false), B.current.delay())
-    }, [t]), W = (0, o.Wu)([T.Z], () => {
+    }, [t]), z = (0, o.Wu)([T.Z], () => {
       if (u) return [];
       let e = new Set;
       return null == w || w.forEach(t => {
@@ -165,8 +165,8 @@ let V = [],
         })
       }), Array.from(e)
     });
-    (0, p.Z)(W);
-    let z = (() => {
+    (0, p.Z)(z);
+    let W = (() => {
       if (null == w || 0 === w.length) return null;
       let e = u && w.length > d + 1 ? w.slice(0, d) : w,
         t = h.Z.getGuildRingingUsers(l.id),
@@ -208,13 +208,13 @@ let V = [],
         numUsers: w.length - d
       })), r
     })();
-    return null == z && null == v ? null : (0, i.jsxs)(E.eJ, {
-      className: a()(_, k.list, {
+    return null == W && null == _ ? null : (0, i.jsxs)(E.eJ, {
+      className: a()(v, k.list, {
         [k.collapsed]: u,
         [k.withGuildIcon]: b,
         [k.isThread]: O
       }),
       collapsed: u,
-      children: [z, v]
+      children: [W, _]
     })
   }

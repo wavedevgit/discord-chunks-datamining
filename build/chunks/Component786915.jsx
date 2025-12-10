@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -44,8 +44,8 @@ function y(e) {
     applicationId: t,
     stream: r,
     channel: y,
-    exitFullScreen: _,
-    appContext: v,
+    exitFullScreen: v,
+    appContext: _,
     analyticsLocation: O,
     guildScheduledEvent: x,
     shouldPrioritizeGroupPlusIcon: E = false,
@@ -138,8 +138,8 @@ function y(e) {
           channel: y,
           streamUserId: null == r ? true : r.ownerId,
           applicationId: t,
-          appContext: null != v ? v : A,
-          exitFullScreen: _,
+          appContext: null != _ ? _ : A,
+          exitFullScreen: v,
           analyticsLocation: O,
           guildScheduledEvent: x
         })

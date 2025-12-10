@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 736409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => _
@@ -33,19 +33,19 @@ let _ = e => {
     } = (0, c.Ws)({
       location: b.dr.CONFLICT_CHECKS
     }), i = u.G6.useSetting(), o = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(g.S9g.USER_SETTINGS)), a = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
-      isOpen: h
+      isOpen: p
     } = (0, s.Z)();
-    if ((n && r || t) && !o && !h && !__OVERLAY__) {
-      if (!i && a === g.Skl.INVISIBLE) return t ? p.NK.ActivityAndStatus : p.NK.ActivityAndStatusNux;
-      if (!i) return t ? p.NK.Activity : p.NK.ActivityNux;
-      if (a === g.Skl.INVISIBLE) return t ? p.NK.Status : p.NK.StatusNux
+    if ((n && r || t) && !o && !p && !__OVERLAY__) {
+      if (!i && a === g.Skl.INVISIBLE) return t ? h.NK.ActivityAndStatus : h.NK.ActivityAndStatusNux;
+      if (!i) return t ? h.NK.Activity : h.NK.ActivityNux;
+      if (a === g.Skl.INVISIBLE) return t ? h.NK.Status : h.NK.StatusNux
     }
     return null
   }({
     isForceShowSharingPopout: n
   });
   (0, i.useEffect)(() => {
-    n && h.default.track(g.rMx.OPEN_POPOUT, {
+    n && p.default.track(g.rMx.OPEN_POPOUT, {
       type: "SharingPrivacyPopout"
     })
   }, [n]);
@@ -57,7 +57,7 @@ let _ = e => {
         visibleContent: i,
         markAsDismissed: l
       } = e, a = i === o.z.SHARE_ACTIVITY_COACHMARK_V2 || n;
-      return (0, r.jsx)(p.I, {
+      return (0, r.jsx)(h.I, {
         showPopout: a,
         popoutState: O,
         handleClose: () => {

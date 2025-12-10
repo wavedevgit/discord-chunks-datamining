@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -29,7 +29,7 @@ function _(e) {
     showEmptyChannelTopic: O
   } = e, v = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), j = null != v && v.length > 0, x = (0, u.ZP)(t, true), C = null != _ && _.length > 0;
   if (i.useEffect(() => {
-      j && h.default.track(p.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      j && p.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })

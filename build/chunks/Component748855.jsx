@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 748855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => f
@@ -24,7 +24,7 @@ function f(e) {
     onFavoriteClick: m
   } = e, [g, b] = r.useState(false), C = (0, o.e7)([u.Z], () => u.Z.getFavoritedStatuses().length >= u.o), y = r.useCallback(e => {
     e.stopPropagation(), null == m || m()
-  }, [m]), _ = f ? c.r7p : c.vxU;
+  }, [m]), v = f ? c.r7p : c.vxU;
   return (0, i.jsxs)(c.P3F, {
     onClick: l,
     onMouseEnter: () => {
@@ -63,7 +63,7 @@ function f(e) {
         }({}, e), n = n = {
           className: a()(p.centerAlign, p.favoriteIcon),
           onClick: y,
-          children: (0, i.jsx)(_, {
+          children: (0, i.jsx)(v, {
             className: p.closeIcon,
             color: f ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
           })

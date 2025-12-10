@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -23,10 +23,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837815 = require("./837815.js");
 
-function v(e) {
+function _(e) {
   let {
     channelId: t,
-    showDismiss: v = true
+    showDismiss: _ = true
   } = e, O = (0, r.e7)([u.Z], () => u.Z.getChannel(t), [t]), x = (0, g.sz)(t), E = null != (0, g.qY)(t), {
     canManageGuildEvent: j
   } = (0, o.XJ)(O), S = (0, r.e7)([d.Z], () => x.filter(e => !d.Z.isEventDismissed(e.id)), [x]), P = (0, r.cj)([h.ZP], () => S.reduce((e, t) => (e[t.id] = h.ZP.getUserCount(t.id, (0, b.DK)(t)), e), {}), [S]);
@@ -90,12 +90,12 @@ function v(e) {
           eventId: e.id
         })
       })(e),
-      onDismiss: v ? () => {
+      onDismiss: _ ? () => {
         var t;
         return t = e.id, void(0, m.Xy)(t)
       } : true,
       userCount: P[e.id],
-      className: _.eventPrompt
+      className: v.eventPrompt
     }, e.id))
   })
 }

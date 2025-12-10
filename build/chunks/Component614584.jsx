@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -72,28 +72,28 @@ let j = Chunk473749.memo(function(e) {
   }).enabled, L = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), D = r.useMemo(() => {
     if (null == w) return null;
     let e = (0, o.Z)(w);
-    if (e.type === v.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
+    if (e.type === _.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
       username: null != M ? M.nick : e.author.username,
       usernameHook: e => e
     }));
-    if (e.type === v.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
+    if (e.type === _.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
       username: null != M ? M.nick : e.author.username,
       guildId: null == S ? true : S.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
-    if (e.type === v.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, d.Y)({
+    if (e.type === _.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, d.Y)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, p.B2)({
+    if (e.type === _.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, p.B2)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === v.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, p.hj)({
+    if (e.type === _.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, p.hj)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    else if (e.type === v.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
+    else if (e.type === _.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
@@ -119,17 +119,17 @@ let j = Chunk473749.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), V = (0, _.wq)(null == w ? true : w.author.id, S.id), F = (0, _.$3)(n, w), B = (0, _.Wl)(w, S, I, T), H = (0, _.rY)(Z, T), G = r.useCallback(() => {
+  }), [w]), V = (0, v.wq)(null == w ? true : w.author.id, S.id), F = (0, v.$3)(n, w), B = (0, v.Wl)(w, S, I, T), H = (0, v.rY)(Z, T), G = r.useCallback(() => {
     T({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [T]), W = (0, b.Uj)(n);
+  }, [T]), z = (0, b.Uj)(n);
   return (0, i.jsx)(C.Z, {
     repliedAuthor: M,
     baseMessage: n,
     channel: S,
-    baseAuthor: W,
+    baseAuthor: z,
     referencedMessage: j,
     content: D,
     compact: P,

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 415397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => S
@@ -52,7 +52,7 @@ function S(e) {
     onHoverOrFocus: o,
     setPopoutRef: u,
     closePopout: p
-  } = e, g = r.useRef(null), b = (0, _.Tu)(g), y = (0, _.j1)({
+  } = e, g = r.useRef(null), b = (0, v.Tu)(g), y = (0, v.j1)({
     channel: t
   }), {
     analyticsLocations: S
@@ -81,7 +81,7 @@ function S(e) {
         return (0, i.jsx)(r, (l = j({}, n), a = a = {
           guild: e,
           channel: t,
-          source: v.t4x.VOICE_INVITE_SUGGESTIONS
+          source: _.t4x.VOICE_INVITE_SUGGESTIONS
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -136,14 +136,14 @@ function P(e) {
     inviteKey: l
   } = e, o = r.useRef(null), s = (0, u.e7)([b.ZP], () => b.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: c
-  } = (0, _.Tu)(o), [h, f] = r.useState(null), m = "success" === h || "sending" === h || null == l, C = r.useCallback(() => {
+  } = (0, v.Tu)(o), [h, f] = r.useState(null), m = "success" === h || "sending" === h || null == l, C = r.useCallback(() => {
     m || null != l && (f("sending"), p.Z.enqueue({
       type: p.m.USER,
       user: n,
       inviteKey: l,
       location: "VoiceInviteSuggestionsPopover",
       inviteAnalyticsMetadata: {
-        source: v.t4x.VOICE_INVITE_SUGGESTIONS
+        source: _.t4x.VOICE_INVITE_SUGGESTIONS
       }
     }, e => {
       f(e ? "success" : null)

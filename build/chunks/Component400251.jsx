@@ -84,7 +84,7 @@ function T(e) {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
     canEdit: u
-  } = (0, x.Z)(t);
+  } = (0, j.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
@@ -110,7 +110,7 @@ function T(e) {
             className: I.overflowIcon
           })
         })
-      }) : null, (0, r.jsx)(j.Z, {
+      }) : null, (0, r.jsx)(x.Z, {
         targetElementRef: d,
         onRequestOpen: () => s(true),
         onRequestClose: () => s(false),
@@ -158,7 +158,7 @@ let N = Chunk473749.memo(function(e) {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), x = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), j = async () => {
     o(true);
     try {
       h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
@@ -167,7 +167,7 @@ let N = Chunk473749.memo(function(e) {
     } finally {
       o(false)
     }
-  }, j = y.ZP.getGuildSplashURL({
+  }, x = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
@@ -192,8 +192,8 @@ let N = Chunk473749.memo(function(e) {
       className: I.cardHeader,
       children: [(0, r.jsx)("div", {
         className: I.splash,
-        children: null != j && (0, r.jsx)("img", {
-          src: j,
+        children: null != x && (0, r.jsx)("img", {
+          src: x,
           alt: "",
           className: I.splashImage
         })
@@ -263,7 +263,7 @@ let N = Chunk473749.memo(function(e) {
         children: (0, r.jsx)(c.Button, {
           loading: a,
           variant: h ? "secondary" : "active",
-          onClick: x,
+          onClick: j,
           text: P,
           fullWidth: true
         })

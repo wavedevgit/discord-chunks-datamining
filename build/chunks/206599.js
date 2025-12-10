@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 206599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => d,
@@ -18,16 +18,16 @@ function u(e) {
     bump: o,
     bumpMultiple: u,
     gameIds: d
-  } = (0, c.b)();
+  } = (0, s.b)();
   ! function(e) {
     var t, n;
     let {
       remove: i,
       peekedGameIds: a
-    } = (0, c.b)();
-    (0, s.qU)(null != (t = a[e]) ? t : []);
+    } = (0, s.b)();
+    (0, c.qU)(null != (t = a[e]) ? t : []);
     let o = r.useCallback(e => l.Z.isFetching(e), []),
-      u = (0, s.kN)(null != (n = a[e]) ? n : []);
+      u = (0, c.kN)(null != (n = a[e]) ? n : []);
     r.useEffect(() => {
       var t;
       for (let n of null != (t = a[e]) ? t : []) {
@@ -43,8 +43,8 @@ function u(e) {
     g = r.useCallback(t => {
       o(t, e)
     }, [o, e]);
-  (0, s.qU)(f);
-  let p = (0, s.kN)(f),
+  (0, c.qU)(f);
+  let p = (0, c.kN)(f),
     [m, b] = r.useState([]),
     h = (t = f.map(e => l.Z.isFetching(e)), r.useMemo(() => t.join("\x1f"), [t]));
   return r.useEffect(() => {
@@ -66,9 +66,9 @@ function u(e) {
 }
 
 function d(e, t) {
-  let [n, l, s, u] = (0, i.Wu)([o.Z], () => [o.Z.suggestedFetchAttempted, o.Z.suggestedFetchError, o.Z.suggestedGameIds, o.Z.suggestedFetchIsLoading]), {
+  let [n, l, c, u] = (0, i.Wu)([o.Z], () => [o.Z.suggestedFetchAttempted, o.Z.suggestedFetchError, o.Z.suggestedGameIds, o.Z.suggestedFetchIsLoading]), {
     onLoad: d
-  } = (0, c.b)();
+  } = (0, s.b)();
   r.useEffect(() => {
     !n && e && a.Z.fetchSuggestedGames()
   }, [n, e]);
@@ -77,6 +77,6 @@ function d(e, t) {
     var e, n;
     if (!f) return;
     let r = t.map(e => e.games).flat();
-    if (!l) d(null != (e = s.suggestedGamesIds) ? e : [], null != (n = s.suggestedWishlistGamesIds) ? n : [], r)
+    if (!l) d(null != (e = c.suggestedGamesIds) ? e : [], null != (n = c.suggestedWishlistGamesIds) ? n : [], r)
   }, [f])
 }

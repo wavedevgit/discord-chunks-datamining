@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 662146, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -37,13 +37,13 @@ function u(e) {
     disabled: u = false,
     hideOnClick: d = true,
     shouldShow: f,
-    forceOpen: h,
-    selected: p = false
+    forceOpen: p,
+    selected: h = false
   } = e;
   return (0, r.jsx)(a.aML, {
     "data-migration-pending": true,
     shouldShow: f,
-    forceOpen: h,
+    forceOpen: p,
     spacing: 12,
     hideOnClick: d,
     text: u ? null : n,
@@ -54,7 +54,7 @@ function u(e) {
       var n, a;
       return l ? i.cloneElement(i.Children.only(t), c({}, e)) : (0, r.jsx)("div", (n = c({
         className: o()(s.listItemWrapper, {
-          [s.selected]: p
+          [s.selected]: h
         })
       }, e), a = a = {
         children: t

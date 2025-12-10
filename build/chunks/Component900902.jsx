@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 900902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -25,7 +25,7 @@ let p = Chunk473749.memo(function(e) {
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, C = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), _ = (0, u.R9)(h, f), v = r.useCallback(() => {
+    } = e, C = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), v = (0, u.R9)(h, f), _ = r.useCallback(() => {
       f({
         usernameProfile: false,
         avatarProfile: false,
@@ -44,10 +44,10 @@ let p = Chunk473749.memo(function(e) {
       renderPopout: c.Z,
       showAvatarPopout: h,
       showUsernamePopout: p,
-      onClickAvatar: _,
+      onClickAvatar: v,
       onClickUsername: y,
       onContextMenu: C,
-      onPopoutRequestClose: v,
+      onPopoutRequestClose: _,
       roleIcon: b
     })
   }),

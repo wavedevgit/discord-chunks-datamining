@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 778567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -19,7 +19,7 @@ function p(e) {
   let {
     isOwner: t,
     isWishlistPublic: n,
-    onToggleVisibility: c
+    onToggleVisibility: s
   } = e, u = i.useRef(null), {
     analyticsLocations: p
   } = (0, o.ZP)(a.Z.USER_PROFILE_WISHLIST), m = i.useMemo(() => t ? (0, r.jsxs)(l.kSQ, {
@@ -38,7 +38,7 @@ function p(e) {
         })]
       }),
       checked: n,
-      action: c
+      action: s
     }), (0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
       id: "wishlist-privacy-setting2",
       label: (0, r.jsx)(l.Text, {
@@ -49,7 +49,7 @@ function p(e) {
       icon: l.Gr1,
       action: () => window.open(g)
     })]
-  }) : null, [t, n, c]);
+  }) : null, [t, n, s]);
   return null == m ? null : (0, r.jsx)(o.Gt, {
     value: p,
     children: (0, r.jsx)(l.yRy, {
@@ -66,7 +66,7 @@ function p(e) {
           children: m
         })
       },
-      children: e => (0, r.jsx)(s.pt, function(e) {
+      children: e => (0, r.jsx)(c.pt, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

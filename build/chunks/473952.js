@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 473952, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -18,7 +18,7 @@ function u(e, t) {
     {
       spent: f
     } = (0, s.Z)(e),
-    h = r.useMemo(() => {
+    p = r.useMemo(() => {
       if (null == t || t.type !== c.Us.LEVEL || null == d) return [];
       let e = c.T1[t.skuId];
       return null == e ? [] : Object.entries(c.Rx).filter(t => {
@@ -29,6 +29,6 @@ function u(e, t) {
         return d.allPowerups[t]
       }).filter(o.lm)
     }, [t, d]),
-    p = null == h ? true : h.reduce((e, t) => e + t.cost, 0);
-  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - f + (null != p ? p : 0), 0)
+    h = null == p ? true : p.reduce((e, t) => e + t.cost, 0);
+  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - f + (null != h ? h : 0), 0)
 }

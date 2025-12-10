@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -88,7 +88,7 @@ function H(e) {
   } = e, {
     ref: x,
     width: E
-  } = (0, h.ZP)(), [S, k] = r.useState(3), [H, G] = r.useState(!n), [W, z] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [H, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
@@ -125,7 +125,7 @@ function H(e) {
         location: {
           section: L.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, N.EO)(q, en), () => z(true))
+      }), (0, A.JG)((0, N.EO)(q, en), () => W(true))
     },
     eu = Y ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
@@ -162,7 +162,7 @@ function H(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, i.jsx)(v.Z, {
+        }), (0, i.jsx)(_.Z, {
           message: K,
           channel: q,
           disableReactionCreates: true,
@@ -202,7 +202,7 @@ function H(e) {
           })
         }), (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.WqhZss),
-          children: W ? (0, i.jsx)(u.Button, {
+          children: z ? (0, i.jsx)(u.Button, {
             icon: u.dz2,
             size: "sm",
             variant: "secondary",
@@ -235,7 +235,7 @@ function H(e) {
       })]
     }), er && (0, i.jsx)(g.Z, {
       threadId: t
-    }), (0, i.jsx)(_.Z, {
+    }), (0, i.jsx)(v.Z, {
       channel: q,
       isLastItem: l
     })]

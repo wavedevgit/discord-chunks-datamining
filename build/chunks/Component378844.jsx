@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => _,
@@ -33,9 +33,9 @@ let y = e => {
     newMember: C
   } = (0, l.e7)([f.Z], () => f.Z.getCheck(r), [r]), E = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, S = null, I = null;
   return (0 === t && (O ? (S = m.intl.string(m.t.IRxUlG), I = m.intl.string(m.t.fiNVin)) : j ? (S = m.intl.string(m.t.vW8iUF), I = m.intl.string(m.t["50gfOv"])) : v ? (S = m.intl.string(m.t.vdSOpz), I = m.intl.string(m.t.lm1UKt)) : C ? (S = m.intl.formatToPlainString(m.t.v1ktYb, {
-    min: p.YeM.MEMBER_AGE
+    min: h.YeM.MEMBER_AGE
   }), I = m.intl.string(m.t.BddRzS)) : x && (S = m.intl.formatToPlainString(m.t.sncw41, {
-    min: p.YeM.ACCOUNT_AGE
+    min: h.YeM.ACCOUNT_AGE
   }), I = m.intl.string(m.t.BddRzS))), null == E || null == S) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": y,
@@ -95,7 +95,7 @@ let y = e => {
                 s.Z.verifyResend(), (0, o.Z)({
                   title: m.intl.string(m.t.LykQYk),
                   subtitle: m.intl.format(m.t.azKEPy, {
-                    email: null == (e = h.default.getCurrentUser()) ? true : e.email
+                    email: null == (e = p.default.getCurrentUser()) ? true : e.email
                   })
                 })
               }

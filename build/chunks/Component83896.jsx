@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => S
@@ -63,17 +63,17 @@ function S(e) {
     channel: n,
     userId: l,
     setPopoutRef: S
-  } = e, P = r.useRef(null), I = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId() === n.id), Z = (0, o.e7)([u.Z], () => u.Z.can(_.Plq.CONNECT, n)), T = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
+  } = e, P = r.useRef(null), I = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId() === n.id), Z = (0, o.e7)([u.Z], () => u.Z.can(v.Plq.CONNECT, n)), T = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
   r.useEffect(() => {
     null == S || S(null == P ? true : P.current)
   }, [P, S]), r.useEffect(() => {
-    p.default.track(_.rMx.VIEW_HANG_STATUS, E({
+    p.default.track(v.rMx.VIEW_HANG_STATUS, E({
       source: "HangStatusPopout",
       other_user_id: l
     }, (0, g.Z)(n.id)))
   }, [n.guild_id, n.id, l]);
   let N = r.useCallback(() => {
-      !I && Z && (c.default.selectVoiceChannel(n.id), p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, j(E({
+      !I && Z && (c.default.selectVoiceChannel(n.id), p.default.track(v.rMx.HANG_STATUS_CTA_CLICKED, j(E({
         source: "HangStatusPopout"
       }, (0, g.Z)(n.id)), {
         other_user_id: l,
@@ -88,7 +88,7 @@ function S(e) {
           if (null == t.details || null == t.emoji) return;
           (0, h._s)(t.details, t.emoji, true)
         } else(0, h.Zx)(e, true);
-        p.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, j(E({
+        p.default.track(v.rMx.HANG_STATUS_CTA_CLICKED, j(E({
           source: "HangStatusPopout"
         }, (0, g.Z)(n.id)), {
           other_user_id: l,
@@ -110,12 +110,12 @@ function S(e) {
       children: (0, f.O8)(l, t)
     }), I ? (0, i.jsx)(s.aML, {
       "data-migration-pending": true,
-      text: T ? true : v.intl.string(v.t["0LMpW+"]),
+      text: T ? true : _.intl.string(_.t["0LMpW+"]),
       children: e => (0, i.jsx)("div", j(E({}, e), {
         children: (0, i.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: v.intl.string(v.t["0eHzpm"]),
+          text: _.intl.string(_.t["0eHzpm"]),
           onClick: A,
           disabled: !T
         })
@@ -123,7 +123,7 @@ function S(e) {
     }) : Z && (0, i.jsx)(s.Button, {
       size: "sm",
       variant: "secondary",
-      text: v.intl.string(v.t["B/dHXL"]),
+      text: _.intl.string(_.t["B/dHXL"]),
       onClick: N
     })]
   })

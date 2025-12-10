@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 613725, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -35,8 +35,8 @@ function m() {
     "aria-hidden": true,
     size: Chunk481060.EFr.SIZE_80,
     className: Chunk870515.avatarSizeOverride
-  }), _ = null;
-  return _ = null != require ? (0, Chunk54381.jsx)(Chunk565138.Z, {
+  }), v = null;
+  return v = null != require ? (0, Chunk54381.jsx)(Chunk565138.Z, {
     guild: require
   }) : null != b ? (0, Chunk54381.jsx)(Chunk481060.qEK, {
     "aria-hidden": true,
@@ -50,7 +50,7 @@ function m() {
       children: y
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk870515.guildAvatar,
-      children: _
+      children: v
     }), (0, Chunk54381.jsx)("svg", {
       className: Chunk870515.illustration,
       xmlns: "http://www.w3.org/2000/svg",

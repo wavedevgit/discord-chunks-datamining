@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -23,34 +23,34 @@ let h = Chunk473749.memo(function(e) {
     interactionAvatarProfile: b,
     interactionData: C,
     referencedUsernameProfile: y,
-    referencedAvatarProfile: _,
-    setPopout: v
+    referencedAvatarProfile: v,
+    setPopout: _
   } = e, {
     isInteractionUserBlocked: O,
     isInteractionUserIgnored: x
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), E = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), j = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(C, v), M = r.useCallback(() => {
-    v({
+  }), [h]), E = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), j = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, _), P = (0, d.NU)(b, _), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, _), A = (0, d.rY)(v, _), w = (0, d.Xn)(C, _), M = r.useCallback(() => {
+    _({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
       interactionData: false,
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [v]), R = r.useCallback(() => (0, p.Z)({
+  }, [_]), R = r.useCallback(() => (0, p.Z)({
     message: h,
     channel: f,
     compact: m,
-    setPopout: v,
-    referencedAvatarProfile: _,
+    setPopout: _,
+    referencedAvatarProfile: v,
     referencedUsernameProfile: y,
     replyReference: h.messageReference,
     replyMessage: E,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, h, _, E, y, v]);
+  }), [f, m, h, v, E, y, _]);
   return (0, i.jsx)(u.Z, {
     message: h,
     channel: f,
@@ -60,7 +60,7 @@ let h = Chunk473749.memo(function(e) {
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: C,
-    showTargetAvatarPopout: _,
+    showTargetAvatarPopout: v,
     showTargetUsernamePopout: y,
     onClickAvatar: P,
     onClickUsername: S,

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => w
@@ -158,7 +158,7 @@ function Z(e) {
     ariaControls: f,
     ariaExpanded: g,
     children: b
-  } = e, _ = (0, c.e7)([m.Z], () => (0, h.b)(m.Z, o)), E = i.useCallback(() => {
+  } = e, _ = (0, c.e7)([m.Z], () => (0, p.b)(m.Z, o)), E = i.useCallback(() => {
     _ ? (0, d.ZDy)(async () => {
       let {
         default: e
@@ -222,7 +222,7 @@ function Z(e) {
           color: "currentColor"
         })
       })
-    }), o.id === O.STv && (0, r.jsx)(p.p, {})]
+    }), o.id === O.STv && (0, r.jsx)(h.p, {})]
   })
 }
 let w = Chunk473749.memo(function(e) {
@@ -233,8 +233,8 @@ let w = Chunk473749.memo(function(e) {
     className: a,
     onClick: c,
     onContextMenu: u,
-    onMouseDown: h,
-    disableBannerAnimation: p,
+    onMouseDown: p,
+    disableBannerAnimation: h,
     "aria-expanded": m,
     "aria-controls": y,
     guild: v,
@@ -244,14 +244,14 @@ let w = Chunk473749.memo(function(e) {
     headerClassName: P,
     communityInfoVisible: N,
     hasSubheader: w
-  } = e, A = v.features.has(O.GuildFeatures.ANIMATED_BANNER), R = (0, f.Z)(v), D = !R && (0, _.Z)(v), L = !R && N, M = (0, b.xR)(j) && A && !p, [k, G] = i.useState(false), U = i.useRef(false), B = i.useRef(null), F = null != t ? t : B, V = i.useRef(true), H = g.QK.getSetting();
+  } = e, A = v.features.has(O.GuildFeatures.ANIMATED_BANNER), R = (0, f.Z)(v), D = !R && (0, _.Z)(v), M = !R && N, L = (0, b.xR)(j) && A && !h, [k, G] = i.useState(false), U = i.useRef(false), B = i.useRef(null), F = null != t ? t : B, V = i.useRef(true), H = g.QK.getSetting();
   i.useEffect(() => {
-    if (M && n && !U.current && H) return G(true), V.current = setTimeout(() => {
+    if (L && n && !U.current && H) return G(true), V.current = setTimeout(() => {
       G(false)
     }, 5e3), () => {
       clearTimeout(V.current)
     }
-  }, [M, n, H]), i.useEffect(() => {
+  }, [L, n, H]), i.useEffect(() => {
     U.current = n
   }, [n]);
   let z = () => {
@@ -273,9 +273,9 @@ let w = Chunk473749.memo(function(e) {
           [x.hasBanner]: z(),
           [x.bannerVisible]: n,
           [e]: false,
-          [x.communityInfoVisible]: L || w && D
+          [x.communityInfoVisible]: M || w && D
         }),
-        onMouseDown: h,
+        onMouseDown: p,
         onContextMenu: u,
         children: [(0, r.jsxs)("header", {
           className: o()(x.header, P, {
@@ -306,7 +306,7 @@ let w = Chunk473749.memo(function(e) {
         }) : null, (0, r.jsx)(T, {
           controller: l
         })]
-      }), M && z() ? (0, r.jsx)("div", {
+      }), L && z() ? (0, r.jsx)("div", {
         className: x.animatedBannerHoverLayer,
         onMouseEnter: () => {
           G(true), clearTimeout(V.current)

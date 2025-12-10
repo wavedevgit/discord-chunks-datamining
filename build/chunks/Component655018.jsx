@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 655018, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => V
@@ -78,24 +78,24 @@ function V(e) {
     setIsHangStatusInputFocused: F,
     setIsEmojiPickerOpen: B,
     setPopoutRef: H
-  } = e, G = r.useRef(null), W = (0, u.e7)([_.Z], () => _.Z.getCustomHangStatus()), z = (0, j.Z)(), q = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses()), {
+  } = e, G = r.useRef(null), z = (0, u.e7)([v.Z], () => v.Z.getCustomHangStatus()), W = (0, j.Z)(), q = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses()), {
     defaultStatusVariant: K,
     allowPermanentClear: Y
   } = (0, y.bN)({
     guildId: V.guild_id,
     location: "HangStatusPicker"
-  }), X = (0, v.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == W ? true : W.status) ? n : ""), [ee, et] = r.useState(null != (l = null == W ? true : W.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([_.Z], () => _.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, E.Z)(V), ec = Q.trim().length > 0 && Q.trim() !== (null == W || null == (t = W.status) ? true : t.trim()) || null != ee && !s()(ee, null == W ? true : W.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses().length >= _.o), eh = Q.length > 0 || null != ee, [ef, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
+  }), X = (0, _.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == z ? true : z.status) ? n : ""), [ee, et] = r.useState(null != (l = null == z ? true : z.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([v.Z], () => v.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, E.Z)(V), ec = Q.trim().length > 0 && Q.trim() !== (null == z || null == (t = z.status) ? true : t.trim()) || null != ee && !s()(ee, null == z ? true : z.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses().length >= v.o), eh = Q.length > 0 || null != ee, [ef, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   r.useEffect(() => {
     b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, O.Z)(V.id)), {
       num_favorites: q.length,
-      num_recents: z.length
+      num_recents: W.length
     }))
   }, []), r.useEffect(() => {
     Q.trim().length > 0 && eu && ed(false), null == ee && eu && ed(false)
   }, [Q, ee, eu]), r.useEffect(() => {
     var e;
-    en || Q !== (null != (e = null == W ? true : W.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
-  }, [Q, null == W ? true : W.status, ee, null == W ? true : W.emoji, F, en]), r.useEffect(() => {
+    en || Q !== (null != (e = null == z ? true : z.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
+  }, [Q, null == z ? true : z.status, ee, null == z ? true : z.emoji, F, en]), r.useEffect(() => {
     null == H || H(null == J ? true : J.current)
   }, [J, H]);
   let eg = r.useCallback(e => {
@@ -109,8 +109,8 @@ function V(e) {
         emoji: t,
         status: n
       } = e;
-      s()(t, null == W ? true : W.emoji) && n === (null == W ? true : W.status) || ((0, C._s)(e.status, e.emoji, true), et(e.emoji), $(e.status))
-    }, [null == W ? true : W.emoji, null == W ? true : W.status]),
+      s()(t, null == z ? true : z.emoji) && n === (null == z ? true : z.status) || ((0, C._s)(e.status, e.emoji, true), et(e.emoji), $(e.status))
+    }, [null == z ? true : z.emoji, null == z ? true : z.status]),
     ey = r.useCallback(e => {
       var t, n;
       null == e || null == (t = e.preventDefault) || t.call(e), null != ee && 0 === Q.trim().length && ed(true), eo || (eC({
@@ -122,7 +122,7 @@ function V(e) {
         }
       }), null == (n = G.current) || n.blur(), ei(false))
     }, [Q, ee, eC, eo]),
-    e_ = r.useCallback(() => {
+    ev = r.useCallback(() => {
       var e, t;
       let n = null,
         i = null;
@@ -138,7 +138,7 @@ function V(e) {
           }, 1 === es.length)) break; while (null == n || (null == n ? true : n.name) == null || s()(ee, i));
       null != i && (null == n ? true : n.name) != null && (et(i), $(n.name), ei(true), null == (e = G.current) || e.focus(), b.default.track(A.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, O.Z)(V.id)))
     }, [es, ee, V.id]),
-    ev = r.useCallback((e, t) => {
+    e_ = r.useCallback((e, t) => {
       let n = (0, x.Z)(t);
       (!ep || e) && ((0, C.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(k({}, (0, O.Z)(V.id)), {
         favorited: !e
@@ -154,7 +154,7 @@ function V(e) {
       var r;
       let l = (0, x.Z)(e),
         a = l ? X[e] : null,
-        o = _.Z.isFavorited(e),
+        o = v.Z.isFavorited(e),
         s = l ? (0, i.jsx)(I.Z, {
           userId: g.default.getId(),
           size: 20,
@@ -176,9 +176,9 @@ function V(e) {
           l ? eg(e) : eC(e), ei(false)
         },
         isFavorited: o,
-        onFavoriteClick: () => ev(o, e)
+        onFavoriteClick: () => e_(o, e)
       }, "".concat(n, "-").concat(t))
-    }, [K, eC, eg, X, ev]),
+    }, [K, eC, eg, X, e_]),
     ej = r.useCallback(() => {
       (0, C.Sc)(true, Y), et(null), $(""), ei(false)
     }, [Y]),
@@ -227,7 +227,7 @@ function V(e) {
                 setIsEmojiPickerOpen: B
               })
             },
-            trailing: null == W && null == er || ec ? ec ? {
+            trailing: null == z && null == er || ec ? ec ? {
               icon: h.d4D,
               onClick: ey,
               "aria-label": M.intl.string(M.t["R3BPH+"]),
@@ -240,7 +240,7 @@ function V(e) {
           }), (0, i.jsx)(h.hU, {
             variant: "secondary",
             icon: S.k,
-            onClick: e_,
+            onClick: ev,
             "aria-label": M.intl.string(M.t["5UAi59"])
           })]
         }), eu && (0, i.jsx)(h.Text, {
@@ -268,7 +268,7 @@ function V(e) {
             size: "xxs"
           })]
         }), q.map((e, t) => eE(e, t, "favorite"))]
-      }), z.length > 0 && ea && (0, i.jsxs)(i.Fragment, {
+      }), W.length > 0 && ea && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           role: "separator",
           className: R.separator
@@ -282,7 +282,7 @@ function V(e) {
             size: "xxs"
           })]
         })]
-      }), z.map((e, t) => eE(e, t, "recent"))]
+      }), W.map((e, t) => eE(e, t, "recent"))]
     })]
   })
 }

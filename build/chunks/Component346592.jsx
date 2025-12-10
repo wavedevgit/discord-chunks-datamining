@@ -1,4 +1,4 @@
-/** Chunk was on 29419 **/
+/** Chunk was on 43778 **/
 /** chunk id: 346592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -20,7 +20,7 @@ let c = function(e) {
     taskDetails: d,
     location: m,
     sourceQuestContent: f
-  } = e, p = (0, a.DD)({
+  } = e, E = (0, a.DD)({
     quest: l,
     taskDetails: d,
     location: m,
@@ -41,7 +41,7 @@ let c = function(e) {
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: p
+        children: E
       })
     })]
   })

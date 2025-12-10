@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => et
@@ -163,7 +163,7 @@ let R = /{{(.*?)}}/g,
   }];
 
 function L(e) {
-  return null != e && e.loadingState === s.f.LOADED_SUCCESS && null != e.width && null != e.height
+  return null != e && e.loadingState === c.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
 function M(e) {
@@ -234,7 +234,7 @@ function U(e) {
     className: N.heroSection,
     children: [(0, r.jsxs)("div", {
       className: N.heroBody,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-lg/medium",
         className: N.heroTitle,
         children: null != t ? t : (0, r.jsx)("div", {
@@ -292,7 +292,7 @@ function z(e) {
     content: t
   } = e, n = i.useId(), l = (0, y._)();
   return null != t ? (0, r.jsx)(O.Z, {
-    type: s.re.TEXT_DISPLAY,
+    type: c.re.TEXT_DISPLAY,
     id: n,
     content: t,
     className: N.text
@@ -337,10 +337,10 @@ function V(e) {
     divider: n = false
   } = e, l = i.useId();
   return (0, r.jsx)(v.Z, {
-    type: s.re.SEPARATOR,
+    type: c.re.SEPARATOR,
     id: l,
     divider: n,
-    spacing: "large" === t ? s.US.LARGE : s.US.SMALL
+    spacing: "large" === t ? c.US.LARGE : c.US.SMALL
   })
 }
 
@@ -422,28 +422,28 @@ function $(e) {
 }
 
 function ee(e) {
-  return (0, r.jsxs)(c.Kqy, {
+  return (0, r.jsxs)(s.Kqy, {
     direction: "horizontal",
     gap: 24,
     padding: 12,
     fullWidth: false,
     className: N.cta,
-    children: [(0, r.jsxs)(c.Kqy, {
+    children: [(0, r.jsxs)(s.Kqy, {
       gap: 4,
-      children: [e.showSuggestedForYou && (0, r.jsx)(c.Text, {
+      children: [e.showSuggestedForYou && (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: k.intl.string(k.t.zMUr6Z)
-      }), (0, r.jsx)(c.Heading, {
+      }), (0, r.jsx)(s.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         children: e.heading
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-subtle",
         children: e.content
       })]
-    }), (0, r.jsx)(c.Kqy, {
+    }), (0, r.jsx)(s.Kqy, {
       direction: "horizontal",
       gap: 12,
       align: "center",
@@ -459,13 +459,13 @@ let et = Object.assign(function(e) {
   } = (0, E.KZ)(), {
     user: n,
     widget: l,
-    cta: s,
+    cta: c,
     subtle: g = false
   } = e, b = (0, o.e7)([I.default], () => I.default.getId()) === n.id, {
     application: h,
     game: y,
     config: v
-  } = J(l), O = null == h ? true : h.getIconURL(16), x = (0, _.O)(n.id).data, w = null == x ? true : x.find(e => e.application_id === l.applicationId), T = (0, m.Z)({
+  } = J(l), O = null == h ? true : h.getIconURL(16), x = (0, P.O)(n.id).data, w = null == x ? true : x.find(e => e.application_id === l.applicationId), T = (0, m.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == y ? true : y.id,
     source: p.m1.UserProfile,
@@ -485,7 +485,7 @@ let et = Object.assign(function(e) {
     }), B({
       analyticsLocations: F
     }))
-  }, [L, B, t, l.applicationId, F]), W = null == s && D && !R && L, H = (0, r.jsxs)(r.Fragment, {
+  }, [L, B, t, l.applicationId, F]), W = null == c && D && !R && L, H = (0, r.jsxs)(r.Fragment, {
     children: [null != O ? (0, r.jsx)("img", {
       className: N.appIcon,
       src: O,
@@ -494,7 +494,7 @@ let et = Object.assign(function(e) {
       alt: ""
     }) : (0, r.jsx)("span", {
       className: N.appIconPlaceholder
-    }), (0, r.jsx)(c.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       children: (null == h ? true : h.name) != null ? h.name : (0, r.jsx)("div", {
         className: N.textPlaceholder
@@ -503,11 +503,11 @@ let et = Object.assign(function(e) {
   }), z = null == y ? (0, r.jsx)("div", {
     className: N.headerTitle,
     children: H
-  }) : (0, r.jsx)(c.P3F, {
+  }) : (0, r.jsx)(s.P3F, {
     className: a()(N.headerTitle, N.clickable),
     onClick: T,
     children: H
-  }), K = (0, o.e7)([P.default], () => P.default.locale), V = i.useMemo(() => {
+  }), K = (0, o.e7)([_.default], () => _.default.locale), V = i.useMemo(() => {
     let e = function(e, t, n) {
       var r, i, l;
       let a = new Intl.NumberFormat(n, {
@@ -579,10 +579,10 @@ let et = Object.assign(function(e) {
     className: a()(N.widgetContainer, g && N.subtle),
     headerTitle: z,
     headerClassName: N.header,
-    additionalManageWidgetMenuItems: null != y ? (0, r.jsx)(c.sNh, {
+    additionalManageWidgetMenuItems: null != y ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
-      icon: c.iWm,
+      icon: s.iWm,
       action: T
     }) : null,
     children: [(0, r.jsx)(Q.Provider, {
@@ -597,9 +597,9 @@ let et = Object.assign(function(e) {
       className: N.footer,
       children: [null == x || null != w || W ? null : (0, r.jsxs)("div", {
         className: N.stillSyncing,
-        children: [(0, r.jsx)(c.wGF, {
+        children: [(0, r.jsx)(s.wGF, {
           size: "xxs"
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
           children: k.intl.string(k.t.z5K4Uv)
@@ -607,11 +607,11 @@ let et = Object.assign(function(e) {
       }), W ? (0, r.jsx)(ee, {
         heading: k.intl.string(k.t.UDPRLO),
         content: k.intl.string(k.t["OW/2al"]),
-        buttons: (0, r.jsx)(c.Button, {
+        buttons: (0, r.jsx)(s.Button, {
           text: k.intl.string(k.t.S0W8Z5),
           onClick: U
         })
-      }) : s]
+      }) : c]
     })]
   }))
 }, {

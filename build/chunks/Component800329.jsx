@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 800329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -39,7 +39,7 @@ function p(e) {
   }), {
     width: b,
     height: C
-  } = m, y = null != (t = null == l ? true : l.length) ? t : 0, _ = b - 16, v = C - (h + f), {
+  } = m, y = null != (t = null == l ? true : l.length) ? t : 0, v = b - 16, _ = C - (h + f), {
     tileStyle: O,
     tileWidth: x,
     rows: E,
@@ -80,7 +80,7 @@ function p(e) {
       rows: i,
       columns: r
     }
-  })(y, _, v), [y, _, v]), S = j + 1, P = S * x + (S - 1) * 8 <= b, I = Math.floor(x / c) + 8, Z = Math.max(0, v - I * E) / 2;
+  })(y, v, _), [y, v, _]), S = j + 1, P = S * x + (S - 1) * 8 <= b, I = Math.floor(x / c) + 8, Z = Math.max(0, _ - I * E) / 2;
   return (0, i.jsx)(o.Z, {
     fade: true,
     className: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -50,12 +50,12 @@ function O(e) {
     }
     g(2)
   }
-  if (b && (t = _.intl.string(y.default.qRXats)), n.type === C.IIU.PLAYING) {
+  if (b && (t = v.intl.string(y.default.qRXats)), n.type === C.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, i.jsxs)("div", {
-      className: v.activityRow,
+      className: _.activityRow,
       children: [(0, i.jsxs)("div", {
-        className: v.activityRowContent,
+        className: _.activityRowContent,
         children: [p || null == e ? (0, i.jsx)(s.IMN, {
           size: "custom",
           width: 46,
@@ -68,7 +68,7 @@ function O(e) {
           children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            children: _.intl.string(_.t.BMTj28)
+            children: v.intl.string(v.t.BMTj28)
           }), (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             children: n.name
@@ -79,10 +79,10 @@ function O(e) {
         disabled: b || 2 === m,
         fullWidth: true,
         size: "sm",
-        text: 2 === m ? _.intl.string(y.default["8HU1M2"]) : _.intl.string(y.default.DKHhec),
+        text: 2 === m ? v.intl.string(y.default["8HU1M2"]) : v.intl.string(y.default.DKHhec),
         onClick: O
       }), null != t && (0, i.jsx)(s.Text, {
-        className: v.disabledReason,
+        className: _.disabledReason,
         variant: "text-xs/normal",
         color: "text-muted",
         children: t
@@ -110,9 +110,9 @@ function x(e) {
   }), C) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
     children: (0, i.jsx)("div", {
-      className: v.root,
+      className: _.root,
       children: (0, i.jsx)("div", {
-        className: v.activityList,
+        className: _.activityList,
         children: f.map(e => (0, i.jsx)(O, {
           activity: e,
           channel: n,

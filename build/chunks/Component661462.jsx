@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => y,
@@ -87,21 +87,21 @@ function v(e) {
     subsection: l,
     displayProfile: a,
     guildId: o,
-    channelId: c,
+    channelId: s,
     onClose: m
   } = e;
-  return i === p.oh.ACTIVITY ? (0, r.jsx)(s.Z, {
+  return i === p.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
     user: t,
     currentUser: n,
     displayProfile: a,
     guildId: o,
-    channelId: c,
+    channelId: s,
     subsection: l,
     onClose: m
   }) : i === p.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
     user: t,
     guildId: o,
-    channelId: c,
+    channelId: s,
     onClose: m
   }) : i === p.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
@@ -109,7 +109,7 @@ function v(e) {
   }) : i === p.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
     guildId: o,
-    channelId: c
+    channelId: s
   }) : i === p.oh.WISHLIST ? (0, r.jsx)(g.Z, {
     profileOwner: t
   }) : null
@@ -121,7 +121,7 @@ function O(e) {
     user: n,
     currentUser: l,
     displayProfile: a,
-    guildId: s,
+    guildId: c,
     channelId: u,
     items: d,
     initialSection: f,
@@ -129,11 +129,11 @@ function O(e) {
     onClose: p
   } = e, {
     trackUserProfileAction: y
-  } = (0, c.KZ)(), [{
+  } = (0, s.KZ)(), [{
     section: O,
     subsection: j,
     text: x
-  }, _] = i.useState(h(b({}, null != (t = d.find(e => {
+  }, P] = i.useState(h(b({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -156,7 +156,7 @@ function O(e) {
           y({
             action: "PRESS_SECTION",
             section: e
-          }), _(t => {
+          }), P(t => {
             var n;
             return null != (n = d.find(t => t.section === e)) ? n : t
           })
@@ -182,7 +182,7 @@ function O(e) {
           user: n,
           currentUser: l,
           displayProfile: a,
-          guildId: s,
+          guildId: c,
           channelId: u,
           section: O,
           subsection: j,

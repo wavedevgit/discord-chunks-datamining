@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 47481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -23,8 +23,8 @@ function d(e) {
     } = e,
     C = [],
     y = false,
-    _ = null != f ? a.default.extractTimestamp(f) : null,
-    v = null;
+    v = null != f ? a.default.extractTimestamp(f) : null,
+    _ = null;
   return h.forEach(e => {
     var r, O, x;
     let E, j;
@@ -35,18 +35,18 @@ function d(e) {
         let n = a.default.extractTimestamp(g[e].startId),
           i = a.default.extractTimestamp(g[e].endId);
         if (t >= n && t <= i) {
-          if (v === g[e].id) break;
+          if (_ === g[e].id) break;
           C.push({
             type: u.ys_.DIVIDER,
             content: g[e].topic,
             contentKey: g[e].id
-          }), v = g[e].id;
+          }), _ = g[e].id;
           break
         }
       }
     }
     let S = (0, l.vc)(e.timestamp, "LL");
-    S !== t && null == v && (C.push({
+    S !== t && null == _ && (C.push({
       type: u.ys_.DIVIDER,
       content: S,
       contentKey: S
@@ -66,16 +66,16 @@ function d(e) {
       type: T,
       content: [],
       key: e.id
-    }, C.push(E)) : j = (E = O).content[E.content.length - 1], [E, j])), f === e.id && null != _) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
+    }, C.push(E)) : j = (E = O).content[E.content.length - 1], [E, j])), f === e.id && null != v) ? (null != P && P.type === u.ys_.DIVIDER ? P.unreadId = e.id : null !== I ? (x = I, e.isFirstMessageInForumPost(p) || x.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), x.hasUnread = true) : e.isFirstMessageInForumPost(p) || C.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), _ = null) : null != _ && a.default.extractTimestamp(e.id) > _ && (e.isFirstMessageInForumPost(p) || C.push({
+    }), v = null) : null != v && a.default.extractTimestamp(e.id) > v && (e.isFirstMessageInForumPost(p) || C.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
-    }), _ = null);
+    }), v = null);
     let N = (0, c.f)(e, p);
     null != N && "before" === N.position && C.push({
       type: u.ys_.MESSAGE,

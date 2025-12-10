@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -105,12 +105,12 @@ function R(e) {
     unreadMessages: n,
     loadMore: l,
     renderLoadingState: a,
-    renderMessageGroup: h,
-    scrollerClassName: p,
+    renderMessageGroup: p,
+    scrollerClassName: h,
     className: I,
     listName: P,
     ignoreGrouping: R = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
+  } = e, D = (0, y.fJ)(), M = i.useRef(null), L = (0, f.Z)(P, M), {
     entrypoint: k,
     notificationCenterVariant: G
   } = (0, _.pN)({
@@ -144,14 +144,14 @@ function R(e) {
   i.useEffect(() => {
     function e() {
       var e;
-      null == (e = L.current) || e.scrollPageUp({
+      null == (e = M.current) || e.scrollPageUp({
         animate: true
       })
     }
 
     function t() {
       var e;
-      null == (e = L.current) || e.scrollPageDown({
+      null == (e = M.current) || e.scrollPageDown({
         animate: true
       })
     }
@@ -161,7 +161,7 @@ function R(e) {
   }, []);
   let K = i.useCallback(() => {
       var e;
-      let t = null == (e = L.current) ? true : e.getScrollerState();
+      let t = null == (e = M.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
       t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(E.X.USER_SCROLL))
@@ -200,7 +200,7 @@ function R(e) {
     X = 0 === t.length && 0 === n.length && !F && U,
     Q = i.useMemo(() => {
       let e = [];
-      return X ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => h([e], true))), e.push(...t.map(e => h([e], false)))) : s().each(T, t => {
+      return X ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => p([e], true))), e.push(...t.map(e => p([e], false)))) : s().each(T, t => {
         0 !== Y[t].length && (e.push((0, r.jsx)(w, {
           group: t,
           isOpen: H[t],
@@ -212,9 +212,9 @@ function R(e) {
               viewId: D
             })
           }
-        }, t)), H[t] && e.push(...Y[t].map(e => h(e, t === E.KZ.UNREAD))))
+        }, t)), H[t] && e.push(...Y[t].map(e => p(e, t === E.KZ.UNREAD))))
       }), e
-    }, [t, n, a, H, z, Y, R, h, q, X, D]),
+    }, [t, n, a, H, z, Y, R, p, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === w,
     ee = (0, x.d)(e => e.setInboxReadState);
@@ -239,7 +239,7 @@ function R(e) {
   let en = i.useCallback(() => {
     var e;
     let t = T.filter(e => H[e]).reduce((e, t) => e + Y[t].length, 0),
-      n = null == (e = L.current) ? true : e.getScrollerState();
+      n = null == (e = M.current) ? true : e.getScrollerState();
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
@@ -265,7 +265,7 @@ function R(e) {
     onDoubleClick: Z,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
-      navigator: M,
+      navigator: L,
       children: (0, r.jsx)(c.SJ, {
         children: e => {
           var t, n, {
@@ -306,9 +306,9 @@ function R(e) {
           }({
             ref: e => {
               var t;
-              L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+              M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(N.messagesPopout, p),
+            className: o()(N.messagesPopout, h),
             onScroll: K,
             fade: true
           }, l), n = n = {

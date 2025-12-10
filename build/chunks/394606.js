@@ -1,7 +1,7 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 394606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => c
 });
 var Chunk399606 = require("./399606.js"),
   Chunk669764 = require("./669764.js"),
@@ -10,11 +10,11 @@ var Chunk399606 = require("./399606.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function c(e) {
   var t;
   let {
     coverImageUrl: n,
-    localizedName: s,
+    localizedName: c,
     isFetching: u
   } = (0, l.$)(e), d = (0, r.e7)([a.Z], () => a.Z.getDetectableGame(e)), f = (0, r.e7)([i.Z], () => i.Z.canFetch(e));
   return {
@@ -23,7 +23,7 @@ function s(e) {
       hash: null == d ? true : d.cover_image_hash,
       keepAspectRatio: true
     }),
-    gameName: null != (t = null != s ? s : null == d ? true : d.name) ? t : c.intl.string(c.t.GIWFlF),
+    gameName: null != (t = null != c ? c : null == d ? true : d.name) ? t : s.intl.string(s.t.GIWFlF),
     isLoading: f || u
   }
 }

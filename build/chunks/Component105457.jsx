@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 105457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -24,7 +24,7 @@ function m(e) {
     channel: b,
     analyticsType: C,
     popoutText: y,
-    animation: _
+    animation: v
   } = e;
   r.useEffect(() => {
     u.default.track(d.rMx.OPEN_POPOUT, function(e) {
@@ -48,7 +48,7 @@ function m(e) {
       type: C
     }, (0, s.v_)(b)))
   }, [C, b]);
-  let v = r.useCallback(() => {
+  let _ = r.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
     O = r.useCallback(() => {
@@ -58,10 +58,10 @@ function m(e) {
   return r.useEffect(() => {
     let e, t = c.Z.theme,
       i = false;
-    return null != _ && (async () => {
+    return null != v && (async () => {
       let [{
         default: r
-      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? _.dark() : _.light()]);
+      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
       i || null == x.current || (e = r.loadAnimation({
         container: x.current,
         renderer: "svg",
@@ -72,14 +72,14 @@ function m(e) {
     })(), () => {
       i = true, null != e && (e.destroy(), e = true)
     }
-  }, [_]), (0, i.jsx)(o.VqE, {
+  }, [v]), (0, i.jsx)(o.VqE, {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, i.jsxs)("form", {
       className: h.contentWarningPopout,
-      onSubmit: v,
+      onSubmit: _,
       children: [(0, i.jsxs)("div", {
         className: h.body,
-        children: [null != _ && (0, i.jsx)("div", {
+        children: [null != v && (0, i.jsx)("div", {
           className: h.animation,
           ref: x
         }), (0, i.jsxs)("div", {
@@ -114,7 +114,7 @@ function m(e) {
                 className: h.button,
                 children: (0, i.jsx)(o.Button, {
                   variant: "primary",
-                  onClick: v,
+                  onClick: _,
                   text: p.intl.string(p.t.KJnHq3),
                   autoFocus: true
                 })

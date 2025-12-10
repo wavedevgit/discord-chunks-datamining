@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => _
+  Y: () => v
 }), require("./388685.js");
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,15 +23,15 @@ let b = ["embedded_cover"],
   };
 var y = ((i = y || {})[i.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", i[i.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", i);
 
-function _(e) {
+function v(e) {
   var t;
   let {
     context: n,
     activityItem: i,
     onClick: a,
     aspectRatio: y = 0,
-    animatedDivClass: _,
-    commandOrigin: v
+    animatedDivClass: v,
+    commandOrigin: _
   } = e, {
     onActivityItemSelected: O,
     imageBackground: x,
@@ -45,7 +45,7 @@ function _(e) {
     onActivityItemSelected: a,
     embeddedActivitiesManager: h.Z,
     assetNames: b,
-    commandOrigin: v
+    commandOrigin: _
   }), [S, P] = l.useState(false), I = l.useCallback(() => {
     P(true)
   }, [P]), Z = l.useCallback(() => {
@@ -111,7 +111,7 @@ function _(e) {
         return (0, r.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, r.jsxs)(s.animated.div, {
-            className: o()(e, g.activityItem, _, {
+            className: o()(e, g.activityItem, v, {
               [g.activityItem_13_11]: 0 === y,
               [g.activityItem_16_9]: 1 === y
             }),
@@ -130,4 +130,4 @@ function _(e) {
     })
   })
 }
-_.AspectRatio = y
+v.AspectRatio = y

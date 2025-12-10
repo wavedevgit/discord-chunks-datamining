@@ -1,10 +1,10 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 674552, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ne: () => d,
   Ny: () => f,
-  Or: () => h,
-  jt: () => p
+  Or: () => p,
+  jt: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -32,7 +32,7 @@ function f() {
   })
 }
 
-function h(e) {
+function p(e) {
   let t, {
     audio: n,
     video: r,
@@ -57,7 +57,7 @@ function h(e) {
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     guildJoinRequestStatus: t
   } = e, [n, r] = function(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => W,
@@ -106,17 +106,17 @@ function F(e) {
     application: n
   } = (0, j.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), l = (0, P.Z)(t.id), a = (0, v.k)({
+  } = (0, d.o)(null == n ? true : n.id), l = (0, _.Z)(t.id), a = (0, v.k)({
     location: "ApplicationWidgetUpsell"
   }), o = l.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !a || null == i || o ? null : (0, r.jsx)(f.ZP, {
-    contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
+    contentTypes: [s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
       let {
         visibleContent: i,
         markAsDismissed: l
       } = e;
-      return i === c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(w.Z, {
+      return i === s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(w.Z, {
         user: t,
         application: n,
         onDismiss: l
@@ -130,17 +130,17 @@ function U(e) {
     user: t,
     guildId: n,
     channelId: l
-  } = e, a = (0, P.Z)(t.id), c = (0, o.e7)([m.default], () => m.default.getId() === t.id), s = (() => {
+  } = e, a = (0, _.Z)(t.id), s = (0, o.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
     let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, v.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === a.length && c, j = i.useMemo(() => a.filter(y.Wc), [a]), x = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
-  (0, O.J)(c, j);
+  }), f = 0 === a.length && s, j = i.useMemo(() => a.filter(y.Wc), [a]), x = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
+  (0, O.J)(s, j);
   var I = t.id;
-  (0, _.s)(x);
+  (0, P.s)(x);
   let {
     data: w,
     refetch: T
@@ -149,7 +149,7 @@ function U(e) {
     null !== C.current && T()
   }, [T]);
   let k = () => (0, r.jsxs)(r.Fragment, {
-    children: [c && s && (0, r.jsx)(B, {}), c && (0, r.jsx)(F, {
+    children: [s && c && (0, r.jsx)(B, {}), s && (0, r.jsx)(F, {
       user: t
     }), a.map((e, i) => (0, r.jsx)(M, {
       widget: e,
@@ -157,12 +157,12 @@ function U(e) {
       guildId: n,
       channelId: l,
       index: i
-    }, e instanceof h.q ? "".concat(e.type, "-").concat(e.applicationId) : "".concat(e.type))), c && (0, r.jsx)(S.Z, {})]
+    }, e instanceof h.q ? "".concat(e.type, "-").concat(e.applicationId) : "".concat(e.type))), s && (0, r.jsx)(S.Z, {})]
   });
   if (f)
     if (d) return (0, r.jsx)(D.Z, {});
     else return (0, r.jsx)(A.Z, {});
-  return c ? (0, r.jsx)(E.K, {
+  return s ? (0, r.jsx)(E.K, {
     children: k()
   }) : k()
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 878752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -31,14 +31,14 @@ function g(e) {
     guildId: null == t ? true : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: _
+    enableViewerClipping: v
   } = s.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
-  }), v = (0, a.Z)(u.Z);
+  }), _ = (0, a.Z)(u.Z);
   if (null == t || null != C) return null;
-  let O = _ && v,
+  let O = v && _,
     x = y && n;
   return O || x ? (0, i.jsxs)(l.Gt, {
     value: b,

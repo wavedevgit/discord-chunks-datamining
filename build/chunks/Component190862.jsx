@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -87,9 +87,9 @@ let O = e => {
     let {
       shouldShowSuggestions: g,
       handleDismissSuggestions: p
-    } = (0, s.h)(t), m = (0, a.e7)([o.default], () => o.default.getId() === n.id), j = m && !l && g, x = (0, c.mR)(t), _ = (0, c.Hy)(t, {
+    } = (0, c.h)(t), m = (0, a.e7)([o.default], () => o.default.getId() === n.id), j = m && !l && g, x = (0, s.mR)(t), P = (0, s.Hy)(t, {
       isCurrentUser: m
-    }), P = (0, c.kQ)(t), I = 1 === (0, c.Gv)(t.type), [w, S] = i.useState(false);
+    }), _ = (0, s.kQ)(t), I = 1 === (0, s.Gv)(t.type), [w, S] = i.useState(false);
     return (0, r.jsx)(d.N, {
       value: {
         expanded: w,
@@ -100,9 +100,9 @@ let O = e => {
         user: n,
         disableInteraction: l,
         headerTitle: x,
-        headerSubtitle: _,
+        headerSubtitle: P,
         headerActionButtons: m && !I ? [(0, r.jsx)(u.yX, {
-          disabled: P,
+          disabled: _,
           widgetType: t.type,
           widget: t,
           onAddGame: () => S(true)

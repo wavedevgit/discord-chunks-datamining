@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => O
@@ -32,7 +32,7 @@ function v(e) {
   } = e, {
     manageFocusOnReorder: d
   } = (0, u.C)();
-  return (0, r.jsx)(s.yW, {
+  return (0, r.jsx)(c.yW, {
     index: t,
     itemId: i.applicationId,
     listType: n,
@@ -44,7 +44,7 @@ function v(e) {
     "aria-label": b.intl.formatToPlainString(b.t["0dR3gw"], {
       positionNumber: t + 1
     }),
-    onReorder: (e, t) => (0, c.Eq)(n, e, t),
+    onReorder: (e, t) => (0, s.Eq)(n, e, t),
     onEnd: () => d(i.applicationId),
     className: y.container,
     dropBeforeClassName: y.dropIndicatorBefore,
@@ -62,14 +62,14 @@ function O(e) {
     game: t,
     userId: n,
     widgetType: i,
-    guildId: c,
+    guildId: s,
     channelId: b,
     disableInteraction: O = false,
     index: j,
     onRemoveGame: x,
-    coverRef: _
+    coverRef: P
   } = e, {
-    coverImageUrl: P,
+    coverImageUrl: _,
     gameName: I,
     isLoading: w
   } = (0, p.Z)(t.applicationId), {
@@ -80,21 +80,21 @@ function O(e) {
     isDragging: e.isDragging()
   })), N = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
-      imageSrc: P,
+      imageSrc: _,
       gameName: I,
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: O,
-      className: l()(E ? y.socialProofBackdrop : true, null == P || O ? true : h.hoverActiveEffect),
+      className: l()(E ? y.socialProofBackdrop : true, null == _ || O ? true : h.hoverActiveEffect),
       hideTooltip: k,
-      coverRef: _
-    }), D && (0, r.jsx)(s.e_, {
+      coverRef: P
+    }), D && (0, r.jsx)(c.e_, {
       buttonRef: S(t.applicationId),
       className: y.dragHandle
     }), !O && (0, r.jsx)(g.L, {
       userId: n,
       applicationId: t.applicationId,
-      guildId: c,
+      guildId: s,
       channelId: b,
       className: y.socialProof
     }), D && (0, r.jsx)(f.Z, {
@@ -111,7 +111,7 @@ function O(e) {
     widgetType: i,
     index: null != j ? j : 0,
     game: t,
-    coverImageUrl: P,
+    coverImageUrl: _,
     gameName: I,
     children: N()
   }) : (0, r.jsx)("div", {

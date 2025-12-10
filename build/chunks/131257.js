@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 131257, original params: e,t,n (module,exports,require) **/
 module.exports = {
   indicator: "indicator_ffc7aa",

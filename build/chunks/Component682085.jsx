@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -27,14 +27,14 @@ function O() {
     trackUserProfileEditAction: t
   } = (0, Chunk785717.KZ)(), O = Chunk473749.useRef(false), j = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
     application: x,
-    config: _
+    config: P
   } = (0, Chunk50130.G)(), {
-    token: P,
+    token: _,
     fetched: I
-  } = (0, Chunk491662.o)(null == _ ? true : _.application_id), w = Chunk473749.useMemo(() => (null == _ ? true : _.application_id) != null ? new Chunk931847.q({
+  } = (0, Chunk491662.o)(null == P ? true : P.application_id), w = Chunk473749.useMemo(() => (null == P ? true : P.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
-    applicationId: _.application_id
-  }) : null, [null == _ ? true : _.application_id]), S = Chunk473749.useCallback(() => {
+    applicationId: P.application_id
+  }) : null, [null == P ? true : P.application_id]), S = Chunk473749.useCallback(() => {
     exports({
       action: "PRESS_ADD_WIDGET"
     }), (0, Chunk481060.ZDy)(async () => {
@@ -76,7 +76,7 @@ function O() {
     }, {
       stackingBehavior: "stack"
     })
-  }, [exports]), E = null == j || null == x || null == w || !I, T = null != P;
+  }, [exports]), E = null == j || null == x || null == w || !I, T = null != _;
   if (Chunk473749.useEffect(() => {
       !E && T && (O.current || (module({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
@@ -112,10 +112,10 @@ function O() {
       } = e;
       switch (t) {
         case o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET:
-          return (0, r.jsxs)(c.Kqy, {
+          return (0, r.jsxs)(s.Kqy, {
             gap: 16,
             align: "center",
-            children: [(0, r.jsx)(c.LZC, {
+            children: [(0, r.jsx)(s.LZC, {
               size: 32
             }), C, (0, r.jsx)(m.Z, {
               user: j,
@@ -124,13 +124,13 @@ function O() {
             }), (0, r.jsx)(b.Z, {})]
           });
         case null:
-          return (0, r.jsxs)(c.Kqy, {
+          return (0, r.jsxs)(s.Kqy, {
             gap: 32,
             align: "center",
-            children: [(0, r.jsx)(c.LZC, {
+            children: [(0, r.jsx)(s.LZC, {
               size: 128
-            }), C, (0, r.jsx)(c.Button, {
-              icon: c.qJs,
+            }), C, (0, r.jsx)(s.Button, {
+              icon: s.qJs,
               text: y.intl.string(y.t["lBG2s/"]),
               size: "md",
               color: "secondary",

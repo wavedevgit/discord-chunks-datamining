@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 978369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -20,30 +20,30 @@ let d = Chunk473749.memo(function(e) {
   } = e;
   return (0, r.jsx)(l.v2r, {
     navId: "widget-game-tags",
-    "aria-label": s.intl.string(s.t.r6EJOu),
+    "aria-label": c.intl.string(c.t.r6EJOu),
     onClose: a,
     onSelect: () => {},
     className: u.gameTagsMenu,
-    children: Object.entries(c.aE).map(e => {
+    children: Object.entries(s.aE).map(e => {
       let [a, o] = e, u = ((e, a) => {
         let o = [];
-        return a.type === c.kd.RADIO && o.push((0, r.jsx)(l.k5B, {
+        return a.type === s.kd.RADIO && o.push((0, r.jsx)(l.k5B, {
           id: "".concat(e, "-none"),
           group: e,
-          label: s.intl.string(s.t.PoWNfe),
+          label: c.intl.string(c.t.PoWNfe),
           checked: !a.tags.some(e => t.includes(e)),
           action: () => i(a.tags)
         }, "none")), a.tags.forEach(i => {
-          let s = c.XV[i];
-          null != s && (a.type === c.kd.RADIO ? o.push((0, r.jsx)(l.k5B, {
+          let c = s.XV[i];
+          null != c && (a.type === s.kd.RADIO ? o.push((0, r.jsx)(l.k5B, {
             id: i,
             group: e,
-            label: s.getText(),
+            label: c.getText(),
             checked: t.includes(i),
             action: () => n(i, true)
           }, i)) : o.push((0, r.jsx)(l.S89, {
             id: i,
-            label: s.getText(),
+            label: c.getText(),
             checked: t.includes(i),
             action: () => n(i, false)
           }, i)))
@@ -69,7 +69,7 @@ function f(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       r = new Set(b);
     if (t) {
-      let t = Object.values(c.aE).find(t => t.tags.includes(e));
+      let t = Object.values(s.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         r.delete(e)
       }), r.add(e), m({
@@ -143,11 +143,11 @@ function f(e) {
           return e
         }({}, e), n = n = {
           className: u.addButton,
-          "aria-label": s.intl.string(s.t.r6EJOu),
+          "aria-label": c.intl.string(c.t.r6EJOu),
           children: (0, r.jsx)(l.Text, {
             variant: "text-xxs/medium",
             color: "none",
-            children: s.intl.string(s.t.fZSejy)
+            children: c.intl.string(c.t.fZSejy)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 304745, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => P
@@ -39,11 +39,11 @@ function P(e) {
     setIsHovered: M,
     onMouseEnter: R,
     onMouseLeave: L
-  } = (0, v.Z)(200, 300), D = (0, d.p)({
+  } = (0, _.Z)(200, 300), D = (0, d.p)({
     surface: c.eR.VOICE_LAUNCHER
   }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, V = r.useCallback(e => {
     "focus" !== e.type && R()
-  }, [R]), F = (0, _.bp)() === E.IlC.POPOUT, {
+  }, [R]), F = (0, v.bp)() === E.IlC.POPOUT, {
     parentAnalyticsLocation: B,
     newestAnalyticsLocation: H
   } = (0, g.ZP)(), G = r.useCallback(() => {
@@ -57,18 +57,18 @@ function P(e) {
       openInPopout: F,
       analyticsLocation: H
     })
-  }, [t, F, H, B]), W = [];
-  A || W.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && W.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || W.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
-  let z = r.useRef(false),
+  }, [t, F, H, B]), z = [];
+  A || z.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && z.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || z.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  let W = r.useRef(false),
     q = r.useRef(null);
   return (0, i.jsx)(y.ZP, {
-    contentTypes: W,
+    contentTypes: z,
     children: e => {
       let {
         visibleContent: r,
         markAsDismissed: l
       } = e, c = r === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !w;
-      return z.current && !c && l(j.L.AUTO_DISMISS), z.current !== c && (z.current = c), (0, i.jsx)(s.yRy, {
+      return W.current && !c && l(j.L.AUTO_DISMISS), W.current !== c && (W.current = c), (0, i.jsx)(s.yRy, {
         targetElementRef: q,
         fixed: true,
         shouldShow: w && (P === x.D.ACTIVITY || null == P),

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 190210, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => en
@@ -132,22 +132,22 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     "aria-labelledby": eb,
     setEditorRef: eC,
     autoCompletePosition: ey,
-    disableThemedBackground: e_ = false,
-    emojiPickerCloseOnModalOuterClick: ev,
+    disableThemedBackground: ev = false,
+    emojiPickerCloseOnModalOuterClick: e_,
     parentModalKey: eO
   } = e, ex = x.Z.useField("channelDrafts")[L.id], eE = null != (l = null == ex ? true : ex.title) ? l : "", ej = null == ex ? true : ex.heroFile, eS = null == (o = null == ex ? true : ex.publish) || o, eP = null == (u = null == ex ? true : ex.createThread) || u;
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eI
-  } = (0, _.ZP)(y.Z.CHANNEL_TEXT_AREA), eZ = (0, H.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
+  } = (0, v.ZP)(y.Z.CHANNEL_TEXT_AREA), eZ = (0, H.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
   null == eC || eC(eN.current);
   let {
     activeCommand: eM
-  } = (0, d.cj)([v.Z], () => {
+  } = (0, d.cj)([_.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = k.commands) ? true : e.enabled) ? v.Z.getActiveCommand(L.id) : null,
-      activeCommandSection: (null == (t = k.commands) ? true : t.enabled) ? v.Z.getActiveCommandSection(L.id) : null
+      activeCommand: (null == (e = k.commands) ? true : e.enabled) ? _.Z.getActiveCommand(L.id) : null,
+      activeCommandSection: (null == (t = k.commands) ? true : t.enabled) ? _.Z.getActiveCommandSection(L.id) : null
     }
   }), {
     isLurking: eR,
@@ -160,10 +160,10 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   } = (0, d.cj)([C.Z], () => ({
     fontSize: C.Z.fontSize,
     isSubmitButtonEnabled: C.Z.isSubmitButtonEnabled
-  })), eG = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eW = (0, N.NE)(L);
+  })), eG = (0, d.e7)([M.Z], () => M.Z.isEnabled()), ez = (0, N.NE)(L);
   (0, H.hJ)(k, eD, L.id);
   let {
-    eventEmitter: ez,
+    eventEmitter: eW,
     handleEditorSelectionChanged: eq
   } = (0, H.x2)(eN, p, h), eK = r.useCallback(e => {
     let t = e => {
@@ -180,7 +180,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
       i = eE.length > 0 ? eE : e.value.length > 0 ? e.value.slice(0, 80) : X.intl.string(X.t["7Xm5QI"]);
     if (null == ej) return eu(ee($({}, e), {
       announcementSendOptions: {
-        createThread: eW && eP,
+        createThread: ez && eP,
         threadName: i,
         publish: eS
       }
@@ -214,12 +214,12 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     }), eu(ee($({}, e), {
       components: n,
       announcementSendOptions: {
-        createThread: eW && eP,
+        createThread: ez && eP,
         threadName: i,
         publish: eS
       }
     })).then(t)
-  }, [eu, eE, ej, L.id, eP, eS, eW]), {
+  }, [eu, eE, ej, L.id, eP, eS, ez]), {
     submit: eY,
     handleSubmit: eX
   } = (0, H.bL)(eK, k, eN, ew, L.id), {
@@ -267,7 +267,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     chatInputType: k,
     submit: eK
   });
-  (0, U.S)(ez, L.guild_id, L.id);
+  (0, U.S)(eW, L.guild_id, L.id);
   let [tl, ta] = r.useState(false), to = G || tl || p.length > 0 || null != ej || eE.length > 0, {
     editorHeaderHeight: ts,
     paddingTop: tc
@@ -300,8 +300,8 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     })
   }, [L.id, ej, k.drafts.type]);
   return (0, i.jsx)(E.f6, {
-    value: ez,
-    children: (0, i.jsxs)(_.Gt, {
+    value: eW,
+    children: (0, i.jsxs)(v.Gt, {
       value: eI,
       children: [(0, i.jsxs)("div", {
         ref: eZ,
@@ -311,7 +311,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
           ref: eA,
           onScroll: e0,
           className: a()(Q.announcementScrollableContainer, {
-            [Q.themedBackground]: !e_
+            [Q.themedBackground]: !ev
           }),
           children: (0, i.jsxs)("div", {
             className: a()(Q.inner, J.inner),
@@ -363,7 +363,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                     channel: L,
                     type: V.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: ek,
-                    uploadPromptCharacterCount: z.en1,
+                    uploadPromptCharacterCount: W.en1,
                     maxCharacterCount: null != ef ? ef : eB,
                     allowNewLines: true,
                     "aria-describedby": eg,
@@ -391,7 +391,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
               })]
             }), (0, i.jsx)("div", {
               className: J.attachmentsContainer,
-              children: (0, i.jsx)(W.Z, {
+              children: (0, i.jsx)(z.Z, {
                 channelId: L.id,
                 type: k,
                 canAttachFiles: ek,
@@ -427,7 +427,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                 targetElementRef: tu,
                 renderPopout: () => (0, i.jsx)(ei, {
                   channelId: L.id,
-                  canCreateThread: eW
+                  canCreateThread: ez
                 }),
                 shouldShow: td,
                 autoInvert: true,
@@ -453,7 +453,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                       children: [(0, i.jsx)(f.Uuj, {
                         size: "xs",
                         color: "white"
-                      }), eW && eP ? (0, i.jsx)(f.or_, {
+                      }), ez && eP ? (0, i.jsx)(f.or_, {
                         size: "xxs",
                         color: "white",
                         className: J.subIcon
@@ -493,7 +493,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
         onSelectEmoji: tn,
         onSelectSticker: tr,
         channel: L,
-        closeOnModalOuterClick: ev,
+        closeOnModalOuterClick: e_,
         parentModalKey: eO,
         position: "top",
         align: "right",
@@ -512,8 +512,8 @@ function ei(e) {
   return (0, i.jsxs)(f.v2r, {
     "aria-label": X.intl.string(X.t["9WnJyo"]),
     navId: "send-announcement-options",
-    onClose: z.dG4,
-    onSelect: z.dG4,
+    onClose: W.dG4,
+    onSelect: W.dG4,
     children: [(0, i.jsx)(f.S89, {
       id: "create-thread",
       label: X.intl.string(X.t.rBIGBL),

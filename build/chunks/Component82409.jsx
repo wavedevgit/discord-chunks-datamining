@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -56,8 +56,8 @@ function D(e) {
   }
   return e
 }
-let L = [],
-  M = {
+let M = [],
+  L = {
     controller: new Chunk467721.Controller({
       value: 1,
       immediate: true
@@ -128,7 +128,7 @@ function k(e) {
       let {
         message: n
       } = e;
-      return null == n ? L : [{
+      return null == n ? M : [{
         id: n.id,
         channelId: n.channel_id,
         guildId: null == (t = m.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id,
@@ -138,7 +138,7 @@ function k(e) {
     }), [G]),
     z = U(I, l, a),
     W = U(P, l, null);
-  (0, h.ZP)(() => {
+  (0, p.ZP)(() => {
     var e;
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
@@ -188,7 +188,7 @@ function k(e) {
       track: false,
       viewId: n
     })
-  }), (0, h.zq)(() => {
+  }), (0, p.zq)(() => {
     d.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_CLOSE"
     })
@@ -204,10 +204,10 @@ function k(e) {
     }),
     children: (0, r.jsxs)(u.y5t, {
       forceLevel: 1,
-      component: (0, r.jsx)(p.ZP, D({
+      component: (0, r.jsx)(h.ZP, D({
         hasSubheader: true,
         guild: q
-      }, M)),
+      }, L)),
       children: [l === w.V5.ALL && (0, r.jsx)(V, {
         hideBanner: !A || l !== w.V5.ALL
       }), Y && (0, r.jsx)(u.LZC, {
@@ -233,7 +233,7 @@ function G(e) {
 }
 
 function U(e, t, n) {
-  return i.useMemo(() => 0 === e.length || t === w.V5.BOOKMARKS ? L : e.filter(e => {
+  return i.useMemo(() => 0 === e.length || t === w.V5.BOOKMARKS ? M : e.filter(e => {
     let {
       id: r
     } = e;

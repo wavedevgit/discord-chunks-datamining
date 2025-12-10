@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -133,15 +133,15 @@ let T = Chunk473749.memo(function(e) {
     isLast: T,
     withGuildIcon: A
   } = e, R = (0, s.e7)([_.ZP], () => _.ZP.getVoiceStatesForChannel(t), [t]), D = (0, s.e7)([b.Z], () => b.Z.hasVideo(t.id)), {
-    unread: L,
-    mentionCount: M,
+    unread: M,
+    mentionCount: L,
     isMentionLowImportance: k
   } = (0, s.cj)([m.ZP], () => ({
     unread: m.ZP.hasUnread(t.id),
     mentionCount: m.ZP.getMentionCount(t.id),
     isMentionLowImportance: m.ZP.getIsMentionLowImportance(t.id)
-  })), G = (0, s.e7)([h.Z], () => h.Z.isMuted(t.id)), U = i.useCallback(e => {
-    (0, p.ok)(t, !e.shiftKey, C.on.CHANNEL_LIST)
+  })), G = (0, s.e7)([p.Z], () => p.Z.isMuted(t.id)), U = i.useCallback(e => {
+    (0, h.ok)(t, !e.shiftKey, C.on.CHANNEL_LIST)
   }, [t]), B = i.useCallback(() => {
     d.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), F = i.useCallback(e => {
@@ -170,10 +170,10 @@ let T = Chunk473749.memo(function(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(H, ["role"]), K = i.useRef(null), Y = M > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
+  }(H, ["role"]), K = i.useRef(null), Y = L > 0 ? E.intl.formatToPlainString(E.t["ZL7+I6"], {
     channelName: t.name,
-    mentionCount: M
-  }) : L ? E.intl.formatToPlainString(E.t.YlVvmc, {
+    mentionCount: L
+  }) : M ? E.intl.formatToPlainString(E.t.YlVvmc, {
     channelName: t.name
   }) : E.intl.formatToPlainString(E.t["0nZpiF"], {
     channelName: t.name
@@ -203,12 +203,12 @@ let T = Chunk473749.memo(function(e) {
         className: o()(S.iconVisibility, I.wrapper, I.typeThread, {
           [I.modeSelected]: l,
           [I.modeMuted]: !l && G,
-          [I.modeUnreadImportant]: !G && !l && L,
+          [I.modeUnreadImportant]: !G && !l && M,
           [I.withGuildIcon]: A
         }),
         onMouseDown: B,
         onContextMenu: F,
-        children: [!L || G || l ? null : (0, r.jsx)("div", {
+        children: [!M || G || l ? null : (0, r.jsx)("div", {
           className: o()(I.unread, I.unreadImportant)
         }), (0, r.jsx)(u.P3F, Z(N({}, W), {
           innerRef: K,
@@ -230,8 +230,8 @@ let T = Chunk473749.memo(function(e) {
                 userCount: V,
                 video: D,
                 channel: t
-              }) : null, (0, y.Z)(M) ? (0, r.jsx)(v.Z, {
-                mentionsCount: M,
+              }) : null, (0, y.Z)(L) ? (0, r.jsx)(v.Z, {
+                mentionsCount: L,
                 isMentionLowImportance: k
               }) : null]
             })]

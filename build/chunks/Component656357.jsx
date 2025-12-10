@@ -78,27 +78,27 @@ function Q(e) {
     sourceQuestContent: et,
     quest: en,
     videoSessionId: er
-  } = o.useContext(R.VideoQuestModalContext), eo = (0, C.km)(e => e.transcriptEnabled), el = (0, C.km)(e => e.setTranscriptEnabled), ei = (0, C.km)(e => e.captionEnabled), ea = (0, C.km)(e => e.setCaptionEnabled), es = (0, C.km)(e => e.fullScreenEnabled), ec = (0, C.km)(e => e.setFullScreenEnabled), {
+  } = o.useContext(R.VideoQuestModalContext), eo = (0, S.km)(e => e.transcriptEnabled), el = (0, S.km)(e => e.setTranscriptEnabled), ei = (0, S.km)(e => e.captionEnabled), ea = (0, S.km)(e => e.setCaptionEnabled), es = (0, S.km)(e => e.fullScreenEnabled), ec = (0, S.km)(e => e.setFullScreenEnabled), {
     enabled: eu,
     variant: ed
-  } = S.EO.useConfig({
+  } = C.EO.useConfig({
     location: F.dr.VIDEO_MODAL
-  }), em = ed === S.m_.OVERLAY_SHARE_ON_VIDEO, {
+  }), em = ed === C.m_.OVERLAY_SHARE_ON_VIDEO, {
     focused: ef,
     focusedChanged: ep
   } = (0, k.xU)(), {
     visible: ev,
     visibleChanged: eE,
     targetRef: eg
-  } = (0, k.Yy)(), [eO, eh] = o.useState(true === X ? w.rq.PLAYING : w.rq.PAUSED), [eb, eC] = o.useState(false), [eS, e_] = o.useState(false), ey = (0, j.il)(en), [ex, ej] = o.useState(ey.percentComplete), eP = o.useCallback(e => {
+  } = (0, k.Yy)(), [eO, eh] = o.useState(true === X ? w.rq.PLAYING : w.rq.PAUSED), [eb, eS] = o.useState(false), [eC, e_] = o.useState(false), ey = (0, j.il)(en), [ex, ej] = o.useState(ey.percentComplete), eP = o.useCallback(e => {
     eG(null), ej(e)
-  }, []), [eD, eT] = o.useState(false), [eR, eI] = o.useState(true), [eN, eA] = o.useState(false), [ew, eL] = o.useState([]), [ek, eM] = o.useState(E.Z.getEffectiveConnectionSpeed()), [eV, eZ] = o.useState(0), [eF, eB] = o.useState(0), [eU, eq] = o.useState(false), [eY, eH] = o.useState(false), [eQ, eG] = o.useState(null), eK = o.useRef(true), eW = o.useRef(null), ez = o.useRef(null), eX = (0, C.km)(e => {
+  }, []), [eD, eT] = o.useState(false), [eR, eI] = o.useState(true), [eN, eA] = o.useState(false), [ew, eL] = o.useState([]), [ek, eM] = o.useState(E.Z.getEffectiveConnectionSpeed()), [eV, eZ] = o.useState(0), [eF, eB] = o.useState(0), [eU, eq] = o.useState(false), [eY, eH] = o.useState(false), [eQ, eG] = o.useState(null), eK = o.useRef(true), eW = o.useRef(null), ez = o.useRef(null), eX = (0, S.km)(e => {
     var t;
     return null != (t = e.videoProgress[en.id]) ? t : {
       timestampSec: 0,
       duration: 10
     }
-  }, s.X), e$ = (0, C.km)(e => e.setVideoProgress), eJ = (0, C.km)(e => e.muted), e0 = (0, C.km)(e => e.volume), e1 = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), e2 = (0, o.useRef)(null), e4 = (0, o.useRef)(null), e3 = o.useRef(true), e8 = (null == (t = en.userStatus) ? true : t.completedAt) != null, [e7, e9] = o.useState(null), [e6, e5] = o.useState(false), [te, tt] = o.useState(false), [tn, tr] = o.useState(null), to = e8 ? null != (v = null == (n = e2.current) ? true : n.duration) ? v : 0 : Math.max(eX.maxTimestampSec, ey.progressSeconds), tl = o.useMemo(() => (0, _.T)({
+  }, s.X), e$ = (0, S.km)(e => e.setVideoProgress), eJ = (0, S.km)(e => e.muted), e0 = (0, S.km)(e => e.volume), e1 = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), e2 = (0, o.useRef)(null), e4 = (0, o.useRef)(null), e3 = o.useRef(true), e8 = (null == (t = en.userStatus) ? true : t.completedAt) != null, [e7, e9] = o.useState(null), [e6, e5] = o.useState(false), [te, tt] = o.useState(false), [tn, tr] = o.useState(null), to = e8 ? null != (v = null == (n = e2.current) ? true : n.duration) ? v : 0 : Math.max(eX.maxTimestampSec, ey.progressSeconds), tl = o.useMemo(() => (0, _.T)({
     quest: en,
     location: F.dr.VIDEO_MODAL
   }), [en]), ti = (0, L.$R)(e8, eX, ey), [ta, ts] = o.useState(w._H.MD), tc = {
@@ -121,8 +121,8 @@ function Q(e) {
     trackQuestVideoPaused: tO,
     trackQuestVideoFocusChange: th,
     trackQuestContentClick: tb,
-    trackQuestVideoBufferingStarted: tC,
-    trackQuestVideoBufferingEnded: tS,
+    trackQuestVideoBufferingStarted: tS,
+    trackQuestVideoBufferingEnded: tC,
     trackWatchTimeAnalytics: t_,
     trackQuestVideoTimeToFirstFrame: ty,
     trackQuestVideoFullscreenChanged: tx,
@@ -199,7 +199,7 @@ function Q(e) {
       null != tw.current && clearTimeout(tw.current)
     }
   }, [eO, tk]);
-  let tV = !tN && (eS || eb || eO === w.rq.ENDED),
+  let tV = !tN && (eC || eb || eO === w.rq.ENDED),
     tZ = o.useCallback(() => {
       var e;
       tl.info("[QV] | handleFullScreenExit");
@@ -266,7 +266,7 @@ function Q(e) {
       tl.info("[QV] | logVideoError: errorType: ".concat(e, ", videoProgress: ").concat(null == (t = e2.current) ? true : t.currentTime, ", videoAssetId: ").concat(td, ", connectionSpeed: ").concat(ek)), tj(e)
     }, [ek, tj, e2, td, tl]),
     tK = e => {
-      tl.info("[QV] | handleCanPlay: playerState: ".concat(eO)), null != e2.current && eO === w.rq.PLAYING && (tl.info("[QV] | handleCanPlay: did NOT early return"), eR && (tl.info("[QV] | handleCanPlay: loadingFirstChunk: ".concat(eR)), eI(false)), eN && (tl.info("[QV] | handleCanPlay: waitingForChunk: ".concat(eN)), tS(null != ez.current ? performance.now() - ez.current : null), eA(false)), tl.info("[QV] | handleCanPlay: updating player state to playing"), tR(w.rq.PLAYING))
+      tl.info("[QV] | handleCanPlay: playerState: ".concat(eO)), null != e2.current && eO === w.rq.PLAYING && (tl.info("[QV] | handleCanPlay: did NOT early return"), eR && (tl.info("[QV] | handleCanPlay: loadingFirstChunk: ".concat(eR)), eI(false)), eN && (tl.info("[QV] | handleCanPlay: waitingForChunk: ".concat(eN)), tC(null != ez.current ? performance.now() - ez.current : null), eA(false)), tl.info("[QV] | handleCanPlay: updating player state to playing"), tR(w.rq.PLAYING))
     };
   o.useEffect(() => {
     if (!eD) return;
@@ -332,10 +332,10 @@ function Q(e) {
     "data-fullscreen": es,
     tabIndex: false,
     onMouseEnter: () => {
-      eC(true), tA(false), tL.current = performance.now(), null != tw.current && clearTimeout(tw.current)
+      eS(true), tA(false), tL.current = performance.now(), null != tw.current && clearTimeout(tw.current)
     },
     onMouseLeave: () => {
-      eC(false), tA(false)
+      eS(false), tA(false)
     },
     onMouseMove: tM,
     onKeyDown: tM,
@@ -384,7 +384,7 @@ function Q(e) {
           tl.info("[QV] | ⏰ Video FCP: ".concat(e, "ms")), ty(e), eK.current = false
         },
         onWaiting: e => {
-          ez.current = performance.now(), tl.info("[QV] | handleWaitingForData: bufferingStartTime: ".concat(ez.current)), tC(), eA(true)
+          ez.current = performance.now(), tl.info("[QV] | handleWaitingForData: bufferingStartTime: ".concat(ez.current)), tS(), eA(true)
         },
         onProgress: e => {
           if (null == e2.current) return;

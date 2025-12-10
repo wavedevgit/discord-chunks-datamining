@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,12 +21,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk591868 = require("./591868.js");
 
-function _(e) {
+function v(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), _ = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), v = (null == _ ? true : _.type) === b.fO.STREAM, O = (0, l.e7)([h.Z], () => v ? h.Z.getActiveStreamForStreamKey(_.id) : null), {
+  } = (0, o.ZP)(), v = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), _ = (null == v ? true : v.type) === b.fO.STREAM, O = (0, l.e7)([h.Z], () => _ ? h.Z.getActiveStreamForStreamKey(v.id) : null), {
     ignoreSenderPreference: x
   } = d.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -38,7 +38,7 @@ function _(e) {
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != O && (s.Z.isViewerClippingAllowedForUser(O.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), S = (0, c.z8)(), P = (null == O ? true : O.ownerId) === f.default.getId(), I = !S || !(P || E) || j || null == _, Z = r.useCallback(e => {
+  })), S = (0, c.z8)(), P = (null == O ? true : O.ownerId) === f.default.getId(), I = !S || !(P || E) || j || null == v, Z = r.useCallback(e => {
     var t, n;
     return (0, i.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ function _(e) {
   return (0, i.jsx)(p.Z, {
     className: y.actionBarButton,
     onClick: () => {
-      I || ((0, g.v)(n, g.d.CLIP), P ? (0, u.br)() : (0, u.C1)(_.id))
+      I || ((0, g.v)(n, g.d.CLIP), P ? (0, u.br)() : (0, u.C1)(v.id))
     },
     disabled: I,
     iconComponent: Z,

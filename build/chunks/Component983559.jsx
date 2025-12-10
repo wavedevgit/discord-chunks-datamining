@@ -75,13 +75,13 @@ function H(e) {
   }), q = i.useRef(null), {
     isHoveringOrFocusing: K,
     isHovering: Q
-  } = (0, p.Z)(q), X = (0, x.$m)(), J = (0, o.q_F)({
+  } = (0, p.Z)(q), X = (0, j.$m)(), J = (0, o.q_F)({
     opacity: +(null != X.interactionType),
     config: {
       duration: 150
     }
   }), $ = e => {
-    (0, j.openUserProfileModal)(G({
+    (0, x.openUserProfileModal)(G({
       sourceAnalyticsLocations: W,
       hideRestrictedProfile: true
     }, Y, e))
@@ -95,7 +95,10 @@ function H(e) {
     defaultWishlistId: b.Z.getFirstWishlistId(n.id)
   })), {
     wishlist: ei
-  } = (0, f.kZ)(er, n.id), el = en && null != ei && ei.items.length > 0;
+  } = (0, f.kZ)({
+    wishlistId: er,
+    userId: n.id
+  }), el = en && null != ei && ei.items.length > 0;
   return (0, r.jsx)(u.Gt, {
     value: W,
     children: (0, r.jsx)(g.Mt, {
@@ -104,7 +107,7 @@ function H(e) {
       fetchStartedAt: null == B ? true : B.fetchStartedAt,
       fetchEndedAt: null == B ? true : B.fetchEndedAt,
       isLoaded: null == B ? true : B.isLoaded,
-      children: (0, r.jsx)(x.NJ, {
+      children: (0, r.jsx)(j.NJ, {
         value: X,
         children: (0, r.jsxs)(E.Z, {
           ref: q,

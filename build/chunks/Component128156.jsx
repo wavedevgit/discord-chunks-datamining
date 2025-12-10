@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -53,8 +53,8 @@ function w(e) {
   } = (0, p.Z)({
     userId: t.id,
     guildId: S
-  }), L = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
-    let e = M ? u.Z.getStatus() : s.Z.getStatus(t.id);
+  }), L = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, B = (0, i.e7)([u.Z, c.Z], () => {
+    let e = M ? u.Z.getStatus() : c.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
   }), F = N.length > 0 || null != Z, U = D && null == Z && null == G && null != R, W = !B && (F || U), H = A.length > 0;
   if (!W && !H && L) return (0, r.jsx)("div", {
@@ -63,10 +63,10 @@ function w(e) {
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
       className: I.loadingItem,
-      children: [(0, r.jsx)(c.ZT, {
+      children: [(0, r.jsx)(s.ZT, {
         width: 60,
         opacity: .08
-      }), (0, r.jsx)(c.ZT, {
+      }), (0, r.jsx)(s.ZT, {
         width: 135,
         opacity: .08
       })]
@@ -87,7 +87,7 @@ function w(e) {
     className: I.scroller,
     fade: true,
     children: [W ? (0, r.jsx)(O.Z, {
-      heading: P.intl.string(P.t.J6STd9),
+      heading: _.intl.string(_.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: I.cards,
         children: [!k && U && (0, r.jsx)("li", {
@@ -121,10 +121,10 @@ function w(e) {
         })]
       })
     }) : null, H ? (0, r.jsx)(O.Z, {
-      heading: P.intl.string(P.t.jzgEoL),
-      introText: M ? P.intl.format(P.t["4bk9Ak"], {
+      heading: _.intl.string(_.t.jzgEoL),
+      introText: M ? _.intl.format(_.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.Anchor, {
-          href: d.Z.getArticleURL(_.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,

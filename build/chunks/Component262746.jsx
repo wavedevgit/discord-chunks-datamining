@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 262746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,9 +22,9 @@ function g(e) {
     channel: t,
     user: g,
     guild: b
-  } = e, C = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == C, [_, v] = r.useState(y), O = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
+  } = e, C = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == C, [v, _] = r.useState(y), O = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
   if ((0, c.ZP)(() => {
-      y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => v(false))
+      y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => _(false))
     }), !O) return null;
   let x = true === C ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
     E = "ban-user-".concat(null == g ? true : g.id);
@@ -72,8 +72,8 @@ function g(e) {
         }
       })
     },
-    disabled: true === C || _,
-    submitting: _,
+    disabled: true === C || v,
+    submitting: v,
     color: a.zx.Colors.RED
   }, E)
 }

@@ -1,9 +1,9 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P9: () => P,
+  P9: () => _,
   Uf: () => w,
-  b0: () => _,
+  b0: () => P,
   s_: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -62,7 +62,7 @@ function x() {
   })
 }
 
-function _() {
+function P() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYJ),
     [t] = Chunk473749.useState(() => {
       var e;
@@ -74,13 +74,13 @@ function _() {
   })
 }
 
-function P(e) {
+function _(e) {
   let {
     user: t,
     guildId: n,
-    channelId: c,
-    onClose: s
-  } = e, u = f.ZP.getName(n, c, t), d = m.intl.formatToPlainString(m.t.sjSitP, {
+    channelId: s,
+    onClose: c
+  } = e, u = f.ZP.getName(n, s, t), d = m.intl.formatToPlainString(m.t.sjSitP, {
     name: u
   }), [p] = i.useState(() => {
     var e;
@@ -88,8 +88,8 @@ function P(e) {
   }), h = i.useCallback(() => {
     o.Z.openPrivateChannel({
       recipientIds: t.id
-    }), null == s || s()
-  }, [t.id, s]);
+    }), null == c || c()
+  }, [t.id, c]);
   return (0, r.jsx)(j, {
     heading: d,
     bodyText: p,
@@ -109,7 +109,7 @@ function I() {
   return (0, Chunk54381.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
     children: O.map((t, n) => {
-      let i = s.Z.get(t);
+      let i = c.Z.get(t);
       if (null == i) return null;
       let l = (0, a.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, r.jsx)("img", {

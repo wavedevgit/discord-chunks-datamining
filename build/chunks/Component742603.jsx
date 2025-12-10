@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -214,7 +214,7 @@ function H(e) {
     children: [(0, i.jsx)(s.f6W, {
       theme: L.BR.DARK,
       children: e => (0, i.jsxs)(y.ZP, {
-        onDoubleClick: _.O,
+        onDoubleClick: v.O,
         transparent: true,
         className: l()(e, k.headerBar),
         innerClassName: k.headerBarChildren,
@@ -243,7 +243,7 @@ function H(e) {
               })
             })]
           })
-        }), (0, i.jsx)(v.TS, {
+        }), (0, i.jsx)(_.TS, {
           channel: t,
           guild: r
         }), (0, i.jsx)(B, {

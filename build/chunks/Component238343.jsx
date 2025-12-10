@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 238343, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Aw: () => y,
@@ -47,7 +47,7 @@ function m(e) {
 function b(e, t) {
   (0, o.ZDy)(async () => {
     switch (t.type) {
-      case h.Us.LEVEL:
+      case p.Us.LEVEL:
         let {
           default: i
         } = await n.e("99014").then(n.bind(n, 271224));
@@ -55,7 +55,7 @@ function b(e, t) {
           guildId: e,
           powerup: t
         }, n));
-      case h.Us.PERK: {
+      case p.Us.PERK: {
         let {
           default: i
         } = await Promise.all([n.e("76692"), n.e("81242")]).then(n.bind(n, 326055));
@@ -66,7 +66,7 @@ function b(e, t) {
       }
     }
   }, {
-    modalKey: h.H2
+    modalKey: p.H2
   })
 }
 
@@ -101,13 +101,13 @@ function O(e, t) {
         } = i;
       if (null != o && null != t) return u < t.cost ? void(0, s.u)({
         analyticsLocation: {
-          page: p.ZY5.GUILD_POWERUPS_OVERVIEW,
-          section: p.jXE.GUILD_POWERUPS_OVERVIEW_CARD
+          page: h.ZY5.GUILD_POWERUPS_OVERVIEW,
+          section: h.jXE.GUILD_POWERUPS_OVERVIEW_CARD
         },
         numberOfBoostsToAdd: t.cost - u,
         analyticsLocations: n,
         guild: o,
-        intent: t.type === h.Us.LEVEL ? h.P2.LEVEL : h.P2.PERK,
+        intent: t.type === p.Us.LEVEL ? p.P2.LEVEL : p.P2.PERK,
         onSubscribeComplete: () => {
           var e;
           return null == (e = r(true)) ? true : e.then(() => {

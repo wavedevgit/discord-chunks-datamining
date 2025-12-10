@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -67,7 +67,7 @@ let T = e => {
         children: a
       }), (0, i.jsx)(c.P3F, {
         onClick: () => {
-          (0, _.openUserProfileModal)({
+          (0, v.openUserProfileModal)({
             userId: t,
             channelId: n,
             section: P.oh.MUTUAL_GUILDS,
@@ -181,9 +181,9 @@ let T = e => {
     } = e, l = r.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
     }, []), a = r.useCallback(() => {
-      C.Z.closeChannelSidebar(v.uZ)
+      C.Z.closeChannelSidebar(_.uZ)
     }, []), o = r.useCallback(() => {
-      C.Z.closeChannelSidebar(v.uZ)
+      C.Z.closeChannelSidebar(_.uZ)
     }, []), {
       acceptMessageRequest: s,
       rejectMessageRequest: u,

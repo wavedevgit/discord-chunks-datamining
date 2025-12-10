@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => C
@@ -54,9 +54,9 @@ function C(e) {
     channelId: t,
     warningId: C,
     senderId: y
-  } = e, _ = r.useCallback(() => {
+  } = e, v = r.useCallback(() => {
     (0, u.T)(t, [C])
-  }, [t, C]), v = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), O = r.useMemo(() => ({
+  }, [t, C]), _ = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), O = r.useMemo(() => ({
     channelId: t,
     warningId: C,
     senderId: y,
@@ -98,11 +98,11 @@ function C(e) {
       }), x(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
     }, [t, y, C, x]),
     j = r.useCallback(() => {
-      _(), x(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [_, x]),
+      v(), x(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [v, x]),
     S = r.useCallback(() => {
-      _(), x(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [_, x]),
+      v(), x(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [v, x]),
     P = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
@@ -134,12 +134,12 @@ function C(e) {
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5p),
     description: m.intl.string(m.t["D1aU+h"]),
-    onDismiss: _,
+    onDismiss: v,
     buttons: [{
       text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
       onClick: E
-    }, ...v ? [] : [{
+    }, ..._ ? [] : [{
       text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",
       onClick: P

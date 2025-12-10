@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -66,7 +66,7 @@ function R() {
       favoriteAdded: R,
       clearFavoriteAdded: D
     } = (0, Chunk593214.up)(),
-    [L, M] = Chunk473749.useState(false),
+    [M, L] = Chunk473749.useState(false),
     {
       favoriteServerMuted: k,
       favoriteChannels: G
@@ -95,18 +95,18 @@ function R() {
         a = (0, s.e7)([f.ZP], () => Array.from(f.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
-          } = t, r = (0, h.p)(n);
+          } = t, r = (0, p.p)(n);
           return null != r && null != e[r]
         })),
         c = o.length > 0,
         u = false,
         d = false,
-        p = false,
+        h = false,
         g = false;
-      return n ? (u = !l, d = l, p = r, g = a) : (p = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, h = r, g = a) : (h = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
-        screenshare: p,
+        screenshare: h,
         liveStage: false,
         isCurrentUserConnected: n,
         activity: g
@@ -119,7 +119,7 @@ function R() {
   return (0, Chunk54381.jsxs)(Chunk682662.H, {
     children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
       selected: F,
-      hovered: L,
+      hovered: M,
       unread: H && !k,
       className: Chunk499951.pill
     }), (0, Chunk54381.jsx)(Chunk603274.Z, {
@@ -139,9 +139,9 @@ function R() {
               pathname: Chunk981631.Z5c.CHANNEL(Chunk981631.I_8, U),
               state: A
             },
-            selected: F || L,
-            onMouseEnter: () => M(true),
-            onMouseLeave: () => M(false),
+            selected: F || M,
+            onMouseEnter: () => L(true),
+            onMouseLeave: () => L(false),
             onMouseDown: function() {
               null != B && Chunk493683.Z.preload(B.guild_id, B.id)
             },

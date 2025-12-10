@@ -1,5 +1,6 @@
-/** Chunk was on 83037 **/
-/** chunk id: 525302, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 525302, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   Q: () => c
 });
@@ -20,7 +21,7 @@ function c(e) {
 function u(e) {
   let {
     application: t
-  } = e, n = null != t ? t.getIconURL(s.Si.SMALL) : true;
+  } = e, n = null != t ? t.getIconURL(l.Si.SMALL) : true;
   return null != n ? (0, r.jsx)("img", {
     src: n,
     alt: null == t ? true : t.name
@@ -33,7 +34,7 @@ function u(e) {
 function d(e) {
   let {
     wishlistItem: t
-  } = e, n = (0, l.e7)([o.Z], () => (0, a.F)(t) ? o.Z.getApplication(t.sku.applicationId) : true);
+  } = e, n = (0, a.e7)([o.Z], () => (0, s.F)(t) ? o.Z.getApplication(t.sku.applicationId) : true);
   return (0, r.jsx)(u, {
     application: n
   })

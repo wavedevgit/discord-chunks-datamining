@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 430371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -80,17 +80,17 @@ function I(e) {
     } = e,
     B = h.Z.getVideoComponent(),
     H = p.default.getId(),
-    [G, W] = r.useState(null),
-    z = (0, c.Z)(G),
+    [G, z] = r.useState(null),
+    W = (0, c.Z)(G),
     [q, K] = r.useState(true),
     [Y, X] = r.useState(false),
-    J = R.type === v.fO.ACTIVITY,
+    J = R.type === _.fO.ACTIVITY,
     Q = (0, u.Z)(J ? R.applicationId : true),
     $ = !J && null != R.streamId,
     ee = U <= 2 * P + 144,
     et = L && !ee,
     en = (0, c.Z)(et),
-    ei = V === _.AEg.MINIMUM || V === _.AEg.NORMAL,
+    ei = V === v.AEg.MINIMUM || V === v.AEg.NORMAL,
     er = !ee && (!ei || J),
     el = (0, m.Z)(er, 100),
     ea = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
@@ -111,7 +111,7 @@ function I(e) {
       clearTimeout(e)
     }
   }, []);
-  let ef = q || null == z,
+  let ef = q || null == W,
     em = ef ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!et,
@@ -120,9 +120,9 @@ function I(e) {
         clamp: true
       }),
       onStart: () => X(true),
-      onChange: () => f.S.dispatch(_.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(v.CkL.REMEASURE_TARGET),
       onRest: () => {
-        X(false), f.S.dispatch(_.CkL.REMEASURE_TARGET)
+        X(false), f.S.dispatch(v.CkL.REMEASURE_TARGET)
       }
     }, em),
     eb = (0, s.q_F)({
@@ -143,7 +143,7 @@ function I(e) {
         clamp: true
       })
     }, em),
-    e_ = (0, s.Yzy)(R, {
+    ev = (0, s.Yzy)(R, {
       keys: e => null == e ? true : e.id,
       config: j(E({}, o.config.stiff), {
         clamp: true
@@ -159,8 +159,8 @@ function I(e) {
         opacity: 0
       }
     }, em),
-    ev = r.useCallback(e => {
-      W(e), K(false)
+    e_ = r.useCallback(e => {
+      z(e), K(false)
     }, []),
     eO = et ? [] : (0, C.n3)(T, R, H),
     {
@@ -189,7 +189,7 @@ function I(e) {
             style: {
               aspectRatio: es
             },
-            children: e_((e, t, n) => {
+            children: ev((e, t, n) => {
               let {
                 key: r
               } = n;
@@ -207,7 +207,7 @@ function I(e) {
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: I,
-                  onVideoResize: ev,
+                  onVideoResize: e_,
                   inCall: w,
                   popoutType: A,
                   controlsBottom: eh

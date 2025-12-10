@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -28,13 +28,13 @@ function b(e) {
   } = (0, a.ZP)(), {
     context: v,
     trackUserProfileAction: O
-  } = (0, c.KZ)(), {
+  } = (0, s.KZ)(), {
     mutualFriends: j,
     mutualFriendsCount: x
-  } = (0, s.Z)(t), _ = (0, l.Z)();
+  } = (0, c.Z)(t), P = (0, l.Z)();
   return i.useEffect(() => {
-    (0, u.Z)(t.id, _)
-  }, [t.id, _]), (0, r.jsx)(p.F, {
+    (0, u.Z)(t.id, P)
+  }, [t.id, P]), (0, r.jsx)(p.F, {
     className: m.scroller,
     children: null == j ? Array.from({
       length: null != x ? x : 10

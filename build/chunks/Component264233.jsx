@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 264233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => _,
@@ -60,14 +60,14 @@ function m(e) {
     title: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.headerContainer,
+    className: h.headerContainer,
     children: [(0, r.jsx)(s.Text, {
-      className: p.headerTitle,
+      className: h.headerTitle,
       variant: "text-xs/semibold",
       color: "interactive-text-default",
       children: t
     }), (0, r.jsx)("div", {
-      className: p.headerDivider
+      className: h.headerDivider
     })]
   })
 }

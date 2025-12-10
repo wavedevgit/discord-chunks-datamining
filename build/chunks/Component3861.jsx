@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,13 +20,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk394024 = require("./394024.js");
-let _ = (0, Chunk112724.Z)(e => {
+let v = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: a,
-    participantsVersion: _,
-    layout: v,
+    participantsVersion: v,
+    layout: _,
     onSelectParticipant: O,
     onContextMenuParticipant: x,
     onFullscreenParticipant: E,
@@ -46,7 +46,7 @@ let _ = (0, Chunk112724.Z)(e => {
   r.useEffect(() => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, L.width, L.height]);
-  let D = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, _]),
+  let D = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
     k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
   if ((null == R ? true : R.channelId) === j.id) return (0, i.jsx)(h.Z, {
     height: N
@@ -100,7 +100,7 @@ let _ = (0, Chunk112724.Z)(e => {
     idle: A,
     height: N,
     width: T,
-    layout: v,
+    layout: _,
     inCall: I,
     channel: j,
     showParticipants: Z

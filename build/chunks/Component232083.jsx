@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -55,18 +55,18 @@ function g(e) {
   }(e, ["games", "user", "widgetType"]);
   let {
     registerItemRef: o,
-    manageFocusOnDelete: c
+    manageFocusOnDelete: s
   } = (0, a.C)();
   return (0, r.jsx)("ul", {
     className: d.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
-      children: (0, r.jsx)(s.Z, f({
+      children: (0, r.jsx)(c.Z, f({
         index: t,
         user: n,
         game: e,
         widgetType: i,
         coverRef: o(e.applicationId),
-        onRemoveGame: c
+        onRemoveGame: s
       }, l))
     }, e.applicationId))
   })
@@ -75,16 +75,16 @@ function g(e) {
 function p(e) {
   var t, n;
   let {
-    user: s,
+    user: c,
     widgetType: d,
     disableInteraction: p,
     games: m
-  } = e, b = (0, i.e7)([l.default], () => l.default.getId() === s.id), {
+  } = e, b = (0, i.e7)([l.default], () => l.default.getId() === c.id), {
     getManageButtonForWidget: h
   } = (0, u.j)(), y = h(d), {
     expanded: v,
     setExpanded: O
-  } = (0, o.g)(), j = v ? m : m.slice(0, 2), x = m.length > 2, _ = (0, r.jsxs)(r.Fragment, {
+  } = (0, o.g)(), j = v ? m : m.slice(0, 2), x = m.length > 2, P = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -96,13 +96,13 @@ function p(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), x && (0, r.jsx)(c.Z, {
+    }), t)), x && (0, r.jsx)(s.Z, {
       expanded: v,
       onClick: () => O(e => !e)
     })]
   });
   return b && !p ? (0, r.jsx)(a.d, {
     emptyListFallbackRef: y,
-    children: _
-  }) : _
+    children: P
+  }) : P
 }

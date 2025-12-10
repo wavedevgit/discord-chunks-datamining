@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -76,10 +76,10 @@ function L(e) {
     newestAnalyticsLocation: H
   } = (0, d.ZP)(), G = (0, C.Dt)({
     channel: t
-  }), W = (0, l.e7)([_.Z], () => _.Z.isInProgress());
+  }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
-  function z() {
-    (0, v.R6)(t, true, "Plus Button")
+  function W() {
+    (0, _.R6)(t, true, "Plus Button")
   }
 
   function q() {
@@ -264,7 +264,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "THREAD",
             label: r,
-            action: z
+            action: W
           }, "THREAD");
         case I.r.SLASH_COMMAND:
           return (0, i.jsx)(s.sNh, {
@@ -299,11 +299,11 @@ function L(e) {
             id: "summarize_thread",
             label: r,
             action: () => y.Z.summarizeThread(t),
-            icon: W ? (0, i.jsx)(s.$jN, {
+            icon: z ? (0, i.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
-            disabled: W,
-            children: W ? null : (0, i.jsxs)(i.Fragment, {
+            disabled: z,
+            children: z ? null : (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),

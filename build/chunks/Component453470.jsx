@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 453470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => _
+  M: () => v
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,20 +21,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function v(e) {
   let {
     channelId: t,
-    warningId: _,
-    senderId: v
+    warningId: v,
+    senderId: _
   } = e, O = (0, b.E4)(), x = r.useCallback(() => {
-    (0, p.T)(t, [_])
-  }, [t, _]), E = e => {
+    (0, p.T)(t, [v])
+  }, [t, v]), E = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: true
-    }, g.ZB.Muted), c.Z.showMuteSuccessToast(v, t), (0, f.qc)({
+    }, g.ZB.Muted), c.Z.showMuteSuccessToast(_, t), (0, f.qc)({
       channelId: t,
-      warningId: _,
-      senderId: v,
+      warningId: v,
+      senderId: _,
       warningType: h.pj.LIKELY_ATO,
       cta: e
     }), x()
@@ -42,16 +42,16 @@ function _(e) {
   return r.useEffect(() => {
     (0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: _,
-      senderId: v,
+      warningId: v,
+      senderId: _,
       warningType: h.pj.LIKELY_ATO
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, _, v]), (0, i.jsx)(m.Q, {
+  }, [t, v, _]), (0, i.jsx)(m.Q, {
     channelId: t,
-    warningId: _,
-    senderId: v,
+    warningId: v,
+    senderId: _,
     warningType: h.pj.LIKELY_ATO,
     header: y.intl.string(y.t.R8UsiI),
     description: y.intl.string(y.t.lI8nQl),
@@ -73,8 +73,8 @@ function _(e) {
               transitionState: r,
               onClose: l,
               channelId: t,
-              warningId: _,
-              senderId: v,
+              warningId: v,
+              senderId: _,
               description: y.intl.string(y.t["/uid3p"]),
               safetyTipRows: O.map((e, t) => (0, i.jsx)(u.q, {
                 listType: "numbered",
@@ -93,8 +93,8 @@ function _(e) {
               learnMore: (0, i.jsx)(a.P3F, {
                 onClick: () => (0, f.qc)({
                   channelId: t,
-                  warningId: _,
-                  senderId: v,
+                  warningId: v,
+                  senderId: _,
                   warningType: h.pj.LIKELY_ATO,
                   cta: f.NM.USER_MODAL_LEARN_MORE
                 }),
@@ -110,8 +110,8 @@ function _(e) {
           }
         }), (0, f.qc)({
           channelId: t,
-          warningId: _,
-          senderId: v,
+          warningId: v,
+          senderId: _,
           warningType: h.pj.LIKELY_ATO,
           cta: f.NM.OPEN_MORE_TIPS
         })

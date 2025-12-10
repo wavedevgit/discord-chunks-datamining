@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -56,7 +56,7 @@ function Z(e) {
     messages: l,
     hasMore: s,
     loading: f,
-    guildFilter: p,
+    guildFilter: h,
     roleFilter: b,
     everyoneFilter: y
   } = (0, a.cj)([v.ZP], () => ({
@@ -68,12 +68,12 @@ function Z(e) {
     everyoneFilter: v.ZP.everyoneFilter
   })), j = (0, m.Us)({
     location: "RecentMentions"
-  }), x = (0, d.Z)(p), C = (0, d.Z)(b), P = (0, d.Z)(y);
+  }), x = (0, d.Z)(h), C = (0, d.Z)(b), P = (0, d.Z)(y);
   i.useEffect(() => {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
-    (null != x && p !== x || null != C && b !== C || null != P && y !== P) && N(n, true)
-  }, [x, p, C, b, P, y, n, true]), (0, u.ZP)(() => {
-    (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
+    (null != x && h !== x || null != C && b !== C || null != P && y !== P) && N(n, true)
+  }, [x, h, C, b, P, y, n, true]), (0, u.ZP)(() => {
+    (null == l ? true : l.some(p.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
   }, []);
@@ -138,7 +138,7 @@ function T(e) {
       children: [(0, r.jsx)(j.Z, {
         className: I.jumpMessageButton,
         onJump: n
-      }), (0, r.jsx)(p.Z, {
+      }), (0, r.jsx)(h.Z, {
         message: t,
         channel: l,
         className: I.message,

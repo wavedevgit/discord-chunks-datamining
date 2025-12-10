@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 199540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk106663 = require("./106663.js");
 
-function p(e) {
+function h(e) {
   let {
     guildId: t,
     animate: n
   } = e, i = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]), l = (0, s.dQu)(s.TVs.modules.guildbar.AVATAR_SIZE);
   return null == i ? (0, r.jsx)("div", {
-    className: o()(h.folderPreviewGuildIcon, h.folderPreviewGuildIconError),
+    className: o()(p.folderPreviewGuildIcon, p.folderPreviewGuildIconError),
     children: (0, r.jsx)(s.Mgn, {
       color: "currentColor"
     })
@@ -31,7 +31,7 @@ function p(e) {
     size: c.Z.Sizes.MINI,
     iconSize: l,
     lossless: true,
-    className: h.folderPreviewGuildIcon,
+    className: p.folderPreviewGuildIcon,
     tabIndex: false
   })
 }
@@ -44,19 +44,19 @@ function g(e) {
   } = e, {
     children: l
   } = t, a = n && i, c = (0, r.jsx)("div", {
-    className: h.folderIconWrapper,
+    className: p.folderIconWrapper,
     children: (0, r.jsx)("div", {
-      className: h.folderIcon,
+      className: p.folderIcon,
       children: (0, r.jsx)(s.ROc, {
         size: "sm",
         color: "currentColor"
       })
     })
   }), u = (0, r.jsx)("div", {
-    className: h.folderPreviewWrapper,
+    className: p.folderPreviewWrapper,
     children: (0, r.jsx)("div", {
-      className: h.folderPreview,
-      children: l.slice(0, 4).map(e => (0, r.jsx)(p, {
+      className: p.folderPreview,
+      children: l.slice(0, 4).map(e => (0, r.jsx)(h, {
         guildId: e.id,
         animate: n
       }, e.id))
@@ -65,8 +65,8 @@ function g(e) {
   return (0, r.jsxs)("div", {
     "aria-hidden": true,
     className: o()({
-      [h.folderDragPreview]: a,
-      [h.folderButtonContent]: !a
+      [p.folderDragPreview]: a,
+      [p.folderButtonContent]: !a
     }),
     children: [!a && c, u]
   })
@@ -80,7 +80,7 @@ function m(e) {
     sorting: a,
     mediaState: c,
     mentionCount: u = 0,
-    isMentionLowImportance: p,
+    isMentionLowImportance: h,
     tooltipName: m,
     folderGroupId: b,
     folderButtonContent: _,
@@ -111,7 +111,7 @@ function m(e) {
     a || P(true), null == v || v(true)
   }, [a, v]), Z = i.useCallback(() => {
     a || P(false), null == v || v(false)
-  }, [a, v]), w = o || null == c ? null : (0, d.Or)(c), T = !o && u > 0 ? (0, d.Ne)(u, p ? s.TVs.colors.BACKGROUND_ACCENT.css : s.TVs.colors.STATUS_DANGER.css) : null;
+  }, [a, v]), w = o || null == c ? null : (0, d.Or)(c), T = !o && u > 0 ? (0, d.Ne)(u, h ? s.TVs.colors.BACKGROUND_ACCENT.css : s.TVs.colors.STATUS_DANGER.css) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -131,7 +131,7 @@ function m(e) {
       }
       return e
     }({
-      className: h.folderButton,
+      className: p.folderButton,
       onClick: y,
       onContextMenu: O,
       onMouseEnter: N,
@@ -161,9 +161,9 @@ function m(e) {
           width: (0, s.OVM)(u)
         },
         children: (0, r.jsx)("div", {
-          className: h.folderButtonInner,
+          className: p.folderButtonInner,
           children: null != _ ? (0, r.jsx)("div", {
-            className: h.folderIconWrapper,
+            className: p.folderIconWrapper,
             children: _
           }) : (0, r.jsx)(g, {
             folderNode: l,

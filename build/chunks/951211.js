@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 951211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f,
@@ -27,8 +27,8 @@ function f(e) {
     newClipsCount: b,
     canPostPolls: C,
     canLaunchActivities: y,
-    appContext: _,
-    canSendScheduledMessages: v,
+    appContext: v,
+    canSendScheduledMessages: _,
     canSummarizeThreads: O,
     showAppLauncher: x
   } = e, E = [];
@@ -40,7 +40,7 @@ function f(e) {
     type: "UPLOAD_TEXT_AS_FILE",
     icon: l.xD0,
     display: p.intl.string(p.t["G9s+EM"])
-  })), f && t && _ !== d.IlC.POPOUT && E.push({
+  })), f && t && v !== d.IlC.POPOUT && E.push({
     type: "CLIPS",
     icon: l.AlX,
     display: p.intl.string(p.t.o034cv),
@@ -99,7 +99,7 @@ function f(e) {
       }),
       activity: e
     }))
-  }), v && E.push({
+  }), _ && E.push({
     type: "SCHEDULED_MESSAGE",
     icon: l.T39,
     display: p.intl.string(p.t["3+ii4F"])

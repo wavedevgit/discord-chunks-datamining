@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 868812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -26,8 +26,8 @@ function f(e) {
   } = (0, o.ZP)(), b = r.useRef(null), {
     isHovered: C,
     setIsHovered: y,
-    onMouseEnter: _,
-    onMouseLeave: v
+    onMouseEnter: v,
+    onMouseLeave: _
   } = (0, c.Z)(200, 300), {
     Component: O,
     play: x,
@@ -36,12 +36,12 @@ function f(e) {
       onMouseLeave: j
     }
   } = (0, l.$)(), S = r.useCallback(e => {
-    "focus" !== e.type && (_(), E())
-  }, [_, E]), P = r.useCallback(() => {
-    null == f && (v(), j())
-  }, [v, j, f]), I = r.useCallback(() => {
-    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), v()) : (null != f ? (x(), _()) : x(), null == m || m(p.D.GIFTING))
-  }, [_, v, g, x, m, f]);
+    "focus" !== e.type && (v(), E())
+  }, [v, E]), P = r.useCallback(() => {
+    null == f && (_(), j())
+  }, [_, j, f]), I = r.useCallback(() => {
+    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), _()) : (null != f ? (x(), v()) : x(), null == m || m(p.D.GIFTING))
+  }, [v, _, g, x, m, f]);
   return (0, i.jsx)(a.y, {
     targetElementRef: b,
     shouldShow: C && (f === p.D.GIFTING || null == f) || f === p.D.GIFTING,
@@ -61,8 +61,8 @@ function f(e) {
         channel: t,
         closePopout: n,
         isHovered: C,
-        onMouseEnter: _,
-        onMouseLeave: v
+        onMouseEnter: v,
+        onMouseLeave: _
       })
     },
     children: () => (0, i.jsx)(d.d, {

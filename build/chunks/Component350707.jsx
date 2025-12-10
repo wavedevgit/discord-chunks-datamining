@@ -1,9 +1,9 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 350707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => E,
   cy: () => O,
-  iu: () => v
+  iu: () => _
 }), require("./388685.js");
 var i, r, l, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,7 +40,7 @@ function y(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var v = ((r = {}).CENTER = "center", r.LEFT = "left", r),
+var _ = ((r = {}).CENTER = "center", r.LEFT = "left", r),
   O = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
 class x extends Chunk473749.PureComponent {
   componentDidMount() {
@@ -162,7 +162,7 @@ class E extends(i = Chunk473749.PureComponent) {
         return r
       }(module, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
       m = "top" === Chunk626135.position || "bottom" === Chunk626135.position ? "center" : "top";
-    return (0, Chunk54381.jsx)(Chunk481060.yRy, _(y({
+    return (0, Chunk54381.jsx)(Chunk481060.yRy, v(y({
       targetElementRef: Chunk600164
     }, Chunk626135), {
       align: Chunk981631,
@@ -195,7 +195,7 @@ class E extends(i = Chunk473749.PureComponent) {
       } = this.props, s = null != o;
       return (0, a.jsx)(p.f6W, {
         theme: i,
-        children: e => (0, a.jsx)(x, _(y({}, this.props), {
+        children: e => (0, a.jsx)(x, v(y({}, this.props), {
           className: c()({
             [b.bottom]: "bottom" === n,
             [b.contentNarrowNoMedia]: !r && !s,
@@ -216,6 +216,6 @@ class E extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-C(E, "TextAlignments", v), C(E, "defaultProps", {
+C(E, "TextAlignments", _), C(E, "defaultProps", {
   textAlign: "left"
 })

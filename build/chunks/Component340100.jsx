@@ -1,4 +1,4 @@
-/** Chunk was on 29419 **/
+/** Chunk was on 43778 **/
 /** chunk id: 340100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -20,7 +20,7 @@ let d = function(e) {
     isInventory: d
   } = e, m = (0, o.qb)(e.quest), {
     percentComplete: f,
-    completedRatioDisplay: p
+    completedRatioDisplay: E
   } = (0, o.I)(l);
   return !d && m.length > 0 ? (0, r.jsx)(u.Z, {
     children: m.at(0)
@@ -35,7 +35,7 @@ let d = function(e) {
         variant: "text-xs/semibold",
         className: c.percentCompleteLabel,
         color: "none",
-        children: p
+        children: E
       }), (0, r.jsx)("div", {
         className: c.percentCompleteLabelOffset,
         style: {

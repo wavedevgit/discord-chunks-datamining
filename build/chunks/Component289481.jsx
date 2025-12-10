@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -57,7 +57,7 @@ let x = Chunk473749.memo(function(e) {
     }
     let {
       opacity: f,
-      size: h
+      size: p
     } = (0, c.q_F)({
       config: {
         clamp: true,
@@ -69,16 +69,16 @@ let x = Chunk473749.memo(function(e) {
       onRest: () => {
         n(t.channelId)
       }
-    }, "animate-always"), p = {
+    }, "animate-always"), h = {
       opacity: f,
-      height: h.to(e => {
+      height: p.to(e => {
         var t, n;
         return d ? (t = a, (n = s) + (t - n) * e) : "auto"
       })
     };
     return (0, r.jsx)(l.animated.div, {
       ref: o,
-      style: p,
+      style: h,
       children: (0, r.jsx)(C, j({}, e))
     })
   }),
@@ -88,7 +88,7 @@ let x = Chunk473749.memo(function(e) {
       onJump: n,
       deleteChannel: l,
       toggle: o
-    } = e, s = (0, a.e7)([p.Z], () => p.Z.getChannel(t.channelId));
+    } = e, s = (0, a.e7)([h.Z], () => h.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
         null == s || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || u.Z.wait(() => {
           (0, d.ack)(t.channelId, {
@@ -104,7 +104,7 @@ let x = Chunk473749.memo(function(e) {
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, h.uL)(y.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, p.uL)(y.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
       className: v.channel,

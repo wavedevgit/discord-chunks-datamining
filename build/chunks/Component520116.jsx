@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 520116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -37,7 +37,7 @@ function E(e) {
     compact: u,
     isGroupStart: d,
     treatSpam: f,
-    gotoChannel: p
+    gotoChannel: h
   } = e, g = (0, a.JA)(null != (t = c.id) ? t : ""), m = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
@@ -69,8 +69,8 @@ function E(e) {
     }, g), l = l = {
       children: [!b && (0, r.jsx)(_.Z, {
         className: j.jumpButton,
-        onJump: e => p(e, c.id)
-      }), (0, r.jsx)(h.Z, {
+        onJump: e => h(e, c.id)
+      }), (0, r.jsx)(p.Z, {
         id: c.id,
         message: c,
         channel: o,
@@ -101,12 +101,12 @@ function S(e) {
     channelRecord: l,
     gotoChannel: a
   } = e, {
-    enabled: h
+    enabled: p
   } = c.Z.useExperiment({
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), _ = p.jU.useSetting(), x = (0, d.P1)(l), C = false, S = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = m.default.getUser(g.default.getId())) ? true : t.hasFlag(O.xW$.SPAMMER)) && n, P = [];
+  }), _ = h.jU.useSetting(), x = (0, d.P1)(l), C = false, S = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = m.default.getUser(g.default.getId())) ? true : t.hasFlag(O.xW$.SPAMMER)) && n, P = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -125,7 +125,7 @@ function S(e) {
         message: n,
         compact: _,
         isGroupStart: i,
-        treatSpam: !I && h && (0, d.DQ)(n) && x,
+        treatSpam: !I && p && (0, d.DQ)(n) && x,
         gotoChannel: a
       }, n.id))
     }), i.messages.length >= y.hC && P.push((0, r.jsx)("div", {

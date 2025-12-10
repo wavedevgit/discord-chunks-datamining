@@ -27,13 +27,13 @@ function E() {
     enabled: b
   } = Chunk937797.EO.useConfig({
     location: Chunk324805.dr.VIDEO_MODAL
-  }), C = (0, Chunk968843.tP)(g), S = null != (0, Chunk115179.LM)(g.config), _ = (0, Chunk969227.D)({
+  }), S = (0, Chunk968843.tP)(g), C = null != (0, Chunk115179.LM)(g.config), _ = (0, Chunk969227.D)({
     quest: g,
     questContent: Chunk49436.jn.QUEST_HOME_DESKTOP,
     sourceQuestContent: O,
     onClick: (0, Chunk115179.Bg)(g.config) || (0, Chunk115179.xN)(g.config) && (null == (e = g.userStatus) ? true : module.claimedAt) != null ? h : true,
     shouldShowShopIfAlreadyClaimed: true
-  }), y = (null == (t = g.userStatus) ? true : exports.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), x = (null == (n = g.userStatus) ? true : require.completedAt) == null && b ? C ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
+  }), y = (null == (t = g.userStatus) ? true : exports.claimedAt) != null ? C ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), x = (null == (n = g.userStatus) ? true : require.completedAt) == null && b ? S ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
   return (0, Chunk54381.jsx)(Chunk28664.u, {
     text: x,
     children: (0, Chunk54381.jsx)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -74,16 +74,16 @@ function O(e) {
     }), (0, i.jsx)(y.jz, {
       children: O
     }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {
-      className: v.buttonContainer,
+      className: _.buttonContainer,
       children: [(0, i.jsx)(b.l, {
         channel: n,
-        text: _.intl.string(_.t["6Qgrev"]),
+        text: v.intl.string(v.t["6Qgrev"]),
         icon: o.ejJ
       }), (0, i.jsx)(a.zxk, {
         icon: o.vdY,
         variant: "secondary",
-        text: _.intl.string(_.t["5Q9+/L"]),
-        "aria-label": _.intl.string(_.t["5Q9+/L"]),
+        text: v.intl.string(v.t["5Q9+/L"]),
+        "aria-label": v.intl.string(v.t["5Q9+/L"]),
         onClick: () => (0, g.B)(n.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]

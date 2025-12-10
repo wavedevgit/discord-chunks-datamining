@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 211640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -24,7 +24,7 @@ function m(e) {
     channel: g
   } = e, b = (0, r.e7)([d.Z], () => null != n && null != m && (0, o.CX)(n, m, [d.Z])), {
     messageReference: C
-  } = t, y = (0, r.e7)([u.Z], () => null != C ? u.Z.getMessage(C.channel_id, C.message_id) : null), _ = (0, r.e7)([c.Z], () => null != y ? c.Z.getChannel(y.channel_id) : null), v = (0, r.e7)([c.Z], () => {
+  } = t, y = (0, r.e7)([u.Z], () => null != C ? u.Z.getMessage(C.channel_id, C.message_id) : null), v = (0, r.e7)([c.Z], () => null != y ? c.Z.getChannel(y.channel_id) : null), _ = (0, r.e7)([c.Z], () => {
     var e, t;
     return null != (t = null == (e = c.Z.getChannel(g.id)) ? true : e.isArchivedThread()) && t
   });
@@ -36,8 +36,8 @@ function m(e) {
     text: O,
     icon: a.XHJ,
     onClick: () => {
-      null != _ && null != y && s.Z.confirmDelete(_, y, false, {
-        isFlagResolved: v,
+      null != v && null != y && s.Z.confirmDelete(v, y, false, {
+        isFlagResolved: _,
         moderatorReportChannelId: g.id
       })
     },

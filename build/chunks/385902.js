@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => y,
@@ -32,13 +32,13 @@ function _(e, t) {
     _ = (0, c.q8)(e, t),
     y = null == u ? true : u.storeRemovalDate,
     O = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
-    v = _ && null != y && !O && d.type === p.A3.POWERUP_ACTIVATED,
+    v = _ && null != y && !O && d.type === h.A3.POWERUP_ACTIVATED,
     j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
       }),
       description: b.intl.formatToPlainString(m.default.UT9pkI, {
-        dateString: (0, h.Z)(y)
+        dateString: (0, p.Z)(y)
       })
     } : null;
   return {
@@ -66,13 +66,13 @@ function y(e, t) {
     {
       onActivate: T
     } = (0, u._C)(e, N),
-    A = !j && x && C && null != S && !w && I.type === p.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    A = !j && x && C && null != S && !w && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
       e.stopPropagation(), T()
     }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
-      let e = (0, h.Z)(P),
+      let e = (0, p.Z)(P),
         t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LD"]) : true;
       return {
         firstHeader: S.title,

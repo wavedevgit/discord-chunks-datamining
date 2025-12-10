@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 390289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -43,8 +43,8 @@ let y = [{
     sends: 10,
     viewTime: 30 * Chunk70956.Z.Millis.MINUTE
   }],
-  _ = 5 * y[y.length - 1].viewTime,
-  v = Chunk70956.Z.Millis.WEEK,
+  v = 5 * y[y.length - 1].viewTime,
+  _ = Chunk70956.Z.Millis.WEEK,
   O = {
     channels: {}
   },
@@ -56,7 +56,7 @@ let y = [{
 function P() {
   if (null == E || !T(E)) returnfalse;
   let e = Z(E);
-  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > _) returnfalse;
+  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > v) returnfalse;
   let t = Date.now();
   module.lastActionTime = exports, module.viewDuration += exports - j, j = exports
 }
@@ -108,7 +108,7 @@ class A extends(i = Chunk442837.ZP.PersistedStore) {
         i = null != (t = null == n ? true : n.joinedAt) ? t : new Date,
         r = Math.min(h.default.age(e.id), Date.now() - i.getTime()),
         l = O.channels[e.id];
-      if (null == l || l.lastActionTime < Date.now() - v) returnfalse;
+      if (null == l || l.lastActionTime < Date.now() - _) returnfalse;
       for (let e of y)
         if (r < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
       returnfalse
@@ -123,7 +123,7 @@ let w = new A(Chunk570140.Z, {
     },
     CONNECTION_OPEN: function() {
       E = Chunk944486.Z.getChannelId(), j = Date.now(), I();
-      let e = Date.now() - v;
+      let e = Date.now() - _;
       Chunk709054.default.forEach(O.channels, (t, n) => {
         let {
           lastActionTime: i

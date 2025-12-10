@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 173951, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -12,8 +12,8 @@ var Chunk436846 = require("./436846.jsx"),
 function o(e) {
   var t, n, {
       user: o,
-      widget: c,
-      guildId: s,
+      widget: s,
+      guildId: c,
       channelId: u,
       disableInteraction: d
     } = e,
@@ -51,18 +51,18 @@ function o(e) {
     return e
   }({
     userId: o.id,
-    widget: c,
+    widget: s,
     disableInteraction: d
   }, f), n = n = {
-    children: c.games.length > 0 ? (0, r.jsx)(a.Z, {
+    children: s.games.length > 0 ? (0, r.jsx)(a.Z, {
       userId: o.id,
-      widgetType: c.type,
-      games: c.games,
-      guildId: s,
+      widgetType: s.type,
+      games: s.games,
+      guildId: c,
       channelId: u,
       disableInteraction: d
     }) : (0, r.jsx)(i.Z, {
-      widget: c
+      widget: s
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

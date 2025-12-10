@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 147522, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,8 +18,8 @@ function d(e, t, n) {
     markChannelRead: i,
     markGuildRead: d,
     deleteChannel: f,
-    toggle: h,
-    getNumUnreadChannels: p
+    toggle: p,
+    getNumUnreadChannels: h
   } = t, g = null;
   return l().flatMap(e, e => {
     let t = e.sortOrder !== g;
@@ -37,10 +37,10 @@ function d(e, t, n) {
       channel: e,
       markChannelRead: i,
       markGuildRead: d,
-      toggle: h,
+      toggle: p,
       deleteChannel: f,
       onJump: n,
-      getNumUnreadChannels: p
+      getNumUnreadChannels: h
     }, e.channelId)), l
   })
 }

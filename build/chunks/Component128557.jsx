@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -96,9 +96,9 @@ function w(e) {
       className: a()(T.checkmark, {
         [T.animate]: d
       })
-    }) : (0, i.jsx)(v.Z, {
+    }) : (0, i.jsx)(_.Z, {
       className: T.arrow,
-      direction: v.Z.Directions.RIGHT
+      direction: _.Z.Directions.RIGHT
     })]
   })
 }
@@ -106,13 +106,13 @@ function w(e) {
 function M(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && j.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && j.default.extractTimestamp(l.id) < Date.now() - P._8R, _ = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
     canInvite: M,
     canManageGuild: R,
     canMessage: L
-  } = (0, f.TE)(t, l), D = (0, s.e7)([_.default], () => {
+  } = (0, f.TE)(t, l), D = (0, s.e7)([v.default], () => {
     var e, t;
-    return (null == (e = _.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = _.default.getCurrentUser()) ? true : t.mobile) === true
+    return (null == (e = v.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = v.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
     guildPopulated: k,
     guildMessaged: U,
@@ -122,7 +122,7 @@ function M(e) {
     handleMessage: B,
     handlePersonalize: H,
     handleDownload: G,
-    handleAddApplication: W
+    handleAddApplication: z
   } = function(e) {
     let t = r.useCallback(() => {
         h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), z = !(D || k || U || V), {
+  }(l), W = !(D || k || U || V), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -233,7 +233,7 @@ function M(e) {
       } : {},
       opacities: i
     }
-  }(z), [Y, X] = r.useState([]), J = Y.length > 0;
+  }(W), [Y, X] = r.useState([]), J = Y.length > 0;
   if (r.useEffect(() => {
       (async () => {
         try {
@@ -246,7 +246,7 @@ function M(e) {
   let Q = [];
   p || (M && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: z ? {
+    style: W ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
@@ -257,7 +257,7 @@ function M(e) {
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: z ? {
+    style: W ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
@@ -268,7 +268,7 @@ function M(e) {
     })
   }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: z ? {
+    style: W ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
@@ -279,7 +279,7 @@ function M(e) {
     })
   }, "message")), (0, E.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: z ? {
+    style: W ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
@@ -290,17 +290,17 @@ function M(e) {
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: z ? {
+    style: W ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.Tg$,
       header: Z.intl.string(Z.t.IhHDEO),
       completed: J,
-      onClick: W
+      onClick: z
     })
   }, "addapp")));
-  let $ = v ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
+  let $ = _ ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
   p && ($ = Z.intl.string(Z.t["gwyU/J"]));
   let ee = "".concat(x.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, i.jsx)(S.ZP, {

@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => w,
@@ -82,12 +82,12 @@ let N = Chunk473749.memo(function(e) {
       R = (0, s.e7)([y.Z], () => y.Z.can(x.Plq.MANAGE_CHANNELS, l));
     t = null != N ? j > N ? E.containerDragAfter : E.containerDragBefore : E.containerDefault;
     let D = i.useCallback(() => {
-        A ? (0, h.mJ)(l.id) : (0, h.c4)(l.id)
+        A ? (0, p.mJ)(l.id) : (0, p.c4)(l.id)
       }, [l.id, A]),
-      L = i.useCallback(e => {
+      M = i.useCallback(e => {
         if ("null" !== l.id) {
           let t = _.Z.getGuild(l.getGuildId());
-          null != t && (0, p.jW)(e, async () => {
+          null != t && (0, h.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
@@ -98,7 +98,7 @@ let N = Chunk473749.memo(function(e) {
           })
         }
       }, [l]),
-      M = i.useCallback(() => {
+      L = i.useCallback(() => {
         let e = l.type === x.d4z.GUILD_CATEGORY ? null : l.type,
           t = l.getGuildId();
         null != t && (0, f.ZDy)(async () => {
@@ -151,7 +151,7 @@ let N = Chunk473749.memo(function(e) {
               [E.muted]: T,
               [E.clickable]: true
             }),
-            onContextMenu: L,
+            onContextMenu: M,
             children: [(0, r.jsxs)(f.P3F, I(S({
               innerRef: F,
               className: E.mainContent,
@@ -182,7 +182,7 @@ let N = Chunk473749.memo(function(e) {
                 text: C.intl.string(C.t["fUYU+j"]),
                 children: (0, r.jsx)(f.P3F, {
                   className: o()(E.addButton, E.forceVisible),
-                  onClick: M,
+                  onClick: L,
                   tabIndex: U,
                   role: "button",
                   "aria-label": C.intl.string(C.t["fUYU+j"]),

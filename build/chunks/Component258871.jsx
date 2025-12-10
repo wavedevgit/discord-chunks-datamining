@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +34,7 @@ function h(e) {
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ let g = [{
       let {
         default: i
       } = await n.e("79764").then(n.bind(n, 533202));
-      return n => (0, r.jsx)(i, p(h({}, n), {
+      return n => (0, r.jsx)(i, h(p({}, n), {
         directoryGuildName: e.name,
         directoryGuildId: e.id,
         directoryChannelId: t.id
@@ -83,7 +83,7 @@ let g = [{
       let {
         default: i
       } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(i, p(h({}, n), {
+      return n => (0, r.jsx)(i, h(p({}, n), {
         guild: e,
         channel: t,
         source: d.t4x.HUB_SIDEBAR

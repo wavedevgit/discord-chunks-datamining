@@ -1,7 +1,7 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 733231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => s,
+  C: () => c,
   d: () => u
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
@@ -9,24 +9,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk231338 = require("./231338.js");
 let o = Chunk473749.createContext(null),
-  c = {
+  s = {
     registerItemRef: () => Chunk231338.dG,
     registerDragHandleRef: () => Chunk231338.dG,
     manageFocusOnReorder: Chunk231338.dG,
     manageFocusOnDelete: Chunk231338.dG
   };
 
-function s() {
+function c() {
   let e = Chunk473749.useContext(o);
-  return null != module ? module : c
+  return null != module ? module : s
 }
 
 function u(e) {
   let {
     children: t,
     emptyListFallbackRef: n
-  } = e, a = i.useRef(new Map), c = i.useRef(new Map), s = i.useRef([]), u = i.useCallback(() => {
-    s.current = Array.from(a.current.keys()).sort((e, t) => {
+  } = e, a = i.useRef(new Map), s = i.useRef(new Map), c = i.useRef([]), u = i.useCallback(() => {
+    c.current = Array.from(a.current.keys()).sort((e, t) => {
       let n = a.current.get(e),
         r = a.current.get(t);
       if (null == n || null == r) return 0;
@@ -34,18 +34,18 @@ function u(e) {
       return (i & Node.DOCUMENT_POSITION_FOLLOWING) != 0 ? false : +((i & Node.DOCUMENT_POSITION_PRECEDING) != 0)
     })
   }, []), d = i.useCallback(e => t => {
-    null != t ? c.current.set(e, t) : c.current.delete(e)
+    null != t ? s.current.set(e, t) : s.current.delete(e)
   }, []), f = i.useCallback(e => t => {
     null != t ? a.current.set(e, t) : a.current.delete(e)
   }, []), g = i.useCallback(e => {
     l.Z.keyboardModeEnabled && requestAnimationFrame(() => {
-      let t = c.current.get(e);
+      let t = s.current.get(e);
       null == t || t.focus()
     })
   }, []), p = i.useCallback(e => {
     if (!l.Z.keyboardModeEnabled) return;
     u();
-    let t = s.current,
+    let t = c.current,
       r = t.indexOf(e);
     if (false === r) return;
     let i = r + 1 < t.length ? r + 1 : r - 1;

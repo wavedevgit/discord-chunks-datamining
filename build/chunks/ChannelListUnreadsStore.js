@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 968847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G,
@@ -35,12 +35,12 @@ let C = {
   I = {};
 
 function P(e) {
-  let t = p.Z.getChannel(e);
-  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? h.Z.isMuted(t.id) : _.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
+  let t = h.Z.getChannel(e);
+  return !(null == t || null == t.getGuildId() || t.isGuildVocal()) && !(t.isThread() ? p.Z.isMuted(t.id) : _.ZP.isChannelMuted(t.getGuildId(), t.id)) && (0, u.d)(t)
 }
 
 function N(e) {
-  let t = p.Z.getChannel(e);
+  let t = h.Z.getChannel(e);
   if (null == t) returnfalse;
   let n = t.getGuildId();
   if (null == n) returnfalse;
@@ -65,13 +65,13 @@ function w(e) {
     u = null,
     d = true,
     f = true,
-    h = false,
-    p = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
-    g = null != (n = null == p ? true : p.getShownChannelIds()) ? n : [],
+    p = false,
+    h = i.getCategoryFromSection(i.voiceChannelsSectionNumber),
+    g = null != (n = null == h ? true : h.getShownChannelIds()) ? n : [],
     [b, _, y] = i.getSlicedChannels(l);
   for (let e = 0; e < _.length; e++) {
     let t = _[e];
-    if ((P(t.id) || a().some(t.threadIds, P)) && (f = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (h = true), !f && !d && h) break
+    if ((P(t.id) || a().some(t.threadIds, P)) && (f = false), (N(t.id) || a().some(t.threadIds, N)) && (d = false), g.includes(t.id) && (p = true), !f && !d && p) break
   }
   let O = 0,
     j = false,
@@ -90,12 +90,12 @@ function w(e) {
     }
   let w = null,
     T = null,
-    A = null != (r = null == p ? true : p.getChannelRecords()) ? r : [];
+    A = null != (r = null == h ? true : h.getChannelRecords()) ? r : [];
   d && x > 0 ? w = {
     mode: "mentions",
     mentionCount: x,
     targetChannelId: c
-  } : !h && a().some(A, Z) ? w = {
+  } : !p && a().some(A, Z) ? w = {
     mode: "voice-channels",
     mentionCount: 0,
     targetChannelId: null
@@ -131,7 +131,7 @@ function A(e) {
 function R(e) {
   let {
     id: t
-  } = e, n = p.Z.getChannel(t);
+  } = e, n = h.Z.getChannel(t);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(n.guild_id);
   return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && T(n.guild_id)
@@ -140,22 +140,22 @@ function R(e) {
 function D(e) {
   let {
     channel: t
-  } = e, n = p.Z.getChannel(t.id);
+  } = e, n = h.Z.getChannel(t.id);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(t.guild_id);
   return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && T(n.guild_id)
 }
 
-function L(e) {
+function M(e) {
   let {
     channelId: t
-  } = e, n = p.Z.getChannel(t);
+  } = e, n = h.Z.getChannel(t);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(n.guild_id);
   return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && b.Z.getGuildId() === n.guild_id && T(n.guild_id)
 }
 
-function M(e) {
+function L(e) {
   let {
     guildId: t
   } = e;
@@ -192,24 +192,24 @@ let G = new k(Chunk570140.Z, {
       let {
         channelId: n
       } = e;
-      return null == (t = p.Z.getChannel(n)) ? true : t.guild_id
+      return null == (t = h.Z.getChannel(n)) ? true : t.guild_id
     }).filter(O.lm).uniq().forEach(e => {
       let t = g.Z.getGuild(e);
       null != t && t.features.has(j.GuildFeatures.COMMUNITY) && T(e) && (n = true)
     }), n
   },
-  CHANNEL_ACK: L,
+  CHANNEL_ACK: M,
   CHANNEL_DELETE: D,
-  CHANNEL_LOCAL_ACK: L,
-  MESSAGE_ACK: L,
-  MESSAGE_CREATE: L,
-  MESSAGE_DELETE_BULK: L,
-  MESSAGE_DELETE: L,
+  CHANNEL_LOCAL_ACK: M,
+  MESSAGE_ACK: M,
+  MESSAGE_CREATE: M,
+  MESSAGE_DELETE_BULK: M,
+  MESSAGE_DELETE: M,
   PASSIVE_UPDATE_V2: function(e) {
     let t = g.Z.getGuild(e.guildId);
     return !!(e.channels.length > 0 && null != t && t.features.has(j.GuildFeatures.COMMUNITY)) && T(e.guildId)
   },
-  RESORT_THREADS: L,
+  RESORT_THREADS: M,
   THREAD_CREATE: D,
   THREAD_DELETE: D,
   THREAD_LIST_SYNC: A,
@@ -227,14 +227,14 @@ let G = new k(Chunk570140.Z, {
     let r = S[n];
     return null != r && "voice-channels" === r.bottomBar.mode && T(n)
   },
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE: M,
-  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: M,
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE: L,
+  USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: L,
   USER_GUILD_SETTINGS_FULL_UPDATE: function(e) {
     let {
       userGuildSettings: t
     } = e;
     for (let e of t) null != e.guild_id && T(e.guild_id)
   },
-  USER_GUILD_SETTINGS_GUILD_UPDATE: M,
-  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: M
+  USER_GUILD_SETTINGS_GUILD_UPDATE: L,
+  USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: L
 })

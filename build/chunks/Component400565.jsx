@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 400565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => f
@@ -31,7 +31,7 @@ let d = e => {
     var t, n;
     let {
       item: i
-    } = e, f = null, h = false, p = (0, l.e7)([s.Z], () => s.Z.getGuild(i.guild_id));
+    } = e, f = null, p = false, h = (0, l.e7)([s.Z], () => s.Z.getGuild(i.guild_id));
     if (null != i.icon_name) f = (0, r.jsx)("img", {
       alt: "",
       src: c.VH[(0, c.RB)(i.icon_name)]
@@ -43,9 +43,9 @@ let d = e => {
         alt: n,
         className: u.image,
         src: e.getAvatarURL(true, 40)
-      }), h = true
+      }), p = true
     } else f = null != i.icon_url ? (0, r.jsx)("img", {
-      alt: null != (n = null == p ? true : p.name) ? n : "",
+      alt: null != (n = null == h ? true : h.name) ? n : "",
       className: u.image,
       src: i.icon_url
     }) : (0, r.jsx)("img", {
@@ -64,7 +64,7 @@ let d = e => {
         className: u.mask,
         children: (0, r.jsx)("div", {
           className: u.imageContainer,
-          style: h ? true : {
+          style: p ? true : {
             backgroundColor: (0, c.Vu)(i)
           },
           children: f

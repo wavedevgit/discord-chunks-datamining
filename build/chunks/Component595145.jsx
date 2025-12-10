@@ -98,7 +98,10 @@ function ea(e) {
   } = (0, r.cj)([A.Z], () => ({
     defaultWishlistId: A.Z.getFirstWishlistId(ea.id)
   }));
-  (0, b.kZ)(eE, ea.id);
+  (0, b.kZ)({
+    wishlistId: eE,
+    userId: ea.id
+  });
   let eC = (0, S.$m)(),
     eS = (0, s.q_F)({
       opacity: +(null != eC.interactionType),

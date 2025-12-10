@@ -1,12 +1,12 @@
-/** Chunk was on 76334 **/
-/** chunk id: 170731, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 12693 **/
+/** chunk id: 170731, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => D
+  Z: () => W
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk454399 = require("./454399.jsx"),
   Chunk28664 = require("./28664.jsx"),
@@ -14,9 +14,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk216541 = require("./216541.jsx"),
-  Chunk164670 = require("./164670.js"),
-  Chunk765907 = require("./765907.js"),
-  Chunk81939 = require("./81939.js"),
   Chunk687158 = require("./687158.js"),
   Chunk576635 = require("./576635.js"),
   Chunk213053 = require("./213053.js"),
@@ -27,6 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk688192 = require("./688192.jsx"),
   Chunk372263 = require("./372263.jsx"),
   Chunk602733 = require("./602733.js"),
+  Chunk176879 = require("./176879.js"),
   Chunk541699 = require("./541699.js"),
   Chunk321947 = require("./321947.js"),
   Chunk689201 = require("./689201.js"),
@@ -37,50 +35,50 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk694781 = require("./694781.js");
-let Z = {
+let R = {
   FULL_WISHLIST: {
     title: Chunk388032.intl.string(Chunk388032.t["7lZ31J"]),
-    getSubtitle: e => E.intl.formatToPlainString(E.t.BjEX38, {
-      username: e
+    getSubtitle: i => P.intl.formatToPlainString(P.t.BjEX38, {
+      username: i
     }),
     showIcons: false
   },
   MIXED: {
     title: Chunk388032.intl.string(Chunk388032.t.SK5rmi),
-    getSubtitle: e => E.intl.formatToPlainString(E.t.dIDKgi, {
-      username: e
+    getSubtitle: i => P.intl.formatToPlainString(P.t.dIDKgi, {
+      username: i
     }),
     showIcons: true
   },
   SHOP_ONLY: {
     title: Chunk388032.intl.string(Chunk388032.t.SK5rmi),
-    getSubtitle: e => E.intl.formatToPlainString(E.t.wyMp1j, {
-      username: e
+    getSubtitle: i => P.intl.formatToPlainString(P.t.wyMp1j, {
+      username: i
     }),
     showIcons: false
   },
   SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY: {
     title: Chunk388032.intl.string(Chunk388032.t.BCi1gT),
-    getSubtitle: e => E.intl.formatToPlainString(E.t.BjEX38, {
-      username: e
+    getSubtitle: i => P.intl.formatToPlainString(P.t.BjEX38, {
+      username: i
     }),
     showIcons: false
   }
 };
 
-function A(e) {
+function M(i) {
   let {
-    title: i,
+    title: e,
     subtitle: t,
-    themeClass: r
-  } = e;
+    themeClass: s
+  } = i;
   return (0, n.jsx)("div", {
-    className: a()(R.wishlistBannerHeader, r),
+    className: l()(E.wishlistBannerHeader, s),
     children: (0, n.jsxs)("div", {
-      className: R.wishlistBannerTitleContainer,
+      className: E.wishlistBannerTitleContainer,
       children: [(0, n.jsx)(d.Heading, {
         variant: "heading-lg/bold",
-        children: i
+        children: e
       }), (0, n.jsx)(d.Text, {
         variant: "text-sm/medium",
         children: t
@@ -89,7 +87,7 @@ function A(e) {
   })
 }
 
-function H() {
+function A() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.nn4, {
       children: Chunk388032.intl.string(Chunk388032.t.pfChQr)
@@ -97,237 +95,223 @@ function H() {
       className: Chunk694781.wishlistBannerGrid,
       children: Array.from({
         length: Chunk602733.zL
-      }, (e, i) => (0, n.jsx)(C.Z, {
-        cardSize: x.U.SMALL
-      }, "placeholder-".concat(i)))
+      }, (i, e) => (0, n.jsx)(S.Z, {
+        cardSize: w.U.SMALL
+      }, "placeholder-".concat(e)))
     })]
   })
 }
 
-function W(e) {
+function H(i) {
   let {
-    lastItem: i,
+    lastItem: e,
     remainingCount: t,
-    giftRecipient: r,
-    onOpenWishlist: l
-  } = e;
-  return null == i ? null : (0, n.jsx)("li", {
-    className: R.wishlistBannerListItem,
-    children: (0, n.jsx)(S.BO, {
-      item: i.item,
+    giftRecipient: s,
+    onOpenWishlist: r
+  } = i;
+  return null == e ? null : (0, n.jsx)("li", {
+    className: E.wishlistBannerListItem,
+    children: (0, n.jsx)(_.BO, {
+      item: e.item,
       remainingCount: t,
-      onClick: l,
-      cardSize: x.U.SMALL,
-      renderItemPreview: e => {
-        if ((0, O.Q)(i.item)) {
-          if (null != i.item.bundleItems && i.item.bundleItems.length > 0) {
+      onClick: r,
+      cardSize: w.U.SMALL,
+      renderItemPreview: i => {
+        if ((0, O.Q)(e.item)) {
+          if (null != e.item.bundleItems && e.item.bundleItems.length > 0) {
             let t = {
-              items: i.item.bundleItems
+              items: e.item.bundleItems
             };
             return (0, n.jsx)("div", {
-              className: R.bundlePreviewBanner,
-              children: (0, n.jsx)(_.d, {
+              className: E.bundlePreviewBanner,
+              children: (0, n.jsx)(h.d, {
                 product: t,
                 isPurchased: false,
-                isHighlighted: e,
-                user: r
+                isHighlighted: i,
+                user: s
               })
             })
           }
-          return (0, n.jsx)(v.Z, {
-            item: i.item,
-            profileOwner: r,
-            isHighlighted: e,
-            cardSize: x.U.SMALL
+          return (0, n.jsx)(j.Z, {
+            item: e.item,
+            profileOwner: s,
+            isHighlighted: i,
+            cardSize: w.U.SMALL
           })
         }
         return null
       }
     })
-  }, "overflow-".concat(i.item.skuId))
+  }, "overflow-".concat(e.item.skuId))
 }
 
-function G(e) {
+function G(i) {
   let {
-    items: i,
+    items: e,
     hasOverflow: t,
-    overflowItem: r,
-    overflowCount: l,
-    showIcons: a,
-    giftRecipient: s,
+    overflowItem: s,
+    overflowCount: r,
+    showIcons: l,
+    giftRecipient: a,
     defaultWishlistId: d,
     onOpenWishlist: u,
     onWishlistItemClick: m,
-    tooltipConfigs: _,
-    analyticsLocations: h
-  } = e;
+    tooltipConfigs: h,
+    analyticsLocations: g
+  } = i;
   return (0, n.jsxs)("ul", {
-    className: R.wishlistBannerGrid,
-    children: [i.map((e, i) => {
+    className: E.wishlistBannerGrid,
+    children: [e.map((i, e) => {
       let {
         item: t,
-        source: r
-      } = e;
+        source: s
+      } = i;
       return (0, n.jsx)("li", {
-        className: R.wishlistBannerListItem,
-        children: ((e, i) => {
-          var t, r;
+        className: E.wishlistBannerListItem,
+        children: ((i, e) => {
+          var t, s;
           let {
-            item: l,
+            item: r,
             source: u
-          } = e, p = _[i], f = (0, n.jsx)(j.Z, {
-            item: l,
-            profileOwner: s,
+          } = i, p = h[e], f = (0, n.jsx)(x.Z, {
+            item: r,
+            profileOwner: a,
             wishlistId: d,
             isOwner: false,
-            cardSize: x.U.SMALL,
+            cardSize: w.U.SMALL,
             showOverlayButton: false,
             giftingOrigin: y.Wt.DM_CHANNEL_WISHLIST,
             source: u,
-            showIcons: a,
+            showIcons: l,
             onWishlistItemClick: m,
-            analyticsLocations: h
+            analyticsLocations: g
           });
           return p.shouldShow ? null != p.title && null == p.body && null == p.renderIcon ? (0, n.jsx)(c.u, {
             text: p.title,
             position: "top",
             asContainer: true,
-            delay: L.rq,
+            delay: C.rq,
             children: f
           }) : (0, n.jsx)(o.i, {
             title: p.title,
-            body: null != (r = p.body) ? r : "",
-            asset: null == (t = p.renderIcon) ? true : t.call(p, l),
-            assetSize: L.EU,
+            body: null != (s = p.body) ? s : "",
+            asset: null == (t = p.renderIcon) ? true : t.call(p, r),
+            assetSize: C.EU,
             position: "top",
             asContainer: true,
-            delay: L.rq,
+            delay: C.rq,
             children: f
           }) : f
         })({
           item: t,
-          source: r
-        }, i)
+          source: s
+        }, e)
       }, t.skuId)
-    }), t && (0, n.jsx)(W, {
-      lastItem: r,
-      remainingCount: l,
-      giftRecipient: s,
+    }), t && (0, n.jsx)(H, {
+      lastItem: s,
+      remainingCount: r,
+      giftRecipient: a,
       onOpenWishlist: u
     })]
   })
 }
-let D = function(e) {
+let W = function(i) {
   let {
-    giftRecipient: i,
+    giftRecipient: e,
     onWishlistItemClick: t
-  } = e, {
-    analyticsLocations: l
-  } = (0, m.ZP)(u.Z.WISHLIST_BANNER), o = (0, g.ZP)(null == i ? true : i.id), {
-    defaultWishlistId: c,
-    wishlist: _,
-    popularCollectiblesProducts: S,
-    isFetchingWishlist: v,
-    isValidatingPopularProducts: j,
-    isFetchingPopularProducts: x,
-    wishlistError: C
-  } = (0, L.ZL)(i), {
-    wishlistItems: O
-  } = (0, f.Z)({
-    guildId: (0, h.ac)(),
-    numWishlistItems: L.zL
-  }), {
-    isDisplayProfileSocialLayerStorefrontEligible: y
-  } = (0, p.Z)({
-    displayProfile: o,
+  } = i, {
+    analyticsLocations: r
+  } = (0, m.ZP)(u.Z.WISHLIST_BANNER), o = (0, g.ZP)(null == e ? true : e.id), {
+    displayItems: c,
+    hasMoreItems: h,
+    totalWishlistItemCount: _,
+    wishlistItemCountToBeDisplayed: j,
+    fetchState: x,
+    defaultWishlistId: w
+  } = (0, L.ZP)({
+    user: e,
+    numItems: C.zL,
     location: "Wishlist Banner"
-  }), E = r.useMemo(() => {
-    var e;
-    return (null != (e = null == _ ? true : _.items) ? e : []).filter(e => true !== e.isOwned && (0, B.F)(e)).length > 0 || y ? O : []
-  }, [null == _ ? true : _.items, y, O]), {
-    displayItems: W,
-    hasMoreItems: D,
-    totalWishlistItemCount: z,
-    wishlistItemCountToBeDisplayed: F
-  } = (0, L.UD)({
-    wishlist: _,
-    popularCollectiblesProducts: S,
-    popularSocialLayerStorefrontItems: E,
-    wishlistError: C
-  }), U = T.ZP.getName(i), {
-    theme: Y,
-    primaryColor: X,
-    secondaryColor: K
-  } = (0, I.Z)({
-    user: i,
+  }), S = s.useMemo(() => "loading" === x.status, [x.status]), O = T.ZP.getName(e), {
+    theme: y,
+    primaryColor: P,
+    secondaryColor: H
+  } = (0, p.Z)({
+    user: e,
     displayProfile: o
   }), {
-    profileThemeStyle: q,
-    profileThemeClassName: Q
-  } = (0, w.Z)({
-    theme: Y,
+    profileThemeStyle: W,
+    profileThemeClassName: Z
+  } = (0, f.Z)({
+    theme: y,
     themeType: null,
-    primaryColor: X,
-    secondaryColor: K
-  }), J = r.useCallback(() => {
-    (0, b.openUserProfileModal)({
-      userId: i.id,
-      section: M.oh.WISHLIST
+    primaryColor: P,
+    secondaryColor: H
+  }), z = s.useCallback(() => {
+    (0, I.openUserProfileModal)({
+      userId: e.id,
+      section: k.oh.WISHLIST
     })
-  }, [i.id]), V = Z[r.useMemo(() => F >= L.zL ? "FULL_WISHLIST" : F > 0 ? "MIXED" : E.length > 0 && y ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [F, E.length, y])], $ = null == o ? true : o.getBannerURL({
+  }, [e.id]), F = R[s.useMemo(() => j >= C.zL ? "FULL_WISHLIST" : j > 0 ? "MIXED" : c.length > 0 && c.every(i => {
+    let {
+      item: e,
+      source: t
+    } = i;
+    return t === C.lr.POPULAR && (0, b.F)(e)
+  }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [j, c])], D = null == o ? true : o.getBannerURL({
     canAnimate: false,
     size: 713
-  }), ee = v || j || x, ei = r.useMemo(() => D ? W.slice(0, L.zL - 1) : W, [W, D]), et = (0, k.g)(ei, i), en = D ? W[L.zL - 1] : null, er = z - L.zL + 1, [el, ea] = r.useState(false), es = r.useCallback(e => {
-    if (e && !ee && W.length > 0) {
-      let e = W.map(e => {
+  }), U = s.useMemo(() => h ? c.slice(0, C.zL - 1) : c, [c, h]), Y = (0, B.g)(U, e), X = h ? c[C.zL - 1] : null, K = _ - C.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
+    if (i && !S && c.length > 0) {
+      let i = c.map(i => {
         let {
-          item: i
-        } = e;
-        return i.skuId
+          item: e
+        } = i;
+        return e.skuId
       });
-      N.default.track(P.rMx.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED, {
-        gift_recipient_id: i.id,
-        sku_ids: e,
-        location_stack: l,
-        product_lines: Array.from(new Set(W.map(e => {
+      N.default.track(v.rMx.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED, {
+        gift_recipient_id: e.id,
+        sku_ids: i,
+        location_stack: r,
+        product_lines: Array.from(new Set(c.map(i => {
           let {
-            item: i
-          } = e;
-          return i.skuProductLine
+            item: e
+          } = i;
+          return e.skuProductLine
         })))
-      }), ea(true)
+      }), Q(true)
     }
-  }, [ee, W, i.id, l]), eo = (0, s.O)(es, true, !ee && !el);
-  return null != C ? null : (0, n.jsxs)("div", {
-    ref: eo,
-    className: a()(R.wishlistBanner, Q),
-    style: q,
-    children: [null != $ && (0, n.jsx)("div", {
-      className: R.backgroundImage,
+  }, [S, c, e.id, r]), V = (0, a.O)(J, true, !S && !q);
+  return "error" === x.status ? null : (0, n.jsxs)("div", {
+    ref: V,
+    className: l()(E.wishlistBanner, Z),
+    style: W,
+    children: [null != D && (0, n.jsx)("div", {
+      className: E.backgroundImage,
       style: {
-        backgroundImage: "url(".concat($, ")")
+        backgroundImage: "url(".concat(D, ")")
       }
     }), (0, n.jsx)(d.f6W, {
       disableAdaptiveTheme: true,
-      children: e => (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(A, {
-          title: V.title,
-          subtitle: V.getSubtitle(U),
-          themeClass: e
+      children: i => (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(M, {
+          title: F.title,
+          subtitle: F.getSubtitle(O),
+          themeClass: i
         }), (0, n.jsx)("div", {
-          className: e,
-          children: ee || 0 === W.length ? (0, n.jsx)(H, {}) : (0, n.jsx)(G, {
-            items: ei,
-            hasOverflow: D,
-            overflowItem: en,
-            overflowCount: er,
-            showIcons: V.showIcons,
-            giftRecipient: i,
-            defaultWishlistId: c,
-            onOpenWishlist: J,
+          className: i,
+          children: S || 0 === c.length ? (0, n.jsx)(A, {}) : (0, n.jsx)(G, {
+            items: U,
+            hasOverflow: h,
+            overflowItem: X,
+            overflowCount: K,
+            showIcons: F.showIcons,
+            giftRecipient: e,
+            defaultWishlistId: w,
+            onOpenWishlist: z,
             onWishlistItemClick: t,
-            tooltipConfigs: et,
-            analyticsLocations: l
+            tooltipConfigs: Y,
+            analyticsLocations: r
           })
         })]
       })

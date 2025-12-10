@@ -1,7 +1,7 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => M
+  Z: () => L
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -83,7 +83,7 @@ function D(e) {
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
 }
-class L extends(r = Chunk473749.PureComponent) {
+class M extends(r = Chunk473749.PureComponent) {
   componentWillEnter(e) {
     let {
       controller: t
@@ -161,7 +161,7 @@ class L extends(r = Chunk473749.PureComponent) {
       isCurrentUserInThisDMCall: u,
       unread: d,
       treeItemProps: f,
-      statusIndicatorsEnabled: h
+      statusIndicatorsEnabled: p
     } = this.props, {
       hovered: g,
       animating: m
@@ -255,20 +255,20 @@ class L extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-w(L, "defaultProps", {
+w(M, "defaultProps", {
   badge: 0,
   audio: false,
   video: false,
   isCurrentUserInThisDMCall: false
 });
-let M = Chunk473749.forwardRef(function(e, t) {
+let L = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, h.ZP)(e.channel),
+    r = (0, p.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => d.Z.getMode(n), [n]),
     f = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    p = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+    h = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
     y = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
     v = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
     {
@@ -279,9 +279,9 @@ let M = Chunk473749.forwardRef(function(e, t) {
     C = o === n,
     E = false,
     S = false;
-  (C || x && p) && (E = u === P.WtW.VOICE, S = u === P.WtW.VIDEO);
+  (C || x && h) && (E = u === P.WtW.VOICE, S = u === P.WtW.VIDEO);
   let I = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(L, A(T({}, e), {
+  return (0, i.jsx)(M, A(T({}, e), {
     ref: t,
     channelName: r,
     unread: v > 0,

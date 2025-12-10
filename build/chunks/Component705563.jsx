@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -26,13 +26,13 @@ function y(e) {
     channelId: t,
     showProfile: n = false,
     showTrailingDivider: y = false
-  } = e, _ = p.default.cast(t), {
-    joinRequest: v,
+  } = e, v = p.default.cast(t), {
+    joinRequest: _,
     isModmin: O,
     guildId: x,
     maxMembers: E
   } = (0, r.cj)([h.Z, u.Z, d.Z], () => {
-    let e = h.Z.getRequest(_),
+    let e = h.Z.getRequest(v),
       t = u.Z.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
@@ -44,8 +44,8 @@ function y(e) {
     approveRequest: P,
     rejectRequest: I,
     submitting: Z
-  } = (0, m.s)(null == v ? true : v.guildId, null == v ? true : v.userId, null == v ? true : v.joinRequestId);
-  return null != v && v.applicationStatus === f.wB.SUBMITTED && O ? (0, i.jsxs)("div", {
+  } = (0, m.s)(null == _ ? true : _.guildId, null == _ ? true : _.userId, null == _ ? true : _.joinRequestId);
+  return null != _ && _.applicationStatus === f.wB.SUBMITTED && O ? (0, i.jsxs)("div", {
     className: C.buttons,
     children: [(0, i.jsx)(l.u, {
       text: b.intl.string(b.t.cdPGbE),
@@ -63,12 +63,12 @@ function y(e) {
       size: "sm",
       text: b.intl.string(b.t.hDtbsz),
       onClick: I,
-      disabled: Z || v.applicationStatus !== f.wB.SUBMITTED
+      disabled: Z || _.applicationStatus !== f.wB.SUBMITTED
     }), n && (0, i.jsx)(a.Button, {
       onClick: () => {
         (0, s.openUserProfileModal)({
-          userId: v.userId,
-          guildId: v.guildId
+          userId: _.userId,
+          guildId: _.guildId
         })
       },
       variant: "secondary",

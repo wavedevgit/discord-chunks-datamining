@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => F,
@@ -144,7 +144,7 @@ function D(e) {
           prefix: null, level: 1
         }
     }
-  }(t.type, o), _ = (0, i.jsxs)(i.Fragment, {
+  }(t.type, o), v = (0, i.jsxs)(i.Fragment, {
     children: [null != C ? (0, i.jsxs)(u.nn4, {
       children: [C, ":"]
     }) : null, " ", n]
@@ -158,7 +158,7 @@ function D(e) {
         handleContextMenu: d
       });
     case A.d4z.GROUP_DM:
-      if (t.isManaged()) return _;
+      if (t.isManaged()) return v;
       return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(u.nn4, {
           children: M.intl.string(M.t["e5y+gm"])
@@ -176,14 +176,14 @@ function D(e) {
           level: y,
           onContextMenu: d,
           onClick: c,
-          children: _
+          children: v
         })]
       }) : (0, i.jsxs)(r.Fragment, {
         children: [V(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
-          children: _
+          children: v
         }), null != g ? g() : null]
       });
     case A.d4z.GUILD_VOICE:
@@ -192,7 +192,7 @@ function D(e) {
           level: y,
           onContextMenu: d,
           onClick: c,
-          children: _
+          children: v
         })]
       });
     case A.d4z.GUILD_STAGE_VOICE:
@@ -201,7 +201,7 @@ function D(e) {
           level: y,
           onContextMenu: d,
           onClick: c,
-          children: _
+          children: v
         })]
       });
     case A.d4z.ANNOUNCEMENT_THREAD:
@@ -216,7 +216,7 @@ function D(e) {
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, h.F6)(l, x.default, v.Z)
+            children: (0, h.F6)(l, x.default, _.Z)
           }), (0, i.jsx)(T.Z.Caret, {})]
         })
       }
@@ -231,7 +231,7 @@ function D(e) {
             [R.forumPostTitle]: E,
             [R.forumPostSidebarTitle]: s && E
           }),
-          children: _
+          children: v
         })]
       });
     case A.d4z.GUILD_DIRECTORY:
@@ -261,7 +261,7 @@ let k = e => {
     channel: a
   } = e, s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), c = (0, o.e7)([x.default], () => x.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
   return (r.useEffect(() => {
-    (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, _.Z)(c.id, c.getAvatarURL(true, 80), {
+    (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, v.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
       withMutualGuilds: true,
       withMutualFriendsCount: true

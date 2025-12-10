@@ -36,12 +36,12 @@ function h(e) {
     d.kx(t.channelId, t.guildId)
   };
 
-  function x() {
+  function j() {
     (0, s.Zy)(), null == f || f()
   }
   return (0, r.jsxs)(a.v2r, {
     navId: "guild-entry-context",
-    onClose: x,
+    onClose: j,
     "aria-label": p.intl.string(p.t.HpQykc),
     onSelect: h,
     children: [(0, r.jsxs)(a.kSQ, {
@@ -85,7 +85,7 @@ function h(e) {
                 Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
               }), i))
             }
-          }), x()
+          }), j()
         }
       }) : null, _ ? (0, r.jsx)(a.sNh, {
         id: "remove-from-hub",
@@ -98,14 +98,14 @@ function h(e) {
             }),
             confirmText: p.intl.string(p.t.N86XcP),
             onConfirm: O
-          }), x()
+          }), j()
         },
         color: "danger"
       }) : null, m ? null : (0, r.jsx)(a.sNh, {
         id: "report-server-listing",
         label: p.intl.string(p.t.Aen9eh),
         action: function() {
-          null != t && ((0, c.sq)(t), x())
+          null != t && ((0, c.sq)(t), j())
         },
         icon: a.U65,
         color: "danger"

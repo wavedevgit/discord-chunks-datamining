@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 168611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -15,11 +15,11 @@ function f(e) {
   return new Date(e * c.Z.Millis.SECOND).getTime()
 }
 
-function h() {
+function p() {
   u.clear()
 }
 
-function p(e) {
+function h(e) {
   u.delete(e.guild.id)
 }
 class g extends(r = Chunk442837.ZP.Store) {
@@ -40,10 +40,10 @@ class g extends(r = Chunk442837.ZP.Store) {
   writable: true
 }) : g[i] = "VoiceChannelStartTimeStore";
 let m = new g(Chunk570140.Z, {
-  GUILD_CREATE: p,
-  GUILD_DELETE: p,
-  CONNECTION_RESUMED: h,
-  CONNECTION_OPEN: h,
+  GUILD_CREATE: h,
+  GUILD_DELETE: h,
+  CONNECTION_RESUMED: p,
+  CONNECTION_OPEN: p,
   VOICE_CHANNEL_START_TIME_UPDATE: function(e) {
     let {
       guildId: t,

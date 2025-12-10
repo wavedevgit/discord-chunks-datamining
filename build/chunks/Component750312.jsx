@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -27,23 +27,23 @@ function O(e) {
     widget: n,
     additionalManageWidgetMenuItems: l,
     children: o
-  } = e, c = i.useRef(null), u = i.useRef(null), {
+  } = e, s = i.useRef(null), u = i.useRef(null), {
     registerManageWidgetButtonRef: d,
     manageFocusOnReorder: g
   } = (0, h.j)();
   i.useLayoutEffect(() => {
     let e = d(n.type);
-    return e(c.current), () => e(null)
+    return e(s.current), () => e(null)
   }, [d, n.type]);
   let b = i.useMemo(() => {
       var e;
-      return null != (e = n.id) ? e : (0, s.hQ)()
+      return null != (e = n.id) ? e : (0, c.hQ)()
     }, [n.id]),
     {
       isDragging: O,
       dragSourcePosition: j
     } = (0, p.Y9)({
-      dragRef: c,
+      dragRef: s,
       dropRef: u,
       index: t,
       listType: "WIDGETS",
@@ -56,20 +56,20 @@ function O(e) {
       onEnd: () => g(n.type)
     }),
     x = null != j,
-    _ = x && t < j,
-    P = x && t > j;
+    P = x && t < j,
+    _ = x && t > j;
   return (0, r.jsxs)("div", {
     ref: u,
     className: a()(v.dragAndDropTarget, {
-      [v.dropIndicatorBefore]: _,
-      [v.dropIndicatorAfter]: P,
+      [v.dropIndicatorBefore]: P,
+      [v.dropIndicatorAfter]: _,
       [v.isDragging]: O
     }),
     "aria-label": y.intl.formatToPlainString(y.t.YLczh4, {
       positionNumber: t + 1
     }),
     children: [(0, r.jsx)(m.Z, {
-      buttonRef: c,
+      buttonRef: s,
       widget: n,
       className: v.dragHandleButton,
       additionalMenuItems: l
@@ -90,8 +90,8 @@ function j(e) {
     headerSubtitle: y,
     headerActionButtons: j,
     headerClassName: x,
-    additionalManageWidgetMenuItems: _
-  } = e, P = (0, s.Dt)(), I = (0, c.e7)([u.default], () => u.default.getId() === t), {
+    additionalManageWidgetMenuItems: P
+  } = e, _ = (0, c.Dt)(), I = (0, s.e7)([u.default], () => u.default.getId() === t), {
     trackUserProfileAction: w
   } = (0, d.KZ)(), S = (0, g.Z)({
     widget: n,
@@ -100,7 +100,7 @@ function j(e) {
     className: a()(v.container, f),
     children: [(0, r.jsx)(b.Z, {
       userId: t,
-      headingId: P,
+      headingId: _,
       title: h,
       subtitle: y,
       actionButtons: j,
@@ -113,11 +113,11 @@ function j(e) {
   });
   return (0, r.jsx)("section", {
     ref: S,
-    "aria-labelledby": P,
+    "aria-labelledby": _,
     children: E ? (0, r.jsx)(O, {
       index: null != p ? p : 0,
       widget: n,
-      additionalManageWidgetMenuItems: _,
+      additionalManageWidgetMenuItems: P,
       children: T()
     }) : T()
   })

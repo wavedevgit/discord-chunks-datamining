@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   wl: () => h,
@@ -70,39 +70,39 @@ function m(e) {
     children: b
   } = e, h = p(e, ["widgetType", "widget", "onAddGame", "children"]);
   let [y] = (0, a.ynZ)(), [v, O] = i.useState(""), j = i.useRef(""), x = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
-    trackUserProfileEditAction: _
-  } = (0, c.KZ)(), P = i.useCallback(e => {
-    (0, s.ES)(t, {
+    trackUserProfileEditAction: P
+  } = (0, s.KZ)(), _ = i.useCallback(e => {
+    (0, c.ES)(t, {
       applicationId: e
-    }), a.uvj.announce(u.intl.string(u.t.q0U3DE)), _({
+    }), a.uvj.announce(u.intl.string(u.t.q0U3DE)), P({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
     }), null == m || m()
-  }, [t, _, m]), {
+  }, [t, P, m]), {
     options: I,
     matchSorterOptions: w
   } = (0, o.h)(), S = i.useCallback(e => "" === e.trim() ? I : (0, l.Lu)(I, e, g(f({}, w), {
     threshold: l.Lu.rankings.CONTAINS
   })), [I, w]), E = i.useCallback(e => {
-    "" === v.trim() && "" !== e.trim() && _({
+    "" === v.trim() && "" !== e.trim() && P({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
       numResults: S(e).length
     }), O(e), j.current = e
-  }, [v, _, t, S]), T = i.useMemo(() => "" !== v.trim() ? u.intl.format(u.t.jhiTsN, {
+  }, [v, P, t, S]), T = i.useMemo(() => "" !== v.trim() ? u.intl.format(u.t.jhiTsN, {
     searchTerm: v.trim()
   }) : u.intl.string(u.t.QwSXv8), [v]);
   return (0, r.jsx)(a.yRy, g(f({}, h), {
     onRequestOpen: () => {
-      _({
+      P({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
       }), O(""), j.current = ""
     },
     onRequestClose: () => {
-      _({
+      P({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
         numCharacters: j.current.trim().length,
@@ -119,7 +119,7 @@ function m(e) {
         autoFocus: true,
         value: y,
         onChange: e => {
-          P(e), t()
+          _(e), t()
         },
         multiSelect: false,
         maxVisibleItems: 7,

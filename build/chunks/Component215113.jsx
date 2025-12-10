@@ -94,7 +94,7 @@ function U(e) {
     impressionRef: B,
     parentModalOpenStartClockTime: U,
     sourceQuestContent: q
-  } = e, Y = (0, S.il)(g), H = (0, b.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(Y.progressSeconds), [W, z] = o.useState(142), {
+  } = e, Y = (0, C.il)(g), H = (0, b.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(Y.progressSeconds), [W, z] = o.useState(142), {
     variant: X,
     enabled: $
   } = h.EO.useConfig({
@@ -174,7 +174,7 @@ function U(e) {
                 children: [(0, r.jsx)("img", {
                   alt: g.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, C.fh)(g, C.eC.LOGO_TYPE, ea).url
+                  src: (0, S.fh)(g, S.eC.LOGO_TYPE, ea).url
                 }), (0, r.jsx)(R.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {

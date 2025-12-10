@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -77,9 +77,9 @@ function A(e) {
     mentionCount: c,
     channelState: d,
     toggleCollapsed: f,
-    showCollapseButton: h = false,
-    getNumUnreadChannels: p
-  } = e, g = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, y.Dt)())), m = h && !i.isNSFW() && null != d && "nsfw" !== d.type;
+    showCollapseButton: p = false,
+    getNumUnreadChannels: h
+  } = e, g = (0, o.JA)("recents-header-".concat(i.id, "-").concat((0, y.Dt)())), m = p && !i.isNSFW() && null != d && "nsfw" !== d.type;
   return (0, r.jsx)(u.tEY, {
     offset: w,
     children: (0, r.jsxs)("div", (t = function(e) {
@@ -112,11 +112,11 @@ function A(e) {
       children: [m && null != d ? (0, r.jsx)(T, {
         channelState: d,
         toggle: f,
-        getNumUnreadChannels: p
+        getNumUnreadChannels: h
       }) : null, (0, r.jsx)(R, {
         channel: i,
         gotoChannel: s
-      }), (0, r.jsx)(M, {
+      }), (0, r.jsx)(L, {
         channel: i,
         gotoChannel: s,
         mentionCount: c
@@ -142,7 +142,7 @@ function R(e) {
   return t.isPrivate() ? (0, r.jsx)(D, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(L, {
+  }) : (0, r.jsx)(M, {
     channel: t,
     gotoChannel: n
   })
@@ -165,7 +165,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function M(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -181,19 +181,19 @@ function L(e) {
   })
 }
 
-function M(e) {
+function L(e) {
   let {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, a.e7)([j.Z], () => j.Z.getChannel(t.parent_id)), d = (0, a.e7)([E.ZP], () => E.ZP.getIsMentionLowImportance(t.id)), f = (0, _.KS)(t, o), h = (0, b.ZP)(t, false), p = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), g = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
+  } = e, o = (0, a.e7)([x.Z], () => x.Z.getGuild(t.guild_id)), c = (0, a.e7)([j.Z], () => j.Z.getChannel(t.parent_id)), d = (0, a.e7)([E.ZP], () => E.ZP.getIsMentionLowImportance(t.id)), f = (0, _.KS)(t, o), p = (0, b.ZP)(t, false), h = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), g = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(k, {
     channel: t
   }) : (0, r.jsx)(u.P3F, {
     className: l()(Z.subtext, Z.guildName),
     onClick: n,
-    children: p
+    children: h
   });
   return (0, r.jsxs)("div", {
     className: Z.channelNameSection,
@@ -211,7 +211,7 @@ function M(e) {
           color: "currentColor"
         }), (0, r.jsx)("span", {
           className: Z.channelNameSpan,
-          children: h
+          children: p
         }), null != i && i > 0 ? (0, r.jsx)("div", {
           className: Z.badge,
           children: (0, r.jsx)(u.mAB, {
@@ -251,7 +251,7 @@ function k(e) {
     location: "RecentsChannelHeader"
   }), {
     voiceChannel: c
-  } = (0, h.Z)({
+  } = (0, p.Z)({
     userId: null == n ? true : n.id
   }), u = s ? c : true;
   return (0, f.Z)({
@@ -259,7 +259,7 @@ function k(e) {
     status: i,
     applicationStream: o,
     voiceChannel: u
-  }) ? (0, r.jsx)(p.Z, {
+  }) ? (0, r.jsx)(h.Z, {
     location: "RecentsChannelHeader",
     user: n,
     activities: l,

@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 654544, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -19,7 +19,7 @@ function d(e) {
     handleOpenGameShop: d,
     socialLayerStorefrontApplicationId: f
   } = e, g = i.useRef(null), [p, m] = i.useState(false), b = (0, a.q)(f), h = i.useMemo(() => {
-    let e = null == b || b.id !== c.t9 ? s.intl.string(s.t.apFNLU) : s.intl.string(s.t["kq/75v"]);
+    let e = null == b || b.id !== s.t9 ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]);
     if (null == b) return e;
     let t = o.ZP.getApplicationIconURL({
       id: b.id,
@@ -41,7 +41,7 @@ function d(e) {
   }, [b]), y = i.useMemo(() => (0, r.jsxs)(l.kSQ, {
     children: [(0, r.jsx)(l.sNh, {
       id: "browse-collectibles-shop",
-      label: s.intl.string(s.t["5upuqx"]),
+      label: c.intl.string(c.t["5upuqx"]),
       iconLeft: l.EOn,
       action: n
     }), (0, r.jsx)(l.sNh, {
@@ -64,7 +64,7 @@ function d(e) {
         navId: "wishlist-overflow-menu",
         onSelect: true,
         onClose: t,
-        "aria-label": s.intl.string(s.t.GdNkvG),
+        "aria-label": c.intl.string(c.t.GdNkvG),
         children: y
       })
     },

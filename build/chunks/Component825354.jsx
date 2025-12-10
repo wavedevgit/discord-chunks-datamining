@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 825354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -20,7 +20,7 @@ function f(e) {
     className: l,
     menuItems: f
   } = e, g = i.useRef(null), p = () => {
-    (0, s.G1)(n, t)
+    (0, c.G1)(n, t)
   };
   return (0, r.jsx)(o.yRy, {
     targetElementRef: g,
@@ -34,7 +34,7 @@ function f(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
-          (0, c.Zy)(), t()
+          (0, s.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": u.intl.string(u.t.xpSHSk),

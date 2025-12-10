@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
@@ -122,8 +122,8 @@ let F = (0, Chunk888651.$)(function(e) {
     localVideoDisabled: B,
     deaf: H,
     video: G,
-    embeddedApplication: W,
-    serverMute: z,
+    embeddedApplication: z,
+    serverMute: W,
     serverDeaf: q,
     nick: K,
     ringing: Y,
@@ -150,8 +150,8 @@ let F = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: eg,
     requestToStreamActivity: eb,
     showHangStatus: eC
-  } = e, ey = r.useRef(null), [e_, ev] = r.useState(false), eO = r.useRef(null), [ex, eE] = r.useState(false), [ej, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = ej || eZ || eP, eA = ex || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
-    ev(!e_)
+  } = e, ey = r.useRef(null), [ev, e_] = r.useState(false), eO = r.useRef(null), [ex, eE] = r.useState(false), [ej, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = ej || eZ || eP, eA = ex || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
+    e_(!ev)
   }, eR = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
     null != t && n.has(t) && (eP && eI(false), ej && eS(false)), eL()
@@ -167,14 +167,14 @@ let F = (0, Chunk888651.$)(function(e) {
       e && eE(false)
     },
     eU = () => {
-      if (!(et && (0, _.p9)(U, A.Z, Z.Z, T.Z, b.default)[0])) return;
+      if (!(et && (0, v.p9)(U, A.Z, Z.Z, T.Z, b.default)[0])) return;
       let e = {
         streamType: M.lo.GUILD,
         ownerId: h.id,
         channelId: U.id,
         guildId: U.guild_id
       };
-      I.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), en ? ((0, v.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == ea || ea(h.id)
+      I.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), en ? ((0, _.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == ea || ea(h.id)
     },
     eV = e => {
       (0, u.jW)(e, async () => {
@@ -217,18 +217,18 @@ let F = (0, Chunk888651.$)(function(e) {
       className: L.draggable,
       "data-dnd-name": U.name,
       onMouseEnter: ed ? true : () => {
-        (et || eC || ew) && !e_ && (null == el || el(h.id))
+        (et || eC || ew) && !ev && (null == el || el(h.id))
       },
       onMouseLeave: ed ? true : eL,
       children: (0, i.jsx)(S.Z, {
-        clickTrap: (null == h ? true : h.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && e_,
+        clickTrap: (null == h ? true : h.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && ev,
         targetElementRef: ey,
         user: h,
         guildId: U.guild_id,
         channelId: U.id,
         newAnalyticsLocations: [m.Z.VOICE_USER],
-        shouldShow: e_,
-        onRequestClose: () => ev(false),
+        shouldShow: ev,
+        onRequestClose: () => e_(false),
         children: e => (e => {
           let t = w.al.has(null != ec ? ec : ""),
             n = {
@@ -248,17 +248,17 @@ let F = (0, Chunk888651.$)(function(e) {
               nick: K,
               collapsed: l,
               overlap: l,
-              serverMute: z,
+              serverMute: W,
               serverDeaf: q,
               tabIndex: ep,
               otherClientSessionType: ec,
               voicePlatform: eu,
-              embeddedApplication: W,
+              embeddedApplication: z,
               avatarContainerClass: a()({
                 [L.userAvatar]: true
               }),
               disabled: ed && !t,
-              selected: e_,
+              selected: ev,
               onClick: t ? true : eM,
               onDoubleClick: eU,
               onContextMenu: eV,
@@ -283,7 +283,7 @@ let F = (0, Chunk888651.$)(function(e) {
             targetElementRef: ey,
             position: "right",
             renderPopout: c,
-            shouldShow: (eo || eC && eN) && !e_,
+            shouldShow: (eo || eC && eN) && !ev,
             onRequestClose: eR,
             align: eC && eA && !ef ? "center" : true,
             spacing: eC && eA ? 8 : 0,

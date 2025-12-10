@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 613548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -41,7 +41,7 @@ function M(e) {
     guildId: n
   } = e, r = (0, c.Wu)([P.Z, I.Z], () => {
     let e = Date.now();
-    return s()(P.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === N.fO.USER && e.speaking && !(0, _.ZP)(e)).sortBy(t => -P.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+    return s()(P.Z.getSpeakers()).map(e => I.Z.getParticipant(t, e)).filter(e => null != e && e.type === N.fO.USER && e.speaking && !(0, v.ZP)(e)).sortBy(t => -P.Z.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
   });
   return 0 === r.length ? null : (0, i.jsx)("div", {
     className: w.speakers,
@@ -68,7 +68,7 @@ function R(e) {
     analyticsLocations: o
   } = (0, f.ZP)(h.Z.VOICE_CHANNEL_HEADER), s = t.id, {
     voiceParticipantsHidden: u,
-    selectedParticipant: _,
+    selectedParticipant: v,
     userParticipantCount: S,
     participantsListOpen: P
   } = (0, c.cj)([I.Z], () => ({
@@ -92,18 +92,18 @@ function R(e) {
   }, "current-speaker")), U.push((0, i.jsx)(g.Z, {
     className: w.button,
     channelId: s
-  }, "clips-enabled-indicator")), (null == _ ? true : _.type) === N.fO.STREAM && (U.push((0, i.jsx)(v.Z, {
+  }, "clips-enabled-indicator")), (null == v ? true : v.type) === N.fO.STREAM && (U.push((0, i.jsx)(_.Z, {
     className: w.button,
-    participant: _
+    participant: v
   }, "warning")), U.push((0, i.jsx)(b.Z, {
     size: m.ZP.Sizes.LARGE,
     className: w.button,
-    participant: _,
+    participant: v,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == _ ? true : _.type) === N.fO.USER && U.push((0, i.jsx)(O.Z, {
+  }, "live-indicator"))), (null == v ? true : v.type) === N.fO.USER && U.push((0, i.jsx)(O.Z, {
     className: w.button,
-    userId: _.id
+    userId: v.id
   }, "video-warning")), u && !R && U.push((0, i.jsx)(d.yRy, {
     targetElementRef: l,
     position: "bottom",

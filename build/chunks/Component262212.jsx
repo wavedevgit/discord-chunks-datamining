@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 262212, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => v,
@@ -62,7 +62,7 @@ function _(e) {
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
       fullWidth: true,
-      text: m ? p.intl.string(h.default.g5Ds69) : p.intl.string(p.t["0Q61kF"]),
+      text: m ? h.intl.string(p.default.g5Ds69) : h.intl.string(h.t["0Q61kF"]),
       onClick: e => {
         null == s || s(e), m ? null == c || c(e) : null == u || u()
       }
@@ -85,7 +85,7 @@ function y(e) {
       children: (0, r.jsx)(o.zxk, {
         variant: "primary",
         fullWidth: true,
-        text: i.type === f.Us.LEVEL ? p.intl.string(p.t["0Q61kF"]) : p.intl.string(p.t.Xa11Ep),
+        text: i.type === f.Us.LEVEL ? h.intl.string(h.t["0Q61kF"]) : h.intl.string(h.t.Xa11Ep),
         onClick: s
       })
     })

@@ -1,5 +1,5 @@
-/** Chunk was on 76334 **/
-/** chunk id: 841081, original params: e,i,t (module,exports,require) **/
+/** Chunk was on 12693 **/
+/** chunk id: 841081, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
   default: () => p
 });
@@ -15,22 +15,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk926845 = require("./926845.js");
 
-function h(e) {
+function g(i) {
   let {
-    giftRecipient: i,
+    giftRecipient: e,
     onClose: t,
-    transitionState: a,
-    analyticsLocations: h,
+    transitionState: l,
+    analyticsLocations: g,
     analyticsObject: p
-  } = e, {
+  } = i, {
     priceOptions: f
-  } = (0, s.JL)(), g = r.useCallback(e => {
+  } = (0, a.JL)(), I = s.useCallback(i => {
     (0, o.Z)({
       isGift: true,
-      giftRecipient: i,
-      subscriptionTier: e,
+      giftRecipient: e,
+      subscriptionTier: i,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      analyticsLocations: null != h ? h : [],
+      analyticsLocations: null != g ? g : [],
       analyticsObject: null != p ? p : {
         page: u.ZY5.DM_CHANNEL,
         section: u.jXE.CHANNEL_TEXT_AREA,
@@ -38,33 +38,33 @@ function h(e) {
         objectType: u.AnalyticsObjectTypes.GIFT
       }
     }), t()
-  }, [i, h, p, t]);
-  return (0, n.jsxs)(l.Y0X, {
-    transitionState: a,
-    size: l.CgR.DYNAMIC,
-    className: _.modalContainer,
+  }, [e, g, p, t]);
+  return (0, n.jsxs)(r.Y0X, {
+    transitionState: l,
+    size: r.CgR.DYNAMIC,
+    className: h.modalContainer,
     parentComponent: "GiftOptionSelectModal",
     "data-migration-pending": true,
-    children: [(0, n.jsx)(l.xBx, {
-      className: _.modalHeader,
+    children: [(0, n.jsx)(r.xBx, {
+      className: h.modalHeader,
       "data-migration-pending": true,
-      children: (0, n.jsxs)(l.Kqy, {
+      children: (0, n.jsxs)(r.Kqy, {
         direction: "horizontal",
         justify: "space-between",
-        children: [(0, n.jsx)(l.Heading, {
+        children: [(0, n.jsx)(r.Heading, {
           variant: "heading-md/semibold",
           children: m.intl.string(m.t["wg/30i"])
-        }), (0, n.jsx)(l.olH, {
+        }), (0, n.jsx)(r.olH, {
           onClick: t,
           "data-migration-pending": true
         })]
       })
-    }), (0, n.jsx)(l.hzk, {
-      className: _.modalBody,
+    }), (0, n.jsx)(r.hzk, {
+      className: h.modalBody,
       "data-migration-pending": true,
       children: (0, n.jsx)(c.Z, {
-        onSelectSku: g,
-        giftRecipient: i,
+        onSelectSku: I,
+        giftRecipient: e,
         priceOptions: f,
         onWishlistItemClick: t
       })
@@ -72,28 +72,28 @@ function h(e) {
   })
 }
 
-function p(e) {
+function p(i) {
   let {
-    giftRecipient: i,
+    giftRecipient: e,
     onClose: t,
-    transitionState: r,
-    analyticsLocations: l,
+    transitionState: s,
+    analyticsLocations: r,
     analyticsObject: o
-  } = e;
-  return (0, n.jsx)(s.PaymentContextProvider, {
+  } = i;
+  return (0, n.jsx)(a.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
     skuIDs: d.nS,
     isGift: true,
-    children: (0, n.jsx)(a.KB, {
+    children: (0, n.jsx)(l.KB, {
       isGift: true,
-      giftRecipient: i,
+      giftRecipient: e,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      children: (0, n.jsx)(h, {
-        giftRecipient: i,
+      children: (0, n.jsx)(g, {
+        giftRecipient: e,
         onClose: t,
-        transitionState: r,
-        analyticsLocations: l,
+        transitionState: s,
+        analyticsLocations: r,
         analyticsObject: o
       })
     })

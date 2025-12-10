@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 840367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -19,8 +19,8 @@ function d(e) {
     headingId: n,
     widget: i,
     disableInteraction: a = false,
-    title: c,
-    subtitle: s,
+    title: s,
+    subtitle: c,
     actionButtons: d = [],
     className: g
   } = e;
@@ -32,11 +32,11 @@ function d(e) {
         variant: "heading-sm/medium",
         color: "text-default",
         id: n,
-        children: c
-      }), null != s && (0, r.jsx)(o.Text, {
+        children: s
+      }), null != c && (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-subtle",
-        children: s
+        children: c
       })]
     }), (0, r.jsx)(f, {
       widget: i,
@@ -53,13 +53,13 @@ function f(e) {
     actionButtons: n,
     disabledInteraction: i,
     userId: l
-  } = e, o = (0, a.e7)([c.default], () => c.default.getId());
+  } = e, o = (0, a.e7)([s.default], () => s.default.getId());
   return i ? null : null != n && n.length > 0 ? (0, r.jsx)("div", {
     className: u.actions,
     children: n
   }) : o !== l ? (0, r.jsx)("div", {
     className: u.actions,
-    children: (0, r.jsx)(s.Z, {
+    children: (0, r.jsx)(c.Z, {
       widget: t,
       userId: l,
       className: u.menuButton

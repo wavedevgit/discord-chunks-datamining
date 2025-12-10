@@ -142,9 +142,9 @@ function H(e) {
     totalResults: _,
     isSearching: y,
     isIndexing: O,
-    hasError: x
+    hasError: j
   } = l;
-  if (x) return (0, r.jsxs)(U, {
+  if (j) return (0, r.jsxs)(U, {
     children: [(0, r.jsx)("div", {
       className: M.errorImage
     }), (0, r.jsx)("div", {
@@ -179,16 +179,16 @@ function H(e) {
     isFavoritesSearch: b
   });
   let {
-    showNoResultsAlt: j
-  } = l, v = j ? L.intl.string(L.t["VrK/2R"]) : L.intl.string(L.t.V6nAfF);
+    showNoResultsAlt: x
+  } = l, v = x ? L.intl.string(L.t["VrK/2R"]) : L.intl.string(L.t.V6nAfF);
   return (0, r.jsxs)(U, {
     children: [(0, r.jsx)("div", {
       className: a()(M.noResultsImage, {
-        [M.alt]: j
+        [M.alt]: x
       })
     }), (0, r.jsx)("div", {
       className: a()(M.emptyResultsText, M.noResults, {
-        [M.alt]: j
+        [M.alt]: x
       }),
       children: v
     })]
@@ -206,7 +206,7 @@ let F = [],
       ignoreCount: f,
       isFeedbackVisible: b,
       dismissFeedbackEntrypoint: O,
-      onSearchModeChange: x,
+      onSearchModeChange: j,
       onPageChange: C,
       searchMode: I,
       onBlockedResultsClick: E,
@@ -264,8 +264,8 @@ let F = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           mode: e
-        }), x(e))
-      }, [x, n.isSearching, t, I, a]),
+        }), j(e))
+      }, [j, n.isSearching, t, I, a]),
       K = i.useCallback((e, r) => {
         let i = g.Z.getChannel(e.channel_id),
           l = null != i ? i.getGuildId() : null,
@@ -319,7 +319,7 @@ let F = [],
       ei = en === o.z.SEARCH_AUTHOR_TYPE_SEARCH_RESULTS_HINT,
       el = i.useCallback(() => {
         if (n.isSearching) return;
-        let e = "".concat(j.ZP[A.dCx.FILTER_AUTHOR_TYPE].key, " ").concat(L.intl.string(L.t.tPZo4p)) + " ";
+        let e = "".concat(x.ZP[A.dCx.FILTER_AUTHOR_TYPE].key, " ").concat(L.intl.string(L.t.tPZo4p)) + " ";
         S.Z.appendToSearchInputText(t, e)
       }, [t, n.isSearching]);
     return (0, r.jsxs)("section", {
@@ -384,7 +384,7 @@ function V(e) {
   } = function() {
     let [e, t] = i.useState(false), n = (0, O.M_)({
       location: "SearchResults"
-    }), r = (0, x.f)({
+    }), r = (0, j.f)({
       location: "SearchResults"
     }) && n;
     return (0, u.ZP)(() => {
@@ -417,7 +417,7 @@ function V(e) {
   }), y = (0, s.e7)([R.Z], () => {
     var e;
     return null != (e = R.Z.getSearchMode(o)) ? e : A.QIO.NEWEST
-  }), j = i.useCallback(e => {
+  }), x = i.useCallback(e => {
     if (c.isSearching) return;
     I.Z.updateSearchMode(t, e);
     let n = S.Z.getSearchInputText(t);
@@ -450,7 +450,7 @@ function V(e) {
       isFeedbackVisible: l,
       dismissFeedbackEntrypoint: a,
       onPageChange: v,
-      onSearchModeChange: j,
+      onSearchModeChange: x,
       searchMode: y,
       onBlockedResultsClick: Z,
       searchResultsQuery: C,

@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -60,8 +60,8 @@ function S(e) {
     B = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
     H = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
-    W = null != R && R === I.id,
-    z = D.map(e => t => (0, i.jsx)(v.ZP, {
+    z = null != R && R === I.id,
+    W = D.map(e => t => (0, i.jsx)(_.ZP, {
       participant: e,
       channel: I,
       className: j.tile,
@@ -83,19 +83,19 @@ function S(e) {
     }
   }, {
     trackOnInitialLoad: true
-  }, []), null != M && !V && (!(L >= 2) || !B || G || H || W ? F && 1 === L && U && (B && !G ? z.push(e => (0, i.jsx)(_.h, {
+  }, []), null != M && !V && (!(L >= 2) || !B || G || H || z ? F && 1 === L && U && (B && !G ? W.push(e => (0, i.jsx)(v.h, {
     channel: I,
     guild: M,
     width: e,
     inPopout: w,
     handleClose: k,
     userParticipantCount: L
-  })) : z.push(e => (0, i.jsx)(x.Z, {
+  })) : W.push(e => (0, i.jsx)(x.Z, {
     width: e,
     channel: I,
     guild: M,
     inPopout: w
-  }))) : z.push(e => (0, i.jsx)(_.h, {
+  }))) : W.push(e => (0, i.jsx)(v.h, {
     channel: I,
     guild: M,
     width: e,
@@ -112,6 +112,6 @@ function S(e) {
     keyExtractor: q,
     paddingTop: 64,
     paddingBottom: 64,
-    children: z
+    children: W
   })
 }

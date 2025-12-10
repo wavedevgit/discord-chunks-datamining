@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 819349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => I
@@ -70,9 +70,9 @@ function I(e) {
     B = r.useRef(null),
     {
       isHoveringOrFocusing: H
-    } = (0, v.Tu)(null == L ? B : l),
-    [G, W] = r.useState(false),
-    z = H || G,
+    } = (0, _.Tu)(null == L ? B : l),
+    [G, z] = r.useState(false),
+    W = H || G,
     q = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
       y.default.track(O.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
@@ -112,12 +112,12 @@ function I(e) {
       null != N.current && clearTimeout(N.current)
     }), []);
   (0, h.ZP)(X), r.useEffect(() => {
-    if (!z) {
+    if (!W) {
       X(), J();
       return
     }
     null != T.current && clearTimeout(T.current), null != N.current && clearTimeout(N.current), Z(true)
-  }, [z, X, J]), r.useEffect(() => {
+  }, [W, X, J]), r.useEffect(() => {
     !async function() {
       var e, n, i;
       let r = null != (e = b.Z.getInvite(t.id, {})) ? e : null;
@@ -137,7 +137,7 @@ function I(e) {
       Z(true)
     }, []),
     $ = r.useCallback(() => {
-      Z(false), W(false)
+      Z(false), z(false)
     }, []);
   return null == L ? null : (0, i.jsx)(d.yRy, {
     targetElementRef: l,
@@ -146,10 +146,10 @@ function I(e) {
     align: "top",
     spacing: 8,
     popoutKey: "voice-invite-suggestions-button",
-    renderPopout: e => (0, i.jsx)(_.B, S({
+    renderPopout: e => (0, i.jsx)(v.B, S({
       channel: t,
       inviteKey: L,
-      onHoverOrFocus: W
+      onHoverOrFocus: z
     }, e)),
     onRequestOpen: Q,
     onRequestClose: $,
@@ -175,7 +175,7 @@ function I(e) {
               },
               children: [(0, i.jsxs)("svg", {
                 className: a()(E.timer, {
-                  [E.paused]: z
+                  [E.paused]: W
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {

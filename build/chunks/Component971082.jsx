@@ -1,4 +1,4 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 971082, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => p,
@@ -53,10 +53,10 @@ function g(e) {
   var {
     label: t,
     className: n,
-    size: i = c.EFr.SIZE_16,
+    size: i = s.EFr.SIZE_16,
     maxUsers: o = 4
   } = e, g = f(e, ["label", "className", "size", "maxUsers"]);
-  let p = (0, s.Dt)();
+  let p = (0, c.Dt)();
   return (0, r.jsxs)("div", {
     className: l()(n, u.container),
     children: [(0, r.jsx)(a.g, d({
@@ -64,7 +64,7 @@ function g(e) {
       overflowCountClassName: u.overflow,
       size: i,
       maxUsers: o
-    }, g)), (0, r.jsx)(c.Text, {
+    }, g)), (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
       id: p,
@@ -78,7 +78,7 @@ function p(e) {
     label: t,
     className: n,
     overflowCountClassName: i,
-    size: s = c.EFr.SIZE_16,
+    size: c = s.EFr.SIZE_16,
     maxUsers: g = 4,
     onClick: p
   } = e, m = f(e, ["label", "className", "overflowCountClassName", "size", "maxUsers", "onClick"]);
@@ -88,11 +88,11 @@ function p(e) {
       text: t,
       asContainer: true,
       ariaHidden: true,
-      children: (0, r.jsx)(c.P3F, {
+      children: (0, r.jsx)(s.P3F, {
         onClick: p,
         "aria-label": t,
         children: (0, r.jsx)(a.g, d({
-          size: s,
+          size: c,
           maxUsers: g,
           overflowCountClassName: l()(u.overflow, i),
           "aria-hidden": true

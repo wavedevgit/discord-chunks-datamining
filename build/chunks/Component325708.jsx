@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 325708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C,
@@ -62,7 +62,7 @@ function C(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, _] = l.useState(h.ZP[C]), v = l.useCallback(e => {
+  }(t), [y, v] = l.useState(h.ZP[C]), _ = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [C]: e
     })
@@ -96,8 +96,8 @@ function C(e) {
           minWidth: O,
           maxWidth: n,
           resizableNode: g,
-          onResize: _,
-          onResizeEnd: v
+          onResize: v,
+          onResizeEnd: _
         }), (0, r.jsx)("div", {
           ref: g,
           className: o()(m.container, {

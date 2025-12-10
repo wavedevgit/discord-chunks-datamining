@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 734579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -30,7 +30,7 @@ let S = Chunk473749.memo(function(e) {
   let {
     guild: t,
     selected: l
-  } = e, S = i.useRef(null), I = i.useRef(null), P = (0, u.useHasAnyModalOpen)(), N = (0, a.e7)([O.Z], () => O.Z.hasLayers()), [Z, w] = (0, h.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
+  } = e, S = i.useRef(null), I = i.useRef(null), P = (0, u.useHasAnyModalOpen)(), N = (0, a.e7)([O.Z], () => O.Z.hasLayers()), [Z, w] = (0, p.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
     l && Z === s.z.GAME_SHOP_NEW_BADGE && w(x.L.INDIRECT_ACTION)
   }, [w, l, Z]);
@@ -38,7 +38,7 @@ let S = Chunk473749.memo(function(e) {
       var e, n;
       w(x.L.USER_DISMISS);
       let r = null != (n = null == (e = m.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
-      (0, p.uL)(j.Z5c.CHANNELS_GAME_SHOP(t.id, r))
+      (0, h.uL)(j.Z5c.CHANNELS_GAME_SHOP(t.id, r))
     }, [t, w]),
     A = i.useCallback(() => {
       (0, b.eagerNavigateToSocialLayerStorefront)({
@@ -87,11 +87,11 @@ let S = Chunk473749.memo(function(e) {
         }
       })
     }, [t]),
-    L = i.useCallback(() => {
+    M = i.useCallback(() => {
       var e;
       null == (e = S.current) || e.onMouseEnter(null, 500)
     }, [S]),
-    M = i.useCallback((e, n, i, a) => (0, r.jsx)(v.m, {
+    L = i.useCallback((e, n, i, a) => (0, r.jsx)(v.m, {
       innerClassName: e,
       ref: I,
       id: "game-shop-".concat(t.id),
@@ -121,10 +121,10 @@ let S = Chunk473749.memo(function(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.Z, {
       ref: S,
-      children: M
+      children: L
     }), P || N || (null == t ? true : t.id) !== (0, g.ac)() || Z !== s.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(_.Z, {
       onActionClick: T,
-      onRender: L,
+      onRender: M,
       onRequestClose: R,
       targetElementRef: I
     })]

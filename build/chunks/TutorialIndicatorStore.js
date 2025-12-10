@@ -1,7 +1,7 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 10401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./388685.js");
 var i, Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -80,7 +80,7 @@ class y extends(i = Chunk442837.ZP.Store) {
   }
 }
 u(y, "displayName", "TutorialIndicatorStore");
-let _ = new y(Chunk570140.Z, {
+let v = new y(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
     let {
       tutorial: t

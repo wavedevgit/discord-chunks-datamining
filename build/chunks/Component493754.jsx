@@ -1,4 +1,4 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => b,
@@ -87,16 +87,16 @@ function C(e) {
     exitFullScreen: a,
     appContext: C,
     analyticsLocation: y,
-    className: _,
-    size: v = "sm"
+    className: v,
+    size: _ = "sm"
   } = e, O = null == r ? true : r.getGuildId(), x = null == r ? true : r.id, E = (0, s.e7)([p.Z], () => null != O ? p.Z.getGuild(O) : null, [O]), j = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(x), [x]);
   if (!(null != E && null != r && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, r))) return null;
   let S = m.intl.string(m.t.VINpSK);
   return null != t ? S = m.intl.string(m.t["6VQaqd"]) : null != n && (S = m.intl.string(m.t["OzOM/q"])), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: l()(_, g.textButton),
+      className: l()(v, g.textButton),
       children: (0, i.jsx)(c.Button, {
-        size: v,
+        size: _,
         variant: "secondary",
         text: S,
         onClick: () => {
@@ -116,7 +116,7 @@ function C(e) {
       channel: r,
       stream: t,
       appContext: C,
-      className: l()(_, g.iconButton),
+      className: l()(v, g.iconButton),
       exitFullScreen: a,
       analyticsLocation: y,
       guildScheduledEvent: j

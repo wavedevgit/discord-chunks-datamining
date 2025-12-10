@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -79,10 +79,10 @@ function Z() {
       return (0, r.jsxs)("div", {
         className: C.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(p.Heading, {
+          children: [(0, r.jsx)(h.Heading, {
             variant: "heading-lg/semibold",
             children: i
-          }), null != l && (0, r.jsx)(p.Text, {
+          }), null != l && (0, r.jsx)(h.Text, {
             className: C.keybindGroupDescription,
             variant: "text-sm/normal",
             children: l
@@ -93,12 +93,12 @@ function Z() {
             var n;
             return (null == (n = e.predicate) ? true : n.call(e)) === false ? null : (0, r.jsxs)("div", {
               className: C.keybindGroup,
-              children: [(0, r.jsx)(p.Text, {
+              children: [(0, r.jsx)(h.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
-                children: e.binds.map(e => (0, r.jsx)(p.M2$, {
+                children: e.binds.map(e => (0, r.jsx)(h.M2$, {
                   className: C.keybindKey,
                   shortcut: e
                 }, e))
@@ -272,7 +272,7 @@ function T(e) {
       let e = setTimeout(() => c(false), 500);
       return () => clearTimeout(e)
     }
-  }, [s]), (0, r.jsx)(p.P3F, {
+  }, [s]), (0, r.jsx)(h.P3F, {
     onClick: u,
     className: o()(C.arrow, l, {
       [C.active]: t || s
@@ -295,15 +295,15 @@ function A(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N, {
       showBackdrop: s
-    }), (0, r.jsx)(p.Y0X, {
+    }), (0, r.jsx)(h.Y0X, {
       className: o()(C.noBackground, {
         [C.noShadow]: l
       }),
-      size: p.CgR.DYNAMIC,
+      size: h.CgR.DYNAMIC,
       "aria-label": x.intl.string(x.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
-      children: (0, r.jsx)(h.W, {
+      children: (0, r.jsx)(p.W, {
         component: "div",
         children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {

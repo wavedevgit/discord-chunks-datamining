@@ -1,4 +1,4 @@
-/** Chunk was on 83037 **/
+/** Chunk was on 17302 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,14 +27,14 @@ function v(e) {
   let {
     tab: t,
     setTab: n,
-    badgeState: p,
+    badgeState: h,
     closePopout: m
   } = e, {
     enabled: b,
     inInbox: _
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), v = (0, h.Us)({
+  }), v = (0, p.Us)({
     location: "RecentsHeader"
   }), {
     enabled: x
@@ -79,7 +79,7 @@ function v(e) {
           id: l.X.FOR_YOU,
           "aria-label": y.intl.string(y.t["En+D+u"]),
           className: O.tab,
-          children: [y.intl.string(y.t["En+D+u"]), (null == p ? true : p.badgeForYou) ? (0, r.jsx)(a.fWl, {
+          children: [y.intl.string(y.t["En+D+u"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(a.fWl, {
             color: o.Z.colors.STATUS_DANGER.css,
             className: O.iconBadge
           }) : null]
@@ -122,5 +122,5 @@ function j(e) {
   let {
     tab: t
   } = e;
-  return t === l.X.FOR_YOU ? (0, r.jsx)(p.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
+  return t === l.X.FOR_YOU ? (0, r.jsx)(h.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
 }

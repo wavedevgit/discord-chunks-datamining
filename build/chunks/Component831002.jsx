@@ -1,8 +1,8 @@
-/** Chunk was on 73755 **/
+/** Chunk was on 7891 **/
 /** chunk id: 831002, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $A: () => _,
-  j8: () => v
+  $A: () => v,
+  j8: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -25,7 +25,7 @@ var Chunk218035 = require("./218035.jsx"),
 require("./354459.js");
 var Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function v(e) {
   let t = (0, a.e7)([p.Z], () => p.Z.getChannel(e), [e]),
     n = (0, a.e7)([h.Z], () => h.Z.can(m.yP, t)),
     r = (0, b.sP)(),
@@ -45,7 +45,7 @@ function _(e) {
   }) : null
 }
 
-function v(e) {
+function _(e) {
   let t = (0, a.e7)([p.Z], () => p.Z.getChannel(e), [e]);
   l()(null != t, "useNotificationSettingsItem: channel cannot be undefined");
   let n = (0, d.Mn)("StageChannelCallOverflowMenu"),

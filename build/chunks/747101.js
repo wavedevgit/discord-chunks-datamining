@@ -1,9 +1,9 @@
-/** Chunk was on 44097 **/
+/** Chunk was on 49941 **/
 /** chunk id: 747101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  kN: () => s,
+  kN: () => c,
   kO: () => o,
-  qU: () => c
+  qU: () => s
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,7 +14,7 @@ function o(e) {
   return (0, i.e7)([a.Z], () => a.Z.isFetching(e))
 }
 
-function c(e) {
+function s(e) {
   r.useEffect(() => {
     if (e.length > 0) {
       let t = e.filter(e => a.Z.canFetch(e));
@@ -23,7 +23,7 @@ function c(e) {
   }, [e])
 }
 
-function s(e) {
+function c(e) {
   let [t, n] = (0, i.Wu)([a.Z], () => [a.Z.numNoDataAvailable(), a.Z.numSupplementalGames()]);
   return r.useMemo(() => {
     let t = {};
