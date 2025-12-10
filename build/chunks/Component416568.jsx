@@ -319,7 +319,7 @@ function eu(e) {
   let em = i.useCallback(function e(t, n, i) {
       switch (t.type) {
         case k.eD.FOLDER:
-          return (0, r.jsx)(Q.Z, {
+          return (0, r.jsx)(X.Z, {
             folderNode: t,
             setNodeRef: ef.setNodeRef,
             draggable: true,
@@ -331,7 +331,7 @@ function eu(e) {
             "aria-posinset": true !== n ? n + 1 : true
           }, t.id);
         case k.eD.GUILD:
-          return (0, r.jsx)(X.Z, {
+          return (0, r.jsx)(Q.Z, {
             guildNode: t,
             setRef: ef.setNodeRef,
             draggable: true,

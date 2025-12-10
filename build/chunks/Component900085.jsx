@@ -150,7 +150,7 @@ let W = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
     }
   })(Chunk415795.n5);
 
-function Q(e, t, n) {
+function X(e, t, n) {
   return (0, i.jsx)(u.u, {
     __unsupportedReactNodeAsText: n,
     children: (0, i.jsx)("span", {
@@ -159,7 +159,7 @@ function Q(e, t, n) {
     })
   }, e)
 }
-class X extends Chunk473749.PureComponent {
+class Q extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk714338.Z.disable(), Chunk714338.Z.enableTemp(Chunk134616.u)
   }
@@ -267,10 +267,10 @@ class X extends Chunk473749.PureComponent {
       }),
       type: Chunk576855.Z.Types.INLINE,
       children: Chunk388032.intl.format(Chunk388032.t.wukqXQ, {
-        userSymbolHook: (e, t) => Q(t, g.xQ.USER, k.intl.string(k.t.GQRCGn)),
-        textChannelSymbolHook: (e, t) => Q(t, g.xQ.TEXT_CHANNEL, k.intl.string(k.t.wrwhuZ)),
-        voiceChannelSymbolHook: (e, t) => Q(t, g.xQ.VOICE_CHANNEL, k.intl.string(k.t["jz+hJp"])),
-        guildSymbolHook: (e, t) => Q(t, g.xQ.GUILD, k.intl.string(k.t.WuwCWi)),
+        userSymbolHook: (e, t) => X(t, g.xQ.USER, k.intl.string(k.t.GQRCGn)),
+        textChannelSymbolHook: (e, t) => X(t, g.xQ.TEXT_CHANNEL, k.intl.string(k.t.wrwhuZ)),
+        voiceChannelSymbolHook: (e, t) => X(t, g.xQ.VOICE_CHANNEL, k.intl.string(k.t["jz+hJp"])),
+        guildSymbolHook: (e, t) => X(t, g.xQ.GUILD, k.intl.string(k.t.WuwCWi)),
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
@@ -610,5 +610,5 @@ function J(e) {
       searchableTitles: [k.intl.string(k.t["3D5yo/"])],
       path: M.Z5c.SETTINGS("account")
     }), (0, P.gF)(e)
-  }, [o, r]), (0, i.jsx)(X, B({}, t, e))
+  }, [o, r]), (0, i.jsx)(Q, B({}, t, e))
 }

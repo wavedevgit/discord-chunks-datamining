@@ -64,8 +64,8 @@ let D = Chunk473749.memo(function(e) {
         accountLinkButtonRef: K,
         startAuthorization: Y,
         canStartAuthorization: q,
-        hasAlreadyLinked: Q,
-        connectionApp: X
+        hasAlreadyLinked: X,
+        connectionApp: Q
       } = e,
       {
         showRefreshedGoLiveModal: J
@@ -155,8 +155,8 @@ let D = Chunk473749.memo(function(e) {
     i.useEffect(() => () => {
       null != es.current && clearTimeout(es.current)
     }, []), i.useEffect(() => {
-      Q && (eu(false), null != es.current && (clearTimeout(es.current), es.current = null))
-    }, [Q]);
+      X && (eu(false), null != es.current && (clearTimeout(es.current), es.current = null))
+    }, [X]);
     let ed = null == et || null == H ? null : (0, r.jsx)(M, {
         guildId: et,
         applicationId: H.id
@@ -193,7 +193,7 @@ let D = Chunk473749.memo(function(e) {
         icon: u.PBZ
       }),
       em = null == C ? null : (0, r.jsx)(_.Z, {}),
-      eb = !q || Q ? null : (0, r.jsx)(L, {
+      eb = !q || X ? null : (0, r.jsx)(L, {
         runningGame: U,
         startAuthorization: () => {
           Y({
@@ -202,10 +202,10 @@ let D = Chunk473749.memo(function(e) {
             eu(false)
           }, 9e4))
         },
-        connectionApp: X,
+        connectionApp: Q,
         ref: K
       }),
-      e_ = !q || Q ? null : (0, r.jsx)(c.J2, {
+      e_ = !q || X ? null : (0, r.jsx)(c.J2, {
         title: T.intl.string(T.t.ULvRFd),
         body: T.intl.string(T.t["HJJDr+"]),
         targetElementRef: K,

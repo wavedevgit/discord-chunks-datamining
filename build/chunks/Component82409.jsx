@@ -140,7 +140,7 @@ function U(e) {
       }]
     }), [K]),
     q = F(Z, c, P),
-    Q = F(D, c, null);
+    X = F(D, c, null);
   (0, h.ZP)(() => {
     var e;
     d.Z.dispatch({
@@ -180,7 +180,7 @@ function U(e) {
         },
         isUnread: null != (i = O.ZP.hasUnread(c)) && i
       }
-    }(q, Q);
+    }(q, X);
     null != r && x.Z.inboxItemClick({
       message: r,
       channel: {
@@ -197,12 +197,12 @@ function U(e) {
     })
   });
   let {
-    filterStyle: X
+    filterStyle: Q
   } = (0, j.pN)({
     location: "NotificationsInboxSidebar"
   }), J = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = X === j.v8.DROPDOWN && c !== A.V5.ALL, ee = (0, A.H_)(c);
+  }), $ = Q === j.v8.DROPDOWN && c !== A.V5.ALL, ee = (0, A.H_)(c);
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
@@ -219,7 +219,7 @@ function U(e) {
           style: {
             marginRight: false
           },
-          children: X === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
+          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -239,7 +239,7 @@ function U(e) {
         className: L.messageList,
         renderMessageGroup: H,
         messages: c === A.V5.BOOKMARKS ? Y : q,
-        unreadMessages: c === A.V5.BOOKMARKS ? [] : Q,
+        unreadMessages: c === A.V5.BOOKMARKS ? [] : X,
         listName: "notifications-inbox",
         renderLoadingState: V,
         ignoreGrouping: c === A.V5.BOOKMARKS,

@@ -56,7 +56,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: H,
       name: W,
       children: z
-    } = t, [K, Y] = i.useState(false), [q, Q] = i.useState(false), X = K || q, J = (0, p.Ml)("FolderItem");
+    } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, p.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
     }, [R]);
@@ -75,7 +75,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         dragging: e.isDragging()
       })
     }), et = i.useCallback(e => {
-      Q(e)
+      X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
     }, [M, s]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
@@ -148,7 +148,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       ref: es,
       className: o()(S.folderGroup, {
         [S.isExpanded]: s,
-        [S.isHovering]: X
+        [S.isHovering]: Q
       }),
       style: {
         "--custom-folder-color": null != ed ? ed : ""

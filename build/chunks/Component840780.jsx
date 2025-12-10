@@ -502,7 +502,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
     W = (0, u.e7)([Y.Z], () => Y.Z.getWindowOpen(ey.KJ3.ACTIVITY_POPOUT)),
     {
       hasAlreadyLinked: K,
-      canStartAuthorization: Q,
+      canStartAuthorization: X,
       connectionApp: J,
       startAuthorization: ef
     } = (0, N.F)(O, {
@@ -516,7 +516,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
   let {
     isQuestBarEmpty: e_,
     hasLoadedQuestBar: eO
-  } = (0, X.Ws)({
+  } = (0, Q.Ws)({
     location: ex.dr.CONFLICT_CHECKS
   }), {
     parentAnalyticsLocation: ev,
@@ -558,7 +558,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
     accountLinkCopyConfig: eC,
     parentAnalyticsLocation: ev,
     analyticsLocations: ej,
-    canStartAuthorization: Q,
+    canStartAuthorization: X,
     accountLinkButtonRef: eE,
     startAuthorization: function() {
       for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];

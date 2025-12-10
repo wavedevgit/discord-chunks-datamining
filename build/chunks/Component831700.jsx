@@ -417,11 +417,11 @@ function el(e) {
     let e = L.Z.getChannel(n.parent_id),
       r = k.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: G.Z.can(Q.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== i && (t.id === X._ || (null != e ? G.Z.can(Q.Plq.MANAGE_CHANNELS, e) : G.Z.can(Q.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: G.Z.can(Q.Plq.MOVE_MEMBERS, n),
-      locked: !G.Z.can(Q.Plq.CONNECT, n),
-      bypassLimit: G.Z.can(Q.Plq.MOVE_MEMBERS, n),
+      canManageChannel: G.Z.can(X.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== i && (t.id === Q._ || (null != e ? G.Z.can(X.Plq.MANAGE_CHANNELS, e) : G.Z.can(X.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: G.Z.can(X.Plq.MOVE_MEMBERS, n),
+      locked: !G.Z.can(X.Plq.CONNECT, n),
+      bypassLimit: G.Z.can(X.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), h = (0, a.e7)([F.Z], () => F.Z.hasVideo(n.id)), p = (0, g.ZP)(n), m = (0, j.ZP)(n), O = (0, N.qY)(n.id), {
@@ -461,7 +461,7 @@ function el(e) {
   return (0, r.jsx)(ei, en(et({
     channelName: m,
     embeddedApps: p,
-    embeddedActivityType: Q.IIU.PLAYING,
+    embeddedActivityType: X.IIU.PLAYING,
     video: h,
     hasActiveEvent: null != O,
     isSubscriptionGated: C,

@@ -98,8 +98,8 @@ let M = Chunk473749.memo(function(e) {
     mediaState: K,
     unavailable: Y = false,
     badge: q = 0,
-    isMentionLowImportance: Q,
-    contextMenu: X = L,
+    isMentionLowImportance: X,
+    contextMenu: Q = L,
     draggable: J = false,
     sorting: $ = false,
     preloadOnClick: ee = true,
@@ -111,7 +111,7 @@ let M = Chunk473749.memo(function(e) {
     id: el,
     parentId: eo
   } = k, ea = null != (t = e.upperBadge) ? t : Y ? (0, N.Ny)() : null != K ? (0, N.Or)(K) : true, es = null != (n = e.lowerBadge) ? n : true;
-  null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, Q ? f.TVs.colors.BACKGROUND_ACCENT.css : f.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (p = (0, N.jt)({
+  null == es && q > 0 ? es = null != (l = (0, N.Ne)(q, X ? f.TVs.colors.BACKGROUND_ACCENT.css : f.TVs.colors.STATUS_DANGER.css)) ? l : true : null == es && null != et && (es = null != (p = (0, N.jt)({
     guildJoinRequestStatus: et
   })) ? p : true);
   let ec = null != (M = e.lowerBadgeSize) ? M : {
@@ -156,8 +156,8 @@ let M = Chunk473749.memo(function(e) {
     }, [F, V, Y, ee]),
     ex = (0, u.e7)([O.ZP], () => O.ZP.isCurrentUserGuest(el)),
     eC = i.useCallback(e => {
-      null == V || ex || X(e, V)
-    }, [V, X, ex]),
+      null == V || ex || Q(e, V)
+    }, [V, Q, ex]),
     eE = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != eo) {
         var t;
