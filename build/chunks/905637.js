@@ -6,5 +6,6 @@ require.d(exports, {
 });
 let r = {
   nitro_unsubbed: 100,
-  checkpoint_completed: 10
+  checkpoint_completed: 10,
+  quest_completed: 25
 }

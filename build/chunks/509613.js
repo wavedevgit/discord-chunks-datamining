@@ -2,25 +2,25 @@
 /** chunk id: 509613, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $l: () => O,
-  CB: () => y,
-  Em: () => N,
-  IC: () => E,
-  J9: () => P,
-  ON: () => D,
-  Ql: () => d,
-  UO: () => A,
-  US: () => v,
-  Uc: () => S,
-  ax: () => T,
-  eD: () => R,
-  k4: () => b,
-  m7: () => m,
-  qs: () => C,
-  so: () => p,
-  vB: () => _,
-  wf: () => h,
-  x1: () => g
+  $l: () => v,
+  CB: () => O,
+  Em: () => P,
+  IC: () => b,
+  J9: () => R,
+  ON: () => w,
+  Ql: () => f,
+  UO: () => N,
+  US: () => S,
+  Uc: () => I,
+  ax: () => C,
+  eD: () => D,
+  k4: () => y,
+  m7: () => h,
+  qs: () => A,
+  so: () => _,
+  vB: () => m,
+  wf: () => g,
+  x1: () => E
 }), require("./388685.js"), require("./415506.js");
 var Chunk28682 = require("./28682.js");
 
@@ -85,7 +85,7 @@ function u(e) {
   return "function" == typeof(null == e ? true : e.buildLayout)
 }
 
-function d(e, t) {
+function d(e) {
   if (u(e)) {
     let t = e.buildLayout().map(e => d(e)),
       {
@@ -99,88 +99,92 @@ function d(e, t) {
   return e
 }
 
-function f(e, t, n) {
+function f(e) {
+  return d(e)
+}
+
+function p(e, t, n) {
   return s(a({}, n), {
     key: e,
     type: t
   })
 }
 
-function p(e) {
-  return f("$Root", r.Jq.ROOT, e)
-}
-
-function _(e, t) {
-  return f(e, r.Jq.SECTION, t)
+function _(e) {
+  return p("$Root", r.Jq.ROOT, e)
 }
 
 function m(e, t) {
-  return f(e, r.Jq.SIDEBAR_ITEM, t)
+  return p(e, r.Jq.SECTION, t)
 }
 
 function h(e, t) {
-  return f(e, r.Jq.PANEL, t)
+  return p(e, r.Jq.SIDEBAR_ITEM, t)
 }
 
 function g(e, t) {
-  return f(e, r.Jq.PANE, t)
+  return p(e, r.Jq.PANEL, t)
 }
 
 function E(e, t) {
-  return f(e, r.Jq.SPLIT, t)
+  return p(e, r.Jq.PANE, t)
 }
 
 function b(e, t) {
-  return f(e, r.Jq.CATEGORY, t)
+  return p(e, r.Jq.SPLIT, t)
 }
 
 function y(e, t) {
-  return f(e, r.Jq.ACCORDION, t)
+  return p(e, r.Jq.CATEGORY, t)
 }
 
 function O(e, t) {
-  return f(e, r.Jq.LIST, t)
+  return p(e, r.Jq.ACCORDION, t)
 }
 
 function v(e, t) {
-  return f(e, r.Jq.RELATED, t)
+  return p(e, r.Jq.LIST, t)
 }
 
 function S(e, t) {
-  return f(e, r.Jq.FIELD_SET, t)
+  return p(e, r.Jq.RELATED, t)
 }
 
-function I(e, t, n) {
+function I(e, t) {
+  return p(e, r.Jq.FIELD_SET, t)
+}
+
+function T(e, t, n) {
   return s(a({}, n), {
     key: e,
     type: t
   })
 }
 
-function T(e, t) {
-  return I(e, r.Jq.BUTTON, t)
-}
-
 function C(e, t) {
-  return I(e, r.Jq.TOGGLE, t)
+  return T(e, r.Jq.BUTTON, t)
 }
 
 function A(e, t) {
-  return I(e, r.Jq.SLIDER, t)
+  return T(e, r.Jq.TOGGLE, t)
 }
 
 function N(e, t) {
-  return I(e, r.Jq.SELECT, t)
+  return T(e, r.Jq.SLIDER, t)
 }
 
 function P(e, t) {
-  return I(e, r.Jq.RADIO, t)
+  return T(e, r.Jq.SELECT, t)
 }
 
 function R(e, t) {
-  return I(e, r.Jq.NAVIGATOR, t)
+  return T(e, r.Jq.RADIO, t)
 }
 
 function D(e, t) {
-  return I(e, r.Jq.CUSTOM, t)
+  return T(e, r.Jq.NAVIGATOR, t)
+}
+
+function w(e, t) {
+  return T(e, r.Jq.CUSTOM, t)
 }

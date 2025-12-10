@@ -50,7 +50,6 @@ function x(e, t, n, i) {
     channelId: n,
     initialLayout: D,
     analyticsContext: i,
-    isStreamer: null != C[e],
     parentMediaSessionId: O.Z.getMediaSessionId()
   })
 }
@@ -70,44 +69,45 @@ function M() {
 }
 
 function k(e) {
+  var t, n;
   let {
-    streamType: t,
-    guildId: n,
-    channelId: r,
-    appContext: i,
-    pid: a,
-    sourceId: o,
-    sourcePid: s,
-    nativePickerStyleUsed: c,
-    goLiveModalDurationMs: u,
-    analyticsLocations: d
-  } = e, p = (0, _.V9)({
-    streamType: t,
-    guildId: n,
-    channelId: r,
+    streamType: r,
+    guildId: i,
+    channelId: a,
+    appContext: o,
+    pid: s,
+    sourceId: c,
+    sourcePid: u,
+    nativePickerStyleUsed: d,
+    goLiveModalDurationMs: p,
+    analyticsLocations: m
+  } = e, h = (0, _.V9)({
+    streamType: r,
+    guildId: i,
+    channelId: a,
     ownerId: E.default.getId()
   });
-  if (T[p] = {
-      appContext: i,
-      analyticsLocations: d
+  if (T[h] = {
+      appContext: o,
+      analyticsLocations: m
     }, l().forEach(w, e => {
       let {
         analyticsContext: t,
         isOwner: n
       } = e;
-      t.setActionContext(i), t.setNativePickerStyleUsed(c), n && t.trackStart()
-    }), null == a && (a = s), N[p] = o, A[p] = a, null != a) {
-    let e = f.ZP.getGameForPID(a);
-    null != e && (C[p] = {
+      t.setActionContext(o), t.setNativePickerStyleUsed(d), n && t.trackStart()
+    }), null == s && (s = u), N[h] = c, A[h] = s, null != s) {
+    let e = f.ZP.getGameForPID(s);
+    null != e && (C[h] = {
       name: e.name,
       id: e.id,
       exe: e.exeName,
       distributor: e.distributor,
       sku: e.sku,
       gameMetadata: e.gameMetadata
-    })
-  }
-  null != u ? P[p] = u : delete P[p]
+    }), null == (t = w[h]) || t.analyticsContext.updateStreamApplication(C[h])
+  } else null == (n = w[h]) || n.analyticsContext.updateStreamApplication(null);
+  null != p ? P[h] = p : delete P[h]
 }
 
 function U(e) {
