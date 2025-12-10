@@ -19,7 +19,7 @@ function d(e) {
     emoji: d,
     setEmoji: m,
     channel: j
-  } = e, g = i.useRef(null), v = null == d || null == d.name ? null : () => {
+  } = e, g = i.useRef(null), p = null == d || null == d.name ? null : () => {
     var e;
     return (0, l.jsx)(o.Z, {
       className: n,
@@ -40,7 +40,7 @@ function d(e) {
         let {
           closePopout: t
         } = e;
-        return (0, l.jsx)(a.Z, {
+        return (0, l.jsx)(s.Z, {
           closePopout: t,
           onSelectEmoji: e => {
             var n, l;
@@ -65,7 +65,7 @@ function d(e) {
         let {
           isShown: o
         } = n;
-        return (0, l.jsx)(s.Z, (i = function(e) {
+        return (0, l.jsx)(a.Z, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               l = Object.keys(n);
@@ -87,7 +87,7 @@ function d(e) {
           tabIndex: 0,
           active: o,
           className: t,
-          renderButtonContents: v
+          renderButtonContents: p
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

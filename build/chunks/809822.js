@@ -1,8 +1,7 @@
 /** Chunk was on 82140 **/
-/** chunk id: 809822, original params: e,l,a (module,exports,require) **/
+/** chunk id: 809822, original params: e,l,t (module,exports,require) **/
 module.exports = {
-  modalHeader: "modalHeader_e6fa8e",
-  modalImage: "modalImage_e6fa8e",
+  infoList: "infoList_e6fa8e",
   infoListItem: "infoListItem_e6fa8e",
   iconWrapper: "iconWrapper_e6fa8e",
   deprivateTableBody: "deprivateTableBody_e6fa8e",

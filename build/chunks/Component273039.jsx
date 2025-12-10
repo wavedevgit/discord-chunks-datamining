@@ -21,7 +21,7 @@ function c(e) {
     n(), m(false)
   }, [n, m]);
   return (0, l.jsxs)("div", {
-    className: o()(a.container, c),
+    className: o()(s.container, c),
     onMouseEnter: () => {
       if (t) return void m(true);
       m(false)
@@ -29,9 +29,9 @@ function c(e) {
     onMouseLeave: () => {
       m(false)
     },
-    children: [r, t && d ? (0, l.jsx)(s.Z, {
+    children: [r, t && d ? (0, l.jsx)(a.Z, {
       onClick: j,
-      className: o()(a.removeButton, u)
+      className: o()(s.removeButton, u)
     }) : null]
   })
 }

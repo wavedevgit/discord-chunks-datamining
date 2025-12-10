@@ -1,9 +1,9 @@
 /** Chunk was on 81257 **/
 /** chunk id: 969632, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => D
 }), require("./388685.js");
-var r, Chunk392711 = require("./392711.js"),
+var l, Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -22,10 +22,10 @@ function c(e, n, t) {
 function _(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      r = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), r.forEach(function(n) {
+    }))), l.forEach(function(n) {
       c(e, n, t[n])
     })
   }
@@ -60,7 +60,7 @@ function T(e, n) {
 function g() {
   N = false, S = o().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(I)))
 }
-class h extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(l = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (d = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(a.Z, i.Z)
   }
@@ -101,8 +101,8 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     return null == t ? null : t
   }
 }
-c(h, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), c(h, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
-let C = new h(Chunk570140.Z, {
+c(C, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), c(C, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
+let D = new C(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: O,
   GUILD_SETTINGS_SET_SECTION: O,
   GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: O,
@@ -132,10 +132,10 @@ let C = new h(Chunk570140.Z, {
     } = e;
     if (null == n) S.welcomeMessage = true;
     else {
-      var t, r, l, o, u, s;
+      var t, l, r, o, u, s;
       S.welcomeMessage = {
-        authorIds: null != (o = null != (l = n.authorIds) ? l : null == (t = S.welcomeMessage) ? true : t.authorIds) ? o : [],
-        message: null != (s = null != (u = n.message) ? u : null == (r = S.welcomeMessage) ? true : r.message) ? s : ""
+        authorIds: null != (o = null != (r = n.authorIds) ? r : null == (t = S.welcomeMessage) ? true : t.authorIds) ? o : [],
+        message: null != (s = null != (u = n.message) ? u : null == (l = S.welcomeMessage) ? true : l.message) ? s : ""
       }
     }
   },
@@ -197,8 +197,8 @@ let C = new h(Chunk570140.Z, {
     var n;
     let {
       guildId: t,
-      channelIds: r
+      channelIds: l
     } = e;
-    d[t] = [...null != (n = d[t]) ? n : [], ...r]
+    d[t] = [...null != (n = d[t]) ? n : [], ...l]
   }
 })

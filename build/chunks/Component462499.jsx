@@ -1,16 +1,15 @@
 /** Chunk was on 84725 **/
 /** chunk id: 462499, original params: e,n,l (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => b
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
-  t = require.n(Chunk658722),
+  i = require.n(Chunk658722),
   Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
   Chunk668339 = require("./668339.jsx"),
-  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk471445 = require("./471445.js"),
   Chunk734893 = require("./734893.js"),
@@ -34,166 +33,148 @@ function f(e, n, l, a) {
   }
 }
 
-function _(e) {
+function b(e) {
   var n, l;
   let {
-    transitionState: r,
-    onClose: _,
+    transitionState: t,
+    onClose: b,
     resourceChannel: N,
-    guildId: Z,
-    onSave: y,
-    onDelete: G,
-    onIconUpload: H
-  } = e, [P, S] = i.useState(null != (n = null == N ? true : N.title) ? n : ""), [U, R] = i.useState(null != (l = null == N ? true : N.description) ? l : ""), [B, E] = i.useState(function(e) {
+    guildId: _,
+    onSave: Z,
+    onDelete: y,
+    onIconUpload: G
+  } = e, [S, P] = r.useState(null != (n = null == N ? true : N.title) ? n : ""), [U, H] = r.useState(null != (l = null == N ? true : N.description) ? l : ""), [K, L] = r.useState(function(e) {
     if (null == e) return null;
-    let n = x.Z.getChannel(e.channelId);
+    let n = p.Z.getChannel(e.channelId);
     return null == n ? null : {
       value: n.id,
       label: n.name
     }
-  }(N)), K = (0, o.e7)([C.Z], () => {
+  }(N)), M = (0, o.e7)([C.Z], () => {
     var e;
     return null == (e = C.Z.getResourceChannel(null == N ? true : N.channelId)) ? true : e.icon
-  }), L = (0, o.Wu)([C.Z], () => {
+  }), R = (0, o.Wu)([C.Z], () => {
     var e, n;
     return (null != (n = null == (e = C.Z.getSettings()) ? true : e.resourceChannels) ? n : []).map(e => e.channelId)
-  }), W = P.length < h.n || null == B, T = i.useCallback(() => {
-    null == B || P.length <= 0 || (y(f(B, P, U, K)), _())
-  }, [y, _, P, B, K, U]), w = i.useCallback(() => {
-    null == G || G(), _()
-  }, [G, _]), z = i.useCallback(e => {
-    E(e)
-  }, [E]), F = i.useCallback(e => Promise.resolve(g.ZP.getSelectableChannels(Z).filter(n => (0, h.k3)(n.channel) && !L.includes(n.channel.id) && t()(e, n.channel.name)).map(e => ({
+  }), E = S.length < m.n || null == K, T = r.useCallback(() => {
+    null == K || S.length <= 0 || (Z(f(K, S, U, M)), b())
+  }, [Z, b, S, K, M, U]), w = r.useCallback(() => {
+    null == y || y(), b()
+  }, [y, b]), z = r.useCallback(e => {
+    L(e)
+  }, [L]), B = r.useCallback(e => Promise.resolve(g.ZP.getSelectableChannels(_).filter(n => (0, m.k3)(n.channel) && !R.includes(n.channel.id) && i()(e, n.channel.name)).map(e => ({
     value: e.channel.id,
     label: e.channel.name
-  }))), [Z, L]), M = i.useCallback(e => {
-    if (null == e || null == Z) return null;
-    let n = x.Z.getChannel(e.value),
-      l = v.Z.getGuild(Z);
+  }))), [_, R]), O = r.useCallback(e => {
+    if (null == e || null == _) return null;
+    let n = p.Z.getChannel(e.value),
+      l = x.Z.getGuild(_);
     if (null == n || null == l) return null;
-    let i = (0, m.KS)(n, l);
-    return null == i ? null : (0, a.jsx)(i, {
+    let r = (0, d.KS)(n, l);
+    return null == r ? null : (0, a.jsx)(r, {
       size: "xs",
       color: "currentColor",
-      className: b.channelIcon
+      className: I.channelIcon
     })
-  }, [Z]), O = i.useCallback(e => {
-    null != H && null != B && H(f(B, P, U), e)
-  }, [B, P, H, U]), X = i.useCallback(() => null == K || null == B ? null : j.ZP.getResourceChannelIconURL({
-    channelId: B.value,
-    icon: K
-  }), [B, K]), D = i.useMemo(() => [{
+  }, [_]), X = r.useCallback(e => {
+    null != G && null != K && G(f(K, S, U), e)
+  }, [K, S, G, U]), D = r.useCallback(() => null == M || null == K ? null : v.ZP.getResourceChannelIconURL({
+    channelId: K.value,
+    icon: M
+  }), [K, M]), F = r.useMemo(() => [{
     variant: "secondary",
-    text: I.intl.string(I.t["ETE/oC"]),
-    onClick: _
+    text: k.intl.string(k.t["ETE/oC"]),
+    onClick: b
   }, {
     variant: "primary",
-    text: I.intl.string(I.t["R3BPH+"]),
+    text: k.intl.string(k.t["R3BPH+"]),
     onClick: T,
-    disabled: W
-  }], [T, W, _]);
-  return (0, a.jsxs)(s.IX, {
-    transitionState: r,
-    onClose: _,
-    children: [(0, a.jsx)("div", {
-      className: b.closeButton,
-      children: (0, a.jsx)(d.PZ7, {
-        onClick: _
-      })
+    disabled: E
+  }], [T, E, b]);
+  return (0, a.jsxs)(s.Modal, {
+    title: k.intl.string(k.t.SNMXYt),
+    transitionState: t,
+    onClose: b,
+    actions: F,
+    actionBarInput: null != N ? (0, a.jsx)(c.Avr, {
+      text: k.intl.string(k.t.N86XcP),
+      onClick: w,
+      variant: "critical"
+    }) : true,
+    children: [(0, a.jsxs)("div", {
+      className: I.formGroup,
+      children: [(0, a.jsxs)(c.Heading, {
+        variant: "heading-md/semibold",
+        color: "header-primary",
+        children: [k.intl.string(k.t.nPa4Ju), (0, a.jsx)(j.Z, {})]
+      }), (0, a.jsx)(u.d, {
+        value: K,
+        renderOptionPrefix: O,
+        options: B,
+        onChange: z
+      }), (0, a.jsx)(c.Text, {
+        variant: "text-xs/medium",
+        color: "text-muted",
+        children: k.intl.string(k.t.eNDtJK)
+      })]
+    }), (0, a.jsx)("div", {
+      className: I.separator
     }), (0, a.jsxs)("div", {
-      className: b.containerWithHeader,
-      children: [(0, a.jsx)("div", {
-        className: b.splitGroup,
-        children: (0, a.jsx)("div", {
-          className: b.header,
-          children: (0, a.jsx)(u.Heading, {
-            variant: "heading-md/semibold",
-            color: "header-primary",
-            children: I.intl.string(I.t.iREYFC)
-          })
-        })
-      }), (0, a.jsxs)("div", {
-        className: b.formGroup,
-        children: [(0, a.jsxs)(u.Heading, {
+      className: I.formGroup,
+      children: [(0, a.jsxs)(c.Heading, {
+        variant: "heading-md/semibold",
+        color: "header-primary",
+        children: [k.intl.string(k.t["lFy+aW"]), (0, a.jsx)(j.Z, {})]
+      }), (0, a.jsx)(c.oil, {
+        value: S,
+        onChange: P,
+        placeholder: k.intl.string(k.t.XKUimI),
+        maxLength: m.am
+      })]
+    }), (0, a.jsx)("div", {
+      className: I.separator
+    }), (0, a.jsxs)("div", {
+      className: I.formGroup,
+      children: [(0, a.jsx)(c.Heading, {
+        variant: "heading-md/semibold",
+        color: "header-primary",
+        children: k.intl.string(k.t.CnkilH)
+      }), (0, a.jsx)(c.Kx8, {
+        value: U,
+        onChange: H,
+        placeholder: k.intl.string(k.t.na0V4E),
+        maxLength: m.Vu
+      })]
+    }), (0, a.jsx)("div", {
+      className: I.separator
+    }), (0, a.jsxs)("div", {
+      className: I.splitGroup,
+      children: [(0, a.jsxs)("div", {
+        children: [(0, a.jsx)(c.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          children: [I.intl.string(I.t.nPa4Ju), (0, a.jsx)(k.Z, {})]
-        }), (0, a.jsx)(c.d, {
-          value: B,
-          renderOptionPrefix: M,
-          options: F,
-          onChange: z
-        }), (0, a.jsx)(u.Text, {
+          children: k.intl.string(k.t.CB6dyu)
+        }), (0, a.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: I.intl.string(I.t.eNDtJK)
+          children: k.intl.string(k.t.Kcdk7D)
         })]
       }), (0, a.jsx)("div", {
-        className: b.separator
-      }), (0, a.jsxs)("div", {
-        className: b.formGroup,
-        children: [(0, a.jsxs)(u.Heading, {
-          variant: "heading-md/semibold",
-          color: "header-primary",
-          children: [I.intl.string(I.t["lFy+aW"]), (0, a.jsx)(k.Z, {})]
-        }), (0, a.jsx)(u.oil, {
-          value: P,
-          onChange: S,
-          placeholder: I.intl.string(I.t.XKUimI),
-          maxLength: h.am
-        })]
-      }), (0, a.jsx)("div", {
-        className: b.separator
-      }), (0, a.jsxs)("div", {
-        className: b.formGroup,
-        children: [(0, a.jsx)(u.Heading, {
-          variant: "heading-md/semibold",
-          color: "header-primary",
-          children: I.intl.string(I.t.CnkilH)
-        }), (0, a.jsx)(u.Kx8, {
-          value: U,
-          onChange: R,
-          placeholder: I.intl.string(I.t.na0V4E),
-          maxLength: h.Vu
-        })]
-      }), (0, a.jsx)("div", {
-        className: b.separator
-      }), (0, a.jsxs)("div", {
-        className: b.splitGroup,
-        children: [(0, a.jsxs)("div", {
-          children: [(0, a.jsx)(u.Heading, {
-            variant: "heading-md/semibold",
-            color: "header-primary",
-            children: I.intl.string(I.t.CB6dyu)
-          }), (0, a.jsx)(u.Text, {
-            variant: "text-xs/medium",
-            color: "text-muted",
-            children: I.intl.string(I.t.Kcdk7D)
-          })]
-        }), (0, a.jsx)("div", {
-          children: (0, a.jsx)(p.Z, {
-            className: b.uploader,
-            imageClassName: b.uploadImage,
-            image: K,
-            makeURL: X,
-            icon: (0, a.jsx)(u.rG2, {
-              size: "md",
-              color: "currentColor"
-            }),
-            hideSize: true,
-            onChange: O,
-            iconClassName: b.uploadImageIcon,
-            showIcon: null == K
-          })
-        })]
+        children: (0, a.jsx)(h.Z, {
+          className: I.uploader,
+          imageClassName: I.uploadImage,
+          image: M,
+          makeURL: D,
+          icon: (0, a.jsx)(c.rG2, {
+            size: "md",
+            color: "currentColor"
+          }),
+          hideSize: true,
+          onChange: X,
+          iconClassName: I.uploadImageIcon,
+          showIcon: null == M
+        })
       })]
-    }), (0, a.jsx)(s.Go$, {
-      actions: D,
-      leading: null != N ? (0, a.jsx)(u.Avr, {
-        text: I.intl.string(I.t.N86XcP),
-        variant: "critical",
-        onClick: w
-      }) : true
     })]
   })
 }

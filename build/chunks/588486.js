@@ -59,6 +59,7 @@ class E extends Chunk495852.C {
       assignmentMode: 0,
       enableEditRawJsonUi: false,
       winningVariationId: 0,
+      extraOutcomeContext: "",
       type: 0,
       isTemplate: false,
       fieldNumbersToCopy: [],
@@ -150,6 +151,9 @@ class E extends Chunk495852.C {
         case 24:
           a.winningVariationId = e.int32();
           break;
+        case 34:
+          a.extraOutcomeContext = e.string();
+          break;
         case 26:
           a.type = e.int32();
           break;
@@ -173,6 +177,9 @@ class E extends Chunk495852.C {
         case 32:
           a.isAutomatedChange = e.bool();
           break;
+        case 33:
+          a.archiveAt = c.E.internalBinaryRead(e, e.uint32(), n, a.archiveAt);
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -191,13 +198,13 @@ class E extends Chunk495852.C {
       for (let n = 0; n < e.surfaces.length; n++) t.int32(e.surfaces[n]);
       t.join()
     }
-    if ("" !== e.owningTeamId && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamId), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId), 0 !== e.type && t.tag(26, r.TD.Varint).int32(e.type), false !== e.isTemplate && t.tag(27, r.TD.Varint).bool(e.isTemplate), e.fieldNumbersToCopy.length) {
+    if ("" !== e.owningTeamId && t.tag(20, r.TD.LengthDelimited).string(e.owningTeamId), "0" !== e.cachedNotificationChannelId && t.tag(21, r.TD.Bit64).fixed64(e.cachedNotificationChannelId), 0 !== e.exposureTracking && t.tag(22, r.TD.Varint).int32(e.exposureTracking), 0 !== e.assignmentMode && t.tag(25, r.TD.Varint).int32(e.assignmentMode), false !== e.enableEditRawJsonUi && t.tag(23, r.TD.Varint).bool(e.enableEditRawJsonUi), 0 !== e.winningVariationId && t.tag(24, r.TD.Varint).int32(e.winningVariationId), "" !== e.extraOutcomeContext && t.tag(34, r.TD.LengthDelimited).string(e.extraOutcomeContext), 0 !== e.type && t.tag(26, r.TD.Varint).int32(e.type), false !== e.isTemplate && t.tag(27, r.TD.Varint).bool(e.isTemplate), e.fieldNumbersToCopy.length) {
       t.tag(28, r.TD.LengthDelimited).fork();
       for (let n = 0; n < e.fieldNumbersToCopy.length; n++) t.int32(e.fieldNumbersToCopy[n]);
       t.join()
     }
     for (let n = 0; n < e.engineFeatureFlags.length; n++) t.tag(29, r.TD.LengthDelimited).string(e.engineFeatureFlags[n]);
-    e.debugConfig && I.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join(), false !== e.isAutomatedChange && t.tag(32, r.TD.Varint).bool(e.isAutomatedChange);
+    e.debugConfig && I.internalBinaryWrite(e.debugConfig, t.tag(30, r.TD.LengthDelimited).fork(), n).join(), e.expectedEndDate && c.E.internalBinaryWrite(e.expectedEndDate, t.tag(31, r.TD.LengthDelimited).fork(), n).join(), false !== e.isAutomatedChange && t.tag(32, r.TD.Varint).bool(e.isAutomatedChange), e.archiveAt && c.E.internalBinaryWrite(e.archiveAt, t.tag(33, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -326,6 +333,11 @@ class E extends Chunk495852.C {
       kind: "scalar",
       T: 5
     }, {
+      no: 34,
+      name: "extra_outcome_context",
+      kind: "scalar",
+      T: 9
+    }, {
       no: 26,
       name: "type",
       kind: "enum",
@@ -362,6 +374,11 @@ class E extends Chunk495852.C {
       name: "is_automated_change",
       kind: "scalar",
       T: 8
+    }, {
+      no: 33,
+      name: "archive_at",
+      kind: "message",
+      T: () => Chunk835913.E
     }])
   }
 }
