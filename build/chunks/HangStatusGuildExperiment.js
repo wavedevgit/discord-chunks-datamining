@@ -2,14 +2,13 @@
 /** chunk id: 574176, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  bN: () => s,
-  gx: () => l,
-  n5: () => o
+  bN: () => o,
+  gx: () => s,
+  n5: () => a
 });
-var Chunk973285 = require("./973285.js"),
-  Chunk818083 = require("./818083.js"),
+var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "guild",
   id: "2025-07_hang_status",
   label: "Hang Statuses",
@@ -64,40 +63,28 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function s(e) {
+function o(e) {
   let {
     guildId: t,
     location: n
-  } = e, {
-    enabled: i
-  } = r.W.useExperiment({
-    guildId: t,
-    location: n
-  });
-  return o.useExperiment({
+  } = e;
+  return a.useExperiment({
     guildId: t,
     location: n
   }, {
-    disable: !i,
     autoTrackExposure: true
   })
 }
 
-function l(e) {
+function s(e) {
   let {
     guildId: t,
     location: n
-  } = e, {
-    enabled: i
-  } = r.W.getCurrentConfig({
-    guildId: t,
-    location: n
-  });
-  return o.getCurrentConfig({
+  } = e;
+  return a.getCurrentConfig({
     guildId: t,
     location: n
   }, {
-    disable: !i,
     autoTrackExposure: true
   })
 }

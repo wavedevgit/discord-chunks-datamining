@@ -155,8 +155,8 @@ let T = Chunk473749.memo(function(e) {
       }))
     })
   }, [t.id]), V = null == R ? 0 : R.length, H = (0, a.JA)(t.id), {
-    role: W
-  } = H, z = function(e, t) {
+    role: z
+  } = H, W = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -179,7 +179,7 @@ let T = Chunk473749.memo(function(e) {
     channelName: t.name
   });
   return (0, r.jsxs)("li", {
-    role: W,
+    role: z,
     className: o()(S.containerDefault, {
       [S.selected]: l
     }),
@@ -210,7 +210,7 @@ let T = Chunk473749.memo(function(e) {
         onContextMenu: F,
         children: [!L || G || l ? null : (0, r.jsx)("div", {
           className: o()(I.unread, I.unreadImportant)
-        }), (0, r.jsx)(u.P3F, Z(N({}, z), {
+        }), (0, r.jsx)(u.P3F, Z(N({}, W), {
           innerRef: K,
           className: I.link,
           onClick: U,

@@ -54,8 +54,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       "aria-posinset": V
     } = e, {
       id: H,
-      name: W,
-      children: z
+      name: z,
+      children: W
     } = t, [K, Y] = i.useState(false), [q, X] = i.useState(false), Q = K || q, J = (0, p.Ml)("FolderItem");
     i.useEffect(() => {
       R && Y(false)
@@ -78,12 +78,12 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != W && "" !== W ? W : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, f.dQu)(f.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, f.dQu)(f.TVs.space.SPACE_XS);
       return e * (n + r) - r + (r - (t - n) / 2) + (0, f.dQu)(f.TVs.space.SPACE_4)
-    }(z.length), ea = (0, f.Yzy)(!$ && s, {
+    }(W.length), ea = (0, f.Yzy)(!$ && s, {
       from: {
         height: 0
       },
@@ -170,7 +170,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             height: e.height.to(e => e * eo)
           },
           "aria-label": t.name,
-          children: z.map((t, n) => G(t, n, z.length, e.height))
+          children: W.map((t, n) => G(t, n, W.length, e.height))
         }, l)
       }), A && s ? (0, r.jsx)(O.Zu, {
         name: er,

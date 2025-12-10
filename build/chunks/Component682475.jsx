@@ -72,21 +72,25 @@ function ed() {
       id: "analytics",
       name: "Analytics",
       group: Chunk621060.v0.EXPERIMENTS,
+      tags: ["events", "impressions", "tracking"],
       render: () => (0, Chunk54381.jsx)(Chunk926976.Z, {})
     }, {
       id: "triggers",
       name: "Triggers",
       group: Chunk621060.v0.EXPERIMENTS,
+      tags: ["experiments", "exposure", "buckets"],
       render: () => (0, Chunk54381.jsx)(Chunk596768.Z, {})
     }, {
       id: "stores",
       name: "Stores",
       group: Chunk621060.v0.EVENTS,
+      tags: ["flux", "state"],
       render: () => (0, Chunk54381.jsx)(Chunk678639.Z, {})
     }, {
       id: "dispatcher",
       name: "Dispatcher",
       group: Chunk621060.v0.EVENTS,
+      tags: ["flux", "actions"],
       render: () => (0, Chunk54381.jsx)(Chunk916790.Z, {})
     }];
     return Chunk906467.Z.isDeveloper && (module.push({
@@ -98,6 +102,7 @@ function ed() {
       id: "payment_flow_modals",
       name: "Payment Flow Modals",
       group: Chunk621060.v0.BILLING,
+      tags: ["gifts", "nitro", "boost", "sku", "collectibles"],
       render: () => (0, Chunk54381.jsx)(Chunk778648.Z, {})
     }), module.push({
       id: "shop_collectibles",
@@ -108,16 +113,19 @@ function ed() {
       id: "quick_actions",
       name: "Quick Actions",
       group: Chunk621060.v0.DEVELOPMENT,
+      tags: ["captcha", "safety", "checkpoint", "vibe", "vibing", "override", "premium type"],
       render: () => (0, Chunk54381.jsx)(Chunk514866.Z, {})
     }), module.push({
       id: "end_to_end_encryption",
       name: "E2EE",
       group: Chunk621060.v0.DEVELOPMENT,
+      tags: ["secure frames", "encryption"],
       render: () => (0, Chunk54381.jsx)(Chunk645973.Z, {})
     }), module.push({
       id: "performance",
       name: "Performance",
       group: Chunk621060.v0.DEVELOPMENT,
+      tags: ["fps", "frames", "gateway", "telemetry"],
       render: () => (0, Chunk54381.jsx)(Chunk178821.ZP, {})
     }), module.push({
       id: "age_verification",
@@ -128,6 +136,7 @@ function ed() {
       id: "feedback",
       name: "Feedback",
       group: Chunk621060.v0.USERS,
+      tags: ["surveys"],
       render: () => (0, Chunk54381.jsx)(Chunk903502.Z, {})
     }), module.push({
       id: "overlay",
@@ -158,21 +167,25 @@ function ed() {
       id: "rive",
       name: "Rive",
       group: Chunk621060.v0.UI,
+      tags: ["animation"],
       render: () => (0, Chunk54381.jsx)(Chunk763577.Z, {})
     }), module.push({
       id: "lottie",
       name: "Lottie",
       group: Chunk621060.v0.UI,
+      tags: ["animation"],
       render: () => (0, Chunk54381.jsx)(Chunk546895.Z, {})
     }), module.push({
       id: "intl",
       name: "Intl",
       group: Chunk621060.v0.UI,
+      tags: ["i18n", "localization", "messages"],
       render: () => (0, Chunk54381.jsx)(Chunk735959.Z, {})
     }), module.push({
       id: "colors",
       name: "Colors",
       group: Chunk621060.v0.UI,
+      tags: ["tokens", "themes", "palette"],
       render: () => (0, Chunk54381.jsx)(Chunk789654.Z, {})
     }), module.push({
       id: "design_toggles",
@@ -195,6 +208,7 @@ function ed() {
       id: "messaging",
       name: "Messaging",
       group: Chunk621060.v0.USERS,
+      tags: ["dm", "nux", "system dm"],
       render: () => (0, Chunk54381.jsx)(Chunk496025.Z, {})
     }), module.push({
       id: "reporting",
@@ -212,21 +226,25 @@ function ed() {
       id: "modals",
       name: "Modals",
       group: Chunk621060.v0.UI,
+      tags: ["dialogs", "popups"],
       render: () => (0, Chunk54381.jsx)(Chunk442954.Z, {})
     }), module.push({
       id: "layers",
       name: "Layers",
       group: Chunk621060.v0.UI,
+      tags: ["verification", "safety flow"],
       render: () => (0, Chunk54381.jsx)(Chunk484662.Z, {})
     }), module.push({
       id: "affinity",
       name: "Affinity",
       group: Chunk621060.v0.USERS,
+      tags: ["friends"],
       render: () => (0, Chunk54381.jsx)(Chunk392750.Z, {})
     }), module.push({
       id: "widgets",
       name: "Widgets",
       group: Chunk621060.v0.USERS,
+      tags: ["games", "profile"],
       render: () => (0, Chunk54381.jsx)(Chunk820400.Z, {})
     }), Chunk906467.Z.isDeveloper && (module.push({
       id: "content_inventory",
@@ -252,16 +270,19 @@ function ed() {
       id: "hotspots",
       name: "Hotspots",
       group: Chunk621060.v0.EXPERIMENTS,
+      tags: ["coachmarks", "nux", "onboarding"],
       render: () => (0, Chunk54381.jsx)(Chunk698901.Z, {})
     }), module.push({
       id: "perks",
       name: "Perks",
       group: Chunk621060.v0.PREMIUM,
+      tags: ["nitro", "tenure", "badges", "level up"],
       render: () => (0, Chunk54381.jsx)(Chunk891401.Z, {})
     }), module.push({
       id: "potions",
       name: "Potions",
       group: Chunk621060.v0.PREMIUM,
+      tags: ["consumables", "entitlements", "confetti"],
       render: () => (0, Chunk54381.jsx)(Chunk315384.Z, {})
     }), window.GLOBAL_ENV.RELEASE_CHANNEL.startsWith("staging") && (module.push({
       id: "offers",
@@ -273,16 +294,19 @@ function ed() {
       id: "payments",
       name: "Payments",
       group: Chunk621060.v0.BILLING,
+      tags: ["stripe", "cards", "test cards"],
       render: () => (0, Chunk54381.jsx)(Chunk702904.Z, {})
     }), module.push({
       id: "subscriptions",
       name: "Subscriptions",
       group: Chunk621060.v0.PREMIUM,
+      tags: ["nitro", "reverse trial"],
       render: () => (0, Chunk54381.jsx)(Chunk260950.Z, {})
     }), module.push({
       id: "fractional_nitro",
       name: "Fractional Nitro",
       group: Chunk621060.v0.PREMIUM,
+      tags: ["entitlements", "quests"],
       render: () => (0, Chunk54381.jsx)(Chunk604776.Z, {})
     }), module.push({
       id: "nitro_storybook",
@@ -293,21 +317,25 @@ function ed() {
       id: "gifting_intent",
       name: "Gifting Intent",
       group: Chunk621060.v0.PREMIUM,
+      tags: ["friends", "anniversary"],
       render: () => (0, Chunk54381.jsx)(Chunk272193.Z, {})
     }), module.push({
       id: "voice_filters",
       name: "Voice Filters",
       group: Chunk621060.v0.AUDIO_VIDEO,
+      tags: ["soundboard", "effects"],
       render: () => (0, Chunk54381.jsx)(Chunk56706.Z, {})
     }), module.push({
       id: "krisp_tester",
       name: "Krisp Tester",
       group: Chunk621060.v0.AUDIO_VIDEO,
+      tags: ["noise cancellation", "audio", "vad"],
       render: () => (0, Chunk54381.jsx)(Chunk572444.Z, {})
     }), module.push({
       id: "skill_trees",
       name: "Skill Trees",
       group: Chunk621060.v0.BOOSTING,
+      tags: ["boosting", "powerups", "server tag"],
       render: () => (0, Chunk54381.jsx)(Chunk685560.Z, {})
     }), module.push({
       id: "game_server",

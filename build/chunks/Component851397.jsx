@@ -107,7 +107,7 @@ function x(e) {
       color: "currentColor",
       colorClass: j.itemIconShop
     })
-  }) : null : null, [S, I]), W = i.useCallback(() => (0, r.jsx)(_.A, {
+  }) : null : null, [S, I]), z = i.useCallback(() => (0, r.jsx)(_.A, {
     shape: "custom",
     containerClassName: j.card,
     backgroundImageClassName: j.cardBackgroundImage,
@@ -139,7 +139,7 @@ function x(e) {
     buttonCTALabel: B,
     buttonIcon: F,
     isOwned: G,
-    renderItemPreview: W,
+    renderItemPreview: z,
     renderSourceIcon: H
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
