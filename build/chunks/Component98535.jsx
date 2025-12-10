@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,7 +12,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk960048 = require("./960048.js"),
   Chunk597688 = require("./597688.js"),
   Chunk1870 = require("./1870.js"),
-  Chunk870289 = require("./870289.js"),
   Chunk149705 = require("./149705.js"),
   Chunk929255 = require("./929255.jsx"),
   Chunk752053 = require("./752053.jsx"),
@@ -20,28 +19,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk566564 = require("./566564.jsx"),
   Chunk795477 = require("./795477.jsx"),
   Chunk215023 = require("./215023.js");
-let b = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
+let _ = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function v(e) {
+function b(e) {
   let {
     tab: t,
     sortedCategories: n,
-    transitionToTab: o,
+    transitionToTab: s,
     transitionState: a,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, m = E();
-  S(m);
-  let v = (0, i.e7)([s.Z], () => s.Z.useReducedMotion),
-    [O, x] = l.useState(true),
-    [y, j] = l.useState(true),
-    k = l.useMemo(() => n.filter(e => !_.y8.some(t => {
+  } = e, p = v();
+  E(p);
+  let b = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
+    [S, O] = l.useState(true),
+    [x, y] = l.useState(true),
+    j = l.useMemo(() => n.filter(e => !C.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
       return n === e.skuId
     })), [n]),
-    T = l.useCallback(e => {
+    k = l.useCallback(e => {
       let {
         sourceButton: t,
         categorySkuId: n,
@@ -50,39 +49,38 @@ function v(e) {
         isOrbsExclusive: i
       } = e;
       c(t, n);
-      let s = r && !v,
-        a = i ? _.AW.ORBS : _.AW.CATALOG;
-      x(n), j(!l), o(a, s)
-    }, [v, o, c]),
-    I = (0, d.FF)("CollectiblesContent"),
+      let o = r && !b,
+        a = i ? C.AW.ORBS : C.AW.CATALOG;
+      O(n), y(!l), s(a, o)
+    }, [b, s, c]),
     {
-      searchError: L
-    } = (0, g.a)();
-  return I && null != L ? (0, r.jsx)(h.Z, {}) : null != m ? (0, r.jsx)(p.Z, {
+      searchError: T
+    } = (0, d.a)();
+  return null != T ? (0, r.jsx)(h.Z, {}) : null != p ? (0, r.jsx)(f.Z, {
     onRetry: u,
-    errorMessage: m,
-    errorOrigin: p.i.SHOP_PAGE
-  }) : b.includes(t) ? (0, r.jsx)(C.Z, {
-    handleTransition: T,
+    errorMessage: p,
+    errorOrigin: f.i.SHOP_PAGE
+  }) : _.includes(t) ? (0, r.jsx)(m.Z, {
+    handleTransition: k,
     tab: t,
     transitionState: a
-  }) : (0, r.jsx)(f.Z, {
+  }) : (0, r.jsx)(g.Z, {
     tab: t,
-    sortedCategories: k,
-    initialCategoryId: O,
-    showFilterInitially: y,
+    sortedCategories: j,
+    initialCategoryId: S,
+    showFilterInitially: x,
     onUnmount: () => {
-      x(true), j(true)
+      O(true), y(true)
     }
   })
 }
-let E = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  S = e => {
-    let t = (0, i.e7)([o.default], () => o.default.getCurrentUser()),
+let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+  E = e => {
+    let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, m.Z)();
+      } = (0, p.Z)();
     l.useEffect(() => {
       var l, i;
       null != e && a.Z.captureMessage(e, {

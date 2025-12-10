@@ -32,7 +32,7 @@ function b() {
 
 function Z(e) {
   let t = function(e) {
-      let t = (0, s.Wu)([u.Z, f.Z, c.Z], () => a()(f.Z.getThreadsForParent(e.guild_id, e.id)).values().map(e => {
+      let t = (0, s.Wu)([u.Z, m.Z, c.Z], () => a()(m.Z.getThreadsForParent(e.guild_id, e.id)).values().map(e => {
         let {
           id: t
         } = e;
@@ -48,7 +48,7 @@ function Z(e) {
 }
 
 function w(e) {
-  let t = (0, s.Wu)([u.Z, f.Z, c.Z], () => a()(f.Z.getThreadsForGuild(e)).values().map(e => a().values(e)).flatten().map(e => {
+  let t = (0, s.Wu)([u.Z, m.Z, c.Z], () => a()(m.Z.getThreadsForGuild(e)).values().map(e => a().values(e)).flatten().map(e => {
     let {
       id: t
     } = e;
@@ -64,14 +64,14 @@ function O(e, t, n, l) {
     } = (0, i.N)(e.id),
     {
       canLoadMore: g,
-      loading: f,
+      loading: m,
       nextOffset: j,
       isInitialLoad: x
-    } = (0, s.cj)([m.Z], () => ({
-      loading: m.Z.isLoading(e.id, t, n, l),
-      isInitialLoad: m.Z.isInitialLoad,
-      canLoadMore: m.Z.canLoadMore,
-      nextOffset: m.Z.nextOffset
+    } = (0, s.cj)([f.Z], () => ({
+      loading: f.Z.isLoading(e.id, t, n, l),
+      isInitialLoad: f.Z.isInitialLoad,
+      canLoadMore: f.Z.canLoadMore,
+      nextOffset: f.Z.nextOffset
     })),
     b = r.useCallback(() => {
       u.Z.can(p.Pl.READ_MESSAGE_HISTORY, e) && (!d || h) && v.Z.loadArchivedThreads({
@@ -91,13 +91,13 @@ function O(e, t, n, l) {
   }, [e.id, t, n, x, h]), r.useEffect(() => {
     o.Z.resort(e.id)
   }, [e.id, h]), {
-    threadIds: (0, s.Wu)([m.Z, c.Z, u.Z], () => a()(m.Z.getThreads(e.id, t, n, l)).filter(e => {
+    threadIds: (0, s.Wu)([f.Z, c.Z, u.Z], () => a()(f.Z.getThreads(e.id, t, n, l)).filter(e => {
       if (d && !h) returnfalse;
       let t = c.Z.getChannel(e);
       return null != t && u.Z.can(p.Pl.VIEW_CHANNEL, t)
     }).value()),
     canLoadMore: g,
-    loading: (f || x) && h,
+    loading: (m || x) && h,
     loadMore: b
   }
 }

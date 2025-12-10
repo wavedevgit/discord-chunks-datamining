@@ -2,8 +2,8 @@
 /** chunk id: 501431, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => E,
-  S: () => b
+  A: () => v,
+  S: () => _
 }), require("./388685.js"), require("./781311.js"), require("./642613.js"), require("./49124.js");
 var Chunk473749 = require("./473749.js"),
   Chunk663042 = require("./663042.js"),
@@ -11,10 +11,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk497598 = require("./497598.js"),
   Chunk792091 = require("./792091.js"),
   Chunk653654 = require("./653654.js"),
-  Chunk870289 = require("./870289.js"),
   Chunk149705 = require("./149705.js");
 
-function d(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +32,7 @@ function d(e) {
   return e
 }
 
-function g(e, t) {
+function d(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,19 +45,19 @@ function g(e, t) {
   }), e
 }
 
-function f(e, t) {
+function g(e, t) {
   let n = new Set(e);
   return n.has(t) ? n.delete(t) : n.add(t), n
 }
-let p = {
+let f = {
     sortType: Chunk792091.E.RECENCY,
     sortDirection: Chunk497598.F.DESC
   },
-  m = {
+  p = {
     sortType: Chunk792091.E.POPULARITY,
     sortDirection: Chunk497598.F.DESC
   },
-  C = {
+  m = {
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   },
@@ -67,7 +66,7 @@ let p = {
     colorFilters: new Set,
     themeFilters: new Set,
     orbEligible: false,
-    sort: p,
+    sort: f,
     searchQuery: "",
     queryPageSize: 0,
     queryPageOffset: 0,
@@ -75,17 +74,17 @@ let p = {
     userHasSelectedSort: false,
     currentTab: null
   },
-  _ = e => {
+  C = e => {
     let {
       colorFilters: t,
       themeFilters: n,
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? C : l.size > 0 ? m : p
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? m : l.size > 0 ? p : f
   },
-  b = (0, Chunk663042.U)((0, Chunk690775.XR)((e, t) => g(d({}, h), {
-    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === p.sortType && t().sort.sortDirection === p.sortDirection,
+  _ = (0, Chunk663042.U)((0, Chunk690775.XR)((e, t) => d(u({}, h), {
+    hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
     hasFilters: () => {
       let {
         itemTypeFilters: e,
@@ -106,41 +105,41 @@ let p = {
     },
     onToggleItemType: t => {
       e(e => {
-        let n = f(e.itemTypeFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.itemTypeFilters, t),
+          r = d(u({}, e), {
             itemTypeFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = _(r)), r
+        return e.userHasSelectedSort || (r.sort = C(r)), r
       })
     },
     onToggleColor: t => {
       e(e => {
-        let n = f(e.colorFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.colorFilters, t),
+          r = d(u({}, e), {
             colorFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = _(r)), r
+        return e.userHasSelectedSort || (r.sort = C(r)), r
       })
     },
     onToggleTheme: t => {
       e(e => {
-        let n = f(e.themeFilters, t),
-          r = g(d({}, e), {
+        let n = g(e.themeFilters, t),
+          r = d(u({}, e), {
             themeFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = _(r)), r
+        return e.userHasSelectedSort || (r.sort = C(r)), r
       })
     },
     onToggleOrbEligible: () => {
       e(e => {
-        let t = g(d({}, e), {
+        let t = d(u({}, e), {
           orbEligible: !e.orbEligible,
           queryPageOffset: 0
         });
-        return e.userHasSelectedSort || (t.sort = _(t)), t
+        return e.userHasSelectedSort || (t.sort = C(t)), t
       })
     },
     onSetSort: t => {
@@ -151,15 +150,15 @@ let p = {
       })
     },
     onSetResponse: t => {
-      e(e => d({}, e, t))
+      e(e => u({}, e, t))
     },
     onSetSearchQuery: t => {
       e(e => {
-        let n = g(d({}, e), {
+        let n = d(u({}, e), {
           searchQuery: t,
           queryPageOffset: 0
         });
-        return "" !== t.trim() ? (n.sort = C, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = _(n)), n
+        return "" !== t.trim() ? (n.sort = m, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = C(n)), n
       })
     },
     setQueryPageSize: t => {
@@ -175,14 +174,14 @@ let p = {
     setItemTypeFilter: t => {
       e(e => {
         let n = new Set([t]),
-          r = g(d({}, e), {
+          r = d(u({}, e), {
             colorFilters: new Set,
             themeFilters: new Set,
             orbEligible: false,
             itemTypeFilters: n,
             queryPageOffset: 0
           });
-        return e.userHasSelectedSort || (r.sort = _(r)), r
+        return e.userHasSelectedSort || (r.sort = C(r)), r
       })
     },
     clearFilters: () => {
@@ -198,7 +197,7 @@ let p = {
         queryPageSize: n,
         queryPageOffset: r
       } = t();
-      e(g(d({}, h), {
+      e(d(u({}, h), {
         queryPageSize: n,
         queryPageOffset: r
       }))
@@ -209,15 +208,15 @@ let p = {
       })
     }
   }))),
-  v = e => {
+  b = e => {
     let {
       itemTypeFilters: t,
       colorFilters: n,
       themeFilters: r,
       orbEligible: l,
       sort: i,
-      searchQuery: s,
-      queryPageSize: o,
+      searchQuery: o,
+      queryPageSize: s,
       queryPageOffset: a
     } = e;
     return {
@@ -226,21 +225,21 @@ let p = {
       themes: Array.from(r),
       orbs_eligible: !!l || true,
       offset: a,
-      limit: o,
+      limit: s,
       sort_type: i.sortType,
       sort_direction: i.sortDirection,
-      search: "" !== s ? s : true
+      search: "" !== o ? o : true
     }
   },
-  E = () => {
+  v = () => {
     let {
       onSetResponse: e,
       setSearchError: t,
       setIsFetchingResults: n
-    } = (0, Chunk149705.a)(), l = (0, Chunk870289.FF)("collectibles_shop_header_bar");
+    } = (0, Chunk149705.a)();
     Chunk473749.useEffect(() => {
       let r = r => {
-        let i = async () => {
+        let l = async () => {
           n(true);
           try {
             let t = await (0, a.y)(r);
@@ -264,22 +263,22 @@ let p = {
             n(false)
           }
         };
-        l && 0 !== r.limit && i()
+        0 !== r.limit && l()
       };
-      Chunk473749(v(b.getState()));
-      let i = b.subscribe(v, Chunk473749, {
+      Chunk473749(b(_.getState()));
+      let l = _.subscribe(b, Chunk473749, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        s = b.subscribe(e => e.hasFilters(), (e, t) => {
+        i = _.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
-            let e = b.getState();
-            e.userHasSelectedSort || b.setState({
-              sort: _(e)
+            let e = _.getState();
+            e.userHasSelectedSort || _.setState({
+              sort: C(e)
             })
           }
         });
       return () => {
-        Chunk690775(), Chunk497598()
+        Chunk663042(), Chunk690775()
       }
-    }, [module, exports, require, Chunk663042])
+    }, [module, exports, require])
   }

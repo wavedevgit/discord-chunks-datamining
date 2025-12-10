@@ -34,7 +34,8 @@ function p(e) {
         children: (0, r.jsx)(c.Z, {
           className: u.browser,
           channel: t,
-          onClose: g
+          onClose: g,
+          context: "popout"
         })
       })
     },

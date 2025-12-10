@@ -1,7 +1,7 @@
 /** Chunk was on 91315 **/
 /** chunk id: 342449, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,11 +15,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk836227 = require("./836227.js");
 let g = new Set;
 
-function f(e) {
+function m(e) {
   let {
     channel: t,
     startThread: n,
-    goToThread: f
+    goToThread: m
   } = e, {
     joinedThreadIds: j,
     unjoinedThreadIds: v
@@ -34,18 +34,18 @@ function f(e) {
       let t = 0 === e.section ? j : 1 === e.section ? v : x;
       return (0, r.jsx)(u.Z, {
         threadId: t[e.row],
-        goToThread: f
+        goToThread: m
       }, "".concat(e.section, "-").concat(e.row))
-    }, [x, j, v, f]),
-    y = l.useCallback(e => 0 === e.section ? (0, r.jsx)(m, {
+    }, [x, j, v, m]),
+    y = l.useCallback(e => 0 === e.section ? (0, r.jsx)(f, {
       text: d.intl.formatToPlainString(d.t["4E27fz"], {
         count: j.length
       })
-    }, e.section) : 1 === e.section ? (0, r.jsx)(m, {
+    }, e.section) : 1 === e.section ? (0, r.jsx)(f, {
       text: d.intl.formatToPlainString(d.t.csPc4D, {
         count: v.length
       })
-    }, e.section) : (0, r.jsx)(m, {
+    }, e.section) : (0, r.jsx)(f, {
       text: d.intl.string(d.t["wUNQ+w"])
     }, e.section), [j.length, v.length]),
     S = l.useCallback(e => 1 === e && j.length > 0 || 2 === e && (j.length > 0 || v.length > 0) ? 64 : 32, [j.length, v.length]),
@@ -85,7 +85,7 @@ function f(e) {
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     text: t
   } = e;

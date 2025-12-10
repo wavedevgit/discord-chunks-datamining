@@ -2,17 +2,16 @@
 /** chunk id: 929255, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
   Chunk626135 = require("./626135.js"),
   Chunk381585 = require("./381585.jsx"),
-  Chunk870289 = require("./870289.js"),
   Chunk501431 = require("./501431.js"),
   Chunk888302 = require("./888302.jsx"),
   Chunk193227 = require("./193227.jsx"),
@@ -27,175 +26,166 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk452785 = require("./452785.js");
 
-function y(e) {
+function x(e) {
   let {
     tab: t,
     sortedCategories: n,
     initialCategoryId: i,
-    showFilterInitially: c = true,
-    onUnmount: u
+    showFilterInitially: o = true,
+    onUnmount: c
   } = e;
-  (0, g.A)();
-  let f = (0, d.FF)("CollectiblesBrowse"),
-    p = l.useRef(null),
+  (0, d.A)();
+  let u = l.useRef(null),
     {
-      handleScroll: C
-    } = (0, a.z)(p, t),
+      handleScroll: g
+    } = (0, a.z)(u, t),
     {
-      setCategoryRef: _,
-      handleScrollToCategory: b
-    } = (0, m.xV)(p.current),
-    [v, E] = l.useState(f && c),
-    [S, O] = l.useState(false);
+      setCategoryRef: f,
+      handleScrollToCategory: m
+    } = (0, p.xV)(u.current),
+    [C, _] = l.useState(o),
+    [b, v] = l.useState(false);
   return l.useEffect(() => {
-    null != i && b(i)
-  }, [i, b]), l.useEffect(() => () => {
-    null != u && u()
+    null != i && m(i)
+  }, [i, m]), l.useEffect(() => () => {
+    null != c && c()
   }, []), l.useEffect(() => {
     let e = () => {
-      O(window.innerWidth < 1400)
+      v(window.innerWidth < 1400)
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-  }, []), l.useEffect(() => {
-    f || E(false)
-  }, [f, E]), (0, r.jsx)("div", {
-    className: s()(x.pageWrapper, {
-      [x.pageWrapperFilter]: f
-    }),
+  }, []), (0, r.jsx)("div", {
+    className: O.pageWrapper,
     children: (0, r.jsxs)("main", {
-      className: s()(x.page, {
-        [x.pageFilter]: f
-      }),
-      children: [(0, r.jsx)(o.yWw, {
-        className: x.shopScroll,
-        ref: p,
-        onScroll: C,
-        children: (0, r.jsx)(j, {
-          isSmallScreen: S,
-          filterBarOpen: v,
-          setFilterBarOpen: E,
+      className: O.page,
+      children: [(0, r.jsx)(s.yWw, {
+        className: O.shopScroll,
+        ref: u,
+        onScroll: g,
+        children: (0, r.jsx)(y, {
+          isSmallScreen: b,
+          filterBarOpen: C,
+          setFilterBarOpen: _,
           tab: t,
-          scrollerRef: p,
+          scrollerRef: u,
           sortedCategories: n,
-          setCategoryRef: _,
+          setCategoryRef: f,
           initialCategoryId: i
         })
-      }), v && !S && (0, r.jsx)("div", {
-        className: x.divider
-      }), v && !S && (0, r.jsx)(o.Ttm, {
-        className: x.filterBar,
+      }), C && !b && (0, r.jsx)("div", {
+        className: O.divider
+      }), C && !b && (0, r.jsx)(s.Ttm, {
+        className: O.filterBar,
         children: (0, r.jsx)(h.Z, {})
       })]
     })
   })
 }
-let j = e => {
+let y = e => {
   let {
     isSmallScreen: t,
     filterBarOpen: n,
     setFilterBarOpen: i,
     tab: a,
-    scrollerRef: m,
-    sortedCategories: y,
-    setCategoryRef: j,
-    initialCategoryId: k
-  } = e, T = (0, d.FF)("CollectiblesBrowse"), I = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), B = (0, u.sp)(), {
-    handlePageChange: N,
-    currentPage: A
-  } = (0, _.h)(m), P = l.useCallback(e => {
-    c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-      collectibles_shop_session_id: null == B ? true : B.sessionId,
-      page_section: null == B ? true : B.pageSection,
-      page_category: null == B ? true : B.pageCategory,
+    scrollerRef: p,
+    sortedCategories: x,
+    setCategoryRef: y,
+    initialCategoryId: j
+  } = e, k = l.useRef(null), T = (0, d.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
+    handlePageChange: L,
+    currentPage: B
+  } = (0, C.h)(p), A = l.useCallback(e => {
+    c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      collectibles_shop_session_id: null == I ? true : I.sessionId,
+      page_section: null == I ? true : I.pageSection,
+      page_category: null == I ? true : I.pageCategory,
       page_index: e,
-      page_size: null == B ? true : B.pageSize,
+      page_size: null == I ? true : I.pageSize,
       cta_name: "catalog page ".concat(e),
       page_type: "catalog"
-    }), N(e)
-  }, [B, N]), R = l.useRef(null);
+    }), L(e)
+  }, [I, L]), N = l.useRef(null);
   return l.useEffect(() => {
     if (!t || !n) return;
     let e = e => {
       let t = e.target;
-      null === I.current || null === R.current || I.current.contains(t) || R.current.contains(t) || (c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == B ? true : B.sessionId,
-        page_section: null == B ? true : B.pageSection,
-        page_category: null == B ? true : B.pageCategory,
-        page_index: null == B ? true : B.pageIndex,
-        page_size: null == B ? true : B.pageSize,
+      null === k.current || null === N.current || k.current.contains(t) || N.current.contains(t) || (c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        collectibles_shop_session_id: null == I ? true : I.sessionId,
+        page_section: null == I ? true : I.pageSection,
+        page_category: null == I ? true : I.pageCategory,
+        page_index: null == I ? true : I.pageIndex,
+        page_size: null == I ? true : I.pageSize,
         cta_name: "filter bar hide outside click",
         page_type: "catalog"
       }), i(false))
     };
     return document.addEventListener("mousedown", e), () => document.removeEventListener("mousedown", e)
-  }, [t, n, i, B]), (0, r.jsx)("div", {
-    className: x.inventoryWrapper,
+  }, [t, n, i, I]), (0, r.jsx)("div", {
+    className: O.inventoryWrapper,
     children: (0, r.jsxs)("div", {
-      className: s()(x.inventory, {
-        [x.inventoryFilter]: T
-      }),
-      children: [T && (0, r.jsxs)("div", {
-        className: x.controls,
+      className: O.inventory,
+      children: [(0, r.jsxs)("div", {
+        className: O.controls,
         children: [(0, r.jsx)("div", {
-          className: x.controlsLeftSide,
-          children: (0, r.jsx)(f.Z, {})
+          className: O.controlsLeftSide,
+          children: (0, r.jsx)(g.Z, {})
         }), (0, r.jsxs)("div", {
-          className: s()(x.controlsRightSide, {
-            [x.controlsRightSideResponsive]: t
+          className: o()(O.controlsRightSide, {
+            [O.controlsRightSideResponsive]: t
           }),
           children: [(0, r.jsxs)("div", {
-            className: x.sortBy,
-            children: [(0, r.jsx)(o.Text, {
+            className: O.sortBy,
+            children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
-              children: O.intl.string(O.t.uaX705)
-            }), (0, r.jsx)(C.Z, {})]
+              children: S.intl.string(S.t.uaX705)
+            }), (0, r.jsx)(m.Z, {})]
           }), (0, r.jsx)("div", {
-            ref: R,
-            children: (0, r.jsx)(o.Button, {
+            ref: N,
+            children: (0, r.jsx)(s.Button, {
               onClick: () => {
                 let e = !n;
-                c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                  collectibles_shop_session_id: null == B ? true : B.sessionId,
-                  page_section: null == B ? true : B.pageSection,
-                  page_category: null == B ? true : B.pageCategory,
-                  page_index: null == B ? true : B.pageIndex,
-                  page_size: null == B ? true : B.pageSize,
+                c.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                  collectibles_shop_session_id: null == I ? true : I.sessionId,
+                  page_section: null == I ? true : I.pageSection,
+                  page_category: null == I ? true : I.pageCategory,
+                  page_index: null == I ? true : I.pageIndex,
+                  page_size: null == I ? true : I.pageSize,
                   cta_name: "filter bar ".concat(e ? "show" : "hide"),
                   page_type: "catalog"
                 }), i(e)
               },
               variant: "secondary",
-              text: O.intl.string(n ? O.t.fYtm6f : O.t["TeTYE+"]),
-              icon: o.gXV,
+              text: S.intl.string(n ? S.t.fYtm6f : S.t["TeTYE+"]),
+              icon: s.gXV,
               iconPosition: "end"
             })
           })]
         }), n && t && (0, r.jsx)("div", {
-          className: x.filterOverlay,
-          ref: I,
-          children: (0, r.jsx)(o.Den, {
-            className: x.filterOverlayContent,
+          className: O.filterOverlay,
+          ref: k,
+          children: (0, r.jsx)(s.Den, {
+            className: O.filterOverlayContent,
             children: (0, r.jsx)(h.Z, {})
           })
         })]
-      }), T && !L ? (0, r.jsx)(b.Z, {
-        scrollerRef: m,
-        tab: a
-      }, a) : (0, E.RE)(a) ? (0, r.jsx)(v.Z, {
-        scrollerRef: m,
+      }), T ? (0, v.RE)(a) ? (0, r.jsx)(b.Z, {
+        scrollerRef: p,
         tab: a
       }, a) : (0, r.jsx)(u.k0, {
         newValue: {
-          pageIndex: A
+          pageIndex: B
         },
-        children: (0, r.jsx)(p.Z, {
-          sortedCategories: y,
-          setCategoryRef: j,
-          currentPage: A,
-          handlePageChange: P,
-          initialCategoryId: k
+        children: (0, r.jsx)(f.Z, {
+          sortedCategories: x,
+          setCategoryRef: y,
+          currentPage: B,
+          handlePageChange: A,
+          initialCategoryId: j
         })
-      })]
+      }) : (0, r.jsx)(_.Z, {
+        scrollerRef: p,
+        tab: a
+      }, a)]
     })
   })
 }

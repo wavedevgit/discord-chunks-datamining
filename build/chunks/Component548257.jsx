@@ -2,7 +2,7 @@
 /** chunk id: 548257, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk497788 = require("./497788.jsx"),
   Chunk310582 = require("./310582.js");
 (0, Chunk884697.IC)(90);
-let C = {
+let h = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -31,14 +31,14 @@ let C = {
     categoryStoreListingId: "",
     rewardSkuId: true
   },
-  h = e => {
+  C = e => {
     var t;
     let {
       isLoading: n = false,
       heroBlock: l,
-      tab: o,
+      tab: s,
       onVisibilityChange: d
-    } = e, h = (0, s.O)(e => {
+    } = e, C = (0, o.O)(e => {
       null == d || d(e)
     }, .1, null != d), _ = (0, a.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerStyleOverrides: b,
@@ -47,8 +47,8 @@ let C = {
       heroBannerStatic: S,
       heroBannerAnimated: O
     } = (0, g.hr)(l), x = null != (t = null == b ? true : b.responsive) && t, y = null == b ? true : b.backgroundStyle;
-    return null != _ && (n || l !== C) ? (0, r.jsxs)("div", {
-      ref: h,
+    return null != _ && (n || l !== h) ? (0, r.jsxs)("div", {
+      ref: C,
       className: m.heroBlock,
       children: [(0, r.jsx)("div", {
         className: i()(m.banner, {
@@ -97,7 +97,7 @@ let C = {
         }), (0, r.jsx)(p.Z, {
           isBlockLoading: n,
           heroBlock: l,
-          tab: o
+          tab: s
         })]
       })]
     }) : null

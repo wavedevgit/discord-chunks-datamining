@@ -5,6 +5,7 @@ require.d(exports, {
   BI: () => y,
   KM: () => _,
   NI: () => g,
+  P9: () => O,
   Pb: () => p,
   Rc: () => b,
   Rt: () => h,
@@ -63,4 +64,8 @@ function y(e) {
   return (0, d.q8)({
     config: e
   }) ? i.W.VIDEO : i.W.GAMEPLAY
+}
+
+function O(e, t) {
+  return e.ctaQuests.some(e => e.questId === t)
 }

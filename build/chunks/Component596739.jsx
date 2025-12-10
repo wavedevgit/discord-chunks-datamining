@@ -5,10 +5,10 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk970683 = require("./970683.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk582220 = require("./582220.js"),
-  Chunk560580 = require("./560580.js");
+  Chunk582220 = require("./582220.js");
 
 function c(e) {
   let {
@@ -21,44 +21,43 @@ function c(e) {
     null == c || c()
   }, [c]);
   return (0, i.jsxs)("div", {
-    className: o.safetyBanner,
+    className: s.safetyBanner,
     children: [(0, i.jsxs)("div", {
-      className: o.shieldAndHeading,
-      children: [(0, i.jsx)("img", {
-        className: o.safetyShieldIcon,
-        src: s,
-        alt: ""
+      className: s.shieldAndHeading,
+      children: [(0, i.jsx)(l.i$, {
+        alt: "",
+        size: 32
       }), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(l.Heading, {
+        children: [(0, i.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-strong",
           children: t
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-strong",
           children: n
         })]
       })]
     }), (0, i.jsx)("div", {
-      className: o.buttons,
+      className: s.buttons,
       children: null == u ? true : u.map((e, t) => {
         var n;
-        return (0, i.jsx)(l.Button, {
+        return (0, i.jsx)(a.Button, {
           text: e.text,
           variant: null != (n = e.variant) ? n : "secondary",
           onClick: e.onClick,
           size: "sm"
         }, t)
       })
-    }), d ? (0, i.jsx)(l.P3F, {
-      className: o.closeButton,
+    }), d ? (0, i.jsx)(a.P3F, {
+      className: s.closeButton,
       onClick: p,
       role: "button",
-      "aria-label": a.intl.string(a.t.WAI6xu),
-      children: (0, i.jsx)(l.Dio, {
+      "aria-label": o.intl.string(o.t.WAI6xu),
+      children: (0, i.jsx)(a.Dio, {
         size: "md",
         color: "currentColor",
-        className: o.closeButton
+        className: s.closeButton
       })
     }) : null]
   })

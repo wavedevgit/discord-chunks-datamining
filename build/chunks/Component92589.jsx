@@ -41,9 +41,9 @@ let g = e => {
   }, .33, null != n), {
     bannerUrl: f,
     bannerAnimatedUrl: p
-  } = (0, o._M)(t), m = null != t.textColor ? {
+  } = (0, s._M)(t), m = null != t.textColor ? {
     color: t.textColor
-  } : true, C = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, h = null != t.body && "" !== t.body, C = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
     ref: g,
     className: u.immersiveBannerBlock,
@@ -57,7 +57,7 @@ let g = e => {
       className: u.immersiveBannerContent,
       children: (0, r.jsxs)("div", {
         className: u.immersiveBannerTextContainer,
-        children: [null != t.endTime ? (0, r.jsx)(s.R, {
+        children: [null != t.endTime ? (0, r.jsx)(o.R, {
           endDate: t.endTime,
           size: "lg"
         }) : null, (0, r.jsx)(i.Heading, {
@@ -66,10 +66,10 @@ let g = e => {
           color: "header-primary",
           style: d({}, m),
           children: t.title
-        }), C || h ? (0, r.jsxs)(i.Text, {
+        }), h || C ? (0, r.jsxs)(i.Text, {
           variant: "text-md/medium",
           style: d({}, m),
-          children: [C && t.body, C && h && " ", h && (0, r.jsx)(i.Anchor, {
+          children: [h && t.body, h && C && " ", C && (0, r.jsx)(i.Anchor, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
             style: d({}, m),

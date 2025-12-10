@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -38,12 +38,12 @@ function y(e) {
   } = e, j = (0, d.sp)(), k = null != (t = null == j ? true : j.sessionId) ? t : "", {
     noCache: T,
     includeUnpublished: I
-  } = (0, v.Z)(), L = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, v.Z)(), L = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
-    currentPage: N,
-    totalCount: A,
+    currentPage: A,
+    totalCount: N,
     isFetchingResults: P
-  } = (0, m.a)(), R = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), Z = l.useCallback(() => {
+  } = (0, m.a)(), R = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(B)), Z = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
@@ -55,9 +55,9 @@ function y(e) {
   let H = (0, f.a)(),
     D = l.useMemo(() => H(R), [H, R]);
   l.useEffect(() => {
-    n || (0, C.n)({
+    n || (0, h.n)({
       sessionId: k,
-      checkpoint: C.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: y,
       unpublishedCategoriesShown: I,
       cacheDisabled: T
@@ -96,11 +96,11 @@ function y(e) {
   return (0, r.jsxs)(_.zp.Provider, {
     value: x,
     children: [(0, r.jsxs)("div", {
-      className: s()({
+      className: o()({
         [O.productsEmpty]: K
       }),
       children: [K && (0, r.jsx)(E.Z, {}), (0, r.jsxs)("div", {
-        className: s()(O.products, {
+        className: o()(O.products, {
           [O.loadIn]: V
         }),
         ref: M,
@@ -108,18 +108,18 @@ function y(e) {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(C.Z, {
             skuId: e.skuId,
             onClickAnalytics: (0, _.wO)(e, y, j)
           }, e.skuId)
         }, e.skuId))]
       })]
-    }), A > U && (0, r.jsx)("div", {
+    }), N > U && (0, r.jsx)("div", {
       className: O.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
-          currentPage: N,
-          totalCount: A,
+          currentPage: A,
+          totalCount: N,
           pageSize: U,
           onPageChange: Y,
           disablePaginationGap: true

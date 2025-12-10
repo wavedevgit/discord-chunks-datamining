@@ -75,7 +75,7 @@ let v = Chunk473749.memo(function(e) {
           className: j.parentName,
           children: "#".concat(d.name)
         }) : null]
-      }), (0, f.Z)(c)]
+      }), (0, m.Z)(c)]
     }), (0, r.jsx)(x, {
       channel: c
     })]
@@ -102,6 +102,6 @@ function x(e) {
     guildId: t.guild_id,
     users: s,
     count: l,
-    max: m.yX
+    max: f.yX
   })
 }

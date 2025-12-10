@@ -2,7 +2,7 @@
 /** chunk id: 763891, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,21 +35,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk266058 = require("./266058.js"),
   Chunk719138 = require("./719138.js");
 
-function A(e) {
+function N(e) {
   var t;
   let {
     isFetchingCategories: n,
-    scrollerRef: A,
+    scrollerRef: N,
     tab: P
   } = e, R = (0, g.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: H
-  } = (0, v.Z)(), D = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, K] = l.useMemo(() => {
+  } = (0, v.Z)(), D = (0, o.e7)([u.default], () => u.default.getCurrentUser()), M = (0, o.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), V = (0, s.ap)(U), [z, G, K] = l.useMemo(() => {
     switch (P) {
       case E.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYNE), V ? T.Z : k.Z, i.Z.AVATAR_DECORATION];
       case E.AW.PROFILE_EFFECTS:
-        return [O.intl.string(O.t["1cNjtx"]), V ? N.Z : B.Z, i.Z.PROFILE_EFFECT];
+        return [O.intl.string(O.t["1cNjtx"]), V ? A.Z : B.Z, i.Z.PROFILE_EFFECT];
       case E.AW.NAMEPLATES:
         return [O.intl.string(O.t.V68Fqz), V ? L.Z : I.Z, i.Z.NAMEPLATE];
       case E.AW.BUNDLES:
@@ -65,22 +65,22 @@ function A(e) {
     })
   })), [M, K, Y]), Q = (0, m.l)(q);
   return (l.useEffect(() => {
-    (0, C.n)({
+    (0, h.n)({
       sessionId: Z,
-      checkpoint: C.a.SHOP_MOUNTED,
+      checkpoint: h.a.SHOP_MOUNTED,
       tab: P,
       unpublishedCategoriesShown: H,
       cacheDisabled: w
     })
   }, []), l.useEffect(() => {
-    n || (0, C.n)({
+    n || (0, h.n)({
       sessionId: Z,
-      checkpoint: C.a.SHOP_RENDERED,
+      checkpoint: h.a.SHOP_RENDERED,
       tab: P,
       unpublishedCategoriesShown: H,
       cacheDisabled: w
     })
-  }, [Z, H, w, n, P]), n || null == D) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, H, w, n, P]), n || null == D) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
@@ -118,7 +118,7 @@ function A(e) {
               page_size: 40,
               cta_name: "".concat(P, " page ").concat(e),
               page_type: P
-            }), W(e), null == A || null == (t = A.current) || t.scrollToTop({
+            }), W(e), null == N || null == (t = N.current) || t.scrollToTop({
               animate: true
             })
           },

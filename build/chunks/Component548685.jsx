@@ -2,12 +2,12 @@
 /** chunk id: 548685, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk28664 = require("./28664.jsx"),
@@ -33,18 +33,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk219588 = require("./219588.js"),
   Chunk310582 = require("./310582.js");
-let N = e => {
+let A = e => {
   var t;
   let {
     isLoading: n,
     title: i,
-    sortedSkuIds: N,
-    numVisibleItems: A,
+    sortedSkuIds: A,
+    numVisibleItems: N,
     prioritizeUserDiscounts: P,
     tab: R,
     buttonContainerClassName: Z,
     orbsSupportedOnly: w
-  } = e, H = (0, o.e7)([f.default], () => f.default.getCurrentUser()), D = h.ZP.canUseCollectibles(H), M = (0, j.B)("FeedBlock"), {
+  } = e, H = (0, s.e7)([f.default], () => f.default.getCurrentUser()), D = C.ZP.canUseCollectibles(H), M = (0, j.B)("FeedBlock"), {
     sortType: F,
     setSortType: W,
     sortedItems: U,
@@ -52,11 +52,11 @@ let N = e => {
     shuffleProducts: z,
     showRecommendationOption: G
   } = (0, x.Z)({
-    sortedSkuIds: N,
+    sortedSkuIds: A,
     isPremiumUser: D,
     prioritizeUserDiscounts: P,
     orbsSupportedOnly: w
-  }), K = (0, y.St)(U), Y = (0, o.e7)([g.Z], () => g.Z.useReducedMotion), q = (0, o.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
+  }), K = (0, y.St)(U), Y = (0, s.e7)([g.Z], () => g.Z.useReducedMotion), q = (0, s.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
     animationPhase: J,
     startAnimation: X
   } = (0, O.y)(), $ = (0, _.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
@@ -69,7 +69,7 @@ let N = e => {
     })
   }, [X, W, ee]);
   return null == H ? null : (0, r.jsxs)("div", {
-    className: s()(B.popularPicksSection, B.centeredSection),
+    className: o()(B.popularPicksSection, B.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: B.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -82,7 +82,7 @@ let N = e => {
           position: "top",
           "aria-label": I.intl.string(I.t["3taPdj"]),
           children: (0, r.jsx)(u.P3F, {
-            onClick: () => (0, d.Z)(C.Z.getArticleURL(T.BhN.DATA_USED_FOR_RECOMMENDED)),
+            onClick: () => (0, d.Z)(h.Z.getArticleURL(T.BhN.DATA_USED_FOR_RECOMMENDED)),
             className: B.informationIcon,
             children: (0, r.jsx)(u.d3s, {
               size: "sm"
@@ -90,7 +90,7 @@ let N = e => {
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: s()(B.headerRight, {
+        className: o()(B.headerRight, {
           [L.customCursors]: M
         }),
         children: [(0, r.jsx)(u.Text, {
@@ -102,7 +102,7 @@ let N = e => {
             options: V,
             select: en,
             className: B.sortSelect,
-            popoutClassName: s()({
+            popoutClassName: o()({
               [L.customCursors]: M
             }),
             isSelected: e => e === F,
@@ -131,7 +131,7 @@ let N = e => {
       className: B.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(S.Z, {}, t + 1))
-      }) : K.slice(0, A).map((e, t) => {
+      }) : K.slice(0, N).map((e, t) => {
         let n, l = b.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Q)

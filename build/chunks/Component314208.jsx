@@ -71,8 +71,8 @@ function T(e) {
       return null != (e = v.default.getUser(n.author.id)) ? e : n.author
     }),
     {
-      nick: f,
-      colorString: m,
+      nick: m,
+      colorString: f,
       colorStrings: p
     } = (0, d.ZP)(n),
     b = (0, g.X7)(t.guild_id, c.id, p),
@@ -112,8 +112,8 @@ function T(e) {
       user: c,
       size: s.EFr.SIZE_16
     }), (0, r.jsx)(s.PUh, {
-      name: f,
-      colorString: m,
+      name: m,
+      colorString: f,
       colorStrings: b,
       className: y.authorName
     }), ":\xa0", N, "\xa0 • \xa0", (0, Z.Ye)(x.default.extractTimestamp(n.id))]
@@ -124,12 +124,12 @@ function C(e) {
   var t, n, l, u;
   let {
     channel: d
-  } = e, h = (0, a.e7)([m.ZP], () => m.ZP.lastMessageId(d.id)), j = null == h ? new Date(null != (n = null == (t = d.threadMetadata) ? true : t.archiveTimestamp) ? n : Date.now()).getTime() : x.default.extractTimestamp(h);
+  } = e, h = (0, a.e7)([f.ZP], () => f.ZP.lastMessageId(d.id)), j = null == h ? new Date(null != (n = null == (t = d.threadMetadata) ? true : t.archiveTimestamp) ? n : Date.now()).getTime() : x.default.extractTimestamp(h);
   (0, i.$)({
     [d.guild_id]: [d.ownerId]
   }, "ThreadBrowserRowSubtext");
   let b = (0, a.e7)([v.default], () => v.default.getUser(d.ownerId)),
-    w = (0, a.e7)([f.ZP], () => f.ZP.getMember(d.guild_id, d.ownerId)),
+    w = (0, a.e7)([m.ZP], () => m.ZP.getMember(d.guild_id, d.ownerId)),
     S = (0, g.X7)(d.guild_id, null == b ? true : b.id, null != (l = null == w ? true : w.colorStrings) ? l : null),
     N = null != (u = (0, c.KS)(d)) ? u : s.or_;
   return (0, r.jsx)(s.Text, {

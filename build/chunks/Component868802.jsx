@@ -100,7 +100,10 @@ let x = () => {
         buttonTextOverride: Chunk388032.intl.string(Chunk388032.t["8x0jKT"]),
         subscriptionTier: Chunk474936.Si.TIER_2,
         fullWidth: true,
-        size: "sm"
+        size: "sm",
+        premiumModalAnalyticsLocation: {
+          page: Chunk100527.Z.CF_WARP_SETTINGS
+        }
       }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
         variant: "secondary",
         text: Chunk388032.intl.string(Chunk388032.t.ZnqyZ2),

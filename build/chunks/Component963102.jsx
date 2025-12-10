@@ -2,12 +2,12 @@
 /** chunk id: 963102, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  I: () => N
+  I: () => B
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk775451 = require("./775451.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk471731 = require("./471731.jsx"),
-  Chunk870289 = require("./870289.js"),
   Chunk304742 = require("./304742.jsx"),
   Chunk554067 = require("./554067.jsx"),
   Chunk215023 = require("./215023.js"),
@@ -32,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421200 = require("./421200.js");
 
-function L(e) {
+function I(e) {
   let {
     tab: t,
     displayText: n,
@@ -41,29 +40,29 @@ function L(e) {
   } = e;
   return (0, r.jsx)(f.Z.Title, {
     onClick: () => i(t),
-    wrapperClassName: I.tabWrapper,
-    className: s()(I.tab, {
-      [I.selected]: l
+    wrapperClassName: T.tabWrapper,
+    className: o()(T.tab, {
+      [T.selected]: l
     }),
     children: n
   })
 }
 
-function B(e) {
+function L(e) {
   let {
     tab: t,
     selected: n,
     displayText: i,
-    handleTransition: o
-  } = e, [a, u] = l.useState(false), p = l.useRef(null), [m, C] = l.useState(0), h = l.useRef(false), _ = e => {
-    clearTimeout(m), C(setTimeout(() => {
+    handleTransition: s
+  } = e, [a, u] = l.useState(false), p = l.useRef(null), [m, h] = l.useState(0), C = l.useRef(false), _ = e => {
+    clearTimeout(m), h(setTimeout(() => {
       u(e)
-    }, 100)), e && (h.current = g.Z.keyboardModeEnabled)
+    }, 100)), e && (C.current = g.Z.keyboardModeEnabled)
   }, b = e => {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), _(true))
   };
   return (0, r.jsx)("div", {
-    className: I.tabWithMenuContainer,
+    className: T.tabWithMenuContainer,
     onMouseEnter: () => _(true),
     onMouseLeave: () => _(false),
     children: (0, r.jsx)(c.yRy, {
@@ -74,14 +73,14 @@ function B(e) {
       onRequestOpen: () => _(true),
       onRequestClose: () => {
         var e;
-        h.current && !g.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = p.current) || e.focus()
+        C.current && !g.Z.keyboardModeEnabled && (0, d.Qj)(), _(false), null == (e = p.current) || e.focus()
       },
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(O.Z, {
-          handleTransition: o,
+        return (0, r.jsx)(S.Z, {
+          handleTransition: s,
           onClose: t
         })
       },
@@ -109,14 +108,14 @@ function B(e) {
           return e
         }({}, e), u = u = {
           ref: p,
-          onClick: () => o(t),
+          onClick: () => s(t),
           onKeyDown: b,
-          wrapperClassName: I.tabWrapper,
-          className: s()(I.tab, {
-            [I.selected]: n
+          wrapperClassName: T.tabWrapper,
+          className: o()(T.tab, {
+            [T.selected]: n
           }),
           children: (0, r.jsxs)("span", {
-            className: I.tabWithChevron,
+            className: T.tabWithChevron,
             children: [i, d ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
@@ -140,7 +139,7 @@ function B(e) {
   })
 }
 
-function N(e) {
+function B(e) {
   let {
     selectedTab: t,
     handleTransition: n
@@ -148,34 +147,33 @@ function N(e) {
     enabled: g
   } = (0, _.WX)({
     location: "collectibles_shop_header_bar"
-  }), O = (0, m.Y)({
+  }), S = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
-  }), N = [{
-    tab: y.AW.HOME,
-    displayText: T.intl.string(T.t.ijDDwz)
+  }), B = [{
+    tab: x.AW.HOME,
+    displayText: k.intl.string(k.t.ijDDwz)
   }, {
-    tab: y.AW.CATALOG,
-    displayText: T.intl.string(T.t.Ah5sJo)
+    tab: x.AW.CATALOG,
+    displayText: k.intl.string(k.t.Ah5sJo)
   }];
-  g && N.push({
-    tab: y.AW.ORBS,
-    displayText: T.intl.string(T.t.EBYkzk)
+  g && B.push({
+    tab: x.AW.ORBS,
+    displayText: k.intl.string(k.t.EBYkzk)
   });
-  let A = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
-    P = l.useCallback(() => {
-      (0, h.Y)({
+  let A = t === x.AW.ORBS ? y.ZY5.SHOP_ORBS_TAB : y.ZY5.COLLECTIBLES_SHOP,
+    N = l.useCallback(() => {
+      (0, C.Y)({
         pageType: A,
-        sectionType: j.jXE.ORBS_BALANCE_MENU,
-        ctaObject: j.qAy.CTA_TO_QUEST_HOME
+        sectionType: y.jXE.ORBS_BALANCE_MENU,
+        ctaObject: y.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
-        fromContent: o.j.ORBS_BALANCE_MENU
+        fromContent: s.j.ORBS_BALANCE_MENU
       })
     }, [A]),
-    R = (0, S.eN)("collectibles_shop_header_bar"),
-    Z = l.useCallback(() => {
-      (null == d ? true : d.id) != null && (0, C.openUserProfileModal)({
+    P = l.useCallback(() => {
+      (null == d ? true : d.id) != null && (0, h.openUserProfileModal)({
         userId: d.id,
-        section: k.oh.WISHLIST,
+        section: j.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
@@ -183,45 +181,45 @@ function N(e) {
     theme: i,
     children: e => (0, r.jsxs)(f.Z, {
       disableDoubleClick: true,
-      className: s()(e, I.headerBar),
-      innerClassname: g ? I.headerBarInner : true,
+      className: o()(e, T.headerBar),
+      innerClassname: g ? T.headerBarInner : true,
       children: [(0, r.jsxs)(c.P3F, {
-        className: I.shopHomeLink,
-        onClick: () => n(y.AW.HOME),
-        "aria-label": T.intl.string(T.t.pWG4ze) + " home",
+        className: T.shopHomeLink,
+        onClick: () => n(x.AW.HOME),
+        "aria-label": k.intl.string(k.t.pWG4ze) + " home",
         children: [(0, r.jsx)(E.Z, {
-          className: I.discordLogo
+          className: T.discordLogo
         }), (0, r.jsx)(f.Z.Title, {
-          children: T.intl.string(T.t.pWG4ze)
+          children: k.intl.string(k.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {
-        className: I.tabs,
-        children: N.map(e => {
+        className: T.tabs,
+        children: B.map(e => {
           let {
             tab: l,
             displayText: i
           } = e;
-          return l === y.AW.CATALOG ? (0, r.jsx)(B, {
+          return l === x.AW.CATALOG ? (0, r.jsx)(L, {
             tab: l,
-            selected: (0, y.RE)(t) || t === l,
+            selected: (0, x.RE)(t) || t === l,
             displayText: i,
             handleTransition: n
-          }, l) : (0, r.jsx)(L, {
+          }, l) : (0, r.jsx)(I, {
             tab: l,
             displayText: i,
             selected: t === l,
             handleTransition: n
           }, l)
         })
-      }), (g || R || O) && (0, r.jsxs)("div", {
-        className: I.alignedRightContent,
-        children: [R && (0, r.jsx)(x.Z, {
+      }), (0, r.jsxs)("div", {
+        className: T.alignedRightContent,
+        children: [(0, r.jsx)(O.Z, {
           handleTransition: n,
           selectedTab: t
-        }), O && (0, r.jsx)(c.P3F, {
-          className: I.wishlistButton,
-          onClick: Z,
-          "aria-label": T.intl.string(T.t["7lZ31J"]),
+        }), S && (0, r.jsx)(c.P3F, {
+          className: T.wishlistButton,
+          onClick: P,
+          "aria-label": k.intl.string(k.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",
             color: "currentColor"
@@ -229,9 +227,9 @@ function N(e) {
         }), g && (0, r.jsx)(b.V9, {
           analyticsPage: A,
           cardAlignment: b.V9.CardAlignment.END,
-          ctaText: T.intl.string(T.t.VC4Mq0),
-          ctaOnClick: P,
-          className: I.balanceWidgetMenu
+          ctaText: k.intl.string(k.t.VC4Mq0),
+          ctaOnClick: N,
+          className: T.balanceWidgetMenu
         })]
       })]
     })
