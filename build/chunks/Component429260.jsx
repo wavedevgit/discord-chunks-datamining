@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => E,
-  eH: () => _,
+  ZP: () => S,
+  eH: () => I,
   wY: () => P
 });
 var Chunk54381 = require("./54381.js");
@@ -26,29 +26,29 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk864309 = require("./864309.js");
 
-function E(e) {
+function S(e) {
   let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, p.Q_)(t);
-  return (0, y.a4)(e) ? (0, r.jsx)(o.sNh, {
+  return (0, v.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
-    label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
+    label: n ? h.intl.string(h.t.n5EBAJ) : h.intl.string(h.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
-    icon: n ? o.gw7 : o.U65,
+    icon: n ? a.gw7 : a.U65,
     color: "danger"
   }) : null
 }
 
-function S() {
+function E() {
   return (0, Chunk54381.jsx)(Chunk243778.ZP, {
     contentTypes: [Chunk704215.z.REPORT_TO_MOD_NEW_TAG],
     children: e => {
       let {
         visibleContent: t
       } = e;
-      return t === l.z.REPORT_TO_MOD_NEW_TAG ? (0, r.jsx)(o.IGR, {
-        color: a.Z.colors.BACKGROUND_BRAND.css,
-        text: v.intl.string(v.t.y2b7CA)
-      }) : (0, r.jsx)(o.U65, {
+      return t === l.z.REPORT_TO_MOD_NEW_TAG ? (0, r.jsx)(a.IGR, {
+        color: o.Z.colors.BACKGROUND_BRAND.css,
+        text: h.intl.string(h.t.y2b7CA)
+      }) : (0, r.jsx)(a.U65, {
         color: "currentColor",
         size: "refresh_sm"
       })
@@ -61,29 +61,29 @@ function P(e) {
     n = (0, b.sP)(e);
   return ((0, s.zq)(() => {
     n && (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-      dismissAction: h.L.AUTO_DISMISS
+      dismissAction: y.L.AUTO_DISMISS
     })
-  }), n) ? (0, r.jsx)(o.sNh, {
+  }), n) ? (0, r.jsx)(a.sNh, {
     id: "report-to-mod",
-    label: t ? v.intl.string(j.default["8wsdng"]) : v.intl.string(j.default["1D+vqy"]),
+    label: t ? h.intl.string(j.default["8wsdng"]) : h.intl.string(j.default["1D+vqy"]),
     action: () => {
       (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-        dismissAction: h.L.USER_DISMISS
+        dismissAction: y.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
-    icon: (0, r.jsx)(S, {}),
+    icon: (0, r.jsx)(E, {}),
     disabled: t
   }) : null
 }
 
-function _(e) {
+function I(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
     n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
-  return (0, y.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(o.sNh, {
+  return (0, v.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),
-    icon: o.U65,
+    icon: a.U65,
     color: "danger"
   }) : null
 }

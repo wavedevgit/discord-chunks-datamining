@@ -11,14 +11,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s(e, t) {
-  let s = (0, a.rb)(e),
-    c = null != t && (0, a.g4)({
+  let s = (0, o.rb)(e),
+    c = null != t && (0, o.g4)({
       type: l.l.GenericMedia,
       media: t
     }, s);
   return null != t && c ? (0, r.jsx)(i.sNh, {
     id: "report-image-false-positive",
-    label: o.intl.string(o.t.ZH7P2h),
+    label: a.intl.string(a.t.ZH7P2h),
     action: () => {
       (0, i.ZDy)(async () => {
         let {

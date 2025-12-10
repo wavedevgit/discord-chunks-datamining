@@ -13,10 +13,10 @@ var Chunk481060 = require("./481060.js"),
 function s(e, t) {
   return (0, l.U)(t, e) ? (0, r.jsx)(i.sNh, {
     id: "reply",
-    label: o.intl.string(o.t["5IEsGx"]),
+    label: a.intl.string(a.t["5IEsGx"]),
     icon: i.n$P,
     action: n => {
-      (0, a.HH)(t, e, n)
+      (0, o.HH)(t, e, n)
     }
   }) : null
 }

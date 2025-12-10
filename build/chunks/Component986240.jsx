@@ -22,19 +22,19 @@ function p(e, t) {
     m = (0, u.Nt)(),
     O = i.useCallback(n => {
       try {
-        (0, a.qc)(t.id, e.id, n)
+        (0, o.qc)(t.id, e.id, n)
       } catch (e) {
         (0, l.showToast)((0, l.createToast)(b.intl.string(b.t.xsfC2S), l.ToastType.FAILURE))
       }
     }, [t.id, e.id]),
-    y = i.useCallback(() => {
+    v = i.useCallback(() => {
       f.default.track(g.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
         location: s.MG.MessageContextMenu
       }), (0, c.s)({
         channelId: t.id,
         message: e,
         onRedeem: O,
-        onClose: o.Qy,
+        onClose: a.Qy,
         source: s.YD.MessageContextMenu
       })
     }, [t.id, e, O]);
@@ -42,6 +42,6 @@ function p(e, t) {
     id: "add-confetti-potion",
     label: b.intl.string(b.t.icaJW5),
     icon: l.l22,
-    action: y
+    action: v
   }) : null
 }

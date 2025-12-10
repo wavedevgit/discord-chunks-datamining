@@ -12,15 +12,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e) {
-  if (!o.wS) return null;
+  if (!a.wS) return null;
   let t = e.getContentMessage(),
-    n = (0, a.hv)(t) ? (0, l.np)(t.components) : t.content;
+    n = (0, o.hv)(t) ? (0, l.np)(t.components) : t.content;
   return null == n || 0 === n.length ? null : (0, r.jsx)(i.sNh, {
     id: "copy-text",
     label: s.intl.string(s.t.JrGD7E),
     icon: i.TIy,
     action: () => {
-      (0, o.JG)(n)
+      (0, a.JG)(n)
     }
   })
 }

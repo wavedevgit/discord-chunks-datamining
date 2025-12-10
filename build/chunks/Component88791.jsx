@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 88791, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,10 +9,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk79390 = require("./79390.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function a(e) {
   return null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, l.eQ)(e) ? null : (0, r.jsx)(i.sNh, {
     id: "reactions",
-    label: a.intl.string(a.t.wikODq),
+    label: o.intl.string(o.t.wikODq),
     icon: i.EO4,
     action: () => (0, i.ZDy)(async () => {
       let {

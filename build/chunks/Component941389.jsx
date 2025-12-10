@@ -13,12 +13,12 @@ var Chunk481060 = require("./481060.js"),
 
 function c(e, t) {
   let n = t.getGuildId();
-  return null != n && e.type === o.uaV.USER_JOIN && l.Z.canWithPartialContext(o.Plq.MANAGE_GUILD, {
+  return null != n && e.type === a.uaV.USER_JOIN && l.Z.canWithPartialContext(a.Plq.MANAGE_GUILD, {
     guildId: n
   }) ? (0, r.jsx)(i.sNh, {
     id: "configure",
     label: s.intl.string(s.t.NpHUi1),
     icon: i.idN,
-    action: () => (0, a.zW)(t)
+    action: () => (0, o.zW)(t)
   }) : null
 }

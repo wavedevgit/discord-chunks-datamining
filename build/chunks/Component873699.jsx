@@ -20,21 +20,21 @@ var Chunk54381 = require("./54381.js"),
 function m(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(a.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(b.Plq.MANAGE_MESSAGES, t) && f, [t, f]), m = e.reactions.reduce((e, t) => {
+  } = i.useContext(o.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(b.Plq.MANAGE_MESSAGES, t) && f, [t, f]), m = e.reactions.reduce((e, t) => {
     var n;
     return (null == (n = t.count_details) ? true : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
   }, []);
-  return !g || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, s.eQ)(e) ? null : (0, r.jsx)(a.sNh, {
+  return !g || null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, s.eQ)(e) ? null : (0, r.jsx)(o.sNh, {
     id: "remove-emoji-reactions",
     label: p.intl.string(p.t["zx/e4P"]),
     color: "danger",
     children: m.map(i => {
       var l, s;
-      return (0, r.jsx)(a.sNh, {
+      return (0, r.jsx)(o.sNh, {
         id: "remove-emoji-reactions-".concat(null != (l = i.name) ? l : i.id),
         label: null == i.id ? i.name : ":".concat(i.name, ":"),
         action: n => {
-          n.shiftKey ? (0, c.$E)(t.id, e.id, i) : o.Z.show({
+          n.shiftKey ? (0, c.$E)(t.id, e.id, i) : a.Z.show({
             title: p.intl.string(p.t["73GqTz"]),
             body: p.intl.string(p.t.dmy5bn),
             confirmText: p.intl.string(p.t.p89ACt),
@@ -90,13 +90,13 @@ function O(e) {
     emoji: n,
     reducedMotionEnabled: i,
     className: l = "",
-    isFocused: a = false
+    isFocused: o = false
   } = e;
   return (0, r.jsx)("img", {
     className: l,
     src: null != n.id ? f.ZP.getEmojiURL({
       id: n.id,
-      animated: n.animated && (!i || a),
+      animated: n.animated && (!i || o),
       size: 18
     }) : g.ZP.getURL(null != (t = n.name) ? t : ""),
     alt: ""

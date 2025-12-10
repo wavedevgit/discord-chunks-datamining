@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
 function u(e, t) {
   var n;
   let u = null != (n = null == e ? true : e.url) ? n : "",
-    d = (0, l.e7)([o.ZP], () => o.ZP.isVideoStatsEnabled(u)),
+    d = (0, l.e7)([a.ZP], () => a.ZP.isVideoStatsEnabled(u)),
     f = i.useCallback(() => {
-      "" !== u && (0, o.jL)(u)
+      "" !== u && (0, a.jL)(u)
     }, [u]);
   if (null == e || !(0, c.X2)(e.contentType) || (null == t ? true : t.shouldHideMediaOptions) === true) return null;
   let {
@@ -24,7 +24,7 @@ function u(e, t) {
   } = (0, s.w)({
     location: "useVideoStatsMenuItem"
   });
-  return g ? (0, r.jsx)(a.S89, {
+  return g ? (0, r.jsx)(o.S89, {
     id: "video-stats-for-nerds",
     label: "Stats for Nerds",
     checked: d,

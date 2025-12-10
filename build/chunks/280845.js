@@ -19,23 +19,23 @@ function d(e, t, n) {
 
 function f(e, t, n, r, i) {
   let l = t.hasFlag(c.iLy.EPHEMERAL),
-    a = t.state === c.yb.SENT,
-    o = !e.isArchivedThread() || i;
-  return n && a && !l && !r && o
+    o = t.state === c.yb.SENT,
+    a = !e.isArchivedThread() || i;
+  return n && o && !l && !r && a
 }
 
 function g(e, t) {
   var n;
-  let r = (0, a.tc)(e),
+  let r = (0, o.tc)(e),
     [, s] = (0, l.AB)(null != (n = null == e ? true : e.getGuildId()) ? n : true),
-    c = (0, i.e7)([o.Z], () => null != e && null != t && d(e, t, o.Z));
+    c = (0, i.e7)([a.Z], () => null != e && null != t && d(e, t, a.Z));
   return null != e && null != t && f(e, t, c, s, r)
 }
 
 function b(e, t) {
   var n;
-  let r = (0, a.kn)(e),
-    i = d(e, t, o.Z),
+  let r = (0, o.kn)(e),
+    i = d(e, t, a.Z),
     c = s.default.getCurrentUser(),
     [, u] = (0, l.s5)(null == c ? true : c.id, null != (n = e.getGuildId()) ? n : true);
   return f(e, t, i, u, r)

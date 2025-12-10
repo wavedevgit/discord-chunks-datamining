@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk231338 = require("./231338.js");
 let c = e => {
   let t = (0, i.$R)(e),
-    n = (0, r.e7)([a.Z], () => (e.isPrivate() || a.Z.can(s.Pl.ADD_REACTIONS, e)) && t, [e, t]),
-    c = e.type !== o.d4z.GUILD_ANNOUNCEMENT;
+    n = (0, r.e7)([o.Z], () => (e.isPrivate() || o.Z.can(s.Pl.ADD_REACTIONS, e)) && t, [e, t]),
+    c = e.type !== a.d4z.GUILD_ANNOUNCEMENT;
   return l.nc.getSetting() && n && c
 }

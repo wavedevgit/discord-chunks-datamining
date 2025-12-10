@@ -27,7 +27,7 @@ function m(e) {
     message: e,
     savedMessage: n
   });
-  return t ? null != n || (0, f.Z)() ? (0, r.jsxs)(a.sNh, {
+  return t ? null != n || (0, f.Z)() ? (0, r.jsxs)(o.sNh, {
     id: "save-for-later",
     label: p.intl.string(p.t.tpxJto),
     action: () => null == n ? (0, c.z)({
@@ -40,32 +40,32 @@ function m(e) {
       dueAt: n.saveData.dueAt,
       displayToast: true
     }),
-    children: [null != n ? (0, r.jsx)(a.sNh, {
+    children: [null != n ? (0, r.jsx)(o.sNh, {
       id: "remove-from-for-later",
       label: p.intl.string(p.t.SvXS1Z),
-      icon: a.plf,
+      icon: o.plf,
       action: () => (0, c.x)({
         channelId: e.channel_id,
         messageId: e.id,
         dueAt: n.saveData.dueAt,
         displayToast: true
       })
-    }) : (0, r.jsx)(a.sNh, {
+    }) : (0, r.jsx)(o.sNh, {
       id: "create-bookmark",
       label: p.intl.string(p.t["9p3D9p"]),
-      icon: a.gt9,
+      icon: o.gt9,
       action: () => (0, c.z)({
         channelId: e.channel_id,
         messageId: e.id,
         displayToast: true
       })
-    }), (0, r.jsx)(a.Clw, {}), i]
-  }) : (0, r.jsx)(a.sNh, {
+    }), (0, r.jsx)(o.Clw, {}), i]
+  }) : (0, r.jsx)(o.sNh, {
     id: "save-for-later-upsell",
     label: p.intl.string(p.t.tpxJto),
-    icon: a.SrA,
+    icon: o.SrA,
     iconProps: {
-      color: o.JX.PREMIUM_TIER_2
+      color: a.JX.PREMIUM_TIER_2
     },
     action: () => (0, c.z)({
       channelId: e.channel_id,
@@ -79,9 +79,9 @@ function O(e) {
   let {
     message: t,
     savedMessage: n
-  } = e, [l, o] = i.useState(new Date);
+  } = e, [l, a] = i.useState(new Date);
   i.useEffect(() => {
-    let e = setInterval(() => o(new Date), b.Z.Millis.MINUTE);
+    let e = setInterval(() => a(new Date), b.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
@@ -102,21 +102,21 @@ function O(e) {
       now: l,
       type: u.hQ.LONG
     });
-  return (null == n ? true : n.saveData.dueAt) == null ? (0, r.jsx)(a.kSQ, {
+  return (null == n ? true : n.saveData.dueAt) == null ? (0, r.jsx)(o.kSQ, {
     label: p.intl.string(p.t.roMu1H),
     children: d
-  }) : (0, r.jsxs)(a.kSQ, {
+  }) : (0, r.jsxs)(o.kSQ, {
     label: f,
-    children: [(0, r.jsx)(a.sNh, {
+    children: [(0, r.jsx)(o.sNh, {
       id: "mark-complete",
       label: p.intl.string(p.t.yjGtdJ),
-      icon: a.kmB,
+      icon: o.kmB,
       action: () => (0, c.z)({
         channelId: t.channel_id,
         messageId: t.id,
         dueAt: true
       })
-    }), (0, r.jsx)(a.sNh, {
+    }), (0, r.jsx)(o.sNh, {
       id: "edit-reminder",
       label: p.intl.string(p.t.vrbqs1),
       children: d

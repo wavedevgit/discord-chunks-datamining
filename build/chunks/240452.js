@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 240452, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => a
+  w: () => o
 });
 var Chunk427164 = require("./427164.js"),
   Chunk480218 = require("./480218.js");
@@ -21,7 +21,7 @@ let l = (0, Chunk427164.le)({
   }
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e, {

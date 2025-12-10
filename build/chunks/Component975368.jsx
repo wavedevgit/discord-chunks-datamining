@@ -20,8 +20,8 @@ function d(e) {
     label: u.intl.string(u.t.vbAEaA),
     icon: l._8t,
     action: () => {
-      let t = (0, a.s$)(e.attachments[0].url);
-      (0, o.q)({
+      let t = (0, o.s$)(e.attachments[0].url);
+      (0, a.q)({
         href: t
       })
     }

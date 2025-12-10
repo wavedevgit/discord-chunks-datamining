@@ -7,7 +7,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk914010 = require("./914010.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,7 +30,7 @@ class f extends(r = Chunk442837.ZP.PersistedStore) {
     null != e && (u.reportedMessages = Object.fromEntries(Object.entries(e.reportedMessages).map(e => {
       let [t, n] = e;
       return [t, new Set(n)]
-    }))), this.syncWith([a.Z], d)
+    }))), this.syncWith([o.Z], d)
   }
   getState() {
     return u
@@ -47,7 +47,7 @@ class f extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (r = null == (n = u.reportedMessages[e]) ? true : n.has(t)) && r
   }
 }
-o(f, "displayName", "ReportToModStore"), o(f, "persistKey", "ReportToModStore"), o(f, "migrations", [e => {
+a(f, "displayName", "ReportToModStore"), a(f, "persistKey", "ReportToModStore"), a(f, "migrations", [e => {
   var t;
   return {
     reportedMessages: null != (t = null == e ? true : e.reportedMessages) ? t : {}

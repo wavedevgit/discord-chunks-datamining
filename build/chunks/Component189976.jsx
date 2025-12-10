@@ -21,7 +21,7 @@ function p(e, t) {
     handleTranslate: p,
     handleRevertTranslation: m,
     isTranslating: O,
-    isTranslated: y
+    isTranslated: v
   } = function(e) {
     let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
     return {
@@ -31,11 +31,11 @@ function p(e, t) {
         let g = null != i ? i : r;
         n(true);
         let p = null != (u = null != l ? l : null == (c = (0, f.getAvailableLocales)().find(e => e.value === g)) ? true : c.name) ? u : g;
-        b.has(e.id) || b.set(e.id, e.content), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.Znl8Z8, {
+        b.has(e.id) || b.set(e.id, e.content), (0, a.showToast)((0, a.createToast)(f.intl.formatToPlainString(f.t.Znl8Z8, {
           targetLanguage: p
-        }), o.ToastType.AI));
+        }), a.ToastType.AI));
         try {
-          let t = await a.tn.post({
+          let t = await o.tn.post({
             url: d.ANM.AI_TRANSLATE,
             body: {
               content: e.content,
@@ -50,9 +50,9 @@ function p(e, t) {
               channel_id: e.channel_id,
               content: t.body.content
             }
-          }), (0, o.showToast)((0, o.createToast)(f.intl.formatToPlainString(f.t.FtVUqm, {
+          }), (0, a.showToast)((0, a.createToast)(f.intl.formatToPlainString(f.t.FtVUqm, {
             targetLanguage: p
-          }), o.ToastType.SUCCESS)))
+          }), a.ToastType.SUCCESS)))
         } finally {
           n(false)
         }
@@ -71,7 +71,7 @@ function p(e, t) {
       isTranslating: t,
       isTranslated: b.has(e.id)
     }
-  }(e), h = function(e, t) {
+  }(e), y = function(e, t) {
     let l = (0, f.getAvailableLocales)();
     return i.useMemo(() => l.map(i => {
       let l;
@@ -80,7 +80,7 @@ function p(e, t) {
       } catch (e) {
         l = n(1474)
       }
-      return (0, r.jsx)(o.sNh, {
+      return (0, r.jsx)(a.sNh, {
         id: "translate-".concat(i.value),
         label: i.name,
         icon: () => (0, r.jsx)("img", {
@@ -92,18 +92,18 @@ function p(e, t) {
         disabled: t
       }, i.value)
     }), [e, t, l])
-  }(p, O), v = (0, c.o)();
-  return null != e.content && "" !== e.content.trim() && v ? y ? (0, r.jsx)(o.sNh, {
+  }(p, O), h = (0, c.o)();
+  return null != e.content && "" !== e.content.trim() && h ? v ? (0, r.jsx)(a.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXn),
-    icon: o.os0,
+    icon: a.os0,
     action: m,
     disabled: O
-  }) : (0, r.jsx)(o.sNh, {
+  }) : (0, r.jsx)(a.sNh, {
     id: "translate",
     label: O ? f.intl.string(f.t.SVKIdU) : f.intl.string(f.t["6epDlR"]),
     action: () => p(),
     disabled: O,
-    children: h
+    children: y
   }) : null
 }
