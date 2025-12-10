@@ -440,7 +440,8 @@ function es(e) {
       subscription: a,
       openInvoiceId: ea.id
     }) : null, er && (0, r.jsx)(k.L, {
-      subscription: a
+      subscription: a,
+      analyticsLocations: O
     }), n, w && (0, r.jsx)(m.Wn, {
       messageType: m.QYI.INFO,
       action: (0, r.jsx)(m.P3F, {

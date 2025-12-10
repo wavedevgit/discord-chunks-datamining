@@ -1,84 +1,84 @@
-/** Chunk was on 53950 **/
-/** chunk id: 590149, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 63798 **/
+/** chunk id: 590149, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk422665 = require("./422665.js");
 
-function d(e) {
+function _(e) {
   let {
-    icon: t,
-    title: n,
+    icon: n,
+    title: t,
     subtitle: i,
-    children: d,
-    className: u,
-    isExpanded: m,
-    onExpandedChange: p,
-    defaultExpanded: h = false,
+    children: _,
+    className: s,
+    isExpanded: d,
+    onExpandedChange: u,
+    defaultExpanded: f = false,
     onOpen: x,
-    maxHeight: f
-  } = e, [g, b] = r.useState(h), v = r.useRef(null), [j, _] = r.useState(null), y = true !== m, C = y ? m : g;
+    maxHeight: m
+  } = e, [v, b] = r.useState(f), h = r.useRef(null), [C, I] = r.useState(null), g = true !== d, S = g ? d : v;
   r.useEffect(() => {
-    C && null != v.current && _(v.current.scrollHeight)
-  }, [C, d]);
-  let S = r.useCallback(() => {
-      let e = !C;
-      y || b(e), null == p || p(e), e && null != x && x()
-    }, [C, y, p, x]),
-    E = r.useMemo(() => {
-      if (C) {
-        if (null != f) return {
-          maxHeight: "number" == typeof f ? "".concat(f, "px") : f
+    S && null != h.current && I(h.current.scrollHeight)
+  }, [S, _]);
+  let k = r.useCallback(() => {
+      let e = !S;
+      g || b(e), null == u || u(e), e && null != x && x()
+    }, [S, g, u, x]),
+    N = r.useMemo(() => {
+      if (S) {
+        if (null != m) return {
+          maxHeight: "number" == typeof m ? "".concat(m, "px") : m
         };
-        if (null != j) return {
-          maxHeight: "".concat(j, "px")
+        if (null != C) return {
+          maxHeight: "".concat(C, "px")
         }
       }
-    }, [f, C, j]);
+    }, [m, S, C]);
   return (0, a.jsxs)("div", {
-    className: l()(c.accordionContainer, u, {
-      [c.opened]: C
+    className: o()(p.accordionContainer, s, {
+      [p.opened]: S
     }),
-    children: [(0, a.jsxs)(s.P3F, {
-      className: c.header,
-      onClick: S,
-      children: [null != t && (0, a.jsx)("div", {
-        className: c.headerIconWrapper,
-        children: t
+    children: [(0, a.jsxs)(c.P3F, {
+      className: p.header,
+      onClick: k,
+      children: [null != n && (0, a.jsx)("div", {
+        className: p.headerIconWrapper,
+        children: n
       }), (0, a.jsxs)("div", {
-        className: c.title,
-        children: [(0, a.jsx)(s.Text, {
+        className: p.title,
+        children: [(0, a.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: n
-        }), null != i && "" !== i && (0, a.jsx)(s.Text, {
+          children: t
+        }), null != i && "" !== i && (0, a.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
           children: i
         })]
       }), (0, a.jsx)("div", {
-        className: l()(c.caret, {
-          [c.opened]: C
+        className: o()(p.caret, {
+          [p.opened]: S
         }),
-        children: (0, a.jsx)(o.Z, {
+        children: (0, a.jsx)(l.Z, {
           width: 20,
           height: 20,
-          direction: o.Z.Directions.RIGHT
+          direction: l.Z.Directions.RIGHT
         })
       })]
     }), (0, a.jsx)("div", {
-      ref: v,
-      className: l()(c.content, {
-        [c.opened]: C
+      ref: h,
+      className: o()(p.content, {
+        [p.opened]: S
       }),
-      style: E,
-      children: d
+      style: N,
+      children: _
     })]
   })
 }

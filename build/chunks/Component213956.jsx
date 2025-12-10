@@ -2,13 +2,12 @@
 /** chunk id: 213956, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk266454 = require("./266454.js"),
   Chunk874993 = require("./874993.jsx"),
@@ -25,17 +24,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk824804 = require("./824804.js");
 
-function C() {
+function O() {
   let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
-    C = (0, Chunk442837.e7)([Chunk392885.Z], () => Chunk392885.Z.getCurrentPage());
+    O = (0, Chunk442837.e7)([Chunk392885.Z], () => Chunk392885.Z.getCurrentPage());
   if (Chunk473749.useEffect(() => {
       (0, Chunk266454.Q3)(Chunk704215.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: Chunk921944.L.AUTO
       })
     }, []), null == require) return null;
-  let y = (0, Chunk598622.Q)(require);
-  switch (C) {
+  let C = (0, Chunk598622.Q)(require);
+  switch (O) {
     case Chunk740903.u.OVERVIEW:
       e = (0, Chunk54381.jsx)(Chunk464610.Z, {
         guild: require
@@ -44,13 +43,13 @@ function C() {
     case Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, Chunk54381.jsx)(Chunk733629.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["53eF5o"]),
-        settings: y[Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION]
+        settings: C[Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case Chunk740903.u.DM_AND_SPAM_PROTECTION:
       e = (0, Chunk54381.jsx)(Chunk733629.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.O0SfFy),
-        settings: y[Chunk740903.u.DM_AND_SPAM_PROTECTION]
+        settings: C[Chunk740903.u.DM_AND_SPAM_PROTECTION]
       });
       break;
     case Chunk740903.u.AUTOMOD:
@@ -61,26 +60,25 @@ function C() {
     case Chunk740903.u.PERMISSIONS:
       e = (0, Chunk54381.jsx)(Chunk733629.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.BXoNiT),
-        settings: y[Chunk740903.u.PERMISSIONS]
+        settings: C[Chunk740903.u.PERMISSIONS]
       })
   }
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [C !== Chunk740903.u.OVERVIEW && (0, Chunk54381.jsxs)(Chunk755721.zx, {
+    children: [O !== Chunk740903.u.OVERVIEW && (0, Chunk54381.jsx)(Chunk481060.P3F, {
       className: Chunk824804.back,
-      innerClassName: Chunk824804.backButton,
-      look: Chunk755721.zx.Looks.BLANK,
-      size: Chunk755721.zx.Sizes.MIN,
       onClick: () => {
         (0, Chunk84613.K)(Chunk740903.u.OVERVIEW)
       },
-      children: [(0, Chunk54381.jsx)(Chunk768762.Z, {
-        className: Chunk824804.__invalid_arrow,
-        direction: Chunk768762.Z.Directions.LEFT
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        variant: "text-sm/semibold",
-        color: "interactive-text-default",
-        children: Chunk388032.intl.string(Chunk388032.t["13/7kX"])
-      })]
+      children: (0, Chunk54381.jsxs)("div", {
+        className: Chunk824804.backButton,
+        children: [(0, Chunk54381.jsx)(Chunk768762.Z, {
+          direction: Chunk768762.Z.Directions.LEFT
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          variant: "text-sm/semibold",
+          color: "interactive-text-default",
+          children: Chunk388032.intl.string(Chunk388032.t["13/7kX"])
+        })]
+      })
     }), module]
   })
 }

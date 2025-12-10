@@ -94,10 +94,10 @@ class R extends Chunk473749.PureComponent {
     }) : e.isClaimed || i === T.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? A.intl.string(A.t.ilcBeX) : i === T.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? A.intl.string(A.t.ypuSd8) : true
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Dx, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Dx, {
         children: e
-      }), (0, r.jsx)(p.Hh, {})]
+      }), (0, r.jsx)(m.Hh, {})]
     })
   }
   renderExpiredInvite() {
@@ -151,15 +151,15 @@ class R extends Chunk473749.PureComponent {
     let {
       sentVerification: t
     } = this.state;
-    return (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Ee, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Ee, {
         src: n(892235),
         className: Z.marginBottom8
-      }), (0, r.jsx)(p.Dx, {
+      }), (0, r.jsx)(m.Dx, {
         children: A.intl.format(A.t["ivLUf/"], {
           username: e.username
         })
-      }), (0, r.jsx)(p.DK, {
+      }), (0, r.jsx)(m.DK, {
         className: Z.marginTop20,
         children: A.intl.string(A.t["8Su18+"])
       }), (0, r.jsx)("div", {
@@ -188,8 +188,8 @@ class R extends Chunk473749.PureComponent {
       sku: n,
       giftCodeCode: e.code,
       transitionTo: i,
-      children: (0, r.jsxs)(p.ZP, {
-        children: [(0, r.jsx)(N.Z, {
+      children: (0, r.jsxs)(m.ZP, {
+        children: [(0, r.jsx)(S.Z, {
           giftCode: e
         }), (0, r.jsx)("div", {
           className: Z.marginTop40,
@@ -199,13 +199,13 @@ class R extends Chunk473749.PureComponent {
             disabled: null != s,
             onClick: this.handleAccept
           })
-        }), null != s ? (0, r.jsx)(p.DK, {
+        }), null != s ? (0, r.jsx)(m.DK, {
           className: Z.marginTop20,
           children: s
-        }) : (0, r.jsx)(p.i_, {
+        }) : (0, r.jsx)(m.i_, {
           className: Z.marginTop20,
           children: A.intl.format(A.t.NYM08s, {
-            userTag: S.ZP.getUserTag(t),
+            userTag: y.ZP.getUserTag(t),
             onLogoutClick: this.handleLogout
           })
         })]
@@ -315,7 +315,7 @@ let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
       isResolved: v.Z.getIsResolved(t),
       isAccepting: v.Z.getIsAccepting(t),
       libraryApplicationsFetched: j.Z.fetched,
-      nativeAppState: m.Z.getState(t)
+      nativeAppState: p.Z.getState(t)
     }
   })(R),
   w = e => {
@@ -327,9 +327,9 @@ let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
     } = e, a = (0, f.K$)(t);
     return (i.useEffect(() => {
       null != s && a && l(T.Z5c.APP_WITH_GIFT_CODE(s))
-    }, [a, s, l]), a) ? (0, r.jsxs)(p.ZP, {
-      children: [(0, r.jsx)(p.Dx, {
+    }, [a, s, l]), a) ? (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Dx, {
         children: A.intl.string(A.t.b3lf1c)
-      }), (0, r.jsx)(p.Hh, {})]
+      }), (0, r.jsx)(m.Hh, {})]
     }) : n
   }

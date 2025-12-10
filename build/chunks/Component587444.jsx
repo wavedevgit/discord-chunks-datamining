@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => f,
-  u: () => m
+  u: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function m(e) {
+function p(e) {
   let {
     text: t,
     buttonCta: i,
@@ -29,10 +29,10 @@ function m(e) {
     children: [(0, r.jsx)(o.Ee, {
       src: n(689411)
     }), (0, r.jsx)(o.Dx, {
-      className: s()(p.marginTop20, p.marginBottom8, g.flexCenter),
+      className: s()(m.marginTop20, m.marginBottom8, g.flexCenter),
       children: d.intl.string(d.t.eL5z0i)
     }), (0, r.jsx)(o.DK, {
-      className: p.marginBottom40,
+      className: m.marginBottom40,
       children: d.intl.string(d.t.poAv63)
     }), (0, r.jsxs)(a.Zbd, {
       className: h.card,
@@ -80,7 +80,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(o.ZP, {
     theme: i,
-    children: (0, r.jsx)(m, {
+    children: (0, r.jsx)(p, {
       text: t,
       buttonCta: n,
       onClick: s

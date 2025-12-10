@@ -136,12 +136,12 @@ class J extends Chunk473749.PureComponent {
       transitionTo: i
     } = this.props, s = this.getInviteKey();
     if (s !== this.getInviteKey(e)) Y(s);
-    else if (t.state === k.r2o.APP_NOT_OPENED) this.handleContinue();
+    else if (t.state === D.r2o.APP_NOT_OPENED) this.handleContinue();
     else if (this.getMode() === z && r !== e.authenticated && r) {
-      let e = N.default.getFingerprint();
+      let e = S.default.getFingerprint();
       if (null != e) {
         let t = (0, c.s)(e);
-        this.track(k.rMx.INVITE_LOGIN_SUCCESSFUL, true, {
+        this.track(D.rMx.INVITE_LOGIN_SUCCESSFUL, true, {
           prev_user_id: t
         })
       }
@@ -152,7 +152,7 @@ class J extends Chunk473749.PureComponent {
         callback: this.handleContinue
       })
     }
-    if (n !== e.nativeAppState && n === k.kEZ.OPEN && this.track(k.rMx.INVITE_APP_INVOKED, false), this.getMode() === K && r && !e.authenticated) {
+    if (n !== e.nativeAppState && n === D.kEZ.OPEN && this.track(D.rMx.INVITE_APP_INVOKED, false), this.getMode() === K && r && !e.authenticated) {
       let {
         channel: e
       } = t;
@@ -160,8 +160,8 @@ class J extends Chunk473749.PureComponent {
         if ((0, I.c)(M.M5.INVITE_UNCLAIMED), null != t.guild) {
           var l, u, d;
           let e = (0, o.yE)(null != (d = t.flags) ? d : 0, a.$.IS_APPLICATION_BYPASS),
-            n = (null == (l = t.guild.features) ? true : l.includes(k.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (u = t.guild.features) ? true : u.includes(k.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL));
-          i(!e && n ? k.Z5c.GUILD_MEMBER_VERIFICATION(t.guild.id) : k.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
+            n = (null == (l = t.guild.features) ? true : l.includes(D.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (u = t.guild.features) ? true : u.includes(D.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL));
+          i(!e && n ? D.Z5c.GUILD_MEMBER_VERIFICATION(t.guild.id) : D.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code))
         } else g.ZP.transitionToInvite(t, i)
     }
   }
@@ -333,7 +333,7 @@ class J extends Chunk473749.PureComponent {
       } = this.props;
       if (null != t.channel || (null == e ? true : e.channel) != null) {
         var r;
-        (null == (r = t.guild) ? true : r.id) != null ? n(k.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : g.ZP.transitionToInvite(null != e ? e : t, n)
+        (null == (r = t.guild) ? true : r.id) != null ? n(D.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : g.ZP.transitionToInvite(null != e ? e : t, n)
       }
     }), V(this, "handleAccept", () => {
       this.setState({
@@ -348,7 +348,7 @@ class J extends Chunk473749.PureComponent {
           (0, f.A)(t), null != t.channel && g.ZP.openApp(e, t.channel.id)
         }
       }).catch(e => {
-        if (e instanceof p.yZ || e instanceof p.Hx) {
+        if (e instanceof m.yZ || e instanceof m.Hx) {
           let t = (0, Z.O)(e.code);
           this.setState({
             error: {
@@ -394,8 +394,8 @@ let Q = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.
   return {
     invite: null != (t = O.Z.getInvite(n)) ? t : {},
     nativeAppState: v.Z.getState(n),
-    authenticated: N.default.isAuthenticated(),
+    authenticated: S.default.isAuthenticated(),
     defaultRoute: C.Z.defaultRoute,
-    isUnderage: m.Z.isUnderageAnonymous()
+    isUnderage: p.Z.isUnderageAnonymous()
   }
 })(J)

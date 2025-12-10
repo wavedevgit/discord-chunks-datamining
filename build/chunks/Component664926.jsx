@@ -1,7 +1,7 @@
-/** Chunk was on 34061 **/
-/** chunk id: 664926, original params: e,l,t (module,exports,require) **/
+/** Chunk was on 86872 **/
+/** chunk id: 664926, original params: e,l,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,33 +12,33 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105156 = require("./105156.js");
 
-function d(e) {
+function c(e) {
   let {
     friendMemberIds: l
-  } = e, t = (0, i.Wu)([s.default], () => l.slice(0, 3).map(e => s.default.getUser(e)).filter(e => null != e));
-  if (0 === t.length) return null;
-  let d = t[0],
+  } = e, n = (0, i.Wu)([s.default], () => l.slice(0, 3).map(e => s.default.getUser(e)).filter(e => null != e));
+  if (0 === n.length) return null;
+  let c = n[0],
     o = {
       count: l.length - 1,
-      username: d.username,
-      username2: 2 === l.length && t.length >= 2 ? t[1].username : ""
+      username: c.username,
+      username2: 2 === l.length && n.length >= 2 ? n[1].username : ""
     },
     m = u.intl.format(u.t["5NHEPu"], o);
-  return (0, n.jsxs)("div", {
-    className: c.container,
-    children: [(0, n.jsx)("div", {
-      className: c.avatarStack,
-      children: t.map((e, l) => (0, n.jsx)("div", {
-        className: c.avatarWrapper,
+  return (0, t.jsxs)("div", {
+    className: d.container,
+    children: [(0, t.jsx)("div", {
+      className: d.avatarStack,
+      children: n.map((e, l) => (0, t.jsx)("div", {
+        className: d.avatarWrapper,
         style: {
-          zIndex: t.length - l
+          zIndex: n.length - l
         },
-        children: (0, n.jsx)(r.Z, {
+        children: (0, t.jsx)(r.Z, {
           user: e,
           size: a.EFr.SIZE_16
         })
       }, e.id))
-    }), (0, n.jsx)(a.Text, {
+    }), (0, t.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
       children: m

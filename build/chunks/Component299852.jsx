@@ -90,7 +90,7 @@ class v extends(r = Chunk473749.PureComponent) {
         children: (0, i.jsx)(c.Avr, {
           text: _.intl.string(_.t.YYTirT),
           textVariant: "text-sm/normal",
-          onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG))
+          onClick: () => r(p.Z5c.SETTINGS("notifications", f.vG))
         })
       })]
     })

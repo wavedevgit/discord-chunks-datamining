@@ -1210,6 +1210,12 @@ let y = {
       default: e
     } = await Promise.all([require.e("74969"), require.e("33721")]).then(require.bind(require, 153932));
     return t => (0, a.jsx)(e, j({}, t))
+  },
+  AcceptInviteModal: async () => {
+    let {
+      default: e
+    } = await Promise.all([require.e("13873"), require.e("86872"), require.e("60231")]).then(require.bind(require, 472365));
+    return t => (0, a.jsx)(e, j({}, t))
   }
 };
 

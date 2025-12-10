@@ -26,7 +26,7 @@ function x(e) {
     setSlide: s,
     ready: x,
     token: E
-  } = e, [v, j] = i.useState(false), [b, I] = i.useState(null), [y, S] = i.useState(null), [N, C] = i.useState(""), O = i.useRef(null);
+  } = e, [v, j] = i.useState(false), [b, I] = i.useState(null), [N, y] = i.useState(null), [S, C] = i.useState(""), O = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -34,44 +34,44 @@ function x(e) {
     }
   }, [x]), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Ee, {
-      src: null == y ? n(26230) : n(935227),
+      src: null == N ? n(26230) : n(935227),
       className: l()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
-      children: m.intl.string(m.t.IfBQ56)
-    }), null != y && "" !== y ? (0, r.jsx)(o.Text, {
+      children: p.intl.string(p.t.IfBQ56)
+    }), null != N && "" !== N ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
-      children: y
+      children: N
     }) : null, (0, r.jsxs)(u.gO, {
       className: l()(_.marginBottom20, _.marginTop20),
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
-        label: m.intl.string(m.t["8dM4FO"]),
+        label: p.intl.string(p.t["8dM4FO"]),
         setRef: O,
         className: _.marginBottom20,
-        value: N,
+        value: S,
         onChange: C,
         error: b,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: m.intl.string(m.t["yY/PXY"])
+        placeholder: p.intl.string(p.t["yY/PXY"])
       }), (0, r.jsx)("div", {
         className: _.marginTop8,
         children: (0, r.jsx)(o.Button, {
-          text: m.intl.string(m.t.ezv91b),
+          text: p.intl.string(p.t.ezv91b),
           fullWidth: true,
           onClick: () => {
             if (!v) {
-              if (0 === N.length) {
-                I(m.intl.string(m.t.R98xD5)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
+              if (0 === S.length) {
+                I(p.intl.string(p.t.R98xD5)), d.S.dispatch(m.CkL.WAVE_EMPHASIZE);
                 return
               }
-              return null != y && S(null), null != b && I(null), t(""), j(true), h.Z.post({
-                url: p.ANM.ACCOUNT_REVERT,
+              return null != N && y(null), null != b && I(null), t(""), j(true), h.Z.post({
+                url: m.ANM.ACCOUNT_REVERT,
                 body: {
                   token: E,
-                  password: N
+                  password: S
                 },
                 trackedActionData: {
                   event: a.NetworkActionNames.ACCOUNT_REVERT
@@ -85,27 +85,27 @@ function x(e) {
                 } = e;
                 C(""), t(n), s(g.n.SUCCESS)
               }).catch(e => {
-                if (e instanceof Error) S(m.intl.formatToPlainString(m.t.aTVNes, {
-                  statusPageURL: p.yXt.STATUS
+                if (e instanceof Error) y(p.intl.formatToPlainString(p.t.aTVNes, {
+                  statusPageURL: m.yXt.STATUS
                 }));
                 else {
                   let t = new c.Z(e);
-                  t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
+                  t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : y((function(e) {
                     switch (e) {
-                      case p.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
-                        return m.intl.string(m.t["11zzGR"]);
-                      case p.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                        return m.intl.string(m.t["6qmgaI"]);
-                      case p.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                        return m.intl.string(m.t.bChnKs);
+                      case m.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
+                        return p.intl.string(p.t["11zzGR"]);
+                      case m.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
+                        return p.intl.string(p.t["6qmgaI"]);
+                      case m.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
+                        return p.intl.string(p.t.bChnKs);
                       default:
-                        return m.intl.format(m.t.aTVNes, {
-                          statusPageURL: p.yXt.STATUS
+                        return p.intl.format(p.t.aTVNes, {
+                          statusPageURL: m.yXt.STATUS
                         })
                     }
                   })(t.code).toString())
                 }
-                d.S.dispatch(p.CkL.WAVE_EMPHASIZE)
+                d.S.dispatch(m.CkL.WAVE_EMPHASIZE)
               }).finally(() => {
                 j(false)
               })
@@ -118,7 +118,7 @@ function x(e) {
     }), (0, r.jsx)("div", {
       className: f.buttonContainer,
       children: (0, r.jsx)(o.Button, {
-        text: m.intl.string(m.t.rzxnQ8),
+        text: p.intl.string(p.t.rzxnQ8),
         variant: "secondary",
         fullWidth: true,
         onClick: () => {

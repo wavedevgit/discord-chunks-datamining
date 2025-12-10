@@ -20,11 +20,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 let x = () => {
-  let [e, t] = Chunk473749.useState(""), [s, x] = Chunk473749.useState(""), [E, v] = Chunk473749.useState(false), [j, b] = Chunk473749.useState(false), [I, y] = Chunk473749.useState(null), [S, N] = Chunk473749.useState(null), C = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), O = C.code.split(" ")[0], T = async () => {
+  let [e, t] = Chunk473749.useState(""), [s, x] = Chunk473749.useState(""), [E, v] = Chunk473749.useState(false), [j, b] = Chunk473749.useState(false), [I, N] = Chunk473749.useState(null), [y, S] = Chunk473749.useState(null), C = (0, Chunk442837.e7)([Chunk541692.Z], () => Chunk541692.Z.getCountryCode()), O = C.code.split(" ")[0], T = async () => {
     try {
       await Chunk144114.Z.resendCode(module)
     } catch (e) {
-      N(module.body.message)
+      S(module.body.message)
     }
   }, A = async () => {
     v(true);
@@ -32,9 +32,9 @@ let x = () => {
       let {
         token: t
       } = await Chunk144114.Z.verifyPhone(O + module, Chunk120356);
-      y(null), N(null), b(true), Chunk144114.Z.validatePhoneForSupport(exports)
+      N(null), S(null), b(true), Chunk144114.Z.validatePhoneForSupport(exports)
     } catch (e) {
-      module.body.message ? (y(null), N(module.body.message)) : (y(module.body.phone), N(module.body.code))
+      module.body.message ? (N(null), S(module.body.message)) : (N(module.body.phone), S(module.body.code))
     } finally {
       v(false)
     }
@@ -74,7 +74,7 @@ let x = () => {
         value: Chunk120356,
         onChange: x,
         maxLength: Chunk815660.z,
-        error: S
+        error: y
       }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
         text: Chunk388032.intl.string(Chunk388032.t["5b60gi"]),
         onClick: T

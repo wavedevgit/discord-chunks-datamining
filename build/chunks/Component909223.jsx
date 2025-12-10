@@ -2,7 +2,7 @@
 /** chunk id: 909223, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,14 +60,14 @@ let I = {
     [Chunk82554.BM.USER]: Chunk388032.t.F4jrRW,
     [Chunk82554.BM.GUILD]: Chunk388032.t.gH3aMs
   },
-  y = e => {
+  N = e => {
     let {
       title: t,
       menuType: i
     } = e, l = e => {
       let t = async () => {
-        await (0, p.yL)(i, e)
-      }, l = async t => await (0, p.RV)(i, e, t), o = e => {
+        await (0, m.yL)(i, e)
+      }, l = async t => await (0, m.RV)(i, e, t), o = e => {
         let t = null == e ? true : e.token;
         i === h.BM.MESSAGE ? (0, g.eE)(t) : i === h.BM.USER ? (0, g.JM)(t) : i === h.BM.GUILD && (0, g.FO)(t)
       };
@@ -108,7 +108,7 @@ let I = {
       })]
     })
   },
-  S = () => {
+  y = () => {
     let [e, t] = Chunk473749.useState(true), [n, s] = Chunk473749.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), g = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), j = () => {
       (0, Chunk185625.Jj)().then(e => {
         let {
@@ -142,7 +142,7 @@ let I = {
         })
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk325659.container,
-        children: require.map(e => null == I[e] ? null : (0, r.jsx)(y, {
+        children: require.map(e => null == I[e] ? null : (0, r.jsx)(N, {
           title: x.intl.string(I[e]),
           menuType: e
         }, e))

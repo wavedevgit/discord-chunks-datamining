@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk149765 = require("./149765.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk422559 = require("./422559.js"),
   Chunk601964 = require("./601964.js"),
@@ -55,9 +55,9 @@ function h(e) {
     })]
   })
 }
-let I = e => e.toString() === m.Plq.MENTION_EVERYONE.toString() ? O.intl.string(O.t.yCpsQw) : (0, s.wt)(e);
+let T = e => e.toString() === m.Plq.MENTION_EVERYONE.toString() ? O.intl.string(O.t.yCpsQw) : (0, s.wt)(e);
 
-function T(e) {
+function I(e) {
   let {
     permissions: t
   } = e;
@@ -77,7 +77,7 @@ function T(e) {
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: I(e)
+          children: T(e)
         })]
       }, t))
     })]
@@ -104,7 +104,7 @@ function N(e) {
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: I(e)
+          children: T(e)
         })]
       }, t))
     })]
@@ -122,7 +122,7 @@ function y(e) {
     "data-migration-pending": true,
     children: (0, i.jsxs)("div", {
       className: S.table,
-      children: [(0, i.jsx)(T, {
+      children: [(0, i.jsx)(I, {
         permissions: n
       }), (0, i.jsx)(N, {
         permissions: a
@@ -136,23 +136,20 @@ function b(e) {
     onConfirm: t,
     onDismiss: n
   } = e;
-  return (0, i.jsxs)(l.mzw, {
+  return (0, i.jsx)(l.mzw, {
     className: S.footer,
     "data-migration-pending": true,
-    children: [(0, i.jsx)(l.Button, {
-      variant: "primary",
-      text: O.intl.string(O.t.iOSdAW),
-      onClick: t
-    }), (0, i.jsx)(r.zx, {
-      look: r.zx.Looks.LINK,
-      onClick: n,
-      color: r.zx.Colors.PRIMARY,
-      children: (0, i.jsx)(l.Text, {
-        variant: "text-sm/semibold",
-        color: "header-primary",
-        children: O.intl.string(O.t.gWQZvr)
-      })
-    })]
+    children: (0, i.jsxs)(r.hE2, {
+      fullWidth: true,
+      children: [(0, i.jsx)(r.zxk, {
+        variant: "secondary",
+        text: O.intl.string(O.t.gWQZvr),
+        onClick: n
+      }), (0, i.jsx)(r.zxk, {
+        text: O.intl.string(O.t.iOSdAW),
+        onClick: t
+      })]
+    })
   })
 }
 

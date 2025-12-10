@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk755721 = require("./755721.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk186523 = require("./186523.jsx"),
   Chunk553826 = require("./553826.jsx"),
   Chunk137510 = require("./137510.js"),
@@ -36,11 +36,9 @@ function f(e) {
     title: O ? f : null != (t = null == I ? true : I.title) ? t : f,
     description: O ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfe), ")") : null != (l = null == I ? true : I.description) ? l : "",
     highlightColor: O ? d.q.NONE : null == I ? true : I.highlightColor,
-    action: (0, r.jsx)(s.zx, {
-      look: s.zx.Looks.LINK,
-      size: s.zx.Sizes.MIN,
-      color: s.zx.Colors.LINK,
-      children: m.intl.string(m.t.GEgsA4)
+    action: (0, r.jsx)(s.Avr, {
+      text: m.intl.string(m.t.GEgsA4),
+      textVariant: "text-sm/medium"
     }),
     loading: y,
     className: x,

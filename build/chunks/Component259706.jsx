@@ -27,28 +27,28 @@ function _(e) {
     errorReason: _
   } = e;
   return n ? (0, r.jsxs)("div", {
-    className: m.page,
+    className: p.page,
     children: [(0, r.jsx)("div", {
-      className: m.logoContainer,
+      className: p.logoContainer,
       children: (0, r.jsx)("img", {
         src: f,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.content,
+      className: p.content,
       children: [(0, r.jsx)(a.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: m.headingText,
-        children: p.intl.string(p.t.RtCSr1)
+        className: p.headingText,
+        children: m.intl.string(m.t.RtCSr1)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: m.bodyText,
-        children: p.intl.string(p.t["S+YjYJ"])
+        className: p.bodyText,
+        children: m.intl.string(m.t["S+YjYJ"])
       }), (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: p.intl.string(p.t.j3cG2p),
+        text: m.intl.string(m.t.j3cG2p),
         fullWidth: true,
         onClick: () => {
           d.default.track(g.rMx.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
@@ -58,28 +58,28 @@ function _(e) {
       })]
     })]
   }) : (0, r.jsxs)("div", {
-    className: m.page,
+    className: p.page,
     children: [(0, r.jsx)("div", {
-      className: m.logoContainer,
+      className: p.logoContainer,
       children: (0, r.jsx)("img", {
         src: f,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: m.content,
+      className: p.content,
       children: [(0, r.jsx)(a.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: m.headingText,
-        children: p.intl.string(p.t["9h/0Rl"])
+        className: p.headingText,
+        children: m.intl.string(m.t["9h/0Rl"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: m.bodyText,
-        children: p.intl.string(p.t.Wgm7Om)
+        className: p.bodyText,
+        children: m.intl.string(m.t.Wgm7Om)
       }), (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: p.intl.string(p.t.NydsTd),
+        text: m.intl.string(m.t.NydsTd),
         fullWidth: true,
         onClick: () => {
           var e;
