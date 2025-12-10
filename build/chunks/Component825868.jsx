@@ -48,7 +48,8 @@ let m = e => {
             className: b.grid,
             children: (0, r.jsx)(p.zp.Provider, {
               value: {
-                rentalDuration: j
+                rentalDuration: j,
+                flattenProductVariants: true
               },
               children: g.map(e => (0, r.jsx)(h.Z, {
                 skuId: null == e ? true : e.skuId,

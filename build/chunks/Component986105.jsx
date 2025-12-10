@@ -100,7 +100,8 @@ let O = e => {
     let f = null != o ? l.slice(0, o) : l;
     return (0, r.jsx)(h.zp.Provider, {
       value: {
-        rentalDuration: a ? c : true
+        rentalDuration: a ? c : true,
+        flattenProductVariants: a
       },
       children: f.map((e, t) => {
         let n = d.Z.getCategoryForProduct(e.skuId);
