@@ -2,7 +2,7 @@
 /** chunk id: 357660, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => b
+  T: () => g
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -144,25 +144,17 @@ function h(e) {
 }
 
 function g(e) {
-  return e.every(e => e.type === c.J.TAB_ITEM) && e.length > 0
-}
-
-function E(e) {
-  return e.every(e => e.type === c.J.PANE) && 1 === e.length
-}
-
-function b(e) {
   let {
     node: t
   } = e, {
     layout: n
   } = t;
-  if (g(n)) return (0, r.jsx)(m, {
+  if ((0, c.sp)(n)) return (0, r.jsx)(m, {
     panelKey: t.key,
     notice: t.notice,
     layout: n
   });
-  if (E(n)) return (0, r.jsx)(h, {
+  if ((0, c.iU)(n)) return (0, r.jsx)(h, {
     panelKey: t.key,
     notice: t.notice,
     layout: n

@@ -20,7 +20,7 @@ function s(e, t, n) {
         d = (null == (r = e.usePredicate) ? true : r.call(e)) === false && !i || c,
         f = l(e, t, d, null == n ? true : n.legacyMatches) || u,
         p = false;
-      if ((0, o.L)(e))
+      if ((0, o.Lk)(e))
         for (let t of e.layout) p = s(t, d, f) || p;
       return !d && (f || p) && a.add(e.key), f || p
     };
@@ -31,8 +31,8 @@ function l(e, t, n, r) {
   var s, l, c, u;
   let d = null == (s = e.getLegacySearchKey) ? true : s.call(e);
   if (null != d && null != r) return t.length < 2 || r.has(d);
-  if (e.type === o.J.SECTION && e.hoisted) returntrue;
-  if (e.type === o.J.TAB_ITEM) returnfalse;
+  if (e.type === o.Jq.SECTION && e.hoisted) returntrue;
+  if (e.type === o.Jq.TAB_ITEM) returnfalse;
   let f = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
     p = "useSearchTerms" in e ? null == (c = e.useSearchTerms) ? true : c.call(e) : true;
   if (n || null == f && null == p) returnfalse;

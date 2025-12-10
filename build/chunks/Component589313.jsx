@@ -18,27 +18,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function E() {
-  var e, t, n;
+  var e, t, n, E;
   let {
-    quest: E,
-    sourceQuestContent: g,
-    onClose: O
+    quest: g,
+    sourceQuestContent: O,
+    onClose: h
   } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), {
-    enabled: h
+    enabled: b
   } = Chunk937797.EO.useConfig({
     location: Chunk324805.dr.VIDEO_MODAL
-  }), b = (0, Chunk968843.tP)(E), C = null != (0, Chunk115179.LM)(E.config), S = (0, Chunk969227.D)({
-    quest: E,
+  }), C = (0, Chunk968843.tP)(g), S = null != (0, Chunk115179.LM)(g.config), _ = (0, Chunk969227.D)({
+    quest: g,
     questContent: Chunk49436.jn.QUEST_HOME_DESKTOP,
-    sourceQuestContent: g,
-    onClick: O,
+    sourceQuestContent: O,
+    onClick: (0, Chunk115179.Bg)(g.config) || (0, Chunk115179.xN)(g.config) && (null == (e = g.userStatus) ? true : module.claimedAt) != null ? h : true,
     shouldShowShopIfAlreadyClaimed: true
-  }), _ = (null == (e = E.userStatus) ? true : module.claimedAt) != null ? C ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), y = (null == (t = E.userStatus) ? true : exports.completedAt) == null && h ? b ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
+  }), y = (null == (t = g.userStatus) ? true : exports.claimedAt) != null ? S ? Chunk388032.intl.string(Chunk388032.t.WYchde) : Chunk388032.intl.string(Chunk388032.t.vTgCWx) : Chunk388032.intl.string(Chunk388032.t.cfY4PE), x = (null == (n = g.userStatus) ? true : require.completedAt) == null && b ? C ? Chunk388032.intl.string(Chunk388032.t.NJ6Bnm) : Chunk388032.intl.string(Chunk388032.t.USNO1K) : true;
   return (0, Chunk54381.jsx)(Chunk28664.u, {
-    text: y,
+    text: x,
     children: (0, Chunk54381.jsx)("div", {
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
-        variant: h ? "secondary" : "primary",
+        variant: b ? "secondary" : "primary",
         fullWidth: true,
         icon: ((e, t) => {
           var n, r;
@@ -52,10 +52,10 @@ function E() {
               }
             }
           }
-        })(E, h),
-        onClick: S,
-        text: _,
-        disabled: (null == (n = E.userStatus) ? true : require.completedAt) == null
+        })(g, b),
+        onClick: _,
+        text: y,
+        disabled: (null == (E = g.userStatus) ? true : E.completedAt) == null
       })
     })
   })

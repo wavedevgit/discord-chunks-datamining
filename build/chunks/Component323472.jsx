@@ -47,7 +47,7 @@ function S(t) {
 }
 
 function T(t) {
-  return t.type === a.J.LIST
+  return t.type === a.Jq.LIST
 }
 
 function E(t, e) {
@@ -61,7 +61,7 @@ function E(t, e) {
     visibleDirectory: E,
     accessibleDirectory: g
   } = (0, r.t)(), I = null != (n = E.get(t)) ? n : g.get(t);
-  u()(null != I && (I.type === a.J.ACCORDION || T(I)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+  u()(null != I && (I.type === a.Jq.ACCORDION || T(I)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
   let _ = T(I) && null != (i = I.collapseAfter) ? i : 0,
     O = I.layout;
   return l.useMemo(() => {

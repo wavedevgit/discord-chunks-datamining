@@ -1,7 +1,7 @@
 /** Chunk was on 88569 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => y
+  y: () => p
 }), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,20 +9,21 @@ var Chunk54381 = require("./54381.js"),
   l = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
+  Chunk28682 = require("./28682.js"),
   Chunk996435 = require("./996435.js"),
   Chunk950941 = require("./950941.jsx"),
   Chunk721611 = require("./721611.jsx"),
   Chunk873395 = require("./873395.js");
 
-function d(e) {
+function y(e) {
   var t, n;
   let {
     tag: o,
     onClick: i,
     active: a,
     node: s,
-    visibleContent: b,
-    panelKey: d,
+    visibleContent: u,
+    panelKey: f,
     listItemProps: y,
     children: p
   } = e, {
@@ -32,8 +33,8 @@ function d(e) {
     useTitle: j
   } = s, v = null == j ? true : j();
   return (0, r.jsxs)(o, {
-    "data-settings-sidebar-item": d,
-    className: f.itemContainer,
+    "data-settings-sidebar-item": f,
+    className: d.itemContainer,
     children: [(0, r.jsxs)(c.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -52,26 +53,26 @@ function d(e) {
       }
       return e
     }({}, y), n = n = {
-      className: l()(f.item, {
-        [f.active]: a
+      className: l()(d.item, {
+        [d.active]: a
       }),
       onClick: i,
       children: [null != O ? (0, r.jsx)(O, {}) : (0, r.jsxs)("div", {
-        className: f.itemContent,
+        className: d.itemContent,
         children: [(0, r.jsx)(g, {
           color: "currentColor",
           size: "refresh_sm",
-          className: f.icon
+          className: d.icon
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "currentColor",
           children: v
         })]
       }), null != m && (0, r.jsx)("div", {
-        className: f.itemContent,
-        children: (0, r.jsx)(u.W, {
+        className: d.itemContent,
+        children: (0, r.jsx)(b.W, {
           trailing: m,
-          visibleContent: b,
+          visibleContent: u,
           isSelected: a
         })
       })]
@@ -88,41 +89,41 @@ function d(e) {
   })
 }
 
-function y(e) {
+function p(e) {
   let {
     node: t,
     visibleContent: n,
     hoisted: i = false
-  } = e, l = o.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == l ? true : l.key), f = null != l ? () => s.Z.setState({
+  } = e, l = o.useMemo(() => t.layout[0], [t]), c = u.Z.useField("currentPanelKey"), b = null != c && c === (null == l ? true : l.key), d = null != l ? () => u.Z.setState({
     requestedTargetKey: l.key,
     showNavigationMobile: false
-  }) : t.onClick, y = o.useMemo(() => {
+  }) : t.onClick, p = o.useMemo(() => {
     var e;
-    if (!u) return null;
+    if (!b || null == l || (0, s.sp)(l.layout)) return null;
     let t = (null != (e = null == l ? true : l.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle);
-    return t.length > 1 ? (0, r.jsx)(b.Z, {
+    return t.length > 1 ? (0, r.jsx)(f.Z, {
       categories: t
     }) : null
-  }, [u, null == l ? true : l.layout]), p = i ? "li" : "div";
-  return i ? (0, r.jsx)(d, {
-    tag: p,
+  }, [b, l]), g = i ? "li" : "div";
+  return i ? (0, r.jsx)(y, {
+    tag: g,
     panelKey: null == l ? true : l.key,
-    onClick: f,
-    active: u,
+    onClick: d,
+    active: b,
     node: t,
     visibleContent: n,
-    children: y
+    children: p
   }) : (0, r.jsx)(a.mh, {
     id: t.key,
-    children: e => (0, r.jsx)(d, {
-      tag: p,
+    children: e => (0, r.jsx)(y, {
+      tag: g,
       panelKey: null == l ? true : l.key,
-      onClick: f,
-      active: u,
+      onClick: d,
+      active: b,
       node: t,
       visibleContent: n,
       listItemProps: e,
-      children: y
+      children: p
     })
   })
 }
