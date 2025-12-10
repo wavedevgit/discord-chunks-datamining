@@ -141,9 +141,8 @@ function I(e) {
 function P(e) {
   let {
     channel: t,
-    "aria-label": n,
-    children: i
-  } = e;
+    children: n
+  } = e, i = (0, f.ZP)(t);
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     hideOnClick: true,
@@ -152,11 +151,11 @@ function P(e) {
     text: (0, r.jsx)(I, {
       channel: t
     }),
-    "aria-label": n,
+    "aria-label": null != i && i,
     tooltipClassName: x.listItemTooltip,
     tooltipContentClassName: x.listItemTooltipContent,
     children: e => {
-      var t, n, {
+      var t, i, {
           onFocus: l,
           onBlur: o
         } = e,
@@ -195,17 +194,17 @@ function P(e) {
       }({
         onFocus: l,
         onBlur: o
-      }, a), n = n = {
-        children: i
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      }, a), i = i = {
+        children: n
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      })(Object(i)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
       }), t))
     }
   })
