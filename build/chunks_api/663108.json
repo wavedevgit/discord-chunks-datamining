@@ -1,1 +1,0 @@
-{"id":"663108","type":"experiment","data":{"kind":"user","id":"2025-05_virtual_currency_onboarding_experience","label":"Virtual Currency Onboarding Experience","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Virtual Currency onboarding experience","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

@@ -32,7 +32,7 @@ function S() {
     hasFilters: i
   } = (0, Chunk501431.S)(), s = Chunk120356(), {
     enabled: a
-  } = (0, Chunk825102.WX)({
+  } = (0, Chunk825102.W)({
     location: "Shop"
   }), c = (0, Chunk381585.sp)(), u = Chunk473749.useCallback(e => {
     p.default.track(_.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {

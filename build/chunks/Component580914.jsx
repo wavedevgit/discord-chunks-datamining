@@ -82,7 +82,7 @@ let B = (0, Chunk884697.IC)(90),
       heroBannerStatic: Y,
       heroBannerAnimated: q,
       heroBannerRive: Q
-    } = (0, E.hr)(U), X = null != (t = null == z ? true : z.responsive) && t, J = null == z ? true : z.backgroundStyle, $ = null != Q, ee = R === k.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T);
+    } = (0, E.hr)(U), J = null != (t = null == z ? true : z.responsive) && t, X = null == z ? true : z.backgroundStyle, $ = null != Q, ee = R === k.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T);
     ee && V && (en = I.intl.string(I.t.dVz4hi));
     let {
       analyticsLocations: er
@@ -119,16 +119,16 @@ let B = (0, Chunk884697.IC)(90),
       }) : null, (0, r.jsx)("div", {
         className: o()(L.banner, {
           [L.rivBanner]: $,
-          [L.responsive]: X
+          [L.responsive]: J
         }),
-        style: null != J ? {
-          background: J
+        style: null != X ? {
+          background: X
         } : true,
         children: null != Y && (0, r.jsx)(y.Z, {
           bannerStatic: Y,
           bannerAnimated: q,
           bannerRive: Q,
-          isResponsive: X,
+          isResponsive: J,
           eventTargetRef: D
         })
       }), (0, r.jsxs)("div", {
@@ -142,7 +142,7 @@ let B = (0, Chunk884697.IC)(90),
           })
         }) : (0, r.jsxs)("div", {
           className: o()(L.heroHeaderContainer, {
-            [L.responsive]: X
+            [L.responsive]: J
           }),
           children: [n ? (0, r.jsx)("div", {
             className: L.heroHeaderBadgeLogoSummaryContainer

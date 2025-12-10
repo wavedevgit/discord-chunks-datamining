@@ -57,17 +57,17 @@ let A = e => {
     prioritizeUserDiscounts: P,
     orbsSupportedOnly: w
   }), K = (0, y.St)(U), Y = (0, s.e7)([g.Z], () => g.Z.useReducedMotion), q = (0, s.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
-    animationPhase: X,
-    startAnimation: J
+    animationPhase: J,
+    startAnimation: X
   } = (0, O.y)(), $ = (0, _.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
-    J({
+    X({
       isShuffling: false,
       onOutroComplete: () => W(e)
     }), m.default.track(T.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: ee,
       sort_type: e
     })
-  }, [J, W, ee]);
+  }, [X, W, ee]);
   return null == H ? null : (0, r.jsxs)("div", {
     className: o()(B.popularPicksSection, B.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -115,7 +115,7 @@ let A = e => {
             text: I.intl.string(I.t.X3tnc4),
             buttonRef: et,
             onClick: () => {
-              J({
+              X({
                 isShuffling: true,
                 onOutroComplete: z,
                 returnRef: et
@@ -123,7 +123,7 @@ let A = e => {
                 page_session_id: ee
               })
             },
-            disabled: X !== O.g.MOUNTED && X !== O.g.FINISHED
+            disabled: J !== O.g.MOUNTED && J !== O.g.FINISHED
           })
         })]
       })]
@@ -135,13 +135,13 @@ let A = e => {
         let n, l = b.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
         if (Q)
-          if (X === O.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
+          if (J === O.g.SHUFFLE_OUT) return (0, r.jsx)("div", {
             className: B.shuffleOutro,
             children: (0, r.jsx)(S.Z, {
               skipPulseAnimation: true
             })
           }, "".concat(e.skuId, "-").concat(t));
-          else X === O.g.SORT_OUT ? n = B.sortChangedOutro : X === O.g.SHUFFLE_IN ? n = B.shuffleIntro : X === O.g.SORT_IN && (n = B.sortChangedIntro);
+          else J === O.g.SORT_OUT ? n = B.sortChangedOutro : J === O.g.SHUFFLE_IN ? n = B.shuffleIntro : J === O.g.SORT_IN && (n = B.sortChangedIntro);
         return (0, r.jsx)(_.k0, {
           newValue: {
             tilePosition: t,

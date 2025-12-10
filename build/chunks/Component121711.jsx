@@ -95,7 +95,7 @@ function e_(e) {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, Z.WX)({
+  } = (0, Z.W)({
     location: er.dr.QUEST_HOME_DESKTOP
   }), l = (0, u.e7)([g.Z], () => g.Z.useReducedMotion), s = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
     ref: o,
@@ -171,7 +171,7 @@ function eE(e) {
     isLoading: h
   } = (0, z.Nm)(), {
     enabled: m
-  } = (0, Z.WX)({
+  } = (0, Z.W)({
     location: er.dr.QUEST_HOME_DESKTOP
   }), {
     enabled: _
@@ -253,7 +253,7 @@ let eO = function(e) {
   }, [T]);
   let {
     enabled: Q
-  } = (0, Z.WX)({
+  } = (0, Z.W)({
     location: er.dr.QUEST_HOME_DESKTOP
   }), J = i.useCallback(() => {
     if (Q) return void window.open(ei.EYA.PAID_TERMS_ORBS);

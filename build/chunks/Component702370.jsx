@@ -128,7 +128,7 @@ let eZ = e => {
       user: l
     } = e, a = i.useRef(null), o = (0, q.x6)(n), {
       firstAvatarDecoration: s
-    } = (0, Q.Rj)(n);
+    } = (0, X.Rj)(n);
     return t.type === c.Z.AVATAR_DECORATION ? (0, r.jsx)("div", {
       className: o ? ek.bundleAvatarPreviewContainer : ek.avatarPreviewContainer,
       children: (0, r.jsx)(eb.R, {
@@ -243,12 +243,12 @@ let eZ = e => {
       handleLeaving: N
     } = x, S = (0, eP.N)(t, y), R = (0, ej.W)(t, P);
     s()(null != R, "Selected product should not be null");
-    let k = (0, X.L)(t),
+    let k = (0, Q.L)(t),
       {
         isPurchased: D,
         isPartiallyOwnedBundle: U,
         isRented: M
-      } = (0, X.L)(R),
+      } = (0, Q.L)(R),
       {
         isDisabled: F,
         disabledReason: W
@@ -267,7 +267,7 @@ let eZ = e => {
       eh = (null == ep ? true : ep.amount) === 0,
       {
         firstAvatarDecoration: ex
-      } = (0, Q.Rj)(null != S ? S : R),
+      } = (0, X.Rj)(null != S ? S : R),
       eb = i.useMemo(() => (0, q.BH)(R, I), [R, I]),
       {
         handleUseNow: eC,
@@ -280,7 +280,7 @@ let eZ = e => {
       eB = (0, eO.J)(R),
       {
         enabled: eZ
-      } = (0, B.WX)({
+      } = (0, B.W)({
         location: "collectibles_shop_product_details_modal"
       }),
       eD = (0, Y.G)(R, false, _),
@@ -662,7 +662,7 @@ let eZ = e => {
       firstAvatarDecoration: x,
       firstProfileEffect: b,
       firstNameplate: P
-    } = (0, Q.Rj)(t), j = null != b, _ = () => (0, r.jsxs)(r.Fragment, {
+    } = (0, X.Rj)(t), j = null != b, _ = () => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(A.Z, eB(eL({}, p), {
         pendingAvatar: f,
         user: n,

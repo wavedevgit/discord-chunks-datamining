@@ -21,7 +21,7 @@ let d = {
   g = e => {
     let {
       enabled: t
-    } = (0, o.WX)({
+    } = (0, o.W)({
       location: "useShopViewTransition"
     }), {
       setItemTypeFilter: n,

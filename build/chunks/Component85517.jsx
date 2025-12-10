@@ -98,7 +98,7 @@ function j(e) {
     onQuestCtaClick: n
   } = e, l = (0, s.TH)(), j = (0, s.k6)(), {
     enabled: P
-  } = (0, g.WX)({
+  } = (0, g.W)({
     location: O.dr.QUEST_HOME_DESKTOP
   }), x = (0, p.ZP)(), [A, Z] = i.useState("display-lg"), w = i.useCallback(e => {
     e.contentRect.width < 500 ? Z("display-md") : Z("display-lg")

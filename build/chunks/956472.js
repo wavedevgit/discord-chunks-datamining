@@ -20,7 +20,7 @@ let d = e => {
       isPremiumUser: r
     } = e, {
       enabled: a
-    } = (0, i.CE)({
+    } = (0, i.C)({
       location: "getShopBasePricingData"
     }), o = a ? (0, s.T4)({
       product: n,
