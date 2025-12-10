@@ -2,7 +2,7 @@
 /** chunk id: 146761, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => S,
+  L: () => I,
   d: () => v
 }), require("./953529.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
@@ -160,40 +160,96 @@ let y = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
   },
   S = e => {
     let {
+      premiumGroupMembers: t,
+      isLoadingPremiumGroupMembers: n,
+      onInvite: i,
+      onRemoveMember: a,
+      onRemoveInvitedUser: o
+    } = e;
+    if (n || null == t) return (0, r.jsx)(s.$jN, {});
+    let {
+      primary: l,
+      members: c,
+      invitedUsers: m
+    } = t, h = f.v$, g = c.length, E = Math.max(0, h - g - m.length);
+    return (0, r.jsxs)(s.Kqy, {
+      direction: "vertical",
+      padding: {
+        left: 32,
+        bottom: 12
+      },
+      gap: 0,
+      children: [(0, r.jsxs)(s.Kqy, {
+        direction: "vertical",
+        gap: 4,
+        padding: {
+          top: 12,
+          left: 4,
+          right: 4,
+          bottom: 10
+        },
+        children: [(0, r.jsxs)(s.Kqy, {
+          direction: "horizontal",
+          justify: "space-between",
+          align: "center",
+          gap: 4,
+          children: [(0, r.jsx)(s.Heading, {
+            variant: "heading-sm/medium",
+            color: "text-strong",
+            children: _.intl.string(p.default["oqw/KW"])
+          }), (0, r.jsx)(u.Z, {
+            onInvite: i
+          })]
+        }), (0, r.jsx)(s.Text, {
+          variant: "text-xs/medium",
+          color: "text-subtle",
+          children: _.intl.format(p.default["/a/UoP"], {
+            usedSeats: g,
+            totalSeats: h
+          })
+        })]
+      }), (0, r.jsx)(d.Vl, {
+        user: l,
+        isOwnUser: true
+      }), c.map(e => (0, r.jsx)(d.UA, {
+        user: e,
+        onRemove: () => a(e)
+      }, e.id)), m.map(e => (0, r.jsx)(d.gk, {
+        user: e,
+        onRemove: () => o(e)
+      }, e.id)), Array.from({
+        length: E
+      }).map((e, t) => (0, r.jsx)(d.QU, {
+        onInvite: i
+      }, "seat-available-".concat(t)))]
+    })
+  },
+  I = e => {
+    let {
       subscription: t,
       analyticsLocations: a
     } = e;
     o()(t.hasAnyPremiumGroup, "Subscription is not a premium group");
-    let l = i.useCallback(() => {
-        (0, s.ZDy)(async () => {
-          let {
-            PremiumBrandRefreshSubscriptionCancellationModal: e
-          } = await n.e("26526").then(n.bind(n, 48813));
-          return n => (0, r.jsx)(e, b(g({}, n), {
-            premiumSubscription: t,
-            analyticsLocations: a
-          }))
-        })
-      }, [t, a]),
-      h = e => {
-        throw Error("Not implemented")
-      },
-      E = () => {
-        throw Error("Not implemented")
-      },
-      v = e => {
-        throw Error("Not implemented")
-      },
-      {
-        premiumGroupMembers: S,
-        isLoading: I
-      } = (0, c.Z)();
-    if (I || null == S) return (0, r.jsx)(s.$jN, {});
     let {
-      primary: T,
-      members: C,
-      invitedUsers: A
-    } = S, N = f.v$, P = C.length, R = Math.max(0, N - P - A.length);
+      premiumGroupMembers: l,
+      isLoading: u
+    } = (0, c.Z)(), d = i.useCallback(() => {
+      (0, s.ZDy)(async () => {
+        let {
+          PremiumBrandRefreshSubscriptionCancellationModal: e
+        } = await n.e("26526").then(n.bind(n, 48813));
+        return n => (0, r.jsx)(e, b(g({}, n), {
+          premiumSubscription: t,
+          analyticsLocations: a
+        }))
+      })
+    }, [t, a]), h = e => {
+      throw Error("Not implemented")
+    }, E = () => {
+      throw Error("Not implemented")
+    }, v = e => {
+      throw Error("Not implemented")
+    };
     return (0, r.jsxs)(s.$1m, {
       className: m.container,
       color: "nitro-pink",
@@ -204,62 +260,18 @@ let y = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
             premiumGroupProductName: (0, f.sO)()
           }),
           description: _.intl.format(p.default.lvnrnb, {
-            totalSeats: N,
+            totalSeats: f.v$,
             premiumGroupProductName: (0, f.sO)(),
             helpCenterLink: f.j3
           }),
           buttonText: _.intl.string(p.default.oO0EYw),
-          onClick: l
-        }), (0, r.jsxs)(s.Kqy, {
-          direction: "vertical",
-          padding: {
-            left: 32,
-            bottom: 12
-          },
-          gap: 0,
-          children: [(0, r.jsxs)(s.Kqy, {
-            direction: "vertical",
-            gap: 4,
-            padding: {
-              top: 12,
-              left: 4,
-              right: 4,
-              bottom: 10
-            },
-            children: [(0, r.jsxs)(s.Kqy, {
-              direction: "horizontal",
-              justify: "space-between",
-              align: "center",
-              gap: 4,
-              children: [(0, r.jsx)(s.Heading, {
-                variant: "heading-sm/medium",
-                color: "text-strong",
-                children: _.intl.string(p.default["oqw/KW"])
-              }), (0, r.jsx)(u.Z, {
-                onInvite: E
-              })]
-            }), (0, r.jsx)(s.Text, {
-              variant: "text-xs/medium",
-              color: "text-subtle",
-              children: _.intl.format(p.default["/a/UoP"], {
-                usedSeats: P,
-                totalSeats: N
-              })
-            })]
-          }), (0, r.jsx)(d.Vl, {
-            user: T,
-            isOwnUser: true
-          }), C.map(e => (0, r.jsx)(d.UA, {
-            user: e,
-            onRemove: () => h(e)
-          }, e.id)), A.map(e => (0, r.jsx)(d.gk, {
-            user: e,
-            onRemove: () => v(e)
-          }, e.id)), Array.from({
-            length: R
-          }).map((e, t) => (0, r.jsx)(d.QU, {
-            onInvite: E
-          }, "seat-available-".concat(t)))]
+          onClick: d
+        }), (0, r.jsx)(S, {
+          premiumGroupMembers: l,
+          isLoadingPremiumGroupMembers: u,
+          onInvite: E,
+          onRemoveMember: h,
+          onRemoveInvitedUser: v
         })]
       })]
     })

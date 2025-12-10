@@ -22,7 +22,7 @@ let _ = (0, Chunk509613.CB)(Chunk313789.n.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION
     return t ? I.intl.string(I.t.KHsSWK) : I.intl.string(I.t.PPDo5V)
   },
   useCollapsedSubtitle: () => (function(t) {
-    let e = (0, i.e7)([u.Z], () => u.Z.isInputProfileCustom());
+    let e = (0, i.e7)([r.Z], () => r.Z.isInputProfileCustom());
     return (0, l.u)(t, {
       limit: e ? 3 : 2
     })

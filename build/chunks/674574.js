@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 674574, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  e_: () => g
+  e: () => T
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -13,16 +13,13 @@ var Chunk657707 = require("./657707.js"),
   Chunk802 = require("./802.js"),
   Chunk348911 = require("./348911.js"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk509613.x1)(Chunk313789.n.NOTIFICATIONS_PANE, {
+let S = (0, Chunk509613.wf)(Chunk313789.n.NOTIFICATIONS_PANEL, {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
     buildLayout: () => [Chunk802.o, Chunk348911.p, Chunk441302.s, Chunk736608.r, Chunk61512.G]
   }),
-  E = (0, Chunk509613.wf)(Chunk313789.n.NOTIFICATIONS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
-    buildLayout: () => [T]
-  }),
-  g = (0, Chunk509613.m7)(Chunk313789.n.NOTIFICATIONS_SIDEBAR_ITEM, {
+  T = (0, Chunk509613.m7)(Chunk313789.n.NOTIFICATIONS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.HcoRu0),
     icon: Chunk657707.Dkj,
     usePredicate: () => (0, Chunk526665.gj)("NotificationsPanel"),
-    buildLayout: () => [E]
+    buildLayout: () => [S]
   })

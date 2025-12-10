@@ -2,7 +2,7 @@
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => p
-}), require("./361932.js"), require("./187205.js");
+});
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
@@ -98,11 +98,10 @@ function p(e) {
     requestedTargetKey: l.key,
     showNavigationMobile: false
   }) : t.onClick, p = o.useMemo(() => {
-    var e;
-    if (!b || null == l || (0, s.sp)(l.layout)) return null;
-    let t = (null != (e = null == l ? true : l.layout.flatMap(e => e.layout)) ? e : []).filter(e => null != e.useTitle);
-    return t.length > 1 ? (0, r.jsx)(f.Z, {
-      categories: t
+    if (!b || null == l || !(0, s.iU)(l.layout)) return null;
+    let e = l.layout.filter(e => null != e.useTitle);
+    return e.length > 1 ? (0, r.jsx)(f.Z, {
+      categories: e
     }) : null
   }, [b, l]), g = i ? "li" : "div";
   return i ? (0, r.jsx)(y, {

@@ -14,7 +14,7 @@ let o = (0, Chunk509613.UO)(Chunk313789.n.SOUNDMOJI_VOLUME_SETTING, {
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.INenzY),
   setValue: function(t) {
     let e = (0, s.A)(t);
-    u.AY.updateSetting(e)
+    r.AY.updateSetting(e)
   },
   minValue: 0,
   maxValue: 100,

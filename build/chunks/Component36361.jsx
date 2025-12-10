@@ -2,7 +2,7 @@
 /** chunk id: 36361, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => v
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,12 +20,11 @@ var Chunk28682 = require("./28682.js"),
   Chunk142118 = require("./142118.jsx"),
   Chunk149865 = require("./149865.jsx"),
   Chunk409322 = require("./409322.jsx"),
-  Chunk670304 = require("./670304.jsx"),
   Chunk357660 = require("./357660.jsx"),
   Chunk706873 = require("./706873.jsx"),
   Chunk166292 = require("./166292.jsx");
 
-function v(e) {
+function O(e) {
   let {
     node: t
   } = e;
@@ -35,11 +34,7 @@ function v(e) {
     case i.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
     case i.Jq.PANEL:
-      return (0, r.jsx)(b.T, {
-        node: t
-      });
-    case i.Jq.PANE:
-      return (0, r.jsx)(E.Z, {
+      return (0, r.jsx)(E.T, {
         node: t
       });
     case i.Jq.LIST:
@@ -51,7 +46,7 @@ function v(e) {
         node: t
       });
     case i.Jq.RELATED:
-      return (0, r.jsx)(y.Z, {
+      return (0, r.jsx)(b.Z, {
         node: t
       });
     case i.Jq.CATEGORY:
@@ -63,7 +58,7 @@ function v(e) {
         node: t
       });
     case i.Jq.SPLIT:
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(y.Z, {
         node: t
       });
     case i.Jq.TOGGLE:
@@ -101,15 +96,15 @@ function v(e) {
   }
 }
 
-function S(e) {
+function v(e) {
   let {
     node: t
   } = e;
-  return t.type === i.Jq.PANEL || t.type === i.Jq.PANE ? (0, r.jsx)(v, {
+  return t.type === i.Jq.PANEL ? (0, r.jsx)(O, {
     node: t
   }) : (0, r.jsx)(a.Z, {
     node: t,
-    children: (0, r.jsx)(v, {
+    children: (0, r.jsx)(O, {
       node: t
     })
   })

@@ -35,7 +35,7 @@ let d = () => {
           helpdeskArticle: Chunk323183.w
         })
     }
-  }, [require]), S = (0, Chunk473749.useMemo)(() => {
+  }, [require]), g = (0, Chunk473749.useMemo)(() => {
     if (module) return Chunk388032.intl.format(Chunk237396.default.z6v0w5, {
       helpdeskArticle: Chunk323183.w
     });
@@ -76,6 +76,6 @@ let d = () => {
   return (0, Chunk54381.jsx)(Chunk159691.xvT, {
     variant: "text-sm/normal",
     color: "text-subtle",
-    children: S
+    children: g
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 74662, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  U: () => N
+  U: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,16 +18,13 @@ var Chunk657707 = require("./657707.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk237396 = require("./237396.js");
-let _ = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
+let _ = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
+    useTitle: () => Chunk388032.intl.string(Chunk237396.default.bU5ANm),
+    useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
     StronglyDiscouragedCustomComponent: Chunk55467.R,
     buildLayout: () => []
   }),
-  O = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk237396.default.bU5ANm),
-    useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
-    buildLayout: () => [_]
-  }),
-  N = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
+  O = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk237396.default.bU5ANm),
     getLegacySearchKey: () => Chunk726985.s6.PRIVATE_BROWSING_PERK,
     icon: Chunk657707.enf,
@@ -45,7 +42,7 @@ let _ = (0, Chunk509613.x1)(Chunk313789.n.PRIVATE_BROWSING_PANE, {
         });
       return Chunk657707 && (exports || require) && (!module || Chunk54381)
     },
-    buildLayout: () => [O],
+    buildLayout: () => [_],
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163._x,

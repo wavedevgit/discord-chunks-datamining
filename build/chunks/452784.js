@@ -1,24 +1,19 @@
-/** Chunk was on web.js **/
-/** chunk id: 452784, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 77069 **/
+/** chunk id: 452784, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  $Y: () => l,
-  a: () => u
+  a: () => o
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk590814 = require("./590814.js"),
   Chunk388032 = require("./388032.jsx");
-let l = (0, Chunk509613.x1)(Chunk313789.n.LANGUAGE_AND_TIME_PANE, {
+let a = (0, Chunk509613.wf)(Chunk313789.n.LANGUAGE_AND_TIME_PANEL, {
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.KyFVyi),
     buildLayout: () => [Chunk590814.L]
   }),
-  c = (0, Chunk509613.wf)(Chunk313789.n.LANGUAGE_AND_TIME_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.KyFVyi),
-    buildLayout: () => [l]
-  }),
-  u = (0, Chunk509613.m7)(Chunk313789.n.LANGUAGE_AND_TIME_SIDEBAR_ITEM, {
+  o = (0, Chunk509613.m7)(Chunk313789.n.LANGUAGE_AND_TIME_SIDEBAR_ITEM, {
     icon: Chunk657707.os0,
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.KyFVyi),
-    buildLayout: () => [c]
+    buildLayout: () => [a]
   })

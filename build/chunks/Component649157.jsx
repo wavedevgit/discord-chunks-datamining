@@ -9,13 +9,13 @@ require("./473749.js");
 var Chunk36361 = require("./36361.jsx"),
   Chunk131051 = require("./131051.js"),
   Chunk273313 = require("./273313.jsx"),
-  Chunk452784 = require("./452784.js"),
+  Chunk590814 = require("./590814.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c() {
   let {
     node: e
-  } = (0, Chunk131051.ZP)(Chunk452784.$Y, "");
+  } = (0, Chunk131051.ZP)(Chunk590814.L, "");
   return (0, Chunk54381.jsx)(Chunk273313.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.KyFVyi),
     children: (0, Chunk54381.jsx)(Chunk36361.Z, {
