@@ -2,7 +2,7 @@
 /** chunk id: 474639, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./35282.js"), require("./388685.js");
 var Chunk46973 = require("./46973.js"),
   Chunk570140 = require("./570140.js"),
@@ -35,7 +35,7 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class A extends Chunk147913.Z {
+class C extends Chunk147913.Z {
   handleRTCConnectionState(e) {
     let {
       context: t,

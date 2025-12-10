@@ -40,18 +40,18 @@ let y = (0, Chunk663042.U)(e => ({
       application: O,
       analyticsLocations: v
     }), I = (0, m.Nj)(s.z.CLOUD_PLAY_NEW_BADGE), T = null != S && !I && n, {
-      activeEntryId: A,
-      setActiveEntryId: C
-    } = y(), N = A === t.id, P = T && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [R, D] = (0, h.US)(P), w = R === s.z.CLOUD_PLAY_POPOVER;
+      activeEntryId: C,
+      setActiveEntryId: A
+    } = y(), N = C === t.id, P = T && N ? [s.z.CLOUD_PLAY_POPOVER] : [], [R, D] = (0, h.US)(P), w = R === s.z.CLOUD_PLAY_POPOVER;
     i.useEffect(() => {
-      T && null === A && C(t.id)
-    }, [A, T, t.id, C]);
+      T && null === C && A(t.id)
+    }, [C, T, t.id, A]);
     let x = () => {
       null == S || S()
     };
     i.useEffect(() => () => {
-      w && (D(g.L.USER_DISMISS), C(null))
-    }, [w, D, C]);
+      w && (D(g.L.USER_DISMISS), A(null))
+    }, [w, D, A]);
     let [L, j] = i.useState(false);
     i.useEffect(() => {
       w && !L && j(true)
@@ -65,7 +65,7 @@ let y = (0, Chunk663042.U)(e => ({
       disableTrack: !L
     }, [L]);
     let M = () => {
-      D(g.L.USER_DISMISS), C(null)
+      D(g.L.USER_DISMISS), A(null)
     };
     return (0, r.jsx)(l.J2, {
       title: E.intl.string(E.t["+WNDtV"]),

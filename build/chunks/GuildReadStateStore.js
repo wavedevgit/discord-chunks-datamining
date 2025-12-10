@@ -48,14 +48,14 @@ function T(e) {
   }
   return e
 }
-let A = Chunk981631.kod,
-  C = {},
+let C = Chunk981631.kod,
+  A = {},
   N = new Set,
   P = 0;
 
 function R(e) {
   var t;
-  let n = C[null != e ? e : A];
+  let n = A[null != e ? e : C];
   return {
     unread: false,
     unreadByType: {},
@@ -70,7 +70,7 @@ function R(e) {
 
 function D(e) {
   var t;
-  return C[null != e ? e : A] = null != (t = C[null != e ? e : A]) ? t : R(e)
+  return A[null != e ? e : C] = null != (t = A[null != e ? e : C]) ? t : R(e)
 }
 
 function w(e) {
@@ -98,7 +98,7 @@ function M(e, t, n) {
 
 function k(e) {
   switch (e) {
-    case A:
+    case C:
     case null:
     case true:
       return null;
@@ -130,7 +130,7 @@ function F(e, t, n) {
       isMentionLowImportance: r
     } = e;
     r ? t.lowImportanceMentionCount += n : t.highImportanceMentionCount += n
-  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : A] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), P++, w(null != e ? e : A), B(t, n), true)
+  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (A[null != e ? e : C] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), P++, w(null != e ? e : C), B(t, n), true)
 }
 
 function V(e, t) {
@@ -213,14 +213,14 @@ function Y(e, t) {
   }
   Z(r);
   let i = D(n);
-  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), P++, w(null != n ? n : A), B(r, i), true)
+  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (A[null != n ? n : C] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), P++, w(null != n ? n : C), B(r, i), true)
 }
 
 function W(e) {
   let {
     guilds: t
   } = e;
-  C = {}, P = 0, N = new Set, Y(null);
+  A = {}, P = 0, N = new Set, Y(null);
   let {
     length: n
   } = t;
@@ -235,7 +235,7 @@ function K(e) {
     guilds: t,
     readState: n
   } = e;
-  C = {}, P = 0, N = new Set;
+  A = {}, P = 0, N = new Set;
   let r = n.entries.length < 500,
     i = new Set;
   for (let e of (r && n.entries.forEach(e => {
@@ -248,7 +248,7 @@ function K(e) {
 }
 
 function z() {
-  for (let e of (C = {}, N = new Set, Y(null), Object.values(Chunk430824.Z.getGuildIds()))) Y(module)
+  for (let e of (A = {}, N = new Set, Y(null), Object.values(Chunk430824.Z.getGuildIds()))) Y(module)
 }
 
 function q(e) {
@@ -262,7 +262,7 @@ function Q(e) {
   let {
     guild: t
   } = e;
-  return null != C[t.id] && (delete C[t.id], N.delete(t.id), P++, true)
+  return null != A[t.id] && (delete A[t.id], N.delete(t.id), P++, true)
 }
 
 function X(e) {
@@ -416,13 +416,13 @@ function eh(e) {
     userGuildSettings: t
   } = e, n = new Set(t.map(e => {
     var t;
-    return null != (t = e.guild_id) ? t : A
+    return null != (t = e.guild_id) ? t : C
   }));
-  return d.default.keys(C).reduce((e, t) => n.has(t) && Y(t) || e, false)
+  return d.default.keys(A).reduce((e, t) => n.has(t) && Y(t) || e, false)
 }
 
 function eg() {
-  for (let e in C) C[module].ncMentionCount = 0
+  for (let e in A) A[module].ncMentionCount = 0
 }
 
 function eE(e) {
@@ -447,13 +447,13 @@ class ey extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot(ey.LATEST_SNAPSHOT_VERSION);
-    null != module && (C = module.guilds, N = new Set(module.unreadGuilds))
+    null != module && (A = module.guilds, N = new Set(module.unreadGuilds))
   }
   takeSnapshot() {
     return {
       version: ey.LATEST_SNAPSHOT_VERSION,
       data: {
-        guilds: C,
+        guilds: A,
         unreadGuilds: Array.from(N)
       }
     }
@@ -468,7 +468,7 @@ class ey extends Chunk750041.Z {
     return N
   }
   getMutableGuildStates() {
-    return C
+    return A
   }
   hasUnread(e) {
     return N.has(e)
@@ -495,28 +495,28 @@ class ey extends Chunk750041.Z {
   }
   getTotalMentionCount(e) {
     let t = 0;
-    for (let n in C) {
-      let r = C[n];
-      (true !== e || n !== A) && (t += r.highImportanceMentionCount)
+    for (let n in A) {
+      let r = A[n];
+      (true !== e || n !== C) && (t += r.highImportanceMentionCount)
     }
     return t
   }
   getTotalNotificationsMentionCount(e) {
     let t = 0;
-    for (let n in C) {
-      let r = C[n];
-      (true !== e || n !== A) && (t += r.ncMentionCount)
+    for (let n in A) {
+      let r = A[n];
+      (true !== e || n !== C) && (t += r.ncMentionCount)
     }
     return t
   }
   getPrivateChannelMentionCount() {
     var e;
-    let t = C[A];
+    let t = A[C];
     return null != (e = null == exports ? true : exports.highImportanceMentionCount) ? module : 0
   }
   getMentionCountForPrivateChannel(e) {
     var t, n;
-    return null != (n = null == (t = C[A]) ? true : t.mentionCounts[e]) ? n : 0
+    return null != (n = null == (t = A[C]) ? true : t.mentionCounts[e]) ? n : 0
   }
   getGuildChangeSentinel(e) {
     return D(e).sentinel

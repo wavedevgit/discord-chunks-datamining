@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   F: () => T,
-  H: () => C
+  H: () => A
 }), require("./953529.js"), require("./388685.js"), require("./415506.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -62,8 +62,8 @@ function I(e, t) {
   }), e
 }
 let T = Symbol("POPOUT_PREVENT_CLOSE"),
-  A = new Set(["Spacebar", " ", "Enter"]);
-class C extends(r = Chunk473749.Component) {
+  C = new Set(["Spacebar", " ", "Enter"]);
+class A extends(r = Chunk473749.Component) {
   shouldShowPopout(e, t) {
     return null != e.shouldShow ? e.shouldShow : t.shouldShowPopout
   }
@@ -257,7 +257,7 @@ class C extends(r = Chunk473749.Component) {
         }
       }
     }), O(this, "handleKeyboardPreload", e => {
-      A.has(e.key) && this.handlePreload()
+      C.has(e.key) && this.handlePreload()
     }), O(this, "handleDocumentMouseDown", e => {
       let {
         ignoreModalClicks: t,
@@ -292,13 +292,13 @@ class C extends(r = Chunk473749.Component) {
     }, 1e3 / 60))
   }
 }
-O(C, "defaultProps", {
+O(A, "defaultProps", {
   autoInvert: false,
   nudgeAlignIntoViewport: false,
   spacing: 0,
   loadingComponent: (0, Chunk54381.jsx)(Chunk920676.x, {}),
   closeOnClickOutside: true
-}), O(C, "contextType", Chunk728285.ZP);
+}), O(A, "contextType", Chunk728285.ZP);
 let N = e => {
   var t, n, r, i, a, o;
   let s = e.getBoundingClientRect(),

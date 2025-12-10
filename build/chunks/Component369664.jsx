@@ -171,7 +171,7 @@ let ej = e => {
   ek = "ms-settings:sound-properties";
 
 function eU(e) {
-  return (0, eS.isWindows)() && c().satisfies(null === C.Z || true === C.Z ? true : C.Z.os.release, eT.lb) ? "".concat(ek, "?endpointId=").concat(e) : "ms-settings:sound"
+  return (0, eS.isWindows)() && c().satisfies(null === A.Z || true === A.Z ? true : A.Z.os.release, eT.lb) ? "".concat(ek, "?endpointId=").concat(e) : "ms-settings:sound"
 }
 let eG = e => {
     let {
@@ -280,7 +280,7 @@ let eY = Chunk473749.memo(function() {
     {
       analyticsLocations: g
     } = (0, Chunk906732.ZP)(),
-    C = (0, Chunk281956.J)(Chunk209739),
+    A = (0, Chunk281956.J)(Chunk209739),
     {
       windowsMuteAndZeroVolumeDetectionEnabled: P
     } = (0, Chunk647085.U)({

@@ -89,10 +89,10 @@ function T(e) {
   O(e.gameRelationship), y()
 }
 
-function A(e) {
+function C(e) {
   v(e.userId, e.applicationId), y()
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk699516.Z)
   }
@@ -130,10 +130,10 @@ class C extends(r = Chunk442837.ZP.Store) {
     return h.version
   }
 }
-c(C, "displayName", "GameRelationshipStore");
-let N = new C(Chunk570140.Z, {
+c(A, "displayName", "GameRelationshipStore");
+let N = new A(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   GAME_RELATIONSHIP_ADD: T,
-  GAME_RELATIONSHIP_REMOVE: A,
+  GAME_RELATIONSHIP_REMOVE: C,
   APPLICATIONS_FETCH_SUCCESS: S
 })

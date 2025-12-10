@@ -96,19 +96,19 @@
             }
           }() : S,
           T = n(5634)(),
-          A = n(7106),
-          C = n(3766),
+          C = n(7106),
+          A = n(3766),
           N = n(6822),
           P = n(3036),
           R = n(78),
           D = {},
-          w = "undefined" != typeof Uint8Array && A ? A(Uint8Array) : r,
+          w = "undefined" != typeof Uint8Array && C ? C(Uint8Array) : r,
           x = {
             __proto__: null,
             "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
             "%Array%": Array,
             "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
-            "%ArrayIteratorPrototype%": T && A ? A([][Symbol.iterator]()) : r,
+            "%ArrayIteratorPrototype%": T && C ? C([][Symbol.iterator]()) : r,
             "%AsyncFromSyncIteratorPrototype%": r,
             "%AsyncFunction%": D,
             "%AsyncGenerator%": D,
@@ -138,10 +138,10 @@
             "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
             "%isFinite%": isFinite,
             "%isNaN%": isNaN,
-            "%IteratorPrototype%": T && A ? A(A([][Symbol.iterator]())) : r,
+            "%IteratorPrototype%": T && C ? C(C([][Symbol.iterator]())) : r,
             "%JSON%": "object" == typeof JSON ? JSON : r,
             "%Map%": "undefined" == typeof Map ? r : Map,
-            "%MapIteratorPrototype%": "undefined" != typeof Map && T && A ? A((new Map)[Symbol.iterator]()) : r,
+            "%MapIteratorPrototype%": "undefined" != typeof Map && T && C ? C((new Map)[Symbol.iterator]()) : r,
             "%Math%": Math,
             "%Number%": Number,
             "%Object%": i,
@@ -155,10 +155,10 @@
             "%Reflect%": "undefined" == typeof Reflect ? r : Reflect,
             "%RegExp%": RegExp,
             "%Set%": "undefined" == typeof Set ? r : Set,
-            "%SetIteratorPrototype%": "undefined" != typeof Set && T && A ? A((new Set)[Symbol.iterator]()) : r,
+            "%SetIteratorPrototype%": "undefined" != typeof Set && T && C ? C((new Set)[Symbol.iterator]()) : r,
             "%SharedArrayBuffer%": "undefined" == typeof SharedArrayBuffer ? r : SharedArrayBuffer,
             "%String%": String,
-            "%StringIteratorPrototype%": T && A ? A("" [Symbol.iterator]()) : r,
+            "%StringIteratorPrototype%": T && C ? C("" [Symbol.iterator]()) : r,
             "%Symbol%": T ? Symbol : r,
             "%SyntaxError%": c,
             "%ThrowTypeError%": I,
@@ -175,7 +175,7 @@
             "%Function.prototype.call%": R,
             "%Function.prototype.apply%": P,
             "%Object.defineProperty%": v,
-            "%Object.getPrototypeOf%": C,
+            "%Object.getPrototypeOf%": A,
             "%Math.abs%": f,
             "%Math.floor%": p,
             "%Math.max%": _,
@@ -185,10 +185,10 @@
             "%Math.sign%": E,
             "%Reflect.getPrototypeOf%": N
           };
-        if (A) try {
+        if (C) try {
           null.error
         } catch (e) {
-          var L = A(A(e));
+          var L = C(C(e));
           x["%Error.prototype%"] = L
         }
         var j = function e(t) {
@@ -201,7 +201,7 @@
               r && (n = r.prototype)
             } else if ("%AsyncIteratorPrototype%" === t) {
               var i = e("%AsyncGenerator%");
-              i && A && (n = A(i.prototype))
+              i && C && (n = C(i.prototype))
             }
             return x[t] = n, n
           },
@@ -514,14 +514,14 @@
           S = "(?:" + E + "|" + b + ")",
           I = "(?:" + v + "|" + b + ")",
           T = "(?:['’](?:d|ll|m|re|s|t|ve))?",
-          A = "(?:['’](?:D|LL|M|RE|S|T|VE))?",
-          C = "(?:" + m + "|\ud83c[\udffb-\udfff])?",
+          C = "(?:['’](?:D|LL|M|RE|S|T|VE))?",
+          A = "(?:" + m + "|\ud83c[\udffb-\udfff])?",
           N = "[\\ufe0e\\ufe0f]?",
-          P = N + C + "(?:\\u200d(?:" + ["[^" + c + "]", y, O].join("|") + ")" + N + C + ")*",
+          P = N + A + "(?:\\u200d(?:" + ["[^" + c + "]", y, O].join("|") + ")" + N + A + ")*",
           R = "(?:" + [g, y, O].join("|") + ")" + P,
           D = RegExp("['’]", "g"),
           w = RegExp(m, "g"),
-          x = RegExp([v + "?" + E + "+" + T + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + A + "(?=" + [_, v + S, "$"].join("|") + ")", v + "?" + S + "+" + T, v + "+" + A, h, R].join("|"), "g"),
+          x = RegExp([v + "?" + E + "+" + T + "(?=" + [_, v, "$"].join("|") + ")", I + "+" + C + "(?=" + [_, v + S, "$"].join("|") + ")", v + "?" + S + "+" + T, v + "+" + C, h, R].join("|"), "g"),
           L = /[a-z][A-Z]|[A-Z]{2,}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
           j = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
           M = "object" == typeof self && self && self.Object === Object && self,
@@ -817,8 +817,8 @@
           S = Array.prototype.concat,
           I = Array.prototype.join,
           T = Array.prototype.slice,
-          A = Math.floor,
-          C = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
+          C = Math.floor,
+          A = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
           N = Object.getOwnPropertySymbols,
           P = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
           R = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
@@ -832,7 +832,7 @@
           if (e === 1 / 0 || e === false / 0 || e != e || e && e > false && e < 1e3 || v.call(/e/, t)) return t;
           var n = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
           if ("number" == typeof e) {
-            var r = e < 0 ? -A(-e) : A(e);
+            var r = e < 0 ? -C(-e) : C(e);
             if (r !== e) {
               var i = String(r),
                 a = E.call(t, i.length + 1);
@@ -904,8 +904,8 @@
             return y ? L(t, v) : v
           }
           if ("bigint" == typeof t) {
-            var A = String(t) + "n";
-            return y ? L(t, A) : A
+            var C = String(t) + "n";
+            return y ? L(t, C) : C
           }
           var N = true === l.depth ? 5 : l.depth;
           if (true === i && (i = 0), i >= N && N > 0 && "object" == typeof t) return V(t) ? "[Array]" : "[Object]";
@@ -1044,12 +1044,12 @@
               return "[object Number]" === z(e) && F(e)
             }(t)) return J(W(Number(t)));
           if (function(e) {
-              if (!e || "object" != typeof e || !C) returnfalse;
+              if (!e || "object" != typeof e || !A) returnfalse;
               try {
-                return C.call(e), true
+                return A.call(e), true
               } catch (e) {}
               returnfalse
-            }(t)) return J(W(C.call(t)));
+            }(t)) return J(W(A.call(t)));
           if (function(e) {
               return "[object Boolean]" === z(e) && F(e)
             }(t)) return J(_.call(t));
@@ -1216,43 +1216,43 @@
           },
           _ = {},
           m = function e(t, n, a, o, s, c, d, f, m, h, g, E, b, y, O, v, S, I) {
-            for (var T, A = t, C = I, N = 0, P = false; true !== (C = C.get(_)) && !P;) {
-              var R = C.get(t);
+            for (var T, C = t, A = I, N = 0, P = false; true !== (A = A.get(_)) && !P;) {
+              var R = A.get(t);
               if (N += 1, true !== R) {
                 if (R === N) throw RangeError("Cyclic object value");
                 P = true
               }
-              true === C.get(_) && (N = 0)
+              true === A.get(_) && (N = 0)
             }
-            if ("function" == typeof h ? A = h(n, A) : A instanceof Date ? A = b(A) : "comma" === a && l(A) && (A = i.maybeMap(A, function(e) {
+            if ("function" == typeof h ? C = h(n, C) : C instanceof Date ? C = b(C) : "comma" === a && l(C) && (C = i.maybeMap(C, function(e) {
                 return e instanceof Date ? b(e) : e
-              })), null === A) {
+              })), null === C) {
               if (c) return m && !v ? m(n, p.encoder, S, "key", y) : n;
-              A = ""
+              C = ""
             }
-            if ("string" == typeof(T = A) || "number" == typeof T || "boolean" == typeof T || "symbol" == typeof T || "bigint" == typeof T || i.isBuffer(A)) return m ? [O(v ? n : m(n, p.encoder, S, "key", y)) + "=" + O(m(A, p.encoder, S, "value", y))] : [O(n) + "=" + O(String(A))];
+            if ("string" == typeof(T = C) || "number" == typeof T || "boolean" == typeof T || "symbol" == typeof T || "bigint" == typeof T || i.isBuffer(C)) return m ? [O(v ? n : m(n, p.encoder, S, "key", y)) + "=" + O(m(C, p.encoder, S, "value", y))] : [O(n) + "=" + O(String(C))];
             var D, w = [];
-            if (true === A) return w;
-            if ("comma" === a && l(A)) v && m && (A = i.maybeMap(A, m)), D = [{
-              value: A.length > 0 ? A.join(",") || null : true
+            if (true === C) return w;
+            if ("comma" === a && l(C)) v && m && (C = i.maybeMap(C, m)), D = [{
+              value: C.length > 0 ? C.join(",") || null : true
             }];
             else if (l(h)) D = h;
             else {
-              var x = Object.keys(A);
+              var x = Object.keys(C);
               D = g ? x.sort(g) : x
             }
             var L = f ? String(n).replace(/\./g, "%2E") : String(n),
-              j = o && l(A) && 1 === A.length ? L + "[]" : L;
-            if (s && l(A) && 0 === A.length) return j + "[]";
+              j = o && l(C) && 1 === C.length ? L + "[]" : L;
+            if (s && l(C) && 0 === C.length) return j + "[]";
             for (var M = 0; M < D.length; ++M) {
               var k = D[M],
-                U = "object" == typeof k && k && true !== k.value ? k.value : A[k];
+                U = "object" == typeof k && k && true !== k.value ? k.value : C[k];
               if (!d || null !== U) {
                 var G = E && f ? String(k).replace(/\./g, "%2E") : String(k),
-                  Z = l(A) ? "function" == typeof a ? a(j, G) : j : j + (E ? "." + G : "[" + G + "]");
+                  Z = l(C) ? "function" == typeof a ? a(j, G) : j : j + (E ? "." + G : "[" + G + "]");
                 I.set(t, N);
                 var B = r();
-                B.set(_, I), u(w, e(U, Z, a, o, s, c, d, f, "comma" === a && v && l(A) ? null : m, h, g, E, b, y, O, v, S, B))
+                B.set(_, I), u(w, e(U, Z, a, o, s, c, d, f, "comma" === a && v && l(C) ? null : m, h, g, E, b, y, O, v, S, B))
               }
             }
             return w
@@ -1593,19 +1593,19 @@
             }
           }() : S,
           T = n(5639)(),
-          A = n(7106),
-          C = n(3766),
+          C = n(7106),
+          A = n(3766),
           N = n(6822),
           P = n(3036),
           R = n(78),
           D = {},
-          w = "undefined" != typeof Uint8Array && A ? A(Uint8Array) : r,
+          w = "undefined" != typeof Uint8Array && C ? C(Uint8Array) : r,
           x = {
             __proto__: null,
             "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
             "%Array%": Array,
             "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
-            "%ArrayIteratorPrototype%": T && A ? A([][Symbol.iterator]()) : r,
+            "%ArrayIteratorPrototype%": T && C ? C([][Symbol.iterator]()) : r,
             "%AsyncFromSyncIteratorPrototype%": r,
             "%AsyncFunction%": D,
             "%AsyncGenerator%": D,
@@ -1635,10 +1635,10 @@
             "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
             "%isFinite%": isFinite,
             "%isNaN%": isNaN,
-            "%IteratorPrototype%": T && A ? A(A([][Symbol.iterator]())) : r,
+            "%IteratorPrototype%": T && C ? C(C([][Symbol.iterator]())) : r,
             "%JSON%": "object" == typeof JSON ? JSON : r,
             "%Map%": "undefined" == typeof Map ? r : Map,
-            "%MapIteratorPrototype%": "undefined" != typeof Map && T && A ? A((new Map)[Symbol.iterator]()) : r,
+            "%MapIteratorPrototype%": "undefined" != typeof Map && T && C ? C((new Map)[Symbol.iterator]()) : r,
             "%Math%": Math,
             "%Number%": Number,
             "%Object%": i,
@@ -1652,10 +1652,10 @@
             "%Reflect%": "undefined" == typeof Reflect ? r : Reflect,
             "%RegExp%": RegExp,
             "%Set%": "undefined" == typeof Set ? r : Set,
-            "%SetIteratorPrototype%": "undefined" != typeof Set && T && A ? A((new Set)[Symbol.iterator]()) : r,
+            "%SetIteratorPrototype%": "undefined" != typeof Set && T && C ? C((new Set)[Symbol.iterator]()) : r,
             "%SharedArrayBuffer%": "undefined" == typeof SharedArrayBuffer ? r : SharedArrayBuffer,
             "%String%": String,
-            "%StringIteratorPrototype%": T && A ? A("" [Symbol.iterator]()) : r,
+            "%StringIteratorPrototype%": T && C ? C("" [Symbol.iterator]()) : r,
             "%Symbol%": T ? Symbol : r,
             "%SyntaxError%": c,
             "%ThrowTypeError%": I,
@@ -1672,7 +1672,7 @@
             "%Function.prototype.call%": R,
             "%Function.prototype.apply%": P,
             "%Object.defineProperty%": v,
-            "%Object.getPrototypeOf%": C,
+            "%Object.getPrototypeOf%": A,
             "%Math.abs%": f,
             "%Math.floor%": p,
             "%Math.max%": _,
@@ -1682,10 +1682,10 @@
             "%Math.sign%": E,
             "%Reflect.getPrototypeOf%": N
           };
-        if (A) try {
+        if (C) try {
           null.error
         } catch (e) {
-          var L = A(A(e));
+          var L = C(C(e));
           x["%Error.prototype%"] = L
         }
         var j = function e(t) {
@@ -1698,7 +1698,7 @@
               r && (n = r.prototype)
             } else if ("%AsyncIteratorPrototype%" === t) {
               var i = e("%AsyncGenerator%");
-              i && A && (n = A(i.prototype))
+              i && C && (n = C(i.prototype))
             }
             return x[t] = n, n
           },
@@ -1950,19 +1950,19 @@
             }
           }() : S,
           T = n(9715)(),
-          A = n(7106),
-          C = n(3766),
+          C = n(7106),
+          A = n(3766),
           N = n(6822),
           P = n(3036),
           R = n(78),
           D = {},
-          w = "undefined" != typeof Uint8Array && A ? A(Uint8Array) : r,
+          w = "undefined" != typeof Uint8Array && C ? C(Uint8Array) : r,
           x = {
             __proto__: null,
             "%AggregateError%": "undefined" == typeof AggregateError ? r : AggregateError,
             "%Array%": Array,
             "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? r : ArrayBuffer,
-            "%ArrayIteratorPrototype%": T && A ? A([][Symbol.iterator]()) : r,
+            "%ArrayIteratorPrototype%": T && C ? C([][Symbol.iterator]()) : r,
             "%AsyncFromSyncIteratorPrototype%": r,
             "%AsyncFunction%": D,
             "%AsyncGenerator%": D,
@@ -1992,10 +1992,10 @@
             "%Int32Array%": "undefined" == typeof Int32Array ? r : Int32Array,
             "%isFinite%": isFinite,
             "%isNaN%": isNaN,
-            "%IteratorPrototype%": T && A ? A(A([][Symbol.iterator]())) : r,
+            "%IteratorPrototype%": T && C ? C(C([][Symbol.iterator]())) : r,
             "%JSON%": "object" == typeof JSON ? JSON : r,
             "%Map%": "undefined" == typeof Map ? r : Map,
-            "%MapIteratorPrototype%": "undefined" != typeof Map && T && A ? A((new Map)[Symbol.iterator]()) : r,
+            "%MapIteratorPrototype%": "undefined" != typeof Map && T && C ? C((new Map)[Symbol.iterator]()) : r,
             "%Math%": Math,
             "%Number%": Number,
             "%Object%": i,
@@ -2009,10 +2009,10 @@
             "%Reflect%": "undefined" == typeof Reflect ? r : Reflect,
             "%RegExp%": RegExp,
             "%Set%": "undefined" == typeof Set ? r : Set,
-            "%SetIteratorPrototype%": "undefined" != typeof Set && T && A ? A((new Set)[Symbol.iterator]()) : r,
+            "%SetIteratorPrototype%": "undefined" != typeof Set && T && C ? C((new Set)[Symbol.iterator]()) : r,
             "%SharedArrayBuffer%": "undefined" == typeof SharedArrayBuffer ? r : SharedArrayBuffer,
             "%String%": String,
-            "%StringIteratorPrototype%": T && A ? A("" [Symbol.iterator]()) : r,
+            "%StringIteratorPrototype%": T && C ? C("" [Symbol.iterator]()) : r,
             "%Symbol%": T ? Symbol : r,
             "%SyntaxError%": c,
             "%ThrowTypeError%": I,
@@ -2029,7 +2029,7 @@
             "%Function.prototype.call%": R,
             "%Function.prototype.apply%": P,
             "%Object.defineProperty%": v,
-            "%Object.getPrototypeOf%": C,
+            "%Object.getPrototypeOf%": A,
             "%Math.abs%": f,
             "%Math.floor%": p,
             "%Math.max%": _,
@@ -2039,10 +2039,10 @@
             "%Math.sign%": E,
             "%Reflect.getPrototypeOf%": N
           };
-        if (A) try {
+        if (C) try {
           null.error
         } catch (e) {
-          var L = A(A(e));
+          var L = C(C(e));
           x["%Error.prototype%"] = L
         }
         var j = function e(t) {
@@ -2055,7 +2055,7 @@
               r && (n = r.prototype)
             } else if ("%AsyncIteratorPrototype%" === t) {
               var i = e("%AsyncGenerator%");
-              i && A && (n = A(i.prototype))
+              i && C && (n = C(i.prototype))
             }
             return x[t] = n, n
           },
@@ -2477,8 +2477,8 @@
         S = r.referenceId,
         I = r.routingCountry,
         T = r.sandboxAttributes,
-        A = true === T ? y : T,
-        C = r.sessionToken,
+        C = true === T ? y : T,
+        A = r.sessionToken,
         N = r.styleVariant,
         P = r.templateId,
         R = r.templateVersionId,
@@ -2508,7 +2508,7 @@
           "message-target-origin": v || null,
           "inquiry-id": g || null,
           language: O,
-          "session-token": C,
+          "session-token": A,
           "reference-id": S,
           "account-id": i,
           "account-type-id": a,
@@ -2520,7 +2520,7 @@
           addQueryPrefix: true,
           skipNulls: true
         });
-      return e.style.maxHeight = E(p), e.style.maxWidth = E(_), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != h ? h : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", b.concat(A).join(" ")), e.frameBorder = "0", e.src = j + "/widget" + M, e.onload = function() {}, e
+      return e.style.maxHeight = E(p), e.style.maxWidth = E(_), e.setAttribute("data-testid", "persona-widget__iframe"), "embedded" === n && e.setAttribute("aria-modal", "true"), e.title = null != h ? h : "Verify your identity", e.className = "persona-widget__iframe", e.allow = "camera;microphone;clipboard-write", e.setAttribute("sandbox", b.concat(C).join(" ")), e.frameBorder = "0", e.src = j + "/widget" + M, e.onload = function() {}, e
     }
     var v = function(e) {
       if ("localhost" === e || /^\d+\.\d+\.\d+\.\d+$/.test(e)) return e;

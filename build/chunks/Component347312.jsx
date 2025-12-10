@@ -27,8 +27,8 @@ let h = 40,
   S = 24,
   I = 2,
   T = 4,
-  A = [0, 0, 0, 0, 0],
-  C = 200;
+  C = [0, 0, 0, 0, 0],
+  A = 200;
 
 function N(e) {
   let t;
@@ -95,7 +95,7 @@ function j(e, t) {
     r = i.useMemo(() => D(t), [t]);
   return i.useMemo(() => {
     var e;
-    return null != (e = P(null != n ? n : [], r)) ? e : A
+    return null != (e = P(null != n ? n : [], r)) ? e : C
   }, [n, r])
 }
 
@@ -110,8 +110,8 @@ function M(e, t, n) {
 
 function k(e, t) {
   let n = (0, l.dQu)(s.Z.colors.INTERACTIVE_MUTED).hex(),
-    r = (0, l.dQu)(s.Z.colors.INTERACTIVE_NORMAL).hex(),
-    i = (0, l.dQu)(s.Z.colors.INTERACTIVE_ACTIVE).hex(),
+    r = (0, l.dQu)(s.Z.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
+    i = (0, l.dQu)(s.Z.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
     a = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
     o = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
     c = t ? a : n,
@@ -130,7 +130,7 @@ function k(e, t) {
 
 function U(e, t, n, r) {
   if (null == r) return [t, false];
-  let i = Math.min((n - r) / C, 1);
+  let i = Math.min((n - r) / A, 1);
   return 1 === i ? [t, false] : [(0, d.BM)(e, t, i), true]
 }
 
@@ -148,7 +148,7 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.ZP)(), b = i.useMemo(() => R(s), [s]), y = i.useRef(true), O = j(n, E), v = i.useRef(l), I = i.useRef(d), A = i.useRef(null), N = window.devicePixelRatio, {
+  } = (0, c.ZP)(), b = i.useMemo(() => R(s), [s]), y = i.useRef(true), O = j(n, E), v = i.useRef(l), I = i.useRef(d), C = i.useRef(null), N = window.devicePixelRatio, {
     lastBackgroundFillColor: P,
     backgroundFillColor: D,
     lastActiveFillColor: w,
@@ -200,10 +200,10 @@ function G(e) {
         a = y.current;
       if (null == r || null == i || null == a) return;
       let o = false;
-      (v.current !== l || I.current !== d) && (v.current = l, I.current = d, A.current = n), null != A.current && n > A.current + C && (A.current = null);
+      (v.current !== l || I.current !== d) && (v.current = l, I.current = d, C.current = n), null != C.current && n > C.current + A && (C.current = null);
       let s = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
-      let [c, u] = U(P, D, n, A.current);
+      let [c, u] = U(P, D, n, C.current);
       o = o || u, i.fillStyle = c;
       for (let e = 0; e < O.length; e++) L({
         context: i,
@@ -214,9 +214,9 @@ function G(e) {
         constrainMin: true
       });
       i.fill();
-      let [f, p] = U(G, Z, n, A.current);
+      let [f, p] = U(G, Z, n, C.current);
       o = o || p;
-      let [_, m] = U(w, M, n, A.current);
+      let [_, m] = U(w, M, n, C.current);
       o = o || m;
       for (let e = 0; e < a.length; e++) {
         let t = a[e],

@@ -15,7 +15,7 @@ var Chunk692547 = require("./692547.js"),
 function l(e) {
   let {
     label: t,
-    backgroundColor: n = i.Z.colors.BUTTON_SECONDARY_BACKGROUND.css,
+    backgroundColor: n = i.Z.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT.css,
     icon: o,
     iconColor: l
   } = e;

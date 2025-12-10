@@ -140,10 +140,10 @@ function T(e) {
   E.voiceFilters = i, E.sortedVoiceFilters = I(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
 }
 
-function A() {
+function C() {
   E.catalogFetchFailed = true
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk442837.ZP.Store) {
   getVoiceFilterModels() {
     return E.models
   }
@@ -279,14 +279,14 @@ function M() {
 function k() {
   b = Date.now()
 }
-f(C, "displayName", "VoiceFilterStore");
-let U = new C(Chunk570140.Z, {
+f(A, "displayName", "VoiceFilterStore");
+let U = new A(Chunk570140.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: P,
   VOICE_FILTER_DOWNLOAD_PROGRESS: R,
   VOICE_FILTER_DOWNLOAD_FAILED: D,
   VOICE_FILTER_FILE_READY: w,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: T,
-  VOICE_FILTER_CATALOG_FETCH_FAILED: A,
+  VOICE_FILTER_CATALOG_FETCH_FAILED: C,
   VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: N,
   VOICE_FILTER_DEV_TOOLS_SET_UPDATE_TIME: x,
   VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: L,

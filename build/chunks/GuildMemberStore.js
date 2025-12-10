@@ -29,7 +29,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk430824 = require("./430824.js"),
   Chunk372897 = require("./372897.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -168,7 +168,7 @@ function Q(e) {
   } = e, {
     colorString: S,
     colorStrings: I,
-    colorRoleId: A,
+    colorRoleId: C,
     iconRoleId: N,
     hoistRoleId: R,
     highestRoleId: w
@@ -181,7 +181,7 @@ function Q(e) {
     roles: u,
     colorString: S,
     colorStrings: I,
-    colorRoleId: A,
+    colorRoleId: C,
     iconRoleId: N,
     hoistRoleId: R,
     highestRoleId: w,
@@ -199,7 +199,7 @@ function Q(e) {
   if (r === O.default.getId())
     if (g.Z.isViewingRoles(a) || g.Z.isFullServerPreview(a)) {
       let e = g.Z.getViewingRoles(a);
-      x[a] = P(C({}, L, g.Z.getMemberOptions(a)), {
+      x[a] = P(A({}, L, g.Z.getMemberOptions(a)), {
         roles: null != e ? y.default.keys(e) : []
       })
     } else null != x[a] && delete x[a];
@@ -233,7 +233,7 @@ function ee(e) {
   let {
     guildMembers: t
   } = e;
-  D = C({}, t), w = {}
+  D = A({}, t), w = {}
 }
 
 function et(e) {
@@ -241,7 +241,7 @@ function et(e) {
     guildMembers: t,
     guilds: n
   } = e;
-  M = true, D = C({}, t), w = {}, L = {}, er(n)
+  M = true, D = A({}, t), w = {}, L = {}, er(n)
 }
 
 function en(e) {
@@ -253,11 +253,11 @@ function en(e) {
 
 function er(e) {
   for (let t of e)
-    if (null != t.member && (null == L[t.id] ? L[t.id] = t.member : L[t.id] = P(C({}, t.member), {
+    if (null != t.member && (null == L[t.id] ? L[t.id] = t.member : L[t.id] = P(A({}, t.member), {
         roles: t.member.roles
       }), null != D[t.id])) {
       let e = D[t.id];
-      null != e[t.member.userId] && (e[t.member.userId] = P(C({}, e[t.member.userId]), {
+      null != e[t.member.userId] && (e[t.member.userId] = P(A({}, e[t.member.userId]), {
         roles: t.member.roles
       }))
     }
@@ -326,7 +326,7 @@ function eo(e) {
   if (null == o || o.roles.includes(r)) returnfalse;
   o.roles = [...o.roles, r];
   let s = q(S.Z.getUnsafeMutableRoles(a.id), o.roles);
-  return i[n] = C({}, o, s), true
+  return i[n] = A({}, o, s), true
 }
 
 function es(e) {
@@ -342,7 +342,7 @@ function es(e) {
   if (null == o || !o.roles.includes(r)) returnfalse;
   o.roles = o.roles.filter(e => e !== r);
   let s = q(S.Z.getUnsafeMutableRoles(a.id), o.roles);
-  return i[n] = C({}, o, s), true
+  return i[n] = A({}, o, s), true
 }
 
 function el(e) {
@@ -573,7 +573,7 @@ function eT(e) {
   }
 }
 
-function eA(e) {
+function eC(e) {
   var t, n, r;
   let {
     guildId: i,
@@ -607,7 +607,7 @@ function eA(e) {
   })
 }
 
-function eC(e) {
+function eA(e) {
   let {
     guildId: t
   } = e;
@@ -650,7 +650,7 @@ function eP(e, t) {
     members: Object.entries(e.members).map(t => {
       var n;
       let [r, i] = t, a = null == e || null == (n = e.users) ? true : n[r];
-      if (null != a) return P(C({}, i), {
+      if (null != a) return P(A({}, i), {
         user: a
       })
     }).filter(e => null != e)
@@ -837,7 +837,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
     return U
   }
 }
-A(eU, "displayName", "GuildMemberStore");
+C(eU, "displayName", "GuildMemberStore");
 let eG = new eU(Chunk570140.Z, {
   CONNECTION_OPEN: X,
   CONNECTION_OPEN_SUPPLEMENTAL: J,
@@ -848,7 +848,7 @@ let eG = new eU(Chunk570140.Z, {
   GUILD_DELETE: eI,
   GUILD_MEMBER_ADD: ea,
   GUILD_MEMBER_UPDATE: ea,
-  GUILD_MEMBER_UPDATE_LOCAL: eA,
+  GUILD_MEMBER_UPDATE_LOCAL: eC,
   GUILD_MEMBERS_CHUNK_BATCH: ec,
   GUILD_MEMBER_REMOVE: eE,
   GUILD_MEMBER_REMOVE_LOCAL: eb,
@@ -864,7 +864,7 @@ let eG = new eU(Chunk570140.Z, {
   IMPERSONATE_UPDATE: eN,
   IMPERSONATE_STOP: eN,
   PASSIVE_UPDATE_V2: eu,
-  CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES: eC,
+  CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES: eA,
   LOCAL_MESSAGES_LOADED: ei,
   MESSAGE_CREATE: eD,
   MESSAGE_UPDATE: eD,

@@ -8,7 +8,7 @@ require.d(exports, {
   V$: () => T,
   _j: () => b,
   fY: () => y,
-  gI: () => A,
+  gI: () => C,
   nc: () => S,
   yH: () => h
 }), require("./539854.js"), require("./388685.js"), require("./784620.js"), require("./973216.js");
@@ -123,7 +123,7 @@ function T(e, t) {
   }), I()
 }
 
-function A(e, t) {
+function C(e, t) {
   let {
     quest: n
   } = e;

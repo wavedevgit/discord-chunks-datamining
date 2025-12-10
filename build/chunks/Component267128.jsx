@@ -129,8 +129,8 @@ function j(e, t, n) {
   });
   if (a.message.type === N.uaV.POLL_RESULT) return (0, r.jsx)(c.QDj, {
     className: R.repliedTextContentLeadingIcon,
-    width: C.WW,
-    height: C.WW,
+    width: A.WW,
+    height: A.WW,
     size: "custom"
   });
   let y = () => L(a.message.author, f, o.guild_id, _, m, b);
@@ -192,7 +192,7 @@ function k(e, t, n) {
       } = U(a.message, i, s, l, R.repliedTextContent, {
         trailingIconClass: R.repliedTextContentTrailingIcon,
         leadingIconClass: R.repliedTextContentLeadingIcon,
-        iconSize: C.WW
+        iconSize: A.WW
       });
       return (0, r.jsxs)(r.Fragment, {
         children: [p, (0, r.jsx)(c.P3F, {
@@ -242,8 +242,8 @@ function U(e, t, n, i, a, s) {
     } = s,
     S = null == t || "" === t || Array.isArray(t) && 0 === t.length,
     T = (0, b.cv)(E).length > 0,
-    A = null != E.interaction,
-    C = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
+    C = null != E.interaction,
+    A = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
     w = E.isPoll(),
     x = E.type === N.uaV.POLL_RESULT;
   if ((0, p.Z)(e) && (g = (0, r.jsx)(m.Z, {
@@ -265,7 +265,7 @@ function U(e, t, n, i, a, s) {
         className: o()(R.repliedTextContent, D.markup),
         children: null == E || null == (j = E.poll) || null == (L = j.question) ? true : L.text
       })
-    } else x ? l = (0, h.N4)(E) : T ? l = P.intl.string(P.t.kHdYCW) : A ? l = P.intl.string(P.t["E+6SSY"]) : C ? l = P.intl.string(P.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = P.intl.string(P.t.Xxat6S) : (l = P.intl.string(P.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
+    } else x ? l = (0, h.N4)(E) : T ? l = P.intl.string(P.t.kHdYCW) : C ? l = P.intl.string(P.t["E+6SSY"]) : A ? l = P.intl.string(P.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = P.intl.string(P.t.Xxat6S) : (l = P.intl.string(P.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {
       size: "custom",
       color: "currentColor",
       className: y,
@@ -284,13 +284,13 @@ function U(e, t, n, i, a, s) {
     className: y,
     width: v,
     height: v
-  }) : A ? d = (0, r.jsx)(c.SsZ, {
+  }) : C ? d = (0, r.jsx)(c.SsZ, {
     size: "custom",
     color: "currentColor",
     className: y,
     width: v,
     height: v
-  }) : C ? d = (0, r.jsx)(c.S6n, {
+  }) : A ? d = (0, r.jsx)(c.S6n, {
     size: "custom",
     color: "currentColor",
     className: y,
@@ -326,7 +326,7 @@ function G(e) {
     b = j(e, h, s.type),
     y = M(e, h),
     v = k(e, _, E),
-    I = i.useMemo(() => e.compact ? (0, A.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
+    I = i.useMemo(() => e.compact ? (0, C.Z)((0, O.vc)(l()(), "LT")) : null, [e.compact]);
   null != n && null != a && (t = P.intl.formatToPlainString(P.t.RhbQ2K, {
     author: null == a ? true : a.nick,
     repliedAuthor: null == n ? true : n.nick

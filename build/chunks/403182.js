@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   Ng: () => O,
-  OC: () => A,
+  OC: () => C,
   dg: () => v,
   dp: () => g,
   f3: () => b,
-  iL: () => C,
+  iL: () => A,
   nA: () => S,
   qF: () => h,
   uV: () => y,
@@ -115,15 +115,15 @@ function I(e) {
 }
 
 function T(e) {
-  return I(e) > A()
+  return I(e) > C()
 }
 
-function A() {
+function C() {
   let e = Chunk594174.default.getCurrentUser();
   return null != module && module.isStaff() ? m : _
 }
 
-function C(e) {
+function A(e) {
   let {
     guildId: t,
     onClick: n

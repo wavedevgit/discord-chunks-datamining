@@ -62,7 +62,7 @@ function u(e) {
 }
 
 function d(e, t) {
-  var n, i, a, o, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, A, C, N, P, R, D, w;
+  var n, i, a, o, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, R, D, w;
   let x = e.substreams.find(e => !e.isRTX && !e.isFlexFEC);
   if (null == x) return;
   let L = e.substreams.reduce((e, t) => e + s(t.rtpStats), 0),
@@ -105,8 +105,8 @@ function d(e, t) {
     framesDroppedCongestionWindow: e.framesDroppedCongestionWindow,
     framesDroppedEncoder: e.framesDroppedEncoder,
     cpuLimitedResolution: e.cpuLimitedResolution,
-    encoderQualityVmaf: null != (A = null == (u = x.encoderQualityStats) ? true : u.imageQualityVmaf_v061) ? A : true,
-    encoderQualityPsnr: null != (C = null == (d = x.encoderQualityStats) ? true : d.imageQualityWebrtcPsnrDb) ? C : true,
+    encoderQualityVmaf: null != (C = null == (u = x.encoderQualityStats) ? true : u.imageQualityVmaf_v061) ? C : true,
+    encoderQualityPsnr: null != (A = null == (d = x.encoderQualityStats) ? true : d.imageQualityWebrtcPsnrDb) ? A : true,
     qualityDecodeErrors: null != (N = null == (f = x.encoderQualityStats) ? true : f.decodeErrors) ? N : true,
     qualityDecoderReboots: null != (P = null == (p = x.encoderQualityStats) ? true : p.decoderReboots) ? P : true,
     qualityScoreErrors: null != (R = null == (_ = x.encoderQualityStats) ? true : _.scoreErrors) ? R : true,
@@ -333,7 +333,7 @@ function p(e, t, n, i) {
   let {
     screenshare: I,
     camera: T,
-    audioDevice: A
+    audioDevice: C
   } = E;
   return {
     mediaEngineConnectionId: e,
@@ -346,7 +346,7 @@ function p(e, t, n, i) {
       capturedFramesStdev: T.capturedFramesStdev
     } : null,
     clips: v,
-    audioDevice: A,
+    audioDevice: C,
     rtp: {
       inbound: y,
       outbound: b

@@ -5,7 +5,7 @@ require.d(exports, {
   DQ: () => v,
   Gu: () => N,
   Jb: () => T,
-  jm: () => A
+  jm: () => C
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -259,7 +259,7 @@ function T() {
   }
 }
 
-function A(e) {
+function C(e) {
   let {
     isSelected: t,
     label: n
@@ -272,7 +272,7 @@ function A(e) {
   }
 }
 
-function C(e) {
+function A(e) {
   let {
     itemInfoClassName: t,
     itemTitleClassName: n,
@@ -287,9 +287,9 @@ function C(e) {
     options: y = [],
     "aria-labelledby": v,
     orientation: S,
-    withTransparentBackground: A
-  } = e, C = i.useContext(u.z), N = T({
-    labelledBy: null != v ? v : null == C ? true : C.labelId,
+    withTransparentBackground: C
+  } = e, A = i.useContext(u.z), N = T({
+    labelledBy: null != v ? v : null == A ? true : A.labelId,
     orientation: S,
     isDisabled: g
   }), {
@@ -298,10 +298,10 @@ function C(e) {
   return (0, r.jsx)("div", E(h({}, R), {
     ref: P,
     className: o()(_.container, l),
-    id: null == C ? true : C.controlId,
-    "aria-describedby": null == C ? true : C.describedById,
-    "aria-errormessage": null == C ? true : C.errorMessageId,
-    "aria-invalid": (null == C ? true : C.errorMessageId) != null,
+    id: null == A ? true : A.controlId,
+    "aria-describedby": null == A ? true : A.describedById,
+    "aria-errormessage": null == A ? true : A.errorMessageId,
+    "aria-invalid": (null == A ? true : A.errorMessageId) != null,
     children: y.map(e => (0, r.jsx)(I, {
       hasSelection: D,
       disabled: g,
@@ -316,7 +316,7 @@ function C(e) {
       radioItemIconClassName: e.radioItemIconClassName,
       collapsibleClassName: s,
       radioBarClassName: e.radioBarClassName,
-      withTransparentBackground: A
+      withTransparentBackground: C
     }, e.value))
   }))
 }
@@ -333,6 +333,6 @@ function N(e) {
     description: n,
     required: i,
     errorMessage: a,
-    children: (0, r.jsx)(C, h({}, o))
+    children: (0, r.jsx)(A, h({}, o))
   })
 }

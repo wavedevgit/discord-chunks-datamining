@@ -144,11 +144,11 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     count: t,
     textVariant: n,
-    color: i = "interactive-normal",
+    color: i = "interactive-text-default",
     size: a = u.EFr.SIZE_24,
     className: s
   } = e, l = S(a), c = null != n ? n : I(a);
@@ -167,7 +167,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     users: t,
     maxUsers: n,
@@ -175,7 +175,7 @@ function C(e) {
     channelId: a,
     size: o = u.EFr.SIZE_24,
     overflowCountClassName: s,
-    overflowCountColor: l = "interactive-normal",
+    overflowCountColor: l = "interactive-text-default",
     hideOverflowCount: c = false
   } = e, d = t.length - n, f = d + 1, p = d > 0 && !c;
   return t.length <= 0 ? null : (0, r.jsxs)(r.Fragment, {
@@ -187,7 +187,7 @@ function C(e) {
       size: o,
       shouldShowOverflowCount: p,
       disableUsernameTooltip: true
-    }), p && (0, r.jsx)(A, {
+    }), p && (0, r.jsx)(C, {
       count: f,
       color: l,
       size: o,
@@ -209,7 +209,7 @@ function N(e) {
     "aria-label": n,
     "aria-labelledby": i,
     "aria-hidden": a,
-    children: (0, r.jsx)(C, E({}, s))
+    children: (0, r.jsx)(A, E({}, s))
   })
 }
 
@@ -222,12 +222,12 @@ function P(e) {
     className: c,
     size: _ = u.EFr.SIZE_24,
     overflowCountVariant: g,
-    overflowCountColor: b = "interactive-normal",
+    overflowCountColor: b = "interactive-text-default",
     overflowCountClassName: O,
     hideOverflowCount: v = false,
     disableUsernameTooltip: S = false,
     disableUserPopout: I = false,
-    onClickOverflow: C,
+    onClickOverflow: A,
     onFocusOverflow: N,
     onUserClick: P,
     onUserPopoutRequestClose: R,
@@ -275,12 +275,12 @@ function P(e) {
       className: h.button,
       onFocus: N,
       onClick: e => {
-        null == C || C(e), j(true)
+        null == A || A(e), j(true)
       },
       "aria-label": m.intl.formatToPlainString(m.t.R8Z8Qr, {
         count: U
       }),
-      children: (0, r.jsx)(A, {
+      children: (0, r.jsx)(C, {
         count: U,
         textVariant: g,
         color: b,

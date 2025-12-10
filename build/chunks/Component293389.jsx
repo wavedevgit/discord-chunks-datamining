@@ -164,7 +164,7 @@ function F(e) {
   }
 
   function Y(e) {
-    e.key === C.vn.ENTER && (e.currentTarget.blur(), e.preventDefault())
+    e.key === A.vn.ENTER && (e.currentTarget.blur(), e.preventDefault())
   }
 
   function W(e) {
@@ -201,7 +201,7 @@ function F(e) {
   function z() {
     if (w) return;
     let e = null != S.id ? b.Z.getDetectableGame(S.id) : null;
-    O.default.track(A.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+    O.default.track(C.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
       game_name: (0, E.le)(S) ? S.gameName : S.name
     }), x(true), (0, u.ZDy)(async () => {
@@ -214,7 +214,7 @@ function F(e) {
           detectedActivity: {
             name: null != (i = S.name) ? i : "",
             application_id: null != (o = null != (a = null == e ? true : e.id) ? a : S.id) ? o : true,
-            type: A.IIU.PLAYING
+            type: C.IIU.PLAYING
           },
           onSubmitted: () => {}
         }))

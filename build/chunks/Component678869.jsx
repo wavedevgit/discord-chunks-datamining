@@ -123,8 +123,8 @@ function L(e) {
       primaryColor: H,
       secondaryColor: Y
     } = (0, O.Z)(null == U ? true : U.src),
-    W = (0, y.Z)(A.ABu.SPOTIFY),
-    K = (0, o.e7)([u.Z, _.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, _.default, V, G) : true, [G, V], s.Z),
+    W = (0, y.Z)(C.ABu.SPOTIFY),
+    K = (0, o.e7)([u.Z, _.default], () => (null == G ? true : G.type) === C.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, _.default, V, G) : true, [G, V], s.Z),
     z = i.useCallback(() => {
       var e;
       if (null == P || null == V) return;
@@ -169,7 +169,7 @@ function L(e) {
         onOpenSpotifyArtist: e
       }), (null == K ? true : K.syncDisabled) === false) {
       let e = () => {
-        (0, p.Z)(K, C.kG.USER_ACTIVITY_SYNC), j()
+        (0, p.Z)(K, A.kG.USER_ACTIVITY_SYNC), j()
       };
       Q.push((0, r.jsx)(l.Button, {
         variant: "primary",

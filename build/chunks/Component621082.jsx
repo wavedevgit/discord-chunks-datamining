@@ -56,7 +56,7 @@ function _(e) {
               src: n.toString(),
               alt: ""
             }) : (0, r.jsx)(l.Vh5, {
-              color: c.Z.colors.ICON_PRIMARY,
+              color: c.Z.colors.ICON_STRONG,
               size: "custom",
               height: f,
               width: f
@@ -75,7 +75,7 @@ function _(e) {
       }), null != E && (0, r.jsx)("div", {
         className: u.benefitsSummary,
         children: (0, r.jsx)(l.xvT, {
-          color: "interactive-normal",
+          color: "interactive-text-default",
           variant: "text-sm/medium",
           children: s.Z.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
             count: E

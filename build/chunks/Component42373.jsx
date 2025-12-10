@@ -2,7 +2,7 @@
 /** chunk id: 42373, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -94,7 +94,7 @@ function T(e) {
   }
   return t
 }
-let A = e => {
+let C = e => {
     let {
       descriptionCta: t,
       onClick: n,
@@ -119,7 +119,7 @@ let A = e => {
       children: t
     })
   },
-  C = e => {
+  A = e => {
     let t, {
         name: n,
         title: a,
@@ -129,7 +129,7 @@ let A = e => {
         videoUrl: f,
         shouldLoadVideo: O,
         index: S,
-        customVideoStyle: C,
+        customVideoStyle: A,
         isReducedMotion: N,
         onClick: P,
         badgeText: R,
@@ -174,7 +174,7 @@ let A = e => {
           color: w ? "text-strong" : "text-muted",
           className: Z.description,
           children: l
-        }), null != c && null != P && (0, r.jsx)(A, {
+        }), null != c && null != P && (0, r.jsx)(C, {
           descriptionCta: c,
           onClick: P,
           debouncedOnClickAnalytics: k,
@@ -190,7 +190,7 @@ let A = e => {
           poster: u,
           loop: true,
           className: o()(Z.boxVideo, {
-            [C]: null != C
+            [A]: null != A
           }),
           ref: L,
           children: (0, r.jsx)("source", {

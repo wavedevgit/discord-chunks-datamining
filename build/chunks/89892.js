@@ -431,8 +431,8 @@ class y {
       S = null != (r = e.jump) ? r : null,
       I = null != (s = e.hasMoreBefore) && s,
       T = null != (l = e.hasMoreAfter) && l,
-      A = null != (u = e.avoidInitialScroll) && u,
-      C = null != (d = e.cached) && d,
+      C = null != (u = e.avoidInitialScroll) && u,
+      A = null != (d = e.cached) && d,
       N = i()(y).reverse().map(a.Z.getCurrentConfig({
         location: "2ecb25_2"
       }, {
@@ -446,7 +446,7 @@ class y {
         n = e.length > 0 || t.length > 0;
       P = this.reset(N), !n || O || v || (null == S ? true : S.messageId) != null || (null == S ? true : S.offset) != null ? m.info("loadComplete: resetting state for channelId=".concat(this.channelId, ", sending.length=").concat(e.length)) : (t.length > 0 && (m.info("loadComplete: merging with SEND_FAILED messages for channelId=".concat(this.channelId)), P = P.merge(t)), e.length > 0 && (m.info("loadComplete: merging with SENDING messages for channelId=".concat(this.channelId)), P = P.merge(e)))
     }
-    let R = !C && P.cached && !A;
+    let R = !A && P.cached && !C;
     return P.mutate({
       ready: true,
       loadingMore: false,
@@ -456,11 +456,11 @@ class y {
       jumpedToPresent: null != (h = null == S ? true : S.present) && h,
       jumpTargetId: null != (g = null == S ? true : S.messageId) ? g : null,
       jumpTargetOffset: null != S && null != S.messageId && null != S.offset ? S.offset : 0,
-      jumpSequenceId: null == S || A ? P.jumpSequenceId : P.jumpSequenceId + 1,
+      jumpSequenceId: null == S || C ? P.jumpSequenceId : P.jumpSequenceId + 1,
       jumpReturnTargetId: null != (b = null == S ? true : S.returnMessageId) ? b : null,
       hasMoreBefore: null == S && v ? P.hasMoreBefore : I,
       hasMoreAfter: null == S && O ? P.hasMoreAfter : T,
-      cached: C,
+      cached: A,
       hasFetched: e.hasFetched,
       error: false,
       initialScrollSequenceId: R ? P.initialScrollSequenceId + 1 : P.initialScrollSequenceId

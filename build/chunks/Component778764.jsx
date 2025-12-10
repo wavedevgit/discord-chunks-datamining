@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421156 = require("./421156.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ function R(e) {
     challenge: c,
     showAccountSettingsButton: u = false,
     initialSlide: h = v.x.INIT
-  } = e, O = (0, d.Dt)(), [A, C] = i.useState(I.intl.string(I.t["I/sJtJ"])), [N, P] = i.useState(false), [R, D] = i.useState(h), [w, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
+  } = e, O = (0, d.Dt)(), [C, A] = i.useState(I.intl.string(I.t["I/sJtJ"])), [N, P] = i.useState(false), [R, D] = i.useState(h), [w, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
     let e;
     D(v.x.REGISTER);
     let t = g.isPlatformEmbedded && b.ZP.supportsFeature(S.eRX.WEBAUTHN) ? b.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -162,7 +162,7 @@ function R(e) {
         id: v.x.NAME,
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), y.Sr(A, s, w).then(async () => {
+            e.preventDefault(), y.Sr(C, s, w).then(async () => {
               u ? D(v.x.SUCCESS) : (await (0, _.Yn)(false), o())
             }).catch(() => {
               j(I.intl.string(I.t.fEptJP)), D(v.x.INIT)
@@ -182,9 +182,9 @@ function R(e) {
                 variant: "text-md/normal",
                 children: I.intl.string(I.t["Jzd+z/"])
               }), (0, r.jsx)(l.oil, {
-                value: A,
+                value: C,
                 onChange: e => {
-                  C(e), P(0 === e.length)
+                  A(e), P(0 === e.length)
                 },
                 autoFocus: true,
                 minLength: 1
@@ -267,7 +267,7 @@ function D(e) {
           let {
             default: e
           } = await n.e("804").then(n.bind(n, 89616));
-          return t => (0, r.jsx)(e, C({
+          return t => (0, r.jsx)(e, A({
             credential: i
           }, t))
         })
@@ -304,7 +304,7 @@ function w() {
         ticket: t,
         challenge: n
       } = e;
-      (0, l.h7j)(e => (0, r.jsx)(R, P(C({}, e), {
+      (0, l.h7j)(e => (0, r.jsx)(R, P(A({}, e), {
         ticket: t,
         challenge: n
       })))
@@ -355,7 +355,7 @@ function L(e) {
       color: s.zx.Colors.TRANSPARENT,
       size: s.zx.Sizes.ICON,
       onClick: t => {
-        (0, c.vq)(t, t => (0, r.jsx)(D, P(C({}, t), {
+        (0, c.vq)(t, t => (0, r.jsx)(D, P(A({}, t), {
           credential: e
         })))
       },

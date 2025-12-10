@@ -55,16 +55,16 @@ let m = () => (0, Chunk54381.jsx)("img", {
       disabled: O,
       isInModalOverlay: v,
       className: S
-    } = e, [I, T] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(p, I), [p, I]), [C, N] = (0, i.useState)(false), [P, R] = (0, i.useState)(false), [D, w] = (0, i.useState)(.9 * l.D2), x = null === a;
+    } = e, [I, T] = (0, i.useState)(false), C = (0, i.useMemo)(() => g(p, I), [p, I]), [A, N] = (0, i.useState)(false), [P, R] = (0, i.useState)(false), [D, w] = (0, i.useState)(.9 * l.D2), x = null === a;
     (0, i.useEffect)(() => {
-      x && !C && (N(true), setTimeout(() => {
+      x && !A && (N(true), setTimeout(() => {
         R(true)
       }, 500))
-    }, [x, N, C]), (0, i.useEffect)(() => {
+    }, [x, N, A]), (0, i.useEffect)(() => {
       P && !x && N(false)
     }, [x, P]);
-    let L = x || C,
-      j = C ? null : a,
+    let L = x || A,
+      j = A ? null : a,
       [M, k] = (0, i.useState)(null),
       U = (0, i.useRef)(null),
       G = (0, i.useCallback)(() => {
@@ -90,7 +90,7 @@ let m = () => (0, Chunk54381.jsx)("img", {
         onMouseEnter: O ? true : () => T(true),
         onMouseLeave: O ? true : () => T(false),
         ref: t,
-        className: o()(f.container, A, S, {
+        className: o()(f.container, C, S, {
           [f.containerLoading]: L,
           [f.inModalOverlay]: v,
           [f.disabled]: O

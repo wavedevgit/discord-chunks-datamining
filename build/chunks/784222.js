@@ -94,7 +94,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       emojiSpriteSize: U,
       shouldShowSoundmojiInEmojiPicker: G,
       showOnlyUnicode: Z
-    } = e, B = (0, s.e7)([c.ZP], () => c.ZP.categories), F = r.useMemo(() => Z ? d.ZP.getCategories() : B, [B, Z]), V = (0, s.e7)([E.Z], () => E.Z.getGuild(null == n ? true : n.getGuildId()), [n]), H = null != (t = null == n ? true : n.getGuildId()) ? t : i, Y = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(H), [H]), W = (0, A.NJ)(H), K = (0, A.wC)(H), z = (0, A.q5)(H), {
+    } = e, B = (0, s.e7)([c.ZP], () => c.ZP.categories), F = r.useMemo(() => Z ? d.ZP.getCategories() : B, [B, Z]), V = (0, s.e7)([E.Z], () => E.Z.getGuild(null == n ? true : n.getGuildId()), [n]), H = null != (t = null == n ? true : n.getGuildId()) ? t : i, Y = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(H), [H]), W = (0, C.NJ)(H), K = (0, C.wC)(H), z = (0, C.q5)(H), {
       topEmojis: q,
       newlyAddedEmojis: Q
     } = (0, N.Z)(H, p), X = (0, s.Wu)([y.ZP], () => y.ZP.getFlattenedGuildIds(), []), J = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
@@ -136,10 +136,10 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               y = g.concat(E),
               O = d.guild,
               I = b.Z.getGuildId(),
-              C = d.sectionId === P.En.TOP_GUILD_EMOJI,
-              N = !C && null != O && I === O.id && y.length < (0, S.y4)(O),
-              R = C && y.length < u && !eo,
-              w = null != O && C && eo && es === T.B.WITH_TOP_LIST && ea[O.id].length < (0, S.y4)(O),
+              A = d.sectionId === P.En.TOP_GUILD_EMOJI,
+              N = !A && null != O && I === O.id && y.length < (0, S.y4)(O),
+              R = A && y.length < u && !eo,
+              w = null != O && A && eo && es === T.B.WITH_TOP_LIST && ea[O.id].length < (0, S.y4)(O),
               L = f && $ && null != O && (N || R || w);
             L && w && y.length === u && y.shift();
             let M = y.length > _ && null != O && d.isNitroLocked,
@@ -166,7 +166,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                     columnIndex: G && t ? n + 1 : n,
                     visibleRowIndex: s,
                     category: d.type,
-                    subCategory: d.sectionId === P.En.TOP_GUILD_EMOJI ? (0, A.IP)(q, Q, null != (i = null != (r = e.id) ? r : e.uniqueName) ? i : e.name) : P.t0.NONE
+                    subCategory: d.sectionId === P.En.TOP_GUILD_EMOJI ? (0, C.IP)(q, Q, null != (i = null != (r = e.id) ? r : e.uniqueName) ? i : e.name) : P.t0.NONE
                   }
                 });
               if (G && t && !h && (o = [{
@@ -275,7 +275,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
             if (null != V) {
               let {
                 allEmojis: t
-              } = (0, C.J)({
+              } = (0, A.J)({
                 topEmojis: q,
                 newlyAddedEmojis: Q
               });

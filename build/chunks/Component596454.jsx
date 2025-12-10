@@ -80,7 +80,7 @@ function I(e, t) {
 require("./54453.js");
 let T = __OVERLAY__ ? () => (0, Chunk442837.e7)([Chunk237997.default], () => Chunk237997.default.isInstanceFocused()) : Chunk506071.n;
 
-function A(e) {
+function C(e) {
   var t, n, {
       src: a,
       alt: s,
@@ -91,8 +91,8 @@ function A(e) {
       messageId: b,
       animated: O,
       size: I = "default",
-      isInteracting: A = false,
-      shouldAnimate: C,
+      isInteracting: C = false,
+      shouldAnimate: A,
       onMouseEnter: N,
       onMouseLeave: P,
       canSelect: R = true,
@@ -108,16 +108,16 @@ function A(e) {
   } = i.useContext(u.Rm), V = p.Yk.useSetting(), H = T(), Y = null == D ? V : D, W = E.kV[I], K = i.useRef(null), z = i.useMemo(() => {
     if (null != a) return a;
     if (null != f) {
-      let e = true === C && Y;
+      let e = true === A && Y;
       return m.ZP.getEmojiURL({
         id: f,
-        animated: H && true === O && (e || M || true === A),
+        animated: H && true === O && (e || M || true === C),
         size: W
       })
     }
     if (null != _) return h.ZP.getURL(_);
     throw Error("Unknown Src for Emoji")
-  }, [O, Y, f, _, W, H, M, A, C, a]), q = i.useCallback(() => {
+  }, [O, Y, f, _, W, H, M, C, A, a]), q = i.useCallback(() => {
     null != z && (Z.current = (0, d.po)(z, e => {
       e || G(Date.now())
     }))
@@ -179,7 +179,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     useThoughtfullyAnimated: t
   } = i.useContext(f.q), {
@@ -188,12 +188,12 @@ function C(e) {
   } = t(), {
     disableAnimations: o
   } = i.useContext(c.G);
-  return (0, r.jsx)(A, v(y({}, e), {
+  return (0, r.jsx)(C, v(y({}, e), {
     registerAnimatedElementRef: a,
     shouldAnimate: n && !o
   }))
 }
 
 function N(e) {
-  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && true === e.shouldAnimate ? (0, r.jsx)(C, y({}, e)) : (0, r.jsx)(A, y({}, e))
+  return null == e.emojiId && null == e.emojiName && null == e.src ? null : e.animated && true === e.shouldAnimate ? (0, r.jsx)(A, y({}, e)) : (0, r.jsx)(C, y({}, e))
 }

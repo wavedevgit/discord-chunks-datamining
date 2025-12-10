@@ -41,7 +41,7 @@ function y(e) {
     className: a()(O.actionButton, {
       [O.disabled]: i
     }),
-    onClick: i ? T.dG4 : r,
+    onClick: i ? S.dG4 : r,
     "aria-label": n,
     children: [(0, l.jsx)(t, {
       size: "custom",
@@ -108,7 +108,7 @@ function I(e) {
           children: (0, l.jsx)(d.Text, {
             variant: "text-md/medium",
             color: "text-default",
-            children: S.ZP.getUserTag(t)
+            children: T.ZP.getUserTag(t)
           })
         })]
       })]
@@ -169,7 +169,7 @@ function w(e) {
     children: [(0, l.jsx)(d.k$p, {
       size: "lg",
       color: d.TVs.colors.BACKGROUND_BASE_LOWER,
-      secondaryColor: d.TVs.colors.INTERACTIVE_NORMAL
+      secondaryColor: d.TVs.colors.INTERACTIVE_TEXT_DEFAULT
     }), (0, l.jsxs)("div", {
       children: [(0, l.jsx)(d.Text, {
         variant: "text-md/medium",
@@ -188,7 +188,7 @@ function w(e) {
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: o()(_.default.extractTimestamp(r)).format("ll")
+          children: o()(C.default.extractTimestamp(r)).format("ll")
         })]
       }) : null, null != a && (0, l.jsx)(d.Text, {
         variant: "text-sm/normal",
@@ -233,7 +233,7 @@ function A(e) {
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: o()(_.default.extractTimestamp(r)).format("ll")
+          children: o()(C.default.extractTimestamp(r)).format("ll")
         })]
       }) : null]
     })]
@@ -262,7 +262,7 @@ function M(e) {
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: o()(_.default.extractTimestamp(t.id)).format("ll")
+          children: o()(C.default.extractTimestamp(t.id)).format("ll")
         })]
       }), (0, l.jsxs)("div", {
         className: O.infoRow,
@@ -290,7 +290,7 @@ function Z(e) {
   } = null != n ? n : {}, s = r.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.formResponses) ? e : []
-  }, [null == n ? true : n.formResponses]), o = r.useMemo(() => null != i ? new v.Z(i) : null, [i]), u = (0, c.e7)([C.Z], () => C.Z.getGuild(t), [t]);
+  }, [null == n ? true : n.formResponses]), o = r.useMemo(() => null != i ? new v.Z(i) : null, [i]), u = (0, c.e7)([_.Z], () => _.Z.getGuild(t), [t]);
   return ((0, m.Tt)({
     subsection: N.intl.string(N.t.nqrK8X),
     location: null == u ? true : u.name

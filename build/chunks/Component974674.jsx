@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk793030 = require("./793030.js"),
   Chunk438784 = require("./438784.jsx"),
   Chunk696826 = require("./696826.jsx"),
@@ -81,12 +81,12 @@ function T(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = {
+let C = {
   tension: 1200,
   friction: 70
 };
 
-function C() {
+function A() {
   return document.hasFocus()
 }
 
@@ -518,17 +518,17 @@ function B(e) {
   } = e, T = {
     width: (0, g.px)(n),
     height: (0, g.px)(n)
-  }, A = null == _ || m ? true : P(_, E, y), C = I.size * h.hs, N = R(E, n, y, O), D = null != v && (0, r.jsx)("svg", {
-    width: C + S,
-    height: C,
-    viewBox: "0 0 ".concat(C + S, " ").concat(C),
+  }, C = null == _ || m ? true : P(_, E, y), A = I.size * h.hs, N = R(E, n, y, O), D = null != v && (0, r.jsx)("svg", {
+    width: A + S,
+    height: A,
+    viewBox: "0 0 ".concat(A + S, " ").concat(A),
     className: b.avatarDecoration,
     "aria-hidden": true,
     children: (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
-      width: C,
-      height: C,
+      width: A,
+      height: A,
       mask: null != N ? "url(#".concat(N, ")") : true,
       children: (0, r.jsx)("div", {
         className: b.avatarStack,
@@ -551,7 +551,7 @@ function B(e) {
     onKeyDown: s,
     onMouseEnter: null != u ? u : true,
     onMouseLeave: null != d ? d : true,
-    "aria-label": A,
+    "aria-label": C,
     "aria-hidden": m,
     children: [t, D]
   }) : (0, r.jsxs)("div", {
@@ -561,7 +561,7 @@ function B(e) {
     onMouseEnter: null != u ? u : true,
     onMouseLeave: null != d ? d : true,
     role: "img",
-    "aria-label": A,
+    "aria-label": C,
     "aria-hidden": m,
     children: [t, D]
   })
@@ -602,8 +602,8 @@ function V(e) {
     statusTooltip: v = false,
     statusTooltipDelay: I,
     statusBackdropColor: T,
-    "aria-hidden": A = false,
-    "aria-label": C,
+    "aria-hidden": C = false,
+    "aria-label": A,
     imageClassName: N,
     ref: P,
     CutoutIcon: R,
@@ -612,8 +612,8 @@ function V(e) {
     avatarTooltipTitle: M
   } = e, Z = n !== m.Skl.UNKNOWN ? n : null, V = (0, g.UC)(a), H = null != Z ? Math.ceil((V.status * g.D6 - V.status) / 2) : 0, Y = V.size + H, W = (0, u.vj)(Z, s), K = i.useId();
   return (0, r.jsx)(B, S(O({}, e), {
-    ariaLabel: C,
-    ariaHidden: A,
+    ariaLabel: A,
+    ariaHidden: C,
     status: Z,
     specs: V,
     typingOffset: H,
@@ -724,10 +724,10 @@ function W(e) {
     isMobile: f,
     isTyping: p
   })), [Q, y, T, f, p]), et = (0, l.q_F)({
-    config: A,
+    config: C,
     from: $,
     to: ee
-  }, C() ? "animate-always" : "animate-never"), {
+  }, A() ? "animate-always" : "animate-never"), {
     avatarCutoutX: en,
     avatarCutoutY: er,
     avatarCutoutWidth: ei,
@@ -750,7 +750,7 @@ function W(e) {
     }, {
       scale: 1
     }] : []
-  }, C() ? "animate-always" : "animate-never", [V, T]);
+  }, A() ? "animate-always" : "animate-never", [V, T]);
   return (0, r.jsx)(B, S(O({}, e), {
     ariaLabel: j,
     ariaHidden: x,

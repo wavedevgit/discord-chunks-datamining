@@ -29,8 +29,8 @@ function h(e) {
     partyStatusElement: S,
     currentUserPresenceActivity: I,
     onClickContent: T,
-    onView: A,
-    guildId: C
+    onView: C,
+    guildId: A
   } = e, {
     enabled: N
   } = l.Q.useConfig({
@@ -90,9 +90,9 @@ function h(e) {
     trackingConfig: {
       id: E.id,
       linkType: p.U.RICH_PRESENCE_INVITE,
-      onView: A,
+      onView: C,
       referrerId: b.author.id,
-      guildId: C,
+      guildId: A,
       channelId: b.channel_id,
       messageId: b.id
     }

@@ -33,8 +33,8 @@ function S(e) {
     voiceChannel: S,
     textClassName: I,
     iconClassName: T,
-    textSize: A = "xs",
-    animateEmoji: C = true,
+    textSize: C = "xs",
+    animateEmoji: A = true,
     hasQuest: N = false,
     hideEmoji: P = false,
     hideTooltip: R = false
@@ -58,12 +58,12 @@ function S(e) {
     }, [n]);
   if ((0, l.e7)([_.Z], () => _.Z.isBlockedOrIgnored(null == t ? true : t.id))) return null;
   let M = (null == t ? true : t.bot) === true,
-    k = ((null == j ? true : j.state) != null || null != L) && "xs" === A,
+    k = ((null == j ? true : j.state) != null || null != L) && "xs" === C,
     U = () => {
       if (null != D) return (0, r.jsx)(h.Z, {
         stream: D,
         game: null == n ? true : n.find(c.Z),
-        textVariant: "text-".concat(A, "/medium"),
+        textVariant: "text-".concat(C, "/medium"),
         textClassName: I,
         iconClassName: T,
         hideText: k,
@@ -78,7 +78,7 @@ function S(e) {
       });
       return null != e ? (0, r.jsx)(E.Z, {
         activity: e,
-        textVariant: "text-".concat(A, "/medium"),
+        textVariant: "text-".concat(C, "/medium"),
         textClassName: I,
         iconClassName: T,
         hideText: k,
@@ -86,7 +86,7 @@ function S(e) {
         hideTooltip: R
       }) : null != S ? (0, r.jsx)(b.Z, {
         channel: S,
-        textVariant: "text-".concat(A, "/medium"),
+        textVariant: "text-".concat(C, "/medium"),
         textClassName: I,
         iconClassName: T,
         hideText: k,
@@ -94,13 +94,13 @@ function S(e) {
       }) : null
     },
     G = o()(v.container, {
-      [v.textXs]: "xs" === A,
-      [v.textSm]: "sm" === A
+      [v.textXs]: "xs" === C,
+      [v.textSm]: "sm" === C
     }),
     Z = () => null == j && null == L ? null : (0, r.jsx)(g.Z, {
       customStatusActivity: j,
-      textSize: A,
-      animateEmoji: C,
+      textSize: C,
+      animateEmoji: A,
       hideEmoji: P,
       hideTooltip: R,
       textClassName: I,
@@ -113,7 +113,7 @@ function S(e) {
   return (0, r.jsxs)("div", {
     className: G,
     children: [U(), (0, r.jsx)(s.xvT, {
-      variant: "text-".concat(A, "/normal"),
+      variant: "text-".concat(C, "/normal"),
       className: o()(v.truncated, v.dot, I),
       children: y.l
     }), Z(), N && (0, r.jsx)(m.Z, {})]

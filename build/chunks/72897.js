@@ -2,7 +2,7 @@
 /** chunk id: 72897, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fh: () => A,
+  Fh: () => C,
   Ls: () => T,
   p6: () => I,
   rX: () => v
@@ -150,7 +150,7 @@ function T(e, t) {
   }, [l, e, _, m, s])
 }
 
-function A(e) {
+function C(e) {
   var t, n;
   let {
     getCurrentDeviceId: r,

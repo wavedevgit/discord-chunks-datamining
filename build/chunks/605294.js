@@ -198,7 +198,7 @@ function y(e, t) {
         o || (a.currentNode = t.shiftKey ? r[r.length - 1].nextElementSibling : r[0].previousElementSibling, o = t.shiftKey ? a.previousNode() : a.nextNode()), t.preventDefault(), o && T(o, true)
       },
       d = t => {
-        (!_ || I(_, e)) && v((0, i.NI)(t), e.current) ? (_ = e, n.current = (0, i.NI)(t)) : E(e) && !S((0, i.NI)(t), e) ? n.current ? n.current.focus() : _ && _.current && C(_.current) : E(e) && (n.current = (0, i.NI)(t))
+        (!_ || I(_, e)) && v((0, i.NI)(t), e.current) ? (_ = e, n.current = (0, i.NI)(t)) : E(e) && !S((0, i.NI)(t), e) ? n.current ? n.current.focus() : _ && _.current && A(_.current) : E(e) && (n.current = (0, i.NI)(t))
       },
       f = t => {
         s.current && cancelAnimationFrame(s.current), s.current = requestAnimationFrame(() => {
@@ -211,7 +211,7 @@ function y(e, t) {
             if (r && r.isConnected) {
               var u;
               n.current = r, null == (u = n.current) || u.focus()
-            } else _.current && C(_.current)
+            } else _.current && A(_.current)
           }
         })
       };
@@ -261,7 +261,7 @@ function T(e, t = false) {
   } catch {}
 }
 
-function A(e, t = true) {
+function C(e, t = true) {
   let n = e[0].previousElementSibling,
     r = g(e),
     i = x(r, {
@@ -274,8 +274,8 @@ function A(e, t = true) {
   }, e)).currentNode = n, a = i.nextNode()), a
 }
 
-function C(e, t = true) {
-  T(A(e, t))
+function A(e, t = true) {
+  T(C(e, t))
 }
 
 function N(e, t) {
@@ -284,7 +284,7 @@ function N(e, t) {
     if (n.current) {
       _ = e;
       let t = (0, a.r3)(e.current ? e.current[0] : true);
-      !v((0, i.vY)(t), _.current) && e.current && C(e.current)
+      !v((0, i.vY)(t), _.current) && e.current && A(e.current)
     }
     n.current = false
   }, [e])
@@ -370,7 +370,7 @@ function D(e, t, n) {
               n = n.parent
             }
             for (n = t.getTreeNode(e); n;) {
-              if (n.scopeRef && n.scopeRef.current && U.getTreeNode(n.scopeRef)) return void w(A(n.scopeRef.current, true));
+              if (n.scopeRef && n.scopeRef.current && U.getTreeNode(n.scopeRef)) return void w(C(n.scopeRef.current, true));
               n = n.parent
             }
           }

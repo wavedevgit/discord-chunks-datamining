@@ -154,7 +154,7 @@ function w(e) {
       tooltipText: N
     }) : null, (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
-      color: E ? "header-primary" : "interactive-active",
+      color: E ? "header-primary" : "interactive-text-active",
       lineClamp: 1,
       children: d.name
     })]

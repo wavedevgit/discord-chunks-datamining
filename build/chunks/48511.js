@@ -23,8 +23,8 @@ var r = "function" == typeof Map && Map.prototype,
   S = Array.prototype.concat,
   I = Array.prototype.join,
   T = Array.prototype.slice,
-  A = Math.floor,
-  C = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
+  C = Math.floor,
+  A = "function" == typeof BigInt ? BigInt.prototype.valueOf : null,
   N = Object.getOwnPropertySymbols,
   P = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Symbol.prototype.toString : null,
   R = "function" == typeof Symbol && "object" == typeof Symbol.iterator,
@@ -38,7 +38,7 @@ function L(e, t) {
   if (e === 1 / 0 || e === false / 0 || e != e || e && e > false && e < 1e3 || v.call(/e/, t)) return t;
   var n = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
   if ("number" == typeof e) {
-    var r = e < 0 ? -A(-e) : A(e);
+    var r = e < 0 ? -C(-e) : C(e);
     if (r !== e) {
       var i = String(r),
         a = E.call(t, i.length + 1);
@@ -113,9 +113,9 @@ function Q(e) {
 }
 
 function X(e) {
-  if (!e || "object" != typeof e || !C) returnfalse;
+  if (!e || "object" != typeof e || !A) returnfalse;
   try {
-    return C.call(e), true
+    return A.call(e), true
   } catch (e) {}
   returnfalse
 }
@@ -158,8 +158,8 @@ module.exports = function e(t, r, i, s) {
   }
   if ("function" == typeof t && !Y(t)) {
     var v = et(t),
-      A = eg(t, y);
-    return "[Function" + (v ? ": " + v : " (anonymous)") + "]" + (A.length > 0 ? " { " + I.call(A, ", ") + " }" : "")
+      C = eg(t, y);
+    return "[Function" + (v ? ": " + v : " (anonymous)") + "]" + (C.length > 0 ? " { " + I.call(C, ", ") + " }" : "")
   }
   if (Q(t)) {
     var N = R ? b.call(String(t), /^(Symbol\(.*\))_[^)]*$/, "$1") : P.call(t);
@@ -200,7 +200,7 @@ module.exports = function e(t, r, i, s) {
   if (es(t)) return ef("WeakSet");
   if (ea(t)) return ef("WeakRef");
   if (z(t)) return ed(y(Number(t)));
-  if (X(t)) return ed(y(C.call(t)));
+  if (X(t)) return ed(y(A.call(t)));
   if (q(t)) return ed(_.call(t));
   if (K(t)) return ed(y(String(t)));
   if ("undefined" != typeof window && t === window) return "{ [object Window] }";

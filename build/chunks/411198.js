@@ -8,8 +8,8 @@ require.d(exports, {
   Qs: () => b,
   R: () => E,
   Rj: () => S,
-  cL: () => C,
-  dS: () => A,
+  cL: () => A,
+  dS: () => C,
   dangerouslyConstructGuildRecordFromUntypedObject: () => T,
   e: () => v,
   lM: () => p,
@@ -70,7 +70,7 @@ function p(e) {
 }
 
 function _(e, t, n) {
-  var r, i, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, A, C, N, P, D, x, L;
+  var r, i, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, D, x, L;
   return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
@@ -101,8 +101,8 @@ function _(e, t, n) {
     safetyAlertsChannelId: null != (S = e.safety_alerts_channel_id) ? S : null,
     publicUpdatesChannelId: null != (I = e.public_updates_channel_id) ? I : null,
     maxStageVideoChannelUsers: null != (T = e.max_stage_video_channel_users) ? T : s.Cx.maxStageVideoChannelUsers,
-    maxVideoChannelUsers: null != (A = e.max_video_channel_users) ? A : s.Cx.maxVideoChannelUsers,
-    maxMembers: null != (C = e.max_members) ? C : s.Cx.maxMembers,
+    maxVideoChannelUsers: null != (C = e.max_video_channel_users) ? C : s.Cx.maxVideoChannelUsers,
+    maxMembers: null != (A = e.max_members) ? A : s.Cx.maxMembers,
     nsfwLevel: null != (N = e.nsfw_level) ? N : s.Cx.nsfwLevel,
     ownerConfiguredContentLevel: null != (P = e.owner_configured_content_level) ? P : null,
     hubType: null != (D = e.hub_type) ? D : null,
@@ -275,7 +275,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   var t;
   return {
     id: e.id,
@@ -319,7 +319,7 @@ function A(e) {
   }
 }
 
-function C(e) {
+function A(e) {
   let t = f(u({}, e), {
     features: (0, a.G)(e.features),
     joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null

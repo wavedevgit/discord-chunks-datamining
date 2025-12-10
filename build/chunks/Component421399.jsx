@@ -123,7 +123,7 @@ function M(e) {
   } = n, er = (0, l.e7)([f.Z], () => f.Z.roleStyle), ei = "username" === er, ea = "dot" === er, eo = (0, g.j)({
     displayNameStyles: en
   }), es = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), el = (0, O.yH)(null != Y ? Y : q, es), ec = (0, T.Z)(a), eu = i.useContext(c.d), ed = (null == eu ? true : eu.animate) || M, ef = el && (0, y.S2)(n), ep = ei && ef, e_ = (null == P ? true : P.isPrivate()) && null != en;
-  (0, A.Z)({
+  (0, C.Z)({
     shouldSubscribe: e_ || ep,
     subscribeToGroupId: W,
     authorId: a.author.id
@@ -169,7 +169,7 @@ function M(e) {
     userId: a.author.id,
     contextGuildId: q,
     className: N.clanTagChiplet,
-    badgeSize: C.Gg.SIZE_12
+    badgeSize: A.Gg.SIZE_12
   }) : null, [L, n.primaryGuild, q, a.author.id, k]), eO = null != D ? D : a.author, ev = null != V && null != M ? (0, r.jsx)(v.Z, {
     targetElementRef: K,
     user: eO,

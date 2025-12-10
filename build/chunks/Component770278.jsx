@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
   Chunk372840 = require("./372840.js");
@@ -37,11 +37,11 @@ function f(e) {
 let p = 8;
 
 function _() {
-  let e = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
+  let e = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.MOBILE_BACKGROUND_SCRIM_OPAQUE).spring({
       opacity: .25
     }),
-    t = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP).spring(),
-    n = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BG_BACKDROP_IMMERSIVE).spring(),
+    t = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BACKGROUND_SCRIM).spring(),
+    n = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.BACKGROUND_SCRIM_LIGHTBOX).spring(),
     r = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.OVERLAY_BACKDROP_LIGHTBOX).spring();
   return {
     [Chunk481060.fCB.SUBTLE]: module,
@@ -60,7 +60,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
     LayerComponent: d,
     isVisible: m,
     onClose: h
-  } = e, g = _()[n], E = (0, l.dQu)(l.TVs.colors.BG_BACKDROP_NO_OPACITY).spring({
+  } = e, g = _()[n], E = (0, l.dQu)(l.TVs.colors.MOBILE_BACKGROUND_SCRIM_OPAQUE).spring({
     opacity: 0
   }), b = n === l.fCB.BLUR ? p : 0, y = {
     background: E,

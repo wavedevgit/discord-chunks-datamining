@@ -347,7 +347,7 @@ class q extends Chunk473749.Component {
         }
       })
     }), V(this, "handleVerificationClick", e => {
-      e.stopPropagation(), e.preventDefault(), (0, A.openUserSettings)(T.n.ACCOUNT_PANEL, {
+      e.stopPropagation(), e.preventDefault(), (0, C.openUserSettings)(T.n.ACCOUNT_PANEL, {
         section: G.oAB.ACCOUNT
       })
     }), V(this, "handleAccept", e => {
@@ -383,7 +383,7 @@ class q extends Chunk473749.Component {
         guildId: r.guildId,
         isStorefront: false,
         analyticsLocations: [m.Z.GIFT_CODE_EMBED]
-      })) : null != t && t.isSubscription && (e.preventDefault(), (0, A.openUserSettings)(T.n.NITRO_PANEL, {
+      })) : null != t && t.isSubscription && (e.preventDefault(), (0, C.openUserSettings)(T.n.NITRO_PANEL, {
         section: G.oAB.PREMIUM
       }))
     }), V(this, "handleClaimPromotion", e => {
@@ -431,7 +431,7 @@ let Q = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
     } = (0, c.cj)([N.Z], () => ({
       giftCode: N.Z.get(t),
       resolved: N.Z.getIsResolved(t)
-    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([D.Z], () => null != i ? D.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([C.default], () => null != i ? C.default.getId() === i.userId : C.default.getId() === n.id);
+    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([D.Z], () => null != i ? D.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([A.default], () => null != i ? A.default.getId() === i.userId : A.default.getId() === n.id);
     return (0, r.jsx)(Q, W(H({}, e), {
       skuApplication: u,
       giftCode: i,

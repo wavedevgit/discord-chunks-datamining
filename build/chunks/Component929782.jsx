@@ -2,7 +2,7 @@
 /** chunk id: 929782, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  enable: () => C,
+  enable: () => A,
   isNotSupported: () => T,
   trackToggleSelfDeaf: () => P,
   trackToggleSelfMute: () => N
@@ -91,14 +91,14 @@ function T() {
   }))), true)
 }
 
-function A(e) {
+function C(e) {
   p.default.track(h.rMx.PERMISSIONS_ACKED, {
     type: "audio",
     action: e
   })
 }
 
-function C() {
+function A() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
   return T() ? Promise.resolve(false) : (Chunk626135.default.track(Chunk981631.rMx.PERMISSIONS_REQUESTED, {
     type: "audio"
@@ -107,20 +107,20 @@ function C() {
       type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
       enabled: true,
       unmute: module
-    }), A(Chunk761274.PQ.ACCEPTED)
+    }), C(Chunk761274.PQ.ACCEPTED)
   }, e => {
     switch (e) {
       case h.ETv.NO_DEVICES_FOUND:
-        A(g.PQ.NO_DEVICES);
+        C(g.PQ.NO_DEVICES);
         break;
       case h.ETv.PERMISSION_DENIED:
-        A(g.PQ.DENIED);
+        C(g.PQ.DENIED);
         break;
       case h.ETv.PERMISSION_DISMISSED:
-        A(g.PQ.DISMISSED);
+        C(g.PQ.DISMISSED);
         break;
       default:
-        A(g.PQ.ERROR), S.warn("unknown getUserMedia error: ".concat(e))
+        C(g.PQ.ERROR), S.warn("unknown getUserMedia error: ".concat(e))
     }
   }).then(() => true))
 }

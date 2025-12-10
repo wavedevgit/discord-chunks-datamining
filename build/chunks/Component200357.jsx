@@ -44,9 +44,9 @@ let _ = function(e) {
   }, [g, _]), T = i.useCallback(e => {
     var t;
     y(e), null == (t = h.current) || t.focus(), I(e, O)
-  }, [O, I]), A = i.useCallback(e => {
+  }, [O, I]), C = i.useCallback(e => {
     v(e), I(b, e)
-  }, [b, I]), C = g.get(b);
+  }, [b, I]), A = g.get(b);
   return (0, r.jsx)("fieldset", {
     children: (0, r.jsxs)("div", {
       className: o()(f.phoneField, t),
@@ -64,9 +64,9 @@ let _ = function(e) {
       }), (0, r.jsx)(c.oil, {
         label: d.intl.string(d.t["64bX0M"]),
         error: a,
-        leading: null == C ? true : C.code,
+        leading: null == A ? true : A.code,
         type: "tel",
-        onChange: A,
+        onChange: C,
         autoFocus: true,
         inputRef: h,
         disabled: n,

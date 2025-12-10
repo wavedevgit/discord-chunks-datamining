@@ -7,7 +7,7 @@ function i(e) {
   r = e
 }
 require.d(exports, {
-  $R: () => A,
+  $R: () => C,
   A$: () => em,
   AM: () => er,
   B: () => ey,
@@ -39,7 +39,7 @@ require.d(exports, {
   Tc: () => e1,
   UE: () => eL,
   Ub: () => v,
-  Uj: () => eC,
+  Uj: () => eA,
   V3: () => e2,
   Vr: () => eO,
   Wl: () => tf,
@@ -73,7 +73,7 @@ require.d(exports, {
   k7: () => eS,
   kK: () => e8,
   kn: () => el,
-  kr: () => eA,
+  kr: () => eC,
   mO: () => e4,
   nG: () => eu,
   nM: () => W,
@@ -264,11 +264,11 @@ function T(e, t) {
   return r.rustMultiply(e, t)
 }
 
-function A() {
+function C() {
   r.crash()
 }
 
-function C(e, t) {
+function A(e, t) {
   r._dyn_core__ops__function__FnMut_____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h075cb6f1f85a8e52(e, t)
 }
 
@@ -634,11 +634,11 @@ function eT() {
   return []
 }
 
-function eA(e) {
+function eC(e) {
   return new Uint8Array(e)
 }
 
-function eC(e, t) {
+function eA(e, t) {
   return Error(l(e, t))
 }
 
@@ -837,7 +837,7 @@ function ta(e, t, n) {
 }
 
 function to(e, t, n) {
-  return y(e, t, 389, C)
+  return y(e, t, 389, A)
 }
 
 function ts(e, t, n) {

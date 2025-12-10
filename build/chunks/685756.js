@@ -64,8 +64,8 @@ let y = 20 * Chunk70956.Z.Millis.SECOND,
   S = .25,
   I = .1,
   T = 5 * Chunk70956.Z.Millis.SECOND,
-  A = 2,
-  C = 8;
+  C = 2,
+  A = 8;
 
 function N(e) {
   return e.map(e => ({
@@ -207,14 +207,14 @@ class x extends Chunk47770.Z {
           this.emit("mls-proposals", r);
           break;
         case 29: {
-          let e = new DataView(r.buffer, r.byteOffset, A).getUint16(0, false),
-            t = r.slice(A);
+          let e = new DataView(r.buffer, r.byteOffset, C).getUint16(0, false),
+            t = r.slice(C);
           this.emit("mls-prepare-commit-transition", e, t);
           break
         }
         case 30: {
-          let e = new DataView(r.buffer, r.byteOffset, A).getUint16(0, false),
-            t = r.slice(A);
+          let e = new DataView(r.buffer, r.byteOffset, C).getUint16(0, false),
+            t = r.slice(C);
           this.emit("mls-welcome", e, t);
           break
         }
@@ -314,8 +314,8 @@ class x extends Chunk47770.Z {
     {
       let t = new Uint8Array(e.data),
         n = null;
-      this.serverVersion >= C && (n = new DataView(t.buffer).getUint16(0, false));
-      let r = 2 * (this.serverVersion >= C),
+      this.serverVersion >= A && (n = new DataView(t.buffer).getUint16(0, false));
+      let r = 2 * (this.serverVersion >= A),
         i = 1;
       return {
         op: t[r],
@@ -330,7 +330,7 @@ class x extends Chunk47770.Z {
   handleHeartbeatAck(e) {
     this.logger.info("Heartbeat ACK received");
     let t = null;
-    t = this.serverVersion >= C ? e.t : e, this.emit("ping", (0, s.zO)() - t), this.lastHeartbeatAckTime = (0, s.zO)(), this.heartbeatAck = true, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, this.logger.info("Expedited heartbeat succeeded"))
+    t = this.serverVersion >= A ? e.t : e, this.emit("ping", (0, s.zO)() - t), this.lastHeartbeatAckTime = (0, s.zO)(), this.heartbeatAck = true, null !== this.expeditedHeartbeatTimeout && (clearTimeout(this.expeditedHeartbeatTimeout), this.expeditedHeartbeatTimeout = null, this.logger.info("Expedited heartbeat succeeded"))
   }
   handleHeartbeatTimeout() {
     this.cleanupWebSocket(e => e.close(4e3));
@@ -343,7 +343,7 @@ class x extends Chunk47770.Z {
     }, this.heartbeatInterval)
   }
   sendHeartbeat() {
-    if (this.serverVersion >= C) {
+    if (this.serverVersion >= A) {
       var e;
       let t = null != (e = this.lastRecvSeqNum) ? module : false;
       this.logger.info("Sending heartbeat with last received sequence number: ".concat(exports)), this.send(3, {

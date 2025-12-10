@@ -52,9 +52,9 @@ let I = () => {
     v = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk120356), [Chunk120356]),
     I = (0, Chunk442837.e7)([Chunk937111.Z], () => null != Chunk120356 ? Chunk937111.Z.getRequest(Chunk120356) : null, [Chunk120356]),
     T = (0, Chunk828700.TH)(),
-    A = (null == (e = (0, Chunk828700.LX)(T.pathname, Chunk981631.Z5c.CHANNEL(null == v ? true : v.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
-  if (null == v || !(0, Chunk983736.Dc)(v) || A) return null;
-  let C = () => {
+    C = (null == (e = (0, Chunk828700.LX)(T.pathname, Chunk981631.Z5c.CHANNEL(null == v ? true : v.id, Chunk176505.oC.GUILD_ONBOARDING))) ? true : module.isExact) === true;
+  if (null == v || !(0, Chunk983736.Dc)(v) || C) return null;
+  let A = () => {
       (0, Chunk305325.hk)(v.id)
     },
     N = () => {
@@ -89,7 +89,7 @@ let I = () => {
       D = Chunk388032.intl.string(Chunk388032.t.lk30cY), w = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, L.push(Chunk342891.error);
       break;
     default:
-      D = Chunk388032.intl.string(Chunk388032.t.G5YKXP), w = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = C
+      D = Chunk388032.intl.string(Chunk388032.t.G5YKXP), w = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = A
   }
   return (0, Chunk54381.jsxs)("div", {
     className: a()(...L),

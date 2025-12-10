@@ -41,7 +41,7 @@ let T = new Chunk177523.ZP(e => {
   })
 });
 
-function A(e, t) {
+function C(e, t) {
   let n = {};
   T.forEach(i => {
     var a;
@@ -52,7 +52,7 @@ function A(e, t) {
   })
 }
 
-function C(e, t) {
+function A(e, t) {
   return T.subscribeToGuild(e), null != t && _.ZP.getSection(t) === S.ULH.MEMBERS && N(e, t, c.KV)
 }
 
@@ -68,9 +68,9 @@ function P(e) {
   let {
     type: t
   } = e;
-  "CONNECTION_OPEN" === t && A(true, false);
+  "CONNECTION_OPEN" === t && C(true, false);
   let n = v.Z.getGuildId();
-  null != n && C(n, O.Z.getChannelId(n));
+  null != n && A(n, O.Z.getChannelId(n));
   let r = {};
   T.forEach(e => {
     null == E.Z.getGuild(e) ? T.clearWithoutFlushing(e, true) : r[e] = T.get(e)
@@ -81,7 +81,7 @@ function P(e) {
 }
 
 function R() {
-  A(false, false)
+  C(false, false)
 }
 
 function D(e) {
@@ -89,7 +89,7 @@ function D(e) {
     idle: t
   } = e;
   if (!t) returnfalse;
-  A(false, true)
+  C(false, true)
 }
 
 function w() {
@@ -165,7 +165,7 @@ function B(e) {
     guildId: t,
     channelId: n
   } = e;
-  return C(t, n)
+  return A(t, n)
 }
 
 function F(e) {
@@ -173,11 +173,11 @@ function F(e) {
     guildId: t,
     channelId: n
   } = e;
-  return !h.Z.isUnavailable(t) && C(t, n)
+  return !h.Z.isUnavailable(t) && A(t, n)
 }
 
 function V() {
-  return C(Chunk914010.Z.getGuildId(), Chunk944486.Z.getChannelId())
+  return A(Chunk914010.Z.getGuildId(), Chunk944486.Z.getChannelId())
 }
 
 function H(e) {

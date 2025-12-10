@@ -54,7 +54,7 @@ function O(e) {
     T = I ? E.intl.string(E.t.GoLM9z) : E.intl.formatToPlainString(E.t["h0u/Hi"], {
       serverName: null == S ? true : S.name
     }),
-    A = I ? E.intl.string(E.t.PjZ7Db) : E.intl.string(E.t.p8FG1D);
+    C = I ? E.intl.string(E.t.PjZ7Db) : E.intl.string(E.t.p8FG1D);
   return (0, r.jsxs)("div", {
     className: b.container,
     children: [(0, r.jsx)("div", {
@@ -92,7 +92,7 @@ function O(e) {
       }), (0, r.jsx)(s.LZC, {
         size: 24
       }), (0, r.jsx)(m.Z, {
-        text: A,
+        text: C,
         onClick: v
       })]
     })]

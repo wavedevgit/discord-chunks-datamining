@@ -59,7 +59,7 @@ function c(e) {
       }), (null != p || null != m) && (0, r.jsxs)("div", {
         className: u.footer,
         children: [null != p && (0, r.jsx)(o.xvT, {
-          color: "interactive-normal",
+          color: "interactive-text-default",
           variant: "text-sm/normal",
           children: b
         }), (0, r.jsxs)("div", {

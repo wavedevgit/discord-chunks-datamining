@@ -2,8 +2,8 @@
 /** chunk id: 502109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ch: () => C,
-  Tr: () => A
+  Ch: () => A,
+  Tr: () => C
 }), require("./642613.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -235,7 +235,7 @@ class T extends Chunk473749.Component {
     })
   }
 }
-class A extends T {
+class C extends T {
   validatePaymentRequest() {
     let {
       paymentRequest: e,
@@ -285,7 +285,7 @@ class A extends T {
     super(...e), b(this, "state", y({}, this.initialState)), b(this, "paymentRequestWallet", "googlePay"), b(this, "paymentRequestWalletName", "Google Pay")
   }
 }
-class C extends T {
+class A extends T {
   validatePaymentRequest() {
     let {
       paymentRequest: e,

@@ -2,7 +2,7 @@
 /** chunk id: 307741, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => A
+  ZP: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ function O(e) {
     style: null != n && n.length > 0 ? {
       backgroundImage: 'url("'.concat(n, '")')
     } : {
-      backgroundColor: u.TVs.colors.BG_BRAND.css
+      backgroundColor: u.TVs.colors.BACKGROUND_BRAND.css
     }
   })
 }
@@ -70,7 +70,7 @@ function v(e) {
       className: y.gameIconFallback,
       color: u.TVs.colors.BACKGROUND_SURFACE_HIGH,
       style: {
-        backgroundColor: u.TVs.colors.BG_BRAND.css
+        backgroundColor: u.TVs.colors.BACKGROUND_BRAND.css
       }
     })
   })
@@ -168,7 +168,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     application: t,
     detectedGame: n,

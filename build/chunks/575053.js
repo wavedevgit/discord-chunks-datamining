@@ -195,16 +195,16 @@
     T = function(e) {
       return I(e) && "function" == typeof e.then
     },
-    A = function(e) {
+    C = function(e) {
       return I(e) && "function" == typeof e.elements && "function" == typeof e.createToken && "function" == typeof e.createPaymentMethod && "function" == typeof e.confirmCardPayment
     },
-    C = "[object Object]",
+    A = "[object Object]",
     N = function e(t, n) {
       if (!I(t) || !I(n)) return t === n;
       var r = Array.isArray(t);
       if (r !== Array.isArray(n)) returnfalse;
-      var i = Object.prototype.toString.call(t) === C;
-      if (i !== (Object.prototype.toString.call(n) === C)) returnfalse;
+      var i = Object.prototype.toString.call(t) === A;
+      if (i !== (Object.prototype.toString.call(n) === A)) returnfalse;
       if (!i && !r) return t === n;
       var a = Object.keys(t),
         o = Object.keys(n);
@@ -229,7 +229,7 @@
     R = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
     D = function(e) {
       var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : R;
-      if (null === e || A(e)) return e;
+      if (null === e || C(e)) return e;
       throw Error(t)
     },
     w = function(e) {
@@ -456,9 +456,9 @@
             O = n.onCancel,
             I = n.onShippingAddressChange,
             T = n.onShippingRateChange,
-            A = z("mounts <".concat(r, ">")),
-            C = "elements" in A ? A.elements : null,
-            N = "checkoutSdk" in A ? A.checkoutSdk : null,
+            C = z("mounts <".concat(r, ">")),
+            A = "elements" in C ? C.elements : null,
+            N = "checkoutSdk" in C ? C.checkoutSdk : null,
             R = l(t.useState(null), 2),
             D = R[0],
             w = R[1],
@@ -467,7 +467,7 @@
           v(D, "blur", d), v(D, "focus", f), v(D, "escape", m), v(D, "click", h), v(D, "loaderror", g), v(D, "loaderstart", E), v(D, "networkschange", b), v(D, "confirm", y), v(D, "cancel", O), v(D, "shippingaddresschange", I), v(D, "shippingratechange", T), v(D, "change", _), p && (i = "expressCheckout" === e ? p : function() {
             p(D)
           }), v(D, "ready", i), t.useLayoutEffect(function() {
-            if (null === x.current && null !== L.current && (C || N)) {
+            if (null === x.current && null !== L.current && (A || N)) {
               var t = null;
               if (N) switch (e) {
                 case "payment":
@@ -490,10 +490,10 @@
                   break;
                 default:
                   throw Error("Invalid Element type ".concat(r, ". You must use either the <PaymentElement />, <AddressElement options={{mode: 'shipping'}} />, <AddressElement options={{mode: 'billing'}} />, or <ExpressCheckoutElement />."))
-              } else C && (t = C.create(e, u));
+              } else A && (t = A.create(e, u));
               x.current = t, w(t), t && t.mount(L.current)
             }
-          }, [C, N, u]);
+          }, [A, N, u]);
           var j = S(u);
           return t.useEffect(function() {
             if (x.current) {
@@ -649,7 +649,7 @@
     eS = J("address", $),
     eI = J("shippingAddress", $),
     eT = J("paymentMethodMessaging", $),
-    eA = J("affirmMessage", $),
-    eC = J("afterpayClearpayMessage", $);
-  e.AddressElement = eS, e.AffirmMessageElement = eA, e.AfterpayClearpayMessageElement = eC, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = em, e.LinkAuthenticationElement = ev, e.P24BankElement = eh, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eT, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eI, e.useCheckout = q, e.useElements = U, e.useStripe = es
+    eC = J("affirmMessage", $),
+    eA = J("afterpayClearpayMessage", $);
+  e.AddressElement = eS, e.AffirmMessageElement = eC, e.AfterpayClearpayMessageElement = eA, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = em, e.LinkAuthenticationElement = ev, e.P24BankElement = eh, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eT, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eI, e.useCheckout = q, e.useElements = U, e.useStripe = es
 })

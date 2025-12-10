@@ -81,7 +81,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
     "aria-describedby": eb,
     "aria-labelledby": ey,
     "aria-autocomplete": eO
-  } = e, ev = i.useRef(null), eS = i.useRef(null), eI = i.useRef(true), eT = i.useRef(true), eA = Z || B, eC = i.useCallback((e, t, n) => {
+  } = e, ev = i.useRef(null), eS = i.useRef(null), eI = i.useRef(true), eT = i.useRef(true), eC = Z || B, eA = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -130,7 +130,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
     canOnlyUseTextCommands: es,
     onChangeStart: eN,
     onChangeEnd: eP,
-    updateState: eC
+    updateState: eA
   }), eD = i.useCallback((e, t) => {
     let n = _.tM(eR, e, k.id),
       r = _.lk(e, k.guild_id, k.id, n, t);
@@ -184,7 +184,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
   let {
     handleKeyDown: ex,
     handleKeyUp: eL
-  } = (0, A.Z)({
+  } = (0, C.Z)({
     editor: eR,
     channel: k,
     disableEnterToSubmit: ec,
@@ -199,7 +199,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
   }), {
     handlePaste: ej,
     handleGlobalPaste: eM
-  } = (0, C.Z)(eR, eA, W), ek = i.useCallback(e => {
+  } = (0, A.Z)(eR, eC, W), ek = i.useCallback(e => {
     null == en || en()
   }, [en]), eU = i.useCallback(e => {
     e !== eS.current ? eT.current && (null == Y || Y(null, (0, g.sk)(e, {
@@ -207,10 +207,10 @@ let k = Chunk473749.forwardRef(function(e, t) {
     }), e)) : eT.current && en()
   }, [en, Y]);
   i.useLayoutEffect(() => {
-    eI.current && (eS.current = n, eC(eR, "parent", {
+    eI.current && (eS.current = n, eA(eR, "parent", {
       value: n
     }))
-  }, [eR, n, eC]), i.useEffect(() => {
+  }, [eR, n, eA]), i.useEffect(() => {
     let e = () => {
       var e;
       let t = null != (e = c.Z.getActiveCommand(k.id)) ? e : null;
@@ -241,7 +241,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
         guildId: k.guild_id,
         className: o()(M.slateTextArea, H),
         placeholder: F,
-        readOnly: eA,
+        readOnly: eC,
         spellCheck: ea,
         autoFocus: !el,
         canFocus: !Z,

@@ -34,18 +34,18 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = "NO_GUILD",
-  C = new Chunk759174.h(e => [R(e)], e => e.id),
+let C = "NO_GUILD",
+  A = new Chunk759174.h(e => [R(e)], e => e.id),
   N = new Set,
   P = {};
 
 function R(e) {
   var t;
-  return null != (t = e.getGuildId()) ? t : A
+  return null != (t = e.getGuildId()) ? t : C
 }
 
 function D(e) {
-  return C.values(null != e ? e : true, true).map(e => {
+  return A.values(null != e ? e : true, true).map(e => {
     let {
       id: t
     } = e;
@@ -55,7 +55,7 @@ function D(e) {
 
 function w(e) {
   N.has(e) || (N.add(e), s()(_.Z.getMutableGuildChannelsForGuild(e)).values().forEach(e => {
-    j(e) && C.set(e.id, e)
+    j(e) && A.set(e.id, e)
   }))
 }
 
@@ -77,7 +77,7 @@ function j(e) {
 
 function M(e, t) {
   let n = _.Z.getChannel(e);
-  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? Z(n.id) : null == C.get(n.id) && C.set(n.id, n) : Z(e)
+  return null != n && n.isGuildStageVoice() ? 0 === t.size() ? Z(n.id) : null == A.get(n.id) && A.set(n.id, n) : Z(e)
 }
 
 function k(e) {
@@ -94,16 +94,16 @@ function U(e) {
 }
 
 function G(e) {
-  for (let t of C.values(e)) C.delete(t.id), delete P[t.id];
+  for (let t of A.values(e)) A.delete(t.id), delete P[t.id];
   N.delete(e)
 }
 
 function Z(e) {
-  return null != e && (delete P[e], C.delete(e), true)
+  return null != e && (delete P[e], A.delete(e), true)
 }
 
 function B() {
-  N.clear(), C.clear(), P = {}
+  N.clear(), A.clear(), P = {}
 }
 
 function F(e, t, n) {
@@ -193,8 +193,8 @@ function J(e) {
     channels: t
   } = e, n = t.reduce((e, t) => {
     if (!t.isGuildStageVoice() || !N.has(t.guild_id)) return e;
-    let n = C.get(t.id);
-    return null == n || a()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), C.set(t.id, t)), e
+    let n = A.get(t.id);
+    return null == n || a()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), A.set(t.id, t)), e
   }, []);
   return k(e => e.rebuild(), n), n.length > 0
 }
@@ -231,10 +231,10 @@ class et extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = x(e)) ? true : n.size(t)) ? r : 0
   }
   getChannels(e) {
-    return w(null != e ? e : A), C.values(null != e ? e : A)
+    return w(null != e ? e : C), A.values(null != e ? e : C)
   }
   getChannelsVersion() {
-    return C.version
+    return A.version
   }
   getParticipant(e, t) {
     var n, r;

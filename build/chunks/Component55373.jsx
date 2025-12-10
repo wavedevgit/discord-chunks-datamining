@@ -11,7 +11,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk481060 = require("./481060.js"),
   Chunk745735 = require("./745735.js");
 let l = 3e3,
@@ -73,8 +73,8 @@ let p = e => {
     onRest: () => v(e => false * e)
   } : {
     blur: 0
-  }), I = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), T = 5, [A, C] = (0, i.useState)(0), [N, P] = (0, i.useState)(1), R = (0, o.q_F)({
-    xOffset: A,
+  }), I = (0, i.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), T = 5, [C, A] = (0, i.useState)(0), [N, P] = (0, i.useState)(1), R = (0, o.q_F)({
+    xOffset: C,
     config: {
       tension: 10,
       friction: 10,
@@ -82,7 +82,7 @@ let p = e => {
     }
   });
   return ((0, s.Z)(() => {
-    C(N * (.5 * Math.random() * T + T / 2)), P(e => false * e)
+    A(N * (.5 * Math.random() * T + T / 2)), P(e => false * e)
   }, I), p) ? m : (0, r.jsx)(a.animated.div, {
     style: {
       transform: null == (t = h.y) ? true : t.to(e => {

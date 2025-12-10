@@ -53,7 +53,7 @@ function c(e) {
           className: o.reactionEmote
         }), (0, i.jsx)(r.Text, {
           variant: "text-sm/semibold",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: 17
         })]
       }), (0, i.jsx)(d, {

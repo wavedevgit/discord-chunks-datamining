@@ -34,16 +34,16 @@ let d = 5,
   S = 0,
   I = false,
   T = false,
-  A = null;
+  C = null;
 
-function C() {
-  f = null, p = new Set, m = false, h = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = false, S = 0, I = false, T = false, A = null, _ = new Map
+function A() {
+  f = null, p = new Set, m = false, h = new Set, g = new Set, E = new Map, b = 0, y = null, O = [], v = false, S = 0, I = false, T = false, C = null, _ = new Map
 }
 let N = () => true;
 
 function P(e) {
   let {} = e;
-  A = null, m = true
+  C = null, m = true
 }
 
 function R(e) {
@@ -54,12 +54,12 @@ function R(e) {
     recipient_status: i,
     has_eligible_friends: a
   } = e;
-  I = true, T = a, m = false, f = t, p = new Set(n), A = r, _ = i
+  I = true, T = a, m = false, f = t, p = new Set(n), C = r, _ = i
 }
 
 function D(e) {
   let {} = e;
-  I = false, T = false, A = null, m = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
+  I = false, T = false, C = null, m = false, b += 1, y = Date.now() + 1e3 * Math.pow(2, b)
 }
 
 function w(e) {
@@ -174,7 +174,7 @@ class H extends(r = Chunk442837.ZP.Store) {
     return T
   }
   getRefreshAt() {
-    return A
+    return C
   }
   getAllRelevantReferralTrialOffers() {
     return Array.from(E.values())
@@ -199,5 +199,5 @@ let Y = new H(Chunk570140.Z, {
   LOAD_MESSAGES_SUCCESS: U,
   MESSAGE_CREATE: k,
   LOAD_MESSAGES_AROUND_SUCCESS: U,
-  LOGOUT: C
+  LOGOUT: A
 })

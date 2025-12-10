@@ -191,9 +191,9 @@ function W(e) {
     eL = (0, j.Z)(t),
     eR = (0, Z.Z)(t),
     ek = (0, z.Z)(t, n),
-    eG = (0, X.Z)(t),
+    eG = (0, K.Z)(t),
     eU = (0, E.Z)(t, n),
-    eF = (0, K.Z)(l, {
+    eF = (0, X.Z)(l, {
       shouldHideMediaOptions: ea
     }),
     ez = (0, y.Z)({
@@ -206,15 +206,15 @@ function W(e) {
     eH = (0, H.Z)(t),
     eB = (0, O.Z)(t),
     {
-      forceIconsLeft: eX,
-      reorderMessageMenuItems: eK
+      forceIconsLeft: eK,
+      reorderMessageMenuItems: eX
     } = (0, d.d)("MessageContextMenu");
   return (0, r.jsxs)(a.v2r, {
     navId: ei,
     onClose: er,
     "aria-label": el,
     onSelect: es,
-    forceIconsLeft: eX,
+    forceIconsLeft: eK,
     children: [(0, r.jsx)(a.kSQ, {
       children: ec
     }), (0, r.jsx)(a.kSQ, {

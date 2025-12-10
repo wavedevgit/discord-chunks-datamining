@@ -116,7 +116,7 @@ function er(e) {
 function ei(e) {
   let {
     onClose: t
-  } = e, n = (0, A.Z)(), a = (0, T.Z)(), [g, b] = i.useState(0), S = a[g], L = H.bq[S], Q = en(L, (0, m.e7)([I.Z], () => I.Z.getCheckpointData()).cardId), X = (0, h.dQu)(Q.primaryColor).hex(), [J] = i.useState(new N.EP), [$, ee] = i.useState(false), et = (0, C.T)(d.Z), ei = (0, C.T)(u.Z), eo = (0, C.T)(s.Z), es = (0, C.T)(l.Z), el = (0, C.T)(c.Z), ec = i.useRef(H.ij.WELCOME), eu = i.useCallback(() => {
+  } = e, n = (0, C.Z)(), a = (0, T.Z)(), [g, b] = i.useState(0), S = a[g], L = H.bq[S], Q = en(L, (0, m.e7)([I.Z], () => I.Z.getCheckpointData()).cardId), X = (0, h.dQu)(Q.primaryColor).hex(), [J] = i.useState(new N.EP), [$, ee] = i.useState(false), et = (0, A.T)(d.Z), ei = (0, A.T)(u.Z), eo = (0, A.T)(s.Z), es = (0, A.T)(l.Z), el = (0, A.T)(c.Z), ec = i.useRef(H.ij.WELCOME), eu = i.useCallback(() => {
     ee(true), ei()
   }, [ei]), ed = i.useCallback(() => {
     S === H.ij.END_CLAIM ? eo() : S === H.ij.END_REWARD ? el() : H.Kz.has(S) || es()

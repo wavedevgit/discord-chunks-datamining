@@ -6,7 +6,7 @@ require.d(exports, {
   Cd: () => M,
   DZ: () => P,
   PS: () => D,
-  T6: () => A,
+  T6: () => C,
   Z1: () => G,
   aj: () => R,
   fy: () => Chunk526761.fy,
@@ -60,7 +60,7 @@ let S = 5e3,
   I = "UserSettingsProtoLastWriteTimes",
   T = Date.now();
 
-function A() {}
+function C() {}
 Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
   T = Date.now()
 }), Chunk570140.Z.subscribe("CONNECTION_CLOSED", () => {
@@ -70,7 +70,7 @@ Chunk570140.Z.subscribe("CONNECTION_OPEN", () => {
 }), document.addEventListener("keydown", () => {
   T = 0
 }));
-class C {
+class A {
   getEditInfo() {
     return Chunk581883.Z.getFullState()[this.type]
   }
@@ -277,8 +277,8 @@ class C {
     }, this.logger = new d.Z(this.ProtoClass.typeName)
   }
 }
-let N = new C(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
-  P = new C(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
+let N = new A(Chunk524437.o8, Chunk526761.yP.PRELOADED_USER_SETTINGS),
+  P = new A(Chunk377108.ji, Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS),
   R = {
     [Chunk526761.yP.PRELOADED_USER_SETTINGS]: N,
     [Chunk526761.yP.FRECENCY_AND_FAVORITES_SETTINGS]: P

@@ -48,7 +48,7 @@ function x(e) {
       color: c.Z.colors.INTERACTIVE_MUTED
     }), (0, r.jsx)(u.Heading, {
       variant: "heading-sm/medium",
-      color: "header-muted",
+      color: "text-muted",
       children: y.intl.string(y.t.ZzukHk)
     })]
   }) : a ? (0, r.jsxs)("div", {
@@ -60,11 +60,11 @@ function x(e) {
       color: c.Z.colors.INTERACTIVE_MUTED
     }), (0, r.jsx)(u.Heading, {
       variant: "heading-md/normal",
-      color: "header-muted",
+      color: "text-muted",
       children: y.intl.string(y.t.DpZNJw)
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
-      color: "header-muted",
+      color: "text-muted",
       children: y.intl.format(y.t["5afO9U"], {
         onClick: I ? g.wV : g.r5
       })
@@ -97,7 +97,7 @@ function x(e) {
     },
     renderSectionHeader: false === o ? true : e => (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
-      color: "header-muted",
+      color: "text-muted",
       className: O.header,
       children: y.intl.string(h[e])
     }),

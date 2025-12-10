@@ -62,8 +62,8 @@ function E(e) {
       setBodyNode: S,
       setFooterNode: I,
       setModalOverlayNode: T,
-      setReadySlideId: A,
-      premiumBrandRefreshBackgroundClassName: C,
+      setReadySlideId: C,
+      premiumBrandRefreshBackgroundClassName: A,
       selectedSkuId: N,
       isDisplayingWowMomentConfirmation: P,
       isGift: R
@@ -90,14 +90,14 @@ function E(e) {
     children: [null == (m = null == w || null == (s = w.options) ? true : s.renderHeader) || m ? E : null, w.renderStep(y), null == O || x ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.hzk, {
         "data-migration-pending": true,
-        className: o()(L, _.body, C, {
+        className: o()(L, _.body, A, {
           [_.reviewStep]: O === f.h8.REVIEW,
           [_.addPaymentStepForPremium]: O === f.h8.ADD_PAYMENT_STEPS && D
         }),
         children: (0, r.jsx)(u.MyZ, {
           activeSlide: O,
           centered: false,
-          onSlideReady: e => A(e),
+          onSlideReady: e => C(e),
           width: h,
           overflow: P ? "visible" : true,
           shouldUseMediaQueriesForSizing: true,

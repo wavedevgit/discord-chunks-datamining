@@ -47,7 +47,7 @@ let y = e => {
   } = e;
   return (0, l.jsx)(g.Text, {
     variant: "text-md/medium",
-    color: "interactive-active",
+    color: "interactive-text-active",
     children: d()(t).utc().format("MMMM YYYY")
   })
 };

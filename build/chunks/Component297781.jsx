@@ -54,7 +54,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -67,7 +67,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -79,7 +79,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -121,7 +121,7 @@ function j(e) {
   var {
     children: t
   } = e, n = P(e, ["children"]);
-  return (0, r.jsx)("div", N(A({
+  return (0, r.jsx)("div", N(C({
     className: I.badgeContainer
   }, n), {
     children: t
@@ -420,7 +420,7 @@ function X(e) {
     defaultTextColor: "content-inventory-overlay-text-secondary",
     defaultIconColor: p.TVs.colors.CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY
   } : 2 === n ? {
-    defaultTextColor: "interactive-normal"
+    defaultTextColor: "interactive-text-default"
   } : 3 === n ? {
     defaultTextColor: "text-muted"
   } : 4 === n ? {
@@ -429,7 +429,7 @@ function X(e) {
   } : {
     defaultTextColor: "text-subtle"
   }, (0, r.jsx)(x.Provider, {
-    value: A({
+    value: C({
       location: n
     }, t),
     children: (0, r.jsx)("div", {

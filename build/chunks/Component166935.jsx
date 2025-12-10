@@ -101,12 +101,12 @@ function v(e) {
   let T = i.useCallback(() => {
       null != I.current && I.current()
     }, [I]),
-    A = null != p;
+    C = null != p;
   return i.useLayoutEffect(() => {
     var e, t;
     let n = new ResizeObserver(() => {
         var e, t;
-        if (A) return void y(true);
+        if (C) return void y(true);
         let n = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
         if (null == n || (null == S ? true : S.current) == null) return;
         let r = n.getBoundingClientRect();
@@ -114,7 +114,7 @@ function v(e) {
       }),
       r = null != (t = null == O || null == (e = O.current) ? true : e.getScrollerNode()) ? t : null;
     return null != r && n.observe(r), (null == S ? true : S.current) != null && n.observe(S.current), () => n.disconnect()
-  }, [A]), (0, r.jsxs)(u.y, {
+  }, [C]), (0, r.jsxs)(u.y, {
     children: [(0, r.jsx)("div", {
       className: o()(_.bodySpacerTop, {
         [_.bodySpacerTopBorder]: b && null == a

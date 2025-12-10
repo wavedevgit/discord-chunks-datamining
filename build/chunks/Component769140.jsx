@@ -54,7 +54,7 @@ function B(e) {
   } = e, {
     themeType: V,
     theme: H
-  } = (0, C.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([I.ZP], () => null != W ? I.ZP.getVoiceStatesForChannel(W).map(e => {
+  } = (0, A.z)(), Y = (0, o.e7)([O.Z], () => O.Z.getGuild(null == i ? true : i.guildId)), W = (0, o.e7)([y.Z], () => y.Z.getChannel(null == i ? true : i.channelId)), K = (0, o.Wu)([I.ZP], () => null != W ? I.ZP.getVoiceStatesForChannel(W).map(e => {
     let {
       user: t
     } = e;
@@ -67,7 +67,7 @@ function B(e) {
     user: t,
     stream: i,
     analyticsLocations: q
-  }), X = (0, A.Z)({
+  }), X = (0, C.Z)({
     userId: t.id,
     onAction: Q
   }), {

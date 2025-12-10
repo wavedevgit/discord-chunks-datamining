@@ -67,7 +67,7 @@ function g(e) {
   let {
     safetyWarnings: t
   } = e;
-  null != t && (_[e.id] = t, t.some(e => h(e) && null != e.dismiss_timestamp && !A(e.dismiss_timestamp)) ? m.add(e.id) : m.delete(e.id)), null == t && (null != _[e.id] && delete _[e.id], m.delete(e.id))
+  null != t && (_[e.id] = t, t.some(e => h(e) && null != e.dismiss_timestamp && !C(e.dismiss_timestamp)) ? m.add(e.id) : m.delete(e.id)), null == t && (null != _[e.id] && delete _[e.id], m.delete(e.id))
 }
 
 function E(e) {
@@ -132,10 +132,10 @@ function T() {
   })
 }
 
-function A(e) {
+function C(e) {
   return new Date(e).getTime() > Date.now() - u
 }
-class C extends Chunk442837.ZP.Store {
+class A extends Chunk442837.ZP.Store {
   initialize() {
     this.waitFor(Chunk592125.Z)
   }
@@ -151,7 +151,7 @@ class C extends Chunk442837.ZP.Store {
     return m.has(e)
   }
 }
-let N = new C(Chunk570140.Z, {
+let N = new A(Chunk570140.Z, {
   CHANNEL_CREATE: E,
   CHANNEL_DELETE: y,
   CHANNEL_UPDATES: b,

@@ -8,9 +8,9 @@ require.d(exports, {
   a5: () => L,
   c4: () => x,
   g7: () => D,
-  jZ: () => C,
+  jZ: () => A,
   mE: () => Z,
-  oQ: () => A,
+  oQ: () => C,
   rX: () => N,
   rY: () => R,
   rt: () => P,
@@ -65,7 +65,7 @@ function T(e, t, n) {
   }
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     a = [];
   return (n.length > 0 || r) && a.push(I(e, t, i.BN.ROLE)), n.forEach(e => {
@@ -73,7 +73,7 @@ function A(e, t, n) {
   }), a
 }
 
-function C(e, t) {
+function A(e, t) {
   return T(e, t, i.BN.MEMBER)
 }
 

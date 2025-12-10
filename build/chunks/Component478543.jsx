@@ -2,7 +2,7 @@
 /** chunk id: 478543, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -140,7 +140,7 @@ function T(e) {
   })
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   return (0, r.jsxs)(c.Text, {
     variant: "text-xs/normal",
     className: b.titleRegion,
@@ -163,7 +163,7 @@ function A(e, t, n) {
     })]
   })
 }
-let C = e => {
+let A = e => {
   let {
     loading: t = false,
     currentOverrides: n,
@@ -178,7 +178,7 @@ let C = e => {
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: b.wrapper,
-    children: [A(a, o, t), (0, r.jsxs)("div", {
+    children: [C(a, o, t), (0, r.jsxs)("div", {
       className: b.content,
       children: [(0, r.jsx)(f.Z, {
         className: b.icon

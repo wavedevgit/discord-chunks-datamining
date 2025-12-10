@@ -35,8 +35,8 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = +Chunk70956.Z.Millis.MINUTE,
-  C = 2,
+let C = +Chunk70956.Z.Millis.MINUTE,
+  A = 2,
   N = +Chunk70956.Z.Millis.SECOND,
   P = (0, Chunk535584.T)({
     location: Chunk324805.dr.QUESTS_MANAGER
@@ -126,7 +126,7 @@ class L extends Chunk147913.Z {
   getActivelyProgressingStreamOnDesktopQuests() {
     let e = new Map,
       t = Chunk199902.Z.getCurrentUserActiveStream();
-    if (null == exports || Chunk938475.ZP.countVoiceStatesForChannel(exports.channelId) < C) return module;
+    if (null == exports || Chunk938475.ZP.countVoiceStatesForChannel(exports.channelId) < A) return module;
     let n = Chunk199902.Z.getStreamerActiveStreamMetadata();
     if (null == require) return module;
     P.log("~ getActivelyProgressingStreamOnDesktopQuestIds -> Active stream metadata: ", require);
@@ -165,12 +165,12 @@ class L extends Chunk147913.Z {
       [r.X.PLAY_ACTIVITY]: new Map
     }), T(this, "calculateHeartbeatDurationMs", e => {
       let t = E.Z.quests.get(e);
-      if (null == t || null == t.config || null == t.userStatus) return A;
+      if (null == t || null == t.config || null == t.userStatus) return C;
       let {
         progressSeconds: n,
         targetSeconds: i
       } = (0, v.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * _.Z.Millis.SECOND);
-      return a <= A ? a + N : A
+      return a <= C ? a + N : C
     }), T(this, "initiateHeartbeat", (e, t, n) => {
       let i = this.heartbeats[t];
       if (i.has(e)) return void P.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));

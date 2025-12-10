@@ -48,7 +48,7 @@ function T(e, t) {
   }
   return n
 }
-let A = function(e, t) {
+let C = function(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
@@ -68,13 +68,13 @@ let A = function(e, t) {
       content: m.Z.RULES.commandMention.parse(e, t, n).content
     })
   }),
-  C = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
-    commandMention: A
+  A = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
+    commandMention: C
   }, (0, Chunk691424.Z)({
     enableBuildOverrides: false,
     enableEmojiClick: false
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
-  N = Chunk25209.w4(C);
+  N = Chunk25209.w4(A);
 
 function P(e) {
   let {
@@ -88,11 +88,11 @@ function P(e) {
     submitting: h = false,
     fetchesApplication: g = true,
     onConfirmActivityLaunchChecksAlertOpen: I
-  } = e, T = (0, l.O)(), A = (0, c.Qv)({
+  } = e, T = (0, l.O)(), C = (0, c.Qv)({
     context: t,
     applicationId: n.id,
     fetchesApplication: g
-  }), C = (0, O.Q)(A), N = (0, o.e7)([b.Z], () => b.Z.entrypoint()), P = r.useMemo(() => {
+  }), A = (0, O.Q)(C), N = (0, o.e7)([b.Z], () => b.Z.entrypoint()), P = r.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, f.If)(t, n.id).descriptor) ? true : r.botId
   }, [t, n.id, n.bot]), R = (0, c.w1)({
@@ -109,7 +109,7 @@ function P(e) {
         location: i,
         application_id: t,
         section_name: a,
-        action: C,
+        action: A,
         source: N
       })
     },
@@ -120,9 +120,9 @@ function P(e) {
     fetchesApplication: g,
     onConfirmActivityLaunchChecksAlertOpen: I
   }), D = "primary", w = null != s ? s : S.intl.string(S.t.zKX8Nu);
-  return C === c.JS.JOIN ? (D = "active", w = S.intl.string(S.t.d9PsMj)) : C !== c.JS.LEAVE || h || (D = "critical-primary", w = S.intl.string(S.t["Hi1/aQ"])), {
+  return A === c.JS.JOIN ? (D = "active", w = S.intl.string(S.t.d9PsMj)) : A !== c.JS.LEAVE || h || (D = "critical-primary", w = S.intl.string(S.t["Hi1/aQ"])), {
     onActivityItemSelected: R,
-    activityAction: C,
+    activityAction: A,
     buttonVariant: D,
     buttonText: w
   }

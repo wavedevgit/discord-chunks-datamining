@@ -74,16 +74,16 @@ function I(e) {
   }, []);
   let y = (0, l.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
     [I, T] = i.useState(1),
-    [A, C] = i.useState(false),
+    [C, A] = i.useState(false),
     [N, P] = i.useState(null),
     R = i.useCallback(async () => {
       if (null != y) try {
-        C(true), P(null);
+        A(true), P(null);
         let e = (0, h.g)(y, 1);
         o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), T(2)
       } catch (t) {
         let e = t instanceof f.HF ? t : new f.HF(t, t.code);
-        P(b.intl.string(e.code === p.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), C(false)
+        P(b.intl.string(e.code === p.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), A(false)
       }
     }, [y, t, d]),
     D = () => {
@@ -102,12 +102,12 @@ function I(e) {
           return [{
             variant: "secondary",
             text: b.intl.string(b.t.oEAioF),
-            disabled: A,
+            disabled: C,
             onClick: a
           }, {
             variant: "primary",
             text: b.intl.string(b.t.etZP4B),
-            loading: A,
+            loading: C,
             onClick: R
           }];
         case 2:

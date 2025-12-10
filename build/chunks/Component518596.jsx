@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
   getUserSettingsSectionsByWebUserSettings: () => T,
   getWebUserSettingsByUserSettingsSections: () => I,
   openUserSettings: () => O,
-  openUserSettingsFromParsedUrl: () => A
+  openUserSettingsFromParsedUrl: () => C
 }), require("./388685.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -177,7 +177,7 @@ function T() {
   return exports
 }
 
-function A(e) {
+function C(e) {
   let {
     match: t,
     urlOrigin: n,

@@ -74,24 +74,24 @@ function x(e) {
   }, [m]);
   let b = null != a;
   return (0, r.jsxs)("div", {
-    className: C.container,
+    className: A.container,
     children: [(0, r.jsxs)("div", {
       children: [b ? (0, r.jsxs)("div", {
-        className: C.videoContainer,
+        className: A.videoContainer,
         children: [g ? (0, r.jsx)(h.Z, {
-          className: o()(C.videoCover, C.video),
+          className: o()(A.videoCover, A.video),
           loop: true,
           muted: true,
           autoPlay: true,
           src: a,
           poster: l
         }) : null, (0, r.jsx)("img", {
-          className: C.videoCover,
+          className: A.videoCover,
           src: l,
-          "aria-label": A.intl.string(A.t.X4IxWL)
+          "aria-label": C.intl.string(C.t.X4IxWL)
         })]
       }) : null, (0, r.jsxs)("div", {
-        className: b ? C.overviewContainerWithVideo : C.overviewContainerNoVideo,
+        className: b ? A.overviewContainerWithVideo : A.overviewContainerNoVideo,
         children: [(0, r.jsx)(j, {
           application: n
         }), (0, r.jsx)(M, {
@@ -99,10 +99,10 @@ function x(e) {
         }), p.length > 0 ? (0, r.jsx)(G, {
           description: p
         }) : null, _ ? (0, r.jsx)("div", {
-          className: C.developerShelfControlsContainer,
+          className: A.developerShelfControlsContainer,
           children: (0, r.jsx)(d.W, {
             hideSearch: true,
-            className: C.developerShelfControls
+            className: A.developerShelfControls
           })
         }) : null, (0, r.jsx)(U, {
           context: t,
@@ -123,26 +123,26 @@ function L(e) {
     application: t
   } = e, n = (0, y.Cb)(t), i = (0, y.Hu)(t);
   return n || i ? (0, r.jsxs)("div", {
-    className: C.monetizationDisclosureContainerStyle,
+    className: A.monetizationDisclosureContainerStyle,
     children: [n ? (0, r.jsxs)("div", {
-      className: C.monetizationDisclosureStyle,
+      className: A.monetizationDisclosureStyle,
       children: [(0, r.jsx)(l.EOn, {
         size: "sm",
         color: l.TVs.colors.INTERACTIVE_MUTED
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: A.intl.string(A.t["8z5B2U"])
+        children: C.intl.string(C.t["8z5B2U"])
       })]
     }) : null, i ? (0, r.jsxs)("div", {
-      className: C.monetizationDisclosureStyle,
+      className: A.monetizationDisclosureStyle,
       children: [(0, r.jsx)(l.uMN, {
         size: "sm",
         color: l.TVs.colors.INTERACTIVE_MUTED
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        children: A.intl.string(A.t["5khEk8"])
+        children: C.intl.string(C.t["5khEk8"])
       })]
     }) : null]
   }) : null
@@ -154,17 +154,17 @@ function j(e) {
     application: n
   } = e, i = (0, y.BQ)(n) ? n.name : null != (t = (0, y.$d)(n)) ? t : "", a = (0, y.vJ)(n);
   return (0, r.jsxs)("div", {
-    className: C.titleContainer,
+    className: A.titleContainer,
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: i
     }), a ? (0, r.jsx)("div", {
-      className: C.partnerLabelContainer,
+      className: A.partnerLabelContainer,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: A.intl.string(A.t.LO4f0P)
+        children: C.intl.string(C.t.LO4f0P)
       })
     }) : null]
   })
@@ -178,14 +178,14 @@ function M(e) {
     return (0, y.BQ)(t) && null != (e = null == t ? true : t.tags) ? e : []
   }, [t]);
   return (0, y.ye)(t) ? (0, r.jsxs)("div", {
-    className: C.tagsContainer,
+    className: A.tagsContainer,
     children: [(0, r.jsx)(k, {
       application: t
     }), n.map((e, t) => (0, r.jsx)("div", {
-      className: C.tagContainer,
+      className: A.tagContainer,
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: e
       })
     }, e + t))]
@@ -200,13 +200,13 @@ function k(e) {
   if (!(0, y.ye)(n)) return null;
   let i = null != (t = (0, y.BQ)(n) ? n instanceof E.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
   return (0, r.jsxs)("div", {
-    className: C.tagContainer,
+    className: A.tagContainer,
     children: [(0, r.jsx)(l.BFJ, {
       size: "xs",
-      color: l.TVs.colors.INTERACTIVE_NORMAL
+      color: l.TVs.colors.INTERACTIVE_TEXT_DEFAULT
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
-      color: "interactive-normal",
+      color: "interactive-text-default",
       children: (0, u.lY)(i)
     })]
   })
@@ -251,9 +251,9 @@ function U(e) {
       analyticsLocations: E
     }) : null]
   }) : c && !s && (0, y.ye)(a) ? (0, r.jsx)(l.Wn, {
-    className: C.primaryEntryPointWarningMessage,
+    className: A.primaryEntryPointWarningMessage,
     messageType: l.QYI.WARNING,
-    children: A.intl.format(A.t["s/3hjE"], {})
+    children: C.intl.format(C.t["s/3hjE"], {})
   }) : null : null
 }
 
@@ -288,10 +288,10 @@ function G(e) {
     }, d)),
     m = n || p;
   return (0, r.jsxs)("div", {
-    className: C.descriptionContainer,
+    className: A.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: f,
-      className: C.overflowHidden,
+      className: A.overflowHidden,
       onTransitionEnd: _,
       children: (0, r.jsx)(l.Text, {
         ref: s,
@@ -304,12 +304,12 @@ function G(e) {
         children: o
       })
     }), null != u && u > D ? (0, r.jsxs)(l.P3F, {
-      className: C.expandableDescriptionClickable,
+      className: A.expandableDescriptionClickable,
       onClick: () => a(e => !e),
       children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: m ? A.intl.string(A.t.u4YJ8g) : A.intl.string(A.t["N/tajD"])
+        children: m ? C.intl.string(C.t.u4YJ8g) : C.intl.string(C.t["N/tajD"])
       }), m ? (0, r.jsx)(l.u04, {
         size: "sm",
         color: l.TVs.colors.TEXT_BRAND

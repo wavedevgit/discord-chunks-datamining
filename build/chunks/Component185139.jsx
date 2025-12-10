@@ -34,8 +34,8 @@ function O(e) {
     header: S,
     footer: I,
     isGift: T = false,
-    giftMessage: A = E.intl.string(E.t["DrgnS+"]),
-    hideBreadcrumbs: C = false,
+    giftMessage: C = E.intl.string(E.t["DrgnS+"]),
+    hideBreadcrumbs: A = false,
     isLoading: N = false,
     purchaseError: P,
     purchaseErrorBlockRef: R,
@@ -71,9 +71,9 @@ function O(e) {
         className: b.paymentNote,
         iconSize: u.Z.Sizes.SMALL,
         icon: c.OgN,
-        color: null == A ? u.Z.Colors.PRIMARY : u.Z.Colors.SECONDARY,
-        children: A
-      }) : null, C ? null : (0, r.jsx)("div", {
+        color: null == C ? u.Z.Colors.PRIMARY : u.Z.Colors.SECONDARY,
+        children: C
+      }) : null, A ? null : (0, r.jsx)("div", {
         className: b.breadcrumbsWrapper,
         children: (0, r.jsx)(c.OoM, {
           activeId: _.Ck.has(n) ? G : n,

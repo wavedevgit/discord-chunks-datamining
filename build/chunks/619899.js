@@ -5,7 +5,7 @@ require.d(exports, {
   Cr: () => N,
   N9: () => y,
   O1: () => P,
-  St: () => C,
+  St: () => A,
   ex: () => S,
   xq: () => O,
   zL: () => v
@@ -237,11 +237,11 @@ let y = (0, Chunk663042.U)(e => ({
     }
     return n
   },
-  A = (e, t, n) => {
+  C = (e, t, n) => {
     let r = Object.values(t);
     return e && 0 !== r.length ? null != n ? t[n] : r[0] : null
   },
-  C = e => {
+  A = e => {
     let {
       previewEnabled: t,
       previewAvatarDecorationSkuId: n
@@ -266,7 +266,7 @@ let y = (0, Chunk663042.U)(e => ({
     } = y(), i = y(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       if (null == e || e.type !== o.Z.AVATAR_DECORATION || 0 === e.items.length) return e;
-      let r = A(t, i, n);
+      let r = C(t, i, n);
       return null == r ? e : T(e, r)
     }, [e, t, n, i])
   },
@@ -277,7 +277,7 @@ let y = (0, Chunk663042.U)(e => ({
     } = y(), i = y(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
       if (null == e) return null;
-      let r = A(t, i, n);
+      let r = C(t, i, n);
       return null == r ? e : I(e, r)
     }, [e, t, n, i])
   }

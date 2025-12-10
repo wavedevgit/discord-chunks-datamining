@@ -99,7 +99,7 @@ function K(e) {
     analyticsLocations: $
   } = (0, p.ZP)(f.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), {
     themeType: ee
-  } = (0, C.z)(), et = (0, g.Z)({
+  } = (0, A.z)(), et = (0, g.Z)({
     activity: i,
     user: t
   }), en = (0, S.Z)({
@@ -282,7 +282,7 @@ function K(e) {
       })
     }) : null
   }, em = () => {
-    if (!(0, A.Z)(i)) return null;
+    if (!(0, C.Z)(i)) return null;
     let {
       start: e,
       end: t

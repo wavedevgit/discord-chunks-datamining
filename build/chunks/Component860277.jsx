@@ -51,16 +51,16 @@ function M(e) {
         color: t,
         colorClass: D.iconColor,
         className: D.titleIcon
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(A.Z, {
         variant: "eyebrow",
         className: D.eyebrow,
         children: R.intl.string(P.default.ZQakPR)
       })]
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(A.Z, {
       variant: "display-lg",
       className: w.display,
       children: R.intl.string(P.default.OzY5Ns)
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(A.Z, {
       variant: "heading-xxl/medium",
       className: w.subtitle,
       children: R.intl.string(P.default.sEPtGY)
@@ -98,33 +98,33 @@ function U(e) {
         color: n,
         colorClass: D.iconColor,
         className: D.titleIcon
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(A.Z, {
         variant: "eyebrow",
         className: D.eyebrow,
         children: R.intl.string(P.default.ZQakPR)
       })]
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(A.Z, {
       variant: "display-lg",
       className: o()(w.display, w.subtitle),
       children: R.intl.string(P.default["+uwOHt"])
     }), (0, r.jsxs)("div", {
       className: w.stats,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(C.Z, {
+        children: [(0, r.jsx)(A.Z, {
           variant: "eyebrow",
           children: R.intl.string(P.default.wWKySP)
-        }), (0, r.jsx)(C.Z, {
+        }), (0, r.jsx)(A.Z, {
           variant: "heading-xxl/normal",
           className: D.numeric,
           children: null == i ? true : i.numMessagesSent
         })]
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(C.Z, {
+        children: [(0, r.jsx)(A.Z, {
           variant: "eyebrow",
           children: a === d.J6.HOURS ? R.intl.format(P.default.Xu0QsX, {
             numHours: s
           }) : R.intl.string(P.default.RmVTph)
-        }), (0, r.jsx)(C.Z, {
+        }), (0, r.jsx)(A.Z, {
           variant: "heading-xxl/normal",
           className: D.numeric,
           children: s
@@ -143,10 +143,10 @@ function G(e) {
   } = e, {
     users: d = [],
     sidekick: _
-  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), m = (0, i.useContext)(y.Q), b = (0, f.dQu)(m.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([h.default], () => h.default.getCurrentUser()), C = (0, i.useRef)(0), P = (0, i.useRef)(true), R = (0, i.useRef)(null), D = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, B = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
-  (0, i.useEffect)(() => (o === N.ij.FRIENDS_LEAVE && (P.current ? l() : B ? (s(), P.current = true) : C.current = setTimeout(() => {
+  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), m = (0, i.useContext)(y.Q), b = (0, f.dQu)(m.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([h.default], () => h.default.getCurrentUser()), A = (0, i.useRef)(0), P = (0, i.useRef)(true), R = (0, i.useRef)(null), D = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, B = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
+  (0, i.useEffect)(() => (o === N.ij.FRIENDS_LEAVE && (P.current ? l() : B ? (s(), P.current = true) : A.current = setTimeout(() => {
     s(), P.current = true
-  }, x)), () => clearTimeout(C.current)), [s, l, B, o]);
+  }, x)), () => clearTimeout(A.current)), [s, l, B, o]);
   let F = (0, i.useMemo)(() => {
       switch (o) {
         case N.ij.FRIENDS_INTRO:
@@ -162,7 +162,7 @@ function G(e) {
       }
     }, [o, B]),
     V = (0, i.useCallback)(e => null != e ? g.ZP.getUserAvatarURL(e, false, 64, "png") : true, []);
-  (0, i.useEffect)(() => () => clearTimeout(C.current), []), (0, i.useEffect)(() => {
+  (0, i.useEffect)(() => () => clearTimeout(A.current), []), (0, i.useEffect)(() => {
     o !== N.ij.FRIENDS_LEAVE && (P.current = false)
   }, [o]);
   let H = (0, i.useCallback)(() => {
@@ -198,7 +198,7 @@ function G(e) {
       withReducedMotion: "play"
     }), (0, r.jsx)("div", {
       className: w.container,
-      children: (0, r.jsxs)(A.ZP, {
+      children: (0, r.jsxs)(C.ZP, {
         activeSlide: Y,
         className: w.animatedSlides,
         slideClassName: w.animatedSlide,
@@ -236,7 +236,7 @@ function Z() {
     v = (0, Chunk837411.Z)(null != (e = null == Chunk51144 ? true : Chunk51144.id) ? module : "0"),
     I = (0, Chunk442837.e7)([Chunk699516.Z], () => Chunk699516.Z.isBlocked(null == Chunk51144 ? true : Chunk51144.id)),
     T = Chunk26118 && !Chunk909397,
-    [A, C] = (0, Chunk473749.useState)(false),
+    [C, A] = (0, Chunk473749.useState)(false),
     x = Chunk225055 || null == Chunk607070 || Chunk607070.length < 1 || Chunk607070.length > j,
     L = (0, Chunk989392.T)(Chunk481743.Z),
     M = Chunk225055 ? Chunk388032.intl.string(Chunk388032.t.fjcCk5) : "";

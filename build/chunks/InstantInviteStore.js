@@ -51,14 +51,14 @@ function T(e) {
   r.targetType === _.Iq.STREAM && null != r.targetUser ? (null == g[t] && (g[t] = {}), g[t][String(r.targetUser.id)] = r) : r.targetType === _.Iq.EMBEDDED_APPLICATION && null != r.targetApplication ? (null == E[t] && (E[t] = {}), E[t][r.targetApplication.id] = r) : h[t] = r
 }
 
-function A(e) {
+function C(e) {
   let {
     channelId: t
   } = e;
   h[t] = null
 }
 
-function C(e) {
+function A(e) {
   let {
     channelId: t
   } = e;
@@ -131,8 +131,8 @@ let k = new M(Chunk570140.Z, {
   FRIEND_INVITE_CREATE_FAILURE: P,
   FRIEND_INVITE_REVOKE_SUCCESS: R,
   INSTANT_INVITE_CREATE_SUCCESS: T,
-  INSTANT_INVITE_CREATE_FAILURE: A,
-  INSTANT_INVITE_REVOKE_SUCCESS: C,
+  INSTANT_INVITE_CREATE_FAILURE: C,
+  INSTANT_INVITE_REVOKE_SUCCESS: A,
   FRIEND_INVITE_REVOKE_REQUEST: D,
   FRIEND_INVITE_CREATE_REQUEST: w,
   FRIEND_INVITES_FETCH_REQUEST: x,

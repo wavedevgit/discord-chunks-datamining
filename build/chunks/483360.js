@@ -127,8 +127,8 @@ let ey = new Chunk710845.Z("AutocompleteUtils"),
   eS = 7,
   eI = 5,
   eT = 3,
-  eA = 1,
   eC = 1,
+  eA = 1,
   eN = 3,
   eP = 5,
   eR = 3,
@@ -217,7 +217,7 @@ function eX(e, t) {
     }
     if (r.test(e)) return eI;
     if (eQ(i, e)) return eT;
-    if (o && a()(i, e)) return eA
+    if (o && a()(i, e)) return eC
   } catch (e) {
     ey.error(e)
   }
@@ -245,7 +245,7 @@ function e0(e) {
     boosters: s
   } = e, l = X.default.getUsers(), c = Q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, es.Fv)(u), p = [], _ = [], m = n.length, h = 0, g = 0;
   for (; h < m;) {
-    var E, b, y, O, v, S, I, T, A;
+    var E, b, y, O, v, S, I, T, C;
     let e, r, f = n[h];
     f instanceof M.Z ? (r = f, e = null == (b = F.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
     let m = null == (E = el.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
@@ -264,15 +264,15 @@ function e0(e) {
       }) : l.substring(0, d.length) === d || (null == f ? true : f.substring(0, d.length)) === d || (null == E ? true : E.substring(0, d.length)) === d ? p.push({
         type: eu.h8.USER,
         record: r,
-        score: eK(eA, null == s ? true : s[r.id]),
+        score: eK(eC, null == s ? true : s[r.id]),
         comparator: null != (S = null != m ? m : e) ? S : n,
         sortable: null != (I = null != h ? h : c) ? I : i
       }) : g < eU && (a()(u, i) || a()(d, l) || null != c && a()(u, c) || null != f && a()(d, f) || null != h && a()(u, h) || null != E && a()(d, E)) && (_.push({
         type: eu.h8.USER,
         record: r,
-        score: eK(eA, null == s ? true : s[r.id]),
+        score: eK(eC, null == s ? true : s[r.id]),
         comparator: null != (T = null != m ? m : e) ? T : n,
-        sortable: null != (A = null != h ? h : c) ? A : i
+        sortable: null != (C = null != h ? h : c) ? C : i
       }), g += 1)
     }
     h += 1
@@ -565,9 +565,9 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
               let e = e8(n, t, false);
               0 !== e && (c += .5 * e)
             }
-            c = Math.min(eS - eA, c)
+            c = Math.min(eS - eC, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eC, eA / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), w.Z.hasJoined(e.id) || (c -= eP)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= eS ? eO : eS), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eA, eC / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), w.Z.hasJoined(e.id) || (c -= eP)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= eS ? eO : eS), b.push({
             type: (0, L.bw)(e.type) ? eu.h8.VOICE_CHANNEL : eu.h8.TEXT_CHANNEL,
             record: e,
             score: eK(c, d[e.id]),
@@ -1042,7 +1042,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
             let d = 0,
               f = null,
               p = P.Z.getStickerById(l);
-            if (null == p || !r(p, (0, C.cO)(p, i, n))) return;
+            if (null == p || !r(p, (0, A.cO)(p, i, n))) return;
             for (let n of s) {
               let {
                 type: r,
@@ -1067,7 +1067,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
       let r = Array.from(T.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
         (0, S.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
       }), e), []);
-      return (0, A.cK)(e, r, n, t)
+      return (0, C.cK)(e, r, n, t)
     },
     queryGames(e) {
       let t = E.ZP.getRunningVerifiedApplicationIds();
@@ -1141,8 +1141,8 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           O = (0, es._I)(y),
           v = (0, es.Fv)(O),
           [S, I] = e$(t),
-          [T, A] = e$(f),
-          [C, N] = e$(E),
+          [T, C] = e$(f),
+          [A, N] = e$(E),
           P = [
             [y, y],
             [O, y],
@@ -1151,7 +1151,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
             [f, f],
             [T, f],
             [E, E],
-            [C, E]
+            [A, E]
           ].filter(e => null != e[0] && null != e[1]);
         for (let [e, t] of P)
           if (u === e) {
@@ -1170,7 +1170,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
             } for (let [e, n] of [
               [v, y],
               [I, t],
-              [A, f],
+              [C, f],
               [N, E]
             ])
             if (null != e && null != n && e.startsWith(d)) {

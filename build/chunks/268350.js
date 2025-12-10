@@ -7,8 +7,8 @@ require.d(exports, {
   Il: () => T,
   Jf: () => P,
   SA: () => x,
-  SV: () => A,
-  Um: () => C,
+  SV: () => C,
+  Um: () => A,
   eu: () => R,
   hW: () => L,
   lY: () => N,
@@ -123,7 +123,7 @@ let S = async (e, t) => {
     sticker: t
   });
   else throw Error("Invalid sticker type")
-}, A = async (e, t) => {
+}, C = async (e, t) => {
   let {
     body: n
   } = await a.tn.get({
@@ -139,7 +139,7 @@ let S = async (e, t) => {
       user: e.user
     }) : e)
   })
-}, C = async e => {
+}, A = async e => {
   await a.tn.del({
     url: h.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: false

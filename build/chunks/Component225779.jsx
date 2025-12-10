@@ -6,7 +6,7 @@ require.d(exports, {
   Ey: () => b,
   No: () => S,
   Ry: () => T,
-  qX: () => A,
+  qX: () => C,
   u3: () => I
 });
 var Chunk54381 = require("./54381.js");
@@ -181,7 +181,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     color: t = E.DEFAULT,
     className: n,

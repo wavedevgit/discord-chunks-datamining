@@ -53,8 +53,8 @@ function I(e) {
     setPopoutRef: v,
     channelId: I,
     messageId: T,
-    roleId: A,
-    openedAt: C,
+    roleId: C,
+    openedAt: A,
     onHide: N,
     newAnalyticsLocations: P = [],
     disableAutoFocus: R = false
@@ -66,7 +66,7 @@ function I(e) {
     guildId: n,
     channelId: I,
     messageId: T,
-    roleId: A
+    roleId: C
   }), L = i.useRef(null), j = (0, p.ZP)(t.id, n);
   i.useEffect(() => {
     null == v || v(null == L ? true : L.current)
@@ -77,7 +77,7 @@ function I(e) {
     value: w,
     children: (0, r.jsx)(d.Mt, {
       value: x,
-      openedAt: C,
+      openedAt: A,
       fetchStartedAt: null == j ? true : j.fetchStartedAt,
       fetchEndedAt: null == j ? true : j.fetchEndedAt,
       isLoaded: null == j ? true : j.isLoaded,

@@ -64,7 +64,7 @@ function k(t) {
         "aria-label": b.intl.string(b.t["2GrOCN"]),
         children: (0, a.jsx)(l.Z, {
           className: g.__invalid_buttonIcon,
-          color: "interactive-normal"
+          color: "interactive-text-default"
         })
       }), (0, a.jsx)(o.P3F, {
         className: c()([g.buttonsBackground, p ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
@@ -74,7 +74,7 @@ function k(t) {
         "aria-label": b.intl.string(b.t.COp9BO),
         children: (0, a.jsx)(r.Z, {
           className: g.__invalid_buttonIcon,
-          color: "interactive-normal"
+          color: "interactive-text-default"
         })
       })]
     })]

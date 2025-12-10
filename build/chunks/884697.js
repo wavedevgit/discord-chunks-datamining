@@ -26,7 +26,7 @@ require.d(exports, {
   mO: () => K,
   ne: () => ea,
   qS: () => v,
-  ql: () => C,
+  ql: () => A,
   rN: () => R,
   uV: () => j,
   v5: () => et,
@@ -92,24 +92,24 @@ let O = e => (null == e ? true : e.premiumType) != null,
   v = e => (null == e ? true : e.purchaseType) === m.qc2.PREMIUM_PURCHASE,
   S = (e, t, n) => {
     let r;
-    return C(e, r = n ? t ? m.tuJ.MOBILE_PREMIUM_TIER_2 : m.tuJ.MOBILE : t ? m.tuJ.PREMIUM_TIER_2 : m.tuJ.DEFAULT)
+    return A(e, r = n ? t ? m.tuJ.MOBILE_PREMIUM_TIER_2 : m.tuJ.MOBILE : t ? m.tuJ.PREMIUM_TIER_2 : m.tuJ.DEFAULT)
   },
   I = (e, t, n) => {
     let r = S(e, t, n);
     return null == r ? "" : (0, l.T4)(null == r ? true : r.amount, null == r ? true : r.currency)
   },
   T = e => (0, s.isAndroid)() || (0, s.isIOS)() ? e ? m.tuJ.MOBILE_PREMIUM_TIER_2 : m.tuJ.MOBILE : e ? m.tuJ.PREMIUM_TIER_2 : m.tuJ.DEFAULT,
-  A = e => {
+  C = e => {
     let t = e.bundledProducts;
     if (null == t) return 0;
     let n = T(false);
     return t.reduce((e, t) => {
       var r;
-      let i = C(t, n);
+      let i = A(t, n);
       return e + (null != (r = null == i ? true : i.amount) ? r : 0)
     }, 0)
   },
-  C = (e, t) => {
+  A = (e, t) => {
     var n, r, i;
     let a = null != (i = e.prices[t]) ? i : null;
     return null != a ? null == (r = a.countryPrices) || null == (n = r.prices) ? true : n[0] : null
@@ -119,9 +119,9 @@ let O = e => (null == e ? true : e.premiumType) != null,
     discountPercentage: false
   },
   P = (e, t) => {
-    let n = A(e);
+    let n = C(e);
     if (n <= 0) return N;
-    let r = C(e, T(t));
+    let r = A(e, T(t));
     return null == r ? N : {
       original: n,
       discountPercentage: Math.round((n - r.amount) / n * 100)
@@ -129,7 +129,7 @@ let O = e => (null == e ? true : e.premiumType) != null,
   },
   R = e => {
     var t;
-    return (null == (t = C(e, m.tuJ.DEFAULT)) ? true : t.amount) === 0
+    return (null == (t = A(e, m.tuJ.DEFAULT)) ? true : t.amount) === 0
   },
   D = e => e.reduce((e, t) => null != t && t.type === i.Z.VARIANTS_GROUP && null != t.variants ? (0, r.concat)(e, t.variants.map(e => y(E({}, e), {
     variantGroupStoreListingId: t.storeListingId,
@@ -239,8 +239,8 @@ let O = e => (null == e ? true : e.premiumType) != null,
     return p
   },
   en = (Chunk231338.pK.KZT, Chunk231338.pK.NGN, Chunk231338.pK.EGP, (e, t, n) => {
-    if ($(e)) return A(e);
-    let r = C(e, t ? n ? m.tuJ.MOBILE : m.tuJ.DEFAULT : n ? m.tuJ.MOBILE_PREMIUM_TIER_2 : m.tuJ.PREMIUM_TIER_2);
+    if ($(e)) return C(e);
+    let r = A(e, t ? n ? m.tuJ.MOBILE : m.tuJ.DEFAULT : n ? m.tuJ.MOBILE_PREMIUM_TIER_2 : m.tuJ.PREMIUM_TIER_2);
     return null == r ? true : r.amount
   }),
   er = (e, t) => {

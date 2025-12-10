@@ -58,20 +58,20 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e) {
+function A(e) {
   let {
     summary: t,
     channel: f,
     members: b,
     guildId: S,
     unread: T,
-    onClick: C
+    onClick: A
   } = e, [N, P] = i.useState(false), R = (0, u.Ye)(m.default.extractTimestamp(t.startId)), D = (0, a.e7)([h.Z], () => h.Z.summaryFeedback(t)), w = (e, n) => {
     e.stopPropagation(), (0, g.Z)({
       summary: t,
@@ -83,14 +83,14 @@ function C(e) {
       let {
         default: e
       } = await n.e("12891").then(n.bind(n, 519620));
-      return n => (0, r.jsx)(e, A(I({}, n), {
+      return n => (0, r.jsx)(e, C(I({}, n), {
         summary: t
       }))
     })
   };
   return (0, r.jsxs)(o.P3F, {
     className: v.container,
-    onClick: C,
+    onClick: A,
     onContextMenu: L,
     onMouseEnter: () => P(true),
     onMouseLeave: () => P(false),
@@ -104,7 +104,7 @@ function C(e) {
         className: v.rowHeaderLeft,
         children: [(0, r.jsx)(o.Text, {
           className: v.timestamp,
-          color: "interactive-normal",
+          color: "interactive-text-default",
           variant: "text-xs/normal",
           children: R
         }), (0, r.jsx)(l.Z, {
@@ -118,7 +118,7 @@ function C(e) {
           className: v.icon
         }), (0, r.jsx)(o.Text, {
           className: v.count,
-          color: "interactive-normal",
+          color: "interactive-text-default",
           variant: "text-xs/normal",
           children: t.count
         }), b.length > 0 && (0, r.jsxs)(r.Fragment, {
@@ -183,7 +183,7 @@ function N(e) {
     children: t.map((e, t) => {
       var i;
       let a = null != (i = n[t]) ? i : [];
-      return (0, r.jsx)(C, {
+      return (0, r.jsx)(A, {
         summary: e,
         channel: o,
         members: a,

@@ -31,14 +31,14 @@ var Chunk98405 = require("./98405.js"),
   T = Chunk621523(function() {
     return '"\udf06\ud834"' !== m("\uDF06\uD834") || '"\udead"' !== m("\uDEAD")
   }),
-  A = function(e, t) {
+  C = function(e, t) {
     var n = d(arguments),
       r = f(t);
     if (!(!c(r) && (true === e || u(e)))) return n[1] = function(e, t) {
       if (c(r) && (t = o(r, this, _(e), t)), !u(t)) return t
     }, a(m, null, n)
   },
-  C = function(e, t, n) {
+  A = function(e, t, n) {
     var r = g(n, t - 1),
       i = g(n, t + 1);
     return h(v, e) && !h(S, i) || h(S, e) && !h(v, r) ? "\\u" + y(E(e, 0), 16) : e
@@ -51,7 +51,7 @@ m && Chunk98405({
 }, {
   stringify: function(e, t, n) {
     var r = d(arguments),
-      i = a(I ? A : m, null, r);
-    return T && "string" == typeof i ? b(i, O, C) : i
+      i = a(I ? C : m, null, r);
+    return T && "string" == typeof i ? b(i, O, A) : i
   }
 })

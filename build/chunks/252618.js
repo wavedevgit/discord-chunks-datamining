@@ -5,7 +5,7 @@ require.d(exports, {
   EM: () => b,
   PR: () => g,
   Tt: () => v,
-  ZD: () => A,
+  ZD: () => C,
   yY: () => S
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -167,7 +167,7 @@ function T() {
   }, [])
 }
 
-function A() {
+function C() {
   let {
     skipsSettingDefaultPageTitle: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {};

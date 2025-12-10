@@ -6,8 +6,8 @@ require.d(exports, {
   T4: () => P,
   XK: () => w,
   g5: () => x,
-  gZ: () => A,
-  i6: () => C,
+  gZ: () => C,
+  i6: () => A,
   yC: () => R
 }), require("./388685.js");
 var Chunk261470 = require("./261470.js"),
@@ -34,7 +34,7 @@ let y = 1e3,
   S = 864e5,
   I = 6e5,
   T = new Map;
-async function A(e) {
+async function C(e) {
   var t;
   let n = Date.now(),
     i = null != (t = T.get(e)) ? t : 0;
@@ -67,7 +67,7 @@ async function A(e) {
     })
   }
 }
-async function C(e) {
+async function A(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = Date.now(),
     r = p.Z.getApplicationFetchState(e),

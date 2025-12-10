@@ -88,7 +88,7 @@ function w(e) {
     let e = [];
     e.push(P);
     for (let t = 0; t < 8; t++) e.push(N);
-    return e.push(C), e
+    return e.push(A), e
   }, []), J = () => {
     var e, t;
     let n = E.Z.getChannel(null == K || null == (e = K.message) ? true : e.channel_id);
@@ -97,82 +97,82 @@ function w(e) {
     }, (0, d.v_)(n), (0, d.hH)(null == n ? true : n.guild_id))), (0, m.Z)("message_component")
   };
   return (0, r.jsxs)("div", {
-    className: A.container,
+    className: C.container,
     style: {
       backgroundColor: H
     },
     children: [(0, r.jsxs)("div", {
-      className: A.card,
+      className: C.card,
       children: [(0, r.jsx)("img", {
         src: F,
         alt: "",
-        className: A.asset,
+        className: C.asset,
         style: {
           backgroundColor: H
         }
       }), (0, r.jsxs)("div", {
-        className: A.stats,
+        className: C.stats,
         children: [(0, r.jsxs)("div", {
-          className: A.stat,
+          className: C.stat,
           children: [(0, r.jsx)(a.kBi, {
             color: s.Z.colors.BLACK,
             size: "xs"
           }), (0, r.jsx)(a.xvT, {
             variant: "text-sm/medium",
-            className: A.statText,
+            className: C.statText,
             children: G
           })]
         }), (0, r.jsxs)("div", {
-          className: A.stat,
+          className: C.stat,
           children: [(0, r.jsx)(a.S6n, {
             color: s.Z.colors.BLACK,
             size: "xs"
           }), (0, r.jsx)(a.xvT, {
             variant: "text-sm/medium",
-            className: A.statText,
+            className: C.statText,
             children: B
           })]
         }), (0, r.jsxs)("div", {
-          className: A.stat,
+          className: C.stat,
           children: [(0, r.jsx)(a.EO4, {
             color: s.Z.colors.BLACK,
             size: "xs"
           }), (0, r.jsx)(a.xvT, {
             variant: "text-sm/medium",
-            className: A.statText,
+            className: C.statText,
             children: Z
           })]
         }), (0, r.jsx)("div", {
-          className: A.stat,
+          className: C.stat,
           children: null == L ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.IMN, {
               color: s.Z.colors.BLACK,
               size: "xs"
             }), (0, r.jsx)(a.xvT, {
               variant: "text-sm/medium",
-              className: A.statText,
+              className: C.statText,
               children: I.intl.string(T.default["fn+gnp"])
             })]
           }) : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.Z, {
               emojiId: L.emojiId,
               emojiName: L.emojiName,
-              className: A.statImage
+              className: C.statImage
             }), (0, r.jsx)(a.xvT, {
               variant: "text-sm/medium",
-              className: A.statText,
+              className: C.statText,
               children: null == L.emojiId ? h.ZP.convertSurrogateToName(L.emojiName) : ":".concat(L.emojiName, ":")
             })]
           })
         }), (0, r.jsx)("div", {
-          className: A.stat,
+          className: C.stat,
           children: null == j ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.IMN, {
               color: s.Z.colors.BLACK,
               size: "xs"
             }), (0, r.jsx)(a.xvT, {
               variant: "text-sm/medium",
-              className: A.statText,
+              className: C.statText,
               children: I.intl.string(T.default["26V/4h"])
             })]
           }) : (0, r.jsxs)(r.Fragment, {
@@ -182,58 +182,58 @@ function w(e) {
                 icon: j.applicationImageId
               }),
               alt: "",
-              className: A.statImage
+              className: C.statImage
             }), (0, r.jsx)(a.xvT, {
               variant: "text-sm/medium",
-              className: A.statText,
+              className: C.statText,
               children: j.applicationName
             })]
           })
         }), (0, r.jsx)("div", {
-          className: A.stat,
+          className: C.stat,
           children: null == M ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.IMN, {
               color: s.Z.colors.BLACK,
               size: "xs"
             }), (0, r.jsx)(a.xvT, {
               variant: "text-sm/medium",
-              className: A.statText,
+              className: C.statText,
               children: I.intl.string(T.default.eoLmk1)
             })]
           }) : (0, r.jsxs)(r.Fragment, {
             children: [null != W ? (0, r.jsx)(g.Z, {
               guild: W,
               size: g.Z.Sizes.SMOL,
-              className: A.statImage
+              className: C.statImage
             }) : (0, r.jsx)(a.QTo, {
               color: s.Z.colors.BLACK,
               size: "xs"
             }), (0, r.jsx)(a.xvT, {
               variant: "text-sm/medium",
-              className: A.statText,
+              className: C.statText,
               children: M.guildName
             })]
           })
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: A.footer,
+      className: C.footer,
       style: {
         backgroundColor: Y
       },
       children: [(0, r.jsx)(a.X6q, {
         variant: "display-sm",
-        className: A.title,
+        className: C.title,
         children: I.intl.string(T.default["CdU/PF"])
       }), z ? (0, r.jsx)(l.u, {
         text: I.intl.string(T.default.r8GEbK),
         "aria-label": false,
         children: (0, r.jsxs)(a.P3F, {
-          className: A.cta,
+          className: C.cta,
           onClick: J,
           children: [(0, r.jsx)(a.xvT, {
             variant: "text-sm/bold",
-            className: A.ctaText,
+            className: C.ctaText,
             children: I.intl.string(I.t.I0v0Qv)
           }), (0, r.jsx)(a.d4D, {
             color: s.Z.colors.BLACK,
@@ -242,14 +242,14 @@ function w(e) {
         })
       }) : null]
     }), (0, r.jsxs)("div", {
-      className: A.powerContainer,
+      className: C.powerContainer,
       style: {
         backgroundColor: H
       },
       children: [(0, r.jsx)("div", {
-        className: A.powerBar,
+        className: C.powerBar,
         children: X.map((e, t) => (0, r.jsx)("img", {
-          className: A.noDrag,
+          className: C.noDrag,
           src: e,
           width: 4,
           alt: "",
@@ -258,14 +258,14 @@ function w(e) {
           }
         }, t))
       }), (0, r.jsxs)("div", {
-        className: A.powerText,
+        className: C.powerText,
         children: [(0, r.jsx)(a.xvT, {
           variant: "text-xs/normal",
-          className: A.statText,
+          className: C.statText,
           children: "LVL"
         }), (0, r.jsx)(a.xvT, {
           variant: "text-xs/bold",
-          className: A.statText,
+          className: C.statText,
           children: q.format(null != k ? k : 0)
         })]
       })]

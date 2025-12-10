@@ -58,12 +58,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = {
+let A = {
     tag: "span",
     variant: "text-md/normal",
     color: "text-default"
@@ -73,7 +73,7 @@ let C = {
   };
 
 function P(e) {
-  return (0, r.jsx)(l.Text, A(I({}, C), {
+  return (0, r.jsx)(l.Text, C(I({}, A), {
     color: "header-primary",
     children: e
   }))
@@ -93,7 +93,7 @@ function R(e) {
     L = null != D ? D + " " + g.name : g.name;
   if (g.type === c.jw.SUB_COMMAND || g.type === c.jw.SUB_COMMAND_GROUP) {
     let e = [(0, r.jsxs)(i.Fragment, {
-        children: [" ", (0, r.jsx)(l.Text, A(I({}, C), {
+        children: [" ", (0, r.jsx)(l.Text, C(I({}, A), {
           children: null != (n = null == w ? true : w.name_localized) ? n : g.name
         }))]
       }, L)],
@@ -116,7 +116,7 @@ function R(e) {
         t = E.default.getUser(e);
       if (null != t) {
         let e = (0, b.ij)(t, v);
-        f = (0, r.jsxs)(p.Z, A(I({}, N), {
+        f = (0, r.jsxs)(p.Z, C(I({}, N), {
           onClick: () => (0, _.openUserProfileModal)({
             userId: t.id,
             guildId: v.guild_id,
@@ -132,7 +132,7 @@ function R(e) {
     case c.jw.CHANNEL: {
       let e = g.value.toString(),
         t = m.Z.getChannel(e);
-      null != t && (f = (0, r.jsxs)(p.Z, A(I({}, N), {
+      null != t && (f = (0, r.jsxs)(p.Z, C(I({}, N), {
         children: [y.zy, t.name]
       })));
       break
@@ -140,7 +140,7 @@ function R(e) {
     case c.jw.ROLE: {
       let e = g.value.toString(),
         t = null != S ? h.Z.getRole(S.id, e) : true;
-      null != t && (f = (0, r.jsxs)(p.Z, A(I({}, N), {
+      null != t && (f = (0, r.jsxs)(p.Z, C(I({}, N), {
         children: [y.ME, t.name]
       })));
       break
@@ -155,7 +155,7 @@ function R(e) {
         let t = E.default.getUser(e);
         if (null != t) {
           let e = (0, b.ij)(t, v);
-          f = (0, r.jsxs)(p.Z, A(I({}, N), {
+          f = (0, r.jsxs)(p.Z, C(I({}, N), {
             onClick: () => (0, _.openUserProfileModal)({
               userId: t.id,
               guildId: v.guild_id,
@@ -176,7 +176,7 @@ function R(e) {
     }
   }
   return null == f && (f = P(null == j ? true : j.toString())), [(0, r.jsxs)(i.Fragment, {
-    children: [(0, r.jsxs)(l.Text, A(I({}, C), {
+    children: [(0, r.jsxs)(l.Text, C(I({}, A), {
       children: [" ", null != (d = null == w ? true : w.name_localized) ? d : g.name, ": "]
     })), f]
   }, L)]
@@ -216,7 +216,7 @@ function D(e) {
       sourceAnalyticsLocations: y
     }));
     m = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(l.Text, A(I({}, C), {
+      children: [(0, r.jsxs)(l.Text, C(I({}, A), {
         children: ["/", null != (_ = null == (a = b.application_command) ? true : a.name_localized) ? _ : b.name]
       })), e]
     })

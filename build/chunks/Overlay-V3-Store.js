@@ -35,7 +35,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,7 +60,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -199,7 +199,7 @@ function er(e) {
   let {
     initialized: t
   } = e;
-  if (Y = N(A({}, Y), {
+  if (Y = N(C({}, Y), {
       windowHandleSentToNative: t
     }), t) {
     let e = null != j ? j : d.UNSET_PID;
@@ -221,7 +221,7 @@ function es(e) {
   let {
     createWindowTriggeringPID: t
   } = e;
-  Y = N(A({}, Y), {
+  Y = N(C({}, Y), {
     popoutOpened: true
   }), X(t), U = t, j = t, (0, d.setPID)(t)
 }
@@ -240,7 +240,7 @@ function ec(e) {
     error: n,
     nativeWindowHandle: r
   } = e;
-  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), Y = N(A({}, Y), {
+  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), Y = N(C({}, Y), {
     errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + n
   }), (0, _.bs)(t, "renderer_window_mounting_failed", {
     error: n,
@@ -291,13 +291,13 @@ function e_(e) {
 
 function em() {
   var e;
-  Y = N(A({}, Y), {
+  Y = N(C({}, Y), {
     showInactiveCalled: true
   }), null == w || null == (e = w.onNativePopoutShowInactiveSuccess) || module.call(w)
 }
 
 function eh() {
-  Y = N(A({}, Y), {
+  Y = N(C({}, Y), {
     allDone: true
   }), R.forEach(e => {
     et(e)
@@ -308,7 +308,7 @@ function eg(e) {
   let {
     update: t
   } = e;
-  Y = A({}, Y, t)
+  Y = C({}, Y, t)
 }
 
 function eE(e) {

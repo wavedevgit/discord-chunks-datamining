@@ -80,14 +80,14 @@ function T(e) {
   null != t ? delete f[t] : null != d && delete f[d]
 }
 
-function A(e) {
+function C(e) {
   let {
     forSection: t
   } = e;
   null != t ? delete p[t] : null != d && delete p[d]
 }
 
-function C(e) {
+function A(e) {
   let {
     settings: t
   } = e;
@@ -170,8 +170,8 @@ let x = new w(Chunk570140.Z, {
   USER_SETTINGS_MODAL_SUBMIT_FAILURE: D,
   USER_SETTINGS_MODAL_SET_SECTION: I,
   USER_SETTINGS_MODAL_CLEAR_SUBSECTION: T,
-  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: A,
-  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: C,
+  USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION: C,
+  USER_SETTINGS_MODAL_UPDATE_ACCOUNT: A,
   USER_SETTINGS_MODAL_SUBMIT_COMPLETE: R,
   USER_SETTINGS_MODAL_RESET: P
 })

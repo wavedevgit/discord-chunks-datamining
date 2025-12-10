@@ -53,7 +53,7 @@ function Z(e) {
       i = R.Z.getGuild(null == r ? true : r.guild_id),
       a = null == (e = t.messageReference) ? true : e.channel_id,
       o = x.Z.getCurrentlySelectedChannelId(),
-      s = C.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
+      s = A.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
       l = o === a && s === (null == r ? true : r.id);
     null == r || null == i || l || null == a || (T.Z.openModReportAsSidebar({
       channelId: r.id,
@@ -174,8 +174,8 @@ function V(e) {
       let t = (0, f.Z)(s, l);
       return null != d && (null == l || null == (e = l.moderatorReport) ? true : e.reported_user_id) != null ? t.set("author", d) : t
     }, [s, l, d]),
-    h = A.RS.useSetting(),
-    g = A.NA.useSetting(),
+    h = C.RS.useSetting(),
+    g = C.NA.useSetting(),
     E = h && g,
     b = (0, o.e7)([P.Z], () => P.Z.isDeveloper),
     y = (0, _.A)((null != (a = m.editedTimestamp) ? a : m.timestamp).valueOf()),
@@ -193,21 +193,21 @@ function V(e) {
       allowDevLinks: b,
       previewLinkTarget: true
     }),
-    C = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
-  return null == C ? null : (0, r.jsx)("div", {
+    A = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
+  return null == A ? null : (0, r.jsx)("div", {
     className: G.container,
     children: (0, r.jsxs)("div", {
       className: G.content,
       children: [(0, r.jsx)(F, {
         mergedMessageRecord: m,
         content: O,
-        channel: C,
+        channel: A,
         reportingUserId: null == l || null == (n = l.moderatorReport) ? true : n.reporting_user_id,
         reportedTimestamp: s.timestamp
       }), (0, S.Z)({
         channelMessageProps: {
           message: m,
-          channel: C,
+          channel: A,
           compact: false
         },
         hasSpoilerEmbeds: I,

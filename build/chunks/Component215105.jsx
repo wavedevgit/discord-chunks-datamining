@@ -2,7 +2,7 @@
 /** chunk id: 215105, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -58,7 +58,7 @@ let I = (0, Chunk131704.createChannelRecord)({
         (0, p.vE)(r)
     }
   },
-  A = e => {
+  C = e => {
     switch (e) {
       case y.n_.ACTIVITY:
         return v.t.Qn081O;
@@ -71,7 +71,7 @@ let I = (0, Chunk131704.createChannelRecord)({
     }
   };
 
-function C(e) {
+function A(e) {
   let {
     user: t,
     guildId: n,
@@ -80,7 +80,7 @@ function C(e) {
     sourceDetails: f,
     setPopoutRef: p,
     modalKey: E,
-    onAction: C,
+    onAction: A,
     onClose: N,
     entry: P
   } = e, {
@@ -96,11 +96,11 @@ function C(e) {
   }, [U, p]);
   let Z = async e => {
     if (null == e) return;
-    s === y.n_.AVATAR ? C({
+    s === y.n_.AVATAR ? A({
       action: "SEND_REPLY_AVATAR"
-    }) : s === y.n_.STATUS ? C({
+    }) : s === y.n_.STATUS ? A({
       action: "SEND_REPLY_CUSTOM_STATUS"
-    }) : C({
+    }) : A({
       action: "SEND_REPLY_ACTIVITY"
     });
     let n = T({
@@ -140,7 +140,7 @@ function C(e) {
         innerClassName: S.inputInner,
         editorClassName: S.editor,
         type: c.Ie.USER_PROFILE_REPLY,
-        placeholder: v.intl.formatToPlainString(A(s), {
+        placeholder: v.intl.formatToPlainString(C(s), {
           username: _.ZP.getName(n, a, t)
         }),
         channel: I,

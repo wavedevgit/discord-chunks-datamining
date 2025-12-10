@@ -97,7 +97,7 @@ function q(e, t, n, r, i) {
   let a = f.Z.getApplication(e.id);
   if (null == a) return null;
   let o = K(a, n);
-  return (t.add(e.id), (0, C.Je)(e) || v.Z.isInstalled(e.id, e.branchId)) ? {
+  return (t.add(e.id), (0, A.Je)(e) || v.Z.isInstalled(e.id, e.branchId)) ? {
     key: "".concat(e.id, "-").concat(e.branchId),
     application: a,
     libraryApplication: e,
@@ -115,7 +115,7 @@ function q(e, t, n, r, i) {
       branchId: e.branchId
     }),
     isUpdatingFlags: E.Z.isUpdatingFlags(e.id, e.branchId),
-    shouldShowInLibrary: (0, C.d0)(a, e, b.Z),
+    shouldShowInLibrary: (0, A.d0)(a, e, b.Z),
     defaultAction: (0, D.i)(e, v.Z, S.Z)
   } : null
 }

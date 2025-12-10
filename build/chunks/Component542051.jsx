@@ -228,7 +228,7 @@ class y extends(r = Chunk473749.PureComponent) {
         onClick: a,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           className: f.inChannelOption,
           children: d.intl.format(d.t.LDpotA, {
             guildName: p

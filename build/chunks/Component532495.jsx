@@ -118,7 +118,7 @@ function G() {
     eu = (0, Chunk477448.Z)({
       location: "DefaultCustomizationSections"
     }),
-    ed = (null == V || null == (n = V.widgets) ? true : require.some(e => A.Ki.includes(e.type))) === true,
+    ed = (null == V || null == (n = V.widgets) ? true : require.some(e => C.Ki.includes(e.type))) === true,
     ef = eu || ed,
     ep = () => en ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk134795.Z, {

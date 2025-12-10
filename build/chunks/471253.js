@@ -2,7 +2,7 @@
 /** chunk id: 471253, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DT: () => C,
+  DT: () => A,
   Ef: () => D,
   HO: () => R,
   NZ: () => w,
@@ -11,7 +11,7 @@ require.d(exports, {
   RK: () => T,
   _0: () => I,
   hz: () => N,
-  yi: () => A
+  yi: () => C
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -98,7 +98,7 @@ function T(e, t) {
   })
 }
 
-function A(e) {
+function C(e) {
   let t = null == e ? true : e.getGuildId();
   return i()(null != t, "This channel cannot be guildless."), o.tn.patch({
     url: b.ANM.UPDATE_VOICE_STATE(t),
@@ -112,7 +112,7 @@ function A(e) {
   })
 }
 
-function C(e, t, n) {
+function A(e, t, n) {
   let r = e.getGuildId();
   return i()(null != r, "This channel cannot be guildless."), o.tn.patch({
     url: b.ANM.UPDATE_VOICE_STATE(r, t),
@@ -127,7 +127,7 @@ function C(e, t, n) {
 function N(e, t) {
   if (null == t || null == e) return;
   let n = t.getGuildId();
-  return i()(null != n, "This channel cannot be guildless."), C(t, e.id, true), o.tn.patch({
+  return i()(null != n, "This channel cannot be guildless."), A(t, e.id, true), o.tn.patch({
     url: b.ANM.UPDATE_VOICE_STATE(n, e.id),
     body: {
       suppress: true,

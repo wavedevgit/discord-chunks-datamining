@@ -24,7 +24,7 @@ var s, Chunk392711 = require("./392711.js"),
   Chunk418088 = require("./418088.js"),
   Chunk814249 = require("./814249.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,14 +33,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -169,7 +169,7 @@ function F(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
-A(B, "persistKey", "SummaryStore");
+C(B, "persistKey", "SummaryStore");
 let V = new B(Chunk570140.Z, {
   CONNECTION_OPEN: () => false,
   CHANNEL_SELECT(e) {
@@ -195,7 +195,7 @@ let V = new B(Chunk570140.Z, {
         a = n.findIndex(t => t.id === (null == e ? true : e.id));
       a > false ? n[a] = e : n.push(e), R[i] = n
     }
-    let s = P(C({}, null != (n = D[i]) ? n : {
+    let s = P(A({}, null != (n = D[i]) ? n : {
       fetching: false
     }), {
       summaryId: true,
@@ -211,7 +211,7 @@ let V = new B(Chunk570140.Z, {
       summaryId: r,
       requestedAt: i
     } = e;
-    D[n] = P(C({}, null != (t = D[n]) ? t : {
+    D[n] = P(A({}, null != (t = D[n]) ? t : {
       fetching: false
     }), {
       summaryId: r,
@@ -231,7 +231,7 @@ let V = new B(Chunk570140.Z, {
       null != e && a.push(e)
     }
     R[n] = (0, l.sortBy)(a, e => S.default.extractTimestamp(e.startId)).reverse();
-    let c = P(C({}, D[n]), {
+    let c = P(A({}, D[n]), {
       fetching: false,
       error: true,
       lastReceivedAt: i
@@ -240,7 +240,7 @@ let V = new B(Chunk570140.Z, {
   },
   REQUEST_CHANNEL_SUMMARIES(e) {
     var t;
-    D[e.channelId] = P(C({}, null != (t = D[e.channelId]) ? t : {}), {
+    D[e.channelId] = P(A({}, null != (t = D[e.channelId]) ? t : {}), {
       fetching: true,
       lastRequestedAt: e.requestedAt
     })
@@ -283,7 +283,7 @@ let V = new B(Chunk570140.Z, {
     null != n ? w[t.id] = n : delete w[t.id]
   },
   REQUEST_CHANNEL_AFFINITIES() {
-    j = P(C({}, j), {
+    j = P(A({}, j), {
       status: "fetching",
       lastRequest: Date.now()
     })
@@ -295,13 +295,13 @@ let V = new B(Chunk570140.Z, {
       error: r
     } = e;
     if (null != r) {
-      x = [], L = {}, j = P(C({}, j), {
+      x = [], L = {}, j = P(A({}, j), {
         status: "error",
         lastResponse: Date.now()
       });
       return
     }
-    x = null != n ? n : [], L = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, j = P(C({}, j), {
+    x = null != n ? n : [], L = null != (t = null == n ? true : n.reduce((e, t) => (e[t.channel_id] = t.affinity, e), {})) ? t : {}, j = P(A({}, j), {
       status: "ok",
       lastResponse: Date.now()
     })
@@ -313,13 +313,13 @@ let V = new B(Chunk570140.Z, {
     } = e, r = t.reduce((e, t) => {
       var r;
       let i = null != (r = D[t]) ? r : {};
-      return e[t] = P(C({}, i), {
+      return e[t] = P(A({}, i), {
         fetching: true,
         lastRequestedAt: n,
         error: true
       }), e
     }, {});
-    D = C({}, D, r)
+    D = A({}, D, r)
   },
   RECEIVE_CHANNEL_SUMMARIES_BULK(e) {
     let {
@@ -336,7 +336,7 @@ let V = new B(Chunk570140.Z, {
       var i;
       let o = null != (i = D[t]) ? i : {},
         s = a[t];
-      return null != s && (e.summariesByChannel[t] = s), e.summaryFetchStatusByChannel[t] = P(C({}, o), {
+      return null != s && (e.summariesByChannel[t] = s), e.summaryFetchStatusByChannel[t] = P(A({}, o), {
         fetching: false,
         error: r,
         lastReceivedAt: n
@@ -345,7 +345,7 @@ let V = new B(Chunk570140.Z, {
       summariesByChannel: {},
       summaryFetchStatusByChannel: {}
     });
-    R = C({}, R, o.summariesByChannel), D = C({}, D, o.summaryFetchStatusByChannel)
+    R = A({}, R, o.summariesByChannel), D = A({}, D, o.summaryFetchStatusByChannel)
   },
   CONVERSATION_SUMMARY_UPDATE(e) {
     var t, n, r;
@@ -354,7 +354,7 @@ let V = new B(Chunk570140.Z, {
       summaries: a,
       guild_id: o
     } = e, s = Date.now(), l = c().chain(a).sortBy(e => S.default.extractTimestamp(e.start_id)).filter(e => Object.keys(e).length > 0).map(e => (0, I.b)(e, i)).reverse().value(), u = null != (n = R[i]) ? n : [], d = c().chain(l).concat(u).sortBy(e => S.default.extractTimestamp(e.startId)).takeRight(U).uniqBy("id").reverse().value();
-    R[i] = d, D[i] = P(C({}, D[i]), {
+    R[i] = d, D[i] = P(A({}, D[i]), {
       error: true,
       fetching: null != (r = null == (t = D[i]) ? true : t.fetching) && r,
       lastReceivedAt: s

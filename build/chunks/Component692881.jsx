@@ -71,7 +71,7 @@ let p = e => {
       size: s = "md",
       width: c,
       height: f,
-      color: p = i.Z.colors.INTERACTIVE_NORMAL,
+      color: p = i.Z.colors.INTERACTIVE_ICON_DEFAULT,
       colorClass: _ = ""
     } = e,
     m = d(e, ["size", "width", "height", "color", "colorClass"]);

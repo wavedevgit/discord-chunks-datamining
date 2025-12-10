@@ -269,7 +269,7 @@ class U extends Chunk473749.Component {
     })
   }
   constructor(e) {
-    super(e), w(this, "trialOffer", true), w(this, "referralsSent", true), w(this, "currentUser", true), w(this, "recipientHasNitro", true), w(this, "trialEndsAt", true), w(this, "analyticsLocations", true), w(this, "offerExpired", true), w(this, "isSender", true), w(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = true === e.compact, this.offerExpired = (0, A.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+    super(e), w(this, "trialOffer", true), w(this, "referralsSent", true), w(this, "currentUser", true), w(this, "recipientHasNitro", true), w(this, "trialEndsAt", true), w(this, "analyticsLocations", true), w(this, "offerExpired", true), w(this, "isSender", true), w(this, "compact", true), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = true === e.compact, this.offerExpired = (0, C.B)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
   }
 }
 

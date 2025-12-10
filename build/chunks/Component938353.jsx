@@ -266,7 +266,7 @@ class tn extends(r = Chunk473749.Component) {
   }
   renderSocialProofingFileSizeNitroUpsell(e) {
     let t = e.attachments.some(e => e.size > eQ.Lw);
-    return (0, eC.M)("attachment") && t ? (0, i.jsx)(e8, {}) : null
+    return (0, eA.M)("attachment") && t ? (0, i.jsx)(e8, {}) : null
   }
   renderCodedLinks(e) {
     return 0 === e.codedLinks.length ? null : e.codedLinks.map(t => {
@@ -275,26 +275,26 @@ class tn extends(r = Chunk473749.Component) {
         code: r,
         url: a
       } = t;
-      if (n === A.g.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(eM.Z, {
+      if (n === C.g.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(eM.Z, {
         code: r,
         message: e,
         getAcceptInviteContext: this.getAcceptInviteContext
       }, r) : null;
-      if (n === A.g.TEMPLATE) return (0, i.jsx)(Z.Z, {
+      if (n === C.g.TEMPLATE) return (0, i.jsx)(Z.Z, {
         code: r
       }, r);
-      if (n === A.g.EVENT) return (0, i.jsx)(G.Z, {
+      if (n === C.g.EVENT) return (0, i.jsx)(G.Z, {
         code: r
       }, r);
-      if (n === A.g.CHANNEL_LINK) return (0, i.jsx)(ew.Z, {
+      if (n === C.g.CHANNEL_LINK) return (0, i.jsx)(ew.Z, {
         code: r,
         message: e
       }, r);
-      if (n === A.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(j.Z, {
+      if (n === C.g.APP_DIRECTORY_PROFILE) return (0, i.jsx)(j.Z, {
         code: r,
         message: e
       }, r);
-      else if (n === A.g.ACTIVITY_BOOKMARK) {
+      else if (n === C.g.ACTIVITY_BOOKMARK) {
         let {
           referrerId: t = e.author.id,
           customId: n,
@@ -307,13 +307,13 @@ class tn extends(r = Chunk473749.Component) {
           customId: n,
           linkId: o
         }, r)
-      } else if (n === A.g.GUILD_PRODUCT) return (0, i.jsx)(U.Z, {
+      } else if (n === C.g.GUILD_PRODUCT) return (0, i.jsx)(U.Z, {
         code: r
       }, r);
-      else if (n === A.g.SERVER_SHOP) return (0, i.jsx)(C.Z, {
+      else if (n === C.g.SERVER_SHOP) return (0, i.jsx)(A.Z, {
         guildId: r
       }, r);
-      else if (n === A.g.SOCIAL_LAYER_STOREFRONT) {
+      else if (n === C.g.SOCIAL_LAYER_STOREFRONT) {
         let [e, t] = r.split("-"), {
           channel: n
         } = this.props;
@@ -322,26 +322,26 @@ class tn extends(r = Chunk473749.Component) {
           skuId: e,
           channel: n
         }, r)
-      } else if (n === A.g.QUESTS_EMBED) return (0, i.jsx)(et.Z, {
+      } else if (n === C.g.QUESTS_EMBED) return (0, i.jsx)(et.Z, {
         questId: r
       }, r);
-      else if (n === A.g.APP_DIRECTORY_STOREFRONT) return (0, i.jsx)(y.P, {
+      else if (n === C.g.APP_DIRECTORY_STOREFRONT) return (0, i.jsx)(y.P, {
         appId: r,
         message: e
       }, r);
-      else if (n === A.g.APP_DIRECTORY_STOREFRONT_SKU) {
+      else if (n === C.g.APP_DIRECTORY_STOREFRONT_SKU) {
         let t = (0, b.Q)(r);
         return null == t ? null : (0, i.jsx)(y.F, {
           appId: t.applicationId,
           skuId: t.skuId,
           message: e
         }, r)
-      } else if (n === A.g.APP_OAUTH2_LINK) return (0, i.jsx)(v.Z, {
+      } else if (n === C.g.APP_OAUTH2_LINK) return (0, i.jsx)(v.Z, {
         applicationId: r,
         message: e
       }, r);
-      else if (n === A.g.COLLECTIBLES_SHOP) return null;
-      else if (n === A.g.EXPERIMENT) return null;
+      else if (n === C.g.COLLECTIBLES_SHOP) return null;
+      else if (n === C.g.EXPERIMENT) return null;
       else throw Error("Unknown coded link type: ".concat(n))
     })
   }
@@ -534,7 +534,7 @@ class tn extends(r = Chunk473749.Component) {
     })
   }
   renderEphemeralAccessories(e) {
-    return (0, eA.Pv)(e) ? (0, i.jsx)(eL.Z, {
+    return (0, eC.Pv)(e) ? (0, i.jsx)(eL.Z, {
       message: e,
       onDeleteMessage: () => {
         _.Z.dismissAutomatedMessage(e)
@@ -707,7 +707,7 @@ class tn extends(r = Chunk473749.Component) {
     } = this.props, {
       showSuppressModal: a,
       showRemoveAttachmentModal: o
-    } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), p = this.renderSocialProofingFileSizeNitroUpsell(exports), _ = this.renderEmbeds(exports), m = this.renderActivityInvite(exports), h = this.renderReactions(exports), g = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), b = this.renderStickersAccessories(exports), y = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), v = this.renderThreadRoleMentionWarning(exports), S = this.renderEmbeddedApplicationInstanceEmbed(exports), I = this.renderInteractionPremiumUpsell(exports), T = this.renderMediaPostEmbeds(exports), A = this.renderSafetyPolicyNotice(exports), C = this.renderSafetySystemNotification(exports), N = this.renderMediaObscureNotice(exports), P = this.renderPoll(exports, require), R = this.renderForwardedMessage(exports), D = this.renderReportedMessage(exports), w = this.renderShareClientTheme(exports);
+    } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), p = this.renderSocialProofingFileSizeNitroUpsell(exports), _ = this.renderEmbeds(exports), m = this.renderActivityInvite(exports), h = this.renderReactions(exports), g = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), b = this.renderStickersAccessories(exports), y = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), v = this.renderThreadRoleMentionWarning(exports), S = this.renderEmbeddedApplicationInstanceEmbed(exports), I = this.renderInteractionPremiumUpsell(exports), T = this.renderMediaPostEmbeds(exports), C = this.renderSafetyPolicyNotice(exports), A = this.renderSafetySystemNotification(exports), N = this.renderMediaObscureNotice(exports), P = this.renderPoll(exports, require), R = this.renderForwardedMessage(exports), D = this.renderReportedMessage(exports), w = this.renderShareClientTheme(exports);
     return null == Chunk95015 && null == Chunk377108 && null == Chunk904245 && null == Chunk637374 && null == Chunk626799 && null == Chunk442837 && null == Chunk624367 && null == Chunk183431 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk222709 && null == Chunk162297 && null == Chunk36129 && null == Chunk960904 && null != Chunk446411 && null == Chunk629710 && null == Chunk262777 && null == Chunk761538 && null == Chunk674611 ? null : (0, Chunk54381.jsxs)("div", {
       id: (0, Chunk453687.bX)(exports),
       className: s()(module, Chunk636428.container),
@@ -803,7 +803,7 @@ function tr(e) {
   } = (0, u.cj)([eh.Z], () => ({
     canAddNewReactions: m && eh.Z.can(eq.Plq.ADD_REACTIONS, n),
     canManageMessages: eh.Z.can(eq.Plq.MANAGE_MESSAGES, n)
-  }), [m, n]), O = (0, M.ux)(n.guild_id), [, v] = (0, k.AB)(n.guild_id), S = (0, ec.$R)(n), I = (s === r.author.id || y) && r.author.id !== eq.LAt && false !== a && !(0, c.yE)(r.flags, eq.iLy.EPHEMERAL) && S && 1 === (0, eP.Z)(r), T = s === r.author.id && S && !o, A = r.author.id === s, C = r.isFirstMessageInForumPost(n), P = (0, eD.Z)({
+  }), [m, n]), O = (0, M.ux)(n.guild_id), [, v] = (0, k.AB)(n.guild_id), S = (0, ec.$R)(n), I = (s === r.author.id || y) && r.author.id !== eq.LAt && false !== a && !(0, c.yE)(r.flags, eq.iLy.EPHEMERAL) && S && 1 === (0, eP.Z)(r), T = s === r.author.id && S && !o, C = r.author.id === s, A = r.isFirstMessageInForumPost(n), P = (0, eD.Z)({
     channel: n,
     canChat: m,
     renderReactions: p,
@@ -818,14 +818,14 @@ function tr(e) {
     canSuppressEmbeds: I,
     canDeleteAttachments: T
   }, P), {
-    disableReactionReads: !!C || P.disableReactionReads
+    disableReactionReads: !!A || P.disableReactionReads
   }), e), {
     hasSpoilerEmbeds: e.hasSpoilerEmbeds && j,
     hasBailedAst: e.hasBailedAst,
     isLurking: h && m,
     isGuest: g && m,
     isPendingMember: E && m,
-    isCurrentUser: A,
+    isCurrentUser: C,
     inlineAttachmentMedia: l,
     inlineEmbedMedia: d,
     renderEmbeds: f,

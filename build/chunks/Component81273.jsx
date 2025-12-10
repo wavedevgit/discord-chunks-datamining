@@ -58,7 +58,7 @@ let w = "MMM DD, YYYY",
       {
         loading: q,
         getTrialPurchaseEligibility: Q
-      } = (0, A.F)(),
+      } = (0, C.F)(),
       X = (0, S.oC)(null == e ? true : e.id),
       {
         analyticsLocations: J
@@ -107,7 +107,7 @@ let w = "MMM DD, YYYY",
           initialPlanId: k.id,
           skuId: k.sku_id,
           planGroup: Y,
-          renderPurchaseConfirmation: (n, i) => et ? (0, r.jsx)(C.m, {
+          renderPurchaseConfirmation: (n, i) => et ? (0, r.jsx)(A.m, {
             listing: e,
             onClose: i,
             guildId: t

@@ -30,10 +30,10 @@ function y(e) {
     getAcceptInviteContext: O
   } = e, v = (0, o.e7)([p.default], () => p.default.getId()), S = (null == (t = n.inviter) ? true : t.id) === v, I = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: T
-  } = (0, u.ZP)(c.Z.INVITE_EMBED), A = (0, o.e7)([m.Z], () => {
+  } = (0, u.ZP)(c.Z.INVITE_EMBED), C = (0, o.e7)([m.Z], () => {
     var e;
     return null != n.inviter && m.Z.isFriend(null == (e = n.inviter) ? true : e.id)
-  }), C = i.useCallback(() => {
+  }), A = i.useCallback(() => {
     let e = "noop";
     null != n.inviter && null != _.Z.getDMFromUserId(n.inviter.id) && (e = "transition", s.Z.openPrivateChannel({
       recipientIds: [n.inviter.id]
@@ -57,10 +57,10 @@ function y(e) {
     })
   }, [n, y, T, O]);
   if (null == n.inviter) return null;
-  let P = A ? C : N,
+  let P = C ? A : N,
     R = E.intl.string(E.t.ib7Ng1),
     D = "active";
-  A ? (R = E.intl.string(E.t.xhxnPn), D = "secondary") : S && (R = E.intl.string(E.t.ib7Ng1), D = "secondary");
+  C ? (R = E.intl.string(E.t.xhxnPn), D = "secondary") : S && (R = E.intl.string(E.t.ib7Ng1), D = "secondary");
   let w = S ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
     x = null != n.inviter ? "".concat(n.inviter.username) : "",
     L = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
@@ -72,10 +72,10 @@ function y(e) {
         className: b.headerLine,
         children: [(0, r.jsx)(d.Z.Icon, {
           user: new f.Z(n.inviter),
-          onClick: A ? P : true
+          onClick: C ? P : true
         }), (0, r.jsx)(d.Z.Info, {
           title: x,
-          onClick: A ? P : true,
+          onClick: C ? P : true,
           children: L
         })]
       }), (0, r.jsx)(a.zxk, {

@@ -264,8 +264,8 @@ let e1 = {},
   tS = null,
   tI = null,
   tT = null,
-  tA = false,
   tC = false,
+  tA = false,
   tN = false,
   tP = null,
   tR = null,
@@ -346,7 +346,7 @@ function tz(e) {
   e.context === eD.Yn.DEFAULT && ((0, eo.f)({
     location: "setInputMode",
     autoTrackExposure: false
-  }).enableLatching && i === eA.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eA.pM4.VOICE_ACTIVITY), (0, Q.I)(false, false, false)), e.setInputMode(i, {
+  }).enableLatching && i === eC.pM4.PUSH_TO_TALK && r.modeOptions.pttLatchingEnabled && (i = eC.pM4.VOICE_ACTIVITY), (0, Q.I)(false, false, false)), e.setInputMode(i, {
     vadThreshold: r.modeOptions.threshold,
     vadAutoThreshold: r.modeOptions.autoThreshold,
     vadUseKrisp: r.modeOptions.vadUseKrisp && ro(),
@@ -523,7 +523,7 @@ function t4() {
       } = (0, H.A)("MediaEngineStore");
       e.setExperimentFlag(eD.V8.BROWSER_HEVC, t)
     }
-    if (e0.setHasFullbandPerformance((0, R.Z)()), e.setRemoteAudioHistory(1e3), (0, C.Z)(r)) {
+    if (e0.setHasFullbandPerformance((0, R.Z)()), e.setRemoteAudioHistory(1e3), (0, A.Z)(r)) {
       let {
         enableViewerClipping: t
       } = ee.Z.getCurrentConfig({
@@ -567,7 +567,7 @@ function t4() {
         required: e
       })
     }), e.on(b.Sh.VideoHookInitialize, (e, t, n, r, i, o) => {
-      (null == a ? true : a.desktopSource) != null && eu.default.track(eA.rMx.VIDEOHOOK_INITIALIZED, eL({
+      (null == a ? true : a.desktopSource) != null && eu.default.track(eC.rMx.VIDEOHOOK_INITIALIZED, eL({
         backend: e,
         format: t,
         framebuffer_format: n,
@@ -579,7 +579,7 @@ function t4() {
       ek.warn("noisecancellererror event: ".concat(e)), (0, D.kr)({
         type: D.u.NOISE_CANCELLER_ERROR,
         underlyingError: t$(e)
-      }), tA = true, eu.default.track(eA.rMx.VOICE_PROCESSING, {
+      }), tC = true, eu.default.track(eC.rMx.VOICE_PROCESSING, {
         noise_canceller_error: e
       }), v.Z.dispatch({
         type: "AUDIO_SET_NOISE_SUPPRESSION",
@@ -595,12 +595,12 @@ function t4() {
       ek.warn("voiceactivitydetectorerror event: ".concat(e)), (0, D.kr)({
         type: D.u.NOISE_CANCELLER_ERROR,
         underlyingError: t$(e)
-      }), eu.default.track(eA.rMx.VOICE_PROCESSING, {
+      }), eu.default.track(eC.rMx.VOICE_PROCESSING, {
         noise_canceller_error: e
       }), v.Z.dispatch({
         type: "AUDIO_SET_MODE",
         context: eD.Yn.DEFAULT,
-        mode: eA.pM4.VOICE_ACTIVITY,
+        mode: eC.pM4.VOICE_ACTIVITY,
         options: eM(eL({}, tK(eD.Yn.DEFAULT).modeOptions), {
           vadUseKrisp: false
         })
@@ -609,7 +609,7 @@ function t4() {
         code: e
       })
     }), e.on(b.Sh.SdpError, (e, t, n, r) => {
-      eu.default.track(eA.rMx.SDP_ERROR, {
+      eu.default.track(eC.rMx.SDP_ERROR, {
         operation: e,
         error: t,
         type: n,
@@ -669,7 +669,7 @@ function t4() {
       minidump_submission_error: module
     })
   }), e0.on(Chunk46973.aB.VideoInputInitialized, e => {
-    eu.default.track(eA.rMx.VIDEO_INPUT_INITIALIZED, {
+    eu.default.track(eC.rMx.VIDEO_INPUT_INITIALIZED, {
       device_name: e.description.name,
       time_to_first_frame_ms: e.initializationTimerExpired ? null : Math.round(e.timeToFirstFrame * ef.Z.Millis.SECOND),
       timed_out: e.initializationTimerExpired,
@@ -678,7 +678,7 @@ function t4() {
       rtc_connection_id: ev.Z.getRTCConnectionId()
     })
   }), e0.on(Chunk46973.aB.AudioInputInitialized, e => {
-    eu.default.track(eA.rMx.AUDIO_INPUT_INITIALIZED, {
+    eu.default.track(eC.rMx.AUDIO_INPUT_INITIALIZED, {
       device_name: e.description.name,
       time_to_initialized_ms: Math.round(e.timeToInitialized * ef.Z.Millis.SECOND),
       rtc_connection_id: ev.Z.getRTCConnectionId()
@@ -715,7 +715,7 @@ function t4() {
       error: e
     })
   }), e0.on(Chunk46973.aB.AudioDeviceModuleError, (e, t, n) => {
-    eu.default.track(eA.rMx.AUDIO_DEVICE_MODULE_ERROR, {
+    eu.default.track(eC.rMx.AUDIO_DEVICE_MODULE_ERROR, {
       audio_device_module: e,
       code: t,
       device_name: n
@@ -753,7 +753,7 @@ function t4() {
     })
   }), e0.on(Chunk46973.aB.VoiceQueueMetrics, e => {
     let t = rF(e);
-    null !== t && eu.default.track(eA.rMx.VOICE_QUEUE_METRICS, t)
+    null !== t && eu.default.track(eC.rMx.VOICE_QUEUE_METRICS, t)
   }), e0.setOnVideoContainerResized((e, t, n) => {
     v.Z.wait(() => v.Z.dispatch({
       type: "VIDEO_SIZE_UPDATE",
@@ -1037,16 +1037,16 @@ function ny() {
 
 function nO(e) {
   switch (e.state) {
-    case eA.hes.CONNECTING:
+    case eC.hes.CONNECTING:
       na();
       break;
-    case eA.hes.RTC_CONNECTING:
+    case eC.hes.RTC_CONNECTING:
       t_ = false, tm = false;
       break;
-    case eA.hes.RTC_CONNECTED:
+    case eC.hes.RTC_CONNECTED:
       tJ();
       break;
-    case eA.hes.DISCONNECTED:
+    case eC.hes.DISCONNECTED:
       nR(), nD()
   }
   ne.update()
@@ -1100,7 +1100,7 @@ function nT(e) {
   }, t), r || (ts = true), e0.eachConnection(tQ)
 }
 
-function nA(e) {
+function nC(e) {
   let {
     settings: {
       type: t
@@ -1112,7 +1112,7 @@ function nA(e) {
   n_(true)
 }
 
-function nC(e) {
+function nA(e) {
   let {
     context: t
   } = e;
@@ -1145,13 +1145,13 @@ function nP(e) {
     isAutomatic: p
   } = e;
   f()(!(d && p), "These are not allowed to both be true.");
-  let _ = u === eA.ZUi.DISABLED,
+  let _ = u === eC.ZUi.DISABLED,
     {
       disabledLocalVideos: m
     } = tK(l),
     h = null != (t = m[c]) && t,
     g = tx.has(c),
-    E = u === eA.ZUi.AUTO_ENABLED || u === eA.ZUi.MANUAL_ENABLED;
+    E = u === eC.ZUi.AUTO_ENABLED || u === eC.ZUi.MANUAL_ENABLED;
   ek.info("disableVideo=".concat(_, " currentlyDisabled=").concat(h, " currentlyAutoDisabled=").concat(g, ", isVideoShown=").concat(E)), f()(!(g && !h), "If you are auto-disabled, then you are also disabled.");
   let b = _ !== h,
     y = l === eD.Yn.DEFAULT,
@@ -1161,9 +1161,9 @@ function nP(e) {
   let {
     videoToggleStateMap: S
   } = tK(l);
-  if (S[c] === eA.ZUi.AUTO_PROBING && u === eA.ZUi.AUTO_ENABLED && (0, et.Z)(c, _ ? eD.fC.AUTO_DISABLE : eD.fC.AUTO_ENABLE, E), S[c] = u, nn({
+  if (S[c] === eC.ZUi.AUTO_PROBING && u === eC.ZUi.AUTO_ENABLED && (0, et.Z)(c, _ ? eD.fC.AUTO_DISABLE : eD.fC.AUTO_ENABLE, E), S[c] = u, nn({
       videoToggleStateMap: S
-    }, l, d), u === eA.ZUi.AUTO_PROBING ? null == (n = ev.Z.getRTCConnection()) || n.pauseStatsCollectionForUser(c, true) : null == (r = ev.Z.getRTCConnection()) || r.pauseStatsCollectionForUser(c, false), tL || (ek.info("isAutoDisableAllowed=".concat(tL, " - disabling VideoHealthManager")), null == (a = ev.Z.getRTCConnection()) || null == (i = a.getVideoHealthManager()) || i.disable()), O) {
+    }, l, d), u === eC.ZUi.AUTO_PROBING ? null == (n = ev.Z.getRTCConnection()) || n.pauseStatsCollectionForUser(c, true) : null == (r = ev.Z.getRTCConnection()) || r.pauseStatsCollectionForUser(c, false), tL || (ek.info("isAutoDisableAllowed=".concat(tL, " - disabling VideoHealthManager")), null == (a = ev.Z.getRTCConnection()) || null == (i = a.getVideoHealthManager()) || i.disable()), O) {
     if (!_ && !g || _ && !tL) return;
     (0, et.Z)(c, _ ? eD.fC.AUTO_DISABLE : eD.fC.AUTO_ENABLE, E), _ ? tx.add(c) : tx.delete(c)
   } else v && (g && !_ ? (ek.info("disallowing auto-disable for this session because of manual override by user"), tL = false, null == (s = ev.Z.getRTCConnection()) || null == (o = s.getVideoHealthManager()) || o.disable(), (0, et.Z)(c, eD.fC.MANUAL_REENABLE, E)) : (0, et.Z)(c, _ ? eD.fC.MANUAL_DISABLE : eD.fC.MANUAL_ENABLE, E));
@@ -1333,7 +1333,7 @@ function nH(e) {
     i = e0.getAudioLayer(),
     a = nl(e6, n.inputDeviceId),
     o = null == (t = e6[a]) ? true : t.name;
-  eu.default.track(eA.rMx.VOICE_PROCESSING, {
+  eu.default.track(eC.rMx.VOICE_PROCESSING, {
     echo_cancellation: n.echoCancellation,
     noise_cancellation: n.noiseCancellation,
     noise_suppression: n.noiseSuppression,
@@ -1580,7 +1580,7 @@ function ru(e) {
   let {
     enabled: t
   } = e;
-  eu.default.track(eA.rMx.VOICE_FILTER_PLAYBACK_TOGGLED, {
+  eu.default.track(eC.rMx.VOICE_FILTER_PLAYBACK_TOGGLED, {
     active_voice_filter_id: null != tO ? tO : null,
     enabled: t
   }), nn({
@@ -1747,7 +1747,7 @@ function rT(e) {
   false === t.decoupledClipsEnabled && (o = null, e0.setClipsSource(null))
 }
 
-function rA(e) {
+function rC(e) {
   var t, n, r, i;
   let {
     settings: a
@@ -1804,11 +1804,11 @@ function rA(e) {
   } else tJ(ti, null)
 }
 
-function rC(e) {
+function rA(e) {
   let {
     section: t
   } = e;
-  return t === eA.oAB.VOICE && na(), false
+  return t === eC.oAB.VOICE && na(), false
 }
 
 function rN() {
@@ -1840,9 +1840,9 @@ function rD(e) {
   let {
     state: t
   } = e, n = x.Z.isEnabled();
-  if (t === eA.$7l.BACKGROUND && ti && !n) td = true, tJ(false);
+  if (t === eC.$7l.BACKGROUND && ti && !n) td = true, tJ(false);
   else {
-    if (t !== eA.$7l.ACTIVE || !td) returnfalse;
+    if (t !== eC.$7l.ACTIVE || !td) returnfalse;
     td = false, tJ(true)
   }
   returntrue
@@ -1858,7 +1858,7 @@ function rx() {
 }
 
 function rL() {
-  return !!tA && (tA = false, true)
+  return !!tC && (tC = false, true)
 }
 
 function rj(e) {
@@ -1870,16 +1870,16 @@ function rM(e) {
     settings: t
   } = e;
   e0.applyMediaFilterSettings(t).finally(() => {
-    tC = false, r.emitChange()
+    tA = false, r.emitChange()
   })
 }
 
 function rk() {
-  tC = true
+  tA = true
 }
 
 function rU() {
-  tC = false
+  tA = false
 }
 
 function rG(e) {
@@ -1926,7 +1926,7 @@ class rB extends(u = Chunk442837.ZP.Store) {
     return ro()
   }
   isNoiseCancellationError() {
-    return tA
+    return tC
   }
   isAutomaticGainControlSupported() {
     return e0.supports(Chunk65154.AN.AUTOMATIC_GAIN_CONTROL)
@@ -2040,7 +2040,7 @@ class rB extends(u = Chunk442837.ZP.Store) {
   getVideoToggleState(e) {
     var t;
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT;
-    return null != (t = tK(n).videoToggleStateMap[e]) ? t : eA.ZUi.NONE
+    return null != (t = tK(n).videoToggleStateMap[e]) ? t : eC.ZUi.NONE
   }
   isLocalVideoAutoDisabled(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : eD.Yn.DEFAULT;
@@ -2051,7 +2051,7 @@ class rB extends(u = Chunk442837.ZP.Store) {
     return module === Chunk65154.Yn.DEFAULT && tx.size > 0
   }
   isMediaFilterSettingLoading() {
-    return tC
+    return tA
   }
   isNativeAudioPermissionReady() {
     return tD
@@ -2117,7 +2117,7 @@ class rB extends(u = Chunk442837.ZP.Store) {
           shortcut: i
         }
       } = t;
-      r === eA.pM4.PUSH_TO_TALK && e3.has(n) && (e[n] = i)
+      r === eC.pM4.PUSH_TO_TALK && e3.has(n) && (e[n] = i)
     }), module
   }
   getInputDeviceId() {
@@ -2386,7 +2386,7 @@ let rV = r = new rB(Chunk570140.Z, {
   AUDIO_SET_TEMPORARY_SELF_MUTE: nS,
   AUDIO_TOGGLE_SELF_MUTE: nI,
   AUDIO_SET_SELF_MUTE: nT,
-  AUDIO_TOGGLE_SELF_DEAF: nC,
+  AUDIO_TOGGLE_SELF_DEAF: nA,
   AUDIO_TOGGLE_LOCAL_MUTE: nN,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: nP,
   AUDIO_SET_LOCAL_VOLUME: nw,
@@ -2423,11 +2423,11 @@ let rV = r = new rB(Chunk570140.Z, {
   MEDIA_ENGINE_SET_AUDIO_ENABLED: rv,
   MEDIA_ENGINE_SET_VIDEO_ENABLED: rS,
   MEDIA_ENGINE_PERMISSION: rO,
-  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: rA,
+  MEDIA_ENGINE_SET_GO_LIVE_SOURCE: rC,
   MEDIA_ENGINE_SET_VIDEO_DEVICE: nG,
   MEDIA_ENGINE_INTERACTION_REQUIRED: nB,
-  USER_SETTINGS_MODAL_INIT: rC,
-  USER_SETTINGS_MODAL_SET_SECTION: rC,
+  USER_SETTINGS_MODAL_INIT: rA,
+  USER_SETTINGS_MODAL_SET_SECTION: rA,
   CERTIFIED_DEVICES_SET: rN,
   RPC_APP_CONNECTED: rb,
   RPC_APP_DISCONNECTED: ry,
@@ -2444,7 +2444,7 @@ let rV = r = new rB(Chunk570140.Z, {
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: rM,
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_START: rk,
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS_ERROR: rU,
-  USER_SETTINGS_PROTO_UPDATE: nA,
+  USER_SETTINGS_PROTO_UPDATE: nC,
   CLIPS_INIT: rI,
   CLIPS_SETTINGS_UPDATE: rT,
   MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rG,

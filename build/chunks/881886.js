@@ -11,7 +11,7 @@ var Chunk581079 = require("./581079.js"),
 function c(e, t) {
   var n = e.split(a);
   return n.length > 1 ? n.some(function(e) {
-    return A.contains(e, t)
+    return C.contains(e, t)
   }) : u(e = n[0].trim(), t)
 }
 
@@ -127,9 +127,9 @@ function T(e, t) {
   }
   return 0
 }
-var A = {
+var C = {
   contains: function(e, t) {
     return c(e.trim(), t.trim())
   }
 };
-module.exports = A
+module.exports = C

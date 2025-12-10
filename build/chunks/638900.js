@@ -108,7 +108,7 @@ function y(e, t, n, i, a) {
       id: l,
       name: S(r.Z.iptc[l], l, u),
       value: u,
-      description: A(r.Z.iptc[l], u, n, i)
+      description: C(r.Z.iptc[l], u, n, i)
     };
   return P(l) && (d.repeatable = true), R(l) && (d.encoding = r.Z.iptc[l].encoding_name(u)), {
     tag: d,
@@ -139,14 +139,14 @@ function T(e) {
   return "function" == typeof e.name
 }
 
-function A(e, t, n, r) {
+function C(e, t, n, r) {
   if (N(e)) try {
     return e.description(t, n)
   } catch (e) {}
-  return C(e, t) ? i.Z.decode(r, t) : t
+  return A(e, t) ? i.Z.decode(r, t) : t
 }
 
-function C(e, t) {
+function A(e, t) {
   return e && t instanceof Array
 }
 

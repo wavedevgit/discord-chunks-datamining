@@ -224,13 +224,13 @@ class V extends Chunk861687.Z {
               }
             }
             let I = (null != e ? e : 0) + (null != t ? t : 0) + (null != n ? n : 0) + (null != r ? r : 0) + (null != i ? i : 0) + (null != a ? a : 0) + (null != c ? c : 0) + (null != p ? p : 0) + (null != f ? f : 0),
-              A = (null == E || null == (y = E.desktopSource) ? true : y.sourcePid) != null ? m.ZP.getGameForPID(E.desktopSource.sourcePid) : null,
+              C = (null == E || null == (y = E.desktopSource) ? true : y.sourcePid) != null ? m.ZP.getGameForPID(E.desktopSource.sourcePid) : null,
               {
-                gameName: C,
+                gameName: A,
                 gameId: N,
                 exe: P,
                 distributor: R
-              } = (0, _.G8)(A);
+              } = (0, _.G8)(C);
             T.default.track(w.rMx.SCREENSHARE_FINISHED, j({
               screenshare_frames: e,
               videohook_frames: t,
@@ -251,7 +251,7 @@ class V extends Chunk861687.Z {
               context: x.Yn.STREAM,
               activity: d,
               soundshare_session: null != (v = null == E || null == (O = E.desktopSource) ? true : O.soundshareSession) ? v : true,
-              share_game_name: C,
+              share_game_name: A,
               share_game_id: N,
               share_game_exe: P,
               share_game_distributor: R,
@@ -455,7 +455,7 @@ class V extends Chunk861687.Z {
     o.getOutboundStats().forEach(t => {
       var r;
       (null != (r = t.num_frames) ? r : 0) > 0 && T.default.track(w.rMx.VIDEO_STREAM_ENDED, k(j({}, a, i, s, this.videoStreamStats.getStats(), t, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
-        app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
+        app_hardware_acceleration_enabled: C.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
         max_viewers: this.analyticsContext.maxViewers,
@@ -469,7 +469,7 @@ class V extends Chunk861687.Z {
       var r;
       let l = o.getInboundStats(t);
       (null != (r = null == l ? true : l.num_frames) ? r : 0) > 0 && T.default.track(w.rMx.VIDEO_STREAM_ENDED, k(j({}, a, i, s, this.videoStreamStats.getStats(), l, this._soundshareStats.getStats(), this.getStreamAnalyticsProperties(), c, u), {
-        app_hardware_acceleration_enabled: A.Z.getAppHardwareAccelerationEnabled(),
+        app_hardware_acceleration_enabled: C.Z.getAppHardwareAccelerationEnabled(),
         channel_type: n,
         reason: e,
         max_viewers: this.analyticsContext.maxViewers,

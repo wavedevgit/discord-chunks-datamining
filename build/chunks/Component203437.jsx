@@ -97,13 +97,13 @@ function S(e) {
         availableSlots: O[n]
       })
     }, [O]),
-    M = a.useCallback(e => (0, l.jsx)("div", {
+    k = a.useCallback(e => (0, l.jsx)("div", {
       className: r()({
         [w.disabledOption]: e.disabled
       }),
       children: e.label
     }), []),
-    k = a.useCallback(e => {
+    M = a.useCallback(e => {
       O[e] <= 0 || u(e)
     }, [O, u]),
     I = (() => {
@@ -113,13 +113,13 @@ function S(e) {
   return (0, l.jsx)(o.d, {
     label: n,
     className: i,
-    onChange: k,
+    onChange: M,
     value: I,
     multi: false,
     options: Z,
     renderOptionPrefix: P,
     renderOptionSuffix: E,
-    renderOptionLabel: M,
+    renderOptionLabel: k,
     placeholder: 0 === Z.length ? N.intl.string(N.t.O3i2gV) : N.intl.string(N.t.CunCMN)
   })
 }

@@ -94,7 +94,7 @@ let I = e => {
       size: s.EFr.SIZE_24
     }, i), t.id)
   },
-  A = e => {
+  C = e => {
     let {
       slotIndex: t
     } = e;
@@ -103,7 +103,7 @@ let I = e => {
       children: t
     })
   },
-  C = e => {
+  A = e => {
     let {
       referralSentUsers: t
     } = e, n = () => {
@@ -115,7 +115,7 @@ let I = e => {
           }, t[n].id);
           e.push(i)
         } else {
-          let t = (0, r.jsx)(A, {
+          let t = (0, r.jsx)(C, {
             slotIndex: n + 1
           }, n);
           e.push(t)
@@ -168,7 +168,7 @@ let I = e => {
         })
       }), (0, r.jsxs)("div", {
         className: E.bannerContent,
-        children: [(0, r.jsx)(C, {
+        children: [(0, r.jsx)(A, {
           referralSentUsers: n
         }), (0, r.jsxs)("div", {
           className: E.bannerContentText,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $z: () => P,
-  BH: () => C,
+  BH: () => A,
   BO: () => D,
   D7: () => L,
   Dd: () => N,
@@ -13,7 +13,7 @@ require.d(exports, {
   XA: () => k,
   Z8: () => v,
   bD: () => R,
-  nG: () => A,
+  nG: () => C,
   qJ: () => U,
   t0: () => G,
   tI: () => j
@@ -204,7 +204,7 @@ function T(e) {
   })), l
 }
 
-function A(e, t) {
+function C(e, t) {
   return l().flatMap(e, e => (o()(null != e.id, "Missing command id"), T({
     rootCommand: e,
     command: e,
@@ -214,7 +214,7 @@ function A(e, t) {
   })))
 }
 
-function C(e) {
+function A(e) {
   return h.Xyh.test(e.trim())
 }
 

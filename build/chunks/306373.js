@@ -39,10 +39,10 @@ function f(e, t) {
     labelElementType: "span",
     isInvalid: t.isInvalid,
     errorMessage: e.errorMessage || y
-  }), A = (0, i.z)(e, {
+  }), C = (0, i.z)(e, {
     labelable: true
   }), {
-    focusWithinProps: C
+    focusWithinProps: A
   } = (0, u.L)({
     onBlurWithin(n) {
       var r;
@@ -82,7 +82,7 @@ function f(e, t) {
     errorMessageId: T.id,
     validationBehavior: g
   }), {
-    radioGroupProps: (0, s.d)(A, {
+    radioGroupProps: (0, s.d)(C, {
       role: "radiogroup",
       onKeyDown: N,
       "aria-invalid": t.isInvalid || true,
@@ -92,7 +92,7 @@ function f(e, t) {
       "aria-disabled": m || true,
       "aria-orientation": h,
       ...S,
-      ...C
+      ...A
     }),
     labelProps: v,
     descriptionProps: I,

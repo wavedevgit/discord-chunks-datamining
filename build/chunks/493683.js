@@ -2,7 +2,7 @@
 /** chunk id: 493683, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk780384 = require("./780384.js"),
@@ -62,7 +62,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = {
+let C = {
   async openPrivateChannel(e) {
     let {
       recipientIds: t,

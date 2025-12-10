@@ -66,11 +66,11 @@ function x(e) {
 
 function L(e) {
   switch (e) {
-    case A.pNK.INTEGRATIONS:
+    case C.pNK.INTEGRATIONS:
       return R.intl.string(R.t.k7LGdh);
-    case A.pNK.ROLE_SUBSCRIPTIONS:
+    case C.pNK.ROLE_SUBSCRIPTIONS:
       return R.intl.string(R.t.bRqiqa);
-    case A.pNK.ONBOARDING:
+    case C.pNK.ONBOARDING:
       return R.intl.string(R.t.qZpU3S);
     default:
       return R.intl.string(R.t.MTIXhi)
@@ -78,7 +78,7 @@ function L(e) {
 }
 
 function j(e) {
-  return e === A.pNK.ROLE_SUBSCRIPTIONS ? R.intl.string(R.t.hZUCzd) : R.intl.string(R.t["/djIh7"])
+  return e === C.pNK.ROLE_SUBSCRIPTIONS ? R.intl.string(R.t.hZUCzd) : R.intl.string(R.t["/djIh7"])
 }
 
 function M() {
@@ -104,7 +104,7 @@ function M() {
       let {
         backToSettings: n
       } = e;
-      null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(A.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && h.Z.open(t, o), o === A.pNK.ROLE_SUBSCRIPTIONS && (0, m.GN)(t))
+      null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(C.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && h.Z.open(t, o), o === C.pNK.ROLE_SUBSCRIPTIONS && (0, m.GN)(t))
     };
   return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,

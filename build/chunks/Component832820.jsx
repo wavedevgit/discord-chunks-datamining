@@ -49,15 +49,15 @@ let b = function(e) {
     numPotions: y
   }) : h.intl.format(h.t.RiQ4ci, {
     numPotions: y
-  }) : h.intl.string(h.t.hvVgAZ), [y, b]), [A, C] = i.useState(false === s);
+  }) : h.intl.string(h.t.hvVgAZ), [y, b]), [C, A] = i.useState(false === s);
   i.useEffect(() => {
     false === s && v()
   }, [s, v]);
   let N = i.useCallback(() => {
-      C(false)
+      A(false)
     }, []),
     P = i.useCallback(e => {
-      O(e), C(false)
+      O(e), A(false)
     }, [O]),
     R = i.useCallback(() => {
       (0, f.s)({
@@ -72,7 +72,7 @@ let b = function(e) {
     className: g.bar,
     children: [(0, r.jsx)(p.Z, {
       channel: t,
-      shouldShow: A,
+      shouldShow: C,
       onRequestClose: N,
       setEmojiConfetti: P,
       positionRef: D,
@@ -80,7 +80,7 @@ let b = function(e) {
       align: "left",
       children: () => (0, r.jsxs)(o.P3F, {
         innerRef: D,
-        onClick: () => C(!A),
+        onClick: () => A(!C),
         className: g.emojiSelectContainer,
         children: [(0, r.jsx)("div", {
           className: g.emojiIconContainer,

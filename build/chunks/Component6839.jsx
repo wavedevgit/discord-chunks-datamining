@@ -119,7 +119,7 @@ let ei = e => {
       messageId: a
     } = e, [s, l] = i.useState(true), [c, u] = i.useState([]), d = i.useMemo(() => {
       if (null == c || c.length < 1) return;
-      let e = (0, A.Zn)(t, c[0], n, {
+      let e = (0, C.Zn)(t, c[0], n, {
         emojiSize: T.M.LARGE,
         messageId: a
       });
@@ -222,7 +222,7 @@ function eo(e) {
     guildId: s,
     reactionType: l,
     onRemoveReactor: c
-  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, C.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(H.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, y = (0, u.e7)([D.ZP, R.Z, j.Z], () => G.ZP.getName(s, a.id, n));
+  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, A.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(H.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, y = (0, u.e7)([D.ZP, R.Z, j.Z], () => G.ZP.getName(s, a.id, n));
 
   function O() {
     F.WO({
@@ -458,7 +458,7 @@ function ed(e) {
   } : null, m), y = i.useMemo(() => {
     var e;
     return null == g ? null : null != (e = d.find(e => (0, V.ir)(e.emoji, g.emoji))) ? e : null
-  }, [d, g]), T = (0, u.e7)([E.Z], () => E.Z.saturation), A = (0, u.e7)([N.Z], () => (0, p.wj)(N.Z.theme));
+  }, [d, g]), T = (0, u.e7)([E.Z], () => E.Z.saturation), C = (0, u.e7)([N.Z], () => (0, p.wj)(N.Z.theme));
   if (i.useEffect(() => {
       (0 === d.length || null == g && null == y) && setImmediate(a)
     }, [a, d.length, y, g]), null == g || null == y) return (0, r.jsx)(_.$jN, {});
@@ -488,7 +488,7 @@ function ed(e) {
               reactionType: n ? I.O.BURST : I.O.NORMAL,
               emoji: e.emoji,
               count: n ? e.burst_count : e.count,
-              colors: null != e.burst_colors ? (0, O.Z)(e.burst_colors, T, A) : true
+              colors: null != e.burst_colors ? (0, O.Z)(e.burst_colors, T, C) : true
             }, "".concat(n ? "burst-" : "normal-").concat(null != (t = e.emoji.id) ? t : "", ":").concat(e.emoji.name))
           })
         }), (0, r.jsx)(el, {

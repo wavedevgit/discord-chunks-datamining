@@ -534,10 +534,10 @@
                     S = 1 + (h >> 1),
                     I = [0, 0],
                     T = [],
-                    A = [],
                     C = [],
+                    A = [],
                     N = [];
-                  for (m = 0; m < 2; m++) T.push(r.float_array(S)), A.push(r.float_array(S)), C.push(r.float_array(S)), N.push(r.float_array(h));
+                  for (m = 0; m < 2; m++) T.push(r.float_array(S)), C.push(r.float_array(S)), A.push(r.float_array(S)), N.push(r.float_array(h));
                   var P = r.float_array(S),
                     R = r.float_array(S),
                     D = 0,
@@ -605,7 +605,7 @@
                       }(e - n - a) + a) * i
                     },
                     H = function(e, t, n, r, i, a) {
-                      for (var l = e % 2, c = 1 - l, u = N[c], d = I[c], f = T[c], p = A[c], _ = C[c], m = N[l], h = 1; h < m.length; h++) m[h] = t[h] * t[h] + n[h] * n[h];
+                      for (var l = e % 2, c = 1 - l, u = N[c], d = I[c], f = T[c], p = C[c], _ = A[c], m = N[l], h = 1; h < m.length; h++) m[h] = t[h] * t[h] + n[h] * n[h];
                       var g = T[l],
                         E = I[l] = function(e, t) {
                           for (var n = 0, r = 0; r < e.length; r++) e[r] > n && (n = e[r]);
@@ -621,8 +621,8 @@
                           }
                           return a
                         }(m, g),
-                        b = A[l],
-                        y = C[l];
+                        b = C[l],
+                        y = A[l];
                       if (0 != e && 0 != E) {
                         var O = 0;
                         for (G = 0; G < E; G++) {
@@ -756,7 +756,7 @@
                       }
                       o >>= 1, s >>= 1, l >>= 1
                     }
-                    for (var T, A, C = n.m_revTgt, N = 0; N < i; N++) C[N] > N && (A = t[T = C[N]], t[T] = t[N], t[N] = A, A = r[T], r[T] = r[N], r[N] = A)
+                    for (var T, C, A = n.m_revTgt, N = 0; N < i; N++) A[N] > N && (C = t[T = A[N]], t[T] = t[N], t[N] = C, C = r[T], r[T] = r[N], r[N] = C)
                   };
                   var d = t >> 1;
                   return n.unpack = function(e, r, i, a) {
@@ -1335,8 +1335,8 @@
               HAVE_FUTURE_DATA: 3,
               HAVE_ENOUGH_DATA: 4
             },
-            A = "INITIAL",
-            C = "SEEKING_END",
+            C = "INITIAL",
+            A = "SEEKING_END",
             N = "LOADED",
             P = "PRELOAD",
             R = "READY",
@@ -1362,7 +1362,7 @@
             function n(e) {
               var r;
               if ((0, i.default)(this, n), r = t.call(this), (e = e || {}).base = e.base || _.default.base, r._options = e, r._instanceId = "ogvjs" + ++n.instanceCount, true !== e.worker ? r._enableWorker = !!e.worker : r._enableWorker = !!window.Worker, !_.default.wasmSupported()) throw Error("WebAssembly not supported");
-              return r._enableThreading = !!e.threading, r._enableSIMD = !!e.simd, r._state = A, r._seekState = L, r._detectedType = null, r._canvas = document.createElement("canvas"), r._frameSink = null, r.className = r._instanceId, (0, h.default)((0, o.default)(r), T), r._view = r._canvas, r._view.style.position = "absolute", r._view.style.top = "0", r._view.style.left = "0", r._view.style.width = "100%", r._view.style.height = "100%", r._view.style.objectFit = "contain", r.appendChild(r._view), r._startTime = S(), r._codec = null, r._audioInfo = null, r._videoInfo = null, r._actionQueue = [], r._audioFeeder = null, r._muted = false, r._initialPlaybackPosition = 0, r._initialPlaybackOffset = 0, r._prebufferingAudio = false, r._initialSeekTime = 0, r._currentSrc = "", r._crossOrigin = null, r._streamEnded = false, r._mediaError = null, r._dataEnded = false, r._byteLength = 0, r._duration = null, r._lastSeenTimestamp = null, r._nextProcessingTimer, r._nextFrameTimer = null, r._loading = false, r._started = false, r._paused = true, r._ended = false, r._startedPlaybackInDocument = false, r._stream = true, r._framesProcessed = 0, r._targetPerFrameTime = 1e3 / 60, r._actualPerFrameTime = 0, r._totalFrameTime = 0, r._totalFrameCount = 0, r._playTime = 0, r._bufferTime = 0, r._drawingTime = 0, r._proxyTime = 0, r._totalJitter = 0, r._droppedAudio = 0, r._delayedAudio = 0, r._lateFrames = 0, r._poster = "", r._thumbnail = null, r._frameEndTimestamp = 0, r._audioEndTimestamp = 0, r._decodedFrames = [], r._pendingFrames = [], r._lastFrameDecodeTime = 0, r._lastFrameVideoCpuTime = 0, r._lastFrameAudioCpuTime = 0, r._lastFrameDemuxerCpuTime = 0, r._lastFrameDrawingTime = 0, r._lastFrameBufferTime = 0, r._lastFrameProxyTime = 0, r._lastVideoCpuTime = 0, r._lastAudioCpuTime = 0, r._lastDemuxerCpuTime = 0, r._lastBufferTime = 0, r._lastProxyTime = 0, r._lastDrawingTime = 0, r._lastFrameTimestamp = 0, r._currentVideoCpuTime = 0, r._lastTimeUpdate = 0, r._timeUpdateInterval = 250, r._seekTargetTime = 0, r._bisectTargetTime = 0, r._seekMode = null, r._lastSeekPosition = null, r._seekBisector = null, r._didSeek = null, r._depth = 0, r._needProcessing = false, r._pendingFrame = 0, r._pendingAudio = 0, r._framePipelineDepth = 8, r._frameParallelism = r._enableThreading ? Math.min(16, navigator.hardwareConcurrency) || 1 : 0, r._audioPipelineDepth = 12, r._videoInfo = null, r._audioInfo = null, r._width = 0, r._height = 0, r._volume = 1, r._playbackRate = 1, Object.defineProperties((0, o.default)(r), {
+              return r._enableThreading = !!e.threading, r._enableSIMD = !!e.simd, r._state = C, r._seekState = L, r._detectedType = null, r._canvas = document.createElement("canvas"), r._frameSink = null, r.className = r._instanceId, (0, h.default)((0, o.default)(r), T), r._view = r._canvas, r._view.style.position = "absolute", r._view.style.top = "0", r._view.style.left = "0", r._view.style.width = "100%", r._view.style.height = "100%", r._view.style.objectFit = "contain", r.appendChild(r._view), r._startTime = S(), r._codec = null, r._audioInfo = null, r._videoInfo = null, r._actionQueue = [], r._audioFeeder = null, r._muted = false, r._initialPlaybackPosition = 0, r._initialPlaybackOffset = 0, r._prebufferingAudio = false, r._initialSeekTime = 0, r._currentSrc = "", r._crossOrigin = null, r._streamEnded = false, r._mediaError = null, r._dataEnded = false, r._byteLength = 0, r._duration = null, r._lastSeenTimestamp = null, r._nextProcessingTimer, r._nextFrameTimer = null, r._loading = false, r._started = false, r._paused = true, r._ended = false, r._startedPlaybackInDocument = false, r._stream = true, r._framesProcessed = 0, r._targetPerFrameTime = 1e3 / 60, r._actualPerFrameTime = 0, r._totalFrameTime = 0, r._totalFrameCount = 0, r._playTime = 0, r._bufferTime = 0, r._drawingTime = 0, r._proxyTime = 0, r._totalJitter = 0, r._droppedAudio = 0, r._delayedAudio = 0, r._lateFrames = 0, r._poster = "", r._thumbnail = null, r._frameEndTimestamp = 0, r._audioEndTimestamp = 0, r._decodedFrames = [], r._pendingFrames = [], r._lastFrameDecodeTime = 0, r._lastFrameVideoCpuTime = 0, r._lastFrameAudioCpuTime = 0, r._lastFrameDemuxerCpuTime = 0, r._lastFrameDrawingTime = 0, r._lastFrameBufferTime = 0, r._lastFrameProxyTime = 0, r._lastVideoCpuTime = 0, r._lastAudioCpuTime = 0, r._lastDemuxerCpuTime = 0, r._lastBufferTime = 0, r._lastProxyTime = 0, r._lastDrawingTime = 0, r._lastFrameTimestamp = 0, r._currentVideoCpuTime = 0, r._lastTimeUpdate = 0, r._timeUpdateInterval = 250, r._seekTargetTime = 0, r._bisectTargetTime = 0, r._seekMode = null, r._lastSeekPosition = null, r._seekBisector = null, r._didSeek = null, r._depth = 0, r._needProcessing = false, r._pendingFrame = 0, r._pendingAudio = 0, r._framePipelineDepth = 8, r._frameParallelism = r._enableThreading ? Math.min(16, navigator.hardwareConcurrency) || 1 : 0, r._audioPipelineDepth = 12, r._videoInfo = null, r._audioInfo = null, r._width = 0, r._height = 0, r._volume = 1, r._playbackRate = 1, Object.defineProperties((0, o.default)(r), {
                 src: {
                   get: function() {
                     return this.getAttribute("src") || ""
@@ -1661,7 +1661,7 @@
             }, {
               key: "_stopVideo",
               value: function() {
-                this._log("STOPPING"), this._state = A, this._seekState = L, this._started = false, this._ended = false, this._frameEndTimestamp = 0, this._audioEndTimestamp = 0, this._lastFrameDecodeTime = 0, this._prebufferingAudio = false, this._actionQueue.splice(0, this._actionQueue.length), this._stream && (this._stream.abort(), this._stream = null, this._streamEnded = false), this._codec && (this._codec.close(), this._codec = null, this._pendingFrame = 0, this._pendingAudio = 0, this._dataEnded = false), this._videoInfo = null, this._audioInfo = null, this._audioFeeder && (this._audioFeeder.close(), this._audioFeeder = null), this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._nextFrameTimer && (clearTimeout(this._nextFrameTimer), this._nextFrameTimer = null), this._frameSink && (this._frameSink.clear(), this._frameSink = null), this._decodedFrames && (this._decodedFrames = []), this._pendingFrames && (this._pendingFrames = []), this._initialSeekTime = 0, this._initialPlaybackPosition = 0, this._initialPlaybackOffset = 0, this._duration = null
+                this._log("STOPPING"), this._state = C, this._seekState = L, this._started = false, this._ended = false, this._frameEndTimestamp = 0, this._audioEndTimestamp = 0, this._lastFrameDecodeTime = 0, this._prebufferingAudio = false, this._actionQueue.splice(0, this._actionQueue.length), this._stream && (this._stream.abort(), this._stream = null, this._streamEnded = false), this._codec && (this._codec.close(), this._codec = null, this._pendingFrame = 0, this._pendingAudio = 0, this._dataEnded = false), this._videoInfo = null, this._audioInfo = null, this._audioFeeder && (this._audioFeeder.close(), this._audioFeeder = null), this._nextProcessingTimer && (clearTimeout(this._nextProcessingTimer), this._nextProcessingTimer = null), this._nextFrameTimer && (clearTimeout(this._nextFrameTimer), this._nextFrameTimer = null), this._frameSink && (this._frameSink.clear(), this._frameSink = null), this._decodedFrames && (this._decodedFrames = []), this._pendingFrames && (this._pendingFrames = []), this._initialSeekTime = 0, this._initialPlaybackPosition = 0, this._initialPlaybackOffset = 0, this._duration = null
               }
             }, {
               key: "_doFrameComplete",
@@ -1848,8 +1848,8 @@
               key: "_doProcessingLoop",
               value: function() {
                 if (this._actionQueue.length) this._actionQueue.shift()();
-                else if (this._state == A) this._doProcessInitial();
-                else if (this._state == C) this._doProcessSeekingEnd();
+                else if (this._state == C) this._doProcessInitial();
+                else if (this._state == A) this._doProcessSeekingEnd();
                 else if (this._state == N) this._doProcessLoaded();
                 else if (this._state == P) this._doProcessPreload();
                 else if (this._state == R) this._doProcessReady();
@@ -1866,7 +1866,7 @@
                 var e = this;
                 if (this._codec.loadedMetadata) {
                   if (!this._codec.hasVideo && !this._codec.hasAudio) throw Error("No audio or video found, something is wrong");
-                  this._codec.hasAudio && (this._audioInfo = this._codec.audioFormat), this._codec.hasVideo && (this._videoInfo = this._codec.videoFormat, this._setupVideo()), isNaN(this._codec.duration) || (this._duration = this._codec.duration), null === this._duration && this._stream.seekable && "video/ogg" == this._detectedType ? (this._state = C, this._lastSeenTimestamp = false, this._codec.flush(function() {
+                  this._codec.hasAudio && (this._audioInfo = this._codec.audioFormat), this._codec.hasVideo && (this._videoInfo = this._codec.videoFormat, this._setupVideo()), isNaN(this._codec.duration) || (this._duration = this._codec.duration), null === this._duration && this._stream.seekable && "video/ogg" == this._detectedType ? (this._state = A, this._lastSeenTimestamp = false, this._codec.flush(function() {
                     e._seekStream(Math.max(0, e._stream.length - 131072))
                   })) : (this._state = N, this._pingProcessing())
                 } else this._codec.process(function(t) {
@@ -2021,15 +2021,15 @@
                     this._pendingAudio && (this._proxyTime += T, this._codec.audioReady ? this._pingProcessing() : this._doProcessPlayDemux())
                   } else if (r) {
                     this._log("play loop: ready to draw frame"), this._nextFrameTimer && (clearTimeout(this._nextFrameTimer), this._nextFrameTimer = null), this._thumbnail && (this.removeChild(this._thumbnail), this._thumbnail = null);
-                    var A = this._decodedFrames.shift();
-                    this._currentVideoCpuTime = A.videoCpuTime, this._drawingTime += this._time(function() {
-                      e._drawFrame(A.yCbCrBuffer)
-                    }), this._framesProcessed++, this._doFrameComplete(A), this._pingProcessing()
+                    var C = this._decodedFrames.shift();
+                    this._currentVideoCpuTime = C.videoCpuTime, this._drawingTime += this._time(function() {
+                      e._drawFrame(C.yCbCrBuffer)
+                    }), this._framesProcessed++, this._doFrameComplete(C), this._pingProcessing()
                   } else if (!this._decodedFrames.length || this._nextFrameTimer || this._prebufferingAudio)
                     if (this._dataEnded && !(this._pendingAudio || this._pendingFrame || this._decodedFrames.length)) {
                       this._log("play loop: playback reached end of data " + [this._pendingAudio, this._pendingFrame, this._decodedFrames.length]);
-                      var C = 0;
-                      this._codec.hasAudio && this._audioFeeder && (C = 1e3 * this._audioFeeder.durationBuffered), C > 0 ? (this._log("play loop: ending pending " + C + " ms"), this._pingProcessing(Math.max(0, C))) : (this._log("play loop: ENDING NOW: playback time " + this._getPlaybackTime() + "; frameEndTimestamp: " + this._frameEndTimestamp), this._stopPlayback(), this._prebufferingAudio = false, this._initialPlaybackOffset = Math.max(this._audioEndTimestamp, this._frameEndTimestamp), this._ended = true, this._paused = true, this._fireEventAsync("pause"), this._fireEventAsync("ended"))
+                      var A = 0;
+                      this._codec.hasAudio && this._audioFeeder && (A = 1e3 * this._audioFeeder.durationBuffered), A > 0 ? (this._log("play loop: ending pending " + A + " ms"), this._pingProcessing(Math.max(0, A))) : (this._log("play loop: ENDING NOW: playback time " + this._getPlaybackTime() + "; frameEndTimestamp: " + this._frameEndTimestamp), this._stopPlayback(), this._prebufferingAudio = false, this._initialPlaybackOffset = Math.max(this._audioEndTimestamp, this._frameEndTimestamp), this._ended = true, this._paused = true, this._fireEventAsync("pause"), this._fireEventAsync("ended"))
                     } else this._prebufferingAudio && (t.hasVideo && !t.frameReady || t.hasAudio && !t.audioReady) ? (this._log("play loop: prebuffering demuxing"), this._doProcessPlayDemux()) : this._log("play loop: waiting on async/timers");
                   else {
                     var N = l;
@@ -3813,7 +3813,7 @@
                 o.activeTexture(n), o.bindTexture(o.TEXTURE_2D, b[e]), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_WRAP_S, o.CLAMP_TO_EDGE), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_WRAP_T, o.CLAMP_TO_EDGE), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_MIN_FILTER, o.LINEAR), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_MAG_FILTER, o.LINEAR), o.uniform1i(o.getUniformLocation(t, e), r)
               }
 
-              function A(e, t) {
+              function C(e, t) {
                 var n = s(o.VERTEX_SHADER, e),
                   r = s(o.FRAGMENT_SHADER, t),
                   i = o.createProgram();
@@ -3828,11 +3828,11 @@
                   y = !t || e.width !== b.displayWidth || e.height !== b.displayHeight;
                 if (y && (e.width = b.displayWidth, e.height = b.displayHeight, a.clear()), t || function() {
                     if (i.stripe) {
-                      n = A(r.vertexStripe, r.fragmentStripe), o.getAttribLocation(n, "aPosition"), u = o.createBuffer();
+                      n = C(r.vertexStripe, r.fragmentStripe), o.getAttribLocation(n, "aPosition"), u = o.createBuffer();
                       var e = new Float32Array([0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1]);
                       o.bindBuffer(o.ARRAY_BUFFER, u), o.bufferData(o.ARRAY_BUFFER, e, o.STATIC_DRAW), d = o.getAttribLocation(n, "aTexturePosition"), f = o.getUniformLocation(n, "uStripe"), p = o.getUniformLocation(n, "uTexture")
                     }
-                    t = A(r.vertex, r.fragment), l = o.createBuffer(), o.bindBuffer(o.ARRAY_BUFFER, l), o.bufferData(o.ARRAY_BUFFER, E, o.STATIC_DRAW), c = o.getAttribLocation(t, "aPosition"), _ = o.createBuffer(), m = o.getAttribLocation(t, "aLumaPosition"), h = o.createBuffer(), g = o.getAttribLocation(t, "aChromaPosition")
+                    t = C(r.vertex, r.fragment), l = o.createBuffer(), o.bindBuffer(o.ARRAY_BUFFER, l), o.bufferData(o.ARRAY_BUFFER, E, o.STATIC_DRAW), c = o.getAttribLocation(t, "aPosition"), _ = o.createBuffer(), m = o.getAttribLocation(t, "aLumaPosition"), h = o.createBuffer(), g = o.getAttribLocation(t, "aChromaPosition")
                   }(), y) {
                   var O = function(e, t, n) {
                     var r = b.cropLeft / n,
@@ -3907,19 +3907,19 @@
                   S = 0,
                   I = 0,
                   T = 0,
-                  A = 0,
                   C = 0,
+                  A = 0,
                   N = 0,
                   P = 0,
                   R = 0,
                   D = 0;
                 if (1 == a && 1 == o)
                   for (y = 0, O = p, D = 0, P = 0; P < i; P += 2) {
-                    for (h = (m = P * u | 0) + u | 0, g = D * d | 0, E = D * f | 0, N = 0; N < r; N += 2) v = 0 | l[g++], T = (409 * (S = 0 | c[E++]) | 0) - 57088 | 0, A = (100 * v | 0) + (208 * S | 0) - 34816 | 0, C = (516 * v | 0) - 70912 | 0, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - A >> 8, n[y + 2] = I + C >> 8, y += 4, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - A >> 8, n[y + 2] = I + C >> 8, y += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - A >> 8, n[O + 2] = I + C >> 8, O += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - A >> 8, n[O + 2] = I + C >> 8, O += 4;
+                    for (h = (m = P * u | 0) + u | 0, g = D * d | 0, E = D * f | 0, N = 0; N < r; N += 2) v = 0 | l[g++], T = (409 * (S = 0 | c[E++]) | 0) - 57088 | 0, C = (100 * v | 0) + (208 * S | 0) - 34816 | 0, A = (516 * v | 0) - 70912 | 0, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - C >> 8, n[y + 2] = I + A >> 8, y += 4, I = 298 * s[m++] | 0, n[y] = I + T >> 8, n[y + 1] = I - C >> 8, n[y + 2] = I + A >> 8, y += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - C >> 8, n[O + 2] = I + A >> 8, O += 4, I = 298 * s[h++] | 0, n[O] = I + T >> 8, n[O + 1] = I - C >> 8, n[O + 2] = I + A >> 8, O += 4;
                     y += p, O += p, D++
                   } else
                     for (b = 0, P = 0; P < i; P++)
-                      for (R = 0, _ = P * u | 0, g = (D = P >> o) * d | 0, E = D * f | 0, N = 0; N < r; N++) v = 0 | l[g + (R = N >> a)], T = (409 * (S = 0 | c[E + R]) | 0) - 57088 | 0, A = (100 * v | 0) + (208 * S | 0) - 34816 | 0, C = (516 * v | 0) - 70912 | 0, I = 298 * s[_++] | 0, n[b] = I + T >> 8, n[b + 1] = I - A >> 8, n[b + 2] = I + C >> 8, b += 4
+                      for (R = 0, _ = P * u | 0, g = (D = P >> o) * d | 0, E = D * f | 0, N = 0; N < r; N++) v = 0 | l[g + (R = N >> a)], T = (409 * (S = 0 | c[E + R]) | 0) - 57088 | 0, C = (100 * v | 0) + (208 * S | 0) - 34816 | 0, A = (516 * v | 0) - 70912 | 0, I = 298 * s[_++] | 0, n[b] = I + T >> 8, n[b + 1] = I - C >> 8, n[b + 2] = I + A >> 8, b += 4
               }
             }
           }()

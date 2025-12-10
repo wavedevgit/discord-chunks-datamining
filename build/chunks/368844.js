@@ -4,7 +4,7 @@
 require.d(exports, {
   Ah: () => O,
   CB: () => D,
-  aU: () => C,
+  aU: () => A,
   cp: () => w,
   eL: () => P,
   vg: () => R,
@@ -137,18 +137,18 @@ function T(e) {
     switch (e.type) {
       case a.re.THUMBNAIL:
         var t;
-        return A(e.media, null != (t = e.spoiler) && t);
+        return C(e.media, null != (t = e.spoiler) && t);
       case a.re.MEDIA_GALLERY:
         return e.items.map(e => {
           var t;
-          return A(e.media, null != (t = e.spoiler) && t)
+          return C(e.media, null != (t = e.spoiler) && t)
         })
     }
     return null
   }).filter(_.lm) : []
 }
 
-function A(e, t) {
+function C(e, t) {
   var n, r, a;
   let o = (0, s.hg)(e);
   return "INVALID" === o ? null : {
@@ -166,7 +166,7 @@ function A(e, t) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = N(e, n);
   return r.useMemo(() => {

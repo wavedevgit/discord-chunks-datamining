@@ -1,7 +1,7 @@
 /** Chunk was on 98920 **/
 /** chunk id: 826078, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => I
 }), require("./953529.js"), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,70 +40,70 @@ function E(e) {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.MULTIKILL:
         return (0, l.jsx)(d.r7p, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.DEATH:
         return (0, l.jsx)(d.yDF, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.ASSIST:
         return (0, l.jsx)(d.V9, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.ITEM:
         return (0, l.jsx)(d.r7p, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.VICTORY:
         return (0, l.jsx)(d.rm8, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.DEFEAT:
         return (0, l.jsx)(d.U65, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.LEVEL_UP:
         return (0, l.jsx)(d.BRu, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.TREASURE:
         return (0, l.jsx)(d.T$Z, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       case b.x0.OBJECTIVE_KILL:
         return (0, l.jsx)(d.pgN, {
           size: "custom",
           width: o,
           height: o,
-          color: d.TVs.colors.ICON_PRIMARY
+          color: d.TVs.colors.ICON_STRONG
         });
       default:
         return null
@@ -111,7 +111,7 @@ function E(e) {
   }, [t, o]);
   if (null == m) return null;
   let h = (0, l.jsx)("div", {
-    className: N.timelineIcon,
+    className: k.timelineIcon,
     style: i,
     children: m
   });
@@ -127,7 +127,7 @@ function E(e) {
   }) : h
 }
 
-function w(e) {
+function S(e) {
   let {
     videoLength: t,
     clip: n,
@@ -168,38 +168,38 @@ function w(e) {
     }
   }, [t]);
   return (0, l.jsx)("div", {
-    className: N.numberTimeline,
+    className: k.numberTimeline,
     onMouseDown: i,
     children: (0, l.jsxs)("div", {
-      className: N.numberTimelineTrack,
+      className: k.numberTimelineTrack,
       children: [s.map((e, t) => (0, l.jsx)("div", {
-        className: N.timeSubNotch,
+        className: k.timeSubNotch,
         style: {
           left: "".concat(e.position, "%")
         },
         children: (0, l.jsx)("div", {
-          className: N.timeSubNotchTick
+          className: k.timeSubNotchTick
         })
       }, "sub-".concat(t))), r.map((e, t) => (0, l.jsxs)("div", {
-        className: N.timeNotch,
+        className: k.timeNotch,
         style: {
           left: "".concat(e.position, "%")
         },
         children: [(0, l.jsx)("div", {
-          className: N.timeNotchTick
+          className: k.timeNotchTick
         }), (0, l.jsxs)(d.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          className: N.timeNotchLabel,
+          className: k.timeNotchLabel,
           children: [Math.round(e.time), "s"]
         })]
-      }, t)), (0, l.jsx)(S, {
-        clip: n,
-        videoLength: t
-      }), (0, l.jsx)(I, {
+      }, t)), (0, l.jsx)(w, {
         clip: n,
         videoLength: t
       }), (0, l.jsx)(O, {
+        clip: n,
+        videoLength: t
+      }), (0, l.jsx)(T, {
         clip: n,
         videoLength: t
       })]
@@ -207,7 +207,7 @@ function w(e) {
   })
 }
 
-function S(e) {
+function w(e) {
   var t, n;
   let {
     clip: i,
@@ -238,7 +238,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function O(e) {
   var t, n;
   let {
     clip: i,
@@ -264,7 +264,7 @@ function I(e) {
         body: null != s ? s : "",
         position: "top",
         children: (0, l.jsx)("div", {
-          className: N.timelineIcon,
+          className: k.timelineIcon,
           style: {
             left: "".concat(i, "%")
           },
@@ -280,7 +280,7 @@ function I(e) {
   })
 }
 
-function O(e) {
+function T(e) {
   var t, n;
   let {
     clip: i,
@@ -298,11 +298,11 @@ function O(e) {
     children: s.map((e, t) => {
       let n = o(e.timestamp);
       return null == n ? null : (0, l.jsx)(u.i, {
-        title: k.intl.string(k.t.mIkeS2),
+        title: C.intl.string(C.t.mIkeS2),
         body: e.signal.text,
         position: "top",
         children: (0, l.jsx)("div", {
-          className: N.timelineIcon,
+          className: k.timelineIcon,
           style: {
             left: "".concat(n, "%")
           },
@@ -310,14 +310,14 @@ function O(e) {
             size: "custom",
             width: 20,
             height: 20,
-            color: d.TVs.colors.ICON_PRIMARY
+            color: d.TVs.colors.ICON_STRONG
           })
         })
       }, "".concat(e.timestamp, "-").concat(t))
     })
   })
 }
-let T = function(e) {
+let I = function(e) {
   let {
     sourceURL: t,
     clip: n,
@@ -330,37 +330,37 @@ let T = function(e) {
     cropEnd: g,
     cropDuration: b,
     setCropStart: E,
-    setCropEnd: S,
-    play: I,
-    pause: O,
-    subscribe: T,
-    seek: A
-  } = (0, y.D)(), L = u(), M = a.useRef(null), [D, U] = a.useState(false), [Z, z] = a.useState(null), B = a.useRef(null), V = a.useRef(null), [F, _] = a.useState(false), [Y, K] = a.useState(null);
-  a.useEffect(() => T({
+    setCropEnd: w,
+    play: O,
+    pause: T,
+    subscribe: I,
+    seek: P
+  } = (0, y.D)(), A = u(), M = a.useRef(null), [D, U] = a.useState(false), [Z, z] = a.useState(null), B = a.useRef(null), V = a.useRef(null), [F, G] = a.useState(false), [_, K] = a.useState(null);
+  a.useEffect(() => I({
     onPlay: () => {
-      z(null), _(false)
+      z(null), G(false)
     }
-  }), [T]);
+  }), [I]);
   let {
     ref: W,
     width: H = 0,
-    height: G = 0
-  } = (0, h.ZP)(), q = (0, o.e7)([v.Z], () => v.Z.windowSize());
+    height: q = 0
+  } = (0, h.ZP)(), Y = (0, o.e7)([v.Z], () => v.Z.windowSize());
   a.useMemo(() => {
-    q.width, q.height;
+    Y.width, Y.height;
     let e = W.current;
     null != e && K(e.getBoundingClientRect())
-  }, [q.width, q.height, H, W]);
+  }, [Y.width, Y.height, H, W]);
   let J = a.useRef(null),
     X = a.useRef({}),
     $ = a.useCallback((e, t) => {
       if (null == c) return;
-      if (null == Y) return null;
-      let n = ((0, s.clamp)(e, Y.left, Y.right) - Y.left) / Y.width * c,
+      if (null == _) return null;
+      let n = ((0, s.clamp)(e, _.left, _.right) - _.left) / _.width * c,
         l = (0, s.clamp)(n, 0, c),
         a = Z;
-      null == a && t && (a = l <= f ? "start" : l >= g ? "end" : "playhead", m && (O(), _(true)), z(a)), "start" === a ? E(l) : "end" === a ? S(l) : "playhead" === a && A((0, s.clamp)(l, f, g))
-    }, [c, Y, Z, f, g, m, O, E, S, A]),
+      null == a && t && (a = l <= f ? "start" : l >= g ? "end" : "playhead", m && (T(), G(true)), z(a)), "start" === a ? E(l) : "end" === a ? w(l) : "playhead" === a && P((0, s.clamp)(l, f, g))
+    }, [c, _, Z, f, g, m, T, E, w, P]),
     Q = a.useCallback(e => {
       if (null == c) return;
       let t = (0, x.Z)(c, e.shiftKey),
@@ -380,13 +380,13 @@ let T = function(e) {
         n = false;
       switch (e.key) {
         case "ArrowLeft":
-          n = true, S(g - t);
+          n = true, w(g - t);
           break;
         case "ArrowRight":
-          n = true, S(g + t)
+          n = true, w(g + t)
       }
       n && (e.stopPropagation(), e.preventDefault())
-    }, [c, S, g]),
+    }, [c, w, g]),
     et = a.useCallback(e => {
       $(e.clientX, true)
     }, [$]),
@@ -394,8 +394,8 @@ let T = function(e) {
       $(e.clientX, false)
     }, [$]),
     el = a.useCallback(() => {
-      F && I(), _(false), z(null)
-    }, [F, I]);
+      F && O(), G(false), z(null)
+    }, [F, O]);
   a.useEffect(() => (document.addEventListener("mousemove", en), document.addEventListener("mouseup", el), () => {
     document.removeEventListener("mousemove", en), document.removeEventListener("mouseup", el)
   }), [en, el]), a.useEffect(() => {
@@ -404,15 +404,15 @@ let T = function(e) {
       let t = W.current,
         n = M.current;
       if (null == t || null == n || !D) return;
-      t.height = G, t.width = H;
+      t.height = q, t.width = H;
       let l = t.getContext("2d");
       if (null == l) return;
-      l.fillStyle = "#000", l.fillRect(0, 0, H, G);
-      let a = Math.ceil(G * (n.videoWidth / n.videoHeight)),
+      l.fillStyle = "#000", l.fillRect(0, 0, H, q);
+      let a = Math.ceil(q * (n.videoWidth / n.videoHeight)),
         i = Math.ceil(H / a),
         r = J.current;
       if (null == r) return;
-      r.width = a, r.height = G;
+      r.width = a, r.height = q;
       let s = null == r ? true : r.getContext("2d", {
         willReadFrequently: true
       });
@@ -424,114 +424,114 @@ let T = function(e) {
       }
       for (let e = 0; e < i; e++) await new Promise(t => {
         n.onseeked = () => {
-          l.drawImage(n, a * e, 0, a, G), s.drawImage(n, 0, 0, a, G);
-          let r = s.getImageData(0, 0, a, G);
+          l.drawImage(n, a * e, 0, a, q), s.drawImage(n, 0, 0, a, q);
+          let r = s.getImageData(0, 0, a, q);
           null == o[i] && (o[i] = []), o[i][e] = r, t()
         }, n.currentTime = a / H * c * e
       })
     }()
-  }, [H, G, W, c, J, D]);
-  let ea = L - f,
+  }, [H, q, W, c, J, D]);
+  let ea = A - f,
     ei = a.useCallback(() => {
-      A(Math.max(f, L - 10))
-    }, [f, L, A]),
+      P(Math.max(f, A - 10))
+    }, [f, A, P]),
     er = a.useCallback(() => {
-      A(Math.min(g, L + 10))
-    }, [g, L, A]),
+      P(Math.min(g, A + 10))
+    }, [g, A, P]),
     es = a.useCallback(() => {
-      m ? O() : I()
-    }, [m, I, O]),
+      m ? T() : O()
+    }, [m, O, T]),
     eo = a.useCallback(() => U(true), []);
   return (0, l.jsx)("div", {
-    className: N.centeringWrapper,
+    className: k.centeringWrapper,
     children: (0, l.jsxs)("div", {
-      className: N.timelineWrapper,
+      className: k.timelineWrapper,
       children: [(0, l.jsxs)("div", {
-        className: N.timelineHeader,
+        className: k.timelineHeader,
         children: [(0, l.jsx)("div", {
-          className: N.timePillContainer,
+          className: k.timePillContainer,
           children: (0, l.jsx)("div", {
             ref: V,
-            className: N.timePillBackground,
+            className: k.timePillBackground,
             children: (0, l.jsxs)(d.Text, {
               variant: "text-sm/normal",
-              className: N.timePillText,
+              className: k.timePillText,
               color: "text-muted",
               children: [R(ea), (0, l.jsx)("span", {
-                className: N.slashCharacter,
+                className: k.slashCharacter,
                 children: " / "
               }), R(b)]
             })
           })
         }), (0, l.jsxs)("div", {
-          className: N.playPauseButtonWrapper,
+          className: k.playPauseButtonWrapper,
           children: [(0, l.jsx)(d.hU, {
             size: "md",
             variant: "secondary",
             icon: d.dTc,
             onClick: ei,
-            "aria-label": k.intl.string(k.t.r9s3Uv)
+            "aria-label": C.intl.string(C.t.r9s3Uv)
           }), (0, l.jsx)(d.hU, {
             size: "md",
             icon: m ? d.fpf : d.o1U,
             onClick: es,
-            "aria-label": k.intl.string(m ? k.t.ZcgDJX : k.t.RscU7I)
+            "aria-label": C.intl.string(m ? C.t.ZcgDJX : C.t.RscU7I)
           }), (0, l.jsx)(d.hU, {
             size: "md",
             variant: "secondary",
             icon: d.o_L,
             onClick: er,
-            "aria-label": k.intl.string(k.t.zWDcNP)
+            "aria-label": C.intl.string(C.t.zWDcNP)
           })]
         })]
       }), (0, l.jsx)(j.Z, {
         onMouseDown: et,
         voiceAudioTracks: i,
         clipId: n.id,
-        className: N.waveform
-      }), (0, l.jsx)(w, {
+        className: k.waveform
+      }), (0, l.jsx)(S, {
         onMouseDown: et,
         videoLength: c,
         clip: n
       }), (0, l.jsx)("div", {
-        className: N.timelineContainer,
+        className: k.timelineContainer,
         children: (0, l.jsxs)("div", {
-          className: r()(N.timeline, {
-            [N.timelineDragging]: null != Z
+          className: r()(k.timeline, {
+            [k.timelineDragging]: null != Z
           }),
           onMouseDown: et,
           children: [(0, l.jsx)("canvas", {
-            className: N.hiddenCanvas,
+            className: k.hiddenCanvas,
             ref: J
           }), (0, l.jsx)("canvas", {
-            className: N.timelineBackground,
+            className: k.timelineBackground,
             ref: W
           }), (0, l.jsx)(d.tEY, {
             children: (0, l.jsx)("div", {
               tabIndex: 0,
               ref: B,
-              className: N.playhead,
+              className: k.playhead,
               style: {
-                left: null != c && c > 0 ? "".concat(L / c * 100, "%") : 0
+                left: null != c && c > 0 ? "".concat(A / c * 100, "%") : 0
               }
             })
           }), (0, l.jsx)(p.Z, {
             preload: "auto",
-            className: N.timelineVideo,
+            className: k.timelineVideo,
             ref: M,
             src: t,
             muted: true,
             onLoadedMetadata: eo
           }), (0, l.jsxs)("div", {
-            className: N.dragBox,
+            className: k.dragBox,
             style: {
               left: null != c ? "".concat(f / c * 100, "%") : "0",
               right: null != c ? "".concat((c - g) / c * 100, "%") : "0"
             },
             children: [(0, l.jsx)(d.tEY, {
               children: (0, l.jsx)("button", {
-                className: r()(N.dragHandleLeft, {
-                  [N.dragging]: "start" === Z
+                className: r()(k.dragHandleLeft, {
+                  [k.dragging]: "start" === Z
                 }),
                 onMouseDown: et,
                 onKeyDown: Q,
@@ -539,29 +539,29 @@ let T = function(e) {
                 tabIndex: 0,
                 "aria-valuemin": 0,
                 "aria-valuenow": f,
-                "aria-valuetext": P(f),
-                "aria-valuemax": g - C.Hp,
-                "aria-label": k.intl.string(k.t["+BTvw8"]),
+                "aria-valuetext": L(f),
+                "aria-valuemax": g - N.Hp,
+                "aria-label": C.intl.string(C.t["+BTvw8"]),
                 children: (0, l.jsx)("div", {
-                  className: N.cropLeftArrow
+                  className: k.cropLeftArrow
                 })
               })
             }), (0, l.jsx)(d.tEY, {
               children: (0, l.jsx)("button", {
-                className: r()(N.dragHandleRight, {
-                  [N.dragging]: "end" === Z
+                className: r()(k.dragHandleRight, {
+                  [k.dragging]: "end" === Z
                 }),
                 onMouseDown: et,
                 onKeyDown: ee,
                 role: "slider",
                 tabIndex: 0,
-                "aria-valuemin": f + C.Hp,
+                "aria-valuemin": f + N.Hp,
                 "aria-valuenow": g,
-                "aria-valuetext": P(g),
+                "aria-valuetext": L(g),
                 "aria-valuemax": c,
-                "aria-label": k.intl.string(k.t.bBgBYo),
+                "aria-label": C.intl.string(C.t.bBgBYo),
                 children: (0, l.jsx)("div", {
-                  className: N.cropRightArrow
+                  className: k.cropRightArrow
                 })
               })
             })]
@@ -580,12 +580,12 @@ function R(e) {
   return t = t < 10 ? "0" + t : t, n = n < 10 ? "0" + n : n, l = l < 10 ? "0" + l : l, "".concat(t, ":").concat(n, ".").concat(l)
 }
 
-function P(e) {
+function L(e) {
   let t = Math.floor(e / 60),
-    n = k.intl.formatToPlainString(k.t.iXLF9W, {
+    n = C.intl.formatToPlainString(C.t.iXLF9W, {
       minutes: t
     }),
-    l = k.intl.formatToPlainString(k.t.geSp4K, {
+    l = C.intl.formatToPlainString(C.t.geSp4K, {
       seconds: e % 60
     });
   return "".concat(n, " ").concat(l)

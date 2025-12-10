@@ -109,7 +109,7 @@ function T(e) {
     }
   })
 }
-class A extends Chunk473749.Component {
+class C extends Chunk473749.Component {
   render() {
     var e;
     return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk54381.jsx)(T, {
@@ -121,7 +121,7 @@ class A extends Chunk473749.Component {
     })
   }
 }
-class C extends Chunk473749.Component {
+class A extends Chunk473749.Component {
   componentDidMount() {
     Chunk358085.isPlatformEmbedded && Chunk998502.ZP.focus()
   }
@@ -156,7 +156,7 @@ class C extends Chunk473749.Component {
         text: Chunk388032.intl.string(Chunk388032.t["TY+auE"]),
         onClick: this.handleSubmit
       }],
-      children: [(0, Chunk54381.jsx)(A, {
+      children: [(0, Chunk54381.jsx)(C, {
         upload: module
       }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 24,
@@ -232,7 +232,7 @@ class C extends Chunk473749.Component {
 }
 
 function N(e) {
-  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(C, v(y({}, e), {
+  return e.upload.item.platform !== d.ow.WEB ? null : (0, r.jsx)(A, v(y({}, e), {
     file: e.upload.item.file
   }))
 }

@@ -140,18 +140,18 @@ function P(e) {
     icon: b
   } = D(null == (a = l.client_info) ? true : a.os), O = c ? null : (0, m.p)(l.approx_last_used_time), v = [E, g].filter(y.lm), S = [h, O].filter(y.lm);
   return (0, r.jsxs)("div", {
-    className: o()(C.session, c ? C.currentSession : null),
+    className: o()(A.session, c ? A.currentSession : null),
     children: [(0, r.jsx)("div", {
-      className: C.sessionIcon,
+      className: A.sessionIcon,
       children: (0, r.jsx)(b, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: C.sessionInfo,
+      className: A.sessionInfo,
       children: [(0, r.jsxs)(d.Text, {
         variant: "eyebrow",
-        className: C.sessionInfoRow,
+        className: A.sessionInfoRow,
         children: [(0, r.jsx)("span", {
           children: v[0]
         }), v.length > 1 && (0, r.jsxs)(r.Fragment, {
@@ -163,7 +163,7 @@ function P(e) {
         })]
       }), (0, r.jsxs)(d.Text, {
         variant: "text-sm/medium",
-        className: C.sessionInfoRow,
+        className: A.sessionInfoRow,
         children: [(0, r.jsx)("span", {
           children: S[0]
         }), S.length > 1 && (0, r.jsxs)(r.Fragment, {
@@ -175,7 +175,7 @@ function P(e) {
         })]
       })]
     }), c ? null : p ? (0, r.jsx)("div", {
-      className: C.sessionCheckbox,
+      className: A.sessionCheckbox,
       children: (0, r.jsx)(d.Cnq, {
         onChange: e => {
           null == u || u(e)
@@ -183,11 +183,11 @@ function P(e) {
         checked: f
       })
     }) : (0, r.jsx)(d.P3F, {
-      className: C.sessionMoreButton,
+      className: A.sessionMoreButton,
       onClick: e => {
         e.shiftKey ? null == u || u(true) : (0, _.L$)(l.id_hash)
       },
-      "aria-label": A.intl.string(A.t.E4MJNt),
+      "aria-label": C.intl.string(C.t.E4MJNt),
       children: (0, r.jsx)(d.Dio, {
         size: "md",
         color: "currentColor"
@@ -237,7 +237,7 @@ function D(e) {
     case true:
     case "":
       return {
-        text: A.intl.string(A.t.cDHCNY), icon: d.pzj
+        text: C.intl.string(C.t.cDHCNY), icon: d.pzj
       };
     case "ios":
     case "android":

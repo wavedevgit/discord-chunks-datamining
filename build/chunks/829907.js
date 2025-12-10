@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   DH: () => P,
-  H8: () => A,
+  H8: () => C,
   HD: () => f,
   O0: () => _,
   PD: () => R,
@@ -114,11 +114,11 @@ function T(e) {
   return null != n && O.has(n)
 }
 
-function A(e) {
+function C(e) {
   let t = a.ZP.getGameOrTransformedSubgameForPID(e);
   return null != t && null != t.name && T(t)
 }
-let C = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
+let A = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
 
 function N(e) {
   let t = Object.keys(e).map(Number).sort((e, t) => t - e);
@@ -130,7 +130,7 @@ function P(e, t, n) {
   if (!n) returntrue;
   switch (t) {
     case r.Jx.UNKNOWN:
-      return C.has(N(e.fullscreenHistory));
+      return A.has(N(e.fullscreenHistory));
     case r.Jx.FULLSCREEN:
       returntrue
   }

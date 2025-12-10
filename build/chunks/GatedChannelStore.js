@@ -50,7 +50,7 @@ function T(e) {
   return !!(0, u.Z)(n) && !!(r || (0, u.h)(null != n ? n : true) || I(n, t))
 }
 
-function A(e, t) {
+function C(e, t) {
   if (!t.features.has(y.GuildFeatures.CREATOR_MONETIZABLE) && !t.features.has(y.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) returnfalse;
   let n = f.Z.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
@@ -77,7 +77,7 @@ function A(e, t) {
   returnfalse
 }
 
-function C(e) {
+function A(e) {
   let t = E.Z.getGuild(e);
   if (null == t) return;
   let n = v[e] = new Set;
@@ -85,7 +85,7 @@ function C(e) {
   let r = m.Z.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
     let i = r[e];
-    A(i, t) && n.add(i.id)
+    C(i, t) && n.add(i.id)
   }
 }
 
@@ -97,7 +97,7 @@ function N(e, t) {
   let i = E.Z.getGuild(r.getGuildId());
   if (null == i) returnfalse;
   let a = n.has(t),
-    o = A(r, i);
+    o = C(r, i);
   return a !== o && (o ? n.add(t) : n.delete(t), true)
 }
 
@@ -157,7 +157,7 @@ class M extends(r = Chunk442837.ZP.Store) {
   isChannelGated(e, t) {
     if (null == e) returnfalse;
     let n = v[e];
-    return null == n && (C(e), n = v[e]), null != n && n.has(t)
+    return null == n && (A(e), n = v[e]), null != n && n.has(t)
   }
   isChannelGatedAndVisible(e, t) {
     return null != e && this.isChannelGated(e, t) && !S.has(e)

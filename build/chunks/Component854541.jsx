@@ -81,9 +81,9 @@ function S(e, t) {
 }
 let I = Chunk473749.lazy(() => Promise.all([require.e("66382"), require.e("28102")]).then(require.bind(require, 534828))),
   T = 7,
-  A = () => Promise.resolve();
+  C = () => Promise.resolve();
 
-function C(e) {
+function A(e) {
   return null == e ? null : "string" == typeof e ? (0, c.FX)(e) ? (0, c._i)(e) : null : e
 }
 
@@ -111,8 +111,8 @@ function N(e) {
   } else T = {
     backgroundColor: null != t ? (0, c.Rf)(t) : f.backgroundColor
   };
-  let A = h ? y : t,
-    C = false;
+  let C = h ? y : t,
+    A = false;
 
   function N() {
     let e = 16,
@@ -121,10 +121,10 @@ function N(e) {
       size: "custom",
       width: e,
       height: t,
-      color: C ? d.Z.colors.WHITE.css : d.Z.colors.BLACK.css
+      color: A ? d.Z.colors.WHITE.css : d.Z.colors.BLACK.css
     })
   }
-  return i && !a ? C = true : (i || a) && (C = (0, c.Bd)(null != A ? A : m.p6O) > .2), (0, r.jsx)(u.tEY, {
+  return i && !a ? A = true : (i || a) && (A = (0, c.Bd)(null != C ? C : m.p6O) > .2), (0, r.jsx)(u.tEY, {
     offset: false,
     children: (0, r.jsxs)("button", O(b({
       type: "button",
@@ -148,7 +148,7 @@ function N(e) {
         className: g.colorPickerDropper,
         width: 14,
         height: 14,
-        color: C ? d.Z.colors.WHITE.css : d.Z.colors.BLACK.css
+        color: A ? d.Z.colors.WHITE.css : d.Z.colors.BLACK.css
       }) : null, N()]
     }))
   })
@@ -202,7 +202,7 @@ function D(e) {
     showEyeDropper: E,
     wrapperComponentType: y,
     className: v
-  } = e, S = (0, _.Z)(), A = C(t), N = null != A ? A : 0, P = (0, c.Rf)(N), R = (0, c.O)(N), [D, w] = i.useState({
+  } = e, S = (0, _.Z)(), C = A(t), N = null != C ? C : 0, P = (0, c.Rf)(N), R = (0, c.O)(N), [D, w] = i.useState({
     current: N,
     pending: {
       hex: P,
@@ -211,18 +211,18 @@ function D(e) {
     input: P
   });
   i.useEffect(() => {
-    if (null == A || A === D.current) return;
-    let e = (0, c.Rf)(A),
-      t = (0, c.O)(A);
+    if (null == C || C === D.current) return;
+    let e = (0, c.Rf)(C),
+      t = (0, c.O)(C);
     w({
-      current: A,
+      current: C,
       pending: {
         hex: e,
         hsl: t
       },
       input: e
     })
-  }, [A, D]), i.useEffect(() => s, [s]);
+  }, [C, D]), i.useEffect(() => s, [s]);
   let x = e => {
       let t = "#" === e[0] ? e : "#".concat(e);
       if (!(0, c.FX)(t)) return void w(e => O(b({}, e), {
@@ -332,11 +332,11 @@ function x(e) {
       disabled: d,
       isGradient: false
     }, e))
-  }), T = a.slice(0, a.length / 2), C = a.slice(a.length / 2, a.length), P = (0, l.ZP)({
+  }), T = a.slice(0, a.length / 2), A = a.slice(a.length / 2, a.length), P = (0, l.ZP)({
     id: "color-picker",
     isEnabled: true,
-    scrollToStart: A,
-    scrollToEnd: A
+    scrollToStart: C,
+    scrollToEnd: C
   });
   return (0, r.jsx)(s.bG, {
     navigator: P,
@@ -378,7 +378,7 @@ function x(e) {
               disabled: d
             })
           }), (0, r.jsxs)("div", {
-            children: [I(T), I(C)]
+            children: [I(T), I(A)]
           })]
         }))
       }

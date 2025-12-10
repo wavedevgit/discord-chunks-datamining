@@ -2,7 +2,7 @@
 /** chunk id: 950796, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dg: () => A,
+  Dg: () => C,
   On: () => E,
   TF: () => T,
   Y7: () => b
@@ -104,7 +104,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     fixed: t = false,
     show: n,

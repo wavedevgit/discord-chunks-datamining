@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   hQ: () => T,
-  lo: () => C,
+  lo: () => A,
   yn: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -108,8 +108,8 @@ function T(e) {
     "aria-label": O,
     multiSelect: v = false,
     autoFocus: T = false,
-    maxVisibleItems: A = 5,
-    itemToString: C = S,
+    maxVisibleItems: C = 5,
+    itemToString: A = S,
     emptyStateText: N,
     emptyStateHeader: P,
     onQueryChange: R
@@ -207,11 +207,11 @@ function T(e) {
                 activeDescendant: j,
                 selected: a,
                 setSelected: p,
-                itemToString: C
+                itemToString: A
               },
               children: (0, r.jsx)(u.Tvr, h(_({}, s), {
                 style: {
-                  maxHeight: A * (y + 6)
+                  maxHeight: C * (y + 6)
                 },
                 "aria-multiselectable": v,
                 id: k,
@@ -235,9 +235,9 @@ function T(e) {
     })
   })
 }
-let A = Chunk473749.createContext(null);
+let C = Chunk473749.createContext(null);
 
-function C(e) {
+function A(e) {
   var t, {
       value: n,
       children: a,
@@ -250,7 +250,7 @@ function C(e) {
     selected: m,
     setSelected: E,
     itemToString: y
-  } = i.useContext(I), v = y(n), S = p === v, T = null != (t = null == d ? true : d.selected) ? t : m.has(n), C = (0, l.JA)(v);
+  } = i.useContext(I), v = y(n), S = p === v, T = null != (t = null == d ? true : d.selected) ? t : m.has(n), A = (0, l.JA)(v);
   return (0, r.jsx)(u.P3F, h(_({
     tag: "li",
     id: v,
@@ -261,17 +261,17 @@ function C(e) {
       [c]: T,
       [f.disabled]: s
     })
-  }, C), {
+  }, A), {
     role: "option",
     "aria-selected": T,
     "aria-disabled": s,
-    children: (0, r.jsx)(A.Provider, {
+    children: (0, r.jsx)(C.Provider, {
       value: n,
       children: a
     })
   }))
 }
-C.Colors = O, C.Label = function(e) {
+A.Colors = O, A.Label = function(e) {
   let {
     children: t
   } = e;
@@ -279,7 +279,7 @@ C.Colors = O, C.Label = function(e) {
     className: f.itemLabel,
     children: t
   })
-}, C.Icon = function(e) {
+}, A.Icon = function(e) {
   let {
     children: t
   } = e;
@@ -287,22 +287,22 @@ C.Colors = O, C.Label = function(e) {
     className: f.itemCheckbox,
     children: t
   })
-}, C.Checkbox = function(e) {
+}, A.Checkbox = function(e) {
   let {
     checked: t
   } = e, {
     selected: n
-  } = i.useContext(I), a = i.useContext(A);
+  } = i.useContext(I), a = i.useContext(C);
   return (0, r.jsx)("span", {
     className: f.itemCheckbox,
     children: (0, r.jsx)(u.FZ5, {
       checked: null != t ? t : null != a && n.has(a)
     })
   })
-}, C.Checkmark = function() {
+}, A.Checkmark = function() {
   let {
     selected: e
-  } = Chunk473749.useContext(I), t = Chunk473749.useContext(A);
+  } = Chunk473749.useContext(I), t = Chunk473749.useContext(C);
   return module.has(exports) ? (0, Chunk54381.jsx)("span", {
     className: Chunk792323.itemCheckbox,
     children: (0, Chunk54381.jsx)(Chunk481060.owK, {

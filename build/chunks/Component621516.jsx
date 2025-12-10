@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -104,7 +104,7 @@ function P(e) {
             })
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
-            color: "interactive-normal",
+            color: "interactive-text-default",
             children: l
           })]
         }), (0, r.jsxs)("div", {
@@ -115,7 +115,7 @@ function P(e) {
             children: s
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
-            color: "interactive-normal",
+            color: "interactive-text-default",
             children: o
           })]
         })]

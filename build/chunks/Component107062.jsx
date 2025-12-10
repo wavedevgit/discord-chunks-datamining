@@ -74,7 +74,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       details: M,
       activity: k,
       embeddedActivity: U
-    } = (0, A.n)(n), {
+    } = (0, C.n)(n), {
       primaryColor: G,
       secondaryColor: Z
     } = (0, S.Z)(null == L ? true : L.src), B = (0, a.e7)([h.default], () => h.default.locale), {
@@ -126,7 +126,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         onClickSubtitle: x ? true : W,
         onClickThumbnail: x ? true : W
       }),
-      J = (0, s.Z)(k, C.xjy.JOIN) || (0, l.Z)(k),
+      J = (0, s.Z)(k, A.xjy.JOIN) || (0, l.Z)(k),
       $ = J ? (0, r.jsx)(u.Z, {
         embeddedActivity: U,
         activity: k,

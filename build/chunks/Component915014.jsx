@@ -45,7 +45,7 @@ function m(e) {
       }), (0, r.jsx)(o.Text, {
         className: p.text,
         variant: b,
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: (0, c.Z)(m.length)
       })]
     }) : null,
@@ -70,7 +70,7 @@ function m(e) {
       }), (0, r.jsx)(o.Text, {
         className: p.text,
         variant: b,
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: (0, u.Z)(h.length)
       })]
     }) : null;

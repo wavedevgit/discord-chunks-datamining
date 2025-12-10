@@ -125,7 +125,7 @@ function E(e) {
           className: O.createTierIcon
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
-          color: "interactive-active",
+          color: "interactive-text-active",
           children: v.intl.string(v.t.PiFnny)
         })]
       })]

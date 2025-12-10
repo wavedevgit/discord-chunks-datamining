@@ -34,13 +34,13 @@ let b = new Map,
   S = 0,
   I = 0,
   T = 0,
-  A = 0,
-  C = new Set,
+  C = 0,
+  A = new Set,
   N = new Map,
   P = false;
 
 function R() {
-  b.clear(), y.clear(), A = 0, O.clear(), N.clear(), P = false, I = 0, T = 0, S = 0
+  b.clear(), y.clear(), C = 0, O.clear(), N.clear(), P = false, I = 0, T = 0, S = 0
 }
 
 function D() {
@@ -113,11 +113,11 @@ function B(e) {
   let {
     topSoundsForGuilds: t
   } = e;
-  y = new Map(t), T = 2, A = Date.now()
+  y = new Map(t), T = 2, C = Date.now()
 }
 
 function F() {
-  T = 2, A = 0
+  T = 2, C = 0
 }
 
 function V(e) {
@@ -170,7 +170,7 @@ function z(e) {
   } = t;
   if (n === g.yP.FRECENCY_AND_FAVORITES_SETTINGS) {
     var i, a;
-    C = new Set(null != (a = null == r || null == (i = r.favoriteSoundboardSounds) ? true : i.soundIds) ? a : [])
+    A = new Set(null != (a = null == r || null == (i = r.favoriteSoundboardSounds) ? true : i.soundIds) ? a : [])
   } else n === g.yP.PRELOADED_USER_SETTINGS && K(r)
 }
 
@@ -185,7 +185,7 @@ function Q(e) {
   let {
     soundboardStoreState: t
   } = e;
-  b = new Map(p.default.entries(t.soundboardSounds)), C = new Set(t.favoritedSoundIds), v = new Set(t.localSoundboardMutes)
+  b = new Map(p.default.entries(t.soundboardSounds)), A = new Set(t.favoritedSoundIds), v = new Set(t.localSoundboardMutes)
 }
 class X extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -194,7 +194,7 @@ class X extends(r = Chunk442837.ZP.Store) {
   getOverlaySerializedState() {
     return {
       soundboardSounds: Object.fromEntries(b),
-      favoritedSoundIds: Array.from(C),
+      favoritedSoundIds: Array.from(A),
       localSoundboardMutes: Array.from(v)
     }
   }
@@ -234,10 +234,10 @@ class X extends(r = Chunk442837.ZP.Store) {
     return null != O.get(e)
   }
   isFavoriteSound(e) {
-    return C.has(e)
+    return A.has(e)
   }
   getFavorites() {
-    return C
+    return A
   }
   getAllTopSoundsForGuilds() {
     return y
@@ -249,7 +249,7 @@ class X extends(r = Chunk442837.ZP.Store) {
     return P
   }
   shouldFetchTopSoundsForGuilds() {
-    return (0, Chunk771784.cI)("SoundboardStore") && (0 === T || 2 === T && Date.now() - A > 864e5)
+    return (0, Chunk771784.cI)("SoundboardStore") && (0 === T || 2 === T && Date.now() - C > 864e5)
   }
   hasFetchedTopSoundsForGuilds() {
     return 2 === T

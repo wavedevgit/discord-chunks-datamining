@@ -110,7 +110,7 @@ function k(e) {
       k(.9 * Math.random() + .03)
     },
     F = i.useCallback(() => {
-      if (e.quest.id === C.V6) return void window.open(f.Z.getArticleURL(N.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+      if (e.quest.id === A.V6) return void window.open(f.Z.getArticleURL(N.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       (0, v.nc)(e.quest, {
         content: e.questContent,
         ctaContent: _.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
@@ -130,7 +130,7 @@ function k(e) {
       }), [e.questContent, e.questContentPosition, e.sourceQuestContent, x])
     }),
     H = () => {
-      (0, A.openDisclosureModal)(e.quest, {
+      (0, C.openDisclosureModal)(e.quest, {
         content: e.questContent,
         position: e.questContentPosition,
         ctaContent: _.jZ.CONTEXT_MENU_OPEN_DISCLOSURE,
@@ -145,7 +145,7 @@ function k(e) {
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.CONTEXT_MENU_LEARN_MORE,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, A.navigateToQuestHome)({
+      }), (0, C.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: e.quest.id
       })
@@ -160,7 +160,7 @@ function k(e) {
         questContentPosition: e.questContentPosition,
         questContentCTA: _.jZ.CONTEXT_MENU_HIDE_CONTENT,
         sourceQuestContent: e.sourceQuestContent
-      }), (0, O.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), D && (0, A.maybeShowSurveyForQuest)(e.quest))
+      }), (0, O.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), D && (0, C.maybeShowSurveyForQuest)(e.quest))
     },
     z = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
     q = () => (0, p.CS)(e.quest.id, true).catch(z),
@@ -178,7 +178,7 @@ function k(e) {
     ee = i.useCallback(() => {
       (0, c.uL)(N.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
-    et = e.shouldShowDisclosure && e.quest.id !== C.V6;
+    et = e.shouldShowDisclosure && e.quest.id !== A.V6;
   return (0, r.jsxs)(o.v2r, {
     variant: "fixed",
     onSelect: W,
@@ -254,7 +254,7 @@ function k(e) {
           (0, d.JG)(e.quest.id)
         }
       }), (0, E.T)({
-        location: C.dr.QUEST_PREVIEW_TOOL_2
+        location: A.dr.QUEST_PREVIEW_TOOL_2
       }) && (0, r.jsx)(o.sNh, {
         id: "preview",
         label: R.intl.string(R.t.tx5Ax5),

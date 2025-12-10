@@ -100,7 +100,7 @@ function Z(e) {
   } = e, c = i.useRef(null), u = (0, l.e7)([P.Z], () => {
     var e;
     return null == (e = P.Z.getGuild(a)) ? true : e.ownerId
-  }, [a]), p = (0, l.e7)([R.default], () => R.default.getUser(t.userId), [t.userId]), _ = (0, l.e7)([A.Z], () => A.Z.getChannel(o), [o]);
+  }, [a]), p = (0, l.e7)([R.default], () => R.default.getUser(t.userId), [t.userId]), _ = (0, l.e7)([C.Z], () => C.Z.getChannel(o), [o]);
   return null == p || null == _ ? null : (0, r.jsx)(I.Z, {
     targetElementRef: c,
     userId: t.userId,
@@ -162,8 +162,8 @@ function B(e) {
       let e = P.Z.getGuild(a);
       return null == e ? null : (0, T.lV)(e)
     }, [a]),
-    m = (0, l.Wu)([C.ZP, R.default], () => {
-      let e = C.ZP.getMembers(a),
+    m = (0, l.Wu)([A.ZP, R.default], () => {
+      let e = A.ZP.getMembers(a),
         t = null == n || n === _ ? e : e.filter(e => e.roles.includes(n));
       return o()(t).filter(e => null != R.default.getUser(e.userId)).sortBy(e => {
         var t;
@@ -225,15 +225,15 @@ function F(e) {
     inlinePreview: d = false
   } = e, {
     analyticsLocations: f
-  } = (0, h.ZP)(m.Z.ROLE_MENTION), p = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, S.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), I = b && "dot" === p, T = b && "username" === p, A = E && null != g ? g.colorStrings : null, C = i.useRef(null), P = e => (0, r.jsxs)(O.Z, U(M({
-    ref: C,
+  } = (0, h.ZP)(m.Z.ROLE_MENTION), p = (0, l.e7)([_.Z], () => _.Z.roleStyle), g = (0, l.e7)([N.Z], () => null == o || null == t ? null : N.Z.getRole(o, t)), E = (0, S.yH)(o, g), b = !d && null != g && !(0, v.Gr)(g), I = b && "dot" === p, T = b && "username" === p, C = E && null != g ? g.colorStrings : null, A = i.useRef(null), P = e => (0, r.jsxs)(O.Z, U(M({
+    ref: A,
     className: x.roleMention,
     color: T ? g.color : null,
-    roleColors: T ? A : null
+    roleColors: T ? C : null
   }, e), {
     children: [I && null != g.color && (0, r.jsx)(u.FhE, {
       color: (0, s.Rf)(g.color),
-      colors: A,
+      colors: C,
       className: L.roleDot,
       background: false,
       tooltip: false
@@ -251,7 +251,7 @@ function F(e) {
   }) : (0, r.jsx)(h.Gt, {
     value: f,
     children: (0, r.jsx)(u.yRy, {
-      targetElementRef: C,
+      targetElementRef: A,
       preload: async () => {
         null != t && await (0, y.H)(o, t)
       },

@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   H: () => N,
-  M: () => C
+  M: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk990547 = require("./990547.js"),
   Chunk872175 = require("./872175.js"),
   Chunk873546 = require("./873546.js"),
@@ -88,7 +88,7 @@ function T(e, t) {
   return null == e ? null : e.index > t.index ? "backwards" : e.index < t.index ? "forwards" : null
 }
 
-function A(e, t) {
+function C(e, t) {
   return n => {
     if (0 === n) return "auto";
     let r = "forwards" === t.current,
@@ -98,7 +98,7 @@ function A(e, t) {
   }
 }
 
-function C(e) {
+function A(e) {
   return null
 }
 
@@ -108,12 +108,12 @@ function N(e) {
       fadeInOut: y = false
     } = e,
     S = v(e, ["contentDisplay", "fadeInOut"]);
-  let C = {},
+  let A = {},
     {
       analyticsLocations: N
     } = (0, h.ZP)();
   i.Children.forEach(S.children, (e, t) => {
-    C[e.props.id] = {
+    A[e.props.id] = {
       children: e.props.children,
       impressionName: e.props.impressionName,
       impressionProperties: e.props.impressionProperties,
@@ -122,13 +122,13 @@ function N(e) {
   });
   let P = S.activeSlide,
     R = (0, _.Z)(S.activeSlide),
-    D = null != (t = S.directionOverride) ? t : T(null != R ? C[R] : null, C[P]),
+    D = null != (t = S.directionOverride) ? t : T(null != R ? A[R] : null, A[P]),
     {
       reducedMotion: w
     } = i.useContext(d.Sfi),
     x = i.useContext(m.Z),
-    L = C[P].impressionName,
-    j = O(b({}, C[P].impressionProperties), {
+    L = A[P].impressionName,
+    j = O(b({}, A[P].impressionProperties), {
       location_stack: N
     });
   x({
@@ -203,13 +203,13 @@ function N(e) {
           flexDirection: "column",
           backfaceVisibility: "hidden"
         }, q, K, w.enabled ? a : b({
-          left: e.value.to(A("left", F)),
-          right: e.value.to(A("right", F))
+          left: e.value.to(C("left", F)),
+          right: e.value.to(C("right", F))
         }, y && a)),
         className: o()({
           [g.innerAnimatedDivDynamicSizing]: S.shouldUseMediaQueriesForSizing
         }),
-        children: C[t].children
+        children: A[t].children
       }, i)
     })
   })

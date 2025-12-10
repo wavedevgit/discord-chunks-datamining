@@ -125,7 +125,7 @@ let N = {
           }) : null, (0, r.jsxs)("div", {
             className: o()(T.avatarContainer, L && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
-              src: H ? A : C,
+              src: H ? C : A,
               size: J,
               "aria-hidden": true,
               status: c.Skl.ONLINE,

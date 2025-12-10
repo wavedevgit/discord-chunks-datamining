@@ -12,7 +12,7 @@ let o = e => {
       size: c = "md",
       width: u,
       height: d,
-      color: p = a.Z.colors.INTERACTIVE_NORMAL,
+      color: p = a.Z.colors.INTERACTIVE_TEXT_DEFAULT,
       colorClass: h = ""
     } = e,
     f = function(e, t) {

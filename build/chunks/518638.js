@@ -2,8 +2,8 @@
 /** chunk id: 518638, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A2: () => A,
-  BU: () => C,
+  A2: () => C,
+  BU: () => A,
   Pz: () => S,
   Qf: () => D,
   ZC: () => R,
@@ -58,7 +58,7 @@ async function T() {
     rejectWithError: false
   })).body.map(I)
 }
-async function A(e) {
+async function C(e) {
   let t, {
       promotionId: n,
       analyticsLocations: r
@@ -75,7 +75,7 @@ async function A(e) {
   }), I(o)
 }
 
-function C(e, t) {
+function A(e, t) {
   var n;
   return null != t.outboundRedemptionUrlFormat && "" !== t.outboundRedemptionUrlFormat ? t.outboundRedemptionUrlFormat.replace(O, encodeURIComponent(e)) : null != (n = t.outboundRedemptionPageLink) ? n : ""
 }

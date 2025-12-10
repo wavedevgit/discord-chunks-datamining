@@ -71,8 +71,8 @@ function v(e) {
     previewPrimaryColor: S,
     className: I,
     disabledInputs: T,
-    isTryItOut: A,
-    onUpsellClick: C
+    isTryItOut: C,
+    onUpsellClick: A
   } = e, N = i.useRef(null), {
     analyticsLocations: P,
     newestAnalyticsLocation: R
@@ -104,7 +104,7 @@ function v(e) {
           uploadType: m.pC.AVATAR,
           guildId: null == n ? true : n.id,
           analyticsSource: R,
-          isTryItOut: A
+          isTryItOut: C
         }),
         onChangeAvatarDecoration: () => {
           (0, u.ps)({
@@ -126,7 +126,7 @@ function v(e) {
       })]
     }))
   }) : (0, r.jsxs)(l.P3F, {
-    onClick: C,
+    onClick: A,
     className: o()(h.avatar, h.clickable),
     children: [x, (0, r.jsx)(l.SrA, {
       size: "custom",

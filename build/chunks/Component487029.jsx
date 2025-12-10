@@ -47,11 +47,11 @@ function _(e) {
         };
       return i.forEach(e => r(e, true)), i.forEach(e => r(e, false)), l
     }, [t, n, e])
-  }((0, N.h)(n, true)), P = (0, E.j)(), Z = i.useRef(null), [A, j] = i.useState(true), R = (0, a.e7)([d.Z], () => d.Z.getMediaSessionId()), {
-    analyticsLocations: D
+  }((0, N.h)(n, true)), P = (0, E.j)(), Z = i.useRef(null), [A, j] = i.useState(true), D = (0, a.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+    analyticsLocations: R
   } = (0, s.ZP)(o.Z.SOUNDBOARD_WHEEL), w = i.useCallback(e => {
-    (0, p.GN)(e, n.id, D), v()
-  }, [D, n.id, v]);
+    (0, p.GN)(e, n.id, R), v()
+  }, [R, n.id, v]);
   i.useEffect(() => {
     g.w(), c.DZ.loadIfNecessary()
   }, []), i.useEffect(() => {
@@ -65,7 +65,7 @@ function _(e) {
     properties: {
       source: b,
       guild_id: t,
-      media_session_id: R
+      media_session_id: D
     }
   }, {
     disableTrack: !S
@@ -73,12 +73,12 @@ function _(e) {
   let k = i.useCallback(e => {
       Z.current = e, j(null == e ? true : e.soundId)
     }, []),
-    M = i.useCallback(e => {
+    U = i.useCallback(e => {
       if (null == e) return void k(null);
       let t = x[e];
       null != t && k(t)
     }, [k, x]),
-    U = i.useCallback(e => {
+    M = i.useCallback(e => {
       if (null == e) return;
       let t = x[e];
       null != t && w(t)
@@ -91,7 +91,7 @@ function _(e) {
       channel: n
     }, e.soundId)), [A, n, S, x]);
   return 0 === x.length ? null : (0, l.jsx)(s.Gt, {
-    value: D,
+    value: R,
     children: (0, l.jsx)(O.Z, {
       wheelWidth: _,
       wheelHeight: m,
@@ -99,8 +99,8 @@ function _(e) {
       itemHeight: 52,
       showDeadZoneIndicator: !I,
       activeItem: A,
-      onItemSelect: M,
-      onItemAction: U,
+      onItemSelect: U,
+      onItemAction: M,
       onClose: v,
       interactive: S,
       children: L

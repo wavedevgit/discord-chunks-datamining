@@ -24,10 +24,10 @@ var Chunk636881 = require("./636881.js"),
   S = Chunk46015([].push),
   I = Chunk46015("".indexOf),
   T = Chunk46015("".slice),
-  A = function(e) {
+  C = function(e) {
     return true === e ? e : String(e)
   },
-  C = function() {
+  A = function() {
     return "$0" === "a".replace(/./, "$0")
   }(),
   N = function() {
@@ -54,16 +54,16 @@ Chunk518187("replace", function(e, t, n) {
       ;
       "" === p(w[0]) && (o.lastIndex = m(s, f(o.lastIndex), R))
     }
-    for (var C = "", N = 0, P = 0; P < b.length; P++) {
-      for (var R, D, w = b[P], x = p(w[0]), L = y(O(d(w.index), s.length), 0), j = [], M = 1; M < w.length; M++) S(j, A(w[M]));
+    for (var A = "", N = 0, P = 0; P < b.length; P++) {
+      for (var R, D, w = b[P], x = p(w[0]), L = y(O(d(w.index), s.length), 0), j = [], M = 1; M < w.length; M++) S(j, C(w[M]));
       var k = w.groups;
       if (_) {
         var U = v([x], j, L, s);
         true !== k && S(U, k), D = p(r(i, true, U))
       } else D = g(x, s, L, j, k, i);
-      L >= N && (C += T(s, N, L) + D, N = L + x.length)
+      L >= N && (A += T(s, N, L) + D, N = L + x.length)
     }
-    return C + T(s, N)
+    return A + T(s, N)
   }]
 }, !!Chunk621523(function() {
   var e = /./;
@@ -73,4 +73,4 @@ Chunk518187("replace", function(e, t, n) {
       a: "7"
     }, module
   }, "7" !== "".replace(module, "$<a>")
-}) || !C || N)
+}) || !A || N)

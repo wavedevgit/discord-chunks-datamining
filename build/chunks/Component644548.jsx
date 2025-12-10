@@ -53,8 +53,8 @@ let y = (e, t, n, r) => {
       details: I,
       appName: T
     } = (0, g.n)(n), {
-      primaryColor: A,
-      secondaryColor: C
+      primaryColor: C,
+      secondaryColor: A
     } = (0, d.Z)(null == v ? true : v.src), N = (0, c.yA)(n), P = (0, c.Nq)(n), R = i.useCallback(e => {
       if (null != t && null != S && null != N && null != P && (0, p.qy)(P)) return (0, u.SO)({
         entry: n,
@@ -64,10 +64,10 @@ let y = (e, t, n, r) => {
         timestamp: E.intl.formatToPlainString(E.t.YL7UE3, {
           hours: Math.round(N / o.Z.Seconds.HOUR)
         }),
-        colors: [A, C],
+        colors: [C, A],
         channelId: e
       })
-    }, [null == v ? true : v.src, t, N, n, A, P, C, S]);
+    }, [null == v ? true : v.src, t, N, n, C, P, A, S]);
     if (null == S || null == N || null == P || !(0, p.qy)(P)) return null;
     let D = null != n.extra.platform ? f.v[n.extra.platform] : null;
     return (0, r.jsxs)(m.yR, {

@@ -45,8 +45,8 @@ let _ = 365,
   S = [Chunk859334.Ci.SA.weekday, Chunk859334.Ci.SU.weekday],
   I = [Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
   T = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday],
-  A = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday, Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday, Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
-  C = new Set([0, 6]);
+  C = [Chunk859334.Ci.SU.weekday, Chunk859334.Ci.MO.weekday, Chunk859334.Ci.TU.weekday, Chunk859334.Ci.WE.weekday, Chunk859334.Ci.TH.weekday, Chunk859334.Ci.FR.weekday, Chunk859334.Ci.SA.weekday],
+  A = new Set([0, 6]);
 
 function N(e) {
   var t;
@@ -81,7 +81,7 @@ function N(e) {
         })
       })
     }];
-  return C.has(n.getDay()) ? (null == (t = s.default.getCurrentUser()) ? true : t.isStaff()) && a.push({
+  return A.has(n.getDay()) ? (null == (t = s.default.getCurrentUser()) ? true : t.isStaff()) && a.push({
     value: d.z.WEEKEND_ONLY,
     label: p.intl.string(p.t.hRpynV)
   }) : a.push({
@@ -116,7 +116,7 @@ function w(e, t, n) {
 }
 
 function x(e) {
-  return new o.OG(A[e])
+  return new o.OG(C[e])
 }
 
 function L(e, t) {

@@ -30,11 +30,11 @@ var Chunk54381 = require("./54381.js"),
 function T(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([_.default], () => _.default.getCurrentUser()), C = h.ZP.isPremium(A, S.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), P = (0, a.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = N.length > 0 || P.length > 0, D = T.length > 0, w = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), x = w.length > 0, L = T.length > w.length, j = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), C = (0, a.e7)([_.default], () => _.default.getCurrentUser()), A = h.ZP.isPremium(C, S.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), P = (0, a.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = N.length > 0 || P.length > 0, D = T.length > 0, w = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), x = w.length > 0, L = T.length > w.length, j = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: M
   } = (0, o.Z)({
     forceFetch: true
-  }), k = (null == t ? true : t.isPausedOrPausePending) === true && M === S.a$.NONE, U = (null == t ? true : t.isPausedOrPausePending) !== true && M === S.a$.NONE, G = C && M === S.a$.FP_SUB_PAUSED;
+  }), k = (null == t ? true : t.isPausedOrPausePending) === true && M === S.a$.NONE, U = (null == t ? true : t.isPausedOrPausePending) !== true && M === S.a$.NONE, G = A && M === S.a$.FP_SUB_PAUSED;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.oQ, {
       className: I.blockedPaymentsWarning

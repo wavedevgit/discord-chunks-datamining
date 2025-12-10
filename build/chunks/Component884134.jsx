@@ -231,12 +231,12 @@ function X(e) {
         type: "text",
         value: s,
         onChange: e => c(e.target.value),
-        placeholder: "".concat(A.BH, "%"),
+        placeholder: "".concat(C.BH, "%"),
         className: B.controlLabelInput
       })]
     }), (0, r.jsx)(f.iRW, {
       initialValue: t,
-      defaultValue: A.BH,
+      defaultValue: C.BH,
       minValue: 0,
       maxValue: 100,
       onValueChange: e => {
@@ -255,10 +255,10 @@ function J(e) {
   } = e, [a, o] = i.useState(false), s = i.useRef(false), [l, u] = i.useState(false), p = i.useRef(null), _ = i.useRef(null), m = i.useCallback(() => {
     var e;
     (0, w.Om)();
-    let t = (0, C.C)();
-    A.Ig.getState().setAll({
+    let t = (0, A.C)();
+    C.Ig.getState().setAll({
       colors: t.colors,
-      gradientAngle: null != (e = t.angle) ? e : A.Ig.getState().gradientAngle,
+      gradientAngle: null != (e = t.angle) ? e : C.Ig.getState().gradientAngle,
       chassisMixAmount: t.intensity
     })
   }, []);
@@ -290,7 +290,7 @@ function J(e) {
         asset: f.q8_,
         riveProps: {
           dataBinding: {
-            fill: f.TVs.colors.ICON_PRIMARY
+            fill: f.TVs.colors.ICON_STRONG
           },
           eventTargetRef: _
         }
@@ -414,12 +414,12 @@ function en(e) {
     location: "CustomThemesEditorV2"
   }).enabled, y = (0, N.jJ)(), S = (0, N.SK)(), I = i.useRef(false), {
     colors: T,
-    chassisMixAmount: C,
+    chassisMixAmount: A,
     gradientAngle: L,
     setColors: M,
     setChassisMixAmount: U,
     setGradientAngle: F
-  } = (0, A.Ig)(), [V, H] = i.useState(null != (t = T[0]) ? t : A.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
+  } = (0, C.Ig)(), [V, H] = i.useState(null != (t = T[0]) ? t : C.Dp), Y = (0, s.e7)([v.Z], () => v.Z.theme), W = (0, E.Nj)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), {
     analyticsLocations: z
   } = (0, h.ZP)(m.Z.CUSTOM_THEMES_EDITOR), q = (0, s.e7)([P.Z], () => P.Z.getSavedCustomTheme()), $ = async () => {
     I.current = true, await (0, p.ZI)({
@@ -428,9 +428,9 @@ function en(e) {
         colors: T,
         gradientColorStops: [],
         gradientAngle: L,
-        baseMix: C
+        baseMix: A
       }
-    }), (0, w.u7)(T, C, L, Y, z), null == a || a(k.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, w.u7)(T, A, L, Y, z), null == a || a(k.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, en = () => {
     y(N._m.RESET_BUTTON), (0, w.uf)()
   }, er = T.length > 0;
@@ -441,7 +441,7 @@ function en(e) {
       var e;
       let t = (null != (e = null == T ? true : T.length) ? e : 0) > 0,
         n = null != q;
-      !t && n && b ? (A.Ig.getState().setAll({
+      !t && n && b ? (C.Ig.getState().setAll({
         colors: q.colors,
         gradientAngle: q.gradient_angle,
         chassisMixAmount: q.base_mix
@@ -487,7 +487,7 @@ function en(e) {
             gradientAngle: L,
             setGradientAngle: F
           }), (0, r.jsx)(X, {
-            chassisMixAmount: C,
+            chassisMixAmount: A,
             setChassisMixAmount: e => {
               U(e), 0 === T.length && (0, N.lT)(T, V, M)
             }

@@ -174,7 +174,7 @@ function F(e) {
   l()(E === x.Iq.EMBEDDED_APPLICATION && null != b, "invalid application invite");
   let y = i.useCallback(() => {
       var e;
-      C.default.track(D.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
+      A.default.track(D.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
         application_id: b.id,
         invite_inviter_id: null == (e = s.inviter) ? true : e.id
       })
@@ -200,7 +200,7 @@ function F(e) {
       analyticsLocations: U
     } = (0, m.ZP)(_.Z.INVITE_EMBED),
     G = (0, c.Wu)([p.ZP], () => null != M ? p.ZP.getEmbeddedActivitiesForChannel(M.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [M, b.id]),
-    Z = (0, c.Wu)([A.default], () => G.map(e => A.default.getUser(e)).filter(e => null != e), [G]),
+    Z = (0, c.Wu)([C.default], () => G.map(e => C.default.getUser(e)).filter(e => null != e), [G]),
     B = i.useCallback(() => {
       (0, f.r$)({
         invite: s,
@@ -267,7 +267,7 @@ function V(e) {
     id: t.id,
     icon: I,
     bot: S
-  }), A = (0, y.G)(t), C = (0, b.E)(t), P = n.length, R = i.useMemo(() => [{
+  }), C = (0, y.G)(t), A = (0, b.E)(t), P = n.length, R = i.useMemo(() => [{
     label: p,
     trackingArea: a ? E.j_.PLAY : E.j_.JOIN_SERVER,
     submitting: f,
@@ -279,8 +279,8 @@ function V(e) {
     header: t.name,
     title: L.intl.string(L.t["7vb6nw"]),
     iconSrc: T
-  }, C), {
-    onClickBanner: A,
+  }, A), {
+    onClickBanner: C,
     info: (0, r.jsxs)("div", {
       className: j.infoWrapper,
       children: [(0, r.jsx)(B, {
@@ -301,7 +301,7 @@ function V(e) {
       })]
     }),
     actions: R,
-    onClickContent: A,
+    onClickContent: C,
     trackingConfig: {
       id: t.id,
       linkType: w.U.ACTIVITY_INVITE,

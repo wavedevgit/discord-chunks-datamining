@@ -47,15 +47,15 @@ function _(e, t, n) {
     I = (null == (_ = t.sortDescriptor) ? true : _.column) === E.key,
     T = null == (m = t.sortDescriptor) ? true : m.direction;
   E.props.allowsSorting && !(0, a.Dt)() && (g = I ? T : "none");
-  let A = (0, f.q)(p(i.Z), "@react-aria/table");
-  b && (h = `${A.format("sortable")}`, I && T && (0, a.Dt)() && (h = `${h}, ${A.format(T)}`));
-  let C = (0, o.P)(h),
+  let C = (0, f.q)(p(i.Z), "@react-aria/table");
+  b && (h = `${C.format("sortable")}`, I && T && (0, a.Dt)() && (h = `${h}, ${C.format(T)}`));
+  let A = (0, o.P)(h),
     N = 0 === t.collection.size;
   return (0, l.useEffect)(() => {
     N && t.selectionManager.focusedKey === E.key && t.selectionManager.setFocusedKey(null)
   }, [N, t.selectionManager, E.key]), {
     columnHeaderProps: {
-      ...(0, s.d)(S, y, v, C, N ? {
+      ...(0, s.d)(S, y, v, A, N ? {
         tabIndex: false
       } : null),
       role: "columnheader",

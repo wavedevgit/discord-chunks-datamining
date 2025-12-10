@@ -119,11 +119,11 @@ function q(e) {
     } = (0, b.wD)(),
     eu = s.paymentSourceId,
     ed = (0, I.$)(a, eu),
-    ef = (0, u.e7)([C.Z], () => C.Z.get(D));
+    ef = (0, u.e7)([A.Z], () => A.Z.get(D));
   l()(null != ef, "Missing newPlan");
   let ep = (0, u.e7)([T.Z], () => T.Z.hidePersonalInformation),
     e_ = (0, E.Z)(),
-    em = c.M.EEA_COUNTRIES.has(A.Z.ipCountryCodeWithFallback),
+    em = c.M.EEA_COUNTRIES.has(C.Z.ipCountryCodeWithFallback),
     eh = q === O.A.PURCHASING || q === O.A.COMPLETED,
     eg = (0, v.Kp)({
       isTrial: false,
@@ -320,8 +320,8 @@ function X(e) {
     {
       proratedInvoicePreview: I,
       proratedInvoiceError: T,
-      renewalInvoicePreview: A,
-      renewalInvoiceError: C
+      renewalInvoicePreview: C,
+      renewalInvoiceError: A
     } = et({
       premiumSubscription: n,
       newItems: S,
@@ -332,7 +332,7 @@ function X(e) {
   i.useEffect(() => {
     m(I)
   }, [m, I]);
-  let N = null != T ? T : C;
+  let N = null != T ? T : A;
   if (i.useEffect(() => {
       s(N)
     }, [s, N]), null != N) return (0, r.jsx)(d.M14, {
@@ -346,14 +346,14 @@ function X(e) {
       startedPaymentFlowWithPaymentSources: _.current
     }),
     D = (0, v.$g)(R, I, a);
-  if (null !== u && null !== I && (t = (0, P.N1)(I.subscriptionPeriodEnd, u.unactivatedUnits, u.endsAt)), null == I || null == A || D) return (0, r.jsx)(d.$jN, {
+  if (null !== u && null !== I && (t = (0, P.N1)(I.subscriptionPeriodEnd, u.unactivatedUnits, u.endsAt)), null == I || null == C || D) return (0, r.jsx)(d.$jN, {
     className: H.__invalid_spinner
   });
   let x = (0, P.Ap)(c.paymentSourceId);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(k.hG, {
       proratedInvoice: I,
-      renewalInvoice: A,
+      renewalInvoice: C,
       overrideRenewalDate: t
     }), (0, r.jsxs)(w.aO, {
       className: o()(H.invoice, h),
@@ -366,7 +366,7 @@ function X(e) {
       }), (0, r.jsx)(k.nd, {
         premiumSubscription: n,
         proratedInvoice: I,
-        renewalInvoice: A,
+        renewalInvoice: C,
         overrideRenewalDate: t,
         isUpdate: true,
         isPrepaidPaymentSource: x
@@ -405,12 +405,12 @@ function J(e) {
       analyticsLocations: E
     }),
     T = (0, I.$)(_, l.paymentSourceId),
-    A = null != S ? S : O;
+    C = null != S ? S : O;
   return (i.useEffect(() => {
-    o(A)
-  }, [o, A]), null != A) ? (0, r.jsx)(d.M14, {
+    o(C)
+  }, [o, C]), null != C) ? (0, r.jsx)(d.M14, {
     type: "critical",
-    children: A.message
+    children: C.message
   }) : (null != v && (t = {
     amount: v.subtotal,
     currency: v.currency,

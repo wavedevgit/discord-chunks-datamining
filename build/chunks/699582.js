@@ -56,7 +56,7 @@ var r, Chunk863714 = require("./863714.js"),
   S = false,
   I = /^[A-Z]{3}$/,
   T = /-u(?:-[0-9a-z]{2,8})+/gi,
-  A = {
+  C = {
     "art-lojban": "jbo",
     "i-ami": "ami",
     "i-bnn": "bnn",
@@ -103,7 +103,7 @@ var r, Chunk863714 = require("./863714.js"),
     "zh-wuu": "wuu",
     "zh-yue": "yue"
   },
-  C = {
+  A = {
     BU: "MM",
     DD: "DE",
     FX: "FR",
@@ -408,8 +408,8 @@ function D(e) {
     if (2 === n[r].length) n[r] = n[r].toUpperCase();
     else if (4 === n[r].length) n[r] = n[r].charAt(0).toUpperCase() + n[r].slice(1);
   else if (1 === n[r].length && "x" !== n[r]) break;
-  (t = (e = h.call(n, "-")).match(i.expExtSequences)) && t.length > 1 && (t.sort(), e = e.replace(RegExp("(?:" + i.expExtSequences.source + ")+", "i"), h.call(t, ""))), c.call(A, e) && (e = A[e]), n = e.split("-");
-  for (var r = 1, a = n.length; r < a; r++) c.call(C, n[r]) ? n[r] = C[n[r]] : c.call(N, n[r]) && (n[r] = N[n[r]][0], 1 === r && N[n[1]][1] === n[0] && (n = p.call(n, r++), a -= 1));
+  (t = (e = h.call(n, "-")).match(i.expExtSequences)) && t.length > 1 && (t.sort(), e = e.replace(RegExp("(?:" + i.expExtSequences.source + ")+", "i"), h.call(t, ""))), c.call(C, e) && (e = C[e]), n = e.split("-");
+  for (var r = 1, a = n.length; r < a; r++) c.call(A, n[r]) ? n[r] = A[n[r]] : c.call(N, n[r]) && (n[r] = N[n[r]][0], 1 === r && N[n[1]][1] === n[0] && (n = p.call(n, r++), a -= 1));
   return h.call(n, "-")
 }
 
@@ -501,14 +501,14 @@ function U(e, t, n, r, i) {
         }
     }
     if (c.call(n, "[[" + E + "]]")) {
-      var A = n["[[" + E + "]]"];
-      false !== v.call(b, A) && A !== y && (y = A, O = "")
+      var C = n["[[" + E + "]]"];
+      false !== v.call(b, C) && C !== y && (y = C, O = "")
     }
     _["[[" + E + "]]"] = y, m += O, h++
   }
-  if (m.length > 2) var C = o.substring(0, l),
+  if (m.length > 2) var A = o.substring(0, l),
     N = o.substring(l),
-    o = C + m + N;
+    o = A + m + N;
   return _["[[locale]]"] = o, _
 }
 
@@ -607,8 +607,8 @@ function Y(e, t, n) {
   (true !== S || true !== I) && (S = V(n, "minimumSignificantDigits", 1, 21, 1), I = V(n, "maximumSignificantDigits", S, 21, 21), r["[[minimumSignificantDigits]]"] = S, r["[[maximumSignificantDigits]]"] = I);
   var T = F(n, "useGrouping", "boolean", true, true);
   r["[[useGrouping]]"] = T;
-  var A = c[f].patterns[p];
-  return r["[[positivePattern]]"] = A.positivePattern, r["[[negativePattern]]"] = A.negativePattern, r["[[boundFormat]]"] = true, r["[[initializedNumberFormat]]"] = true, l && (e.format = K.call(e)), i.exp.test(i.input), e
+  var C = c[f].patterns[p];
+  return r["[[positivePattern]]"] = C.positivePattern, r["[[negativePattern]]"] = C.negativePattern, r["[[boundFormat]]"] = true, r["[[initializedNumberFormat]]"] = true, l && (e.format = K.call(e)), i.exp.test(i.input), e
 }
 
 function W(e) {
@@ -663,8 +663,8 @@ function z(e, t) {
   var S = i[true === u ? "[[negativePattern]]" : "[[positivePattern]]"];
   if (S = S.replace("{number}", n), "currency" === i["[[style]]"]) {
     var I, T = i["[[currency]]"],
-      A = s.currencies[T];
-    I = "symbol" === i["[[currencyDisplay]]"] && A || T, S = S.replace("{currency}", I)
+      C = s.currencies[T];
+    I = "symbol" === i["[[currencyDisplay]]"] && C || T, S = S.replace("{currency}", I)
   }
   return r.exp.test(r.input), S
 }
@@ -777,8 +777,8 @@ function $(e, t, n) {
     } var I, T = F(n, "hour12", "boolean");
   if (r["[[hour]]"])
     if (T = true === T ? E.hour12 : T, r["[[hour12]]"] = T, true === T) {
-      var A = E.hourNo0;
-      r["[[hourNo0]]"] = A, I = g.pattern12
+      var C = E.hourNo0;
+      r["[[hourNo0]]"] = C, I = g.pattern12
     } else I = g.pattern;
   else I = g.pattern;
   return r["[[pattern]]"] = I, r["[[boundFormat]]"] = true, r["[[initializedDateTimeFormat]]"] = true, l && (e.format = eo.call(e)), i.exp.test(i.input), e

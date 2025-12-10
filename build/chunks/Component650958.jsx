@@ -88,9 +88,9 @@ function g(e) {
     setDevice: y,
     getLabel: O,
     getLocation: v
-  } = h(t), [S, I] = i.useState(f), T = v(n[n.length - 1]), [A, C] = (0, l.Ls)(t, {
+  } = h(t), [S, I] = i.useState(f), T = v(n[n.length - 1]), [C, A] = (0, l.Ls)(t, {
     location: T
-  }), N = S ? A.concat(C) : A, {
+  }), N = S ? C.concat(A) : C, {
     id: P,
     name: R
   } = (0, l.p6)(t), D = null != _ ? _ : P, w = N.map(e => {
@@ -126,12 +126,12 @@ function g(e) {
       I(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {
         device_type: t,
         location: T,
-        shown_device_count: A.length,
-        hidden_device_count: C.length,
+        shown_device_count: C.length,
+        hidden_device_count: A.length,
         location_stack: n
       })
     }
-  }), L = !S && (null == C ? true : C.length) > 0;
+  }), L = !S && (null == A ? true : A.length) > 0;
   return o ? (0, r.jsxs)(a.sNh, m(p({
     id: "".concat(t, "-devices"),
     label: O(),

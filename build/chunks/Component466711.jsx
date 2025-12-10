@@ -83,7 +83,7 @@ function k(e) {
   return (0, r.jsx)(u.u, {
     shouldShow: t,
     text: R.intl.string(R.t.Ve9Ge6),
-    children: (0, r.jsx)(C.Z, {
+    children: (0, r.jsx)(A.Z, {
       className: w.button,
       "aria-label": R.intl.string(R.t.Z1RnTk),
       isActive: false,
@@ -116,7 +116,7 @@ function U(e) {
   return (0, r.jsx)(u.u, {
     shouldShow: a,
     text: R.intl.string(R.t.Ve9Ge6),
-    children: (0, r.jsx)(C.Z, M(L({
+    children: (0, r.jsx)(A.Z, M(L({
       className: w.button,
       "aria-label": R.intl.string(R.t.Z1RnTk),
       isActive: false,
@@ -151,7 +151,7 @@ function Z(e) {
     channel: c
   } = e, {
     analyticsLocations: u
-  } = (0, p.ZP)(f.Z.GIFT_BUTTON), [d, v] = i.useState(false), T = (0, s.e7)([y.Z], () => !(null === y.Z || true === y.Z ? true : y.Z.hasLayers())), C = (0, s.e7)([O.default], () => O.default.getCurrentUser()), R = null != C ? S.default.age(C.id) : 0, {
+  } = (0, p.ZP)(f.Z.GIFT_BUTTON), [d, v] = i.useState(false), T = (0, s.e7)([y.Z], () => !(null === y.Z || true === y.Z ? true : y.Z.hasLayers())), A = (0, s.e7)([O.default], () => O.default.getCurrentUser()), R = null != A ? S.default.age(A.id) : 0, {
     giftBoxAnimation: w,
     trinketsAnimation: x
   } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, L = null != n.firstTimeNotice && !a && T && R >= G, [j, M] = (0, m.XR)(L ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Z = null != j, B = d || Z, F = (0, I.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
@@ -194,7 +194,7 @@ function Z(e) {
       config: x,
       hovered: B,
       onClick: W
-    }) : (0, r.jsx)(A.Z, {
+    }) : (0, r.jsx)(C.Z, {
       disabled: a,
       channel: c
     });

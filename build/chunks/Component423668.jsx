@@ -29,7 +29,7 @@ let l = {
         showDisabledItems: h,
         showColoredItems: g,
         dangerItemColor: E
-      } = e, [b, y] = i.useState(true), [O, v] = i.useState(false), [S, I] = i.useState("text"), [T, A] = i.useState("cozy"), [C, N] = i.useState(true), P = e => (0, r.jsxs)(o.v2r, {
+      } = e, [b, y] = i.useState(true), [O, v] = i.useState(false), [S, I] = i.useState("text"), [T, C] = i.useState("cozy"), [A, N] = i.useState(true), P = e => (0, r.jsxs)(o.v2r, {
         navId: "menu-story",
         "aria-label": "Story Menu",
         variant: t,
@@ -143,13 +143,13 @@ let l = {
               group: "view-mode",
               label: "Cozy",
               checked: "cozy" === T,
-              action: () => A("cozy")
+              action: () => C("cozy")
             }), (0, r.jsx)(o.k5B, {
               id: "radio-compact",
               group: "view-mode",
               label: "Compact",
               checked: "compact" === T,
-              action: () => A("compact")
+              action: () => C("compact")
             })]
           })]
         }), l && (0, r.jsxs)(r.Fragment, {
@@ -179,7 +179,7 @@ let l = {
       }), R = i.useRef(null);
       return (0, r.jsxs)("div", {
         className: s.container,
-        children: [!C && (0, r.jsx)(a.zxk, {
+        children: [!A && (0, r.jsx)(a.zxk, {
           text: "Open Menu",
           onClick: () => N(true)
         }), (0, r.jsx)(o.yRy, {

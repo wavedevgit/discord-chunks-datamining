@@ -32,8 +32,8 @@ let y = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       textClassName: S,
       loop: I = false,
       shouldWrap: T = false,
-      boldFontOpacity: A = 1,
-      shouldUnderlineOnHover: C = false
+      boldFontOpacity: C = 1,
+      shouldUnderlineOnHover: A = false
     } = e, N = (0, E.j)({
       displayNameStyles: i,
       inProfile: O
@@ -54,7 +54,7 @@ let y = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
     if (!D || !O && !R || null == i) return n;
     let k = (0, g.K)(x, M, {
         shouldWrap: T,
-        fontOpacity: y.includes(i.fontId) ? A : 1
+        fontOpacity: y.includes(i.fontId) ? C : 1
       }),
       U = v(x);
     return (0, r.jsxs)("div", {
@@ -68,7 +68,7 @@ let y = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       children: [(0, r.jsx)("span", {
         "data-username-with-effects": L,
         className: o()(b.innerContainer, null == U ? true : U.effectClassName, {
-          [b.underlineOnHover]: C,
+          [b.underlineOnHover]: A,
           [b.chicle]: i.fontId === l.C.CHICLE
         }),
         children: j

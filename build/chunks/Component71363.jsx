@@ -2,7 +2,7 @@
 /** chunk id: 71363, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,11 +27,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk677599 = require("./677599.js"),
   Chunk865215 = require("./865215.js");
-let A = e => {
+let C = e => {
   let t, n, {
       isAllPerksVisible: a,
-      setIsAllPerksVisible: A,
-      previousComponent: C,
+      setIsAllPerksVisible: C,
+      previousComponent: A,
       enablePremiumBrandRefresh: N
     } = e,
     P = i.useRef(null),
@@ -52,9 +52,9 @@ let A = e => {
     U = (0, m.W)();
   M ? (t = S.intl.string(S.t["+vt7w9"]), n = S.intl.string(S.t.LgHbnL)) : (t = S.intl.string(S.t.LgHbnL), n = S.intl.string(S.t["+vt7w9"]));
   let G = () => {
-    A(false), _.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
+    C(false), _.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
       current_component: y.MQ.SEE_ALL,
-      next_component: C,
+      next_component: A,
       interaction_component: "Back Button"
     })
   };

@@ -106,8 +106,8 @@ function G(e) {
   let I = v ? x.intl.string(x.t["2cHUti"]) : x.intl.string(x.t.O13yhz),
     T = i.useCallback(() => m(false), []),
     {
-      outboundTitle: A,
-      outboundTermsAndConditions: C
+      outboundTitle: C,
+      outboundTermsAndConditions: A
     } = n;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -126,7 +126,7 @@ function G(e) {
           }), (0, r.jsxs)("div", {
             children: [(0, r.jsx)(u.Heading, {
               variant: "heading-md/semibold",
-              children: A
+              children: C
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/normal",
               color: "text-default",
@@ -144,7 +144,7 @@ function G(e) {
         className: L.promotionLegalese,
         variant: "text-xs/normal",
         color: "text-default",
-        children: _.Z.parse(C, false, {
+        children: _.Z.parse(A, false, {
           allowLinks: true
         })
       })]

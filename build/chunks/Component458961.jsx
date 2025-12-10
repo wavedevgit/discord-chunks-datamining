@@ -118,9 +118,9 @@ function J(e) {
     errorMessage: i
   } = e, {
     priceTiers: o
-  } = (0, q.R)(t, B.RG5.GUILD_PRODUCTS), s = r.useMemo(() => (null != o ? o : null != A ? [A] : []).map(e => ({
+  } = (0, q.R)(t, L.RG5.GUILD_PRODUCTS), s = r.useMemo(() => (null != o ? o : null != A ? [A] : []).map(e => ({
     value: e,
-    label: (0, x.T4)(e, B.pKx.USD)
+    label: (0, x.T4)(e, L.pKx.USD)
   })), [o, A]);
   return (0, n.jsx)(g.d, {
     label: l,
@@ -146,7 +146,7 @@ function _(e) {
     publishedOnly: true
   }).length, [et]), es = (null == ei ? true : ei.published) === true, {
     application: ed
-  } = (0, v.Z)(et, L.wW.GUILD_ROLE_SUBSCRIPTIONS), eu = N.M["0"], ec = j.QK.useSetting(), eg = (0, P.n)(), ef = r.useCallback(() => {
+  } = (0, v.Z)(et, B.wW.GUILD_ROLE_SUBSCRIPTIONS), eu = I.M["0"], ec = j.QK.useSetting(), eg = (0, P.n)(), ef = r.useCallback(() => {
     var e;
     return (null == ei || null == (e = ei.image_asset) ? true : e.application_id) == null ? eu.data : (0, O._W)(ei.image_asset.application_id, ei.image_asset, 600, eg && ec ? true : "webp")
   }, [eu, ei, eg, ec]), {
@@ -155,14 +155,14 @@ function _(e) {
   r.useEffect(() => {
     ep && (er(), (0, W.B)(D.intl.string(D.t.OLf3xn), D.t["90LBVr"]))
   }, [ep, er]);
-  let [em, ev] = r.useState(null != (a = null == ei ? true : ei.name) ? a : ""), [eh, eq] = r.useState(null != (l = null == ei ? true : ei.description) ? l : ""), [eb, eC] = r.useState(null != (i = null == ei ? true : ei.price_tier) ? i : true), [eU, ej] = r.useState(ef), [eV, ex] = r.useState(null != (g = null == ei || null == (t = ei.image_asset) ? true : t.filename) ? g : eu.name), [eO, eP] = r.useState(false), [eF, ey] = r.useState(), eI = r.useMemo(() => null != eb ? (0, x.T4)(eb, B.pKx.USD) : true, [eb]), [eN, eK] = r.useState(true), {
+  let [em, ev] = r.useState(null != (a = null == ei ? true : ei.name) ? a : ""), [eh, eq] = r.useState(null != (l = null == ei ? true : ei.description) ? l : ""), [eb, eC] = r.useState(null != (i = null == ei ? true : ei.price_tier) ? i : true), [eU, ej] = r.useState(ef), [eV, ex] = r.useState(null != (g = null == ei || null == (t = ei.image_asset) ? true : t.filename) ? g : eu.name), [eO, eP] = r.useState(false), [eF, ey] = r.useState(), eN = r.useMemo(() => null != eb ? (0, x.T4)(eb, L.pKx.USD) : true, [eb]), [eI, eK] = r.useState(true), {
     changesSaving: eT,
     saveError: eZ,
     saveProductWithAttachments: eW,
     hasUnsavedAttachmentChanges: eX,
     cancelUnusedUploads: eQ
-  } = (0, F.P)(), eS = (null == ei ? true : ei.attachments) != null && (null == ei ? true : ei.attachments.length) > 0, ez = null != eZ ? eZ : eF, ew = null != eT && "published" in eT, eB = null != eT && !ew, eL = null != (h = null == ei ? true : ei.role_id) ? h : null, [eD, eR] = r.useState(), ek = null != eD || null != eL, eE = (0, s.e7)([V.Z], () => null != eL && null !== eD ? V.Z.getRole(et, eL) : null != eD ? eD : true, [eD, eL, et]), eG = "";
-  ek && eN ? eG = D.intl.string(D.t.ih4QMU) : ek ? eG = D.intl.string(D.t.o9xphc) : eN && (eG = D.intl.string(D.t.DWYJua));
+  } = (0, F.P)(), eS = (null == ei ? true : ei.attachments) != null && (null == ei ? true : ei.attachments.length) > 0, ez = null != eZ ? eZ : eF, ew = null != eT && "published" in eT, eL = null != eT && !ew, eB = null != (h = null == ei ? true : ei.role_id) ? h : null, [eD, eR] = r.useState(), ek = null != eD || null != eB, eE = (0, s.e7)([V.Z], () => null != eB && null !== eD ? V.Z.getRole(et, eB) : null != eD ? eD : true, [eD, eB, et]), eG = "";
+  ek && eI ? eG = D.intl.string(D.t.ih4QMU) : ek ? eG = D.intl.string(D.t.o9xphc) : eI && (eG = D.intl.string(D.t.DWYJua));
   let eY = () => {
       eK(false), eQ()
     },
@@ -173,7 +173,7 @@ function _(e) {
       canSaveForDraft: e$,
       canSaveForPublished: e0,
       canPublishOrUnpublish: e1
-    } = r.useMemo(() => (0, I.fG)({
+    } = r.useMemo(() => (0, N.fG)({
       guildProductListing: ei,
       name: em,
       priceTier: eb,
@@ -192,7 +192,7 @@ function _(e) {
           className: R.successNoticeMessage,
           children: [(0, n.jsx)(p.owK, {
             size: "md",
-            color: d.Z.colors.BUTTON_POSITIVE_BACKGROUND.css,
+            color: d.Z.colors.CONTROL_CONNECT_BACKGROUND_DEFAULT.css,
             secondaryColor: d.Z.colors.WHITE.css
           }), (0, n.jsx)(p.Text, {
             variant: "text-md/medium",
@@ -221,7 +221,7 @@ function _(e) {
     }, e)), e9)
   }, [et, e9, ea]);
   let e6 = async e => {
-    let t = (0, I.pM)({
+    let t = (0, N.pM)({
       newRoleParams: eD
     });
     if (ey(t), null != t) return;
@@ -312,7 +312,7 @@ function _(e) {
             errorMessage: null != (M = null == ez ? true : ez.getFirstFieldErrorMessage("image")) ? M : true,
             description: D.intl.string(D.t.yOU4Vm),
             children: (0, n.jsx)(Q.Z, {
-              presetImages: N.M,
+              presetImages: I.M,
               radioGroupAriaLabel: D.intl.string(D.t.fKzQj0),
               image: eU,
               imageName: eV,
@@ -324,7 +324,7 @@ function _(e) {
                 }
               }
             })
-          }), eN ? (0, n.jsx)(p.gNt, {
+          }), eI ? (0, n.jsx)(p.gNt, {
             label: D.intl.string(D.t.zLrtkN),
             errorMessage: null != (_ = null == ez ? true : ez.getFirstFieldErrorMessage("attachments")) ? _ : true,
             children: (0, n.jsx)(T.s, {
@@ -337,11 +337,11 @@ function _(e) {
               }
             })
           }) : null, ek ? (0, n.jsx)(z.ZP, {
-            error: null != (ee = null == ez ? true : ez.getFirstFieldErrorMessage(I.NB)) ? ee : true,
+            error: null != (ee = null == ez ? true : ez.getFirstFieldErrorMessage(N.NB)) ? ee : true,
             newRoleParams: eD,
             setNewRoleParams: eR,
             guildId: et,
-            listingRoleId: eL,
+            listingRoleId: eB,
             productId: ea
           }) : null]
         })
@@ -391,7 +391,7 @@ function _(e) {
             imageUrl: eU,
             name: "" === em ? D.intl.string(D.t.EmqIwl) : em,
             description: "" === eh ? D.intl.string(D.t["11NA2L"]) : eh,
-            formattedPrice: eI,
+            formattedPrice: eN,
             role: eE,
             productType: eG,
             ctaComponent: (0, n.jsx)(p.Button, {
@@ -415,10 +415,10 @@ function _(e) {
               e ? eR((0, z.YP)()) : eR(true)
             },
             warning: null === eD ? (0, n.jsx)(z.aN, {}) : true,
-            disabled: null != eL
+            disabled: null != eB
           }), (0, n.jsx)(H, {
             text: D.intl.string(D.t.C6wP2Q),
-            value: eN,
+            value: eI,
             onChange: e => {
               e ? eK(true) : eX ? (0, f.Z)({
                 title: D.intl.string(D.t["2WihyY"]),
@@ -435,7 +435,7 @@ function _(e) {
             variant: "secondary",
             text: D.intl.string(D.t.XYBEaV),
             disabled: !e0,
-            loading: eB,
+            loading: eL,
             onClick: () => {
               o()(e0, "cannot save changes for published product without adding all fields"), eM("update_publish"), e6(eJ)
             }
@@ -443,7 +443,7 @@ function _(e) {
             variant: "secondary",
             text: D.intl.string(D.t.ZCjwob),
             disabled: !e$,
-            loading: eB,
+            loading: eL,
             onClick: () => {
               o()(e$, "cannot save changes without name or price tier"), eM("draft"), e6(eJ)
             }

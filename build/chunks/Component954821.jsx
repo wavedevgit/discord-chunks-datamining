@@ -72,10 +72,10 @@ let b = "MMMM Do, YYYY",
       submitting: S
     } = y(E), I = async () => {
       await O(a.id) && c()
-    }, T = i.role_benefits.benefits.filter(e => e.ref_type === _.Qs.CHANNEL), A = i.role_benefits.benefits.filter(e => e.ref_type === _.Qs.INTANGIBLE), C = o()(a.currentPeriodEnd).format(b), N = m.intl.formatToPlainString(m.t.KsMRP5, {
+    }, T = i.role_benefits.benefits.filter(e => e.ref_type === _.Qs.CHANNEL), C = i.role_benefits.benefits.filter(e => e.ref_type === _.Qs.INTANGIBLE), A = o()(a.currentPeriodEnd).format(b), N = m.intl.formatToPlainString(m.t.KsMRP5, {
       numChannels: T.length,
-      numAdditionalBenefits: A.length,
-      subscriptionEndDate: C
+      numAdditionalBenefits: C.length,
+      subscriptionEndDate: A
     });
     return (0, r.jsx)(s.Modal, {
       transitionState: t,

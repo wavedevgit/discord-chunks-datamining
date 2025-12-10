@@ -63,9 +63,9 @@ function T(e, t) {
   }), e
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,7 +73,7 @@ function A(e, t) {
   return i
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -82,7 +82,7 @@ function C(e, t) {
 }
 let N = Chunk473749.forwardRef(function(e, t) {
   var a, v, I;
-  let C, {
+  let A, {
       canRemove: N,
       className: P,
       role: R,
@@ -95,7 +95,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
     {
       tabIndex: M
     } = j,
-    k = A(j, ["tabIndex"]),
+    k = C(j, ["tabIndex"]),
     U = (0, g.p9)({
       roleId: R.id,
       size: 16,
@@ -121,7 +121,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
     W = (0, l._i)(V);
   null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
   let K = (0, E._f)(w, R, R.colorStrings);
-  C = Z ? (0, r.jsx)(h.Z, {
+  A = Z ? (0, r.jsx)(h.Z, {
     className: O.roleFlowerStar,
     iconClassName: N ? O.roleVerifiedIcon : true,
     color: V,
@@ -157,7 +157,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
         "aria-label": y.intl.formatToPlainString(y.t.QrxwhY, {
           roleName: R.name
         }),
-        children: [C, (0, r.jsx)(p.Dio, {
+        children: [A, (0, r.jsx)(p.Dio, {
           size: "md",
           color: Y,
           className: O.roleRemoveIcon,
@@ -174,7 +174,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
       "aria-label": y.intl.formatToPlainString(y.t.QrxwhY, {
         roleName: R.name
       }),
-      children: C
+      children: A
     });
   return (0, r.jsx)(p.tEY, {
     children: (0, r.jsxs)("div", T(S({

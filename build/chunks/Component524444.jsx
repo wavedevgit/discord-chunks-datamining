@@ -146,7 +146,7 @@ function J(e) {
   let E = Q(t),
     b = X(n);
   a = null == a ? j.FC : a, s = null == s ? j.rs : s;
-  let [y, O] = i.useState(true), [v, I] = i.useState(false), T = m === k.hV.MOSAIC || true === _, A = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== p, C = e => {
+  let [y, O] = i.useState(true), [v, I] = i.useState(false), T = m === k.hV.MOSAIC || true === _, C = (y || v) && !f && N.H1.getSetting() && null != l && "" !== l && true !== p, A = e => {
     let {
       altText: t
     } = e;
@@ -180,12 +180,12 @@ function J(e) {
       renderLinkComponent: er,
       renderOverlayContent: u,
       volume: a
-    })), null != c && c(), T && A && (0, r.jsx)("div", {
+    })), null != c && c(), T && C && (0, r.jsx)("div", {
       className: F.mediaMosaicVideoAltTextContainer,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: P,
         animation: d.yRy.Animation.FADE,
-        renderPopout: () => (0, r.jsx)(C, {
+        renderPopout: () => (0, r.jsx)(A, {
           altText: l
         }),
         children: e => (0, r.jsx)(d.tEY, {
@@ -204,7 +204,7 @@ function J(e) {
           }))
         })
       })
-    }), !T && A && (0, r.jsx)("span", {
+    }), !T && C && (0, r.jsx)("span", {
       className: F.altText,
       children: l
     })]
@@ -495,9 +495,9 @@ function ef(e) {
     scrollManager: m
   } = e, {
     disableInteractions: E
-  } = i.useContext(b.G), [y, v] = i.useState(null), S = i.useRef(null), [I, N] = i.useState(null), P = i.useRef(null), j = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [y, v] = i.useState(null), S = i.useRef(null), [I, N] = i.useState(null), P = i.useRef(null), j = (0, u.Wu)([C.Z], () => {
     var e;
-    return null != (e = A.Z.summaries(s.id)) ? e : []
+    return null != (e = C.Z.summaries(s.id)) ? e : []
   }, [s]), k = (0, g.Z)(j);
   i.useEffect(() => {
     l().isEqual(k, j) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
@@ -521,7 +521,7 @@ function ef(e) {
         }).filter(L.lm)
       })) ? e : []
     }, [j], e_),
-    V = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
+    V = null != (n = (0, u.e7)([C.Z], () => C.Z.visibleSummaryIndex())) ? n : false,
     H = null == j || null == (t = j[V]) ? true : t.topic;
   null == H && null == y && (null == j ? true : j.length) >= 1 && (H = null == (a = j[0]) ? true : a.topic);
   let Y = i.useMemo(() => l().debounce(e => {
@@ -610,7 +610,7 @@ function ef(e) {
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
-  let ee = i.useMemo(() => (0, r.jsx)(C.Z, {
+  let ee = i.useMemo(() => (0, r.jsx)(A.Z, {
       channel: s,
       summaries: j,
       summariesMembers: Z,
@@ -738,9 +738,9 @@ function em(e) {
     scrollManager: p
   } = e, {
     disableInteractions: _
-  } = i.useContext(b.G), [m, E] = i.useState(null), y = i.useRef(null), [v, S] = i.useState(null), I = i.useRef(null), N = (0, u.Wu)([A.Z], () => {
+  } = i.useContext(b.G), [m, E] = i.useState(null), y = i.useRef(null), [v, S] = i.useState(null), I = i.useRef(null), N = (0, u.Wu)([C.Z], () => {
     var e;
-    return null != (e = A.Z.summaries(s.id)) ? e : []
+    return null != (e = C.Z.summaries(s.id)) ? e : []
   }, [s]), P = (0, g.Z)(N);
   i.useEffect(() => {
     l().isEqual(P, N) || x.default.track(U.rMx.SUMMARIES_TOPICS_PILL_VIEWED, {
@@ -764,7 +764,7 @@ function em(e) {
         }).filter(L.lm)
       })) ? e : []
     }, [N], e_),
-    j = null != (n = (0, u.e7)([A.Z], () => A.Z.visibleSummaryIndex())) ? n : false,
+    j = null != (n = (0, u.e7)([C.Z], () => C.Z.visibleSummaryIndex())) ? n : false,
     M = null == N || null == (t = N[j]) ? true : t.topic;
   null == M && null == m && (null == N ? true : N.length) >= 1 && (M = null == (a = N[0]) ? true : a.topic);
   let k = i.useMemo(() => l().get(N, j - 1), [j, N]),
@@ -861,14 +861,14 @@ function em(e) {
   }, [s.id]), i.useEffect(() => (document.addEventListener("mousedown", $), () => {
     document.removeEventListener("mousedown", $)
   }), [$]);
-  let ee = i.useMemo(() => (0, r.jsx)(C.Z, {
+  let ee = i.useMemo(() => (0, r.jsx)(A.Z, {
     channel: s,
     summaries: N,
     summariesMembers: R,
     selectTopic: q,
     setOpen: J
   }), [N, R, q, J, s]);
-  if (!(0, u.e7)([A.Z], () => A.Z.shouldShowTopicsBar())) return null;
+  if (!(0, u.e7)([C.Z], () => C.Z.shouldShowTopicsBar())) return null;
   let et = B.intl.string(B.t["38qwgO"]);
   return N.length > 0 && (et = "" === M || null == M ? B.intl.string(B.t.DwnFuG) : M), _ ? null : (0, r.jsxs)("div", {
     ref: y,

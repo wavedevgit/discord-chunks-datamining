@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -124,7 +124,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
           prompt: a
         }))
       })
-    }, f = null != a ? a.label() : C.intl.string(C.t.evw0oz), p = (0, r.jsxs)("div", {
+    }, f = null != a ? a.label() : A.intl.string(A.t.evw0oz), p = (0, r.jsxs)("div", {
       className: N.content,
       children: [(0, r.jsx)(u.oFk, {
         size: "xs",
@@ -144,7 +144,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
         ref: t,
         children: (0, r.jsx)(u.P3F, {
           className: N.outer,
-          "aria-label": C.intl.string(C.t["zrpF/b"]),
+          "aria-label": A.intl.string(A.t["zrpF/b"]),
           "aria-describedby": s,
           onClick: d,
           focusProps: {
@@ -158,7 +158,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
               colorClass: N.addStatusIconColor
             }), (0, r.jsxs)(u.nn4, {
               id: s,
-              children: [C.intl.string(C.t.EVV6uZ), ": ", f]
+              children: [A.intl.string(A.t.EVV6uZ), ": ", f]
             }), (0, r.jsx)(u.Text, {
               variant: "text-sm/normal",
               className: o()(N.addStatusPrompt, null != a && N.italicPrompt),
@@ -185,7 +185,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       trackUserProfileAction: P
     } = (0, y.KZ)(), R = (0, h.p)({
       location: "CustomStatusBubble"
-    }), D = null != p ? A.Hp : 0, w = A.hT + D, x = A.YF + D, L = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useRef(w), G = i.useRef(x), Z = null != p && null == _, [B, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!Z && S), K = S && B, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
+    }), D = null != p ? C.Hp : 0, w = C.hT + D, x = C.YF + D, L = i.useRef(null), M = i.useRef(null), k = i.useRef(null), U = i.useRef(w), G = i.useRef(x), Z = null != p && null == _, [B, F] = i.useState(false), [V, H] = i.useState(true), [Y, W] = i.useState(!Z && S), K = S && B, z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [q] = i.useState(() => new c.V7);
     i.useEffect(() => () => q.stop(), [q]), i.useEffect(() => {
       null == I || I.onInteractionPopoutTargetRefChange(L)
     }, [I]);
@@ -193,7 +193,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       maxHeight: "".concat(U.current, "px"),
       config: {
         clamp: true,
-        duration: A.R1
+        duration: C.R1
       }
     }));
     i.useLayoutEffect(() => {
@@ -207,15 +207,15 @@ let M = Chunk473749.forwardRef(function(e, t) {
     let J = e => {
         Y && (e ? X({
           maxHeight: "".concat(Math.min(G.current, x), "px"),
-          delay: z ? 0 : A.zS,
+          delay: z ? 0 : C.zS,
           config: {
             clamp: true,
-            duration: z ? 0 : A.R1
+            duration: z ? 0 : C.R1
           }
         }) : X({
           maxHeight: "".concat(Math.min(U.current, w), "px"),
           delay: 0
-        }), z ? H(!e) : q.start(e ? A.zS : A.Sq, () => H(!e)))
+        }), z ? H(!e) : q.start(e ? C.zS : C.Sq, () => H(!e)))
       },
       $ = null != p ? (0, r.jsx)(f.Z, {
         emoji: p,
@@ -232,7 +232,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
       et = true === v || null != p && R ? null : (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        "aria-label": "".concat(C.intl.string(C.t.EVV6uZ), ": ").concat(v),
+        "aria-label": "".concat(A.intl.string(A.t.EVV6uZ), ": ").concat(v),
         className: o()(N.statusText, R && N.italicPrompt),
         children: null != v ? v : ""
       }),
@@ -283,7 +283,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
             className: N.ring,
             role: "tooltip",
             tabIndex: 0,
-            "aria-label": C.intl.formatToPlainString(C.t.UpF5Qa, {
+            "aria-label": A.intl.formatToPlainString(A.t.UpF5Qa, {
               emoji: null != (n = null == p ? true : p.name) ? n : "",
               status: _
             }),
@@ -315,7 +315,7 @@ let M = Chunk473749.forwardRef(function(e, t) {
             className: N.ring,
             role: "tooltip",
             tabIndex: 0,
-            "aria-label": C.intl.formatToPlainString(C.t.UpF5Qa, {
+            "aria-label": A.intl.formatToPlainString(A.t.UpF5Qa, {
               emoji: null != (a = null == p ? true : p.name) ? a : "",
               status: _
             }),
@@ -365,8 +365,8 @@ function G(e) {
   i.useEffect(() => {
     f === T.n_.STATUS && ((b.current !== t || I.current !== n) && p(), b.current = t, I.current = n)
   }, [f, p, t, n]);
-  let [A, C] = i.useState(false), P = i.useCallback(e => {
-    (e || !h) && C(e)
+  let [C, A] = i.useState(false), P = i.useCallback(e => {
+    (e || !h) && A(e)
   }, [h]), D = e => null == e ? null : null != e.id ? "`" + ":".concat(e.name, ":") + "`" : E.ZP.translateSurrogatesToInlineEmoji(e.name), L = (e, t) => null == e ? t : "".concat(e, " ").concat(t), j = () => {
     let e = D(t);
     return null == n ? e : L(e, n)
@@ -379,7 +379,7 @@ function G(e) {
     sourceDetails: j(),
     sourceType: T.n_.STATUS,
     onAction: u,
-    onClose: () => C(false),
+    onClose: () => A(false),
     children: () => (0, r.jsx)(k, w(R({}, c), {
       ref: g,
       emoji: t,
@@ -391,7 +391,7 @@ function G(e) {
         targetRef: g,
         user: a,
         sourceType: T.n_.STATUS,
-        isVisible: A && !h,
+        isVisible: C && !h,
         isExpandable: e,
         onAction: u
       })

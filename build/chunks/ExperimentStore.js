@@ -63,8 +63,8 @@ let O = "scientist:triggered",
   S = "userExperimentOverrides",
   I = "guildExperimentOverrides",
   T = 1,
-  A = new Chunk710845.Z("ExperimentStore"),
-  C = false,
+  C = new Chunk710845.Z("ExperimentStore"),
+  A = false,
   N = {},
   P = new Map,
   R = {},
@@ -273,7 +273,7 @@ function ee(e) {
 
 function et(e) {
   var t;
-  !U && "CONNECTION_OPEN" === e.type && H(e.user) && (U = true), "EXPERIMENTS_FETCH_SUCCESS" === e.type && C && "ready_payload" === D.source && p.default.track(h.rMx.EXPERIMENT_FETCH_IGNORED, {
+  !U && "CONNECTION_OPEN" === e.type && H(e.user) && (U = true), "EXPERIMENTS_FETCH_SUCCESS" === e.type && A && "ready_payload" === D.source && p.default.track(h.rMx.EXPERIMENT_FETCH_IGNORED, {
     fingerprint: e.fingerprint,
     current_snapshot_source: D.source,
     current_snapshot_session_id: D.sessionId,
@@ -293,7 +293,7 @@ function et(e) {
     source: o,
     sessionId: s,
     fingerprint: l
-  }, false), n(598984).Vx.trackExposure(), C = true
+  }, false), n(598984).Vx.trackExposure(), A = true
 }
 
 function en(e) {
@@ -456,7 +456,7 @@ function es(e) {
     serializedExperimentStore: t,
     user: n
   } = e;
-  if (!U && H(n) && (U = true), C = t.hasLoadedExperiments, N = t.trackedExposureExperiments, w = t.loadedUserExperiments, j = t.userExperimentOverrides, M = t.guildExperimentOverrides, D = y(E({}, D), {
+  if (!U && H(n) && (U = true), A = t.hasLoadedExperiments, N = t.trackedExposureExperiments, w = t.loadedUserExperiments, j = t.userExperimentOverrides, M = t.guildExperimentOverrides, D = y(E({}, D), {
       source: t.assignmentSource,
       sessionId: t.assignmentSessionId,
       fingerprint: t.assignmentFingerprint
@@ -467,7 +467,7 @@ function es(e) {
 }
 
 function el() {
-  C = true
+  A = true
 }
 
 function ec(e) {
@@ -476,11 +476,11 @@ function ec(e) {
   } = e;
   s.K.remove(O), t || (s.K.remove(v), s.K.remove(S), s.K.remove(I), j = {}, M = {}), w = {}, D = y(E({}, D), {
     rawUserExperiments: []
-  }), N = {}, C = false
+  }), N = {}, A = false
 }
 
 function eu() {
-  C = false, N = {}, x = {}, Chunk433517.K.remove(O)
+  A = false, N = {}, x = {}, Chunk433517.K.remove(O)
 }
 
 function ed() {
@@ -531,7 +531,7 @@ function e_() {
   try {
     Chunk433517.K.set(S, j)
   } catch (e) {
-    A.error("Error saving user experiment overrides, unsaved data will be lost", module), Chunk626135.default.track(Chunk981631.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    C.error("Error saving user experiment overrides, unsaved data will be lost", module), Chunk626135.default.track(Chunk981631.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveExperimentOverrides"
     })
@@ -539,7 +539,7 @@ function e_() {
   try {
     Chunk433517.K.set(I, M)
   } catch (e) {
-    A.error("Error saving guild experiment overrides, unsaved data will be lost", module), Chunk626135.default.track(Chunk981631.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    C.error("Error saving guild experiment overrides, unsaved data will be lost", module), Chunk626135.default.track(Chunk981631.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveExperimentOverrides"
     })
@@ -553,7 +553,7 @@ function em(e) {
       e: e
     })
   } catch (e) {
-    A.error("Error saving tracked exposure experiments, unsaved data will be lost", e), p.default.track(h.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
+    C.error("Error saving tracked exposure experiments, unsaved data will be lost", e), p.default.track(h.rMx.EXPERIMENT_SAVE_EXPOSURE_FAILED, {
       module: "discord_app",
       call: "ExperimentStore.saveTrackedExposureExperiments"
     })
@@ -632,7 +632,7 @@ class eb extends Chunk750041.Z {
     }
   }
   get hasLoadedExperiments() {
-    return C
+    return A
   }
   hasRegisteredExperiment(e) {
     return null != R[e]
@@ -716,7 +716,7 @@ class eb extends Chunk750041.Z {
     for (let t in x)
       for (let n of (module[exports] = JSON.parse(JSON.stringify(x[exports])), module[exports].populations)) require.filters = [];
     return {
-      hasLoadedExperiments: C,
+      hasLoadedExperiments: A,
       trackedExposureExperiments: N,
       loadedUserExperiments: w,
       loadedGuildExperiments: module,

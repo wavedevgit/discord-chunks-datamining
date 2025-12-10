@@ -34,8 +34,8 @@ let b = "GameStoreReportedGames",
   S = {},
   I = {},
   T = null != (i = Chunk433517.K.get(b)) ? i : {},
-  A = "",
-  C = null,
+  C = "",
+  A = null,
   N = false,
   P = null,
   R = [],
@@ -106,8 +106,8 @@ function U(e) {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && A !== n && (v.clear(), S = {}, I = {}, A = n), t)) L(w(e));
-  r = true, C = Date.now(), N = true
+  for (let e of (null != n && C !== n && (v.clear(), S = {}, I = {}, C = n), t)) L(w(e));
+  r = true, A = Date.now(), N = true
 }
 
 function G(e) {
@@ -120,11 +120,11 @@ function G(e) {
 class Z extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    null != e && (null != e.detectableGamesEtag && (A = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => L(e)))
+    null != e && (null != e.detectableGamesEtag && (C = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => L(e)))
   }
   getState() {
     return (0, Chunk358085.isDesktop)() ? {
-      detectableGamesEtag: A,
+      detectableGamesEtag: C,
       detectableGames: v.values()
     } : {
       detectableGamesEtag: "",
@@ -168,10 +168,10 @@ class Z extends(a = Chunk442837.ZP.PersistedStore) {
     returntrue === r
   }
   get detectableGamesEtag() {
-    return A
+    return C
   }
   get lastFetched() {
-    return C
+    return A
   }
   get hasAttemptedFetch() {
     return N
@@ -180,7 +180,7 @@ class Z extends(a = Chunk442837.ZP.PersistedStore) {
     return O
   }
   canFetchDetectableGames() {
-    returntrue !== r && (null == C || Date.now() >= C + O)
+    returntrue !== r && (null == A || Date.now() >= A + O)
   }
   canFetchExecutableBlocklist() {
     return null == P || Date.now() >= P + O

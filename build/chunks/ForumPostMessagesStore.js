@@ -155,7 +155,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     channelId: t,
     messageId: n,
@@ -167,7 +167,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     channelId: t,
     messages: n
@@ -202,10 +202,10 @@ let P = new N(Chunk570140.Z, {
   MESSAGE_REACTION_ADD: S,
   MESSAGE_REACTION_REMOVE: S,
   MESSAGE_REACTION_REMOVE_ALL: T,
-  MESSAGE_REACTION_REMOVE_EMOJI: A,
+  MESSAGE_REACTION_REMOVE_EMOJI: C,
   MESSAGE_REACTION_ADD_MANY: I,
   LOAD_FORUM_POSTS: h,
   LOAD_THREADS_SUCCESS: g,
   LOAD_ARCHIVED_THREADS_SUCCESS: g,
-  LOAD_MESSAGES_SUCCESS: C
+  LOAD_MESSAGES_SUCCESS: A
 })

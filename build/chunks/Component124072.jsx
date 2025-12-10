@@ -91,8 +91,8 @@ let g = e => {
     O(true), null == g || g(e)
   }, [O, g]), T = i.useCallback(e => {
     O(false), null == E || E(e)
-  }, [O, E]), A = {};
-  return null != d && (A = {
+  }, [O, E]), C = {};
+  return null != d && (C = {
     color: (0, s.Rf)(d),
     backgroundColor: y ? (0, s.br)(d, .3) : (0, s.br)(d, .1)
   }), (0, r.jsx)(l.P3F, _(f({}, b), {
@@ -104,7 +104,7 @@ let g = e => {
     }),
     onMouseEnter: I,
     onMouseLeave: T,
-    style: A,
+    style: C,
     tabIndex: null != b.onClick ? 0 : false,
     children: null != h ? (0, r.jsx)(c.Z, {
       iconType: h,

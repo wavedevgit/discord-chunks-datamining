@@ -47,7 +47,7 @@ function m(e) {
         color: o.Z.colors.ICON_DEFAULT.css
       }) : (0, r.jsx)(s.gt9, {
         size: "xs",
-        color: o.Z.colors.ICON_TERTIARY.css
+        color: o.Z.colors.ICON_MUTED.css
       })
     })
   })

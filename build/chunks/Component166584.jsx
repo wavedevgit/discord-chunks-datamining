@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,7 +61,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -105,7 +105,7 @@ function j(e) {
     canManageRoles: _,
     onAddRole: m,
     onRemoveRole: b
-  } = e, T = i.useRef({}), C = (e, t) => {
+  } = e, T = i.useRef({}), A = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
   }, [R, j] = i.useState(f), [M, k] = i.useState(w), [U, G] = i.useState(false), Z = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
   i.useLayoutEffect(() => {
@@ -153,7 +153,7 @@ function j(e) {
           maxWidth: U || i !== R.length - 1 ? w : M
         },
         disableBorderColor: true,
-        ref: t => C(e.id, t),
+        ref: t => A(e.id, t),
         onRemove: () => b(e),
         canRemove: (null == (a = e.tags) ? true : a.guild_connections) === null ? t.id === n.id : _ && g.r6(l, n.id, p, e)
       }, e.id)
@@ -178,7 +178,7 @@ function j(e) {
         var {
           ref: t
         } = e, n = P(e, ["ref"]);
-        return (0, r.jsxs)("div", N(A({
+        return (0, r.jsxs)("div", N(C({
           className: I.root,
           "aria-label": W,
           ref: t

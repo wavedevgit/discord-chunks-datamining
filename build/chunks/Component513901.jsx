@@ -34,13 +34,13 @@ function y(e) {
     showBorder: I = false
   } = e, {
     analyticsLocations: T
-  } = (0, c.ZP)(), A = f.ZP.canUsePremiumProfileCustomization(t), C = (0, p.nh)({
+  } = (0, c.ZP)(), C = f.ZP.canUsePremiumProfileCustomization(t), A = (0, p.nh)({
     user: t,
     guildId: null == n ? true : n.id
   }), {
     pendingProfileEffect: N,
     errors: P
-  } = (0, p.xZ)(null == n ? true : n.id), R = true === N ? null != C : null != N, D = () => {
+  } = (0, p.xZ)(null == n ? true : n.id), R = true === N ? null != A : null != N, D = () => {
     (0, u.H)({
       analyticsLocations: T,
       guild: n,
@@ -50,11 +50,11 @@ function y(e) {
     (0, p.UK)(null, null == n ? true : n.id)
   };
   i.useEffect(() => {
-    A && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+    C && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: g.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
       location_stack: T
     })
-  }, [A, T]);
+  }, [C, T]);
   let x = S ? l.gtL : s.zx;
   return (0, r.jsx)(_.Z, {
     forcedDivider: v,

@@ -40,13 +40,13 @@ function _() {
   return Chunk358085.isPlatformEmbedded
 }
 async function m() {
-  var e, t, n, r, a, o, s, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, A, C, N, P, R, D, w, x, L, j, M, k;
+  var e, t, n, r, a, o, s, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, R, D, w, x, L, j, M, k;
   let U = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
   if (null == U) return null;
   let G = [null != (y = null == (e = U.unknown) ? true : module.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : exports.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : require.wss_priv_kb) ? v : false, null != (S = null == (r = U.gpu) ? true : Chunk147913.wss_priv_kb) ? S : false, null != (I = null == (a = U.crashpad) ? true : Chunk626135.wss_priv_kb) ? I : false, null != (T = null == (o = U.utility) ? true : Chunk70956.wss_priv_kb) ? T : false],
     Z = {
       electron_process_memory_private: G,
-      electron_process_memory_private_and_shared: [null != (A = null == (s = U.unknown) ? true : Chunk358085.wss_kb) ? A : false, null != (C = null == (c = U.main) ? true : Chunk998502.wss_kb) ? C : false, null != (N = null == (u = U.renderer) ? true : Chunk981631.wss_kb) ? N : false, null != (P = null == (d = U.gpu) ? true : d.wss_kb) ? P : false, null != (R = null == (f = U.crashpad) ? true : f.wss_kb) ? R : false, null != (D = null == (p = U.utility) ? true : p.wss_kb) ? D : false],
+      electron_process_memory_private_and_shared: [null != (C = null == (s = U.unknown) ? true : Chunk358085.wss_kb) ? C : false, null != (A = null == (c = U.main) ? true : Chunk998502.wss_kb) ? A : false, null != (N = null == (u = U.renderer) ? true : Chunk981631.wss_kb) ? N : false, null != (P = null == (d = U.gpu) ? true : d.wss_kb) ? P : false, null != (R = null == (f = U.crashpad) ? true : f.wss_kb) ? R : false, null != (D = null == (p = U.utility) ? true : p.wss_kb) ? D : false],
       electron_process_type_count: [null != (w = null == (_ = U.unknown) ? true : _.proc_count) ? w : 0, null != (x = null == (m = U.main) ? true : m.proc_count) ? x : 0, null != (L = null == (h = U.renderer) ? true : h.proc_count) ? L : 0, null != (j = null == (g = U.gpu) ? true : g.proc_count) ? j : 0, null != (M = null == (E = U.crashpad) ? true : E.proc_count) ? M : 0, null != (k = null == (b = U.utility) ? true : b.proc_count) ? k : 0]
     },
     B = await (0, Chunk704806.q)();

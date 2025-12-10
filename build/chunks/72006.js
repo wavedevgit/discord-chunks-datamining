@@ -8,7 +8,7 @@ require.d(exports, {
   R8: () => k,
   Sq: () => N,
   Wg: () => U,
-  Zn: () => C,
+  Zn: () => A,
   c2: () => x,
   eE: () => M,
   iE: () => B,
@@ -20,7 +20,7 @@ require.d(exports, {
   q0: () => a.a,
   x0: () => T,
   xb: () => V,
-  yd: () => A
+  yd: () => C
 }), require("./388685.js"), require("./539854.js");
 var Chunk923010 = require("./923010.js"),
   Chunk797487 = require("./797487.js"),
@@ -75,7 +75,7 @@ function T(e, t, n, i) {
   return a.isCollapsed() ? (l = r.Modifier.insertText(l, a, e, d, f), o = "insert-characters") : (l = r.Modifier.replaceText(l, a, e, d, f), o = "replace-characters"), r.EditorState.push(t, l, o)
 }
 
-function A(e, t) {
+function C(e, t) {
   switch (e) {
     case "delete":
       return O()(t);
@@ -92,7 +92,7 @@ function A(e, t) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   switch (e) {
     case "transpose-characters":
       return S()(t);

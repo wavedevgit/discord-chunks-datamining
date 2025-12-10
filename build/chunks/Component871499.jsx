@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => S,
-  d: () => A
+  d: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -94,8 +94,8 @@ function S(e) {
     disabled: S = false,
     isActive: I = false,
     tooltipPosition: T = "top",
-    shouldShowTooltip: A = true,
-    forceTooltipOpen: C = false,
+    shouldShowTooltip: C = true,
+    forceTooltipOpen: A = false,
     buttonRef: N,
     grow: P,
     "aria-label": R,
@@ -110,15 +110,15 @@ function S(e) {
       position: T,
       text: t,
       "aria-label": R,
-      shouldShow: A,
-      forceOpen: C,
+      shouldShow: C,
+      forceOpen: A,
       children: e => {
         var {
           onClick: t,
           onContextMenu: c,
           onMouseEnter: p,
           onMouseLeave: T
-        } = e, A = O(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
+        } = e, C = O(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zx, y(E({
           "data-migration-pending": true,
           look: null != D ? D : l.zx.Looks.BLANK,
@@ -159,7 +159,7 @@ function S(e) {
           buttonRef: N,
           grow: P,
           "aria-label": R
-        }, A), {
+        }, C), {
           children: [(0, r.jsx)(b, {
             size: s.Z.md,
             className: o()(m, {
@@ -199,7 +199,7 @@ let I = {
     premiumGradient: Chunk119421.premiumGradient
   };
 
-function A(e) {
+function C(e) {
   var t, {
       ref: n,
       color: a,
@@ -208,8 +208,8 @@ function A(e) {
       className: g,
       iconClassName: b,
       onPopoutClick: v,
-      popoutOpen: A = false,
-      popoutDisabled: C = false,
+      popoutOpen: C = false,
+      popoutDisabled: A = false,
       isTrayButton: N,
       applyStyles: P = false
     } = e,
@@ -234,14 +234,14 @@ function A(e) {
     }));
   return x ? Z : (0, r.jsxs)("div", {
     ref: n,
-    className: o()(h.attachedCaretButtonContainer, A && h.popoutOpen, g, U && [h.fullRegionDropdownButton, I[D]]),
+    className: o()(h.attachedCaretButtonContainer, C && h.popoutOpen, g, U && [h.fullRegionDropdownButton, I[D]]),
     children: [Z, null != v ? (0, r.jsx)(p.Z, {
       children: (0, r.jsx)(c.P3F, {
         "aria-label": m.intl.string(m.t.PdRCRg),
-        onClick: C ? true : v,
-        className: o()(h.contextMenuNub, N && h.attachedCaret, T[w], A && [h.popoutOpen, h.active], C && h.disabled),
+        onClick: A ? true : v,
+        className: o()(h.contextMenuNub, N && h.attachedCaret, T[w], C && [h.popoutOpen, h.active], A && h.disabled),
         children: (0, r.jsx)(d.Z, {
-          className: o()(h.contextMenuCaret, A && h.open, C && h.disabled)
+          className: o()(h.contextMenuCaret, C && h.open, A && h.disabled)
         })
       })
     }) : null]

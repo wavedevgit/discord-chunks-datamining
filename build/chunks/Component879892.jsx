@@ -85,8 +85,8 @@ async function v(e) {
     onLoading: S,
     closeLayer: I,
     onSubscriptionConfirmation: T,
-    onSubscribeComplete: A,
-    guild: C,
+    onSubscribeComplete: C,
+    guild: A,
     handleSubscribeModalClose: N,
     disablePremiumUpsell: P,
     inPopout: R,
@@ -136,7 +136,7 @@ async function v(e) {
           onClose: e => {
             i(), U(e)
           },
-          selectedGuild: C,
+          selectedGuild: A,
           locationSection: _.ZY5.PREMIUM_GUILD_USER_MODAL,
           guildBoostSlots: e,
           intent: w
@@ -153,13 +153,13 @@ async function v(e) {
     analyticsLocations: t,
     analyticsLocation: m,
     analyticsSourceLocation: g,
-    guildId: C.id,
+    guildId: A.id,
     closeLayer: G,
     totalNumberOfSlotsToAssign: null != y ? y : 1,
     onCloseModal: U,
     disablePremiumUpsell: P,
     onSubscriptionConfirmation: T,
-    onSubscribeComplete: A,
+    onSubscribeComplete: C,
     inPopout: R,
     applicationId: D,
     intent: w

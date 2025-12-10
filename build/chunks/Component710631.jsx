@@ -62,11 +62,11 @@ function S(e, t) {
 }
 let I = "max_uses",
   T = "User Invite Context Menu",
-  A = "context_menu";
+  C = "context_menu";
 
-function C(e, t) {
+function A(e, t) {
   s.Z.ensurePrivateChannel(e).then(e => {
-    null != d.Z.getChannel(e) && c.Z.sendInvite(e, t, A, {
+    null != d.Z.getChannel(e) && c.Z.sendInvite(e, t, C, {
       source: E.t4x.GUILD_CONTEXT_MENU
     })
   })
@@ -86,16 +86,16 @@ function N(e) {
     }), t
   }, [n]), [y, v] = i.useState({});
 
-  function A(e, t) {
+  function C(e, t) {
     let n = f.ZP.getDefaultChannel(e.id, true, E.Plq.CREATE_INSTANT_INVITE);
     if (null != n) {
       if (v(S(O({}, y), {
           [e.id]: true
-        })), !_.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void C(t, e.vanityURLCode);
+        })), !_.Z.can(E.Plq.CREATE_INSTANT_INVITE, e) && null != e.vanityURLCode) return void A(t, e.vanityURLCode);
       l.ZP.createInvite(n.id, {
         [I]: 1,
         unique: true
-      }, T).then(e => C(t, e.code))
+      }, T).then(e => A(t, e.code))
     }
   }
   return (null == c ? true : c.id) === t.id || t.bot || 0 === d.length || m.Z.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.sNh, {
@@ -109,7 +109,7 @@ function N(e) {
       id: e.id,
       label: e.name,
       action: () => {
-        null == s || s(), A(e, t.id)
+        null == s || s(), C(e, t.id)
       }
     }, e.id))
   })

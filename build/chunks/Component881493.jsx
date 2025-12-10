@@ -51,8 +51,8 @@ let m = () => {
   if (null == h) return null;
   let {
     intervalType: T,
-    intervalCount: A
-  } = h, C = (0, Chunk937615.og)("".concat(g), T, A);
+    intervalCount: C
+  } = h, A = (0, Chunk937615.og)("".concat(g), T, C);
   return (0, Chunk54381.jsxs)(Chunk793030.Modal, {
     size: "md",
     transitionState: module,
@@ -61,7 +61,7 @@ let m = () => {
     })),
     subtitle: 0 !== require.total ? Chunk388032.intl.format(Chunk388032.t.ycyeBx, {
       renewalDate: require.subscriptionPeriodStart,
-      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), T, A)
+      rate: (0, Chunk937615.og)((0, Chunk937615.T4)(require.total, require.currency), T, C)
     }) : Chunk388032.intl.format(Chunk388032.t["+y0Tjy"], {
       renewalDate: require.subscriptionPeriodStart
     }),
@@ -78,7 +78,7 @@ let m = () => {
         label: Chunk388032.intl.formatToPlainString(Chunk388032.t.r3jVZq, {
           planName: Chunk74538.ZP.getDisplayName("".concat(exports))
         }),
-        value: "".concat(C),
+        value: "".concat(A),
         className: Chunk704442.canceled
       }), (0, Chunk54381.jsx)(Chunk811334.UN, {}), (0, Chunk54381.jsx)(Chunk42818.nd, {
         premiumSubscription: E,

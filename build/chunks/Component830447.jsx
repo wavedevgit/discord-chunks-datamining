@@ -86,7 +86,7 @@ function T(e) {
   })
 }
 
-function A(e, t) {
+function C(e, t) {
   if (!t || !e.icon || e.iconLeft) return e;
   let {
     icon: n
@@ -96,7 +96,7 @@ function A(e, t) {
   })
 }
 
-function C(e, t) {
+function A(e, t) {
   return T(e).reduce((e, n) => {
     var r, i;
     if (n.type === _.Cl) return e.push({
@@ -104,7 +104,7 @@ function C(e, t) {
       navigable: false
     }), e;
     if (n.type === _.kS) {
-      let r = C(n.props.children, t);
+      let r = A(n.props.children, t);
       return r.length > 0 && (e.push({
         type: "groupstart",
         length: r.length,
@@ -118,7 +118,7 @@ function C(e, t) {
       })), e
     }
     if (n.type === _.sN) {
-      let r = A(n.props, t);
+      let r = C(n.props, t);
       return e.push(null != n.props.render ? {
         type: "customitem",
         key: n.props.id,
@@ -130,7 +130,7 @@ function C(e, t) {
         key: n.props.id,
         navigable: true,
         label: n.props.label,
-        children: n.props.children ? C(n.props.children, t) : true,
+        children: n.props.children ? A(n.props.children, t) : true,
         onChildrenScroll: n.props.onChildrenScroll,
         props: r,
         childRowHeight: n.props.childRowHeight,
@@ -321,10 +321,10 @@ function R(e) {
     onSelect: S,
     onInteraction: I,
     forceIconsLeft: T
-  } = e, A = C(b, T), R = N(A), D = i.useRef([]);
+  } = e, C = A(b, T), R = N(C), D = i.useRef([]);
   l()(D.current, R) || (D.current = R);
   let x = (0, p.c)("Menu"),
-    L = null == (t = A.find(e => null != e.key)) ? true : t.key,
+    L = null == (t = C.find(e => null != e.key)) ? true : t.key,
     j = (0, c.Z)({
       navId: n,
       items: D.current,
@@ -354,7 +354,7 @@ function R(e) {
       "aria-label": e["aria-label"],
       children: (0, r.jsxs)(k, {
         className: E.scroller,
-        children: [0 === A.length && (0, r.jsx)(h.ck, {
+        children: [0 === C.length && (0, r.jsx)(h.ck, {
           disabled: true,
           label: () => (0, r.jsx)(w, {}),
           menuItemProps: j.getItemProps({
@@ -363,7 +363,7 @@ function R(e) {
           isFocused: false,
           onFocus: () => {},
           onClose: O
-        }), A.length > 0 && P(A, j, [], O)]
+        }), C.length > 0 && P(C, j, [], O)]
       })
     }))
   })

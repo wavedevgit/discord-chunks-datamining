@@ -22,7 +22,7 @@ let o = function(e) {
       color: i.TVs.colors.TEXT_FEEDBACK_WARNING
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
-      color: "header-muted",
+      color: "text-muted",
       children: t
     })]
   })

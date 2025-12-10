@@ -40,7 +40,7 @@ let f = e => {
       className: p.iconWrapper,
       children: (0, r.jsx)(s.P$X, {
         size: "md",
-        color: s.TVs.colors.INTERACTIVE_ACTIVE
+        color: s.TVs.colors.INTERACTIVE_TEXT_ACTIVE
       })
     }), (0, r.jsxs)("div", {
       className: p.statusTextContainer,

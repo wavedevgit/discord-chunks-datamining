@@ -89,7 +89,7 @@ function M(e, t, n, r) {
   let i = L(e, d.eW.PREMIUM_TRIAL);
   switch (e.subscriptionPlanId) {
     case I.Xh.PREMIUM_GROUP_MONTH:
-      return N.intl.formatToPlainString(C.default["8bPDtb"], {
+      return N.intl.formatToPlainString(A.default["8bPDtb"], {
         premiumGroupProductName: (0, T.sO)()
       });
     case I.Xh.PREMIUM_MONTH_LEGACY:
@@ -228,7 +228,7 @@ function G(e) {
       invoice: t
     }), (0, r.jsx)(v.UN, {}), (0, r.jsx)(v.az, {
       label: N.intl.format(t.taxInclusive ? n ? N.t.BqdxQt : N.t.XH4raN : N.t.RUI48E, {}),
-      value: t.currency === A.pKx.USD ? (0, E.T4)(t.total, t.currency) : "".concat((0, E.T4)(t.total, t.currency), "*")
+      value: t.currency === C.pKx.USD ? (0, E.T4)(t.total, t.currency) : "".concat((0, E.T4)(t.total, t.currency), "*")
     })]
   })
 }
@@ -274,7 +274,7 @@ function Z(e) {
       invoice: t
     }), (0, r.jsx)(v.UN, {}), (0, r.jsx)(v.az, {
       label: N.intl.format(t.taxInclusive ? i ? N.t.BqdxQt : N.t.XH4raN : N.t.RUI48E, {}),
-      value: t.currency === A.pKx.USD ? (0, E.T4)(t.total, t.currency) : "".concat((0, E.T4)(t.total, t.currency), "*")
+      value: t.currency === C.pKx.USD ? (0, E.T4)(t.total, t.currency) : "".concat((0, E.T4)(t.total, t.currency), "*")
     })]
   })
 }
@@ -387,8 +387,8 @@ function Y(e) {
     return null != l ? l : N.intl.format(N.t["2FvcjG"], {
       duration: e,
       days: t,
-      contactLink: A.EYA.CONTACT,
-      helpdeskArticle: h.Z.getArticleURL(A.BhN.PREMIUM_TRIAL)
+      contactLink: C.EYA.CONTACT,
+      helpdeskArticle: h.Z.getArticleURL(C.BhN.PREMIUM_TRIAL)
     })
   }
   let f = i.taxInclusive ? N.t["hay+gu"] : N.t.da0lki;
@@ -396,8 +396,8 @@ function Y(e) {
     children: N.intl.format(f, {
       rate: (0, E.og)((0, E.T4)(i.subtotal, i.currency), u, d),
       renewalDate: null != s ? s : o ? null != n ? n.subscriptionPeriodEnd : i.subscriptionPeriodStart : i.subscriptionPeriodEnd,
-      contactLink: A.EYA.CONTACT,
-      helpdeskArticle: h.Z.getArticleURL(A.BhN.BILLING)
+      contactLink: C.EYA.CONTACT,
+      helpdeskArticle: h.Z.getArticleURL(C.BhN.BILLING)
     })
   })
 }

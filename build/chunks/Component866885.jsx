@@ -86,7 +86,7 @@ function V(e) {
   let {
     channel: p,
     isLoading: _
-  } = e, [C, G] = i.useState(false), Z = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), B = null == Z ? true : Z.applicationId, F = (0, s.e7)([T.ZP], () => null != B && T.ZP.isProxyTicketRefreshing(B), [B]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, m.q)(B), Y = null == Z ? true : Z.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == p ? true : p.id)), {
+  } = e, [A, G] = i.useState(false), Z = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), B = null == Z ? true : Z.applicationId, F = (0, s.e7)([T.ZP], () => null != B && T.ZP.isProxyTicketRefreshing(B), [B]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, m.q)(B), Y = null == Z ? true : Z.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == p ? true : p.id)), {
     dockedRect: K,
     isHidden: z
   } = (0, s.cj)([O.Z], () => {
@@ -95,7 +95,7 @@ function V(e) {
       dockedRect: null != e ? O.Z.getDockedRect(e.id) : null,
       isHidden: O.Z.isEmbeddedActivityHidden()
     }
-  }), q = (0, A.sU)({
+  }), q = (0, C.sU)({
     channelId: null == p ? true : p.id
   }), {
     activityParticipant: Q,
@@ -124,7 +124,7 @@ function V(e) {
   }
 
   function es() {
-    G(!C)
+    G(!A)
   }
 
   function el(e) {
@@ -145,7 +145,7 @@ function V(e) {
       onMouseMove: n,
       onMouseLeave: i,
       onToggleHeight: es,
-      isExpanded: C,
+      isExpanded: A,
       hideExpandedButton: o,
       embeddedActivity: Z
     }) : o ? (0, r.jsx)(D.q5, {
@@ -212,8 +212,8 @@ function V(e) {
           [M.pipMode]: ei,
           [U.elevationHigh]: ei,
           [k.idle]: i && !(null == (t = Z.config) ? true : t.useInteractivePIP),
-          [M.pipModeShort]: ei && !C,
-          [M.pipModeTall]: ei && C,
+          [M.pipModeShort]: ei && !A,
+          [M.pipModeTall]: ei && A,
           [M.hidden]: z,
           [M.multiPIPMode]: ea
         }),
@@ -229,8 +229,8 @@ function V(e) {
           })
         }), _ || F ? (0, r.jsx)(l.$jN, {
           className: o()(M.iframe, {
-            [M.pipModeShort]: ei && !C,
-            [M.pipModeTall]: ei && C
+            [M.pipModeShort]: ei && !A,
+            [M.pipModeTall]: ei && A
           })
         }) : (0, r.jsx)(R.J, {
           allowPopups: (0, N.h)(H),
@@ -238,8 +238,8 @@ function V(e) {
           url: Z.url,
           queryParams: eu,
           className: o()(M.iframe, {
-            [M.pipModeShort]: ei && !C,
-            [M.pipModeTall]: ei && C,
+            [M.pipModeShort]: ei && !A,
+            [M.pipModeTall]: ei && A,
             [M.pipNonInteractive]: ei && !(null == (n = Z.config) ? true : n.useInteractivePIP)
           }),
           shouldRefocus: !ei && W
@@ -257,7 +257,7 @@ let H = e => {
     channel: t
   } = e, n = B(e, ["channel"]);
   let i = T.ZP.getCurrentEmbeddedActivity();
-  (0, C.Z)({
+  (0, A.Z)({
     connectedEmbeddedActivity: i
   });
   let {

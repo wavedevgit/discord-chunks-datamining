@@ -43,16 +43,16 @@ function E(e, t, n) {
     collator: v,
     layoutDelegate: y,
     layout: O
-  }), [E, t.collection, t.disabledKeys, I, n, S, v, y, O]), A = (0, l.Me)(e.id);
-  r._e.set(t, A);
+  }), [E, t.collection, t.disabledKeys, I, n, S, v, y, O]), C = (0, l.Me)(e.id);
+  r._e.set(t, C);
   let {
-    gridProps: C
+    gridProps: A
   } = (0, s.N)({
     ...e,
-    id: A,
+    id: C,
     keyboardDelegate: T
   }, t, n);
-  b && (C["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.OV)() && "expandedKeys" in t && (C.role = "treegrid");
+  b && (A["aria-rowcount"] = t.collection.size + t.collection.headerRows.length), (0, f.OV)() && "expandedKeys" in t && (A.role = "treegrid");
   let {
     column: N,
     direction: P
@@ -66,8 +66,8 @@ function E(e, t, n) {
   return (0, u.r)(() => {
     D && (0, o.xQ)(D, "assertive", 500)
   }, [D]), {
-    gridProps: (0, d.d)(C, w, {
-      "aria-describedby": [w["aria-describedby"], C["aria-describedby"]].filter(Boolean).join(" ")
+    gridProps: (0, d.d)(A, w, {
+      "aria-describedby": [w["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ")
     })
   }
 }

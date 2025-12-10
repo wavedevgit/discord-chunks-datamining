@@ -34,8 +34,8 @@ function v(e) {
   }).enabled, I = _.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
   } = (0, l.ZP)(), {
-    userDisplayNameStyles: A,
-    guildDisplayNameStyles: C,
+    userDisplayNameStyles: C,
+    guildDisplayNameStyles: A,
     pendingDisplayNameStyles: N,
     pendingErrors: P
   } = (0, m.mD)(t, n), R = [];
@@ -49,9 +49,9 @@ function v(e) {
     (0, s.NI)(null), p.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
   }, []), M = (0, i.useCallback)(() => {
     (0, f.N_)(null)
-  }, []), k = true !== N || (null != n ? null != C : null != A);
+  }, []), k = true !== N || (null != n ? null != A : null != C);
   if (!S && !k) return null;
-  let U = true !== N ? N : C;
+  let U = true !== N ? N : A;
   return (0, r.jsx)(h.Z, {
     title: b.intl.string(y.default["86GtGH"]),
     titleIcon: x ? (0, r.jsx)(o.IGR, {

@@ -821,7 +821,7 @@ class e3 extends Chunk473749.PureComponent {
       let {
         activeView: t
       } = e;
-      (0, F.PG)(t, this.props.chatInputType, this.props.channel.id)
+      (0, B.PG)(t, this.props.chatInputType, this.props.channel.id)
     }), eY(this, "handleOpenAppLauncher", e => {
       let {
         applicationId: t
@@ -867,7 +867,7 @@ let e4 = Chunk473749.memo(function(e) {
     return null != d && null != (i = null == (e = ex.ZP.getMember(null != (t = null == n ? true : n.id) ? t : eW.lds, null == d ? true : d.id)) ? true : e.isPending) && i
   }), m = (0, p.e7)([er.Z], () => er.Z.isEnabled()), g = (0, eo.Z)(t.id), b = (0, K.Z)(t.id), y = (0, eh.k)(t.id), _ = (0, p.e7)([eS.Z], () => eS.Z.getVoiceChannelId()), O = (0, p.e7)([e_.Z], () => e_.Z.getChannel(_)), x = (0, p.e7)([eI.default], () => t.type !== eW.d4z.DM ? null : eI.default.getUser(t.getRecipientId())), E = (0, p.e7)([el.ZP, eC.default], () => el.ZP.getUserCombo(eC.default.getId(), t.id)), j = (0, C.iD)(t), S = (0, C.d7)(t), P = j.length > 0 || t.rateLimitPerUser > 0 || null != E || null != S, {
     showLinkedLobbyApplicationLoadingIndicator: I
-  } = (0, eD.Z)(t.linkedLobby), Z = (0, B.Z)("ChannelChat");
+  } = (0, eD.Z)(t.linkedLobby), Z = (0, F.Z)("ChannelChat");
   return (0, i.jsx)(e3, {
     channel: t,
     isEditing: null != (0, p.e7)([eO.Z], () => eO.Z.getEditingMessageId(t.id)),

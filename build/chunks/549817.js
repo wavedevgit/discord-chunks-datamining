@@ -29,7 +29,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk372897 = require("./372897.js"),
   Chunk490897 = require("./490897.js");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,7 +45,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -153,8 +153,8 @@ let x = {
       s = O.Z.getEnabled(e) ? O.Z.getDefaultChannelIds(e) : [],
       [u, p] = (0, v.Ee)(e, t, s),
       b = [...o, ...s],
-      C = b.map(e => _.Z.getChannel(e)).filter(E.lm),
-      P = (0, S.v)(e, new Set(b), C, true).length,
+      A = b.map(e => _.Z.getChannel(e)).filter(E.lm),
+      P = (0, S.v)(e, new Set(b), A, true).length,
       w = null == n ? [] : n.options.map(e => e.id),
       x = O.Z.getConnections(e),
       L = (0, v.OZ)(x),
@@ -174,7 +174,7 @@ let x = {
         provider_connections_not_connected: L.notConnected,
         application_connections_connected: j.connected,
         application_connections_not_connected: j.notConnected
-      })), (0, l.Ju)(e, A.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), D(e, true), f.Z.isFullServerPreview(e)) {
+      })), (0, l.Ju)(e, C.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), D(e, true), f.Z.isFullServerPreview(e)) {
       (0, d.zS)(e, b, []), (0, d.aq)(e, {
         optInEnabled: true
       }), (0, d.og)(e, Array.from(i));

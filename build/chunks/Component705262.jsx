@@ -188,7 +188,7 @@ let H = Object.freeze({
       isCoachmark: s
     } = e, {
       type: l
-    } = i.useContext(Y), [c] = (0, o.Wu)([A.Z], () => [A.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2;
+    } = i.useContext(Y), [c] = (0, o.Wu)([C.Z], () => [C.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2;
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: D.Si.TIER_2,
@@ -219,9 +219,9 @@ let H = Object.freeze({
       delay: l
     } = i.useContext(Y), {
       analyticsLocations: m
-    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [h, g] = (0, o.Wu)([A.Z], () => {
+    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [h, g] = (0, o.Wu)([C.Z], () => {
       var e;
-      return [A.Z.isPreview, null == (e = A.Z.gradientPreset) ? true : e.id]
+      return [C.Z.isPreview, null == (e = C.Z.gradientPreset) ? true : e.id]
     }), [E, b] = i.useState(false), [y, O] = i.useState(false), v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
     i.useEffect(() => {
       (y === P.XV.length - 2 && "EDITOR" === a || g === s.Us.EASTER_EGG) && b(true)
@@ -270,7 +270,7 @@ let H = Object.freeze({
         })
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(A.Z, {
         isDisabled: t,
         onSelect: () => {
           (0, _.XO)(_.wh.CUSTOM_THEME, {
@@ -326,7 +326,7 @@ let H = Object.freeze({
       delay: a
     } = i.useContext(Y), {
       analyticsLocations: s
-    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, A.Z], () => [y.Z.theme, null == A.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === w.KW.ON]), _ = e => {
+    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, C.Z], () => [y.Z.theme, null == C.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === w.KW.ON]), _ = e => {
       (0, T.xs)(), W({
         isPersisted: true,
         analyticsLocations: s,

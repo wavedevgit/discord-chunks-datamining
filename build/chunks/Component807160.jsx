@@ -201,7 +201,7 @@ function ev(e) {
     guildProductListingId: n
   } = e, r = (0, I.hO)(t, n, {
     requireCurrentGuild: false
-  }), o = (0, A.C)(r), s = (0, p.e7)([B.Z], () => B.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? er.intl.string(er.t.H11qcT) : o, c = a.useCallback(async () => {
+  }), o = (0, C.C)(r), s = (0, p.e7)([B.Z], () => B.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? er.intl.string(er.t.H11qcT) : o, c = a.useCallback(async () => {
     (null == s ? true : s.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, P.Z)(ee.Z5c.GUILD_PRODUCT(t, n)) : await (0, P.Z)(ee.Z5c.CHANNEL(t)), (0, k.default)()
   }, [s, t, n]);
   return (0, i.jsxs)(i.Fragment, {
@@ -249,7 +249,7 @@ function eS(e) {
         color: "text-default",
         className: ei.guildProductBenefitLabel,
         children: er.intl.string(er.t.gWBNet)
-      }), (0, i.jsx)(C.Z, {
+      }), (0, i.jsx)(A.Z, {
         role: c
       })]
     })]
@@ -874,8 +874,8 @@ function eT(e) {
   }, [d, f]);
   let I = (0, p.e7)([B.Z], () => B.Z.getGuild(null == m ? true : m.guildId)),
     T = c ? m : true,
-    A = r.subscription,
-    C = (0, p.e7)([H.Z], () => null != A && A.type !== ee.NYc.PREMIUM ? H.Z.get(A.items[0].planId) : null),
+    C = r.subscription,
+    A = (0, p.e7)([H.Z], () => null != C && C.type !== ee.NYc.PREMIUM ? H.Z.get(C.items[0].planId) : null),
     N = (0, p.e7)([F.default], () => {
       var e, t, n, i;
       let a = r.isGift ? null == (e = r.entitlements) ? true : e.find(e => {
@@ -898,7 +898,7 @@ function eT(e) {
     compactMode: s,
     className: l,
     payment: r,
-    plan: C,
+    plan: A,
     claimedGiftUser: N,
     hasLinkedToApplication: O
   })

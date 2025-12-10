@@ -64,7 +64,7 @@ let v = function(e) {
   } = (0, l.ZP)(b(s)), v = (0, f.N)(), S = (0, o.Z)(null != v && null != v.expires_at ? Date.parse(v.expires_at) : 0), {
     variant: I,
     showNagbar: T
-  } = (0, d.ZP)("PremiumTrialEndingNotice"), A = null == v || (null == (t = v.subscription_trial) ? true : t.sku_id) !== s || null == v.expires_at || Object.values(S).every(e => 0 === e) || v.trial_id !== m.a7 && !T;
+  } = (0, d.ZP)("PremiumTrialEndingNotice"), C = null == v || (null == (t = v.subscription_trial) ? true : t.sku_id) !== s || null == v.expires_at || Object.values(S).every(e => 0 === e) || v.trial_id !== m.a7 && !T;
   if ((0, c.Z)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.TRIAL_NOTICE,
@@ -72,9 +72,9 @@ let v = function(e) {
         trial_id: null == v ? true : v.trial_id
       }
     }, {
-      disableTrack: A
-    }), A) return null;
-  let C = () => {
+      disableTrack: C
+    }), C) return null;
+  let A = () => {
     (0, u.Z)({
       trialId: v.trial_id,
       subscriptionTier: s,
@@ -91,7 +91,7 @@ let v = function(e) {
     children: [(0, r.jsx)(p.Jy, {
       children: (0, _.kj)(s, S)
     }), (0, r.jsx)(p.OJ, {
-      onClick: C,
+      onClick: A,
       text: O(s)
     })]
   }) : (0, r.jsxs)(a.qXd, {
@@ -104,7 +104,7 @@ let v = function(e) {
       color: "currentColor",
       className: E.premiumIcon
     }), (0, _.kj)(s, S), (0, r.jsx)(a.EyT, {
-      onClick: C,
+      onClick: A,
       children: O(s)
     })]
   })

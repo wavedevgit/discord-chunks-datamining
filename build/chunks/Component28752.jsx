@@ -96,7 +96,7 @@ function b(e) {
             className: p.rowDetails,
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/medium",
-              color: "interactive-active",
+              color: "interactive-text-active",
               children: e.title
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/medium",

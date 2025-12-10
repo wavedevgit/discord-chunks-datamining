@@ -145,7 +145,7 @@ var j = function e(t) {
       r && (n = r.prototype)
     } else if ("%AsyncIteratorPrototype%" === t) {
       var i = e("%AsyncGenerator%");
-      i && A && (n = A(i.prototype))
+      i && C && (n = C(i.prototype))
     }
     return x[t] = n, n
   },

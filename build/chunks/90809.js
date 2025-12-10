@@ -41,7 +41,7 @@ function p(e, t, n) {
     }
   }, {
     itemProps: T,
-    isPressed: A
+    isPressed: C
   } = (0, f.C)({
     selectionManager: t.selectionManager,
     key: m.key,
@@ -51,7 +51,7 @@ function p(e, t, n) {
     shouldSelectOnPressUp: E,
     onAction: v ? () => v(m.key) : b,
     isDisabled: 0 === t.collection.size
-  }), C = e => {
+  }), A = e => {
     var r, a, c, u, d;
     if (!e.currentTarget.contains(e.target) || t.isKeyboardNavigationDisabled || !n.current || !document.activeElement) return;
     let f = (0, o.QL)(n.current);
@@ -106,7 +106,7 @@ function p(e, t, n) {
     })
   }, P = (0, c.d)(T, {
     role: "gridcell",
-    onKeyDownCapture: C,
+    onKeyDownCapture: A,
     "aria-colspan": m.colSpan,
     "aria-colindex": null != m.colIndex ? m.colIndex + 1 : true,
     colSpan: h ? true : m.colSpan,
@@ -120,7 +120,7 @@ function p(e, t, n) {
     })
   }), {
     gridCellProps: P,
-    isPressed: A
+    isPressed: C
   }
 }
 

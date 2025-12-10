@@ -54,7 +54,7 @@ function v(e) {
   }(e, ["title", "emojiId", "emojiName", "icon", "completed", "Icon", "onClick"]);
   let m = "channel" === u.variant ? u.channelId : null,
     g = "static" === u.variant ? u.subtitle : u.channelName,
-    h = null != m ? I.ZP.getNewMemberActionIconURL({
+    f = null != m ? I.ZP.getNewMemberActionIconURL({
       channelId: m,
       icon: r
     }) : null;
@@ -63,8 +63,8 @@ function v(e) {
       [j.clickableAction]: null != d
     }),
     onClick: d,
-    children: [null != h ? (0, l.jsx)("img", {
-      src: h,
+    children: [null != f ? (0, l.jsx)("img", {
+      src: f,
       className: j.icon,
       width: 32,
       height: 32,
@@ -114,11 +114,11 @@ function b(e) {
     channelId: a,
     title: s,
     emoji: g,
-    icon: h
+    icon: f
   } = n, {
     id: N,
     name: I
-  } = null != g ? g : {}, O = (0, o.e7)([m.Z], () => m.Z.getChannel(a)), E = (0, d.ZP)(O, true), S = (0, o.e7)([f.Z], () => f.Z.can(x.Plq.VIEW_CHANNEL, O)), T = i.useMemo(() => {
+  } = null != g ? g : {}, O = (0, o.e7)([m.Z], () => m.Z.getChannel(a)), E = (0, d.ZP)(O, true), S = (0, o.e7)([h.Z], () => h.Z.can(x.Plq.VIEW_CHANNEL, O)), T = i.useMemo(() => {
     if (null != O) return () => (0, p.gp)(O.guild_id, O.id)
   }, [O]);
   if (null == O || !S) return null;
@@ -130,7 +130,7 @@ function b(e) {
     channelName: E,
     emojiId: N,
     emojiName: I,
-    icon: h,
+    icon: f,
     completed: r,
     Icon: _,
     onClick: T
@@ -140,7 +140,7 @@ function b(e) {
 function D(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([O.Z], () => O.Z.getNewMemberActions(t), [t]), r = (0, o.e7)([E.Z], () => E.Z.getCompletedActions(t)), d = (0, o.e7)([g.ZP], () => g.ZP.getSelfMember(t)), u = (0, o.e7)([h.Z], () => h.Z.getGuild(t));
+  } = e, n = (0, o.e7)([O.Z], () => O.Z.getNewMemberActions(t), [t]), r = (0, o.e7)([E.Z], () => E.Z.getCompletedActions(t)), d = (0, o.e7)([g.ZP], () => g.ZP.getSelfMember(t)), u = (0, o.e7)([f.Z], () => f.Z.getGuild(t));
   i.useEffect(() => {
     var e;
     null == r && (null == d ? true : d.flags) != null && (0, s.yE)(null != (e = d.flags) ? e : 0, T.q.STARTED_HOME_ACTIONS) && (0, p.Fg)(t)

@@ -2,7 +2,7 @@
 /** chunk id: 987716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => A
+  q: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -78,7 +78,7 @@ function T(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = e => {
+let C = e => {
   let {
     isShopGift: t,
     className: n,
@@ -87,8 +87,8 @@ let A = e => {
     giftRecipient: y,
     selectedGiftStyle: v,
     setSelectedGiftStyle: T,
-    emojiConfetti: A,
-    soundEffect: C,
+    emojiConfetti: C,
+    soundEffect: A,
     setEmojiConfetti: N,
     setSoundEffect: P
   } = (0, c.wD)(), [R, D] = i.useState(false), w = i.useRef(null), x = (0, s.Jb)({
@@ -114,11 +114,11 @@ let A = e => {
       }), k && (0, r.jsxs)("div", {
         className: o()(b.soundEmojiContainer, Z && b.refresh),
         children: [(0, r.jsx)(u.Z, {
-          sound: C,
+          sound: A,
           onSelect: B
         }), (0, r.jsx)(h.Z, {
           setEmojiConfetti: N,
-          emojiConfetti: null == A ? true : A
+          emojiConfetti: null == C ? true : C
         })]
       })]
     }), (0, r.jsx)("div", S(O({

@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk393238 = require("./393238.js"),
   Chunk254109 = require("./254109.js"),
   Chunk212459 = require("./212459.js");
@@ -66,7 +66,7 @@ function d(e) {
       x: e.clientX,
       y: e.clientY
     }))
-  }, A = e => {
+  }, C = e => {
     if (!_) {
       if (0 === e.button) {
         (0, s.yg)(s.uG.ZOOM_IN_IMAGE_PRESSED), m(true);
@@ -92,7 +92,7 @@ function d(e) {
   return (0, r.jsx)(a.animated.div, {
     ref: h,
     onMouseDown: T,
-    onMouseUp: A,
+    onMouseUp: C,
     onMouseMove: e => O.current && I(e.movementX, e.movementY),
     onWheel: e => !e.ctrlKey && I(-e.deltaX, -e.deltaY),
     onMouseLeave: () => O.current = false,

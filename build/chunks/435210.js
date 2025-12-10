@@ -28,7 +28,7 @@ exports.format = function(e) {
         default:
           return e
       }
-    }), s = r[n]; n < i; s = r[++n]) O(s) || !A(s) ? o += " " + s : o += " " + c(s);
+    }), s = r[n]; n < i; s = r[++n]) O(s) || !C(s) ? o += " " + s : o += " " + c(s);
   return o
 }, exports.deprecate = function(e, n) {
   if (true !== r && true === r.noDeprecation) return e;
@@ -91,13 +91,13 @@ function p(e, n, r) {
       return e.stylize("[Function" + c + "]", "special")
     }
     if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
-    if (C(n)) return e.stylize(Date.prototype.toString.call(n), "date");
+    if (A(n)) return e.stylize(Date.prototype.toString.call(n), "date");
     if (N(n)) return m(n)
   }
   var u = "",
     d = false,
     y = ["{", "}"];
-  if (b(n) && (d = true, y = ["[", "]"]), P(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), C(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + m(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
+  if (b(n) && (d = true, y = ["[", "]"]), P(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), A(n) && (u = " " + Date.prototype.toUTCString.call(n)), N(n) && (u = " " + m(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
   if (r < 0)
     if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     else return e.stylize("[Object]", "special");
@@ -173,19 +173,19 @@ function I(e) {
 }
 
 function T(e) {
-  return A(e) && "[object RegExp]" === R(e)
-}
-
-function A(e) {
-  return "object" == typeof e && null !== e
+  return C(e) && "[object RegExp]" === R(e)
 }
 
 function C(e) {
-  return A(e) && "[object Date]" === R(e)
+  return "object" == typeof e && null !== e
+}
+
+function A(e) {
+  return C(e) && "[object Date]" === R(e)
 }
 
 function N(e) {
-  return A(e) && ("[object Error]" === R(e) || e instanceof Error)
+  return C(e) && ("[object Error]" === R(e) || e instanceof Error)
 }
 
 function P(e) {
@@ -236,7 +236,7 @@ exports.debuglog = function(e) {
   return null == e
 }, exports.isNumber = v, exports.isString = S, exports.isSymbol = function(e) {
   return "symbol" == typeof e
-}, exports.isUndefined = I, exports.isRegExp = T, exports.types.isRegExp = T, exports.isObject = A, exports.isDate = C, exports.types.isDate = C, exports.isError = N, exports.types.isNativeError = N, exports.isFunction = P, exports.isPrimitive = function(e) {
+}, exports.isUndefined = I, exports.isRegExp = T, exports.types.isRegExp = T, exports.isObject = C, exports.isDate = A, exports.types.isDate = A, exports.isError = N, exports.types.isNativeError = N, exports.isFunction = P, exports.isPrimitive = function(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || true === e
 }, exports.isBuffer = require("./102439.js");
 var w = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -253,7 +253,7 @@ function L(e, t) {
 exports.log = function() {
   console.log("%s - %s", x(), exports.format.apply(exports, arguments))
 }, exports.inherits = require("./689118.js"), exports._extend = function(e, t) {
-  if (!t || !A(t)) return e;
+  if (!t || !C(t)) return e;
   for (var n = Object.keys(t), r = n.length; r--;) e[n[r]] = t[n[r]];
   return e
 };

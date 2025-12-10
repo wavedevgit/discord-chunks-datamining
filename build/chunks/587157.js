@@ -31,8 +31,8 @@ function v(e) {
       ref: S,
       autoFocus: I = false,
       shouldFocusWrap: T = false,
-      disallowEmptySelection: A = false,
-      disallowSelectAll: C = false,
+      disallowEmptySelection: C = false,
+      disallowSelectAll: A = false,
       escapeKeyBehavior: N = "clearSelection",
       selectOnFocus: P = "replace" === n.selectionBehavior,
       disallowTypeAhead: R = false,
@@ -117,10 +117,10 @@ function v(e) {
           }
           break;
         case "a":
-          (0, o.y)(e) && "multiple" === n.selectionMode && true !== C && (e.preventDefault(), n.selectAll());
+          (0, o.y)(e) && "multiple" === n.selectionMode && true !== A && (e.preventDefault(), n.selectAll());
           break;
         case "Escape":
-          "clearSelection" !== N || A || 0 === n.selectedKeys.size || (e.stopPropagation(), e.preventDefault(), n.clearSelection());
+          "clearSelection" !== N || C || 0 === n.selectedKeys.size || (e.stopPropagation(), e.preventDefault(), n.clearSelection());
           break;
         case "Tab":
           if (!w)

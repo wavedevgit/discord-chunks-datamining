@@ -108,7 +108,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     i.useImperativeHandle(t, () => ({
       onPickerOpen: eL
     }));
-    let el = (0, A.Sd)(c),
+    let el = (0, C.Sd)(c),
       ec = 0 === el.filter(e => e.type !== N.Ih.EMPTY_GUILD_UPSELL).length,
       eu = (0, h.ep)({
         gridWrapperRef: Q,
@@ -121,9 +121,9 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       ef = i.useMemo(() => new Set(ed), [ed]),
       ep = (0, l.e7)([y.default], () => y.default.getCurrentUser()),
       e_ = i.useMemo(() => (0, L.S)(ea, ep, c), [ea, ep, c]),
-      em = (0, A.RJ)(),
-      eh = (0, A.LZ)(),
-      eg = (0, l.cj)([C.Z], () => C.Z.getAllGuildStickers()),
+      em = (0, C.RJ)(),
+      eh = (0, C.LZ)(),
+      eg = (0, l.cj)([A.Z], () => A.Z.getAllGuildStickers()),
       {
         sendable: eE = [],
         sendableWithPremium: eb = []
@@ -137,9 +137,9 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         rowCount: eS,
         rowCountBySection: eI,
         stickersGrid: eT,
-        gutterWidth: eA,
-        columnCounts: eC
-      } = (0, A.el)({
+        gutterWidth: eC,
+        columnCounts: eA
+      } = (0, C.el)({
         filteredStickers: e_,
         stickersCategories: el,
         collapsedStickersCategories: ef,
@@ -177,7 +177,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         handleGridContainerKeyDown: ew,
         isUsingKeyboardNavigation: ex
       } = (0, P.t)({
-        columnCounts: eC,
+        columnCounts: eA,
         stickersListRef: ee,
         stickersGrid: eT,
         onGridItemSelect: eN,
@@ -191,7 +191,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         t = [];
       if (null !== e) {
         var n;
-        t = null != (n = C.Z.getStickersByGuildId(e)) ? n : []
+        t = null != (n = A.Z.getStickersByGuildId(e)) ? n : []
       }
       let r = 0;
       null != eg && [...eg.values()].forEach(e => {
@@ -243,7 +243,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
             getStickerItemProps: eP,
             getStickerRowProps: eR,
             gridWidth: eu,
-            gutterWidth: eA,
+            gutterWidth: eC,
             isUsingKeyboardNavigation: ex,
             onSelectSticker: eO,
             rowCount: eS,
@@ -261,7 +261,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       })]
     })
   }),
-  ei = (e, t) => ((0, A.fP)(), (0, r.jsx)("div", {
+  ei = (e, t) => ((0, C.fP)(), (0, r.jsx)("div", {
     className: U.wrapper,
     id: M.nZ,
     "aria-labelledby": M.ED,

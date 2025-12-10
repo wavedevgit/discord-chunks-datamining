@@ -36,12 +36,12 @@ function g(e) {
   }), {
     pendingAvatarDecoration: S,
     errors: I
-  } = (0, p.Tb)(null == n ? true : n.id), T = true === S ? null != v : null != S, A = () => {
+  } = (0, p.Tb)(null == n ? true : n.id), T = true === S ? null != v : null != S, C = () => {
     (0, u.ps)({
       analyticsLocations: y,
       guild: n
     })
-  }, C = () => {
+  }, A = () => {
     (0, p.PO)(null, null == n ? true : n.id)
   }, N = E ? s.gtL : o.zx;
   return (0, r.jsxs)(_.Z, {
@@ -54,7 +54,7 @@ function g(e) {
       className: h.buttonsContainer,
       children: [(0, r.jsx)(N, {
         size: o.zx.Sizes.SMALL,
-        onClick: A,
+        onClick: C,
         className: a()({
           [h.buttonHighlighted]: E
         }),
@@ -66,7 +66,7 @@ function g(e) {
           variant: "secondary",
           size: "sm",
           text: (0, c.ad)(t, n) ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.OrokWm),
-          onClick: C
+          onClick: A
         })
       })]
     }), t.isStaff() && O && (0, r.jsx)(b, {

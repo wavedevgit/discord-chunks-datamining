@@ -142,7 +142,7 @@ async function h(e) {
         n = true, clearTimeout(y), null != E && clearTimeout(E);
         let I = e.videoTracks[0],
           T = e.audioTracks[0],
-          A = {
+          C = {
             videoCodec: null != (c = null == I ? true : I.codec) ? c : null,
             audioCodec: null != (f = null == T ? true : T.codec) ? f : null,
             videoCodecDescription: null != I ? a(I.codec) : null,
@@ -158,7 +158,7 @@ async function h(e) {
             isFragmented: null != (v = e.isFragmented) ? v : null,
             containerFormat: u(null != (S = e.brands) ? S : [])
           };
-        t(A)
+        t(C)
       }, h.onError = () => {
         b()
       }, h.onSeek = async t => {

@@ -94,13 +94,13 @@ function v(e) {
   let y = null != x ? u.intl.formatToPlainString(u.t["Kw+5YX"], {
       filename: x
     }) : u.intl.string(u.t.SNPvSv),
-    I = (0, o.Jb)({
+    N = (0, o.Jb)({
       orientation: "horizontal",
       isDisabled: C
     }),
     {
-      ref: N
-    } = I,
+      ref: I
+    } = N,
     K = function(e, t) {
       if (null == e) return {};
       var A, n, r = function(e, t) {
@@ -115,7 +115,7 @@ function v(e) {
         for (n = 0; n < a.length; n++) A = a[n], !(t.indexOf(A) >= 0) && Object.prototype.propertyIsEnumerable.call(e, A) && (r[A] = e[A])
       }
       return r
-    }(I, ["ref"]);
+    }(N, ["ref"]);
   return r.useEffect(() => {
     if (U && null != x) {
       var e, t;
@@ -189,7 +189,7 @@ function v(e) {
       })]
     }), (0, n.jsxs)("div", f(g({
       "aria-label": b,
-      ref: N
+      ref: I
     }, K), {
       className: c.radioGroup,
       children: [null != j && (0, n.jsx)(m, {

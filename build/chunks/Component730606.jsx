@@ -2,7 +2,7 @@
 /** chunk id: 730606, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qk: () => C,
+  Qk: () => A,
   WG: () => R,
   ZP: () => D
 }), require("./388685.js");
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk810348 = require("./810348.js");
 
-function C(e) {
+function A(e) {
   let {
     src: t,
     width: n,
@@ -78,8 +78,8 @@ function P(e) {
       isSingleMosaicItem: true,
       onToggleObscurity: u,
       children: e => (0, r.jsx)("div", {
-        className: o()(A.obscureWrapper, {
-          [A.obscure]: e
+        className: o()(C.obscureWrapper, {
+          [C.obscure]: e
         }),
         children: t(e)
       })
@@ -92,7 +92,7 @@ function P(e) {
 function R(e, t) {
   if ("IMAGE" === e.type) {
     if (!(0, h._H)(e)) return void(0, d.po)(e.url);
-    C({
+    A({
       src: (0, _.q)({
         proxyURL: e.proxyUrl,
         url: e.url
@@ -114,17 +114,17 @@ function D(e) {
     shouldHideMediaOptions: d = false
   } = e, [f, p] = i.useState(a), _ = i.useRef(a), {
     zoomed: h,
-    setZoomed: C
+    setZoomed: A
   } = (0, E.Y)(), R = i.useCallback(e => {
-    p(e = N(e, t.length)), _.current = e, null == n || n(e), C(false)
-  }, [n, t, C]);
+    p(e = N(e, t.length)), _.current = e, null == n || n(e), A(false)
+  }, [n, t, A]);
   i.useEffect(() => {
     let e = () => R(_.current + 1),
       t = () => R(_.current - 1);
     return m.S.subscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), m.S.subscribe(I.CkL.MODAL_CAROUSEL_PREV, t), () => {
       m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_NEXT, e), m.S.unsubscribe(I.CkL.MODAL_CAROUSEL_PREV, t)
     }
-  }, [R, C]);
+  }, [R, A]);
   let D = t[f],
     w = (0, u.g4)({
       type: l.l.GenericMedia,
@@ -143,14 +143,14 @@ function D(e) {
           },
           icon: s.j9r,
           tooltip: T.intl.string(T.t.vgfxaA),
-          className: o()(A.navPrev, e)
+          className: o()(C.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
             e.stopPropagation(), m.S.dispatch(I.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
           tooltip: T.intl.string(T.t.XiOHRX),
-          className: o()(A.navNext, e)
+          className: o()(C.navNext, e)
         })]
       }) : true
     }), (0, r.jsx)(b.Z, {

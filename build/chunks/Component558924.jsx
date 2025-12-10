@@ -69,32 +69,32 @@ function _(e, n) {
     id: "ring",
     label: _ ? (0, l.jsxs)("div", {
       className: x.label,
-      children: [N.intl.string(N.t["3Hv9qQ"]), k && (0, l.jsx)(I, {})]
-    }) : N.intl.string(N.t.bHa9kN),
+      children: [y.intl.string(y.t["3Hv9qQ"]), k && (0, l.jsx)(I, {})]
+    }) : y.intl.string(y.t.bHa9kN),
     subtext: _ ? (0, l.jsx)(C, {
       channel: s
     }) : null,
     action: () => {
-      k && M(y.L.TAKE_ACTION), c.Z.ring(n, [e.id], "user_context_menu"), _ && null != n && (0, h.Kh)(n)
+      k && M(N.L.TAKE_ACTION), c.Z.ring(n, [e.id], "user_context_menu"), _ && null != n && (0, h.Kh)(n)
     },
     className: x.menuItem
   }) : T ? (0, l.jsx)(d.sNh, {
     id: "stop-ringing",
     label: (0, l.jsxs)("div", {
       className: x.label,
-      children: [N.intl.string(N.t.ygslb0), k && (0, l.jsx)(I, {})]
+      children: [y.intl.string(y.t.ygslb0), k && (0, l.jsx)(I, {})]
     }),
     subtext: _ ? (0, l.jsx)(d.Text, {
       variant: "text-xs/medium",
       className: r()(x.subtext, x.ringing),
-      children: N.intl.format(N.t.dwfzZi, {
+      children: y.intl.format(y.t.dwfzZi, {
         channelName: (0, l.jsx)(C, {
           channel: s
         })
       })
     }) : null,
     action: () => {
-      k && M(y.L.TAKE_ACTION), c.Z.stopRinging(n, [e.id])
+      k && M(N.L.TAKE_ACTION), c.Z.stopRinging(n, [e.id])
     },
     className: x.menuItem
   }) : null
@@ -115,6 +115,6 @@ let C = e => {
     })
   },
   I = () => (0, Chunk54381.jsx)(Chunk481060.IGR, {
-    color: Chunk692547.Z.colors.BG_BRAND.css,
+    color: Chunk692547.Z.colors.BACKGROUND_BRAND.css,
     text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
   })

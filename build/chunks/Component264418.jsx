@@ -87,8 +87,8 @@ function y(e) {
       onRequestClose: S,
       popoverRef: I,
       position: T,
-      caretConfig: A,
-      scrollBehavior: C
+      caretConfig: C,
+      scrollBehavior: A
     } = e,
     N = E(e, ["title", "body", "badge", "graphic", "size", "actions", "textLink", "gradientColor", "onRequestClose", "popoverRef", "position", "caretConfig", "scrollBehavior"]);
   let P = i.useCallback((e, t) => {
@@ -102,10 +102,10 @@ function y(e) {
       shouldShow: N.shouldShow,
       hasVideo: N.hasVideo,
       position: T,
-      caretConfig: A,
+      caretConfig: C,
       onRequestClose: P,
       gradientColor: v,
-      scrollBehavior: C
+      scrollBehavior: A
     }, "edge" === N.alignmentStrategy ? {
       alignmentStrategy: "edge",
       align: N.align

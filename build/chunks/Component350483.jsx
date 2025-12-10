@@ -91,11 +91,11 @@ function I(e, t) {
     v = null != (i = l.Z.getState().guildId) ? i : m.ME,
     I = l.Z.getState().channelId,
     T = O(v, e),
-    A = e > 0 ? 0 : T.length - 1,
-    C = S(v, b),
-    N = C.indexOf(I) + e;
+    C = e > 0 ? 0 : T.length - 1,
+    A = S(v, b),
+    N = A.indexOf(I) + e;
   for (; null != v && "" !== v;) {
-    if (s = C[N], f(v))
+    if (s = A[N], f(v))
       for (; null != s && "" !== s;) {
         if ("string" == typeof s) {
           if (d(v, s)) return (0, _.K)(v, s, false, g(v, s))
@@ -107,10 +107,10 @@ function I(e, t) {
             guildId: v
           }))
         });
-        N += e, s = C[N]
+        N += e, s = A[N]
       }
-    if (A += e, null == (v = T[A]) || "" === v) break;
-    C = S(v, b), N = e < 0 ? C.length - 1 : 0
+    if (C += e, null == (v = T[C]) || "" === v) break;
+    A = S(v, b), N = e < 0 ? A.length - 1 : 0
   }
   p.S.dispatch(m.CkL.SHAKE_APP, {
     duration: 200,

@@ -59,12 +59,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = 40,
+let A = 40,
   N = e => {
     let {
       roleIcon: t,
@@ -85,9 +85,9 @@ let C = 40,
       }) : O.intl.formatToPlainString(O.t.UDDkGy, {
         name: S
       }),
-      R = A(I({}, t), {
-        src: null == t.src ? t.src : (0, c.o)(t.src, C),
-        size: C
+      R = C(I({}, t), {
+        src: null == t.src ? t.src : (0, c.o)(t.src, A),
+        size: A
       }),
       D = () => {
         (0, u.f)({
@@ -109,7 +109,7 @@ let C = 40,
             className: v.mainContent,
             children: [(0, r.jsx)("div", {
               className: v.roleIconContainer,
-              children: (0, r.jsx)(f.Z, A(I({}, R), {
+              children: (0, r.jsx)(f.Z, C(I({}, R), {
                 enableTooltip: false,
                 className: v.__invalid_roleIcon,
                 enableHeight: false

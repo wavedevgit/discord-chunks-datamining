@@ -2,7 +2,7 @@
 /** chunk id: 709093, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -74,7 +74,7 @@ function I(e) {
   })
 }
 let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.string(m.t["t9uG/o"]),
-  A = function(e) {
+  C = function(e) {
     var t, n, i;
     let {
       hideCloseButton: u = false,
@@ -84,8 +84,8 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
       isEligibleForTrial: E = false,
       showTrialBadge: b = false,
       showDiscountBadge: y = false,
-      isPremiumGroupPurchase: A = false
-    } = e, C = g === p.PremiumTypes.TIER_2, N = (0, c.Fv)(E), P = (0, d.N)(), R = null == P || null == (t = P.discount) ? true : t.amount, D = C ? v : O, {
+      isPremiumGroupPurchase: C = false
+    } = e, A = g === p.PremiumTypes.TIER_2, N = (0, c.Fv)(E), P = (0, d.N)(), R = null == P || null == (t = P.discount) ? true : t.amount, D = A ? v : O, {
       step: w,
       breadcrumbs: x,
       startedPaymentFlowWithPaymentSourcesRef: L,
@@ -103,7 +103,7 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
     });
     if (0 === M.length) return null;
     let k = (M = M.filter(e => {
-        if (A && e.id === l.h8.PLAN_SELECT) returnfalse;
+        if (C && e.id === l.h8.PLAN_SELECT) returnfalse;
         let t = e.id !== l.h8.ADD_PAYMENT_STEPS,
           n = e.id === l.h8.ADD_PAYMENT_STEPS && !L.current;
         return !E || E && (t || n)
@@ -111,8 +111,8 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
       U = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
       G = null != U && null != w,
       Z = N && G && w === l.h8.REVIEW,
-      B = C ? "nitro-pink" : "nitro-green",
-      F = T(C, A);
+      B = A ? "nitro-pink" : "nitro-green",
+      F = T(A, C);
     return j ? (0, r.jsx)("div", {
       className: h.container,
       children: (0, r.jsx)(o.$1m, {
@@ -127,7 +127,7 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
           [h.containerBottomPadding]: !G
         }),
         children: [(0, r.jsx)(I, {
-          isTier2: C
+          isTier2: A
         }), !u && (0, r.jsx)(o.olH, {
           "data-migration-pending": true,
           hideOnFullscreen: _,
@@ -139,7 +139,7 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
           className: Z ? h.bigWumpus : h.wumpus
         }), (0, r.jsxs)("div", {
           className: h.textContainer,
-          children: [A && (0, r.jsx)("div", {
+          children: [C && (0, r.jsx)("div", {
             className: h.betaBadgeContainer,
             children: (0, r.jsx)(o.Cts, {
               type: "beta",

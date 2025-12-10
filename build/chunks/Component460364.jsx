@@ -92,8 +92,8 @@ function g(e) {
       null == (e = v.current) || e.scrollRowIntoView(I)
     }
   }, [n, S, I]);
-  let A = i.useCallback(e => p[e], [p]),
-    C = (0, o.E)("MenuSubmenuListItem"),
+  let C = i.useCallback(e => p[e], [p]),
+    A = (0, o.E)("MenuSubmenuListItem"),
     N = () => p.length > 0 && (0, r.jsx)("div", {
       className: u.submenuPaddingContainer,
       children: (0, r.jsx)("div", _(f({
@@ -105,13 +105,13 @@ function g(e) {
           className: E,
           listPadding: [6, 0, 6, 8],
           onScroll: g,
-          renderRow: A,
+          renderRow: C,
           rowCount: p.length,
           rowHeight: h
         })
       }))
     });
-  if (C) return (0, r.jsx)(a.pS, {
+  if (A) return (0, r.jsx)(a.pS, {
     spacing: 4,
     placement: "right-start",
     autoFlip: true,

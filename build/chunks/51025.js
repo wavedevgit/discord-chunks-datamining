@@ -2,7 +2,7 @@
 /** chunk id: 51025, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A1: () => C,
+  A1: () => A,
   LO: () => y,
   S1: () => E,
   Wx: () => R,
@@ -13,7 +13,7 @@ require.d(exports, {
   ob: () => b,
   pC: () => I,
   v4: () => T,
-  wO: () => A,
+  wO: () => C,
   wi: () => P
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
@@ -145,11 +145,11 @@ function T() {
   Chunk830168.Z.resume()
 }
 
-function A() {
+function C() {
   Chunk830168.Z.pause()
 }
 
-function C(e, t) {
+function A(e, t) {
   i.Z.dispatch({
     type: "DISPATCH_APPLICATION_MOVE_UP",
     applicationId: e,

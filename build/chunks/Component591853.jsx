@@ -179,16 +179,16 @@ function ey(e) {
     buttons: s = [],
     header: f,
     onVoiceChannelPreview: h
-  } = e, [g, E] = i.useState(false), [b, y] = i.useState(null), v = i.useRef(null), S = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [T, A] = i.useState(false), [C, N] = i.useState(false), {
+  } = e, [g, E] = i.useState(false), [b, y] = i.useState(null), v = i.useRef(null), S = (0, c.e7)([G.Z], () => null != t && es.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && G.Z.can(es.Plq.SEND_MESSAGES, t)), [T, C] = i.useState(false), [A, N] = i.useState(false), {
     voiceBar: P,
     joinVoiceButton: R
-  } = eC({
+  } = eA({
     channel: t,
     entry: o,
     onVoiceChannelPreview: h
   }), {
     embeddedActivity: D
-  } = (0, $.Z)(o), w = eA(D), x = null != R && 0 === s.length ? [R] : s, L = x.length > 0, j = x.length >= 2, [M, U] = i.useState(!L), Z = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
+  } = (0, $.Z)(o), w = eC(D), x = null != R && 0 === s.length ? [R] : s, L = x.length > 0, j = x.length >= 2, [M, U] = i.useState(!L), Z = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAx"], {
     channel: "@".concat(Z)
@@ -201,7 +201,7 @@ function ey(e) {
           surface_type: eo.Kd.GUILD_MEMBER_LIST,
           channel_id: null == t ? true : t.id,
           guild_id: null == t ? true : t.guild_id
-        }), (0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), A(true), N(false), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+        }), (0, I.Q3)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), C(true), N(false), g) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
       else {
         var o;
         let e = await m.Z.getOrEnsurePrivateChannel(n.id);
@@ -212,7 +212,7 @@ function ey(e) {
         sendToChannel: r,
         onComplete: (e, t) => {
           N(true), setTimeout(() => {
-            A(false), a(e, t)
+            C(false), a(e, t)
           }, 600)
         },
         interactionType: eo.xP.REACTION_EMOJI_REACT_SENT,
@@ -267,7 +267,7 @@ function ey(e) {
       containerRef: v,
       children: (0, r.jsxs)("div", {
         children: [(0, r.jsx)(ea.Z, {
-          sent: C,
+          sent: A,
           shown: T,
           className: eu.toastContainer
         }), null != z ? z : (0, r.jsx)(er.Z, {
@@ -313,7 +313,7 @@ function ey(e) {
               size: "custom",
               width: 20,
               height: 20,
-              color: d.Z.colors.ICON_PRIMARY
+              color: d.Z.colors.ICON_STRONG
             })
           })]
         }), false === M && (0, r.jsxs)("div", {
@@ -485,7 +485,7 @@ function eI(e) {
   } = g, b = (0, q.dX)(E), y = b ? null == (t = E.extra) ? true : t.application_id : true, O = (0, N.Z)({
     location: "ContentPopout",
     applicationId: f ? true : y,
-    source: C.m1.ActivityCard,
+    source: A.m1.ActivityCard,
     trackEntryPointImpression: true,
     sourceUserId: E.author_id
   }, {
@@ -561,7 +561,7 @@ function eT(e) {
     } = e,
     m = em(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]);
   let h = (0, c.e7)([k.Z], () => k.Z.getChannel(null == s ? true : s.channelId)),
-    [b] = i.useMemo(() => (0, P.p9)(h, V.Z, U.Z, G.Z, A.default), [h]),
+    [b] = i.useMemo(() => (0, P.p9)(h, V.Z, U.Z, G.Z, C.default), [h]),
     {
       entry: y
     } = m,
@@ -570,7 +570,7 @@ function eT(e) {
     S = (0, N.Z)({
       location: "ContentPopout",
       applicationId: v,
-      source: C.m1.ActivityCard,
+      source: A.m1.ActivityCard,
       trackEntryPointImpression: true,
       sourceUserId: y.author_id
     }, {
@@ -652,7 +652,7 @@ function eT(e) {
   })
 }
 
-function eA(e) {
+function eC(e) {
   let t = (0, c.e7)([U.Z], () => U.Z.getGuild((0, y.j)(null == e ? true : e.location))),
     n = (0, c.e7)([k.Z], () => k.Z.getChannel((0, y.p)(null == e ? true : e.location))),
     i = (0, c.Wu)([F.default], () => {
@@ -673,7 +673,7 @@ function eA(e) {
           active: true
         }), (0, r.jsx)(_.Fbu, {
           size: "xxs",
-          color: d.Z.colors.INTERACTIVE_NORMAL
+          color: d.Z.colors.INTERACTIVE_TEXT_DEFAULT
         }), (0, r.jsx)(_.VL1, {
           size: "xs",
           color: d.Z.colors.TEXT_DEFAULT
@@ -708,7 +708,7 @@ function eA(e) {
   }) : null
 }
 
-function eC(e) {
+function eA(e) {
   let {
     channel: t,
     entry: n,
@@ -781,7 +781,7 @@ function eC(e) {
               active: true
             }), (0, r.jsx)(_.Fbu, {
               size: "xxs",
-              color: d.Z.colors.INTERACTIVE_NORMAL
+              color: d.Z.colors.INTERACTIVE_TEXT_DEFAULT
             }), (0, r.jsx)(_.gj8, {
               size: "xs",
               color: d.Z.colors.TEXT_DEFAULT

@@ -34,11 +34,11 @@ function E(e) {
     className: S,
     tagClassName: I,
     isTryItOut: T,
-    onOpenProfile: A,
-    onClose: C,
+    onOpenProfile: C,
+    onClose: A,
     nicknameVariant: N = "heading-lg/bold"
-  } = e, P = e => null == A ? e : (0, r.jsx)(s.kL8, {
-    onClick: A,
+  } = e, P = e => null == C ? e : (0, r.jsx)(s.kL8, {
+    onClick: C,
     className: g.clickableUsername,
     "aria-label": h.intl.string(h.t["+Xp3hq"]),
     children: e
@@ -63,7 +63,7 @@ function E(e) {
           shouldWrap: true,
           loop: true,
           inProfile: true,
-          shouldUnderlineOnHover: null != A
+          shouldUnderlineOnHover: null != C
         })
       }) : (0, r.jsx)(s.Text, {
         className: g.nickname,
@@ -107,7 +107,7 @@ function E(e) {
         })]
       }), (0, r.jsx)(_.ZP, {
         userId: t.id,
-        onClose: C,
+        onClose: A,
         containerClassName: g.guildTagContainer,
         className: g.guildTag
       }), E]

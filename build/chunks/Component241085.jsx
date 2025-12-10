@@ -50,7 +50,7 @@ function R(e) {
         [P.hidden]: t
       }),
       children: [(0, r.jsx)(u.xD0, {
-        color: u.TVs.colors.ICON_PRIMARY,
+        color: u.TVs.colors.ICON_STRONG,
         size: "refresh_sm"
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
@@ -80,7 +80,7 @@ function R(e) {
     }), t && (0, r.jsxs)("div", {
       className: o()(P.mainBody, P.absolutelyPositioned),
       children: [(0, r.jsx)(u.xD0, {
-        color: u.TVs.colors.ICON_PRIMARY,
+        color: u.TVs.colors.ICON_STRONG,
         size: "refresh_sm"
       }), (0, r.jsx)(u.Text, {
         variant: "text-md/normal",
@@ -95,7 +95,7 @@ function D() {
   return (0, Chunk54381.jsxs)("div", {
     className: o()(Chunk975279.mainWrapper, Chunk975279.mainBody),
     children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
-      color: Chunk481060.TVs.colors.ICON_PRIMARY,
+      color: Chunk481060.TVs.colors.ICON_STRONG,
       size: "refresh_sm"
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
@@ -160,7 +160,7 @@ function x(e) {
     setUploadIds: x,
     currentUploads: L,
     error: j
-  } = (0, C.t)(e), M = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
+  } = (0, A.t)(e), M = (0, c.e7)([b.Z], () => b.Z.getBasicChannel(E));
   l()(null != M, "FileUploadActionComponent requires a valid channel");
   let k = i.useCallback(e => {
       var t;
@@ -180,7 +180,7 @@ function x(e) {
       });
       if ((0, I.Bf)(e, M.guild_id)) return (0, S.G)(M, e);
       let n = e.map(e => {
-        let n = (0, A.VD)(O),
+        let n = (0, C.VD)(O),
           r = {
             id: n,
             file: e,

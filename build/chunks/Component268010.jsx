@@ -44,25 +44,25 @@ let S = (e, t, n) => {
       entry: n,
       onReaction: u,
       onVoiceChannelPreview: T
-    } = e, A = (0, a.e7)([l.default], () => l.default.getUser(n.author_id)), {
-      largeImage: C
+    } = e, C = (0, a.e7)([l.default], () => l.default.getUser(n.author_id)), {
+      largeImage: A
     } = (0, f.rv)({
       entry: n
     }), {
       primaryColor: N,
       secondaryColor: P
-    } = (0, h.Z)(null == C ? true : C.src), R = (0, a.e7)([s.default], () => s.default.locale), D = (0, m.Z)(O.ABu.CRUNCHYROLL), w = (0, p.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
-      if (null != A && (null == C ? true : C.src) != null) return (0, _.B)({
+    } = (0, h.Z)(null == A ? true : A.src), R = (0, a.e7)([s.default], () => s.default.locale), D = (0, m.Z)(O.ABu.CRUNCHYROLL), w = (0, p.ap)(n.extra.media_assets_large_text), x = i.useCallback(e => {
+      if (null != C && (null == A ? true : A.src) != null) return (0, _.B)({
         entry: n,
-        mediaImageSrc: null == C ? true : C.src,
-        avatarSrc: A.getAvatarURL(null == t ? true : t.guild_id, 128),
-        description: S(n, t, A),
+        mediaImageSrc: null == A ? true : A.src,
+        avatarSrc: C.getAvatarURL(null == t ? true : t.guild_id, 128),
+        description: S(n, t, C),
         timestamp: (0, p.yh)(n, R),
         episodeDescription: w,
         colors: [N, P],
         channelId: e
       })
-    }, [t, n, w, R, null == C ? true : C.src, N, P, A]), L = () => {
+    }, [t, n, w, R, null == A ? true : A.src, N, P, C]), L = () => {
       if (null == n.extra.url) return;
       let e = d.Z.safeParseWithQuery(n.extra.url);
       null != e && null != e.protocol && null != e.hostname && (0, c.q)({
@@ -70,7 +70,7 @@ let S = (e, t, n) => {
         trusted: false
       })
     };
-    return null == A ? null : (0, r.jsxs)(b.yR, {
+    return null == C ? null : (0, r.jsxs)(b.yR, {
       children: [(0, r.jsx)(b.wG, {
         channel: t,
         entry: n,
@@ -94,10 +94,10 @@ let S = (e, t, n) => {
         children: (0, r.jsx)(b.WT, {
           onReaction: u,
           onVoiceChannelPreview: T,
-          user: A,
+          user: C,
           channel: t,
           generateReactionImage: x,
-          reactionImageAltText: I(n, A),
+          reactionImageAltText: I(n, C),
           entry: n
         })
       })]

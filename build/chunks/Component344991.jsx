@@ -88,7 +88,7 @@ function S(e) {
     type: b,
     maxValues: v,
     disabled: S
-  } = t, I = (0, _.Wo)(t), [T, A] = i.useState(false), [C, N] = i.useState(false), [P, R] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [D, w] = i.useState(new Set(P.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
+  } = t, I = (0, _.Wo)(t), [T, C] = i.useState(false), [A, N] = i.useState(false), [P, R] = i.useState(new Map(null == g ? true : g.map(e => [e.value, e]))), [D, w] = i.useState(new Set(P.keys())), [x, L] = i.useState(() => (null != g ? g : []).map(e => e.value)), [j, M] = i.useState(0);
   i.useEffect(() => {
     let e = (null != g ? g : []).map(e => e.value);
     if (e.every(e => x.includes(e)) && x.every(t => e.includes(t))) return;
@@ -121,8 +121,8 @@ function S(e) {
     }) && w(new Set(P.keys()))
   }, [G, b, P]);
   i.useEffect(() => {
-    !T && !C && (P.size === D.size && Array.from(P.keys()).every(e => D.has(e)) || W())
-  }, [T, C, D, P, W]);
+    !T && !A && (P.size === D.size && Array.from(P.keys()).every(e => D.has(e)) || W())
+  }, [T, A, D, P, W]);
   let K = e => {
       T || N(true), R(new Map(e.map(e => [e.value, e])))
     },
@@ -150,8 +150,8 @@ function S(e) {
       }),
       options: q,
       placeholder: X ? I : true,
-      onClose: () => A(false),
-      onOpen: () => A(true),
+      onClose: () => C(false),
+      onOpen: () => C(true),
       onBlur: () => N(false),
       maxVisibleItems: 5,
       renderOptionPrefix: Q,

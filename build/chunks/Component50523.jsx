@@ -30,8 +30,8 @@ function v(e) {
     application: S,
     customId: I,
     customLink: T,
-    referrerId: A,
-    message: C
+    referrerId: C,
+    message: A
   } = e, N = null == S || null == (t = S.bot) ? true : t.id, P = (0, c.ms)({
     context: {
       type: "contextless"
@@ -55,7 +55,7 @@ function v(e) {
         isStart: null == j,
         embeddedActivitiesManager: k,
         customId: Z,
-        referrerId: A,
+        referrerId: C,
         analyticsLocations: w
       })
     },
@@ -69,7 +69,7 @@ function v(e) {
         botId: N,
         analyticsLocations: w,
         customId: Z,
-        referrerId: A
+        referrerId: C
       })
     }
   });
@@ -91,11 +91,11 @@ function v(e) {
     trackingConfig: {
       id: S.id,
       linkType: u.U.CUSTOM_ACTIVITY_LINK,
-      referrerId: A,
+      referrerId: C,
       activityCustomId: Z,
-      guildId: null == (v = _.Z.getChannel(C.channel_id)) ? true : v.guild_id,
-      channelId: C.channel_id,
-      messageId: C.id
+      guildId: null == (v = _.Z.getChannel(A.channel_id)) ? true : v.guild_id,
+      channelId: A.channel_id,
+      messageId: A.id
     }
   })
 }

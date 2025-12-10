@@ -100,7 +100,7 @@ function w(e) {
   }) : null != g && null != g.approximateCount ? N.intl.format(N.t["4bMK1z"], {
     maxReward: g.messages.nameWithArticle,
     maxRewardCount: (0, _.Bs)(g.approximateCount, s),
-    helpCenterLink: p.Z.getArticleURL(C.BhN.QUESTS_LEARN_MORE)
+    helpCenterLink: p.Z.getArticleURL(A.BhN.QUESTS_LEARN_MORE)
   }) : c
 }
 
@@ -183,10 +183,10 @@ let j = e => {
     year: "numeric",
     month: "long",
     day: "numeric"
-  }), C = v >= b.OH.ACCEPTED, L = v >= b.OH.COMPLETED, j = _ || g, M = (0, E.t5)(n, A.dr.QUESTS_CARD, i, O), k = (0, m.O5)(), U = (0, b.Rf)(n), G = (0, E.DD)({
+  }), A = v >= b.OH.ACCEPTED, L = v >= b.OH.COMPLETED, j = _ || g, M = (0, E.t5)(n, C.dr.QUESTS_CARD, i, O), k = (0, m.O5)(), U = (0, b.Rf)(n), G = (0, E.DD)({
     quest: n,
     taskDetails: U,
-    location: A.dr.QUESTS_CARD,
+    location: C.dr.QUESTS_CARD,
     questContent: o.j.QUESTS_EMBED,
     sourceQuestContent: O
   }), Z = (0, s.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), B = () => {
@@ -230,7 +230,7 @@ let j = e => {
               [P.questRewardEmbedXs]: "xs" === c
             }),
             learnMoreStyle: "text",
-            location: A.dr.QUESTS_CARD,
+            location: C.dr.QUESTS_CARD,
             quest: n,
             questContent: i,
             questContentPosition: y,
@@ -240,7 +240,7 @@ let j = e => {
       }), (0, r.jsxs)("div", {
         className: P.taskDetails,
         children: [(0, r.jsx)(u.Text, {
-          variant: R(i, c, C),
+          variant: R(i, c, A),
           className: P.taskInstructions,
           children: p ? N.intl.formatToPlainString(N.t["ge+AJp"], {
             questName: n.config.messages.questName

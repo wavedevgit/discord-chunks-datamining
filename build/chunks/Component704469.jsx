@@ -95,7 +95,7 @@ let y = e => {
     } = e;
     return (0, a.jsx)(s.sV5, {
       size: "custom",
-      color: c.TVs.colors.INTERACTIVE_ACTIVE,
+      color: c.TVs.colors.INTERACTIVE_TEXT_ACTIVE,
       width: 40,
       height: 40,
       className: i()(_.productPreviewIconOverlay, {

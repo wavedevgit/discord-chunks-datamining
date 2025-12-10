@@ -5,7 +5,7 @@ require.d(exports, {
   A3: () => T,
   Do: () => O,
   f4: () => I,
-  f9: () => A
+  f9: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -143,7 +143,7 @@ let y = e => {
       children: u
     })
   },
-  A = e => {
+  C = e => {
     let {
       orbPriceAmount: t,
       orbBalance: n,

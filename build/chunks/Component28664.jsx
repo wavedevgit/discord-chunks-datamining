@@ -86,13 +86,13 @@ function y(e) {
     align: S = "center",
     spacing: I,
     layerContext: T,
-    targetElementRef: A,
-    anchorRef: C,
+    targetElementRef: C,
+    anchorRef: A,
     caretConfig: N,
     positionKey: P,
     ariaHidden: R = false
   } = e, D = E(e, ["children", "text", "keyboardShortcut", "__unsupportedReactNodeAsText", "asContainer", "tag", "position", "align", "spacing", "layerContext", "targetElementRef", "anchorRef", "caretConfig", "positionKey", "ariaHidden"]);
-  let w = (0, f.c)(A),
+  let w = (0, f.c)(C),
     x = i.useId(),
     {
       isVisible: L,
@@ -153,7 +153,7 @@ function y(e) {
     isVisible: L,
     isRendered: true,
     targetElementRef: w.targetElementRef,
-    anchorRef: C,
+    anchorRef: A,
     id: x,
     content: G,
     position: v,

@@ -115,7 +115,7 @@ function v(e, t) {
 }
 
 function S(e) {
-  I(e), e.p.forEach(A), e.p = null
+  I(e), e.p.forEach(C), e.p = null
 }
 
 function I(e) {
@@ -132,12 +132,12 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   var t = e[W];
   0 === t.i || 1 === t.i ? t.j() : t.g = true
 }
 
-function C(e, t) {
+function A(e, t) {
   t._ = t.p.length;
   var n = t.p[0],
     i = true !== e && e !== n;
@@ -369,10 +369,10 @@ var ee = new(function() {
             d ? S(c) : I(c)
           }
           return "undefined" != typeof Promise && o instanceof Promise ? o.then(function(e) {
-            return v(c, i), C(e, c)
+            return v(c, i), A(e, c)
           }, function(e) {
             throw S(c), e
-          }) : (v(c, i), C(o, c))
+          }) : (v(c, i), A(o, c))
         }
         if (!e || "object" != typeof e) {
           if (true === (o = n(e)) && (o = e), o === H && (o = true), t.D && h(o, true), i) {
@@ -406,7 +406,7 @@ var ee = new(function() {
       return n[W].C = true, I(t), n
     }, exports.finishDraft = function(e, t) {
       var n = (e && e[W]).A;
-      return v(n, t), C(true, n)
+      return v(n, t), A(true, n)
     }, exports.setAutoFreeze = function(e) {
       this.D = e
     }, exports.setUseProxies = function(e) {

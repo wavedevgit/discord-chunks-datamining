@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   $R: () => w,
-  C7: () => C,
+  C7: () => A,
   Ek: () => I,
   Gu: () => Z,
-  JQ: () => A,
+  JQ: () => C,
   NE: () => b,
   RG: () => x,
   Xb: () => M,
@@ -87,7 +87,7 @@ function T(e, t, n) {
   return !!t.hasFlag(g.iLy.HAS_THREAD) && null != n && !!e
 }
 
-function A(e) {
+function C(e) {
   return (0, o.cj)([h.Z, _.Z], () => {
     let t = h.Z.getActiveJoinedThreadsForParent(e.guild_id, e.id),
       n = h.Z.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id),
@@ -102,7 +102,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let t = (0, o.e7)([p.Z], () => p.Z.getChannel(null == e ? true : e.parent_id)),
     n = (0, o.e7)([_.Z], () => null != t && _.Z.can(g.Plq.MANAGE_THREADS, t), [t]),
     r = (0, o.e7)([f.default], () => f.default.getId());

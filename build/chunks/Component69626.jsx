@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Wf: () => T,
-  ZP: () => C,
-  wz: () => A
+  ZP: () => A,
+  wz: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -99,25 +99,25 @@ function T(e) {
     type: "contextless"
   }, {
     command: S
-  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), T = _.dN.useSetting(), A = i.useMemo(() => {
+  } = u.YZ(b, null != (t = n.commandKey) ? t : ""), T = _.dN.useSetting(), C = i.useMemo(() => {
     if (null == S || null == l || S.untranslatedName !== n.commandName || T) returnfalse;
     let e = l.isPrivate();
     if ((0, p.xl)(l) || !e && !c) returnfalse;
     let t = (null == S ? true : S.applicationId) === O.bi.BUILT_IN;
     return !!e || !!t || !!h
-  }, [l, S, c, h, n.commandName, T]), C = i.useCallback(e => {
+  }, [l, S, c, h, n.commandName, T]), A = i.useCallback(e => {
     null == e || e.stopPropagation(), null != l && null != n.commandName && null != n.commandKey && I(l.id, n.commandName, n.commandKey, d.Vh.MENTION)
   }, [l, n.commandKey, n.commandName]);
-  return A ? (0, r.jsxs)(f.Z, {
+  return C ? (0, r.jsxs)(f.Z, {
     role: "link",
-    onClick: C,
+    onClick: A,
     children: [v.GI, s]
   }, o) : (0, r.jsxs)("span", {
     children: [v.GI, s]
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     commandId: t,
     commandName: n,
@@ -139,7 +139,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   return {
     react: (e, t, n) => (0, r.jsx)(T, {
       node: e,

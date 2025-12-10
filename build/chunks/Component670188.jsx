@@ -101,8 +101,8 @@ function O(e) {
     renderPopout: S,
     onRequestOpen: I,
     onRequestClose: T,
-    onClosePopout: A,
-    shouldShow: C,
+    onClosePopout: C,
+    shouldShow: A,
     shouldPreload: N = true
   } = e, P = h(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]);
   let R = i.useRef(true),
@@ -125,12 +125,12 @@ function O(e) {
       appContext: y,
       openedAt: R.current,
       closePopout: () => {
-        e.closePopout(), null == A || A()
+        e.closePopout(), null == C || C()
       }
-    })), [n, a, S, s, d, _, f, g, b, y, A]);
+    })), [n, a, S, s, d, _, f, g, b, y, C]);
   return (0, r.jsx)(o.yRy, m(p({
     popoutKey: u.Tg,
-    shouldShow: C,
+    shouldShow: A,
     preload: N ? D : true,
     renderPopout: w,
     onRequestOpen: I,

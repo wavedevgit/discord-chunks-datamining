@@ -109,7 +109,7 @@ let h = {
       size: v,
       gradientColor: S,
       estimatedTooltipHeight: I
-    } = e, T = i.useRef(null), A = i.useRef(null), C = i.useMemo(() => ({
+    } = e, T = i.useRef(null), C = i.useRef(null), A = i.useMemo(() => ({
       bronze: u.VU.PREMIUM_TENURE_1_MONTH,
       silver: u.VU.PREMIUM_TENURE_3_MONTH,
       gold: u.VU.PREMIUM_TENURE_6_MONTH,
@@ -118,11 +118,11 @@ let h = {
       emerald: u.VU.PREMIUM_TENURE_36_MONTH,
       ruby: u.VU.PREMIUM_TENURE_60_MONTH,
       opal: u.VU.PREMIUM_TENURE_72_MONTH
-    })[_], [_]), N = null != C ? (0, c.J)(C) : null, P = i.useMemo(() => {
-      if (null == C) return "";
-      let e = u.vK[C];
+    })[_], [_]), N = null != A ? (0, c.J)(A) : null, P = i.useMemo(() => {
+      if (null == A) return "";
+      let e = u.vK[A];
       return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-    }, [C]), R = i.useMemo(() => {
+    }, [A]), R = i.useMemo(() => {
       if (!a || null == N) return;
       let e = g ? {
         progressCircleText: E,
@@ -176,10 +176,10 @@ let h = {
             text: "Left"
           })
         })), (0, r.jsx)(l.B, m(p({
-          targetElementRef: A
+          targetElementRef: C
         }, D), {
           children: (0, r.jsx)(s.Button, {
-            buttonRef: A,
+            buttonRef: C,
             variant: "primary",
             text: "Right"
           })

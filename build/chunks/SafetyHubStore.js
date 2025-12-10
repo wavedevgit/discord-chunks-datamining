@@ -36,8 +36,8 @@ let d = {},
   S = Chunk800530.bK.DIDNT_VIOLATE_POLICY,
   I = "",
   T = "",
-  A = "",
-  C = 0,
+  C = "",
+  A = 0,
   N = null,
   P = false,
   R = Chunk800530.oE.NONE,
@@ -137,26 +137,26 @@ function H(e) {
 
 function Y(e) {
   let {} = e;
-  A = "", N = null, P = true
+  C = "", N = null, P = true
 }
 
 function W(e) {
   let {
     verificationWebviewUrl: t
   } = e;
-  A = t, N = null, P = false
+  C = t, N = null, P = false
 }
 
 function K(e) {
   let {
     error: t
   } = e;
-  A = "", N = t, P = false
+  C = "", N = t, P = false
 }
 
 function z(e) {
   let {} = e;
-  A = "", N = null, P = false
+  C = "", N = null, P = false
 }
 
 function q(e) {
@@ -173,14 +173,14 @@ function Q(e) {
 
 function X(e) {
   let {} = e;
-  R = c.oE.LOADING, D = null, C += 1
+  R = c.oE.LOADING, D = null, A += 1
 }
 
 function J(e) {
   let {
     success: t
   } = e;
-  R = t ? c.oE.SUCCESS : C < c.o6 ? c.oE.LOADING : c.oE.FAILURE, D = null
+  R = t ? c.oE.SUCCESS : A < c.o6 ? c.oE.LOADING : c.oE.FAILURE, D = null
 }
 
 function $(e) {
@@ -245,7 +245,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return T
   }
   getAgeVerificationWebviewUrl() {
-    return A
+    return C
   }
   getAgeVerificationError() {
     return N
@@ -260,7 +260,7 @@ class et extends(r = Chunk442837.ZP.Store) {
     return D
   }
   getAgeCheckAttempts() {
-    return C
+    return A
   }
 }
 u(et, "displayName", "SafetyHubStore");

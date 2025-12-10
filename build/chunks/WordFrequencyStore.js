@@ -83,21 +83,21 @@ function T() {
   return module || exports
 }
 
-function A() {
+function C() {
   return !!Chunk353926.Z.hasLoadedExperiments && Chunk240458.V.getCurrentConfig({
     location: "WordFrequencyStore"
   }, {
     autoTrackExposure: false
   }).resetDataIfUnused
 }
-let C = () => {
+let A = () => {
   r = true, g.clear(), E = 0
 };
 
 function N(e) {
   return T() ? (requestIdleCallback(() => {
     I(e)
-  }), false) : !!A() && g.size > 0 && (C(), true)
+  }), false) : !!C() && g.size > 0 && (A(), true)
 }
 let P = e => {
     let {
@@ -149,6 +149,6 @@ d(D, "displayName", "WordFrequencyStore"), d(D, "persistKey", "WordFrequencyStor
 let w = new D(Chunk570140.Z, {
     LOAD_MESSAGES_SUCCESS: P,
     MESSAGE_CREATE: R,
-    DEV_TOOLS_WORD_FREQUENCY_RESET: C
+    DEV_TOOLS_WORD_FREQUENCY_RESET: A
   }),
   x = w

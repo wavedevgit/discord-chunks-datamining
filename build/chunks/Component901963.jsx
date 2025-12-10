@@ -38,9 +38,9 @@ let O = "premiumRetentionEmojiPickerNotice",
     if (i.useEffect(() => {
         T || (0, u.jg)()
       }, [T]), null == I || !(0, m.zV)(I.status) || a) return null;
-    let A = I.status === g.O0b.PAST_DUE ? (0, m.lY)(I).expiresDate : o()(I.currentPeriodStart).add(E.gh),
-      C = "".concat(I.id, ":").concat(A.toISOString());
-    if (v === C) return null;
+    let C = I.status === g.O0b.PAST_DUE ? (0, m.lY)(I).expiresDate : o()(I.currentPeriodStart).add(E.gh),
+      A = "".concat(I.id, ":").concat(C.toISOString());
+    if (v === A) return null;
     let N = m.ZP.getPremiumType(I.planId) === E.PremiumTypes.TIER_0 ? d.JX.PREMIUM_TIER_0 : m.ZP.getPremiumType(I.planId) === E.PremiumTypes.TIER_1 ? d.JX.PREMIUM_TIER_1 : d.JX.PREMIUM_TIER_2;
     return (0, r.jsxs)("div", {
       className: y.premiumRetentionNotice,
@@ -54,7 +54,7 @@ let O = "premiumRetentionEmojiPickerNotice",
           variant: "text-xs/normal",
           children: b.intl.format(b.t.bTMjiO, {
             planName: m.ZP.getTierDisplayNameByPlanId(I.planId),
-            endsAt: A.toDate()
+            endsAt: C.toDate()
           })
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(c.Anchor, {
@@ -68,7 +68,7 @@ let O = "premiumRetentionEmojiPickerNotice",
         })]
       }), (0, r.jsx)(c.P3F, {
         onClick: () => {
-          l.K.set(O, C), v = C, S(true)
+          l.K.set(O, A), v = A, S(true)
         },
         children: (0, r.jsx)(c.Dio, {
           size: "md",

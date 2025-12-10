@@ -93,7 +93,7 @@ let O = 7,
 function T(e) {
   return null != e && (e.value > 0 || (null == e ? true : e.multiplier) > 1)
 }
-let A = new Chunk759174.h(function(e) {
+let C = new Chunk759174.h(function(e) {
     let {
       messageId: t,
       channelId: n,
@@ -112,7 +112,7 @@ let A = new Chunk759174.h(function(e) {
     } = e;
     return "".concat(n, "-").concat(r, "-").concat(t)
   }),
-  C = e => {
+  A = e => {
     let {
       userId: t,
       channelId: n
@@ -123,14 +123,14 @@ let A = new Chunk759174.h(function(e) {
 function N(e) {
   var t, n, r, i, a, s;
   let l = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    c = I.get(C(e)),
+    c = I.get(A(e)),
     u = E(h({}, c, e), {
       value: null != (n = null != (t = e.value) ? t : null == c ? true : c.value) ? n : 0,
       multiplier: Math.min(null != (i = null != (r = e.multiplier) ? r : null == c ? true : c.multiplier) ? i : 1, O),
       decayInterval: null != (a = null == c ? true : c.decayInterval) ? a : new o.Xp
     });
-  I.set(C(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
-    let e = I.get(C(u));
+  I.set(A(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
+    let e = I.get(A(u));
     if (null != e) {
       let n = u.multiplier !== e.multiplier && u.value !== e.value;
       if (e.value <= 0 || n) {
@@ -147,7 +147,7 @@ function N(e) {
 }
 
 function P(e) {
-  A.set(e.messageId, e)
+  C.set(e.messageId, e)
 }
 
 function R(e) {
@@ -183,7 +183,7 @@ function x(e) {
   if (!d.Z.isEnabled()) returnfalse;
   let s = l.default.getId();
   if (!w(null == a ? true : a.id, s, o, S)) returnfalse;
-  let c = I.get(C({
+  let c = I.get(A({
     userId: null != (t = null == a ? true : a.id) ? t : "???",
     channelId: r
   }));
@@ -201,14 +201,14 @@ class L extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk351780.Z, Chunk944486.Z)
   }
   getComboScore(e, t) {
-    let n = I.get(C({
+    let n = I.get(A({
       userId: e,
       channelId: t
     }));
     return null == n ? 0 : (0, f.Eo)(n)
   }
   getUserCombo(e, t) {
-    return I.get(C({
+    return I.get(A({
       userId: e,
       channelId: t
     }))
@@ -219,11 +219,11 @@ class L extends(r = Chunk442837.ZP.Store) {
   }
   getMessageCombo(e) {
     var t;
-    let n = A.get(e);
+    let n = C.get(e);
     return null != (t = null == n ? true : n.combo) ? t : true
   }
   getMostRecentMessageCombo(e) {
-    let t = A.values(e);
+    let t = C.values(e);
     return t[t.length - 1]
   }
   getUserComboShakeIntensity(e, t, n, r) {

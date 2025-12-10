@@ -98,7 +98,7 @@ function T(e, t, n) {
   returntrue
 }
 
-function A(e, t, n, r, i) {
+function C(e, t, n, r, i) {
   var o, s;
   a.Z.dispatch({
     type: e,
@@ -112,7 +112,7 @@ function A(e, t, n, r, i) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     channelId: t,
     messageId: n,
@@ -137,7 +137,7 @@ async function P(e) {
     limit: o,
     after: s,
     type: c
-  } = e, u = c === l.O.VOTE ? N(t, n, i) : C({
+  } = e, u = c === l.O.VOTE ? N(t, n, i) : A({
     channelId: t,
     messageId: n,
     emoji: i
@@ -171,11 +171,11 @@ async function R(e, t, n) {
     confirmText: b.intl.string(b.t["NX+WJN"])
   });
   let m = await j(n, f);
-  return A("MESSAGE_REACTION_ADD", e, t, n, {
+  return C("MESSAGE_REACTION_ADD", e, t, n, {
     burst: f,
     colors: m
   }), await c.Z.unarchiveThreadIfNecessary(e), r.tn.put({
-    url: C({
+    url: A({
       channelId: e,
       messageId: t,
       emoji: n,
@@ -216,7 +216,7 @@ async function R(e, t, n) {
       isRetry: true
     }), {
       isRetry: _
-    }) && (A("MESSAGE_REACTION_REMOVE", e, t, n, {
+    }) && (C("MESSAGE_REACTION_REMOVE", e, t, n, {
       burst: f
     }), f ? i.uv.announce(b.intl.formatToPlainString(b.t.fJeu87, {
       name: n.name
@@ -280,11 +280,11 @@ async function L(e) {
     userId: s,
     options: u
   } = e, d = null != u && !!u.burst, f = null != u && !!u.isRetry;
-  A("MESSAGE_REACTION_REMOVE", t, n, a, {
+  C("MESSAGE_REACTION_REMOVE", t, n, a, {
     userId: s,
     burst: d
   }), await c.Z.unarchiveThreadIfNecessary(t), r.tn.del({
-    url: C({
+    url: A({
       channelId: t,
       messageId: n,
       emoji: a,
@@ -319,7 +319,7 @@ async function L(e) {
         isRetry: f
       })) {
       let e = await j(a, d);
-      A("MESSAGE_REACTION_ADD", t, n, a, {
+      C("MESSAGE_REACTION_ADD", t, n, a, {
         userId: s,
         burst: d,
         colors: e

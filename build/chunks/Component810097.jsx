@@ -82,11 +82,11 @@ function T(e) {
     targetRef: O,
     onAction: v,
     renderMoreButtonPopout: T
-  } = e, A = i.useRef(null), C = (0, s.e7)([d.default], () => d.default.getId() === t.id), N = (0, f.Z)(t.id), {
+  } = e, C = i.useRef(null), A = (0, s.e7)([d.default], () => d.default.getId() === t.id), N = (0, f.Z)(t.id), {
     onInteraction: P,
     onInteractionPopoutTargetRefChange: R
   } = (0, p.Xo)();
-  if (t.bot || C || !N) return null;
+  if (t.bot || A || !N) return null;
   let D = () => {
       R(O), n === _.n_.AVATAR ? v({
         action: "PRESS_REACT_AVATAR"
@@ -156,7 +156,7 @@ function T(e) {
     }), null == T ? true : T(e => {
       let t = () => {
         var t;
-        R(A), null == (t = e.onClick) || t.call(e)
+        R(C), null == (t = e.onClick) || t.call(e)
       };
       return (0, r.jsx)(l.u, {
         asContainer: true,
@@ -165,7 +165,7 @@ function T(e) {
         delay: 0,
         ariaHidden: true,
         children: (0, r.jsx)(u.zx, y(E({
-          ref: A
+          ref: C
         }, e), {
           onClick: t,
           className: h.button,

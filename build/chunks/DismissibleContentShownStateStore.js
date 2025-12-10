@@ -92,8 +92,8 @@ let h = new(require("./499303.js")).I,
     return i.unshift(t.content), i.splice(5), e.recentlyShown = i, null != t.groupName && e.currentlyShownGroup.add(t.groupName), d.O.has(t.content) || (e.shownFatigableCandidate = t, (null == (r = e.prevFatigableCandidate) ? true : r.content) !== t.content && (e.prevFatigableCandidate = t, e.lastWinnerTime = new Date().getTime())), null == (n = t.onAdded) || n.call(t), e
   },
   T = (e, t) => (e.candidates.set(t.content, t), e),
-  A = (e, t) => (e.candidates.delete(t.content), e),
-  C = (e, t) => I(S(e, e.shownFatigableCandidate), t),
+  C = (e, t) => (e.candidates.delete(t.content), e),
+  A = (e, t) => I(S(e, e.shownFatigableCandidate), t),
   N = e => null != e.prevFatigableCandidate ? e.candidates.get(e.prevFatigableCandidate.content) : true,
   P = e => {
     let t = [...e.candidates.keys()];
@@ -106,11 +106,11 @@ let h = new(require("./499303.js")).I,
   D = e => {
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > g;
-    return R(e) && !t ? (h.unschedule(), C(e, N(e))) : (null != e.shownFatigableCandidate && !t || h.scheduled() || x(e) || h.schedule(() => {
+    return R(e) && !t ? (h.unschedule(), A(e, N(e))) : (null != e.shownFatigableCandidate && !t || h.scheduled() || x(e) || h.schedule(() => {
       (0, a.j)(() => {
         y.setState(e => {
           let t = v(e);
-          return C(t, P(t))
+          return A(t, P(t))
         })
       })
     }, 250), e)
@@ -133,7 +133,7 @@ let h = new(require("./499303.js")).I,
     (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
-        return t ? D(S(A(r, e), e)) : S(A(r, e), e)
+        return t ? D(S(C(r, e), e)) : S(C(r, e), e)
       })
     })
   },

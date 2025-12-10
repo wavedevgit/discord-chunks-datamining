@@ -39,12 +39,12 @@ let O = (0, Chunk473749.createContext)(null),
       labelProps: v,
       descriptionProps: I,
       errorMessageProps: T,
-      ...A
+      ...C
     } = (0, u.a)({
       ...e,
       label: g,
       validationBehavior: f
-    }, p), C = (0, r.aX)({
+    }, p), A = (0, r.aX)({
       ...e,
       values: {
         orientation: e.orientation || "vertical",
@@ -59,7 +59,7 @@ let O = (0, Chunk473749.createContext)(null),
       global: true
     });
     return y.createElement("div", {
-      ...(0, h.d)(N, C, E),
+      ...(0, h.d)(N, A, E),
       ref: t,
       slot: e.slot || true,
       "data-orientation": e.orientation || "vertical",
@@ -81,9 +81,9 @@ let O = (0, Chunk473749.createContext)(null),
             errorMessage: T
           }
         }],
-        [i.E, A]
+        [i.E, C]
       ]
-    }, y.createElement(l.y, null, C.children)))
+    }, y.createElement(l.y, null, A.children)))
   }),
   T = (0, Chunk473749.forwardRef)(function(e, t) {
     let {
@@ -106,15 +106,15 @@ let O = (0, Chunk473749.createContext)(null),
       {
         isFocused: I,
         isFocusVisible: T,
-        focusProps: A
+        focusProps: C
       } = (0, f.F)(),
-      C = b || a.isReadOnly,
+      A = b || a.isReadOnly,
       {
         hoverProps: N,
         isHovered: P
       } = (0, p.X)({
         ...e,
-        isDisabled: C
+        isDisabled: A
       }),
       R = (0, r.aX)({
         ...e,
@@ -149,7 +149,7 @@ let O = (0, Chunk473749.createContext)(null),
     }, y.createElement(_.T, {
       elementType: "span"
     }, y.createElement("input", {
-      ...(0, h.d)(c, A),
+      ...(0, h.d)(c, C),
       ref: o
     })), y.createElement(s.p.Provider, {
       value: {

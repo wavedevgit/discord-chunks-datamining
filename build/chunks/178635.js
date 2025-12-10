@@ -67,7 +67,7 @@ let b = 200,
       hotspot: Chunk536442.v6.VOICE_CALL_FEEDBACK,
       storageKey: "lastVoiceFeedback",
       feedbackType: Chunk531578.nw.VOICE,
-      eligibilityChecks: [C]
+      eligibilityChecks: [A]
     }),
     [Chunk531578.nw.STREAM]: E(h({}, y), {
       group: Chunk531578.FB.AV,
@@ -110,7 +110,7 @@ let b = 200,
       hotspot: Chunk536442.v6.VOICE_FILTER_FEEDBACK,
       storageKey: "lastVoiceFilterFeedback",
       feedbackType: Chunk531578.nw.VOICE_FILTER,
-      eligibilityChecks: [C]
+      eligibilityChecks: [A]
     }),
     [Chunk531578.nw.SEARCH_RESULTS]: E(h({}, y), {
       group: Chunk531578.FB.SEARCH,
@@ -139,7 +139,7 @@ function v(e) {
   });
   if (r) returntrue;
   let i = null != (t = f.Z.getFeedbackConfig(e)) ? t : O[e],
-    a = [I, S, A],
+    a = [I, S, C],
     o = null != (n = i.eligibilityChecks) ? n : [];
   return a.every(e => e(i)) && o.every(e => e(i))
 }
@@ -170,7 +170,7 @@ function T(e, t) {
   }))), (null != (o = (0, r.max)([l, s])) ? o : 0) + e.cooldown < Date.now()
 }
 
-function A(e) {
+function C(e) {
   for (let t of Object.values(O).filter(t => {
       let {
         group: n
@@ -181,7 +181,7 @@ function A(e) {
   returntrue
 }
 
-function C(e) {
+function A(e) {
   return !d.Z.getWasEverRtcConnected() || d.Z.getWasEverMultiParticipant()
 }
 

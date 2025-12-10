@@ -319,7 +319,7 @@ class W extends Chunk473749.PureComponent {
       className: Chunk894462.warning,
       children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
         size: "xs",
-        color: Chunk692547.Z.colors.ICON_SECONDARY
+        color: Chunk692547.Z.colors.ICON_SUBTLE
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",

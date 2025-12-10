@@ -68,9 +68,9 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = "NVIDIA GeForce NOW";
+let C = "NVIDIA GeForce NOW";
 
-function C(e, t, n) {
+function A(e, t, n) {
   return n ? O.intl.formatToPlainString(e, t) : O.intl.format(e, t)
 }
 
@@ -141,7 +141,7 @@ function P(e) {
     u = (0, p.f$)(n.config),
     d = (0, p._p)(n.config),
     f = n.config.features.includes(E.S7.NON_GAMING_PLAY_QUEST);
-  return C(t = a && u ? d ? f ? O.t.ztXW8V : O.t["eb/Sna"] : f ? O.t["1AcTqm"] : O.t.ziB0HF : u || null != o ? f ? O.t.enQ3jU : O.t.AwuMRS : f ? O.t["e+K3xJ"] : O.t.NIimTt, {
+  return A(t = a && u ? d ? f ? O.t.ztXW8V : O.t["eb/Sna"] : f ? O.t["1AcTqm"] : O.t.ziB0HF : u || null != o ? f ? O.t.enQ3jU : O.t.AwuMRS : f ? O.t["e+K3xJ"] : O.t.NIimTt, {
     gameTitle: c,
     streamingDurationRequirement: l,
     rewardNameWithArticle: s,
@@ -165,7 +165,7 @@ function R(e) {
     c = n.config.messages.gameTitle,
     u = (0, p.f$)(n.config),
     d = (0, p._p)(n.config);
-  return C(t = a && u ? d ? O.t["eb/Sna"] : O.t.ziB0HF : u || null != o ? O.t.AwuMRS : O.t.NIimTt, {
+  return A(t = a && u ? d ? O.t["eb/Sna"] : O.t.ziB0HF : u || null != o ? O.t.AwuMRS : O.t.NIimTt, {
     gameTitle: c,
     targetMinutes: l,
     rewardNameWithArticle: s,
@@ -190,7 +190,7 @@ function D(e) {
     u = (0, p.f$)(n.config),
     d = (0, p._p)(n.config),
     f = n.config.features.includes(E.S7.NON_GAMING_PLAY_QUEST);
-  return C(t = a && u ? d ? f ? O.t.ztXW8V : O.t["eb/Sna"] : f ? O.t["1AcTqm"] : O.t.ziB0HF : u || null != o ? f ? O.t.enQ3jU : O.t.AwuMRS : f ? O.t["03VJqu"] : O.t.FZL5Q5, {
+  return A(t = a && u ? d ? f ? O.t.ztXW8V : O.t["eb/Sna"] : f ? O.t["1AcTqm"] : O.t.ziB0HF : u || null != o ? f ? O.t.enQ3jU : O.t.AwuMRS : f ? O.t["03VJqu"] : O.t.FZL5Q5, {
     gameTitle: c,
     streamingDurationRequirement: l,
     rewardNameWithArticle: s,
@@ -207,7 +207,7 @@ function w(e) {
   } = e, {
     targetMinutes: i
   } = n, a = t.config.messages.gameTitle;
-  return C(O.t["a/ia7F"], {
+  return A(O.t["a/ia7F"], {
     gameTitle: a,
     streamingDurationRequirement: i
   }, r)
@@ -220,7 +220,7 @@ function x(e, t, n, r) {
     l = (0, p.B3)(e.config),
     c = (0, p.f$)(e.config),
     u = (0, p._p)(e.config);
-  return C(a = c && n ? u ? O.t["xqX+r5"] : O.t["vs/xBu"] : c || null != t ? O.t["W/HkLO"] : e.id === E.V6 ? O.t.Rsd5bL : O.t["g+InPC"], {
+  return A(a = c && n ? u ? O.t["xqX+r5"] : O.t["vs/xBu"] : c || null != t ? O.t["W/HkLO"] : e.id === E.V6 ? O.t.Rsd5bL : O.t["g+InPC"], {
     videoTitle: s,
     rewardNameWithArticle: l,
     duration: t
@@ -234,21 +234,21 @@ function L(e) {
     withoutMarkdown: r,
     questContent: i
   } = e, a = n.targetMinutes, o = (0, p.B3)(t.config);
-  return (0, m.KM)(t) ? C(O.t.VYwSSu, {
+  return (0, m.KM)(t) ? A(O.t.VYwSSu, {
     streamingDurationRequirement: a,
     questReward: o
-  }, r) : t.config.features.includes(E.S7.CLOUD_GAMING_ACTIVITY) ? i === u.jn.QUESTS_EMBED ? C(O.t["C+2RxC"], {
+  }, r) : t.config.features.includes(E.S7.CLOUD_GAMING_ACTIVITY) ? i === u.jn.QUESTS_EMBED ? A(O.t["C+2RxC"], {
     activityName: t.config.messages.gameTitle,
-    providerName: A,
+    providerName: C,
     providerLink: s.Z.getArticleURL(b.BhN.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
     questReward: o
-  }, r) : C(O.t["0NNM3l"], {
+  }, r) : A(O.t["0NNM3l"], {
     activityName: t.config.messages.gameTitle,
-    providerName: A,
+    providerName: C,
     providerLink: s.Z.getArticleURL(b.BhN.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
     streamingDurationRequirement: a,
     questReward: o
-  }, r) : C(O.t.UuzHh8, {
+  }, r) : A(O.t.UuzHh8, {
     activityName: t.config.messages.gameTitle,
     streamingDurationRequirement: a,
     questReward: o
@@ -270,7 +270,7 @@ function j(e) {
     c = n.config.messages.gameTitle,
     u = (0, p.f$)(n.config),
     d = (0, p._p)(n.config);
-  return C(t = a && u ? d ? O.t["X8Yt/1"] : O.t.smG9ql : u || null != o ? O.t.BLyDvO : O.t["hkJ+Gs"], {
+  return A(t = a && u ? d ? O.t["X8Yt/1"] : O.t.smG9ql : u || null != o ? O.t.BLyDvO : O.t["hkJ+Gs"], {
     gameTitle: c,
     streamingDurationRequirement: l,
     duration: o,
@@ -457,7 +457,7 @@ function F(e) {
     popoutTargetElementRef: s,
     onGameSheetOpened: l,
     onGameSheetClosed: c
-  } = e, d = r.config.rewardsConfig.rewardsExpireAt, h = (0, g.B6)(d), b = (0, g.Rf)(r), y = (0, g.Jf)(r), v = (null == (t = r.userStatus) ? true : t.completedAt) != null, S = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, I = b.percentComplete > 0, T = (0, g.z)(r), A = Z({
+  } = e, d = r.config.rewardsConfig.rewardsExpireAt, h = (0, g.B6)(d), b = (0, g.Rf)(r), y = (0, g.Jf)(r), v = (null == (t = r.userStatus) ? true : t.completedAt) != null, S = (null == (n = r.userStatus) ? true : n.enrolledAt) != null, I = b.percentComplete > 0, T = (0, g.z)(r), C = Z({
     quest: r,
     location: E.dr.QUESTS_BAR,
     questContent: u.jn.QUEST_BAR_V2,
@@ -466,21 +466,21 @@ function F(e) {
     popoutTargetElementRef: s,
     onGameSheetOpened: l,
     onGameSheetClosed: c
-  }), C = null != y ? y.percentComplete : b.percentComplete;
+  }), A = null != y ? y.percentComplete : b.percentComplete;
   if (v) return O.intl.formatToPlainString(O.t.APddvF, {
     expirationDate: h
   });
   if (i)
     if (o === u.LI.SELECT) return O.intl.string(O.t.sWUpN8);
     else {
-      if (!(0, m.Pb)(r) || !S || I) return A;
+      if (!(0, m.Pb)(r) || !S || I) return C;
       let e = (0, p.B3)(r.config);
       return O.intl.format(O.t["1votF6"], {
         rewardNameWithArticle: e,
         targetMinutes: b.targetMinutes
       })
     } if ((0, _.q8)(r)) return O.intl.string(O.t["o+e9yh"]);
-  if (C > 0)
+  if (A > 0)
     if (!T) return O.intl.string(O.t.mOrpXG);
     else return (0, f.AV)({
       quest: r,

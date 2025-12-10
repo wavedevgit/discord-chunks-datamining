@@ -66,7 +66,7 @@ function T() {
   return b = null, O(), false
 }
 
-function A(e) {
+function C(e) {
   let {
     isCrashedDisabled: t,
     error: n
@@ -74,7 +74,7 @@ function A(e) {
   returntrue === t && (E = true), null != n && (b = n instanceof Error ? n.message : String(n)), true
 }
 
-function C() {
+function A() {
   return O(), false
 }
 class N extends(r = Chunk442837.ZP.Store) {
@@ -105,10 +105,10 @@ class N extends(r = Chunk442837.ZP.Store) {
 }
 p(N, "displayName", "Overlay-v3-Native-Module-Store");
 let P = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
-    CONNECTION_OPEN: C,
+    CONNECTION_OPEN: A,
     EXPERIMENT_OVERRIDE_BUCKET: S,
     OVERLAY_SET_ENABLED: I,
     OVERLAY_V3_LOAD_NATIVE_MODULE: T,
-    OVERLAY_CRASHED: A
+    OVERLAY_CRASHED: C
   }),
   R = P

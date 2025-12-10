@@ -77,7 +77,7 @@ function P(e) {
         section: e
       })
     }), (0, r.jsxs)("div", {
-      className: C.buttons,
+      className: A.buttons,
       children: [(0, r.jsx)(b.Z, {
         user: t,
         closePopout: L,
@@ -110,7 +110,7 @@ function P(e) {
       guildId: null == R ? true : R.id,
       onClick: L
     }), null != R && (0, r.jsx)(h.Z, {
-      heading: A.intl.string(A.t["LPJmL/"]),
+      heading: C.intl.string(C.t["LPJmL/"]),
       children: (0, r.jsx)(S.Z, {
         user: t,
         currentUser: n,

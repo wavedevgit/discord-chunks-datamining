@@ -5,7 +5,7 @@ require.d(exports, {
   Hf: () => v,
   JT: () => I,
   Nk: () => y,
-  Qm: () => A,
+  Qm: () => C,
   VB: () => O,
   Xq: () => E,
   YZ: () => T,
@@ -230,7 +230,7 @@ function T(e, t) {
   }, [i.result, n.result, t])
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   let i = (0, l.PL)(true, true),
     a = (0, l.em)(e, true, true);
   return r.useMemo(() => {
@@ -247,7 +247,7 @@ function A(e, t, n) {
     }
   }, [null == i ? true : i.result, null == a ? true : a.result, t, n])
 }
-let C = {
+let A = {
   id: "placeholder-section",
   type: Chunk895924.Qi.APPLICATION,
   name: ""
@@ -269,6 +269,6 @@ function P(e, t) {
     untranslatedDescription: "",
     displayDescription: "",
     applicationId: "",
-    section: C
+    section: A
   }
 }

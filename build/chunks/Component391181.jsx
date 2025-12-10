@@ -199,7 +199,7 @@ function S(e) {
     onCopyProductLink: E,
     onTestDownload: S,
     disabled: I = false
-  } = e, T = (0, c.U)(t, y), A = null !== t.price_tier ? (0, u.T4)(t.price_tier, p.pK.USD) : true, C = (0, d.C)(t);
+  } = e, T = (0, c.U)(t, y), C = null !== t.price_tier ? (0, u.T4)(t.price_tier, p.pK.USD) : true, A = (0, d.C)(t);
 
   function N(e) {
     (0, l.jW)(e, () => Promise.resolve(e => (0, r.jsx)(O, b(g({}, e), {
@@ -250,14 +250,14 @@ function S(e) {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: A
-          }), null != C ? (0, r.jsxs)(r.Fragment, {
+            children: C
+          }), null != A ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
               className: m.dotSeparator
             }), (0, r.jsx)(s.Text, {
               variant: "text-md/normal",
               color: "text-default",
-              children: C
+              children: A
             })]
           }) : null]
         }), (0, r.jsx)(s.LZC, {

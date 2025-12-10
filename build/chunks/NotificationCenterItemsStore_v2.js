@@ -108,7 +108,7 @@ function T() {
   y.loading = false, y.initialized = true, y.errored = true
 }
 
-function A(e) {
+function C(e) {
   return b(g({}, e), {
     kind: "notification-center-item",
     message: null != e.message ? (0, l.e5)(e.message) : true,
@@ -116,7 +116,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     unknownApplicationIds: t
   } = e;
@@ -165,11 +165,11 @@ function P(e) {
     hasMore: n,
     cursor: r
   } = e;
-  y.loading && (y.loading = false, y.initialized = true, y.errored = false, y.isDataStale = false, null != r && y.notifCenterIds.has(r) || (y.paginationHasMore = t.length > 0 && n, y.paginationCursor = t.length > 0 ? r : true), y.notifCenterItems = [...y.notifCenterItems, ...t.map(A).filter(e => !y.notifCenterIds.has(e.id))], y.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id)), t.forEach(e => y.notifCenterIds.add(e.id)))
+  y.loading && (y.loading = false, y.initialized = true, y.errored = false, y.isDataStale = false, null != r && y.notifCenterIds.has(r) || (y.paginationHasMore = t.length > 0 && n, y.paginationCursor = t.length > 0 ? r : true), y.notifCenterItems = [...y.notifCenterItems, ...t.map(C).filter(e => !y.notifCenterIds.has(e.id))], y.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id)), t.forEach(e => y.notifCenterIds.add(e.id)))
 }
 
 function R(e) {
-  let t = "NOTIFICATION_CENTER_ITEM_CREATE" === e.type ? A(e.item) : e.item;
+  let t = "NOTIFICATION_CENTER_ITEM_CREATE" === e.type ? C(e.item) : e.item;
   if (!y.initialized || !O(t) || y.notifCenterIds.has(t.id)) returnfalse;
   y.notifCenterIds.add(t.id), y.notifCenterItems = [t, ...y.notifCenterItems], y.notifCenterItems.sort((e, t) => f.default.compare(t.id, e.id))
 }
@@ -396,5 +396,5 @@ let z = new K(Chunk570140.Z, {
   NOTIFICATION_CENTER_ITEM_COMPLETED: V,
   SET_RECENT_MENTIONS_FILTER: () => S(),
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: W,
-  APPLICATIONS_FETCH_SUCCESS: C
+  APPLICATIONS_FETCH_SUCCESS: A
 })

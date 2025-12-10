@@ -52,10 +52,10 @@ let u = new Map,
   T = e => {
     f.add(e.skuId)
   },
-  A = e => {
+  C = e => {
     h = e.previousGoLiveSettings
   },
-  C = e => {
+  A = e => {
     _.delete(e.skuId)
   },
   N = e => {
@@ -114,8 +114,8 @@ let D = new R(Chunk570140.Z, {
   SKU_PURCHASE_SUCCESS: v,
   CONSUMABLES_ENTITLEMENT_FETCH_FAILED: I,
   CONSUMABLES_ENTITLEMENT_FETCH_STARTED: T,
-  SET_PREVIOUS_GO_LIVE_SETTINGS: A,
-  CLEAR_CONSUMED_ENTITLEMENT: C,
+  SET_PREVIOUS_GO_LIVE_SETTINGS: C,
+  CLEAR_CONSUMED_ENTITLEMENT: A,
   POTIONS_TRIGGER_MESSAGE_CONFETTI: N,
   POTIONS_SET_CONFETTI_MODE: P
 })

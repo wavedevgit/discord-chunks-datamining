@@ -193,7 +193,7 @@ function G() {
   };
   if (Chunk273879) return null;
   let T = Chunk631885 !== Chunk292352.dG.SETTINGS ? Chunk631885 : Chunk292352.dG.ACTIVITY,
-    A = L[Chunk731934];
+    C = L[Chunk731934];
   return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk54381.jsxs)("main", {

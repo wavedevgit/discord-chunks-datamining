@@ -382,7 +382,7 @@ class em extends(r = Chunk442837.ZP.Store) {
     if (m.Z.hasViewingRoles()) {
       let t = v.Z.getChannel(e),
         n = null == t ? true : t.getGuildId();
-      if (m.Z.isViewingRoles(n) && !C.Z.can(w.Plq.VIEW_CHANNEL, t)) return new u.Z(e)
+      if (m.Z.isViewingRoles(n) && !A.Z.can(w.Plq.VIEW_CHANNEL, t)) return new u.Z(e)
     }
     return u.Z.getOrCreate(e)
   }

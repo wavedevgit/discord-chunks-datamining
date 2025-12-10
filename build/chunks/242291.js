@@ -9,7 +9,7 @@ require.d(exports, {
   SZ: () => M,
   aC: () => j,
   lF: () => G,
-  pI: () => A,
+  pI: () => C,
   sR: () => L,
   tt: () => U
 }), require("./539854.js");
@@ -37,19 +37,19 @@ var Chunk399606 = require("./399606.js"),
   Chunk981631 = require("./981631.js"),
   Chunk957825 = require("./957825.js");
 
-function A() {
+function C() {
   var e;
   let t = Chunk695346.kU.getSetting();
   return null != (e = null == exports ? true : exports.volume) ? module : 100
 }
 
-function C(e, t) {
+function A(e, t) {
   return (null == t ? true : t.guild_id) == null || p.Z.can(I.Plq.USE_EXTERNAL_SOUNDS, t) || e.guildId === S.X8 || e.guildId === (null == t ? true : t.guild_id)
 }
 
 function N(e, t, n) {
   let r = !(arguments.length > 3) || true === arguments[3] || arguments[3];
-  return (h.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? true : n.guild_id) || t.guildId === S.X8) && C(t, n) && (!r || t.available)
+  return (h.ZP.canUseSoundboardEverywhere(e) || t.guildId === (null == n ? true : n.guild_id) || t.guildId === S.X8) && A(t, n) && (!r || t.available)
 }
 
 function P(e) {
@@ -83,7 +83,7 @@ async function x(e) {
   let i = r.guildId === S.hY ? S.X8 : r.guildId,
     a = b.Z.getSound(i, r.soundId);
   if (null != a) {
-    if (!C(a, n) || !N(t, a, n, true) || !P(n)) return null;
+    if (!A(a, n) || !N(t, a, n, true) || !P(n)) return null;
     D(a, n.id)
   }
 }

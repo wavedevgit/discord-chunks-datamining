@@ -2,7 +2,7 @@
 /** chunk id: 49308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => A
+  x: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -80,7 +80,7 @@ function T(e) {
   }) : null
 }
 
-function A(e) {
+function C(e) {
   let {
     isGift: t,
     giftCode: n,
@@ -91,17 +91,17 @@ function A(e) {
     isSendingMessage: b,
     giftingOrigin: y
   } = (0, m.wD)(), v = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), S = i.useRef(null), {
-    selectedSkuId: A
-  } = (0, h.JL)(), C = (0, s.e7)([u.Z], () => u.Z.getProduct(A)), {
+    selectedSkuId: C
+  } = (0, h.JL)(), A = (0, s.e7)([u.Z], () => u.Z.getProduct(C)), {
     confettiColors: N
-  } = (0, d.Z)(null == C ? true : C.styles);
+  } = (0, d.Z)(null == A ? true : A.styles);
   return i.useEffect(() => {
-    t && null != _ && null != A && (y === O.Wt.USER_PROFILE_WISHLIST || y === O.Wt.DM_CHANNEL_WISHLIST) && l.Z.dispatch({
+    t && null != _ && null != C && (y === O.Wt.USER_PROFILE_WISHLIST || y === O.Wt.DM_CHANNEL_WISHLIST) && l.Z.dispatch({
       type: "WISHLIST_GIFT_SENT",
-      skuId: A,
+      skuId: C,
       recipientId: _.id
     })
-  }, [t, _, A, y]), t ? (0, r.jsxs)("div", {
+  }, [t, _, C, y]), t ? (0, r.jsxs)("div", {
     ref: S,
     children: [(0, r.jsx)(g.Z, {
       giftCode: n,
@@ -114,7 +114,7 @@ function A(e) {
     }), !e.hideConfetti && !v && (0, r.jsx)(f.Z, {
       confettiTarget: S.current,
       confettiCanvas: e.confettiCanvas,
-      sprites: (0, p.vK)(null == C ? true : C.categorySkuId),
+      sprites: (0, p.vK)(null == A ? true : A.categorySkuId),
       colors: null == N ? true : N.map(e => e.toHexString())
     })]
   }) : (0, r.jsx)(T, I({}, e))

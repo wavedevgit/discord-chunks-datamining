@@ -155,7 +155,7 @@ class h extends m {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, o, s, l, c, d, f, p, _, m, g, E, b, y, O, v, S, I, T, A, C, N, P, R, D, w, x, L, j, M, k, U, G, Z, B, F, V, H, Y, W, K;
+    var t, n, r, i, a, o, s, l, c, d, f, p, _, m, g, E, b, y, O, v, S, I, T, C, A, N, P, R, D, w, x, L, j, M, k, U, G, Z, B, F, V, H, Y, W, K;
     return new h({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -180,8 +180,8 @@ class h extends m {
       eulaId: null != (S = e.eulaId) ? S : this.eulaId,
       slug: null != (I = e.slug) ? I : this.slug,
       coverImage: null != (T = e.coverImage) ? T : this.coverImage,
-      bot: null != (A = e.bot) ? A : this.bot,
-      flags: null != (C = e.flags) ? C : this.flags,
+      bot: null != (C = e.bot) ? C : this.bot,
+      flags: null != (A = e.flags) ? A : this.flags,
       maxParticipants: null != (N = e.maxParticipants) ? N : this.maxParticipants,
       tags: null != (P = e.tags) ? P : this.tags,
       embeddedActivityConfig: null != (R = e.embeddedActivityConfig) ? R : null != this.embeddedActivityConfig ? u({}, this.embeddedActivityConfig) : true,
@@ -224,9 +224,9 @@ class h extends m {
     return null != e && (e & t) === t
   }
   constructor(e) {
-    var t, n, i, a, o, s, l, d, p, m, g, E, b, y, O, v, S, I, T, A;
+    var t, n, i, a, o, s, l, d, p, m, g, E, b, y, O, v, S, I, T, C;
     super(e), c(this, "overlay", true), c(this, "overlayWarn", true), c(this, "overlayCompatibilityHook", true), c(this, "overlayMethods", true), c(this, "hook", true), c(this, "aliases", true), c(this, "publishers", true), c(this, "developers", true), c(this, "storeListingSkuId", true), c(this, "guildId", true), c(this, "guild", true), c(this, "executables", true), c(this, "hashes", true), c(this, "eulaId", true), c(this, "slug", true), c(this, "flags", true), c(this, "maxParticipants", true), c(this, "tags", true), c(this, "embeddedActivityConfig", true), c(this, "team", true), c(this, "integrationTypesConfig", true), c(this, "storefront_available", true), c(this, "termsOfServiceUrl", true), c(this, "privacyPolicyUrl", true), c(this, "isDiscoverable", true), c(this, "customInstallUrl", true), c(this, "installParams", true), c(this, "directoryEntry", true), c(this, "categories", true), c(this, "linkedGames", true), c(this, "deepLinkUri", true), this.overlay = null != (n = e.overlay) && n, this.overlayWarn = null != (i = e.overlayWarn) && i, this.overlayCompatibilityHook = null != (a = e.overlayCompatibilityHook) && a, this.overlayMethods = null != (o = e.overlayMethods) ? o : r.e.DEFAULT, this.hook = null == (s = e.hook) || s, this.aliases = null != (l = e.aliases) ? l : [], this.publishers = null != (d = e.publishers) ? d : [], this.developers = null != (p = e.developers) ? p : [], this.storeListingSkuId = e.storeListingSkuId, this.guildId = e.guildId, this.guild = e.guild, this.executables = (null != (m = e.executables) ? m : []).map(_), this.hashes = null != (g = e.hashes) ? g : [], this.eulaId = e.eulaId, this.slug = e.slug, this.flags = null != (E = e.flags) ? E : 0, this.tags = null != (b = e.tags) ? b : [], this.maxParticipants = e.maxParticipants, this.embeddedActivityConfig = null != (y = e.embedded_activity_config) ? y : e.embeddedActivityConfig, this.team = e.team, this.integrationTypesConfig = e.integrationTypesConfig, this.storefront_available = e.storefront_available, this.termsOfServiceUrl = e.termsOfServiceUrl, this.privacyPolicyUrl = e.privacyPolicyUrl, this.isDiscoverable = null != (O = e.is_discoverable) ? O : e.isDiscoverable, this.customInstallUrl = null != (v = e.custom_install_url) ? v : e.customInstallUrl, this.installParams = null != (S = e.install_params) ? S : e.installParams, this.directoryEntry = null != (I = e.directory_entry) ? I : e.directoryEntry, this.categories = e.categories, this.linkedGames = null != (T = null == (t = e.linked_games) ? true : t.map(e => f(u({}, e), {
       application: null != e.application ? h.createFromServer(e.application) : true
-    }))) ? T : e.linkedGames, this.deepLinkUri = null != (A = e.deepLinkUri) ? A : e.deeplink_uri
+    }))) ? T : e.linkedGames, this.deepLinkUri = null != (C = e.deepLinkUri) ? C : e.deeplink_uri
   }
 }

@@ -27,7 +27,7 @@ var Chunk807675 = require("./807675.js"),
   Chunk591759 = require("./591759.js"),
   Chunk960904 = require("./960904.js"),
   Chunk981631 = require("./981631.js");
-let C = 10,
+let A = 10,
   N = /^\/([a-zA-Z0-9-]+)$/,
   P = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
   R = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?\.?$/,
@@ -146,7 +146,7 @@ function es(e) {
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
     var a, o, s, l;
-    if (n.length >= C) break;
+    if (n.length >= A) break;
     let {
       url: r,
       inviteHostRemainingPath: i,
@@ -204,8 +204,8 @@ function es(e) {
     null != S && d(T.g.GUILD_PRODUCT, "".concat(S[1], "-").concat(S[2]));
     let I = null == u ? true : u.match(k);
     null != I && d(T.g.SERVER_SHOP, I[1]);
-    let A = null == u ? true : u.match(M);
-    null != A && d(T.g.SOCIAL_LAYER_STOREFRONT, "".concat(A[3], "-").concat(null != (o = A[1]) ? o : A[2]));
+    let C = null == u ? true : u.match(M);
+    null != C && d(T.g.SOCIAL_LAYER_STOREFRONT, "".concat(C[3], "-").concat(null != (o = C[1]) ? o : C[2]));
     let D = el(e);
     if (null != D && d(T.g.QUESTS_EMBED, D), "/shop" === u) {
       let e = null != r.query ? (0, _.parse)(r.query).tab : null,

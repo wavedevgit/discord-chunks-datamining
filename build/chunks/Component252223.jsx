@@ -126,7 +126,7 @@ function G(e) {
   return (0, r.jsx)(l.xvT, {
     variant: t,
     className: o()(R.dot, n),
-    children: C.l
+    children: A.l
   })
 }
 
@@ -209,7 +209,7 @@ function Z(e) {
         hideText: $,
         hideIcon: W,
         hideTooltip: t
-      }) : null != l ? (0, r.jsx)(A.Z, {
+      }) : null != l ? (0, r.jsx)(C.Z, {
         channel: l,
         textVariant: "text-".concat(y, "/medium"),
         textClassName: p,
@@ -236,7 +236,7 @@ function Z(e) {
         e.push((0, r.jsx)(T.Z, w({
           activity: n
         }, t), "activity-".concat(i)))
-      }), Q && e.push((0, r.jsx)(A.Z, L(w({
+      }), Q && e.push((0, r.jsx)(C.Z, L(w({
         channel: l
       }, t), {
         showChannelName: true
@@ -254,7 +254,7 @@ function Z(e) {
     }) : (0, r.jsx)(u.aML, {
       "data-migration-pending": true,
       tooltipContentClassName: o()(R.container, R.activitiesTooltip, R.hasMultipleActivities),
-      delay: C.X,
+      delay: A.X,
       text: en(),
       "aria-label": ee,
       children: e => (0, r.jsxs)("div", L(w({

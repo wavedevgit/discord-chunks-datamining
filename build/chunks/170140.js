@@ -71,8 +71,8 @@ function v(e, t) {
     {
       rawMediaPostEmbedData: I,
       guild: T,
-      parentChannel: A,
-      user: C,
+      parentChannel: C,
+      user: A,
       selectedGuildId: N,
       canAccess: P
     } = (0, i.cj)([m.Z, u.Z, l.Z, f.default, d.Z], () => {
@@ -96,15 +96,15 @@ function v(e, t) {
       let e = (0, h.ku)({
         mediaPostEmbedData: I,
         guild: T,
-        parentChannel: A,
-        user: C,
+        parentChannel: C,
+        user: A,
         selectedGuildId: N,
         canAccess: P
       });
       return null == e ? null : O(b({}, e), {
-        user: C
+        user: A
       })
-    }, [I, T, A, C, N, P]);
+    }, [I, T, C, A, N, P]);
   return r.useEffect(() => {
     if ((null == E ? true : E.threadId) != null) {
       let e = m.Z.getEmbedFetchState(E.threadId);

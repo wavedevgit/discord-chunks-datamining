@@ -10,7 +10,7 @@ var v, Chunk979554 = require("./979554.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,15 +35,15 @@ function w() {
 
 function x(e) {
   var t;
-  if (N !== A.QZA.SUBMITTING) returnfalse;
-  N = A.QZA.OPEN, P = null != (t = e.errors) ? t : {}
+  if (N !== C.QZA.SUBMITTING) returnfalse;
+  N = C.QZA.OPEN, P = null != (t = e.errors) ? t : {}
 }
 
 function L(e) {
   let {
     section: t
   } = e;
-  return t === A.oAB.ACCOUNT && R()
+  return t === C.oAB.ACCOUNT && R()
 }
 
 function j(e) {
@@ -302,7 +302,7 @@ class el extends(v = Chunk442837.ZP.Store) {
     }
   }
 }
-C(el, "displayName", "UserSettingsAccountStore");
+A(el, "displayName", "UserSettingsAccountStore");
 let ec = new el(Chunk570140.Z, {
   USER_SETTINGS_ACCOUNT_INIT: R,
   USER_SETTINGS_MODAL_INIT: R,

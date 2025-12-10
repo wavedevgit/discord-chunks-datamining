@@ -58,12 +58,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = new Chunk710845.Z("ChoosePaymentSourceType"),
+let A = new Chunk710845.Z("ChoosePaymentSourceType"),
   N = {
     [Chunk981631.HeQ.CARD]: Chunk219929.ZP.Types.UNKNOWN,
     [Chunk981631.HeQ.PAYPAL]: Chunk219929.ZP.Types.PAYPAL,
@@ -95,8 +95,8 @@ class D extends Chunk473749.PureComponent {
     var e;
     let t = null != (e = this.props.paymentRequestWallets) ? module : [];
     if (0 === exports.length || !this.arePaymentRequestWalletsLoading()) return;
-    C.warn("Payment request wallets failed to load in time: ".concat(exports.join(", "), ". Max time allowed: ").concat(P, " ms"));
-    let n = exports.reduce((e, t) => A(I({}, e), {
+    A.warn("Payment request wallets failed to load in time: ".concat(exports.join(", "), ". Max time allowed: ").concat(P, " ms"));
+    let n = exports.reduce((e, t) => C(I({}, e), {
       ["".concat(t, "Loaded")]: true
     }), {});
     this.setState(require)

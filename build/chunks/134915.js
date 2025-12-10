@@ -79,24 +79,24 @@ function u(e) {
   E !== y && (O(E), S(false));
   let I = (0, r.useMemo)(() => p(v ? [] : b), [v, b]),
     T = (0, r.useRef)(o),
-    [A, C] = (0, r.useState)(o),
+    [C, A] = (0, r.useState)(o),
     N = (0, r.useRef)(o),
     P = () => {
       if (!R) return;
       D(false);
       let e = g || c || T.current;
-      _(e, N.current) || (N.current = e, C(e))
+      _(e, N.current) || (N.current = e, A(e))
     },
     [R, D] = (0, r.useState)(false);
   return (0, r.useEffect)(P), {
     realtimeValidation: h || I || g || c || o,
-    displayValidation: "native" === m ? h || I || A : h || I || g || c || A,
+    displayValidation: "native" === m ? h || I || C : h || I || g || c || C,
     updateValidation(e) {
-      "aria" !== m || _(A, e) ? T.current = e : C(e)
+      "aria" !== m || _(C, e) ? T.current = e : A(e)
     },
     resetValidation() {
       let e = o;
-      _(e, N.current) || (N.current = e, C(e)), "native" === m && D(false), S(true)
+      _(e, N.current) || (N.current = e, A(e)), "native" === m && D(false), S(true)
     },
     commitValidation() {
       "native" === m && D(true), S(true)

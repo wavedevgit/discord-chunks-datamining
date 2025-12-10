@@ -82,8 +82,8 @@ let m = {
   S = _(Chunk428595.Z.GUILD_VERIFICATION_FORM_RULES, [(0, Chunk691424.Z)(m)]),
   I = _(Chunk428595.Z.GUILD_EVENT_RULES, [(0, Chunk691424.Z)(m)]),
   T = _(Chunk428595.Z.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, Chunk691424.Z)(m)]),
-  A = i().omit(_(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(m)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
-  C = {
+  C = i().omit(_(Chunk428595.Z.RULES, [(0, Chunk691424.Z)(m)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "link", "url", "autolink", "list", "heading", "subtext"),
+  A = {
     text: Chunk428595.Z.RULES.text
   },
   N = {
@@ -92,8 +92,8 @@ let m = {
     defaultReactRuleOptions: m,
     defaultRules: h,
     guildEventRules: I,
-    notifCenterV2MessagePreviewRules: A,
-    lockscreenWidgetMessageRules: C,
+    notifCenterV2MessagePreviewRules: C,
+    lockscreenWidgetMessageRules: A,
     astParserFor: Chunk25209._p,
     reactParserFor: Chunk25209.w4,
     parse: Chunk25209.w4(h),

@@ -37,8 +37,8 @@ function S(e) {
   } = e, {
     selectedSkuId: I,
     step: T,
-    selectedPlan: A,
-    purchaseState: C,
+    selectedPlan: C,
+    purchaseState: A,
     purchaseType: N,
     selectedSku: P,
     enablePremiumBrandRefresh: R,
@@ -63,12 +63,12 @@ function S(e) {
         className: O.closeButton,
         "data-migration-pending": true
       })]
-    }) : G ? e = n(null != A ? A : null, S, T) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(p.t, {
+    }) : G ? e = n(null != C ? C : null, S, T) : N === y.GZ.ONE_TIME ? e = (0, r.jsx)(p.t, {
       step: T,
       onClose: S
     }) : B && (o()(v(I, b.y7), "invalid sku id: ".concat(I)), e = (0, r.jsx)(f.Z, {
       currentStep: null != T ? T : true,
-      purchaseState: C,
+      purchaseState: A,
       premiumType: b.y7[I],
       onClose: S,
       showTrialBadge: V,
@@ -80,5 +80,5 @@ function S(e) {
       isDisplayingWowMomentConfirmation: D,
       isPremiumGroupPurchase: w
     })), e
-  }, [L, S, C, n, A, I, T, V, W, U, B, G, N, x, j, R, D, w])
+  }, [L, S, A, n, C, I, T, V, W, U, B, G, N, x, j, R, D, w])
 }

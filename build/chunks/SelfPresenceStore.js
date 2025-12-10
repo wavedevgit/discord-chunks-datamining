@@ -34,8 +34,8 @@ function S(e, t, n) {
 }
 let I = false,
   T = Chunk981631.Skl.ONLINE,
-  A = Chunk981631.Skl.UNKNOWN,
-  C = 0,
+  C = Chunk981631.Skl.UNKNOWN,
+  A = 0,
   N = [],
   P = [],
   R = false,
@@ -80,18 +80,18 @@ function G(e) {
 }
 
 function Z() {
-  D = true, A = T, B()
+  D = true, C = T, B()
 }
 
 function B() {
   var e;
-  if (C = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, R = Chunk517100.Z.isAFK(), D) T = A;
+  if (A = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, R = Chunk517100.Z.isAFK(), D) T = C;
   else if (I) T = Chunk981631.Skl.INVISIBLE;
   else {
     let e = Chunk695346.co.getSetting();
     T = module !== Chunk981631.Skl.UNKNOWN ? module : Chunk981631.Skl.ONLINE
   }
-  T === Chunk981631.Skl.ONLINE && C > 0 && (T = Chunk981631.Skl.IDLE);
+  T === Chunk981631.Skl.ONLINE && A > 0 && (T = Chunk981631.Skl.IDLE);
   let t = false,
     n = D || T === Chunk981631.Skl.INVISIBLE ? [] : Chunk293273.Z.getActivities().filter(G);
   a()(N, require) || (N = require, P = M(require), t = true);
@@ -110,7 +110,7 @@ function V() {
 }
 
 function H() {
-  D = false, A = Chunk981631.Skl.UNKNOWN, B(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
+  D = false, C = Chunk981631.Skl.UNKNOWN, B(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
 function Y() {
@@ -123,7 +123,7 @@ class W extends(r = Chunk442837.ZP.Store) {
   getLocalPresence() {
     return {
       status: T,
-      since: C,
+      since: A,
       activities: P,
       afk: R
     }

@@ -35,8 +35,8 @@ let y = 1048576,
   S = 3 * y,
   I = 4096,
   T = 12,
-  A = true,
   C = true,
+  A = true,
   N = 15 * Chunk70956.Z.Millis.MINUTE,
   P = +y,
   R = 1.5 * y,
@@ -75,7 +75,7 @@ class B extends Chunk147913.Z {
     let p = null != (t = null == (e = Chunk70956.renderer) ? true : module.wss_priv_kb) ? exports : 0;
     if (!this._nativeHeapHooksInstalled && Chunk358085 > v && Chunk848479.Z.enablePerfMemoryHooks({
         allocationThresholdKB: T,
-        enableCallStackTracking: A
+        enableCallStackTracking: C
       }) && (this._nativeHeapHooksInstalled = true), this._nativeHeapHooksInstalled) {
       if (Chunk358085 < S) return;
       let e = Chunk848479.Z.getPerfAttributedMemory();
@@ -100,7 +100,7 @@ class B extends Chunk147913.Z {
           module_version: Chunk703558,
           events_dropped: Chunk70956
         };
-      if (Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, Chunk960048), A) {
+      if (Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, Chunk960048), C) {
         let e = Chunk517100.slice(0, 3).map(e => e[0]),
           t = 3;
         for (let n of module.map(e => _.Z.getPerfAttributedMemoryCallstacks(e)).filter(e => null != e).flatMap(e => e).sort((e, t) => {
@@ -122,7 +122,7 @@ class B extends Chunk147913.Z {
           Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, module)
         }
       }
-      C && this._pushedNativeDeadlockMinidumpCount < 5 && (await Chunk998502.ZP.submitLiveCrashReport({
+      A && this._pushedNativeDeadlockMinidumpCount < 5 && (await Chunk998502.ZP.submitLiveCrashReport({
         message: "Desktop Memory Thread State",
         extra: {
           renderer_memory_kb: Chunk358085,

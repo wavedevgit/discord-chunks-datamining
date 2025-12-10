@@ -159,7 +159,7 @@ let g = e => {
   O = e => {
     var {
       className: t,
-      color: n = o.Z.colors.INTERACTIVE_ACTIVE.css,
+      color: n = o.Z.colors.INTERACTIVE_TEXT_ACTIVE.css,
       shape: i = _.ROUND,
       disableColor: l = false,
       style: u

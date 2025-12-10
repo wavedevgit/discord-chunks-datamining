@@ -84,7 +84,7 @@ function k(e) {
     }
   }).filter(O.lm), [a]);
   if (!(null != n || l.length > 0)) return null;
-  let u = null != n ? (0, C.V)(n) : j.intl.string(j.t["4dGUP0"]);
+  let u = null != n ? (0, A.V)(n) : j.intl.string(j.t["4dGUP0"]);
   return (0, r.jsxs)("div", {
     className: M.footer,
     children: [(0, r.jsx)("div", {
@@ -107,7 +107,7 @@ function U(e) {
   let {
     message: s,
     application: O,
-    applicationName: C,
+    applicationName: A,
     channel: R,
     header: D,
     currentUserId: U,
@@ -156,8 +156,8 @@ function U(e) {
     className: M.tagline,
     color: "none",
     lineClamp: 2,
-    children: [en ? (0, v.$v)(s, C, R, U, false) : et, en ? null : ei]
-  }), [en, s, C, R, U, et, ei]), eo = i.useMemo(() => (0, r.jsxs)("div", {
+    children: [en ? (0, v.$v)(s, A, R, U, false) : et, en ? null : ei]
+  }), [en, s, A, R, U, et, ei]), eo = i.useMemo(() => (0, r.jsxs)("div", {
     className: M.info,
     children: [ea, z || en ? null : q]
   }), [ea, z, en, q]), es = !!G, el = (0, E.A)(O), {
@@ -172,7 +172,7 @@ function U(e) {
     isEmbeddedApplication: Z,
     isFrameApplication: el,
     isGameLaunchable: es
-  }), ed = (0, S.p)(W, K, s, O), ef = (0, I.L)(W, s, O, U), ep = (0, A.g)(K, W), e_ = (0, l.e7)([y.Z], () => null != W && null != W.application_id && y.Z.getState(W.application_id, x.mFx.JOIN) === x.OcF.LOADING), em = i.useMemo(() => {
+  }), ed = (0, S.p)(W, K, s, O), ef = (0, I.L)(W, s, O, U), ep = (0, C.g)(K, W), e_ = (0, l.e7)([y.Z], () => null != W && null != W.application_id && y.Z.getState(W.application_id, x.mFx.JOIN) === x.OcF.LOADING), em = i.useMemo(() => {
     let e = null,
       t = true;
     ec ? e = {
@@ -249,7 +249,7 @@ function U(e) {
   }), [ep, W, eu]);
   return (0, r.jsx)(p.W, {
     header: D,
-    title: C,
+    title: A,
     staticBannerSrc: F,
     onClickBanner: V,
     bannerAspectRatio: p.u.ACTIVITY,

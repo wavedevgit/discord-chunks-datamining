@@ -147,12 +147,12 @@ function F(e) {
     price: _,
     fetchingPrice: m,
     error: g
-  } = (0, C.R2)(S.D1), {
+  } = (0, A.R2)(S.D1), {
     entitlement: E,
     fetchedEntitlement: b,
     error: v
-  } = (0, C.t6)(S.D1), I = g || v, {
-    analyticsLocations: A
+  } = (0, A.t6)(S.D1), I = g || v, {
+    analyticsLocations: C
   } = (0, p.ZP)([f.Z.CONFETTI_POTION_MODAL]), P = null != E && !E.consumed, R = m || !b;
   (0, i.useEffect)(() => () => {
     I && (0, y.SN)(S.D1)
@@ -163,13 +163,13 @@ function F(e) {
     w = (0, i.useCallback)(() => {
       (0, h.Z)({
         skuId: S.D1,
-        analyticsLocations: A,
+        analyticsLocations: C,
         onComplete: () => {
           D(), (0, y.gA)(S.D1)
         },
         variantsReturnStyle: o.v.INDIVIDUAL_PRODUCTS
       })
-    }, [D, A]),
+    }, [D, C]),
     x = (0, i.useCallback)(() => P ? D() : w(), [D, w, P]),
     L = (0, i.useMemo)(() => {
       if (null != E) {
@@ -295,7 +295,7 @@ let V = e => {
       emojiName: null == n.id ? n.optionallyDiverseSequence : n.name,
       selectionText: n.name.replace(/_/g, " ")
     }, [n]), _ = (0, i.useRef)(null);
-    return (0, r.jsx)(A.Z, {
+    return (0, r.jsx)(C.Z, {
       channel: t,
       shouldShow: o,
       onRequestClose: l,
@@ -323,7 +323,7 @@ let V = e => {
                 className: D.emojiIcon
               })
             }), (0, r.jsx)(u.Text, {
-              color: "interactive-active",
+              color: "interactive-text-active",
               variant: "text-sm/normal",
               children: p
             })]

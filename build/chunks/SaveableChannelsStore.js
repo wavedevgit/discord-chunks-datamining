@@ -36,7 +36,7 @@ let m = 750,
   I = false;
 class T extends Chunk750041.Z {
   initialize() {
-    this.waitFor(Chunk592125.Z), this.waitFor(Chunk944486.Z), this.waitFor(Chunk650774.Z), this.syncWith([Chunk368321.Z], () => true), this.syncWith([Chunk944486.Z], A)
+    this.waitFor(Chunk592125.Z), this.waitFor(Chunk944486.Z), this.waitFor(Chunk650774.Z), this.syncWith([Chunk368321.Z], () => true), this.syncWith([Chunk944486.Z], C)
   }
   loadCache() {
     let e = this.readSnapshot(T.LATEST_SNAPSHOT_VERSION);
@@ -110,7 +110,7 @@ class T extends Chunk750041.Z {
       CACHE_LOADED_LAZY: () => this.loadCache(),
       CHANNEL_DELETE: R,
       CHANNEL_UPDATES: P,
-      CONNECTION_OPEN_SUPPLEMENTAL: C,
+      CONNECTION_OPEN_SUPPLEMENTAL: A,
       GUILD_DELETE: x,
       LOGIN_SUCCESS: L,
       THREAD_DELETE: w,
@@ -119,12 +119,12 @@ class T extends Chunk750041.Z {
   }
 }
 
-function A() {
+function C() {
   let e = Chunk944486.Z.getChannelId();
   null != module && T.recordChannel(module)
 }
 
-function C() {
+function A() {
   T.dropUnreachableChannels(), T.replaceLru((0, Chunk872261.J)(v, m + g))
 }
 

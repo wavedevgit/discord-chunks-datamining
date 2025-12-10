@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -302,7 +302,7 @@ function em(e) {
   if (null == t) t = e.channel;
   else {
     var n;
-    t = t.merge(C(T({}, e.channel.toJS()), {
+    t = t.merge(A(T({}, e.channel.toJS()), {
       bitrate: null != (n = e.channel.bitrate) ? n : t.bitrate
     }))
   }
@@ -315,7 +315,7 @@ function eh(e) {
     overwrite: n
   } = e, r = J(t);
   if (null == r) returnfalse;
-  $(r.set("permissionOverwrites", C(T({}, r.permissionOverwrites), {
+  $(r.set("permissionOverwrites", A(T({}, r.permissionOverwrites), {
     [n.id]: n
   })))
 }
@@ -387,13 +387,13 @@ function eT(e) {
   N.fileOnly("GuildDelete of ".concat(e.guild.id)), Q(e.guild.id), Z.delete(e.guild.id), f.Z.invalidate(e.guild.id)
 }
 
-function eA(e) {
+function eC(e) {
   let t = J(e.channelId),
     n = y.default.getId();
   return null != t && !!t.isPrivate() && ($(t.addRecipient(e.user.id, e.nick, n)), true)
 }
 
-function eC(e) {
+function eA(e) {
   let t = J(e.channelId);
   return null != t && !!t.isPrivate() && ($(t.removeRecipient(e.user.id)), true)
 }
@@ -528,8 +528,8 @@ let ej = new ex(Chunk570140.Z, {
   CACHE_LOADED: ed,
   CHANNEL_CREATE: e_,
   CHANNEL_DELETE: eS,
-  CHANNEL_RECIPIENT_ADD: eA,
-  CHANNEL_RECIPIENT_REMOVE: eC,
+  CHANNEL_RECIPIENT_ADD: eC,
+  CHANNEL_RECIPIENT_REMOVE: eA,
   CHANNEL_UPDATES: eE,
   CONNECTION_OPEN_SUPPLEMENTAL: es,
   CONNECTION_OPEN: ea,

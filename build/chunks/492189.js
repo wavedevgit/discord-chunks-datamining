@@ -24,7 +24,7 @@ var Chunk98405 = require("./98405.js"),
   Chunk713411 = require("./713411.js"),
   Chunk568033 = require("./568033.js"),
   Chunk769827 = require("./769827.js"),
-  A = require("./264750.js").f,
+  C = require("./264750.js").f,
   Chunk522169 = require("./522169.js"),
   N = require("./920029.js").forEach,
   Chunk108015 = require("./108015.js"),
@@ -108,9 +108,9 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     };
   Y ? s && (E = t(function(e, t, n, r) {
     return u(e, b), j(function() {
-      return O(t) ? $(t) ? true !== r ? new p(t, h(n, o), r) : true !== n ? new p(t, h(n, o)) : new p(t) : q(t) ? x(E, t) : a(C, E, t) : new p(m(t))
+      return O(t) ? $(t) ? true !== r ? new p(t, h(n, o), r) : true !== n ? new p(t, h(n, o)) : new p(t) : q(t) ? x(E, t) : a(A, E, t) : new p(m(t))
     }(), e, E)
-  }), T && T(E, K), N(A(p), function(e) {
+  }), T && T(E, K), N(C(p), function(e) {
     e in E || f(E, e, p[e])
   }), E.prototype = b) : (E = t(function(e, t, n, r) {
     u(e, b);
@@ -125,7 +125,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         } else if ((s = _(r) * o) + d > f) throw new B(X);
         l = s / o
       } else if (q(t)) return x(E, t);
-    else return a(C, E, t);
+    else return a(A, E, t);
     else i = new F(s = (l = m(t)) * o);
     for (k(e, {
         buffer: i,

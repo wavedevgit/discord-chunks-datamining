@@ -58,13 +58,13 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -113,7 +113,7 @@ function D(e) {
     hideBadges: t = false,
     stream: n,
     location: u
-  } = e, m = C(e, ["hideBadges", "stream", "location"]);
+  } = e, m = A(e, ["hideBadges", "stream", "location"]);
   let v = i.useRef(null),
     {
       analyticsLocations: S,
@@ -149,7 +149,7 @@ function D(e) {
       })
     },
     animation: o.yRy.Animation.FADE,
-    children: e => (0, r.jsx)(E.Z, I(A(I({}, e), {
+    children: e => (0, r.jsx)(E.Z, I(C(I({}, e), {
       buttonRef: v,
       label: O.intl.string(O.t.tmiYpF),
       iconComponent: L,

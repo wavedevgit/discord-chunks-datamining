@@ -57,10 +57,10 @@ function p(e, n, p) {
   (0, u.$)(P, "useThreadAdminActionItems"), (0, r.e7)([f.Z], () => f.Z.getGuildVersion(n), [n]);
   let j = (0, r.e7)([g.Z], () => g.Z.getChannel(p)),
     v = (0, r.e7)([Z.Z], () => Z.Z.getGuild(n), [n]),
-    y = (0, r.e7)([b.default], () => b.default.getCurrentUser()),
-    N = (0, o.Z)(j, "Context Menu"),
+    N = (0, r.e7)([b.default], () => b.default.getCurrentUser()),
+    y = (0, o.Z)(j, "Context Menu"),
     x = (0, c.yw)(null == j ? true : j.id);
-  return (null == y ? true : y.id) === e.id ? [N] : null == v || null == j || null == y ? [] : [x ? (0, l.jsx)(a.sNh, {
+  return (null == N ? true : N.id) === e.id ? [y] : null == v || null == j || null == N ? [] : [x ? (0, l.jsx)(a.sNh, {
     id: "remove",
     label: j.isForumPost() ? O.intl.formatToPlainString(O.t.v2KNNx, {
       user: e.username

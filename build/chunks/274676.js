@@ -39,8 +39,8 @@ require.d(exports, {
   Dx: () => T,
   Jj: () => a,
   Kx: () => P,
-  Lw: () => A,
-  Ow: () => C,
+  Lw: () => C,
+  Ow: () => A,
   Pf: () => v,
   Py: () => I,
   Re: () => c,
@@ -93,11 +93,11 @@ function y(e) {
 }
 
 function O(e) {
-  let t = C(e);
+  let t = A(e);
   for (; c(t) && !I(t);) {
     if (y(t)) return t;
     if (h(t)) break;
-    t = C(t)
+    t = A(t)
   }
   return null
 }
@@ -115,7 +115,7 @@ function T(e) {
   return a(e).getComputedStyle(e)
 }
 
-function A(e) {
+function C(e) {
   return l(e) ? {
     scrollLeft: e.scrollLeft,
     scrollTop: e.scrollTop
@@ -125,14 +125,14 @@ function A(e) {
   }
 }
 
-function C(e) {
+function A(e) {
   if ("html" === i(e)) return e;
   let t = e.assignedSlot || e.parentNode || u(e) && e.host || o(e);
   return u(t) ? t.host : t
 }
 
 function N(e) {
-  let t = C(e);
+  let t = A(e);
   return I(t) ? e.ownerDocument ? e.ownerDocument.body : e.body : c(t) && f(t) ? t : N(t)
 }
 

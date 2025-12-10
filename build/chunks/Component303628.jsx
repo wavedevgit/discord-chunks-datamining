@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -90,7 +90,7 @@ function D(e) {
     type: n,
     ignoreFile: a,
     smallAttachments: I = false
-  } = e, A = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), P = (0, _.Z)("attachments", l.hy.HORIZONTAL), D = (0, c.e7)([h.Z], () => h.Z.getUploads(t, n.drafts.type)), {
+  } = e, C = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), P = (0, _.Z)("attachments", l.hy.HORIZONTAL), D = (0, c.e7)([h.Z], () => h.Z.getUploads(t, n.drafts.type)), {
     isApplicationCommand: w,
     commandOptions: x,
     commandOptionStates: L
@@ -158,19 +158,19 @@ function D(e) {
         var {
           ref: i
         } = e, a = N(e, ["ref"]);
-        return (0, r.jsx)("ul", C(T({
+        return (0, r.jsx)("ul", A(T({
           ref: i
         }, a), {
           className: o()(v.channelAttachmentArea, S.scrollbarGhost),
           children: w ? j.map(e => (0, r.jsx)(b.Z, {
             channelId: t,
-            keyboardModeEnabled: A,
+            keyboardModeEnabled: C,
             option: e
           }, e.name)) : B.map(e => (0, r.jsx)(y.Z, {
             channelId: t,
             draftType: n.drafts.type,
             upload: e,
-            keyboardModeEnabled: A,
+            keyboardModeEnabled: C,
             clip: e.clip,
             size: I ? E.q.SMALL : E.q.MEDIUM
           }, e.id))

@@ -28,12 +28,12 @@ function C(t) {
     transitionState: h
   } = t, {
     protocol: g,
-    authorityPrefix: N,
-    hostname: E,
+    authorityPrefix: E,
+    hostname: N,
     theRestOfTheUrl: T,
-    shouldTrustUrl: b,
-    setShouldTrustUrl: v,
-    handleConfirm: L,
+    shouldTrustUrl: L,
+    setShouldTrustUrl: b,
+    handleConfirm: v,
     handleCancel: k
   } = (0, u.X)({
     url: e,
@@ -55,7 +55,7 @@ function C(t) {
       text: m.intl.string(m.t["/g10LC"]),
       onClick: () => {
         k(), d.default.track(_.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: b,
+          is_trust_url_selected: L,
           action_type: "cancel"
         })
       },
@@ -63,8 +63,8 @@ function C(t) {
     }, {
       text: C ? m.intl.string(m.t.COq6kk) : m.intl.string(m.t.NcJfJG),
       onClick: () => {
-        L(), d.default.track(_.rMx.MASKED_LINK_MODAL_CLICKED, {
-          is_trust_url_selected: b,
+        v(), d.default.track(_.rMx.MASKED_LINK_MODAL_CLICKED, {
+          is_trust_url_selected: L,
           action_type: "confirm"
         })
       },
@@ -76,12 +76,12 @@ function C(t) {
         tag: "span",
         variant: C ? "text-md/semibold" : "text-md/normal",
         color: C ? "text-default" : "text-muted",
-        children: [g, N]
+        children: [g, E]
       }), (0, a.jsx)(s.Text, {
         tag: "span",
         variant: C ? "text-md/normal" : "text-md/semibold",
         color: C ? "text-muted" : "text-default",
-        children: E
+        children: N
       }), (0, a.jsx)(s.Text, {
         tag: "span",
         variant: "text-md/normal",
@@ -91,12 +91,12 @@ function C(t) {
     }), (0, a.jsx)("div", {
       className: x.checkboxMana,
       children: (0, a.jsx)(s.Checkbox, {
-        checked: b,
-        onChange: t => v(t),
+        checked: L,
+        onChange: t => b(t),
         label: C ? m.intl.format(m.t["haA+Xw"], {
           protocol: g.replace(":", "")
         }) : m.intl.format(m.t.ZgXDsI, {
-          domain: E
+          domain: N
         }),
         labelType: "secondary"
       })

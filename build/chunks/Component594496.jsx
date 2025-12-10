@@ -85,7 +85,7 @@ function M(e) {
     $ = c.JH.useExperiment({
       location: "GuildIdentityCustomizationSections"
     }).enabled,
-    ee = A.ZP.canUsePremiumProfileCustomization(U),
+    ee = C.ZP.canUsePremiumProfileCustomization(U),
     et = (0, f.gd)(Z, null == X ? true : X.avatar),
     en = (0, f.f$)(F, null == J ? true : J.banner),
     er = (0, R.p)(Y, null == J ? true : J.themeColors),
@@ -101,7 +101,7 @@ function M(e) {
     className: j.sectionsContainer,
     children: [(0, r.jsx)(D.Z, {
       errors: null != (i = null == W ? true : W.nick) ? i : null == Q ? true : Q.nick,
-      username: C.ZP.getName(U),
+      username: A.ZP.getName(U),
       pendingNick: B,
       currentNick: null == X ? true : X.nick,
       user: U,

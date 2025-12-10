@@ -169,7 +169,7 @@ function z(e) {
       selfStream: i.self_stream || false,
       requestToSpeakTimestamp: null != (n = i.request_to_speak_timestamp) ? n : null,
       discoverable: null == (r = i.discoverable) || r,
-      oldChannelId: A.Z.getUserVoiceChannelId(i.guild_id, i.user_id)
+      oldChannelId: C.Z.getUserVoiceChannelId(i.guild_id, i.user_id)
     })
   }
   q({

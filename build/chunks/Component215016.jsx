@@ -49,8 +49,8 @@ function T(e) {
   }
   return e
 }
-let A = [Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"],
-  C = 220,
+let C = [Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_PURPLE.css, Chunk692547.Z.unsafe_rawColors.PREMIUM_TIER_1_BLUE.css, "#929AFA"],
+  A = 220,
   N = 1220,
   P = Array.from({
     length: 16
@@ -200,7 +200,7 @@ class U extends Chunk473749.PureComponent {
       imagePool: r
     } = this.props;
     this.state = {
-      color: null == n ? l().sample(A) : n,
+      color: null == n ? l().sample(C) : n,
       loaded: false
     }, L(t) || (this._image = r.getElement(), this._image.onload = () => this.setState({
       loaded: true
@@ -236,7 +236,7 @@ class G extends Chunk473749.PureComponent {
     })
   }
   getSectionHeight(e) {
-    return 1 === e ? C : 0
+    return 1 === e ? A : 0
   }
   renderEmptyFavorite(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];

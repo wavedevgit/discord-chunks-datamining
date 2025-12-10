@@ -4,7 +4,7 @@
 require.d(exports, {
   L6: () => N,
   ZP: () => m,
-  iF: () => C
+  iF: () => A
 }), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./704826.js");
 var Chunk466332 = require("./466332.js"),
   Chunk31775 = require("./31775.js"),
@@ -48,7 +48,7 @@ function E(e) {
 
 function b(e, t, n, r, i) {
   var a;
-  let o = A(t),
+  let o = C(t),
     l = o[0],
     c = o[o.length - 1],
     u = null;
@@ -157,7 +157,7 @@ function T(e, t) {
   return I.set(n, a), a
 }
 
-function A(e) {
+function C(e) {
   let t, [n, r] = e;
   if (!p.has(n.type)) return [];
   let i = [],
@@ -179,7 +179,7 @@ function A(e) {
   return i
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = 0;
   for (let i of d.bN.nodes(e, {
       at: {
@@ -204,5 +204,5 @@ function C(e, t) {
 function N(e) {
   if (null == e.selection) returnfalse;
   let t = d.M8.start(e.selection);
-  return C(e, t)
+  return A(e, t)
 }

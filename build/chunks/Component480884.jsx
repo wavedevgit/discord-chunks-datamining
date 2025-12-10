@@ -25,22 +25,22 @@ function p(t) {
     onClose: e,
     channelId: p,
     warningId: h,
-    senderId: m,
-    description: y,
-    safetyTipRows: T,
-    actionRows: f,
+    senderId: y,
+    description: T,
+    safetyTipRows: f,
+    actionRows: m,
     learnMore: j
   } = t, N = (0, o.e7)([_.ZP], () => _.ZP.getChannelSafetyWarning(p, h));
   return s.useEffect(() => {
     (0, b.MC)(x.rMx.SAFETY_WARNING_MODAL_VIEWED, {
       channelId: p,
       warningId: h,
-      senderId: m,
+      senderId: y,
       warningType: null == N ? true : N.type
     }), l.Z.increment({
       name: i.V.SAFETY_WARNING_MODAL_VIEW
     })
-  }, [p, h, m, N]), (0, a.jsx)(c.ExpressiveModal, {
+  }, [p, h, y, N]), (0, a.jsx)(c.ExpressiveModal, {
     onClose: e,
     transitionState: n,
     graphic: {
@@ -49,14 +49,14 @@ function p(t) {
     },
     gradientColor: "blue",
     title: v.intl.string(v.t.lyt43P),
-    subtitle: y,
+    subtitle: T,
     actions: [],
     children: (0, a.jsxs)(r.Kqy, {
       gap: 24,
       children: [(0, a.jsxs)(r.Kqy, {
         gap: 8,
         children: [(0, a.jsx)(d.z, {
-          children: T
+          children: f
         }), null != j ? j : null]
       }), (0, a.jsxs)(r.Kqy, {
         gap: 4,
@@ -65,12 +65,12 @@ function p(t) {
           color: "text-default",
           children: v.intl.string(v.t.K5FKtc)
         }), (0, a.jsx)(u.rT, {
-          children: f
+          children: m
         })]
       }), (0, a.jsx)(g.Z, {
         channelId: p,
         warningId: h,
-        senderId: m,
+        senderId: y,
         safetyWarning: N
       })]
     })

@@ -4,11 +4,11 @@
 require.d(exports, {
   Ai: () => v,
   PW: () => S,
-  Tu: () => C,
+  Tu: () => A,
   am: () => O,
   hP: () => y,
   hY: () => I,
-  k1: () => A,
+  k1: () => C,
   rC: () => b,
   wO: () => T
 }), require("./358797.js");
@@ -188,7 +188,7 @@ function T(e, t) {
   }), e))
 }
 
-function A() {
+function C() {
   !Chunk18323.Z.isProtocolRegistered() && (0, Chunk358085.isDesktop)() && Chunk877481.Z.isProtocolRegistered(Chunk616922.M5).then(e => {
     a.Z.dispatch({
       type: "SPOTIFY_SET_PROTOCOL_REGISTERED",
@@ -197,7 +197,7 @@ function A() {
   })
 }
 
-function C(e, t) {
+function A(e, t) {
   a.Z.dispatch({
     type: "SPOTIFY_SET_ACTIVE_DEVICE",
     accountId: e,

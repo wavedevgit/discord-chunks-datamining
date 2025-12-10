@@ -39,13 +39,13 @@ Chunk98405({
 }, {
   DOMException: T ? b : E
 });
-var A = Chunk154028(h),
-  C = A.prototype;
-if (C.constructor !== A) {
-  for (var N in Chunk511696 || s(C, "constructor", Chunk530575(1, A)), Chunk17204)
+var C = Chunk154028(h),
+  A = C.prototype;
+if (A.constructor !== C) {
+  for (var N in Chunk511696 || s(A, "constructor", Chunk530575(1, C)), Chunk17204)
     if (Chunk77025(Chunk17204, N)) {
       var P = Chunk17204[N],
         R = P.s;
-      Chunk77025(A, R) || s(A, R, Chunk530575(6, P.c))
+      Chunk77025(C, R) || s(C, R, Chunk530575(6, P.c))
     }
 }

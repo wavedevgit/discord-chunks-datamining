@@ -61,8 +61,8 @@ let p = "mp4",
   S = "downsized_small.mp4",
   I = "original.mp4",
   T = h,
-  A = M(T) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
-  C = null,
+  C = M(T) ? Chunk377108.EO.VIDEO : Chunk377108.EO.IMAGE,
+  A = null,
   N = "",
   P = "",
   R = [],
@@ -71,7 +71,7 @@ let p = "mp4",
   x = [];
 
 function L(e) {
-  C = e.analyticsID
+  A = e.analyticsID
 }
 
 function j(e) {
@@ -120,7 +120,7 @@ function U(e) {
       gifSrc: k(i),
       url: a,
       id: o,
-      format: A
+      format: C
     }
   })
 }
@@ -139,11 +139,11 @@ function Z(e) {
     type: s.wI2.TRENDING_GIFS,
     name: l.intl.string(l.t.H6zNFz),
     src: k(e.trendingGIFPreview.src),
-    format: A
+    format: C
   }] : [], ...t.map(e => f(u({}, e), {
     src: k(e.src),
     type: s.wI2.TRENDING_CATEGORY,
-    format: A
+    format: C
   }))]
 }
 
@@ -162,7 +162,7 @@ function F(e) {
 }
 class V extends(r = Chunk442837.ZP.Store) {
   getAnalyticsID() {
-    return C
+    return A
   }
   getQuery() {
     return N

@@ -174,7 +174,7 @@ function j(e) {
   return o.isPausedForFractionalPremium && u.fetched && (z = R.intl.format(R.t.eb0xgS, {
     expirationDate: u.endsAt.toDate()
   })), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(A.Z, {
       "data-migration-pending": true,
       onClose: O
     }), (0, r.jsxs)(c.hzk, {
@@ -196,7 +196,7 @@ function j(e) {
           label: R.intl.format(R.t["Vg+LRr"], {
             subscriptionCount: 1
           }),
-          value: (0, A.og)((0, A.T4)(Y, o.currency), W, K),
+          value: (0, C.og)((0, C.T4)(Y, o.currency), W, K),
           className: D.invoiceCancelRow
         }), null != B && B.length > 0 ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)(E.UN, {}), (0, r.jsx)(y.nd, {

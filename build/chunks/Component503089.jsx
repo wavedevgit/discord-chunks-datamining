@@ -4,8 +4,8 @@
 require.d(exports, {
   $x: () => T,
   ZP: () => R,
-  d7: () => C,
-  w6: () => A
+  d7: () => A,
+  w6: () => C
 }), require("./539854.js"), require("./361932.js"), require("./187205.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -69,8 +69,8 @@ let I = Object.freeze({
     sidebarOpen: true
   }),
   T = 1.4,
-  A = 15,
-  C = 2;
+  C = 15,
+  A = 2;
 
 function N(e) {
   var t, n;
@@ -134,7 +134,7 @@ class P extends Chunk473749.PureComponent {
     return null != require && require.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
-    }), this._intensity = Math.min(this._intensity + C, A), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = T, true)
+    }), this._intensity = Math.min(this._intensity + A, C), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), false) : (this._intensity = T, true)
   }
   renderSidebar(e) {
     let {

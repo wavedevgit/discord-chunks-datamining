@@ -128,7 +128,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   let t = [];
   if ("" !== e.name && t.push(e.name), null != e.nicks && t.push(...Object.values(e.nicks)), e.type === g.d4z.DM) {
     let [n] = e.recipients.map(d.default.getUser).filter(p.lm);
@@ -144,14 +144,14 @@ function A(e) {
   return t
 }
 
-function C(e) {
+function A(e) {
   if (!O()) return;
   let t = null != e ? o.Z.getChannel(e) : true;
   if (null == t) return void m.Z.resignActivity();
   let n = s.Z.getGuild(t.guild_id),
     r = (0, a.F6)(t, d.default, c.Z, true),
     i = r + (null != n ? " (".concat(n.name, ")") : ""),
-    l = [...new Set([r, ...A(t)])],
+    l = [...new Set([r, ...C(t)])],
     u = g.Z5c.CHANNEL(t.guild_id, t.id),
     f = {
       webpageURL: "".concat(g.yXt.BASE_URL).concat(u),
@@ -213,7 +213,7 @@ function R(e) {
 }
 class D extends Chunk147913.Z {
   handleInit() {
-    C(Chunk944486.Z.getCurrentlySelectedChannelId()), y() && Chunk495527.Z.clearSearchIndex(), b() && N()
+    A(Chunk944486.Z.getCurrentlySelectedChannelId()), y() && Chunk495527.Z.clearSearchIndex(), b() && N()
   }
   handleLogout() {
     y() && Chunk495527.Z.clearSearchIndex()
@@ -222,7 +222,7 @@ class D extends Chunk147913.Z {
     let {
       channelId: t
     } = e;
-    C(t)
+    A(t)
   }
   handleChannelCreate(e) {
     var t;

@@ -365,7 +365,7 @@ function J(e) {
     children: [(0, r.jsx)(f.Text, {
       className: G.nativePickerLabel,
       variant: "text-md/semibold",
-      color: "interactive-normal",
+      color: "interactive-text-default",
       children: B.intl.string(B.t.XyYoFc)
     }), y, 0 === l.length ? null : (0, r.jsxs)("div", {
       className: s()(G.nativePickerCaptureSection, v ? null : G.nativePickerCollapsed),
@@ -375,7 +375,7 @@ function J(e) {
         children: [(0, r.jsx)(f.Text, {
           className: G.nativeCaptureDevicesText,
           variant: "text-md/semibold",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: B.intl.string(B.t.rO0Vix)
         }), (0, r.jsx)(f.CJ0, {
           size: "sm",

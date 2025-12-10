@@ -39,7 +39,7 @@ function o(e) {
         variant: "heading-sm/semibold",
         children: g
       }), (0, r.jsx)(i.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         variant: "text-xs/medium",
         children: m
       }), o ? (0, r.jsxs)(i.Text, {

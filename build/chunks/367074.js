@@ -29,9 +29,9 @@ var Chunk913527 = require("./913527.js"),
   Chunk1844 = require("./1844.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
-let A = 10;
+let C = 10;
 
-function C(e) {
+function A(e) {
   let {
     experimentEnabled: t,
     premiumSubscription: n,
@@ -42,12 +42,12 @@ function C(e) {
   if (null != r && r.status === T.O0b.ENDED) {
     let e = r.endedAt,
       t = r.hasPremiumAtLeast(I.PremiumTypes.TIER_2);
-    if (null != e && t && i()().subtract(A, "days").isBefore(e)) returnfalse
+    if (null != e && t && i()().subtract(C, "days").isBefore(e)) returnfalse
   }
   if (null != o && o.status === T.O0b.ENDED) {
     let e = o.endedAt,
       t = o.hasPremiumAtLeast(I.PremiumTypes.TIER_2);
-    if (null != e && t && i()().subtract(A, "days").isBefore(e)) returnfalse
+    if (null != e && t && i()().subtract(C, "days").isBefore(e)) returnfalse
   }
   if (null != n) {
     let e = n.hasPremiumAtLeast(I.PremiumTypes.TIER_2),
@@ -95,14 +95,14 @@ function N() {
   (0, Chunk921022.Z)({
     delay: Chunk981631 ? false : Chunk1844 - Chunk474936
   });
-  let A = !Chunk873546.tq || (0, Chunk358085.isAndroid)() && Chunk355467,
-    N = C({
+  let C = !Chunk873546.tq || (0, Chunk358085.isAndroid)() && Chunk355467,
+    N = A({
       experimentEnabled: i,
       premiumSubscription: Chunk431,
       mostRecentSubscription: Chunk594174,
       previousPremiumSubscription: Chunk580130
     }),
-    P = A && N && null == Chunk74538 && null != Chunk913527 && !require && null == Chunk748770,
+    P = C && N && null == Chunk74538 && null != Chunk913527 && !require && null == Chunk748770,
     {
       enabled: R
     } = Chunk617799.Z.useExperiment({
@@ -142,7 +142,7 @@ async function P() {
   if (Chunk913527 || i || !Chunk399606 || exports && !Chunk358085 || !Chunk74538 || Chunk431.Z.hasFetchedOffer() && (Chunk431.Z.hasAnyUnexpiredOffer() || Chunk431.Z.hasAnyUnexpiredDiscountOffer())) returnfalse;
   !Chunk78839.Z.hasFetchedMostRecentPremiumTypeSubscription() && (null == (e = Chunk594174.default.getCurrentUser()) ? true : module.hasPurchasedFlag(Chunk474936.in.PREMIUM_TIER_2)) && await (0, Chunk355467.ou)(), Chunk78839.Z.hasFetchedSubscriptions() || await (0, Chunk355467.jg)();
   let E = Chunk78839.Z.getMostRecentPremiumTypeSubscription();
-  return C({
+  return A({
     experimentEnabled: Chunk399606,
     premiumSubscription: Chunk78839.Z.getPremiumTypeSubscription(),
     mostRecentSubscription: Chunk622909,

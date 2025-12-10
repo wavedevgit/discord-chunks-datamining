@@ -81,29 +81,29 @@ let N = function(e) {
     Z && !B && (0, d.ce)(n.id)
   }, [n.id, Z, B]), (0, r.jsxs)(r.Fragment, {
     children: [null != N && (0, r.jsx)("div", {
-      className: C.closeIconWrapper,
+      className: A.closeIconWrapper,
       children: (0, r.jsx)(l.Z, {
-        className: C.closeIcon,
+        className: A.closeIcon,
         closeAction: U,
         keybind: "ESC",
         variant: l.Z.Variants.BOLD
       })
     }), (0, r.jsxs)(s.yWw, {
       ref: j,
-      className: C.scroller,
+      className: A.scroller,
       children: [(0, r.jsxs)("div", {
-        className: C.header,
+        className: A.header,
         children: [(0, r.jsxs)("div", {
-          className: C.headerContentWrapper,
+          className: A.headerContentWrapper,
           children: [(0, r.jsx)(_.Z, {
             guild: e.guild,
             themeResponsive: false,
             onButtonClick: k
           }), (0, r.jsx)(s.Heading, {
-            className: C.heading,
+            className: A.heading,
             color: "always-white",
             variant: "display-lg",
-            children: A.intl.string(A.t.N4sqzL)
+            children: C.intl.string(C.t.N4sqzL)
           }), (0, r.jsx)(E.Z, {
             guild: n,
             closeLayer: U,
@@ -115,29 +115,29 @@ let N = function(e) {
           })]
         }), (0, r.jsx)(I.O, {})]
       }), (0, r.jsx)("div", {
-        className: C.middleBodyContentWrapper,
+        className: A.middleBodyContentWrapper,
         children: (0, r.jsx)(m.Z, {
           ref: M,
           guild: e.guild,
           onClose: U
         })
       }), (0, r.jsxs)("div", {
-        className: C.lowerBody,
+        className: A.lowerBody,
         children: [(0, r.jsxs)("div", {
-          className: C.lowerBodyContentWrapper,
+          className: A.lowerBodyContentWrapper,
           children: [(0, r.jsx)(S.Z, {
-            className: C.tierComparisonTable,
+            className: A.tierComparisonTable,
             guild: n
           }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(b.Z, {})]
         }), (0, r.jsx)(I.A, {}), (0, r.jsx)("div", {
-          className: C.lowerBodyBackgroundImage
+          className: A.lowerBodyBackgroundImage
         })]
       }), (0, r.jsx)(o.$, {
         innerRef: L,
         onChange: G,
         children: (0, r.jsx)("div", {
           ref: L,
-          className: C.persistentCtaSpacer
+          className: A.persistentCtaSpacer
         })
       })]
     }), (0, r.jsx)(y.Z, {

@@ -33,7 +33,7 @@ function b(e) {
     guildProfile: O,
     fetchGuildProfile: v,
     fetchStatus: S
-  } = (0, p.u)(t), I = (0, s.e7)([f.Z], () => f.Z.getErrorCode(t)), T = i.useRef(null), A = i.useCallback(() => {
+  } = (0, p.u)(t), I = (0, s.e7)([f.Z], () => f.Z.getErrorCode(t)), T = i.useRef(null), C = i.useCallback(() => {
     v(true)
   }, [v]);
   i.useEffect(() => {
@@ -43,7 +43,7 @@ function b(e) {
   }, [t, y]), i.useEffect(() => {
     null == a || a(null == T ? true : T.current)
   }, [T, a]);
-  let C = i.useMemo(() => S === f.a.NOT_FETCHED || S === f.a.FETCHING ? (0, r.jsx)("div", {
+  let A = i.useMemo(() => S === f.a.NOT_FETCHED || S === f.a.FETCHING ? (0, r.jsx)("div", {
     className: o()(g.container, g.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
   }) : null == O && I === E ? (0, r.jsx)("div", {
@@ -56,7 +56,7 @@ function b(e) {
     className: g.container,
     children: (0, r.jsx)(_.Z, {
       name: n,
-      onRetry: A
+      onRetry: C
     })
   }) : (0, r.jsx)("div", {
     className: g.container,
@@ -64,10 +64,10 @@ function b(e) {
       profile: O,
       onClose: b
     })
-  }), [S, O, I, t, n, A, b]);
+  }), [S, O, I, t, n, C, b]);
   return (0, r.jsx)(l.VqE, {
     ref: T,
     "aria-label": null == O ? true : O.name,
-    children: C
+    children: A
   })
 }

@@ -127,13 +127,13 @@ function eV(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let eB = {
+let eF = {
     [Chunk981631.AEg.NORMAL]: Chunk598411.normal,
     [Chunk981631.AEg.MINIMUM]: Chunk598411.minimum,
     [Chunk981631.AEg.NO_CHAT]: Chunk598411.noChat,
     [Chunk981631.AEg.FULL_SCREEN]: Chunk598411.fullScreen
   },
-  eF = {
+  eB = {
     [Chunk981631.IlC.POPOUT]: Chunk598411.popout,
     [Chunk981631.IlC.APP]: null,
     [Chunk981631.IlC.OVERLAY]: null,
@@ -300,7 +300,7 @@ class eH extends Chunk473749.PureComponent {
       resizedHeight: p
     } = this.state, f = Chunk473749 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
     return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk598411.wrapper, eB[module], eF[Chunk512722], {
+      className: a()(Chunk598411.wrapper, eF[module], eB[Chunk512722], {
         [Chunk598411.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
         [Chunk598411.video]: Chunk570140,
         [Chunk598411.sidebarOpen]: Chunk120356 || Chunk704215
@@ -504,7 +504,7 @@ class eH extends Chunk473749.PureComponent {
       } = this.props, n = async () => {
         (null == t ? true : t.applicationId) != null && await (0, j.nJ)(t.applicationId, e.id);
         let n = e.getGuildId();
-        null != n && (0, F.uL)((0, em.LY)(n)), V.openChannelCallPopout(e)
+        null != n && (0, B.uL)((0, em.LY)(n)), V.openChannelCallPopout(e)
       };
       null == t || (0, x.R)() ? n() : (0, I.Z)({
         onConfirm: n
@@ -723,7 +723,7 @@ let eG = function(e) {
     layout: D,
     participantsOpen: k,
     participantsListOpen: V,
-    chatOpen: F,
+    chatOpen: B,
     selectedParticipant: H
   } = (0, u.cj)([e_.Z], () => {
     let e = C === eR.IlC.POPOUT,
@@ -748,9 +748,9 @@ let eG = function(e) {
   }), [H]), q = (0, u.e7)([es.Z], () => es.Z.getGuild(n.getGuildId())), K = (0, u.e7)([eu.ZP], () => eu.ZP.getMentionCount(n.id), [n.id]), Y = (0, u.e7)([ea.default], () => ea.default.getId()), {
     popoutWindow: X,
     popoutWindowAlwaysOnTop: J
-  } = (0, u.cj)([B.Z], () => ({
-    popoutWindow: B.Z.getWindow(eR.KJ3.CHANNEL_CALL_POPOUT),
-    popoutWindowAlwaysOnTop: B.Z.getIsAlwaysOnTop(eR.KJ3.CHANNEL_CALL_POPOUT)
+  } = (0, u.cj)([F.Z], () => ({
+    popoutWindow: F.Z.getWindow(eR.KJ3.CHANNEL_CALL_POPOUT),
+    popoutWindowAlwaysOnTop: F.Z.getIsAlwaysOnTop(eR.KJ3.CHANNEL_CALL_POPOUT)
   })), Q = (0, u.e7)([ec.Z], () => ec.Z.can(eR.Plq.CONNECT, n)), $ = (0, u.e7)([eo.Z], () => eo.Z.getToastsEnabled(n.id)), ee = (0, u.e7)([R.default], () => R.default.getAwaitingRemoteSessionInfo()), et = (0, u.e7)([G.ZP], () => G.ZP.callHeaderHeight), en = r.useCallback(e => {
     y.ZP.updatedUnsyncedSettings({
       callHeaderHeight: e
@@ -808,7 +808,7 @@ let eG = function(e) {
             filteredParticipants: T,
             participantsVersion: A,
             layout: D,
-            chatOpen: F,
+            chatOpen: B,
             maxSidebarWidth: ev,
             shouldUseVoiceEffectsActionBar: em,
             currentUserId: Y,

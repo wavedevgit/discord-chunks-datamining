@@ -71,8 +71,8 @@ function b(e) {
       autoFlip: S = true,
       autoShift: I = true,
       strategy: T = "fixed",
-      portal: A = true,
-      blockPointerEvents: C = false,
+      portal: C = true,
+      blockPointerEvents: A = false,
       children: N,
       renderLayer: P,
       viewportPadding: R = g,
@@ -120,13 +120,13 @@ function b(e) {
   }), {
     getReferenceProps: F,
     getFloatingProps: V
-  } = (0, o.NI)([Z, B]), H = (null == (t = k.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = A ? d.UU : i.Fragment;
+  } = (0, o.NI)([Z, B]), H = (null == (t = k.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = C ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [N({
       ref: L.setReference,
       props: F()
     }), l && (0, r.jsxs)(Y, {
-      children: [C ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", h(_({
+      children: [A ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", h(_({
         id: m,
         className: c()(b, f.layer),
         [E]: true,

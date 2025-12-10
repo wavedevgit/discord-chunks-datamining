@@ -99,7 +99,7 @@ function G(e) {
     ec = null != F ? F : T.c,
     eu = null != el ? el[ec] : null;
   o()(null != eo, "SKU must exist and be fetched."), o()(null != G, "Application must exist.");
-  let ed = (0, c.e7)([h.Z, A.Z], () => A.Z.inTestModeForApplication(G.id) || h.Z.inDevModeForApplication(G.id), [G.id]),
+  let ed = (0, c.e7)([h.Z, C.Z], () => C.Z.inTestModeForApplication(G.id) || h.Z.inDevModeForApplication(G.id), [G.id]),
     ef = (0, c.e7)([v.Z], () => v.Z.enabled),
     ep = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
     e_ = Z === D.A.PURCHASING || Z === D.A.COMPLETED,
@@ -122,13 +122,13 @@ function G(e) {
     children: [(0, r.jsx)(y.Y, {
       paymentRestrictionBannerType: eg
     }), ed ? (0, r.jsx)(p.Z, {
-      icon: (0, u.GSL)(C.Z),
+      icon: (0, u.GSL)(A.Z),
       iconSize: p.Z.Sizes.SMALL,
       color: p.Z.Colors.WARNING,
       className: k.errorBlock,
       children: M.intl.string(M.t.OvMyMd)
     }, "TEST_MODE") : null, (0, l.yE)(G.flags, j.udG.EMBEDDED) && Q === h.O.ERROR ? (0, r.jsx)(p.Z, {
-      icon: (0, u.GSL)(C.Z),
+      icon: (0, u.GSL)(A.Z),
       iconSize: p.Z.Sizes.SMALL,
       color: p.Z.Colors.ERROR,
       className: k.errorBlock,

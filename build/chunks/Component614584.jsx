@@ -119,7 +119,7 @@ let j = Chunk473749.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), V = (0, _.wq)(null == w ? true : w.author.id, S.id), B = (0, _.$3)(n, w), F = (0, _.Wl)(w, S, I, T), H = (0, _.rY)(Z, T), G = r.useCallback(() => {
+  }), [w]), V = (0, _.wq)(null == w ? true : w.author.id, S.id), F = (0, _.$3)(n, w), B = (0, _.Wl)(w, S, I, T), H = (0, _.rY)(Z, T), G = r.useCallback(() => {
     T({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
@@ -139,8 +139,8 @@ let j = Chunk473749.memo(function(e) {
     showUsernamePopout: I,
     renderPopout: y.Z,
     onClickAvatar: H,
-    onClickUsername: F,
-    onClickReply: B,
+    onClickUsername: B,
+    onClickReply: F,
     onContextMenu: V,
     onPopoutRequestClose: G,
     isReplySpineClickable: N,

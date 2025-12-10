@@ -61,10 +61,10 @@ let g = Chunk473749.forwardRef(function(e, t) {
   } = e, {
     cropStart: x,
     cropEnd: y,
-    setVideoPlayerRef: C,
-    videoURL: k,
-    audioURL: N
-  } = (0, d.D)(), E = a.useRef({}), w = a.useRef(false), [S, I] = a.useState([]), O = a.useCallback(() => {
+    setVideoPlayerRef: N,
+    videoURL: C,
+    audioURL: k
+  } = (0, d.D)(), E = a.useRef({}), S = a.useRef(false), [w, O] = a.useState([]), T = a.useCallback(() => {
     let e = E.current.main;
     if (null == e) return;
     let t = (0, i.round)(e.currentTime, 3),
@@ -73,28 +73,28 @@ let g = Chunk473749.forwardRef(function(e, t) {
       for (let e of Object.values(E.current)) null != e && (e.currentTime = x);
       returntrue
     }
-  }, [x, y]), T = a.useCallback(e => {
+  }, [x, y]), I = a.useCallback(e => {
     let t = [];
     for (let n of Object.values(e.currentTarget.audioTracks)) n.label.includes(m.zh.APPLICATION) ? n.enabled = true : n.label.includes(m.zh.VOICE) || n.label.includes(m.zh.SOUNDBOARD) ? (n.enabled = false, t.includes(n.label) || t.push(n.label)) : n.enabled = false;
-    I(t)
+    O(t)
   }, []);
   (0, r.Z)(() => {
-    w.current && O() && R()
+    S.current && T() && R()
   });
   let R = a.useCallback(() => {
-      for (let e of (w.current = true, O(), Object.values(E.current))) null != e && e.play()
-    }, [O]),
-    P = a.useCallback(() => {
+      for (let e of (S.current = true, T(), Object.values(E.current))) null != e && e.play()
+    }, [T]),
+    L = a.useCallback(() => {
       for (let e of Object.values(E.current)) null != e && e.pause()
     }, []),
-    A = a.useCallback(e => {
+    P = a.useCallback(e => {
       var t;
-      for (let n of ((null == (t = E.current.main) ? true : t.paused) && (w.current = false), Object.values(E.current))) null != n && (n.currentTime = e)
+      for (let n of ((null == (t = E.current.main) ? true : t.paused) && (S.current = false), Object.values(E.current))) null != n && (n.currentTime = e)
     }, []),
-    L = a.useCallback(() => {
+    A = a.useCallback(() => {
       var e;
-      (null == (e = E.current.main) ? true : e.paused) ? R(): P()
-    }, [R, P]),
+      (null == (e = E.current.main) ? true : e.paused) ? R(): L()
+    }, [R, L]),
     M = a.useCallback(e => {
       E.current.main = e
     }, []),
@@ -104,33 +104,33 @@ let g = Chunk473749.forwardRef(function(e, t) {
   a.useImperativeHandle(t, () => {
     let e = {
       play: R,
-      seek: A,
-      pause: P,
+      seek: P,
+      pause: L,
       videoElement: E.current.main
     };
-    return C(e), e
-  }, [R, A, P, C]);
+    return N(e), e
+  }, [R, P, L, N]);
   let U = a.useCallback(() => {
-    A(x)
-  }, [A, x]);
-  if (null == k) return null;
+    P(x)
+  }, [P, x]);
+  if (null == C) return null;
   let Z = n.type === o.NJ.VOICE_CLIP;
   return (0, l.jsxs)("div", {
     className: h.clipsPlayer,
     children: [Z ? (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("audio", {
         ref: M,
-        src: k,
+        src: C,
         muted: true,
         preload: "auto"
       }), (0, l.jsx)(u.Z, {
         className: h.displayVideo
       })]
     }) : (0, l.jsx)(s.Z, {
-      onClick: L,
+      onClick: A,
       className: h.displayVideo,
       ref: M,
-      src: k,
+      src: C,
       muted: f(":all", {
         applicationAudioEnabled: g,
         voiceAudioEnabled: b,
@@ -145,7 +145,7 @@ let g = Chunk473749.forwardRef(function(e, t) {
       clip: n
     }), (0, l.jsx)("audio", {
       id: "ClipsPlayerAudioTrack:application",
-      src: null != N ? N : true,
+      src: null != k ? k : true,
       muted: f(":application", {
         applicationAudioEnabled: g,
         voiceAudioEnabled: b,
@@ -155,11 +155,11 @@ let g = Chunk473749.forwardRef(function(e, t) {
       className: p.hidden,
       preload: "auto",
       ref: e => D(e, "main:application"),
-      onLoadedMetadata: T
-    }), S.map(e => (0, l.jsx)(v, {
+      onLoadedMetadata: I
+    }), w.map(e => (0, l.jsx)(v, {
       setRef: D,
       audioTrackLabel: e,
-      src: N,
+      src: k,
       muted: f(e, {
         applicationAudioEnabled: g,
         voiceAudioEnabled: b,

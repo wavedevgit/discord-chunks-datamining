@@ -45,40 +45,40 @@ let R = (e, t) => {
     return (0, r.jsx)(f.Gt, {
       value: x,
       children: (0, r.jsxs)("div", {
-        className: o()(A.container, A.heroHeadingContainer, n),
+        className: o()(C.container, C.heroHeadingContainer, n),
         ref: t,
         "data-testid": "marketing-page-hero-header",
         children: [(0, r.jsx)("div", {
-          className: A.container,
+          className: C.container,
           children: (0, r.jsxs)("div", {
-            className: A.marketingPageTextContainer,
+            className: C.marketingPageTextContainer,
             children: [j && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.Heading, {
-              className: A.marketingPageHeading,
+              className: C.marketingPageHeading,
               variant: "display-sm",
               color: "header-primary",
               children: B
             }), U ? (0, r.jsx)(O.Z, {
               referrer: k
             }) : Z && (0, r.jsx)("div", {
-              className: A.affinityDescriptionContainer,
+              className: C.affinityDescriptionContainer,
               children: (0, r.jsx)(y.Z, {
                 textColor: "text-default",
                 smallerText: false,
                 isApplicationHome: true
               })
             }), L ? (0, r.jsx)("div", {
-              className: o()(A.buttonContainer, A.marketingPageCTAContainer, {
-                [A.marketingPageCTAMargin]: !(Z || U)
+              className: o()(C.buttonContainer, C.marketingPageCTAContainer, {
+                [C.marketingPageCTAMargin]: !(Z || U)
               }),
               children: (0, r.jsx)(b.Z, {
-                className: o()(A.button, i),
+                className: o()(C.button, i),
                 color: G
               })
             }) : (0, r.jsx)(v.PK, {
               subscriptionTier: a,
               inOfferExperience: j,
-              containerClassName: o()(A.marketingPageCTAContainer, {
-                [A.marketingPageCTAMargin]: !(Z || U)
+              containerClassName: o()(C.marketingPageCTAContainer, {
+                [C.marketingPageCTAMargin]: !(Z || U)
               }),
               buttonClassName: i,
               isApplicationHome: true,
@@ -91,17 +91,17 @@ let R = (e, t) => {
             })]
           })
         }), (0, r.jsx)("div", {
-          className: A.heroHeadingV2ArtContainer,
+          className: C.heroHeadingV2ArtContainer,
           children: (0, r.jsx)(p.Z, {
             autoPlay: !V,
             playsInline: true,
             preload: V ? "none" : "auto",
             poster: N.Z,
             loop: true,
-            className: A.heroHeadingV2Art,
+            className: C.heroHeadingV2Art,
             ref: w,
             children: (0, r.jsx)("source", {
-              src: F ? C.Z : P.Z,
+              src: F ? A.Z : P.Z,
               type: F ? I.m.MP4 : I.m.WEBM
             })
           })

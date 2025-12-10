@@ -85,8 +85,8 @@ let E = function(e) {
       muted: S,
       to: I,
       avatarClassName: T,
-      selectedClassName: A,
-      innerClassName: C,
+      selectedClassName: C,
+      innerClassName: A,
       wrapContent: N,
       highlighted: P,
       focusProps: R
@@ -95,7 +95,7 @@ let E = function(e) {
   D.className = o()(D.className, d.container, {
     [d.selected]: v,
     [d.highlighted]: P,
-    [null != A ? A : ""]: v,
+    [null != C ? C : ""]: v,
     [d.clickable]: !v && (null != I || null != y)
   }), D["aria-selected"] = null != (t = D["aria-selected"]) ? t : v;
   let w = i.useRef(null),
@@ -111,7 +111,7 @@ let E = function(e) {
         placement: c.i.MEMBER_LIST
       }), (0, r.jsxs)("div", {
         ref: w,
-        className: o()(C, d.layout, {
+        className: o()(A, d.layout, {
           [d.muted]: !v && S,
           [d.wrappedLayout]: N
         }),

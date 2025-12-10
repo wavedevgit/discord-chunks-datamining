@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => N,
-  m: () => C
+  m: () => A
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,10 +48,10 @@ function T(e) {
   }
   return e
 }
-let A = Chunk473749.createContext(true);
+let C = Chunk473749.createContext(true);
 
-function C() {
-  let e = Chunk473749.useContext(A);
+function A() {
+  let e = Chunk473749.useContext(C);
   return o()(null != module, "must use useGuildShopDisplayContext within a GuildShopDisplayContextProvider"), module
 }
 
@@ -61,8 +61,8 @@ function N(e) {
     children: n,
     initialTab: a,
     guildId: o
-  } = e, I = (0, s.e7)([h.Z], () => h.Z.getGuild(o)), C = (0, s.e7)([p.Z], () => p.Z.isViewingServerShop(o)), N = (0, b.g)(I, "guild_shop_page"), P = (0, E.RF)(o, "guild_shop_page"), R = (null == I ? true : I.features.has(S.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, D = (0, f.mY)(null == I ? true : I.id), w = D && P, x = null == (t = (0, d.YB)(o)) ? true : t.server_shop_tab_order, L = [], j = y.y.GUILD_SHOP_FULL_PREVIEW;
-  C || R && D ? (L.push(x === O.a3.PRODUCTS_FIRST ? y.y.GUILD_PRODUCTS : y.y.GUILD_ROLE_SUBSCRIPTIONS), L.push(x === O.a3.PRODUCTS_FIRST ? y.y.GUILD_ROLE_SUBSCRIPTIONS : y.y.GUILD_PRODUCTS), j = L[0]) : R && !D ? (L.push(y.y.GUILD_PRODUCTS), j = y.y.GUILD_PRODUCTS) : !R && D && (L.push(y.y.GUILD_ROLE_SUBSCRIPTIONS), j = y.y.GUILD_ROLE_SUBSCRIPTIONS, N && L.push(y.y.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : j;
+  } = e, I = (0, s.e7)([h.Z], () => h.Z.getGuild(o)), A = (0, s.e7)([p.Z], () => p.Z.isViewingServerShop(o)), N = (0, b.g)(I, "guild_shop_page"), P = (0, E.RF)(o, "guild_shop_page"), R = (null == I ? true : I.features.has(S.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === true, D = (0, f.mY)(null == I ? true : I.id), w = D && P, x = null == (t = (0, d.YB)(o)) ? true : t.server_shop_tab_order, L = [], j = y.y.GUILD_SHOP_FULL_PREVIEW;
+  A || R && D ? (L.push(x === O.a3.PRODUCTS_FIRST ? y.y.GUILD_PRODUCTS : y.y.GUILD_ROLE_SUBSCRIPTIONS), L.push(x === O.a3.PRODUCTS_FIRST ? y.y.GUILD_ROLE_SUBSCRIPTIONS : y.y.GUILD_PRODUCTS), j = L[0]) : R && !D ? (L.push(y.y.GUILD_PRODUCTS), j = y.y.GUILD_PRODUCTS) : !R && D && (L.push(y.y.GUILD_ROLE_SUBSCRIPTIONS), j = y.y.GUILD_ROLE_SUBSCRIPTIONS, N && L.push(y.y.GUILD_PRODUCTS_PREVIEW)), a = null != a ? a : j;
   let [M, k] = i.useState(a), U = N && !w || M === y.y.GUILD_PRODUCTS_PREVIEW;
   i.useEffect(() => {
     k(a)
@@ -77,7 +77,7 @@ function N(e) {
     }
     g.default.track(S.rMx.GUILD_SHOP_PREVIEW_CLICK, t)
   };
-  return (0, r.jsx)(A.Provider, {
+  return (0, r.jsx)(C.Provider, {
     value: {
       selectedTab: M,
       setSelectedTab: k,

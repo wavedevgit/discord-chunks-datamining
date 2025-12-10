@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
@@ -250,7 +250,7 @@ function C(e) {
             children: H
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
-            color: "header-muted",
+            color: "text-muted",
             children: v.intl.string(E ? v.t.Sg6cfm : v.t.ZKhtw0)
           })]
         }),

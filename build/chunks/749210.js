@@ -91,7 +91,7 @@ function M(e, t) {
   return i
 }
 let k = e => {
-    C.Z.show({
+    A.Z.show({
       title: R.intl.string(R.t.cTaRxF),
       body: R.intl.formatToPlainString(R.t["VSd+Aj"], {
         quantity: e
@@ -271,7 +271,7 @@ let F = {
       location: s,
       moderatorReportId: l
     } = e;
-    return A.Z.patch({
+    return C.Z.patch({
       url: N.ANM.GUILD_MEMBER(t, n),
       reason: o,
       body: {

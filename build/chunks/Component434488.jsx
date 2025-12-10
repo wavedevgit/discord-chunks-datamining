@@ -108,7 +108,7 @@ function I(e) {
             size: "md",
             color: "currentColor",
             className: j.closeButtonIcon,
-            secondaryColor: s.Z.colors.INTERACTIVE_NORMAL.css
+            secondaryColor: s.Z.colors.INTERACTIVE_TEXT_DEFAULT.css
           })
         })
       })]

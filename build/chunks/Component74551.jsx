@@ -29,7 +29,7 @@ function s(e) {
       className: o.icon,
       children: (0, r.jsx)(i.T39, {
         size: "xxs",
-        color: "text-feedback-critical" === c ? i.TVs.colors.TEXT_FEEDBACK_CRITICAL : i.TVs.colors.INTERACTIVE_ACTIVE
+        color: "text-feedback-critical" === c ? i.TVs.colors.TEXT_FEEDBACK_CRITICAL : i.TVs.colors.INTERACTIVE_TEXT_ACTIVE
       })
     }), (0, r.jsx)(i.Heading, {
       variant: "text-md/semibold",

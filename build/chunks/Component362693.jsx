@@ -53,8 +53,8 @@ function h(e) {
       r && (e.stopPropagation(), e.preventDefault())
     }
   }, [b, y, n.type, v, g]);
-  let C = a.useMemo(() => x.filter(e => e.trackName.includes(":voice")), [x]),
-    k = a.useCallback(() => {
+  let N = a.useMemo(() => x.filter(e => e.trackName.includes(":voice")), [x]),
+    C = a.useCallback(() => {
       var e;
       (0, r.K)({
         items: [{
@@ -68,7 +68,7 @@ function h(e) {
       }, "stack")
     }, [n.thumbnail, n.name]);
   if (y) {
-    var N;
+    var k;
     return (0, l.jsx)("div", {
       className: m.editorPane,
       children: t !== i.Dvm.ENTERED ? (0, l.jsx)("div", {
@@ -78,11 +78,11 @@ function h(e) {
         className: m.editorContent,
         children: (0, l.jsx)(i.P3F, {
           className: m.videoSizer,
-          onClick: k,
+          onClick: C,
           children: (0, l.jsx)("img", {
             className: m.displayScreenshot,
             src: n.thumbnail,
-            alt: null != (N = n.name) ? N : ""
+            alt: null != (k = n.name) ? k : ""
           })
         })
       })
@@ -105,7 +105,7 @@ function h(e) {
       }), (0, l.jsx)(u.Z, {
         sourceURL: j,
         clip: n,
-        voiceAudioTracks: C
+        voiceAudioTracks: N
       })]
     })
   })

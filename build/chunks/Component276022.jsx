@@ -28,7 +28,7 @@ function E(e) {
     guildId: y,
     context: O,
     onItemClick: v
-  } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, a.e7)([m.Z], () => null != I ? m.Z.can(h.Plq.MANAGE_GUILD, I) : null), A = true, C = true, N = (0, l.LD)(y, C), P = (0, l.PL)(A, C), R = (0, a.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
+  } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, a.e7)([m.Z], () => null != I ? m.Z.can(h.Plq.MANAGE_GUILD, I) : null), C = true, A = true, N = (0, l.LD)(y, A), P = (0, l.PL)(C, A), R = (0, a.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
     isUserApp: D,
     isGuildApp: w
   } = i.useMemo(() => {

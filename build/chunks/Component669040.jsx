@@ -75,7 +75,7 @@ let z = 0,
       setCollapsedSections: g,
       getEmojiItemProps: O,
       getEmojiRowProps: v,
-      isScrolling: A,
+      isScrolling: C,
       isUsingKeyboardNavigation: N,
       allowAnimatedEmoji: R,
       channelGuildId: D,
@@ -86,7 +86,7 @@ let z = 0,
       activeSectionIndex: z,
       upsellGlowOpacity: er,
       emojiListRef: eo
-    } = e, es = (0, m.O)(), el = i.useRef(V.xAR), ec = i.useMemo(() => "" !== n ? d.Z.convert.toCodePoint(n) : "", [n]), eu = (0, C.Z)({
+    } = e, es = (0, m.O)(), el = i.useRef(V.xAR), ec = i.useMemo(() => "" !== n ? d.Z.convert.toCodePoint(n) : "", [n]), eu = (0, A.Z)({
       location: "PremiumBrandRefreshCategorySection"
     }), ed = i.useCallback(e => {
       let t = h[e],
@@ -135,7 +135,7 @@ let z = 0,
         onSelectSoundmoji: f,
         getEmojiItemProps: O,
         getEmojiRowProps: v,
-        isScrolling: A,
+        isScrolling: C,
         isUsingKeyboardNavigation: N,
         rowIndex: e,
         allowAnimatedEmoji: R,
@@ -149,7 +149,7 @@ let z = 0,
         inNitroLockedSection: i.isNitroLocked,
         handleScrollUpOnSectionCollapse: o
       }, e)
-    }), [a, h, s, ec, e_, c, f, O, v, A, N, R, em, D, L, j, M, eo]);
+    }), [a, h, s, ec, e_, c, f, O, v, C, N, R, em, D, L, j, M, eo]);
     i.useEffect(() => () => {
       var e, t;
       return null == (t = eh.cache) || null == (e = t.clear) ? true : e.call(t)
@@ -255,7 +255,7 @@ let z = 0,
       getEmojiItemProps: S,
       getEmojiRowProps: I,
       rowCount: T,
-      isUsingKeyboardNavigation: C,
+      isUsingKeyboardNavigation: A,
       channelGuildId: P,
       channelId: x,
       messageId: M,
@@ -287,7 +287,7 @@ let z = 0,
       getEmojiItemProps: S,
       getEmojiRowProps: I,
       isScrolling: G,
-      isUsingKeyboardNavigation: C,
+      isUsingKeyboardNavigation: A,
       allowAnimatedEmoji: H,
       channelGuildId: P,
       channelId: x,
@@ -344,7 +344,7 @@ let z = 0,
 
     function ev() {
       var e;
-      let t = (0, A.J0)();
+      let t = (0, C.J0)();
       return null != (e = (0, j.fr)(t, Y.Si.TIER_2)) ? e : W.intl.string(W.t.BmJkbd)
     }
     return i.useEffect(() => {

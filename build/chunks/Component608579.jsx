@@ -71,7 +71,7 @@ let x = e => {
   j = e => {
     let {
       skuId: t
-    } = e, n = i.useRef(new s.qA), [r, a] = i.useState(null), [o, l] = i.useState(false), c = i.useMemo(() => (0, C.UY)({
+    } = e, n = i.useRef(new s.qA), [r, a] = i.useState(null), [o, l] = i.useState(false), c = i.useMemo(() => (0, A.UY)({
       purchaseType: N.o8.FIAT,
       skuId: t
     }), [t]);
@@ -171,7 +171,7 @@ function Z(e) {
   } = x({
     analyticsLocations: _
   }), {
-    confettiCanvas: C,
+    confettiCanvas: A,
     environment: N,
     setConfettiCanvas: R,
     customConfettiVisible: D,
@@ -202,12 +202,12 @@ function Z(e) {
   }), q = i.useMemo(() => [y.WA, ...c ? [I.Dd] : [], v.n, ...y.yp, y.wo, {
     key: g.h8.CONFIRM,
     renderStep: e => (0, r.jsx)(S.x, w({
-      confettiCanvas: C,
+      confettiCanvas: A,
       analyticsLocations: T,
       hideConfetti: F
     }, e)),
     options: L
-  }], [T, C, F, c]);
+  }], [T, A, F, c]);
   return (0, r.jsxs)(d.Gt, {
     value: T,
     children: [(0, r.jsx)(U, {
@@ -218,7 +218,7 @@ function Z(e) {
     }), (0, r.jsx)(h.PaymentContextProvider, {
       loadId: s,
       stepConfigs: q,
-      applicationId: A.XAJ,
+      applicationId: C.XAJ,
       skuIDs: V,
       isGift: c,
       activeSubscription: null,
@@ -234,7 +234,7 @@ function Z(e) {
             skuId: Y,
             onClose: W,
             onComplete: K,
-            applicationId: A.XAJ,
+            applicationId: C.XAJ,
             initialPlanId: null,
             analyticsLocations: T,
             renderHeader: z,

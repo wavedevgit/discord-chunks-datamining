@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk239091 = require("./239091.js"),
@@ -41,7 +41,7 @@ function b(e) {
   return e
 }
 
-function S(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = {
+let S = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -85,7 +85,7 @@ let x = {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, S(b({}, n), {
+            return n => (0, i.jsx)(t, _(b({}, n), {
               widget: e
             }))
           })
@@ -111,8 +111,8 @@ let x = {
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: E.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : y.At,
+        widget: v.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -199,11 +199,11 @@ let x = {
         dragStart: o,
         anchorTop: a,
         anchorLeft: s,
-        showEmpty: c,
+        showEmpty: u,
         padding: h,
         borderWidth: p
       } = e;
-      return (0, d.ZL)(n) ? (0, i.jsx)(u.Z, {
+      return (0, d.ZL)(n) ? (0, i.jsx)(c.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
@@ -217,12 +217,12 @@ let x = {
         horizontal: null != (t = n.meta.horizontal) && t,
         padding: h,
         borderWidth: p,
-        showEmpty: c
+        showEmpty: u
       }) : null
     },
     renderTitle: e => (0, i.jsx)(g.XM, {
       widgetId: e.id,
-      children: v.intl.string(v.t["386XRo"])
+      children: E.intl.string(E.t["386XRo"])
     }),
     renderButtons(e) {
       var t;
@@ -233,7 +233,7 @@ let x = {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, S(b({}, n), {
+              return n => (0, i.jsx)(t, _(b({}, n), {
                 widget: e
               }))
             })
@@ -266,7 +266,7 @@ let x = {
         showEmpty: n,
         widget: r
       } = e;
-      return (0, i.jsx)(O.Z, {
+      return (0, i.jsx)(y.Z, {
         pinned: r.pinned,
         locked: t,
         showEmpty: n

@@ -49,7 +49,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -70,7 +70,7 @@ function N(e) {
   let {
     currentUserId: t,
     message: I,
-    application: A,
+    application: C,
     channel: N,
     analyticsLocations: P,
     onView: R
@@ -78,15 +78,15 @@ function N(e) {
     staticBannerSrc: D,
     videoBannerSrc: w,
     bannerAspectRatio: x
-  } = (0, d.E)(A), L = g.ZP.getApplicationIconURL({
-    id: A.id,
-    icon: A.icon
+  } = (0, d.E)(C), L = g.ZP.getApplicationIconURL({
+    id: C.id,
+    icon: C.icon
   }), j = (0, i.e7)([f.ZP, m.Z], () => f.ZP.getVisibleRunningGames().find(e => {
     let {
       id: t
     } = e;
-    if (t === A.id) returntrue;
-    let n = m.Z.getGameByApplication(A);
+    if (t === C.id) returntrue;
+    let n = m.Z.getGameByApplication(C);
     return null != n && t === n.id
   })), M = (0, i.e7)([_.Z], () => _.Z.getCurrentUserActiveStream()), k = (0, i.e7)([h.Z], () => h.Z.getChannelId()), U = b.default.extractTimestamp(I.id) + y.O < Date.now(), G = (0, r.jsx)(r.Fragment, {
     children: (0, o._0)(I, N, t)
@@ -95,7 +95,7 @@ function N(e) {
   } = (0, l.ZP)(P, s.Z.REQUEST_TO_STREAM_INVITE_EMBED), B = S.intl.string(v.default["5+172e"]), F = false;
   return U ? (B = S.intl.string(v.default.u4QmWl), F = true) : null != M ? (B = S.intl.string(v.default.P0wwmM), F = true) : k !== N.id ? (B = S.intl.string(v.default.qRXats), F = true) : null == j && (B = S.intl.string(v.default["43zohO"]), F = true), (0, r.jsx)(c.W, {
     header: S.intl.string(v.default.nAyuPp),
-    title: A.name,
+    title: C.name,
     staticBannerSrc: D,
     videoBannerSrc: w,
     bannerAspectRatio: x,
@@ -110,14 +110,14 @@ function N(e) {
           let {
             default: e
           } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("59416")]).then(n.bind(n, 60594));
-          return t => (0, r.jsx)(e, C(T({}, t), {
+          return t => (0, r.jsx)(e, A(T({}, t), {
             analyticsLocation: Z
           }))
         }))
       }
     }],
     trackingConfig: {
-      id: A.id,
+      id: C.id,
       linkType: O.U.REQUEST_TO_STREAM,
       guildId: N.guild_id,
       channelId: N.id,

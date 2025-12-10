@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   $H: () => b,
-  $J: () => C,
+  $J: () => A,
   Ah: () => W,
   Bz: () => P,
   DR: () => _,
   Dr: () => g,
   Gs: () => d,
-  HJ: () => A,
+  HJ: () => C,
   MC: () => c,
   Mo: () => f,
   Nj: () => h,
@@ -107,9 +107,9 @@ let v = y([Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION]),
   S = y([Chunk754700.X.WATCH_VIDEO]),
   I = y([Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
   T = y([Chunk754700.X.WATCH_VIDEO, Chunk754700.X.WATCH_VIDEO_ON_MOBILE]),
-  A = e => I(e) && !S(e);
+  C = e => I(e) && !S(e);
 
-function C(e) {
+function A(e) {
   return v(e)
 }
 let N = (e, t) => {

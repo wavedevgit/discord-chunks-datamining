@@ -5,8 +5,8 @@ require.d(exports, {
   Jw: () => I,
   PO: () => T,
   Tb: () => O,
-  UK: () => A,
-  Wh: () => C,
+  UK: () => C,
+  Wh: () => A,
   Ys: () => N,
   Zx: () => g,
   f$: () => R,
@@ -166,7 +166,7 @@ function T(e, t) {
   }
 }
 
-function A(e, t) {
+function C(e, t) {
   var n, r;
   let i = m.default.getCurrentUser();
   if (a()(null != i, "user cannot be null"), null == t) {
@@ -184,7 +184,7 @@ function A(e, t) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   var n, r, i;
   let s = m.default.getCurrentUser();
   if (a()(null != s, "user cannot be null"), null == t) {

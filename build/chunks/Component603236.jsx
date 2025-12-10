@@ -33,7 +33,7 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     } = e;
     return (0, i.jsx)(d.Z, {
       value: t,
-      hideMessage: l ? S.intl.string(S.t["6HzNgZ"]) : null,
+      hideMessage: l ? x.intl.string(x.t["6HzNgZ"]) : null,
       buttonColor: o.zx.Colors.BRAND,
       onCopy: s,
       autoFocus: n,
@@ -85,19 +85,19 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         checked: (0, r.yE)(O, s.$.IS_APPLICATION_BYPASS),
         onChange: e => y((0, r.mB)(O, s.$.IS_APPLICATION_BYPASS, e)),
         disabled: A,
-        label: S.intl.string(S.t["1i1bUl"]),
-        description: S.intl.string(S.t["jvd/LF"])
+        label: x.intl.string(x.t["1i1bUl"]),
+        description: x.intl.string(x.t["jvd/LF"])
       }), n || j ? null : (0, i.jsxs)(u.Text, {
         variant: "text-xs/normal",
-        className: x.footerText,
+        className: S.footerText,
         children: [(0, p.Vg)(M, Z), " ", a ? (0, i.jsx)(u.Anchor, {
           onClick: () => _(I.RV.SETTINGS),
-          children: S.intl.string(S.t["VNe8P/"])
+          children: x.intl.string(x.t["VNe8P/"])
         }) : null]
       }), !n && a && j ? (0, i.jsxs)(u.Text, {
         variant: "text-xs/normal",
-        className: x.footerText,
-        children: [S.intl.string(S.t["0M2U95"]), " "]
+        className: S.footerText,
+        children: [x.intl.string(x.t["0M2U95"]), " "]
       }) : null, null != w ? (0, i.jsx)(v.W, {
         guild: t,
         error: w,

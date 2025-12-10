@@ -30,8 +30,8 @@ var Chunk98405 = require("./98405.js"),
       if (module.name === S && 25 === module.code) return module.constructor
     }
   }(),
-  A = T && T.prototype,
-  C = I.prototype,
+  C = T && T.prototype,
+  A = I.prototype,
   N = Chunk199838.set,
   P = Chunk199838.getterFor(v),
   R = "stack" in new I(v),
@@ -54,7 +54,7 @@ var Chunk98405 = require("./98405.js"),
       Chunk154028.name = v, c(this, "stack", Chunk530575(1, Chunk742850(Chunk154028.stack, 1)))
     }
   },
-  x = w.prototype = Chunk713411(C),
+  x = w.prototype = Chunk713411(A),
   L = function(e) {
     return {
       enumerable: true,
@@ -72,12 +72,12 @@ var M = Chunk621523(function() {
     return !(new T instanceof I)
   }),
   k = M || Chunk621523(function() {
-    return C.toString !== Chunk266101 || "2: 1" !== String(new T(1, 2))
+    return A.toString !== Chunk266101 || "2: 1" !== String(new T(1, 2))
   }),
   U = M || Chunk621523(function() {
     return 25 !== new T(1, "DataCloneError").code
   }),
-  G = M || 25 !== T[S] || 25 !== A[S],
+  G = M || 25 !== T[S] || 25 !== C[S],
   Z = Chunk511696 ? k || U || G : M;
 Chunk98405({
   global: true,

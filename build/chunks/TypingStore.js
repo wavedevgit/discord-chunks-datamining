@@ -98,7 +98,7 @@ function S(e) {
   let {
     channelId: t
   } = e, n = u.default.getId();
-  return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, A({
+  return null != n && null != r && r.channelId === t && null != r.timeout && (clearTimeout(r.timeout), r = null, C({
     channelId: t,
     userId: n
   }))
@@ -122,7 +122,7 @@ function T(e) {
   clearTimeout(r[n]), r[n] = I(t, n), E[t] = r
 }
 
-function A(e) {
+function C(e) {
   let {
     channelId: t,
     userId: n
@@ -132,7 +132,7 @@ function A(e) {
   clearTimeout(i[n]), delete i[n], E[t] = i
 }
 
-function C(e) {
+function A(e) {
   let {
     channelId: t,
     message: {
@@ -140,7 +140,7 @@ function C(e) {
     },
     optimistic: r
   } = e;
-  return r && v(t), null != n && A({
+  return r && v(t), null != n && C({
     channelId: t,
     userId: n.id
   })
@@ -168,10 +168,10 @@ class R extends(i = Chunk442837.ZP.Store) {
 p(R, "displayName", "TypingStore");
 let D = new R(Chunk570140.Z, {
   TYPING_START: T,
-  TYPING_STOP: A,
+  TYPING_STOP: C,
   TYPING_START_LOCAL: O,
   TYPING_STOP_LOCAL: S,
   CONNECTION_OPEN: N,
   OVERLAY_INITIALIZE: N,
-  MESSAGE_CREATE: C
+  MESSAGE_CREATE: A
 })

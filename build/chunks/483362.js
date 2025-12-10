@@ -54,9 +54,9 @@ var I = Array.isArray,
     S: null,
     V: null
   },
-  A = Object.prototype.hasOwnProperty;
+  C = Object.prototype.hasOwnProperty;
 
-function C(e, t, n, r, a, o) {
+function A(e, t, n, r, a, o) {
   return {
     $$typeof: i,
     type: e,
@@ -67,7 +67,7 @@ function C(e, t, n, r, a, o) {
 }
 
 function N(e, t) {
-  return C(e.type, t, true, true, true, e.props)
+  return A(e.type, t, true, true, true, e.props)
 }
 
 function P(e) {
@@ -221,14 +221,14 @@ exports.Children = {
     i = e.key,
     a = true;
   if (null != t)
-    for (o in true !== t.ref && (a = true), true !== t.key && (i = "" + t.key), t) A.call(t, o) && "key" !== o && "__self" !== o && "__source" !== o && ("ref" !== o || true !== t.ref) && (r[o] = t[o]);
+    for (o in true !== t.ref && (a = true), true !== t.key && (i = "" + t.key), t) C.call(t, o) && "key" !== o && "__self" !== o && "__source" !== o && ("ref" !== o || true !== t.ref) && (r[o] = t[o]);
   var o = arguments.length - 2;
   if (1 === o) r.children = n;
   else if (1 < o) {
     for (var s = Array(o), l = 0; l < o; l++) s[l] = arguments[l + 2];
     r.children = s
   }
-  return C(e.type, i, true, true, a, r)
+  return A(e.type, i, true, true, a, r)
 }, exports.createContext = function(e) {
   return (e = {
     $$typeof: u,
@@ -245,7 +245,7 @@ exports.Children = {
   var r, i = {},
     a = null;
   if (null != t)
-    for (r in true !== t.key && (a = "" + t.key), t) A.call(t, r) && "key" !== r && "__self" !== r && "__source" !== r && (i[r] = t[r]);
+    for (r in true !== t.key && (a = "" + t.key), t) C.call(t, r) && "key" !== r && "__self" !== r && "__source" !== r && (i[r] = t[r]);
   var o = arguments.length - 2;
   if (1 === o) i.children = n;
   else if (1 < o) {
@@ -254,7 +254,7 @@ exports.Children = {
   }
   if (e && e.defaultProps)
     for (r in o = e.defaultProps) true === i[r] && (i[r] = o[r]);
-  return C(e, a, true, true, null, i)
+  return A(e, a, true, true, null, i)
 }, exports.createRef = function() {
   return {
     current: null

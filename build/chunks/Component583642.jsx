@@ -64,7 +64,7 @@ function T(e) {
     })
   })
 }
-let A = Chunk473749.forwardRef(function(e, t) {
+let C = Chunk473749.forwardRef(function(e, t) {
     let {
       searchContext: n,
       navId: a,
@@ -115,7 +115,7 @@ let A = Chunk473749.forwardRef(function(e, t) {
       t > h.length - 1 ? t = 0 : t < 0 && (t = h.length - 1), p(t)
     }, I = e => {
       y(c + e)
-    }, A = i.useRef({
+    }, C = i.useRef({
       itemsData: [],
       selectedIndex: false,
       modeType: o.mode.type
@@ -125,7 +125,7 @@ let A = Chunk473749.forwardRef(function(e, t) {
         itemsData: e,
         selectedIndex: t,
         modeType: n
-      } = A.current, r = o.mode.type;
+      } = C.current, r = o.mode.type;
       if (r !== n) r === v.Sap.FILTER ? p(0) : p(false);
       else if (t >= 0 && (t === c || e.length !== h.length)) {
         let n = e[t],
@@ -135,7 +135,7 @@ let A = Chunk473749.forwardRef(function(e, t) {
           false !== e ? p(e) : t >= h.length && p(Math.max(0, h.length - 1))
         } else t >= h.length && p(Math.max(0, h.length - 1))
       }
-      A.current = {
+      C.current = {
         itemsData: h,
         selectedIndex: c,
         modeType: r
@@ -163,7 +163,7 @@ let A = Chunk473749.forwardRef(function(e, t) {
       })
     })
   }),
-  C = Chunk473749.forwardRef(function(e, t) {
+  A = Chunk473749.forwardRef(function(e, t) {
     let {
       navId: n,
       resultsState: a,
@@ -221,11 +221,11 @@ let A = Chunk473749.forwardRef(function(e, t) {
         t = f.Z.getChannelId();
       return [e, d.Z.getChannel(t)]
     });
-    return (0, _.Fz)(o.mode.filter) ? (0, r.jsx)(C, {
+    return (0, _.Fz)(o.mode.filter) ? (0, r.jsx)(A, {
       navId: i,
       resultsState: o,
       searchContext: n
-    }) : (0, r.jsx)(A, {
+    }) : (0, r.jsx)(C, {
       ref: t,
       searchContext: n,
       navId: i,

@@ -2,7 +2,7 @@
 /** chunk id: 407661, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,7 +41,7 @@ function T(e, t) {
   }, [n, r])
 }
 
-function A(e) {
+function C(e) {
   let {
     channel: t,
     message: n,
@@ -86,7 +86,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     reply: t,
     chatInputType: n
@@ -99,11 +99,11 @@ function C(e) {
     guildId: g,
     nick: E,
     colorString: I,
-    colorStrings: C,
+    colorStrings: A,
     colorRoleName: N,
     authorId: P,
     displayNameStyles: R
-  } = (0, f.ZP)(a), D = (0, p.X7)(g, P, C), w = (0, d.j)({
+  } = (0, f.ZP)(a), D = (0, p.X7)(g, P, A), w = (0, d.j)({
     displayNameStyles: R
   }), x = T(i, a), L = (0, h.NE)(i, a), j = n.showThreadPromptOnReply && x >= S && L, M = () => (0, m.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
@@ -175,7 +175,7 @@ function C(e) {
             onClick: U
           })]
         })]
-      }), j && (0, r.jsx)(A, {
+      }), j && (0, r.jsx)(C, {
         channel: i,
         message: a,
         replyChainLength: x

@@ -336,12 +336,12 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       guildId: L
     }), eI = null != eo ? eo : {}, {
       onFocus: eT
-    } = eI, eA = Z(eI, ["onFocus"]), eC = (0, T.X7)(L, el, null != a ? a : null), [eN, eP] = i.useState(false);
+    } = eI, eC = Z(eI, ["onFocus"]), eA = (0, T.X7)(L, el, null != a ? a : null), [eN, eP] = i.useState(false);
     i.useEffect(() => {
       t && eP(false)
     }, [t]);
-    let eR = (0, A.fN)(O),
-      eD = (0, A.Wi)(eR, v, el) && t && !eN,
+    let eR = (0, C.fN)(O),
+      eD = (0, C.Wi)(eR, v, el) && t && !eN,
       ew = i.useCallback(() => {
         ep(true)
       }, []),
@@ -357,7 +357,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       eM = i.useCallback(e => {
         eg(e)
       }, []),
-      ek = i.useCallback(e => null == eR ? null : (0, r.jsx)(C.Z, G(k({
+      ek = i.useCallback(e => null == eR ? null : (0, r.jsx)(A.Z, G(k({
         name: null != E ? E : ec,
         quest: eR,
         memberListItemRef: ed,
@@ -399,7 +399,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             colorRoleName: l,
             colorString: null != n ? n : null,
             name: null != E ? E : ec,
-            colorStrings: eC,
+            colorStrings: eA,
             hideClanTag: B,
             user: b,
             guildId: L,
@@ -413,7 +413,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
               colorRoleName: l,
               colorString: null != n ? n : null,
               name: null != E ? E : ec,
-              colorStrings: eC,
+              colorStrings: eA,
               hideClanTag: B,
               user: b,
               guildId: L,
@@ -471,6 +471,6 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             right: 4
           }
         }
-      }, eA))
+      }, eC))
     })
   })

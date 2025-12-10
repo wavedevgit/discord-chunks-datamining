@@ -23,8 +23,8 @@ var Chunk620014 = require("./620014.js"),
   Chunk58834 = require("./58834.js"),
   Chunk453342 = require("./453342.js"),
   T = 1,
-  A = 2,
-  C = 4,
+  C = 2,
+  A = 4,
   N = "[object Arguments]",
   P = "[object Array]",
   R = "[object Boolean]",
@@ -55,8 +55,8 @@ var Chunk620014 = require("./620014.js"),
 
 function et(e, t, n, P, R, D) {
   var w, j = t & T,
-    M = t & A,
-    U = t & C;
+    M = t & C,
+    U = t & A;
   if (n && (w = R ? n(e, P, R, D) : n(e)), true !== w) return w;
   if (!O(e)) return e;
   var G = E(e);

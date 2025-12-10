@@ -30,9 +30,9 @@ function y(e) {
     showReportOption: S = false,
     disableChangeWindows: I = false,
     minimal: T = false,
-    appContext: A = h.IlC.APP
+    appContext: C = h.IlC.APP
   } = e, {
-    desktopSourceId: C,
+    desktopSourceId: A,
     lastPickedContent: N
   } = (0, a.cj)([c.ZP, f.Z], () => {
     var e;
@@ -43,11 +43,11 @@ function y(e) {
       desktopSourceId: null == t ? true : t.id,
       lastPickedContent: n
     }
-  }), P = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), R = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), D = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), w = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, m.Z)(O, A), L = (0, _.Z)(O, A, g.Vq), j = null != C && D && (!C.startsWith("screen") || w), M = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
-    (null == C ? true : C.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
+  }), P = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), R = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), D = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), w = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, m.Z)(O, C), L = (0, _.Z)(O, C, g.Vq), j = null != A && D && (!A.startsWith("screen") || w), M = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
+    (null == A ? true : A.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
-  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, Z = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, B = G ? b.intl.string(b.t.qDK8gQ) : Z ? b.intl.string(b.t["3m8w+Q"]) : T ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
+  }, [A, v]), U = null != (t = null == A ? true : A.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, Z = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, B = G ? b.intl.string(b.t.qDK8gQ) : Z ? b.intl.string(b.t["3m8w+Q"]) : T ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -60,8 +60,8 @@ function y(e) {
       },
       context: E.Yn.STREAM
     };
-    null != C && (r.desktopSettings = {
-      sourceId: C,
+    null != A && (r.desktopSettings = {
+      sourceId: A,
       sound: !P
     }), (0, l.Rc)({
       preset: e,
@@ -69,7 +69,7 @@ function y(e) {
       frameRate: n,
       soundshareEnabled: !P
     }), s.Z.setGoLiveSource(r)
-  }, [C, P]);
+  }, [A, P]);
   if (null == O) return (0, r.jsx)(o.sNh, {
     id: "share-your-screen",
     label: b.intl.string(b.t.fjBNo1),

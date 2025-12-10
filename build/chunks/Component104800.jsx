@@ -109,8 +109,8 @@ function _(e) {
     }
     f(e, c.jZ.LEARN_MORE), P(e, c.jZ.OPEN_GAME_LINK)
   }, [y, n, l, x, i, P, f]), {
-    title: R,
-    subtitle: T
+    title: T,
+    subtitle: R
   } = {
     title: (0, p.V_)(_),
     subtitle: null != (t = _.config.ctaConfig.subtitle) ? t : h.intl.string(h.t.mxaHfx)
@@ -122,8 +122,8 @@ function _(e) {
     }), (0, r.jsx)("div", {
       className: b.videoContOverlay
     }), (0, r.jsx)(S, {
-      title: R,
-      subtitle: T,
+      title: T,
+      subtitle: R,
       icon: a.d4D,
       className: b.endScreenPanelRight,
       onClick: () => D(d.jn.VIDEO_MODAL)

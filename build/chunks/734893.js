@@ -14,8 +14,8 @@ require.d(exports, {
   av: () => I,
   cq: () => E,
   j: () => N,
-  k3: () => A,
-  kb: () => C,
+  k3: () => C,
+  kb: () => A,
   n: () => p,
   pw: () => S,
   rk: () => v,
@@ -167,11 +167,11 @@ function T(e) {
   returntrue
 }
 
-function A(e) {
+function C(e) {
   return e.type === o.d4z.GUILD_TEXT && !a.Uu(o.Plq.SEND_MESSAGES, e) && a.Uu(o.Plq.VIEW_CHANNEL, e)
 }
 
-function C(e) {
+function A(e) {
   switch (e.type) {
     case o.d4z.GUILD_TEXT:
     case o.d4z.GUILD_ANNOUNCEMENT:

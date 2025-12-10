@@ -107,7 +107,7 @@ var O = function(e, t) {
       customEditable: n.editable
     } : {}
   },
-  A = function(e, t, n, r, i, a) {
+  C = function(e, t, n, r, i, a) {
     var o = {
         "data-block": true,
         "data-editor": t,
@@ -170,7 +170,7 @@ module.exports = function(e) {
       E = n.direction,
       b = n.forceSelection,
       y = n.selection,
-      C = n.tree,
+      A = n.tree,
       N = null;
     r.children.size && (N = r.children.reduce(function(n, r) {
       var i = u.encode(r, 0, 0),
@@ -180,7 +180,7 @@ module.exports = function(e) {
         g = I(c, a),
         E = g.Element,
         b = g.wrapperTemplate,
-        y = A(c, _, i, l, p, null),
+        y = C(c, _, i, l, p, null),
         O = s({}, e.props, {
           tree: m.getBlockTree(r),
           blockProps: p.customProps,
@@ -209,11 +209,11 @@ module.exports = function(e) {
         forceSelection: b,
         hasSelection: O(y, P),
         selection: y,
-        tree: C
+        tree: A
       });
     if (r.getParentKey()) return x;
     var L = I(r, a).Element,
-      j = A(r, _, R, l, D, this.wrapperRef);
+      j = C(r, _, R, l, D, this.wrapperRef);
     return d.createElement(L, j, x)
   }, t
 }(Chunk473749.Component)

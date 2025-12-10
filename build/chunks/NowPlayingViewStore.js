@@ -102,7 +102,7 @@ function en(e) {
 
 function er(e) {
   return null == X[e] && (X = F(Z({}, X), {
-    [e]: new A.Z({
+    [e]: new C.Z({
       name: e
     })
   })), X[e]
@@ -133,7 +133,7 @@ function es(e) {
     tags: {
       source: "ACTIVITIES"
     }
-  }), null) : e === I.XB ? I.r9 : e.startsWith(A.H) ? er(e.slice(A.H.length)) : e.startsWith(T._) ? ei(e.slice(T._.length)) : (ea(e), null)
+  }), null) : e === I.XB ? I.r9 : e.startsWith(C.H) ? er(e.slice(C.H.length)) : e.startsWith(T._) ? ei(e.slice(T._.length)) : (ea(e), null)
 }
 
 function el(e) {
@@ -173,8 +173,8 @@ function ef(e, t, n) {
     g = false,
     E = [];
   for (let e of s) {
-    var T, A, P, L;
-    let t = C.Z.getAnyStreamForUser(e.id),
+    var T, C, P, L;
+    let t = A.Z.getAnyStreamForUser(e.id),
       n = N.Z.getChannel(null == t ? true : t.channelId);
     if ((0, _.Y3)(n)) continue;
     let r = en(e.id);
@@ -193,7 +193,7 @@ function ef(e, t, n) {
           activity: r,
           userId: e.id,
           application: d,
-          channelId: null == (A = M.Z.getVoiceStateForUser(e.id)) ? true : A.channelId,
+          channelId: null == (C = M.Z.getVoiceStateForUser(e.id)) ? true : C.channelId,
           currentUser: i,
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
@@ -356,11 +356,11 @@ function eT() {
   K = false, q = [], Q = [], $.clear()
 }
 
-function eA() {
+function eC() {
   K = true, eS()
 }
 
-function eC() {
+function eA() {
   K = false
 }
 class eN extends(r = Chunk442837.ZP.Store) {
@@ -383,7 +383,7 @@ class eN extends(r = Chunk442837.ZP.Store) {
 G(eN, "displayName", "NowPlayingViewStore");
 let eP = new eN(Chunk570140.Z, {
     LOGOUT: eT,
-    NOW_PLAYING_MOUNTED: eA,
-    NOW_PLAYING_UNMOUNTED: eC
+    NOW_PLAYING_MOUNTED: eC,
+    NOW_PLAYING_UNMOUNTED: eA
   }),
   eR = eP

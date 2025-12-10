@@ -24,8 +24,8 @@ var r, Chunk98405 = require("./98405.js"),
   Chunk199838 = require("./199838.js"),
   I = Chunk199838.set,
   T = Chunk199838.getterFor("URL"),
-  A = Chunk294684.URLSearchParams,
-  C = Chunk294684.getState,
+  C = Chunk294684.URLSearchParams,
+  A = Chunk294684.getState,
   N = Chunk127849.URL,
   P = Chunk127849.TypeError,
   R = Chunk127849.parseInt,
@@ -202,8 +202,8 @@ var r, Chunk98405 = require("./98405.js"),
   eS = {},
   eI = {},
   eT = {},
-  eA = {},
   eC = {},
+  eA = {},
   eN = {},
   eP = {},
   eR = {},
@@ -225,7 +225,7 @@ var r, Chunk98405 = require("./98405.js"),
       this.searchParams = null
     } else {
       if (true !== n && (r = new eF(n, true)), i = this.parse(o, null, r)) throw new P(i);
-      (a = C(new A)).bindURL(this), this.searchParams = a
+      (a = A(new C)).bindURL(this), this.searchParams = a
     }
   };
 eF.prototype = {
@@ -269,12 +269,12 @@ eF.prototype = {
             l.scheme = n.scheme, l.path = h(n.path), l.query = n.query, l.fragment = "", l.cannotBeABaseURL = true, c = eB;
             break
           }
-          c = "file" === n.scheme ? eL : eA;
+          c = "file" === n.scheme ? eL : eC;
           continue;
         case eI:
           if ("/" === a && "/" === i[u + 1]) c = eP, u++;
           else {
-            c = eA;
+            c = eC;
             continue
           }
           break;
@@ -285,9 +285,9 @@ eF.prototype = {
           }
           c = eU;
           continue;
-        case eA:
+        case eC:
           if (l.scheme = n.scheme, a === r) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = h(n.path), l.query = n.query;
-          else if ("/" === a || "\\" === a && l.isSpecial()) c = eC;
+          else if ("/" === a || "\\" === a && l.isSpecial()) c = eA;
           else if ("?" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = h(n.path), l.query = "", c = eZ;
           else if ("#" === a) l.username = n.username, l.password = n.password, l.host = n.host, l.port = n.port, l.path = h(n.path), l.query = n.query, l.fragment = "", c = eB;
           else {
@@ -295,7 +295,7 @@ eF.prototype = {
             continue
           }
           break;
-        case eC:
+        case eA:
           if (l.isSpecial() && ("/" === a || "\\" === a)) c = eP;
           else if ("/" === a) c = eR;
           else {

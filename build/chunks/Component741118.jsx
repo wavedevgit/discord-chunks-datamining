@@ -93,8 +93,8 @@ function y(e) {
   } = (0, o.ZF)(), S = O.onClose, I = f.find(e => e.stepKey === _);
   if (null == I) throw Error("Step with key ".concat(_, " not found"));
   let T = f.findIndex(e => e.stepKey === _),
-    A = T === f.length - 1,
-    C = 0 === T,
+    C = T === f.length - 1,
+    A = 0 === T,
     [N, P] = i.useState(false),
     [R, D] = i.useState(_);
   R !== _ && (P(false), D(_));
@@ -105,11 +105,11 @@ function y(e) {
       await (null == b ? true : b()), S()
     }, [b, S]),
     L = i.useCallback(async () => {
-      A ? await x() : g(f[T + 1].stepKey)
-    }, [g, T, f, A, x]),
+      C ? await x() : g(f[T + 1].stepKey)
+    }, [g, T, f, C, x]),
     j = i.useCallback(() => {
-      C || g(f[T - 1].stepKey)
-    }, [g, T, f, C]),
+      A || g(f[T - 1].stepKey)
+    }, [g, T, f, A]),
     M = i.useMemo(() => ({
       currentStepKey: _,
       setNextEnabled: P,
@@ -130,7 +130,7 @@ function y(e) {
         N && L()
       }
     },
-    G = I.hideBackButton || C ? true : (0, r.jsx)(a.A, m(p({}, k, I.backButtonProps), {
+    G = I.hideBackButton || A ? true : (0, r.jsx)(a.A, m(p({}, k, I.backButtonProps), {
       onClick: j
     }));
   return (0, r.jsx)(E.Provider, {
@@ -150,7 +150,7 @@ function y(e) {
         children: I.body
       }), (0, r.jsx)(l.G, {
         leading: G,
-        actionsFullWidth: C,
+        actionsFullWidth: A,
         actions: [{
           text: v.CANCEL,
           variant: "secondary",

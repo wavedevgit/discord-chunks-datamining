@@ -91,11 +91,11 @@ let H = e => {
         q(e), G(t)
       }, []),
       {
-        selectedTab: J,
-        transitionState: X,
+        selectedTab: X,
+        transitionState: J,
         transitionToTab: $
       } = (0, y.B)(F);
-    (0, E.q3)(n, J, K, X, Y), (0, E.EB)(J, i);
+    (0, E.q3)(n, X, K, J, Y), (0, E.EB)(X, i);
     let {
       dismissShopButtonDC: ee
     } = (0, B.Z)();
@@ -112,7 +112,7 @@ let H = e => {
     }, []);
     let {
       analyticsLocations: er
-    } = (0, E.MV)(J);
+    } = (0, E.MV)(X);
     return (0, r.jsx)(f.Gt, {
       value: er,
       children: (0, r.jsx)(_.k0, {
@@ -122,7 +122,7 @@ let H = e => {
           pageSize: N.kN
         },
         children: (0, r.jsx)(v.ni, {
-          tab: J,
+          tab: X,
           children: (0, r.jsx)(H, {
             onClose: R,
             shouldAddEventListener: false,
@@ -134,18 +134,18 @@ let H = e => {
               tabIndex: false,
               children: [(0, r.jsx)(I.I, {
                 handleTransition: $,
-                selectedTab: J
+                selectedTab: X
               }), (0, r.jsx)("div", {
                 className: o()(Z.shopViewWrapper, {
-                  [Z.visible]: X === N.f7.VISIBLE,
-                  [Z.in]: X === N.f7.IN,
-                  [Z.out]: X === N.f7.OUT
+                  [Z.visible]: J === N.f7.VISIBLE,
+                  [Z.in]: J === N.f7.IN,
+                  [Z.out]: J === N.f7.OUT
                 }),
                 children: (0, r.jsx)(k.Z, {
-                  tab: J,
+                  tab: X,
                   refreshCategories: U,
                   transitionToTab: $,
-                  transitionState: X,
+                  transitionState: J,
                   sortedCategories: V,
                   updateAnalyticsState: Q
                 })

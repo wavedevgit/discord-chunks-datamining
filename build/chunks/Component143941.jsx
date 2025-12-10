@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk890088 = require("./890088.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -136,7 +136,7 @@ function D(e) {
     tooltipOverrideText: y,
     nuxGraphic: O,
     onClick: v
-  } = e, [A, N] = (0, p.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), R = A === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
+  } = e, [C, N] = (0, p.US)([l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL], true, true), R = C === l.z.WISHLIST_NUX_TOOLTIP_AND_MODAL, {
     analyticsLocations: D
   } = (0, d.ZP)(), w = b.default.getCurrentUser(), x = null != w ? _.Z.getFirstWishlistId(w.id) : null, L = (0, E.ny)(x, t), j = i.useRef(null), [M, k] = i.useState(null);
   i.useEffect(() => {
@@ -161,7 +161,7 @@ function D(e) {
             let {
               default: e
             } = await n.e("36340").then(n.bind(n, 874533));
-            return t => (0, r.jsx)(e, P(C({}, t), {
+            return t => (0, r.jsx)(e, P(A({}, t), {
               graphic: O
             }))
           }), N(S.L.USER_DISMISS))

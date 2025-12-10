@@ -39,13 +39,13 @@ function h(e) {
     location: "CustomStatusActivityStatus"
   });
   if (null == t && null == E) return null;
-  let A = null != E && I,
-    C = A && null != b ? (0, c.O8)(b, E, T) : null,
+  let C = null != E && I,
+    A = C && null != b ? (0, c.O8)(b, E, T) : null,
     N = null == t ? true : t.emoji,
-    P = null != C ? C : null == t ? true : t.state,
+    P = null != A ? A : null == t ? true : t.state,
     R = null != P && "" !== P,
     D = null;
-  A && null != b ? D = (0, r.jsx)(u.Z, {
+  C && null != b ? D = (0, r.jsx)(u.Z, {
     userId: b,
     size: m,
     className: a()(i, _.hangStatusIcon),

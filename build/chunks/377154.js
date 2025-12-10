@@ -49,20 +49,20 @@ function c(e, t) {
 
 function u(e, t) {
   var n, o, l, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T;
-  let A = null == (n = t.powerup_metadata) ? true : n.category_type;
-  if (null == A) return;
-  let C = null == (o = t.sku) ? true : o.powerup_metadata;
+  let C = null == (n = t.powerup_metadata) ? true : n.category_type;
   if (null == C) return;
+  let A = null == (o = t.sku) ? true : o.powerup_metadata;
+  if (null == A) return;
   let N = {
     title: t.summary,
     skuId: t.sku.id,
-    cost: C.boost_price,
+    cost: A.boost_price,
     dependencies: null != t.sku.dependent_sku_id ? [t.sku.dependent_sku_id] : [],
     animatedImageUrl: null == (l = t.powerup_metadata) ? true : l.animated_image_url,
     staticImageUrl: null == (u = t.powerup_metadata) ? true : u.static_image_url,
     storeRemovalDate: null == (d = t.powerup_metadata) ? true : d.store_removal_date
   };
-  switch (A) {
+  switch (C) {
     case i.Us.LEVEL: {
       let n = null == (f = t.sku.powerup_metadata) ? true : f.guild_features;
       if (null == n) return;

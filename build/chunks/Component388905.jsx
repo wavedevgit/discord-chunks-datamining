@@ -6,13 +6,13 @@ require.d(exports, {
   Dx: () => E,
   EJ: () => P,
   Ee: () => y,
-  Hh: () => C,
+  Hh: () => A,
   II: () => I,
   MC: () => S,
   Vj: () => v,
   ZP: () => w,
   gO: () => T,
-  i_: () => A,
+  i_: () => C,
   jQ: () => R,
   qE: () => O,
   v6: () => D
@@ -169,7 +169,7 @@ let I = e => {
       children: n
     })
   },
-  A = e => {
+  C = e => {
     let {
       className: t,
       children: n
@@ -180,7 +180,7 @@ let I = e => {
       children: n
     })
   },
-  C = e => {
+  A = e => {
     let {
       className: t
     } = e;
@@ -273,7 +273,7 @@ let I = e => {
         variant: "secondary",
         fullWidth: true,
         onClick: () => window.open((0, f.t3)())
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(C, {
         className: h.downloadButtonSubtext,
         children: m.intl.format(m.t.wO1VBk, {
           supportedBrowserURL: p.Z.getArticleURL(_.BhN.SUPPORTED_BROWSERS)

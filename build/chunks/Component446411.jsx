@@ -123,7 +123,7 @@ function et(e) {
     onPlay: S,
     onPause: I,
     onEnded: T,
-    onControlsHide: C,
+    onControlsHide: A,
     onControlsShow: P,
     onVolumeChange: R,
     onMute: w,
@@ -149,7 +149,7 @@ function et(e) {
     maxHeight: c
   });
   Y = Math.max(K.width, z), W = Math.max(K.height, q);
-  let Q = (0, A.q)(u);
+  let Q = (0, C.q)(u);
   if (null != d && null != d.proxyURL) return (0, i.jsx)("div", {
     className: s()(Z.embedVideo, r),
     children: h({
@@ -171,7 +171,7 @@ function et(e) {
       onPlay: S,
       onPause: I,
       onMute: w,
-      onControlsHide: C,
+      onControlsHide: A,
       onControlsShow: P,
       sourceMetadata: U
     })
@@ -282,8 +282,8 @@ function en(e) {
   return (0, i.jsx)(h.Z, {
     className: s()(Z.embedVideo, t),
     original: n,
-    poster: (0, A.q)(l),
-    src: (0, A.q)(c),
+    poster: (0, C.q)(l),
+    src: (0, C.q)(c),
     alt: f,
     width: l.width,
     height: l.height,
@@ -458,7 +458,7 @@ class er extends(r = Chunk473749.PureComponent) {
         } = i;
         return a({
           containerClassName: Z.embedThumbnail,
-          src: (0, A.q)(t),
+          src: (0, C.q)(t),
           original: t.url,
           width: t.width,
           height: t.height,

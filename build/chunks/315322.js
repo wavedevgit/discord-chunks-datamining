@@ -308,7 +308,7 @@ function T(e) {
   })
 }
 new Chunk710845.Z("SearchTracking");
-let A = new Map([
+let C = new Map([
     [Chunk981631.dCx.ANSWER_IN, "in"],
     [Chunk981631.dCx.FILTER_IN, "in"],
     [Chunk981631.dCx.ANSWER_USERNAME_FROM, "from"],
@@ -326,7 +326,7 @@ let A = new Map([
     [Chunk981631.dCx.ANSWER_PINNED, "pinned"],
     [Chunk981631.dCx.FILTER_PINNED, "pinned"]
   ]),
-  C = new Map([
+  A = new Map([
     [Chunk981631.rtL.HISTORY, "history"],
     [Chunk981631.rtL.DATES, "dates"],
     [Chunk981631.rtL.SEARCH_OPTIONS, "search_options"]
@@ -364,8 +364,8 @@ function P(e) {
     searchAutocompleteSelectAction: b
   } = e;
   c.rtL.HISTORY;
-  let y = null != (t = A.get(_)) ? t : C.get(_),
-    O = null != p ? A.get(p) : null;
+  let y = null != (t = C.get(_)) ? t : A.get(_),
+    O = null != p ? C.get(p) : null;
   r.ZP.trackWithMetadata(c.rMx.SEARCH_MESSAGES_AUTOCOMPLETE_CLICKED, {
     search_id: f(n),
     search_type: n.type,

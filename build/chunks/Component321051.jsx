@@ -78,7 +78,7 @@ function m(e) {
         className: p.contentContainer,
         children: [(0, r.jsx)(l.KY1, {
           size: "custom",
-          color: g ? s.Z.colors.ICON_PRIMARY : s.Z.colors.WHITE,
+          color: g ? s.Z.colors.ICON_STRONG : s.Z.colors.WHITE,
           className: p.soundIcon,
           width: 14,
           height: 14

@@ -69,14 +69,14 @@ function v(e) {
     queryParams: E,
     allowPopups: y = false,
     referrerPolicy: v = "origin"
-  } = e, S = (0, f.sU)({}), I = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), A = (0, p.Z)(T, g, null == S ? window : S), C = O(b({}, E), {
+  } = e, S = (0, f.sU)({}), I = (0, s.useMemoOne)(() => (0, l.Z)(), [t]), T = i.useRef(null), C = (0, p.Z)(T, g, null == S ? window : S), A = O(b({}, E), {
     frame_id: I,
     platform: m.S4.DESKTOP
   }), [N, P] = i.useState(false), R = u.Z.theme, D = b({}, a);
 
   function w(e) {
     var n;
-    null == o || o(e.target), T.current = e.target, A(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, C], null != t ? t : "")
+    null == o || o(e.target), T.current = e.target, C(true), null == (n = e.target.contentWindow) || n.postMessage([c.Z.HELLO, A], null != t ? t : "")
   }
   return R === h.BRd.LIGHT ? D.colorScheme = "light" : D.colorScheme = "dark", i.useEffect(() => (d.S.dispatch(h.CkL.IFRAME_MOUNT, {
     id: I
@@ -103,7 +103,7 @@ function v(e) {
       allowPopups: y
     }),
     className: n,
-    src: "".concat(t, "?").concat(new URLSearchParams(C))
+    src: "".concat(t, "?").concat(new URLSearchParams(A))
   }) : null
 }
 

@@ -63,7 +63,7 @@ async function O() {
     type: "REMOTE_SESSION_DISCONNECT"
   });
   let n = [];
-  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(D(module.type, module.deviceId, module.commandId)), null != exports && require.push(C(exports));
+  ((null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION || (null == module ? true : module.type) === Chunk981631.ABu.PLAYSTATION_STAGING) && (null == module ? true : module.commandId) != null && (null == module ? true : module.deviceId) != null && require.push(D(module.type, module.deviceId, module.commandId)), null != exports && require.push(A(exports));
   try {
     await Promise.all(require)
   } catch (e) {
@@ -119,7 +119,7 @@ function T(e, t, n, r) {
     }, r)
   }), y("AUDIO_SETTINGS_UPDATE", e))
 }
-async function A() {
+async function C() {
   let e;
   try {
     let t = null != Chunk19780.Z.getRTCConnectionId() ? Chunk771649.o.TRANSFER_EXISTING_CALL : Chunk771649.o.CREATE_NEW_CALL;
@@ -138,7 +138,7 @@ async function A() {
   return module
 }
 
-function C(e) {
+function A(e) {
   return a.tn.del({
     url: h.ANM.CONNECT_REQUEST(e),
     rejectWithError: false
@@ -241,6 +241,6 @@ async function D(e, t, n) {
 }
 async function w(e, t, n) {
   await p.Z.maybeShowPTTAlert(e), await O();
-  let r = await A();
+  let r = await C();
   await R(e, t, n, r), (0, m.Z)(n.id, e)
 }

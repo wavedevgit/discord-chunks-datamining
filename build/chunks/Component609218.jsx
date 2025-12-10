@@ -58,20 +58,20 @@ function M(e) {
   i.useEffect(() => {
     !H && M && d.MH()
   }, [H, M]), i.useEffect(() => {
-    m.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, U), null == Z || Z()
+    m.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, U), null == Z || Z()
   }, [Z, U]);
   let Y = V.length > 1 && M,
     W = () => 2 === t ? P.hasTabParentContainer : 1 === t ? P.hasParentContainer : P.noParentContainer,
     K = () => {
-      m.default.track(A.rMx.PREMIUM_PROMOTION_OPENED, {
+      m.default.track(C.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: k,
-        location_object: A.qAy.NAVIGATION_LINK
-      }), null == B || B(), (0, p.Z)(), G(), (0, f.xf)(), (0, _.uL)(A.Z5c.APPLICATION_STORE)
+        location_object: C.qAy.NAVIGATION_LINK
+      }), null == B || B(), (0, p.Z)(), G(), (0, f.xf)(), (0, _.uL)(C.Z5c.APPLICATION_STORE)
     },
     z = (0, y.N)(),
     q = i.useCallback(() => {
       var e;
-      return null != (e = (0, g.fr)(z, T.Si.TIER_2)) ? e : C.intl.string(C.t.pj0XBN)
+      return null != (e = (0, g.fr)(z, T.Si.TIER_2)) ? e : A.intl.string(A.t.pj0XBN)
     }, [z]),
     Q = (0, b.Z)({
       location: "PremiumUpsellPickerOverlay"
@@ -129,12 +129,12 @@ function M(e) {
             children: [(0, r.jsx)(u.Button, {
               variant: "secondary",
               onClick: K,
-              text: C.intl.string(C.t.ZnqyZ2),
+              text: A.intl.string(A.t.ZnqyZ2),
               fullWidth: true
             }), (0, r.jsx)(O.Z, {
               premiumModalAnalyticsLocation: {
                 section: k,
-                object: A.qAy.BUTTON_CTA
+                object: C.qAy.BUTTON_CTA
               },
               subscriptionTier: T.Si.TIER_2,
               onClick: () => {
@@ -188,12 +188,12 @@ function M(e) {
           color: c.zx.Colors.CUSTOM,
           look: c.zx.Looks.LINK,
           onClick: K,
-          children: C.intl.string(C.t.ZnqyZ2)
+          children: A.intl.string(A.t.ZnqyZ2)
         }), (0, r.jsx)(v.Z, {
           showGradient: true,
           premiumModalAnalyticsLocation: {
             section: k,
-            object: A.qAy.BUTTON_CTA
+            object: C.qAy.BUTTON_CTA
           },
           subscriptionTier: T.Si.TIER_2,
           size: c.zx.Sizes.SMALL,

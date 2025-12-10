@@ -30,7 +30,7 @@ let p = Chunk473749.memo(e => {
         className: f.descriptors,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
-          color: "interactive-active",
+          color: "interactive-text-active",
           children: u.ZP.getName(a)
         }), null != n && (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",

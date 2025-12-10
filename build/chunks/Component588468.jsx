@@ -306,7 +306,7 @@ class X extends Y {
         children: [(0, Chunk54381.jsx)(Chunk965386.z5, {
           children: (0, Chunk54381.jsx)(Chunk481060.Text, {
             className: Chunk512746.autocompleteRowHeading,
-            color: "interactive-active",
+            color: "interactive-text-active",
             variant: "text-sm/medium",
             children: Chunk607070
           })

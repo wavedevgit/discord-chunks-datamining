@@ -89,14 +89,14 @@ function T(e) {
   returnfalse
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t
   } = e;
   return !!h.has(t) && O(t)
 }
 
-function C(e) {
+function A(e) {
   let {
     guildId: t,
     user: n
@@ -137,8 +137,8 @@ let P = new N(Chunk570140.Z, {
   GUILD_CREATE: T,
   GUILD_DELETE: I,
   GUILD_UPDATE: T,
-  GUILD_ROLE_CREATE: A,
-  GUILD_ROLE_UPDATE: A,
-  GUILD_ROLE_DELETE: A,
-  GUILD_MEMBER_UPDATE: C
+  GUILD_ROLE_CREATE: C,
+  GUILD_ROLE_UPDATE: C,
+  GUILD_ROLE_DELETE: C,
+  GUILD_MEMBER_UPDATE: A
 })

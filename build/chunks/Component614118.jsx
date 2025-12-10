@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk54602 = require("./54602.js");
 
 function I(e) {
-  var t, n, I, T, A, C, N, P;
+  var t, n, I, T, C, A, N, P;
   let {
     guildId: R,
     skuId: D,
@@ -99,7 +99,7 @@ function I(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/bold",
             lineClamp: 1,
-            children: (0, _.T4)(null != (A = null == (t = L.price) ? true : t.amount) ? A : 0, null != (C = null == (n = L.price) ? true : n.currency) ? C : O.pK.USD)
+            children: (0, _.T4)(null != (C = null == (t = L.price) ? true : t.amount) ? C : 0, null != (A = null == (n = L.price) ? true : n.currency) ? A : O.pK.USD)
           })]
         })]
       }), (0, r.jsxs)(a.hE2, {

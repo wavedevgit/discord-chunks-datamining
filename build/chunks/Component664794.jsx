@@ -102,7 +102,7 @@ function O(e) {
       action: "UNBLOCK",
       analyticsLocations: O
     })
-  }), A = (0, u.Z)({
+  }), C = (0, u.Z)({
     user: t,
     guildId: n,
     location: v,
@@ -119,7 +119,7 @@ function O(e) {
       action: "UNIGNORE",
       analyticsLocations: O
     })
-  }), C = (0, f.Z)({
+  }), A = (0, f.Z)({
     user: t,
     guildId: n,
     location: v,
@@ -131,7 +131,7 @@ function O(e) {
     })
   }), N = [
     [i, I],
-    [A, T, C, (0, f.T)({
+    [C, T, A, (0, f.T)({
       user: t,
       guildId: n,
       location: v,

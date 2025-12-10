@@ -89,12 +89,12 @@ class h {
     if (null == T) return {
       snapshotIndex: y
     };
-    let A = null != (u = E.getGuild(T)) ? Chunk768581 : b.getGuild(T);
-    return null == A ? {
+    let C = null != (u = E.getGuild(T)) ? Chunk768581 : b.getGuild(T);
+    return null == C ? {
       snapshotIndex: y
     } : {
       snapshotIndex: y,
-      footerInfo: m(A, S)
+      footerInfo: m(C, S)
     }
   }
   constructor(e, t, n) {

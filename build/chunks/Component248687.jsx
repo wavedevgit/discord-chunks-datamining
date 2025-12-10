@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A() {
+function C() {
   let [e, t] = Chunk473749.useState(false);
   if (null == (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
@@ -57,7 +57,7 @@ function A() {
     loading: module
   })
 }
-let C = o().throttle(e => {
+let A = o().throttle(e => {
   h.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
@@ -87,7 +87,7 @@ class N extends Chunk473749.PureComponent {
       sentry_issue_id: i,
       uses_client_mods: r,
       error_level: "fatal"
-    }), C(r), y.ZP.cleanupDisplaySleep()
+    }), A(r), y.ZP.cleanupDisplaySleep()
   }
   _handleSubmitReport() {
     location.reload(true)
@@ -121,7 +121,7 @@ class N extends Chunk473749.PureComponent {
             size: "md",
             text: Chunk388032.intl.string(Chunk388032.t["+hivLW"]),
             onClick: this._handleSubmitReport
-          }), (0, Chunk54381.jsx)(A, {})]
+          }), (0, Chunk54381.jsx)(C, {})]
         });
       return (0, Chunk54381.jsx)(Chunk406128.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),

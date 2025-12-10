@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -40,14 +40,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -125,8 +125,8 @@ let R = e => {
           h(_.A.COMPLETED), O(I.rMx.PAYMENT_FLOW_SUCCEEDED)
         })
       }, [r, h, E, O]),
-      A = null != (t = b.current) ? t : E,
-      C = null != l ? l.orbPriceAmount : null;
+      C = null != (t = b.current) ? t : E,
+      A = null != l ? l.orbPriceAmount : null;
     return {
       isStepLoading: null == m || null == g,
       showCollectiblesDiscountWarning: (0, u.N3)({
@@ -134,8 +134,8 @@ let R = e => {
         isOrbsPurchase: true
       }),
       errorMessage: (0, i.useMemo)(() => null == a ? null : a.code === o.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? T.intl.string(T.t.keFvXM) : a.code === o.SM.ALREADY_PURCHASED ? T.intl.string(T.t.m371Mx) : T.intl.string(T.t.fqJZ11), [a]),
-      orbPriceAmount: C,
-      orbBalanceToDisplay: A,
+      orbPriceAmount: A,
+      orbBalanceToDisplay: C,
       onClickCheckout: S,
       selectedSkuId: m,
       product: g
@@ -202,10 +202,10 @@ let R = e => {
   },
   L = [{
     key: null,
-    renderStep: e => (0, r.jsx)(R, C({}, e))
+    renderStep: e => (0, r.jsx)(R, A({}, e))
   }, {
     key: Chunk409813.h8.REVIEW,
-    renderStep: e => (0, r.jsx)(x, C({}, e)),
+    renderStep: e => (0, r.jsx)(x, A({}, e)),
     options: {
       useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
     }
@@ -301,7 +301,7 @@ let R = e => {
         analyticsSourceLocation: a,
         rentalDuration: s,
         children: (0, r.jsx)(d.b6, {
-          children: (0, r.jsx)(k, C({
+          children: (0, r.jsx)(k, A({
             skuId: t,
             analyticsLocations: o
           }, l))

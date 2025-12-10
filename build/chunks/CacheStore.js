@@ -113,7 +113,7 @@ async function J(e, t, n) {
   L.verbose("loading early cache");
   let c = O.Z.getSocket();
   c.connect();
-  let u = null != (r = A.Z.getGuildId()) ? r : null,
+  let u = null != (r = C.Z.getGuildId()) ? r : null,
     d = null != (o = T.Z.getChannelId()) ? o : null,
     f = performance.now(),
     p = S.Z.loadCachedMessages.measureAsyncWithoutNesting(() => X(e, u, d)),
@@ -122,10 +122,10 @@ async function J(e, t, n) {
     y = null != e ? i.Z.timeAsync("\uD83D\uDCBE", "cache: private_channels", () => g.Z.getAsync(e, null)) : Promise.resolve([]),
     v = null == e ? Promise.resolve({}) : i.Z.timeAsync("\uD83D\uDCBE", "cache: user_settings", () => h.Z.getAll(e)),
     I = null == e ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: read_states", () => _.Z.getAll(e)),
-    C = null == e ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => m.Z.getAll(e)),
+    A = null == e ? Promise.resolve([]) : i.Z.timeAsync("\uD83D\uDCBE", "cache: user_guild_settings", () => m.Z.getAll(e)),
     [
       [N, P], R, w, x, j, M, k
-    ] = await Promise.all([p, E, b, y, v, I, C]),
+    ] = await Promise.all([p, E, b, y, v, I, A]),
     U = performance.now() - f;
   if (L.verbose("cache loaded in ".concat(U, "ms (channel_history ").concat(N, "ms)")), null == P) return (0, D.Z)("database:history_cache_null"), L.verbose("finished without dispatching CACHE_LOADED"), [false, null, 0];
   {
@@ -319,7 +319,7 @@ class eo extends(r = Chunk442837.ZP.Store) {
     return G
   }
   canWriteCaches(e) {
-    return (0, C.$8)() ? k ? (L.log("Not writing cache because caches cleared"), false) : !!e || !!F || (L.log("Not writing cache because never connected"), false) : (L.log("Not writing cache because not authenticated"), false)
+    return (0, A.$8)() ? k ? (L.log("Not writing cache because caches cleared"), false) : !!e || !!F || (L.log("Not writing cache because never connected"), false) : (L.log("Not writing cache because not authenticated"), false)
   }
   async loadCacheAsync(e, t) {
     let n = (0, P.h)(t);

@@ -104,14 +104,14 @@ let G = e => {
       className: a
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(a, C.header),
+      className: o()(a, A.header),
       children: [(0, r.jsxs)("div", {
-        className: C.titleContainer,
+        className: A.titleContainer,
         children: [null != n ? (0, r.jsx)(n, {
-          color: d.TVs.colors.INTERACTIVE_NORMAL
+          color: d.TVs.colors.INTERACTIVE_TEXT_DEFAULT
         }) : null, null == t ? null : (0, r.jsx)(d.Text, {
           variant: "text-lg/semibold",
-          color: "interactive-active",
+          color: "interactive-text-active",
           children: t
         })]
       }), i]
@@ -123,14 +123,14 @@ let G = e => {
       image: n
     } = e;
     return (0, r.jsxs)("div", {
-      className: C.emptyPlaceholder,
+      className: A.emptyPlaceholder,
       children: [(0, r.jsx)("div", {
-        className: C.image,
+        className: A.image,
         style: {
           backgroundImage: "url(".concat(n, ")")
         }
       }), (0, r.jsx)("div", {
-        className: C.body,
+        className: A.body,
         children: t
       })]
     })
@@ -246,7 +246,7 @@ function V(e) {
     F = [],
     V = true;
   null == n || s && 0 === n.length ? F = [(0, r.jsx)("div", {
-    className: o()(C.emptyPlaceholder, C.loadingPlaceholder),
+    className: o()(A.emptyPlaceholder, A.loadingPlaceholder),
     children: (0, r.jsx)(d.$jN, {})
   }, "spinner")] : 0 === n.length ? F.push((0, r.jsx)(i.Fragment, {
     children: h()
@@ -255,24 +255,24 @@ function V(e) {
   }));
   let H = null;
   null != n && n.length > 0 && null != f && (H = s ? (0, r.jsx)("div", {
-    className: C.loadingMore,
+    className: A.loadingMore,
     children: (0, r.jsx)(d.$jN, {})
   }, "loading-more-after") : a ? (0, r.jsx)("div", {
-    className: C.hasMore,
+    className: A.hasMore,
     children: (0, r.jsx)(d.Button, {
       variant: "secondary",
       size: "sm",
       fullWidth: true,
-      text: A.intl.string(A.t.XBlaiC),
+      text: C.intl.string(C.t.XBlaiC),
       onClick: f
     })
   }) : (0, r.jsx)("div", {
-    className: C.scrollingFooterWrap,
+    className: A.scrollingFooterWrap,
     children: h()
   }));
   let Y = null == E ? true : E(),
     W = V && null != Y ? (0, r.jsx)("div", {
-      className: C.footer,
+      className: A.footer,
       children: (0, r.jsx)(_.Z, {
         style: {
           width: "100%",
@@ -288,7 +288,7 @@ function V(e) {
   G && (K.maxHeight -= M);
   let z = null != f && a;
   return (0, r.jsx)("div", {
-    className: o()(I, C.messagesPopoutWrap),
+    className: o()(I, A.messagesPopoutWrap),
     style: K,
     onClick: U,
     onDoubleClick: U,
@@ -296,7 +296,7 @@ function V(e) {
     children: (0, r.jsxs)(d.y5t, {
       component: m(),
       children: [(0, r.jsxs)(d.Den, {
-        className: o()(C.messagesPopout, S),
+        className: o()(A.messagesPopout, S),
         onScroll: z ? B : true,
         ref: R,
         children: [(0, r.jsx)(c.bG, {
@@ -336,7 +336,7 @@ function H(e) {
     getProTip: y,
     scrollerClassName: O,
     className: v,
-    onCloseMessage: A,
+    onCloseMessage: C,
     listName: N,
     closeAriaLabel: P
   } = e, R = (0, u.e7)([g.Z], () => {
@@ -364,9 +364,9 @@ function H(e) {
     if (null != b) return b(t, e => D(t, e));
     let i = [];
     return null == n ? [] : (i.push((0, r.jsxs)("div", {
-      className: C.messageGroupWrapper,
+      className: A.messageGroupWrapper,
       children: [(0, r.jsx)(I.Z, {
-        className: C.messageGroupCozy,
+        className: A.messageGroupCozy,
         message: t,
         channel: n
       }), (0, r.jsx)(F, {
@@ -375,7 +375,7 @@ function H(e) {
         jumping: R,
         canCloseAllMessages: p,
         jumpTo: D,
-        onCloseMessage: A,
+        onCloseMessage: C,
         closeAriaLabel: P
       })]
     }, t.id)), i)

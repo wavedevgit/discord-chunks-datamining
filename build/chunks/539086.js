@@ -30,15 +30,15 @@ function S(e) {
     location: t,
     onMountEffect: n
   } = e, S = (0, g.Z)(), I = (0, E.M8)(), T = (0, c.Nj)(o.z.FAMILY_CENTER_NEW_BADGE), {
-    familyCenterInitialized: A,
-    isLoading: C
+    familyCenterInitialized: C,
+    isLoading: A
   } = (0, a.cj)([_.Z], () => ({
     familyCenterInitialized: _.Z.getIsInitialized(),
     isLoading: _.Z.isLoading()
   })), N = (0, h.M)(), {
     selectedTab: P,
     handleTabChange: R
-  } = (0, m.Z)(), D = f.default.getCurrentUser(), w = null != S, x = A && null != D && !w;
+  } = (0, m.Z)(), D = f.default.getCurrentUser(), w = null != S, x = C && null != D && !w;
   (0, s.ZP)(() => {
     (0, d.e)("family-center"), null != n && n(), T || (0, c.Q3)(o.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: v.L.AUTO,
@@ -55,7 +55,7 @@ function S(e) {
   return r.useEffect(() => {
     j.current = L
   }), r.useEffect(() => {
-    if (A && w) {
+    if (C && w) {
       let {
         isConsideredAdult: e,
         numOfAcceptedRequests: n,
@@ -72,10 +72,10 @@ function S(e) {
         name: i.V.FAMILY_CENTER_VIEW
       })
     }
-  }, [A, w, t]), r.useEffect(() => {
+  }, [C, w, t]), r.useEffect(() => {
     x && (0, l.mN)(O.L0.FAMILY_CENTER)
   }, [x]), {
-    isLoading: C,
+    isLoading: A,
     selectedTab: P,
     handleTabChange: R,
     showAgeGateModal: x

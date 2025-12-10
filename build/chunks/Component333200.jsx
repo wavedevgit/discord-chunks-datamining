@@ -90,8 +90,8 @@ function m(e) {
     setIsOpen: S,
     refs: I,
     floatingStyles: T,
-    getFloatingProps: A,
-    getReferenceProps: C,
+    getFloatingProps: C,
+    getReferenceProps: A,
     transitionStyles: N
   } = (0, s.C)();
   return (0, r.jsxs)(a.uz, f(u({}, d), {
@@ -110,11 +110,11 @@ function m(e) {
       showChevronButton: true,
       ref: I.setReference,
       placeholder: O
-    }, _, C())), v && (0, r.jsx)("div", f(u({
+    }, _, A())), v && (0, r.jsx)("div", f(u({
       ref: I.setFloating,
       className: l.selectDropdown,
       style: u({}, T, N)
-    }, A()), {
+    }, C()), {
       children: (0, r.jsx)(a.px, {
         renderListItem: e => (0, r.jsx)(o.W, u({}, e)),
         maxVisibleItems: c

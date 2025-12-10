@@ -164,10 +164,10 @@
     S = "(?:[*+-]|\\d+\\.)",
     I = "( *)(" + S + ") +",
     T = RegExp("^" + I),
-    A = RegExp(I + "[^\\n]*(?:\\n(?!\\1" + S + " )[^\\n]*)*(\n|$)", "gm"),
-    C = /\n{2,}$/,
+    C = RegExp(I + "[^\\n]*(?:\\n(?!\\1" + S + " )[^\\n]*)*(\n|$)", "gm"),
+    A = /\n{2,}$/,
     N = /^ (?= *`)|(` *) $/g,
-    P = C,
+    P = A,
     R = / *\n+$/,
     D = RegExp("^( *)(" + S + ") [\\s\\S]+?(?:\n{2,}(?! )(?!\\1" + S + " )\\n*|\\s*\n*$)"),
     w = /(?:^|\n)( *)$/,
@@ -382,7 +382,7 @@
           var r = e[2],
             i = r.length > 1,
             a = i ? +r : true,
-            o = e[0].replace(P, "\n").match(A),
+            o = e[0].replace(P, "\n").match(C),
             s = false;
           return {
             ordered: i,
@@ -853,7 +853,7 @@
       return (t = t || {}).inline = true, Y(e, t)
     },
     z = function(e, t) {
-      var n = C.test(e);
+      var n = A.test(e);
       return (t = t || {}).inline = !n, Y(e, t)
     },
     q = H(Z, "react"),

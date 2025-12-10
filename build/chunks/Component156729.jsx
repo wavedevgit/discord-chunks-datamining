@@ -57,12 +57,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = "https://www.paypal.com",
+let A = "https://www.paypal.com",
   N = "isDefault";
 class P extends(r = Chunk473749.PureComponent) {
   componentWillUnmount() {
@@ -102,7 +102,7 @@ class P extends(r = Chunk473749.PureComponent) {
         className: Chunk719221.sectionHeader,
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["50Auo2"])
-      }), (0, Chunk54381.jsx)(Chunk464179.ZP, A(I({}, module), {
+      }), (0, Chunk54381.jsx)(Chunk464179.ZP, C(I({}, module), {
         mode: Chunk464179.ZP.Modes.EDIT,
         layout: r,
         onBillingAddressChange: this.handleAddressUpdate,
@@ -215,7 +215,7 @@ class P extends(r = Chunk473749.PureComponent) {
           }) : null, (0, Chunk54381.jsx)("div", {
             className: Chunk719221.subText,
             children: Chunk873546 ? Chunk388032.intl.format(Chunk388032.t.w9WkBl, {
-              paypalURL: C
+              paypalURL: A
             }) : Chunk388032.intl.string(Chunk388032.t.VXndyr)
           })]
         }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, Chunk54381.jsx)("div", {
@@ -261,7 +261,7 @@ class P extends(r = Chunk473749.PureComponent) {
       this.setState({
         billingAddress: e,
         billingAddressValid: t,
-        dirtyFields: A(I({}, this.state.dirtyFields), {
+        dirtyFields: C(I({}, this.state.dirtyFields), {
           billingAddress: n
         })
       })
@@ -277,7 +277,7 @@ class P extends(r = Chunk473749.PureComponent) {
     }), S(this, "handleFieldChange", (e, t) => {
       null != t && this.setState({
         [t]: e,
-        dirtyFields: A(I({}, this.state.dirtyFields), {
+        dirtyFields: C(I({}, this.state.dirtyFields), {
           [t]: true
         })
       })

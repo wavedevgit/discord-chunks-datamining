@@ -8,8 +8,8 @@ require.r(exports), require.d(exports, {
   closeModalInAllContexts: () => I,
   doesTopModalAllowNavigation: () => j,
   getInteractingModalContext: () => E,
-  hasAnyModalOpen: () => C,
-  hasAnyModalOpenSelector: () => A,
+  hasAnyModalOpen: () => A,
+  hasAnyModalOpenSelector: () => C,
   hasModalOpen: () => x,
   hasModalOpenSelector: () => w,
   modalContextFromAppContext: () => b,
@@ -243,7 +243,7 @@ function T(e, t, n, r) {
   })
 }
 
-function A(e) {
+function C(e) {
   for (let t of g) {
     let n = e[t];
     if (null != n && n.length > 0) returntrue
@@ -251,12 +251,12 @@ function A(e) {
   returnfalse
 }
 
-function C() {
-  return A(y.getState())
+function A() {
+  return C(y.getState())
 }
 
 function N() {
-  return A(y())
+  return C(y())
 }
 
 function P(e) {

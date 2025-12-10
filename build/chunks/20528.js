@@ -47,8 +47,8 @@ function T(e) {
   }
   return e
 }
-let A = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
-  C = {},
+let C = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
+  A = {},
   N = {},
   P = 3 * Chunk70956.Z.Millis.MINUTE,
   R = 5 * Chunk70956.Z.Millis.SECOND,
@@ -57,7 +57,7 @@ let A = (0, Chunk392711.debounce)(Chunk872810.xc, 1e3),
 
 function x(e) {
   var t;
-  null == (t = C[e]) || t.stop(), delete C[e]
+  null == (t = A[e]) || t.stop(), delete A[e]
 }
 
 function L(e) {
@@ -133,7 +133,7 @@ class U extends Chunk147913.Z {
           location: "ApplicationStreamingManager"
         }) || r !== (null == (t = E.default.getCurrentUser()) ? true : t.id)) return;
       let a = _.Z.getMemberCount(i);
-      null == a || a < 2 || a > v.tB || u.eo.getSetting() && A(n)
+      null == a || a < 2 || a > v.tB || u.eo.getSetting() && C(n)
     }), I(this, "handleStreamUpdate", e => {
       let {
         streamKey: t
@@ -183,8 +183,8 @@ class U extends Chunk147913.Z {
             if (!a && e.state !== S.jm8.ENDED) {
               var s;
               let t = (0, O.V9)(e),
-                n = null != (s = C[t]) ? s : new i.V7;
-              n.start(P, () => (0, o.aP)(t, false)), C[t] = n
+                n = null != (s = A[t]) ? s : new i.V7;
+              n.start(P, () => (0, o.aP)(t, false)), A[t] = n
             }
             if (a && e.state === S.jm8.ENDED) {
               x((0, O.V9)(e));

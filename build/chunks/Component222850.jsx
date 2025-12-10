@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk704215 = require("./704215.js"),
   Chunk952265 = require("./952265.js"),
@@ -157,7 +157,7 @@ let I = Math.ceil(Math.sqrt(115200)),
             }), (0, r.jsx)(d.IGR, {
               className: y.badge,
               text: v.intl.string(v.t.y2b7CA),
-              color: d.TVs.colors.BG_BRAND.css
+              color: d.TVs.colors.BACKGROUND_BRAND.css
             })]
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

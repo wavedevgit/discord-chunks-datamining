@@ -161,7 +161,7 @@ function T(e) {
   return !!d.Z.getMessages(t.channel_id).ready && y(t)
 }
 
-function A(e) {
+function C(e) {
   let {
     messageId: t,
     channelId: n
@@ -175,7 +175,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     message: t
   } = e, n = t.id, r = t.channel_id;
@@ -278,10 +278,10 @@ let U = new k(Chunk570140.Z, {
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: I,
   LOAD_THREADS_SUCCESS: j,
   LOAD_ARCHIVED_THREADS_SUCCESS: j,
-  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: A,
+  MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: C,
   LOAD_FORUM_POSTS: M,
   MESSAGE_CREATE: T,
-  MESSAGE_UPDATE: C,
+  MESSAGE_UPDATE: A,
   MESSAGE_DELETE: D,
   MESSAGE_DELETE_BULK: w,
   CREATE_PENDING_REPLY: x,

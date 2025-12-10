@@ -9,14 +9,14 @@ require.d(exports, {
   lm: () => O,
   qb: () => R,
   rs: () => N,
-  vP: () => C,
+  vP: () => A,
   vj: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js");
 require("./481060.js");
@@ -179,11 +179,11 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   return "-".concat(.216506 * e, ",-").concat(.25 * e, " ").concat(.216506 * e, ",0 -").concat(.216506 * e, ",").concat(.25 * e)
 }
 
-function C(e, t, n) {
+function A(e, t, n) {
   let {
     bgRadius: i,
     bgY: a,
@@ -220,7 +220,7 @@ function C(e, t, n) {
       ry: _,
       fill: "black"
     }), (0, r.jsx)(o.animated.polygon, {
-      points: A(t),
+      points: C(t),
       fill: "black",
       transform: m,
       style: {

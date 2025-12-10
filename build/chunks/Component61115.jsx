@@ -2,14 +2,14 @@
 /** chunk id: 61115, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => C,
+  C: () => A,
   default: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk600164 = require("./600164.jsx"),
@@ -70,7 +70,7 @@ function T(e) {
     transitionState: a,
     onClose: o,
     onSubmit: f
-  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [T, C] = (0, l.q_F)(() => ({
+  } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
     from: {
       width: "0%"
     },
@@ -83,7 +83,7 @@ function T(e) {
       choice_id: e.key
     }))
   }, R = async e => {
-    1 === e && (await C({
+    1 === e && (await A({
       width: "100%"
     }), o())
   };
@@ -125,7 +125,7 @@ function T(e) {
         }), (0, r.jsx)(l.hzk, {
           "data-migration-pending": true,
           className: g.modalContent,
-          children: n.choices.map(e => (0, r.jsx)(A, {
+          children: n.choices.map(e => (0, r.jsx)(C, {
             choice: e,
             onClick: P
           }, e.key))
@@ -166,7 +166,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     className: t,
     choice: n,
@@ -182,7 +182,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let t = false;
   (0, l.ZDy)(async () => {
     let {

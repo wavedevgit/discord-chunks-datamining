@@ -66,7 +66,7 @@ function M(e) {
     instanceId: B,
     isCurrentlyInInstance: F,
     canLaunchInChannel: V
-  } = (0, A.c)(n.id), H = (0, u.Z)(), Y = (0, m.ms)({
+  } = (0, C.c)(n.id), H = (0, u.Z)(), Y = (0, m.ms)({
     context: {
       type: "contextless"
     },
@@ -107,7 +107,7 @@ function M(e) {
   }) : (0, r.jsx)(k, {
     app: n
   });
-  return (0, r.jsx)(C.W, {
+  return (0, r.jsx)(A.W, {
     title: E,
     staticBannerSrc: N,
     videoBannerSrc: x,

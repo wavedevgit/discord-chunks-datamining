@@ -36,7 +36,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk612776 = require("./612776.js"),
   Chunk981631 = require("./981631.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,14 +45,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -80,7 +80,7 @@ function R() {
     t = Chunk165630.Z.affinities.slice(0, 3).map(e => {
       let t = E.Z.getGuild(e.guildId);
       return i()(null != t, "Guild must exist"), {
-        guild: (0, v.yS)(P(C({}, t), {
+        guild: (0, v.yS)(P(A({}, t), {
           features: [...t.features]
         })),
         numMessagesSent: 0x9e6ca8,
@@ -199,7 +199,7 @@ async function D() {
       users: O,
       sidekick: I,
       applications: T,
-      quests: A,
+      quests: C,
       avatar_decoration: N
     } = module;
     Chunk570140.Z.dispatch({
@@ -217,7 +217,7 @@ async function D() {
           }
         } : true,
         emojis: null != Chunk165630 ? {
-          emojis: Chunk165630.emojis.map(e => P(C({}, e), {
+          emojis: Chunk165630.emojis.map(e => P(A({}, e), {
             id: S.default.isProbablyAValidSnowflake(e.id) ? e.id : true
           })),
           numEmojisSent: Chunk165630.num_emojis_sent
@@ -246,16 +246,16 @@ async function D() {
         }) : true,
         applications: null != Chunk981631 ? {
           applications: Chunk981631.applications.map(e => ({
-            game: P(C({}, (0, h.m)(e.game)), {
+            game: P(A({}, (0, h.m)(e.game)), {
               coverImageHash: e.game.cover_image_hash
             }),
             numDaysPlayed: e.num_sessions
           })),
           totalGamesPlayed: Chunk981631.total_games_played
         } : true,
-        quests: null != A ? {
-          numCompleted: A.num_completed,
-          numOrbs: A.num_orbs
+        quests: null != C ? {
+          numCompleted: C.num_completed,
+          numOrbs: C.num_orbs
         } : true,
         sidekick: null != Chunk612776 ? {
           numMessagesSent: Chunk612776.num_messages_sent,

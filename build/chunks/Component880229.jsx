@@ -146,7 +146,7 @@ function L(e) {
           variant: "text-md/semibold",
           children: (0, T.Z)(e)
         }), (0, i.jsx)(m.Text, {
-          color: "interactive-normal",
+          color: "interactive-text-default",
           variant: "text-sm/normal",
           children: e.description
         })]

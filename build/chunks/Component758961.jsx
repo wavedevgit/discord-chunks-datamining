@@ -36,22 +36,22 @@ function w(e) {
     onClose: Z,
     transitionState: P,
     showGuildPicker: E = false
-  } = e, [M, k] = a.useState(null != (t = null != (n = null == S ? true : S.name) ? n : null == O ? true : O.name) ? t : ""), [I, T] = a.useState(null != (i = null == O ? true : O.volume) ? i : 1), [D, F] = a.useState(null == O ? true : O.emojiId), [R, B] = a.useState(null == O ? true : O.emojiName), {
-    file: U,
-    loadAudioFromFile: _,
-    maxVolume: z,
-    setMaxVolume: G
-  } = (0, v.p)(), [L, H] = a.useState(false), [V, A] = a.useState(null), [W, q] = a.useState(null), [Y, J] = a.useState("ready"), [Q, K] = a.useState(C);
+  } = e, [k, M] = a.useState(null != (t = null != (n = null == S ? true : S.name) ? n : null == O ? true : O.name) ? t : ""), [I, T] = a.useState(null != (i = null == O ? true : O.volume) ? i : 1), [D, F] = a.useState(null == O ? true : O.emojiId), [R, B] = a.useState(null == O ? true : O.emojiName), {
+    file: G,
+    loadAudioFromFile: U,
+    maxVolume: _,
+    setMaxVolume: z
+  } = (0, v.p)(), [L, H] = a.useState(false), [V, W] = a.useState(null), [A, q] = a.useState(null), [Y, J] = a.useState("ready"), [Q, K] = a.useState(C);
   async function X(e) {
     try {
-      await _(null != e ? e : null), J("ready"), A(null)
+      await U(null != e ? e : null), J("ready"), W(null)
     } catch (e) {
       $(e)
     }
   }
 
   function $(e) {
-    if (e instanceof u.Z) A(e);
+    if (e instanceof u.Z) W(e);
     else if (e instanceof Error) {
       let n = {
         status: 500,
@@ -59,19 +59,19 @@ function w(e) {
           message: e.message
         }
       };
-      A(new u.Z(n))
-    } else A(new u.Z(e))
+      W(new u.Z(n))
+    } else W(new u.Z(e))
   }
   a.useEffect(() => {
     (null == S ? true : S.file) != null && e(S.file);
     async function e(e) {
       try {
-        await _(e), J("ready"), A(null)
+        await U(e), J("ready"), W(null)
       } catch (e) {
         $(e)
       }
     }
-  }, [null == S ? true : S.file, _]);
+  }, [null == S ? true : S.file, U]);
   let ee = function(e) {
       switch (e) {
         case "encoding":
@@ -85,11 +85,11 @@ function w(e) {
     }(Y),
     en = "uploading" === Y || "encoding" === Y,
     et = null != O,
-    el = M.length >= 2 && (et || null != U) && null != Q && function(e) {
+    el = k.length >= 2 && (et || null != G) && null != Q && function(e) {
       if (null == e) returntrue;
       let n = (e.endMs - e.startMs) / 1e3;
       return n > 0 && n <= y.YW
-    }(W),
+    }(A),
     ea = a.useCallback(async (e, n) => {
       J("encoding");
       try {
@@ -100,11 +100,11 @@ function w(e) {
       }
     }, []),
     ei = a.useCallback(async () => {
-      if (null == U) return;
+      if (null == G) return;
       r()(null != Q, "Cannot submit soundboard sound with no guildId");
-      let e = U;
-      if (null != W) {
-        let n = await ea(U, W);
+      let e = G;
+      if (null != A) {
+        let n = await ea(G, A);
         if (null == n) return;
         e = n
       }
@@ -114,7 +114,7 @@ function w(e) {
         await (0, p.bb)({
           readPromise: n,
           guildId: Q,
-          name: M,
+          name: k,
           volume: I,
           emojiId: D,
           emojiName: R
@@ -122,14 +122,14 @@ function w(e) {
       } catch (e) {
         throw new u.Z(e)
       }
-    }, [U, Q, M, ea, W, I, D, R]),
+    }, [G, Q, k, ea, A, I, D, R]),
     er = a.useCallback(async () => {
-      r()(null != Q, "Cannot submit soundboard sound with no guildId"), H(true), A(null);
+      r()(null != Q, "Cannot submit soundboard sound with no guildId"), H(true), W(null);
       try {
         et ? await (0, g.$d)({
           guildId: Q,
           soundId: O.soundId,
-          name: M,
+          name: k,
           volume: I,
           emojiId: D,
           emojiName: R
@@ -137,17 +137,17 @@ function w(e) {
       } catch (e) {
         $(e)
       } finally {
-        J("ready"), H(false), T(1), G(1)
+        J("ready"), H(false), T(1), z(1)
       }
-    }, [et, Z, Q, O, M, I, D, R, ei, G]);
+    }, [et, Z, Q, O, k, I, D, R, ei, z]);
   (0, c.ZP)(() => {
-    _(null), m.default.track(j.rMx.OPEN_MODAL, {
+    U(null), m.default.track(j.rMx.OPEN_MODAL, {
       type: "Soundboard Upload Sound",
       guild_id: Q
     })
   }), a.useEffect(() => {
-    T(Math.min(I, z))
-  }, [I, T, z]);
+    T(Math.min(I, _))
+  }, [I, T, _]);
   let es = (0, l.jsx)(d.Z, {
       guildId: Q,
       emojiId: D,
@@ -182,7 +182,7 @@ function w(e) {
         label: x.intl.string(x.t.UYt7iQ),
         value: Q,
         onChange: K
-      }) : null, (et || null != U) && (0, l.jsx)(h.Z, {
+      }) : null, (et || null != G) && (0, l.jsx)(h.Z, {
         sound: O,
         volume: I,
         disabled: en,
@@ -192,7 +192,7 @@ function w(e) {
         errorMessage: null == V ? true : V.getFirstFieldErrorMessage("sound"),
         label: x.intl.string(x.t.sSHaG7),
         children: (0, l.jsx)(f.Z, {
-          filename: null != (w = null == U ? true : U.name) ? w : "",
+          filename: null != (w = null == G ? true : G.name) ? w : "",
           buttonText: x.intl.string(x.t.zpi3XG),
           placeholder: x.intl.string(x.t["x+YUL9"]),
           onFileSelect: X,
@@ -204,8 +204,8 @@ function w(e) {
           label: x.intl.string(x.t.NpJGaM),
           placeholder: x.intl.string(x.t.NpJGaM),
           error: null == V ? true : V.getFirstFieldErrorMessage("name"),
-          value: M,
-          onChange: k,
+          value: k,
+          onChange: M,
           maxLength: y.Ek
         }), es]
       }), (0, l.jsx)(o.iRW, {
@@ -215,7 +215,7 @@ function w(e) {
         initialValue: I,
         onValueChange: e => T(e),
         minValue: 0,
-        maxValue: z
+        maxValue: _
       })]
     })
   })

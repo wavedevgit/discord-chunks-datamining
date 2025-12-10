@@ -86,11 +86,11 @@ function I(e) {
 }
 let T = false;
 
-function A() {
+function C() {
   T = true
 }
 
-function C(e) {
+function A(e) {
   let {
     status: t,
     requests: n,
@@ -230,8 +230,8 @@ class q extends(r = Chunk442837.ZP.Store) {
 _(q, "displayName", "GuildJoinRequestStoreV2");
 let Q = new q(Chunk570140.Z, {
   GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: I,
-  GUILD_JOIN_REQUESTS_FETCH_SUCCESS: C,
-  GUILD_JOIN_REQUESTS_FETCH_START: A,
+  GUILD_JOIN_REQUESTS_FETCH_SUCCESS: A,
+  GUILD_JOIN_REQUESTS_FETCH_START: C,
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: N,
   GUILD_JOIN_REQUESTS_BULK_ACTION: Z,
   GUILD_JOIN_REQUEST_CREATE: U,

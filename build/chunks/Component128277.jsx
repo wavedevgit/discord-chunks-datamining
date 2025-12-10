@@ -151,7 +151,7 @@ function x(e) {
       children: [(0, r.jsx)(v.Z, w(R({
         textId: L
       }, k), {
-        contextMenu: (0, r.jsx)(A.Z, {
+        contextMenu: (0, r.jsx)(C.Z, {
           display: "live",
           user: t,
           activity: a,
@@ -164,7 +164,7 @@ function x(e) {
           className: N.content,
           children: [(0, r.jsx)(f.E, {
             image: G,
-            size: j === C.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
+            size: j === A.l.MODAL_V2 ? f.J.SIZE_100 : f.J.SIZE_60,
             className: N.clickableImage,
             onClick: e => {
               e.stopPropagation(), B({
@@ -188,10 +188,10 @@ function x(e) {
               user: t,
               activity: a,
               className: N.badges
-            }), H(), j === C.l.MODAL_V2 && Y()]
-          }), j === C.l.MODAL && Y()]
+            }), H(), j === A.l.MODAL_V2 && Y()]
+          }), j === A.l.MODAL && Y()]
         })
-      }), j !== C.l.MODAL && j !== C.l.MODAL_V2 && Y()]
+      }), j !== A.l.MODAL && j !== A.l.MODAL_V2 && Y()]
     })
   })
 }

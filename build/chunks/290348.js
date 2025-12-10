@@ -178,7 +178,7 @@ function B(e, t) {
   let n = (0, v.Z)(t, e);
   return x(e, "roleColor", r.useMemo(() => {
     var e;
-    return null != (e = null == n ? true : n.color) ? e : C.p6O
+    return null != (e = null == n ? true : n.color) ? e : A.p6O
   }, [n]))
 }
 
@@ -249,7 +249,7 @@ function ee(e) {
     var e, r, i, a, o;
     return {
       price: null != (e = null != n ? n : null == t ? true : t.price) ? e : 0,
-      currency: null != (r = null == t ? true : t.currency) ? r : C.pKx.USD,
+      currency: null != (r = null == t ? true : t.currency) ? r : A.pKx.USD,
       interval: null != (i = null == t ? true : t.interval) ? i : N.rV.MONTH,
       interval_count: null != (a = null == t ? true : t.interval_count) ? a : 1,
       id: null != (o = null == t ? true : t.id) ? o : ""
@@ -478,7 +478,7 @@ function el(e, t) {
           intangibleBenefits: t.additional_perks,
           channelBenefits: t.channels.map(e => ({
             ref_id: e.id,
-            ref_type: A.Qs.CHANNEL,
+            ref_type: C.Qs.CHANNEL,
             description: e.description,
             name: e.name,
             emoji_name: e.emoji_name

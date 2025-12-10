@@ -34,9 +34,9 @@ let E = "IncomingCallStore",
   S = [],
   I = new Map,
   T = new Set,
-  A = false;
+  C = false;
 
-function C() {
+function A() {
   let e = Chunk451478.Z.windowSize();
   return null != r && r.x + b < module.width && r.y + y < module.height ? r : {
     x: module.width / 2 - b / 2,
@@ -66,7 +66,7 @@ function P(e) {
       {
         x: r,
         y: i
-      } = C();
+      } = A();
     return I.set(t, {
       channel: e,
       x: r + n,
@@ -112,7 +112,7 @@ function x(e) {
 }
 
 function L() {
-  A = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
+  C = Chunk885110.Z.getStatus() === Chunk981631.Skl.DND || Chunk695346.QZ.getSetting()
 }
 
 function j() {
@@ -128,16 +128,16 @@ class M extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk885110.Z, Chunk581883.Z, Chunk451478.Z), this.syncWith([Chunk885110.Z], L), this.syncWith([Chunk581883.Z], L), this.syncWith([Chunk358221.Z], j)
   }
   getIncomingCalls() {
-    return A ? S : Array.from(I.values())
+    return C ? S : Array.from(I.values())
   }
   getIncomingCallChannelIds() {
-    return A ? v : T
+    return C ? v : T
   }
   getFirstIncomingCallId() {
-    return A ? null : T.values().next().value
+    return C ? null : T.values().next().value
   }
   hasIncomingCalls() {
-    return !A && T.size > 0
+    return !C && T.size > 0
   }
 }
 g(M, "displayName", "IncomingCallStore");

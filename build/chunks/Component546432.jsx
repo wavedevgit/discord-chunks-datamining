@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk337595 = require("./337595.js"),
   Chunk374299 = require("./374299.js");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,7 +47,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -126,7 +126,7 @@ let k = e => {
   null != a && h.push((0, r.jsx)(l.u, {
     text: I.intl.string(I.t["/XT3ij"]),
     children: (0, r.jsx)(c.P3F, {
-      className: o()(A.hoverButton, T.removeMosaicItemHoverButton),
+      className: o()(C.hoverButton, T.removeMosaicItemHoverButton),
       focusProps: {
         offset: 2
       },
@@ -144,7 +144,7 @@ let k = e => {
     children: (0, r.jsx)(d.Z, {
       target: "_blank",
       rel: "noreferrer noopener",
-      className: A.hoverButton,
+      className: C.hoverButton,
       iconClassName: T.downloadHoverButtonIcon,
       focusProps: {
         offset: 2
@@ -156,13 +156,13 @@ let k = e => {
   let g = Math.max(0, h.length - _);
   return (0, r.jsxs)(r.Fragment, {
     children: [_ > 0 && h.length > 0 && (0, r.jsx)("div", {
-      className: o()(A.hoverButtonGroup, {
-        [A.nonMediaMosaicItem]: !f
+      className: o()(C.hoverButtonGroup, {
+        [C.nonMediaMosaicItem]: !f
       }),
       children: h.slice(g)
     }), (0, r.jsx)("div", {
       ref: p,
-      className: A.sizer
+      className: C.sizer
     })]
   })
 };
@@ -181,8 +181,8 @@ function U(e) {
     renderImageComponent: _,
     renderVideoComponent: g,
     renderAudioComponent: O,
-    renderPlaintextFilePreview: A,
-    renderGenericFileComponent: C,
+    renderPlaintextFilePreview: C,
+    renderGenericFileComponent: A,
     renderVisualPlaceholderComponent: N,
     className: P,
     imgContainerClassName: R,
@@ -343,7 +343,7 @@ function U(e) {
         onPlay: p
       });
     case "PLAINTEXT_PREVIEW":
-      return (0, r.jsx)(A, {
+      return (0, r.jsx)(C, {
         item: n,
         message: t,
         className: P,
@@ -352,7 +352,7 @@ function U(e) {
         renderAdjacentContent: ei
       });
     case "OTHER":
-      return (0, r.jsx)(C, {
+      return (0, r.jsx)(A, {
         item: n,
         message: t,
         className: P,
@@ -403,7 +403,7 @@ let Z = function(e) {
     width: E,
     height: b,
     type: y
-  } = n, S = s(n, (0, _.v)(a)), [I, A] = i.useState(null != S), C = (0, f.JO)(S), P = c === v.hV.MOSAIC, w = !P && (null != E && E < x || null != b && b < L), M = j(y), k = (0, O.R_)(y), Z = u && null != S && (0, f.yf)(E, b), [B, F] = i.useState(false), V = () => {
+  } = n, S = s(n, (0, _.v)(a)), [I, C] = i.useState(null != S), A = (0, f.JO)(S), P = c === v.hV.MOSAIC, w = !P && (null != E && E < x || null != b && b < L), M = j(y), k = (0, O.R_)(y), Z = u && null != S && (0, f.yf)(E, b), [B, F] = i.useState(false), V = () => {
     F(true)
   }, H = () => {
     F(false)
@@ -428,7 +428,7 @@ let Z = function(e) {
       isVisualMediaType: k,
       onVideoControlsShow: V,
       onVideoControlsHide: H,
-      forcePlaceholder: C && I
+      forcePlaceholder: A && I
     }))
   };
   return (0, r.jsxs)("div", {
@@ -453,7 +453,7 @@ let Z = function(e) {
       obscurityControlClassName: o()({
         [T.obscureVideoSpacing]: "VIDEO" === y && u && !I && B
       }),
-      onToggleObscurity: () => A(e => !e),
+      onToggleObscurity: () => C(e => !e),
       children: e => Y(e)
     }) : Y(), d]
   })

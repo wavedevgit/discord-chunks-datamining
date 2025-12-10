@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -320,23 +320,23 @@ function j(e) {
 
 function M(e) {
   switch (e) {
-    case A.intl.string(A.t.ZNR2fi):
+    case C.intl.string(C.t.ZNR2fi):
       return u.xPt;
-    case A.intl.string(A.t["20uQR3"]):
+    case C.intl.string(C.t["20uQR3"]):
       return u.FLu;
-    case A.intl.string(A.t.L4lxyE):
+    case C.intl.string(C.t.L4lxyE):
       return u.QDj;
-    case A.intl.string(A.t["AV/v6i"]):
+    case C.intl.string(C.t["AV/v6i"]):
       return u.aAW;
-    case A.intl.string(A.t.XM9XGP):
+    case C.intl.string(C.t.XM9XGP):
       return u.Odl;
-    case A.intl.string(A.t.TNLcpx):
+    case C.intl.string(C.t.TNLcpx):
       return u.XBm;
-    case A.intl.string(A.t.F8Wf0e):
+    case C.intl.string(C.t.F8Wf0e):
       return u.KY1;
-    case A.intl.string(A.t.PJgX2h):
+    case C.intl.string(C.t.PJgX2h):
       return u.SlE;
-    case A.intl.string(A.t.nrpA5E):
+    case C.intl.string(C.t.nrpA5E):
       return u.WZu;
     default:
       return null
@@ -496,11 +496,11 @@ function G() {
 
 function Z(e) {
   switch (e) {
-    case A.intl.string(A.t.tPZo4p):
+    case C.intl.string(C.t.tPZo4p):
       return u.tBG;
-    case A.intl.string(A.t.JL7sRS):
+    case C.intl.string(C.t.JL7sRS):
       return u.wGt;
-    case A.intl.string(A.t.WjkIKU):
+    case C.intl.string(C.t.WjkIKU):
       return u.tYf
   }
 }
@@ -773,9 +773,9 @@ function K(e) {
     return n.length + e > o
   }, [n.length, o]), c = i.useCallback(() => {
     d.Z.show({
-      title: A.intl.string(A.t.nOqJcX),
-      body: A.intl.string(A.t.zzAcsv),
-      confirmText: A.intl.string(A.t["qcYY+/"])
+      title: C.intl.string(C.t.nOqJcX),
+      body: C.intl.string(C.t.zzAcsv),
+      confirmText: C.intl.string(C.t["qcYY+/"])
     })
   }, []);
   return {

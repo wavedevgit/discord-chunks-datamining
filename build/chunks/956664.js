@@ -9,10 +9,10 @@ require.d(exports, {
   Tj: () => c,
   XN: () => b,
   _H: () => _,
-  c0: () => A,
+  c0: () => C,
   fD: () => v,
   kD: () => T,
-  pt: () => C,
+  pt: () => A,
   rn: () => p,
   rv: () => m,
   zp: () => d
@@ -153,7 +153,7 @@ function T(e) {
     type: n
   })
 }
-async function A(e) {
+async function C(e) {
   var t;
   if ("image/png" !== (null == (t = e.type) ? true : t.split(";")[0])) throw Error("File is not a PNG");
   let n = await e.text(),
@@ -161,7 +161,7 @@ async function A(e) {
   return !!(r > 0) && false !== n.substring(0, r).indexOf("acTL")
 }
 
-function C(e) {
+function A(e) {
   return new Promise((t, n) => {
     let r = new Image;
     r.addEventListener("load", t), r.addEventListener("error", n), r.src = e

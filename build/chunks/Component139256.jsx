@@ -53,7 +53,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,8 +64,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -122,7 +122,7 @@ function w(e) {
   }), {
     ref: a
   } = i, o = N(i, ["ref"]);
-  return (0, r.jsx)("div", C(T({
+  return (0, r.jsx)("div", A(T({
     "aria-label": v.intl.string(v.t.sJpqBS),
     ref: a
   }, o), {
@@ -352,14 +352,14 @@ function B(e) {
     isExpired: true,
     isVictor: true
   }, () => ({
-    color: l.Z.colors.BUTTON_POSITIVE_BACKGROUND.css,
+    color: l.Z.colors.CONTROL_CONNECT_BACKGROUND_DEFAULT.css,
     backgroundColor: l.Z.unsafe_rawColors.WHITE_500.css
   })).with({
     isExpired: true,
     isVictor: false
   }, () => ({
-    color: l.Z.colors.ICON_PRIMARY.css,
-    backgroundColor: l.Z.colors.BACKGROUND_MOD_FAINT.css
+    color: l.Z.colors.ICON_STRONG.css,
+    backgroundColor: l.Z.colors.BACKGROUND_MOD_MUTED.css
   })).otherwise(() => ({
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     backgroundColor: l.Z.unsafe_rawColors.WHITE_500.css
@@ -386,10 +386,10 @@ function F(e) {
     background: S.radioBackground,
     "aria-hidden": true
   };
-  return t ? (0, r.jsx)(m.Z, C(T({}, a), {
+  return t ? (0, r.jsx)(m.Z, A(T({}, a), {
     foreground: S.radioForeground,
     className: i
-  })) : (0, r.jsx)(_.Z, C(T({}, a), {
+  })) : (0, r.jsx)(_.Z, A(T({}, a), {
     className: i
   }))
 }

@@ -81,7 +81,7 @@ function T(e) {
     null != t && (o.push(t), null != a && v(t, a))
   }), o
 }
-class A {
+class C {
   setLimit(e) {
     this._limit = e, null != this._nextQuery && (this._nextQuery.limit = e)
   }
@@ -131,7 +131,7 @@ class A {
     }), this._worker = e, this._uuid = (0, a.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = false, this.subscribe()
   }
 }
-class C extends Chunk147913.Z {
+class A extends Chunk147913.Z {
   _initialize() {
     this.rebootWebworker()
   }
@@ -176,7 +176,7 @@ class C extends Chunk147913.Z {
       _worker: n
     } = this;
     if (null == n) throw Error("SearchContextManager: No webworker initialized");
-    return new A(n, e, t)
+    return new C(n, e, t)
   }
   requestDebugState() {
     this.initialize();
@@ -456,4 +456,4 @@ class C extends Chunk147913.Z {
     })
   }
 }
-let N = new C
+let N = new A

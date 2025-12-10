@@ -110,13 +110,13 @@ function E(e) {
     resetInteraction: v,
     interactionSourceId: S,
     interactionPopoutTargetRef: I
-  } = (0, a.Xo)(), T = [u.l.MODAL, u.l.MODAL_V2].includes(p) ? (0, o.z)(t.id, n) : true, A = O === b.sourceType && y === c.P.REACT, C = O === b.sourceType && y === c.P.REPLY, N = (A || C) && S === b.sourceId;
+  } = (0, a.Xo)(), T = [u.l.MODAL, u.l.MODAL_V2].includes(p) ? (0, o.z)(t.id, n) : true, C = O === b.sourceType && y === c.P.REACT, A = O === b.sourceType && y === c.P.REPLY, N = (C || A) && S === b.sourceId;
   return (0, r.jsx)(i.yRy, _(f({
     targetElementRef: null != I ? I : true,
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, a = A ? s.Z : l.Z;
+      } = e, a = C ? s.Z : l.Z;
       return (0, r.jsx)(a, f({
         user: t,
         guildId: n,

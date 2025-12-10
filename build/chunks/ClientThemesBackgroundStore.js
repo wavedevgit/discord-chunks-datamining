@@ -33,8 +33,8 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let A = true,
-  C = false,
+let C = true,
+  A = false,
   N = e => {
     let {
       presetId: t
@@ -65,16 +65,16 @@ let A = true,
     } = e, r = E.default.getCurrentUser();
     if (null == t || null == n || (0, c.zu)(s.z.CLIENT_THEMES_COACHMARK) || !(0, y.Fc)(r)) return;
     let i = g.Z.getChannel(t);
-    null != i && (0, h.zi)(i.type) && (C = true)
+    null != i && (0, h.zi)(i.type) && (A = true)
   };
 
 function w() {
-  A && (r = true), C = false
+  C && (r = true), A = false
 }
 let x = () => {
     let e = !Chunk74538.ZP.canUseClientThemes(Chunk594174.default.getCurrentUser());
-    if (module === A) returnfalse;
-    A = module
+    if (module === C) returnfalse;
+    C = module
   },
   L = () => {
     if (!Chunk238514.Z.shouldSync("appearance")) returnfalse;
@@ -104,7 +104,7 @@ class M extends(a = Chunk442837.ZP.PersistedStore) {
     null != e && (r = (null == e ? true : e.gradientPresetId) != null ? S.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, p.ZP, m.Z, E.default), this.syncWith([E.default], x), this.syncWith([u.Z], L)
   }
   getState() {
-    return A ? {} : {
+    return C ? {} : {
       gradientPresetId: null == r ? true : r.id
     }
   }
@@ -115,10 +115,10 @@ class M extends(a = Chunk442837.ZP.PersistedStore) {
     return null == this.gradientPreset ? null : (0, Chunk47760.VK)(this.gradientPreset)
   }
   get isPreview() {
-    return A
+    return C
   }
   get isCoachmark() {
-    return C
+    return A
   }
   get mobilePendingThemeIndex() {
     return i

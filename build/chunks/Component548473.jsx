@@ -154,11 +154,11 @@ function L(e) {
     disableTracking: s
   } = e, o = (0, c.e7)([p.Z], () => p.Z.isLoading()), m = i.useRef(false);
   i.useEffect(() => {
-    if (!s) return f.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, G(D({}, (0, g.hH)(t.id)), {
+    if (!s) return h.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, G(D({}, (0, g.hH)(t.id)), {
       step: false,
       required: true
     })), () => {
-      f.default.track(j.rMx.GUILD_ONBOARDING_STEP_COMPLETED, G(D({}, (0, g.hH)(t.id)), {
+      h.default.track(j.rMx.GUILD_ONBOARDING_STEP_COMPLETED, G(D({}, (0, g.hH)(t.id)), {
         step: false,
         skipped: !m.current,
         is_final_step: false,
@@ -166,7 +166,7 @@ function L(e) {
       }))
     }
   }, [t.id, m, s]);
-  let N = i.useMemo(() => (0, h.EB)(t, 135, false, true), [t]);
+  let N = i.useMemo(() => (0, f.EB)(t, 135, false, true), [t]);
   return (0, u.ZP)(() => {
     setTimeout(() => {
       m.current = true, n()

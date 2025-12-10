@@ -65,9 +65,9 @@ let y = false,
   S = new Set,
   I = {},
   T = {},
-  A = false;
+  C = false;
 
-function C() {
+function A() {
   Chunk433517.K.set(E, g(m({}, b()), {
     activeLaunchOptionIds: T
   }))
@@ -110,7 +110,7 @@ function x(e) {
     branchId: n,
     flags: r
   } = e, i = (0, d.Tu)(t, n), a = Z(t, n);
-  null != a && !a.isHidden() && o.yE(r, p.eHb.HIDDEN) && (A = true), S.add(i)
+  null != a && !a.isHidden() && o.yE(r, p.eHb.HIDDEN) && (C = true), S.add(i)
 }
 
 function L(e) {
@@ -126,7 +126,7 @@ function j(e) {
     branchId: n,
     launchOptionId: r
   } = e;
-  T[(0, d.Tu)(t, n)] = r, C()
+  T[(0, d.Tu)(t, n)] = r, A()
 }
 
 function M(e) {
@@ -169,7 +169,7 @@ class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default);
     let e = Chunk433517.K.get(E);
-    null != module && (null == module.activeLaunchOptionIds ? C() : T = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : I = module.activeLibraryApplicationBranchIds)
+    null != module && (null == module.activeLaunchOptionIds ? A() : T = module.activeLaunchOptionIds, null == module.activeLibraryApplicationBranchIds ? N() : I = module.activeLibraryApplicationBranchIds)
   }
   get libraryApplications() {
     return G(e => !e.isHidden())
@@ -219,7 +219,7 @@ class F extends(r = Chunk442837.ZP.Store) {
     return a()(B()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
-    return A
+    return C
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

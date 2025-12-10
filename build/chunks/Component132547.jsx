@@ -92,18 +92,18 @@ let L = e => {
               discountedPrice: H
             })
           }), (0, r.jsx)(S.Z, {
-            variant: A.gM.WHATS_NEW,
+            variant: C.gM.WHATS_NEW,
             className: w.whatsNew,
             noBackground: true,
             leftAlignHeaders: true
           }), (0, r.jsx)(S.Z, {
             className: w.perksDiscoverability,
-            variant: A.gM.PERKS_DISCOVERABILITY,
+            variant: C.gM.PERKS_DISCOVERABILITY,
             noBackground: true,
             leftAlignHeaders: true,
             showAllPerksButton: (0, r.jsx)(N.Z, {
               setIsAllPerksVisible: Z,
-              previousComponent: A.MQ.HOME
+              previousComponent: C.MQ.HOME
             })
           }), (0, r.jsx)(I.Z, {
             className: w.giftNitro,
@@ -139,10 +139,10 @@ let L = e => {
         churnDiscountOffer: k,
         discountedPrice: H
       })]
-    }), (0, r.jsx)(C.Z, {
+    }), (0, r.jsx)(A.Z, {
       isAllPerksVisible: G,
       setIsAllPerksVisible: Z,
-      previousComponent: A.MQ.HOME,
+      previousComponent: C.MQ.HOME,
       enablePremiumBrandRefresh: Q
     })]
   })

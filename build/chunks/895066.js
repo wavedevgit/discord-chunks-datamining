@@ -316,8 +316,8 @@ class g extends Chunk47770.Z {
           if ("audio" === t.type) {
             var r, a, o, s, l, c, u, d, p, _, m, h, g, E, b, y, O, v, S, I;
             let T = null != (r = e.transport.ping) ? r : 0,
-              A = t.packetsReceived,
-              C = t.packetsLost,
+              C = t.packetsReceived,
+              A = t.packetsLost,
               N = t.bytesReceived,
               P = t.nackCount,
               R = null != (a = t.fecPacketsReceived) ? a : 0,
@@ -350,15 +350,15 @@ class g extends Chunk47770.Z {
               };
             if (null != this.inboundStats[n]) {
               let e = this.inboundStats[n],
-                r = A - e.packetsReceived,
-                a = C - e.packetsLost,
+                r = C - e.packetsReceived,
+                a = A - e.packetsLost,
                 o = 0,
                 s = e.mosBuckets,
                 l = null != (h = e.decryptFailureBeforeSuccessCount) ? h : j.decryptSuccessCount > 0 ? j.decryptFailureCount : true;
               r > 0 && a >= 0 && (o = this.calculateMos(T + w, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
-                packetsReceived: A,
+                packetsReceived: C,
                 bytesReceived: N,
-                packetsLost: C,
+                packetsLost: A,
                 nackCount: null != P ? P : 0,
                 fecPacketsReceived: R,
                 fecPacketsDiscarded: D,
@@ -381,9 +381,9 @@ class g extends Chunk47770.Z {
                 numRateSamples: this.periodicInboundStats[n].numRateSamples + 1
               }
             } else this.inboundStats[n] = f({
-              packetsReceived: A,
+              packetsReceived: C,
               bytesReceived: N,
-              packetsLost: C,
+              packetsLost: A,
               nackCount: null != P ? P : 0,
               fecPacketsReceived: R,
               fecPacketsDiscarded: D,

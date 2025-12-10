@@ -26,7 +26,7 @@ let u = e => {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-md/normal",
-      color: "header-muted",
+      color: "text-muted",
       className: c.alignStart,
       children: o.intl.string(o.t.Eabu1z)
     }), (0, r.jsxs)("div", {

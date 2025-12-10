@@ -68,8 +68,8 @@ let v = {
   S = v,
   I = false,
   T = false,
-  A = {},
-  C = null,
+  C = {},
+  A = null,
   N = false,
   P = Chunk70956.Z.Millis.DAY,
   R = 10 * Chunk70956.Z.Millis.HOUR,
@@ -127,7 +127,7 @@ function k(e) {
       c = (null == l ? true : l.id) === s.ownerId,
       u = _.Z.can(g.Plq.ADMINISTRATOR, s);
     if (t.includes("is_owner") && !c || t.includes("is_admin") && !u) continue;
-    null == (A = null != A ? A : {})[e.key] && (A[e.key] = e);
+    null == (C = null != C ? C : {})[e.key] && (C[e.key] = e);
     let d = m.Z.getGuildId(),
       p = null != d && d === s.id;
     if ((!t.includes("is_viewing") || p) && !i) returntrue
@@ -155,7 +155,7 @@ function Z(e) {
     a = r && M(t);
   G(D);
   let o = false;
-  C = i && a && !o ? t : null
+  A = i && a && !o ? t : null
 }
 
 function B(e) {
@@ -177,7 +177,7 @@ function H(e) {
   let {
     key: t
   } = e;
-  S.hiddenSurveys[t] = true, C = null, A = null != A ? A : {}, delete A[t]
+  S.hiddenSurveys[t] = true, A = null, C = null != C ? C : {}, delete C[t]
 }
 
 function Y() {
@@ -185,19 +185,19 @@ function Y() {
 }
 
 function W(e) {
-  return !!M(e) || (C = null, false)
+  return !!M(e) || (A = null, false)
 }
 
 function K() {
-  let e = Object.values(A = null != A ? A : {})[0];
+  let e = Object.values(C = null != C ? C : {})[0];
   return null != module && M(module) ? void Z({
     type: "SURVEY_FETCHED",
     survey: module
-  }) : null != C && void(C = null)
+  }) : null != A && void(A = null)
 }
 
 function z() {
-  if (null != C && W(C)) returnfalse;
+  if (null != A && W(A)) returnfalse;
   K()
 }
 
@@ -212,7 +212,7 @@ class Q extends(r = Chunk442837.ZP.PersistedStore) {
     return S
   }
   getCurrentSurvey() {
-    return L() ? null : C
+    return L() ? null : A
   }
   getSurveyOverride() {
     return S.surveyOverride

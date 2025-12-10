@@ -49,8 +49,8 @@ function S(e) {
 }
 let I = 27,
   T = 15 * Chunk70956.Z.Millis.MINUTE,
-  A = Chunk70956.Z.Millis.SECOND,
-  C = "LAST_CLIENT_HEARTBEAT_SESSION",
+  C = Chunk70956.Z.Millis.SECOND,
+  A = "LAST_CLIENT_HEARTBEAT_SESSION",
   N = "user",
   P = new Chunk710845.Z("SessionHeartbeatScheduler"),
   R = null,
@@ -172,8 +172,8 @@ function z() {
 
 function q(e) {
   let t = performance.now();
-  if (!(t - w < A)) try {
-    o.K.set(C, e), w = t
+  if (!(t - w < C)) try {
+    o.K.set(A, e), w = t
   } catch (e) {
     h.Z.captureException(e)
   }
@@ -184,7 +184,7 @@ function Q(e) {
 }
 
 function X() {
-  Chunk433517.K.remove(C), L = {
+  Chunk433517.K.remove(A), L = {
     state: "loaded",
     session: null
   }, Z(), x = 0
@@ -241,7 +241,7 @@ async function eo() {
     n = null,
     a = "loaded" === L.state ? null == (e = L.session) ? true : module.uuid : null;
   try {
-    n = "uninitialized" === L.state ? Q(await Chunk433517.K.getAfterRefresh(C)) : L.session
+    n = "uninitialized" === L.state ? Q(await Chunk433517.K.getAfterRefresh(A)) : L.session
   } catch (e) {
     Chunk960048.Z.captureException(module)
   }
@@ -264,6 +264,6 @@ async function eo() {
 }
 
 function es() {
-  let e = "uninitialized" === L.state ? Q(Chunk433517.K.get(C)) : L.session;
+  let e = "uninitialized" === L.state ? Q(Chunk433517.K.get(A)) : L.session;
   return null == module || (0, Chunk686325.qK)(module) ? null : module
 }

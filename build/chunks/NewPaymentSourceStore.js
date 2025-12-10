@@ -34,11 +34,11 @@ let c = "",
   S = false,
   I = null,
   T = null,
-  A = null,
-  C = null;
+  C = null,
+  A = null;
 
 function N() {
-  f = null, c = "", u = null, d = "", p = false, _ = null, m = "US", h = "", g = "", E = "", b = "", y = "", O = "", v = "", S = false, I = null, T = null, A = null, C = null
+  f = null, c = "", u = null, d = "", p = false, _ = null, m = "US", h = "", g = "", E = "", b = "", y = "", O = "", v = "", S = false, I = null, T = null, C = null, A = null
 }
 
 function P(e) {
@@ -127,18 +127,18 @@ function B(e) {
   let {
     query: t
   } = e;
-  (null == t ? true : t.payment_id) != null ? (A = true, T = t.payment_id) : (null == t ? true : t.payment_source_id) != null && (A = true, C = t.payment_source_id)
+  (null == t ? true : t.payment_id) != null ? (C = true, T = t.payment_id) : (null == t ? true : t.payment_source_id) != null && (C = true, A = t.payment_source_id)
 }
 
 function F() {
-  A = false, T = null
+  C = false, T = null
 }
 class V extends(r = Chunk442837.ZP.Store) {
   get stripePaymentMethod() {
     return f
   }
   get popupCallbackCalled() {
-    return A
+    return C
   }
   get braintreeEmail() {
     return c
@@ -156,10 +156,10 @@ class V extends(r = Chunk442837.ZP.Store) {
     return _
   }
   get redirectedPaymentSourceId() {
-    return C
+    return A
   }
   clearRedirectedPaymentSourceId() {
-    C = null
+    A = null
   }
   getCreditCardInfo() {
     return {

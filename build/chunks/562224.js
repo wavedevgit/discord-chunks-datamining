@@ -63,13 +63,13 @@ function T(e, t) {
   }), e
 }
 
-function A(e) {
+function C(e) {
   return e.hasOwnProperty("pid")
 }
 
-function C(e) {
+function A(e) {
   var t;
-  if (A(e)) return {
+  if (C(e)) return {
     pid: e.pid
   };
   let n = (0, b.Z)(true, e, a.ZP.getRunningGames()),
@@ -85,7 +85,7 @@ function C(e) {
   }
 }
 async function N(e, t) {
-  var n, _, E, b, v, I, A, N;
+  var n, _, E, b, v, I, C, N;
   let P = p.default.getCurrentUser(),
     R = f.Z.getVoiceChannelId(),
     D = c.Z.getChannel(R),
@@ -112,14 +112,14 @@ async function N(e, t) {
     [F, V] = null != (b = (0, g.Z)(B, P, x)) ? b : [],
     H = null != (v = null != F ? F : null == t ? true : t.resolution) ? v : M,
     Y = null != (I = null != V ? V : null == t ? true : t.fps) ? I : k,
-    W = null != (A = null == t ? true : t.previewDisabled) ? A : s.I0.getSetting(),
+    W = null != (C = null == t ? true : t.previewDisabled) ? C : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
   return (0, h.Z)(B, H, Y, P, x, D) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, Y = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
     preset: G,
     resolution: H,
     frameRate: Y,
     soundshareEnabled: K
-  }), (0, i.WH)(w, R, T(S({}, C(L)), {
+  }), (0, i.WH)(w, R, T(S({}, A(L)), {
     audioSourceId: (null == (_ = L.id) ? true : _.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: K,
     previewDisabled: W,

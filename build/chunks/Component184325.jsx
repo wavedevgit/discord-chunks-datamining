@@ -107,7 +107,7 @@ function V(e) {
   } = (0, u.ZP)(c.Z.BADGE), {
     context: W,
     trackUserProfileAction: K
-  } = (0, C.KZ)(), z = S.default.getCurrentUser(), q = (0, T.yd)(null == z ? true : z.premiumType, L.PremiumTypes.TIER_2), Q = (0, R.Of)(null != (t = null == z ? true : z.id) ? t : null), X = (0, P.Z)(Q).some(e => e.id === O.l.ORB_PROFILE_BADGE), J = (0, _.c)(z, "UserProfileBadgeList"), $ = (0, p.T)("UserProfileBadgeList");
+  } = (0, A.KZ)(), z = S.default.getCurrentUser(), q = (0, T.yd)(null == z ? true : z.premiumType, L.PremiumTypes.TIER_2), Q = (0, R.Of)(null != (t = null == z ? true : z.id) ? t : null), X = (0, P.Z)(Q).some(e => e.id === O.l.ORB_PROFILE_BADGE), J = (0, _.c)(z, "UserProfileBadgeList"), $ = (0, p.T)("UserProfileBadgeList");
   return (0, r.jsx)("div", {
     className: o()(k.container, a),
     "aria-label": M.intl.string(M.t.VWV0y5),
@@ -115,7 +115,7 @@ function V(e) {
     children: n.map((e, t) => {
       var n;
       let i = e.id === O.l.ORB_PROFILE_BADGE,
-        a = (0, A.fv)(e.id),
+        a = (0, C.fv)(e.id),
         u = null != a || e.id === j.a,
         p = (null == v ? true : v.userId) === (null == z ? true : z.id),
         S = t => {
@@ -168,8 +168,8 @@ function V(e) {
             analyticsLocations: Y
           }, W))
         },
-        C = true !== a && e.id !== j.a,
-        R = p && J && C,
+        A = true !== a && e.id !== j.a,
+        R = p && J && A,
         Q = (0, r.jsx)("img", {
           alt: " ",
           "aria-hidden": true,
@@ -199,7 +199,7 @@ function V(e) {
           })
         }, "".concat(e.id, "-").concat(t))
       }
-      if (C) {
+      if (A) {
         let n = (0, r.jsx)(s.Anchor, B(G({}, ee), {
             ref: H,
             children: Q

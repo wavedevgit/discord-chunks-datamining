@@ -26,7 +26,7 @@ let d = {
       n = e.options,
       a = e.name;
     if (!t.modifiersData[a]._skip) {
-      for (var d = n.mainAxis, f = true === d || d, p = n.altAxis, _ = true === p || p, m = n.fallbackPlacements, h = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, v = n.allowedAutoPlacements, S = t.options.placement, I = (0, i.Z)(S), T = I === S, A = m || (T || !O ? [(0, r.Z)(S)] : u(S)), C = [S].concat(A).reduce(function(e, n) {
+      for (var d = n.mainAxis, f = true === d || d, p = n.altAxis, _ = true === p || p, m = n.fallbackPlacements, h = n.padding, g = n.boundary, E = n.rootBoundary, b = n.altBoundary, y = n.flipVariations, O = true === y || y, v = n.allowedAutoPlacements, S = t.options.placement, I = (0, i.Z)(S), T = I === S, C = m || (T || !O ? [(0, r.Z)(S)] : u(S)), A = [S].concat(C).reduce(function(e, n) {
           return e.concat((0, i.Z)(n) === l.d7 ? (0, s.Z)(t, {
             placement: n,
             boundary: g,
@@ -35,8 +35,8 @@ let d = {
             flipVariations: O,
             allowedAutoPlacements: v
           }) : n)
-        }, []), N = t.rects.reference, P = t.rects.popper, R = new Map, D = true, w = C[0], x = 0; x < C.length; x++) {
-        var L = C[x],
+        }, []), N = t.rects.reference, P = t.rects.popper, R = new Map, D = true, w = A[0], x = 0; x < A.length; x++) {
+        var L = A[x],
           j = (0, i.Z)(L),
           M = (0, c.Z)(L) === l.BL,
           k = [l.we, l.I].indexOf(j) >= 0,
@@ -62,7 +62,7 @@ let d = {
       }
       if (D)
         for (var V = O ? 3 : 1, H = function(e) {
-            var t = C.find(function(t) {
+            var t = A.find(function(t) {
               var n = R.get(t);
               if (n) return n.slice(0, e).every(function(e) {
                 return e

@@ -32,26 +32,26 @@ function g(e) {
   } = e, {
     data: I
   } = (0, c.H)(y), T = null == I ? true : I[0], {
-    data: A
-  } = (0, l.Z)(y), C = i.useMemo(() => {
+    data: C
+  } = (0, l.Z)(y), A = i.useMemo(() => {
     var e;
-    return (null == A ? true : A.thumbnail) != null && null != (e = p.Z.toURLSafe((0, f._W)(g, A.thumbnail, 256))) ? e : true
-  }, [g, null == A ? true : A.thumbnail]), N = i.useMemo(() => {
-    let e = null == A ? true : A.benefits;
+    return (null == C ? true : C.thumbnail) != null && null != (e = p.Z.toURLSafe((0, f._W)(g, C.thumbnail, 256))) ? e : true
+  }, [g, null == C ? true : C.thumbnail]), N = i.useMemo(() => {
+    let e = null == C ? true : C.benefits;
     if (null != e && 0 !== e.length) return e.map(e => ({
       id: e.id,
       title: e.name,
       description: e.description,
       icon: (0, u.n)(g, e.icon)
     }))
-  }, [g, null == A ? true : A.benefits]), {
+  }, [g, null == C ? true : C.benefits]), {
     openModal: P,
     subscriptionPurchaseButtonState: R
   } = (0, d.Z)({
     skuId: y,
     initialSubscribeForGuild: null != O ? O : true
   });
-  return null == A ? null : (0, r.jsx)(_.A, {
+  return null == C ? null : (0, r.jsx)(_.A, {
     appId: g,
     skuId: y,
     transitionState: v,
@@ -73,9 +73,9 @@ function g(e) {
         icon: e.icon,
         description: e.description
       }, e.id)) : true,
-      description: null != (t = A.description) ? t : true,
-      imgSrc: C,
-      title: null != (n = null == T ? true : T.name) ? n : A.summary,
+      description: null != (t = C.description) ? t : true,
+      imgSrc: A,
+      title: null != (n = null == T ? true : T.name) ? n : C.summary,
       tag: (0, r.jsx)(o.Z, {
         type: E
       }),

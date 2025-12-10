@@ -28,7 +28,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk550125 = require("./550125.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,14 +37,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -74,7 +74,7 @@ class R extends(r = Chunk473749.Component) {
       },
       analyticsSection: t
     } = this.props;
-    return P(C({}, module), {
+    return P(A({}, module), {
       section: null != exports ? exports : Chunk981631.jXE.APPLICATION_EMBED,
       object: Chunk981631.qAy.CARD
     })
@@ -121,22 +121,22 @@ class R extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), A(this, "state", {
+    super(...e), C(this, "state", {
       playing: false,
       muted: true
-    }), A(this, "handleToggleMute", () => {
+    }), C(this, "handleToggleMute", () => {
       this.setState({
         muted: !this.state.muted
       })
-    }), A(this, "handleMouseEnter", () => {
+    }), C(this, "handleMouseEnter", () => {
       this.setState({
         playing: true
       })
-    }), A(this, "handleMouseLeave", () => {
+    }), C(this, "handleMouseLeave", () => {
       this.setState({
         playing: false
       })
-    }), A(this, "getStoreListingLocation", () => {
+    }), C(this, "getStoreListingLocation", () => {
       let {
         sku: e
       } = this.props;
@@ -145,12 +145,12 @@ class R extends(r = Chunk473749.Component) {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
-    }), A(this, "handleActionButtonClick", e => e.preventDefault()), A(this, "handleBuyButtonClick", e => e.preventDefault()), A(this, "handleLinkClick", e => {
+    }), C(this, "handleActionButtonClick", e => e.preventDefault()), C(this, "handleBuyButtonClick", e => e.preventDefault()), C(this, "handleLinkClick", e => {
       let {
         onEmbedClick: t
       } = this.props;
       null != t && t(e)
-    }), A(this, "renderApplicationTile", (e, t) => {
+    }), C(this, "renderApplicationTile", (e, t) => {
       let {
         inLibrary: n,
         width: r,
@@ -175,7 +175,7 @@ class R extends(r = Chunk473749.Component) {
         isHorizontal: u,
         isEmbed: true
       })
-    }), A(this, "renderActions", e => {
+    }), C(this, "renderActions", e => {
       let {
         inLibrary: t,
         application: n,
@@ -208,7 +208,7 @@ class R extends(r = Chunk473749.Component) {
     })
   }
 }
-A(R, "defaultProps", {
+C(R, "defaultProps", {
   renderFallback: Chunk981631.dG4
 });
 let D = [Chunk55563.Z, Chunk558314.Z, Chunk283595.Z, Chunk551428.Z];

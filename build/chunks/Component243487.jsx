@@ -100,7 +100,7 @@ function Y(e) {
     if (null == n) return;
     let r = y.Z.getChannel(null == (t = a.get(e)) ? true : t.voiceState.channelId);
     return n.getAvatarURL(null == r ? true : r.getGuildId(), p, false)
-  }).filter(C.lm), [i, a, p]), m = null != (t = _[0]) ? t : H(0), h = null != (n = _[1]) ? n : H(1);
+  }).filter(A.lm), [i, a, p]), m = null != (t = _[0]) ? t : H(0), h = null != (n = _[1]) ? n : H(1);
   return (0, r.jsxs)("div", {
     className: o()(G.hiddenVoiceStates, u && G.locked, f && G.flipped),
     children: [(0, r.jsx)("div", {
@@ -142,10 +142,10 @@ let K = Chunk473749.memo(function(e) {
     anchorLeft: g,
     avatarSizeMode: b,
     maxDisplayedVoiceStates: y = j.At
-  } = e, O = (0, R.ee)(() => W(o), [o]), [v, S] = o, I = S.length > 0 && null != n && null != a && (!d || f), T = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, p)).filter(C.lm).map(e => e.ownerId), [p, O]);
+  } = e, O = (0, R.ee)(() => W(o), [o]), [v, S] = o, I = S.length > 0 && null != n && null != a && (!d || f), T = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, p)).filter(A.lm).map(e => e.ownerId), [p, O]);
   i.useEffect(() => {
     I && (0, R.zi)(M.Odu.VOICE_V3, {
-      locked: A.default.isInstanceLocked(),
+      locked: C.default.isInstanceLocked(),
       shownUserIds: Array.from(O),
       liveUserIds: T,
       contentInventoryIds: []
@@ -253,12 +253,12 @@ function q(e) {
   var t;
   let {
     isSettingsPreview: n
-  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), _ = (0, s.cj)([E.Z, A.default, w.Z], () => {
+  } = e, i = (0, s.e7)([O.Z, y.Z], () => y.Z.getChannel(O.Z.getVoiceChannelId())), a = (0, f.ZP)(i), o = z(k.Yn.DEFAULT, e.maxDisplayedVoiceStates), l = (0, s.e7)([E.Z], () => E.Z.getStreamerActiveStreamMetadata()), c = (0, x.II)(), d = (0, u.q)(null == c ? true : c.id), _ = (0, s.cj)([E.Z, C.default, w.Z], () => {
     let e = E.Z.getCurrentUserActiveStream();
     return {
-      displayUserMode: A.default.getDisplayUserMode(),
-      displayNameMode: A.default.getDisplayNameMode(),
-      avatarSizeMode: A.default.getAvatarSizeMode(),
+      displayUserMode: C.default.getDisplayUserMode(),
+      displayNameMode: C.default.getDisplayNameMode(),
+      avatarSizeMode: C.default.getAvatarSizeMode(),
       streamApplication: (null == l ? true : l.pid) === w.Z.getTargetPID() ? (0, p.Z)(c) : null,
       stream: e
     }

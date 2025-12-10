@@ -58,7 +58,7 @@ function V(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     user: t,
     channel: n,
@@ -80,7 +80,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: r,
@@ -112,7 +112,7 @@ function F(e) {
     t = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ZP.Divider, {
         className: k.divider
-      }), (0, i.jsx)(B, {
+      }), (0, i.jsx)(F, {
         user: e,
         channel: l,
         stream: n,
@@ -206,7 +206,7 @@ function H(e) {
         })]
       })
     }) : null,
-    B = (0, j.m$)({
+    F = (0, j.m$)({
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
@@ -233,12 +233,12 @@ function H(e) {
             children: [null != O ? (0, i.jsx)(y.ZP.ChannelIcon, {
               icon: O,
               "aria-label": P
-            }) : null, C, B && (0, i.jsx)(o.u, {
+            }) : null, C, F && (0, i.jsx)(o.u, {
               text: D.intl.string(D.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",
                 "aria-label": D.intl.string(D.t.VHXh8a),
-                color: s.TVs.colors.INTERACTIVE_NORMAL,
+                color: s.TVs.colors.INTERACTIVE_TEXT_DEFAULT,
                 className: k.secureFramesIcon
               })
             })]
@@ -246,7 +246,7 @@ function H(e) {
         }), (0, i.jsx)(v.TS, {
           channel: t,
           guild: r
-        }), (0, i.jsx)(F, {
+        }), (0, i.jsx)(B, {
           focusedApplication: S,
           focusedParticipant: b,
           channel: t

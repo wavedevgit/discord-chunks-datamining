@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428498 = require("./428498.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,14 +37,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -79,8 +79,8 @@ function R() {
       preferredFlow: u,
       connectionApp: p,
       debug: {
-        isSubscribedToAuthorizeRequest: A,
-        oauth2Token: C,
+        isSubscribedToAuthorizeRequest: C,
+        oauth2Token: A,
         hasConnectionEntrypointUrl: N,
         validFlows: P
       }
@@ -152,7 +152,7 @@ function R() {
           color: "text-subtle",
           children: Chunk388032.intl.string(Chunk652271.default["no+FQS"])
         }), (0, Chunk54381.jsx)(D, {
-          overallStatus: A ? 0 : R ? 3 : 1,
+          overallStatus: C ? 0 : R ? 3 : 1,
           name: Chunk388032.intl.string(Chunk652271.default.AGLx00),
           steps: [{
             status: R ? 2 : 4,
@@ -160,10 +160,10 @@ function R() {
             description: R ? null : Chunk388032.intl.string(Chunk652271.default.PFxxJa),
             learnMoreLink: R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }, {
-            status: A ? 2 : R ? 3 : 4,
+            status: C ? 2 : R ? 3 : 4,
             text: Chunk388032.intl.string(Chunk652271.default.S94dzs),
-            description: A || !R ? null : Chunk388032.intl.string(Chunk652271.default.aTULMB),
-            learnMoreLink: A || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+            description: C || !R ? null : Chunk388032.intl.string(Chunk652271.default.aTULMB),
+            learnMoreLink: C || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
           isChosen: Chunk692547 === Chunk524995.r.RPC
         }), (0, Chunk54381.jsx)(D, {
@@ -198,10 +198,10 @@ function R() {
           }),
           text: Chunk388032.intl.string(Chunk652271.default.w0pN4R),
           fullWidth: true
-        }), null != C && (0, Chunk54381.jsx)(Chunk793030.zxk, {
+        }), null != A && (0, Chunk54381.jsx)(Chunk793030.zxk, {
           variant: "secondary",
           onClick: () => {
-            Chunk384275.Z.delete(C.id);
+            Chunk384275.Z.delete(A.id);
             let t = x.get(module.id);
             null != exports && Chunk513202.Z.leaveActivity({
               location: exports.location,
@@ -235,7 +235,7 @@ function D(e) {
     children: [(0, r.jsx)(w, {
       status: t,
       text: n
-    }), i.map((e, t) => (0, r.jsx)(x, C({}, e), t)), a && (0, r.jsx)("div", {
+    }), i.map((e, t) => (0, r.jsx)(x, A({}, e), t)), a && (0, r.jsx)("div", {
       className: T.calloutBox,
       children: (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
@@ -301,23 +301,23 @@ function L(e) {
   };
   switch (t) {
     case 0:
-      return (0, r.jsx)(l.owK, P(C({}, n), {
+      return (0, r.jsx)(l.owK, P(A({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_POSITIVE
       }));
     case 1:
-      return (0, r.jsx)(l.k$p, P(C({}, n), {
+      return (0, r.jsx)(l.k$p, P(A({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_CRITICAL
       }));
     case 2:
-      return (0, r.jsx)(l.kmB, P(C({}, n), {
+      return (0, r.jsx)(l.kmB, P(A({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_POSITIVE
       }));
     case 3:
-      return (0, r.jsx)(l.aNP, P(C({}, n), {
+      return (0, r.jsx)(l.aNP, P(A({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_WARNING
       }));
     case 4:
-      return (0, r.jsx)(l.Dio, P(C({}, n), {
+      return (0, r.jsx)(l.Dio, P(A({}, n), {
         color: u.Z.colors.ICON_FEEDBACK_CRITICAL
       }))
   }

@@ -62,13 +62,13 @@ function I(e, t) {
   }), e
 }
 let T = (0, Chunk3383.F)();
-async function A(e) {
+async function C(e) {
   return (await o.tn.post({
     url: E.ANM.ORDER_SIGN(e),
     rejectWithError: true
   })).body
 }
-async function C(e) {
+async function A(e) {
   return (await o.tn.get({
     url: E.ANM.ORDER_UPDATE(e),
     rejectWithError: true
@@ -116,7 +116,7 @@ function P(e, t, n, r) {
       let e = Date.now() - u;
       if (e >= c) {
         try {
-          let e = await C(t);
+          let e = await A(t);
           _(e.status)
         } catch (r) {
           let e = r instanceof Error ? r.message : String(r);
@@ -125,7 +125,7 @@ function P(e, t, n, r) {
         return
       }
       try {
-        let e = (await C(t)).status;
+        let e = (await A(t)).status;
         if (2 === e) {
           n("Order signed successfully!\nOrder ID: ".concat(t, "\nPayment redirect completed.")), r(null), p();
           return
@@ -179,7 +179,7 @@ function R(e, t, n, r) {
 }
 
 function D() {
-  let [e, t] = Chunk473749.useState(false), [n, o] = Chunk473749.useState(false), [f, m] = Chunk473749.useState(null), [g, O] = Chunk473749.useState(null), [S, C] = Chunk473749.useState(T.defaultValue), [D, w] = Chunk473749.useState(null), x = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), L = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), j = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
+  let [e, t] = Chunk473749.useState(false), [n, o] = Chunk473749.useState(false), [f, m] = Chunk473749.useState(null), [g, O] = Chunk473749.useState(null), [S, A] = Chunk473749.useState(T.defaultValue), [D, w] = Chunk473749.useState(null), x = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), L = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), j = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
   Chunk473749.useEffect(() => {
     L || (0, Chunk355467.tZ)()
   }, [L]), Chunk473749.useEffect(() => {
@@ -226,7 +226,7 @@ function D() {
     }),
     G = (0, Chunk199849.nV)({
       value: S,
-      onChange: C
+      onChange: A
     }),
     Z = async () => {
       if (null == D || "" === D) return void Chunk622999("Please select a payment source first.");
@@ -256,7 +256,7 @@ function D() {
       if (null == Chunk3383 || "" === Chunk3383) return void Chunk622999("No order ID available. Please create an order first.");
       Chunk544891(true);
       try {
-        let e = await A(Chunk3383);
+        let e = await C(Chunk3383);
         if (null == module.errors) {
           Chunk622999("Order signed successfully! Order ID: ".concat(Chunk3383)), O(null);
           return

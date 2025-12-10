@@ -2,7 +2,7 @@
 /** chunk id: 901151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./642613.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -98,11 +98,11 @@ function I(e) {
         className: O.manageGamesLink,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: y.intl.format(y.t.oYaYOe, {})
         }), (0, r.jsx)(s.Fbu, {
           size: "xxs",
-          color: s.TVs.colors.INTERACTIVE_NORMAL,
+          color: s.TVs.colors.INTERACTIVE_TEXT_DEFAULT,
           className: O.manageGamesChevron
         })]
       })]
@@ -130,7 +130,7 @@ function T() {
   })
 }
 
-function A() {
+function C() {
   let e = Chunk695346.JG.useSetting(),
     t = module === Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : module,
     n = [{
@@ -156,7 +156,7 @@ function A() {
   })
 }
 
-function C() {
+function A() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
@@ -167,7 +167,7 @@ function C() {
         applications: exports
       }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)("div", {
         className: Chunk42101.divider
-      }), (0, Chunk54381.jsx)(A, {})]
+      }), (0, Chunk54381.jsx)(C, {})]
     }) : (0, Chunk54381.jsxs)("div", {
       className: Chunk42101.emptyContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {

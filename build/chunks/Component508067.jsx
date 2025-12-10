@@ -35,7 +35,7 @@ function v(e) {
     onClick: b,
     onScrubBack: C,
     onScrubForward: S
-  } = e, [_, y] = o.useState(null), [x, j] = o.useState(null), [P, D] = o.useState(null), [R, T] = o.useState(false), I = o.useRef(null), N = e => {
+  } = e, [_, y] = o.useState(null), [x, j] = o.useState(null), [P, D] = o.useState(null), [T, R] = o.useState(false), I = o.useRef(null), N = e => {
     I.current = e, y(e)
   };
   o.useEffect(() => {
@@ -79,13 +79,13 @@ function v(e) {
         l && null != b && b(f(e.clientX, e.currentTarget.getBoundingClientRect(), g))
       },
       onMouseEnter: e => {
-        l && (null != w.current && N(w.current.getBoundingClientRect()), T(true), L(e))
+        l && (null != w.current && N(w.current.getBoundingClientRect()), R(true), L(e))
       },
       onMouseLeave: e => {
-        l && (T(false), j(null))
+        l && (R(false), j(null))
       },
       onMouseMove: e => {
-        l && R && L(e)
+        l && T && L(e)
       },
       onKeyDown: k,
       tabIndex: l ? true : false,
@@ -97,7 +97,7 @@ function v(e) {
       },
       children: [null == E ? true : E.map(e => (0, r.jsx)("div", {
         className: i()(m.buffer, {
-          [m.bufferHovered]: R,
+          [m.bufferHovered]: T,
           [m.rounded]: O
         }),
         style: {
@@ -119,9 +119,9 @@ function v(e) {
         percent: t,
         foregroundColor: "#FFFFFF",
         backgroundColor: null != v ? v : true,
-        size: R ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
+        size: T ? a.Exd.Sizes.XSMALL : a.Exd.Sizes.XXSMALL,
         animate: n
-      }), R && null != V && (0, r.jsx)(a.Text, {
+      }), T && null != V && (0, r.jsx)(a.Text, {
         className: m.timeDisplay,
         variant: "text-xs/normal",
         style: {
@@ -129,7 +129,7 @@ function v(e) {
           color: "#FFFFFF"
         },
         children: V
-      }), R && l && null != Z && (0, r.jsx)("div", {
+      }), T && l && null != Z && (0, r.jsx)("div", {
         className: m.grabber,
         style: {
           right: "".concat(Z - 6, "px")

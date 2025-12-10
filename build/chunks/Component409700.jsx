@@ -5,7 +5,7 @@ require.d(exports, {
   Dp: () => N,
   Hh: () => P,
   ZP: () => R,
-  hq: () => A
+  hq: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -66,7 +66,7 @@ function T(e, t) {
   }), e
 }
 
-function A() {
+function C() {
   let {
     volume: e,
     onVolumeChange: t
@@ -86,7 +86,7 @@ function A() {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     sound: t,
     forceShowBetaLabel: n = false
@@ -95,7 +95,7 @@ function C(e) {
   }), a = (0, s.e7)([f.default], () => _.ZP.canUseSoundboardEverywhere(f.default.getCurrentUser())), o = (0, s.e7)([d.Z], () => d.Z.getGuildId());
   return n || a || t.guildId === E.X8 || t.guildId === o || !i ? (0, r.jsx)(u.IGR, {
     text: "BETA",
-    color: l.Z.colors.BG_BRAND.css,
+    color: l.Z.colors.BACKGROUND_BRAND.css,
     className: y.betaBadge
   }) : (0, r.jsxs)("div", {
     className: y.infoNitroContainer,
@@ -114,7 +114,7 @@ function C(e) {
         children: b.intl.string(b.t["BMw+7I"])
       }), (0, r.jsx)(u.IGR, {
         text: "BETA",
-        color: l.Z.colors.BG_BRAND.css,
+        color: l.Z.colors.BACKGROUND_BRAND.css,
         className: y.infoNitroBadge
       })]
     })]
@@ -127,7 +127,7 @@ function N(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: o()(y.infoContainer, y.infoTooltip),
-    children: [(0, r.jsx)(C, {
+    children: [(0, r.jsx)(A, {
       sound: t
     }), (0, r.jsxs)("div", {
       className: y.infoSoundContainer,
@@ -217,7 +217,7 @@ function R(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(P, {
       setTooltipShowing: i,
-      renderPopout: () => (0, r.jsx)(A, {}),
+      renderPopout: () => (0, r.jsx)(C, {}),
       tooltipText: b.intl.string(b.t["19lt24"]),
       position: "top",
       children: (0, r.jsx)(u.gj8, {

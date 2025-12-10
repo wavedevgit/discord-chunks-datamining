@@ -104,7 +104,7 @@ let f = {
           value: "text-default"
         }, {
           label: "Header Muted",
-          value: "header-muted"
+          value: "text-muted"
         }, {
           label: "Feedback Positive",
           value: "text-feedback-positive"

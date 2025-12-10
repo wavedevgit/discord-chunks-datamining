@@ -52,12 +52,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = Chunk981631.QZA.CLOSED,
+let A = Chunk981631.QZA.CLOSED,
   N = {},
   P = {},
   R = false,
@@ -82,7 +82,7 @@ function L(e) {
 function j(e) {
   let t = O.Z.getChannel(e.channelId);
   if (null == t) return k();
-  C = v.QZA.OPEN, o = a = t, w = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
+  A = v.QZA.OPEN, o = a = t, w = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
   let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
   return N = {}, M({
     type: "CHANNEL_SETTINGS_SET_SECTION",
@@ -105,20 +105,20 @@ function M(e) {
 }
 
 function k() {
-  D = false, C = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
+  D = false, A = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
 }
 
 function U() {
-  C = Chunk981631.QZA.SUBMITTING, N = {}
+  A = Chunk981631.QZA.SUBMITTING, N = {}
 }
 
 function G() {
-  a = o, C = Chunk981631.QZA.OPEN
+  a = o, A = Chunk981631.QZA.OPEN
 }
 
 function Z(e) {
   var t;
-  C = v.QZA.OPEN, N = Object.keys(null != (t = e.errors) ? t : {}).reduce((t, n) => {
+  A = v.QZA.OPEN, N = Object.keys(null != (t = e.errors) ? t : {}).reduce((t, n) => {
     let r = e.errors[n];
     return (0, u.isArray)(r) ? t[n] = r.join("\n") : t[n] = r, t
   }, {})
@@ -157,11 +157,11 @@ function F(e) {
     themeColor: T
   } = e;
   if (null == o) returnfalse;
-  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", A(I({}, o.threadMetadata), {
+  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != f && (o = o.set("threadMetadata", A(I({}, o.threadMetadata), {
+  }))), null != f && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     locked: f
-  }))), null != p && (o = o.set("threadMetadata", A(I({}, o.threadMetadata), {
+  }))), null != p && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     invitable: p
   }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != m && (o = o.set("template", m)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== h && (o = o.set("defaultReactionEmoji", h)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== S && (o = o.set("iconEmoji", S)), null != T && (o = o.set("themeColor", T)), B()
 }
@@ -193,7 +193,7 @@ function Y(e) {
 }
 
 function W(e) {
-  P = A(I({}, P), {
+  P = C(I({}, P), {
     [e.invite.code]: V(e.invite)
   })
 }
@@ -226,7 +226,7 @@ function Q(e) {
     }
   } = e;
   if (null == o || o.id !== t) returnfalse;
-  C = v.QZA.CLOSED
+  A = v.QZA.CLOSED
 }
 
 function X(e) {
@@ -261,14 +261,14 @@ class J extends(c = Chunk442837.ZP.Store) {
     return o
   }
   getFormState() {
-    return C
+    return A
   }
   getCategory() {
     return s
   }
   getProps() {
     return {
-      submitting: C === Chunk981631.QZA.SUBMITTING,
+      submitting: A === Chunk981631.QZA.SUBMITTING,
       errors: N,
       channel: o,
       section: r,

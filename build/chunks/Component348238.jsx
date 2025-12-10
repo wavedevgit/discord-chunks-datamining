@@ -44,7 +44,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk804063 = require("./804063.js"),
   Chunk981631 = require("./981631.js");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,7 +60,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -100,7 +100,7 @@ function w(e, t, n) {
         decoration: "never"
       })),
       o = "<@".concat(e, ">");
-    y.S.dispatchToLastSubscribed(A.CkL.INSERT_TEXT, {
+    y.S.dispatchToLastSubscribed(C.CkL.INSERT_TEXT, {
       plainText: a,
       rawText: o
     }), c.Z.startTyping(t)
@@ -151,7 +151,7 @@ function B(e, t, a, l) {
   } = t, {
     id: d,
     flags: f
-  } = e, p = (0, o.yE)(f, A.iLy.EPHEMERAL), _ = (0, u.bp)();
+  } = e, p = (0, o.yE)(f, C.iLy.EPHEMERAL), _ = (0, u.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
     if (!O.isPlatformEmbedded) {
@@ -163,7 +163,7 @@ function B(e, t, a, l) {
     let i = m.Z.getChannel(c),
       o = g.Z.getMessage(c, d),
       u = h.Z.isEditing(c, d);
-    null == i || null == o || u || (b.default.track(A.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    null == i || null == o || u || (b.default.track(C.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: d,
       channel: c,
       location: "right_click"
@@ -236,10 +236,10 @@ function W(e) {
   } = e, o = n.author.id, s = "".concat(t, ":").concat(o), l = i.useRef(r), c = Q(n, a), [u, d] = i.useState(r);
   l.current = u || l.current;
   let f = i.useCallback(e => {
-      (0, _.T6)(), u || (y.S.dispatchKeyed(A.LPv.ANIMATE_CHAT_AVATAR, s, true), c(e), d(true))
+      (0, _.T6)(), u || (y.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, s, true), c(e), d(true))
     }, [u, s, c]),
     p = i.useCallback(() => {
-      y.S.dispatchKeyed(A.LPv.ANIMATE_CHAT_AVATAR, s, false), d(false)
+      y.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, s, false), d(false)
     }, [s]);
   return {
     hasHovered: l.current,

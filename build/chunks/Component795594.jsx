@@ -250,7 +250,7 @@ let ef = e => {
     } = e, b = a.id, v = i.useMemo(() => x.ZP.createFromServer(a), [a]), S = (0, p.yE)(v.flags, ee.udG.EMBEDDED), I = (0, m.e7)([K.Z], () => {
       var e, t, n, r;
       return null == (r = K.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
-    }, [b]), N = A.w.useExperiment({
+    }, [b]), N = C.w.useExperiment({
       location: "oauth2_authorize"
     }), L = a.bot, M = (0, m.e7)([j.Z], () => j.Z.getDMFromUserId(null == L ? true : L.id)), {
       appDMChannelMuteConfig: k,
@@ -278,7 +278,7 @@ let ef = e => {
               children: e
             })]
           }, t)), null == d ? true : d.map((t, n) => {
-            let i = (0, C.PM)(t);
+            let i = (0, A.PM)(t);
             return null != i ? (0, r.jsxs)("li", {
               className: er.permission,
               children: [(0, r.jsx)(ef, {
@@ -306,10 +306,10 @@ let ef = e => {
                 children: en.intl.string(en.t.xrmhRX)
               }), Q ? (0, r.jsx)(E.CJ0, {
                 size: "md",
-                color: E.TVs.colors.INTERACTIVE_NORMAL
+                color: E.TVs.colors.INTERACTIVE_TEXT_DEFAULT
               }) : (0, r.jsx)(E.Fbu, {
                 size: "md",
-                color: E.TVs.colors.INTERACTIVE_NORMAL
+                color: E.TVs.colors.INTERACTIVE_TEXT_DEFAULT
               })]
             }), !Q && (0, r.jsx)(E.Text, {
               variant: "text-sm/normal",
@@ -357,10 +357,10 @@ let ef = e => {
               children: en.intl.string(en.t.fcYgiY)
             }), V ? (0, r.jsx)(E.CJ0, {
               size: "md",
-              color: E.TVs.colors.INTERACTIVE_NORMAL
+              color: E.TVs.colors.INTERACTIVE_TEXT_DEFAULT
             }) : (0, r.jsx)(E.Fbu, {
               size: "md",
-              color: E.TVs.colors.INTERACTIVE_NORMAL
+              color: E.TVs.colors.INTERACTIVE_TEXT_DEFAULT
             })]
           })
         }

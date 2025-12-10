@@ -5,7 +5,7 @@ require.d(exports, {
   $1: () => b,
   YT: () => I,
   pn: () => T,
-  u2: () => A
+  u2: () => C
 }), require("./415506.js");
 var Chunk570140 = require("./570140.js"),
   Chunk923928 = require("./923928.js"),
@@ -125,6 +125,6 @@ function T(e) {
   })
 }
 
-function A() {
+function C() {
   return v().then(e => null != e.findSteamProcess ? e.findSteamProcess() : null).catch(() => null)
 }

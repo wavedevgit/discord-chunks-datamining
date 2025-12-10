@@ -379,7 +379,7 @@ function eT(e) {
   a = t
 }
 
-function eA(e) {
+function eC(e) {
   let {
     accountId: t,
     devices: n
@@ -387,7 +387,7 @@ function eA(e) {
   eo[t] = n, $.info("Devices updated for ".concat(t, ":"), n)
 }
 
-function eC(e) {
+function eA(e) {
   let {
     accountId: t,
     deviceId: n
@@ -703,8 +703,8 @@ let eZ = new eG(Chunk570140.Z, {
     ACTIVITY_PLAY: eN,
     ACTIVITY_SYNC: eP,
     ACTIVITY_SYNC_STOP: ey,
-    SPOTIFY_SET_DEVICES: eA,
-    SPOTIFY_SET_ACTIVE_DEVICE: eC,
+    SPOTIFY_SET_DEVICES: eC,
+    SPOTIFY_SET_ACTIVE_DEVICE: eA,
     SPEAKING: ex,
     VOICE_STATE_UPDATES: eL,
     MEDIA_ENGINE_SET_GO_LIVE_SOURCE: eM

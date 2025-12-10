@@ -29,13 +29,13 @@ function _(e) {
     value: b,
     labelType: y = "primary",
     usageVariant: O = "single"
-  } = e, v = (0, i.useRef)(null), S = (0, i.useRef)(null), I = (0, i.useRef)(null), [T, A] = (0, i.useState)(true), C = (0, i.useRef)(false), N = null != h && "" !== h, P = null != n && "" !== n, R = null != E ? E : null;
+  } = e, v = (0, i.useRef)(null), S = (0, i.useRef)(null), I = (0, i.useRef)(null), [T, C] = (0, i.useState)(true), A = (0, i.useRef)(false), N = null != h && "" !== h, P = null != n && "" !== n, R = null != E ? E : null;
   (0, i.useEffect)(() => {
-    if (!C.current) {
-      C.current = true;
+    if (!A.current) {
+      A.current = true;
       return
     }
-    A(t ? "animateIn" : "animateOut")
+    C(t ? "animateIn" : "animateOut")
   }, [t]);
   let D = e => {
       null != a && a(e)

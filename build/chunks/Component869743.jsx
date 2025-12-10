@@ -134,7 +134,7 @@ let m = e => {
       }, e), {
         children: (0, r.jsx)(a.xhG, {
           size: "xs",
-          color: a.TVs.colors.INTERACTIVE_NORMAL
+          color: a.TVs.colors.INTERACTIVE_TEXT_DEFAULT
         })
       }))
     })

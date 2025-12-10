@@ -95,7 +95,7 @@ var eu = function(e) {
   }({});
 let ef = (e, t) => ec({
     serverProfiles: {
-      thumbnail: A,
+      thumbnail: C,
       assetUrl: e ? en.ZP : er.ZP
     },
     customThemes: {
@@ -107,7 +107,7 @@ let ef = (e, t) => ec({
       assetUrl: e ? N.Z : R.Z
     },
     recurring3PPromotions: {
-      thumbnail: C.Z,
+      thumbnail: A.Z,
       assetUrl: " "
     }
   }, t ? {
@@ -178,7 +178,7 @@ let ef = (e, t) => ec({
           analyticsLocations: module
         })
       }
-    }, A = (0, Chunk526167.rO)(), C = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), N = ef(Chunk872532, (0, Chunk283066.Z)({
+    }, C = (0, Chunk526167.rO)(), A = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), N = ef(Chunk872532, (0, Chunk283066.Z)({
       location: "useBentoBoxes"
     })), P = {
       name: "serverProfiles",

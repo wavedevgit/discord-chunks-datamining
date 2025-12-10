@@ -2,7 +2,7 @@
 /** chunk id: 871604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -64,31 +64,31 @@ function T(e, t) {
   return i
 }
 
-function A(e) {
+function C(e) {
   var {
     user: t,
     closePopout: n
   } = e, v = I(e, ["user", "closePopout"]);
   let T = i.useRef(null),
-    A = (0, a.e7)([g.Z], () => {
+    C = (0, a.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.getUserProfile(t.id)) ? true : e.application
     }),
-    C = (0, a.e7)([f.Z, d.Z], () => d.Z.getChannel(f.Z.getChannelId())),
-    N = (0, s.Z)(C),
+    A = (0, a.e7)([f.Z, d.Z], () => d.Z.getChannel(f.Z.getChannelId())),
+    N = (0, s.Z)(A),
     P = t.id,
     R = i.useCallback(() => {
-      null != A && (N ? ((0, l.X)(A.id), (0, o.Mr3)((0, E.z)(P, null == C ? true : C.guild_id)), null == n || n(), p.default.track(y.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
-        application_id: A.id
+      null != C && (N ? ((0, l.X)(C.id), (0, o.Mr3)((0, E.z)(P, null == A ? true : A.guild_id)), null == n || n(), p.default.track(y.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+        application_id: C.id
       })) : (0, h.L)(S({
-        applicationId: A.id
-      }, A)))
-    }, [A, N, P, null == C ? true : C.guild_id, n]),
+        applicationId: C.id
+      }, C)))
+    }, [C, N, P, null == A ? true : A.guild_id, n]),
     D = N ? O.intl.string(O.t["Cia+A8"]) : O.intl.string(O.t.NgXl3C);
-  if (null == A || !(0, u.Eb)(A)) return null;
+  if (null == C || !(0, u.Eb)(C)) return null;
   let {
     customInstallUrl: w
-  } = A, x = null == w || m.Z.isDiscordUrl(w) ? o.qJs : o.Gr1, L = N ? true : x;
+  } = C, x = null == w || m.Z.isDiscordUrl(w) ? o.qJs : o.Gr1, L = N ? true : x;
   return _.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: T,
     renderPopout: e => {
@@ -104,7 +104,7 @@ function A(e) {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
             label: O.intl.string(O.t.XWDihq),
-            action: () => (0, _.JG)((0, c.J)(A))
+            action: () => (0, _.JG)((0, c.J)(C))
           })
         })
       })

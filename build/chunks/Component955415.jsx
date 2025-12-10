@@ -171,7 +171,7 @@ let y = e => {
       })]
     })
   },
-  A = e => {
+  C = e => {
     let {
       children: t,
       className: n,
@@ -183,7 +183,7 @@ let y = e => {
       children: t
     })
   },
-  C = e => {
+  A = e => {
     let {
       guild: t
     } = e, [n, a] = i.useState(false), s = h.ZP.getGuildSplashURL({
@@ -229,5 +229,5 @@ let y = e => {
       })
     })
   };
-A.Header = y, A.Body = O, A.Icon = v, A.Info = S, A.Data = I, A.Channel = T, A.GuildSplash = C, A.GuildName = N, A.GuildTemplateName = P, y.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", S.displayName = "InviteButton.Info", I.displayName = "InviteButton.Data", T.displayName = "InviteButton.Channel", C.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", P.displayName = "InviteButton.GuildTemplateName";
-let R = A
+C.Header = y, C.Body = O, C.Icon = v, C.Info = S, C.Data = I, C.Channel = T, C.GuildSplash = A, C.GuildName = N, C.GuildTemplateName = P, y.displayName = "InviteButton.Header", O.displayName = "InviteButton.Body", v.displayName = "InviteButton.Icon", S.displayName = "InviteButton.Info", I.displayName = "InviteButton.Data", T.displayName = "InviteButton.Channel", A.displayName = "InviteButton.GuildSplash", N.displayName = "InviteButton.GuildName", P.displayName = "InviteButton.GuildTemplateName";
+let R = C

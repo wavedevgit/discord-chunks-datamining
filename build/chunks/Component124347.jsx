@@ -2,8 +2,8 @@
 /** chunk id: 124347, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FH: () => C,
-  YG: () => A,
+  FH: () => A,
+  YG: () => C,
   ZP: () => D,
   uo: () => T
 }), require("./35282.js"), require("./388685.js");
@@ -64,8 +64,8 @@ function I(e, t) {
   }), e
 }
 let T = /\.gif($|\?|#)/i,
-  A = /\.webp($|\?|#)/i,
-  C = /\.avif($|\?|#)/i,
+  C = /\.webp($|\?|#)/i,
+  A = /\.avif($|\?|#)/i,
   N = /\.png($|\?|#)/i,
   P = 400,
   R = 300;
@@ -77,7 +77,7 @@ class D extends(r = Chunk473749.Component) {
       animated: r,
       srcIsAnimated: i
     } = e;
-    return r || T.test(null != n && "" !== n ? n : t) || null != i && i && (A.test(null != n && "" !== n ? n : t) || C.test(null != n && "" !== n ? n : t))
+    return r || T.test(null != n && "" !== n ? n : t) || null != i && i && (C.test(null != n && "" !== n ? n : t) || A.test(null != n && "" !== n ? n : t))
   }
   static isSrcPNG(e) {
     let {
@@ -89,7 +89,7 @@ class D extends(r = Chunk473749.Component) {
     let {
       src: t
     } = e;
-    return C.test(t)
+    return A.test(t)
   }
   static getFormatQuality(e) {
     let {
@@ -324,8 +324,8 @@ class D extends(r = Chunk473749.Component) {
       onClick: S,
       renderAccessory: I,
       tabIndex: T,
-      limitResponsiveWidth: A,
-      useFullWidth: C,
+      limitResponsiveWidth: C,
+      useFullWidth: A,
       placeholder: N,
       placeholderVersion: P,
       dataSafeSrc: R,
@@ -344,8 +344,8 @@ class D extends(r = Chunk473749.Component) {
       minWidth: Chunk768581,
       minHeight: Chunk956664,
       mediaLayoutType: this.getType(),
-      limitResponsiveWidth: A,
-      useFullWidth: C,
+      limitResponsiveWidth: C,
+      useFullWidth: A,
       tabIndex: T,
       width: U,
       height: G,

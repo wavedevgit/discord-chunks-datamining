@@ -106,8 +106,8 @@ true === b && (b = E), b(function(e, t) {
     S = e.strict,
     I = e.style,
     T = e.to,
-    A = e.innerRef,
-    C = (0, l.Z)(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
+    C = e.innerRef,
+    A = (0, l.Z)(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
   return a.createElement(r.s6.Consumer, null, function(e) {
     e || (0, c.Z)(false);
     var n = O || e.location,
@@ -128,7 +128,7 @@ true === b && (b = E), b(function(e, t) {
         className: D,
         style: w,
         to: o
-      }, C);
-    return E !== b ? x.ref = t || A : x.innerRef = A, a.createElement(g, x)
+      }, A);
+    return E !== b ? x.ref = t || C : x.innerRef = C, a.createElement(g, x)
   })
 })

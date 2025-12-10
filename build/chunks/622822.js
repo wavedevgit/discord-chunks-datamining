@@ -85,17 +85,17 @@ function T(e) {
     agreement: e ? y.intl.string(y.t.PBG51l) : y.intl.string(y.t["5B+npG"])
   }
 }
-let A = new Date("06/16/2020"),
-  C = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
+let C = new Date("06/16/2020"),
+  A = [Chunk981631.V_K.AGE_RESTRICTED, Chunk981631.V_K.EXPLICIT],
   N = new Set([Chunk723359.L0.NSFW_SERVER, Chunk723359.L0.NSFW_SERVER_INVITE, Chunk723359.L0.NSFW_SERVER_INVITE_EMBED]);
 
 function P() {
   let e = Chunk594174.default.getCurrentUser();
-  return null != module && Chunk709054.default.extractTimestamp(module.id) > A.getTime() && null == module.nsfwAllowed
+  return null != module && Chunk709054.default.extractTimestamp(module.id) > C.getTime() && null == module.nsfwAllowed
 }
 
 function R(e) {
-  return C.includes(e.nsfwLevel)
+  return A.includes(e.nsfwLevel)
 }
 
 function D(e) {

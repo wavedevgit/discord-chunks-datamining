@@ -56,7 +56,7 @@ function N(e) {
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
     className: I.icon,
-    color: O || P ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
+    color: O || P ? d.TVs.colors.ICON_STRONG : d.TVs.colors.ICON_MUTED,
     size: A
   }), {
     badge: L,

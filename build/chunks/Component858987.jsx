@@ -102,8 +102,8 @@ function S(e) {
     planGroup: S,
     isPrepaid: I,
     isTrial: T,
-    makePurchase: A,
-    needsPaymentSource: C,
+    makePurchase: C,
+    needsPaymentSource: A,
     inReverseTrial: N,
     onNext: P,
     onPaymentSourceAdd: R
@@ -134,7 +134,7 @@ function S(e) {
     text: G,
     disabled: true
   });
-  if (C && U) return (0, r.jsx)(s.aML, {
+  if (A && U) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: h.intl.string(h.t.L7jbQV),
     children: e => (0, r.jsx)(s.Button, y(E({
@@ -146,7 +146,7 @@ function S(e) {
       onClick: R
     }))
   });
-  if (C && !U) return (0, r.jsx)(s.aML, {
+  if (A && !U) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: h.intl.string(h.t.L7jbQV),
     children: e => (0, r.jsx)(s.Button, y(E({
@@ -174,7 +174,7 @@ function S(e) {
     variant: "expressive",
     "data-testid": x ? "purchase" : "submitButton",
     text: G,
-    onClick: x ? A : () => v(n, f),
+    onClick: x ? C : () => v(n, f),
     loading: m,
     iconPosition: "start",
     icon: () => (0, r.jsx)(s.SrA, {
@@ -205,7 +205,7 @@ function S(e) {
     variant: "active",
     text: G,
     "data-testid": "purchase",
-    onClick: A,
+    onClick: C,
     loading: m
   })
 }

@@ -17,9 +17,9 @@ var Chunk48657 = require("./48657.js"),
       f = 7 === e,
       p = 5 === e || d;
     return function(_, m, h, g) {
-      for (var E, b, y = o(_), O = a(y), v = s(O), S = r(m, h), I = 0, T = g || l, A = t ? T(_, v) : n || f ? T(_, 0) : true; v > I; I++)
+      for (var E, b, y = o(_), O = a(y), v = s(O), S = r(m, h), I = 0, T = g || l, C = t ? T(_, v) : n || f ? T(_, 0) : true; v > I; I++)
         if ((p || I in O) && (b = S(E = O[I], I, y), e))
-          if (t) A[I] = b;
+          if (t) C[I] = b;
           else if (b) switch (e) {
         case 3:
           returntrue;
@@ -28,14 +28,14 @@ var Chunk48657 = require("./48657.js"),
         case 6:
           return I;
         case 2:
-          c(A, E)
+          c(C, E)
       } else switch (e) {
         case 4:
           returnfalse;
         case 7:
-          c(A, E)
+          c(C, E)
       }
-      return d ? false : i || u ? u : A
+      return d ? false : i || u ? u : C
     }
   };
 module.exports = {

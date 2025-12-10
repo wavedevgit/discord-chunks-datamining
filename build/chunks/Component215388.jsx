@@ -66,7 +66,7 @@ function C(e) {
     parentModalKey: P,
     label: F,
     errorMessage: y
-  } = e, I = (0, o.Gc0)(), [N, K] = r.useState(() => (0, s.JM)(x)), T = r.useRef(true === u), Z = null != A ? A : null == I ? true : I.titleId, W = null != (t = null == I ? true : I.errorId) ? t : v;
+  } = e, N = (0, o.Gc0)(), [I, K] = r.useState(() => (0, s.JM)(x)), T = r.useRef(true === u), Z = null != A ? A : null == N ? true : N.titleId, W = null != (t = null == N ? true : N.errorId) ? t : v;
 
   function X(e, t, A) {
     m(t), K(A)
@@ -113,7 +113,7 @@ function C(e) {
         required: V,
         channel: h,
         textValue: x,
-        richValue: N,
+        richValue: I,
         type: Q,
         onBlur: () => {
           T.current = false
@@ -127,7 +127,7 @@ function C(e) {
         parentModalKey: P,
         emojiPickerCloseOnModalOuterClick: true,
         children: [true === U && (0, n.jsx)(b, {
-          hasError: null != I.error || null != g && x.length > g,
+          hasError: null != N.error || null != g && x.length > g,
           text: x,
           maxLength: g
         }), null != g && (0, n.jsx)(o.nn4, {

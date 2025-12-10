@@ -68,8 +68,8 @@ function O(e) {
     onClose: O
   } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), S = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), I = (0, a.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), T = (0, l.Z)({
     guild: S
-  }), A = (0, l.Z)({}), {
-    trackUserProfileAction: C
+  }), C = (0, l.Z)({}), {
+    trackUserProfileAction: A
   } = (0, d.KZ)(), N = i.useRef(null);
   return v ? null == S ? (0, r.jsx)(_.O1, {
     action: "EDIT_PROFILE",
@@ -80,7 +80,7 @@ function O(e) {
     variant: "primary",
     onClick: () => {
       if (I) return void f.Z.notifyPendingWidgets();
-      null == O || O(), A(), (0, s.i)(y)
+      null == O || O(), C(), (0, s.i)(y)
     }
   }) : (0, r.jsx)(o.yRy, {
     targetElementRef: N,
@@ -101,7 +101,7 @@ function O(e) {
           label: m.intl.string(m.t["PKQB/H"]),
           subtext: m.intl.string(m.t.VYHWKJ),
           action: () => {
-            C({
+            A({
               action: "EDIT_GUILD_PROFILE"
             }), T(), (0, s.i)(y)
           }
@@ -110,9 +110,9 @@ function O(e) {
           label: m.intl.string(m.t.HmFaFB),
           subtext: m.intl.string(m.t["+EERMk"]),
           action: () => {
-            C({
+            A({
               action: "EDIT_PROFILE"
-            }), A(), (0, s.i)(y)
+            }), C(), (0, s.i)(y)
           }
         })]
       })

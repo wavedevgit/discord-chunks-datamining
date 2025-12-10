@@ -2,7 +2,7 @@
 /** chunk id: 674701, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,12 +49,12 @@ function A(e) {
   return e
 }
 
-function C(e) {
+function A(e) {
   let {
     giftIntentType: t,
     recipientUser: a,
     onMouseEnter: T,
-    onMouseLeave: C,
+    onMouseLeave: A,
     popoutPosition: N,
     analyticsPage: P,
     analyticsSection: R,
@@ -107,7 +107,7 @@ function C(e) {
       [I.outerGlow]: D
     }),
     onMouseEnter: T,
-    onMouseLeave: C,
+    onMouseLeave: A,
     children: (0, r.jsxs)("div", {
       className: o()(I.innerContent, {
         [I.innerGlow]: D
@@ -159,7 +159,7 @@ function C(e) {
               let {
                 default: e
               } = await n.e("5890").then(n.bind(n, 171793));
-              return t => (0, r.jsx)(e, A({}, t))
+              return t => (0, r.jsx)(e, C({}, t))
             })
           }
         }), (0, r.jsx)(u.Button, {

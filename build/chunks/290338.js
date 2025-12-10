@@ -30,10 +30,10 @@ let v = (0, Chunk473749.createContext)(null),
     var n, T;
     [e, t] = (0, a.pE)(e, t, v);
     let {
-      validationBehavior: A
-    } = (0, a.jn)(c.q) || {}, C = null != (T = null != (n = e.validationBehavior) ? n : A) ? T : "native", N = (0, g.N)({
-      ...e,
       validationBehavior: C
+    } = (0, a.jn)(c.q) || {}, A = null != (T = null != (n = e.validationBehavior) ? n : C) ? T : "native", N = (0, g.N)({
+      ...e,
+      validationBehavior: A
     }), P = (0, O.useRef)(null), [R, D] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), {
       groupProps: w,
       labelProps: x,
@@ -47,7 +47,7 @@ let v = (0, Chunk473749.createContext)(null),
     } = (0, m.k)({
       ...(0, a.vl)(e),
       label: D,
-      validationBehavior: C
+      validationBehavior: A
     }, N, P), [B, F] = (0, O.useState)(null), V = (0, O.useCallback)(() => {
       P.current && F(P.current.offsetWidth + "px")
     }, []);

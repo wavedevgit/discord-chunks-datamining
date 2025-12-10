@@ -26,7 +26,7 @@ function s(e) {
       children: [(0, r.jsx)(l.Text, {
         className: a.metricCardLabel,
         variant: "text-xs/medium",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         "aria-hidden": true,
         children: t
       }), null != c && (0, r.jsx)(i.u, {

@@ -229,11 +229,11 @@ async function eE(e) {
       if (q.size > 0) {
         ep = "reconcile.getOverlayURL";
         let t = await eI();
-        ep = "reconcile.createHostProcess", e.createHostProcess(t, eC, eA)
+        ep = "reconcile.createHostProcess", e.createHostProcess(t, eA, eC)
       } else ep = "reconcile.destroyHostProcess", e.destroyHostProcess(), eS((0, U.getPID)());
     else if (X) {
       let t = await eI();
-      e.createHostProcess(t, eC, eA)
+      e.createHostProcess(t, eA, eC)
     } else e.destroyHostProcess(), eS((0, U.getPID)())
   } catch (t) {
     el.error("reconcileHostProcess", t), (0, O.D1)(t), eS((0, U.getPID)());
@@ -311,7 +311,7 @@ async function eO(e) {
         let r = new Date().getTime();
         ed(n.pid, {
           mounting_started_at: r,
-          fullscreen_type: await (0, A.hj)(n.pid, 0)
+          fullscreen_type: await (0, C.hj)(n.pid, 0)
         }), q.has(n.pid) || await eb(n.pid), K[n.pid] = {
           method: n.overlayMethod,
           deconstructor: async () => {
@@ -336,7 +336,7 @@ async function eO(e) {
 let ev = em("updateIntendedOverlayPIDs", e => (el.info("updateIntendedOverlayPIDs", e), eO(e))),
   eS = em("clearPID", e => {
     if (null == e) return (0, U.setPID)(U.UNSET_PID);
-    C.Z.isOverlayV3EnabledForPID(e) || (0, U.setPID)(U.UNSET_PID)
+    A.Z.isOverlayV3EnabledForPID(e) || (0, U.setPID)(U.UNSET_PID)
   });
 
 function eI() {
@@ -357,11 +357,11 @@ let eT = em("setOverlayEnabled", async e => {
   X || await eO(true), q.size > 0 && await eE(t)
 });
 
-function eA(e) {
+function eC(e) {
   f.Z.setFocusedPID(0 === e ? null : e, null)
 }
 
-function eC(e, t, n) {
+function eA(e, t, n) {
   var r;
   let i = null == (r = b.ZP.getGameForPID(e)) ? true : r.name,
     a = w.Z.getGameByName(i),
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "cbbb9bc82d090276f167e803fb5e4f5717f8e778"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "9c28d664576b006b967cfe9c953327ae3caa4f68"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -586,7 +586,7 @@ function eq(e) {
   el.verbose("Updating OverlayMethod", {
     pid: e.pid,
     overlayMethod: e.overlayMethod,
-    overlayLabel: (0, A.P_)(e.overlayMethod)
+    overlayLabel: (0, C.P_)(e.overlayMethod)
   }), e.overlayMethod === S.gl.Hook ? ev({
     added: [e.pid],
     removed: []
@@ -646,10 +646,10 @@ class e$ extends(i = Chunk442837.ZP.Store) {
     return Chunk371651.default.isOverlayOOPEnabledForPid((0, Chunk145597.getPID)())
   }
   isReady(e) {
-    return C.Z.isOverlayV3EnabledForPID(e) ? C.Z.isReady(e) : "READY" === q.get(e)
+    return A.Z.isOverlayV3EnabledForPID(e) ? A.Z.isReady(e) : "READY" === q.get(e)
   }
   isCrashed(e) {
-    return !C.Z.isOverlayV3EnabledForPID(e) && "CRASHED" === q.get(e)
+    return !A.Z.isOverlayV3EnabledForPID(e) && "CRASHED" === q.get(e)
   }
   getOverlayPIDStatuses() {
     return q

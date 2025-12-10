@@ -15,7 +15,7 @@ require.d(exports, {
   kQ: () => V,
   mR: () => b,
   n$: () => L,
-  np: () => C,
+  np: () => A,
   ou: () => W,
   qH: () => w,
   tk: () => F,
@@ -106,17 +106,17 @@ function T(e) {
   return e[Math.floor(Math.random() * e.length)]
 }
 
-function A(e, t) {
+function C(e, t) {
   return [...e].sort(() => .5 - Math.random()).slice(0, t)
 }
 
-function C(e) {
+function A(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : new Set,
     n = p.J6.filter(e => !t.has(e)),
     r = {
       applicationId: T(n.length > 0 ? n : p.J6)
     };
-  return v(e) && (r.comment = Math.random() > .5 ? T(f.x) : true), S(e) && (r.tags = Math.random() > .3 ? A(f.T, f.T.length) : true), r
+  return v(e) && (r.comment = Math.random() > .5 ? T(f.x) : true), S(e) && (r.tags = Math.random() > .3 ? C(f.T, f.T.length) : true), r
 }
 
 function N() {

@@ -48,8 +48,8 @@ function I(e) {
   return e
 }
 let T = 2e3,
-  A = false;
-class C extends Chunk473749.PureComponent {
+  C = false;
+class A extends Chunk473749.PureComponent {
   componentDidMount() {
     this._initTimeout.start(1e3, this.setupVoiceActivity)
   }
@@ -184,7 +184,7 @@ class C extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), S(this, "_initTimeout", new d.V7), S(this, "_silenceTimeout", new d.V7), S(this, "_messageTimeout", new d.V7), S(this, "_micTestStartTime", true), S(this, "state", {
-      volume: A,
+      volume: C,
       isMicTesting: false,
       isDetectingInput: true,
       didDeafenUser: false
@@ -194,13 +194,13 @@ class C extends Chunk473749.PureComponent {
       let {
         isMicTesting: t
       } = this.state;
-      if (t && e <= A) {
+      if (t && e <= C) {
         this._silenceTimeout.isStarted() || this._silenceTimeout.start(T, () => {
           this.setState({
             isDetectingInput: false
           })
         }), this.setState({
-          volume: A
+          volume: C
         });
         return
       }
@@ -262,7 +262,7 @@ function N(e) {
     ref: h,
     width: b
   } = (0, m.ZP)();
-  return (0, r.jsx)(C, I({
+  return (0, r.jsx)(A, I({
     isVoiceConnected: _,
     inputVolume: u,
     outputVolume: d,

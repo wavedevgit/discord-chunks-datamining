@@ -177,7 +177,7 @@ function j(e) {
       selectedCollection: e,
       selectedStory: null
     })
-  }, A = e => {
+  }, C = e => {
     w.setState({
       selectedStory: e
     })
@@ -191,9 +191,9 @@ function j(e) {
     }))
   };
   return (0, r.jsxs)("div", {
-    className: C.root,
+    className: A.root,
     children: [(0, r.jsx)("div", {
-      className: C.group,
+      className: A.group,
       children: h.map(e => {
         var t;
         return (0, r.jsx)(l.a, {
@@ -209,20 +209,20 @@ function j(e) {
         }, e.id)
       })
     }), (0, r.jsxs)("div", {
-      className: C.content,
+      className: A.content,
       children: [(0, r.jsxs)(g.ZP, {
-        className: C.header,
+        className: A.header,
         children: [null != N ? (0, r.jsx)(g.ZP.Title, {
           children: N
         }) : null, null != P ? (0, r.jsxs)(r.Fragment, {
           children: [null != N ? (0, r.jsx)(g.ZP.Caret, {
-            className: C.headerDivider
+            className: A.headerDivider
           }) : null, (0, r.jsx)(g.ZP.Title, {
             children: P
           })]
         }) : null, (null == y ? true : y.docs) != null ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(g.ZP.Divider, {
-            className: C.headerDivider
+            className: A.headerDivider
           }), (0, r.jsx)(g.ZP.Title, {
             children: (0, r.jsx)(s.Anchor, {
               href: y.docs,
@@ -236,21 +236,21 @@ function j(e) {
           icon: a.TIy,
           onClick: R
         }) : null, (0, r.jsx)("div", {
-          className: C.headerRight,
+          className: A.headerRight,
           children: (0, r.jsx)(L, {})
         })]
       }), (0, r.jsxs)("div", {
-        className: C.page,
+        className: A.page,
         children: [(0, r.jsx)(o.zJl, {
           fade: true,
-          className: C.sidebar,
+          className: A.sidebar,
           children: null != E ? (0, r.jsx)(v.N, {
             groups: E.groups,
             selectedStory: u,
-            onStorySelect: A
+            onStorySelect: C
           }) : null
         }), (0, r.jsx)("div", {
-          className: C.content,
+          className: A.content,
           children: null != y && null != b ? (0, r.jsx)(S.b, {
             story: y,
             groupTitle: b.title,

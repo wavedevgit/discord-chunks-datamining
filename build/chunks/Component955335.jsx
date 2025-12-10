@@ -44,7 +44,7 @@ function c(e, n) {
 }
 let d = {
   size: "md",
-  color: Chunk481060.TVs.colors.INTERACTIVE_NORMAL
+  color: Chunk481060.TVs.colors.INTERACTIVE_TEXT_DEFAULT
 };
 
 function p(e) {

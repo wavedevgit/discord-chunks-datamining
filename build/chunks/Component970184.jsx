@@ -61,12 +61,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = e => {
+let A = e => {
     switch (e.type) {
       case s.re.BUTTON:
         return e.style !== s.ZJ.LINK;
@@ -85,7 +85,7 @@ let C = e => {
   N = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       r = b.gH.NORMAL;
-    return null != e && e.state !== d.F.FAILED && (e.data.interactionType === s.B8.MESSAGE_COMPONENT && e.data.componentId === t.id ? r = b.gH.LOADING : C(t) && (r = b.gH.DISABLED)), n && C(t) && (r = b.gH.DISABLED), r
+    return null != e && e.state !== d.F.FAILED && (e.data.interactionType === s.B8.MESSAGE_COMPONENT && e.data.componentId === t.id ? r = b.gH.LOADING : A(t) && (r = b.gH.DISABLED)), n && A(t) && (r = b.gH.DISABLED), r
   };
 
 function P(e) {
@@ -112,7 +112,7 @@ function D(e, t) {
     o = i.useCallback(t => {
       var n;
       let r = (0, v.Z)(e, t, null != a.modal ? "modal" : "message");
-      return null == (n = a.setValidationErrors) || n.call(a, t => A(I({}, t), {
+      return null == (n = a.setValidationErrors) || n.call(a, t => C(I({}, t), {
         [e.id]: r
       })), null == r
     }, [e, a]);
@@ -156,7 +156,7 @@ function w(e, t, n, r) {
         localState: t
       }), true
     }, [e.channel_id, e.flags, e.id, n.customId, n.type, n.id, _, p]),
-    isDisabled: c && C(n),
+    isDisabled: c && A(n),
     visualState: N(l, n, c),
     error: d
   }

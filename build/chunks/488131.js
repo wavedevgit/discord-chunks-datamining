@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   NK: () => N,
-  R6: () => A,
+  R6: () => C,
   ok: () => T,
-  vN: () => C
+  vN: () => A
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -64,7 +64,7 @@ function T(e, t, n) {
   }, 0)
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, c.yw)(S.rMx.THREAD_CREATION_STARTED, {
       location: n,
       channel_id: e.id,
@@ -83,7 +83,7 @@ function A(e, t, n) {
   }, 0)
 }
 
-function C(e, t) {
+function A(e, t) {
   (0, _.uL)(S.Z5c.CHANNEL(e, (0, I.ME)(t) ? I.oC.GUILD_HOME : t)), s.Z.dispatch({
     type: "SIDEBAR_CLOSE",
     baseChannelId: t

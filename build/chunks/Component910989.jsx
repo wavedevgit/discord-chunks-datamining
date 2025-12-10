@@ -76,20 +76,20 @@ let b = {
       checkboxColor: I
     } = e, T = i.useCallback(e => {
       null == f || f(e, e.currentTarget.checked)
-    }, [f]), A = null != E ? (0, r.jsx)("div", {
+    }, [f]), C = null != E ? (0, r.jsx)("div", {
       className: o()(_.label, t ? _.labelDisabled : _.labelClickable, O ? _.labelReversed : _.labelForward),
       style: {
         lineHeight: "".concat(l, "px")
       },
       children: E
-    }) : null, C = a ? "span" : "label", N = t ? _.inputDisabled : n ? _.inputReadonly : _.inputDefault;
-    return (0, r.jsxs)(C, {
+    }) : null, A = a ? "span" : "label", N = t ? _.inputDisabled : n ? _.inputReadonly : _.inputDefault;
+    return (0, r.jsxs)(A, {
       "data-toggleable-component": "checkbox",
       className: o()(t ? _.checkboxWrapperDisabled : _.checkboxWrapper, y[u], h, {
         [_.row]: "row" === c,
         [_.checked]: s
       }),
-      children: [O ? A : null, !a && (0, r.jsx)(d.tE, {
+      children: [O ? C : null, !a && (0, r.jsx)(d.tE, {
         children: (0, r.jsx)("input", {
           className: o()(g, N),
           type: "checkbox",
@@ -107,7 +107,7 @@ let b = {
         shape: v,
         checkboxColor: I,
         disabled: t
-      }), O ? null : A]
+      }), O ? null : C]
     })
   };
 

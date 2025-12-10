@@ -110,27 +110,27 @@ let S = e => {
       })
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
-  A = e => p(d({}, I(e)), {
+  C = e => p(d({}, I(e)), {
     newline: d({}, a().defaultRules.newline),
     text: l.ZP,
     list: o.Z,
     subtext: s.Z
   });
 
-function C(e) {
+function A(e) {
   return d({}, I(e))
 }
 let N = {
-  getDefaultRules: C,
+  getDefaultRules: A,
   getSpecialRules: e => d({}, I(e), T(e)),
-  getMessageRules: e => d({}, A(e))
+  getMessageRules: e => d({}, C(e))
 };
 
 function P(e, t, n) {
   return {
     hasSpoilerEmbeds: false,
     hasBailedAst: false,
-    content: c.Z.reactParserFor(C(t))(e.content, false, null != n ? {
+    content: c.Z.reactParserFor(A(t))(e.content, false, null != n ? {
       changeLog: n
     } : {})
   }

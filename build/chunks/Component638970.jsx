@@ -71,9 +71,9 @@ function I(e) {
   } = e, {
     analyticsLocations: T
   } = (0, s.ZP)(), {
-    trackUserProfileAction: A
+    trackUserProfileAction: C
   } = (0, u.KZ)(), {
-    live: C,
+    live: A,
     stream: N
   } = (0, d.Z)(t.id), {
     voiceChannel: P,
@@ -97,19 +97,19 @@ function I(e) {
       });
     return null != N && i.push((0, r.jsx)(m.Z, O({
       stream: N
-    }, a), "stream")), C.forEach((e, t) => {
+    }, a), "stream")), A.forEach((e, t) => {
       i.push((0, r.jsx)(_.Z, O({
         activity: e
       }, a), "live-".concat(t)))
     }), L && i.push((0, r.jsx)(h.Z, O({
       voiceChannel: P
     }, a), "voice")), i
-  }, [n, L, C, I, N, t, P]);
+  }, [n, L, A, I, N, t, P]);
   return w ? null : (0, r.jsx)(p.Z, {
     renderCards: j,
     heading: b.intl.string(b.t.J6STd9),
     onExpand: () => {
-      A({
+      C({
         action: "PRESS_SHOW_MORE_ACTIVITY",
         analyticsLocations: T
       }), null == v || v({

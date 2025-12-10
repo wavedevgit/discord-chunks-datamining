@@ -22,9 +22,9 @@ require.d(exports, {
   ic: () => T,
   oX: () => r,
   rP: () => g,
-  u0: () => C,
+  u0: () => A,
   vY: () => i,
-  vc: () => A,
+  vc: () => C,
   yP: () => y
 });
 let r = 250,
@@ -96,12 +96,12 @@ let T = {
     UNREADS_ALL_MESSAGES: 1024,
     UNREADS_ONLY_MENTIONS: 512
   },
-  A = {
+  C = {
     OPT_IN_CHANNELS_ON: 16384,
     OPT_IN_CHANNELS_OFF: 8192,
     UNREADS_ONLY_MENTIONS: 4096,
     UNREADS_ALL_MESSAGES: 2048
   };
-var C = function(e) {
+var A = function(e) {
   return e.USER = "user", e.STREAM = "stream", e
 }({})

@@ -513,7 +513,7 @@ let d = {
     disableAutoFocus: true,
     showCharacterCount: true
   },
-  A = {
+  C = {
     analyticsName: "rules_input",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -529,7 +529,7 @@ let d = {
     disableAutoFocus: true,
     hideAccessoryBar: true
   },
-  C = {
+  A = {
     analyticsName: "forum_channel_guidelines",
     drafts: {
       type: Chunk703558.d.ChannelMessage
@@ -604,11 +604,11 @@ let d = {
     USER_PROFILE_REPLY: S,
     PROFILE_BIO_INPUT: I,
     CUSTOM_GIFT: T,
-    RULES_INPUT: A,
+    RULES_INPUT: C,
     CREATE_FORUM_POST: b,
     CREATE_ANNOUNCEMENT_POST: E,
     CREATE_POLL: y,
-    FORUM_CHANNEL_GUIDELINES: C,
+    FORUM_CHANNEL_GUIDELINES: A,
     CHANNEL_TOPIC: N,
     ATOMIC_REACTOR_REPLY_INPUT: P,
     FORWARD_MESSAGE_INPUT: {

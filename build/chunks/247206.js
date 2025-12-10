@@ -184,7 +184,7 @@ function T(e) {
   let {
     attachments: t,
     embeds: n
-  } = A(e), r = C(e);
+  } = C(e), r = A(e);
   return e = e.merge({
     attachments: t,
     embeds: n,
@@ -192,14 +192,14 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   return {
     attachments: e.attachments.map(e => (e.content_scan_version = false, e)),
     embeds: e.embeds.map(e => (e.contentScanVersion = false, e))
   }
 }
 
-function C(e) {
+function A(e) {
   let {
     messageSnapshots: t
   } = e;
@@ -209,7 +209,7 @@ function C(e) {
     } = e, {
       attachments: n,
       embeds: r
-    } = A(t);
+    } = C(t);
     return t = t.merge({
       attachments: n,
       embeds: r

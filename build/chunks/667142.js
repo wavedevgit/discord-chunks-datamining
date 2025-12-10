@@ -2,12 +2,12 @@
 /** chunk id: 667142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Df: () => d,
-  S_: () => c,
+  S_: () => u,
   V5: () => a,
   VX: () => o,
   ZP: () => h,
   ih: () => s,
-  xc: () => u
+  xc: () => c
 });
 var Chunk972959 = require("./972959.js");
 let r = {
@@ -18,9 +18,9 @@ let r = {
   o = 1e4,
   a = 2e4,
   s = 500,
-  u = 1e3;
+  c = 1e3;
 
-function c(e) {
+function u(e) {
   l.setState({
     timeToLiveMs: e
   })

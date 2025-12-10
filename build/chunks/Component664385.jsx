@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
@@ -131,7 +131,7 @@ function U(e) {
         questContentCTA: E.jZ.OPEN_DISCLOSURE,
         trackGuildAndChannelMetadata: true,
         sourceQuestContent: b.jn.MEMBERS_LIST
-      }), (0, C.openDisclosureModal)(Z, {
+      }), (0, A.openDisclosureModal)(Z, {
         content: b.jn.MEMBERS_LIST,
         ctaContent: E.jZ.OPEN_DISCLOSURE,
         sourceQuestContent: b.jn.MEMBERS_LIST
@@ -144,7 +144,7 @@ function U(e) {
         questContentCTA: E.jZ.LEARN_MORE,
         trackGuildAndChannelMetadata: true,
         sourceQuestContent: b.jn.MEMBERS_LIST
-      }), (0, C.navigateToQuestHome)({
+      }), (0, A.navigateToQuestHome)({
         fromContent: b.jn.MEMBERS_LIST,
         questId: Z.id
       })
@@ -249,7 +249,7 @@ function U(e) {
               className: w.helpIcon,
               width: M,
               height: M,
-              color: u.TVs.colors.INTERACTIVE_NORMAL
+              color: u.TVs.colors.INTERACTIVE_TEXT_DEFAULT
             })]
           })]
         }), (0, r.jsx)("div", {
@@ -266,7 +266,7 @@ function U(e) {
               }),
               className: w.assetTile,
               src: (0, O.fh)(Z, O.eC.GAME_TILE, ee).url
-            }), "reward" === eg.tileAssetType && (0, r.jsx)(A.Z, {
+            }), "reward" === eg.tileAssetType && (0, r.jsx)(C.Z, {
               className: w.assetTile,
               quest: Z,
               questContent: b.jn.MEMBERS_LIST,

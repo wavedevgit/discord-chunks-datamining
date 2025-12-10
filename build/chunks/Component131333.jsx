@@ -62,8 +62,8 @@ let b = [],
   S = false,
   I = 11,
   T = 125,
-  A = 20,
-  C = 12,
+  C = 20,
+  A = 12,
   N = 48,
   P = .01,
   R = new Set(["jack_o_lantern", "nose"]),
@@ -146,14 +146,14 @@ let M = Chunk473749.forwardRef(function(e, t) {
         },
         size: {
           type: "static-random",
-          minValue: C,
+          minValue: A,
           maxValue: N
         },
         dragCoefficient: {
           type: "static",
           value: P
         }
-      }), A)
+      }), C)
     }
   }), [u]), (0, r.jsx)(a.Ji, {
     ref: l,

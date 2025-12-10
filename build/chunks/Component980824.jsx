@@ -58,11 +58,11 @@ function S() {
 }
 let I = Chunk473749.createContext(null),
   T = Chunk473749.createContext(null),
-  A = () => {
+  C = () => {
     var e;
     return (null == (e = Chunk473749.useContext(I)) ? true : module.id) || null
   },
-  C = () => Chunk473749.useContext(T);
+  A = () => Chunk473749.useContext(T);
 
 function N(e) {
   return "data-floating-ui-" + e
@@ -102,7 +102,7 @@ function x(e, t) {
     mouseOnly: p = false,
     restMs: _ = 0,
     move: m = true
-  } = t, h = C(), g = A(), E = (0, a.II)(f), b = (0, a.II)(d), y = (0, a.II)(n), O = (0, a.II)(_), v = i.useRef(), S = i.useRef(false), I = i.useRef(), T = i.useRef(false), N = i.useRef(true), x = i.useRef(false), L = i.useRef(() => {}), j = i.useRef(false), M = (0, a.iW)(() => {
+  } = t, h = A(), g = C(), E = (0, a.II)(f), b = (0, a.II)(d), y = (0, a.II)(n), O = (0, a.II)(_), v = i.useRef(), S = i.useRef(false), I = i.useRef(), T = i.useRef(false), N = i.useRef(true), x = i.useRef(false), L = i.useRef(() => {}), j = i.useRef(false), M = (0, a.iW)(() => {
     var e;
     let t = null == (e = o.current.openEvent) ? true : e.type;
     return (null == t ? true : t.includes("mouse")) && "mousedown" !== t
@@ -428,15 +428,15 @@ function es(e, t) {
     ancestorScroll: m = false,
     bubbles: h,
     capture: g
-  } = t, E = C(), b = (0, a.iW)("function" == typeof d ? d : () => false), y = "function" == typeof d ? b : d, O = i.useRef(false), {
+  } = t, E = A(), b = (0, a.iW)("function" == typeof d ? d : () => false), y = "function" == typeof d ? b : d, O = i.useRef(false), {
     escapeKey: v,
     outsidePress: S
   } = eo(h), {
     escapeKey: I,
     outsidePress: T
-  } = eo(g), A = i.useRef(false), P = (0, a.iW)(e => {
+  } = eo(g), C = i.useRef(false), P = (0, a.iW)(e => {
     var t;
-    if (!n || !c || !u || "Escape" !== e.key || A.current) return;
+    if (!n || !c || !u || "Escape" !== e.key || C.current) return;
     let i = null == (t = l.current.floatingContext) ? true : t.nodeId,
       o = E ? (0, a.El)(E.nodesRef.current, i) : [];
     if (!v && (e.stopPropagation(), o.length > 0)) {
@@ -522,12 +522,12 @@ function es(e, t) {
     }
 
     function i() {
-      window.clearTimeout(e), A.current = true
+      window.clearTimeout(e), C.current = true
     }
 
     function d() {
       e = window.setTimeout(() => {
-        A.current = false
+        C.current = false
       }, 5 * !!(0, s.Pf)())
     }
     let p = (0, a.Me)(o.floating);
@@ -584,7 +584,7 @@ function el(e) {
     open: t = false,
     onOpenChange: n,
     elements: r
-  } = e, o = v(), s = i.useRef({}), [l] = i.useState(() => S()), c = null != A(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
+  } = e, o = v(), s = i.useRef({}), [l] = i.useState(() => S()), c = null != C(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
     s.current.openEvent = e ? t : true, l.emit("openchange", {
       open: e,
       event: t,
@@ -620,7 +620,7 @@ function ec(e) {
       floating: null,
       ...e.elements
     }
-  }), r = e.rootContext || n, o = r.elements, [l, u] = i.useState(null), [d, f] = i.useState(null), p = (null == o ? true : o.domReference) || l, _ = i.useRef(null), m = C();
+  }), r = e.rootContext || n, o = r.elements, [l, u] = i.useState(null), [d, f] = i.useState(null), p = (null == o ? true : o.domReference) || l, _ = i.useRef(null), m = A();
   (0, a.Xj)(() => {
     p && (_.current = p)
   }, [p]);
@@ -889,7 +889,7 @@ function ev(e) {
       let {
         clientX: m,
         clientY: h
-      } = e, g = [m, h], E = k(e), b = "mouseleave" === e.type, y = M(c.floating, E), O = M(c.domReference, E), v = c.domReference.getBoundingClientRect(), S = c.floating.getBoundingClientRect(), I = l.split("-")[0], T = n > S.right - S.width / 2, A = o > S.bottom - S.height / 2, C = eO(g, v), N = S.width > v.width, R = S.height > v.height, D = (N ? v : S).left, w = (N ? v : S).right, x = (R ? v : S).top, L = (R ? v : S).bottom;
+      } = e, g = [m, h], E = k(e), b = "mouseleave" === e.type, y = M(c.floating, E), O = M(c.domReference, E), v = c.domReference.getBoundingClientRect(), S = c.floating.getBoundingClientRect(), I = l.split("-")[0], T = n > S.right - S.width / 2, C = o > S.bottom - S.height / 2, A = eO(g, v), N = S.width > v.width, R = S.height > v.height, D = (N ? v : S).left, w = (N ? v : S).right, x = (R ? v : S).top, L = (R ? v : S).bottom;
       if (y && (a = true, !b)) return;
       if (O && (a = false), O && !b) {
         a = true;
@@ -950,24 +950,24 @@ function ev(e) {
               [S.right, T ? N ? S.top + t : S.bottom : S.top + t]
             ];
           case "left": {
-            let e = [n + t + 1, R ? r + t / 2 : A ? r + 4 * t : r - 4 * t],
-              i = [n + t + 1, R ? r - t / 2 : A ? r + 4 * t : r - 4 * t];
+            let e = [n + t + 1, R ? r + t / 2 : C ? r + 4 * t : r - 4 * t],
+              i = [n + t + 1, R ? r - t / 2 : C ? r + 4 * t : r - 4 * t];
             return [
-              [A || R ? S.right - t : S.left, S.top],
-              [A ? R ? S.right - t : S.left : S.right - t, S.bottom], e, i
+              [C || R ? S.right - t : S.left, S.top],
+              [C ? R ? S.right - t : S.left : S.right - t, S.bottom], e, i
             ]
           }
           case "right":
             return [
-              [n - t, R ? r + t / 2 : A ? r + 4 * t : r - 4 * t],
-              [n - t, R ? r - t / 2 : A ? r + 4 * t : r - 4 * t],
-              [A || R ? S.left + t : S.right, S.top],
-              [A ? R ? S.left + t : S.right : S.left + t, S.bottom]
+              [n - t, R ? r + t / 2 : C ? r + 4 * t : r - 4 * t],
+              [n - t, R ? r - t / 2 : C ? r + 4 * t : r - 4 * t],
+              [C || R ? S.left + t : S.right, S.top],
+              [C ? R ? S.left + t : S.right : S.left + t, S.bottom]
             ]
         }
       }
       if (!ey([m, h], j)) {
-        if (a && !C) return _();
+        if (a && !A) return _();
         if (!b && r) {
           let t = u(e.clientX, e.clientY),
             n = .1;

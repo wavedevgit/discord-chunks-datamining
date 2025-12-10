@@ -2,7 +2,7 @@
 /** chunk id: 24397, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => C,
+  K: () => A,
   Z: () => R
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js");
@@ -38,7 +38,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function A(e) {
   }
   return e
 }
-let C = {
+let A = {
   results: {
     entries: []
   }
@@ -61,7 +61,7 @@ function N() {
     let {
       default: e
     } = await require.e("87549").then(require.bind(require, 913962));
-    return t => (0, r.jsx)(e, A({}, t))
+    return t => (0, r.jsx)(e, C({}, t))
   })
 }
 
@@ -73,7 +73,7 @@ let R = {
   stores: [Chunk998698.Z, Chunk213459.ZP, Chunk496675.Z],
   matches: (e, t, n, r, i) => i.commands !== y.L8.DISABLED && null == f.Z.getActiveCommand(e.id) && (r || i.commands !== y.L8.OLD_BUILT_INS),
   queryResults(e, t, n, r, i) {
-    if (0 === n.length && r.commands !== y.L8.OLD_BUILT_INS) return C;
+    if (0 === n.length && r.commands !== y.L8.OLD_BUILT_INS) return A;
     if (r.commands === y.L8.OLD_BUILT_INS) {
       let r = (0, l.Kh)([o.yU.CHAT], false, false),
         i = RegExp("^".concat(E.Z.escape(n)), "i"),
@@ -82,7 +82,7 @@ let R = {
           guild: t
         }, y.AQ),
         s = l.Tm[v.bi.BUILT_IN];
-      return 0 === a.length ? C : {
+      return 0 === a.length ? A : {
         results: {
           entries: a.map(e => ({
             command: e,
@@ -107,14 +107,14 @@ let R = {
         scoreMethod: d.p.COMMAND_OR_APPLICATION,
         allowFetch: i
       });
-    if (null == s) return C;
+    if (null == s) return A;
     let f = s;
     if (a.hasSpaceTerminator) {
       let e = a.text.trim(),
         t = e + " ";
       f = f.filter(n => n.displayName === e || n.displayName.startsWith(t))
     }
-    return 0 === f.length ? C : {
+    return 0 === f.length ? A : {
       results: {
         entries: f.slice(0, y.AQ).map(e => ({
           command: e,

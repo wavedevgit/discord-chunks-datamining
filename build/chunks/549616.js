@@ -88,8 +88,8 @@ class m extends Chunk803358.Z {
       hero_logo_url: S,
       catalog_banner_url: I,
       catalog_banner_animated_url: T,
-      featured_block_url: A,
-      logo_url: C,
+      featured_block_url: C,
+      logo_url: A,
       pdp_bg_url: N,
       mobile_banner_url: P,
       mobile_bg_url: R
@@ -116,8 +116,8 @@ class m extends Chunk803358.Z {
       heroLogoUrl: S,
       catalogBannerUrl: I,
       catalogBannerAnimatedUrl: T,
-      featuredBlockUrl: A,
-      logoUrl: C,
+      featuredBlockUrl: C,
+      logoUrl: A,
       pdpBgUrl: N,
       mobileBannerUrl: P,
       mobileBgUrl: R

@@ -9,7 +9,7 @@ require.d(exports, {
   hi: () => O,
   s2: () => v,
   sU: () => P,
-  wt: () => A
+  wt: () => C
 }), require("./415506.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -81,7 +81,7 @@ async function T(e) {
     }), m.error("System service initialization failed", e), e
   }
 }
-async function A() {
+async function C() {
   Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.InputEventServiceSetAllowed(false), Chunk998502.ZP.ToolServiceSetAllowed(false), await Chunk570140.Z.dispatch({
     type: "SYSTEM_SERVICE_INITIALIZE",
     status: {
@@ -97,7 +97,7 @@ async function A() {
   }), m.info("System service terminated."))
 }
 
-function C(e) {
+function A(e) {
   if (e instanceof Error) try {
     let t = JSON.parse(e.message);
     if (null == t.error_code || null == t.error_message) return;
@@ -118,7 +118,7 @@ async function P(e) {
       source: e
     }), N((0, i.createToast)(_.intl.string(_.t.kQnWby), i.ToastType.SUCCESS), t), I("after-install")
   } catch (r) {
-    let n = C(r);
+    let n = A(r);
     if (null == n && r instanceof Error) {
       N((0, i.createToast)(_.intl.formatToPlainString(_.t.sdKYCE, {
         error: r.message
@@ -168,12 +168,12 @@ async function P(e) {
 async function R(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   if (c.isPlatformEmbedded) try {
-    await A(), await d.ZP.UninstallSystemService(), m.info("System service uninstalled."), N((0, i.createToast)(_.intl.string(_.t.dThS5H), i.ToastType.SUCCESS), t), l.default.track(p.rMx.SYSTEM_SERVICE_UNINSTALL_ATTEMPTED, {
+    await C(), await d.ZP.UninstallSystemService(), m.info("System service uninstalled."), N((0, i.createToast)(_.intl.string(_.t.dThS5H), i.ToastType.SUCCESS), t), l.default.track(p.rMx.SYSTEM_SERVICE_UNINSTALL_ATTEMPTED, {
       success: true,
       source: e
     })
   } catch (r) {
-    let n = C(r);
+    let n = A(r);
     if (null == n && r instanceof Error) {
       N((0, i.createToast)(_.intl.formatToPlainString(_.t.oHh3oI, {
         error: r.message

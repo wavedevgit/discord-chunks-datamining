@@ -427,7 +427,7 @@ function eP(e) {
     let {
       editorHeight: n,
       isGridLayout: r
-    } = eJ.current, i = r ? e6 : eo, l = null == (e = i.current) ? true : e.getScrollerState();
+    } = eJ.current, i = r ? e4 : eo, l = null == (e = i.current) ? true : e.getScrollerState();
     null != l && !eX && l.scrollTop > n && (null == (t = i.current) || t.scrollTo({
       to: 0
     }))
@@ -499,12 +499,12 @@ function eP(e) {
     goToThread: eV,
     observePostVisibilityAnalytics: ec,
     isShowingSearchResult: ew
-  }), e6 = i.useRef(null), {
-    updateMasonryListScrollerRef: e4,
+  }), e4 = i.useRef(null), {
+    updateMasonryListScrollerRef: e6,
     getItemKey: e8,
     renderGridSection: e9,
-    renderGridItem: e2,
-    getGridSectionHeight: e5,
+    renderGridItem: e5,
+    getGridSectionHeight: e2,
     getSectionProps: e7,
     handleGridFocus: te
   } = function(e) {
@@ -595,7 +595,7 @@ function eP(e) {
       getGridSectionHeight: i.useCallback(e => 0 === e ? g - 8 - 24 : 2 === e ? o || !u ? 40 : 0 : 1 === e && c && !d ? 40 : 0, [g, c, d, o, u])
     }
   }({
-    masonryListScrollerRef: e6,
+    masonryListScrollerRef: e4,
     threadIdsBySection: eG,
     goToThread: eV,
     renderSectionOrItem: eK,
@@ -636,7 +636,7 @@ function eP(e) {
       }
     }, [s, n, r, l, a, t])
   }({
-    masonryListScrollerRef: e6,
+    masonryListScrollerRef: e4,
     containerWidth: ek,
     isGridLayout: eu,
     threadIdsBySection: eG,
@@ -646,7 +646,7 @@ function eP(e) {
   let tt = i.useCallback(() => {
       var e, n;
       if (ew) return;
-      let r = eu ? null == (e = e6.current) ? true : e.getScrollerState() : null == (n = eo.current) ? true : n.getScrollerState();
+      let r = eu ? null == (e = e4.current) ? true : e.getScrollerState() : null == (n = eo.current) ? true : n.getScrollerState();
       if (null == r) return;
       (0, ee.ab)({
         guildId: t.guild_id,
@@ -706,7 +706,7 @@ function eP(e) {
           children: (0, r.jsx)(p.GMG, ej({
             ref: e => {
               var t;
-              to.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e4(e)
+              to.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null, e6(e)
             },
             itemGutter: 16,
             padding: 24,
@@ -714,10 +714,10 @@ function eP(e) {
             columns: eA,
             sections: eU,
             getItemKey: e8,
-            getSectionHeight: e5,
+            getSectionHeight: e2,
             getItemHeight: ta,
             renderSection: e9,
-            renderItem: e2,
+            renderItem: e5,
             getSectionProps: e7,
             onScroll: C ? tt : true,
             chunkSize: 350
@@ -1198,7 +1198,7 @@ function ek(e) {
         }), (0, r.jsx)(p.Text, {
           className: eb.sortDropdownText,
           variant: "text-sm/medium",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: (0, r.jsx)("span", {
             className: eb.sortDropdownTextHighContrastForcedColor,
             children: n ? ep.intl.string(ep.t.JxU0wr) : ep.intl.string(ep.t.xyYt8A)

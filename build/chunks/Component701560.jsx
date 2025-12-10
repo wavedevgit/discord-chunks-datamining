@@ -57,14 +57,14 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class C extends(r = Chunk473749.PureComponent) {
+class A extends(r = Chunk473749.PureComponent) {
   get analyticsLocation() {
-    return A(I({}, this.props.analyticsContext.location), {
+    return C(I({}, this.props.analyticsContext.location), {
       object: Chunk981631.qAy.BUTTON_CTA
     })
   }
@@ -153,7 +153,7 @@ class C extends(r = Chunk473749.PureComponent) {
         let {
           default: e
         } = await n.e("53195").then(n.bind(n, 918306));
-        return n => (0, i.jsx)(e, A(I({}, n), {
+        return n => (0, i.jsx)(e, C(I({}, n), {
           libraryApplication: t,
           onPlay: this.handleClick
         }))
@@ -183,7 +183,7 @@ function N(e) {
     applicationId: t,
     libraryApplication: n
   } = e, r = (0, p.O)(), [a, o] = (0, l.Wu)([h.Z, m.Z, g.Z], () => [h.Z.isConnected(t) || m.Z.isLaunchable(t) || null != n && g.Z.isLaunchable(n.id, n.branchId), m.Z.launchingGames.has(t)], [t, n]), s = (0, l.e7)([_.ZP], () => new Set(_.ZP.getRunningVerifiedApplicationIds()).has(t), [t]), c = (0, l.e7)([g.Z], () => null != n ? g.Z.getState(n.id, n.branchId) : null, [n]);
-  return (0, i.jsx)(C, A(I({}, e), {
+  return (0, i.jsx)(A, C(I({}, e), {
     analyticsContext: r,
     isLaunchable: a,
     isLaunching: o,
@@ -191,7 +191,7 @@ function N(e) {
     dispatchState: c
   }))
 }
-S(C, "defaultProps", {
+S(A, "defaultProps", {
   fullWidth: false,
   size: Chunk755721.zx.Sizes.LARGE,
   tooltipPosition: "top",

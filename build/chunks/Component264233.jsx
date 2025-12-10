@@ -64,7 +64,7 @@ function m(e) {
     children: [(0, r.jsx)(s.Text, {
       className: p.headerTitle,
       variant: "text-xs/semibold",
-      color: "interactive-normal",
+      color: "interactive-text-default",
       children: t
     }), (0, r.jsx)("div", {
       className: p.headerDivider

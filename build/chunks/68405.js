@@ -75,7 +75,7 @@ function I(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -83,14 +83,14 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let C = 250,
+let A = 250,
   N = /-/g;
 
 function P(e) {
@@ -152,7 +152,7 @@ function D(e, t, n) {
     query: e
   }))
 }
-let w = i().debounce(D, C);
+let w = i().debounce(D, A);
 
 function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],

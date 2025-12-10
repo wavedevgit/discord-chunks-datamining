@@ -4,7 +4,7 @@
 require.d(exports, {
   Yy: () => O,
   ZP: () => N,
-  ai: () => C
+  ai: () => A
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -39,8 +39,8 @@ let b = 100,
   S = 3,
   I = 30 * Chunk70956.Z.Millis.SECOND,
   T = 120 * Chunk70956.Z.Millis.SECOND,
-  A = false !== (0, Chunk526167.hY)();
-var C = function(e) {
+  C = false !== (0, Chunk526167.hY)();
+var A = function(e) {
   return e.UserSSRCUpdate = "user-ssrc-update", e.Update = "update", e
 }({});
 class N extends Chunk47770.Z {
@@ -207,7 +207,7 @@ class N extends Chunk47770.Z {
         (n.includes(t) || true !== a.remoteVideoSsrcs[t] && !(0, l.Z)(a.remoteVideoSsrcs[t], c)) && (a.remoteVideoSsrcs[t] = [...c], a.emit("user-ssrc-update", t, a.audioSsrcs[t], c))
       }
       for (let [e, n] of Object.entries(a.audioSsrcs))(null == (t = a.connection) ? true : t.getLocalMute(e)) && (o[n] = 0);
-      return A ? a.latestWants : (null == a.connection || i().isEqual(a.latestWants, o) || (a.latestWants = o, a.emit("update", o)), o)
+      return C ? a.latestWants : (null == a.connection || i().isEqual(a.latestWants, o) || (a.latestWants = o, a.emit("update", o)), o)
     }, this.incomingVideoEnabledChanged = () => {
       this.update()
     }, this.delayedCall = new c.sW(v, this.update), this.offscreenTimeout = new c.V7, m.w.on(m.e.IncomingVideoEnabledChanged, this.incomingVideoEnabledChanged)

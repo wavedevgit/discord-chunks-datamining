@@ -48,7 +48,7 @@ function g(e) {
         onClick: y,
         children: (0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
-          color: "interactive-active",
+          color: "interactive-text-active",
           children: E
         })
       }), (0, r.jsx)(o.Text, {
@@ -83,7 +83,7 @@ function E(e) {
       className: h.text,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        color: "interactive-active",
+        color: "interactive-text-active",
         children: m.intl.format(m.t.N4qBBO, {
           index: s + 1
         })
@@ -97,7 +97,7 @@ function E(e) {
       onClick: c,
       children: (0, r.jsx)(o.Dio, {
         size: "md",
-        color: o.TVs.colors.INTERACTIVE_NORMAL
+        color: o.TVs.colors.INTERACTIVE_TEXT_DEFAULT
       })
     })]
   })

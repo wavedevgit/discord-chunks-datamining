@@ -43,7 +43,7 @@ let U = e => {
     let {
       inOfferExperience: t
     } = e;
-    return t ? (0, r.jsx)(C.Z, {
+    return t ? (0, r.jsx)(A.Z, {
       lifted: t
     }) : null
   },
@@ -52,7 +52,7 @@ let U = e => {
     (0, Chunk214852.z)(Chunk433811.X);
     let n = Chunk473749.useRef(null),
       a = Chunk473749.useRef(null),
-      C = Chunk473749.useRef(null),
+      A = Chunk473749.useRef(null),
       G = (0, Chunk410030.ZP)(),
       Z = (0, Chunk780384.wj)(G),
       [B, F] = Chunk473749.useState(false),

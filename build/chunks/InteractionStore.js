@@ -86,7 +86,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   var t;
   let {
     nonce: n,
@@ -98,7 +98,7 @@ function A(e) {
   i.state = p.F.CREATED, null == (t = i.onCreate) || t.call(i, r)
 }
 
-function C(e) {
+function A(e) {
   let {
     nonce: t
   } = e;
@@ -234,8 +234,8 @@ _(U, "displayName", "InteractionStore");
 let G = new U(Chunk570140.Z, {
   LOGOUT: I,
   INTERACTION_QUEUE: T,
-  INTERACTION_CREATE: A,
-  INTERACTION_SUCCESS: C,
+  INTERACTION_CREATE: C,
+  INTERACTION_SUCCESS: A,
   INTERACTION_FAILURE: P,
   MESSAGE_CREATE: N,
   CHANNEL_SELECT: R,

@@ -34,8 +34,8 @@ function S(e, t, n) {
 }
 let I = null,
   T = new Map,
-  A = new Map,
-  C = 10,
+  C = new Map,
+  A = 10,
   N = 3;
 
 function P(e) {
@@ -64,11 +64,11 @@ function R(e) {
 function D(e) {
   var t;
   let n = (0, E.Tm)(e),
-    r = null != (t = A.get(n)) ? t : {
+    r = null != (t = C.get(n)) ? t : {
       results: [],
       context: l.Z.getUserSearchContext(k.bind(null, e))
     };
-  return A.set(n, r), r
+  return C.set(n, r), r
 }
 
 function w(e) {
@@ -108,8 +108,8 @@ function x(e) {
 function L(e) {
   let {
     id: t
-  } = e, n = A.get(t);
-  null != n && (n.context.destroy(), n.results = [], A.delete(t)), T.delete(t), I = null
+  } = e, n = C.get(t);
+  null != n && (n.context.destroy(), n.results = [], C.delete(t)), T.delete(t), I = null
 }
 
 function j(e) {
@@ -124,9 +124,9 @@ function M(e) {
 function k(e, t) {
   let {
     results: n
-  } = t, r = (0, E.Tm)(e), i = A.get(r), a = T.get(r);
+  } = t, r = (0, E.Tm)(e), i = C.get(r), a = T.get(r);
   if (null == i || null == a || !M(a.mode)) return;
-  i.results = U(n, a.mode.type === O.Sap.FILTER ? C : N);
+  i.results = U(n, a.mode.type === O.Sap.FILTER ? A : N);
   let {
     query: o,
     mode: s,
@@ -144,7 +144,7 @@ function k(e, t) {
 }
 
 function U(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : C,
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : A,
     n = [];
   for (let r of e) {
     if (n.length >= t) break;
@@ -190,7 +190,7 @@ function B(e) {
       a = null == i || null == (u = i.getFullMatch()) ? true : u.trim();
     if (null != a && a.length > 0) {
       let r = (0, E.s5)(n);
-      null != r && h.Z.requestMembers(r, a, C), e.context.setQuery({
+      null != r && h.Z.requestMembers(r, a, A), e.context.setQuery({
         query: a,
         filters: {
           guild: null != r ? r : true
@@ -199,7 +199,7 @@ function B(e) {
       }), t = null != (d = null == l ? true : l.autocompletes) ? d : [], c = false
     } else e.context.clearQuery(), t = K(n, o, r)
   } else {
-    let e = A.get(s);
+    let e = C.get(s);
     null != e && (e.context.clearQuery(), e.results = []), t = K(n, o, r)
   }
   let f = x({
@@ -219,7 +219,7 @@ function F(e) {
     filter: i,
     currentToken: a,
     searchContext: o,
-    maxResults: s = C,
+    maxResults: s = A,
     tokens: l
   } = e;
   if (null == i) return null;
@@ -343,7 +343,7 @@ function K(e, t, n) {
         filter: t.filter,
         currentToken: t.token,
         searchContext: e,
-        maxResults: C,
+        maxResults: A,
         tokens: n
       });
       return null != r ? [r] : [];

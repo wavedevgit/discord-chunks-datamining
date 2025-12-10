@@ -2,7 +2,7 @@
 /** chunk id: 175724, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => A
+  f: () => C
 });
 var Chunk475179 = require("./475179.js"),
   Chunk904245 = require("./904245.js"),
@@ -27,7 +27,7 @@ var Chunk475179 = require("./475179.js"),
   Chunk451478 = require("./451478.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let A = {
+let C = {
   binds: ["esc", "shift+pagedown"],
   comboKeysBindGlobal: true,
   action(e) {
@@ -46,7 +46,7 @@ let A = {
       a = m.Z.getChannel(i),
       l = _.ZP.getSection(i, null == a ? true : a.isDM()) === T.ULH.SIDEBAR_CHAT ? _.ZP.getSidebarState(i) : null,
       c = (null == l ? true : l.type) === d.tI.VIEW_THREAD || (null == l ? true : l.type) === d.tI.VIEW_CHANNEL ? l.channelId : null;
-    if (false === C(i) || false === C(c)) returnfalse;
+    if (false === A(i) || false === A(c)) returnfalse;
     if (null != i && (null == l ? true : l.type) === d.tI.CREATE_THREAD) return u.Z.closeChannelSidebar(i), false;
     let f = N(i),
       p = N(c);
@@ -54,7 +54,7 @@ let A = {
   }
 };
 
-function C(e) {
+function A(e) {
   if (null != e) {
     if (g.Z.isEditingAny(e)) return i.Z.endEditMessage(e), false;
     if (null != c.Z.getPendingReply(e)) return (0, l.A6)(e), false;

@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 995596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk384433 = require("./384433.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350013 = require("./350013.js");
-let C = e => {
+let _ = e => {
   let {
     tabs: t,
     selectedTab: n,
@@ -51,7 +51,7 @@ let C = e => {
   })
 };
 
-function _(e) {
+function C(e) {
   let {
     onTabSelect: t,
     tabs: n,
@@ -68,7 +68,7 @@ function _(e) {
       let {
         closePopout: r
       } = e;
-      return (0, l.jsx)(C, {
+      return (0, l.jsx)(_, {
         selectedTab: i,
         onClose: r,
         tabs: n,
@@ -132,19 +132,19 @@ function _(e) {
   })
 }
 
-function S(e) {
+function T(e) {
   let t, {
       guildId: n,
       currentTab: i,
       onTabSelect: a
     } = e,
     [c, x] = r.useState(0),
-    C = r.useRef(null),
-    S = r.useRef(c),
-    T = (0, b.A)({
+    _ = r.useRef(null),
+    T = r.useRef(c),
+    S = (0, b.A)({
       guildId: n
     }),
-    E = (t = null != T ? T : 0, [{
+    E = (t = null != S ? S : 0, [{
       id: g.e.ALL_MEMBERS,
       label: p.intl.string(p.t.NOOm1Z)
     }, {
@@ -178,14 +178,14 @@ function S(e) {
     A = r.useMemo(() => E.slice(N + 1), [N, E]),
     M = (0, m.Z)(e => {
       let t = e.contentRect.width;
-      null != t && S.current !== t && (x(t), S.current = t)
+      null != t && T.current !== t && (x(t), T.current = t)
     });
-  return (0, u.s)(C, M, [R]), (0, l.jsxs)(l.Fragment, {
+  return (0, u.s)(_, M, [R]), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(h.Z.Divider, {
       className: v.divider
     }), (0, l.jsxs)("div", {
       className: v.tabsContainer,
-      ref: C,
+      ref: _,
       children: [(0, l.jsxs)("div", {
         className: v.measurements,
         children: [E.map((e, t) => (0, l.jsx)(o.AJ, {
@@ -198,7 +198,7 @@ function S(e) {
           })
         }, e.id)), (0, l.jsx)("div", {
           ref: P,
-          children: (0, l.jsx)(_, {
+          children: (0, l.jsx)(C, {
             tabs: A,
             onTabSelect: a,
             selectedTab: i
@@ -213,7 +213,7 @@ function S(e) {
           id: e.id,
           "aria-label": e.label,
           children: e.label
-        }, e.id)), 0 !== A.length ? (0, l.jsx)(_, {
+        }, e.id)), 0 !== A.length ? (0, l.jsx)(C, {
           tabs: A,
           onTabSelect: a,
           selectedTab: i

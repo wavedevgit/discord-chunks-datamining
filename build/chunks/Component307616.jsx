@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   n: () => P,
-  v: () => A
+  v: () => C
 }), require("./388685.js"), require("./290780.js"), require("./415506.js"), require("./482853.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -124,11 +124,11 @@ class T extends Chunk473749.PureComponent {
   }
 }
 
-function A() {
+function C() {
   return (0, Chunk952265.modalContextFromAppContext)((0, Chunk728285.bp)())
 }
 
-function C(e) {
+function A(e) {
   let t = [],
     n = false;
   for (let i = e.length - 1; i >= 0; i--) {
@@ -145,9 +145,9 @@ function C(e) {
 let N = [];
 
 function P() {
-  let e = A(),
+  let e = C(),
     t = (0, Chunk952265.useModalsStore)(t => true !== t[e] ? t[e] : N),
-    n = Chunk473749.useMemo(() => C(exports), [exports]),
+    n = Chunk473749.useMemo(() => A(exports), [exports]),
     a = Chunk473749.useRef(true);
   Chunk473749.useLayoutEffect(() => {
     Chunk120356.current = exports[exports.length - 1]

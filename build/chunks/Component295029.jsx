@@ -13,7 +13,7 @@ let a = e => {
       size: c = "md",
       width: u,
       height: d,
-      color: m = o.Z.colors.INTERACTIVE_NORMAL
+      color: m = o.Z.colors.INTERACTIVE_TEXT_DEFAULT
     } = e,
     f = function(e, t) {
       if (null == e) return {};

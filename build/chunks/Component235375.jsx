@@ -2,7 +2,7 @@
 /** chunk id: 235375, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  baseRules: () => C,
+  baseRules: () => A,
   customRules: () => N
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -73,7 +73,7 @@ function I() {
 function T(e, t) {
   return null == t ? [] : t.split(" ").map(t => e[t])
 }
-let A = e => {
+let C = e => {
     let {
       level: t,
       children: n,
@@ -84,7 +84,7 @@ let A = e => {
       className: o()(...T(a, r))
     }, n)
   },
-  C = null != Chunk454585.Z ? Chunk454585.Z.defaultRules : null,
+  A = null != Chunk454585.Z ? Chunk454585.Z.defaultRules : null,
   N = {
     link: {
       parse(e, t, n) {
@@ -118,7 +118,7 @@ let A = e => {
       }, n.key)
     },
     lheading: e => ({
-      react: (t, n, i) => (0, r.jsx)(A, {
+      react: (t, n, i) => (0, r.jsx)(C, {
         level: t.level,
         className: t.className,
         styleSheet: e,
@@ -126,7 +126,7 @@ let A = e => {
       }, i.key)
     }),
     heading: {
-      react: (e, t, n) => (0, r.jsx)(A, {
+      react: (e, t, n) => (0, r.jsx)(C, {
         level: e.level,
         children: t(e.content, n)
       }, n.key)
@@ -141,7 +141,7 @@ let A = e => {
       }
     },
     blockQuote: {
-      react: null == C ? true : C.blockQuote.react
+      react: null == A ? true : A.blockQuote.react
     },
     paragraph: {
       react: (e, t, n) => (0, r.jsx)("p", {

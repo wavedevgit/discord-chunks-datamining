@@ -80,14 +80,14 @@ function T(e, t) {
     resolution: y,
     fps: v,
     soundshareEnabled: T
-  } = (0, a.cj)([u.Z], () => u.Z.getState()), A = (0, a.e7)([p.Z], () => p.Z.getGoLiveSource()), C = (0, a.e7)([m.default], () => m.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
+  } = (0, a.cj)([u.Z], () => u.Z.getState()), C = (0, a.e7)([p.Z], () => p.Z.getGoLiveSource()), A = (0, a.e7)([m.default], () => m.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
     location: P
   } = (0, l.O)(), R = (0, a.e7)([_.Z, d.Z], () => d.Z.getChannel(_.Z.getVoiceChannelId())), D = i.useCallback((e, n, r, i) => {
     if (e) {
-      if (null != A) {
+      if (null != C) {
         let e = {
           qualityOptions: {
             preset: g.ApplicationStreamPresets.PRESET_CUSTOM,
@@ -96,26 +96,26 @@ function T(e, t) {
           },
           context: E.Yn.STREAM
         };
-        null != A.desktopSource ? e.desktopSettings = {
-          sourceId: A.desktopSource.id,
+        null != C.desktopSource ? e.desktopSettings = {
+          sourceId: C.desktopSource.id,
           sound: T
-        } : null != A.cameraSource && (e.cameraSettings = {
-          videoDeviceGuid: A.cameraSource.videoDeviceGuid,
-          audioDeviceGuid: A.cameraSource.audioDeviceGuid
+        } : null != C.cameraSource && (e.cameraSettings = {
+          videoDeviceGuid: C.cameraSource.videoDeviceGuid,
+          audioDeviceGuid: C.cameraSource.audioDeviceGuid
         }), s.Z.setGoLiveSource(e)
       }
     } else I(t, S(O({}, P), {
       object: h.qAy.RADIO_ITEM,
       objectType: i
     }))
-  }, [t, P, T, A]);
+  }, [t, P, T, C]);
   if (null == e) return null;
   let w = n === g.ApplicationStreamPresets.PRESET_DOCUMENTS ? g.ApplicationStreamFPS.FPS_30 : v,
     x = g.af.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, y, t, C, N, R);
+      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, y, t, A, N, R);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
@@ -128,7 +128,7 @@ function T(e, t) {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, t, w, C, N, R);
+      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, t, w, A, N, R);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),

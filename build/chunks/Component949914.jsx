@@ -125,7 +125,7 @@ let M = e => {
       expanded: p,
       handleToggleExpanded: m,
       subscriptionInfo: b
-    } = (0, A.Z)(t), [y, T] = i.useState(false), G = (0, h.Dt)(), {
+    } = (0, C.Z)(t), [y, T] = i.useState(false), G = (0, h.Dt)(), {
       analyticsLocations: Z
     } = (0, _.ZP)(), {
       shouldHideGuildPurchaseEntryPoints: B
@@ -221,7 +221,7 @@ let M = e => {
       }) : null;
     return (0, r.jsxs)("div", {
       className: j.container,
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(A.Z, {
         onClick: m,
         className: j.headerContainer,
         children: e => {

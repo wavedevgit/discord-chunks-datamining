@@ -30,7 +30,7 @@ function h(e) {
   } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, h)), v = g ? m : _, S = i.useMemo(() => (0, p.Zn)(h, E, t, {
     key: O,
     messageId: n
-  }), [E, O, h, t, n]), [I, T] = i.useState(false), A = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), C = c.Yk.useSetting(), N = i.useCallback(() => {
+  }), [E, O, h, t, n]), [I, T] = i.useState(false), C = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), A = c.Yk.useSetting(), N = i.useCallback(() => {
     o.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
@@ -49,13 +49,13 @@ function h(e) {
         key: u.I.RANDOM
       }))
     };
-    if (I || A && !C || !C) return;
+    if (I || C && !A || !A) return;
     e();
     let r = setInterval(e, 5e3);
     return () => {
       clearInterval(r)
     }
-  }, [C, t, b, h, h.name, I, n, A]), null == O) ? null : (0, r.jsx)(f.Z, {
+  }, [A, t, b, h, h.name, I, n, C]), null == O) ? null : (0, r.jsx)(f.Z, {
     className: v.effect,
     effect: S,
     onComplete: N,

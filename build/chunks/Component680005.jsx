@@ -108,7 +108,7 @@ function I(e) {
   } = e, c = e => {
     n(e), null == i || i()
   }, u = null != o ? (0, f.xg)(o) : null, d = 1 === l;
-  return 0 === l || d ? (0, r.jsx)(A, {
+  return 0 === l || d ? (0, r.jsx)(C, {
     appId: t,
     skuId: a,
     onClick: c,
@@ -117,7 +117,7 @@ function I(e) {
     text: null != u ? m.intl.formatToPlainString(m.t.i4T8vz, {
       rate: u
     }) : m.intl.string(m.t.uuzaAK)
-  }) : (0, r.jsx)(C, {
+  }) : (0, r.jsx)(A, {
     text: S(l, null != u ? u : "")
   })
 }
@@ -144,9 +144,9 @@ function T(e) {
   let b = e => {
     (null != n ? n : d)(e), null == i || i()
   };
-  return g ? (0, r.jsx)(C, {
+  return g ? (0, r.jsx)(A, {
     text: m.intl.string(m.t["6cfuDj"])
-  }) : (0, r.jsx)(A, {
+  }) : (0, r.jsx)(C, {
     appId: t,
     skuId: a.id,
     onClick: b,
@@ -157,7 +157,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   var {
     appId: t,
     skuId: n,
@@ -182,7 +182,7 @@ function A(e) {
   }))
 }
 
-function C(e) {
+function A(e) {
   let {
     text: t
   } = e;

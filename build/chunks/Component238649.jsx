@@ -52,7 +52,7 @@ let P = (e, t) => {
           ref: M,
           children: (0, r.jsxs)("div", {
             className: N.contentContainer,
-            children: [(0, r.jsx)(A.Z, {
+            children: [(0, r.jsx)(C.Z, {
               containerVisibilityPercentage: k
             }), D && (null != P ? (0, r.jsx)(y.Z, {
               expiresAt: P,
@@ -68,7 +68,7 @@ let P = (e, t) => {
                 variant: "display-md",
                 color: "header-primary",
                 className: N.header,
-                children: C.intl.string(C.t.YCZldK)
+                children: A.intl.string(A.t.YCZldK)
               })
             }), (0, r.jsxs)("div", {
               className: N.body,
@@ -102,7 +102,7 @@ let P = (e, t) => {
                 children: (0, r.jsx)(c.Text, {
                   color: "text-muted",
                   variant: "text-xs/medium",
-                  children: C.intl.format(C.t.kt9wxs, {
+                  children: A.intl.format(A.t.kt9wxs, {
                     cheapestMonthlyPrice: w
                   })
                 })

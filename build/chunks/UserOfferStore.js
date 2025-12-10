@@ -71,7 +71,7 @@ function O(e) {
   let {
     userTrialOffer: t
   } = e;
-  null != t ? b.userTrialOffers[t.trial_id] = t : A(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = false
+  null != t ? b.userTrialOffers[t.trial_id] = t : C(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = false
 }
 
 function v(e) {
@@ -80,11 +80,11 @@ function v(e) {
     userDiscount: n,
     userDiscountOffer: r
   } = e;
-  null == t && null == n && null == r && A(), null != t ? (b.userTrialOffers[t.trial_id] = t, b.userDiscountOffers = {}) : null != n ? (b.userDiscountOffers[n.discount_id] = n, b.userTrialOffers = {}) : null != r && (b.userDiscountOffers[r.discount_id] = r, b.userTrialOffers = {}), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = false, b.lastFetchSuccessful = true
+  null == t && null == n && null == r && C(), null != t ? (b.userTrialOffers[t.trial_id] = t, b.userDiscountOffers = {}) : null != n ? (b.userDiscountOffers[n.discount_id] = n, b.userTrialOffers = {}) : null != r && (b.userDiscountOffers[r.discount_id] = r, b.userTrialOffers = {}), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = false, b.lastFetchSuccessful = true
 }
 
 function S() {
-  A(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = false, b.lastFetchSuccessful = false
+  C(), b.userOffersLastFetchedAtDate = Date.now(), b.isFetching = false, b.lastFetchSuccessful = false
 }
 
 function I(e) {
@@ -103,10 +103,10 @@ function T(e) {
   null != t ? b.userTrialOffers[t.trial_id] = t : b.userTrialOffers = {}, null != n ? b.userDiscountOffers[n.discount_id] = n : null != r ? b.userDiscountOffers[r.discount_id] = r : b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = Date.now()
 }
 
-function A() {
+function C() {
   b.userTrialOffers = {}, b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = true, b.isFetching = false
 }
-let C = () => true;
+let A = () => true;
 
 function N() {
   return null != Chunk78839.Z.getPremiumTypeSubscription() && (null != b.userDiscountOffers[Chunk474936.dT] ? b.userDiscountOffers = {
@@ -134,7 +134,7 @@ function R() {
 }
 class D extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : E, this.waitFor(c.Z, o.Z, d.Z, l.default), this.syncWith([l.default], C), this.syncWith([d.Z], N), this.syncWith([o.Z], R)
+    b = null != e ? e : E, this.waitFor(c.Z, o.Z, d.Z, l.default), this.syncWith([l.default], A), this.syncWith([d.Z], N), this.syncWith([o.Z], R)
   }
   getUserTrialOffer(e) {
     if (null !== e) return b.userTrialOffers[e]
@@ -204,7 +204,7 @@ class D extends(r = Chunk442837.ZP.PersistedStore) {
     return b
   }
   forceReset() {
-    A()
+    C()
   }
   lastFetchSuccessful() {
     return b.lastFetchSuccessful
@@ -232,5 +232,5 @@ let w = new D(Chunk570140.Z, {
   BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: P,
   BILLING_PAYMENT_SOURCE_UPDATE_SUCCESS: P,
   BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: P,
-  LOGOUT: A
+  LOGOUT: C
 })

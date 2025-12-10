@@ -4,7 +4,7 @@
 require.d(exports, {
   Q4: () => P,
   Vv: () => I,
-  oO: () => A,
+  oO: () => C,
   po: () => T,
   x_: () => Chunk921948.Z
 }), require("./388685.js"), require("./35282.js");
@@ -116,7 +116,7 @@ function T(e, t) {
   }
 }
 
-function A(e) {
+function C(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (n) {
@@ -126,7 +126,7 @@ function A(e) {
   return null != (t = b.find(t => e <= t)) ? t : b[b.length - 1]
 }
 
-function C(e) {
+function A(e) {
   let [t, n] = e.split("?");
   return [t, s.parse(n)]
 }
@@ -144,7 +144,7 @@ function N(e) {
     srcIsAnimated: _ = false
   } = e;
   if (t.startsWith("data:image") || d.Z.isDiscordCdnUrl(t)) return t;
-  let [m, h] = C(t);
+  let [m, h] = A(t);
   null != l && (h.format = l), null != u && (h.quality = u), f && _ && (g.test(t) || E.test(t)) && (h.animated = true), E.test(t) && (h.format = "webp");
   let b = (0, c.Tj)({
     width: a,

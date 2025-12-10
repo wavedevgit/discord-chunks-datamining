@@ -342,7 +342,7 @@ let eb = e => {
           } = e;
           return t === f.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(E.IGR, {
             text: ep.intl.string(ep.t.y2b7CA),
-            color: g.Z.colors.BG_BRAND.css
+            color: g.Z.colors.BACKGROUND_BRAND.css
           }) : null
         }
       })

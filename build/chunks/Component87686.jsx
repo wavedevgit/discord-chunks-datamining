@@ -51,13 +51,13 @@ let h = {
           N >= w ? p.currentTime = (0, f.my)(C) : p.currentTime = (0, f.my)(N), p.volume = (0, u.Z)(t), p.play(), y(true)
         }
       }, [p, w, P, N, b, C, t]),
-      M = a.useCallback(e => {
+      k = a.useCallback(e => {
         x(e), null == v || v({
           startMs: e.startPositionMs,
           endMs: e.endPositionMs
         })
       }, [v]),
-      k = a.useCallback(e => {
+      M = a.useCallback(e => {
         null != p && (p.currentTime = e)
       }, [p]);
     return (0, l.jsxs)("div", {
@@ -90,9 +90,9 @@ let h = {
         })]
       }), (0, l.jsx)(d.Z, {
         playing: b,
-        onPlaybackChange: k,
+        onPlaybackChange: M,
         onPausePlayback: P,
-        onChangePosition: M,
+        onChangePosition: k,
         disabled: i
       })]
     })

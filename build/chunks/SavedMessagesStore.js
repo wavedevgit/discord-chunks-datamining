@@ -100,11 +100,11 @@ function T() {
   h = true
 }
 
-function A() {
+function C() {
   h = true, m.clear(), y.clear(), b.clear()
 }
 
-function C(e) {
+function A(e) {
   let {
     savedMessages: t
   } = e;
@@ -273,8 +273,8 @@ class Z extends(r = Chunk442837.ZP.Store) {
 u(Z, "displayName", "SavedMessagesStore");
 let B = new Z(Chunk570140.Z, {
   POST_CONNECTION_OPEN: T,
-  LOGOUT: A,
-  SAVED_MESSAGES_UPDATE: C,
+  LOGOUT: C,
+  SAVED_MESSAGES_UPDATE: A,
   SAVED_MESSAGE_CREATE: N,
   SAVED_MESSAGE_DELETE: P,
   MESSAGE_DELETE: D,

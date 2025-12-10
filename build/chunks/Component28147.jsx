@@ -131,8 +131,8 @@ function B(e) {
       }))]
     }, [y, h]),
     T = I.length > 0,
-    A = f && !T && !v;
-  return d ? (0, r.jsx)(W, {}) : A ? (0, r.jsx)(S.A, {
+    C = f && !T && !v;
+  return d ? (0, r.jsx)(W, {}) : C ? (0, r.jsx)(S.A, {
     type: g.LG.SEARCH_EMPTY,
     searchQuery: n,
     textContent: a === g._b.TEXT ? P.intl.string(P.t.LSNOYf) : P.intl.string(P.t.Clu7Qh)
@@ -157,8 +157,8 @@ function F(e) {
     context: a,
     commandResults: o,
     query: s
-  } = e, p = o.length > U, E = i.useMemo(() => p ? o.slice(0, U) : o, [o, p]), [b, y] = i.useState(false), v = null != (t = (0, l.Z)(b)) ? t : b, S = i.useCallback(() => y(e => !e), []), A = (null != (n = (0, l.Z)(s)) ? n : s)[0] !== s[0], D = b && !A;
-  i.useLayoutEffect(() => y(false), [A]);
+  } = e, p = o.length > U, E = i.useMemo(() => p ? o.slice(0, U) : o, [o, p]), [b, y] = i.useState(false), v = null != (t = (0, l.Z)(b)) ? t : b, S = i.useCallback(() => y(e => !e), []), C = (null != (n = (0, l.Z)(s)) ? n : s)[0] !== s[0], D = b && !C;
+  i.useLayoutEffect(() => y(false), [C]);
   let {
     ref: w,
     isTransitioning: x,
@@ -167,7 +167,7 @@ function F(e) {
     key: s,
     isExpanded: D,
     durationMs: 200,
-    maxAnimationHeight: C.K7
+    maxAnimationHeight: A.K7
   });
   i.useEffect(() => {
     !v && b && (0, c.yw)(N.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
@@ -273,7 +273,7 @@ function H(e) {
           installOnDemand: o,
           query: a
         }, i.id)
-      }), i && M.map(e => (0, r.jsx)(A.Z, {}, e))]
+      }), i && M.map(e => (0, r.jsx)(C.Z, {}, e))]
     })]
   }) : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(I.Z, {
@@ -320,12 +320,12 @@ function W() {
       title: Chunk388032.intl.string(Chunk388032.t["0hKkS+"])
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk399235.sectionContentContainer,
-      children: j.map(e => (0, r.jsx)(A.Z, {}, e))
+      children: j.map(e => (0, r.jsx)(C.Z, {}, e))
     }), (0, Chunk54381.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk399235.sectionContentContainer,
-      children: M.map(e => (0, r.jsx)(A.Z, {}, e))
+      children: M.map(e => (0, r.jsx)(C.Z, {}, e))
     })]
   })
 }

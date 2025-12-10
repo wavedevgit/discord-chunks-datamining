@@ -77,8 +77,8 @@ function T(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = new Chunk710845.Z("PopoutWindowStore"),
-  C = {},
+let C = new Chunk710845.Z("PopoutWindowStore"),
+  A = {},
   N = {},
   P = {},
   R = {},
@@ -104,7 +104,7 @@ function k(e, t) {
 
 function U(e) {
   let t = P[e];
-  null == t || t.closed || (C[e] = {
+  null == t || t.closed || (A[e] = {
     x: t.screenX,
     y: t.screenY,
     width: t.innerWidth,
@@ -114,7 +114,7 @@ function U(e) {
 }
 
 function G(e) {
-  A.info("Unmounting popout window", e);
+  C.info("Unmounting popout window", e);
   let t = P[e];
   a()(null != t, "Popout window was null during unmount"), t.removeEventListener("focus", L), t.removeEventListener("blur", L), t.removeEventListener("resize", j);
   let n = R[e];
@@ -126,7 +126,7 @@ function Z(e, t, r) {
     o = new URL(t).origin,
     s = new URL("".concat(window.location.protocol, "//").concat(window.location.host)).origin,
     l = URL.canParse(n.p) ? new URL(n.p).origin : "";
-  if (o !== s && o !== l) return void A.warn("Not injecting stylesheet, unrecognized origin", o);
+  if (o !== s && o !== l) return void C.warn("Not injecting stylesheet, unrecognized origin", o);
   let c = i.createElement("link");
   c.href = t, c.rel = "stylesheet", c.integrity = r, a()(null != i.head, "Document head was null"), i.head.appendChild(c)
 }
@@ -138,7 +138,7 @@ function B(e, t) {
 function F(e) {
   let t = P[e],
     n = D[e];
-  if (null == t) return void A.warn("Failed to open window", e);
+  if (null == t) return void C.warn("Failed to open window", e);
   let r = t.document;
   (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", j), M ? k(e, t) : B(e, t);
   let i = (0, l.createRoot)(r.getElementById(x));
@@ -156,7 +156,7 @@ function V(e) {
     a = P[t],
     o = null != a && !a.closed;
   if (o && !i) return m.isPlatformEmbedded ? h.ZP.focus(t) : null != a && a.focus(), false;
-  if (o && i) return A.info("Already has open window, skipping focus"), false;
+  if (o && i) return C.info("Already has open window, skipping focus"), false;
   let {
     defaultWidth: s,
     defaultHeight: l,
@@ -164,7 +164,7 @@ function V(e) {
   } = n, u = I(n, ["defaultWidth", "defaultHeight", "defaultAlwaysOnTop"]), d = S(O({}, u), {
     width: null != s ? s : u.width,
     height: null != l ? l : u.height
-  }), _ = c, g = C[t];
+  }), _ = c, g = A[t];
   if (null != g) {
     let {
       width: e,
@@ -181,7 +181,7 @@ function V(e) {
     })
   }
   let y = (0, E.Z)(d);
-  A.info("Opening popout window", {
+  C.info("Opening popout window", {
     key: t,
     encodedFeatures: y
   });
@@ -199,7 +199,7 @@ function V(e) {
       }
     }), e
   }
-  i ? A.verbose("Opening out of process overlay window", t) : null == v || v.focus(), P[t] = v, D[t] = r, m.isPlatformEmbedded && (h.ZP.setAlwaysOnTop(t, _), N[t] = _, h.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), w.add(t)
+  i ? C.verbose("Opening out of process overlay window", t) : null == v || v.focus(), P[t] = v, D[t] = r, m.isPlatformEmbedded && (h.ZP.setAlwaysOnTop(t, _), N[t] = _, h.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), w.add(t)
 }
 
 function H(e) {
@@ -231,7 +231,7 @@ function K(e) {
   if (null != e && !e.closed) try {
     e.close()
   } catch (e) {
-    A.error("Error closing popout window", e)
+    C.error("Error closing popout window", e)
   }
 }
 
@@ -266,13 +266,13 @@ function X(e) {
 }
 class J extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(_.default), window.addEventListener("message", W), window.addEventListener("beforeunload", q), C = null != e ? e : {}
+    this.waitFor(_.default), window.addEventListener("message", W), window.addEventListener("beforeunload", q), A = null != e ? e : {}
   }
   getWindow(e) {
     return P[e]
   }
   getWindowState(e) {
-    return C[e]
+    return A[e]
   }
   getWindowKeys() {
     return Object.keys(P)
@@ -295,7 +295,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     return (null == n || null == (t = n.document) ? true : t.visibilityState) === "visible"
   }
   getState() {
-    return C
+    return A
   }
   isWindowFullyInitialized(e) {
     return null != P[e] && null != R[e] && null != D[e]
@@ -306,7 +306,7 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     return (null == r || null == (n = r.document) || null == (t = n.fullscreenElement) ? true : t.id) === x
   }
   unmountWindow(e) {
-    return this.isWindowFullyInitialized(e) || A.warn("Attempted to unmount partially initialized window ".concat(e)), Y(e)
+    return this.isWindowFullyInitialized(e) || C.warn("Attempted to unmount partially initialized window ".concat(e)), Y(e)
   }
 }
 y(J, "displayName", "PopoutWindowStore"), y(J, "persistKey", "PopoutWindowStore");

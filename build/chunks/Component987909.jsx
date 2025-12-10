@@ -101,7 +101,7 @@ function T(e) {
   s.Z.sendGreetMessage(t.id, r.id, s.Z.getSendMessageOptionsForReply(i))
 }
 
-function A(e) {
+function C(e) {
   let {
     sticker: t,
     event: n,
@@ -112,7 +112,7 @@ function A(e) {
   }))
 }
 
-function C(e) {
+function A(e) {
   let {
     currentUser: t,
     channel: n,
@@ -141,7 +141,7 @@ function C(e) {
       channel: n,
       message: a,
       sticker: p
-    }), A({
+    }), C({
       sticker: p,
       event: d,
       eventProperties: f
@@ -174,7 +174,7 @@ function N(e) {
   });
   return null != l && c ? (0, r.jsx)("div", {
     className: E.CTAMessage,
-    children: (0, r.jsx)(C, {
+    children: (0, r.jsx)(A, {
       currentUser: l,
       channel: t,
       message: n,

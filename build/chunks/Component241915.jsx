@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => N,
-  _: () => A
+  _: () => C
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -84,7 +84,7 @@ function T(e) {
     className: s()(_.resizeHandle, v[l])
   })
 }
-class A extends(r = Chunk473749.PureComponent) {
+class C extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setPosition(this.props.position)
   }
@@ -311,11 +311,11 @@ class A extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-m(A, "defaultProps", {
+m(C, "defaultProps", {
   hidden: false,
   roundCorners: true
 });
-let C = e => {
+let A = e => {
     let {
       selectedPIPWindow: t,
       pipWindows: n,
@@ -331,16 +331,16 @@ let C = e => {
       resizeConfig: v,
       className: S,
       getDockedRectPositionY: I
-    } = e, [T, C] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
+    } = e, [T, A] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
       let n = "string" == typeof e.component ? m[e.component] : e.component;
       return (0, i.jsx)(n, h({
         width: r
       }, e.props), e.id)
     }), [n, t, r, m]), P = a.useCallback(() => {
-      C(true)
+      A(true)
     }, []), R = a.useCallback(() => {
-      C(false)
+      A(false)
     }, []), D = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), w = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
     return null == t ? (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
@@ -351,7 +351,7 @@ let C = e => {
         className: s()(_.pictureInPicture, {
           [_.dragging]: T
         }, S),
-        children: (0, i.jsx)(A, {
+        children: (0, i.jsx)(C, {
           appContext: g,
           position: t.position,
           id: t.id,
@@ -376,4 +376,4 @@ let C = e => {
       })
     })
   },
-  N = Chunk473749.memo(C)
+  N = Chunk473749.memo(A)

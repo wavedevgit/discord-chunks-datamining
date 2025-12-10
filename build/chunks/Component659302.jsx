@@ -13,7 +13,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk638730 = require("./638730.js");
@@ -60,7 +60,7 @@ function L(e) {
       questContentPosition: r,
       questContentRowIndex: a,
       sourceQuestContent: s
-    }), (0, A.xN)(t.config) && !f ? (0, R.B)() : d ? (0, A.Bg)(t.config) ? (0, c.$)() : (0, A.Xv)(t.config) ? (0, D.openQuestCollectibleRewardModal)(t, n, s) : (0, A.vQ)(t.config) ? (0, D.openQuestInGameRewardModal)(t, n, s) : (0, A.xN)(t.config) ? (0, D.openQuestOrbsRewardModal)(t, n, s) : (0, D.openQuestsRewardCodeModal)({
+    }), (0, C.xN)(t.config) && !f ? (0, R.B)() : d ? (0, C.Bg)(t.config) ? (0, c.$)() : (0, C.Xv)(t.config) ? (0, D.openQuestCollectibleRewardModal)(t, n, s) : (0, C.vQ)(t.config) ? (0, D.openQuestInGameRewardModal)(t, n, s) : (0, C.xN)(t.config) ? (0, D.openQuestOrbsRewardModal)(t, n, s) : (0, D.openQuestsRewardCodeModal)({
       quest: t,
       sourceQuestContent: s
     }) : (0, R.B)())
@@ -121,7 +121,7 @@ let j = e => {
   };
 
 function k(e) {
-  return e.config.features.includes(w.S7.START_QUEST_CTA) ? (0, C.pO)(e) ? e.config.features.includes(w.S7.CLOUD_GAMING_ACTIVITY) ? {
+  return e.config.features.includes(w.S7.START_QUEST_CTA) ? (0, A.pO)(e) ? e.config.features.includes(w.S7.CLOUD_GAMING_ACTIVITY) ? {
     text: x.intl.string(x.t["+qoymD"]),
     questContentCTA: p.jZ.START_QUEST
   } : {
@@ -164,14 +164,14 @@ function U(e) {
       case O.OH.UNACCEPTED:
         let e = x.intl.string(x.t.kUQLMJ),
           t = p.jZ.ACCEPT_QUEST;
-        return c && (e = x.intl.string(x.t.umdNin), t = p.jZ.START_QUEST), (u || (0, C.pO)(n)) && ({
+        return c && (e = x.intl.string(x.t.umdNin), t = p.jZ.START_QUEST), (u || (0, A.pO)(n)) && ({
           text: e,
           questContentCTA: t
         } = k(n)), {
           text: e,
           tooltipText: null,
           onClick: async () => {
-            if ((0, C.HJ)(n)) {
+            if ((0, A.HJ)(n)) {
               await (0, f.AH)(n.id, {
                 questContent: a,
                 questContentCTA: t,
@@ -236,7 +236,7 @@ function U(e) {
             sourceQuestContent: d
           })
         };
-        if ((0, C.HJ)(n)) return {
+        if ((0, A.HJ)(n)) return {
           text: x.intl.string(x.t.IsH2Sp),
           tooltipText: null,
           onClick: () => {
@@ -274,7 +274,7 @@ function U(e) {
         };
       case O.OH.CLAIMED:
         return {
-          tooltipText: null, onClick: m, text: (0, A.wj)(n.config) ? x.intl.string(x.t.bAGFz3) : x.intl.string(x.t.vTgCWx)
+          tooltipText: null, onClick: m, text: (0, C.wj)(n.config) ? x.intl.string(x.t.bAGFz3) : x.intl.string(x.t.vTgCWx)
         }
     }
   }, [r, c, h, l, m, n, a, o, s, E, g, u, b, d, v])
@@ -312,7 +312,7 @@ function Z(e) {
     isQuestBarVisible: false,
     reason: "quest_is_null"
   };
-  if ((0, A.Bg)(r.config)) {
+  if ((0, C.Bg)(r.config)) {
     if (!s && !c) return {
       isQuestBarVisible: false,
       reason: "premium_subscription_not_fetched"

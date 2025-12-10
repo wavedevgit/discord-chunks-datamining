@@ -85,7 +85,7 @@ function S(e) {
     "aria-label": p,
     delay: m = O,
     dataMeticulousIgnore: E
-  } = e, [S, I] = i.useState(0), [T, A] = i.useState(false), [C, N] = i.useState(false), [P] = i.useState(() => new o.V7), [R] = i.useState(() => new o.V7);
+  } = e, [S, I] = i.useState(0), [T, C] = i.useState(false), [A, N] = i.useState(false), [P] = i.useState(() => new o.V7), [R] = i.useState(() => new o.V7);
   if (i.useEffect(() => () => {
       P.stop(), R.stop()
     }, [P, R]), !c.wS) return (0, r.jsx)(r.Fragment, {
@@ -105,10 +105,10 @@ function S(e) {
       })
     },
     j = (e, t) => {
-      !C && T && t.phase === d.UkZ.LEAVE && A(false)
+      !A && T && t.phase === d.UkZ.LEAVE && C(false)
     },
     M = () => {
-      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), C || I(S + 1), N(true), A(true), P.start(b, () => N(false)), R.start(y, () => I(0))
+      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(S + 1), N(true), C(true), P.start(b, () => N(false)), R.start(y, () => I(0))
     };
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
@@ -117,7 +117,7 @@ function S(e) {
     "aria-label": p,
     dataMeticulousIgnore: E,
     color: x,
-    forceOpen: C,
+    forceOpen: A,
     onAnimationRest: j,
     children: e => {
       var {

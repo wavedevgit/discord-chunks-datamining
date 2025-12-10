@@ -146,7 +146,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
       onRemove: O,
       guildId: v,
       disableBorderColor: I,
-      onMouseDown: C
+      onMouseDown: A
     } = e,
     N = (0, u.JA)(E.id),
     {
@@ -204,7 +204,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
       className: o()(k.role, g),
       style: W,
       onContextMenu: j,
-      onMouseDown: C,
+      onMouseDown: A,
       "aria-label": E.name,
       tabIndex: P
     }, R), {
@@ -225,7 +225,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
           className: k.roleRemoveIcon,
           "aria-hidden": true
         }) : null]
-      }), null != D ? (0, r.jsx)(A.Z, B(G({
+      }), null != D ? (0, r.jsx)(C.Z, B(G({
         className: k.roleIcon
       }, D), {
         enableTooltip: false
@@ -348,8 +348,8 @@ function X(e) {
       let t = s;
       t.includes(e) || (t = [...t, e]), I.Z.updateMemberRoles(a.id, n.id, t, [e], [])
     }, [s, a.id, n.id]),
-    [T, A] = i.useState(null),
-    N = (0, p.Wu)([D.Z], () => D.Z.getManyRoles(a.id, s).sort(C.Z)),
+    [T, C] = i.useState(null),
+    N = (0, p.Wu)([D.Z], () => D.Z.getManyRoles(a.id, s).sort(A.Z)),
     P = i.useMemo(() => null != T ? N.slice(0, T) : N, [N, T]),
     R = s.length - P.length;
   i.useLayoutEffect(() => {
@@ -366,7 +366,7 @@ function X(e) {
         e++
       }
     }
-    A(t => e < P.length ? e : t)
+    C(t => e < P.length ? e : t)
   }, [f, _, P]);
   let U = x.default.getCurrentUser();
   l()(null != U, "MemberRolesList: currentUser cannot be undefined");

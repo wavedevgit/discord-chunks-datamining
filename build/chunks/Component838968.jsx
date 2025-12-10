@@ -173,7 +173,7 @@ let j = Chunk473749.forwardRef(function(e, n) {
       }), "beta" === c && (0, r.jsx)(s.IGR, {
         className: m.new,
         text: u.intl.string(u.t.oW0eUd),
-        color: s.TVs.colors.BG_BRAND.css
+        color: s.TVs.colors.BACKGROUND_BRAND.css
       })]
     })
   })

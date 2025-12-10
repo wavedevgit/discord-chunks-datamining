@@ -82,7 +82,7 @@ let x = Object.freeze({
 
 function j(e) {
   let t = v.en(e.sku);
-  return null != t ? A.intl.formatToPlainString(A.t.Aqe2ZC, {
+  return null != t ? C.intl.formatToPlainString(C.t.Aqe2ZC, {
     date: t
   }) : null
 }
@@ -96,24 +96,24 @@ class M extends(r = Chunk473749.Component) {
     switch ("uninstalling" !== e && (this._uninstallStringIndex = null), e) {
       case "install":
       case "unsupported_os":
-        return A.intl.string(A.t.nL0WvC);
+        return C.intl.string(C.t.nL0WvC);
       case "update":
-        return A.intl.string(A.t.tkhwp9);
+        return C.intl.string(C.t.tkhwp9);
       case "paused":
-        return A.intl.string(A.t["6EKrh4"]);
+        return C.intl.string(C.t["6EKrh4"]);
       case "locate":
-        return A.intl.string(A.t["nIj+a0"]);
+        return C.intl.string(C.t["nIj+a0"]);
       case "uninstalling":
         let t = L();
         return null == this._uninstallStringIndex && (this._uninstallStringIndex = Math.floor(Math.random() * t.length)), t[this._uninstallStringIndex];
       case "queued":
-        return A.intl.string(A.t.TiJg5l);
+        return C.intl.string(C.t.TiJg5l);
       case "downloading":
-        return A.intl.string(A.t.Tdhepf);
+        return C.intl.string(C.t.Tdhepf);
       case "preorder_wait":
-        return A.intl.string(A.t.xiXyPc);
+        return C.intl.string(C.t.xiXyPc);
       case "add_to_library":
-        return A.intl.string(A.t.r3fwuQ);
+        return C.intl.string(C.t.r3fwuQ);
       default:
         throw Error("Unexpected button state")
     }
@@ -165,19 +165,19 @@ class M extends(r = Chunk473749.Component) {
       tooltipPosition: s
     } = this.props;
     return (0, i.jsxs)("div", {
-      className: C.disabledButtonWrapper,
+      className: A.disabledButtonWrapper,
       children: [(0, i.jsxs)(c.zx, {
         className: n,
         fullWidth: r,
         size: a,
-        color: null != o ? o : C.disabledButtonColor,
+        color: null != o ? o : A.disabledButtonColor,
         disabled: true,
         children: [this.getText(e), this.renderProgressBar()]
       }), (0, i.jsx)(l.u, {
         text: t,
         position: s,
         children: (0, i.jsx)("div", {
-          className: C.disabledButtonOverlay
+          className: A.disabledButtonOverlay
         })
       })]
     })

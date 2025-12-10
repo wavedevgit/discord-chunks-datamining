@@ -175,8 +175,8 @@ eh.prototype = {
     var t, n, r, i, a, o, l, c = this.entries,
       u = N(e);
     if (u)
-      for (n = (t = C(e, u)).next; !(r = s(n, t)).done;) {
-        if ((o = s(a = (i = C(v(r.value))).next, i)).done || (l = s(a, i)).done || !s(a, i).done) throw new H("Expected sequence with length 2");
+      for (n = (t = A(e, u)).next; !(r = s(n, t)).done;) {
+        if ((o = s(a = (i = A(v(r.value))).next, i)).done || (l = s(a, i)).done || !s(a, i).done) throw new H("Expected sequence with length 2");
         X(c, {
           key: I(o.value),
           value: I(l.value)
@@ -303,8 +303,8 @@ if (Chunk477732(eE, {
       if (S(e)) {
         var t, n = e.body;
         if (O(n) === L) return eb(t = e.headers ? new B(e.headers) : new B, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), T(e, {
-          body: A(0, I(n)),
-          headers: A(0, t)
+          body: C(0, I(n)),
+          headers: C(0, t)
         })
       }
       return e

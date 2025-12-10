@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk26151 = require("./26151.js"),
@@ -145,7 +145,7 @@ function es(e) {
   } = (0, I.Z)(), p = (0, T.Z)(n), _ = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
     className: o()(q.wrapper, q.actions),
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(A.Z, {
       iconComponent: c.Dio,
       label: K.intl.string(K.t.WAI6xu),
       className: q.actionButton,
@@ -191,7 +191,7 @@ function es(e) {
           channel: n,
           onPopoutClick: g ? i : null,
           popoutOpen: a,
-          onCameraUnavailable: A.Z,
+          onCameraUnavailable: C.Z,
           onChange: () => {
             var e;
             (0, B.v)(s, B.d.JOIN_VIDEO_CALL), M.default.track(H.rMx.RING_CALL_ACCEPTED, J({
@@ -227,7 +227,7 @@ function el(e) {
     id: S.id,
     icon: S.icon,
     size: ea
-  }) : null, T = null != (t = (0, g.x)(m, ea, true)) ? t : I, A = (0, E.ZP)(m), [C, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(W.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), P = null != S ? "".concat(A, ", ").concat(S.name) : A, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(m.id)), Z = i.useCallback(e => {
+  }) : null, T = null != (t = (0, g.x)(m, ea, true)) ? t : I, C = (0, E.ZP)(m), [A, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(W.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), P = null != S ? "".concat(C, ", ").concat(S.name) : C, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(m.id)), Z = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), B = (0, c.q_F)({
     value: +!!O,
@@ -241,7 +241,7 @@ function el(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [m]);
-  let F = M === H.WtW.VIDEO && C && N > 0,
+  let F = M === H.WtW.VIDEO && A && N > 0,
     {
       enabled: V
     } = R.Z.useExperiment({

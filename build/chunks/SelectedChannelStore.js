@@ -107,7 +107,7 @@ function V(e, t) {
 
 function H(e) {
   let t = O.Z.getMutableBasicGuildChannelsForGuild(e),
-    n = f().find(t, e => e.type === C.d4z.GUILD_VOICE);
+    n = f().find(t, e => e.type === A.d4z.GUILD_VOICE);
   return null == n ? true : n.id
 }
 
@@ -127,7 +127,7 @@ function Y() {
 function W(e) {
   if (r = e.sessionId, null != s) {
     let e = O.Z.getChannel(s);
-    null != e && T.Z.can(p.$e(C.Plq.VIEW_CHANNEL, C.Plq.CONNECT), e) || (s = null)
+    null != e && T.Z.can(p.$e(A.Plq.VIEW_CHANNEL, A.Plq.CONNECT), e) || (s = null)
   }
   Y() && B()
 }
@@ -156,7 +156,7 @@ function Q(e) {
   if (null == t) {
     let e = O.Z.getChannel(s),
       t = null == e ? true : e.guild_id;
-    null != t && t !== A.Z.getGuildId() && M[t] === s && (M[t] = F(t))
+    null != t && t !== C.Z.getGuildId() && M[t] === s && (M[t] = F(t))
   }
   s = t, B()
 }
@@ -164,12 +164,12 @@ function Q(e) {
 function X(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
   if (G.delete(e), null == t) {
-    let n = A.Z.getGuildId();
+    let n = C.Z.getGuildId();
     M[Z(n)] === e && (t = n)
   }
   let i = null != S.Z.getGuild(t) ? t : null,
     a = false;
-  s === e && (s = null, a = true), M[Z(i)] === e && (M[Z(i)] = r && null != n ? n : F(Z(i)), A.Z.getGuildId() === i && (0, g.dL)(C.Z5c.CHANNEL(t, M[Z(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && B()
+  s === e && (s = null, a = true), M[Z(i)] === e && (M[Z(i)] = r && null != n ? n : F(Z(i)), C.Z.getGuildId() === i && (0, g.dL)(A.Z5c.CHANNEL(t, M[Z(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && B()
 }
 
 function J(e) {
@@ -255,8 +255,8 @@ function ea(e) {
     channel: t
   } = e;
   switch (t.type) {
-    case C.d4z.GUILD_ANNOUNCEMENT:
-    case C.d4z.GUILD_TEXT:
+    case A.d4z.GUILD_ANNOUNCEMENT:
+    case A.d4z.GUILD_TEXT:
       let n = t.guild_id;
       if (null != n && null == U[n] && (U[n] = t.id), null != n && null == M[n]) return M[n] = F(n), true
   }
@@ -283,7 +283,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
   getChannelId(e) {
     var t, n;
     let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-      i = Z(e === C.ME ? null : null != (t = null != e ? e : A.Z.getGuildId()) ? t : null);
+      i = Z(e === A.ME ? null : null != (t = null != e ? e : C.Z.getGuildId()) ? t : null);
     return r ? null != (n = M[i]) ? n : F(i) : M[i]
   }
   getVoiceChannelId() {

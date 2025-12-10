@@ -209,7 +209,7 @@ function I(e, t) {
   return e && (i.is.fun(e) ? e(t) : e.current = t), t
 }
 var T = Symbol.for("AnimatedComponent"),
-  A = function(e, t) {
+  C = function(e, t) {
     var n = true === t ? {} : t,
       r = n.applyAnimatedValues,
       a = true === r ? function() {
@@ -228,16 +228,16 @@ var T = Symbol.for("AnimatedComponent"),
         } : l
       },
       u = function(e) {
-        var t = C(e) || "Anonymous";
+        var t = A(e) || "Anonymous";
         return (e = i.is.str(e) ? S(e, c) : e[T] || (e[T] = S(e, c))).displayName = "Animated(" + t + ")", e
       };
     return i.each(e, function(e, t) {
-      i.is.str(t) || (t = C(e)), u[t] = u(e)
+      i.is.str(t) || (t = A(e)), u[t] = u(e)
     }), {
       animated: u
     }
   },
-  C = function(e) {
+  A = function(e) {
     return i.is.str(e) ? e : e && i.is.str(e.displayName) ? e.displayName : i.is.fun(e) && e.name || null
   };
-exports.Animated = h, exports.AnimatedArray = O, exports.AnimatedObject = y, exports.AnimatedProps = v, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = A, exports.getAnimated = p, exports.getPayload = m, exports.isAnimated = f, exports.setAnimated = _
+exports.Animated = h, exports.AnimatedArray = O, exports.AnimatedObject = y, exports.AnimatedProps = v, exports.AnimatedString = E, exports.AnimatedValue = g, exports.createHost = C, exports.getAnimated = p, exports.getPayload = m, exports.isAnimated = f, exports.setAnimated = _

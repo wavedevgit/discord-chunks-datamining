@@ -102,7 +102,7 @@ function v(e) {
       }, p(n)),
       sourceQuestContent: g
     })
-  }, [h, t, v, n, C, E, g]), R = r.useCallback(e => {
+  }, [h, t, v, n, C, E, g]), T = r.useCallback(e => {
     null != t.current && C({
       questId: h,
       event: m.rMx.QUEST_VIDEO_RESUMED,
@@ -114,7 +114,7 @@ function v(e) {
       }, p(n)),
       sourceQuestContent: g
     })
-  }, [h, t, v, n, C, E, g]), T = r.useCallback(e => {
+  }, [h, t, v, n, C, E, g]), R = r.useCallback(e => {
     null != t.current && null != e && C({
       questId: h,
       event: m.rMx.QUEST_VIDEO_PAUSED,
@@ -281,8 +281,8 @@ function v(e) {
     trackQuestVideoLoadingEnded: j,
     trackQuestVideoTimeToFirstFrame: P,
     trackQuestVideoProgressed: D,
-    trackQuestVideoResumed: R,
-    trackQuestVideoPaused: T,
+    trackQuestVideoResumed: T,
+    trackQuestVideoPaused: R,
     trackQuestVideoFocusChange: I,
     trackQuestContentClick: w,
     trackQuestVideoBufferingStarted: N,

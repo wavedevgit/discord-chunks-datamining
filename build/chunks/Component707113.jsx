@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk201070 = require("./201070.js"),
@@ -40,11 +40,11 @@ function g(e) {
     className: n,
     onPageChange: i,
     onMemberSelect: s
-  } = e, g = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(g), [g]), v = (0, d.$j)(g), C = (0, d.M3)(g), _ = r.useCallback(e => {
+  } = e, g = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(g), [g]), v = (0, d.$j)(g), _ = (0, d.M3)(g), C = r.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), S = (0, m.xb)(C, v, p), T = r.useRef(null), E = r.useRef(null), N = r.useCallback(() => {
+  }, [s]), T = (0, m.xb)(_, v, p), S = r.useRef(null), E = r.useRef(null), N = r.useCallback(() => {
     var e;
-    null == (e = T.current) || e.resetSearchText()
+    null == (e = S.current) || e.resetSearchText()
   }, []);
   return (0, l.jsx)("div", {
     className: a()(h.mainTableContainer, n),
@@ -54,15 +54,15 @@ function g(e) {
       orientation: "horizontal",
       children: [(0, l.jsx)(b.Z, {
         guild: t,
-        ref: T
+        ref: S
       }), (0, l.jsx)(f, {
         guild: t
       }), (0, l.jsx)(x.Z, {
         guild: t,
-        onSelectRow: _,
-        searchState: S,
+        onSelectRow: C,
+        searchState: T,
         onResetForNewMembers: N
-      }), S !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(j.Z, {
+      }), T !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(j.Z, {
         guildId: t.id,
         onPageChange: i
       })]

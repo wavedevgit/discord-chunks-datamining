@@ -43,8 +43,8 @@ var a, Chunk50153 = require("./50153.js"),
   Chunk81894 = require("./81894.js"),
   I = Chunk40375("draft_tree_data_support"),
   T = "&nbsp;",
-  A = " ",
-  C = RegExp("\r", "g"),
+  C = " ",
+  A = RegExp("\r", "g"),
   N = RegExp("\n", "g"),
   P = RegExp("^\n", "g"),
   R = RegExp(T, "g"),
@@ -203,7 +203,7 @@ var a, Chunk50153 = require("./50153.js"),
       })) ? Math.max(require, module - r[0]) : require) ? (this.currentText = "", this.characterList = g()) : (this.currentText = this.currentText.slice(exports, require), this.characterList = this.characterList.slice(exports, require))
     }, exports._addTextNode = function(e, t) {
       var n = e.textContent;
-      "" === n.trim() && "pre" !== this.wrapper && (n = " "), "pre" !== this.wrapper && (n = (n = n.replace(P, "")).replace(N, A)), this._appendText(n, t)
+      "" === n.trim() && "pre" !== this.wrapper && (n = " "), "pre" !== this.wrapper && (n = (n = n.replace(P, "")).replace(N, C)), this._appendText(n, t)
     }, exports._addBreakNode = function(e, t) {
       O(e) && this._appendText("\n", t)
     }, exports._addImgNode = function(e, t) {
@@ -263,7 +263,7 @@ var a, Chunk50153 = require("./50153.js"),
 module.exports = function(e) {
   var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : c,
-    r = t(e = e.trim().replace(C, "").replace(R, A).replace(D, "").replace(w, ""));
+    r = t(e = e.trim().replace(A, "").replace(R, C).replace(D, "").replace(w, ""));
   return r ? new Y(G(n), function(e, t) {
     return "li" === e ? "ol" === t ? "ordered-list-item" : "unordered-list-item" : null
   }).addDOMNode(r).getContentBlocks() : null

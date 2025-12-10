@@ -33,19 +33,19 @@ let b = 1e3,
         var e;
         null == (e = S.current) || e.play()
       }
-    }, [O]), A = (0, i.useCallback)(() => {
+    }, [O]), C = (0, i.useCallback)(() => {
       if ("exit" !== O && (v("exit"), null != I.current)) {
         var e;
         null == (e = I.current) || e.play()
       }
-    }, [O]), [C, N] = (0, i.useState)(false);
+    }, [O]), [A, N] = (0, i.useState)(false);
     (0, i.useEffect)(() => {
       b && N(true)
     }, [b]);
     let {
       mediaUrls: P,
       isSuccess: R
-    } = (0, _.Z)(!y && a && C), D = (0, i.useRef)(null), [w, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
+    } = (0, _.Z)(!y && a && A), D = (0, i.useRef)(null), [w, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
         a && n && !U && "none" === M && (y || !R ? (k("static"), y || (G(true), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.Z.dispatch({
@@ -57,12 +57,12 @@ let b = 1e3,
         }))
       }, [y, a, n, R, U, M]), (0, i.useEffect)(() => {
         function e() {
-          x(true), A()
+          x(true), C()
         }
         return p.S.subscribe(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
           p.S.unsubscribe(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
         }
-      }, [A]), (0, i.useEffect)(() => () => {
+      }, [C]), (0, i.useEffect)(() => () => {
         c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: false,

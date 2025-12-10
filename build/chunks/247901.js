@@ -104,15 +104,15 @@ var v = {
     this.tension = true, this.friction = true, this.frequency = true, this.damping = true, this.mass = true, this.velocity = 0, this.restVelocity = true, this.precision = true, this.progress = true, this.duration = true, this.easing = true, this.clamp = true, this.bounce = true, this.decay = true, this.round = true, Object.assign(this, I)
   };
 
-function A(e, t, n) {
-  for (var r in n && (C(n = o({}, n), t), t = o(o({}, n), t)), C(e, t), Object.assign(e, t), I) null == e[r] && (e[r] = I[r]);
+function C(e, t, n) {
+  for (var r in n && (A(n = o({}, n), t), t = o(o({}, n), t)), A(e, t), Object.assign(e, t), I) null == e[r] && (e[r] = I[r]);
   var i = e.mass,
     s = e.frequency,
     l = e.damping;
   return a.is.und(s) || (s < .01 && (s = .01), l < 0 && (l = 0), e.tension = Math.pow(2 * Math.PI / s, 2) * i, e.friction = 4 * Math.PI * l * i / s), e
 }
 
-function C(e, t) {
+function A(e, t) {
   if (a.is.und(t.decay)) {
     var n = !a.is.und(t.tension) || !a.is.und(t.friction);
     !n && a.is.und(t.frequency) && a.is.und(t.damping) && a.is.und(t.mass) || (e.duration = true, e.decay = true), n && (e.frequency = true)
@@ -610,10 +610,10 @@ var er = function(e) {
                   E = Math.exp(-(1 - g) * _);
                 p = m + h / (1 - g) * (1 - E), f = .1 > Math.abs(c.lastPosition - p), b = h * E
               } else
-                for (var b = null == c.lastVelocity ? h : c.lastVelocity, y = o.precision || (m == d ? .005 : Math.min(1, .001 * Math.abs(d - m))), O = o.restVelocity || y / 10, v = o.clamp ? 0 : o.bounce, S = !a.is.und(v), I = m == d ? c.v0 > 0 : m < d, T = false, A = 1, C = Math.ceil(e / 1), N = 0; N < C && !(!(Math.abs(b) > O) && (f = Math.abs(d - p) <= y)); ++N) {
+                for (var b = null == c.lastVelocity ? h : c.lastVelocity, y = o.precision || (m == d ? .005 : Math.min(1, .001 * Math.abs(d - m))), O = o.restVelocity || y / 10, v = o.clamp ? 0 : o.bounce, S = !a.is.und(v), I = m == d ? c.v0 > 0 : m < d, T = false, C = 1, A = Math.ceil(e / 1), N = 0; N < A && !(!(Math.abs(b) > O) && (f = Math.abs(d - p) <= y)); ++N) {
                   S && (T = p == d || p > d == I) && (b = -b * v, p = d);
                   var P = (-(1e-6 * o.tension) * (p - d) + -(.001 * o.friction) * b) / o.mass;
-                  b += P * A, p += b * A
+                  b += P * C, p += b * C
                 } else {
                   var R = o.progress || 0;
                   o.duration <= 0 ? R = 1 : R += (1 - R) * Math.min(1, _ / o.duration), b = ((p = m + o.easing(R) * (d - m)) - c.lastPosition) / e, f = 1 == R
@@ -773,9 +773,9 @@ var er = function(e) {
       S && (E = S.get());
       var I = a.is.arr(t.to) || a.is.fun(t.to),
         T = i.config,
-        C = T.decay,
+        A = T.decay,
         N = T.velocity;
-      t.config && !I && A(T, L(t.config, r), t.config !== o.config ? L(o.config, r) : true);
+      t.config && !I && C(T, L(t.config, r), t.config !== o.config ? L(o.config, r) : true);
       var P = f.getAnimated(this);
       if (!P || a.is.und(h)) return n(q(this, true));
       var R = a.is.und(t.reset) ? l && !t.default : !a.is.und(E) && j(t.reset, r),
@@ -793,7 +793,7 @@ var er = function(e) {
         B = false;
       if (!G) {
         var F = R || this.is(es) && y;
-        (O || F) && (G = !(B = a.isEqual(Y(D), w))), a.isEqual(T.decay, C) && a.isEqual(T.velocity, N) || (G = true)
+        (O || F) && (G = !(B = a.isEqual(Y(D), w))), a.isEqual(T.decay, A) && a.isEqual(T.velocity, N) || (G = true)
       }
       if (B && this.is(ec) && (i.changed && !R ? G = true : G || this._stop()), !I) {
         (G || a.getFluidConfig(d)) && (i.values = P.getPayload(), i.toValues = v ? null : U == f.AnimatedString ? [1] : a.toArray(w)), i.immediate = M, i.onStart = e_(c("onStart"), r), i.onChange = e_(c("onChange"), r);
@@ -1089,18 +1089,18 @@ function eT(e, t) {
     a.is.und(e.keys) && (e = eg(e)), a.is.obj(e.to) || (e = o(o({}, e), {}, {
       to: true
     })), eN(n, e, function(e) {
-      return eC(e)
+      return eA(e)
     })
   }), n
 }
 
-function eA(e, t) {
+function eC(e, t) {
   a.each(t, function(t, n) {
     e.springs[n] || (e.springs[n] = t, t.addChild(e))
   })
 }
 
-function eC(e, t) {
+function eA(e, t) {
   var n = new ef;
   return n.key = e, t && n.addChild(t), n
 }
@@ -1114,7 +1114,7 @@ function eN(e, t, n) {
 function eP(e, t) {
   a.each(t, function(t) {
     eN(e.springs, t, function(t) {
-      return eC(t, e)
+      return eA(t, e)
     })
   })
 }
@@ -1205,7 +1205,7 @@ function eL(e, t, n) {
           return !(l.current > 0) || u.queue.length || Object.keys(n).some(function(t) {
             return !e.springs[t]
           }) ? new Promise(function(r) {
-            eA(e, n), u.queue.push(function() {
+            eC(e, n), u.queue.push(function() {
               r(eS(e, t))
             }), c()
           }) : eS(e, t)
@@ -1247,7 +1247,7 @@ function eL(e, t, n) {
     })), a.each(m, function(e) {
       return e.dispose()
     }), a.each(f, function(e, t) {
-      eA(e, E[t]), e.start({
+      eC(e, E[t]), e.start({
         default: b
       });
       var n = p[t];
@@ -1429,7 +1429,7 @@ function eB(e, t, n) {
       })
     })
   }, [T]);
-  var A = s.useMemo(function() {
+  var C = s.useMemo(function() {
     return ex.create(function() {
       return g.current.map(function(e) {
         return e.ctrl
@@ -1437,18 +1437,18 @@ function eB(e, t, n) {
     })
   }, []);
   s.useImperativeHandle(r, function() {
-    return A
+    return C
   }), i.useLayoutEffect(function() {
     a.each(I, function(e, t) {
       var n = e.phase,
         i = e.springs,
         a = e.payload;
-      eA(t.ctrl, i), T.cancel || (t.phase = n, n == eU && t.ctrl.start({
+      eC(t.ctrl, i), T.cancel || (t.phase = n, n == eU && t.ctrl.start({
         default: T
       }), t.ctrl[r ? "update" : "start"](a))
     })
   }, l ? true : n);
-  var C = function(e) {
+  var A = function(e) {
     return s.createElement(s.Fragment, null, m.map(function(t, n) {
       var r = e(o({}, (I.get(t) || t.ctrl).springs), t.item, t, n);
       return r && r.type ? s.createElement(r.type, o({}, r.props, {
@@ -1457,7 +1457,7 @@ function eB(e, t, n) {
       })) : r
     }))
   };
-  return 3 == arguments.length ? [C, A.start, A.stop] : C
+  return 3 == arguments.length ? [A, C.start, C.stop] : A
 }
 
 function eF(e, t) {

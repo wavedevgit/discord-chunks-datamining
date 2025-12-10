@@ -35,7 +35,7 @@ function f(e, t, n) {
   if ((0, l.OV)() && "expandedKeys" in t) {
     let e = t.keyMap.get(f.key);
     if (null != e) {
-      var E, b, y, O, v, S, I, T, A, C;
+      var E, b, y, O, v, S, I, T, C, A;
       let n = (null == (E = e.props) ? true : E.UNSTABLE_childItems) || (null == (y = e.props) || null == (b = y.children) ? true : b.length) > t.userColumnCount;
       g = {
         onKeyDown: r => {
@@ -44,7 +44,7 @@ function f(e, t, n) {
         "aria-expanded": n ? "all" === t.expandedKeys || t.expandedKeys.has(f.key) : true,
         "aria-level": e.level,
         "aria-posinset": (null != (I = e.indexOfType) ? I : 0) + 1,
-        "aria-setsize": e.level > 1 ? (null != (A = null == (O = (0, i.s)(null != (T = null == (v = t.keyMap.get(e.parentKey)) ? true : v.childNodes) ? T : [])) ? true : O.indexOfType) ? A : 0) + 1 : (null != (C = null == (S = (0, i.s)(t.collection.body.childNodes)) ? true : S.indexOfType) ? C : 0) + 1
+        "aria-setsize": e.level > 1 ? (null != (C = null == (O = (0, i.s)(null != (T = null == (v = t.keyMap.get(e.parentKey)) ? true : v.childNodes) ? T : [])) ? true : O.indexOfType) ? C : 0) + 1 : (null != (A = null == (S = (0, i.s)(t.collection.body.childNodes)) ? true : S.indexOfType) ? A : 0) + 1
       }
     }
   }

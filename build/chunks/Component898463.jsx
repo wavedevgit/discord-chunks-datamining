@@ -49,7 +49,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -60,8 +60,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -275,11 +275,11 @@ function x(e) {
     canEdit: h = true,
     hideFileName: E = false,
     clip: I
-  } = e, A = null != I, N = (m = A ? O.q.CLIP : m) === O.q.SMALL, P = (0, s.e7)([g.Z], () => {
+  } = e, C = null != I, N = (m = C ? O.q.CLIP : m) === O.q.SMALL, P = (0, s.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getChannel(t)) ? true : e.guild_id
   }), R = e => {
-    e.stopPropagation(), (0, c.h7j)(e => (0, r.jsx)(d.default, C(T({}, e), {
+    e.stopPropagation(), (0, c.h7j)(e => (0, r.jsx)(d.default, A(T({}, e), {
       draftType: n,
       upload: a,
       channelId: t,
@@ -303,7 +303,7 @@ function x(e) {
         className: o()({
           [S.action]: N
         }),
-        tooltip: A ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzA),
+        tooltip: C ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzA),
         onClick: () => u.Z.update(t, a.id, n, {
           spoiler: !a.spoiler
         }),
@@ -320,7 +320,7 @@ function x(e) {
             [S.actionBarIcon]: N
           })
         })
-      }) : null, h && !A ? (0, r.jsx)(y.Z, {
+      }) : null, h && !C ? (0, r.jsx)(y.Z, {
         className: o()({
           [S.action]: N
         }),
@@ -337,7 +337,7 @@ function x(e) {
         className: o()({
           [S.action]: N
         }),
-        tooltip: A ? v.intl.string(v.t.MskAXa) : v.intl.string(v.t.vN7REz),
+        tooltip: C ? v.intl.string(v.t.MskAXa) : v.intl.string(v.t.vN7REz),
         onClick: () => u.Z.remove(t, a.id, n),
         dangerous: true,
         children: (0, r.jsx)(c.XHJ, {
@@ -361,7 +361,7 @@ function x(e) {
     children: [(0, r.jsx)(w, {
       upload: a,
       size: m
-    }), !E && !A && (0, r.jsx)("div", {
+    }), !E && !C && (0, r.jsx)("div", {
       className: S.filenameContainer,
       "aria-hidden": true,
       children: (0, r.jsx)(c.Text, {
@@ -369,7 +369,7 @@ function x(e) {
         variant: "text-sm/normal",
         children: null != _ ? _ : a.filename
       })
-    }), A && (0, r.jsxs)(r.Fragment, {
+    }), C && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.Z, {
         className: S.clipsFooter,
         createdAt: b.default.extractTimestamp(I.id),
@@ -378,7 +378,7 @@ function x(e) {
         title: I.name,
         guildId: P
       }), (0, r.jsx)(c.IGR, {
-        color: l.Z.colors.BG_BRAND.css,
+        color: l.Z.colors.BACKGROUND_BRAND.css,
         className: S.clipsBadge,
         text: v.intl.string(v.t.oA4afG)
       })]

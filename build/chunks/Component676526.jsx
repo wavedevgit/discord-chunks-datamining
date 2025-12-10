@@ -77,7 +77,7 @@ function M(e) {
   }, K = () => {
     (0, f.v)(H, f.d.POPOUT, true), null != a && (0, P.Z)({
       onConfirm: async () => {
-        await (0, C.nJ)(s, a.id), m.openChannelCallPopout(a)
+        await (0, A.nJ)(s, a.id), m.openChannelCallPopout(a)
       }
     })
   };
@@ -123,7 +123,7 @@ function M(e) {
         justify: p.Z.Justify.END,
         basis: "50%",
         align: p.Z.Align.CENTER,
-        children: [U || (0, A.R)() ? null : (0, r.jsx)(v.Z, {
+        children: [U || (0, C.R)() ? null : (0, r.jsx)(v.Z, {
           className: x.rightPipIcon,
           popoutOpen: false,
           onOpenPopout: K,

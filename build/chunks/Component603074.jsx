@@ -33,9 +33,9 @@ function m(e) {
     soundButtonOverlay: S,
     listPadding: I,
     renderHeader: T,
-    defaultSoundsOnly: A
+    defaultSoundsOnly: C
   } = e, {
-    fetching: C,
+    fetching: A,
     maybeFetchData: N
   } = (0, f.Z)(), P = (0, d.Z)({
     location: "SoundboardSoundPicker"
@@ -50,10 +50,10 @@ function m(e) {
     value: R,
     children: (0, r.jsx)(s.VqE, {
       className: o()(_.picker, {
-        [_.fetching]: C,
+        [_.fetching]: A,
         [_.inExpressionPicker]: v
       }),
-      children: C ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(p.Z, {
+      children: A ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(p.Z, {
         guildId: t,
         channel: n,
         onClose: m,
@@ -66,7 +66,7 @@ function m(e) {
         soundButtonOverlay: S,
         listPadding: I,
         renderHeader: T,
-        defaultSoundsOnly: A,
+        defaultSoundsOnly: C,
         inExpressionPicker: v,
         analyticsSource: g,
         enablePickerUpsellPremiumBrandRefresh: P

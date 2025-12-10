@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -23,7 +23,7 @@ function g(e) {
     className: u.row,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      color: "interactive-active",
+      color: "interactive-text-active",
       className: u.rowText,
       children: n
     }), t ? (0, r.jsx)(c.owK, {

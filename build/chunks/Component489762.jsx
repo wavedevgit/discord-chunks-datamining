@@ -143,17 +143,17 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         let l = H(F({}, a.location), {
           object: "" === o ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
         });
-        if (null != s && !(0, A.kl)(s, r, n)) {
+        if (null != s && !(0, C.kl)(s, r, n)) {
           let e = (0, D.J8)(s);
-          (0, A.cO)(s, r, n) === A.eb.SENDABLE_WITH_PREMIUM && (0, T.f)(true), e && A.eb.SENDABLE_WITH_BOOSTED_GUILD;
+          (0, C.cO)(s, r, n) === C.eb.SENDABLE_WITH_PREMIUM && (0, T.f)(true), e && C.eb.SENDABLE_WITH_BOOSTED_GUILD;
           return
         }
-        if (i) return void((0, D.gM)(s.id) ? (0, C.hW)(s.id) : ((0, N.cQ)({
+        if (i) return void((0, D.gM)(s.id) ? (0, A.hW)(s.id) : ((0, N.cQ)({
           sticker: s,
           location: H(F({}, l), {
             object: M.qAy.STICKER
           })
-        }), (0, C.SA)(s.id)));
+        }), (0, A.SA)(s.id)));
         t(e)
       }, [a.location, o, r, n, t])
     }
@@ -174,13 +174,13 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       filteredStickers: E,
       ownedStickerPacks: I,
       channel: T
-    } = e, A = (0, u.O)(), C = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
+    } = e, C = (0, u.O)(), A = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
       handleStickerInspect: N,
       handleSelect: L
     } = ep({
       onSelectSticker: a,
       channel: T,
-      currentUser: C
+      currentUser: A
     }), [Z, B] = i.useState(false), F = i.useCallback(e => {
       y._O.updateSetting(Array.from(e))
     }, []), V = i.useCallback(e => {
@@ -202,21 +202,21 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         ownedStickerPacks: I,
         isDisplayingIndividualStickers: true,
         channel: T,
-        currentUser: C
+        currentUser: A
       }, e) : null
-    }, [h, s, c, d, f, p, m, N, L, n, I, T, C]), H = i.useCallback((e, t) => (0, r.jsx)("div", {
+    }, [h, s, c, d, f, p, m, N, L, n, I, T, A]), H = i.useCallback((e, t) => (0, r.jsx)("div", {
       children: t
     }, e), []), K = i.useCallback(function(e) {
       let {
         isStickerPack: n = true
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = new Set(t), i = t.has(e);
       i ? r.delete(e) : r.add(e), S.default.track(M.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
-        location: null == A ? true : A.location,
+        location: null == C ? true : C.location,
         tab: k.X1.STICKER,
         collapsed: !i,
         sticker_pack_id: n ? e : null
       }), F(r)
-    }, [A, t, F]), z = i.useCallback(e => {
+    }, [C, t, F]), z = i.useCallback(e => {
       let n = g[e];
       if (null != E) {
         let {
@@ -355,7 +355,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       stickersCategories: S,
       stickersGrid: I,
       channel: T
-    } = e, A = i.useRef(false), C = i.useRef(null), [N, R] = m.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
+    } = e, C = i.useRef(false), A = i.useRef(null), [N, R] = m.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
       analyticsLocations: D
     } = (0, f.ZP)(d.Z.STICKER_PICKER), w = (0, h.Iu)(e => e.searchQuery), x = (0, o.e7)([P.Z], () => P.Z.getPremiumPacks()), {
       renderRow: j,
@@ -369,7 +369,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       gridWidth: s,
       stickersCategories: S,
       stickersGrid: I,
-      isScrolling: A,
+      isScrolling: C,
       isUsingKeyboardNavigation: b,
       onSelectSticker: y,
       getStickerItemProps: u,
@@ -381,8 +381,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       channel: T
     }), H = (0, E.Qs)({
       activeCategoryIndex: N,
-      isScrolling: A,
-      listRef: C,
+      isScrolling: C,
+      listRef: A,
       onActiveCategoryIndexChange: m.ZN.setActiveCategoryIndex,
       scrollOffset: eo,
       searchQuery: w
@@ -390,39 +390,39 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     return (0, E.Xs)({
       searchQuery: w,
       activeCategoryIndex: N,
-      listRef: C
+      listRef: A
     }), i.useImperativeHandle(t, () => ({
       scrollTo: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollTo(...n)
+        return null == (e = A.current) ? true : e.scrollTo(...n)
       },
       getRowDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = C.current) ? true : e.getRowDescriptors()) ? t : []
+        return null != (t = null == (e = A.current) ? true : e.getRowDescriptors()) ? t : []
       },
       getSectionDescriptors: () => {
         var e, t;
-        return null != (t = null == (e = C.current) ? true : e.getSectionDescriptors()) ? t : []
+        return null != (t = null == (e = A.current) ? true : e.getSectionDescriptors()) ? t : []
       },
       scrollToSectionTop: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollToSectionTop(...n)
+        return null == (e = A.current) ? true : e.scrollToSectionTop(...n)
       },
       scrollRowIntoView: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollRowIntoView(...n)
+        return null == (e = A.current) ? true : e.scrollRowIntoView(...n)
       },
       getScrollerNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.getScrollerNode(...n)
+        return null == (e = A.current) ? true : e.getScrollerNode(...n)
       },
       scrollIntoViewNode: function() {
         for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-        return null == (e = C.current) ? true : e.scrollIntoViewNode(...n)
+        return null == (e = A.current) ? true : e.scrollIntoViewNode(...n)
       },
       getListDimensions: function() {
         for (var e, t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-        return null != (t = null == (e = C.current) ? true : e.getListDimensions(...r)) ? t : {
+        return null != (t = null == (e = A.current) ? true : e.getListDimensions(...r)) ? t : {
           height: false,
           totalHeight: false
         }
@@ -452,7 +452,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           sectionHeaderHeight: V,
           sectionFooterHeight: B,
           stickyHeaders: true,
-          ref: C
+          ref: A
         }), (0, r.jsx)(L.Z, {
           stickersGrid: I
         })]

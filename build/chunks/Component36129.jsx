@@ -2,7 +2,7 @@
 /** chunk id: 36129, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => C
+  q: () => A
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,8 +27,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk202283 = require("./202283.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk306518 = require("./306518.js");
-let A = e => e.map(e => "#".concat(e)),
-  C = e => {
+let C = e => e.map(e => "#".concat(e)),
+  A = e => {
     let {
       message: t
     } = e, {
@@ -48,7 +48,7 @@ let A = e => e.map(e => "#".concat(e)),
           g.default.track(v.rMx.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, _.XO)(_.wh.CUSTOM_THEME, {
             from: _.tE.SHARE_MESSAGE
           }), i({
-            colors: A(n.colors),
+            colors: C(n.colors),
             chassisMixAmount: n.base_mix,
             gradientAngle: n.gradient_angle
           }), (0, h.y)((0, b.e)(n.base_theme))
@@ -85,7 +85,7 @@ let A = e => e.map(e => "#".concat(e)),
       minTimeVisibleMs: 200
     }), h = i.useMemo(() => {
       var e;
-      return true === n ? "" : (0, O.yz)(A(n.colors), null != (e = n.gradient_angle) ? e : 0)
+      return true === n ? "" : (0, O.yz)(C(n.colors), null != (e = n.gradient_angle) ? e : 0)
     }, [n]);
     return true === n ? null : (0, r.jsxs)("div", {
       className: T.themePreviewContainer,

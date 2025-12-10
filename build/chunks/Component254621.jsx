@@ -32,7 +32,7 @@ let E = () => {
       status: b
     } = (0, Chunk442837.e7)([Chunk646834.Z], () => Chunk646834.Z.state, []), [y, O] = (0, Chunk473749.useState)(0), {
       installedDiscordPrivateBrowsingPerk: v
-    } = (0, Chunk442837.e7)([Chunk607726.Z], () => Chunk607726.Z.getState(), []), [S, I] = (0, Chunk473749.useState)(false), [T, A] = (0, Chunk473749.useState)(null);
+    } = (0, Chunk442837.e7)([Chunk607726.Z], () => Chunk607726.Z.getState(), []), [S, I] = (0, Chunk473749.useState)(false), [T, C] = (0, Chunk473749.useState)(null);
     return (0, Chunk473749.useEffect)(() => {
       S || (I(true), module !== Chunk5900._n.INSTALLING && (0, Chunk998054.Y)().then(e => e === p._n.NOT_INSTALLED ? void t(p._n.NOT_INSTALLED) : e === p._n.EXISTING_INSTALLATION && v ? void t(p._n.INSTALLING) : void t(e)))
     }, [exports, v, S, module]), (0, Chunk473749.useEffect)(() => {
@@ -74,8 +74,8 @@ let E = () => {
         }), t(p._n.ERROR)
       })
     }, [module, exports, Chunk54381, Chunk818710]), (0, Chunk473749.useEffect)(() => {
-      if (![Chunk5900._n.INSTALLING, Chunk5900._n.WAITING_FOR_TERMS].includes(module)) return void A(null);
-      if (null == T && A(Date.now()), null != T) {
+      if (![Chunk5900._n.INSTALLING, Chunk5900._n.WAITING_FOR_TERMS].includes(module)) return void C(null);
+      if (null == T && C(Date.now()), null != T) {
         let e = T + E - Date.now();
         if (module <= 0) return void exports(Chunk5900._n.INSTALLING_TIMEOUT);
         let n = setTimeout(() => {
@@ -83,7 +83,7 @@ let E = () => {
         }, module);
         return () => clearTimeout(require)
       }
-    }, [module, T, A, exports, E]), (0, Chunk473749.useEffect)(() => {
+    }, [module, T, C, exports, E]), (0, Chunk473749.useEffect)(() => {
       if (![Chunk5900._n.INSTALLING, Chunk5900._n.WAITING_FOR_TERMS, Chunk5900._n.INSTALLING_TIMEOUT].includes(module)) return;
       let n = setInterval(async () => {
         let n = await Chunk734610();

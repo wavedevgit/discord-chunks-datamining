@@ -2,7 +2,7 @@
 /** chunk id: 374425, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -70,14 +70,14 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       is_custom: (0, _.z)(e.type)
     })
   },
-  A = e => {
+  C = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: o
     } = e, c = i.useRef(null), [f, _] = i.useState(true), [g, E] = i.useState(String(Date.now())), [y] = (0, p.XW)(t, o), {
       analyticsLocations: v
-    } = (0, u.ZP)(l.Z.STICKER_MESSAGE), A = (0, r.jsxs)("span", {
+    } = (0, u.ZP)(l.Z.STICKER_MESSAGE), C = (0, r.jsxs)("span", {
       className: b.stickerName,
       children: [(0, r.jsx)(s.B7q, {
         size: "xs",
@@ -106,7 +106,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           } = e;
           return (0, r.jsx)(a.u, S(O({}, d.b_), {
             shouldShow: f,
-            __unsupportedReactNodeAsText: (0, d.Y)(A),
+            __unsupportedReactNodeAsText: (0, d.Y)(C),
             "aria-label": false,
             onTooltipShow: () => {
               T(y)

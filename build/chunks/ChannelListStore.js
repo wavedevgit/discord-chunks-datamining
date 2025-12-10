@@ -264,7 +264,7 @@ function el(e) {
   let {
     settings: n
   } = e;
-  if (n.type !== C.yP.PRELOADED_USER_SETTINGS) returnfalse;
+  if (n.type !== A.yP.PRELOADED_USER_SETTINGS) returnfalse;
   let r = null == (t = n.proto.guilds) ? true : t.guilds,
     i = false;
   return null != r && T.default.keys(r).forEach(e => {

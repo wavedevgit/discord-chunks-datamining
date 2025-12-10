@@ -102,7 +102,7 @@ function D(e) {
       preview: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Text, {
           variant: "eyebrow",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           className: A.claimInstructionsCodeInputTitle,
           children: T.intl.string(T.t.srzsU2)
         }), (0, r.jsx)(I, {

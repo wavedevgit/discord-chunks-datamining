@@ -120,7 +120,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     F = null != h,
     V = F ? b.Z.getWindow(h) : null,
     H = !!F && b.Z.isWindowFullScreen(h),
-    Y = A.Z.windowSize();
+    Y = C.Z.windowSize();
   F && (Y = null == V ? Y : {
     width: V.innerWidth,
     height: V.innerHeight
@@ -137,7 +137,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     q = I.Z.pipWidth(R.cL.VIDEO),
     Q = z.find(e => e.component === N.NYg.VIDEO),
     X = z.find(e => e.component === N.NYg.ACTIVITY),
-    J = [Q, X, z.find(e => e.component === N.NYg.FRAME)].filter(C.lm),
+    J = [Q, X, z.find(e => e.component === N.NYg.FRAME)].filter(A.lm),
     $ = O.ZP.callChatSidebarWidth,
     ee = T.Z.getVoiceChannelId(),
     et = T.Z.getChannelId() === ee,

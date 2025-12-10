@@ -69,7 +69,7 @@ function T(e) {
   return h.Z.fromServer(t)
 }
 
-function A(e) {
+function C(e) {
   let [t, n] = r.useState([]), [i, o] = r.useState(false);
   return r.useEffect(() => {
     let t = false;
@@ -89,7 +89,7 @@ function A(e) {
   }
 }
 
-function C(e) {
+function A(e) {
   let t = e.slice(0, b),
     n = (0, i.e7)([o.Z], () => t.some(e => o.Z.isFetchingProduct(e)));
   return r.useEffect(() => {
@@ -125,9 +125,9 @@ function P(e) {
   } = S(t), s = r.useMemo(() => null != n && n.items.filter(e => true !== e.isOwned).length >= b, [n]), {
     validatedSkuIds: l,
     isValidating: u
-  } = A(e.id), {
+  } = C(e.id), {
     isFetching: d
-  } = C(l);
+  } = A(l);
   return {
     defaultWishlistId: t,
     wishlist: n,

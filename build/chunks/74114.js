@@ -30,9 +30,9 @@ function E(e, t, n) {
   var E, y, O, v, S, I;
   let {
     node: T,
-    isVirtualized: A
+    isVirtualized: C
   } = e, {
-    direction: C
+    direction: A
   } = (0, m.j)(), {
     onAction: N,
     linkBehavior: P,
@@ -65,7 +65,7 @@ function E(e, t, n) {
     selectionManager: t.selectionManager,
     key: T.key,
     ref: n,
-    isVirtualized: A,
+    isVirtualized: C,
     shouldSelectOnPressUp: e.shouldSelectOnPressUp || D,
     onAction: N || (null == (E = T.props) ? true : E.onAction) ? (0, a.t)(null == (y = T.props) ? true : y.onAction, N ? () => N(T.key) : true) : true,
     focus: L,
@@ -74,10 +74,10 @@ function E(e, t, n) {
     if (!e.currentTarget.contains(e.target) || !n.current || !document.activeElement) return;
     let r = (0, d.QL)(n.current);
     if (r.currentNode = document.activeElement, "expandedKeys" in t && document.activeElement === n.current) {
-      if (e.key === h[C] && t.selectionManager.focusedKey === T.key && M && !t.expandedKeys.has(T.key)) {
+      if (e.key === h[A] && t.selectionManager.focusedKey === T.key && M && !t.expandedKeys.has(T.key)) {
         t.toggleKey(T.key), e.stopPropagation();
         return
-      } else if (e.key === g[C] && t.selectionManager.focusedKey === T.key && M && t.expandedKeys.has(T.key)) {
+      } else if (e.key === g[A] && t.selectionManager.focusedKey === T.key && M && t.expandedKeys.has(T.key)) {
         t.toggleKey(T.key), e.stopPropagation();
         return
       }
@@ -85,11 +85,11 @@ function E(e, t, n) {
     switch (e.key) {
       case "ArrowLeft":
         if ("arrow" === R) {
-          let t = "rtl" === C ? r.nextNode() : r.previousNode();
+          let t = "rtl" === A ? r.nextNode() : r.previousNode();
           if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, o.G)(t, {
             containingElement: (0, s.r)(n.current)
           });
-          else if (e.preventDefault(), e.stopPropagation(), "rtl" === C)(0, u.e)(n.current), (0, o.G)(n.current, {
+          else if (e.preventDefault(), e.stopPropagation(), "rtl" === A)(0, u.e)(n.current), (0, o.G)(n.current, {
             containingElement: (0, s.r)(n.current)
           });
           else {
@@ -103,11 +103,11 @@ function E(e, t, n) {
         break;
       case "ArrowRight":
         if ("arrow" === R) {
-          let t = "rtl" === C ? r.previousNode() : r.nextNode();
+          let t = "rtl" === A ? r.previousNode() : r.nextNode();
           if (t) e.preventDefault(), e.stopPropagation(), (0, u.e)(t), (0, o.G)(t, {
             containingElement: (0, s.r)(n.current)
           });
-          else if (e.preventDefault(), e.stopPropagation(), "ltr" === C)(0, u.e)(n.current), (0, o.G)(n.current, {
+          else if (e.preventDefault(), e.stopPropagation(), "ltr" === A)(0, u.e)(n.current), (0, o.G)(n.current, {
             containingElement: (0, s.r)(n.current)
           });
           else {
@@ -149,7 +149,7 @@ function E(e, t, n) {
     "aria-labelledby": w && T.textValue ? `${(0,r.XQ)(t,T.key)} ${w}` : true,
     id: (0, r.XQ)(t, T.key)
   });
-  if (A) {
+  if (C) {
     let {
       collection: e
     } = t, n = [...e];

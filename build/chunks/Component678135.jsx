@@ -33,8 +33,8 @@ function I(e) {
     user: i,
     guild: I,
     canUsePremiumCustomization: T,
-    onUpsellClick: A,
-    pendingBanner: C,
+    onUpsellClick: C,
+    pendingBanner: A,
     pendingAccentColor: N,
     pendingBio: P,
     pendingPronouns: R,
@@ -99,11 +99,11 @@ function I(e) {
         displayProfile: Q,
         guildId: null == I ? true : I.id,
         canUsePremiumCustomization: T,
-        pendingBanner: C,
+        pendingBanner: A,
         pendingAccentColor: N,
         isTryItOut: B,
         disabledInputs: F,
-        onUpsellClick: () => null == A ? true : A({
+        onUpsellClick: () => null == C ? true : C({
           object: y.qAy.EDIT_PROFILE_BANNER
         })
       }), (0, r.jsx)(h.Z, {
@@ -118,7 +118,7 @@ function I(e) {
         className: G,
         disabledInputs: F,
         isTryItOut: B,
-        onUpsellClick: () => null == A ? true : A({
+        onUpsellClick: () => null == C ? true : C({
           object: y.qAy.AVATAR
         })
       }), !V && (0, r.jsx)(p.Z, {

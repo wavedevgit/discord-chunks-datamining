@@ -49,9 +49,9 @@ function m(e) {
     isRequired: S = false,
     minValue: I,
     maxValue: T,
-    isDateUnavailable: A
-  } = e, C = e.value || e.defaultValue || e.placeholderValue || null, [N, P] = (0, r.iZ)(C, e.granularity), R = P || "UTC";
-  if (C && !(N in C)) throw Error("Invalid granularity " + N + " for value " + C.toString());
+    isDateUnavailable: C
+  } = e, A = e.value || e.defaultValue || e.placeholderValue || null, [N, P] = (0, r.iZ)(A, e.granularity), R = P || "UTC";
+  if (A && !(N in A)) throw Error("Invalid granularity " + N + " for value " + A.toString());
   let D = (0, d.useMemo)(() => new(0, a.C)(m), [m]),
     w = (0, d.useMemo)(() => g(D.resolvedOptions().calendar), [g, D]),
     [x, L] = (0, u.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
@@ -96,7 +96,7 @@ function m(e) {
         i = Object.keys(Y);
       null == t ? (L(null), U((0, r.OJ)(e.placeholderValue, N, w, P)), K({})) : 0 === n.length && null == z.current || n.length >= i.length || n.length === i.length - 1 && Y.dayPeriod && !W.dayPeriod && "dayPeriod" !== z.current ? (0 === n.length && K(W = {
         ...Y
-      }), L(t = (0, s.Mw)(t, (null == C ? true : C.calendar) || new(0, l.IQ)))) : U(t), z.current = null
+      }), L(t = (0, s.Mw)(t, (null == A ? true : A.calendar) || new(0, l.IQ)))) : U(t), z.current = null
     },
     J = (0, d.useMemo)(() => Q.toDate(R), [Q, R]),
     $ = (0, d.useMemo)(() => h(J, W, V, H, Q, w, m, N), [J, W, V, H, Q, w, m, N]);
@@ -119,7 +119,7 @@ function m(e) {
         (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && X(Q)
       }
     },
-    en = (0, d.useMemo)(() => (0, r.p2)(x, I, T, A, B), [x, I, T, A, B]),
+    en = (0, d.useMemo)(() => (0, r.p2)(x, I, T, C, B), [x, I, T, C, B]),
     er = (0, c.Q3)({
       ...e,
       value: x,

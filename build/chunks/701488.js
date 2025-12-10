@@ -12,7 +12,7 @@ require.d(exports, {
   K8: () => v,
   OF: () => x,
   P9: () => y,
-  Pc: () => A,
+  Pc: () => C,
   S4: () => I,
   Si: () => E,
   Ws: () => S,
@@ -25,7 +25,7 @@ require.d(exports, {
   qm: () => c,
   sI: () => g,
   u2: () => l,
-  um: () => C,
+  um: () => A,
   wP: () => D,
   wT: () => R,
   xK: () => T
@@ -64,8 +64,8 @@ var v = function(e) {
   T = function(e) {
     return e[e.UNLOCKED = 1] = "UNLOCKED", e[e.PORTRAIT = 2] = "PORTRAIT", e[e.LANDSCAPE = 3] = "LANDSCAPE", e
   }({});
-let A = new Set([u, d, f, p]),
-  C = new Set([d, f, p]);
+let C = new Set([u, d, f, p]),
+  A = new Set([d, f, p]);
 var N = function(e) {
   return e[e.FOCUSED = 0] = "FOCUSED", e[e.PIP = 1] = "PIP", e[e.GRID = 2] = "GRID", e
 }({});

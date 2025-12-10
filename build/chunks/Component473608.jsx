@@ -47,7 +47,7 @@ function T(e) {
   }
   return e
 }
-let A = e => {
+let C = e => {
     let {
       avatarDecoration: t,
       fallbackLabel: n
@@ -66,7 +66,7 @@ let A = e => {
       className: v.avatarDecoration
     }, o))
   },
-  C = e => {
+  A = e => {
     var t;
     let {
       profileEffect: n,
@@ -118,13 +118,13 @@ let A = e => {
       className: v.bundleMiniPreview,
       children: [null != a && (0, r.jsx)("div", {
         className: v.bundleMiniProfileEffectContainer,
-        children: (0, r.jsx)(C, {
+        children: (0, r.jsx)(A, {
           profileEffect: a,
           fallbackLabel: null
         })
       }), null != i && (0, r.jsx)("div", {
         className: v.bundleMiniAvatarDecorationContainer,
-        children: (0, r.jsx)(A, {
+        children: (0, r.jsx)(C, {
           avatarDecoration: i,
           fallbackLabel: null
         })
@@ -152,10 +152,10 @@ let A = e => {
     return true !== u && u in O.K ? O.K[u].render({
       animationState: "on_hover",
       className: v.externalProductAsset
-    }) : (0, s.EQ)(null == p ? true : p.type).with(l.Z.AVATAR_DECORATION, () => (o()(p.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(A, {
+    }) : (0, s.EQ)(null == p ? true : p.type).with(l.Z.AVATAR_DECORATION, () => (o()(p.type === l.Z.AVATAR_DECORATION, "ts-match checked the type"), (0, r.jsx)(C, {
       avatarDecoration: p,
       fallbackLabel: a
-    }))).with(l.Z.PROFILE_EFFECT, () => (o()(p.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(C, {
+    }))).with(l.Z.PROFILE_EFFECT, () => (o()(p.type === l.Z.PROFILE_EFFECT, "ts-match checked the type"), (0, r.jsx)(A, {
       profileEffect: p,
       fallbackLabel: a
     }))).with(l.Z.NAMEPLATE, () => (o()(p.type === l.Z.NAMEPLATE, "ts-match checked the type"), (0, r.jsx)(N, {

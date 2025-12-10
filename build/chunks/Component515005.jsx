@@ -58,13 +58,13 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -118,7 +118,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       height: Z,
       padding: G
     }), [G, Z]), [Q, X] = (0, f.Z)(null, 300);
-    return (0, r.jsx)("div", A(I({
+    return (0, r.jsx)("div", C(I({
       className: v.row,
       style: z
     }, null == S ? true : S(M)), {
@@ -153,10 +153,10 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             tabIndex: K,
             onFocus: z
           } = U,
-          J = C(U, ["ref", "tabIndex", "onFocus"]);
+          J = A(U, ["ref", "tabIndex", "onFocus"]);
         switch (e.type) {
           case h.al.CREATE_STICKER:
-            return (0, r.jsx)("div", A(I({}, J), {
+            return (0, r.jsx)("div", C(I({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
                 className: o()(v.createSticker, k, {
@@ -178,7 +178,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                     className: v.icon
                   })
                 }), (0, r.jsx)(c.Text, {
-                  color: "interactive-active",
+                  color: "interactive-text-active",
                   variant: "text-xs/normal",
                   children: O.intl.string(O.t["+nEuqr"])
                 })]
@@ -194,7 +194,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                   return t => (0, r.jsx)(e, I({}, t))
                 })
               };
-            return (0, i.createElement)("div", A(I({}, J), {
+            return (0, i.createElement)("div", C(I({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
               className: o()(v.sticker, k, {

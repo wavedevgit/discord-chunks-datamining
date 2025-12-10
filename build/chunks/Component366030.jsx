@@ -101,7 +101,7 @@ function B(e) {
       break;
     default:
       t = s
-  } else t = (0, A.n_)({
+  } else t = (0, C.n_)({
     connectionType: n,
     connectionMetadataField: i,
     operator: a,
@@ -134,7 +134,7 @@ function F(e) {
         p = E.Z.get(e),
         m = null == d ? true : d.application,
         g = (null == m ? true : m.bot) != null ? new S.Z(m.bot) : null;
-      return A.SJ.includes(null != (t = null == m ? true : m.id) ? t : "") ? l = (0, r.jsx)(R.Z, {
+      return C.SJ.includes(null != (t = null == m ? true : m.id) ? t : "") ? l = (0, r.jsx)(R.Z, {
         className: M.botTag,
         color: i,
         size: 16
@@ -155,7 +155,7 @@ function F(e) {
             className: M.popoutCheckGroupPlatformIcon
           }) : null, (0, r.jsx)(_.Text, {
             variant: "text-sm/medium",
-            color: "interactive-active",
+            color: "interactive-text-active",
             children: null != (s = null == p ? true : p.name) ? s : null == m ? true : m.name
           }), l]
         }), u.map(e => {
@@ -238,7 +238,7 @@ function H(e) {
     channel: s
   } = e, {
     analyticsLocations: l
-  } = (0, y.ZP)(), u = (0, N.Z)(a, t, s.id, true), f = (0, c.e7)([C.Z], () => C.Z.getGuildRoleConnectionEligibility(null == u ? true : u.id)), [p, h] = i.useState(null == f), g = i.useRef(null);
+  } = (0, y.ZP)(), u = (0, N.Z)(a, t, s.id, true), f = (0, c.e7)([A.Z], () => A.Z.getGuildRoleConnectionEligibility(null == u ? true : u.id)), [p, h] = i.useState(null == f), g = i.useRef(null);
   if (null == u) return null;
   async function E() {
     o()(null != u, "visibleConnectionsRole is null"), p && null == f && (await m.Z.fetchGuildRoleConnectionsEligibility(a.id, u.id), h(false))

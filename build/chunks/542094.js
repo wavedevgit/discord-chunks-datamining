@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   JS: () => S,
-  Qv: () => C,
+  Qv: () => A,
   ZP: () => T,
-  fD: () => A,
+  fD: () => C,
   w1: () => N
 }), require("./997841.js"), require("./704826.js"), require("./35282.js");
 var Chunk95015 = require("./95015.js"),
@@ -58,7 +58,7 @@ function T(e) {
       embeddedActivity: t
     } = e;
     return p.id === t.applicationId
-  }), P = C({
+  }), P = A({
     context: n,
     applicationId: p.id
   }), R = N({
@@ -70,7 +70,7 @@ function T(e) {
     launchingComponentId: c,
     commandOrigin: d,
     source: f
-  }), D = A(p, t.activity);
+  }), D = C(p, t.activity);
   return {
     imageBackground: v,
     videoUrl: S,
@@ -82,7 +82,7 @@ function T(e) {
   }
 }
 
-function A(e, t) {
+function C(e, t) {
   var n;
   let i = null != (n = e.flags) ? n : 0;
   if (!((0, r.yE)(i, v.udG.EMBEDDED_RELEASED) || (0, r.yE)(i, v.udG.EMBEDDED_FIRST_PARTY))) return;
@@ -90,7 +90,7 @@ function A(e, t) {
   return O.eB.includes(a) ? a.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : true
 }
 
-function C(e) {
+function A(e) {
   let {
     context: t,
     applicationId: n,
@@ -125,12 +125,12 @@ function N(e) {
     customId: O,
     referrerId: v,
     onConfirmActivityLaunchChecksAlertOpen: S
-  } = e, I = null != (t = null == n ? true : n.id) ? t : "", T = C({
+  } = e, I = null != (t = null == n ? true : n.id) ? t : "", T = A({
     context: a,
     applicationId: I,
     fetchesApplication: y
   }), {
-    analyticsLocations: A
+    analyticsLocations: C
   } = (0, o.ZP)(), N = (0, E.Z)(), P = (0, c.A)(n);
   if (null == n) return () => {
     null == _ || _({
@@ -163,7 +163,7 @@ function N(e) {
           targetApplicationId: I,
           locationObject: s,
           channelId: e,
-          analyticsLocations: A,
+          analyticsLocations: C,
           componentId: m,
           commandOrigin: h,
           sectionName: g,
@@ -181,7 +181,7 @@ function N(e) {
           applicationId: I,
           activityChannelId: "channel" === a.type ? a.channel.id : true,
           locationObject: s,
-          analyticsLocations: A,
+          analyticsLocations: C,
           componentId: m,
           sectionName: g,
           source: b,

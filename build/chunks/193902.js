@@ -2,7 +2,7 @@
 /** chunk id: 193902, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 });
 var Chunk547750 = require("./547750.js"),
   Chunk540469 = require("./540469.js"),
@@ -27,7 +27,7 @@ var Chunk547750 = require("./547750.js"),
   Chunk411307 = require("./411307.js"),
   Chunk198435 = require("./198435.js"),
   Chunk859126 = require("./859126.js");
-class A {
+class C {
   createCasualConfiguration(e = false) {
     let t = this.createConfiguration(false, e);
     return t.parsers.push(new m.Z), t.parsers.push(new h.Z), t.parsers.push(new o.Z), t.parsers.push(new E.Z), t.parsers.push(new y.Z), t.refiners.push(new T.Z), t

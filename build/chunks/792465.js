@@ -138,7 +138,7 @@ module.exports = function(e) {
       keywords: b,
       contains: [I, o, S, e.C_BLOCK_COMMENT_MODE, _, m, O]
     },
-    A = {
+    C = {
       relevance: 0,
       match: [/\b/, t.concat("(?!fn\\b|function\\b|", y(g).join("\\b|"), "|", y(E).join("\\b|"), "\\b)"), r, t.concat(p, "*"), t.lookahead(/(?=\()/)],
       scope: {
@@ -146,8 +146,8 @@ module.exports = function(e) {
       },
       contains: [T]
     };
-  T.contains.push(A);
-  let C = [I, S, e.C_BLOCK_COMMENT_MODE, _, m, O],
+  T.contains.push(C);
+  let A = [I, S, e.C_BLOCK_COMMENT_MODE, _, m, O],
     N = {
       begin: t.concat(/#\[\s*\\?/, t.either(i, a)),
       beginScope: "meta",
@@ -164,8 +164,8 @@ module.exports = function(e) {
           literal: h,
           keyword: ["new", "array"]
         },
-        contains: ["self", ...C]
-      }, ...C, {
+        contains: ["self", ...A]
+      }, ...A, {
         scope: "meta",
         variants: [{
           match: i
@@ -197,7 +197,7 @@ module.exports = function(e) {
     }, s, {
       scope: "variable.language",
       match: /\$this\b/
-    }, o, A, S, {
+    }, o, C, S, {
       match: [/const/, /\s/, r],
       scope: {
         1: "keyword",

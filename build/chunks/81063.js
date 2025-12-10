@@ -98,7 +98,7 @@ async function T(e) {
   let t = await v(e);
   return null == t ? true : t.assets
 }
-async function A(e, t) {
+async function C(e, t) {
   let n = t.filter(e => null != e && !Object.prototype.hasOwnProperty.call(b, e) && null == b[e]);
   if (0 === n.length) return;
   let {
@@ -118,7 +118,7 @@ async function A(e, t) {
     of r) b[e] = t
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = 0;
   if (e.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:"))).length > 0)
     for (let r = 0; r < e.length; r++) {
@@ -155,7 +155,7 @@ async function P(e, t) {
   });
   let r = [],
     i = t.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:")));
-  if (i.length > 0 && await A(e, i), C(t, r)) return o.Z.dispatch({
+  if (i.length > 0 && await C(e, i), A(t, r)) return o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r;

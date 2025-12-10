@@ -86,15 +86,15 @@ function T(e) {
     renderCTAButtons: O
   } = e, [I] = (0, a.Wu)([f.Z], () => [f.Z.getCurrentDesktopIcon()]), T = i.useRef(null);
   (0, d.Z)(T, m.h1.CUSTOM_APP_ICONS);
-  let A = (0, c.Dt)(),
-    C = (0, o.Jb)({
+  let C = (0, c.Dt)(),
+    A = (0, o.Jb)({
       orientation: "horizontal",
-      labelledBy: A
+      labelledBy: C
     }),
     {
       ref: N
-    } = C,
-    P = S(C, ["ref"]),
+    } = A,
+    P = S(A, ["ref"]),
     R = e => {
       l.Z.dispatch({
         type: "APP_ICON_UPDATED",

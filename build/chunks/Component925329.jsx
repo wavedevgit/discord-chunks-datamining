@@ -87,9 +87,9 @@ let O = Chunk473749.forwardRef(function(e, t) {
       className: S,
       guildClassName: I,
       size: T = g.MEDIUM,
-      allowUnknownGameIcon: A = true
+      allowUnknownGameIcon: C = true
     } = e,
-    [C, N] = i.useState(null),
+    [A, N] = i.useState(null),
     [P, R] = i.useState(false),
     D = i.useCallback(e => {
       R(e)
@@ -126,7 +126,7 @@ let O = Chunk473749.forwardRef(function(e, t) {
       size: e
     })
   }
-  if (null == n || "" === n) return A ? (0, r.jsx)(l.IMN, {
+  if (null == n || "" === n) return C ? (0, r.jsx)(l.IMN, {
     size: "md",
     color: "currentColor",
     className: o()(h.gameIcon, T, S)
@@ -137,7 +137,7 @@ let O = Chunk473749.forwardRef(function(e, t) {
     }) : m.intl.string(m.t["2B/phM"]),
     M = (0, p.pU)(n),
     k = (0, d.Vv)(n),
-    U = C === n || M || k;
+    U = A === n || M || k;
   return (0, r.jsxs)(r.Fragment, {
     children: [U ? null : (0, r.jsx)("div", {
       className: o()(h.gameIconLoading, T, S)

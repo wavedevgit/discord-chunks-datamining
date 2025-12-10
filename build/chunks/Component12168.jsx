@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
@@ -37,7 +37,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -150,7 +150,7 @@ function x(e) {
     emojiSearchProps: g,
     recentlyUsedEmojis: y,
     analyticsOverride: T,
-    ref: C
+    ref: A
   } = e, x = (0, f.Dt)(), [L, j] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !b.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
@@ -173,7 +173,7 @@ function x(e) {
     };
   return (0, r.jsxs)(u.VqE, {
     "aria-labelledby": x,
-    ref: C,
+    ref: A,
     children: [(0, r.jsx)(u.y5t, {
       forceLevel: 2,
       children: (0, r.jsx)(u.nn4, {
@@ -198,7 +198,7 @@ function x(e) {
         shouldHidePickerActions: !L,
         wrapper: "div",
         pickerIntention: P,
-        searchProps: N(A({}, g), {
+        searchProps: N(C({}, g), {
           accessory: (0, r.jsx)(w, {
             otherAccessories: null == g ? true : g.accessory,
             isEmojiPickerExpanded: L,

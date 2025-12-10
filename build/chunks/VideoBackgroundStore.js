@@ -101,16 +101,16 @@ function T(e) {
   a.TO.CAMERA_BACKGROUND_LIVE in t && (h = true)
 }
 
-function A() {
+function C() {
   g !== Chunk944486.Z.getVoiceChannelId() && (E = false), S() && (E = true), g = Chunk944486.Z.getVoiceChannelId()
 }
 
-function C() {
+function A() {
   h = false, E = false, g = null, b = {}
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk131951.Z, Chunk944486.Z, Chunk581883.Z, Chunk594174.default), this.syncWith([Chunk944486.Z, Chunk131951.Z], A)
+    this.waitFor(Chunk131951.Z, Chunk944486.Z, Chunk581883.Z, Chunk594174.default), this.syncWith([Chunk944486.Z, Chunk131951.Z], C)
   }
   get videoFilterAssets() {
     return b
@@ -129,5 +129,5 @@ let P = new N(Chunk570140.Z, {
   VIDEO_FILTER_ASSET_DELETE_SUCCESS: v,
   VIDEO_SAVE_LAST_USED_BACKGROUND_OPTION: I,
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: T,
-  LOGOUT: C
+  LOGOUT: A
 })

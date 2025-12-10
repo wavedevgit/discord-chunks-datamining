@@ -77,7 +77,7 @@ function v(e) {
   })), {
     state: m.yb.SENT,
     id: "0"
-  })), [v, E]), A = {
+  })), [v, E]), C = {
     nick: S,
     colorString: n.colorString,
     colorStrings: n.colorStrings
@@ -88,7 +88,7 @@ function v(e) {
       className: o()(e, g.container, y),
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: true,
-        author: A,
+        author: C,
         roleIcon: I,
         message: T,
         isGroupStart: true,

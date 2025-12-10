@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk328886 = require("./328886.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function C(e, t) {
+function A(e, t) {
   var n;
   let r = (0, h.h)(e),
     i = (0, a.e7)([d.Z, g.Z], () => {
@@ -86,12 +86,12 @@ function P(e) {
   })) ? n : true, {
     openGameProfileModal: j,
     launchableAppId: M
-  } = C(d.id, E.author.id), k = (0, v.Z)({
+  } = A(d.id, E.author.id), k = (0, v.Z)({
     application: d,
     analyticsLocations: a
   }), U = i.useMemo(() => {
     if (null != k) return {
-      label: A.intl.string(A.t["jaYS/h"]),
+      label: C.intl.string(C.t["jaYS/h"]),
       icon: o.v3n,
       trackingArea: f.j_.CLOUD_PLAY,
       onClick: k

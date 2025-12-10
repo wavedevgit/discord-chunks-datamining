@@ -71,7 +71,7 @@ function T(e) {
   O(n)
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     decisionId: n,
@@ -84,7 +84,7 @@ function A(e) {
   }, true
 }
 
-function C(e) {
+function A(e) {
   let {
     guildId: t
   } = e;
@@ -157,6 +157,6 @@ let D = new R(Chunk570140.Z, {
   MESSAGE_EDIT_FAILED_AUTOMOD: S,
   REMOVE_AUTOMOD_MESSAGE_NOTICE: I,
   MESSAGE_END_EDIT: T,
-  AUTO_MODERATION_MENTION_RAID_DETECTION: A,
-  AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: C
+  AUTO_MODERATION_MENTION_RAID_DETECTION: C,
+  AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS: A
 })

@@ -109,7 +109,7 @@ function T(e) {
     channel: r
   } = e;
   if (!l.AW.has(r.type)) returnfalse;
-  if ((null == (t = r.threadMetadata) ? true : t.archived) === true) return C(r);
+  if ((null == (t = r.threadMetadata) ? true : t.archived) === true) return A(r);
   {
     let e = null != (n = m[r.guild_id]) ? n : {};
     m[r.guild_id] = _(f({}, e), {
@@ -120,7 +120,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     threads: n,
@@ -130,7 +130,7 @@ function A(e) {
   n.forEach(e => y(t, e))
 }
 
-function C(e) {
+function A(e) {
   let {
     guild_id: t,
     parent_id: n,
@@ -146,7 +146,7 @@ function N(e) {
   let {
     channel: t
   } = e;
-  return C(t)
+  return A(t)
 }
 
 function P(e) {
@@ -192,7 +192,7 @@ let w = new D(Chunk570140.Z, {
   GUILD_DELETE: I,
   THREAD_CREATE: T,
   THREAD_UPDATE: T,
-  THREAD_LIST_SYNC: A,
+  THREAD_LIST_SYNC: C,
   THREAD_DELETE: N,
   CHANNEL_DELETE: P
 })

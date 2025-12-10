@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -197,12 +197,12 @@ let F = e => {
     handleOpenProfile: t,
     analyticsLocations: n,
     context: l
-  } = e, [a, s] = i.useState("interactive-normal");
+  } = e, [a, s] = i.useState("interactive-text-default");
   return (0, r.jsx)("div", {
     className: U.footer,
     children: (0, r.jsx)(o.P3F, {
-      onMouseEnter: () => s("interactive-hover"),
-      onMouseLeave: () => s("interactive-normal"),
+      onMouseEnter: () => s("interactive-text-hover"),
+      onMouseLeave: () => s("interactive-text-default"),
       onClick: () => {
         t(), (0, m.pQ)(G({
           action: "PRESS_VIEW_PROFILE",

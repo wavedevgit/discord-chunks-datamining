@@ -32,7 +32,7 @@ function l(e, t, n) {
     e.stopPropagation(), t.setSelected(e.target.checked)
   }, {
     pressProps: T,
-    isPressed: A
+    isPressed: C
   } = (0, o.r)({
     onPressStart: E,
     onPressEnd: b,
@@ -42,7 +42,7 @@ function l(e, t, n) {
     onClick: S,
     isDisabled: l
   }), {
-    pressProps: C,
+    pressProps: A,
     isPressed: N
   } = (0, o.r)({
     onPressStart: E,
@@ -61,7 +61,7 @@ function l(e, t, n) {
     labelable: true
   });
   return (0, a.y)(n, t.defaultSelected, t.setSelected), {
-    labelProps: (0, r.d)(C, {
+    labelProps: (0, r.d)(A, {
       onClick: e => e.preventDefault()
     }),
     inputProps: (0, r.d)(D, {
@@ -80,7 +80,7 @@ function l(e, t, n) {
       ...R
     }),
     isSelected: t.isSelected,
-    isPressed: A || N,
+    isPressed: C || N,
     isDisabled: l,
     isReadOnly: c,
     isInvalid: g || "invalid" === h

@@ -65,7 +65,7 @@ function C(e) {
         className: O.headerListingInfo,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/medium",
-          color: "interactive-active",
+          color: "interactive-text-active",
           children: z
         }), (0, r.jsx)(u.LZC, {
           size: 2
@@ -84,7 +84,7 @@ function C(e) {
             text: v.intl.string(v.t.aiwXeq),
             className: O.unsavedBadge
           }), null != A && (0, r.jsxs)(u.Text, {
-            color: "interactive-normal",
+            color: "interactive-text-default",
             variant: "text-sm/normal",
             children: [(0, g.T4)(A.price, A.currency), "/", (0, m.JE)(A)]
           })]

@@ -30,10 +30,10 @@ let y = (e, t) => {
       subscriptionTier: v
     } = e, {
       analyticsLocations: S
-    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, f.Nx)(), T = (0, d.rO)(), A = i.useRef(null), [C, N] = i.useState(false);
+    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, f.Nx)(), T = (0, d.rO)(), C = i.useRef(null), [A, N] = i.useState(false);
     return i.useEffect(() => {
-      !a || O || C || null == A.current || A.current.play()
-    }, [a, O, C]), (0, r.jsx)(c.Gt, {
+      !a || O || A || null == C.current || C.current.play()
+    }, [a, O, A]), (0, r.jsx)(c.Gt, {
       value: S,
       children: (0, r.jsxs)("div", {
         ref: t,
@@ -60,7 +60,7 @@ let y = (e, t) => {
             onEnded: () => {
               N(true)
             },
-            ref: A,
+            ref: C,
             children: (0, r.jsx)("source", {
               src: T ? g.Z : b.Z,
               type: T ? _.m.MP4 : _.m.WEBM

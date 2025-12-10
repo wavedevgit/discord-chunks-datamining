@@ -277,10 +277,10 @@ function B(e) {
   }
   return H && (null == B ? true : B.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
-  }), true) : H && (null == B ? true : B.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, A.uL)(M.Z5c.QUEST_HOME_V2 + (null != F ? F : "")), true) : H && (null == B ? true : B.startsWith("/quest-preview")) ? e => {
+  }), true) : H && (null == B ? true : B.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, C.uL)(M.Z5c.QUEST_HOME_V2 + (null != F ? F : "")), true) : H && (null == B ? true : B.startsWith("/quest-preview")) ? e => {
     if (null == e || e.preventDefault(), (0, I.T)({
         location: k.dr.NAVIGATE_TO_QUEST_HOME_UTIL
-      })) return (0, A.uL)(M.Z5c.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(B.split("/").at(false))), true
+      })) return (0, C.uL)(M.Z5c.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(B.split("/").at(false))), true
   } : H && (null == B ? true : B.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
     let {
       transitionToGlobalDiscovery: t
@@ -290,5 +290,5 @@ function B(e) {
     t({
       tab: r.SERVERS
     })
-  }), true) : a || null == (0, N.v)(e) ? true : t => (null == t || t.preventDefault(), C.Z.show(e), true)
+  }), true) : a || null == (0, N.v)(e) ? true : t => (null == t || t.preventDefault(), A.Z.show(e), true)
 }

@@ -160,8 +160,8 @@ class eh extends(r = Chunk473749.PureComponent) {
         emojiSize: T
       } = this.props,
       {
-        shouldShowTooltip: A,
-        tooltipTextAria: C,
+        shouldShowTooltip: C,
+        tooltipTextAria: A,
         reactionRef: N,
         tooltipPositionKey: R
       } = this.state,
@@ -498,7 +498,7 @@ class eh extends(r = Chunk473749.PureComponent) {
       if (!t) return null;
       let n = M.Z.getChannel(e.getChannelId()),
         r = k.Z.getGuild(null == n ? true : n.getGuildId());
-      null != r && (0, C.hk)(r.id)
+      null != r && (0, A.hk)(r.id)
     }), ea(this, "handleSetReactionRef", e => {
       this.setState({
         reactionRef: e
@@ -558,7 +558,7 @@ let eg = Chunk473749.memo(e => {
       currentGuildId: u,
       nonce: d
     } = e;
-    (0, A.u)({
+    (0, C.u)({
       emojiId: a,
       currentGuildId: u,
       popoutData: c,
@@ -605,11 +605,11 @@ let eg = Chunk473749.memo(e => {
       return {
         joinedEmojiSourceGuild: (null == e ? true : e.type) === S.B.GUILD ? k.Z.getGuild(null == e ? true : e.guildId) : true
       }
-    }), [u, d] = a.useState(true), [f, _] = a.useState(true), [h, g] = a.useState(null), [E, b] = a.useState(false), [y, O] = a.useState(false), [I, A] = a.useState(false), C = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, P = G.Z.getGuildId(), R = null != P && (P === (null == u ? true : u.id) || P === (null == c ? true : c.id)), D = Z.default.getCurrentUser(), w = (0, W.a)({
+    }), [u, d] = a.useState(true), [f, _] = a.useState(true), [h, g] = a.useState(null), [E, b] = a.useState(false), [y, O] = a.useState(false), [I, C] = a.useState(false), A = null != c, N = null != (t = null == u ? true : u.isDiscoverable()) && t, P = G.Z.getGuildId(), R = null != P && (P === (null == u ? true : u.id) || P === (null == c ? true : c.id)), D = Z.default.getCurrentUser(), w = (0, W.a)({
       sourceType: h,
       expressionSourceApplication: null != f ? f : null,
       isPremium: V.ZP.isPremium(D),
-      hasJoinedEmojiSourceGuild: C,
+      hasJoinedEmojiSourceGuild: A,
       isDiscoverable: N,
       emojiComesFromCurrentGuild: R,
       isUnusableRoleSubscriptionEmoji: false,
@@ -628,9 +628,9 @@ let eg = Chunk473749.memo(e => {
             case T.w6.GUILD:
               d(e.guild)
           } else d(null);
-          O(false), A(true), r()
+          O(false), C(true), r()
         })()
-      }, [n, E, I, r]), C) return null;
+      }, [n, E, I, r]), A) return null;
     let x = () => {
         b(!E)
       },
@@ -669,7 +669,7 @@ let eg = Chunk473749.memo(e => {
       }) : j && (0, i.jsx)(eE, {
         emojiId: n,
         expressionSourceGuild: u,
-        hasJoinedExpressionSourceGuild: C,
+        hasJoinedExpressionSourceGuild: A,
         onClose: o,
         popoutData: w,
         currentGuildId: P,

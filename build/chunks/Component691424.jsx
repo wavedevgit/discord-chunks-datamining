@@ -222,14 +222,14 @@ let K = {
   inlineCode: {
     react: (e, t, n) => (0, r.jsx)("code", {
       className: "inline",
-      children: (0, A.S)(e, t, n)
+      children: (0, C.S)(e, t, n)
     }, n.key)
   },
   codeBlock: {
     react(e, t, i) {
       let a = () => (0, r.jsx)("code", {
         className: o()(U.scrollbarGhostHairline, "hljs"),
-        children: (0, A.S)(e, t, i)
+        children: (0, C.S)(e, t, i)
       });
       return (0, r.jsx)("pre", {
         children: (0, r.jsxs)("div", {
@@ -291,7 +291,7 @@ let K = {
       let i = () => {
         Y(e.guildId, e.id, e.itemId)
       };
-      return (0, A.k)(e.id) ? (0, r.jsxs)(m.Z, {
+      return (0, C.k)(e.id) ? (0, r.jsxs)(m.Z, {
         role: "link",
         onClick: i,
         className: "channelMention",
@@ -301,7 +301,7 @@ let K = {
     }
   },
   timestamp: {
-    react: (e, t, n) => (0, r.jsx)(C.Z, {
+    react: (e, t, n) => (0, r.jsx)(A.Z, {
       node: e
     }, n.key)
   },
@@ -346,14 +346,14 @@ let K = {
       let i = I.Z.getGuild(e.guildId);
       return (0, r.jsx)(_.Z, {
         guild: i,
-        children: (0, A.S)(e, t, n)
+        children: (0, C.S)(e, t, n)
       }, n.key)
     }
   },
   channel: {
     react: (e, t, n) => (0, r.jsx)(p.Z, {
       iconType: e.iconType,
-      children: (0, A.S)(e, t, n)
+      children: (0, C.S)(e, t, n)
     }, n.key)
   },
   message: {

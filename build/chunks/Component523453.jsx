@@ -46,7 +46,7 @@ function b(e) {
     remoteTriggerClipId: v
   } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), S = (0, o.e7)([c.Z], () => c.Z.getMatchingGroupClip(O, v)), I = (0, o.e7)([c.Z], () => null != S && null != b && c.Z.wasClipSharedInChannel(S.id, b)), {
     onShareClick: T
-  } = (0, d.Z)(b), A = i.useCallback(() => {
+  } = (0, d.Z)(b), C = i.useCallback(() => {
     var e;
     null != S && null != b && (null == (e = t.messageReference) ? true : e.message_id) != null && T({
       clips: [S],
@@ -57,13 +57,13 @@ function b(e) {
     })
   }, [S, b, t.messageReference, T]);
   if (null == y || null == O && null == v || null == S || I) return null;
-  let C = y.attachments.find(e => {
+  let A = y.attachments.find(e => {
       var t;
       return (0, a.yE)(null != (t = e.flags) ? t : 0, m.J0y.IS_CLIP)
     }),
     N = null;
-  if ((null == C ? true : C.proxy_url) != null) {
-    let e = p.Z.toURLSafe(C.proxy_url);
+  if ((null == A ? true : A.proxy_url) != null) {
+    let e = p.Z.toURLSafe(A.proxy_url);
     null != e && (e.searchParams.append("format", "webp"), N = e.toString())
   }
   let P = null != N ? [N, S.thumbnail] : [S.thumbnail];
@@ -81,7 +81,7 @@ function b(e) {
         variant: "stacked"
       }), (0, r.jsx)(s.zxk, {
         size: "sm",
-        onClick: A,
+        onClick: C,
         text: h.intl.string(h.t["5qb8EX"]),
         icon: l.n$P
       })]

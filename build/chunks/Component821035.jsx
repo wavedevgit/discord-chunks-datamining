@@ -68,15 +68,15 @@ function O() {
       value: Chunk524437.Q4.BLOCK,
       label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
     }],
-    A = [{
+    C = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }],
-    C = {
+    A = {
       value: Chunk524437.Q4.SHOW,
       label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
     };
-  exports && (T.unshift(C), A.unshift(C));
+  exports && (T.unshift(A), C.unshift(A));
   let N = {
     isDisabled: b,
     tooltipText: require ? Chunk388032.intl.string(Chunk225753.default["6Af/cw"]) : true
@@ -107,7 +107,7 @@ function O() {
       }),
       isDisabled: !exports || b,
       tooltipText: require ? Chunk388032.intl.string(Chunk225753.default["6Af/cw"]) : true,
-      options: A
+      options: C
     })]
   })
 }

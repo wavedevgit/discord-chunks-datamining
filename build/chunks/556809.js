@@ -44,10 +44,10 @@ let y = null,
   T = e => {
     delete S[e]
   },
-  A = () => {
+  C = () => {
     S = {}
   },
-  C = () => Object.entries(S).map(e => {
+  A = () => Object.entries(S).map(e => {
     let [t, n] = e;
     return {
       timeoutId: Number(t),
@@ -82,13 +82,13 @@ function P() {
 function R() {
   let e = Chunk522474.Z.getWindow(Chunk501787.$J),
     t = null != module && "function" == typeof module.cancelAnimationFrame;
-  C().forEach(n => {
+  A().forEach(n => {
     let {
       timeoutId: r,
       callback: i
     } = n;
     t && e.cancelAnimationFrame(r), h(i)
-  }), A()
+  }), C()
 }
 
 function D(e) {

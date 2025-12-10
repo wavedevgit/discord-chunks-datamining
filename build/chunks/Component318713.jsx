@@ -71,11 +71,11 @@ let E = Chunk473749.memo(function(e) {
       isEdited: O = false,
       application: v,
       tooltipPosition: S
-    } = e, I = i.useMemo(() => g(p), [p]), T = i.useMemo(() => (0, l.Hg)(I), [I]), A = i.useMemo(() => null != _ ? (0, l.vc)(I, _) : a ? (0, l.vc)(I, "LT") : (0, l.Y4)(I, true), [I, _, a]), C = i.useMemo(() => a ? (0, u.Z)(A) : null, [a, A]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFd, {
+    } = e, I = i.useMemo(() => g(p), [p]), T = i.useMemo(() => (0, l.Hg)(I), [I]), C = i.useMemo(() => null != _ ? (0, l.vc)(I, _) : a ? (0, l.vc)(I, "LT") : (0, l.Y4)(I, true), [I, _, a]), A = i.useMemo(() => a ? (0, u.Z)(C) : null, [a, C]), N = i.useMemo(() => O ? d.intl.formatToPlainString(d.t.CDzOFd, {
       timeFormatted: T
     }) : T, [O, T]);
     return (0, r.jsx)("span", {
-      className: o()(n, C, {
+      className: o()(n, A, {
         [f.timestamp]: true,
         [f.timestampVisibleOnHover]: m,
         [f.timestampInline]: E,
@@ -88,7 +88,7 @@ let E = Chunk473749.memo(function(e) {
         position: S,
         delay: 750,
         children: (0, r.jsx)(b, {
-          timeFormatted: A,
+          timeFormatted: C,
           timestamp: I,
           id: y,
           compact: a,
@@ -98,7 +98,7 @@ let E = Chunk473749.memo(function(e) {
         application: v,
         compact: a,
         children: (0, r.jsx)(b, {
-          timeFormatted: A,
+          timeFormatted: C,
           timestamp: I,
           id: y,
           compact: a,

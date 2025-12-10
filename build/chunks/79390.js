@@ -10,7 +10,7 @@ require.d(exports, {
   cZ: () => k,
   e1: () => Z,
   eQ: () => N,
-  fw: () => C,
+  fw: () => A,
   uY: () => w,
   x9: () => L
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./781311.js");
@@ -76,15 +76,15 @@ function T() {
   return {
     text: true,
     image: true,
-    localCreationAnswerId: A()
+    localCreationAnswerId: C()
   }
 }
 
-function A() {
+function C() {
   return (0, Chunk772848.Z)()
 }
 
-function C(e) {
+function A(e) {
   let t = /\b[a-f\d]{8}-(?:[a-f\d]{4}-){3}[a-f\d]{12}-\b/i;
   return e.replace(t, "")
 }

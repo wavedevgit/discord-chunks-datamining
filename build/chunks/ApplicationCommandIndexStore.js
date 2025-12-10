@@ -191,7 +191,7 @@ async function er(e) {
       abort: t,
       promise: n.promise
     }
-  }, true), await (0, A.a)(e, t).then(n.resolve).catch(n.reject)
+  }, true), await (0, C.a)(e, t).then(n.resolve).catch(n.reject)
 }
 
 function ei(e) {
@@ -433,19 +433,19 @@ class e_ extends(r = Chunk442837.ZP.Store) {
     n.allowFetch && (u && c && null != r && eN(r) && (O.default.track(x.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == i.result,
       size: Object.keys(em.indices).length
-    }), eP(i) && null != r && (null != r.guild_id ? (0, A.j)({
+    }), eP(i) && null != r && (null != r.guild_id ? (0, C.j)({
       type: "guild",
       guildId: r.guild_id
-    }) : (0, A.j)({
+    }) : (0, C.j)({
       type: "channel",
       channelId: r.id
-    }), d = true)), eP(a) && ((0, A.j)({
+    }), d = true)), eP(a) && ((0, C.j)({
       type: "user"
-    }), d = true), eP(o) && null != n.applicationId && ((0, A.j)({
+    }), d = true), eP(o) && null != n.applicationId && ((0, C.j)({
       type: "application",
       applicationId: n.applicationId
     }), d = true));
-    let f = eA({
+    let f = eC({
       permissionContext: l,
       text: t.text,
       allowApplicationCommands: u,
@@ -472,7 +472,7 @@ class e_ extends(r = Chunk442837.ZP.Store) {
       commandTypes: [u.yU.CHAT]
     }, {
       placeholderCount: 5,
-      scoreMethod: C.p.COMMAND_ONLY,
+      scoreMethod: A.p.COMMAND_ONLY,
       applicationId: e,
       allowFetch: true
     })
@@ -503,7 +503,7 @@ function eg(e, t, n) {
   return i.useEffect(() => {
     if (r) {
       if ("contextless" === e.type) {
-        n && eP(o) && (0, A.j)({
+        n && eP(o) && (0, C.j)({
           type: "user"
         });
         return
@@ -511,10 +511,10 @@ function eg(e, t, n) {
       n && t && eN(e.channel) && (O.default.track(x.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
         miss: null == o.result,
         size: Object.keys(em.indices).length
-      }), eP(o) && (null != e.channel.guild_id ? (0, A.j)({
+      }), eP(o) && (null != e.channel.guild_id ? (0, C.j)({
         type: "guild",
         guildId: e.channel.guild_id
-      }) : (0, A.j)({
+      }) : (0, C.j)({
         type: "channel",
         channelId: e.channel.id
       }))), a(false)
@@ -531,7 +531,7 @@ function eE(e, t) {
     n && null != e && (t && (O.default.track(x.rMx.APPLICATION_COMMAND_CACHE_FETCH, {
       miss: null == a.result,
       size: Object.keys(em.indices).length
-    }), eP(a) && (0, A.j)({
+    }), eP(a) && (0, C.j)({
       type: "guild",
       guildId: e
     })), r(false))
@@ -541,7 +541,7 @@ function eE(e, t) {
 function eb(e, t) {
   let [n, r] = i.useState(true), a = (0, s.cj)([em], () => em.getUserState());
   return i.useEffect(() => {
-    n && (t && eP(a) && e && (0, A.j)({
+    n && (t && eP(a) && e && (0, C.j)({
       type: "user"
     }), r(false))
   }, [a, t, e, n]), a
@@ -550,7 +550,7 @@ function eb(e, t) {
 function ey(e, t) {
   let [n, r] = i.useState(true), a = (0, s.e7)([em], () => em.getApplicationState(e));
   i.useEffect(() => {
-    n && (t && eP(a) && null != e && (0, A.j)({
+    n && (t && eP(a) && null != e && (0, C.j)({
       type: "application",
       applicationId: e
     }), r(false))
@@ -621,7 +621,7 @@ function eT(e, t, n) {
     l = eb(o, n.allowFetch),
     c = eO(),
     u = ev();
-  return ey(n.applicationId, n.allowFetch), i.useMemo(() => eA({
+  return ey(n.applicationId, n.allowFetch), i.useMemo(() => eC({
     permissionContext: a,
     text: t.text,
     allowApplicationCommands: o,
@@ -638,7 +638,7 @@ function eT(e, t, n) {
   }), [a, t.text, t.builtIns, o, n.scoreMethod, n.allowEmptySections, n.sortOptions, n.allowApplicationState, n.applicationId, n.installOnDemand, s, l, e, c, u])
 }
 
-function eA(e) {
+function eC(e) {
   var t, n, r, i, a, s, l;
   let {
     permissionContext: c,
@@ -646,16 +646,16 @@ function eA(e) {
     userState: f,
     applicationStates: p,
     text: _,
-    builtIns: h = C.D.ALLOW,
+    builtIns: h = A.D.ALLOW,
     allowApplicationCommands: g = true,
     singleApplicationId: E,
     allowEmptySections: y = false,
-    scoreMethod: O = C.p.NONE,
+    scoreMethod: O = A.p.NONE,
     sortOptions: v = eI,
     installOnDemand: I = false
   } = e, {
-    commandTypes: A
-  } = c, N = null == _ ? true : _.toLowerCase(), P = null == N ? true : N.split(" "), R = h === C.D.ONLY_TEXT, D = h !== C.D.DENY ? (0, S.Kh)(A, true, R) : [], x = [], L = {
+    commandTypes: C
+  } = c, N = null == _ ? true : _.toLowerCase(), P = null == N ? true : N.split(" "), R = h === A.D.ONLY_TEXT, D = h !== A.D.DENY ? (0, S.Kh)(C, true, R) : [], x = [], L = {
     permissionContext: c,
     query: N,
     splitQuery: P,
@@ -698,11 +698,11 @@ function eA(e) {
         }
     } else null != r ? (t = r.descriptor, n = Object.values(r.commands)) : null != i ? (t = i.descriptor, n = Object.values(i.commands)) : null != a && (t = a.descriptor, n = Object.values(a.commands));
     o()(null != t, "Failed to select application descriptor"), o()(null != n, "Failed to select list of application commands");
-    let c = eC(t, n, s, l, L);
+    let c = eA(t, n, s, l, L);
     null != c && x.push(c)
   }
   if (v.applications.useFrecency && m.DZ.loadIfNecessary(), x.sort((e, t) => {
-      if (v.applications.useScore && O === C.p.APPLICATION_ONLY) {
+      if (v.applications.useScore && O === A.p.APPLICATION_ONLY) {
         var n, r, i, a;
         let o = null != (i = null == (n = e.data[0]) ? true : n.score) ? i : Number.MAX_VALUE,
           s = null != (a = null == (r = t.data[0]) ? true : r.score) ? a : Number.MAX_VALUE;
@@ -715,13 +715,13 @@ function eA(e) {
       }
       return eU(e.section.name, t.section.name)
     }), D.length > 0 || true === y) {
-    let e = eC(S.Tm[w.bi.BUILT_IN], D, true, true, L);
+    let e = eA(S.Tm[w.bi.BUILT_IN], D, true, true, L);
     null != e && x.push(e)
   }
   let B = x.flatMap(e => e.data.map(t => k(j({}, t), {
     section: e.section
   })));
-  if (O === C.p.COMMAND_ONLY || O === C.p.COMMAND_OR_APPLICATION) {
+  if (O === A.p.COMMAND_ONLY || O === A.p.COMMAND_OR_APPLICATION) {
     let e = c.context,
       t = b.Z.getGuild(null == c || null == (l = c.context) ? true : l.guild_id);
     v.commands.useFrecency && m.DZ.loadIfNecessary();
@@ -752,7 +752,7 @@ function eA(e) {
   }
 }
 
-function eC(e, t, n, r, i) {
+function eA(e, t, n, r, i) {
   let a, {
       query: o,
       splitQuery: s,
@@ -777,7 +777,7 @@ function eC(e, t, n, r, i) {
     isGuildInstalled: n,
     isUserInstalled: r || d
   }) === D.mF.ALLOWED && E.push(i);
-  return 0 !== (a = c !== C.p.NONE && null != o && null != s ? eM(o, s, E, e, c) : E).length || l ? ((c === C.p.NONE || c === C.p.APPLICATION_ONLY) && a.sort((e, t) => eU(e.displayName, t.displayName)), {
+  return 0 !== (a = c !== A.p.NONE && null != o && null != s ? eM(o, s, E, e, c) : E).length || l ? ((c === A.p.NONE || c === A.p.APPLICATION_ONLY) && a.sort((e, t) => eU(e.displayName, t.displayName)), {
     section: e,
     data: a
   }) : null
@@ -862,7 +862,7 @@ function ej(e, t) {
 
 function eM(e, t, n, r, i) {
   let a, o = [];
-  if (i === C.p.APPLICATION_ONLY || i === C.p.COMMAND_OR_APPLICATION) {
+  if (i === A.p.APPLICATION_ONLY || i === A.p.COMMAND_OR_APPLICATION) {
     let t = r.name.toLocaleLowerCase();
     if (t.startsWith(e)) a = 5;
     else if (t.includes(e)) a = 6;
@@ -876,7 +876,7 @@ function eM(e, t, n, r, i) {
     u = t.slice(1).join(" ");
   for (let t of n) {
     let n;
-    (i === C.p.COMMAND_ONLY || i === C.p.COMMAND_OR_APPLICATION) && (n = ek(t, e, c, u)), (true === n || true !== a && a < n) && (n = a), true !== n && o.push(k(j({}, t), {
+    (i === A.p.COMMAND_ONLY || i === A.p.COMMAND_OR_APPLICATION) && (n = ek(t, e, c, u)), (true === n || true !== a && a < n) && (n = a), true !== n && o.push(k(j({}, t), {
       score: n
     }))
   }

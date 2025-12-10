@@ -157,12 +157,12 @@ function I(e) {
     liveText: _,
     textVariant: I = "text-sm/semibold",
     isNew: T,
-    recurrenceRule: A,
-    guildEventId: C,
+    recurrenceRule: C,
+    guildEventId: A,
     recurrenceId: N
   } = e, P = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), R = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), D = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_CRITICAL).hex();
   null == _ && (_ = a === m.WX.EXTERNAL ? h.intl.string(h.t.IyZxjH) : h.intl.string(h.t["X2K3/4"]));
-  let w = (0, f.Z)(N, C),
+  let w = (0, f.Z)(N, A),
     [{
       startDateTimeString: x,
       endDateTimeString: L,
@@ -198,13 +198,13 @@ function I(e) {
       startDateTimeString: x
     }), [Z, P, R, D, L, x]),
     W = null;
-  if (null != A) {
-    let e = (0, p.Ho)(A);
+  if (null != C) {
+    let e = (0, p.Ho)(C);
     W = h.intl.formatToPlainString(h.t.HmKEqW, {
       recurrenceRule: e.toText()
     });
     let n = l()(t);
-    W = b((0, p.zi)(n, A), n)
+    W = b((0, p.zi)(n, C), n)
   }
   return (0, r.jsxs)(S, {
     className: o()(s, {

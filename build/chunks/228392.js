@@ -8,7 +8,7 @@ require.d(exports, {
   GX: () => M,
   HR: () => F,
   Hr: () => N,
-  Je: () => A,
+  Je: () => C,
   Js: () => b,
   KR: () => R,
   MO: () => U,
@@ -16,7 +16,7 @@ require.d(exports, {
   Oq: () => T,
   P_: () => v,
   Vn: () => I,
-  ab: () => C,
+  ab: () => A,
   e5: () => x,
   e7: () => O,
   lN: () => Z,
@@ -209,7 +209,7 @@ function T(e) {
   }))
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     channelId: n,
@@ -227,7 +227,7 @@ function A(e) {
   u.Z.isLoading(i) ? u.Z.addConditionalChangeListener(() => !!u.Z.isLoading(i) || (a(), false)) : a()
 }
 
-function C(e) {
+function A(e) {
   let {
     guildId: t,
     channelId: n

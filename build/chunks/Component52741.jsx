@@ -51,8 +51,8 @@ function v(e) {
     textVariant: S,
     className: I,
     isApplicationHome: T,
-    enablePremiumBrandRefresh: A,
-    headerClassName: C,
+    enablePremiumBrandRefresh: C,
+    headerClassName: A,
     headingVariant: N = "heading-md/normal",
     headingColor: P
   } = e, R = (0, l.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), D = (0, l.e7)([u.default], () => u.default.getCurrentUser()), w = (0, p.t7)(), x = (0, p.lr)(), L = n === E.PremiumTypes.TIER_0 ? E.Si.TIER_0 : E.Si.TIER_2, j = (null == R ? true : R.hasActiveTrial) ? null == D ? true : D.premiumType : w ? E.PremiumTypes.TIER_2 : null, M = (0, m.N)(), k = (0, _.N)(), U = null == M ? true : M.subscription_trial;
@@ -77,7 +77,7 @@ function v(e) {
     return (0, r.jsx)(c.Heading, {
       variant: N,
       color: P,
-      className: a()(y.trialHeader, C),
+      className: a()(y.trialHeader, A),
       children: i()
     })
   }
@@ -88,7 +88,7 @@ function v(e) {
       return (0, r.jsx)(c.Heading, {
         variant: N,
         color: P,
-        className: a()(y.trialHeader, C),
+        className: a()(y.trialHeader, A),
         children: b.intl.format(b.t["9vyovu"], {
           planName: (0, f.MF)(null != (Z = E.IW[null != (G = null == U ? true : U.sku_id) ? G : E.Si.NONE]) ? Z : E.Xh.PREMIUM_MONTH_TIER_2),
           duration: (0, f.if)({
@@ -103,7 +103,7 @@ function v(e) {
     if (null != k) return (0, r.jsx)(c.Heading, {
       variant: N,
       color: P,
-      className: a()(y.trialHeader, C),
+      className: a()(y.trialHeader, A),
       children: (0, r.jsx)(O, {
         defaultPriceString: e,
         subscriptionPlan: E.Xh.PREMIUM_MONTH_TIER_2,
@@ -119,7 +119,7 @@ function v(e) {
       priceOptions: v,
       variant: S,
       isApplicationHome: T,
-      enablePremiumBrandRefresh: A
+      enablePremiumBrandRefresh: C
     }), h && (0, r.jsx)(g.Z, {
       subscriptionTier: L,
       interval: E.rV.YEAR,
@@ -128,7 +128,7 @@ function v(e) {
       priceOptions: v,
       variant: S,
       isApplicationHome: T,
-      enablePremiumBrandRefresh: A
+      enablePremiumBrandRefresh: C
     })]
   })
 }

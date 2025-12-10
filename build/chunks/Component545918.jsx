@@ -75,7 +75,7 @@ function U(e) {
     guildId: n
   } = e, i = null != (t = (0, p.A)({
     guildId: n
-  })) ? t : 0, [u, b] = r.useState(i > 0 ? E.e.PENDING : E.e.ALL_MEMBERS), v = (0, s.e7)([T.Z], () => T.Z.getGuild(n)), {
+  })) ? t : 0, [u, b] = r.useState(i > 0 ? E.e.PENDING : E.e.ALL_MEMBERS), v = (0, s.e7)([S.Z], () => S.Z.getGuild(n)), {
     analyticsLocations: R
   } = (0, d.ZP)(c.Z.MEMBER_SAFETY_PAGE), D = (0, f.C)({
     guildId: n
@@ -109,11 +109,11 @@ function U(e) {
   r.useEffect(() => {
     if (!U && null != v) {
       var e;
-      let t = null == (e = S.ZP.getDefaultChannel(v.id)) ? true : e.id;
-      (0, C.XU)(v.id, t)
+      let t = null == (e = T.ZP.getDefaultChannel(v.id)) ? true : e.id;
+      (0, _.XU)(v.id, t)
     }
   }, [v, U]);
-  let K = (0, s.e7)([_.ZP], () => null != _.ZP.getGuildSidebarState(n), [n]);
+  let K = (0, s.e7)([C.ZP], () => null != C.ZP.getGuildSidebarState(n), [n]);
   return null != v && U ? (0, l.jsxs)(d.Gt, {
     value: R,
     children: [(0, l.jsxs)("div", {

@@ -86,11 +86,11 @@ function j(e) {
     className: h.guildCardQuote,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-lg/normal",
-      color: "interactive-active",
+      color: "interactive-text-active",
       children: t
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
-      color: "interactive-active",
+      color: "interactive-text-active",
       children: f.intl.format(f.t.m0b6Kj, {
         attributionName: n,
         attributionTitle: null != i ? i : f.intl.string(f.t.pclUFJ)

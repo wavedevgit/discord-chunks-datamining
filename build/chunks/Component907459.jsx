@@ -82,7 +82,7 @@ let w = () => {
       markAsDismissed: n
     } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), a = () => {
       null == n || n(N.L.DISMISS), (0, m.Ll)(), (0, I.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
-        section: C.oAB.APPEARANCE
+        section: A.oAB.APPEARANCE
       })
     };
     return (0, r.jsxs)("div", {
@@ -110,12 +110,12 @@ function j(e) {
     shouldEditorAnimate: t && !f.Z.useReducedMotion
   })), g = m.oq.getState().activePanel === m.wh.APP_ICON;
   i.useEffect(() => {
-    c && v.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
+    c && v.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
       type: P.cd.APP_ICON_UPSELL,
       location_stack: a
     })
   }, [c, a]);
-  let E = (0, d.Z)(null, c ? I.O : C.dG4);
+  let E = (0, d.Z)(null, c ? I.O : A.dG4);
   return (i.useEffect(() => {
     if (c && !g) return I.O
   }, [c, g]), null == l) ? null : (0, r.jsx)(_.Gt, {
@@ -129,7 +129,7 @@ function j(e) {
           markAsDismissed: n
         }), (0, r.jsx)(u.Ttm, {
           className: D.editorBody,
-          children: (0, r.jsx)(A.Z, {
+          children: (0, r.jsx)(C.Z, {
             className: D.selectionGroup,
             isEditor: true
           })

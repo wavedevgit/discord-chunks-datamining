@@ -78,7 +78,7 @@ function C() {
         direction: Chunk768762.Z.Directions.LEFT
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: Chunk388032.intl.string(Chunk388032.t["13/7kX"])
       })]
     }), module]

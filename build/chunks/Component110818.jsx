@@ -2,7 +2,7 @@
 /** chunk id: 110818, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Db: () => C,
+  Db: () => A,
   HC: () => O,
   NQ: () => E,
   fe: () => L
@@ -11,7 +11,7 @@ var r, i, a, o, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   u = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk298185 = require("./298185.js");
@@ -248,20 +248,20 @@ let T = Object.freeze({
       delay: 1e3
     }
   }),
-  A = 1.2;
-class C extends(a = Chunk473749.PureComponent) {
+  C = 1.2;
+class A extends(a = Chunk473749.PureComponent) {
   static getNextScene(e) {
     switch (e) {
-      case C.Scenes.IDLE_ENTRY:
-        return C.Scenes.IDLE_LOOP;
-      case C.Scenes.BOOST_START:
-        return C.Scenes.BOOST_LOOP;
-      case C.Scenes.BOOST_END:
-        return C.Scenes.VICTORY;
-      case C.Scenes.VICTORY:
-        return C.Scenes.IDLE_ENTRY;
-      case C.Scenes.ERROR:
-        return C.Scenes.IDLE_LOOP;
+      case A.Scenes.IDLE_ENTRY:
+        return A.Scenes.IDLE_LOOP;
+      case A.Scenes.BOOST_START:
+        return A.Scenes.BOOST_LOOP;
+      case A.Scenes.BOOST_END:
+        return A.Scenes.VICTORY;
+      case A.Scenes.VICTORY:
+        return A.Scenes.IDLE_ENTRY;
+      case A.Scenes.ERROR:
+        return A.Scenes.IDLE_LOOP;
       default:
         return e
     }
@@ -284,7 +284,7 @@ class C extends(a = Chunk473749.PureComponent) {
       delay: e.delay || 0
     }), f.Z.timing(this.backgroundAnimation.y, {
       toValue: e.toValue,
-      duration: e.duration * A,
+      duration: e.duration * C,
       delay: e.delay || 0
     })]).start()
   }
@@ -304,7 +304,7 @@ class C extends(a = Chunk473749.PureComponent) {
       delay: T.BOOST_START.delay
     }), Chunk748780.Z.timing(this.backgroundAnimation.y, {
       toValue: T.BOOST_START.toValue,
-      duration: T.BOOST_START.duration * A,
+      duration: T.BOOST_START.duration * C,
       delay: T.BOOST_START.delay
     })]).start()
   }
@@ -354,7 +354,7 @@ class C extends(a = Chunk473749.PureComponent) {
     })), m(this, "didUnmount", false), m(this, "animateIdleLoopBackground", () => {
       this.didUnmount || (this.backgroundAnimation.x.setValue(0), f.Z.timing(this.backgroundAnimation.x, {
         toValue: T.IDLE_LOOP.toValue,
-        duration: T.IDLE_LOOP.duration * A,
+        duration: T.IDLE_LOOP.duration * C,
         easing: f.Z.Easing.linear
       }).start(this.animateIdleLoopBackground))
     }), m(this, "animateIdleLoopForeground", () => {
@@ -381,7 +381,7 @@ class C extends(a = Chunk473749.PureComponent) {
     })
   }
 }
-m(C, "Scenes", v);
+m(A, "Scenes", v);
 var N = function(e) {
   return e.ENTRY = "entry", e.IDLE = "idle", e.STARS = "stars", e.ERROR = "error", e.SUCCESS = "success", e
 }(N || {});

@@ -67,7 +67,7 @@ let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
           children: [(0, r.jsxs)("div", {
             className: m.cloudPlaySectionTextContainer,
             children: [(0, r.jsx)(o.v3n, {
-              color: o.TVs.colors.ICON_SECONDARY,
+              color: o.TVs.colors.ICON_SUBTLE,
               size: "xxs"
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
@@ -76,7 +76,7 @@ let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
             })]
           }), T === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
             text: _.intl.string(_.t.y2b7CA),
-            color: o.TVs.colors.BG_BRAND.css
+            color: o.TVs.colors.BACKGROUND_BRAND.css
           })]
         })]
       })]

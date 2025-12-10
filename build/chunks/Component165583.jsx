@@ -138,7 +138,7 @@ function k(e) {
 
 function U(e) {
   var t, n;
-  let i = null == (t = (0, C.N)()) ? true : t.subscription_trial,
+  let i = null == (t = (0, A.N)()) ? true : t.subscription_trial,
     a = null != (n = null == i ? true : i.sku_id) ? n : R.Si.TIER_2;
   return (0, r.jsx)(m.Text, {
     variant: "text-xs/bold",
@@ -186,7 +186,7 @@ function Z(e) {
   let {
     onClose: t,
     analyticsLocationObject: n
-  } = e, i = (0, C.N)();
+  } = e, i = (0, A.N)();
   return (0, r.jsxs)("div", {
     className: x.tryOutUpsellContainer,
     children: [(0, r.jsx)(P.Cy, {
@@ -197,7 +197,7 @@ function Z(e) {
       variant: "heading-md/semibold",
       color: "text-default",
       children: w.intl.format(w.t["fF+cgd"], {
-        onClick: () => (0, A.z)()
+        onClick: () => (0, C.z)()
       })
     }), (0, r.jsx)(k, {
       trialOffer: i,
@@ -249,7 +249,7 @@ function F(e) {
     analyticsLocationObject: _,
     trialOffer: y,
     discountOffer: O
-  } = e, A = (0, d.e7)([g.Z], () => g.Z.useReducedMotion), C = (0, h.ZP)(), N = (0, v.BU)(T.zz / v.XD, {
+  } = e, C = (0, d.e7)([g.Z], () => g.Z.useReducedMotion), A = (0, h.ZP)(), N = (0, v.BU)(T.zz / v.XD, {
     useKibibytes: true
   });
   switch (c) {
@@ -324,7 +324,7 @@ function F(e) {
       });
     case R.cd.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
       l()(null != a, "You must specify children for this upsell type");
-      let P = (0, p.ap)(C) ? n(537381) : n(341048);
+      let P = (0, p.ap)(A) ? n(537381) : n(341048);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: x.contentContainer,
@@ -447,7 +447,7 @@ function F(e) {
     case R.cd.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
       return (0, r.jsxs)("div", {
         className: o()(x.messageLengthUpsellContainer, {
-          [x.messageLengthUpsellAppearAnimation]: !A
+          [x.messageLengthUpsellAppearAnimation]: !C
         }),
         children: [(0, r.jsx)(m.Text, {
           variant: "text-lg/bold",

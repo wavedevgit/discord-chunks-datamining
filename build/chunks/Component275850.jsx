@@ -2,7 +2,7 @@
 /** chunk id: 275850, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => C
+  ZP: () => A
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -135,14 +135,14 @@ function T(e, t, n) {
   })
 }
 
-function A(e, t) {
+function C(e, t) {
   let n = null;
   return e && null != t && !t.canRedeemTrial() ? n = g.intl.string(g.t.SvheW9) : e && null != t && t.hasFlag(h.Cw.NEW) && (n = g.intl.format(g.t.d7ZLKA, {
     helpDeskArticle: _.Z.getArticleURL(m.BhN.PAYMENT_AUTHORIZATION_CHARGE)
   })), n
 }
 
-function C(e) {
+function A(e) {
   let {
     label: t,
     selectedPaymentSourceId: n,
@@ -155,7 +155,7 @@ function C(e) {
     disabled: b = false,
     className: y,
     optionClassName: O,
-    dropdownLoading: C,
+    dropdownLoading: A,
     paymentGatewayRestrictions: N
   } = e, P = 0 === a.length, R = e => {
     if (e === v) null != m && m();
@@ -179,7 +179,7 @@ function C(e) {
       value: e.value,
       label: e.label
     }
-  }), w = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), x = A(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
+  }), w = i.useMemo(() => new Map(a.map(e => [e.id, e])), [a]), x = C(h, i.useMemo(() => a.find(e => e.id === n), [a, n]));
   if (null == n && null != N && N.length > 0) {
     let e = a.filter(e => N.includes(e.paymentGateway));
     n = 0 === e.length ? v : e[0].id
@@ -203,7 +203,7 @@ function C(e) {
       placeholder: g.intl.string(g.t["8lqkf8"]),
       renderOptionValue: e => {
         let [t] = e;
-        return C ? (0, r.jsx)(u.$jN, {
+        return A ? (0, r.jsx)(u.$jN, {
           type: u.RAz.SPINNING_CIRCLE
         }) : T(null == t.value ? true : w.get(t.value), t, f)
       },

@@ -60,7 +60,7 @@ let y = {
   I = new Chunk710845.Z("UserSettingsProtoStore"),
   T = new Chunk930133.Z("UserSettingsProtoStore");
 
-function A(e) {
+function C(e) {
   let {
     userSettingsProto: t
   } = e;
@@ -75,7 +75,7 @@ function A(e) {
   }), P()
 }
 
-function C() {
+function A() {
   P()
 }
 
@@ -249,9 +249,9 @@ let G = new U(Chunk570140.Z, {
   USER_SETTINGS_PROTO_UPDATE: w,
   USER_SETTINGS_PROTO_ENQUEUE_UPDATE: w,
   USER_SETTINGS_PROTO_UPDATE_EDIT_INFO: x,
-  CONNECTION_OPEN: A,
-  CONNECTION_CLOSED: C,
-  CONNECTION_RESUMED: C,
+  CONNECTION_OPEN: C,
+  CONNECTION_CLOSED: A,
+  CONNECTION_RESUMED: A,
   OVERLAY_INITIALIZE: D,
   LOGOUT: N
 })

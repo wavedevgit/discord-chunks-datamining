@@ -86,7 +86,7 @@ function S(e) {
       maxLength: g,
       error: y,
       defaultDirty: S,
-      showCharacterCount: C,
+      showCharacterCount: A,
       showRemainingCharacterCount: N = true,
       rows: P = 3,
       inputRef: R
@@ -114,7 +114,7 @@ function S(e) {
       onChange: t
     } = x;
     null == t || t(e.currentTarget.value), M.setShouldValidate(true)
-  }, G = j && C ? (0, r.jsx)(c.H, {
+  }, G = j && A ? (0, r.jsx)(c.H, {
     value: n,
     maxLength: N && null != g ? g : true
   }) : null;
@@ -144,11 +144,11 @@ function S(e) {
           ref: R
         }))
       }), j ? null : (0, r.jsxs)(r.Fragment, {
-        children: [C ? (0, r.jsx)(T, {
+        children: [A ? (0, r.jsx)(T, {
           value: n,
           maxLength: g,
           hasError: M.hasError
-        }) : null, C || false === N ? null : (0, r.jsx)(A, {
+        }) : null, A || false === N ? null : (0, r.jsx)(C, {
           value: n,
           maxLength: g
         })]
@@ -190,7 +190,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     value: t,
     maxLength: n

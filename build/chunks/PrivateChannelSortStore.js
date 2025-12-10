@@ -69,13 +69,13 @@ function T(e) {
   }
 }
 
-function A() {
+function C() {
   v.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
     v.set(e.id, T(e))
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     channel: t
   } = e;
@@ -140,7 +140,7 @@ let x = (() => {
 })();
 class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk306680.ZP, Chunk333984.Z, Chunk9156.ZP, Chunk594174.default), this.syncWith([Chunk9156.ZP, Chunk355298.Z], A)
+    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk306680.ZP, Chunk333984.Z, Chunk9156.ZP, Chunk594174.default), this.syncWith([Chunk9156.ZP, Chunk355298.Z], C)
   }
   getPrivateChannelIds() {
     return x()
@@ -161,13 +161,13 @@ class L extends(r = Chunk442837.ZP.Store) {
 }
 b(L, "displayName", "PrivateChannelSortStore");
 let j = new L(Chunk570140.Z, {
-  CONNECTION_OPEN: A,
-  CONNECTION_OPEN_SUPPLEMENTAL: A,
-  OVERLAY_INITIALIZE: A,
+  CONNECTION_OPEN: C,
+  CONNECTION_OPEN_SUPPLEMENTAL: C,
+  OVERLAY_INITIALIZE: C,
   CACHE_LOADED: w,
   CACHE_LOADED_LAZY: w,
   CHANNEL_UPDATES: N,
-  CHANNEL_CREATE: C,
+  CHANNEL_CREATE: A,
   CHANNEL_DELETE: P,
   MESSAGE_CREATE: R,
   GUILD_CREATE: D,

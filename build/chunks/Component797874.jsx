@@ -65,14 +65,14 @@ let T = function(e) {
   let {
     gameId: t,
     channelId: a
-  } = e, O = i.useRef(null), S = (0, s.e7)([m.Z], () => m.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(a)), A = null != T ? T.getGuildId() : null, C = null != S ? e => {
+  } = e, O = i.useRef(null), S = (0, s.e7)([m.Z], () => m.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(a)), C = null != T ? T.getGuildId() : null, A = null != S ? e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
       } = await n.e("51064").then(n.bind(n, 631861));
       return t => (0, r.jsx)(e, I(v({}, t), {
         game: S,
-        guildId: A
+        guildId: C
       }))
     })
   } : true, N = null != S ? (0, r.jsx)("img", {
@@ -110,7 +110,7 @@ let T = function(e) {
         "aria-label": D,
         delay: 750,
         children: (0, r.jsxs)(g.Z, I(v({
-          onContextMenu: C,
+          onContextMenu: A,
           ref: O
         }, e), {
           onClick: n => {

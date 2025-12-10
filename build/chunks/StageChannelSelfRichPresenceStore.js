@@ -2,7 +2,7 @@
 /** chunk id: 742738, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -44,9 +44,9 @@ function v() {
   let S = (0, Chunk750154.Lw)(y, Chunk19780),
     I = (null == O || null == (e = O.party) ? true : module.id) === S ? O : null,
     T = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),
-    A = T.filter(e => e.type === _.Ui.STREAM).length,
-    C = T.length - A,
-    N = Chunk565799.Z.getParticipantCount(Chunk570140) - A,
+    C = T.filter(e => e.type === _.Ui.STREAM).length,
+    A = T.length - C,
+    N = Chunk565799.Z.getParticipantCount(Chunk570140) - C,
     P = (null == I || null == (t = I.party) ? true : exports.size) != null ? I.party.size[1] : 0;
   return {
     application_id: Chunk157925.gD,
@@ -61,7 +61,7 @@ function v() {
     },
     party: {
       id: S,
-      size: [C, Math.max(N, P)]
+      size: [A, Math.max(N, P)]
     }
   }
 }
@@ -87,7 +87,7 @@ function T(e) {
   } = e, a = null != (r = null == O || null == (n = O.party) || null == (t = n.size) ? true : t[1]) ? r : 0;
   return i === b.hes.RTC_CONNECTED && !(a > 0) && S()
 }
-class A extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk19780.Z, Chunk944486.Z, Chunk565799.Z, Chunk427679.Z)
   }
@@ -95,8 +95,8 @@ class A extends(r = Chunk442837.ZP.Store) {
     return O
   }
 }
-y(A, "displayName", "StageChannelSelfRichPresenceStore");
-let C = new A(Chunk570140.Z, {
+y(C, "displayName", "StageChannelSelfRichPresenceStore");
+let A = new C(Chunk570140.Z, {
   CONNECTION_OPEN: S,
   STAGE_INSTANCE_CREATE: S,
   STAGE_INSTANCE_UPDATE: S,

@@ -214,7 +214,7 @@ let L = require("./227419.js").Z,
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && E.OW.getSetting() && y.Z.can(A.Plq.SEND_TTS_MESSAGES, t)
+      return null != t && !t.isPrivate() && E.OW.getSetting() && y.Z.can(C.Plq.SEND_TTS_MESSAGES, t)
     },
     execute: e => {
       var t;
@@ -284,7 +284,7 @@ let L = require("./227419.js").Z,
       var t;
       let n = null != (t = j(e, "message")) ? t : "";
       return {
-        content: (0, A.XmY)(n).trim()
+        content: (0, C.XmY)(n).trim()
       }
     }
   }, {
@@ -315,7 +315,7 @@ let L = require("./227419.js").Z,
       let {
         channel: t
       } = e;
-      return null != t && !t.isPrivate() && (y.Z.can(A.Plq.CHANGE_NICKNAME, t) || y.Z.can(A.Plq.MANAGE_NICKNAMES, t))
+      return null != t && !t.isPrivate() && (y.Z.can(C.Plq.CHANGE_NICKNAME, t) || y.Z.can(C.Plq.MANAGE_NICKNAMES, t))
     },
     execute: (e, t) => {
       var n;
@@ -325,7 +325,7 @@ let L = require("./227419.js").Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = j(e, "new_nick")) ? n : "";
-      l.Z.changeNickname(r.id, i.id, A.ME, a || "")
+      l.Z.changeNickname(r.id, i.id, C.ME, a || "")
     }
   }, {
     id: "-10",
@@ -418,7 +418,7 @@ let L = require("./227419.js").Z,
       let {
         guild: t
       } = e;
-      return y.Z.can(A.Plq.KICK_MEMBERS, t)
+      return y.Z.can(C.Plq.KICK_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -428,7 +428,7 @@ let L = require("./227419.js").Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = j(e, "user")) ? n : "";
-      if (!y.Z.canManageUser(A.Plq.KICK_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, P.intl.string(P.t["6RIwPI"]));
+      if (!y.Z.canManageUser(C.Plq.KICK_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, P.intl.string(P.t["6RIwPI"]));
       (async () => {
         var t;
         let n = O.default.getUser(a);
@@ -522,7 +522,7 @@ let L = require("./227419.js").Z,
       let {
         guild: t
       } = e;
-      return y.Z.can(A.Plq.BAN_MEMBERS, t)
+      return y.Z.can(C.Plq.BAN_MEMBERS, t)
     },
     execute: (e, t) => {
       var n;
@@ -532,7 +532,7 @@ let L = require("./227419.js").Z,
       } = t;
       if (null == r || null == i) return;
       let a = null != (n = j(e, "user")) ? n : "";
-      if (!y.Z.canManageUser(A.Plq.BAN_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, P.intl.string(P.t.R27LJl));
+      if (!y.Z.canManageUser(C.Plq.BAN_MEMBERS, a, r)) return void d.Z.sendBotMessage(i.id, P.intl.string(P.t.R27LJl));
       (async () => {
         var t, n;
         if ("" === a) throw Error();
@@ -603,7 +603,7 @@ let L = require("./227419.js").Z,
       let {
         guild: t
       } = e;
-      return y.Z.can(A.Plq.MODERATE_MEMBERS, t)
+      return y.Z.can(C.Plq.MODERATE_MEMBERS, t)
     },
     execute: (e, t) => {
       let {

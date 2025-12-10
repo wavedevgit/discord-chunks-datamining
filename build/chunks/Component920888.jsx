@@ -91,16 +91,16 @@ class I extends Chunk473749.PureComponent {
       forceHideReactionCreates: S,
       remainingReactions: I,
       combinedReactions: T,
-      visibleReactionsCount: A
+      visibleReactionsCount: C
     } = this.props, {
-      disableTransitionAppear: C
-    } = this.state, N = v ? Chunk893973 : Chunk127947, P = A > 0;
+      disableTransitionAppear: A
+    } = this.state, N = v ? Chunk893973 : Chunk127947, P = C > 0;
     if (!P && !y) return null;
     let R = y || P;
     return (0, Chunk54381.jsxs)(Chunk215569.W, {
       component: "div",
       className: o()(N.reactions, b),
-      transitionAppear: !C,
+      transitionAppear: !A,
       role: "group",
       transitionLeave: false,
       id: (0, Chunk453687.bY)(module),

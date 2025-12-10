@@ -226,7 +226,7 @@ let J = 32,
         className: o()(K.__invalid_guildInformation, K.truncatingText),
         children: [(0, r.jsxs)(b.Z, {
           align: b.Z.Align.CENTER,
-          children: [(0, r.jsx)(A.Z, {
+          children: [(0, r.jsx)(C.Z, {
             guild: t,
             className: K.guildBadge
           }), h()]
@@ -278,7 +278,7 @@ let J = 32,
       expressionSourceApplication: y,
       expressionSourceGuild: v,
       joinedEmojiSourceGuildRecord: T,
-      closePopout: A,
+      closePopout: C,
       onToggleShowMoreEmojis: w,
       guildEmoji: x,
       demoMode: k = false,
@@ -295,8 +295,8 @@ let J = 32,
         isUnusableRoleSubscriptionEmoji: false,
         userIsRoleSubscriber: false
       } : {
-        isRoleSubscriptionEmoji: C.yH(x),
-        isUnusableRoleSubscriptionEmoji: C.Fv(x, null != z ? z : true),
+        isRoleSubscriptionEmoji: A.yH(x),
+        isUnusableRoleSubscriptionEmoji: A.Fv(x, null != z ? z : true),
         userIsRoleSubscriber: N.Z.getUserSubscriptionRoles(x.guildId).size > 0
       }, [x, z]),
       eo = !!er && (0, O.Ol)(null == x ? true : x.guildId),
@@ -327,7 +327,7 @@ let J = 32,
         isDiscoverable: J,
         shouldHideRoleSubscriptionCTA: eo,
         onOpenPremiumSettings: () => {
-          A(), M.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
+          C(), M.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
           }), (0, R.z)()
@@ -348,13 +348,13 @@ let J = 32,
       em = () => {
         let e = async () => {
           if (k || null == v || X) return;
-          A();
+          C();
           let e = v.id;
           try {
             await _.Z.joinGuild(e), _.Z.transitionToGuildSync(e)
           } catch (e) {}
         }, t = () => {
-          A(), (null == T ? true : T.id) != null && _.Z.transitionToGuildSync(T.id, {
+          C(), (null == T ? true : T.id) != null && _.Z.transitionToGuildSync(T.id, {
             sourceLocationStack: [h.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, H.oC.ROLE_SUBSCRIPTIONS)
         }, n = !X && J, i = () => e_ ? (0, r.jsx)(D.Z, {
@@ -365,7 +365,7 @@ let J = 32,
           textOptions: {
             textOverride: ec.text
           },
-          onSubscribeModalClose: t => t ? e() : A(),
+          onSubscribeModalClose: t => t ? e() : C(),
           postSuccessGuild: n && null != v ? v : true,
           premiumModalAnalyticsLocation: $
         }) : ep ? (0, r.jsx)("div", {
@@ -455,7 +455,7 @@ let J = 32,
               emojiId: c.emojiId,
               expressionSourceGuild: v,
               popoutData: ec,
-              onClose: A,
+              onClose: C,
               hasJoinedEmojiSourceGuild: X,
               isDisplayingButtonInTopSection: ep || e_
             })]

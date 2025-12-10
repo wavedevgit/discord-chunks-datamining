@@ -63,7 +63,7 @@ function I(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -71,14 +71,14 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let C = {
+let A = {
     SMOL: "Smol",
     MINI: "Mini",
     SMALLER: "Smaller",
@@ -89,24 +89,24 @@ let C = {
     XLARGE: "XLarge"
   },
   N = {
-    [C.SMOL]: 16,
-    [C.MINI]: 20,
-    [C.SMALLER]: 24,
-    [C.SMALL]: 30,
-    [C.MEDIUM]: 40,
-    [C.LARGE]: 50,
-    [C.LARGER]: 64,
-    [C.XLARGE]: 100
+    [A.SMOL]: 16,
+    [A.MINI]: 20,
+    [A.SMALLER]: 24,
+    [A.SMALL]: 30,
+    [A.MEDIUM]: 40,
+    [A.LARGE]: 50,
+    [A.LARGER]: 64,
+    [A.XLARGE]: 100
   },
   P = {
-    [C.SMOL]: [10, 10, 8, 6, 6, 4],
-    [C.MINI]: [12, 12, 10, 10, 8, 6, 4],
-    [C.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
-    [C.SMALL]: [14, 14, 12, 12, 10, 8, 6],
-    [C.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
-    [C.LARGE]: [18, 18, 16, 16, 14, 12, 10],
-    [C.LARGER]: [19, 19, 17, 17, 15, 13, 11],
-    [C.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
+    [A.SMOL]: [10, 10, 8, 6, 6, 4],
+    [A.MINI]: [12, 12, 10, 10, 8, 6, 4],
+    [A.SMALLER]: [13, 13, 11, 11, 9, 7, 5],
+    [A.SMALL]: [14, 14, 12, 12, 10, 8, 6],
+    [A.MEDIUM]: [16, 16, 14, 14, 12, 10, 8],
+    [A.LARGE]: [18, 18, 16, 16, 14, 12, 10],
+    [A.LARGER]: [19, 19, 17, 17, 15, 13, 11],
+    [A.XLARGE]: [20, 20, 18, 18, 16, 14, 12]
   };
 class R extends Chunk473749.PureComponent {
   renderAcronym() {
@@ -153,8 +153,8 @@ class R extends Chunk473749.PureComponent {
         badgeStrokeColor: E,
         animate: O,
         tabIndex: S,
-        iconSrc: A,
-        "aria-hidden": C,
+        iconSrc: C,
+        "aria-hidden": A,
         lossless: N,
         iconSize: R
       } = require,
@@ -168,7 +168,7 @@ class R extends Chunk473749.PureComponent {
         [Chunk965005.iconInactive]: !Chunk319498,
         [Chunk965005.noIcon]: null == r.icon
       }),
-      "aria-hidden": C,
+      "aria-hidden": A,
       style: null == r.icon ? v({
         fontSize: (null != (t = w[L.length]) ? exports : w[w.length - 1]) * Chunk681715
       }, Chunk692547) : Chunk692547,
@@ -234,8 +234,8 @@ class w extends(r = Chunk473749.PureComponent) {
     return (0, Chunk54381.jsx)(D, v({}, this.props))
   }
 }
-O(w, "Sizes", C), O(w, "defaultProps", {
-  size: C.LARGE,
+O(w, "Sizes", A), O(w, "defaultProps", {
+  size: A.LARGE,
   textScale: 1,
   showBadge: false,
   showTooltip: false,

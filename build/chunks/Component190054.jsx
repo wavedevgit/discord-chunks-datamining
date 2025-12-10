@@ -34,19 +34,19 @@ function f(e) {
       }
       return o
     }(e, ["chunks", "className", "onCopy"]);
-  let O = o.useMemo(() => null == c ? true : c.join(" "), [c]),
-    [y, j] = o.useState(false),
+  let y = o.useMemo(() => null == c ? true : c.join(" "), [c]),
+    [O, j] = o.useState(false),
     h = o.useCallback(() => {
-      (0, a.JG)(O, () => {
+      (0, a.JG)(y, () => {
         j(true), null == p || p()
       })
-    }, [p, O]),
-    m = y ? s.owK : s.TIy;
+    }, [p, y]),
+    m = O ? s.owK : s.TIy;
   return (0, n.jsx)(s.P3F, {
     className: i()(d.container, f),
     onClick: h,
     children: (0, n.jsx)(l.u, {
-      text: y ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
+      text: O ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
       children: (0, n.jsx)(m, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
@@ -66,7 +66,7 @@ function f(e) {
         return e
       }({}, b), r = r = {
         size: "xxs",
-        color: y ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : s.TVs.colors.INTERACTIVE_NORMAL
+        color: O ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : s.TVs.colors.INTERACTIVE_TEXT_DEFAULT
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

@@ -83,14 +83,14 @@ function y(e) {
   } = e, {
     focusIndex: b,
     isUsingKeyboardNavigation: y
-  } = _, O = E(_, ["focusIndex", "isUsingKeyboardNavigation"]), v = i.useRef(null), S = i.useRef(null), I = i.useRef(null), [T, A] = i.useState(false);
+  } = _, O = E(_, ["focusIndex", "isUsingKeyboardNavigation"]), v = i.useRef(null), S = i.useRef(null), I = i.useRef(null), [T, C] = i.useState(false);
   i.useLayoutEffect(() => {
-    A(true)
+    C(true)
   }, []), i.useLayoutEffect(() => {
     var e;
     a && ((0, u.F)(v), null == (e = I.current) || e.focus())
   }, [a]);
-  let C = (0, r.jsx)("div", {
+  let A = (0, r.jsx)("div", {
       className: p.submenuPaddingContainer,
       children: (0, r.jsx)("div", g(m({
         className: o()(p.submenu, t)
@@ -112,7 +112,7 @@ function y(e) {
     placement: "right-start",
     portal: false,
     trigger: "hover",
-    renderLayer: () => C,
+    renderLayer: () => A,
     children: e => {
       let {
         ref: t,
@@ -133,7 +133,7 @@ function y(e) {
     spacing: 4,
     position: "right",
     align: "top",
-    children: () => C
+    children: () => A
   });
   return (0, r.jsxs)("div", {
     ref: v,

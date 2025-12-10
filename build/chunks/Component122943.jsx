@@ -2,7 +2,7 @@
 /** chunk id: 122943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -71,7 +71,7 @@ function I(e) {
     hideTooltip: y = false,
     canTruncate: v = true,
     showChannelName: I = false
-  } = e, T = (0, s.vjg)(s.Skl.ONLINE), A = (0, u.ZP)(t), C = t.isDM() || t.isGroupDM(), {
+  } = e, T = (0, s.vjg)(s.Skl.ONLINE), C = (0, u.ZP)(t), A = t.isDM() || t.isGroupDM(), {
     enableTopNavButton: N
   } = (0, d.Cq)({
     location: "VoiceActivityStatus"
@@ -83,14 +83,14 @@ function I(e) {
       activityType: "VOICE",
       voiceChannelId: t.id
     })
-  }, [R, t.id]), w = () => y || C ? (0, r.jsx)(p.Z, {
+  }, [R, t.id]), w = () => y || A ? (0, r.jsx)(p.Z, {
     size: "custom",
     color: T,
     channel: t,
     className: o()(b.icon, f)
   }) : (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    text: A,
+    text: C,
     "aria-label": (0, c.ZP)({
       channel: t
     }),
@@ -102,14 +102,14 @@ function I(e) {
       channel: t,
       className: o()(b.icon, f)
     }))
-  }), x = () => N ? A : C ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
+  }), x = () => N ? C : A ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
   return (0, r.jsxs)(r.Fragment, {
     children: [w(), !h && (0, r.jsxs)(m.Z, {
       variant: n,
       className: a,
       canTruncate: v,
       hideTooltip: y,
-      children: [x(), P && null != A && " (".concat(A, ")")]
+      children: [x(), P && null != C && " (".concat(C, ")")]
     })]
   })
 }
@@ -147,7 +147,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   return (0, f.b)({
     location: "VoiceActivityStatusExperimentWrapper"
   }) ? (0, r.jsx)(T, O({}, e)) : (0, r.jsx)(I, O({}, e))

@@ -62,7 +62,7 @@ async function j(e, t) {
     } = null != (u = new r.Z(n).getAnyErrorMessageAndField()) ? u : {};
     i.Z.show({
       title: x.intl.string(x.t.iLdiqY),
-      body: [e, t].filter(f.lm).join(": ")
+      body: [e, t].filter(h.lm).join(": ")
     })
   }
   l.Z.dispatch({
@@ -82,7 +82,7 @@ function b(e, t) {
   false !== n && 0 !== n && T(O.xh[n - 1])
 }
 async function D(e) {
-  let t = h.Z.getGuild(e);
+  let t = f.Z.getGuild(e);
   null != t && (N.Z.close(), (0, u.iD)(t.id, {
     type: m.z.NEW_MEMBER,
     roles: {},

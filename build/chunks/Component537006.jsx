@@ -82,7 +82,7 @@ function D(e) {
         textOptions: {
           textOverride: N.intl.string(N.t.x6rkDp)
         },
-        subscriptionTier: A.Si.TIER_2,
+        subscriptionTier: C.Si.TIER_2,
         premiumModalAnalyticsLocation: {
           section: I.jXE.USER_PROFILE
         },
@@ -120,7 +120,7 @@ function w(e) {
     className: a
   } = e, c = (0, p.Dt)(), {
     themeType: d
-  } = (0, O.z)(), f = d === C.l.MODAL, g = (0, m.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
+  } = (0, O.z)(), f = d === A.l.MODAL, g = (0, m.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
   if (i.useEffect(() => {
       if (!g) return (0, h.kk)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
         (0, _.gE)({

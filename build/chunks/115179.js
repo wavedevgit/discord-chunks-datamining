@@ -15,7 +15,7 @@ require.d(exports, {
   o9: () => P,
   oo: () => R,
   vQ: () => b,
-  w8: () => C,
+  w8: () => A,
   wj: () => y,
   xN: () => g,
   xn: () => p,
@@ -119,18 +119,18 @@ function T(e) {
   return "rewardsConfig" in e.config ? e.config.rewardsConfig.rewards[r] : e.config.rewards[r]
 }
 
-function A(e, t) {
+function C(e, t) {
   if (h(e)) return (0, l.o8)(e);
   let n = (0, c.M1)(e);
   return t ? n.messages.nameWithArticle : n.messages.name
 }
 
-function C(e) {
-  return A(e, false)
+function A(e) {
+  return C(e, false)
 }
 
 function N(e) {
-  return A(e, true)
+  return C(e, true)
 }
 
 function P(e) {

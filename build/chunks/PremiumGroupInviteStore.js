@@ -2,7 +2,7 @@
 /** chunk id: 703995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js");
 var r, Chunk275726 = require("./275726.js"),
   Chunk442837 = require("./442837.js"),
@@ -111,7 +111,7 @@ function T(e) {
     errorStatus: null
   }), o.Z.wait(() => (0, l.hH)(t).catch(u.VqG)), true)
 }
-class A extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   getInvite(e) {
     var t;
     return null != (t = f.get(e)) ? t : null
@@ -135,8 +135,8 @@ class A extends(r = Chunk442837.ZP.Store) {
     return _
   }
 }
-d(A, "displayName", "PremiumGroupInviteStore");
-let C = new A(Chunk570140.Z, {
+d(C, "displayName", "PremiumGroupInviteStore");
+let A = new C(Chunk570140.Z, {
   PREMIUM_GROUP_INVITES_FETCH_START: h,
   PREMIUM_GROUP_INVITES_FETCH_SUCCESS: g,
   PREMIUM_GROUP_INVITES_FETCH_FAIL: E,

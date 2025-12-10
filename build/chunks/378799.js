@@ -176,7 +176,7 @@ function I() {
 function T(e) {
   a.K.set(S, e)
 }
-class A {
+class C {
   _setCachedKeyCodeMapEntries() {
     this._cachedKeyCodeMapEntries = Object.entries(this.keyCodeMap).map(e => {
       let [t, n] = e;
@@ -266,7 +266,7 @@ class A {
     null != t ? this.keyMap = t : this.keyMap = O(d({}, e)), this._initializeInternalLayoutMap(), this.keyCodeMap = this._buildKeyCodeMapFromKeyMap(), this.updateCaches(), this.save()
   }
 }
-class C extends A {
+class A extends C {
   getKeyString(e, t) {
     var n;
     let r = this.getKeyCodeMapItem(e);
@@ -370,7 +370,7 @@ let N = null,
 
 function R() {
   return null != P ? P : P = new Promise(async e => {
-    await b(), N = new C(p), document.addEventListener("keydown", e => {
+    await b(), N = new A(p), document.addEventListener("keydown", e => {
       try {
         null == N || N.addEvent(e)
       } catch (t) {

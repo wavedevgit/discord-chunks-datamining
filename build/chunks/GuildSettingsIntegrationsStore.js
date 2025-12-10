@@ -45,8 +45,8 @@ let g = [],
   S = false,
   I = Chunk981631.QZA.CLOSED,
   T = {},
-  A = false,
-  C = null;
+  C = false,
+  A = null;
 
 function N(e) {
   let {
@@ -64,7 +64,7 @@ function P(e) {
     section: t,
     sectionId: n
   } = e;
-  i = t, C = n
+  i = t, A = n
 }
 
 function R(e) {
@@ -80,14 +80,14 @@ function R(e) {
     let e = z(O.id);
     null != e && (O = e)
   }
-  b = null, I = _.QZA.OPEN, T = {}, A = false
+  b = null, I = _.QZA.OPEN, T = {}, C = false
 }
 
 function D() {
-  r = null, g = [], E = [], b = null, y = null, O = null, I = Chunk981631.QZA.CLOSED, A = false
+  r = null, g = [], E = [], b = null, y = null, O = null, I = Chunk981631.QZA.CLOSED, C = false
 }
 let w = s().debounce(() => {
-  A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || Q.emitChange())
+  C && (null != y ? s().isEqual(y, K(y.id)) && (C = false) : null != O && s().isEqual(O, z(O.id)) && (C = false), C || Q.emitChange())
 }, 500);
 
 function x(e) {
@@ -95,7 +95,7 @@ function x(e) {
     settings: t
   } = e;
   if (null == y) returnfalse;
-  y = h({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, A = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, A = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, A = true), A && w()
+  y = h({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, C = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, C = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, C = true), C && w()
 }
 
 function L(e) {
@@ -103,7 +103,7 @@ function L(e) {
     settings: t
   } = e;
   if (null == O) returnfalse;
-  O = h({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = true), A && w()
+  O = h({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && w()
 }
 
 function j() {
@@ -141,7 +141,7 @@ function k(e) {
       });
     if (null != r) {
       let n = h({}, t, r);
-      (null == y ? true : y.id) === n.id && (false === n.enabled ? y = null : A || (y = n)), g[e] = n
+      (null == y ? true : y.id) === n.id && (false === n.enabled ? y = null : C || (y = n)), g[e] = n
     } else(null == y ? true : y.id) === t.id && (y = null), g.splice(e, 1)
   }
   g = [...g], w()
@@ -165,7 +165,7 @@ function U(e) {
       });
       if (null != r) {
         let n = h({}, t, r);
-        E[e] = n, A || (null == O ? true : O.id) !== n.id || (O = n)
+        E[e] = n, C || (null == O ? true : O.id) !== n.id || (O = n)
       } else(null == O ? true : O.id) === t.id && (O = null), E.splice(e, 1)
     }
     for (let e of i) null == E.find(t => {
@@ -182,7 +182,7 @@ function G(e) {
   let {
     commandId: t
   } = e;
-  b = t, y = null, O = null, T = {}, A = true
+  b = t, y = null, O = null, T = {}, C = true
 }
 
 function Z(e) {
@@ -190,7 +190,7 @@ function Z(e) {
     commandId: t
   } = e;
   if (null == b || b !== t) returnfalse;
-  b = null, T = {}, A = false
+  b = null, T = {}, C = false
 }
 
 function B(e) {
@@ -198,11 +198,11 @@ function B(e) {
     integrationId: t
   } = e, n = K(t);
   if (null == n) returnfalse;
-  y = n, b = null, O = null, T = {}, A = false
+  y = n, b = null, O = null, T = {}, C = false
 }
 
 function F() {
-  y = null, T = {}, A = false
+  y = null, T = {}, C = false
 }
 
 function V(e) {
@@ -210,11 +210,11 @@ function V(e) {
     webhookId: t
   } = e, n = z(t);
   if (null == n) returnfalse;
-  O = n, b = null, y = null, T = {}, A = false
+  O = n, b = null, y = null, T = {}, C = false
 }
 
 function H() {
-  O = null, T = {}, A = false
+  O = null, T = {}, C = false
 }
 
 function Y() {
@@ -247,7 +247,7 @@ class q extends(a = Chunk442837.ZP.Store) {
     this.waitFor(Chunk999382.Z, Chunk855674.Z, Chunk496675.Z)
   }
   hasChanges() {
-    return A
+    return C
   }
   get guild() {
     return r
@@ -277,7 +277,7 @@ class q extends(a = Chunk442837.ZP.Store) {
     return null != i ? i : Chunk981631.b4C.OVERVIEW
   }
   getSectionId() {
-    return C
+    return A
   }
   getIntegration(e) {
     return K(e)

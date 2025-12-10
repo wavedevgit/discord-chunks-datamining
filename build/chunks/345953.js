@@ -62,10 +62,10 @@ function v(e, t) {
 let S = 300,
   I = 2e3,
   T = e => "AudioContextSettingsMigrated:".concat(e),
-  A = e => e === E.Yn.STREAM ? a.h.STREAM : a.h.USER;
+  C = e => e === E.Yn.STREAM ? a.h.STREAM : a.h.USER;
 
-function C(e, t, n) {
-  return e[t].volume !== A(n) || e[t].muted || e[t].soundboardMuted || delete e[t], e
+function A(e, t, n) {
+  return e[t].volume !== C(n) || e[t].muted || e[t].soundboardMuted || delete e[t], e
 }
 
 function N(e) {
@@ -90,7 +90,7 @@ function N(e) {
 function P(e) {
   return o.JY.create({
     muted: false,
-    volume: A(e)
+    volume: C(e)
   })
 }
 
@@ -105,7 +105,7 @@ function R() {
         s = {};
       for (let [e, t] of Object.entries(r.localMutes)) s[e] = {
         muted: t,
-        volume: A(n),
+        volume: C(n),
         modifiedAt: o,
         soundboardMuted: false
       };
@@ -131,7 +131,7 @@ function D(e, t, n, r) {
     o = (0, h.z)(n);
   if (null == o) returnfalse;
   let s = e[o];
-  return s[t] = null != (i = s[t]) ? i : P(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && C(s, t, n), N(s), true
+  return s[t] = null != (i = s[t]) ? i : P(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && A(s, t, n), N(s), true
 }
 
 function w() {

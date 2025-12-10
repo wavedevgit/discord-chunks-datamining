@@ -84,13 +84,13 @@ let k = {
       data: el
     } = (0, h.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == V ? true : V.src) == null || null == b || null == H) return;
-      let t = er > 0 ? (0, C.VY)({
+      let t = er > 0 ? (0, A.VY)({
         entry: y,
         channel: b,
         users: [et, en],
         countOthers: er
-      }) : (0, C.HV)(y, b, H);
-      return (0, A.SO)({
+      }) : (0, A.HV)(y, b, H);
+      return (0, C.SO)({
         entry: y,
         applicationImageSrc: null == V ? true : V.src,
         avatarSrcs: ee.map(e => e.getAvatarURL(b.guild_id, 128)),
@@ -157,7 +157,7 @@ let k = {
           user: H,
           channel: b,
           generateReactionImage: ed,
-          reactionImageAltText: (0, C.IS)(y, H),
+          reactionImageAltText: (0, A.IS)(y, H),
           entry: y,
           buttons: em
         })

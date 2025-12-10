@@ -63,7 +63,7 @@ function k(e) {
     }), b.S.dispatch(P.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: a.channel.id
     }))
-  }, [a, o, l, c]), f = (null != (n = null == (t = o.options) ? true : t.length) ? n : 0) > 0, _ = i.useMemo(() => (0, C.ae)(o.displayDescription, true), [o.displayDescription]), m = i.useMemo(() => (0, r.jsxs)("div", {
+  }, [a, o, l, c]), f = (null != (n = null == (t = o.options) ? true : t.length) ? n : 0) > 0, _ = i.useMemo(() => (0, A.ae)(o.displayDescription, true), [o.displayDescription]), m = i.useMemo(() => (0, r.jsxs)("div", {
     className: x.commandTextContainer,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/semibold",
@@ -163,7 +163,7 @@ function G(e) {
             sectionName: a
           }
         });
-        e && (await (0, A.Y$)({
+        e && (await (0, C.Y$)({
           command: n,
           optionValues: {},
           context: o,

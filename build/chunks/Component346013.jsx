@@ -84,7 +84,7 @@ function G(e) {
     channel: Z
   } = e, B = i.useRef(null), F = i.useRef(null), V = (0, P.J)(k, G), {
     setPopout: H
-  } = (0, b.Z)(G.id, D.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
+  } = (0, b.Z)(G.id, D.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, A.n)(), [z, q] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
     var e;
     return S.ZP.isMember(null == V ? true : V.guildId, null == (e = I.default.getCurrentUser()) ? true : e.id)
   }, [V]), $ = (0, l.e7)([S.ZP], () => (null == V ? true : V.authorId) != null ? S.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, p.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -102,7 +102,7 @@ function G(e) {
       channel_id: Z.id,
       can_access: V.canAccess,
       is_member: J
-    }), V.canAccess ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : J ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await A.Ub(V.guildId, {}, {
+    }), V.canAccess ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.threadId, V.messageId)) : J ? (0, h.Z)(R.Z5c.CHANNEL(V.guildId, V.parentChannelId)) : await C.Ub(V.guildId, {}, {
       channelId: V.parentChannelId
     }))
   }, [V, Z, J]);

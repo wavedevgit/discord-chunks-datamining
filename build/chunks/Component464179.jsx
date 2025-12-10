@@ -77,11 +77,11 @@ let v = "US",
   S = "CA",
   I = 5,
   T = ["AE", "AG", "AN", "AO", "AW", "BF", "BI", "BJ", "BM", "BO", "BQ", "BS", "BW", "BZ", "CD", "CF", "CG", "CI", "CK", "CM", "CW", "DJ", "DM", "ER", "FJ", "GA", "GD", "GH", "GM", "GQ", "GY", "HK", "HM", "IE", "JM", "KE", "KI", "KM", "KN", "KP", "LY", "ML", "MO", "MR", "MW", "NA", "NR", "NU", "QA", "RW", "SB", "SC", "SL", "SR", "ST", "SX", "SY", "TD", "TF", "TG", "TK", "TL", "TO", "TV", "UG", "VU", "YE", "ZA", "ZW"],
-  A = Chunk217986.Z.map(e => ({
+  C = Chunk217986.Z.map(e => ({
     value: e.alpha2,
     label: e.name
   })).filter(e => "KP" !== e.value && "SY" !== e.value),
-  C = Object.freeze(A.reduce((e, t) => b(g({}, e), {
+  A = Object.freeze(C.reduce((e, t) => b(g({}, e), {
     [t.label.toLowerCase()]: t.value
   }), {})),
   N = (0, Chunk313201.hQ)(),
@@ -137,11 +137,11 @@ let k = {
         autoFocus: true,
         maxVisibleItems: 8,
         isDisabled: "edit" === t.mode,
-        options: A,
+        options: C,
         onSearchChange: t => {
           if (null == n) return;
           let r = t.toLowerCase();
-          r in C && n(C[r], e.name)
+          r in A && n(A[r], e.name)
         },
         onChange: t => {
           null != n && n(t, e.name)

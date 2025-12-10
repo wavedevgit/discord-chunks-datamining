@@ -67,7 +67,7 @@ let w = (0, Chunk730749.Z)(e => {
       icon: c.Tsp
     });
     if (Z) {
-      let e = (0, r.jsx)(C.Z, {
+      let e = (0, r.jsx)(A.Z, {
           activity: t,
           user: i,
           guildId: w,
@@ -75,7 +75,7 @@ let w = (0, Chunk730749.Z)(e => {
           source: L,
           onAction: k
         }),
-        n = (0, r.jsx)(A.Z, {
+        n = (0, r.jsx)(C.Z, {
           activity: t,
           user: i,
           source: L,

@@ -47,7 +47,7 @@ function C(e) {
   return e
 }
 
-function w(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function w(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = e => {
+let w = e => {
     let {
       classificationTypeText: t,
       guildMetadata: n
@@ -70,9 +70,9 @@ let T = e => {
           children: e
         }, t)
       };
-      return null == n ? A.intl.format(A.t.HpvELh, e) : (null == n ? true : n.member_type) === h.wO.OWNER ? A.intl.format(A.t.X1ngSd, w(C({}, e), {
+      return null == n ? A.intl.format(A.t.HpvELh, e) : (null == n ? true : n.member_type) === h.wO.OWNER ? A.intl.format(A.t.X1ngSd, T(C({}, e), {
         guildName: null == n ? true : n.name
-      })) : A.intl.format(A.t.rmpEPD, w(C({}, e), {
+      })) : A.intl.format(A.t.rmpEPD, T(C({}, e), {
         guildName: null == n ? true : n.name
       }))
     }, [t, n]);
@@ -140,7 +140,7 @@ let T = e => {
         className: P.classificationPolicyCardIcon,
         children: (0, i.jsx)(c.b7C, {
           size: "md",
-          color: r.Z.colors.FOCUS_PRIMARY
+          color: r.Z.colors.BORDER_FOCUS
         })
       }), (0, i.jsx)("div", {
         className: P.classificationPolicyDescriptionContainer,
@@ -154,7 +154,7 @@ let T = e => {
         className: P.classificationPolicyLinkIcon,
         children: (0, i.jsx)(c.Fbu, {
           size: "md",
-          color: r.Z.colors.INTERACTIVE_NORMAL
+          color: r.Z.colors.INTERACTIVE_TEXT_DEFAULT
         })
       })]
     })
@@ -220,18 +220,18 @@ let T = e => {
       classification: p,
       classificationRequestState: A,
       isAppealEligible: C,
-      isDsaEligible: w,
+      isDsaEligible: T,
       violationType: L
-    } = (0, b.YG)(n), N = (0, d.e7)([g.Z], () => g.Z.getAppealEligibility()), I = (0, _.P)(), k = null != p && null != p.flagged_content && p.flagged_content.length > 0, Z = (0, v.e)(), M = !!(null == p ? true : p.is_coppa) && N.includes(h.tG.AGE_VERIFY_ELIGIBLE), R = !!(null == p ? true : p.is_coppa) && N.includes(h.tG.AGE_VERIFY_GLOBAL_ELIGIBLE), H = {
+    } = (0, E.YG)(n), N = (0, d.e7)([g.Z], () => g.Z.getAppealEligibility()), I = (0, _.P)(), k = null != p && null != p.flagged_content && p.flagged_content.length > 0, Z = (0, b.e)(), M = !!(null == p ? true : p.is_coppa) && N.includes(h.tG.AGE_VERIFY_ELIGIBLE), R = !!(null == p ? true : p.is_coppa) && N.includes(h.tG.AGE_VERIFY_GLOBAL_ELIGIBLE), F = {
       accountStanding: I,
       classificationId: n,
       hasFlaggedContent: k,
-      isDsaEligible: w,
+      isDsaEligible: T,
       source: o,
       violationType: L
-    }, Y = a.useRef(H);
+    }, H = a.useRef(F);
     return (a.useEffect(() => {
-      Y.current = H
+      H.current = F
     }), a.useEffect(() => {
       let {
         accountStanding: e,
@@ -240,7 +240,7 @@ let T = e => {
         isDsaEligible: i,
         source: a,
         violationType: o
-      } = Y.current;
+      } = H.current;
       Z && m.default.track(O.rMx.SAFETY_HUB_ACTION, {
         action: j.n0.ViewViolationDetail,
         account_standing: e.state,
@@ -254,7 +254,7 @@ let T = e => {
       className: P.classificationContainer,
       children: [(0, i.jsx)("div", {
         className: P.section,
-        children: (0, i.jsx)(T, {
+        children: (0, i.jsx)(w, {
           classificationTypeText: p.description,
           guildMetadata: null == p ? true : p.guild_metadata
         })
@@ -279,11 +279,11 @@ let T = e => {
                 classification_ids: [Number(n)],
                 source: o,
                 is_violative_content_shown: k,
-                is_dsa_eligible: w,
+                is_dsa_eligible: T,
                 violation_type: L
               }), R ? f.Z.openV2(n, c) : M ? f.Z.open(n, c) : C && (u.Z.increment({
                 name: s.V.APPEAL_INGESTION_VIEW
-              }), E.Z.open(n))
+              }), v.Z.open(n))
             },
             isAppealEligible: C || M
           })

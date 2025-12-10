@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk481060 = require("./481060.js"),
   Chunk51636 = require("./51636.jsx"),
   Chunk329352 = require("./329352.js");
@@ -79,10 +79,10 @@ let m = 910,
       I = i.useCallback(e => ({
         x: (e - p) * 100
       }), [p]),
-      [T, A] = (0, l.bYB)(t.length, I);
+      [T, C] = (0, l.bYB)(t.length, I);
     return i.useEffect(() => {
-      A(I)
-    }, [A, I]), (0, r.jsx)("div", {
+      C(I)
+    }, [C, I]), (0, r.jsx)("div", {
       className: n,
       children: (0, r.jsxs)("div", {
         className: u.cardContainer,

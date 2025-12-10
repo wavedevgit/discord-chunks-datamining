@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   T: () => b,
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -95,7 +95,7 @@ class T extends(r = Chunk442837.ZP.Store) {
   }
 }
 h(T, "displayName", "ContentInventoryActivityStore");
-let A = new T(Chunk570140.Z, {
+let C = new T(Chunk570140.Z, {
   CONNECTION_OPEN: S,
   CONTENT_INVENTORY_SET_FEED: v
 })

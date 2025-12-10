@@ -60,7 +60,7 @@ let U = e => {
       children: n
     })
   },
-  G = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_NORMAL.css],
+  G = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_TEXT_DEFAULT.css],
   B = e => {
     let {
       tooltip: t,

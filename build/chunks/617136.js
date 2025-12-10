@@ -45,7 +45,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ function x(e, t) {
 function L(e, t, n) {
   var r;
   let i = (0, o.Gy)(n).uuid;
-  return A({
+  return C({
     quest_id: e.id,
     quest_type: (0, v.BI)(e.config),
     game_id: e.config.application.id,
@@ -133,7 +133,7 @@ function M(e) {
   if (null == s || (0, b.X)({
       location: S.dr.QUEST_PREVIEW_TOOL
     }) && d.Z.getLayers().includes(I.S9g.USER_SETTINGS)) return;
-  let c = A({}, L(s, o, a), r);
+  let c = C({}, L(s, o, a), r);
   if (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, c), s.preview) return;
   let p = R.has(n);
   if (i) return l.ZP.trackWithMetadata(n, c, p);
@@ -158,7 +158,7 @@ async function U(e) {
   M({
     questId: t,
     event: I.rMx.QUEST_CONTENT_CLICKED,
-    properties: N(A({}, j(n, o, s), (0, c.Z)()), {
+    properties: N(C({}, j(n, o, s), (0, c.Z)()), {
       cta_name: r,
       quest_status: null != f ? w(f) : null,
       impression_id: l,
@@ -198,8 +198,8 @@ function G(e) {
 function Z() {
   let e = (0, Chunk915750.WD)();
   return Chunk473749.useCallback(t => {
-    M(N(A({}, t), {
-      properties: N(A({}, t.properties), {
+    M(N(C({}, t), {
+      properties: N(C({}, t.properties), {
         impression_id: null == e ? true : e.getId()
       })
     }))
@@ -222,7 +222,7 @@ function B() {
       e({
         questId: n,
         event: I.rMx.QUEST_CONTENT_CLICKED,
-        properties: N(A({}, j(r, s, l), (0, c.Z)()), {
+        properties: N(C({}, j(r, s, l), (0, c.Z)()), {
           cta_name: o,
           quest_status: null != f ? w(f) : null,
           click_id: (0, i.Z)(),

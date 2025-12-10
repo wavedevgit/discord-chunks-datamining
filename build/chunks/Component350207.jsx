@@ -40,18 +40,18 @@ function I(e) {
     className: a
   } = e, {
     trackUserProfileAction: u
-  } = (0, _.KZ)(), I = S(t.filter(e => e instanceof m.q)), A = (0, i.useMemo)(() => [...new Set(t.map(e => {
+  } = (0, _.KZ)(), I = S(t.filter(e => e instanceof m.q)), C = (0, i.useMemo)(() => [...new Set(t.map(e => {
     if (e instanceof h.zy) return e.games.map(e => e.applicationId);
     if (e instanceof m.q) {
       var t;
       return null == (t = I[e.applicationId]) ? true : t.id
     }
-  }).filter(p.lm).flat())], [t, I]), C = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [N, P] = (0, i.useState)([]), {
+  }).filter(p.lm).flat())], [t, I]), A = (0, s.e7)([d.Z], () => d.Z.canFetchDetectableGames()), [N, P] = (0, i.useState)([]), {
     themeType: R
   } = (0, E.z)(), D = R === b.l.SIDEBAR, w = (0, i.useRef)(false);
   return (0, i.useEffect)(() => {
-    if (C) return void c.Z.getDetectableGames();
-    P(A.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
+    if (A) return void c.Z.getDetectableGames();
+    P(C.map(e => d.Z.getDetectableGame(e)).filter(e => null != e).map(e => {
       var t;
       return {
         image: null != (t = f.ZP.getApplicationIconURL({
@@ -61,7 +61,7 @@ function I(e) {
         name: e.name
       }
     }).filter(e => "" !== e.image).slice(0, v))
-  }, [A, C]), (0, i.useEffect)(() => {
+  }, [C, A]), (0, i.useEffect)(() => {
     0 !== N.length && (w.current || (u({
       action: "VIEW_GAME_WIDGET_BREADCRUMB"
     }), w.current = true))
@@ -83,8 +83,8 @@ function I(e) {
         children: N.map((e, t) => (0, r.jsx)(T, {
           iconUrl: e.image,
           name: e.name,
-          displayCount: t === N.length - 1 && A.length > v,
-          gameCount: A.length - N.length
+          displayCount: t === N.length - 1 && C.length > v,
+          gameCount: C.length - N.length
         }, t))
       })]
     })

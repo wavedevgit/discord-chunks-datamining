@@ -12,8 +12,8 @@ require.d(exports, {
   Zp: () => I,
   _x: () => m,
   iQ: () => y,
-  jY: () => C,
-  qe: () => A,
+  jY: () => A,
+  qe: () => C,
   uN: () => P,
   vR: () => E,
   ys: () => R,
@@ -140,7 +140,7 @@ function T(e) {
   return null != t && l.v6.has(t)
 }
 
-function A(e, t) {
+function C(e, t) {
   var n;
   let {
     quest: r,
@@ -149,7 +149,7 @@ function A(e, t) {
   return null != i && (null == r ? true : r.id) === e ? i : l.Jp
 }
 
-function C(e) {
+function A(e) {
   var t;
   let {
     metadataRaw: n

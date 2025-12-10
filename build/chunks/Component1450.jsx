@@ -34,24 +34,24 @@ let v = e => {
     location: I
   } = (0, c.O)(), {
     analyticsLocations: T
-  } = (0, d.ZP)(), A = (0, s.e7)([h.Z], () => h.Z.getGuild(n)), {
-    canManageAllExpressions: C
-  } = (0, m.XJ)(A), N = null != A && 0 === (0, g.A3)(A.premiumTier) && !A.features.has(E.GuildFeatures.MORE_STICKERS);
+  } = (0, d.ZP)(), C = (0, s.e7)([h.Z], () => h.Z.getGuild(n)), {
+    canManageAllExpressions: A
+  } = (0, m.XJ)(C), N = null != C && 0 === (0, g.A3)(C.premiumTier) && !C.features.has(E.GuildFeatures.MORE_STICKERS);
   if (i.useEffect(() => {
-      C && N && v && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
+      A && N && v && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
         location: I,
-        guild_id: null == A ? true : A.id,
+        guild_id: null == C ? true : C.id,
         channel_id: null == a ? true : a.id,
         type: "Expression Picker Inline Sticker Upsell",
         location_stack: T
       }), S(true))
-    }, [N, A, a, I, v, S, T, C]), null == A || !C) return null;
+    }, [N, C, a, I, v, S, T, A]), null == C || !A) return null;
   if (N) {
     let e = () => {
       (0, p.Z)({
         analyticsLocations: T,
         analyticsSourceLocation: I,
-        guild: A,
+        guild: C,
         perks: (0, b.hC)()
       })
     };
@@ -62,7 +62,7 @@ let v = e => {
         color: "currentColor",
         className: O.icon
       }), (0, r.jsx)(l.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         className: O.body,
         variant: "text-sm/normal",
         children: y.intl.format(y.t.AXWla1, {
@@ -87,7 +87,7 @@ let v = e => {
         width: 20,
         height: 20
       }), (0, r.jsx)(l.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         className: O.body,
         variant: "text-sm/normal",
         children: y.intl.string(y.t.S83wgh)

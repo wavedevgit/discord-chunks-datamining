@@ -31,8 +31,8 @@ function O(e, t, n) {
     } = (0, g.j)(),
     T = (0, i.J)(),
     {
-      ariaLabel: A,
-      ariaLabelledBy: C,
+      ariaLabel: C,
+      ariaLabelledBy: A,
       ariaDescribedBy: N,
       focusManager: P
     } = r.Lh.get(t),
@@ -220,8 +220,8 @@ function O(e, t, n) {
     Q = !t.isDisabled && !t.isReadOnly && e.isEditable,
     X = "literal" === e.type ? "" : T.of(e.type),
     J = (0, p.b)({
-      "aria-label": `${X}${A?`, ${A}`:""}${C?", ":""}`,
-      "aria-labelledby": C
+      "aria-label": `${X}${C?`, ${C}`:""}${A?", ":""}`,
+      "aria-labelledby": A
     });
   if ("literal" === e.type) return {
     segmentProps: {

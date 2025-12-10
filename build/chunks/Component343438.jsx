@@ -71,7 +71,7 @@ let p = e => {
       size: s = "md",
       width: c,
       height: f,
-      color: p = o.Z.colors.INTERACTIVE_NORMAL,
+      color: p = o.Z.colors.INTERACTIVE_TEXT_DEFAULT,
       colorClass: _ = ""
     } = e,
     m = d(e, ["size", "width", "height", "color", "colorClass"]);

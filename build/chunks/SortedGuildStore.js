@@ -55,7 +55,7 @@ function T(e, t) {
   for (let n of g.Z.getGuildIds()) !e(n) || u.Z.isLurking(n) || h.ZP.isCurrentUserGuest(n) || t(n)
 }
 
-function A(e) {
+function C(e) {
   switch (e.type) {
     case c.eD.FOLDER:
       return {
@@ -70,7 +70,7 @@ function A(e) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = I;
   if (I = new c.g8, 0 === e.length && t.length > 0)
     for (let e of t) I.addNode((0, c.Mg)(e));
@@ -90,13 +90,13 @@ function C(e, t) {
 
 function N() {
   var e, t, n;
-  return C(null != (t = Chunk581883.Z.getGuildFolders()) ? exports : [], null != (n = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? require : [])
+  return A(null != (t = Chunk581883.Z.getGuildFolders()) ? exports : [], null != (n = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? require : [])
 }
 
 function P() {
   var e, t;
   let n = Chunk581883.Z.getGuildFolders();
-  return !(null != r && a()(r, require)) && C(null != (r = require) ? r : [], null != (t = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? exports : [])
+  return !(null != r && a()(r, require)) && A(null != (r = require) ? r : [], null != (t = null == (e = Chunk581883.Z.settings.guildFolders) ? true : module.guildPositions) ? exports : [])
 }
 
 function R(e) {
@@ -203,7 +203,7 @@ function U(e, t) {
   s()(n.id === e.id, "[SORTED GUILDS] setNodeExpanded: Replacement folder node must have same id."), n.expanded = t, I.replaceNode(e, n)
 }
 let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
-  Z = (0, Chunk251625.oH)((e, t) => e.getRoots().map(A)),
+  Z = (0, Chunk251625.oH)((e, t) => e.getRoots().map(C)),
   B = (0, Chunk251625.oH)((e, t) => {
     let n = [];
 
@@ -217,7 +217,7 @@ let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  F = (0, Chunk251625.oH)((e, t) => e.root.children.map(A));
+  F = (0, Chunk251625.oH)((e, t) => e.root.children.map(C));
 class V extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk9156.ZP, Chunk581883.Z, Chunk486472.Z, Chunk41776.Z, Chunk664915.Z, Chunk937111.Z)

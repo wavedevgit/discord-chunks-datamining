@@ -46,7 +46,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   var t;
   let {
     channelId: n,
@@ -65,7 +65,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   var t, n, a, d;
   let {
     guildId: f,
@@ -74,20 +74,20 @@ function C(e) {
   } = e, {
     channelAction: m,
     completed: b
-  } = (0, E.P3)(f, p), y = (0, E.K_)(f, null == m ? true : m.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), C = (null == m ? true : m.actionType) === g.NewMemberActionTypes.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [P, R] = i.useState(false), [D] = i.useState(new s.Z.Value(0)), [w] = i.useState(new s.Z.Value(0));
+  } = (0, E.P3)(f, p), y = (0, E.K_)(f, null == m ? true : m.channelId), O = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), A = (null == m ? true : m.actionType) === g.NewMemberActionTypes.VIEW, N = (0, c.dQu)(c.TVs.colors.WHITE), [P, R] = i.useState(false), [D] = i.useState(new s.Z.Value(0)), [w] = i.useState(new s.Z.Value(0));
   i.useEffect(() => {
     b ? s.Z.timing(D, {
       toValue: 0,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
-      delay: 500 * !C
+      delay: 500 * !A
     }).start(() => R(true)) : s.Z.timing(D, {
       toValue: 1,
       duration: O ? 1 : 350,
       easing: s.Z.Easing.quad,
       delay: 400
     }).start()
-  }, [b, D, C, O]), i.useEffect(() => {
+  }, [b, D, A, O]), i.useEffect(() => {
     b && P && s.Z.timing(w, {
       toValue: 1,
       duration: 350 * !O,
@@ -98,7 +98,7 @@ function C(e) {
   let x = i.useCallback(() => {
     null != y && (0, h.gp)(f, y.channelId)
   }, [f, y]);
-  return null == m || C && !P ? null : (0, r.jsx)("div", {
+  return null == m || A && !P ? null : (0, r.jsx)("div", {
     className: o()(S.container, _),
     children: P && null != y ? (0, r.jsx)(s.Z.div, {
       style: {
@@ -110,7 +110,7 @@ function C(e) {
       children: (0, r.jsxs)(c.P3F, {
         className: o()(S.banner, S.clickable),
         onClick: x,
-        children: [(0, r.jsx)(A, {
+        children: [(0, r.jsx)(C, {
           channelId: y.channelId,
           emojiId: null == (t = y.emoji) ? true : t.id,
           emojiName: null == y || null == (n = y.emoji) ? true : n.name
@@ -142,7 +142,7 @@ function C(e) {
           outputRange: [-I, 0]
         })
       },
-      children: [(0, r.jsx)(A, {
+      children: [(0, r.jsx)(C, {
         channelId: m.channelId,
         emojiId: null == (a = m.emoji) ? true : a.id,
         emojiName: null == m || null == (d = m.emoji) ? true : d.name
@@ -181,7 +181,7 @@ function N(e) {
     var e;
     return null == (e = m.Z.getGuild(t)) ? true : e.features.has(O.GuildFeatures.GUILD_SERVER_GUIDE)
   });
-  return s || o || !a || !c ? null : (0, r.jsx)(C, {
+  return s || o || !a || !c ? null : (0, r.jsx)(A, {
     guildId: t,
     channel: n,
     className: i

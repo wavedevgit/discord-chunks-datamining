@@ -86,7 +86,7 @@ let j = "mweb_handoff_nonce",
     return null != O && S.has(O) ? (0, Chunk54381.jsx)("div", {
       className: Chunk78224.errorContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         variant: "text-sm/semibold",
         children: P
       })

@@ -56,7 +56,7 @@ function d(e) {
         className: c.name,
         children: t.name
       }), l && (0, r.jsx)(o.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         variant: "text-sm/normal",
         children: t.description
       })]
@@ -87,7 +87,7 @@ function f(e) {
         className: c.name,
         children: n.name
       }), u && (0, r.jsx)(o.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         variant: "text-sm/normal",
         children: n.description
       })]

@@ -112,7 +112,7 @@ function j(e) {
     customMatchSorter: E,
     matchSorterOptions: b,
     required: O
-  } = u, S = i.useId(), I = i.useRef(null), [T, A] = i.useState(null), [C, N] = i.useState(false), [R, D] = i.useState(""), [x, j] = i.useState(""), {
+  } = u, S = i.useId(), I = i.useRef(null), [T, C] = i.useState(null), [A, N] = i.useState(false), [R, D] = i.useState(""), [x, j] = i.useState(""), {
     options: M,
     loading: k,
     onQueryChange: U
@@ -126,8 +126,8 @@ function j(e) {
   i.useEffect(() => {
     U(R)
   }, [U, R]), i.useEffect(() => {
-    o || A(null)
-  }, [o, A]);
+    o || C(null)
+  }, [o, C]);
   let Z = i.useMemo(() => "" === R ? M : null != E ? E(M, R) : (0, s.Lu)(M, R, null != b ? b : L), [M, R, E, b]),
     B = i.useRef(true),
     F = i.useMemo(() => ("single" === d && (B.current = M.find(e => e.value === g)), null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
@@ -148,7 +148,7 @@ function j(e) {
   return (0, r.jsx)(y.Z.Provider, {
     value: P({
       activeDescendantIndex: T,
-      setActiveDescendantIndex: A,
+      setActiveDescendantIndex: C,
       listBoxId: S,
       inputFieldRef: I,
       isInert: V,
@@ -165,7 +165,7 @@ function j(e) {
       handleSelectionChange: H,
       isOpen: o,
       setIsOpen: l,
-      isEditing: C,
+      isEditing: A,
       setIsEditing: N
     }, u),
     children: t
@@ -336,7 +336,7 @@ function k(e) {
         if (ea) return null;
         let e = Array.from(et)[0];
         return (0, r.jsx)("div", {
-          className: A.singleSelectOption,
+          className: C.singleSelectOption,
           children: (0, r.jsx)(b.W, D(P({}, e), {
             onClick: em,
             "aria-hidden": true,
@@ -380,20 +380,20 @@ function k(e) {
       handleToggle: ec,
       handleClear: eu,
       children: (0, r.jsx)("div", {
-        className: o()(A.comboBoxInputScroller, {
-          [A.hasTags]: es,
-          [A.wrapTags]: es && N
+        className: o()(C.comboBoxInputScroller, {
+          [C.hasTags]: es,
+          [C.wrapTags]: es && N
         }),
         onClick: e_,
         children: (0, r.jsxs)("div", {
-          className: A.comboBoxInputContainer,
+          className: C.comboBoxInputContainer,
           children: [eb, (0, r.jsx)(p.tEY, {
             ringTarget: Y,
             children: (0, r.jsx)(m.I, {
               ref: x,
               id: t,
-              className: o()(C.input, A.comboBoxInput, {
-                [A.hiddenVisually]: "single" === U && q && !ea
+              className: o()(A.input, C.comboBoxInput, {
+                [C.hiddenVisually]: "single" === U && q && !ea
               }),
               autoFocus: n,
               placeholder: a,

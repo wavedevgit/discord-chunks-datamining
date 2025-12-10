@@ -71,7 +71,7 @@ function H() {
   return r.map(e => e.id).sort((e, t) => {
     let n = b.ZP.hasUnread(e);
     return n !== b.ZP.hasUnread(t) ? n ? false : 1 : S.default.compare(b.ZP.lastMessageId(t), b.ZP.lastMessageId(e))
-  }).reduce((e, t) => (b.ZP.lastMessageTimestamp(t) > Date.now() - C.ib ? e.notifyingChannelIds.push(t) : e.staleChannelIds.push(t), e), {
+  }).reduce((e, t) => (b.ZP.lastMessageTimestamp(t) > Date.now() - A.ib ? e.notifyingChannelIds.push(t) : e.staleChannelIds.push(t), e), {
     notifyingChannelIds: [],
     staleChannelIds: []
   })
@@ -144,7 +144,7 @@ function q() {
       id: e.id,
       channelId: e.channel_id,
       guildId: null == (t = h.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
-      kind: C.fL.MENTION,
+      kind: A.fL.MENTION,
       message: e
     }
   }))
@@ -184,7 +184,7 @@ function $(e) {
     id: a.id,
     channelId: a.channel_id,
     guildId: null == (r = h.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
-    kind: c ? C.fL.MENTION : C.fL.ALL_MESSAGES_CHANNEL,
+    kind: c ? A.fL.MENTION : A.fL.ALL_MESSAGES_CHANNEL,
     message: s
   })
 }
@@ -196,8 +196,8 @@ function ee(e) {
   if (!(null == w ? true : w.includes(t))) returnfalse;
   let n = Y(t);
   if (null == n) returnfalse;
-  let r = n.length >= C.AQ || n.hasFetched && !n.hasMoreBefore;
-  D[t].loadState !== C.a7.LOADED && (D[t].loadState = r ? C.a7.LOADED : C.a7.LOADED_UNREAD), W()
+  let r = n.length >= A.AQ || n.hasFetched && !n.hasMoreBefore;
+  D[t].loadState !== A.a7.LOADED && (D[t].loadState = r ? A.a7.LOADED : A.a7.LOADED_UNREAD), W()
 }
 
 function et(e) {
@@ -213,7 +213,7 @@ function et(e) {
       id: e.id,
       channelId: e.channel_id,
       guildId: null == (t = h.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
-      kind: C.fL.MENTION,
+      kind: A.fL.MENTION,
       message: e
     }
   }))

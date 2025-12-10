@@ -8,75 +8,6 @@ let {
   Themes: r
 } = require("./15202.js").VV, i = {
   SemanticColors: {
-    ACTION_SHEET_GRADIENT_BG: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_630",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_130",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_20",
-        opacity: 1
-      },
-      gradient: {
-        light: {
-          color: "gradient.mid",
-          lightness: .925,
-          saturation: "*0.8"
-        },
-        dark: {
-          color: "gradient.mid",
-          lightness: .12,
-          saturation: "*0.5"
-        }
-      }
-    },
-    ACTIVITY_CARD_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_700",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PRIMARY_700",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PRIMARY_700",
-        opacity: 1
-      }
-    },
-    ACTIVITY_CARD_ICON_OVERLAY: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_600",
-        opacity: .85
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_600",
-        opacity: .85
-      },
-      [r.MIDNIGHT]: {
-        raw: "PRIMARY_600",
-        opacity: .85
-      },
-      [r.DARKER]: {
-        raw: "PRIMARY_600",
-        opacity: .85
-      }
-    },
     ALERT_BG: {
       category: "background",
       [r.DARK]: {
@@ -132,25 +63,6 @@ let {
       [r.DARKER]: {
         raw: "PLUM_24",
         opacity: .5
-      }
-    },
-    ANDROID_RIPPLE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: .07
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: .12
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: .07
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: .07
       }
     },
     APP_MESSAGE_EMBED_SECONDARY_TEXT: {
@@ -292,6 +204,25 @@ let {
         }
       }
     },
+    BACKGROUND_BRAND: {
+      category: "background",
+      [r.DARK]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BRAND_500",
+        opacity: 1
+      }
+    },
     BACKGROUND_FEEDBACK_CRITICAL: {
       category: "background",
       [r.DARK]: {
@@ -352,153 +283,20 @@ let {
     BACKGROUND_FEEDBACK_WARNING: {
       category: "background",
       [r.DARK]: {
-        raw: "OPACITY_YELLOW_8",
-        opacity: .0784313725490196
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_YELLOW_8",
-        opacity: .0784313725490196
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_YELLOW_8",
-        opacity: .0784313725490196
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_YELLOW_8",
-        opacity: .0784313725490196
-      }
-    },
-    BACKGROUND_MENTIONED: {
-      category: "background",
-      [r.DARK]: {
         raw: "YELLOW_300",
         opacity: .1
       },
       [r.LIGHT]: {
+        raw: "YELLOW_400",
+        opacity: .1
+      },
+      [r.MIDNIGHT]: {
         raw: "YELLOW_300",
         opacity: .1
       },
-      [r.MIDNIGHT]: {
-        raw: "YELLOW_260",
-        opacity: .08
-      },
-      [r.DARKER]: {
-        raw: "YELLOW_260",
-        opacity: .08
-      }
-    },
-    BACKGROUND_MENTIONED_HOVER: {
-      category: "background",
-      [r.DARK]: {
-        raw: "YELLOW_300",
-        opacity: .08
-      },
-      [r.LIGHT]: {
-        raw: "YELLOW_300",
-        opacity: .2
-      },
-      [r.MIDNIGHT]: {
-        raw: "YELLOW_300",
-        opacity: .08
-      },
       [r.DARKER]: {
         raw: "YELLOW_300",
-        opacity: .08
-      }
-    },
-    BACKGROUND_MESSAGE_AUTOMOD: {
-      category: "background",
-      [r.DARK]: {
-        raw: "RED_400",
-        opacity: .05
-      },
-      [r.LIGHT]: {
-        raw: "RED_400",
-        opacity: .05
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_345",
-        opacity: .08
-      },
-      [r.DARKER]: {
-        raw: "RED_345",
-        opacity: .08
-      }
-    },
-    BACKGROUND_MESSAGE_AUTOMOD_HOVER: {
-      category: "background",
-      [r.DARK]: {
-        raw: "RED_400",
         opacity: .1
-      },
-      [r.LIGHT]: {
-        raw: "RED_400",
-        opacity: .1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_400",
-        opacity: .1
-      },
-      [r.DARKER]: {
-        raw: "RED_400",
-        opacity: .1
-      }
-    },
-    BACKGROUND_MESSAGE_HIGHLIGHT: {
-      category: "background",
-      [r.DARK]: {
-        raw: "BRAND_360",
-        opacity: .08
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_360",
-        opacity: .1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_360",
-        opacity: .08
-      },
-      [r.DARKER]: {
-        raw: "BRAND_360",
-        opacity: .08
-      }
-    },
-    BACKGROUND_MESSAGE_HIGHLIGHT_HOVER: {
-      category: "background",
-      [r.DARK]: {
-        raw: "BRAND_360",
-        opacity: .06
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_360",
-        opacity: .2
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_360",
-        opacity: .06
-      },
-      [r.DARKER]: {
-        raw: "BRAND_360",
-        opacity: .06
-      }
-    },
-    BACKGROUND_MESSAGE_HOVER: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_900",
-        opacity: .06
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_900",
-        opacity: .03
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_21",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_21",
-        opacity: 1
       }
     },
     BACKGROUND_MOBILE_PRIMARY: {
@@ -549,7 +347,7 @@ let {
         }
       }
     },
-    BACKGROUND_MOD_FAINT: {
+    BACKGROUND_MOD_MUTED: {
       category: "background",
       [r.DARK]: {
         raw: "PRIMARY_500",
@@ -636,90 +434,56 @@ let {
         }
       }
     },
-    BACKGROUND_MODIFIER_ACTIVE: {
+    BACKGROUND_SCRIM: {
       category: "background",
       [r.DARK]: {
-        raw: "PRIMARY_500",
-        opacity: .48
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_400",
-        opacity: .2
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_13",
-        opacity: .48
-      },
-      [r.DARKER]: {
-        raw: "PLUM_13",
-        opacity: .48
-      }
-    },
-    BACKGROUND_MODIFIER_HOVER: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_500",
-        opacity: .3
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_400",
-        opacity: .16
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_13",
-        opacity: .3
-      },
-      [r.DARKER]: {
-        raw: "PLUM_13",
-        opacity: .3
-      }
-    },
-    BACKGROUND_MODIFIER_SELECTED: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_500",
-        opacity: .6
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_400",
-        opacity: .24
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_13",
-        opacity: .6
-      },
-      [r.DARKER]: {
-        raw: "PLUM_13",
-        opacity: .6
-      }
-    },
-    BACKGROUND_NESTED_FLOATING: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_630",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
         raw: "BLACK",
-        opacity: 1
+        opacity: .7
+      },
+      [r.LIGHT]: {
+        raw: "BLACK",
+        opacity: .54
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_19",
+        opacity: .75
       },
       [r.DARKER]: {
-        raw: "PLUM_22",
-        opacity: 1
+        raw: "BLACK",
+        opacity: .7
       },
       gradient: {
         light: {
-          color: "BLACK_500",
-          opacity: .1
+          color: "gradient.start",
+          saturation: .2,
+          lightness: .3,
+          opacity: .7
         },
         dark: {
-          color: "WHITE_500",
-          opacity: .1
+          color: "gradient.start",
+          saturation: .25,
+          lightness: .1,
+          opacity: .7
         }
+      }
+    },
+    BACKGROUND_SCRIM_LIGHTBOX: {
+      category: "background",
+      [r.DARK]: {
+        raw: "BLACK",
+        opacity: .92
+      },
+      [r.LIGHT]: {
+        raw: "BLACK",
+        opacity: .92
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLACK",
+        opacity: .92
+      },
+      [r.DARKER]: {
+        raw: "BLACK",
+        opacity: .92
       }
     },
     BACKGROUND_SECONDARY_ALT: {
@@ -768,6 +532,45 @@ let {
       [r.DARKER]: {
         raw: "PLUM_18",
         opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "BLACK_500",
+          opacity: .1
+        },
+        dark: {
+          color: "WHITE_500",
+          opacity: .1
+        }
+      }
+    },
+    BACKGROUND_SURFACE_HIGHEST: {
+      category: "background",
+      [r.DARK]: {
+        raw: "PRIMARY_800",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_19",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_17",
+        opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "WHITE_500",
+          opacity: .5
+        },
+        dark: {
+          color: "BLACK_500",
+          opacity: .5
+        }
       }
     },
     BACKGROUND_TILE_GRADIENT_PINK_END: {
@@ -806,163 +609,6 @@ let {
       [r.DARKER]: {
         raw: "ILLO_PINK_50",
         opacity: .3
-      }
-    },
-    BADGE_BRAND_BG: {
-      category: "background",
-      [r.DARK]: {
-        raw: "BRAND_260",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_260",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_260",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BRAND_260",
-        opacity: 1
-      }
-    },
-    BADGE_BRAND_TEXT: {
-      category: "text",
-      [r.DARK]: {
-        raw: "BRAND_560",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_560",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_560",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BRAND_560",
-        opacity: 1
-      }
-    },
-    BG_BACKDROP: {
-      category: "background",
-      [r.DARK]: {
-        raw: "BLACK",
-        opacity: .7
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: .54
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_19",
-        opacity: .75
-      },
-      [r.DARKER]: {
-        raw: "BLACK",
-        opacity: .7
-      },
-      gradient: {
-        light: {
-          color: "gradient.start",
-          saturation: .2,
-          lightness: .3,
-          opacity: .7
-        },
-        dark: {
-          color: "gradient.start",
-          saturation: .25,
-          lightness: .1,
-          opacity: .7
-        }
-      }
-    },
-    BG_BACKDROP_IMMERSIVE: {
-      category: "background",
-      [r.DARK]: {
-        raw: "BLACK",
-        opacity: .85
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: .8
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_19",
-        opacity: .9
-      },
-      [r.DARKER]: {
-        raw: "BLACK",
-        opacity: .85
-      }
-    },
-    BG_BACKDROP_NO_OPACITY: {
-      category: "background",
-      [r.DARK]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_19",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BLACK",
-        opacity: 1
-      }
-    },
-    BG_BRAND: {
-      category: "background",
-      [r.DARK]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BRAND_500",
-        opacity: 1
-      }
-    },
-    BG_SURFACE_OVERLAY: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_800",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_19",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_17",
-        opacity: 1
-      },
-      gradient: {
-        light: {
-          color: "WHITE_500",
-          opacity: .5
-        },
-        dark: {
-          color: "BLACK_500",
-          opacity: .5
-        }
       }
     },
     BG_SURFACE_OVERLAY_TMP: {
@@ -1080,7 +726,26 @@ let {
         opacity: .96
       }
     },
-    BORDER_FAINT: {
+    BORDER_FOCUS: {
+      category: "border",
+      [r.DARK]: {
+        raw: "BLUE_345",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLUE_360",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLUE_345",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLUE_345",
+        opacity: 1
+      }
+    },
+    BORDER_MUTED: {
       category: "border",
       [r.DARK]: {
         raw: "WHITE",
@@ -1137,82 +802,6 @@ let {
         opacity: .12
       }
     },
-    BUG_REPORTER_MODAL_SUBMITTING_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_800",
-        opacity: .6
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: .6
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_23",
-        opacity: .6
-      },
-      [r.DARKER]: {
-        raw: "PLUM_23",
-        opacity: .6
-      }
-    },
-    BUTTON_CREATOR_REVENUE_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "TEAL_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "TEAL_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "TEAL_430",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "TEAL_430",
-        opacity: 1
-      }
-    },
-    BUTTON_DANGER_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "RED_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_430",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_430",
-        opacity: 1
-      }
-    },
-    BUTTON_DANGER_BACKGROUND_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "RED_530",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_530",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_530",
-        opacity: 1
-      }
-    },
     BUTTON_DANGER_BACKGROUND_DISABLED: {
       category: "generic",
       [r.DARK]: {
@@ -1229,25 +818,6 @@ let {
       },
       [r.DARKER]: {
         raw: "RED_430",
-        opacity: 1
-      }
-    },
-    BUTTON_DANGER_BACKGROUND_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "RED_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_500",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_500",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_500",
         opacity: 1
       }
     },
@@ -1270,45 +840,7 @@ let {
         opacity: 0
       }
     },
-    BUTTON_OUTLINE_BRAND_BACKGROUND_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BRAND_560",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_560",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_560",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BRAND_560",
-        opacity: 1
-      }
-    },
     BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BRAND_500",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_BRAND_BORDER: {
       category: "generic",
       [r.DARK]: {
         raw: "BRAND_500",
@@ -1346,82 +878,6 @@ let {
         opacity: 1
       }
     },
-    BUTTON_OUTLINE_BRAND_BORDER_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BRAND_500",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BRAND_500",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_BRAND_TEXT: {
-      category: "text",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_BRAND_TEXT_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_BRAND_TEXT_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
     BUTTON_OUTLINE_POSITIVE_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
@@ -1439,158 +895,6 @@ let {
       [r.DARKER]: {
         raw: "WHITE",
         opacity: 0
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_BACKGROUND_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_530",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_BACKGROUND_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_430",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_BORDER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_360",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_400",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_360",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_360",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_BORDER_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_530",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_BORDER_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_430",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_TEXT: {
-      category: "text",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_TEXT_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_POSITIVE_TEXT_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
       }
     },
     BUTTON_OUTLINE_PRIMARY_BACKGROUND: {
@@ -1612,101 +916,6 @@ let {
         opacity: 0
       }
     },
-    BUTTON_OUTLINE_PRIMARY_BACKGROUND_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_600",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_11",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_11",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_PRIMARY_BACKGROUND_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_13",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_13",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_PRIMARY_BORDER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PRIMARY_500",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PRIMARY_500",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_PRIMARY_BORDER_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_600",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_11",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_11",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_PRIMARY_BORDER_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_13",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_13",
-        opacity: 1
-      }
-    },
     BUTTON_OUTLINE_PRIMARY_TEXT: {
       category: "text",
       [r.DARK]: {
@@ -1726,10 +935,10 @@ let {
         opacity: 1
       }
     },
-    BUTTON_OUTLINE_PRIMARY_TEXT_ACTIVE: {
+    CARD_BACKGROUND_DEFAULT: {
       category: "generic",
       [r.DARK]: {
-        raw: "WHITE",
+        raw: "PRIMARY_600",
         opacity: 1
       },
       [r.LIGHT]: {
@@ -1737,164 +946,22 @@ let {
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "WHITE",
+        raw: "PLUM_23",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    BUTTON_OUTLINE_PRIMARY_TEXT_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "WHITE",
+        raw: "PLUM_18",
         opacity: 1
       },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    BUTTON_POSITIVE_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_430",
-        opacity: 1
-      }
-    },
-    BUTTON_POSITIVE_BACKGROUND_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_530",
-        opacity: 1
-      }
-    },
-    BUTTON_POSITIVE_BACKGROUND_DISABLED: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_430",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_430",
-        opacity: 1
-      }
-    },
-    BUTTON_POSITIVE_BACKGROUND_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_530",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_500",
-        opacity: 1
-      }
-    },
-    BUTTON_SECONDARY_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_500",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_13",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_13",
-        opacity: 1
-      }
-    },
-    BUTTON_SECONDARY_BACKGROUND_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_400",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_530",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_10",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_10",
-        opacity: 1
-      }
-    },
-    BUTTON_SECONDARY_BACKGROUND_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_430",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_500",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_11",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_11",
-        opacity: 1
+      gradient: {
+        light: {
+          color: "WHITE_500",
+          opacity: .75
+        },
+        dark: {
+          color: "WHITE_500",
+          opacity: .1
+        }
       }
     },
     CARD_GRADIENT_BG: {
@@ -1933,35 +1000,6 @@ let {
       [r.DARKER]: {
         raw: "BLACK",
         opacity: .5
-      }
-    },
-    CARD_PRIMARY_BG: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_600",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_23",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_18",
-        opacity: 1
-      },
-      gradient: {
-        light: {
-          color: "WHITE_500",
-          opacity: .75
-        },
-        dark: {
-          color: "WHITE_500",
-          opacity: .1
-        }
       }
     },
     CARD_PRIMARY_PRESSED_BG: {
@@ -3960,6 +2998,196 @@ let {
         opacity: 1
       }
     },
+    CONTROL_CONNECT_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "GREEN_430",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "GREEN_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "GREEN_430",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "GREEN_430",
+        opacity: 1
+      }
+    },
+    CONTROL_CONNECT_BORDER_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "GREEN_360",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "GREEN_400",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "GREEN_360",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "GREEN_360",
+        opacity: 1
+      }
+    },
+    CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_430",
+        opacity: 1
+      }
+    },
+    CONTROL_PRIMARY_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BRAND_500",
+        opacity: 1
+      }
+    },
+    CONTROL_PRIMARY_TEXT_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "WHITE",
+        opacity: 1
+      }
+    },
+    CONTROL_SECONDARY_BACKGROUND_ACTIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_400",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_530",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_10",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_10",
+        opacity: 1
+      }
+    },
+    CONTROL_SECONDARY_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_500",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_13",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_13",
+        opacity: 1
+      }
+    },
+    CONTROL_SECONDARY_BACKGROUND_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_430",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_500",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_11",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_11",
+        opacity: 1
+      }
+    },
+    CONTROL_SECONDARY_BORDER_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BRAND_500",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BRAND_500",
+        opacity: 1
+      }
+    },
+    CONTROL_SECONDARY_TEXT_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "WHITE",
+        opacity: 1
+      }
+    },
     CUSTOM_STATUS_BUBBLE_BG: {
       category: "background",
       [r.DARK]: {
@@ -4636,25 +3864,6 @@ let {
         opacity: .3
       }
     },
-    FOCUS_PRIMARY: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BLUE_345",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLUE_360",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BLUE_345",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BLUE_345",
-        opacity: 1
-      }
-    },
     FORUM_POST_EXTRA_MEDIA_COUNT_CONTAINER_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
@@ -4731,25 +3940,6 @@ let {
         opacity: 1
       }
     },
-    HEADER_MUTED: {
-      category: "text",
-      [r.DARK]: {
-        raw: "PRIMARY_360",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_460",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_10",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_10",
-        opacity: 1
-      }
-    },
     HEADER_PRIMARY: {
       category: "text",
       [r.DARK]: {
@@ -4766,6 +3956,82 @@ let {
       },
       [r.DARKER]: {
         raw: "PLUM_3",
+        opacity: 1
+      }
+    },
+    ICON_FEEDBACK_CRITICAL: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_400",
+        opacity: 1
+      }
+    },
+    ICON_FEEDBACK_INFO: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BLUE_345",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLUE_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLUE_345",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLUE_345",
+        opacity: 1
+      }
+    },
+    ICON_FEEDBACK_POSITIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "GREEN_330",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "GREEN_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "GREEN_330",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "GREEN_330",
+        opacity: 1
+      }
+    },
+    ICON_FEEDBACK_WARNING: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "YELLOW_400",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "YELLOW_300",
         opacity: 1
       }
     },
@@ -4788,7 +4054,83 @@ let {
         opacity: 1
       }
     },
-    ICON_PRIMARY: {
+    ICON_STATUS_DND: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_400",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_400",
+        opacity: 1
+      }
+    },
+    ICON_STATUS_IDLE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "YELLOW_400",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      }
+    },
+    ICON_STATUS_OFFLINE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_360",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_460",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_9",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_9",
+        opacity: 1
+      }
+    },
+    ICON_STATUS_ONLINE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "GREEN_360",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "GREEN_400",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "GREEN_360",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "GREEN_360",
+        opacity: 1
+      }
+    },
+    ICON_STRONG: {
       category: "generic",
       [r.DARK]: {
         raw: "PRIMARY_130",
@@ -4807,7 +4149,7 @@ let {
         opacity: 1
       }
     },
-    ICON_SECONDARY: {
+    ICON_SUBTLE: {
       category: "generic",
       [r.DARK]: {
         raw: "PRIMARY_330",
@@ -4845,254 +4187,7 @@ let {
         opacity: 0
       }
     },
-    INFO_BOX_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BLUE_345",
-        opacity: .1
-      },
-      [r.LIGHT]: {
-        raw: "BLUE_345",
-        opacity: .1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BLUE_345",
-        opacity: .1
-      },
-      [r.DARKER]: {
-        raw: "BLUE_345",
-        opacity: .1
-      }
-    },
-    INFO_DANGER_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "RED_400",
-        opacity: .1
-      },
-      [r.LIGHT]: {
-        raw: "RED_430",
-        opacity: .1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_400",
-        opacity: .1
-      },
-      [r.DARKER]: {
-        raw: "RED_400",
-        opacity: .1
-      }
-    },
-    INFO_DANGER_FOREGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "RED_400",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_400",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_400",
-        opacity: 1
-      }
-    },
-    INFO_DANGER_TEXT: {
-      category: "text",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    INFO_HELP_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BLUE_345",
-        opacity: .1
-      },
-      [r.LIGHT]: {
-        raw: "BLUE_430",
-        opacity: .1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BLUE_345",
-        opacity: .1
-      },
-      [r.DARKER]: {
-        raw: "BLUE_345",
-        opacity: .1
-      }
-    },
-    INFO_HELP_FOREGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BLUE_345",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLUE_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BLUE_345",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BLUE_345",
-        opacity: 1
-      }
-    },
-    INFO_HELP_TEXT: {
-      category: "text",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    INFO_POSITIVE_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_360",
-        opacity: .1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_400",
-        opacity: .05
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_360",
-        opacity: .1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_360",
-        opacity: .1
-      }
-    },
-    INFO_POSITIVE_FOREGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "GREEN_360",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "GREEN_400",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "GREEN_360",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "GREEN_360",
-        opacity: 1
-      }
-    },
-    INFO_POSITIVE_TEXT: {
-      category: "text",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    INFO_WARNING_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "YELLOW_300",
-        opacity: .1
-      },
-      [r.LIGHT]: {
-        raw: "YELLOW_400",
-        opacity: .1
-      },
-      [r.MIDNIGHT]: {
-        raw: "YELLOW_300",
-        opacity: .1
-      },
-      [r.DARKER]: {
-        raw: "YELLOW_300",
-        opacity: .1
-      }
-    },
-    INFO_WARNING_FOREGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "YELLOW_300",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "YELLOW_400",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "YELLOW_300",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "YELLOW_300",
-        opacity: 1
-      }
-    },
-    INFO_WARNING_TEXT: {
-      category: "text",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "WHITE",
-        opacity: 1
-      }
-    },
-    INPUT_BACKGROUND: {
+    INPUT_BACKGROUND_DEFAULT: {
       category: "background",
       [r.DARK]: {
         raw: "PRIMARY_700",
@@ -5121,7 +4216,7 @@ let {
         }
       }
     },
-    INPUT_BORDER: {
+    INPUT_BORDER_DEFAULT: {
       category: "background",
       [r.DARK]: {
         raw: "PLUM_11",
@@ -5140,7 +4235,7 @@ let {
         opacity: .32
       }
     },
-    INPUT_BORDER_CRITICAL_HOVER: {
+    INPUT_BORDER_ERROR_HOVER: {
       category: "background",
       [r.DARK]: {
         raw: "RED_345",
@@ -5159,121 +4254,7 @@ let {
         opacity: 1
       }
     },
-    INPUT_ERROR_BACKGROUND: {
-      category: "background",
-      [r.DARK]: {
-        raw: "RED_500",
-        opacity: .12
-      },
-      [r.LIGHT]: {
-        raw: "RED_500",
-        opacity: .12
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_500",
-        opacity: .12
-      },
-      [r.DARKER]: {
-        raw: "RED_500",
-        opacity: .12
-      }
-    },
-    INPUT_ERROR_BORDER: {
-      category: "background",
-      [r.DARK]: {
-        raw: "RED_360",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_360",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_360",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_360",
-        opacity: 1
-      }
-    },
-    INPUT_ERROR_TEXT: {
-      category: "background",
-      [r.DARK]: {
-        raw: "RED_260",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_700",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_260",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_260",
-        opacity: 1
-      }
-    },
-    INPUT_FOCUSED_BORDER: {
-      category: "background",
-      [r.DARK]: {
-        raw: "WHITE",
-        opacity: .16
-      },
-      [r.LIGHT]: {
-        raw: "BLACK",
-        opacity: .16
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_11",
-        opacity: .24
-      },
-      [r.DARKER]: {
-        raw: "PLUM_11",
-        opacity: .32
-      }
-    },
-    INPUT_FOREGROUND_CRITICAL: {
-      category: "background",
-      [r.DARK]: {
-        raw: "RED_345",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_500",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_345",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_345",
-        opacity: 1
-      }
-    },
-    INPUT_FOREGROUND_DEFAULT: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_230",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_600",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_4",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_6",
-        opacity: 1
-      }
-    },
-    INPUT_PLACEHOLDER_TEXT: {
+    INPUT_PLACEHOLDER_TEXT_DEFAULT: {
       category: "background",
       [r.DARK]: {
         raw: "INPUT_PLACEHOLDER_TEXT_DARK",
@@ -5302,7 +4283,102 @@ let {
         }
       }
     },
-    INTERACTIVE_ACTIVE: {
+    INPUT_TEXT_DEFAULT: {
+      category: "background",
+      [r.DARK]: {
+        raw: "PRIMARY_230",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_600",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_4",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_6",
+        opacity: 1
+      }
+    },
+    INPUT_TEXT_ERROR_DEFAULT: {
+      category: "background",
+      [r.DARK]: {
+        raw: "RED_345",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "RED_500",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_345",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "RED_345",
+        opacity: 1
+      }
+    },
+    INTERACTIVE_BACKGROUND_ACTIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_500",
+        opacity: .48
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_400",
+        opacity: .2
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_13",
+        opacity: .48
+      },
+      [r.DARKER]: {
+        raw: "PLUM_13",
+        opacity: .48
+      }
+    },
+    INTERACTIVE_BACKGROUND_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_500",
+        opacity: .3
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_400",
+        opacity: .16
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_13",
+        opacity: .3
+      },
+      [r.DARKER]: {
+        raw: "PLUM_13",
+        opacity: .3
+      }
+    },
+    INTERACTIVE_BACKGROUND_SELECTED: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_500",
+        opacity: .6
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_400",
+        opacity: .24
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_13",
+        opacity: .6
+      },
+      [r.DARKER]: {
+        raw: "PLUM_13",
+        opacity: .6
+      }
+    },
+    INTERACTIVE_ICON_ACTIVE: {
       category: "generic",
       [r.DARK]: {
         raw: "WHITE",
@@ -5321,7 +4397,26 @@ let {
         opacity: 1
       }
     },
-    INTERACTIVE_HOVER: {
+    INTERACTIVE_ICON_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_330",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_500",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_6",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_6",
+        opacity: 1
+      }
+    },
+    INTERACTIVE_ICON_HOVER: {
       category: "generic",
       [r.DARK]: {
         raw: "PRIMARY_230",
@@ -5369,7 +4464,26 @@ let {
         }
       }
     },
-    INTERACTIVE_NORMAL: {
+    INTERACTIVE_TEXT_ACTIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_860",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_3",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_1",
+        opacity: 1
+      }
+    },
+    INTERACTIVE_TEXT_DEFAULT: {
       category: "generic",
       [r.DARK]: {
         raw: "PRIMARY_330",
@@ -5385,6 +4499,25 @@ let {
       },
       [r.DARKER]: {
         raw: "PLUM_6",
+        opacity: 1
+      }
+    },
+    INTERACTIVE_TEXT_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_230",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_600",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_4",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_4",
         opacity: 1
       }
     },
@@ -5540,7 +4673,140 @@ let {
         opacity: 1
       }
     },
-    MESSAGE_REACTED_BACKGROUND: {
+    MESSAGE_AUTOMOD_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: .05
+      },
+      [r.LIGHT]: {
+        raw: "RED_400",
+        opacity: .05
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_345",
+        opacity: .08
+      },
+      [r.DARKER]: {
+        raw: "RED_345",
+        opacity: .08
+      }
+    },
+    MESSAGE_AUTOMOD_BACKGROUND_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "RED_400",
+        opacity: .1
+      },
+      [r.LIGHT]: {
+        raw: "RED_400",
+        opacity: .1
+      },
+      [r.MIDNIGHT]: {
+        raw: "RED_400",
+        opacity: .1
+      },
+      [r.DARKER]: {
+        raw: "RED_400",
+        opacity: .1
+      }
+    },
+    MESSAGE_BACKGROUND_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_900",
+        opacity: .06
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_900",
+        opacity: .03
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_21",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_21",
+        opacity: 1
+      }
+    },
+    MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BRAND_360",
+        opacity: .08
+      },
+      [r.LIGHT]: {
+        raw: "BRAND_360",
+        opacity: .1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BRAND_360",
+        opacity: .08
+      },
+      [r.DARKER]: {
+        raw: "BRAND_360",
+        opacity: .08
+      }
+    },
+    MESSAGE_HIGHLIGHT_BACKGROUND_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BRAND_360",
+        opacity: .06
+      },
+      [r.LIGHT]: {
+        raw: "BRAND_360",
+        opacity: .2
+      },
+      [r.MIDNIGHT]: {
+        raw: "BRAND_360",
+        opacity: .06
+      },
+      [r.DARKER]: {
+        raw: "BRAND_360",
+        opacity: .06
+      }
+    },
+    MESSAGE_MENTIONED_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "YELLOW_300",
+        opacity: .1
+      },
+      [r.LIGHT]: {
+        raw: "YELLOW_300",
+        opacity: .1
+      },
+      [r.MIDNIGHT]: {
+        raw: "YELLOW_260",
+        opacity: .08
+      },
+      [r.DARKER]: {
+        raw: "YELLOW_260",
+        opacity: .08
+      }
+    },
+    MESSAGE_MENTIONED_BACKGROUND_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "YELLOW_300",
+        opacity: .08
+      },
+      [r.LIGHT]: {
+        raw: "YELLOW_300",
+        opacity: .2
+      },
+      [r.MIDNIGHT]: {
+        raw: "YELLOW_300",
+        opacity: .08
+      },
+      [r.DARKER]: {
+        raw: "YELLOW_300",
+        opacity: .08
+      }
+    },
+    MESSAGE_REACTED_BACKGROUND_DEFAULT: {
       category: "generic",
       [r.DARK]: {
         raw: "BRAND_500",
@@ -5559,8 +4825,8 @@ let {
         opacity: .15
       }
     },
-    MESSAGE_REACTED_TEXT: {
-      category: "text",
+    MESSAGE_REACTED_TEXT_DEFAULT: {
+      category: "generic",
       [r.DARK]: {
         raw: "BRAND_200",
         opacity: 1
@@ -5575,6 +4841,75 @@ let {
       },
       [r.DARKER]: {
         raw: "BRAND_200",
+        opacity: 1
+      }
+    },
+    MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_630",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_130",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLACK",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_20",
+        opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "gradient.mid",
+          lightness: .925,
+          saturation: "*0.8"
+        },
+        dark: {
+          color: "gradient.mid",
+          lightness: .12,
+          saturation: "*0.5"
+        }
+      }
+    },
+    MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "WHITE",
+        opacity: .07
+      },
+      [r.LIGHT]: {
+        raw: "BLACK",
+        opacity: .12
+      },
+      [r.MIDNIGHT]: {
+        raw: "WHITE",
+        opacity: .07
+      },
+      [r.DARKER]: {
+        raw: "WHITE",
+        opacity: .07
+      }
+    },
+    MOBILE_BACKGROUND_SCRIM_OPAQUE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BLACK",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLACK",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_19",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLACK",
         opacity: 1
       }
     },
@@ -7292,63 +6627,6 @@ let {
         opacity: 1
       }
     },
-    STATUS_DND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "RED_400",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "RED_430",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "RED_400",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "RED_400",
-        opacity: 1
-      }
-    },
-    STATUS_IDLE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "YELLOW_300",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "YELLOW_400",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "YELLOW_300",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "YELLOW_300",
-        opacity: 1
-      }
-    },
-    STATUS_OFFLINE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_360",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_460",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_9",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_9",
-        opacity: 1
-      }
-    },
     STATUS_ONLINE: {
       category: "generic",
       [r.DARK]: {
@@ -7558,6 +6836,25 @@ let {
         opacity: 1
       }
     },
+    TEXT_FEEDBACK_INFO: {
+      category: "text",
+      [r.DARK]: {
+        raw: "BLUE_330",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLUE_430",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLUE_330",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLUE_330",
+        opacity: 1
+      }
+    },
     TEXT_FEEDBACK_POSITIVE: {
       category: "text",
       [r.DARK]: {
@@ -7691,22 +6988,79 @@ let {
         opacity: 1
       }
     },
-    TEXT_MUTED_ON_DEFAULT: {
+    TEXT_STATUS_DND: {
       category: "text",
       [r.DARK]: {
-        raw: "PRIMARY_330",
+        raw: "RED_400",
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "PRIMARY_430",
+        raw: "RED_430",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "PRIMARY_330",
+        raw: "RED_400",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "PRIMARY_330",
+        raw: "RED_400",
+        opacity: 1
+      }
+    },
+    TEXT_STATUS_IDLE: {
+      category: "text",
+      [r.DARK]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "YELLOW_400",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "YELLOW_300",
+        opacity: 1
+      }
+    },
+    TEXT_STATUS_OFFLINE: {
+      category: "text",
+      [r.DARK]: {
+        raw: "PRIMARY_360",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_460",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_9",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_9",
+        opacity: 1
+      }
+    },
+    TEXT_STATUS_ONLINE: {
+      category: "text",
+      [r.DARK]: {
+        raw: "GREEN_360",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "GREEN_400",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "GREEN_360",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "GREEN_360",
         opacity: 1
       }
     },

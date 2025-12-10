@@ -2,7 +2,7 @@
 /** chunk id: 979038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -30,50 +30,50 @@ var Chunk620662 = require("./620662.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js");
 
-function C(e) {
+function A(e) {
   var t;
   let {
     user: n,
-    activity: C,
+    activity: A,
     onAction: N,
     onClose: P,
     application: R
   } = e, {
     themeType: D
-  } = (0, h.z)(), w = (0, c.q)(R), x = (0, f.L)(null != (t = null == C ? true : C.application_id) ? t : null == R ? true : R.id), {
+  } = (0, h.z)(), w = (0, c.q)(R), x = (0, f.L)(null != (t = null == A ? true : A.application_id) ? t : null == R ? true : R.id), {
     analyticsLocations: L
-  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), j = D === A.l.MODAL || D === A.l.MODAL_V2;
-  return x || !w || null == R || j ? (0, s.Z)(C) ? (0, r.jsx)(O.Z, {
+  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), j = D === C.l.MODAL || D === C.l.MODAL_V2;
+  return x || !w || null == R || j ? (0, s.Z)(A) ? (0, r.jsx)(O.Z, {
     platformType: T.ABu.XBOX,
     icon: () => (0, r.jsx)(m.Z, {}),
     onAction: N
-  }) : (0, o.Z)(C) ? (0, r.jsx)(O.Z, {
+  }) : (0, o.Z)(A) ? (0, r.jsx)(O.Z, {
     platformType: T.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(_.Z, {}),
     onAction: N
-  }) : (0, l.Z)(C) ? (0, r.jsx)(S.Z, {
-    activity: C,
+  }) : (0, l.Z)(A) ? (0, r.jsx)(S.Z, {
+    activity: A,
     onAction: N
-  }) : (0, i.Z)(C, T.xjy.JOIN) || (0, a.Z)(C) ? (0, r.jsx)(b.Z, {
+  }) : (0, i.Z)(A, T.xjy.JOIN) || (0, a.Z)(A) ? (0, r.jsx)(b.Z, {
     user: n,
-    activity: C,
+    activity: A,
     onAction: N,
     onClose: P
-  }) : (null == C ? true : C.type) === T.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
+  }) : (null == A ? true : A.type) === T.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
     user: n,
-    activity: C,
+    activity: A,
     onAction: N,
     onClose: P
-  }) : (null == C ? true : C.buttons) != null && (null == C ? true : C.buttons.length) >= 1 ? (0, r.jsx)(g.Z, {
+  }) : (null == A ? true : A.buttons) != null && (null == A ? true : A.buttons.length) >= 1 ? (0, r.jsx)(g.Z, {
     user: n,
-    activity: C,
+    activity: A,
     onAction: N
-  }) : (0, i.Z)(C, T.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
+  }) : (0, i.Z)(A, T.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
     user: n,
-    activity: C,
+    activity: A,
     onAction: N
-  }) : (0, p.dS)(C) ? (0, r.jsx)(v.Z, {
-    activity: C,
+  }) : (0, p.dS)(A) ? (0, r.jsx)(v.Z, {
+    activity: A,
     onAction: N,
     onClose: P
   }) : null : (0, r.jsx)(I.Z, {

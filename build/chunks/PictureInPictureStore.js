@@ -155,14 +155,14 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   let {
     id: t
   } = e, n = m.get(t);
   null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (a = t))
 }
 
-function C() {
+function A() {
   r = null, i = null, a = null, m = new Map
 }
 class N extends(o = Chunk442837.ZP.PersistedStore) {
@@ -232,6 +232,6 @@ let P = new N(Chunk570140.Z, {
   PICTURE_IN_PICTURE_HIDE: I,
   PICTURE_IN_PICTURE_SHOW: T,
   PICTURE_IN_PICTURE_UPDATE_RECT: S,
-  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: A,
-  LOGOUT: C
+  PICTURE_IN_PICTURE_UPDATE_SELECTED_WINDOW: C,
+  LOGOUT: A
 })

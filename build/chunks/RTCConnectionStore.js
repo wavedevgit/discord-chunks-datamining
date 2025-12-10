@@ -45,8 +45,8 @@ let E = [],
   S = false,
   I = false,
   T = null,
-  A = false,
-  C = null;
+  C = false,
+  A = null;
 
 function N(e, t) {
   if (null == i) throw Error("Creating RTCConnection without session.");
@@ -56,7 +56,7 @@ function N(e, t) {
       sessionId: i,
       guildId: e,
       channelId: t,
-      joinVoiceId: C
+      joinVoiceId: A
     });
   return a.on(l.z.State, (e, t, n) => {
     s.Z.wait(() => s.Z.dispatch(g({
@@ -163,7 +163,7 @@ function P() {
   }, Chunk570140.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
     mediaEngineConnectionId: r.getMediaEngineConnectionId()
-  }), r.destroy(), r = null, v = null, A = false
+  }), r.destroy(), r = null, v = null, C = false
 }
 
 function R(e) {
@@ -181,7 +181,7 @@ function w(e) {
   return t.reduce((e, t) => {
     var n, a, o;
     if (null == v || v.updateVoiceStates(t.userId, t.channelId), S = S || (null != (n = null == v ? true : v.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? P() : (r.setNextChannelId(t.channelId), A = true, C = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || P(), null != t.channelId && (b = null, O = null, r = N(t.guildId, t.channelId), S = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), P());
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? P() : (r.setNextChannelId(t.channelId), C = true, A = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || P(), null != t.channelId && (b = null, O = null, r = N(t.guildId, t.channelId), S = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), P());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
       b = null, O = null, r = N(t.guildId, t.channelId), S = (null != (o = null == v ? true : v.getStats().max_voice_state_count) ? o : 0) > 1
@@ -232,7 +232,7 @@ function G(e) {
     channelId: t,
     joinVoiceId: n
   } = e;
-  null != r && (null == t || r.channelId !== t) && P(), C = n
+  null != r && (null == t || r.channelId !== t) && P(), A = n
 }
 
 function Z(e) {
@@ -368,7 +368,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return null == r ? true : r.getUserIds()
   }
   getJoinVoiceId() {
-    return C
+    return A
   }
   isUserConnected(e) {
     return null == r ? true : r.getIsUserConnected(e)
@@ -384,7 +384,7 @@ class z extends(a = Chunk442837.ZP.Store) {
     return T
   }
   getWasMoved() {
-    return A
+    return C
   }
 }
 h(z, "displayName", "RTCConnectionStore");

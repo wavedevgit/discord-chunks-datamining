@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk907331 = require("./907331.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
@@ -91,8 +91,8 @@ function j(e) {
     let e = m.Z.getGuild(t);
     null != e && (0, p.u)({
       analyticsLocation: {
-        page: A.ZY5.GUILD_POWERUPS_MARKETING,
-        section: A.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
+        page: C.ZY5.GUILD_POWERUPS_MARKETING,
+        section: C.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
       analyticsLocations: D,
@@ -147,7 +147,7 @@ function j(e) {
       children: [(0, r.jsx)(_.xm, {
         heading: a,
         description: c,
-        label: N.intl.formatToPlainString(C.default.QOacIS, {
+        label: N.intl.formatToPlainString(A.default.QOacIS, {
           quantity: h,
           decorator: null != g ? g : ""
         }),
@@ -224,11 +224,11 @@ let k = 3,
       className: P.container,
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/extrabold",
-        children: N.intl.string(C.default.wjI18Q)
+        children: N.intl.string(A.default.wjI18Q)
       }), (0, r.jsx)(c.xvT, {
         variant: "text-lg/medium",
-        children: N.intl.format(C.default.S562fn, {
-          helpDeskArticle: h.Z.getArticleURL(A.BhN.GUILD_BOOSTING_FAQ)
+        children: N.intl.format(A.default.S562fn, {
+          helpDeskArticle: h.Z.getArticleURL(C.BhN.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsx)("div", {
         className: P.powerupsContainer,

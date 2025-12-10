@@ -121,20 +121,20 @@ function T(e, t) {
   delete i[t], a().isEmpty(i) && delete r[e]
 }
 
-function A() {
+function C() {
   let e = Chunk314897.default.getId();
   if (null == module || Chunk486472.Z.totalUnavailableGuilds > 0) return;
   let t = O(module);
   for (let e in exports) null == Chunk592125.Z.getChannel(module) && delete exports[module]
 }
 
-function C() {
+function A() {
   let e = Chunk314897.default.getId();
-  return module in b || (b[module] = {}), A(), false
+  return module in b || (b[module] = {}), C(), false
 }
 
 function N() {
-  return A(), false
+  return C(), false
 }
 
 function P(e) {
@@ -257,7 +257,7 @@ p(L, "displayName", "DraftStore"), p(L, "persistKey", "DraftStore"), p(L, "migra
   return n
 }]);
 let j = new L(Chunk570140.Z, {
-  CONNECTION_OPEN: C,
+  CONNECTION_OPEN: A,
   LOGOUT: D,
   MULTI_ACCOUNT_REMOVE_ACCOUNT: w,
   GUILD_DELETE: N,

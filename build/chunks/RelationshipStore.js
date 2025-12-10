@@ -61,15 +61,15 @@ let p = 3e5,
   S = 0,
   I = 0,
   T = 0,
-  A = {
+  C = {
     friends: true,
     blocked: true,
     ignored: true,
     blockedOrIgnored: true
   };
 
-function C() {
-  A.friends = true, A.blocked = true, A.ignored = true, A.blockedOrIgnored = true
+function A() {
+  C.friends = true, C.blocked = true, C.ignored = true, C.blockedOrIgnored = true
 }
 let N = new Map;
 
@@ -82,13 +82,13 @@ function P(e, t) {
   }
   _.set(e, t);
   let i = N.get(t);
-  null != i ? i.add(e) : N.set(t, new Set([e])), C()
+  null != i ? i.add(e) : N.set(t, new Set([e])), A()
 }
 
 function R(e) {
   var t;
   let n = _.get(e);
-  null != n && (_.delete(e), null == (t = N.get(n)) || t.delete(e), C())
+  null != n && (_.delete(e), null == (t = N.get(n)) || t.delete(e), A())
 }
 
 function D() {
@@ -97,7 +97,7 @@ function D() {
 }
 
 function w(e) {
-  _.clear(), N.clear(), m = {}, h = {}, E.clear(), g.clear(), b.clear(), C(), y = {}, v = {}, e.relationships.forEach(e => {
+  _.clear(), N.clear(), m = {}, h = {}, E.clear(), g.clear(), b.clear(), A(), y = {}, v = {}, e.relationships.forEach(e => {
     P(e.id, e.type), null != e.nickname && (m[e.id] = e.nickname), null != e.since && (h[e.id] = e.since), e.is_spam_request && g.add(e.id), null != e.origin_application_id && (y[e.id] = e.origin_application_id), e.user_ignored && (E.add(e.id), e.type === l.OGo.PENDING_INCOMING && b.add(e.id))
   }), D()
 }
@@ -224,31 +224,31 @@ class G extends(r = Chunk442837.ZP.Store) {
     return h
   }
   getFriendIDs() {
-    if (null == A.friends) {
+    if (null == C.friends) {
       var e;
-      A.friends = Array.from(null != (e = N.get(Chunk981631.OGo.FRIEND)) ? module : [])
+      C.friends = Array.from(null != (e = N.get(Chunk981631.OGo.FRIEND)) ? module : [])
     }
-    return A.friends
+    return C.friends
   }
   getBlockedIDs() {
-    if (null == A.blocked) {
+    if (null == C.blocked) {
       var e;
-      A.blocked = Array.from(null != (e = N.get(Chunk981631.OGo.BLOCKED)) ? module : [])
+      C.blocked = Array.from(null != (e = N.get(Chunk981631.OGo.BLOCKED)) ? module : [])
     }
-    return A.blocked
+    return C.blocked
   }
   getIgnoredIDs() {
-    return null == A.ignored && (A.ignored = Array.from(E.values()).filter(e => this.isIgnored(e))), A.ignored
+    return null == C.ignored && (C.ignored = Array.from(E.values()).filter(e => this.isIgnored(e))), C.ignored
   }
   getBlockedOrIgnoredIDs() {
-    if (null == A.blockedOrIgnored) {
+    if (null == C.blockedOrIgnored) {
       let e = new Set(E),
         t = N.get(Chunk981631.OGo.BLOCKED);
       if (null != exports)
         for (let n of exports) module.add(require);
-      A.blockedOrIgnored = Array.from(module.values())
+      C.blockedOrIgnored = Array.from(module.values())
     }
-    return A.blockedOrIgnored
+    return C.blockedOrIgnored
   }
   getOriginApplicationId(e) {
     return y[e]

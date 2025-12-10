@@ -677,7 +677,7 @@ function es() {
         minValue: 0,
         maxValue: require,
         markers: o,
-        onValueChange: e => A.i.getState().setHorizontalSpacing(e),
+        onValueChange: e => C.i.getState().setHorizontalSpacing(e),
         onValueRender: e => "".concat(Math.round(e), "px"),
         onMarkerRender: e => e % 4 == 0 ? "".concat(e) : true,
         equidistant: true
@@ -688,7 +688,7 @@ function es() {
         minValue: 0,
         maxValue: Chunk120356,
         markers: Chunk392711,
-        onValueChange: e => A.i.getState().setVerticalSpacing(e),
+        onValueChange: e => C.i.getState().setVerticalSpacing(e),
         onValueRender: e => "".concat(Math.round(e), "px"),
         onMarkerRender: e => e % 4 == 0 ? "".concat(e) : true,
         equidistant: true
@@ -699,7 +699,7 @@ function es() {
         label: "Highlight Mana Components",
         description: "Highlights all Mana design system components for easier debugging",
         checked: Chunk433517,
-        onChange: e => (0, C.Z)("highlight_mana_components", e)
+        onChange: e => (0, A.Z)("highlight_mana_components", e)
       })
     }), (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES,
@@ -707,7 +707,7 @@ function es() {
         label: "Highlight Void Toggleable Components",
         description: "Highlights deprecated toggleable components: VoidCheckbox (green), VoidRadioGroup (yellow), VoidSwitch (blue)",
         checked: Chunk268146,
-        onChange: e => (0, C.Z)("highlight_void_toggleables", e)
+        onChange: e => (0, A.Z)("highlight_void_toggleables", e)
       })
     })]
   })

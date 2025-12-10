@@ -33,16 +33,16 @@ function T(e) {
     context: n,
     application: l,
     sectionName: c
-  } = e, S = "channel" === n.type ? n.channel : true, T = (0, a.e7)([f.Z], () => f.Z.entrypoint()), C = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.ye)(C) ? A : E.Z, P = i.useRef(null), [R, D] = i.useState(false), {
+  } = e, S = "channel" === n.type ? n.channel : true, T = (0, a.e7)([f.Z], () => f.Z.entrypoint()), A = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.ye)(A) ? C : E.Z, P = i.useRef(null), [R, D] = i.useState(false), {
     iconURL: w,
     name: x
-  } = i.useMemo(() => (0, _.sl)(C, {
+  } = i.useMemo(() => (0, _.sl)(A, {
     fakeAppIconURL: v,
     size: I
-  }), [C]), L = (0, u.PL)(true, true), j = (0, u.LD)(null == S ? true : S.guild_id, true), M = i.useMemo(() => (0, u.If)(n, C.id), [L, j, n, C.id]), k = !M.isGuildInstalled && !M.isUserInstalled;
+  }), [A]), L = (0, u.PL)(true, true), j = (0, u.LD)(null == S ? true : S.guild_id, true), M = i.useMemo(() => (0, u.If)(n, A.id), [L, j, n, A.id]), k = !M.isGuildInstalled && !M.isUserInstalled;
   return i.useEffect(() => {
-    k && u.ZP.queryInstallOnDemandApp(C.id, null == S ? true : S.id)
-  }, [C.id, null == S ? true : S.id, k]), (0, r.jsxs)(s.u2D, {
+    k && u.ZP.queryInstallOnDemandApp(A.id, null == S ? true : S.id)
+  }, [A.id, null == S ? true : S.id, k]), (0, r.jsxs)(s.u2D, {
     className: O.container,
     fade: true,
     ref: P,
@@ -51,7 +51,7 @@ function T(e) {
       applicationName: x
     }),
     children: [(0, r.jsx)(g.Z, {
-      application: C,
+      application: A,
       context: n,
       name: x,
       iconURL: w,
@@ -64,12 +64,12 @@ function T(e) {
       size: 54
     }), (0, r.jsx)(N, {
       context: n,
-      application: C,
+      application: A,
       sectionName: c,
       hasCommands: R
     }), T === p._b.TEXT ? (0, r.jsx)(h.Z, {
       context: n,
-      application: C,
+      application: A,
       sectionName: c,
       installOnDemand: k,
       setHasCommands: D
@@ -77,7 +77,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     context: t,
     application: n,

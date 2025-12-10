@@ -65,7 +65,7 @@ function I(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,7 +73,7 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -81,7 +81,7 @@ function A(e, t) {
   return i
 }
 
-function C(e) {
+function A(e) {
   let {
     type: t,
     source: n,
@@ -115,13 +115,13 @@ function N(e) {
     hideHeader: y = false,
     showChannelDetails: O = false
   } = e, S = T(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
-  let A = (0, a.e7)([h.Z, _.Z], () => {
+  let C = (0, a.e7)([h.Z, _.Z], () => {
       var e;
       return _.Z.getChannel(null == (e = h.Z.getVoiceStateForUser(n.id)) ? true : e.channelId)
     }),
-    N = (0, d.E)("UserActivityContainer", A),
+    N = (0, d.E)("UserActivityContainer", C),
     P = (0, a.e7)([p.Z], () => l ? p.Z.getAnyStreamForUser(n.id) : null),
-    R = (null == t ? true : t.type) === b.IIU.HANG_STATUS && N ? A : null,
+    R = (null == t ? true : t.type) === b.IIU.HANG_STATUS && N ? C : null,
     D = (0, a.e7)([m.Z, h.Z, _.Z], () => {
       var e, r;
       return (0, o.Z)(t, b.xjy.EMBEDDED) ? m.Z.getGuild(null == (e = _.Z.getChannel(null == (r = h.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != R ? m.Z.getGuild(R.getGuildId()) : null
@@ -145,8 +145,8 @@ function N(e) {
     hideHeader: y,
     activityGuild: null != D ? D : w,
     showChannelDetails: O,
-    channel: O ? A : true,
-    renderActions: E ? () => (0, r.jsx)(C, I(v({}, S), {
+    channel: O ? C : true,
+    renderActions: E ? () => (0, r.jsx)(A, I(v({}, S), {
       applicationStream: P,
       activity: t,
       user: n

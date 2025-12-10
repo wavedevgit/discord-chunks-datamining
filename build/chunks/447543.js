@@ -131,7 +131,7 @@ function ep(e, t) {
 function e_(e, t, n) {
   var r, i;
   if ((null == n ? true : n.targetType) === ei.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return en.oC.ROLE_SUBSCRIPTIONS;
-  if ((null == n ? true : n.targetType) == null && !k.tx.has(t.type) && (0, A.s)(e)) return en.oC.GUILD_HOME;
+  if ((null == n ? true : n.targetType) == null && !k.tx.has(t.type) && (0, C.s)(e)) return en.oC.GUILD_HOME;
   let a = G.Z.getChannel(t.id);
   return H.Z.can(ee.Plq.VIEW_CHANNEL, a) ? t.id : null != (i = null == (r = Z.ZP.getDefaultChannel(e, true, ee.Plq.CREATE_INSTANT_INVITE)) ? true : r.id) ? i : t.id
 }
@@ -210,7 +210,7 @@ function eg(e) {
     let e = {
       guildScheduledEventId: t.id
     };
-    null != n && (e.welcomeModalChannelId = n), (0, C.P3)(t, e)
+    null != n && (e.welcomeModalChannelId = n), (0, A.P3)(t, e)
   })
 }
 

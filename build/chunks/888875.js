@@ -76,8 +76,8 @@ class I extends Chunk147913.Z {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: T,
       CONNECTION_RESUMED: T,
-      CONNECTION_CLOSED: C,
-      APP_STATE_UPDATE: A
+      CONNECTION_CLOSED: A,
+      APP_STATE_UPDATE: C
     })
   }
 }
@@ -86,11 +86,11 @@ function T() {
   S = true, P(y, true)
 }
 
-function A(e) {
+function C(e) {
   S && "active" !== e.state && (clearTimeout(v), v = null, N(false))
 }
 
-function C() {
+function A() {
   S && (clearTimeout(v), v = null, N(false))
 }
 async function N(e) {

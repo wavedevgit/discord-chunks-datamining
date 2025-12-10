@@ -87,16 +87,16 @@ function x() {
 
 function L(e) {
   var t;
-  let n = A.intl.string(A.t.QZg0J7),
-    i = null != e ? e : A.intl.string(A.t.VzHcSm),
+  let n = C.intl.string(C.t.QZg0J7),
+    i = null != e ? e : C.intl.string(C.t.VzHcSm),
     a = null == (t = (0, h.hp)(h.u.DEBUG_LOG_UPLOAD_FAILED)) ? true : t.errorCode,
-    o = A.intl.formatToPlainString(A.t.ejOT95, {
+    o = C.intl.formatToPlainString(C.t.ejOT95, {
       errorCode: a
     });
   (0, c.h7j)(e => (0, r.jsx)(c.VoidConfirmModal, D(P({
     header: n,
     confirmButtonColor: l.zx.Colors.BRAND,
-    confirmText: A.intl.string(A.t.BddRzS)
+    confirmText: C.intl.string(C.t.BddRzS)
   }, e), {
     children: (0, r.jsxs)("div", {
       style: {
@@ -121,9 +121,9 @@ function L(e) {
 
 function j(e) {
   (0, s.Z)({
-    title: A.intl.string(A.t["7UXEF2"]),
-    subtitle: A.intl.string(A.t.IYPrRl),
-    confirmText: A.intl.string(A.t.BddRzS),
+    title: C.intl.string(C.t["7UXEF2"]),
+    subtitle: C.intl.string(C.t.IYPrRl),
+    confirmText: C.intl.string(C.t.BddRzS),
     onConfirm: () => u.Z.setDebugLogging(e)
   })
 }

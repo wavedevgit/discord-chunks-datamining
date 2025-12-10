@@ -66,7 +66,7 @@ let T = e => {
   return null == t ? true : t.getGuildId()
 };
 
-function A(e) {
+function C(e) {
   return {
     type: "guild",
     guildId: e.id,
@@ -79,7 +79,7 @@ function A(e) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   let n, r = w((0, h.aF)(e.name, 32));
   return {
     type: "channel",
@@ -177,7 +177,7 @@ function x(e) {
 }
 
 function L() {
-  return C({
+  return A({
     name: Chunk388032.intl.string(Chunk388032.t.zLZPmk).toLowerCase(),
     type: Chunk981631.d4z.UNKNOWN,
     iconType: "text"
@@ -193,14 +193,14 @@ function j(e, t, n, r, i) {
     channelId: t,
     messageId: n,
     originalLink: i,
-    inContent: null == a || o ? null : [A(a)],
+    inContent: null == a || o ? null : [C(a)],
     content: [L()]
   }
 }
 
 function M(e, t, n, r) {
-  let i = A(e),
-    a = C(t),
+  let i = C(e),
+    a = A(t),
     o = P(t.isForumPost);
   if (n && r) {
     if (t.isForumPost) {
@@ -208,7 +208,7 @@ function M(e, t, n, r) {
       if (null != e) {
         var s;
         return {
-          inContent: [C({
+          inContent: [A({
             name: e.name,
             type: e.type,
             iconType: null != (s = (0, m.wl)(e)) ? s : "forum"
@@ -248,7 +248,7 @@ function k(e, t, n, r) {
   if (null == a)
     if (e.isDm) return I(v({}, i), {
       guildId: b.ME,
-      inContent: [C(e)],
+      inContent: [A(e)],
       content: [P(false)]
     });
     else return x(r);

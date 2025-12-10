@@ -102,7 +102,7 @@ function L(e) {
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: Z = false
-  } = e, B = w(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === A.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  } = e, B = w(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === C.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: W,
     hasBailedAst: K
@@ -112,7 +112,7 @@ function L(e) {
     allowHeading: V || H,
     allowLinks: true,
     previewLinkTarget: true
-  }), z = i.type === A.uaV.REPLY ? i.messageReference : true, q = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(z)), Q = (0, s.JA)(i.id), X = (0, m.ZP)(i), J = (0, l.e7)([f.Z], () => i.hasFlag(A.iLy.HAS_THREAD) && f.Z.getChannel(p.default.castMessageIdAsChannelId(i.id))), $ = (0, c.p9)({
+  }), z = i.type === C.uaV.REPLY ? i.messageReference : true, q = (0, l.e7)([d.Z], () => d.Z.getMessageByReference(z)), Q = (0, s.JA)(i.id), X = (0, m.ZP)(i), J = (0, l.e7)([f.Z], () => i.hasFlag(C.iLy.HAS_THREAD) && f.Z.getChannel(p.default.castMessageIdAsChannelId(i.id))), $ = (0, c.p9)({
     guildId: j.guild_id,
     roleId: X.iconRoleId
   }), ee = (0, b.Z)({
@@ -123,8 +123,8 @@ function L(e) {
   return (0, r.jsx)(h.Z, P({
     compact: a,
     className: o()(N, {
-      [C.ephemeral]: (0, _.Pv)(i),
-      [C.disableInteraction]: F
+      [A.ephemeral]: (0, _.Pv)(i),
+      [A.disableInteraction]: F
     }),
     disableInteraction: F,
     childrenRepliedMessage: (0, T.Z)(i, j, z, q, a),
@@ -141,8 +141,8 @@ function L(e) {
     })),
     onContextMenu: R,
     onClick: x,
-    hasThread: G && null != J && i.hasFlag(A.iLy.HAS_THREAD),
-    hasReply: i.type === A.uaV.REPLY,
+    hasThread: G && null != J && i.hasFlag(C.iLy.HAS_THREAD),
+    hasReply: i.type === C.uaV.REPLY,
     "aria-labelledby": et,
     "aria-describedby": en,
     messageRef: ee,

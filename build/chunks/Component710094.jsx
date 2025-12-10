@@ -91,8 +91,8 @@ function L(e) {
       claimableRewards: eT
     } = (0, h.wD)();
   o()(null != ec, "Step should be set");
-  let eA = i.useRef(null),
-    [eC, eN] = (0, l.Z)(false, x),
+  let eC = i.useRef(null),
+    [eA, eN] = (0, l.Z)(false, x),
     eP = null != (n = null != j ? j : F) ? n : null,
     eR = null != eP && (!ed || P.nG[eP].skus.includes(er)) ? eP : null,
     eD = (0, f.N)(F),
@@ -101,7 +101,7 @@ function L(e) {
       user_trial_offer_id: null == eD ? true : eD.id
     };
   i.useEffect(() => {
-    null != $ && null != eA.current && eA.current.scrollIntoView({
+    null != $ && null != eC.current && eC.current.scrollIntoView({
       behavior: "smooth"
     })
   }, [$]);
@@ -137,7 +137,7 @@ function L(e) {
       L(E.h8.ADD_PAYMENT_STEPS)
     };
   return ep === R.GZ.ONE_TIME ? (eQ = null == ei && null != Q || null != ee, a = (0, r.jsx)(I.Z, {
-    hasLegalTermsFlash: eC,
+    hasLegalTermsFlash: eA,
     legalTermsNodeRef: ek,
     onPaymentSourceChange: e => eo(null != e ? e.id : null),
     handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS)
@@ -152,7 +152,7 @@ function L(e) {
     handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS),
     setHasAcceptedTerms: ef,
     legalTermsNodeRef: ek,
-    hasLegalTermsFlash: eC,
+    hasLegalTermsFlash: eA,
     trialId: eR,
     trialFooterMessageOverride: M,
     reviewWarningMessage: k,
@@ -172,7 +172,7 @@ function L(e) {
     planId: en.id,
     setHasAcceptedTerms: ef,
     legalTermsNodeRef: ek,
-    hasLegalTermsFlash: eC,
+    hasLegalTermsFlash: eA,
     onInvoiceError: e => eG(e),
     planGroup: U,
     currencies: q,
@@ -183,7 +183,7 @@ function L(e) {
   }))), ey && (eQ = true), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.P, {
       giftMessage: eS
-    }), !eV && (0, r.jsx)(A.Z, {
+    }), !eV && (0, r.jsx)(C.Z, {
       isEligibleForTrial: eZ
     }), (0, r.jsxs)(N.C3, {
       children: [eb && eY && !eO && (0, r.jsx)("div", {
@@ -194,7 +194,7 @@ function L(e) {
         children: [(0, r.jsx)(O.Z, {}), (0, r.jsx)(y.Z, {}), (0, r.jsx)(v.Z, {})]
       }), a]
     }), (0, r.jsx)(N.O3, {
-      children: (0, r.jsx)(C.Z, {
+      children: (0, r.jsx)(A.Z, {
         premiumSubscription: null != W ? W : null,
         setPurchaseState: es,
         onBack: eq,

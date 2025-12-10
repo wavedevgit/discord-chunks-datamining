@@ -4,7 +4,7 @@
 require.d(exports, {
   PH: () => P,
   ZP: () => F,
-  sQ: () => C
+  sQ: () => A
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -71,21 +71,21 @@ function T(e, t) {
   return f.ZP.getMember(e, t.id)
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   var r;
   let i = null != (r = null == t ? true : t.nick) ? r : h.ZP.getName(n);
   return {
     member: t,
-    comparator: C(e, i)
+    comparator: A(e, i)
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   return "".concat(e.selfStream ? "\0" : "\x01").concat(t.toLowerCase(), "\0").concat(e.userId)
 }
 
 function N(e, t, n) {
-  return A(n, T(e, t), t)
+  return C(n, T(e, t), t)
 }
 
 function P(e, t, n, r) {
@@ -124,7 +124,7 @@ class R {
           o = null != (i = null == a ? true : a.nick) ? i : h.ZP.getName(r);
         return this._voiceStates.set(e, O(b({}, n), {
           member: a,
-          comparator: C(t, o),
+          comparator: A(t, o),
           nick: o,
           voiceState: t
         })), true
@@ -142,7 +142,7 @@ class R {
       if ((null == a ? true : a.nick) !== (null == (r = t.member) ? true : r.nick) || (null == a ? true : a.avatar) !== (null == (i = t.member) ? true : i.avatar)) {
         let {
           comparator: r
-        } = A(t.voiceState, a, n);
+        } = C(t.voiceState, a, n);
         return this._voiceStates.set(e, O(b({}, t), {
           member: a,
           comparator: r,

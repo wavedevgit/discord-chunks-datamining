@@ -95,17 +95,17 @@ function D(e) {
     let e = u || c.hasUniqueUsername() ? null : "#".concat(c.discriminator);
     return (0, r.jsx)(a.u, {
       __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-        className: C.userTooltip,
+        className: A.userTooltip,
         children: [(0, r.jsx)(l.Z, {
           user: c,
           animate: true,
           size: o.EFr.SIZE_16,
-          className: C.avatar
+          className: A.avatar
         }), T.ZP.getUserTag(c, {
           mode: "username",
           identifiable: u ? "never" : "always"
         }), (0, r.jsx)("span", {
-          className: C.discriminator,
+          className: A.discriminator,
           children: e
         })]
       }),
@@ -130,7 +130,7 @@ function w(e) {
     guildId: n
   } = e, a = (0, i.e7)([b.Z], () => null != n ? b.Z.getRole(n, t) : true), s = (0, i.e7)([c.Z], () => c.Z.roleStyle), l = (0, h._f)(n, a, null == a ? true : a.colorStrings);
   if (null == a) return (0, r.jsxs)("span", {
-    children: ["@", A.intl.string(A.t["YV4F/n"])]
+    children: ["@", C.intl.string(C.t["YV4F/n"])]
   });
   let u = null != a.color && 0 !== a.color,
     d = "dot" === s,
@@ -150,10 +150,10 @@ function w(e) {
 function x(e) {
   let {
     id: t
-  } = e, n = (0, i.e7)([g.Z], () => g.Z.getChannel(t)), a = A.intl.string(A.t.zLZPmk).toLowerCase(), o = "text", s = true;
+  } = e, n = (0, i.e7)([g.Z], () => g.Z.getChannel(t)), a = C.intl.string(C.t.zLZPmk).toLowerCase(), o = "text", s = true;
   if (null != n) {
     var l;
-    a = (0, u.YO)(n) ? n.name : A.intl.string(A.t["/YzI63"]), o = (0, u.YO)(n) ? null != (l = (0, S.wl)(n)) ? l : "text" : "locked", s = (0, d.B)(n.type)
+    a = (0, u.YO)(n) ? n.name : C.intl.string(C.t["/YzI63"]), o = (0, u.YO)(n) ? null != (l = (0, S.wl)(n)) ? l : "text" : "locked", s = (0, d.B)(n.type)
   }
   return s ? (0, r.jsx)(_.Z, {
     iconType: o,
@@ -191,7 +191,7 @@ function M(e) {
   } = e;
   return (0, r.jsx)(p.Z, {
     node: t,
-    className: "R" === t.format ? C.tabular : null
+    className: "R" === t.format ? A.tabular : null
   })
 }
 
@@ -201,7 +201,7 @@ function k(e) {
     id: n
   } = e, a = (0, i.e7)([E.Z], () => E.Z.getDetectableGame(n)), o = null != a ? (0, r.jsx)("img", {
     alt: "",
-    className: C.icon,
+    className: A.icon,
     src: v.ZP.getApplicationIconURL({
       id: a.id,
       icon: a.icon,
@@ -209,6 +209,6 @@ function k(e) {
     })
   }) : null;
   return (0, r.jsxs)(_.Z, {
-    children: [o, null != (t = null == a ? true : a.name) ? t : A.intl.string(A.t["11pdXZ"])]
+    children: [o, null != (t = null == a ? true : a.name) ? t : C.intl.string(C.t["11pdXZ"])]
   })
 }

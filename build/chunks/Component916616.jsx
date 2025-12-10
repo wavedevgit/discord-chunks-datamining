@@ -2,7 +2,7 @@
 /** chunk id: 916616, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => A
+  E: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -78,7 +78,7 @@ function T(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = Chunk473749.forwardRef((e, t) => {
+let C = Chunk473749.forwardRef((e, t) => {
   let n;
   var {
     className: a,
@@ -91,7 +91,7 @@ let A = Chunk473749.forwardRef((e, t) => {
     width: y,
     height: v,
     maxWidth: T = y,
-    maxHeight: A = v,
+    maxHeight: C = v,
     minWidth: R = 0,
     minHeight: D = 0,
     mediaLayoutType: w,
@@ -128,7 +128,7 @@ let A = Chunk473749.forwardRef((e, t) => {
       width: y,
       height: v,
       maxWidth: T,
-      maxHeight: A,
+      maxHeight: C,
       minWidth: R,
       minHeight: D
     }),
@@ -139,7 +139,7 @@ let A = Chunk473749.forwardRef((e, t) => {
     alt: b,
     className: s,
     mediaLayoutType: w
-  }) : c !== _.zo9.LOADING && (n = (0, r.jsx)(C, {
+  }) : c !== _.zo9.LOADING && (n = (0, r.jsx)(A, {
     size: K,
     mediaLayoutType: w,
     alt: b
@@ -192,7 +192,7 @@ let A = Chunk473749.forwardRef((e, t) => {
   })
 });
 
-function C(e) {
+function A(e) {
   let {
     size: t,
     mediaLayoutType: n,
@@ -264,4 +264,4 @@ function D(e) {
     aspectRatio: "".concat(t, " / ").concat(n)
   }
 }
-A.displayName = "Image"
+C.displayName = "Image"

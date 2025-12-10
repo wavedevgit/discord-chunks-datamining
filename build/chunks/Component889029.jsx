@@ -82,7 +82,7 @@ function b() {
     o.Z.update({
       [e]: t
     })
-  }, A = () => {
+  }, C = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.KEYBINDS_PANEL, {
       section: Chunk981631.oAB.KEYBINDS
     })
@@ -101,7 +101,7 @@ function b() {
           children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: Chunk388032.intl.string(Chunk388032.t.p9ZAJZ),
             description: Chunk388032.intl.format(Chunk388032.t.MLVL2M, {
-              onClick: A
+              onClick: C
             }),
             checked: module,
             onChange: e => T("enabled", e)

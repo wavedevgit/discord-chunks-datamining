@@ -78,7 +78,7 @@ function ea(e) {
     setSearchQuery: o,
     setScroller: s,
     isScrollCloseToBottom: l
-  } = e, c = (0, _.e7)([g.Z], () => g.Z.getIsEnabled(), []), u = n === x._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), p = n === x._b.TEXT, [h, b] = e_(true), [y, O] = e_(u), [v, S] = e_(d), [I, T] = e_(f), A = h && y && v && I, C = (d || u) && !A, N = f && c;
+  } = e, c = (0, _.e7)([g.Z], () => g.Z.getIsEnabled(), []), u = n === x._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, k.Yn)(n), f = !(0, k.Yn)(n), p = n === x._b.TEXT, [h, b] = e_(true), [y, O] = e_(u), [v, S] = e_(d), [I, T] = e_(f), C = h && y && v && I, A = (d || u) && !C, N = f && c;
   i.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? true : e.guild_id : true;
@@ -120,10 +120,10 @@ function ea(e) {
         }), f && (0, r.jsx)(eu, {
           context: t,
           onEmptyState: T
-        }), A && (0, r.jsx)(F.A, {
+        }), C && (0, r.jsx)(F.A, {
           type: x.LG.HOME_EMPTY,
           textContent: n === x._b.TEXT ? q.intl.string(q.t.iKZctW) : q.intl.string(q.t.RL7Ncg)
-        }), C && (0, r.jsx)(H.Z, {})]
+        }), A && (0, r.jsx)(H.Z, {})]
       })
     })]
   })
@@ -568,7 +568,7 @@ function eh(e) {
     entrypoint: n
   } = e, r = em();
   i.useEffect(() => {
-    (0, C.XK)({
+    (0, A.XK)({
       surface: ei,
       activeState: r
     })

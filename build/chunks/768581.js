@@ -12,7 +12,7 @@ require.d(exports, {
   aN: () => L,
   ay: () => X,
   ff: () => E,
-  gT: () => C,
+  gT: () => A,
   ov: () => R,
   pK: () => b,
   pU: () => en,
@@ -79,7 +79,7 @@ let O = r.canUseWebp(),
   I = 1096,
   T = (0, Chunk358085.isAndroid)();
 
-function A(e) {
+function C(e) {
   let t, {
     endpoint: n,
     path: r,
@@ -101,7 +101,7 @@ function A(e) {
   return null != s && (h.size = (0, l.oO)(s * (0, l.x_)())), null != d && (h.keep_aspect_ratio = d), c && (h.quality = "lossless"), "webp" === _ && u && Q(a) && (h.animated = true), t + "?".concat(o.stringify(h))
 }
 
-function C(e) {
+function A(e) {
   let {
     id: t,
     animated: r,
@@ -144,7 +144,7 @@ function P(e) {
     if (e) return e;
     if (null == n && "0000" === i) return b[0]
   }
-  return A({
+  return C({
     endpoint: f.ANM.AVATAR,
     path: "avatars",
     id: t,
@@ -329,7 +329,7 @@ function V(e) {
     canAnimate: i = false,
     lossless: a = false
   } = e;
-  return A({
+  return C({
     endpoint: f.ANM.GUILD_ICON,
     path: "icons",
     id: t,
@@ -348,7 +348,7 @@ function H(e) {
     size: r = f.IXf,
     canAnimate: i = false
   } = e;
-  return A({
+  return C({
     endpoint: f.ANM.GUILD_TEMPLATE_ICON,
     path: "guild-templates",
     id: t,
@@ -384,7 +384,7 @@ function Y(e) {
     let e = P(i, false, r);
     if (null != e) return e
   }
-  if (null != n) return en(n) ? n : A({
+  if (null != n) return en(n) ? n : C({
     endpoint: f.ANM.APPLICATION_ICON,
     path: "app-icons",
     id: t,
@@ -409,7 +409,7 @@ function W(e) {
     keepAspectRatio: i = false,
     format: a
   } = e;
-  return A({
+  return C({
     endpoint: f.ANM.APPLICATION_ICON,
     path: "app-icons",
     id: t,
@@ -430,7 +430,7 @@ function K(e) {
     size: i,
     canAnimate: a = true
   } = e;
-  return A({
+  return C({
     endpoint: (e, i, a) => f.ANM.VIDEO_FILTER_ASSET_STORAGE(t, n, r, a),
     path: "video-filter-assets/".concat(t),
     id: n,
@@ -457,7 +457,7 @@ function q(e) {
     id: o,
     icon: a,
     size: s
-  })) ? t : r.DEFAULT_CHANNEL_ICON : null != (n = A({
+  })) ? t : r.DEFAULT_CHANNEL_ICON : null != (n = C({
     endpoint: f.ANM.CHANNEL_ICON,
     path: "channel-icons",
     id: i,
@@ -520,7 +520,7 @@ let et = {
       channelId: t,
       icon: n
     } = e;
-    return null == n ? null : A({
+    return null == n ? null : C({
       endpoint: f.ANM.GUILD_RESOURCE_CHANNELS_ICON,
       path: "resource-channels",
       id: t,
@@ -535,7 +535,7 @@ let et = {
       channelId: t,
       icon: n
     } = e;
-    return null == n ? null : A({
+    return null == n ? null : C({
       endpoint: f.ANM.GUILD_NEW_MEMBER_ACTIONS_ICON,
       path: "new-member-actions",
       id: t,
@@ -547,7 +547,7 @@ let et = {
   },
   getGuildTemplateIconURL: H,
   getChannelIconURL: q,
-  getEmojiURL: C,
+  getEmojiURL: A,
   getApplicationIconURL: Y,
   getGameAssetURL: W,
   getVideoFilterAssetURL: K,

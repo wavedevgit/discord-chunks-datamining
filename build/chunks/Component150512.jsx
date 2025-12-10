@@ -24,7 +24,7 @@ function p(e) {
     guildId: t,
     welcomeMessage: n,
     className: r
-  } = e, p = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, s.e7)([h.default], () => h.default.getUser(null == n ? true : n.authorIds[0])), S = i.useMemo(() => null != p && null != E && (0, u.Y)(p, E) ? E : null, [p, E]), x = (0, s.e7)([h.default], () => h.default.getCurrentUser()), T = i.useMemo(() => {
+  } = e, p = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, s.e7)([f.default], () => f.default.getUser(null == n ? true : n.authorIds[0])), S = i.useMemo(() => null != p && null != E && (0, u.Y)(p, E) ? E : null, [p, E]), x = (0, s.e7)([f.default], () => f.default.getCurrentUser()), T = i.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.authorIds) ? e : []
   }, [n]);
@@ -35,7 +35,7 @@ function p(e) {
       guildId: t
     })
   }, [S, t]);
-  let _ = f.ZP.useName(t, null, S),
+  let _ = h.ZP.useName(t, null, S),
     j = (0, N._T)(x);
   if (null == S || null == x || null == n) return null;
   let v = null != p && p.ownerId === S.id;

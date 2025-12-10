@@ -78,9 +78,9 @@ function x(e) {
     stepNumber: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: A.step,
+    className: C.step,
     children: [(0, r.jsx)("div", {
-      className: A.stepNumber,
+      className: C.stepNumber,
       children: (0, r.jsx)(c.Heading, {
         variant: "heading-md/semibold",
         color: "text-brand",
@@ -193,14 +193,14 @@ function M(e) {
     }, o.id)
   }, [a, t]), _ = i.useCallback(() => (0, r.jsx)(d.Z, {
     children: (0, r.jsx)(c.Text, {
-      className: C.marginBottom8,
+      className: A.marginBottom8,
       variant: "eyebrow",
       color: "text-default",
       children: n
     })
   }, "title"), [n]);
   return (0, r.jsx)("div", {
-    className: A.section,
+    className: C.section,
     children: (0, r.jsx)(l.bG, {
       navigator: f,
       children: (0, r.jsx)(l.SJ, {

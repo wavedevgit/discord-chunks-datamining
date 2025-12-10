@@ -70,7 +70,7 @@ function R(e) {
       effectId: t,
       colors: n
     } = (0, _.aY)();
-    U(e), K(t), t === i.m.GRADIENT ? ee(n) : J(n[0]), x.default.track(y.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+    U(e), K(t), t === i.m.GRADIENT ? ee(n) : J(n[0]), x.default.track(T.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
   }, [ee, J]), ei = o.useCallback(e => {
     K(e)
   }, [K]), ea = o.useCallback(e => {
@@ -102,7 +102,7 @@ function R(e) {
               className: D.sectionHeader,
               children: (0, l.jsx)(d.Heading, {
                 variant: "heading-lg/semibold",
-                children: E.intl.string(T.default.ZPMAlX)
+                children: E.intl.string(y.default.ZPMAlX)
               })
             }), (0, l.jsx)(N.Z, {
               selectedFontId: F,
@@ -120,7 +120,7 @@ function R(e) {
               className: D.selectionSubSection,
               defaultColor: X.defaultColors[0]
             })]
-          }), (0, l.jsx)(O.Z, {
+          }), (0, l.jsx)(k.Z, {
             user: B,
             guild: M,
             displayName: Z,
@@ -129,7 +129,7 @@ function R(e) {
             selectedColors: q === i.m.SOLID && (0, c.E)(en, X.defaultColors) ? [] : en,
             onClose: w
           })]
-        }), (0, l.jsx)(k.B, {
+        }), (0, l.jsx)(O.B, {
           onApply: eo,
           onSurpriseMe: er,
           onClose: w,

@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,7 +88,7 @@ let R = e => {
     analyticsSourceLocation: n,
     guild: a,
     buttonText: I,
-    targetBoostedGuildTier: A,
+    targetBoostedGuildTier: C,
     onClose: P = () => {},
     closeLayer: R = () => {},
     pauseAnimation: D = false,
@@ -107,7 +107,7 @@ let R = e => {
     H || (0, f.X8)()
   }, [H]);
   let Y = (0, E.vx)(h.Z.boostSlots),
-    W = null != A ? Math.max((0, E.KK)(a, A), 1) : 1,
+    W = null != C ? Math.max((0, E.KK)(a, C), 1) : 1,
     K = (0, E.aq)({
       fractionalState: V
     }),
@@ -147,7 +147,7 @@ let R = e => {
   }) : (0, r.jsx)(l.Z, {
     text: K,
     "aria-label": false,
-    children: e => (0, r.jsx)(d.gtL, C(T(C(T({
+    children: e => (0, r.jsx)(d.gtL, A(T(A(T({
       "data-migration-pending": true
     }, e), {
       disabled: true,
@@ -162,7 +162,7 @@ let R = e => {
     loading: B,
     text: null != I ? I : v.intl.string(v.t.gKmQ1G),
     onClick: z
-  }) : (0, r.jsx)(d.gtL, C(T({
+  }) : (0, r.jsx)(d.gtL, A(T({
     "data-migration-pending": true,
     size: u.zx.Sizes.SMALL
   }, U), {

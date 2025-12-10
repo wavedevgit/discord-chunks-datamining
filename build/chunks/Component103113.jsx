@@ -88,7 +88,7 @@ function R(e) {
     Y = !M && (0, l.Z)(n.id),
     W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
-      label: A.intl.string(A.t["+Xp3hq"]),
+      label: C.intl.string(C.t["+Xp3hq"]),
       action: () => {
         H(), (0, _.pQ)(P({
           action: "PRESS_VIEW_PROFILE",
@@ -113,7 +113,7 @@ function R(e) {
         children: [(0, r.jsx)(a.nn4, {
           children: (0, r.jsx)(a.H, {
             id: z,
-            children: A.intl.format(A.t.KRe1Fk, {
+            children: C.intl.format(C.t.KRe1Fk, {
               name: q
             })
           })
@@ -127,7 +127,7 @@ function R(e) {
               viewProfileItem: W()
             })
           }), (0, r.jsxs)("div", {
-            className: C.header,
+            className: A.header,
             children: [(0, r.jsx)(b.Z, {
               user: n,
               displayProfile: G,
@@ -143,7 +143,7 @@ function R(e) {
             })]
           }), (0, r.jsxs)(a.Ttm, {
             fade: true,
-            className: C.body,
+            className: A.body,
             children: [(0, r.jsx)(v.Z, {
               user: n,
               guildId: N,
@@ -161,7 +161,7 @@ function R(e) {
               textColor: "header-primary"
             })]
           }), (0, r.jsx)("div", {
-            className: C.footer
+            className: A.footer
           })]
         }), (null == G ? true : G.profileEffect) != null && (0, r.jsx)(d.Z, {
           skuId: null == G || null == (t = G.profileEffect) ? true : t.skuId,

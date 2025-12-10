@@ -4,10 +4,10 @@
 require.d(exports, {
   $z: () => P,
   D0: () => E,
-  JC: () => A,
+  JC: () => C,
   Om: () => T,
   Sf: () => m,
-  U4: () => C,
+  U4: () => A,
   Vg: () => g,
   Xc: () => I,
   ZP: () => f,
@@ -130,9 +130,9 @@ class f extends Chunk81825.Z {
       case s.HeQ.KAKAOPAY:
         return new T(c({}, r));
       case s.HeQ.GOPAY_WALLET:
-        return new A(c({}, r));
-      case s.HeQ.BANCONTACT:
         return new C(c({}, r));
+      case s.HeQ.BANCONTACT:
+        return new A(c({}, r));
       case s.HeQ.IDEAL:
         return new b(d(c({}, r), {
           bank: e.bank
@@ -172,9 +172,9 @@ class f extends Chunk81825.Z {
       case s.HeQ.KAKAOPAY:
         return new T(e);
       case s.HeQ.GOPAY_WALLET:
-        return new A(e);
-      case s.HeQ.BANCONTACT:
         return new C(e);
+      case s.HeQ.BANCONTACT:
+        return new A(e);
       case s.HeQ.EPS:
         return new E(e);
       case s.HeQ.IDEAL:
@@ -278,12 +278,12 @@ class T extends f {
     if (super(e), e.type !== s.HeQ.KAKAOPAY) throw Error("Cannot instantiate KaKaoPaySourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.KAKAOPAY))
   }
 }
-class A extends f {
+class C extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.GOPAY_WALLET) throw Error("Cannot instantiate GoPayWalletSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.GOPAY_WALLET))
   }
 }
-class C extends f {
+class A extends f {
   constructor(e) {
     if (super(e), e.type !== s.HeQ.BANCONTACT) throw Error("Cannot instantiate BancontactSourceRecord with type: ".concat(e.type, ", must be ").concat(s.HeQ.BANCONTACT))
   }

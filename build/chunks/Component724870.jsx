@@ -76,8 +76,8 @@ function v(e) {
     reviewWarningMessage: S,
     applicationId: I,
     showBenefitsFirst: T,
-    onComplete: A,
-    forcesTransitionToGuild: C
+    onComplete: C,
+    forcesTransitionToGuild: A
   } = e, N = (0, o.Z)(), P = false;
   (0, s.ZDy)(async () => {
     let {
@@ -109,9 +109,9 @@ function v(e) {
             applicationId: I,
             guildId: null != v ? v : true,
             onComplete: () => {
-              P = true, null == A || A()
+              P = true, null == C || C()
             },
-            forcesTransitionToGuild: C
+            forcesTransitionToGuild: A
           }))
         })
       })

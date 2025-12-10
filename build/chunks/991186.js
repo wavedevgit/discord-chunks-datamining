@@ -2,7 +2,7 @@
 /** chunk id: 991186, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FM: () => A,
+  FM: () => C,
   Wx: () => S,
   ZP: () => P,
   Zh: () => I,
@@ -86,13 +86,13 @@ let S = () => {
     })
   };
 
-function A(e) {
+function C(e) {
   v({
     overrideIsUsingDefaultOverlayKeybind: e
   })
 }
 
-function C() {
+function A() {
   let e = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK, true);
   if (null == module) returntrue;
   let t = (0, Chunk556296.vN)();
@@ -143,7 +143,7 @@ class N extends Chunk147913.Z {
     }), _(this, "isNewOverlayUser", () => (null == O().isNewOverlayUser && v({
       isNewOverlayUser: !(0, c.zu)(a.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX) && !(0, c.zu)(a.z.OVERLAY_OOP_WELCOME_NUX)
     }), null != O().overrideIsNewOverlayUser) ? O().overrideIsNewOverlayUser : O().isNewOverlayUser), _(this, "isUsingDefaultOverlayKeybind", () => (null == O().isUsingDefaultOverlayKeybind && v({
-      isUsingDefaultOverlayKeybind: C()
+      isUsingDefaultOverlayKeybind: A()
     }), null != O().overrideIsUsingDefaultOverlayKeybind) ? O().overrideIsUsingDefaultOverlayKeybind : O().isUsingDefaultOverlayKeybind), _(this, "isEligibleForExperiment", () => {
       let e = this.isNewOverlayUser(),
         t = this.isUsingDefaultOverlayKeybind();

@@ -48,7 +48,7 @@ function S(e) {
 
 function I(e) {
   var t, v, I;
-  let T, A, C, {
+  let T, C, A, {
       onTransitionToInviteChannel: N,
       onAcceptInstantInvite: P,
       guild: R,
@@ -101,7 +101,7 @@ function I(e) {
     isStage: V,
     isStream: false
   });
-  return A = (0, r.jsxs)("span", {
+  return C = (0, r.jsxs)("span", {
     className: O.infoTitle,
     children: [(0, r.jsx)(f.Z, {
       guildId: R.id,
@@ -121,7 +121,7 @@ function I(e) {
         disableBoostClick: true
       })
     })]
-  }), H && (C = (0, r.jsx)(s.u, {
+  }), H && (A = (0, r.jsx)(s.u, {
     asContainer: true,
     text: y.intl.string(y.t["/FeTK6"]),
     children: (0, r.jsx)(l.d3s, {
@@ -129,7 +129,7 @@ function I(e) {
       color: "currentColor",
       className: O.infoIcon
     })
-  })), F ? (A = (0, r.jsx)(_.Z.Channel, {
+  })), F ? (C = (0, r.jsx)(_.Z.Channel, {
     channel: G
   }), T = (0, r.jsxs)("span", {
     className: O.infoTitle,
@@ -153,14 +153,14 @@ function I(e) {
       guild: R
     }), (0, r.jsx)(_.Z.Header, {
       text: ee,
-      extra: C
+      extra: A
     }), (0, r.jsxs)(_.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: O.headerLine,
         children: [(0, r.jsx)(_.Z.Icon, {
           guild: R
         }), (0, r.jsx)(_.Z.Info, {
-          title: A,
+          title: C,
           onClick: J,
           children: T
         })]

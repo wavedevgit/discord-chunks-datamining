@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,11 +28,11 @@ let v = e => e.preventDefault(),
   S = .7,
   I = 33,
   T = 1.55,
-  A = {
+  C = {
     tension: 1100,
     friction: 40
   },
-  C = {
+  A = {
     tension: 1600,
     friction: 60
   };
@@ -99,11 +99,11 @@ let R = e => {
       positionRef: p,
       withLoadingIndicator: m,
       onError: h
-    } = e, g = i.useRef(null), E = i.useRef(null), [v, S] = i.useState(true), [I, T] = i.useState(false), A = i.useRef(false);
-    A.current = t && u;
-    let C = null == s ? (0, b.Q6)(o) : s;
-    return (l()(null != C, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
-      if (null == g.current || null == C) return;
+    } = e, g = i.useRef(null), E = i.useRef(null), [v, S] = i.useState(true), [I, T] = i.useState(false), C = i.useRef(false);
+    C.current = t && u;
+    let A = null == s ? (0, b.Q6)(o) : s;
+    return (l()(null != A, "Unable to determine sticker asset URL. Sticker ID: ".concat(o.id)), i.useEffect(() => {
+      if (null == g.current || null == A) return;
       let e = Math.min(2, (0, _.x_)());
       g.current.width = a * e, g.current.height = a * e;
       let t = false;
@@ -114,7 +114,7 @@ let R = e => {
         null != g.current && (E.current = new e({
           canvas: g.current,
           animationId: o.id,
-          assetUrl: C,
+          assetUrl: A,
           assetData: c,
           onInitialDraw: () => {
             t || S(false)
@@ -122,16 +122,16 @@ let R = e => {
           onError: () => {
             t || (S(false), T(true), null == h || h())
           }
-        }), A.current && E.current.setState(true))
+        }), C.current && E.current.setState(true))
       })(), () => {
         var e;
         null == (e = E.current) || e.drop(), E.current = null, t = true
       }
-    }, [C, a, o.id, c, h]), i.useEffect(() => {
+    }, [A, a, o.id, c, h]), i.useEffect(() => {
       var e;
       let n;
       t || (n = 0), null == (e = E.current) || e.setState(t && u, n)
-    }, [o, t, u]), null == C) ? null : (0, r.jsx)("div", {
+    }, [o, t, u]), null == A) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
       "aria-label": I ? y.intl.string(y.t.yEvsK9) : P(o),
@@ -160,10 +160,10 @@ let R = e => {
       positionRef: u,
       withLoadingIndicator: f,
       fileUri: p
-    } = e, [_, m] = i.useState(false), [h, g] = i.useState(true), [E, y] = i.useState(false), I = i.useRef(null), T = i.useRef(null), A = null != p ? p : (0, b.Q6)(n, {
+    } = e, [_, m] = i.useState(false), [h, g] = i.useState(true), [E, y] = i.useState(false), I = i.useRef(null), T = i.useRef(null), C = null != p ? p : (0, b.Q6)(n, {
       isPreview: !t || !_ || !a,
       size: s
-    }), C = i.useCallback(() => {
+    }), A = i.useCallback(() => {
       g(false)
     }, []), D = i.useCallback(() => {
       y(true)
@@ -178,7 +178,7 @@ let R = e => {
     }, []), i.useLayoutEffect(() => {
       var e;
       (null == (e = T.current) ? true : e.complete) === true && g(false)
-    }, []), null == A) ? null : (0, r.jsx)(d.$, {
+    }, []), null == C) ? null : (0, r.jsx)(d.$, {
       innerRef: u,
       ref: I,
       onChange: m,
@@ -195,10 +195,10 @@ let R = e => {
           children: N((0, r.jsx)("img", {
             className: O.pngImage,
             alt: P(n),
-            src: A,
+            src: C,
             draggable: false,
             onError: D,
-            onLoad: C,
+            onLoad: A,
             onContextMenu: v,
             ref: T
           }), n.id)
@@ -226,12 +226,12 @@ let R = e => {
         opacity: 1
       },
       leave: g,
-      config: A
+      config: C
     }), b = i.useRef(null), y = (0, f.q_F)({
       ref: b,
       transform: o || _ ? "translateY(0)" : "translateY(-25px)",
       opacity: +!!o,
-      config: C
+      config: A
     }, "animate-always");
     return (0, c.useChain)(o ? [h, b] : [b, h], o ? [0, .0625] : [0, 0]), E((e, i) => i && (0, r.jsx)(m.W5, {
       className: O.positionedLayer,

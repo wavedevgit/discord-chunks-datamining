@@ -169,7 +169,7 @@ function N(e) {
     "aria-labelledby": a,
     children: [(0, r.jsx)(c.PEf, {
       size: "xxs",
-      color: c.TVs.colors.ICON_TERTIARY,
+      color: c.TVs.colors.ICON_MUTED,
       className: w.commentIcon
     }), (0, r.jsx)(D, {
       user: n,
@@ -242,7 +242,7 @@ function A(e) {
     className: w.editableCommentContainer,
     children: [(0, r.jsx)(c.vdY, {
       size: "xxs",
-      color: c.TVs.colors.ICON_TERTIARY,
+      color: c.TVs.colors.ICON_MUTED,
       className: w.commentIcon
     }), (0, r.jsx)(D, {
       user: n,

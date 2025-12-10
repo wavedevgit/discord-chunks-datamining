@@ -30,7 +30,7 @@ function g(e) {
     variant: C
   } = u.EO.useConfig({
     location: v.dr.VIDEO_MODAL
-  }), S = C === u.m_.OVERLAY_SHARE_ON_VIDEO, [_, y] = (0, p.G6)(E.intl.string(E.t.RDE0Sc), E.intl.string(E.t["+5kSoW"]), 1700), [x, j] = o.useState(false), P = o.useRef(null), D = (0, m.VB)(n.config), R = o.useCallback(() => {
+  }), S = C === u.m_.OVERLAY_SHARE_ON_VIDEO, [_, y] = (0, p.G6)(E.intl.string(E.t.RDE0Sc), E.intl.string(E.t["+5kSoW"]), 1700), [x, j] = o.useState(false), P = o.useRef(null), D = (0, m.VB)(n.config), T = o.useCallback(() => {
     D && ((0, d.f2)(n.id, {
       content: c.jn.VIDEO_MODAL,
       ctaContent: a.jZ.COPY_QUEST_URL,
@@ -49,7 +49,7 @@ function g(e) {
     children: x && !b ? (0, r.jsx)(i.hU, {
       variant: "active",
       icon: i.owK,
-      onClick: R,
+      onClick: T,
       "aria-label": E.intl.string(E.t.RDE0Sc)
     }) : (0, r.jsx)(l.u, {
       text: b ? E.intl.string(E.t.WmfZHZ) : true,
@@ -57,12 +57,12 @@ function g(e) {
         variant: S ? "overlay-secondary" : "secondary",
         icon: b ? i.xPt : i.TIy,
         "aria-label": E.intl.string(E.t.RDE0Sc),
-        onClick: R
+        onClick: T
       })
     })
   }) : (0, r.jsx)(i.Button, {
     variant: "secondary",
     text: _,
-    onClick: R
+    onClick: T
   }) : null
 }

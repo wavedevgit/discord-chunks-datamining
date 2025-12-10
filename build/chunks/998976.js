@@ -80,9 +80,9 @@ function f(e) {
     isPositioned: false
   }), [y, O] = i.useState(o);
   l(y, o) || O(o);
-  let [v, S] = i.useState(null), [I, T] = i.useState(null), A = i.useCallback(e => {
+  let [v, S] = i.useState(null), [I, T] = i.useState(null), C = i.useCallback(e => {
     e !== R.current && (R.current = e, S(e))
-  }, []), C = i.useCallback(e => {
+  }, []), A = i.useCallback(e => {
     e !== D.current && (D.current = e, T(e))
   }, []), N = p || v, P = _ || I, R = i.useRef(null), D = i.useRef(null), w = i.useRef(E), x = null != h, L = d(h), j = d(f), M = d(g), k = i.useCallback(() => {
     if (!R.current || !D.current) return;
@@ -119,9 +119,9 @@ function f(e) {
   let G = i.useMemo(() => ({
       reference: R,
       floating: D,
-      setReference: A,
-      setFloating: C
-    }), [A, C]),
+      setReference: C,
+      setFloating: A
+    }), [C, A]),
     Z = i.useMemo(() => ({
       reference: N,
       floating: P

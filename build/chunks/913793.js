@@ -49,11 +49,11 @@ let p = (0, Chunk473749.createContext)(null),
       }, y, O),
       {
         isFocusVisible: T,
-        focusProps: A
+        focusProps: C
       } = (0, o.F)({
         within: true
       }),
-      C = (0, i.aX)({
+      A = (0, i.aX)({
         ...e,
         id: true,
         defaultClassName: "react-aria-Disclosure",
@@ -82,12 +82,12 @@ let p = (0, Chunk473749.createContext)(null),
         [m, y]
       ]
     }, f.createElement("div", {
-      ...(0, u.d)(N, C, A),
+      ...(0, u.d)(N, A, C),
       ref: t,
       "data-expanded": y.isExpanded || true,
       "data-disabled": v || true,
       "data-focus-visible-within": T || true
-    }, C.children))
+    }, A.children))
   }),
   E = (0, Chunk473749.forwardRef)(function(e, t) {
     let {

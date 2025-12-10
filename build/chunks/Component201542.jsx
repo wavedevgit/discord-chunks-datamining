@@ -46,7 +46,7 @@ function T(e) {
   })
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   i.useEffect(() => {
     let r;
 
@@ -60,7 +60,7 @@ function A(e, t, n) {
   }, [e, t, n])
 }
 
-function C(e, t, n) {
+function A(e, t, n) {
   i.useEffect(() => {
     if (t) return m.S.dispatch(y.CkL.VOICE_MESSAGE_PLAYBACK_STARTED, {
       src: e
@@ -192,7 +192,7 @@ let N = Chunk473749.memo(function(e) {
           i = null != r ? (e - r) / 1e3 : 0;
         null == n || n(t, i), ea(t), em.current = null
       }
-  }, [Y, n, B, ea]), A(L, Y, Z), C(n, Y, W);
+  }, [Y, n, B, ea]), C(L, Y, Z), A(n, Y, W);
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
     ey = O.intl.formatToPlainString(O.t.LgCPMt, {

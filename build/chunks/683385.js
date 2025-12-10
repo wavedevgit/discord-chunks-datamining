@@ -20,17 +20,17 @@ module.exports = function(e, t, n) {
   var h, g, E, b, y, O, v, S = n && n.that,
     I = !!(n && n.AS_ENTRIES),
     T = !!(n && n.IS_RECORD),
-    A = !!(n && n.IS_ITERATOR),
-    C = !!(n && n.INTERRUPTED),
+    C = !!(n && n.IS_ITERATOR),
+    A = !!(n && n.INTERRUPTED),
     N = r(t, S),
     P = function(e) {
       return h && f(h, "normal", e), new _(true, e)
     },
     R = function(e) {
-      return I ? (a(e), C ? N(e[0], e[1], P) : N(e[0], e[1])) : C ? N(e, P) : N(e)
+      return I ? (a(e), A ? N(e[0], e[1], P) : N(e[0], e[1])) : A ? N(e, P) : N(e)
     };
   if (T) h = e.iterator;
-  else if (A) h = e;
+  else if (C) h = e;
   else {
     if (!(g = d(e))) throw new p(o(e) + " is not iterable");
     if (s(g)) {

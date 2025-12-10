@@ -58,7 +58,7 @@ function L(e) {
           className: U.permissionItemSubheader,
           children: [(0, r.jsx)(E.Text, {
             variant: "text-xs/normal",
-            color: "header-muted",
+            color: "text-muted",
             children: f
           }), b && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(d.Z, {
@@ -92,7 +92,7 @@ function L(e) {
               className: U.elevatedPermissionContainer,
               children: (0, r.jsx)(E.Text, {
                 variant: "text-xs/normal",
-                color: "header-muted",
+                color: "text-muted",
                 children: C.intl.string(C.t.IfqUEM)
               })
             })]

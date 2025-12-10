@@ -4,8 +4,8 @@
 require.d(exports, {
   B6: () => M,
   UN: () => P,
-  cY: () => A,
-  gz: () => C,
+  cY: () => C,
+  gz: () => A,
   nV: () => T,
   s6: () => N,
   y6: () => j
@@ -98,7 +98,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   let {
     value: t,
     onChange: n,
@@ -122,7 +122,7 @@ function A(e) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = new Set(t);
   return n.has(e) ? n.delete(e) : n.add(e), {
     newValues: n,
@@ -172,8 +172,8 @@ function w(e) {
     variant: O = "filled",
     onClose: I,
     onOpen: T,
-    renderOptionLabel: A = R,
-    renderOptionValue: C = D,
+    renderOptionLabel: C = R,
+    renderOptionValue: A = D,
     popoutClassName: N,
     popoutPosition: P = "bottom",
     popoutLayerContext: w,
@@ -251,7 +251,7 @@ function w(e) {
         onSelect: ei,
         options: t,
         serialize: U,
-        renderOptionLabel: A,
+        renderOptionLabel: C,
         optionClassName: L,
         updatePosition: a,
         popoutPosition: i
@@ -307,7 +307,7 @@ function w(e) {
           children: [eo.length > 0 ? (0, r.jsx)(p.Text, {
             className: E.value,
             variant: "text-md/medium",
-            children: C(eo)
+            children: A(eo)
           }) : (0, r.jsx)("span", {
             className: E.placeholder,
             children: n
@@ -355,7 +355,7 @@ function x(e) {
     buttonHeight: O,
     updatePosition: I,
     popoutPosition: T
-  } = e, [A, C] = i.useState(0), N = i.useRef(null), P = i.useId(), R = (0, s.ZP)({
+  } = e, [C, A] = i.useState(0), N = i.useRef(null), P = i.useId(), R = (0, s.ZP)({
     id: P,
     async scrollToEnd() {},
     async scrollToStart() {},
@@ -370,10 +370,10 @@ function x(e) {
   }, [O, I]), (0, m.Z)(I), i.useLayoutEffect(() => {
     var e, t;
     let n = null == (t = N.current) || null == (e = t.getBoundingClientRect()) ? true : e.height;
-    null != n && C(n)
+    null != n && A(n)
   }, [_, f.length]), i.useEffect(() => {
     I()
-  }, [I, A]);
+  }, [I, C]);
   let w = i.useCallback((e, t) => {
       n(e), c && !t && a()
     }, [a, n, c]),
@@ -405,7 +405,7 @@ function x(e) {
             }),
             style: {
               width: p,
-              maxHeight: A
+              maxHeight: C
             },
             ref: e => {
               var t;
@@ -483,8 +483,8 @@ function j(e) {
       clearable: b,
       closeOnSelect: O = true,
       maxVisibleItems: I,
-      "aria-label": A,
-      placeholder: C,
+      "aria-label": C,
+      placeholder: A,
       variant: N,
       renderOptionLabel: P
     } = o,
@@ -493,7 +493,7 @@ function j(e) {
     } = (0, u.XF_)(o),
     D = "text-only" === N || null != P;
   if (s && !D) {
-    let e = null == R.label && null != A;
+    let e = null == R.label && null != C;
     return (0, r.jsx)(f.P, v(y({
       id: c,
       selectionMode: "single",
@@ -526,9 +526,9 @@ function j(e) {
       clearable: b,
       closeOnSelect: O,
       maxOptionsVisible: I,
-      placeholder: C
+      placeholder: A
     }, R), {
-      label: e ? A : R.label,
+      label: e ? C : R.label,
       hideLabel: true === R.hideLabel || e
     }))
   }
@@ -563,8 +563,8 @@ function M(e) {
       clearable: O,
       closeOnSelect: I,
       maxVisibleItems: T,
-      placeholder: A,
-      "aria-label": C,
+      placeholder: C,
+      "aria-label": A,
       variant: N,
       isSelected: P,
       renderOptionLabel: R
@@ -574,7 +574,7 @@ function M(e) {
     } = (0, u.XF_)(o),
     x = "text-only" === N || null != R;
   if (s && !x) {
-    let e = null == D.label && null != C;
+    let e = null == D.label && null != A;
     return (0, r.jsx)(f.P, v(y({
       id: l,
       selectionMode: "single",
@@ -607,9 +607,9 @@ function M(e) {
       clearable: O,
       closeOnSelect: I,
       maxOptionsVisible: T,
-      placeholder: A
+      placeholder: C
     }, D), {
-      label: e ? C : D.label,
+      label: e ? A : D.label,
       hideLabel: true === D.hideLabel || e
     }))
   }

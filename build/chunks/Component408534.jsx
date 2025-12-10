@@ -37,7 +37,7 @@ function j(e) {
   } = e, I = (0, s.bp)(), {
     id: Z,
     type: T
-  } = j, N = (0, r.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), A = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(Z)), w = (null == A ? true : A.type) === v.fO.STREAM ? A.stream : null, M = (0, r.e7)([a.Z], () => (null == A ? true : A.type) === v.fO.ACTIVITY ? a.Z.getApplication(A.applicationId) : true), R = (0, f.Z)(Z), L = (0, y.Z)(Z), D = (0, g.Z)(j, N, null == w ? true : w.ownerId, null == M ? true : M.id), k = (0, h.Z)(Z), U = (0, _.Z)(), V = (0, c.$A)(Z), B = (0, c.j8)(Z), F = (0, C.Z)(w, I), H = (0, b.Z)(M, Z), G = (0, m.Z)(), W = (0, o.Z)(j), z = (0, p.m)(Z);
+  } = j, N = (0, r.e7)([u.Z], () => u.Z.getGuild(j.guild_id), [j.guild_id]), A = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(Z)), w = (null == A ? true : A.type) === v.fO.STREAM ? A.stream : null, M = (0, r.e7)([a.Z], () => (null == A ? true : A.type) === v.fO.ACTIVITY ? a.Z.getApplication(A.applicationId) : true), R = (0, f.Z)(Z), L = (0, y.Z)(Z), D = (0, g.Z)(j, N, null == w ? true : w.ownerId, null == M ? true : M.id), k = (0, h.Z)(Z), U = (0, _.Z)(), V = (0, c.$A)(Z), F = (0, c.j8)(Z), B = (0, C.Z)(w, I), H = (0, b.Z)(M, Z), G = (0, m.Z)(), W = (0, o.Z)(j), z = (0, p.m)(Z);
   return (0, i.jsxs)(l.v2r, {
     className: E.menu,
     onClose: t,
@@ -48,13 +48,13 @@ function j(e) {
     children: [(0, i.jsx)(l.kSQ, {
       children: T !== O.d4z.GUILD_STAGE_VOICE ? D : null
     }), (0, i.jsxs)(l.kSQ, {
-      children: [T === O.d4z.GUILD_STAGE_VOICE ? V : null, T === O.d4z.GUILD_STAGE_VOICE ? B : null, S || T === O.d4z.GUILD_STAGE_VOICE ? null : k, G, T !== O.d4z.GUILD_STAGE_VOICE ? R : null, T === O.d4z.GUILD_STAGE_VOICE || T === O.d4z.GUILD_VOICE ? L : null]
+      children: [T === O.d4z.GUILD_STAGE_VOICE ? V : null, T === O.d4z.GUILD_STAGE_VOICE ? F : null, S || T === O.d4z.GUILD_STAGE_VOICE ? null : k, G, T !== O.d4z.GUILD_STAGE_VOICE ? R : null, T === O.d4z.GUILD_STAGE_VOICE || T === O.d4z.GUILD_VOICE ? L : null]
     }), (0, i.jsx)(l.kSQ, {
       children: W
     }), (0, i.jsxs)(l.kSQ, {
       children: [!j.isManaged() && j.isPrivate() ? z : null, U]
     }), (0, i.jsxs)(l.kSQ, {
-      children: [null != w ? F : null, null != M ? H : null]
+      children: [null != w ? B : null, null != M ? H : null]
     })]
   })
 }

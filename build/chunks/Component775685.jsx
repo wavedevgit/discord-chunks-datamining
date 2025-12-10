@@ -2,7 +2,7 @@
 /** chunk id: 775685, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -71,19 +71,19 @@ let I = Chunk473749.forwardRef(function(e, t) {
   }), v = (0, l.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === n && p.Z.activeChannelId() === a), {
     Component: I,
     events: T,
-    play: A
-  } = (0, c.w)(), C = i.useContext(h.ZP);
+    play: C
+  } = (0, c.w)(), A = i.useContext(h.ZP);
   i.useEffect(() => {
     let e = () => {
       T.onMouseEnter()
     };
-    return C.on("command-sentinel-typed", e), () => {
-      C.off("command-sentinel-typed", e)
+    return A.on("command-sentinel-typed", e), () => {
+      A.off("command-sentinel-typed", e)
     }
-  }, [C, T]);
+  }, [A, T]);
   let N = i.useCallback(() => {
-      v ? f.y(_.ti.DISMISSED) : (f._(_._b.TEXT, n, true, a), d.ux()), A()
-    }, [v, n, a, A]),
+      v ? f.y(_.ti.DISMISSED) : (f._(_._b.TEXT, n, true, a), d.ux()), C()
+    }, [v, n, a, C]),
     P = (0, r.jsx)(I, {
       size: "refresh_sm",
       color: "currentColor"
@@ -128,4 +128,4 @@ function T(e) {
     channelId: n
   })
 }
-let A = Chunk473749.memo(T)
+let C = Chunk473749.memo(T)

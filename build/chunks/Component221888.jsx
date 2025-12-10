@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,7 +61,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -159,7 +159,7 @@ function L(e) {
     compact: h = false,
     disableInteraction: y = false,
     maxVisibleUsers: S = 3
-  } = e, T = i.useRef(null), C = (0, m.Z)(), [R, L] = i.useState(false), j = i.useRef(new u.sW(P, () => L(false))), M = (0, c.Wu)([g.Z, E.default], () => {
+  } = e, T = i.useRef(null), A = (0, m.Z)(), [R, L] = i.useState(false), j = i.useRef(new u.sW(P, () => L(false))), M = (0, c.Wu)([g.Z, E.default], () => {
     if (s.type === O.fO.STREAM) {
       let e = g.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => E.default.getUser(e)).filter(b.lm) : x
@@ -167,8 +167,8 @@ function L(e) {
     return s.type === O.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => E.default.getUser(e.userId)).filter(b.lm) : x
   }, [s]);
   i.useEffect(() => {
-    C && (j.current.cancel(), L(false))
-  }, [C]);
+    A && (j.current.cancel(), L(false))
+  }, [A]);
   let k = i.useCallback(() => {
       j.current.cancel(), L(true)
     }, []),
@@ -180,7 +180,7 @@ function L(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, N(A({}, n), {
+        return n => (0, r.jsx)(e, N(C({}, n), {
           user: t
         }))
       }, {
@@ -220,7 +220,7 @@ function L(e) {
           users: M,
           disableInteraction: y
         }),
-        shouldShow: R && !C,
+        shouldShow: R && !A,
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: T,

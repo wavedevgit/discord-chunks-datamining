@@ -29,15 +29,15 @@ function h(e, t) {
     expressionsCombinedIntoEmojiButton: T
   } = d.n.useConfig({
     location: "EmojiButton"
-  }), A = T ? true : S ? v : true, C = I && T && S ? _.intl.string(_.t.DSBQ6F) : true, N = i.useCallback(() => {
+  }), C = T ? true : S ? v : true, A = I && T && S ? _.intl.string(_.t.DSBQ6F) : true, N = i.useCallback(() => {
     (0, u.RO)(g, a, h)
   }, [a, g, h]);
   return n ? null : (0, r.jsx)("div", {
     className: o()(p.CT, m.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.Z, {
-      "aria-label": C,
-      tooltipText: C,
+      "aria-label": A,
+      tooltipText: A,
       className: m.emojiButton,
       onClick: N,
       active: E === g && b === a && O === h,
@@ -51,7 +51,7 @@ function h(e, t) {
           right: false
         }
       },
-      keyboardShortcut: A,
+      keyboardShortcut: C,
       canShowNUXPremiumTooltip: S
     })
   })

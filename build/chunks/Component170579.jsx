@@ -71,19 +71,19 @@ let y = e => {
         upgradeToPremiumType: S,
         className: I,
         showTrialBadge: T = false,
-        showDiscountBadge: A = false
+        showDiscountBadge: C = false
       } = e,
-      C = S === h.PremiumTypes.TIER_2;
+      A = S === h.PremiumTypes.TIER_2;
     n = S === h.PremiumTypes.TIER_0 ? c.Z : S === h.PremiumTypes.TIER_1 ? u.Z : l.Z;
     let N = (0, _.N)(),
       P = null == N || null == (t = N.discount) ? true : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": true,
       className: a()({
-        [E.headerBackground]: !C,
-        [E.tier2HeaderBackground]: C
+        [E.headerBackground]: !A,
+        [E.tier2HeaderBackground]: A
       }, I),
-      children: [(T || A) && (0, r.jsx)(d.Z, {
+      children: [(T || C) && (0, r.jsx)(d.Z, {
         className: E.trialBadgeSparkles
       }), g(), (0, r.jsxs)(s.Z, {
         align: s.Z.Align.START,
@@ -92,11 +92,11 @@ let y = e => {
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
             className: a()(E.headerIcon, {
-              [E.nonTier2]: !C
+              [E.nonTier2]: !A
             })
-          }), (T || A) && (0, r.jsx)(y, {
+          }), (T || C) && (0, r.jsx)(y, {
             isTier0: S === h.PremiumTypes.TIER_0,
-            discountAmount: A ? P : true
+            discountAmount: C ? P : true
           })]
         }), !i && (0, r.jsx)(o.olH, {
           "data-migration-pending": true,

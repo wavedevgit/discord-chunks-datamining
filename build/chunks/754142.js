@@ -41,11 +41,11 @@ function T(e, t) {
   return null == i ? null : null != (n = i.find(e => "video" === e.type)) ? n : null
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   return e ? I(t) : T(t, n)
 }
 
-function C(e) {
+function A(e) {
   var t, n;
   return null != (n = null == (t = c.Z.getConnectionStats(e)) ? true : t.stats.transport.outboundBitrateEstimate) ? n : null
 }
@@ -122,7 +122,7 @@ function w(e, t) {
     eu = null != J ? null == J ? true : J.getVoiceParticipantType() : es ? "sender" : "receiver",
     ed = null != (r = null == $ ? true : $.getMediaEngineConnectionId()) ? r : null;
   x = null != k && null != X ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === S.y7) : null == $ ? true : $.getInboundStats(X.ownerId) : es ? null != (w = i().maxBy(null != (m = null == $ ? true : $.getOutboundStats()) ? m : [], e => e.num_frames)) ? w : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
-    var n, r, i, s, l, c, u, d, m, h, g, O, R, w, k, Q, ee, ef, ep, e_, em, eh, eg, eE, eb, ey, eO, ev, eS, eI, eT, eA, eC, eN, eP, eR, eD, ew, ex, eL, ej, eM, ek, eU, eG, eZ, eB, eF, eV;
+    var n, r, i, s, l, c, u, d, m, h, g, O, R, w, k, Q, ee, ef, ep, e_, em, eh, eg, eE, eb, ey, eO, ev, eS, eI, eT, eC, eA, eN, eP, eR, eD, ew, ex, eL, ej, eM, ek, eU, eG, eZ, eB, eF, eV;
     let eH = {
       error_name: e.valueOf(),
       error_code: L.errorCode,
@@ -146,17 +146,17 @@ function w(e, t) {
       num_frames: null != (eg = null == x ? true : x.num_frames) ? eg : 0,
       num_packets: null != (eE = null == x ? true : x.num_packets) ? eE : 0,
       num_bytes: null != (eb = null == x ? true : x.num_bytes) ? eb : 0,
-      num_packets_lost: null != (ey = null == (i = A(es, ed, ec)) ? true : i.packetsLost) ? ey : 0,
-      video_codec: null != (eO = null != V ? V : (0, a.bU)(null == (s = A(es, ed, ec)) ? true : s.codec.name)) ? eO : null,
+      num_packets_lost: null != (ey = null == (i = C(es, ed, ec)) ? true : i.packetsLost) ? ey : 0,
+      video_codec: null != (eO = null != V ? V : (0, a.bU)(null == (s = C(es, ed, ec)) ? true : s.codec.name)) ? eO : null,
       video_encoder: null != (ev = null != H ? H : (0, a.lG)(null == (l = I(ed)) ? true : l.encoderImplementationName)) ? ev : null,
       video_decoder: null != (eS = null != Y ? Y : (0, a.z_)(null == (c = T(ed, ec)) ? true : c.decoderImplementationName)) ? eS : null,
       audio_capture_sample_rate_mismatch_percent: null != W ? W : null,
       incoming_video_stopped_for_occlusion: !o.w.isIncomingVideoEnabled(),
-      bitrate: null != (eI = null == (u = A(es, ed, ec)) ? true : u.bitrate) ? eI : null,
+      bitrate: null != (eI = null == (u = C(es, ed, ec)) ? true : u.bitrate) ? eI : null,
       target_bitrate: es && null != (eT = null == (d = I(ed)) ? true : d.bitrateTarget) ? eT : null,
-      fps: null != (eA = D(es, el, ec)) ? eA : null,
+      fps: null != (eC = D(es, el, ec)) ? eC : null,
       target_fps: el === S.Yn.STREAM && es ? en : null,
-      sender_user_id: null != (eC = null == X ? true : X.ownerId) ? eC : null,
+      sender_user_id: null != (eA = null == X ? true : X.ownerId) ? eA : null,
       stream_region: null != (eN = null == J ? true : J.getRegion()) ? eN : null,
       stream_source_type: es && null != (eP = null == J || null == (m = J.analyticsContext) ? true : m.streamSourceType) ? eP : null,
       num_stream_viewers: null != (eR = null == J || null == (h = J.analyticsContext) ? true : h.numViewers) ? eR : null,
@@ -180,7 +180,7 @@ function w(e, t) {
       gpu_driver_version: null != (eB = null == t ? true : t.gpu_driver_version) ? eB : null,
       cpu_usage: null != (eF = y.Z.getCurrentCPUUsagePercent()) ? eF : null,
       memory_usage: null != (eV = y.Z.getCurrentMemoryUsageKB()) ? eV : null,
-      outbound_bitrate_estimate: C(ed),
+      outbound_bitrate_estimate: A(ed),
       inbound_bitrate_estimate: N(ed),
       hardware_enabled: f.Z.getHardwareEncoding(),
       audio_input_device_name: null != K ? K : null == (g = f.Z.getInputDevices()[f.Z.getInputDeviceId()]) ? true : g.name,

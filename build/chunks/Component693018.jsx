@@ -27,8 +27,8 @@ let _ = 256,
   S = [0, 0, 2],
   I = [0, 1, 0],
   T = [0, 0, 0],
-  A = "\nattribute vec4 a_position;\nattribute vec2 a_texcoord;\nuniform mat4 u_normalMatrix;\nattribute vec3 a_vertexNormal;\n\nuniform mat4 u_matrix;\n\nvarying vec2 v_texcoord;\nvarying highp vec3 v_lighting;\n\nvoid main() {\n  // Multiply the position by the matrix.\n  gl_Position = u_matrix * a_position;\n\n  // Pass the texcoord to the fragment shader.\n  v_texcoord = a_texcoord;\n\n  highp vec3 ambientLight = vec3(0.4, 0.4, 0.4);\n  highp vec3 directionalLightColor = vec3(0.6, 0.6, 0.6);\n  highp vec3 directionalVector = normalize(vec3(0.0, 0.0, 1.0));\n\n  highp vec4 transformedNormal = u_normalMatrix * vec4(a_vertexNormal, 0.0);\n\n  highp float directional = max(dot(transformedNormal.xyz, directionalVector), 0.0);\n  v_lighting = ambientLight + (directionalLightColor * directional);\n}\n",
-  C = "\nprecision mediump float;\n\nvarying vec2 v_texcoord;\nvarying highp vec3 v_lighting;\n\nuniform sampler2D u_texture;\n\nvoid main() {\n  highp vec4 texelColor = texture2D(u_texture, v_texcoord);\n  gl_FragColor = vec4(texelColor.rgb * v_lighting, texelColor.a);\n}\n",
+  C = "\nattribute vec4 a_position;\nattribute vec2 a_texcoord;\nuniform mat4 u_normalMatrix;\nattribute vec3 a_vertexNormal;\n\nuniform mat4 u_matrix;\n\nvarying vec2 v_texcoord;\nvarying highp vec3 v_lighting;\n\nvoid main() {\n  // Multiply the position by the matrix.\n  gl_Position = u_matrix * a_position;\n\n  // Pass the texcoord to the fragment shader.\n  v_texcoord = a_texcoord;\n\n  highp vec3 ambientLight = vec3(0.4, 0.4, 0.4);\n  highp vec3 directionalLightColor = vec3(0.6, 0.6, 0.6);\n  highp vec3 directionalVector = normalize(vec3(0.0, 0.0, 1.0));\n\n  highp vec4 transformedNormal = u_normalMatrix * vec4(a_vertexNormal, 0.0);\n\n  highp float directional = max(dot(transformedNormal.xyz, directionalVector), 0.0);\n  v_lighting = ambientLight + (directionalLightColor * directional);\n}\n",
+  A = "\nprecision mediump float;\n\nvarying vec2 v_texcoord;\nvarying highp vec3 v_lighting;\n\nuniform sampler2D u_texture;\n\nvoid main() {\n  highp vec4 texelColor = texture2D(u_texture, v_texcoord);\n  gl_FragColor = vec4(texelColor.rgb * v_lighting, texelColor.a);\n}\n",
   N = [false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, false, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5, .5, false, .5, false, false, .5, .5, .5, .5, false, false, .5, .5, .5, .5, .5, .5, .5, false, false, false, false, .5, false, false, false, false, .5, false, false, .5, .5, false, false, .5, false, .5, false, false, false, false, false, .5, false, .5, false, false, false, .5, false, .5, .5, false, .5, false, .5, false, false, .5, .5, false, .5, false, .5, .5, false, .5, .5, .5, false, .5, .5, .5],
   P = [0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0],
   R = [0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, false, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
@@ -58,7 +58,7 @@ function L(e, t, n, r, s) {
     let c = i.createShader(i.VERTEX_SHADER),
       u = i.createShader(i.FRAGMENT_SHADER);
     if (null == c || null == u) return;
-    if (i.shaderSource(c, A), i.shaderSource(u, C), i.compileShader(c), !i.getShaderParameter(c, i.COMPILE_STATUS)) return void console.error("ERROR compiling vertex shader!", i.getShaderInfoLog(c));
+    if (i.shaderSource(c, C), i.shaderSource(u, A), i.compileShader(c), !i.getShaderParameter(c, i.COMPILE_STATUS)) return void console.error("ERROR compiling vertex shader!", i.getShaderInfoLog(c));
     if (i.compileShader(u), !i.getShaderParameter(u, i.COMPILE_STATUS)) return void console.error("ERROR compiling fragment shader!", i.getShaderInfoLog(u));
     let d = i.createProgram();
     if (i.attachShader(d, c), i.attachShader(d, u), i.linkProgram(d), !i.getProgramParameter(d, i.LINK_STATUS)) return void console.error("ERROR linking program!", i.getProgramInfoLog(d));
@@ -86,11 +86,11 @@ function L(e, t, n, r, s) {
           u = o.G3(o.Ue(), O, c, 1, 2e3),
           h = o.zB(o.Ue(), S, T, I),
           E = o.Jp(o.Ue(), u, h),
-          A = o.Ue();
-        o.lM(A, A, t), o.uD(A, A, l);
-        let C = o.Jp(o.Ue(), E, A),
+          C = o.Ue();
+        o.lM(C, C, t), o.uD(C, C, l);
+        let A = o.Jp(o.Ue(), E, C),
           N = o.Ue();
-        o.U_(N, A), o.p4(N, N), i.uniformMatrix4fv(g, false, N), i.uniformMatrix4fv(_, false, C), i.uniform1i(m, 0), i.drawArrays(i.TRIANGLES, 0, 36), n = requestAnimationFrame(v)
+        o.U_(N, C), o.p4(N, N), i.uniformMatrix4fv(g, false, N), i.uniformMatrix4fv(_, false, A), i.uniform1i(m, 0), i.drawArrays(i.TRIANGLES, 0, 36), n = requestAnimationFrame(v)
       };
     return n = requestAnimationFrame(v), () => cancelAnimationFrame(n)
   }, [r, s, e, t])
@@ -99,14 +99,14 @@ function L(e, t, n, r, s) {
 function j(e) {
   let {
     emoji: t
-  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, A] = i.useState(null), [C, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), D = d.E[f.yD.EMOJIS], w = (0, l.dQu)(D.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), B = i.useRef(false), F = i.useRef(0), V = i.useRef(0);
+  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, C] = i.useState(null), [A, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), D = d.E[f.yD.EMOJIS], w = (0, l.dQu)(D.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), B = i.useRef(false), F = i.useRef(0), V = i.useRef(0);
   L(n, o, T, x, j);
   let H = i.useCallback(() => {
     let e = null == o ? true : o.getContext("2d");
-    null != o && null != e && (e.fillStyle = "black", e.fillRect(0, 0, o.width, o.height), e.drawImage(I.current, 0, 0, o.width, o.height), e.fillStyle = w, e.fillRect(0, 0, o.width, v), e.fillRect(0, 0, v, o.height), e.fillRect(0, o.height - v, o.width, v), e.fillRect(o.width - v, 0, v, o.height), A(t), N(true))
+    null != o && null != e && (e.fillStyle = "black", e.fillRect(0, 0, o.width, o.height), e.drawImage(I.current, 0, 0, o.width, o.height), e.fillStyle = w, e.fillRect(0, 0, o.width, v), e.fillRect(0, 0, v, o.height), e.fillRect(0, o.height - v, o.width, v), e.fillRect(o.width - v, 0, v, o.height), C(t), N(true))
   }, [t, I, w, o]);
   i.useEffect(() => {
-    A(null), I.current.crossOrigin = "anonymous", I.current.src = (0, u.qc)(t, _), I.current.onload = H, I.current.complete && H()
+    C(null), I.current.crossOrigin = "anonymous", I.current.src = (0, u.qc)(t, _), I.current.onload = H, I.current.complete && H()
   }, [t, H, I]), i.useEffect(() => {
     let e = t => {
       let n = .001 * t,
@@ -141,7 +141,7 @@ function j(e) {
     window.removeEventListener("mouseup", K), window.removeEventListener("mousemove", W)
   }), [W, K]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("canvas", {
-      className: C ? p.visibleCanvas : p.invisible,
+      className: A ? p.visibleCanvas : p.invisible,
       ref: a,
       height: m,
       width: m,

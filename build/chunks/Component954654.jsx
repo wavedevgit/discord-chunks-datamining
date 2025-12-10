@@ -116,11 +116,11 @@ function j(e, t) {
     case s.re.CONTENT_INVENTORY_ENTRY:
       return (0, r.jsx)(I.Z, D({}, e), t);
     case s.re.CONTAINER:
-      return (0, r.jsx)(A.Z, x(D({}, e), {
+      return (0, r.jsx)(C.Z, x(D({}, e), {
         renderComponents: L
       }), t);
     case s.re.LABEL:
-      return (0, r.jsx)(C.Z, x(D({}, e), {
+      return (0, r.jsx)(A.Z, x(D({}, e), {
         renderComponent: j
       }), t);
     case s.re.FILE_UPLOAD:

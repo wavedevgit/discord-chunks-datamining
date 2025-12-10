@@ -32,8 +32,8 @@ let h = new Map,
   S = E,
   I = [],
   T = b,
-  A = y,
-  C = null,
+  C = y,
+  A = null,
   N = false,
   P = new Set,
   R = new Map,
@@ -67,7 +67,7 @@ let h = new Map,
     let {
       error: t
     } = e;
-    O = h, v = g, A = y, N = false, P = new Set, r = t, a = Date.now()
+    O = h, v = g, C = y, N = false, P = new Set, r = t, a = Date.now()
   },
   G = e => {
     let t = e.categories.categories;
@@ -88,23 +88,23 @@ let h = new Map,
   },
   B = (e, t) => {
     if (0 === e.length) {
-      A = y;
+      C = y;
       return
     }
-    switch (C) {
+    switch (A) {
       case d.u.POPULAR:
-        A = _.HU;
+        C = _.HU;
         break;
       case d.u.RECENT:
-        A = (0, p.x0)(e, t);
+        C = (0, p.x0)(e, t);
         break;
       case d.u.NONE:
       default:
-        A = y
+        C = y
     }
   },
   F = () => {
-    O = h, v = g, A = y, i = true, N = false, P = new Set, r = true, a = true, w = {}, x = 0
+    O = h, v = g, C = y, i = true, N = false, P = new Set, r = true, a = true, w = {}, x = 0
   },
   V = () => {
     if (!Chunk353926.Z.hasLoadedExperiments) return;
@@ -115,7 +115,7 @@ let h = new Map,
     }, {
       autoTrackExposure: false
     });
-    module !== C && (i = true), C = module
+    module !== A && (i = true), A = module
   },
   H = e => {
     x = e.skipNumCategories
@@ -152,7 +152,7 @@ class Y extends(o = Chunk442837.ZP.Store) {
     return I
   }
   get recommendedGiftSkuIds() {
-    return A
+    return C
   }
   get skipNumCategories() {
     return x

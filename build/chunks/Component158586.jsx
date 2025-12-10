@@ -14,12 +14,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk172107 = require("./172107.js");
 let j = e => {
-  var t, n, j, p, b, h, x;
+  var t, n, j, p, b, x, h;
   let {
     channel: f,
     onClose: v,
     transitionState: y
-  } = e, [g, O] = o.useState(null != (j = f.defaultReactionEmoji) ? j : null), [N, w] = o.useState(false), [E, P] = o.useState(false), k = o.useRef(null), _ = (null != (p = null == (t = f.defaultReactionEmoji) ? true : t.emojiId) ? p : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), C = (null != (h = null == (n = f.defaultReactionEmoji) ? true : n.emojiName) ? h : null) !== (null != (x = null == g ? true : g.emojiName) ? x : null), R = _ || C, B = e => {
+  } = e, [g, O] = o.useState(null != (j = f.defaultReactionEmoji) ? j : null), [N, w] = o.useState(false), [E, P] = o.useState(false), k = o.useRef(null), _ = (null != (p = null == (t = f.defaultReactionEmoji) ? true : t.emojiId) ? p : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), C = (null != (x = null == (n = f.defaultReactionEmoji) ? true : n.emojiName) ? x : null) !== (null != (h = null == g ? true : g.emojiName) ? h : null), R = _ || C, B = e => {
     O(null == e ? null : (null == e ? true : e.id) != null ? {
       emojiId: e.id
     } : {

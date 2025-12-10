@@ -177,8 +177,8 @@ function B({
     }),
     T = (0, m.w)(I, O),
     {
-      isVirtualized: A,
-      layoutDelegate: C,
+      isVirtualized: C,
+      layoutDelegate: A,
       dropTargetDelegate: N,
       CollectionRoot: w
     } = (0, L.useContext)(a.Qk),
@@ -189,8 +189,8 @@ function B({
       gridProps: j
     } = (0, h.x)({
       ...v,
-      layoutDelegate: C,
-      isVirtualized: A
+      layoutDelegate: A,
+      isVirtualized: C
     }, T, t),
     k = T.selectionManager,
     Z = !!(null == x ? true : x.useDraggableCollectionState),
@@ -220,7 +220,7 @@ function B({
         disabledKeys: k.disabledKeys,
         disabledBehavior: k.disabledBehavior,
         ref: t,
-        layoutDelegate: C
+        layoutDelegate: A
       }),
       n = x.dropTargetDelegate || N || new x.ListDropTargetDelegate(r.rows, t);
     f = x.useDroppableCollection({
@@ -247,7 +247,7 @@ function B({
   }), Q = !!(Z && !(null == u ? true : u.isDisabled)), X = q.style, J = null;
   S && (J = S.useTableColumnResizeState({
     tableWidth: S.tableWidth
-  }, T), A || (X = {
+  }, T), C || (X = {
     ...X,
     tableLayout: "fixed",
     width: "fit-content"
@@ -546,7 +546,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
     {
       rowProps: b,
       ...O
-    } = (0, A.U)({
+    } = (0, C.U)({
       node: n,
       shouldSelectOnPressUp: !!_,
       isVirtualized: h
@@ -583,7 +583,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
   let k = (0, L.useRef)(null),
     {
       visuallyHiddenProps: G
-    } = (0, C.S)();
+    } = (0, A.S)();
   m && p && (u = p.useDropIndicator({
     target: {
       type: "item",
@@ -766,7 +766,7 @@ function er(e, t) {
     ...a
   } = e, s = (0, L.useContext)(U), {
     visuallyHiddenProps: l
-  } = (0, C.S)(), c = (0, o.aX)({
+  } = (0, A.S)(), c = (0, o.aX)({
     ...a,
     defaultClassName: "react-aria-DropIndicator",
     values: {

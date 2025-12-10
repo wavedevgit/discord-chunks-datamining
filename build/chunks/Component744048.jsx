@@ -28,10 +28,10 @@ let v = function(e) {
     mobile: t
   } = e, n = (0, i.e7)([m.Z], () => m.Z.getLayers().includes(b.S9g.USER_SETTINGS)), v = (0, i.e7)([h.default], () => g.ZP.canUseClientThemes(h.default.getCurrentUser())), S = (0, i.e7)([l.Z], () => l.Z.isCoachmark), I = (0, c.g)(), {
     activePanel: T,
-    metadata: A
-  } = (0, E.oq)(), C = [];
-  !n && null == T && (S && !v && C.push(a.z.CLIENT_THEMES_COACHMARK), I && C.push(a.z.CUSTOM_THEME_COACHMARK));
-  let [N, P] = (0, _.US)(C, y.R.SIDEBAR, true), R = N === a.z.CLIENT_THEMES_COACHMARK, D = N === a.z.CUSTOM_THEME_COACHMARK;
+    metadata: C
+  } = (0, E.oq)(), A = [];
+  !n && null == T && (S && !v && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
+  let [N, P] = (0, _.US)(A, y.R.SIDEBAR, true), R = N === a.z.CLIENT_THEMES_COACHMARK, D = N === a.z.CUSTOM_THEME_COACHMARK;
   if ((0, d.HA)(I, N), n) return null;
   let w = T === E.wh.CLIENT_THEMES || R,
     x = T === E.wh.APP_ICON,
@@ -51,7 +51,7 @@ let v = function(e) {
       isCoachmark: false,
       markAsDismissed: P
     }), L && (0, r.jsx)(f.Z, {
-      metadata: null != A ? A : {},
+      metadata: null != C ? C : {},
       markAsDismissed: P,
       isCoachmark: D,
       isMobile: t

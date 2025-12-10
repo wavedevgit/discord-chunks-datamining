@@ -101,9 +101,9 @@ function v(e) {
     participant1: v,
     participant2: S,
     numOtherParticipants: I
-  } = (0, m.Z)(a, l), T = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), A = (0, c.j)({
+  } = (0, m.Z)(a, l), T = (0, o.e7)([d.ZP], () => d.ZP.getMember(n, E)), C = (0, c.j)({
     displayNameStyles: null == b ? true : b.displayNameStyles
-  }), C = (0, o.e7)([f.Z], () => {
+  }), A = (0, o.e7)([f.Z], () => {
     var e;
     return (null == T ? true : T.colorRoleId) != null ? null == (e = f.Z.getRole(n, T.colorRoleId)) ? true : e.name : true
   }, [n, T]), N = (0, u.X7)(n, E, null != (t = null == T ? true : T.colorStrings) ? t : null);
@@ -118,11 +118,11 @@ function v(e) {
       "aria-hidden": true
     }), (0, r.jsx)(s.PUh, {
       colorString: null != P ? P : null,
-      roleName: C,
+      roleName: A,
       colorStrings: N,
       name: R,
       className: g.userName,
-      displayNameStylesFont: A,
+      displayNameStylesFont: C,
       "aria-hidden": true
     }), I > 0 ? (0, r.jsx)("div", {
       className: g.additionalParticipantBadge,

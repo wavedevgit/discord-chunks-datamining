@@ -37,7 +37,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -75,7 +75,7 @@ function P(e) {
       return r.children = (0, u.JM)(""), r.selection = {
         anchor: I.nO,
         focus: I.nO
-      }, R(N(A({}, e), {
+      }, R(N(C({}, e), {
         editor: r,
         windowContext: t,
         previewMarkdown: n
@@ -102,15 +102,15 @@ function R(e) {
     windowContext: u,
     previewMarkdown: I,
     forTests: T,
-    onChangeStart: A,
-    onChangeEnd: C,
+    onChangeStart: C,
+    onChangeEnd: A,
     updateState: N
   } = e, P = a, {
     onChange: R
   } = P;
   P.chatInputType = o, P.windowContext = u, P.previewMarkdown = I, P.composition = null, P.events = new i.EventEmitter, P.isMac = "MacIntel" === navigator.platform, P.onChange = () => {
     P.events.emit("onChange"), R()
-  }, P = (0, y.B)(P, true === T), P = (0, b.Z)(P), P = (0, E.Z)(P), (null == (t = o.commands) ? true : t.enabled) && (P = (0, d.Z)(P, s, true === l, true === c)), P = (0, g.ZP)(P, s.guild_id, s.id), (null == (n = o.markdown) ? true : n.disableBlockQuotes) || (P = (0, f.Z)(P)), (null == (r = o.markdown) ? true : r.disableCodeBlocks) || (P = (0, p.ZP)(P)), T && (P = (0, v.Z)(P)), P = (0, h.Z)(P), P = (0, _.Z)(P), P = (0, O.Z)(P), P = (0, S.Z)(P, A, C), P = (0, m.Z)(P, e => {
+  }, P = (0, y.B)(P, true === T), P = (0, b.Z)(P), P = (0, E.Z)(P), (null == (t = o.commands) ? true : t.enabled) && (P = (0, d.Z)(P, s, true === l, true === c)), P = (0, g.ZP)(P, s.guild_id, s.id), (null == (n = o.markdown) ? true : n.disableBlockQuotes) || (P = (0, f.Z)(P)), (null == (r = o.markdown) ? true : r.disableCodeBlocks) || (P = (0, p.ZP)(P)), T && (P = (0, v.Z)(P)), P = (0, h.Z)(P), P = (0, _.Z)(P), P = (0, O.Z)(P), P = (0, S.Z)(P, C, A), P = (0, m.Z)(P, e => {
     let {
       newValue: t,
       newSelection: n

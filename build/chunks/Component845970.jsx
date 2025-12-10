@@ -44,7 +44,7 @@ function d(e) {
     children: [(0, r.jsxs)("div", {
       className: u.infoContainer,
       children: [f, (0, r.jsx)(o.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         variant: "text-sm/normal",
         children: t.description
       })]

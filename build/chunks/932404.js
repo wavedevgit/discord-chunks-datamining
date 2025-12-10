@@ -21,9 +21,9 @@ require.d(exports, {
   rI: () => o,
   ry: () => l,
   sG: () => m,
-  uD: () => A,
+  uD: () => C,
   xO: () => h,
-  zg: () => C
+  zg: () => A
 });
 var Chunk570140 = require("./570140.js"),
   Chunk145597 = require("./145597.js"),
@@ -198,14 +198,14 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   return r.Z.dispatch({
     type: "OVERLAY_V3_NATIVE_SUCCESSFULLY_SHOWN",
     pid: e
   })
 }
 
-function C(e) {
+function A(e) {
   return r.Z.dispatch({
     type: "OVERLAY_V3_NATIVE_WINDOW_HANDLE_INITIALIZED",
     initialized: e

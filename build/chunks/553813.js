@@ -177,11 +177,11 @@ function T(e, t) {
   return I(t, e)
 }
 
-function A(e, t) {
+function C(e, t) {
   return new y(e, t).major
 }
 
-function C(e, t) {
+function A(e, t) {
   return new y(e, t).minor
 }
 
@@ -278,7 +278,7 @@ function F(e, t) {
   if (!(this instanceof F)) return new F(e, t);
   r("comparator", e, t), this.options = t, this.loose = !!t.loose, this.parse(e), this.semver === V ? this.value = "" : this.value = this.operator + this.semver.version, r("comp", this)
 }
-exports.rcompareIdentifiers = T, exports.major = A, exports.minor = C, exports.patch = N, exports.compare = P, exports.compareLoose = R, exports.compareBuild = D, exports.rcompare = w, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = M, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = Z, exports.cmp = B, exports.Comparator = F;
+exports.rcompareIdentifiers = T, exports.major = C, exports.minor = A, exports.patch = N, exports.compare = P, exports.compareLoose = R, exports.compareBuild = D, exports.rcompare = w, exports.sort = x, exports.rsort = L, exports.gt = j, exports.lt = M, exports.eq = k, exports.neq = U, exports.gte = G, exports.lte = Z, exports.cmp = B, exports.Comparator = F;
 var V = {};
 
 function H(e, t) {

@@ -42,10 +42,10 @@ function E(e, t, n) {
       timeZone: t.timeZone
     }),
     T = t.isSelected(b),
-    A = t.isCellFocused(b) && !e.isOutsideMonth;
+    C = t.isCellFocused(b) && !e.isOutsideMonth;
   y = y || t.isCellDisabled(b);
-  let C = t.isCellUnavailable(b),
-    N = !y && !C,
+  let A = t.isCellUnavailable(b),
+    N = !y && !A,
     P = t.isValueInvalid && !!("highlightedRange" in t ? !t.anchorDate && t.highlightedRange && b.compare(t.highlightedRange.start) >= 0 && 0 >= b.compare(t.highlightedRange.end) : t.value && (0, a.KC)(t.value, b));
   P && (T = true), b = (0, o.v)(b, a.N9);
   let R = (0, h.useMemo)(() => b.toDate(t.timeZone), [b, t.timeZone]),
@@ -59,7 +59,7 @@ function E(e, t, n) {
       })), t.minValue && (0, a.KC)(b, t.minValue) ? e += ", " + S.format("minimumDate") : t.maxValue && (0, a.KC)(b, t.maxValue) && (e += ", " + S.format("maximumDate")), e
     }, [I, R, S, T, D, b, t, v]),
     x = "";
-  "anchorDate" in t && A && !t.isReadOnly && N && (x = t.anchorDate ? S.format("finishRangeSelectionPrompt") : S.format("startRangeSelectionPrompt"));
+  "anchorDate" in t && C && !t.isReadOnly && N && (x = t.anchorDate ? S.format("finishRangeSelectionPrompt") : S.format("startRangeSelectionPrompt"));
   let L = (0, s.P)(x),
     j = (0, h.useRef)(false),
     M = (0, h.useRef)(false),
@@ -112,10 +112,10 @@ function E(e, t, n) {
       }
     });
   y || (E = (0, a.KC)(b, t.focusedDate) ? 0 : false), (0, h.useEffect)(() => {
-    A && n.current && ((0, l.A)(n.current), "pointer" !== (0, p.Jz)() && document.activeElement === n.current && (0, c.G)(n.current, {
+    C && n.current && ((0, l.A)(n.current), "pointer" !== (0, p.Jz)() && document.activeElement === n.current && (0, c.G)(n.current, {
       containingElement: (0, u.r)(n.current)
     }))
-  }, [A, n]);
+  }, [C, n]);
   let Z = (0, m.a)({
       day: "numeric",
       timeZone: t.timeZone,
@@ -150,10 +150,10 @@ function E(e, t, n) {
       }
     }),
     isPressed: G,
-    isFocused: A,
+    isFocused: C,
     isSelected: T,
     isDisabled: y,
-    isUnavailable: C,
+    isUnavailable: A,
     isOutsideVisibleRange: 0 > b.compare(t.visibleRange.start) || b.compare(t.visibleRange.end) > 0,
     isInvalid: P,
     formattedDate: B

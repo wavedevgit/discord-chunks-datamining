@@ -62,8 +62,8 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
   S = "Color Text",
   I = "Color Background",
   T = "Input Background Color",
-  A = "Tab Background Color",
-  C = e => ({
+  C = "Tab Background Color",
+  A = e => ({
     key: d.h8.ADD_PAYMENT_STEPS,
     renderStep: () => (0, r.jsx)("div", {}),
     options: {
@@ -112,7 +112,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       continueSessionToInitialStep: true
     }), {
       elementsOptions: T,
-      isLoading: A,
+      isLoading: C,
       setupError: P,
       customPaymentMethodIdsToSourceTypes: R
     } = (0, l.S)({
@@ -127,7 +127,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
         tabBackgroundColor: p
       }
     });
-    return A || null != P || null == y ? (0, r.jsx)(c.p7, {}) : (0, r.jsxs)("div", {
+    return C || null != P || null == y ? (0, r.jsx)(c.p7, {}) : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         style: {
           marginBottom: 16
@@ -139,7 +139,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       }), (0, r.jsxs)("div", {
         className: h.paymentElementStoryContainer,
         children: [(0, r.jsx)(_.H, {
-          stepConfigs: [C(E)],
+          stepConfigs: [A(E)],
           children: (0, r.jsx)("div", {
             className: o()(h.paymentElementContainer, {
               [h.fullLengthPaymentElementContainer]: "joined-payment-address-elements" === E
@@ -209,7 +209,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       defaultValue: "#00000014"
     },
     tabBackgroundColor: {
-      label: A,
+      label: C,
       type: "text",
       defaultValue: "#00000014"
     }

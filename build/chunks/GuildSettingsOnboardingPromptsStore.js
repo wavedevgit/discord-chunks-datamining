@@ -12,31 +12,31 @@ var l, i, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk290511 = require("./290511.js");
 let g = false,
-  h = null,
-  f = [],
+  f = null,
+  h = [],
   N = false,
   I = [];
 
 function p() {
-  g = false, h = null, I = [], N = false, null != (h = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (f = Chunk45966.Z.getOnboardingPrompts(h), N = Chunk45966.Z.isAdvancedMode(h))
+  g = false, f = null, I = [], N = false, null != (f = Chunk999382.Z.getGuildId()) && Chunk999382.Z.getSection() === Chunk981631.pNK.ONBOARDING && (h = Chunk45966.Z.getOnboardingPrompts(f), N = Chunk45966.Z.isAdvancedMode(f))
 }
 class O extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk45966.Z)
   }
   hasChanges() {
-    return null != h && !a().isEqual(Chunk45966.Z.getOnboardingPrompts(h), f)
+    return null != f && !a().isEqual(Chunk45966.Z.getOnboardingPrompts(f), h)
   }
   getChangedPrompts() {
-    if (null == h) return [];
-    let e = Chunk45966.Z.getOnboardingPrompts(h);
-    return f.filter(t => {
+    if (null == f) return [];
+    let e = Chunk45966.Z.getOnboardingPrompts(f);
+    return h.filter(t => {
       let n = e.find(e => e.id === t.id);
       return null == n || !a().isEqual(t, n)
     })
   }
   get guildId() {
-    return h
+    return f
   }
   get submitting() {
     return g
@@ -45,7 +45,7 @@ class O extends(i = Chunk442837.ZP.Store) {
     return I
   }
   get editedOnboardingPrompts() {
-    return f
+    return h
   }
   get advancedMode() {
     return N
@@ -71,7 +71,7 @@ let E = new O(Chunk570140.Z, {
     let {
       prompts: t
     } = e;
-    f = t
+    h = t
   },
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SUBMIT: function() {
     g = true, I = []

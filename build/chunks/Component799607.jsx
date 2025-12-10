@@ -65,7 +65,7 @@ function _(e) {
     size: E = "md",
     actions: b,
     gradientColor: y
-  } = e, O = i.useContext(a.S), [v, S] = i.useState("closed"), I = i.useRef(null), T = i.useRef(false), A = "opening-mouse" === v || "open-mouse" === v, C = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, P = (O.keyboardModeEnabled || C) && null != b, R = P, [D, w] = i.useState(0), x = (0, l.$)(n, c, v), L = i.useCallback(() => {
+  } = e, O = i.useContext(a.S), [v, S] = i.useState("closed"), I = i.useRef(null), T = i.useRef(false), C = "opening-mouse" === v || "open-mouse" === v, A = "opening-keyboard" === v || "open-keyboard" === v, N = "open-mouse" === v || "open-keyboard" === v, P = (O.keyboardModeEnabled || A) && null != b, R = P, [D, w] = i.useState(0), x = (0, l.$)(n, c, v), L = i.useCallback(() => {
     null != I.current && (clearTimeout(I.current), I.current = null)
   }, []), j = i.useCallback(e => {
     e && (T.current = true), L(), S("closing")
@@ -75,8 +75,8 @@ function _(e) {
       ("closed" === v || "closing" === v) && (L(), S("opening-mouse"))
     }, [L, v]),
     k = i.useCallback(() => {
-      A && j(false)
-    }, [j, A]),
+      C && j(false)
+    }, [j, C]),
     U = i.useCallback(() => {
       if (T.current || "closed" !== v && "closing" !== v) {
         T.current = false;

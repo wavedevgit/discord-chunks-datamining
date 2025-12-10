@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk647484 = require("./647484.js");
 
-function C(e) {
+function A(e) {
   return (0, a.e7)([p.Z], () => {
     if (null == e) return null;
     let {
@@ -56,7 +56,7 @@ function N() {
 function P() {
   let {
     analyticsLocations: e
-  } = (0, Chunk906732.ZP)(), [t, n] = Chunk473749.useState(Chunk710111.hY), s = (0, Chunk893663.tT)(exports), d = C(Chunk596454), E = (null == Chunk596454 ? true : Chunk596454.type) === Chunk893663.zx.GLOBAL, y = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.hasFetchedAllSounds()) && null != Chunk596454 && null == Chunk921801;
+  } = (0, Chunk906732.ZP)(), [t, n] = Chunk473749.useState(Chunk710111.hY), s = (0, Chunk893663.tT)(exports), d = A(Chunk596454), E = (null == Chunk596454 ? true : Chunk596454.type) === Chunk893663.zx.GLOBAL, y = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.hasFetchedAllSounds()) && null != Chunk596454 && null == Chunk921801;
   Chunk473749.useEffect(() => {
     Chunk918257 && (0, Chunk242291.tt)({
       location: module
@@ -120,24 +120,24 @@ function R(e) {
   } = e, n = (0, a.e7)([E.Z], () => {
     var e, n, r;
     return null == (r = E.Z.settings.guilds) || null == (n = r.guilds) || null == (e = n[t]) ? true : e.joinSound
-  }), i = C(n);
+  }), i = A(n);
   if (null == n || null == i) return null;
   let {
     emojiId: l,
     emojiName: c
   } = i, u = null != l || null != c;
   return (0, r.jsxs)("div", {
-    className: A.pill,
+    className: C.pill,
     children: [u ? (0, r.jsx)(s.Z, {
       emojiId: l,
       emojiName: c,
-      className: A.pillIcon
+      className: C.pillIcon
     }) : (0, r.jsx)(o.gj8, {
       size: "md",
       color: "currentColor",
-      className: A.pillIcon
+      className: C.pillIcon
     }), (0, r.jsx)(o.Text, {
-      className: A.pillText,
+      className: C.pillText,
       variant: "text-xs/medium",
       children: i.name
     })]

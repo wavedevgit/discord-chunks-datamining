@@ -36,7 +36,7 @@ let f = {
         b((0, a.Lg)((0, a.iT)()))
       }, []), T = i.useCallback(() => {
         "day" === _ ? b((0, o.sG)("2024-12-25")) : b((0, o.wG)("2024-12-25T15:30"))
-      }, [_]), A = i.useCallback(() => {
+      }, [_]), C = i.useCallback(() => {
         if (p && null == E) O("This field is required");
         else if (g && null != E) {
           let e = (0, o.sG)("2024-01-01"),
@@ -86,7 +86,7 @@ let f = {
             variant: "primary",
             size: "sm",
             text: "Validate",
-            onClick: A,
+            onClick: C,
             disabled: f
           })]
         })]

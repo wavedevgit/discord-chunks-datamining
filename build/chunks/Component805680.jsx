@@ -198,7 +198,7 @@ function J(e) {
   }), ec = (0, L.Iu)(e => e.activeView), eu = (0, N.fQ)(K), {
     renderWindow: ed,
     windowDispatch: ef
-  } = i.useContext(T.ZP), ep = (0, d.e7)([P.Z], () => !P.Z.hasLoadedStickerPacks), e_ = (0, A.V2)({
+  } = i.useContext(T.ZP), ep = (0, d.e7)([P.Z], () => !P.Z.hasLoadedStickerPacks), e_ = (0, C.V2)({
     location: "expression_picker"
   }), em = (0, d.e7)([w.Z], () => w.Z.isOpen()), eh = null != en, eg = (0, p.useIsModalAtTop)(null != en ? en : ""), {
     reorderExpressionPickerTabs: eE
@@ -233,12 +233,12 @@ function J(e) {
       ed.removeEventListener("mousedown", eS), ed.removeEventListener("contextmenu", eS), ef.unsubscribe(M.CkL.POPOUT_CLOSE, eI), x.S.unsubscribe(M.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [ec, eI, eS, ed, ef]), (0, _.Tbt)(er);
-  let [eT, eA] = (0, y.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eC, eN] = i.useState(false);
+  let [eT, eC] = (0, y.US)(e_ ? [f.z.SOUNDMOJI_BADGE] : [], true, false), [eA, eN] = i.useState(false);
   i.useEffect(() => {
     ec === j.X1.SOUNDBOARD && eN(true)
   }, [ec]), i.useEffect(() => () => {
-    eC && eA(k.L.TAKE_ACTION)
-  }, [eC, eA]), i.useEffect(() => {
+    eA && eC(k.L.TAKE_ACTION)
+  }, [eA, eC]), i.useEffect(() => {
     (0, L.ql)("")
   }, []), i.useEffect(() => {
     (!eh && (0, p.hasAnyModalOpen)() || eh && !eg) && (0, L._Q)()
@@ -378,7 +378,7 @@ function J(e) {
                 showAddEmojiButton: ev.enabled
               }) : null, ec === j.X1.SOUNDBOARD ? (0, r.jsx)("div", {
                 className: F.soundboardContainer,
-                children: (0, r.jsx)(C.Z, {
+                children: (0, r.jsx)(A.Z, {
                   guildId: K.guild_id,
                   channel: K,
                   containerWidth: es,

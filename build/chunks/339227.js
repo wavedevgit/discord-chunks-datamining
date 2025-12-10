@@ -230,12 +230,12 @@ let S = new Chunk710845.Z("MarkdownToSlate"),
     }
   },
   T = new Set(["*", "_", "\\"]),
-  A = {},
-  C = {};
+  C = {},
+  A = {};
 for (let e in Chunk428595.Z.RULES) {
   if (!(module in I)) throw Error("Slate: Unknown markdown rule: ".concat(module, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
   let t = I[module];
-  "skip" !== exports.type && (A[module] = N(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (C[module] = N("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
+  "skip" !== exports.type && (C[module] = N(Chunk428595.Z.RULES[module])), "skip" !== exports.type && "inlineObject" !== exports.type && (A[module] = N("text" === module ? Chunk594199.ZP : Chunk428595.Z.RULES[module]))
 }
 
 function N(e) {
@@ -300,8 +300,8 @@ let R = {
     }
   },
   D = /(-# +)/,
-  w = (0, Chunk364458.Z)([A, R]),
-  x = (0, Chunk364458.Z)([C, R]),
+  w = (0, Chunk364458.Z)([C, R]),
+  x = (0, Chunk364458.Z)([A, R]),
   L = Chunk25209._p(w),
   j = Chunk25209._p(x),
   M = {

@@ -91,7 +91,7 @@ let y = false,
     });
     let e = S("SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS");
     return (0, Chunk771784.sI)("maybeFetchDefaultSounds") && v(), O(), module
-  }, A = () => {
+  }, C = () => {
     let e = (0, Chunk174470.D)();
     if (0 === module.length) return Promise.resolve();
     let t = S("SOUNDBOARD_SOUNDS_RECEIVED");
@@ -101,7 +101,7 @@ let y = false,
       type: "REQUEST_SOUNDBOARD_SOUNDS",
       guildIds: module
     }), exports
-  }, C = () => {
+  }, A = () => {
     if (!Chunk763296.Z.shouldFetchTopSoundsForGuilds()) return Promise.resolve();
     Chunk570140.Z.dispatch({
       type: "SOUNDBOARD_TOP_SOUNDS_FOR_GUILDS_FETCH"
@@ -115,7 +115,7 @@ let y = false,
     let e = performance.now(),
       t = !y;
     y = true;
-    let n = await Promise.all([T(), A(), C()]);
+    let n = await Promise.all([T(), C(), A()]);
     if (exports) {
       let t = performance.now() - module;
       Chunk626135.default.track(Chunk981631.rMx.EXPRESSION_PICKER_SOUNDBOARD_SOUNDS_LOADED, {

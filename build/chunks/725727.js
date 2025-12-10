@@ -65,14 +65,14 @@ function g() {
       })
     })
   }, []);
-  let A = {};
+  let C = {};
   for (let {
       code: e,
       promotion: t
     }
-    of O) A[exports.id] = module;
-  let C = h(require, g, E, A),
-    N = new Set(C.map(e => {
+    of O) C[exports.id] = module;
+  let A = h(require, g, E, C),
+    N = new Set(A.map(e => {
       let {
         id: t
       } = e;
@@ -80,7 +80,7 @@ function g() {
     }));
   return {
     promotionsLoaded: b && (!T || null != module || E),
-    activeOutboundPromotions: C,
+    activeOutboundPromotions: A,
     claimedEndedOutboundPromotions: O.filter(e => {
       let {
         promotion: t
@@ -89,7 +89,7 @@ function g() {
         promotionPartner: t.outboundTitle
       })
     }).filter(e => (0, f.ZC)(e.promotion)),
-    claimedOutboundPromotionCodeMap: A,
+    claimedOutboundPromotionCodeMap: C,
     addClaimedOutboundPromotionCode: S
   }
 }

@@ -30,7 +30,7 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     channel: t,
     channelSelected: a = false,
     context: o,
-    onSelect: O,
+    onSelect: Z,
     onInteraction: N
   } = e, C = (0, s.Z)(t), j = (0, d.ZP)(t, true, false), y = (0, m.Z)({
     userId: n.id,
@@ -38,7 +38,7 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   }), A = (0, h.Z)({
     user: n,
     context: o
-  }), x = (0, p.O)(t.id, u.Z.DM_CONDENSED_MENU), I = (0, p.Z)(n, x), P = (0, f.Z)(n), U = (0, Z.Z)(n.id), T = (0, g.Z)({
+  }), x = (0, p.O)(t.id, u.Z.DM_CONDENSED_MENU), I = (0, p.Z)(n, x), P = (0, f.Z)(n), U = (0, O.Z)(n.id), T = (0, g.Z)({
     user: n
   }), S = (0, b.Z)({
     user: n,
@@ -51,7 +51,7 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     navId: "dm-kebab-context",
     onClose: r.Zy,
     "aria-label": E.intl.string(E.t.liqwPJ),
-    onSelect: O,
+    onSelect: Z,
     onInteraction: N,
     children: [(0, i.jsxs)(l.kSQ, {
       children: [C, M]

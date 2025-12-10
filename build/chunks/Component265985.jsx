@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   h: () => T,
-  x: () => A
+  x: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -73,7 +73,7 @@ let v = 440,
       })]
     })
   },
-  A = e => {
+  C = e => {
     let {
       onClose: t,
       listing: n,
@@ -102,7 +102,7 @@ let v = 440,
               className: O.emojiName,
               children: y.intl.string(y.t.PrKk4n)
             }), (0, r.jsx)(l.Text, {
-              color: "interactive-normal",
+              color: "interactive-text-default",
               variant: "text-sm/normal",
               children: y.intl.format(y.t["2ICUkG"], {
                 count: u.length

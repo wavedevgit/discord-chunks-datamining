@@ -34,7 +34,7 @@ function h(e) {
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
       }), S.onClick()
     },
-    A = e => {
+    C = e => {
       e.stopPropagation(), null == O || O({
         action: "PRESS_LISTEN_ALONG_ON_SPOTIFY_BUTTON"
       }), I.onClick()
@@ -44,7 +44,7 @@ function h(e) {
       text: I.tooltip,
       children: (0, r.jsx)(d.O1, {
         text: null != (t = I.label) ? t : _.intl.string(_.t.eU3inB),
-        onClick: A,
+        onClick: C,
         disabled: I.disabled,
         loading: I.loading
       })
@@ -77,7 +77,7 @@ function h(e) {
       "aria-label": null != (E = I.label) ? E : _.intl.string(_.t.eU3inB),
       disabled: I.disabled,
       loading: I.loading,
-      onClick: A
+      onClick: C
     })]
   })
 }

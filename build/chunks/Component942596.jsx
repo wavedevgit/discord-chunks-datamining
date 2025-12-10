@@ -366,11 +366,11 @@ class $ extends(r = Chunk473749.PureComponent) {
     else if (e.type === Z.IIU.HANG_STATUS && null != a) o = B.intl.formatToPlainString(B.t.IAZiW2, {
       guildName: a.name
     }), t = () => {
-      (0, A.X)(a.id)
+      (0, C.X)(a.id)
     };
     else if (!(0, L.Z)(e)) {
       if (o = r, s = r, (0, j.Z)(e) && null != r) {
-        let t = (t, n) => (0, i.jsx)(C.Z, {
+        let t = (t, n) => (0, i.jsx)(A.Z, {
           artists: r,
           linkClassName: F.bodyLink,
           canOpen: null != e.sync_id,

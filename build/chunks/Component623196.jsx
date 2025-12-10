@@ -51,8 +51,8 @@ function O() {
     S = null != exports && o()().diff(o()(exports.created_at), "days") < Chunk981631.eBq,
     I = v && S,
     T = module.isStaff(),
-    A = !module.verified,
-    C = () => {
+    C = !module.verified,
+    A = () => {
       y({
         onConfirm: e => {
           O(true), (0, p.h)(e).then(e => {
@@ -95,7 +95,7 @@ function O() {
         children: Chunk388032.intl.string(Chunk388032.t.ZPQLH2)
       })
     }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [A ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
+      children: [C ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
         className: Chunk672413.card,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
@@ -107,7 +107,7 @@ function O() {
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.dmBSKo),
           disabled: v,
-          onClick: C,
+          onClick: A,
           loading: Chunk913527 || require
         })
       })]

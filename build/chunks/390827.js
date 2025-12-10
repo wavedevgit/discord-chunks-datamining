@@ -20,16 +20,16 @@ var r, i, a, o, Chunk127849 = require("./127849.js"),
   S = Chunk127849.Function,
   I = Chunk127849.MessageChannel,
   T = Chunk127849.String,
-  A = 0,
-  C = {},
+  C = 0,
+  A = {},
   N = "onreadystatechange";
 Chunk621523(function() {
   r = Chunk127849.location
 });
 var P = function(e) {
-    if (d(C, e)) {
-      var t = C[e];
-      delete C[e], t()
+    if (d(A, e)) {
+      var t = A[e];
+      delete A[e], t()
     }
   },
   R = function(e) {
@@ -47,11 +47,11 @@ b && y || (b = function(e) {
   h(arguments.length, 1);
   var t = u(e) ? e : S(e),
     n = _(arguments, 1);
-  return C[++A] = function() {
+  return A[++C] = function() {
     l(t, true, n)
-  }, i(A), A
+  }, i(C), C
 }, y = function(e) {
-  delete C[e]
+  delete A[e]
 }, Chunk426625 ? i = function(e) {
   O.nextTick(R(e))
 } : v && v.now ? i = function(e) {

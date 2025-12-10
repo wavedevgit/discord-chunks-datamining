@@ -80,7 +80,7 @@ let k = () => (0, Chunk54381.jsx)("div", {
       markAsDismissed: o
     } = e, {
       analyticsLocations: s
-    } = (0, h.ZP)(m.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([I.default, C.Z], () => [C.Z.gradientPreset, A.ZP.isPremium(I.default.getCurrentUser())]), p = (0, b.N)(), _ = (0, A.Rt)({
+    } = (0, h.ZP)(m.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([I.default, A.Z], () => [A.Z.gradientPreset, C.ZP.isPremium(I.default.getCurrentUser())]), p = (0, b.N)(), _ = (0, C.Rt)({
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
     }), g = d ? j.intl.string(j.t.IJI7yk) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === L.Si.TIER_2 ? _ : j.intl.string(j.t.mr4K7D), E = e => {
@@ -110,8 +110,8 @@ let k = () => (0, Chunk54381.jsx)("div", {
       isCoachmark: n
     } = e, {
       isPreview: a
-    } = (0, l.cj)([C.Z], () => ({
-      isPreview: C.Z.isPreview
+    } = (0, l.cj)([A.Z], () => ({
+      isPreview: A.Z.isPreview
     })), [o, c] = i.useState(false), d = (0, P.q)(), f = () => {
       null != t && t(x.L.DISMISS), d(w.rMx.CLIENT_THEME_PREVIEW_CLOSED), (0, N.C)(), n || (0, S.openUserSettings)(v.n.APPEARANCE_PANEL, {
         section: w.oAB.APPEARANCE
@@ -157,8 +157,8 @@ function B(e) {
   } = (0, h.ZP)(m.Z.CLIENT_THEMES_EDITOR), {
     isPreview: s,
     shouldEditorAnimate: c
-  } = (0, l.cj)([C.Z, _.Z], () => ({
-    isPreview: C.Z.isPreview,
+  } = (0, l.cj)([A.Z, _.Z], () => ({
+    isPreview: A.Z.isPreview,
     shouldEditorAnimate: n && !_.Z.useReducedMotion
   })), u = (0, g.oq)().activePanel === g.wh.CLIENT_THEMES, f = (0, P.q)();
   i.useEffect(() => f(w.rMx.CLIENT_THEME_PREVIEW_VIEWED), [f]), i.useEffect(() => {

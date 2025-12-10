@@ -1,7 +1,7 @@
 /** Chunk was on 49910 **/
 /** chunk id: 239191, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  DesktopRefreshOnboardingModal: () => C
+  DesktopRefreshOnboardingModal: () => k
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,7 +52,7 @@ function N(e) {
               color: "text-strong",
               children: e.label
             }), e.new && (0, s.jsx)(c.IGR, {
-              color: c.TVs.colors.BG_BRAND.css,
+              color: c.TVs.colors.BACKGROUND_BRAND.css,
               text: _.intl.string(_.t.y2b7CA),
               className: O.new
             })]
@@ -63,7 +63,7 @@ function N(e) {
     })
   })
 }
-let v = [{
+let C = [{
     id: Chunk231338.BR.LIGHT,
     label: Chunk388032.intl.string(Chunk388032.t.K2sFfo),
     className: l()("theme-light", Chunk3498.themeOption)
@@ -82,7 +82,7 @@ let v = [{
     className: l()("theme-midnight", Chunk3498.themeOption),
     new: true
   }],
-  k = [{
+  v = [{
     id: "compact",
     label: Chunk388032.intl.string(Chunk388032.t["7iegX4"])
   }, {
@@ -93,15 +93,15 @@ let v = [{
     label: Chunk388032.intl.string(Chunk388032.t["4cuYHx"])
   }];
 
-function C(e) {
+function k(e) {
   let {
     transitionState: t,
     onClose: i
-  } = e, [a] = n.useState(() => g.Z.gradientPreset), o = (0, r.e7)([x.Z], () => x.Z.theme), [b] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [C, K] = n.useState(() => b ? "system" : null != a ? "gradient" : o), {
+  } = e, [a] = n.useState(() => g.Z.gradientPreset), o = (0, r.e7)([x.Z], () => x.Z.theme), [b] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [k, K] = n.useState(() => b ? "system" : null != a ? "gradient" : o), {
     density: f
-  } = (0, c.TCT)(), w = n.useMemo(() => {
-    if (null == a && !b) return v;
-    let e = [...v];
+  } = (0, c.TCT)(), R = n.useMemo(() => {
+    if (null == a && !b) return C;
+    let e = [...C];
     if (null != a) {
       let {
         colors: t,
@@ -126,7 +126,7 @@ function C(e) {
       label: _.intl.string(_.t["7rOU6j"]),
       className: O.themeOption
     }), e
-  }, [a, b]), I = (0, h.Z)("(max-height: 800px)");
+  }, [a, b]), w = (0, h.Z)("(max-height: 800px)");
   return (0, s.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
@@ -138,18 +138,18 @@ function C(e) {
     }), (0, s.jsx)(c.xBx, {
       className: O.header,
       children: (0, s.jsxs)(c.Kqy, {
-        gap: I ? 4 : 8,
+        gap: w ? 4 : 8,
         children: [(0, s.jsxs)(c.Kqy, {
-          gap: I ? 8 : 16,
+          gap: w ? 8 : 16,
           children: [(0, s.jsx)("div", {
             className: O.headerImage
           }), (0, s.jsx)(c.Heading, {
-            variant: I ? "heading-lg/semibold" : "heading-xl/semibold",
+            variant: w ? "heading-lg/semibold" : "heading-xl/semibold",
             color: "header-primary",
             children: _.intl.string(_.t["7+iCG4"])
           })]
         }), (0, s.jsx)(c.Heading, {
-          variant: I ? "heading-sm/medium" : "heading-md/medium",
+          variant: w ? "heading-sm/medium" : "heading-md/medium",
           color: "text-subtle",
           children: _.intl.string(_.t.fZMMqN)
         })]
@@ -157,16 +157,16 @@ function C(e) {
     }), (0, s.jsx)(c.hzk, {
       className: O.content,
       children: (0, s.jsxs)(c.Kqy, {
-        gap: I ? 20 : 24,
+        gap: w ? 20 : 24,
         children: [(0, s.jsxs)(c.Kqy, {
-          gap: I ? 8 : 12,
+          gap: w ? 8 : 12,
           children: [(0, s.jsx)(c.Heading, {
             variant: "heading-md/medium",
             children: _.intl.string(_.t.Ksh3ik)
           }), (0, s.jsx)(N, {
             showLabels: false,
-            options: w,
-            selected: C,
+            options: R,
+            selected: k,
             onSelect: e => {
               K(e), "gradient" === e ? null != a && (0, m.ZI)({
                 backgroundGradientPresetId: a.id,
@@ -191,7 +191,7 @@ function C(e) {
             })
           })]
         }), (0, s.jsxs)(c.Kqy, {
-          gap: I ? 8 : 12,
+          gap: w ? 8 : 12,
           children: [(0, s.jsxs)(c.Kqy, {
             gap: 0,
             children: [(0, s.jsxs)(c.Kqy, {
@@ -202,7 +202,7 @@ function C(e) {
                 variant: "heading-md/medium",
                 children: _.intl.string(_.t["C/5V0A"])
               }), (0, s.jsx)(c.IGR, {
-                color: c.TVs.colors.BG_BRAND.css,
+                color: c.TVs.colors.BACKGROUND_BRAND.css,
                 text: _.intl.string(_.t.y2b7CA)
               })]
             }), (0, s.jsx)(c.Text, {
@@ -212,7 +212,7 @@ function C(e) {
             })]
           }), (0, s.jsx)(N, {
             showLabels: true,
-            options: k,
+            options: v,
             selected: f,
             onSelect: e => {
               switch (e) {

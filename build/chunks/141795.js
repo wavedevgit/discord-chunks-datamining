@@ -403,17 +403,17 @@ class k extends Chunk476326.ZP {
         compressTimeMs: 0
       };
     try {
-      if (o = await (0, A.t3)(e), t()) return null;
+      if (o = await (0, C.t3)(e), t()) return null;
       if (o.success && null != o.convertedBlob) w.log("webp conversion worked for ".concat(n, ": ").concat(o.sizeBefore, " -> ").concat(o.sizeAfter, " bytes (").concat(o.compressionRatio.toFixed(2), "x)")), c.convertedFile = new File([o.convertedBlob], e.name, {
         type: "image/webp",
         lastModified: e.lastModified
       }), c.convertedMimeType = "image/webp", c.hashTimeMs = null != (r = o.hashTimeMs) ? r : true;
       else {
-        let e = null != (i = o.reason) ? i : A.S8.UNKNOWN_ERROR;
+        let e = null != (i = o.reason) ? i : C.S8.UNKNOWN_ERROR;
         w.log("webp conversion skipped for ".concat(n, ": ").concat(e)), c.conversionFailureReason = e
       }
     } catch (e) {
-      w.warn("webp conversion failed for ".concat(n, ":"), e), c.conversionFailureReason = A.S8.UNKNOWN_ERROR
+      w.warn("webp conversion failed for ".concat(n, ":"), e), c.conversionFailureReason = C.S8.UNKNOWN_ERROR
     }
     let u = Math.round(performance.now() - l);
     return c.compressTimeMs = null != (a = null == o ? true : o.compressTimeMs) ? a : u, c
@@ -479,7 +479,7 @@ class k extends Chunk476326.ZP {
   trackUploadFinished(e) {
     var t, n, r, i, a;
     let o = null != this.startTime ? performance.now() - this.startTime : false;
-    g.default.track(C.rMx.ATTACHMENT_UPLOAD_FINISHED, {
+    g.default.track(A.rMx.ATTACHMENT_UPLOAD_FINISHED, {
       duration_ms: o,
       file_size: this.currentSize,
       pre_compression_file_size: this.preCompressionSize,

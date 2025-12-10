@@ -60,12 +60,12 @@ function h(e) {
       applicationId: t
     } = e;
     return t
-  }), [O]), A = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), C = _(T, v || 1 === O.length);
-  if (y || 0 === O.length || A === d.OGo.FRIEND) return null;
+  }), [O]), C = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), A = _(T, v || 1 === O.length);
+  if (y || 0 === O.length || C === d.OGo.FRIEND) return null;
   if (1 === O.length) {
     let {
       applicationId: e
-    } = O[0], n = C.get(e);
+    } = O[0], n = A.get(e);
     return null == n ? null : (0, r.jsx)(o.sNh, {
       color: g,
       id: t,
@@ -81,7 +81,7 @@ function h(e) {
   return (O.forEach(e => {
     let {
       applicationId: t
-    } = e, n = C.get(t);
+    } = e, n = A.get(t);
     null != n && N.push((0, r.jsx)(o.sNh, {
       id: t,
       label: n.name,

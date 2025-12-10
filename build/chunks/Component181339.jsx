@@ -70,7 +70,7 @@ function S(e) {
         color: "text-default",
         children: E.intl.string(E.t.Mg843t)
       }), n || null == l ? null : (0, r.jsxs)(d.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         variant: "text-xs/medium",
         className: I.valuePill,
         children: [(0, r.jsx)(d.VL1, {

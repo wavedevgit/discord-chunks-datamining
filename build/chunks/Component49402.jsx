@@ -84,26 +84,26 @@ function h(e, t, n) {
       style: S,
       gap: I,
       experimental_useStack: T
-    } = u, A = _(u, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
+    } = u, C = _(u, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
     let {
-      scrollerRef: C,
+      scrollerRef: A,
       getScrollerState: N
-    } = (0, c.Ke)(), P = (0, c.t2)(C, E);
+    } = (0, c.Ke)(), P = (0, c.t2)(A, E);
     i.useImperativeHandle(f, () => d({
-      getScrollerNode: () => C.current,
+      getScrollerNode: () => A.current,
       getScrollerState: N
-    }, (0, c.Ue)(C, N, P, E)), [C, N, E, P]);
+    }, (0, c.Ue)(A, N, P, E)), [A, N, E, P]);
     let R = (0, c.tT)({
       paddingFix: v,
       orientation: E,
       dir: g,
       className: h,
-      scrollerRef: C,
+      scrollerRef: A,
       specs: a
     });
     return T ? (0, r.jsx)(l.K, p(d({
       gap: I,
-      ref: C,
+      ref: A,
       className: o()(h, {
         [e]: true,
         [t]: y,
@@ -111,13 +111,13 @@ function h(e, t, n) {
       }),
       style: (0, c.uT)(S, E, b),
       dir: g
-    }, A), {
+    }, C), {
       children: (0, r.jsxs)(s.Jc, {
-        containerRef: C,
+        containerRef: A,
         children: [m, R]
       })
     })) : (0, r.jsx)("div", p(d({
-      ref: C,
+      ref: A,
       className: o()(h, {
         [e]: true,
         [t]: y,
@@ -125,9 +125,9 @@ function h(e, t, n) {
       }),
       style: (0, c.uT)(S, E, b),
       dir: g
-    }, A), {
+    }, C), {
       children: (0, r.jsxs)(s.Jc, {
-        containerRef: C,
+        containerRef: A,
         children: [m, R]
       })
     }))

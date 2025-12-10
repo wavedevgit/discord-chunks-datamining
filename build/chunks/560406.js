@@ -24,8 +24,8 @@ var Chunk46015 = require("./46015.js"),
   S = Chunk46015([].push),
   I = Chunk46015("".replace),
   T = Chunk46015("".split),
-  A = Chunk46015("".toLowerCase),
-  C = function(e) {
+  C = Chunk46015("".toLowerCase),
+  A = function(e) {
     for (var t = [], n = 0, r = e.length; n < r;) {
       var i = O(e, n++);
       if (i >= 55296 && i <= 56319 && n < r) {
@@ -45,7 +45,7 @@ var Chunk46015 = require("./46015.js"),
   },
   R = function(e) {
     var t, n, r = [],
-      l = (e = C(e)).length,
+      l = (e = A(e)).length,
       c = d,
       p = 0,
       _ = u;
@@ -60,12 +60,12 @@ var Chunk46015 = require("./46015.js"),
       for (p += (O - c) * I, c = O, t = 0; t < e.length; t++) {
         if ((n = e[t]) < c && ++p > i) throw new g(m);
         if (n === c) {
-          for (var T = p, A = a;;) {
-            var R = A <= _ ? o : A >= _ + s ? s : A - _;
+          for (var T = p, C = a;;) {
+            var R = C <= _ ? o : C >= _ + s ? s : C - _;
             if (T < R) break;
             var D = T - R,
               w = a - R;
-            S(r, y(N(R + D % w))), T = b(D / w), A += a
+            S(r, y(N(R + D % w))), T = b(D / w), C += a
           }
           S(r, y(N(T))), _ = P(p, I, E === h), p = 0, E++
         }
@@ -76,7 +76,7 @@ var Chunk46015 = require("./46015.js"),
   };
 module.exports = function(e) {
   var t, n, r = [],
-    i = T(I(A(e), _, "."), ".");
+    i = T(I(C(e), _, "."), ".");
   for (t = 0; t < i.length; t++) S(r, E(p, n = i[t]) ? "xn--" + R(n) : n);
   return v(r, ".")
 }

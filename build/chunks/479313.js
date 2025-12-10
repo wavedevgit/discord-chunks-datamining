@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   $l: () => R,
-  Fc: () => C,
+  Fc: () => A,
   G1: () => O,
   JR: () => T,
-  U$: () => A,
+  U$: () => C,
   ZP: () => D,
   e7: () => S,
   wv: () => I,
@@ -116,14 +116,14 @@ function T(e, t) {
   })
 }
 
-function A(e, t) {
+function C(e, t) {
   l.Z.dispatch({
     type: "SET_SUMMARY_FEEDBACK",
     summary: e,
     rating: t
   })
 }
-async function C() {
+async function A() {
   var e;
   let t, n;
   if (!Chunk765104.Z.shouldFetchChannelAffinities()) return Promise.resolve(null);
@@ -206,7 +206,7 @@ function P() {
     exports && module();
     async function e() {
       try {
-        await C()
+        await A()
       } catch (e) {}
       await N(require.split(","))
     }
@@ -226,7 +226,7 @@ async function R(e) {
   }
 }
 let D = {
-  setSummaryFeedback: A,
+  setSummaryFeedback: C,
   updateVisibleMessages: T,
   setSelectedSummary: I,
   setHighlightedSummary: v,

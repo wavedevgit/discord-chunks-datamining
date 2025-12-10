@@ -273,12 +273,12 @@ let V = Chunk428595.Z.RULES,
           isNotification: r,
           guild: a,
           channelId: o
-        } = n, s = C.default.getUser(e[1]);
+        } = n, s = A.default.getUser(e[1]);
         if (null == s) return {
           content: e[0]
         };
         let l = D.ZP.getUserTag(s, {
-          identifiable: r && A.Z.enabled ? "never" : "always"
+          identifiable: r && C.Z.enabled ? "never" : "always"
         });
         if (r) {
           var c;
@@ -347,7 +347,7 @@ let V = Chunk428595.Z.RULES,
       parse(e) {
         let t = E.Z.getChannel(e[1]);
         return {
-          content: null == t ? e[0] : (0, l.F6)(t, C.default, T.Z, true, true)
+          content: null == t ? e[0] : (0, l.F6)(t, A.default, T.Z, true, true)
         }
       }
     },
@@ -478,7 +478,7 @@ function ea(e) {
   let o = i()(t.reduce((e, t) => {
       let {
         userId: n
-      } = t, r = C.default.getUser(n);
+      } = t, r = A.default.getUser(n);
       return null == r || e.push({
         id: n,
         text: r.tag

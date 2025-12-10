@@ -31,8 +31,8 @@ function f(e) {
     dataBinding: S,
     onDataBindingChange: I,
     touchScrollEnabled: T = true,
-    dynamicDataBinding: A,
-    listenOnDocumentBody: C,
+    dynamicDataBinding: C,
+    listenOnDocumentBody: A,
     eventCapture: N,
     assetLoader: P,
     onLoad: R
@@ -51,7 +51,7 @@ function f(e) {
       alignment: null != h ? u.Y[h] : o.Alignment.Center
     }),
     isTouchScrollEnabled: T,
-    listenOnDocumentBody: C,
+    listenOnDocumentBody: A,
     eventCapture: N,
     assetLoader: P,
     onLoad: R
@@ -91,7 +91,7 @@ function f(e) {
     artboard: b,
     artboardProperties: v,
     dataBinding: S,
-    dynamicDataBinding: A,
+    dynamicDataBinding: C,
     onDataBindingChange: I
   }), i.useEffect(() => {
     if (null != k && "short-loop" === y && D.reducedMotion.enabled) {

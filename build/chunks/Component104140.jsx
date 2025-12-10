@@ -145,9 +145,9 @@ function O(e) {
     lowerBadge: O,
     rounded: v = false,
     "aria-hidden": S
-  } = e, [I, T] = i.useState(false), A = () => {
+  } = e, [I, T] = i.useState(false), C = () => {
     T(true)
-  }, C = () => {
+  }, A = () => {
     T(false)
   }, N = null != y, P = null != O, R = i.useId(), D = "".concat(R, "-upper_badge_masks"), w = "".concat(R, "-lower_badge_masks"), x = "".concat(R, "-blob_mask"), L = "".concat(R, "-stroke_mask"), j = "".concat(R, "-highlight_mask"), M = (null == f ? true : f.width) != null ? f.width : h, k = (null == f ? true : f.height) != null ? f.height : h, U = {
     width: d ? n : n + 8,
@@ -158,8 +158,8 @@ function O(e) {
   return (0, r.jsxs)("div", {
     className: o()(a, c.wrapper),
     style: l,
-    onFocus: A,
-    onBlur: C,
+    onFocus: C,
+    onBlur: A,
     "aria-hidden": S,
     children: [(0, r.jsxs)("svg", {
       width: U.width,

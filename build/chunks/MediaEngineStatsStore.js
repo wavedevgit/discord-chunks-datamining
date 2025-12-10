@@ -45,11 +45,11 @@ function h(e, t, n, r, i) {
       minVersion: e
     }), null == I) return n;
   let T = m(I) ? null != (o = I.packetsSent) ? o : 0 : null != (s = I.packetsReceived) ? s : 0,
-    A = m(I) ? null != (l = I.packetsLost) ? l : 0 : null != (c = I.packetsLost) ? c : 0,
-    C = m(I) ? null != (u = I.frameRateEncode) ? u : 0 : null != (d = I.frameRateDecode) ? d : 0,
+    C = m(I) ? null != (l = I.packetsLost) ? l : 0 : null != (c = I.packetsLost) ? c : 0,
+    A = m(I) ? null != (u = I.frameRateEncode) ? u : 0 : null != (d = I.frameRateDecode) ? d : 0,
     N = null != (f = null == (a = I.resolution) ? true : a.height) ? f : 0,
     P = m(I) && null != (p = I.videoEntropy) ? p : 0;
-  n.numDatapoints += 1, n.frameRateAggregated += C, n.resolutionAggregated += N, n.entropyAggregated += P;
+  n.numDatapoints += 1, n.frameRateAggregated += A, n.resolutionAggregated += N, n.entropyAggregated += P;
   let R = null == i ? true : i.find(e => "video" === e.type);
   if (null != R && t >= n.minVersion) {
     n.numDatapoints -= 1;
@@ -58,8 +58,8 @@ function h(e, t, n, r, i) {
       r = m(R) ? null != (y = R.frameRateEncode) ? y : 0 : null != (O = R.frameRateDecode) ? O : 0,
       i = m(R) && null != (v = R.videoEntropy) ? v : 0,
       a = null != (S = null == (_ = R.resolution) ? true : _.height) ? S : 0;
-    n.frameRateAggregated -= r, n.resolutionAggregated -= a, n.entropyAggregated -= i, n.packetsSentOrReceived = T - e, n.packetsLost = A - t
-  } else n.packetsSentOrReceived = T, n.packetsLost = A;
+    n.frameRateAggregated -= r, n.resolutionAggregated -= a, n.entropyAggregated -= i, n.packetsSentOrReceived = T - e, n.packetsLost = C - t
+  } else n.packetsSentOrReceived = T, n.packetsLost = C;
   return n.frameRate = n.frameRateAggregated / n.numDatapoints, n.resolution = n.resolutionAggregated / n.numDatapoints, n.entropy = n.entropyAggregated / n.numDatapoints, n.packetLossRate = n.packetsLost / (n.packetsSentOrReceived + n.packetsLost), n
 }
 

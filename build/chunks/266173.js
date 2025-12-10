@@ -74,13 +74,13 @@ function T(e) {
       return p.$S
   }
 }
-let A = {
+let C = {
   [Chunk981631.Odu.VIDEO]: true,
   [Chunk981631.Odu.VOICE]: true,
   [Chunk981631.Odu.VOICE_V3]: true
 };
 
-function C(e) {
+function A(e) {
   let [t] = l.Z.getWidgetsByTypeAndLayout(e, T(e));
   if (null != t || ([t] = l.Z.getWidgetsByType(e), null != t)) return t;
   for (let t of Object.values(l.Z.getAllWidgets()))
@@ -125,7 +125,7 @@ class P {
       })
     }), m(this, "getDefaultWidgetPinned", e => {
       let t = this._defaultWidgetPinned[e];
-      return null != t ? t : e in A && A[e]
+      return null != t ? t : e in C && C[e]
     })
   }
 }
@@ -136,12 +136,12 @@ class R {
         pinned: t
       })
     }), m(this, "hasWidgetSetting", e => this._storage.hasWidgetSetting(e)), m(this, "initializeWidget", e => {
-      let t = C(e);
+      let t = A(e);
       if (null == t || this.hasWidgetSetting(e)) return;
       let n = t.pinned;
       this.updateWidgetPinned(e, n)
     }), m(this, "unpinWidget", async e => {
-      let t = C(e);
+      let t = A(e);
       null != t && (this.initializeWidget(e), __OVERLAY__ || await this._config.overrideDefaultWidgetPinned(e, O), await (0, a.xh)(t.id, {
         forcedPinnedState: O,
         shouldTrack: v
@@ -151,7 +151,7 @@ class R {
       let n = this._storage.getWidgetSetting(e),
         r = this._config.getDefaultWidgetPinned(e),
         i = null != (t = null == n ? true : n.pinned) ? t : r,
-        o = C(e);
+        o = A(e);
       null != o && (e === _.Odu.VOICE && (i = true), __OVERLAY__ || await this._config.restoreDefaultWidgetPinned(e), null != i && await (0, a.xh)(o.id, {
         forcedPinnedState: i,
         shouldTrack: v

@@ -43,7 +43,7 @@ function u(e) {
         verified: g
       }) : null, p ? null : (0, r.jsx)(s.Text, {
         tag: "span",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         className: d.userTag,
         variant: "text-sm/normal",
         children: m

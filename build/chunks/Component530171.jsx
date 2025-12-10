@@ -34,15 +34,15 @@ function h(e) {
   let T = i.useCallback(e => {
       null != e.target && I.current && (I.current = false, null == g || g(a))
     }, [a, g]),
-    A = i.useMemo(() => (0, s.debounce)(T, 50), [T]),
-    C = (0, p.y)(A, [], {
+    C = i.useMemo(() => (0, s.debounce)(T, 50), [T]),
+    A = (0, p.y)(C, [], {
       enabled: null != g
     }),
     N = a && null != O;
   return i.useLayoutEffect(() => {
     null != y.current && null == O && v(y.current.clientHeight)
   }, [O]), (0, r.jsxs)(l.pJ, {
-    ref: C,
+    ref: A,
     isExpanded: a,
     onExpandedChange: h,
     children: [(0, r.jsx)(_.x, {

@@ -69,14 +69,14 @@ function E(e) {
     preview: v,
     author: S
   } = e, I = null != O ? O : (0, l.k)(n), T = (0, s.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
-    content: A
+    content: C
   } = (0, u.Z)(n, {
     hideSimpleEmbedContent: b,
     allowList: T,
     allowHeading: T,
     allowLinks: true,
     previewLinkTarget: true
-  }), C = i.useMemo(() => (0, f.Z)(g(m({}, e), {
+  }), A = i.useMemo(() => (0, f.Z)(g(m({}, e), {
     channel: a,
     guildId: I
   })), [e, a, I]);
@@ -87,8 +87,8 @@ function E(e) {
       [p.cozyMessage]: !_,
       [p.groupStart]: E
     }),
-    childrenHeader: C,
-    childrenMessageContent: (0, d.Z)(e, A),
+    childrenHeader: A,
+    childrenMessageContent: (0, d.Z)(e, C),
     disableInteraction: y,
     author: S,
     preview: v

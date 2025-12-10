@@ -25,12 +25,12 @@ function g(t) {
   let {
     guildId: g,
     userId: w,
-    anaylticsLocations: C,
-    transitionState: x,
+    anaylticsLocations: x,
+    transitionState: C,
     onClose: D
   } = t, {
     analyticsLocations: k
-  } = (0, c.ZP)(), _ = null != (e = null != (n = null == C ? true : C[0]) ? n : null == k ? true : k[0]) ? e : null, T = (0, s.e7)([h.default], () => h.default.getUser(w), [w]), [S, U] = (0, f.ZP)(w, g), [Z, E] = i.useState(false), P = i.useCallback(async () => {
+  } = (0, c.ZP)(), _ = null != (e = null != (n = null == x ? true : x[0]) ? n : null == k ? true : k[0]) ? e : null, T = (0, s.e7)([h.default], () => h.default.getUser(w), [w]), [S, U] = (0, f.ZP)(w, g), [Z, E] = i.useState(false), P = i.useCallback(async () => {
     if (null != T) {
       E(true);
       try {
@@ -53,7 +53,7 @@ function g(t) {
   }), i.useEffect(() => {
     (null == T || null == g) && D()
   }), null == T || null == g) ? null : (0, l.jsx)(a.Modal, {
-    transitionState: x,
+    transitionState: C,
     onClose: D,
     title: b.intl.string(b.t["+ZD3ou"]),
     subtitle: b.intl.format(b.t["t+abNU"], {
@@ -78,7 +78,7 @@ function g(t) {
     }],
     children: (0, l.jsx)(r.Text, {
       variant: "text-md/normal",
-      color: "interactive-normal",
+      color: "interactive-text-default",
       children: b.intl.format(b.t.KtENkK, {
         link: m.cu
       })

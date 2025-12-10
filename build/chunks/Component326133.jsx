@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -88,7 +88,7 @@ let R = 490,
   x = 200,
   L = 120,
   j = Chunk473749.forwardRef(function(e, t) {
-    var n, a, I, A, P, j, M, k, U;
+    var n, a, I, C, P, j, M, k, U;
     let {
       channel: G,
       type: Z,
@@ -99,7 +99,7 @@ let R = 490,
     } = e, Y = (0, m.Dt)(), W = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(G.guild_id)) ? e : null
-    }, [G.guild_id]), K = i.useRef(null), [z, q, Q] = (0, O.Z)(C(T({}, e), {
+    }, [G.guild_id]), K = i.useRef(null), [z, q, Q] = (0, O.Z)(A(T({}, e), {
       guild: W
     }), t, K), X = (null == (n = Z.autocomplete) ? true : n.forceChatLayer) ? g.ZP : h.ZP, J = (0, p.DJ)(z.selectedIndex);
     (0, _.KR)(Y, z.isVisible, J);
@@ -138,7 +138,7 @@ let R = 490,
       },
       ei = R;
     null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? D : w);
-    let ea = Math.max(B, null != (k = null == V || null == (A = V.current) ? true : A.clientHeight) ? k : 0),
+    let ea = Math.max(B, null != (k = null == V || null == (C = V.current) ? true : C.clientHeight) ? k : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);
     let es = (0, r.jsx)(p.ZP, {
@@ -153,7 +153,7 @@ let R = 490,
             var {
               ref: t
             } = e, n = N(e, ["ref"]);
-            return (0, r.jsx)(c.h21, C(T({
+            return (0, r.jsx)(c.h21, A(T({
               id: Y,
               ref: e => {
                 var n;

@@ -27,7 +27,7 @@ let E = function(t) {
     }), e()
   }, [e]), O = s.useCallback(() => {
     E || (g(true), (0, c.Uj)(n).then(() => {
-      e(), (0, d.t)({
+      e(), (0, T.t)({
         text: x.intl.string(x.t.FhgVWi),
         id: "safety-tools-report-false-positive"
       })
@@ -35,7 +35,7 @@ let E = function(t) {
       g(false), (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.R0RpRX), r.ToastType.FAILURE))
     }))
   }, [n, e, E]);
-  return (0, i.jsxs)(T.Z, {
+  return (0, i.jsxs)(d.Z, {
     style: _.wrapperStyle,
     children: [(0, i.jsx)(r.Text, {
       variant: "text-md/normal",

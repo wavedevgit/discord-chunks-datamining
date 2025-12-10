@@ -225,7 +225,7 @@ function I(e) {
 function T(e) {
   if (e) return parseInt(e) > 0 ? e : true
 }
-class A {
+class C {
   constructor() {
     c(this, "targetElement"), c(this, "targetAncestry"), c(this, "boundingBox"), c(this, "className"), c(this, "offset", 0), c(this, "zIndex"), c(this, "container", null), c(this, "themeOptions"), c(this, "invalidate", () => null)
   }
@@ -312,9 +312,9 @@ class A {
     return exports
   }
 }
-let C = new A;
-"u" > typeof window && C.setContainer(document.body);
-let N = Chunk473749.createContext(C);
+let A = new C;
+"u" > typeof window && A.setContainer(document.body);
+let N = Chunk473749.createContext(A);
 var P = function(e, t, n, r) {
   var i = n ? n.call(r, e, t) : true;
   if (true !== i) return !!i;
@@ -361,7 +361,7 @@ function M(e) {
     containerRef: t,
     children: n,
     themeOptions: r
-  } = e, i = a.useRef(new A);
+  } = e, i = a.useRef(new C);
   return a.useEffect(() => {
     i.current.setContainer(t.current), i.current.setThemeOptions(r)
   }, [t.current]), (0, o.jsxs)(N.Provider, {

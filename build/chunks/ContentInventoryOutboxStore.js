@@ -2,7 +2,7 @@
 /** chunk id: 353647, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -116,7 +116,7 @@ function I() {
 function T() {
   S()
 }
-class A extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   getMatchingOutboxEntry(e) {
     let {
       activity: t,
@@ -140,8 +140,8 @@ class A extends(r = Chunk442837.ZP.Store) {
     return m
   }
 }
-s(A, "displayName", "ContentInventoryOutboxStore");
-let C = new A(Chunk570140.Z, {
+s(C, "displayName", "ContentInventoryOutboxStore");
+let A = new C(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   LOGOUT: T,
   CONTENT_INVENTORY_FETCH_OUTBOX_START: h,

@@ -2,7 +2,7 @@
 /** chunk id: 886217, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,11 +38,11 @@ let T = (e, t, n, r) => {
       userName: a
     }).replaceAll("*", "")
   },
-  A = (e, t) => S.intl.formatToPlainString(S.t.Osmpr9, {
+  C = (e, t) => S.intl.formatToPlainString(S.t.Osmpr9, {
     username: t.username,
     artist: e.extra.artist.name
   }),
-  C = e => {
+  A = e => {
     let {
       channel: t,
       entry: n,
@@ -50,7 +50,7 @@ let T = (e, t, n, r) => {
       onVoiceChannelPreview: f
     } = e, {
       parent_title: I,
-      provider: C,
+      provider: A,
       image_url: N
     } = n.extra.media, P = n.extra.artist.name, R = (0, s.e7)([c.default], () => c.default.getUser(n.author_id)), {
       primaryColor: D,
@@ -86,7 +86,7 @@ let T = (e, t, n, r) => {
         onClickThumbnail: M,
         channel: t,
         entry: n,
-        headerIcons: C === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
+        headerIcons: A === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
           onClick: j,
           Icon: u.Z,
           "aria-label": S.intl.string(S.t["0ZB/XE"])
@@ -107,7 +107,7 @@ let T = (e, t, n, r) => {
           user: R,
           channel: t,
           generateReactionImage: L,
-          reactionImageAltText: A(n, R),
+          reactionImageAltText: C(n, R),
           entry: n
         })
       })]

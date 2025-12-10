@@ -65,9 +65,9 @@ function T(e, t) {
   }), e
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -75,7 +75,7 @@ function A(e, t) {
   return i
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -102,8 +102,8 @@ function P(e) {
     hidden: S = false,
     toolbar: I,
     mobileToolbar: T,
-    "aria-label": A,
-    "aria-labelledby": C,
+    "aria-label": C,
+    "aria-labelledby": A,
     scrollable: P,
     role: R,
     hideSearch: D,
@@ -143,8 +143,8 @@ function P(e) {
     transparent: v,
     hidden: S,
     onDoubleClick: () => N(x),
-    "aria-label": A,
-    "aria-labelledby": C,
+    "aria-label": C,
+    "aria-labelledby": A,
     role: R,
     scrollable: P,
     children: t
@@ -173,7 +173,7 @@ function R(e) {
 function D(e) {
   var {
     isAuthenticated: t = true
-  } = e, n = A(e, ["isAuthenticated"]);
+  } = e, n = C(e, ["isAuthenticated"]);
   let {
     analyticsLocations: i
   } = (0, l.ZP)(s.Z.HEADER_BAR);

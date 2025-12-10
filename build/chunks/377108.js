@@ -9,7 +9,7 @@ require.d(exports, {
   PL: () => v,
   UY: () => L,
   YI: () => I,
-  _F: () => A,
+  _F: () => C,
   h_: () => N,
   ji: () => u,
   lG: () => M,
@@ -401,16 +401,16 @@ class g extends Chunk495852.C {
           a = t.fixed64().toString();
           break;
         case 2:
-          o = A.internalBinaryRead(t, t.uint32(), n);
+          o = C.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.StickerFrecency.stickers")
       }
     }
-    e[null != a ? a : "0"] = null != o ? o : A.create()
+    e[null != a ? a : "0"] = null != o ? o : C.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.stickers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), A.internalBinaryWrite(e.stickers[i], t, n), t.join().join();
+    for (let i of Object.keys(e.stickers)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), C.internalBinaryWrite(e.stickers[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -422,7 +422,7 @@ class g extends Chunk495852.C {
       K: 6,
       V: {
         kind: "message",
-        T: () => A
+        T: () => C
       }
     }])
   }
@@ -505,16 +505,16 @@ class O extends Chunk495852.C {
           a = t.string();
           break;
         case 2:
-          o = A.internalBinaryRead(t, t.uint32(), n);
+          o = C.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.EmojiFrecency.emojis")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : A.create()
+    e[null != a ? a : ""] = null != o ? o : C.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.emojis)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), A.internalBinaryWrite(e.emojis[i], t, n), t.join().join();
+    for (let i of Object.keys(e.emojis)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), C.internalBinaryWrite(e.emojis[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -526,7 +526,7 @@ class O extends Chunk495852.C {
       K: 9,
       V: {
         kind: "message",
-        T: () => A
+        T: () => C
       }
     }])
   }
@@ -568,16 +568,16 @@ class S extends Chunk495852.C {
           a = t.string();
           break;
         case 2:
-          o = A.internalBinaryRead(t, t.uint32(), n);
+          o = C.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.ApplicationCommandFrecency.application_commands")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : A.create()
+    e[null != a ? a : ""] = null != o ? o : C.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.applicationCommands)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), A.internalBinaryWrite(e.applicationCommands[i], t, n), t.join().join();
+    for (let i of Object.keys(e.applicationCommands)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), C.internalBinaryWrite(e.applicationCommands[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -589,7 +589,7 @@ class S extends Chunk495852.C {
       K: 9,
       V: {
         kind: "message",
-        T: () => A
+        T: () => C
       }
     }])
   }
@@ -672,8 +672,8 @@ class T extends Chunk495852.C {
     }])
   }
 }
-let A = new T;
-class C extends Chunk495852.C {
+let C = new T;
+class A extends Chunk495852.C {
   create(e) {
     let t = {
       soundIds: []
@@ -720,7 +720,7 @@ class C extends Chunk495852.C {
     }])
   }
 }
-let N = new C;
+let N = new A;
 class P extends Chunk495852.C {
   create(e) {
     let t = {
@@ -757,16 +757,16 @@ class P extends Chunk495852.C {
           a = t.string();
           break;
         case 2:
-          o = A.internalBinaryRead(t, t.uint32(), n);
+          o = C.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.HeardSoundFrecency.heard_sounds")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : A.create()
+    e[null != a ? a : ""] = null != o ? o : C.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.heardSounds)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), A.internalBinaryWrite(e.heardSounds[i], t, n), t.join().join();
+    for (let i of Object.keys(e.heardSounds)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), C.internalBinaryWrite(e.heardSounds[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -778,7 +778,7 @@ class P extends Chunk495852.C {
       K: 9,
       V: {
         kind: "message",
-        T: () => A
+        T: () => C
       }
     }])
   }
@@ -820,16 +820,16 @@ class D extends Chunk495852.C {
           a = t.string();
           break;
         case 2:
-          o = A.internalBinaryRead(t, t.uint32(), n);
+          o = C.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.PlayedSoundFrecency.played_sounds")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : A.create()
+    e[null != a ? a : ""] = null != o ? o : C.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.playedSounds)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), A.internalBinaryWrite(e.playedSounds[i], t, n), t.join().join();
+    for (let i of Object.keys(e.playedSounds)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), C.internalBinaryWrite(e.playedSounds[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -841,7 +841,7 @@ class D extends Chunk495852.C {
       K: 9,
       V: {
         kind: "message",
-        T: () => A
+        T: () => C
       }
     }])
   }
@@ -883,16 +883,16 @@ class x extends Chunk495852.C {
           a = t.string();
           break;
         case 2:
-          o = A.internalBinaryRead(t, t.uint32(), n);
+          o = C.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.ApplicationFrecency.applications")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : A.create()
+    e[null != a ? a : ""] = null != o ? o : C.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.applications)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), A.internalBinaryWrite(e.applications[i], t, n), t.join().join();
+    for (let i of Object.keys(e.applications)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(i), t.tag(2, r.TD.LengthDelimited).fork(), C.internalBinaryWrite(e.applications[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -904,7 +904,7 @@ class x extends Chunk495852.C {
       K: 9,
       V: {
         kind: "message",
-        T: () => A
+        T: () => C
       }
     }])
   }
@@ -946,16 +946,16 @@ class j extends Chunk495852.C {
           a = t.fixed64().toString();
           break;
         case 2:
-          o = A.internalBinaryRead(t, t.uint32(), n);
+          o = C.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.GuildAndChannelFrecency.guild_and_channels")
       }
     }
-    e[null != a ? a : "0"] = null != o ? o : A.create()
+    e[null != a ? a : "0"] = null != o ? o : C.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.guildAndChannels)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), A.internalBinaryWrite(e.guildAndChannels[i], t, n), t.join().join();
+    for (let i of Object.keys(e.guildAndChannels)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), C.internalBinaryWrite(e.guildAndChannels[i], t, n), t.join().join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -967,7 +967,7 @@ class j extends Chunk495852.C {
       K: 6,
       V: {
         kind: "message",
-        T: () => A
+        T: () => C
       }
     }])
   }

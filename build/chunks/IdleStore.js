@@ -38,7 +38,7 @@ function T() {
   return v || S || (0, Chunk358085.isAndroid)() && I
 }
 
-function A() {
+function C() {
   let e = Chunk695346.CM.getSetting();
   0 === module || null != r || Date.now() - b > Math.min(module * Chunk70956.Z.Millis.SECOND, Chunk981631.OSm) || T() ? O || Chunk570140.Z.dispatch({
     type: "AFK",
@@ -49,7 +49,7 @@ function A() {
   })
 }
 
-function C() {
+function A() {
   Date.now() - b > Chunk981631.OSm || T() ? y || Chunk570140.Z.dispatch({
     type: "IDLE",
     idle: true,
@@ -61,7 +61,7 @@ function C() {
 }
 
 function N() {
-  C(), A()
+  A(), C()
 }
 
 function P() {

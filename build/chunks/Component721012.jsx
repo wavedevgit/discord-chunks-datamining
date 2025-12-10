@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
 require("./120356.js");
-var Chunk205120 = require("./205120.js"),
+var Chunk148884 = require("./148884.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk490369 = require("./490369.js");
@@ -19,7 +19,7 @@ function c(e) {
     message: i,
     profilePic: r,
     adminTitle: c,
-    emphasisColor: d = "interactive-normal"
+    emphasisColor: d = "interactive-text-default"
   } = t;
   return (0, l.jsxs)("div", {
     className: n,
@@ -64,7 +64,7 @@ function d(e) {
       let [n] = e;
       return [(n + 1) % t.length, "right"]
     })
-  }, [c, t.length]), g = t[n], h = i.useCallback((e, t, n, i) => (0, l.jsx)(u, {
+  }, [c, t.length]), g = t[n], f = i.useCallback((e, t, n, i) => (0, l.jsx)(u, {
     item: t,
     state: n,
     cleanup: i,
@@ -76,7 +76,7 @@ function d(e) {
       className: o.animatedContainer,
       children: (0, l.jsx)(a.W3x, {
         items: [g],
-        renderItem: h,
+        renderItem: f,
         getItemKey: e => e.adminTitle
       })
     }), (0, l.jsx)(a.Text, {

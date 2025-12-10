@@ -48,7 +48,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,8 +59,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -79,12 +79,12 @@ function N(e) {
   } = (0, u.$)(m), T = null != I ? I : d.ZP.getGameAssetURL({
     id: m,
     hash: b
-  }), A = (0, E.gl)();
+  }), C = (0, E.gl)();
   return (0, r.jsxs)(E.QR, {
     className: o()(S.gameContainer, {
       [S.largerGameContainer]: 0 === a
     }),
-    spring: A,
+    spring: C,
     children: [(0, r.jsx)(_.Z, {
       children: (0, r.jsxs)("div", {
         className: S.artContainer,
@@ -177,7 +177,7 @@ function P() {
       })]
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk612782.games,
-      children: Chunk120356.map((e, t) => (0, r.jsx)(N, C(T({}, e), {
+      children: Chunk120356.map((e, t) => (0, r.jsx)(N, A(T({}, e), {
         index: t
       }), "game-".concat(t)))
     })]

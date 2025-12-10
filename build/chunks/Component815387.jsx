@@ -360,7 +360,7 @@ function eH(e) {
     messageId: t.id
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(eC.Z, {
+    children: [(0, r.jsx)(eA.Z, {
       message: t,
       compact: n,
       usernameHook: s
@@ -753,7 +753,7 @@ function tn(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(A.Z, {
+  return (0, r.jsx)(C.Z, {
     userTrialOfferId: t.referralTrialOfferId,
     canRenderReferralEmbed: true,
     compact: n

@@ -29,8 +29,8 @@ function _(e) {
     onClose: _
   } = e, {
     applicationIconURL: v,
-    applicationName: y,
-    queryParams: x,
+    applicationName: x,
+    queryParams: y,
     iframeUrl: I
   } = (0, f.b8)(e), {
     width: M,
@@ -72,17 +72,17 @@ function _(e) {
         children: [(0, r.jsx)(c.qEK, {
           src: v,
           size: c.EFr.SIZE_32,
-          "aria-label": y,
+          "aria-label": x,
           className: h.applicationIcon
         }), (0, r.jsxs)("div", {
           className: h.flexRow,
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-sm/bold",
-              children: y
+              children: x
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
-              color: "interactive-normal",
+              color: "interactive-text-default",
               children: p
             })]
           }), (0, r.jsx)(l.Z, {
@@ -110,7 +110,7 @@ function _(e) {
           url: I,
           shouldRefocus: true,
           className: h.iframe,
-          queryParams: x
+          queryParams: y
         })
       })]
     })

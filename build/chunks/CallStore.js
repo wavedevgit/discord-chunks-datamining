@@ -106,7 +106,7 @@ function T(e) {
   delete g[t.id]
 }
 
-function A(e) {
+function C(e) {
   let {
     channelId: t,
     messageId: n,
@@ -133,7 +133,7 @@ function A(e) {
   }
 }
 
-function C(e) {
+function A(e) {
   var t;
   let {
     channelId: n,
@@ -217,9 +217,9 @@ let w = new D(Chunk570140.Z, {
   CONNECTION_RESUMED: S,
   CHANNEL_SELECT: I,
   CHANNEL_DELETE: T,
-  CALL_CREATE: A,
+  CALL_CREATE: C,
   CALL_UPDATE: N,
   CALL_DELETE: P,
-  CALL_ENQUEUE_RING: C,
+  CALL_ENQUEUE_RING: A,
   VOICE_CHANNEL_SELECT: R
 })

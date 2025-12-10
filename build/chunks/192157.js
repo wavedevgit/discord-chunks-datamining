@@ -6,8 +6,8 @@ require.r(exports), require.d(exports, {
   casual: () => S,
   createCasualConfiguration: () => N,
   createConfiguration: () => P,
-  parse: () => A,
-  parseDate: () => C,
+  parse: () => C,
+  parseDate: () => A,
   strict: () => I
 });
 var Chunk857376 = require("./857376.js"),
@@ -34,11 +34,11 @@ let S = new Chunk201129.k(N(false)),
   I = new Chunk201129.k(P(true, false)),
   T = new Chunk201129.k(P(false, true));
 
-function A(e, t, n) {
+function C(e, t, n) {
   return S.parse(e, t, n)
 }
 
-function C(e, t, n) {
+function A(e, t, n) {
   return S.parseDate(e, t, n)
 }
 

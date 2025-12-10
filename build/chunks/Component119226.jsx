@@ -63,9 +63,9 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+let C = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
-function C(e) {
+function A(e) {
   let {
     avatarDecoration: t
   } = e, {
@@ -78,7 +78,7 @@ function C(e) {
   });
   return (0, r.jsx)("div", {
     className: y.giftMainAnimationWrapper,
-    children: (0, r.jsx)(A, T(S({}, i), {
+    children: (0, r.jsx)(C, T(S({}, i), {
       avatarDecoration: n,
       src: a,
       className: y.avatar,
@@ -138,7 +138,7 @@ let R = e => {
   });
   let l = (0, i.EQ)(s).with({
     type: a.Z.AVATAR_DECORATION
-  }, e => (0, r.jsx)(C, {
+  }, e => (0, r.jsx)(A, {
     avatarDecoration: e
   })).with({
     type: a.Z.PROFILE_EFFECT

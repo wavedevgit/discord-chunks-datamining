@@ -108,8 +108,8 @@ function y(e) {
       caretConfig: S,
       scrollBehavior: I,
       showCloseButton: T = true,
-      isCaretHoverable: A = false,
-      shouldTrapFocus: C = false,
+      isCaretHoverable: C = false,
+      shouldTrapFocus: A = false,
       returnRef: N,
       onNudgeChange: P
     } = e,
@@ -134,7 +134,7 @@ function y(e) {
     M = i.useCallback(e => {
       w(e)
     }, []),
-    k = A ? f.caretHoverable : true,
+    k = C ? f.caretHoverable : true,
     U = _({
       targetElementRef: R.targetElementRef,
       shouldShow: R.shouldShow,
@@ -146,7 +146,7 @@ function y(e) {
       onPositionChange: M,
       onNudgeChange: P,
       scrollBehavior: I,
-      modal: C,
+      modal: A,
       returnRef: N,
       gradientOffsetBottom: 0,
       experimental_ignoreModalClicks: false

@@ -838,7 +838,7 @@ function ed(e) {
     analyticsLocations: s
   } = (0, E.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, S.pT)(Array.from(t), H.default, B.Z);
+  let c = (0, S.pT)(Array.from(t), H.default, F.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(Z.B, {
@@ -853,7 +853,7 @@ function ed(e) {
     }), (0, r.jsx)(p.Text, {
       className: en.channelNameLabel,
       variant: "text-sm/medium",
-      color: "header-muted",
+      color: "text-muted",
       children: et.intl.string(et.t.YynaLK)
     }), (0, r.jsx)(p.oil, {
       "aria-label": et.intl.string(et.t.YynaLK),
@@ -869,12 +869,12 @@ function ep(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([k.Z, D.Z, F.Z], () => {
+  let i = (0, u.cj)([k.Z, D.Z, B.Z], () => {
     let e;
     return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
       invite: e,
-      hideDiscriminator: F.Z.hidePersonalInformation,
-      hideInstantInvites: F.Z.hideInstantInvites
+      hideDiscriminator: B.Z.hidePersonalInformation,
+      hideInstantInvites: B.Z.hideInstantInvites
     })
   });
   return (0, r.jsx)(eu, er({

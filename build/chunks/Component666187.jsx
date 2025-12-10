@@ -129,8 +129,8 @@ class S extends(r = Chunk473749.Component) {
       rows: S,
       flex: I,
       autosize: T,
-      required: A,
-      onInvalid: C,
+      required: C,
+      onInvalid: A,
       inputRef: N
     } = this.props, P = T ? Chunk639317.g : "textarea", R = this.hasError(), D = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, w = this.getAriaDescribedBy();
     return (0, Chunk54381.jsxs)("div", {
@@ -163,12 +163,12 @@ class S extends(r = Chunk473749.Component) {
             minLength: Chunk772848,
             maxLength: Chunk993365 ? true : Chunk15127,
             spellCheck: g,
-            required: A,
+            required: C,
             onChange: this.onChange,
             onBlur: this.onBlur,
             onFocus: this.onFocus,
             onKeyDown: this.onKeyDown,
-            onInvalid: C,
+            onInvalid: A,
             rows: S,
             ref: N
           })

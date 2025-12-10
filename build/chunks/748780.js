@@ -2,7 +2,7 @@
 /** chunk id: 748780, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./35282.js"), require("./539854.js"), require("./583741.js");
 var Chunk282003 = require("./282003.js"),
   Chunk553468 = require("./553468.js"),
@@ -127,7 +127,7 @@ function S(e, t) {
       friction: s,
       duration: O
     })),
-    A = T;
+    C = T;
   if (c || u) {
     let i = v(t.duration, g, E);
     n = r[m](e, p(d({}, b), {
@@ -135,11 +135,11 @@ function S(e, t) {
       tension: o,
       friction: s,
       duration: i
-    })), A = r.sequence([T, n])
+    })), C = r.sequence([T, n])
   }
-  l ? A.start(() => {
+  l ? C.start(() => {
     (!h || h && h()) && (f ? f(S.bind(null, e, t)) : S(e, t))
-  }) : A.start(f)
+  }) : C.start(f)
 }
 
 function I(e) {
@@ -153,7 +153,7 @@ Chunk282003.inject.ApplyAnimatedValues(y, e => e);
 let T = {
     CLAMP: "clamp"
   },
-  A = p(d({}, Chunk282003), {
+  C = p(d({}, Chunk282003), {
     Easing: a(),
     accelerate: O,
     animate: S,

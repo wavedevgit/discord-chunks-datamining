@@ -56,7 +56,7 @@ function T(e) {
   n.forEach(e => O[t].delete(e)), 0 === O[t].size && delete O[t]
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     channelId: n
@@ -64,7 +64,7 @@ function A(e) {
   return null != t && (null == O[t] || v[t] < Date.now() - h.Z.Millis.HOUR ? (R(t), true) : (null != n && P(t, n), false))
 }
 
-function C(e) {
+function A(e) {
   let {
     guildId: t,
     channelId: n,
@@ -131,8 +131,8 @@ b(w, "displayName", "NewChannelsStore");
 let x = new w(Chunk570140.Z, {
   BULK_CLEAR_RECENTS: T,
   CHANNEL_ACK: () => true,
-  CHANNEL_SELECT: A,
-  SIDEBAR_VIEW_CHANNEL: C,
+  CHANNEL_SELECT: C,
+  SIDEBAR_VIEW_CHANNEL: A,
   SIDEBAR_VIEW_GUILD: N,
   GUILD_DELETE: S,
   CHANNEL_CREATE: I

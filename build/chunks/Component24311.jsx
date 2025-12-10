@@ -25,9 +25,9 @@ function b(e) {
     joinCallVideo: m,
     id: h,
     onCall: p
-  } = e, P = (0, u.Aq)(), j = (0, i.e7)([s.default], () => s.default.getId() === n.id), v = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), y = (0, i.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(n.id));
-  if (j || b === Z.IlC.POPOUT || y || n.bot || n.isProvisional) return null;
-  let N = () => {
+  } = e, P = (0, u.Aq)(), j = (0, i.e7)([s.default], () => s.default.getId() === n.id), v = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), N = (0, i.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(n.id));
+  if (j || b === Z.IlC.POPOUT || N || n.bot || n.isProvisional) return null;
+  let y = () => {
       null == p || p(), a.Z.openPrivateChannel({
         recipientIds: n.id,
         joinCall: true,
@@ -61,10 +61,10 @@ function b(e) {
           }
           return e
         }({
-          onSubmit: N
+          onSubmit: y
         }, n))
       })
-    } : N,
+    } : y,
     disabled: v
   })
 }

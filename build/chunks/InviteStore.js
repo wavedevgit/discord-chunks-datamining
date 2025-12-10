@@ -128,13 +128,13 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   return h(e.code, e => {
     e.state = s.r2o.APP_OPENING
   })
 }
 
-function C(e) {
+function A(e) {
   return h(e.code, e => {
     e.state = s.r2o.APP_OPENED
   })
@@ -183,8 +183,8 @@ let w = new D(Chunk570140.Z, {
   INVITE_ACCEPT: S,
   INVITE_ACCEPT_SUCCESS: I,
   INVITE_ACCEPT_FAILURE: T,
-  INVITE_APP_OPENING: A,
-  INVITE_APP_OPENED: C,
+  INVITE_APP_OPENING: C,
+  INVITE_APP_OPENED: A,
   INVITE_APP_NOT_OPENED: N,
   INVITE_FRIEND_MEMBERS_FETCH_SUCCESS: P,
   INVITE_FRIEND_MEMBERS_FETCH_FAILURE: R

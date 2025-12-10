@@ -49,15 +49,15 @@ let _ = (0, Chunk473749.createContext)({}),
       ...e,
       values: S,
       defaultClassName: "react-aria-Button"
-    }), T = (0, c.Me)(m.id), A = (0, c.Me)(), C = m["aria-labelledby"];
-    d && (C ? C = `${C} ${A}` : m["aria-label"] && (C = `${T} ${A}`));
+    }), T = (0, c.Me)(m.id), C = (0, c.Me)(), A = m["aria-labelledby"];
+    d && (A ? A = `${A} ${C}` : m["aria-label"] && (A = `${T} ${C}`));
     let N = (0, p.useRef)(d);
     (0, p.useEffect)(() => {
       let e = {
-        "aria-labelledby": C || T
+        "aria-labelledby": A || T
       };
       !N.current && b && d ? (0, a.xQ)(e, "assertive") : N.current && b && !d && (0, a.xQ)(e, "assertive"), N.current = d
-    }, [d, b, C, T]);
+    }, [d, b, A, T]);
     let P = (0, f.z)(e, {
       global: true
     });
@@ -66,7 +66,7 @@ let _ = (0, Chunk473749.createContext)({}),
       type: "submit" === m.type && d ? "button" : m.type,
       id: T,
       ref: t,
-      "aria-labelledby": C,
+      "aria-labelledby": A,
       slot: e.slot || true,
       "aria-disabled": d ? "true" : m["aria-disabled"],
       "data-disabled": e.isDisabled || true,
@@ -77,7 +77,7 @@ let _ = (0, Chunk473749.createContext)({}),
       "data-focus-visible": y || true
     }, p.createElement(i.p.Provider, {
       value: {
-        id: A
+        id: C
       }
     }, I.children))
   });

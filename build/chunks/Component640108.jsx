@@ -254,7 +254,7 @@ class Q extends(r = Chunk473749.Component) {
           minValue: 0,
           maxValue: 1,
           currentWindow: window,
-          onValueChange: e => o(e, A.Z.Types.VOLUME),
+          onValueChange: e => o(e, C.Z.Types.VOLUME),
           onToggleMute: Chunk392711,
           onVolumeShow: u,
           onVolumeHide: Chunk374470,
@@ -598,7 +598,7 @@ class et extends(i = Chunk473749.PureComponent) {
     if (null == p) return;
     s && !t.playing ? (this.play(), this.handleMouseMove(), this.handleUIUpdate(), t.hasClickedPlay && (null == _ || _.pop(s))) : !s && t.playing && (p.pause(), null == _ || _.pop(s), null == n || n()), s && null == this._analytics.metadata.hasValidFrame && this.checkVideoDecodability();
     let m = (0, I.fn)(p.parentNode, p);
-    l && !t.fullscreen && null != m ? ((0, I.Dj)(m), m.addEventListener(I.NO, this.handleFullScreenExit)) : !l && t.fullscreen && null != m && (m.removeEventListener(I.NO, this.handleFullScreenExit), (0, I.Pr)(m, m.ownerDocument)), u === A.Z.Types.DURATION && t.dragging !== A.Z.Types.DURATION && s ? p.pause() : u !== A.Z.Types.DURATION && t.dragging === A.Z.Types.DURATION && s && p.play(), c !== t.muted && (p.muted = c, null == i || i(c)), d !== t.volume && (p.volume = d, null == r || r(d))
+    l && !t.fullscreen && null != m ? ((0, I.Dj)(m), m.addEventListener(I.NO, this.handleFullScreenExit)) : !l && t.fullscreen && null != m && (m.removeEventListener(I.NO, this.handleFullScreenExit), (0, I.Pr)(m, m.ownerDocument)), u === C.Z.Types.DURATION && t.dragging !== C.Z.Types.DURATION && s ? p.pause() : u !== C.Z.Types.DURATION && t.dragging === C.Z.Types.DURATION && s && p.play(), c !== t.muted && (p.muted = c, null == i || i(c)), d !== t.volume && (p.volume = d, null == r || r(d))
   }
   componentWillUnmount() {
     this._unmounted = true, null != this._statsCollector && (this._statsCollector.destroy(), this._statsCollector = null), this._hasStatsListener && (Chunk156077.ZP.removeChangeListener(this.handleStatsStoreChange), this._hasStatsListener = false, this.props.type === Y.VIDEO && Chunk156077.ZP.clearVideoStats(this.props.src));
@@ -970,8 +970,8 @@ class et extends(i = Chunk473749.PureComponent) {
       let {
         current: n
       } = this.mediaRef;
-      if (t === A.Z.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, false);
-      else if (t === A.Z.Types.VOLUME) {
+      if (t === C.Z.Types.DURATION) null != n && isFinite(n.duration) && this.setTime(n.duration * e, false);
+      else if (t === C.Z.Types.VOLUME) {
         let t = (0, S.A)(e, 1);
         0 === t ? this.setState({
           muted: true,

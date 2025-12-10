@@ -32,13 +32,13 @@ function b(e) {
     isFetching: S,
     fetchFailed: I,
     isFetchingDetectable: T,
-    detectableFetchFailed: A
+    detectableFetchFailed: C
   } = (0, s.cj)([f.Z, _.Z], () => ({
     isFetching: f.Z.isFetchingApplication(t),
     fetchFailed: f.Z.didFetchingApplicationFail(t),
     isFetchingDetectable: _.Z.isFetching(t),
     detectableFetchFailed: _.Z.didFetchingFail(t)
-  })), C = i.useRef(null), N = i.useMemo(() => (0, m.fP)(), []);
+  })), A = i.useRef(null), N = i.useMemo(() => (0, m.fP)(), []);
   i.useEffect(() => {
     c.Z.getDetectableGamesSupplemental([t])
   }, [t]);
@@ -46,8 +46,8 @@ function b(e) {
     d.ZP.fetchApplication(t), c.Z.getDetectableGamesSupplemental([t])
   }, [t]);
   i.useEffect(() => {
-    null == a || a(null == C ? true : C.current)
-  }, [C, a]), (0, u.ZP)(() => {
+    null == a || a(null == A ? true : A.current)
+  }, [A, a]), (0, u.ZP)(() => {
     var e;
     (0, m.IS)({
       source: y,
@@ -60,7 +60,7 @@ function b(e) {
   let R = i.useMemo(() => S || T ? (0, r.jsx)("div", {
     className: o()(E.container, E.spinnerContainer),
     children: (0, r.jsx)(l.$jN, {})
-  }) : I || A || null == O || null == v ? (0, r.jsx)("div", {
+  }) : I || C || null == O || null == v ? (0, r.jsx)("div", {
     className: E.container,
     children: (0, r.jsx)(h.Z, {
       name: n,
@@ -73,9 +73,9 @@ function b(e) {
       detectedGame: v,
       onClose: b
     })
-  }), [S, T, I, A, O, v, n, P, b]);
+  }), [S, T, I, C, O, v, n, P, b]);
   return (0, r.jsx)(l.VqE, {
-    ref: C,
+    ref: A,
     "aria-label": null == O ? true : O.name,
     children: R
   })

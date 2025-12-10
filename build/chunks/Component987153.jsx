@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk990547 = require("./990547.js"),
   Chunk974955 = require("./974955.jsx"),
   Chunk200269 = require("./200269.jsx"),
@@ -72,17 +72,17 @@ function b(e) {
     onClose: S,
     contentOutsideContainer: I,
     trackingProps: T,
-    children: A
-  } = e, C = i.useId(), N = i.useMemo(() => ({
-    id: C,
-    headingId: "heading-".concat(C),
+    children: C
+  } = e, A = i.useId(), N = i.useMemo(() => ({
+    id: A,
+    headingId: "heading-".concat(A),
     onClose: S,
     dismissable: v
-  }), [v, C, S]), P = (0, f.hv)(n, a);
+  }), [v, A, S]), P = (0, f.hv)(n, a);
   return (0, r.jsx)(d.t.Provider, {
     value: N,
     children: (0, r.jsx)(c.V, {
-      id: C,
+      id: A,
       role: y,
       "aria-label": O,
       "aria-labelledby": null != O ? true : N.headingId,
@@ -100,7 +100,7 @@ function b(e) {
             "data-mana-component": "modal",
             className: o()(_.container, _["size-".concat(p)], _["padding-size-".concat(m)]),
             style: P,
-            children: A
+            children: C
           })]
         })
       })

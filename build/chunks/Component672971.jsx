@@ -70,7 +70,7 @@ class b extends Chunk473749.Component {
       finePrintClassname: I
     } = this.props, {
       hasAcceptedEULA: T,
-      hasAcceptedWithdrawalWaiver: A
+      hasAcceptedWithdrawalWaiver: C
     } = this.state;
     return (l()(!y || null != S, "subscriptionPlan cannot be null if shouldShowUpdatedPaymentModal is true"), Chunk120356 || null != module && !Chunk473749 || b) ? (0, Chunk54381.jsxs)("div", {
       className: Chunk442837,
@@ -103,7 +103,7 @@ class b extends Chunk473749.Component {
       }), b ? (0, Chunk54381.jsxs)("div", {
         className: Chunk442837,
         children: [(0, Chunk54381.jsx)(Chunk481060.Checkbox, {
-          checked: A,
+          checked: C,
           onChange: e => this.setState({
             hasAcceptedWithdrawalWaiver: e
           }),
@@ -120,7 +120,7 @@ class b extends Chunk473749.Component {
         })]
       }), y && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: Chunk388032.intl.format(Chunk388032.t["Hvo/Z5"], {
           buttonText: (0, Chunk74538.W_)(null, S),
           interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
@@ -129,7 +129,7 @@ class b extends Chunk473749.Component {
         })
       }), O && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: Chunk388032.intl.format(Chunk388032.t.Oo2FeS, {
           buttonText: (0, Chunk74538.W_)(null, S),
           interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),
@@ -138,7 +138,7 @@ class b extends Chunk473749.Component {
         })
       }), v && null != S && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: Chunk388032.intl.format(Chunk388032.t["Z2c+aV"], {
           buttonText: (0, Chunk74538.W_)(null, S),
           interval: Chunk74538.ZP.formatInterval(null == S ? true : S.interval),

@@ -204,7 +204,7 @@ function T(e) {
   null != t && n && p.delete(t)
 }
 
-function A(e) {
+function C(e) {
   var t, n, r;
   let {
     guild: i
@@ -220,7 +220,7 @@ function A(e) {
     profile: o
   }))
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk442837.ZP.Store) {
   getProfile(e) {
     var t, n;
     return null == e ? null : null != (n = null == (t = p.get(e)) ? true : t.profile) ? n : null
@@ -242,8 +242,8 @@ class C extends(r = Chunk442837.ZP.Store) {
     return null == e ? null : null != (r = null == (n = p.get(e)) || null == (t = n.error) ? true : t.code) ? r : null
   }
 }
-l(C, "displayName", "GuildProfileStore");
-let N = new C(Chunk570140.Z, {
+l(A, "displayName", "GuildProfileStore");
+let N = new A(Chunk570140.Z, {
   GUILD_PROFILE_FETCH: m,
   GUILD_PROFILE_FETCH_SUCCESS: h,
   GUILD_PROFILE_FETCH_FAILURE: g,
@@ -255,7 +255,7 @@ let N = new C(Chunk570140.Z, {
   INSTANT_INVITE_CREATE_SUCCESS: S,
   CHANNEL_CREATE: I,
   GUILD_SETTINGS_SET_WIDGET: T,
-  GUILD_UPDATE: A,
+  GUILD_UPDATE: C,
   GUILD_PROFILE_UPDATE_VISIBILITY: E,
   GUILD_PROFILE_UPDATE_VISIBILITY_SUCCESS: O,
   GUILD_PROFILE_UPDATE_VISIBILITY_FAILURE: y

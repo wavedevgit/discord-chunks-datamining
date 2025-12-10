@@ -79,20 +79,20 @@ let y = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   I = [Chunk172244.b.TEXT],
   T = [Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP, Chunk172244.b.EMOJI, Chunk172244.b.CUSTOM_EMOJI, Chunk172244.b.LIST, Chunk172244.b.HEADING, Chunk172244.b.BLOCK_QUOTE, Chunk172244.b.SUBTEXT];
 
-function A(e, t) {
+function C(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [];
   for (let r of (Array.isArray(e) || (e = [e]), e)) {
     if (true === r || !t.includes(r.type)) return null;
     if (r.type === f.b.INLINE_CODE) {
       let e = [...t, ...n];
-      if (null == A(r.validationChildContent, e)) return null
+      if (null == C(r.validationChildContent, e)) return null
     }
-    if (Array.isArray(r.content) && null == A(r.content, t)) return null
+    if (Array.isArray(r.content) && null == C(r.content, t)) return null
   }
   return e
 }
 
-function C(e) {
+function A(e) {
   let t = "";
   for (let n of e) switch (n.type) {
     case f.b.TEXT:
@@ -113,7 +113,7 @@ function C(e) {
     case f.b.UNDERLINE:
     case f.b.STRIKETHROUGH:
     case f.b.SPOILER:
-      t += C(n.content);
+      t += A(n.content);
       break;
     case f.b.TIMESTAMP:
       t += "<timestamp>";
@@ -185,9 +185,9 @@ let R = g(m({}, l().defaultRules.link), {
       j = n.allowEmojiLinks ? v : O,
       M = [...j, ...S],
       k = [...I, ...T],
-      U = A(t(E, L), M, [f.b.EMOJI]),
-      G = A(t(y, L), k);
-    if (null == U || null == G || 0 === C(U).trim().length) return u();
+      U = C(t(E, L), M, [f.b.EMOJI]),
+      G = C(t(y, L), k);
+    if (null == U || null == G || 0 === A(U).trim().length) return u();
     let Z = i().pick(t.rules, j),
       B = l().parserFor(Z)(p.whitespaceSanitized, L),
       F = _.whitespaceSanitized,

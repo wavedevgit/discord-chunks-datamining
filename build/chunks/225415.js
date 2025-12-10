@@ -2,7 +2,7 @@
 /** chunk id: 225415, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js");
 var Chunk470167 = require("./470167.js"),
   Chunk904245 = require("./904245.js"),
@@ -56,7 +56,7 @@ function T(e) {
   let t = p.Z.getChannel(e);
   ((null == t ? true : t.type) === b.d4z.GUILD_FORUM || (null == t ? true : t.type) === b.d4z.GUILD_MEDIA) && (0, c.EB)(t)
 }
-class A extends Chunk147913.Z {
+class C extends Chunk147913.Z {
   constructor(...e) {
     super(...e), O(this, "_previousAgeVerificationStatus", null), O(this, "handlePostConnectionOpen", () => {
       var e, t;
@@ -89,4 +89,4 @@ class A extends Chunk147913.Z {
     })
   }
 }
-let C = new A
+let A = new C

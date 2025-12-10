@@ -641,7 +641,7 @@ function ex() {
     className: Chunk153846.previewModeIndicator,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      color: "interactive-normal",
+      color: "interactive-text-default",
       children: Chunk388032.intl.string(Chunk388032.t["WE/cYo"])
     })
   })

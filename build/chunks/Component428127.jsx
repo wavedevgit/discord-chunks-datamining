@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk492162 = require("./492162.js"),
@@ -111,7 +111,7 @@ function y(e) {
           width: 14
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           className: m.barText,
           children: g.intl.string(g.t.FCRiT3)
         })]

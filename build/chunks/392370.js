@@ -108,11 +108,11 @@ function T(e) {
   }
 }
 
-function A(e) {
-  return [C(e), N(e), P(e), R(e)]
+function C(e) {
+  return [A(e), N(e), P(e), R(e)]
 }
 
-function C(e) {
+function A(e) {
   return t => (0, y.$d)(t).toLocaleLowerCase().startsWith(e.toLocaleLowerCase())
 }
 
@@ -335,16 +335,16 @@ function V(e) {
     return (0, E.N)(e, {
       limit: o,
       filterPredicates: [T(t)],
-      bucketPredicates: A(n),
+      bucketPredicates: C(n),
       sortComparers: [D, w]
     })
-  }, [l, c, o, t, n, _, m]), y = g.length > 0, O = b.length > 0, C = !y && !O;
+  }, [l, c, o, t, n, _, m]), y = g.length > 0, O = b.length > 0, A = !y && !O;
   return {
     commandResults: g,
     hasCommandResults: y,
     applicationResults: b,
     hasApplicationResults: O,
-    isEmptyState: C,
+    isEmptyState: A,
     loading: p && s
   }
 }

@@ -5,12 +5,12 @@ require.d(exports, {
   B0: () => N,
   Hc: () => D,
   J8: () => w,
-  Q6: () => C,
+  Q6: () => A,
   V9: () => j,
   WD: () => R,
   Zt: () => S,
   Zv: () => T,
-  _V: () => A,
+  _V: () => C,
   cv: () => L,
   gM: () => U,
   jl: () => x,
@@ -66,7 +66,7 @@ let {
     default:
       throw Error("Unexpected file type: ".concat(e))
   }
-}, A = e => null == e ? null : "".concat(e.name, ".").concat(I(e.format_type)), C = function(e) {
+}, C = e => null == e ? null : "".concat(e.name, ".").concat(I(e.format_type)), A = function(e) {
   let {
     isPreview: t = false,
     size: i = f.lE

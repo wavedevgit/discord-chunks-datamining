@@ -551,7 +551,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         badgeCount: M,
         newIndicator: (0, r.jsx)(l.IGR, {
           text: ew.intl.string(ew.t.y2b7CA),
-          color: o.Z.colors.BG_BRAND.css
+          color: o.Z.colors.BACKGROUND_BRAND.css
         }),
         newIndicatorDismissibleContentTypes: [a.z.FAMILY_CENTER_NEW_BADGE],
         url: eR.Z5c.SETTINGS("family-center")
@@ -769,7 +769,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         parent: eN.s6.APPEARANCE,
         newIndicator: (0, r.jsx)(l.IGR, {
           text: ew.intl.string(ew.t.y2b7CA),
-          color: o.Z.colors.BG_BRAND.css
+          color: o.Z.colors.BACKGROUND_BRAND.css
         })
       },
       [eN.s6.APPEARANCE_SCALING_SPACING]: {
@@ -912,7 +912,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [ew.intl.string(ew.t.B1fFpf)],
         label: ew.intl.string(ew.t.B1fFpf),
         ariaLabel: ew.intl.string(ew.t.B1fFpf),
-        element: eA.Z,
+        element: eC.Z,
         predicate: () => G.Z.isSupported(),
         url: eR.Z5c.SETTINGS("voice")
       },
@@ -978,7 +978,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.VOICE,
         searchableTitles: [ew.intl.string(ew.t["pS+K2L"]), ew.intl.string(ew.t.nuFtHH)],
         parent: eN.s6.VOICE_AND_VIDEO_VOICE,
-        predicate: () => e7 !== eC._.STUDIO
+        predicate: () => e7 !== eA._.STUDIO
       },
       [eN.s6.VOICE_AND_VIDEO_SENSITIVITY]: {
         section: eR.oAB.VOICE,
@@ -1419,7 +1419,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.NOTIFICATIONS,
         searchableTitles: [ew.intl.string(ew.t["uvIi/4"])],
         parent: eN.s6.NOTIFICATIONS,
-        predicate: () => (0, A.bH)("SettingsRendererConfig")
+        predicate: () => (0, C.bH)("SettingsRendererConfig")
       },
       [eN.s6.NOTIFICATIONS_USER_RESURRECTION]: {
         section: eR.oAB.NOTIFICATIONS,
@@ -1443,7 +1443,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.NOTIFICATIONS,
         searchableTitles: [ew.intl.string(ew.t.VxBO2F)],
         parent: eN.s6.NOTIFICATIONS,
-        predicate: () => (0, C.F4)("SettingsRendererConfig")
+        predicate: () => (0, A.F4)("SettingsRendererConfig")
       },
       [eN.s6.KEYBINDS]: {
         section: eR.oAB.KEYBINDS,

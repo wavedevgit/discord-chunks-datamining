@@ -16,7 +16,7 @@ function l(e) {
     locked: t,
     role: n,
     textVariant: l = "text-xs/medium"
-  } = e, c = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
+  } = e, c = (0, a.dQu)(a.TVs.colors.INTERACTIVE_TEXT_DEFAULT).hex();
   return (0, r.jsx)("div", {
     className: s.roleTagContainer,
     children: (0, r.jsxs)("div", {

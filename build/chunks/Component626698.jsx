@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk92951 = require("./92951.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -75,63 +75,63 @@ function j(e) {
     (0, d.Z)(p.Z.getArticleURL(I.BhN.CHECKPOINT))
   };
   return n ? (0, r.jsxs)(b.Z, {
-    className: C.unavailableContainer,
+    className: A.unavailableContainer,
     children: [(0, r.jsx)(l.Z, {
       autoPlay: !G,
       muted: true,
       playsInline: true,
       loop: true,
-      className: C.unavailableLogo,
+      className: A.unavailableLogo,
       children: (0, r.jsx)("source", {
         src: P.Z,
         type: "video/webm"
       })
     }), (0, r.jsx)(y.Z, {
       variant: "display-lg",
-      className: C.display,
-      children: A.intl.string(T.default.kimsIr)
+      className: A.display,
+      children: C.intl.string(T.default.kimsIr)
     }), (0, r.jsx)(y.Z, {
       variant: "heading-xl/medium",
-      className: C.subtitle,
-      children: A.intl.format(T.default.GNHD4i, {
+      className: A.subtitle,
+      children: C.intl.format(T.default.GNHD4i, {
         learnMoreHook: (e, t) => (0, r.jsx)(u.P3F, {
           onClick: V,
-          className: C.learnMore,
+          className: A.learnMore,
           children: (0, r.jsx)(y.Z, {
             variant: "heading-xl/medium",
-            className: C.link,
+            className: A.link,
             children: e
           })
         }, t)
       })
     }), (0, r.jsx)(y.Z, {
       variant: "text-lg/medium",
-      children: A.intl.string(T.default["xLI+Hj"])
+      children: C.intl.string(T.default["xLI+Hj"])
     }), (0, r.jsx)(g.Z, {
-      className: C.claimButton,
+      className: A.claimButton,
       textSize: 20
     })]
   }) : (0, r.jsxs)(b.Z, {
-    className: C.content,
+    className: A.content,
     noPadding: true,
     children: [!a && (0, r.jsx)(y.Z, {
       variant: "text-lg/medium",
-      className: C.disclaimer,
-      children: A.intl.format(T.default["1jPMeG"], {
+      className: A.disclaimer,
+      children: C.intl.format(T.default["1jPMeG"], {
         learnMoreHook: (e, t) => (0, r.jsx)(u.P3F, {
           onClick: V,
-          className: C.learnMore,
+          className: A.learnMore,
           children: (0, r.jsx)(y.Z, {
             variant: "text-lg/medium",
-            className: C.link,
+            className: A.link,
             children: e
           })
         }, t)
       })
     }), !a && (0, r.jsx)(y.Z, {
       variant: "text-md/medium",
-      className: C.attribution,
-      children: A.intl.format(T.default.g476ZL, {
+      className: A.attribution,
+      children: C.intl.format(T.default.g476ZL, {
         name: "Exyl"
       })
     }), a ? null : (0, r.jsx)(s.animated.div, {
@@ -141,7 +141,7 @@ function j(e) {
         muted: true,
         playsInline: true,
         loop: true,
-        className: C.logoVideo,
+        className: A.logoVideo,
         children: (0, r.jsx)("source", {
           src: P.Z,
           type: "video/webm"
@@ -152,8 +152,8 @@ function j(e) {
       autoPlay: !G,
       muted: true,
       playsInline: true,
-      className: o()(C.introVideo, {
-        [C.introVideoHidden]: !a
+      className: o()(A.introVideo, {
+        [A.introVideoHidden]: !a
       }),
       onTimeUpdate: a ? Z : true,
       children: (0, r.jsx)("source", {
@@ -163,38 +163,38 @@ function j(e) {
     }), a ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(v.Z, {
         variant: "display-lg",
-        className: C.title,
-        textClassName: C.text,
-        text: A.intl.string(T.default["CdU/PF"]),
+        className: A.title,
+        textClassName: A.text,
+        text: C.intl.string(T.default["CdU/PF"]),
         delay: x
       }), (0, r.jsx)(v.Z, {
         variant: "text-lg/medium",
-        className: C.subtitleAnimated,
-        textClassName: C.text,
-        text: A.intl.string(T.default["M/LvW0"]),
+        className: A.subtitleAnimated,
+        textClassName: A.text,
+        text: C.intl.string(T.default["M/LvW0"]),
         delay: x + v.t
       })]
     }), a ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
         style: B,
         children: [(0, r.jsx)(E.Z, {
-          className: C.knickKnacks,
+          className: A.knickKnacks,
           slide: S.yD.WELCOME
         }), (0, r.jsxs)(h.Z, {
-          contentClassName: C.startButtonContent,
+          contentClassName: A.startButtonContent,
           onClick: t,
-          "aria-label": A.intl.string(A.t.I0v0Qv),
+          "aria-label": C.intl.string(C.t.I0v0Qv),
           muteSound: true,
           children: [(0, r.jsx)(u.o1U, {
-            colorClass: C.iconColor,
+            colorClass: A.iconColor,
             color: U,
             size: "md"
-          }), A.intl.string(A.t.I0v0Qv)]
+          }), C.intl.string(C.t.I0v0Qv)]
         })]
       }), (0, r.jsx)(s.animated.div, {
         style: F,
         children: (0, r.jsx)(O.Z, {
-          className: C.ratingIcon,
+          className: A.ratingIcon,
           style: {
             color: U
           }

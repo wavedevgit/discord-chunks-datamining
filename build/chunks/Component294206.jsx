@@ -163,7 +163,7 @@ function z(e) {
   } = e, {
     analyticsLocations: a
   } = (0, m.ZP)(), s = (0, l.e7)([T.Z], () => T.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
-    e.stopPropagation(), e.currentTarget.blur(), s ? (0, I.hs)(t.soundId) : ((0, C.lF)({
+    e.stopPropagation(), e.currentTarget.blur(), s ? (0, I.hs)(t.soundId) : ((0, A.lF)({
       sound: t,
       location: U(M({}, a), {
         object: R.qAy.SOUNDBOARD_SOUND
@@ -216,7 +216,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       onMouseEnter: J,
       onSelectItem: $,
       analyticsLocations: ee,
-      buttonOverlay: et = A.Pb.PLAY,
+      buttonOverlay: et = C.Pb.PLAY,
       showLockForDisabledSound: en = true,
       inNitroLockedSection: er = false,
       isAnimated: ei = true,
@@ -236,7 +236,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     isPlayingSound: eg
   } = (0, N.Z)(I, null != (u = null == T ? true : T.id) ? u : null, null != (m = eo ? y.AY.getSetting() : null == (n = y.kU.getSetting()) ? true : n.volume) ? m : 100, !eo && (null == T ? true : T.isVocal()) ? w.w.VOICE : w.w.DEFAULT), {
     createMultipleConfettiAt: eE
-  } = i.useContext(h.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(F), eS = i.useRef(new c.Xp), eI = I.soundId === B, eT = "sound-".concat(I.soundId), eA = (0, s.JA)(eT), eC = null != ed || null != ef, eN = !(0, C.Nq)(ep, I, T) && !eo, eP = Z || Q && !eN, eR = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > eR ? "top" : "bottom", [ew, ex] = i.useState(false), eL = i.useCallback(() => {
+  } = i.useContext(h.h), eb = i.useRef(null), ey = q(I.soundId, eb.current), eO = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), ev = i.useRef(F), eS = i.useRef(new c.Xp), eI = I.soundId === B, eT = "sound-".concat(I.soundId), eC = (0, s.JA)(eT), eA = null != ed || null != ef, eN = !(0, A.Nq)(ep, I, T) && !eo, eP = Z || Q && !eN, eR = null != (O = g.Wq.useStore().bottomPosition) ? O : 0, eD = (null != (S = null == (a = eb.current) ? true : a.getBoundingClientRect().bottom) ? S : 0) + 50 > eR ? "top" : "bottom", [ew, ex] = i.useState(false), eL = i.useCallback(() => {
     ex(true)
   }, []), ej = i.useCallback(() => {
     ex(false)
@@ -265,7 +265,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       size: "xs",
       color: "currentColor",
       className: o()(L.primaryIcon, L.lockIcon, e, {
-        [L.hasEmoji]: eC
+        [L.hasEmoji]: eA
       })
     }) : null : (0, r.jsx)(f.o1U, {
       size: "xs",
@@ -298,7 +298,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
         })
       }), (0, r.jsx)("div", {
         className: L.buttonOverlayActions,
-        children: et === A.Pb.SOUNDMOJI ? (0, r.jsx)(E.ZP, {
+        children: et === C.Pb.SOUNDMOJI ? (0, r.jsx)(E.ZP, {
           sound: I,
           channel: T,
           setTooltipShowing: ex
@@ -310,7 +310,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
 
   function eV() {
     switch (et) {
-      case A.Pb.ADD:
+      case C.Pb.ADD:
         return (0, r.jsxs)("div", {
           className: L.addButtonOverlay,
           children: [(0, r.jsx)("div", {
@@ -331,10 +331,10 @@ let Q = Chunk473749.forwardRef(function(e, t) {
             }), eP && eB]
           })]
         });
-      case A.Pb.NONE:
+      case C.Pb.NONE:
         return null;
-      case A.Pb.PLAY:
-      case A.Pb.SOUNDMOJI:
+      case C.Pb.PLAY:
+      case C.Pb.SOUNDMOJI:
       default:
         return eF()
     }
@@ -357,7 +357,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
       shouldShow: !ew,
       delay: 500,
       children: (0, r.jsxs)(f.kL8, U(M({}, ec), {
-        buttonProps: U(M({}, eA), {
+        buttonProps: U(M({}, eC), {
           id: eT,
           role: "button"
         }),
@@ -381,11 +381,11 @@ let Q = Chunk473749.forwardRef(function(e, t) {
         onContextMenu: Q && !eN ? e_ : true,
         children: [(0, r.jsxs)("div", {
           className: o()(L.soundInfo, {
-            [L.hasEmoji]: eC
+            [L.hasEmoji]: eA
           }),
           "aria-hidden": true,
           ref: eb,
-          children: [eC && (0, r.jsx)(p.Z, {
+          children: [eA && (0, r.jsx)(p.Z, {
             emojiId: ed,
             emojiName: ef,
             className: L.emoji
@@ -393,7 +393,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
             variant: "text-xs/medium",
             color: W ? true : "text-muted",
             className: o()(L.soundName, {
-              [L.hasEmoji]: eC
+              [L.hasEmoji]: eA
             }),
             children: eu
           })]

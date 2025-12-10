@@ -2,7 +2,7 @@
 /** chunk id: 410853, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -54,7 +54,7 @@ function T(e) {
   })
 }
 
-function A() {
+function C() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     t = Chunk473749.useContext(Chunk324060.Q),
     n = (0, Chunk481060.dQu)(exports.primaryColor).hex(),
@@ -68,7 +68,7 @@ function A() {
       }
     } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()),
     g = 0 === Chunk596454 || 0 === Chunk639949.length,
-    [A, C] = Chunk473749.useState(Chunk883166 ? {
+    [C, A] = Chunk473749.useState(Chunk883166 ? {
       name: "\uD83D\uDE22",
       animated: false
     } : Chunk639949[0]),
@@ -77,7 +77,7 @@ function A() {
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk559153.container,
       children: [(0, Chunk54381.jsx)(Chunk693018.Z, {
-        emoji: A
+        emoji: C
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk559153.content,
         children: [(0, Chunk54381.jsxs)("div", {
@@ -108,11 +108,11 @@ function A() {
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk559153.emojis,
             children: Chunk639949.map((t, n) => (0, r.jsx)(T, {
-              onClick: () => C(t),
+              onClick: () => A(t),
               emoji: t,
               index: n,
               reducedMotion: e,
-              isActive: t === A
+              isActive: t === C
             }, "emoji-".concat(n)))
           })]
         }), (0, Chunk54381.jsx)(Chunk909397.o, {

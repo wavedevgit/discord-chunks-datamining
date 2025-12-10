@@ -24,7 +24,7 @@ function s(e) {
       color: "currentColor",
       className: a.icon
     }), (0, r.jsx)(l.Text, {
-      color: "interactive-active",
+      color: "interactive-text-active",
       variant: "text-md/semibold",
       children: t
     })]
@@ -39,7 +39,7 @@ function s(e) {
         color: "currentColor",
         className: a.icon
       }), (0, r.jsx)(l.Text, {
-        color: "interactive-active",
+        color: "interactive-text-active",
         variant: "text-md/semibold",
         children: t
       })]

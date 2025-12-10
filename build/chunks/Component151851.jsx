@@ -28,10 +28,10 @@ var Chunk120356 = require("./120356.js"),
 let S = "#ffffff",
   I = e => y.ZP.close(e),
   T = e => y.ZP.minimize(e),
-  A = (e, t) => {
+  C = (e, t) => {
     (0, b.isMac)() && !t.altKey ? y.ZP.fullscreen(e) : y.ZP.maximize(e)
   },
-  C = e => {
+  A = e => {
     let {
       children: t,
       windowKey: n,
@@ -45,7 +45,7 @@ let S = "#ffffff",
       children: (0, r.jsx)(p.Z, {})
     }), c = (0, r.jsx)(s.P3F, {
       className: v.winButtonMinMax,
-      onClick: e => A(n, e),
+      onClick: e => C(n, e),
       "aria-label": O.intl.string(O.t.G1u0hK),
       tabIndex: false,
       children: (0, r.jsx)(m.Z, {})
@@ -108,7 +108,7 @@ let S = "#ffffff",
             })
           }), (0, r.jsx)(s.P3F, {
             className: v.macButtonMaximize,
-            onClick: e => A(n, e),
+            onClick: e => C(n, e),
             "aria-label": O.intl.string(O.t["2nM3Pk"]),
             tabIndex: false,
             children: (0, r.jsx)(h.Z, {
@@ -136,7 +136,7 @@ function P(e) {
   if (f) return null;
   switch (n) {
     case b.PlatformTypes.WINDOWS:
-      return (0, r.jsx)(C, {
+      return (0, r.jsx)(A, {
         windowKey: i,
         themeOverride: s,
         hasOpenLayer: p

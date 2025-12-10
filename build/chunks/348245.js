@@ -51,9 +51,9 @@ function D(e) {
     skipLocalFetch: s,
     avoidInitialScroll: l
   } = e;
-  if (null == n || (0, C.AB)(n)) return;
+  if (null == n || (0, A.AB)(n)) return;
   let d = b.Z.getChannel(n);
-  if ((null == d ? true : d.type) === A.d4z.GUILD_STORE || (null == d ? true : d.type) != null && A.TPd.GUILD_THREADS_ONLY.has(d.type)) return;
+  if ((null == d ? true : d.type) === C.d4z.GUILD_STORE || (null == d ? true : d.type) != null && C.TPd.GUILD_THREADS_ONLY.has(d.type)) return;
   let _ = f.Z.getOrCreate(n);
   _.some(T.k5) && (R.log("Found expired attachment link, clearing messages"), f.Z.clear(n), _ = f.Z.getOrCreate(n)), null != _.jumpTargetId && null == r && (_ = _.mutate({
     jumpTargetId: null,
@@ -78,7 +78,7 @@ function D(e) {
     else {
       if ((null == d ? true : d.isThread()) && L(n)) return R.log("Jumping to start of thread ".concat(d.id)), c.Z.fetchMessages({
         channelId: n,
-        limit: A.AQB,
+        limit: C.AQB,
         jump: {
           messageId: n,
           flash: false
@@ -89,7 +89,7 @@ function D(e) {
       });
       if (!((null == d ? true : d.isThread()) && O.ZP.hasTrackedUnread(d.id)) || _.ready) return c.Z.fetchMessages({
         channelId: n,
-        limit: A.AQB,
+        limit: C.AQB,
         isPreload: a,
         skipLocalFetch: s,
         jump: {
@@ -100,7 +100,7 @@ function D(e) {
       let e = O.ZP.getTrackedAckMessageId(d.id);
       return R.log("Jumping to most recent message in thread ".concat(d.id, " - ").concat(e)), c.Z.fetchMessages({
         channelId: n,
-        limit: A.AQB,
+        limit: C.AQB,
         jump: {
           messageId: e,
           flash: false,
@@ -132,7 +132,7 @@ function j(e) {
   var t;
   if (null != r && r.channelId === e) return r;
   let n = (0, a.LX)(location.pathname, {
-    path: A.Z5c.CHANNEL(":guild", ":channel", ":message"),
+    path: C.Z5c.CHANNEL(":guild", ":channel", ":message"),
     exact: true
   });
   return {
@@ -240,7 +240,7 @@ function V(e) {
     channelId: n,
     context: r
   } = e;
-  r === A.e3s && (D({
+  r === C.e3s && (D({
     guildId: t,
     channelId: n
   }), B(t, n))
@@ -263,7 +263,7 @@ function Y(e) {
     response: t
   } = e;
   if (null == t || null == t.body) return null;
-  if (t.body.code === A.evJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
+  if (t.body.code === C.evJ.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
     let e = t.body.retry_after;
     null != e && l.Z.show({
       title: N.intl.string(N.t.Whhv4w),
@@ -292,7 +292,7 @@ function K(e) {
     u = n === s || n === l;
   i && m.Z.isConnected() && u && c.Z.fetchMessages({
     channelId: n,
-    limit: A.AQB,
+    limit: C.AQB,
     jump: r
   })
 }
@@ -321,7 +321,7 @@ function q(e) {
   if ("active" !== t) returnfalse;
   let n = v.Z.getChannelId();
   if (null == n) returnfalse;
-  c.Z.fetchNewLocalMessages(n, A.AQB)
+  c.Z.fetchNewLocalMessages(n, C.AQB)
 }
 class Q extends Chunk147913.Z {
   _initialize() {

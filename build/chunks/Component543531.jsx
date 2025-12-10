@@ -43,7 +43,7 @@ function p(e) {
       percent: a,
       size: c = "small",
       foregroundColor: d = s.Z.unsafe_rawColors.BRAND_500.css,
-      backgroundColor: p = "var(--background-modifier-active)",
+      backgroundColor: p = "var(--interactive-background-active)",
       foregroundGradientColor: _,
       animate: m = true
     } = e,

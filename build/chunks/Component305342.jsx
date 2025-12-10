@@ -205,12 +205,12 @@ let x = 24,
         className: q ? true : w.cardContainerWithoutTopIndicator,
         children: [(0, r.jsxs)("div", {
           className: w.tierInfoContainer,
-          children: [X ? (0, r.jsx)(C.e, {
+          children: [X ? (0, r.jsx)(A.e, {
             listingId: t,
             isListingPublished: er,
             expanded: ee,
             onToggleExpanded: et
-          }) : (0, r.jsx)(A.xv, {
+          }) : (0, r.jsx)(C.xv, {
             listingId: t,
             isListingPublished: er
           }), ee && (0, r.jsxs)(c.Kqy, {

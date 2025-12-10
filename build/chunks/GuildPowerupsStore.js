@@ -154,10 +154,10 @@ function T(e) {
   S(e, false)
 }
 
-function A() {
+function C() {
   m = {}
 }
-class C extends(r = Chunk442837.ZP.PersistedStore) {
+class A extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(o.Z), null != e && (m = e)
   }
@@ -186,7 +186,7 @@ class C extends(r = Chunk442837.ZP.PersistedStore) {
     return null != e && (null == (t = m[e]) ? true : t.hasFetchedUnlockedPowerups) === true
   }
 }
-c(C, "displayName", "GuildPowerupsStore"), c(C, "persistKey", "GuildPowerupsStore"), c(C, "migrations", [e => null == e ? e : Object.fromEntries(Object.entries(e).filter(e => {
+c(A, "displayName", "GuildPowerupsStore"), c(A, "persistKey", "GuildPowerupsStore"), c(A, "migrations", [e => null == e ? e : Object.fromEntries(Object.entries(e).filter(e => {
   let [t, n] = e;
   return null != n && "object" == typeof n
 }).map(e => {
@@ -198,8 +198,8 @@ c(C, "displayName", "GuildPowerupsStore"), c(C, "persistKey", "GuildPowerupsStor
     unlockedPowerups: null != (r = o.unlockedPowerups) ? r : {}
   })]
 }))]);
-let N = new C(Chunk570140.Z, {
-  LOGOUT: A,
+let N = new A(Chunk570140.Z, {
+  LOGOUT: C,
   GUILD_POWERUP_CATALOG_FETCH_SUCCESS: O,
   GUILD_BOOST_ENTITLEMENTS_FETCH_SUCCESS: v,
   GUILD_POWERUP_ENTITLEMENTS_CREATE: I,

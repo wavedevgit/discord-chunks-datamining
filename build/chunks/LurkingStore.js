@@ -2,7 +2,7 @@
 /** chunk id: 41776, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -117,7 +117,7 @@ function I(e) {
 function T() {
   f = Chunk430824.Z.getGuildsArray().filter(e => (0, o.zN)(e)).map(e => e.id)
 }
-class A extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk271383.ZP, Chunk430824.Z, Chunk594174.default)
   }
@@ -141,8 +141,8 @@ class A extends(r = Chunk442837.ZP.Store) {
     return null != e ? p[e] : null
   }
 }
-d(A, "displayName", "LurkingStore");
-let C = new A(Chunk570140.Z, {
+d(C, "displayName", "LurkingStore");
+let A = new C(Chunk570140.Z, {
   CONNECTION_OPEN: T,
   GUILD_JOIN: b,
   GUILD_STOP_LURKING: S,

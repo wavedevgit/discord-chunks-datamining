@@ -42,8 +42,8 @@ function I() {
       }
     }
   } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData()), I = Chunk473749.useContext(Chunk324060.Q), T = (0, Chunk481060.dQu)(I.primaryColor).hex(), {
-    monthName: A
-  } = (0, Chunk26118.CE)(require, Chunk388032.intl.currentLocale), C = null != exports;
+    monthName: C
+  } = (0, Chunk26118.CE)(require, Chunk388032.intl.currentLocale), A = null != exports;
   return (0, Chunk54381.jsxs)(Chunk198358.Z, {
     className: Chunk949571.container,
     children: [(0, Chunk54381.jsx)(Chunk275189.Z, {
@@ -71,13 +71,13 @@ function I() {
       }), (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "heading-xxl/medium",
         className: Chunk949571.subtitle,
-        children: C ? Chunk388032.intl.format(Chunk860076.default.ixvOza, {
+        children: A ? Chunk388032.intl.format(Chunk860076.default.ixvOza, {
           percent: 100 - exports,
           percentHook: (e, t) => (0, r.jsx)(f.Z, {
             children: e
           }, t)
         }) : Chunk388032.intl.format(Chunk860076.default["Zd+Ej+"], {
-          month: A,
+          month: C,
           monthHook: (e, t) => (0, r.jsx)(f.Z, {
             children: e
           }, t)

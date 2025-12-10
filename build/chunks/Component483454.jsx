@@ -67,9 +67,9 @@ function T(e, t) {
   }), e
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -77,7 +77,7 @@ function A(e, t) {
   return i
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -93,7 +93,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       options: s,
       onChange: c,
       step: u
-    } = e, d = A(e, ["wallets", "customPaymentMethodIdsToSourceTypes", "analyticsContext", "options", "onChange", "step"]);
+    } = e, d = C(e, ["wallets", "customPaymentMethodIdsToSourceTypes", "analyticsContext", "options", "onChange", "step"]);
     let m = (0, l.e7)([p.default], () => {
         let e = p.default.getCurrentUser();
         return null != e ? e.email : null
@@ -170,7 +170,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       renderAsStandaloneElement: n,
       billingAddressInfo: o,
       internalKey: s
-    } = e, l = A(e, ["options", "renderAsStandaloneElement", "billingAddressInfo", "internalKey"]);
+    } = e, l = C(e, ["options", "renderAsStandaloneElement", "billingAddressInfo", "internalKey"]);
     let c = i.useMemo(() => {
         let {
           name: e,
@@ -249,7 +249,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
   L = e => {
     var {
       onSetupError: t
-    } = e, n = A(e, ["onSetupError"]);
+    } = e, n = C(e, ["onSetupError"]);
     let {
       elementsOptions: i,
       isLoading: o,

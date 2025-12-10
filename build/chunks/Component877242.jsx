@@ -68,7 +68,7 @@ function h() {
             }),
             children: (0, Chunk54381.jsx)(Chunk481060.owK, {
               size: "xs",
-              color: S ? Chunk481060.TVs.colors.ICON_PRIMARY.css : Chunk481060.TVs.colors.ICON_TERTIARY.css
+              color: S ? Chunk481060.TVs.colors.ICON_STRONG.css : Chunk481060.TVs.colors.ICON_MUTED.css
             })
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",

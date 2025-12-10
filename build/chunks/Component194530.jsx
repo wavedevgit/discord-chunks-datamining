@@ -22,11 +22,11 @@ function p(e) {
     onSuccess: h,
     onClose: g,
     requirementsUpdated: E
-  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, A] = i.useState(null), [C, N] = i.useState(null), P = (0, o.e7)([c.Z], () => c.Z.getErrors()), R = (0, o.e7)([c.Z], () => c.Z.getFormState()), D = i.useRef(null);
+  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, C] = i.useState(null), [A, N] = i.useState(null), P = (0, o.e7)([c.Z], () => c.Z.getErrors()), R = (0, o.e7)([c.Z], () => c.Z.getFormState()), D = i.useRef(null);
   async function w(e) {
     e.preventDefault(), (0, l.b9)();
     let t = false;
-    if ("" === O ? (A(f.intl.string(f.t["/7/oPU"])), t = true) : A(null), O !== S ? (N(f.intl.string(f.t["IEKYZ/"])), t = true) : N(null), t) return;
+    if ("" === O ? (C(f.intl.string(f.t["/7/oPU"])), t = true) : C(null), O !== S ? (N(f.intl.string(f.t["IEKYZ/"])), t = true) : N(null), t) return;
     let n = await (0, l.Mn)({
       password: b,
       newPassword: O
@@ -80,7 +80,7 @@ function p(e) {
           required: true
         }), (0, r.jsx)(s.oil, {
           label: f.intl.string(f.t.iQG2KC),
-          error: null != C ? C : true,
+          error: null != A ? A : true,
           type: "password",
           value: S,
           onChange: I,

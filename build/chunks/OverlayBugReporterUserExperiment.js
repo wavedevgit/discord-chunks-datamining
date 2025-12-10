@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   F3: () => R,
-  KK: () => A,
+  KK: () => C,
   RD: () => _,
   Se: () => u,
   Sy: () => I,
@@ -317,7 +317,7 @@ let T = (0, Chunk818083.B)({
   }]
 });
 
-function A(e) {
+function C(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return T.getCurrentConfig({
     location: e
@@ -325,7 +325,7 @@ function A(e) {
     autoTrackExposure: t
   })
 }
-let C = (0, Chunk818083.B)({
+let A = (0, Chunk818083.B)({
   id: "2025-11_overlay_bug_reporter",
   label: "Overlay Bug Reporter",
   kind: "user",
@@ -343,7 +343,7 @@ let C = (0, Chunk818083.B)({
 
 function N(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-  return C.getCurrentConfig({
+  return A.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: t
@@ -351,11 +351,11 @@ function N(e) {
 }
 
 function P(e) {
-  return C.useExperiment({
+  return A.useExperiment({
     location: e
   }).enabled
 }
 
 function R() {
-  h("OVERLAY_INITIALIZED"), b("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), A("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
+  h("OVERLAY_INITIALIZED"), b("OVERLAY_INITIALIZED"), I("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), N("OVERLAY_INITIALIZED")
 }

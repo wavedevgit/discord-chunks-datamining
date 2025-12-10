@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let T = {},
-  A = {},
-  C = false,
+  C = {},
+  A = false,
   N = false,
   P = {
     flags: 0
@@ -116,7 +116,7 @@ function B(e, t) {
     var t;
     return o.yE(null != (t = e.flags) ? t : 0, y.ic.OPT_IN_ENABLED)
   });
-  j[e] = new Set(c.map(e => e.channel_id)), V(e), delete A[e]
+  j[e] = new Set(c.map(e => e.channel_id)), V(e), delete C[e]
 }
 
 function F(e, t) {
@@ -260,7 +260,7 @@ function et(e) {
 }
 
 function en(e) {
-  C = o.yE(e.flags, E.c.USE_NEW_NOTIFICATIONS), N = o.yE(e.flags, E.c.MENTION_ON_ALL_MESSAGES), P = e
+  A = o.yE(e.flags, E.c.USE_NEW_NOTIFICATIONS), N = o.yE(e.flags, E.c.MENTION_ON_ALL_MESSAGES), P = e
 }
 
 function er(e) {
@@ -349,20 +349,20 @@ function ef() {
 }
 
 function ep() {
-  return C
+  return A
 }
 class e_ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (this.waitFor(_.Z, m.Z, u.Z, d.Z, h.default), null != e) {
       var t, n;
-      C = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (T = e.userGuildSettings, j = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(T, (e, t) => {
+      A = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (T = e.userGuildSettings, j = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(T, (e, t) => {
         L[t] = ed(e)
       }))
     }
   }
   getState() {
     return {
-      useNewNotifications: C
+      useNewNotifications: A
     }
   }
   get mentionOnAllMessages() {
@@ -513,14 +513,14 @@ class e_ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getGuildFavorites(e) {
     if (u.Z.isFullServerPreview(e)) return null;
-    if (null == A[e]) {
+    if (null == C[e]) {
       let t = a().filter(this.getChannelOverrides(e), t => {
         var n, r;
         return o.yE(null != (r = t.flags) ? r : 0, y.ic.FAVORITED) && (null == (n = _.Z.getChannel(t.channel_id)) ? true : n.guild_id) === e
       });
-      A[e] = t.map(e => e.channel_id)
+      C[e] = t.map(e => e.channel_id)
     }
-    return A[e]
+    return C[e]
   }
   isFavorite(e, t) {
     var n;
@@ -544,7 +544,7 @@ class e_ extends(r = Chunk442837.ZP.PersistedStore) {
     return P
   }
   get useNewNotifications() {
-    return C
+    return A
   }
   getGuildUnreadSetting(e) {
     if (!ep()) return b.i.ALL_MESSAGES;

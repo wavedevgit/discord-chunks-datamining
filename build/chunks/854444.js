@@ -2,7 +2,7 @@
 /** chunk id: 854444, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  o: () => C,
+  o: () => A,
   t: () => N
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
@@ -28,13 +28,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk540126 = require("./540126.js"),
   Chunk647086 = require("./647086.js"),
   Chunk231338 = require("./231338.js");
-let A = [Chunk317381.ZP, Chunk853856.Z, Chunk924301.ZP, Chunk601070.Z, Chunk569471.Z, Chunk680089.Z, Chunk592125.Z, Chunk77498.Z, Chunk496675.Z, Chunk306680.ZP, Chunk944486.Z, Chunk9156.ZP];
+let C = [Chunk317381.ZP, Chunk853856.Z, Chunk924301.ZP, Chunk601070.Z, Chunk569471.Z, Chunk680089.Z, Chunk592125.Z, Chunk77498.Z, Chunk496675.Z, Chunk306680.ZP, Chunk944486.Z, Chunk9156.ZP];
 
-function C() {
+function A() {
   let [e, t] = Chunk473749.useState(() => N());
   return Chunk473749.useEffect(() => {
     let e = a().throttle(() => exports(N()), 100);
-    return A.forEach(t => t.addChangeListener(e)), () => A.forEach(t => t.removeChangeListener(e))
+    return C.forEach(t => t.addChangeListener(e)), () => C.forEach(t => t.removeChangeListener(e))
   }, []), module
 }
 
@@ -93,7 +93,7 @@ function N() {
     }).value()
   }
   let g = null,
-    A = {
+    C = {
       isMuted: false,
       isCollapsed: false,
       position: 0,
@@ -105,7 +105,7 @@ function N() {
         return null == Chunk77498 && (g = Chunk569471(Chunk317381, this)), Chunk77498
       }
     },
-    C = a()(module).values().filter(e => e.type === o.Dd.CATEGORY).sortBy(e => e.order).map(e => {
+    A = a()(module).values().filter(e => e.type === o.Dd.CATEGORY).sortBy(e => e.order).map(e => {
       var t;
       let {
         id: n,
@@ -144,13 +144,13 @@ function N() {
     voiceChannelsSectionNumber: false,
     getSections() {
       let e = [];
-      module[Chunk540126.Fq] = 0, module[Chunk540126.wZ] = 0, module[Chunk540126.p2] = 0, module[Chunk540126.PB] = 0, module[Chunk540126.wd] = A.channelList.length;
-      for (let t = 0; exports < C.length; exports++) module[Chunk540126.wF + exports] = Math.max(1, C[exports].channelList.length);
+      module[Chunk540126.Fq] = 0, module[Chunk540126.wZ] = 0, module[Chunk540126.p2] = 0, module[Chunk540126.PB] = 0, module[Chunk540126.wd] = C.channelList.length;
+      for (let t = 0; exports < A.length; exports++) module[Chunk540126.wF + exports] = Math.max(1, A[exports].channelList.length);
       return module
     },
-    isPlaceholderRow: (e, t) => !(e < S.wF) && 0 === t && 0 === C[e - S.wF].channelList.length,
-    getCategoryFromSection: e => e === S.wd ? A : C[e - S.wF],
-    getNamedCategoryFromSection: e => C[e - S.wF],
+    isPlaceholderRow: (e, t) => !(e < S.wF) && 0 === t && 0 === A[e - S.wF].channelList.length,
+    getCategoryFromSection: e => e === S.wd ? C : A[e - S.wF],
+    getNamedCategoryFromSection: e => A[e - S.wF],
     getChannelFromSectionRow(e, t) {
       let n = this.getCategoryFromSection(e);
       return null == n || null == n.channelList[t] ? null : {
@@ -162,7 +162,7 @@ function N() {
     getChannelNoticeSection: () => P,
     getFirstVoiceChannel: () => null,
     getSectionRowsFromChannel(e) {
-      let t = [A, ...C];
+      let t = [C, ...A];
       for (let n = 0; n < t.length; n++)
         for (let r = 0; r < t[n].channelList.length; r++)
           if (t[n].channelList[r].id === e) return [{
@@ -172,7 +172,7 @@ function N() {
       return []
     },
     forEachShownChannel(e) {
-      for (let t of [A, ...C])
+      for (let t of [C, ...A])
         for (let n of t.channelList)
           for (let t of (e(n.record), n.threadIds)) {
             let n = m.Z.getChannel(t);
@@ -180,7 +180,7 @@ function N() {
           }
     },
     forEachChannel(e) {
-      for (let t of [A, ...C])
+      for (let t of [C, ...A])
         for (let n of t.getChannelRecords()) e(n)
     },
     getSlicedChannels: e => [

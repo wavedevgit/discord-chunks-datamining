@@ -80,7 +80,7 @@ function T(e, t, n) {
   returntrue
 }
 
-function A(e) {
+function C(e) {
   let {
     user: t,
     sessionId: n
@@ -88,7 +88,7 @@ function A(e) {
   h = t.id, g = n, E = null
 }
 
-function C(e) {
+function A(e) {
   let {
     context: t,
     userId: n,
@@ -190,9 +190,9 @@ class R extends(r = Chunk442837.ZP.Store) {
 }
 _(R, "displayName", "SpeakingStore");
 let D = new R(Chunk570140.Z, {
-  CONNECTION_OPEN: A,
-  OVERLAY_INITIALIZE: A,
-  SPEAKING: C,
+  CONNECTION_OPEN: C,
+  OVERLAY_INITIALIZE: C,
+  SPEAKING: A,
   VOICE_STATE_UPDATES: N,
   PUSH_TO_TALK_STATE_CHANGE: P
 })

@@ -36,8 +36,8 @@ function S(e, t, n) {
 }
 let I = "SELECTABLE",
   T = "VOCAL",
-  A = null,
-  C = {},
+  C = null,
+  A = {},
   N = {},
   P = {},
   R = null,
@@ -65,7 +65,7 @@ function M(e) {
 }
 
 function k(e) {
-  let t = C[e];
+  let t = A[e];
   return null == t && (t = Y(e)), t
 }
 
@@ -126,12 +126,12 @@ function V(e) {
 }
 
 function H() {
-  C = {}, D = {}, N = {}, P = {}, null != A && Y(A)
+  A = {}, D = {}, N = {}, P = {}, null != C && Y(C)
 }
 
 function Y(e) {
   let t = M(e);
-  return C[e] = t, D[e] = [], V(t), G(t), W(t), en(e), t
+  return A[e] = t, D[e] = [], V(t), G(t), W(t), en(e), t
 }
 
 function W(e) {
@@ -155,7 +155,7 @@ function K(e) {
     }
   } = e;
   if (null == t) returnfalse;
-  C[t] = true, A === t && Y(t)
+  A[t] = true, C === t && Y(t)
 }
 
 function z(e) {
@@ -164,7 +164,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete C[t], delete N[t], delete P[t], delete D[t], true
+  return delete A[t], delete N[t], delete P[t], delete D[t], true
 }
 
 function q(e) {
@@ -173,7 +173,7 @@ function q(e) {
     user: n
   } = e;
   if (m.default.getId() !== n.id) returnfalse;
-  C[t] = true, t === A && Y(t)
+  A[t] = true, t === C && Y(t)
 }
 
 function Q(e) {
@@ -188,7 +188,7 @@ function X(e) {
     }
   } = e;
   if (null == t) returnfalse;
-  C[t] = true, t === A && Y(t)
+  A[t] = true, t === C && Y(t)
 }
 
 function J(e) {
@@ -199,7 +199,7 @@ function J(e) {
     let {
       guild_id: t
     } = e;
-    null != t && (C[t] = true, n = true, A === t && Y(t))
+    null != t && (A[t] = true, n = true, C === t && Y(t))
   }
   return n
 }
@@ -208,7 +208,7 @@ function $(e) {
   let {
     guildId: t
   } = e;
-  C[t] = true, t === A && Y(t)
+  A[t] = true, t === C && Y(t)
 }
 
 function ee(e, t) {
@@ -222,7 +222,7 @@ function ee(e, t) {
 function et(e, t) {
   let n = E.Z.getGuild(t);
   if (null != n && ee(e, n)) returntrue;
-  let r = C[t];
+  let r = A[t];
   null == r && (r = Y(t));
   let {
     [I]: i, [T]: a
@@ -249,7 +249,7 @@ function er(e, t) {
   R = t;
   let r = null != (n = null == e ? true : e.getGuildId()) ? n : null;
   if (null == r) returnfalse;
-  C[r] = true, r === A && Y(r)
+  A[r] = true, r === C && Y(r)
 }
 
 function ei(e) {
@@ -276,7 +276,7 @@ function eo(e) {
   let {
     guildId: t
   } = e;
-  if (A = null != t ? t : null, null == t || null != C[t]) returnfalse;
+  if (C = null != t ? t : null, null == t || null != A[t]) returnfalse;
   Y(t)
 }
 
@@ -288,7 +288,7 @@ class el extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk853856.Z, Chunk430198.Z, Chunk271383.ZP, Chunk430824.Z, Chunk496675.Z, Chunk594174.default), this.syncWith([Chunk853856.Z], es)
   }
   getAllGuilds() {
-    return C
+    return A
   }
   getChannels(e) {
     return null != e ? k(e) : x

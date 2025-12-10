@@ -48,7 +48,7 @@ let g = Chunk473749.memo(function(e) {
       fineTuningResolution: n / f.nl.fineTuningScale,
       duration: n
     }, null != g ? g : {})
-  }, [t, g]), y = (0, d.b1)(n), j = (0, d.NN)(y, p.current, b), x = (0, c.ZP)(), N = (0, u.dQu)(o.Z.colors.ICON_PRIMARY).hex(), w = null == y || null == j, C = (0 === h.width || 0 === h.height || w) && null != n, S = a.useCallback(() => {
+  }, [t, g]), y = (0, d.b1)(n), j = (0, d.NN)(y, p.current, b), x = (0, c.ZP)(), N = (0, u.dQu)(o.Z.colors.ICON_STRONG).hex(), w = null == y || null == j, C = (0 === h.width || 0 === h.height || w) && null != n, S = a.useCallback(() => {
     null != p.current && v({
       width: p.current.offsetWidth,
       height: p.current.offsetHeight

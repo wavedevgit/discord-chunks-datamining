@@ -72,13 +72,13 @@ function O(e) {
     newestAnalyticsLocation: E
   } = (0, a.ZP)(), {
     trackUserProfileAction: O
-  } = (0, d.KZ)(), [v, S] = i.useState(""), [I, T] = i.useState((0, s.JM)(v)), A = i.useRef(false), C = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
+  } = (0, d.KZ)(), [v, S] = i.useState(""), [I, T] = i.useState((0, s.JM)(v)), C = i.useRef(false), A = i.useMemo(() => b(g({}, o.Ie.USER_PROFILE), {
     disableAutoFocus: h
   }), [h]);
   return (0, r.jsx)(l.ZP, {
     className: m.container,
     editorClassName: m.editor,
-    type: C,
+    type: A,
     placeholder: _.intl.formatToPlainString(_.t["0ZQw/X"], {
       name: u.ZP.getName(n, c, t)
     }),
@@ -88,12 +88,12 @@ function O(e) {
     onChange: (e, t, n) => {
       t !== v && (S(t), T(n))
     },
-    focused: A.current,
+    focused: C.current,
     onFocus: () => {
-      A.current = true
+      C.current = true
     },
     onBlur: () => {
-      A.current = false
+      C.current = false
     },
     onSubmit: async e => {
       let {

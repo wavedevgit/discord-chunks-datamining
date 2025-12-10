@@ -87,13 +87,13 @@ function A(e) {
     guildNameplate: K,
     pendingNameplate: X
   } = (0, x.Zx)(t, null == n ? true : n.id), V = null != K ? (0, g.Pb)(K) : true;
-  G && !M ? Z = k.BRd.DARK : !G && M && (Z = k.BRd.LIGHT);
+  G && !M ? Z = O.BRd.DARK : !G && M && (Z = O.BRd.LIGHT);
   let W = (0, o.useCallback)(() => {
-      P.default.track(k.rMx.DISPLAY_NAME_STYLES_CLOSED), B()
+      P.default.track(O.rMx.DISPLAY_NAME_STYLES_CLOSED), B()
     }, [B]),
     $ = (0, o.useCallback)(e => {
-      H(e === k.BRd.DARK), P.default.track(k.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
-        dark: e === k.BRd.DARK
+      H(e === O.BRd.DARK), P.default.track(O.rMx.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+        dark: e === O.BRd.DARK
       })
     }, []),
     J = (0, o.useMemo)(() => R(D({}, (0, m.ij)(t, null)), {
@@ -118,7 +118,7 @@ function A(e) {
     }), null != z && (0, l.jsx)(C.Z, {
       user: t,
       displayProfile: Y,
-      themeType: O.l.MODAL_V2,
+      themeType: k.l.MODAL_V2,
       className: E.backgroundThemeContainer,
       forceUserTheme: true,
       children: (0, l.jsx)("div", {
@@ -150,9 +150,9 @@ function A(e) {
           author: J,
           message: (0, u.e5)(R(D({}, (0, p.ZP)({
             channelId: "1337",
-            content: T.intl.string(y.default.h5Cuej)
+            content: y.intl.string(T.default.h5Cuej)
           })), {
-            state: k.yb.SENT,
+            state: O.yb.SENT,
             id: "0"
           })),
           isGroupStart: true,
@@ -176,8 +176,8 @@ function A(e) {
       children: [(0, l.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: T.intl.format(y.default.prQba8, {
-          helpArticleLink: N.Z.getArticleURL(k.BhN.DISPLAY_NAME_STYLES)
+        children: y.intl.format(T.default.prQba8, {
+          helpArticleLink: N.Z.getArticleURL(O.BhN.DISPLAY_NAME_STYLES)
         })
       }), (0, l.jsx)(I, {
         darkPreview: G,
@@ -191,22 +191,22 @@ function I(e) {
   let {
     darkPreview: t,
     onToggleTheme: n
-  } = e, o = t ? k.BRd.DARK : k.BRd.LIGHT;
+  } = e, o = t ? O.BRd.DARK : O.BRd.LIGHT;
   return (0, l.jsx)(s.sY7, {
     className: E.themeToggleControl,
     optionClassName: E.themeToggleOption,
     options: [{
       name: "",
-      tooltip: T.intl.string(T.t.b8Cei3),
-      value: k.BRd.DARK,
+      tooltip: y.intl.string(y.t.b8Cei3),
+      value: O.BRd.DARK,
       icon: s.Z6G,
-      className: o === k.BRd.DARK ? E.themeToggleOptionSelected : true
+      className: o === O.BRd.DARK ? E.themeToggleOptionSelected : true
     }, {
       name: "",
-      tooltip: T.intl.string(T.t.K2sFfo),
-      value: k.BRd.LIGHT,
+      tooltip: y.intl.string(y.t.K2sFfo),
+      value: O.BRd.LIGHT,
       icon: s.chG,
-      className: o === k.BRd.LIGHT ? E.themeToggleOptionSelected : true
+      className: o === O.BRd.LIGHT ? E.themeToggleOptionSelected : true
     }],
     value: o,
     onChange: e => {

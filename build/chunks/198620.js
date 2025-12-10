@@ -5,7 +5,7 @@ require.d(exports, {
   B_: () => P,
   MO: () => b,
   _M: () => y,
-  k5: () => C,
+  k5: () => A,
   q5: () => O
 }), require("./35282.js"), require("./388685.js");
 var r, i, a, Chunk544891 = require("./544891.js"),
@@ -69,13 +69,13 @@ function T(e) {
   return null != t && !!b(t) && S(t)
 }
 
-function A(e) {
+function C(e) {
   var t;
   return T(e.image) || (null == (t = e.images) ? true : t.some(T)) || T(e.video)
 }
 
-function C(e) {
-  return e.attachments.some(I) || e.embeds.some(A)
+function A(e) {
+  return e.attachments.some(I) || e.embeds.some(C)
 }
 async function N(e) {
   let t = await o.tn.post({

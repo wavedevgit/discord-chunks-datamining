@@ -196,7 +196,7 @@ function eT() {
   V.some(t => e[t] !== o[t]) || (s = o)
 }
 
-function eA(e) {
+function eC(e) {
   if (null == s) returnfalse;
   V.forEach(t => {
     if (null != s && e.hasOwnProperty(t)) {
@@ -206,7 +206,7 @@ function eA(e) {
   }), eT()
 }
 
-function eC(e) {
+function eA(e) {
   let {
     guildId: t
   } = e;
@@ -223,11 +223,11 @@ function eC(e) {
 
 function eN(e) {
   var t;
-  return new A.Z({
+  return new C.Z({
     code: e.code,
     temporary: e.temporary,
     revoked: e.revoked,
-    inviter: null != e.inviter ? new C.Z(e.inviter) : null,
+    inviter: null != e.inviter ? new A.Z(e.inviter) : null,
     channel: (0, I.jD)(e.channel),
     guild: null != e.guild ? (0, R.Qs)(e.guild) : null,
     uses: e.uses,
@@ -636,8 +636,8 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_INIT: eh,
   GUILD_SETTINGS_OPEN: em,
   GUILD_SETTINGS_CLOSE: eg,
-  GUILD_SETTINGS_UPDATE: eA,
-  GUILD_SETTINGS_PROFILE_UPDATE: eC,
+  GUILD_SETTINGS_UPDATE: eC,
+  GUILD_SETTINGS_PROFILE_UPDATE: eA,
   GUILD_SETTINGS_CANCEL_CHANGES: eO,
   GUILD_SETTINGS_SAVE_ROUTE_STACK: eE,
   GUILD_SETTINGS_SUBMIT: ev,

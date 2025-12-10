@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk22706 = require("./22706.js");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -45,7 +45,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -73,32 +73,32 @@ function D(e) {
     shouldUpsellFromNoneTier: t
   } = e, n = (0, s.e7)([E.default], () => E.default.locale);
   return (0, r.jsxs)("div", {
-    className: A.perksList,
+    className: C.perksList,
     children: [(0, r.jsx)(g.Z, {
       icon: u.Ucv,
-      iconClassName: A.perkIconGuild,
+      iconClassName: C.perkIconGuild,
       description: T.intl.formatToPlainString(T.t.sQBgs2, {
         numFreeGuildSubscriptions: I.cb
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), (0, r.jsx)(g.Z, {
       icon: u.Ucv,
-      iconClassName: A.perkIconGuild,
+      iconClassName: C.perkIconGuild,
       description: T.intl.formatToPlainString(T.t["1A6vXi"], {
         percent: (0, y.T3)(n, I.Rr / 100)
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), t ? (0, r.jsx)(g.Z, {
       icon: u.EO4,
-      iconClassName: A.perkIconChatPerks,
+      iconClassName: C.perkIconChatPerks,
       description: T.intl.string(T.t.Z9b2x2)
     }) : null, (0, r.jsx)(g.Z, {
       icon: u.hGI,
-      iconClassName: A.perkIconStream,
+      iconClassName: C.perkIconStream,
       description: T.intl.string(T.t["8dqG5E"])
     }), (0, r.jsx)(g.Z, {
       icon: u.rG2,
-      iconClassName: A.perkIconUpload,
+      iconClassName: C.perkIconUpload,
       description: T.intl.string(T.t.cBorIy)
     })]
   })
@@ -113,7 +113,7 @@ function w(e) {
     onSkip: g,
     onSubscriptionConfirmation: E,
     analyticsLocation: y,
-    analyticsSourceLocation: C,
+    analyticsSourceLocation: A,
     priceOptions: P
   } = e, {
     analyticsLocations: w,
@@ -129,19 +129,19 @@ function w(e) {
   }, [x]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(u.hzk, {
       "data-migration-pending": true,
-      className: A.content,
+      className: C.content,
       children: [(0, r.jsx)(u.olH, {
         "data-migration-pending": true,
         onClick: a,
-        className: A.closeButton
+        className: C.closeButton
       }), B && (0, r.jsx)(h.dz, {
-        className: A.premiumTrialBadge
+        className: C.premiumTrialBadge
       }), (0, r.jsx)("div", {
-        className: o()(A.upsellImage, {
-          [A.upsellImageWithTrialOffer]: B
+        className: o()(C.upsellImage, {
+          [C.upsellImageWithTrialOffer]: B
         })
       }), (0, r.jsx)("div", {
-        className: A.bodyText,
+        className: C.bodyText,
         children: null != Z ? T.intl.string(T.t.AoSzEr) : T.intl.format(T.t["7vePZb"], {
           monthlyPrice: U
         })
@@ -153,7 +153,7 @@ function w(e) {
       align: p.Z.Align.CENTER,
       justify: p.Z.Justify.END,
       children: [(0, r.jsxs)("div", {
-        className: A.footerRight,
+        className: C.footerRight,
         children: [(0, r.jsx)(c.zx, {
           "data-migration-pending": true,
           look: c.zx.Looks.LINK,
@@ -172,14 +172,14 @@ function w(e) {
               analyticsObject: R(N({}, y), {
                 section: S.jXE.PREMIUM_GUILD_PURCHASE_MODAL
               }),
-              analyticsSourceLocation: C,
+              analyticsSourceLocation: A,
               onSubscriptionConfirmation: E,
               trialId: Z
             })
           }
         })]
       }), (0, r.jsx)("div", {
-        className: A.backStep,
+        className: C.backStep,
         children: (0, r.jsx)(c.zx, {
           "data-migration-pending": true,
           color: j,

@@ -68,7 +68,7 @@ function I(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -76,14 +76,14 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let C = new Chunk710845.Z("ReadyPayloadUtils"),
+let A = new Chunk710845.Z("ReadyPayloadUtils"),
   N = {},
   P = null,
   R = {};
@@ -259,7 +259,7 @@ function B(e) {
     version: e.version,
     hasThreadsSubscription: e.has_threads_subscription
   };
-  if (null == c) throw C.log("no cache entry for partial guild (guild: ".concat(e.id, ", type: ready)")), Error("Guild data was missing from store, but hash was still available.");
+  if (null == c) throw A.log("no cache entry for partial guild (guild: ".concat(e.id, ", type: ready)")), Error("Guild data was missing from store, but hash was still available.");
   return {
     id: e.id,
     dataMode: e.data_mode,
@@ -321,7 +321,7 @@ function F(e, t) {
       items: e.channels.map(t => (t.guild_id = e.id, (0, h.q_)(t, e.id)))
     }
   };
-  if (null == t) throw C.log("no cache entry for partial guild (guild: ".concat(e.id, ", type: post_ready)")), Error("Guild data was missing from store, but hash was still available.");
+  if (null == t) throw A.log("no cache entry for partial guild (guild: ".concat(e.id, ", type: post_ready)")), Error("Guild data was missing from store, but hash was still available.");
   return {
     id: e.id,
     channels: {

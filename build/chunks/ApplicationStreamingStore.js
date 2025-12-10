@@ -73,12 +73,12 @@ function M() {
 
 function k(e) {
   var t;
-  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null != (t = e.guildId) ? t : C.kod] = e
+  null == i[e.ownerId] && (i[e.ownerId] = {}), i[e.ownerId][null != (t = e.guildId) ? t : A.kod] = e
 }
 
 function U(e, t) {
   var n;
-  let r = null != t ? t : C.kod;
+  let r = null != t ? t : A.kod;
   return (null == (n = i[e]) ? true : n[r]) != null && (delete i[e][r], true)
 }
 
@@ -134,7 +134,7 @@ function V(e) {
     streamKey: t
   } = e, n = (0, _.my)(t);
   r.delete(t), r.set(t, w(R({}, n), {
-    state: C.jm8.CONNECTING
+    state: A.jm8.CONNECTING
   })), n.ownerId === b.default.getId() && (L[n.channelId] = false)
 }
 
@@ -169,7 +169,7 @@ function H(e) {
     guildId: i,
     channelId: a,
     ownerId: b.default.getId(),
-    state: C.jm8.CONNECTING
+    state: A.jm8.CONNECTING
   })
 }
 
@@ -196,7 +196,7 @@ function W(e) {
   for (let e in o) {
     let t = r.get(e);
     null != t && (r.set(e, w(R({}, t), {
-      state: C.jm8.FAILED,
+      state: A.jm8.FAILED,
       endReason: n,
       errorCode: i
     })), a = true)
@@ -239,7 +239,7 @@ function q(e) {
     paused: o
   } = e;
   r.set(t, w(R({}, (0, _.my)(t)), {
-    state: o ? C.jm8.PAUSED : C.jm8.ACTIVE
+    state: o ? A.jm8.PAUSED : A.jm8.ACTIVE
   })), a[t] = {
     streamKey: t,
     region: n,
@@ -260,7 +260,7 @@ function X(e) {
     channelId: n
   } = e;
   x = t, Array.from(r.values()).forEach(e => {
-    (0, _.V9)(e) !== x && e.state === C.jm8.ENDED && G((0, _.V9)(e))
+    (0, _.V9)(e) !== x && e.state === A.jm8.ENDED && G((0, _.V9)(e))
   }), null != t && (0, _.DB)(t) && t.includes(b.default.getId()) && (L[n] = false)
 }
 
@@ -273,10 +273,10 @@ function J(e) {
   delete a[t];
   let s = r.get(t);
   if (null == s) returnfalse;
-  let l = C.jm8.ENDED;
-  if (i) l = C.jm8.RECONNECTING;
-  else if (o === C.si2.UNAUTHORIZED) l = C.jm8.FAILED;
-  else if (o === C.si2.SAFETY_GUILD_RATE_LIMITED) {
+  let l = A.jm8.ENDED;
+  if (i) l = A.jm8.RECONNECTING;
+  else if (o === A.si2.UNAUTHORIZED) l = A.jm8.FAILED;
+  else if (o === A.si2.SAFETY_GUILD_RATE_LIMITED) {
     let {
       guildId: e
     } = (0, _.my)(t);
@@ -285,11 +285,11 @@ function J(e) {
         default: n
       } = t;
       n(e)
-    }), l = C.jm8.ENDED
-  } else s.state === C.jm8.FAILED && o === C.si2.USER_REQUESTED && (l = C.jm8.FAILED);
+    }), l = A.jm8.ENDED
+  } else s.state === A.jm8.FAILED && o === A.si2.USER_REQUESTED && (l = A.jm8.FAILED);
   r.set(t, w(R({}, s), {
     state: l
-  })), l === C.jm8.ENDED && x !== t && G(t)
+  })), l === A.jm8.ENDED && x !== t && G(t)
 }
 
 function $(e) {
@@ -298,7 +298,7 @@ function $(e) {
   } = e, n = r.get(t);
   if (null == n) returnfalse;
   r.set(t, w(R({}, n), {
-    state: C.jm8.FAILED
+    state: A.jm8.FAILED
   }))
 }
 
@@ -309,14 +309,14 @@ function ee(e) {
   } = e;
   if (null == t) returnfalse;
   let i = r.get(t);
-  if (null == i || i.state === C.jm8.ENDED || i.state === C.jm8.FAILED && i.ownerId === b.default.getId()) returnfalse;
+  if (null == i || i.state === A.jm8.ENDED || i.state === A.jm8.FAILED && i.ownerId === b.default.getId()) returnfalse;
   let a = i.state;
   switch (n) {
-    case C.hes.DISCONNECTED:
-      a = C.jm8.RECONNECTING;
+    case A.hes.DISCONNECTED:
+      a = A.jm8.RECONNECTING;
       break;
-    case C.hes.RTC_CONNECTED:
-      a = C.jm8.ACTIVE
+    case A.hes.RTC_CONNECTED:
+      a = A.jm8.ACTIVE
   }
   if (a === i.state) returnfalse;
   r.set(t, w(R({}, i), {
@@ -341,13 +341,13 @@ function en(e) {
 
 function er(e, t) {
   let n = y.Z.getBasicChannel(t);
-  return e === N.lo.CALL || null != n && S.Z.canBasicChannel(C.S7T.VIEW_CHANNEL, n)
+  return e === N.lo.CALL || null != n && S.Z.canBasicChannel(A.S7T.VIEW_CHANNEL, n)
 }
 
 function ei(e) {
   if (er(e.streamType, e.channelId)) returntrue;
   let t = y.Z.getBasicChannel(e.channelId);
-  return null != t && (0, m.p9)(t, A.Z, O.Z, S.Z, f.default)[0]
+  return null != t && (0, m.p9)(t, C.Z, O.Z, S.Z, f.default)[0]
 }
 M();
 class ea extends(c = Chunk442837.ZP.PersistedStore) {
@@ -425,7 +425,7 @@ class ea extends(c = Chunk442837.ZP.PersistedStore) {
   getStreamForUser(e, t) {
     var n;
     if (!(0, h.Z)(v.Z)) return null;
-    let r = null == (n = i[e]) ? true : n[null != t ? t : C.kod];
+    let r = null == (n = i[e]) ? true : n[null != t ? t : A.kod];
     return null != r && ei(r) ? r : null
   }
   getRTCStream(e) {

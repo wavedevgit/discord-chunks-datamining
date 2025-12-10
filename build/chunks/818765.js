@@ -35,19 +35,19 @@ let _ = (0, Chunk460181.uk)("poggermode_applause", Chunk474873.Z.getSoundpack())
       t = Chunk351780.Z.comboSoundsEnabled;
     return !!module && !!exports && null != Chunk944486.Z.getChannelId()
   },
-  A = () => {
+  C = () => {
     if (0 === O.length || !T() || y) return;
     y = true;
     let [e, t] = O[O.length - 1];
-    (0, Chunk460181.GN)(module, exports), v = setTimeout(C, E)
+    (0, Chunk460181.GN)(module, exports), v = setTimeout(A, E)
   },
-  C = () => {
-    O.pop(), y = false, A()
+  A = () => {
+    O.pop(), y = false, C()
   },
   N = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
       n = l.Z.isConnected() ? g : h;
-    O.push([e, t * n]), A()
+    O.push([e, t * n]), C()
   };
 class P extends Chunk317770.Z {
   _initialize() {

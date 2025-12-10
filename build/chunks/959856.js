@@ -28,7 +28,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk65154 = require("./65154.js"),
   Chunk436620 = require("./436620.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = new Chunk579092.Yd("MediaEngineWebRTC");
+let A = new Chunk579092.Yd("MediaEngineWebRTC");
 class N extends Chunk47770.Z {
   destroy() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -46,7 +46,7 @@ class N extends Chunk47770.Z {
     this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (C.info("WebRTC is not supported on", o().name, o().version), false))
+    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (A.info("WebRTC is not supported on", o().name, o().version), false))
   }
   supported() {
     returntrue
@@ -307,16 +307,16 @@ class N extends Chunk47770.Z {
   fetchAsyncResources(e) {
     return e.fetchDave ? (0, b.IT)() ? (0, b.Ft)() ? new Promise((e, t) => {
       (0, b.D5)().then(t => {
-        this.dave = t, this.transientKeys = (0, b.Yk)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), C.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
+        this.dave = t, this.transientKeys = (0, b.Yk)(), this.maxSupportedProtocolVersion = t.MaxSupportedProtocolVersion(), A.info("Successfully initialized DAVE, version:", this.maxSupportedProtocolVersion), e()
       }).catch(e => {
-        this.maxSupportedProtocolVersion = 0, C.error("Failed to initialize DAVE", e), t(e)
+        this.maxSupportedProtocolVersion = 0, A.error("Failed to initialize DAVE", e), t(e)
       })
     }) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("WebAssembly is not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.reject(Error("Encoded transforms are not supported on this platform."))) : (this.maxSupportedProtocolVersion = 0, Promise.resolve())
   }
   constructor() {
-    super(), A(this, "Video", Chunk825040.Z), A(this, "Camera", Chunk582168.Z), A(this, "_audioContext", null), A(this, "outputVolume", Chunk65154.Qx), A(this, "sourceId", Chunk65154.w5), A(this, "sinkId", Chunk65154.w5), A(this, "videoInputDeviceId", Chunk65154.Av), A(this, "enabled", false), A(this, "connections", new Set), A(this, "interacted", false), A(this, "loopback", null), A(this, "voiceActivityInput", null), A(this, "desktopInputPool", new Chunk867985.Z), A(this, "enablePromise", null), A(this, "dave", null), A(this, "transientKeys", null), A(this, "maxSupportedProtocolVersion", null), A(this, "handleActiveSinksChange", (e, t) => {
+    super(), C(this, "Video", Chunk825040.Z), C(this, "Camera", Chunk582168.Z), C(this, "_audioContext", null), C(this, "outputVolume", Chunk65154.Qx), C(this, "sourceId", Chunk65154.w5), C(this, "sinkId", Chunk65154.w5), C(this, "videoInputDeviceId", Chunk65154.Av), C(this, "enabled", false), C(this, "connections", new Set), C(this, "interacted", false), C(this, "loopback", null), C(this, "voiceActivityInput", null), C(this, "desktopInputPool", new Chunk867985.Z), C(this, "enablePromise", null), C(this, "dave", null), C(this, "transientKeys", null), C(this, "maxSupportedProtocolVersion", null), C(this, "handleActiveSinksChange", (e, t) => {
       this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t, "MediaEngineWebRTC.handleActiveSinksChange"))
-    }), A(this, "handleNewListener", e => {
+    }), C(this, "handleNewListener", e => {
       switch (e) {
         case f.aB.DeviceChange:
           null != navigator.mediaDevices && null == navigator.mediaDevices.ondevicechange && (navigator.mediaDevices.ondevicechange = () => {
@@ -326,7 +326,7 @@ class N extends Chunk47770.Z {
         case f.aB.VoiceActivity:
           null == this.voiceActivityInput && (this.voiceActivityInput = new m.Z(this.getAudioContext()), this.voiceActivityInput.setSource(this.sourceId), this.voiceActivityInput.on("voiceactivity", this.handleVoiceActivity), this.enabled && this.voiceActivityInput.enable())
       }
-    }), A(this, "handleRemoveListener", e => {
+    }), C(this, "handleRemoveListener", e => {
       switch (e) {
         case f.aB.DeviceChange:
           var t;
@@ -335,16 +335,16 @@ class N extends Chunk47770.Z {
         case f.aB.VoiceActivity:
           null != this.voiceActivityInput && 0 === this.listenerCount(f.aB.VoiceActivity) && (this.voiceActivityInput.destroy(), this.voiceActivityInput = null)
       }
-    }), A(this, "handleDeviceChange", () => (0, Chunk740197.PW)().then(e => {
+    }), C(this, "handleDeviceChange", () => (0, Chunk740197.PW)().then(e => {
       let [t, n, r] = e;
       return this.emit(f.aB.DeviceChange, t, n, r)
-    })), A(this, "handleVoiceActivity", e => {
+    })), C(this, "handleVoiceActivity", e => {
       this.emit(f.aB.VoiceActivity, e, 0)
-    }), A(this, "handleDesktopSourceEnd", () => {
+    }), C(this, "handleDesktopSourceEnd", () => {
       this.emit(Chunk46973.aB.DesktopSourceEnd)
-    }), A(this, "handleAudioPermission", e => {
+    }), C(this, "handleAudioPermission", e => {
       this.emit(f.aB.AudioPermission, e)
-    }), A(this, "handleVideoPermission", e => {
+    }), C(this, "handleVideoPermission", e => {
       this.emit(f.aB.VideoPermission, e)
     }), this.on("newListener", this.handleNewListener), this.on("removeListener", this.handleRemoveListener), (0, Chunk970838.px)(this.handleActiveSinksChange), (0, Chunk734298.Z)(this)
   }

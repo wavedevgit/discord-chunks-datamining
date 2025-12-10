@@ -71,12 +71,12 @@ let T = new Chunk598077.Z({
   username: "???"
 });
 
-function A(e) {
+function C(e) {
   var t;
   return null == e.author ? T : null != e.webhook_id ? new d.Z(e.author) : null != (t = _.default.getUser(e.author.id)) ? t : new d.Z(e.author)
 }
 
-function C(e) {
+function A(e) {
   returnfalse
 }
 
@@ -104,14 +104,14 @@ function P(e) {
     R = null != (o = e.mention_channels) ? o : [],
     D = null != (l = e.mention_games) ? l : [],
     w = e.message_reference,
-    L = A(e),
+    L = C(e),
     k = null,
     U = null == e ? true : e.gift_info,
     G = e.gifting_prompt,
     Z = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
     B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
     F = e.content;
-  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), e.type === y.uaV.PREMIUM_GROUP_INVITE && (m = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), C(e)) ? I(v({}, k), {
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), e.type === y.uaV.PREMIUM_GROUP_INVITE && (m = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), A(e)) ? I(v({}, k), {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,

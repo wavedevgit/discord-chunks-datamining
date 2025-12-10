@@ -93,7 +93,7 @@ let I = e => {
       })
     })
   },
-  A = e => {
+  C = e => {
     let {
       reason: t = m.wk.SPOILER,
       className: n,
@@ -121,7 +121,7 @@ let I = e => {
         return (0, h.vE)(t)
     }
   },
-  C = e => {
+  A = e => {
     let {
       obscureReason: t,
       isVisible: n,
@@ -182,14 +182,14 @@ class P extends Chunk473749.PureComponent {
           }),
           role: g ? "presentation" : "button",
           tabIndex: g ? false : 0,
-          children: [g || t ? null : (0, r.jsx)(A, {
+          children: [g || t ? null : (0, r.jsx)(C, {
             reason: s,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
             "aria-hidden": !g,
             className: E.spoilerInnerContainer,
             children: e(!g)
-          }), f ? null : (0, r.jsx)(C, {
+          }), f ? null : (0, r.jsx)(A, {
             obscureReason: s,
             isVisible: _,
             handleToggleObscurity: this.handleToggleObscurity,
@@ -206,7 +206,7 @@ class P extends Chunk473749.PureComponent {
           }),
           role: g ? "presentation" : "button",
           tabIndex: g ? false : 0,
-          children: [g || t ? null : (0, r.jsx)(A, {
+          children: [g || t ? null : (0, r.jsx)(C, {
             reason: s,
             isSingleMosaicItem: l
           }), (0, r.jsx)("div", {
@@ -246,14 +246,14 @@ class P extends Chunk473749.PureComponent {
           }),
           role: _ ? "presentation" : "button",
           tabIndex: _ ? false : 0,
-          children: [_ ? null : (0, r.jsx)(A, {
+          children: [_ ? null : (0, r.jsx)(C, {
             reason: s,
             isSingleMosaicItem: i
           }), (0, r.jsx)("div", {
             "aria-hidden": !_,
             className: E.spoilerInnerContainer,
             children: e(!_)
-          }), u ? null : (0, r.jsx)(C, {
+          }), u ? null : (0, r.jsx)(A, {
             obscureReason: s,
             isVisible: f,
             handleToggleObscurity: this.handleToggleObscurity,
@@ -269,7 +269,7 @@ class P extends Chunk473749.PureComponent {
           style: n,
           role: _ ? "presentation" : "button",
           tabIndex: _ ? false : 0,
-          children: [_ ? null : (0, r.jsx)(A, {
+          children: [_ ? null : (0, r.jsx)(C, {
             reason: s,
             className: E.embed
           }), (0, r.jsx)("div", {

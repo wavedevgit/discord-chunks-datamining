@@ -2,7 +2,7 @@
 /** chunk id: 84615, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ox: () => C,
+  Ox: () => A,
   QP: () => S,
   ob: () => P,
   q4: () => N
@@ -104,7 +104,7 @@ let T = {
     exitActive: Chunk102521.exitActive,
     exitDone: Chunk102521.exitDone
   },
-  A = {
+  C = {
     enter: Chunk102521.enterReducedMotion,
     enterActive: Chunk102521.enterActiveReducedMotion,
     enterDone: Chunk102521.enterDoneReducedMotion,
@@ -113,10 +113,10 @@ let T = {
     exitDone: Chunk102521.exitDoneReducedMotion
   };
 
-function C() {
+function A() {
   let {
     reducedMotion: e
-  } = Chunk473749.useContext(Chunk481060.Sfi), t = module.enabled ? A : T, n = S(e => e.fullScreenLayers), a = require.map(e => ({
+  } = Chunk473749.useContext(Chunk481060.Sfi), t = module.enabled ? C : T, n = S(e => e.fullScreenLayers), a = require.map(e => ({
     item: e,
     nodeRef: i.createRef()
   }));

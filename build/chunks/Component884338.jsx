@@ -74,14 +74,14 @@ function T(e, t) {
   return null != n ? n.id : "user-".concat(t)
 }
 
-function A(e) {
+function C(e) {
   return (0, i.jsx)("div", {
     className: _.moreUsers,
     children: e
   })
 }
 
-function C(e) {
+function A(e) {
   return (0, i.jsx)("div", {
     className: s()(_.moreUsers, _.moreUsersDimmed),
     children: e
@@ -153,7 +153,7 @@ class R extends(r = Chunk473749.PureComponent) {
       renderMoreUsers: o,
       users: s,
       dimEmptyUsers: l
-    } = this.props, c = Math.min(e, s.length), u = l ? C : o;
+    } = this.props, c = Math.min(e, s.length), u = l ? A : o;
     if (!r) {
       if (null != n) {
         if (n >= t) return (0, i.jsx)(a.Fragment, {
@@ -273,7 +273,7 @@ class R extends(r = Chunk473749.PureComponent) {
 }
 m(R, "defaultProps", {
   max: 10,
-  renderMoreUsers: A,
+  renderMoreUsers: C,
   renderIcon: false,
   showDefaultAvatarsForNullUsers: false,
   size: b.SIZE_24

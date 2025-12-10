@@ -175,12 +175,12 @@ class g extends Chunk836560.EventEmitter {
     let {
       results: I,
       metadata: T
-    } = b.queryResults(this.props.channel, this.props.guild, y, p, O), A = 0;
-    for (let e of Object.values(I)) Array.isArray(module) && (A += module.length);
-    let C = true === I.isLoading,
-      N = this.shouldShow(A, C, b),
+    } = b.queryResults(this.props.channel, this.props.guild, y, p, O), C = 0;
+    for (let e of Object.values(I)) Array.isArray(module) && (C += module.length);
+    let A = true === I.isLoading,
+      N = this.shouldShow(C, A, b),
       P = this.state.selectedIndex;
-    !N || C ? P = null : null != P && P >= A && (P = A - 1);
+    !N || A ? P = null : null != P && P >= C && (P = C - 1);
     let R = null != this.props.guild && Chunk627050.N.getCurrentConfig({
       guildId: this.props.guild.id,
       location: "mention autocomplete"
@@ -193,9 +193,9 @@ class g extends Chunk836560.EventEmitter {
         typeInfo: b,
         queryText: y,
         results: I,
-        resultCount: A,
+        resultCount: C,
         options: p,
-        isLoading: C
+        isLoading: A
       },
       isVisible: N,
       selectedIndex: P,

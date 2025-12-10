@@ -42,7 +42,7 @@ function b(e) {
     authorizedApplicationId: p.Z.testModeApplicationId,
     authorizationError: p.Z.error,
     authorizing: p.Z.isFetchingAuthorization
-  })), [O, v] = i.useState(null != d ? d : ""), [S, I] = i.useState("8080"), [T, A] = i.useState("localhost"), C = g.test(O);
+  })), [O, v] = i.useState(null != d ? d : ""), [S, I] = i.useState("8080"), [T, C] = i.useState("localhost"), A = g.test(O);
   async function N() {
     u.q$();
     let e = E(T, S, O);
@@ -50,7 +50,7 @@ function b(e) {
   }
 
   function P() {
-    u.mc(), v(""), A(null)
+    u.mc(), v(""), C(null)
   }
 
   function R(e) {
@@ -58,7 +58,7 @@ function b(e) {
   }
 
   function D(e) {
-    A(e)
+    C(e)
   }
 
   function w() {
@@ -89,11 +89,11 @@ function b(e) {
     j = L ? P : N,
     M = i.useMemo(() => [{
       loading: y,
-      disabled: !C || 0 === O.length || "localhost" === T && 0 === S.length,
+      disabled: !A || 0 === O.length || "localhost" === T && 0 === S.length,
       variant: L ? "critical-primary" : "active",
       text: L ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
       onClick: j
-    }], [O.length, y, L, C, S.length, j, T]);
+    }], [O.length, y, L, A, S.length, j, T]);
   return (0, r.jsxs)(a.Modal, {
     title: _.intl.string(_.t.f8fzky),
     subtitle: _.intl.string(_.t.a6Vill),
@@ -110,7 +110,7 @@ function b(e) {
           required: true,
           value: O,
           maxLength: 19,
-          error: C ? null : _.intl.string(_.t.gPNgKO),
+          error: A ? null : _.intl.string(_.t.gPNgKO),
           onChange: R,
           disabled: y
         })
@@ -118,7 +118,7 @@ function b(e) {
         className: m.inputWrapper,
         children: (0, r.jsx)(s.y6, {
           label: _.intl.string(_.t["/GTqXG"]),
-          isDisabled: !C || "" === O,
+          isDisabled: !A || "" === O,
           value: T,
           options: [{
             value: "localhost",

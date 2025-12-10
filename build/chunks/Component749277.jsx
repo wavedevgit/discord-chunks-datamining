@@ -29,7 +29,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk655227 = require("./655227.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -38,14 +38,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -70,7 +70,7 @@ function P(e, t) {
 let R = e => {
   let {
     dismissibleContent: t,
-    noticeType: A
+    noticeType: C
   } = e;
   return (0, r.jsx)(b.ZP, {
     contentTypes: [t],
@@ -87,7 +87,7 @@ let R = e => {
             color: a.DM8.DEFAULT,
             children: [(0, r.jsx)(a.RyX, {
               onClick: () => b(y.L.UNKNOWN),
-              noticeType: A
+              noticeType: C
             }), I.intl.string(I.t["+xn1o5"]), (0, r.jsx)("i", {
               className: T.iconApple
             }), (0, r.jsx)("i", {
@@ -95,13 +95,13 @@ let R = e => {
             }), (0, r.jsx)("i", {
               className: T.iconWindows
             }), (0, r.jsx)(a.NoS, {
-              noticeType: A,
+              noticeType: C,
               onClick: () => {
                 (0, a.ZDy)(async () => {
                   let {
                     default: e
                   } = await Promise.all([n.e("32996"), n.e("74023")]).then(n.bind(n, 431583));
-                  return t => (0, r.jsx)(e, C({
+                  return t => (0, r.jsx)(e, A({
                     source: "Top Bar Nag"
                   }, t))
                 })
@@ -114,7 +114,7 @@ let R = e => {
             color: a.DM8.SPOTIFY,
             children: [(0, r.jsx)(a.RyX, {
               onClick: () => b(y.L.UNKNOWN),
-              noticeType: A
+              noticeType: C
             }), (0, r.jsx)(g.Z, {
               className: T.platformIcon
             }), I.intl.string(I.t["5NUVHH"]), (0, r.jsx)(a.NoS, {
@@ -122,7 +122,7 @@ let R = e => {
                 platformType: O.ABu.SPOTIFY,
                 location: "Notice Bar"
               }),
-              noticeType: A,
+              noticeType: C,
               children: I.intl.string(I.t.S0W8Z5)
             })]
           });
@@ -130,7 +130,7 @@ let R = e => {
           return (0, r.jsxs)(a.qXd, {
             color: a.DM8.PLAYSTATION,
             children: [(0, r.jsx)(a.RyX, {
-              noticeType: A,
+              noticeType: C,
               onClick: () => b(y.L.UNKNOWN)
             }), (0, r.jsx)("img", {
               alt: "",
@@ -149,7 +149,7 @@ let R = e => {
             color: a.DM8.DEFAULT,
             children: [(0, r.jsx)(a.RyX, {
               onClick: () => b(y.L.USER_DISMISS),
-              noticeType: A
+              noticeType: C
             }), I.intl.string(I.t["3qKN/h"]), (0, r.jsx)(a.NoS, {
               onClick: async () => {
                 b(y.L.TAKE_ACTION);
@@ -164,7 +164,7 @@ let R = e => {
                     let {
                       RegisterWebAuthnCredentialModal: e
                     } = await Promise.resolve().then(n.bind(n, 778764));
-                    return n => (0, r.jsx)(e, P(C({}, n), {
+                    return n => (0, r.jsx)(e, P(A({}, n), {
                       ticket: t,
                       challenge: i,
                       showAccountSettingsButton: true
@@ -174,7 +174,7 @@ let R = e => {
                   (0, a.showToast)((0, a.createToast)(I.intl.string(I.t.xSCvBf), a.ToastType.FAILURE))
                 }
               },
-              noticeType: A,
+              noticeType: C,
               children: I.intl.string(I.t["ff/XXy"])
             })]
           });
@@ -188,7 +188,7 @@ let R = e => {
               children: I.intl.string(I.t["+urf75"])
             }), (0, r.jsx)(a.NoS, {
               className: T.premiumAction,
-              noticeType: A,
+              noticeType: C,
               onClick: () => {
                 E.default.track(O.rMx.PREMIUM_PROMOTION_OPENED, {
                   location_section: O.jXE.NOTIFICATION_BAR,
@@ -202,7 +202,7 @@ let R = e => {
               onClick: () => {
                 b(y.L.UNKNOWN), (0, o.mB)(O.xW$.PREMIUM_PROMO_DISMISSED, true)
               },
-              noticeType: A
+              noticeType: C
             })]
           });
         case i.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
@@ -219,10 +219,10 @@ let R = e => {
           return (0, r.jsxs)(a.qXd, {
             color: a.DM8.PREMIUM_TIER_2,
             children: [(0, r.jsx)(a.RyX, {
-              noticeType: A,
+              noticeType: C,
               onClick: () => b(y.L.UNKNOWN)
             }), I.intl.string(I.t["0KFB2B"]), (0, r.jsx)(a.NoS, {
-              noticeType: A,
+              noticeType: C,
               onClick: () => {
                 b(y.L.UNKNOWN), (0, h.openUserSettings)(m.n.NITRO_PANEL, {
                   section: O.oAB.PREMIUM
@@ -236,9 +236,9 @@ let R = e => {
             color: a.DM8.DANGER,
             children: [(0, r.jsx)(a.RyX, {
               onClick: () => b(y.L.UNKNOWN),
-              noticeType: A
+              noticeType: C
             }), I.intl.string(I.t["7490vQ"]), (0, r.jsx)(a.NoS, {
-              noticeType: A,
+              noticeType: C,
               onClick: () => {
                 (0, _.uL)(O.Z5c.SETTINGS("account"))
               },
@@ -251,9 +251,9 @@ let R = e => {
             color: a.DM8.DEFAULT,
             children: [(0, r.jsx)(a.RyX, {
               onClick: () => b(y.L.UNKNOWN),
-              noticeType: A
+              noticeType: C
             }), I.intl.string(I.t.pJ4hJE), (0, r.jsx)(a.NoS, {
-              noticeType: A,
+              noticeType: C,
               onClick: () => {
                 b(y.L.PRIMARY), (0, _.uL)(1 === N.length ? O.Z5c.GUILD_SETTINGS(N[0], "role-subscriptions") : O.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", true, "server-subscriptions-finish-setting-up"))
               },
@@ -265,10 +265,10 @@ let R = e => {
             color: a.DM8.WARNING,
             children: [(0, r.jsx)(a.RyX, {
               onClick: () => b(y.L.UNKNOWN),
-              noticeType: A
+              noticeType: C
             }), I.intl.format(I.t.pdYZyg, {}), (0, r.jsx)(a.NoS, {
               onClick: () => (0, f.Z)(v.Kq.NOTICE),
-              noticeType: A,
+              noticeType: C,
               children: I.intl.string(I.t.LhlgY9)
             })]
           });
@@ -277,7 +277,7 @@ let R = e => {
             color: a.DM8.PREMIUM_TIER_2,
             children: [(0, r.jsx)(a.RyX, {
               onClick: () => b(y.L.UNKNOWN),
-              noticeType: A
+              noticeType: C
             }), I.intl.string(I.t["O9GI+k"]), (0, r.jsx)(a.NoS, {
               onClick: () => {
                 (0, d.Z)({
@@ -287,7 +287,7 @@ let R = e => {
                   onClose: () => b(y.L.UNKNOWN)
                 })
               },
-              noticeType: A,
+              noticeType: C,
               children: I.intl.string(I.t.Zi69D4)
             })]
           })

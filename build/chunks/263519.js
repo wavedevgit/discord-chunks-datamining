@@ -30,14 +30,14 @@ function y(e) {
     skuId: O,
     onComplete: v,
     disableGuildSelector: S
-  } = e, I = (0, o.e7)([_.Z], () => null != O ? _.Z.get(O) : true, [O]), T = (0, o.e7)([m.Z], () => null != O ? m.Z.getForSKU(O) : true, [O]), A = null == (t = (0, o.Wu)([p.Z], () => null != O ? p.Z.getForSKU(O) : [], [O])[0]) ? true : t.id, C = (0, o.e7)([_.Z], () => null != O ? _.Z.getParentSKU(O) : true, [O]), N = null == C ? true : C.bundledSkuIds, P = (0, o.Wu)([p.Z], () => {
+  } = e, I = (0, o.e7)([_.Z], () => null != O ? _.Z.get(O) : true, [O]), T = (0, o.e7)([m.Z], () => null != O ? m.Z.getForSKU(O) : true, [O]), C = null == (t = (0, o.Wu)([p.Z], () => null != O ? p.Z.getForSKU(O) : [], [O])[0]) ? true : t.id, A = (0, o.e7)([_.Z], () => null != O ? _.Z.getParentSKU(O) : true, [O]), N = null == A ? true : A.bundledSkuIds, P = (0, o.Wu)([p.Z], () => {
     var e;
     return null != (e = null == N ? true : N.flatMap(p.Z.getForSKU)) ? e : []
   }, [N]), R = r.useMemo(() => P.map(e => e.id), [P]), D = (0, E.KK)(null != (n = null == I ? true : I.flags) ? n : 0), w = (0, o.e7)([g.Z], () => null != i && false !== D && g.Z.getEntitlementsForGuild(i, true).some(e => e.skuId === O), [D, O, i]), x = null == I ? true : I.applicationId, L = (null == T ? true : T.published) === true && (null == I ? true : I.isAvailable()) === true, {
     app: j
   } = (0, d.Rt)(x), {
     analyticsLocations: M
-  } = (0, c.ZP)(), k = (0, h.Ev)(C, null != i ? i : true), U = null == k ? true : k.subscription, G = null == k ? true : k.subscriptionPlan, Z = (0, h.cr)(C, null != i ? i : true), B = null == Z ? true : Z.subscriptionPlan, {
+  } = (0, c.ZP)(), k = (0, h.Ev)(A, null != i ? i : true), U = null == k ? true : k.subscription, G = null == k ? true : k.subscriptionPlan, Z = (0, h.cr)(A, null != i ? i : true), B = null == Z ? true : Z.subscriptionPlan, {
     entitlementsLoaded: F
   } = (0, h.LM)({
     guildId: i
@@ -61,7 +61,7 @@ function y(e) {
   }, [L, O, V]), {
     openModal: r.useCallback(() => {
       a()(null != j, "No application"), a()(null != O, "No SKU ID"), a()(L, "Cannot purchase this unpublished plan"), (0, b.H)({
-        subscriptionPlanId: A,
+        subscriptionPlanId: C,
         sku: I,
         subscriptionGroupPlanIds: R,
         initialSubscribeForGuild: i,
@@ -71,7 +71,7 @@ function y(e) {
       }).then(() => {
         null == v || v()
       })
-    }, [j, O, L, A, I, R, i, S, M, y, v]),
+    }, [j, O, L, C, I, R, i, S, M, y, v]),
     subscriptionPurchaseButtonState: Y,
     isGuildSubscribed: w
   }

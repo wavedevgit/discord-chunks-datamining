@@ -67,7 +67,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -207,7 +207,7 @@ function B(e) {
     } = t,
     r = N(t, ["fakeAppIconURL"]);
   return D(e) ? {
-    iconURL: h.ZP.getApplicationIconURL(C(T({}, r), {
+    iconURL: h.ZP.getApplicationIconURL(A(T({}, r), {
       id: e.id,
       icon: e.icon
     })),
@@ -241,7 +241,7 @@ function W(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && L(e.application));
-    0 !== e.length && t.push(C(T({}, n), {
+    0 !== e.length && t.push(A(T({}, n), {
       application_directory_collection_items: e
     }))
   }

@@ -2,7 +2,7 @@
 /** chunk id: 358555, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -154,7 +154,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     guild: t,
     disableBoostClick: n

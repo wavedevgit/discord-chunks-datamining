@@ -35,8 +35,8 @@ let y = Object.freeze([]),
   S = {},
   I = {},
   T = {},
-  A = {},
-  C = {};
+  C = {},
+  A = {};
 
 function N(e, t) {
   let n = O[e];
@@ -125,7 +125,7 @@ function U(e, t) {
 }
 
 function G(e) {
-  if (delete v[e], k(e), delete T[e], delete A[e], null == O[e]) return;
+  if (delete v[e], k(e), delete T[e], delete C[e], null == O[e]) return;
   let t = Object.values(O[e]),
     n = t.reduce((e, t) => {
       let n = t.processedAtTimestamp,
@@ -137,7 +137,7 @@ function G(e) {
   n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0 ? (v[e] = n.status, M(e, n.activities), T[e] = Z(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
-  })), null != n.clientStatus && (A[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = Z(Object.values(t).flatMap(e => {
+  })), null != n.clientStatus && (C[e] = n.clientStatus)) : s().every(O[e], e => e.status === E.Skl.OFFLINE && (null == e.hiddenActivities || 0 === e.hiddenActivities.length)) ? delete O[e] : n.status === E.Skl.OFFLINE && t.some(e => null != e.hiddenActivities && e.hiddenActivities.length > 0) && (T[e] = Z(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
   })))
@@ -156,7 +156,7 @@ function B(e) {
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
   if (n.status !== E.Skl.OFFLINE || null != n.hiddenActivities && n.hiddenActivities.length > 0) {
     var r;
-    v[e] = n.status, M(e, n.activities), T[e] = null != (r = n.hiddenActivities) ? r : [], null != n.clientStatus && (A[e] = n.clientStatus)
+    v[e] = n.status, M(e, n.activities), T[e] = null != (r = n.hiddenActivities) ? r : [], null != n.clientStatus && (C[e] = n.clientStatus)
   }
 }
 
@@ -197,7 +197,7 @@ function F(e) {
       processedAtTimestamp: l
     }
   }
-  return delete C[n], G(n), true
+  return delete A[n], G(n), true
 }
 
 function V(e) {
@@ -259,7 +259,7 @@ function K(e) {
     guilds: t,
     presences: n
   } = e, r = h.default.getId();
-  O = {}, C = {}, v = {
+  O = {}, A = {}, v = {
     [r]: v[r]
   }, S = {
     [r]: S[r]
@@ -267,7 +267,7 @@ function K(e) {
     [r]: I[r]
   }, T = {
     [r]: T[r]
-  }, A = {
+  }, C = {
     [r]: {}
   };
   let i = new Set;
@@ -316,7 +316,7 @@ function z(e) {
   let {
     presences: t
   } = e;
-  O = t.presencesForGuilds, v = t.statuses, S = t.activities, T = t.hiddenActivities, C = t.activityMetadata
+  O = t.presencesForGuilds, v = t.statuses, S = t.activities, T = t.hiddenActivities, A = t.activityMetadata
 }
 
 function q(e) {
@@ -449,7 +449,7 @@ function et(e) {
 function en(e) {
   let t = h.default.getId();
   if (v[t] === e.status && S[t] === e.activities && T[t] === e.hiddenActivities) returnfalse;
-  v[t] = e.status, M(t, [...e.activities].sort(L)), T[t] = [...e.hiddenActivities].sort(L), delete C[t]
+  v[t] = e.status, M(t, [...e.activities].sort(L)), T[t] = [...e.hiddenActivities].sort(L), delete A[t]
 }
 
 function er(e) {
@@ -457,7 +457,7 @@ function er(e) {
     userId: t,
     metadata: n
   } = e;
-  return C[t] = n, false
+  return A[t] = n, false
 }
 class ei extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -523,17 +523,17 @@ class ei extends(r = Chunk442837.ZP.Store) {
     return r && (i = i.concat(this.getHiddenActivities(e, n))), i.find(t)
   }
   getActivityMetadata(e) {
-    return C[e]
+    return A[e]
   }
   getUserIds() {
     return Chunk709054.default.keys(S)
   }
   isMobileOnline(e) {
-    let t = A[e];
+    let t = C[e];
     return null != t && t[E.X5t.MOBILE] === E.Skl.ONLINE && t[E.X5t.DESKTOP] !== E.Skl.ONLINE
   }
   getClientStatus(e) {
-    return A[e]
+    return C[e]
   }
   getState() {
     return {
@@ -542,8 +542,8 @@ class ei extends(r = Chunk442837.ZP.Store) {
       activities: S,
       filteredActivities: I,
       hiddenActivities: T,
-      activityMetadata: C,
-      clientStatuses: A
+      activityMetadata: A,
+      clientStatuses: C
     }
   }
 }

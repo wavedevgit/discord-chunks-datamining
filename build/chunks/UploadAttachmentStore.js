@@ -115,7 +115,7 @@ function T(e) {
   s.upload(), o.push(s), b(t, i, o)
 }
 
-function A(e) {
+function C(e) {
   let {
     channelId: t,
     uploads: n,
@@ -124,7 +124,7 @@ function A(e) {
   b(t, r, n)
 }
 
-function C(e) {
+function A(e) {
   let {
     channelId: t,
     draftType: n
@@ -168,8 +168,8 @@ let R = new P(Chunk570140.Z, {
   UPLOAD_ATTACHMENT_UPDATE_FILE: I,
   UPLOAD_ATTACHMENT_REMOVE_FILE: v,
   UPLOAD_ATTACHMENT_REMOVE_FILES: S,
-  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: C,
-  UPLOAD_ATTACHMENT_SET_UPLOADS: A,
+  UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: A,
+  UPLOAD_ATTACHMENT_SET_UPLOADS: C,
   UPLOAD_ATTACHMENT_SET_FILE: T,
   SIDEBAR_CLOSE: N
 })

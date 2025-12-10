@@ -5,7 +5,7 @@ require.d(exports, {
   Hg: () => T,
   KC: () => g,
   QX: () => N,
-  TD: () => C,
+  TD: () => A,
   Xf: () => O,
   Y4: () => y,
   _w: () => E,
@@ -104,7 +104,7 @@ function T(e) {
 Chunk706454.default.addChangeListener(() => {
   p = Object.create(null)
 });
-let A = [{
+let C = [{
   key: "days",
   millisecondsInUnit: 864e5
 }, {
@@ -118,7 +118,7 @@ let A = [{
   millisecondsInUnit: 1e3
 }];
 
-function C(e, t) {
+function A(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = {
       days: 0,
@@ -128,7 +128,7 @@ function C(e, t) {
     };
   if (e > t || n && Number(e) + 1200 > Number(t)) return r;
   let i = Number(t) - Number(e);
-  return A.forEach(e => {
+  return C.forEach(e => {
     let {
       key: t,
       millisecondsInUnit: n

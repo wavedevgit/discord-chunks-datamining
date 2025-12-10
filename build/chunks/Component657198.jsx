@@ -120,9 +120,9 @@ let S = e => {
         errored: (null == (r = u.Z.getOptionState(n, a.optionName)) || null == (t = r.lastValidationResult) ? true : t.success) !== true
       }
     }, [n, a.optionName]),
-    A = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
-    C = a.children[a.children.length - 1],
-    N = null != C && m.LC.isText(C) && C.text.endsWith("\n"),
+    C = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
+    A = a.children[a.children.length - 1],
+    N = null != A && m.LC.isText(A) && A.text.endsWith("\n"),
     P = o()(g.inlineElement, g.optionPill, {
       [g.selectedPill]: v && y,
       [g.erroredPill]: (!v || !y) && T
@@ -130,10 +130,10 @@ let S = e => {
     R = i.useCallback(() => {
       m.bN.isVoid(S, a) || _.Q.selectCommandOption(S, a.optionName, true)
     }, [S, a]);
-  return t = I === c.jw.ATTACHMENT ? (null == A ? true : A.filename) != null ? (0, r.jsxs)("span", {
+  return t = I === c.jw.ATTACHMENT ? (null == C ? true : C.filename) != null ? (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.attachmentFilename),
     contentEditable: false,
-    children: [A.filename, E]
+    children: [C.filename, E]
   }) : (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.readonlyPillValue),
     contentEditable: false,

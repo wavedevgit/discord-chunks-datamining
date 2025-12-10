@@ -28,16 +28,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk612232 = require("./612232.js");
-let A = ">=10.0.22000",
-  C = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i,
+let C = ">=10.0.22000",
+  A = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i,
   N = "{E5323777-F976-4f5b-9B55-B94699C46E44}";
 
 function P() {
-  return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && o().satisfies(Chunk579806.Z.os.release, A)
+  return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && o().satisfies(Chunk579806.Z.os.release, C)
 }
 
 function R(e) {
-  return (0, y.getPlatform)() === y.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(C, N))) : "") : ""
+  return (0, y.getPlatform)() === y.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(A, N))) : "") : ""
 }
 
 function D() {
@@ -63,9 +63,9 @@ function w(e) {
     onSelectBackgroundOption: l,
     renderCamera: d,
     hidePreviewToggle: y = false,
-    onCancelPreview: A
+    onCancelPreview: C
   } = e, {
-    analyticsLocations: C
+    analyticsLocations: A
   } = (0, f.ZP)(), {
     id: N
   } = (0, _.p6)(S.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), w = h.qF.useSetting();
@@ -73,7 +73,7 @@ function w(e) {
     gap: 20,
     children: [d(N), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
       className: T.permissionWarning,
-      color: "interactive-normal",
+      color: "interactive-text-default",
       variant: "text-sm/normal",
       children: I.intl.format(I.t.stagfJ, {
         onEnableClick: () => u.Z.enable(true)
@@ -93,8 +93,8 @@ function w(e) {
         label: n ? true : I.intl.string(I.t.FsQ3OR),
         helperText: !i && P() ? I.intl.format(I.t.aJYgRt, {
           onCameraSettingsClick: () => {
-            null == A || A(), window.open(R(N)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
-              location_stack: C
+            null == C || C(), window.open(R(N)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+              location_stack: A
             })
           }
         }) : true,

@@ -88,11 +88,11 @@ let S = Chunk473749.forwardRef(function(e, t) {
   let {
     themeType: T
   } = (0, f.z)(), {
-    analyticsLocations: A
+    analyticsLocations: C
   } = (0, l.ZP)(), {
-    context: C
+    context: A
   } = (0, c.KZ)();
-  return T === _.l.MODAL || T === _.l.MODAL_V2 || (null == C ? true : C.userId) == null ? (0, r.jsx)("article", {
+  return T === _.l.MODAL || T === _.l.MODAL_V2 || (null == A ? true : A.userId) == null ? (0, r.jsx)("article", {
     "aria-label": v,
     "aria-labelledby": S,
     children: (0, r.jsx)(d.Z.Overlay, y(E({
@@ -114,9 +114,9 @@ let S = Chunk473749.forwardRef(function(e, t) {
           action: "PRESS_CARD"
         }), (0, u.openUserProfileModal)(E({
           section: p.oh.ACTIVITY,
-          sourceAnalyticsLocations: A,
+          sourceAnalyticsLocations: C,
           subsection: a
-        }, C)), null == b || b()
+        }, A)), null == b || b()
       },
       children: (0, r.jsx)(d.Z.Overlay, y(E({
         ref: t,

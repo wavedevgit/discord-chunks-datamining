@@ -228,7 +228,7 @@ let O = e => {
       onToggleTheme: i
     } = (0, h.S)(), s = (0, g.ZP)() === b.BR.DARK, a = l.useCallback(e => {
       if (n.has(e) || s) return "always-white"
-    }, [n, s]), u = l.useCallback(e => n.has(e) || s ? d.TVs.colors.WHITE : d.TVs.colors.INTERACTIVE_NORMAL, [n, s]), f = l.useMemo(() => [{
+    }, [n, s]), u = l.useCallback(e => n.has(e) || s ? d.TVs.colors.WHITE : d.TVs.colors.INTERACTIVE_TEXT_DEFAULT, [n, s]), f = l.useMemo(() => [{
       name: v.intl.string(v.t.aVBOKh),
       icon: (0, r.jsx)(d.Hzt, {
         size: "xs",

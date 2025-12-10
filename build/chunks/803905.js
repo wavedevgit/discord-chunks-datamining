@@ -20,13 +20,13 @@ require.d(exports, {
   g7: () => P,
   g_: () => p,
   hs: () => E,
-  j4: () => C,
+  j4: () => A,
   ks: () => H,
   lX: () => b,
   m_: () => _,
   rh: () => Z,
   tj: () => g,
-  uw: () => A,
+  uw: () => C,
   wN: () => U,
   zZ: () => k,
   zm: () => x
@@ -72,8 +72,8 @@ let p = new f(Chunk848246.q.ANIMATED_EMOJIS),
   S = new f(Chunk848246.q.PROFILE_PREMIUM_FEATURES, "custom banner and avatar decoration"),
   I = new f("collectibles"),
   T = new f("appIcons"),
-  A = new f(Chunk848246.q.CLIENT_THEMES),
-  C = new f("boostDiscount"),
+  C = new f(Chunk848246.q.CLIENT_THEMES),
+  A = new f("boostDiscount"),
   N = new f("freeBoosts"),
   P = new f(Chunk848246.q.STREAM_MID_QUALITY),
   R = new f(Chunk848246.q.STREAM_HIGH_QUALITY),
@@ -90,10 +90,10 @@ let M = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
   Z = new f("warpPrivateBrowsing"),
   B = Object.freeze({
     [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [p, _, m, v, j, U, G, T]),
-    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, _, b, y, v, C, P, w, U, G, T]),
-    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, _, m, h, g, b, y, O, v, S, A, C, N, P, R, w, x, L, j, M, k, U, G, T, I, D, E, Z])
+    [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, _, b, y, v, A, P, w, U, G, T]),
+    [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, _, m, h, g, b, y, O, v, S, C, A, N, P, R, w, x, L, j, M, k, U, G, T, I, D, E, Z])
   }),
-  F = [C, N, Z],
+  F = [A, N, Z],
   V = [Z];
 
 function H(e, t, n) {

@@ -161,11 +161,11 @@ let v = [{
     }, [b, y]);
     let {
       isLoadedForPremiumSKUs: T,
-      selectedPlan: A
+      selectedPlan: C
     } = (0, d.rC)({
       subscriptionPlanId: y
     });
-    return !p && null != h && T && E && null != A ? (0, r.jsxs)("div", {
+    return !p && null != h && T && E && null != C ? (0, r.jsxs)("div", {
       className: g.verticalContainerCentered,
       children: [(0, r.jsx)(d.Vy, {
         stepConfigs: v,
@@ -181,13 +181,13 @@ let v = [{
         onClose: l,
         onComplete: c,
         paymentContextOverrides: {
-          selectedPlan: A,
+          selectedPlan: C,
           setSelectedPlanId: O
         }
       }), (0, r.jsx)(S, {})]
     }) : (0, r.jsx)(f.T, {})
   },
-  A = {
+  C = {
     isGift: {
       label: "Is Gift",
       type: "boolean",
@@ -199,7 +199,7 @@ let v = [{
       defaultValue: true
     }
   },
-  C = (0, Chunk3383.F)(),
+  A = (0, Chunk3383.F)(),
   N = {
     title: "Checkout Review Step",
     stories: [{
@@ -210,10 +210,10 @@ let v = [{
         skuId: {
           label: "SKU ID",
           type: "select",
-          options: C.options,
-          defaultValue: C.defaultValue
+          options: A.options,
+          defaultValue: A.defaultValue
         }
-      }, A)
+      }, C)
     }, {
       name: "Premium Review Step",
       id: "premium-checkout-review-step",
@@ -231,6 +231,6 @@ let v = [{
           }],
           defaultValue: Chunk474936.Si.TIER_0
         }
-      }, A)
+      }, C)
     }]
   }

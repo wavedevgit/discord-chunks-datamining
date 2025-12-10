@@ -123,17 +123,17 @@ let T = Chunk473749.forwardRef(function(e, t) {
   return (0, a.jsx)("div", b(g({}, i), {
     ref: t,
     role: "tabpanel",
-    id: A(r),
+    id: C(r),
     tabIndex: false,
     children: n
   }))
 });
 
-function A(e) {
+function C(e) {
   return "".concat(e.replace(/\s+/g, "-").toLowerCase(), "-tab")
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return;
   let n = {};
   return "Selected" === t ? (n.backgroundColor = e, n.color = d.Z.unsafe_rawColors.WHITE_500.css) : ("Hover" === t && (n.backgroundColor = (0, u.wK)(e, .1)), n.color = e), n
@@ -150,7 +150,7 @@ class N extends(r = Chunk473749.Component) {
       active: a
     } = this.state;
     if (null != module) {
-      if ("side" === r) return null != exports && require === exports || Chunk54381 ? C(module, "Selected") : i ? C(module, "Hover") : C(module);
+      if ("side" === r) return null != exports && require === exports || Chunk54381 ? A(module, "Selected") : i ? A(module, "Hover") : A(module);
       if ("top" === r)
         if (require === exports) return {
           borderColor: module,
@@ -202,7 +202,7 @@ class N extends(r = Chunk473749.Component) {
       style: this.getStyle(),
       role: "tab",
       "aria-selected": g,
-      "aria-controls": g ? A("".concat(require)) : true,
+      "aria-controls": g ? C("".concat(require)) : true,
       "aria-disabled": Chunk120356,
       tabIndex: g ? 0 : false,
       onMouseEnter: null != i ? this.handleMouseOver : true,

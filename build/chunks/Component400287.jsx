@@ -32,8 +32,8 @@ function E() {
     S = Chunk695346.RS.useSetting(),
     I = Chunk695346.NA.useSetting(),
     T = Chunk695346.nc.useSetting(),
-    A = Chunk695346.HV.useSetting(),
-    C = Chunk695346.rR.useSetting(),
+    C = Chunk695346.HV.useSetting(),
+    A = Chunk695346.rR.useSetting(),
     {
       analyticsLocations: N
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
@@ -197,7 +197,7 @@ function E() {
           }), (0, Chunk54381.jsx)(Chunk921801.F, {
             setting: Chunk726985.s6.CHAT_MENTION_SUGGESTIONS,
             children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-              checked: A,
+              checked: C,
               description: Chunk388032.intl.string(Chunk388032.t.AaXigo),
               onChange: e => {
                 p.HV.updateSetting(e)
@@ -233,7 +233,7 @@ function E() {
               value: 1
             }],
             onChange: P,
-            value: +!!C
+            value: +!!A
           })
         })]
       }), (0, Chunk54381.jsxs)(Chunk921801.F, {

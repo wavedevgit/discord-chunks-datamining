@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => P,
-  fD: () => C
+  fD: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,26 +48,26 @@ function T(e) {
   }
   return e
 }
-let A = "AppHardwareAcceleration";
+let C = "AppHardwareAcceleration";
 
-function C() {
+function A() {
   if ((0, Chunk947851.Y)("DesktopNativeUtils")) {
-    let e = Chunk433517.K.get(A);
+    let e = Chunk433517.K.get(C);
     if ("boolean" == typeof module) return module
   }
   return Chunk998502.ZP.getEnableHardwareAcceleration()
 }
 
 function N(e) {
-  (0, f.Y)("DesktopNativeUtils") ? (o.K.set(A, e), m.ZP.setEnableHardwareAcceleration(true)) : m.ZP.setEnableHardwareAcceleration(e)
+  (0, f.Y)("DesktopNativeUtils") ? (o.K.set(C, e), m.ZP.setEnableHardwareAcceleration(true)) : m.ZP.setEnableHardwareAcceleration(e)
 }
 
 function P() {
-  let [e] = Chunk473749.useState(() => C()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), m = Chunk473749.useCallback(e => {
+  let [e] = Chunk473749.useState(() => A()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), m = Chunk473749.useCallback(e => {
     g.bm.updateSetting(!e)
   }, []), I = Chunk473749.useCallback(e => {
     e ? (0, l.h7j)(e => (0, r.jsx)(b.Z, T({}, e))) : c.mc()
-  }, []), A = Chunk473749.useCallback(e => {
+  }, []), C = Chunk473749.useCallback(e => {
     (0, d.BV)(e, u.Z.USER_SETTINGS)
   }, []), P = Chunk473749.useCallback(e => {
     let t = e ? S.intl.format(S.t.LYXRxL, {}) : S.intl.format(S.t.uDP3Kz, {});
@@ -128,7 +128,7 @@ function P() {
           label: Chunk388032.intl.string(Chunk388032.t.qDZryG),
           description: Chunk388032.intl.string(Chunk388032.t["B/qU4K"]),
           checked: Chunk947851,
-          onChange: A
+          onChange: C
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {})]
       })]
     })

@@ -34,13 +34,13 @@ function y(e) {
     f.Z.shouldShowModal() && S()
   }, [S]), {
     submitting: T,
-    wasSubmitting: A
+    wasSubmitting: C
   } = (0, h.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: v,
     onSubmissionComplete: S
-  }), [C, N] = i.useState(false), P = (0, s.Qv)({
+  }), [A, N] = i.useState(false), P = (0, s.Qv)({
     applicationId: n.id,
     context: t
   }), R = i.useMemo(() => (0, m.XZ)(O.displayName), [O.displayName]), {
@@ -55,7 +55,7 @@ function y(e) {
     commandName: R,
     autoDismissOnClick: P === s.JS.LEAVE || (0, c.g)(n),
     launchingComponentId: v,
-    submitting: null != A ? A : T,
+    submitting: null != C ? C : T,
     onConfirmActivityLaunchChecksAlertOpen: I
   }), {
     disabled: L,
@@ -73,7 +73,7 @@ function y(e) {
       size: "md",
       variant: w,
       disabled: L,
-      loading: C,
+      loading: A,
       onClick: () => {
         N(true), D(), u.default.track(E.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
           application_id: n.id,

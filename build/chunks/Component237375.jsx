@@ -107,8 +107,8 @@ function y(e) {
     }, [f, c]),
     T = null != f ? null == y ? true : y[f] : null;
   l = null != T && (null == (t = T.lastValidationResult) ? true : t.success) === false ? null != (n = T.lastValidationResult.error) ? n : "" : null;
-  let A = E && null != v ? (0, p.ky)(v) : null,
-    C = (0, s.e7)([d.ZP], () => {
+  let C = E && null != v ? (0, p.ky)(v) : null,
+    A = (0, s.e7)([d.ZP], () => {
       if (null != m.guild_id && (null == v ? true : v.botId) != null) {
         var e;
         return null == (e = d.ZP.getMember(m.guild_id, v.botId)) ? true : e.nick
@@ -116,7 +116,7 @@ function y(e) {
     });
   return (0, r.jsxs)("div", {
     className: o()(h.wrapper, S ? null : h.disabled),
-    children: [null != A ? (0, r.jsx)(A, {
+    children: [null != C ? (0, r.jsx)(C, {
       className: h.image,
       channel: m,
       section: v,
@@ -140,7 +140,7 @@ function y(e) {
       })]
     }), (0, r.jsx)(u.dY, {
       className: h.source,
-      children: null != C ? C : null == v ? true : v.name
+      children: null != A ? A : null == v ? true : v.name
     })]
   })
 }

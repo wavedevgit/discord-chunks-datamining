@@ -55,7 +55,7 @@ function O(e) {
         color: u.TVs.colors.TEXT_BRAND
       }), (0, r.jsx)(u.Text, {
         variant: "text-xs/medium",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: m
       })]
     })
@@ -103,7 +103,7 @@ let f = Chunk473749.memo(function(e) {
         onClick: () => n(m.k.PERMISSIONS),
         children: [(0, r.jsx)(u.Text, {
           variant: "eyebrow",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: N.intl.format(N.t["0x6aTm"], {
             count: d
           })

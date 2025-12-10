@@ -61,8 +61,8 @@ function S(e, t) {
 }
 let I = 200,
   T = 200,
-  A = +Chunk70956.Z.Millis.MINUTE,
-  C = {},
+  C = +Chunk70956.Z.Millis.MINUTE,
+  A = {},
   N = "content",
   P = "file://",
   R = false,
@@ -214,7 +214,7 @@ function H(e) {
 
 function Y(e) {
   let t = Date.now(),
-    n = t - A;
+    n = t - C;
   L = (L = [{
     bytes: e,
     timestamp: t
@@ -237,7 +237,7 @@ let K = a().throttle(H, I),
   q = a().throttle(W, I);
 
 function Q(e, t, n) {
-  let r = n(C[t]),
+  let r = n(A[t]),
     i = n(e[t]);
   return null != r && null != i && 0 !== r ? Math.max(i - r, 0) : 0
 }
@@ -254,7 +254,7 @@ function X(e) {
   for (let e in r)
     for (let t in r[e]) {
       let o = (0, _.Tu)(e, t);
-      if (n[o] = Z(r[e][t]), null != C[o]) {
+      if (n[o] = Z(r[e][t]), null != A[o]) {
         let e = Q(n, o, B);
         e > 0 && K(D += e);
         let r = Q(n, o, F);
@@ -291,39 +291,39 @@ function X(e) {
         })
       }
     }
-  a || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), C = n, k = true
+  a || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), A = n, k = true
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default)
   }
   getState(e, t) {
-    return C[(0, _.Tu)(e, t)]
+    return A[(0, _.Tu)(e, t)]
   }
   isUpToDate(e, t) {
-    let n = C[(0, _.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && n.type === b.vxO.UP_TO_DATE
   }
   shouldPatch(e, t) {
-    let n = C[(0, _.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && true === n.shouldPatch
   }
   isInstalled(e, t) {
-    let n = C[(0, _.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n ? n.type !== b.vxO.UNINSTALLING : E.Z.shouldBeInstalled(e, t)
   }
   supportsCloudSync(e, t) {
     null == t && (t = e);
-    let n = C[(0, _.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && null != n.storage && !!n.storage.sync
   }
   isLaunchable(e, t) {
     if (!(0, h.Q)()) returnfalse;
-    let n = C[(0, _.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null != n && n.type === b.vxO.UP_TO_DATE && null != n.launchOptions && 0 !== n.launchOptions.length
   }
   getDefaultLaunchOption(e, t) {
-    let n = C[(0, _.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     if (null == n) return null;
     let {
       defaultLaunchOptionId: r,
@@ -332,7 +332,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return null == r || null == i ? null : i[r]
   }
   getLaunchOptions(e, t) {
-    let n = C[(0, _.Tu)(e, t)];
+    let n = A[(0, _.Tu)(e, t)];
     return null == n || null == n.launchOptions ? [] : Object.values(n.launchOptions)
   }
   getHistoricalTotalBytesRead() {

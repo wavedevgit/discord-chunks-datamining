@@ -2,7 +2,7 @@
 /** chunk id: 240479, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js"), require("./457542.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk937309 = require("./937309.js");
 
-function A(e) {
+function C(e) {
   let {
     discoverableGuildId: t,
     closePopout: n,
@@ -60,15 +60,15 @@ function A(e) {
   }) : null
 }
 
-function C(e) {
+function A(e) {
   let {
     sound: t,
     channel: n,
     closePopout: l,
     refreshPosition: u
-  } = e, E = t.guildId === S.X8, O = (0, o.e7)([g.Z], () => g.Z.getGuild(t.guildId)), v = !E && null != O, [C, N] = i.useState(), P = (0, b.V2)({
+  } = e, E = t.guildId === S.X8, O = (0, o.e7)([g.Z], () => g.Z.getGuild(t.guildId)), v = !E && null != O, [A, N] = i.useState(), P = (0, b.V2)({
     location: "SoundmojiGuildInfo"
-  }), R = E || v || null != C || !P, [D, w] = i.useState(!R);
+  }), R = E || v || null != A || !P, [D, w] = i.useState(!R);
   i.useEffect(() => {
     R || (w(true), (0, _.xU)(t.soundId, t.guildId).then(e => {
       N(e)
@@ -79,7 +79,7 @@ function C(e) {
   let {
     buttonType: x,
     description: L
-  } = (0, y.Z)(t, n, v, C), j = x === y.y.JOIN_GUILD, M = !E && D, k = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
+  } = (0, y.Z)(t, n, v, A), j = x === y.y.JOIN_GUILD, M = !E && D, k = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != A ? d.JO.createFromDiscoverableGuild(A) : true, [O, v, A]);
   return M ? (0, r.jsx)(p.SE, {}) : (0, r.jsxs)("div", {
     className: T.infoContainer,
     children: [(0, r.jsxs)(p.W_, {
@@ -99,7 +99,7 @@ function C(e) {
         className: T.infoExpandedGuildContainer,
         children: [(0, r.jsx)(a.xvT, {
           variant: "eyebrow",
-          color: "header-muted",
+          color: "text-muted",
           className: T.infoExpandedGuildTitle,
           children: v ? I.intl.string(I.t.tGDabk) : I.intl.string(I.t.rnOmOa)
         }), (0, r.jsx)("div", {
@@ -109,15 +109,15 @@ function C(e) {
             hasJoinedExpressionSourceGuild: v,
             isDisplayingJoinGuildButtonInPopout: j
           })
-        }), (0, r.jsx)(A, {
+        }), (0, r.jsx)(C, {
           buttonType: x,
-          discoverableGuildId: null == C ? true : C.id,
+          discoverableGuildId: null == A ? true : A.id,
           closePopout: l
         })]
       })]
     }), (0, r.jsx)(c.IGR, {
       text: "BETA",
-      color: s.Z.colors.BG_BRAND.css,
+      color: s.Z.colors.BACKGROUND_BRAND.css,
       className: T.betaBadge
     })]
   })

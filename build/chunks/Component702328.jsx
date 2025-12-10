@@ -93,19 +93,19 @@ let z = () => {
       plans: eI,
       compare: eT
     } = eb,
-    eA = eh ? Chunk379039 : Chunk810392,
+    eC = eh ? Chunk379039 : Chunk810392,
     {
-      variant: eC
+      variant: eA
     } = (0, Chunk931118.ZP)("PremiumBrandRefreshMarketingHeroHeading"),
     eN = (0, Chunk639119.N)(),
     eP = (0, Chunk622909.N)(),
     eR = Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== Chunk474936.a7,
     eD = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eP && null != eP.expires_at,
     ew = eR ? eN.expires_at : eD ? eP.expires_at : null,
-    ex = eC === Chunk931118.tE.HERO_COUNTDOWN && (eR || eD) && null != ew,
+    ex = eA === Chunk931118.tE.HERO_COUNTDOWN && (eR || eD) && null != ew,
     eL = (0, Chunk54381.jsxs)("div", {
-      className: o()(eA.container, eA.responsiveContainer, {
-        [eA.containerBackground]: eh || J,
+      className: o()(eC.container, eC.responsiveContainer, {
+        [eC.containerBackground]: eh || J,
         [Chunk379039.fadeInFromTop]: !Q && eh
       }),
       "data-cy": "tier-0-marketing-page",
@@ -127,9 +127,9 @@ let z = () => {
           alt: ""
         })]
       }), (0, Chunk54381.jsxs)("div", {
-        className: eA.sectionsContainer,
+        className: eC.sectionsContainer,
         children: [(0, Chunk54381.jsx)("div", {
-          className: eA.heroHeadingContainer,
+          className: eC.heroHeadingContainer,
           ref: eO.ref,
           children: (0, Chunk54381.jsx)(Chunk622535.$, {
             innerRef: Chunk120356,
@@ -150,12 +150,12 @@ let z = () => {
             })
           })
         }), ep && (0, Chunk54381.jsx)("div", {
-          className: eA.promoBannerContainer,
+          className: eC.promoBannerContainer,
           children: (0, Chunk54381.jsx)(Chunk8647.Z, {
             variant: Chunk8647.C.APPLICATION_NITRO_HOME
           })
         }), (0, Chunk54381.jsx)("div", {
-          className: eA.whatsNewSectionContainer,
+          className: eC.whatsNewSectionContainer,
           ref: ev.ref,
           children: (0, Chunk54381.jsx)(Chunk611116.g, {
             shouldLoadVideo: es,
@@ -163,7 +163,7 @@ let z = () => {
             enablePremiumBrandRefreshDesign: eh
           })
         }), (0, Chunk54381.jsx)("div", {
-          className: eA.bestOfNitroSectionContainer,
+          className: eC.bestOfNitroSectionContainer,
           ref: eS.ref,
           children: (0, Chunk54381.jsx)(Chunk611116.G_, {
             shouldLoadVideo: es,
@@ -171,7 +171,7 @@ let z = () => {
             enablePremiumBrandRefreshDesign: eh
           })
         }), (0, Chunk54381.jsx)("div", {
-          className: eA.premiumTierCardsContainer,
+          className: eC.premiumTierCardsContainer,
           ref: eI.ref,
           children: (0, Chunk54381.jsx)(Chunk622535.$, {
             innerRef: require,
@@ -186,7 +186,7 @@ let z = () => {
             })
           })
         }), (0, Chunk54381.jsx)("div", {
-          className: eA.planComparisonTableContainer,
+          className: eC.planComparisonTableContainer,
           ref: eT.ref,
           children: eh ? (0, Chunk54381.jsx)(Chunk975978.Z, {}) : (0, Chunk54381.jsx)(Chunk8231.Z, {})
         })]
@@ -204,7 +204,7 @@ let z = () => {
         },
         children: (0, Chunk54381.jsx)("div", {
           ref: z,
-          className: eA.bottomOfPageVisibilitySensor
+          className: eC.bottomOfPageVisibilitySensor
         })
       }), (0, Chunk54381.jsx)(Chunk622535.$, {
         innerRef: q,
@@ -233,7 +233,7 @@ let z = () => {
   return (0, Chunk54381.jsx)(Chunk481060.f6W, {
     theme: eh ? Chunk231338.BR.DARKER : X,
     children: t => (0, r.jsx)(u.yWw, {
-      className: o()(eA.scroller, t),
+      className: o()(eC.scroller, t),
       ref: e,
       children: eL
     })

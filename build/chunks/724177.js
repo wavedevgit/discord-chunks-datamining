@@ -66,19 +66,19 @@ function y(e, t, n, r) {
     query: T
   } = I;
   if (T.length < p || u.Z.getMaxWordCount() < m || u.Z.isFrequentlyUsedWord(T)) return f;
-  let A = (0, l.Cq)(i.h8.USER),
-    C = s.Z.getMessages(e.id).toArray(),
+  let C = (0, l.Cq)(i.h8.USER),
+    A = s.Z.getMessages(e.id).toArray(),
     N = new Set;
-  for (let e = 0; e < C.length; e++) {
-    let t = C[e];
-    A[t.author.id] = (null != (d = A[t.author.id]) ? d : 1) + (C.length - e) / C.length, N.add(t.author.id)
+  for (let e = 0; e < A.length; e++) {
+    let t = A[e];
+    C[t.author.id] = (null != (d = C[t.author.id]) ? d : 1) + (A.length - e) / A.length, N.add(t.author.id)
   }
   let P = false;
   S && (P = null != e.guild_id && (null != (g = o.Z.getMemberCount(e.guild_id)) ? g : 0) > h);
   let R = l.ZP.queryMentionSuggestionResults({
     query: T,
     channel: e,
-    boosters: A,
+    boosters: C,
     onlyExactMatch: O && (!v || P)
   });
   return (P ? R = R.filter(e => N.has(e.user.id)) : v && (R = R.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || y === a.eq.MENTION_SUGGESTIONS || !(T.length < _) || R.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {

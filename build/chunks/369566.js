@@ -27,24 +27,24 @@ function y(e) {
     recentActivityTabEnabled: t
   } = (0, h.O)({
     location: "useUserProfileActivity"
-  }), n = (0, a.e7)([f.default], () => f.default.getId() === e), y = (0, o.Z)(e), O = (0, a.e7)([_.Z], () => _.Z.getActivities(e)), v = (0, a.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : true), S = (0, a.e7)([m.Z], () => m.Z.getVoiceStateForUser(e)), I = (0, a.e7)([p.Z], () => p.Z.getChannel(null == S ? true : S.channelId)), T = (0, d.E)("UserProfileActivity", I), A = (0, r.useMemo)(() => O.filter(e => {
+  }), n = (0, a.e7)([f.default], () => f.default.getId() === e), y = (0, o.Z)(e), O = (0, a.e7)([_.Z], () => _.Z.getActivities(e)), v = (0, a.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : true), S = (0, a.e7)([m.Z], () => m.Z.getVoiceStateForUser(e)), I = (0, a.e7)([p.Z], () => p.Z.getChannel(null == S ? true : S.channelId)), T = (0, d.E)("UserProfileActivity", I), C = (0, r.useMemo)(() => O.filter(e => {
     let {
       type: t
     } = e;
     return t === g.IIU.HANG_STATUS ? T : t !== g.IIU.CUSTOM_STATUS
   }), [O, T]), {
-    live: C,
+    live: A,
     recent: N
   } = (0, r.useMemo)(() => {
-    let e = (0, i.uniqWith)(A, (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name),
+    let e = (0, i.uniqWith)(C, (e, t) => null != e.application_id && null != t.application_id && e.application_id === t.application_id || null != e.name && null != t.name && e.name === t.name),
       t = null == v ? true : v.entries.filter(t => !(0, u.Jg)(t) && ((0, l.dU)(t) ? t.extra.entries.length > 0 && !e.some(e => null != e && (0, c.pB)(t, e)) : (0, l.y0)(t) ? !e.some(e => null != e && (0, c.RL)(t, e)) : (0, l.Rh)(t)));
     return {
       live: 0 === e.length ? E : e,
       recent: null == t || 0 === t.length ? b : t
     }
-  }, [A, null == v ? true : v.entries]);
+  }, [C, null == v ? true : v.entries]);
   return {
-    live: C,
+    live: A,
     recent: N,
     stream: y,
     outbox: v

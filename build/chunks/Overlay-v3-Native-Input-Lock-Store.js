@@ -70,11 +70,11 @@ function T() {
   return h = Chunk509140.Z.getNativeModule(), I(), true
 }
 
-function A() {
+function C() {
   return h = null, I(), true
 }
 
-function C(e) {
+function A(e) {
   let {
     locked: t,
     pid: n
@@ -122,11 +122,11 @@ class x extends(r = Chunk442837.ZP.Store) {
 }
 p(x, "displayName", "Overlay-v3-Native-Input-Lock-Store");
 let L = new x(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
-    OVERLAY_SET_INPUT_LOCKED: C
+    OVERLAY_SET_INPUT_LOCKED: A
   } : {
     OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: T,
-    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: A,
-    OVERLAY_SET_INPUT_LOCKED: C,
+    OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: C,
+    OVERLAY_SET_INPUT_LOCKED: A,
     OVERLAY_ACTIVATE_REGION: N,
     OVERLAY_DEACTIVATE_ALL_REGIONS: P,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: w,

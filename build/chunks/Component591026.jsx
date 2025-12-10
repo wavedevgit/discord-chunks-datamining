@@ -74,7 +74,7 @@ function h(e) {
             variant: "heading-sm/semibold",
             children: g.intl.string(g.t["s/26oQ"])
           }), (0, r.jsx)(l.Text, {
-            color: "interactive-normal",
+            color: "interactive-text-default",
             variant: "text-xs/medium",
             className: m.descriptionHint,
             children: g.intl.string(g.t["8uW4/N"])
@@ -110,7 +110,7 @@ function h(e) {
             variant: "heading-sm/semibold",
             children: g.intl.string(g.t.XnuC9g)
           }), (0, r.jsx)(l.Text, {
-            color: "interactive-normal",
+            color: "interactive-text-default",
             variant: "text-xs/medium",
             className: m.descriptionHint,
             children: g.intl.string(g.t.EDBe5m)

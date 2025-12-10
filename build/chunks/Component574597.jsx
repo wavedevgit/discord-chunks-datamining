@@ -52,8 +52,8 @@ function I(e) {
     v = d.Z.getChannel(n),
     I = p.Z.getGuild(null == v ? true : v.getGuildId()),
     T = (0, c.Z)(null == I ? true : I.id, E.HI),
-    A = t => (0, E._H)(e.type, t, n),
-    C = (e, t) => {
+    C = t => (0, E._H)(e.type, t, n),
+    A = (e, t) => {
       let n = t === b.tE.PILL_ICON_SIZE;
       if ((null == e ? true : e.type) === g.tM.USER) {
         let i = m.default.getUser(e.value);
@@ -116,8 +116,8 @@ function I(e) {
     P = i.useMemo(() => (0, E.tx)(e.defaultValues, null == I ? true : I.id), [e.defaultValues, I]);
   return (0, r.jsx)(b.ZP, {
     selectActionComponent: e,
-    queryOptions: A,
-    renderIcon: C,
+    queryOptions: C,
+    renderIcon: A,
     renderOptionLabel: N,
     defaultValues: P
   })

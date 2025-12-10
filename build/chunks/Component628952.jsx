@@ -2,7 +2,7 @@
 /** chunk id: 628952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -58,12 +58,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = e => {
+let A = e => {
   let {
     skuId: t,
     isSelected: n,
@@ -71,7 +71,7 @@ let C = e => {
     onSelect: s,
     shouldDisplayHeader: S = false,
     className: T,
-    previewHeaderClassName: C,
+    previewHeaderClassName: A,
     hideProfilePreview: N = false
   } = e, {
     product: P
@@ -102,13 +102,13 @@ let C = e => {
   return (0, r.jsxs)("div", {
     className: T,
     children: [S && (0, r.jsx)("div", {
-      className: o()(v.previewTitleContainer, C),
+      className: o()(v.previewTitleContainer, A),
       children: (0, r.jsx)(d.gNt, {
         label: O.intl.string(O.t.PpoJzt),
         children: k && (0, r.jsx)(d.yRy, {
           targetElementRef: L,
           preload: () => (0, _.Z)(R.id, R.getAvatarURL(null, 80)),
-          renderPopout: e => (0, r.jsx)(p.Z, A(I({}, e), {
+          renderPopout: e => (0, r.jsx)(p.Z, C(I({}, e), {
             user: R,
             pendingAvatar: R.getAvatarURL(null, (0, d.dcp)(d.EFr.SIZE_80)),
             pendingAvatarDecoration: (0, g.M)(j) ? j : null,
@@ -119,7 +119,7 @@ let C = e => {
           })),
           align: "center",
           position: "right",
-          children: e => (0, r.jsx)(d.P3F, A(I({}, e), {
+          children: e => (0, r.jsx)(d.P3F, C(I({}, e), {
             className: v.previewLink,
             innerRef: L,
             children: (0, r.jsx)(d.Text, {

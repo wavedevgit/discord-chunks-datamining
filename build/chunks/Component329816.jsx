@@ -108,10 +108,10 @@ let ee = (0, Chunk663993.Un)({
                 children: (0, r.jsxs)(x.yP, {
                   children: [null != a ? (0, r.jsx)(en, {}) : null, (0, r.jsxs)("div", {
                     className: o()($.appAsidePanelWrapper, f && $.mobileAppAsidePanelWrapper),
-                    children: [(0, r.jsx)(C.K, {}), (0, r.jsx)("div", {
+                    children: [(0, r.jsx)(A.K, {}), (0, r.jsx)("div", {
                       className: $.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
-                      children: (0, r.jsx)(A.m, {
+                      children: (0, r.jsx)(C.m, {
                         children: (0, r.jsx)(j.OR, {
                           children: (0, r.jsx)(y.Z.Provider, {
                             value: O.Z,

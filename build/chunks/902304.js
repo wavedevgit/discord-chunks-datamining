@@ -35,8 +35,8 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 let T = new Chunk710845.Z("GameConsoleManager"),
-  A = 3e3,
-  C = 6e4,
+  C = 3e3,
+  A = 6e4,
   N = 18e4;
 async function P(e) {
   let t = f.Z.getChannelId();
@@ -89,7 +89,7 @@ class D extends Chunk147913.Z {
       null != s && (s.selfDeaf !== r || s.selfMute !== i) && ((0, h.Vv)(o, {
         selfDeaf: r,
         selfMute: i
-      }), this.rollbackCommandTimeout.start(A, () => {
+      }), this.rollbackCommandTimeout.start(C, () => {
         P(s)
       }))
     }), I(this, "handleVoiceStateUpdates", e => {
@@ -115,7 +115,7 @@ class D extends Chunk147913.Z {
       let e = E.default.getRemoteSessionId();
       null != e && null == p.Z.getSessionById(e) && (0, h.s6)(), null == e && this.maybeConnect(Object.values(p.Z.getSessions()))
     }), I(this, "handleWaitForRemoteSession", () => {
-      this.awaitRemoteTimeout.start(C, () => {
+      this.awaitRemoteTimeout.start(A, () => {
         (0, h.s6)(), o.Z.show({
           title: S.intl.string(S.t.wGMxr3),
           body: S.intl.string(S.t.i5k8b5)

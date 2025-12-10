@@ -28,7 +28,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk981631 = require("./981631.js"),
   Chunk987650 = require("./987650.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,14 +37,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -85,7 +85,7 @@ class x {
     }
   }
   constructor() {
-    A(this, "actions", {
+    C(this, "actions", {
       [Chunk987650.bv.Viewed]: 0,
       [Chunk987650.bv.Clicked]: 0
     })
@@ -146,13 +146,13 @@ class L {
     }).filter(e => null != e)
   }
   constructor() {
-    A(this, "actionCounters", {
+    C(this, "actionCounters", {
       [Chunk987650.bv.Viewed]: 0,
       [Chunk987650.bv.Clicked]: 0
-    }), A(this, "groupCounters", {
+    }), C(this, "groupCounters", {
       [Chunk987650.bv.Viewed]: L.makeEmptyGroupAnalytics(),
       [Chunk987650.bv.Clicked]: L.makeEmptyGroupAnalytics()
-    }), A(this, "counters", L.makeCounters())
+    }), C(this, "counters", L.makeCounters())
   }
 }
 class j {
@@ -190,7 +190,7 @@ class j {
     }
   }
   constructor() {
-    A(this, "types", {
+    C(this, "types", {
       0: j.makeEmptyAnalytics(),
       1: j.makeEmptyAnalytics()
     })
@@ -240,7 +240,7 @@ class M {
       screentype_fullscreen_duration: Chunk379649[Chunk593472.Jx.FULLSCREEN],
       screentype_minimized_duration: Chunk379649[Chunk593472.Jx.MINIMIZED]
     };
-    return P(C({}, Chunk581567), {
+    return P(A({}, Chunk581567), {
       screentype_global_supported_duration: Chunk581567.screentype_windowed_duration + Chunk581567.screentype_maximized_duration + Chunk581567.screentype_borderless_fullscreen_duration,
       screentype_global_unsupported_duration: Chunk581567.screentype_fullscreen_duration,
       screentype_initial: Chunk593472.Jx[this.game.fullscreenType],
@@ -254,7 +254,7 @@ class M {
     clearInterval(this.updateScreenInterval)
   }
   constructor(e) {
-    A(this, "game", true), A(this, "counters", true), A(this, "lastscreenType", true), A(this, "updateScreenInterval", true), this.game = e, this.counters = {
+    C(this, "game", true), C(this, "counters", true), C(this, "lastscreenType", true), C(this, "updateScreenInterval", true), this.game = e, this.counters = {
       [o.Jx.UNKNOWN]: new i.G9,
       [o.Jx.WINDOWED]: new i.G9,
       [o.Jx.MAXIMIZED]: new i.G9,
@@ -306,15 +306,15 @@ class U {
     }
     if (null == e) {
       let e = null != t ? p.default.getRenderMethod(t.pid) : null;
-      return C({
+      return A({
         original_method: null != e ? e : f.gl.Disabled
       }, a)
     }
-    if (null == n) return C({
+    if (null == n) return A({
       original_method: e
     }, a);
     let s = e !== n.original_method ? e : true;
-    return C(P(C({}, n), {
+    return A(P(A({}, n), {
       any_other_method: null != s ? s : n.any_other_method
     }), a)
   }
@@ -329,7 +329,7 @@ class U {
   static create(e) {
     let t = U.getGameName(e);
     if (U.ignoreGame(e) || null == t) return null;
-    let n = new U(C({}, e));
+    let n = new U(A({}, e));
     return n.gameConcurrentGameCount = Object.values(U.gamesByPid).length, U.gamesByPid[e.pid] = n, U.gamesByName[t] = n, n
   }
   static getByName(e) {
@@ -389,7 +389,7 @@ class U {
       v = null != Chunk145597.current_method ? Chunk837268.gl[Chunk145597.current_method] : null,
       S = Chunk626135.enabledLegacy || Chunk626135.enabledOOP;
     return {
-      usage: P(C(P(C({
+      usage: P(A(P(A({
         event_uuid: this.uuid,
         overlay_usage_stats_version: R
       }, this.notificationAnalytics.getAnalytics(), this.widgetAnalytics.getAnalytics(), this.screenAnalytics.getAnalytics(), Chunk449224), {
@@ -470,7 +470,7 @@ class U {
   }
   constructor(e) {
     var t, n;
-    A(this, "game", true), A(this, "uuid", true), A(this, "overlayStatus", true), A(this, "overlayMethod", true), A(this, "overlayMethodStats", true), A(this, "overlayState", true), A(this, "overlayStateRaw", true), A(this, "overlayStateReason", true), A(this, "overlayStateRawReason", true), A(this, "notificationAnalytics", true), A(this, "widgetAnalytics", true), A(this, "screenAnalytics", true), A(this, "uiUnlockedCount", true), A(this, "uiLockedCount", true), A(this, "gameFocusChangedCount", true), A(this, "gameConcurrentGameCount", true), A(this, "overlayMessageAckCount", true), A(this, "overlayMessageCreateCount", true), A(this, "gameTimer", true), A(this, "gameFocusedTimer", true), A(this, "unlockedTimer", true), A(this, "rtcConnectionTimer", true), A(this, "desktopFocusedTimer", true), A(this, "desktopFocusChangedCount", true), A(this, "desktopMessageAckCount", true), A(this, "desktopMessageCreateCount", true), A(this, "soundboardShownTimer", true), A(this, "soundboardShownCount", true), A(this, "soundboardKeepOpenCount", true), A(this, "muteToggledCount", true), A(this, "_successfullyShown", true), this.game = e, this.uuid = k(), this.overlayMethod = null, this.overlayMethodStats = null, this.overlayState = null, this.overlayStateRaw = null, this.overlayStateReason = null, this.overlayStateRawReason = null, this.notificationAnalytics = new L, this.widgetAnalytics = new j, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new M(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), ee.hasConnection() && this.rtcConnectionTimer.start()
+    C(this, "game", true), C(this, "uuid", true), C(this, "overlayStatus", true), C(this, "overlayMethod", true), C(this, "overlayMethodStats", true), C(this, "overlayState", true), C(this, "overlayStateRaw", true), C(this, "overlayStateReason", true), C(this, "overlayStateRawReason", true), C(this, "notificationAnalytics", true), C(this, "widgetAnalytics", true), C(this, "screenAnalytics", true), C(this, "uiUnlockedCount", true), C(this, "uiLockedCount", true), C(this, "gameFocusChangedCount", true), C(this, "gameConcurrentGameCount", true), C(this, "overlayMessageAckCount", true), C(this, "overlayMessageCreateCount", true), C(this, "gameTimer", true), C(this, "gameFocusedTimer", true), C(this, "unlockedTimer", true), C(this, "rtcConnectionTimer", true), C(this, "desktopFocusedTimer", true), C(this, "desktopFocusChangedCount", true), C(this, "desktopMessageAckCount", true), C(this, "desktopMessageCreateCount", true), C(this, "soundboardShownTimer", true), C(this, "soundboardShownCount", true), C(this, "soundboardKeepOpenCount", true), C(this, "muteToggledCount", true), C(this, "_successfullyShown", true), this.game = e, this.uuid = k(), this.overlayMethod = null, this.overlayMethodStats = null, this.overlayState = null, this.overlayStateRaw = null, this.overlayStateReason = null, this.overlayStateRawReason = null, this.notificationAnalytics = new L, this.widgetAnalytics = new j, this.uiUnlockedCount = 0, this.uiLockedCount = 0, this.gameFocusChangedCount = 0, this.gameConcurrentGameCount = 0, this.overlayMessageAckCount = 0, this.overlayMessageCreateCount = 0, this.gameTimer = i.G9.startNew(), this.gameFocusedTimer = new i.G9, this.unlockedTimer = new i.G9, this.rtcConnectionTimer = new i.G9, this.desktopFocusedTimer = new i.G9, this.desktopFocusChangedCount = 0, this.desktopMessageAckCount = 0, this.desktopMessageCreateCount = 0, this.soundboardShownTimer = new i.G9, this.soundboardShownCount = 0, this.soundboardKeepOpenCount = 0, this.muteToggledCount = 0, this._successfullyShown = false, this.screenAnalytics = new M(e), this.overlayStatus = (0, d.b6)(e), this.overlayMethod = null != (n = null == (t = this.overlayStatus) ? true : t.overlayMethod) ? n : null, this.overlayMethodStats = this.buildOverlayMethodStats(this.overlayMethod, e), U.desktopMainWindowHasFocus && this.desktopFocusedTimer.start(), ee.hasConnection() && this.rtcConnectionTimer.start()
   }
 }
 
@@ -611,7 +611,7 @@ function $(e) {
     t.setOverlayState(e.newState, e.reason, false)
   }
 }
-A(U, "gamesByPid", {}), A(U, "gamesByName", {}), A(U, "desktopMainWindowHasFocus", document.hasFocus());
+C(U, "gamesByPid", {}), C(U, "gamesByName", {}), C(U, "desktopMainWindowHasFocus", document.hasFocus());
 class ee {
   static hasConnection() {
     return ee.connections.size > 0
@@ -630,7 +630,7 @@ class ee {
     ee.previousHasConnection !== r && (U.toggleRtcConnection(r), ee.previousHasConnection = r)
   }
 }
-A(ee, "connections", new Set), A(ee, "previousHasConnection", false);
+C(ee, "connections", new Set), C(ee, "previousHasConnection", false);
 class et {
   static handleMessageAcked(e) {
     w.verbose("MESSAGE_ACKED", e);
@@ -661,7 +661,7 @@ D && !__OVERLAY__ && setInterval(async () => {
 }, 5e3);
 class en extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), A(this, "actions", __OVERLAY__ ? {
+    super(...e), C(this, "actions", __OVERLAY__ ? {
       MESSAGE_ACKED: et.handleMessageAcked,
       MESSAGE_CREATE: et.handleMessageCreate
     } : {

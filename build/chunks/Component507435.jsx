@@ -68,7 +68,7 @@ function T() {
     width: "24",
     height: "24",
     viewBox: "0 0 24 24",
-    fill: Chunk692547.Z.colors.INTERACTIVE_NORMAL.css,
+    fill: Chunk692547.Z.colors.INTERACTIVE_TEXT_DEFAULT.css,
     "aria-hidden": true,
     children: (0, Chunk54381.jsx)("path", {
       fillRule: "evenodd",
@@ -79,7 +79,7 @@ function T() {
   })
 }
 
-function A(e) {
+function C(e) {
   let t, {
     hasNoVotes: n,
     victorEmoji: i
@@ -99,7 +99,7 @@ function A(e) {
   }) : null
 }
 
-function C(e) {
+function A(e) {
   if (0 === e.totalVotes) return {
     type: "NO_VOTES"
   };
@@ -186,12 +186,12 @@ function P(e) {
     className: t,
     data: n,
     onClickPollLink: a
-  } = e, s = i.useMemo(() => C(n), [n]), l = null != n.victorEmoji || "NO_VOTES" === s.type;
+  } = e, s = i.useMemo(() => A(n), [n]), l = null != n.victorEmoji || "NO_VOTES" === s.type;
   return (0, r.jsxs)("div", {
     className: o()(b.container, {
       [b.containerWithImage]: l
     }, t),
-    children: [(0, r.jsx)(A, {
+    children: [(0, r.jsx)(C, {
       hasNoVotes: "NO_VOTES" === s.type,
       victorEmoji: n.victorEmoji
     }), (0, r.jsx)(N, O({}, s)), null != a && (0, r.jsx)(c.Button, {

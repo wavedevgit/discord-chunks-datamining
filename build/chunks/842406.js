@@ -95,12 +95,12 @@ exports.isArgumentsObject = Chunk670575, exports.isGeneratorFunction = Chunk1316
 }, O.working = "undefined" != typeof ArrayBuffer && O(new ArrayBuffer), exports.isArrayBuffer = v, S.working = "undefined" != typeof ArrayBuffer && "undefined" != typeof DataView && S(new DataView(new ArrayBuffer(1), 0, 1)), exports.isDataView = I;
 var T = "undefined" != typeof SharedArrayBuffer ? SharedArrayBuffer : true;
 
-function A(e) {
+function C(e) {
   return "[object SharedArrayBuffer]" === u(e)
 }
 
-function C(e) {
-  return true !== T && (true === A.working && (A.working = A(new T)), A.working ? A(e) : e instanceof T)
+function A(e) {
+  return true !== T && (true === C.working && (C.working = C(new T)), C.working ? C(e) : e instanceof T)
 }
 
 function N(e) {
@@ -122,7 +122,7 @@ function D(e) {
 function w(e) {
   return c && h(e, m)
 }
-exports.isSharedArrayBuffer = C, exports.isAsyncFunction = function(e) {
+exports.isSharedArrayBuffer = A, exports.isAsyncFunction = function(e) {
   return "[object AsyncFunction]" === u(e)
 }, exports.isMapIterator = function(e) {
   return "[object Map Iterator]" === u(e)
@@ -135,7 +135,7 @@ exports.isSharedArrayBuffer = C, exports.isAsyncFunction = function(e) {
 }, exports.isNumberObject = N, exports.isStringObject = P, exports.isBooleanObject = R, exports.isBigIntObject = D, exports.isSymbolObject = w, exports.isBoxedPrimitive = function(e) {
   return N(e) || P(e) || R(e) || D(e) || w(e)
 }, exports.isAnyArrayBuffer = function(e) {
-  return "undefined" != typeof Uint8Array && (v(e) || C(e))
+  return "undefined" != typeof Uint8Array && (v(e) || A(e))
 }, ["isProxy", "isExternal", "isModuleNamespaceObject"].forEach(function(e) {
   Object.defineProperty(t, e, {
     enumerable: false,

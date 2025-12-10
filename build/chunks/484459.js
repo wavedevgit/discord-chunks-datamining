@@ -30,9 +30,9 @@ function p(e, t) {
     abortSignal: T
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
   if ("" === e || u.Z.isFetchingProfile(e, v)) return Promise.resolve();
-  let A = u.Z.getUserProfile(e),
-    C = Date.now() - (null != (m = null == A ? true : A.fetchEndedAt) ? m : 0) >= f;
-  if (((null == A || null == (n = A.fetchError) ? true : n.status) === 404 || (null == A || null == (p = A.fetchError) ? true : p.status) === 429) && !C) return Promise.resolve();
+  let C = u.Z.getUserProfile(e),
+    A = Date.now() - (null != (m = null == C ? true : C.fetchEndedAt) ? m : 0) >= f;
+  if (((null == C || null == (n = C.fetchError) ? true : n.status) === 404 || (null == C || null == (p = C.fetchError) ? true : p.status) === 429) && !A) return Promise.resolve();
   let N = u.Z.getGuildMemberProfile(e, v),
     P = u.Z.getMutualGuilds(e),
     R = u.Z.getMutualFriends(e),
@@ -40,10 +40,10 @@ function p(e, t) {
     w = null == R && b,
     x = null == D && E,
     L = null == P && g || w || x,
-    j = null == v ? null == A : null == N,
-    M = !j && (C || L);
+    j = null == v ? null == C : null == N,
+    M = !j && (A || L);
   if (!j && !M) return Promise.resolve();
-  let k = null != v ? null == N ? true : N.profileEffect : null == A ? true : A.profileEffect;
+  let k = null != v ? null == N ? true : N.profileEffect : null == C ? true : C.profileEffect;
   null != k && (0, o.lW)(k.skuId), null != t && (0, a.vM)(t);
   let U = {
     type: h,

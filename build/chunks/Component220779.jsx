@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   A7: () => T,
-  dE: () => C
+  dE: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -79,14 +79,14 @@ function T(e) {
     className: m
   } = e, [g, E] = i.useState(""), [y, v] = i.useState((0, d.JM)("")), T = () => {
     E(""), v((0, d.JM)(""))
-  }, A = u.Ie.ATOMIC_REACTOR_REPLY_INPUT, C = i.useRef(null), N = () => {
-    if (null == C.current) return "top";
-    let e = C.current.getBoundingClientRect(),
+  }, C = u.Ie.ATOMIC_REACTOR_REPLY_INPUT, A = i.useRef(null), N = () => {
+    if (null == A.current) return "top";
+    let e = A.current.getBoundingClientRect(),
       t = window.innerHeight;
     return e.top < t / 2 ? "bottom" : "top"
   };
   return (0, r.jsx)(f.ZP, {
-    ref: C,
+    ref: A,
     placeholder: t,
     editorClassName: m,
     className: o()(b.replyInput, m),
@@ -97,11 +97,11 @@ function T(e) {
     onChange: (e, t, n) => {
       E(t), v(n)
     },
-    type: s ? S(O({}, A), {
+    type: s ? S(O({}, C), {
       emojis: {
         button: true
       }
-    }) : A,
+    }) : C,
     textValue: g,
     richValue: y,
     onSubmit: e => {
@@ -126,7 +126,7 @@ function T(e) {
     renderAttachButton: l
   })
 }
-let A = (e, t) => {
+let C = (e, t) => {
     i.useEffect(() => {
       let n = t => {
           "Escape" === t.key && e()
@@ -140,12 +140,12 @@ let A = (e, t) => {
       }
     }, [e, t])
   },
-  C = e => {
+  A = e => {
     let {
       onSelectEmoji: t,
       onClick: n
     } = e, a = (0, c.ZP)(), [o, u] = i.useState(false), d = i.useRef(null), f = i.useRef(null);
-    return A(() => u(false), d), (0, r.jsx)(l.yRy, {
+    return C(() => u(false), d), (0, r.jsx)(l.yRy, {
       targetElementRef: f,
       align: "right",
       position: "top",

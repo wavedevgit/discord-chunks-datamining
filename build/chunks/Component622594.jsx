@@ -40,48 +40,48 @@ let g = Chunk473749.memo(function(e) {
     return e
   }({}, f.nl), {
     audio: p
-  } = (0, u.p)(), b = null != p, y = a.useRef(null), j = a.useRef(null), x = a.useRef(null), [N, w] = a.useState(0), [C, S] = a.useState(0), [O, Z] = a.useState(0), [P, E] = a.useState(false), [M, k] = a.useState(false), [I, T] = a.useState(false), [D, F] = a.useState(0), [R, B] = a.useState(false), U = a.useMemo(() => D / v.fineTuningScale, [v.fineTuningScale, D]);
+  } = (0, u.p)(), b = null != p, y = a.useRef(null), j = a.useRef(null), x = a.useRef(null), [N, w] = a.useState(0), [C, S] = a.useState(0), [O, Z] = a.useState(0), [P, E] = a.useState(false), [k, M] = a.useState(false), [I, T] = a.useState(false), [D, F] = a.useState(0), [R, B] = a.useState(false), G = a.useMemo(() => D / v.fineTuningScale, [v.fineTuningScale, D]);
   a.useEffect(() => {
     if (null == p) return;
     let e = p.duration * o.Z.Millis.SECOND;
     w(0), S(0), Z(e), F(e)
   }, [p]);
-  let _ = a.useCallback((e, n) => {
+  let U = a.useCallback((e, n) => {
       if (t(), 0 === e.button) switch (n) {
         case 0:
           E(true);
           break;
         case 1:
-          k(true);
+          M(true);
           break;
         case 2:
           T(true)
       }
     }, [t]),
-    z = a.useCallback(e => {
+    _ = a.useCallback(e => {
       switch (e) {
         case 0:
           E(false);
           break;
         case 1:
-          k(false);
+          M(false);
           break;
         case 2:
           T(false)
       }
       B(false)
     }, []),
-    G = a.useCallback(e => {
+    z = a.useCallback(e => {
       if (null == p || !P) return;
       let n = parseInt(e.target.value),
         t = n > O ? O : n;
       i((0, c.my)(t)), w(t), S(t)
     }, [p, i, O, P]),
     L = a.useCallback(e => {
-      if (null == p || !M) return;
+      if (null == p || !k) return;
       let n = parseInt(e.target.value);
       n < N ? (i((0, c.my)(N)), S(N)) : n > O ? (i((0, c.my)(O)), S(O)) : (i((0, c.my)(n)), S(n))
-    }, [p, i, O, M, N]),
+    }, [p, i, O, k, N]),
     H = a.useCallback(e => {
       if (null == p || !I) return;
       let n = parseInt(e.target.value),
@@ -104,12 +104,12 @@ let g = Chunk473749.memo(function(e) {
   }, [p, O, t, C, n, N]), a.useEffect(() => {
     if (v.fineTuningDelay <= 0) return;
     let e = setTimeout(() => {
-      P && N == N && false === R ? B(N) : I && O == O && false === R ? B(O) : M && C == C && false === R && B(C)
+      P && N == N && false === R ? B(N) : I && O == O && false === R ? B(O) : k && C == C && false === R && B(C)
     }, v.fineTuningDelay);
     return () => {
       clearTimeout(e)
     }
-  }, [v.fineTuningDelay, I, O, R, M, C, P, N]), (0, l.jsxs)("div", {
+  }, [v.fineTuningDelay, I, O, R, k, C, P, N]), (0, l.jsxs)("div", {
     className: r()(m.timeline, {
       [m.initialized]: b
     }),
@@ -121,23 +121,23 @@ let g = Chunk473749.memo(function(e) {
           ref: y,
           className: r()(m.rangeHandle, m.rangeHandleStart),
           type: "range",
-          min: (0, c.ao)(R, U, D),
-          max: (0, c.MN)(R, U, D),
+          min: (0, c.ao)(R, G, D),
+          max: (0, c.MN)(R, G, D),
           value: N,
-          onChange: G,
-          onMouseDown: e => _(e, 0),
-          onMouseUp: () => z(0),
+          onChange: z,
+          onMouseDown: e => U(e, 0),
+          onMouseUp: () => _(0),
           disabled: !b || h
         }), (0, l.jsx)("input", {
           ref: x,
           className: r()(m.rangeHandle, m.rangeHandleEnd),
           type: "range",
-          min: (0, c.ao)(R, U, D),
-          max: (0, c.MN)(R, U, D),
+          min: (0, c.ao)(R, G, D),
+          max: (0, c.MN)(R, G, D),
           value: O,
           onChange: H,
-          onMouseDown: e => _(e, 2),
-          onMouseUp: () => z(2),
+          onMouseDown: e => U(e, 2),
+          onMouseUp: () => _(2),
           disabled: !b || h
         })]
       }), (0, l.jsx)("div", {
@@ -146,12 +146,12 @@ let g = Chunk473749.memo(function(e) {
           ref: j,
           className: r()(m.rangeHandle, m.rangeHandlePlayhead),
           type: "range",
-          min: (0, c.ao)(R, U, D),
-          max: (0, c.MN)(R, U, D),
+          min: (0, c.ao)(R, G, D),
+          max: (0, c.MN)(R, G, D),
           value: C,
           onChange: L,
-          onMouseDown: e => _(e, 1),
-          onMouseUp: () => z(1),
+          onMouseDown: e => U(e, 1),
+          onMouseUp: () => _(1),
           disabled: !b || h
         })
       })]
@@ -163,8 +163,8 @@ let g = Chunk473749.memo(function(e) {
           [m.endDragging]: I
         }),
         style: {
-          left: "".concat((0, c.pN)(N, R, U, D), "%"),
-          right: "".concat((0, c.kD)(O, R, U, D), "%")
+          left: "".concat((0, c.pN)(N, R, G, D), "%"),
+          right: "".concat((0, c.kD)(O, R, G, D), "%")
         },
         children: [(0, l.jsx)("div", {
           className: r()(m.handleIconFrame, m.handleIconFrameStart),
@@ -193,10 +193,10 @@ let g = Chunk473749.memo(function(e) {
         className: m.playheadTrack,
         children: (0, l.jsx)("div", {
           className: r()(m.playhead, {
-            [m.dragging]: M || P || I || n
+            [m.dragging]: k || P || I || n
           }),
           style: {
-            left: "".concat((0, c.pN)(C, R, U, D), "%")
+            left: "".concat((0, c.pN)(C, R, G, D), "%")
           }
         })
       })]
@@ -204,7 +204,7 @@ let g = Chunk473749.memo(function(e) {
       className: m.waveformContainer,
       children: (0, l.jsx)(d.Z, {
         fineTuning: R,
-        fineTuningResolution: U,
+        fineTuningResolution: G,
         duration: D
       })
     })]

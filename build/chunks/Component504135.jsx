@@ -70,8 +70,8 @@ function E(e) {
     isFocused: S,
     menuItemProps: I,
     action: T,
-    onClose: A,
-    onFocus: C,
+    onClose: C,
+    onFocus: A,
     className: N,
     focusedClassName: P,
     subMenuIconClassName: R,
@@ -86,11 +86,11 @@ function E(e) {
     if (null == j || j({
         type: c.U.DEFAULT
       }), null == T) returnfalse;
-    e.shiftKey && D || w || A(), e.persist(), null == L || L(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => T(e))
-  }, [T, A, L, D, w, j]);
+    e.shiftKey && D || w || C(), e.persist(), null == L || L(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => T(e))
+  }, [T, C, L, D, w, j]);
   return i.useEffect(() => {
-    S && ((0, u.F)(M), null == C || C())
-  }, [S, C]), (0, r.jsxs)(s.P3F, g(m({
+    S && ((0, u.F)(M), null == A || A())
+  }, [S, A]), (0, r.jsxs)(s.P3F, g(m({
     innerRef: M,
     className: o()(p.item, p.labelContainer, f._e[t], N, {
       [p.disabled]: v,

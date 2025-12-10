@@ -377,7 +377,7 @@ let v = "migrated",
     }
   };
 
-function A(e) {
+function C(e) {
   let {
     layoutId: t,
     widgets: n,
@@ -387,7 +387,7 @@ function A(e) {
   if (null != r[t] && r[t].version === a) returnfalse;
   let s = [];
   n.forEach((e, t) => {
-    let n = C(e.type),
+    let n = A(e.type),
       r = O(b({}, e), {
         zIndex: t
       });
@@ -403,7 +403,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let t = r[v];
   if (null != t)
     for (let n of t.widgets) {
@@ -846,7 +846,7 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
   }
 }]);
 let q = new z(Chunk570140.Z, {
-  LAYOUT_CREATE: A,
+  LAYOUT_CREATE: C,
   LAYOUT_SET_PINNED: L,
   LAYOUT_UPDATE_WIDGET: P,
   LAYOUT_SET_TOP_WIDGET: R,

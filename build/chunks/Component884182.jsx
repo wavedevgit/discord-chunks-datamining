@@ -88,11 +88,11 @@ function S(e) {
     itemsForLayout: t,
     maxWidth: n
   });
-  if (3 === a) return (0, r.jsx)(A, {
+  if (3 === a) return (0, r.jsx)(C, {
     itemsForLayout: t,
     maxWidth: n
   });
-  if (4 === a) return (0, r.jsx)(C, {
+  if (4 === a) return (0, r.jsx)(A, {
     itemsForLayout: t,
     maxWidth: n
   });
@@ -155,7 +155,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     itemsForLayout: t,
     maxWidth: n
@@ -185,7 +185,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     itemsForLayout: t,
     maxWidth: n

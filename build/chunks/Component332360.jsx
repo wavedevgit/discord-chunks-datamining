@@ -73,7 +73,7 @@ let E = () => {
         "aria-label": Chunk388032.intl.string(Chunk388032.t.ybUZql),
         children: [(0, Chunk54381.jsx)(Chunk481060.j9r, {
           size: "sm",
-          color: Chunk481060.TVs.colors.INTERACTIVE_NORMAL
+          color: Chunk481060.TVs.colors.INTERACTIVE_TEXT_DEFAULT
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "text-default",

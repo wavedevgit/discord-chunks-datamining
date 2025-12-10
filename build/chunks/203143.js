@@ -161,7 +161,7 @@ function B(e) {
   let a = I.Z.getMessage(t, n);
   if (null == a || null == a.poll || 0 === a.poll.answers.length) return;
   let o = null != r ? r : String(a.poll.answers[0].answer_id);
-  A.A({
+  C.A({
     message: a,
     initialAnswerId: o
   })
@@ -258,7 +258,7 @@ async function Y(e) {
       channelId: t,
       messageId: n,
       answerIds: e
-    }), await C.B({
+    }), await A.B({
       channelId: t,
       messageId: n,
       answerIds: e
@@ -501,7 +501,7 @@ let q = {
     await d.Z.confirm({
       title: D.intl.string(D.t["+rfkTK"]),
       body: D.intl.string(D.t.H2I1gL)
-    }) && await C.W({
+    }) && await A.W({
       channelId: t,
       messageId: n
     })

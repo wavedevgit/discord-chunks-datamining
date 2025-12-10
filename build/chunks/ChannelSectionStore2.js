@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let T = "message_requests",
-  A = false,
   C = false,
+  A = false,
   N = true,
   P = {},
   R = {},
@@ -92,11 +92,11 @@ function j(e) {
 }
 
 function M() {
-  D && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), C && (C = j(C)), A = j(A)
+  D && Chunk585483.S.dispatch(Chunk981631.CkL.SEARCH_RESULTS_CLOSE), A && (A = j(A)), C = j(C)
 }
 
 function k() {
-  A && (A = j(A)), C = j(C)
+  C && (C = j(C)), A = j(A)
 }
 
 function U() {
@@ -223,7 +223,7 @@ function z() {
 }
 
 function q() {
-  Chunk873546.tq && A && (A = false, C = false)
+  Chunk873546.tq && C && (C = false, A = false)
 }
 
 function Q(e) {
@@ -233,14 +233,14 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n, r, i, a;
-      A = null != (t = e.isMembersOpen) && t, C = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, P = null != (i = e.sidebars) ? i : {}, R = null != (a = e.guildSidebars) ? a : {}
+      C = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, P = null != (i = e.sidebars) ? i : {}, R = null != (a = e.guildSidebars) ? a : {}
     }
     this.syncWith([l.Z], z), this.syncWith([_.Z], W), this.waitFor(f.Z, s.Z, p.Z, _.Z, l.Z, m.Z, h.Z, g.default)
   }
   getState() {
     return {
-      isMembersOpen: A,
-      isSummariesOpen: C,
+      isMembersOpen: C,
+      isSummariesOpen: A,
       isProfileOpen: N,
       sidebars: P,
       guildSidebars: R
@@ -249,7 +249,7 @@ class X extends(r = Chunk442837.ZP.PersistedStore) {
   getSection(e, t) {
     if (D) return E.ULH.SEARCH;
     let n = x(e);
-    return null != n && null != P[n] ? E.ULH.SIDEBAR_CHAT : t && N ? E.ULH.PROFILE : C ? E.ULH.SUMMARIES : A ? E.ULH.MEMBERS : E.ULH.NONE
+    return null != n && null != P[n] ? E.ULH.SIDEBAR_CHAT : t && N ? E.ULH.PROFILE : A ? E.ULH.SUMMARIES : C ? E.ULH.MEMBERS : E.ULH.NONE
   }
   getSidebarState(e) {
     let t = x(e);

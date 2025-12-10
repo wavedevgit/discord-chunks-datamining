@@ -24,10 +24,10 @@ var Chunk507604 = require("./507604.js"),
   Chunk923646 = require("./923646.js"),
   Chunk204954 = require("./204954.js"),
   T = Chunk751736("match"),
-  A = Chunk127849.RegExp,
-  C = A.prototype,
+  C = Chunk127849.RegExp,
+  A = C.prototype,
   N = Chunk127849.SyntaxError,
-  P = Chunk46015(C.exec),
+  P = Chunk46015(A.exec),
   R = Chunk46015("".charAt),
   D = Chunk46015("".replace),
   w = Chunk46015("".indexOf),
@@ -35,11 +35,11 @@ var Chunk507604 = require("./507604.js"),
   L = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   j = /a/g,
   M = /a/g,
-  k = new A(j) !== j,
+  k = new C(j) !== j,
   U = Chunk751954.MISSED_STICKY,
   G = Chunk751954.UNSUPPORTED_Y,
   Z = Chunk507604 && (!k || U || Chunk923646 || Chunk204954 || Chunk621523(function() {
-    return M[T] = false, A(j) !== j || A(M) === M || "/a/i" !== String(A(j, "i"))
+    return M[T] = false, C(j) !== j || C(M) === M || "/a/i" !== String(C(j, "i"))
   })),
   B = function(e) {
     for (var t, n = e.length, r = 0, i = "", a = false; r <= n; r++) {
@@ -74,18 +74,18 @@ var Chunk507604 = require("./507604.js"),
   };
 if (Chunk275717("RegExp", Z)) {
   for (var V = function(e, t) {
-      var n, r, i, a, o, c, u = d(C, this),
+      var n, r, i, a, o, c, u = d(A, this),
         m = f(e),
         h = true === t,
         g = [],
         E = e;
       if (!u && m && h && e.constructor === V) return e;
-      if ((m || d(C, e)) && (e = e.source, h && (t = _(E))), e = true === e ? "" : p(e), t = true === t ? "" : p(t), E = e, S && "dotAll" in j && (r = !!t && w(t, "s") > false) && (t = D(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && w(t, "y") > false) && G && (t = D(t, /y/g, "")), I && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : C, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(B(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
+      if ((m || d(A, e)) && (e = e.source, h && (t = _(E))), e = true === e ? "" : p(e), t = true === t ? "" : p(t), E = e, S && "dotAll" in j && (r = !!t && w(t, "s") > false) && (t = D(t, /s/g, "")), n = t, U && "sticky" in j && (i = !!t && w(t, "y") > false) && G && (t = D(t, /y/g, "")), I && (e = (a = F(e))[0], g = a[1]), o = s(C(e, t), u ? this : A, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(B(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o
-    }, H = u(A), Y = 0; H.length > Y;) Chunk316096(V, A, H[Y++]);
-  C.constructor = V, V.prototype = C, Chunk556585(Chunk127849, "RegExp", V, {
+    }, H = u(C), Y = 0; H.length > Y;) Chunk316096(V, C, H[Y++]);
+  A.constructor = V, V.prototype = A, Chunk556585(Chunk127849, "RegExp", V, {
     constructor: true
   })
 }

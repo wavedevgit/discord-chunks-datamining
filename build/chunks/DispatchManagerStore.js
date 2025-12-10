@@ -34,8 +34,8 @@ let y = [Chunk186901.ff.AUTHENTICATION_FAILED, Chunk186901.ff.NOT_ENTITLED],
   S = [],
   I = false,
   T = null,
-  A = null,
-  C = false,
+  C = null,
+  A = false,
   N = new Map,
   P = false,
   R = null;
@@ -50,7 +50,7 @@ function D() {
 }
 
 function w(e, t) {
-  return null != T && T.applicationId === e && T.branchId === t || null != A && A.applicationId === e && A.branchId === t
+  return null != T && T.applicationId === e && T.branchId === t || null != C && C.applicationId === e && C.branchId === t
 }
 
 function x() {
@@ -155,9 +155,9 @@ function H(e) {
   let {
     state: t
   } = e;
-  !C && (C = true, x(), I || _.Z.resume());
+  !A && (A = true, x(), I || _.Z.resume());
   let n = I;
-  I = t.paused, T = t.currentTask, A = t.nextTask;
+  I = t.paused, T = t.currentTask, C = t.nextTask;
   let r = false;
   v = v.filter(e => {
     let {

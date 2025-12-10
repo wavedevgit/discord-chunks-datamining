@@ -53,7 +53,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -69,7 +69,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -116,12 +116,12 @@ async function w(e) {
     if (429 === e.status) return {
       errorHints: [{
         type: b.HW.RATE_LIMITED,
-        message: A.intl.string(A.t.Whhv4w),
+        message: C.intl.string(C.t.Whhv4w),
         connected_account_id: "",
         connected_account_type: ""
       }]
     };
-    let t = null != (n = e.getAnyErrorMessage()) ? n : A.intl.string(A.t.xSCvBf);
+    let t = null != (n = e.getAnyErrorMessage()) ? n : C.intl.string(C.t.xSCvBf);
     return {
       errorHints: [{
         type: b.HW.GENERIC,

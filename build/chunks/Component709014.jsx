@@ -52,7 +52,7 @@ function g(e, t) {
     initialFrame: v,
     markers: S,
     onBeforeDismount: I
-  } = e, [T, A] = i.useState(null), C = i.useRef(null), N = i.useRef(null), P = i.useRef(null), R = "custom" === g ? {
+  } = e, [T, C] = i.useState(null), A = i.useRef(null), N = i.useRef(null), P = i.useRef(null), R = "custom" === g ? {
     width: E,
     height: b
   } : (0, u.m)(g), D = !(0, p.Z)("lottie_hover_multiple_loop"), w = i.useContext(c.Sfi).reducedMotion.enabled, {
@@ -87,7 +87,7 @@ function g(e, t) {
     getDuration: e => null == P.current ? null : P.current.getDuration(e),
     getCurrentFrame: () => null == P.current ? null : P.current.currentFrame
   }), [L, D, S, v]), i.useEffect(() => {
-    null == T && m().then(e => A(e.default))
+    null == T && m().then(e => C(e.default))
   }, [T, m]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
     var t, n;
     let r, {
@@ -99,8 +99,8 @@ function g(e, t) {
       let e = S[o];
       r = [L ? e.start : null != v ? v : e.start, e.start + e.duration]
     }
-    null != C.current && (P.current = i.loadAnimation({
-      container: C.current,
+    null != A.current && (P.current = i.loadAnimation({
+      container: A.current,
       renderer: "svg",
       loop: false,
       autoplay: false,
@@ -116,7 +116,7 @@ function g(e, t) {
       display: "flex"
     }, R),
     className: o()(_.lottieIcon, s ? true : _.lottieIconColors, y),
-    ref: C
+    ref: A
   })
 }
 let E = Chunk473749.forwardRef(g)

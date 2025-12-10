@@ -7,7 +7,7 @@ require.d(exports, {
   Mg: () => O,
   Nl: () => N,
   Ns: () => b,
-  Rx: () => A,
+  Rx: () => C,
   nX: () => D,
   sc: () => P
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./415506.js"), require("./539854.js"), require("./49124.js"), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./482853.js"), require("./781311.js");
@@ -313,7 +313,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     type: t,
     baseSDP: n,
@@ -363,7 +363,7 @@ function A(e) {
   })
 }
 
-function C(e, t, n, r, i) {
+function A(e, t, n, r, i) {
   let a = e.find(e => e.codec === r);
   if (null == a) return null;
   let o = t.find(e => RegExp("^apt=".concat(a.payload)).test(e.config)),
@@ -398,13 +398,13 @@ function N(e, t) {
       }), i) {
       case "audio":
         [p.ad.OPUS].forEach((t, n) => {
-          let r = C(a, s, i, t, n);
+          let r = A(a, s, i, t, n);
           null != r && e.codecs.push(r)
         }), "sendrecv" === l && null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.audioSSRC = r.id);
         break;
       case "video":
         (t ? [p.ad.H265, p.ad.H264, p.ad.VP8, p.ad.VP9] : [p.ad.H264, p.ad.VP8, p.ad.VP9]).forEach((t, n) => {
-          let r = C(a, s, i, t, n);
+          let r = A(a, s, i, t, n);
           null != r && e.codecs.push(r)
         }), "sendrecv" === l && (null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.videoSSRC = r.id), null != (r = null == o ? true : o.findLast(e => "cname" === e.attribute)) && (r.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = r.id))
     }

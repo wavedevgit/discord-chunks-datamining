@@ -2,7 +2,7 @@
 /** chunk id: 889695, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,16 +48,16 @@ function T(e) {
   return e
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([m.default], () => m.default.getCurrentUser()), I = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), A = (0, o.e7)([p.Z], () => p.Z.getRolesSnapshot(t)), N = (0, o.e7)([p.Z], () => p.Z.getSortedRoles(t)), {
+  } = e, n = (0, o.e7)([m.default], () => m.default.getCurrentUser()), I = (0, o.e7)([_.Z], () => _.Z.getGuild(t)), C = (0, o.e7)([p.Z], () => p.Z.getRolesSnapshot(t)), N = (0, o.e7)([p.Z], () => p.Z.getSortedRoles(t)), {
     impersonateType: P,
     viewingRoles: R
   } = (0, o.cj)([b.Z], () => ({
     impersonateType: b.Z.getImpersonateType(t),
     viewingRoles: b.Z.getViewingRoles(t)
-  })), D = P === y.z.SERVER_SHOP, w = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), x = null != I ? A[(0, u.lV)(I)] : null, [L, j] = i.useState(() => {
+  })), D = P === y.z.SERVER_SHOP, w = (0, o.e7)([f.ZP], () => null != n ? f.ZP.getTrueMember(t, n.id) : null), x = null != I ? C[(0, u.lV)(I)] : null, [L, j] = i.useState(() => {
     let e = null == R ? [] : g.default.keys(R);
     return null != x && e.push(x.id), e
   }), M = i.useRef(I);
@@ -66,14 +66,14 @@ function A(e) {
       t = M.current;
     if (null != t && null != P) {
       for (let t of L) {
-        let n = A[t];
+        let n = C[t];
         null != n && (e[t] = n)
       }(0, E.Zm)(t.id, {
         type: P,
         roles: e
       })
     }
-  }, [L, P, A]);
+  }, [L, P, C]);
   let k = null != I && null != n && null != w ? N.find(e => w.roles.includes(e.id)) : true,
     U = i.useMemo(() => null != I && null != n ? N.filter(e => !(0, d.fI)(e)).filter(e => {
       var t;
@@ -81,14 +81,14 @@ function A(e) {
     }).filter(e => (null == k ? true : k.id) === e.id || h.r6(I, n.id, k, e)) : [], [I, n, D, k, N]),
     G = i.useMemo(() => {
       let e = Array.from(U).map(e => ({
-        leading: C(e),
+        leading: A(e),
         value: e.id,
         label: e.name,
         id: e.id.toString(),
         disabled: false
       }));
       return null != I && null != x && e.push({
-        leading: C(x),
+        leading: A(x),
         value: x.id,
         label: x.name,
         id: x.id.toString(),
@@ -98,7 +98,7 @@ function A(e) {
   if (null == n || null == I || null == w) return null;
   let Z = {};
   return (w.roles.forEach(e => {
-    let t = A[e];
+    let t = C[e];
     null != t && (Z[t.id] = t)
   }), a.e$(h.I0({
     forceRoles: Z,
@@ -126,7 +126,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   return () => {
     var t;
     return (0, r.jsx)("svg", {

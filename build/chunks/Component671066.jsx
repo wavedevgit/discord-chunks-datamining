@@ -48,7 +48,7 @@ function m(e) {
         variant: "heading-sm/semibold",
         children: _
       }), (0, r.jsx)(l.Text, {
-        color: "interactive-normal",
+        color: "interactive-text-default",
         variant: "text-xs/medium",
         children: v
       }), p && (0, r.jsxs)(l.Text, {

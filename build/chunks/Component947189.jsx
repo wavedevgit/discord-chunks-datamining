@@ -55,7 +55,7 @@ function E(e) {
       cancelAnimationFrame(E.current), e.cancel()
     }
   }, [t, n, I]);
-  let A = {
+  let C = {
     className: p.animation,
     dataBinding: {
       DisplayValue: S,
@@ -70,5 +70,5 @@ function E(e) {
     fit: "layout",
     withReducedMotion: "play"
   };
-  return "left" === a ? (0, r.jsx)(l.P9c, m({}, A)) : (0, r.jsx)(l.ljV, m({}, A))
+  return "left" === a ? (0, r.jsx)(l.P9c, m({}, C)) : (0, r.jsx)(l.ljV, m({}, C))
 }

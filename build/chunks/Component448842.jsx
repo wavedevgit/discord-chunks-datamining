@@ -33,10 +33,10 @@ function v(e) {
   } = e, {
     autocompletes: I,
     mode: T
-  } = t, A = (0, h.Z)({
+  } = t, C = (0, h.Z)({
     autocompletes: I,
     mode: T
-  }), C = (0, g.Z)({
+  }), A = (0, g.Z)({
     setSearchQuery: S,
     searchContext: n,
     mode: T
@@ -142,18 +142,18 @@ function v(e) {
           });
         e.push(o)
       }
-      let t = [...C, R({
+      let t = [...A, R({
         hasOtherSearchFiltersVisible: true
       })];
       e.push((0, f.fC)(d.i.GROUP, {
         rows: t,
         title: y.intl.string(y.t.UdhTtk)
       }));
-      let i = e.length + C.length,
+      let i = e.length + A.length,
         {
           autocompleteCount: o,
           autocompleteGroups: s
-        } = A({
+        } = C({
           filterFn: e => e.group === b.rtL.HISTORY && e.results.length > 0,
           getAutocompleteRowItem: e => {
             let {
@@ -266,7 +266,7 @@ function v(e) {
       let {
         autocompleteCount: i,
         autocompleteGroups: o
-      } = A({
+      } = C({
         filterFn: e => e.group !== b.rtL.DATES && e.group !== b.rtL.SEARCH_OPTIONS && e.group !== b.dCx.FILTER_HAS && e.results.length > 0,
         getAutocompleteRowItem: e => {
           var t;
@@ -327,7 +327,7 @@ function v(e) {
         hasOtherSearchFiltersVisible: 0 !== i
       });
       if (0 === i) {
-        let t = [...C, s];
+        let t = [...A, s];
         e.push((0, f.fC)(d.i.GROUP, {
           rows: t,
           title: y.intl.string(y.t.UdhTtk)
@@ -341,7 +341,7 @@ function v(e) {
       let {
         autocompleteCount: e,
         autocompleteGroups: t
-      } = A({
+      } = C({
         filterFn: e => e.results.length > 0,
         getAutocompleteRowItem: t => {
           let {

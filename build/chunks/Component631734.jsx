@@ -10,10 +10,10 @@ var Chunk692547 = require("./692547.js"),
   Chunk325767 = require("./325767.js");
 let a = e => {
   var t, n, a, s, {
-      size: u = "md",
-      width: c,
+      size: c = "md",
+      width: u,
       height: d,
-      color: h = r.Z.colors.INTERACTIVE_NORMAL,
+      color: h = r.Z.colors.INTERACTIVE_TEXT_DEFAULT,
       colorClass: p = ""
     } = e,
     f = function(e, t) {
@@ -31,9 +31,9 @@ let a = e => {
       }
       return r
     }(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, l.m)(u),
-    g = null != (a = null == m ? true : m.width) ? a : c,
-    O = null != (s = null == m ? true : m.height) ? s : d;
+  let m = (0, l.m)(c),
+    g = null != (a = null == m ? true : m.width) ? a : u,
+    y = null != (s = null == m ? true : m.height) ? s : d;
   return (0, i.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -54,7 +54,7 @@ let a = e => {
   }({}, (0, o.Z)(f)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
-    height: O,
+    height: y,
     fill: "none",
     viewBox: "0 0 24 24",
     children: [(0, i.jsx)("path", {

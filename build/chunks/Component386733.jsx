@@ -36,7 +36,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function A(e) {
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,7 +61,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ let P = e => {
       userId: null == t ? true : t.id,
       size: c.EFr.SIZE_32,
       animateOnHover: true
-    }), o = null != t, s = o ? (0, r.jsx)(c.qEK, A({
+    }), o = null != t, s = o ? (0, r.jsx)(c.qEK, C({
       src: i,
       "aria-label": t.username,
       size: c.EFr.SIZE_32
@@ -89,7 +89,7 @@ let P = e => {
       text: v.intl.string(v.t.UnKHdo),
       shouldShow: !o,
       tooltipContentClassName: S.unsentTooltipContent,
-      children: e => (0, r.jsx)("div", N(A({
+      children: e => (0, r.jsx)("div", N(C({
         className: S.userAvatarProgressBarUnit
       }, e), {
         children: s
@@ -147,7 +147,7 @@ let P = e => {
       let {
         default: e
       } = await n.e("47435").then(n.bind(n, 204387));
-      return n => (0, r.jsx)(e, N(A({}, n), {
+      return n => (0, r.jsx)(e, N(C({}, n), {
         sourceAnalyticsLocations: t
       }))
     })
@@ -166,9 +166,9 @@ let P = e => {
       e === h.Fe.REDEEMED && _.redeemed++, e === h.Fe.CONVERTED && (_.redeemed++, _.converted++)
     });
     let T = _.sent === E.Q,
-      A = m.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
+      C = m.Z.getArticleURL(O.BhN.REFERRAL_PROGRAM),
       {
-        analyticsLocations: C
+        analyticsLocations: A
       } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
       N = i.useRef(null),
       P = _.sent / E.Q * 100,
@@ -194,7 +194,7 @@ let P = e => {
           }), (0, r.jsx)(c.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, y.Hg)({
-              helpdeskArticle: A,
+              helpdeskArticle: C,
               referralsStatuses: _
             })
           }), (0, r.jsx)("div", {
@@ -206,7 +206,7 @@ let P = e => {
               className: S.expandedProgressBarSelectFriendsCTA,
               color: l.Tt.CUSTOM,
               onClick: () => w({
-                analyticsLocations: C
+                analyticsLocations: A
               }),
               onlyShineOnHover: true,
               children: (0, r.jsxs)("div", {
@@ -223,7 +223,7 @@ let P = e => {
       }),
       x = _.redeemed === E.Q;
     return (0, r.jsx)(d.Gt, {
-      value: C,
+      value: A,
       children: (0, r.jsx)("div", {
         className: o()({
           [S.containerWithGlowWithoutBanner]: x,

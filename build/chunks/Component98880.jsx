@@ -166,7 +166,7 @@ function J(e) {
     look: m
   } = e, h = i.useCallback(e => {
     if ((0, w.BQ)(t)) {
-      let n = t instanceof A.ZP ? t : A.ZP.createFromServer(t);
+      let n = t instanceof C.ZP ? t : C.ZP.createFromServer(t);
       (0, u.vq)(e, e => (0, r.jsx)(M.Z, Y({
         application: n
       }, e)))
@@ -255,9 +255,9 @@ function ee(e) {
     fakeAppIconURL: F
   }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, S.ZP)(h, ""), [v, I] = i.useState(false), T = i.useCallback(() => {
     true === l && I(true)
-  }, [l]), A = m || (0, w.lf)(t), C = "large_banner" === n || "medium_banner" === n, P = i.useCallback(() => I(false), []), R = (0, s.e7)([_.Z, N.Z], () => _.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), D = (0, w.WA)(t);
+  }, [l]), C = m || (0, w.lf)(t), A = "large_banner" === n || "medium_banner" === n, P = i.useCallback(() => I(false), []), R = (0, s.e7)([_.Z, N.Z], () => _.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), D = (0, w.WA)(t);
   return (0, r.jsxs)(r.Fragment, {
-    children: [C ? (0, r.jsxs)("div", {
+    children: [A ? (0, r.jsxs)("div", {
       onMouseEnter: T,
       onFocus: T,
       onMouseLeave: P,
@@ -275,9 +275,9 @@ function ee(e) {
           disableFadeIn: u,
           overrideImageUrl: p
         })
-      }), R || A || D !== d.ww.NONE ? (0, r.jsxs)("div", {
+      }), R || C || D !== d.ww.NONE ? (0, r.jsxs)("div", {
         className: B.bannerUpperRightContainer,
-        children: [A && (0, r.jsx)("div", {
+        children: [C && (0, r.jsx)("div", {
           className: B.promotedLabelWrapperBanner,
           children: (0, r.jsx)(c.Heading, {
             variant: "text-xxs/medium",
@@ -311,7 +311,7 @@ function ee(e) {
             color: "header-primary",
             lineClamp: 1,
             children: g
-          }), !C && A ? (0, r.jsx)("div", {
+          }), !A && C ? (0, r.jsx)("div", {
             className: B.promotedLabelWrapperNonBanner,
             children: (0, r.jsx)(c.Text, {
               variant: "text-xxs/semibold",
@@ -349,7 +349,7 @@ function et() {
 function en(e) {
   let {
     application: t
-  } = e, n = C.default.getCurrentUser();
+  } = e, n = A.default.getCurrentUser();
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) return null;
   let i = (0, w.yJ)(t);
   if (null == i || !(0, w.BQ)(t)) return null;

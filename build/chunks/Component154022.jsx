@@ -112,54 +112,54 @@ function en(e) {
     title: V.intl.string(V.t.G0neg7),
     children: (0, r.jsxs)(c.Kqy, {
       gap: 16,
-      children: [(0, r.jsx)(er, {}), (0, r.jsxs)(C.F, {
+      children: [(0, r.jsx)(er, {}), (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_SATURATION,
         children: [(0, r.jsx)(eo, {}), (0, r.jsx)(c.izJ, {})]
-      }), (0, r.jsxs)(C.F, {
+      }), (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_LINK_DECORATIONS,
         children: [(0, r.jsx)(es, {}), (0, r.jsx)(c.izJ, {})]
       }), t ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(C.F, {
+        children: [(0, r.jsx)(A.F, {
           setting: G.s6.ACCESSIBILITY_CUSTOM_CURSOR,
           children: (0, r.jsx)(el, {})
         }), (0, r.jsx)(c.izJ, {})]
-      }) : null, (0, r.jsxs)(C.F, {
+      }) : null, (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_ROLE_STYLE,
         children: [(0, r.jsx)(ec, {}), (0, r.jsx)(c.izJ, {})]
-      }), n && (0, r.jsxs)(C.F, {
+      }), n && (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_DISPLAY_NAME_STYLES,
         children: [(0, r.jsx)(eu, {}), (0, r.jsx)(c.izJ, {})]
-      }), (0, r.jsxs)(C.F, {
+      }), (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_PROFILE_COLORS,
         children: [(0, r.jsx)(ed, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
-      }), (0, r.jsxs)(C.F, {
+      }), (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_CONTRAST,
         children: [(0, r.jsx)(ef, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
-      }), (0, r.jsxs)(C.F, {
+      }), (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_STICKERS,
         children: [(0, r.jsx)(e_, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
-      }), (0, r.jsxs)(C.F, {
+      }), (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_REDUCED_MOTION,
         children: [(0, r.jsx)(ep, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
-      }), (0, r.jsxs)(C.F, {
+      }), (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_MESSAGES,
         children: [(0, r.jsx)(em, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
-      }), i && (0, r.jsxs)(C.F, {
+      }), i && (0, r.jsxs)(A.F, {
         setting: G.s6.ACCESSIBILITY_SWITCH_ICON,
         children: [(0, r.jsx)(ea, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
-      }), (0, r.jsx)(eh, {}), (0, r.jsx)(C.F, {
+      }), (0, r.jsx)(eh, {}), (0, r.jsx)(A.F, {
         setting: G.s6.ACCESSIBILITY_APPEARANCE_UPSELL,
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/normal",

@@ -40,7 +40,7 @@ let D = e => {
       inspectedEmoji: t,
       guild: n
     } = e, r = R(t);
-    return null != n && r ? C.intl.format(C.t.KFW2aY, {
+    return null != n && r ? A.intl.format(A.t.KFW2aY, {
       guildName: n.name
     }) : null
   },
@@ -99,15 +99,15 @@ let D = e => {
       {
         newlyAddedEmojis: z
       } = (0, S.Z)(M, k),
-      q = (null == B ? true : B.type) === T.ld.EMOJI ? B.subCategory : A.t0.NONE;
+      q = (null == B ? true : B.type) === T.ld.EMOJI ? B.subCategory : C.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
-          Date.now() - e >= P && R(t) && q !== A.t0.NONE && (q === A.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, z[0].id), null != Z.source && (0, v.Gn)({
+          Date.now() - e >= P && R(t) && q !== C.t0.NONE && (q === C.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, z[0].id), null != Z.source && (0, v.Gn)({
             emoji: t,
             subCategory: q,
             position: B.columnIndex + 1,
-            newlyAddedHighlight: q === A.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(M, t.id)
+            newlyAddedHighlight: q === C.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(M, t.id)
           }))
         }
       }), null == t) return null;
@@ -154,8 +154,8 @@ let D = e => {
       guild: F,
       shouldAnimate: !H && V
     }) : null;
-    x = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfG) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDH"]) : C.intl.string(C.t.NZI2Zk) : (0, y.nY)(t);
-    let $ = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t["Z/r7IS"]) : D({
+    x = G && "CREATE_EMOJI" === t.type ? A.intl.string(A.t.XCmLfG) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? A.intl.string(A.t["/K2RDH"]) : A.intl.string(A.t.NZI2Zk) : (0, y.nY)(t);
+    let $ = G && "CREATE_EMOJI" === t.type ? A.intl.string(A.t["Z/r7IS"]) : D({
       inspectedEmoji: t,
       channel: U,
       guildId: M,

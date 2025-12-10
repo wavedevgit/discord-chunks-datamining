@@ -6,13 +6,13 @@ require.d(exports, {
   FO: () => T,
   G1: () => P,
   I6: () => S,
-  J7: () => C,
+  J7: () => A,
   JM: () => I,
   Jw: () => h,
   WL: () => y,
   ak: () => m,
   d$: () => b,
-  eE: () => A,
+  eE: () => C,
   ic: () => E,
   pX: () => v,
   sq: () => _,
@@ -214,7 +214,7 @@ function T(e, t) {
   })
 }
 
-function A(e, t) {
+function C(e, t) {
   let n = new a.ZP({});
   w(l.BM.MESSAGE, {
     message_id: true,
@@ -229,7 +229,7 @@ function A(e, t) {
     emailToken: e
   })
 }
-async function C(e, t, n) {
+async function A(e, t, n) {
   try {
     await (0, c.ox)({
       name: l.b.MESSAGE,

@@ -43,7 +43,7 @@ function m(e) {
         return []
       }
     }, []),
-    A = (0, r.useCallback)(async (e, t, n) => {
+    C = (0, r.useCallback)(async (e, t, n) => {
       let r = O.current;
       if (null == r) {
         E(new o.ZP("Order not created yet")), y(false);
@@ -82,7 +82,7 @@ function m(e) {
         E(e instanceof o.ZP ? e : new o.ZP(e)), y(false)
       }
     }, [T]),
-    C = (0, r.useCallback)(function(e, t, n) {
+    A = (0, r.useCallback)(function(e, t, n) {
       let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
         i = () => {
           y(true), E(null)
@@ -109,9 +109,9 @@ function m(e) {
           E(new o.ZP("Rental orders are not supported via Orders API yet")), y(false);
           return
         }
-        A(e, t, n)
-      } else C(e, t, n, r)
-    }, [v, A, C]);
+        C(e, t, n)
+      } else A(e, t, n, r)
+    }, [v, C, A]);
   return (0, r.useEffect)(() => {
     if (null != g) return void n(_.intl.format(_.t["7gHWrd"], {
       amount: "1 orb",

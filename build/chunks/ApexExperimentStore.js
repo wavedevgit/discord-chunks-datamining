@@ -98,8 +98,8 @@ let O = [Chunk341691.Cm.User],
   S = {},
   I = {},
   T = {},
-  A = {},
-  C = new Set,
+  C = {},
+  A = new Set,
   N = new Set,
   P = "apexTrackedExposures",
   R = 2,
@@ -178,10 +178,10 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     I = m(I, [e].map(E))
   }
   setExperimentsMetadata(e) {
-    A = f({}, A, Object.fromEntries(e.map(e => [e.name, e])))
+    C = f({}, C, Object.fromEntries(e.map(e => [e.name, e])))
   }
   getExperimentsMetadata() {
-    return A
+    return C
   }
   getClientOverrides() {
     return I
@@ -285,7 +285,7 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
   clearForTests() {
-    this.clearAllServerAssignments(), this.clearAllOverrides(), this.clearAllTrackedExposures(), C.clear(), N.clear()
+    this.clearAllServerAssignments(), this.clearAllOverrides(), this.clearAllTrackedExposures(), A.clear(), N.clear()
   }
   clearAllServerAssignments() {
     v = {
@@ -303,16 +303,16 @@ class M extends(r = Chunk442837.ZP.PersistedStore) {
     return j(e)
   }
   handleFetchStart(e) {
-    C.add(e)
+    A.add(e)
   }
   handleFetchSuccess(e, t) {
-    C.delete(e), N.add(e), this.setExperimentAssignments(t)
+    A.delete(e), N.add(e), this.setExperimentAssignments(t)
   }
   handleFetchFailure(e) {
-    C.delete(e), N.add(e)
+    A.delete(e), N.add(e)
   }
   isFetching(e) {
-    return C.has(e)
+    return A.has(e)
   }
   hasLoaded(e) {
     return N.has(e)

@@ -9,11 +9,11 @@ require.d(exports, {
   i7: () => I,
   kI: () => h,
   re: () => O,
-  tU: () => C,
+  tU: () => A,
   u0: () => S,
   uL: () => T,
   xU: () => y,
-  xt: () => A
+  xt: () => C
 }), require("./415506.js"), require("./388685.js"), require("./539854.js"), require("./583741.js");
 var Chunk647943 = require("./647943.js"),
   Chunk581282 = require("./581282.js"),
@@ -101,7 +101,7 @@ function T(e, t, n) {
   return t in e.channels || (e.channels[t] = l.p5.create()), n(e.channels[t])
 }
 
-function A(e, t) {
+function C(e, t) {
   null == e.versions && (e.versions = c.L.create());
   let n = 0;
   for (let e of t) {
@@ -131,7 +131,7 @@ function A(e, t) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = Object.entries(e);
   if (n.length > t)
     for (n = o().sortBy(n, e => {

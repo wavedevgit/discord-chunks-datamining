@@ -29,7 +29,7 @@ let d = e => {
     cardVariant: O,
     subtitleClassName: v,
     imageOverlayText: S
-  } = e, I = e => (null == e ? true : e.onlyShowOnHover) !== true, T = (0, l._)(O), A = null != S;
+  } = e, I = e => (null == e ? true : e.onlyShowOnHover) !== true, T = (0, l._)(O), C = null != S;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: a()(u.cover, u.below)
@@ -48,8 +48,8 @@ let d = e => {
       children: [(0, r.jsx)("img", {
         src: _,
         alt: "",
-        className: m ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
-      }), A ? (0, r.jsx)("div", {
+        className: m ? C ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+      }), C ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(s.Text, {
           className: u.imageOverlayText,

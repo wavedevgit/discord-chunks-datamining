@@ -1,7 +1,7 @@
 /** Chunk was on 21863 **/
 /** chunk id: 466501, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => f
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,7 +22,7 @@ function p(e) {
     eligibilityError: c,
     guildId: b,
     onEligibilityBecameStale: p
-  } = e, j = r.useMemo(() => ({
+  } = e, f = r.useMemo(() => ({
     onEligibilityBecameStale: p,
     sortedByIneligible: true,
     actions: {
@@ -31,28 +31,28 @@ function p(e) {
         (0, l.Mr3)(h.Q), s.Z.open(b, u.pNK.SAFETY, true, u.KsC.SAFETY_PERMISSIONS)
       }
     }
-  }), [b, p]), f = (0, o.Z)(t, j);
+  }), [b, p]), j = (0, o.Z)(t, f);
   return null != c ? (0, n.jsx)("div", {
     children: (0, n.jsx)(l.M14, {
       type: "critical",
       children: c.message
     })
-  }) : null == f || i ? (0, n.jsx)("div", {
+  }) : null == j || i ? (0, n.jsx)("div", {
     children: (0, n.jsx)(l.$jN, {})
   }) : (0, n.jsx)("div", {
-    children: f.map((e, t) => (0, n.jsxs)(r.Fragment, {
+    children: j.map((e, t) => (0, n.jsxs)(r.Fragment, {
       children: [(0, n.jsx)(d.d, {
         name: e.checked ? e.checkedLabel : e.uncheckedLabel,
         description: e.description,
         checked: e.checked,
         actionLabel: e.actionLabel,
         actionHandler: e.actionHandler
-      }), t < f.length - 1 ? (0, n.jsx)(l.izJ, {}) : null]
+      }), t < j.length - 1 ? (0, n.jsx)(l.izJ, {}) : null]
     }, e.checkedLabel))
   })
 }
 
-function j(e) {
+function f(e) {
   let {
     eligibility: t,
     eligibilityLoading: i,

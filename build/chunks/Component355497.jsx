@@ -30,7 +30,7 @@ function c(e) {
     null == m || m(e), g(e)
   }, T = i.useCallback(async () => {
     await d()
-  }, [d]), A = i.Children.count(c) > 0 ? (0, r.jsx)(o.Zbd, {
+  }, [d]), C = i.Children.count(c) > 0 ? (0, r.jsx)(o.Zbd, {
     type: o.Zbd.Types.WARNING,
     className: l.card,
     children: (0, r.jsx)(o.Text, {
@@ -54,7 +54,7 @@ function c(e) {
       }],
       onClose: T,
       transitionState: u,
-      children: [A, (0, r.jsxs)("div", {
+      children: [C, (0, r.jsxs)("div", {
         className: l.spacing,
         children: [(0, r.jsx)(o.oil, {
           type: "password",

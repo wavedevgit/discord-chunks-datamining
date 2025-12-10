@@ -123,12 +123,12 @@ function T(e) {
   (v = m({}, v)).fontSize = t
 }
 
-function A(e) {
+function C(e) {
   if (e.zoom < f.yqN.ZOOM_MIN || e.zoom > f.yqN.ZOOM_MAX || v.zoom === e.zoom) returnfalse;
   (v = m({}, v)).zoom = e.zoom, d.Z.setZoomFactor(v.zoom)
 }
 
-function C() {
+function A() {
   let e = v.fontSize !== Chunk981631.yqN.FONT_SIZE_DEFAULT,
     t = v.zoom !== Chunk981631.yqN.ZOOM_DEFAULT;
   if (!module && !exports) returnfalse;
@@ -460,8 +460,8 @@ _(J, "displayName", "AccessibilityStore"), _(J, "persistKey", "AccessibilityStor
 })]);
 let $ = new J(Chunk570140.Z, {
   ACCESSIBILITY_SET_FONT_SIZE: T,
-  ACCESSIBILITY_SET_ZOOM: A,
-  ACCESSIBILITY_RESET_TO_DEFAULT: C,
+  ACCESSIBILITY_SET_ZOOM: C,
+  ACCESSIBILITY_RESET_TO_DEFAULT: A,
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: N,
   ACCESSIBILITY_KEYBOARD_MODE_DISABLE: P,
   ACCESSIBILITY_COLORBLIND_TOGGLE: R,

@@ -59,13 +59,13 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -118,8 +118,8 @@ function P(e) {
     return t => {
       var {
         onClose: n
-      } = t, a = C(t, ["onClose"]);
-      return (0, r.jsx)(e, A(I({}, a), {
+      } = t, a = A(t, ["onClose"]);
+      return (0, r.jsx)(e, C(I({}, a), {
         loadId: Q,
         subscriptionTier: G,
         skuId: ee,

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Z7: () => O,
-  g: () => A,
-  k9: () => C,
+  g: () => C,
+  k9: () => A,
   lJ: () => v
 });
 var Chunk54381 = require("./54381.js"),
@@ -158,7 +158,7 @@ let I = {
     [Chunk981631.OGo.PENDING_INCOMING]: () => Chunk388032.intl.string(Chunk388032.t["6QQCQ+"])
   };
 
-function A(e) {
+function C(e) {
   var {
     type: t,
     user: n,
@@ -178,7 +178,7 @@ function A(e) {
   }, s))
 }
 
-function C(e) {
+function A(e) {
   var {
     type: t,
     user: n,

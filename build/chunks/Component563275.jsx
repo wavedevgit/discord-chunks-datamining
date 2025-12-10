@@ -25,7 +25,7 @@ let p = new Map,
       ref: b,
       width: j,
       height: x
-    } = (0, u.ZP)(), [y, C] = a.useState(null), k = (0, o.dQu)(s.Z.colors.BACKGROUND_MOD_STRONG).hex();
+    } = (0, u.ZP)(), [y, N] = a.useState(null), C = (0, o.dQu)(s.Z.colors.BACKGROUND_MOD_STRONG).hex();
     return (a.useEffect(() => (g.current = new Worker(new URL("/assets/" + n.u("1088"), n.b)), () => {
       var e;
       null == (e = g.current) || e.terminate()
@@ -33,7 +33,7 @@ let p = new Map,
       if (0 === j || 0 === i.length || null == g.current) return;
       let e = "".concat(t, "-").concat(i.map(e => e.trackName).join(","), "-").concat(j),
         n = p.get(e);
-      if (null != n) return void C(n.waveform);
+      if (null != n) return void N(n.waveform);
       let l = g.current,
         a = false,
         r = t => {
@@ -45,7 +45,7 @@ let p = new Map,
           if (null != l) return void d.jF.error("Failed to load waveform:", l);
           p.set(e, {
             waveform: n
-          }), C(n)
+          }), N(n)
         };
       return l.addEventListener("message", r), (async () => {
         try {
@@ -83,13 +83,13 @@ let p = new Map,
         width: n,
         height: l
       } = e, a = n / y.length, i = -(a * (m.nl.waveformBarWidth - 1));
-      t.clearRect(0, 0, n, l), t.fillStyle = k;
+      t.clearRect(0, 0, n, l), t.fillStyle = C;
       for (let e = 0; e < y.length; e++) {
         let n = y[e] * l,
           r = e * a + i;
         t.fillRect(r, l, a - i, -n)
       }
-    }, [k, j, b, x, y]), 0 === i.length) ? null : (0, l.jsx)("div", {
+    }, [C, j, b, x, y]), 0 === i.length) ? null : (0, l.jsx)("div", {
       className: r()(h.container, v),
       children: (0, l.jsx)("canvas", {
         className: h.waveformCanvas,

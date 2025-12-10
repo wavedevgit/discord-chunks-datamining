@@ -86,14 +86,14 @@ function M(e) {
 
 function k(e) {
   let t;
-  if (A.Z.isOpen()) return;
+  if (C.Z.isOpen()) return;
   let n = v.Z.getGuildId(),
     r = O.Z.getChannelId(n);
   if (null != r) {
     let e = b.Z.getChannel(r);
     t = null != e ? e.type : null
   }
-  S.default.track(C.rMx.QUICKSWITCHER_OPENED, {
+  S.default.track(A.rMx.QUICKSWITCHER_OPENED, {
     source: e,
     current_guild_id: n,
     current_channel_id: r,
@@ -107,7 +107,7 @@ function U(e, t) {
     queryMode: r,
     query: i,
     maxQueryLength: a
-  } = A.Z.getProps(), o = v.Z.getGuildId(), s = O.Z.getChannelId(o), l = n[(0, d.gJ)(d.a8.DOWN, false, n)], c = T.Z.isEmail(i), u = T.Z.isPhoneNumber(i), f = T.Z.isUserTagLike(i), p = null != s && (0, N.AB)(s), _ = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, m = {
+  } = C.Z.getProps(), o = v.Z.getGuildId(), s = O.Z.getChannelId(o), l = n[(0, d.gJ)(d.a8.DOWN, false, n)], c = T.Z.isEmail(i), u = T.Z.isPhoneNumber(i), f = T.Z.isUserTagLike(i), p = null != s && (0, N.AB)(s), _ = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, m = {
     current_channel_id: p ? true : s,
     current_channel_static_route: p ? s : true,
     current_guild_id: o,
@@ -120,12 +120,12 @@ function U(e, t) {
     query: c || u || f ? null : i,
     top_result_type: _(l),
     top_result_score: null != l ? l.score : null,
-    num_results_total: A.Z.getResultTotals(),
-    num_results_users: A.Z.getResultTotals(d.h8.USER),
-    num_results_text_channels: A.Z.getResultTotals(d.h8.TEXT_CHANNEL),
-    num_results_voice_channels: A.Z.getResultTotals(d.h8.VOICE_CHANNEL),
-    num_results_guilds: A.Z.getResultTotals(d.h8.GUILD),
-    num_results_group_dms: A.Z.getResultTotals(d.h8.GROUP_DM)
+    num_results_total: C.Z.getResultTotals(),
+    num_results_users: C.Z.getResultTotals(d.h8.USER),
+    num_results_text_channels: C.Z.getResultTotals(d.h8.TEXT_CHANNEL),
+    num_results_voice_channels: C.Z.getResultTotals(d.h8.VOICE_CHANNEL),
+    num_results_guilds: C.Z.getResultTotals(d.h8.GUILD),
+    num_results_group_dms: C.Z.getResultTotals(d.h8.GROUP_DM)
   };
   if (null != s) {
     let e = b.Z.getChannel(s);
@@ -193,12 +193,12 @@ function H(e) {
 
 function Y(e) {
   let t, E = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  G(), (0, r.pTH)(), U(C.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
+  G(), (0, r.pTH)(), U(A.rMx.QUICKSWITCHER_RESULT_SELECTED, e);
   let {
     type: O,
     record: v
   } = e, S = {
-    page: C.ZY5.QUICK_SWITCHER
+    page: A.ZY5.QUICK_SWITCHER
   };
   switch (O) {
     case d.h8.GUILD:
@@ -226,19 +226,19 @@ function Y(e) {
       a.Z.openPrivateChannel({
         recipientIds: [v.id],
         location: "Quickswitcher"
-      }), s.Z.channelListScrollTo(C.ME, b.Z.getDMFromUserId(v.id));
+      }), s.Z.channelListScrollTo(A.ME, b.Z.getDMFromUserId(v.id));
       break;
     case d.h8.GROUP_DM:
       (0, m.Kh)(v.id, {
         navigationReplace: true
-      }), s.Z.channelListScrollTo(C.ME, v.id);
+      }), s.Z.channelListScrollTo(A.ME, v.id);
       break;
     case d.h8.APPLICATION:
       let T = y.Z.getActiveLibraryApplication(v.id);
       w(v.id, T, {
         analyticsParams: {
-          source: C.Sbl.QUICK_SWITCHER,
-          location: C.Sbl.QUICK_SWITCHER
+          source: A.Sbl.QUICK_SWITCHER,
+          location: A.Sbl.QUICK_SWITCHER
         }
       });
       break;
@@ -262,14 +262,14 @@ function Y(e) {
       } else if (e.record.type === f.Ky.PLAYGROUND) {
         if (!(0, I.vP)()) return;
         {
-          var A;
+          var C;
           let {
             PlaygroundStore: t
-          } = n(156142), r = null != (A = e.record.collectionId) ? A : null;
+          } = n(156142), r = null != (C = e.record.collectionId) ? C : null;
           t.setState({
             selectedCollection: r,
             selectedStory: null
-          }), (0, l.jN)(C.S9g.COMPONENT_PLAYGROUND)
+          }), (0, l.jN)(A.S9g.COMPONENT_PLAYGROUND)
         }
       } else e.record.type === f.Ky.SHOP_ORBS_TAB ? (0, p.mK)({
         tab: P.AW.ORBS,

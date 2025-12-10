@@ -53,7 +53,7 @@ function A(e) {
           className: _.loadingSpinner
         }) : (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: g
         }),
         onNavigate: T > 0 ? () => O(u.mw.MESSAGES) : true
@@ -73,7 +73,7 @@ function A(e) {
           className: _.loadingSpinner
         }) : (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: N
         }),
         onNavigate: I > 0 ? () => O(u.mw.LINKS) : true
@@ -93,7 +93,7 @@ function A(e) {
           className: _.loadingSpinner
         }) : (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: h
         }),
         onNavigate: m > 0 ? () => O(u.mw.MEDIA) : true

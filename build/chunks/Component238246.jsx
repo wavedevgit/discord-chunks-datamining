@@ -186,7 +186,7 @@ class Q extends(r = Chunk473749.Component) {
                         className: Chunk413943.popout,
                         children: [Chunk607070 && (0, Chunk54381.jsx)(Chunk793030.f6W, {
                           theme: Chunk442837,
-                          children: e => (0, i.jsx)(C.TF, {
+                          children: e => (0, i.jsx)(A.TF, {
                             windowKey: n,
                             className: s()(e, H.titleBar)
                           })

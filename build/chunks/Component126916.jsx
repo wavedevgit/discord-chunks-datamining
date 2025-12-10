@@ -67,9 +67,9 @@ function b(e) {
     getSurveyResponses: m,
     setResponse: g,
     trackDisplayedQuestions: b
-  } = (0, c.H)(), y = m(t), O = (0, d.l6)(n), [v, S] = i.useState(O.blockId), [I, T] = i.useState(O.pageIndex), [A, C] = i.useState(false), N = (e, n) => {
+  } = (0, c.H)(), y = m(t), O = (0, d.l6)(n), [v, S] = i.useState(O.blockId), [I, T] = i.useState(O.pageIndex), [C, A] = i.useState(false), N = (e, n) => {
     g(t, e, n)
-  }, P = i.useCallback(() => (A ? o() : (0, s.h7j)(e => (0, r.jsx)(a.Modal, E(h({
+  }, P = i.useCallback(() => (C ? o() : (0, s.h7j)(e => (0, r.jsx)(a.Modal, E(h({
     title: p.intl.string(p.t.T9Sx3z),
     actions: [{
       variant: "secondary",
@@ -87,7 +87,7 @@ function b(e) {
       variant: "text-md/normal",
       children: p.intl.string(p.t.iCK6G0)
     })
-  }))), Promise.resolve()), [o, A]), R = i.useMemo(() => null == v ? [] : (0, d.B_)(n, {
+  }))), Promise.resolve()), [o, C]), R = i.useMemo(() => null == v ? [] : (0, d.B_)(n, {
     blockId: v,
     pageIndex: I,
     responses: y
@@ -98,7 +98,7 @@ function b(e) {
       pageIndex: I,
       responses: y
     });
-    b(t, R), e.isComplete && l.ZP.submitSurveyResponse(t, y), S(e.blockId), T(e.pageIndex), C(e.isComplete)
+    b(t, R), e.isComplete && l.ZP.submitSurveyResponse(t, y), S(e.blockId), T(e.pageIndex), A(e.isComplete)
   }, [n, v, I, y, t, R, b]);
   i.useEffect(() => {
     0 === R.length && D()
@@ -116,7 +116,7 @@ function b(e) {
       })
     }),
     x = i.useMemo(() => {
-      if (A) returnfalse;
+      if (C) returnfalse;
       for (let r of R) {
         var e, t;
         let i = n.Questions[r];
@@ -126,8 +126,8 @@ function b(e) {
         }
       }
       returntrue
-    }, [A, R, n, y]);
-  return A ? (0, r.jsxs)(a.Modal, {
+    }, [C, R, n, y]);
+  return C ? (0, r.jsxs)(a.Modal, {
     transitionState: u,
     onClose: o,
     size: "md",

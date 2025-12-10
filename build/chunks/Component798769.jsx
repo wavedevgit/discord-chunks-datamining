@@ -33,8 +33,8 @@ function m(e) {
     isEligibleForTrial: S,
     enablePremiumBrandRefresh: I,
     isDisplayingWowMomentConfirmation: T,
-    isPremiumGroupPurchase: A
-  } = e, C = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = () => {
+    isPremiumGroupPurchase: C
+  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return h === f.PremiumTypes.TIER_0 ? p.intl.string(p.t.rk4Uu8) : p.intl.string(p.t["7YWj6+"]);
@@ -67,7 +67,7 @@ function m(e) {
     isEligibleForTrial: S,
     showTrialBadge: b,
     showDiscountBadge: y,
-    isPremiumGroupPurchase: A
+    isPremiumGroupPurchase: C
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(u.Z, {
@@ -79,17 +79,17 @@ function m(e) {
         className: _.headerAnimation,
         currentStep: t,
         purchaseState: m,
-        pause: C
+        pause: A
       }) : h === f.PremiumTypes.TIER_1 ? (0, r.jsx)(d.tK, {
         className: _.headerAnimation,
         currentStep: t,
         purchaseState: m,
-        pause: C
+        pause: A
       }) : (0, r.jsx)(d.Bk, {
         className: _.headerAnimation,
         currentStep: t,
         purchaseState: m,
-        pause: C
+        pause: A
       }),
       plan: null,
       isGift: false,

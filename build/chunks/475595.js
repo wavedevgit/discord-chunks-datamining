@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   eC: () => m,
-  f0: () => A,
+  f0: () => C,
   fh: () => b,
   nK: () => I,
   sN: () => T
@@ -209,7 +209,7 @@ function T(e) {
   return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(S(t.width))), null != t.height && n.searchParams.append("height", "".concat(S(t.height))), n.toString())
 }
 
-function A(e, t) {
+function C(e, t) {
   if (e.startsWith("blob:")) return e;
   let n = a.Z.toURLSafe(e);
   return null == n ? null : (n.searchParams.append("format", "webp"), null != t && (n.searchParams.append("width", "".concat(S(t.width))), n.searchParams.append("height", "".concat(S(t.height)))), n.toString())

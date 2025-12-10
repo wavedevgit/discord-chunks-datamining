@@ -67,14 +67,14 @@ function E(e) {
     } = (0, c.F7)(v),
     I = (0, a.wj)(E) ? p : _,
     T = (y.size - y.offset - 2 * y.stroke) * m,
-    A = y.size - y.stroke,
-    C = {
+    C = y.size - y.stroke,
+    A = {
       width: T * h,
       height: T * h
     },
     N = {
-      width: C.width + g,
-      height: C.height + g,
+      width: A.width + g,
+      height: A.height + g,
       right: y.stroke + g,
       bottom: y.stroke + g,
       padding: 0
@@ -82,8 +82,8 @@ function E(e) {
   return (0, r.jsxs)("div", {
     className: u.container,
     style: {
-      width: A,
-      height: A,
+      width: C,
+      height: C,
       padding: y.stroke
     },
     "aria-label": "".concat(null != (t = O()) ? t : ""),
@@ -101,13 +101,13 @@ function E(e) {
       children: (0, r.jsx)(o.mBM, f({
         size: "custom",
         color: I.locked
-      }, C))
+      }, A))
     }), i && v === c.EP.LEGENDARY && (0, r.jsx)("div", {
       className: u.lockContainer,
       style: N,
       children: (0, r.jsx)(l.Z, f({
         className: u.confettiIcon
-      }, C))
+      }, A))
     })]
   })
 }

@@ -86,7 +86,7 @@ function T(e) {
   return null != t ? t : "".concat(n, ":").concat(r)
 }
 
-function A(e, t, n, r) {
+function C(e, t, n, r) {
   switch (e) {
     case "top":
       return c()(null != t.bottom, "Missing bottom"), r.offsetHeight - (t.bottom + n.offsetHeight);
@@ -104,7 +104,7 @@ function A(e, t, n, r) {
   }
 }
 
-function C(e, t, n) {
+function A(e, t, n) {
   return {
     top: e.top - n,
     left: e.left - t,
@@ -284,7 +284,7 @@ class w extends(r = Chunk473749.Component) {
   calculatePositionStyle(e, t, n, r) {
     let {
       spacing: i = 0
-    } = this.props, a = R(this.props), o = n.getBoundingClientRect(), s = C(a, o.left, o.top);
+    } = this.props, a = R(this.props), o = n.getBoundingClientRect(), s = A(a, o.left, o.top);
     switch (e) {
       case "top":
         return this.getHorizontalAlignmentStyle(s, t, n, {
@@ -338,7 +338,7 @@ class w extends(r = Chunk473749.Component) {
         style: Chunk54381,
         nudge: Chunk473749
       },
-      s = A(module, Chunk54381, require, r),
+      s = C(module, Chunk54381, require, r),
       l = s,
       u = null,
       d = 0;
@@ -346,7 +346,7 @@ class w extends(r = Chunk473749.Component) {
       let t = N(module),
         i = this.calculatePositionStyle(exports, require, r);
       u = Chunk54381.style, d = Chunk54381.nudge;
-      let a = A(exports, Chunk374470, require, r);
+      let a = C(exports, Chunk374470, require, r);
       if (Chunk473749 > s && (o = {
           position: exports,
           style: Chunk374470,
@@ -355,7 +355,7 @@ class w extends(r = Chunk473749.Component) {
         let i, a = Chunk120356.position;
         if ((i = "top" === Chunk473749 || "bottom" === Chunk473749 ? "overlap_vertical" : "left" === Chunk473749 || "right" === Chunk473749 ? "overlap_horizontal" : Chunk473749) !== module && Chunk54381 !== exports) {
           let e = this.calculatePositionStyle(Chunk54381, require, r, Chunk473749),
-            t = A(N(Chunk473749), module.style, require, r);
+            t = C(N(Chunk473749), module.style, require, r);
           exports > Chunk512722 && (o = E({
             position: Chunk473749
           }, module), l = exports)

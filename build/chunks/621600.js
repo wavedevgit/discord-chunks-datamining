@@ -4,14 +4,14 @@
 require.d(exports, {
   $R: () => b,
   GA: () => I,
-  I: () => A,
+  I: () => C,
   UE: () => E,
   Wq: () => y,
   ZB: () => g,
   jz: () => S,
   rU: () => T,
   sK: () => v,
-  wK: () => C
+  wK: () => A
 }), require("./997841.js"), require("./388685.js");
 var Chunk95015 = require("./95015.js"),
   Chunk367907 = require("./367907.js"),
@@ -149,7 +149,7 @@ function S(e) {
     previous: S,
     label: I,
     location: T
-  } = e, C = function(e) {
+  } = e, A = function(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       i = null != (t = r.muted) ? t : null == e ? true : e.channel_is_muted,
@@ -162,7 +162,7 @@ function S(e) {
       channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, N = C(S), P = C(A(m, g), y), R = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), D = o.Z.getChannel(g), w = null != (n = R("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ w, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
+  }, N = A(S), P = A(C(m, g), y), R = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), D = o.Z.getChannel(g), w = null != (n = R("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ w, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
   i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, P, a.Z.getStats(m)), {
     location: T,
     guild_id: m,
@@ -202,7 +202,7 @@ function T(e) {
   return e.forEach(e => t.set(e, I(e))), t
 }
 
-function A(e, t) {
+function C(e, t) {
   let n = l.ZP.isChannelMuted(e, t),
     r = l.ZP.getChannelMuteConfig(e, t);
   return {
@@ -213,7 +213,7 @@ function A(e, t) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = new Map;
-  return t.forEach(t => n.set(t, A(e, t))), n
+  return t.forEach(t => n.set(t, C(e, t))), n
 }

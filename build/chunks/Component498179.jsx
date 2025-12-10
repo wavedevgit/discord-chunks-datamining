@@ -77,11 +77,11 @@ function m(e) {
     className: b,
     hover: O,
     innerClassName: v
-  }, I = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), T = null != I ? I.sku.id : null, A = null != T ? T : t.primarySkuId, C = (0, i.e7)([s.Z], () => null != A && !s.Z.didFetchingSkuFail(A));
+  }, I = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), T = null != I ? I.sku.id : null, C = null != T ? T : t.primarySkuId, A = (0, i.e7)([s.Z], () => null != C && !s.Z.didFetchingSkuFail(C));
   return null != I && (0, l.Je)(I) ? (0, r.jsx)(u.Z, _(f({}, S), {
     libraryApplication: I,
     source: y
-  })) : C ? (0, r.jsx)("div", {
+  })) : A ? (0, r.jsx)("div", {
     children: "deprecated!"
   }) : (0, r.jsx)(c.Z, _(f({}, S), {
     hideNotLaunchable: h,

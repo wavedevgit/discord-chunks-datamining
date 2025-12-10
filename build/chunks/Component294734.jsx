@@ -55,15 +55,15 @@ function P(e) {
     (0, S.Z)(t)
   }, [t]);
   return null == p ? null : (0, r.jsxs)(c.P3F, {
-    className: C.footerContainer,
+    className: A.footerContainer,
     onClick: _,
     "aria-label": p.accessibilityLabel,
     children: [null != p.originIconUrl ? (0, r.jsx)("img", {
-      className: C.originIcon,
+      className: A.originIcon,
       src: p.originIconUrl,
       alt: ""
     }) : null, (0, r.jsx)(a.xvT, {
-      className: C.footerText,
+      className: A.footerText,
       variant: "text-sm/medium",
       color: "none",
       children: "".concat(p.originLabel, "  •  ").concat(p.timestampLabel)
@@ -93,22 +93,22 @@ function R(e) {
     allowLinks: true,
     allowDevLinks: b,
     previewLinkTarget: true
-  }), T = (0, o.e7)([h.Z], () => h.Z.getChannel(n.channel_id)), A = m.jU.useSetting();
+  }), T = (0, o.e7)([h.Z], () => h.Z.getChannel(n.channel_id)), C = m.jU.useSetting();
   return null == T ? null : (0, r.jsxs)("div", {
-    className: C.container,
+    className: A.container,
     children: [(0, r.jsx)("div", {
-      className: C.quote
+      className: A.quote
     }), (0, r.jsxs)("div", {
-      className: C.content,
+      className: A.content,
       children: [(0, r.jsx)(N, {}), (0, r.jsx)(f.ZP, {
         message: l,
         content: O,
-        compact: A
+        compact: C
       }), (0, _.Z)({
         channelMessageProps: {
           message: l,
           channel: T,
-          compact: A
+          compact: C
         },
         hasSpoilerEmbeds: v,
         hasBailedAst: S,

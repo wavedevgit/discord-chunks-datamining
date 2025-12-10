@@ -86,8 +86,8 @@ let O = function(e) {
     childrenHeader: S,
     childrenSystemMessage: I,
     childrenButtons: T,
-    childrenMessageContent: A,
-    childrenAccessories: C,
+    childrenMessageContent: C,
+    childrenAccessories: A,
     messageRef: N,
     focusProps: P = {
       offset: {
@@ -141,8 +141,8 @@ let O = function(e) {
           onMouseLeave: F,
           children: [O, v, (0, r.jsxs)("div", {
             className: _.contents,
-            children: [I, S, null == I && A]
-          }), C, null != T ? (0, r.jsx)("div", {
+            children: [I, S, null == I && C]
+          }), A, null != T ? (0, r.jsx)("div", {
             className: _.buttonContainer,
             children: T
           }) : null]

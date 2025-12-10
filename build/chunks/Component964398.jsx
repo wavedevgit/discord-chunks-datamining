@@ -108,15 +108,15 @@ let p = Chunk473749.memo(function(e) {
   } = e, I = i.useRef(null), S = i.useRef([]), b = i.useRef(false), v = i.useRef(null), [x, P] = i.useState(0), [Z, A] = i.useState({
     x: 0,
     y: 0
-  }), j = Math.abs(Z.x) + Math.abs(Z.y) > 0, R = i.useMemo(() => a().chunk(m, g), [m]), D = i.useCallback((e, t) => {
+  }), j = Math.abs(Z.x) + Math.abs(Z.y) > 0, D = i.useMemo(() => a().chunk(m, g), [m]), R = i.useCallback((e, t) => {
     null == S.current[x] ? S.current[x] = [] : S.current[x][t] = e
   }, [x]), w = i.useCallback((e, t) => {
     v.current = t, y(g * e + t)
   }, [y]), k = i.useCallback(() => {
     v.current = null, y(null)
-  }, [y]), M = i.useCallback(e => {
+  }, [y]), U = i.useCallback(e => {
     k(), b.current = e
-  }, [k]), U = i.useCallback((e, t, n) => {
+  }, [k]), M = i.useCallback((e, t, n) => {
     if (b.current) return void A({
       x: 0,
       y: 0
@@ -153,7 +153,7 @@ let p = Chunk473749.memo(function(e) {
         x: e.clientX,
         y: e.clientY
       };
-    if (U(r, i, Math.max(t, n)), b.current) {
+    if (M(r, i, Math.max(t, n)), b.current) {
       null != O && k();
       return
     }
@@ -165,17 +165,17 @@ let p = Chunk473749.memo(function(e) {
       if ((0, s.Vr)(i, a, n)) return void w(x, e)
     }
     k()
-  }, 16), [O, U, k, w, x, n, t]), V = i.useCallback(e => {
+  }, 16), [O, M, k, w, x, n, t]), F = i.useCallback(e => {
     if (!T) return;
     let t = x + (e.deltaY > 0 ? 1 : false);
-    t >= 0 && t < R.length && (null != v.current && (R[t].length > v.current ? w(t, v.current) : k()), P(t))
-  }, [T, x, R, w, k]), F = i.useMemo(() => R[x].map((e, i) => {
+    t >= 0 && t < D.length && (null != v.current && (D[t].length > v.current ? w(t, v.current) : k()), P(t))
+  }, [T, x, D, w, k]), V = i.useMemo(() => D[x].map((e, i) => {
     let r = f[i];
     if (null == r) throw Error("Too many items supplied ".concat(m.length, " expected max of ").concat(f.length));
     let a = h(r.x, t, p),
       o = h(r.y, n, E);
     return (0, l.jsx)("div", {
-      ref: e => D(e, i),
+      ref: e => R(e, i),
       className: c.chatWheelItem,
       style: {
         left: a,
@@ -185,11 +185,11 @@ let p = Chunk473749.memo(function(e) {
       },
       children: e
     }, i)
-  }), [R, x, t, p, n, E, m.length, D]);
+  }), [D, x, t, p, n, E, m.length, R]);
   return (0, l.jsx)(o.P3F, {
     className: c.chatWheelMouseInput,
     onMouseMove: G,
-    onWheel: V,
+    onWheel: F,
     onClick: L,
     children: (0, l.jsxs)("div", {
       ref: I,
@@ -241,8 +241,8 @@ let p = Chunk473749.memo(function(e) {
             strokeWidth: "40.32"
           }), N && (0, l.jsx)("circle", {
             className: c.chatWheelDeadZone,
-            onMouseEnter: () => M(true),
-            onMouseLeave: () => M(false),
+            onMouseEnter: () => U(true),
+            onMouseLeave: () => U(false),
             cx: 144,
             cy: 144,
             r: 28.8
@@ -254,8 +254,8 @@ let p = Chunk473749.memo(function(e) {
           })]
         }), N && (0, l.jsx)("circle", {
           className: c.chatWheelDeadZone,
-          onMouseEnter: () => M(true),
-          onMouseLeave: () => M(false),
+          onMouseEnter: () => U(true),
+          onMouseLeave: () => U(false),
           cx: 144,
           cy: 144,
           r: 28.8,
@@ -269,11 +269,11 @@ let p = Chunk473749.memo(function(e) {
           children: (0, l.jsx)(d, {
             className: c.chatWheelDeadZoneIcon
           })
-        }), T && R.length > 1 ? (0, l.jsx)("div", {
+        }), T && D.length > 1 ? (0, l.jsx)("div", {
           className: c.paginationHint,
           children: u.intl.string(u.t["Xy+S02"])
         }) : null]
-      }), F]
+      }), V]
     })
   })
 })

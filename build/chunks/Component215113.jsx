@@ -3,7 +3,7 @@
 require.r(exports), require.d(exports, {
   VideoQuestConfigContext: () => B,
   VideoQuestModalContext: () => F,
-  default: () => Y
+  default: () => q
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -93,8 +93,8 @@ function U(e) {
     videoSessionId: N,
     impressionRef: B,
     parentModalOpenStartClockTime: U,
-    sourceQuestContent: Y
-  } = e, q = (0, S.il)(g), H = (0, b.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(q.progressSeconds), [W, z] = o.useState(142), {
+    sourceQuestContent: q
+  } = e, Y = (0, S.il)(g), H = (0, b.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(Y.progressSeconds), [W, z] = o.useState(142), {
     variant: X,
     enabled: $
   } = h.EO.useConfig({
@@ -111,18 +111,18 @@ function U(e) {
     el = (0, A.e)({
       quest: g,
       onClose: a,
-      sourceQuestContent: Y,
+      sourceQuestContent: q,
       impressionId: Q
     }),
     ei = (0, u.e7)([p.Z], () => p.Z.getState().theme),
     ea = (0, d.wjy)(ei) ? L.BR.DARK : L.BR.LIGHT,
     es = o.useMemo(() => ({
       quest: g,
-      sourceQuestContent: Y,
+      sourceQuestContent: q,
       videoSessionId: N,
       isPortrait: et,
       onClose: a
-    }), [g, Y, N, et, a]);
+    }), [g, q, N, et, a]);
   return (0, r.jsx)(F.Provider, {
     value: es,
     children: (0, r.jsxs)(d.Y0X, {
@@ -141,7 +141,7 @@ function U(e) {
         children: (0, r.jsx)(d.hU, {
           variant: "icon-only",
           icon: e => (0, r.jsx)(d.Dio, Z(V({}, e), {
-            color: d.TVs.colors.CONTROL_TEXT_OVERLAY_SECONDARY_DEFAULT
+            color: d.TVs.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT
           })),
           "aria-label": k.intl.string(k.t.cpT0Cq),
           onClick: a
@@ -175,7 +175,7 @@ function U(e) {
                   alt: g.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
                   src: (0, C.fh)(g, C.eC.LOGO_TYPE, ea).url
-                }), (0, r.jsx)(T.Z, {}), (0, r.jsxs)("div", {
+                }), (0, r.jsx)(R.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
@@ -206,7 +206,7 @@ function U(e) {
                 className: M.portraitContentRow,
                 children: [H ? null : (0, r.jsx)(D.Z, {
                   tooltipPosition: "top"
-                }), (0, r.jsx)(P.Z, {}), !eo && (0, r.jsx)(R.Z, {
+                }), (0, r.jsx)(P.Z, {}), !eo && (0, r.jsx)(T.Z, {
                   floatRight: true
                 })]
               }) : null, (0, r.jsxs)("div", {
@@ -221,7 +221,7 @@ function U(e) {
                   })]
                 }), $ ? (0, r.jsx)(x.Z, {
                   handlePrimaryCtaClick: el
-                }) : (0, r.jsx)(R.Z, {})]
+                }) : (0, r.jsx)(T.Z, {})]
               })]
             }) : (0, r.jsxs)("div", {
               className: i()(M.contentFooter, $ ? M.contentFooterV2 : M.contentFooterV1),
@@ -238,7 +238,7 @@ function U(e) {
                 className: i()(M.contentFooterButtonCont, {
                   [M.contentFooterButtonContV2]: $
                 }),
-                children: [!eo && (0, r.jsx)(R.Z, {}), (0, r.jsx)(j.Z, {}), $ ? (0, r.jsx)(x.Z, {
+                children: [!eo && (0, r.jsx)(T.Z, {}), (0, r.jsx)(j.Z, {}), $ ? (0, r.jsx)(x.Z, {
                   handlePrimaryCtaClick: el
                 }) : null]
               })]
@@ -250,7 +250,7 @@ function U(e) {
   })
 }
 
-function Y(e) {
+function q(e) {
   var {
     questId: t,
     overrideQuest: n,

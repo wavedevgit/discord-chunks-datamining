@@ -2,7 +2,7 @@
 /** chunk id: 490597, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => C
+  X: () => A
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -58,12 +58,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class C extends Chunk473749.Component {
+class A extends Chunk473749.Component {
   render() {
     let {
       message: e,
@@ -97,7 +97,7 @@ class C extends Chunk473749.Component {
         return (0, r.jsx)(d.u, {
           asContainer: true,
           text: y.intl.string(y.t.lfIHs4),
-          children: (0, r.jsxs)(f.P3F, A(I({}, e), {
+          children: (0, r.jsxs)(f.P3F, C(I({}, e), {
             innerRef: this.ref,
             tabIndex: a,
             onClick: e => {

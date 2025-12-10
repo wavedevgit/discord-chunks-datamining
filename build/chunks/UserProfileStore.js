@@ -62,8 +62,8 @@ function I(e, t) {
   }), e
 }
 let T = Symbol("NO GUILD ID"),
-  A = new Map,
-  C = new Set,
+  C = new Map,
+  A = new Set,
   N = "premium",
   P = "guild_booster_lvl",
   R = 0x7fffffff,
@@ -142,21 +142,21 @@ function W(e, t) {
 }
 
 function K() {
-  A.clear(), C.clear(), D.clear(), w.clear(), j.clear(), M.clear(), k.clear(), V = false
+  C.clear(), A.clear(), D.clear(), w.clear(), j.clear(), M.clear(), k.clear(), V = false
 }
 
 function z(e) {
   let {
     userId: t
   } = e;
-  C.add(t)
+  A.add(t)
 }
 
 function q(e) {
   let {
     userId: t
   } = e;
-  C.delete(t)
+  A.delete(t)
 }
 
 function Q(e) {
@@ -173,7 +173,7 @@ function Q(e) {
 }
 
 function X(e) {
-  C.delete(e.userId), j.set(e.userId, Q(e.mutualFriends)), M.set(e.userId, e.mutualFriends.length)
+  A.delete(e.userId), j.set(e.userId, Q(e.mutualFriends)), M.set(e.userId, e.mutualFriends.length)
 }
 
 function J(e) {
@@ -182,7 +182,7 @@ function J(e) {
     userProfile: z,
     fetchStartedAt: q
   } = e, X = null != (b = null == (t = z.guild_member_profile) ? true : t.guild_id) ? b : T;
-  if (null == (n = A.get(z.user.id)) || n.delete(X), C.delete(z.user.id), null != z.mutual_guilds) {
+  if (null == (n = C.get(z.user.id)) || n.delete(X), A.delete(z.user.id), null != z.mutual_guilds) {
     let e = {};
     z.mutual_guilds.forEach(t => {
       let {
@@ -311,13 +311,13 @@ function ee(e) {
     userId: t,
     guildId: n,
     withMutualFriends: r
-  } = e, i = null != n ? n : T, a = A.get(t);
+  } = e, i = null != n ? n : T, a = C.get(t);
   if (null != a) a.add(i);
   else {
     let e = new Set;
-    e.add(i), A.set(t, e)
+    e.add(i), C.set(t, e)
   }
-  r && C.add(t)
+  r && A.add(t)
 }
 
 function et(e) {
@@ -328,7 +328,7 @@ function et(e) {
     apiError: a,
     fetchStartedAt: o
   } = e;
-  null == (t = A.get(r)) || t.delete(null != i ? i : T), C.delete(r);
+  null == (t = C.get(r)) || t.delete(null != i ? i : T), A.delete(r);
   let s = null != (n = D.get(r)) ? n : {
     connectedAccounts: [],
     applicationRoleConnections: [],
@@ -463,7 +463,7 @@ function el(e) {
 function ec(e) {
   var t, n;
   let r = e.user.id;
-  return !((null != (n = null == (t = A.get(r)) ? true : t.size) ? n : 0) > 0) && e_(r)
+  return !((null != (n = null == (t = C.get(r)) ? true : t.size) ? n : 0) > 0) && e_(r)
 }
 
 function eu(e) {
@@ -479,7 +479,7 @@ function ef(e) {
 }
 
 function ep() {
-  A.clear(), C.clear(), D.clear(), w.clear()
+  C.clear(), A.clear(), D.clear(), w.clear()
 }
 
 function e_(e) {
@@ -497,11 +497,11 @@ class eh extends Chunk750041.Z {
     this.waitFor(Chunk771845.ZP), this.syncWith([Chunk706454.default], ep)
   }
   isFetchingProfile(e, t) {
-    let n = A.get(e);
+    let n = C.get(e);
     return null != n && n.has(null != t ? t : T)
   }
   isFetchingFriends(e) {
-    return C.has(e)
+    return A.has(e)
   }
   get isSubmitting() {
     return V

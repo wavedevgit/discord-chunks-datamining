@@ -111,15 +111,15 @@ function g(e) {
     interactiveLabel: S = false,
     auxiliaryContentPosition: I = "under-control",
     trailingAuxiliaryContent: T,
-    ref: A
-  } = e, C = m(e), {
+    ref: C
+  } = e, A = m(e), {
     labelId: N,
     controlId: P,
     errorMessageId: R,
     describedById: D,
     helperTextId: w,
     descriptionId: x
-  } = C, L = null == y ? true : y.horizontalControlColumnWidth, j = "group" === g || "radiogroup" === g, M = j ? "span" : "label", k = j ? "fieldset" : "div", U = j ? (0, r.jsx)("legend", {
+  } = A, L = null == y ? true : y.horizontalControlColumnWidth, j = "group" === g || "radiogroup" === g, M = j ? "span" : "label", k = j ? "fieldset" : "div", U = j ? (0, r.jsx)("legend", {
     id: N,
     children: (0, r.jsx)(s.n, {
       children: t
@@ -158,10 +158,10 @@ function g(e) {
     errorMessageId: R
   });
   return (0, r.jsx)(d.z.Provider, {
-    value: C,
+    value: A,
     children: (0, r.jsxs)(k, {
       role: g,
-      ref: A,
+      ref: C,
       className: f.container,
       "data-layout": b,
       style: null != L ? {
@@ -183,7 +183,7 @@ function g(e) {
         }), "under-label" === I ? F : null]
       }) : null, (0, r.jsxs)("div", {
         className: f.control,
-        children: ["function" == typeof p ? p(C) : p, "under-control" === I ? F : null]
+        children: ["function" == typeof p ? p(A) : p, "under-control" === I ? F : null]
       })]
     })
   })

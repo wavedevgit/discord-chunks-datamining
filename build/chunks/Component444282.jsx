@@ -33,9 +33,9 @@ function b(e) {
     }
   }, T = i.useCallback(() => {
     O(true)
-  }, []), A = i.useCallback(() => {
+  }, []), C = i.useCallback(() => {
     O(false)
-  }, []), C = i.useCallback(e => {
+  }, []), A = i.useCallback(e => {
     var r;
     O(false);
     let i = {
@@ -54,10 +54,10 @@ function b(e) {
   }, [t, n]);
   i.useEffect(() => {
     let e = S.current;
-    return null == v && (null == e || e.addEventListener("dragover", T, false), null == e || e.addEventListener("dragleave", A, false), null == e || e.addEventListener("drop", C, false)), () => {
-      null == e || e.removeEventListener("dragover", T, false), null == e || e.removeEventListener("dragleave", A, false), null == e || e.removeEventListener("drop", C, false)
+    return null == v && (null == e || e.addEventListener("dragover", T, false), null == e || e.addEventListener("dragleave", C, false), null == e || e.addEventListener("drop", A, false)), () => {
+      null == e || e.removeEventListener("dragover", T, false), null == e || e.removeEventListener("dragleave", C, false), null == e || e.removeEventListener("drop", A, false)
     }
-  }, [v, T, A, C]);
+  }, [v, T, C, A]);
   let N = e => {
     var r, i;
     if (null != t && (null == (i = e.currentTarget) || null == (r = i.files) ? true : r[0]) != null) {

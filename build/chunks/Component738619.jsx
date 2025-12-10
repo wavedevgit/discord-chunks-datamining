@@ -53,7 +53,7 @@ function T(e) {
   return e
 }
 let C = [];
-class N extends Chunk473749.PureComponent {
+class D extends Chunk473749.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -104,7 +104,7 @@ class N extends Chunk473749.PureComponent {
   }
 }
 
-function D(e) {
+function N(e) {
   let {
     activityInviteEducationActivity: t,
     isFocused: n,
@@ -133,7 +133,7 @@ function D(e) {
           t.disconnect()
         }
       }
-    }, [p]), 0 === o.length && !(f > 0)) return null != t ? (0, i.jsx)(N, {
+    }, [p]), 0 === o.length && !(f > 0)) return null != t ? (0, i.jsx)(D, {
     activity: t,
     isFocused: n
   }) : null;
@@ -216,8 +216,8 @@ function A(e) {
     }(e, ["channel", "isThreadCreation"]);
   let s = _(r),
     a = (t = T({}, l), n = n = {
-      baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
-      activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_NORMAL).hex(),
+      baseTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
+      activeTextColor: (0, d.dQu)(u.Z.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
       activityInviteEducationActivity: k(r),
       typingUsers: o ? [] : s,
       isFocused: (0, c.e7)([S.Z], () => S.Z.isFocused()),
@@ -234,5 +234,5 @@ function A(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t);
-  return (0, i.jsx)(D, T({}, a))
+  return (0, i.jsx)(N, T({}, a))
 }

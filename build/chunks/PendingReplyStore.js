@@ -2,7 +2,7 @@
 /** chunk id: 807092, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -153,7 +153,7 @@ function I() {
 function T() {
   p = {}, _ = {}, m = {}
 }
-class A extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
     let e = {};
     for (let [t, n] of Chunk709054.default.entries(p)) module[exports] = {
@@ -174,8 +174,8 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     return m[e]
   }
 }
-c(A, "displayName", "PendingReplyStore"), c(A, "persistKey", "PendingReplyStore"), c(A, "migrations", [e => null != e ? e : {}]);
-let C = new A(Chunk570140.Z, {
+c(C, "displayName", "PendingReplyStore"), c(C, "persistKey", "PendingReplyStore"), c(C, "migrations", [e => null != e ? e : {}]);
+let A = new C(Chunk570140.Z, {
   CREATE_PENDING_REPLY: h,
   CREATE_SHALLOW_PENDING_REPLY: g,
   SET_PENDING_REPLY_SHOULD_MENTION: E,

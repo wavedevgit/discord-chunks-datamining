@@ -38,7 +38,7 @@ function f(e) {
       size: "md"
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
-      color: "interactive-active",
+      color: "interactive-text-active",
       children: null != a ? u.intl.format(t, {
         hook: (e, t) => (0, r.jsx)(s.Anchor, {
           onClick: g,

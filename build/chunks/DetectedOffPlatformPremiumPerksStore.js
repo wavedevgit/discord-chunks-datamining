@@ -85,10 +85,10 @@ function T(e) {
   v.push(t), s.K.set(b, v)
 }
 
-function A() {
+function C() {
   y = {}, O = {}
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
     this.waitFor(Chunk812206.Z, Chunk580130.Z, Chunk594190.ZP, Chunk55563.Z, Chunk594174.default), v = null != (e = Chunk433517.K.get(b)) ? module : v
@@ -97,9 +97,9 @@ class C extends(r = Chunk442837.ZP.Store) {
     return a().values(y)
   }
 }
-E(C, "displayName", "DetectedOffPlatformPremiumPerksStore");
-let N = new C(Chunk570140.Z, {
-  LOGOUT: A,
+E(A, "displayName", "DetectedOffPlatformPremiumPerksStore");
+let N = new A(Chunk570140.Z, {
+  LOGOUT: C,
   SKU_FETCH_SUCCESS: I,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: I,
   ENTITLEMENT_CREATE: I,

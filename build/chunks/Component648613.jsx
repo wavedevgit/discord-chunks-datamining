@@ -86,12 +86,12 @@ function S(e) {
     premiumModalAnalyticsLocation: S,
     applicationId: I,
     giftMessage: T,
-    confirmationFooter: A,
-    isGift: C,
+    confirmationFooter: C,
+    isGift: A,
     children: N
   } = e, P = (0, i.e7)([f.default], () => f.default.getCurrentUser()), R = (0, i.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), {
     analyticsLocations: D
-  } = (0, o.ZP)(), w = (0, _.N)(), x = !C && null != w && null != g && m.nG[w.trial_id].skus.includes(g);
+  } = (0, o.ZP)(), w = (0, _.N)(), x = !A && null != w && null != g && m.nG[w.trial_id].skus.includes(g);
   return N({
     onClick: e => {
       var i;
@@ -132,8 +132,8 @@ function S(e) {
       });
       let o = x ? null == (i = w.subscription_trial) ? true : i.id : null,
         f = h.AnalyticsObjectTypes.BUY;
-      null != o ? f = h.AnalyticsObjectTypes.TRIAL : C && (f = h.AnalyticsObjectTypes.GIFT), (0, l.Z)({
-        isGift: C,
+      null != o ? f = h.AnalyticsObjectTypes.TRIAL : A && (f = h.AnalyticsObjectTypes.GIFT), (0, l.Z)({
+        isGift: A,
         initialPlanId: null,
         subscriptionTier: g,
         analyticsLocations: D,
@@ -146,7 +146,7 @@ function S(e) {
         onClose: v,
         applicationId: I,
         giftMessage: T,
-        confirmationFooter: A
+        confirmationFooter: C
       })
     }
   })

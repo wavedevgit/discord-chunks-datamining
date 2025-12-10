@@ -171,7 +171,7 @@ let k = (e, t, n) => (0, i.wj)(e) ? t : n,
       videoBackground: {
         title: p.intl.string(p.t.NaGpTf),
         description: p.intl.string(p.t["A8O/Qw"]),
-        imageSource: k(i, A, C),
+        imageSource: k(i, C, A),
         imageClassName: t.videoBackgroundImage
       }
     }

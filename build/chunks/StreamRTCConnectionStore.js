@@ -34,8 +34,8 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 let T = {},
-  A = {},
   C = {},
+  A = {},
   N = {},
   P = {},
   R = {},
@@ -50,7 +50,7 @@ function x(e, t, n, i) {
     channelId: n,
     initialLayout: D,
     analyticsContext: i,
-    isStreamer: null != A[e],
+    isStreamer: null != C[e],
     parentMediaSessionId: O.Z.getMediaSessionId()
   })
 }
@@ -96,9 +96,9 @@ function k(e) {
         isOwner: n
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(c), n && t.trackStart()
-    }), null == a && (a = s), N[p] = o, C[p] = a, null != a) {
+    }), null == a && (a = s), N[p] = o, A[p] = a, null != a) {
     let e = f.ZP.getGameForPID(a);
-    null != e && (A[p] = {
+    null != e && (C[p] = {
       name: e.name,
       id: e.id,
       exe: e.exeName,
@@ -124,7 +124,7 @@ function U(e) {
       isOwner: r
     } = e;
     n.setActionContext(t), r && n.trackEnd()
-  }), N[n] = null, C[n] = null, delete P[n]
+  }), N[n] = null, A[n] = null, delete P[n]
 }
 
 function G(e) {
@@ -137,10 +137,10 @@ function G(e) {
   } = e, o = w[t], s = (0, _.my)(t);
   if (null == o && null != n) {
     var l, c;
-    null == C[t] && (A[t] = null), null == A[t] && null == N[t] && (A[t] = (0, m.L2)(s, y.Z));
+    null == A[t] && (C[t] = null), null == C[t] && null == N[t] && (C[t] = (0, m.L2)(s, y.Z));
     let e = new p.A({
       streamRegion: i,
-      streamApplication: A[t],
+      streamApplication: C[t],
       streamSourceType: X(N[t]),
       actionContext: null == (l = T[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,

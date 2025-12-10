@@ -2,7 +2,7 @@
 /** chunk id: 986175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => C
+  I: () => A
 }), require("./35282.js"), require("./539854.js"), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -148,7 +148,7 @@ function T() {
   })
 }
 
-function A(e) {
+function C(e) {
   var t = m({}, h(e));
   let [n, a] = i.useState("intro"), s = [{
     stepKey: "intro",
@@ -181,7 +181,7 @@ function A(e) {
     onStepChange: a
   }, t))
 }
-let C = {
+let A = {
   title: "Modal",
   stories: [{
     name: "Modal",
@@ -716,7 +716,7 @@ let C = {
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           text: "Open MultiStepModal",
-          onClick: () => (0, u.h7j)(e => (0, r.jsx)(A, g({}, e)), {
+          onClick: () => (0, u.h7j)(e => (0, r.jsx)(C, g({}, e)), {
             dismissable: t.dismissable
           })
         })]

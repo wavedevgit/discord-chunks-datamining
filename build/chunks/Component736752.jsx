@@ -296,7 +296,7 @@ class K extends Chunk473749.PureComponent {
         settingsSection: Chunk981631.oAB.ACCOUNT,
         panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
-          C.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+          A.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === k.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
           })
         },

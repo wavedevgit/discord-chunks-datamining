@@ -87,8 +87,8 @@ let y = function(e) {
     showIcon: S = true,
     disableShine: I,
     applicationId: T,
-    shinyButtonClassName: A,
-    showGradient: C = false,
+    shinyButtonClassName: C,
+    showGradient: A = false,
     confirmationFooter: N,
     color: P,
     iconColor: R = "currentColor"
@@ -123,10 +123,10 @@ let y = function(e) {
           innerClassName: p.premiumSubscribeButton,
           color: n,
           size: i,
-          className: A,
+          className: C,
           wrapperClassName: a()({
-            [p.tier2Gradient]: C && t === f.Si.TIER_2,
-            [p.tier1Gradient]: C && t === f.Si.TIER_1
+            [p.tier2Gradient]: A && t === f.Si.TIER_2,
+            [p.tier1Gradient]: A && t === f.Si.TIER_1
           }, _),
           buttonShineClassName: "buttonShineClassName" in D ? D.buttonShineClassName : n === s.Tt.BRAND_INVERTED ? p.brandShine : true,
           pauseAnimation: !w || I

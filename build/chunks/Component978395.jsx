@@ -65,7 +65,7 @@ function L(e) {
       guildId: null == j ? true : j.id,
       onOpenProfile: k,
       onClose: G,
-      usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(C.Z, {
+      usernameIcon: t.hasAvatarForGuild(null == j ? true : j.id) && (0, r.jsx)(A.Z, {
         user: t,
         nickname: Z
       }),
@@ -119,7 +119,7 @@ function L(e) {
           userId: t.id
         })
       })
-    }) : (0, r.jsx)(A.Z, {
+    }) : (0, r.jsx)(C.Z, {
       user: t,
       bio: null == L ? true : L.bio,
       hidePersonalInformation: H,

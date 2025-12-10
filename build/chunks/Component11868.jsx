@@ -61,7 +61,7 @@ let D = (e, t) => n => {
       if (null == n) return null;
       let e = m.Z.getGuild(n.id);
       return null != e ? e : (0, h.lM)(n) ? n : (0, h.Qs)(n)
-    }, [n]), _ = (0, A.u)(a, o), g = i.useCallback(e => {
+    }, [n]), _ = (0, C.u)(a, o), g = i.useCallback(e => {
       u && null != a && (e.stopPropagation(), (0, c.Bk)(a))
     }, [u, a]), E = i.useCallback(e => {
       x(a)(e)
@@ -126,7 +126,7 @@ let D = (e, t) => n => {
       onAcceptInstantInvite: d,
       onTransitionToInviteChannel: f
     } = e, p = (0, s.e7)([E.ZP], () => E.ZP.isInterestedInEventRecurrence(n, i), [n, i]), _ = e => {
-      e.stopPropagation(), (0, C.Z)(n, i, t)
+      e.stopPropagation(), (0, A.Z)(n, i, t)
     }, m = e => {
       e.stopPropagation(), c ? a && f() : d()
     };
@@ -174,8 +174,8 @@ let D = (e, t) => n => {
       })
     }, [c, n, _]);
     if (null == n || !m) return null;
-    let A = (0, E.xt)(n),
-      C = (0, E.Z2)(n),
+    let C = (0, E.xt)(n),
+      A = (0, E.Z2)(n),
       P = n.entity_type === N.WX.EXTERNAL;
     return (0, r.jsx)(f.Z, {
       className: o()({
@@ -203,8 +203,8 @@ let D = (e, t) => n => {
             guildScheduledEvent: n,
             isMember: c
           }), (0, r.jsx)(M, {
-            isActive: A,
-            isEnded: C,
+            isActive: C,
+            isEnded: A,
             isMember: c,
             guildId: n.guild_id,
             guildScheduledEventId: n.id,

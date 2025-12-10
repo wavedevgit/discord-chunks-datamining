@@ -103,29 +103,29 @@ function x(e) {
   } = e, {
     useCurrentTime: f,
     subscribe: g
-  } = (0, p.D)(), x = f(), y = null != (n = null == (t = i.decision) ? true : t.timestamp) ? n : 0, [C] = a.useState(() => {
+  } = (0, p.D)(), x = f(), y = null != (n = null == (t = i.decision) ? true : t.timestamp) ? n : 0, [N] = a.useState(() => {
     var e;
     return new j(null != (e = i.timeline) ? e : [])
-  }), k = y - i.length, N = a.useCallback(e => {
+  }), C = y - i.length, k = a.useCallback(e => {
     let t = 1e3 * r().round(e, 3),
-      n = C.getEventsAtTimestamp(k + t);
+      n = N.getEventsAtTimestamp(C + t);
     return {
       speakingUserIds: r().sortBy(n.speakingUserIds),
       activeSoundboards: r().sortBy(n.activeSoundboards, "soundboardId")
     }
-  }, [C, k]), [E, w] = a.useState(() => N(x)), S = (0, s.cj)([c.default], () => r().pick(c.default.getUsers(), i.users));
+  }, [N, C]), [E, S] = a.useState(() => k(x)), w = (0, s.cj)([c.default], () => r().pick(c.default.getUsers(), i.users));
   return (a.useEffect(() => g({
     onTimeUpdate: e => {
-      let t = N(e);
-      w(e => r().isEqual(t, e) ? e : (b.info("Event snapshot changed", {
+      let t = k(e);
+      S(e => r().isEqual(t, e) ? e : (b.info("Event snapshot changed", {
         newEventSnapshot: t,
         currentEventSnapshot: e
       }), t))
     }
-  }), [g, N]), null == y) ? null : (0, l.jsxs)("div", {
+  }), [g, k]), null == y) ? null : (0, l.jsxs)("div", {
     className: v.voiceUserContainer,
     children: [h && E.speakingUserIds.map(e => {
-      let t = S[e];
+      let t = w[e];
       if (null == t) return null;
       let n = (0, m.oY)(i.guildId, i.channelId, t);
       return (0, l.jsxs)("div", {
@@ -143,7 +143,7 @@ function x(e) {
       }, e)
     }), o && E.activeSoundboards.map(e => {
       var t, n;
-      let a = S[e.userId];
+      let a = w[e.userId];
       return null == a ? null : (0, l.jsxs)("div", {
         className: v.voiceUser,
         children: [(0, l.jsx)(u.qEK, {

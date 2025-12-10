@@ -2,7 +2,7 @@
 /** chunk id: 216405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var Chunk579092 = require("./579092.js"),
   Chunk46973 = require("./46973.js"),
@@ -46,22 +46,22 @@ class T extends Chunk147913.Z {
     let T = Chunk361291.Z.getState();
     if (T.preset !== Chunk37113.ApplicationStreamPresets.PRESET_AUTO) return;
     if ((null == (e = Chunk199902.Z.getStreamerActiveStreamMetadata()) ? true : module.id) != null) return void S.info("Skipping auto quality checker for game stream.");
-    let A = Chunk450109.Z.getAccumulatedPerformanceStats(Chunk580991.getMediaEngineConnectionId(), Chunk147913.ownerId, "long"),
-      C = (null != (t = Chunk580991.analyticsContext.getDuration()) ? exports : 30) >= 30 * Chunk70956.Z.Millis.SECOND ? 30 : 15;
-    if (null == A || A.numDatapoints < C) return;
+    let C = Chunk450109.Z.getAccumulatedPerformanceStats(Chunk580991.getMediaEngineConnectionId(), Chunk147913.ownerId, "long"),
+      A = (null != (t = Chunk580991.analyticsContext.getDuration()) ? exports : 30) >= 30 * Chunk70956.Z.Millis.SECOND ? 30 : 15;
+    if (null == C || C.numDatapoints < A) return;
     let N = Chunk594174.default.getCurrentUser(),
       P = Chunk430824.Z.getGuild(Chunk147913.guildId),
       [R, D] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == P ? true : P.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
       [w, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == P ? true : P.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
       L = null;
-    if (A.entropy < y && (T.resolution !== R || T.fps !== D) ? (S.info("Low entropy average, switching to screenshare preset."), L = {
+    if (C.entropy < y && (T.resolution !== R || T.fps !== D) ? (S.info("Low entropy average, switching to screenshare preset."), L = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
           resolution: R,
           frameRate: D
         },
         context: Chunk46973.Yn.STREAM
-      }) : A.entropy > O && (T.resolution !== w || T.fps !== x) && (S.info("High entropy average, switching to video preset."), L = {
+      }) : C.entropy > O && (T.resolution !== w || T.fps !== x) && (S.info("High entropy average, switching to video preset."), L = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
           resolution: w,
@@ -93,4 +93,4 @@ class T extends Chunk147913.Z {
     })
   }
 }
-let A = new T
+let C = new T

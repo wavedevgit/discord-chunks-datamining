@@ -23,10 +23,10 @@ var Chunk657398 = require("./657398.js"),
   S = "[object Int16Array]",
   I = "[object Int32Array]",
   T = "[object Uint8Array]",
-  A = "[object Uint8ClampedArray]",
-  C = "[object Uint16Array]",
+  C = "[object Uint8ClampedArray]",
+  A = "[object Uint16Array]",
   N = "[object Uint32Array]",
   P = {};
-P["[object Float32Array]"] = P[O] = P[v] = P[S] = P[I] = P[T] = P[A] = P[C] = P[N] = true, P[o] = P[s] = P[b] = P[l] = P[y] = P[c] = P[u] = P[d] = P[f] = P[p] = P[_] = P[m] = P[h] = P[g] = P[E] = false, module.exports = function(e) {
+P["[object Float32Array]"] = P[O] = P[v] = P[S] = P[I] = P[T] = P[C] = P[A] = P[N] = true, P[o] = P[s] = P[b] = P[l] = P[y] = P[c] = P[u] = P[d] = P[f] = P[p] = P[_] = P[m] = P[h] = P[g] = P[E] = false, module.exports = function(e) {
   return a(e) && i(e.length) && !!P[r(e)]
 }

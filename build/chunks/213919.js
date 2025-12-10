@@ -6,13 +6,13 @@ require.r(exports), require.d(exports, {
   encryptAndStoreTokens: () => R,
   getAnalyticsToken: () => O,
   getToken: () => v,
-  hideToken: () => A,
+  hideToken: () => C,
   init: () => y,
   removeAnalyticsToken: () => P,
   removeToken: () => N,
   setAnalyticsToken: () => S,
   setToken: () => I,
-  showToken: () => C
+  showToken: () => A
 }), require("./388685.js");
 var Chunk433517 = require("./433517.js"),
   Chunk231338 = require("./231338.js");
@@ -100,11 +100,11 @@ function T(e, t) {
   null != t && (p[t] = e), f ? R() : (i = r, _ = p, g())
 }
 
-function A() {
+function C() {
   m || (m = true, g())
 }
 
-function C() {
+function A() {
   m && (m = false, g())
 }
 

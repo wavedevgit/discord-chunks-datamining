@@ -1,13 +1,13 @@
 /** Chunk was on 75909 **/
 /** chunk id: 922826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => T
 }), require("./781311.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk561779 = require("./561779.jsx"),
@@ -149,7 +149,7 @@ let D = Chunk473749.forwardRef(function(e, t) {
   }) : b()
 });
 
-function R(e) {
+function T(e) {
   var t, n;
   let {
     videoRef: l,
@@ -157,8 +157,8 @@ function R(e) {
     animSpring: b,
     visible: _,
     seekForwardEnabled: j,
-    hideCaptionBtn: R,
-    hideTranscriptBtn: T,
+    hideCaptionBtn: T,
+    hideTranscriptBtn: R,
     videoTask: I,
     size: N,
     handlePlaybackBtnClick: A,
@@ -169,7 +169,7 @@ function R(e) {
     handleSeekForwardBtnClick: V,
     handleControlBarPendingInteraction: Z,
     onVolumeChange: F
-  } = e, B = (0, p.km)(e => e.volume), U = (0, p.km)(e => e.setVolume), Y = (0, p.km)(e => e.muted), q = (0, p.km)(e => e.setMuted), H = (0, p.km)(e => e.transcriptEnabled), Q = (0, p.km)(e => e.captionEnabled), G = (0, p.km)(e => e.fullScreenEnabled), K = (0, s.e7)([f.Z], () => f.Z.useReducedMotion), W = (0, s.e7)([f.Z], () => f.Z.keyboardModeEnabled), [z, X] = o.useState(Y ? 0 : B), [$, J] = o.useState(false), [ee, et] = o.useState(false), [{
+  } = e, B = (0, p.km)(e => e.volume), U = (0, p.km)(e => e.setVolume), q = (0, p.km)(e => e.muted), Y = (0, p.km)(e => e.setMuted), H = (0, p.km)(e => e.transcriptEnabled), Q = (0, p.km)(e => e.captionEnabled), G = (0, p.km)(e => e.fullScreenEnabled), K = (0, s.e7)([f.Z], () => f.Z.useReducedMotion), W = (0, s.e7)([f.Z], () => f.Z.keyboardModeEnabled), [z, X] = o.useState(q ? 0 : B), [$, J] = o.useState(false), [ee, et] = o.useState(false), [{
     volumeAnimSpring: en
   }, er] = (0, m.q_F)(() => ({
     from: {
@@ -183,8 +183,8 @@ function R(e) {
   })), eo = o.useRef(null), el = (0, v.ZS)(I), ei = o.useCallback(e => {
     null != l.current && (e !== l.current.volume && (l.current.volume = e), e !== z && X(e))
   }, [l, z]), ea = o.useCallback(() => {
-    null != l.current && (0 === z ? (ei(B), q(false), F(B)) : (U(z), ei(0), q(true), F(0)))
-  }, [l, z, ei, B, q, U, F]), es = () => {
+    null != l.current && (0 === z ? (ei(B), Y(false), F(B)) : (U(z), ei(0), Y(true), F(0)))
+  }, [l, z, ei, B, Y, U, F]), es = () => {
     J(true)
   }, ec = () => {
     J(false)
@@ -305,7 +305,7 @@ function R(e) {
             minValue: 0,
             maxValue: 1,
             onValueChange: e => {
-              ei(e), U(e), F(e), ee && (et(false), Z(false)), Y && e > 0 && q(false)
+              ei(e), U(e), F(e), ee && (et(false), Z(false)), q && e > 0 && Y(false)
             },
             asValueChanges: e => {
               ei(e), ee || (et(true), Z(true))
@@ -323,7 +323,7 @@ function R(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: i()(S.videoControlsGroup, S.videoControlsGroupEnd),
-      children: [!T && (0, r.jsx)(D, {
+      children: [!R && (0, r.jsx)(D, {
         iconComponent: m.hH0,
         animationTime: b,
         visible: _,
@@ -333,7 +333,7 @@ function R(e) {
         ariaLabel: C.intl.string(C.t.KCzjTi),
         tooltipLabel: C.intl.string(C.t.KCzjTi),
         buttonSize: x[N]
-      }), !R && (0, r.jsx)(D, {
+      }), !T && (0, r.jsx)(D, {
         iconComponent: E.c,
         animationTime: b,
         visible: _,

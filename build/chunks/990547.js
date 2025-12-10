@@ -75,8 +75,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = "deviceProperties",
-  C = "referralProperties",
+let C = "deviceProperties",
+  A = "referralProperties",
   N = {},
   P = {},
   R = window.DiscordNative;
@@ -230,12 +230,12 @@ function V(e, t) {
 }
 
 function H() {
-  let e = Chunk433517.K.get(A);
-  null == module && (e = Z(), Chunk433517.K.set(A, module));
-  let t = Chunk433517.K.get(C);
-  null == exports && (t = F(), Chunk433517.K.set(C, exports));
-  let n = Chunk298444.x.get(C);
-  return null == require && (n = V(F(), "_current"), Chunk298444.x.set(C, require)), S({}, module, B(), exports, require)
+  let e = Chunk433517.K.get(C);
+  null == module && (e = Z(), Chunk433517.K.set(C, module));
+  let t = Chunk433517.K.get(A);
+  null == exports && (t = F(), Chunk433517.K.set(A, exports));
+  let n = Chunk298444.x.get(A);
+  return null == require && (n = V(F(), "_current"), Chunk298444.x.set(A, require)), S({}, module, B(), exports, require)
 }
 
 function Y() {
@@ -250,7 +250,7 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("478049", 10);
+  let i = parseInt("478079", 10);
   isNaN(i) || (require.client_build_number = i);
   let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require

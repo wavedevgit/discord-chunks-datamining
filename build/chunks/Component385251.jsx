@@ -68,7 +68,7 @@ let T = {
   object: Chunk981631.qAy.CARD
 };
 
-function A(e) {
+function C(e) {
   let {
     premiumSubscription: t,
     discountInfo: n,
@@ -113,7 +113,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     discountOffer: t,
     premiumSubscription: n
@@ -223,10 +223,10 @@ let N = function(e) {
           className: b.churnDiscountBannerContent,
           children: [(0, r.jsxs)("div", {
             className: b.churnDiscountBannerDetails,
-            children: [null != S ? (0, r.jsx)(C, {
+            children: [null != S ? (0, r.jsx)(A, {
               discountOffer: S,
               premiumSubscription: t
-            }) : (0, r.jsx)(A, {
+            }) : (0, r.jsx)(C, {
               premiumSubscription: t,
               discountInfo: null != h ? h : O,
               invoicePreview: c,

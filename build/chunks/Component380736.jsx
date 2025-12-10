@@ -2,14 +2,14 @@
 /** chunk id: 380736, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => A,
+  Y: () => C,
   Z: () => D
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
@@ -82,7 +82,7 @@ function I(e, t) {
 function T(e) {
   e.currentTarget.scrollTo(0, 0)
 }
-let A = Chunk473749.memo(function(e) {
+let C = Chunk473749.memo(function(e) {
   let {
     maxBodyLines: t,
     expand: n = false,
@@ -96,8 +96,8 @@ let A = Chunk473749.memo(function(e) {
     confirmText: v,
     icon: S,
     body: I,
-    title: A,
-    renderFooter: C,
+    title: C,
+    renderFooter: A,
     contentOpacity: N,
     status: P,
     containerRef: R,
@@ -177,7 +177,7 @@ let A = Chunk473749.memo(function(e) {
   }
 
   function W() {
-    let e = null == C ? true : C(j, M);
+    let e = null == A ? true : A(j, M);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
         className: E.iconAndDetails,
@@ -187,12 +187,12 @@ let A = Chunk473749.memo(function(e) {
         children: [Y(), (0, r.jsxs)("div", {
           className: E.details,
           children: [(0, r.jsx)(c.Text, {
-            color: "interactive-normal",
+            color: "interactive-text-default",
             variant: "text-sm/semibold",
             lineClamp: 2,
-            children: A
+            children: C
           }), null != I ? (0, r.jsx)(c.Text, {
-            color: "interactive-normal",
+            color: "interactive-text-default",
             variant: "text-sm/normal",
             lineClamp: null != t ? t * (j ? 2 : 1) : true,
             children: I
@@ -225,7 +225,7 @@ let A = Chunk473749.memo(function(e) {
   })
 });
 
-function C(e) {
+function A(e) {
   let {
     springs: {
       opacity: t,
@@ -335,7 +335,7 @@ function D(e) {
     ref: Y,
     springs: W
   } = (0, m.X4)(t.id, s, l);
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(A, {
     transitionState: s,
     springs: W,
     scaleOverride: null == I ? true : I.scale,
@@ -344,7 +344,7 @@ function D(e) {
     animationWrapperClassName: E,
     children: (0, r.jsx)(N, {
       observe: H,
-      children: (0, r.jsx)(A, v(y({}, F), {
+      children: (0, r.jsx)(C, v(y({}, F), {
         title: "function" == typeof F.title ? F.title(O) : F.title,
         containerRef: Y,
         notificationId: t.id,

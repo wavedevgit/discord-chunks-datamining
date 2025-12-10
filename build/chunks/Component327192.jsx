@@ -93,10 +93,10 @@ let z = e => {
       isJoining: o,
       joinErrorMessage: s,
       showJoinErrorMessage: c
-    } = (0, l.cj)([C.Z], () => ({
-      isJoining: C.Z.isJoining(a.id),
-      joinErrorMessage: "" === C.Z.joinErrorMessage(a.id) ? F.intl.string(F.t.j2d6Km) : C.Z.joinErrorMessage(a.id),
-      showJoinErrorMessage: true !== C.Z.joinErrorMessage(a.id)
+    } = (0, l.cj)([A.Z], () => ({
+      isJoining: A.Z.isJoining(a.id),
+      joinErrorMessage: "" === A.Z.joinErrorMessage(a.id) ? F.intl.string(F.t.j2d6Km) : A.Z.joinErrorMessage(a.id),
+      showJoinErrorMessage: true !== A.Z.joinErrorMessage(a.id)
     }), [a.id]);
 
   function u() {
@@ -146,9 +146,9 @@ function q(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [c, _] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [E, I] = i.useState(n.metadataVisibility), [T, C] = i.useState(n.showActivity), [N, P] = i.useState(null), [R, w] = i.useState(null), [M, B] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), Q = b.Z.get(q);
+  } = e, [c, _] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [E, I] = i.useState(n.metadataVisibility), [T, A] = i.useState(n.showActivity), [N, P] = i.useState(null), [R, w] = i.useState(null), [M, B] = i.useState(false), [H, W] = i.useState([]), q = (0, y.rR)(n.type), Q = b.Z.get(q);
   i.useEffect(() => {
-    _(n.friendSync), g(n.visibility), I(n.metadataVisibility), C(n.showActivity)
+    _(n.friendSync), g(n.visibility), I(n.metadataVisibility), A(n.showActivity)
   }, [n]);
   let X = {
       inProgressVisibility: N,
@@ -164,7 +164,7 @@ function q(e) {
       s = null;
     return n.type === G.ABu.TWITTER && o && (s = (0, r.jsx)(d.u, {
       text: F.intl.string(F.t.Jebrww),
-      children: (0, r.jsx)(A.Z, {
+      children: (0, r.jsx)(C.Z, {
         color: u.Z.unsafe_rawColors.TWITTER.css,
         children: (0, r.jsx)(p.kmB, {
           size: "xs",
@@ -404,7 +404,7 @@ function q(e) {
   }
 
   function eu(e) {
-    C(e), m.Z.setShowActivity(n.type, n.id, e)
+    A(e), m.Z.setShowActivity(n.type, n.id, e)
   }
   i.useEffect(() => {
     J.current = X

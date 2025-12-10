@@ -192,7 +192,7 @@ function ee(e) {
 
 function et(e, t, n) {
   var r;
-  let i = null != (r = A.ZP.getNickname(n, null, t)) ? r : C.ZP.getUserTag(t),
+  let i = null != (r = C.ZP.getNickname(n, null, t)) ? r : A.ZP.getUserTag(t),
     a = l()(e.ts),
     o = "".concat(i, " ").concat(a.fromNow());
   try {
@@ -314,13 +314,13 @@ function ea(e) {
       onMouseEnter: S,
       onMouseLeave: T
     }
-  } = (0, M.m)(true), A = (0, c.JA)(null != n ? n : ""), {
-    onFocus: C
-  } = A, P = z(A, ["onFocus"]), {
+  } = (0, M.m)(true), C = (0, c.JA)(null != n ? n : ""), {
+    onFocus: A
+  } = C, P = z(C, ["onFocus"]), {
     isFocused: R,
     handleFocus: x,
     handleBlur: j
-  } = (0, L.bb)(C), U = (0, u.e7)([m.Z], () => m.Z.keyboardModeEnabled), H = (0, u.e7)([I.Z], () => I.Z.can(G.Plq.MANAGE_MESSAGES, l), [l]), {
+  } = (0, L.bb)(A), U = (0, u.e7)([m.Z], () => m.Z.keyboardModeEnabled), H = (0, u.e7)([I.Z], () => I.Z.can(G.Plq.MANAGE_MESSAGES, l), [l]), {
     ruleName: W,
     embedChannel: q,
     decisionId: X,

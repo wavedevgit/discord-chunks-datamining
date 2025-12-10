@@ -55,7 +55,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (t && !S.has(e.channel_id)) returnfalse;
   let n = (0, d.Fp)(e) ? (0, d.Q_)((null == e ? true : e.embeds) != null ? null == e ? true : e.embeds[0].url : true) : (0, d.Q_)(e.content);
@@ -66,7 +66,7 @@ function A(e) {
   }), false)
 }
 
-function C() {
+function A() {
   return S.clear(), false
 }
 
@@ -188,7 +188,7 @@ function B(e) {
   let {
     message: t
   } = e;
-  return A(t, true)
+  return C(t, true)
 }
 
 function F(e) {
@@ -196,14 +196,14 @@ function F(e) {
     channelId: t,
     messages: n
   } = e;
-  S.add(t), n.forEach(e => A(e, true))
+  S.add(t), n.forEach(e => C(e, true))
 }
 
 function V(e) {
   let {
     messages: t
   } = e;
-  t.forEach(e => A(e))
+  t.forEach(e => C(e))
 }
 
 function H(e) {
@@ -214,7 +214,7 @@ function H(e) {
     let {
       message: t
     } = e;
-    return A(t)
+    return C(t)
   })
 }
 
@@ -227,7 +227,7 @@ function Y(e) {
       messages: t
     } = e;
     t.forEach(e => {
-      e.forEach(e => A(e))
+      e.forEach(e => C(e))
     })
   })
 }
@@ -237,7 +237,7 @@ function W(e) {
     firstMessages: t
   } = e;
   if (null == t) returnfalse;
-  null == t || t.forEach(e => A(e))
+  null == t || t.forEach(e => C(e))
 }
 
 function K(e) {
@@ -248,7 +248,7 @@ function K(e) {
     let {
       first_message: t
     } = e;
-    return null != t && A(t)
+    return null != t && C(t)
   })
 }
 class z extends(r = Chunk442837.ZP.Store) {
@@ -289,7 +289,7 @@ class z extends(r = Chunk442837.ZP.Store) {
 }
 p(z, "displayName", "GiftCodeStore");
 let q = new z(Chunk570140.Z, {
-    CONNECTION_OPEN: C,
+    CONNECTION_OPEN: A,
     CHANNEL_SELECT: N,
     GIFT_CODE_RESOLVE: P,
     GIFT_CODE_RESOLVE_SUCCESS: R,

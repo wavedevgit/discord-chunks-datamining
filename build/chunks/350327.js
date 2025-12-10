@@ -2,7 +2,7 @@
 /** chunk id: 350327, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CM: () => A,
+  CM: () => C,
   Cf: () => I,
   ID: () => T,
   Ls: () => y,
@@ -17,7 +17,7 @@ require.d(exports, {
   rf: () => D,
   uV: () => j,
   x3: () => x,
-  z5: () => C
+  z5: () => A
 });
 var Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -142,14 +142,14 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR",
     color: e
   })
 }
 
-function C(e) {
+function A(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_THEME_COLORS",
     themeColors: e

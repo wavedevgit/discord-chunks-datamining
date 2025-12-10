@@ -89,11 +89,11 @@ let v = Chunk473749.memo(function(e) {
       isLurking: S,
       isGuest: I,
       isPendingMember: T,
-      type: A,
-      emojiSize: C
+      type: C,
+      emojiSize: A
     } = e,
-    N = A === f.O.BURST,
-    P = (0, p.y4)(E, b, A),
+    N = C === f.O.BURST,
+    P = (0, p.y4)(E, b, C),
     R = (0, d.v)(N && null != O ? O : []),
     D = i ? m : _,
     w = N ? y : g,
@@ -125,7 +125,7 @@ let v = Chunk473749.memo(function(e) {
       }),
       emojiId: s.id,
       emojiName: s.name,
-      size: C,
+      size: A,
       animated: N && s.animated
     }), (0, r.jsx)("div", {
       className: D.reactionCount,

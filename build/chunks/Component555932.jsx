@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./583741.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -84,8 +84,8 @@ function O(e) {
     totalAvailableBoostsCount: I
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
     progressBarFillWidthFactor: T,
-    isProgressBarAnimationComplete: A,
-    setShouldFireConfetti: C,
+    isProgressBarAnimationComplete: C,
+    setShouldFireConfetti: A,
     shouldFireConfetti: N,
     tierMarkerAnimationPosition: P
   } = y({
@@ -130,9 +130,9 @@ function O(e) {
     }), b.map(e => (0, r.jsx)(d.Z, {
       confettiTriggerRef: O,
       guild: t,
-      isProgressBarAnimationComplete: A,
+      isProgressBarAnimationComplete: C,
       setConfettiCount: E,
-      setShouldFireConfetti: C,
+      setShouldFireConfetti: A,
       tier: e,
       tierMarkerAnimationPosition: P,
       totalAvailableBoostsCount: I,

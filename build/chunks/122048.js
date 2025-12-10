@@ -1,5 +1,5 @@
 /** Chunk was on 28538 **/
-/** chunk id: 122048, original params: n,t,i (module,exports,require) **/
+/** chunk id: 122048, original params: n,t,e (module,exports,require) **/
 module.exports = {
   connectionsContainer: "connectionsContainer__750de",
   accountBtn: "accountBtn__750de",

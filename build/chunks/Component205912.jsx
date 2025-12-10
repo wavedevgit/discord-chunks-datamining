@@ -87,12 +87,12 @@ function I(e) {
     granularity: S = "day",
     hourCycle: I,
     hideTimeZone: T = false
-  } = e, A = v(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]);
+  } = e, C = v(e, ["value", "onChange", "minValue", "maxValue", "placeholderValue", "granularity", "hourCycle", "hideTimeZone"]);
   let {
-    i18n: C
+    i18n: A
   } = (0, h.ZF)(), {
     fieldProps: N
-  } = (0, p.X)(A), {
+  } = (0, p.X)(C), {
     disabled: P,
     errorMessage: R,
     required: D = false
@@ -163,7 +163,7 @@ function I(e) {
           }), (0, r.jsx)(c.z, {
             className: g.calendarButton,
             onClick: () => M(!j),
-            "aria-label": C.DATE_INPUT_OPEN_CALENDAR_LABEL,
+            "aria-label": A.DATE_INPUT_OPEN_CALENDAR_LABEL,
             children: (0, r.jsx)(_.Que, {
               size: "sm",
               color: "currentColor"

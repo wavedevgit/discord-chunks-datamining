@@ -25,7 +25,7 @@ var t = "\ud800-\udfff",
   S = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
   I = y + b + O,
   T = "(?:" + [c, f, p].join("|") + ")" + I,
-  A = RegExp([_ + "?" + u + "+" + g + "(?=" + [s, _, "$"].join("|") + ")", h + "+" + E + "(?=" + [s, _ + m, "$"].join("|") + ")", _ + "?" + m + "+" + g, _ + "+" + E, S, v, l, T].join("|"), "g");
+  C = RegExp([_ + "?" + u + "+" + g + "(?=" + [s, _, "$"].join("|") + ")", h + "+" + E + "(?=" + [s, _ + m, "$"].join("|") + ")", _ + "?" + m + "+" + g, _ + "+" + E, S, v, l, T].join("|"), "g");
 module.exports = function(e) {
-  return e.match(A) || []
+  return e.match(C) || []
 }

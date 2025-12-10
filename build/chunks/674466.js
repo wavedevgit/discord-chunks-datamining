@@ -104,7 +104,7 @@ class y {
     return null == e || (f.bytes = e.bytesReceived, f.framesCodec = e.framesDecoded, f.framesCodecError = null != (n = e.framesDecodeErrors) ? n : null, f.framesNetwork = e.framesReceived, f.packets = e.packetsReceived, f.packetsLost = e.packetsLost, f.framesDropped = e.framesDropped, f.resolution = null != e.resolution ? e.resolution.height : 0, f.minorResolution = null != e.resolution ? Math.min(e.resolution.height, e.resolution.width) : 0, f.majorResolution = null != e.resolution ? Math.max(e.resolution.height, e.resolution.width) : 0, f.timestamp = t, f.nackCount = e.nackCount, f.pliCount = e.pliCount, f.decoder = E(e.decoderImplementationName), f.codecType = b(e.codec.name), f.qpSum = 0, f.freezeCount = e.freezeCount, f.pauseCount = e.pauseCount, f.totalFreezesDuration = e.totalFreezesDuration, f.totalPausesDuration = e.totalPausesDuration, f.totalFramesDuration = e.totalFramesDuration, f.keyframes = null != (r = e.keyFramesDecoded) ? r : null, f.passthroughCount = null != (i = e.passthroughCount) ? i : 0, f.cryptorSuccessCount = null != (a = e.decryptSuccessCount) ? a : 0, f.cryptorFailureCount = null != (o = e.decryptFailureCount) ? o : 0, f.cryptorDuration = null != (s = e.decryptDuration) ? s : 0, f.cryptorAttempts = null != (l = e.decryptAttempts) ? l : 0, f.cryptorMissingKeyCount = null != (c = e.decryptMissingKeyCount) ? c : 0, f.cryptorInvalidNonceCount = null != (u = e.decryptInvalidNonceCount) ? u : 0, f.localWant = null != (d = e.sinkWantLocalAsInt) ? d : 0), f
   }
   static parseOutboundStats(e, t) {
-    var n, r, i, a, o, s, l, c, u, d, f, p, _, m, h, E, O, v, S, I, T, A, C, N, P;
+    var n, r, i, a, o, s, l, c, u, d, f, p, _, m, h, E, O, v, S, I, T, C, A, N, P;
     let R = new y;
     return null == e ? R : {
       bytes: e.bytesSent,
@@ -145,8 +145,8 @@ class y {
       passthroughCount: null != (S = e.passthroughCount) ? S : 0,
       cryptorSuccessCount: null != (I = e.encryptSuccessCount) ? I : 0,
       cryptorFailureCount: null != (T = e.encryptFailureCount) ? T : 0,
-      cryptorDuration: null != (A = e.encryptDuration) ? A : 0,
-      cryptorAttempts: null != (C = e.encryptAttempts) ? C : 0,
+      cryptorDuration: null != (C = e.encryptDuration) ? C : 0,
+      cryptorAttempts: null != (A = e.encryptAttempts) ? A : 0,
       cryptorMaxAttempts: null != (N = e.encryptMaxAttempts) ? N : 0,
       cryptorMissingKeyCount: null != (P = e.encryptMissingKeyCount) ? P : 0,
       cryptorInvalidNonceCount: 0,

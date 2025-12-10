@@ -186,13 +186,13 @@ function J(e) {
     setCustomGiftMessage: eh,
     claimableRewards: eg,
     setSelectedGiftingPromotionReward: eE
-  } = (0, _.wD)(), eb = (0, C.cF)(ec, ef && (0, y.pO)(ep), eg), ey = (0, g.ao)({
+  } = (0, _.wD)(), eb = (0, A.cF)(ec, ef && (0, y.pO)(ep), eg), ey = (0, g.ao)({
     location: "PremiumPlanSelectStep",
     giftRecipient: ep,
     isGift: ef
   });
   M = null != M ? M : el, b = null != b ? b : eo, o()(true !== b, "should not be undefined");
-  let [eO, ev] = (0, s.Wu)([E.Z], () => [null != b ? E.Z.get(b.planId) : null, null != k ? E.Z.get(k) : null]), eS = (0, R.N)(ee), eI = null == eS ? true : eS.subscription_trial, eT = (0, P.N)(), eA = (0, A.Vi)(), eC = null == eT || null == (t = eT.discount) ? true : t.plan_ids, eN = null != ev ? ev : ec, eP = i.useCallback(e => {
+  let [eO, ev] = (0, s.Wu)([E.Z], () => [null != b ? E.Z.get(b.planId) : null, null != k ? E.Z.get(k) : null]), eS = (0, R.N)(ee), eI = null == eS ? true : eS.subscription_trial, eT = (0, P.N)(), eC = (0, C.Vi)(), eA = null == eT || null == (t = eT.discount) ? true : t.plan_ids, eN = null != ev ? ev : ec, eP = i.useCallback(e => {
     null != Y ? Y(e) : es(e)
   }, [Y, es]), eR = null != Q ? Q : eu;
   o()(null != eR, "Price option has to be set");
@@ -202,7 +202,7 @@ function J(e) {
       excludeReverseTrialFromCountdown: true
     }),
     ew = null != eS && Z.nG[eS.trial_id].skus.includes(M),
-    ex = null != eT && J.some(e => null == eC ? true : eC.includes(e)) && null != eT.discount,
+    ex = null != eT && J.some(e => null == eA ? true : eA.includes(e)) && null != eT.discount,
     eL = (0, v.aS)(Z.Xh.PREMIUM_MONTH_TIER_2, false, ef, eR);
   i.useEffect(() => {
     $ && T.ZP.trackExposure({
@@ -358,7 +358,7 @@ function J(e) {
     children: [eX && (0, r.jsx)(x.n, {
       fractionalPremiumInfo: eD,
       enablePremiumBrandRefresh: ed
-    }), null != eO && !eX && !eA && (0, r.jsx)("div", {
+    }), null != eO && !eX && !eC && (0, r.jsx)("div", {
       className: H.bodyText,
       children: X(eO, M)
     }), eW(eS, ew, ex), ez(), eJ && null != eN && null != eG && eK(eN, eG, eN.interval), eq(), !eH && en && (0, r.jsx)(u.Z, {
@@ -427,7 +427,7 @@ function ee(e) {
   } = (0, k.H)(n, i), E = null != f && null != f.paymentSourceId || Object.keys(o).length > 0 || g && !u;
   var y = l ? V.intl.string(V.t.PDTjLN) : V.intl.string(V.t.XqMe3N),
     O = h.h8.ADD_PAYMENT_STEPS;
-  return E && (O = h.h8.REVIEW), (0, C.id)(_, i, a) && p !== h.h8.SELECT_FREE_SKU && (O = h.h8.SELECT_FREE_SKU), (0, r.jsx)(c.Button, {
+  return E && (O = h.h8.REVIEW), (0, A.id)(_, i, a) && p !== h.h8.SELECT_FREE_SKU && (O = h.h8.SELECT_FREE_SKU), (0, r.jsx)(c.Button, {
     variant: "primary",
     text: y,
     onClick: () => t(O),

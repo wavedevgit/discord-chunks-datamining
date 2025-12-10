@@ -53,7 +53,7 @@ function b(e) {
     if (null == n);
     else if (null != y[n]) return y[n];
     else if (null != v[n]) return v[n]
-  }, [y, v, n]), T = s.default.getId(), A = (0, _.aN)(S, T), C = i.useMemo(() => (0, u.rB)(S, A), [A, S]), N = (0, a.e7)([l.default], () => {
+  }, [y, v, n]), T = s.default.getId(), C = (0, _.aN)(S, T), A = i.useMemo(() => (0, u.rB)(S, C), [C, S]), N = (0, a.e7)([l.default], () => {
     let e = l.default.getCurrentUser();
     return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
   });
@@ -72,10 +72,10 @@ function b(e) {
     variant: "text-xs/normal",
     color: "text-muted",
     children: P.label
-  }) : null != A && (L = (0, r.jsxs)(o.Text, {
+  }) : null != C && (L = (0, r.jsxs)(o.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
-    children: ["Server Config: ", C]
+    children: ["Server Config: ", A]
   })), N) ? (0, r.jsxs)("div", {
     className: g.root,
     children: [(0, r.jsx)("div", {

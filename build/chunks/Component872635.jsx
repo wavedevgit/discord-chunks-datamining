@@ -155,11 +155,11 @@ let b = Chunk473749.forwardRef(function(e, t) {
       x: b + (y - b) / 2,
       y: Math.max(O, Math.min(_.y, d.y))
     }
-  }, [o, p, a]), [A, C] = i.useState(0), [N, P] = i.useState(0);
+  }, [o, p, a]), [C, A] = i.useState(0), [N, P] = i.useState(0);
   if (i.useLayoutEffect(() => {
       if (null == I || null == T || null == f.current) return;
       let e = f.current.getBoundingClientRect();
-      P(e.width / 2), C(e.height + 12)
+      P(e.width / 2), A(e.height + 12)
     }, [I, T]), null == I || null == T) return null;
   let R = null == (n = a.current) ? true : n.getSlateEditor();
   return null == R ? null : (0, r.jsx)(u.ZP, {
@@ -168,7 +168,7 @@ let b = Chunk473749.forwardRef(function(e, t) {
       ref: f,
       className: g.toolbar,
       style: {
-        top: T - A,
+        top: T - C,
         left: I - N
       },
       onMouseDown: e => {

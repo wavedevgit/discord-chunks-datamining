@@ -30,9 +30,9 @@ function h(e, t) {
     allowDevLinks: S = false,
     previewLinkTarget: I = false,
     viewingChannelId: T
-  } = t, A = a.d.useExperiment({
+  } = t, C = a.d.useExperiment({
     location: "useMessageRenderedContent"
-  }).enabled, C = (0, d.o)({
+  }).enabled, A = (0, d.o)({
     location: "useMessageRenderedContent"
   }), [N, P] = i.useState(false), R = i.useCallback(e => {
     e && P(true)
@@ -57,7 +57,7 @@ function h(e, t) {
         }
       })
     }
-    return C.enabled ? {
+    return A.enabled ? {
       content: (0, r.jsx)(i.Suspense, {
         children: (0, r.jsx)(u.v.Provider, {
           value: {
@@ -85,7 +85,7 @@ function h(e, t) {
       allowDevLinks: S,
       previewLinkTarget: I,
       viewingChannelId: T,
-      allowGameMentions: A
+      allowGameMentions: C
     })
-  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, g, E, b, y, O, v, I, S, T, C.enabled, A, N])
+  }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, h, g, E, b, y, O, v, I, S, T, A.enabled, C, N])
 }

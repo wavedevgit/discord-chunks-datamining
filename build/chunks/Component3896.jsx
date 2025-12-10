@@ -73,7 +73,7 @@ function m(e) {
         className: g.__invalid_pillRow,
         children: (0, r.jsxs)(s.Text, {
           variant: "text-xs/medium",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           className: g.valuePill,
           children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(s.AtH, {
             size: "custom",

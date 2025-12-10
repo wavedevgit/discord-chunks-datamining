@@ -35,11 +35,11 @@ let h = {},
   I = new Set,
   T = {};
 
-function A() {
+function C() {
   h = {}, E = {}, b = {}, y = false, O = false, v = false, S = new Set, I = new Set
 }
 
-function C(e) {
+function A(e) {
   h[e.id] = c.Z.createFromServer(e), null == E[e.sku_id] && (E[e.sku_id] = new Set), null == b[e.application_id] && (b[e.application_id] = new Set), null != e.subscription_id && (null == T[e.subscription_id] && (T[e.subscription_id] = new Set), T[e.subscription_id].add(e.id)), b[e.application_id].add(e.id), E[e.sku_id].add(e.id)
 }
 
@@ -70,7 +70,7 @@ function D(e) {
     applicationId: t,
     entitlements: n
   } = e;
-  for (let e of (S.delete(t), I.add(t), n)) true !== e.consumed && C(e)
+  for (let e of (S.delete(t), I.add(t), n)) true !== e.consumed && A(e)
 }
 
 function w(e) {
@@ -91,7 +91,7 @@ function j(e) {
     entitlements: t,
     excludeEnded: n
   } = e;
-  for (let e of (O = true, y = false, v = !n, t)) C(e)
+  for (let e of (O = true, y = false, v = !n, t)) A(e)
 }
 
 function M() {
@@ -102,7 +102,7 @@ function k(e) {
   let {
     entitlements: t
   } = e;
-  for (let e of t) C(e)
+  for (let e of t) A(e)
 }
 
 function U(e) {
@@ -111,11 +111,11 @@ function U(e) {
   } = e;
   for (let e of t)
     if (null != e.entitlements)
-      for (let t of e.entitlements) C(t)
+      for (let t of e.entitlements) A(t)
 }
 
 function G(e) {
-  return C(e.entitlement)
+  return A(e.entitlement)
 }
 
 function Z(e) {
@@ -240,7 +240,7 @@ let F = new B(Chunk570140.Z, {
   ENTITLEMENT_CREATE: G,
   ENTITLEMENT_UPDATE: G,
   ENTITLEMENT_DELETE: Z,
-  LOGOUT: A,
+  LOGOUT: C,
   ENTITLEMENTS_FETCH_FOR_USER_START: L,
   ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: j,
   ENTITLEMENTS_FETCH_FOR_USER_FAIL: M

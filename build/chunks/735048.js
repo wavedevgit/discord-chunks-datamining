@@ -44,7 +44,7 @@ let v = (0, Chunk473749.createContext)(null),
       ...e,
       label: m,
       validationBehavior: f
-    }, p), A = (0, i.aX)({
+    }, p), C = (0, i.aX)({
       ...e,
       values: {
         isDisabled: p.isDisabled,
@@ -54,11 +54,11 @@ let v = (0, Chunk473749.createContext)(null),
         state: p
       },
       defaultClassName: "react-aria-CheckboxGroup"
-    }), C = (0, E.z)(e, {
+    }), A = (0, E.z)(e, {
       global: true
     });
     return O.createElement("div", {
-      ...(0, u.d)(C, A, g),
+      ...(0, u.d)(A, C, g),
       ref: t,
       slot: e.slot || true,
       "data-readonly": p.isReadOnly || true,
@@ -81,7 +81,7 @@ let v = (0, Chunk473749.createContext)(null),
         }],
         [a.E, T]
       ]
-    }, A.children))
+    }, C.children))
   }),
   T = (0, Chunk473749.forwardRef)(function(e, t) {
     var n, a;
@@ -94,8 +94,8 @@ let v = (0, Chunk473749.createContext)(null),
       validationBehavior: c
     } = (0, i.jn)(o.q) || {}, h = null != (a = null != (n = e.validationBehavior) ? n : c) ? a : "native", v = (0, O.useContext)(S), I = (0, b.B)((0, O.useMemo)(() => (0, y.l)(s, true !== e.inputRef ? e.inputRef : null), [s, e.inputRef])), {
       labelProps: T,
-      inputProps: A,
-      isSelected: C,
+      inputProps: C,
+      isSelected: A,
       isDisabled: N,
       isReadOnly: P,
       isPressed: R,
@@ -122,7 +122,7 @@ let v = (0, Chunk473749.createContext)(null),
       ...e,
       defaultClassName: "react-aria-Checkbox",
       values: {
-        isSelected: C,
+        isSelected: A,
         isIndeterminate: e.isIndeterminate || false,
         isPressed: R,
         isHovered: k,
@@ -140,7 +140,7 @@ let v = (0, Chunk473749.createContext)(null),
       ...(0, u.d)(G, T, M, U),
       ref: t,
       slot: e.slot || true,
-      "data-selected": C || true,
+      "data-selected": A || true,
       "data-indeterminate": e.isIndeterminate || true,
       "data-pressed": R || true,
       "data-hovered": k || true,
@@ -153,7 +153,7 @@ let v = (0, Chunk473749.createContext)(null),
     }, O.createElement(m.T, {
       elementType: "span"
     }, O.createElement("input", {
-      ...(0, u.d)(A, L),
+      ...(0, u.d)(C, L),
       ref: I
     })), U.children)
   })

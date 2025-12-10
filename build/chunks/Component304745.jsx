@@ -43,21 +43,21 @@ function P(e) {
     surface: c.eR.VOICE_LAUNCHER
   }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, V = r.useCallback(e => {
     "focus" !== e.type && R()
-  }, [R]), B = (0, _.bp)() === E.IlC.POPOUT, {
-    parentAnalyticsLocation: F,
+  }, [R]), F = (0, _.bp)() === E.IlC.POPOUT, {
+    parentAnalyticsLocation: B,
     newestAnalyticsLocation: H
   } = (0, g.ZP)(), G = r.useCallback(() => {
-    (0, C.v)(F, C.d.ACTIVITY), (0, b.Z)({
+    (0, C.v)(B, C.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
       } : {
         type: "contextless"
       },
-      openInPopout: B,
+      openInPopout: F,
       analyticsLocation: H
     })
-  }, [t, B, H, F]), W = [];
+  }, [t, F, H, B]), W = [];
   A || W.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && W.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || W.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = r.useRef(false),
     q = r.useRef(null);

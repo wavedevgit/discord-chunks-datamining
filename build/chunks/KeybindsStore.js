@@ -31,7 +31,7 @@ var i, Chunk348327 = require("./348327.js"),
   Chunk295907 = require("./295907.js"),
   Chunk444675 = require("./444675.js");
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,7 +47,7 @@ function N(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
@@ -264,7 +264,7 @@ function eo(e) {
       let n = F[e];
       if (null != n) {
         let e = Y[n.action];
-        (null == e ? true : e.isPressed) === true && A.nextTick(() => J(false, e, n))
+        (null == e ? true : e.isPressed) === true && C.nextTick(() => J(false, e, n))
       }
       t.reset(), B[e] = null
     }
@@ -483,7 +483,7 @@ class ey extends(i = Chunk442837.ZP.DeviceSettingsStore) {
     return this.getKeybindForAction(Chunk981631.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, true)
   }
 }
-C(ey, "displayName", "KeybindsStore"), C(ey, "persistKey", "keybinds"), C(ey, "migrations", [function() {
+A(ey, "displayName", "KeybindsStore"), A(ey, "persistKey", "keybinds"), A(ey, "migrations", [function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       v: t,

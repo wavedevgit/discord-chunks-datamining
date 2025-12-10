@@ -164,7 +164,7 @@ function G(e) {
     hotspotLocation: y
   } = e, v = (0, d.O)(), {
     analyticsLocations: S
-  } = (0, _.ZP)(p.Z.VIDEO_BACKGROUND_IMAGE_OPTION), T = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), A = b ? (0, r.jsx)(m.Z, {
+  } = (0, _.ZP)(p.Z.VIDEO_BACKGROUND_IMAGE_OPTION), T = (0, s.e7)([g.Z], () => null != y && g.Z.hasHotspot(y)), C = b ? (0, r.jsx)(m.Z, {
     className: P.backgroundImageOption,
     src: i,
     loop: true,
@@ -178,7 +178,7 @@ function G(e) {
 
   function R() {
     null != y && T && (h.Kw(y), E.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: C.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
+      type: A.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
       location: v.location,
       location_stack: S
     }))
@@ -203,7 +203,7 @@ function G(e) {
       onFocus: R,
       onMouseEnter: R,
       className: P.backgroundOptionInner,
-      children: A
+      children: C
     }), b || f ? (0, r.jsx)("div", {
       className: P.playIcon,
       children: (0, r.jsx)(c.o1U, {
@@ -285,7 +285,7 @@ function F(e) {
   } = (0, _.ZP)(p.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, f.ZP)(() => {
     E.default.track(I.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: C.cd.VIDEO_BACKGROUNDS_INLINE,
+      type: A.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i
     })
@@ -318,7 +318,7 @@ function V(e) {
           } = e;
           return t(n, r, i)
         },
-        uploadType: A.pC.VIDEO_BACKGROUND,
+        uploadType: C.pC.VIDEO_BACKGROUND,
         filters: s,
         modalTitle: N.intl.string(N.t.yG2pUi),
         imageSpecifications: N.intl.string(N.t["72OaxN"]),

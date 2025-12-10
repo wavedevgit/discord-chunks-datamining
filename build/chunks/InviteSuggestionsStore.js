@@ -31,9 +31,9 @@ function b(e) {
     i = null;
   null == s || o === y.Iq.EMBEDDED_APPLICATION || n || (i = s.id);
   let l = (0, I.rh)(E, i);
-  for (let e of (null == l || x.Z.isBlockedOrIgnored(l.id) || t.add(l.id), p.Z.getUserAffinities())) t.add(e.otherUserId);
+  for (let e of (null == l || S.Z.isBlockedOrIgnored(l.id) || t.add(l.id), p.Z.getUserAffinities())) t.add(e.otherUserId);
   let a = new Set;
-  return o === y.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => m.Z.getChannel(e)).filter(v.lm).filter(e => e.type === f.d4z.GUILD_TEXT).filter(e => S.Z.can(f.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => a.add(e.id)), (0, I.an)({
+  return o === y.Iq.EMBEDDED_APPLICATION && h.Z.getChannelHistory().map(e => m.Z.getChannel(e)).filter(v.lm).filter(e => e.type === f.d4z.GUILD_TEXT).filter(e => x.Z.can(f.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => a.add(e.id)), (0, I.an)({
     query: e,
     omitUserIds: E,
     suggestedUserIds: t,
@@ -90,7 +90,7 @@ let P = new A(Chunk570140.Z, {
       applicationId: d,
       inviteTargetType: c
     } = e;
-    s = null != u ? n : null, r = u, a = d, o = c, E = new Set([...t, ...x.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
+    s = null != u ? n : null, r = u, a = d, o = c, E = new Set([...t, ...S.Z.getBlockedOrIgnoredIDs(), ...(0, I.Sz)({
       channel: r,
       applicationId: a,
       inviteTargetType: c

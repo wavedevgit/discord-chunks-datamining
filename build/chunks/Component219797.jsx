@@ -7,8 +7,8 @@ require.d(exports, {
   d4: () => P,
   dS: () => T,
   jY: () => N,
-  q7: () => C,
-  vZ: () => A
+  q7: () => A,
+  vZ: () => C
 }), require("./953529.js"), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -97,7 +97,7 @@ function T(e) {
   }))
 }
 
-function A(e) {
+function C(e) {
   var t;
   let n = e.item.originalItem,
     o = i.useCallback(() => {
@@ -140,7 +140,7 @@ function A(e) {
   })))
 }
 
-function C(e) {
+function A(e) {
   let t = e.item.originalItem;
   return (0, g.hX)(I(v({}, e), {
     fileSize: t.size,

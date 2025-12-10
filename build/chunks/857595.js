@@ -8,7 +8,7 @@ require.d(exports, {
   Qj: () => p,
   TX: () => S,
   Uv: () => P,
-  X2: () => C,
+  X2: () => A,
   ZZ: () => d,
   Zt: () => y,
   cq: () => f,
@@ -22,7 +22,7 @@ require.d(exports, {
   qz: () => O,
   r_: () => g,
   rf: () => _,
-  u1: () => A,
+  u1: () => C,
   vW: () => R
 });
 var Chunk570140 = require("./570140.js"),
@@ -161,7 +161,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_ROLE_STYLE",
     roleStyle: e
@@ -170,7 +170,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_DISPLAY_NAME_STYLES_ENABLED",
     enabled: e

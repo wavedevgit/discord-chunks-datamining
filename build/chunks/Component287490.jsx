@@ -61,7 +61,7 @@ function I() {
       onChange: Chunk492435,
       onClear: () => Chunk492435("")
     }), Chunk389494.length > 0 ? Chunk389494.map(e => {
-      let t = "guild" === e.experiment.kind ? A : T;
+      let t = "guild" === e.experiment.kind ? C : T;
       return (0, r.jsx)(t, {
         experiment: e.experiment,
         experimentId: e.id,
@@ -86,7 +86,7 @@ function T(e) {
     defaultOpen: p
   } = e, [m, g] = i.useState(p), [b, v] = i.useState(false), S = i.useCallback(() => {
     g(e => !e)
-  }, []), I = (0, s.e7)([h.default], () => h.default.getId()), T = (0, _.qD)(t, I), A = (0, _.aN)(t, I), C = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.USER, n), e => {
+  }, []), I = (0, s.e7)([h.default], () => h.default.getId()), T = (0, _.qD)(t, I), C = (0, _.aN)(t, I), A = (0, s.Wu)([f.Z], () => o().sortBy(f.Z.getRecentExposures(y.xY.USER, n), e => {
     let [t, n] = e;
     return -n
   }).map(e => {
@@ -145,7 +145,7 @@ function T(e) {
       })
     }), (0, r.jsx)("div", {
       className: O.description,
-      children: null == A ? (0, r.jsx)(l.Text, {
+      children: null == C ? (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -158,7 +158,7 @@ function T(e) {
       }), (0, r.jsx)(l.Text, {
         variant: "code",
         className: O.pre,
-        children: null == A ? "None" : JSON.stringify(A, true, 2)
+        children: null == C ? "None" : JSON.stringify(C, true, 2)
       }), (0, r.jsx)(l.Text, {
         variant: "text-lg/medium",
         className: O.debugTitle,
@@ -174,7 +174,7 @@ function T(e) {
       }), (0, r.jsx)(l.Text, {
         variant: "code",
         className: O.pre,
-        children: 0 === C.length ? "None" : C.join("\n")
+        children: 0 === A.length ? "None" : A.join("\n")
       })]
     }) : (0, r.jsx)("div", {
       className: O.debugTitle,
@@ -189,7 +189,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   let {
     experiment: t,
     experimentId: n,

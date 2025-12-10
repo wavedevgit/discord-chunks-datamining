@@ -32,7 +32,7 @@ function g(e) {
       asset: r.q8_,
       riveProps: {
         dataBinding: {
-          fill: r.TVs.colors.ICON_PRIMARY
+          fill: r.TVs.colors.ICON_STRONG
         }
       }
     },
@@ -59,7 +59,7 @@ function g(e) {
         text: m.intl.string(m.t["5AFxuK"]),
         children: (0, l.jsx)(r.SrA, {
           size: "md",
-          color: r.TVs.colors.ICON_PRIMARY
+          color: r.TVs.colors.ICON_STRONG
         })
       }), (0, l.jsx)(r.Text, {
         variant: "text-md/medium",

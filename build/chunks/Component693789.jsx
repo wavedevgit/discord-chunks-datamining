@@ -142,8 +142,8 @@ function v(e) {
     style: S,
     wrapperClassName: I,
     className: T,
-    innerClassName: A,
-    onClick: C,
+    innerClassName: C,
+    onClick: A,
     onDoubleClick: N,
     onMouseDown: P,
     onMouseUp: R,
@@ -172,7 +172,7 @@ function v(e) {
       "aria-label": U,
       "aria-busy": !!h || true,
       ref: M,
-      onClick: F ? e => e.preventDefault() : C,
+      onClick: F ? e => e.preventDefault() : A,
       onDoubleClick: F ? e => e.preventDefault() : N,
       onMouseUp: p ? true : R,
       onMouseDown: p ? true : P,
@@ -197,7 +197,7 @@ function v(e) {
         className: u.spinner,
         itemClassName: u.spinnerItem
       }) : null, (0, r.jsx)("div", {
-        className: o()(u.contents, A),
+        className: o()(u.contents, C),
         children: L
       })]
     }))

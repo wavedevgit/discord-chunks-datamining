@@ -24,8 +24,8 @@ var Chunk127849 = require("./127849.js"),
   Chunk190289 = require("./190289.js"),
   Chunk25124 = require("./25124.js"),
   Chunk199838 = require("./199838.js"),
-  A = Chunk938373.PROPER,
-  C = Chunk938373.CONFIGURABLE,
+  C = Chunk938373.PROPER,
+  A = Chunk938373.CONFIGURABLE,
   N = "ArrayBuffer",
   P = "DataView",
   R = "prototype",
@@ -91,16 +91,16 @@ var Chunk127849 = require("./127849.js"),
     for (var u = o.bytes, d = s + o.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (Chunk848120) {
-  var er = A && M.name !== N;
+  var er = C && M.name !== N;
   !Chunk621523(function() {
     M(1)
   }) || !Chunk621523(function() {
     new M(false)
   }) || Chunk621523(function() {
-    return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !C
+    return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !A
   }) ? ((k = function(e) {
     return f(this, U), v(new M(m(e)), this, k)
-  })[R] = U, U.constructor = k, Chunk190289(k, M)) : er && C && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(Z) !== B && Chunk769827(Z, B);
+  })[R] = U, U.constructor = k, Chunk190289(k, M)) : er && A && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(Z) !== B && Chunk769827(Z, B);
   var ei = new G(new k(2)),
     ea = Chunk46015(Z.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk477732(Z, {

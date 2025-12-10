@@ -2,7 +2,7 @@
 /** chunk id: 663215, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FS: () => A,
+  FS: () => C,
   ZP: () => T
 }), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var Chunk473749 = require("./473749.js"),
@@ -121,7 +121,7 @@ function I(e, t) {
 function T(e) {
   let {
     filterOutEmptyCurrentGuild: t = false
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], o = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(o, b.PremiumTypes.TIER_2), [y, T, A] = (0, i.Wu)([_.Z], () => [_.Z.getSounds(), _.Z.getFavorites(), _.Z.isFetching()]), N = (0, g.t)(), P = (0, h.h)(e, false), R = (0, i.Wu)([s.Z], () => {
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = arguments.length > 2 && true !== arguments[2] && arguments[2], o = (0, i.e7)([c.default], () => c.default.getCurrentUser()), u = d.ZP.isPremium(o, b.PremiumTypes.TIER_2), [y, T, C] = (0, i.Wu)([_.Z], () => [_.Z.getSounds(), _.Z.getFavorites(), _.Z.isFetching()]), N = (0, g.t)(), P = (0, h.h)(e, false), R = (0, i.Wu)([s.Z], () => {
     let e = [];
     return P.forEach(t => {
       let n = s.Z.getGuild(t);
@@ -138,7 +138,7 @@ function T(e) {
   } = (0, f.k)({
     location: "soundboard-useSoundGrid",
     autoTrackExposure: true
-  }), M = C(), k = (0, i.Wu)([p.Z], () => p.Z.recentlyHeardSoundIds);
+  }), M = A(), k = (0, i.Wu)([p.Z], () => p.Z.recentlyHeardSoundIds);
   return r.useMemo(() => {
     let e = 0,
       r = 0,
@@ -148,7 +148,7 @@ function T(e) {
       return I(i, y), {
         categories: i,
         availableSounds: null != (a = y.get(E.X8)) ? a : E.Hy,
-        isFetching: A,
+        isFetching: C,
         soundCounts: {
           favoriteSoundCount: 0,
           unlockedCustomSoundCount: 0,
@@ -192,17 +192,17 @@ function T(e) {
     }), {
       categories: i,
       availableSounds: Array.from(y.values()).flat(),
-      isFetching: A,
+      isFetching: C,
       soundCounts: {
         favoriteSoundCount: T.size,
         unlockedCustomSoundCount: e,
         lockedCustomSoundCount: r
       }
     }
-  }, [P, y, T, k, M, j, L, w, x, t, D, R, n, A, u, N])
+  }, [P, y, T, k, M, j, L, w, x, t, D, R, n, C, u, N])
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   return r.useMemo(() => n.length > 0 ? [{
     key: m.bg.SEARCH,
     categoryInfo: {
@@ -212,7 +212,7 @@ function A(e, t, n) {
   }] : e, [e, n.length, t])
 }
 
-function C() {
+function A() {
   return Chunk473749.useEffect(() => {
     Chunk675478.DZ.loadIfNecessary()
   }, []), (0, Chunk442837.e7)([Chunk178106.Z], () => Chunk178106.Z.frecentlyPlayedSounds)

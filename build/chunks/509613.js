@@ -9,14 +9,14 @@ require.d(exports, {
   J9: () => P,
   ON: () => D,
   Ql: () => d,
-  UO: () => C,
+  UO: () => A,
   US: () => v,
   Uc: () => S,
   ax: () => T,
   eD: () => R,
   k4: () => b,
   m7: () => m,
-  qs: () => A,
+  qs: () => C,
   so: () => p,
   vB: () => _,
   wf: () => h,
@@ -161,11 +161,11 @@ function T(e, t) {
   return I(e, r.Jq.BUTTON, t)
 }
 
-function A(e, t) {
+function C(e, t) {
   return I(e, r.Jq.TOGGLE, t)
 }
 
-function C(e, t) {
+function A(e, t) {
   return I(e, r.Jq.SLIDER, t)
 }
 

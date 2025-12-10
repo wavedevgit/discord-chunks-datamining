@@ -4,7 +4,7 @@
 require.d(exports, {
   HT: () => N,
   K5: () => y,
-  LB: () => A,
+  LB: () => C,
   MI: () => T,
   V_: () => S,
   X: () => b,
@@ -15,7 +15,7 @@ require.d(exports, {
   eI: () => I,
   es: () => v,
   iW: () => O,
-  j8: () => C,
+  j8: () => A,
   nU: () => m,
   rD: () => h
 });
@@ -223,7 +223,7 @@ let p = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, A = async (e, t, n) => {
+}, C = async (e, t, n) => {
   try {
     return (await r.tn.get({
       url: a.ANM.GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY(e, t, n),
@@ -232,7 +232,7 @@ let p = async (e, t) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, C = async function(e) {
+}, A = async function(e) {
   let {
     signal: t
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};

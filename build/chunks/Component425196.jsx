@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk379649 = require("./379649.js"),
@@ -95,8 +95,8 @@ function F(e) {
     powerLevel: u = 0,
     powerLevelPercentile: f = 0,
     cardId: _ = 0
-  } = (0, c.e7)([v.Z], () => v.Z.getCheckpointData()), m = (0, c.e7)([E.default], () => E.default.getCurrentUser()), h = (0, i.useContext)(O.Q), g = (0, I.Z)((0, d.dQu)(h.primaryColor).hex()), b = (0, y.a7)(g), A = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), C = (0, i.useRef)(null), [N, R] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= D.ij.END_REWARD ? 1 : n === D.ij.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => o().throttle(() => {
-    null != C.current && R(C.current.clientWidth)
+  } = (0, c.e7)([v.Z], () => v.Z.getCheckpointData()), m = (0, c.e7)([E.default], () => E.default.getCurrentUser()), h = (0, i.useContext)(O.Q), g = (0, I.Z)((0, d.dQu)(h.primaryColor).hex()), b = (0, y.a7)(g), C = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), A = (0, i.useRef)(null), [N, R] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= D.ij.END_REWARD ? 1 : n === D.ij.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => o().throttle(() => {
+    null != A.current && R(A.current.clientWidth)
   }, B), []), F = (0, i.useCallback)(() => n <= D.ij.END_REWARD ? "100%" : n === D.ij.END_CLAIM ? "50%" : "30%", [n]), V = (0, l.q_F)({
     onChange: k,
     to: {
@@ -142,7 +142,7 @@ function F(e) {
         })]
       })
     }), (0, r.jsx)(s.animated.div, {
-      ref: C,
+      ref: A,
       className: j.cardAnimation,
       style: H,
       children: (0, r.jsx)(l.cAm, {
@@ -162,7 +162,7 @@ function F(e) {
           PowerMeter: (0, S.QB)(f),
           Icon: G[_],
           Illustration: U[_],
-          reducedMotion: A
+          reducedMotion: C
         },
         withReducedMotion: "play"
       }, "rive")
@@ -248,8 +248,8 @@ function H(e) {
     }
   } = (0, c.e7)([v.Z], () => v.Z.getCheckpointData()), E = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), y = s.length > 0 ? s[0] : null, O = d.length > 0 ? d[0].guild : null, I = _.length > 0 ? _[0].game : null, {
     unit: T,
-    duration: A
-  } = (0, S.Bi)(a), C = (0, c.e7)([g.Z], () => g.Z.getGuild(null == O ? true : O.id)), N = null != I && null != I.icon ? b.ZP.getApplicationIconURL({
+    duration: C
+  } = (0, S.Bi)(a), A = (0, c.e7)([g.Z], () => g.Z.getGuild(null == O ? true : O.id)), N = null != I && null != I.icon ? b.ZP.getApplicationIconURL({
     id: I.id,
     icon: I.icon
   }) : null, D = (0, R.Sg)(), M = (0, i.useMemo)(() => [{
@@ -263,12 +263,12 @@ function H(e) {
   }, {
     icon: l.S6n,
     title: T === u.J6.HOURS ? x.intl.formatToPlainString(w.default.Xu0QsX, {
-      numHours: A
+      numHours: C
     }) : x.intl.string(w.default.RmVTph),
     content: (0, r.jsx)(P.Z, {
       variant: "heading-xxl/medium",
       className: L.numeric,
-      children: A
+      children: C
     })
   }, {
     icon: l.EO4,
@@ -326,8 +326,8 @@ function H(e) {
     title: x.intl.string(w.default["8XPMJj"]),
     content: (0, r.jsxs)("div", {
       className: L.title,
-      children: [null != C ? (0, r.jsx)(h.Z, {
-        guild: C,
+      children: [null != A ? (0, r.jsx)(h.Z, {
+        guild: A,
         className: j.statIcon
       }) : (0, r.jsx)(l.IMN, {
         color: t,
@@ -335,10 +335,10 @@ function H(e) {
         className: j.statIcon
       }), (0, r.jsx)(P.Z, {
         variant: "text-md/medium",
-        children: null != C ? C.name : x.intl.string(x.t.PoWNfe)
+        children: null != A ? A.name : x.intl.string(x.t.PoWNfe)
       })]
     })
-  }], [n, A, T, o, y, E, t, N, I, C]);
+  }], [n, C, T, o, y, E, t, N, I, A]);
   return (0, r.jsx)(R.Qr.Provider, {
     value: D,
     children: (0, r.jsx)("div", {
@@ -429,7 +429,7 @@ function K(e) {
     step: t,
     onNext: n
   } = e;
-  return (0, r.jsxs)(C.Z, {
+  return (0, r.jsxs)(A.Z, {
     noPadding: true,
     centered: false,
     className: j.container,

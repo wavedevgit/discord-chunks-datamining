@@ -2,7 +2,7 @@
 /** chunk id: 822245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -105,7 +105,7 @@ function T() {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), b.pendingUsages)
 }
-class A extends(r = Chunk442837.ZP.PersistedStore) {
+class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (b = e), this.waitFor(u.ZP, d.Z), this.syncWith([d.Z], T)
   }
@@ -126,8 +126,8 @@ class A extends(r = Chunk442837.ZP.PersistedStore) {
     return y.frequently
   }
 }
-_(A, "displayName", "ApplicationFrecencyStore"), _(A, "persistKey", "ApplicationFrecency");
-let C = new A(Chunk570140.Z, {
+_(C, "displayName", "ApplicationFrecencyStore"), _(C, "persistKey", "ApplicationFrecency");
+let A = new C(Chunk570140.Z, {
   APPLICATION_COMMAND_USED: v,
   EMBEDDED_ACTIVITY_OPEN: S,
   USER_SETTINGS_PROTO_UPDATE: O

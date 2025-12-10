@@ -62,8 +62,8 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = e => e.stopPropagation();
-class C extends Chunk473749.PureComponent {
+let C = e => e.stopPropagation();
+class A extends Chunk473749.PureComponent {
   componentDidMount() {
     Chunk68405.gK(), document.addEventListener("keydown", this.backToFrontPage), "" !== this.props.query && this.search(this.props.query, Chunk981631.wI2.SEARCH)
   }
@@ -172,7 +172,7 @@ class C extends Chunk473749.PureComponent {
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
       className: o()(Chunk577021.container, module),
-      onClick: A,
+      onClick: C,
       ref: exports,
       children: [(0, Chunk54381.jsx)("div", {
         className: Chunk577021.header,
@@ -238,7 +238,7 @@ let N = Chunk473749.forwardRef((e, t) => {
     resultItems: p.Z.getResultItems(),
     suggestions: p.Z.getSuggestions()
   })), u = (0, f.Iu)(e => e.searchQuery), d = null != a && "" !== a ? a : u, m = (0, _.HI)(), h = i.useRef(null);
-  return (0, r.jsx)(C, T(S({}, e), {
+  return (0, r.jsx)(A, T(S({}, e), {
     forwardedRef: t,
     query: d,
     resultQuery: o,

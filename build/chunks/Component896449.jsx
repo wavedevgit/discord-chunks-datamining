@@ -68,12 +68,12 @@ function O(e) {
     entry: O,
     onSelect: v,
     disableGameProfileLinks: S
-  } = e, I = i.useRef(null), T = i.useContext(p.Ir), A = (0, d.Z)({
+  } = e, I = i.useRef(null), T = i.useContext(p.Ir), C = (0, d.Z)({
     userId: n.id,
     guildId: h,
     channelId: null == E ? true : E.id,
     onAction: T
-  }), C = (0, l.Z)({
+  }), A = (0, l.Z)({
     id: n.id,
     label: _.intl.string(_.t["/AXYnE"])
   }), N = "application_id" in O.extra ? O.extra.application_id : null, P = (0, l.Z)({
@@ -104,7 +104,7 @@ function O(e) {
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(o.kSQ, {
-            children: [A, null != D && (0, r.jsx)(o.sNh, {
+            children: [C, null != D && (0, r.jsx)(o.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGn),
               action: e => {
@@ -112,7 +112,7 @@ function O(e) {
               }
             })]
           }), (0, r.jsxs)(o.kSQ, {
-            children: [C, P]
+            children: [A, P]
           })]
         })
       })

@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -59,12 +59,12 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = 3e3;
+let A = 3e3;
 
 function N(e) {
   if (null == e || e === b.Eu4.NONE) return "";
@@ -149,7 +149,7 @@ function R(e) {
     isLastGuildBoostSlot: _
   } = e, m = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), E = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), b = i.useMemo(() => null != E && E > new Date, [E]), y = (0, p.tl)(n), S = (0, c.Z)(), T = i.useRef(null);
 
-  function C(e) {
+  function A(e) {
     let {
       closePopout: t
     } = e;
@@ -184,10 +184,10 @@ function R(e) {
         })
       }), (0, r.jsx)(s.yRy, {
         targetElementRef: T,
-        renderPopout: C,
+        renderPopout: A,
         position: "right",
         align: "center",
-        children: e => (0, r.jsx)(s.P3F, A(I({}, e), {
+        children: e => (0, r.jsx)(s.P3F, C(I({}, e), {
           innerRef: T,
           "aria-label": O.intl.string(O.t.PdRCRg),
           className: v.boostSlotMenuIcon,
@@ -297,7 +297,7 @@ function L(e) {
     let e = false;
     return null != n && (e = setInterval(() => {
       o(e => !e)
-    }, C)), () => {
+    }, A)), () => {
       clearInterval(e)
     }
   }, [n]);

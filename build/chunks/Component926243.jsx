@@ -58,13 +58,13 @@ function T(e, t) {
   return n
 }
 
-function A(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -98,7 +98,7 @@ let P = (e, t) => "".concat(e, ":").concat(t),
       allowAnimatedEmoji: T,
       selectedItemClassName: N,
       inNitroLockedSection: P
-    } = e, R = C(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
+    } = e, R = A(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
     let D = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : true, [n]),
       w = () => {
         let e = (0, E.nY)(n);
@@ -111,7 +111,7 @@ let P = (e, t) => "".concat(e, ":").concat(t),
       },
       x = d && !P;
     return (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)("button", A(I({}, R), {
+      children: (0, r.jsx)("button", C(I({}, R), {
         className: o()(v.emojiItem, {
           [v.emojiItemLarge]: a,
           [v.emojiItemMedium]: c,
@@ -193,8 +193,8 @@ function D(e) {
       ref: l,
       tabIndex: c,
       onFocus: u
-    } = s, d = C(s, ["ref", "tabIndex", "onFocus"]);
-    return (0, i.createElement)("li", A(I({}, d), {
+    } = s, d = A(s, ["ref", "tabIndex", "onFocus"]);
+    return (0, i.createElement)("li", C(I({}, d), {
       key: a,
       ref: Y
     }), B !== P(q, f) && (0, r.jsx)(R, {

@@ -206,10 +206,10 @@ class q extends Chunk473749.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.Z)({
-        title: F.intl.string(F.t.aIz1oV),
-        subtitle: F.intl.string(F.t["13tjTU"]),
+        title: B.intl.string(B.t.aIz1oV),
+        subtitle: B.intl.string(B.t["13tjTU"]),
         variant: "primary",
-        confirmText: F.intl.string(F.t["cY+Oob"]),
+        confirmText: B.intl.string(B.t["cY+Oob"]),
         onConfirm: () => g.Z.removeGuildJoinRequest(e.id)
       })
     }), G(this, "handleViewApplicationRejection", () => {
@@ -240,15 +240,15 @@ class q extends Chunk473749.PureComponent {
           reason: P.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
-        modalKey: B.M
+        modalKey: F.M
       })
     }), G(this, "handleResendVerification", () => {
       var e;
       d.Z.verifyResend();
       let t = null == (e = R.default.getCurrentUser()) ? true : e.email;
       null != t && (0, s.Z)({
-        title: F.intl.string(F.t.LykQYk),
-        subtitle: F.intl.format(F.t.azKEPy, {
+        title: B.intl.string(B.t.LykQYk),
+        subtitle: B.intl.format(B.t.azKEPy, {
           email: t
         })
       })

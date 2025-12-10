@@ -84,11 +84,11 @@ function T(e, t, n) {
   })
 }
 
-function A(e, t, n) {
+function C(e, t, n) {
   return e.map(e => T(e, t, n))
 }
 
-function C(e) {
+function A(e) {
   let {
     guildId: t,
     prompts: n,
@@ -103,7 +103,7 @@ function C(e) {
   } = e;
   v = false;
   let d = p.ZP.getOnboardingStatus(t) === p.uX.READY,
-    _ = A(n, o, s);
+    _ = C(n, o, s);
   b[t] = {
     enabled: i,
     mode: l,
@@ -127,7 +127,7 @@ function P(e) {
   let {
     guildId: u,
     updates: d
-  } = e, f = null != (a = null != (i = d.onboardingPromptsSeen) ? i : null == (t = b[u]) ? true : t.onboardingPromptsSeen) ? a : {}, p = null != (s = null != (o = d.onboardingResponsesSeen) ? o : null == (n = b[u]) ? true : n.onboardingResponsesSeen) ? s : {}, _ = A(null != (c = null != (l = d.prompts) ? l : null == (r = b[u]) ? true : r.prompts) ? c : [], f, p);
+  } = e, f = null != (a = null != (i = d.onboardingPromptsSeen) ? i : null == (t = b[u]) ? true : t.onboardingPromptsSeen) ? a : {}, p = null != (s = null != (o = d.onboardingResponsesSeen) ? o : null == (n = b[u]) ? true : n.onboardingResponsesSeen) ? s : {}, _ = C(null != (c = null != (l = d.prompts) ? l : null == (r = b[u]) ? true : r.prompts) ? c : [], f, p);
   b[u] = E(h({}, b[u], d), {
     prompts: _
   })
@@ -167,7 +167,7 @@ function w(e) {
   D(t, n);
   let a = b[t];
   if (null == a) returnfalse;
-  let o = A(a.prompts, r, i);
+  let o = C(a.prompts, r, i);
   b[t] = E(h({}, a), {
     prompts: o,
     onboardingPrompts: o.filter(e => e.inOnboarding),
@@ -287,7 +287,7 @@ m(Z, "displayName", "GuildOnboardingPromptsStore");
 let B = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: S,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: C,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: A,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: N,
   GUILD_ONBOARDING_SELECT_OPTION: R,
   GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: w,

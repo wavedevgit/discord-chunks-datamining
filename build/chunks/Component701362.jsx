@@ -111,16 +111,16 @@ class L extends Chunk473749.PureComponent {
     } = this.props;
     return (0, r.jsxs)(l.P3F, {
       onClick: t,
-      className: C.previewContainer,
+      className: A.previewContainer,
       children: [(0, r.jsx)(I.Z, {
-        className: C.previewImage,
+        className: A.previewImage,
         stream: e
       }), a ? (0, r.jsx)("div", {
-        className: C.previewHover,
+        className: A.previewHover,
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "none",
-          className: C.white,
+          className: A.white,
           children: (0, S.Z)(e, n, i, o)
         })
       }) : null]

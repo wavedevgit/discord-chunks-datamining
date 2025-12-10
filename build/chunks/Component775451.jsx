@@ -33,7 +33,7 @@ let h = {
       className: y
     } = e, {
       balance: O
-    } = (0, c.A)(), [v, S] = i.useState(u.b.DEFAULT), [I, T] = i.useState(false), [A, C] = i.useState(false), N = i.useRef(null), P = i.useCallback(() => {
+    } = (0, c.A)(), [v, S] = i.useState(u.b.DEFAULT), [I, T] = i.useState(false), [C, A] = i.useState(false), N = i.useRef(null), P = i.useCallback(() => {
       let e = !I;
       e && null != g && (0, l.Y)({
         pageType: g,
@@ -52,8 +52,8 @@ let h = {
     }), [g, n, E, P, a]);
     return (0, r.jsxs)("div", {
       className: o()(m.container, y, {
-        [m.hidden]: A,
-        [m.visible]: !A
+        [m.hidden]: C,
+        [m.visible]: !C
       }),
       children: [(0, r.jsx)(f.y, {
         pillRef: N,
@@ -66,8 +66,8 @@ let h = {
         showNotificationBadge: t
       }), I && (0, r.jsx)("div", {
         className: o()(m.cardContainer, b, {
-          [m.hidden]: A,
-          [m.visible]: !A
+          [m.hidden]: C,
+          [m.visible]: !C
         }),
         ref: D,
         children: w

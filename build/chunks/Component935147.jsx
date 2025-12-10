@@ -126,10 +126,10 @@ function Z(e) {
     }) : L.intl.string(L.t.pj0XBN);
   return Z ? (0, r.jsx)(c.Gt, {
     value: X,
-    children: (0, r.jsxs)(C.Z, {
+    children: (0, r.jsxs)(A.Z, {
       ref: Q,
       className: j.tryItOutSection,
-      type: C.Y.PREMIUM,
+      type: A.Y.PREMIUM,
       isShown: true,
       hasBackground: true,
       children: [(0, r.jsx)(I.Z, {
@@ -184,7 +184,7 @@ function Z(e) {
             showRemoveAvatarButton: false,
             changeAvatarButtonText: L.intl.string(L.t["7z0D1c"]),
             sectionTitle: L.intl.string(L.t.vtFfPX)
-          }), (0, r.jsx)(A.Z, {
+          }), (0, r.jsx)(C.Z, {
             user: M,
             className: j.customizationSection
           }), !et && (0, r.jsx)(o.Text, {

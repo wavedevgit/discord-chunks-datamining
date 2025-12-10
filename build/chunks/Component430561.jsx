@@ -47,11 +47,11 @@ function S(e) {
 let I = 7e3;
 
 function T(e, t) {
-  return C((0, s.e7)([_.Z], () => _.Z.getWidget(e), [e]), t)
+  return A((0, s.e7)([_.Z], () => _.Z.getWidget(e), [e]), t)
 }
-let A = (e, t) => Date.now() - e < t;
+let C = (e, t) => Date.now() - e < t;
 
-function C(e, t) {
+function A(e, t) {
   let n = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
     [r, a] = i.useState(false),
     o = (0, y.Z)(),
@@ -63,7 +63,7 @@ function C(e, t) {
     }, t))
   }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, p.ZP)(() => {
     let n = null == e ? true : e.showExtrasHintTimestamp;
-    return null != n && A(n, t) && (a(true), s.current = setTimeout(() => {
+    return null != n && C(n, t) && (a(true), s.current = setTimeout(() => {
       a(false)
     }, t)), () => {
       null != s.current && clearTimeout(s.current)
@@ -76,7 +76,7 @@ function P(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.e7)([_.Z], () => _.Z.getWidget(n), [n]), a = C(i, N), o = () => (0, E.QR)((0, b.Pb)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
+  } = e, i = (0, s.e7)([_.Z], () => _.Z.getWidget(n), [n]), a = A(i, N), o = () => (0, E.QR)((0, b.Pb)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
     useFlexboxLayout: true,
     highlightAdminWarningIfElevated: false,
     keybindClassName: v.keybind
@@ -125,7 +125,7 @@ function R(e) {
       onClick: t,
       children: (0, r.jsx)(u.ewm, {
         size: "xxs",
-        color: l.Z.colors.INTERACTIVE_ACTIVE
+        color: l.Z.colors.INTERACTIVE_TEXT_ACTIVE
       })
     })
   })
@@ -148,7 +148,7 @@ function D(e) {
       onClick: a,
       children: (0, r.jsx)(u.pzj, {
         size: "xxs",
-        color: n ? l.Z.colors.BG_BRAND : l.Z.colors.INTERACTIVE_ACTIVE
+        color: n ? l.Z.colors.BACKGROUND_BRAND : l.Z.colors.INTERACTIVE_TEXT_ACTIVE
       })
     })
   })
@@ -170,7 +170,7 @@ function w(e) {
       },
       children: (0, r.jsx)(u.k5M, {
         size: "xxs",
-        color: n ? l.Z.colors.BG_BRAND : l.Z.colors.INTERACTIVE_ACTIVE
+        color: n ? l.Z.colors.BACKGROUND_BRAND : l.Z.colors.INTERACTIVE_TEXT_ACTIVE
       })
     })
   })

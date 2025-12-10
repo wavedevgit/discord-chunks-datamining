@@ -172,12 +172,12 @@ let z = Chunk473749.memo(function(e) {
       positionKey: null != eh ? eh : "null",
       onRequestOpen: () => {
         ey && (0, _.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: B.L.TAKE_ACTION
+          dismissAction: F.L.TAKE_ACTION
         }), ef("attachMenu")
       },
       onRequestClose: () => {
         (0, c.$sL)() || (ey && (0, _.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: B.L.TAKE_ACTION
+          dismissAction: F.L.TAKE_ACTION
         }), ef(null))
       },
       renderPopout: e => {
@@ -211,7 +211,7 @@ let z = Chunk473749.memo(function(e) {
         className: a()(H.attachButton, z),
         childClassName: H.attachButtonInner,
         isActive: false,
-        "aria-label": F.intl.string(F.t.d56gCa),
+        "aria-label": B.intl.string(B.t.d56gCa),
         onDoubleClick: eb ? () => {
           var e;
           return null == (e = ee.current) ? true : e.activateUploadDialogue()

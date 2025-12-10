@@ -31,16 +31,16 @@ let g = e => {
     isPremiumGetCta: O,
     onCtaClick: v,
     cardVariant: S
-  } = e, I = (0, u.N)(), T = null == I ? true : I.subscription_trial, A = (0, c.N)(), C = (0, s.Rt)({
+  } = e, I = (0, u.N)(), T = null == I ? true : I.subscription_trial, C = (0, c.N)(), A = (0, s.Rt)({
     intervalType: null == T ? true : T.interval,
     intervalCount: null == T ? true : T.interval_count
   }), N = (0, l._)({
     defaultResponse: m.intl.string(m.t["8x0jKT"]),
     onNonTier2Subscriber: m.intl.string(m.t.IJI7yk),
-    onTier2TrialOffer: C,
-    onTier0TrialOffer: C,
+    onTier2TrialOffer: A,
+    onTier0TrialOffer: A,
     onDiscountOffer: m.intl.formatToPlainString(m.t.bkQ4bH, {
-      percent: null == A ? true : A.discount.amount
+      percent: null == C ? true : C.discount.amount
     })
   }), P = (0, f._)(S), R = e => (null == e ? true : e.hideOnHoverComponent) !== true;
   return (0, r.jsxs)("div", {

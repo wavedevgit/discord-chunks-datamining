@@ -57,11 +57,11 @@ let k = function(e) {
     H = (0, g.V)(L.nS),
     [Y, W] = i.useState(true),
     K = i.useRef(0),
-    z = (0, A.M5)(Z, L.PremiumTypes.TIER_2),
+    z = (0, C.M5)(Z, L.PremiumTypes.TIER_2),
     q = (0, P.Z)({
       location: "PremiumMarketingPage"
     }),
-    Q = (0, s.e7)([C.Z], () => C.Z.hasFetched);
+    Q = (0, s.e7)([A.Z], () => A.Z.hasFetched);
   i.useEffect(() => {
     Q || u.MH()
   }, [Q]), i.useEffect(() => {

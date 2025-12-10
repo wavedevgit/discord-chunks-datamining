@@ -48,18 +48,18 @@ function T(e) {
   })
 }
 
-function A(e) {
+function C(e) {
   var t;
   return null != (t = E.get(e)) ? t : new Set
 }
 
-function C(e, t) {
-  let n = A(e);
+function A(e, t) {
+  let n = C(e);
   n.has(t) || ((n = new Set(n)).add(t), E.set(e, n))
 }
 
 function N(e, t) {
-  let n = A(e);
+  let n = C(e);
   n.has(t) && ((n = new Set(n)).delete(t), 0 === n.size ? E.delete(e) : E.set(e, n))
 }
 
@@ -67,7 +67,7 @@ function P(e, t, n) {
   let r = I(h, null != e ? e : d.ME),
     i = r[t],
     a = n(i);
-  return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete I(b, i.channelId)[t], delete I(y, i.channelId)[t]), null != i.sessionId && delete I(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (I(b, a.channelId)[t] = a, a.selfVideo && (I(y, a.channelId)[t] = a, C(null != e ? e : d.ME, t))), null != a.sessionId && (I(O, t)[a.sessionId] = a)), [true, a, i])
+  return i === a ? [false, a, i] : (null != i && (delete r[t], null != i.channelId && (delete I(b, i.channelId)[t], delete I(y, i.channelId)[t]), null != i.sessionId && delete I(O, t)[i.sessionId], N(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (I(b, a.channelId)[t] = a, a.selfVideo && (I(y, a.channelId)[t] = a, A(null != e ? e : d.ME, t))), null != a.sessionId && (I(O, t)[a.sessionId] = a)), [true, a, i])
 }
 
 function R(e) {

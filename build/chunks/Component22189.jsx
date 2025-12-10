@@ -84,8 +84,8 @@ let ey = () => {
   } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, Chunk410030.ZP)(), n = (0, Chunk424218.BU)(Chunk474936.Uq / 1024, {
     useKibibytes: true
   }), eb = (0, Chunk399606.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), ey = null != eb ? Chunk74538.ZP.getPremiumPlanItem(eb) : null, eO = (null != ey ? Chunk74538.ZP.getSkuIdForPlan(ey.planId) : null) === Chunk474936.Si.TIER_2, ev = Chunk594174.default.getCurrentUser(), eS = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_2), eI = (0, Chunk74538.I5)(ev, Chunk474936.PremiumTypes.TIER_0), eT = (0, Chunk779618.Z)(Chunk131951.Z), {
-    isFractionalPremiumActive: eA
-  } = (0, Chunk975298.Z)(), eC = null != eb && eb.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eN = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eP = Chunk594928.JH.useExperiment({
+    isFractionalPremiumActive: eC
+  } = (0, Chunk975298.Z)(), eA = null != eb && eb.hasPremiumAtLeast(Chunk474936.PremiumTypes.TIER_2), eN = (0, Chunk266454.Nj)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eP = Chunk594928.JH.useExperiment({
     location: "usePremiumPerksCards"
   }).enabled, eR = (0, Chunk300284.Z)({
     scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
@@ -236,12 +236,12 @@ let ey = () => {
       name: "serverBoosts",
       title: Chunk388032.intl.string(Chunk388032.t["NyDu/6"]),
       subtitle: Chunk388032.intl.string(Chunk388032.t["4pEwXL"]),
-      description: eA ? "" : Chunk388032.intl.string(Chunk388032.t.jsyNHm),
+      description: eC ? "" : Chunk388032.intl.string(Chunk388032.t.jsyNHm),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      onCtaClick: eA ? true : ew,
+      onCtaClick: eC ? true : ew,
       perkImage: Chunk46245,
-      hideOnNarrowScreen: !eA,
-      imageOverlayText: eA ? Chunk388032.intl.string(Chunk388032.t["/VzCKE"]).toLocaleUpperCase() : true
+      hideOnNarrowScreen: !eC,
+      imageOverlayText: eC ? Chunk388032.intl.string(Chunk388032.t["/VzCKE"]).toLocaleUpperCase() : true
     },
     greyServerBoosts: {
       name: "greyServerBoosts",
@@ -442,7 +442,7 @@ let ey = () => {
       })
     }
   };
-  return eS && eC && (eH.tenureBadge = {
+  return eS && eA && (eH.tenureBadge = {
     name: "tenureBadge",
     title: Chunk388032.intl.string(Chunk388032.t.rnsqpa),
     pillText: Chunk388032.intl.string(Chunk388032.t["jyYgZ+"]).toLocaleUpperCase(),

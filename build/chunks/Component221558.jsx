@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk417788 = require("./417788.js"),
   Chunk154326 = require("./154326.js");
 
-function A(e) {
+function C(e) {
   let {
     guild: t,
     checkpointGuild: n,
@@ -92,7 +92,7 @@ function A(e) {
   }, t.id)
 }
 
-function C(e) {
+function A(e) {
   let {
     guild: t,
     rank: n,
@@ -188,7 +188,7 @@ function N() {
             slide: Chunk612776.yD.GUILDS
           })]
         })]
-      }), null != o && (0, Chunk54381.jsx)(A, {
+      }), null != o && (0, Chunk54381.jsx)(C, {
         guild: o,
         checkpointGuild: Chunk120356[0],
         primaryColor: exports
@@ -198,7 +198,7 @@ function N() {
           let {
             guild: i
           } = e;
-          return 0 === n ? null : (0, r.jsx)(C, {
+          return 0 === n ? null : (0, r.jsx)(A, {
             guild: i,
             rank: n + 1,
             primaryColor: t

@@ -53,7 +53,7 @@ function R() {
       } = e;
       return t === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, i.jsx)(s.IGR, {
         text: A.intl.string(A.t.y2b7CA),
-        color: o.Z.colors.BUTTON_DANGER_BACKGROUND.css
+        color: o.Z.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT.css
       }) : null
     }
   })
@@ -70,9 +70,9 @@ function L(e) {
     draftType: k,
     editorTextContent: U,
     setValue: V,
-    openClips: B
+    openClips: F
   } = e, {
-    analyticsLocations: F,
+    analyticsLocations: B,
     newestAnalyticsLocation: H
   } = (0, d.ZP)(), G = (0, C.Dt)({
     channel: t
@@ -87,7 +87,7 @@ function L(e) {
   }
 
   function K() {
-    B()
+    F()
   }
 
   function Y() {
@@ -228,7 +228,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: F[F.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "play");
@@ -242,7 +242,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: F[F.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "listen");
@@ -256,7 +256,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: F[F.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "watch");

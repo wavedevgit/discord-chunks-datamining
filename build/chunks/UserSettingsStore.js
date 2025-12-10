@@ -67,15 +67,15 @@ function T() {
   return y.darkSidebar = !y.darkSidebar, true
 }
 
-function A() {
+function C() {
   var e;
   let t = Chunk442837.ZP.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
   return null != (e = null == exports ? true : exports.darkSidebar) && module
 }
-class C extends(r = Chunk442837.ZP.DeviceSettingsStore) {
+class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
     var t;
-    (y = null != e ? e : {}).darkSidebar = null != (t = y.darkSidebar) ? t : A()
+    (y = null != e ? e : {}).darkSidebar = null != (t = y.darkSidebar) ? t : C()
   }
   getUserAgnosticState() {
     return y
@@ -191,13 +191,13 @@ class C extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return null != (e = y.listDensity) ? module : Chunk969943.fx.COZY
   }
 }
-_(C, "displayName", "UnsyncedUserSettingsStore"), _(C, "persistKey", "UnsyncedUserSettingsStore"), _(C, "migrations", [() => {
+_(A, "displayName", "UnsyncedUserSettingsStore"), _(A, "persistKey", "UnsyncedUserSettingsStore"), _(A, "migrations", [() => {
   let e = Chunk433517.K.get("UserSettingsStore");
   return Chunk433517.K.remove("UserSettingsStore"), a().pick(module, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations", "showPlayAgain")
 }, e => {
   delete e.disableVisualRefresh
 }]);
-let N = new C(Chunk570140.Z, {
+let N = new A(Chunk570140.Z, {
   UNSYNCED_USER_SETTINGS_UPDATE: O,
   LOGOUT: v,
   LOGIN_SUCCESS: S,

@@ -154,12 +154,12 @@ class G extends(r = Chunk473749.PureComponent) {
       children: [(0, i.jsx)("div", {
         className: P.externalRowHeader,
         children: N.intl.format(N.t["6mIX6s"], {
-          paymentGatewayName: C.Vz[e.paymentGateway]
+          paymentGatewayName: A.Vz[e.paymentGateway]
         })
       }), (0, i.jsx)("div", {
         className: P.externalRowBody,
         children: N.intl.format(N.t.eG0uZB, {
-          paymentGatewayName: C.Vz[e.paymentGateway],
+          paymentGatewayName: A.Vz[e.paymentGateway],
           billingHistoryLink: (0, S.JE)(e.paymentGateway, "BILLING_HISTORY")
         })
       })]
@@ -209,7 +209,7 @@ function Z(e) {
   var t;
   let n = e.skuId,
     r = null == (t = e.subscription) ? true : t.items[0].planId;
-  return !(null == n || null == r || Object.values(A.Si).includes(n) || (0, S.PV)(r))
+  return !(null == n || null == r || Object.values(C.Si).includes(n) || (0, S.PV)(r))
 }
 
 function B(e) {

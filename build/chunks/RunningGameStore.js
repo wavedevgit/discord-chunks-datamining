@@ -243,12 +243,12 @@ function eT(e) {
   return null
 }
 
-function eA(e) {
+function eC(e) {
   let t = eT(e);
   return (null == t ? true : t.streamerTool) === true
 }
 
-function eC() {
+function eA() {
   if (et.length > 0) {
     let e = er;
     er = et[0], null != module && er.pid === module.pid ? er.start = module.start : er.start = Date.now()
@@ -430,7 +430,7 @@ function eG() {
   return $ = o().values(Chunk283595.Z.libraryApplications).reduce((t, n) => {
     let r = I.Z.getDetectableGame(n.id);
     if (null == r) return t;
-    for (let i of A.Z.getLaunchOptions(n.id, n.branchId)) {
+    for (let i of C.Z.getLaunchOptions(n.id, n.branchId)) {
       let a = "".concat(n.id, ":").concat(n.branchId);
       J.has(a) || (e = true, J.add(a));
       let {
@@ -544,7 +544,7 @@ function eX(e) {
   } else t = eP(r), r.hidden && (eo[t] = true), r.hidden = false;
   (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), es.gameOverrides[t] = F(Z({}, r), {
     add: true
-  }), eF(et), eZ(), eM(), eC()
+  }), eF(et), eZ(), eM(), eA()
 }
 
 function eJ() {
@@ -571,7 +571,7 @@ function e1(e) {
     let t = q.some(t => e.cleanedExePath.includes(t));
     return t && em.add(e.pid), t
   }).map(e => e.cleanedExePath);
-  t.length > 0 && C.default.track(k.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
+  t.length > 0 && A.default.track(k.rMx.GAME_DETECTION_DEBUGGING_KEYWORD_MATCH, {
     keywords: q,
     paths: t,
     debugging_level: eg,
@@ -595,7 +595,7 @@ function e2(e) {
   let {
     game: t
   } = e, n = eL(t);
-  es.enableDetection[eP(t)] = !n, eM(), C.default.track(k.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
+  es.enableDetection[eP(t)] = !n, eM(), A.default.track(k.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
 }
@@ -611,14 +611,14 @@ function e4(e) {
   let i = false;
   et.forEach(n => {
     eP(n) === t && (n.name = e.newName, i = true)
-  }), eZ(), eM(), i && eC()
+  }), eZ(), eM(), i && eA()
 }
 
 function e5(e) {
   let t = eP(e.game);
   delete es.gameOverrides[t], delete es.enableOverlay[t], delete es.enableDetection[t], es.gamesSeen = es.gamesSeen.filter(e => eP(e) !== t), eo[t] && (et.forEach(e => {
     t === eP(e) && (e.hidden = true)
-  }), delete eo[t]), et.some(e => eP(e) === t) && eC(), eZ(), eM()
+  }), delete eo[t]), et.some(e => eP(e) === t) && eA(), eZ(), eM()
 }
 
 function e8(e) {
@@ -703,11 +703,11 @@ function e7(e) {
       i = {},
       a = [];
     e = e.filter(e => null != e.id && null != M.Z.getById(e.id) ? (a.push(e), false) : (e.isLauncher = e.isLauncher || t.has(e.exeName), e.isLauncher && null != e.id && (i[e.id] = e), e.windowHandle = eH(e.pid, e.windowHandle), null != eT(e)) ? (n.push(e), false) : !I.Z.shouldBlock(e));
-    let o = n.filter(eA).length;
+    let o = n.filter(eC).length;
     o !== eu && (eu = o, d.Z.dispatch({
       type: "RUNNING_STREAMER_TOOLS_CHANGE",
       count: eu
-    })), et = e, en = a, ei = n, r = i, eC(), eN()
+    })), et = e, en = a, ei = n, r = i, eA(), eN()
   }), eZ(), Chunk998502.ZP.setGameDetectionCallback((e, t) => {
     if (e.length === t.length)
       for (let [a, o] of e.entries()) {
@@ -716,7 +716,7 @@ function e7(e) {
           s = I.Z.getGameByName(o.name),
           l = I.Z.getGameByName(e.name),
           c = null != (n = (null == e ? true : e.id) !== W ? null == e ? true : e.id : null == l ? true : l.id) ? n : "";
-        C.default.track(k.rMx.GAME_DETECTION_COMPARISON, {
+        A.default.track(k.rMx.GAME_DETECTION_COMPARISON, {
           game_platform: k.M7m.DESKTOP,
           detection_method: "process_observer_v2",
           game_v1: o.name,
@@ -748,7 +748,7 @@ function e7(e) {
     location: "RunningGameStore.handleGamesDatabaseUpdate"
   }).enabled;
   Chunk998502.ZP.setGameDetectionErrorCallback((e, t, n, r, i) => {
-    p && C.default.track(k.rMx.GAME_DETECTION_ERROR, {
+    p && A.default.track(k.rMx.GAME_DETECTION_ERROR, {
       error_code: e.toString(),
       distributor: t,
       commit_hash: n,

@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   ID: () => S,
-  NM: () => A,
+  NM: () => C,
   Xi: () => T,
   ZP: () => R,
-  bT: () => C
+  bT: () => A
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk608863 = require("./608863.jsx"),
   Chunk873546 = require("./873546.js"),
   Chunk215569 = require("./215569.js"),
@@ -107,7 +107,7 @@ class T extends(r = Chunk473749.PureComponent) {
   }
 }
 
-function A(e) {
+function C(e) {
   let {
     children: t
   } = e;
@@ -126,7 +126,7 @@ g(T, "defaultProps", {
   paddingTop: 60,
   paddingBottom: 60
 });
-var C = function(e) {
+var A = function(e) {
   return e.MINIMAL = "minimal", e.CUSTOM = "custom", e.DEFAULT = "default", e.WIDE = "wide", e.SCROLLABLE_CUSTOM = "scrollableCustom", e
 }({});
 let N = Object.freeze({
@@ -179,7 +179,7 @@ let R = function(e) {
     mobileSidebarOpen: b,
     toggleSidebar: y,
     hideSidebar: O = false
-  } = e, v = a.useRef(null), S = a.useRef(null), T = (0, p.Z)(o), A = (0, f.Yzy)(O, {
+  } = e, v = a.useRef(null), S = a.useRef(null), T = (0, p.Z)(o), C = (0, f.Yzy)(O, {
     from: {
       position: "absolute",
       opacity: 0
@@ -189,7 +189,7 @@ let R = function(e) {
     },
     reverse: O,
     config: l.config.stiff
-  }, "animate-always"), C = a.useCallback(e => {
+  }, "animate-always"), A = a.useCallback(e => {
     v.current = e, null != E && (E.current = e)
   }, [E]);
   a.useLayoutEffect(() => {
@@ -232,7 +232,7 @@ let R = function(e) {
       className: h.contentRegion,
       children: [t, (0, i.jsxs)(f.yWw, {
         className: s()(h.contentRegionScroller, O ? h.contentRegionHiddenSidebar : h.contentRegionShownSidebar),
-        ref: C,
+        ref: A,
         children: [(0, i.jsx)(I.Provider, {
           value: v.current,
           children: (0, i.jsx)("div", {
@@ -256,7 +256,7 @@ let R = function(e) {
         className: h.contentTransitionWrap,
         children: [t, (0, i.jsxs)(f.yWw, {
           className: s()(h.contentRegionScroller, O ? h.contentRegionHiddenSidebar : h.contentRegionShownSidebar),
-          ref: C,
+          ref: A,
           children: [(0, i.jsx)(I.Provider, {
             value: v.current,
             children: (0, i.jsx)(f.njP.Panel, {
@@ -304,7 +304,7 @@ let R = function(e) {
     })
   }
   return (0, i.jsx)(i.Fragment, {
-    children: A((e, t) => (0, i.jsxs)(l.animated.div, {
+    children: C((e, t) => (0, i.jsxs)(l.animated.div, {
       style: e,
       className: h.standardSidebarView,
       children: [!t && x(), w()]

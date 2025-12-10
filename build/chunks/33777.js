@@ -39,8 +39,8 @@ function d(e, t, n) {
     onClick: y,
     isDisabled: O
   }), {
-    pressProps: A,
-    isPressed: C
+    pressProps: C,
+    isPressed: A
   } = (0, l.r)({
     onPressStart: m,
     onPressEnd: h,
@@ -70,7 +70,7 @@ function d(e, t, n) {
   return (0, o.y)(n, t.defaultSelectedValue, t.setSelectedValue), (0, u.Q)({
     validationBehavior: M
   }, t, n), {
-    labelProps: (0, i.d)(A, (0, s.useMemo)(() => ({
+    labelProps: (0, i.d)(C, (0, s.useMemo)(() => ({
       onClick: e => e.preventDefault(),
       onMouseDown: e => e.preventDefault()
     }), [])),
@@ -89,6 +89,6 @@ function d(e, t, n) {
     }),
     isDisabled: O,
     isSelected: v,
-    isPressed: T || C
+    isPressed: T || A
   }
 }

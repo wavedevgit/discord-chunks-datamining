@@ -193,7 +193,7 @@ class ei extends Chunk183139.Z {
     e.active && (r.active = true, r.reasons = [...new Set([...r.reasons, ...e.reasons])].sort(), n && this.isSessionEstablished() && this._sendHeartbeat()), this.heartbeatQOSState.upcomingState = e
   }
   handleUpdateTimeSpentSessionId(e, t, n) {
-    this.connectionState_ === C.Z.SESSION_ESTABLISHED && (this.send(L.j.UPDATE_TIME_SPENT_SESSION_ID, {
+    this.connectionState_ === A.Z.SESSION_ESTABLISHED && (this.send(L.j.UPDATE_TIME_SPENT_SESSION_ID, {
       initialization_timestamp: e,
       session_id: t,
       client_launch_id: n
@@ -205,7 +205,7 @@ class ei extends Chunk183139.Z {
     if ((t || !M.RZ()) && (V.info("Skipping _connect because socket is paused"), Y({
         reason: e
       }), t)) return;
-    this.connectionState = C.Z.CONNECTING, this.nextReconnectIsImmediate = false;
+    this.connectionState = A.Z.CONNECTING, this.nextReconnectIsImmediate = false;
     let n = this.compressionHandler.getAlgorithm(),
       r = H.getName(),
       i = this._getGatewayUrl(),
@@ -298,8 +298,8 @@ class ei extends Chunk183139.Z {
       let t = e.session_id;
       this.sessionId = t;
       let n = (0, w.TO)(e);
-      o.Z.setServerTrace(n), V.info("[READY] took ".concat(r, "ms, as ").concat(t)), V.verbose("".concat(n)), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
-    } else "READY_SUPPLEMENTAL" === t ? (V.info("[READY_SUPPLEMENTAL] took ".concat(r, "ms")), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (V.verbose((0, w.TO)(e)), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
+      o.Z.setServerTrace(n), V.info("[READY] took ".concat(r, "ms, as ").concat(t)), V.verbose("".concat(n)), this.connectionState = A.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
+    } else "READY_SUPPLEMENTAL" === t ? (V.info("[READY_SUPPLEMENTAL] took ".concat(r, "ms")), this.connectionState = A.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (V.verbose((0, w.TO)(e)), this.connectionState = A.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
     this.dispatcher.receiveDispatch(e, t, n)
   }
   handleResumeDispatched() {
@@ -327,8 +327,8 @@ class ei extends Chunk183139.Z {
     if (e = e || false, this._cleanup(), this.emit("close", {
         code: t,
         reason: n
-      }), t === X) return this.connectionState = C.Z.CLOSED, V.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
-    if (this._tryDetectInvalidIOSToken(t, n, e), this.connectionState = C.Z.WILL_RECONNECT, this.nextReconnectIsImmediate) V.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying immediately.")), this._connect("_handleCloseImmediateReconnect");
+      }), t === X) return this.connectionState = A.Z.CLOSED, V.warn("[WS CLOSED] because of authentication failure, marking as closed."), this._reset(e, t, n);
+    if (this._tryDetectInvalidIOSToken(t, n, e), this.connectionState = A.Z.WILL_RECONNECT, this.nextReconnectIsImmediate) V.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying immediately.")), this._connect("_handleCloseImmediateReconnect");
     else {
       let r = this.gatewayBackoff.fail(() => this._connect("_handleClose:".concat(n)));
       V.info("[WS CLOSED] (".concat(e.toString(), ", ").concat(t, ", ").concat(n, ") retrying in ").concat((r / 1e3).toFixed(2), " seconds.")), this.gatewayBackoff.fails > z && this._reset(e, t, n)
@@ -352,7 +352,7 @@ class ei extends Chunk183139.Z {
       let {
         status: t
       } = e;
-      401 === t && (this.connectionState = C.Z.CLOSED, V.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, X, "invalid token manually detected")), v.default.track(U.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
+      401 === t && (this.connectionState = A.Z.CLOSED, V.warn("[WS CLOSED] because of manual authentication failure, marking as closed."), this._reset(n, X, "invalid token manually detected")), v.default.track(U.rMx.IOS_INVALID_TOKEN_WORKAROUND_TRIGGERED, {
         api_status_code: t
       })
     }))
@@ -493,7 +493,7 @@ class ei extends Chunk183139.Z {
     b.Z.increment({
       name: l.V.SOCKET_CRASHED,
       tags: ["action:".concat(null != r ? r : t), "modded_client:".concat(i)]
-    }, true), false !== e.sentry && A.Z.captureException(n, {
+    }, true), false !== e.sentry && C.Z.captureException(n, {
       tags: {
         socketCrashedAction: t
       }
@@ -502,7 +502,7 @@ class ei extends Chunk183139.Z {
       error_stack: n.stack,
       has_client_mods: i,
       action: t
-    }), this._cleanup(e => e.close()), this._reset(true, 1e3, "Resetting socket due to error."), this.dispatcher.clear(), this.connectionState = C.Z.WILL_RECONNECT, this.dispatchExceptionBackoff.cancel();
+    }), this._cleanup(e => e.close()), this._reset(true, 1e3, "Resetting socket due to error."), this.dispatcher.clear(), this.connectionState = A.Z.WILL_RECONNECT, this.dispatchExceptionBackoff.cancel();
     let a = e.clearCache || this.dispatchExceptionBackoff._fails > 0;
     0 === this.dispatchExceptionBackoff._fails ? (V.verbose("Triggering fast reconnect"), this.dispatchExceptionBackoff.fail(() => {}), setTimeout(() => this._connect("resetSocketOnErrorImmediate"), 0)) : this.dispatchExceptionBackoff.fail(() => this._connect("resetSocketOnError")), a && (this.didForceClearGuildHashes = true, f.Z.dispatch({
       type: "CLEAR_CACHES",

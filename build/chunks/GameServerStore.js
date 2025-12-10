@@ -2,7 +2,7 @@
 /** chunk id: 60482, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -208,7 +208,7 @@ class T extends(r = Chunk442837.ZP.Store) {
   }
 }
 s(T, "displayName", "GameServerStore");
-let A = new T(Chunk570140.Z, {
+let C = new T(Chunk570140.Z, {
   LOGOUT: f,
   GAME_SERVER_FETCH_CATALOG_SUCCESS: _,
   GAME_SERVER_FETCH_INSTANCES_SUCCESS: m,

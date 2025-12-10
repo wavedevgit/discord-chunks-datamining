@@ -74,11 +74,11 @@ function T(e) {
   g(c.zS.OVERLAY_UNLOCKED, !e.locked)
 }
 
-function A() {
+function C() {
   Chunk998502.ZP.IsHardwareAcceleratedGPUSchedulingEnabled() && g(Chunk837268.zS.HARDWARE_ACCELERATED_GPU_SCHEDULING_ENABLED, true), g(Chunk837268.zS.OVERLAY_RENDERING, true)
 }
 
-function C() {
+function A() {
   b()
 }
 class N extends(r = Chunk442837.ZP.Store) {
@@ -100,8 +100,8 @@ let P = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
     OVERLAY_SET_GPU_BOOST_REQUESTED: v,
     OVERLAY_RENDER_DEBUG_MODE: S,
     OVERLAY_CRASHED: I,
-    OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: A,
-    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: C,
+    OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: C,
+    OVERLAY_V3_NATIVE_DESTROY_HOST_WINDOW: A,
     OVERLAY_SET_INPUT_LOCKED: T
   }),
   R = P

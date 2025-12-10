@@ -79,7 +79,7 @@ let C = e => {
     children: (0, n.jsxs)("div", {
       className: _.checklistLabel,
       children: [(0, n.jsx)(m.Text, {
-        color: "interactive-active",
+        color: "interactive-text-active",
         variant: r,
         children: l
       }), o && (0, n.jsx)(m.IGR, {

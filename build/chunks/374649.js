@@ -6,7 +6,7 @@ require.d(exports, {
   Ox: () => T,
   hz: () => b,
   o5: () => S,
-  pV: () => A
+  pV: () => C
 }), require("./388685.js"), require("./49124.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
@@ -259,7 +259,7 @@ function T(e) {
   return v(e, (0, r.useCallback)(() => O(t.current), [n]))
 }
 
-function A(e) {
+function C(e) {
   let t = e.subscriptionPlanPrice;
   return e.discounts.forEach(n => {
     let r = n.amount / e.quantity;

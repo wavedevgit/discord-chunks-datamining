@@ -2,7 +2,7 @@
 /** chunk id: 382271, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => C
+  m: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -51,7 +51,7 @@ let T = (e, t) => {
       recipientIds: e
     }), t()
   },
-  A = e => {
+  C = e => {
     let {
       recipient: t,
       status: n,
@@ -100,7 +100,7 @@ let T = (e, t) => {
       })]
     })
   },
-  C = e => {
+  A = e => {
     let {
       results: t,
       onClose: n,
@@ -126,7 +126,7 @@ let T = (e, t) => {
       }),
       S = () => (0, r.jsx)("div", {
         className: O.trialRecipientContainer,
-        children: t.map(e => (0, r.jsx)(A, {
+        children: t.map(e => (0, r.jsx)(C, {
           recipient: e.recipient,
           status: e.status,
           onClose: n

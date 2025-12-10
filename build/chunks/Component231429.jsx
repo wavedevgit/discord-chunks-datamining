@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk837262 = require("./837262.js");
 let T = 8;
 
-function A(e) {
+function C(e) {
   let {
     partyMembers: t,
     partySize: n,
@@ -58,7 +58,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   var t;
   return (null == (t = e.activity) ? true : t.type) === v.mFx.STREAM_REQUEST
 }
@@ -92,7 +92,7 @@ function N(e) {
     return null != t ? t : b.ag
   }), [L]), U = i.useMemo(() => {
     var e;
-    return (0, r.jsx)(A, {
+    return (0, r.jsx)(C, {
       partyMembers: k,
       partySize: j,
       maxPartySize: M,
@@ -109,7 +109,7 @@ function N(e) {
     partyStatusElement: U,
     presenceActivity: w,
     guildId: I.guild_id
-  }) : C(T) ? (0, r.jsx)(l.Z, {
+  }) : A(T) ? (0, r.jsx)(l.Z, {
     analyticsLocations: o,
     application: R,
     channel: I,

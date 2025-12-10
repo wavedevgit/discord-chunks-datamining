@@ -2,11 +2,11 @@
 /** chunk id: 6496, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  RR: () => A,
+  RR: () => C,
   WW: () => I,
   bE: () => N,
   n4: () => j,
-  q8: () => C,
+  q8: () => A,
   t$: () => T,
   xl: () => L
 }), require("./415506.js"), require("./388685.js"), require("./781311.js");
@@ -82,11 +82,11 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   return d.Z.getUploads(e, c.d.FirstThreadMessage).length
 }
 
-function C(e) {
+function A(e) {
   var t, n;
   let r = l.Z.getChannel(e);
   if (null == r) return [];

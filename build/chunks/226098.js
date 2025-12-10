@@ -2,7 +2,7 @@
 /** chunk id: 226098, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => C
+  r: () => A
 });
 var Chunk990415 = require("./990415.js"),
   Chunk603450 = require("./603450.js"),
@@ -58,9 +58,9 @@ class S {
 }
 let I = Symbol("linkClicked"),
   T = "react-aria-pressable-style",
-  A = "data-react-aria-pressable";
+  C = "data-react-aria-pressable";
 
-function C(e) {
+function A(e) {
   let {
     onPress: t,
     onPressChange: n,
@@ -70,7 +70,7 @@ function C(e) {
     onClick: l,
     isDisabled: u,
     isPressed: v,
-    preventFocusOnPress: C,
+    preventFocusOnPress: A,
     shouldCancelOnPointerExit: D,
     allowTextSelectionOnPress: x,
     ref: L,
@@ -201,7 +201,7 @@ function C(e) {
         r && t.stopPropagation()
       }, t.onMouseDown = t => {
         if ((0, p.bE)(t.currentTarget, (0, p.NI)(t.nativeEvent)) && 0 === t.button) {
-          if (C) {
+          if (A) {
             let n = (0, r.WZ)(t.target);
             n && e.disposables.push(n)
           }
@@ -234,7 +234,7 @@ function C(e) {
       }
     }
     return t
-  }, [G, u, C, Z, x, H, Y, F, B, V, W, K]);
+  }, [G, u, A, Z, x, H, Y, F, B, V, W, K]);
   return (0, y.useEffect)(() => {
     if (!L) return;
     let e = (0, _.r3)(L.current);
@@ -242,7 +242,7 @@ function C(e) {
     let t = e.createElement("style");
     t.id = T, t.textContent = `
 @layer {
-  [${A}] {
+  [${C}] {
     touch-action: pan-x pan-y pinch-zoom;
   }
 }
@@ -257,7 +257,7 @@ function C(e) {
   }, [x]), {
     isPressed: v || M,
     pressProps: (0, c.d)(j, z, {
-      [A]: true
+      [C]: true
     })
   }
 }

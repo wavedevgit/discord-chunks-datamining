@@ -35,8 +35,8 @@ let O = [],
   S = null,
   I = new Set,
   T = Chunk683860.z.LATEST_ACTIVITY,
-  A = Chunk697988.z.MATCH_SOME,
-  C = 0,
+  C = Chunk697988.z.MATCH_SOME,
+  A = 0,
   N = [],
   P = false,
   R = [],
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, S = null, I = new Set, T = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, R = [], D = o().chain(O), w = o().chain(O), L.clear(), x.clear()
+  N = [], r = null, S = null, I = new Set, T = Chunk683860.z.LATEST_ACTIVITY, C = Chunk697988.z.MATCH_SOME, A = 0, R = [], D = o().chain(O), w = o().chain(O), L.clear(), x.clear()
 }
 
 function Z() {
@@ -104,9 +104,9 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), C = 0, P = true), 0 !== x.size && (R = R.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (R = Array.from(new Set([...R, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (w = o().chain(R).sort(k(l.z.LATEST_ACTIVITY)), D = o().chain(R).sort(k(l.z.CREATION_DATE)));
+  }), A = 0, P = true), 0 !== x.size && (R = R.filter(e => !x.has(e)), x.clear()), 0 !== L.size && (R = Array.from(new Set([...R, ...L])), L.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (w = o().chain(R).sort(k(l.z.LATEST_ACTIVITY)), D = o().chain(R).sort(k(l.z.CREATION_DATE)));
   let n = (T === l.z.LATEST_ACTIVITY ? w : D).value(),
-    i = (N = 0 === I.size ? n : n.filter(U(I, A))).find(e => M(e));
+    i = (N = 0 === I.size ? n : n.filter(U(I, C))).find(e => M(e));
   r = null == i ? null : i
 }
 
@@ -145,7 +145,7 @@ function Y(e) {
     isNewlyCreated: n
   } = e;
   if (null == t.parent_id || t.parent_id !== S || !n) returnfalse;
-  t.ownerId !== _.default.getId() ? C++ : v = t.id
+  t.ownerId !== _.default.getId() ? A++ : v = t.id
 }
 
 function W(e) {
@@ -188,7 +188,7 @@ class Q extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk344185.Z, Chunk314897.default, Chunk592125.Z, Chunk306680.ZP, Chunk944486.Z, Chunk144140.Z)
   }
   getNewThreadCount() {
-    return C
+    return A
   }
   getCanAckThreads() {
     return P
@@ -197,8 +197,8 @@ class Q extends(i = Chunk442837.ZP.Store) {
     let i = e !== S,
       a = !(0, c.O)(n, I),
       o = t !== T,
-      s = r !== A;
-    return S = e, I = n, T = t, A = r, i ? F({
+      s = r !== C;
+    return S = e, I = n, T = t, C = r, i ? F({
       refreshThreadIds: true
     }) : o ? F({
       sortThreadIds: true

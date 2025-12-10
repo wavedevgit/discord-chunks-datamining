@@ -2,7 +2,7 @@
 /** chunk id: 674116, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -29,7 +29,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 let T = "".concat(Chunk63063.Z.getArticleURL(Chunk981631.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
-function A() {
+function C() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)(Chunk603963.Z, {
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VOICE,

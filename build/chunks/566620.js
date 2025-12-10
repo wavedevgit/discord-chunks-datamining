@@ -135,10 +135,10 @@ async function el(e) {
       } = n(788983);
       e(ee.KJ3.ACTIVITY_POPOUT)
     }
-    let e = C.Z.getConnectedFrame();
-    if (null != e && A.Z.stopFrame({
+    let e = A.Z.getConnectedFrame();
+    if (null != e && C.Z.stopFrame({
         applicationId: e.applicationId
-      }), x) return await A.Z.launchFrame({
+      }), x) return await C.Z.launchFrame({
       applicationId: o
     }), true;
     l.Z.dispatch({

@@ -33,31 +33,31 @@ function O(e) {
     } = e,
     I = O === a.author.id,
     T = n.state === E.r2o.ACCEPTING,
-    A = (0, l.e7)([_.Z], () => null != n.channel ? _.Z.getChannel(n.channel.id) : null, [n]);
-  o()(null == A || A.isPrivate(), "must be a private channel");
+    C = (0, l.e7)([_.Z], () => null != n.channel ? _.Z.getChannel(n.channel.id) : null, [n]);
+  o()(null == C || C.isPrivate(), "must be a private channel");
   let {
-    analyticsLocations: C
-  } = (0, d.ZP)(u.Z.INVITE_EMBED), N = null != A, P = i.useCallback(() => {
+    analyticsLocations: A
+  } = (0, d.ZP)(u.Z.INVITE_EMBED), N = null != C, P = i.useCallback(() => {
     let e = "noop";
     N ? (v(), e = "transition") : (S(), e = "accept"), (0, c.r$)({
       invite: n,
       action: e,
       inviter_id: a.author.id,
       invite_message_id: a.id
-    }, C)
-  }, [n, a, C, N, v, S]);
-  if (null == A) {
+    }, A)
+  }, [n, a, A, N, v, S]);
+  if (null == C) {
     if (null == n.channel) return (0, r.jsx)(g.Z, {});
-    A = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+    C = (0, p.jD)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
   } else {
-    t = A.recipients.reduce((e, t) => {
+    t = C.recipients.reduce((e, t) => {
       let n = m.default.getUser(t);
       return null != n && e.push(n), e
     }, []);
     let e = m.default.getCurrentUser();
     N && null != e && t.push(e)
   }
-  let R = A.name;
+  let R = C.name;
   (null == R || "" === R) && (R = t.length > 0 ? t.filter(h.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRF));
   let D = b.intl.string(b.t.XpeFYr),
     w = "active";
@@ -70,7 +70,7 @@ function O(e) {
       children: [(0, r.jsxs)("div", {
         className: y.headerLine,
         children: [(0, r.jsx)(f.Z.Icon, {
-          channel: A,
+          channel: C,
           onClick: N ? P : true
         }), (0, r.jsx)(f.Z.Info, {
           title: R,

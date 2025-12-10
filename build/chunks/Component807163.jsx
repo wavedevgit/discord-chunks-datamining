@@ -148,7 +148,7 @@ function eE(e) {
     description: t,
     onLearnMore: n,
     renderVisual: i
-  } = e, a = eC();
+  } = e, a = eA();
   return (0, r.jsxs)("div", {
     className: o()(Q.whatYouLoseItem, {
       [Q.premiumRebrand]: a
@@ -177,7 +177,7 @@ function eb(e) {
   var t = ec({}, eu(e));
   let {
     theme: n
-  } = (0, R.z)(), i = (0, p.dQu)(p.TVs.colors.INTERACTIVE_ACTIVE, n).hex();
+  } = (0, R.z)(), i = (0, p.dQu)(p.TVs.colors.INTERACTIVE_TEXT_ACTIVE, n).hex();
   return (0, r.jsx)(p.SrA, ep(ed({
     size: "md"
   }, t), {
@@ -223,7 +223,7 @@ function ey(e) {
       "aria-label": n.username
     }), (0, r.jsxs)("div", {
       className: Q.profileUserInfo,
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(A.Z, {
         className: Q.profileNameTag,
         usernameClass: Q.profileNameTagUsername,
         name: n.toString()
@@ -240,7 +240,7 @@ function ey(e) {
       "aria-label": n.username
     }), (0, r.jsxs)("div", {
       className: Q.profileUserInfoTier1,
-      children: [(0, r.jsx)(C.Z, {
+      children: [(0, r.jsx)(A.Z, {
         className: Q.profileNameTag,
         usernameClass: Q.profileNameTagUsername,
         name: n.toString()
@@ -440,10 +440,10 @@ function eT(e) {
     })
   })
 }
-let eA = Chunk473749.createContext({
+let eC = Chunk473749.createContext({
     isPremiumRebrand: false
   }),
-  eC = () => Chunk473749.useContext(eA).isPremiumRebrand;
+  eA = () => Chunk473749.useContext(eC).isPremiumRebrand;
 
 function eN(e) {
   let {
@@ -509,7 +509,7 @@ function eN(e) {
     }
     return e
   }, [n, t, a, s]);
-  return (0, r.jsx)(eA.Provider, {
+  return (0, r.jsx)(eC.Provider, {
     value: {
       isPremiumRebrand: l
     },
@@ -542,7 +542,7 @@ let eP = function(e) {
     return l()(null != e, "ProfileItem: currentUser cannot be undefined"), e
   });
   i.useEffect(() => {
-    (0, A.Z)(b.id, b.getAvatarURL(null, 80))
+    (0, C.Z)(b.id, b.getAvatarURL(null, 80))
   }, [b]);
   let y = null != m && !_;
   return (i.useEffect(() => {

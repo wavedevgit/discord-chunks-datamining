@@ -1,7 +1,7 @@
 /** Chunk was on 73755 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -64,7 +64,7 @@ function V(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   var t;
   let {
     channel: n,
@@ -78,8 +78,8 @@ function B(e) {
     canManageRoles: v.Z.can(R.Plq.MANAGE_ROLES, n),
     canReadMessageHistory: v.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
   })), w = (0, l.e7)([g.Z], () => C === R.d4z.DM ? g.Z.getMutualGuilds(n.getRecipientId()) : null, [n, C]), M = (0, u.Z)(null != (t = null == _ ? true : _.id) ? t : R.lds), {
-    authorizedAppToken: B,
-    authorizedAppsFetchState: F
+    authorizedAppToken: F,
+    authorizedAppsFetchState: B
   } = (0, l.cj)([y.default], () => ({
     authorizedAppToken: y.default.getNewestTokenForApplication(null == M ? true : M.id),
     authorizedAppsFetchState: y.default.getFetchState()
@@ -91,14 +91,14 @@ function B(e) {
         withMutualGuilds: true
       }))
     }, [w, C, n, _]), r.useEffect(() => {
-      (null == _ ? true : _.bot) && F === y.FetchState.NOT_FETCHED && s.Z.fetch()
-    }, [null == _ ? true : _.bot, F]), n.isSystemDM()) return (0, i.jsx)(T.Z, {
+      (null == _ ? true : _.bot) && B === y.FetchState.NOT_FETCHED && s.Z.fetch()
+    }, [null == _ ? true : _.bot, B]), n.isSystemDM()) return (0, i.jsx)(T.Z, {
     channel: n,
     children: D.intl.string(D.t.Rzvnig)
   });
   if (C === R.d4z.DM) {
     let e;
-    return null != _ && null != M ? null != B && (e = (0, i.jsxs)("div", {
+    return null != _ && null != M ? null != F && (e = (0, i.jsxs)("div", {
       className: k.buttonContainer,
       children: [(0, i.jsx)(Z.W, {
         channel: n,
@@ -107,7 +107,7 @@ function B(e) {
         user: _,
         application: M,
         channel: n,
-        oauth2Token: B
+        oauth2Token: F
       }), H && (0, i.jsx)(f.Z, {
         channel: n
       })]

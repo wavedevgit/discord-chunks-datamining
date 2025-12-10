@@ -68,26 +68,6 @@ let {
         }
       }
     },
-    INPUT_BACKGROUND_CRITICAL: {
-      "mana-text-inputs": {
-        [r.DARK]: {
-          raw: "OPACITY_RED_4",
-          opacity: .0392156862745098
-        },
-        [r.LIGHT]: {
-          raw: "OPACITY_RED_4",
-          opacity: .0392156862745098
-        },
-        [r.MIDNIGHT]: {
-          raw: "OPACITY_RED_4",
-          opacity: .0392156862745098
-        },
-        [r.DARKER]: {
-          raw: "OPACITY_RED_4",
-          opacity: .0392156862745098
-        }
-      }
-    },
     INPUT_BACKGROUND_DEFAULT: {
       "mana-text-inputs": {
         [r.DARK]: {
@@ -108,6 +88,26 @@ let {
         }
       }
     },
+    INPUT_BACKGROUND_ERROR_DEFAULT: {
+      "mana-text-inputs": {
+        [r.DARK]: {
+          raw: "OPACITY_RED_4",
+          opacity: .0392156862745098
+        },
+        [r.LIGHT]: {
+          raw: "OPACITY_RED_4",
+          opacity: .0392156862745098
+        },
+        [r.MIDNIGHT]: {
+          raw: "OPACITY_RED_4",
+          opacity: .0392156862745098
+        },
+        [r.DARKER]: {
+          raw: "OPACITY_RED_4",
+          opacity: .0392156862745098
+        }
+      }
+    },
     INPUT_BORDER_ACTIVE: {
       "mana-text-inputs": {
         [r.DARK]: {
@@ -124,26 +124,6 @@ let {
         },
         [r.DARKER]: {
           raw: "BLURPLE_50",
-          opacity: 1
-        }
-      }
-    },
-    INPUT_BORDER_CRITICAL_HOVER: {
-      "mana-text-inputs": {
-        [r.DARK]: {
-          raw: "RED_NEW_36",
-          opacity: 1
-        },
-        [r.LIGHT]: {
-          raw: "RED_NEW_66",
-          opacity: 1
-        },
-        [r.MIDNIGHT]: {
-          raw: "RED_NEW_23",
-          opacity: 1
-        },
-        [r.DARKER]: {
-          raw: "RED_NEW_45",
           opacity: 1
         }
       }
@@ -168,7 +148,27 @@ let {
         }
       }
     },
-    INPUT_BORDER_DEFAULT_HOVER: {
+    INPUT_BORDER_ERROR_HOVER: {
+      "mana-text-inputs": {
+        [r.DARK]: {
+          raw: "RED_NEW_36",
+          opacity: 1
+        },
+        [r.LIGHT]: {
+          raw: "RED_NEW_66",
+          opacity: 1
+        },
+        [r.MIDNIGHT]: {
+          raw: "RED_NEW_23",
+          opacity: 1
+        },
+        [r.DARKER]: {
+          raw: "RED_NEW_45",
+          opacity: 1
+        }
+      }
+    },
+    INPUT_BORDER_HOVER: {
       "mana-text-inputs": {
         [r.DARK]: {
           raw: "OPACITY_44",
@@ -188,7 +188,7 @@ let {
         }
       }
     },
-    INPUT_FOREGROUND_CRITICAL: {
+    INPUT_TEXT_ERROR_DEFAULT: {
       "mana-text-inputs": {
         [r.DARK]: {
           raw: "NEUTRAL_9",

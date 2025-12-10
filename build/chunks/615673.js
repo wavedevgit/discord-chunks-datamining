@@ -262,7 +262,7 @@ function T(e) {
   }
 }
 
-function A(e) {
+function C(e) {
   let {
     width: t,
     height: n
@@ -273,7 +273,7 @@ function A(e) {
   }
 }
 
-function C(e, t, n) {
+function A(e, t, n) {
   let i = (0, a.Re)(t),
     o = (0, a.tF)(t),
     s = "fixed" === n,
@@ -333,7 +333,7 @@ let D = async function(e) {
     n = this.getDimensions,
     r = await n(e.floating);
   return {
-    reference: C(e.reference, await t(e.floating), e.strategy),
+    reference: A(e.reference, await t(e.floating), e.strategy),
     floating: {
       x: 0,
       y: 0,
@@ -353,7 +353,7 @@ let x = {
   getOffsetParent: R,
   getElementRects: D,
   getClientRects: h,
-  getDimensions: A,
+  getDimensions: C,
   getScale: l,
   isElement: Chunk274676.kK,
   isRTL: w

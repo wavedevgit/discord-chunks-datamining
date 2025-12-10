@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk73704 = require("./73704.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,14 +37,14 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      C(e, t, n[t])
     })
   }
   return e
@@ -179,7 +179,7 @@ function L(e) {
     children: [(0, r.jsxs)("div", {
       className: T.tooltipBodyContainer,
       children: [(0, r.jsx)(u.Text, {
-        color: "interactive-active",
+        color: "interactive-text-active",
         variant: "text-xs/bold",
         children: i
       }), null != a ? (0, r.jsx)(u.Text, {
@@ -208,7 +208,7 @@ function j(e) {
     iconClassName: b,
     badgeStrokeColor: v,
     badgeColor: I,
-    disableBoostClick: A,
+    disableBoostClick: C,
     "aria-label": N = false
   } = e;
   let D = null != (a = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
@@ -219,7 +219,7 @@ function j(e) {
     j = (0, s.e7)([_.Z], () => _.Z.theme),
     M = (0, O.XX)(o),
     k = (0, y.i)(M),
-    U = i.useMemo(() => M.premium && x && !A, [A, M.premium, x]),
+    U = i.useMemo(() => M.premium && x && !C, [C, M.premium, x]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
         guildId: o.id,
@@ -258,7 +258,7 @@ function j(e) {
     children: e => (0, r.jsx)(u.P3F, {
       onClick: G,
       tabIndex: U ? 0 : false,
-      children: (0, r.jsx)(p.Z, P(C({}, e), {
+      children: (0, r.jsx)(p.Z, P(A({}, e), {
         className: g,
         flowerStarClassName: E,
         allowFullSizedIcon: true,

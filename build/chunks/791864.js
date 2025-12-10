@@ -35,11 +35,11 @@ function u(e) {
       showEra: I
     }), [m, e.hourCycle, e.shouldForceLeadingZeros, h, e.hideTimeZone, I]),
     {
-      minValue: A,
-      maxValue: C,
+      minValue: C,
+      maxValue: A,
       isDateUnavailable: N
     } = e,
-    P = (0, c.useMemo)(() => (0, r.p2)(d, A, C, N, T), [d, A, C, N, T]),
+    P = (0, c.useMemo)(() => (0, r.p2)(d, C, A, N, T), [d, C, A, N, T]),
     R = (0, o.Q3)({
       ...e,
       value: d,

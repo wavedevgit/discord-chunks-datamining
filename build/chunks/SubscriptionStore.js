@@ -61,9 +61,9 @@ let m = null,
   S = false,
   I = null,
   T = false,
-  A = null;
+  C = null;
 
-function C(e) {
+function A(e) {
   let {
     subscriptions: t,
     lastLazyPerkSync: n
@@ -72,7 +72,7 @@ function C(e) {
     if (e.user_id !== u) return;
     let t = s.Q.createFromServer(e);
     r[t.id] = t, U(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && a.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && o.push(t))
-  }), m = r, h = i, E = a, b = o, A = n
+  }), m = r, h = i, E = a, b = o, C = n
 }
 
 function N(e) {
@@ -157,7 +157,7 @@ function M(e) {
 }
 
 function k() {
-  m = null, h = null, g = null, E = null, b = null, y = false, O = null, v = false, S = false, T = false, A = null
+  m = null, h = null, g = null, E = null, b = null, y = false, O = null, v = false, S = false, T = false, C = null
 }
 
 function U(e) {
@@ -237,7 +237,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
     return T
   }
   getLastLazyPerkSync() {
-    return A
+    return C
   }
   getPremiumGroupSubscription() {
     return G(Chunk981631.NYc.PREMIUM, e => e.hasAnyPremiumGroup, true)
@@ -245,7 +245,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
 }
 d(Z, "displayName", "SubscriptionStore");
 let B = new Z(Chunk570140.Z, {
-  BILLING_SUBSCRIPTION_FETCH_SUCCESS: C,
+  BILLING_SUBSCRIPTION_FETCH_SUCCESS: A,
   BILLING_SUBSCRIPTION_UPDATE_SUCCESS: P,
   BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_START: L,
   BILLING_MOST_RECENT_SUBSCRIPTION_FETCH_SUCCESS: R,

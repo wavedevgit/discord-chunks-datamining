@@ -118,14 +118,14 @@ function Q(e) {
 function X(e) {
   var t;
   let n = E.Z.getChannel(e),
-    r = (null == n ? true : n.isDM()) && 1 ? A.dF.AUTO : A.dF.NONE;
-  return null != (t = M[e]) ? t : [r, A.dF.NONE]
+    r = (null == n ? true : n.isDM()) && 1 ? C.dF.AUTO : C.dF.NONE;
+  return null != (t = M[e]) ? t : [r, C.dF.NONE]
 }
 
 function J(e) {
   if (null == M[e]) returnfalse;
   let [t] = M[e];
-  return t !== A.dF.NONE
+  return t !== C.dF.NONE
 }
 
 function $(e) {
@@ -159,22 +159,22 @@ function en(e) {
   let t = h.default.getId(),
     n = W(e);
   if (0 === n.size() || y.Z.getVoiceChannelId() !== e) return void ee(e, null);
-  let r = A.dF.NONE,
-    i = n.toArray(T.sI.STREAM).find(e => e.type === A.fO.STREAM && m.Z.getActiveStreamForStreamKey(e.id));
-  if (null != i) a()(i.type === A.fO.STREAM, "Impossible condition"), r = i.id;
+  let r = C.dF.NONE,
+    i = n.toArray(T.sI.STREAM).find(e => e.type === C.fO.STREAM && m.Z.getActiveStreamForStreamKey(e.id));
+  if (null != i) a()(i.type === C.fO.STREAM, "Impossible condition"), r = i.id;
   else if (1 === n.size()) r = t;
   else if (1 === n.size(T.sI.VIDEO)) {
     let [e] = n.toArray(T.sI.VIDEO);
     r = e.id
   } else {
     var o;
-    let e = n.toArray().find(e => e.type === A.fO.USER && e.id !== t && !e.ringing);
+    let e = n.toArray().find(e => e.type === C.fO.USER && e.id !== t && !e.ringing);
     r = null != (o = null == e ? true : e.id) ? o : t
   }
   let [s] = X(e);
-  if (s !== A.dF.AUTO && s !== A.dF.NONE) {
+  if (s !== C.dF.AUTO && s !== C.dF.NONE) {
     let e = n.getParticipant(s);
-    (null == e || e.type === A.fO.STREAM && null == m.Z.getActiveStreamForStreamKey(e.id)) && (s = A.dF.NONE)
+    (null == e || e.type === C.fO.STREAM && null == m.Z.getActiveStreamForStreamKey(e.id)) && (s = C.dF.NONE)
   }
   ee(e, [s, r])
 }
@@ -182,8 +182,8 @@ function en(e) {
 function er(e) {
   let t = W(e);
   if (0 === t.size()) return;
-  let n = eU(e) || et(t) ? C.WtW.VIDEO : C.WtW.VOICE;
-  n === C.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
+  let n = eU(e) || et(t) ? A.WtW.VIDEO : A.WtW.VOICE;
+  n === A.WtW.VOICE ? (delete U[e], delete G[e]) : U[e] = n
 }
 
 function ei(e) {
@@ -349,10 +349,10 @@ function eI(e) {
     id: n
   } = e, r = W(t);
   null == n && r.toArray(T.sI.STREAM).forEach(e => {
-    (0, A._5)(e) && r.updateParticipant(e.user.id)
+    (0, C._5)(e) && r.updateParticipant(e.user.id)
   });
   let [, i] = X(t);
-  if (ee(t, [null != n ? n : A.dF.NONE, i]), (0, p.DB)(n)) {
+  if (ee(t, [null != n ? n : C.dF.NONE, i]), (0, p.DB)(n)) {
     try {
       let {
         ownerId: e
@@ -373,29 +373,29 @@ function eT(e) {
   r === n && ee(t, null);
   let i = W(t),
     a = i.getParticipant(n);
-  null != a && a.type !== A.fO.ACTIVITY && (i.updateParticipantPoppedOut(n, true), Q(a.user.id, [t]))
+  null != a && a.type !== C.fO.ACTIVITY && (i.updateParticipantPoppedOut(n, true), Q(a.user.id, [t]))
 }
 
-function eA(e) {
+function eC(e) {
   let {
     channelId: t,
     participantId: n
   } = e, r = W(t);
   r.updateParticipantPoppedOut(n, false);
   let i = r.getParticipant(n);
-  null != i && i.type !== A.fO.ACTIVITY && Q(i.user.id, [t])
+  null != i && i.type !== C.fO.ACTIVITY && Q(i.user.id, [t])
 }
 
-function eC(e) {
+function eA(e) {
   let {
     channel: t
   } = e;
-  if (t.type === C.d4z.GROUP_DM) {
+  if (t.type === A.d4z.GROUP_DM) {
     let e = t.originChannelId;
     if (null != e) {
       var n, r;
       return G[t.id] = {
-        [C.IlC.APP]: null != (r = null == (n = G[e]) ? true : n[C.IlC.APP]) ? r : C.AEg.NORMAL
+        [A.IlC.APP]: null != (r = null == (n = G[e]) ? true : n[A.IlC.APP]) ? r : A.AEg.NORMAL
       }, true
     }
   }
@@ -566,7 +566,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getSelectedParticipantId(e) {
     let [t, n] = X(e);
-    return t === A.dF.NONE ? null : t !== A.dF.AUTO ? t : n === A.dF.NONE || n === A.dF.AUTO ? null : n
+    return t === C.dF.NONE ? null : t !== C.dF.AUTO ? t : n === C.dF.NONE || n === C.dF.AUTO ? null : n
   }
   getSelectedParticipant(e) {
     let t = this.getSelectedParticipantId(e);
@@ -585,14 +585,14 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getMode(e) {
     var t;
-    return null != (t = U[e]) ? t : eU(e) ? C.WtW.VIDEO : C.WtW.VOICE
+    return null != (t = U[e]) ? t : eU(e) ? A.WtW.VIDEO : A.WtW.VOICE
   }
   getLayout(e) {
     var t, n;
-    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : C.IlC.APP;
-    if (__OVERLAY__) return C.AEg.NORMAL;
+    let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : A.IlC.APP;
+    if (__OVERLAY__) return A.AEg.NORMAL;
     let i = eG(e);
-    return null != (n = null == (t = G[e]) ? true : t[r]) ? n : i ? C.AEg.NO_CHAT : C.AEg.NORMAL
+    return null != (n = null == (t = G[e]) ? true : t[r]) ? n : i ? A.AEg.NO_CHAT : A.AEg.NORMAL
   }
   getChatOpen(e) {
     var t, n, r;
@@ -607,7 +607,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   isFullscreenInContext() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk981631.IlC.APP;
-    return Object.values(G).some(t => t[e] === C.AEg.FULL_SCREEN)
+    return Object.values(G).some(t => t[e] === A.AEg.FULL_SCREEN)
   }
   getStageStreamSize(e) {
     return H[e]
@@ -630,7 +630,7 @@ let eB = new eZ(Chunk570140.Z, {
   CHANNEL_SELECT: es,
   CHANNEL_RTC_ACTIVE_CHANNELS: ea,
   VOICE_STATE_UPDATES: el,
-  CHANNEL_CREATE: eC,
+  CHANNEL_CREATE: eA,
   CHANNEL_DELETE: eN,
   THREAD_DELETE: eN,
   CALL_CREATE: e_,
@@ -638,7 +638,7 @@ let eB = new eZ(Chunk570140.Z, {
   CALL_DELETE: em,
   CHANNEL_RTC_SELECT_PARTICIPANT: eI,
   CHANNEL_RTC_POPOUT_PARTICIPANT: eT,
-  CHANNEL_RTC_RETURN_PARTICIPANT: eA,
+  CHANNEL_RTC_RETURN_PARTICIPANT: eC,
   CHANNEL_RTC_UPDATE_LAYOUT: eP,
   CHANNEL_RTC_UPDATE_PARTICIPANTS_OPEN: eg,
   CHANNEL_RTC_UPDATE_VOICE_PARTICIPANTS_HIDDEN: eE,

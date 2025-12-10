@@ -55,7 +55,7 @@ function y(e) {
     canTruncate: v = true
   } = e, S = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), I = (0, c.ZP)(S), {
     analyticsLocations: T
-  } = (0, s.ZP)(), A = i.useCallback(() => {
+  } = (0, s.ZP)(), C = i.useCallback(() => {
     (0, f.A)({
       analyticsLocations: T,
       activityType: h.IIU.STREAMING,
@@ -63,8 +63,8 @@ function y(e) {
     })
   }, [T, t.channelId]);
   if (b && y) return null;
-  let C = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name,
-    N = null != C ? C : g.intl.string(g.t.eXan7B),
+  let A = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name,
+    N = null != A ? A : g.intl.string(g.t.eXan7B),
     P = !O && null != S && null != I;
   return (0, r.jsxs)(r.Fragment, {
     children: [!b && (0, r.jsx)(p.Z, {
@@ -74,7 +74,7 @@ function y(e) {
         channel: S
       }) : true,
       className: E,
-      onTooltipShow: P ? A : true
+      onTooltipShow: P ? C : true
     }), !y && (0, r.jsx)(_.Z, {
       variant: u,
       className: m,
@@ -99,7 +99,7 @@ function O(e) {
     showChannelName: E = false
   } = e, b = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), y = (0, c.ZP)(b), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, v = null != O ? O : g.intl.string(g.t.eXan7B), S = null != O ? O : g.intl.string(g.t.eXan7B), I = null != y ? (0, r.jsxs)(r.Fragment, {
     children: [v, " (", y, ")"]
-  }) : v, T = E ? I : v, A = null != y ? "".concat(S, " (").concat(y, ")") : S;
+  }) : v, T = E ? I : v, C = null != y ? "".concat(S, " (").concat(y, ")") : S;
   return (0, r.jsx)(m.Z, {
     icon: u ? true : (0, r.jsx)(p.Z, {
       icon: o.ARS,
@@ -111,7 +111,7 @@ function O(e) {
     className: s,
     canTruncate: h,
     hideTooltip: _,
-    "aria-label": A,
+    "aria-label": C,
     hideText: f
   })
 }

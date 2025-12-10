@@ -39,8 +39,8 @@ var S = function(e) {
 }({});
 let I = false,
   T = 0,
-  A = 0,
-  C = false,
+  C = 0,
+  A = false,
   N = {};
 
 function P() {
@@ -52,10 +52,10 @@ function R() {
 }
 
 function D() {
-  let e = R() && (A > 0 || I && 0 === T);
-  if (module !== C) {
+  let e = R() && (C > 0 || I && 0 === T);
+  if (module !== A) {
     var t, n;
-    C = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, C)
+    A = module, null == (n = Chunk131951.Z.getMediaEngine()) || null == (t = require.setNativeDesktopVideoSourcePickerActive) || exports.call(require, A)
   }
 }
 
@@ -66,8 +66,8 @@ function w() {
 }
 
 function x() {
-  return (0, Chunk473749.useEffect)(() => (A++, D(), () => {
-    --A, D()
+  return (0, Chunk473749.useEffect)(() => (C++, D(), () => {
+    --C, D()
   }), [])
 }
 

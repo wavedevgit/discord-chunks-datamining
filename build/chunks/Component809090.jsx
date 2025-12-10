@@ -89,8 +89,8 @@ function y(e) {
     onBlur: S,
     onMouseOver: I,
     onMouseLeave: T
-  } = e, A = E(e, ["section", "channel", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
-  let [C, N] = i.useState(false), P = i.useCallback(() => {
+  } = e, C = E(e, ["section", "channel", "isSelected", "width", "height", "className", "selectable", "isSquircle", "onFocus", "onBlur", "onMouseOver", "onMouseLeave"]);
+  let [A, N] = i.useState(false), P = i.useCallback(() => {
     N(true), null == v || v()
   }, [v]), R = i.useCallback(() => {
     N(false), null == S || S()
@@ -112,7 +112,7 @@ function y(e) {
       size: _
     })
   }, [t, _, x]);
-  return (0, r.jsx)("div", g(m({}, A), {
+  return (0, r.jsx)("div", g(m({}, C), {
     className: o()(f.wrapper, b, {
       [f.selectable]: y,
       [f.selected]: y && a
@@ -123,7 +123,7 @@ function y(e) {
     onMouseLeave: w,
     children: (0, r.jsx)(l.ZP, {
       className: f.mask,
-      mask: O || y && (a || C) ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
+      mask: O || y && (a || A) ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
       width: _,
       height: h,
       children: (0, r.jsx)("img", {

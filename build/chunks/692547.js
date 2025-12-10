@@ -36,8 +36,8 @@ let {
 } = Chunk897710.V, {
   Modules: T
 } = Chunk387117.V, {
-  Layout: A,
-  Space: C
+  Layout: C,
+  Space: A
 } = Chunk196548.VV, N = l()(y, e => i()(e)), P = {
   themes: E,
   modules: T,
@@ -88,8 +88,8 @@ let {
   })),
   radii: Chunk949180.w,
   spacing: l()(I, e => "".concat(e, "px")),
-  layout: l()(A, e => "number" == typeof e ? "".concat(e, "px") : e),
-  space: l()(C, e => ({
+  layout: l()(C, e => "number" == typeof e ? "".concat(e, "px") : e),
+  space: l()(A, e => ({
     css: e.css,
     resolve(t) {
       let {

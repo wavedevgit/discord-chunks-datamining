@@ -62,8 +62,8 @@ let m = null,
   S = false,
   I = false,
   T = null,
-  A = null,
-  C = [],
+  C = null,
+  A = [],
   N = [],
   P = null,
   R = null,
@@ -160,7 +160,7 @@ function F(e) {
     totalSpendCurrency: f,
     invoices: p
   } = n;
-  m = o, h = l, U(r), k(a), G(i), M(t), null != p && Z(p), C = c, N = u, P = d, R = f, I = false, T = s.default.fromTimestamp(Date.now()), S = true
+  m = o, h = l, U(r), k(a), G(i), M(t), null != p && Z(p), A = c, N = u, P = d, R = f, I = false, T = s.default.fromTimestamp(Date.now()), S = true
 }
 
 function V(e) {
@@ -194,7 +194,7 @@ function Y(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  m = a, h = o, U(n), k(r), G(i), null != f && Z(f), C = l, N = c, I = false, T = s.default.fromTimestamp(Date.now()), P = u, R = d
+  m = a, h = o, U(n), k(r), G(i), null != f && Z(f), A = l, N = c, I = false, T = s.default.fromTimestamp(Date.now()), P = u, R = d
 }
 
 function W(e) {
@@ -262,7 +262,7 @@ function $(e) {
   let {
     countryCode: n
   } = e;
-  null != n && (A = null != (t = (0, r.Zz)(n)) ? t : null)
+  null != n && (C = null != (t = (0, r.Zz)(n)) ? t : null)
 }
 
 function ee() {
@@ -289,7 +289,7 @@ function en(e) {
 }
 
 function er() {
-  m = null, h = null, g = {}, b = L(), y = j(), w = {}, I = false, T = null, v = x(), E = false, C = [], N = [], P = null, R = null, D = {}
+  m = null, h = null, g = {}, b = L(), y = j(), w = {}, I = false, T = null, v = x(), E = false, A = [], N = [], P = null, R = null, D = {}
 }
 class ei extends Chunk750041.Z {
   initialize() {
@@ -350,13 +350,13 @@ class ei extends Chunk750041.Z {
     return E
   }
   getUserCountry() {
-    return A
+    return C
   }
   isLoading() {
     return I
   }
   getTopUserActivities() {
-    return C
+    return A
   }
   getTopGuildActivities() {
     return N

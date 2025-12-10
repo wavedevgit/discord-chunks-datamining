@@ -72,8 +72,8 @@ let h = "Stats for Nerds",
   S = "Audio",
   I = "Audio Channels",
   T = "Container",
-  A = "Format",
-  C = "Buffer Health",
+  C = "Format",
+  A = "Buffer Health",
   N = "Error";
 
 function P(e) {
@@ -192,7 +192,7 @@ function R(e) {
         className: l.statRow,
         children: [(0, r.jsx)("span", {
           className: l.statLabel,
-          children: A
+          children: C
         }), (0, r.jsx)("span", {
           className: l.statValue,
           children: m(null != (w = U.codecInfo.isProgressive) ? w : null, null != (x = U.codecInfo.isFragmented) ? x : null)
@@ -246,7 +246,7 @@ function R(e) {
         className: l.statRow,
         children: [(0, r.jsx)("span", {
           className: l.statLabel,
-          children: C
+          children: A
         }), (0, r.jsx)("span", {
           className: l.statValue,
           children: p(U.bufferedSeconds)

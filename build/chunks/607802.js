@@ -19,7 +19,7 @@ require.d(exports, {
   WU: () => K,
   X$: () => ee,
   X3: () => J,
-  b7: () => C,
+  b7: () => A,
   cl: () => V,
   g9: () => U,
   i3: () => B,
@@ -28,7 +28,7 @@ require.d(exports, {
   nI: () => k,
   nl: () => $,
   qc: () => G,
-  s5: () => A,
+  s5: () => C,
   zH: () => P
 }), require("./35282.js"), require("./388685.js"), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./539854.js"), require("./804061.js"), require("./704826.js");
 var Chunk392711 = require("./392711.js"),
@@ -101,7 +101,7 @@ function T(e) {
   return I(e)
 }
 
-function A(e) {
+function C(e) {
   switch (e.type) {
     case y.aib.GUILD_CHANNEL:
     case y.aib.GUILD:
@@ -118,7 +118,7 @@ function A(e) {
   }
 }
 
-function C(e) {
+function A(e) {
   return e.type === y.aib.GUILD || e.type === y.aib.GUILD_CHANNEL || e.type === y.aib.THREAD
 }
 
@@ -400,7 +400,7 @@ function Q() {
 }
 
 function X(e) {
-  return !!C(e) || e.type === y.aib.DMS && !f.Z.hidePersonalInformation
+  return !!A(e) || e.type === y.aib.DMS && !f.Z.hidePersonalInformation
 }
 
 function J(e) {

@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -274,10 +274,10 @@ let K = Chunk473749.memo(function(e) {
       width: V
     } = (0, _.ZP)(), {
       showConnectedAnimation: H
-    } = W(k, P), Y = null == w ? true : w.sessionId, Q = t.id, X = s.id, [J] = (0, l.e7)([C.Z], () => {
+    } = W(k, P), Y = null == w ? true : w.sessionId, Q = t.id, X = s.id, [J] = (0, l.e7)([A.Z], () => {
       var e;
-      return [null != (e = C.Z.getVoiceStateForChannel(Q, X)) ? e : C.Z.getVoiceStateForSession(X, Y), C.Z.getVoiceStateVersion()]
-    }, [Q, X, Y], N.Q), $ = P ? w : null != J ? J : w, [ee, et, en] = (0, l.Wu)([A.Z], () => B ? [!A.Z.isSupported() || A.Z.isSelfMute() || A.Z.isSelfMutedTemporarily(), A.Z.isSelfDeaf(), false] : [!A.Z.isSupported() || A.Z.isLocalMute(s.id), false, A.Z.isLocalVideoDisabled(s.id)], [B, s.id]), er = (0, l.e7)([S.Z], () => {
+      return [null != (e = A.Z.getVoiceStateForChannel(Q, X)) ? e : A.Z.getVoiceStateForSession(X, Y), A.Z.getVoiceStateVersion()]
+    }, [Q, X, Y], N.Q), $ = P ? w : null != J ? J : w, [ee, et, en] = (0, l.Wu)([C.Z], () => B ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), false] : [!C.Z.isSupported() || C.Z.isLocalMute(s.id), false, C.Z.isLocalVideoDisabled(s.id)], [B, s.id]), er = (0, l.e7)([S.Z], () => {
       let e = S.Z.getCurrentUserActiveStream();
       return null != e && e.ownerId !== s.id && S.Z.getViewerIds(e).filter(e => e === s.id).length > 0
     }, [s.id]), ei = P && (null == w ? true : w.discoverable), ea = (0, m.Z)({
@@ -465,7 +465,7 @@ let K = Chunk473749.memo(function(e) {
       member: y,
       voiceState: v,
       connectedOn: S
-    } = o, [I, A] = i.useState(null), [C, N] = i.useState(null);
+    } = o, [I, C] = i.useState(null), [A, N] = i.useState(null);
     i.useEffect(() => {
       c && N(null)
     }, [c]), i.useEffect(() => {
@@ -475,7 +475,7 @@ let K = Chunk473749.memo(function(e) {
       })
     }, [I]);
     let w = e => {
-        A(e)
+        C(e)
       },
       x = (e, t) => {
         h || (0, u.jW)(e, async () => {
@@ -527,7 +527,7 @@ let K = Chunk473749.memo(function(e) {
       guildId: a.guild_id,
       channelId: a.id,
       appContext: D.IlC.OVERLAY,
-      shouldShow: C === b.id,
+      shouldShow: A === b.id,
       onRequestClose: () => N(null),
       spacing: 24,
       children: () => {

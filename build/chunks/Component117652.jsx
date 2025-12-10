@@ -76,7 +76,7 @@ function k(e) {
     loading: s = false
   } = e, {
     hasPaymentSources: l
-  } = (0, A.JL)(), c = l ? C.h8.REVIEW : C.h8.ADD_PAYMENT_STEPS;
+  } = (0, C.JL)(), c = l ? A.h8.REVIEW : A.h8.ADD_PAYMENT_STEPS;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Button, {
       onClick: () => t(c),
@@ -98,7 +98,7 @@ let U = e => {
     giftRecipientError: _,
     setGiftRecipientError: E,
     validatingGiftRecipient: y,
-    giftRecipient: C,
+    giftRecipient: A,
     recommendedGiftSkuIds: N,
     giftingOrigin: L,
     setValidatingGiftRecipient: j
@@ -109,7 +109,7 @@ let U = e => {
     paymentSourceId: G,
     skuPricePreviewsById: F,
     skusById: V
-  } = (0, A.JL)(), H = (0, i.e7)([O.default], () => O.default.getCurrentUser()), {
+  } = (0, C.JL)(), H = (0, i.e7)([O.default], () => O.default.getCurrentUser()), {
     enabled: Y,
     giftRecommendationAlgorithm: W
   } = m.G.useExperiment({
@@ -120,14 +120,14 @@ let U = e => {
     j(true), null != _ && E(), await (0, c.B1)(e.id, t) || E(D.intl.string(D.t["4kgVqQ"])), j(false)
   };
   (0, o.ZP)(() => {
-    null != M && null != C && (L !== R.Wt.DM_CHANNEL_WISHLIST && S.default.track(P.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
+    null != M && null != A && (L !== R.Wt.DM_CHANNEL_WISHLIST && S.default.track(P.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
       sku_id: M
-    }), Q(C, M))
+    }), Q(A, M))
   });
   let X = e => {
       L !== R.Wt.DM_CHANNEL_WISHLIST && S.default.track(P.rMx.COLLECTIBLES_GIFTING_SHOP_ITEM_CLICKED, {
         sku_id: e
-      }), null != C && Q(C, e), k(e)
+      }), null != A && Q(A, e), k(e)
     },
     J = e => {
       let t = F[e],
@@ -159,7 +159,7 @@ let U = e => {
       if (z) return (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
         children: [(0, r.jsx)(b.s, {
-          giftRecipient: C
+          giftRecipient: A
         }), (0, r.jsx)(g.q, {
           isShopGift: true,
           className: x.adjustedGiftMainAnimation,
@@ -177,7 +177,7 @@ let U = e => {
       return L === R.Wt.USER_PROFILE_WISHLIST || L === R.Wt.DM_CHANNEL_WISHLIST ? (0, r.jsxs)("div", {
         className: w.bodyColumnRight,
         children: [(0, r.jsx)(b.s, {
-          giftRecipient: C
+          giftRecipient: A
         }), $(), null != e && null != M && (0, r.jsx)(d.Z, {
           skuId: M,
           price: e,
@@ -229,7 +229,7 @@ let U = e => {
     rightColumnComponent: ee(),
     onStepChange: t,
     onBackClick: n,
-    ctaDisabled: null != _ || null == C || C.id === (null == H ? true : H.id) || s.length > R.$n,
+    ctaDisabled: null != _ || null == A || A.id === (null == H ? true : H.id) || s.length > R.$n,
     loading: y
   }
 };

@@ -106,8 +106,8 @@ function T(e) {
     } = e,
     {
       executeStateUpdate: T,
-      visualState: A,
-      isDisabled: C
+      visualState: C,
+      isDisabled: A
     } = (0, m.Ee)(e),
     N = (0, f.s)(O),
     P = null != O && i === d.ZJ.PREMIUM,
@@ -116,7 +116,7 @@ function T(e) {
     w = null != g,
     x = null != D && D.length > 0,
     L = i === d.ZJ.LINK && null != b && b.length > 0,
-    j = A === h.gH.LOADING || P && null == N;
+    j = C === h.gH.LOADING || P && null == N;
   return t = L ? () => {
     (0, _.q)({
       href: null != b ? b : "",
@@ -126,7 +126,7 @@ function T(e) {
     "data-migration-pending": true,
     color: S(i),
     size: s.zx.Sizes.SMALL,
-    disabled: p || A === h.gH.DISABLED || C || R,
+    disabled: p || C === h.gH.DISABLED || A || R,
     onClick: t,
     onContextMenu: e => {
       L && (0, c.vq)(e, e => (0, r.jsx)(I, v(y({}, e), {

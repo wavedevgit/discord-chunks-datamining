@@ -54,7 +54,7 @@ function Z(e) {
       analyticsLocations: Z
     } = (0, g.ZP)(h.Z.ACTIVITY_INSTANCE_EMBED),
     F = (0, u.O)(),
-    V = (0, s.e7)([A.Z], () => A.Z.getChannel(S), [S]),
+    V = (0, s.e7)([C.Z], () => C.Z.getChannel(S), [S]),
     H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : S,
     Y = (0, s.e7)([T.default], () => T.default.getId()),
     {
@@ -68,10 +68,10 @@ function Z(e) {
     }), [H, d.id]),
     q = null == W ? true : W.userIds,
     Q = (0, s.Wu)([N.default], () => Array.from(null != q ? q : []).map(e => N.default.getUser(e)).filter(w.lm), [q]),
-    X = (0, s.e7)([C.Z], () => {
+    X = (0, s.e7)([A.Z], () => {
       if (null == q) return null;
       for (let e of q) {
-        let t = C.Z.findActivity(e, e => e.application_id === d.id);
+        let t = A.Z.findActivity(e, e => e.application_id === d.id);
         if (null != t) return t
       }
       return null

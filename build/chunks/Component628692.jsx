@@ -2,7 +2,7 @@
 /** chunk id: 628692, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => A,
+  ZP: () => C,
   ku: () => I
 });
 var Chunk54381 = require("./54381.js"),
@@ -90,7 +90,7 @@ function T(e) {
     })]
   }) : null
 }
-let A = function(e) {
+let C = function(e) {
   let {
     channelId: t,
     messageId: n,
@@ -100,18 +100,18 @@ let A = function(e) {
   } = e, u = b.jU.useSetting(), f = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), O = i.useMemo(() => {
     var e;
     return null != (e = (0, p.Z)(t, n, a, o)) ? e : f
-  }, [t, n, a, o, f]), I = (0, s.e7)([y.Z], () => y.Z.getChannel(t)), A = (0, d.X0)({
+  }, [t, n, a, o, f]), I = (0, s.e7)([y.Z], () => y.Z.getChannel(t)), C = (0, d.X0)({
     location: "SoundboardMention"
-  }), C = i.useRef(null), {
+  }), A = i.useRef(null), {
     isPlaying: N,
     playSound: P
   } = (0, m.Z)(O, I), R = i.useCallback(async () => {
     if (await P()) {
       var e;
-      null == (e = C.current) || e.addAnimation()
+      null == (e = A.current) || e.addAnimation()
     }
   }, [P]);
-  return A ? null == O ? (0, r.jsx)(S, {
+  return C ? null == O ? (0, r.jsx)(S, {
     playSound: R
   }) : c && !u ? (0, r.jsx)(E.ZP, {
     containerClassName: v.jumboContainer,
@@ -127,7 +127,7 @@ let A = function(e) {
     tooltipOverride: (0, r.jsx)(_.Dp, {
       sound: O
     }),
-    soundmojiVisualEffectRef: C
+    soundmojiVisualEffectRef: A
   }, "".concat(O.soundId)) : (0, r.jsx)(l.u, {
     "aria-label": O.name,
     "data-pending-richtooltip-migration": true,

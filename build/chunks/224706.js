@@ -389,7 +389,7 @@ let Z = {
       url: D.ANM.UNVERIFIED_APPLICATIONS,
       body: {
         name: t,
-        os: (0, A.getPlatformName)(),
+        os: (0, C.getPlatformName)(),
         icon: n,
         distributor_application: k(i, a),
         executable: l,
@@ -463,7 +463,7 @@ let Z = {
       remotePartyId: f
     });
     try {
-      let e = (0, A.platformPrefersDeepLink)(),
+      let e = (0, C.platformPrefersDeepLink)(),
         c = await N.Z.getJoinSecret(t, n, r, i, a);
       return null == f && M({
         applicationId: r,

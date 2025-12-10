@@ -82,8 +82,8 @@ function W(e) {
     channelId: W,
     quest: G,
     previewQuest: z,
-    isParticipatingOverride: F
-  } = e, K = (0, b.O5)(), [X, Y] = l.useState(false), $ = l.useCallback(() => Y(true), []), J = l.useCallback(() => Y(false), []), ee = (0, a.e7)([j.default], () => j.default.getCurrentUser()), et = (0, a.e7)([f.Z], () => f.Z.getState().theme), en = (0, o.wj)(et) ? D.BRd.DARK : D.BRd.LIGHT, er = (0, a.e7)([c.Z], () => c.Z.getParticipants(e.channelId), [e.channelId]), el = (0, a.e7)([h.Z], () => (0, A.PM)(h.Z.quests, h.Z.questToDeliverForPlacement, S.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
+    isParticipatingOverride: K
+  } = e, F = (0, b.O5)(), [X, Y] = l.useState(false), $ = l.useCallback(() => Y(true), []), J = l.useCallback(() => Y(false), []), ee = (0, a.e7)([j.default], () => j.default.getCurrentUser()), et = (0, a.e7)([f.Z], () => f.Z.getState().theme), en = (0, o.wj)(et) ? D.BRd.DARK : D.BRd.LIGHT, er = (0, a.e7)([c.Z], () => c.Z.getParticipants(e.channelId), [e.channelId]), el = (0, a.e7)([h.Z], () => (0, A.PM)(h.Z.quests, h.Z.questToDeliverForPlacement, S.Ok.DESKTOP_ACCOUNT_PANEL_AREA), []), {
     isCurrentUserStreamingQuestApplication: es,
     isQuestInQuestBar: ei
   } = (0, a.cj)([E.Z], () => {
@@ -101,7 +101,7 @@ function W(e) {
     if ((0, O.$H)(G) && null !== ea && e.includes(ea)) returntrue;
     let t = null != ee ? E.Z.findActivity(ee.id, e => e.type !== D.IIU.CUSTOM_STATUS) : null;
     return !!(null != t && (0, O.$J)(G) && (0, C._D)(t, G))
-  }, [G, ee, ea]), eu = true === F || es || eo, ec = (0, a.e7)([h.Z], () => null != G && h.Z.isEnrolling(G.id), [G]), ed = (0, a.e7)([c.Z], () => ((null == ee ? true : ee.id) == null ? null : c.Z.getParticipant(W, ee.id)) != null, [W, ee]), {
+  }, [G, ee, ea]), eu = true === K || es || eo, ec = (0, a.e7)([h.Z], () => null != G && h.Z.isEnrolling(G.id), [G]), ed = (0, a.e7)([c.Z], () => ((null == ee ? true : ee.id) == null ? null : c.Z.getParticipant(W, ee.id)) != null, [W, ee]), {
     launchInGameActivity: em
   } = (0, y.zB)(G), ef = (0, y.B6)(null == G ? true : G.config.expiresAt), ep = (0, y.B6)(null == G ? true : G.config.rewardsConfig.rewardsExpireAt), eE = l.useCallback(() => {
     (0, v.AH)(G.id, {
@@ -110,7 +110,7 @@ function W(e) {
       sourceQuestContent: S.jn.QUEST_LIVE_STREAM
     }), (0, N.Rt)(G) && em()
   }, [G, em]), ej = l.useCallback(() => {
-    K({
+    F({
       questId: G.id,
       questContent: S.jn.QUEST_LIVE_STREAM,
       questContentCTA: b.jZ.TRACK_PROGRESS,
@@ -119,8 +119,8 @@ function W(e) {
       fromContent: S.jn.QUEST_LIVE_STREAM,
       questId: G.id
     })
-  }, [G, K]), ev = l.useCallback(() => {
-    K({
+  }, [G, F]), ev = l.useCallback(() => {
+    F({
       questId: G.id,
       questContent: S.jn.QUEST_LIVE_STREAM,
       questContentCTA: b.jZ.LEARN_MORE,
@@ -129,7 +129,7 @@ function W(e) {
       fromContent: S.jn.QUEST_LIVE_STREAM,
       questId: G.id
     })
-  }, [G, K]), eb = (0, L.hf)({
+  }, [G, F]), eb = (0, L.hf)({
     quest: G,
     questContent: S.jn.QUEST_LIVE_STREAM,
     sourceQuestContent: S.jn.QUEST_LIVE_STREAM
@@ -243,7 +243,7 @@ function W(e) {
             loading: ec
           })]
         }), ey && !eg && eu && (0, r.jsx)(P.Z, {
-          color: u.TVs.colors.BG_BRAND,
+          color: u.TVs.colors.BACKGROUND_BRAND,
           quest: G
         }), ey && !eg && !eu && (0, r.jsx)(u.Button, {
           variant: "primary",

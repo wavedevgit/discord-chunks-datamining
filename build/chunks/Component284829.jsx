@@ -30,13 +30,13 @@ let E = () => {
     churnUserDiscountOffer: O,
     discountedPrice: v,
     fullPrice: S
-  } = (0, Chunk594135.a)(), [I, T] = (0, Chunk473749.useState)(false), [A, C] = (0, Chunk473749.useState)(false), N = async () => {
-    if (null === O) return void C(true);
-    T(true), C(false);
+  } = (0, Chunk594135.a)(), [I, T] = (0, Chunk473749.useState)(false), [C, A] = (0, Chunk473749.useState)(false), N = async () => {
+    if (null === O) return void A(true);
+    T(true), A(false);
     try {
       await y(), b(Chunk45474.R.DISCOUNT_APPLIED)
     } catch (e) {
-      C(true), T(false)
+      A(true), T(false)
     }
   };
   if (null === O || null === v) return (0, Chunk54381.jsx)("div", {
@@ -94,7 +94,7 @@ let E = () => {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
         })
       })
-    }), A ? (0, Chunk54381.jsx)(Chunk793030.M14, {
+    }), C ? (0, Chunk54381.jsx)(Chunk793030.M14, {
       type: "critical",
       children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
     }) : null]

@@ -2,7 +2,7 @@
 /** chunk id: 906003, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => C
+  Y: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -86,13 +86,13 @@ let I = {
     sm: "xs",
     md: "refresh_sm"
   },
-  A = {
+  C = {
     xs: "sm",
     sm: "sm",
     md: "md"
   };
 
-function C(e) {
+function A(e) {
   var t, n, {
       role: a = "button",
       variant: f = "primary",
@@ -102,8 +102,8 @@ function C(e) {
       iconPosition: y = "start",
       iconOpticalOffsetMargin: S = 0,
       fullWidth: T = false,
-      focusProps: A,
-      loading: C,
+      focusProps: C,
+      loading: A,
       loadingStartedLabel: D,
       loadingFinishedLabel: w,
       rounded: x = false,
@@ -146,11 +146,11 @@ function C(e) {
     eo = (0, s.a)(ei),
     es = i.useRef(false);
   i.useEffect(() => {
-    true === C && (es.current = true, l.u.announce(null != D ? D : ea.BUTTON_LOADING_STARTED_LABEL)), false === C && true === es.current && (l.u.announce(null != w ? w : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
-  }, [C, D, w, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
+    true === A && (es.current = true, l.u.announce(null != D ? D : ea.BUTTON_LOADING_STARTED_LABEL)), false === A && true === es.current && (l.u.announce(null != w ? w : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
+  }, [A, D, w, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
   let el = (0, r.jsxs)("div", {
       className: o()(g.buttonChildren, {
-        [g.loading]: C
+        [g.loading]: A
       }),
       children: [null != et && "start" === y && et, J && (0, r.jsx)(h.x, {
         tag: "span",
@@ -160,14 +160,14 @@ function C(e) {
         children: m
       }), null != et && "end" === y && et]
     }),
-    ec = V || C,
+    ec = V || A,
     eu = H;
   null != eu && "number" == typeof eu && (eu = "".concat(eu, "px"));
-  let ed = (0, r.jsx)(d.tE, O(b({}, A), {
+  let ed = (0, r.jsx)(d.tE, O(b({}, C), {
     children: (0, r.jsxs)("button", O(b({
       "data-mana-component": "button",
       role: a,
-      "aria-busy": C,
+      "aria-busy": A,
       className: o()(g.button, g[Q], g[f], {
         [g.hasText]: J,
         [g.fullWidth]: X,
@@ -193,11 +193,11 @@ function C(e) {
         buttonRef: ee,
         isLightMode: eo,
         disabled: V
-      }), null == C ? (0, r.jsx)("div", {
+      }), null == A ? (0, r.jsx)("div", {
         className: g.buttonChildrenWrapper,
         children: el
       }) : (0, r.jsx)(N, {
-        loading: C,
+        loading: A,
         size: Q,
         children: el
       })]
@@ -337,7 +337,7 @@ function R(e) {
     } else if ("sticker" === t.type) {
       let e = t.component;
       c = (0, r.jsx)(e, {
-        size: f.Z[A[o]],
+        size: f.Z[C[o]],
         sticker: t.asset,
         isInteracting: d
       })

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   L: () => R,
-  Z: () => C
+  Z: () => A
 }), require("./388685.js"), require("./781311.js"), require("./539854.js"), require("./704826.js"), require("./35282.js"), require("./290780.js"), require("./583741.js"), require("./125548.js");
 var Chunk373793 = require("./373793.js"),
   Chunk911969 = require("./911969.js"),
@@ -28,9 +28,9 @@ var Chunk373793 = require("./373793.js"),
   Chunk761652 = require("./761652.js");
 let I = new Set(["applicationCommandOption"]),
   T = new Set([Chunk911969.jw.ATTACHMENT]),
-  A = new Set(["line", "applicationCommand"]);
+  C = new Set(["line", "applicationCommand"]);
 
-function C(e, t, n, r) {
+function A(e, t, n, r) {
   let {
     insertData: i,
     isInline: d,
@@ -160,7 +160,7 @@ function N(e) {
     }), null;
     let e = y.bN.richValue(i)[0],
       t = e.children[0];
-    if (A.has(e.type) && y.LC.isText(t)) {
+    if (C.has(e.type) && y.LC.isText(t)) {
       let e = M(t.text, s);
       if (null != e) return a.Po({
         channelId: s.id,
@@ -216,7 +216,7 @@ function P(e, t, n) {
   _.startsWith(m) ? p = f.substring(m.length).trim() : _.startsWith(g) && (p = f.substring(g.length).trim());
   let v = [],
     I = null,
-    A = null;
+    C = null;
   if (null != u.options) {
     let e = new Set;
     if (null != d)
@@ -247,13 +247,13 @@ function P(e, t, n) {
             text: e
           }]
         };
-        v.push(a), 0 === e.length && null == I && (I = a), null == i && (A = a)
+        v.push(a), 0 === e.length && null == I && (I = a), null == i && (C = a)
       }
   }
   l = p.length > 0 ? "".concat(S.GI).concat(u.displayName, " ").concat(p.replace(/\r|\n/g, " ")) : 0 === v.length ? "".concat(S.GI).concat(u.displayName, " ") : "".concat(S.GI).concat(u.displayName), v.unshift({
     text: l
   });
-  let C = {
+  let A = {
     type: "applicationCommand",
     children: v,
     command: {
@@ -263,7 +263,7 @@ function P(e, t, n) {
     }
   };
   y.bN.withoutNormalizing(e, () => {
-    for (let [, t] of(b.Q.insertNodes(e, [C], {
+    for (let [, t] of(b.Q.insertNodes(e, [A], {
         at: O.YD
       }), y.bN.blocks(e).reverse())) y.C0.isAfter(t, O.YD) && b.Q.removeNodes(e, {
       at: t,
@@ -271,7 +271,7 @@ function P(e, t, n) {
     })
   });
   let N = null;
-  return null != I ? (b.Q.selectCommandOption(e, I.optionName), N = I.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, false), N = A.optionName) : b.Q.resetSelectionToEditorEnd(e), null == A && w(e, u), N
+  return null != I ? (b.Q.selectCommandOption(e, I.optionName), N = I.optionName) : null != C ? (b.Q.selectCommandOption(e, C.optionName, false), N = C.optionName) : b.Q.resetSelectionToEditorEnd(e), null == C && w(e, u), N
 }
 
 function R(e, t, n, r) {

@@ -2,7 +2,7 @@
 /** chunk id: 80932, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $K: () => C,
+  $K: () => A,
   OQ: () => O,
   RE: () => S,
   Xe: () => N,
@@ -129,13 +129,13 @@ function T(e) {
   return [...(0, d.Z)(t).keys()]
 }
 
-function A(e) {
+function C(e) {
   var t, n, r;
   return null == e ? null : null != (r = null != (n = e.id) ? n : null == (t = u.ZP.convertSurrogateToBase(e.surrogates)) ? true : t.name) ? r : e.name
 }
 
-function C(e) {
-  let t = A(e);
+function A(e) {
+  let t = C(e);
   null != t && p.DZ.updateAsync("favoriteEmojis", e => (e.emojis = T(e.emojis), i().size(e.emojis) >= E.oX) ? (h.Z.show({
     title: b.intl.string(b.t["+XYXtZ"]),
     body: b.intl.formatToPlainString(b.t.JaIyFi, {
@@ -145,7 +145,7 @@ function C(e) {
 }
 
 function N(e) {
-  let t = A(e);
+  let t = C(e);
   null != t && p.DZ.updateAsync("favoriteEmojis", e => {
     if (e.emojis = T(e.emojis), !e.emojis.includes(t)) returnfalse;
     e.emojis = e.emojis.filter(e => t !== e)

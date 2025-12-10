@@ -5,7 +5,7 @@ require.r(exports), require.d(exports, {
   ASSISTANT_WUMPUS_VOICE_USER: () => S,
   default: () => ek,
   mergeUser: () => P,
-  transformUser: () => C,
+  transformUser: () => A,
   users: () => O
 }), require("./388685.js"), require("./997841.js"), require("./825670.js"), require("./539854.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
@@ -52,7 +52,7 @@ function T(e, t) {
   return !(null == n || (0, u.d)(n.primaryGuild, t.primary_guild)) && (null == n.primaryGuild || null != t.primary_guild) && (n.primaryGuild = (0, u.l)(t.primary_guild), O[n.id] = n, v++, true)
 }
 
-function A(e, t) {
+function C(e, t) {
   switch (true) {
     case null == e.primaryGuild && null == t.primary_guild:
       break;
@@ -66,7 +66,7 @@ function A(e, t) {
   return t
 }
 
-function C(e) {
+function A(e) {
   let t = e.mfa_enabled;
   null != t && (e.mfaEnabled = t, delete e.mfa_enabled);
   let n = (0, p.G)(e.premium_type);
@@ -106,8 +106,8 @@ function P(e) {
   if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = D((0, p.QI)(r), r.premiumType));
   else if (n) {
     var a;
-    let n = C(e);
-    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, p.VR)(n) && (n = R(n)), n = A(r, n), r = r.merge(n)
+    let n = A(e);
+    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, p.VR)(n) && (n = R(n)), n = C(r, n), r = r.merge(n)
   }(0, p.jX)((0, p.QI)(r), t, r.premiumType);
   let o = O[e.id] !== r;
   return O[e.id] = r, o && v++, o
@@ -585,14 +585,14 @@ function eT(e) {
   return t.reduce((e, t) => P(t) || e, false)
 }
 
-function eA(e) {
+function eC(e) {
   let {
     users: t
   } = e;
   return t.reduce((e, t) => P(t) || e, false)
 }
 
-function eC(e) {
+function eA(e) {
   let {
     familyCenterTeenActivity: t
   } = e;
@@ -774,9 +774,9 @@ class eM extends Chunk750041.Z {
       LOCAL_MESSAGES_LOADED: ed,
       FAMILY_CENTER_INITIAL_LOAD: eI,
       FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: eT,
-      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eC,
+      FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: eA,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: eN,
-      FAMILY_CENTER_REQUEST_LINK_SUCCESS: eA,
+      FAMILY_CENTER_REQUEST_LINK_SUCCESS: eC,
       MEMBER_SAFETY_GUILD_MEMBER_SEARCH_SUCCESS: eP,
       LOAD_ICYMI_HYDRATED: eR,
       EMBEDDED_ACTIVITY_UPDATE_V2: eD,

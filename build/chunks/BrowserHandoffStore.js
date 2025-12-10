@@ -55,11 +55,11 @@ function T(e) {
   b = true, y.start(r, () => (0, f.lx)())
 }
 
-function A(e) {
+function C(e) {
   a = new p.Z(e.user)
 }
 
-function C() {
+function A() {
   v()
 }
 class N extends(o = Chunk442837.ZP.Store) {
@@ -82,9 +82,9 @@ let P = new N(Chunk570140.Z, {
   BROWSER_HANDOFF_BEGIN: I,
   BROWSER_HANDOFF_FROM_APP: T,
   BROWSER_HANDOFF_UNAVAILABLE: v,
-  BROWSER_HANDOFF_SET_USER: A,
-  LOGIN: C,
-  LOGIN_SUCCESS: C,
-  LOGOUT: C,
-  REGISTER: C
+  BROWSER_HANDOFF_SET_USER: C,
+  LOGIN: A,
+  LOGIN_SUCCESS: A,
+  LOGOUT: A,
+  REGISTER: A
 })

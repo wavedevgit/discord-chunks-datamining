@@ -89,7 +89,7 @@ function R(e) {
     },
     W = () => M ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
-      label: A.intl.string(A.t["+Xp3hq"]),
+      label: C.intl.string(C.t["+Xp3hq"]),
       action: () => {
         Y(), (0, _.pQ)(P({
           action: "PRESS_VIEW_PROFILE",
@@ -114,7 +114,7 @@ function R(e) {
         children: [(0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
             id: z,
-            children: A.intl.format(A.t.KRe1Fk, {
+            children: C.intl.format(C.t.KRe1Fk, {
               name: q
             })
           })
@@ -129,7 +129,7 @@ function R(e) {
               viewProfileItem: W()
             })
           }), (0, r.jsxs)("div", {
-            className: C.header,
+            className: A.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
               displayProfile: B,

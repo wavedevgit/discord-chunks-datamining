@@ -105,7 +105,7 @@ function T(e) {
   return n
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     user: n
@@ -114,7 +114,7 @@ function A(e) {
   m[t] = true, t === _ && y(t)
 }
 
-function C() {
+function A() {
   if (null == _) returnfalse;
   y(_)
 }
@@ -188,8 +188,8 @@ let M = new j(Chunk570140.Z, {
   CHANNEL_CREATE: I,
   CHANNEL_DELETE: I,
   CHANNEL_UPDATES: T,
-  GUILD_MEMBER_UPDATE: A,
-  CURRENT_USER_UPDATE: C,
+  GUILD_MEMBER_UPDATE: C,
+  CURRENT_USER_UPDATE: A,
   GUILD_ROLE_CREATE: N,
   GUILD_ROLE_UPDATE: N,
   GUILD_ROLE_DELETE: N,

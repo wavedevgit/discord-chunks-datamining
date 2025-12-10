@@ -27,7 +27,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk478743 = require("./478743.js");
 
-function A(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,19 +35,19 @@ function A(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = {},
+let A = {},
   N = {},
   P = {},
   R = 0;
 
 function D(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = C[e];
+    n = A[e];
   if (null != n) return n;
   let r = S.default.getCurrentUser();
   if (null == r) return b.Hn;
   let i = v.Z.getGuild(e);
-  return null == i ? b.Hn : C[e] = b.uB({
+  return null == i ? b.Hn : A[e] = b.uB({
     user: r,
     context: i,
     checkElevated: t
@@ -84,7 +84,7 @@ function L(e) {
 }
 
 function j() {
-  for (let e in C = {}, N = {}, P) P[module] += 1;
+  for (let e in A = {}, N = {}, P) P[module] += 1;
   R += 1
 }
 
@@ -189,7 +189,7 @@ function z(e) {
   let {
     guildId: t
   } = e;
-  delete C[t];
+  delete A[t];
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
@@ -214,7 +214,7 @@ function Q(e) {
   let {
     guildId: t
   } = e;
-  delete C[t];
+  delete A[t];
   let n = y.Z.getMutableBasicGuildChannelsForGuild(t);
   a().forEach(n, e => {
     delete N[e.id]
@@ -325,9 +325,9 @@ class J extends(r = Chunk442837.ZP.Store) {
 }
 
 function $() {
-  N = {}, C = {}, P = {}, R = 0
+  N = {}, A = {}, P = {}, R = 0
 }
-A(J, "displayName", "PermissionStore");
+C(J, "displayName", "PermissionStore");
 let ee = new J(Chunk570140.Z, {
   BACKGROUND_SYNC: M,
   CONNECTION_OPEN: M,

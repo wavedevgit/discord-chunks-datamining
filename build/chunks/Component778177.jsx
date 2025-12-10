@@ -609,7 +609,7 @@ class ei extends Chunk473749.PureComponent {
     })), B(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, true)
     }), B(this, "performSearch", e => {
-      A.S.dispatch(U.CkL.PERFORM_SEARCH, e)
+      C.S.dispatch(U.CkL.PERFORM_SEARCH, e)
     }), B(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e

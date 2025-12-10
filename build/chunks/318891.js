@@ -59,18 +59,18 @@ function T() {
   return null == exports || null == r ? v() : O(r, (0, Chunk719296.Z)(exports.location.id, exports.applicationId))
 }
 
-function A() {
+function C() {
   return (0, Chunk958185.Z)({
     LayerStore: Chunk819640.Z,
     PopoutWindowStore: Chunk928518.Z
   }) ? S() : I()
 }
-class C extends Chunk317770.Z {
+class A extends Chunk317770.Z {
   _initialize() {
-    Chunk944486.Z.addChangeListener(T), Chunk914010.Z.addChangeListener(T), Chunk19780.Z.addChangeListener(T), Chunk979651.Z.addChangeListener(T), Chunk928518.Z.addChangeListener(T), Chunk317381.ZP.addChangeListener(T), Chunk819640.Z.addChangeListener(A)
+    Chunk944486.Z.addChangeListener(T), Chunk914010.Z.addChangeListener(T), Chunk19780.Z.addChangeListener(T), Chunk979651.Z.addChangeListener(T), Chunk928518.Z.addChangeListener(T), Chunk317381.ZP.addChangeListener(T), Chunk819640.Z.addChangeListener(C)
   }
   _terminate() {
-    Chunk944486.Z.removeChangeListener(T), Chunk914010.Z.removeChangeListener(T), Chunk19780.Z.removeChangeListener(T), Chunk979651.Z.removeChangeListener(T), Chunk928518.Z.removeChangeListener(T), Chunk317381.ZP.removeChangeListener(T), Chunk819640.Z.removeChangeListener(A)
+    Chunk944486.Z.removeChangeListener(T), Chunk914010.Z.removeChangeListener(T), Chunk19780.Z.removeChangeListener(T), Chunk979651.Z.removeChangeListener(T), Chunk928518.Z.removeChangeListener(T), Chunk317381.ZP.removeChangeListener(T), Chunk819640.Z.removeChangeListener(C)
   }
 }
-let N = new C
+let N = new A

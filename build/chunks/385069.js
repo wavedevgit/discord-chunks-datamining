@@ -33,12 +33,12 @@ function m(e, t, n) {
     selectionManager: T
   } = t;
   e["aria-label"] || e["aria-labelledby"] || console.warn("An aria-label or aria-labelledby prop is required for accessibility.");
-  let A = (0, d.X)({
+  let C = (0, d.X)({
       usage: "search",
       sensitivity: "base"
     }),
     {
-      direction: C
+      direction: A
     } = (0, f.j)(),
     N = t.selectionManager.disabledBehavior,
     P = (0, u.useMemo)(() => g || new(0, r.i)({
@@ -46,10 +46,10 @@ function m(e, t, n) {
       disabledKeys: t.disabledKeys,
       disabledBehavior: N,
       ref: n,
-      direction: C,
-      collator: A,
+      direction: A,
+      collator: C,
       focusMode: E
-    }), [g, t.collection, t.disabledKeys, N, n, C, A, E]),
+    }), [g, t.collection, t.disabledKeys, N, n, A, C, E]),
     {
       collectionProps: R
     } = (0, _.g)({

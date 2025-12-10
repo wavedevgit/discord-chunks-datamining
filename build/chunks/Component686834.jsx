@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk205120 = require("./205120.js");
+  Chunk148884 = require("./148884.js");
 require("./442837.js"), require("./616022.js");
 var Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
@@ -55,7 +55,7 @@ function h(e) {
       location: n,
       quest: t
     })
-  }), [T, A] = i.useState(false), C = () => A(true), N = () => A(false), P = null != y ? y : f.U0;
+  }), [T, C] = i.useState(false), A = () => C(true), N = () => C(false), P = null != y ? y : f.U0;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: n,
@@ -70,9 +70,9 @@ function h(e) {
         })
       },
       className: p.questsCard,
-      onMouseEnter: C,
+      onMouseEnter: A,
       onMouseLeave: N,
-      onFocus: C,
+      onFocus: A,
       onBlur: N,
       children: (0, r.jsxs)("div", {
         ref: t => {

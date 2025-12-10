@@ -50,7 +50,7 @@ module.exports = function(e, t, n) {
     return true === p ? f : I(i())
   }
 
-  function A() {
+  function C() {
     var e = i(),
       n = v(e);
     if (c = arguments, u = this, _ = e, n) {
@@ -59,7 +59,7 @@ module.exports = function(e, t, n) {
     }
     return true === p && (p = setTimeout(S, t)), f
   }
-  return t = a(t) || 0, r(n) && (h = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), A.cancel = function() {
+  return t = a(t) || 0, r(n) && (h = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), C.cancel = function() {
     true !== p && clearTimeout(p), m = 0, c = _ = u = p = true
-  }, A.flush = T, A
+  }, C.flush = T, C
 }

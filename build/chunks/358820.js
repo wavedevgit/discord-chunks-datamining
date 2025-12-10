@@ -66,12 +66,12 @@ function I(e, t) {
   }), e
 }
 let T = new Chunk710845.Z("VoiceFilterActionCreators"),
-  A = 1e3,
-  C = (0, Chunk392711.debounce)(() => {
+  C = 1e3,
+  A = (0, Chunk392711.debounce)(() => {
     Chunk570140.Z.dispatch({
       type: "VOICE_FILTER_LAGGING"
     })
-  }, A, {
+  }, C, {
     leading: true
   }),
   N = false,
@@ -249,7 +249,7 @@ async function M() {
         state: Chunk750180.O.LOADING
       }), await Chunk998502.ZP.ensureModule("discord_voice_filters");
       let t = Chunk998502.ZP.getVoiceFilters();
-      await exports.setupResources(), true !== exports.setVoiceFilterLaggingCallback && await exports.setVoiceFilterLaggingCallback(C), true !== exports.setVoiceFilterReadyCallback && await exports.setVoiceFilterReadyCallback(e => {
+      await exports.setupResources(), true !== exports.setVoiceFilterLaggingCallback && await exports.setVoiceFilterLaggingCallback(A), true !== exports.setVoiceFilterReadyCallback && await exports.setVoiceFilterReadyCallback(e => {
         s.Z.dispatch({
           type: "VOICE_FILTER_READY",
           name: e

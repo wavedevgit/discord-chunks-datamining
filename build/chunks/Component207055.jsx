@@ -1,7 +1,7 @@
 /** Chunk was on 73755 **/
 /** chunk id: 207055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./388685.js"), require("./290780.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ let U = Chunk473749.memo(e => {
     channel: y,
     sessionId: E,
     nick: Z
-  } = e, T = C.id, k = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, V, B] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), F = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), H = (0, c.Z)({
+  } = e, T = C.id, k = (0, o.e7)([S.default], () => S.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), B = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), H = (0, c.Z)({
     userId: T,
     checkSoundSharing: true
   }), G = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), W = k && G, z = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(y.guild_id, T)), q = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(y.id).has(T)), K = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
@@ -97,13 +97,13 @@ let U = Chunk473749.memo(e => {
       otherClientSessionType: null == ee || null == (t = ee.clientInfo) ? true : t.os,
       voicePlatform: en,
       localMute: U && !k,
-      localVideoDisabled: B,
+      localVideoDisabled: F,
       mute: a || U,
       deaf: s || V,
       speaking: H,
       latched: W,
       ringing: q,
-      priority: F,
+      priority: B,
       embeddedApplication: Y[0],
       isStreaming: null != Q && Q.channelId === y.id,
       isWatching: null != $ && $.state !== L.jm8.ENDED,
@@ -127,7 +127,7 @@ let U = Chunk473749.memo(e => {
 });
 U.displayName = "ConnectedVoiceUser";
 let V = [],
-  B = function(e) {
+  F = function(e) {
     let {
       allowPreviews: t = true,
       allowDragging: n = true,
@@ -145,14 +145,14 @@ let V = [],
     } = e, [j, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, x.Es)(l.id, null != c ? c : V), {
       shouldShow: M,
       dismiss: D
-    } = (0, y.UM)(l), B = r.useRef(new s.sW(50, () => {
+    } = (0, y.UM)(l), F = r.useRef(new s.sW(50, () => {
       P(A.current), A.current = null
-    })), F = r.useRef(new s.sW(175, () => {
+    })), B = r.useRef(new s.sW(175, () => {
       P(null)
     })), H = r.useCallback(e => {
-      t && (N(true), F.current.cancel(), A.current = e, B.current.delay())
+      t && (N(true), B.current.cancel(), A.current = e, F.current.delay())
     }, [t]), G = r.useCallback(e => {
-      t && (B.current.cancel(), A.current = null, N(false), F.current.delay())
+      t && (F.current.cancel(), A.current = null, N(false), B.current.delay())
     }, [t]), W = (0, o.Wu)([T.Z], () => {
       if (u) return [];
       let e = new Set;

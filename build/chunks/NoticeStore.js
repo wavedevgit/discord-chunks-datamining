@@ -249,7 +249,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         } = e;
         if (null == n) returnfalse;
         let r = $.ZP.getMember(n, t.id);
-        return null != r && !r.isPending && (0, A.EY)(r)
+        return null != r && !r.isPending && (0, C.EY)(r)
       }
     },
     [Chunk981631.kVF.QUARANTINED]: {
@@ -464,7 +464,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eI.O0b.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = null != t && t.status === eI.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, ey.M5)(n, eA.PremiumTypes.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
+        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null == t ? true : t.canceledAt) != null && (null == t ? true : t.status) === eI.O0b.CANCELED && 1 >= a()().diff(a()(t.canceledAt), "days"), o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = null != t && t.status === eI.O0b.CANCELED && !o && r <= 7 && r >= 0 && (0, ey.M5)(n, eC.PremiumTypes.TIER_2) && !i && !n.hasFreePremium() && !t.isPurchasedExternally;
         return !eq(eI.kVF.PREMIUM_UNCANCEL) && s
       },
       metadata: e => {
@@ -484,7 +484,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           premiumSubscription: t,
           currentUser: n
-        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null != t ? a()(t.currentPeriodEnd).diff(a()(t.currentPeriodStart).startOf("day"), "days") : 0) > 14 ? 7 : 2, o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = eg.Z.applicationIdsFetched.has(eA.CL), l = eg.Z.getForApplication(eA.CL), c = null != t ? (0, ey.Af)(t) : null, u = null != c ? ey.ZP.getSkuIdForPlan(c.planId) : null, d = null != l && null != c && Array.from(l).filter(e => {
+        } = e, r = null != t ? a()(t.currentPeriodEnd).diff(a()().startOf("day"), "days") : 0, i = (null != t ? a()(t.currentPeriodEnd).diff(a()(t.currentPeriodStart).startOf("day"), "days") : 0) > 14 ? 7 : 2, o = null != t && a()(t.currentPeriodEnd).isBefore(a()()), s = eg.Z.applicationIdsFetched.has(eC.CL), l = eg.Z.getForApplication(eC.CL), c = null != t ? (0, ey.Af)(t) : null, u = null != c ? ey.ZP.getSkuIdForPlan(c.planId) : null, d = null != l && null != c && Array.from(l).filter(e => {
           let {
             skuId: t,
             consumed: n
@@ -583,7 +583,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           selectedGuildId: t
         } = e, n = null != t ? ee.Z.getGuild(t) : null;
-        return null != t && null != C.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eI.GuildFeatures.COMMUNITY)) && !eq(eI.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
+        return null != t && null != A.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eI.GuildFeatures.COMMUNITY)) && !eq(eI.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
       },
       metadata: e => {
         let {
@@ -592,7 +592,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           dismissUntil: a()().add(2, "hours").toDate()
         };
         if (null != t) {
-          let e = C.Z.getMentionRaidDetected(t);
+          let e = A.Z.getMentionRaidDetected(t);
           null != e && (n.decisionId = e.decisionId)
         }
         return n

@@ -50,7 +50,7 @@ function E(e, t, n) {
       isBypassInvite: (0, a.yE)(null != (e = r.flags) ? e : 0, i.$.IS_APPLICATION_BYPASS),
       inviteRoles: r.roles
     }
-  }, [h, n]), T = (0, l.Z)(), A = r.useMemo(() => {
+  }, [h, n]), T = (0, l.Z)(), C = r.useMemo(() => {
     if (O) {
       if ("INVITE" === t && null != I && I.length > 0 && null != y) {
         var n;
@@ -66,7 +66,7 @@ function E(e, t, n) {
   }, [O, T, h, g, v, e.visibility, e.tag, S, t, b, I, y]);
   return {
     guildId: h,
-    ctaType: A,
+    ctaType: C,
     validInviteKey: v
   }
 }

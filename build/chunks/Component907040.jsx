@@ -104,7 +104,7 @@ var ec = function(e) {
   return e[e.NONE = 0] = "NONE", e[e.TABS_EXPRESSION_PICKER = 1] = "TABS_EXPRESSION_PICKER", e[e.NO_TABS_EXPRESSION_PICKER = 2] = "NO_TABS_EXPRESSION_PICKER", e
 }({});
 let eu = (e, t) => {
-    I.kJ.setInspectedExpressionPosition(e, t, A.u.GRID_NAVIGATOR_EVENT)
+    I.kJ.setInspectedExpressionPosition(e, t, C.u.GRID_NAVIGATOR_EVENT)
   },
   ed = e => {
     let {
@@ -161,7 +161,7 @@ let eu = (e, t) => {
       gridContainerProps: E,
       handleGridContainerKeyDown: b,
       isUsingKeyboardNavigation: y
-    } = (0, C.VO)({
+    } = (0, A.VO)({
       columnCounts: r,
       gridNavigatorId: Q.Vr,
       itemGrid: o,
@@ -176,7 +176,7 @@ let eu = (e, t) => {
         rowIndex: n,
         source: r
       } = e;
-      r !== A.u.GRID_NAVIGATOR_EVENT && m({
+      r !== C.u.GRID_NAVIGATOR_EVENT && m({
         type: c.s.SET_FOCUSED_POSITION,
         x: t,
         y: n
@@ -223,7 +223,7 @@ let eu = (e, t) => {
         channel: c,
         guildId: f,
         closePopout: _,
-        emojiSize: A = Q.Su.MEDIUM,
+        emojiSize: C = Q.Su.MEDIUM,
         hasTabWrapper: P = false,
         containerContext: k = 0,
         includeCreateEmojiButton: et,
@@ -239,8 +239,8 @@ let eu = (e, t) => {
         wrapper: eS,
         shouldHidePickerActions: eI = false,
         messageId: eT,
-        renderHeader: eA,
-        listHeaderClassName: eC,
+        renderHeader: eC,
+        listHeaderClassName: eA,
         categoryListClassName: eN,
         shouldShowSoundmojiInEmojiPicker: eP = false,
         showOnlyUnicode: eR = false,
@@ -285,7 +285,7 @@ let eu = (e, t) => {
       diversitySurrogate: O.ZP.diversitySurrogate
     })), e4 = (0, U.DV)(eZ, c, l, eR), e5 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e8 = w.d4.useSetting(), e6 = i.useMemo(() => new Set(e8), [e8]), e7 = i.useCallback(e => {
       w.d4.updateSetting(Array.from(e))
-    }, []), e9 = (0, C.ep)({
+    }, []), e9 = (0, A.ep)({
       gridWrapperRef: eB,
       containerWidth: eu,
       listPaddingLeft: eo,
@@ -304,7 +304,7 @@ let eu = (e, t) => {
       emojiSearchResults: e4,
       collapsedSections: e6,
       emojiPaddingHorizontal: ea,
-      emojiSpriteSize: A,
+      emojiSpriteSize: C,
       shouldShowSoundmojiInEmojiPicker: eP,
       showOnlyUnicode: eR
     }), {
@@ -446,7 +446,7 @@ let eu = (e, t) => {
         diversitySurrogate: e2,
         isBurstReaction: eY,
         onBurstReactionToggle: th,
-        renderHeader: eA,
+        renderHeader: eC,
         showAddEmojiButton: eD
       }),
       tE = [];
@@ -489,7 +489,7 @@ let eu = (e, t) => {
                 diversitySurrogate: e2,
                 emojiGrid: tn,
                 emojiListRef: eF,
-                emojiSize: A,
+                emojiSize: C,
                 getEmojiItemProps: tl,
                 getEmojiRowProps: tc,
                 gridWidth: e9,
@@ -505,7 +505,7 @@ let eu = (e, t) => {
                 channelId: null == c ? true : c.id,
                 messageId: eT,
                 isBurstReaction: eY,
-                listHeaderClassName: eC
+                listHeaderClassName: eA
               }) : null
             }))]
           }), (0, r.jsx)(W.k, {

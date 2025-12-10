@@ -43,7 +43,7 @@ function O(e) {
     iconURL: O,
     scrollerRef: v,
     sectionName: S
-  } = e, I = (0, l.ap)((0, u.ZP)()), T = i.useRef(null), A = i.useRef(null), C = i.useRef(null), N = i.useRef(null), P = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), R = (0, d.ZP)("number" == typeof O ? "" : O, null != P ? P : ""), D = i.useMemo(() => {
+  } = e, I = (0, l.ap)((0, u.ZP)()), T = i.useRef(null), C = i.useRef(null), A = i.useRef(null), N = i.useRef(null), P = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOW).hex(), R = (0, d.ZP)("number" == typeof O ? "" : O, null != P ? P : ""), D = i.useMemo(() => {
     var e, t;
     return null != (t = null == (e = (0, f.wh)({
       foreground: o()(R),
@@ -51,11 +51,11 @@ function O(e) {
       ratio: 5,
       saturationFactor: .6
     })) ? true : e.hex()) ? t : R
-  }, [R, I]), w = y(T), x = y(A), L = i.useCallback(() => {
+  }, [R, I]), w = y(T), x = y(C), L = i.useCallback(() => {
     var e, t, n;
     let r = v.current,
       i = T.current,
-      a = C.current,
+      a = A.current,
       o = null == N ? true : N.current,
       l = parseInt(null != (e = null == w ? true : w.height) ? e : ""),
       c = parseInt(null != (t = null == x ? true : x.height) ? t : "");
@@ -96,7 +96,7 @@ function O(e) {
       }), (0, r.jsx)("div", {
         className: h.nameContainer,
         children: (0, r.jsx)(c.Heading, {
-          ref: C,
+          ref: A,
           className: h.textApplicationName,
           variant: "heading-lg/extrabold",
           children: a
@@ -112,7 +112,7 @@ function O(e) {
         sectionName: S
       })
     }) : null, (0, r.jsx)("div", {
-      ref: A,
+      ref: C,
       className: h.bannerBackground,
       style: {
         backgroundColor: R

@@ -61,8 +61,8 @@ let p = "no_payment_source",
   S = false,
   I = false,
   T = false,
-  A = false,
-  C = null,
+  C = false,
+  A = null,
   N = new Set;
 
 function P(e) {
@@ -70,14 +70,14 @@ function P(e) {
 }
 
 function R(e) {
-  P(), _ = e.skuId, h = e.applicationId, I = e.isIAP, g = e.analyticsLocation, C = e.context, A = e.isGift, T = true, S = false, r = e.resolve, i = e.reject, v = null, y = null, E = e.promotionId
+  P(), _ = e.skuId, h = e.applicationId, I = e.isIAP, g = e.analyticsLocation, A = e.context, C = e.isGift, T = true, S = false, r = e.resolve, i = e.reject, v = null, y = null, E = e.promotionId
 }
 
 function D(e) {
   let {
     error: t
   } = e;
-  T = false, C = null, P(t)
+  T = false, A = null, P(t)
 }
 
 function w(e) {
@@ -143,15 +143,15 @@ function Z() {
 }
 
 function B(e) {
-  A = e.isGift
+  C = e.isGift
 }
 
 function F(e) {
   let {
     locked: t
   } = e;
-  if (!t || null == C) returnfalse;
-  T = false, C = null, P()
+  if (!t || null == A) returnfalse;
+  T = false, A = null, P()
 }
 class V extends(a = Chunk442837.ZP.Store) {
   getPricesForSku(e) {
@@ -159,7 +159,7 @@ class V extends(a = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return C === module && T
+    return A === module && T
   }
   get isPurchasingSKU() {
     return O
@@ -189,7 +189,7 @@ class V extends(a = Chunk442837.ZP.Store) {
     return m
   }
   get isGift() {
-    return A
+    return C
   }
   isFetchingSKU(e) {
     return N.has(e)

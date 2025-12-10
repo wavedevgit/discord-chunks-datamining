@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   AT: () => E,
-  DQ: () => A,
+  DQ: () => C,
   Hz: () => D,
-  LD: () => C,
+  LD: () => A,
   MD: () => T,
   SI: () => R,
   UJ: () => P,
@@ -63,10 +63,10 @@ function v(e) {
 function S(e, t) {
   var n, r;
   if (t === h.qn.NONE || null == e) returnfalse;
-  if ((null == (n = e.attachments) ? true : n.some(e => C({
+  if ((null == (n = e.attachments) ? true : n.some(e => A({
       type: _.l.Attachment,
       media: e
-    }, t).length > 0)) || (null == (r = e.embeds) ? true : r.some(e => C({
+    }, t).length > 0)) || (null == (r = e.embeds) ? true : r.some(e => A({
       type: _.l.Embed,
       media: e
     }, t).length > 0))) returntrue;
@@ -116,7 +116,7 @@ function T(e, t) {
   returnfalse
 }
 
-function A(e) {
+function C(e) {
   var t, n, r, i;
   let a = b(e);
   if (a === h.qn.NONE) return {
@@ -137,7 +137,7 @@ function A(e) {
   }
 }
 
-function C(e, t) {
+function A(e, t) {
   if (t === h.qn.NONE) return [];
   let n = w(t);
   return 0 === n.length ? [] : n.filter(t => R(t, e)).map(e => h.Fj[e].obscureReason)

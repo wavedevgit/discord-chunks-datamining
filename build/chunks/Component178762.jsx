@@ -109,7 +109,7 @@ let Z = e => {
           entry: t
         }));
       case l.s.WATCHED_MEDIA:
-        return (0, r.jsx)(C.Z, L(w({}, n), {
+        return (0, r.jsx)(A.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_GAME:
@@ -178,7 +178,7 @@ let Z = e => {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(A.Z, L(w({}, n), {
+        return (0, r.jsx)(C.Z, L(w({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
@@ -220,13 +220,13 @@ let Z = e => {
         requestId: p.requestId,
         richPresenceName: S ? I : true
       }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, S]),
-      A = i.useRef(false),
-      [C, N] = i.useState(false),
+      C = i.useRef(false),
+      [A, N] = i.useState(false),
       [D, x] = i.useState(false),
       M = (0, c.e7)([f.Z], () => f.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      C && M && x(true)
-    }, [C, M]), i.useLayoutEffect(() => {
+      A && M && x(true)
+    }, [A, M]), i.useLayoutEffect(() => {
       null != h.current && y(true)
     }, []);
     let k = i.useCallback(e => {
@@ -254,8 +254,8 @@ let Z = e => {
         trailing: false
       }), []),
       W = () => {
-        A.current = false, setTimeout(() => {
-          A.current || (N(false), x(M))
+        C.current = false, setTimeout(() => {
+          C.current || (N(false), x(M))
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
@@ -264,8 +264,8 @@ let Z = e => {
       })), (0, r.jsx)("div", {
         ref: l,
         onMouseEnter: () => {
-          A.current = true, setTimeout(() => {
-            A.current && N(true), Y(T)
+          C.current = true, setTimeout(() => {
+            C.current && N(true), Y(T)
           }, 100)
         },
         onMouseLeave: W,
@@ -285,7 +285,7 @@ let Z = e => {
             })
           },
           position: "left",
-          shouldShow: C,
+          shouldShow: A,
           positionKey: g,
           onRequestOpen: () => Y(T),
           onRequestClose: () => {
@@ -307,12 +307,12 @@ let Z = e => {
                 }
               },
               onClick: () => {
-                C || N(true)
+                A || N(true)
               },
               onContextMenu: k,
               children: (0, r.jsx)(Z, L(w({}, p), {
                 selected: n,
-                hovered: A.current
+                hovered: C.current
               }))
             }))
           }

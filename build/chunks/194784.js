@@ -36,8 +36,8 @@ function b(e, t, n) {
     {
       labelProps: I,
       fieldProps: T,
-      descriptionProps: A,
-      errorMessageProps: C
+      descriptionProps: C,
+      errorMessageProps: A
     } = (0, d.U)({
       ...e,
       labelElementType: "span",
@@ -121,8 +121,8 @@ function b(e, t, n) {
       }
     }),
     inputProps: Z,
-    descriptionProps: A,
-    errorMessageProps: C,
+    descriptionProps: C,
+    errorMessageProps: A,
     isInvalid: O,
     validationErrors: v,
     validationDetails: S

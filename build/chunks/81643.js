@@ -7,11 +7,11 @@ require.d(exports, {
   Jm: () => T,
   L0: () => P,
   L5: () => S,
-  M$: () => A,
+  M$: () => C,
   WD: () => x,
   bj: () => O,
   g0: () => N,
-  gD: () => C,
+  gD: () => A,
   kJ: () => D,
   l6: () => w,
   pY: () => R,
@@ -58,12 +58,12 @@ function T() {
   return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_TEEN
 }
 
-function A() {
+function C() {
   let e = Chunk594174.default.getCurrentUser();
   return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_ADULT
 }
 
-function C() {
+function A() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (null == module ? true : module.ageVerificationStatus) === Chunk911969.F$.VERIFIED_ADULT
 }

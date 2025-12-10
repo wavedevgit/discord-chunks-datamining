@@ -80,9 +80,9 @@ function B(e, t) {
   }), e
 }
 async function F(e) {
-  var t, n, r, o, l, u, d, _, m, h, g, E, b, v, I, T, A;
+  var t, n, r, o, l, u, d, _, m, h, g, E, b, v, I, T, C;
   let {
-    command: C,
+    command: A,
     optionValues: D,
     context: M,
     commandTargetId: k,
@@ -98,14 +98,14 @@ async function F(e) {
   null == M.autocomplete && a.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
     context: M,
-    command: C,
+    command: A,
     commandOrigin: W
   }), await y.Z.unarchiveThreadIfNecessary(M.channel.id);
   let q = [],
     Q = [],
     X = (0, L.D7)(W);
-  if (null != C.options)
-    for (let e of C.options) {
+  if (null != A.options)
+    for (let e of A.options) {
       let t;
       if (e.type === c.jw.SUB_COMMAND || e.type === c.jw.SUB_COMMAND_GROUP || !(e.name in D)) continue;
       let n = (null == (l = M.autocomplete) ? true : l.name) === e.name || true;
@@ -204,40 +204,40 @@ async function F(e) {
         focused: n
       }))
     }
-  if (null != C.subCommandPath)
-    for (let e = C.subCommandPath.length - 1; e >= 0; e -= 1) {
+  if (null != A.subCommandPath)
+    for (let e = A.subCommandPath.length - 1; e >= 0; e -= 1) {
       let {
         name: t,
         type: n
-      } = C.subCommandPath[e];
+      } = A.subCommandPath[e];
       q = [{
         type: n,
         name: t,
         options: q
       }]
     }
-  if (null != C.execute) return f.ZP.trackWithMetadata(j.rMx.APPLICATION_COMMAND_USED, {
-    command_id: C.id,
-    application_id: C.applicationId,
-    command_type: C.type,
+  if (null != A.execute) return f.ZP.trackWithMetadata(j.rMx.APPLICATION_COMMAND_USED, {
+    command_id: A.id,
+    application_id: A.applicationId,
+    command_type: A.type,
     location: z(W),
     source: H
-  }), C.execute(q, M);
-  if (C.inputType === x.iw.BUILT_IN || C.inputType === x.iw.BUILT_IN_TEXT || C.inputType === x.iw.BUILT_IN_INTEGRATION) return;
+  }), A.execute(q, M);
+  if (A.inputType === x.iw.BUILT_IN || A.inputType === x.iw.BUILT_IN_TEXT || A.inputType === x.iw.BUILT_IN_INTEGRATION) return;
   let J = {
-      version: C.version,
-      id: null != (T = null == (t = C.rootCommand) ? true : t.id) ? T : C.id,
-      guild_id: C.guildId,
-      name: null != (A = null == (n = C.rootCommand) ? true : n.name) ? A : C.untranslatedName,
-      type: C.type,
+      version: A.version,
+      id: null != (T = null == (t = A.rootCommand) ? true : t.id) ? T : A.id,
+      guild_id: A.guildId,
+      name: null != (C = null == (n = A.rootCommand) ? true : n.name) ? C : A.untranslatedName,
+      type: A.type,
       options: q,
-      application_command: C.rootCommand
+      application_command: A.rootCommand
     },
     $ = () => {
       V(D)
     };
-  null != k && (J.target_id = k), null != M.autocomplete ? (0, N.GV)(C, M, J) : (s.Z.clearAll(M.channel.id, X), Y({
-    applicationId: C.applicationId,
+  null != k && (J.target_id = k), null != M.autocomplete ? (0, N.GV)(A, M, J) : (s.Z.clearAll(M.channel.id, X), Y({
+    applicationId: A.applicationId,
     data: J,
     context: M,
     attachments: Q,
@@ -246,7 +246,7 @@ async function F(e) {
     analytics_location: z(W),
     sectionName: Z,
     source: H,
-    interactionLifecycleOptions: await B(C, M, J)
+    interactionLifecycleOptions: await B(A, M, J)
   }))
 }
 let V = e => {
@@ -254,7 +254,7 @@ let V = e => {
       names: [e.name.replaceAll(":", "")],
       surrogates: "",
       unicodeVersion: 6
-    }) : "customEmoji" === e.type ? _.ZP.getCustomEmojiById(e.emojiId) : null).filter(A.lm));
+    }) : "customEmoji" === e.type ? _.ZP.getCustomEmojiById(e.emojiId) : null).filter(C.lm));
     t.length > 0 && a.Z.dispatch({
       type: "EMOJI_TRACK_USAGE",
       emojiUsed: t
@@ -437,7 +437,7 @@ async function Q(e, t, n, r) {
       totalSize: o,
       largestUploadedFileSize: s
     } = await q(e, false);
-  if (s > Math.max(i, M.Y1) || o > C.zz) return a(s), false;
+  if (s > Math.max(i, M.Y1) || o > A.zz) return a(s), false;
   try {
     await (0, d.Z)(e)
   } catch (n) {
@@ -448,5 +448,5 @@ async function Q(e, t, n, r) {
   return {
     totalSize: o,
     largestUploadedFileSize: s
-  } = await q(e, true), !e.some(e => e.error === j.evJ.ENTITY_TOO_LARGE) && !(o > C.zz) || (a(s), false)
+  } = await q(e, true), !e.some(e => e.error === j.evJ.ENTITY_TOO_LARGE) && !(o > A.zz) || (a(s), false)
 }

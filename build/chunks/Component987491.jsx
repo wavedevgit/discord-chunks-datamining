@@ -77,7 +77,7 @@ function M(e) {
         className: y.headerCell,
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: P.intl.string(P.t.Es7n9c)
         })
       }), (0, l.jsx)("th", {
@@ -87,21 +87,21 @@ function M(e) {
           onClick: n,
           children: [(0, l.jsx)(u.Text, {
             variant: "eyebrow",
-            color: "interactive-normal",
+            color: "interactive-text-default",
             children: P.intl.string(P.t.EZ5QWL)
-          }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(S.Z, {
+          }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(T.Z, {
             className: y.sortIcon,
-            direction: S.Z.Directions.UP
-          }) : (0, l.jsx)(S.Z, {
+            direction: T.Z.Directions.UP
+          }) : (0, l.jsx)(T.Z, {
             className: y.sortIcon,
-            direction: S.Z.Directions.DOWN
+            direction: T.Z.Directions.DOWN
           })]
         })
       }), (0, l.jsx)("th", {
         className: a()(y.headerCell, y.moreOptionsCol),
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: P.intl.string(P.t["5Q9xGr"])
         })
       })]
@@ -118,7 +118,7 @@ let Z = Chunk473749.memo(function(e) {
     } = t, {
       analyticsLocations: s
     } = (0, j.ZP)(), o = r.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, T.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, S.openUserProfileModal)({
         userId: n.id,
         joinRequestId: i,
         sourceAnalyticsLocations: s
@@ -139,7 +139,7 @@ let Z = Chunk473749.memo(function(e) {
           children: (0, l.jsxs)(u.P3F, {
             onClick: o,
             className: w.nameContainer,
-            children: [n.globalName, (0, l.jsx)(_.ZP, {
+            children: [n.globalName, (0, l.jsx)(C.ZP, {
               primaryGuild: null == n ? true : n.primaryGuild,
               userId: null == n ? true : n.id,
               contextGuildId: a,
@@ -301,7 +301,7 @@ function L(e) {
     guildId: t
   }), o = (0, c.e7)([h.Z], () => h.Z.isFetching()), {
     guildJoinRequests: d
-  } = (0, C.j)({
+  } = (0, _.j)({
     guildId: t,
     applicationStatus: n,
     sortOrder: s

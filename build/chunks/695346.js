@@ -18,9 +18,9 @@ require.d(exports, {
   JG: () => eW,
   JN: () => el,
   JT: () => eu,
-  JY: () => C,
+  JY: () => A,
   L1: () => ex,
-  NA: () => eC,
+  NA: () => eA,
   OW: () => em,
   Ok: () => eS,
   Ou: () => z,
@@ -29,7 +29,7 @@ require.d(exports, {
   QK: () => eL,
   QZ: () => w,
   R$: () => y,
-  RS: () => eA,
+  RS: () => eC,
   R_: () => eH,
   Rt: () => e3,
   SE: () => eU,
@@ -54,7 +54,7 @@ require.d(exports, {
   co: () => ey,
   d$: () => H,
   d4: () => j,
-  d8: () => A,
+  d8: () => C,
   dN: () => b,
   eR: () => v,
   eo: () => F,
@@ -152,13 +152,13 @@ let b = (0, Chunk560997.Zc)("textAndImages", "useLegacyChatInput", e => {
 }));
 let T = (0, Chunk560997.Zc)("notifications", "reactionNotifications", e => null != e ? e : a.Ns.NOTIFICATIONS_ENABLED, e => e);
 (0, Chunk560997.Zc)("notifications", "customStatusPushNotifications", e => null != e ? e : a.Oi.STATUS_PUSH_UNSET, e => e);
-let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications", e => {
+let C = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: !!e
   })),
-  C = (0, Chunk560997.Zc)("notifications", "enableFriendOnlineNotifications", e => {
+  A = (0, Chunk560997.Zc)("notifications", "enableFriendOnlineNotifications", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -427,13 +427,13 @@ let eb = new Set(Object.values(Chunk981631.Skl)),
   }, e => o.D5.create({
     value: e
   })), "text", "inlineAttachmentMedia"),
-  eA = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
+  eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "inlineEmbedMedia", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
     value: e
   })), "text", "inlineEmbedMedia"),
-  eC = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
+  eA = (0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "renderEmbeds", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({

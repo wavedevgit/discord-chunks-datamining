@@ -69,11 +69,11 @@ let I = {
     opacity: 1
   };
 
-function A() {
+function C() {
   return 500 !== o().random(1, 1e3) ? "call_ringing" : o().sample(["call_ringing_beat", "call_ringing_snow_halation"])
 }
 
-function C() {
+function A() {
   let e = (0, Chunk442837.Wu)([Chunk340895.Z, Chunk944486.Z, Chunk317381.ZP], () => Chunk340895.Z.getIncomingCalls().filter(e => {
       let {
         channel: t
@@ -87,7 +87,7 @@ function C() {
     y = Chunk473749.useRef(false),
     v = (0, Chunk35387.Z)(() => {
       let e = "call_ringing";
-      return o === Chunk871465.Y.CLASSIC ? (0, Chunk460181.tu)(A(), module) : (0, Chunk460181.uk)("call_ringing", o)
+      return o === Chunk871465.Y.CLASSIC ? (0, Chunk460181.tu)(C(), module) : (0, Chunk460181.uk)("call_ringing", o)
     }, [o]);
   return Chunk473749.useEffect(() => () => {
     v.stop()
@@ -117,4 +117,4 @@ function C() {
     animatedStyle: e
   })))
 }
-let N = Chunk473749.memo(C)
+let N = Chunk473749.memo(A)

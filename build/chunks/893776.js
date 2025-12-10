@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let T = new Chunk710845.Z("AuthenticationActionCreators"),
-  A = 5e3,
-  C = null;
+  C = 5e3,
+  A = null;
 var N = function(e) {
   return e.MFA = "MFA", e.SUCCESS = "SUCCESS", e
 }({});
@@ -592,12 +592,12 @@ let D = {
       withGuildExperiments: e
     })
   },
-  getLocationMetadata: () => null != C ? C : (clearTimeout(r), r = setTimeout(() => {
+  getLocationMetadata: () => null != A ? A : (clearTimeout(r), r = setTimeout(() => {
     Chunk570140.Z.dispatch({
       type: "SET_CONSENT_REQUIRED",
       consentRequired: true
     })
-  }, A), C = Chunk544891.tn.get({
+  }, C), A = Chunk544891.tn.get({
     url: Chunk981631.ANM.AUTH_LOCATION_METADATA,
     retries: 2,
     oldFormErrors: true,
@@ -614,7 +614,7 @@ let D = {
     if (l.Z.dispatch({
         type: "SET_LOCATION_METADATA",
         countryCode: null != (o = null == e || null == (t = e.body) ? true : t.country_code) ? o : true
-      }), C = null, (null == e || null == (n = e.body) ? true : n.promotional_email_opt_in) != null) {
+      }), A = null, (null == e || null == (n = e.body) ? true : n.promotional_email_opt_in) != null) {
       let t = e.body.promotional_email_opt_in;
       (0, u.K4)({
         required: t.required,
@@ -626,7 +626,7 @@ let D = {
     clearTimeout(r), Chunk570140.Z.dispatch({
       type: "SET_CONSENT_REQUIRED",
       consentRequired: true
-    }), C = null
+    }), A = null
   })),
   closeSuspendedUser() {
     Chunk570140.Z.dispatch({

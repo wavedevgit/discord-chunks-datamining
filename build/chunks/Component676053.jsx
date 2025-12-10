@@ -83,8 +83,8 @@ function T(e) {
       title: O,
       body: I,
       assetUrl: T,
-      previewUrl: A = T,
-      disableMediaViewer: C = false,
+      previewUrl: C = T,
+      disableMediaViewer: A = false,
       action: N,
       caretConfig: P = {
         align: "center"
@@ -99,7 +99,7 @@ function T(e) {
     M = S(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]);
   let {
     reducedMotion: k
-  } = i.useContext(o.Sfi), U = (0, a.C)(), G = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : U, Z = i.useRef(null), B = (0, o.j1L)(A), F = i.useCallback(() => ({
+  } = i.useContext(o.Sfi), U = (0, a.C)(), G = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : U, Z = i.useRef(null), B = (0, o.j1L)(C), F = i.useCallback(() => ({
     type: "VIDEO",
     url: T,
     proxyUrl: T,
@@ -130,11 +130,11 @@ function T(e) {
     }, [F, w, x]),
     W = B ? (0, r.jsx)(o.zsu, {
       type: "image",
-      src: A
+      src: C
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Z, {
         ref: Z,
-        src: A,
+        src: C,
         width: 232,
         height: 131,
         autoPlay: !k.enabled && G,
@@ -143,7 +143,7 @@ function T(e) {
         playsInline: true,
         controls: false,
         preload: "metadata"
-      }), !C && (0, r.jsx)("div", {
+      }), !A && (0, r.jsx)("div", {
         className: E.playButton,
         children: (0, r.jsx)(s.JM1, {
           playing: false,

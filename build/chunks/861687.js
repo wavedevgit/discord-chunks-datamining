@@ -119,23 +119,23 @@ function eI(e) {
   return e
 }
 let eT = 0,
-  eA = [],
-  eC = 50;
+  eC = [],
+  eA = 50;
 
 function eN() {
   let e = [],
     t = (0, Chunk379649.zO)();
-  for (let n of eA) module.push(e_(ef({}, require), {
+  for (let n of eC) module.push(e_(ef({}, require), {
     t: exports - require.t
   }));
   return JSON.stringify(module)
 }
 class eP extends Chunk47770.Z {
   recordEvent(e) {
-    for (eA.push(e_(ef({}, e), {
+    for (eC.push(e_(ef({}, e), {
         t: (0, _.zO)(),
         n: this._connectionSerial
-      })); eA.length > eC;) eA.shift()
+      })); eC.length > eA;) eC.shift()
   }
   get quality() {
     let e = this.getLastPing();
@@ -389,7 +389,7 @@ class eP extends Chunk47770.Z {
     }, {
       autoTrackExposure: true
     }).enabled && t.push("network_aware_socket");
-    let r = C.Z.getCurrentConfig({
+    let r = A.Z.getCurrentConfig({
       location: "_chooseExperiments"
     }, {
       disable: !(0, Y.isWindows)(),
@@ -422,15 +422,15 @@ class eP extends Chunk47770.Z {
     })
   }
   _handleDisconnect(e, t, n, r) {
-    var i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, I, T, A;
+    var i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, I, T, C;
     this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (F.default.track(el.rMx.VOICE_CONNECTION_SOCKET_FAILURE, e_(ef({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
       code: n,
       reason: r
     })), this._encountered_socket_failure = true), U.Z.getRemoteDisconnectVoiceChannelId() === this.channelId && (null == (l = this._connection) || l.wasRemoteDisconnected());
-    let C = "Force Close" !== r;
-    if (C) {
+    let A = "Force Close" !== r;
+    if (A) {
       let e = this._backoff.fail(this.reconnect);
       this.logger.warn("Disconnect was not clean! reason=".concat(r, ". Reconnecting in ").concat((e / 1e3).toFixed(2), " seconds."))
     }
@@ -495,7 +495,7 @@ class eP extends Chunk47770.Z {
           hostname: this.hostname,
           port: this.port,
           protocol: this.protocol,
-          reconnect: C,
+          reconnect: A,
           reason: r,
           duration: this.getDuration()
         }), U.Z.getUserVoiceSettingsStats(this.context), null == (d = this._voiceQuality) ? true : d.getMosStats(), null == (f = this._voiceQuality) ? true : f.getPacketStats(), null == (p = this._voiceQuality) ? true : p.getBytesStats(), null == (_ = this._voiceQuality) ? true : _.getBufferStats(), null == (m = this._voiceQuality) ? true : m.getNetworkStats(), null == (h = this._voiceQuality) ? true : h.getSystemResourceStats(), null == (g = this._voiceQuality) ? true : g.getFrameOpStats(), null == (E = this._voiceQuality) ? true : E.getDurationStats(), null == (b = this._voiceQuality) ? true : b.getTransportStats(), null == (y = this._voiceQuality) ? true : y.getE2EEStats(), null == (O = this._voiceQuality) ? true : O.getAudioDeviceStats(), null == (v = this._voiceQuality) ? true : v.getAudioLevelStats(), null == (I = this._voiceDuration) ? true : I.getDurationStats(), N.Z.getUsageStats(), this.getAudioDeviceStates(), null == (T = this._systemResponsiveness) ? true : T.getPttQueueLatencyStats()), {
@@ -523,7 +523,7 @@ class eP extends Chunk47770.Z {
           encryption_mode: this._encryptionMode,
           channel_count: this.channelIds.size,
           device_performance_class: (0, S.Z)(),
-          num_fast_udp_reconnects: null != this._connection ? null == (A = this._connection) ? true : A.getNumFastUdpReconnects() : null,
+          num_fast_udp_reconnects: null != this._connection ? null == (C = this._connection) ? true : C.getNumFastUdpReconnects() : null,
           parent_media_session_id: this.parentMediaSessionId,
           audio_subsystem: k.Z.getMediaEngine().getAudioSubsystem(),
           audio_layer: k.Z.getMediaEngine().getAudioLayer(),
@@ -564,7 +564,7 @@ class eP extends Chunk47770.Z {
       this._connection = null, e.destroy(this.reconnecting)
     }
     this.setState(el.hes.DISCONNECTED, {
-      willReconnect: C
+      willReconnect: A
     })
   }
   _handleResuming(e) {
@@ -934,7 +934,7 @@ class eP extends Chunk47770.Z {
   }
   _handleBandwidthEstimationExperiment(e) {
     this._bandwidthEstimationExperiment = e;
-    let t = A.Z.getMediaEngineExperiments(e);
+    let t = C.Z.getMediaEngineExperiments(e);
     if (null !== t && 0 !== t.length) {
       var n;
       null == (n = this._connection) || n.setBandwidthEstimationExperiments(t)

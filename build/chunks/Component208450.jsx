@@ -71,7 +71,7 @@ class z extends Chunk473749.PureComponent {
     } = this.props;
     if (n !== e.searchContext && I.Z.initializeAutocomplete(n), t !== e.editorState) {
       let e = v.Sq(t),
-        r = (0, A.kG)(v.Sq(t)),
+        r = (0, C.kG)(v.Sq(t)),
         i = S.g9(r, t);
       I.Z.updateAutocompleteQuery({
         searchContext: n,
@@ -85,7 +85,7 @@ class z extends Chunk473749.PureComponent {
     Chunk585483.S.unsubscribe(Chunk981631.CkL.PERFORM_SEARCH, this.search), Chunk585483.S.unsubscribe(Chunk981631.CkL.SET_SEARCH_QUERY, this.handleSetSearchQuery), Chunk585483.S.unsubscribe(Chunk981631.CkL.FOCUS_SEARCH, this.handleFocusSearch)
   }
   tokenize(e) {
-    let t = (0, A.kG)(v.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
+    let t = (0, C.kG)(v.Sq(e)).filter(e => e.type !== f.ZP.NON_TOKEN_TYPE);
     return v.lv(t, e, D.ZP)
   }
   clearSearch() {
@@ -174,7 +174,7 @@ class z extends Chunk473749.PureComponent {
                   className: V.icon,
                   isLoading: false
                 })]
-              }, (0, A.Tm)(e))
+              }, (0, C.Tm)(e))
             })
           })
         })
@@ -237,9 +237,9 @@ class z extends Chunk473749.PureComponent {
         n = v.Sq(e)
       }
       if (!t) {
-        let e = (0, A.kG)(n),
-          t = (0, A.$G)(e);
-        for (let t = 0; t < e.length; t++)(0, A.Fr)(e[t], e[t + 1]) || (n = n.substring(0, e[t].start) + n.substring(e[t].end));
+        let e = (0, C.kG)(n),
+          t = (0, C.$G)(e);
+        for (let t = 0; t < e.length; t++)(0, C.Fr)(e[t], e[t + 1]) || (n = n.substring(0, e[t].start) + n.substring(e[t].end));
         if (0 === e.length || 0 === Object.keys(t).length) returnfalse;
         this.props.onSearch({
           queryString: n,
@@ -267,7 +267,7 @@ class z extends Chunk473749.PureComponent {
       if (!t) return void this.focusEditor();
       let n = y.Z.getChannelId(),
         r = E.Z.getChannel(n),
-        i = C.Z.getCurrentConfig({
+        i = A.Z.getCurrentConfig({
           location: "handleFocusSearch"
         }).enabled;
       if ((null == r ? true : r.isThread()) && !i && (r = E.Z.getChannel(null == r ? true : r.parent_id)), null == r) return void this.focusEditor();
@@ -275,7 +275,7 @@ class z extends Chunk473749.PureComponent {
         searchContext: a
       } = this.props;
       if (r.isPrivate() && a.type !== B.aib.DMS) return void this.focusEditor();
-      let o = (0, A.X3)(r);
+      let o = (0, C.X3)(r);
       if (null == o) return void this.focusEditor();
       (0, U.PJ)({
         searchContext: a
@@ -345,7 +345,7 @@ class z extends Chunk473749.PureComponent {
       let {
         shiftKey: t
       } = e;
-      return e.preventDefault(), (this.props.isSearchFiltersRedesignEnabled ? this.handleRedesignOption() : this.handleOption()) || ((0, A.X$)() && t ? this.search({
+      return e.preventDefault(), (this.props.isSearchFiltersRedesignEnabled ? this.handleRedesignOption() : this.handleOption()) || ((0, C.X$)() && t ? this.search({
         searchEverywhere: true,
         searchQuerySource: G.w7.SEARCH_TEXT_INPUT
       }) : this.search({
@@ -456,7 +456,7 @@ class z extends Chunk473749.PureComponent {
         return this.setEditorState(e), true
       }
       return v.q0(e)
-    }), (0, A.WU)()
+    }), (0, C.WU)()
   }
 }
 
@@ -464,7 +464,7 @@ function q(e) {
   let {
     searchContext: t,
     className: n
-  } = e, a = (0, A.Tm)(t), o = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), s = (0, u.e7)([k.Z], () => k.Z.getEditorState(a));
+  } = e, a = (0, C.Tm)(t), o = (0, u.e7)([_.Z], () => _.Z.keyboardModeEnabled), s = (0, u.e7)([k.Z], () => k.Z.getEditorState(a));
   i.useEffect(() => (h.Z.setSelectedSearchContext(a), () => {
     h.Z.setSelectedSearchContext(null)
   }), [a]);
@@ -485,7 +485,7 @@ function q(e) {
       }
     }),
     O = (0, u.e7)([g.ZP], () => g.ZP.getCurrentSearchContextId()),
-    [I, C] = i.useState(false),
+    [I, A] = i.useState(false),
     w = i.useRef(I),
     j = (0, u.e7)([g.ZP, y.Z, E.Z], () => {
       let e = y.Z.getCurrentlySelectedChannelId(),
@@ -494,7 +494,7 @@ function q(e) {
     }),
     M = j || I;
   i.useEffect(() => {
-    O === (0, A.Tm)(t) && C(j)
+    O === (0, C.Tm)(t) && A(j)
   }, [O, j, t]);
   let G = (0, d.VXO)(Z.L),
     V = M || G;
@@ -523,15 +523,15 @@ function q(e) {
       })
     }, [t]),
     Y = (0, u.e7)([b.Z, E.Z], () => {
-      let e = (0, A.b7)(t) ? t.guildId : null;
+      let e = (0, C.b7)(t) ? t.guildId : null;
       if (null != e) {
         let t = b.Z.getGuild(e);
         return null == t ? null : t.name
       }
-      let n = (0, A.AH)(t);
+      let n = (0, C.AH)(t);
       if (null != n) {
         let e = E.Z.getChannel(n);
-        return null == e ? null : (0, A.nl)(e)
+        return null == e ? null : (0, C.nl)(e)
       }
       return null
     }),

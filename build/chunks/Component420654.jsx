@@ -66,9 +66,9 @@ let E = 57.75,
       context: b
     } = (0, c.KZ)(), {
       analyticsLocations: y
-    } = (0, l.ZP)(), [O, v] = i.useState(false), [S, I] = i.useState(false), T = i.useRef(null), A = e => {
+    } = (0, l.ZP)(), [O, v] = i.useState(false), [S, I] = i.useState(false), T = i.useRef(null), C = e => {
       T.current = e, null != e && (v(!S && e.scrollHeight - e.clientHeight > 1), e.getBoundingClientRect().height > E && I(true))
-    }, C = () => {
+    }, A = () => {
       null == n || n(), (0, u.openUserProfileModal)(g(m({}, b), {
         userId: t.id,
         sourceAnalyticsLocations: y
@@ -78,7 +78,7 @@ let E = 57.75,
     };
     return _ || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
-        ref: A,
+        ref: C,
         className: o()(p.descriptionClamp, S && p.maxBioHeight),
         onBlur: N,
         children: (0, r.jsx)(d.Z, {
@@ -93,7 +93,7 @@ let E = 57.75,
           size: "sm",
           variant: "secondary",
           text: f.intl.string(f.t.YDiPq8),
-          onClick: C,
+          onClick: A,
           disabled: h
         })
       })]

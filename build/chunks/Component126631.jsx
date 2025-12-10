@@ -34,10 +34,10 @@ function y(e) {
     placeholder: y,
     currentBio: O,
     disabled: v = false
-  } = e, [S, I] = i.useState(null != f ? f : O), [T, A] = i.useState((0, s.JM)(S)), C = i.useRef(false);
+  } = e, [S, I] = i.useState(null != f ? f : O), [T, C] = i.useState((0, s.JM)(S)), A = i.useRef(false);
 
   function N(e, t, n) {
-    t !== S && (I(t), A(n), c(t))
+    t !== S && (I(t), C(n), c(t))
   }
 
   function P() {
@@ -51,7 +51,7 @@ function y(e) {
   i.useEffect(() => {
     if (true === f) {
       let e = (0, s.JM)(O);
-      I(O), A(e)
+      I(O), C(e)
     }
   }, [f, O]);
   let R = (0, u.wy)("AboutMeSection");
@@ -76,12 +76,12 @@ function y(e) {
       parentModalKey: R ? d.USER_SETTINGS_MODAL_KEY : true,
       type: o.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
-        C.current = false
+        A.current = false
       },
       onFocus: () => {
-        C.current = true
+        A.current = true
       },
-      focused: C.current,
+      focused: A.current,
       onSubmit: P
     }), (0, r.jsx)(a.nn4, {
       id: b,

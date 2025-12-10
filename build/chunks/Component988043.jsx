@@ -30,7 +30,7 @@ function I(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, E = (0, p.c_)(), I = d.h2.useSetting().includes(n), T = (0, u.q)(), A = (0, f.r)(), C = (0, o.LN)(), N = i.useCallback(e => {
+  } = e, E = (0, p.c_)(), I = d.h2.useSetting().includes(n), T = (0, u.q)(), C = (0, f.r)(), A = (0, o.LN)(), N = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), d.h2.updateSetting(Array.from(r)), l.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: g.Y.DIRECT_MESSAGES_TOGGLE,
@@ -65,19 +65,19 @@ function I(e) {
         onCancel: t
       })
     },
-    w = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
+    w = C ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
   return (0, r.jsx)(_.U, {
     setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === y.T ? (0, r.jsx)(m.ZP, {
       title: w,
-      note: A ? v.intl.string(v.t.XXGmuB) : v.intl.string(v.t.wbYDfT),
+      note: C ? v.intl.string(v.t.XXGmuB) : v.intl.string(v.t.wbYDfT),
       value: !T,
       onChange: R,
-      disabled: C,
-      tooltipText: C ? v.intl.string(S.default["6Af/cw"]) : true
+      disabled: A,
+      tooltipText: A ? v.intl.string(S.default["6Af/cw"]) : true
     }) : (0, r.jsx)(m.ZP, {
       title: w,
-      note: E ? v.intl.string(v.t.V0ka0Q) : A ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
+      note: E ? v.intl.string(v.t.V0ka0Q) : C ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
       value: !I,
       onChange: N
     })

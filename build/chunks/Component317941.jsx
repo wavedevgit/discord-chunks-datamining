@@ -104,7 +104,7 @@ class M extends Chunk473749.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, N.dM)(t, n), (0, C.JG)(e, () => this.setState({
+      (0, N.dM)(t, n), (0, A.JG)(e, () => this.setState({
         copyMode: f.uA3.SUCCESS
       }), () => this.setState({
         copyMode: f.uA3.ERROR

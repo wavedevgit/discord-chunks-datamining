@@ -468,7 +468,7 @@ function es(e) {
     children: (0, i.jsx)("div", {
       ref: o,
       style: {
-        backgroundColor: s ? "var(--background-modifier-hover)" : true,
+        backgroundColor: s ? "var(--interactive-background-hover)" : true,
         transition: "background-color 0.1s"
       },
       children: (0, i.jsxs)(g.P3F, {

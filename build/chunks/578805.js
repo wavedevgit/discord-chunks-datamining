@@ -63,8 +63,8 @@ if (require("./738146.js")() || require("./247131.js")()) {
     if (true === Chunk444675 || !Chunk444675.versions || !Chunk444675.versions.node) var S = Chunk887937("Map.prototype.iterator", true),
       I = Chunk887937("Set.prototype.iterator", true);
     var T = Chunk887937("Map.prototype.@@iterator", true) || Chunk887937("Map.prototype._es6-shim iterator_", true),
-      A = Chunk887937("Set.prototype.@@iterator", true) || Chunk887937("Set.prototype._es6-shim iterator_", true),
-      C = function(e) {
+      C = Chunk887937("Set.prototype.@@iterator", true) || Chunk887937("Set.prototype._es6-shim iterator_", true),
+      A = function(e) {
         if (b(e)) {
           if (S) return a(S(e));
           if (T) return T(e);
@@ -77,7 +77,7 @@ if (require("./738146.js")() || require("./247131.js")()) {
         }
         if (y(e)) {
           if (I) return a(I(e));
-          if (A) return A(e);
+          if (C) return C(e);
           if (v) {
             var n = [];
             return v(e, function(e) {
@@ -87,7 +87,7 @@ if (require("./738146.js")() || require("./247131.js")()) {
         }
       };
     module.exports = function(e) {
-      return C(e) || E(e)
+      return A(e) || E(e)
     }
   } else module.exports = function(e) {
     if (null != e) return E(e, true)

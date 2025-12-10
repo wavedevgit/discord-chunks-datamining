@@ -28,20 +28,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk476034 = require("./476034.js");
-let A = e => {
+let C = e => {
     let {
       onClose: t,
       onShare: n
     } = e, a = (0, l.e7)([b.Z], () => b.Z.getReferralsRemaining()), u = (0, l.e7)([b.Z], () => b.Z.getHasEligibleFriends()), [p, _] = i.useState(new Map), [m, E] = i.useState(""), v = (0, f.Z)(m, 400), {
-      eligibleUsers: A,
-      fetchUsers: C,
+      eligibleUsers: C,
+      fetchUsers: A,
       hasError: N,
       isFetching: P,
       resendUsers: R
     } = (0, O.q)({
       searchQuery: v,
       selectedUsers: p
-    }), [D, w] = i.useState(false), x = A.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), L = () => (0, r.jsx)(d.Z, {
+    }), [D, w] = i.useState(false), x = C.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map), L = () => (0, r.jsx)(d.Z, {
       className: T.searchbar,
       size: d.Z.Sizes.MEDIUM,
       tags: [...p.values()].map(e => g.ZP.getName(e)),
@@ -91,7 +91,7 @@ let A = e => {
           })
         },
         isFetching: P,
-        onFetchMore: C,
+        onFetchMore: A,
         isUserDisabled: e => null !== a && 0 !== a && [...p.values()].filter(e => !R.has(e.id)).length >= a && !p.has(e.id) && !R.has(e.id),
         searchQuery: v,
         emptySearchContent: {
@@ -133,7 +133,7 @@ let A = e => {
       })
     })
   },
-  C = e => {
+  A = e => {
     let {
       onClose: t,
       onShare: n
@@ -216,10 +216,10 @@ let P = e => {
       onClose: t
     })
   }
-  return 1 === o ? (0, r.jsx)(A, {
+  return 1 === o ? (0, r.jsx)(C, {
     onClose: t,
     onShare: h
-  }) : 3 === o ? (0, r.jsx)(C, {
+  }) : 3 === o ? (0, r.jsx)(A, {
     onClose: t,
     onShare: h
   }) : true

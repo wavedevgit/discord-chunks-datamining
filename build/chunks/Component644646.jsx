@@ -48,8 +48,8 @@ let I = function(e) {
       autoplay: _ = true,
       learnMoreStyle: I = null,
       learnMoreFontSize: T,
-      sourceQuestContent: A,
-      lazyLoad: C = false,
+      sourceQuestContent: C,
+      lazyLoad: A = false,
       style: N,
       showShine: P = true,
       location: R
@@ -66,12 +66,12 @@ let I = function(e) {
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: p.jZ.REWARD_LEARN_MORE,
-        sourceQuestContent: A
+        sourceQuestContent: C
       }), (0, y.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [D, a.id, e, A]),
+    }, [D, a.id, e, C]),
     k = i.useRef(null),
     U = i.useRef(_),
     G = (0, h.Bg)(a.config);
@@ -89,7 +89,7 @@ let I = function(e) {
       ref: e,
       className: v.questRewardTileAsset
     })
-  }) : C ? (0, r.jsx)(E.K, {
+  }) : A ? (0, r.jsx)(E.K, {
     showVideo: _,
     imageAsset: null != j ? {
       asset: j,

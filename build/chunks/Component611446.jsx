@@ -88,7 +88,7 @@ let E = t => {
         width: 440,
         children: [(0, s.jsx)(l.Mi4, {
           id: "ACTIONS",
-          children: (0, s.jsx)(T.Z, {
+          children: (0, s.jsx)(d.Z, {
             otherUserId: E,
             channelId: n,
             warningId: i,
@@ -97,7 +97,7 @@ let E = t => {
           })
         }), (0, s.jsx)(l.Mi4, {
           id: "ABOUT_SAFETY_ALERTS",
-          children: (0, s.jsx)(d.Z, {
+          children: (0, s.jsx)(T.Z, {
             channelId: n,
             onClose: () => {
               e(), m(c.NM.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)

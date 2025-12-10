@@ -32,7 +32,7 @@ function b(e) {
     navigateToHome: b,
     subscriptionGroup: O,
     renewalSkuId: v
-  } = e, S = (0, s.y)(n, 100), I = (0, p.KK)(O.flags), T = I ? o.QTo : o.tBG, A = I ? g.intl.string(g.t["46YF2D"]) : g.intl.string(g.t.fFyGiA), C = null == (t = a.metadata) ? true : t.application_subscription_guild_id, N = (0, i.e7)([d.Z], () => I && null != C ? d.Z.getGuild(C) : true, [C, I]), P = (0, i.e7)([f.Z], () => {
+  } = e, S = (0, s.y)(n, 100), I = (0, p.KK)(O.flags), T = I ? o.QTo : o.tBG, C = I ? g.intl.string(g.t["46YF2D"]) : g.intl.string(g.t.fFyGiA), A = null == (t = a.metadata) ? true : t.application_subscription_guild_id, N = (0, i.e7)([d.Z], () => I && null != A ? d.Z.getGuild(A) : true, [A, I]), P = (0, i.e7)([f.Z], () => {
     if (null != v) return f.Z.get(v)
   }, [v]), R = (0, m.p)(a.currentPeriodEnd);
   return (0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function b(e) {
             children: [(0, r.jsx)(T, {
               size: "xs",
               color: "currentColor"
-            }), " ", A]
+            }), " ", C]
           }), null != N && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
@@ -124,7 +124,7 @@ function b(e) {
         })
       }, e.id) : (0, r.jsx)(y, {
         storeListing: e,
-        guildId: C,
+        guildId: A,
         navigateToHome: b
       }, e.id))]
     })]

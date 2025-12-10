@@ -64,10 +64,10 @@ function v(e) {
     onClose: I
   } = e, {
     resetInteraction: T,
-    setInteractionToast: A
+    setInteractionToast: C
   } = (0, f.Xo)(), {
-    theme: C
-  } = (0, _.z)(), N = (0, a.e7)([l.Z], () => l.Z.theme), P = (0, o.wj)(N) ? !(0, o.wj)(C) : (0, o.wj)(C), R = i.useRef(null);
+    theme: A
+  } = (0, _.z)(), N = (0, a.e7)([l.Z], () => l.Z.theme), P = (0, o.wj)(N) ? !(0, o.wj)(A) : (0, o.wj)(A), R = i.useRef(null);
   i.useEffect(() => {
     null == v || v(null == R ? true : R.current)
   }, [R, v]), i.useEffect(() => {
@@ -93,7 +93,7 @@ function v(e) {
       sourceType: p,
       sourceDetails: b
     });
-    A(null);
+    C(null);
     try {
       await (0, d.Z)({
         userId: t.id,
@@ -104,7 +104,7 @@ function v(e) {
         entry: c
       })
     } catch (e) {}
-    A(m.P.REACT)
+    C(m.P.REACT)
   };
   return (0, r.jsx)(s.Z, {
     headerClassName: P ? y.noBoxShadowMargin : true,

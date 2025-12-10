@@ -2,7 +2,7 @@
 /** chunk id: 536799, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PS: () => C,
+  PS: () => A,
   QS: () => T,
   Vp: () => P
 });
@@ -33,14 +33,14 @@ let S = (0, Chunk473749.createContext)(null),
       value: null
     }, v.createElement(h.yF, {
       content: e.children
-    }, n => v.createElement(A, {
+    }, n => v.createElement(C, {
       props: e,
       forwardedRef: t,
       collection: n
     })))
   });
 
-function A({
+function C({
   props: e,
   forwardedRef: t,
   collection: n
@@ -63,8 +63,8 @@ function A({
   }), y = (0, O.d)(b, p), S = (0, E.z)(u, {
     global: true
   }), T = Object.fromEntries(Object.entries(S).map(([e, t]) => [e, "id" === e ? t : true])), {
-    gridProps: A,
-    labelProps: C,
+    gridProps: C,
+    labelProps: A,
     descriptionProps: N,
     errorMessageProps: P
   } = (0, f.H)({
@@ -82,12 +82,12 @@ function A({
   }, v.createElement(a.zt, {
     values: [
       [o.n, {
-        ...C,
+        ...A,
         elementType: "span",
         ref: h
       }],
       [I, {
-        ...A,
+        ...C,
         ref: i
       }],
       [s.a$, y],
@@ -100,7 +100,7 @@ function A({
     ]
   }, e.children))
 }
-let C = (0, Chunk473749.forwardRef)(function(e, t) {
+let A = (0, Chunk473749.forwardRef)(function(e, t) {
   return (0, v.useContext)(s.a$) ? v.createElement(N, {
     props: e,
     forwardedRef: t
@@ -190,12 +190,12 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
   (0, v.useEffect)(() => {
     n.textValue
   }, [n.textValue]);
-  let A = (0, E.z)(e, {
+  let C = (0, E.z)(e, {
     global: true
   });
-  return delete A.id, delete A.onClick, v.createElement("div", {
+  return delete C.id, delete C.onClick, v.createElement("div", {
     ref: l,
-    ...(0, b.d)(A, T, f, u, S),
+    ...(0, b.d)(C, T, f, u, S),
     "data-selected": O.isSelected || true,
     "data-disabled": O.isDisabled || true,
     "data-hovered": I || true,

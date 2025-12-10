@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk481060 = require("./481060.js"),
   Chunk436774 = require("./436774.jsx"),
   Chunk597276 = require("./597276.js"),
@@ -62,7 +62,7 @@ function h(e) {
       tension: 120,
       friction: 14
     }
-  }), A = S ? (0, r.jsx)(s.d$P, {
+  }), C = S ? (0, r.jsx)(s.d$P, {
     size: "custom",
     height: 20,
     width: 20,
@@ -79,7 +79,7 @@ function h(e) {
       [p.upsellContainerFloating]: "floating" === O,
       [p.upsellContainerInline]: "inline" === O
     }, g),
-    children: [!I && A, (0, r.jsx)(s.Text, {
+    children: [!I && C, (0, r.jsx)(s.Text, {
       variant: null != i ? i : "text-sm/medium",
       color: "header-primary",
       className: p.upsellText,

@@ -21,11 +21,11 @@ var r, i, a, Chunk848120 = require("./848120.js"),
   S = Chunk199838.enforce,
   I = Chunk199838.get,
   T = Chunk127849.Int8Array,
-  A = T && T.prototype,
-  C = Chunk127849.Uint8ClampedArray,
-  N = C && C.prototype,
+  C = T && T.prototype,
+  A = Chunk127849.Uint8ClampedArray,
+  N = A && A.prototype,
   P = T && Chunk961050(T),
-  R = A && Chunk961050(A),
+  R = C && Chunk961050(C),
   D = Object.prototype,
   w = Chunk127849.TypeError,
   x = Chunk751736("toStringTag"),
@@ -85,7 +85,7 @@ var r, i, a, Chunk848120 = require("./848120.js"),
               a.prototype[e] = t
             } catch (e) {}
           }
-        }(!R[e] || n) && m(R, e, n ? t : M && A[e] || t, r)
+        }(!R[e] || n) && m(R, e, n ? t : M && C[e] || t, r)
     }
   },
   W = function(e, t, n) {

@@ -55,8 +55,8 @@ function g(e) {
     isBurstReaction: h,
     analyticsObject: g
   } = e, E = o.Z.getChannel(s.Z.getChannelId()), b = null == E ? true : E.getGuildId(), y = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? a.ZP.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, S = y.slice(0, v), I = null != b ? a.ZP.getGuildEmoji(b) : [], T = Object.values(null != (t = a.ZP.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
-    topEmojis: A,
-    newlyAddedEmojis: C
+    topEmojis: C,
+    newlyAddedEmojis: A
   } = (0, u._)({
     guildId: null == E ? true : E.getGuildId(),
     pickerIntention: n
@@ -64,8 +64,8 @@ function g(e) {
     visibleTopEmojis: N,
     visibleNewlyAddedEmojis: P
   } = (0, c.J)({
-    topEmojis: A,
-    newlyAddedEmojis: C,
+    topEmojis: C,
+    newlyAddedEmojis: A,
     rowSize: _
   });
   i.ZP.trackWithMetadata(n === f.Hz.REACTION ? d.rMx.REACTION_PICKER_OPENED : d.rMx.EXPRESSION_PICKER_OPENED, m({

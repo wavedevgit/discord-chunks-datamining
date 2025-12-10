@@ -118,7 +118,7 @@ function eI(e, t) {
 
 function eT(e, t) {
   if (null == e) return {};
-  var n, r, i = eA(e, t);
+  var n, r, i = eC(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -126,14 +126,14 @@ function eT(e, t) {
   return i
 }
 
-function eA(e, t) {
+function eC(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let eC = eL(null),
+let eA = eL(null),
   eN = 20,
   eP = 16,
   eR = 1,
@@ -141,8 +141,8 @@ let eC = eL(null),
   ew = [0, 5, 10, 15, 20, 25];
 
 function ex() {
-  let e = eL(eC);
-  f().isEqual(module, eC) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), eC = module)
+  let e = eL(eA);
+  f().isEqual(module, eA) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), eA = module)
 }
 
 function eL(e) {
@@ -247,12 +247,12 @@ function eM(e) {
             size: "custom",
             width: eN,
             height: eN,
-            color: "var(--interactive-active)"
+            color: "var(--interactive-text-active)"
           }) : (0, r.jsx)(h.Fbu, {
             size: "custom",
             width: eN,
             height: eN,
-            color: "var(--interactive-active)"
+            color: "var(--interactive-text-active)"
           })]
         })
       }))
@@ -289,8 +289,8 @@ function eG(e) {
   i.useEffect(() => {
     E(f), O(d)
   }, [f, d]);
-  let A = !(0, ed.supportsLegacy)(),
-    C = !(0, ed.supportsOutOfProcess)(),
+  let C = !(0, ed.supportsLegacy)(),
+    A = !(0, ed.supportsOutOfProcess)(),
     {
       legacyEnabled: P,
       oopEnabled: R
@@ -349,10 +349,10 @@ function eG(e) {
         (0, F.l)(i, null != (a = o.id) ? a : null)
       }
     },
-    G = A && C,
+    G = C && A,
     Z = !P && !R,
-    B = !m && !P && b && !A,
-    V = !b && !R && m && !C,
+    B = !m && !P && b && !C,
+    V = !b && !R && m && !A,
     H = (null == u ? true : u.overlayMethod) === j.gl.Disabled,
     Y = (null == u ? true : u.state) === j.mM.OVERLAY_RENDERING && !H,
     W = (null == u ? true : u.state) != null && ek.has(u.state) && !H,
@@ -395,7 +395,7 @@ function eG(e) {
             switch (true) {
               case (null == u ? true : u.fullscreenType) !== v.Jx.BORDERLESS_FULLSCREEN:
                 return eg.intl.string(eg.t.mJmbeC);
-              case C:
+              case A:
                 return eg.intl.string(eg.t.C7bLTQ);
               case !(null != (e = null == u ? true : u.oopEnabled) && e):
                 return eg.intl.string(eg.t.WiY24u);
@@ -449,7 +449,7 @@ function eG(e) {
   (0, S.ZP)(() => {
     g.Z.getDetectableGames()
   });
-  let [er, ei] = i.useMemo(() => W ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && K ? ["text-feedback-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && q ? ["text-strong", h.TVs.colors.TEXT_STRONG.css] : ["interactive-normal", h.TVs.colors.INTERACTIVE_NORMAL.css], [W, Y, z, K, q]);
+  let [er, ei] = i.useMemo(() => W ? ["text-muted", h.TVs.colors.TEXT_MUTED.css] : Y && z ? ["text-feedback-warning", h.TVs.colors.TEXT_FEEDBACK_WARNING.css] : Y && K ? ["text-feedback-positive", h.TVs.colors.TEXT_FEEDBACK_POSITIVE.css] : Y && q ? ["text-strong", h.TVs.colors.TEXT_STRONG.css] : ["interactive-text-default", h.TVs.colors.INTERACTIVE_TEXT_DEFAULT.css], [W, Y, z, K, q]);
   return null == o ? null : (0, r.jsxs)(eM, {
     onExpand: T,
     className: I ? eE.expandedContainer : true,
@@ -459,7 +459,7 @@ function eG(e) {
         text: eg.intl.string(eg.t["4PJP5p"]),
         children: e => (0, r.jsx)(w.Z, eI(ev({
           size: eP,
-          color: h.TVs.colors.BG_BRAND.css
+          color: h.TVs.colors.BACKGROUND_BRAND.css
         }, e), {
           children: (0, r.jsx)(h.kmB, {
             size: "custom",
@@ -512,7 +512,7 @@ function eG(e) {
       action: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.rsf, {
           checked: m && R,
-          disabled: C,
+          disabled: A,
           onChange: e => {
             e && !R ? L(e, x.OverlayToggledClientSettingType.OOP) : L(e, x.OverlayToggledClientSettingType.OOP_GAME)
           }
@@ -528,7 +528,7 @@ function eG(e) {
       action: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.rsf, {
           checked: b && P,
-          disabled: A,
+          disabled: C,
           onChange: e => {
             e && !P ? L(e, x.OverlayToggledClientSettingType.LEGACY) : L(e, x.OverlayToggledClientSettingType.LEGACY_GAME)
           }
@@ -1033,7 +1033,7 @@ function eX() {
           background: Chunk481060.TVs.colors.BACKGROUND_MOD_STRONG.css
         },
         fillStyles: {
-          background: Chunk481060.TVs.colors.BG_BRAND.css
+          background: Chunk481060.TVs.colors.BACKGROUND_BRAND.css
         },
         onMarkerRender: e => e < eR ? eg.intl.string(eg.t.nrUzFL) : "".concat(Math.floor(e))
       })

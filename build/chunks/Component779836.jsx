@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk511010 = require("./511010.jsx"),
@@ -57,7 +57,7 @@ function C(e) {
         className: b.summaryFeedback,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
-          color: "interactive-normal",
+          color: "interactive-text-default",
           children: g.intl.string(g.t["5ZsiE9"])
         }), (0, i.jsx)(s.P3F, {
           onClick: e => l(e, f.aZ.GOOD),

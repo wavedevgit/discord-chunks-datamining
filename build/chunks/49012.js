@@ -34,7 +34,7 @@ var Chunk159635 = require("./159635.js"),
 function N(e, t) {
   var n;
   let r = E.Z.getChannel(I.Z.getChannelId());
-  return (null == r || r.type !== A.d4z.DM || !!S.Z.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
+  return (null == r || r.type !== C.d4z.DM || !!S.Z.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
 }
 
 function P(e, t) {
@@ -52,8 +52,8 @@ function P(e, t) {
     L = i().sanitizeUrl(e.href);
   if (null == L) {
     null != t && t.preventDefault(), a.Z.show({
-      title: C.intl.string(C.t.x87gan),
-      body: C.intl.format(C.t["9rqRwl"], {
+      title: A.intl.string(A.t.x87gan),
+      body: A.intl.format(A.t["9rqRwl"], {
         url: e.href
       }),
       isDismissable: true,
@@ -78,20 +78,20 @@ function P(e, t) {
       t = E.Z.getBasicChannel(x);
     M = null != (V = null == t ? true : t.guild_id) ? V : null;
     let n = b.Z.getGuild(M),
-      r = (null == e || null == (B = e.messageReference) ? true : B.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != M;
+      r = (null == e || null == (B = e.messageReference) ? true : B.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(C.iLy.IS_CROSSPOST)) && null != M;
     r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, Z = e.messageReference.guild_id) : Z = M;
-    let i = (null == t ? true : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(A.GuildFeatures.COMMUNITY)) === true,
-      a = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
+    let i = (null == t ? true : t.type) === C.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(C.GuildFeatures.COMMUNITY)) === true,
+      a = (null == e ? true : e.hasFlag(C.iLy.EPHEMERAL)) === true;
     k = null != e && !a && (r || i)
   }
   if (null != x) {
     let e = E.Z.getChannel(x),
       t = b.Z.getGuild(null == e ? true : e.getGuildId());
-    null != e && null != t && t.features.has(A.GuildFeatures.DISCOVERABLE) && T.default.track(A.rMx.URL_CLICKED, {
+    null != e && null != t && t.features.has(C.GuildFeatures.DISCOVERABLE) && T.default.track(C.rMx.URL_CLICKED, {
       url_domain: (0, O.F)(j),
       guild_id: t.id,
       channel_id: e.id
-    }), (0, u.Z)(x) && T.default.track(A.rMx.CHANGE_LOG_CTA_CLICKED, {
+    }), (0, u.Z)(x) && T.default.track(C.rMx.CHANGE_LOG_CTA_CLICKED, {
       cta_type: "inline_link",
       target: j
     })

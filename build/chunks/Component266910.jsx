@@ -2,7 +2,7 @@
 /** chunk id: 266910, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -64,7 +64,7 @@ function I(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,16 +72,16 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let C = function(e) {
-  var t, n, a, O, S, A, {
-      style: C,
+let A = function(e) {
+  var t, n, a, O, S, C, {
+      style: A,
       src: N,
       backgroundSrc: P,
       userId: R,
@@ -102,7 +102,7 @@ let C = function(e) {
       theme: G,
       themeType: b.l.VIDEO_TILE_BACKGROUND,
       primaryColor: null != (S = null == U || null == (n = U.themeColors) ? true : n[0]) ? S : null,
-      secondaryColor: null != (A = null == U || null == (a = U.themeColors) ? true : a[1]) ? A : null
+      secondaryColor: null != (C = null == U || null == (a = U.themeColors) ? true : a[1]) ? C : null
     }),
     F = null == U ? true : U.getBannerURL({
       size: 1024,
@@ -122,11 +122,11 @@ let C = function(e) {
       className: y.avatarWrapper,
       src: N
     }, L)),
-    W = I(v({}, C), {
+    W = I(v({}, A), {
       backgroundColor: M
     });
   return null != F && x && k && (W.backgroundImage = "url(".concat(F, ")"), W.backgroundSize = "cover"), (0, r.jsx)("div", {
-    style: V ? v({}, C, Z) : v({}, W),
+    style: V ? v({}, A, Z) : v({}, W),
     className: o()(y.background, {
       [B]: V
     }),

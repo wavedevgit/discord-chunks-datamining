@@ -52,7 +52,7 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,8 +63,8 @@ function A(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -151,7 +151,7 @@ class L {
           userId: e,
           checkIsMuted: true
         });
-        return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, C(T({}, n), {
+        return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, A(T({}, n), {
           speaking: t,
           latched: x(e),
           lastSpoke: this.lastSpoke[e],
@@ -163,7 +163,7 @@ class L {
   }
   updateParticipantQuality(e, t, n) {
     var r, i;
-    return null != (i = null == (r = this.participants[e]) ? true : r.reduce((e, r) => r.type === O.fO.STREAM ? (this.participantByIndex.set(r.id, C(T({}, r), {
+    return null != (i = null == (r = this.participants[e]) ? true : r.reduce((e, r) => r.type === O.fO.STREAM ? (this.participantByIndex.set(r.id, A(T({}, r), {
       maxResolution: t,
       maxFrameRate: n
     })), true) : e, false)) && i
@@ -202,17 +202,17 @@ class L {
     let b, y, v = [],
       I = m.default.getUser(e);
     if (null == I) return v;
-    let A = g.Z.getVoiceStateForChannel(this.channelId, e),
+    let C = g.Z.getVoiceStateForChannel(this.channelId, e),
       N = g.Z.getVoicePlatformForChannel(this.channelId, e),
       P = f.Z.getChannel(this.channelId),
       R = null == P ? true : P.getGuildId(),
       D = null != (r = (null == (n = this.call) || null == (t = n.ringing) ? true : t.includes(e)) || this.guildRingingUsers.has(e)) && r;
-    (null != A || D) && (b = C(T({
+    (null != C || D) && (b = A(T({
       type: O.fO.USER
     }, h.Z.getUserStreamData(e, R)), {
       user: I,
       id: I.id,
-      voiceState: A,
+      voiceState: C,
       voicePlatform: N,
       speaking: (0, a.O)({
         userId: e,
@@ -236,10 +236,10 @@ class L {
           maxResolution: null != n.maxResolution ? T({}, n.maxResolution) : true,
           maxFrameRate: n.maxFrameRate
         } : null;
-      y = C(T({}, h.Z.getUserStreamData(e, R, S.Yn.STREAM), i), {
+      y = A(T({}, h.Z.getUserStreamData(e, R, S.Yn.STREAM), i), {
         type: r ? O.fO.HIDDEN_STREAM : O.fO.STREAM,
         id: t,
-        userVideo: null != (d = null == A ? true : A.selfVideo) && d,
+        userVideo: null != (d = null == C ? true : C.selfVideo) && d,
         user: I,
         userNick: E.ZP.getName(R, this.channelId, I),
         stream: w,

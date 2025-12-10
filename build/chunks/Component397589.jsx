@@ -45,12 +45,12 @@ let y = e => {
         h: i
       }, true, f.LL.UserTriggered)
     }
-  }, [n]), A = i.useCallback(() => {
+  }, [n]), C = i.useCallback(() => {
     (0, s.Z)(u.Z.getArticleURL(g.BhN.CONFETTI_POTION))
   }, []);
   return O && null != I && (null == S ? true : S.type) === m.B.CONFETTI ? (0, r.jsx)(o.P3F, {
     onFocus: T,
-    onClick: A,
+    onClick: C,
     "aria-label": E.intl.string(E.t.Mp5k6E),
     children: (0, r.jsx)(a.u, {
       text: E.intl.formatToPlainString(E.t["FE++aN"], {

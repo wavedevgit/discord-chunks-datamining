@@ -76,7 +76,7 @@ let y = 10,
   I = null,
   T = null;
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     channelId: n
@@ -90,7 +90,7 @@ function A(e) {
   }))), r
 }
 
-function C(e) {
+function A(e) {
   let {
     settings: {
       type: t
@@ -144,7 +144,7 @@ class R extends(r = Chunk442837.ZP.PersistedStore) {
 }
 h(R, "displayName", "FrecencyStore"), h(R, "persistKey", "FrecencyStore");
 let D = new R(Chunk570140.Z, {
-  CHANNEL_SELECT: A,
-  VOICE_CHANNEL_SELECT: A,
-  USER_SETTINGS_PROTO_UPDATE: C
+  CHANNEL_SELECT: C,
+  VOICE_CHANNEL_SELECT: C,
+  USER_SETTINGS_PROTO_UPDATE: A
 })

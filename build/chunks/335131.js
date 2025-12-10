@@ -66,9 +66,9 @@ function T(e) {
   return e
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
-  var n, r, i = C(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -76,7 +76,7 @@ function A(e, t) {
   return i
 }
 
-function C(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -87,7 +87,7 @@ require("./328347.js"), require("./874703.js"), require("./52030.js");
 let N = e => {
     var {
       tab: t
-    } = e, r = A(e, ["tab"]);
+    } = e, r = C(e, ["tab"]);
     {
       let {
         default: e

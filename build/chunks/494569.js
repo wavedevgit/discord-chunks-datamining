@@ -63,10 +63,10 @@ function u(e) {
       }
     },
     T = (0, a.useRef)(false),
-    A = () => {
+    C = () => {
       T.current = true
     },
-    C = () => {
+    A = () => {
       T.current = false
     },
     N = "" === u ? v.format("Empty") : (u || `${n}`).replace("-", "−");
@@ -101,8 +101,8 @@ function u(e) {
       "aria-readonly": _ || true,
       "aria-required": m || true,
       onKeyDown: I,
-      onFocus: A,
-      onBlur: C
+      onFocus: C,
+      onBlur: A
     },
     incrementButtonProps: {
       onPressStart: () => {
@@ -111,8 +111,8 @@ function u(e) {
       onPressEnd: () => {
         S(), x()
       },
-      onFocus: A,
-      onBlur: C
+      onFocus: C,
+      onBlur: A
     },
     decrementButtonProps: {
       onPressStart: () => {
@@ -121,8 +121,8 @@ function u(e) {
       onPressEnd: () => {
         S(), x()
       },
-      onFocus: A,
-      onBlur: C
+      onFocus: C,
+      onBlur: A
     }
   }
 }

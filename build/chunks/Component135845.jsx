@@ -31,8 +31,8 @@ function S(e) {
       currentUserId: S,
       guild: I,
       message: T,
-      onTransitionToInviteChannel: A,
-      onAcceptInstantInvite: C
+      onTransitionToInviteChannel: C,
+      onAcceptInstantInvite: A
     } = e,
     N = null == I ? true : I.id,
     P = (0, l.e7)([m.Z], () => m.Z.getGuildId()),
@@ -53,13 +53,13 @@ function S(e) {
     U = a.state === b.r2o.ACCEPTING,
     G = i.useCallback(() => {
       let e = "noop";
-      x ? (A(), e = "transition") : (C(), e = "accept"), (0, c.r$)({
+      x ? (C(), e = "transition") : (A(), e = "accept"), (0, c.r$)({
         invite: a,
         action: e,
         inviter_id: T.author.id,
         invite_message_id: T.id
       }, w)
-    }, [a, T, w, x, A, C]),
+    }, [a, T, w, x, C, A]),
     Z = null != I;
   if (null == I) {
     if (null == a.guild) return (0, r.jsx)(E.Z, {});

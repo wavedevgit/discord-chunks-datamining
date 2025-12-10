@@ -19,29 +19,29 @@ var Chunk13245 = require("./13245.js"),
 
 function g(e, t, n, g) {
   if (s.Z.isNotificationDisabled(d.n0.RequestToStream)) return null;
-  let O = t.username,
-    y = f.intl.format(m.default.jTbTAF, {
+  let y = t.username,
+    O = f.intl.format(m.default.jTbTAF, {
       username: "",
       game: n.name
     }),
-    E = t.getAvatarURL(e.guild_id, 80),
+    v = t.getAvatarURL(e.guild_id, 80),
     {
-      trackView: v,
+      trackView: E,
       trackClick: b
-    } = (0, c.Rg)(d.n0.RequestToStream, {
+    } = (0, u.Rg)(d.n0.RequestToStream, {
       notif_type: d.n0.RequestToStream,
       notif_user_id: t.id,
       activity_type: h.mFx.STREAM_REQUEST,
       activity_name: g.name
     });
   return {
-    icon: E,
-    title: O,
-    body: y,
+    icon: v,
+    title: y,
+    body: O,
     confirmText: f.intl.string(m.default.UGbmBp),
     cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {
-      v()
+      E()
     },
     onConfirmClick: (e, t) => {
       let n = a.Z.getState().preset;
@@ -52,7 +52,7 @@ function g(e, t, n, g) {
           location: "requestToStreamNotification"
         });
         n = e ? p.ApplicationStreamPresets.PRESET_AUTO : p.ApplicationStreamPresets.PRESET_VIDEO
-      }(0, o.Z)(u.Z.getTargetPID(), {
+      }(0, o.Z)(c.Z.getTargetPID(), {
         preset: n
       }), b("request-to-stream"), i.Z.updateNotificationStatus(t)
     },

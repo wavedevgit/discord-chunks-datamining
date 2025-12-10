@@ -24,14 +24,14 @@ let f = 200,
       hideActionsWhenDisabled: m = true
     } = e, h = i.useRef(0), g = i.useRef(0), E = i.useRef(0), b = i.useRef(false), y = i.useRef(null), O = i.useMemo(() => i.Children.map(t, e => !i.isValidElement(e) || _(e) ? e : i.cloneElement(e, {
       tabIndex: false
-    })), [t]), [v, S] = i.useState(false), [I, T] = i.useState(false), [A, C] = i.useState(true), N = () => {
+    })), [t]), [v, S] = i.useState(false), [I, T] = i.useState(false), [C, A] = i.useState(true), N = () => {
       S(g.current > h.current)
     }, P = i.useCallback(() => {
       let e = w.current;
       null != e && (y.current = Math.floor((E.current + e.clientWidth / 2) / (e.scrollWidth / e.childElementCount)))
     }, []), R = i.useCallback(() => {
       let e = w.current;
-      null != e && (T(E.current > 0), C(E.current + e.clientWidth < e.scrollWidth), P())
+      null != e && (T(E.current > 0), A(E.current + e.clientWidth < e.scrollWidth), P())
     }, [P]), D = (0, c.y)(e => {
       let {
         contentRect: t
@@ -129,15 +129,15 @@ let f = 200,
           })
         }), (0, r.jsx)("div", {
           className: o()(d.button, {
-            [d.disabled]: !A && m
+            [d.disabled]: !C && m
           }),
           children: (0, r.jsx)(l.hU, {
             icon: l.d4D,
             variant: "overlay-secondary",
             onClick: L,
-            disabled: !A,
+            disabled: !C,
             "aria-label": u.intl.string(u.t.H4hwjn),
-            "aria-hidden": !A && m
+            "aria-hidden": !C && m
           })
         })]
       }), (0, r.jsx)(l.Kqy, {
@@ -146,8 +146,8 @@ let f = 200,
         ref: w,
         className: o()(d.children, {
           [d.scrollLeft]: I,
-          [d.scrollRight]: A,
-          [d.scrollBoth]: I && A
+          [d.scrollRight]: C,
+          [d.scrollBoth]: I && C
         }),
         tabIndex: 0,
         onFocus: e => {

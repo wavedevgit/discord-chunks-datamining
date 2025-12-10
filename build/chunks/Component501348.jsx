@@ -208,7 +208,7 @@ class ei extends Chunk473749.Component {
         className: o()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
         outline: true,
         "aria-hidden": true,
-        children: Chunk120356.map((t, n) => (0, r.jsx)(A.Z, {
+        children: Chunk120356.map((t, n) => (0, r.jsx)(C.Z, {
           author: (0, T.ZH)(t),
           message: t,
           compact: e,

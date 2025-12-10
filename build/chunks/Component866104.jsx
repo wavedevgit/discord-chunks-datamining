@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk793701 = require("./793701.js");
 
-function A(e) {
+function C(e) {
   let {
     onClick: t
   } = e;
@@ -50,7 +50,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   return (0, s.cj)([m.ZP, h.default], () => {
     var t, n;
     let r = h.default.getCurrentUser();
@@ -98,7 +98,7 @@ function P(e) {
   } = e, s = a.id, {
     nickname: d,
     nickcolor: p
-  } = C(s), {
+  } = A(s), {
     isTruncated: _,
     ExpandableTextContainer: m
   } = (0, y.s)(), h = () => (0, S.Z)({
@@ -129,7 +129,7 @@ function P(e) {
     }), _ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
         size: 4
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(C, {
         onClick: h
       })]
     })]

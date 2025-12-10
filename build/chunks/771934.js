@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Ac: () => b,
-  DI: () => C,
+  DI: () => A,
   HA: () => R,
   HV: () => S,
   J4: () => m,
@@ -12,7 +12,7 @@ require.d(exports, {
   Om: () => I,
   P0: () => _,
   PI: () => O,
-  Vb: () => A,
+  Vb: () => C,
   fR: () => y,
   gG: () => h,
   hf: () => P,
@@ -95,10 +95,10 @@ let f = "manual",
   T = () => {
     f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
   },
-  A = () => {
+  C = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_BACK_BUTTON_CLICKED, {})
   },
-  C = e => {
+  A = e => {
     l.default.track(c.rMx.CUSTOM_THEMES_BANNER_CLICKED, {
       banner_location: e
     })

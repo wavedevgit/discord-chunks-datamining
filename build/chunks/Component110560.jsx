@@ -255,9 +255,9 @@ function Q(e) {
       sourceQuestContent: o
     }))
   }, {
-    modalKey: (0, C.u7)(n.id),
+    modalKey: (0, A.u7)(n.id),
     backdropStyle: s.fCB.IMMERSIVE,
-    onCloseCallback: () => (0, C.Mo)({
+    onCloseCallback: () => (0, A.Mo)({
       questId: n.id,
       sourceQuestContent: o,
       videoSessionId: d
@@ -333,7 +333,7 @@ function et(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("1216"), n.e("53145")]).then(n.bind(n, 627080));
+    } = await Promise.all([n.e("97012"), n.e("53145")]).then(n.bind(n, 627080));
     return n => (0, r.jsx)(t, k(j({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
@@ -375,5 +375,5 @@ async function en(e, t) {
 }
 
 function er(e) {
-  if ((0, A.Rt)(e)) return e.config.features.includes(R.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : s.iWm
+  if ((0, C.Rt)(e)) return e.config.features.includes(R.S7.CLOUD_GAMING_ACTIVITY) ? s.v3n : s.iWm
 }

@@ -4,8 +4,8 @@
 require.d(exports, {
   EO: () => I,
   Fc: () => S,
-  Ft: () => C,
-  W5: () => A,
+  Ft: () => A,
+  W5: () => C,
   XM: () => h,
   ZP: () => P,
   _T: () => E,
@@ -87,7 +87,7 @@ function y(e) {
   let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
   if (null == e) return d;
   let r = b(e),
-    i = n ? A(e) : null != (t = e.username) ? t : d;
+    i = n ? C(e) : null != (t = e.username) ? t : d;
   return r === i ? r : null != r ? "".concat(r, " (").concat(i, ")") : i
 }
 
@@ -147,13 +147,13 @@ function T(e, t, n) {
   return "never" !== t.decoration ? p(i) : i
 }
 
-function A(e, t) {
+function C(e, t) {
   let n = c({}, _, t),
     r = "auto" !== n.identifiable || i.Z.hidePersonalInformation;
   return T(e, n, r)
 }
 
-function C(e) {
+function A(e) {
   return (0, r.e7)([a.default], () => {
     if (null != e) return e.isPrivate() && e.isDM() ? a.default.getUser(e.getRecipientId()) : null
   })
@@ -167,7 +167,7 @@ let P = {
   getName: g,
   useName: E,
   isNameConcealed: e => 2 === e.length && e.endsWith("…"),
-  getUserTag: A,
+  getUserTag: C,
   useUserTag: function(e, t) {
     return T(e, c({}, _, t), (0, r.e7)([i.Z], () => i.Z.hidePersonalInformation))
   },
@@ -175,5 +175,5 @@ let P = {
   getFormattedName: y,
   getGlobalName: b,
   humanizeStatus: O,
-  useDirectMessageRecipient: C
+  useDirectMessageRecipient: A
 }

@@ -40,7 +40,7 @@ function T(e, t, n) {
   }) : e[t] = n, e
 }
 
-function A(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function A(e) {
   }
   return e
 }
-let C = 100,
+let A = 100,
   N = 60,
   P = 1,
   R = .5,
@@ -116,7 +116,7 @@ class x {
       id: Chunk442837.id,
       banner: Chunk442837.banner
     }, true)) ? module : null;
-    return null !== Chunk516796 && (Chunk110924.selected_guild_banner_url = Chunk516796), Chunk110924.guilds.length > C && (Chunk110924.guilds = Chunk110924.guilds.slice(0, C), Chunk110924.truncated = true), Chunk110924.channels.length > C && (Chunk110924.channels = Chunk110924.channels.slice(0, C), Chunk110924.truncated = true), {
+    return null !== Chunk516796 && (Chunk110924.selected_guild_banner_url = Chunk516796), Chunk110924.guilds.length > A && (Chunk110924.guilds = Chunk110924.guilds.slice(0, A), Chunk110924.truncated = true), Chunk110924.channels.length > A && (Chunk110924.channels = Chunk110924.channels.slice(0, A), Chunk110924.truncated = true), {
       brand_safety_context: JSON.stringify(Chunk110924)
     }
   }
@@ -150,7 +150,7 @@ class x {
             questId: e.id,
             event: I.rMx.QUEST_CONTENT_VIEWED,
             trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata,
-            properties: A({
+            properties: C({
               min_view_time_seconds: this.minViewTimeSeconds,
               min_viewport_percentage: this.minViewportPercentage,
               triggered_by_status_change: this.triggeredByStatusChange,
@@ -174,7 +174,7 @@ class x {
           }), (0, b.dA)({
             questId: t.id,
             event: I.rMx.QUEST_CONTENT_VIEW_TIME,
-            properties: A({
+            properties: C({
               is_termination_beat: e,
               viewed_time_ms: n,
               triggered_by_status_change: _.triggeredByStatusChange
@@ -184,7 +184,7 @@ class x {
           })
         }
       }), _.lastBeatTime = Date.now()
-    }), T(this, "commonProperties", e => A({
+    }), T(this, "commonProperties", e => C({
       impression_id: this.id,
       is_quest_enrollment_blocked: this.isQuestEnrollmentBlocked,
       quest_status: (0, b.uk)(e)
@@ -212,7 +212,7 @@ class x {
         }), (0, b.dA)({
           questId: n.id,
           event: I.rMx.QUEST_CONTENT_LOADED,
-          properties: A({
+          properties: C({
             triggered_by_status_change: this.triggeredByStatusChange,
             metadata_raw: null != e ? e : null,
             metadata_sealed: null != t ? t : null

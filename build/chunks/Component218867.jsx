@@ -36,8 +36,8 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
     listHeaderHeight: S,
     stickyHeaders: I = false,
     className: T,
-    hideScrollbar: A = false,
-    fade: C = false,
+    hideScrollbar: C = false,
+    fade: A = false,
     initialScrollTop: N = 0,
     role: P = "list"
   } = e, [R, D] = i.useState(false), [w, x] = i.useState(false), L = i.useRef(null), j = i.useRef(0), M = i.useRef(false);
@@ -289,9 +289,9 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
     }
   }, [Q, d]), J = i.useMemo(() => ({
     height: H
-  }), [H]), $ = A ? s.xVE : s.h21;
+  }), [H]), $ = C ? s.xVE : s.h21;
   return (0, r.jsxs)($, {
-    fade: C,
+    fade: A,
     className: o()(c.scroller, T),
     ref: L,
     onScroll: z,

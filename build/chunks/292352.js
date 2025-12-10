@@ -7,8 +7,8 @@ require.d(exports, {
   Mu: () => v,
   Of: () => l,
   QH: () => O,
-  TX: () => C,
-  U: () => A,
+  TX: () => A,
+  U: () => C,
   Wz: () => N,
   YC: () => I,
   _6: () => S,
@@ -125,7 +125,7 @@ let T = new Map([
       sectionDescription: e => e ? (0, a.lW)(s.intl.string(o.default.c0NgBX), s.intl.string(o.default.BLgIrk)) : (0, a.lW)(s.intl.string(o.default.DLVyFw), s.intl.string(o.default.sSJauZ))
     }]
   ]),
-  A = new Map([
+  C = new Map([
     [6, {
       priority: 175,
       tooltipHeader: () => Chunk388032.intl.string(Chunk225753.default.eo4Fxh),
@@ -145,7 +145,7 @@ let T = new Map([
       sectionDescription: e => e ? s.intl.string(o.default.cqIdqZ) : s.intl.string(o.default["85PtWu"])
     }]
   ]),
-  C = () => ({
+  A = () => ({
     seconds: Chunk388032.intl.string(Chunk225753.default.CJdoee),
     minutes: Chunk225753.default.InzMn3,
     hours: Chunk225753.default.ErkYCI,

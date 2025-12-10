@@ -89,7 +89,7 @@ function c(e) {
         subLanguage: "css"
       }
     },
-    A = {
+    C = {
       begin: ".?gql`",
       end: "",
       starts: {
@@ -99,7 +99,7 @@ function c(e) {
         subLanguage: "graphql"
       }
     },
-    C = {
+    A = {
       className: "string",
       begin: "`",
       end: "`",
@@ -134,7 +134,7 @@ function c(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    P = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, T, A, C, {
+    P = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, T, C, A, {
       match: /\$\d+/
     }, v];
   S.contains = P.concat({
@@ -259,7 +259,7 @@ function c(e) {
       label: "shebang",
       binary: "node",
       relevance: 5
-    }), j, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, T, A, C, N, {
+    }), j, e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, I, T, C, A, N, {
       match: /\$\d+/
     }, v, L, {
       scope: "attr",

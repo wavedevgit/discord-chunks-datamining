@@ -34,7 +34,7 @@ function C(e) {
     enabled: P
   } = u.EO.useConfig({
     location: g.dr.VIDEO_MODAL
-  }), [D, R] = o.useState(false), T = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, m.w8)(y.config), {
+  }), [D, T] = o.useState(false), R = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), I = o.useRef(null == (t = y.userStatus) ? true : t.completedAt), [N, A] = o.useState(false), w = (0, m.w8)(y.config), {
     completedRatio: L,
     completedRatioDisplay: k
   } = (0, d.I)(y), M = (null == (n = y.userStatus) ? true : n.completedAt) != null, V = (null == (C = y.userStatus) ? true : C.claimedAt) != null, Z = O.intl.formatToPlainString(M && !V && P ? O.t.NRp4K4 : O.t["12IWP2"], {
@@ -59,15 +59,15 @@ function C(e) {
       className: h.confetti,
       loop: false,
       autoplay: false,
-      shouldAnimate: N && !T
+      shouldAnimate: N && !R
     }), (0, r.jsx)(i.u, {
       position: _,
       text: Z,
       onTooltipShow: () => {
-        R(true)
+        T(true)
       },
       onTooltipHide: () => {
-        R(false)
+        T(false)
       },
       children: (0, r.jsx)(a.P3F, {
         className: h.progressCont,

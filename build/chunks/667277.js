@@ -100,15 +100,15 @@ function T(e, t, n, g) {
     v = (0, _.j)(),
     T = null != (P = null != (R = null == g ? true : g.locale) ? R : v.locale) ? P : r.Z;
   if (!T.match) throw RangeError("locale must contain match property");
-  var C = (0, u.Z)(null != (D = null != (w = null != (x = null != (L = null == g ? true : g.firstWeekContainsDate) ? L : null == g || null == (j = g.locale) || null == (M = j.options) ? true : M.firstWeekContainsDate) ? x : v.firstWeekContainsDate) ? w : null == (k = v.locale) || null == (U = k.options) ? true : U.firstWeekContainsDate) ? D : 1);
-  if (!(C >= 1 && C <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
+  var A = (0, u.Z)(null != (D = null != (w = null != (x = null != (L = null == g ? true : g.firstWeekContainsDate) ? L : null == g || null == (j = g.locale) || null == (M = j.options) ? true : M.firstWeekContainsDate) ? x : v.firstWeekContainsDate) ? w : null == (k = v.locale) || null == (U = k.options) ? true : U.firstWeekContainsDate) ? D : 1);
+  if (!(A >= 1 && A <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
   var N = (0, u.Z)(null != (G = null != (Z = null != (B = null != (F = null == g ? true : g.weekStartsOn) ? F : null == g || null == (V = g.locale) || null == (H = V.options) ? true : H.weekStartsOn) ? B : v.weekStartsOn) ? Z : null == (Y = v.locale) || null == (W = Y.options) ? true : W.weekStartsOn) ? G : 0);
   if (!(N >= 0 && N <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if ("" === O)
     if ("" === E) return (0, a.default)(n);
     else return new Date(NaN);
   var P, R, D, w, x, L, j, M, k, U, G, Z, B, F, V, H, Y, W, K, z = {
-      firstWeekContainsDate: C,
+      firstWeekContainsDate: A,
       weekStartsOn: N,
       locale: T
     },
@@ -144,7 +144,7 @@ function T(e, t, n, g) {
         q.push(o.setter), E = o.rest
       } else {
         if (n.match(I)) throw RangeError("Format string contains an unescaped latin alphabet character `" + n + "`");
-        if ("''" === t ? t = "'" : "'" === n && (t = A(t)), 0 !== E.indexOf(t)) return {
+        if ("''" === t ? t = "'" : "'" === n && (t = C(t)), 0 !== E.indexOf(t)) return {
           v: new Date(NaN)
         };
         E = E.slice(t.length)
@@ -195,6 +195,6 @@ function T(e, t, n, g) {
   return ei
 }
 
-function A(e) {
+function C(e) {
   return e.match(O)[1].replace(v, "'")
 }

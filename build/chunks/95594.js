@@ -74,7 +74,7 @@ function f(e) {
     paddingVertical: y,
     paddingHorizontal: O,
     dir: v
-  } = e, S = (0, a.Z)(), I = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), A = _(), C = Math.min(null != m ? m : 1 / 0, A.offsetWidth), N = null != m ? Math.max(0, A.offsetWidth - m) : 0, {
+  } = e, S = (0, a.Z)(), I = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), C = _(), A = Math.min(null != m ? m : 1 / 0, C.offsetWidth), N = null != m ? Math.max(0, C.offsetWidth - m) : 0, {
     dirty: P,
     chunkStart: R,
     chunkEnd: D,
@@ -90,7 +90,7 @@ function f(e) {
     getItemKey: s,
     getItemHeight: c,
     getSectionHeight: f,
-    bufferWidth: C,
+    bufferWidth: A,
     itemGutter: h,
     removeEdgeItemGutters: g,
     sectionGutter: E,
@@ -99,7 +99,7 @@ function f(e) {
     paddingHorizontal: O,
     marginLeft: N / 2,
     dir: v
-  }), T.computeVisibleSections(Math.max(0, R * p), D * p), T.getState()), [P, T, t, n, s, c, f, R, D, p, h, g, E, b, y, O, C, N, v]), u(l({}, I.current), {
+  }), T.computeVisibleSections(Math.max(0, R * p), D * p), T.getState()), [P, T, t, n, s, c, f, R, D, p, h, g, E, b, y, O, A, N, v]), u(l({}, I.current), {
     masonryComputer: T,
     forceUpdateOnChunkChange: w,
     forceUpdate: S

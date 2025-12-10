@@ -69,7 +69,7 @@ function T(e) {
   }), e.setLimit(1 / 0)
 }
 
-function A() {
+function C() {
   return (0, Chunk54381.jsx)("div", {
     className: Chunk704563.voiceListSearchEmpty,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -81,7 +81,7 @@ function A() {
   })
 }
 
-function C(e) {
+function A(e) {
   let t = "" !== e,
     n = (0, o.Wu)([p.ZP, f.Z, m.Z], () => {
       let e = m.Z.getGuildId();
@@ -163,7 +163,7 @@ function R(e) {
     visible: true,
     autocompleterResultTypes: I,
     autocompleterBeforeCreateSearchContext: T
-  }), y = C(p), {
+  }), y = A(p), {
     focusedIndex: O,
     setFocusedIndex: v
   } = P(p);
@@ -247,7 +247,7 @@ function R(e) {
       rowHeight: 34
     } : {
       sections: [1],
-      renderRow: () => (0, r.jsx)(A, {}),
+      renderRow: () => (0, r.jsx)(C, {}),
       sectionHeight: 0,
       rowHeight: 52
     };

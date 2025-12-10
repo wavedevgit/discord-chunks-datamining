@@ -374,7 +374,7 @@ function J(e) {
     children: [(0, r.jsx)(h.Text, {
       className: B.emptyStateHeader,
       variant: "text-xs/bold",
-      color: "interactive-normal",
+      color: "interactive-text-default",
       children: F.intl.string(F.t["9Oq93m"])
     }), (0, r.jsxs)("div", {
       className: B.emptyStateIconContainer,

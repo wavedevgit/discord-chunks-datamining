@@ -141,18 +141,18 @@ function T(e) {
     guildId: t,
     members: n
   } = e;
-  return C(t, n.map(e => e.presence))
+  return A(t, n.map(e => e.presence))
 }
 
-function A(e) {
+function C(e) {
   let {
     guildId: t,
     addedMembers: n
   } = e;
-  return null != n && C(t, n.map(e => e.presence))
+  return null != n && A(t, n.map(e => e.presence))
 }
 
-function C(e, t) {
+function A(e, t) {
   let n = false;
   return t.forEach(t => {
     null != t && b(e, t.user.id, t.activities, t.status) && (n = true)
@@ -210,7 +210,7 @@ let w = new D(Chunk570140.Z, {
   PRESENCES_REPLACE: S,
   PRESENCE_UPDATES: I,
   THREAD_MEMBER_LIST_UPDATE: T,
-  THREAD_MEMBERS_UPDATE: A,
+  THREAD_MEMBERS_UPDATE: C,
   RELATIONSHIP_ADD: P,
   RELATIONSHIP_UPDATE: P,
   RELATIONSHIP_REMOVE: R

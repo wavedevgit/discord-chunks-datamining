@@ -35,8 +35,8 @@ let y = 4,
   S = 15 * Chunk70956.Z.Millis.MINUTE,
   I = new Map,
   T = new Set,
-  A = new Map,
-  C = null,
+  C = new Map,
+  A = null,
   N = (0, Chunk392711.debounce)(Chunk564990.yK, 3e3, {
     trailing: true
   });
@@ -74,12 +74,12 @@ function w(e) {
 
 function x() {
   var e;
-  let t = null != (e = A.get(v)) ? module : 0;
+  let t = null != (e = C.get(v)) ? module : 0;
   if (exports > 0 && exports <= y || (w(v), !D(v))) return;
   let n = Chunk146282.Z.getFeed(v);
-  if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == C) return;
+  if ((null == require ? true : require.refresh_stale_inbox_after_ms) != null && null == A) return;
   let r = (null == require ? true : require.expired_at) == null ? 0 : new Date(require.expired_at).getTime() - Date.now(),
-    a = Math.max(0, null == C ? 0 : new Date(C).getTime() - Date.now(), Chunk392711) + (exports > 0 ? P() : 0);
+    a = Math.max(0, null == A ? 0 : new Date(A).getTime() - Date.now(), Chunk392711) + (exports > 0 ? P() : 0);
   R(v, {
     loading: false,
     nextFetchDate: new Date(Date.now() + Chunk570140)
@@ -108,19 +108,19 @@ async function L(e) {
       type: "CONTENT_INVENTORY_SET_FEED",
       feedId: t,
       feed: r
-    }), A.set(t, 0), T.delete(t), R(t, {
+    }), C.set(t, 0), T.delete(t), R(t, {
       loading: false
-    }), t === v && (C = null, x())
+    }), t === v && (A = null, x())
   } catch (o) {
     var i;
-    let e = null != (i = A.get(t)) ? i : 0;
+    let e = null != (i = C.get(t)) ? i : 0;
     if (e < y) {
       let i = f.Z.Millis.MINUTE * Math.pow(2, e) + P(e);
       I.set(t, setTimeout(() => L({
         feedId: t,
         feature: n,
         force: r
-      }), i)), A.set(t, e + 1)
+      }), i)), C.set(t, e + 1)
     } else a.Z.dispatch({
       type: "CONTENT_INVENTORY_CLEAR_FEED",
       feedId: t
@@ -157,7 +157,7 @@ function G(e) {
   let {
     refreshAfterMs: t
   } = e, n = h.Z.getFeed(v);
-  (null == n ? true : n.refresh_stale_inbox_after_ms) != null && (C = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
+  (null == n ? true : n.refresh_stale_inbox_after_ms) != null && (A = new Date(Date.now() + (null != t ? t : n.refresh_stale_inbox_after_ms)).toUTCString(), x())
 }
 
 function Z(e) {

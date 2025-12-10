@@ -217,9 +217,9 @@ function z(e) {
     savedMessage: t,
     closePopout: n,
     throttledNow: a
-  } = e, s = (0, C.gr)(t), l = i.useCallback(async e => {
+  } = e, s = (0, A.gr)(t), l = i.useCallback(async e => {
     var r;
-    await (0, C.fC)(t, s), e.shiftKey || n(), S.default.track(L.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, A.fC)(t, s), e.shiftKey || n(), S.default.track(L.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null == (r = t.message) ? true : r.author.id,
@@ -259,7 +259,7 @@ function z(e) {
       className: M.deleteIcon,
       children: (0, r.jsx)(_.Mgn, {
         size: "xxs",
-        color: _.TVs.colors.INTERACTIVE_ACTIVE
+        color: _.TVs.colors.INTERACTIVE_TEXT_ACTIVE
       })
     }), (0, r.jsx)(_.Heading, {
       variant: "text-md/semibold",
@@ -271,7 +271,7 @@ function z(e) {
         label: j.intl.string(j.t.SvXS1Z),
         icon: _.XHJ,
         dangerous: true,
-        onClick: () => (0, A.x)(t.saveData)
+        onClick: () => (0, C.x)(t.saveData)
       }, "delete")
     })]
   })
@@ -299,7 +299,7 @@ function Q(e) {
     children: [(0, r.jsx)(b.sF, {
       label: j.intl.string(j.t.yjGtdJ),
       icon: _.dz2,
-      onClick: () => (0, A.z)({
+      onClick: () => (0, C.z)({
         channelId: t.saveData.channelId,
         messageId: t.saveData.messageId,
         dueAt: true
@@ -323,7 +323,7 @@ function Q(e) {
     }, "jump-to-message"), (0, r.jsx)(b.sF, {
       label: j.intl.string(j.t.SvXS1Z),
       icon: _.plf,
-      onClick: () => (0, A.x)(t.saveData)
+      onClick: () => (0, C.x)(t.saveData)
     }, "remove-reminder")]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.sF, {
@@ -345,7 +345,7 @@ function Q(e) {
     }, "jump-to-message"), (0, r.jsx)(b.sF, {
       label: j.intl.string(j.t.SvXS1Z),
       icon: _.plf,
-      onClick: () => (0, A.x)(t.saveData)
+      onClick: () => (0, C.x)(t.saveData)
     }, "remove-bookmark")]
   })
 }

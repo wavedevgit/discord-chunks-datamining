@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   GF: () => T,
-  ZP: () => C,
-  yo: () => A
+  ZP: () => A,
+  yo: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,7 +40,7 @@ function v(e) {
       className: y.text,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
-        color: "interactive-active",
+        color: "interactive-text-active",
         children: b.intl.string(i ? b.t.PFOUKW : b.t["93ZDWE"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
@@ -145,7 +145,7 @@ function T() {
   })
 }
 
-function A() {
+function C() {
   let e = (0, Chunk442837.Wu)([Chunk699516.Z], () => Chunk699516.Z.getIgnoredIDs());
   return (0, Chunk54381.jsx)(I, {
     setting: Chunk726985.s6.IGNORED_USERS,
@@ -154,7 +154,7 @@ function A() {
   })
 }
 
-function C() {
+function A() {
   return (0, Chunk54381.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.RESTRICTED_USERS,
     scrollPosition: Chunk526761.FY.RESTRICTED_ACCOUNTS,
@@ -164,6 +164,6 @@ function C() {
       description: Chunk388032.intl.format(Chunk388032.t["0aNQo9"], {
         helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)(A, {})]
+    }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)(C, {})]
   })
 }

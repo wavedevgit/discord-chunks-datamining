@@ -2,7 +2,7 @@
 /** chunk id: 466377, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Cg: () => C,
+  Cg: () => A,
   Y0: () => R,
   YA: () => M,
   fM: () => P,
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk990547 = require("./990547.js"),
   Chunk748780 = require("./748780.js"),
   Chunk197723 = require("./197723.jsx"),
@@ -71,7 +71,7 @@ function I(e, t) {
 
 function T(e, t) {
   if (null == e) return {};
-  var n, r, i = A(e, t);
+  var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,14 +79,14 @@ function T(e, t) {
   return i
 }
 
-function A(e, t) {
+function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var C = function(e) {
+var A = function(e) {
   return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e.DYNAMIC = "dynamic", e
 }({});
 let N = Object.freeze({
@@ -110,8 +110,8 @@ function R(e) {
       hideShadow: b = false,
       onAnimationEnd: O = E.dG,
       returnRef: S,
-      animation: A = "default",
-      parentComponent: C
+      animation: C = "default",
+      parentComponent: A
     } = e,
     P = T(e, ["transitionState", "children", "size", "role", "className", "fullscreenOnMobile", "hideShadow", "onAnimationEnd", "returnRef", "animation", "parentComponent"]);
   let R = n === g.Dv.ENTERING || n === g.Dv.ENTERED;
@@ -119,14 +119,14 @@ function R(e) {
     type: l.ImpressionTypes.PAGE,
     name: l.ImpressionNames.MODAL_ROOT_LEGACY,
     properties: {
-      variant: C
+      variant: A
     }
   });
   let {
     reducedMotion: D
   } = i.useContext(d.Sfi), w = (0, d.q_F)({
     opacity: +!!R,
-    transform: R || D.enabled || "subtle" === A ? "scale(1)" : "scale(0.7)",
+    transform: R || D.enabled || "subtle" === C ? "scale(1)" : "scale(0.7)",
     config: {
       duration: 200,
       easing: c.Z.Easing.out(c.Z.Easing.quad),

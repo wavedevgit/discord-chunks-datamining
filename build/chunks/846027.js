@@ -51,12 +51,12 @@ function T() {
   (0, Chunk460181.GN)("mention3", true, true, true, Chunk509571.w.VOICE)
 }
 
-function A() {
+function C() {
   let e = Chunk131951.Z.getInputDevices()[Chunk131951.Z.getInputDeviceId()];
   return null != module ? module.name : ""
 }
 
-function C(e, t, n, r) {
+function A(e, t, n, r) {
   let {
     location: i,
     analyticsLocations: a
@@ -223,7 +223,7 @@ let N = i()((e, t, n) => {
           n = p.Z.getMediaEngine().getAudioLayer(),
           i = m.Z.getVoiceChannelId(),
           a = null != i ? f.Z.getChannel(i) : null,
-          o = A();
+          o = C();
         g.default.track(b.rMx.VOICE_ACTIVATION_MODE_CHANGED, {
           mode: e,
           location_stack: r,
@@ -237,7 +237,7 @@ let N = i()((e, t, n) => {
           n = p.Z.getMediaEngine().getAudioLayer(),
           i = m.Z.getVoiceChannelId(),
           a = null != i ? f.Z.getChannel(i) : null,
-          s = A();
+          s = C();
         g.default.track(b.rMx.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
           location_stack: r,
           voice_channel_type: null == a ? true : a.type,
@@ -299,7 +299,7 @@ let N = i()((e, t, n) => {
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
       if (D()) return;
       let r = p.Z.getInputDeviceId();
-      (null != t || null != n) && C(p.Z.getInputDevices(), r, e, "Audio Input", {
+      (null != t || null != n) && A(p.Z.getInputDevices(), r, e, "Audio Input", {
         location: t,
         analyticsLocations: n
       }), a.Z.dispatch({
@@ -315,7 +315,7 @@ let N = i()((e, t, n) => {
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
       if (D()) return;
       let r = p.Z.getOutputDeviceId();
-      (null != t || null != n) && C(p.Z.getOutputDevices(), r, e, "Audio Output", {
+      (null != t || null != n) && A(p.Z.getOutputDevices(), r, e, "Audio Output", {
         location: t,
         analyticsLocations: n
       }), a.Z.dispatch({
@@ -331,7 +331,7 @@ let N = i()((e, t, n) => {
       } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
       if (D()) return;
       let r = p.Z.getVideoDeviceId();
-      (null != t || null != n) && C(p.Z.getVideoDevices(), r, e, "Video", {
+      (null != t || null != n) && A(p.Z.getVideoDevices(), r, e, "Video", {
         location: t,
         analyticsLocations: n
       }), a.Z.dispatch({

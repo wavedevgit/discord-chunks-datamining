@@ -57,7 +57,7 @@ function b(e, t) {
   }), e
 }
 let y = () => {
-    let [e, t] = Chunk473749.useState(Chunk474936.PremiumTypes.TIER_0), [n, h] = Chunk473749.useState(Chunk45474.R.WHAT_YOU_LOSE), [E, y] = Chunk473749.useState(null), [v, S] = Chunk473749.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [I, T] = Chunk473749.useState([]), [A, C] = Chunk473749.useState(() => {
+    let [e, t] = Chunk473749.useState(Chunk474936.PremiumTypes.TIER_0), [n, h] = Chunk473749.useState(Chunk45474.R.WHAT_YOU_LOSE), [E, y] = Chunk473749.useState(null), [v, S] = Chunk473749.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [I, T] = Chunk473749.useState([]), [C, A] = Chunk473749.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
     }), [N, P] = Chunk473749.useState(null), [R, D] = Chunk473749.useState(false), [w, x] = Chunk473749.useState(false), [L, j] = Chunk473749.useState(false);
@@ -76,7 +76,7 @@ let y = () => {
         case Chunk474936.Xh.PREMIUM_YEAR_TIER_2:
           module.setFullYear(module.getFullYear() + 1)
       }
-      C(module)
+      A(module)
     }, [v]), (0, Chunk473749.useEffect)(() => {
       switch (module) {
         case Chunk474936.PremiumTypes.TIER_0:
@@ -129,10 +129,10 @@ let y = () => {
         tax: 0,
         taxInclusive: true,
         subscriptionPeriodStart: new Date,
-        subscriptionPeriodEnd: A,
+        subscriptionPeriodEnd: C,
         status: Chunk981631.hUK.PAID
       })), require !== Chunk45474.R.PREVIEW && null !== N && P(null)
-    }, [require, E, A, v, N]);
+    }, [require, E, C, v, N]);
     let M = Chunk473749.useCallback(async () => {
       j(true), await (0, Chunk481060.ZDy)(async () => t => (0, r.jsx)(d.x, b(g({}, t), {
         onClose: () => {
@@ -160,7 +160,7 @@ let y = () => {
           createdAt: new Date,
           canceledAt: null,
           currentPeriodStart: new Date,
-          currentPeriodEnd: A,
+          currentPeriodEnd: C,
           status: f.O0b.ACTIVE,
           paymentSourceId: null,
           paymentGateway: null,
@@ -175,7 +175,7 @@ let y = () => {
           pauseReason: p.Id.UNKNOWN
         }
       })))
-    }, [module, E, v, N, R, w, require, A]);
+    }, [module, E, v, N, R, w, require, C]);
     return (0, Chunk473749.useEffect)(() => {
       L && M()
     }, [require, L, M]), (0, Chunk54381.jsxs)(Chunk261538.pg, {

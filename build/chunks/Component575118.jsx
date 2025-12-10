@@ -200,9 +200,9 @@ function T(e) {
             }), M]
           })
         })
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(C, {
         badge: i
-      }), null != n && null != a && j, null != l && (0, r.jsx)(C, {
+      }), null != n && null != a && j, null != l && (0, r.jsx)(A, {
         subtitle: l
       })]
     })
@@ -214,7 +214,7 @@ function T(e) {
   }) : k
 }
 
-function A(e) {
+function C(e) {
   let {
     badge: t
   } = e;
@@ -226,7 +226,7 @@ function A(e) {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     subtitle: t
   } = e;

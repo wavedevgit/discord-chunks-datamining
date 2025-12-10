@@ -86,8 +86,8 @@ function I(e) {
       giftingOrigin: y,
       onClose: I,
       onComplete: T,
-      analyticsLocations: A,
-      analyticsObject: C,
+      analyticsLocations: C,
+      analyticsObject: A,
       giftRecipient: N,
       variantsReturnStyle: P
     } = e,
@@ -128,7 +128,7 @@ function I(e) {
       isGift: m,
       giftMessage: g,
       giftingOrigin: y,
-      analyticsLocations: A,
+      analyticsLocations: C,
       giftRecipient: N,
       onClose: e => {
         t(), null == I || I(e)
@@ -145,10 +145,10 @@ function I(e) {
       R || d.default.track(_.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: D,
         payment_type: _.Zuq[_.GZQ.ONE_TIME],
-        location: C,
+        location: A,
         is_gift: m,
         sku_id: f,
-        location_stack: A
+        location_stack: C
       }), (0, s.fw)(), (0, l.p)(), null == I || I(R), R && (0, c.qg)({
         variantsReturnStyle: P
       })

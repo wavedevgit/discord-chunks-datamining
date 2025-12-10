@@ -108,7 +108,7 @@ function F(e) {
       if ((0, m.iB)(n)) {
         let e = p.default.extractTimestamp(n.event_id),
           t = (0, m.LI)(e, O.timestampFormatter);
-        return (0, r.jsx)(C.Z, {
+        return (0, r.jsx)(A.Z, {
           userId: n.entity_id,
           subText: t
         }, n.event_id)
@@ -118,7 +118,7 @@ function F(e) {
       }, n.event_id);
       if ((0, m.m4)(n)) {
         let e = _.Z.getPurchaseInfo(n.entity_id);
-        return null == e ? null : (0, r.jsx)(A.Z, {
+        return null == e ? null : (0, r.jsx)(C.Z, {
           skuId: e.sku_id,
           subscriptionPlanId: e.subscription_plan_id,
           total: e.total,

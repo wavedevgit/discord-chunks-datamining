@@ -31,8 +31,8 @@ let f = 20,
       rowHeight: S,
       sectionHeaderHeight: I,
       sectionFooterHeight: T,
-      renderUpsell: A,
-      onScroll: C
+      renderUpsell: C,
+      onScroll: A
     } = e, N = i.useRef(false), P = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), D = a.useStore(e => e.activeCategoryIndex), w = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
@@ -50,8 +50,8 @@ let f = 20,
         searchQuery: R,
         nitroLockedSectionStates: w,
         scrollTop: e
-      }), null == C || C(e)
-    }, [x, R, w, C]);
+      }), null == A || A(e)
+    }, [x, R, w, A]);
     return i.useEffect(() => {
       null != P.current && L(0)
     }, [L, P]), (0, u.Xs)({
@@ -111,7 +111,7 @@ let f = 20,
         sectionFooterHeight: T,
         stickyHeaders: true,
         ref: P
-      }), null == A ? true : A(), null == b ? true : b()]
+      }), null == C ? true : C(), null == b ? true : b()]
     })
   }),
   _ = (0, Chunk392711.throttle)(m, 300, {

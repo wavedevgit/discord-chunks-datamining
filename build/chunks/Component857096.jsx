@@ -32,12 +32,12 @@ function I(e) {
     isLoading: t
   } = e, n = (0, o.e7)([g.Z], () => g.Z.getConnectedFrame()), i = (0, o.e7)([g.Z], () => g.Z.getFrameLayoutMode()), u = (0, f.q)(null == n ? true : n.applicationId), d = (0, o.e7)([m.Z], () => m.Z.isFrameHidden()), I = i === b.U.PIP && !d, T = I && null != m.Z.pipVideoWindow && null != m.Z.pipFrameWindow;
   if (null == n || null == u) return null;
-  let A = {
+  let C = {
     instance_id: "example-cl-instance",
     platform: y.S4.DESKTOP
   };
 
-  function C(e) {
+  function A(e) {
     let {
       onActive: t,
       onForceIdle: i,
@@ -64,7 +64,7 @@ function I(e) {
       })]
     }) : null
   }
-  return null != n.proxyTicket && (A.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(_.ZP, {
+  return null != n.proxyTicket && (C.discord_proxy_ticket = n.proxyTicket), (0, r.jsx)(_.ZP, {
     timeout: 2e3,
     children: e => {
       let {
@@ -84,7 +84,7 @@ function I(e) {
         noBorder: !I,
         children: [(0, r.jsx)("div", {
           className: "theme-dark",
-          children: C({
+          children: A({
             onActive: o,
             onForceIdle: f,
             idle: i
@@ -97,7 +97,7 @@ function I(e) {
           allowPopups: (0, l.h)(u),
           referrerPolicy: "origin",
           url: n.url,
-          queryParams: A,
+          queryParams: C,
           className: a()(O.iframe, {
             [O.pipModeShort]: I,
             [O.pipNonInteractive]: I

@@ -44,7 +44,7 @@ function p(e) {
     percents: n,
     size: i = "small",
     foregroundColors: o = [l.Z.unsafe_rawColors.BRAND_500.css],
-    backgroundColor: u = "var(--background-modifier-active)",
+    backgroundColor: u = "var(--interactive-background-active)",
     animate: f = true
   } = e, p = s()(null != n ? n : [], o).map((e, t) => {
     let n, [o, s] = e;

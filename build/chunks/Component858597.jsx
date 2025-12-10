@@ -90,7 +90,7 @@ function L(t) {
       }) : null]
     }), (0, i.jsx)(c.Fbu, {
       size: "md",
-      color: o.Z.colors.INTERACTIVE_NORMAL
+      color: o.Z.colors.INTERACTIVE_TEXT_DEFAULT
     })]
   })
 }
@@ -113,7 +113,7 @@ let R = function(t) {
   }, [r, l, e, o, v]), Z = s.useCallback(() => {
     (0, c.Mr3)(p.X_), I(O.NM.USER_SAFETY_TOOLS_BLOCK_CONFIRM)
   }, [I]), U = s.useCallback(() => {
-    d.Z.unblockUser(e, {
+    T.Z.unblockUser(e, {
       location: p.DL
     }), I(O.NM.USER_SAFETY_TOOLS_UNBLOCK)
   }, [e, I]), k = s.useCallback(() => {
@@ -125,7 +125,7 @@ let R = function(t) {
     buttonText: F ? b.intl.string(b.t["9e0wLn"]) : b.intl.string(b.t.B7ZT06),
     disabled: M,
     onPress: () => {
-      F ? (d.Z.unignoreUser(e, p.cH, r), I(O.NM.USER_SAFETY_TOOLS_UNIGNORE)) : (d.Z.ignoreUser(e, p.cH, r), I(O.NM.USER_SAFETY_TOOLS_IGNORE))
+      F ? (T.Z.unignoreUser(e, p.cH, r), I(O.NM.USER_SAFETY_TOOLS_UNIGNORE)) : (T.Z.ignoreUser(e, p.cH, r), I(O.NM.USER_SAFETY_TOOLS_IGNORE))
     }
   }, {
     type: 0,
@@ -171,7 +171,7 @@ let R = function(t) {
         subTitle: b.intl.string(b.t.iNcsrW),
         buttonText: b.intl.string(b.t.rK4Gqv),
         onPress: () => {
-          (0, T.Z)(p.EI), I(O.NM.USER_SAFETY_TOOLS_CTL)
+          (0, d.Z)(p.EI), I(O.NM.USER_SAFETY_TOOLS_CTL)
         }
       },
       e = {
@@ -179,7 +179,7 @@ let R = function(t) {
         subTitle: b.intl.string(b.t.g5uwC5),
         buttonText: b.intl.string(b.t.rK4Gqv),
         onPress: () => {
-          (0, T.Z)(p.n4), I(O.NM.USER_SAFETY_TOOLS_NO_FILTR)
+          (0, d.Z)(p.n4), I(O.NM.USER_SAFETY_TOOLS_NO_FILTR)
         }
       },
       n = {
@@ -187,7 +187,7 @@ let R = function(t) {
         subTitle: b.intl.string(b.t.S9O1ZZ),
         buttonText: b.intl.string(b.t.rK4Gqv),
         onPress: () => {
-          (0, T.Z)(p.$l), I(O.NM.USER_SAFETY_TOOLS_THROUGHLINE)
+          (0, d.Z)(p.$l), I(O.NM.USER_SAFETY_TOOLS_THROUGHLINE)
         }
       };
     return [{

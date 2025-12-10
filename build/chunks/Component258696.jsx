@@ -91,14 +91,14 @@ function M(e) {
       }, "gift")
     }), (null == (N = M.gifs) ? true : N.button) != null && null == Y && F && $.push({
       key: "gif",
-      node: (0, r.jsx)(A.Z, {
+      node: (0, r.jsx)(C.Z, {
         disabled: U,
         type: M,
         channel: G
       }, "gif")
     }), er && null == Y && $.push({
       key: "confetti",
-      node: (0, r.jsx)(C.Z, {
+      node: (0, r.jsx)(A.Z, {
         disabled: U,
         channel: G
       }, "confetti")

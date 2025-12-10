@@ -73,7 +73,7 @@ let w = 512,
       },
       options: {
         placeholderCount: x,
-        limit: C.tn,
+        limit: A.tn,
         includeFrecency: true
       },
       allowFetch: true
@@ -110,7 +110,7 @@ let w = 512,
       }
     }, [J, $]);
     let es = i.useCallback(e => {
-        if (e.id === $ || e.id === C.bi.FRECENCY) {
+        if (e.id === $ || e.id === A.bi.FRECENCY) {
           var t;
           et(null), null == (t = H.current) || t.scrollToSectionTop(0)
         } else et(e.id)
@@ -149,7 +149,7 @@ let w = 512,
     let ec = i.useCallback(e => {
         let t = q[e];
         if (null == t) return null;
-        let i = (0, A.ky)(t),
+        let i = (0, C.ky)(t),
           a = (0, r.jsx)(i, {
             channel: n,
             section: t,
@@ -189,7 +189,7 @@ let w = 512,
         let a = Q[t.sectionIndex],
           o = a.data[t.sectionRowIndex],
           s = "".concat(a.section.id, ":").concat(null != (i = null == o ? true : o.id) ? i : e);
-        if (null == o || a.section.id !== o.applicationId && a.section.id !== C.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
+        if (null == o || a.section.id !== o.applicationId && a.section.id !== A.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
         let l = z.find(e => e.id === o.applicationId);
         return (0, r.jsx)(f.ZP.NewCommand, {
           index: e,

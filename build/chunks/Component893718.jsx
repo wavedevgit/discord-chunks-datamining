@@ -2,7 +2,7 @@
 /** chunk id: 893718, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  O1: () => eA,
+  O1: () => eC,
   Sg: () => eI,
   TE: () => ex,
   ZP: () => eZ,
@@ -202,7 +202,7 @@ function eT(e) {
   }, [e])
 }
 
-function eA(e) {
+function eC(e) {
   let {
     editorRef: t,
     disabled: n,
@@ -228,7 +228,7 @@ function eA(e) {
   }, [n, r, a, t, l, s, o])
 }
 
-function eC(e, t) {
+function eA(e, t) {
   return i.useCallback((n, r, i) => {
     let a = e.current;
     null != n && null != a && (z.default.track(ed.rMx.SOUNDMOJI_SELECT, {
@@ -384,7 +384,7 @@ function eM(e, t) {
   }), a = i.useCallback(() => {
     var e, n, i, a;
     let o, s = null == (e = t.current) ? true : e.getSlateEditor();
-    null != s && (o = null == (n = ec.bN.getSelectedParentOfType(s, C.un)) ? true : n[0]), r({
+    null != s && (o = null == (n = ec.bN.getSelectedParentOfType(s, A.un)) ? true : n[0]), r({
       selectedAutocompleteInputType: null != (i = null == o ? true : o.type) ? i : null,
       selectedAutocompleteInputError: null != (a = null == o ? true : o.error) && a
     })
@@ -426,7 +426,7 @@ function eG(e, t) {
     textValue: f,
     richValue: m,
     className: O,
-    innerClassName: C,
+    innerClassName: A,
     editorClassName: P,
     id: D,
     required: w,
@@ -521,7 +521,7 @@ function eG(e, t) {
     } = eR(),
     tb = eI(t_, G, e$),
     ty = eT(e$),
-    tO = eA({
+    tO = eC({
       editorRef: e$,
       disabled: e9,
       textValue: f,
@@ -529,7 +529,7 @@ function eG(e, t) {
       chatInputType: G,
       submit: ec
     }),
-    tv = eC(e$, U),
+    tv = eA(e$, U),
     tS = i.useCallback(() => {
       var e;
       return null == e1 || null == (e = e1.current) ? true : e.hide()
@@ -539,8 +539,8 @@ function eG(e, t) {
       handleResize: tT
     } = ew(z),
     {
-      handleTab: tA,
-      handleEnter: tC,
+      handleTab: tC,
+      handleEnter: tA,
       handleMoveSelection: tN
     } = ej(th, eX, ta),
     {
@@ -641,7 +641,7 @@ function eG(e, t) {
         }), (0, r.jsxs)("div", {
           ref: e0,
           onScroll: tS,
-          className: o()(C, {
+          className: o()(A, {
             [e_.scrollableContainer]: true,
             [e_.themedBackground]: !eH,
             [e_.hasStackedBar]: tY.stacked.length > 0
@@ -691,8 +691,8 @@ function eG(e, t) {
                 onKeyDown: er,
                 onSubmit: t_,
                 onSubmitFailure: tG,
-                onTab: tA,
-                onEnter: tC,
+                onTab: tC,
+                onEnter: tA,
                 onMoveSelection: tN,
                 onSelectionChanged: tu,
                 onMaybeShowAutocomplete: tg,
@@ -717,7 +717,7 @@ function eG(e, t) {
           ref: eX,
           channel: U,
           canOnlyUseTextCommands: tZ
-        }), (0, r.jsx)(A.Z, {
+        }), (0, r.jsx)(C.Z, {
           ref: th,
           channel: U,
           canMentionRoles: eh,

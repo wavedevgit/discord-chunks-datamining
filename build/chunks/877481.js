@@ -62,9 +62,9 @@ let y = new Chunk710845.Z("Games"),
   S = null,
   I = 250,
   T = 12e4,
-  A = 36e5;
+  C = 36e5;
 
-function C() {
+function A() {
   return null != S ? Promise.resolve(S) : (0, Chunk358085.isDesktop)() ? Chunk998502.ZP.ensureModule("discord_game_utils").then(() => {
     let e = Chunk998502.ZP.getGameUtils();
     return null != module && null != module.findLaunchable ? (S = module, module) : Promise.reject(Error("game utils not found"))
@@ -97,8 +97,8 @@ async function R(e) {
       return t === m.GQo.BATTLENET
     }))), 0 === e.length) throw Error("No remaining launchable queries");
   let t = Date.now();
-  t > v && (v = t + A, O = {});
-  let n = await C();
+  t > v && (v = t + C, O = {});
+  let n = await A();
   for (let t of e) {
     let e = O[t.id];
     if (null != e) return e;
@@ -161,7 +161,7 @@ let x = {
       return d.Z.launch(p, _, E.name, r)
     })
   },
-  removeShortcuts: e => (0, f.isWindows)() ? C().then(t => {
+  removeShortcuts: e => (0, f.isWindows)() ? A().then(t => {
     var n, r;
     return null != (r = null == (n = t.removeShortcuts) ? true : n.call(t, e)) && r
   }) : Promise.resolve(false),
@@ -169,19 +169,19 @@ let x = {
     if (null == i || !(0, f.isWindows)()) return Promise.resolve(false);
     let a = "discord:///library/".concat(r, "/launch"),
       o = "".concat(i, "\\icon.ico");
-    return C().then(r => {
+    return A().then(r => {
       var i, s;
       return null != (s = null == (i = r.createShortcuts) ? true : i.call(r, e, t, n, a, o)) && s
     })
   },
   isGameLaunchable: e => R(P(e)).then(e => null != e).catch(() => false),
   launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : R(P(e)).then(w),
-  isProtocolRegistered: e => C().then(t => {
+  isProtocolRegistered: e => A().then(t => {
     var n, r;
     return null != (r = null == (n = t.isProtocolSchemeRegistered) ? true : n.call(t, e)) && r
   }).catch(() => false),
   setRecentGames(e) {
-    C().then(t => {
+    A().then(t => {
       var n;
       return null == (n = t.setRecentGames) ? true : n.call(t, e)
     }).catch(() => {})

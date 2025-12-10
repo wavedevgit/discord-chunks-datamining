@@ -2,7 +2,7 @@
 /** chunk id: 590956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => A,
+  Y: () => C,
   c: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -89,7 +89,7 @@ let T = e => {
         position: a,
         shouldShow: !g,
         onTooltipShow: () => {
-          s && C({
+          s && A({
             emojiNode: n,
             isCustomEmoji: false
           })
@@ -127,7 +127,7 @@ let T = e => {
       children: S
     })
   },
-  A = e => {
+  C = e => {
     let {
       node: t,
       isInteracting: n,
@@ -135,7 +135,7 @@ let T = e => {
       enableClick: d = true,
       channelId: E,
       messageId: O
-    } = e, [S, T] = i.useState(String(Date.now())), [A, N] = i.useState(false), [P, R] = i.useState(false), D = i.useRef(null), w = e => (0, r.jsx)(u.Z, {
+    } = e, [S, T] = i.useState(String(Date.now())), [C, N] = i.useState(false), [P, R] = i.useState(false), D = i.useRef(null), w = e => (0, r.jsx)(u.Z, {
       emojiName: t.name,
       size: null != e ? e : t.jumboable ? "jumbo" : "default",
       emojiId: t.emojiId,
@@ -152,7 +152,7 @@ let T = e => {
       position: a,
       shouldShow: !P,
       onTooltipShow: () => {
-        N(true), d && (C({
+        N(true), d && (A({
           emojiNode: t,
           isCustomEmoji: true,
           nonce: x
@@ -169,7 +169,7 @@ let T = e => {
           N(false), R(true), null == e || null == (n = e.onClick) || n.call(e, t)
         } : true,
         onMouseLeave: () => {
-          A && (p.default.track(h.rMx.CLOSE_POPOUT, {
+          C && (p.default.track(h.rMx.CLOSE_POPOUT, {
             nonce: x
           }), N(false))
         },
@@ -204,7 +204,7 @@ let T = e => {
       children: L
     })
   },
-  C = e => {
+  A = e => {
     let {
       emojiNode: t,
       isCustomEmoji: n,

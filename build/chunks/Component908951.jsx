@@ -128,7 +128,7 @@ function x(e) {
     let e = t.paymentSourceId;
     return (0, r.jsx)(m.ZP, {
       prependOption: null == e ? {
-        label: A.intl.string(A.t.iA5vA1),
+        label: C.intl.string(C.t.iA5vA1),
         value: null
       } : null,
       className: s,
@@ -145,17 +145,17 @@ function x(e) {
     fullWidth: true,
     variant: a ? "primary" : "secondary",
     onClick: Q,
-    text: A.intl.string(A.t.CpOiEO)
+    text: C.intl.string(C.t.CpOiEO)
   }), $ = e => {
     l()(null != e.paymentGateway, "Expected payment gateway when managed externally");
     let t = (0, O.JE)(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT");
     return (0, r.jsx)(u.Anchor, {
       href: t,
       useDefaultUnderlineStyles: false,
-      className: C.externalLink,
+      className: A.externalLink,
       children: (0, r.jsx)(u.Button, {
         variant: "secondary",
-        text: A.intl.string(A.t.SgX7Ra),
+        text: C.intl.string(C.t.SgX7Ra),
         fullWidth: true
       })
     })
@@ -171,11 +171,11 @@ function x(e) {
       children: [X(), null != t.paymentSourceId ? (0, r.jsx)(_.b, {
         currencies: n,
         children: (0, r.jsxs)("div", {
-          className: o()(C.currency, N.flex, N.alignCenter),
+          className: o()(A.currency, N.flex, N.alignCenter),
           children: [(0, r.jsx)("div", {
-            children: A.intl.string(A.t["0YjaXf"])
+            children: C.intl.string(C.t["0YjaXf"])
           }), (0, r.jsx)(_.Z, {
-            className: C.currencyDropdown,
+            className: A.currencyDropdown,
             selectedCurrency: V,
             currencies: n,
             onChange: e => {

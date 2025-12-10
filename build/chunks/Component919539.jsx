@@ -29,11 +29,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk225753 = require("./225753.js");
 
-function C(e) {
+function A(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, C = (0, h.c_)(), N = (0, _.q)(), P = m.h2.useSetting().includes(n), R = (0, l.LN)(), D = m.mX.useSetting(), w = m.zA.useSetting().includes(n), x = i.useCallback(e => {
+  } = e, A = (0, h.c_)(), N = (0, _.q)(), P = m.h2.useSetting().includes(n), R = (0, l.LN)(), D = m.mX.useSetting(), w = m.zA.useSetting().includes(n), x = i.useCallback(e => {
     let r = (0, f.gl)();
     e ? r.delete(n) : r.add(n), m.zA.updateSetting(Array.from(r)), u.default.track(I.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: y.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -81,7 +81,7 @@ function C(e) {
       value: !N && !D,
       onChange: e => j(e, false),
       disabled: N || R,
-      tooltipText: R ? T.intl.string(A.default["6Af/cw"]) : true,
+      tooltipText: R ? T.intl.string(C.default["6Af/cw"]) : true,
       note: T.intl.format(T.t.wkm9a3, {
         helpdeskArticle: d.Z.getArticleURL(I.BhN.MESSAGE_REQUESTS)
       })
@@ -90,7 +90,7 @@ function C(e) {
       value: !P && !w,
       onChange: e => j(e, true),
       disabled: P,
-      note: C ? T.intl.format(T.t.WpnWLc, {
+      note: A ? T.intl.format(T.t.WpnWLc, {
         helpdeskArticle: d.Z.getArticleURL(I.BhN.MESSAGE_REQUESTS)
       }) : T.intl.format(T.t.wkm9a3, {
         helpdeskArticle: d.Z.getArticleURL(I.BhN.MESSAGE_REQUESTS)
@@ -104,7 +104,7 @@ function N(e) {
     ingress: t = O.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, h.is)();
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(A, {
     ingress: t,
     guildId: null != n ? n : i
   })

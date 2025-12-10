@@ -18,6 +18,6 @@ let d = t => {
   return (0, a.jsx)(s.IG, {
     text: c.intl.string(c.t.oW0eUd),
     className: i()(o.betaBadge, e),
-    color: l.Z.colors.BADGE_BACKGROUND_EXPRESSIVE.css
+    color: l.Z.colors.BADGE_EXPRESSIVE_BACKGROUND_DEFAULT.css
   })
 }

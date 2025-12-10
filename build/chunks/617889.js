@@ -34,7 +34,7 @@ function d(e, t) {
   let r = (0, i.z)(e),
     n = null != (o = (0, a.i6)()) ? o : 0,
     s = "var(--green-330)",
-    d = ["var(--background-base-lowest)", "var(--interactive-normal)"];
+    d = ["var(--background-base-lowest)", "var(--interactive-text-default)"];
   return {
     backgroundTop: t ? d[n] : ["#828288", "#CBCDD4"][n],
     backgroundBottom: t ? d[n] : ["#535356", "#8B8C95"][n],

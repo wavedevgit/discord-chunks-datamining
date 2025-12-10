@@ -37,13 +37,13 @@ function E(e, t, n, r) {
       description: n
     }) => {
       try {
-        if (l.Z.USE_EXIF && C(e, t)) return {
+        if (l.Z.USE_EXIF && A(e, t)) return {
           __exif: o.Z.read(P(t), g, r).tags
         };
         if (l.Z.USE_IPTC && N(e, t)) return {
           __iptc: s.Z.read(P(t), 0, r)
         };
-        if (e && !C(e, t) && !N(e, t)) return {
+        if (e && !A(e, t) && !N(e, t)) return {
           [e]: {
             value: t,
             description: n
@@ -121,7 +121,7 @@ function S(e, t, n, r) {
   return {
     name: I(t, n, r),
     value: i,
-    description: t === a.Jn ? A(e) : i
+    description: t === a.Jn ? C(e) : i
   }
 }
 
@@ -136,11 +136,11 @@ function T(e) {
   return e instanceof DataView ? (0, r.oH)(e, 0, e.byteLength) : e
 }
 
-function A(e) {
+function C(e) {
   return i.Z.decode("UTF-8", e)
 }
 
-function C(e, t) {
+function A(e, t) {
   return "raw profile type exif" === e.toLowerCase() && "exif" === t.substring(1, 5)
 }
 

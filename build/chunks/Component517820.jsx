@@ -170,7 +170,7 @@ function V(e) {
   let {
     message: n,
     compact: a
-  } = e, o = A.default.getUser((0, g.Sw)(n)), s = null == (t = I.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != o ? T.ZP.getMember(s, o.id) : null, {
+  } = e, o = C.default.getUser((0, g.Sw)(n)), s = null == (t = I.Z.getBasicChannel(n.channel_id)) ? true : t.guild_id, c = null != s && null != o ? T.ZP.getMember(s, o.id) : null, {
     avatarSrc: u,
     avatarDecorationSrc: d,
     eventHandlers: _
@@ -256,10 +256,10 @@ function H(e) {
     shouldShowIncidentActions: v
   } = (0, m.mI)(O), S = (0, N.sR)(n.author.id, n.channel_id), T = e => {
     S(e)
-  }, A = i.useCallback(() => {
+  }, C = i.useCallback(() => {
     let e = null == y ? true : y.guild_id;
     null != e && (0, E.kW)(n.id, e)
-  }, [n.id, y]), C = _ === u.$.DM_RAID, P = C ? p.Mgn : p.b6m;
+  }, [n.id, y]), A = _ === u.$.DM_RAID, P = A ? p.Mgn : p.b6m;
   return (0, r.jsx)(W, {
     compact: a,
     header: (0, r.jsxs)(i.Fragment, {
@@ -269,7 +269,7 @@ function H(e) {
       }), (0, r.jsx)(p.Text, {
         variant: "text-md/semibold",
         color: "text-feedback-critical",
-        children: C ? x.intl.string(x.t["8+lHUb"]) : x.intl.string(x.t.xMwcwV)
+        children: A ? x.intl.string(x.t["8+lHUb"]) : x.intl.string(x.t.xMwcwV)
       })]
     }),
     subheader: (0, r.jsxs)("div", {
@@ -323,7 +323,7 @@ function H(e) {
           textVariant: "text-xs/medium",
           size: "sm",
           text: (0, g.ge)(b),
-          onClick: A
+          onClick: C
         })
       })]
     }) : null
@@ -464,7 +464,7 @@ function K(e) {
         className: o()(L.content, {
           [L.compact]: n
         }),
-        children: [(0, r.jsx)(C.nD, {
+        children: [(0, r.jsx)(A.nD, {
           message: i,
           messageClassname: L.spanCorrection,
           className: o()(L.usernameContainer, L.spanCorrection, {

@@ -42,7 +42,7 @@ function E(e) {
       onChange: e => C(e),
       label: I.intl.string(I.t.UwOLJO)
     }),
-    children: (0, a.jsx)(m, {
+    children: (0, a.jsx)(A, {
       guildId: u,
       hideMutedChannels: v,
       parentId: l
@@ -50,7 +50,7 @@ function E(e) {
   })
 }
 
-function m(e) {
+function A(e) {
   let {
     guildId: n,
     hideMutedChannels: t,
@@ -63,7 +63,7 @@ function m(e) {
     })
   }, [n]), (0, a.jsx)("div", {
     ref: s,
-    children: c.map(e => e.type === l.d.GUILD_CATEGORY ? (0, a.jsx)(A, {
+    children: c.map(e => e.type === l.d.GUILD_CATEGORY ? (0, a.jsx)(m, {
       name: e.name
     }, e.id) : (0, a.jsx)(R, {
       channel: e,
@@ -73,14 +73,14 @@ function m(e) {
   })
 }
 
-function A(e) {
+function m(e) {
   let {
     name: n
   } = e;
   return (0, a.jsx)(d.Text, {
     className: _.categoryRow,
     variant: "eyebrow",
-    color: "interactive-normal",
+    color: "interactive-text-default",
     children: n
   })
 }
@@ -108,7 +108,7 @@ function R(e) {
         })
       }), (0, a.jsx)(d.Text, {
         variant: "text-md/medium",
-        color: "interactive-normal",
+        color: "interactive-text-default",
         children: n.name
       })]
     }), null != l ? (0, a.jsx)(y, {

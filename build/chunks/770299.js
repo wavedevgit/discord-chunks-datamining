@@ -58,18 +58,18 @@ module.exports = function(e) {
       relevance: 0
     },
     T = u.filter(e => "string" == typeof e).concat(["_|0"]),
-    A = {
+    C = {
       variants: [{
         className: "keyword",
         match: a(...u.filter(e => "string" != typeof e).concat(c).map(o), ...l)
       }]
     },
-    C = {
+    A = {
       $pattern: a(/\b\w+/, /#\w+/),
       keyword: T.concat(p),
       literal: d
     },
-    N = [E, I, A],
+    N = [E, I, C],
     P = [{
       match: r(/\./, a(..._)),
       relevance: 0
@@ -217,7 +217,7 @@ module.exports = function(e) {
     q = {
       begin: /</,
       end: />/,
-      keywords: C,
+      keywords: A,
       contains: [...m, ...N, ...K, R, z]
     };
   z.contains.push(q);
@@ -225,7 +225,7 @@ module.exports = function(e) {
       begin: /\(/,
       end: /\)/,
       relevance: 0,
-      keywords: C,
+      keywords: A,
       contains: ["self", {
         match: r(y, /\s*:/),
         keywords: "_|0",
@@ -241,7 +241,7 @@ module.exports = function(e) {
     J = {
       begin: /\(/,
       end: /\)/,
-      keywords: C,
+      keywords: A,
       contains: [{
         begin: a(n(r(y, /\s*:/)), n(r(y, /\s+/, y, /\s*:/))),
         end: /:/,
@@ -312,11 +312,11 @@ module.exports = function(e) {
         1: "keyword",
         3: "title.class"
       },
-      keywords: C,
+      keywords: A,
       contains: [X, ...N, {
         begin: /:/,
         end: /\{/,
-        keywords: C,
+        keywords: A,
         contains: [{
           scope: "title.class.inherited",
           match: O
@@ -326,7 +326,7 @@ module.exports = function(e) {
     };
   for (let e of Z.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
-    t.keywords = C;
+    t.keywords = A;
     let n = [...N, ...P, ...D, L, Z, ...W];
     t.contains = [...n, {
       begin: /\(/,
@@ -336,7 +336,7 @@ module.exports = function(e) {
   }
   return {
     name: "Swift",
-    keywords: C,
+    keywords: A,
     contains: [...m, $, ee, er, ei, ea, et, en, {
       beginKeywords: "import",
       end: /$/,

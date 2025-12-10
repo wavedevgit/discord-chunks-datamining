@@ -65,8 +65,8 @@ function G(e) {
       userId: F.id,
       activity: Z
     }),
-    et = (0, i.e7)([A.Z, O.Z, x.Z, S.Z], () => X || null != Q && (0, j.t)({
-      LibraryApplicationStore: A.Z,
+    et = (0, i.e7)([C.Z, O.Z, x.Z, S.Z], () => X || null != Q && (0, j.t)({
+      LibraryApplicationStore: C.Z,
       LaunchableGameStore: O.Z,
       DispatchApplicationStore: x.Z,
       ConnectedAppsStore: S.Z,
@@ -88,7 +88,7 @@ function G(e) {
       channelId: ee,
       application: ei
     }),
-    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, D.Z, C.Z], () => null != B ? eo === _.Fw.CAN_JOIN : (0, d.Z)({
+    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, D.Z, A.Z], () => null != B ? eo === _.Fw.CAN_JOIN : (0, d.Z)({
       user: F,
       activity: Z,
       application: ei,
@@ -101,7 +101,7 @@ function G(e) {
       RelationshipStore: N.Z,
       SelectedChannelStore: P.Z,
       VoiceStateStore: D.Z,
-      PermissionStore: C.Z
+      PermissionStore: A.Z
     })),
     el = (0, i.e7)([c.ZP], () => {
       if (Array.from(c.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == B ? true : B.applicationId) && e.location.id === (null == B ? true : B.location.id))) returntrue;

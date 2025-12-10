@@ -33,13 +33,13 @@ function _(e) {
     isTryItOut: S,
     hideBioSection: I,
     shouldOpenBadgeTooltip: T
-  } = e, A = (0, i.e7)([c.ZP], () => null == _ ? null : c.ZP.getMember(_.id, t.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), P = null != b ? b : null == n ? true : n.pronouns, R = (0, d.Ly)({
+  } = e, C = (0, i.e7)([c.ZP], () => null == _ ? null : c.ZP.getMember(_.id, t.id)), A = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), P = null != b ? b : null == n ? true : n.pronouns, R = (0, d.Ly)({
     pendingNickname: h,
     pendingGlobalName: g,
     user: t,
-    guildMember: A
+    guildMember: C
   }), D = () => {
-    if (null != A && null !== m && (null != A.avatar || null != m)) return (0, r.jsx)(l.Z, {
+    if (null != C && null !== m && (null != C.avatar || null != m)) return (0, r.jsx)(l.Z, {
       user: t,
       nickname: R
     })
@@ -65,7 +65,7 @@ function _(e) {
     }), !I && null != N && "" !== N && (0, r.jsx)(s.Z, {
       user: t,
       bio: N,
-      hidePersonalInformation: C,
+      hidePersonalInformation: A,
       viewFullBioDisabled: true
     })]
   })

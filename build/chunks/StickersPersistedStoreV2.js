@@ -2,7 +2,7 @@
 /** chunk id: 822179, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 }), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -115,7 +115,7 @@ class T extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 p(T, "displayName", "StickersPersistedStore"), p(T, "persistKey", "StickersPersistedStoreV2");
-let A = new T(Chunk570140.Z, {
+let C = new T(Chunk570140.Z, {
   STICKER_TRACK_USAGE: O,
   USER_SETTINGS_PROTO_UPDATE: I
 })

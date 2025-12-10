@@ -5,7 +5,7 @@ require.d(exports, {
   Ep: () => p,
   Hp: () => m,
   PP: () => j,
-  lX: () => A,
+  lX: () => C,
   ob: () => _,
   q_: () => x
 });
@@ -142,7 +142,7 @@ function T() {
   }
 }
 
-function A(e) {
+function C(e) {
   true === e && (e = {}), g || (0, o.Z)(false);
   var t = window.history,
     n = b(),
@@ -153,8 +153,8 @@ function A(e) {
     f = a.getUserConfirmation,
     m = true === f ? E : f,
     O = a.keyLength,
-    A = true === O ? 6 : O,
-    C = e.basename ? d(s(e.basename)) : "";
+    C = true === O ? 6 : O,
+    A = e.basename ? d(s(e.basename)) : "";
 
   function N(e) {
     var t = e || {},
@@ -162,11 +162,11 @@ function A(e) {
       r = t.state,
       i = window.location,
       a = i.pathname + i.search + i.hash;
-    return C && (a = u(a, C)), _(a, r, n)
+    return A && (a = u(a, A)), _(a, r, n)
   }
 
   function P() {
-    return Math.random().toString(36).substr(2, A)
+    return Math.random().toString(36).substr(2, C)
   }
   var R = h();
 
@@ -209,7 +209,7 @@ function A(e) {
     U = [k.key];
 
   function G(e) {
-    return C + p(e)
+    return A + p(e)
   }
 
   function Z(e, r) {
@@ -312,7 +312,7 @@ function A(e) {
   };
   return Q
 }
-var C = "hashchange",
+var A = "hashchange",
   N = {
     hashbang: {
       encodePath: function(e) {
@@ -375,7 +375,7 @@ function x(e) {
     (0, r.Z)(J, e), J.length = t.length, S.notifyListeners(J.location, J.action)
   }
   var T = false,
-    A = null;
+    C = null;
 
   function x(e, t) {
     return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash
@@ -388,8 +388,8 @@ function x(e) {
     else {
       var n = v(),
         r = J.location;
-      if (!T && x(r, n) || A === p(n)) return;
-      A = null, j(n)
+      if (!T && x(r, n) || C === p(n)) return;
+      C = null, j(n)
     }
   }
 
@@ -436,7 +436,7 @@ function x(e) {
           i = b(f + t),
           a = R() !== i;
         if (a) {
-          A = t, D(i);
+          C = t, D(i);
           var o = Z.lastIndexOf(p(J.location)),
             s = Z.slice(0, o + 1);
           s.push(t), Z = s, I({
@@ -456,7 +456,7 @@ function x(e) {
         var t = p(r),
           i = b(f + t),
           a = R() !== i;
-        a && (A = t, w(i));
+        a && (C = t, w(i));
         var o = Z.indexOf(p(J.location));
         false !== o && (Z[o] = t), I({
           action: n,
@@ -480,7 +480,7 @@ function x(e) {
   var K = 0;
 
   function z(e) {
-    1 === (K += e) && 1 === e ? window.addEventListener(C, L) : 0 === K && window.removeEventListener(C, L)
+    1 === (K += e) && 1 === e ? window.addEventListener(A, L) : 0 === K && window.removeEventListener(A, L)
   }
   var q = false;
 
@@ -533,7 +533,7 @@ function j(e) {
     u = h();
 
   function d(e) {
-    (0, r.Z)(C, e), C.length = C.entries.length, u.notifyListeners(C.location, C.action)
+    (0, r.Z)(A, e), A.length = A.entries.length, u.notifyListeners(A.location, A.action)
   }
 
   function f() {
@@ -547,12 +547,12 @@ function j(e) {
 
   function b(e, t) {
     var r = "PUSH",
-      i = _(e, t, f(), C.location);
+      i = _(e, t, f(), A.location);
     u.confirmTransitionTo(i, r, n, function(e) {
       if (e) {
-        var t = C.index,
+        var t = A.index,
           n = t + 1,
-          a = C.entries.slice(0);
+          a = A.entries.slice(0);
         a.length > n ? a.splice(n, a.length - n, i) : a.push(i), d({
           action: r,
           location: i,
@@ -565,9 +565,9 @@ function j(e) {
 
   function y(e, t) {
     var r = "REPLACE",
-      i = _(e, t, f(), C.location);
+      i = _(e, t, f(), A.location);
     u.confirmTransitionTo(i, r, n, function(e) {
-      e && (C.entries[C.index] = i, d({
+      e && (A.entries[A.index] = i, d({
         action: r,
         location: i
       }))
@@ -575,9 +575,9 @@ function j(e) {
   }
 
   function O(e) {
-    var t = L(C.index + e, 0, C.entries.length - 1),
+    var t = L(A.index + e, 0, A.entries.length - 1),
       r = "POP",
-      i = C.entries[t];
+      i = A.entries[t];
     u.confirmTransitionTo(i, r, n, function(e) {
       e ? d({
         action: r,
@@ -596,18 +596,18 @@ function j(e) {
   }
 
   function I(e) {
-    var t = C.index + e;
-    return t >= 0 && t < C.entries.length
+    var t = A.index + e;
+    return t >= 0 && t < A.entries.length
   }
 
   function T(e) {
     return true === e && (e = false), u.setPrompt(e)
   }
 
-  function A(e) {
+  function C(e) {
     return u.appendListener(e)
   }
-  var C = {
+  var A = {
     length: g.length,
     action: "POP",
     location: g[m],
@@ -621,7 +621,7 @@ function j(e) {
     goForward: S,
     canGo: I,
     block: T,
-    listen: A
+    listen: C
   };
-  return C
+  return A
 }

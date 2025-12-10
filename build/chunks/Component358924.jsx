@@ -207,7 +207,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
           className: es.cloudPlaySectionTextContainer,
           children: [o ? null : (0, i.jsx)(f.IGR, {
             text: ea.intl.string(ea.t.y2b7CA),
-            color: d.Z.colors.BG_BRAND.css
+            color: d.Z.colors.BACKGROUND_BRAND.css
           }), (0, i.jsx)(f.Text, {
             variant: "text-xs/medium",
             children: ea.intl.formatToPlainString(ea.t.RmiYF3, {

@@ -114,7 +114,7 @@ let S = Chunk473749.memo(function(e) {
       trailing: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.IGR, {
           text: C.intl.string(C.t.y2b7CA),
-          color: c.Z.colors.BG_BRAND.css
+          color: c.Z.colors.BACKGROUND_BRAND.css
         }), a]
       })
     }), [t.id, l, A, T, D]);

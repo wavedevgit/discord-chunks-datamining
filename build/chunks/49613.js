@@ -83,17 +83,17 @@ function S(e) {
 }
 var I = false,
   T = false,
-  A = 5,
-  C = false;
+  C = 5,
+  A = false;
 
 function N() {
-  return !!E || !(exports.unstable_now() - C < A)
+  return !!E || !(exports.unstable_now() - A < C)
 }
 
 function P() {
   if (E = false, I) {
     var e = exports.unstable_now();
-    C = module;
+    A = module;
     var n = true;
     try {
       e: {
@@ -155,7 +155,7 @@ function w(e, n) {
 exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, exports.unstable_LowPriority = 4, exports.unstable_NormalPriority = 3, exports.unstable_Profiling = null, exports.unstable_UserBlockingPriority = 2, exports.unstable_cancelCallback = function(e) {
   e.callback = null
 }, exports.unstable_forceFrameRate = function(e) {
-  0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : A = 0 < e ? Math.floor(1e3 / e) : 5
+  0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : C = 0 < e ? Math.floor(1e3 / e) : 5
 }, exports.unstable_getCurrentPriorityLevel = function() {
   return _
 }, exports.unstable_next = function(e) {

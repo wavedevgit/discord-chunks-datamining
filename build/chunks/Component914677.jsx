@@ -69,7 +69,7 @@ let c = "0.3",
       S = (1 - b / 100) * E,
       I = h(f),
       T = m(f, v),
-      A = null != p ? p : g(v, f);
+      C = null != p ? p : g(v, f);
     return (0, r.jsxs)("div", {
       className: l.circleContainer,
       children: [(0, r.jsxs)("svg", {
@@ -85,7 +85,7 @@ let c = "0.3",
           stroke: I,
           strokeOpacity: T
         }), (0, r.jsx)("circle", {
-          stroke: A,
+          stroke: C,
           strokeWidth: d,
           strokeLinecap: "round",
           strokeDasharray: "".concat(E, " ").concat(E),

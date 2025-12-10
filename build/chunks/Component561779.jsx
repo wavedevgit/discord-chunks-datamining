@@ -10,7 +10,7 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   c = require.n(Chunk392711),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk374470 = require("./374470.js"),
   Chunk793030 = require("./793030.js"),
   Chunk506802 = require("./506802.jsx"),
@@ -150,8 +150,8 @@ class S extends(r = Chunk473749.PureComponent) {
       children: v,
       barStyles: S,
       fillStyles: T,
-      mini: A,
-      hideBubble: C,
+      mini: C,
+      hideBubble: A,
       defaultValue: N,
       orientation: P,
       onValueRender: R,
@@ -208,7 +208,7 @@ class S extends(r = Chunk473749.PureComponent) {
               className: s()(m.slider, O, {
                 [m.hasMarks]: (null != (o = null == H ? true : H.length) ? o : 0) > 0,
                 [m.disabled]: E,
-                [m.mini]: A
+                [m.mini]: C
               }),
               style: null == a ? true : a.sliderStyles,
               id: e.controlId,
@@ -255,7 +255,7 @@ class S extends(r = Chunk473749.PureComponent) {
                   "data-migration-pending": true,
                   color: p.aM.Colors.GREY,
                   hideOnClick: false,
-                  text: C || y ? null : Y,
+                  text: A || y ? null : Y,
                   forceOpen: n || r && _.Z.keyboardModeEnabled,
                   children: e => (0, i.jsx)("div", b(g({}, e), {
                     className: s()(m.grabber, L),

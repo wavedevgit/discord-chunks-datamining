@@ -2,7 +2,7 @@
 /** chunk id: 942951, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => A
+  l: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -85,7 +85,7 @@ function T(e, t) {
   }, [e, t])
 }
 
-function A(e) {
+function C(e) {
   let {
     user: t,
     channelId: n,
@@ -94,8 +94,8 @@ function A(e) {
     stopPropagation: b = false,
     ariaLabel: O,
     enableDisplayNameStyles: I = false
-  } = e, A = i.useRef(null), {
-    analyticsLocations: C
+  } = e, C = i.useRef(null), {
+    analyticsLocations: A
   } = (0, c.ZP)(l.Z.USERNAME), N = (0, _.ZP)(h, null == t ? true : t.id), P = (0, u.Z)({
     userId: null == t ? true : t.id,
     guildId: h
@@ -112,7 +112,7 @@ function A(e) {
       p = (t, n) => {
         var o, c, p;
         if (!I || null == P || null != h) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
-          ref: A,
+          ref: C,
           onContextMenu: D,
           name: null != (c = (0, s.qgQ)(i)) ? c : "",
           colorString: null != (p = null == e ? true : e.colorString) ? p : null,
@@ -124,7 +124,7 @@ function A(e) {
         {
           let e = (null == w ? true : w.animate) || (null == n ? true : n.isShown) ? d.F.ANIMATED : d.F.PLAIN;
           return (0, r.jsx)(a.Anchor, v(y({}, null != t ? t : {}), {
-            ref: A,
+            ref: C,
             onContextMenu: D,
             "aria-label": O,
             children: (0, r.jsx)(f.Z, {
@@ -141,9 +141,9 @@ function A(e) {
         b && null != t && t.stopPropagation(), e(t)
       };
     return (0, r.jsx)(c.Gt, {
-      value: C,
+      value: A,
       children: null != t ? (0, r.jsx)(m.Z, {
-        targetElementRef: A,
+        targetElementRef: C,
         user: t,
         guildId: h,
         channelId: n,
@@ -160,5 +160,5 @@ function A(e) {
         }
       }) : p(true, true)
     }, o)
-  }, [C, t, n, h, g, D, b, O, N, R, null == w ? true : w.animate, P, I])
+  }, [A, t, n, h, g, D, b, O, N, R, null == w ? true : w.animate, P, I])
 }

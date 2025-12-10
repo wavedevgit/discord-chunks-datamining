@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
-  Chunk205120 = require("./205120.js"),
+  Chunk148884 = require("./148884.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617889 = require("./617889.js"),
   Chunk642145 = require("./642145.js"),
@@ -21,15 +21,15 @@ let p = Chunk473749.forwardRef((e, t) => {
     glowBlur: u = .4,
     percentCompleteText: C,
     percentCompleteTextVariant: v = "text-lg/medium",
-    children: m
-  } = e, g = (0, _.EK)(o, n > 0), x = a / 2, f = a / 2 - p / 2, B = 2 * Math.PI * f, y = B - n * B, P = {
+    children: g
+  } = e, m = (0, _.EK)(o, n > 0), x = a / 2, f = a / 2 - p / 2, B = 2 * Math.PI * f, y = B - n * B, P = {
     strokeDasharray: "".concat(B, " ").concat(B),
     strokeDashoffset: y
   }, b = {
     strokeDasharray: "".concat(B, " ").concat(B),
     strokeDashoffset: -n * B
   }, T = {
-    boxShadow: "0 0 20px 0px ".concat(g.glow)
+    boxShadow: "0 0 20px 0px ".concat(m.glow)
   }, {
     progressTextAnimation: S
   } = (0, d.q_F)({
@@ -42,7 +42,7 @@ let p = Chunk473749.forwardRef((e, t) => {
     children: [(0, r.jsxs)("div", {
       className: c.inner,
       style: T,
-      children: [m, (0, r.jsxs)(s.animated.div, {
+      children: [g, (0, r.jsxs)(s.animated.div, {
         style: {
           opacity: S
         },
@@ -85,10 +85,10 @@ let p = Chunk473749.forwardRef((e, t) => {
           y2: "0%",
           children: [(0, r.jsx)("stop", {
             offset: "0%",
-            stopColor: g.backgroundTop
+            stopColor: m.backgroundTop
           }), (0, r.jsx)("stop", {
             offset: "100%",
-            stopColor: g.backgroundBottom
+            stopColor: m.backgroundBottom
           })]
         })]
       }), (0, r.jsx)("circle", {
@@ -107,7 +107,7 @@ let p = Chunk473749.forwardRef((e, t) => {
         r: f,
         cx: x,
         cy: x,
-        stroke: g.foreground,
+        stroke: m.foreground,
         style: P
       })]
     })]

@@ -52,7 +52,7 @@ function _(e) {
   } = e, i = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.Text, {
       variant: n,
-      color: null != t ? "text-link" : "interactive-hover",
+      color: null != t ? "text-link" : "interactive-text-hover",
       children: d.intl.string(d.t["5fmYjW"])
     }), (0, r.jsx)(o.ZSh, {
       size: "xs",
@@ -89,8 +89,8 @@ function m(e) {
     hideRoleTag: S = false,
     lineClamp: I = 1,
     cardWidth: T = 332,
-    cardHeight: A,
-    thumbnailHeight: C = 187,
+    cardHeight: C,
+    thumbnailHeight: A = 187,
     descriptionTextVariant: N = "text-sm/normal",
     isDraft: P = false
   } = e, R = (0, s.hQ)(), D = e => {
@@ -104,7 +104,7 @@ function m(e) {
         src: t,
         className: f.productThumbnail,
         style: {
-          height: C
+          height: A
         }
       })
     }), (0, r.jsxs)("div", {
@@ -139,7 +139,7 @@ function m(e) {
       className: f.purchaseDetails,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: "interactive-active",
+        color: "interactive-text-active",
         className: f.__invalid_productPrice,
         children: null != c ? c : d.intl.string(d.t["4uLhAp"])
       }), (0, r.jsx)(o.Text, {
@@ -161,7 +161,7 @@ function m(e) {
   }) : (0, r.jsx)("div", {
     style: {
       width: T,
-      height: A
+      height: C
     },
     children: (0, r.jsx)(o.kL8, {
       tag: "article",

@@ -6,8 +6,8 @@ require.d(exports, {
   Ok: () => N,
   U4: () => T,
   Ye: () => Chunk814391.Z,
-  ZJ: () => C,
-  q: () => A
+  ZJ: () => A,
+  q: () => C
 }), require("./997841.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -95,13 +95,13 @@ function T() {
   })
 }
 
-function A() {
+function C() {
   Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, {
     type: "Active Threads Popout"
   })
 }
 
-function C(e, t) {
+function A(e, t) {
   var n, r;
   let i = (0, l.K)(e);
   if (null == i) return;
@@ -117,7 +117,7 @@ function C(e, t) {
       can_send_message: I,
       parent_channel_type: T
     } = i,
-    A = O(b({}, v(i, ["can_send_message", "parent_channel_type"])), {
+    C = O(b({}, v(i, ["can_send_message", "parent_channel_type"])), {
       channel_id: e.id,
       guild_id: o,
       parent_id: s,
@@ -132,7 +132,7 @@ function C(e, t) {
       old_thread_muted_until: S,
       new_thread_muted_until: null != t.mute_config ? (0, f.sK)(t.mute_config) : S
     });
-  d.default.track(g.rMx.THREAD_NOTIFICATION_SETTINGS_UPDATED, A)
+  d.default.track(g.rMx.THREAD_NOTIFICATION_SETTINGS_UPDATED, C)
 }
 let N = e => {
   var t, n;

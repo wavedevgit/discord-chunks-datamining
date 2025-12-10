@@ -103,7 +103,7 @@ function h(e) {
   }, [n]);
   let {
     focusPath: S
-  } = y, [I, T] = r.useState(false), [A, C] = r.useState(E), [{
+  } = y, [I, T] = r.useState(false), [C, A] = r.useState(E), [{
     onItemFocusMemoizer: N,
     onItemMouseEnterMemoizer: P
   }] = r.useState(() => ({
@@ -114,7 +114,7 @@ function h(e) {
       })
     }),
     onItemMouseEnterMemoizer: new o.$o(e => () => {
-      C(false), O({
+      A(false), O({
         type: i.B.SET_FOCUS_PATH,
         path: e.split(d)
       })
@@ -128,14 +128,14 @@ function h(e) {
       case a.Us.NAVIGATE_DOWN:
       case a.Us.NAVIGATE_IN:
       case a.Us.NAVIGATE_OUT:
-        e.preventDefault(), e.stopPropagation(), C(true), v({
+        e.preventDefault(), e.stopPropagation(), A(true), v({
           type: n
         });
         return;
       case a.Us.SELECT_FOCUSED_ITEM:
         var r;
         if (e.repeat || m(e.target)) return;
-        if (e.preventDefault(), e.stopPropagation(), C(false), v({
+        if (e.preventDefault(), e.stopPropagation(), A(false), v({
             type: n
           }), null != c) return void c(S);
         let i = _(null != (r = e.target.ownerDocument) ? r : document, p(t, S));
@@ -168,9 +168,9 @@ function h(e) {
       tabIndex: false,
       "aria-activedescendant": L(n) ? (0, o.qR)(t, S.join(d)) : true,
       focusIndex: y.focusIndex,
-      isUsingKeyboardNavigation: A
+      isUsingKeyboardNavigation: C
     }
-  }, [t, S, L, y.focusIndex, A]), k = r.useCallback(e => {
+  }, [t, S, L, y.focusIndex, C]), k = r.useCallback(e => {
     let {
       path: n,
       hasSubmenu: r = false,
@@ -194,6 +194,6 @@ function h(e) {
     getSubmenuProps: M,
     getItemProps: k,
     isFocused: L,
-    isUsingKeyboardNavigation: A
-  }), [v, j, M, k, L, A])
+    isUsingKeyboardNavigation: C
+  }), [v, j, M, k, L, C])
 }

@@ -242,7 +242,7 @@ function el() {
 
 function ec(e) {
   var t, n, a, o, c, _, h, g;
-  let O, A, C, P, q, {
+  let O, C, A, P, q, {
       clientId: $,
       responseType: en,
       redirectUri: er,
@@ -267,9 +267,9 @@ function ec(e) {
       onClose: eS,
       disclosures: eI,
       isExternalStandaloneOAuthPage: eT = false,
-      isTwoWayLinkDiscordConsent: eA = false
+      isTwoWayLinkDiscordConsent: eC = false
     } = e,
-    eC = null != em ? null == eu ? true : eu.get(em) : true,
+    eA = null != em ? null == eu ? true : eu.get(em) : true,
     eN = (0, s.TH)(),
     eP = (0, m.e7)([N.Z], () => N.Z.hasLoadedExperiments);
   i.useEffect(() => {
@@ -277,8 +277,8 @@ function ec(e) {
   }, [eP]);
   let [eR, eD] = i.useState(null), [ew, ex] = i.useState(null), [eL, ej] = i.useState(null), [eM, ek] = i.useState(false), [eU, eG] = i.useState(false), eZ = null == eR ? true : eR.guilds, [eB, eF] = i.useState(null != ep ? ep : null), [eV, eH] = i.useState(null != e_ ? e_ : null), [eY, eW] = i.useState(L.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eR ? true : eR.user) != null ? new w.Z(eR.user) : null, [null == eR ? true : eR.user]), eQ = (0, T.Z)(null != (t = null == eR ? true : eR.application) ? t : null), eX = i.useMemo(() => null == eZ ? true : eZ.find(e => e.id === eB), [eZ, eB]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
     var e;
-    return null == eC && null == em && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == er
-  }, [eC, null == ed ? true : ed.length, er, em]), [e1, e3] = i.useState(null);
+    return null == eA && null == em && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == er
+  }, [eA, null == ed ? true : ed.length, er, em]), [e1, e3] = i.useState(null);
   i.useEffect(() => {
     e0 && S.ZP.fetchApplication($).then(e => e3(D.ZP.createFromServer(e)))
   }, [$, e0]);
@@ -394,7 +394,7 @@ function ec(e) {
       if (!e7.current && !ti.current) {
         ti.current = true;
         try {
-          let e = null != eC ? eC : await (0, k.Ww)({
+          let e = null != eA ? eA : await (0, k.Ww)({
             clientId: $,
             scopes: e5,
             responseType: en,
@@ -420,7 +420,7 @@ function ec(e) {
           ti.current = false
         }
       }
-    }, [eN, eC, $, e5, en, er, ei, ea, eo, es, eJ, ec, tr, tt]),
+    }, [eN, eA, $, e5, en, er, ei, ea, eo, es, eJ, ec, tr, tt]),
     to = i.useMemo(() => {
       var e;
       return null != e1 && e0 ? Object.entries(null != (e = e1.integrationTypesConfig) ? e : {}).filter(e => {
@@ -443,11 +443,11 @@ function ec(e) {
     }))
   }, [$, eJ, e6, e5, ew]), i.useEffect(() => {
     if (null == ew && (!e0 || null != e1) && eP)
-      if (null != eC) {
+      if (null != eA) {
         var e;
-        e$(null != (e = eC.integration_type) ? e : u.Y.GUILD_INSTALL), ex("AUTHORIZE_SCOPES")
+        e$(null != (e = eA.integration_type) ? e : u.Y.GUILD_INSTALL), ex("AUTHORIZE_SCOPES")
       } else to.length > 1 ? ex("SELECT_INSTALL_TYPE") : (1 === to.length ? e$(to[0]) : null != em ? e$(em) : e$(u.Y.GUILD_INSTALL), ex("AUTHORIZE_SCOPES"))
-  }, [eC, to, e1, e0, em, ew, eP]), i.useEffect(() => {
+  }, [eA, to, e1, e0, em, ew, eP]), i.useEffect(() => {
     if (null == eJ || null != eR || null != eL) return;
     eJ === u.Y.USER_INSTALL && (eF(null), eH(null));
     let e = e5.filter(e => !Z.ak.includes(e));
@@ -461,7 +461,7 @@ function ec(e) {
     body: (0, r.jsx)(Q.Lk, {
       message: eL.message
     })
-  } : eA ? {
+  } : eC ? {
     label: ee.intl.string(ee.t.j2d6Km),
     header: (0, r.jsx)(E.Text, {
       variant: "text-lg/bold",
@@ -558,7 +558,7 @@ function ec(e) {
           selectedGuildId: eB,
           onChannelChange: eH
         }) : null]
-      }), e5.includes(d.x.BOT) && !f.fS(e6, L.Hn) && (C = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (A = "SELECT_INSTALL_TYPE"), tp = tO && null == eX || ty && null == eV, tf = true;
+      }), e5.includes(d.x.BOT) && !f.fS(e6, L.Hn) && (A = "AUTHORIZE_BOT_PERMISSIONS"), to.length > 1 && (C = "SELECT_INSTALL_TYPE"), tp = tO && null == eX || ty && null == eV, tf = true;
       break;
     case "AUTHORIZE_BOT_PERMISSIONS":
       if (null == eR) return {
@@ -571,7 +571,7 @@ function ec(e) {
         deniedPermissions: eY,
         onPermissionsChange: td,
         guild: eX
-      }), A = "AUTHORIZE_SCOPES", tf = true
+      }), C = "AUTHORIZE_SCOPES", tf = true
   }
   let tS = [];
   if (t_ && null != eR) {
@@ -598,19 +598,19 @@ function ec(e) {
     showLogout: eg || false,
     location: eN,
     scopes: e5
-  })), th && (tS.push(null != A ? {
+  })), th && (tS.push(null != C ? {
     variant: "secondary",
-    onClick: () => ex(A),
+    onClick: () => ex(C),
     text: ee.intl.string(ee.t["13/7kX"])
   } : {
     variant: "secondary",
     onClick: () => tr(false),
     text: ee.intl.string(ee.t["ETE/oC"])
   }), "SELECT_INSTALL_TYPE" !== ew && tS.push(eU ? {
-    onClick: null != C ? () => ex(C) : () => tr(true),
+    onClick: null != A ? () => ex(A) : () => tr(true),
     loading: eM,
     disabled: null == P || tp,
-    text: tp ? ee.intl.string(ee.t.BwwiSM) : null != C ? ee.intl.string(ee.t["3PatSz"]) : ee.intl.string(ee.t["y+/PE9"])
+    text: tp ? ee.intl.string(ee.t.BwwiSM) : null != A ? ee.intl.string(ee.t["3PatSz"]) : ee.intl.string(ee.t["y+/PE9"])
   } : {
     disabled: true,
     loading: eM,
@@ -620,7 +620,7 @@ function ec(e) {
     header: q,
     body: O,
     actions: tS,
-    nextStep: C,
+    nextStep: A,
     appDetails: P,
     sendAuthorize: tr,
     hasContentBackground: tf,
@@ -652,7 +652,7 @@ function eu(e, t) {
 }
 
 function ed(e, t) {
-  if ((0, P.g)()) return void C.Z.openCreateGuildModal({
+  if ((0, P.g)()) return void A.Z.openCreateGuildModal({
     onSuccess: n => ef(ea(er({}, e), {
       guildId: n
     }), t)

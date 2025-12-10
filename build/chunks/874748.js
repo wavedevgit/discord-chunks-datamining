@@ -41,7 +41,7 @@ function p(e) {
     canAnimate: false
   }));
   let T = m(c.thumbnail) && !O,
-    A = (null == (t = c.thumbnail) ? true : t.filename) != null && (null == (r = c.thumbnail) || null == (n = r.filename) ? true : n.startsWith(u._j));
+    C = (null == (t = c.thumbnail) ? true : t.filename) != null && (null == (r = c.thumbnail) || null == (n = r.filename) ? true : n.startsWith(u._j));
   return {
     title: null != (i = c.title) ? i : "",
     subtitle: c.description,
@@ -61,7 +61,7 @@ function p(e) {
     avatarUrl: I,
     shouldShowBlurredThumbnailImage: O,
     shouldContainMediaWithBackground: T,
-    shouldSpoiler: A,
+    shouldSpoiler: C,
     obscureAwaitingScan: false,
     flags: c.flags,
     contentScanVersion: c.content_scan_version

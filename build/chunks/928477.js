@@ -44,8 +44,8 @@ var Chunk473749 = require("./473749.js"),
   }({});
 
 function x(e) {
-  let t = (0, A.NE)(e);
-  return (0, A.Xu)(e) ? t ? 2 : 3 : 1
+  let t = (0, C.NE)(e);
+  return (0, C.Xu)(e) ? t ? 2 : 3 : 1
 }
 
 function L(e, t) {
@@ -66,7 +66,7 @@ function M(e, t) {
   {
     if ("" !== d) return j(d, 80);
     let t = m.ZP.unparse(null != (l = null == c ? true : c.content) ? l : "", e.id, true),
-      n = (0, C.Z)(t.split("\n")[0], true);
+      n = (0, A.Z)(t.split("\n")[0], true);
     n = n.replace(/^[ #-]+/, "");
     let r = [];
     for (;;) {
@@ -181,7 +181,7 @@ function G(e) {
         reason: r
       }), i
     }
-    let A = await B(t, s, m, () => a.tn.post({
+    let C = await B(t, s, m, () => a.tn.post({
       url: v,
       body: S,
       rejectWithError: false
@@ -189,8 +189,8 @@ function G(e) {
     return l.Z.clearDraft(t.id, b.d.ThreadSettings), l.Z.clearDraft(t.id, b.d.FirstThreadMessage), u.Z.clearAll(t.id, b.d.FirstThreadMessage), (0, p.Je)({
       guildId: t.guild_id,
       channelId: t.id,
-      postId: A.id
-    }), null == c || c(A), A
+      postId: C.id
+    }), null == c || c(C), C
   }, [t, n, o, c, s, d])
 }
 
