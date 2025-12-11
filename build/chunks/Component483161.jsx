@@ -38,7 +38,7 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
       let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
         {
           avatarSrc: n,
-          avatarDecorationSrc: u
+          avatarDecorationSrc: r
         } = (0, Chunk518950.Z)({
           userId: null == exports ? true : exports.id,
           size: Chunk481060.EFr.SIZE_48

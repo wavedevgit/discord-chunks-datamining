@@ -780,7 +780,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eD.intl.string(eD.t.G0neg7)],
         label: eD.intl.string(eD.t.G0neg7),
         ariaLabel: eD.intl.string(eD.t.G0neg7),
-        element: X.Z,
+        element: X.ZP,
         url: eR.Z5c.SETTINGS("accessibility")
       },
       [eN.s6.ACCESSIBILITY_HIGH_CONTRAST]: {

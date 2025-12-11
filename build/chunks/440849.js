@@ -2,18 +2,25 @@
 /** chunk id: 440849, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  J: () => l,
+  Z: () => s
 });
-var Chunk969943 = require("./969943.js"),
+var Chunk442837 = require("./442837.js"),
+  Chunk263937 = require("./263937.js"),
+  Chunk969943 = require("./969943.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function s(e) {
   switch (e) {
-    case r.mX.REDUCED_MOTION:
-      return i.intl.format(i.t["1dT9V4"], {});
-    case r.mX.REDUCED_MOTION_STICKERS:
-      return i.intl.string(i.t["2ExvRu"]);
+    case a.mX.REDUCED_MOTION:
+      return o.intl.format(o.t["1dT9V4"], {});
+    case a.mX.REDUCED_MOTION_STICKERS:
+      return o.intl.string(o.t["2ExvRu"]);
     default:
       return
   }
+}
+
+function l(e) {
+  return (0, r.e7)([i.Z], () => s(i.Z.getAppliedOverrideReasonKey(e)))
 }

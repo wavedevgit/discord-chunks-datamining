@@ -24,10 +24,11 @@ function g(e) {
     active: o
   } = e, {
     useTitle: a,
-    key: l
-  } = t, s = null == a ? true : a();
-  return c()(null != s, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
-    id: l,
+    useSubnavLabel: l,
+    key: s
+  } = t, d = null == a ? true : a(), b = null == l ? true : l(), y = null != b ? b : d;
+  return c()(null != y, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
+    id: s,
     children: e => {
       var t, a;
       return (0, r.jsx)(f.P3F, (t = function(e) {
@@ -54,7 +55,7 @@ function g(e) {
           [p.active]: o
         })
       }, e), a = a = {
-        children: s
+        children: y
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -64,7 +65,7 @@ function g(e) {
         return n
       })(Object(a)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
-      }), t), l)
+      }), t), s)
     }
   })
 }

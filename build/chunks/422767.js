@@ -17,7 +17,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_SWITCH_CHANNEL_ALERT_SETTING, {
     return (0, Chunk442837.e7)([Chunk740492.ZP], () => !Chunk740492.ZP.disableVoiceChannelChangeAlert)
   },
   setValue: function(t) {
-    (0, a.Z)("switch_channel_warning_enabled", t, !r.ZP.disableVoiceChannelChangeAlert), l.ZP.updatedUnsyncedSettings({
+    (0, a.Z)("switch_channel_warning_enabled", t, !u.ZP.disableVoiceChannelChangeAlert), l.ZP.updatedUnsyncedSettings({
       disableVoiceChannelChangeAlert: !t
     })
   }

@@ -17,24 +17,27 @@ function u(e) {
     node: t
   } = e, {
     useTitle: n,
-    layout: i,
-    initialize: u,
-    useNotice: d
-  } = t, f = null == n ? true : n(), p = null == d ? true : d(), _ = null != n;
-  return (0, s.D)(u), (0, r.jsxs)(r.Fragment, {
-    children: [null != f && (0, r.jsx)(l.Y, {
-      title: f
+    useSubnavLabel: i,
+    useSubtitle: u,
+    layout: d,
+    initialize: f,
+    useNotice: p
+  } = t, _ = null == n ? true : n(), m = null == u ? true : u(), h = null == p ? true : p(), g = null != n || null != i;
+  return (0, s.D)(f), (0, r.jsxs)(r.Fragment, {
+    children: [null != _ && (0, r.jsx)(l.Y, {
+      title: _,
+      subtitle: m
     }), (0, r.jsx)("div", {
-      "data-settings-category-key": _ ? t.key : true,
+      "data-settings-category-key": g ? t.key : true,
       "aria-hidden": true,
       style: {
         height: 1
       }
     }), (0, r.jsxs)(a.Kqy, {
       gap: 16,
-      children: [null != p && (0, r.jsx)(c.Z, {
-        notice: p
-      }), i.map(e => (0, r.jsx)(o.Z, {
+      children: [null != h && (0, r.jsx)(c.Z, {
+        notice: h
+      }), d.map(e => (0, r.jsx)(o.Z, {
         node: e
       }, e.key))]
     })]

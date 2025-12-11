@@ -14,5 +14,5 @@ let o = (0, Chunk509613.qs)(Chunk313789.n.ADVANCED_SHOW_GAME_LIBRARY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.fi3UQN),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["8mYp37"]),
   useValue: () => !Chunk695346.bm.useSetting(),
-  setValue: t => r.bm.updateSetting(!t)
+  setValue: t => u.bm.updateSetting(!t)
 })

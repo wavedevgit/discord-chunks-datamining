@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 50052, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => I
+  Q: () => E
 });
 var Chunk442837 = require("./442837.js"),
   Chunk223245 = require("./223245.js"),
@@ -22,7 +22,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       hidePersonalInformation: t
     })
   }),
-  d = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.uWBOri),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -34,7 +34,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       hideInstantInvites: t
     })
   }),
-  T = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
+  d = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_DISABLE_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.OrqYDP),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -75,8 +75,8 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       return null != (n = null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.window) || null == (t = exports.supportsContentProtection) ? true : module.call(exports)) && require
     }
   }),
-  I = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
+  E = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
     variant: "separators",
-    buildLayout: () => [c, d, T, S, g]
+    buildLayout: () => [c, T, d, S, g]
   })

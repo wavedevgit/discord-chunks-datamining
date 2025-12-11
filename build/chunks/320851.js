@@ -77,9 +77,9 @@ let a = [{
   }],
   o = (0, Chunk509613.$l)(Chunk313789.n.VOICE_AND_VIDEO_SOUNDS_LIST, {
     collapseAfter: 4,
-    useCollapsibleTitle: (t, e) => t ? u.intl.formatToPlainString(u.t["0JYT98"], {
+    useCollapsibleTitle: (t, e) => t ? r.intl.formatToPlainString(r.t["0JYT98"], {
       count: e
-    }) : u.intl.formatToPlainString(u.t.ji1uNt, {
+    }) : r.intl.formatToPlainString(r.t.ji1uNt, {
       count: e
     }),
     useCollapsedSubtitle: () => (0, Chunk323472.u)(Chunk313789.n.VOICE_AND_VIDEO_SOUNDS_LIST, {
@@ -90,5 +90,5 @@ let a = [{
         (0, Chunk407458.WY)()
       }
     },
-    buildLayout: () => a.map(t => (0, r.j$)(t))
+    buildLayout: () => a.map(t => (0, u.j$)(t))
   })

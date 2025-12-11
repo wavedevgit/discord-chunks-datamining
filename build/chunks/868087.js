@@ -15,17 +15,17 @@ let c = () => {
     e = (0, Chunk773275.xf)(t => t.install),
     n = (0, Chunk773275.xf)(t => t.installationStatus),
     c = (0, Chunk773275.xf)(t => t.setDoInstall),
-    d = (0, Chunk773275.xf)(t => t.setInstallationStatus);
+    T = (0, Chunk773275.xf)(t => t.setInstallationStatus);
   return (0, Chunk473749.useEffect)(() => {
-    module && require === Chunk5900._n.NOT_INSTALLED && (c(false), d(Chunk5900._n.INSTALLING), exports().catch(t => {
-      d(s._n.ERROR), a.Z.captureException(t, {
+    module && require === Chunk5900._n.NOT_INSTALLED && (c(false), T(Chunk5900._n.INSTALLING), exports().catch(t => {
+      T(s._n.ERROR), a.Z.captureException(t, {
         tags: {
           source: l.D.WARP_INSTALL_HELPER
         }
-      }), u.default.track(o.rMx.PREMIUM_FEATURE_ERROR, {
+      }), r.default.track(o.rMx.PREMIUM_FEATURE_ERROR, {
         error_message: t instanceof Error ? t.message : JSON.stringify(t),
         error_source: l.D.WARP_INSTALL_HELPER
       })
     }))
-  }, [module, c, exports, require, d]), null
+  }, [module, c, exports, require, T]), null
 }

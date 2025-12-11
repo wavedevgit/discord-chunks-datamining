@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 32832, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => I
+  u: () => E
 }), require("./54381.js"), require("./473749.js");
 var Chunk442837 = require("./442837.js");
 require("./481060.js");
@@ -13,13 +13,13 @@ var Chunk292556 = require("./292556.js"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
 require("./530049.js");
-let d = {
+let T = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
     useDisabledMessage: () => (0, Chunk734934.p)() ? Chunk388032.intl.string(Chunk388032.t.cIRG0s) : true
   },
-  T = {
+  d = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.XBrJT6),
     sound: "call_ringing"
   },
@@ -35,7 +35,7 @@ let d = {
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: t => l.default.toggleDisableAllSounds(t)
   }),
-  I = (0, Chunk509613.Uc)(Chunk313789.n.NOTIFICATION_SOUNDS_FIELD_SET, {
+  E = (0, Chunk509613.Uc)(Chunk313789.n.NOTIFICATION_SOUNDS_FIELD_SET, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.ONU22R),
     variant: "separators",
     initialize: function() {
@@ -43,5 +43,5 @@ let d = {
         (0, Chunk407458.WY)()
       }
     },
-    buildLayout: () => [(0, Chunk407458.j$)(d), S, (0, Chunk407458.j$)(T), g]
+    buildLayout: () => [(0, Chunk407458.j$)(T), S, (0, Chunk407458.j$)(d), g]
   })

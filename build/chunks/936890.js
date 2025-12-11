@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 936890, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  r: () => d
+  r: () => T
 });
 var Chunk779618 = require("./779618.js"),
   Chunk341569 = require("./341569.js"),
@@ -11,7 +11,7 @@ var Chunk779618 = require("./779618.js"),
   Chunk358085 = require("./358085.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
+let T = (0, Chunk509613.qs)(Chunk313789.n.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.yXvykv),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.YP3ujk),
   useValue: Chunk341569.nq,

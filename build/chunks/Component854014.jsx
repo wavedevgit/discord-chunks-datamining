@@ -99,7 +99,7 @@ function p(e) {
     showNavigationMobile: false
   }) : t.onClick, p = o.useMemo(() => {
     if (!f || null == i || !(0, s.iU)(i.layout)) return null;
-    let e = i.layout.filter(e => null != e.useTitle);
+    let e = i.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
     return e.length > 1 ? (0, r.jsx)(d.Z, {
       categories: e
     }) : null

@@ -22,7 +22,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.ADVANCED_VOICE_ACTIVITY_PROCESSING_SET
     })
   },
   setValue: function(t) {
-    let e = r.Z.getMode();
+    let e = u.Z.getMode();
     l.Z.setMode(e, {
       vadUseKrisp: t
     })
