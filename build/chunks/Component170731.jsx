@@ -190,16 +190,16 @@ function G(i) {
             text: p.title,
             position: "top",
             asContainer: true,
-            delay: C.rq,
+            delay: L.rq,
             children: f
           }) : (0, n.jsx)(o.i, {
             title: p.title,
             body: null != (s = p.body) ? s : "",
             asset: null == (t = p.renderIcon) ? true : t.call(p, r),
-            assetSize: C.EU,
+            assetSize: L.EU,
             position: "top",
             asContainer: true,
-            delay: C.rq,
+            delay: L.rq,
             children: f
           }) : f
         })({
@@ -228,9 +228,9 @@ let W = function(i) {
     wishlistItemCountToBeDisplayed: j,
     fetchState: x,
     defaultWishlistId: w
-  } = (0, L.ZP)({
+  } = (0, C.ZP)({
     user: e,
-    numItems: C.zL,
+    numItems: L.zL,
     location: "Wishlist Banner"
   }), S = s.useMemo(() => "loading" === x.status, [x.status]), O = T.ZP.getName(e), {
     theme: y,
@@ -252,16 +252,16 @@ let W = function(i) {
       userId: e.id,
       section: k.oh.WISHLIST
     })
-  }, [e.id]), F = R[s.useMemo(() => j >= C.zL ? "FULL_WISHLIST" : j > 0 ? "MIXED" : c.length > 0 && c.every(i => {
+  }, [e.id]), F = R[s.useMemo(() => j >= L.zL ? "FULL_WISHLIST" : j > 0 ? "MIXED" : c.length > 0 && c.every(i => {
     let {
       item: e,
       source: t
     } = i;
-    return t === C.lr.POPULAR && (0, b.F)(e)
+    return t === L.lr.POPULAR && (0, b.F)(e)
   }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [j, c])], D = null == o ? true : o.getBannerURL({
     canAnimate: false,
     size: 713
-  }), U = s.useMemo(() => h ? c.slice(0, C.zL - 1) : c, [c, h]), Y = (0, B.g)(U, e), X = h ? c[C.zL - 1] : null, K = _ - C.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
+  }), U = s.useMemo(() => h ? c.slice(0, L.zL - 1) : c, [c, h]), Y = (0, B.g)(U, e), X = h ? c[L.zL - 1] : null, K = _ - L.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
     if (i && !S && c.length > 0) {
       let i = c.map(i => {
         let {

@@ -1,10 +1,7 @@
 /** Chunk was on 91304 **/
-/** chunk id: 133495, original params: e,t,o (module,exports,require) **/
+/** chunk id: 133495, original params: e,t,n (module,exports,require) **/
 module.exports = {
-  modal: "modal_edf440",
-  modalHeader: "modalHeader_edf440",
   modalContent: "modalContent_edf440",
-  modalCloseButton: "modalCloseButton_edf440",
   imageSelectionSection: "imageSelectionSection_edf440",
   optionsList: "optionsList_edf440",
   option: "option_edf440",

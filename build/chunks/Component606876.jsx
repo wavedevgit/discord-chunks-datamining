@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk790359 = require("./790359.jsx"),
   Chunk203377 = require("./203377.js"),
-  Chunk810878 = require("./810878.js"),
+  Chunk5238 = require("./5238.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421405 = require("./421405.js");
 
@@ -79,7 +79,7 @@ function u() {
       variant: "text-xs/normal",
       color: "text-muted",
       className: Chunk421405.disclaimer,
-      children: Chunk388032.intl.string(Chunk810878.default.u5iNbz)
+      children: Chunk388032.intl.string(Chunk5238.default.u5iNbz)
     })]
   })
 }

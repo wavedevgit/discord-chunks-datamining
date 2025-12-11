@@ -76,12 +76,9 @@ function f(e) {
       userId: n.id,
       onClose: i.Z.popAll,
       autoFocus: true
-    }), (0, l.jsx)(u.g, {
-      type: "icon",
+    }), (0, l.jsx)(u.n1, {
       user: n,
       relationshipType: v,
-      shouldShowTooltip: true,
-      themeColor: "secondary",
       analyticsLocation: g
     }), (0, l.jsx)(c.wV, {
       user: n,
@@ -93,15 +90,12 @@ function f(e) {
       userId: n.id,
       onClose: i.Z.popAll,
       autoFocus: true
-    }), (0, l.jsx)(u.k9, {
-      type: "icon",
+    }), (0, l.jsx)(u.C0, {
       user: n,
       analyticsLocation: g,
-      themeColor: "secondary",
       gameFriends: I,
       tooltipPosition: "top",
       tooltipAlign: "center",
-      shouldShowTooltip: true,
       hasIncomingPendingGameFriends: Z,
       hasOutgoingPendingGameFriends: y
     }), (0, l.jsx)(c.wV, {

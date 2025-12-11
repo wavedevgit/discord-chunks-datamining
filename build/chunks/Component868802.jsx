@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk237396 = require("./237396.js"),
+  Chunk36385 = require("./36385.js"),
   Chunk498374 = require("./498374.js"),
   Chunk93109 = require("./93109.js"),
   Chunk446818 = require("./446818.js"),
@@ -129,7 +129,7 @@ let U = () => {
               is_enable_warp: true
             }), require(Chunk5900._n.READY_FOR_LICENSE)
           },
-          text: Chunk388032.intl.string(Chunk237396.default.J09UWz)
+          text: Chunk388032.intl.string(Chunk36385.default.J09UWz)
         });
       case Chunk5900._n.INSTALLING:
       case Chunk5900._n.READY_FOR_LICENSE:

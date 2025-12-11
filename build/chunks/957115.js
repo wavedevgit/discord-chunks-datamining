@@ -15,7 +15,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk626135 = require("./626135.js"),
   Chunk531578 = require("./531578.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk336084 = require("./336084.js"),
+  Chunk5315 = require("./5315.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e) {
@@ -106,27 +106,27 @@ function _() {
   return v([{
     variant: Chunk531578.$7.SELF,
     value: Chunk531578.T_.COULD_NOT_CONNECT,
-    label: Chunk388032.intl.string(Chunk336084.default.gMHKDJ)
+    label: Chunk388032.intl.string(Chunk5315.default.gMHKDJ)
   }, {
     value: Chunk531578.T_.HIGH_TTC,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk336084.default.y06Ayn)
+    label: Chunk388032.intl.string(Chunk5315.default.y06Ayn)
   }, {
     value: Chunk531578.T_.HIGH_LATENCY,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk336084.default.y5k8Jq)
+    label: Chunk388032.intl.string(Chunk5315.default.y5k8Jq)
   }, {
     value: Chunk531578.T_.ROBOT_VOICE,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk336084.default.f2914v)
+    label: Chunk388032.intl.string(Chunk5315.default.f2914v)
   }, {
     value: Chunk531578.T_.DESYNC,
     variant: Chunk531578.$7.UNSPECIFIED,
-    label: Chunk388032.intl.string(Chunk336084.default["zk+QL1"])
+    label: Chunk388032.intl.string(Chunk5315.default["zk+QL1"])
   }, {
     value: Chunk531578.T_.CUTTING,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk336084.default.K5vYQA)
+    label: Chunk388032.intl.string(Chunk5315.default.K5vYQA)
   }])
 }
 
@@ -194,27 +194,27 @@ function E() {
   return v([{
     value: Chunk531578.ct.NO_VIDEO,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk336084.default["Bh+02d"])
+    label: Chunk388032.intl.string(Chunk5315.default["Bh+02d"])
   }, {
     value: Chunk531578.ct.NO_VIDEO,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk336084.default["R+wqwU"])
+    label: Chunk388032.intl.string(Chunk5315.default["R+wqwU"])
   }, {
     value: Chunk531578.ct.FREEZING_OR_HITCHING,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk336084.default["8I/GUL"])
+    label: Chunk388032.intl.string(Chunk5315.default["8I/GUL"])
   }, {
     value: Chunk531578.ct.BLURRY_OR_PIXELATED,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk336084.default.k7Idoz)
+    label: Chunk388032.intl.string(Chunk5315.default.k7Idoz)
   }, {
     value: Chunk531578.ct.UNABLE_TO_ENABLE_DEVICE,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk336084.default.QbC6La)
+    label: Chunk388032.intl.string(Chunk5315.default.QbC6La)
   }, {
     value: Chunk531578.ct.DESYNC,
     variant: Chunk531578.$7.UNSPECIFIED,
-    label: Chunk388032.intl.string(Chunk336084.default.vRDE5O)
+    label: Chunk388032.intl.string(Chunk5315.default.vRDE5O)
   }])
 }
 
@@ -324,6 +324,6 @@ function g() {
   return v([{
     value: Chunk531578.s_.TOXIC_OR_INAPPROPRIATE,
     variant: Chunk531578.$7.OTHERS,
-    label: Chunk388032.intl.string(Chunk336084.default.PLBRzF)
+    label: Chunk388032.intl.string(Chunk5315.default.PLBRzF)
   }])
 }

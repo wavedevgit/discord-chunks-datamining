@@ -21,24 +21,28 @@ function g(i) {
     onClose: t,
     transitionState: l,
     analyticsLocations: g,
-    analyticsObject: p
+    analyticsLocation: p,
+    analyticsObject: f,
+    giftMessage: I
   } = i, {
-    priceOptions: f
-  } = (0, a.JL)(), I = s.useCallback(i => {
+    priceOptions: _
+  } = (0, a.JL)(), j = s.useCallback(i => {
     (0, o.Z)({
       isGift: true,
       giftRecipient: e,
       subscriptionTier: i,
       giftingOrigin: d.Wt.DM_CHANNEL,
       analyticsLocations: null != g ? g : [],
-      analyticsObject: null != p ? p : {
+      analyticsLocation: p,
+      analyticsObject: null != f ? f : {
         page: u.ZY5.DM_CHANNEL,
         section: u.jXE.CHANNEL_TEXT_AREA,
         object: u.qAy.BUTTON_ICON,
         objectType: u.AnalyticsObjectTypes.GIFT
-      }
+      },
+      giftMessage: I
     }), t()
-  }, [e, g, p, t]);
+  }, [e, g, p, f, I, t]);
   return (0, n.jsxs)(r.Y0X, {
     transitionState: l,
     size: r.CgR.DYNAMIC,
@@ -63,9 +67,9 @@ function g(i) {
       className: h.modalBody,
       "data-migration-pending": true,
       children: (0, n.jsx)(c.Z, {
-        onSelectSku: I,
+        onSelectSku: j,
         giftRecipient: e,
-        priceOptions: f,
+        priceOptions: _,
         onWishlistItemClick: t
       })
     })]
@@ -78,7 +82,9 @@ function p(i) {
     onClose: t,
     transitionState: s,
     analyticsLocations: r,
-    analyticsObject: o
+    analyticsLocation: o,
+    analyticsObject: c,
+    giftMessage: u
   } = i;
   return (0, n.jsx)(a.PaymentContextProvider, {
     activeSubscription: null,
@@ -94,7 +100,9 @@ function p(i) {
         onClose: t,
         transitionState: s,
         analyticsLocations: r,
-        analyticsObject: o
+        analyticsLocation: o,
+        analyticsObject: c,
+        giftMessage: u
       })
     })
   })

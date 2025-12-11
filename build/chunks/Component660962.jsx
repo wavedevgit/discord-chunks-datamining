@@ -42,7 +42,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk141006 = require("./141006.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk810878 = require("./810878.js"),
+  Chunk5238 = require("./5238.js"),
   Chunk12574 = require("./12574.js"),
   Chunk21321 = require("./21321.js"),
   Chunk179517 = require("./179517.js"),
@@ -204,8 +204,8 @@ function X() {
       return e
     }({}, exports),
     className: require,
-    "data-text": Chunk388032.intl.string(Chunk810878.default["+/IHLl"]),
-    children: Chunk388032.intl.string(Chunk810878.default["+/IHLl"])
+    "data-text": Chunk388032.intl.string(Chunk5238.default["+/IHLl"]),
+    children: Chunk388032.intl.string(Chunk5238.default["+/IHLl"])
   })
 }
 

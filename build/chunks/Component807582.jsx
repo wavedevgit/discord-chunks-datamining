@@ -20,42 +20,42 @@ let p = e => {
       guild: u,
       className: m,
       hideTooltip: v = false,
-      tooltipPosition: g = "left",
-      onClick: h
+      tooltipPosition: h = "left",
+      onClick: g
     } = e,
     x = u.features.has(p),
     b = (0, c.AR)(u.id, "GuildSettingsBoostPerks"),
-    A = (0, d._p)(p);
-  return !x && p === s.GuildFeatures.VANITY_URL && b ? null : (x ? (null != A && (a = _.intl.string(_.t.hUgjyP)), t = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(r.Ucv, {
-      color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+    A = (0, s._p)(p);
+  return !x && p === d.GuildFeatures.VANITY_URL && b ? null : (x ? (null != A && (a = _.intl.string(_.t.hUgjyP)), t = (0, n.jsxs)(n.Fragment, {
+    children: [(0, n.jsx)(l.Ucv, {
+      color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: f.unlockedIcon
-    }), (0, n.jsx)(r.Heading, {
+    }), (0, n.jsx)(l.Heading, {
       variant: "eyebrow",
       className: f.description,
       children: _.intl.string(_.t["0O+87i"])
     })]
   })) : (null != A && (a = _.intl.string(_.t.L2wYYj)), t = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(r.Ucv, {
+    children: [(0, n.jsx)(l.Ucv, {
       color: "currentColor",
       className: f.icon
-    }), (0, n.jsx)(r.Heading, {
+    }), (0, n.jsx)(l.Heading, {
       variant: "eyebrow",
       className: f.description,
-      children: null != A && (0, d.e9)(A)
+      children: null != A && (0, s.e9)(A)
     })]
   })), i = v || null == a ? (0, n.jsx)("div", {
     className: o()(f.availabilityIndicator, m),
     children: t
-  }) : (0, n.jsx)(l.u, {
-    position: g,
+  }) : (0, n.jsx)(r.u, {
+    position: h,
     text: a,
     children: (0, n.jsx)("div", {
       className: o()(f.availabilityIndicator, m),
       children: t
     })
-  }), null == h || x) ? i : (0, n.jsx)(r.P3F, {
-    onClick: h,
+  }), null == g || x) ? i : (0, n.jsx)(l.P3F, {
+    onClick: g,
     className: f.clickable,
     children: i
   })

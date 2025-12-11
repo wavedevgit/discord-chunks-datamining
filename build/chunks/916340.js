@@ -1,10 +1,11 @@
 /** Chunk was on 91304 **/
-/** chunk id: 916340, original params: e,t,o (module,exports,require) **/
+/** chunk id: 916340, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "container__1df30",
   circular: "circular__1df30",
   spinner: "spinner__1df30",
   recentAvatarContainer: "recentAvatarContainer__1df30",
+  hasError: "hasError__1df30",
   recentAvatarSlots: "recentAvatarSlots__1df30",
   recentAvatarList: "recentAvatarList__1df30",
   recentAvatarButtonContainer: "recentAvatarButtonContainer__1df30",

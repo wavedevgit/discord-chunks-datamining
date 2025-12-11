@@ -11,9 +11,9 @@ var Chunk793030 = require("./793030.js"),
   Chunk868802 = require("./868802.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk237396 = require("./237396.js");
+  Chunk36385 = require("./36385.js");
 let d = () => (0, Chunk54381.jsx)(Chunk273313.Z, {
-  title: Chunk388032.intl.string(Chunk237396.default.bU5ANm),
+  title: Chunk388032.intl.string(Chunk36385.default.bU5ANm),
   children: (0, Chunk54381.jsx)(Chunk793030.Kqy, {
     gap: 16,
     children: (0, Chunk54381.jsx)(Chunk921801.F, {

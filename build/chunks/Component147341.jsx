@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk512575 = require("./512575.js"),
+  Chunk422755 = require("./422755.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk46693 = require("./46693.js");
 
@@ -21,12 +21,12 @@ function o() {
         variant: "heading-xxl/normal",
         color: "header-primary",
         className: Chunk46693.heading,
-        children: Chunk388032.intl.string(Chunk512575.default["VAK+h9"])
+        children: Chunk388032.intl.string(Chunk422755.default["VAK+h9"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-lg/normal",
         color: "text-muted",
         className: Chunk46693.text,
-        children: Chunk388032.intl.string(Chunk512575.default.dcpdhC)
+        children: Chunk388032.intl.string(Chunk422755.default.dcpdhC)
       })]
     })
   })

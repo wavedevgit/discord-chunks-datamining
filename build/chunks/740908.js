@@ -3,6 +3,7 @@
 "use strict";
 module.exports = {
   container: "container__8f41e",
+  hoverBackground: "hoverBackground__8f41e",
   userInfoContainer: "userInfoContainer__8f41e",
   faded: "faded__8f41e",
   avatar: "avatar__8f41e",

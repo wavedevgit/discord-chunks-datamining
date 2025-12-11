@@ -52,7 +52,9 @@ function u(e) {
     giftRecipient: t,
     onClose: a,
     analyticsLocations: s,
-    analyticsObject: u
+    analyticsLocation: u,
+    analyticsObject: d,
+    giftMessage: f
   } = e;
   return (0, i.ZDy)(async () => {
     let {
@@ -61,7 +63,9 @@ function u(e) {
     return n => (0, r.jsx)(e, l(o({}, n), {
       giftRecipient: t,
       analyticsLocations: s,
-      analyticsObject: u
+      analyticsLocation: u,
+      analyticsObject: d,
+      giftMessage: f
     }))
   }, {
     modalKey: c(t),

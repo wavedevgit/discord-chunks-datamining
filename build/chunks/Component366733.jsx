@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk441677 = require("./441677.js"),
+  Chunk96011 = require("./96011.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk740908 = require("./740908.js");
 
@@ -56,7 +56,9 @@ let h = e => {
       size: l.EFr.SIZE_24
     }), g = (0, u.XM)(t), [E, b] = i.useState(false);
     return (0, r.jsxs)("div", {
-      className: p.container,
+      className: o()(p.container, {
+        [p.hoverBackground]: null != s
+      }),
       onMouseEnter: () => b(true),
       onMouseLeave: () => b(false),
       children: [(0, r.jsxs)("div", {
@@ -137,12 +139,15 @@ let h = e => {
   },
   O = e => {
     let {
-      onInvite: t
-    } = e, [n, a] = i.useState(false);
+      onInvite: t,
+      canInvite: n
+    } = e, [a, c] = i.useState(false);
     return (0, r.jsxs)("div", {
-      className: p.container,
-      onMouseEnter: () => a(true),
-      onMouseLeave: () => a(false),
+      className: o()(p.container, {
+        [p.hoverBackground]: n
+      }),
+      onMouseEnter: () => c(true),
+      onMouseLeave: () => c(false),
       children: [(0, r.jsxs)("div", {
         className: p.userInfoContainer,
         children: [(0, r.jsx)("div", {
@@ -157,7 +162,7 @@ let h = e => {
           color: "text-strong",
           children: f.intl.string(d.default["/x7DVG"])
         })]
-      }), n && (0, r.jsx)("div", {
+      }), a && n && (0, r.jsx)("div", {
         className: p.textButtonContainer,
         children: (0, r.jsx)(l.Avr, {
           textVariant: "text-sm/medium",

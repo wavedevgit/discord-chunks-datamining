@@ -20,7 +20,7 @@ var Chunk524437 = require("./524437.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk225753 = require("./225753.js");
+  Chunk435757 = require("./435757.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,7 +79,7 @@ function O() {
   exports && (T.unshift(A), C.unshift(A));
   let N = {
     isDisabled: b,
-    tooltipText: require ? Chunk388032.intl.string(Chunk225753.default["6Af/cw"]) : true
+    tooltipText: require ? Chunk388032.intl.string(Chunk435757.default["6Af/cw"]) : true
   };
   return (0, Chunk54381.jsxs)(Chunk400313.n, {
     setting: Chunk726985.s6.PRIVACY_SENSITIVE_MEDIA_V2,
@@ -106,7 +106,7 @@ function O() {
         explicitContentGuilds: e
       }),
       isDisabled: !exports || b,
-      tooltipText: require ? Chunk388032.intl.string(Chunk225753.default["6Af/cw"]) : true,
+      tooltipText: require ? Chunk388032.intl.string(Chunk435757.default["6Af/cw"]) : true,
       options: C
     })]
   })

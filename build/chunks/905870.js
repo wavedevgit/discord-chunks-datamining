@@ -2,7 +2,7 @@
 /** chunk id: 905870, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./642613.js"), require("./388685.js"), require("./539854.js"), require("./361932.js"), require("./187205.js");
 var Chunk268146 = require("./268146.js"),
   Chunk433517 = require("./433517.js"),
@@ -48,113 +48,120 @@ let y = 1048576,
   M = 8 * y,
   k = 60 * Chunk70956.Z.Millis.MINUTE,
   U = "lastMemoryUsageRestart",
-  G = +Chunk70956.Z.Millis.DAY;
+  G = +Chunk70956.Z.Millis.DAY,
+  Z = +Chunk70956.Z.Millis.MINUTE;
 
-function Z() {
+function B() {
   return Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)()
 }
-class B extends Chunk147913.Z {
+class F extends Chunk147913.Z {
   _initialize() {}
   _terminate() {
-    Z() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, Chunk848479.Z.disablePerfMemoryHooks(), Chunk848479.Z.disablePAMemoryProfiler())
+    B() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, Chunk848479.Z.disablePerfMemoryHooks(), Chunk848479.Z.disablePAMemoryProfiler())
   }
   handlePostConnectionOpen() {
     var e, t;
-    if (!Z()) return;
+    if (!B()) return;
     let n = null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports);
-    ("development" === require || "canary" === require) && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = setInterval(async () => {
+    "development" !== require && "canary" !== require && (this._supportedNativeChannel = false), clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = setInterval(async () => {
       await this.trackNativeHeapPerformanceStats()
-    }, O), clearInterval(this._checkIntervalPA), this._checkIntervalPA = setInterval(async () => {
+    }, O), this._supportedNativeChannel && (clearInterval(this._checkIntervalPA), this._checkIntervalPA = setInterval(async () => {
       await this.trackPartitionAllocPerformanceStats()
     }, N))
   }
   async trackNativeHeapPerformanceStats() {
-    var e, t, n, a, o;
-    let f = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
-    if (null == Chunk70956) return;
-    let p = null != (t = null == (e = Chunk70956.renderer) ? true : module.wss_priv_kb) ? exports : 0;
-    if (!this._nativeHeapHooksInstalled && Chunk358085 > v && Chunk848479.Z.enablePerfMemoryHooks({
-        allocationThresholdKB: T,
-        enableCallStackTracking: C
-      }) && (this._nativeHeapHooksInstalled = true), this._nativeHeapHooksInstalled) {
-      if (Chunk358085 < S) return;
-      let e = Chunk848479.Z.getPerfAttributedMemory();
-      if (null == module) return;
-      let t = [],
-        r = [],
-        i = [],
-        s = [],
-        l = Object.entries(module);
-      for (let [e, c] of(Chunk517100.sort((e, t) => {
+    var e, t;
+    let n = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
+    if (null == require) return;
+    let r = null != (t = null == (e = require.renderer) ? true : module.wss_priv_kb) ? exports : 0;
+    !this._nativeHeapHooksInstalled && this._supportedNativeChannel && Chunk268146 > v && Chunk848479.Z.enablePerfMemoryHooks({
+      allocationThresholdKB: T,
+      enableCallStackTracking: C
+    }) && (this._nativeHeapHooksInstalled = true), this._nativeHeapHooksInstalled && await this.trackNativeHeapHookStats(Chunk268146), this.doRestartIfNeeded(Chunk268146)
+  }
+  async trackNativeHeapHookStats(e) {
+    if (e < S) return;
+    let t = _.Z.getPerfAttributedMemory();
+    if (null == t) return;
+    let n = [],
+      r = [],
+      i = [],
+      a = [],
+      o = Object.entries(t);
+    for (let [e, t] of(o.sort((e, t) => {
+        var n, r;
+        let [, i] = e, [, a] = t;
+        return (null != (n = null == a ? true : a.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
+      }), o.slice(0, 10)))
+      if (null != t) {
+        var s, l, u;
+        n.push(e), r.push(null != (s = t.total_allocation_kb) ? s : 0), i.push(null != (l = t.allocation_count) ? l : 0), a.push(null != (u = t.module_version) ? u : "")
+      } let f = _.Z.getPerfAttributedMemoryStats(),
+      p = null == f ? true : f.events_dropped,
+      m = {
+        memory_type: "native_heap",
+        module_name: n,
+        allocation_total_size_kb: r,
+        allocation_count: i,
+        module_version: a,
+        events_dropped: p
+      };
+    if (d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, m), C) {
+      let e = o.slice(0, 3).map(e => e[0]),
+        t = 3;
+      for (let n of e.map(e => _.Z.getPerfAttributedMemoryCallstacks(e)).filter(e => null != e).flatMap(e => e).sort((e, t) => {
           var n, r;
-          let [, i] = e, [, a] = t;
-          return (null != (n = null == a ? true : a.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
-        }), Chunk517100.slice(0, 10))) null != Chunk131951 && (exports.push(module), Chunk268146.push(null != (n = Chunk131951.total_allocation_kb) ? require : 0), Chunk433517.push(null != (a = Chunk131951.allocation_count) ? Chunk147913 : 0), Chunk703558.push(null != (o = Chunk131951.module_version) ? Chunk579806 : ""));
-      let u = Chunk848479.Z.getPerfAttributedMemoryStats(),
-        f = null == Chunk19780 ? true : Chunk19780.events_dropped,
-        m = {
+          return (null != (n = t.total_alloc_kb) ? n : 0) - (null != (r = e.total_alloc_kb) ? r : 0)
+        }).slice(0, t).filter(e => {
+          var t;
+          return (null != (t = e.total_alloc_kb) ? t : 0) > I
+        })) {
+        let e = {
           memory_type: "native_heap",
-          module_name: exports,
-          allocation_total_size_kb: Chunk268146,
-          allocation_count: Chunk433517,
-          module_version: Chunk703558,
-          events_dropped: Chunk70956
+          module_name: n.module_name,
+          callstack_allocation_total_size_kb: n.total_alloc_kb,
+          callstack_frame_module_names: n.frame_module_names,
+          callstack_frame_module_codeids: n.frame_module_codeids,
+          callstack_frame_relative_offsets: n.frame_rel_offsets,
+          events_dropped: p
         };
-      if (Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, Chunk960048), C) {
-        let e = Chunk517100.slice(0, 3).map(e => e[0]),
-          t = 3;
-        for (let n of module.map(e => _.Z.getPerfAttributedMemoryCallstacks(e)).filter(e => null != e).flatMap(e => e).sort((e, t) => {
-            var n, r;
-            return (null != (n = t.total_alloc_kb) ? n : 0) - (null != (r = e.total_alloc_kb) ? r : 0)
-          }).slice(0, exports).filter(e => {
-            var t;
-            return (null != (t = e.total_alloc_kb) ? t : 0) > I
-          })) {
-          let e = {
-            memory_type: "native_heap",
-            module_name: require.module_name,
-            callstack_allocation_total_size_kb: require.total_alloc_kb,
-            callstack_frame_module_names: require.frame_module_names,
-            callstack_frame_module_codeids: require.frame_module_codeids,
-            callstack_frame_relative_offsets: require.frame_rel_offsets,
-            events_dropped: Chunk70956
-          };
-          Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, module)
-        }
+        d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, e)
       }
-      A && this._pushedNativeDeadlockMinidumpCount < 5 && (await Chunk998502.ZP.submitLiveCrashReport({
-        message: "Desktop Memory Thread State",
-        extra: {
-          renderer_memory_kb: Chunk358085,
-          gpu_brand: Chunk131951.Z.getGpuBrand()
-        }
-      }), this._pushedNativeDeadlockMinidumpCount += 1)
     }
-    if (Chunk358085 >= L) {
-      let e = performance.now() - this._startupTime;
-      if (module < k) return;
-      let t = Chunk433517.K.get(U);
-      if (null != exports && exports.timestamp >= Date.now() - G) return;
-      let n = true,
-        {
-          enable: a,
-          enableForce: o
-        } = Chunk4087.Z.getConfig({
-          location: "DesktopPerfAnalyticsManager"
-        });
-      if (!Chunk147913) return;
-      if (Chunk358085 < M || !Chunk579806) {
-        let e = Chunk517100.Z.getIdleSince();
-        if (null == module || module > Date.now() - j || null != Chunk19780.Z.getRTCConnection()) return
+    A && this._pushedNativeDeadlockMinidumpCount < 5 && (await h.ZP.submitLiveCrashReport({
+      message: "Desktop Memory Thread State",
+      extra: {
+        renderer_memory_kb: e,
+        gpu_brand: c.Z.getGpuBrand()
+      }
+    }), this._pushedNativeDeadlockMinidumpCount += 1)
+  }
+  doRestartIfNeeded(e) {
+    if (e < L) return;
+    let t = performance.now() - this._startupTime;
+    if (t < k) return;
+    let n = i.K.get(U);
+    if (null != n && n.timestamp >= Date.now() - G) return;
+    let {
+      enable: a,
+      enableForce: o
+    } = g.Z.getConfig({
+      location: "DesktopPerfAnalyticsManager"
+    });
+    a && setTimeout(() => {
+      let n = true;
+      if (e < M || !o) {
+        let e = l.Z.getIdleSince();
+        if (null == e || e > Date.now() - j || null != u.Z.getRTCConnection()) return
       } else n = false;
-      Chunk703558.Z.persist(), Chunk433517.K.set(U, {
-        timeSinceStartup: module,
+      s.Z.persist(), i.K.set(U, {
+        timeSinceStartup: t,
         timestamp: Date.now()
-      }), Chunk998502.ZP.setCrashInformation(Chunk268146.X4.IntentionalCrashReason, "excessive-memory-usage".concat(require ? "-forced" : "")), Chunk960048.Z.addBreadcrumb({
+      }), h.ZP.setCrashInformation(r.X4.IntentionalCrashReason, "excessive-memory-usage".concat(n ? "-forced" : "")), m.Z.addBreadcrumb({
         category: "excessive-memory-usage-restart",
-        message: "Restarting due to excessive renderer memory usage: ".concat(Chunk358085, "kB")
-      }), Chunk998502.ZP.crash(3)
-    }
+        message: "Restarting due to excessive renderer memory usage: ".concat(e, "kB")
+      }), h.ZP.crash(3)
+    }, Z)
   }
   trackPartitionAllocPerformanceStats() {
     var e, t, n;
@@ -217,9 +224,9 @@ class B extends Chunk147913.Z {
     }
   }
   constructor(...e) {
-    super(...e), b(this, "_checkIntervalNativeHeap", null), b(this, "_checkIntervalPA", null), b(this, "_nativeHeapHooksInstalled", false), b(this, "_paHeapHooksInstalled", false), b(this, "_pushedNativeDeadlockMinidumpCount", 0), b(this, "_startupTime", performance.now()), b(this, "actions", {
+    super(...e), b(this, "_checkIntervalNativeHeap", null), b(this, "_checkIntervalPA", null), b(this, "_nativeHeapHooksInstalled", false), b(this, "_paHeapHooksInstalled", false), b(this, "_pushedNativeDeadlockMinidumpCount", 0), b(this, "_startupTime", performance.now()), b(this, "_supportedNativeChannel", true), b(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
     })
   }
 }
-let F = new B
+let V = new F

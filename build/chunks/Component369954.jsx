@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk631885 = require("./631885.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk225753 = require("./225753.js"),
+  Chunk435757 = require("./435757.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271650 = require("./271650.js");
 let v = e => {
@@ -69,11 +69,11 @@ let v = e => {
         gap: 4,
         children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk225753.default.ahKIJO)
+          children: Chunk388032.intl.string(Chunk435757.default.ahKIJO)
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-muted",
-          children: Chunk388032.intl.format(Chunk225753.default.X9rW0j, {
+          children: Chunk388032.intl.format(Chunk435757.default.X9rW0j, {
             openSettingsHook: (e, t) => (0, r.jsx)(o.Anchor, {
               onClick: n,
               children: e
@@ -81,7 +81,7 @@ let v = e => {
           })
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        text: Chunk388032.intl.formatToPlainString(Chunk225753.default.ggcjPR, {
+        text: Chunk388032.intl.formatToPlainString(Chunk435757.default.ggcjPR, {
           count: module.length
         }),
         onClick: exports,
@@ -108,11 +108,11 @@ let v = e => {
         gap: 4,
         children: [(0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk225753.default.ahKIJO)
+          children: Chunk388032.intl.string(Chunk435757.default.ahKIJO)
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk225753.default.Sv236e)
+          children: Chunk388032.intl.string(Chunk435757.default.Sv236e)
         })]
       }), (0, Chunk54381.jsx)(v, {
         title: Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),

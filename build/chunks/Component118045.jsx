@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk391876 = require("./391876.jsx"),
   Chunk883166 = require("./883166.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk860076 = require("./860076.js"),
+  Chunk862474 = require("./862474.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk417788 = require("./417788.js"),
   Chunk612782 = require("./612782.js");
@@ -151,7 +151,7 @@ function P() {
       }), (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "eyebrow",
         className: Chunk417788.eyebrow,
-        children: Chunk388032.intl.string(Chunk860076.default.dW6EBf)
+        children: Chunk388032.intl.string(Chunk862474.default.dW6EBf)
       })]
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk612782.header,
@@ -163,7 +163,7 @@ function P() {
         children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "heading-xxl/medium",
           className: Chunk612782.subtitle,
-          children: Chunk388032.intl.format(Chunk860076.default.gzlOml, {
+          children: Chunk388032.intl.format(Chunk862474.default.gzlOml, {
             numGames: require,
             gamesHook: (e, t) => (0, r.jsx)(g.Z, {
               variant: "heading-xxl/medium",

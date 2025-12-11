@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk757266 = require("./757266.js"),
   Chunk695103 = require("./695103.js"),
   Chunk524995 = require("./524995.js"),
-  Chunk652271 = require("./652271.js"),
+  Chunk202392 = require("./202392.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk428498 = require("./428498.js");
 
@@ -92,7 +92,7 @@ function R() {
     L = "authorization_debug",
     j = [{
       id: "authorization_debug",
-      name: Chunk388032.intl.string(Chunk652271.default.vR0zs6)
+      name: Chunk388032.intl.string(Chunk202392.default.vR0zs6)
     }],
     M = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)("div", {
@@ -101,7 +101,7 @@ function R() {
           className: Chunk428498.headerTextContainer,
           children: (0, Chunk54381.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/extrabold",
-            children: Chunk388032.intl.format(Chunk652271.default.KoK4J9, {
+            children: Chunk388032.intl.format(Chunk202392.default.KoK4J9, {
               appName: ""
             })
           })
@@ -120,7 +120,7 @@ function R() {
           className: Chunk428498.headerTextContainer,
           children: (0, Chunk54381.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/extrabold",
-            children: Chunk388032.intl.format(Chunk652271.default.KoK4J9, {
+            children: Chunk388032.intl.format(Chunk202392.default.KoK4J9, {
               appName: module.name
             })
           })
@@ -150,29 +150,29 @@ function R() {
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-subtle",
-          children: Chunk388032.intl.string(Chunk652271.default["no+FQS"])
+          children: Chunk388032.intl.string(Chunk202392.default["no+FQS"])
         }), (0, Chunk54381.jsx)(w, {
           overallStatus: C ? 0 : R ? 3 : 1,
-          name: Chunk388032.intl.string(Chunk652271.default.AGLx00),
+          name: Chunk388032.intl.string(Chunk202392.default.AGLx00),
           steps: [{
             status: R ? 2 : 4,
-            text: Chunk388032.intl.string(Chunk652271.default.kxF9br),
-            description: R ? null : Chunk388032.intl.string(Chunk652271.default.PFxxJa),
+            text: Chunk388032.intl.string(Chunk202392.default.kxF9br),
+            description: R ? null : Chunk388032.intl.string(Chunk202392.default.PFxxJa),
             learnMoreLink: R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }, {
             status: C ? 2 : R ? 3 : 4,
-            text: Chunk388032.intl.string(Chunk652271.default.S94dzs),
-            description: C || !R ? null : Chunk388032.intl.string(Chunk652271.default.aTULMB),
+            text: Chunk388032.intl.string(Chunk202392.default.S94dzs),
+            description: C || !R ? null : Chunk388032.intl.string(Chunk202392.default.aTULMB),
             learnMoreLink: C || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
           isChosen: Chunk692547 === Chunk524995.r.RPC
         }), (0, Chunk54381.jsx)(w, {
           overallStatus: +!N,
-          name: Chunk388032.intl.string(Chunk652271.default.K3ObrU),
+          name: Chunk388032.intl.string(Chunk202392.default.K3ObrU),
           steps: [{
             status: N ? 2 : 4,
-            text: Chunk388032.intl.string(Chunk652271.default["8a7IrV"]),
-            description: N ? Chunk388032.intl.formatToPlainString(Chunk652271.default["9iLeL2"], {
+            text: Chunk388032.intl.string(Chunk202392.default["8a7IrV"]),
+            description: N ? Chunk388032.intl.formatToPlainString(Chunk202392.default["9iLeL2"], {
               url: null == Chunk782568 ? true : Chunk782568.connectionEntrypointUrl
             }) : null
           }],
@@ -189,14 +189,14 @@ function R() {
             overflow: "hidden"
           },
           variant: "text-md/medium",
-          children: Chunk388032.intl.string(Chunk652271.default.eg0mNa)
+          children: Chunk388032.intl.string(Chunk202392.default.eg0mNa)
         }), (0, Chunk54381.jsx)(Chunk793030.zxk, {
           variant: "secondary",
           disabled: !require || Chunk120356,
           onClick: () => Chunk512722({
             analyticsLocations: exports
           }),
-          text: Chunk388032.intl.string(Chunk652271.default.w0pN4R),
+          text: Chunk388032.intl.string(Chunk202392.default.w0pN4R),
           fullWidth: true
         }), null != A && (0, Chunk54381.jsx)(Chunk793030.zxk, {
           variant: "secondary",
@@ -209,7 +209,7 @@ function R() {
               showFeedback: false
             })
           },
-          text: Chunk388032.intl.string(Chunk652271.default.tkIymA),
+          text: Chunk388032.intl.string(Chunk202392.default.tkIymA),
           fullWidth: true
         })]
       })]

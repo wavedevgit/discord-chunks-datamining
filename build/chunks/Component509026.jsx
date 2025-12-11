@@ -64,7 +64,7 @@ function f(e) {
         null != e && null != i && (0, l.ZDy)(async () => {
           let {
             CreateEmojiWithRolesModal: l
-          } = await n.e("38602").then(n.bind(n, 604623));
+          } = await n.e("9007").then(n.bind(n, 604623));
           return n => (0, r.jsx)(l, p(m({}, n), {
             data: e,
             file: i,
@@ -90,7 +90,7 @@ function f(e) {
           (0, l.ZDy)(async () => {
             let {
               UpdateEmojiRolesModal: i
-            } = await n.e("38602").then(n.bind(n, 604623));
+            } = await n.e("9007").then(n.bind(n, 604623));
             return n => (0, r.jsx)(i, p(m({}, n), {
               emoji: e,
               guildId: t

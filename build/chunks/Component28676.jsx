@@ -11,7 +11,7 @@ var Chunk838436 = require("./838436.jsx"),
   Chunk63063 = require("./63063.js"),
   Chunk915009 = require("./915009.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk225753 = require("./225753.js"),
+  Chunk435757 = require("./435757.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d() {
@@ -21,8 +21,8 @@ function d() {
   } = (0, Chunk915009.aR)(Chunk981631.pjP.PERSONALIZATION);
   return (0, Chunk54381.jsx)(Chunk838436.U, {
     children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk225753.default.XMPqUx),
-      note: Chunk388032.intl.format(Chunk225753.default.Imp6Ns, {
+      title: Chunk388032.intl.string(Chunk435757.default.XMPqUx),
+      note: Chunk388032.intl.format(Chunk435757.default.Imp6Ns, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_USED_FOR_RECOMMENDED)
       }),
       value: module,

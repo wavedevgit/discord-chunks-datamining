@@ -81,7 +81,7 @@ class c extends Chunk47770.Z {
     r && this.prepareSecureFramesRatchets(e, this.mlsSession.GetProtocolVersion()), n(i, this.mlsSession.GetProtocolVersion(), r)
   }
   setupEncryptionWorker() {
-    let e = new Worker(new URL("/assets/" + require.u("55188"), require.b), Object.assign({}, {
+    let e = new Worker(new URL("/assets/" + require.u("53061"), require.b), Object.assign({}, {
       name: "encryption-worker"
     }, {
       type: true

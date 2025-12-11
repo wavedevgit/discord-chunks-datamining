@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk947189 = require("./947189.jsx"),
   Chunk612776 = require("./612776.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk860076 = require("./860076.js"),
+  Chunk862474 = require("./862474.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk417788 = require("./417788.js"),
   Chunk763645 = require("./763645.js"),
@@ -67,14 +67,14 @@ function N() {
         }), (0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "eyebrow",
           className: Chunk417788.eyebrow,
-          children: N ? Chunk388032.intl.string(Chunk860076.default.QkdNzt) : Chunk388032.intl.string(Chunk860076.default.qsFkSO)
+          children: N ? Chunk388032.intl.string(Chunk862474.default.QkdNzt) : Chunk388032.intl.string(Chunk862474.default.qsFkSO)
         })]
       }), !N && (0, Chunk54381.jsx)(Chunk947189.Z, {
         end: Chunk120356
       }), P && (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "heading-xxl/medium",
         className: Chunk763645.subtitle,
-        children: 0 === Chunk120356 ? Chunk388032.intl.format(Chunk860076.default.UYTBoT, {
+        children: 0 === Chunk120356 ? Chunk388032.intl.format(Chunk862474.default.UYTBoT, {
           learnMoreHook: (e, t) => (0, r.jsx)(s.P3F, {
             onClick: R,
             className: T.learnMore,
@@ -84,7 +84,7 @@ function N() {
               children: e
             })
           }, t)
-        }) : Chunk388032.intl.format(Chunk860076.default["gd+Olh"], {
+        }) : Chunk388032.intl.format(Chunk862474.default["gd+Olh"], {
           numOrbs: require,
           orbsHook: (e, t) => (0, r.jsxs)(m.Z, {
             children: [(0, r.jsx)(s.aQr, {

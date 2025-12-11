@@ -28,12 +28,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk131085 = require("./131085.js"),
-  Chunk713328 = require("./713328.js"),
+  Chunk921072 = require("./921072.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764009 = require("./764009.js");
 let P = function() {
   var e, t, n, P;
-  (0, Chunk388032.useSyncMessages)(Chunk713328.messagesLoader);
+  (0, Chunk388032.useSyncMessages)(Chunk921072.messagesLoader);
   let w = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
     Z = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
     {
@@ -82,7 +82,7 @@ let P = function() {
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       className: Chunk764009.title,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk713328.default.mf2OwH)
+      children: Chunk388032.intl.string(Chunk921072.default.mf2OwH)
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk764009.container,
       children: [(0, Chunk54381.jsxs)("div", {
@@ -92,7 +92,7 @@ let P = function() {
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: Chunk388032.intl.format(Chunk713328.default["655Uny"], {
+            children: Chunk388032.intl.format(Chunk921072.default["655Uny"], {
               onClickServerProfile: () => {
                 Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE)
               },
@@ -104,7 +104,7 @@ let P = function() {
             className: Chunk764009.privateProfileWarning,
             children: (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
-              children: Chunk388032.intl.format(Chunk713328.default.CRbkIz, {
+              children: Chunk388032.intl.format(Chunk921072.default.CRbkIz, {
                 onClickEditSetting: () => Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE, Chunk981631.KsC.PROFILE_VISIBILITY)
               })
             })
@@ -116,7 +116,7 @@ let P = function() {
             children: (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
-              children: Chunk388032.intl.string(Chunk713328.default["1zams8"])
+              children: Chunk388032.intl.string(Chunk921072.default["1zams8"])
             })
           }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
             id: "enable-server-tag",
