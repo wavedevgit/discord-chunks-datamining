@@ -19,7 +19,7 @@ let p = e => {
     markAsDismissed: n
   } = e, p = (0, r.useCallback)(() => {
     (0, s.openUserSettings)(l.n.PRIVATE_BROWSING_PANEL, {
-      section: o.oAB.CF_WARP
+      section: o.oAB.PRIVATE_BROWSING
     })
   }, []);
   return (0, a.jsx)(i.J2, {

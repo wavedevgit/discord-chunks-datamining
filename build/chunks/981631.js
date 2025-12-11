@@ -1768,7 +1768,7 @@ let tU = {
     QUEST_PREVIEW_TOOL_2: "Quest Preview Tool 2",
     SECURE_FRAMES: "Secure Frames",
     SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
-    CF_WARP: "WARP+"
+    PRIVATE_BROWSING: "WARP+"
   });
 var tZ = function(e) {
     return e.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker", e.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode", e.NOTICE_BAR = "Notice - Lurker Mode", e.MOBILE_GUILD_DISCOVERY = "iOS Guild Discovery - Lurker", e.DIRECTORY_ENTRY = "Directory Channel Entry", e.DIRECTORY_EVENTS = "Directory Channel Events", e.POLL_ALERT = "Poll Alert", e.ICYMI = "ICYMI", e.GUILD_EVENT_EMBED = "Guild Event Embed", e.GAME_COMMUNITY_UPSELL = "Game Community Upsell", e

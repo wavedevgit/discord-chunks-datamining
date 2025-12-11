@@ -37,6 +37,7 @@ function l(e, t, n, r) {
     p = "useSearchTerms" in e ? null == (c = e.useSearchTerms) ? true : c.call(e) : true;
   if (n || null == f && null == p) returnfalse;
   if ("" === t) returntrue;
+  if (e.type === o.Jq.STATIC) returnfalse;
   let _ = t.toLowerCase();
   for (let e of null != p ? p : [])
     if (i()(_, e.toLowerCase())) returntrue;

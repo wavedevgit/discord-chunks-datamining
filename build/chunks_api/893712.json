@@ -1,1 +1,0 @@
-{"id":"893712","type":"experiment","data":{"id":"2025-08_custom_themes_nitro_home_tile","kind":"user","label":"Custom Themes Nitro Home Tile","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Show Custom Themes tile on Nitro Home","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

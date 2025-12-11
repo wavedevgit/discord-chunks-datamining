@@ -89,7 +89,7 @@ let E = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
         layout: "vertical",
         children: e => t ? (0, i.jsx)(d.NP, {
           isSpeaking: c,
-          className: S.autoThresholdSlider,
+          className: g.autoThresholdSlider,
           id: e.controlId,
           ariaDescribedBy: e.describedById,
           ariaLabelledBy: e.labelId

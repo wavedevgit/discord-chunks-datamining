@@ -2,7 +2,7 @@
 /** chunk id: 407458, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   WY: () => T,
-  j$: () => g
+  j$: () => S
 }), require("./539854.js");
 var Chunk442837 = require("./442837.js"),
   Chunk292556 = require("./292556.js"),
@@ -23,7 +23,7 @@ function T() {
   })
 }
 
-function g(t) {
+function S(t) {
   return (0, r.qs)("".concat(o.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
     useTitle: t.useTitle,
     useSubtitle: () => c.intl.format(c.t.OOiGCM, {

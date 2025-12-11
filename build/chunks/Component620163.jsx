@@ -1555,7 +1555,8 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         parent: eN.s6.SETTINGS_ADVANCED
       },
       [eN.s6.PRIVATE_BROWSING_PERK]: {
-        section: eR.oAB.CF_WARP,
+        section: eR.oAB.PRIVATE_BROWSING,
+        label: eD.intl.string(eM.default.bU5ANm),
         searchableTitles: [eD.intl.string(eM.default.SsTtq3)],
         predicate: () => x.H.getConfig({
           location: "SettingsRendererConfig"

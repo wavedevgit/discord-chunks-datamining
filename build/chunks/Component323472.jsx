@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 323472, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => S
+  u: () => g
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -46,11 +46,11 @@ function T(t) {
   }, e.key)
 }
 
-function g(t) {
+function S(t) {
   return t.type === a.Jq.LIST
 }
 
-function S(t, e) {
+function g(t, e) {
   var n, i;
   let {
     limit: s = 2,
@@ -58,11 +58,11 @@ function S(t, e) {
   } = null != e ? e : {};
   r()(s > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
   let {
-    visibleDirectory: S,
+    visibleDirectory: g,
     accessibleDirectory: E
-  } = (0, u.t)(), I = null != (n = S.get(t)) ? n : E.get(t);
-  r()(null != I && (I.type === a.Jq.ACCORDION || g(I)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-  let _ = g(I) && null != (i = I.collapseAfter) ? i : 0,
+  } = (0, u.t)(), I = null != (n = g.get(t)) ? n : E.get(t);
+  r()(null != I && (I.type === a.Jq.ACCORDION || S(I)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+  let _ = S(I) && null != (i = I.collapseAfter) ? i : 0,
     O = I.layout;
   return l.useMemo(() => {
     let t = _,

@@ -36,7 +36,7 @@ let A = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
   },
   Component: function() {
     let t = Chunk473749.useCallback(t => {
-        a.Z.setNoiseCancellation(t === S.Q4.KRISP, S.MP), a.Z.setNoiseSuppression(t === S.Q4.STANDARD, S.MP)
+        a.Z.setNoiseCancellation(t === g.Q4.KRISP, g.MP), a.Z.setNoiseSuppression(t === g.Q4.STANDARD, g.MP)
       }, []),
       {
         noiseCancellation: e,
@@ -49,7 +49,7 @@ let A = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
         isNoiseSuppressionSupported: Chunk131951.Z.isNoiseSuppressionSupported(),
         isNoiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
       })),
-      g = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
+      S = require ? Chunk803567.Q4.STANDARD : Chunk803567.Q4.NONE,
       _ = exports ? Chunk803567.Q4.KRISP : Chunk313789,
       O = Chunk473749.useMemo(() => {
         let t = [];

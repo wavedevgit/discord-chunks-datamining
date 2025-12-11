@@ -43,9 +43,9 @@ let v = t => {
     (0, o.Z)(g.Z5c.NITRO_HOME), e()
   }, [e]), D = (0, r.useCallback)(() => {
     (0, m.openUserSettings)(_.n.PRIVATE_BROWSING_PANEL, {
-      section: g.oAB.CF_WARP
+      section: g.oAB.PRIVATE_BROWSING
     })
-  }, []), K = [f.Ij.CONNECTED].includes(S), O = A && M && ![f._n.ZERO_TRUST, f._n.ERROR].includes(v) && !j && (!a || k), P = (0, r.useMemo)(() => {
+  }, []), O = [f.Ij.CONNECTED].includes(S), K = A && M && ![f._n.ZERO_TRUST, f._n.ERROR].includes(v) && !j && (!a || k), P = (0, r.useMemo)(() => {
     switch (S) {
       case f.Ij.CONNECTED:
         return T.intl.string(N.default.FBu3XJ);
@@ -77,7 +77,7 @@ let v = t => {
         return (0, n.jsx)(i.xvT, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: K ? T.intl.format(N.default.zwW10o, {
+          children: O ? T.intl.format(N.default.zwW10o, {
             onClick: () => {
               (0, l.j)(g.rMx.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), R()
             }
@@ -98,15 +98,15 @@ let v = t => {
           })
         })
     }
-  }, [v, k, K, D, R]), {
+  }, [v, k, O, D, R]), {
     analyticsLocations: w
   } = (0, c.ZP)(s.Z.MASKED_LINK);
   return ((0, r.useEffect)(() => {
-    O && x.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
+    K && x.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
       type: E.cd.PRIVACY_PERK_EXIT_MODAL,
       location_stack: w
     })
-  }, [w, O]), O) ? (0, n.jsxs)("div", {
+  }, [w, K]), K) ? (0, n.jsxs)("div", {
     className: b.container,
     children: [(0, n.jsx)(p.v, {
       className: b.betaBadge

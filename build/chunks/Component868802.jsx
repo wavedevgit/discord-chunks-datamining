@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 868802, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  M: () => U
+  M: () => G
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk93109 = require("./93109.js"),
   Chunk446818 = require("./446818.js"),
   Chunk932889 = require("./932889.js");
-let U = () => {
+let G = () => {
     let t = (0, Chunk511857.a)((0, Chunk410030.ZP)()),
       {
         analyticsLocations: e
@@ -81,13 +81,13 @@ let U = () => {
             className: Chunk74186.contentSpacer
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk74186.ctaContainer,
-            children: (0, Chunk54381.jsx)(G, {})
+            children: (0, Chunk54381.jsx)(U, {})
           })]
         })]
       }), (0, Chunk54381.jsx)(Chunk868087.p, {})]
     })
   },
-  G = () => {
+  U = () => {
     let {
       installationStatus: t,
       isWeb: e,

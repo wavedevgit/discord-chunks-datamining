@@ -14,7 +14,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk105429 = require("./105429.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
+let g = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
     buildLayout: () => [Chunk984975.u]
   }),
   E = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
@@ -29,7 +29,7 @@ let S = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, 
   _ = (0, Chunk509613.wf)(Chunk313789.n.CONNECTIONS_PANEL, {
     usePredicate: () => (0, Chunk526665.gN)("ConnectionsPanel"),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
-    buildLayout: () => [S, E]
+    buildLayout: () => [g, E]
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
