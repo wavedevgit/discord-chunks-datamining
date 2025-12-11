@@ -90,6 +90,11 @@ function v(e) {
       label: (0, r.jsx)(u.Q0, {
         label: i
       }),
+      sublabel: t ? (0, r.jsx)(a.Text, {
+        variant: "text-sm/medium",
+        color: "text-muted",
+        children: y.intl.string(y.t["1axf1T"])
+      }) : true,
       onSelect: () => p.Z.openSearchFiltersModal(n)
     })
   }, [n]), {
@@ -323,16 +328,21 @@ function v(e) {
             title: r
           })
         }
-      }), s = R({
-        hasOtherSearchFiltersVisible: 0 !== i
       });
       if (0 === i) {
-        let t = [...A, s];
+        let t = [...A, R({
+          hasOtherSearchFiltersVisible: true
+        })];
         e.push((0, f.fC)(d.i.GROUP, {
           rows: t,
           title: y.intl.string(y.t.UdhTtk)
         }))
-      } else e.push(s);
+      } else {
+        let t = R({
+          hasOtherSearchFiltersVisible: false
+        });
+        e.push(t)
+      }
       return i > 0 && e.push(...o), {
         items: e
       }
