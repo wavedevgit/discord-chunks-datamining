@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk518950 = require("./518950.js"),
@@ -19,11 +19,11 @@ let b = e => {
   let {
     recipient: t,
     isSuccess: r,
-    onClose: i
+    onClose: s
   } = e, {
     avatarSrc: b,
     eventHandlers: m
-  } = (0, l.Z)({
+  } = (0, o.Z)({
     userId: null == t ? true : t.id,
     size: a.EFr.SIZE_56
   }), g = u.ZP.getName(t), y = !r;
@@ -47,7 +47,7 @@ let b = e => {
       }
       return e
     }({
-      imageClassName: s()({
+      imageClassName: i()({
         [p.erroredAvatar]: y
       }),
       src: b,
@@ -63,7 +63,7 @@ let b = e => {
         variant: "text-md/medium",
         className: p.error,
         color: "text-strong",
-        children: d.intl.format(f.default["Y/oMwY"], {
+        children: f.intl.format(d.default["Y/oMwY"], {
           userName: g
         })
       })]
@@ -75,13 +75,13 @@ let b = e => {
     }), (0, n.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
-      text: d.intl.string(d.t["g33r/P"]),
+      text: f.intl.string(f.t["g33r/P"]),
       icon: a.kBi,
       onClick: () => {
         var e;
-        return e = t.id, void((0, c.default)(), o.Z.openPrivateChannel({
+        return e = t.id, void((0, c.default)(), l.Z.openPrivateChannel({
           recipientIds: e
-        }), i())
+        }), s())
       }
     })]
   })

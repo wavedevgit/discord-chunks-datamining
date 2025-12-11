@@ -13,24 +13,24 @@ let u = e => {
   let {
     showStatus: t,
     width: n,
-    opacity: r,
+    opacity: l,
     size: u = "default"
   } = e, c = "small" === u ? a.EFr.SIZE_24 : a.EFr.SIZE_32;
-  return (0, l.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: i()(o.nameplatePlaceholderUserRow, {
       [o.smallRow]: "small" === u
     }),
     style: {
-      opacity: r
+      opacity: l
     },
-    children: [(0, l.jsx)(a.qEK, {
+    children: [(0, r.jsx)(a.qEK, {
       src: null,
       size: c,
       status: t ? s.Skl.ONLINE : true,
       statusColor: "var(--border-subtle)",
       "aria-hidden": true,
       imageClassName: o.nameplatePlaceholderAvatar
-    }), (0, l.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: i()(o.nameplatePlaceholderBar, {
         [o.smallBar]: "small" === u
       }),

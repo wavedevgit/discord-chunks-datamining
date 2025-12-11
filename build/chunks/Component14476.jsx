@@ -1,7 +1,7 @@
 /** Chunk was on 23242 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => v
+  c: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,39 +17,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk396728 = require("./396728.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk252728 = require("./252728.js");
-let v = e => {
+let j = e => {
   let t, n, {
       skuId: i,
-      assetId: v,
-      user: j,
-      claimed: y,
+      assetId: j,
+      user: y,
+      claimed: v,
       onSelect: b,
-      productName: S,
-      a11yLabel: x,
-      selectedSkuId: P,
-      category: O,
+      productName: O,
+      a11yLabel: P,
+      selectedSkuId: S,
+      category: x,
       type: E,
-      palette: I
+      palette: w
     } = e,
-    w = r.useRef(null),
+    I = l.useRef(null),
     {
       isHoveringOrFocusing: T
-    } = (0, d.Z)(w),
-    k = !y && T,
+    } = (0, d.Z)(I),
+    k = !v && T,
     C = (0, c.ZP)(),
     N = (0, o.wj)(C);
   return E === s.Z.AVATAR_DECORATION ? (t = {
     type: s.Z.AVATAR_DECORATION,
-    label: x,
-    asset: v
-  }, n = (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(p.R, {
+    label: P,
+    asset: j
+  }, n = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(m.R, {
       item: t,
-      user: j,
+      user: y,
       isHighlighted: k,
       avatarSize: u.EFr.SIZE_96,
-      isPurchased: y
-    }), y && (0, l.jsx)(u.sV5, {
+      isPurchased: v
+    }), v && (0, r.jsx)(u.sV5, {
       size: "custom",
       width: 48,
       height: 48,
@@ -58,52 +58,52 @@ let v = e => {
     })]
   })) : E === s.Z.NAMEPLATE && (t = {
     type: s.Z.NAMEPLATE,
-    label: x,
-    asset: v,
-    palette: null != I ? I : "none"
-  }, n = (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(h.Z, {
+    label: P,
+    asset: j,
+    palette: null != w ? w : "none"
+  }, n = (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(h.Z, {
       nameplate: t,
-      user: j,
+      user: y,
       isHighlighted: k,
-      isPurchased: y,
+      isPurchased: v,
       size: "small"
-    }), y && (0, l.jsx)(u.sV5, {
+    }), v && (0, r.jsx)(u.sV5, {
       size: "custom",
       width: 48,
       height: 48,
       color: N ? u.TVs.colors.WHITE : u.TVs.colors.BLACK,
       className: g.claimedIcon
     })]
-  })), (0, l.jsx)(u.tEY, {
-    children: (0, l.jsxs)(u.kL8, {
-      ref: w,
-      "aria-label": null != S ? S : "",
+  })), (0, r.jsx)(u.tEY, {
+    children: (0, r.jsxs)(u.kL8, {
+      ref: I,
+      "aria-label": null != O ? O : "",
       onClick: () => {
-        null == i || null == b || y || b(i)
+        null == i || null == b || v || b(i)
       },
       className: a()(N ? g.shopCardDark : g.shopCard, {
-        [g.shopCardAnimation]: !y,
+        [g.shopCardAnimation]: !v,
         [N ? g.shopCardDarkHighlighted : g.shopCardHighlighted]: k,
-        [g.shopCardSelected]: P === i
+        [g.shopCardSelected]: S === i
       }),
-      children: [(0, l.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: a()(g.preview, {
           [g.avatarPreview]: E === s.Z.AVATAR_DECORATION,
           [g.nameplatePreview]: E === s.Z.NAMEPLATE,
-          [g.previewTrick]: O === m.KN.Trick,
-          [g.previewTreat]: O === m.KN.Treat,
-          [g.shopCardClaimed]: y
+          [g.previewTrick]: x === p.KN.Trick,
+          [g.previewTreat]: x === p.KN.Treat,
+          [g.shopCardClaimed]: v
         }),
         children: null != t && n
-      }), (0, l.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: g.productName,
-        children: [(0, l.jsx)(u.Heading, {
+        children: [(0, r.jsx)(u.Heading, {
           variant: "heading-md/extrabold",
-          children: S
-        }), (0, l.jsx)(u.Text, {
+          children: O
+        }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: y ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
+          children: v ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
         })]
       })]
     })

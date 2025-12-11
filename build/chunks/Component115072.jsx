@@ -68,7 +68,7 @@ function T(e) {
         return "Linux"
     }
     return ""
-  }((0, w.getOS)())), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, ec] = r.useState(""), [eu, ed] = r.useState(""), [em, ef] = r.useState(false), [ep, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
+  }((0, w.getOS)())), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ef] = r.useState(false), [ep, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -78,8 +78,8 @@ function T(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "211c7734be3c82ec652e0ccb26809cfc1889ce50" !== e.body.hash) {
-        let e = new Date("1765478081756"),
+      if (null != e.body && "117d0466489a9a90c57db6a16fb5f65185db7a50" !== e.body.hash) {
+        let e = new Date("1765479076510"),
           t = new Date,
           n = (0, S.TD)(t, e);
         n.hours > 6 && eb(n.hours)
@@ -135,7 +135,7 @@ function T(e) {
         operatingSystemVersion: er,
         clientVersion: el,
         clientBuildNumber: es,
-        locale: eu
+        locale: ec
       } : {
         overridePlatformInformation: Q
       }, a).catch(() => eg(true));
@@ -195,7 +195,7 @@ function T(e) {
     return document.addEventListener("paste", e, true), () => {
       document.removeEventListener("paste", e, true)
     }
-  }, []), (0, i.jsx)(u.u_l, {
+  }, []), (0, i.jsx)(c.u_l, {
     size: "md",
     transitionState: N,
     "aria-label": C.intl.string(C.t.mCCdwi),
@@ -274,7 +274,7 @@ function T(e) {
           value: B,
           onChange: V,
           description: ey ? "You can add additional information/media on the ticket after submitting" : true
-        }), (0, i.jsx)(c.y6, {
+        }), (0, i.jsx)(u.y6, {
           label: C.intl.string(C.t.xMXLda),
           errorMessage: em && true === H ? C.intl.string(C.t.EkokLy) : null,
           renderOptionLabel: e => (function(e) {
@@ -344,7 +344,7 @@ function T(e) {
             placeholder: "Device",
             value: ee,
             onChange: e => et(e)
-          }), (0, i.jsx)(c.y6, {
+          }), (0, i.jsx)(u.y6, {
             label: C.intl.string(C.t.kcHxi6),
             value: en,
             options: D,
@@ -363,11 +363,11 @@ function T(e) {
             label: C.intl.string(C.t.f7kbVu),
             placeholder: "Client Build Number",
             value: es,
-            onChange: e => ec(e)
+            onChange: e => eu(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t["4Z5+zg"]),
             placeholder: "Locale",
-            value: eu,
+            value: ec,
             onChange: e => ed(e)
           })]
         }) : null, (0, i.jsx)(d.Button, {

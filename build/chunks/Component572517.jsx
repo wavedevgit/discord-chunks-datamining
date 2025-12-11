@@ -21,32 +21,32 @@ function h() {
     h = (0, Chunk410030.ZP)(),
     f = (0, Chunk780384.wj)(h),
     g = (0, Chunk347896.Z)(),
-    v = null == g ? true : g.planSelectionBanner,
+    j = null == g ? true : g.planSelectionBanner,
     {
-      claimableRewards: j
+      claimableRewards: y
     } = (0, Chunk987209.wD)();
-  if (null == v || null == j) return null;
-  let y = null == (e = v.getBackgroundImageUrl) ? true : module.call(v, f),
-    b = (0, Chunk717401.Yr)(y),
-    S = null == (t = v.gradientConfig) ? true : exports.call(v, {
+  if (null == j || null == y) return null;
+  let v = null == (e = j.getBackgroundImageUrl) ? true : module.call(j, f),
+    b = (0, Chunk717401.Yr)(v),
+    O = null == (t = j.gradientConfig) ? true : exports.call(j, {
       isDarkMode: f,
       isAndroid: false
     }),
-    x = (0, Chunk717401.Tl)(S, {
+    P = (0, Chunk717401.Tl)(O, {
       colorStops: [0, 12, 100]
     }),
-    P = (0, Chunk717401.$q)(b, x, {
+    S = (0, Chunk717401.$q)(b, P, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk325117.promotionalFooterBanner,
-    style: P,
+    style: S,
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk325117.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
-        claimableRewards: j,
-        maxRewardImageSrc: v.getImageUrl(f, require),
+        claimableRewards: y,
+        maxRewardImageSrc: j.getImageUrl(f, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 1.25
       })
@@ -54,7 +54,7 @@ function h() {
       variant: "text-md/medium",
       className: Chunk325117.bannerText,
       color: "always-white",
-      children: v.desktopBannerText(j.length)
+      children: j.desktopBannerText(y.length)
     })]
   })
 }

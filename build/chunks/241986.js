@@ -1,9 +1,9 @@
 /** Chunk was on 23242 **/
 /** chunk id: 241986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => l
 });
-let l = (0, require("./427164.js").le)({
+let r = (0, require("./427164.js").le)({
   name: "2025-12-katsudon",
   kind: "user",
   defaultConfig: {
@@ -19,12 +19,12 @@ let l = (0, require("./427164.js").le)({
   }
 });
 
-function r(e) {
+function l(e) {
   let {
     location: t
   } = e, {
     enabled: n
-  } = l.useConfig({
+  } = r.useConfig({
     location: t
   });
   return n

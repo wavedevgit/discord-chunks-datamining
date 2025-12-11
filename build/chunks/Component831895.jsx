@@ -1,7 +1,7 @@
 /** Chunk was on 23242 **/
 /** chunk id: 831895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,17 +14,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk761768 = require("./761768.js");
 
-function p(e) {
-  var t, n, i, p;
+function m(e) {
+  var t, n, i, m;
   let {
     defaultCategory: h,
     onCategoryChange: f,
     className: g
-  } = e, [v, j] = r.useState(h), [y, b] = r.useState(null), S = (0, o.Z)(), x = r.useMemo(() => [{
+  } = e, [j, y] = l.useState(h), [v, b] = l.useState(null), O = (0, o.Z)(), P = l.useMemo(() => [{
     name: d.intl.string(d.t["6Zuivx"]),
     value: u.KN.Trick,
     key: "Trick",
-    icon: (0, l.jsx)(s.yDF, {
+    icon: (0, r.jsx)(s.yDF, {
       size: "sm",
       color: "currentColor"
     }),
@@ -34,42 +34,42 @@ function p(e) {
     name: d.intl.string(d.t["2UeOlY"]),
     value: u.KN.Treat,
     key: "Treat",
-    icon: (0, l.jsx)(s.sq, {
+    icon: (0, r.jsx)(s.sq, {
       size: "sm",
       color: "currentColor"
     }),
     onMouseEnter: () => b(u.KN.Treat),
     onMouseLeave: () => b(null)
-  }], []), P = r.useCallback(e => {
-    j(e.value), f(e.value)
-  }, [f]), O = null == S || null == (n = S.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, E = null == S || null == (p = S.segmentedControlAnimations) || null == (i = p.treat) ? true : i.getAnimationData;
-  return (0, l.jsxs)("div", {
-    className: a()(m.container, g),
-    children: [(0, l.jsx)(c.w, {
-      options: x,
-      value: v,
-      onChange: P
-    }), y === u.KN.Trick && null != O && (0, l.jsx)("div", {
-      className: a()(m.animationOverlay, m.trickAnimation),
-      children: (0, l.jsx)(s.Fmz, {
+  }], []), S = l.useCallback(e => {
+    y(e.value), f(e.value)
+  }, [f]), x = null == O || null == (n = O.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, E = null == O || null == (m = O.segmentedControlAnimations) || null == (i = m.treat) ? true : i.getAnimationData;
+  return (0, r.jsxs)("div", {
+    className: a()(p.container, g),
+    children: [(0, r.jsx)(c.w, {
+      options: P,
+      value: j,
+      onChange: S
+    }), v === u.KN.Trick && null != x && (0, r.jsx)("div", {
+      className: a()(p.animationOverlay, p.trickAnimation),
+      children: (0, r.jsx)(s.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
-        className: m.lottieAnimation,
-        importData: O,
+        className: p.lottieAnimation,
+        importData: x,
         renderer: s.Fmz.Renderers.SVG,
-        versionKey: +(y === u.KN.Trick)
+        versionKey: +(v === u.KN.Trick)
       })
-    }), y === u.KN.Treat && null != E && (0, l.jsx)("div", {
-      className: a()(m.animationOverlay, m.treatAnimation),
-      children: (0, l.jsx)(s.Fmz, {
+    }), v === u.KN.Treat && null != E && (0, r.jsx)("div", {
+      className: a()(p.animationOverlay, p.treatAnimation),
+      children: (0, r.jsx)(s.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
-        className: m.lottieAnimation,
+        className: p.lottieAnimation,
         importData: E,
         renderer: s.Fmz.Renderers.SVG,
-        versionKey: +(y === u.KN.Treat)
+        versionKey: +(v === u.KN.Treat)
       })
     })]
   })

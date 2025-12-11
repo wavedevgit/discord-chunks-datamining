@@ -2,12 +2,14 @@
 /** chunk id: 80721, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Jn: () => _,
   MT: () => f,
   WH: () => d,
   cD: () => p,
-  hH: () => h,
-  i1: () => _,
-  r7: () => m
+  hH: () => E,
+  i1: () => m,
+  if: () => g,
+  r7: () => h
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -60,6 +62,9 @@ async function f(e, t, n, r) {
   }
 }
 async function p(e, t) {
+  o.Z.dispatch({
+    type: "PREMIUM_GROUP_INVITE_USERS_START"
+  });
   try {
     let n = await a.tn.post({
       url: c.ANM.BILLING_SUBSCRIPTION_INVITES(e),
@@ -68,15 +73,39 @@ async function p(e, t) {
       },
       rejectWithError: true
     });
-    return {
+    return o.Z.dispatch({
+      type: "PREMIUM_GROUP_INVITE_USERS_SUCCESS",
+      subscriptionId: e
+    }), {
       invitedUsers: n.body.invited_users,
       ineligibleUsers: n.body.ineligible_users
     }
   } catch (e) {
-    return null
+    return o.Z.dispatch({
+      type: "PREMIUM_GROUP_INVITE_USERS_FAILURE"
+    }), null
   }
 }
-async function _(e) {
+async function _(e, t) {
+  o.Z.dispatch({
+    type: "PREMIUM_GROUP_REMOVE_MEMBER_START"
+  });
+  try {
+    let n = await a.tn.del({
+      url: c.ANM.BILLING_SUBSCRIPTION_REMOVE_USER(e, t),
+      rejectWithError: true
+    });
+    return o.Z.dispatch({
+      type: "PREMIUM_GROUP_REMOVE_MEMBER_SUCCESS",
+      subscriptionId: e
+    }), n
+  } catch (e) {
+    return o.Z.dispatch({
+      type: "PREMIUM_GROUP_REMOVE_MEMBER_FAILURE"
+    }), null
+  }
+}
+async function m(e) {
   o.Z.dispatch({
     type: "PREMIUM_GROUP_MEMBERS_FETCH_START"
   });
@@ -100,13 +129,32 @@ async function _(e) {
     }), []
   }
 }
-async function m(e, t) {
+async function h(e, t) {
   await a.tn.patch({
     url: c.ANM.BILLING_SUBSCRIPTION_INVITE(e, t),
     rejectWithError: true
   })
 }
-async function h(e) {
+async function g(e, t) {
+  o.Z.dispatch({
+    type: "PREMIUM_GROUP_REMOVE_INVITE_START"
+  });
+  try {
+    let n = await a.tn.del({
+      url: c.ANM.BILLING_SUBSCRIPTION_INVITE(e, t),
+      rejectWithError: true
+    });
+    return o.Z.dispatch({
+      type: "PREMIUM_GROUP_REMOVE_INVITE_SUCCESS",
+      subscriptionId: e
+    }), n
+  } catch (e) {
+    return o.Z.dispatch({
+      type: "PREMIUM_GROUP_REMOVE_INVITE_FAILURE"
+    }), null
+  }
+}
+async function E(e) {
   o.Z.dispatch({
     type: "PREMIUM_GROUP_INVITE_FETCH_START",
     inviteId: e

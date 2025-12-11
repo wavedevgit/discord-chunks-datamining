@@ -11,10 +11,21 @@ var Chunk473749 = require("./473749.js"),
 
 function s() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
-    t = (0, Chunk442837.e7)([Chunk643281.Z], () => Chunk643281.Z.getMembers()),
-    n = (0, Chunk442837.e7)([Chunk643281.Z], () => Chunk643281.Z.getPremiumGroupSubscriptionId()),
-    s = (0, Chunk442837.e7)([Chunk643281.Z], () => Chunk643281.Z.hasFetchedMembers()),
-    l = !s;
+    {
+      premiumGroupMembers: t,
+      premiumGroupSubscriptionId: n,
+      hasFetchedMembers: s,
+      isFetchingMembers: l,
+      isFetchingMembership: c,
+      isUpdatingMembers: u
+    } = (0, Chunk442837.cj)([Chunk643281.Z], () => ({
+      premiumGroupMembers: Chunk643281.Z.getMembers(),
+      premiumGroupSubscriptionId: Chunk643281.Z.getPremiumGroupSubscriptionId(),
+      hasFetchedMembers: Chunk643281.Z.hasFetchedMembers(),
+      isFetchingMembers: Chunk643281.Z.isFetchingMembers(),
+      isFetchingMembership: Chunk643281.Z.isFetchingMembership(),
+      isUpdatingMembers: Chunk643281.Z.isUpdatingMembers()
+    }));
   return (0, Chunk473749.useEffect)(() => {
     module && (s || (null != require ? Chunk570140.Z.dispatch({
       type: "PREMIUM_GROUP_MEMBERS_REQUEST",
@@ -24,6 +35,6 @@ function s() {
     })))
   }, [module, require, s]), {
     premiumGroupMembers: exports,
-    isLoading: l
+    isLoading: l || c || u
   }
 }

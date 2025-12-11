@@ -2,15 +2,16 @@
 /** chunk id: 643281, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => A
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk78839 = require("./78839.js"),
   Chunk80721 = require("./80721.js"),
+  Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,10 +19,11 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = {
+let d = {
   membersData: {
     data: null,
-    isFetching: false
+    isFetching: false,
+    isUpdating: false
   },
   membershipData: {
     data: null,
@@ -30,62 +32,78 @@ let u = {
   }
 };
 
-function d() {
-  u.membersData.isFetching = true
+function f() {
+  d.membersData.isFetching = true
 }
 
-function f(e) {
+function p(e) {
   let {
     members: t
   } = e;
-  u.membersData.data = t, u.membersData.isFetching = false
-}
-
-function p() {
-  u.membersData.isFetching = false
+  d.membersData.data = t, d.membersData.isFetching = false
 }
 
 function _() {
-  u.membershipData.isFetching = true
+  d.membersData.isFetching = false
 }
 
-function m(e) {
+function m() {
+  d.membershipData.isFetching = true
+}
+
+function h(e) {
   let {
     membership: t
   } = e;
-  u.membershipData.data = t, u.membershipData.isFetching = false, u.membershipData.hasFetched = true
-}
-
-function h() {
-  u.membershipData.isFetching = false, u.membershipData.hasFetched = true
+  d.membershipData.data = t, d.membershipData.isFetching = false, d.membershipData.hasFetched = true
 }
 
 function g() {
-  u.membershipData.isFetching = false, u.membershipData.hasFetched = true
+  d.membershipData.isFetching = false, d.membershipData.hasFetched = true
 }
 
 function E() {
-  return !u.membershipData.isFetching && !u.membershipData.hasFetched && (Chunk570140.Z.wait(() => (0, Chunk80721.WH)().catch(Chunk981631.VqG)), true)
+  d.membershipData.isFetching = false, d.membershipData.hasFetched = true
 }
 
 function b() {
-  var e, t, n;
-  let r = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.id;
-  return null != r ? r : null != (n = null == (t = u.membershipData.data) ? true : exports.subscriptionId) ? require : null
+  return !d.membershipData.isFetching && !d.membershipData.hasFetched && (Chunk570140.Z.wait(() => (0, Chunk80721.WH)().catch(Chunk981631.VqG)), true)
 }
 
-function y(e) {
+function y() {
+  d.membersData.isUpdating = true
+}
+
+function O(e) {
   let {
     subscriptionId: t
   } = e;
-  return null != t && !u.membersData.isFetching && (a.Z.wait(() => (0, s.i1)(t).catch(l.VqG)), true)
+  a.Z.wait(() => (0, s.i1)(t).catch(c.VqG)), d.membersData.isUpdating = false
 }
 
-function O() {
-  u = {
+function v() {
+  d.membersData.isUpdating = false
+}
+
+function S() {
+  var e, t, n;
+  let r = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.id;
+  return null != r ? r : null != (n = null == (t = d.membershipData.data) ? true : exports.subscriptionId) ? require : null
+}
+
+function I(e) {
+  let {
+    subscriptionId: t
+  } = e;
+  return !d.membersData.isFetching && (a.Z.wait(() => (0, s.i1)(t).catch(c.VqG)), true)
+}
+
+function T() {
+  d = {
     membersData: {
       data: null,
-      isFetching: false
+      isFetching: false,
+      isUpdating: false
     },
     membershipData: {
       data: null,
@@ -94,42 +112,65 @@ function O() {
     }
   }
 }
-class v extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk78839.Z)
   }
   getMembers() {
-    return u.membersData.data
+    return d.membersData.data
   }
   isFetchingMembers() {
-    return u.membersData.isFetching
+    return d.membersData.isFetching
+  }
+  isUpdatingMembers() {
+    return d.membersData.isUpdating
   }
   hasFetchedMembers() {
-    return null !== u.membersData.data
+    return null !== d.membersData.data
   }
   getMembership() {
-    return u.membershipData.data
+    return d.membershipData.data
   }
   isFetchingMembership() {
-    return u.membershipData.isFetching
+    return d.membershipData.isFetching
   }
   hasFetchedMembership() {
-    return u.membershipData.hasFetched
+    return d.membershipData.hasFetched
   }
   getPremiumGroupSubscriptionId() {
-    return b()
+    return S()
+  }
+  getNumUsedSeats() {
+    return null == d.membersData.data ? 0 : d.membersData.data.members.length
+  }
+  getNumAvailableInvites() {
+    if (null == d.membersData.data) return Chunk282793.v$;
+    let e = d.membersData.data.members.length + d.membersData.data.invitedUsers.length;
+    return Math.max(0, Chunk282793.v$ - module)
+  }
+  getNumTotalSeats() {
+    return Chunk282793.v$
   }
 }
-c(v, "displayName", "PremiumGroupStore");
-let S = new v(Chunk570140.Z, {
-  PREMIUM_GROUP_MEMBERS_REQUEST: y,
-  PREMIUM_GROUP_MEMBERS_FETCH_START: d,
-  PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS: f,
-  PREMIUM_GROUP_MEMBERS_FETCH_FAILURE: p,
-  PREMIUM_GROUP_MEMBERSHIP_REQUEST: E,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_START: _,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS: m,
-  PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND: h,
-  PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE: g,
-  LOGOUT: O
+u(C, "displayName", "PremiumGroupStore");
+let A = new C(Chunk570140.Z, {
+  PREMIUM_GROUP_MEMBERS_REQUEST: I,
+  PREMIUM_GROUP_MEMBERS_FETCH_START: f,
+  PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS: p,
+  PREMIUM_GROUP_MEMBERS_FETCH_FAILURE: _,
+  PREMIUM_GROUP_MEMBERSHIP_REQUEST: b,
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_START: m,
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS: h,
+  PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND: g,
+  PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE: E,
+  PREMIUM_GROUP_INVITE_USERS_START: y,
+  PREMIUM_GROUP_INVITE_USERS_SUCCESS: O,
+  PREMIUM_GROUP_INVITE_USERS_FAILURE: v,
+  PREMIUM_GROUP_REMOVE_MEMBER_START: y,
+  PREMIUM_GROUP_REMOVE_MEMBER_SUCCESS: O,
+  PREMIUM_GROUP_REMOVE_MEMBER_FAILURE: v,
+  PREMIUM_GROUP_REMOVE_INVITE_START: y,
+  PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: O,
+  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: v,
+  LOGOUT: T
 })
