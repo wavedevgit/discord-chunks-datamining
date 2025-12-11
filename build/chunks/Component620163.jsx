@@ -1569,7 +1569,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eD.intl.string(eD.t.Cq98yL)],
         label: eD.intl.string(eD.t.Cq98yL),
         ariaLabel: eD.intl.string(eD.t.Cq98yL),
-        element: $.Z,
+        element: $.ZP,
         predicate: () => !eW,
         url: eR.Z5c.SETTINGS("activity-privacy")
       },

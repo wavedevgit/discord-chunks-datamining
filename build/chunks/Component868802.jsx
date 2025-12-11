@@ -81,13 +81,13 @@ let U = () => {
             className: Chunk74186.contentSpacer
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk74186.ctaContainer,
-            children: (0, Chunk54381.jsx)(j, {})
+            children: (0, Chunk54381.jsx)(G, {})
           })]
         })]
       }), (0, Chunk54381.jsx)(Chunk868087.p, {})]
     })
   },
-  j = () => {
+  G = () => {
     let {
       installationStatus: t,
       isWeb: e,

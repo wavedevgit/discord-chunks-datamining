@@ -37,7 +37,7 @@ function g() {
             showHeader: false
           });
         case Chunk332325.Z.ACTIVITY_PRIVACY:
-          return (0, Chunk54381.jsx)(Chunk309739.Z, {});
+          return (0, Chunk54381.jsx)(Chunk309739.ZP, {});
         case Chunk332325.Z.MY_GAMES:
         default:
           return (0, Chunk54381.jsx)(Chunk293389.Z, {

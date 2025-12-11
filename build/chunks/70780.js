@@ -8,9 +8,9 @@ require.d(exports, {
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js");
 
-function a() {
-  return Chunk544891.tn.get({
-    url: "".concat("https:").concat(window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT),
+function a(e) {
+  return r.tn.get({
+    url: "".concat("https:").concat(window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT, "?v=").concat(e),
     rejectWithError: false
   })
 }

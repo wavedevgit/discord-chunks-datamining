@@ -1,11 +1,10 @@
 /** Chunk was on 74590 **/
-/** chunk id: 620564, original params: e,t,n (module,exports,require) **/
+/** chunk id: 620564, original params: e,t,l (module,exports,require) **/
 module.exports = {
+  spacer: "_01c8cef726c85956-spacer",
   body: "_01c8cef726c85956-body",
-  content: "_01c8cef726c85956-content",
   panel: "_01c8cef726c85956-panel",
   scroller: "_01c8cef726c85956-scroller",
-  votersListContainer: "_01c8cef726c85956-votersListContainer",
   voters: "_01c8cef726c85956-voters",
   voteDefault: "_01c8cef726c85956-voteDefault",
   voteSelected: "_01c8cef726c85956-voteSelected",
@@ -13,11 +12,11 @@ module.exports = {
   emojiText: "_01c8cef726c85956-emojiText",
   voteCount: "_01c8cef726c85956-voteCount",
   spinner: "_01c8cef726c85956-spinner",
-  spinnerMore: "_01c8cef726c85956-spinnerMore",
   voter: "_01c8cef726c85956-voter",
   voterDefault: "_01c8cef726c85956-voterDefault _01c8cef726c85956-voter",
   voterAvatarContainer: "_01c8cef726c85956-voterAvatarContainer",
   name: "_01c8cef726c85956-name",
+  ellipsized: "_01c8cef726c85956-ellipsized",
   nickname: "_01c8cef726c85956-nickname",
   username: "_01c8cef726c85956-username",
   tagFaded: "_01c8cef726c85956-tagFaded",
