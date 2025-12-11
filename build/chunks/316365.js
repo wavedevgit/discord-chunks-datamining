@@ -10,5 +10,6 @@ module.exports = {
   invoiceDiscountText: "_257663d4c4e80a6b-invoiceDiscountText",
   invoiceDiscountTag: "_257663d4c4e80a6b-invoiceDiscountTag",
   totalRow: "_257663d4c4e80a6b-totalRow",
-  slayerStorefrontProductPreview: "_257663d4c4e80a6b-slayerStorefrontProductPreview"
+  slayerStorefrontProductPreview: "_257663d4c4e80a6b-slayerStorefrontProductPreview",
+  rentalDescription: "_257663d4c4e80a6b-rentalDescription"
 }

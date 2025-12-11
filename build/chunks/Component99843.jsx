@@ -1,7 +1,7 @@
-/** Chunk was on 82477 **/
+/** Chunk was on 55791 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => y
+  j: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,41 +17,41 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk408215 = require("./408215.js");
-let m = e => {
+let g = e => {
     let {
       channel: t
     } = e;
-    return (0, f.m$)({
+    return (0, b.m$)({
       channelId: t.id
-    }) ? (0, r.jsx)(l.u, {
-      text: g.intl.string(g.t.QyZ4Td),
-      children: (0, r.jsx)(a.tQf, {
+    }) ? (0, r.jsx)(a.u, {
+      text: p.intl.string(p.t.QyZ4Td),
+      children: (0, r.jsx)(o.tQf, {
         size: "xs",
-        "aria-label": g.intl.string(g.t.VHXh8a),
-        color: a.TVs.colors.INTERACTIVE_TEXT_DEFAULT
+        "aria-label": p.intl.string(p.t.VHXh8a),
+        color: o.TVs.colors.INTERACTIVE_TEXT_DEFAULT
       })
     }) : null
   },
-  y = Chunk473749.memo(function(e) {
+  j = Chunk473749.memo(function(e) {
     let {
       channel: t
-    } = e, i = t.id, f = (0, c.ZP)(t);
+    } = e, i = t.id, b = (0, c.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.u, {
+      children: [(0, r.jsx)(a.u, {
         asContainer: true,
-        text: g.intl.string(g.t["5Q9+/L"]),
+        text: p.intl.string(p.t["5Q9+/L"]),
         position: "bottom",
-        children: (0, r.jsxs)(a.P3F, {
-          className: b.hoverableContainer,
+        children: (0, r.jsxs)(o.P3F, {
+          className: m.hoverableContainer,
           onClick: () => {
             (0, d.B)(i, s.Z.HEADER_BAR)
           },
-          onContextMenu: e => (0, o.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
+          onContextMenu: e => (0, l.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;
             return e => {
-              var i, l;
+              var i, a;
               return (0, r.jsx)(n, (i = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
@@ -69,18 +69,18 @@ let m = e => {
                   })
                 }
                 return e
-              }({}, e), l = l = {
+              }({}, e), a = a = {
                 channel: t,
                 selected: true
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var r = Object.getOwnPropertySymbols(e);
                   n.push.apply(n, r)
                 }
                 return n
-              })(Object(l)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+              })(Object(a)).forEach(function(e) {
+                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
               }), i))
             }
           }), {
@@ -88,30 +88,30 @@ let m = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(p.rMx.GDM_EDIT_INTERACTED, {
+            f.default.track(h.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: s.Z.HEADER_BAR
             })
           },
-          "aria-label": g.intl.string(g.t["5Q9+/L"]),
+          "aria-label": p.intl.string(p.t["5Q9+/L"]),
           children: [(0, r.jsx)(u.Z, {
-            className: b.gdmIcon,
+            className: m.gdmIcon,
             "aria-hidden": true,
             channel: t,
-            size: a.EFr.SIZE_20,
-            facepileSizeOverride: a.EFr.SIZE_24
-          }), (0, r.jsx)(a.Text, {
+            size: o.EFr.SIZE_20,
+            facepileSizeOverride: o.EFr.SIZE_24
+          }), (0, r.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: null != f ? f : ""
-          }), (0, r.jsx)(a.vdY, {
-            className: b.editIcon,
+            children: null != b ? b : ""
+          }), (0, r.jsx)(o.vdY, {
+            className: m.editIcon,
             size: "xs",
             color: "currentColor"
           })]
         })
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(g, {
         channel: t
       })]
     })

@@ -1,12 +1,12 @@
 /** Chunk was on 86948 **/
-/** chunk id: 154122, original params: e,t,r (module,exports,require) **/
+/** chunk id: 154122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => b
+  J: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk518950 = require("./518950.js"),
@@ -15,73 +15,73 @@ var Chunk120356 = require("./120356.js"),
   Chunk137427 = require("./137427.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk116741 = require("./116741.js");
-let b = e => {
+let d = e => {
   let {
     recipient: t,
-    isSuccess: r,
-    onClose: s
+    isSuccess: n,
+    onClose: l
   } = e, {
-    avatarSrc: b,
-    eventHandlers: m
+    avatarSrc: d,
+    eventHandlers: g
   } = (0, o.Z)({
     userId: null == t ? true : t.id,
-    size: a.EFr.SIZE_56
-  }), g = u.ZP.getName(t), y = !r;
-  return (0, n.jsxs)("div", {
-    className: p.row,
-    children: [(0, n.jsx)(a.qEK, function(e) {
+    size: s.EFr.SIZE_56
+  }), b = u.ZP.getName(t), m = !n;
+  return (0, r.jsxs)("div", {
+    className: h.row,
+    children: [(0, r.jsx)(s.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          var n;
-          n = r[t], t in e ? Object.defineProperty(e, t, {
-            value: n,
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = n
+          }) : e[t] = r
         })
       }
       return e
     }({
-      imageClassName: i()({
-        [p.erroredAvatar]: y
+      imageClassName: a()({
+        [h.erroredAvatar]: m
       }),
-      src: b,
-      "aria-label": g,
-      size: a.EFr.SIZE_32
-    }, m)), y ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(a.Text, {
-        className: p.error,
+      src: d,
+      "aria-label": b,
+      size: s.EFr.SIZE_32
+    }, g)), m ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(s.Text, {
+        className: h.error,
         variant: "text-md/medium",
         color: "text-strong",
-        children: g
-      }), (0, n.jsx)(a.Text, {
+        children: b
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        className: p.error,
+        className: h.error,
         color: "text-strong",
-        children: f.intl.format(d.default["Y/oMwY"], {
-          userName: g
+        children: f.intl.format(p.default["Y/oMwY"], {
+          userName: b
         })
       })]
-    }) : (0, n.jsx)(a.Text, {
+    }) : (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: p.displayName,
+      className: h.displayName,
       color: "text-strong",
-      children: g
-    }), (0, n.jsx)(a.Button, {
+      children: b
+    }), (0, r.jsx)(s.Button, {
       variant: "secondary",
       size: "sm",
       text: f.intl.string(f.t["g33r/P"]),
-      icon: a.kBi,
+      icon: s.kBi,
       onClick: () => {
         var e;
-        return e = t.id, void((0, c.default)(), l.Z.openPrivateChannel({
+        return e = t.id, void((0, c.default)(), i.Z.openPrivateChannel({
           recipientIds: e
-        }), s())
+        }), l())
       }
     })]
   })

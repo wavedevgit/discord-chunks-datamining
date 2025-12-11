@@ -1,9 +1,9 @@
-/** Chunk was on 63141 **/
+/** Chunk was on 96537 **/
 /** chunk id: 801282, original params: e (module,exports,require) **/
-module.exports = function(e, t, n) {
-  var i = false,
-    r = e.length;
-  t < 0 && (t = -t > r ? 0 : r + t), (n = n > r ? r : n) < 0 && (n += r), r = t > n ? 0 : n - t >>> 0, t >>>= 0;
-  for (var a = Array(r); ++i < r;) a[i] = e[i + t];
+module.exports = function(e, n, t) {
+  var r = false,
+    i = e.length;
+  n < 0 && (n = -n > i ? 0 : i + n), (t = t > i ? i : t) < 0 && (t += i), i = n > t ? 0 : t - n >>> 0, n >>>= 0;
+  for (var a = Array(i); ++r < i;) a[r] = e[r + n];
   return a
 }

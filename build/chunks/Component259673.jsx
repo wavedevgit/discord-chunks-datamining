@@ -15,9 +15,9 @@ let d = e => {
   var t, n;
   let {
     user: d
-  } = e, f = s.ZP.canUsePremiumProfileCustomization(d), m = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
+  } = e, m = s.ZP.canUsePremiumProfileCustomization(d), f = (0, i.cj)([o.Z], () => o.Z.getAllPending()), {
     pendingAvatar: p
-  } = m, v = function(e, t) {
+  } = f, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -31,7 +31,7 @@ let d = e => {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(m, ["pendingAvatar"]), b = (0, l.SD)({
+  }(f, ["pendingAvatar"]), b = (0, l.SD)({
     userId: d.id,
     image: p
   });
@@ -58,7 +58,7 @@ let d = e => {
       pendingAvatar: b,
       user: d,
       pendingBadges: [(0, c.X)()],
-      canUsePremiumCustomization: f,
+      canUsePremiumCustomization: m,
       disabledInputs: true,
       hideExampleButton: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

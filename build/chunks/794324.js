@@ -1,12 +1,12 @@
 /** Chunk was on 8087 **/
 /** chunk id: 794324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Oi: () => f,
+  Oi: () => m,
   UI: () => b,
   YG: () => d,
   _M: () => v,
   hr: () => u,
-  kc: () => m,
+  kc: () => f,
   mB: () => p
 });
 var Chunk473749 = require("./473749.js"),
@@ -56,7 +56,7 @@ let u = e => {
     });
     return null != (r = null != i ? i : null == t ? true : t.bannerUrl) ? r : u
   },
-  f = e => {
+  m = e => {
     var t, n;
     let r = (0, o.zL)(s.jE.CATALOG_BANNER_STATIC),
       i = (0, o.zL)(s.jE.CATALOG_BANNER_ANIMATED);
@@ -68,7 +68,7 @@ let u = e => {
       catalogBannerAnimated: null != i ? i : null == (n = e.catalogBannerAsset) ? true : n.animated
     }
   },
-  m = e => {
+  f = e => {
     let t = (0, o.zL)(s.jE.PDP_BACKGROUND),
       n = (0, l.Y)("PDPBackground");
     if (null != t) return t;
@@ -88,7 +88,7 @@ let u = e => {
       u = (0, o.zL)(s.jE.SHOP_BUTTON_BG_RESTING_LIGHT),
       d = (0, o.zL)(s.jE.COACHTIP_AVATAR);
     return r.useMemo(() => {
-      var r, o, s, f, m;
+      var r, o, s, m, f;
       let p = [t, n, a, l, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.Z.COACHMARK) return {
         hasPreviewAssets: false
@@ -100,8 +100,8 @@ let u = e => {
         hasPreviewAssets: p,
         buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == h ? true : h.dark,
         buttonBGHoverLight: null != (s = null != a ? a : t) ? s : null == h ? true : h.light,
-        buttonBGRestingDark: null != (f = null != c ? c : l) ? f : null == b ? true : b.dark,
-        buttonBGRestingLight: null != (m = null != u ? u : l) ? m : null == b ? true : b.light,
+        buttonBGRestingDark: null != (m = null != c ? c : l) ? m : null == b ? true : b.dark,
+        buttonBGRestingLight: null != (f = null != u ? u : l) ? f : null == b ? true : b.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar
       }
     }, [t, n, a, l, c, u, d, e])

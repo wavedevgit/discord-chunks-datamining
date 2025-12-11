@@ -20,7 +20,7 @@ let p = e => {
       sourceAnalyticsLocations: f
     } = e,
     [h, u] = i.useState(1),
-    [m, j] = i.useState(new Set),
+    [j, m] = i.useState(new Set),
     [_, g] = i.useState(new Map),
     {
       analyticsLocations: L
@@ -34,7 +34,7 @@ let p = e => {
               location_stack: L
             });
             let t = await (0, o.jy)(e.map(e => e.id));
-            u(2), j(new Set(e)), g(t)
+            u(2), m(new Set(e)), g(t)
           } catch (e) {}
         },
         onClose: p
@@ -42,7 +42,7 @@ let p = e => {
       break;
     case 2:
       t = (0, r.jsx)(c.Z, {
-        selectedUsers: m,
+        selectedUsers: j,
         trialCreationResult: _,
         onClose: p
       });

@@ -39,7 +39,7 @@ let N = e => {
     } = (0, h.Z)({
       userId: null == t ? true : t.id,
       size: c.EFr.SIZE_56
-    }), d = j.ZP.getName(t), C = t.username !== d && a === _.Fz.SUCCESS, f = a === _.Fz.FAIL;
+    }), d = m.ZP.getName(t), C = t.username !== d && a === _.Fz.SUCCESS, f = a === _.Fz.FAIL;
     return (0, r.jsxs)("div", {
       className: w.referredUserRowContainer,
       children: [(0, r.jsx)(c.qEK, function(e) {
@@ -145,8 +145,8 @@ let N = e => {
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         children: S.intl.format(S.t.CZaMHn, {
-          days: b.p,
-          helpdeskArticle: m.Z.getArticleURL(v.BhN.REFERRAL_PROGRAM)
+          days: v.p,
+          helpdeskArticle: j.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
         })
       })]
     })

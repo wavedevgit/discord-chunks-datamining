@@ -64,26 +64,28 @@ let y = e => {
   v = e => {
     let {
       orbPriceAmount: t,
-      skuId: n
+      skuId: n,
+      rentalDuration: i
     } = e, {
-      skusById: i
+      skusById: o
     } = (0, f.Z)({
       applicationId: (0, m.Nb)(n),
       skuIDs: [n],
       isGift: false,
       currentPaymentSourceId: null,
       excludeSKUPurchasePreviews: true
-    }), o = i[n];
-    return true === o ? (0, r.jsx)(_.aO, {
+    }), s = o[n];
+    return true === s ? (0, r.jsx)(_.aO, {
       children: (0, r.jsx)(a.$jN, {
         type: a.$jN.Type.PULSING_ELLIPSIS,
         className: b.purchaseDetailsSpinner
       })
     }) : (0, r.jsx)(p.E, {
-      sku: o,
+      sku: s,
       value: (0, r.jsx)(y, {
         orbAmount: t
-      })
+      }),
+      rentalDuration: i
     })
   },
   S = e => {
@@ -123,7 +125,8 @@ let y = e => {
         label: E.intl.string(E.t.sail9P),
         children: (0, r.jsx)(v, {
           skuId: t,
-          orbPriceAmount: n
+          orbPriceAmount: n,
+          rentalDuration: c
         })
       }), (0, r.jsx)(S, {
         orbBalance: i

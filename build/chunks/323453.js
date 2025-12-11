@@ -1,5 +1,6 @@
-/** Chunk was on 82477 **/
-/** chunk id: 323453, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96537 **/
+/** chunk id: 323453, original params: e,n,t (module,exports,require) **/
+"use strict";
 module.exports = {
   wrapper: "_2ea32c412048f708-wrapper",
   icon: "_2ea32c412048f708-icon",

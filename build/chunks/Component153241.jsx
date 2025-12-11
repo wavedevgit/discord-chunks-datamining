@@ -1,7 +1,7 @@
 /** Chunk was on 86948 **/
-/** chunk id: 153241, original params: e,t,r (module,exports,require) **/
+/** chunk id: 153241, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => I
+  default: () => N
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,199 +25,199 @@ var Chunk54381 = require("./54381.js"),
   Chunk992909 = require("./992909.js"),
   Chunk135471 = require("./135471.js");
 
-function w(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function P(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function R(e, t) {
   if (null == e) return {};
-  var r, n, s = function(e, t) {
+  var n, r, l = function(e, t) {
     if (null == e) return {};
-    var r, n, s = {},
-      i = Object.keys(e);
-    for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (s[r] = e[r]);
-    return s
+    var n, r, l = {},
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+    return l
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var i = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (s[r] = e[r])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
   }
-  return s
+  return l
 }
-let N = e => {
+let C = e => {
     var {
       onInvite: t,
-      onClose: r,
+      onClose: n,
       subscriptionId: u
-    } = e, d = C(e, ["onInvite", "onClose", "subscriptionId"]);
-    let [b, y] = s.useState([]), [v, x] = s.useState(""), N = (0, c.Z)(v, 400), k = (0, a.e7)([m.Z], () => m.Z.getNumAvailableInvites()), {
-      eligibleUsers: I,
-      getNextRows: Z,
-      hasError: E,
-      isFetching: M
-    } = (0, g.Z)({
+    } = e, p = R(e, ["onInvite", "onClose", "subscriptionId"]);
+    let [d, m] = l.useState([]), [y, x] = l.useState(""), C = (0, c.Z)(y, 400), w = (0, s.e7)([g.Z], () => g.Z.getNumAvailableInvites()), {
+      eligibleUsers: N,
+      getNextRows: D,
+      hasError: k,
+      isFetching: _
+    } = (0, b.Z)({
       subscriptionId: u,
-      searchQuery: N
-    }), [z, U] = s.useState(false);
-    return E ? (0, n.jsx)(i.Modal, w({
+      searchQuery: C
+    }), [A, T] = l.useState(false);
+    return k ? (0, r.jsx)(a.Modal, S({
       size: "sm",
-      title: O.intl.string(j.default["54lM5y"]),
-      subtitle: O.intl.string(j.default.zrtwpV),
-      onClose: r,
+      title: j.intl.string(O.default["54lM5y"]),
+      subtitle: j.intl.string(O.default.zrtwpV),
+      onClose: n,
       actions: []
-    }, d)) : 0 !== I.length || M || 0 !== N.length ? (0, n.jsx)(i.Modal, P(w({
+    }, p)) : 0 !== N.length || _ || 0 !== C.length ? (0, r.jsx)(a.Modal, E(S({
       size: "md",
-      title: O.intl.string(j.default["Um/7BM"]),
-      subtitle: O.intl.format(j.default.qSWXaf, {
-        totalSeats: h.v$,
-        premiumGroupProductName: (0, h.sO)(),
-        helpCenterLink: h.j3
+      title: j.intl.string(O.default["Um/7BM"]),
+      subtitle: j.intl.format(O.default.qSWXaf, {
+        totalSeats: v.v$,
+        premiumGroupProductName: (0, v.sO)(),
+        helpCenterLink: v.j3
       }),
-      onClose: r,
-      input: (0, n.jsx)(o.Z, {
-        className: S.searchbar,
+      onClose: n,
+      input: (0, r.jsx)(o.Z, {
+        className: P.searchbar,
         size: o.Z.Sizes.MEDIUM,
-        tags: b.map(e => f.ZP.getName(e)),
-        placeholder: 0 === b.length ? O.intl.string(j.default.wRS8vo) : "",
-        query: v,
+        tags: d.map(e => f.ZP.getName(e)),
+        placeholder: 0 === d.length ? j.intl.string(O.default.wRS8vo) : "",
+        query: y,
         onRemoveTag: e => {
-          y(t => t.filter((t, r) => r !== e))
+          m(t => t.filter((t, n) => n !== e))
         },
         onQueryChange: x,
         onClear: () => x("")
       }),
       actions: [],
       actionBarInput: (() => {
-        let e = N.length > 0 && 0 === I.length;
-        return (0, n.jsx)(l.Button, {
+        let e = C.length > 0 && 0 === N.length;
+        return (0, r.jsx)(i.Button, {
           variant: "primary",
-          disabled: 0 === b.length && !e || z,
-          text: O.intl.string(j.default["5fZHp3"]),
+          disabled: 0 === d.length && !e || A,
+          text: j.intl.string(O.default["5fZHp3"]),
           size: "md",
           fullWidth: true,
           onClick: async () => {
-            if (e) return void r();
-            U(true), await t(b), U(false)
+            if (e) return void n();
+            T(true), await t(d), T(false)
           }
         })
       })()
-    }, d), {
-      children: (0, n.jsx)(p.Z, {
-        users: I,
-        isUserSelected: e => b.some(t => t.id === e.id),
+    }, p), {
+      children: (0, r.jsx)(h.Z, {
+        users: N,
+        isUserSelected: e => d.some(t => t.id === e.id),
         onSelectionChange: (e, t) => {
-          y(r => t ? [...r, e] : r.filter(t => t.id !== e.id))
+          m(n => t ? [...n, e] : n.filter(t => t.id !== e.id))
         },
-        isUserDisabled: () => b.length >= k,
-        isFetching: M,
-        onFetchMore: Z,
-        searchQuery: N,
+        isUserDisabled: () => d.length >= w,
+        isFetching: _,
+        onFetchMore: D,
+        searchQuery: C,
         emptySearchContent: {
-          header: O.intl.string(j.default.gaamNe),
-          body: O.intl.string(j.default.nQcM39)
+          header: j.intl.string(O.default.gaamNe),
+          body: j.intl.string(O.default.nQcM39)
         },
-        className: S.list
+        className: P.list
       })
-    })) : (0, n.jsx)(i.Modal, w({
+    })) : (0, r.jsx)(a.Modal, S({
       size: "sm",
-      title: O.intl.string(j.default.ONaJLH),
-      subtitle: O.intl.format(j.default["0LHbPc"], {
-        helpCenterLink: h.j3
+      title: j.intl.string(O.default.ONaJLH),
+      subtitle: j.intl.format(O.default["0LHbPc"], {
+        helpCenterLink: v.j3
       }),
-      onClose: r,
+      onClose: n,
       actions: []
-    }, d))
+    }, p))
   },
-  k = e => {
+  w = e => {
     var {
       onClose: t,
-      inviteUsersResult: r
-    } = e, s = C(e, ["onClose", "inviteUsersResult"]);
-    return (0, n.jsx)(i.ExpressiveModal, P(w({
+      inviteUsersResult: n
+    } = e, l = R(e, ["onClose", "inviteUsersResult"]);
+    return (0, r.jsx)(a.ExpressiveModal, E(S({
       graphic: {
         type: "image",
         src: x.Z
       },
       gradientColor: "nitro-pink",
-      title: O.intl.formatToPlainString(j.default["0yblpx"], {
-        premiumGroupProductName: (0, h.sO)()
+      title: j.intl.formatToPlainString(O.default["0yblpx"], {
+        premiumGroupProductName: (0, v.sO)()
       }),
-      subtitle: O.intl.format(j.default.olkQkj, {
+      subtitle: j.intl.format(O.default.olkQkj, {
         onClick: () => {
-          t(), (0, d.openUserSettings)(u.n.SUBSCRIPTIONS_PANEL, {
-            section: v.oAB.SUBSCRIPTIONS
+          t(), (0, p.openUserSettings)(u.n.SUBSCRIPTIONS_PANEL, {
+            section: y.oAB.SUBSCRIPTIONS
           })
         }
       }),
       onClose: t
-    }, s), {
-      children: r.map(e => (0, n.jsx)(y.J, {
+    }, l), {
+      children: n.map(e => (0, r.jsx)(m.J, {
         recipient: e.user,
         isSuccess: e.isSuccess,
         onClose: t
       }, e.user.id))
     }))
   },
-  I = e => {
+  N = e => {
     var {
       subscription: t
-    } = e, r = C(e, ["subscription"]);
-    let [i, a] = s.useState([]), [l, o] = s.useState(1), c = async e => {
-      let r = new Map,
-        n = [];
-      for (let t of e) r.set(t.id, t), n.push(t.id);
-      let s = await (0, b.cD)(t.id, n);
-      if (null == s) {
-        a(e.map(e => ({
+    } = e, n = R(e, ["subscription"]);
+    let [a, s] = l.useState([]), [i, o] = l.useState(1), c = async e => {
+      let n = new Map,
+        r = [];
+      for (let t of e) n.set(t.id, t), r.push(t.id);
+      let l = await (0, d.cD)(t.id, r);
+      if (null == l) {
+        s(e.map(e => ({
           user: e,
           isSuccess: false
         }))), o(2);
         return
       }
       let {
-        invitedUsers: i,
-        ineligibleUsers: l
-      } = s;
-      a([...i.map(e => ({
-        user: r.get(e),
+        invitedUsers: a,
+        ineligibleUsers: i
+      } = l;
+      s([...a.map(e => ({
+        user: n.get(e),
         isSuccess: true
-      })), ...l.map(e => ({
-        user: r.get(e),
+      })), ...i.map(e => ({
+        user: n.get(e),
         isSuccess: false
       }))]), o(2)
     };
-    return 1 === l ? (0, n.jsx)(N, P(w({}, r), {
+    return 1 === i ? (0, r.jsx)(C, E(S({}, n), {
       onInvite: c,
       subscriptionId: t.id
-    })) : 2 === l ? (0, n.jsx)(k, P(w({}, r), {
-      inviteUsersResult: i
+    })) : 2 === i ? (0, r.jsx)(w, E(S({}, n), {
+      inviteUsersResult: a
     })) : true
   }

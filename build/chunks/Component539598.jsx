@@ -1,7 +1,7 @@
 /** Chunk was on 8087 **/
 /** chunk id: 539598, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,12 +14,12 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk887704 = require("./887704.js");
 
-function f(e) {
+function m(e) {
   let {
     product: t
   } = e, n = (0, o.ql)(t, c.tuJ.PREMIUM_TIER_2);
   if (null == n) return null;
-  let f = (0, l.qr)(n.amount, n.currency);
+  let m = (0, l.qr)(n.amount, n.currency);
   return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)(i.u, {
@@ -33,7 +33,7 @@ function f(e) {
     }), (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
       children: u.intl.format(u.t.Sv8iic, {
-        price: f,
+        price: m,
         subscribeNowHook: e => (0, r.jsx)(s.F, {
           text: e
         })

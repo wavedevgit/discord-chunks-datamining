@@ -1,7 +1,7 @@
 /** Chunk was on 8087 **/
 /** chunk id: 953405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => f
+  a: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -34,20 +34,20 @@ function d(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     prices: t,
     isPremiumUser: n,
     discount: i,
     product: c,
-    hasSufficientOrbs: f,
-    isProductDisabled: m,
+    hasSufficientOrbs: m,
+    isProductDisabled: f,
     discountOfferAmount: p
   } = e, v = null != p;
   return 0 === t.length ? null : t[0].currency === s.pK.DISCORD_ORB ? (0, r.jsx)(d, {
     orbPrice: t[0],
-    isProductDisabled: m,
-    hasSufficientOrbs: f
+    isProductDisabled: f,
+    hasSufficientOrbs: m
   }) : (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsxs)("div", {
@@ -65,7 +65,7 @@ function f(e) {
       })]
     }), t.length > 1 && t[1].currency === s.pK.DISCORD_ORB && (0, r.jsx)(o.F, {
       price: t[1],
-      className: m || !f ? u.disabled : true
+      className: f || !m ? u.disabled : true
     })]
   })
 }

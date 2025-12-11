@@ -18,8 +18,8 @@ function d(e) {
   let {
     product: i,
     isPremiumUser: d,
-    discount: f,
-    className: m,
+    discount: m,
+    className: f,
     discountOfferAmount: p,
     hideStrikethroughPrice: v = false,
     nitroIconType: b,
@@ -27,7 +27,7 @@ function d(e) {
   } = e, g = (0, l.ql)(i, c.tuJ.DEFAULT);
   if (null == g) return null;
   if (g.amount <= 0) return (0, r.jsx)("div", {
-    className: a()(u.priceTagsContainer, m),
+    className: a()(u.priceTagsContainer, f),
     children: (0, r.jsx)(s.F, {
       price: g
     })
@@ -51,7 +51,7 @@ function d(e) {
       }
       return e
     }({}, g), n = n = {
-      amount: f.original
+      amount: m.original
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -64,13 +64,13 @@ function d(e) {
     }), t) : g,
     j = d && null != x;
   return (0, r.jsxs)("div", {
-    className: a()(u.priceTagsContainer, m),
+    className: a()(u.priceTagsContainer, f),
     children: [v ? null : (0, r.jsx)(o.y, {
       price: P,
       className: u.price
     }), (0, r.jsx)(s.F, {
       price: j ? x : P,
-      discount: f,
+      discount: m,
       className: a()({
         [u.price]: null == p
       }),
