@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -57,11 +57,11 @@ function Z(e) {
     children: [(0, r.jsxs)("div", {
       className: _.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: a()(j.background, h.image, _.image),
+        className: o()(j.background, h.image, _.image),
         src: C.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: a()(h.image, _.gradient)
+        className: o()(h.image, _.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: b.intl.string(x.default["B3OfL/"]),
@@ -71,7 +71,7 @@ function Z(e) {
         costDecorator: "+",
         status: w
       }),
-      children: (0, r.jsx)(o.xvT, {
+      children: (0, r.jsx)(a.xvT, {
         className: h.description,
         color: I,
         variant: "text-sm/medium",

@@ -1,15 +1,15 @@
 /** Chunk was on 44799 **/
 /** chunk id: 992046, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk973772 = require("./973772.js"),
   Chunk535396 = require("./535396.js"),
   Chunk44542 = require("./44542.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
-  var t, n, o;
+function a(e) {
+  var t, n, a;
   let s, {
       guildId: c,
       powerups: u
@@ -28,7 +28,7 @@ function o(e) {
     expiringAt: p
   } : f && (s = {
     type: "active",
-    statusText: a.intl.string(l.default.FFLkmx)
+    statusText: o.intl.string(l.default.FFLkmx)
   });
   let m = d.reduce((e, t) => {
       let {
@@ -43,7 +43,7 @@ function o(e) {
         powerup: i
       } = t;
       return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
-    }, null != (o = null == (n = d[0]) || null == (t = n.powerup) ? true : t.cost) ? o : 0),
+    }, null != (a = null == (n = d[0]) || null == (t = n.powerup) ? true : t.cost) ? a : 0),
     v = d.reduce((e, t) => {
       var n;
       let {

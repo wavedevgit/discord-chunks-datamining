@@ -77,7 +77,7 @@ function I(e) {
     }), (0, a.jsx)(d.Heading, {
       variant: "heading-md/extrabold",
       className: T.title,
-      color: "header-primary",
+      color: "text-strong",
       "aria-hidden": true,
       children: n
     }), (0, a.jsx)(d.LZC, {
@@ -203,7 +203,7 @@ let E = e => {
             className: T.contentTextContainer,
             children: [(0, a.jsx)(d.Heading, {
               variant: "heading-lg/semibold",
-              color: "header-primary",
+              color: "text-strong",
               children: B
             }), (0, a.jsx)(d.LZC, {
               size: 8
@@ -267,7 +267,7 @@ let E = e => {
               size: 10
             }), (0, a.jsx)(d.Heading, {
               variant: "heading-lg/semibold",
-              color: "header-primary",
+              color: "text-strong",
               children: y.intl.string(y.t["N/TRrT"])
             }), (0, a.jsx)(d.LZC, {
               size: 8

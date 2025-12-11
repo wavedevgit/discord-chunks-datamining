@@ -175,7 +175,7 @@ var j = function(e, t) {
   },
   G = function(e, t, n) {
     true === t && (t = []), true === n && (n = {});
-    var r = B;
+    var r = F;
     e.default && true !== e.default && (r = Object.keys(e = e.default));
     for (var i, o = R(r); !(i = o()).done;) {
       var s = i.value,
@@ -187,8 +187,8 @@ var j = function(e, t) {
   Z = function(e, t, n) {
     return G(t, n, e)
   },
-  B = ["pause", "cancel", "config", "immediate", "onDelayEnd", "onProps", "onStart", "onChange", "onRest"],
-  F = {
+  F = ["pause", "cancel", "config", "immediate", "onDelayEnd", "onProps", "onStart", "onChange", "onRest"],
+  B = {
     config: 1,
     from: 1,
     to: 1,
@@ -225,7 +225,7 @@ function V(e) {
   var t = {},
     n = 0;
   if (a.each(e, function(e, r) {
-      !F[r] && (t[r] = e, n++)
+      !B[r] && (t[r] = e, n++)
     }), n) return t
 }
 
@@ -790,12 +790,12 @@ var er = function(e) {
           if (k !== P.constructor) throw Error("Cannot animate between " + P.constructor.name + " and " + k.name + ', as the "to" prop suggests')
         } var U = P.constructor,
         G = !!v,
-        B = false;
+        F = false;
       if (!G) {
-        var F = R || this.is(es) && y;
-        (O || F) && (G = !(B = a.isEqual(Y(w), D))), a.isEqual(T.decay, A) && a.isEqual(T.velocity, N) || (G = true)
+        var B = R || this.is(es) && y;
+        (O || B) && (G = !(F = a.isEqual(Y(w), D))), a.isEqual(T.decay, A) && a.isEqual(T.velocity, N) || (G = true)
       }
-      if (B && this.is(ec) && (i.changed && !R ? G = true : G || this._stop()), !I) {
+      if (F && this.is(ec) && (i.changed && !R ? G = true : G || this._stop()), !I) {
         (G || a.getFluidConfig(d)) && (i.values = P.getPayload(), i.toValues = v ? null : U == f.AnimatedString ? [1] : a.toArray(D)), i.immediate = M, i.onStart = e_(c("onStart"), r), i.onChange = e_(c("onChange"), r);
         var V = i.onRest,
           H = R && !t.onRest ? V[0] || a.noop : em(e_(c("onRest"), r), this);
@@ -1307,7 +1307,7 @@ var ek = "mount",
   eG = "update",
   eZ = "leave";
 
-function eB(e, t, n) {
+function eF(e, t, n) {
   var r = t.ref,
     l = t.reset,
     c = t.sort,
@@ -1317,7 +1317,7 @@ function eB(e, t, n) {
     p = true === f || f,
     _ = a.toArray(e),
     m = [],
-    h = eF(_, t),
+    h = eB(_, t),
     g = s.useRef(null),
     E = l ? null : g.current;
   i.useLayoutEffect(function() {
@@ -1460,7 +1460,7 @@ function eB(e, t, n) {
   return 3 == arguments.length ? [A, C.start, C.stop] : A
 }
 
-function eF(e, t) {
+function eB(e, t) {
   var n = t.key,
     r = t.keys,
     i = true === r ? n : r;
@@ -1486,7 +1486,7 @@ function eY(e) {
   var t = e.items,
     n = e.children,
     r = g(e, ["items", "children"]);
-  return s.createElement(s.Fragment, null, eB(t, r)(n))
+  return s.createElement(s.Fragment, null, eF(t, r)(n))
 }
 var eW = function(e) {
     function t(t, n) {
@@ -1573,4 +1573,4 @@ Object.keys(Chunk467568).forEach(function(e) {
   get: function() {
     return Chunk698091.createInterpolator
   }
-}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eV, exports.SpringContext = ew, exports.SpringHandle = ex, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = ej, exports.useSprings = eL, exports.useTrail = eM, exports.useTransition = eB
+}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eV, exports.SpringContext = ew, exports.SpringHandle = ex, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = ej, exports.useSprings = eL, exports.useTrail = eM, exports.useTransition = eF

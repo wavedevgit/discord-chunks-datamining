@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   c = require.n(Chunk913527),
   Chunk608787 = require("./608787.jsx"),
@@ -62,7 +62,7 @@ function y(e) {
     startDateLabel: t,
     endDateLabel: n,
     afterDate: r,
-    beforeDate: a,
+    beforeDate: o,
     selectedOption: s,
     isCustomDateRange: d,
     menuName: g,
@@ -128,8 +128,8 @@ function y(e) {
   }, [H]), L = i.useCallback(e => {
     w(e)
   }, [w]), I = i.useCallback(() => {
-    null == a && null == r && y(0, null), D(false)
-  }, [r, a, y]);
+    null == o && null == r && y(0, null), D(false)
+  }, [r, o, y]);
   return (0, l.jsx)(u.v2r, {
     navId: "member-safety-guild-member-".concat(g, "-menu"),
     onClose: v,
@@ -149,7 +149,7 @@ function y(e) {
               height: 16
             }), (0, l.jsx)(u.Text, {
               variant: "eyebrow",
-              color: "header-primary",
+              color: "text-strong",
               children: b.intl.string(b.t.BTfN6g)
             })]
           }))
@@ -177,7 +177,7 @@ function y(e) {
             id: "before-date-picker",
             render: e => (0, l.jsx)(x, h(p({}, e), {
               calendarClassName: f.calendar,
-              value: d && null != a ? c()(a) : true,
+              value: d && null != o ? c()(o) : true,
               onSelect: L,
               maxDate: c()().local(),
               minDate: d && null != r ? c()(r) : j
@@ -202,19 +202,19 @@ function y(e) {
           id: "guild-member-".concat(g, "-custom-option}"),
           action: _,
           render: e => (0, l.jsxs)("div", {
-            className: o()(f.otherDatesContainer, {
+            className: a()(f.otherDatesContainer, {
               [f.focused]: e.isFocused
             }),
             children: [(0, l.jsxs)("div", {
               className: f.leftContainer,
               children: [(0, l.jsx)(u.Text, {
-                className: o()(f.otherDateLabel, {
+                className: a()(f.otherDateLabel, {
                   [f.focused]: e.isFocused
                 }),
                 variant: "text-sm/medium",
                 children: b.intl.string(b.t.BTfN6g)
               }), null != N && (0, l.jsx)(u.Text, {
-                className: o()(f.otherDateLabel, {
+                className: a()(f.otherDateLabel, {
                   [f.focused]: e.isFocused
                 }),
                 color: "text-muted",
@@ -230,7 +230,7 @@ function y(e) {
               color: "currentColor",
               width: 16,
               height: 16,
-              className: o()(f.otherDateLabel, {
+              className: a()(f.otherDateLabel, {
                 [f.focused]: e.isFocused
               })
             })]

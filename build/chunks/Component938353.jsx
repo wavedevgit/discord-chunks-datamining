@@ -474,11 +474,11 @@ class tn extends(r = Chunk473749.Component) {
       hasBailedAst: n
     } = this.props;
     return 0 === e.embeds.length || !t || n ? null : e.embeds.map((t, n) => {
-      if (ez.b.has(t.type) || (0, eO.l3)(t) || (0, B.b)(t) && !(0, F.M)(e) || (0, eO.jz)(t) || (0, eO.HK)(t)) return null;
+      if (ez.b.has(t.type) || (0, eO.l3)(t) || (0, F.b)(t) && !(0, B.M)(e) || (0, eO.jz)(t) || (0, eO.HK)(t)) return null;
       let r = {
-        renderImageComponent: eB.Yi,
-        renderVideoComponent: eB.lV,
-        renderLinkComponent: eB.iT
+        renderImageComponent: eF.Yi,
+        renderVideoComponent: eF.lV,
+        renderLinkComponent: eF.iT
       };
       if (t.type === eq.hBH.ARTICLE && null != t.url && /^https?:\/\/(?:canary|ptb|www)?\.discord(?:app)?\.com\/store\/skus\/(?:[0-9]+)/.test(t.url) && null != t.provider && "Discord" === t.provider.name) {
         let a = eS.Z.safeParseWithQuery(t.url);
@@ -630,7 +630,7 @@ class tn extends(r = Chunk473749.Component) {
   }
   renderInteractionPremiumUpsell(e) {
     let t = e.applicationId;
-    return e.type !== l.u.INTERACTION_PREMIUM_UPSELL || null == t ? null : (0, i.jsx)(eF.Z, {
+    return e.type !== l.u.INTERACTION_PREMIUM_UPSELL || null == t ? null : (0, i.jsx)(eB.Z, {
       applicationId: t,
       guildId: this.props.channel.guild_id
     })

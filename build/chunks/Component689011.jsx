@@ -92,7 +92,7 @@ function g(e) {
     }), (0, r.jsx)(i.Heading, {
       className: f.confirmationTitle,
       variant: "heading-xl/extrabold",
-      color: "header-primary",
+      color: "text-strong",
       children: d.intl.format(d.t.wLFT6z, {
         tier: t
       })

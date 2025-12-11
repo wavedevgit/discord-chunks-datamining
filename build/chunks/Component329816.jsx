@@ -89,7 +89,7 @@ let ee = (0, Chunk663993.Un)({
     let {
       children: t,
       skipsSettingDefaultPageTitle: n
-    } = e, a = (0, Y.getPlatform)(), f = s.tq || s.Em, g = (0, u.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), B = i.useRef(document.body), V = "".concat(g);
+    } = e, a = (0, Y.getPlatform)(), f = s.tq || s.Em, g = (0, u.e7)([E.Z], () => E.Z.useForcedColors ? "yes" : "no"), F = i.useRef(document.body), V = "".concat(g);
     (0, N.G)(), (0, D.G)("AppSkeleton");
     let H = (0, w.Co)("AppSkeleton");
     return i.useEffect(() => {
@@ -101,7 +101,7 @@ let ee = (0, Chunk663993.Un)({
         }), (0, r.jsx)(h.T, {
           children: (0, r.jsx)(R.Z, {
             children: (0, r.jsxs)(p.JcV, {
-              containerRef: B,
+              containerRef: F,
               children: [(0, r.jsx)(Q.Co, {}), (0, r.jsx)(q.ZP, {}), (0, r.jsx)(c.OUJ, {}), (0, r.jsx)(M.Wu, {
                 appContext: J.IlC.APP,
                 renderWindow: window,
@@ -120,7 +120,7 @@ let ee = (0, Chunk663993.Un)({
                                 children: [(0, r.jsx)("div", {
                                   className: o()(f ? $.mobileApp : $.app),
                                   children: t
-                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(F.Z, {}), (0, r.jsx)(L.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(x.Un, {}), (0, r.jsx)(j.ot, {}), (0, r.jsx)(p.Ixi, {
+                                }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(B.Z, {}), (0, r.jsx)(L.Ox, {}), (0, r.jsx)(l.uZ, {}), (0, r.jsx)(x.Un, {}), (0, r.jsx)(j.ot, {}), (0, r.jsx)(p.Ixi, {
                                   appContext: J.IlC.APP
                                 }), (0, r.jsx)(v.Z, {}), (0, r.jsx)(k.Z, {}), (0, r.jsx)(ee, {}), (0, r.jsx)(et, {}), (0, r.jsx)(G.Z, {})]
                               })

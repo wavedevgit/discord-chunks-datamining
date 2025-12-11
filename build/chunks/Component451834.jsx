@@ -36,7 +36,7 @@ let g = e => {
       }), (0, r.jsxs)("div", {
         className: m.successToast,
         children: [(0, r.jsx)(l.Text, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-sm/semibold",
           children: t
         }), (0, r.jsx)(l.Text, {
@@ -60,7 +60,7 @@ let g = e => {
       type: Chunk481060.RAz.SPINNING_CIRCLE_SIMPLE,
       className: Chunk570447.toastIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-sm/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.tcARX0)
     })]

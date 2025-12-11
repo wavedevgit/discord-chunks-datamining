@@ -114,7 +114,7 @@ function _(e) {
         null == (n = e.onClick) || n.call(e, t), j(false)
       }
     })), [b, j]),
-    B = i.useCallback(e => {
+    F = i.useCallback(e => {
       D(e)
     }, []);
   return (0, r.jsxs)("div", {
@@ -141,7 +141,7 @@ function _(e) {
         align: "custom",
         customOffset: w
       },
-      onNudgeChange: B,
+      onNudgeChange: F,
       onRequestClose: e => {
         j(null != e && (0, o.Al)(e))
       }

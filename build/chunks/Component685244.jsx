@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk498607 = require("./498607.js"),
-  a = require.n(Chunk498607),
+  o = require.n(Chunk498607),
   Chunk467721 = require("./467721.js"),
   Chunk748780 = require("./748780.js"),
   Chunk692547 = require("./692547.js"),
@@ -59,7 +59,7 @@ function p(e) {
   var {
     value: t,
     children: n,
-    equalityFn: i = a(),
+    equalityFn: i = o(),
     style: s
   } = e, p = function(e, t) {
     if (null == e) return {};
@@ -106,7 +106,7 @@ function p(e) {
     }) : {
       backgroundColor: O
     };
-  return (0, r.jsx)(o.animated.tr, m(C({}, p), {
+  return (0, r.jsx)(a.animated.tr, m(C({}, p), {
     style: H,
     children: n
   }))

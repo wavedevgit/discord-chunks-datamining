@@ -143,7 +143,7 @@ function f(e) {
       }
     }, []),
     Z = r.useMemo(() => Math.max(...n), [n]),
-    B = r.useCallback(() => ({
+    F = r.useCallback(() => ({
       role: "grid",
       "aria-rowcount": n.length,
       "aria-colcount": Z,
@@ -153,7 +153,7 @@ function f(e) {
       onFocus: U,
       onBlur: G
     }), [n.length, Z, I, E, t, k, U, G]),
-    F = r.useCallback((e, n) => {
+    B = r.useCallback((e, n) => {
       let r = {
         role: "gridcell",
         "aria-rowindex": n + 1,
@@ -170,10 +170,10 @@ function f(e) {
     }), []);
   return r.useMemo(() => ({
     dispatch: g,
-    getContainerProps: B,
-    getItemProps: F,
+    getContainerProps: F,
+    getItemProps: B,
     getRowProps: V
-  }), [g, B, F, V])
+  }), [g, F, B, V])
 }
 
 function p(e) {

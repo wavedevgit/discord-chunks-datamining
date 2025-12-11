@@ -524,7 +524,7 @@ function Z(e, t) {
   return G(e, t)
 }
 
-function B(e, t, n) {
+function F(e, t, n) {
   if (true !== n) {
     var n = new e_(eE(n)),
       r = n.localeMatcher;
@@ -542,7 +542,7 @@ function B(e, t, n) {
   }), i
 }
 
-function F(e, t, n, r, i) {
+function B(e, t, n, r, i) {
   var a = e[t];
   if (true !== a) {
     if (a = "boolean" === n ? !!a : "string" === n ? String(a) : a, true !== r && false === d.call(r, a)) throw RangeError("'" + a + "' is not an allowed value for `" + t + "`");
@@ -578,22 +578,22 @@ function Y(e, t, n) {
   var a = L(t);
   n = true === n ? {} : eE(n);
   var o = new e_,
-    s = F(n, "localeMatcher", "string", new em("lookup", "best fit"), "best fit");
+    s = B(n, "localeMatcher", "string", new em("lookup", "best fit"), "best fit");
   o["[[localeMatcher]]"] = s;
   var c = b.NumberFormat["[[localeData]]"],
     d = U(b.NumberFormat["[[availableLocales]]"], a, o, b.NumberFormat["[[relevantExtensionKeys]]"], c);
   r["[[locale]]"] = d["[[locale]]"], r["[[numberingSystem]]"] = d["[[nu]]"], r["[[dataLocale]]"] = d["[[dataLocale]]"];
   var f = d["[[dataLocale]]"],
-    p = F(n, "style", "string", new em("decimal", "percent", "currency"), "decimal");
+    p = B(n, "style", "string", new em("decimal", "percent", "currency"), "decimal");
   r["[[style]]"] = p;
-  var _ = F(n, "currency", "string");
+  var _ = B(n, "currency", "string");
   if (true !== _ && !x(_)) throw RangeError("'" + _ + "' is not a valid currency code");
   if ("currency" === p && true === _) throw TypeError("Currency code is required when style is currency");
   if ("currency" === p) {
     _ = _.toUpperCase(), r["[[currency]]"] = _;
     var m = W(_)
   }
-  var h = F(n, "currencyDisplay", "string", new em("code", "symbol", "name"), "symbol");
+  var h = B(n, "currencyDisplay", "string", new em("code", "symbol", "name"), "symbol");
   "currency" === p && (r["[[currencyDisplay]]"] = h);
   var g = V(n, "minimumIntegerDigits", 1, 21, 1);
   r["[[minimumIntegerDigits]]"] = g;
@@ -605,7 +605,7 @@ function Y(e, t, n) {
   var S = n.minimumSignificantDigits,
     I = n.maximumSignificantDigits;
   (true !== S || true !== I) && (S = V(n, "minimumSignificantDigits", 1, 21, 1), I = V(n, "maximumSignificantDigits", S, 21, 21), r["[[minimumSignificantDigits]]"] = S, r["[[maximumSignificantDigits]]"] = I);
-  var T = F(n, "useGrouping", "boolean", true, true);
+  var T = B(n, "useGrouping", "boolean", true, true);
   r["[[useGrouping]]"] = T;
   var C = c[f].patterns[p];
   return r["[[positivePattern]]"] = C.positivePattern, r["[[negativePattern]]"] = C.negativePattern, r["[[boundFormat]]"] = true, r["[[initializedNumberFormat]]"] = true, l && (e.format = K.call(e)), i.exp.test(i.input), e
@@ -755,7 +755,7 @@ function $(e, t, n) {
   var a = L(t),
     n = en(n, "any", "date"),
     o = new e_;
-  v = F(n, "localeMatcher", "string", new em("lookup", "best fit"), "best fit"), o["[[localeMatcher]]"] = v;
+  v = B(n, "localeMatcher", "string", new em("lookup", "best fit"), "best fit"), o["[[localeMatcher]]"] = v;
   var s = b.DateTimeFormat,
     d = s["[[localeData]]"],
     f = U(s["[[availableLocales]]"], a, o, s["[[relevantExtensionKeys]]"], d);
@@ -765,16 +765,16 @@ function $(e, t, n) {
   if (true !== _ && "UTC" !== (_ = eg(_))) throw RangeError("timeZone is not supported.");
   for (var m in r["[[timeZone]]"] = _, o = new e_, ee)
     if (c.call(ee, m)) {
-      var h = F(n, m, "string", ee[m]);
+      var h = B(n, m, "string", ee[m]);
       o["[[" + m + "]]"] = h
     } var g, E = d[p],
     O = et(E.formats),
-    v = F(n, "formatMatcher", "string", new em("basic", "best fit"), "best fit");
+    v = B(n, "formatMatcher", "string", new em("basic", "best fit"), "best fit");
   for (var m in E.formats = O, g = "basic" === v ? er(o, O) : ea(o, O), ee)
     if (c.call(ee, m) && c.call(g, m)) {
       var S = g[m];
       r["[[" + m + "]]"] = S
-    } var I, T = F(n, "hour12", "boolean");
+    } var I, T = B(n, "hour12", "boolean");
   if (r["[[hour]]"])
     if (T = true === T ? E.hour12 : T, r["[[hour12]]"] = T, true === T) {
       var C = E.hourNo0;
@@ -988,7 +988,7 @@ function ef(e) {
     n = arguments[1],
     r = this["[[availableLocales]]"],
     i = L(e);
-  return t.exp.test(t.input), B(r, i, n)
+  return t.exp.test(t.input), F(r, i, n)
 }
 
 function ep(e, t, n, r, i) {

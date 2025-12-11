@@ -92,8 +92,8 @@ let D = new Chunk710845.Z("OverlayRenderStore"),
   U = {},
   G = {},
   Z = null,
-  B = null,
-  F = new Set([Chunk593472.Jx.FULLSCREEN, Chunk593472.Jx.BORDERLESS_FULLSCREEN, Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.MINIMIZED]),
+  F = null,
+  B = new Set([Chunk593472.Jx.FULLSCREEN, Chunk593472.Jx.BORDERLESS_FULLSCREEN, Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.MINIMIZED]),
   V = new Set([Chunk593472.Jx.MINIMIZED, Chunk593472.Jx.UNKNOWN]),
   H = false,
   Y = new Chunk188274.Z(1e4);
@@ -327,7 +327,7 @@ async function eo(e) {
     fullscreen_type: t.fullscreenType
   }), et(e, "state", E.mM.WAITING_FOR_SCREEN_TYPE_RESOLUTION, "maybeTrackGame - 1"), eU.emitChange(), D.verbose("Determining initial overlay method for pid ".concat(e));
   let n = await ec(e);
-  D.verbose("Overlay method for pid ".concat(e, ": ").concat((0, O.P_)(n.overlayMethod))), er(e, E.zE.SCREEN_TYPE_RESOLUTION), await eu(e, n, "maybeTrackGame - 2"), eh(O.HD), B = n.overlayMethod, eU.emitChange(), await s.Z.updateTrackedGame(e, t)
+  D.verbose("Overlay method for pid ".concat(e, ": ").concat((0, O.P_)(n.overlayMethod))), er(e, E.zE.SCREEN_TYPE_RESOLUTION), await eu(e, n, "maybeTrackGame - 2"), eh(O.HD), F = n.overlayMethod, eU.emitChange(), await s.Z.updateTrackedGame(e, t)
 }
 async function es(e) {
   var t, n, r;
@@ -348,7 +348,7 @@ async function el(e) {
   let n = f.ZP.getGameOrTransformedSubgameForPID(e);
   if (null == n) return D.error("Tried to determine first fullscreen type for untracked pid ".concat(e)), l.Jx.UNKNOWN;
   let r = null != (t = null == n ? true : n.fullscreenType) ? t : l.Jx.UNKNOWN;
-  if (F.has(r)) {
+  if (B.has(r)) {
     let t = await (0, O.hj)(e, (0, O.O0)("first_fullscreen"));
     D.verbose("Resolved fullscreen type for pid ".concat(e, ": ").concat(t)), null != t && (r = t)
   }
@@ -488,7 +488,7 @@ async function eg(e, t) {
 }
 
 function eE() {
-  ed(), j = false, B = null, eL()
+  ed(), j = false, F = null, eL()
 }
 
 function eb(e) {
@@ -604,11 +604,11 @@ function eL() {
 }
 
 function ej() {
-  j = false, B = null
+  j = false, F = null
 }
 
 function eM() {
-  j = false, B = null, eI()
+  j = false, F = null, eI()
 }
 class ek extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -682,7 +682,7 @@ class ek extends(r = Chunk442837.ZP.Store) {
     if (null != e) return null != (n = null == (t = Q(e)) ? true : t.overlayMethod) ? n : true
   }
   getMostRecentOverlayRenderMethod() {
-    return B
+    return F
   }
   getOverlayRenderingTrackedGames() {
     return Object.values(U).filter(e => e.overlayMethod !== E.gl.Disabled && e.state === E.mM.OVERLAY_RENDERING)

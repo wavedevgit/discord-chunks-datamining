@@ -53,9 +53,9 @@ function k(e) {
     isSendingMessage: E
   } = e, [O, v] = i.useState(p.kO8.Modes.DEFAULT), I = (0, c.e7)([T.Z], () => T.Z.enabled), C = d || null != l && null != _, k = (null == a ? true : a.productLine) === D.POd.COLLECTIBLES, G = (0, b.Z)(), {
     selectedGiftingPromotionReward: Z
-  } = (0, w.wD)(), B = null == G ? true : G.giftPurchaseConfirmation, F = (0, y.tK)(null == Z ? true : Z.skuId), V = (0, y.a5)(s) && null != F && null != B, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
+  } = (0, w.wD)(), F = null == G ? true : G.giftPurchaseConfirmation, B = (0, y.tK)(null == Z ? true : Z.skuId), V = (0, y.a5)(s) && null != B && null != F, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != m ? L.intl.string(L.t.qB8aya) : null == s ? null : (e = s.interval === x.rV.MONTH ? C ? V ? B.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : C ? V ? B.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
+    return null != m ? L.intl.string(L.t.qB8aya) : null == s ? null : (e = s.interval === x.rV.MONTH ? C ? V ? F.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : C ? V ? F.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
       skuName: (0, P.MF)(s.id),
       intervalCount: s.intervalCount
     }))

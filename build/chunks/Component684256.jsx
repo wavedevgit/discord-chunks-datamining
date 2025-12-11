@@ -38,7 +38,7 @@ function m(e) {
         className: _.backButton
       }), (0, r.jsx)(s.Heading, {
         variant: "heading-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: a
       })]
     }), (0, r.jsx)(s.Ttm, {

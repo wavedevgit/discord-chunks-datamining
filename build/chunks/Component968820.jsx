@@ -20,10 +20,10 @@ function g(e) {
     children: t,
     revenue: n,
     revenueTrend: g,
-    summaryMetricLabel: m,
-    summaryMetricValue: f,
-    summaryMetricTrend: p,
-    summaryMetricTrendIsPercent: b
+    summaryMetricLabel: f,
+    summaryMetricValue: m,
+    summaryMetricTrend: b,
+    summaryMetricTrendIsPercent: p
   } = e;
   return (0, r.jsx)(i.C3N, {
     label: d.intl.string(d.t.ofmOzb),
@@ -38,11 +38,11 @@ function g(e) {
             isPercent: true
           })
         }), (0, r.jsx)(s.Z, {
-          label: m,
-          value: f,
+          label: f,
+          value: m,
           additionalContent: (0, r.jsx)(l.H, {
-            value: p,
-            isPercent: b
+            value: b,
+            isPercent: p
           })
         })]
       }), t]

@@ -4,13 +4,13 @@
 require.d(exports, {
   Bg: () => U,
   E5: () => ee,
-  Fp: () => B,
+  Fp: () => F,
   JT: () => $,
   L2: () => z,
   MY: () => M,
   Nz: () => V,
   QW: () => et,
-  Q_: () => F,
+  Q_: () => B,
   TO: () => W,
   Z0: () => G,
   bT: () => H,
@@ -98,11 +98,11 @@ function G(e) {
 function Z(e) {
   return e.replace(/[^A-Za-z0-9]/g, "")
 }
-let B = e => {
+let F = e => {
     var t;
     return (null == e ? true : e.type) === m.uaV.CUSTOM_GIFT && (null == e || null == (t = e.embeds) ? true : t.length) === 1 && (null == e ? true : e.embeds[0].type) === m.hBH.GIFT
   },
-  F = e => {
+  B = e => {
     let t;
     if (null == e) return [];
     let n = new Set;

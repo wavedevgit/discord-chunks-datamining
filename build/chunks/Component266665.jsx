@@ -38,16 +38,16 @@ function w(e) {
   let l, {
       guild: c,
       role: d,
-      highestRole: m,
-      selectedItem: f,
-      onClick: p,
+      highestRole: f,
+      selectedItem: m,
+      onClick: b,
       currentPosition: h,
       onDragStart: v,
       onDragReset: O,
       onDragComplete: C,
       roleStyle: N
     } = e,
-    E = (0, y.T)(c, m, d),
+    E = (0, y.T)(c, f, d),
     I = (0, j.fI)(d),
     _ = null == E && !I,
     w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
@@ -83,7 +83,7 @@ function w(e) {
       })
     }),
     L = null != (i = d.colorString) ? i : S.Pbq;
-  return l = w ? (0, r.jsx)(b.Z, {
+  return l = w ? (0, r.jsx)(p.Z, {
     size: 12,
     color: d.colorString,
     className: T.verifiedRoleIcon
@@ -101,9 +101,9 @@ function w(e) {
       [T.dragAfter]: null !== D && h > D
     }),
     id: d.id,
-    selectedItem: f,
+    selectedItem: m,
     itemType: "side",
-    onClick: p,
+    onClick: b,
     onContextMenu: function(e) {
       (0, g.jW)(e, async () => {
         let {
@@ -154,7 +154,7 @@ function w(e) {
       tooltipText: E
     }) : null, (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
-      color: I ? "header-primary" : "interactive-text-active",
+      color: I ? "text-strong" : "interactive-text-active",
       lineClamp: 1,
       children: d.name
     })]
@@ -167,7 +167,7 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: l,
     setSelectedSection: s
-  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), b = (0, c.e7)([p.Z], () => p.Z.roleStyle), [x, j] = i.useState(o.length), {
+  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), p = (0, c.e7)([b.Z], () => b.Z.roleStyle), [x, j] = i.useState(o.length), {
     scrolledToTop: y,
     handleScroll: S
   } = (0, E.V)(), {
@@ -181,7 +181,7 @@ function Z(e) {
       top: Math.max((r - 2) * 34, 0)
     })
   }, [o]);
-  return (0, f.ZP)(() => {
+  return (0, m.ZP)(() => {
     A(n)
   }), i.useEffect(() => {
     o.length > x && A(n), o.length !== x && j(o.length)
@@ -215,7 +215,7 @@ function Z(e) {
           children: (0, r.jsx)(u.P3F, {
             className: T.addRole,
             onClick: () => {
-              m.Z.createRole(t.id), s(I.ZI.DISPLAY)
+              f.Z.createRole(t.id), s(I.ZI.DISPLAY)
             },
             children: (0, r.jsx)(u.qJs, {
               size: "custom",
@@ -243,7 +243,7 @@ function Z(e) {
             onDragStart: P,
             onDragReset: Z,
             onDragComplete: R,
-            roleStyle: b
+            roleStyle: p
           }, e.id))
         })
       })]

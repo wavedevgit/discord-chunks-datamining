@@ -107,7 +107,7 @@ function C() {
         onAvailableWidthChange: D
       }), L && (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: Chunk146927.searchResultsHeader,
         children: Chunk388032.intl.format(Chunk388032.t.zHdzqW, {
           query: G

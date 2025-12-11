@@ -145,8 +145,8 @@ function w(e) {
   let U = null !== M ? M : L,
     G = (0, f.X)(j),
     Z = U ? u.h_8 : u.Pzh,
-    B = U || G ? T.wishlistedOrHoveredIconColor : T.normalIconColor,
-    F = i.useCallback(async e => {
+    F = U || G ? T.wishlistedOrHoveredIconColor : T.normalIconColor,
+    B = i.useCallback(async e => {
       if (e.stopPropagation(), null == v || v(), U && null != x) {
         k(false);
         try {
@@ -193,10 +193,10 @@ function w(e) {
     children: (0, r.jsx)(u.P3F, {
       className: o()(T.wishlistButton, a),
       innerRef: j,
-      onClick: F,
+      onClick: B,
       "aria-label": V,
       children: (0, r.jsx)(Z, {
-        colorClass: B,
+        colorClass: F,
         size: "custom",
         height: s,
         width: s
@@ -208,10 +208,10 @@ function w(e) {
     children: (0, r.jsx)(u.P3F, {
       className: o()(T.wishlistButton, a),
       innerRef: j,
-      onClick: F,
+      onClick: B,
       "aria-label": V,
       children: (0, r.jsx)(Z, {
-        colorClass: B,
+        colorClass: F,
         size: "custom",
         height: s,
         width: s

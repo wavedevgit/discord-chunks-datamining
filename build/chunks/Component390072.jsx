@@ -20,10 +20,10 @@ function u(e) {
   } = e, f = t.entity_type === o.WX.EXTERNAL, b = r.useCallback(e => (0, s.Qt)(t, u)(e), [t, u]), h = (0, c.u)(t, n);
   if (null == h) return null;
   let {
-    IconComponent: m,
-    locationName: x
+    IconComponent: x,
+    locationName: m
   } = h, g = (0, l.jsxs)(l.Fragment, {
-    children: [null != m && (0, l.jsx)(m, {
+    children: [null != x && (0, l.jsx)(x, {
       size: "custom",
       color: "currentColor",
       width: 20,
@@ -33,7 +33,7 @@ function u(e) {
       color: "text-default",
       variant: "text-sm/normal",
       className: d.locationText,
-      children: (0, a.m)(x, true)
+      children: (0, a.m)(m, true)
     })]
   });
   return (0, l.jsx)("div", {

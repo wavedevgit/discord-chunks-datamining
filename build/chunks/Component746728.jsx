@@ -52,7 +52,7 @@ function h(e) {
     children: [(0, r.jsx)(s.Text, {
       className: f.name,
       variant: "text-sm/medium",
-      color: "header-primary",
+      color: "text-strong",
       children: m
     }), (0, r.jsx)(s.Text, {
       className: f.count,

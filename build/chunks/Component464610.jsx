@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk270533 = require("./270533.js");
 
-function b(e) {
+function p(e) {
   let {
     title: t,
     subtitle: n,
@@ -26,9 +26,9 @@ function b(e) {
     page: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.safetyStepRow,
+    className: b.safetyStepRow,
     children: [(0, r.jsxs)("div", {
-      className: p.safetyStepContent,
+      className: b.safetyStepContent,
       children: [(0, r.jsx)(l.qEK, {
         src: i,
         size: l.EFr.SIZE_40,
@@ -36,7 +36,7 @@ function b(e) {
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: t
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/medium",
@@ -48,7 +48,7 @@ function b(e) {
       size: "sm",
       variant: "secondary",
       onClick: () => (0, d.K)(a),
-      text: f.intl.string(f.t.bt75uw)
+      text: m.intl.string(m.t.bt75uw)
     })]
   })
 }
@@ -80,7 +80,7 @@ function h(e) {
         numRules: t
       }
     }, [d, h]),
-    v = (0, m.Q)(t),
+    v = (0, f.Q)(t),
     O = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
     C = v[u.u.DM_AND_SPAM_PROTECTION],
     y = v[u.u.PERMISSIONS],
@@ -88,49 +88,49 @@ function h(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
-      className: p.header,
-      children: f.intl.string(f.t["0A+VSA"])
+      color: "text-strong",
+      className: b.header,
+      children: m.intl.string(m.t["0A+VSA"])
     }), (0, r.jsx)(g.z, {
       guild: t
     }), (0, r.jsxs)("div", {
-      className: p.safetyChecklist,
-      children: [(0, r.jsx)(b, {
+      className: b.safetyChecklist,
+      children: [(0, r.jsx)(p, {
         icon: n(14215),
-        title: f.intl.string(f.t["53eF5o"]),
-        subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+        title: m.intl.string(m.t["53eF5o"]),
+        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
           enabled: O.filter(e => e.enabled).length,
           total: O.length
         }),
         page: u.u.CAPTCHA_AND_RAID_PROTECTION
       }), (0, r.jsx)("div", {
-        className: p.divider
-      }), (0, r.jsx)(b, {
+        className: b.divider
+      }), (0, r.jsx)(p, {
         icon: n(128724),
-        title: f.intl.string(f.t.O0SfFy),
-        subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+        title: m.intl.string(m.t.O0SfFy),
+        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
           enabled: C.filter(e => e.enabled).length,
           total: C.length
         }),
         page: u.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
-        className: p.divider
+        className: b.divider
       }), N && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(b, {
+        children: [(0, r.jsx)(p, {
           icon: n(145136),
-          title: f.intl.string(f.t.uRelgx),
-          subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+          title: m.intl.string(m.t.uRelgx),
+          subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
             enabled: x,
             total: j
           }),
           page: u.u.AUTOMOD
         }), (0, r.jsx)("div", {
-          className: p.divider
+          className: b.divider
         })]
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(p, {
         icon: n(913414),
-        title: f.intl.string(f.t.xrmhRX),
-        subtitle: f.intl.formatToPlainString(f.t.TG7NYK, {
+        title: m.intl.string(m.t.xrmhRX),
+        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
           enabled: y.filter(e => e.enabled).length,
           total: y.length
         }),

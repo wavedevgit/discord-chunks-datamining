@@ -35,7 +35,7 @@ function f(e) {
       children: (0, i.jsx)(u.Z, {})
     }), (0, i.jsx)(a.Heading, {
       className: p.header,
-      color: "header-primary",
+      color: "text-strong",
       variant: "heading-md/extrabold",
       children: d.intl.format(d.t["+qxkzC"], {
         count: n.newClipIds.length

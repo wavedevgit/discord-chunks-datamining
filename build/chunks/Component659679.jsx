@@ -26,7 +26,7 @@ function p(e) {
   } = (0, s._)(t), v = (0, c.X7)(t.guildId, t.userId, null != g ? g : null);
   return (0, r.jsxs)("div", {
     className: f.systemMessageContainer,
-    children: [(0, r.jsx)(a.Ucv, {
+    children: [(0, r.jsx)(o.Ucv, {
       className: f.icon,
       color: "currentColor",
       size: "sm"
@@ -41,7 +41,7 @@ function p(e) {
           shouldShow: true,
           asContainer: true,
           delay: 1e3,
-          children: (0, r.jsx)(a.PUh, {
+          children: (0, r.jsx)(o.PUh, {
             className: f.boostMessageUser,
             variant: "text-md/semibold",
             name: p,
@@ -50,7 +50,7 @@ function p(e) {
           })
         }), d.intl.string(u.default.plwH8d)]
       })
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       timestamp: n,
       timestampFormat: "L",
       className: f.timestamp

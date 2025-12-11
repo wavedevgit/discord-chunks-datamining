@@ -19,12 +19,12 @@ function g(e) {
     label: t,
     description: n,
     guildId: g,
-    guildMetadata: m,
-    isDisabled: f,
-    clearable: p = true
-  } = e, b = (0, l.Wu)([c.Z], () => c.Z.getPrimaryCategories()), h = i.useCallback(e => {
+    guildMetadata: f,
+    isDisabled: m,
+    clearable: b = true
+  } = e, p = (0, l.Wu)([c.Z], () => c.Z.getPrimaryCategories()), h = i.useCallback(e => {
     (0, o.TA)(g, null != e ? e : d.o3)
-  }, [g]), x = i.useMemo(() => b.map(e => {
+  }, [g]), x = i.useMemo(() => p.map(e => {
     let {
       categoryId: t,
       name: n
@@ -33,15 +33,15 @@ function g(e) {
       value: t,
       label: n
     }
-  }), [b]);
-  return 0 === b.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
-    value: m.primaryCategoryId === d.o3 ? null : m.primaryCategoryId,
+  }), [p]);
+  return 0 === p.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
+    value: f.primaryCategoryId === d.o3 ? null : f.primaryCategoryId,
     label: t,
     description: n,
     placeholder: u.intl.string(u.t.XqMe3N),
     options: x,
     onChange: h,
-    isDisabled: f,
-    clearable: p
+    isDisabled: m,
+    clearable: b
   }, x.length)
 }

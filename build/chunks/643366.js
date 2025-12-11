@@ -15,7 +15,7 @@ function c(e) {
   a.useEffect(() => {
     if (e === t) return;
     let n = null;
-    "user-code-input" !== e.type && "handoff" !== e.type && (n = (0, o.B)(e.userCodeData.clientId)), i.default.track(s.rMx.DEVICE_LINK_STEP, {
+    "user-code-input" !== e.type && "handoff" !== e.type && (n = (0, i.B)(e.userCodeData.clientId)), o.default.track(s.rMx.DEVICE_LINK_STEP, {
       previous_step: null == t ? true : t.type,
       current_step: e.type,
       platform_type: n

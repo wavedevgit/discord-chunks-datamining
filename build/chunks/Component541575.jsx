@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk776580 = require("./776580.js");
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,7 +59,7 @@ let x = function(e) {
     analyticsLocations: O
   } = (0, a.ZP)(), C = t.features.has(g.GuildFeatures.ROLE_ICONS), y = e => {
     C || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
-      location: h(b({}, e), {
+      location: h(p({}, e), {
         section: g.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? true : t.id,
@@ -72,10 +72,10 @@ let x = function(e) {
         object: g.qAy.BADGE
       },
       guild: t,
-      perks: (0, m.Yp)()
+      perks: (0, f.Yp)()
     }))
   }, N = (0, r.jsx)(s.Z, {
-    className: p.availabilityIndicator,
+    className: b.availabilityIndicator,
     guild: t,
     guildFeature: g.GuildFeatures.ROLE_ICONS,
     tooltipPosition: "top",
@@ -86,35 +86,35 @@ let x = function(e) {
     })
   });
   return (0, r.jsxs)("div", {
-    className: p.container,
+    className: b.container,
     children: [(0, r.jsxs)(i.vwX, {
-      className: p.formTitle,
+      className: b.formTitle,
       children: [(0, r.jsx)("div", {
-        children: f.intl.string(f.t.B9grJw)
+        children: m.intl.string(m.t.B9grJw)
       }), N]
     }), (0, r.jsx)(i.R94, {
-      className: p.description,
-      children: f.intl.string(f.t.I3YQeV)
+      className: b.description,
+      children: m.intl.string(m.t.I3YQeV)
     }), (0, r.jsxs)("div", {
-      className: p.rolePreviewArea,
+      className: b.rolePreviewArea,
       children: [(0, r.jsx)("div", {
-        className: p.previewContainer,
-        children: null != v ? (0, r.jsx)(d.Z, h(b({}, v), {
-          className: p.roleIconPreview,
+        className: b.previewContainer,
+        children: null != v ? (0, r.jsx)(d.Z, h(p({}, v), {
+          className: b.roleIconPreview,
           enableTooltip: false
         })) : (0, r.jsx)(i.FmF, {
           size: "custom",
           color: "currentColor",
           width: 24,
           height: 24,
-          className: p.preview
+          className: b.preview
         })
       }), (0, r.jsx)(i.Button, {
         onClick: () => t.features.has(g.GuildFeatures.ROLE_ICONS) ? void(0, i.ZDy)(async () => {
           let {
             default: e
           } = await n.e("22942").then(n.bind(n, 660727));
-          return n => (0, r.jsx)(e, h(b({}, n), {
+          return n => (0, r.jsx)(e, h(p({}, n), {
             guildId: t.id,
             onUploadIcon: e => (0, u._l)(j.id, e, null),
             onSelectUnicodeEmoji: e => (0, u._l)(j.id, null, e)
@@ -124,14 +124,14 @@ let x = function(e) {
         }),
         variant: "primary",
         disabled: x,
-        text: f.intl.string(f.t.mD1oGB)
+        text: m.intl.string(m.t.mD1oGB)
       }), null != v ? (0, r.jsx)(i.Button, {
         onClick: () => {
           (0, u._l)(j.id, null, null)
         },
         variant: "critical-secondary",
         disabled: x,
-        text: f.intl.string(f.t["uY+Nk/"])
+        text: m.intl.string(m.t["uY+Nk/"])
       }) : null]
     })]
   })

@@ -28,7 +28,7 @@ let x = function(e) {
     primaryColor: j,
     secondaryColor: v,
     isDisabled: O = false
-  } = e, C = (0, a.e7)([m.Z], () => m.Z.getProps().originalProfile), y = null != C && C.tag !== i;
+  } = e, C = (0, a.e7)([f.Z], () => f.Z.getProps().originalProfile), y = null != C && C.tag !== i;
 
   function N(e) {
     g.Z.updateGuildProfile(n, {
@@ -38,7 +38,7 @@ let x = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.gNt, {
-      label: b.intl.string(p.default["tN+8pD"]),
+      label: p.intl.string(b.default["tN+8pD"]),
       children: e => (0, r.jsxs)("div", {
         className: h.tagContainer,
         children: [(0, r.jsx)("div", {
@@ -66,7 +66,7 @@ let x = function(e) {
           children: (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: b.intl.string(p.default.CrHXHt)
+            children: p.intl.string(b.default.CrHXHt)
           })
         })]
       })
@@ -74,8 +74,8 @@ let x = function(e) {
       className: h.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: b.intl.format(p.default["4ZKDXq"], {
-          articleUrl: u.Z.getArticleURL(f.BhN.SERVER_TAGS)
+        children: p.intl.format(b.default["4ZKDXq"], {
+          articleUrl: u.Z.getArticleURL(m.BhN.SERVER_TAGS)
         })
       })
     })]

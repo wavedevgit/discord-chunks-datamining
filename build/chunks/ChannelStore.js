@@ -77,8 +77,8 @@ let N = new Chunk710845.Z("ChannelStore"),
   U = {},
   G = {},
   Z = new Set,
-  B = {},
-  F = 0,
+  F = {},
+  B = 0,
   V = {},
   H = 0,
   Y = 0,
@@ -97,16 +97,16 @@ class K {
     if (0 === t.length) return null;
     let n = c.Z.database();
     if (null == n || !t.some(e => !Z.has(e))) return null;
-    let r = F;
+    let r = B;
     return (0, u.gs)("loadChannels", async () => {
       let e = t.map(e => {
           if (Z.has(e)) return null;
-          if (null != B[e]) return N.fileOnly("Skipping loading ".concat(e, " because a load is pending")), null;
+          if (null != F[e]) return N.fileOnly("Skipping loading ".concat(e, " because a load is pending")), null;
           let t = d.Z.getAsync(n, e).then(t => (N.fileOnly("Lazy loaded channels for ".concat(e, " #:").concat(t.length)), {
             guildId: e,
             channels: t
           }));
-          return B[e] = t, {
+          return F[e] = t, {
             guildId: e,
             promise: t
           }
@@ -114,14 +114,14 @@ class K {
         i = e.map(e => e.promise);
       try {
         let t = await Promise.all(i);
-        if (F !== r) return N.fileOnly("lastResetTime has changed, skipping loads for " + e.map(e => e.guildId)), null;
+        if (B !== r) return N.fileOnly("lastResetTime has changed, skipping loads for " + e.map(e => e.guildId)), null;
         let n = t.filter(e => !Z.has(e.guildId));
         await l.Z.dispatch({
           type: "LOAD_CHANNELS",
           channels: n
         })
       } catch (t) {
-        for (let n of (N.error("Failed to load channels from disk for " + e.map(e => e.guildId), t), e)) delete B[n.guildId];
+        for (let n of (N.error("Failed to load channels from disk for " + e.map(e => e.guildId), t), e)) delete F[n.guildId];
         throw t
       }
       return null
@@ -212,7 +212,7 @@ function ei(e) {
 
 function ea(e) {
   let t = w;
-  for (let n of (M = {}, R = {}, w = {}, j = {}, L = {}, U = {}, V = {}, B = {}, F = Date.now(), x = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
+  for (let n of (M = {}, R = {}, w = {}, j = {}, L = {}, U = {}, V = {}, F = {}, B = Date.now(), x = e.initialPrivateChannels, e.initialPrivateChannels.forEach(ee), e.guilds)) "partial" === n.dataMode && (a().forEach(t[n.id], en), N.fileOnly("Restoring guild channels for ".concat(n.id, " #:").concat(eL(n.id)))), eo(n);
   ew()
 }
 
@@ -267,7 +267,7 @@ function ec(e) {
 }
 
 function eu() {
-  N.fileOnly("initializeClear()"), M = {}, R = {}, w = {}, U = {}, j = {}, D = {}, V = {}, L = {}, Z = new Set, B = {}, F = Date.now()
+  N.fileOnly("initializeClear()"), M = {}, R = {}, w = {}, U = {}, j = {}, D = {}, V = {}, L = {}, Z = new Set, F = {}, B = Date.now()
 }
 
 function ed(e) {
@@ -512,7 +512,7 @@ class ex extends(r = Chunk442837.ZP.Store) {
   getDebugInfo() {
     return {
       loadedGuildIds: Array.from(Z).sort(Chunk709054.default.compare),
-      pendingGuildLoads: Object.keys(B).sort(Chunk709054.default.compare),
+      pendingGuildLoads: Object.keys(F).sort(Chunk709054.default.compare),
       guildSizes: Object.keys(w).sort(Chunk709054.default.compare).map(e => "".concat(e, ": ").concat(eL(e)))
     }
   }

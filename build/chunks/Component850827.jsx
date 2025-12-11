@@ -50,9 +50,9 @@ let D = (0, Chunk730749.Z)(e => {
   } = e, U = (0, l.e7)([m.default], () => {
     let e = m.default.getCurrentUser();
     return s()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-  }), G = M === b.Y.STREAM_PREVIEW || null != o, Z = (0, g.Z)(t), B = Z || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, F = (null == t ? true : t.type) === R.IIU.HANG_STATUS, V = (0, l.e7)([h.Z, _.Z], () => {
+  }), G = M === b.Y.STREAM_PREVIEW || null != o, Z = (0, g.Z)(t), F = Z || G ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL, B = (null == t ? true : t.type) === R.IIU.HANG_STATUS, V = (0, l.e7)([h.Z, _.Z], () => {
     var e;
-    return F ? _.Z.getChannel(null == (e = h.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
+    return B ? _.Z.getChannel(null == (e = h.Z.getVoiceStateForUser(i.id)) ? true : e.channelId) : null
   }), H = () => {
     if ((0, E.Z)(t)) return (0, r.jsx)(y.Z, {
       platform: d.Z.get(R.ABu.XBOX),
@@ -100,7 +100,7 @@ let D = (0, Chunk730749.Z)(e => {
       isCurrentUser: U.id === i.id,
       applicationStream: o,
       onAction: k
-    }) : F && null != V ? (0, r.jsx)(S.Z, {
+    }) : B && null != V ? (0, r.jsx)(S.Z, {
       userId: i.id,
       variant: j,
       hangStatusChannel: V,
@@ -128,11 +128,11 @@ let D = (0, Chunk730749.Z)(e => {
         onAction: k
       })]
     })
-  }, Y = B === f.Z.Direction.VERTICAL;
+  }, Y = F === f.Z.Direction.VERTICAL;
   return (0, r.jsx)(f.Z, {
     grow: 0,
     align: f.Z.Align.STRETCH,
-    direction: B,
+    direction: F,
     wrap: Y ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
     className: a()(u, w.buttonsWrapper, Y ? w.vertical : w.horizontal),
     children: H()

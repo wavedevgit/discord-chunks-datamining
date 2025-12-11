@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk795691 = require("./795691.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk39169 = require("./39169.js");
-let p = () => null;
+let b = () => null;
 
-function b(e) {
+function p(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
@@ -30,16 +30,16 @@ function b(e) {
   return (0, r.jsx)(s.d, {
     multi: true,
     hidePills: true,
-    wrapperClassName: f.selectWrapper,
+    wrapperClassName: m.selectWrapper,
     options: l,
     value: t,
-    placeholder: m.intl.string(m.t.JTLolO),
+    placeholder: f.intl.string(f.t.JTLolO),
     onChange: n,
     isDisabled: 20 === t.length || i,
     matchSorterOptions: a,
     clearQueryOnSelect: true,
-    customPillContainerClassName: f.pills,
-    renderCustomPill: p
+    customPillContainerClassName: m.pills,
+    renderCustomPill: b
   })
 }
 
@@ -50,7 +50,7 @@ function h(e) {
     disabled: i
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: f.selectedGames,
+    className: m.selectedGames,
     children: t.map(e => (0, r.jsx)(u.Z, {
       applicationId: e,
       selected: true,
@@ -70,22 +70,22 @@ function j(e) {
     d.Z.updateGuildProfile(s, {
       gameApplicationIds: e
     })
-  }, [s]), f = i.useCallback(e => {
+  }, [s]), m = i.useCallback(e => {
     let t = c.filter(t => t !== e);
     d.Z.updateGuildProfile(s, {
       gameApplicationIds: t
     })
-  }, [s, c]), p = i.useRef(c), j = i.useMemo(() => (a().isEqual(new Set(c), new Set(p.current)) || (p.current = [...c]), p.current), [c]);
+  }, [s, c]), b = i.useRef(c), j = i.useMemo(() => (a().isEqual(new Set(c), new Set(b.current)) || (b.current = [...c]), b.current), [c]);
   return (0, r.jsxs)(o.C3N, {
-    label: m.intl.string(m.t.BR68vK),
-    description: m.intl.string(m.t.MobxiB),
-    children: [(0, r.jsx)(b, {
+    label: f.intl.string(f.t.BR68vK),
+    description: f.intl.string(f.t.MobxiB),
+    children: [(0, r.jsx)(p, {
       gameApplicationIds: c,
       handleChange: u,
       disabled: !l
     }), (0, r.jsx)(h, {
       gameApplicationIds: j,
-      onRemoveGame: f,
+      onRemoveGame: m,
       disabled: !l
     }), (0, r.jsx)(g.Z, {
       guildId: s,

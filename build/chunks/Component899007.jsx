@@ -88,11 +88,11 @@ function R(e) {
     live: U
   } = (0, g.Z)(t.id), [G] = U, {
     status: Z,
-    isMobileOnline: B
+    isMobileOnline: F
   } = (0, s.cj)([p.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : p.Z.getStatus(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), F = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, w), {
+  })), B = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, w), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K
@@ -107,9 +107,9 @@ function R(e) {
     size: V,
     "aria-label": t.username,
     imageClassName: null != R ? I.overlay : true,
-    status: k ? O.Skl.UNKNOWN : F,
+    status: k ? O.Skl.UNKNOWN : B,
     statusBackdropColor: M && !k ? (0, l.QFD)(x) : true,
-    isMobile: B,
+    isMobile: F,
     statusTooltip: true,
     statusTooltipDelay: y.vB
   });

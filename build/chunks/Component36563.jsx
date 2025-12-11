@@ -264,7 +264,7 @@ function P(e) {
         })
       }, e.id))
     })
-  }), B = () => G ? (0, r.jsx)(u.yRy, {
+  }), F = () => G ? (0, r.jsx)(u.yRy, {
     targetElementRef: M,
     renderPopout: Z,
     shouldShow: L,
@@ -303,6 +303,6 @@ function P(e) {
       size: _,
       shouldShowOverflowCount: G,
       disableUsernameTooltip: S
-    }), B()]
+    }), F()]
   })
 }

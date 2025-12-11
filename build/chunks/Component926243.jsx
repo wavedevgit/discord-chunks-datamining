@@ -163,7 +163,7 @@ function w(e) {
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: Z
-  } = e, [B, F] = i.useState(""), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(_), [_]), Y = i.useRef(null), {
+  } = e, [F, B] = i.useState(""), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(_), [_]), Y = i.useRef(null), {
     emoji: W,
     size: K,
     isDisabled: z,
@@ -197,7 +197,7 @@ function w(e) {
     return (0, i.createElement)("li", C(I({}, d), {
       key: a,
       ref: Y
-    }), B !== P(q, f) && (0, r.jsx)(R, {
+    }), F !== P(q, f) && (0, r.jsx)(R, {
       ref: l,
       emoji: W,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(W),
@@ -215,7 +215,7 @@ function w(e) {
         if (null != Y.current && null != G && null != k && !e.shiftKey && null != W.name && U && !V && j) {
           let e = null == W.id ? p.ZP.convertNameToSurrogate(W.name) : W.name,
             t = Y.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, F(P(q, f)), (0, h.U)(k, e, W.id, t)
+          t.x = G.x + (q + 1) * K, B(P(q, f)), (0, h.U)(k, e, W.id, t)
         }
         Q(e)
       },

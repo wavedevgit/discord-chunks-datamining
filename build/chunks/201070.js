@@ -257,7 +257,7 @@ function Z(e) {
   }
 }
 
-function B(e, t) {
+function F(e, t) {
   var n;
   let {
     currentPageChunkNumber: r,
@@ -282,9 +282,9 @@ function B(e, t) {
   }
 }
 
-function F(e, t, n) {
+function B(e, t, n) {
   var r, i, a, o, s, l;
-  let c = B(e, n),
+  let c = F(e, n),
     u = g.Z.getElasticSearchPaginationByGuildId(e),
     f = (0, p.t3)(n);
   switch (c) {
@@ -322,7 +322,7 @@ async function H(e) {
     o = g.Z.getPaginationStateByGuildId(e),
     s = I(e),
     l = P(s),
-    [c, u] = F(e, l, o),
+    [c, u] = B(e, l, o),
     d = U(k(i), u),
     f = null != (t = i.selectedSort) ? t : m.d$.ORDER_BY_GUILD_JOINED_AT_DESC;
   if (V(s, d) && (0, a.isEqual)(c, l.cursor)) return;

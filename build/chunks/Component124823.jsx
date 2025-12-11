@@ -93,7 +93,7 @@ function w(e) {
             })
           }), (0, r.jsxs)("div", {
             className: T.header,
-            children: [(0, r.jsx)(j.Z, {
+            children: [(0, r.jsx)(x.Z, {
               user: n,
               displayProfile: D,
               themeType: Z.l.SIDEBAR,
@@ -121,8 +121,8 @@ function w(e) {
               className: N.overlay,
               children: [(0, r.jsx)(C.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
-                headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                headingColor: "text-strong",
+                children: (0, r.jsx)(j.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
@@ -130,7 +130,7 @@ function w(e) {
                 })
               }), (0, r.jsx)(C.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
-                headingColor: "header-primary",
+                headingColor: "text-strong",
                 children: (0, r.jsx)(v.Z, {
                   userId: n.id
                 })

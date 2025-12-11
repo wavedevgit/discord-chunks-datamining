@@ -38,7 +38,7 @@ function I(e) {
       e && i(true)
     });
     return r.useEffect(() => {
-      a && (0, g.zZ)(j.rMx.APP_DIRECTORY_COLLECTION_VIEWED, {
+      a && (0, b.zZ)(j.rMx.APP_DIRECTORY_COLLECTION_VIEWED, {
         collection_id: t,
         collection_position: n
       })
@@ -47,7 +47,7 @@ function I(e) {
     collectionId: t.id,
     index: n
   }), c = r.useCallback((e, a) => {
-    (0, g.zZ)(j.rMx.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
+    (0, b.zZ)(j.rMx.APP_DIRECTORY_COLLECTION_ITEM_CLICKED, {
       collection_id: t.id,
       item_position: a,
       collection_position: n,
@@ -61,7 +61,7 @@ function I(e) {
         [_.titleExtraPadding]: 0 === n
       }),
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: t.title
     }), (0, a.jsx)("div", {
       className: _.content,
@@ -76,10 +76,10 @@ function I(e) {
 let S = function(e) {
   let {
     onSelectApplication: t
-  } = e, n = (0, p.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? o.E.PREVIEW : o.E.ACTIVE, i = (0, p.e7)([b.Z], () => b.Z.getFetchState({
+  } = e, n = (0, p.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? o.E.PREVIEW : o.E.ACTIVE, i = (0, p.e7)([g.Z], () => g.Z.getFetchState({
     surface: y,
     activeState: n
-  })), l = (0, p.e7)([b.Z], () => b.Z.getCollections({
+  })), l = (0, p.e7)([g.Z], () => g.Z.getCollections({
     surface: y,
     activeState: n
   }));
@@ -90,13 +90,13 @@ let S = function(e) {
     })
   }, [n]);
   let s = r.useMemo(() => null == l ? true : l.filter(e => e.type !== u.o.GALLERY), [l]);
-  return i === b.M.ERROR ? (0, a.jsx)("div", {
+  return i === g.M.ERROR ? (0, a.jsx)("div", {
     className: _.errorContainer,
     children: (0, a.jsx)(C.Z, {
       className: _.error
     })
   }) : (0, a.jsx)(x.Z, {
-    loading: i === b.M.FETCHING,
+    loading: i === g.M.FETCHING,
     children: null == s ? true : s.map((e, n) => (0, a.jsx)(I, {
       collection: e,
       index: n,

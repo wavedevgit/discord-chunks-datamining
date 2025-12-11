@@ -103,12 +103,12 @@ let j = (0, Chunk663993.Un)({
     webpackId: 926665,
     name: "VerifyConnectedAccountError"
   }),
-  B = (0, Chunk663993.Un)({
+  F = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("800"), require.e("67127")]).then(require.bind(require, 832462)),
     webpackId: 832462,
     name: "LinkConnectedAccount"
   }),
-  F = (0, Chunk663993.Un)({
+  B = (0, Chunk663993.Un)({
     createPromise: () => require.e("46455").then(require.bind(require, 924339)),
     webpackId: 924339,
     name: "LinkAuthorize"
@@ -277,10 +277,10 @@ class ea extends Chunk473749.Component {
         component: z
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CONNECTION_LINK(":type"),
-        component: B
+        component: F
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.CONNECTION_LINK_AUTHORIZE(":type"),
-        component: F
+        component: B
       }), (0, Chunk54381.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.ACTIVATE,
         component: V

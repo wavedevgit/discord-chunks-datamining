@@ -63,7 +63,7 @@ function a(t) {
       className: c.textContainer,
       children: [(0, i.jsx)(s.Text, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: r()({
           [c.completedText]: u
         }),

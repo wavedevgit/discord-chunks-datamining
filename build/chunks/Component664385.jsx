@@ -64,8 +64,8 @@ function U(e) {
   var t, I, x, U, G;
   let {
     quest: Z,
-    memberListItemRef: B,
-    applicationStream: F,
+    memberListItemRef: F,
+    applicationStream: B,
     position: V,
     closePopout: H,
     updatePosition: Y,
@@ -73,7 +73,7 @@ function U(e) {
     name: K
   } = e, z = (0, s.e7)([g.Z], () => {
     var e;
-    return null != (e = g.Z.getChannel(null == F ? true : F.channelId)) ? e : null
+    return null != (e = g.Z.getChannel(null == B ? true : B.channelId)) ? e : null
   }), q = (0, T.hf)({
     quest: Z,
     questContent: b.jn.MEMBERS_LIST,
@@ -89,7 +89,7 @@ function U(e) {
     }
   }, [H, es]), i.useEffect(() => {
     let e = es.current,
-      t = B.current;
+      t = F.current;
     if (null == e || null == t) return;
     let n = new MutationObserver(() => Y());
     return n.observe(e, {
@@ -98,7 +98,7 @@ function U(e) {
     }), () => {
       n.disconnect()
     }
-  }, [B, es, Y]);
+  }, [F, es, Y]);
   let el = (0, u.q_F)({
       from: {
         height: 0
@@ -153,7 +153,7 @@ function U(e) {
       e.stopPropagation(), ef()
     },
     em = () => {
-      (0, S.Rc)(F, z) && null != z ? ((0, E._3)({
+      (0, S.Rc)(B, z) && null != z ? ((0, E._3)({
         questId: Z.id,
         questContent: b.jn.MEMBERS_LIST,
         questContentCTA: E.jZ.WATCH_STREAM,
@@ -171,7 +171,7 @@ function U(e) {
             questContentCTA: E.jZ.WATCH_STREAM_CONFIRM,
             trackGuildAndChannelMetadata: true,
             sourceQuestContent: b.jn.MEMBERS_LIST
-          }), d.default.selectVoiceChannel(z.id), (0, f.iV)(F))
+          }), d.default.selectVoiceChannel(z.id), (0, f.iV)(B))
         }, t))
       })) : ep()
     },
@@ -191,7 +191,7 @@ function U(e) {
         handleClickCta: ep,
         tileAssetType: "reward"
       };
-      if ((0, S.Rc)(F, z)) return {
+      if ((0, S.Rc)(B, z)) return {
         headerText: w.intl.string(w.t.Bz6SkH),
         ctaText: w.intl.string(w.t.BXFP30),
         handleClickCta: em,
@@ -212,7 +212,7 @@ function U(e) {
     "aria-expanded": ei,
     className: D.wrapper,
     style: {
-      width: null != (G = null == (U = B.current) ? true : U.clientWidth) ? G : k,
+      width: null != (G = null == (U = F.current) ? true : U.clientWidth) ? G : k,
       height: el.height,
       overflow: ei ? "visible" : "hidden",
       borderRadius: ed

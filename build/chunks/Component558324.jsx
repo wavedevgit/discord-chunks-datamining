@@ -16,10 +16,10 @@ let o = e => {
       value: d,
       onRemoveTag: u,
       onAddTag: g,
-      onAddTagError: m,
-      maxTaxLength: f,
-      maxTags: p,
-      disabled: b,
+      onAddTagError: f,
+      maxTaxLength: m,
+      maxTags: b,
+      disabled: p,
       placeholder: h
     } = e,
     x = function(e, t) {
@@ -40,13 +40,13 @@ let o = e => {
   let [j, v] = i.useState(null != d ? d : ""), O = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
-      if (null != p && o.length >= p) {
-        null == m || m(s.intl.string(s.t.Xx7XeB));
+      if (null != b && o.length >= b) {
+        null == f || f(s.intl.string(s.t.Xx7XeB));
         return
       }
       g(e), v("")
     }
-  }, [j, p, g, m, o.length]), C = i.useCallback(e => {
+  }, [j, b, g, f, o.length]), C = i.useCallback(e => {
     switch (e.key) {
       case a.vn.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
@@ -85,8 +85,8 @@ let o = e => {
     value: j,
     onKeyDown: C,
     onChange: v,
-    maxLength: f,
-    disabled: b,
+    maxLength: m,
+    disabled: p,
     onBlur: O,
     placeholder: h
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

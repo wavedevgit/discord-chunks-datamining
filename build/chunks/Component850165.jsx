@@ -26,7 +26,7 @@ function s(t) {
         className: a.textContainer,
         children: [(0, i.jsx)(r.Heading, {
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: s
         }), null != o && (0, i.jsx)(r.Text, {
           variant: "text-md/medium",

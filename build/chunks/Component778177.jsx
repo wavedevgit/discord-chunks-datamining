@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk399781 = require("./399781.js");
 
-function B(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,14 +52,14 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      B(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -206,11 +206,11 @@ let Q = (e, t, n) => {
       })]
     })
   },
-  $ = e => (0, r.jsx)(J, H(F({}, e), {
+  $ = e => (0, r.jsx)(J, H(B({}, e), {
     className: Z.user,
     renderResult: Q
   })),
-  ee = e => (0, r.jsx)(J, H(F({}, e), {
+  ee = e => (0, r.jsx)(J, H(B({}, e), {
     renderResult: X
   }));
 
@@ -244,7 +244,7 @@ function en(e) {
         children: t
       }, e.type + t)
     });
-  return (0, r.jsxs)(h.P3F, H(F({
+  return (0, r.jsxs)(h.P3F, H(B({
     className: Z.option,
     onClick: t,
     onFocus: n
@@ -336,7 +336,7 @@ let er = {
         [d, f] = (0, b.US)(u),
         m = d === p.z.SEARCH_AUTHOR_TYPE_FILTER_NEW_BADGE,
         g = (0, R.Ko)(null != (t = n.token) ? t : "");
-      return (0, r.jsxs)(h.P3F, H(F({
+      return (0, r.jsxs)(h.P3F, H(B({
         className: o()(Z.option, Z.searchOption),
         onClick: i,
         onFocus: a
@@ -418,10 +418,10 @@ class ei extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, B(this, "state", {
+    super(...e), t = this, F(this, "state", {
       dateHint: (0, w.Pr)(),
       selectedIndex: false
-    }), B(this, "scrollSelectedIndexIntoView", () => {
+    }), F(this, "scrollSelectedIndexIntoView", () => {
       let {
         navId: e,
         resultsState: t
@@ -436,7 +436,7 @@ class ei extends Chunk473749.PureComponent {
         block: "nearest",
         inline: "nearest"
       })
-    }), B(this, "handleDateChange", e => {
+    }), F(this, "handleDateChange", e => {
       let t = (0, R.Tm)(this.props.searchContext);
       (0, M.bh)({
         searchContext: this.props.searchContext,
@@ -450,7 +450,7 @@ class ei extends Chunk473749.PureComponent {
         isSearchFilterComplete: false,
         searchAutocompleteSelectAction: k.ZW.CLICK
       }), this.setSearchQuery(e.format(U.b2L) + " ", true)
-    }), B(this, "keepCurrentOptionSelected", (e, t) => {
+    }), F(this, "keepCurrentOptionSelected", (e, t) => {
       let {
         selectedIndex: n
       } = this.state, {
@@ -473,18 +473,18 @@ class ei extends Chunk473749.PureComponent {
           });
         false !== n ? this.setSelectedIndex(n) : t.selectedIndex >= i && this.setSelectedIndex(i - 1)
       }
-    }), B(this, "focusNextOption", () => {
+    }), F(this, "focusNextOption", () => {
       this.focusOtherOption(1)
-    }), B(this, "focusPreviousOption", () => {
+    }), F(this, "focusPreviousOption", () => {
       this.focusOtherOption(false)
-    }), B(this, "focusOtherOption", e => {
+    }), F(this, "focusOtherOption", e => {
       let {
         selectedIndex: t
       } = this.state, {
         resultsState: n
       } = this.props;
       (0, R.Fz)(n.mode.filter) || this.focusOption(t + e)
-    }), B(this, "focusOption", e => {
+    }), F(this, "focusOption", e => {
       let t = e,
         {
           autocompletes: n
@@ -492,7 +492,7 @@ class ei extends Chunk473749.PureComponent {
         r = this.shouldShowSearchQuery(),
         i = this.shouldShowSearchInSelectedChannel();
       t < false || !r && !i && t < 0 ? t = (0, R.BU)(n) - 1 : (r || i) && t >= (0, R.BU)(n) ? t = false : !r && t >= (0, R.BU)(n) && (t = 0), this.setSelectedIndex(t)
-    }), B(this, "selectOption", e => {
+    }), F(this, "selectOption", e => {
       let {
         selectedIndex: t,
         searchAutocompleteSelectAction: n
@@ -548,7 +548,7 @@ class ei extends Chunk473749.PureComponent {
       }
       let d = q(s.resultText);
       return this.setSearchQuery(s.resultText, d), true
-    }), B(this, "setSearchQuery", function(e) {
+    }), F(this, "setSearchQuery", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
       x.Z.setSearchQuery({
         query: e,
@@ -557,12 +557,12 @@ class ei extends Chunk473749.PureComponent {
         resultsState: t.props.resultsState,
         searchQuerySource: k.w7.SEARCH_POPOUT
       }), t.setSelectedIndex(false)
-    }), B(this, "shouldShowSearchQuery", () => {
+    }), F(this, "shouldShowSearchQuery", () => {
       let {
         mode: e
       } = this.props.resultsState;
       return e.type !== U.Sap.FILTER && e.type !== U.Sap.EMPTY && !(0, R.Fz)(e.filter)
-    }), B(this, "shouldShowSearchInSelectedChannel", () => {
+    }), F(this, "shouldShowSearchInSelectedChannel", () => {
       let {
         searchContext: e,
         resultsState: {
@@ -570,7 +570,7 @@ class ei extends Chunk473749.PureComponent {
         }
       } = this.props;
       return e.type === U.aib.DMS && (0, R.R6)(e) && t.type === U.Sap.EMPTY && !(0, R.Fz)(t.filter)
-    }), B(this, "handleSearchInChannel", e => {
+    }), F(this, "handleSearchInChannel", e => {
       var t;
       let {
         searchAutocompleteSelectAction: n
@@ -588,7 +588,7 @@ class ei extends Chunk473749.PureComponent {
         s = (0, R.X3)(r),
         l = "".concat(null != (t = null == o ? true : o.key) ? t : a.toString(), " ").concat(s);
       return this.setSearchQuery(l, true), true
-    }), B(this, "renderDatePicker", () => (0, r.jsxs)("div", {
+    }), F(this, "renderDatePicker", () => (0, r.jsxs)("div", {
       className: Z.datePicker,
       children: [(0, r.jsx)(z, {
         onSelect: this.handleDateChange,
@@ -606,11 +606,11 @@ class ei extends Chunk473749.PureComponent {
           children: this.state.dateHint
         })]
       })]
-    })), B(this, "handleHintClick", () => {
+    })), F(this, "handleHintClick", () => {
       this.setSearchQuery(this.state.dateHint, true)
-    }), B(this, "performSearch", e => {
+    }), F(this, "performSearch", e => {
       C.S.dispatch(U.CkL.PERFORM_SEARCH, e)
-    }), B(this, "renderAutocompletes", () => {
+    }), F(this, "renderAutocompletes", () => {
       let {
         selectedIndex: e
       } = this.state, {
@@ -646,7 +646,7 @@ class ei extends Chunk473749.PureComponent {
             var s, l;
             if (null == a || null == i) return null;
             let c = e === (o += 1);
-            return (0, r.jsx)(m, F({
+            return (0, r.jsx)(m, B({
               searchContext: n,
               group: null != (s = a.group) ? s : i.group,
               result: a,

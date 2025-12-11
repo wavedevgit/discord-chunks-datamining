@@ -669,12 +669,12 @@ var w = Chunk473749.forwardRef(function(e, t) {
           clickHandler: c
         })
       }, [U, c]),
-      B = r.useCallback(function(e) {
+      F = r.useCallback(function(e) {
         return U(e, {
           mouseHandler: u
         })
       }, [U, u]),
-      F = r.useCallback(function(e) {
+      B = r.useCallback(function(e) {
         return U(e, {
           mouseHandler: d
         })
@@ -683,11 +683,11 @@ var w = Chunk473749.forwardRef(function(e, t) {
       var e = function(e, t, n) {
         null != n && window.addEventListener(e, t)
       };
-      return e("click", G, l), e("mousedown", Z, c), e("mousemove", B, u), e("mouseup", F, d),
+      return e("click", G, l), e("mousedown", Z, c), e("mousemove", F, u), e("mouseup", B, d),
         function() {
-          window.removeEventListener("click", G), window.removeEventListener("mousedown", Z), window.removeEventListener("mousemove", B), window.removeEventListener("mouseup", B)
+          window.removeEventListener("click", G), window.removeEventListener("mousedown", Z), window.removeEventListener("mousemove", F), window.removeEventListener("mouseup", F)
         }
-    }, [G, Z, B, F, l, c, u, d]), r.useEffect(function() {
+    }, [G, Z, F, B, l, c, u, d]), r.useEffect(function() {
       var e = y.current,
         t = new ResizeObserver(function() {
           ! function(e) {

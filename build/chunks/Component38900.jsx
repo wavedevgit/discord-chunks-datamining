@@ -19,9 +19,9 @@ let u = () => (0, Chunk54381.jsx)("div", {
   }).map((e, t) => (0, r.jsxs)("div", {
     className: s.cardsContainer,
     children: [(0, r.jsx)("div", {
-      className: a()(o.catalogBanner, c.bannerSkeleton)
+      className: a()(i.catalogBanner, c.bannerSkeleton)
     }), Array.from({
       length: 12
-    }, (e, t) => (0, r.jsx)(i.Z, {}, t))]
+    }, (e, t) => (0, r.jsx)(o.Z, {}, t))]
   }, t))
 })

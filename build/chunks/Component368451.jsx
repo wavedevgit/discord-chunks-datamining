@@ -166,21 +166,21 @@ function I(e) {
       k(e), G(e)
     }
   }, [a, I, C]);
-  let B = i.useCallback(() => {
+  let F = i.useCallback(() => {
     U !== M && A({
       type: d.re.STRING_SELECT,
       values: Array.from(M)
     }) && G(M)
   }, [M, U, G, A]);
   i.useEffect(() => {
-    !L && (M.size === U.size && Array.from(U).every(e => M.has(e)) || B())
-  }, [L, M, U, B]);
-  let F = c.UN;
-  D ? F = c.gz : 0 === u && (F = c.s6);
+    !L && (M.size === U.size && Array.from(U).every(e => M.has(e)) || F())
+  }, [L, M, U, F]);
+  let B = c.UN;
+  D ? B = c.gz : 0 === u && (B = c.s6);
   let V = (0, c.cY)({
     value: M,
     onChange: e => k(e),
-    onSelectInteraction: F
+    onSelectInteraction: B
   });
   return (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)("div", {

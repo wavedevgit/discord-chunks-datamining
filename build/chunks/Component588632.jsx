@@ -46,7 +46,7 @@ function m(e) {
       emojiName: null == (n = o.emoji) ? true : n.name,
       animated: null != (r = null == (i = o.emoji) ? true : i.animated) && r
     })
-  }, [f]), v = i.useCallback((e, t) => {
+  }, [f]), x = i.useCallback((e, t) => {
     if (null == e || t.inPill) return;
     let n = f.get(e.value);
     if (null == n || !d(n.emoji)) return;
@@ -70,7 +70,7 @@ function m(e) {
         })
       })]
     })
-  }, [p, h, f]), x = i.useCallback(e => {
+  }, [p, h, f]), v = i.useCallback(e => {
     let t = [];
     e.forEach(e => {
       let n = f.get(e);
@@ -80,10 +80,10 @@ function m(e) {
   return (0, l.jsx)(o.d, {
     multi: true,
     options: g,
-    onChange: x,
+    onChange: v,
     value: n,
     closeOnSelect: false,
-    renderOptionSuffix: v,
+    renderOptionSuffix: x,
     renderOptionPrefix: j
   })
 }

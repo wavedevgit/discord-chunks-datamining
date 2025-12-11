@@ -67,7 +67,7 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -407,7 +407,7 @@ function eM() {
 }
 
 function ek(e, t, n, r) {
-  let i = F(Z({}, e), {
+  let i = B(Z({}, e), {
     played: null != e.lastFocused && 0 !== e.lastFocused ? l()(new Date(e.lastFocused * N.Z.Millis.SECOND)).fromNow() : " ",
     overlay: ex(e),
     verified: n.isGameInDatabase(e),
@@ -456,7 +456,7 @@ function eZ() {
   }
 }
 
-function eB(e, t) {
+function eF(e, t) {
   let n = es.gameOverrides[e];
   null != n && (es.gameOverrides[t] = n, delete es.gameOverrides[e]);
   let r = es.enableOverlay[e];
@@ -467,7 +467,7 @@ function eB(e, t) {
   null != a && (es.enableDetection[t] = a, delete es.enableDetection[e])
 }
 
-function eF(e) {
+function eB(e) {
   null != e && 0 !== e.length && (e.forEach(e => {
     if (es.gamesSeen.some(t => {
         if (t.name === e.name || null != t.id && t.id === e.id) {
@@ -476,7 +476,7 @@ function eF(e) {
             let n = es.gameOverrides[eP(e)];
             null != n && (n.lastFocused = e.lastFocused)
           }
-          return t.distributor !== e.distributor && (t.distributor = e.distributor), t.gameName !== e.gameName && (t.gameName = e.gameName), t.id === e.id && eP(t) !== eP(e) && (eB(eP(t), eP(e)), t.exePath = e.exePath), eI(t, e), true
+          return t.distributor !== e.distributor && (t.distributor = e.distributor), t.gameName !== e.gameName && (t.gameName = e.gameName), t.id === e.id && eP(t) !== eP(e) && (eF(eP(t), eP(e)), t.exePath = e.exePath), eI(t, e), true
         }
         returnfalse
       }));
@@ -505,7 +505,7 @@ function eH(e, t) {
 }
 
 function eY(e) {
-  eF(et)
+  eB(et)
 }
 
 function eW(e) {
@@ -542,9 +542,9 @@ function eX(e) {
     if (null == e) return;
     (r = Z({}, e)).hidden = false, et.push(r), t = eP(r)
   } else t = eP(r), r.hidden && (eo[t] = true), r.hidden = false;
-  (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), es.gameOverrides[t] = F(Z({}, r), {
+  (null == r.lastFocused || 0 === r.lastFocused) && (r.lastFocused = Math.floor(Date.now() / 1e3)), es.gameOverrides[t] = B(Z({}, r), {
     add: true
-  }), eF(et), eZ(), eM(), eA()
+  }), eB(et), eZ(), eM(), eA()
 }
 
 function eJ() {
@@ -631,7 +631,7 @@ function e8(e) {
 }
 
 function e6() {
-  Chunk353926.Z.hasLoadedExperiments && K.length > 0 && (eF(K), K = [])
+  Chunk353926.Z.hasLoadedExperiments && K.length > 0 && (eB(K), K = [])
 }
 
 function e7(e) {

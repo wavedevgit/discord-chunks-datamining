@@ -80,12 +80,12 @@ function Z(e) {
       children: "".concat(_.originLabel, "  •  ").concat(_.timestampLabel)
     }), (0, r.jsx)(c.Fbu, {
       size: "xxs",
-      color: l.Z.colors.TEXT_LOW_CONTRAST
+      color: l.Z.colors.TEXT_MUTED
     })]
   })
 }
 
-function B(e, t) {
+function F(e, t) {
   let {
     popouts: n,
     setPopout: r
@@ -106,7 +106,7 @@ function B(e, t) {
   }
 }
 
-function F(e) {
+function B(e) {
   let {
     mergedMessageRecord: t,
     content: n,
@@ -119,7 +119,7 @@ function F(e) {
     onPopoutRequestClose: u,
     showUsernamePopout: d,
     showAvatarPopout: f
-  } = B(t, i);
+  } = F(t, i);
   return (0, r.jsx)(h.Z, {
     childrenExecutedCommand: (0, r.jsx)(M.Z, {
       reportingUserId: a,
@@ -198,7 +198,7 @@ function V(e) {
     className: G.container,
     children: (0, r.jsxs)("div", {
       className: G.content,
-      children: [(0, r.jsx)(F, {
+      children: [(0, r.jsx)(B, {
         mergedMessageRecord: m,
         content: O,
         channel: A,

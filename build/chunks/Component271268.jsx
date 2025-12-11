@@ -71,7 +71,7 @@ function R() {
   }, [U]);
   let {
     monthName: Z
-  } = (0, Chunk26118.CE)(require, Chunk388032.intl.currentLocale), B = null != exports;
+  } = (0, Chunk26118.CE)(require, Chunk388032.intl.currentLocale), F = null != exports;
   return (0, Chunk54381.jsxs)(Chunk198358.Z, {
     children: [(0, Chunk54381.jsx)(Chunk92951.Z, {
       autoPlay: !U,
@@ -113,7 +113,7 @@ function R() {
       }), (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "heading-xxl/medium",
         className: Chunk102422.subtitle,
-        children: B ? Chunk388032.intl.format(Chunk547081.default["36PZwu"], {
+        children: F ? Chunk388032.intl.format(Chunk547081.default["36PZwu"], {
           percent: 100 - exports,
           percentHook: (e, t) => (0, r.jsx)(h.Z, {
             children: e

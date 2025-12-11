@@ -132,7 +132,7 @@ let Z = e => {
         return null
     }
   },
-  B = e => {
+  F = e => {
     var t, {
         entry: n,
         targetElementRef: i
@@ -144,7 +144,7 @@ let Z = e => {
       isFirstApplicationOccurrence: null != (t = a.isFirstApplicationOccurrence) && t
     }) : null
   },
-  F = e => {
+  B = e => {
     var {
       closePopout: t
     } = e, n = j(e, ["closePopout"]);
@@ -259,7 +259,7 @@ let Z = e => {
         }, 100)
       };
     return (0, r.jsxs)(r.Fragment, {
-      children: [b && (0, r.jsx)(B, L(D({}, p), {
+      children: [b && (0, r.jsx)(F, L(D({}, p), {
         targetElementRef: h
       })), (0, r.jsx)("div", {
         ref: l,
@@ -277,7 +277,7 @@ let Z = e => {
             } = e;
             return (0, r.jsx)(H.Provider, {
               value: W,
-              children: (0, r.jsx)(F, D({
+              children: (0, r.jsx)(B, D({
                 closePopout: t,
                 updatePopoutPosition: G,
                 trackRankingItemInteraction: V

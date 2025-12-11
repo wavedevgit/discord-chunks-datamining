@@ -2,7 +2,7 @@
 /** chunk id: 165583, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => F,
+  ZP: () => B,
   dz: () => U,
   eQ: () => j
 }), require("./388685.js");
@@ -213,7 +213,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     headingText: t,
     context: n,
@@ -238,7 +238,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     headingText: t,
     context: i,
@@ -270,7 +270,7 @@ function F(e) {
             alt: D.intl.string(D.t.do7AoM)
           }), (0, r.jsx)(m.Heading, {
             variant: "heading-xl/bold",
-            color: "header-primary",
+            color: "text-strong",
             children: D.intl.string(D.t.HEm04J)
           }), (0, r.jsx)(M, {
             trialOffer: y,
@@ -301,7 +301,7 @@ function F(e) {
             alt: D.intl.string(D.t.do7AoM)
           }), (0, r.jsx)(m.Heading, {
             variant: "heading-xl/bold",
-            color: "header-primary",
+            color: "text-strong",
             children: D.intl.string(D.t.jJG1pl)
           }), (0, r.jsx)(M, {
             trialOffer: y,
@@ -334,7 +334,7 @@ function F(e) {
             src: P
           }), (0, r.jsx)(m.Heading, {
             variant: "heading-xl/bold",
-            color: "header-primary",
+            color: "text-strong",
             children: D.intl.string(D.t["1SsvhY"])
           }), (0, r.jsx)(M, {
             trialOffer: y,
@@ -397,7 +397,7 @@ function F(e) {
         className: x.contentContainer,
         children: [(0, r.jsx)(m.Heading, {
           variant: "heading-xl/bold",
-          color: "header-primary",
+          color: "text-strong",
           children: t
         }), (0, r.jsx)(m.Text, {
           variant: "text-md/normal",
@@ -413,7 +413,7 @@ function F(e) {
         className: x.contentContainer,
         children: [(0, r.jsx)(m.Heading, {
           variant: "heading-xl/bold",
-          color: "header-primary",
+          color: "text-strong",
           children: t
         }), (0, r.jsx)(m.Text, {
           variant: "text-md/normal",
@@ -455,7 +455,7 @@ function F(e) {
           children: i
         }), (0, r.jsx)(m.Heading, {
           variant: "heading-lg/extrabold",
-          color: "header-primary",
+          color: "text-strong",
           className: x.messageLengthUpsellHeader,
           children: D.intl.string(D.t.ZvHg3N)
         }), (0, r.jsx)("div", {
@@ -494,7 +494,7 @@ function F(e) {
     case R.cd.CLIENT_THEMES_UPSELL:
     case R.cd.TRY_IT_OUT_MODAL_UPSELL:
     case R.cd.VOICE_FILTERS_UPSELL:
-      return (0, r.jsx)(B, {
+      return (0, r.jsx)(F, {
         trialOffer: y,
         discountOffer: O,
         headingText: t,
@@ -502,7 +502,7 @@ function F(e) {
         children: a
       });
     default:
-      return I.Z.captureMessage("Possible mishandling of a PremiumUpsellType: ".concat(c)), (0, r.jsx)(B, {
+      return I.Z.captureMessage("Possible mishandling of a PremiumUpsellType: ".concat(c)), (0, r.jsx)(F, {
         headingText: t,
         context: i,
         children: a,

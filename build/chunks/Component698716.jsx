@@ -106,10 +106,10 @@ function k(e) {
       handleResetStatusClick: G,
       handleOverrideDeliveryClick: Z
     } = (0, b.kJ)(e.quest.id),
-    B = () => {
+    F = () => {
       k(.9 * Math.random() + .03)
     },
-    F = i.useCallback(() => {
+    B = i.useCallback(() => {
       if (e.quest.id === A.V6) return void window.open(f.Z.getArticleURL(N.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
       (0, v.nc)(e.quest, {
         content: e.questContent,
@@ -189,7 +189,7 @@ function k(e) {
       children: [(0, r.jsx)(o.sNh, {
         id: "play-game",
         label: L,
-        action: F,
+        action: B,
         icon: o.zFc
       }), j && (0, r.jsx)(o.sNh, {
         id: "share-link",
@@ -226,7 +226,7 @@ function k(e) {
       }), (0, r.jsx)(o.sNh, {
         id: "progress",
         label: R.intl.string(R.t.cKSLr4),
-        action: B
+        action: F
       }), (0, r.jsx)(o.sNh, {
         id: "complete",
         label: R.intl.string(R.t.jQEfRT),

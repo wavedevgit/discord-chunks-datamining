@@ -55,7 +55,7 @@ function f(e) {
           children: (0, r.jsx)(l.Heading, {
             className: d.hidden,
             variant: "heading-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             lineClamp: 1,
             children: "_"
           })

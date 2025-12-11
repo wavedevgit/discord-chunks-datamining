@@ -13,11 +13,11 @@ require.d(exports, {
   XO: () => x,
   Xn: () => q,
   bb: () => K,
-  qo: () => B,
+  qo: () => F,
   rY: () => G,
   sR: () => H,
   tn: () => W,
-  wq: () => F
+  wq: () => B
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -145,7 +145,7 @@ function Z(e, t) {
   return k(w("interactionAvatarProfile", e, t))
 }
 
-function B(e, t, a, l) {
+function F(e, t, a, l) {
   let {
     id: c
   } = t, {
@@ -188,7 +188,7 @@ function B(e, t, a, l) {
   }, [p, c, d, a, _, l])
 }
 
-function F(e, t) {
+function B(e, t) {
   return i.useCallback(n => {
     let r = E.default.getUser(e),
       i = m.Z.getChannel(t);

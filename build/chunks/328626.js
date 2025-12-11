@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   g: () => a,
-  y: () => i
+  y: () => o
 }), require("./388685.js");
 var r, Chunk473749 = require("./473749.js"),
   a = ((r = {}).MOUNTED = "mounted", r.SORT_OUT = "sort-out", r.SORT_IN = "sort-in", r.SHUFFLE_OUT = "shuffle-out", r.SHUFFLE_IN = "shuffle-in", r.FINISHED = "finished", r);
-let i = () => {
+let o = () => {
   let [e, t] = Chunk473749.useState("mounted"), [n, r] = Chunk473749.useState(false), a = Chunk473749.useRef(null);
   return Chunk473749.useEffect(() => {
     require && "finished" === module && (null !== a.current && a.current.focus(), r(false))
@@ -17,9 +17,9 @@ let i = () => {
       let {
         isShuffling: n,
         onOutroComplete: l,
-        returnRef: i
+        returnRef: o
       } = e;
-      (null == i ? true : i.current) != null && (a.current = i.current, r(true)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
+      (null == o ? true : o.current) != null && (a.current = o.current, r(true)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
         l(), t(n ? "shuffle-in" : "sort-in"), setTimeout(() => {
           t("finished")
         }, n ? 200 : 300)

@@ -49,7 +49,7 @@ function O(e) {
     src: k.getAvatarURL(true, 48),
     size: l.EFr.SIZE_48,
     "aria-label": U
-  }) : true, B = (0, r.jsx)("div", {
+  }) : true, F = (0, r.jsx)("div", {
     className: b.cardStateIconWrapper,
     children: (0, r.jsx)(l.sV5, {
       size: "custom",
@@ -59,7 +59,7 @@ function O(e) {
       className: o()(b.cardStateIcon, b.checkmark),
       "aria-label": E.intl.string(E.t.L5Pt9L)
     })
-  }), F = (0, r.jsx)("div", {
+  }), B = (0, r.jsx)("div", {
     className: b.overlay,
     children: (0, r.jsx)(l.Button, {
       focusProps: {
@@ -108,7 +108,7 @@ function O(e) {
       }), (0, r.jsx)("div", {
         className: b.cardPreview,
         children: S()
-      }), N && B, O ? F : (0, r.jsx)(l.P3F, {
+      }), N && F, O ? B : (0, r.jsx)(l.P3F, {
         "aria-label": C,
         focusProps: {
           ringTarget: L

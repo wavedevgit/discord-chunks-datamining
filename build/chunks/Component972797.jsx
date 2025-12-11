@@ -34,7 +34,7 @@ function u(e) {
         className: c.explanationColumn,
         children: [(0, n.jsx)(o.Heading, {
           variant: "text-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: a ? d.intl.string(d.t.Vaaagc) : d.intl.string(d.t.oI8aQf)
         }), (0, n.jsx)(o.Text, {
           id: g,

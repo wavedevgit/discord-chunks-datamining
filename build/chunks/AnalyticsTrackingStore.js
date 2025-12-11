@@ -81,11 +81,11 @@ function Z() {
   A = 0, N = 0, P = 0, D = 0, x = Number.MAX_SAFE_INTEGER, L = 0, j = 0, w = Date.now(), R = C
 }
 
-function B(e) {
+function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
   return e + t
 }
-let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
+let B = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e()),
   V = new Chunk761609.R,
   H = {
     handleConnectionOpen: () => {},
@@ -108,7 +108,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
       TRACKING_URL: b,
       drainTimeoutOverride: y,
       waitFor: O,
-      scheduleWhenIdle: z = F,
+      scheduleWhenIdle: z = B,
       getLaunchSignature: q = () => null
     } = e;
 
@@ -135,17 +135,17 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
     function $() {
       if (W = null, !X()) return Promise.resolve();
       let e = Y.slice();
-      Y = [], D = B(D);
+      Y = [], D = F(D);
       let t = e.length;
-      x = Math.min(x, t), L = Math.max(L, t), j = B(j, t);
+      x = Math.min(x, t), L = Math.max(L, t), j = F(j, t);
       let n = ee(e);
       return n.then(() => {
         e.forEach(e => {
           var t;
           null == (t = e.resolve) || t.call(e)
-        }), N = B(N)
+        }), N = F(N)
       }, t => {
-        Y.unshift(...e), P = B(P);
+        Y.unshift(...e), P = F(P);
         let {
           message: n
         } = t.body || t;
@@ -276,7 +276,7 @@ let F = null != (a = window.requestIdleCallback) ? a : e => setImmediate(() => e
         }, l = Q(s);
         if (null != l && (s.properties.client_uuid = V.generate(l)), Y.push(s), Y.length > E) {
           let e = Y.length - E;
-          A = B(A, e), Y = Y.slice(-E)
+          A = F(A, e), Y = Y.slice(-E)
         }
         r ? J({
           shouldFlushOnNextTick: true

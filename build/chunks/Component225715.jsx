@@ -118,7 +118,7 @@ let b = e => {
     }, a), {
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
-        color: "header-primary",
+        color: "text-strong",
         children: n
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-sm/normal",

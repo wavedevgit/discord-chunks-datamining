@@ -36,11 +36,11 @@ function N() {
     children: [(0, Chunk54381.jsx)(Chunk245216.Z, {
       size: "xs",
       className: Chunk154706.headerIcon,
-      color: Chunk692547.Z.colors.TEXT_LOW_CONTRAST
+      color: Chunk692547.Z.colors.TEXT_MUTED
     }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
       className: Chunk154706.headerText,
       variant: "text-sm/semibold",
-      color: "text-low-contrast",
+      color: "text-muted",
       children: Chunk388032.intl.string(Chunk388032.t.ToyvLk)
     })]
   })
@@ -69,7 +69,7 @@ function P(e) {
       children: "".concat(p.originLabel, "  •  ").concat(p.timestampLabel)
     }), (0, r.jsx)(c.Fbu, {
       size: "xxs",
-      color: l.Z.colors.TEXT_LOW_CONTRAST
+      color: l.Z.colors.TEXT_MUTED
     })]
   })
 }

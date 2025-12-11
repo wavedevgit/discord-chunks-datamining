@@ -50,15 +50,15 @@ let L = new Chunk710845.Z("CacheStore"),
   U = "initializing",
   G = 0,
   Z = false,
-  B = false,
-  F = false;
+  F = false,
+  B = false;
 
 function V() {
-  return B = true, F = true, false
+  return F = true, B = true, false
 }
 
 function H() {
-  return B = false, F = true, false
+  return F = false, B = true, false
 }
 
 function Y() {
@@ -237,7 +237,7 @@ async function ei(e, t, n, r) {
       });
       return
     }
-    if (B) {
+    if (F) {
       (0, w.Z)("already_connected"), L.log("Skipping lazy cache; already connected."), s.Z.dispatch({
         type: "CACHE_LOADED_LAZY_NO_CACHE"
       });
@@ -319,7 +319,7 @@ class eo extends(r = Chunk442837.ZP.Store) {
     return G
   }
   canWriteCaches(e) {
-    return (0, A.$8)() ? k ? (L.log("Not writing cache because caches cleared"), false) : !!e || !!F || (L.log("Not writing cache because never connected"), false) : (L.log("Not writing cache because not authenticated"), false)
+    return (0, A.$8)() ? k ? (L.log("Not writing cache because caches cleared"), false) : !!e || !!B || (L.log("Not writing cache because never connected"), false) : (L.log("Not writing cache because not authenticated"), false)
   }
   async loadCacheAsync(e, t) {
     let n = (0, P.h)(t);

@@ -2,8 +2,8 @@
 /** chunk id: 81543, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b,
-  n: () => m
+  Z: () => p,
+  n: () => f
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,18 +34,18 @@ function g(e) {
   }
   return e
 }
-var m = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
-let f = {
+var f = ((r = {})[r.RIGHT = false] = "RIGHT", r[r.LEFT = 1] = "LEFT", r);
+let m = {
   friction: 10,
   tension: 40,
   overshootClamping: true
 };
-class p extends Chunk473749.PureComponent {
+class b extends Chunk473749.PureComponent {
   componentWillEnter(e) {
     var t, n;
     null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, g({
       toValue: 0
-    }, f)).start(() => {
+    }, m)).start(() => {
       var t, n;
       e(), null == (t = (n = this.props).onAnimationEnd) || t.call(n)
     })
@@ -56,7 +56,7 @@ class p extends Chunk473749.PureComponent {
   componentWillLeave(e) {
     o.Z.spring(this._animated, g({
       toValue: this.props.direction
-    }, f)).start(e)
+    }, m)).start(e)
   }
   getStyle() {
     return Chunk748780.Z.accelerate({
@@ -79,7 +79,7 @@ class p extends Chunk473749.PureComponent {
     super(e), u(this, "_animated", true), this._animated = new o.Z.Value(false * e.direction)
   }
 }
-let b = e => {
+let p = e => {
   let {
     children: t,
     step: n,
@@ -91,7 +91,7 @@ let b = e => {
   return (0, i.jsx)(c.W, {
     component: "div",
     className: s()(d.animator, l),
-    children: (0, i.jsx)(p, {
+    children: (0, i.jsx)(b, {
       direction: r,
       onAnimationStart: a,
       onAnimationEnd: o,

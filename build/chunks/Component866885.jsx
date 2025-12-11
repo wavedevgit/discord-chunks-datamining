@@ -63,9 +63,9 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   if (null == e) return {};
-  var n, r, i = F(e, t);
+  var n, r, i = B(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -73,7 +73,7 @@ function B(e, t) {
   return i
 }
 
-function F(e, t) {
+function B(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -86,7 +86,7 @@ function V(e) {
   let {
     channel: p,
     isLoading: _
-  } = e, [A, G] = i.useState(false), Z = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), B = null == Z ? true : Z.applicationId, F = (0, s.e7)([T.ZP], () => null != B && T.ZP.isProxyTicketRefreshing(B), [B]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, m.q)(B), Y = null == Z ? true : Z.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == p ? true : p.id)), {
+  } = e, [A, G] = i.useState(false), Z = (0, s.e7)([T.ZP], () => T.ZP.getCurrentEmbeddedActivity()), F = null == Z ? true : Z.applicationId, B = (0, s.e7)([T.ZP], () => null != F && T.ZP.isProxyTicketRefreshing(F), [F]), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), H = (0, m.q)(F), Y = null == Z ? true : Z.launchId, W = (0, s.e7)([v.Z], () => v.Z.getChannelId() === (null == p ? true : p.id)), {
     dockedRect: K,
     isHidden: z
   } = (0, s.cj)([O.Z], () => {
@@ -181,15 +181,15 @@ function V(e) {
     }) : null
   }
   if (i.useEffect(() => {
-      if (null != B) {
+      if (null != F) {
         let e = ei ? D.cE.PIP : D.cE.FOCUSED;
         c.Z.dispatch({
           type: "ACTIVITY_LAYOUT_MODE_UPDATE",
           layoutMode: e,
-          applicationId: B
+          applicationId: F
         })
       }
-    }, [B, ei]), null == Z || null == Y || (0, P.Z)(null == p ? true : p.id) && null == Q || null == H) return null;
+    }, [F, ei]), null == Z || null == Y || (0, P.Z)(null == p ? true : p.id) && null == Q || null == H) return null;
   let ec = Array.from(Z.userIds).map(e => S.default.getUser(e)).filter(e => null != e),
     eu = {
       instance_id: null != (a = null != (n = Z.compositeInstanceId) ? n : Z.launchId) ? a : "",
@@ -227,7 +227,7 @@ function V(e) {
             isActivityInTextChannel: en,
             users: ec
           })
-        }), _ || F ? (0, r.jsx)(l.$jN, {
+        }), _ || B ? (0, r.jsx)(l.$jN, {
           className: o()(M.iframe, {
             [M.pipModeShort]: ei && !A,
             [M.pipModeTall]: ei && A
@@ -255,7 +255,7 @@ function V(e) {
 let H = e => {
   var {
     channel: t
-  } = e, n = B(e, ["channel"]);
+  } = e, n = F(e, ["channel"]);
   let i = T.ZP.getCurrentEmbeddedActivity();
   (0, A.Z)({
     connectedEmbeddedActivity: i

@@ -77,8 +77,8 @@ function G(e, t) {
   }), e
 }
 let Z = 80,
-  B = 48,
-  F = 32,
+  F = 48,
+  B = 32,
   V = 2,
   H = 3,
   Y = 12,
@@ -110,7 +110,7 @@ function q(e) {
   return (0, r.jsxs)(m.Z, {
     children: [(0, r.jsx)(P.Z, {
       sticker: t,
-      size: B,
+      size: F,
       isInteracting: true
     }), (0, r.jsxs)(m.Z, {
       direction: m.Z.Direction.VERTICAL,
@@ -209,7 +209,7 @@ let Q = e => {
       M = S.default.getCurrentUser(),
       U = T.ZP.canUseCustomStickersEverywhere(M),
       Z = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id)),
-      B = null != Z,
+      F = null != Z,
       [H, W] = i.useState(false),
       [K, Q] = i.useState(null),
       X = i.useMemo(() => ({
@@ -235,17 +235,17 @@ let Q = e => {
       (async () => {
         (null == e || e.features.has(w.GuildFeatures.DISCOVERABLE)) && A(await (0, g.Z)(n.id)), R(true)
       })()
-    }, [n.id, B]);
+    }, [n.id, F]);
     let et = n.guild_id === a.getGuildId(),
       en = null != C,
       er = false,
       ei = "Custom Sticker Popout";
-    U ? t = B ? et ? x.intl.string(x.t.fZ0DiG) : x.intl.string(x.t["1f6D9m"]) : en ? x.intl.string(x.t.yHmoR9) : x.intl.string(x.t.vZaScH) : B ? (t = et ? x.intl.string(x.t.jNphpt) : x.intl.string(x.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = x.intl.string(x.t.IuXYch), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = x.intl.format(x.t.hGWuxU, {
+    U ? t = F ? et ? x.intl.string(x.t.fZ0DiG) : x.intl.string(x.t["1f6D9m"]) : en ? x.intl.string(x.t.yHmoR9) : x.intl.string(x.t.vZaScH) : F ? (t = et ? x.intl.string(x.t.jNphpt) : x.intl.string(x.t.lyD5ZW), er = true, ei = "Custom Sticker Popout (Upsell)") : en ? (t = x.intl.string(x.t.IuXYch), er = true, ei = "Custom Sticker Popout (Upsell)") : (t = x.intl.format(x.t.hGWuxU, {
       openPremiumSettings: () => {
         z(a), l()
       }
     }), ei = "Custom Sticker Popout (Soft Upsell)");
-    let ea = !er && !B && en && U;
+    let ea = !er && !F && en && U;
     if (i.useEffect(() => {
         let {
           refreshPositionKey: e
@@ -261,7 +261,7 @@ let Q = e => {
     {
       let e = () => {
           let e = async () => {
-            if (null == C || B) return;
+            if (null == C || F) return;
             l();
             let e = C.id;
             try {
@@ -282,7 +282,7 @@ let Q = e => {
                 textOverride: x.intl.string(x.t["gl/XHJ"])
               },
               onSubscribeModalClose: t => t ? e() : l(),
-              postSuccessGuild: B || null == C ? true : C,
+              postSuccessGuild: F || null == C ? true : C,
               premiumModalAnalyticsLocation: X
             }), ea && (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
@@ -299,7 +299,7 @@ let Q = e => {
         },
         i = () => {
           var e;
-          if (!en && !B) return;
+          if (!en && !F) return;
           let t = (null != (e = null == C ? true : C.stickers) ? e : []).slice(0, Y + 1).filter(e => e.id !== n.id).slice(0, Y),
             i = () => {
               y(), W(!H)
@@ -311,12 +311,12 @@ let Q = e => {
               variant: "text-sm/normal",
               color: "text-subtle",
               className: j.guildTitle,
-              children: B ? x.intl.string(x.t.kx6pEG) : x.intl.string(x.t.pDE7Gb)
+              children: F ? x.intl.string(x.t.kx6pEG) : x.intl.string(x.t.pDE7Gb)
             }), (0, r.jsx)(E.Oe, {
               expressionSourceGuild: a,
-              hasJoinedExpressionSourceGuild: B,
+              hasJoinedExpressionSourceGuild: F,
               isDisplayingJoinGuildButtonInPopout: ea
-            }), !B && (0, r.jsxs)(r.Fragment, {
+            }), !F && (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.P3F, {
                 onClick: i,
                 className: j.showMoreEmojis,
@@ -353,7 +353,7 @@ let Q = e => {
                       Q(null)
                     },
                     children: (0, r.jsx)(P.Z, {
-                      size: F,
+                      size: B,
                       enlargeOnInteraction: true,
                       enlargeWithName: false,
                       enlargeScaleFactor: V,

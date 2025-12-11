@@ -127,7 +127,7 @@ function Z(e) {
   return null != R[t] && (delete R[t], true)
 }
 
-function B(e) {
+function F(e) {
   let {
     sidebarType: t,
     baseChannelId: n,
@@ -147,7 +147,7 @@ function B(e) {
   })), P[a] = o, true
 }
 
-function F(e) {
+function B(e) {
   let {
     parentChannelId: t,
     parentMessageId: n,
@@ -281,9 +281,9 @@ let J = new X(Chunk570140.Z, {
   CHANNEL_TOGGLE_MEMBERS_SECTION: M,
   USER_PROFILE_SIDEBAR_TOGGLE_SECTION: U,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: k,
-  SIDEBAR_VIEW_CHANNEL: B,
+  SIDEBAR_VIEW_CHANNEL: F,
   SIDEBAR_VIEW_GUILD: G,
-  SIDEBAR_CREATE_THREAD: F,
+  SIDEBAR_CREATE_THREAD: B,
   SIDEBAR_CLOSE: K,
   SIDEBAR_CLOSE_GUILD: Z,
   CHANNEL_DELETE: V,

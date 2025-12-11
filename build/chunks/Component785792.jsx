@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk764092 = require("./764092.js");
 
@@ -20,15 +20,15 @@ function a(e) {
   }), [r]);
   return null == t ? (0, n.jsx)("div", {
     className: s.loading,
-    children: (0, n.jsx)(l.$jN, {})
+    children: (0, n.jsx)(i.$jN, {})
   }) : (0, n.jsx)("div", {
     style: a,
-    className: i()(s.code, o),
+    className: l()(s.code, o),
     children: t.map((e, t) => (0, n.jsx)("div", {
-      className: i()(s.chunk, {
+      className: l()(s.chunk, {
         [s.divider]: t > r - 1
       }),
-      children: (0, n.jsx)(l.Text, {
+      children: (0, n.jsx)(i.Text, {
         className: s.codeText,
         variant: "code",
         color: "text-default",

@@ -26,14 +26,14 @@ function O(e) {
 
 function v(e, t, n, r) {
   let {
-    index: a,
-    notification: l,
+    index: l,
+    notification: a,
     locked: o,
     pinned: s
   } = t;
   return (0, i.jsx)(d.Z, {
-    index: a,
-    notification: l,
+    index: l,
+    notification: a,
     locked: o,
     pinned: s,
     transitionState: n,
@@ -52,7 +52,7 @@ let S = Chunk473749.memo(function(e) {
     locked: t,
     pinned: n,
     showEmpty: d = true
-  } = e, b = (0, a.e7)([h.Z, s.Z], () => {
+  } = e, b = (0, l.e7)([h.Z, s.Z], () => {
     if (s.Z.isNotificationDisabled(p.n0.TextChat)) return y;
     let e = [],
       i = 0;
@@ -69,7 +69,7 @@ let S = Chunk473749.memo(function(e) {
   }, [t, n], c.E6), S = r.useState(() => new f.AS(t))[0];
   return (r.useLayoutEffect(() => S.updateState(b, t)), r.useLayoutEffect(() => (S.initialize((0, u.i)()), () => S.cleanUp()), [S]), 0 !== b.length || t) ? (0, i.jsx)(f.S4.Provider, {
     value: S,
-    children: (0, i.jsx)(l.W3x, {
+    children: (0, i.jsx)(a.W3x, {
       items: b,
       renderItem: v,
       getItemKey: O,
@@ -77,7 +77,7 @@ let S = Chunk473749.memo(function(e) {
     })
   }) : d ? t ? null : (0, i.jsx)(o.E, {
     emptyText: g.intl.string(g.t.O1Nbjq),
-    icon: l.Dkj,
+    icon: a.Dkj,
     absolute: true
   }) : null
 })

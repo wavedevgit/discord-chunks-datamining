@@ -19,7 +19,7 @@ function o() {
       padding: 32,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-xxl/normal",
-        color: "header-primary",
+        color: "text-strong",
         className: Chunk433266.heading,
         children: Chunk388032.intl.string(Chunk588641.default["VAK+h9"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {

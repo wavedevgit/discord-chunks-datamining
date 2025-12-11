@@ -79,14 +79,14 @@ let h = new Map,
         !e.has(r) && (null == t.unpublishedAt || t.unpublishedAt > n) && e.set(r, t)
       }), T = new Map([...(O = e).values()].map(e => [e.storeListingId, e])), v = new Map((0, p.Cs)(O, true).map(e => [e.skuId, e])), I = [...(S = new Map((0, p.Cs)(O, false).map(e => [e.storeListingId, e]))).values()]
     }
-    B(t, v), i = Date.now(), N = false, r = true, a = true
+    F(t, v), i = Date.now(), N = false, r = true, a = true
   },
   Z = e => {
     if (0 === e.shopHome.categories.length) return;
     let t = new Map(e.shopHome.categories.map(e => [e.skuId, e]));
     T = new Map([...(O = new Map([...O, ...t])).values()].map(e => [e.storeListingId, e])), v = new Map((0, p.Cs)(O, true).map(e => [e.skuId, e]))
   },
-  B = (e, t) => {
+  F = (e, t) => {
     if (0 === e.length) {
       C = y;
       return
@@ -103,7 +103,7 @@ let h = new Map,
         C = y
     }
   },
-  F = () => {
+  B = () => {
     O = h, v = g, C = y, i = true, N = false, P = new Set, r = true, a = true, D = {}, x = 0
   },
   V = () => {
@@ -122,7 +122,7 @@ let h = new Map,
   };
 class Y extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk706454.default], F), this.syncWith([Chunk353926.Z], V)
+    this.syncWith([Chunk706454.default], B), this.syncWith([Chunk353926.Z], V)
   }
   get isFetchingCategories() {
     return N
@@ -193,5 +193,5 @@ let W = new Y(Chunk570140.Z, {
   COLLECTIBLES_PRODUCT_FETCH_FAILURE: j,
   COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: Z,
   COLLECTIBLES_SKIP_NUM_CATEGORIES: H,
-  LOGOUT: F
+  LOGOUT: B
 })

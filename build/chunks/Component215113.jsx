@@ -179,7 +179,7 @@ function U(e) {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
-                    color: "header-primary",
+                    color: "text-strong",
                     children: k.intl.format(k.t.EQa7os, {
                       questName: g.config.messages.questName
                     })

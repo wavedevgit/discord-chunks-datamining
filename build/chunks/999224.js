@@ -45,7 +45,7 @@ var Chunk484357 = require("./484357.js"),
   Chunk216932 = require("./216932.js"),
   Chunk915579 = require("./915579.js");
 
-function F(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ function V(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      B(e, t, n[t])
     })
   }
   return e

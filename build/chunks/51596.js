@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   $Z: () => Z,
-  Cp: () => B,
+  Cp: () => F,
   F_: () => M,
   Se: () => Y,
-  ZN: () => F,
+  ZN: () => B,
   tF: () => H,
   yC: () => V
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
@@ -169,13 +169,13 @@ function Z() {
   }, M(exports)))
 }
 
-function B() {
+function F() {
   U(Chunk981631.rMx.QUICKSWITCHER_CLOSED), G()
 }
 
-function F() {
+function B() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "KEYBIND";
-  Chunk823385.Z.isOpen() ? B() : Z(module)
+  Chunk823385.Z.isOpen() ? F() : Z(module)
 }
 
 function V(e) {

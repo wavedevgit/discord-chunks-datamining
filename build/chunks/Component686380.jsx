@@ -253,7 +253,7 @@ class U extends Chunk473749.Component {
             className: Chunk218977.contentTextDMEmbedXP,
             children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
               variant: "heading-md/semibold",
-              color: "header-primary",
+              color: "text-strong",
               children: o
             }), (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/medium",

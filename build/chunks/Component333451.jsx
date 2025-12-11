@@ -120,7 +120,7 @@ function D(e) {
     sourceAnalyticsLocations: x
   } = (0, f.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: L
-  } = (0, u.TCT)(), j = (0, l.ap)(L) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, M = null == n || null == n.premiumSubscriptionType, k = O.ZP.getPrice(I.Xh.PREMIUM_MONTH_TIER_2, false, false, P), U = (0, v.T4)(k.amount, k.currency), G = (0, m.N)(), Z = null == G ? true : G.trial_id, B = (null == G || null == (t = G.subscription_trial) ? true : t.sku_id) === I.Si.TIER_2;
+  } = (0, u.TCT)(), j = (0, l.ap)(L) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, M = null == n || null == n.premiumSubscriptionType, k = O.ZP.getPrice(I.Xh.PREMIUM_MONTH_TIER_2, false, false, P), U = (0, v.T4)(k.amount, k.currency), G = (0, m.N)(), Z = null == G ? true : G.trial_id, F = (null == G || null == (t = G.subscription_trial) ? true : t.sku_id) === I.Si.TIER_2;
   return i.useEffect(() => {
     b.default.track(S.rMx.PREMIUM_UPSELL_VIEWED, {
       type: I.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -134,11 +134,11 @@ function D(e) {
         "data-migration-pending": true,
         onClick: a,
         className: C.closeButton
-      }), B && (0, r.jsx)(h.dz, {
+      }), F && (0, r.jsx)(h.dz, {
         className: C.premiumTrialBadge
       }), (0, r.jsx)("div", {
         className: o()(C.upsellImage, {
-          [C.upsellImageWithTrialOffer]: B
+          [C.upsellImageWithTrialOffer]: F
         })
       }), (0, r.jsx)("div", {
         className: C.bodyText,

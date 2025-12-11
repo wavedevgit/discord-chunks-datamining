@@ -154,7 +154,7 @@ function N() {
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk311066.emptyHeader,
       variant: "text-lg/medium",
-      color: "header-primary",
+      color: "text-strong",
       children: Chunk388032.intl.string(Chunk297940.default.sWGfr9)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",

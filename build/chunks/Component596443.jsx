@@ -52,7 +52,7 @@ function U(e) {
         className: D.permissionTitle,
         children: [(0, r.jsx)(E.Text, {
           variant: "text-md/medium",
-          color: "header-primary",
+          color: "text-strong",
           children: L
         }), null != O && (0, r.jsxs)("div", {
           className: D.permissionItemSubheader,

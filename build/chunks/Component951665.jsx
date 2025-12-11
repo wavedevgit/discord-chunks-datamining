@@ -49,10 +49,10 @@ function g(e) {
   let {
     rule: n,
     onChangeRule: g,
-    collapsed: m = false
-  } = e, [f, p] = i.useState(!m), b = i.useCallback(() => {
-    p(!f)
-  }, [f, p]), h = i.useCallback(e => {
+    collapsed: f = false
+  } = e, [m, b] = i.useState(!f), p = i.useCallback(() => {
+    b(!m)
+  }, [m, b]), h = i.useCallback(e => {
     g(u(d({}, n), {
       triggerMetadata: u(d({}, n.triggerMetadata), {
         regexPatterns: e
@@ -60,7 +60,7 @@ function g(e) {
     }))
   }, [g, n]);
   return (0, a.S)(n.triggerType) ? (0, r.jsx)(l.zF9, {
-    isExpanded: f,
+    isExpanded: m,
     collapsibleContent: (0, r.jsx)(s.Z, {
       rule: n,
       onChangeText: h,
@@ -74,14 +74,14 @@ function g(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          b(), t(e)
+          p(), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: c.header,
           children: [(0, r.jsx)(l.Heading, {
             variant: "text-sm/medium",
             children: o.intl.string(o.t["dnunm+"])
-          }), f ? (0, r.jsx)(l.u04, {
+          }), m ? (0, r.jsx)(l.u04, {
             size: "md",
             color: "currentColor",
             className: c.arrow

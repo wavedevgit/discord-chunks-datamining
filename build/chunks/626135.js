@@ -5,7 +5,7 @@ require.r(exports), require.d(exports, {
   AnalyticEventConfigs: () => V,
   AnalyticsContext: () => N,
   AnalyticsSchema: () => Chunk747161,
-  addExtraAnalyticsDecorator: () => F,
+  addExtraAnalyticsDecorator: () => B,
   clearAnalyticsEventsRecording: () => er,
   debugLogEvent: () => X,
   default: () => eu,
@@ -114,10 +114,10 @@ let A = {
 Chunk990547.extendSuperProperties({
   launch_signature: Z
 });
-let B = [];
+let F = [];
 
-function F(e) {
-  B.push(e)
+function B(e) {
+  F.push(e)
 }
 let V = {
   [Chunk981631.rMx.APP_OPENED]: {
@@ -424,7 +424,7 @@ function Q(e) {
     utmCampaign: c,
     utmContent: u
   } = P;
-  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = Z, B.forEach(e => e(a)), a
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = Z, F.forEach(e => e(a)), a
 }
 
 function X(e, t) {

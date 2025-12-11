@@ -77,7 +77,7 @@ function A() {
 function L(e) {
   let {
     guild: t
-  } = e, p = t.id, A = (0, a.e7)([C.Z], () => C.Z.getCurrentPage()), L = (0, N.Z)(p), {
+  } = e, b = t.id, A = (0, a.e7)([C.Z], () => C.Z.getCurrentPage()), L = (0, N.Z)(b), {
     hasChanges: k,
     hasConfiguredAnythingForCurrentStep: G,
     hasErrors: M
@@ -104,8 +104,8 @@ function L(e) {
         delay: 1e3
       })
     }
-    return f.S.subscribe(P.CkL.EMPHASIZE_NOTICE, e), () => {
-      f.S.unsubscribe(P.CkL.EMPHASIZE_NOTICE, e)
+    return m.S.subscribe(P.CkL.EMPHASIZE_NOTICE, e), () => {
+      m.S.unsubscribe(P.CkL.EMPHASIZE_NOTICE, e)
     }
   }, [W]);
   let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
@@ -126,7 +126,7 @@ function L(e) {
     X = async () => {
       let e = O.Z.advancedMode;
       if (k) try {
-        if (A === y.PG.DEFAULT_CHANNELS) await (0, b.DO)(t).then(() => e ? (0, v.rS)(t, {
+        if (A === y.PG.DEFAULT_CHANNELS) await (0, p.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
         else if (A === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
@@ -141,17 +141,17 @@ function L(e) {
       }
       returntrue
     }, J = async () => {
-      m.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(p)), {
+      f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
         step: y.PG[A],
         back: false,
         skip: !k
-      })), (0, h.Nb)((0, y.lg)(A)), await X() && (0, h.IG)(p, A)
+      })), (0, h.Nb)((0, y.lg)(A)), await X() && (0, h.IG)(b, A)
     }, Q = async () => {
-      m.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(p)), {
+      f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
         step: y.PG[A],
         back: true,
         skip: false
-      })), await X() && (0, h.Wy)(p, A)
+      })), await X() && (0, h.Wy)(b, A)
     }, $ = null;
   U && (A === y.PG.SAFETY_CHECK ? $ = (0, r.jsx)(E.j7, {}) : A === y.PG.DEFAULT_CHANNELS ? $ = (0, r.jsx)(E.Io, {}) : A === y.PG.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(E.cZ, {}) : A === y.PG.HOME_SETTINGS && ($ = (0, r.jsx)(E.g6, {})));
   let ee = (0, r.jsx)("div", {

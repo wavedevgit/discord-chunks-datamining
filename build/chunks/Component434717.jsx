@@ -32,14 +32,14 @@ function w(e) {
   } = e, O = (0, l.ZP)(), N = (0, o.wjy)(O) ? g.BR.DARK : g.BR.LIGHT, _ = (0, p.V_)(t), P = (0, d.aM)(), E = (0, b.VB)(t.config), T = a.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
-    return null != n ? n : (0, b.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(x.S7.NON_GAMING_PLAY_QUEST) || (0, b.Pb)(t) ? y.intl.string(y.t.y8Xf3k) : y.intl.string(y.t["wirwN+"])
+    return null != n ? n : (0, b.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(j.S7.NON_GAMING_PLAY_QUEST) || (0, b.Pb)(t) ? y.intl.string(y.t.y8Xf3k) : y.intl.string(y.t["wirwN+"])
   }, [t]), {
     isLoading: A
   } = (0, f.kC)();
   a.useEffect(() => {
     A || w()
   }, [A, w]);
-  let I = (0, j.yc)({
+  let I = (0, x.yc)({
     isShareable: E,
     questId: t.id,
     trackingCtx: a.useMemo(() => ({
@@ -82,7 +82,7 @@ function w(e) {
         className: v.partnerCopyContainer,
         children: [(0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           className: v.partnerTitle,
           children: y.intl.format(y.t.EAYZAr, {
             questName: t.config.messages.questName

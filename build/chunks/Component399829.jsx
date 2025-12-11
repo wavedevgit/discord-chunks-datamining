@@ -92,7 +92,7 @@ class w extends Chunk473749.Component {
       ref: this.defaultTierRef,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: Chunk388032.intl.string(Chunk388032.t["76OoX8"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
@@ -184,7 +184,7 @@ class w extends Chunk473749.Component {
     }), T(this, "renderSubscriber", (e, t, n) => {
       var i;
       return null == e ? null : (0, r.jsx)(d.u, {
-        __unsupportedReactNodeAsText: (0, r.jsx)(f.Z, {
+        __unsupportedReactNodeAsText: (0, r.jsx)(m.Z, {
           user: e.user,
           nick: e.nick
         }),
@@ -208,7 +208,7 @@ class w extends Chunk473749.Component {
           className: _.avatar
         }), (0, r.jsx)("div", {
           className: _.subscribersPopoutUsername,
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(m.Z, {
             user: e.user,
             nick: e.nick
           })

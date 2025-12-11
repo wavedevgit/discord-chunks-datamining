@@ -1,7 +1,7 @@
 /** Chunk was on 86872 **/
 /** chunk id: 420186, original params: e,l,n (module,exports,require) **/
 require.d(exports, {
-  R: () => p
+  R: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -56,15 +56,15 @@ function j(e) {
     })]
   })
 }
-let p = () => {
+let E = () => {
   var e;
   let l = Chunk695346.G6.useSetting(),
     {
       nickname: n,
       dmsAllowed: d,
       showActivity: g,
-      setNickname: p,
-      setDmsAllowed: E,
+      setNickname: E,
+      setDmsAllowed: p,
       setShowActivity: _,
       guildId: I,
       inviteCode: N
@@ -91,13 +91,13 @@ let p = () => {
           placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
           maxLength: Chunk981631.l$U,
           value: require,
-          onChange: p
+          onChange: E
         })
       }), (0, Chunk54381.jsx)(v, {})]
     }), (0, Chunk54381.jsx)(j, {
       label: Chunk388032.intl.string(Chunk388032.t["/2ed37"]),
       checked: Chunk51331,
-      onChange: E
+      onChange: p
     }), (0, Chunk54381.jsx)(v, {}), exports && (0, Chunk54381.jsx)(j, {
       label: Chunk388032.intl.string(Chunk388032.t.bN4m1G),
       checked: Chunk804665,

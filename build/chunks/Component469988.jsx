@@ -21,7 +21,7 @@ let s = e => {
         color: i.TVs.colors.WHITE.css
       })
     }), (0, r.jsx)(i.Text, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-lg/semibold",
       className: a.header,
       children: t ? l.intl.string(l.t.hsSHh8) : l.intl.string(l.t.Wf6iij)

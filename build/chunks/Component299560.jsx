@@ -168,7 +168,7 @@ function E(e) {
           className: A.title,
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
-            color: "header-primary",
+            color: "text-strong",
             children: (0, v.mR)(P)
           }), null != a ? (0, i.jsx)("img", {
             src: a,

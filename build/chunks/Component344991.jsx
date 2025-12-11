@@ -102,8 +102,8 @@ function S(e) {
     state: U,
     executeStateUpdate: G,
     visualState: Z,
-    isDisabled: B,
-    error: F
+    isDisabled: F,
+    error: B
   } = k.useComponentState(t, P.size > 0 ? {
     type: b,
     selectedOptions: Array.from(P.values())
@@ -144,7 +144,7 @@ function S(e) {
     X = 0 === P.size || T,
     J = {
       isProcessing: Y,
-      isDisabled: S || Z === p.gH.DISABLED || B,
+      isDisabled: S || Z === p.gH.DISABLED || F,
       wrapperClassName: o()(m.select, {
         [m.inModal]: V
       }),
@@ -173,7 +173,7 @@ function S(e) {
         onChange: z,
         clearable: true
       }, J), j)
-    }), null == F || V ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(F)), {
+    }), null == B || V ? null : (0, r.jsx)(d.st, y(E({}, (0, d.c4)(B)), {
       className: h.error
     }))]
   })

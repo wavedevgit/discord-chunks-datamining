@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 576085, original params: e,n,t (module,exports,require) **/
+/** chunk id: 576085, original params: e,t,n (module,exports,require) **/
 module.exports = {
   coverContainer: "_2f30033a32aba27a-coverContainer",
   centerArt: "_2f30033a32aba27a-centerArt",

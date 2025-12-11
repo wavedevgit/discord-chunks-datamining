@@ -303,7 +303,7 @@ let ef = e => {
               },
               children: [(0, r.jsx)(E.Heading, {
                 variant: "heading-sm/medium",
-                color: "header-primary",
+                color: "text-strong",
                 children: en.intl.string(en.t.xrmhRX)
               }), Q ? (0, r.jsx)(E.CJ0, {
                 size: "md",
@@ -354,7 +354,7 @@ let ef = e => {
             },
             children: [(0, r.jsx)(E.Heading, {
               variant: "heading-sm/medium",
-              color: "header-primary",
+              color: "text-strong",
               children: en.intl.string(en.t.fcYgiY)
             }), V ? (0, r.jsx)(E.CJ0, {
               size: "md",
@@ -379,7 +379,7 @@ let ef = e => {
             alt: ""
           })
         }) : null,
-        n = new Date(F.default.extractTimestamp(h)).toLocaleDateString(_);
+        n = new Date(B.default.extractTimestamp(h)).toLocaleDateString(_);
       return (0, r.jsxs)("div", {
         className: er.headerV2,
         children: [t, (0, r.jsxs)("div", {
@@ -413,14 +413,14 @@ let ef = e => {
       }, W.fy.INFREQUENT_USER_ACTION), T.ZP.trackWithMetadata(ee.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: et.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
         application_id: a.id,
-        label: e ? B.ZB.Unmuted : B.ZB.Muted
+        label: e ? F.ZB.Unmuted : F.ZB.Muted
       })
     }, eh = i.useCallback(async () => {
       u()(null != L, "dm channel mute setting requires having a bot user");
       let e = M;
       null == e && (e = await y.Z.ensurePrivateChannel(L.id)), Z ? O.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
-      }, B.ZB.Unmuted) : (0, E.ZDy)(async () => {
+      }, F.ZB.Unmuted) : (0, E.ZDy)(async () => {
         let {
           default: t
         } = await n.e("8246").then(n.bind(n, 540679));
@@ -433,7 +433,7 @@ let ef = e => {
       className: er.directMessagesSection,
       children: [(0, r.jsx)(E.Heading, {
         variant: "heading-sm/medium",
-        color: "header-primary",
+        color: "text-strong",
         className: er.dmSettingsHeader,
         children: en.intl.string(en.t.NaZyYC)
       }), (0, r.jsxs)(E.Kqy, {

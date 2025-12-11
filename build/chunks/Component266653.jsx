@@ -26,12 +26,12 @@ function C(e) {
   } = e, {
     currentUser: C,
     multiAccountUsers: T
-  } = (0, l.cj)([d.default, u.Z], () => ({
+  } = (0, r.cj)([d.default, u.Z], () => ({
     currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.Z.getUsers()
-  })), [E, N] = i.useState(false), [_, A] = i.useState(h.lds), [p, v] = i.useState(null);
+  })), [E, N] = i.useState(false), [_, A] = i.useState(h.lds), [v, p] = i.useState(null);
   return i.useEffect(() => {
-    if (E) v((0, s.jsx)(c.Wn, {
+    if (E) p((0, s.jsx)(c.Wn, {
       messageType: c.QYI.ERROR,
       className: g.infoMessage,
       children: b.intl.format(b.t.HAuRSM, {
@@ -40,7 +40,7 @@ function C(e) {
     })), A(h.lds);
     else if (null != _) {
       let e = d.default.getUser(_);
-      null != e && v((0, s.jsx)(c.Wn, {
+      null != e && p((0, s.jsx)(c.Wn, {
         messageType: c.QYI.POSITIVE,
         className: g.infoMessage,
         children: b.intl.format(b.t["09qide"], {
@@ -53,7 +53,7 @@ function C(e) {
   }, [T]), (0, o.Z)({
     type: a.ImpressionTypes.MODAL,
     name: a.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
-  }), (0, s.jsxs)(r.Modal, {
+  }), (0, s.jsxs)(l.Modal, {
     onClose: n,
     transitionState: t,
     size: "md",
@@ -68,7 +68,7 @@ function C(e) {
         n(), (0, x.y)()
       }
     }],
-    children: [p, (0, s.jsx)(m.Z, {
+    children: [v, (0, s.jsx)(m.Z, {
       actionText: b.intl.string(b.t.Wf421J),
       onAction: (e, t) => {
         switch (e) {

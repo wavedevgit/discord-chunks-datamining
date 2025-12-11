@@ -316,7 +316,7 @@ var h = {
     }
   },
   Z = [],
-  B = function(e, t) {
+  F = function(e, t) {
     var n = this;
     true === t && (t = "undefined" != typeof document), this.instances = [], this.value = {
       setHelmet: function(e) {
@@ -348,7 +348,7 @@ var h = {
       titleAttributes: {}
     }))
   },
-  F = Chunk473749.createContext({}),
+  B = Chunk473749.createContext({}),
   V = a().shape({
     setHelmet: a().func,
     helmetInstances: a().shape({
@@ -361,10 +361,10 @@ var h = {
   Y = function(e) {
     function t(n) {
       var r;
-      return (r = e.call(this, n) || this).helmetData = new B(r.props.context, t.canUseDOM), r
+      return (r = e.call(this, n) || this).helmetData = new F(r.props.context, t.canUseDOM), r
     }
     return p(t, e), t.prototype.render = function() {
-      return r.createElement(F.Provider, {
+      return r.createElement(B.Provider, {
         value: this.helmetData.value
       }, this.props.children)
     }, t
@@ -598,10 +598,10 @@ var X = ["children"],
         n = m(e, J),
         i = f({}, n),
         a = n.helmetData;
-      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof B || (a = new B(a.context, a.instances)), a ? r.createElement(Q, f({}, i, {
+      return t && (i = this.mapChildrenToProps(t, i)), !a || a instanceof F || (a = new F(a.context, a.instances)), a ? r.createElement(Q, f({}, i, {
         context: a.value,
         helmetData: true
-      })) : r.createElement(F.Consumer, null, function(e) {
+      })) : r.createElement(B.Consumer, null, function(e) {
         return r.createElement(Q, f({}, i, {
           context: e
         }))

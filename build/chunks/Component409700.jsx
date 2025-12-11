@@ -138,7 +138,7 @@ function N(e) {
           className: y.infoSoundIcon
         }), (0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: t.name
         })]
       }), (0, r.jsx)("div", {

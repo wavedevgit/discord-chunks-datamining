@@ -21,13 +21,13 @@ let d = {
   f = e => {
     let {
       enabled: t
-    } = (0, i.W)({
+    } = (0, o.W)({
       location: "useShopViewTransition"
     }), {
       setItemTypeFilter: n,
       reset: a,
       setCurrentTab: f
-    } = (0, o.S)(), g = r.useMemo(() => e !== c.AW.ORBS || t ? (0, c.RE)(e) ? c.AW.CATALOG : e : c.AW.HOME, [e, t]), [p, b] = r.useState(g), [m, h] = r.useState(c.f7.VISIBLE);
+    } = (0, i.S)(), g = r.useMemo(() => e !== c.AW.ORBS || t ? (0, c.RE)(e) ? c.AW.CATALOG : e : c.AW.HOME, [e, t]), [p, b] = r.useState(g), [m, C] = r.useState(c.f7.VISIBLE);
     r.useEffect(() => {
       f(p)
     }, [p, f]), r.useEffect(() => {
@@ -38,9 +38,9 @@ let d = {
       }
     }, [g, e, n, a]);
     let {
-      clearError: C
+      clearError: h
     } = (0, s.a)(), v = (0, l.k6)(), E = r.useCallback(async (e, t) => {
-      if (C(), e === c.AW.CATALOG) a();
+      if (h(), e === c.AW.CATALOG) a();
       else if ((0, c.RE)(e) && e !== p) {
         let t = d[e];
         null != t ? n(t) : a()
@@ -48,13 +48,13 @@ let d = {
       if (p !== e) {
         if (t) {
           let e;
-          h(c.f7.OUT), await (e = 1.1 * c.lb, new Promise(t => setTimeout(t, e)))
+          C(c.f7.OUT), await (e = 1.1 * c.lb, new Promise(t => setTimeout(t, e)))
         }
-        b([c.AW.HOME, c.AW.ORBS].includes(e) ? e : c.AW.CATALOG), t && h(c.f7.IN), v.push(u.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
+        b([c.AW.HOME, c.AW.ORBS].includes(e) ? e : c.AW.CATALOG), t && C(c.f7.IN), v.push(u.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
           shallow: true
-        }), h(c.f7.VISIBLE)
+        }), C(c.f7.VISIBLE)
       }
-    }, [v, n, a, p, C]);
+    }, [v, n, a, p, h]);
     return {
       selectedTab: p,
       transitionState: m,

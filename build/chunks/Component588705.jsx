@@ -44,7 +44,7 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       application: i,
       compact: a
     } = e;
-    return null != i ? (0, t.jsx)(c.Z, {
+    return null != i ? (0, t.jsx)(o.Z, {
       className: f.appIcon,
       game: i,
       size: f.appIconSize
@@ -74,7 +74,7 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
   C = e => {
     var l;
     let n, i, d, {
-        invite: c,
+        invite: o,
         disableUser: S = false,
         error: C,
         flatActivityCount: L = false,
@@ -88,22 +88,22 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       } = (0, a.cj)([h.default], () => ({
         currentUser: h.default.getCurrentUser()
       }));
-    if (null == c) return null;
+    if (null == o) return null;
     let k = null != A && A.length > 0,
-      O = null != c.guild ? j.lM(c.guild) ? c.guild : j.Qs(c.guild) : null,
-      b = null != c.channel ? (0, g.jD)(c.channel) : null,
-      F = null != c.target_application ? new x.ZP(c.target_application) : null,
-      U = S || null == c.inviter ? null : new v.Z(c.inviter),
-      y = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != O && O.features.has(E.GuildFeatures.COMMUNITY)) && null != U,
-      z = null,
+      O = null != o.guild ? j.lM(o.guild) ? o.guild : j.Qs(o.guild) : null,
+      b = null != o.channel ? (0, g.jD)(o.channel) : null,
+      F = null != o.target_application ? new x.ZP(o.target_application) : null,
+      U = S || null == o.inviter ? null : new v.Z(o.inviter),
+      z = !(null != o.approximate_member_count && o.approximate_member_count > 100 || null != O && O.features.has(p.GuildFeatures.COMMUNITY)) && null != U,
+      y = null,
       V = false;
-    if (null != O) R && (z = null == U ? N.intl.string(N.t["3rE1P8"]) : N.intl.formatToPlainString(N.t["5u47va"], {
-      username: p.ZP.getFormattedName(U)
-    }), c.target_type === I.Iq.STREAM && null != c.target_user && (z = N.intl.formatToPlainString(N.t.x2L32Q, {
-      username: p.ZP.getFormattedName(c.target_user)
-    })), c.target_type === I.Iq.EMBEDDED_APPLICATION && null != c.target_application && (z = null != U ? N.intl.formatToPlainString(N.t.UW1Cav, {
-      username: p.ZP.getFormattedName(U)
-    }) : N.intl.string(N.t.ENSuN3))), y && null == F && (n = (0, t.jsx)(u.Vj, {
+    if (null != O) R && (y = null == U ? N.intl.string(N.t["3rE1P8"]) : N.intl.formatToPlainString(N.t["5u47va"], {
+      username: E.ZP.getFormattedName(U)
+    }), o.target_type === I.Iq.STREAM && null != o.target_user && (y = N.intl.formatToPlainString(N.t.x2L32Q, {
+      username: E.ZP.getFormattedName(o.target_user)
+    })), o.target_type === I.Iq.EMBEDDED_APPLICATION && null != o.target_application && (y = null != U ? N.intl.formatToPlainString(N.t.UW1Cav, {
+      username: E.ZP.getFormattedName(U)
+    }) : N.intl.string(N.t.ENSuN3))), z && null == F && (n = (0, t.jsx)(u.Vj, {
       className: f.icon,
       guild: O,
       size: u.Vj.Sizes.SMALL
@@ -119,7 +119,7 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
         }), (0, t.jsx)(r.Text, {
           tag: "span",
           variant: "text-lg/normal",
-          color: "header-primary",
+          color: "text-strong",
           className: f.appGuildName,
           children: O.name
         })]
@@ -127,15 +127,15 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
     }));
     else if (null != b) {
       if (null == U) throw Error("no inviter in group DM invite");
-      let e = p.ZP.getFormattedName(U);
-      null != b.name && "" !== b.name ? (z = N.intl.formatToPlainString(N.t["5u47va"], {
+      let e = E.ZP.getFormattedName(U);
+      null != b.name && "" !== b.name ? (y = N.intl.formatToPlainString(N.t["5u47va"], {
         username: e
       }), i = b.name, null != b.icon && (n = (0, t.jsx)(u.MC, {
         channel: b,
         size: r.EFr.SIZE_32
-      }))) : (z = N.intl.string(N.t.OsdY8B), i = e)
+      }))) : (y = N.intl.string(N.t.OsdY8B), i = e)
     } else if (null != U) {
-      let e = p.ZP.getFormattedName(U, true);
+      let e = E.ZP.getFormattedName(U, true);
       i = N.intl.formatToPlainString(N.t["4aF92R"], {
         username: e
       }), V = true, d = null != C ? null : (0, t.jsx)(u.DK, {
@@ -156,7 +156,7 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       children: [(0, t.jsx)(T, {
         application: F,
         guild: O,
-        user: y ? U : null,
+        user: z ? U : null,
         compact: V
       }), null != C ? (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(u.DK, {
@@ -165,11 +165,11 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
           children: C
         })]
       }) : (0, t.jsxs)(t.Fragment, {
-        children: [null != z ? (0, t.jsx)(u.DK, {
-          children: z
+        children: [null != y ? (0, t.jsx)(u.DK, {
+          children: y
         }) : null, (0, t.jsxs)(u.Dx, {
           className: f.title,
-          children: [null != O ? (0, t.jsx)(o.Z, {
+          children: [null != O ? (0, t.jsx)(c.Z, {
             guild: O,
             className: f.guildBadge,
             tooltipPosition: "left"
@@ -181,10 +181,10 @@ let S = () => (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
         children: [(0, t.jsxs)(r.Kqy, {
           direction: "vertical",
           gap: 8,
-          children: [null != F || V || (null == c || null == (l = c.guild) ? true : l.id) === _.fQ ? null : (0, t.jsx)(u.EJ, {
+          children: [null != F || V || (null == o || null == (l = o.guild) ? true : l.id) === _.fQ ? null : (0, t.jsx)(u.EJ, {
             className: f.activityCount,
-            online: c.approximate_presence_count,
-            total: c.approximate_member_count,
+            online: o.approximate_presence_count,
+            total: o.approximate_member_count,
             flat: L,
             renderText: k ? P : true
           }), k && (0, t.jsx)(s.Z, {

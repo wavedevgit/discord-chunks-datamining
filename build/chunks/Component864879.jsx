@@ -25,7 +25,7 @@ let d = Chunk473749.forwardRef((e, t) => {
         className: u.contentContainer,
         children: [(0, r.jsx)(l.Z, {}), (0, r.jsx)(a.Heading, {
           variant: "display-md",
-          color: "header-primary",
+          color: "text-strong",
           className: u.footerHeader,
           children: c.intl.string(c.t.lEw32m)
         })]

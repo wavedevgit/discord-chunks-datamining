@@ -55,10 +55,10 @@ let U = e => {
       A = Chunk473749.useRef(null),
       G = (0, Chunk410030.ZP)(),
       Z = (0, Chunk780384.wj)(G),
-      [B, F] = Chunk473749.useState(false),
+      [F, B] = Chunk473749.useState(false),
       [V, H] = Chunk473749.useState(false),
       [Y, W] = Chunk473749.useState(false),
-      K = !B && !V,
+      K = !F && !V,
       [z, q] = Chunk473749.useState(false),
       Q = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
       X = null != Q ? (0, Chunk74538.Af)(Q) : null,
@@ -133,7 +133,7 @@ let U = e => {
           config: ea
         }), (0, Chunk54381.jsx)(Chunk622535.$, {
           innerRef: Chunk120356,
-          onChange: e => F(e),
+          onChange: e => B(e),
           threshold: 0,
           active: true,
           children: (0, Chunk54381.jsx)(Chunk635921.ZP, {

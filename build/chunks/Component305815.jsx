@@ -1,5 +1,5 @@
 /** Chunk was on 41023 **/
-/** chunk id: 305815, original params: e,n,t (module,exports,require) **/
+/** chunk id: 305815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => P
 }), require("./388685.js");
@@ -28,14 +28,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk983102 = require("./983102.js");
 
 function A(e) {
-  var n;
+  var t;
   let {
-    quest: t,
+    quest: n,
     avatarDeco: i,
     onUseNow: a,
     user: l,
     mode: s
-  } = e, d = (0, h.fh)(t, h.eC.REWARD).url, u = (0, C.Qy)(t.config), m = (null == (n = l.avatarDecoration) ? true : n.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
+  } = e, d = (0, h.fh)(n, h.eC.REWARD).url, u = (0, C.Qy)(n.config), m = (null == (t = l.avatarDecoration) ? true : t.skuId) != null && l.avatarDecoration.skuId === (null == i ? true : i.skuId);
   return (0, r.jsxs)("div", {
     className: _.contentContainer,
     children: [(0, r.jsx)("div", {
@@ -51,7 +51,7 @@ function A(e) {
       className: _.copyContainer,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: _.heading,
         children: w.intl.string(w.t["0/Yz+Y"])
       }), (0, r.jsx)(o.Text, {
@@ -72,7 +72,7 @@ function A(e) {
 }
 
 function P(e) {
-  var n, t, o;
+  var t, n, o;
   let {
     initialQuest: c,
     onClose: h,
@@ -80,26 +80,26 @@ function P(e) {
     preview: _,
     location: P,
     sourceQuestContent: D
-  } = e, E = null != (t = (0, C.B4)(c.id)) ? t : c, T = i.useMemo(() => (0, v.xn)(E.config), [E]), O = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [L, R] = function(e) {
+  } = e, E = null != (n = (0, C.B4)(c.id)) ? n : c, T = i.useMemo(() => (0, v.xn)(E.config), [E]), O = (0, l.e7)([b.default], () => b.default.getCurrentUser()), [L, R] = function(e) {
     let {
-      product: n,
-      isFetching: t
+      product: t,
+      isFetching: n
     } = (0, d.T)(e), r = i.useMemo(() => {
-      if (null == n || t) return null;
-      let e = n.items.find(e => e.type === a.Z.AVATAR_DECORATION);
+      if (null == t || n) return null;
+      let e = t.items.find(e => e.type === a.Z.AVATAR_DECORATION);
       return null != e ? e : null
-    }, [n, t]), l = async () => {
+    }, [t, n]), l = async () => {
       if (null == r) return p.Z.addBreadcrumb({
         message: "Error saving avatar decoration; it is null"
       }), false;
       (0, u.PO)(r);
       let e = f.Z.getAllPending(),
-        n = (0, m.ED)(e),
-        t = await (0, s.Mn)(n);
-      return (0, s.si)(), !!(null == t ? true : t.ok)
+        t = (0, m.ED)(e),
+        n = await (0, s.Mn)(t);
+      return (0, s.si)(), !!(null == n ? true : n.ok)
     };
     return [r, l]
-  }(null != (o = null == T ? true : T.skuId) ? o : null), I = (null == (n = E.userStatus) ? true : n.claimedAt) != null, k = !_ && !I, [S, M] = i.useState(k ? "loading" : "claimed");
+  }(null != (o = null == T ? true : T.skuId) ? o : null), I = (null == (t = E.userStatus) ? true : t.claimedAt) != null, k = !_ && !I, [S, M] = i.useState(k ? "loading" : "claimed");
   i.useEffect(() => {
     k && (0, x.QB)(E.id, g.y$.CROSS_PLATFORM, P).then(() => M("claimed")).catch(() => M("error"))
   }, [E.id, P, k]);
@@ -115,10 +115,10 @@ function P(e) {
     transitionState: w,
     quest: E,
     sourceQuestContent: D,
-    location: N.dr.COLLECTIBLE_REWARD_MODAL,
+    location: y.dr.COLLECTIBLE_REWARD_MODAL,
     isRewardContentLoading: W,
     rewardContentHasError: q,
-    rewardContent: q || B ? null : (0, r.jsx)(y.Z, {
+    rewardContent: q || B ? null : (0, r.jsx)(N.Z, {
       rewardName: T.messages.name,
       children: (0, r.jsx)(A, {
         quest: E,

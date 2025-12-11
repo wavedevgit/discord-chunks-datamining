@@ -25,7 +25,7 @@ let p = e => {
   } = (0, i.cj)([c.Z], () => ({
     isIgnored: c.Z.isIgnored(t.id),
     isBlocked: c.Z.isBlocked(t.id)
-  }), [t]), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), x = l.useMemo(() => u.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = l.useCallback(() => {
+  }), [t]), x = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = l.useMemo(() => u.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = l.useCallback(() => {
     s.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: p
@@ -33,7 +33,7 @@ let p = e => {
   }, [t, p, n]), _ = l.useMemo(() => g || f, [g, f]);
   return (0, r.jsx)(o.JZ, {
     title: b.intl.formatToPlainString(b.t.U3yyFs, {
-      username: x
+      username: h
     }),
     description: b.intl.string(b.t.naWE6W),
     buttonText: _ ? b.intl.string(b.t.nDdxOG) : b.intl.string(b.t.ICYEfY),

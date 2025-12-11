@@ -45,7 +45,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk454578 = require("./454578.js");
 
-function B(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -54,14 +54,14 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      B(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -119,7 +119,7 @@ let Y = e => {
         className: Z.integrationInner,
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: a.guild.name
         }), (0, r.jsx)(f.Anchor, {
           href: null == (n = E.Z.get(a.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, a.account),
@@ -145,7 +145,7 @@ function W(e) {
     account: n,
     theme: a,
     locale: l
-  } = e, [p, m] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [S, T] = i.useState(n.metadataVisibility), [C, A] = i.useState(n.showActivity), [N, R] = i.useState(null), [L, B] = i.useState(null), [V, W] = i.useState(false), [K, z] = i.useState([]), q = (0, b.rR)(n.type), Q = E.Z.get(q);
+  } = e, [p, m] = i.useState(n.friendSync), [h, g] = i.useState(n.visibility), [S, T] = i.useState(n.metadataVisibility), [C, A] = i.useState(n.showActivity), [N, R] = i.useState(null), [L, F] = i.useState(null), [V, W] = i.useState(false), [K, z] = i.useState([]), q = (0, b.rR)(n.type), Q = E.Z.get(q);
   i.useEffect(() => {
     m(n.friendSync), g(n.visibility), T(n.metadataVisibility), A(n.showActivity)
   }, [n]);
@@ -180,7 +180,7 @@ function W(e) {
         children: [(0, r.jsxs)("div", {
           className: Z.connectionAccountLabelContainer,
           children: [(0, r.jsx)(f.Text, {
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/semibold",
             className: Z.connectionAccountValue,
             children: e.name
@@ -343,7 +343,7 @@ function W(e) {
 
   function eo() {
     let e = E.Z.get(n.type);
-    (0, f.h7j)(i => (0, r.jsx)(s.Modal, H(F({
+    (0, f.h7j)(i => (0, r.jsx)(s.Modal, H(B({
       title: G.intl.formatToPlainString(G.t.U5x12f, {
         name: e.name
       }),
@@ -389,7 +389,7 @@ function W(e) {
       verified: t
     } = n, r = +!!e;
     if (e && !t) {
-      B(r), (0, O.Z)({
+      F(r), (0, O.Z)({
         platformType: n.type,
         location: "User Settings"
       });
@@ -413,7 +413,7 @@ function W(e) {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
     } = J.current;
-    null != e && (g(e), _.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (T(t), _.Z.setMetadataVisibility(n.type, n.id, t), B(null))
+    null != e && (g(e), _.Z.setVisibility(n.type, n.id, e), R(null)), null != t && (T(t), _.Z.setMetadataVisibility(n.type, n.id, t), F(null))
   }, [n]);
   let ed = (0, w.wy)("ConnectedAccount");
   return (0, r.jsxs)("div", {

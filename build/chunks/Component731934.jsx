@@ -2,7 +2,7 @@
 /** chunk id: 731934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./953529.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -317,7 +317,7 @@ let k = () => {
       requests: module
     })
   },
-  B = () => {
+  F = () => {
     let e = (0, Chunk880257.Z)();
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk535137.container,

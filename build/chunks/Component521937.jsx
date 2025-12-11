@@ -22,15 +22,15 @@ function p(e) {
   } = e, [p, h] = r.useState(() => {
     let {
       user_code: e
-    } = i.parse(window.location.search);
+    } = o.parse(window.location.search);
     return n && null != e ? e : ""
-  }), x = (0, o.TH)(), m = r.useCallback(() => {
+  }), x = (0, i.TH)(), g = r.useCallback(() => {
     (0, c.c$)(x, "user_code_input_unauthorized")
   }, [x]), {
     manualSubmit: b,
-    error: g,
+    error: m,
     submitting: v
-  } = (0, l.c)(p, t, m);
+  } = (0, l.c)(p, t, g);
   return (0, a.jsxs)("div", {
     className: f.content,
     children: [(0, a.jsxs)("div", {
@@ -55,7 +55,7 @@ function p(e) {
           autoFocus: true,
           value: p,
           onChange: h,
-          error: g,
+          error: m,
           fullWidth: true
         })]
       })]

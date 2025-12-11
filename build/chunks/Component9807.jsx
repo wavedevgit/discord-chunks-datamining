@@ -107,10 +107,10 @@ let I = e => {
       isMuted: m,
       autoPlay: h
     } = e;
-    if (i.type === g.s9s.YOUTUBE_VIDEO) t = j({
-      url: (0, g.n8r)(i.youtubeVideoId)
+    if (i.type === b.s9s.YOUTUBE_VIDEO) t = j({
+      url: (0, b.n8r)(i.youtubeVideoId)
     }, P), n = j({
-      url: "".concat((0, g.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
+      url: "".concat((0, b.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
     }, O), a = u.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
@@ -136,7 +136,7 @@ let I = e => {
         video: n,
         provider: a,
         maxHeight: c.r.SMALL.height,
-        maxWidth: b.b.SMALL,
+        maxWidth: g.b.SMALL,
         onPlay: l,
         playable: true,
         volume: s,
@@ -214,7 +214,7 @@ class N extends(a = Chunk473749.PureComponent) {
     }), C(this, "handleChangeItem", e => {
       this.setState({
         isVideoPlaying: false
-      }), e.type === g.s9s.IMG && this.setState({
+      }), e.type === b.s9s.IMG && this.setState({
         imageLoadingStartTime: new Map(this.state.imageLoadingStartTime).set(e.src, Date.now())
       })
     }), C(this, "handleIntentionalChange", (e, t, n, a) => {
@@ -251,8 +251,8 @@ class N extends(a = Chunk473749.PureComponent) {
           videoAutoPlay: l
         } = this.props;
       switch (e.type) {
-        case g.s9s.YOUTUBE_VIDEO:
-        case g.s9s.VIDEO:
+        case b.s9s.YOUTUBE_VIDEO:
+        case b.s9s.VIDEO:
           n = (0, r.jsx)(E, {
             item: e,
             onPlay: this.handlePlay,
@@ -263,7 +263,7 @@ class N extends(a = Chunk473749.PureComponent) {
             autoPlay: l
           });
           break;
-        case g.s9s.IMG:
+        case b.s9s.IMG:
           if ("errored" === this.state.status.get(e.src)) {
             let e = (0, r.jsx)(o.Heading, {
               variant: "heading-xl/semibold",

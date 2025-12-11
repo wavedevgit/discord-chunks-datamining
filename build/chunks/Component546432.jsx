@@ -195,8 +195,8 @@ function U(e) {
     hasFooter: U,
     useFullWidth: G,
     isVisualMediaType: Z,
-    onVideoControlsShow: B,
-    onVideoControlsHide: F,
+    onVideoControlsShow: F,
+    onVideoControlsHide: B,
     forcePlaceholder: V
   } = e, {
     width: H,
@@ -313,8 +313,8 @@ function U(e) {
         maxHeight: M,
         useFullWidth: G,
         mimeType: ee,
-        onControlsShow: B,
-        onControlsHide: F,
+        onControlsShow: F,
+        onControlsHide: B,
         downloadable: !$,
         mediaPlayerClassName: U ? T.hasFooter : true
       });
@@ -403,10 +403,10 @@ let Z = function(e) {
     width: E,
     height: b,
     type: y
-  } = n, S = s(n, (0, _.v)(a)), [I, C] = i.useState(null != S), A = (0, f.JO)(S), P = c === v.hV.MOSAIC, D = !P && (null != E && E < x || null != b && b < L), M = j(y), k = (0, O.R_)(y), Z = u && null != S && (0, f.yf)(E, b), [B, F] = i.useState(false), V = () => {
-    F(true)
+  } = n, S = s(n, (0, _.v)(a)), [I, C] = i.useState(null != S), A = (0, f.JO)(S), P = c === v.hV.MOSAIC, D = !P && (null != E && E < x || null != b && b < L), M = j(y), k = (0, O.R_)(y), Z = u && null != S && (0, f.yf)(E, b), [F, B] = i.useState(false), V = () => {
+    B(true)
   }, H = () => {
-    F(false)
+    B(false)
   }, Y = function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
     return (0, r.jsx)(U, R(N({}, h), {
@@ -451,7 +451,7 @@ let Z = function(e) {
       obscured: I,
       containerStyles: G(n, M, c),
       obscurityControlClassName: o()({
-        [T.obscureVideoSpacing]: "VIDEO" === y && u && !I && B
+        [T.obscureVideoSpacing]: "VIDEO" === y && u && !I && F
       }),
       onToggleObscurity: () => C(e => !e),
       children: e => Y(e)

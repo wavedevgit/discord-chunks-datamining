@@ -36,7 +36,7 @@ let c = e => {
         })]
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: t.name
       })]
     })]

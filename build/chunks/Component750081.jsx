@@ -38,10 +38,10 @@ var Chunk857192 = require("./857192.js"),
   Chunk378799 = require("./378799.js"),
   Chunk758731 = require("./758731.js");
 Chunk857192.default.cssDebuggingEnabled && require.e("93323").then(require.t.bind(require, 76671, 19)), (0, Chunk378799.s5)();
-let B = 5 * Chunk70956.Z.Millis.MINUTE,
-  F = document.getElementById("app-mount");
-d()(null != F, "Could not find app-mount"), F.className = __OVERLAY__ ? "" : Chunk210761.appMount;
-let V = (0, Chunk748721.createRoot)(F),
+let F = 5 * Chunk70956.Z.Millis.MINUTE,
+  B = document.getElementById("app-mount");
+d()(null != B, "Could not find app-mount"), B.className = __OVERLAY__ ? "" : Chunk210761.appMount;
+let V = (0, Chunk748721.createRoot)(B),
   H = {
     "/oauth2/authorize": Chunk534713.Z,
     "/one-time": Chunk758731.Z
@@ -80,7 +80,7 @@ else if (null != window.require && null == window.DiscordNative) W(Chunk832037.Z
 else {
   if (document.addEventListener("scroll", e => e.preventDefault()), Chunk358085.isPlatformEmbedded) {
     window.onbeforeunload = () => Chunk998502.ZP.beforeUnload(), Chunk998502.ZP.on("HELP_OPEN", () => window.open(Chunk63063.Z.getCommunityURL()));
-    let e = new Chunk846519.sW(B, () => Chunk998502.ZP.purgeMemory());
+    let e = new Chunk846519.sW(F, () => Chunk998502.ZP.purgeMemory());
     Chunk998502.ZP.on("MAIN_WINDOW_BLUR", () => {
       module.delay(), Chunk998502.ZP.setFocused(false), (0, Chunk284737.T_)(window, false)
     }), Chunk998502.ZP.on("MAIN_WINDOW_FOCUS", () => {

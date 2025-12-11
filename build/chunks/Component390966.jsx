@@ -183,9 +183,9 @@ function I(e) {
     end: L
   }));
   let Z = i.useMemo(() => n === m.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === m.p1.ACTIVE ? 3 : m.$I.has(n) ? 4 : j ? 2 : +!!M, [n, null == D ? true : D.is_canceled, j, M]),
-    B = y(Z, G, _, L, k),
+    F = y(Z, G, _, L, k),
     {
-      Icon: F,
+      Icon: B,
       iconColor: V,
       textColor: H,
       tooltipText: Y
@@ -211,7 +211,7 @@ function I(e) {
       [g.isRecurring]: null != W
     }),
     tooltipText: Y,
-    children: [T && n === m.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(F, {
+    children: [T && n === m.p1.SCHEDULED ? (0, r.jsx)(v, {}) : (0, r.jsx)(B, {
       color: V,
       size: "custom",
       width: E,
@@ -221,7 +221,7 @@ function I(e) {
       children: [(0, r.jsx)(d.Text, {
         color: H,
         variant: I,
-        children: B
+        children: F
       }), null != W && (0, r.jsx)(d.Text, {
         color: "text-default",
         variant: "text-xs/normal",

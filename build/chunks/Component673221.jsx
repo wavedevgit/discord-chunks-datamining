@@ -101,12 +101,12 @@ function R(e) {
     formatOption: U,
     onSelectionChange: G,
     value: Z,
-    wrapTags: B = false
-  } = e, F = C(e, ["selectionMode", "readOnly", "autoFocus", "clearable", "fullWidth", "closeOnSelect", "shouldFocusWrap", "placeholder", "name", "form", "autoComplete", "maxOptionsVisible", "options", "formatOption", "onSelectionChange", "value", "wrapTags"]);
+    wrapTags: F = false
+  } = e, B = C(e, ["selectionMode", "readOnly", "autoFocus", "clearable", "fullWidth", "closeOnSelect", "shouldFocusWrap", "placeholder", "name", "form", "autoComplete", "maxOptionsVisible", "options", "formatOption", "onSelectionChange", "value", "wrapTags"]);
   let V = i.useRef(null),
     {
       fieldProps: H
-    } = (0, l.X)(F),
+    } = (0, l.X)(B),
     {
       id: Y,
       required: W,
@@ -197,7 +197,7 @@ function R(e) {
     eb = "multiple" === t && eh.length > 0,
     ey = i.useRef(null);
   i.useEffect(() => {
-    clearTimeout(ey.current), eb && !B && (ey.current = setTimeout(() => {
+    clearTimeout(ey.current), eb && !F && (ey.current = setTimeout(() => {
       var e, t;
       null == (t = V.current) || null == (e = t.lastElementChild) || e.scrollIntoView({
         behavior: "smooth",
@@ -205,7 +205,7 @@ function R(e) {
         block: "end"
       })
     }, 10))
-  }, [eh, eb, B]);
+  }, [eh, eb, F]);
   let eO = (0, s.Z)(eo, X.setReference),
     ev = i.useCallback(e => {
       if (ec) return;
@@ -259,7 +259,7 @@ function R(e) {
             ringTarget: eo
           },
           className: o()(O.selectButton, {
-            [O.wrapTags]: B,
+            [O.wrapTags]: F,
             [O.multiSelect]: "multiple" === t
           }),
           onClick: ef,

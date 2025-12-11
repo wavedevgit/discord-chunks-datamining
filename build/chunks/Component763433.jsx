@@ -25,16 +25,16 @@ function h(e) {
     onAvailableWidthChange: m,
     icon: h,
     children: f
-  } = e, b = (0, o.ZP)(), {
-    enabled: g
+  } = e, g = (0, o.ZP)(), {
+    enabled: b
   } = (0, d.W)({
     location: "global_discovery_header_bar"
   });
   return (0, r.jsx)(s.f6W, {
-    theme: b,
+    theme: g,
     children: e => (0, r.jsxs)(c.Z, {
       className: l()(e, p.headerBar),
-      innerClassname: g ? p.headerBarInner : true,
+      innerClassname: b ? p.headerBarInner : true,
       children: ["DEFAULT" === i && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h, {
           color: "currentColor",

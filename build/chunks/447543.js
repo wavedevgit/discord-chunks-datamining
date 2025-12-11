@@ -119,7 +119,7 @@ function ef(e) {
     case ei.Iq.ROLE_SUBSCRIPTIONS_PURCHASE:
       c.targetType = e.target_type
   }
-  return (null == F.Z.getGuild(null == (t = e.guild) ? true : t.id) || e.new_member) && null != e.channel && (0, k.zi)(e.channel.type) && (c.welcomeModalChannelId = e.channel.id), null != e.guild_scheduled_event && (c.guildScheduledEvent = e.guild_scheduled_event), c.isGuestInvite = (0, s.yE)(null != (a = e.flags) ? a : 0, o.$.IS_GUEST_INVITE), c.isApplicationBypassInvite = (0, s.yE)(null != (l = e.flags) ? l : 0, o.$.IS_APPLICATION_BYPASS), c.inviterUserId = null == (n = e.inviter) ? true : n.id, c
+  return (null == B.Z.getGuild(null == (t = e.guild) ? true : t.id) || e.new_member) && null != e.channel && (0, k.zi)(e.channel.type) && (c.welcomeModalChannelId = e.channel.id), null != e.guild_scheduled_event && (c.guildScheduledEvent = e.guild_scheduled_event), c.isGuestInvite = (0, s.yE)(null != (a = e.flags) ? a : 0, o.$.IS_GUEST_INVITE), c.isApplicationBypassInvite = (0, s.yE)(null != (l = e.flags) ? l : 0, o.$.IS_APPLICATION_BYPASS), c.inviterUserId = null == (n = e.inviter) ? true : n.id, c
 }
 
 function ep(e, t) {
@@ -156,7 +156,7 @@ function eh(e) {
     channel: r,
     options: i,
     analyticsLocations: a = []
-  } = e, o = F.Z.getGuild(t), s = null == o ? true : o.features.has(ee.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), {
+  } = e, o = B.Z.getGuild(t), s = null == o ? true : o.features.has(ee.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), {
     targetUserId: l,
     targetType: c,
     targetApplicationId: u,
@@ -189,7 +189,7 @@ function eh(e) {
           commandOrigin: O.bB.CHAT
         }))
       };
-      !d && (0, T.n)(t, [F.Z, W.default, B.ZP]) ? (0, I.hk)(t, o) : o()
+      !d && (0, T.n)(t, [B.Z, W.default, F.ZP]) ? (0, I.hk)(t, o) : o()
     })
   }) : (0, g.l5)(m) && c === ei.Iq.EMBEDDED_APPLICATION && null != u && ((0, j.uL)(ee.Z5c.CHANNEL(null != t ? t : ee.ME, h)), (0, E.Z)({
     channelId: h,

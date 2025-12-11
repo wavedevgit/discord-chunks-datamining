@@ -62,7 +62,7 @@ let m = e => {
         children: e => (0, a.jsx)(r.Text, {
           ref: e,
           className: u.questProgressHint,
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-sm/semibold",
           children: v
         })

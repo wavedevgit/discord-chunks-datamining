@@ -334,7 +334,7 @@ let C = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       onClick: D
     }), G = i.useMemo(() => !g.Ou.includes(t.status) && h > 0, [t.status, h]), {
       title: Z,
-      description: B
+      description: F
     } = k();
     return (0, r.jsxs)(l.$1m, {
       className: O.container,
@@ -343,7 +343,7 @@ let C = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         className: O.contentGrid,
         children: [(0, r.jsx)(A, {
           title: Z,
-          description: B,
+          description: F,
           button: U()
         }), (0, r.jsx)(P, {
           premiumGroupMembers: d,

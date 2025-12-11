@@ -2,7 +2,7 @@
 /** chunk id: 302175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -87,7 +87,7 @@ function j(e) {
     onHover: I
   } = e, {
     analyticsLocations: w
-  } = (0, f.ZP)(), x = n !== T.A3.INACTIVE, j = (0, y.Z)(t), [M, k] = i.useState(false), [U, G] = i.useState(false), Z = U, B = i.useCallback(() => {
+  } = (0, f.ZP)(), x = n !== T.A3.INACTIVE, j = (0, y.Z)(t), [M, k] = i.useState(false), [U, G] = i.useState(false), Z = U, F = i.useCallback(() => {
     let e = m.Z.getGuild(t);
     null != e && (0, p.u)({
       analyticsLocation: {
@@ -98,7 +98,7 @@ function j(e) {
       analyticsLocations: w,
       guild: e
     })
-  }, [t, w]), F = i.useCallback(() => {
+  }, [t, w]), B = i.useCallback(() => {
     v(), (0, S.Z)(t, d.Z.GUILD_POWERUPS_MARKETING, b)
   }, [t, b, v]), V = {
     tension: 400,
@@ -160,7 +160,7 @@ function j(e) {
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
             text: N.intl.string(N.t.oPAx73),
-            onClick: B,
+            onClick: F,
             fullWidth: true
           })
         }), j && (0, r.jsx)("div", {
@@ -168,7 +168,7 @@ function j(e) {
           children: (0, r.jsx)(u.Button, {
             variant: "secondary",
             text: N.intl.string(N.t.GoCQxU),
-            onClick: F,
+            onClick: B,
             fullWidth: true
           })
         })]
@@ -243,4 +243,4 @@ let k = 3,
     })
   });
 Z.displayName = "GuildPowerupsMarketingPowerupCards";
-let B = Z
+let F = Z

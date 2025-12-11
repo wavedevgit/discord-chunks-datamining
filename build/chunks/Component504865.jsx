@@ -35,7 +35,7 @@ let _ = function(e) {
     v = null != O ? (0, d.gy)(O, h, false, _) : null;
   if (E) {
     let e = n === f.rV.YEAR,
-      t = e ? "text-muted" : y ? "header-primary" : "always-white";
+      t = e ? "text-muted" : y ? "text-strong" : "always-white";
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(l.Text, {
         variant: e ? "heading-md/semibold" : "heading-xxl/extrabold",

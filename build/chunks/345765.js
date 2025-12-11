@@ -169,13 +169,13 @@ function Z(e) {
   null != n && (null == (t = c.Z.getAccount(n, E.ABu.SPOTIFY)) ? true : t.showActivity) && N(n, r)
 }
 
-function B() {
+function F() {
   L({
     feedId: Chunk206583.YN.GLOBAL_FEED,
     feature: Chunk126313.L.GAME_PROFILE
   })
 }
-class F extends Chunk147913.Z {
+class B extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
       POST_CONNECTION_OPEN: M,
@@ -186,8 +186,8 @@ class F extends Chunk147913.Z {
       CONTENT_INVENTORY_MANUAL_REFRESH: U,
       CONTENT_INVENTORY_INBOX_STALE: G,
       SPOTIFY_NEW_TRACK: Z,
-      GAME_PROFILE_OPEN: B
+      GAME_PROFILE_OPEN: F
     })
   }
 }
-let V = new F
+let V = new B

@@ -26,98 +26,98 @@ function b(e) {
   let {
     transitionState: t,
     returnRef: a,
-    onClose: n
+    onClose: r
   } = e;
-  s.useEffect(() => {
-    u.default.track(x.rMx.OPEN_MODAL, {
+  n.useEffect(() => {
+    u.default.track(f.rMx.OPEN_MODAL, {
       type: "Social Layer Storefront Announcement Modal"
     }), (0, d.bj)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL, {
       dismissAction: h.L.AUTO_DISMISS
     })
   }, []);
-  let b = s.useCallback(() => {
-      (0, f.eagerNavigateToSocialLayerStorefront)({
-        guildId: (0, m.ac)()
+  let b = n.useCallback(() => {
+      (0, m.eagerNavigateToSocialLayerStorefront)({
+        guildId: (0, x.ac)()
       })
     }, []),
-    k = s.useCallback(() => {
-      (0, f.default)({
-        guildId: (0, m.ac)()
-      }), n()
-    }, [n]);
-  return (0, r.jsx)(l.f6W, {
-    theme: p.BR.DARK,
-    children: e => (0, r.jsx)(o.Y0X, {
+    k = n.useCallback(() => {
+      (0, m.default)({
+        guildId: (0, x.ac)()
+      }), r()
+    }, [r]);
+  return (0, s.jsx)(o.f6W, {
+    theme: g.BR.DARK,
+    children: e => (0, s.jsx)(l.Y0X, {
       transitionState: t,
       parentComponent: "SocialLayerStorefrontAnnouncementModal",
-      size: o.CgR.DYNAMIC,
-      className: i()(e, v.modal),
+      size: l.CgR.DYNAMIC,
+      className: i()(e, p.modal),
       returnRef: a,
-      children: (0, r.jsxs)(o.hzk, {
-        className: v.content,
-        children: [(0, r.jsx)("div", {
-          className: v.closeButton,
-          children: (0, r.jsx)(o.olH, {
-            onClick: n
+      children: (0, s.jsxs)(l.hzk, {
+        className: p.content,
+        children: [(0, s.jsx)("div", {
+          className: p.closeButton,
+          children: (0, s.jsx)(l.olH, {
+            onClick: r
           })
-        }), (0, r.jsx)("div", {
-          className: v.artwork
-        }), (0, r.jsx)(l.X6q, {
+        }), (0, s.jsx)("div", {
+          className: p.artwork
+        }), (0, s.jsx)(o.X6q, {
           variant: "display-md",
-          color: "header-primary",
+          color: "text-strong",
           children: j.intl.string(j.t.to0E8U)
-        }), (0, r.jsx)(l.X6q, {
+        }), (0, s.jsx)(o.X6q, {
           variant: "display-md",
-          color: "header-primary",
+          color: "text-strong",
           children: j.intl.string(j.t.BKEkBd)
-        }), (0, r.jsx)(l.X6q, {
+        }), (0, s.jsx)(o.X6q, {
           variant: "heading-md/medium",
           color: "text-muted",
           children: j.intl.string(j.t.SiXpR2)
-        }), (0, r.jsxs)("div", {
-          className: v.features,
-          children: [(0, r.jsxs)("div", {
-            className: v.feature,
-            children: [(0, r.jsx)("div", {
-              className: v.featureIcon,
-              children: (0, r.jsx)("img", {
+        }), (0, s.jsxs)("div", {
+          className: p.features,
+          children: [(0, s.jsxs)("div", {
+            className: p.feature,
+            children: [(0, s.jsx)("div", {
+              className: p.featureIcon,
+              children: (0, s.jsx)("img", {
                 src: N,
                 alt: ""
               })
-            }), (0, r.jsxs)("div", {
-              className: v.featureCopy,
-              children: [(0, r.jsx)(l.X6q, {
+            }), (0, s.jsxs)("div", {
+              className: p.featureCopy,
+              children: [(0, s.jsx)(o.X6q, {
                 variant: "heading-md/semibold",
-                color: "header-primary",
+                color: "text-strong",
                 children: j.intl.string(j.t["5hRbeH"])
-              }), (0, r.jsx)(l.xvT, {
+              }), (0, s.jsx)(o.xvT, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: j.intl.string(j.t["72sDuh"])
               })]
             })]
-          }), (0, r.jsxs)("div", {
-            className: v.feature,
-            children: [(0, r.jsx)("div", {
-              className: v.featureIcon,
-              children: (0, r.jsx)("img", {
-                src: g,
+          }), (0, s.jsxs)("div", {
+            className: p.feature,
+            children: [(0, s.jsx)("div", {
+              className: p.featureIcon,
+              children: (0, s.jsx)("img", {
+                src: v,
                 alt: ""
               })
-            }), (0, r.jsxs)("div", {
-              className: v.featureCopy,
-              children: [(0, r.jsx)(l.X6q, {
+            }), (0, s.jsxs)("div", {
+              className: p.featureCopy,
+              children: [(0, s.jsx)(o.X6q, {
                 variant: "heading-md/semibold",
-                color: "header-primary",
+                color: "text-strong",
                 children: j.intl.string(j.t.MO4ASw)
-              }), (0, r.jsx)(l.xvT, {
+              }), (0, s.jsx)(o.xvT, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: j.intl.string(j.t.o4i2Wx)
               })]
             })]
           })]
-        }), (0, r.jsx)(l.zxk, {
+        }), (0, s.jsx)(o.zxk, {
           variant: "primary",
           text: j.intl.string(j.t.CekBHq),
           onClick: k,

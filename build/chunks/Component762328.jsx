@@ -112,19 +112,19 @@ function b(e) {
     middleware: x,
     whileElementsMounted: s.Me,
     elements: n
-  }), Z = (0, o.bQ)(G), B = (0, o.XI)(G, {
+  }), Z = (0, o.bQ)(G), F = (0, o.XI)(G, {
     enabled: "hover" === w,
     handleClose: (0, o.xp)({
       blockPointerEvents: true
     })
   }), {
-    getReferenceProps: F,
+    getReferenceProps: B,
     getFloatingProps: V
-  } = (0, o.NI)([Z, B]), H = (null == (t = k.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = C ? d.UU : i.Fragment;
+  } = (0, o.NI)([Z, F]), H = (null == (t = k.hide) ? true : t.referenceHidden) ? "hidden" : "visible", Y = C ? d.UU : i.Fragment;
   return (0, r.jsxs)(r.Fragment, {
     children: [N({
       ref: L.setReference,
-      props: F()
+      props: B()
     }), l && (0, r.jsxs)(Y, {
       children: [A ? (0, r.jsx)(o.y0, {}) : null, (0, r.jsx)("div", h(_({
         id: m,

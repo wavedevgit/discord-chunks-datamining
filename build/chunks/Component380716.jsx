@@ -248,7 +248,7 @@ function A(e) {
       className: P.formGroup,
       children: [(0, t.jsxs)(c.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: [I.intl.string(I.t["j+fhOY"]), (0, t.jsx)(S.Z, {})]
       }), (0, t.jsx)(c.oil, {
         value: Q,
@@ -263,7 +263,7 @@ function A(e) {
       className: P.formGroup,
       children: [(0, t.jsxs)(c.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: [I.intl.string(I.t.jVDc5W), (0, t.jsx)(S.Z, {})]
       }), (0, t.jsx)(u.d, {
         value: W,
@@ -282,7 +282,7 @@ function A(e) {
       children: [(0, t.jsxs)("div", {
         children: [(0, t.jsx)(c.Heading, {
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: I.intl.string(I.t.gs5rQm)
         }), (0, t.jsx)(c.Text, {
           variant: "text-xs/medium",
@@ -386,7 +386,7 @@ function A(e) {
       className: P.formGroup,
       children: [(0, t.jsxs)(c.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: [I.intl.string(I.t.MIMVLa), (0, t.jsx)(S.Z, {})]
       }), (0, t.jsx)(c.FXm, {
         value: ee,

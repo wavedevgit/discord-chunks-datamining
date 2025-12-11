@@ -55,7 +55,7 @@ let c = e => {
     className: d.headerContainer,
     children: [null != t && "" !== t ? (0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: t
     }) : null, null != n && "" !== t ? (0, r.jsx)(i.Text, {
       variant: "text-md/normal",

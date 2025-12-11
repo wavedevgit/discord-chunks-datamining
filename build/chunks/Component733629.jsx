@@ -17,7 +17,7 @@ function a(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: l.header,
       children: t
     }), n.map(e => e.renderComponent())]

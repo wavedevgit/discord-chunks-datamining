@@ -45,7 +45,7 @@ var i, Chunk807864 = require("./807864.js"),
   Chunk981631 = require("./981631.js"),
   Chunk757744 = require("./757744.js");
 
-function F(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ function V(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      B(e, t, n[t])
     })
   }
   return e
@@ -105,7 +105,7 @@ class er {
     for (let t of (this.waitingActionsToFlush.clear(), module)) this.queueDispatch(exports)
   }
   constructor() {
-    F(this, "isDispatching", false), F(this, "timeout", true), F(this, "requestIdleCallback", true), F(this, "actionsToFlush", new Set), F(this, "waitingActionsToFlush", new Set), F(this, "flush", () => {
+    B(this, "isDispatching", false), B(this, "timeout", true), B(this, "requestIdleCallback", true), B(this, "actionsToFlush", new Set), B(this, "waitingActionsToFlush", new Set), B(this, "flush", () => {
       if (null != this.timeout && (clearTimeout(this.timeout), this.timeout = null), null != this.requestIdleCallback && (cancelIdleCallback(this.requestIdleCallback), this.requestIdleCallback = null), !Q()) return void this.actionsToFlush.clear();
       this.actionsToFlush.size > 0 && (Chunk490029.lW({
         type: Chunk981631.BmY.DISPATCH,
@@ -113,9 +113,9 @@ class er {
         token: null,
         payloads: Array.from(this.actionsToFlush)
       }), this.actionsToFlush.clear()), this.waitingActionsToFlush.size > 0 && this.enqueueWaitingActions()
-    }), F(this, "dispatchPayloads", e => {
+    }), B(this, "dispatchPayloads", e => {
       this.isDispatching = true, e.forEach(e => l.Z.dispatch(e)), this.isDispatching = false
-    }), F(this, "queueDispatch", e => !(!Q() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
+    }), B(this, "queueDispatch", e => !(!Q() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
       settings: {
         type: e.settings.type,
         proto: (0, R.cv)(e.settings.type, e.settings.proto)
@@ -371,7 +371,7 @@ function eA(e, t, n) {
       success: t,
       overlay_method: S.gl[S.gl.Hook]
     }, n);
-  ed(e, V({}, o)), (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), B.bv, {
+  ed(e, V({}, o)), (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv, {
     width: n.graphics_width,
     height: n.graphics_height
   });
@@ -403,7 +403,7 @@ function eR(e) {
     case Z.BmY.CONNECT:
       let t = w.default.getToken();
       if (null == t) break;
-      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), B.bv), Promise.all([(0, I.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
+      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv), Promise.all([(0, I.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
           pid: i,
           token: a
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "7b2337f2e5267243d9368550d1e8f253eddf2177"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "84b271aef686b009e79406f9bdcfef11665c6d39"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -517,11 +517,11 @@ function eZ(e) {
   }), el.verbose("OverlayBridgeStore: handleOverlayCrashed: ".concat(n)), (0, O.V6)(i, S.gl.Hook)
 }
 
-function eB() {
+function eF() {
   J = true, z = false, eQ()
 }
 
-function eF() {
+function eB() {
   J = false, Chunk13245.Z.setFocusedPID(null, null), ev(true), el.verbose("OverlayBridgeStore: handleConnectionClosed")
 }
 
@@ -655,14 +655,14 @@ class e$ extends(i = Chunk442837.ZP.Store) {
     return q
   }
 }
-F(e$, "displayName", "OverlayBridgeStore");
+B(e$, "displayName", "OverlayBridgeStore");
 let e0 = new e$(Chunk570140.Z, __OVERLAY__ ? {
     OVERLAY_RELAY_CLICK_ZONE_CLICKED: eW
   } : {
     LOGIN: eX,
     LOGOUT: eJ,
-    CONNECTION_OPEN: eB,
-    CONNECTION_CLOSED: eF,
+    CONNECTION_OPEN: eF,
+    CONNECTION_CLOSED: eB,
     EXPERIMENT_OVERRIDE_BUCKET: eV,
     RUNNING_GAME_TOGGLE_OVERLAY: ez,
     RUNNING_GAMES_CHANGE: eK,

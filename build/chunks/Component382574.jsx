@@ -19,11 +19,11 @@ let s = function(e) {
     onEdit: d,
     onRemove: u,
     canRemove: g,
-    actionsLocation: m,
-    fieldStyle: f
+    actionsLocation: f,
+    fieldStyle: m
   } = e, {
-    label: p,
-    placeholder: b
+    label: b,
+    placeholder: p
   } = t;
   return (0, r.jsx)(l.Z, {
     field: t,
@@ -33,12 +33,12 @@ let s = function(e) {
     onDrop: c,
     onEdit: d,
     onRemove: u,
-    title: p,
+    title: b,
     canRemove: g,
-    actionsLocation: m,
-    fieldStyle: f,
+    actionsLocation: f,
+    fieldStyle: m,
     children: (0, r.jsx)(i.Q8, {
-      placeholder: null != b ? b : a.intl.string(a.t["Sqn+Wh"]),
+      placeholder: null != p ? p : a.intl.string(a.t["Sqn+Wh"]),
       disabled: true
     })
   })

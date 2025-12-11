@@ -520,11 +520,11 @@ var r = function(e) {
   var G = U.length,
     Z = U[G - 1];
 
-  function B(e) {
+  function F(e) {
     return Math.abs(e) <= t
   }
 
-  function F(e, t, n) {
+  function B(e, t, n) {
     t = ea(t);
     for (var i = e.isNegative(), a = t.isNegative(), o = i ? e.not() : e, s = a ? t.not() : t, l = 0, c = 0, u = null, d = null, f = []; !o.isZero() || !s.isZero();) l = (u = L(o, Z))[1].toJSNumber(), i && (l = Z - 1 - l), c = (d = L(s, Z))[1].toJSNumber(), a && (c = Z - 1 - c), o = u[0], s = d[0], f.push(n(l, c));
     for (var p = 0 !== n(+!!i, +!!a) ? r(false) : r(0), _ = f.length - 1; _ >= 0; _ -= 1) p = p.multiply(Z).add(r(f[_]));
@@ -532,7 +532,7 @@ var r = function(e) {
   }
   c.prototype.shiftLeft = function(e) {
     var t = ea(e).toJSNumber();
-    if (!B(t)) throw Error(String(t) + " is too large for shifting.");
+    if (!F(t)) throw Error(String(t) + " is too large for shifting.");
     if (t < 0) return this.shiftRight(-t);
     var n = this;
     if (n.isZero()) return n;
@@ -540,7 +540,7 @@ var r = function(e) {
     return n.multiply(U[t])
   }, d.prototype.shiftLeft = u.prototype.shiftLeft = c.prototype.shiftLeft, c.prototype.shiftRight = function(e) {
     var t, n = ea(e).toJSNumber();
-    if (!B(n)) throw Error(String(n) + " is too large for shifting.");
+    if (!F(n)) throw Error(String(n) + " is too large for shifting.");
     if (n < 0) return this.shiftLeft(-n);
     for (var r = this; n >= G;) {
       if (r.isZero() || r.isNegative() && r.isUnit()) return r;
@@ -550,15 +550,15 @@ var r = function(e) {
   }, d.prototype.shiftRight = u.prototype.shiftRight = c.prototype.shiftRight, c.prototype.not = function() {
     return this.negate().prev()
   }, d.prototype.not = u.prototype.not = c.prototype.not, c.prototype.and = function(e) {
-    return F(this, e, function(e, t) {
+    return B(this, e, function(e, t) {
       return e & t
     })
   }, d.prototype.and = u.prototype.and = c.prototype.and, c.prototype.or = function(e) {
-    return F(this, e, function(e, t) {
+    return B(this, e, function(e, t) {
       return e | t
     })
   }, d.prototype.or = u.prototype.or = c.prototype.or, c.prototype.xor = function(e) {
-    return F(this, e, function(e, t) {
+    return B(this, e, function(e, t) {
       return e ^ t
     })
   }, d.prototype.xor = u.prototype.xor = c.prototype.xor;

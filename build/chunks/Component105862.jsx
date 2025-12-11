@@ -38,7 +38,7 @@ function p(e) {
         className: f.body,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/bold",
-          color: "header-primary",
+          color: "text-strong",
           children: d.intl.string(d.t["kw8/Ec"])
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",

@@ -47,8 +47,8 @@ function M(e) {
     isHoveringOrFocusing: U,
     onOpenProfile: G,
     channelId: Z,
-    onClose: B
-  } = e, F = u.ZP.useName(null == k ? true : k.id, Z, t), {
+    onClose: F
+  } = e, B = u.ZP.useName(null == k ? true : k.id, Z, t), {
     relationshipType: V,
     originApplicationId: H
   } = (0, i.cj)([l.Z], () => ({
@@ -70,17 +70,17 @@ function M(e) {
       user: t,
       guildId: null == k ? true : k.id,
       onOpenProfile: G,
-      onClose: B,
+      onClose: F,
       usernameIcon: t.hasAvatarForGuild(null == k ? true : k.id) && (0, r.jsx)(N.Z, {
         user: t,
-        nickname: F
+        nickname: B
       }),
-      nickname: F,
+      nickname: B,
       pronouns: null == M ? true : M.pronouns,
       tags: (0, r.jsx)(m.Z, {
         displayProfile: M,
         themeType: x.l.POPOUT,
-        onClose: B
+        onClose: F
       }),
       nicknameIcons: W ? null : (0, r.jsx)(C.Z, {
         userId: t.id,
@@ -114,9 +114,9 @@ function M(e) {
         heading: L.intl.string(L.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
-          color: a.TVs.colors.HEADER_PRIMARY
+          color: a.TVs.colors.TEXT_STRONG
         }),
-        headingColor: "header-primary",
+        headingColor: "text-strong",
         children: (0, r.jsx)(s.n, {
           userId: t.id
         })
@@ -125,25 +125,25 @@ function M(e) {
       user: t,
       bio: null == M ? true : M.bio,
       hidePersonalInformation: W,
-      onClose: B
+      onClose: F
     }), J && (0, r.jsx)(S.Z, {
       user: t,
       widgets: null == M ? true : M.widgets,
       onOpenUserProfileModal: G
     }), q && (0, r.jsx)(h.Z, {
       isPremiumUser: $,
-      onInteraction: B
+      onInteraction: F
     }), K ? (0, r.jsx)(v.Z, {
       user: t,
       currentUser: n,
       guildId: null == k ? true : k.id,
       onOpenUserProfileModal: G,
-      onClose: B
+      onClose: F
     }) : (0, r.jsx)(g.Z, {
       user: t,
       currentUser: n,
       guildId: null == k ? true : k.id,
-      onClose: B
+      onClose: F
     }), z && !q && (0, r.jsx)(w.Z, {
       user: t,
       onOpenProfile: G

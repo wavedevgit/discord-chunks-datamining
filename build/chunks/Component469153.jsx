@@ -19,7 +19,7 @@ let d = () => (0, Chunk54381.jsxs)("div", {
       type: Chunk481060.RAz.SPINNING_CIRCLE_SIMPLE,
       className: Chunk749057.loadingSpinner
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t["5z/hlE"])
     })]

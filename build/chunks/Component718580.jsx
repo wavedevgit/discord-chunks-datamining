@@ -149,7 +149,7 @@ function N(e) {
     width: null != (n = S.width) ? n : k,
     height: U,
     config: G
-  }, null == R ? "animate-never" : "respect-motion-settings"), B = (0, f.Yzy)(P, {
+  }, null == R ? "animate-never" : "respect-motion-settings"), F = (0, f.Yzy)(P, {
     value: 0,
     from: {
       value: 1
@@ -167,7 +167,7 @@ function N(e) {
       } = t;
       n === P && null != S.onSlideReady && S.onSlideReady(n)
     }
-  }, null == R ? "animate-never" : "respect-motion-settings"), F = (0, c.Z)(w), {
+  }, null == R ? "animate-never" : "respect-motion-settings"), B = (0, c.Z)(w), {
     width: V,
     centered: H = true
   } = S, Y = u.tq && !S.shouldUseMediaQueriesForSizing ? "100%" : Z.width.to(e => "string" == typeof e ? e : Math.round(e)), W = u.tq && !S.shouldUseMediaQueriesForSizing ? "100%" : Z.height.to(e => Math.round(e)), K = u.tq ? {} : H ? {
@@ -189,7 +189,7 @@ function N(e) {
     className: o()({
       [g.outerAnimatedDivDynamicSizing]: S.shouldUseMediaQueriesForSizing
     }),
-    children: B((e, t, n) => {
+    children: F((e, t, n) => {
       let {
         key: i
       } = n, a = {
@@ -203,8 +203,8 @@ function N(e) {
           flexDirection: "column",
           backfaceVisibility: "hidden"
         }, q, K, D.enabled ? a : b({
-          left: e.value.to(C("left", F)),
-          right: e.value.to(C("right", F))
+          left: e.value.to(C("left", B)),
+          right: e.value.to(C("right", B))
         }, y && a)),
         className: o()({
           [g.innerAnimatedDivDynamicSizing]: S.shouldUseMediaQueriesForSizing

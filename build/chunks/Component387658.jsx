@@ -2,7 +2,7 @@
 /** chunk id: 387658, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -67,7 +67,7 @@ function k(e) {
     className: x.commandTextContainer,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: o.displayName
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
@@ -113,7 +113,7 @@ function U() {
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           className: Chunk589118.hidden,
           variant: "text-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           lineClamp: 1,
           children: "_"
         })
@@ -218,7 +218,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   var t;
   let {
     context: n,

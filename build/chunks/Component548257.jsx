@@ -2,7 +2,7 @@
 /** chunk id: 548257, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -31,24 +31,24 @@ let m = {
     categoryStoreListingId: "",
     rewardSkuId: true
   },
-  h = e => {
+  C = e => {
     var t;
     let {
       isLoading: n = false,
       heroBlock: l,
-      tab: o,
+      tab: i,
       onVisibilityChange: d
-    } = e, h = (0, i.O)(e => {
+    } = e, C = (0, o.O)(e => {
       null == d || d(e)
-    }, .1, null != d), C = (0, s.e7)([u.default], () => u.default.getCurrentUser()), {
+    }, .1, null != d), h = (0, s.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerStyleOverrides: v,
       logoStyleOverrides: E,
       heroLogo: S,
       heroBannerStatic: _,
       heroBannerAnimated: O
     } = (0, f.hr)(l), x = null != (t = null == v ? true : v.responsive) && t, y = null == v ? true : v.backgroundStyle;
-    return null != C && (n || l !== m) ? (0, r.jsxs)("div", {
-      ref: h,
+    return null != h && (n || l !== m) ? (0, r.jsxs)("div", {
+      ref: C,
       className: b.heroBlock,
       children: [(0, r.jsx)("div", {
         className: a()(b.banner, {
@@ -82,7 +82,7 @@ let m = {
               }), null != l.title && (0, r.jsx)(c.Heading, {
                 variant: "heading-xxl/bold",
                 className: b.title,
-                color: "header-primary",
+                color: "text-strong",
                 children: l.title
               }), "" !== l.summary && (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
@@ -97,7 +97,7 @@ let m = {
         }), (0, r.jsx)(p.Z, {
           isBlockLoading: n,
           heroBlock: l,
-          tab: o
+          tab: i
         })]
       })]
     }) : null

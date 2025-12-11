@@ -25,7 +25,7 @@ require.d(exports, {
   Uc: () => en,
   V8: () => et,
   WA: () => y,
-  XR: () => B,
+  XR: () => F,
   YE: () => G,
   Yh: () => f,
   Yn: () => i,
@@ -41,7 +41,7 @@ require.d(exports, {
   h7: () => a,
   iA: () => q,
   jg: () => E,
-  kS: () => F,
+  kS: () => B,
   mC: () => C,
   mN: () => T,
   n4: () => Y,
@@ -110,8 +110,8 @@ let d = 100,
   U = 5e5,
   G = 35e5,
   Z = 9e6,
-  B = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
-  F = {
+  F = ["remoteSinkWantsPixelCount", "remoteSinkWantsMaxFramerate", "encodingVideoMinBitRate", "encodingVideoMaxBitRate", "encodingVideoBitRate", "streamParameters"],
+  B = {
     videoBudget: {
       width: 1280,
       height: 720,

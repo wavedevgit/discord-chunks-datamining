@@ -105,10 +105,10 @@ let O = function(e) {
   let k = (0, s.e7)([p.Z], () => (null == x ? true : x.guildId) == null || (null == x ? true : x.colorRoleId) == null ? null : p.Z.getRole(x.guildId, x.colorRoleId)),
     U = (0, f.yH)(null == x ? true : x.guildId, k) && (0, d.S2)(x),
     [G, Z] = i.useState(false),
-    B = i.useCallback(e => {
+    F = i.useCallback(e => {
       Z(true), null == L || L(e)
     }, [L]),
-    F = i.useCallback(e => {
+    B = i.useCallback(e => {
       Z(false), null == j || j(e)
     }, [j]),
     V = (0, u.Y)({
@@ -137,8 +137,8 @@ let O = function(e) {
           ref: N
         }, M), {
           role: "article",
-          onMouseEnter: B,
-          onMouseLeave: F,
+          onMouseEnter: F,
+          onMouseLeave: B,
           children: [O, v, (0, r.jsxs)("div", {
             className: _.contents,
             children: [I, S, null == I && C]

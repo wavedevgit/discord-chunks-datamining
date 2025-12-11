@@ -74,13 +74,13 @@ function Z(e, t) {
   return n
 }
 
-function B(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e, t) {
+function B(e, t) {
   if (null == e) return {};
   var n, r, i = V(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -105,7 +105,7 @@ function K(e) {
   let {
     userRoleIds: t,
     position: n
-  } = e, i = F(e, ["userRoleIds", "position"]), a = (0, v.Dt)();
+  } = e, i = B(e, ["userRoleIds", "position"]), a = (0, v.Dt)();
   return (0, r.jsxs)(m.VqE, {
     className: o()(k.overflowRolesPopout, {
       [k.popoutBottom]: "bottom" === n,
@@ -131,7 +131,7 @@ function K(e) {
           numRoles: t.length
         })
       })]
-    }), (0, r.jsx)(X, B(G({}, i), {
+    }), (0, r.jsx)(X, F(G({}, i), {
       wrap: true,
       userRoleIds: t
     }))]
@@ -152,7 +152,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     {
       tabIndex: P
     } = N,
-    R = F(N, ["tabIndex"]),
+    R = B(N, ["tabIndex"]),
     w = (0, S.p9)({
       roleId: E.id,
       size: 16,
@@ -166,7 +166,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
         let {
           default: e
         } = await n.e("5396").then(n.bind(n, 731646));
-        return t => (0, r.jsx)(e, B(G({}, t), {
+        return t => (0, r.jsx)(e, F(G({}, t), {
           id: E.id,
           label: M.intl.string(M.t.sMsaLg)
         }))
@@ -199,7 +199,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     }, null != (t = e.style) ? t : {})
   }, [V, I, e.style]);
   return (0, r.jsx)(m.tEY, {
-    children: (0, r.jsxs)("div", B(G({
+    children: (0, r.jsxs)("div", F(G({
       ref: t,
       className: o()(k.role, g),
       style: W,
@@ -225,7 +225,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
           className: k.roleRemoveIcon,
           "aria-hidden": true
         }) : null]
-      }), null != w ? (0, r.jsx)(C.Z, B(G({
+      }), null != w ? (0, r.jsx)(C.Z, F(G({
         className: k.roleIcon
       }, w), {
         enableTooltip: false
@@ -254,14 +254,14 @@ function q(e) {
       let {
         position: n
       } = t;
-      return (0, r.jsx)(K, B(G({}, e), {
+      return (0, r.jsx)(K, F(G({}, e), {
         position: null != n ? n : "top"
       }))
     },
     position: "top",
     align: "center",
     children: e => (0, r.jsx)(m.tEY, {
-      children: (0, r.jsx)("button", B(G(B(G({
+      children: (0, r.jsx)("button", F(G(F(G({
         ref: l
       }, e), {
         className: o()(k.overflowButton, a)
@@ -304,7 +304,7 @@ function Q(e) {
     position: "bottom",
     align: "center",
     children: e => (0, r.jsx)(m.tEY, {
-      children: (0, r.jsx)("button", B(G(B(G({
+      children: (0, r.jsx)("button", F(G(F(G({
         ref: t
       }, e), {
         className: o()(k.addButton, l, c),
@@ -392,9 +392,9 @@ function X(e) {
         disableBorderColor: b
       }, e.id)
     });
-  return null != T && 0 !== R ? t = (0, r.jsx)(q, B(G({}, e), {
+  return null != T && 0 !== R ? t = (0, r.jsx)(q, F(G({}, e), {
     numRolesHidden: R
-  })) : Z && (t = (0, r.jsx)(Q, B(G({}, e), {
+  })) : Z && (t = (0, r.jsx)(Q, F(G({}, e), {
     handleAddRole: S
   }))), (0, r.jsx)(u.bG, {
     navigator: X,
@@ -402,8 +402,8 @@ function X(e) {
       children: e => {
         var {
           ref: n
-        } = e, i = F(e, ["ref"]);
-        return (0, r.jsxs)("div", B(G({
+        } = e, i = B(e, ["ref"]);
+        return (0, r.jsxs)("div", F(G({
           className: o()(k.root, m),
           "aria-label": M.intl.formatToPlainString(M.t.PCs0oo, {
             numRoles: s.length

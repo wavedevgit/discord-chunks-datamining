@@ -22,11 +22,11 @@ function s(e, t, n) {
       })
     } catch (e) {
       var a;
-      d(429 === (a = null == e ? true : e.status) ? o.intl.string(o.t.BPmZvj) : 404 === a || 400 === a ? o.intl.string(o.t.aWa1Pw) : o.intl.string(o.t.JNQRU4)), c(false), (null == e ? true : e.status) === 401 && n()
+      d(429 === (a = null == e ? true : e.status) ? i.intl.string(i.t.BPmZvj) : 404 === a || 400 === a ? i.intl.string(i.t.aWa1Pw) : i.intl.string(i.t.JNQRU4)), c(false), (null == e ? true : e.status) === 401 && n()
     }
   }, [e, t, n]);
   return a.useEffect(() => {
-    e.length === i.A.USER_CODE_LENGTH ? u() : d(null)
+    e.length === o.A.USER_CODE_LENGTH ? u() : d(null)
   }, [e, u]), {
     manualSubmit: u,
     error: l,

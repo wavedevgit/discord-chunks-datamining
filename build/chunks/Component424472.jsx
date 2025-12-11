@@ -30,7 +30,7 @@ function p(e) {
     className: n,
     children: [(0, a.jsx)(i.Heading, {
       variant: "heading-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: d.intl.string(d.t.s7iald)
     }), (0, a.jsx)("div", {
       className: u.categories,

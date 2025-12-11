@@ -147,14 +147,14 @@ function Z(e) {
   }))]
 }
 
-function B(e) {
+function F(e) {
   let {
     items: t
   } = e;
   D = t
 }
 
-function F(e) {
+function B(e) {
   let {
     items: t
   } = e;
@@ -193,6 +193,6 @@ let H = new V(Chunk570140.Z, {
   GIF_PICKER_QUERY_SUCCESS: U,
   GIF_PICKER_QUERY_FAILURE: G,
   GIF_PICKER_TRENDING_FETCH_SUCCESS: Z,
-  GIF_PICKER_SUGGESTIONS_SUCCESS: B,
-  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: F
+  GIF_PICKER_SUGGESTIONS_SUCCESS: F,
+  GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: B
 })

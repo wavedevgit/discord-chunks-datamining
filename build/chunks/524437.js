@@ -19,7 +19,7 @@ require.d(exports, {
   Us: () => S,
   X: () => u,
   Xr: () => p,
-  aV: () => eF,
+  aV: () => eB,
   az: () => Q,
   bE: () => eh,
   c$: () => ti,
@@ -719,7 +719,7 @@ class G extends Chunk495852.C {
   }
 }
 let Z = new G;
-class B extends Chunk495852.C {
+class F extends Chunk495852.C {
   create(e) {
     let t = {};
     return globalThis.Object.defineProperty(t, a.C, {
@@ -775,7 +775,7 @@ class B extends Chunk495852.C {
     }])
   }
 }
-let F = new B;
+let B = new F;
 class V extends Chunk495852.C {
   create(e) {
     let t = {
@@ -796,7 +796,7 @@ class V extends Chunk495852.C {
           a.collapsedInInbox = e.bool();
           break;
         case 2:
-          a.iconEmoji = F.internalBinaryRead(e, e.uint32(), n, a.iconEmoji);
+          a.iconEmoji = B.internalBinaryRead(e, e.uint32(), n, a.iconEmoji);
           break;
         case 3:
           a.customNotificationSoundConfig = W.internalBinaryRead(e, e.uint32(), n, a.customNotificationSoundConfig);
@@ -811,7 +811,7 @@ class V extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    false !== e.collapsedInInbox && t.tag(1, r.TD.Varint).bool(e.collapsedInInbox), e.iconEmoji && F.internalBinaryWrite(e.iconEmoji, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.customNotificationSoundConfig && W.internalBinaryWrite(e.customNotificationSoundConfig, t.tag(3, r.TD.LengthDelimited).fork(), n).join();
+    false !== e.collapsedInInbox && t.tag(1, r.TD.Varint).bool(e.collapsedInInbox), e.iconEmoji && B.internalBinaryWrite(e.iconEmoji, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.customNotificationSoundConfig && W.internalBinaryWrite(e.customNotificationSoundConfig, t.tag(3, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -825,7 +825,7 @@ class V extends Chunk495852.C {
       no: 2,
       name: "icon_emoji",
       kind: "message",
-      T: () => F
+      T: () => B
     }, {
       no: 3,
       name: "custom_notification_sound_config",
@@ -3130,16 +3130,16 @@ class eG extends Chunk495852.C {
           a = t.fixed64().toString();
           break;
         case 2:
-          o = eF.internalBinaryRead(t, t.uint32(), n);
+          o = eB.internalBinaryRead(t, t.uint32(), n);
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.discord_users.v1.Favorites.favorite_channels")
       }
     }
-    e[null != a ? a : "0"] = null != o ? o : eF.create()
+    e[null != a ? a : "0"] = null != o ? o : eB.create()
   }
   internalBinaryWrite(e, t, n) {
-    for (let i of Object.keys(e.favoriteChannels)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), eF.internalBinaryWrite(e.favoriteChannels[i], t, n), t.join().join();
+    for (let i of Object.keys(e.favoriteChannels)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.Bit64).fixed64(i), t.tag(2, r.TD.LengthDelimited).fork(), eB.internalBinaryWrite(e.favoriteChannels[i], t, n), t.join().join();
     false !== e.muted && t.tag(2, r.TD.Varint).bool(e.muted);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
@@ -3152,7 +3152,7 @@ class eG extends Chunk495852.C {
       K: 6,
       V: {
         kind: "message",
-        T: () => eF
+        T: () => eB
       }
     }, {
       no: 2,
@@ -3163,7 +3163,7 @@ class eG extends Chunk495852.C {
   }
 }
 let eZ = new eG;
-class eB extends Chunk495852.C {
+class eF extends Chunk495852.C {
   create(e) {
     let t = {
       nickname: "",
@@ -3232,7 +3232,7 @@ class eB extends Chunk495852.C {
     }])
   }
 }
-let eF = new eB;
+let eB = new eF;
 class eV extends Chunk495852.C {
   create(e) {
     let t = {

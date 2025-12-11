@@ -42,7 +42,7 @@ function j(e) {
     onNextStep: t
   } = e, n = (0, c.e7)([m.Z], () => m.Z.getFetchState() === m.p.ERROR || null == m.Z.getCheckpointData().messages), [a, j] = i.useState(true), M = i.useRef(null), k = i.useContext(_.Q), U = (0, u.dQu)(k.primaryColor).hex(), G = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), Z = i.useCallback(e => {
     e.currentTarget.currentTime >= R && j(false)
-  }, []), B = (0, u.q_F)({
+  }, []), F = (0, u.q_F)({
     from: {
       opacity: 0
     },
@@ -51,7 +51,7 @@ function j(e) {
     },
     pause: a,
     delay: L
-  }), F = (0, u.q_F)({
+  }), B = (0, u.q_F)({
     from: {
       opacity: 0
     },
@@ -135,7 +135,7 @@ function j(e) {
         name: "Exyl"
       })
     }), a ? null : (0, r.jsx)(s.animated.div, {
-      style: F,
+      style: B,
       children: (0, r.jsx)(l.Z, {
         autoPlay: !G,
         muted: true,
@@ -176,7 +176,7 @@ function j(e) {
       })]
     }), a ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.animated.div, {
-        style: B,
+        style: F,
         children: [(0, r.jsx)(E.Z, {
           className: A.knickKnacks,
           slide: S.yD.WELCOME
@@ -192,7 +192,7 @@ function j(e) {
           }), C.intl.string(C.t.I0v0Qv)]
         })]
       }), (0, r.jsx)(s.animated.div, {
-        style: F,
+        style: B,
         children: (0, r.jsx)(O.Z, {
           className: A.ratingIcon,
           style: {

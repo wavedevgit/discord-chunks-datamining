@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk811847 = require("./811847.js"),
   Chunk215023 = require("./215023.js"),
@@ -35,18 +35,18 @@ function f(e) {
     value: c.AW.CATALOG
   }], []);
   return (0, r.jsx)("div", {
-    className: i()({
+    className: o()({
       [d.customCursors]: a
     }),
-    children: (0, r.jsx)(o.v2r, {
+    children: (0, r.jsx)(i.v2r, {
       navId: "collectibles-index-page-menu",
-      className: i()({
+      className: o()({
         [d.customCursors]: a
       }),
       onClose: n,
       "aria-label": u.intl.string(u.t.xFcotU),
       onSelect: () => {},
-      children: f.map(e => (0, r.jsx)(o.sNh, {
+      children: f.map(e => (0, r.jsx)(i.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

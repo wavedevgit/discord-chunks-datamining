@@ -188,11 +188,11 @@ function ey(e) {
     onVoiceChannelPreview: h
   }), {
     embeddedActivity: w
-  } = (0, $.Z)(o), D = eC(w), x = null != R && 0 === s.length ? [R] : s, L = x.length > 0, j = x.length >= 2, [M, U] = i.useState(!L), Z = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), B = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
+  } = (0, $.Z)(o), D = eC(w), x = null != R && 0 === s.length ? [R] : s, L = x.length > 0, j = x.length >= 2, [M, U] = i.useState(!L), Z = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), F = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAx"], {
     channel: "@".concat(Z)
-  }), F = g ? ec.intl.string(ec.t.Z2CUgn) : ec.intl.string(ec.t.XLGiTG), V = async e => {
+  }), B = g ? ec.intl.string(ec.t.Z2CUgn) : ec.intl.string(ec.t.XLGiTG), V = async e => {
     let r, {
       emoji: i
     } = e;
@@ -283,7 +283,7 @@ function ey(e) {
         }), (0, r.jsxs)("div", {
           className: M ? eu.inputContainerShareToChannel : eu.hiddenButRenderedInputField,
           children: [(0, r.jsx)(O.A7, {
-            placeholder: B,
+            placeholder: F,
             onEnter: H,
             setEditorRef: e => y(e),
             channel: g ? t : true,
@@ -291,7 +291,7 @@ function ey(e) {
             className: eu.replyInput,
             autoFocus: false,
             renderAttachButton: S ? () => (0, r.jsx)(p.u, {
-              text: F,
+              text: B,
               children: (0, r.jsx)(_.P3F, {
                 className: eu.shareToChannelButton,
                 onClick: q,
@@ -393,7 +393,7 @@ function ev(e) {
     participant1: d,
     participant2: p,
     numOtherParticipants: m
-  } = (0, ee.Z)(i, 3), h = (0, c.e7)([F.default], () => F.default.getUser(i.author_id)), {
+  } = (0, ee.Z)(i, 3), h = (0, c.e7)([B.default], () => B.default.getUser(i.author_id)), {
     streamPreviewUrl: g
   } = (0, et.Z)(i), E = null != g, b = [d, p];
   return (0, r.jsxs)("div", {
@@ -655,9 +655,9 @@ function eT(e) {
 function eC(e) {
   let t = (0, c.e7)([U.Z], () => U.Z.getGuild((0, y.j)(null == e ? true : e.location))),
     n = (0, c.e7)([k.Z], () => k.Z.getChannel((0, y.p)(null == e ? true : e.location))),
-    i = (0, c.Wu)([F.default], () => {
+    i = (0, c.Wu)([B.default], () => {
       var t, n;
-      return null != (n = null == e || null == (t = e.participants) ? true : t.map(e => F.default.getUser(e.userId))) ? n : []
+      return null != (n = null == e || null == (t = e.participants) ? true : t.map(e => B.default.getUser(e.userId))) ? n : []
     });
   return null != e && null != t && null != n && M.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -721,7 +721,7 @@ function eA(e) {
   } = (0, D.Z)(null == t ? true : t.id), u = (0, c.e7)([U.Z], () => null != s ? U.Z.getGuild(s.guild_id) : true), f = (0, c.Wu)([H.ZP], () => null != s ? H.ZP.getVoiceStatesForChannel(s) : [], [s]), m = (0, c.e7)([V.Z], () => V.Z.isInChannel(null == s ? true : s.id)), g = i.useMemo(() => {
     for (let e of f) {
       let t = k.Z.getDMFromUserId(e.user.id),
-        n = null != t && B.ZP.isChannelMuted(null, t),
+        n = null != t && F.ZP.isChannelMuted(null, t),
         r = Z.Z.isBlockedOrIgnored(e.user.id);
       if (n || r) returntrue
     }

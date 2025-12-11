@@ -183,8 +183,8 @@ function Z(e) {
     setConfettiCanvas: R,
     customConfettiVisible: w,
     setCustomConfettiVisible: Z,
-    customConfettiDisplayOptions: B,
-    hideConfirmStepConfetti: F
+    customConfettiDisplayOptions: F,
+    hideConfirmStepConfetti: B
   } = j({
     skuId: l
   }), {
@@ -211,16 +211,16 @@ function Z(e) {
     renderStep: e => (0, r.jsx)(S.x, D({
       confettiCanvas: A,
       analyticsLocations: T,
-      hideConfetti: F
+      hideConfetti: B
     }, e)),
     options: L
-  }], [T, A, F, c]);
+  }], [T, A, B, c]);
   return (0, r.jsxs)(d.Gt, {
     value: T,
     children: [(0, r.jsx)(U, {
       environment: N,
       setConfettiCanvas: R,
-      customConfettiDisplayOptions: B,
+      customConfettiDisplayOptions: F,
       customConfettiVisible: w
     }), (0, r.jsx)(h.PaymentContextProvider, {
       loadId: s,

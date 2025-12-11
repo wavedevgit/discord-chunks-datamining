@@ -1049,7 +1049,7 @@ class G extends Chunk495852.C {
   }
 }
 let Z = new G;
-class B extends Chunk495852.C {
+class F extends Chunk495852.C {
   create(e) {
     let t = {
       shards: []
@@ -1096,8 +1096,8 @@ class B extends Chunk495852.C {
     }])
   }
 }
-new B;
-class F extends Chunk495852.C {
+new F;
+class B extends Chunk495852.C {
   create(e) {
     let t = {
       questsCompleted: 0
@@ -1136,7 +1136,7 @@ class F extends Chunk495852.C {
     }])
   }
 }
-let V = new F;
+let V = new B;
 class H extends Chunk495852.C {
   create(e) {
     let t = {};

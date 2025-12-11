@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => E
 });
 var l, i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk45966 = require("./45966.js"),
@@ -25,14 +25,14 @@ class O extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk999382.Z, Chunk45966.Z)
   }
   hasChanges() {
-    return null != f && !a().isEqual(Chunk45966.Z.getOnboardingPrompts(f), h)
+    return null != f && !s().isEqual(Chunk45966.Z.getOnboardingPrompts(f), h)
   }
   getChangedPrompts() {
     if (null == f) return [];
     let e = Chunk45966.Z.getOnboardingPrompts(f);
     return h.filter(t => {
       let n = e.find(e => e.id === t.id);
-      return null == n || !a().isEqual(t, n)
+      return null == n || !s().isEqual(t, n)
     })
   }
   get guildId() {

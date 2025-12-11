@@ -201,11 +201,11 @@ function x(e) {
       var t, n;
       e.preventDefault(), h(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
     }, [G]),
-    B = e => {
+    F = e => {
       var t;
       G(Array.from(null != (t = e.currentTarget.files) ? t : []), "file_picker"), e.currentTarget.value = ""
     },
-    F = e => {
+    B = e => {
       d.Z.remove(E, e, y.d.InteractionModal), x(v.filter(t => t !== e))
     };
   return (i.useEffect(() => {
@@ -215,7 +215,7 @@ function x(e) {
     }
   }, [k, U, Z]), 1 === a && 1 === L.length) ? (0, r.jsx)(D, {
     upload: L[0],
-    handleRemoveFile: F,
+    handleRemoveFile: B,
     singleFileInput: true
   }) : (0, r.jsxs)("div", {
     ref: u,
@@ -233,11 +233,11 @@ function x(e) {
       className: P.files,
       children: L.map(e => (0, r.jsx)(D, {
         upload: e,
-        handleRemoveFile: F
+        handleRemoveFile: B
       }, e.id))
     }), (0, r.jsx)(f.Z, {
       ref: s,
-      onChange: B,
+      onChange: F,
       multiple: a > 1,
       tabIndex: false,
       className: P.fileInput

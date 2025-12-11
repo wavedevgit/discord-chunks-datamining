@@ -20,16 +20,16 @@ let f = function(e) {
   let {
     tabId: n,
     onSelectApplication: f,
-    onScroll: b
-  } = e, g = r.useRef(null), x = r.useCallback(() => {
+    onScroll: g
+  } = e, b = r.useRef(null), x = r.useCallback(() => {
     var e;
-    null == (e = g.current) || e.scrollTo({
+    null == (e = b.current) || e.scrollTo({
       to: 0
     })
   }, []), v = (0, i.e7)([u.Z], () => u.Z.getCategories()), C = r.useMemo(() => v.find(e => e.id === n), [v, n]), j = r.useMemo(() => null != C ? (0, d.v)(C) : "", [C]);
   return (0, a.jsxs)(c.Z, {
-    onScroll: b,
-    ref: g,
+    onScroll: g,
+    ref: b,
     children: [(0, a.jsx)(s.Z, {
       title: null != (t = null == C ? true : C.name) ? t : "",
       description: j,

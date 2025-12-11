@@ -13,7 +13,7 @@ require.d(exports, {
   fz: () => W,
   kK: () => M,
   lg: () => Y,
-  om: () => F,
+  om: () => B,
   pL: () => R,
   uV: () => N,
   uX: () => V
@@ -198,14 +198,14 @@ async function Z(e) {
   }
 }
 
-function B(e) {
+function F(e) {
   return v.Z.getUploadedKeyVersionsCached().includes(e)
 }
-async function F(e) {
-  B(e) || await Z(e)
+async function B(e) {
+  F(e) || await Z(e)
 }
 async function V(e) {
-  if (!B(e)) return await Z(e), true;
+  if (!F(e)) return await Z(e), true;
   let t = d.default.getId(),
     {
       key: n

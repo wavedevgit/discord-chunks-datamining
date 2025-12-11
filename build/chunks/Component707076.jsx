@@ -45,18 +45,18 @@ function x(e) {
     selected: false
   }];
   t && n.pop();
-  let i = t ? (0, l.jsx)(s.Text, {
+  let i = t ? (0, l.jsx)(a.Text, {
       variant: "text-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: E.intl.string(E.t.nTI2mQ)
-    }) : (0, l.jsx)(s.Heading, {
+    }) : (0, l.jsx)(a.Heading, {
       variant: "heading-md/semibold",
       children: E.intl.string(E.t.g1OQtu)
     }),
-    a = t ? (0, l.jsx)(s.Text, {
+    s = t ? (0, l.jsx)(a.Text, {
       variant: "text-xxs/normal",
       children: E.intl.format(E.t.hGwDPV, {})
-    }) : (0, l.jsx)(s.Text, {
+    }) : (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       children: E.intl.format(E.t["8XLD3r"], {})
     });
@@ -70,7 +70,7 @@ function x(e) {
         let {
           emoji: n,
           emojiDescription: i,
-          title: a,
+          title: s,
           selected: o
         } = e;
         return (0, l.jsxs)("div", {
@@ -81,13 +81,13 @@ function x(e) {
             role: "img",
             "aria-label": i,
             children: n
-          }), (0, l.jsx)(s.Text, {
+          }), (0, l.jsx)(a.Text, {
             variant: "text-sm/medium",
-            color: "header-primary",
-            children: a
+            color: "text-strong",
+            children: s
           }), o && (0, l.jsx)("div", {
             className: S.checkboxCircle,
-            children: (0, l.jsx)(s.dz2, {
+            children: (0, l.jsx)(a.dz2, {
               size: "md",
               color: "currentColor",
               className: S.checkmark
@@ -95,7 +95,7 @@ function x(e) {
           })]
         }, t)
       })
-    }), a]
+    }), s]
   })
 }
 
@@ -277,24 +277,24 @@ function _() {
             let {
               channelIcon: n,
               channel: i,
-              selected: a
+              selected: s
             } = e;
             return (0, l.jsxs)("div", {
               className: r()(S.previewListItem, S.spaceBetween, {
-                [S.selected]: a
+                [S.selected]: s
               }),
               children: [(0, l.jsxs)("div", {
                 className: S.channel,
-                children: [n(), (0, l.jsx)(s.Text, {
+                children: [n(), (0, l.jsx)(a.Text, {
                   variant: "text-md/medium",
-                  color: "header-primary",
+                  color: "text-strong",
                   children: i
                 })]
               }), (0, l.jsx)("div", {
                 className: r()(S.checkbox, {
-                  [S.selected]: a
+                  [S.selected]: s
                 }),
-                children: a && (0, l.jsx)(s.dz2, {
+                children: s && (0, l.jsx)(a.dz2, {
                   size: "md",
                   color: "currentColor",
                   className: S.checkmark

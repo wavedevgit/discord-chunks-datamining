@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => B,
+  Z: () => F,
   m: () => D
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var i, a, Chunk442837 = require("./442837.js"),
@@ -231,7 +231,7 @@ E(Z, "displayName", "GameStore"), E(Z, "persistKey", "GameStore"), E(Z, "migrati
   detectableGamesEtag: "",
   detectableGames: []
 })]);
-let B = new Z(Chunk570140.Z, {
+let F = new Z(Chunk570140.Z, {
   OVERLAY_INITIALIZE: j,
   GAMES_DATABASE_FETCH: M,
   GAMES_DATABASE_FETCH_FAIL: k,

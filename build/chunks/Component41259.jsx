@@ -39,13 +39,13 @@ function E(e) {
       children: h.intl.string(h.t.uT1CPa)
     }), (0, r.jsx)(o.X6q, {
       variant: "heading-xxl/bold",
-      color: "header-primary",
+      color: "text-strong",
       children: n.name
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(l.x, {
       variant: "text-lg/bold",
-      color: "header-primary",
+      color: "text-strong",
       children: [n.name, null != E ? (0, r.jsx)(c.Z, {
         className: g.botTag,
         verified: null != E.public_flags && (0, a.yE)(E.public_flags, _.xW$.VERIFIED_BOT)

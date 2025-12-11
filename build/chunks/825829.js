@@ -7,7 +7,7 @@ require.d(exports, {
   NK: () => V,
   OP: () => I,
   Sw: () => Y,
-  ZP: () => F,
+  ZP: () => B,
   ge: () => H,
   hU: () => U,
   nY: () => S,
@@ -285,7 +285,7 @@ function Z(e) {
   }
 }
 
-function B(e) {
+function F(e) {
   let t = A(e, s.G.CHANNEL_ID),
     n = A(e, s.G.ALERT_ACTIONS_EXECUTION),
     r = (0, m.t)(n);
@@ -309,8 +309,8 @@ function B(e) {
   }
 }
 
-function F(e) {
-  let t = r.useMemo(() => B(e), [e]),
+function B(e) {
+  let t = r.useMemo(() => F(e), [e]),
     n = (0, f.e7)([p.Z], () => p.Z.getChannel(t.embedChannelId), [t.embedChannelId]);
   return v(y({}, t), {
     embedChannel: n
@@ -321,7 +321,7 @@ function V(e) {
   if (null == e) return null;
   let {
     alertActionsExecution: t
-  } = B(e);
+  } = F(e);
   return null != t ? t : null
 }
 

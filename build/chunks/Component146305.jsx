@@ -131,7 +131,7 @@ let eN = {
     switch (e) {
       case ex.pNK.PROFILE:
         return {
-          section: ex.pNK.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: ev.intl.string(ev.t.txdaxf), ariaLabel: ev.intl.string(ev.t.txdaxf), element: eb.Z, type: c.bT.SCROLLABLE_CUSTOM, notice: {
+          section: ex.pNK.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: ev.intl.string(ev.t.txdaxf), ariaLabel: ev.intl.string(ev.t.txdaxf), element: ep.Z, type: c.bT.SCROLLABLE_CUSTOM, notice: {
             stores: [w.Z],
             element: eh.Z
           }
@@ -193,9 +193,9 @@ let eN = {
         };
       case ex.pNK.ACCESS:
         return {
-          section: ex.pNK.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: ev.intl.string(ev.t.YJlvBM), element: em.O, notice: {
-            stores: [ep.Z],
-            element: ef.w
+          section: ex.pNK.ACCESS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ACCESS, label: ev.intl.string(ev.t.YJlvBM), element: ef.O, notice: {
+            stores: [eb.Z],
+            element: em.w
           }, predicate: () => t.canManageGuild, ariaLabel: ev.intl.string(ev.t.YJlvBM)
         };
       case ex.pNK.INTEGRATIONS:
@@ -227,7 +227,7 @@ let eN = {
           section: ex.pNK.GUILD_AUTOMOD, label: (0, r.jsx)("div", {
             className: eO.landingPageTabLink,
             children: ev.intl.string(ev.t.uRelgx)
-          }), ariaLabel: ev.intl.string(ev.t.uRelgx), element: f.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(ex.GuildFeatures.COMMUNITY) && ((0, m.Nb)(t.guild.id) || (0, m.ze)(t.guild.id))
+          }), ariaLabel: ev.intl.string(ev.t.uRelgx), element: m.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.features.has(ex.GuildFeatures.COMMUNITY) && ((0, f.Nb)(t.guild.id) || (0, f.ze)(t.guild.id))
         };
       case ex.pNK.AUDIT_LOG:
         return {
@@ -256,8 +256,8 @@ let eN = {
           section: ex.pNK.ONBOARDING, label: ev.intl.string(ev.t["LdxCK/"]), element: z.Z, ariaLabel: ev.intl.string(ev.t["LdxCK/"]), newIndicatorDismissibleContentTypes: t.onboardingEnabled ? null : [l.z.COMMUNITY_ONBOARDING_NEW_BADGE], notice: {
             stores: [F.Z, B.Z, U.Z],
             element: V.Z
-          }, predicate: () => (0, b.wC)(t.guild.id), decoration: function(e, t) {
-            if (p.Z.getEnabled(e)) return ev.intl.string(ev.t.pPSmxg).toUpperCase();
+          }, predicate: () => (0, p.wC)(t.guild.id), decoration: function(e, t) {
+            if (b.Z.getEnabled(e)) return ev.intl.string(ev.t.pPSmxg).toUpperCase();
             if ((0, W.C)(e)) return ev.intl.string(ev.t["HDF4o/"]).toUpperCase();
             let n = H.ug,
               r = n.findIndex(e => e === t);

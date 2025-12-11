@@ -2,7 +2,7 @@
 /** chunk id: 738953, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -78,14 +78,14 @@ function Z(e, t) {
   }), e
 }
 
-function B(e) {
+function F(e) {
   var t;
   let {
     user: n,
     currentUser: k,
     guildId: G,
-    channelId: B,
-    messageId: F,
+    channelId: F,
+    messageId: B,
     roleId: V,
     openedAt: H,
     closePopout: Y,
@@ -100,8 +100,8 @@ function B(e) {
     layout: "POPOUT",
     userId: n.id,
     guildId: G,
-    channelId: B,
-    messageId: F,
+    channelId: F,
+    messageId: B,
     roleId: V
   }), $ = (0, o.e7)([h.Z], () => null != G ? h.Z.getGuild(G) : null), ee = i.useMemo(() => null != G ? {
     [G]: [n.id]
@@ -150,7 +150,7 @@ function B(e) {
     }),
     ep = Q ? "div" : s.VqE,
     e_ = (0, d.Dt)(),
-    em = g.ZP.useName(null == $ ? true : $.id, B, n);
+    em = g.ZP.useName(null == $ ? true : $.id, F, n);
   return (0, r.jsx)(u.Gt, {
     value: X,
     children: (0, r.jsx)(E.Mt, {
@@ -183,7 +183,7 @@ function B(e) {
                 shouldShowTooltip: null === ea.interactionType,
                 user: n,
                 guildId: G,
-                channelId: B,
+                channelId: F,
                 onClose: Y,
                 appContext: q
               }), (0, r.jsx)(N.Z, {
@@ -210,14 +210,14 @@ function B(e) {
                 user: n,
                 displayProfile: en,
                 guildId: G,
-                channelId: B,
+                channelId: F,
                 themeType: L.l.POPOUT,
                 onOpenProfile: K ? true : ed
               }), (0, r.jsx)(w.Z, {
                 ref: es,
                 user: n,
                 guildId: G,
-                channelId: B,
+                channelId: F,
                 themeType: L.l.POPOUT,
                 onCloseProfile: Y,
                 prompt: ec ? eu : null
@@ -229,12 +229,12 @@ function B(e) {
               guild: $,
               isHoveringOrFocusing: null == ea.interactionType && er,
               onOpenProfile: K ? true : ed,
-              channelId: B,
+              channelId: F,
               onClose: Y
             }), (0, r.jsx)(x.Z, {
               user: n,
               guildId: G,
-              channelId: B,
+              channelId: F,
               onClose: Y,
               appContext: q,
               disableAutoFocus: Q

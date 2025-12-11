@@ -114,9 +114,9 @@ function ec(e) {
     } : {}, [ed, ec.id]);
   (0, s.$)(ew, "UserProfileModalV2");
   let eD = (0, E.ZP)(ec.id, eI ? ed : true),
-    eR = O.ZP.useName(null == eD ? true : eD.guildId, eu, ec),
+    eL = O.ZP.useName(null == eD ? true : eD.guildId, eu, ec),
     {
-      relationshipType: eL,
+      relationshipType: eR,
       originApplicationId: eM
     } = (0, r.cj)([I.Z], () => ({
       relationshipType: I.Z.getRelationshipType(ec.id),
@@ -139,11 +139,11 @@ function ec(e) {
       userId: ec.id
     }),
     eW = (0, h.vh)(ec.id),
-    eH = (0, C.Z)(ec.id),
-    ez = (0, _.Z)(ec.id),
+    ez = (0, C.Z)(ec.id),
+    eH = (0, _.Z)(ec.id),
     eY = (0, f.Dt)(),
     eK = er.intl.format(er.t.KRe1Fk, {
-      name: eR
+      name: eL
     });
   return i.useEffect(() => {
     let e = () => {
@@ -220,7 +220,7 @@ function ec(e) {
                   ref: (null == eD ? true : eD.profileEffect) != null ? eT : true,
                   children: [(0, l.jsxs)("div", {
                     className: ea.profileHeader,
-                    children: [(0, l.jsx)(R.Z, {
+                    children: [(0, l.jsx)(L.Z, {
                       user: ec,
                       displayProfile: eD,
                       themeType: eo.l.MODAL_V2
@@ -234,7 +234,7 @@ function ec(e) {
                       guildId: ed,
                       channelId: eu,
                       themeType: eo.l.MODAL_V2
-                    }), (0, l.jsx)(z.Z, {
+                    }), (0, l.jsx)(H.Z, {
                       user: ec,
                       guildId: ed,
                       channelId: eu,
@@ -248,7 +248,7 @@ function ec(e) {
                     className: ea.profileBody,
                     children: [(0, l.jsx)(B.Z, {
                       userId: ec.id
-                    }), (0, l.jsx)(H.Z, {
+                    }), (0, l.jsx)(z.Z, {
                       user: ec,
                       guildId: null != (n = null == eD ? true : eD.guildId) ? n : true,
                       onClose: eg,
@@ -260,7 +260,7 @@ function ec(e) {
                         themeType: eo.l.MODAL_V2,
                         onClose: eg
                       })
-                    }), eL === ei.OGo.PENDING_INCOMING && (0, l.jsx)(W.Z.Overlay, {
+                    }), eR === ei.OGo.PENDING_INCOMING && (0, l.jsx)(W.Z.Overlay, {
                       className: ea.profileOverlay,
                       children: (0, l.jsx)(k.Z, {
                         user: ec,
@@ -314,10 +314,10 @@ function ec(e) {
                         guildId: ed,
                         channelId: eu,
                         displayProfile: eD,
-                        relationshipType: eL,
+                        relationshipType: eR,
                         onClose: eg
                       })
-                    }), (null == eD ? true : eD.bio) != null && (null == eD ? true : eD.bio) !== "" && !eB && (0, l.jsx)(L.Z, {
+                    }), (null == eD ? true : eD.bio) != null && (null == eD ? true : eD.bio) !== "" && !eB && (0, l.jsx)(R.Z, {
                       userBio: eD.bio,
                       setLineClamp: false
                     }), eF.length > 0 && (0, l.jsx)(Q.Z, {
@@ -340,19 +340,19 @@ function ec(e) {
                       headingVariant: "text-xs/medium",
                       headingColor: "currentColor",
                       scrollIntoView: eh === el.Tb.ROLES
-                    }), eH.length > 0 && (0, l.jsx)(Q.Z, {
+                    }), ez.length > 0 && (0, l.jsx)(Q.Z, {
                       heading: er.intl.string(er.t["3fe7U5"]),
                       scrollIntoView: eh === el.Tb.CONNECTIONS,
                       children: (0, l.jsx)(q.Z, {
-                        connections: eH,
+                        connections: ez,
                         userId: ec.id,
                         className: ea.profileAppConnections
                       })
-                    }), ez.length > 0 && (0, l.jsx)(Q.Z, {
+                    }), eH.length > 0 && (0, l.jsx)(Q.Z, {
                       heading: er.intl.string(er.t.PHjkRE),
                       scrollIntoView: eh === el.Tb.APPS,
                       children: (0, l.jsx)(K.Z, {
-                        applicationRoleConnections: ez,
+                        applicationRoleConnections: eH,
                         onClose: eg,
                         className: ea.profileAppConnections
                       })

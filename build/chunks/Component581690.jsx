@@ -2,7 +2,7 @@
 /** chunk id: 581690, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => m
+  c: () => g
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,7 @@ function x(e) {
     let e = new Image;
     e.src = f, e.onload = () => s(true), e.onerror = () => s(true)
   }, [f]), "" !== t && n ? (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(o.ZP, {
+    children: [(0, a.jsx)(i.ZP, {
       size: 288,
       text: t
     }), (0, a.jsx)("div", {
@@ -37,23 +37,23 @@ function x(e) {
     })]
   }) : (0, a.jsx)("div", {
     className: d.qrcodeSpinner,
-    children: (0, a.jsx)(i.$jN, {
-      type: i.$jN.Type.WANDERING_CUBES
+    children: (0, a.jsx)(o.$jN, {
+      type: o.$jN.Type.WANDERING_CUBES
     })
   })
 }
-let m = e => {
+let g = e => {
   var t;
   let {
     code: n
   } = e, {
     width: r,
-    height: o
+    height: i
   } = (0, s.Z)();
   return null == n || 0 === n.length ? null : (0, a.jsxs)("div", {
     className: d.panel,
     style: {
-      zoom: Math.min(r / 1460, o / 1080, 1)
+      zoom: Math.min(r / 1460, i / 1080, 1)
     },
     children: [(0, a.jsx)("div", {
       className: d.panelHeader,
@@ -71,12 +71,12 @@ let m = e => {
           })
         }), (0, a.jsxs)("div", {
           className: d.qrcodeText,
-          children: [(0, a.jsx)(i.Heading, {
+          children: [(0, a.jsx)(o.Heading, {
             variant: "heading-xxl/semibold",
-            color: "header-primary",
+            color: "text-strong",
             className: d.qrcodeTextHeading,
             children: l.intl.string(l.t.llDCid)
-          }), (0, a.jsx)(i.Heading, {
+          }), (0, a.jsx)(o.Heading, {
             variant: "heading-xxl/normal",
             color: "text-default",
             children: l.intl.string(l.t.JfHzXG)
@@ -86,9 +86,9 @@ let m = e => {
         className: d.dividerContent,
         children: [(0, a.jsx)("div", {
           className: d.divider
-        }), (0, a.jsx)(i.Heading, {
+        }), (0, a.jsx)(o.Heading, {
           variant: "heading-lg/semibold",
-          color: "header-primary",
+          color: "text-strong",
           className: d.dividerText,
           children: l.intl.string(l.t.arEHn4)
         }), (0, a.jsx)("div", {
@@ -98,32 +98,32 @@ let m = e => {
         className: d.fallbackContent,
         children: [(0, a.jsxs)("div", {
           className: d.fallbackContentTextGroup,
-          children: [(0, a.jsx)(i.Heading, {
+          children: [(0, a.jsx)(o.Heading, {
             variant: "heading-xxl/semibold",
-            color: "header-primary",
+            color: "text-strong",
             className: d.fallbackContentHeading,
             children: l.intl.string(l.t["Eu8rJ/"])
-          }), (0, a.jsx)(i.Heading, {
+          }), (0, a.jsx)(o.Heading, {
             variant: "heading-xxl/normal",
             color: "text-default",
             children: l.intl.string(l.t.BkEMJ1)
           })]
         }), (0, a.jsxs)("div", {
           className: d.fallbackContentAction,
-          children: [(0, a.jsx)(i.Heading, {
+          children: [(0, a.jsx)(o.Heading, {
             variant: "heading-xxl/semibold",
-            color: "header-primary",
+            color: "text-strong",
             className: d.fallbackContentHeading,
             children: p
           }), (0, a.jsxs)("div", {
             className: d.fallbackContentTextGroup,
-            children: [(0, a.jsx)(i.Heading, {
+            children: [(0, a.jsx)(o.Heading, {
               variant: "heading-xxl/normal",
               color: "text-default",
               children: l.intl.string(l.t.RyDxBX)
-            }), (0, a.jsx)(i.Heading, {
+            }), (0, a.jsx)(o.Heading, {
               variant: "heading-xxl/bold",
-              color: "header-primary",
+              color: "text-strong",
               className: d.fallbackContentCode,
               children: null == (t = n.match(/.{1,4}/g)) ? true : t.join(" ")
             })]

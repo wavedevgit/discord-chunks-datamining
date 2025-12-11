@@ -28,18 +28,18 @@ function O(e) {
     guildId: t
   } = e, {
     guildProfile: c,
-    fetchGuildProfile: m,
+    fetchGuildProfile: f,
     fetchStatus: O
   } = (0, g.u)(t), C = O !== u.a.FETCHED, {
     fetchedEmbed: y,
     embedEnabled: N,
     embedChannelId: E
-  } = (0, s.cj)([p.Z], () => {
+  } = (0, s.cj)([b.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = p.Z.getProps();
+    } = b.Z.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
@@ -47,12 +47,12 @@ function O(e) {
     }
   }), I = i.useMemo(() => (0, h.S)(t), [t]), S = i.useMemo(() => (0, h.a)(t), [t]), [_, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !N;
   i.useEffect(() => {
-    y || (0, f.R)(t)
+    y || (0, m.R)(t)
   }, [y, t]), i.useEffect(() => {
-    m()
-  }, [t, m]);
+    f()
+  }, [t, f]);
   let Z = i.useCallback(async e => {
-    T(true), await (0, b.c)(t, e, E), T(false)
+    T(true), await (0, p.c)(t, e, E), T(false)
   }, [E, t]);
   return y ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.rsf, {
@@ -119,7 +119,7 @@ function O(e) {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([m.Z], () => m.Z.enabled);
+  } = e, n = (0, s.e7)([f.Z], () => f.Z.enabled);
   return (0, r.jsx)(o.C3N, {
     label: j.intl.string(j.t["qlhNb+"]),
     description: j.intl.string(j.t["dNn/1i"]),

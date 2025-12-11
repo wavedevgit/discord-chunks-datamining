@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function b(e, t) {
   }), e
 }
 
-function g(e) {
+function b(e) {
   var {
     id: t,
     label: n,
@@ -69,7 +69,7 @@ function g(e) {
     }
     return r
   }(e, ["id", "label", "selected", "handleTransition"]);
-  return (0, a.jsx)(d.Z.Title, b(f({}, s), {
+  return (0, a.jsx)(d.Z.Title, g(f({}, s), {
     onClick: () => i(t),
     wrapperClassName: h.tabWrapper,
     className: l()(h.tab, {
@@ -105,7 +105,7 @@ function x(e) {
       let {
         isShown: n
       } = t;
-      return (0, a.jsxs)(d.Z.Title, b(f({}, e), {
+      return (0, a.jsxs)(d.Z.Title, g(f({}, e), {
         ref: c,
         wrapperClassName: h.tabWrapper,
         className: l()(h.tab, h.more, {
@@ -132,7 +132,7 @@ function v(e) {
     onAvailableWidthChange: d
   } = e, [u, p] = r.useState(0), m = r.useRef(u), {
     lastVisibleIndex: f,
-    onItemLayout: b,
+    onItemLayout: g,
     overflowItemsRef: v,
     itemWidthsRef: C
   } = (0, s.zP)({
@@ -157,8 +157,8 @@ function v(e) {
       className: h.measurements,
       children: [i.map((e, t) => (0, a.jsx)(s.AJ, {
         index: t,
-        onItemLayout: b,
-        children: (0, a.jsx)(g, {
+        onItemLayout: g,
+        children: (0, a.jsx)(b, {
           id: e.id,
           label: e.label,
           selected: n === e.id,
@@ -175,7 +175,7 @@ function v(e) {
       })]
     }), S && (0, a.jsxs)("div", {
       className: h.tabs,
-      children: [j.map(e => (0, a.jsx)(g, {
+      children: [j.map(e => (0, a.jsx)(b, {
         id: e.id,
         label: e.label,
         selected: n === e.id,

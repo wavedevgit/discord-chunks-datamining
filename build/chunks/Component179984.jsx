@@ -77,7 +77,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = () => {
+let F = () => {
     let e = (0, Chunk346497.W)();
     return (0, Chunk54381.jsx)(Chunk382791.Cy, {
       text: module,
@@ -85,7 +85,7 @@ let B = () => {
       colorOptions: Chunk382791.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL
     })
   },
-  F = () => (0, Chunk54381.jsx)("div", {
+  B = () => (0, Chunk54381.jsx)("div", {
     className: Chunk948295.mostPopularPill,
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
       className: Chunk948295.mostPopularText,
@@ -268,7 +268,7 @@ let B = () => {
       text: null != J ? w.intl.string(w.t.IBYG5U) : w.intl.string(w.t.ce1v3V),
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === R.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? Q ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
-    }) : el ? (0, r.jsx)(B, {}) : (0, r.jsx)(F, {});
+    }) : el ? (0, r.jsx)(F, {}) : (0, r.jsx)(B, {});
     let ef = J === R.Si.TIER_0 || $ === R.PremiumTypes.TIER_0 || M === R.PremiumTypes.TIER_0;
     return (0, r.jsx)(p.Gt, {
       value: k,

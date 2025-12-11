@@ -20,25 +20,25 @@ function u(e) {
     className: l,
     textAreaClassName: u,
     subtitleText: g,
-    initialValue: m
-  } = e, f = i.useMemo(() => null != m ? m : [], [m]), {
-    value: p,
-    onChange: b,
+    initialValue: f
+  } = e, m = i.useMemo(() => null != f ? f : [], [f]), {
+    value: b,
+    onChange: p,
     errorMessage: h
-  } = (0, o.Z)(t, m, n);
+  } = (0, o.Z)(t, f, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(d.keywordsContainer, l),
       children: [(0, r.jsx)(s.lcI, {
         className: a()(d.keywordsTextArea, u),
-        value: p,
-        onChange: b,
+        value: b,
+        onChange: p,
         placeholder: c.intl.string(c.t.UyaxJy)
       }), (0, r.jsx)(s.Text, {
         className: d.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
-        children: "".concat(f.length, " / ").concat(n)
+        children: "".concat(m.length, " / ").concat(n)
       })]
     }), null != h ? (0, r.jsx)(s.Text, {
       className: a()(d.paddingTop, d.errorText),

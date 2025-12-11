@@ -106,8 +106,8 @@ let w = ["TOP_LEFT", "TOP_RIGHT"],
   U = 80,
   G = 180,
   Z = 8,
-  B = 12,
-  F = Object.freeze({
+  F = 12,
+  B = Object.freeze({
     TOP_LEFT: {
       getConfettiPosition: e => ({
         x: e - x,
@@ -224,7 +224,7 @@ function $(e, t) {
     x: 0,
     y: 0
   };
-  let i = F[t].getConfettiPosition(n);
+  let i = B[t].getConfettiPosition(n);
   return {
     x: r.left + i.x,
     y: r.top + i.y
@@ -237,7 +237,7 @@ function ee(e, t) {
     x: 0,
     y: 0
   };
-  let r = F[t];
+  let r = B[t];
   return {
     x: n.left + r.leafPosition.x,
     y: n.top + r.leafPosition.y
@@ -264,7 +264,7 @@ function et(e) {
     if ("confetti" === p) {
       let {
         confettiVelocityDirection: e
-      } = F[m], t = $(u.current, m, c);
+      } = B[m], t = $(u.current, m, c);
       h(t.x, t.y, {
         velocity: {
           type: "static-random",
@@ -281,7 +281,7 @@ function et(e) {
     }
   }, [h, m, p, c]), i.useEffect(() => {
     if (v && "leaf_fall" === p) {
-      let e = F[m].leafRotationDirection;
+      let e = B[m].leafRotationDirection;
       y.createConfetti({
         id: "".concat(V, "-").concat((0, l.Z)()),
         position: {
@@ -312,7 +312,7 @@ function et(e) {
           maxAddValue: {
             x: 0,
             y: 0,
-            z: B * e
+            z: F * e
           }
         }
       }, {

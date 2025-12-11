@@ -24,7 +24,7 @@ let u = function(e) {
     className: d.sectionContainer,
     children: [(0, a.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: c.intl.string(c.t.runNF8)
     }), (0, a.jsx)(s.Z, {
       className: d.contentContainer,

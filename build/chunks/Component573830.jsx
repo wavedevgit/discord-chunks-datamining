@@ -128,7 +128,7 @@ function w(e) {
     isHovered: G
   } = (0, o.X)({
     isDisabled: n
-  }), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_SELECTED_DEFAULT).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BORDER_SELECTED_DEFAULT).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_SELECTED_HOVER).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_SELECTED_HOVER).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_ICON_DEFAULT).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_ICON_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT).spring(), {
+  }), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_SELECTED_DEFAULT).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BORDER_SELECTED_DEFAULT).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_SELECTED_HOVER).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_SELECTED_HOVER).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_ICON_DEFAULT).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_ICON_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT).spring(), {
     state: ee,
     opacity: et
   } = (0, u.q)({
@@ -163,7 +163,7 @@ function w(e) {
           opacity: et,
           backgroundColor: ee.to({
             range: A,
-            output: [G ? W : Z, B, V, G ? K : F],
+            output: [G ? W : Z, F, V, G ? K : B],
             extrapolate: "clamp"
           }),
           border: "1px solid",

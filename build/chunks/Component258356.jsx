@@ -78,7 +78,7 @@ function g(e) {
         className: h.guildDetailsContanier,
         children: [(0, r.jsxs)(i.Text, {
           className: h.guildName,
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-sm/medium",
           tag: "span",
           children: [l.name, (0, r.jsx)(a.Z, {

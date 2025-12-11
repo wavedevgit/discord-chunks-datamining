@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Bg: () => G,
-  Ni: () => B,
+  Ni: () => F,
   YH: () => U,
   ld: () => M,
   rf: () => Z
@@ -94,7 +94,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
       emojiSpriteSize: U,
       shouldShowSoundmojiInEmojiPicker: G,
       showOnlyUnicode: Z
-    } = e, B = (0, s.e7)([c.ZP], () => c.ZP.categories), F = r.useMemo(() => Z ? d.ZP.getCategories() : B, [B, Z]), V = (0, s.e7)([E.Z], () => E.Z.getGuild(null == n ? true : n.getGuildId()), [n]), H = null != (t = null == n ? true : n.getGuildId()) ? t : i, Y = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(H), [H]), W = (0, C.NJ)(H), K = (0, C.wC)(H), z = (0, C.q5)(H), {
+    } = e, F = (0, s.e7)([c.ZP], () => c.ZP.categories), B = r.useMemo(() => Z ? d.ZP.getCategories() : F, [F, Z]), V = (0, s.e7)([E.Z], () => E.Z.getGuild(null == n ? true : n.getGuildId()), [n]), H = null != (t = null == n ? true : n.getGuildId()) ? t : i, Y = (0, s.e7)([c.ZP], () => c.ZP.getDisambiguatedEmojiContext(H), [H]), W = (0, C.NJ)(H), K = (0, C.wC)(H), z = (0, C.q5)(H), {
       topEmojis: q,
       newlyAddedEmojis: Q
     } = (0, N.Z)(H, p), X = (0, s.Wu)([y.ZP], () => y.ZP.getFlattenedGuildIds(), []), J = (0, s.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds), {
@@ -150,7 +150,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
             }
             let G = eo && L && !h,
               Z = Math.ceil((L || M ? y.length + 1 : y.length) / u),
-              B = [];
+              F = [];
             for (let e = 0; e < Z; e++) {
               let t = 0 === e,
                 n = e * u - (G && e > 0 ? 1 : 0),
@@ -177,9 +177,9 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   rowIndex: c,
                   columnIndex: 0,
                   visibleRowIndex: s
-                }, ...o]), B.push(o), !h) {
+                }, ...o]), F.push(o), !h) {
                 if (!eo && L && e === Z - 1) {
-                  let t = B[e];
+                  let t = F[e];
                   t.push({
                     type: 1,
                     guildId: O.id,
@@ -191,7 +191,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   })
                 }
                 if (M && e === Z - 1) {
-                  let t = B[e];
+                  let t = F[e];
                   t.push({
                     type: 2,
                     guildId: O.id,
@@ -207,11 +207,11 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
               }
               c++
             }
-            let F = h ? 0 : Z,
+            let B = h ? 0 : Z,
               V = j(x({}, d), {
                 count: o.length
               });
-            t.push(V), e.push(F)
+            t.push(V), e.push(B)
           };
         if (null != D) 0 !== D.unlocked.length && m(D.unlocked, {
           type: P.En.SEARCH_RESULTS,
@@ -243,7 +243,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
             let a = l.has(P.UX.SOUNDMOJI);
             !a && (i.push(n.length), r.push(n), s++), e.push(+!a), c++
           }
-          for (let e of F)
+          for (let e of B)
             if (e === P.UX.CUSTOM) {
               let t = t => {
                 let r = ea[t];
@@ -332,7 +332,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
         rowCountBySection: e,
         sectionDescriptors: t
       }
-    }, [Y, L, U, M, D, l, eo, es, ea, f, $, J, n, p, q, Q, et, F, V, X, z, K, W, en, el, G])
+    }, [Y, L, U, M, D, l, eo, es, ea, f, $, J, n, p, q, Q, et, B, V, X, z, K, W, en, el, G])
   };
 var G = function(e) {
   return e[e.PREMIUM = 0] = "PREMIUM", e[e.ROLE_SUBSCRIPTION = 1] = "ROLE_SUBSCRIPTION", e
@@ -389,7 +389,7 @@ let Z = e => {
       }
     }, [n, t, a, o, p, d, f])
   },
-  B = e => {
+  F = e => {
     let {
       emojiListRef: t
     } = e, n = (0, p.Iu)(e => e.searchQuery), i = r.useCallback(e => {

@@ -479,7 +479,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     status: t,
     isMobile: n,
@@ -496,7 +496,7 @@ function B(e) {
   }))
 }
 
-function F(e) {
+function B(e) {
   let {
     children: t,
     size: n,
@@ -621,9 +621,9 @@ function H(e) {
     CutoutIcon: L,
     avatarTooltipAsset: M,
     avatarTooltipText: k,
-    avatarTooltipTitle: B
+    avatarTooltipTitle: F
   } = e, H = n !== h.Skl.UNKNOWN ? n : null, Y = (0, E.UC)(a), W = null != H ? Math.ceil((Y.status * E.D6 - Y.status) / 2) : 0, K = Y.size + W, z = (0, u.vj)(H, s), q = i.useId();
-  return (0, r.jsx)(F, I(v({}, e), {
+  return (0, r.jsx)(B, I(v({}, e), {
     ariaLabel: P,
     ariaHidden: N,
     status: H,
@@ -674,8 +674,8 @@ function H(e) {
             y: Y.size - Y.status / 1.333 - Y.offset
           }) : null]
         })
-      }) : null, null != L && G(Y, L), null != B && Z(Y, l, f, {
-        avatarTooltipTitle: B,
+      }) : null, null != L && G(Y, L), null != F && Z(Y, l, f, {
+        avatarTooltipTitle: F,
         avatarTooltipText: k
       }, M)]
     })
@@ -727,14 +727,14 @@ function K(e) {
     avatarTooltipTitle: X
   } = e, J = (0, u.vj)(R, w), $ = i.useId(), ee = i.useId(), [et] = i.useState(() => v({
     fill: a
-  }, B({
+  }, F({
     size: S,
     status: n,
     isMobile: t,
     isTyping: false
   }))), en = i.useMemo(() => v({
     fill: J
-  }, B({
+  }, F({
     size: S,
     status: R,
     isMobile: f,
@@ -767,7 +767,7 @@ function K(e) {
       scale: 1
     }] : []
   }, N() ? "animate-always" : "animate-never", [K, R]);
-  return (0, r.jsx)(F, I(v({}, e), {
+  return (0, r.jsx)(B, I(v({}, e), {
     ariaLabel: U,
     ariaHidden: M,
     typingOffset: em,

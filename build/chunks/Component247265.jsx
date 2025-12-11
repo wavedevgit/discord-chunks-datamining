@@ -25,7 +25,7 @@ let f = e => {
     f()
   }, [f]), g = t.nsfwAllowed, {
     cancelLinkRequest: O,
-    isCancelLoading: m
+    isCancelLoading: x
   } = (0, a.G)({
     onError: j,
     onSuccess: y
@@ -53,15 +53,15 @@ let f = e => {
         variant: "secondary",
         text: u.intl.string(d.default.czincX),
         onClick: f,
-        disabled: m
+        disabled: x
       }, {
         variant: "critical-primary",
         text: u.intl.string(d.default.mK40bk),
         onClick: () => {
           h(false), O(r.id)
         },
-        disabled: m || p,
-        loading: m
+        disabled: x || p,
+        loading: x
       }]
     })]
   })

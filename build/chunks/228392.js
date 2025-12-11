@@ -6,7 +6,7 @@ require.d(exports, {
   B5: () => P,
   Do: () => w,
   GX: () => M,
-  HR: () => F,
+  HR: () => B,
   Hr: () => N,
   Je: () => C,
   Js: () => b,
@@ -23,7 +23,7 @@ require.d(exports, {
   nE: () => G,
   nH: () => S,
   qs: () => E,
-  qz: () => B,
+  qz: () => F,
   ws: () => L,
   xI: () => j,
   zI: () => y
@@ -384,7 +384,7 @@ function Z(e) {
   })
 }
 
-function B() {
+function F() {
   Chunk367907.ZP.trackWithMetadata(Chunk981631.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
@@ -393,7 +393,7 @@ function B() {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     guildId: t,
     channelId: n

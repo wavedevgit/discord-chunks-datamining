@@ -27,7 +27,7 @@ function g(e) {
     className: u.container,
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: d.intl.string(d.t.Ms33Ds)
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",

@@ -19,25 +19,25 @@ var Chunk54381 = require("./54381.js"),
 let b = e => {
   var t, n, b;
   let m, {
-    category: h,
-    subblock: C,
+    category: C,
+    subblock: h,
     badgeText: v,
     handleTransition: E
   } = e;
-  null != C && (m = null == (t = c.Z.getCategoryByStoreListingId(null == C ? true : C.categoryStoreListingId)) ? true : t.skuId);
-  let S = null != (n = null != m ? m : null == h ? true : h.skuId) ? n : "",
+  null != h && (m = null == (t = c.Z.getCategoryByStoreListingId(null == h ? true : h.categoryStoreListingId)) ? true : t.skuId);
+  let S = null != (n = null != m ? m : null == C ? true : C.skuId) ? n : "",
     {
       handleCardVisibilityChange: _
     } = (0, u.E)(S, "home", "marketing featured block"),
-    O = (0, d.YG)(h, C),
+    O = (0, d.YG)(C, h),
     x = l.useRef(null),
-    y = null == C ? true : C.bodyText,
+    y = null == h ? true : h.bodyText,
     j = (0, s.sp)();
   return (0, r.jsx)(a.$, {
     innerRef: x,
     onChange: _,
     threshold: 0,
-    children: (0, r.jsxs)(i.P3F, {
+    children: (0, r.jsxs)(o.P3F, {
       className: p.featuredBlock,
       innerRef: x,
       style: function(e) {
@@ -65,8 +65,8 @@ let b = e => {
           sourceButton: "shop marketing tile",
           categorySkuId: S,
           isInternalShopDeeplink: true,
-          isOrbsExclusive: null == h ? true : h.isOrbsExclusive
-        }), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          isOrbsExclusive: null == C ? true : C.isOrbsExclusive
+        }), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: S,
           page_type: "home",
@@ -77,24 +77,24 @@ let b = e => {
           cta_name: null
         })
       },
-      children: [null != v && (0, r.jsx)(i.IGR, {
+      children: [null != v && (0, r.jsx)(o.IGR, {
         disableColor: true,
         text: v,
         className: p.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(i.Heading, {
+        children: null != y && (0, r.jsx)(o.Heading, {
           lineClamp: 4,
           className: p.featuredBlockBodyText,
           style: {
-            color: null != (b = null == C ? true : C.bannerTextColor) ? b : "white"
+            color: null != (b = null == h ? true : h.bannerTextColor) ? b : "white"
           },
           variant: "heading-md/medium",
           children: y
         })
       }), (0, r.jsx)("div", {
         className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(i.Button, {
+        children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
           text: g.intl.string(g.t.jVcuVY),
           onClick: e => {
@@ -102,8 +102,8 @@ let b = e => {
               sourceButton: "shop marketing take me there button",
               categorySkuId: S,
               isInternalShopDeeplink: true,
-              isOrbsExclusive: null == h ? true : h.isOrbsExclusive
-            }), e.stopPropagation(), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              isOrbsExclusive: null == C ? true : C.isOrbsExclusive
+            }), e.stopPropagation(), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: S,
               page_type: "home",

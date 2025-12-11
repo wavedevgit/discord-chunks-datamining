@@ -55,7 +55,7 @@ function _(e) {
           slot: "previous"
         }), (0, r.jsx)(f.x, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: (0, r.jsx)(l.X, {})
         }), (0, r.jsx)(c.h, {
           variant: "icon-only",

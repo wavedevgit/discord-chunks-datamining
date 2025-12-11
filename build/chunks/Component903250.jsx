@@ -41,7 +41,7 @@ let R = (e, t) => {
       videoRef: D
     } = e, {
       analyticsLocations: x
-    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, h.Nx)(), M = (0, s.e7)([m.Z], () => m.Z.affinities), k = (0, E.Z)(), U = null != k, G = R ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, B = T.intl.string(T.t.YCZldK), F = (0, _.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+    } = (0, f.ZP)(d.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, g._O)(), j = (0, h.Nx)(), M = (0, s.e7)([m.Z], () => m.Z.affinities), k = (0, E.Z)(), U = null != k, G = R ? l.Tt.WHITE : l.Tt.BRAND, Z = M.length > 0, F = T.intl.string(T.t.YCZldK), B = (0, _.rO)(), V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
     return (0, r.jsx)(f.Gt, {
       value: x,
       children: (0, r.jsxs)("div", {
@@ -55,8 +55,8 @@ let R = (e, t) => {
             children: [j && (0, r.jsx)(S.Z, {}), (0, r.jsx)(c.Heading, {
               className: C.marketingPageHeading,
               variant: "display-sm",
-              color: "header-primary",
-              children: B
+              color: "text-strong",
+              children: F
             }), U ? (0, r.jsx)(O.Z, {
               referrer: k
             }) : Z && (0, r.jsx)("div", {
@@ -101,8 +101,8 @@ let R = (e, t) => {
             className: C.heroHeadingV2Art,
             ref: D,
             children: (0, r.jsx)("source", {
-              src: F ? A.Z : P.Z,
-              type: F ? I.m.MP4 : I.m.WEBM
+              src: B ? A.Z : P.Z,
+              type: B ? I.m.MP4 : I.m.WEBM
             })
           })
         })]

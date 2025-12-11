@@ -81,7 +81,7 @@ var Z = function(e) {
   return e.SAVED = "saved", e.CANCELED = "canceled", e.ERRORED = "errored", e
 }({});
 
-function B(e) {
+function F(e) {
   try {
     let t = decodeURIComponent(e);
     return (t = (t = t.replace(M, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(j, "_")
@@ -89,7 +89,7 @@ function B(e) {
     return e.replace(k, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(j, "_")
   }
 }
-async function F(e) {
+async function B(e) {
   let t = {
       method: "GET",
       mode: "cors"
@@ -101,7 +101,7 @@ async function F(e) {
 }
 
 function V(e) {
-  return F(e)
+  return B(e)
 }
 var H = function(e) {
     return e[e.Camera = 0] = "Camera", e[e.Microphone = 1] = "Microphone", e[e.Photo = 2] = "Photo", e[e.InputMonitoring = 3] = "InputMonitoring", e[e.ScreenRecording = 4] = "ScreenRecording", e
@@ -342,7 +342,7 @@ let q = {
       let c = h.Z.toURLSafe(e);
       if (null == c) return "errored";
       let u = null != (r = c.pathname.split("/").pop()) ? r : "unknown";
-      u = B(u);
+      u = F(u);
       let d = c.searchParams.get("format");
       if (null != d) {
         let e = d.replace(U, "").toLowerCase();
@@ -374,8 +374,8 @@ let q = {
       let r = h.Z.toURLSafe(e);
       if (null == r) return null;
       let i = null != (n = null != t ? t : r.pathname.split("/").pop()) ? n : "unknown";
-      null == t && (i = B(i));
-      let a = await F(e),
+      null == t && (i = F(i));
+      let a = await B(e),
         o = E.from(a),
         s = await S.fileManager.saveWithDialog(o, i, true);
       return null == s ? null : s

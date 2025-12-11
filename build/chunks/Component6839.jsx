@@ -225,11 +225,11 @@ function eo(e) {
   } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([M.default], () => M.default.getUser(n.id), [n]), m = (0, A.$R)(a), E = (0, u.e7)([L.Z], () => L.Z.can(H.Plq.MANAGE_MESSAGES, a) && m) || d === n.id, y = (0, u.e7)([w.ZP, R.Z, j.Z], () => G.ZP.getName(s, a.id, n));
 
   function O() {
-    F.WO({
+    B.WO({
       channelId: a.id,
       messageId: i.id,
       emoji: t,
-      location: F.TW.MESSAGE,
+      location: B.TW.MESSAGE,
       userId: n.id,
       options: {
         burst: l === I.O.BURST
@@ -238,7 +238,7 @@ function eo(e) {
   }
   return (0, r.jsxs)(b.Z, {
     className: W.reactor,
-    onContextMenu: e => (0, B.Pv)(e, n, a),
+    onContextMenu: e => (0, F.Pv)(e, n, a),
     align: b.Z.Align.CENTER,
     tabIndex: 0,
     "aria-label": n.username,

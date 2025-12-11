@@ -263,8 +263,8 @@
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
           Z = k.call(P, Array.prototype.splice),
-          B = k.call(R, String.prototype.replace),
-          F = k.call(R, String.prototype.slice),
+          F = k.call(R, String.prototype.replace),
+          B = k.call(R, String.prototype.slice),
           V = k.call(R, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
@@ -286,13 +286,13 @@
           if (arguments.length > 1 && "boolean" != typeof t) throw new u('"allowMissing" argument must be a boolean');
           if (null === V(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
           var n = function(e) {
-              var t = F(e, 0, 1),
-                n = F(e, false);
+              var t = B(e, 0, 1),
+                n = B(e, false);
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return B(e, H, function(e, t, n, i) {
-                r[r.length] = n ? B(i, Y, "$1") : t || e
+              return F(e, H, function(e, t, n, i) {
+                r[r.length] = n ? F(i, Y, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
@@ -304,8 +304,8 @@
           l && (r = l[0], Z(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
-              _ = F(p, 0, 1),
-              m = F(p, false);
+              _ = B(p, 0, 1),
+              m = B(p, false);
             if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
             if ("constructor" !== p && f || (s = true), U(x, a = "%" + (r += "." + p) + "%")) o = x[a];
             else if (null != o) {
@@ -722,8 +722,8 @@
           }),
           G = Object.prototype.toString,
           Z = k.Symbol,
-          B = Z ? Z.prototype : true,
-          F = B ? B.toString : true;
+          F = Z ? Z.prototype : true,
+          B = F ? F.toString : true;
 
         function V(e) {
           return null == e ? "" : function(e) {
@@ -732,7 +732,7 @@
                 return "symbol" == typeof e || function(e) {
                   return !!e && "object" == typeof e
                 }(e) && G.call(e) == o
-              }(e)) return F ? F.call(e) : "";
+              }(e)) return B ? B.call(e) : "";
             var t = e + "";
             return "0" == t && 1 / e == -a ? "-0" : t
           }(e)
@@ -860,20 +860,20 @@
           return r + e + r
         }
 
-        function B(e) {
+        function F(e) {
           return b.call(String(e), /"/g, "&quot;")
         }
 
-        function F(e) {
+        function B(e) {
           return !w || !("object" == typeof e && (w in e || true !== e[w]))
         }
 
         function V(e) {
-          return "[object Array]" === z(e) && F(e)
+          return "[object Array]" === z(e) && B(e)
         }
 
         function H(e) {
-          return "[object RegExp]" === z(e) && F(e)
+          return "[object RegExp]" === z(e) && B(e)
         }
 
         function Y(e) {
@@ -947,7 +947,7 @@
             return "object" != typeof t || R ? ei : J(ei)
           }
           if ((M = t) && "object" == typeof M && ("undefined" != typeof HTMLElement && M instanceof HTMLElement || "string" == typeof M.nodeName && "function" == typeof M.getAttribute)) {
-            for (var ea = "<" + O.call(String(t.nodeName)), eo = t.attributes || [], es = 0; es < eo.length; es++) ea += " " + eo[es].name + "=" + Z(B(eo[es].value), "double", l);
+            for (var ea = "<" + O.call(String(t.nodeName)), eo = t.attributes || [], es = 0; es < eo.length; es++) ea += " " + eo[es].name + "=" + Z(F(eo[es].value), "double", l);
             return ea += ">", t.childNodes && t.childNodes.length && (ea += "..."), ea + "</" + O.call(String(t.nodeName)) + ">"
           }
           if (V(t)) {
@@ -960,7 +960,7 @@
             }(el) ? "[" + et(el, G) + "]" : "[ " + I.call(el, ", ") + " ]"
           }
           if (function(e) {
-              return "[object Error]" === z(e) && F(e)
+              return "[object Error]" === z(e) && B(e)
             }(t)) {
             var ec = en(t, W);
             return "cause" in Error.prototype || !("cause" in t) || D.call(t, "cause") ? 0 === ec.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + I.call(ec, ", ") + " }" : "{ [" + String(t) + "] " + I.call(S.call("[cause]: " + W(t.cause), ec), ", ") + " }"
@@ -1041,7 +1041,7 @@
               returnfalse
             }(t)) return $("WeakRef");
           if (function(e) {
-              return "[object Number]" === z(e) && F(e)
+              return "[object Number]" === z(e) && B(e)
             }(t)) return J(W(Number(t)));
           if (function(e) {
               if (!e || "object" != typeof e || !A) returnfalse;
@@ -1051,15 +1051,15 @@
               returnfalse
             }(t)) return J(W(A.call(t)));
           if (function(e) {
-              return "[object Boolean]" === z(e) && F(e)
+              return "[object Boolean]" === z(e) && B(e)
             }(t)) return J(_.call(t));
           if (function(e) {
-              return "[object String]" === z(e) && F(e)
+              return "[object String]" === z(e) && B(e)
             }(t)) return J(W(String(t)));
           if ("undefined" != typeof window && t === window) return "{ [object Window] }";
           if ("undefined" != typeof globalThis && t === globalThis || true !== n.g && t === n.g) return "{ [object globalThis] }";
           if (! function(e) {
-              return "[object Date]" === z(e) && F(e)
+              return "[object Date]" === z(e) && B(e)
             }(t) && !H(t)) {
             var ef = en(t, W),
               ep = x ? x(t) === Object.prototype : t instanceof Object || t.constructor === Object,
@@ -1251,8 +1251,8 @@
                 var G = E && f ? String(k).replace(/\./g, "%2E") : String(k),
                   Z = l(C) ? "function" == typeof a ? a(j, G) : j : j + (E ? "." + G : "[" + G + "]");
                 I.set(t, N);
-                var B = r();
-                B.set(_, I), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && v && l(C) ? null : m, h, g, E, b, y, O, v, S, B))
+                var F = r();
+                F.set(_, I), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && v && l(C) ? null : m, h, g, E, b, y, O, v, S, F))
               }
             }
             return D
@@ -1760,8 +1760,8 @@
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
           Z = k.call(P, Array.prototype.splice),
-          B = k.call(R, String.prototype.replace),
-          F = k.call(R, String.prototype.slice),
+          F = k.call(R, String.prototype.replace),
+          B = k.call(R, String.prototype.slice),
           V = k.call(R, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
@@ -1783,13 +1783,13 @@
           if (arguments.length > 1 && "boolean" != typeof t) throw new u('"allowMissing" argument must be a boolean');
           if (null === V(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
           var n = function(e) {
-              var t = F(e, 0, 1),
-                n = F(e, false);
+              var t = B(e, 0, 1),
+                n = B(e, false);
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return B(e, H, function(e, t, n, i) {
-                r[r.length] = n ? B(i, Y, "$1") : t || e
+              return F(e, H, function(e, t, n, i) {
+                r[r.length] = n ? F(i, Y, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
@@ -1801,8 +1801,8 @@
           l && (r = l[0], Z(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
-              _ = F(p, 0, 1),
-              m = F(p, false);
+              _ = B(p, 0, 1),
+              m = B(p, false);
             if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
             if ("constructor" !== p && f || (s = true), U(x, a = "%" + (r += "." + p) + "%")) o = x[a];
             else if (null != o) {
@@ -2117,8 +2117,8 @@
           U = n(5215),
           G = k.call(R, Array.prototype.concat),
           Z = k.call(P, Array.prototype.splice),
-          B = k.call(R, String.prototype.replace),
-          F = k.call(R, String.prototype.slice),
+          F = k.call(R, String.prototype.replace),
+          B = k.call(R, String.prototype.slice),
           V = k.call(R, RegExp.prototype.exec),
           H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
           Y = /\\(\\)?/g,
@@ -2140,13 +2140,13 @@
           if (arguments.length > 1 && "boolean" != typeof t) throw new u('"allowMissing" argument must be a boolean');
           if (null === V(/^%?[^%]*%?$/, e)) throw new c("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
           var n = function(e) {
-              var t = F(e, 0, 1),
-                n = F(e, false);
+              var t = B(e, 0, 1),
+                n = B(e, false);
               if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
               if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
               var r = [];
-              return B(e, H, function(e, t, n, i) {
-                r[r.length] = n ? B(i, Y, "$1") : t || e
+              return F(e, H, function(e, t, n, i) {
+                r[r.length] = n ? F(i, Y, "$1") : t || e
               }), r
             }(e),
             r = n.length > 0 ? n[0] : "",
@@ -2158,8 +2158,8 @@
           l && (r = l[0], Z(n, G([0, 1], l)));
           for (var d = 1, f = true; d < n.length; d += 1) {
             var p = n[d],
-              _ = F(p, 0, 1),
-              m = F(p, false);
+              _ = B(p, 0, 1),
+              m = B(p, false);
             if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
             if ("constructor" !== p && f || (s = true), U(x, a = "%" + (r += "." + p) + "%")) o = x[a];
             else if (null != o) {

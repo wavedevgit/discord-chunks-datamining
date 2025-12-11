@@ -39,7 +39,7 @@ function m(e) {
 function b(e) {
   let {
     channel: t
-  } = e, [n] = t.recipients, b = (0, l.e7)([s.default], () => s.default.getUser(n)), y = (0, l.e7)([s.default], () => s.default.getCurrentUser()), O = (0, d.Z)(), [j, x] = (0, c.Z)(n);
+  } = e, [n] = t.recipients, b = (0, l.e7)([s.default], () => s.default.getUser(n)), y = (0, l.e7)([s.default], () => s.default.getCurrentUser()), O = (0, d.Z)(), [x, j] = (0, c.Z)(n);
   if (i.useEffect(() => {
       (0, u.Z)(null != b ? b : n, {
         type: "sidebar",
@@ -62,10 +62,10 @@ function b(e) {
           })
         })
       }),
-      children: j ? (0, r.jsx)(h.Z, m({
+      children: x ? (0, r.jsx)(h.Z, m({
         user: b,
         currentUser: y,
-        onHide: x
+        onHide: j
       }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.Z, m({
         user: b,
         currentUser: y

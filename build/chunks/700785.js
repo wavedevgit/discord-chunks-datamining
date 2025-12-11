@@ -10,10 +10,10 @@ require.d(exports, {
   TP: () => N,
   Uu: () => K,
   e9: () => V,
-  iJ: () => B,
+  iJ: () => F,
   o4: () => Z,
   oz: () => z,
-  r6: () => F,
+  r6: () => B,
   uB: () => U,
   we: () => Y,
   ym: () => x
@@ -240,12 +240,12 @@ function Z(e, t) {
   })
 }
 
-function B(e) {
+function F(e) {
   var t;
   return i().some(E.Z.getUnsafeMutableRoles(e.id), e => e.hoist && (0, _.Fs)(e, S.Plq.ADMINISTRATOR)) ? true : null != (t = e.ownerId) ? t : true
 }
 
-function F(e, t, n, r) {
+function B(e, t, n, r) {
   return !!(null != t && (0, p.eM)(e, t)) || null != n && (null == r || (0, O.C$)(n, r))
 }
 

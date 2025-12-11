@@ -5,7 +5,7 @@ require.d(exports, {
   Eb: () => D,
   Fx: () => M,
   IM: () => x,
-  J2: () => F,
+  J2: () => B,
   r$: () => w
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
@@ -147,8 +147,8 @@ function x(e, t, n) {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != R[e], "Missing user in compressed ready payload"), R[e]))), delete e.recipient_ids
   });
-  let p = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = k(R, null == c ? true : c[t]), B(e)))) ? r : [],
-    _ = L(t, u, e => B(e));
+  let p = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = k(R, null == c ? true : c[t]), F(e)))) ? r : [],
+    _ = L(t, u, e => F(e));
   return null != _ && p.push(_), I(v({}, d), {
     users: a,
     presences: [],
@@ -170,7 +170,7 @@ function j(e) {
 function M(e, t) {
   var n;
   let r = E.Z.getGuild(e.id),
-    i = F(e, null == r ? true : {
+    i = B(e, null == r ? true : {
       properties: b.dS(r),
       roles: g.Z.getRolesSnapshot(r.id),
       emojis: j(r.id),
@@ -227,7 +227,7 @@ function Z(e, t, n) {
   }
 }
 
-function B(e) {
+function F(e) {
   var t, n, r, i, a, o, s, l;
   let c = U(e.id);
   if ("partial" !== e.data_mode) return {
@@ -288,7 +288,7 @@ function B(e) {
   }
 }
 
-function F(e, t) {
+function B(e, t) {
   var n, r, i, a, o, s, l, c;
   if (null == t && (t = U(e.id)), "partial" !== e.data_mode) return {
     id: e.id,

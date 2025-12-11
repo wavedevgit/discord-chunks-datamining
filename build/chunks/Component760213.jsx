@@ -1,13 +1,13 @@
 /** Chunk was on 55944 **/
 /** chunk id: 760213, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => v,
+  W: () => p,
   Z: () => U
 }), require("./457542.js");
 var s, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk893776 = require("./893776.js"),
@@ -25,7 +25,7 @@ var s, Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk805079 = require("./805079.js"),
-  v = ((s = {})[s.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", s[s.SWITCHED = 1] = "SWITCHED", s[s.REMOVED = 2] = "REMOVED", s);
+  p = ((s = {})[s.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", s[s.SWITCHED = 1] = "SWITCHED", s[s.REMOVED = 2] = "REMOVED", s);
 
 function j(e) {
   let {
@@ -34,46 +34,46 @@ function j(e) {
     onAction: s
   } = e, {
     currentUser: a,
-    hidePrivateData: r,
+    hidePrivateData: l,
     isAuthenticated: N
   } = (0, c.cj)([b.default, h.Z, f.default], () => ({
     currentUser: b.default.getCurrentUser(),
     hidePrivateData: h.Z.hidePersonalInformation,
     isAuthenticated: f.default.isAuthenticated()
-  })), v = new x.Z(n), j = N && (null == a ? true : a.id) === v.id, U = n.tokenStatus === E.q.INVALID, I = r || v.hasUniqueUsername() ? null : "#".concat(v.discriminator), M = null;
+  })), p = new x.Z(n), j = N && (null == a ? true : a.id) === p.id, U = n.tokenStatus === E.q.INVALID, I = l || p.hasUniqueUsername() ? null : "#".concat(p.discriminator), M = null;
   return m.Z.useConfig({
     location: "Account card load"
   }), j ? M = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
-    className: p.hintText,
+    className: v.hintText,
     color: "text-feedback-positive",
     children: A.intl.string(A.t.seV8yt)
   }) : U && (M = (0, i.jsx)(o.Text, {
     variant: "text-sm/semibold",
-    className: p.hintText,
+    className: v.hintText,
     color: "text-feedback-critical",
     children: A.intl.string(A.t.tYX2ps)
   })), (0, i.jsx)("div", {
-    className: p.accountCard,
+    className: v.accountCard,
     children: (0, i.jsxs)("div", {
-      className: p.userDetails,
+      className: v.userDetails,
       children: [(0, i.jsx)(o.qEK, {
-        src: v.getAvatarURL(true, 40),
+        src: p.getAvatarURL(true, 40),
         size: o.EFr.SIZE_40,
         "aria-label": n.username
       }), (0, i.jsxs)("div", {
-        className: l()(p.usernameSection, {
-          [p.hasActionMaxWidth]: !j
+        className: r()(v.usernameSection, {
+          [v.hasActionMaxWidth]: !j
         }),
         children: [(0, i.jsxs)("div", {
-          className: p.username,
+          className: v.username,
           children: [(0, i.jsx)(o.Text, {
             variant: "text-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             lineClamp: 1,
-            children: C.ZP.getUserTag(v, {
+            children: C.ZP.getUserTag(p, {
               mode: "username",
-              identifiable: r ? "never" : "always"
+              identifiable: l ? "never" : "always"
             })
           }), (0, i.jsx)(o.Text, {
             color: "text-default",
@@ -82,7 +82,7 @@ function j(e) {
           })]
         }), M]
       }), (0, i.jsxs)("div", {
-        className: p.userActions,
+        className: v.userActions,
         children: [!j && (0, i.jsx)(o.Button, {
           variant: "secondary",
           text: U ? A.intl.string(A.t["DSN+hw"]) : t,
@@ -137,20 +137,20 @@ function U(e) {
     onAction: n
   } = e, {
     isLoading: s,
-    multiAccountUsers: r
+    multiAccountUsers: l
   } = (0, N.L)();
   return (0, i.jsx)("div", {
-    className: p.list,
+    className: v.list,
     children: s ? (0, i.jsx)(o.$jN, {
-      className: p.spinner
-    }) : r.map((e, s) => (0, i.jsxs)(a.Fragment, {
+      className: v.spinner
+    }) : l.map((e, s) => (0, i.jsxs)(a.Fragment, {
       children: [(0, i.jsx)(j, {
         user: e,
         actionText: t,
         onAction: n
-      }, e.id), r.length - 1 !== s && (0, i.jsx)("div", {
+      }, e.id), l.length - 1 !== s && (0, i.jsx)("div", {
         role: "separator",
-        className: p.separator
+        className: v.separator
       })]
     }, e.id))
   })

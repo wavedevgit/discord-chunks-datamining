@@ -49,8 +49,8 @@ let w = {},
   U = false,
   G = Chunk709054.default.fromTimestamp(Date.now()),
   Z = true,
-  B = null,
   F = null,
+  B = null,
   V = true;
 
 function H() {
@@ -128,7 +128,7 @@ function K() {
 }
 
 function z() {
-  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), Z = true, U = false, F = null, B = null
+  w = {}, D = null, x = [], L = new Chunk810457.Z, j = false, M = false, k = false, G = Chunk709054.default.fromTimestamp(Date.now()), Z = true, U = false, B = null, F = null
 }
 
 function q() {
@@ -243,7 +243,7 @@ function ea(e) {
     hasMoreToLoad: n,
     analyticsPayload: r
   } = e;
-  j = false, t ? U = true : (null != n && (Z = n), k = true), F = null != r ? r : null
+  j = false, t ? U = true : (null != n && (Z = n), k = true), B = null != r ? r : null
 }
 
 function eo(e) {
@@ -258,7 +258,7 @@ function eo(e) {
 }
 
 function es() {
-  j = false, F = null, M = true
+  j = false, B = null, M = true
 }
 
 function el(e) {
@@ -269,7 +269,7 @@ function el(e) {
   } = e, i = (0, I.Ag)({
     location: "handleInboxItemClick"
   }).notificationCenterVariant;
-  B = r && i === I.jP.SIDEBAR ? {
+  F = r && i === I.jP.SIDEBAR ? {
     channelId: n,
     messageId: t
   } : null
@@ -283,7 +283,7 @@ function ec(e) {
   (0, T.Tj)({
     channelId: t,
     id: n
-  }, B) && (B = null)
+  }, F) && (F = null)
 }
 
 function eu() {
@@ -291,7 +291,7 @@ function eu() {
 }
 
 function ed() {
-  B = null
+  F = null
 }
 
 function ef(e) {
@@ -388,10 +388,10 @@ class eE extends(r = Chunk442837.ZP.Store) {
     return !j && !Z
   }
   get selectedItemInfo() {
-    return B
+    return F
   }
   get currentRequestAnalyticsPayload() {
-    return F
+    return B
   }
   getDevOverrides() {
     return {

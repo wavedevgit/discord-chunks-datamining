@@ -108,8 +108,8 @@ function g(e, t, n) {
         renderAccessory: G,
         onItemVisibilityChange: Z
       } = n,
-      B = m(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
-    let F = i.useRef(null),
+      F = m(n, ["onScroll", "dir", "sections", "columns", "getItemKey", "getItemHeight", "getSectionHeight", "chunkSize", "renderSection", "renderItem", "getSectionProps", "itemGutter", "removeEdgeItemGutters", "sectionGutter", "padding", "paddingVertical", "paddingHorizontal", "fade", "className", "style", "maxContentWidth", "renderAccessory", "onItemVisibilityChange"]);
+    let B = i.useRef(null),
       V = i.useRef(null),
       H = i.useRef({}),
       [Y, W] = i.useState(false),
@@ -174,8 +174,8 @@ function g(e, t, n) {
       getScrollerState: q
     }, (0, s.Ue)(K, q, ei)), [K, q, ea, ei, eo]);
     let el = (0, i.useCallback)(e => {
-      er(1), null == F.current ? W(true) : clearTimeout(F.current), F.current = setTimeout(() => {
-        F.current = null, W(false)
+      er(1), null == B.current ? W(true) : clearTimeout(B.current), B.current = setTimeout(() => {
+        B.current = null, W(false)
       }, 200), null != E && E(e)
     }, [E, er]);
     return i.useLayoutEffect(() => {
@@ -189,7 +189,7 @@ function g(e, t, n) {
         [u.scrolling]: Y
       }),
       style: (0, s.uT)(k)
-    }, B), {
+    }, F), {
       children: [null != (g = null == G ? true : G(ee)) ? g : null, (0, i.useMemo)(() => (0, r.jsx)(c.JcV, {
         containerRef: V,
         children: (0, r.jsx)("div", {

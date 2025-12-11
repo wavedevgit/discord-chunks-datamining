@@ -46,12 +46,12 @@ function w(e) {
   let G = i.useCallback(() => {
     if (null == Z) return;
     let e = j.Z.getEveryoneRole(Z);
-    f.Z.close();
+    m.Z.close();
     let t = {
       [e.id]: e
     };
-    (0, p.iD)(Z.id, {
-      type: b.z.SERVER_SHOP,
+    (0, b.iD)(Z.id, {
+      type: p.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
       returnToSection: S.pNK.GUILD_PRODUCTS
@@ -115,7 +115,7 @@ function w(e) {
     }) : (0, r.jsx)(o.$jN, {});
   return (0, r.jsxs)(d.AL, {
     guildId: t,
-    children: [M, (0, r.jsx)(m.Z, {
+    children: [M, (0, r.jsx)(f.Z, {
       guild: Z
     }), (0, r.jsx)("div", {
       className: P.tabBarContainer,

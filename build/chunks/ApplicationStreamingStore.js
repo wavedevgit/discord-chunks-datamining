@@ -95,14 +95,14 @@ function Z() {
   return module
 }
 
-function B(e) {
+function F(e) {
   let {
     applicationStreamState: t
   } = e;
   i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), a = t.rtcStreams, o = t.streamerActiveStreamMetadatas
 }
 
-function F(e) {
+function B(e) {
   let {
     voiceStates: t
   } = e;
@@ -465,8 +465,8 @@ P(ea, "displayName", "ApplicationStreamingStore"), P(ea, "persistKey", "Applicat
 let eo = new ea(Chunk570140.Z, {
   MEDIA_ENGINE_SET_GO_LIVE_SOURCE: W,
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: K,
-  OVERLAY_INITIALIZE: B,
-  VOICE_STATE_UPDATES: F,
+  OVERLAY_INITIALIZE: F,
+  VOICE_STATE_UPDATES: B,
   STREAM_WATCH: V,
   STREAM_START: H,
   STREAM_STOP: z,

@@ -23,8 +23,8 @@ let u = e => {
       },
       onChange: g,
       initialText: f,
-      isRequired: h
-    } = e, x = l.useMemo(() => {
+      isRequired: x
+    } = e, h = l.useMemo(() => {
       var e, t;
       return a.Z.reactParserFor((e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -76,7 +76,7 @@ let u = e => {
         className: c.marginBottom8,
         children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
-          children: [t, h && (0, r.jsx)("span", {
+          children: [t, x && (0, r.jsx)("span", {
             className: d.required,
             children: "*"
           })]
@@ -100,7 +100,7 @@ let u = e => {
         className: c.marginTop4,
         children: (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: x(n)
+          children: h(n)
         })
       })]
     })

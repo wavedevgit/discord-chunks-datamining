@@ -15,14 +15,14 @@ require.d(exports, {
   cT: () => $,
   eT: () => Y,
   gU: () => et,
-  gl: () => F,
+  gl: () => B,
   is: () => x,
   it: () => L,
   lL: () => ee,
   lx: () => X,
   m0: () => M,
   nE: () => V,
-  pf: () => B,
+  pf: () => F,
   qm: () => Q,
   w: () => J,
   wF: () => U,
@@ -309,7 +309,7 @@ async function Z(e, t, n) {
     }
   }
 }
-async function B(e) {
+async function F(e) {
   if (!E.Z.isFetchingRewardCode(e)) {
     a.Z.dispatch({
       type: "QUESTS_FETCH_REWARD_CODE_BEGIN",
@@ -334,7 +334,7 @@ async function B(e) {
     }
   }
 }
-async function F(e, t) {
+async function B(e, t) {
   let n = E.Z.isDismissingContent(e),
     r = (0, v.GN)(t);
   if (!n && r) {

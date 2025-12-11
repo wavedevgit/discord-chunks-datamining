@@ -31,12 +31,12 @@ let v = e => {
       leadingIcon: e,
       trailingIcon: n
     } = (0, m.f)(t, j, false, false, "", {
-      leadingIconClass: x.attachmentIcon,
-      trailingIconClass: x.attachmentIcon,
+      leadingIconClass: h.attachmentIcon,
+      trailingIconClass: h.attachmentIcon,
       iconSize: f.WW
     });
     return (0, r.jsxs)("div", {
-      className: x.contentContainer,
+      className: h.contentContainer,
       children: [e, (0, r.jsx)(c.ZP, {
         message: t,
         content: j,
@@ -45,13 +45,13 @@ let v = e => {
     })
   }, [t, j, y]);
   return null == v ? null : (0, r.jsxs)("div", {
-    className: x.container,
+    className: h.container,
     children: [(0, r.jsx)(a.Heading, {
-      className: x.header,
+      className: h.header,
       variant: "heading-sm/semibold",
-      children: h.intl.string(h.t.iouM3a)
+      children: x.intl.string(x.t.iouM3a)
     }), (0, r.jsx)(a.Ttm, {
-      className: x.messagePreviewContainer,
+      className: h.messagePreviewContainer,
       children: (0, r.jsx)(d.Z, {
         childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {

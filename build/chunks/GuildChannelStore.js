@@ -86,7 +86,7 @@ function Z(e) {
   return (0, p.r8)(e) ? I : (0, p.bw)(e) ? T : e
 }
 
-function B() {
+function F() {
   let e = {},
     t = Chunk853856.Z.getFavoriteChannels();
   for (let n in exports) {
@@ -102,8 +102,8 @@ function B() {
   return module
 }
 
-function F(e) {
-  if (e === v.I_8) return B();
+function B(e) {
+  if (e === v.I_8) return F();
   let t = {},
     n = h.Z.getMutableGuildChannelsForGuild(e);
   for (let e in n) t[e] = {
@@ -116,7 +116,7 @@ function F(e) {
 function V(e) {
   let {
     id: t
-  } = e, n = F(t);
+  } = e, n = B(t);
   return a().forEach(n, n => {
     let r = n.channel;
     if (e.count += 1, p.zS.has(r.type) && !b.Z.can(v.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== R) return;

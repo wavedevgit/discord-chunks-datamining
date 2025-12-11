@@ -24,7 +24,7 @@ function c(e) {
     children: [null != t && t.length > 0 ? (0, n.jsxs)(n.Fragment, {
       children: [null != i ? (0, n.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: s.header,
         children: i
       }) : null, (0, n.jsx)("div", {
@@ -44,7 +44,7 @@ function c(e) {
     }) : null, null != r && r.length > 0 ? (0, n.jsxs)(n.Fragment, {
       children: [null != c ? (0, n.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: s.header,
         children: c
       }) : null, (0, n.jsx)("div", {

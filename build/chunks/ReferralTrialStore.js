@@ -121,11 +121,11 @@ function Z(e) {
   g.has(t) || h.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
-function B() {
+function F() {
   v = true
 }
 
-function F(e) {
+function B(e) {
   let {
     users: t,
     nextIndex: n
@@ -193,8 +193,8 @@ let Y = new H(Chunk570140.Z, {
   CREATE_REFERRALS_SUCCESS: x,
   BILLING_REFERRAL_RESOLVE_SUCCESS: j,
   BILLING_REFERRAL_RESOLVE_FAIL: M,
-  REFERRALS_FETCH_ELIGIBLE_USER_START: B,
-  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: F,
+  REFERRALS_FETCH_ELIGIBLE_USER_START: F,
+  REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: B,
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: V,
   LOAD_MESSAGES_SUCCESS: U,
   MESSAGE_CREATE: k,

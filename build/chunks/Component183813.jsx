@@ -145,7 +145,7 @@ function x(e) {
       separator: false,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: null == L || null == (n = L.rewardSelection) ? true : n.heading()
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",

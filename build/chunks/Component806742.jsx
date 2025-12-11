@@ -22,9 +22,9 @@ var Chunk54381 = require("./54381.js"),
 let x = function(e) {
   let {
     guildId: t
-  } = e, l = (0, s.cj)([f.Z], () => {
+  } = e, l = (0, s.cj)([m.Z], () => {
     var e;
-    return null != (e = f.Z.getSettings().welcomeMessage) ? e : p.z
+    return null != (e = m.Z.getSettings().welcomeMessage) ? e : b.z
   }), x = i.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
@@ -51,7 +51,7 @@ let x = function(e) {
       }({}, n), a = a = {
         guildId: t,
         welcomeMessage: l,
-        onSave: e => (0, m._N)(e)
+        onSave: e => (0, f._N)(e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ let x = function(e) {
   return (0, d.pw)(l) ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: b.intl.string(b.t["9Z+aEP"]),
+    text: p.intl.string(p.t["9Z+aEP"]),
     onClick: x
   }) : (0, r.jsxs)(c.P3F, {
     className: h.editWelcomeSection,
@@ -79,14 +79,14 @@ let x = function(e) {
         message: l.message
       }
     }), (0, r.jsx)(o.u, {
-      text: b.intl.string(b.t.bt75uw),
+      text: p.intl.string(p.t.bt75uw),
       children: (0, r.jsxs)("div", {
         className: a()(h.actionItemEditButton, h.editWelcomeButton),
         children: [(0, r.jsx)(c.vdY, {
           size: "md",
           color: "currentColor"
         }), (0, r.jsx)(c.nn4, {
-          children: b.intl.string(b.t.bt75uw)
+          children: p.intl.string(p.t.bt75uw)
         })]
       })
     })]

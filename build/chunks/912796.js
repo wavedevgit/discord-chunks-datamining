@@ -274,12 +274,12 @@ let S = /\b\B/,
     begin: I,
     relevance: 0
   },
-  B = {
+  F = {
     scope: "title",
     begin: T,
     relevance: 0
   };
-var F = Object.freeze({
+var B = Object.freeze({
   __proto__: null,
   APOS_STRING_MODE: D,
   BACKSLASH_ESCAPE: w,
@@ -328,7 +328,7 @@ var F = Object.freeze({
   SHEBANG: R,
   TITLE_MODE: Z,
   UNDERSCORE_IDENT_RE: T,
-  UNDERSCORE_TITLE_MODE: B
+  UNDERSCORE_TITLE_MODE: F
 });
 
 function V(e, t) {
@@ -984,8 +984,8 @@ let eh = r,
         either: E,
         optional: m,
         anyNumberOfTimes: _
-      }, F) "object" == typeof F[n] && t(F[n]);
-    return Object.assign(e, F), e
+      }, B) "object" == typeof B[n] && t(B[n]);
+    return Object.assign(e, B), e
   },
   eO = ey({});
 eO.newInstance = () => ey({}), module.exports = eO, eO.HighlightJS = eO, eO.default = eO

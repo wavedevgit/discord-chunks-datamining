@@ -122,8 +122,8 @@ function Z(e) {
   } = e;
   return T === t.parent_id && !!(0, f.yv)(t.id) && void U(t.id)
 }
-let B = [];
-class F extends(i = Chunk442837.ZP.Store) {
+let F = [];
+class B extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk569471.Z, Chunk306680.ZP)
   }
@@ -140,11 +140,11 @@ class F extends(i = Chunk442837.ZP.Store) {
     return T === e && C === t && (0, c.O)(r, n) && P === i ? O : (R(), false)
   }
   getThreads(e, t, n, i) {
-    return T === e && C === t && (0, c.O)(r, n) && P === i ? A : B
+    return T === e && C === t && (0, c.O)(r, n) && P === i ? A : F
   }
 }
-b(F, "displayName", "ArchivedThreadsStore");
-let V = new F(Chunk570140.Z, {
+b(B, "displayName", "ArchivedThreadsStore");
+let V = new B(Chunk570140.Z, {
   CONNECTION_OPEN: R,
   THREAD_DELETE: G,
   THREAD_UPDATE: Z,

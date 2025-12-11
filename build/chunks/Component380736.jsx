@@ -119,11 +119,11 @@ let C = Chunk473749.memo(function(e) {
     Z = i.useCallback(() => {
       L(true)
     }, []),
-    B = i.useCallback(() => {
+    F = i.useCallback(() => {
       L(false)
     }, []);
 
-  function F() {
+  function B() {
     return (0, r.jsx)(d.Z, {
       className: E.dismissButton,
       onDismiss: k,
@@ -214,14 +214,14 @@ let C = Chunk473749.memo(function(e) {
         innerRef: R,
         ignoreKeyPress: true,
         onMouseOver: Z,
-        onMouseLeave: B,
+        onMouseLeave: F,
         onClick: b,
         className: o()(E.container, {
           [E.clickable]: null != b
         }, w),
         children: W()
       })
-    }), F()]
+    }), B()]
   })
 });
 
@@ -330,8 +330,8 @@ function w(e) {
       onCancelClick: G,
       disableClickableRegions: Z = false
     },
-    status: B
-  } = t, F = S(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !Z && !V, {
+    status: F
+  } = t, B = S(t.props, ["onNotificationShow", "onDismissClick", "renderFooter", "onNotificationClick", "onConfirmClick", "onCancelClick", "disableClickableRegions"]), V = !o && a, H = 0 === n && !Z && !V, {
     ref: Y,
     springs: W
   } = (0, m.X4)(t.id, s, l);
@@ -344,8 +344,8 @@ function w(e) {
     animationWrapperClassName: E,
     children: (0, r.jsx)(N, {
       observe: H,
-      children: (0, r.jsx)(C, v(y({}, F), {
-        title: "function" == typeof F.title ? F.title(O) : F.title,
+      children: (0, r.jsx)(C, v(y({}, B), {
+        title: "function" == typeof B.title ? B.title(O) : B.title,
         containerRef: Y,
         notificationId: t.id,
         onNotificationShow: 0 === n ? b : true,
@@ -357,7 +357,7 @@ function w(e) {
         expand: false,
         index: n,
         locked: a,
-        status: B,
+        status: F,
         contentOpacity: W.contentOpacity
       }))
     })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk781160 = require("./781160.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk840967 = require("./840967.js"),
@@ -16,7 +16,7 @@ function c(e) {
   let {
     title: n,
     description: t,
-    headerImage: i,
+    headerImage: l,
     onDetails: c,
     onPurchase: d,
     PurchaseButton: p,
@@ -25,7 +25,7 @@ function c(e) {
   } = e;
   return (0, r.jsx)(s.tE, {
     children: (0, r.jsxs)("div", {
-      className: l()(u.wrapper, a.hoverCard),
+      className: i()(u.wrapper, a.hoverCard),
       tabIndex: 0,
       onClick: () => {
         null != c ? c() : null != d && d()
@@ -35,10 +35,10 @@ function c(e) {
       },
       children: [(0, r.jsx)("div", {
         className: u.cardHeaderImg,
-        style: null != i ? {
-          backgroundImage: null != i ? "url(".concat(i.toString(), ")") : true
+        style: null != l ? {
+          backgroundImage: null != l ? "url(".concat(l.toString(), ")") : true
         } : true,
-        children: null == i && (0, r.jsx)(o.Prq, {
+        children: null == l && (0, r.jsx)(o.Prq, {
           color: "white",
           size: "custom",
           height: 80,
@@ -47,7 +47,7 @@ function c(e) {
       }), (0, r.jsxs)("div", {
         className: u.details,
         children: [(0, r.jsx)(o.xvT, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-md/semibold",
           children: n
         }), null != t && (0, r.jsx)(o.xvT, {

@@ -30,13 +30,13 @@ function y(e) {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, f.wE)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+    (0, m.wE)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
       dismissAction: v.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
     })
   }, [t]);
-  let n = !(0, p.OA)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id) || !t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) || !t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE),
+  let n = !(0, b.OA)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id) || !t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) || !t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE),
     l = (0, h.vc)(a()(j.zQD), "LL");
   return (0, r.jsxs)(s.pJ, {
     className: C.infobox,
@@ -98,7 +98,7 @@ function y(e) {
 function N(e) {
   let {
     guild: t
-  } = e, n = (0, u.e7)([b.Z], () => b.Z.can(j.Plq.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), a = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [s, o] = i.useState(true), [c, g] = i.useState(true);
+  } = e, n = (0, u.e7)([p.Z], () => p.Z.can(j.Plq.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), a = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [s, o] = i.useState(true), [c, g] = i.useState(true);
   return n ? (0, r.jsxs)("form", {
     className: C.form,
     children: [(0, r.jsxs)("fieldset", {
@@ -125,7 +125,7 @@ function N(e) {
         return e = t, n = {
           migratePin: s && !l,
           migrateSlowmode: c && !a
-        }, void m.Z.show({
+        }, void f.Z.show({
           title: O.intl.string(O.t.fM5aQ2),
           body: O.intl.format(O.t.rLbJs6, {
             guildName: e.name
@@ -163,7 +163,7 @@ async function I(e, t) {
   try {
     await x.Z.migratePermissions(e, t)
   } catch (e) {
-    m.Z.show({
+    f.Z.show({
       title: O.intl.string(O.t.R0RpRX),
       body: O.intl.string(O.t["58yMLG"]),
       confirmVariant: "secondary"

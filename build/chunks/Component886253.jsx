@@ -80,14 +80,14 @@ function b(e) {
       children: (0, r.jsxs)("div", {
         className: g.footer,
         children: [null != C || null != A ? (0, r.jsx)(s.Text, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-sm/normal",
           children: (0, r.jsx)(_.Z, {
             termsOfServiceUrl: C,
             privacyPolicyUrl: A
           })
         }) : (0, r.jsx)(s.Text, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-xs/normal",
           children: h.intl.string(h.t["3ZY+0D"])
         }), (0, r.jsxs)("div", {

@@ -56,7 +56,7 @@ function O(e) {
     children: [(0, l.jsx)(i.P3F, {
       onClick: E,
       className: j.close,
-      "aria-label": f.intl.string(f.t.cpT0Cq),
+      "aria-label": p.intl.string(p.t.cpT0Cq),
       children: (0, l.jsx)(i.Dio, {
         size: "md",
         color: "currentColor"
@@ -75,12 +75,12 @@ function O(e) {
     }), (0, l.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       className: j.header,
-      children: f.intl.string(f.t.UzNv7u)
+      children: p.intl.string(p.t.UzNv7u)
     }), (0, l.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-default",
       className: j.body,
-      children: f.intl.string(f.t.UetJjH)
+      children: p.intl.string(p.t.UetJjH)
     }), (0, l.jsxs)("div", {
       className: j.invite,
       children: [(0, l.jsx)(o.S, {
@@ -88,13 +88,13 @@ function O(e) {
         autoFocus: false,
         onCopy: e => {
           if (D) return;
-          (0, x.JG)(e);
+          (0, m.JG)(e);
           let t = (0, v.xC)(N.entity_type);
-          m.default.track(p.rMx.COPY_INSTANT_INVITE, {
+          x.default.track(f.rMx.COPY_INSTANT_INVITE, {
             server: N.guild_id,
             channel: I,
             channel_type: t,
-            location: p.t4x.GUILD_EVENTS,
+            location: f.t4x.GUILD_EVENTS,
             code: T.code,
             guild_scheduled_event_id: null == N ? true : N.id
           })

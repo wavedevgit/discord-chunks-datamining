@@ -64,7 +64,7 @@ function m(e) {
     c.Z.showAgeVerificationGetStartedModal({
       entryPoint: d.cU.NSFW_GUILD
     })
-  }, []), j = (t = g({}, m), n = n = {
+  }, []), x = (t = g({}, m), n = n = {
     guildId: null == l ? true : l.id,
     channelId: a,
     disagreement: h.intl.string(h.t["/g10LC"])
@@ -85,13 +85,13 @@ function m(e) {
         onAgree: O,
         onDisagree: b,
         modalType: f
-      }, j));
+      }, x));
     default:
       return (0, r.jsx)(p.Z, g({
         onAgree: y,
         onDisagree: b,
         modalType: f
-      }, j))
+      }, x))
   }
 }
 let b = function(e) {

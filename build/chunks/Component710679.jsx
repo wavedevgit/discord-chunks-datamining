@@ -44,7 +44,7 @@ function Z(e) {
     entity_type: G,
     image: _,
     recurrence_rule: R
-  } = N, A = (0, b.DK)(N), B = (0, i.e7)([m.ZP], () => m.ZP.isInterestedInEventRecurrence(I, A), [I, A]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), z = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(D), [D]), J = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), H = (0, i.e7)([g.default], () => g.default.getUser(L), [L]), {
+  } = N, A = (0, x.DK)(N), B = (0, i.e7)([m.ZP], () => m.ZP.isInterestedInEventRecurrence(I, A), [I, A]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), z = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(D), [D]), J = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), H = (0, i.e7)([g.default], () => g.default.getUser(L), [L]), {
     speakers: K
   } = (0, v.Z)({
     id: D,
@@ -94,7 +94,7 @@ function Z(e) {
     entityType: G,
     description: null != M ? M : true,
     location: null != (n = (0, f.cS)(N)) ? n : true,
-    imageSource: null != _ ? (0, x.Z)(N) : true,
+    imageSource: null != _ ? (0, b.Z)(N) : true,
     imageLocation: O.Q.THUMBNAIL,
     isActive: F,
     isUserLurking: U,

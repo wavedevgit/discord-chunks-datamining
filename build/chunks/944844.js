@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk478677 = require("./478677.js"),
   Chunk457330 = require("./457330.js"),
   Chunk275759 = require("./275759.js"),
@@ -21,7 +21,7 @@ async function u(e, t, n) {
     let {
       body: e
     } = await s.Z.authorize(p, {
-      twoWayLinkType: o.g.DEVICE_CODE,
+      twoWayLinkType: i.g.DEVICE_CODE,
       userCode: n
     });
     h = e.url
@@ -30,11 +30,11 @@ async function u(e, t, n) {
   }
   let x = null;
   try {
-    i()(null != h, "No URL in authorize response");
+    o()(null != h, "No URL in authorize response");
     let {
       state: e
     } = (0, c.xp)(h);
-    i()(null != e, "Authorize URL state query parameter must be present"), x = e
+    o()(null != e, "Authorize URL state query parameter must be present"), x = e
   } catch (e) {
     throw await f(n, 2, "authorize"), Error("error parsing callback params")
   }

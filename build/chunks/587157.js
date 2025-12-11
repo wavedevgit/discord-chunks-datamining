@@ -167,29 +167,29 @@ function v(e) {
         }
       }
     },
-    B = e => {
+    F = e => {
       e.currentTarget.contains(e.relatedTarget) || n.setFocused(false)
     },
-    F = (0, E.useRef)(false);
+    B = (0, E.useRef)(false);
   (0, l.z)(S, u.N, w ? e => {
     let {
       detail: t
     } = e;
-    e.stopPropagation(), n.setFocused(true), (null == t ? true : t.focusStrategy) === "first" && (F.current = true)
+    e.stopPropagation(), n.setFocused(true), (null == t ? true : t.focusStrategy) === "first" && (B.current = true)
   } : true);
   let V = (0, d.i)(() => {
     var e, t;
     let r = null != (t = null == (e = v.getFirstKey) ? true : e.call(v)) ? t : null;
     if (null == r) {
       let e = (0, f.vY)();
-      (0, h.q6)(S.current), (0, h.Jv)(e, null), n.collection.size > 0 && (F.current = false)
-    } else n.setFocusedKey(r), F.current = false
+      (0, h.q6)(S.current), (0, h.Jv)(e, null), n.collection.size > 0 && (B.current = false)
+    } else n.setFocusedKey(r), B.current = false
   });
   (0, p.i)(() => {
-    F.current && V()
+    B.current && V()
   }, [n.collection, V]);
   let H = (0, d.i)(() => {
-    n.collection.size > 0 && (F.current = false)
+    n.collection.size > 0 && (B.current = false)
   });
   (0, p.i)(() => {
     H()
@@ -236,7 +236,7 @@ function v(e) {
   let q = {
       onKeyDown: U,
       onFocus: Z,
-      onBlur: B,
+      onBlur: F,
       onMouseDown(e) {
         L.current === e.target && e.preventDefault()
       }

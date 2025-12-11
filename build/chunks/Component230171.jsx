@@ -63,8 +63,8 @@ function M(e) {
     analyticsLocations: G
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: Z,
-    instanceId: B,
-    isCurrentlyInInstance: F,
+    instanceId: F,
+    isCurrentlyInInstance: B,
     canLaunchInChannel: V
   } = (0, C.c)(n.id), H = (0, u.Z)(), Y = (0, m.ms)({
     context: {
@@ -75,20 +75,20 @@ function M(e) {
   }), W = null != v && S && Y, K = V && S, z = (0, D.G)(n), q = (0, D.z)(n), Q = i.useMemo(() => {
     let e = [];
     return S ? (K && e.push({
-      label: null == B ? L.intl.string(L.t.RscU7I) : F ? L.intl.string(L.t.DPfdsq) : L.intl.string(L.t.sqe0hj),
+      label: null == F ? L.intl.string(L.t.RscU7I) : B ? L.intl.string(L.t.DPfdsq) : L.intl.string(L.t.sqe0hj),
       trackingArea: P.j_.PLAY,
       onClick() {
         (0, c.G6)({
           channelId: null != Z ? Z : true,
           applicationId: n.id,
-          isStart: null == B,
+          isStart: null == F,
           embeddedActivitiesManager: H,
           customId: o,
           referrerId: M,
           analyticsLocations: G
         })
       },
-      disabled: F
+      disabled: B
     }), !K && W && e.push({
       label: L.intl.string(L.t.JeK1Wg),
       trackingArea: P.j_.PLAY,
@@ -102,7 +102,7 @@ function M(e) {
         })
       }
     })) : null != q && e.push(q), e
-  }, [K, W, B, F, Z, n.id, H, o, M, G, S, q, v]), X = S ? (0, r.jsx)(U, {
+  }, [K, W, F, B, Z, n.id, H, o, M, G, S, q, v]), X = S ? (0, r.jsx)(U, {
     app: n
   }) : (0, r.jsx)(k, {
     app: n

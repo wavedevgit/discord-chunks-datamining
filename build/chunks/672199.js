@@ -48,11 +48,11 @@ function g(e, t, n, g) {
       if (n === h.ApplicationStreamPresets.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: e
-        } = (0, a.IK)({
+        } = (0, l.IK)({
           location: "requestToStreamNotification"
         });
         n = e ? h.ApplicationStreamPresets.PRESET_AUTO : h.ApplicationStreamPresets.PRESET_VIDEO
-      }(0, l.Z)(c.Z.getTargetPID(), {
+      }(0, a.Z)(c.Z.getTargetPID(), {
         preset: n
       }), E("request-to-stream"), i.Z.updateNotificationStatus(t)
     },

@@ -2,7 +2,7 @@
 /** chunk id: 575258, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -25,29 +25,29 @@ let c = {
   d = c,
   u = false,
   g = false,
-  m = c;
+  f = c;
 
-function f(e) {
+function m(e) {
   let {
     welcomeScreen: t,
     guildId: n
   } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, l;
-    m = d = {
+    f = d = {
       description: null != (i = t.description) ? i : "",
       channels: null != (l = t.welcome_channels) ? l : [],
       enabled: null == r ? true : r.features.has(s.GuildFeatures.WELCOME_SCREEN_ENABLED)
     }
-  } else m = d = c;
+  } else f = d = c;
   g = false
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class b extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z)
   }
   get() {
-    return m
+    return f
   }
   showNotice() {
     return g
@@ -56,26 +56,26 @@ class p extends(r = Chunk442837.ZP.Store) {
     return {
       submitting: u,
       hasErrors: g,
-      welcomeSettings: m,
+      welcomeSettings: f,
       originalWelcomeSettings: d
     }
   }
 }
-o(p, "displayName", "WelcomeScreenSettingsStore");
-let b = new p(Chunk570140.Z, {
-  WELCOME_SCREEN_FETCH_SUCCESS: f,
-  WELCOME_SCREEN_UPDATE: f,
+o(b, "displayName", "WelcomeScreenSettingsStore");
+let p = new b(Chunk570140.Z, {
+  WELCOME_SCREEN_FETCH_SUCCESS: m,
+  WELCOME_SCREEN_UPDATE: m,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
-    m = d, g = false
+    f = d, g = false
   },
   WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-    m = c, d = c
+    f = c, d = c
   },
   WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
     let {
       settings: t
     } = e;
-    m = function(e) {
+    f = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -86,13 +86,13 @@ let b = new p(Chunk570140.Z, {
         })
       }
       return e
-    }({}, m, t)
+    }({}, f, t)
   },
   WELCOME_SCREEN_SUBMIT: function() {
     u = true
   },
   WELCOME_SCREEN_SUBMIT_SUCCESS: function(e) {
-    f(e), u = false
+    m(e), u = false
   },
   WELCOME_SCREEN_SUBMIT_FAILURE: function() {
     g = true, u = false

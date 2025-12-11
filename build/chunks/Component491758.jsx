@@ -132,7 +132,7 @@ function D() {
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
     }], [U]),
-    B = Chunk473749.useMemo(() => [{
+    F = Chunk473749.useMemo(() => [{
       value: Chunk37113.ApplicationStreamFPS.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
         fps: Chunk37113.ApplicationStreamFPS.FPS_15
@@ -148,7 +148,7 @@ function D() {
         fps: Chunk37113.ApplicationStreamFPS.FPS_60
       })
     }], [U]),
-    F = Chunk473749.useCallback(e => {
+    B = Chunk473749.useCallback(e => {
       u.Z.setKeybind(w(P({}, x), {
         shortcut: e
       }))
@@ -210,7 +210,7 @@ function D() {
       label: Chunk388032.intl.string(Chunk388032.t["2wScL1"]),
       description: Chunk388032.intl.string(Chunk388032.t["Rf9+fy"]),
       value: R.frameRate,
-      options: B
+      options: F
     }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
       label: Chunk388032.intl.string(Chunk388032.t.pf54EU),
       description: Chunk388032.intl.string(Chunk388032.t["QyB/jK"]),
@@ -219,7 +219,7 @@ function D() {
         className: Chunk263753.keyRecorder,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           defaultValue: x.shortcut,
-          onChange: F
+          onChange: B
         })
       })
     }), k && (0, Chunk54381.jsx)(Chunk481060.gNt, {

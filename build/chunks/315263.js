@@ -2,7 +2,7 @@
 /** chunk id: 315263, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  default: () => B
+  default: () => F
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./784620.js"), require("./973216.js");
 var Chunk873546 = require("./873546.js"),
   Chunk636977 = require("./636977.js"),
@@ -69,7 +69,7 @@ let Z = {
   analyticsLocations: []
 };
 
-function B(e) {
+function F(e) {
   var t;
   let {
     skipExtensionCheck: a,
@@ -205,13 +205,13 @@ function B(e) {
   let {
     host: D,
     hostname: U,
-    pathname: B,
-    search: F,
+    pathname: F,
+    search: B,
     hash: V
   } = null != (t = L.Z.toURLSafe(e)) ? t : {}, H = L.Z.isDiscordHostname(null != U ? U : null) || L.Z.isDiscordLocalhost(null != D ? D : null, null != U ? U : null);
-  if (H && ((null == B ? true : B.startsWith("/application-directory")) || (null == B ? true : B.startsWith("/discovery/applications")))) {
-    let e = B.split("/"),
-      t = null == B ? true : B.startsWith("/discovery/applications"),
+  if (H && ((null == F ? true : F.startsWith("/application-directory")) || (null == F ? true : F.startsWith("/discovery/applications")))) {
+    let e = F.split("/"),
+      t = null == F ? true : F.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
       i = "search" === r,
       a = t && "categories" === r && "featured" !== e[4];
@@ -219,7 +219,7 @@ function B(e) {
       let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(F);
+        let e = new URLSearchParams(B);
         r = null != (l = e.get("q")) ? l : true, o = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
       } else a && (o = e[4]);
       return Promise.resolve().then(n.bind(n, 749681)).then(e => {
@@ -237,14 +237,14 @@ function B(e) {
       }), true
     }
   }
-  if (null != B && H && L.Z.isAppRoute(B)) {
+  if (null != F && H && L.Z.isAppRoute(F)) {
     let e = {
       navigationReplace: false,
       openChannel: true
     };
-    return null != F && (e.search = F), null != V && (e.hash = V), t => (null == t || t.preventDefault(), (0, v.Z)(B, e), true)
+    return null != B && (e.search = B), null != V && (e.hash = V), t => (null == t || t.preventDefault(), (0, v.Z)(F, e), true)
   }
-  if (null != B && H) {
+  if (null != F && H) {
     let {
       getOAuth2AuthorizeProps: t,
       openOAuth2ModalWithCreateGuildModal: r
@@ -253,8 +253,8 @@ function B(e) {
       application_id: i.clientId
     }), r(i), true)
   }
-  let Y = (0, O.Ao)(B);
-  if (null != B && H && null != Y) return e => {
+  let Y = (0, O.Ao)(F);
+  if (null != F && H && null != Y) return e => {
     null == e || e.preventDefault();
     let t = w.Z.getGuildId();
     null != Y.guildId && "" !== Y.guildId && Y.guildId !== t && (0, v.Z)(M.Z5c.CHANNEL(Y.guildId));
@@ -263,25 +263,25 @@ function B(e) {
       eventId: n.id
     }), true
   };
-  if (H && (null == B ? true : B.startsWith("/settings/"))) {
+  if (H && (null == F ? true : F.startsWith("/settings/"))) {
     let {
       default: e
     } = n(722589), {
       openUserSettingsFromParsedUrl: t
-    } = n(518596), r = e(B, F);
+    } = n(518596), r = e(F, B);
     if (null != r) return e => (null == e || e.preventDefault(), t({
       match: r,
       analyticsLocations: s,
       urlOrigin: "link_click"
     }), true)
   }
-  return H && (null == B ? true : B.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
+  return H && (null == F ? true : F.startsWith("/discovery/quests")) ? e => (null == e || e.preventDefault(), (0, T.navigateToQuestHome)({
     fromContent: i.j.QUEST_BADGE
-  }), true) : H && (null == B ? true : B.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, C.uL)(M.Z5c.QUEST_HOME_V2 + (null != F ? F : "")), true) : H && (null == B ? true : B.startsWith("/quest-preview")) ? e => {
+  }), true) : H && (null == F ? true : F.startsWith("/quest-home")) ? e => (null == e || e.preventDefault(), (0, C.uL)(M.Z5c.QUEST_HOME_V2 + (null != B ? B : "")), true) : H && (null == F ? true : F.startsWith("/quest-preview")) ? e => {
     if (null == e || e.preventDefault(), (0, I.T)({
         location: k.dr.NAVIGATE_TO_QUEST_HOME_UTIL
-      })) return (0, C.uL)(M.Z5c.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(B.split("/").at(false))), true
-  } : H && (null == B ? true : B.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
+      })) return (0, C.uL)(M.Z5c.QUEST_HOME_V2 + "?tab=preview_tool&quest_id=".concat(F.split("/").at(false))), true
+  } : H && (null == F ? true : F.startsWith("/discovery/servers")) ? e => (null == e || e.preventDefault(), Promise.resolve().then(n.bind(n, 749681)).then(e => {
     let {
       transitionToGlobalDiscovery: t
     } = e, {

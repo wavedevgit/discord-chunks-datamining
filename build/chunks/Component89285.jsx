@@ -21,7 +21,7 @@ function s(e) {
       className: o.headingContainer,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: s
       }), (0, r.jsxs)(i.P3F, {
         className: o.error,

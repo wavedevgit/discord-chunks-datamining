@@ -80,7 +80,7 @@ let k = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
   G = 18,
   Z = "https://www.igdb.com/about";
 
-function B(e) {
+function F(e) {
   let {
     onClose: t
   } = e, n = (0, s.e7)([_.ZP], () => _.ZP.getCandidateGames()), [a, l] = i.useState(null);
@@ -129,7 +129,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     rawGame: t,
     nowPlaying: a = false,
@@ -145,7 +145,7 @@ function F(e) {
     isCurrentGameDetectionEnabled: _.ZP.isDetectionEnabled(S)
   })), R = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [D, x] = i.useState(false), j = i.useMemo(() => (0, E.le)(S) ? g ? S.gameName : N.intl.formatToPlainString(N.t.G6BGdx, {
     subgameName: S.gameName
-  }) : S.name, [S, g]), [k, Z] = i.useState(null != j ? j : "???"), B = o()(w.flexCenter, {
+  }) : S.name, [S, g]), [k, Z] = i.useState(null != j ? j : "???"), F = o()(w.flexCenter, {
     [P.game]: !a,
     [P.activeGame]: a,
     [P.nowPlaying]: null != S && a,
@@ -368,7 +368,7 @@ function F(e) {
     en = null != v && v.id === (null == R ? true : R.id) || et || null != m && m.some(e => e.id === (null == R ? true : R.id));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: B,
+      className: F,
       children: [(0, r.jsxs)("div", {
         className: o()(P.gameNameLastPlayed, w.vertical),
         children: [q(), Q()]
@@ -376,7 +376,7 @@ function F(e) {
     }), null != m && m.length > 0 && !a && (0, r.jsx)("div", {
       className: P.subgameContainer,
       children: m.map((e, t) => (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(F, {
+        children: [(0, r.jsx)(B, {
           rawGame: e,
           isOverride: false,
           isSubgame: true,
@@ -452,7 +452,7 @@ let Y = (0, Chunk251625.oH)(function() {
         description: N.intl.format(N.t.KPA3m9, {
           igdbLink: Z
         }),
-        children: d.map(e => (0, r.jsx)(F, {
+        children: d.map(e => (0, r.jsx)(B, {
           rawGame: e,
           isOverride: c.has(e.exePath),
           subgames: e.id === g.eB ? f : true
@@ -462,7 +462,7 @@ let Y = (0, Chunk251625.oH)(function() {
     return i.useEffect(() => ((0, m.Ky)(), m.P7), []), (0, r.jsxs)(T.Z, {
       title: n ? N.intl.string(N.t.AVDyEj) : null,
       className: t,
-      children: [null != l ? (0, r.jsx)(F, {
+      children: [null != l ? (0, r.jsx)(B, {
         rawGame: l,
         isOverride: c.has(l.exePath),
         nowPlaying: true,
@@ -477,7 +477,7 @@ let Y = (0, Chunk251625.oH)(function() {
             let {
               closePopout: t
             } = e;
-            return (0, r.jsx)(B, {
+            return (0, r.jsx)(F, {
               onClose: t
             })
           },

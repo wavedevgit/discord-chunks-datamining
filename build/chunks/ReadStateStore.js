@@ -153,7 +153,7 @@ function eN(e) {
 }
 
 function eP(e, t) {
-  let n = F.Z.getChannel(e.channel_id);
+  let n = B.Z.getChannel(e.channel_id);
   return !(null == n || q.Z.isBlockedOrIgnoredForMessage(e)) && !!((0, T.ZP)({
     message: e,
     userId: t.id,
@@ -198,7 +198,7 @@ function eL(e, t) {
 
 function ej(e) {
   if (eL(e, "shouldAutomaticallyAck called"), e.type !== ei.W.CHANNEL) return eL(e, "not channel read state"), false;
-  let t = F.Z.getChannel(e.channelId),
+  let t = B.Z.getChannel(e.channelId),
     n = null != t && t.isForumPost();
   if (null != _.ZP.getConnectedActivityLocation() && _.ZP.getActivityPanelMode() === et.Ez.PANEL && _.ZP.getFocusedLayout() === et.MI.NO_CHAT) return eL(e, "In activity"), false;
   if (W.Z.isIdle()) return eL(e, "Is idle"), false;
@@ -570,7 +570,7 @@ class eM {
   }
   _shouldAck(e, t, n) {
     var r;
-    return !!e || !!n || !!t || !this.isManualAck && (this.type !== ei.W.CHANNEL || !!this.loadedMessages || !!(null == (r = F.Z.getChannel(this.channelId)) ? true : r.isForumLikeChannel()))
+    return !!e || !!n || !!t || !this.isManualAck && (this.type !== ei.W.CHANNEL || !!this.loadedMessages || !!(null == (r = B.Z.getChannel(this.channelId)) ? true : r.isForumLikeChannel()))
   }
   _ack(e, t) {
     let {
@@ -664,7 +664,7 @@ class eM {
   shouldDeleteReadState(e) {
     if (0 !== H.Z.totalUnavailableGuilds) returnfalse;
     if (null != this.type && this.type !== ei.W.CHANNEL) return !eQ(this);
-    let t = F.Z.getBasicChannel(this.channelId);
+    let t = B.Z.getBasicChannel(this.channelId);
     if (null == t)
       if (eq(this, e)) returntrue;
       else returnfalse;
@@ -729,14 +729,14 @@ function eU(e) {
 }
 
 function eG(e) {
-  eV(e), eH(e), eF(e), eY(e)
+  eV(e), eH(e), eB(e), eY(e)
 }
 
 function eZ(e) {
-  eB(e)
+  eF(e)
 }
 
-function eB(e) {
+function eF(e) {
   let t = J.default.getCurrentUser();
   if (null == t) returnfalse;
   let n = eM.get(t.id, ei.W.NOTIFICATION_CENTER);
@@ -747,7 +747,7 @@ function eB(e) {
   })
 }
 
-function eF(e) {
+function eB(e) {
   let t = 24;
   eM.get(e.id, ei.W.GUILD_HOME).lastMessageId = G.default.fromTimestamp(s()(Date.now()).subtract(t, "h").valueOf())
 }
@@ -785,7 +785,7 @@ function eY(e) {
 
 function eW(e, t) {
   var n, r, i;
-  let a = F.Z.getChannel(t),
+  let a = B.Z.getChannel(t),
     o = Y.Z.getGuild(null != e ? e : null == a ? true : a.guild_id),
     s = (null == a ? true : a.isForumPost()) ? 0 : eK(o),
     l = (null != (i = null == (n = R.Z.joinTimestamp(t)) ? true : n.getTime()) ? i : 0) - 5e3;
@@ -846,7 +846,7 @@ function eJ(e) {
   if (null == e) return;
   let t = eM.get(e);
   if (t.type !== ei.W.CHANNEL) return;
-  let n = F.Z.getChannel(t.channelId);
+  let n = B.Z.getChannel(t.channelId);
   if (null == n || !n.isForumPost() || null == n.parent_id) return;
   let r = n.parent_id,
     i = eM.get(r);
@@ -874,7 +874,7 @@ function e$(e) {
     r !== ei.W.CHANNEL && (e = eN(e));
     let i = eM.get(e.id, r);
     i._persisted = true, i._mentionCount = null != (n = e.mention_count) ? n : 0, i.flags = e.flags, i.lastViewed = e.last_viewed;
-    let a = F.Z.getBasicChannel(e.id);
+    let a = B.Z.getBasicChannel(e.id);
     null != a && (0, L.Q5)(a.type) && (null == e.last_message_id || 0 === e.last_message_id) ? i.ackMessageId = G.default.fromTimestamp(eW(a.guild_id, a.id)) : i.ackedWhileCached ? false === G.default.compare(i.ackMessageId, e.last_message_id) && (i.ackMessageId = e.last_message_id) : i.ackMessageId = e.last_message_id, i.ackedWhileCached = true, i.ackPinTimestamp = eA(e.last_pin_timestamp), eM._mentionChannels.delete(i.channelId), i._mentionCount > 0 && i.canHaveMentions() && eM._mentionChannels.add(i.channelId)
   }), eM.resetGuildSentinels();
   let o = null == (t = J.default.getCurrentUser()) ? true : t.id;
@@ -919,7 +919,7 @@ function e5(e) {
     readStates: t,
     selectedChannelId: n
   } = e;
-  eC(), e_ = null, ef = n, ep = B.ZP.getCurrentSidebarChannelId(ef), eM.clearAll(), t.forEach(e => {
+  eC(), e_ = null, ef = n, ep = F.ZP.getCurrentSidebarChannelId(ef), eM.clearAll(), t.forEach(e => {
     let t = eM.get(e.channelId);
     t.deserializeForOverlay(e), t.type === ei.W.CHANNEL && t.rebuildChannelState()
   })
@@ -963,7 +963,7 @@ function e9(e) {
     c = null != s.lastMessageId && s.lastMessageId >= a.id;
   s.lastMessageId = a.id;
   let u = J.default.getCurrentUser(),
-    d = F.Z.getBasicChannel(i);
+    d = B.Z.getBasicChannel(i);
   if (null != a.author && null != u && a.author.id === u.id && !ee.V$x.SELF_MENTIONABLE_SYSTEM.has(a.type)) return null != s.outgoingAck && s.clearOutgoingAck(), tx({
     channelId: i,
     messageId: a.id,
@@ -978,7 +978,7 @@ function e9(e) {
       var p;
       t = null == (p = e.params) ? true : p.channelId
     }
-  } else null == f && (t = Q.Z.getChannelId(), n = B.ZP.getCurrentSidebarChannelId(t));
+  } else null == f && (t = Q.Z.getChannelId(), n = F.ZP.getCurrentSidebarChannelId(t));
   let _ = t === i || n === i;
   if (_ && ej(s) && !o) return s.ack({
     messageId: a.id,
@@ -1017,7 +1017,7 @@ function te(e, t, n) {
     shouldMention: true,
     isMentionLowImportance: false
   };
-  let r = F.Z.getChannel(e.channel_id);
+  let r = B.Z.getChannel(e.channel_id);
   if (eR(r)) return {
     shouldMention: true,
     isMentionLowImportance: false
@@ -1246,7 +1246,7 @@ function tv(e) {
 function tS(e) {
   let {
     channelId: t
-  } = e, n = B.ZP.getCurrentSidebarChannelId(t), r = F.Z.getChannel(t);
+  } = e, n = F.ZP.getCurrentSidebarChannelId(t), r = B.Z.getChannel(t);
   if (null != r) {
     var i;
     let e = eM.get(r.id);
@@ -1438,7 +1438,7 @@ function tZ() {
   e_ = null
 }
 
-function tB(e) {
+function tF(e) {
   let {
     readStates: t
   } = e;
@@ -1451,7 +1451,7 @@ function tB(e) {
   })
 }
 
-function tF(e) {
+function tB(e) {
   let {
     channelId: t,
     chatOpen: n
@@ -1716,7 +1716,7 @@ let t0 = new t$(Chunk570140.Z, {
     CONNECTION_OPEN_SUPPLEMENTAL: e4,
     LOGOUT: e0,
     OVERLAY_INITIALIZE: e5,
-    CACHE_LOADED: tB,
+    CACHE_LOADED: tF,
     GUILD_CREATE: e8,
     LOAD_MESSAGES_SUCCESS: e6,
     MESSAGE_CREATE: e9,
@@ -1754,7 +1754,7 @@ let t0 = new t$(Chunk570140.Z, {
     GUILD_DELETE: ty,
     GUILD_UPDATE: tO,
     RESORT_THREADS: tu,
-    CHANNEL_RTC_UPDATE_CHAT_OPEN: tF,
+    CHANNEL_RTC_UPDATE_CHAT_OPEN: tB,
     DECAY_READ_STATES: eC,
     NOTIFICATION_CENTER_ITEM_CREATE: tE,
     RELATIONSHIP_ADD: th,

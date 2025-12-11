@@ -1,7 +1,7 @@
 /** Chunk was on 86872 **/
 /** chunk id: 472365, original params: e,l,n (module,exports,require) **/
 require.d(exports, {
-  default: () => z
+  default: () => y
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -86,7 +86,7 @@ function U(e) {
     className: r()(b.iconContainer, l),
     children: [(0, t.jsx)(S.Z, {
       className: b.iconSparklePlus
-    }), (0, t.jsx)(c.xPt, {
+    }), (0, t.jsx)(o.xPt, {
       size: "custom",
       color: "currentColor",
       className: b.iconLink,
@@ -98,7 +98,7 @@ function U(e) {
   })
 }
 
-function y(e) {
+function z(e) {
   let {
     transitionState: l
   } = e, n = (0, h.Dt)(), {
@@ -115,10 +115,10 @@ function y(e) {
         className: b.errorContent,
         children: [(0, t.jsx)(U, {
           className: b.errorImage
-        }), (0, t.jsx)(c.Heading, {
+        }), (0, t.jsx)(o.Heading, {
           id: n,
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: O.intl.string(O.t.u9zxnX)
         }), (0, t.jsx)("div", {
           className: b.errorBody,
@@ -134,8 +134,8 @@ function y(e) {
   })
 }
 
-function z(e) {
-  var l, n, a, r, v, E;
+function y(e) {
+  var l, n, a, r, v, p;
   let S, T, k, {
     transitionState: U
   } = e;
@@ -143,7 +143,7 @@ function z(e) {
     var e;
     return null == (e = f.default.getCurrentUser()) ? true : e.premiumType
   });
-  let z = (0, d.e7)([f.default], () => f.default.getCurrentUser()),
+  let y = (0, d.e7)([f.default], () => f.default.getCurrentUser()),
     {
       invite: V,
       error: w,
@@ -187,8 +187,8 @@ function z(e) {
           friend_count: Y
         })
       }
-    }, [J, Y, null == V ? true : V.code, null == V || null == (n = V.guild) ? true : n.id]), null == V || null == z) return null;
-  if (V.state === D.r2o.EXPIRED || V.state === D.r2o.BANNED || V.state === D.r2o.ERROR) return (0, t.jsx)(y, {
+    }, [J, Y, null == V ? true : V.code, null == V || null == (n = V.guild) ? true : n.id]), null == V || null == y) return null;
+  if (V.state === D.r2o.EXPIRED || V.state === D.r2o.BANNED || V.state === D.r2o.ERROR) return (0, t.jsx)(z, {
     transitionState: U
   });
   if (null == V.channel) return null;
@@ -216,7 +216,7 @@ function z(e) {
     splash: el.splash
   });
   else if ((null == (S = en.name) || "" === S) && null != et && (S = et.username), null == S) throw Error("no name for group DM invite");
-  let eu = (0, p.yU)();
+  let eu = (0, E.yU)();
   return k = ea ? O.intl.string(O.t["e/6Ogt"]) : O.intl.format(O.t["9sWQNT"], {
     usernameHook: () => (0, t.jsx)("span", {
       children: W
@@ -226,7 +226,7 @@ function z(e) {
     children: (0, t.jsx)(u.IX, {
       size: null != T ? "xl" : "sm",
       "aria-labelledby": B,
-      "aria-label": null != (E = null != (v = null == el ? true : el.name) ? v : null == en ? true : en.name) ? E : "",
+      "aria-label": null != (p = null != (v = null == el ? true : el.name) ? v : null == en ? true : en.name) ? p : "",
       transitionState: U,
       onClose: () => (ee(), Promise.resolve()),
       trackingProps: {
@@ -246,13 +246,13 @@ function z(e) {
             className: b.inviterContainer,
             children: [(0, t.jsx)(m.Z, {
               user: new I.Z(et),
-              size: c.EFr.SIZE_20
-            }), (0, t.jsx)(c.Text, {
+              size: o.EFr.SIZE_20
+            }), (0, t.jsx)(o.Text, {
               tag: "span",
               variant: "text-md/medium",
               color: "text-subtle",
               children: O.intl.format(O.t.ri1ubC, {
-                usernameHook: (e, l) => (0, t.jsx)(c.Text, {
+                usernameHook: (e, l) => (0, t.jsx)(o.Text, {
                   variant: "text-md/semibold",
                   color: "text-default",
                   tag: "span",
@@ -264,7 +264,7 @@ function z(e) {
             className: b.inviteContent,
             children: [(0, t.jsx)("div", {
               id: B,
-              children: (0, t.jsx)(o.Z, {
+              children: (0, t.jsx)(c.Z, {
                 invite: V,
                 disableUser: es,
                 error: w,
@@ -282,10 +282,10 @@ function z(e) {
                   variant: "primary",
                   fullWidth: true,
                   text: eu ? O.intl.string(O.t.ZNCziL) : k,
-                  icon: eu || null == z ? true : () => (0, t.jsx)(m.Z, {
+                  icon: eu || null == y ? true : () => (0, t.jsx)(m.Z, {
                     "aria-hidden": true,
-                    size: c.EFr.SIZE_16,
-                    user: z,
+                    size: o.EFr.SIZE_16,
+                    user: y,
                     className: b.acceptAsAvatar
                   })
                 }) : (0, t.jsxs)(u.hE2, {

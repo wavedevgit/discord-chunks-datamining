@@ -39,7 +39,7 @@ function u(e) {
     children: [(0, a.jsx)(r.Heading, {
       className: c.sectionHeader,
       variant: "text-md/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: s.intl.string(s.t.bNdK5x)
     }), (0, a.jsxs)("div", {
       className: f ? d.gameProfileMediaSmall : d.gameProfileMediaLarge,

@@ -126,12 +126,12 @@ function E(e, t, n) {
           e.stopPropagation(), e.preventDefault(), null == (i = n.current.parentElement) || i.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent))
         }
     }
-  }, B = e => {
+  }, F = e => {
     if (x.current = T.key, e.target !== n.current) {
       (0, p.E)() || t.selectionManager.setFocusedKey(T.key);
       return
     }
-  }, F = e => {
+  }, B = e => {
     if (e.currentTarget.contains(e.target) && n.current && document.activeElement && "Tab" === e.key && "tab" === R) {
       let t = (0, d.QL)(n.current, {
         tabbable: true
@@ -141,8 +141,8 @@ function E(e, t, n) {
   }, V = (0, l.fU)(T.props), H = G.hasAction ? V : {}, Y = (0, c.d)(U, H, {
     role: "row",
     onKeyDownCapture: Z,
-    onKeyDown: F,
-    onFocus: B,
+    onKeyDown: B,
+    onFocus: F,
     "aria-label": T.textValue || true,
     "aria-selected": t.selectionManager.canSelectItem(T.key) ? t.selectionManager.isSelected(T.key) : true,
     "aria-disabled": t.selectionManager.isDisabled(T.key) || true,

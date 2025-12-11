@@ -48,7 +48,7 @@ function l(e) {
         children: [null != u && (0, r.jsx)("div", {
           children: u
         }), (0, r.jsx)(a.X6q, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "heading-xl/semibold",
           children: c
         }), p && (0, r.jsx)(a.xvT, {

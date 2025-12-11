@@ -153,7 +153,7 @@ let C = e => {
       },
       Z = D ? y : b;
     t = D ? w === h.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : w === h.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
-    let B = () => (0, r.jsxs)("div", {
+    let F = () => (0, r.jsxs)("div", {
         className: o()(Z.textBox, Z["".concat(w)]),
         children: [(0, r.jsxs)("div", {
           children: [null != R && (0, r.jsx)("div", {
@@ -165,7 +165,7 @@ let C = e => {
             })
           }), (0, r.jsx)(d.Heading, {
             variant: t,
-            color: "header-primary",
+            color: "text-strong",
             className: o()(Z.header, !D && Z["".concat(w)]),
             children: a
           })]
@@ -181,7 +181,7 @@ let C = e => {
           enablePremiumBrandRefreshDesign: D
         })]
       }),
-      F = () => (0, r.jsx)("div", {
+      B = () => (0, r.jsx)("div", {
         className: o()(Z.boxArtContainer, Z["".concat(w)]),
         children: (0, r.jsx)(p.Z, {
           playsInline: true,
@@ -201,9 +201,9 @@ let C = e => {
       }),
       V = S % 2 != 0,
       H = () => V ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(B, {}), (0, r.jsx)(F, {})]
-      }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(F, {}), (0, r.jsx)(B, {})]
+      }) : (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(B, {}), (0, r.jsx)(F, {})]
       }),
       Y = {
         className: o()(D ? y.backgroundColor : M, Z.boxContainer, Z["".concat(w)], D && y.gradientBackground),

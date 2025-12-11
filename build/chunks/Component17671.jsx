@@ -36,7 +36,7 @@ function w(e) {
     transitionState: n,
     onClose: l,
     guildId: w
-  } = e, I = (0, d.Dt)(), S = (0, c.e7)([p.Z], () => p.Z.getGuild(w)), D = (0, b.Z)(null == S ? true : S.id), L = (0, x.ZP)(w), T = i.useRef(m.ZP.ackMessageId(w, P.W.GUILD_EVENT)), M = (0, C.Z)();
+  } = e, I = (0, d.Dt)(), S = (0, c.e7)([p.Z], () => p.Z.getGuild(w)), D = (0, x.Z)(null == S ? true : S.id), L = (0, b.ZP)(w), T = i.useRef(m.ZP.ackMessageId(w, P.W.GUILD_EVENT)), M = (0, C.Z)();
   return i.useEffect(() => {
     L.forEach(e => f.Z.getGuildEventUserCounts(w, e.id, [])), f.Z.getGuildEventsForCurrentUser(w)
   }, [L, w]), (0, u.ZP)(() => {

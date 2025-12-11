@@ -32,12 +32,12 @@ function d(e) {
       return (0, r.jsx)(s.AlX, {
         size: "xs",
         className: u.clipIcon,
-        color: s.TVs.colors.HEADER_PRIMARY.css
+        color: s.TVs.colors.TEXT_STRONG.css
       });
     case c.pC.LINK:
       return (0, r.jsx)(s.xPt, {
         className: u.icon,
-        color: s.TVs.colors.HEADER_PRIMARY.css
+        color: s.TVs.colors.TEXT_STRONG.css
       });
     case c.pC.FORWARD:
       return (0, r.jsx)(l.Z, {
@@ -52,17 +52,17 @@ function d(e) {
     case c.pC.BOOKMARK:
       return (0, r.jsx)(s.plf, {
         className: u.icon,
-        color: s.TVs.colors.HEADER_PRIMARY.css
+        color: s.TVs.colors.TEXT_STRONG.css
       });
     case c.pC.CLOCK:
       return (0, r.jsx)(s.T39, {
         className: u.icon,
-        color: s.TVs.colors.HEADER_PRIMARY.css
+        color: s.TVs.colors.TEXT_STRONG.css
       });
     case c.pC.AI:
       return (0, r.jsx)(s.$2U, {
         className: u.icon,
-        color: s.TVs.colors.HEADER_PRIMARY.css
+        color: s.TVs.colors.TEXT_STRONG.css
       });
     default:
       return null

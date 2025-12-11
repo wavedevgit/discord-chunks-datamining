@@ -179,8 +179,8 @@ function v(e, t, n, a) {
       wrapSection: U,
       getAnchorId: G,
       paddingTop: Z,
-      paddingBottom: B,
-      fade: F = false,
+      paddingBottom: F,
+      fade: B = false,
       customTheme: V = false,
       chunkSize: H,
       style: Y,
@@ -223,7 +223,7 @@ function v(e, t, n, a) {
       sidebarHeight: R,
       listHeaderHeight: w,
       paddingTop: Z,
-      paddingBottom: B,
+      paddingBottom: F,
       chunkSize: H,
       getScrollerState: eo,
       getAnchorId: G
@@ -283,7 +283,7 @@ function v(e, t, n, a) {
       onScroll: eO,
       className: o()(g, {
         [e]: true,
-        [t]: F,
+        [t]: B,
         [n]: V,
         [d.scrolling]: en
       }),

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   $0: () => G,
-  Lk: () => B,
-  Xg: () => F,
+  Lk: () => F,
+  Xg: () => B,
   ZP: () => j,
   c7: () => M,
   j3: () => V,
@@ -243,7 +243,7 @@ function G(e) {
         className: N.authorizedSuccessExternalCopy,
         children: [(0, r.jsx)(f.Heading, {
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: A.intl.format(A.t["1Q+p1k"], {
             appName: t.name
           })
@@ -270,13 +270,13 @@ function Z(e) {
   }))
 }
 
-function B(e) {
+function F(e) {
   return (0, r.jsx)(j, D(R({}, e), {
     headerClassName: N.headerFailure
   }))
 }
 
-function F() {
+function B() {
   var e, t;
   let n = (0, Chunk828700.TH)();
   return (0, Chunk54381.jsx)(Chunk787025.G, {
@@ -310,7 +310,7 @@ function V(e) {
     children: (0, r.jsx)(T.j, {
       transitionState: c.Dvm.ENTERED,
       hideHeader: true,
-      children: (0, r.jsx)(B, {
+      children: (0, r.jsx)(F, {
         message: l,
         showsCloseWindowText: true
       })

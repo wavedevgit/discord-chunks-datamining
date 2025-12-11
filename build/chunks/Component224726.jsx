@@ -35,13 +35,13 @@ let S = function() {
     fetchGuildProfile: S,
     fetchStatus: _
   } = (0, Chunk65361.u)(null == exports ? true : exports.id), T = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile(), []), P = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, exports)), w = Chunk473749.useCallback(e => {
-    null != n && (f.Z.updateGuild({
+    null != n && (m.Z.updateGuild({
       icon: e
-    }), f.Z.updateGuildProfile(n, {
+    }), m.Z.updateGuildProfile(n, {
       icon: e
     }))
   }, [require]), Z = Chunk473749.useCallback(e => {
-    null != n && f.Z.updateGuildProfile(n, {
+    null != n && m.Z.updateGuildProfile(n, {
       customBanner: e
     })
   }, [require]);
@@ -67,7 +67,7 @@ let S = function() {
         children: [(0, Chunk54381.jsxs)("div", {
           children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: Chunk388032.intl.string(Chunk388032.t.txdaxf)
           }), (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",

@@ -67,8 +67,8 @@ function G(e) {
   } = e, {
     application: G,
     purchaseState: Z,
-    paymentSources: B,
-    paymentSourceId: F,
+    paymentSources: F,
+    paymentSourceId: B,
     setHasAcceptedTerms: V,
     skusById: H,
     skuPricePreviewsById: Y,
@@ -96,25 +96,25 @@ function G(e) {
   let eo = H[W],
     es = null == eo ? true : eo.eligiblePaymentGateways,
     el = Y[W],
-    ec = null != F ? F : T.c,
+    ec = null != B ? B : T.c,
     eu = null != el ? el[ec] : null;
   o()(null != eo, "SKU must exist and be fetched."), o()(null != G, "Application must exist.");
   let ed = (0, c.e7)([h.Z, C.Z], () => C.Z.inTestModeForApplication(G.id) || h.Z.inDevModeForApplication(G.id), [G.id]),
     ef = (0, c.e7)([v.Z], () => v.Z.enabled),
     ep = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
     e_ = Z === w.A.PURCHASING || Z === w.A.COMPLETED,
-    em = (0, D.m)(B, F),
+    em = (0, D.m)(F, B),
     eh = null != em ? em.type : null;
   i.useEffect(() => {
-    ea && F === ei && ei !== T.c && null == eu && (0, d.x2)(eo.applicationId, eo.id, ei, {
+    ea && B === ei && ei !== T.c && null == eu && (0, d.x2)(eo.applicationId, eo.id, ei, {
       isGift: $
     }).then(() => {
       X(null)
     }).catch(e => {
       X(e)
     })
-  }, [ei, ea, F, eo.applicationId, eo.id, eu, X, $]);
-  let eg = null != es && es.length > 0 && (F === T.c || null === eh) && J ? y.w.SELECT_PAYMENT_METHOD : true,
+  }, [ei, ea, B, eo.applicationId, eo.id, eu, X, $]);
+  let eg = null != es && es.length > 0 && (B === T.c || null === eh) && J ? y.w.SELECT_PAYMENT_METHOD : true,
     eE = eo.productLine === j.POd.SOCIAL_LAYER_GAME_ITEM,
     eb = et && !eE;
   return (0, r.jsxs)("div", {
@@ -156,8 +156,8 @@ function G(e) {
       })
     }), (0, r.jsx)(_.ZP, {
       label: M.intl.string(M.t["mmDvV+"]),
-      paymentSources: Object.values(B),
-      selectedPaymentSourceId: F,
+      paymentSources: Object.values(F),
+      selectedPaymentSourceId: B,
       onChange: a,
       onPaymentSourceAdd: E,
       hidePersonalInformation: ef,

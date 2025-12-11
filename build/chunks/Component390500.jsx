@@ -28,7 +28,7 @@ let c = function(e) {
       className: o.statusTextContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: (null == n ? true : n.name) != null ? s.intl.formatToPlainString(s.t["0Qlu/6"], {
           guildName: n.name
         }) : s.intl.string(s.t["5iLvSx"])

@@ -20,7 +20,7 @@ function o(e) {
       gap: 16,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: s
       }), o]
     })

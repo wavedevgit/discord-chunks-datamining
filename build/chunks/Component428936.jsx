@@ -67,7 +67,7 @@ function h(e) {
           variant: "text-md/normal",
           color: "text-muted",
           children: m.intl.string(m.t.jNwLu2)
-        }), (0, r.jsx)(a.B6, {
+        }), (0, r.jsx)(o.B6, {
           "aria-label": H,
           className: b.pageSizeInput,
           options: y,
@@ -82,7 +82,7 @@ function h(e) {
           serialize: e => "".concat(e),
           popoutPosition: "top",
           popoutWidth: 72
-        }), (0, r.jsx)(o.u, {
+        }), (0, r.jsx)(a.u, {
           text: m.intl.string(m.t.ZTNur7),
           shouldShow: v,
           children: (0, r.jsx)(s.Text, {

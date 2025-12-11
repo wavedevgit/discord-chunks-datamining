@@ -47,7 +47,7 @@ let S = function(e) {
         children: [(0, r.jsx)(s.Heading, {
           className: g.bannerHeader,
           variant: "heading-md/extrabold",
-          color: "header-primary",
+          color: "text-strong",
           children: h.intl.string(h.t["+5UxML"])
         }), (0, r.jsx)(s.Text, {
           className: g.bannerText,
@@ -80,7 +80,7 @@ let S = function(e) {
           children: [(0, r.jsx)(s.Heading, {
             className: g.bannerHeader,
             variant: "heading-lg/extrabold",
-            color: "header-primary",
+            color: "text-strong",
             children: h.intl.string(h.t["+5UxML"])
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,
@@ -130,7 +130,7 @@ let S = function(e) {
           children: [(0, r.jsx)(s.Heading, {
             className: g.bannerHeader,
             variant: "heading-xxl/extrabold",
-            color: "header-primary",
+            color: "text-strong",
             children: h.intl.string(h.t["+5UxML"])
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,

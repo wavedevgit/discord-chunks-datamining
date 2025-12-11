@@ -51,8 +51,8 @@ let k = function(e) {
     U = (0, s.e7)([I.Z], () => I.Z.hasFetchedSubscriptions()),
     G = (0, s.e7)([S.Z], () => S.Z.hasFetchedPaymentSources),
     Z = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
-    B = null == Z ? true : Z.id,
-    F = (0, w.N)(),
+    F = null == Z ? true : Z.id,
+    B = (0, w.N)(),
     V = (0, R.N)(),
     H = (0, g.V)(L.nS),
     [Y, W] = i.useState(true),
@@ -75,14 +75,14 @@ let k = function(e) {
       load_duration_ms: K.current
     })
   }, [a, Y]), i.useEffect(() => {
-    n && (null != F || null != V) && (0, N.ab)(F, V)
-  }, [n, F, V]);
+    n && (null != B || null != V) && (0, N.ab)(B, V)
+  }, [n, B, V]);
   let X = (0, s.e7)([O.Z], () => O.Z.enabled),
     J = t === L.EZ.ApplicationStoreHome,
     $ = X ? (0, r.jsx)(f.Z, {}) : n ? (0, r.jsx)(E.c8, {}) : J && z ? (0, r.jsx)(m.Gt, {
       value: k,
       children: (0, r.jsx)(x.Z, {
-        userId: B
+        userId: F
       })
     }) : U && H && G ? null : (0, r.jsx)("div", {
       className: o()(M.container, M.loading),

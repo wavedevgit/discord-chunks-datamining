@@ -78,8 +78,8 @@ function E(e) {
         })
       }), (0, r.jsx)("div", {
         className: v.section,
-        children: (0, r.jsx)(f.Z, {})
-      }), (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(m.Z, {})
+      }), (0, r.jsx)(f.Z, {
         guildId: t.id
       }), (0, r.jsx)("div", {
         className: v.sectionSeparator
@@ -122,12 +122,12 @@ function E(e) {
         className: v.section,
         children: [(0, r.jsx)(h.Z, {
           guildId: t.id
-        }), (0, r.jsx)(b.Z, {
+        }), (0, r.jsx)(p.Z, {
           guildId: t.id
         })]
       }), (0, r.jsx)("div", {
         className: v.sectionSeparator
-      }), (0, r.jsx)(p.Z, {
+      }), (0, r.jsx)(b.Z, {
         guild: t
       })]
     }), (0, r.jsxs)("div", {

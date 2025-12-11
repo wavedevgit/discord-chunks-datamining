@@ -33,7 +33,7 @@ function m(e) {
     className: u.sectionContainer,
     children: [(0, a.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: d.intl.string(d.t.QzDgMq)
     }), (0, a.jsxs)("div", {
       className: u.contentContainer,

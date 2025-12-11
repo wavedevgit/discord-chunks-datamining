@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk954955 = require("./954955.js"),
-  a = require.n(Chunk954955),
+  o = require.n(Chunk954955),
   Chunk498607 = require("./498607.js"),
   s = require.n(Chunk498607),
   Chunk149765 = require("./149765.js"),
@@ -56,7 +56,7 @@ function y(e, t) {
 let O = Chunk473749.forwardRef(function(e, t) {
   let {
     guild: n
-  } = e, i = l.useRef(null), o = (0, d.e7)([b.Z], () => b.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), O = (0, d.e7)([C.Z], () => C.Z.can(c.$e(g.Pl.MANAGE_GUILD, g.Pl.KICK_MEMBERS), n)), H = l.useCallback(() => {
+  } = e, i = l.useRef(null), a = (0, d.e7)([b.Z], () => b.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), O = (0, d.e7)([C.Z], () => C.Z.can(c.$e(g.Pl.MANAGE_GUILD, g.Pl.KICK_MEMBERS), n)), H = l.useCallback(() => {
     null != n && O && (0, u.ZDy)(async () => e => (0, r.jsx)(p.Z, y(v({}, e), {
       guild: n
     })))
@@ -65,7 +65,7 @@ let O = Chunk473749.forwardRef(function(e, t) {
     t.length > 0 && S(), (0, f.Dr)(n.id, {
       query: t
     })
-  }, [n.id, S]), _ = l.useMemo(() => a()(N, 300), [N]), R = l.useCallback(e => {
+  }, [n.id, S]), _ = l.useMemo(() => o()(N, 300), [N]), R = l.useCallback(e => {
     D(e), _(e)
   }, [_]), L = l.useCallback(() => {
     D(""), N("")
@@ -78,7 +78,7 @@ let O = Chunk473749.forwardRef(function(e, t) {
     className: x.searchHeaderContainer,
     children: [(0, r.jsx)("div", {
       className: x.searchHeader,
-      children: o ? (0, r.jsx)(u.Heading, {
+      children: a ? (0, r.jsx)(u.Heading, {
         variant: "heading-md/medium",
         children: j.intl.string(j.t.y12ALM)
       }) : (0, r.jsx)(u.Heading, {

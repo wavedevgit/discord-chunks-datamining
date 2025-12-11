@@ -84,9 +84,9 @@ let U = {
     [Chunk612776._n.NINE]: "Cassette Icon"
   },
   Z = 429 / 462,
-  B = 200;
+  F = 200;
 
-function F(e) {
+function B(e) {
   var t;
   let {
     step: n,
@@ -97,10 +97,10 @@ function F(e) {
     cardId: _ = 0
   } = (0, c.e7)([v.Z], () => v.Z.getCheckpointData()), m = (0, c.e7)([E.default], () => E.default.getCurrentUser()), h = (0, i.useContext)(O.Q), g = (0, I.Z)((0, d.dQu)(h.primaryColor).hex()), b = (0, y.a7)(g), C = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), A = (0, i.useRef)(null), [N, R] = (0, i.useState)(true), M = (0, i.useMemo)(() => n <= w.ij.END_REWARD ? 1 : n === w.ij.END_CLAIM ? 2 : 3, [n]), k = (0, i.useMemo)(() => o().throttle(() => {
     null != A.current && R(A.current.clientWidth)
-  }, B), []), F = (0, i.useCallback)(() => n <= w.ij.END_REWARD ? "100%" : n === w.ij.END_CLAIM ? "50%" : "30%", [n]), V = (0, l.q_F)({
+  }, F), []), B = (0, i.useCallback)(() => n <= w.ij.END_REWARD ? "100%" : n === w.ij.END_CLAIM ? "50%" : "30%", [n]), V = (0, l.q_F)({
     onChange: k,
     to: {
-      width: F()
+      width: B()
     }
   }), H = (0, l.q_F)({
     to: {
@@ -433,7 +433,7 @@ function K(e) {
     noPadding: true,
     centered: false,
     className: j.container,
-    children: [(0, r.jsx)(F, {
+    children: [(0, r.jsx)(B, {
       step: t,
       onNext: n
     }), (0, r.jsx)(Y, {

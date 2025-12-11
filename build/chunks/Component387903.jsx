@@ -119,7 +119,7 @@ function J(e) {
   return (0, i.jsx)("img", {
     alt: "",
     src: (0, f.ap)(n) ? a.icon.lightSVG : a.icon.darkSVG,
-    className: F.platformIcon
+    className: B.platformIcon
   })
 }
 class $ extends(r = Chunk473749.PureComponent) {
@@ -134,7 +134,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     } : module
   }
   getTypeClass(e, t) {
-    return (0, w.l)(F, e, this.props.type, t)
+    return (0, w.l)(B, e, this.props.type, t)
   }
   isStreamerOnTypeActivityFeed() {
     return (0, Chunk420660.Z)(this.activity) && "ActivityFeed" === this.props.type
@@ -153,17 +153,17 @@ class $ extends(r = Chunk473749.PureComponent) {
     } = l;
     switch (l.type) {
       case Z.IIU.STREAMING:
-        t = B.intl.formatToPlainString(B.t.Dzgz4u, {
+        t = F.intl.formatToPlainString(F.t.Dzgz4u, {
           platform: [Z.ABu.TWITCH, Z.ABu.YOUTUBE].includes(c.toLowerCase()) ? c : h.Z.get(Z.ABu.TWITCH).name
         });
         break;
       case Z.IIU.LISTENING:
-        t = B.intl.formatToPlainString(B.t["5sYPnr"], {
+        t = F.intl.formatToPlainString(F.t["5sYPnr"], {
           name: c
         });
         break;
       case Z.IIU.WATCHING:
-        t = B.intl.formatToPlainString(B.t.Ge29Zy, {
+        t = F.intl.formatToPlainString(F.t.Ge29Zy, {
           name: c
         });
         break;
@@ -171,24 +171,24 @@ class $ extends(r = Chunk473749.PureComponent) {
         t = (0, D.Z)(l);
         break;
       case Z.IIU.COMPETING:
-        t = B.intl.formatToPlainString(B.t.SQCo6D, {
+        t = F.intl.formatToPlainString(F.t.SQCo6D, {
           name: c
         })
     }
     if (null != r) {
       var f;
-      t = (0, u.yE)(null != (f = null == l ? true : l.flags) ? f : 0, Z.xjy.EMBEDDED) ? l.type === Z.IIU.WATCHING ? B.intl.formatToPlainString(B.t["M/L8ot"], {
+      t = (0, u.yE)(null != (f = null == l ? true : l.flags) ? f : 0, Z.xjy.EMBEDDED) ? l.type === Z.IIU.WATCHING ? F.intl.formatToPlainString(F.t["M/L8ot"], {
         guildName: r.name
-      }) : B.intl.formatToPlainString(B.t["4chKQu"], {
+      }) : F.intl.formatToPlainString(F.t["4chKQu"], {
         guildName: r.name
-      }) : B.intl.formatToPlainString(B.t.sddlGK, {
+      }) : F.intl.formatToPlainString(F.t.sddlGK, {
         server: r.name
       })
     }
-    return (null == l ? true : l.type) === Z.IIU.HANG_STATUS && (t = B.intl.string(B.t["74vS/x"])), (0, i.jsxs)("div", {
-      className: F.headerContainer,
+    return (null == l ? true : l.type) === Z.IIU.HANG_STATUS && (t = F.intl.string(F.t["74vS/x"])), (0, i.jsxs)("div", {
+      className: B.headerContainer,
       children: [(0, i.jsx)(p.Heading, {
-        className: s()((0, w.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
+        className: s()((0, w.l)(B, "headerText", e ? "EmptyBody" : "Normal")),
         variant: a ? "text-xs/semibold" : "eyebrow",
         children: (0, i.jsx)(d.Z, {
           children: t
@@ -212,12 +212,12 @@ class $ extends(r = Chunk473749.PureComponent) {
       user: c
     } = this.props;
     if (e.type === Z.IIU.HANG_STATUS) return (0, i.jsx)("div", {
-      className: F.assets,
+      className: B.assets,
       children: (0, i.jsx)(I.Z, {
         userId: c.id,
         hangStatusActivity: e,
         size: K,
-        className: s()(F.assetsHangStatus, this.getTypeClass("assetsSmallImage", "WithoutLargeImage"))
+        className: s()(B.assetsHangStatus, this.getTypeClass("assetsSmallImage", "WithoutLargeImage"))
       })
     });
     let {
@@ -234,7 +234,7 @@ class $ extends(r = Chunk473749.PureComponent) {
         src: (0, P.xF)(f, d.large_image, null != o ? o : [G.Si.LARGE, G.Si.LARGE]),
         className: s()(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeActivityFeed() ? Z.ABu.TWITCH : ""), {
           [null != (n = this.getTypeClass("assetsLargeMask")) ? n : ""]: null != d.small_image,
-          [F.assetsLargeImageSpotify]: _
+          [B.assetsLargeImageSpotify]: _
         })
       }) : null;
     if (_) m = (0, i.jsx)(p.Anchor, {
@@ -254,26 +254,26 @@ class $ extends(r = Chunk473749.PureComponent) {
             icon: d.small_image,
             size: G.Si.SMALL
           })) ? r : true,
-          className: F.assetsLargeImageVoiceChannel,
+          className: B.assetsLargeImageVoiceChannel,
           alt: ""
         })
       })
     }
     return (this.isStreamerOnTypeActivityFeed() && null != e.url && "" !== e.url && (m = (0, i.jsxs)("div", {
-      className: F.twitchImageContainer,
+      className: B.twitchImageContainer,
       children: [(0, i.jsxs)("div", {
-        className: F.twitchImageOverlay,
+        className: B.twitchImageOverlay,
         children: [(0, i.jsx)(p.H, {
-          className: F.streamName,
+          className: B.streamName,
           children: e.name
         }), (0, i.jsx)("div", {
-          className: F.streamGame,
-          children: B.intl.format(B.t.gmCZRY, {
+          className: B.streamGame,
+          children: F.intl.format(F.t.gmCZRY, {
             game: e.details
           })
         })]
       }), (0, i.jsx)(p.Anchor, {
-        className: F.twitchBackgroundImage,
+        className: B.twitchBackgroundImage,
         href: e.url,
         children: m
       })]
@@ -289,10 +289,10 @@ class $ extends(r = Chunk473749.PureComponent) {
         }, e))
       }
     })), null == m) ? (0, i.jsx)("div", {
-      className: F.assets,
+      className: B.assets,
       children: l
     }) : (0, i.jsxs)("div", {
-      className: F.assets,
+      className: B.assets,
       children: [(0, i.jsx)(p.aML, {
         text: null != d.large_text ? d.large_text : null,
         position: "top",
@@ -317,9 +317,9 @@ class $ extends(r = Chunk473749.PureComponent) {
       activityGuild: a
     } = this.props;
     return null != e.assets || (0, x.Z)(e) || e.type !== Z.IIU.PLAYING || "ActivityFeed" === n || t.bot ? null : null == r && null != a ? (0, i.jsx)("div", {
-      className: s()(F.gameIcon, F.screenshareIcon)
+      className: s()(B.gameIcon, B.screenshareIcon)
     }) : (0, i.jsx)(b.Z, {
-      className: F.gameIcon,
+      className: B.gameIcon,
       game: r
     })
   }
@@ -339,16 +339,16 @@ class $ extends(r = Chunk473749.PureComponent) {
       c = e.name,
       u = c;
     return (o === Z.IIU.HANG_STATUS ? u = (0, S.O8)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
-      className: F.activityName,
+      className: B.activityName,
       children: u
     }) : !l && (c = a, u = a, (0, j.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(p.Anchor, {
-      className: F.bodyLink,
+      className: B.bodyLink,
       onClick: this.handleOpenSpotifyTrack,
       children: a
     }) : (0, N.dS)(e) && (u = e.name)), null == u) ? null : (0, i.jsx)(p.Text, {
       title: c,
       variant: "text-sm/semibold",
-      className: s()((0, w.l)(F, "name", t.bot ? "wrap" : "normal")),
+      className: s()((0, w.l)(B, "name", t.bot ? "wrap" : "normal")),
       children: u
     })
   }
@@ -363,7 +363,7 @@ class $ extends(r = Chunk473749.PureComponent) {
       o = n,
       s = n;
     if (e.type === Z.IIU.CUSTOM_STATUS) o = r;
-    else if (e.type === Z.IIU.HANG_STATUS && null != a) o = B.intl.formatToPlainString(B.t.IAZiW2, {
+    else if (e.type === Z.IIU.HANG_STATUS && null != a) o = F.intl.formatToPlainString(F.t.IAZiW2, {
       guildName: a.name
     }), t = () => {
       (0, C.X)(a.id)
@@ -372,11 +372,11 @@ class $ extends(r = Chunk473749.PureComponent) {
       if (o = r, s = r, (0, j.Z)(e) && null != r) {
         let t = (t, n) => (0, i.jsx)(A.Z, {
           artists: r,
-          linkClassName: F.bodyLink,
+          linkClassName: B.bodyLink,
           canOpen: null != e.sync_id,
           onOpenSpotifyArtist: this.handleOpenSpotifyArtist
         }, n);
-        o = B.intl.format(B.t.uU9le8, {
+        o = F.intl.format(F.t.uU9le8, {
           artists: s,
           artistsHook: t
         })
@@ -385,16 +385,16 @@ class $ extends(r = Chunk473749.PureComponent) {
         o = null == (l = e.assets) ? true : l.small_text
       }
     }
-    return null == o || "" === o ? null : ((0, k.Z)(e) && (o = B.intl.formatToPlainString(B.t.gmCZRY, {
+    return null == o || "" === o ? null : ((0, k.Z)(e) && (o = F.intl.formatToPlainString(F.t.gmCZRY, {
       game: o
     })), null != t) ? (0, i.jsx)(p.P3F, {
       onClick: t,
       title: null != s ? s : true,
-      className: F.clickableDetails,
+      className: B.clickableDetails,
       children: o
     }) : (0, i.jsx)("div", {
       title: null != s ? s : true,
-      className: (0, k.Z)(e) || (0, j.Z)(e) ? F.detailsWrap : F.details,
+      className: (0, k.Z)(e) || (0, j.Z)(e) ? B.detailsWrap : B.details,
       children: o
     })
   }
@@ -405,21 +405,21 @@ class $ extends(r = Chunk473749.PureComponent) {
       channel: r
     } = this.props;
     return n && null != t ? null == r ? (0, i.jsx)("div", {
-      className: (0, k.Z)(e) || (0, j.Z)(e) ? F.detailsWrap : F.details,
-      children: B.intl.format(B.t["hq/Qze"], {
+      className: (0, k.Z)(e) || (0, j.Z)(e) ? B.detailsWrap : B.details,
+      children: F.intl.format(F.t["hq/Qze"], {
         guildName: t.name
       })
     }) : (0, i.jsxs)("div", {
-      className: s()((0, k.Z)(e) || (0, j.Z)(e) ? F.detailsWrap : F.details, F.guildDetails),
+      className: s()((0, k.Z)(e) || (0, j.Z)(e) ? B.detailsWrap : B.details, B.guildDetails),
       children: [(0, i.jsx)(v.Z, {
         guild: t,
         size: v.Z.Sizes.SMOL,
-        className: F.guildIcon
+        className: B.guildIcon
       }), (0, i.jsx)(p.Fbu, {
         size: "xxs",
         color: "currentColor"
       }), (0, i.jsxs)("div", {
-        className: F.voiceChannelInfo,
+        className: B.voiceChannelInfo,
         children: [(0, i.jsx)(p.gj8, {
           size: "xxs",
           color: "currentColor"
@@ -443,7 +443,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     }) : (0, i.jsx)(T.ZP, {
       start: n.start,
       location: T.ZP.Locations.USER_ACTIVITY,
-      className: F.playTime,
+      className: B.playTime,
       isApplicationStreaming: null != t
     })
   }
@@ -475,28 +475,28 @@ class $ extends(r = Chunk473749.PureComponent) {
       u = o;
     if (!(0, L.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, j.Z)(e) && null != c)) {
       let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(p.Anchor, {
-        className: F.bodyLink,
+        className: B.bodyLink,
         onClick: this.handleOpenSpotifyAlbum,
         children: u
       }, n) : u;
-      c = B.intl.format(B.t.vOLBEy, {
+      c = F.intl.format(F.t.vOLBEy, {
         album: u,
         albumHook: t
       })
     }
-    return null != c && "" !== c && e.type !== Z.IIU.CUSTOM_STATUS || (0, N.dS)(e) ? ((null == s ? true : s.size) == null && [G.Zc].includes(null != (n = e.application_id) ? n : "") ? a = B.intl.formatToPlainString(B.t["u//9By"], {
+    return null != c && "" !== c && e.type !== Z.IIU.CUSTOM_STATUS || (0, N.dS)(e) ? ((null == s ? true : s.size) == null && [G.Zc].includes(null != (n = e.application_id) ? n : "") ? a = F.intl.formatToPlainString(F.t["u//9By"], {
       count: "0",
       max: null != (r = null == t ? true : t.getMaxParticipants()) ? r : 0
-    }) : (0, N.dS)(e) && (null == s ? true : s.size) != null ? a = B.intl.formatToPlainString(B.t["JC/3xw"], {
+    }) : (0, N.dS)(e) && (null == s ? true : s.size) != null ? a = F.intl.formatToPlainString(F.t["JC/3xw"], {
       numSpeakers: s.size[0],
       numListeners: s.size[1] - s.size[0]
-    }) : (null == s ? true : s.size) != null && s.size.length >= 2 && (a = 0 === s.size[1] ? B.intl.formatToPlainString(B.t.IM4J4e, {
+    }) : (null == s ? true : s.size) != null && s.size.length >= 2 && (a = 0 === s.size[1] ? F.intl.formatToPlainString(F.t.IM4J4e, {
       count: s.size[0]
-    }) : B.intl.formatToPlainString(B.t["u//9By"], {
+    }) : F.intl.formatToPlainString(F.t["u//9By"], {
       count: s.size[0],
       max: s.size[1]
     })), (0, i.jsxs)("div", {
-      className: F.state,
+      className: B.state,
       children: [(0, i.jsx)("span", {
         title: u,
         children: c

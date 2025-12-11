@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(m.GuildFeatures.BANNER), v = i.useCallback((e, i) => {
+  } = e, j = t.features.has(f.GuildFeatures.BANNER), v = i.useCallback((e, i) => {
     if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
@@ -59,26 +59,26 @@ let j = function(e) {
             homeHeader: n
           })
         },
-        uploadType: p.pC.HOME_HEADER
+        uploadType: b.pC.HOME_HEADER
       }, n))
     })
   }, [t.id]), O = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, a.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+    e.preventDefault(), e.stopPropagation(), (0, a.yw)(f.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: m.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: m.qAy.LEARN_MORE
+        section: f.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: f.qAy.LEARN_MORE
       },
       guild_id: null == t ? true : t.id,
       location_stack: []
     }), (0, o.Z)({
       analyticsLocations: [],
       analyticsSourceLocation: {
-        section: m.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: m.qAy.ONBOARDING_EDIT,
-        page: m.ZY5.GUILD_SETTINGS
+        section: f.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: f.qAy.ONBOARDING_EDIT,
+        page: f.ZY5.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, f.XO)()
+      perks: (0, m.XO)()
     })
   }, [t]), C = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
@@ -90,7 +90,7 @@ let j = function(e) {
     onChange: v,
     hint: h.intl.string(h.t.NyXznh),
     enabled: j,
-    maxFileSizeBytes: b.B
+    maxFileSizeBytes: p.B
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -102,7 +102,7 @@ let j = function(e) {
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
-        guildFeature: m.GuildFeatures.BANNER,
+        guildFeature: f.GuildFeatures.BANNER,
         onClick: O
       })]
     }), (0, r.jsxs)("div", {
@@ -117,7 +117,7 @@ let j = function(e) {
           className: x.uploadButton,
           children: (0, r.jsx)(d.Z, {
             onChange: v,
-            maxFileSizeBytes: b.B,
+            maxFileSizeBytes: p.B,
             text: h.intl.string(h.t.yG2pUi),
             size: "md",
             variant: "primary"
@@ -137,7 +137,7 @@ let j = function(e) {
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
-        guildFeature: m.GuildFeatures.BANNER,
+        guildFeature: f.GuildFeatures.BANNER,
         onClick: O
       })]
     }), (0, r.jsxs)("div", {

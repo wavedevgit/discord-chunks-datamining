@@ -26,7 +26,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -39,7 +39,7 @@ function b(e) {
   return e
 }
 
-function g(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,8 +52,8 @@ function g(e, t) {
   }), e
 }
 let x = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-  v = g(b({}, Chunk241209.Z.rules), {
-    heading: g(b({}, Chunk241209.Z.rules.heading), {
+  v = b(g({}, Chunk241209.Z.rules), {
+    heading: b(g({}, Chunk241209.Z.rules.heading), {
       react(e, t, n) {
         let r = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
         return (0, a.jsx)(d.Z, {

@@ -22,7 +22,7 @@ function f(e) {
     connection: f,
     guildId: g,
     location: j
-  } = e, v = (0, a.ZP)(), x = null != (n = null != f.provider_id ? null == (t = c.Z.get(f.provider_id)) ? true : t.name : null) ? n : h.intl.string(h.t.NzCoRx), {
+  } = e, x = (0, a.ZP)(), v = null != (n = null != f.provider_id ? null == (t = c.Z.get(f.provider_id)) ? true : t.name : null) ? n : h.intl.string(h.t.NzCoRx), {
     hasConnection: y,
     canConnect: b,
     startConnection: C,
@@ -63,10 +63,10 @@ function f(e) {
   }, [C, g, f.provider_id, j]), w = i.useMemo(() => {
     if (null != f.provider_id) {
       let e = c.Z.get(f.provider_id),
-        t = (null == e ? true : e.icon) != null ? (0, r.wj)(v) ? e.icon.darkPNG : e.icon.lightPNG : null;
+        t = (null == e ? true : e.icon) != null ? (0, r.wj)(x) ? e.icon.darkPNG : e.icon.lightPNG : null;
       if (null != t) return (0, l.jsx)("img", {
         src: t,
-        alt: x,
+        alt: v,
         width: 40,
         height: 40
       })
@@ -77,9 +77,9 @@ function f(e) {
       height: 40,
       color: "currentColor"
     })
-  }, [f.provider_id, v, x]);
+  }, [f.provider_id, x, v]);
   return (0, l.jsx)(m.Z, {
-    displayName: x,
+    displayName: v,
     description: f.description,
     icon: w,
     isLoading: O,

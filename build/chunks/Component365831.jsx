@@ -245,7 +245,7 @@ function C(e) {
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-sm/normal",
-            color: "header-primary",
+            color: "text-strong",
             className: y.tooltipHeader,
             children: H
           }), (0, r.jsx)(c.Text, {

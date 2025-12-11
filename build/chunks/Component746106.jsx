@@ -123,7 +123,7 @@ function w(e) {
     useReducedMotion: U,
     alwaysShowLinkDecorations: G,
     confettiMode: Z,
-    highContrastMode: B
+    highContrastMode: F
   } = (0, l.cj)([v.default, d.Z, S.Z, I.Z, y.Z, O.Z], () => {
     var e;
     return {
@@ -143,7 +143,7 @@ function w(e) {
       highContrastMode: d.Z.isHighContrastModeEnabled,
       confettiMode: O.Z.confettiMode
     }
-  }), F = f.U.useExperiment({
+  }), B = f.U.useExperiment({
     location: "RootThemeContextProvider"
   }, {
     autoTrackExposure: true
@@ -185,7 +185,7 @@ function w(e) {
         useReducedMotion: U,
         alwaysShowLinkDecorations: G,
         hardwareAccelerationEnabled: c,
-        highContrastMode: F && B,
+        highContrastMode: B && F,
         isPopoutWindow: o,
         rootClassName: s()(X, {
           "confetti-mode": Z,

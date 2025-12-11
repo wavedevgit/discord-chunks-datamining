@@ -117,7 +117,7 @@ function R(e) {
     getLocation: j
   } = P(t), {
     analyticsLocations: M
-  } = (0, f.ZP)(), k = (0, s.e7)([p.Z], () => p.Z.theme), [U, G] = i.useState(d), Z = j(a), [B, F] = (0, b.Ls)(t, {
+  } = (0, f.ZP)(), k = (0, s.e7)([p.Z], () => p.Z.theme), [U, G] = i.useState(d), Z = j(a), [F, B] = (0, b.Ls)(t, {
     location: Z
   }), {
     id: V
@@ -133,8 +133,8 @@ function R(e) {
       device_type: t,
       location: Z,
       location_stack: M,
-      shown_device_count: B.length,
-      hidden_device_count: F.length
+      shown_device_count: F.length,
+      hidden_device_count: B.length
     });
     else {
       var n;
@@ -143,7 +143,7 @@ function R(e) {
         analyticsLocations: M
       })
     }
-  }, [t, Z, B.length, F.length, M, O, w]);
+  }, [t, Z, F.length, B.length, M, O, w]);
 
   function q(e) {
     let t, i, {
@@ -207,9 +207,9 @@ function R(e) {
           label: n
         }
       },
-      t = B.map(e);
-    if (U || 0 === F.length) {
-      let n = F.map(e);
+      t = F.map(e);
+    if (U || 0 === B.length) {
+      let n = B.map(e);
       return t.concat(n)
     } {
       let e = {

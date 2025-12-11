@@ -63,7 +63,7 @@ function P(e) {
       className: N.headingCopy,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: d ? T.intl.string(T.t.XBboAK) : T.intl.formatToPlainString(T.t.EQa7os, {
           questName: n.config.messages.questName
         })

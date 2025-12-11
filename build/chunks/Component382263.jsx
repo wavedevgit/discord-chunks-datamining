@@ -82,7 +82,7 @@ function k(e) {
     giftRecipient: k
   } = (0, m.wD)(), {
     selectedSkuId: P
-  } = (0, b.JL)(), I = (0, l.e7)([d.default], () => d.default.getCurrentUser()), T = (0, l.e7)([f.Z], () => null != P ? f.Z.get(P) : null, [P]), E = (0, s.Z)({}), M = (0, l.e7)([p.Z], () => null != P ? p.Z.getForSKU(P) : null, [P]), Z = (null == M ? true : M.headerBackground) != null && (null == T ? true : T.applicationId) != null ? (0, g._W)(T.applicationId, M.headerBackground, 256) : true, S = async (e, n) => {};
+  } = (0, b.JL)(), I = (0, l.e7)([d.default], () => d.default.getCurrentUser()), T = (0, l.e7)([f.Z], () => null != P ? f.Z.get(P) : null, [P]), E = (0, s.Z)({}), M = (0, l.e7)([g.Z], () => null != P ? g.Z.getForSKU(P) : null, [P]), Z = (null == M ? true : M.headerBackground) != null && (null == T ? true : T.applicationId) != null ? (0, p._W)(T.applicationId, M.headerBackground, 256) : true, S = async (e, n) => {};
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(y.C3, {
       children: (0, i.jsxs)("div", {
@@ -91,7 +91,7 @@ function k(e) {
           className: x.bodyColumnLeft,
           children: [(null == T ? true : T.name) != null && (0, i.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: T.name
           }), null != Z && (0, i.jsx)("img", {
             src: Z,

@@ -42,7 +42,7 @@ function c(e) {
             type: a.$jN.Type.SPINNING_CIRCLE
           }), (0, r.jsx)(i.X6q, {
             variant: "heading-xl/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: t
           })]
         }), null != n && "" !== n && (0, r.jsx)(i.xvT, {

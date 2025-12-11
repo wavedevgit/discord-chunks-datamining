@@ -98,11 +98,11 @@ function O(e) {
     paymentAuthenticationState: R,
     selectedSkuId: w,
     isGift: k
-  }), G = (0, o.N)(h), Z = !k && null != G && null != w && m.nG[G.trial_id].skus.includes(w), B = () => {
+  }), G = (0, o.N)(h), Z = !k && null != G && null != w && m.nG[G.trial_id].skus.includes(w), F = () => {
     c(Object.values(I).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE
     })
-  }, F = null != E ? E : B;
+  }, B = null != E ? E : F;
   i()(S, "Step should be set here");
   let V = (0, a.Z)(() => Date.now(), [S]),
     H = (0, a.Z)(() => null != O && null == x.current ? j ? f.h8.PAYMENT_ELEMENT : O : j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE, [O, x.current, j]);
@@ -115,7 +115,7 @@ function O(e) {
     currentBreadcrumpStep: S,
     usePaymentModalStep: true,
     analyticsData: t,
-    onReturn: M ? true : F,
+    onReturn: M ? true : B,
     onComplete: e => {
       f.Nj.has(e) ? (L(p.A.COMPLETED), c(f.h8.CONFIRM, {
         trackedFromStep: e

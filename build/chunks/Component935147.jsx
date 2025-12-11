@@ -83,7 +83,7 @@ function Z(e) {
     user: M,
     isVisible: U,
     shouldShow: Z
-  } = e, B = S.ZP.isPremium(M), F = S.ZP.canUseAnimatedAvatar(M), {
+  } = e, F = S.ZP.isPremium(M), B = S.ZP.canUseAnimatedAvatar(M), {
     pendingAvatar: V,
     pendingThemeColors: H,
     tryItOutThemeColors: Y,
@@ -121,7 +121,7 @@ function Z(e) {
   let et = (null == (n = (0, d.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === D.Si.TIER_2,
     en = (0, u.N)(),
     er = (0, _.Wp)(en, D.Si.TIER_2),
-    ei = () => B ? L.intl.string(L.t.AfRWI8) : er ? L.intl.formatToPlainString(L.t.bkQ4bH, {
+    ei = () => F ? L.intl.string(L.t.AfRWI8) : er ? L.intl.formatToPlainString(L.t.bkQ4bH, {
       percent: null == en ? true : en.discount.amount
     }) : L.intl.string(L.t.pj0XBN);
   return Z ? (0, r.jsx)(c.Gt, {
@@ -177,7 +177,7 @@ function Z(e) {
             showRemoveBannerButton: null != K,
             onBannerChange: b.f4,
             showPremiumIcon: false
-          }), !F && (0, r.jsx)(T.Z, {
+          }), !B && (0, r.jsx)(T.Z, {
             className: j.customizationSection,
             isTryItOut: true,
             onAvatarChange: b.c_,

@@ -4,7 +4,7 @@ require.d(exports, {
   Df: () => d,
   S_: () => u,
   V5: () => o,
-  VX: () => l,
+  VX: () => a,
   ZP: () => f,
   ih: () => s,
   xc: () => c
@@ -14,21 +14,21 @@ let r = {
     timeToLiveMs: 5e3,
     reappearTimeMs: 1e4
   },
-  a = (0, Chunk972959.H)(() => r),
-  l = 1e4,
+  l = (0, Chunk972959.H)(() => r),
+  a = 1e4,
   o = 2e4,
   s = 500,
   c = 1e3;
 
 function u(e) {
-  a.setState({
+  l.setState({
     timeToLiveMs: e
   })
 }
 
 function d(e) {
-  a.setState({
+  l.setState({
     reappearTimeMs: e
   })
 }
-let f = a
+let f = l

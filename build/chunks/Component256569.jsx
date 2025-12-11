@@ -2,7 +2,7 @@
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./388685.js"), require("./358797.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk870472 = require("./870472.js"),
   Chunk420974 = require("./420974.js");
 
-function f(e) {
+function m(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -31,10 +31,10 @@ function f(e) {
   });
   return (0, r.jsx)("div", {
     onMouseDown: l,
-    className: m.resizeHandle
+    className: f.resizeHandle
   })
 }
-let p = Chunk473749.forwardRef(function(e, t) {
+let b = Chunk473749.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
@@ -42,7 +42,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
     onClick: o
   } = e, c = i.useRef(null), [d, g] = i.useState(u.tq);
   return (0, r.jsxs)(s.P3F, {
-    className: m.textArea,
+    className: f.textArea,
     onFocus: l,
     onBlur: a,
     onClick: o,
@@ -52,13 +52,13 @@ let p = Chunk473749.forwardRef(function(e, t) {
       minHeight: d
     },
     children: [(0, r.jsx)(s.Den, {
-      className: m.innerScroller,
+      className: f.innerScroller,
       style: {
         minHeight: d - 2
       },
       ref: t,
       children: n
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(m, {
       resizableNode: c,
       onResize: g,
       onResizeEnd: e => {
@@ -68,15 +68,15 @@ let p = Chunk473749.forwardRef(function(e, t) {
   })
 });
 
-function b(e) {
+function p(e) {
   var t;
   let {
     initialValue: n,
     onChangeTags: l,
     onChangeNewTagValue: c,
     tagErrors: u = {},
-    placeholder: f,
-    className: b,
+    placeholder: m,
+    className: p,
     maxTags: h
   } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), O = (0, g.V)(n), {
     handlePasteEvent: C,
@@ -129,11 +129,11 @@ function b(e) {
       } else T(e, true), G(true)
     }, [_, T, D, R]);
   return (0, r.jsxs)("div", {
-    className: a()(m.mainContainer, b),
+    className: a()(f.mainContainer, p),
     ref: j,
     tabIndex: 0,
     onKeyUp: E,
-    children: [(0, r.jsxs)(p, {
+    children: [(0, r.jsxs)(b, {
       ref: v,
       onClick: M,
       children: [R.map((e, t) => (0, r.jsx)(d.Z, {
@@ -147,21 +147,21 @@ function b(e) {
         error: u[e],
         forceShowErrorTooltip: !k && t === R.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: a()(m.mainTextInput, {
-          [m.isEditingOtherNodes]: k
+        className: a()(f.mainTextInput, {
+          [f.isEditingOtherNodes]: k
         }),
         ref: x,
         onChange: y,
         onKeyDownCapture: N,
         onPaste: C,
         onBlur: w,
-        placeholder: 0 === R.length ? f : true,
+        placeholder: 0 === R.length ? m : true,
         value: Z
       })]
     }), null != h && (0, r.jsxs)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: m.maxTags,
+      className: f.maxTags,
       children: [null != (t = null == R ? true : R.length) ? t : 0, "/", h]
     })]
   })

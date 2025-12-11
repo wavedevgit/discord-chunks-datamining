@@ -189,7 +189,7 @@ let j = e => {
     location: C.dr.QUESTS_CARD,
     questContent: o.j.QUESTS_EMBED,
     sourceQuestContent: O
-  }), Z = (0, s.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), B = () => {
+  }), Z = (0, s.e7)([h.Z], () => null != h.Z.questEnrollmentBlockedUntil, []), F = () => {
     (0, I.navigateToQuestHome)({
       fromContent: i,
       questId: n.id
@@ -200,7 +200,7 @@ let j = e => {
       questContentCTA: m.jZ.LEARN_MORE,
       sourceQuestContent: O
     })
-  }, F = (0, s.e7)([f.default], () => f.default.locale), V = p && !L;
+  }, B = (0, s.e7)([f.default], () => f.default.locale), V = p && !L;
   return (0, r.jsx)("div", {
     className: P.root,
     children: (0, r.jsxs)("div", {
@@ -250,7 +250,7 @@ let j = e => {
           color: "text-muted",
           children: D({
             quest: n,
-            locale: F,
+            locale: B,
             isQuestExpired: p,
             collectibleQuestRewardDescription: G,
             formattedCompletionDate: T
@@ -276,7 +276,7 @@ let j = e => {
         fullWidth: "lg" !== c,
         children: [(0, r.jsx)(w, {
           containerSize: c,
-          onClick: B,
+          onClick: F,
           text: N.intl.string(N.t.LLLLPD)
         }), !V && (0, r.jsx)(x, {
           quest: n,

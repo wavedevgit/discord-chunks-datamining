@@ -123,14 +123,14 @@ function Z(e) {
   I = new o.HF(t)
 }
 
-function B(e) {
+function F(e) {
   let {
     query: t
   } = e;
   (null == t ? true : t.payment_id) != null ? (C = true, T = t.payment_id) : (null == t ? true : t.payment_source_id) != null && (C = true, A = t.payment_source_id)
 }
 
-function F() {
+function B() {
   C = false, T = null
 }
 class V extends(r = Chunk442837.ZP.Store) {
@@ -207,6 +207,6 @@ let H = new V(Chunk570140.Z, {
   STRIPE_TOKEN_FAILURE: G,
   BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: N,
   LOGOUT: N,
-  BILLING_POPUP_BRIDGE_CALLBACK: B,
-  RESET_PAYMENT_ID: F
+  BILLING_POPUP_BRIDGE_CALLBACK: F,
+  RESET_PAYMENT_ID: B
 })

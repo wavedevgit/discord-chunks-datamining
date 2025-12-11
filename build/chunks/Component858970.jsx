@@ -69,17 +69,17 @@ function Z(e) {
   }, {
     icon: o.owK,
     description: g.intl.string(C ? g.t.QxrDY1 : g.t.W6fjkS)
-  }], R = (0, m.ZP)(n.id, _), L = d.ZP.getName(null == R ? true : R.guildId, Z, n), M = g.intl.formatToPlainString(g.t.KRe1Fk, {
-    name: L
+  }], L = (0, m.ZP)(n.id, _), R = d.ZP.getName(null == L ? true : L.guildId, Z, n), M = g.intl.formatToPlainString(g.t.KRe1Fk, {
+    name: R
   });
   return (0, l.jsx)(a.Gt, {
     value: S,
     children: (0, l.jsx)(u.Mt, {
       value: w,
       openedAt: A,
-      fetchStartedAt: null == R ? true : R.fetchStartedAt,
-      fetchEndedAt: null == R ? true : R.fetchEndedAt,
-      isLoaded: null == R ? true : R.isLoaded,
+      fetchStartedAt: null == L ? true : L.fetchStartedAt,
+      fetchEndedAt: null == L ? true : L.fetchEndedAt,
+      isLoaded: null == L ? true : L.isLoaded,
       children: (0, l.jsx)(o.Y0X, {
         "data-migration-pending": true,
         transitionState: T,
@@ -88,7 +88,7 @@ function Z(e) {
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, l.jsxs)(x.Z, {
           user: n,
-          displayProfile: R,
+          displayProfile: L,
           themeType: j.l.MODAL_V2,
           children: [(0, l.jsx)("div", {
             className: I.background
@@ -107,7 +107,7 @@ function Z(e) {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: g.intl.format(C ? g.t.T7QiLn : g.t.MnEowy, {
-                  username: L
+                  username: R
                 })
               })]
             }), (0, l.jsx)("div", {

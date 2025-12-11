@@ -274,12 +274,12 @@ function eZ(e, t, n, r, i) {
   })
 }
 
-function eB(e, t) {
+function eF(e, t) {
   let n = ed.Z.getMessage(e, t);
   return null != n && n.hasFlag(eI.iLy.CROSSPOSTED)
 }
 
-function eF(e, t) {
+function eB(e, t) {
   let n = ed.Z.getMessage(e, t);
   if (null == n || n.type !== eI.uaV.REPLY) return;
   let r = en.Z.getMessageByReference(n.messageReference);
@@ -341,7 +341,7 @@ let eV = {
       null != n && f.ZP.trackWithMetadata(eI.rMx.AUTOMATED_MESSAGE_RECEIVED, {
         message_author: "Clyde",
         message_name: n
-      }), eH.receiveMessage(e, (0, B.cs)({
+      }), eH.receiveMessage(e, (0, F.cs)({
         messageId: r,
         channelId: e,
         content: t,
@@ -349,7 +349,7 @@ let eV = {
       }))
     },
     sendNitroSystemMessage(e, t, n) {
-      let r = (0, B.ZP)({
+      let r = (0, F.ZP)({
         channelId: e,
         nonce: n,
         type: eI.uaV.NITRO_NOTIFICATION,
@@ -369,7 +369,7 @@ let eV = {
       }), true)
     },
     sendGiftingPromptSystemMessage(e, t) {
-      let n = (0, B.ZP)({
+      let n = (0, F.ZP)({
         channelId: e,
         type: eI.uaV.GIFTING_PROMPT,
         content: "",
@@ -423,7 +423,7 @@ let eV = {
       })).otherwise(() => ({
         message: eN.intl.string(eN.t.i4AbAS),
         messageName: "BOT_GUILD_EXPLICIT_CONTENT"
-      })), s = (0, F.r)();
+      })), s = (0, B.r)();
       eH.sendBotMessage(e, a, o, s), (0, T.aP)({
         action: T.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLYDE_MESSAGE_SENT,
         messageId: s,
@@ -724,7 +724,7 @@ let eV = {
       if (t.reaction) return Promise.resolve();
       let a = await (0, $.Z)(e);
       if (null != a) return eH.sendMessage(a, t, r, i);
-      let o = null != (n = i.nonce) ? n : (0, F.r)();
+      let o = null != (n = i.nonce) ? n : (0, B.r)();
       i = eD(eR({}, i), {
         nonce: o
       });
@@ -913,9 +913,9 @@ let eV = {
         if (null == ee || !(ee.length > 0)) return Promise.resolve();
         else ed = true;
       let ep = null != x ? eI.uaV.REPLY : eI.uaV.DEFAULT,
-        e_ = null != (o = n.nonce) ? o : (0, F.r)(),
+        e_ = null != (o = n.nonce) ? o : (0, B.r)(),
         eE = e_,
-        eb = (0, B.ZP)({
+        eb = (0, F.ZP)({
           channelId: e,
           content: E,
           tts: S,
@@ -1174,8 +1174,8 @@ let eV = {
         components: i
       } = n;
       await ea.Z.unarchiveThreadIfNecessary(e);
-      let a = eF(e, t),
-        o = eB(e, t),
+      let a = eB(e, t),
+        o = eF(e, t),
         c = {
           channelId: e,
           messageId: t,

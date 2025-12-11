@@ -25,19 +25,19 @@ function j(e) {
   let {
     guild: t
   } = e, n = i.useRef(null), j = (0, o.g1)(t.id, "GuildSettingsBoostPerks"), v = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites);
-  (0, u.Z)(n, b.KsC.BOOST_PERKS_VANITY_URL);
+  (0, u.Z)(n, p.KsC.BOOST_PERKS_VANITY_URL);
   let {
     vanityURLCode: O,
     vanityURLUses: C,
     originalVanityURLCode: y,
     errorDetails: N,
     fetched: E
-  } = (0, l.cj)([m.Z], () => ({
-    vanityURLCode: m.Z.vanityURLCode,
-    vanityURLUses: m.Z.vanityURLUses,
-    originalVanityURLCode: m.Z.originalVanityURLCode,
-    errorDetails: m.Z.errorDetails,
-    fetched: m.Z.fetchedVanityURL
+  } = (0, l.cj)([f.Z], () => ({
+    vanityURLCode: f.Z.vanityURLCode,
+    vanityURLUses: f.Z.vanityURLUses,
+    originalVanityURLCode: f.Z.originalVanityURLCode,
+    errorDetails: f.Z.errorDetails,
+    fetched: f.Z.fetchedVanityURL
   })), I = null == t ? true : t.id;
   return (i.useEffect(() => {
     null == I || E || (0, g.U5)(I)
@@ -45,9 +45,9 @@ function j(e) {
     ref: n,
     children: [(0, r.jsxs)(a.Heading, {
       variant: "heading-md/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: x.title,
-      children: [h.intl.string(h.t["5XZKy/"]), (0, r.jsx)(f.xl, {
+      children: [h.intl.string(h.t["5XZKy/"]), (0, r.jsx)(m.xl, {
         guild: t
       })]
     }), (0, r.jsx)(a.Text, {
@@ -55,11 +55,11 @@ function j(e) {
       color: "text-subtle",
       className: x.description,
       children: j ? h.intl.format(h.t["J/v84B"], {
-        helpCenterArticle: d.Z.getArticleURL(b.BhN.GUILD_VANITY_URL)
+        helpCenterArticle: d.Z.getArticleURL(p.BhN.GUILD_VANITY_URL)
       }) : h.intl.format(h.t.koklFG, {
-        helpCenterArticle: d.Z.getArticleURL(b.BhN.GUILD_VANITY_URL)
+        helpCenterArticle: d.Z.getArticleURL(p.BhN.GUILD_VANITY_URL)
       })
-    }), (0, r.jsx)(p.z, {
+    }), (0, r.jsx)(b.z, {
       guild: t,
       vanityURLCode: O,
       vanityURLUses: C,

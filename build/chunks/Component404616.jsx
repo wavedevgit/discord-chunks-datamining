@@ -134,14 +134,14 @@ let ei = 72,
       threadId: t,
       overrideMedia: i
     }), {
-      ref: y,
-      height: C
+      ref: C,
+      height: y
     } = (0, b.ZP)(), O = (0, X.xH)(e => e.setCardHeight, d.X);
     l.useEffect(() => {
-      null != C && O(t, C)
-    }, [C, O, t]), l.useEffect(() => {
-      null == a || a(y.current, t)
-    }, [y, a, t]);
+      null != y && O(t, y)
+    }, [y, O, t]), l.useEffect(() => {
+      null == a || a(C.current, t)
+    }, [C, a, t]);
     let P = l.useRef(null),
       {
         handleLeftClick: Z,
@@ -177,7 +177,7 @@ let ei = 72,
         handleBlur: R
       } = (0, q.Z)(M);
     return (0, s.jsxs)("div", {
-      ref: y,
+      ref: C,
       "data-item-id": t,
       onClick: Z,
       onContextMenu: w,
@@ -187,7 +187,7 @@ let ei = 72,
       children: [(0, s.jsx)(x.P3F, er({
         onClick: Z,
         focusProps: {
-          ringTarget: y
+          ringTarget: C
         },
         onContextMenu: w,
         "aria-label": es.intl.formatToPlainString(es.t.pgYN6c, {
@@ -248,7 +248,7 @@ function eu(e) {
         className: el.headerText,
         children: [(0, s.jsx)(x.Heading, {
           variant: "heading-lg/semibold",
-          color: c ? "header-primary" : "text-muted",
+          color: c ? "text-strong" : "text-muted",
           lineClamp: 2,
           className: el.postTitleText,
           children: (0, s.jsxs)("span", {
@@ -420,7 +420,7 @@ function eg(e) {
         width: n,
         height: n
       })
-    }), "number" == typeof a ? (0, s.jsx)(C.Z, {
+    }), "number" == typeof a ? (0, s.jsx)(y.Z, {
       value: a,
       digitWidth: 9,
       className: el.messageCountText
@@ -598,7 +598,7 @@ function ep(e) {
       className: el.bodyMedia,
       onClick: function(e) {
         e.stopPropagation(), r && (e.preventDefault(), e.nativeEvent.stopImmediatePropagation(), N.Z.showAgeVerificationGetStartedModal({
-          entryPoint: y.cU.FORUM_POST_MEDIA_PREVIEW
+          entryPoint: C.cU.FORUM_POST_MEDIA_PREVIEW
         }))
       },
       children: [(0, s.jsx)(ev, {

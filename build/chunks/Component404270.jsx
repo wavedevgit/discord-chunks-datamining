@@ -24,13 +24,13 @@ let x = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), O = null != (t = (0, a.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, m.Wz)(p.Si.GUILD), v.interval, v.intervalCount) : true)) ? t : p.GP[p.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), O = null != (t = (0, a.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, f.Wz)(b.Si.GUILD), v.interval, v.intervalCount) : true)) ? t : b.GP[b.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
     className: l()(h.wrapper, n),
     children: [(0, r.jsx)(s.Heading, {
       className: h.heading,
       variant: "heading-xl/semibold",
-      children: b.intl.string(b.t["3x1PFE"])
+      children: p.intl.string(p.t["3x1PFE"])
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: function(e) {
@@ -40,25 +40,25 @@ let x = e => {
           guildBoostingPlanId: i,
           interval: l,
           intervalCount: a
-        } = e, s = m.ZP.getDefaultPrice(i, m.ZP.isPremium(t)), o = m.ZP.getDefaultPrice(i, false), c = (0, f.og)((0, f.T4)(s.amount, s.currency), l, a), d = (0, f.og)((0, f.T4)(o.amount, o.currency), l, a);
-        return m.ZP.isPremium(t, p.PremiumTypes.TIER_2) ? b.intl.format(b.t.N3Icb2, {
+        } = e, s = f.ZP.getDefaultPrice(i, f.ZP.isPremium(t)), o = f.ZP.getDefaultPrice(i, false), c = (0, m.og)((0, m.T4)(s.amount, s.currency), l, a), d = (0, m.og)((0, m.T4)(o.amount, o.currency), l, a);
+        return f.ZP.isPremium(t, b.PremiumTypes.TIER_2) ? p.intl.format(p.t.N3Icb2, {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
             className: h.originalPrice,
             children: e
           }, t),
-          freeSubscriptionCount: p.cb,
-          discountPercent: (0, g.T3)(n, p.Rr / 100)
-        }) : m.ZP.isPremium(t, p.PremiumTypes.TIER_1) ? b.intl.format(b.t.nQLVBF, {
+          freeSubscriptionCount: b.cb,
+          discountPercent: (0, g.T3)(n, b.Rr / 100)
+        }) : f.ZP.isPremium(t, b.PremiumTypes.TIER_1) ? p.intl.format(p.t.nQLVBF, {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
             className: h.originalPrice,
             children: e
           }, t),
-          discountPercent: (0, g.T3)(n, p.Rr / 100)
-        }) : b.intl.format(b.t.Mmf63F, {
+          discountPercent: (0, g.T3)(n, b.Rr / 100)
+        }) : p.intl.format(p.t.Mmf63F, {
           price: c
         })
       }({

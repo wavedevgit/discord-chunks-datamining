@@ -48,8 +48,8 @@ let P = new Chunk710845.Z("AuthenticationStore"),
   U = null,
   G = null,
   Z = null,
-  B = Chunk981631.u34.NONE,
-  F = false,
+  F = Chunk981631.u34.NONE,
+  B = false,
   V = [],
   H = "",
   Y = false,
@@ -143,32 +143,32 @@ function es(e) {
   let {
     isPasswordAttempt: t
   } = e;
-  B = C.u34.LOGGING_IN, J = J || true === t
+  F = C.u34.LOGGING_IN, J = J || true === t
 }
 
 function el(e) {
   let {
     isMultiAccount: t
   } = e;
-  B = C.u34.NONE, H = "", Y = false, W = null, i = null, r = null, t || (e_(), eo(), et(false))
+  F = C.u34.NONE, H = "", Y = false, W = null, i = null, r = null, t || (e_(), eo(), et(false))
 }
 
 function ec() {
-  B = Chunk981631.u34.NONE
+  F = Chunk981631.u34.NONE
 }
 
 function eu(e) {
   let {
     token: t
   } = e;
-  B = C.u34.NONE, ei(t), er(), H = "", Y = false, W = null, i = null, e_(), X = false
+  F = C.u34.NONE, ei(t), er(), H = "", Y = false, W = null, i = null, e_(), X = false
 }
 
 function ed(e) {
   let {
     error: t
   } = e;
-  H = "", Y = false, W = null, i = null, e_(), B = null != (0, _.p)(t).date_of_birth ? C.u34.LOGIN_AGE_GATE : C.u34.NONE
+  H = "", Y = false, W = null, i = null, e_(), F = null != (0, _.p)(t).date_of_birth ? C.u34.LOGIN_AGE_GATE : C.u34.NONE
 }
 
 function ef() {
@@ -179,7 +179,7 @@ function ep(e) {
   let {
     error: t
   } = e;
-  H = "", Y = false, W = null, X = false, i = null, B = null != (0, _.F)(t).date_of_birth ? C.u34.LOGIN_AGE_GATE : C.u34.NONE
+  H = "", Y = false, W = null, X = false, i = null, F = null != (0, _.F)(t).date_of_birth ? C.u34.LOGIN_AGE_GATE : C.u34.NONE
 }
 
 function e_() {
@@ -205,27 +205,27 @@ function em(e) {
     totp: o,
     loginInstanceId: s
   } = e;
-  null != t && (H = t, Y = n, W = null != r ? r : null, z = a, K = o, i = s, e_()), B = C.u34.MFA_STEP
+  null != t && (H = t, Y = n, W = null != r ? r : null, z = a, K = o, i = s, e_()), F = C.u34.MFA_STEP
 }
 
 function eh() {
-  B = Chunk981631.u34.LOGGING_IN_MFA
+  F = Chunk981631.u34.LOGGING_IN_MFA
 }
 
 function eg(e) {
-  B = C.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
+  F = C.u34.ACCOUNT_SCHEDULED_FOR_DELETION, r = e.credentials
 }
 
 function eE(e) {
-  B = C.u34.ACCOUNT_DISABLED, r = e.credentials
+  F = C.u34.ACCOUNT_DISABLED, r = e.credentials
 }
 
 function eb(e) {
-  B = C.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
+  F = C.u34.PASSWORD_RECOVERY_PHONE_VERIFICATION, r = e.credentials
 }
 
 function ey(e) {
-  B = C.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
+  F = C.u34.PHONE_IP_AUTHORIZATION, r = e.credentials
 }
 
 function eO(e) {
@@ -285,7 +285,7 @@ function eC(e) {
   ee("handleConnectionClosed called with code ".concat(t, "."));
   let r = n(952265).hasModalOpen;
   if (4004 === t) {
-    if (F || r(A.$$) || r(A.dG)) return void eP();
+    if (B || r(A.$$) || r(A.dG)) return void eP();
     O.default.track(C.rMx.APP_USER_DEAUTHENTICATED, {
       user_id: u.K.get(D)
     }), eR(), setImmediate(() => (0, E.uL)(C.Z5c.DEFAULT_LOGGED_OUT))
@@ -308,7 +308,7 @@ function eN(e) {
 }
 
 function eP() {
-  F = true, eR(), Chunk570140.Z.wait(() => {
+  B = true, eR(), Chunk570140.Z.wait(() => {
     (0, Chunk703656.uL)(Chunk981631.Z5c.REGISTER)
   })
 }
@@ -320,15 +320,15 @@ function eR(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && er(), et()), l.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), T.Z.clearAll(), h.ZH(), S.Z.clearUser(), u.K.remove(D), x = null, L = null, B = (null == e ? true : e.isSwitchingAccount) ? C.u34.LOGGING_IN : C.u34.NONE, H = "", W = null, Y = false, X = false, J = false, e_()
+  }), T.Z.clearAll(), h.ZH(), S.Z.clearUser(), u.K.remove(D), x = null, L = null, F = (null == e ? true : e.isSwitchingAccount) ? C.u34.LOGGING_IN : C.u34.NONE, H = "", W = null, Y = false, X = false, J = false, e_()
 }
 
 function ew() {
-  B = Chunk981631.u34.FORGOT_PASSWORD
+  F = Chunk981631.u34.FORGOT_PASSWORD
 }
 
 function eD() {
-  B = Chunk981631.u34.NONE
+  F = Chunk981631.u34.NONE
 }
 
 function ex(e) {
@@ -346,14 +346,14 @@ function eL(e) {
 }
 
 function ej() {
-  Q = null, B = Chunk981631.u34.NONE, eR(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
+  Q = null, F = Chunk981631.u34.NONE, eR(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
 }
 class eM extends(a = Chunk442837.ZP.Store) {
   initialize() {
     x = Chunk433517.K.get(D), null == Chunk213919.getToken() && et(), this.addChangeListener(() => (0, Chunk670890.u)(x))
   }
   getLoginStatus() {
-    return B
+    return F
   }
   getId() {
     return x
@@ -399,7 +399,7 @@ class eM extends(a = Chunk442837.ZP.Store) {
     return r
   }
   allowLogoutRedirect() {
-    return !F
+    return !B
   }
   getSuspendedUserToken() {
     return Q

@@ -184,7 +184,7 @@ let v = Chunk473749.forwardRef(function(e, t) {
     }), P === y.Wq.PREVIEW && (0, r.jsxs)("div", {
       className: x.userCard,
       children: [(0, r.jsx)(u.Heading, {
-        color: "header-primary",
+        color: "text-strong",
         variant: "heading-xl/bold",
         children: E.ZP.getName(n)
       }), (0, r.jsx)(u.Heading, {

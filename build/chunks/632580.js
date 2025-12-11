@@ -84,18 +84,18 @@ async function y(e) {
     purchaseType: U,
     referralCode: G,
     loadId: Z,
-    giftInfoOptions: B,
-    invoicePreview: F,
+    giftInfoOptions: F,
+    invoicePreview: B,
     orderId: V
   } = e;
   t(p.A.PURCHASING), n(true), r(true), a.Z.wait(s.fw), h(null);
   try {
     let e, n, r, a;
     if (d.default.track(_.rMx.PAYMENT_FLOW_COMPLETED, b(g({}, v), {
-        subtotal: null == F ? true : F.subtotal,
-        tax: null == F ? true : F.tax,
-        expected_amount: null == F ? true : F.total,
-        expected_currency: null == F ? true : F.currency,
+        subtotal: null == B ? true : B.subtotal,
+        tax: null == B ? true : B.tax,
+        expected_amount: null == B ? true : B.total,
+        expected_currency: null == B ? true : B.currency,
         duration_ms: Date.now() - T
       })), E) return;
     if (U === _.GZQ.ONE_TIME) i()(null != M, "SKU must exist and be fetched."), i()(null != k, "SKUPricePreview must exist."), e = await (0, c.ZZ)(M.applicationId, M.id, {
@@ -104,14 +104,14 @@ async function y(e) {
       isGift: O,
       paymentSource: R,
       loadId: Z,
-      giftInfoOptions: B,
+      giftInfoOptions: F,
       orderId: V
     });
     else {
-      i()(null != C, "Missing subscriptionPlan"), i()(null != F, "Missing invoicePreview");
+      i()(null != C, "Missing subscriptionPlan"), i()(null != B, "Missing invoicePreview");
       let t = {
-          amount: F.total,
-          currency: F.currency
+          amount: B.total,
+          currency: B.currency
         },
         n = (0, f.BK)((0, f.aS)(C.id, false, false, P));
       if (null != x) {
@@ -119,8 +119,8 @@ async function y(e) {
         e = (0, f.gB)(e), n = (0, f.UX)(e, P.currency.toLowerCase(), P.paymentSourceId)
       }
       if (O) {
-        let t = F.total,
-          n = F.currency;
+        let t = B.total,
+          n = B.currency;
         e = await (0, c.ZZ)(m.CL, C.skuId, {
           expectedAmount: t,
           expectedCurrency: n,
@@ -128,7 +128,7 @@ async function y(e) {
           subscriptionPlanId: C.id,
           isGift: true,
           loadId: Z,
-          giftInfoOptions: B,
+          giftInfoOptions: F,
           orderId: V
         })
       } else if (w && null != D && null != R && null != x) e = _.Uk1.has(R.type) ? await (0, o.G)(x, D, R, P.currency) : await (0, o.Mg)(x, {

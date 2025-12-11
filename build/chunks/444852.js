@@ -2,7 +2,7 @@
 /** chunk id: 444852, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => F,
+  A: () => B,
   Z: () => V
 }), require("./388685.js"), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
@@ -78,8 +78,8 @@ function k(e, t) {
 let U = 10,
   G = 15e5,
   Z = 15e5,
-  B = 5 * Chunk70956.Z.Millis.SECOND;
-class F {
+  F = 5 * Chunk70956.Z.Millis.SECOND;
+class B {
   setActionContext(e) {
     this.actionContext = e
   }
@@ -282,7 +282,7 @@ class V extends Chunk861687.Z {
           let n = y.Z.getGoLiveSource();
           switch (this.soundshareStats.traceEvent(null == n || null == (t = n.desktopSource) ? true : t.soundshareSession, e), e.type) {
             case "soundshare_attach_requested":
-              this.errorTimer.start(B, () => {
+              this.errorTimer.start(F, () => {
                 l.Z.dispatch({
                   type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
                   errorMessage: "Sound Hook Failed"

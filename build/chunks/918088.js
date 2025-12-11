@@ -184,8 +184,8 @@ function w(e, t) {
     isExpired: U,
     isInteractive: G,
     reactions: Z,
-    selectedAnswerIds: B,
-    submitting: F,
+    selectedAnswerIds: F,
+    submitting: B,
     tapShouldOpenVotersModal: V,
     showResults: H
   } = T, Y = (0, E.cZ)(Z), W = I.intl.formatToPlainString(I.t.XRkuof, {
@@ -200,7 +200,7 @@ function w(e, t) {
       l = C(Z, o),
       c = null != (n = null == l || null == (t = l.count_details) ? true : t.vote) ? n : 0,
       u = 0 === Y ? 0 : c / Y,
-      d = B.has(o),
+      d = F.has(o),
       f = c >= K && 0 !== c,
       p = M && null != (a = null == l ? true : l.me_vote) && a,
       m = A({
@@ -225,7 +225,7 @@ function w(e, t) {
       isVictor: U && f,
       didSelfVote: p,
       style: m,
-      shouldAnimateTransition: F && !_,
+      shouldAnimateTransition: B && !_,
       votesPercentage: Math.round(100 * u),
       votes: (0, r.EQ)(S).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(c.toLocaleString(), ")")).otherwise(() => I.intl.formatToPlainString(I.t.XRkuof, {
         count: c

@@ -25,9 +25,9 @@ function p(t) {
     onClose: e,
     channelId: p,
     warningId: h,
-    senderId: y,
-    description: T,
-    safetyTipRows: f,
+    senderId: T,
+    description: f,
+    safetyTipRows: y,
     actionRows: m,
     learnMore: j
   } = t, N = (0, o.e7)([b.ZP], () => b.ZP.getChannelSafetyWarning(p, h));
@@ -35,12 +35,12 @@ function p(t) {
     (0, g.MC)(_.rMx.SAFETY_WARNING_MODAL_VIEWED, {
       channelId: p,
       warningId: h,
-      senderId: y,
+      senderId: T,
       warningType: null == N ? true : N.type
-    }), l.Z.increment({
+    }), r.Z.increment({
       name: i.V.SAFETY_WARNING_MODAL_VIEW
     })
-  }, [p, h, y, N]), (0, a.jsx)(c.ExpressiveModal, {
+  }, [p, h, T, N]), (0, a.jsx)(c.ExpressiveModal, {
     onClose: e,
     transitionState: n,
     graphic: {
@@ -49,18 +49,18 @@ function p(t) {
     },
     gradientColor: "blue",
     title: v.intl.string(v.t.lyt43P),
-    subtitle: T,
+    subtitle: f,
     actions: [],
-    children: (0, a.jsxs)(r.Kqy, {
+    children: (0, a.jsxs)(l.Kqy, {
       gap: 24,
-      children: [(0, a.jsxs)(r.Kqy, {
+      children: [(0, a.jsxs)(l.Kqy, {
         gap: 8,
         children: [(0, a.jsx)(d.z, {
-          children: f
+          children: y
         }), null != j ? j : null]
-      }), (0, a.jsxs)(r.Kqy, {
+      }), (0, a.jsxs)(l.Kqy, {
         gap: 4,
-        children: [(0, a.jsx)(r.Text, {
+        children: [(0, a.jsx)(l.Text, {
           variant: "eyebrow",
           color: "text-default",
           children: v.intl.string(v.t.K5FKtc)
@@ -70,7 +70,7 @@ function p(t) {
       }), (0, a.jsx)(x.Z, {
         channelId: p,
         warningId: h,
-        senderId: y,
+        senderId: T,
         safetyWarning: N
       })]
     })

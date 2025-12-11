@@ -246,17 +246,17 @@ function G(e) {
 }
 
 function Z(e) {
-  return [B(e), F]
+  return [F(e), B]
 }
 
-function B(e) {
+function F(e) {
   return (t, n) => {
     let r = d.ZP.getScoreWithoutLoadingLatest(e, t);
     return d.ZP.getScoreWithoutLoadingLatest(e, n) - r
   }
 }
 
-function F(e, t) {
+function B(e, t) {
   return (0, f.un)(e.displayName, t.displayName)
 }
 

@@ -222,7 +222,7 @@ function Z(e) {
   P(t)
 }
 
-function B(e) {
+function F(e) {
   let {
     user: t
   } = e;
@@ -232,7 +232,7 @@ function B(e) {
   }, true)
 }
 
-function F(e) {
+function B(e) {
   let {
     messages: t
   } = e;
@@ -720,7 +720,7 @@ class eM extends Chunk750041.Z {
     super({
       CONNECTION_OPEN: L,
       CONNECTION_OPEN_SUPPLEMENTAL: j,
-      UPDATE_CLIENT_PREMIUM_TYPE: B,
+      UPDATE_CLIENT_PREMIUM_TYPE: F,
       OVERLAY_INITIALIZE: k,
       CACHE_LOADED: e => this.handleLoadCache(e),
       USER_UPDATE: U,
@@ -729,9 +729,9 @@ class eM extends Chunk750041.Z {
       PRESENCE_UPDATES: en,
       SEARCH_MESSAGES_SUCCESS: Y,
       MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Y,
-      LOAD_MESSAGES_SUCCESS: F,
-      LOAD_MESSAGES_AROUND_SUCCESS: F,
-      LOAD_RECENT_MENTIONS_SUCCESS: F,
+      LOAD_MESSAGES_SUCCESS: B,
+      LOAD_MESSAGES_AROUND_SUCCESS: B,
+      LOAD_RECENT_MENTIONS_SUCCESS: B,
       LOAD_PINNED_MESSAGES_SUCCESS: V,
       THREAD_LIST_SYNC: H,
       MESSAGE_CREATE: J,

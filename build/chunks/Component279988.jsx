@@ -2,7 +2,7 @@
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,15 +15,15 @@ var Chunk120356 = require("./120356.js"),
   Chunk137158 = require("./137158.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk938645 = require("./938645.js");
-let m = function(e) {
+let f = function(e) {
   let {
     channelId: t,
     formField: n,
     index: i,
-    isDragEnabled: m,
-    isDropHovered: f,
-    onDrop: p,
-    onEdit: b,
+    isDragEnabled: f,
+    isDropHovered: m,
+    onDrop: b,
+    onEdit: p,
     onRemove: h,
     canRemove: x,
     title: j,
@@ -33,10 +33,10 @@ let m = function(e) {
   return (0, r.jsxs)(d.Z, {
     field: n,
     index: i,
-    isDragEnabled: m,
-    isDropHovered: f,
-    onDrop: p,
-    onEdit: b,
+    isDragEnabled: f,
+    isDropHovered: m,
+    onDrop: b,
+    onEdit: p,
     onRemove: h,
     title: j,
     canRemove: x,
@@ -47,7 +47,7 @@ let m = function(e) {
       channelId: t
     }), 0 !== N && (0, r.jsxs)(s.P3F, {
       className: l()(g.fieldFooterContainer, g.clickable),
-      onClick: b,
+      onClick: p,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: g.clickable,

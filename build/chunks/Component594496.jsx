@@ -48,8 +48,8 @@ function M(e) {
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), G = (0, d.m)(x.PremiumTypes.TIER_2), {
     pendingAvatar: Z,
-    pendingNickname: B,
-    pendingBanner: F,
+    pendingNickname: F,
+    pendingBanner: B,
     pendingBio: V,
     pendingPronouns: H,
     pendingThemeColors: Y,
@@ -87,7 +87,7 @@ function M(e) {
     }).enabled,
     ee = C.ZP.canUsePremiumProfileCustomization(U),
     et = (0, f.gd)(Z, null == X ? true : X.avatar),
-    en = (0, f.f$)(F, null == J ? true : J.banner),
+    en = (0, f.f$)(B, null == J ? true : J.banner),
     er = (0, R.p)(Y, null == J ? true : J.themeColors),
     ei = null != (t = null == J ? true : J.bio) ? t : "",
     ea = null != (n = null == J ? true : J.pronouns) ? n : "",
@@ -102,7 +102,7 @@ function M(e) {
     children: [(0, r.jsx)(w.Z, {
       errors: null != (i = null == W ? true : W.nick) ? i : null == Q ? true : Q.nick,
       username: A.ZP.getName(U),
-      pendingNick: B,
+      pendingNick: F,
       currentNick: null == X ? true : X.nick,
       user: U,
       guild: q

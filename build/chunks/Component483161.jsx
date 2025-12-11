@@ -53,7 +53,7 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
         }), (0, Chunk54381.jsxs)("div", {
           className: Chunk897192.textContainer,
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/medium",
             lineClamp: 1,
             children: null != (t = exports.globalName) ? module : exports.username

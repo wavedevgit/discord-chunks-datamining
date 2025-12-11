@@ -39,7 +39,7 @@ let T = e => {
     } = e, a = n < l, s = (0, v.ig)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Heading, {
-        color: "header-primary",
+        color: "text-strong",
         variant: "heading-md/semibold",
         children: t
       }), !a && (0, r.jsx)(c.Text, {
@@ -66,7 +66,7 @@ let T = e => {
       location: i
     } = (0, u.O)(), {
       canCreateExpressions: l
-    } = (0, p.XJ)(t);
+    } = (0, b.XJ)(t);
     return (0, r.jsx)(c.Button, {
       variant: "primary",
       size: "sm",
@@ -168,7 +168,7 @@ let T = e => {
           {
             canCreateExpressions: L,
             canManageGuildExpression: k
-          } = (0, p.Gw)(t),
+          } = (0, b.Gw)(t),
           G = y[T - 1],
           M = null != G ? (0, v.A3)(G.tier) : 0,
           U = (0, v.A3)(O.tier, t),
@@ -190,7 +190,7 @@ let T = e => {
           et = () => {
             var e, n;
             let r;
-            return e = Math.max(1, E.oCV[O.tier] - j), n = O.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.AnalyticsObjectTypes.TIER_1 : n === E.Eu4.TIER_2 ? r = E.AnalyticsObjectTypes.TIER_2 : n === E.Eu4.TIER_3 && (r = E.AnalyticsObjectTypes.TIER_3), (0, f.Z)({
+            return e = Math.max(1, E.oCV[O.tier] - j), n = O.tier, r = null, void(n === E.Eu4.TIER_1 ? r = E.AnalyticsObjectTypes.TIER_1 : n === E.Eu4.TIER_2 ? r = E.AnalyticsObjectTypes.TIER_2 : n === E.Eu4.TIER_3 && (r = E.AnalyticsObjectTypes.TIER_3), (0, m.Z)({
               analyticsLocations: u,
               analyticsLocation: {
                 page: E.ZY5.GUILD_SETTINGS,
@@ -205,11 +205,11 @@ let T = e => {
           en = false;
         $ && (D ? (et = () => {
           let e = I.Cp[O.tier];
-          null != e && (0, b.H6)(t.id, e)
+          null != e && (0, p.H6)(t.id, e)
         }, ee = S.intl.string(S.t.g7lkrU), t.premiumTier + 1 !== O.tier && (en = true, l = S.intl.string(S.t.mTMkY2))) : (en = true, l = S.intl.string(S.t.hwPEJR)));
         let er = z === T + 1 && z > Z,
           ei = V || er || T > Z;
-        return er ? g = (0, r.jsx)(m.Z, {
+        return er ? g = (0, r.jsx)(f.Z, {
           guild: t,
           size: o.zx.Sizes.SMALL,
           color: o.zx.Colors.GREEN,

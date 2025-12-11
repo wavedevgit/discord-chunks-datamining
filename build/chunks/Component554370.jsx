@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
@@ -107,9 +107,9 @@ let $ = Chunk473749.memo(function(e) {
       keybind: t,
       onClick: n,
       locked: r
-    } = e, a = (0, w.T_)(h.Z.OVERLAY);
+    } = e, l = (0, w.T_)(h.Z.OVERLAY);
     return (0, i.jsx)(c.P3F, {
-      className: l()(Q.overlayBackground, {
+      className: a()(Q.overlayBackground, {
         [Q.overlayActive]: !r,
         [Q.overlayLocked]: r
       }),
@@ -124,7 +124,7 @@ let $ = Chunk473749.memo(function(e) {
       onContextMenu: q,
       children: r ? null : (0, i.jsxs)(D.Z, {
         className: Q.topRightContainer,
-        children: [a ? (0, i.jsx)(P.Z, {
+        children: [l ? (0, i.jsx)(P.Z, {
           onClick: () => (0, U.N)(h.Z.OVERLAY, Y.IlC.OVERLAY),
           IconComponent: c.U65
         }) : null, (0, i.jsx)(P.Z, {
@@ -171,7 +171,7 @@ function ei() {
 function er(e) {
   let {
     isEmbeddedActivity: t
-  } = e, n = (0, F.Z)(), a = (0, o.e7)([M.Z], () => M.Z.getTargetPID()), {
+  } = e, n = (0, F.Z)(), l = (0, o.e7)([M.Z], () => M.Z.getTargetPID()), {
     locked: u,
     focused: m,
     incompatibleApp: j,
@@ -181,13 +181,13 @@ function er(e) {
     let e = I.Z.windowSize((0, Z.ZY)(n)),
       t = S.ZP.getOverlayKeybind();
     return {
-      locked: z.Z.isInputLocked(a),
-      focused: M.Z.isFocused(a),
+      locked: z.Z.isInputLocked(l),
+      focused: M.Z.isFocused(l),
       incompatibleApp: x.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, _.BB)(t.shortcut, true) : "???"
     }
-  }, [n, a]), {
+  }, [n, l]), {
     analyticsLocations: D
   } = (0, p.ZP)(h.Z.OVERLAY);
   (0, f.ZP)(() => {
@@ -218,9 +218,9 @@ function er(e) {
       n = y.Z.getChannel(t),
       i = null != n ? O.Z.getGuild(n.guild_id) : null,
       r = null != b.Z.getCurrentUserActiveStream(),
-      a = null != t,
-      l = (0, g.Z)(v.Z) && !r && null != e,
-      o = a && null != i && null != t,
+      l = null != t,
+      a = (0, g.Z)(v.Z) && !r && null != e,
+      o = l && null != i && null != t,
       s = M.Z.getTargetPID();
     if (R.default.hasChangedRenderMode(s)) return;
     let c = L.Z.isNotificationDisabled(H.n0.WelcomeNudge),
@@ -229,12 +229,12 @@ function er(e) {
       h = [];
     !c && (h.push({
       type: H.nc.WELCOME
-    }), !u && (l && o ? h.push({
+    }), !u && (a && o ? h.push({
       type: H.nc.GO_LIVE_VOICE,
       game: e,
       voiceChannelId: t,
       voiceGuild: i
-    }) : l && h.push({
+    }) : a && h.push({
       type: H.nc.GO_LIVE_NON_VOICE,
       game: e
     })), f || h.push({
@@ -262,7 +262,7 @@ function er(e) {
         keybind: P,
         onClick: et
       }), (0, i.jsx)(k.Z, {
-        className: l()({
+        className: a()({
           [Q.layoutLocked]: u,
           [Q.layoutUnlocked]: !u
         })

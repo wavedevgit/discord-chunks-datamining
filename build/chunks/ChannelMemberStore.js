@@ -264,7 +264,7 @@ function Z() {
   U.reset()
 }
 
-function B(e) {
+function F(e) {
   let {
     guild: t
   } = e;
@@ -273,7 +273,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     guild: t
   } = e;
@@ -334,8 +334,8 @@ let Q = new q(Chunk570140.Z, {
   CONNECTION_OPEN: Z,
   OVERLAY_INITIALIZE: Z,
   GUILD_MEMBER_LIST_UPDATE: G,
-  GUILD_UPDATE: B,
-  GUILD_DELETE: F,
+  GUILD_UPDATE: F,
+  GUILD_DELETE: B,
   GUILD_ROLE_UPDATE: V,
   GUILD_MEMBER_UPDATE: H,
   CHANNEL_UPDATES: z

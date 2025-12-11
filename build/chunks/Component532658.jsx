@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => $,
-  e5: () => B,
+  e5: () => F,
   px: () => Z
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -90,10 +90,10 @@ function Z(e) {
   }
 }
 
-function B(e) {
+function F(e) {
   return c.ny6[e].size
 }
-let F = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(e => {
+let B = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(e => {
     let {
       default: t
     } = e;
@@ -202,7 +202,7 @@ let q = Chunk473749.memo(function(e) {
           [j.right]: d
         }),
         children: [d && (0, r.jsx)(c.Fmz, {
-          importData: F,
+          importData: B,
           shouldAnimate: !y,
           className: j.animation
         }), (0, r.jsx)("div", {
@@ -214,7 +214,7 @@ let q = Chunk473749.memo(function(e) {
             })
           })
         }), !d && (0, r.jsx)(c.Fmz, {
-          importData: F,
+          importData: B,
           shouldAnimate: !y,
           className: j.animation
         }), (0, r.jsx)("div", {
@@ -270,7 +270,7 @@ let q = Chunk473749.memo(function(e) {
       onShowStreamPreview: k,
       onWatchStream: U,
       connectedOn: G,
-      ref: F
+      ref: B
     } = e, V = (0, l.e7)([T.default], () => T.default.getId() === s.id, [s.id]), {
       ref: H,
       width: Y
@@ -304,9 +304,9 @@ let q = Chunk473749.memo(function(e) {
       a || null == b || b(e, s)
     }, [a, b, s]), ep = i.useCallback(() => {
       a || null != ec && k(s.id)
-    }, [a, k, ec, s]), e_ = a || w, em = i.useMemo(() => Z(h), [h]), eh = i.useMemo(() => B(em), [em]), eg = i.useMemo(() => s.getAvatarURL(C, eh), [s, C, eh]), eE = (0, l.e7)([N.Z], () => N.Z.getVoiceVolume($));
+    }, [a, k, ec, s]), e_ = a || w, em = i.useMemo(() => Z(h), [h]), eh = i.useMemo(() => F(em), [em]), eg = i.useMemo(() => s.getAvatarURL(C, eh), [s, C, eh]), eE = (0, l.e7)([N.Z], () => N.Z.getVoiceVolume($));
     return f === x.OYC.ONLY_WHILE_SPEAKING && e_ && !es || null == et ? null : n ? (0, r.jsxs)(c.P3F, {
-      innerRef: F,
+      innerRef: B,
       className: o()(j.voiceUser, {
         [j.speaking]: es,
         [j.interactive]: !a,
@@ -385,7 +385,7 @@ let q = Chunk473749.memo(function(e) {
         guildId: t.getGuildId()
       })]
     }) : (0, r.jsxs)(c.P3F, {
-      innerRef: F,
+      innerRef: B,
       className: o()(j.voiceUser, {
         [j.speaking]: es,
         [j.interactive]: !a,

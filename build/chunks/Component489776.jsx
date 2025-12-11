@@ -2,7 +2,7 @@
 /** chunk id: 489776, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk402766 = require("./402766.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,11 +48,11 @@ function p(e, t) {
   }), e
 }
 
-function b(e) {
+function p(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, b = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [h] = i.useState(b), [x, j] = i.useState(false), {
+  } = e, p = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [h] = i.useState(p), [x, j] = i.useState(false), {
     editingRule: v,
     createNewEditingRule: O
   } = (0, d.V)(), {
@@ -60,13 +60,13 @@ function b(e) {
   } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [N, E] = i.useState(y ? v : h), I = (0, s.q_F)({
     opacity: +!y,
     pointerEvents: y ? "none" : "all",
-    config: p(f({}, l.config.stiff), {
+    config: b(m({}, l.config.stiff), {
       clamp: true
     })
   }), S = (0, s.q_F)({
     opacity: +!!y,
     pointerEvents: y ? "all" : "none",
-    config: p(f({}, l.config.stiff), {
+    config: b(m({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
@@ -77,22 +77,22 @@ function b(e) {
     }
   });
   return null == v || y ? (0, r.jsxs)("div", {
-    className: m.mainRuleContainer,
+    className: f.mainRuleContainer,
     style: {
       height: y ? "auto" : "60px"
     },
     children: [(0, r.jsx)(l.animated.div, {
-      className: m.animatedRuleCardContainer,
+      className: f.animatedRuleCardContainer,
       style: S,
       children: (0, r.jsx)(u.Z, {
         rule: N,
         persistEdit: x
       })
     }), (0, r.jsx)(l.animated.div, {
-      className: m.animatedNewRuleContainer,
+      className: f.animatedNewRuleContainer,
       style: I,
       children: (0, r.jsxs)(s.P3F, {
-        className: m.addAnotherRuleCardContainer,
+        className: f.addAnotherRuleCardContainer,
         onClick: () => {
           O(t, n)
         },
@@ -101,7 +101,7 @@ function b(e) {
           width: 20,
           height: 20,
           color: a.Z.unsafe_rawColors.BLUE_345.css,
-          className: m.plusIcon
+          className: f.plusIcon
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
           color: "text-link",

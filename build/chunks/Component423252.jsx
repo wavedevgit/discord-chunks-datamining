@@ -46,7 +46,7 @@ function u(e) {
       className: c.header,
       children: (0, r.jsx)(i.Heading, {
         variant: "heading-lg/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: null != n ? n : l.intl.string(l.t.wZmueu)
       })
     }), (0, r.jsx)("div", {

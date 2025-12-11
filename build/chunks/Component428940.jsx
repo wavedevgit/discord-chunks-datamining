@@ -120,15 +120,15 @@ function R(e) {
   let {
     stats: U,
     onClose: G
-  } = e, [Z, B] = i.useState(false), F = i.useRef(null);
+  } = e, [Z, F] = i.useState(false), B = i.useRef(null);
   i.useEffect(() => () => {
-    null != F.current && clearTimeout(F.current)
+    null != B.current && clearTimeout(B.current)
   }, []);
   let V = i.useCallback(() => {
     let e = P(U);
     (0, o.JG)(e, () => {
-      B(true), null != F.current && clearTimeout(F.current), F.current = window.setTimeout(() => {
-        B(false), F.current = null
+      F(true), null != B.current && clearTimeout(B.current), B.current = window.setTimeout(() => {
+        F(false), B.current = null
       }, 2e3)
     }, () => {})
   }, [U]);

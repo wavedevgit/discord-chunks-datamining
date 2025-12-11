@@ -61,10 +61,10 @@ function C(e) {
     n(1)
   }, d = () => {
     n(2)
-  }, m = 2 === t, f = 1 === t;
-  if (!(!(r >= i) && r / i >= .8) || m) return null;
-  let p = f || m ? j.hidden : null,
-    b = f ? g.Z.Stages.FLYING : g.Z.Stages.HOVERING;
+  }, f = 2 === t, m = 1 === t;
+  if (!(!(r >= i) && r / i >= .8) || f) return null;
+  let b = m || f ? j.hidden : null,
+    p = m ? g.Z.Stages.FLYING : g.Z.Stages.HOVERING;
   return (0, l.jsx)(u.AMe, {
     from: {
       opacity: 0
@@ -79,16 +79,16 @@ function C(e) {
       style: e,
       children: [(0, l.jsx)(g.Z, {
         className: j.tierCloseMechaWumpus,
-        stage: b,
+        stage: p,
         onFlyingComplete: d
       }), (0, l.jsx)("div", {
-        className: o()(j.tierCloseHint, p),
+        className: o()(j.tierCloseHint, b),
         children: x.intl.format(x.t.qV3Erl, {
           numLeft: i - r
         })
       }), (0, l.jsx)(u.P3F, {
         onClick: s,
-        className: o()(j.tierCloseClose, p),
+        className: o()(j.tierCloseClose, b),
         children: (0, l.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
@@ -109,9 +109,9 @@ function y(e) {
     showHeaderLockStatus: c,
     headerButton: d = null,
     subscriptionsRequired: g,
-    subscriptionCount: m,
-    className: f
-  } = e, p = e => {
+    subscriptionCount: f,
+    className: m
+  } = e, b = e => {
     null == i || i(e)
   }, [h, x] = a.useState(0);
   return a.useLayoutEffect(() => {
@@ -129,11 +129,11 @@ function y(e) {
         [j.tierHeaderWithoutCardBody]: !t,
         [j.tierHeaderUnlocked]: r,
         [j.tierHeaderLocked]: !r
-      }, f),
-      ref: p,
+      }, m),
+      ref: b,
       children: (0, l.jsxs)("div", {
         className: j.tierHeaderContent,
-        children: [(0, l.jsx)(b.Z, {
+        children: [(0, l.jsx)(p.Z, {
           tier: s.tier,
           color: "currentColor",
           className: o()(j.tierIcon, {
@@ -150,7 +150,7 @@ function y(e) {
           subscriptionsRequired: g,
           hasAnimatedUnlocked: r
         }) : null, (0, l.jsx)(C, {
-          numUnlocked: m,
+          numUnlocked: f,
           numRequired: g
         })]
       })
@@ -168,11 +168,11 @@ function N(e) {
     hasBottomMargin: s,
     headerButton: c = null,
     withCardBody: g = true,
-    guildId: b,
+    guildId: p,
     showHeaderLockStatus: v = true
-  } = e, O = (0, d.e7)([p.Z], () => {
+  } = e, O = (0, d.e7)([b.Z], () => {
     var e, t;
-    return null != (t = null == (e = p.Z.getGuild(b)) ? true : e.premiumTier) ? t : h.Eu4.NONE
+    return null != (t = null == (e = b.Z.getGuild(p)) ? true : e.premiumTier) ? t : h.Eu4.NONE
   }), C = h.oCV[i.tier], N = a && i.tier <= O, E = i.tier !== h.Eu4.NONE && i.tier !== h.Eu4.TIER_1;
   return (0, l.jsxs)("div", {
     className: o()(j.tier, {
@@ -187,7 +187,7 @@ function N(e) {
         null != r && r(e, i)
       },
       withCardBody: g,
-      guildId: b,
+      guildId: p,
       hasBottomMargin: s,
       subscriptionsRequired: C,
       hasAnimatedUnlocked: N,
@@ -207,10 +207,10 @@ function N(e) {
             let {
               Icon: r,
               className: i
-            } = (0, m.t)(e.icon, t);
+            } = (0, f.t)(e.icon, t);
             return (0, l.jsxs)("div", {
               className: j.perk,
-              children: [(0, l.jsx)(f.Z, {
+              children: [(0, l.jsx)(m.Z, {
                 name: String(e.icon),
                 icon: r,
                 className: j.perkIcon,

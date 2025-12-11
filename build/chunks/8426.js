@@ -6,7 +6,7 @@ require.d(exports, {
   Hz: () => y,
   To: () => S,
   XG: () => C,
-  _N: () => p,
+  _N: () => b,
   ad: () => v,
   bj: () => P,
   el: () => h,
@@ -16,7 +16,7 @@ require.d(exports, {
   oo: () => I,
   q6: () => T,
   r2: () => O,
-  vR: () => b
+  vR: () => p
 }), require("./361932.js"), require("./187205.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -31,14 +31,14 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function b(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_WELCOME_MESSAGE",
     welcomeMessage: e
   })
 }
 
-function b(e) {
+function p(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION",
     action: e
@@ -70,7 +70,7 @@ async function v(e, t, n, r) {
   if (!r) return Promise.resolve();
   try {
     let r = await l.tn.patch({
-        url: m.ANM.NEW_MEMBER_ACTION(e, t),
+        url: f.ANM.NEW_MEMBER_ACTION(e, t),
         body: {
           icon: n
         },
@@ -87,8 +87,8 @@ async function v(e, t, n, r) {
     var o;
     let e = i().flatMap(null != (o = t.body) ? o : {}, e => e);
     return s.Z.show({
-      title: f.intl.string(f.t["6nCZyG"]),
-      body: f.intl.format(f.t.dYCPD2, {
+      title: m.intl.string(m.t["6nCZyG"]),
+      body: m.intl.format(m.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     }), u.Z.addBreadcrumb({
@@ -128,7 +128,7 @@ function N(e) {
 async function E(e, t, n) {
   try {
     let r = await l.tn.put({
-        url: m.ANM.RESOURCE_CHANNEL(e, t),
+        url: f.ANM.RESOURCE_CHANNEL(e, t),
         body: {
           icon: n
         },
@@ -145,8 +145,8 @@ async function E(e, t, n) {
     var r;
     let e = i().flatMap(null != (r = t.body) ? r : {}, e => e);
     s.Z.show({
-      title: f.intl.string(f.t["6nCZyG"]),
-      body: f.intl.format(f.t.dYCPD2, {
+      title: m.intl.string(m.t["6nCZyG"]),
+      body: m.intl.format(m.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     })
@@ -156,8 +156,8 @@ async function E(e, t, n) {
 function I(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return n || g.Z.hasChanges() ? o.Z.getEnabled(e) && !(0, c.uo)(t) ? (s.Z.show({
-    title: f.intl.string(f.t["6nCZyG"]),
-    body: f.intl.string(f.t.JuhUTS)
+    title: m.intl.string(m.t["6nCZyG"]),
+    body: m.intl.string(m.t.JuhUTS)
   }), u.Z.addBreadcrumb({
     message: "Error saving home settings"
   }), Promise.reject()) : _(e, t) : Promise.resolve()
@@ -167,8 +167,8 @@ function S(e, t) {
   var n, r;
   let i = o.Z.getSettings(e);
   return t && !(0, c.uo)(i) ? void s.Z.show({
-    title: f.intl.string(f.t["6nCZyG"]),
-    body: f.intl.string(f.t.JuhUTS)
+    title: m.intl.string(m.t["6nCZyG"]),
+    body: m.intl.string(m.t.JuhUTS)
   }) : (a.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_TOGGLE_ENABLED",
     guildId: e,
@@ -204,13 +204,13 @@ function S(e, t) {
   }), n)))
 }
 async function _(e, t) {
-  var n, r, o, u, g, p, b, h, x;
+  var n, r, o, u, g, b, p, h, x;
   a.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
   try {
     let i = await l.tn.put({
-        url: m.ANM.GUILD_HOME_SETTINGS(e),
+        url: f.ANM.GUILD_HOME_SETTINGS(e),
         body: (0, c.HH)(e, t),
         oldFormErrors: true,
         rejectWithError: false
@@ -220,12 +220,12 @@ async function _(e, t) {
       type: "GUILD_HOME_SETTINGS_UPDATE_SUCCESS",
       guildId: e,
       homeSettings: s
-    }), d.default.track(m.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
+    }), d.default.track(f.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
       guild_id: e,
       welcome_message_author_id: (null != (u = null == s || null == (n = s.welcomeMessage) ? true : n.authorIds) ? u : [])[0],
       welcome_message_length: null != (g = null == s || null == (o = s.welcomeMessage) || null == (r = o.message) ? true : r.length) ? g : 0,
-      member_action_channel_ids: (null != (p = null == s ? true : s.newMemberActions) ? p : []).map(e => e.channelId),
-      member_action_channel_actions: (null != (b = null == s ? true : s.newMemberActions) ? b : []).map(e => e.actionType),
+      member_action_channel_ids: (null != (b = null == s ? true : s.newMemberActions) ? b : []).map(e => e.channelId),
+      member_action_channel_actions: (null != (p = null == s ? true : s.newMemberActions) ? p : []).map(e => e.actionType),
       resource_channel_ids: (null != (h = null == s ? true : s.resourceChannels) ? h : []).map(e => e.channelId),
       enabled: null == s ? true : s.enabled
     }), i.body
@@ -234,8 +234,8 @@ async function _(e, t) {
     a.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
     }), s.Z.show({
-      title: f.intl.string(f.t["6nCZyG"]),
-      body: f.intl.format(f.t.dYCPD2, {
+      title: m.intl.string(m.t["6nCZyG"]),
+      body: m.intl.format(m.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     })

@@ -35,46 +35,46 @@ function u(e) {
 let g = {
     enabled: false
   },
-  m = null,
-  f = Object.assign({}, g),
-  p = false,
-  b = {};
+  f = null,
+  m = Object.assign({}, g),
+  b = false,
+  p = {};
 
 function h() {
-  m = null, f = Object.assign({}, g), p = false, m = Chunk999382.Z.getGuildId(), f = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(m)))
+  f = null, m = Object.assign({}, g), b = false, f = Chunk999382.Z.getGuildId(), m = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(f)))
 }
 
 function x(e, t) {
-  if (null == f.newMemberActions) returnfalse;
-  let n = f.newMemberActions.findIndex(t => t.channelId === e);
+  if (null == m.newMemberActions) returnfalse;
+  let n = m.newMemberActions.findIndex(t => t.channelId === e);
   if (n < 0) returnfalse;
-  f.newMemberActions[n] = u({}, t), f.newMemberActions = [...f.newMemberActions]
+  m.newMemberActions[n] = u({}, t), m.newMemberActions = [...m.newMemberActions]
 }
 
 function j(e, t) {
-  if (null == f.resourceChannels) returnfalse;
-  let n = f.resourceChannels.findIndex(t => t.channelId === e);
+  if (null == m.resourceChannels) returnfalse;
+  let n = m.resourceChannels.findIndex(t => t.channelId === e);
   if (n < 0) returnfalse;
-  f.resourceChannels[n] = u({}, t), f.resourceChannels = [...f.resourceChannels]
+  m.resourceChannels[n] = u({}, t), m.resourceChannels = [...m.resourceChannels]
 }
 
 function v() {
-  p = false, f = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(m)))
+  b = false, m = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(f)))
 }
 class O extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (b = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
+    null != e && (p = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(c.Z, o.Z)
   }
   getState() {
     return {
-      dismissedSuggestedChannelIdsByGuildId: b
+      dismissedSuggestedChannelIdsByGuildId: p
     }
   }
   getSettings() {
-    return null != f ? f : g
+    return null != m ? m : g
   }
   hasChanges() {
-    return null != m && !l().isEqual(f, Chunk563534.Z.getSettings(m))
+    return null != f && !l().isEqual(m, Chunk563534.Z.getSettings(f))
   }
   canCloseEarly() {
     return !this.hasChanges()
@@ -83,22 +83,22 @@ class O extends(r = Chunk442837.ZP.PersistedStore) {
     return this.hasChanges()
   }
   getSubmitting() {
-    return p
+    return b
   }
   getDismissedSuggestedChannelIds(e) {
     var t;
-    return null == e ? [] : null != (t = b[e]) ? t : []
+    return null == e ? [] : null != (t = p[e]) ? t : []
   }
   getResourceChannel(e) {
     var t;
     if (null == e) return null;
-    let n = null == (t = f.resourceChannels) ? true : t.find(t => t.channelId === e);
+    let n = null == (t = m.resourceChannels) ? true : t.find(t => t.channelId === e);
     return null == n ? null : n
   }
   getNewMemberAction(e) {
     var t;
     if (null == e) return null;
-    let n = null == (t = f.newMemberActions) ? true : t.find(t => t.channelId === e);
+    let n = null == (t = m.newMemberActions) ? true : t.find(t => t.channelId === e);
     return null == n ? null : n
   }
 }
@@ -108,10 +108,10 @@ let C = new O(Chunk570140.Z, {
   GUILD_SETTINGS_SET_SECTION: h,
   GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: h,
   GUILD_HOME_SETTINGS_FETCH_SUCCESS: function() {
-    f = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(m)))
+    m = l().cloneDeep(Object.assign({}, Chunk563534.Z.getSettings(f)))
   },
   GUILD_HOME_SETTINGS_UPDATE_START: function() {
-    p = true
+    b = true
   },
   GUILD_HOME_SETTINGS_UPDATE_SUCCESS: v,
   GUILD_HOME_SETTINGS_UPDATE_FAIL: v,
@@ -131,12 +131,12 @@ let C = new O(Chunk570140.Z, {
     let {
       welcomeMessage: t
     } = e;
-    if (null == t) f.welcomeMessage = true;
+    if (null == t) m.welcomeMessage = true;
     else {
       var n, r, i, l, a, s;
-      f.welcomeMessage = {
-        authorIds: null != (l = null != (i = t.authorIds) ? i : null == (n = f.welcomeMessage) ? true : n.authorIds) ? l : [],
-        message: null != (s = null != (a = t.message) ? a : null == (r = f.welcomeMessage) ? true : r.message) ? s : ""
+      m.welcomeMessage = {
+        authorIds: null != (l = null != (i = t.authorIds) ? i : null == (n = m.welcomeMessage) ? true : n.authorIds) ? l : [],
+        message: null != (s = null != (a = t.message) ? a : null == (r = m.welcomeMessage) ? true : r.message) ? s : ""
       }
     }
   },
@@ -152,20 +152,20 @@ let C = new O(Chunk570140.Z, {
     let {
       action: n
     } = e;
-    f.newMemberActions = null != (t = f.newMemberActions) ? t : [], f.newMemberActions = [...f.newMemberActions, n]
+    m.newMemberActions = null != (t = m.newMemberActions) ? t : [], m.newMemberActions = [...m.newMemberActions, n]
   },
   GUILD_SETTINGS_ONBOARDING_DELETE_NEW_MEMBER_ACTION: function(e) {
     let {
       channelId: t
     } = e;
-    if (null == f.newMemberActions) returnfalse;
-    f.newMemberActions = [...f.newMemberActions.filter(e => e.channelId !== t)]
+    if (null == m.newMemberActions) returnfalse;
+    m.newMemberActions = [...m.newMemberActions.filter(e => e.channelId !== t)]
   },
   GUILD_SETTINGS_ONBOARDING_REORDER_NEW_MEMBER_ACTION: function(e) {
     let {
       actions: t
     } = e;
-    f.newMemberActions = t
+    m.newMemberActions = t
   },
   GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL: function(e) {
     let {
@@ -179,20 +179,20 @@ let C = new O(Chunk570140.Z, {
     let {
       resourceChannel: n
     } = e;
-    f.resourceChannels = (null != (t = f.resourceChannels) ? t : []).filter(e => e.channelId !== n.channelId), f.resourceChannels = [...f.resourceChannels, n]
+    m.resourceChannels = (null != (t = m.resourceChannels) ? t : []).filter(e => e.channelId !== n.channelId), m.resourceChannels = [...m.resourceChannels, n]
   },
   GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL: function(e) {
     let {
       resourceChannelId: t
     } = e;
-    if (null == f.resourceChannels) returnfalse;
-    f.resourceChannels = [...f.resourceChannels.filter(e => e.channelId !== t)]
+    if (null == m.resourceChannels) returnfalse;
+    m.resourceChannels = [...m.resourceChannels.filter(e => e.channelId !== t)]
   },
   GUILD_SETTINGS_ONBOARDING_REORDER_RESOURCE_CHANNEL: function(e) {
     let {
       resourceChannels: t
     } = e;
-    f.resourceChannels = t
+    m.resourceChannels = t
   },
   GUILD_SETTINGS_ONBOARDING_DISMISS_RESOURCE_CHANNEL_SUGGESTION: function(e) {
     var t;
@@ -200,6 +200,6 @@ let C = new O(Chunk570140.Z, {
       guildId: n,
       channelIds: r
     } = e;
-    b[n] = [...null != (t = b[n]) ? t : [], ...r]
+    p[n] = [...null != (t = p[n]) ? t : [], ...r]
   }
 })

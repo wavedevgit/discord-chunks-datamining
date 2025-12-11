@@ -51,7 +51,7 @@ function S(e) {
   let Z = (0, s.e7)([g.Z], () => g.Z.getHighestRole(T), [T]),
     R = (0, s.e7)([g.Z], () => !g.Z.isRoleHigher(T, Z, P)),
     D = i.useRef(null),
-    A = (0, s.e7)([b.Z], () => b.Z.getProps().integrations),
+    A = (0, s.e7)([p.Z], () => p.Z.getProps().integrations),
     L = {
       role: P,
       editRoleId: n
@@ -64,8 +64,8 @@ function S(e) {
       let {
         role: n,
         editRoleId: r
-      } = k.current, i = (0, x.UT)(S), l = null != (t = null == (e = p.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
-      m.default.track(E.rMx.ROLE_PAGE_VIEWED, function(e) {
+      } = k.current, i = (0, x.UT)(S), l = null != (t = null == (e = b.Z.getRoleMemberCount(T.id)) ? true : e[r]) ? t : 0;
+      f.default.track(E.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -131,7 +131,7 @@ function S(e) {
       });
       break;
     default:
-      (0, f.vE)(S)
+      (0, m.vE)(S)
   }
   return (0, r.jsxs)("div", {
     className: I.page,

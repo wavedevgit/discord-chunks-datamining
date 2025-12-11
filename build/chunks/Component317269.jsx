@@ -91,7 +91,7 @@ function j(t) {
   let e, n, {
       planId: l,
       enableNoPaymentTrial: a,
-      startingPremiumSubscriptionPlanId: u,
+      startingPremiumSubscriptionPlanId: o,
       onClose: L,
       followupSKUInfo: H,
       isDowngrade: k,
@@ -105,12 +105,12 @@ function j(t) {
       isDisplayingWowMomentConfirmation: O,
       customCheckoutFlow: S,
       isPremiumGroupPurchase: X
-    } = (0, o.JL)(),
+    } = (0, u.JL)(),
     {
       theme: y
     } = (0, c.TCT)(),
     D = (0, C.e7)([h.Z], () => null != H ? h.Z.get(H.id) : null),
-    Y = (0, g.qH)(U);
+    Y = (0, p.qH)(U);
   i.useEffect(() => {
     if (null == H || null != D) return;
     let {
@@ -156,9 +156,9 @@ function j(t) {
         })
       })]
     }))
-  } else if (null != u) e = (0, s.jsx)(v, {
+  } else if (null != o) e = (0, s.jsx)(v, {
     planId: l,
-    startingPremiumSubscriptionPlanId: u
+    startingPremiumSubscriptionPlanId: o
   });
   else if (null != b) {
     let t = M.Z.get(l);
@@ -180,7 +180,7 @@ function j(t) {
       children: B(t)
     })
   }
-  let Q = p.ZP.getPremiumType(l);
+  let Q = g.ZP.getPremiumType(l);
   r()(null != Q, "premium type should not be null in purchase confirmation");
   let [W, K] = i.useState(false), G = i.useCallback(() => {
     null != L && (L(), S === I.cL.APPLE_PAYMENT_LINK && K(true))
@@ -188,7 +188,7 @@ function j(t) {
   n = X ? P.intl.string(T.default.clIveA) : "deeplink_to_desktop_app" === A || S === I.cL.APPLE_PAYMENT_LINK ? P.intl.string(P.t.qXV2XU) : null != D ? P.intl.formatToPlainString(P.t["1qGgm4"], {
     skuName: D.name
   }) : k ? P.intl.string(P.t.QJ9EyM) : null != b ? P.intl.string(P.t.ta3cXY) : P.intl.string(P.t.TkTvBz);
-  let V = () => _.X7u.has(null != w ? w : _.HeQ.UNKNOWN) ? N.ZP.Types.PREMIUM_PAYMENT_STARTED : null != u ? N.ZP.Types.PREMIUM_UPDATED : N.ZP.Types.PREMIUM_ACTIVATED;
+  let V = () => _.X7u.has(null != w ? w : _.HeQ.UNKNOWN) ? N.ZP.Types.PREMIUM_PAYMENT_STARTED : null != o ? N.ZP.Types.PREMIUM_UPDATED : N.ZP.Types.PREMIUM_ACTIVATED;
   return O ? (0, s.jsx)(f.Z, {
     type: V(),
     text: e,
@@ -224,12 +224,12 @@ function b(t) {
     hasSentMessage: a,
     giftMessageError: c,
     isSendingMessage: d
-  } = (0, u.wD)(), o = (0, C.e7)([M.Z], () => M.Z.get(e));
-  r()(null != o, "Missing plan");
-  let h = (0, C.e7)([H.Z], () => H.Z.getGiftCode(o.skuId));
+  } = (0, o.wD)(), u = (0, C.e7)([M.Z], () => M.Z.get(e));
+  r()(null != u, "Missing plan");
+  let h = (0, C.e7)([H.Z], () => H.Z.getGiftCode(u.skuId));
   return (0, s.jsx)(L.Z, {
     giftCode: h,
-    subscriptionPlan: o,
+    subscriptionPlan: u,
     onClose: n,
     selectedGiftStyle: i,
     hasSentMessage: a,

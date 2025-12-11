@@ -7,7 +7,7 @@ require.d(exports, {
   F3: () => ey,
   UE: () => tM,
   _7: () => ex,
-  mH: () => tF,
+  mH: () => tB,
   vt: () => eY
 });
 var Chunk653603 = require("./653603.js"),
@@ -76,8 +76,8 @@ var y = new WeakMap,
   U = new WeakMap,
   G = new WeakMap,
   Z = new WeakMap,
-  B = Symbol("placeholder"),
-  F = Symbol("mark-placeholder"),
+  F = Symbol("placeholder"),
+  B = Symbol("mark-placeholder"),
   V = globalThis.Text,
   H = e => e && e.ownerDocument && e.ownerDocument.defaultView || null,
   Y = e => K(e) && 8 === e.nodeType,
@@ -464,7 +464,7 @@ var y = new WeakMap,
   eI = (e, t) => {
     var n = g(e, eO),
       r = g(t, ev);
-    return e[B] === t[B] && eS(n, r)
+    return e[F] === t[F] && eS(n, r)
   },
   eT = (e, t) => {
     if (e.length !== t.length) returnfalse;
@@ -491,7 +491,7 @@ var y = new WeakMap,
       leaf: n,
       parent: r,
       text: i
-    } = e, a = ex(), o = ey.findPath(a, i), s = d.y$.parent(o), l = true === n[F];
+    } = e, a = ex(), o = ey.findPath(a, i), s = d.y$.parent(o), l = true === n[B];
     return a.isVoid(r) ? c.createElement(ew, {
       length: d.NB.string(r).length
     }) : "" !== n.text || r.children[r.children.length - 1] !== i || a.isInline(r) || "" !== d.ML.string(a, s) ? "" === n.text ? c.createElement(ew, {
@@ -569,7 +569,7 @@ var y = new WeakMap,
       parent: i,
       text: r
     });
-    if (t[B]) {
+    if (t[F]) {
       var _ = {
         children: t.placeholder,
         attributes: {
@@ -599,7 +599,7 @@ var y = new WeakMap,
       text: r
     })
   },
-  ej = Chunk473749.memo(eL, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[B] === e.leaf[B]),
+  ej = Chunk473749.memo(eL, (e, t) => t.parent === e.parent && t.isLast === e.isLast && t.renderLeaf === e.renderLeaf && t.renderPlaceholder === e.renderPlaceholder && t.text === e.text && d.xv.equals(t.leaf, e.leaf) && t.leaf[F] === e.leaf[F]),
   eM = e => {
     var {
       attributes: t,
@@ -641,7 +641,7 @@ var y = new WeakMap,
     var {
       decorations: t,
       element: n,
-      renderElement: r = e => c.createElement(eB, Object.assign({}, e)),
+      renderElement: r = e => c.createElement(eF, Object.assign({}, e)),
       renderPlaceholder: a,
       renderLeaf: o,
       selection: s
@@ -694,7 +694,7 @@ var y = new WeakMap,
     })
   },
   eZ = Chunk473749.memo(eG, (e, t) => e.element === t.element && e.renderElement === t.renderElement && e.renderLeaf === t.renderLeaf && e.renderPlaceholder === t.renderPlaceholder && eT(e.decorations, t.decorations) && (e.selection === t.selection || !!e.selection && !!t.selection && d.e6.equals(e.selection, t.selection))),
-  eB = e => {
+  eF = e => {
     var {
       attributes: t,
       children: n,
@@ -706,8 +706,8 @@ var y = new WeakMap,
       }
     }), n)
   },
-  eF = (0, Chunk473749.createContext)(() => []),
-  eV = () => (0, Chunk473749.useContext)(eF),
+  eB = (0, Chunk473749.createContext)(() => []),
+  eV = () => (0, Chunk473749.useContext)(eB),
   eH = (0, Chunk473749.createContext)(false),
   eY = () => (0, Chunk473749.useContext)(eH),
   eW = e => {
@@ -1881,7 +1881,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     if (f && 1 === N.children.length && 1 === Array.from(d.NB.texts(N)).length && "" === d.NB.string(N) && !x) {
       var en = d.ML.start(N, []);
       et.push({
-        [B]: true,
+        [F]: true,
         placeholder: f,
         anchor: en,
         focus: en
@@ -1900,7 +1900,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
         z.hasMarkPlaceholder = true;
         var ed = Object.fromEntries(Object.keys(es).map(e => [e, null]));
         et.push(tA(tA(tA({
-          [F]: true
+          [B]: true
         }, ed), er), {}, {
           anchor: ei,
           focus: ei
@@ -1925,7 +1925,7 @@ var tN = e => c.createElement(c.Fragment, null, eW(e)),
     var ep = null == (t = I.get(N)) || null == (n = t.getBoundingClientRect()) ? true : n.height;
     return c.createElement(eK.Provider, {
       value: p
-    }, c.createElement(eF.Provider, {
+    }, c.createElement(eB.Provider, {
       value: s
     }, c.createElement(e8, {
       node: k,
@@ -2334,14 +2334,14 @@ function tZ(e) {
     onChange: r
   }
 }
-var tB = ["editor", "children", "onChange", "value"],
-  tF = e => {
+var tF = ["editor", "children", "onChange", "value"],
+  tB = e => {
     var {
       editor: t,
       children: n,
       onChange: r,
       value: i
-    } = e, a = g(e, tB), o = (0, c.useRef)(false), [s, l] = c.useState(() => {
+    } = e, a = g(e, tF), o = (0, c.useRef)(false), [s, l] = c.useState(() => {
       if (!d.NB.isNodeList(i)) throw Error("[Slate] value is invalid! Expected a list of elements but got: ".concat(d.o4.stringify(i)));
       if (!d.ML.isEditor(t)) throw Error("[Slate] editor is invalid! You passed: ".concat(d.o4.stringify(t)));
       return t.children = i, Object.assign(t, a), {

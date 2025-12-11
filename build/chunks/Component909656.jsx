@@ -38,10 +38,10 @@ function T(e) {
     isGuildProducts: l = false
   } = e, {
     format: s
-  } = (0, y.Z)(n.id), m = (0, v.YB)(n.id), j = i.useCallback(() => {
+  } = (0, y.Z)(n.id), f = (0, v.YB)(n.id), j = i.useCallback(() => {
     var e;
-    return (null == m || null == (e = m.cover_image_asset) ? true : e.application_id) == null ? null : (0, x._W)(m.cover_image_asset.application_id, m.cover_image_asset, _)
-  }, [m]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == m ? true : m.description) ? t : ""), [R, D] = i.useState(j), [A, L] = i.useState(null == m ? true : m.store_page_guild_products_default_sort), [k, G] = i.useState(null == m ? true : m.server_shop_tab_order), {
+    return (null == f || null == (e = f.cover_image_asset) ? true : e.application_id) == null ? null : (0, x._W)(f.cover_image_asset.application_id, f.cover_image_asset, _)
+  }, [f]), [T, P] = i.useState(s), [w, Z] = i.useState(null != (t = null == f ? true : f.description) ? t : ""), [R, D] = i.useState(j), [A, L] = i.useState(null == f ? true : f.store_page_guild_products_default_sort), [k, G] = i.useState(null == f ? true : f.server_shop_tab_order), {
     loading: M,
     error: U,
     updateSubscriptionsSettings: B
@@ -49,20 +49,20 @@ function T(e) {
     imageCTA: F,
     imageAriaLabel: H,
     setFilename: W
-  } = (0, C.Z)(null == m ? true : m.cover_image_asset), z = (0, p.Dt)();
+  } = (0, C.Z)(null == f ? true : f.cover_image_asset), z = (0, b.Dt)();
 
   function V(e, t) {
     a()(null != e, "Null value not allowed"), null != t && W(t.name), D(e)
   }
   let K = i.useMemo(() => {
       var e;
-      return null != w && w !== (null != (e = null == m ? true : m.description) ? e : "") || (null == R ? true : R.startsWith("data:")) === true || T !== s || (null == m ? true : m.store_page_guild_products_default_sort) !== A || (null == m ? true : m.server_shop_tab_order) !== k
-    }, [R, s, w, m, T, A, k]),
+      return null != w && w !== (null != (e = null == f ? true : f.description) ? e : "") || (null == R ? true : R.startsWith("data:")) === true || T !== s || (null == f ? true : f.store_page_guild_products_default_sort) !== A || (null == f ? true : f.server_shop_tab_order) !== k
+    }, [R, s, w, f, T, A, k]),
     Y = null != w && "" !== w && null != R;
   i.useEffect(() => {
     var e;
-    (null == m || null == (e = m.cover_image_asset) ? true : e.application_id) != null && D((0, x._W)(m.cover_image_asset.application_id, m.cover_image_asset, _))
-  }, [null == m ? true : m.cover_image_asset]);
+    (null == f || null == (e = f.cover_image_asset) ? true : e.application_id) != null && D((0, x._W)(f.cover_image_asset.application_id, f.cover_image_asset, _))
+  }, [null == f ? true : f.cover_image_asset]);
   let q = (0, O.mY)(),
     X = i.useMemo(() => E.kL.map(e => ({
       label: (0, E.eJ)(e),
@@ -78,14 +78,14 @@ function T(e) {
   return (0, r.jsxs)("div", {
     className: S.container,
     children: [null != U && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.M14, {
+      children: [(0, r.jsx)(m.M14, {
         type: "critical",
         children: U.getAnyErrorMessage()
-      }), (0, r.jsx)(f.LZC, {
+      }), (0, r.jsx)(m.LZC, {
         size: 16
       })]
     }), l ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.FXm, {
+      children: [(0, r.jsx)(m.FXm, {
         label: I.intl.string(I.t["PAVi++"]),
         description: I.intl.string(I.t.x87YqH),
         value: T,
@@ -101,17 +101,17 @@ function T(e) {
           name: I.intl.string(I.t.rXqxhF),
           desc: I.intl.string(I.t.yQiJne),
           value: N.e3.SOME_CHANNELS,
-          icon: f.VL1
+          icon: m.VL1
         }, {
           name: I.intl.string(I.t.WzC9s6),
           desc: I.intl.string(I.t.WmagiB),
           value: N.e3.ALL_CHANNELS,
-          icon: f._m8
+          icon: m._m8
         }]
-      }), (0, r.jsx)(f.izJ, {
+      }), (0, r.jsx)(m.izJ, {
         className: S.divider
       })]
-    }), (0, r.jsx)(f.Kx8, {
+    }), (0, r.jsx)(m.Kx8, {
       label: I.intl.string(I.t["1+Ho1X"]),
       placeholder: l ? I.intl.string(I.t.SD6LRZ) : I.intl.string(I.t["aVhW/W"]),
       maxLength: 1500,
@@ -120,9 +120,9 @@ function T(e) {
       onChange: Z,
       "aria-labelledby": z,
       disabled: q
-    }), (0, r.jsx)(f.izJ, {
+    }), (0, r.jsx)(m.izJ, {
       className: S.divider
-    }), (0, r.jsxs)(f.gNt, {
+    }), (0, r.jsxs)(m.gNt, {
       label: I.intl.string(I.t["0kpTpM"]),
       description: I.intl.string(I.t.i2rCwT),
       children: [(0, r.jsx)(h.Z, {
@@ -138,7 +138,7 @@ function T(e) {
         onChange: V,
         "aria-label": H,
         disabled: q
-      }), (0, r.jsx)(b.Z, {
+      }), (0, r.jsx)(p.Z, {
         onChange: V,
         "aria-label": H,
         disabled: q,
@@ -147,7 +147,7 @@ function T(e) {
         size: "md"
       })]
     }), l ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.izJ, {
+      children: [(0, r.jsx)(m.izJ, {
         className: S.divider
       }), (0, r.jsx)(u.y6, {
         label: I.intl.string(I.t.aaZ9pE),
@@ -158,7 +158,7 @@ function T(e) {
         onChange: e => L(e)
       })]
     }) : null, J.length > 0 && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(f.izJ, {
+      children: [(0, r.jsx)(m.izJ, {
         className: S.divider
       }), (0, r.jsx)(u.y6, {
         label: I.intl.string(I.t["+dtmw+"]),
@@ -171,18 +171,18 @@ function T(e) {
     }), (0, r.jsx)(c.W, {
       component: "div",
       className: S.contentRegion,
-      children: K && (0, r.jsx)(f.oXn, {
+      children: K && (0, r.jsx)(m.oXn, {
         children: (0, r.jsx)(d.Z, {
           submitting: M,
           disabled: !Y,
           onReset: () => {
             var e;
-            P(s), Z(null != (e = null == m ? true : m.description) ? e : ""), D(j), L(null == m ? true : m.store_page_guild_products_default_sort), G(null == m ? true : m.server_shop_tab_order)
+            P(s), Z(null != (e = null == f ? true : f.description) ? e : ""), D(j), L(null == f ? true : f.store_page_guild_products_default_sort), G(null == f ? true : f.server_shop_tab_order)
           },
           onSave: () => {
-            a()(null != m, "Settings must be defined");
+            a()(null != f, "Settings must be defined");
             let e = {};
-            w !== m.description && (e.description = w), null != R && R.startsWith("data:") && (e.cover_image = R), T !== s && (e.full_server_gate = T === N.e3.ALL_CHANNELS), A !== m.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = A), k !== m.server_shop_tab_order && (e.server_shop_tab_order = k), o().isEmpty(e) || B(n.id, e)
+            w !== f.description && (e.description = w), null != R && R.startsWith("data:") && (e.cover_image = R), T !== s && (e.full_server_gate = T === N.e3.ALL_CHANNELS), A !== f.store_page_guild_products_default_sort && (e.store_page_guild_products_default_sort = A), k !== f.server_shop_tab_order && (e.server_shop_tab_order = k), o().isEmpty(e) || B(n.id, e)
           },
           saveButtonTooltip: Y ? true : I.intl.string(I.t["6HRvit"])
         })

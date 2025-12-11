@@ -2,7 +2,7 @@
 /** chunk id: 466711, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -154,15 +154,15 @@ function Z(e) {
   } = (0, p.ZP)(f.Z.GIFT_BUTTON), [d, v] = i.useState(false), T = (0, s.e7)([y.Z], () => !(null === y.Z || true === y.Z ? true : y.Z.hasLayers())), A = (0, s.e7)([O.default], () => O.default.getCurrentUser()), R = null != A ? S.default.age(A.id) : 0, {
     giftBoxAnimation: D,
     trinketsAnimation: x
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, L = null != n.firstTimeNotice && !a && T && R >= G, [j, M] = (0, m.XR)(L ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Z = null != j, B = d || Z, F = (0, I.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, L = null != n.firstTimeNotice && !a && T && R >= G, [j, M] = (0, m.XR)(L ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Z = null != j, F = d || Z, B = (0, I.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
     location: "gift-promotion-button",
     isGift: true,
-    giftRecipient: F
+    giftRecipient: B
   });
   if (a) return null;
   let Y = () => {
-      H && V && null != F ? (0, E.Z)({
-        giftRecipient: F,
+      H && V && null != B ? (0, E.Z)({
+        giftRecipient: B,
         analyticsLocations: u,
         analyticsObject: {
           page: c.isPrivate() ? N.ZY5.DM_CHANNEL : N.ZY5.GUILD_CHANNEL,
@@ -172,7 +172,7 @@ function Z(e) {
         }
       }) : (0, h.Z)({
         isGift: true,
-        giftRecipient: null == F ? true : F,
+        giftRecipient: null == B ? true : B,
         initialPlanId: null,
         analyticsLocations: u,
         analyticsObject: {
@@ -188,11 +188,11 @@ function Z(e) {
     },
     K = true !== D ? (0, r.jsx)(k, {
       config: D,
-      hovered: B,
+      hovered: F,
       onClick: W
     }) : true !== x ? (0, r.jsx)(U, {
       config: x,
-      hovered: B,
+      hovered: F,
       onClick: W
     }) : (0, r.jsx)(C.Z, {
       disabled: a,
@@ -200,7 +200,7 @@ function Z(e) {
     });
   return (0, r.jsx)("div", {
     className: o()(w.container, {
-      [w.containerHovered]: B
+      [w.containerHovered]: F
     }),
     onMouseEnter: () => {
       d || v(true)
@@ -217,4 +217,4 @@ function Z(e) {
     }) : K
   })
 }
-let B = Chunk473749.memo(Z)
+let F = Chunk473749.memo(Z)

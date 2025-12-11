@@ -80,7 +80,7 @@ let Z = Chunk473749.memo(function(e) {
       }) : null, (0, r.jsx)(p.Text, {
         className: _.text,
         variant: "text-sm/normal",
-        color: "header-primary",
+        color: "text-strong",
         children: v.ZP.getName(t, n, i)
       }), l ? (0, r.jsx)(p.Ucv, {
         className: _.boost,
@@ -138,11 +138,11 @@ let Z = Chunk473749.memo(function(e) {
     } = e, {
       user: s,
       blocked: u
-    } = t, v = l.getGuildId(), C = j.default.getId(), {
+    } = t, v = l.getGuildId(), C = x.default.getId(), {
       newestAnalyticsLocation: Z
-    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, y.bp)(), N = (0, d.e7)([x.ZP], () => {
+    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, y.bp)(), N = (0, d.e7)([j.ZP], () => {
       var e;
-      return null != v && (null == (e = x.ZP.getMember(v, s.id)) ? true : e.premiumSince) != null
+      return null != v && (null == (e = j.ZP.getMember(v, s.id)) ? true : e.premiumSince) != null
     }, [v, s.id]), R = i.useRef(null);
     o()(null != v, "Channel cannot be guildless");
     let w = i.useCallback(e => {

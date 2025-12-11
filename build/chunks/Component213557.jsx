@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 213557, original params: e,n,t (module,exports,require) **/
+/** chunk id: 213557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
 }), require("./539854.js");
@@ -34,46 +34,46 @@ var Chunk54381 = require("./54381.js"),
   Chunk491396 = require("./491396.js");
 
 function T(e) {
-  for (var n = 1; n < arguments.length; n++) {
-    var t = null != arguments[n] ? arguments[n] : {},
-      a = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), a.forEach(function(n) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), a.forEach(function(t) {
       var a;
-      a = t[n], n in e ? Object.defineProperty(e, n, {
+      a = n[t], t in e ? Object.defineProperty(e, t, {
         value: a,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = a
+      }) : e[t] = a
     })
   }
   return e
 }
 
-function B(e, n) {
-  return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
-    var t = Object.keys(e);
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, a)
+      n.push.apply(n, a)
     }
-    return t
-  })(Object(n)).forEach(function(t) {
-    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function A(e) {
   let {
-    channelId: n,
+    channelId: t,
     baseChannelId: A,
     channelViewSource: D = "Split View",
     isResourceChannelView: R
-  } = e, k = (0, l.e7)([y.Z], () => y.Z.getChannel(n)), L = (0, l.e7)([_.Z], () => _.Z.getGuild(null == k ? true : k.getGuildId())), H = (0, Z.ZP)(k), M = (0, l.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, f.Z)(n), G = (0, l.e7)([h.Z], () => {
+  } = e, k = (0, l.e7)([y.Z], () => y.Z.getChannel(t)), L = (0, l.e7)([_.Z], () => _.Z.getGuild(null == k ? true : k.getGuildId())), H = (0, Z.ZP)(k), M = (0, l.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, h.Z)(t), G = (0, l.e7)([f.Z], () => {
     var e;
-    return null == (e = h.Z.getResourceForChannel(null == L ? true : L.id, n)) ? true : e.title
+    return null == (e = f.Z.getResourceForChannel(null == L ? true : L.id, t)) ? true : e.title
   }), W = (0, d.$5)(k), F = r.useRef(false);
   if (r.useEffect(() => {
       null == k || F.current || (F.current = true, (0, s.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, s.$H)(k.id)), {
@@ -93,7 +93,7 @@ function A(e) {
     guild: L,
     channelId: k.id
   }) : (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(o.Z, {
+    children: [(0, a.jsx)(c.Z, {
       channel: k,
       draftType: N.d.ChannelMessage
     }), (0, a.jsx)(m.ZP, {
@@ -105,11 +105,11 @@ function A(e) {
         guild: L,
         inSidebar: true,
         handleContextMenu: e => {
-          (0, c.jW)(e, async () => {
+          (0, o.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([t.e("24783"), t.e("45917")]).then(t.bind(t, 439635));
-            return n => (0, a.jsx)(e, B(T({}, n), {
+            } = await Promise.all([n.e("24783"), n.e("45917")]).then(n.bind(n, 439635));
+            return t => (0, a.jsx)(e, B(T({}, t), {
               channel: k,
               guild: L
             }))
@@ -129,7 +129,7 @@ function A(e) {
         channel: k,
         guild: L,
         chatInputType: b.Ie.SIDEBAR
-      }, n)
+      }, t)
     })]
   })
 }

@@ -60,7 +60,7 @@ let w = e => {
         autoTrackExposure: false
       }),
       Z = p.kJ.useStore(e => e.inspectedExpressionPosition),
-      B = i.useMemo(() => {
+      F = i.useMemo(() => {
         var e;
         let {
           rowIndex: t,
@@ -68,15 +68,15 @@ let w = e => {
         } = Z;
         return null == (e = j[t]) ? true : e[n]
       }, [j, Z]);
-    switch (null == B ? true : B.type) {
+    switch (null == F ? true : F.type) {
       case T.ld.EMOJI:
-        t = null == B ? true : B.emoji;
+        t = null == F ? true : F.emoji;
         break;
       case T.ld.EXPAND_OR_COLLAPSE_EMOJIS:
         t = {
           type: "EXPAND_OR_COLLAPSE_EMOJI",
-          guildId: null == B ? true : B.guildId,
-          allNamesString: null == B ? true : B.name
+          guildId: null == F ? true : F.guildId,
+          allNamesString: null == F ? true : F.name
         };
         break;
       case T.ld.SOUNDMOJI:
@@ -86,11 +86,11 @@ let w = e => {
       default:
         t = {
           type: "CREATE_EMOJI",
-          guildId: null == B ? true : B.guildId,
-          allNamesString: null == B ? true : B.name
+          guildId: null == F ? true : F.guildId,
+          allNamesString: null == F ? true : F.name
         }
     }
-    let F = (0, a.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
+    let B = (0, a.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
       V = (0, a.e7)([E.Z], () => E.Z.isFocused()),
       H = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
       Y = h.Yk.useSetting(),
@@ -99,14 +99,14 @@ let w = e => {
       {
         newlyAddedEmojis: z
       } = (0, S.Z)(M, k),
-      q = (null == B ? true : B.type) === T.ld.EMOJI ? B.subCategory : C.t0.NONE;
+      q = (null == F ? true : F.type) === T.ld.EMOJI ? F.subCategory : C.t0.NONE;
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
           Date.now() - e >= P && R(t) && q !== C.t0.NONE && (q === C.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, z[0].id), null != Z.source && (0, v.Gn)({
             emoji: t,
             subCategory: q,
-            position: B.columnIndex + 1,
+            position: F.columnIndex + 1,
             newlyAddedHighlight: q === C.t0.NEWLY_ADDED_EMOJI && d.Z.isNewerThanLastSeen(M, t.id)
           }))
         }
@@ -149,9 +149,9 @@ let w = e => {
         alt: ""
       })
     }
-    let J = null != F ? (0, r.jsx)(I.Z, {
+    let J = null != B ? (0, r.jsx)(I.Z, {
       className: N.__invalid_guildIcon,
-      guild: F,
+      guild: B,
       shouldAnimate: !H && V
     }) : null;
     x = G && "CREATE_EMOJI" === t.type ? A.intl.string(A.t.XCmLfG) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? A.intl.string(A.t["/K2RDH"]) : A.intl.string(A.t.NZI2Zk) : (0, y.nY)(t);
@@ -160,7 +160,7 @@ let w = e => {
       channel: U,
       guildId: M,
       intention: k,
-      guild: F
+      guild: B
     });
     return (0, r.jsx)(_.Z, {
       className: L,

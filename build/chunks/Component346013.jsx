@@ -82,7 +82,7 @@ function G(e) {
     embedUrl: k,
     message: G,
     channel: Z
-  } = e, B = i.useRef(null), F = i.useRef(null), V = (0, P.J)(k, G), {
+  } = e, F = i.useRef(null), B = i.useRef(null), V = (0, P.J)(k, G), {
     setPopout: H
   } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, Z, H, true), W = v.QK.useSetting(), K = (0, A.n)(), [z, q] = i.useState(false), [Q, X] = i.useState((null == V ? true : V.coverImage) == null), J = (0, l.e7)([S.ZP, I.default], () => {
     var e;
@@ -122,7 +122,7 @@ function G(e) {
       colorStrings: ei,
       className: x.authorName
     }) : (0, r.jsx)(O.Z, {
-      targetElementRef: B,
+      targetElementRef: F,
       userId: V.authorId,
       guildId: V.guildId,
       channelId: Z.id,
@@ -131,7 +131,7 @@ function G(e) {
       avatarUrl: V.avatarUrl,
       newAnalyticsLocations: [d.Z.USERNAME],
       children: e => (0, r.jsx)(u.rz2, U(M({}, e), {
-        ref: B,
+        ref: F,
         name: V.authorName,
         colorString: et,
         colorStrings: ei,
@@ -200,7 +200,7 @@ function G(e) {
       }), (0, r.jsxs)("div", {
         className: x.descriptionFooter,
         children: [null != V.authorId && null != ef && (0, r.jsx)(O.Z, {
-          targetElementRef: F,
+          targetElementRef: B,
           userId: V.authorId,
           guildId: V.guildId,
           channelId: Z.id,
@@ -213,7 +213,7 @@ function G(e) {
             onMouseEnter: ep,
             onMouseLeave: ep,
             children: (0, r.jsx)(u.qEK, U(M({}, e), {
-              ref: F,
+              ref: B,
               size: u.EFr.SIZE_40,
               src: ef,
               "aria-label": D.intl.string(D.t.KXz3XB),
@@ -233,7 +233,7 @@ function G(e) {
               className: x.channelName,
               children: (0, r.jsx)(u.Heading, {
                 variant: "heading-md/semibold",
-                color: "header-primary",
+                color: "text-strong",
                 children: null != (j = V.channelName) ? j : V.guildName
               })
             })]

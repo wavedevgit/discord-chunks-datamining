@@ -50,7 +50,7 @@ function T(e) {
       page: r,
       categoryId: null != (t = Number(n.get("category_id"))) ? t : O.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
     }
-  }, [R.search]), M = (0, o.e7)([g.Z], () => g.Z.getCategories()), G = r.useMemo(() => null == M ? true : M.find(e => e.id === k), [M, k]), B = r.useCallback(e => {
+  }, [R.search]), M = (0, o.e7)([b.Z], () => b.Z.getCategories()), G = r.useMemo(() => null == M ? true : M.find(e => e.id === k), [M, k]), B = r.useCallback(e => {
     (0, C.zZ)(E.rMx.APP_DIRECTORY_SEARCHED, {
       search_term: w,
       num_results: e,
@@ -98,7 +98,7 @@ function T(e) {
       pageSize: O.PAGE_SIZE,
       source: s.F.APP_DIRECTORY
     })
-  })), H = (0, o.cj)([x.Z], () => {
+  })), z = (0, o.cj)([x.Z], () => {
     let e = x.Z.getSearchResults({
       query: w,
       source: s.F.APP_DIRECTORY
@@ -123,7 +123,7 @@ function T(e) {
     }({
       [v.MU]: e.totalCount
     }, e.countsByCategory) : {}
-  }), z = (0, d.Z)(F), V = r.useMemo(() => U === b.M.FETCHING ? z : F, [U, z, F]), Y = r.useCallback(e => {
+  }), H = (0, d.Z)(F), V = r.useMemo(() => U === g.M.FETCHING ? H : F, [U, H, F]), Y = r.useCallback(e => {
     (0, I.pR)({
       query: w,
       categoryId: k,
@@ -162,13 +162,13 @@ function T(e) {
             children: [(0, a.jsx)("div", {
               className: N.topFilterContainer,
               children: (0, a.jsx)(S.V, {
-                countsByCategory: H,
+                countsByCategory: z,
                 selectedCategoryId: k,
                 onSelectCategory: W
               })
             }), (0, a.jsx)(j.Z, {
-              loading: U === b.M.FETCHING,
-              children: U === b.M.FETCHED && (null == V || (null == V ? true : V.results.length) === 0) ? (0, a.jsx)(P.Z, {
+              loading: U === g.M.FETCHING,
+              children: U === g.M.FETCHED && (null == V || (null == V ? true : V.results.length) === 0) ? (0, a.jsx)(P.Z, {
                 selectedCategoryId: null != k ? k : K.id,
                 searchAllCategories: () => W(K)
               }) : (0, a.jsx)("div", {
@@ -202,7 +202,7 @@ function T(e) {
       children: (0, a.jsx)("div", {
         className: N.sideFilterContent,
         children: (0, a.jsx)(S.Z, {
-          countsByCategory: H,
+          countsByCategory: z,
           selectedCategoryId: k,
           onSelectCategory: W
         })

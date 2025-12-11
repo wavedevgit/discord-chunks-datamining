@@ -30,9 +30,9 @@ function i(t) {
           x: n, y: i
         }
     }
-  }(i, a), c = a % 180 != 0, s = n.width * o, d = n.height * o, u = Math.min(s, r.width), b = Math.min(d, r.height), f = (c ? n.height : n.width) / 2, g = (c ? n.width : n.height) / 2, h = (e.width / 2 - f - l.x) * o, m = (e.height / 2 - g - l.y) * o, p = c ? d : s, x = c ? s : d, {
+  }(i, a), c = a % 180 != 0, s = n.width * o, u = n.height * o, d = Math.min(s, r.width), b = Math.min(u, r.height), g = (c ? n.height : n.width) / 2, f = (c ? n.width : n.height) / 2, h = (e.width / 2 - g - l.x) * o, m = (e.height / 2 - f - l.y) * o, p = c ? u : s, x = c ? s : u, {
     x: v,
-    y: y
+    y: _
   } = function(t, e, n) {
     switch (n) {
       case 0:
@@ -52,17 +52,17 @@ function i(t) {
           x: -e, y: 0
         }
     }
-  }(s, d, a);
-  return r.width < s && (v *= r.width / s), r.height < d && (y *= r.height / d), {
+  }(s, u, a);
+  return r.width < s && (v *= r.width / s), r.height < u && (_ *= r.height / u), {
     sourceX: h,
     sourceY: m,
     sourceWidth: p,
     sourceHeight: x,
     destinationX: v,
-    destinationY: y,
-    destinationWidth: c ? b : u,
-    destinationHeight: c ? u : b,
-    canvasWidth: u,
+    destinationY: _,
+    destinationWidth: c ? b : d,
+    destinationHeight: c ? d : b,
+    canvasWidth: d,
     canvasHeight: b
   }
 }
@@ -78,11 +78,11 @@ function r(t) {
     sourceX: l,
     sourceY: c,
     sourceWidth: s,
-    sourceHeight: d,
-    destinationX: u,
+    sourceHeight: u,
+    destinationX: d,
     destinationY: b,
-    destinationWidth: f,
-    destinationHeight: g,
+    destinationWidth: g,
+    destinationHeight: f,
     canvasWidth: h,
     canvasHeight: m
   } = i({
@@ -94,7 +94,7 @@ function r(t) {
   }), p = document.createElement("canvas");
   p.width = h, p.height = m;
   let x = p.getContext("2d");
-  return null != x && (x.rotate(o * Math.PI / 180), x.drawImage(e, l, c, s, d, u, b, f, g)), p.toDataURL("image/png")
+  return null != x && (x.rotate(o * Math.PI / 180), x.drawImage(e, l, c, s, u, d, b, g, f)), p.toDataURL("image/png")
 }
 
 function a(t, e, n) {

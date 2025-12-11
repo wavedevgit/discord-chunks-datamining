@@ -19,16 +19,16 @@ function u(e) {
     description: n,
     helperText: u,
     guildId: g,
-    defaultSettings: m,
-    canManageGuild: f
-  } = e, p = (0, l.e7)([s.Z], () => s.Z.getMemberCount(g)), b = i.useMemo(() => [{
+    defaultSettings: f,
+    canManageGuild: m
+  } = e, b = (0, l.e7)([s.Z], () => s.Z.getMemberCount(g)), p = i.useMemo(() => [{
     name: d.intl.string(d.t["n/bTaY"]),
     value: c.bL.ALL_MESSAGES,
-    desc: null != p && p >= c.qWG ? d.intl.string(d.t["L+P4t2"]) : null
+    desc: null != b && b >= c.qWG ? d.intl.string(d.t["L+P4t2"]) : null
   }, {
     name: d.intl.string(d.t["6fQPhu"]),
     value: c.bL.ONLY_MENTIONS
-  }], [p]), h = i.useCallback(e => {
+  }], [b]), h = i.useCallback(e => {
     o.Z.updateGuild({
       defaultMessageNotifications: e
     })
@@ -37,9 +37,9 @@ function u(e) {
     label: t,
     description: n,
     helperText: u,
-    options: b,
-    value: m,
-    disabled: !f,
+    options: p,
+    value: f,
+    disabled: !m,
     onChange: h
   })
 }

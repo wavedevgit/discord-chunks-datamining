@@ -64,13 +64,13 @@ function j(e) {
         page: v.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: v.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: a.Tt.CUSTOM,
-      size: a.Ph.LARGE,
+      color: o.Tt.CUSTOM,
+      size: o.Ph.LARGE,
       intent: c.P.NONE,
-      icon: (0, r.jsx)(o.Ucv, {
+      icon: (0, r.jsx)(a.Ucv, {
         className: h.boostButtonIcon,
         size: "sm",
-        color: o.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+        color: a.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })
     }), (0, r.jsx)(p.Z, {
       guildId: t

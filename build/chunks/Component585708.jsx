@@ -46,14 +46,14 @@ function S(e, t, n, S) {
   return {
     icon: I,
     title: C,
-    body: t.content.length > 0 ? (0, l.ZP)(t, {
+    body: t.content.length > 0 ? (0, a.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : j,
     hint: (e, t) => e && !t ? null : (0, b.QR)((0, y.Pb)(), E.t.ykjOAJ, E.intl.string(E.t.jZkzVJ)),
     maxBodyLines: 2,
-    renderFooter: (n, r, a) => n && !a ? (0, i.jsx)(g.Z, {
+    renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(g.Z, {
       id: r,
       replyToMessageId: t.id,
       channel: e,
@@ -64,7 +64,7 @@ function S(e, t, n, S) {
     },
     onNotificationClick: () => {
       let n = p.Z.getTargetPID();
-      (0, a.ack)(e.id, {
+      (0, l.ack)(e.id, {
         section: v.jXE.OVERLAY,
         object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
         objectType: v.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC

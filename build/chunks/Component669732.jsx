@@ -1,7 +1,7 @@
 /** Chunk was on 41281 **/
 /** chunk id: 669732, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => u
+  default: () => p
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk945346 = require("./945346.js"),
   Chunk337667 = require("./337667.js");
-let u = t => {
+let p = t => {
   let {
     onClose: e,
     transitionState: n,
@@ -33,12 +33,12 @@ let u = t => {
       children: [(0, r.jsxs)(o.hzk, {
         className: d.modalContent,
         children: [(0, r.jsx)("img", {
-          src: p,
+          src: u,
           alt: "",
           className: d.hero
         }), (0, r.jsx)(o.Text, {
           className: d.title,
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-md/semibold",
           children: m.intl.string(m.t.sDvH0T)
         }), (0, r.jsx)(o.Text, {

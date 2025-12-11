@@ -88,7 +88,7 @@ function C(e) {
   }
   return (0, r.jsx)(c.Heading, {
     variant: "heading-sm/semibold",
-    color: "header-primary",
+    color: "text-strong",
     className: O.header,
     children: o
   })

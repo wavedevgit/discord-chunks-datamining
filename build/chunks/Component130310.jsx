@@ -35,7 +35,7 @@ let m = e => {
         children: [(0, r.jsx)(s.Text, {
           className: p.header,
           variant: "text-sm/bold",
-          color: "header-primary",
+          color: "text-strong",
           children: t
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",

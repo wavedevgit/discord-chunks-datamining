@@ -66,40 +66,40 @@ function Z(e, t, n) {
   return r + e + r
 }
 
-function B(e) {
+function F(e) {
   return b.call(String(e), /"/g, "&quot;")
 }
 
-function F(e) {
+function B(e) {
   return !w || !("object" == typeof e && (w in e || true !== e[w]))
 }
 
 function V(e) {
-  return "[object Array]" === ee(e) && F(e)
+  return "[object Array]" === ee(e) && B(e)
 }
 
 function H(e) {
-  return "[object Date]" === ee(e) && F(e)
+  return "[object Date]" === ee(e) && B(e)
 }
 
 function Y(e) {
-  return "[object RegExp]" === ee(e) && F(e)
+  return "[object RegExp]" === ee(e) && B(e)
 }
 
 function W(e) {
-  return "[object Error]" === ee(e) && F(e)
+  return "[object Error]" === ee(e) && B(e)
 }
 
 function K(e) {
-  return "[object String]" === ee(e) && F(e)
+  return "[object String]" === ee(e) && B(e)
 }
 
 function z(e) {
-  return "[object Number]" === ee(e) && F(e)
+  return "[object Number]" === ee(e) && B(e)
 }
 
 function q(e) {
-  return "[object Boolean]" === ee(e) && F(e)
+  return "[object Boolean]" === ee(e) && B(e)
 }
 
 function Q(e) {
@@ -166,7 +166,7 @@ module.exports = function e(t, r, i, s) {
     return "object" != typeof t || R ? N : ed(N)
   }
   if (el(t)) {
-    for (var M = "<" + O.call(String(t.nodeName)), G = t.attributes || [], F = 0; F < G.length; F++) M += " " + G[F].name + "=" + Z(B(G[F].value), "double", l);
+    for (var M = "<" + O.call(String(t.nodeName)), G = t.attributes || [], B = 0; B < G.length; B++) M += " " + G[B].name + "=" + Z(F(G[B].value), "double", l);
     return M += ">", t.childNodes && t.childNodes.length && (M += "..."), M += "</" + O.call(String(t.nodeName)) + ">"
   }
   if (V(t)) {

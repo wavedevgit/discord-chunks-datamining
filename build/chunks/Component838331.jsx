@@ -126,8 +126,8 @@ function T(e) {
   }, [j]);
   let G = n(w),
     Z = 0 === G.length,
-    B = null != P ? P : d.intl.string(d.t["4o4z3e"]),
-    F = i.useId(),
+    F = null != P ? P : d.intl.string(d.t["4o4z3e"]),
+    B = i.useId(),
     V = i.useCallback(() => new Promise(e => {
       let t = U.current;
       if (null == t) return e();
@@ -151,7 +151,7 @@ function T(e) {
       })
     }, []),
     W = (0, s.ZP)({
-      id: F,
+      id: B,
       isEnabled: true,
       useVirtualFocus: true,
       scrollToStart: V,
@@ -196,7 +196,7 @@ function T(e) {
               className: f.empty,
               children: [(0, r.jsx)(u.Heading, {
                 variant: "heading-md/semibold",
-                children: B
+                children: F
               }), (0, r.jsx)(u.Text, {
                 color: "text-muted",
                 variant: "text-md/normal",

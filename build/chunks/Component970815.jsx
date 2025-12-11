@@ -74,7 +74,7 @@ let m = () => (0, Chunk54381.jsx)("img", {
         let t = M === U.current;
         e > 0 && ("earn" !== M || !t) && k("earn")
       }, [k, M]),
-      B = {
+      F = {
         currentAnimationType: M,
         animationTypeRef: U,
         onSetAnimationDurationMS: D
@@ -97,7 +97,7 @@ let m = () => (0, Chunk54381.jsx)("img", {
         }),
         children: [(0, r.jsx)("div", {
           className: o()(f.orbsLottieContainer, L ? f.orbIconloading : true),
-          children: (0, r.jsx)(d.ZP, _({}, B))
+          children: (0, r.jsx)(d.ZP, _({}, F))
         }), (0, r.jsx)(u.Z, {
           value: j,
           onValueChange: Z,

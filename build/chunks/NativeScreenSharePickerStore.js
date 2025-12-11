@@ -145,7 +145,7 @@ function Z() {
   }
 }
 
-function B(e) {
+function F(e) {
   let {
     error: t
   } = e;
@@ -155,7 +155,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   let {
     style: t
   } = e;
@@ -172,7 +172,7 @@ v(U, "displayName", "NativeScreenSharePickerStore");
 let H = new U(Chunk570140.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: Z,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: B,
-  NATIVE_SCREEN_SHARE_PICKER_PRESENT: F,
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: F,
+  NATIVE_SCREEN_SHARE_PICKER_PRESENT: B,
   NATIVE_SCREEN_SHARE_PICKER_RELEASE: V
 })

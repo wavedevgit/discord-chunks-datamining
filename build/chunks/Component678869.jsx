@@ -115,8 +115,8 @@ function L(e) {
     {
       activity: G,
       currentEntry: Z,
-      artist: B,
-      title: F,
+      artist: F,
+      title: B,
       user: V
     } = (0, v.pi)(L),
     {
@@ -136,19 +136,19 @@ function L(e) {
         user: V,
         channel: P,
         mediaImageSrc: null == U ? true : U.src,
-        artist: B,
+        artist: F,
         description: D({
-          artist: B,
-          media: F
+          artist: F,
+          media: B
         }, P, V),
         colors: [H, Y],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, B, P, L, null == U ? true : U.src, H, Y, F, V]);
+    }, [G, F, P, L, null == U ? true : U.src, H, Y, B, V]);
   if (null == G || null == Z) return null;
-  let q = B,
+  let q = F,
     Q = [];
   if (Z.media.provider === a.p.SPOTIFY) {
     h = () => {
@@ -163,7 +163,7 @@ function L(e) {
       (0, c.d$)(G, V.id, e)
     };
     if (q = (0, r.jsx)(d.Z, {
-        artists: B,
+        artists: F,
         canOpen: null != G.sync_id,
         linkClassName: R.popoutTextSecondary,
         onOpenSpotifyArtist: e
@@ -191,7 +191,7 @@ function L(e) {
       Icon: m.Z
     }) : null,
     userDescription: (0, E.kr)(L) ? N.t.Tzx5D2 : N.t.CcVI1T,
-    title: F,
+    title: B,
     onClickTitle: h,
     subtitle: q,
     badges: null,
@@ -207,7 +207,7 @@ function L(e) {
         user: V,
         channel: P,
         generateReactionImage: z,
-        reactionImageAltText: w(B, V),
+        reactionImageAltText: w(F, V),
         entry: L,
         buttons: Q
       })

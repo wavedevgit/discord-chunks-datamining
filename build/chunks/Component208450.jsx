@@ -121,13 +121,13 @@ class z extends Chunk473749.PureComponent {
       handleDroppedFiles: this.handleDroppedFiles,
       handleDrop: this.handleDrop,
       keyBindingFn: this.handleKeyBind,
-      placeholder: null != n ? n : F.intl.string(F.t["5h0QOP"]),
+      placeholder: null != n ? n : B.intl.string(B.t["5h0QOP"]),
       editorState: t,
       onChange: this.setEditorState,
       role: "combobox",
       ariaExpanded: e,
       ariaControls: e ? W : true,
-      ariaLabel: F.intl.string(F.t["5h0QOP"]),
+      ariaLabel: B.intl.string(B.t["5h0QOP"]),
       ariaAutoComplete: "list"
     })
   }
@@ -246,7 +246,7 @@ class z extends Chunk473749.PureComponent {
           query: t,
           searchEverywhere: null != r && r,
           searchQuerySource: i
-        }), d.uvj.announce(F.intl.string(F.t.pKCxWP)), this.handleBlur(true)
+        }), d.uvj.announce(B.intl.string(B.t.pKCxWP)), this.handleBlur(true)
       }
       returntrue
     }), H(this, "handleClearSearch", e => {
@@ -274,7 +274,7 @@ class z extends Chunk473749.PureComponent {
       let {
         searchContext: a
       } = this.props;
-      if (r.isPrivate() && a.type !== B.aib.DMS) return void this.focusEditor();
+      if (r.isPrivate() && a.type !== F.aib.DMS) return void this.focusEditor();
       let o = (0, C.X3)(r);
       if (null == o) return void this.focusEditor();
       (0, U.PJ)({
@@ -284,7 +284,7 @@ class z extends Chunk473749.PureComponent {
           _editorRef: e
         } = this;
         null == e || e.focus(), this.handleSetSearchQuery({
-          query: w.ZP[B.dCx.FILTER_IN].key + "".concat(o, " "),
+          query: w.ZP[F.dCx.FILTER_IN].key + "".concat(o, " "),
           replace: true,
           searchQuerySource: G.w7.SEARCH_TEXT_INPUT
         })
@@ -490,7 +490,7 @@ function q(e) {
     j = (0, u.e7)([g.ZP, y.Z, E.Z], () => {
       let e = y.Z.getCurrentlySelectedChannelId(),
         t = E.Z.getChannel(e);
-      return g.ZP.getSection(e, null == t ? true : t.isDM()) === B.ULH.SEARCH
+      return g.ZP.getSection(e, null == t ? true : t.isDM()) === F.ULH.SEARCH
     }),
     M = j || I;
   i.useEffect(() => {
@@ -515,7 +515,7 @@ function q(e) {
         query: r,
         queryString: n,
         searchQuerySource: a
-      }), x.Z.updateSearchMode(t, B.QIO.NEWEST), K({
+      }), x.Z.updateSearchMode(t, F.QIO.NEWEST), K({
         searchContext: t,
         searchQueryString: n,
         searchEverywhere: i,
@@ -541,9 +541,9 @@ function q(e) {
     q = (0, N.U)({
       location: "Search"
     }),
-    Q = i.useMemo(() => t.type === B.aib.DMS ? F.intl.string(F.t.m7OrlR) : W || q ? F.intl.formatToPlainString(F.t.LDZtFO, {
+    Q = i.useMemo(() => t.type === F.aib.DMS ? B.intl.string(B.t.m7OrlR) : W || q ? B.intl.formatToPlainString(B.t.LDZtFO, {
       name: Y
-    }) : F.intl.string(F.t["5h0QOP"]), [t.type, q, W, Y]);
+    }) : B.intl.string(B.t["5h0QOP"]), [t.type, q, W, Y]);
   return (0, r.jsx)(z, {
     className: n,
     searchContext: t,

@@ -262,15 +262,15 @@ function eO(e) {
   let {
     currentUser: a,
     onClose: o
-  } = e, s = (0, B.Rw)(), {
+  } = e, s = (0, F.Rw)(), {
     analyticsLocations: l
-  } = (0, b.ZP)(E.Z.PREMIUM_UNCANCEL_MODAL), c = (0, B.GG)(), u = null != (t = null == s ? true : s.id) ? t : K.VU.PREMIUM_TENURE_1_MONTH, d = (0, F.Z)(u);
+  } = (0, b.ZP)(E.Z.PREMIUM_UNCANCEL_MODAL), c = (0, F.GG)(), u = null != (t = null == s ? true : s.id) ? t : K.VU.PREMIUM_TENURE_1_MONTH, d = (0, B.Z)(u);
   if (!(0, G.M5)(a, K.PremiumTypes.TIER_2) || null == c) return null;
-  let f = null != (n = null == s ? true : s.status) ? n : B.Vq.UPCOMING,
+  let f = null != (n = null == s ? true : s.status) ? n : F.Vq.UPCOMING,
     _ = null != (i = null == s ? true : s.nameUnformatted) ? i : K.vK[K.VU.PREMIUM_TENURE_1_MONTH].nameUnformatted,
     m = (0, V.J)(u),
     h = q.intl.string(_),
-    g = f === B.Vq.EARNED,
+    g = f === F.Vq.EARNED,
     y = null != s && "daysLeft" in s ? s.daysLeft : 1,
     O = q.t.pwkxYF;
   if (g) {
@@ -570,7 +570,7 @@ let eP = function(e) {
       className: Q.body,
       children: [(0, r.jsx)(p.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: Q.title,
         children: n
       }), (0, r.jsxs)("div", {

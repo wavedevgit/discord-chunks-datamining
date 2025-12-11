@@ -48,7 +48,7 @@ function h() {
           className: Chunk209668.contentFooterAdDetailedInfo,
           children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-md/medium",
-            color: "header-primary",
+            color: "text-strong",
             className: i()(Chunk209668.adDetailsTextSecondary, {
               [Chunk209668.adDetailsTextSecondaryPortrait]: require
             }),

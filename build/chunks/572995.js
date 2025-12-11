@@ -116,8 +116,8 @@ let ef = (e, t) => ec({
       assetUrl: e ? k.Z : G.Z
     },
     showYourStyle: {
-      thumbnail: B.Z,
-      assetUrl: e ? Z.Z : F.Z
+      thumbnail: F.Z,
+      assetUrl: e ? Z.Z : B.Z
     },
     yourSpace: {
       thumbnail: H.Z,

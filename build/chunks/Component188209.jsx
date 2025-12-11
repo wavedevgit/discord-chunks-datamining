@@ -149,7 +149,7 @@ function R(e) {
       className: A.copyContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: A.heading,
         children: T.intl.string(T.t["5j/Zym"])
       }), (0, r.jsx)(l.Text, {
@@ -177,14 +177,14 @@ function Z(e) {
     onClose: i,
     transitionState: s,
     sourceQuestContent: c
-  } = e, p = null != (t = (0, y.B4)(n.id)) ? t : n, C = x.jn.REWARD_MODAL, {
+  } = e, p = null != (t = (0, y.B4)(n.id)) ? t : n, C = j.jn.REWARD_MODAL, {
     rewardCode: b,
     isFetchingRewardCode: f,
     isClaimingReward: h
-  } = (0, o.cj)([j.Z], () => ({
-    rewardCode: j.Z.getRewardCode(p.id),
-    isFetchingRewardCode: j.Z.isFetchingRewardCode(p.id),
-    isClaimingReward: j.Z.isClaimingReward(p.id)
+  } = (0, o.cj)([x.Z], () => ({
+    rewardCode: x.Z.getRewardCode(p.id),
+    isFetchingRewardCode: x.Z.isFetchingRewardCode(p.id),
+    isClaimingReward: x.Z.isClaimingReward(p.id)
   })), {
     hasError: g,
     setHasError: N

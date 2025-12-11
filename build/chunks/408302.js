@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 408302, original params: e,n,t (module,exports,require) **/
+/** chunk id: 408302, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "bc0d3515e6cb489a-container",
   nuxContent: "bc0d3515e6cb489a-nuxContent",

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
@@ -24,7 +24,7 @@ function p(e) {
     guildId: t,
     welcomeMessage: n,
     className: r
-  } = e, p = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, s.e7)([f.default], () => f.default.getUser(null == n ? true : n.authorIds[0])), S = i.useMemo(() => null != p && null != E && (0, u.Y)(p, E) ? E : null, [p, E]), x = (0, s.e7)([f.default], () => f.default.getCurrentUser()), T = i.useMemo(() => {
+  } = e, p = (0, a.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), E = (0, a.e7)([f.default], () => f.default.getUser(null == n ? true : n.authorIds[0])), S = i.useMemo(() => null != p && null != E && (0, u.Y)(p, E) ? E : null, [p, E]), x = (0, a.e7)([f.default], () => f.default.getCurrentUser()), T = i.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.authorIds) ? e : []
   }, [n]);
@@ -40,7 +40,7 @@ function p(e) {
   if (null == S || null == x || null == n) return null;
   let v = null != p && p.ownerId === S.id;
   return (0, l.jsxs)(o.Zbd, {
-    className: a()(I.welcomeMessageContainer, r),
+    className: s()(I.welcomeMessageContainer, r),
     children: [(0, l.jsx)("div", {
       className: I.avatarBackground
     }), O ? (0, l.jsx)(o.qEK, {
@@ -61,7 +61,7 @@ function p(e) {
         className: I.adminUsernameContainer,
         children: [(0, l.jsx)(o.Text, {
           variant: "text-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: _
         }), v ? (0, l.jsx)(o.CEn, {
           size: "xxs",

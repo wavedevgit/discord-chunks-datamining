@@ -6,7 +6,7 @@ require.d(exports, {
   Sq: () => er,
   ZP: () => es,
   el: () => el,
-  oO: () => B,
+  oO: () => F,
   wT: () => eo,
   zO: () => eu
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./804061.js"), require("./704826.js"), require("./388685.js"), require("./539854.js");
@@ -41,15 +41,15 @@ let A = 10,
   U = /^\/quests\/([0-9-]+)\/?$/,
   G = /^\/oauth2\/authorize/,
   Z = /^#itemSkuId=([0-9]+)$/,
-  B = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
-  F = X(window.GLOBAL_ENV.INVITE_HOST),
+  F = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
+  B = X(window.GLOBAL_ENV.INVITE_HOST),
   V = X(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
   H = X(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
   Y = X("//canary.".concat(Chunk981631.$R1)),
   W = X("//ptb.".concat(Chunk981631.$R1)),
   K = X("discordapp.com"),
   z = X("discord.com"),
-  q = [Chunk226951.Z.escape(null != (s = F.host) ? s : ""), Chunk226951.Z.escape(null != (l = V.host) ? l : ""), Chunk226951.Z.escape(null != (c = H.host) ? c : ""), Chunk226951.Z.escape(null != (u = K.host) ? u : ""), Chunk226951.Z.escape(null != (d = z.host) ? d : "")].filter(Boolean),
+  q = [Chunk226951.Z.escape(null != (s = B.host) ? s : ""), Chunk226951.Z.escape(null != (l = V.host) ? l : ""), Chunk226951.Z.escape(null != (c = H.host) ? c : ""), Chunk226951.Z.escape(null != (u = K.host) ? u : ""), Chunk226951.Z.escape(null != (d = z.host) ? d : "")].filter(Boolean),
   Q = RegExp("((https?://[^ ]*)|^|[^/][^/.])(".concat(q.join("|"), ")"), "g");
 
 function X(e) {
@@ -113,7 +113,7 @@ function ea(e) {
     templateHostRemainingPath: null,
     primaryHostRemainingPath: null
   };
-  let o = en(F, a),
+  let o = en(B, a),
     s = en(V, a),
     l = null != (i = null != (r = null != (n = null != (t = en(H, a)) ? t : en(Y, a)) ? n : en(W, a)) ? r : en(K, a)) ? i : en(z, a);
   return {
@@ -128,7 +128,7 @@ function eo(e) {
   if (e.includes("\\")) {
     let r = ec(e);
     if (null == r) returnfalse;
-    if (et(F, r)) returntrue;
+    if (et(B, r)) returntrue;
     if ([H, Y, W, K, z].some(e => et(e, r))) {
       var t, n;
       return null != (n = null == (t = r.pathname) ? true : t.toUpperCase().includes(T.g.INVITE)) && n
@@ -142,7 +142,7 @@ function es(e) {
   let t = new Set,
     n = [],
     r = J(e = e.replace(Q, (e, t, n, r) => null == n ? "".concat(t, "http://").concat(r) : e)).match(I.Z.URL_REGEX),
-    i = e.match(B);
+    i = e.match(F);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
     var a, o, s, l;

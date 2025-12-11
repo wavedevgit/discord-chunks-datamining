@@ -131,16 +131,16 @@ function Z(e, t, r) {
   c.href = t, c.rel = "stylesheet", c.integrity = r, a()(null != i.head, "Document head was null"), i.head.appendChild(c)
 }
 
-function B(e, t) {
+function F(e, t) {
   for (let e of document.querySelectorAll('link[rel="stylesheet"]')) Z(t, e.href, e.integrity)
 }
 
-function F(e) {
+function B(e) {
   let t = P[e],
     n = w[e];
   if (null == t) return void C.warn("Failed to open window", e);
   let r = t.document;
-  (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", j), M ? k(e, t) : B(e, t);
+  (0, g.uF)(r, L), t.addEventListener("focus", L), t.addEventListener("blur", L), t.addEventListener("resize", j), M ? k(e, t) : F(e, t);
   let i = (0, l.createRoot)(r.getElementById(x));
   a()(null != i, "No render target for popout!"), R[e] = i, i.render(n(e))
 }
@@ -203,7 +203,7 @@ function V(e) {
 }
 
 function H(e) {
-  D.has(e) && (F(e), D.delete(e), $.emitChange())
+  D.has(e) && (B(e), D.delete(e), $.emitChange())
 }
 
 function Y(e) {

@@ -451,16 +451,16 @@ function Z(e, t, n, r, i, a) {
   if (n + r > e.length) throw RangeError("Index out of range")
 }
 
-function B(e, t, n, r, i, a) {
+function F(e, t, n, r, i, a) {
   if (n + r > e.length || n < 0) throw RangeError("Index out of range")
 }
 
-function F(e, t, n, r, i) {
-  return t *= 1, n >>>= 0, i || B(e, t, n, 4, 34028234663852886e22, false), a.write(e, t, n, r, 23, 4), n + 4
+function B(e, t, n, r, i) {
+  return t *= 1, n >>>= 0, i || F(e, t, n, 4, 34028234663852886e22, false), a.write(e, t, n, r, 23, 4), n + 4
 }
 
 function V(e, t, n, r, i) {
-  return t *= 1, n >>>= 0, i || B(e, t, n, 8, 17976931348623157e292, false), a.write(e, t, n, r, 52, 8), n + 8
+  return t *= 1, n >>>= 0, i || F(e, t, n, 8, 17976931348623157e292, false), a.write(e, t, n, r, 52, 8), n + 8
 }
 c.prototype.slice = function(e, t) {
   var n = this.length;
@@ -574,9 +574,9 @@ c.prototype.slice = function(e, t) {
 }, c.prototype.writeInt32BE = function(e, t, n) {
   return e *= 1, t >>>= 0, n || Z(this, e, t, 4, 0x7fffffff, false), e < 0 && (e = 0xffffffff + e + 1), this[t] = e >>> 24, this[t + 1] = e >>> 16, this[t + 2] = e >>> 8, this[t + 3] = 255 & e, t + 4
 }, c.prototype.writeFloatLE = function(e, t, n) {
-  return F(this, e, t, true, n)
+  return B(this, e, t, true, n)
 }, c.prototype.writeFloatBE = function(e, t, n) {
-  return F(this, e, t, false, n)
+  return B(this, e, t, false, n)
 }, c.prototype.writeDoubleLE = function(e, t, n) {
   return V(this, e, t, true, n)
 }, c.prototype.writeDoubleBE = function(e, t, n) {

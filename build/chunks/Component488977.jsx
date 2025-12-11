@@ -81,12 +81,12 @@ function L(e) {
   } = e, j = i.useRef(null), M = (0, l.e7)([S.Z], () => S.Z.entrypoint()), k = (0, I.L1)(a), U = (0, _.Eb)(k), G = (0, f.R)(a.id), Z = (0, l.e7)([E.Z], () => {
     var e;
     return null != (e = E.Z.getGuildId()) ? e : true
-  }, []), B = {
+  }, []), F = {
     location: d.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: a.id,
     section_name: L,
     source: S.Z.lastShownEntrypoint()
-  }, F = b.default.getCurrentUser(), V = (0, m.Z)({
+  }, B = b.default.getCurrentUser(), V = (0, m.Z)({
     id: a.id,
     label: N.intl.string(N.t["+NP/b2"])
   }), H = (0, T.P)({
@@ -98,7 +98,7 @@ function L(e) {
       onClick: () => {
         let e = Y ? (0, p.H)({
           applicationId: a.id,
-          referrerId: null == F ? true : F.id
+          referrerId: null == B ? true : B.id
         }) : (0, p.J)(w({
           id: a.id
         }, k));
@@ -146,12 +146,12 @@ function L(e) {
               id: "add-app",
               label: N.intl.string(N.t.NgXl3C),
               action: () => {
-                null == k.customInstallUrl && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, B), (0, v.L)(x(w({}, k), {
+                null == k.customInstallUrl && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, F), (0, v.L)(x(w({}, k), {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, B)
+                    null != t && (0, u.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, F)
                   },
                   source: "app_launcher_app_details"
                 }))

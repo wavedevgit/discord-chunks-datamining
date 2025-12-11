@@ -24,16 +24,16 @@ function x(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, x = (0, r.e7)([b.default], () => b.default.getCurrentUser()), y = f.ZP.canUseAnimatedAvatar(x), A = f.ZP.canUsePremiumProfileCustomization(x), h = n === p.pC.BANNER && A || n === p.pC.AVATAR && y, {
-    sourceAnalyticsLocations: C
-  } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
-  if (o.useEffect(() => {
-      h || d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
+  } = e, x = (0, r.e7)([b.default], () => b.default.getCurrentUser()), A = f.ZP.canUseAnimatedAvatar(x), y = f.ZP.canUsePremiumProfileCustomization(x), C = n === p.pC.BANNER && y || n === p.pC.AVATAR && A, {
+    sourceAnalyticsLocations: h
+  } = (0, s.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
+  if (i.useEffect(() => {
+      C || d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
-        location_stack: C
+        location_stack: h
       })
-    }, [h, t, C]), h) return null;
-  let P = (0, i.jsx)(s.Z, {
+    }, [C, t, h]), C) return null;
+  let P = (0, o.jsx)(c.Z, {
     className: _.__invalid_getNitroLink,
     size: a.zx.Sizes.SMALL,
     look: a.zx.Looks.LINK,
@@ -49,7 +49,7 @@ function x(e) {
     },
     disableShine: true
   });
-  return (0, i.jsx)(u.Z, {
+  return (0, o.jsx)(u.Z, {
     reducedRightPadding: true,
     className: _.nitroPreviewUpsell,
     text: v.intl.format(v.t.Og803x, {}),

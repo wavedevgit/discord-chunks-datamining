@@ -76,15 +76,15 @@ let P = new Chunk710845.Z("OverlayV3Store"),
   U = null,
   G = null,
   Z = {},
-  B = {},
-  F = {};
+  F = {},
+  B = {};
 
 function V(e, t) {
-  null == F[e] && (F[e] = new Set), F[e].add(t)
+  null == B[e] && (B[e] = new Set), B[e].add(t)
 }
 
 function H(e) {
-  null != F[e] && (F[e] = new Set)
+  null != B[e] && (B[e] = new Set)
 }
 let Y = (0, Chunk575140.r4)();
 
@@ -94,7 +94,7 @@ function W() {
 
 function K(e, t) {
   if (null != D) {
-    null != t && (B[e] = t);
+    null != t && (F[e] = t);
     try {
       if (D.trackGame(e), R.has(e)) return;
       R.add(e), (0, _.PY)(e, "maybeTrackGame", {
@@ -110,12 +110,12 @@ function K(e, t) {
 
 function z(e) {
   if (!R.has(e)) return;
-  let t = B[e],
+  let t = F[e],
     n = Z[e];
   (0, _.PY)(e, "removeTrackedGame", {
     overlayMethod: null != t ? f.gl[t] : null,
     overlayState: n
-  }), R.delete(e), delete Z[e], delete B[e], w.delete(e);
+  }), R.delete(e), delete Z[e], delete F[e], w.delete(e);
   try {
     if (null == D) return;
     D.untrackGame(e), P.verbose("Removing tracked game ".concat(e));
@@ -131,7 +131,7 @@ function z(e) {
 function q() {
   try {
     for (let e of R) null == D || D.untrackGame(module);
-    R.clear(), (0, Chunk932404.bs)(null, "clearTrackedGames"), Z = {}, B = {}, w.clear(), P.verbose("Cleared all tracked games")
+    R.clear(), (0, Chunk932404.bs)(null, "clearTrackedGames"), Z = {}, F = {}, w.clear(), P.verbose("Cleared all tracked games")
   } catch (e) {
     P.error("Error clearing tracked games:", module), (0, Chunk932404.PV)(Chunk145597.UNSET_PID, module, {
       crashType: "native"
@@ -159,7 +159,7 @@ function J() {
 function $(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (null != e) {
-    let t = B[e] === f.gl.OutOfProcessLimitedInteraction;
+    let t = F[e] === f.gl.OutOfProcessLimitedInteraction;
     if (t !== G) {
       G = t;
       try {
@@ -370,7 +370,7 @@ class eS extends(r = Chunk442837.ZP.Store) {
     return L
   }
   getKnownWindowHandlesForPID(e) {
-    return null == F[e] ? null : F[e]
+    return null == B[e] ? null : B[e]
   }
   isFocused(e) {
     return null != x && e !== d.UNSET_PID && (!!R.has(e) || e === d.DEV_PID) && x === e
@@ -398,7 +398,7 @@ class eS extends(r = Chunk442837.ZP.Store) {
   }
   getOverlayMethod(e) {
     var t;
-    return null != (t = B[e]) ? t : null
+    return null != (t = F[e]) ? t : null
   }
 }
 T(eS, "displayName", "Overlay-V3-Store");

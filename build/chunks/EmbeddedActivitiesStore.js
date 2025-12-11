@@ -86,8 +86,8 @@ function k(e, t) {
 let U = new Map,
   G = new Set,
   Z = new Map,
-  B = new Map,
   F = new Map,
+  B = new Map,
   V = new Map,
   H = new Map,
   Y = new Map,
@@ -124,8 +124,8 @@ function J(e) {
     j = _.some(e => (0, g.J)(e)),
     G = D.get(d),
     Z = U.get(k(null != y ? y : null, d)),
-    B = null == Z ? true : Z.launchParams,
-    F = {
+    F = null == Z ? true : Z.launchParams,
+    B = {
       applicationId: d,
       location: u,
       launchId: f,
@@ -133,12 +133,12 @@ function J(e) {
       url: b,
       userIds: new Set(C),
       participants: _,
-      referrerId: null != (i = null == G ? true : G.referrerId) ? i : null == B ? true : B.referrerId,
-      customId: null != (a = null == G ? true : G.customId) ? a : null == B ? true : B.customId,
+      referrerId: null != (i = null == G ? true : G.referrerId) ? i : null == F ? true : F.referrerId,
+      customId: null != (a = null == G ? true : G.customId) ? a : null == F ? true : F.customId,
       proxyTicket: m
     };
-  R && null != G && D.set(G.applicationId, A(T({}, G, F), {
-    proxyTicket: null != (o = F.proxyTicket) ? o : G.proxyTicket
+  R && null != G && D.set(G.applicationId, A(T({}, G, B), {
+    proxyTicket: null != (o = B.proxyTicket) ? o : G.proxyTicket
   }));
   let V = !j;
   null != G && u.id === G.location.id && d === G.applicationId && (!R && Array.from(G.userIds).some(e => e === N) || V) ? ee(G) : R && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && ea({
@@ -149,20 +149,20 @@ function J(e) {
     participants: _,
     isFirstActivityInChannel: v,
     isStart: null == I,
-    referrerId: F.referrerId,
-    customId: F.customId,
+    referrerId: B.referrerId,
+    customId: B.customId,
     inviterUserId: null == Z ? true : Z.inviterUserId,
-    proxyTicket: F.proxyTicket
+    proxyTicket: B.proxyTicket
   }), eO({
     channelId: null != y ? y : null,
     applicationId: d
   }));
   let H = S.filter(e => e.applicationId !== d);
-  if (C.length > 0 && H.push(F), M.set(u.id, H), null != y) {
+  if (C.length > 0 && H.push(B), M.set(u.id, H), null != y) {
     let e = (null != (s = L.get(y)) ? s : []).filter(e => e.applicationId !== d),
       t = X((0, E.j)(u)),
       n = (null != (l = x.get(t)) ? l : []).filter(e => e.applicationId !== d || e.location.id !== u.id);
-    C.length > 0 && (e.push(F), n.push(F)), L.set(y, e), x.set(t, n)
+    C.length > 0 && (e.push(B), n.push(B)), L.set(y, e), x.set(t, n)
   }
 }
 
@@ -332,8 +332,8 @@ function ec(e) {
 function eu(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = B.get(n);
-  B.set(n, {
+  } = e, n = X(t), r = F.get(n);
+  F.set(n, {
     isFetching: true,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   }), N.lastCheckedForBadgeableActivities = new Date(Date.now()).toISOString()
@@ -342,8 +342,8 @@ function eu(e) {
 function ed(e) {
   let {
     guildId: t
-  } = e, n = X(t), r = B.get(n);
-  B.set(n, {
+  } = e, n = X(t), r = F.get(n);
+  F.set(n, {
     isFetching: false,
     lastFetchTimestampMs: null == r ? true : r.lastFetchTimestampMs
   })
@@ -380,7 +380,7 @@ function ep(e) {
   ef({
     activities: n,
     now: i
-  }), B.set(r, {
+  }), F.set(r, {
     isFetching: false,
     lastFetchTimestampMs: i
   })
@@ -477,7 +477,7 @@ function ev(e) {
     pictureInPictureLockState: r,
     gridLockState: i
   } = e;
-  null == n ? F.delete(t) : F.set(t, n), null === r ? V.delete(t) : true !== r && V.set(t, r), null === i ? H.delete(t) : true !== i && H.set(t, i)
+  null == n ? B.delete(t) : B.set(t, n), null === r ? V.delete(t) : true !== r && V.set(t, r), null === i ? H.delete(t) : true !== i && H.set(t, i)
 }
 
 function eS(e) {
@@ -577,19 +577,19 @@ class eP extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getShelfFetchStatus(e) {
     let t = X(e);
-    return B.get(t)
+    return F.get(t)
   }
   shouldFetchShelf(e) {
     var t, n;
     let r = X(e),
-      i = null != (t = B.get(r)) ? t : {
+      i = null != (t = F.get(r)) ? t : {
         isFetching: false
       },
       a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > W;
     return !(null == i ? true : i.isFetching) && a
   }
   getOrientationLockStateForApp(e) {
-    return F.get(e)
+    return B.get(e)
   }
   getPipOrientationLockStateForApp(e) {
     var t;

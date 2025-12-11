@@ -67,7 +67,7 @@ function _(e) {
         ref: N,
         user: t,
         displayProfile: S,
-        themeType: j.l.SIDEBAR,
+        themeType: x.l.SIDEBAR,
         themeOverride: E,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
@@ -85,10 +85,10 @@ function _(e) {
                   user: t
                 }), (0, r.jsx)(s.Heading, {
                   variant: "heading-lg/bold",
-                  children: x.intl.string(x.t.b33pLD)
+                  children: j.intl.string(j.t.b33pLD)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: x.intl.format(Z ? x.t["8F+WNz"] : x.t["/cZp5s"], {
+                  children: j.intl.format(Z ? j.t["8F+WNz"] : j.t["/cZp5s"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]

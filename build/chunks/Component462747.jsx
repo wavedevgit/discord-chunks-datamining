@@ -78,7 +78,7 @@ function I(e) {
 function Z() {
   return (0, Chunk54381.jsx)(I, {
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "heading-xl/semibold",
       className: Chunk184494.title,
       children: Chunk388032.intl.string(Chunk388032.t.hW0mBR)
@@ -86,7 +86,7 @@ function Z() {
   })
 }
 
-function y() {
+function S() {
   return (0, Chunk54381.jsx)(I, {
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
       color: "text-default",
@@ -97,7 +97,7 @@ function y() {
   })
 }
 
-function S(e) {
+function y(e) {
   let {
     count: t
   } = e;
@@ -127,7 +127,7 @@ function E(e) {
     eventUser: t,
     guildId: n,
     onContextMenu: i
-  } = e, o = r.useRef(null), u = (0, s.e7)([x.default], () => x.default.getUser(t.user_id)), g = (0, s.e7)([m.Z, h.Z, b.default], () => t.user_id === b.default.getId() ? m.Z.getStatus() : h.Z.getStatus(t.user_id, n), [t.user_id, n]);
+  } = e, o = r.useRef(null), u = (0, s.e7)([m.default], () => m.default.getUser(t.user_id)), g = (0, s.e7)([x.Z, h.Z, b.default], () => t.user_id === b.default.getId() ? x.Z.getStatus() : h.Z.getStatus(t.user_id, n), [t.user_id, n]);
   return null == u ? null : (0, l.jsx)(f.Z, {
     targetElementRef: o,
     userId: t.user_id,
@@ -176,7 +176,7 @@ function C(e) {
       guildId: n,
       eventUser: e,
       onContextMenu: i
-    }, e.user_id)), r > 0 && (0, l.jsx)(S, {
+    }, e.user_id)), r > 0 && (0, l.jsx)(y, {
       count: r
     })]
   })
@@ -225,7 +225,7 @@ function w(e) {
   });
   if (null != s && 0 === i.length) return (0, l.jsx)(T, {
     height: d,
-    children: (0, l.jsx)(y, {})
+    children: (0, l.jsx)(S, {})
   });
   let f = 0;
   return i.length >= v.rC && u > v.rC && (f = Math.max(u - i.length, 0)), 0 === i.length ? (0, l.jsx)(T, {

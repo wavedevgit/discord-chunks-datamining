@@ -115,10 +115,10 @@ function G() {
   }
 }
 let Z = "([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})",
-  B = "\\d{4}",
-  F = "([0-9]{4})-([0-9]{1,2})",
+  F = "\\d{4}",
+  B = "([0-9]{4})-([0-9]{1,2})",
   V = "([^\\d\\s]+)",
-  H = RegExp("(?:\\s*(".concat(Z, "|").concat(F, "|").concat(B, "|").concat(V, "))"), "i"),
+  H = RegExp("(?:\\s*(".concat(Z, "|").concat(B, "|").concat(F, "|").concat(V, "))"), "i"),
   Y = RegExp("\\s*(true|false)", "i");
 
 function W(e) {

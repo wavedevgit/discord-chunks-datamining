@@ -72,7 +72,7 @@ let P = Chunk473749.memo(function(e) {
       src: S
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: _.addServerText,
       children: I.intl.string(I.t.H9jxS1)
     })]
@@ -84,7 +84,7 @@ function T(e) {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
     canEdit: u
-  } = (0, x.Z)(t);
+  } = (0, j.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(_.actionButtonsContainer, {
       [_.forceButtonsShow]: l
@@ -158,7 +158,7 @@ let N = Chunk473749.memo(function(e) {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), j = async () => {
     o(true);
     try {
       h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
@@ -208,7 +208,7 @@ let N = Chunk473749.memo(function(e) {
             children: (0, r.jsx)(f.Z, {
               className: _.icon,
               iconSrc: S,
-              guild: (0, j.e)(l),
+              guild: (0, x.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
             })
@@ -225,7 +225,7 @@ let N = Chunk473749.memo(function(e) {
         }), (0, r.jsx)(c.Text, {
           className: _.guildName,
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: l.name
         })]
       }), (0, r.jsx)(c.Text, {
@@ -263,7 +263,7 @@ let N = Chunk473749.memo(function(e) {
         children: (0, r.jsx)(c.Button, {
           loading: a,
           variant: h ? "secondary" : "active",
-          onClick: x,
+          onClick: j,
           text: P,
           fullWidth: true
         })

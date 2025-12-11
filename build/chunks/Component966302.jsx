@@ -150,7 +150,7 @@ function es(e) {
       label: K.intl.string(K.t.WAI6xu),
       className: q.actionButton,
       onClick: () => {
-        (0, B.v)(s, B.d.DISCONNECT), M.default.track(H.rMx.RING_CALL_DECLINED, J({
+        (0, F.v)(s, F.d.DISCONNECT), M.default.track(H.rMx.RING_CALL_DECLINED, J({
           location: s,
           guild_id: n.guild_id
         }, (0, m.v_)(n))), u.Z.stopRinging(n.id)
@@ -163,7 +163,7 @@ function es(e) {
         } = e;
         return (0, r.jsx)(Z.Z, {
           onClose: t,
-          onInteraction: (0, F.u)("VideoDeviceMenu", s, {
+          onInteraction: (0, B.u)("VideoDeviceMenu", s, {
             entrypoint: V.A5.CARET
           })
         })
@@ -194,7 +194,7 @@ function es(e) {
           onCameraUnavailable: C.Z,
           onChange: () => {
             var e;
-            (0, B.v)(s, B.d.JOIN_VIDEO_CALL), M.default.track(H.rMx.RING_CALL_ACCEPTED, J({
+            (0, F.v)(s, F.d.JOIN_VIDEO_CALL), M.default.track(H.rMx.RING_CALL_ACCEPTED, J({
               location: s,
               guild_id: n.guild_id
             }, (0, m.v_)(n))), f.default.selectVoiceChannel(n.id, true), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
@@ -229,7 +229,7 @@ function el(e) {
     size: ea
   }) : null, T = null != (t = (0, g.x)(m, ea, true)) ? t : I, C = (0, E.ZP)(m), [A, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(W.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), P = null != S ? "".concat(C, ", ").concat(S.name) : C, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(m.id)), Z = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
-  }, []), B = (0, c.q_F)({
+  }, []), F = (0, c.q_F)({
     value: +!!O,
     config: ee(J({}, s.config.stiff), {
       clamp: true
@@ -241,7 +241,7 @@ function el(e) {
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [m]);
-  let F = M === H.WtW.VIDEO && A && N > 0,
+  let B = M === H.WtW.VIDEO && A && N > 0,
     {
       enabled: V
     } = R.Z.useExperiment({
@@ -275,7 +275,7 @@ function el(e) {
         className: q.titleGroup,
         children: [(0, r.jsx)(c.Text, {
           className: q.title,
-          color: "header-primary",
+          color: "text-strong",
           variant: O ? "text-md/semibold" : "text-lg/semibold",
           children: P
         }), (0, r.jsx)(c.Text, {
@@ -286,7 +286,7 @@ function el(e) {
         })]
       })]
     }),
-    el = F ? et : en,
+    el = B ? et : en,
     ec = (0, l.e7)([j.Z], () => j.Z.windowSize());
   return (0, r.jsx)(h.Gt, {
     value: y,
@@ -308,9 +308,9 @@ function el(e) {
             [q.previewCamera]: O
           }, e),
           style: ee(J({}, n), {
-            width: B.value.interpolate([0, 1], [el.width, er]),
-            minHeight: B.value.interpolate([0, 1], [el.height, ei]),
-            translateX: B.value.interpolate([0, 1], [0, false * Math.abs(er - el.width) / 2])
+            width: F.value.interpolate([0, 1], [el.width, er]),
+            minHeight: F.value.interpolate([0, 1], [el.height, ei]),
+            translateX: F.value.interpolate([0, 1], [0, false * Math.abs(er - el.width) / 2])
           }),
           children: [O ? (0, r.jsx)(eo, {
             header: $
@@ -318,10 +318,10 @@ function el(e) {
             className: q.mainChannelInfo,
             children: $
           }), (0, r.jsx)(es, {
-            canVideo: F,
+            canVideo: B,
             channel: m,
             numVideoDevices: N
-          }), F && !O ? (0, r.jsx)("div", {
+          }), B && !O ? (0, r.jsx)("div", {
             "data-button-hoisted-classname-wrapper": true,
             className: q.previewButton,
             children: (0, r.jsx)(c.Button, {

@@ -183,7 +183,7 @@ function G(e) {
       title: w.intl.string(w.t.fvOqBo)
     }), (0, r.jsxs)("div", {
       className: D.details,
-      children: [(0, r.jsx)(F, {
+      children: [(0, r.jsx)(B, {
         title: w.intl.string(w.t["5D/KEH"]),
         content: j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("span", {
@@ -213,10 +213,10 @@ function G(e) {
       }), (0, r.jsx)(Z, {
         invoicePreview: $,
         subscriptionPlan: x
-      }), (0, r.jsx)(F, {
+      }), (0, r.jsx)(B, {
         title: w.intl.string(w.t.dnUzb6),
         content: (0, N.p)(null != (u = _.createdAt) ? u : _.currentPeriodStart)
-      }), (0, r.jsx)(B, {
+      }), (0, r.jsx)(F, {
         isCancelled: U,
         subscriptionPeriodEnd: en,
         renewalPlan: G
@@ -239,18 +239,18 @@ function Z(e) {
     subscriptionPlan: t,
     invoicePreview: n
   } = e;
-  if (null == t) return (0, r.jsx)(F, {
+  if (null == t) return (0, r.jsx)(B, {
     title: w.intl.string(w.t.KI7ERx),
     content: ""
   });
   let i = (0, T.og)((0, T.T4)(t.price, t.currency), t.interval, t.intervalCount),
     a = null == n ? true : n.findInvoiceItemByPlanId(t.id);
-  if (null == a) return (0, r.jsx)(F, {
+  if (null == a) return (0, r.jsx)(B, {
     title: w.intl.string(w.t.KI7ERx),
     content: i
   });
   let o = (0, T.og)((0, T.T4)(a.subscriptionPlanPrice, t.currency), t.interval, t.intervalCount);
-  return (0, r.jsx)(F, {
+  return (0, r.jsx)(B, {
     title: w.intl.string(w.t.KI7ERx),
     content: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Text, {
@@ -273,7 +273,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     isCancelled: t,
     subscriptionPeriodEnd: n,
@@ -281,7 +281,7 @@ function B(e) {
   } = e;
   if (null != i) {
     let e = (0, T.og)((0, T.T4)(i.price, i.currency), i.interval, i.intervalCount);
-    return (0, r.jsx)(F, {
+    return (0, r.jsx)(B, {
       title: w.intl.string(w.t.hIhAM3),
       content: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.Text, {
@@ -297,13 +297,13 @@ function B(e) {
       })
     })
   }
-  return (0, r.jsx)(F, {
+  return (0, r.jsx)(B, {
     title: t ? w.intl.string(w.t.enxcAl) : w.intl.string(w.t["Ms+6Zq"]),
     content: n
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     title: t,
     content: n

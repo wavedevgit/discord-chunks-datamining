@@ -113,7 +113,7 @@ function m(e) {
         className: f.productDetailContent,
         children: [(0, r.jsx)(o.Heading, {
           variant: "text-md/medium",
-          color: "header-primary",
+          color: "text-strong",
           className: f.productName,
           id: R,
           children: n

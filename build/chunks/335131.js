@@ -4,12 +4,12 @@
 require.d(exports, {
   B1: () => U,
   F$: () => x,
-  Ov: () => B,
+  Ov: () => F,
   R2: () => Z,
   Sm: () => P,
   _o: () => G,
   fK: () => k,
-  fi: () => F,
+  fi: () => B,
   jr: () => j,
   lW: () => M,
   mK: () => N,
@@ -282,7 +282,7 @@ let N = e => {
         type: "COLLECTIBLES_MARKETING_FETCH_FAILURE"
       })
     }
-  }, B = async (e, t, n) => {
+  }, F = async (e, t, n) => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SHOP_HOME_FETCH",
       tab: e,
@@ -321,7 +321,7 @@ let N = e => {
         error: t
       })
     }
-  }, F = e => {
+  }, B = e => {
     s.Z.dispatch({
       type: "COLLECTIBLES_SET_SHOP_HOME_CONFIG_OVERRIDE",
       shopHomeConfigOverride: e

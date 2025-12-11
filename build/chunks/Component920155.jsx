@@ -124,8 +124,8 @@ function w(e) {
     scrollBehavior: U = "sticky",
     modal: G = false,
     returnRef: Z,
-    experimental_ignoreModalClicks: B = true
-  } = e, [F, V] = i.useState(m), [H, Y] = i.useState(b), W = i.useRef(b), K = i.useRef(0), {
+    experimental_ignoreModalClicks: F = true
+  } = e, [B, V] = i.useState(m), [H, Y] = i.useState(b), W = i.useRef(b), K = i.useRef(0), {
     ref: z,
     width: q,
     height: Q
@@ -213,7 +213,7 @@ function w(e) {
     };
   return (0, r.jsx)(u.H, {
     targetElementRef: a,
-    shouldShow: F,
+    shouldShow: B,
     onRequestClose: g,
     position: H,
     align: ei,
@@ -226,7 +226,7 @@ function w(e) {
     autoInvert: true,
     nudgeAlignIntoViewport: "top" === H || "bottom" === H,
     closeOnClickOutside: false,
-    ignoreModalClicks: B,
+    ignoreModalClicks: F,
     scrollBehavior: U,
     renderPopout: es,
     children: P

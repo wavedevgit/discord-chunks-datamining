@@ -84,9 +84,9 @@ function I(e) {
         }
         w(false)
       }
-    }, [G, Z] = i.useState((0, f.JM)(N)), B = (e, t, n) => {
+    }, [G, Z] = i.useState((0, f.JM)(N)), F = (e, t, n) => {
       P(t), Z(n)
-    }, F = async () => (j || R || await U(), Promise.resolve({
+    }, B = async () => (j || R || await U(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
     })), V = (0, r.jsx)(a.gNt, {
@@ -101,8 +101,8 @@ function I(e) {
         }),
         focused: true,
         channel: t,
-        onChange: B,
-        onSubmit: F,
+        onChange: F,
+        onSubmit: B,
         type: d.Ie.VOICE_CHANNEL_STATUS,
         canMentionRoles: false,
         canMentionChannels: false,

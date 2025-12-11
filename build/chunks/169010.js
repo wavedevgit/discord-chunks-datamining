@@ -18,22 +18,22 @@ let s = Object.entries({
   c = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
 function u(e, t) {
-  let n = (0, l.e7)([a.Z], () => a.Z.getStateForGuild(e));
+  let n = (0, l.e7)([o.Z], () => o.Z.getStateForGuild(e));
   return r.useMemo(() => c.reduce((e, r) => {
     let l = null == n ? true : n.powerupCatalog[r];
     if (null == l) return e;
-    let a = function(e, t, n) {
+    let o = function(e, t, n) {
       let r = [];
-      n && e === o.Us.PERK && r.push({
+      n && e === a.Us.PERK && r.push({
         type: "gameServer"
       });
       let l = t.reduce((e, t) => {
-        if (t.type !== o.Us.PERK) return e;
+        if (t.type !== a.Us.PERK) return e;
         let n = s[t.skuId];
         return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
       }, {});
       for (let e of t) {
-        if (e.type === o.Us.LEVEL) {
+        if (e.type === a.Us.LEVEL) {
           r.push({
             type: "singleLevel",
             powerup: e
@@ -69,7 +69,7 @@ function u(e, t) {
     }(r, l, t);
     return e.push({
       type: r,
-      listings: a
+      listings: o
     }), e
   }, []), [null == n ? true : n.powerupCatalog, t])
 }

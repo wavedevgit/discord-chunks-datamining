@@ -210,7 +210,7 @@ class Q extends(r = Chunk473749.Component) {
       let {
         onBeforeUnload: t
       } = this.props, n = () => {
-        B.Z.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.ZP.close(this.props.windowKey)
+        F.Z.unmountWindow(this.props.windowKey), k.isPlatformEmbedded && G.ZP.close(this.props.windowKey)
       };
       null != t ? t({
         e,
@@ -253,9 +253,9 @@ let X = Chunk473749.forwardRef(function(e, t) {
     let {
       guestWindow: r,
       isFullScreen: a
-    } = (0, _.cj)([B.Z], () => ({
-      guestWindow: B.Z.getWindow(e.windowKey),
-      isFullScreen: B.Z.isWindowFullScreen(e.windowKey)
+    } = (0, _.cj)([F.Z], () => ({
+      guestWindow: F.Z.getWindow(e.windowKey),
+      isFullScreen: F.Z.isWindowFullScreen(e.windowKey)
     }));
     c()(null != r, "Missing guestWindow reference");
     let {

@@ -58,7 +58,7 @@ function G(e) {
       })
     }), (0, a.jsx)(c.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: M.detailHeader,
       lineClamp: 1,
       children: null == s ? true : s.name
@@ -123,8 +123,8 @@ let U = function() {
     U = (0, Chunk881294.nu)(),
     F = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.CATEGORY ? Chunk548514.categoryId : true,
     {
-      applicationId: H,
-      section: z
+      applicationId: z,
+      section: H
     } = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.APPLICATION ? Chunk548514 : {},
     {
       query: V,
@@ -165,7 +165,7 @@ let U = function() {
   }, [U]), Chunk473749.useEffect(() => Chunk258971.aQ.setState({
     lastItem: Chunk548514
   }), [Chunk548514]);
-  let er = null != H,
+  let er = null != z,
     ei = (null == Chunk548514 ? true : Chunk548514.type) === Chunk258971.m_.SEARCH,
     {
       searchQuery: el,
@@ -194,8 +194,8 @@ let U = function() {
     ef = Chunk473749.useCallback(e => (0, N.ph)({
       applicationId: e
     }), []),
-    eb = er || ei,
-    eg = Chunk473749.useCallback(() => {
+    eg = er || ei,
+    eb = Chunk473749.useCallback(() => {
       null != (0, Chunk258971.Uc)() ? (0, Chunk703656.op)() : (0, Chunk133743.Yp)()
     }, []),
     ex = Chunk473749.useMemo(() => (0, Chunk392711.debounce)(e => {
@@ -225,22 +225,22 @@ let U = function() {
     children: [exports ? (0, Chunk54381.jsx)(B, {}) : null, (0, Chunk54381.jsxs)("div", {
       className: Chunk563267.innerContainer,
       children: [(0, Chunk54381.jsxs)(Chunk611928.ZP, {
-        variant: eb ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
-        children: [!eb && (0, Chunk54381.jsx)(Chunk611928.z6, {
+        variant: eg ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
+        children: [!eg && (0, Chunk54381.jsx)(Chunk611928.z6, {
           scrollPosition: Chunk120356
         }), er ? (0, Chunk54381.jsx)(G, {
-          applicationId: H,
+          applicationId: z,
           hideDetailHeaderButtons: $,
-          onClickBack: eg
+          onClickBack: eb
         }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [ei ? (0, Chunk54381.jsx)(Chunk611928.Cm, {
             icon: Chunk481060.j9r,
-            onClick: eg
+            onClick: eb
           }) : (0, Chunk54381.jsx)(Chunk611928.aV, {
             icon: Chunk481060.jje
           }), ei ? (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
-            color: "header-primary",
+            color: "text-strong",
             className: Chunk563267.searchHeader,
             children: null != V && "" !== V ? Chunk388032.intl.formatToPlainString(Chunk388032.t.zHdzqW, {
               query: V
@@ -266,8 +266,8 @@ let U = function() {
       }), er ? (0, Chunk54381.jsx)(Chunk666697.Z, {
         onScroll: e => ev(e, E.m_.APPLICATION),
         onSelectApplication: ef,
-        applicationId: H,
-        initialTab: z,
+        applicationId: z,
+        initialTab: H,
         onButtonsVisibilityChange: ee
       }) : ei ? (0, Chunk54381.jsx)(Chunk569527.Z, {
         onSelectApplication: ef,

@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   HE: () => u,
-  HZ: () => m,
-  Pk: () => p,
-  e$: () => b,
-  l_: () => f,
+  HZ: () => f,
+  Pk: () => b,
+  e$: () => p,
+  l_: () => m,
   ss: () => x,
   xI: () => g
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
@@ -33,7 +33,7 @@ function g(e) {
   })
 }
 
-function m(e, t) {
+function f(e, t) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE",
     index: e,
@@ -41,28 +41,28 @@ function m(e, t) {
   })
 }
 
-function f(e) {
+function m(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER",
     connections: e
   })
 }
 
-function p() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"
   })
 }
-async function b(e) {
+async function p(e) {
   var t, n, u;
   let g = s.Z.getEditedConnections(),
-    m = [];
+    f = [];
   if (g.forEach(e => {
       let t = (0, c.t9)(e);
-      m.push(...t)
-    }), m.length > 0) throw h(m), i.Z.show({
+      f.push(...t)
+    }), f.length > 0) throw h(f), i.Z.show({
     title: d.intl.string(d.t.ISppXw),
-    body: m.join("\n")
+    body: f.join("\n")
   }), Error("failed to validate connections");
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT"
@@ -96,5 +96,5 @@ function h(e) {
 
 function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return t || s.Z.hasChanges() ? b(e) : Promise.resolve()
+  return t || s.Z.hasChanges() ? p(e) : Promise.resolve()
 }

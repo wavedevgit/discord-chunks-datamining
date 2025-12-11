@@ -800,8 +800,8 @@ let ta = (0, Chunk112724.Z)(tl),
     let {
       providedChannel: n
     } = e, [l, a] = i.useState(null), s = (0, p.e7)([eV.Z], () => eV.Z.getChannelId()), o = (0, p.e7)([eV.Z], () => eV.Z.getVoiceChannelId()), c = (0, p.e7)([ek.Z], () => null != n ? n : ek.Z.getChannel(s), [s, n]), g = (0, p.e7)([ek.Z], () => ek.Z.getChannel(o), [o]), b = null == c ? true : c.parent_id, y = (0, p.e7)([ek.Z], () => ek.Z.getChannel(b), [b]), O = (0, p.e7)([eH.Z], () => eH.Z.getGuild(null == c ? true : c.guild_id), [c]), {
-      needSubscriptionToAccess: j
-    } = (0, K.Z)(null != (t = null == c ? true : c.id) ? t : true), x = (0, p.e7)([N.Z], () => {
+      needSubscriptionToAccess: x
+    } = (0, K.Z)(null != (t = null == c ? true : c.id) ? t : true), j = (0, p.e7)([N.Z], () => {
       let e = null != s ? N.Z.getParticipants(s) : [],
         t = null != s ? N.Z.getActivityParticipants(s) : [];
       return e.length - t.length > 0
@@ -819,7 +819,7 @@ let ta = (0, Chunk112724.Z)(tl),
       M = (0, p.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
       k = null != L && !(0, S.Z)(null == c ? true : c.id) && M === e3.Ez.PANEL,
       G = (0, p.e7)([eY.Z], () => null != c && c.isVocalThread() && !d().isEmpty(eY.Z.getVoiceStatesForChannel(c.id)), [c]),
-      H = null != c && c.isPrivate() && !k && x,
+      H = null != c && c.isPrivate() && !k && j,
       V = (null == c ? true : c.isGuildVocal()) || H || G,
       z = (0, p.e7)([F.Z], () => F.Z.getFrameLayoutMode() === e2.U.FOCUSED),
       {
@@ -875,15 +875,15 @@ let ta = (0, Chunk112724.Z)(tl),
     }, [l, ef]);
     let ey = (0, v.ts)(c),
       eO = null != c && c.isPrivate(),
-      ej = (0, C.Z)(eO),
-      ex = (0, C.Z)(null == c ? true : c.id);
+      ex = (0, C.Z)(eO),
+      ej = (0, C.Z)(null == c ? true : c.id);
     i.useEffect(() => {
-      let e = ej && !eO,
-        t = ej && eO && (null == c ? true : c.id) !== ex;
+      let e = ex && !eO,
+        t = ex && eO && (null == c ? true : c.id) !== ej;
       (e || t) && (0, U.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
         dismissAction: e8.L.AUTO
       })
-    }, [null == c ? true : c.id, ex, eO, ej]);
+    }, [null == c ? true : c.id, ej, eO, ex]);
     let eC = (0, f.useHasAnyModalOpen)();
     return (0, r.jsx)(ta, tr(tn({
       guildId: null == c ? true : c.guild_id,
@@ -894,14 +894,14 @@ let ta = (0, Chunk112724.Z)(tl),
       parentChannel: y,
       voiceChannel: g,
       layout: Q,
-      needSubscriptionToAccess: j,
+      needSubscriptionToAccess: x,
       isLurking: Y,
       hasModalOpen: eC,
       section: et,
       channelSidebarState: en,
       guildSidebarState: ei,
       guild: O,
-      showCall: !j && V,
+      showCall: !x && V,
       showActivityPanel: k,
       showFramePanel: z,
       channelIsContentGated: J,

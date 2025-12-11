@@ -1,7 +1,7 @@
 /** Chunk was on 59298 **/
 /** chunk id: 193845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => y
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,19 +45,19 @@ function S(e) {
       className: O.headerText,
       children: [(0, i.jsx)(l.Heading, {
         variant: "heading-lg/extrabold",
-        color: "header-primary",
+        color: "text-strong",
         children: E.intl.string(E.t.MatO7M)
       }), (0, i.jsx)(l.Text, {
         variant: "text-md/normal",
-        color: "header-primary",
+        color: "text-strong",
         children: E.intl.string(E.t.VyPIeu)
       })]
     })]
   })
 }
-let h = e => e.toString() === f.Plq.MENTION_EVERYONE.toString() ? E.intl.string(E.t.yCpsQw) : (0, s.wt)(e);
+let T = e => e.toString() === f.Plq.MENTION_EVERYONE.toString() ? E.intl.string(E.t.yCpsQw) : (0, s.wt)(e);
 
-function T(e) {
+function h(e) {
   let {
     permissions: t
   } = e;
@@ -77,7 +77,7 @@ function T(e) {
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: h(e)
+          children: T(e)
         })]
       }, t))
     })]
@@ -104,7 +104,7 @@ function I(e) {
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: h(e)
+          children: T(e)
         })]
       }, t))
     })]
@@ -122,7 +122,7 @@ function N(e) {
     "data-migration-pending": true,
     children: (0, i.jsxs)("div", {
       className: O.table,
-      children: [(0, i.jsx)(T, {
+      children: [(0, i.jsx)(h, {
         permissions: n
       }), (0, i.jsx)(I, {
         permissions: a
@@ -131,7 +131,7 @@ function N(e) {
   })
 }
 
-function y(e) {
+function b(e) {
   let {
     onConfirm: t,
     onDismiss: n
@@ -153,7 +153,7 @@ function y(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   let {
     guild: t,
     transitionState: n,
@@ -214,7 +214,7 @@ function b(e) {
       guild: t
     }), (0, i.jsx)(N, {
       permissions: s
-    }), (0, i.jsx)(y, {
+    }), (0, i.jsx)(b, {
       onConfirm: c,
       onDismiss: () => {
         r()

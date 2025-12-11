@@ -60,7 +60,7 @@ function y(t) {
     onBlock: n,
     onIgnore: i,
     location: o,
-    disallowIgnore: s,
+    disallowIgnore: c,
     guildId: d,
     channelId: y
   } = t, N = (0, l.e7)([f.Z], () => f.Z.isIgnored(e.id));
@@ -70,28 +70,28 @@ function y(t) {
       className: I.confirmationHeader,
       children: [(0, r.jsxs)("div", {
         className: I.iconContainer,
-        children: [(0, r.jsx)(c.qEK, {
-          size: c.EFr.SIZE_56,
+        children: [(0, r.jsx)(s.qEK, {
+          size: s.EFr.SIZE_56,
           src: e.getAvatarURL(true, 64),
           "aria-hidden": true
         }), (0, r.jsx)("div", {
           className: I.icon,
-          children: (0, r.jsx)(c.t6m, {})
+          children: (0, r.jsx)(s.t6m, {})
         })]
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(c.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xl/bold",
-          color: "header-primary",
+          color: "text-strong",
           children: b.intl.format(b.t.CIbzHR, {
-            username: j.ZP.getName(d, y, e)
+            username: x.ZP.getName(d, y, e)
           })
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "text-default",
           children: b.intl.string(b.t.S70jou)
         })]
       })]
-    }), (0, r.jsx)(a.Z, {}), s || N ? null : (0, r.jsxs)("div", {
+    }), (0, r.jsx)(a.Z, {}), c || N ? null : (0, r.jsxs)("div", {
       className: I.otherOptions,
       children: [(0, r.jsx)(u.rT, {
         title: b.intl.string(b.t["+BJTcB"]),
@@ -103,9 +103,9 @@ function y(t) {
           buttonText: b.intl.string(b.t.mxJOd9),
           onButtonPress: () => {
             O.default.track(p.rMx.USER_REMEDIATION_ACTION, {
-              action: g.l.GOTO_IGNORE,
+              action: j.l.GOTO_IGNORE,
               location: o
-            }), (0, c.pTH)(), (0, c.h7j)(t => (0, r.jsx)(x.default, h(E({}, t), {
+            }), (0, s.pTH)(), (0, s.h7j)(t => (0, r.jsx)(g.default, h(E({}, t), {
               user: e,
               guildId: d,
               channelId: y,
@@ -115,7 +115,7 @@ function y(t) {
             })))
           }
         })
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         className: I.featureGuide,
         children: b.intl.format(b.t.DJN6eZ, {
@@ -135,8 +135,8 @@ function N(t) {
     location: u = "ContextMenu",
     disallowIgnore: f,
     guildId: m,
-    channelId: j
-  } = t, x = function(t, e) {
+    channelId: x
+  } = t, g = function(t, e) {
     if (null == t) return {};
     var n, r, i = function(t, e) {
       if (null == t) return {};
@@ -153,33 +153,33 @@ function N(t) {
   }(t, ["user", "onBlock", "onCancel", "onIgnore", "location", "disallowIgnore", "guildId", "channelId"]);
   return i.useLayoutEffect(() => () => {
     O.default.track(p.rMx.USER_REMEDIATION_ACTION, {
-      action: g.l.DISMISS_BLOCK,
+      action: j.l.DISMISS_BLOCK,
       location: u
     })
-  }, [u]), (0, r.jsx)(c.VoidConfirmModal, h(E({
+  }, [u]), (0, r.jsx)(s.VoidConfirmModal, h(E({
     confirmText: b.intl.string(b.t.l4Emac),
     cancelText: b.intl.string(b.t["ETE/oC"]),
     onCancel: () => {
       O.default.track(p.rMx.USER_REMEDIATION_ACTION, {
-        action: g.l.CANCEL_BLOCK,
+        action: j.l.CANCEL_BLOCK,
         location: u
       }), null == l || l()
     },
     onConfirm: () => {
-      null == n || n(), s.Z.blockUser(e.id, {
+      null == n || n(), c.Z.blockUser(e.id, {
         location: u
       }).then(() => {
-        O.default.track(p.rMx.BLOCK_USER_CONFIRMED), d.Z.showBlockSuccessToast(e.id, null != j ? j : true)
+        O.default.track(p.rMx.BLOCK_USER_CONFIRMED), d.Z.showBlockSuccessToast(e.id, null != x ? x : true)
       })
     },
     impression: {
       impressionName: o.ImpressionNames.BLOCK_USER_CONFIRMATION
     }
-  }, x), {
+  }, g), {
     children: (0, r.jsx)(y, {
       user: e,
       guildId: m,
-      channelId: j,
+      channelId: x,
       onBlock: n,
       onIgnore: a,
       disallowIgnore: f

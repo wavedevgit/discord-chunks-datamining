@@ -23,24 +23,24 @@ let s = e => {
     return [r(e), r(t), r(n)].join(":")
   }(s, c, u);
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: i.container,
     role: "timer",
     children: [d.split("").map((e, t) => ":" === e ? (0, r.jsx)(l.Text, {
       color: "none",
       variant: "md" === n ? "heading-lg/extrabold" : "heading-xxl/extrabold",
-      className: o.delineator,
+      className: i.delineator,
       "aria-hidden": true,
       tag: "div",
       children: e
     }, t) : (0, r.jsx)(l.Text, {
       color: "always-white",
       variant: "md" === n ? "heading-md/bold" : "heading-xl/bold",
-      className: o.number,
+      className: i.number,
       "aria-hidden": true,
       tag: "div",
       children: e
     }, t)), (0, r.jsx)(l.nn4, {
-      children: i.intl.format(i.t.j6IyVe, {
+      children: o.intl.format(o.t.j6IyVe, {
         days: s,
         hours: c,
         minutes: u

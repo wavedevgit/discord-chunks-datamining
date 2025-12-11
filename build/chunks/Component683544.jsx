@@ -38,15 +38,15 @@ let C = {
       I(1)
     }, [n]);
     let P = r.useMemo(() => ({
-        query: g.EMPTY_QUERY,
+        query: b.EMPTY_QUERY,
         page: y,
-        pageSize: g.PAGE_SIZE,
+        pageSize: b.PAGE_SIZE,
         categoryId: n
       }), [y, n]),
       O = (0, l.e7)([u.Z], () => u.Z.getFetchState({
-        query: g.EMPTY_QUERY,
+        query: b.EMPTY_QUERY,
         page: y,
-        pageSize: g.PAGE_SIZE,
+        pageSize: b.PAGE_SIZE,
         categoryId: n
       })),
       E = (0, l.cj)([u.Z], () => {
@@ -69,14 +69,14 @@ let C = {
           fetchCounts: i
         } = e;
         i && c.yC({
-          query: g.EMPTY_QUERY,
+          query: b.EMPTY_QUERY,
           guildId: r
         }), c.yC({
-          query: g.EMPTY_QUERY,
+          query: b.EMPTY_QUERY,
           guildId: r,
           options: {
             page: t,
-            pageSize: g.PAGE_SIZE,
+            pageSize: b.PAGE_SIZE,
             categoryId: n
           },
           onSuccessCallback: a
@@ -91,7 +91,7 @@ let C = {
     }, [n, _, Z, y]);
     let w = r.useCallback((e, t) => {
       (0, p.zZ)(x.rMx.APP_DIRECTORY_SEARCH_RESULT_CLICKED, {
-        current_page: b.m_.SEARCH,
+        current_page: g.m_.SEARCH,
         application_id: e,
         load_id: L,
         position: t
@@ -118,8 +118,8 @@ let C = {
         })
       }), (0, a.jsx)(s.DsT, {
         className: v.paginationInput,
-        totalCount: Math.min(A * g.PAGE_SIZE, g.MAX_PAGES * g.PAGE_SIZE),
-        pageSize: g.PAGE_SIZE,
+        totalCount: Math.min(A * b.PAGE_SIZE, b.MAX_PAGES * b.PAGE_SIZE),
+        pageSize: b.PAGE_SIZE,
         disablePaginationGap: true,
         hideMaxPage: true,
         currentPage: y,

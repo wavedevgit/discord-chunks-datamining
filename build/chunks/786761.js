@@ -109,9 +109,9 @@ function P(e) {
     U = null == e ? true : e.gift_info,
     G = e.gifting_prompt,
     Z = null != e.interaction ? c.Z.createFromServer(e.interaction) : null,
-    B = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
-    F = e.content;
-  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), e.type === y.uaV.PREMIUM_GROUP_INVITE && (m = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, F = ""), A(e)) ? I(v({}, k), {
+    F = e.type === y.uaV.THREAD_STARTER_MESSAGE ? null == (r = e.referenced_message) || null == (n = r.author) ? true : n.id : true,
+    B = e.content;
+  return new u.ZP((e.type === y.uaV.PREMIUM_REFERRAL && (_ = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), e.type === y.uaV.PREMIUM_GROUP_INVITE && (m = g.default.isProbablyAValidSnowflake(e.content) ? e.content : true, B = ""), A(e)) ? I(v({}, k), {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,
@@ -121,8 +121,8 @@ function P(e) {
   }) : I(v({}, e, k, S.toJS()), {
     author: L,
     webhookId: e.webhook_id,
-    blocked: p.Z.isBlockedForMessage(e) || null != B && p.Z.isBlocked(B),
-    ignored: p.Z.isIgnoredForMessage(e) || null != B && p.Z.isIgnored(B),
+    blocked: p.Z.isBlockedForMessage(e) || null != F && p.Z.isBlocked(F),
+    ignored: p.Z.isIgnoredForMessage(e) || null != F && p.Z.isIgnored(F),
     mentionEveryone: e.mention_everyone,
     mentions: T,
     mentionRoles: P,
@@ -138,7 +138,7 @@ function P(e) {
       mentionGames: w.map(e => e.id)
     }),
     giftCodes: (0, h.Fp)(e) ? (0, h.Q_)(null == e ? true : e.embeds[0].url) : (0, h.Q_)(e.content),
-    content: F,
+    content: B,
     referralTrialOfferId: _,
     premiumGroupInviteId: m,
     call: x(e.call, S.timestamp),

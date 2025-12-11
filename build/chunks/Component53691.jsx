@@ -81,7 +81,7 @@ function h(e) {
     }, g),
     children: [!I && C, (0, r.jsx)(s.Text, {
       variant: null != i ? i : "text-sm/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: p.upsellText,
       children: n
     }), "string" == typeof _ ? I ? (0, r.jsx)(u.Z, {

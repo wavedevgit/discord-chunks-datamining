@@ -107,13 +107,13 @@ function j(e) {
     onRemoveRole: b
   } = e, T = i.useRef({}), A = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [R, j] = i.useState(f), [M, k] = i.useState(D), [U, G] = i.useState(false), Z = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
+  }, [R, j] = i.useState(f), [M, k] = i.useState(D), [U, G] = i.useState(false), Z = i.useRef(null), F = i.useRef(null), B = i.useRef(0);
   i.useLayoutEffect(() => {
-    F.current = 0
+    B.current = 0
   }, [f]), i.useLayoutEffect(() => {
     if (U) return;
     let e = L(Z.current),
-      t = L(B.current),
+      t = L(F.current),
       n = [],
       r = D - e - t;
     for (let e = 0; e < x; e++) {
@@ -122,7 +122,7 @@ function j(e) {
         let i = f[r],
           a = T.current[i.id];
         if (null == a) {
-          0 === F.current && n.push(i);
+          0 === B.current && n.push(i);
           continue
         }
         let o = Math.min(a.getBoundingClientRect().width, t);
@@ -130,7 +130,7 @@ function j(e) {
         e += o + w, n.push(i)
       }
     }
-    j(n.length === R.length ? R : n), k(r), F.current++
+    j(n.length === R.length ? R : n), k(r), B.current++
   }, [f, R, U]);
   let V = i.useMemo(() => "roles-".concat((0, a.Z)()), []),
     H = (0, o.ZP)({
@@ -208,7 +208,7 @@ function j(e) {
               })
             })
           }) : null, _ && null != d ? (0, r.jsx)(O.Z, {
-            buttonRef: B,
+            buttonRef: F,
             guild: l,
             guildMember: d,
             numRoles: Y,

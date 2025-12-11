@@ -101,7 +101,7 @@ function E(e) {
           children: (0, r.jsx)(s.Text, {
             className: a()(g.pronounsText, I),
             variant: "text-sm/medium",
-            color: "header-primary",
+            color: "text-strong",
             children: v
           })
         })]

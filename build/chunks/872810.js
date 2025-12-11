@@ -2,11 +2,11 @@
 /** chunk id: 872810, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L6: () => F,
+  L6: () => B,
   Rc: () => Z,
   WH: () => R,
   aP: () => k,
-  dV: () => B,
+  dV: () => F,
   g: () => M,
   iV: () => j,
   n9: () => U,
@@ -207,7 +207,7 @@ function Z(e) {
   }, e))
 }
 
-function B(e, t) {
+function F(e, t) {
   o.tn.patch({
     url: T.ANM.STREAM(e),
     body: {
@@ -218,7 +218,7 @@ function B(e, t) {
   })
 }
 
-function F() {
+function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
     t = Chunk199902.Z.getCurrentUserActiveStream();
   null != exports && M((0, Chunk569545.V9)(exports), module)

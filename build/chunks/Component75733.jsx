@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk857413 = require("./857413.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,16 +34,16 @@ function f(e) {
   }
   return e
 }
-let p = {
+let b = {
   label: ""
 };
 
-function b(e) {
+function p(e) {
   let {
     emoji: t,
     disabled: n,
     handleSelectEmoji: d
-  } = e, g = i.useRef(null), m = i.useMemo(() => null == t || null == t.name ? null : function() {
+  } = e, g = i.useRef(null), f = i.useMemo(() => null == t || null == t.name ? null : function() {
     var e;
     let n = c.ZP.isCustomEmoji(t) ? t.name : t.surrogates;
     return (0, r.jsx)(a.Z, {
@@ -55,7 +55,7 @@ function b(e) {
   return n ? (0, r.jsx)(s.Z, {
     tabIndex: false,
     active: false,
-    renderButtonContents: m
+    renderButtonContents: f
   }) : (0, r.jsx)(l.yRy, {
     targetElementRef: g,
     position: "bottom",
@@ -74,11 +74,11 @@ function b(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(s.Z, (n = f({}, e), i = i = {
+      return (0, r.jsx)(s.Z, (n = m({}, e), i = i = {
         ref: g,
         tabIndex: 0,
         active: l,
-        renderButtonContents: m
+        renderButtonContents: f
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -117,9 +117,9 @@ function h(e) {
     s(t, a, {
       label: e
     })
-  }, [t, a, s]), g = i.useMemo(() => n.emoji, [n.emoji]), f = null != n.label && n.label.length > 0 || null != n.emoji;
+  }, [t, a, s]), g = i.useMemo(() => n.emoji, [n.emoji]), m = null != n.label && n.label.length > 0 || null != n.emoji;
   return (0, r.jsx)("div", {
-    className: m.traitWrapper,
+    className: f.traitWrapper,
     children: (0, r.jsx)(l.oil, {
       disabled: o,
       value: n.label,
@@ -127,14 +127,14 @@ function h(e) {
       maxLength: 24,
       leading: {
         type: "emoji",
-        button: (0, r.jsx)(b, {
+        button: (0, r.jsx)(p, {
           emoji: g,
           disabled: o,
           handleSelectEmoji: d
         })
       },
       clearable: {
-        show: f
+        show: m
       },
       onClear: c
     })
@@ -148,7 +148,7 @@ function j(e) {
     canManageGuild: n
   } = e, a = i.useMemo(() => t.traits, [t]), s = i.useCallback((e, t, n) => {
     let r = [...a];
-    r[t] = f({}, a[t], n), d.Z.updateGuildProfile(e, {
+    r[t] = m({}, a[t], n), d.Z.updateGuildProfile(e, {
       traits: r
     })
   }, [a]);
@@ -156,12 +156,12 @@ function j(e) {
     label: g.intl.string(g.t.S6JNrh),
     description: g.intl.string(g.t.l7Ig5Z),
     children: (0, r.jsx)("div", {
-      className: m.grid,
+      className: f.grid,
       children: x.map(e => {
         var i;
         return (0, r.jsx)(h, {
           guildId: t.id,
-          trait: null != (i = a[e]) ? i : p,
+          trait: null != (i = a[e]) ? i : b,
           index: e,
           onTraitUpdate: s,
           disabled: !n

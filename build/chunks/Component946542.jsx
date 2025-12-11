@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk411317 = require("./411317.js");
 
-function b(e) {
+function g(e) {
   let {
     applicationId: t,
     similarApplications: n,
@@ -43,7 +43,7 @@ function b(e) {
   return (0, a.jsx)("div", {
     className: f.contentContainer,
     ref: o,
-    children: n.map((e, n) => (0, a.jsx)(g, {
+    children: n.map((e, n) => (0, a.jsx)(b, {
       applicationId: t,
       similarApplication: e,
       onSelectApplication: l,
@@ -53,14 +53,14 @@ function b(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   var t, n, i;
   let {
     applicationId: o,
     similarApplication: u,
     onSelectApplication: h,
-    position: b,
-    similarLoadId: g
+    position: g,
+    similarLoadId: b
   } = e, x = (0, p.Z)({
     application: u
   }), v = null == (t = u.categories) ? true : t[0], C = r.useMemo(() => s.ZP.getApplicationIconURL({
@@ -72,11 +72,11 @@ function g(e) {
       current_page: "product",
       application_id: o,
       suggested_application_id: u.id,
-      position: b,
-      load_id: g,
+      position: g,
+      load_id: b,
       shown_mutual_guilds_count: x.length
     }), h(u.id)
-  }, [h, u.id, o, x.length, g, b]);
+  }, [h, u.id, o, x.length, b, g]);
   return (0, a.jsxs)(l.P3F, {
     onClick: j,
     className: f.appContainer,
@@ -98,7 +98,7 @@ function g(e) {
           },
           children: (0, a.jsx)(l.Heading, {
             variant: "heading-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             className: f.appName,
             children: u.name
           })
@@ -139,12 +139,12 @@ let x = function(e) {
       className: f.divider
     }), (0, a.jsx)(l.Heading, {
       variant: "heading-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: f.sectionHeader,
       children: h.intl.string(h.t.E8wCnk)
     }), (0, a.jsx)(u.Z, {
       loading: n === o.M.FETCHING,
-      children: null != r ? (0, a.jsx)(b, {
+      children: null != r ? (0, a.jsx)(g, {
         applicationId: t,
         similarApplications: r,
         onSelectApplication: i,

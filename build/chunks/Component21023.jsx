@@ -33,7 +33,7 @@ let p = e => {
       variant: n
     } = e;
     return (0, r.jsx)(i.Text, {
-      color: "header-primary",
+      color: "text-strong",
       variant: null != n ? n : "text-md/semibold",
       children: t
     })

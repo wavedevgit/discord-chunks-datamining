@@ -123,14 +123,14 @@ function Z(e) {
     return (0, u.isArray)(r) ? t[n] = r.join("\n") : t[n] = r, t
   }, {})
 }
-let B = d().debounce(() => {
+let F = d().debounce(() => {
   if (null == o || null == a) returnfalse;
   let e = o.toJS(),
     t = a.toJS();
   x.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
 }, 500);
 
-function F(e) {
+function B(e) {
   let {
     name: t,
     channelType: n,
@@ -163,7 +163,7 @@ function F(e) {
     locked: f
   }))), null != p && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     invitable: p
-  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != m && (o = o.set("template", m)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== h && (o = o.set("defaultReactionEmoji", h)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== S && (o = o.set("iconEmoji", S)), null != T && (o = o.set("themeColor", T)), B()
+  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != m && (o = o.set("template", m)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== h && (o = o.set("defaultReactionEmoji", h)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== S && (o = o.set("iconEmoji", S)), null != T && (o = o.set("themeColor", T)), F()
 }
 
 function V(e) {
@@ -290,7 +290,7 @@ let $ = new J(Chunk570140.Z, {
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: q,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: q,
     CHANNEL_SETTINGS_OVERWRITE_SELECT: X,
-    CHANNEL_SETTINGS_UPDATE: F,
+    CHANNEL_SETTINGS_UPDATE: B,
     CHANNEL_SETTINGS_SET_SECTION: M,
     CHANNEL_SETTINGS_LOADED_INVITES: H,
     CHANNEL_UPDATES: z,

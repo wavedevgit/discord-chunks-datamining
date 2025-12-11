@@ -2,7 +2,7 @@
 /** chunk id: 231610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,11 +16,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk357923 = require("./357923.js");
 
-function f() {
+function m() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [, f] = Chunk290348.p9(module, exports), [p, b] = Chunk290348.Ek(module, exports), h = Chunk290348.qs(module, exports);
+  } = (0, Chunk727843.N)(), [, m] = Chunk290348.p9(module, exports), [b, p] = Chunk290348.Ek(module, exports), h = Chunk290348.qs(module, exports);
 
   function x() {
     (0, Chunk481060.ZDy)(async () => {
@@ -48,11 +48,11 @@ function f() {
           return e
         }({}, n), l = l = {
           guildId: t,
-          onUploadIcon: e => f({
+          onUploadIcon: e => m({
             icon: e,
             unicodeEmoji: null
           }),
-          onSelectUnicodeEmoji: e => f({
+          onSelectUnicodeEmoji: e => m({
             icon: null,
             unicodeEmoji: e
           })
@@ -80,8 +80,8 @@ function f() {
         label: Chunk388032.intl.string(Chunk388032.t["6OUqDa"]),
         disabled: j,
         children: (0, Chunk54381.jsx)(Chunk619326.Z, {
-          value: p,
-          onChange: b,
+          value: b,
+          onChange: p,
           disabled: j
         })
       }), (0, Chunk54381.jsx)(Chunk481060.gNt, {

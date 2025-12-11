@@ -39,14 +39,14 @@ function O() {
       (0, Chunk788983.close)(Chunk981631.KJ3.ACTIVITY_POPOUT)
     }, 5e3))
   }, [module, j]);
-  let P = (0, Chunk442837.e7)([Chunk812206.Z], () => {
+  let x = (0, Chunk442837.e7)([Chunk812206.Z], () => {
       let n = null == module ? true : module.applicationId;
       return null == exports ? true : Chunk812206.Z.getApplication(exports)
     }),
-    x = (0, Chunk426419.P)();
+    P = (0, Chunk426419.P)();
   return (0, Chunk54381.jsx)("div", {
     className: Chunk350325.container,
-    children: null == module || null == P ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
+    children: null == module || null == x ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
       className: Chunk350325.iframe
     }) : (0, Chunk54381.jsx)("div", {
       className: Chunk350325.loadedContentContainer,
@@ -55,7 +55,7 @@ function O() {
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk350325.headerContainer,
           children: (0, Chunk54381.jsx)(Chunk325749.Z, {
-            applicationId: P.id,
+            applicationId: x.id,
             channelId: exports
           })
         }), (0, Chunk54381.jsx)("div", {
@@ -64,9 +64,9 @@ function O() {
             channelId: exports,
             guildId: require,
             embeddedActivity: module,
-            application: P
+            application: x
           })
-        }), x ? (0, Chunk54381.jsx)(Chunk554370.Z, {
+        }), P ? (0, Chunk54381.jsx)(Chunk554370.Z, {
           isEmbeddedActivity: true
         }) : null]
       })

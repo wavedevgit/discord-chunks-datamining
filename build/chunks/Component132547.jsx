@@ -53,10 +53,10 @@ let L = e => {
     k = (0, y.$)(),
     U = i.useRef(null),
     [G, Z] = i.useState(false),
-    [B, F] = i.useState(false),
+    [F, B] = i.useState(false),
     V = null != k && null != L && L.status === R.O0b.CANCELED,
     H = (0, O.W7)(P.Xh.PREMIUM_MONTH_TIER_2, k, L),
-    Y = !B && V,
+    Y = !F && V,
     {
       analyticsLocations: W
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
@@ -81,7 +81,7 @@ let L = e => {
           value: W,
           children: [(0, r.jsx)(l.$, {
             innerRef: U,
-            onChange: e => F(e),
+            onChange: e => B(e),
             threshold: .1,
             active: true,
             children: (0, r.jsx)(T.Z, {

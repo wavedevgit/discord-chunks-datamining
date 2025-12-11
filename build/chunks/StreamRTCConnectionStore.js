@@ -161,7 +161,7 @@ function Z(e) {
   t.connect(e.endpoint, e.token)
 }
 
-function B(e) {
+function F(e) {
   let {
     connectionStats: t
   } = e;
@@ -170,7 +170,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     streamKey: t,
     viewerIds: n,
@@ -356,9 +356,9 @@ let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : 
   STREAM_STOP: U,
   STREAM_CREATE: G,
   STREAM_SERVER_UPDATE: Z,
-  STREAM_UPDATE: F,
+  STREAM_UPDATE: B,
   STREAM_DELETE: V,
-  MEDIA_ENGINE_CONNECTION_STATS: B,
+  MEDIA_ENGINE_CONNECTION_STATS: F,
   STREAM_LAYOUT_UPDATE: H,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: z,
   VIDEO_SIZE_UPDATE: q,

@@ -210,7 +210,7 @@ class et extends Chunk473749.Component {
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
-          className: 0 === n ? B.firstMessage : true,
+          className: 0 === n ? F.firstMessage : true,
           hideSimpleEmbedContent: i
         }, t.id))
       })

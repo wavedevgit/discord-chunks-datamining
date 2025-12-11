@@ -75,7 +75,7 @@ function Z(e) {
   return String(e)
 }
 
-function B() {
+function F() {
   __OVERLAY__ || Chunk433517.K.set(x, {
     selectedChannelId: a,
     selectedVoiceChannelId: s,
@@ -90,7 +90,7 @@ function B() {
   })
 }
 
-function F(e) {
+function B(e) {
   if (null != e) {
     let t = v.ZP.getDefaultChannel(e);
     if (null != t) return t.id
@@ -129,7 +129,7 @@ function W(e) {
     let e = O.Z.getChannel(s);
     null != e && T.Z.can(p.$e(A.Plq.VIEW_CHANNEL, A.Plq.CONNECT), e) || (s = null)
   }
-  Y() && B()
+  Y() && F()
 }
 
 function K(e) {
@@ -146,7 +146,7 @@ function q(e) {
     channelId: n
   } = e;
   if (true === t) returnfalse;
-  null == n && (n = F(t)), null != a && n !== a && (i = a), a = n, V(t, n), M[Z(t)] !== n && (k[Z(t)] = M[Z(t)], M[Z(t)] = a), B()
+  null == n && (n = B(t)), null != a && n !== a && (i = a), a = n, V(t, n), M[Z(t)] !== n && (k[Z(t)] = M[Z(t)], M[Z(t)] = a), F()
 }
 
 function Q(e) {
@@ -156,9 +156,9 @@ function Q(e) {
   if (null == t) {
     let e = O.Z.getChannel(s),
       t = null == e ? true : e.guild_id;
-    null != t && t !== C.Z.getGuildId() && M[t] === s && (M[t] = F(t))
+    null != t && t !== C.Z.getGuildId() && M[t] === s && (M[t] = B(t))
   }
-  s = t, B()
+  s = t, F()
 }
 
 function X(e, t, n) {
@@ -169,7 +169,7 @@ function X(e, t, n) {
   }
   let i = null != S.Z.getGuild(t) ? t : null,
     a = false;
-  s === e && (s = null, a = true), M[Z(i)] === e && (M[Z(i)] = r && null != n ? n : F(Z(i)), C.Z.getGuildId() === i && (0, g.dL)(A.Z5c.CHANNEL(t, M[Z(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && B()
+  s === e && (s = null, a = true), M[Z(i)] === e && (M[Z(i)] = r && null != n ? n : B(Z(i)), C.Z.getGuildId() === i && (0, g.dL)(A.Z5c.CHANNEL(t, M[Z(i)])), a = true), null != i && U[i] === e && (delete U[i], a = true), a && F()
 }
 
 function J(e) {
@@ -196,8 +196,8 @@ function ee(e) {
     guild: t
   } = e;
   if (null == M[t.id]) {
-    let e = F(t.id);
-    M[t.id] = e, V(t.id, e), B()
+    let e = B(t.id);
+    M[t.id] = e, V(t.id, e), F()
   }
 }
 
@@ -209,7 +209,7 @@ function et(e) {
     }
   } = e;
   if (s === M[t] && (s = null), n) returnfalse;
-  delete U[t], delete M[t], B()
+  delete U[t], delete M[t], F()
 }
 
 function en(e) {
@@ -222,14 +222,14 @@ function en(e) {
       clearInterval(c);
       let e = null == (n = O.Z.getChannel(s)) ? true : n.getGuildId();
       t.guildId !== e && null == t.channelId || (s = t.channelId), l = Date.now(), null != s && (c = setInterval(() => {
-        l = Date.now(), B()
-      }, j)), B()
+        l = Date.now(), F()
+      }, j)), F()
     } else {
       if (t.userId !== y.default.getId()) return e;
       clearInterval(c), c = true, l = 0;
       let n = null == (i = O.Z.getChannel(s)) ? true : i.getGuildId(),
         r = null == (a = O.Z.getChannel(t.channelId)) ? true : a.getGuildId();
-      (null != n && r === n || s === t.channelId) && (s = null), B()
+      (null != n && r === n || s === t.channelId) && (s = null), F()
     }
     returntrue
   }, false)
@@ -243,7 +243,7 @@ function er(e) {
   (null == o || t !== o.channelId) && (o = {
     channelId: t,
     guildId: n
-  }, B())
+  }, F())
 }
 
 function ei() {
@@ -258,7 +258,7 @@ function ea(e) {
     case A.d4z.GUILD_ANNOUNCEMENT:
     case A.d4z.GUILD_TEXT:
       let n = t.guild_id;
-      if (null != n && null == U[n] && (U[n] = t.id), null != n && null == M[n]) return M[n] = F(n), true
+      if (null != n && null == U[n] && (U[n] = t.id), null != n && null == M[n]) return M[n] = B(n), true
   }
   returnfalse
 }
@@ -284,7 +284,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
     var t, n;
     let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       i = Z(e === A.ME ? null : null != (t = null != e ? e : C.Z.getGuildId()) ? t : null);
-    return r ? null != (n = M[i]) ? n : F(i) : M[i]
+    return r ? null != (n = M[i]) ? n : B(i) : M[i]
   }
   getVoiceChannelId() {
     return Chunk131951.Z.isSupported() ? s : null

@@ -34,10 +34,10 @@ function y(e) {
   var t, n;
   let {
     guildId: i
-  } = e, u = (0, o.e7)([h.Z], () => h.Z.getGuild(i)), C = (0, o.e7)([b.Z], () => b.Z.getSortedRoles(i).find(e => {
+  } = e, u = (0, a.e7)([h.Z], () => h.Z.getGuild(i)), C = (0, a.e7)([b.Z], () => b.Z.getSortedRoles(i).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), y = (0, o.e7)([j.default], () => j.default.getCurrentUser()), N = null == y ? true : y.id, O = (0, o.e7)([x.ZP], () => null != N ? x.ZP.getMember(i, N) : true, [N, i]), S = (null == O ? true : O.premiumSince) != null, A = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
+  })), y = (0, a.e7)([j.default], () => j.default.getCurrentUser()), N = null == y ? true : y.id, O = (0, a.e7)([x.ZP], () => null != N ? x.ZP.getMember(i, N) : true, [N, i]), S = (null == O ? true : O.premiumSince) != null, A = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), {
     avatarDecorationSrc: k,
     avatarSrc: R,
     eventHandlers: L
@@ -55,10 +55,10 @@ function y(e) {
       src: P
     }), (0, r.jsxs)("div", {
       className: E.textContainer,
-      children: [(0, r.jsx)(a.xvT, {
+      children: [(0, r.jsx)(o.xvT, {
         variant: "text-md/semibold",
         children: I.intl.string(S ? w.default.KSWK1U : w.default.XXXX5l)
-      }), (0, r.jsx)(a.xvT, {
+      }), (0, r.jsx)(o.xvT, {
         variant: "text-sm/medium",
         children: I.intl.format(S ? w.default["7fWTg4"] : w.default["7PXeeQ"], {
           onClick: () => {

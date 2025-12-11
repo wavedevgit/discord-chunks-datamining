@@ -131,7 +131,7 @@ class eh extends(r = Chunk473749.PureComponent) {
     let {
       autoUnfurlReactionTooltip: t
     } = this.props;
-    B.Z.isFocused() ? (this.scale.setValue(0), this.opacity.setValue(0), d.Z.parallel([d.Z.timing(this.scale, {
+    F.Z.isFocused() ? (this.scale.setValue(0), this.opacity.setValue(0), d.Z.parallel([d.Z.timing(this.scale, {
       toValue: 1,
       duration: t ? eu : ed,
       easing: d.Z.Easing.inOut(d.Z.Easing.back())
@@ -340,7 +340,7 @@ class eh extends(r = Chunk473749.PureComponent) {
     }), ea(this, "hideTooltip", () => {
       this.setState({
         shouldShowTooltip: false
-      }), this.hasShownTooltip && F.default.track(J.rMx.CLOSE_POPOUT, {
+      }), this.hasShownTooltip && B.default.track(J.rMx.CLOSE_POPOUT, {
         nonce: this.nonce
       })
     }), ea(this, "isMe", () => {
@@ -516,7 +516,7 @@ class eh extends(r = Chunk473749.PureComponent) {
         is_animated: e.animated,
         is_custom: null != e.id,
         nonce: this.nonce
-      }), !a || null == i || o || this.userCanBurstReact() || F.default.track(J.rMx.PREMIUM_UPSELL_VIEWED, {
+      }), !a || null == i || o || this.userCanBurstReact() || B.default.track(J.rMx.PREMIUM_UPSELL_VIEWED, {
         type: $.cd.BURST_REACTION_UPSELL,
         location: {
           page: (null == i ? true : i.getGuildId()) != null ? J.ZY5.GUILD_CHANNEL : J.ZY5.DM_CHANNEL,

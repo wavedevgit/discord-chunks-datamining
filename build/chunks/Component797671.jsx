@@ -35,7 +35,7 @@ function L(e) {
     transitionState: R,
     onSubmit: S,
     onClose: j
-  } = e, [N, M] = i.useState(w.Sc2), [k, D] = i.useState(w.d4z.GUILD_TEXT), [Z, A] = i.useState(""), [B, G] = i.useState(false), O = (0, o.e7)([m.Z], () => m.Z.getGuild(L), [L]), H = (0, g.m)(L), U = (0, h.Ui)(O), V = i.useMemo(() => (function(e) {
+  } = e, [N, M] = i.useState(w.Sc2), [k, D] = i.useState(w.d4z.GUILD_TEXT), [Z, A] = i.useState(""), [B, G] = i.useState(false), O = (0, o.e7)([m.Z], () => m.Z.getGuild(L), [L]), H = (0, h.m)(L), U = (0, g.Ui)(O), V = i.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
@@ -82,7 +82,7 @@ function L(e) {
           }), (0, l.jsxs)("div", {
             children: [(0, l.jsxs)(d.Text, {
               variant: "text-md/normal",
-              color: "header-primary",
+              color: "text-strong",
               children: [n, (0, l.jsx)(f.p, {
                 isBeta: a
               })]
@@ -100,7 +100,7 @@ function L(e) {
   })({
     canCreateStageChannel: H,
     canCreateMediaChannel: U
-  }), [H, U]), W = (0, o.e7)([x.Z], () => x.Z.getCategories(L)._categories, [L]), z = i.useMemo(() => W.map(e => {
+  }), [H, U]), W = (0, o.e7)([_.Z], () => _.Z.getCategories(L)._categories, [L]), z = i.useMemo(() => W.map(e => {
     let {
       channel: t
     } = e;
@@ -183,7 +183,7 @@ function L(e) {
           label: T.intl.string(T.t.PVbHDl),
           value: Z,
           onChange: function(e) {
-            (0, _.zi)(k) && (e = (0, v.Nj)(e)), A(e)
+            (0, x.zi)(k) && (e = (0, v.Nj)(e)), A(e)
           },
           maxLength: w.HN8,
           placeholder: T.intl.string(T.t["bw/b8E"]),

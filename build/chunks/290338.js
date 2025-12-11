@@ -48,8 +48,8 @@ let v = (0, Chunk473749.createContext)(null),
       ...(0, a.vl)(e),
       label: w,
       validationBehavior: A
-    }, N, P), [B, F] = (0, O.useState)(null), V = (0, O.useCallback)(() => {
-      P.current && F(P.current.offsetWidth + "px")
+    }, N, P), [F, B] = (0, O.useState)(null), V = (0, O.useCallback)(() => {
+      P.current && B(P.current.offsetWidth + "px")
     }, []);
     (0, E.y)({
       ref: P,
@@ -101,7 +101,7 @@ let v = (0, Chunk473749.createContext)(null),
           triggerRef: P,
           placement: "bottom start",
           style: {
-            "--trigger-width": B
+            "--trigger-width": F
           },
           clearContexts: I
         }],

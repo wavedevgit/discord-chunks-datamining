@@ -193,7 +193,7 @@ function ej(e) {
           className: eE.groupMainContent,
           children: [(0, r.jsx)(h.Text, {
             variant: "text-md/medium",
-            color: "header-primary",
+            color: "text-strong",
             className: eE.groupTitle,
             children: i
           }), null != a && (0, r.jsx)(h.Text, {
@@ -312,7 +312,7 @@ function eG(e) {
           break;
         case x.OverlayToggledClientSettingType.OOP:
           y.Z.setEnabled(P, e), (0, x.ou)(e, x.OverlayToggledClientSettingType.OOP, null != (r = o.id) ? r : null)
-      }(a || s) && (0, F.l)(a ? x.OverlayToggledClientSettingType.LEGACY_GAME : x.OverlayToggledClientSettingType.OOP_GAME, null != (i = o.id) ? i : null)
+      }(a || s) && (0, B.l)(a ? x.OverlayToggledClientSettingType.LEGACY_GAME : x.OverlayToggledClientSettingType.OOP_GAME, null != (i = o.id) ? i : null)
     },
     M = (e, t) => {
       let n = !t && e,
@@ -346,12 +346,12 @@ function eG(e) {
       let i = null;
       if (n ? i = "game" === t ? x.OverlayToggledClientSettingType.LEGACY_GAME : x.OverlayToggledClientSettingType.LEGACY : r && (i = "game" === t ? x.OverlayToggledClientSettingType.OOP_GAME : x.OverlayToggledClientSettingType.OOP), null != i) {
         var a;
-        (0, F.l)(i, null != (a = o.id) ? a : null)
+        (0, B.l)(i, null != (a = o.id) ? a : null)
       }
     },
     G = C && A,
     Z = !P && !R,
-    B = !m && !P && b && !C,
+    F = !m && !P && b && !C,
     V = !b && !R && m && !A,
     H = (null == u ? true : u.overlayMethod) === j.gl.Disabled,
     Y = (null == u ? true : u.state) === j.mM.OVERLAY_RENDERING && !H,
@@ -428,7 +428,7 @@ function eG(e) {
           return [eg.intl.string(eg.t["9DUS5l"]), null];
         case J:
           return [eg.intl.string(eg.t.nQ9EdJ), null];
-        case B:
+        case F:
         case V:
           return [eg.intl.string(eg.t.VWUn0a), null];
         case W:
@@ -552,7 +552,7 @@ function eZ(e) {
   })
 }
 
-function eB(e) {
+function eF(e) {
   let {
     rawGame: t,
     gameApplication: n,
@@ -569,7 +569,7 @@ function eB(e) {
     let n = !e && _;
     if (m(e), s(e, u, d), n) {
       var r, i;
-      (0, F.l)(l, null != (i = null != (r = u.id) ? r : null == t ? true : t.id) ? i : null)
+      (0, B.l)(l, null != (i = null != (r = u.id) ? r : null == t ? true : t.id) ? i : null)
     }
   };
   return (0, r.jsx)(ej, {
@@ -591,7 +591,7 @@ function eB(e) {
   })
 }
 
-function eF() {
+function eB() {
   let [e, t] = Chunk473749.useState(false), {
     legacyEnabled: n,
     oopEnabled: a
@@ -599,7 +599,7 @@ function eF() {
     var t, r;
     y.Z.setEnabled(e, a);
     let i = null != (r = null == (t = N.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? r : null;
-    (0, x.ou)(e, x.OverlayToggledClientSettingType.LEGACY, i), !e && n && (0, F.l)(x.OverlayToggledClientSettingType.LEGACY, i)
+    (0, x.ou)(e, x.OverlayToggledClientSettingType.LEGACY, i), !e && n && (0, B.l)(x.OverlayToggledClientSettingType.LEGACY, i)
   }, u = (e, t, n) => {
     let {
       enabledOOP: r
@@ -643,7 +643,7 @@ function eF() {
       })
     }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
       className: Chunk677677.scroller,
-      children: o.map((e, t) => (0, r.jsx)(eB, {
+      children: o.map((e, t) => (0, r.jsx)(eF, {
         rawGame: e,
         clientSettingType: x.OverlayToggledClientSettingType.LEGACY_GAME,
         supportDisabled: l,
@@ -672,7 +672,7 @@ function eV() {
     let i = !e && n;
     y.Z.setEnabled(a, e);
     let o = null != (r = null == (t = N.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? r : null;
-    (0, x.ou)(e, x.OverlayToggledClientSettingType.OOP, o), i && (0, F.l)(x.OverlayToggledClientSettingType.OOP, o)
+    (0, x.ou)(e, x.OverlayToggledClientSettingType.OOP, o), i && (0, B.l)(x.OverlayToggledClientSettingType.OOP, o)
   }, u = (e, t, n) => {
     let {
       enabledLegacy: r
@@ -716,7 +716,7 @@ function eV() {
       })
     }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
       className: Chunk677677.scroller,
-      children: Chunk348327.map((e, t) => (0, r.jsx)(eB, {
+      children: Chunk348327.map((e, t) => (0, r.jsx)(eF, {
         rawGame: e,
         clientSettingType: x.OverlayToggledClientSettingType.OOP_GAME,
         gameApplication: l[t],
@@ -774,7 +774,7 @@ function eY() {
         className: Chunk677677.keybindHeaderContainer,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: Chunk388032.intl.string(Chunk388032.t.VsAZcC)
         }), l && (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-xs/normal",
@@ -834,7 +834,7 @@ function eK() {
     className: Chunk677677.notificationSettingsContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: Chunk388032.intl.string(Chunk388032.t.xOE5bA)
     }), exports.map(e => (0, r.jsxs)("div", {
       className: eE.notificationItem,
@@ -842,7 +842,7 @@ function eK() {
         className: eE.notificationDescriptionContainer,
         children: [(0, r.jsx)(h.Text, {
           variant: "text-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: eg.intl.string(e.title)
         }), (0, r.jsx)(h.Text, {
           variant: "text-xs/normal",
@@ -1060,7 +1060,7 @@ function eJ() {
         className: Chunk677677.mainTitleContainer,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-xl/medium",
-          color: "header-primary",
+          color: "text-strong",
           children: Chunk388032.intl.string(Chunk388032.t.jzjJQg)
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
@@ -1120,7 +1120,7 @@ function e$(e) {
         className: eE.limitedInteractionOverrideContainer,
         children: [(0, r.jsx)(h.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: eg.intl.string(eg.t.wgVQND)
         }), (0, r.jsx)(h.Text, {
           variant: "text-xs/normal",
@@ -1137,7 +1137,7 @@ function e$(e) {
         className: eE.limitedInteractionOverrideContainer,
         children: [(0, r.jsx)(h.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: eg.intl.string(eg.t["+eFXxq"])
         }), (0, r.jsx)(h.Text, {
           variant: "text-xs/normal",
@@ -1170,7 +1170,7 @@ function e0(e) {
         children: [(0, r.jsx)(eG, {
           runningGame: i,
           runningGameApplication: a
-        }), (0, r.jsx)(eV, {}), (0, r.jsx)(eF, {}), (0, r.jsx)(eH, {})]
+        }), (0, r.jsx)(eV, {}), (0, r.jsx)(eB, {}), (0, r.jsx)(eH, {})]
       }), (0, r.jsx)("div", {
         className: eE.settingsDivider
       })]

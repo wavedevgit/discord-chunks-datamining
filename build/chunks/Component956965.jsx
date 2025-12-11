@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk829409 = require("./829409.js"),
   Chunk381993 = require("./381993.js");
-let b = 16 / 9,
-  g = 325 / 72;
+let g = 16 / 9,
+  b = 325 / 72;
 
 function x(e) {
   let {
@@ -34,18 +34,18 @@ function x(e) {
     let e = (0, u.yJ)(t);
     return null != e && null != e.activity_preview_video_asset_id ? (0, c.Z)(t.id, e.activity_preview_video_asset_id) : null
   }, [t]), {
-    imageUrl: b,
-    imageUrlAnimated: g
+    imageUrl: g,
+    imageUrlAnimated: b
   } = r.useMemo(() => "fetched" === m.state && null != m.url ? {
     imageUrl: m.url
   } : {
     imageUrl: i,
     imageUrlAnimated: s
-  }, [m.state, m.url, i, s]), x = null != b, _ = null != h;
+  }, [m.state, m.url, i, s]), x = null != g, _ = null != h;
   return "loading" === m.state ? null : _ ? (0, a.jsxs)(a.Fragment, {
     children: [x ? (0, a.jsx)(v, {
       isHovered: n,
-      url: b,
+      url: g,
       animatedUrl: true
     }) : (0, a.jsx)(p.Z, {
       src: h,
@@ -58,8 +58,8 @@ function x(e) {
     })]
   }) : x ? (0, a.jsx)(v, {
     isHovered: n,
-    url: b,
-    animatedUrl: g
+    url: g,
+    animatedUrl: b
   }) : (0, a.jsx)(j, {
     iconURL: o
   })
@@ -160,7 +160,7 @@ let _ = function(e) {
   return (0, a.jsx)("div", {
     className: f.bannerContainer,
     style: {
-      aspectRatio: "card" === n ? b : g
+      aspectRatio: "card" === n ? g : b
     },
     onMouseEnter: p,
     onFocus: p,

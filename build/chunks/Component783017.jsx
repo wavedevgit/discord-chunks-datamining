@@ -28,10 +28,10 @@ let m = t => {
     buttonLoading: m,
     hideClose: N,
     onClose: f
-  } = t, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, a.e7)([o.default], () => {
-    let t = o.default.getCurrentUser();
+  } = t, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, a.e7)([u.default], () => {
+    let t = u.default.getCurrentUser();
     return i()(null != t, "UserSettingsProfileCustomization: user cannot be undefined"), t
-  }), _ = (0, L.rO)() ? Z.Z : p.Z, I = (t => {
+  }), _ = (0, L.rO)() ? Z.Z : g.Z, I = (t => {
     switch (t) {
       case H.Yk.PREMIUM_UPDATED:
         return M.intl.string(M.t["75Wt0E"]);
@@ -46,12 +46,12 @@ let m = t => {
     children: [(0, l.jsx)(C.Heading, {
       className: h.header,
       variant: "display-md",
-      color: "header-primary",
+      color: "text-strong",
       children: I
     }), (0, l.jsxs)("div", {
       className: h.nameplatePreviewContainer,
       children: [x ? (0, l.jsx)("img", {
-        src: g.Z,
+        src: p.Z,
         alt: "",
         className: h.nameplateGlow
       }) : (0, l.jsx)(d.Z, {
@@ -63,7 +63,7 @@ let m = t => {
         children: (0, l.jsx)("source", {
           src: _
         })
-      }), (0, l.jsx)(u.Z, {
+      }), (0, l.jsx)(o.Z, {
         user: E,
         isHighlighted: true,
         nameplate: null,

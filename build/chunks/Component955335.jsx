@@ -51,17 +51,17 @@ function p(e) {
   let {
     subscriptions: n,
     color: t = "text-default"
-  } = e, p = n.some(e => (0, i.yE)(e.skuFlags, s.l4R.APPLICATION_GUILD_SUBSCRIPTION));
-  return (0, r.jsx)(l.Heading, {
+  } = e, p = n.some(e => (0, l.yE)(e.skuFlags, s.l4R.APPLICATION_GUILD_SUBSCRIPTION));
+  return (0, r.jsx)(i.Heading, {
     variant: "heading-lg/semibold",
     color: t,
     className: u.heading,
     children: p ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.QTo, c(a({}, d), {
+      children: [(0, r.jsx)(i.QTo, c(a({}, d), {
         color: "currentColor"
       })), o.intl.string(o.t.XIhSoj)]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.tBG, c(a({}, d), {
+      children: [(0, r.jsx)(i.tBG, c(a({}, d), {
         color: "currentColor"
       })), o.intl.string(o.t.dxfZph)]
     })

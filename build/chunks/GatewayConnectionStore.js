@@ -61,7 +61,7 @@ function Z() {
     isEstablished: Chunk955132.Wb.isSessionEstablished()
   }), !!Chunk955132.Wb.isSessionEstablished() && (Chunk955132.Wb.close(), Chunk955132.Wb.connect())
 }
-async function B(e) {
+async function F(e) {
   x = Date.now(), L = e.sessionId, I.RR.handleConnectionOpen();
   let t = {},
     n = b.Z.getVoiceChannelId();
@@ -79,7 +79,7 @@ async function B(e) {
   I.GC.update(t, true), j = false, k = null
 }
 
-function F() {
+function B() {
   w.verbose("connection closed dispatched"), x = Date.now()
 }
 
@@ -333,10 +333,10 @@ let ey = new eb(Chunk570140.Z, {
   LOGOUT: G,
   CLEAR_CACHES: H,
   CONNECTION_OPEN: e => {
-    B(e)
+    F(e)
   },
   CONNECTION_RESUMED: V,
-  CONNECTION_CLOSED: F,
+  CONNECTION_CLOSED: B,
   RTC_CONNECTION_STATE: J,
   VOICE_CHANNEL_SELECT: Y,
   VOICE_STATE_UPDATES: z,

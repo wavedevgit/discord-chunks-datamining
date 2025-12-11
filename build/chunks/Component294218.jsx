@@ -102,7 +102,7 @@ function L(e) {
     subscribeToComponentDispatch: U,
     renderThreadAccessory: G,
     trackAnnouncementViews: Z = false
-  } = e, B = D(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), F = i.type === C.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
+  } = e, F = D(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), B = i.type === C.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, V = i.isFirstMessageInForumPost(j), H = (0, u.A)((null != (n = i.editedTimestamp) ? n : i.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: W,
     hasBailedAst: K
@@ -124,9 +124,9 @@ function L(e) {
     compact: a,
     className: o()(N, {
       [A.ephemeral]: (0, _.Pv)(i),
-      [A.disableInteraction]: F
+      [A.disableInteraction]: B
     }),
-    disableInteraction: F,
+    disableInteraction: B,
     childrenRepliedMessage: (0, T.Z)(i, j, z, q, a),
     childrenExecutedCommand: (0, I.Z)(i, j, a),
     childrenHeader: (0, v.Z)(w(P({}, e), {
@@ -137,7 +137,7 @@ function L(e) {
     childrenAccessories: e.hideAccessories ? true : (0, y.Q)(e, W, K),
     childrenMessageContent: (0, O.Z)(e, Y),
     childrenSystemMessage: (0, S.Z)(w(P({}, e), {
-      disableInteraction: F
+      disableInteraction: B
     })),
     onContextMenu: R,
     onClick: x,
@@ -147,6 +147,6 @@ function L(e) {
     "aria-describedby": en,
     messageRef: ee,
     author: X
-  }, Q, B))
+  }, Q, F))
 }
 let j = Chunk473749.memo(L)

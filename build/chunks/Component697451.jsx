@@ -94,7 +94,7 @@ function Z(e, t) {
   return i
 }
 
-function B(e) {
+function F(e) {
   let {
     width: t = 6,
     height: n = 10,
@@ -117,7 +117,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     user: t,
     guildId: n,
@@ -160,7 +160,7 @@ function V(e, t, n, i, a, o) {
   if (d && 1 === n) return null;
   if (d && null == u.activityInstance || _ || m) return (0, r.jsx)("div", {
     className: L.replyBadge,
-    children: (0, r.jsx)(B, {
+    children: (0, r.jsx)(F, {
       className: L.commandIcon
     })
   });
@@ -169,7 +169,7 @@ function V(e, t, n, i, a, o) {
       userId: t.id,
       guildId: null != (l = null == p ? true : p.guild_id) ? l : ""
     })) ? c : true,
-    I = () => F({
+    I = () => B({
       user: t,
       guildId: p.guild_id,
       guildAvatar: S,
@@ -316,23 +316,23 @@ function K(e) {
     k = (0, y.t0)(a),
     G = (null == k ? true : k.type) === p.B8.APPLICATION_COMMAND && null != k.target_user ? new S.Z(k.target_user) : null,
     Z = (null == k ? true : k.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
-    B = (0, N.Sw)(null == (t = a.interaction) ? true : t.user, s),
-    F = (0, N.Sw)(G, s),
+    F = (0, N.Sw)(null == (t = a.interaction) ? true : t.user, s),
+    B = (0, N.Sw)(G, s),
     K = i.useMemo(() => e.compact ? (0, w.Z)((0, A.vc)(u()(), "LT")) : null, [e.compact]),
     z = (0, _.NX)(s.id),
     q = a.interaction;
-  if (null == q || null == B) return null;
+  if (null == q || null == F) return null;
   let Q = () => {
-      let t = V(e, q.user, 0, B, e => D(e, q.user, [h.Z.AVATAR]), C),
-        n = H(e, q.user, 0, B, e => D(e, q.user));
+      let t = V(e, q.user, 0, F, e => D(e, q.user, [h.Z.AVATAR]), C),
+        n = H(e, q.user, 0, F, e => D(e, q.user));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "user")
     },
     X = () => {
       if (null == G) return null;
-      let t = V(e, G, 1, F, e => D(e, G, [h.Z.AVATAR]), C),
-        n = H(e, G, 1, F, e => D(e, G));
+      let t = V(e, G, 1, B, e => D(e, G, [h.Z.AVATAR]), C),
+        n = H(e, G, 1, B, e => D(e, G));
       return (0, r.jsxs)(i.Fragment, {
         children: [t, n]
       }, "target")

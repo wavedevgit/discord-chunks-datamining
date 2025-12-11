@@ -151,14 +151,14 @@ function Z(e) {
   delete M[t], k()
 }
 
-function B(e) {
+function F(e) {
   let {
     localActivities: t
   } = e;
   M = D({}, t), k()
 }
 
-function F() {
+function B() {
   let e = {},
     t = false;
   for (let [i, [a, o, s]] of Object.entries(M)) {
@@ -173,7 +173,7 @@ function F() {
 }
 
 function V() {
-  F(), k()
+  B(), k()
 }
 class H extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -207,7 +207,7 @@ w(H, "displayName", "LocalActivityStore");
 let Y = new H(Chunk570140.Z, {
   ROBLOX_SUBGAME_UPDATE: k,
   ROBLOX_SUBGAME_APPLICATION_FETCH_SUCCESS: k,
-  OVERLAY_INITIALIZE: B,
+  OVERLAY_INITIALIZE: F,
   START_SESSION: U,
   LOCAL_ACTIVITY_UPDATE: G,
   RPC_APP_DISCONNECTED: Z,

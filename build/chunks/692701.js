@@ -15,8 +15,8 @@ var Chunk473749 = require("./473749.js"),
 let f = Chunk70956.Z.Millis.WEEK;
 
 function h(e) {
-  let t = (0, l.N)(e),
-    n = (0, a.cj)([o.Z], () => o.Z.getUserAffinitiesMap());
+  let t = (0, a.N)(e),
+    n = (0, l.cj)([o.Z], () => o.Z.getUserAffinitiesMap());
   return i.useMemo(() => null == t ? [] : t.filter(t => (0, u.dX)(t) && (0, u.m9)(t) && t.extra.application_id === e && c.default.age(t.id) < f).sort((e, t) => m(n, t) - m(n, e)), [t, e, n])
 }
 let p = 30 * Chunk70956.Z.Seconds.MINUTE;
@@ -29,8 +29,8 @@ function m(e, t) {
       let i = e.get(t);
       return (null != (n = null == i ? true : i.communicationProbability) ? n : 0) + 1e-4
     })),
-    a = Math.exp(-(c.default.age(t.id) / 1e3 / p * .01)),
-    l = t.traits.some(e => e.type !== r.N.DURATION_SECONDS),
+    l = Math.exp(-(c.default.age(t.id) / 1e3 / p * .01)),
+    a = t.traits.some(e => e.type !== r.N.DURATION_SECONDS),
     o = (0, d.n2)(t);
-  return i * a * (1 + .6 * (l && !o ? 1 : 0))
+  return i * l * (1 + .6 * (a && !o ? 1 : 0))
 }

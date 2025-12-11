@@ -8,7 +8,7 @@ require.d(exports, {
   Pr: () => J,
   Rr: () => eo,
   So: () => es,
-  T1: () => B,
+  T1: () => F,
   Tm: () => X,
   UY: () => ei,
   W6: () => ea,
@@ -25,7 +25,7 @@ require.d(exports, {
   rO: () => er,
   sS: () => en,
   yg: () => k,
-  yi: () => F,
+  yi: () => B,
   yl: () => H,
   zq: () => ee
 }), require("./388685.js"), require("./49124.js"), require("./642613.js"), require("./539854.js");
@@ -159,7 +159,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {
@@ -168,7 +168,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
     settings: {

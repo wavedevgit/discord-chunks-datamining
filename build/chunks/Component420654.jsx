@@ -84,7 +84,7 @@ let E = 57.75,
         children: (0, r.jsx)(d.Z, {
           userBio: a,
           setLineClamp: false,
-          textColor: "header-primary"
+          textColor: "text-strong"
         })
       }), (O || S) && (0, r.jsx)("div", {
         className: p.viewFullBio,

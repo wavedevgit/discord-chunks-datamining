@@ -36,7 +36,7 @@ function E(e) {
     children: (0, r.jsx)(s.Heading, {
       className: g.guildName,
       variant: "heading-md/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: t.name
     })
   }) : (0, r.jsx)(s.P3F, {
@@ -48,7 +48,7 @@ function E(e) {
       children: (0, r.jsx)(s.Heading, {
         className: g.guildName,
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: t.name
       })
     })

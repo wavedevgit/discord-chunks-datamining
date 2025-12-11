@@ -329,9 +329,9 @@
     children: O.func.isRequired
   };
   var Z = ["on", "session"],
-    B = t.createContext(null);
-  B.displayName = "CheckoutSdkContext";
-  var F = function(e, t) {
+    F = t.createContext(null);
+  F.displayName = "CheckoutSdkContext";
+  var B = function(e, t) {
       if (!e) throw Error("Could not find CheckoutProvider context; You need to wrap the part of your app that ".concat(t, " in an <CheckoutProvider> provider."));
       return e
     },
@@ -404,7 +404,7 @@
       var E = t.useMemo(function() {
         return H(d.checkoutSdk, s)
       }, [d.checkoutSdk, s]);
-      return d.checkoutSdk ? t.createElement(B.Provider, {
+      return d.checkoutSdk ? t.createElement(F.Provider, {
         value: d
       }, t.createElement(V.Provider, {
         value: E
@@ -418,13 +418,13 @@
     }).isRequired
   };
   var K = function(e) {
-      return F(t.useContext(B), e)
+      return B(t.useContext(F), e)
     },
     z = function(e) {
-      var n = t.useContext(B),
+      var n = t.useContext(F),
         r = t.useContext(L);
       if (n && r) throw Error("You cannot wrap the part of your app that ".concat(e, " in both <CheckoutProvider> and <Elements> providers."));
-      return n ? F(n, e) : j(r, e)
+      return n ? B(n, e) : j(r, e)
     },
     q = function() {
       K("calls useCheckout()");

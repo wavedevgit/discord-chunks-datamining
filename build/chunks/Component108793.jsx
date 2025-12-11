@@ -95,7 +95,7 @@ function p(e) {
       },
       children: [(0, r.jsx)(o.Heading, {
         className: E.title,
-        color: "header-primary",
+        color: "text-strong",
         variant: "heading-xl/extrabold",
         children: v.header
       }), (0, r.jsxs)("div", {

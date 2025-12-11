@@ -76,10 +76,10 @@ let N = function(e) {
     }
   }, [U]);
   let Z = (0, f.BU)(n.id, "GuildBoostingMarketing"),
-    B = (0, a.e7)([p.Z], () => p.Z.hasFetchedCatalog(n.id));
+    F = (0, a.e7)([p.Z], () => p.Z.hasFetchedCatalog(n.id));
   return i.useEffect(() => {
-    Z && !B && (0, d.ce)(n.id)
-  }, [n.id, Z, B]), (0, r.jsxs)(r.Fragment, {
+    Z && !F && (0, d.ce)(n.id)
+  }, [n.id, Z, F]), (0, r.jsxs)(r.Fragment, {
     children: [null != N && (0, r.jsx)("div", {
       className: A.closeIconWrapper,
       children: (0, r.jsx)(l.Z, {

@@ -73,14 +73,14 @@ let Z = "dismissedCommunityFeaturesUpsell",
     } = e, [c, d] = i.useState(true === o.K.get(Z)), u = (0, a.e7)([j.Z], () => {
       var e;
       return null != (e = j.Z.getMemberCount(l.id)) ? e : 0
-    }), [g, b] = i.useState(false);
-    (0, p.ZP)(() => {
+    }), [g, p] = i.useState(false);
+    (0, b.ZP)(() => {
       s.tn.get({
         url: _.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
-        b(e.body.eligible_for_admin_server)
-      }).catch(() => b(false))
+        p(e.body.eligible_for_admin_server)
+      }).catch(() => p(false))
     });
     let x = (0, a.e7)([v.Z], () => v.Z.getGuild("942897714956472401")),
       O = l.features.has(_.GuildFeatures.COMMUNITY) && u >= 1e3 && g && null == x;
@@ -105,24 +105,24 @@ let Z = "dismissedCommunityFeaturesUpsell",
           width: 60,
           className: P.upsellImage
         }), (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(f.Heading, {
+          children: [(0, r.jsx)(m.Heading, {
             variant: "heading-md/semibold",
             className: P.upsellHeader,
             children: T.intl.string(T.t["pR/Bge"])
-          }), (0, r.jsx)(f.Text, {
+          }), (0, r.jsx)(m.Text, {
             variant: "text-sm/normal",
             children: T.intl.string(T.t["V+Yo1l"])
           })]
         })]
-      }), (0, r.jsx)(m.zx, {
+      }), (0, r.jsx)(f.zx, {
         "aria-label": T.intl.string(T.t.cpT0Cq),
-        look: m.zx.Looks.BLANK,
-        size: m.zx.Sizes.NONE,
+        look: f.zx.Looks.BLANK,
+        size: f.zx.Sizes.NONE,
         className: P.upsellClose,
         onClick: () => {
           o.K.set(Z, true), d(true)
         },
-        children: (0, r.jsx)(f.Dio, {
+        children: (0, r.jsx)(m.Dio, {
           size: "md",
           color: "currentColor"
         })
@@ -131,7 +131,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         children: [O && (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "primary",
             size: "sm",
             text: T.intl.string(T.t.iF1Asi),
@@ -140,7 +140,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), n ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "primary",
             size: "sm",
             text: T.intl.string(T.t["S/Dfid"]),
@@ -151,7 +151,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), t ? null : (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "secondary",
             size: "sm",
             text: T.intl.string(T.t["0kmJdw"]),
@@ -162,7 +162,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: P.upsellButton,
-          children: (0, r.jsx)(f.Button, {
+          children: (0, r.jsx)(m.Button, {
             variant: "secondary",
             size: "sm",
             text: T.intl.string(T.t.BQIYTb),
@@ -185,16 +185,16 @@ let Z = "dismissedCommunityFeaturesUpsell",
       })),
       s = (0, Chunk442837.e7)([Chunk984933.ZP], () => null != module ? Chunk984933.ZP.getChannels(module.id) : null),
       c = Chunk473749.useMemo(Chunk929834.jb, []),
-      m = true !== Chunk433517.K.get(Z);
+      f = true !== Chunk433517.K.get(Z);
     if (null == module) return null;
-    let p = [];
+    let b = [];
     null != Chunk544891 && Chunk544891[Chunk984933.sH].forEach(e => {
       let {
         channel: t
       } = e;
-      t.type === _.d4z.GUILD_TEXT && p.push({
+      t.type === _.d4z.GUILD_TEXT && b.push({
         value: t.id,
-        label: (0, b.F6)(t, y.default, C.Z, true)
+        label: (0, p.F6)(t, y.default, C.Z, true)
       })
     });
     let h = () => {

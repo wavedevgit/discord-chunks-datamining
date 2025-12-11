@@ -422,7 +422,7 @@ class eN extends Chunk47770.Z {
   }
   _handleDisconnect(e, t, n, r) {
     var i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, I, T, C;
-    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (F.default.track(es.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ep(ed({}, this._getAnalyticsProperties()), {
+    this.logger.info("Disconnected from RTC server, clean: ".concat(t, ", code: ").concat(n, ", reason: ").concat(r, ", state: ").concat(this.state)), t || !this._connecting || this._encountered_socket_failure || (B.default.track(es.rMx.VOICE_CONNECTION_SOCKET_FAILURE, ep(ed({}, this._getAnalyticsProperties()), {
       hostname: this.hostname,
       connect_count: this._connectCount,
       code: n,
@@ -439,7 +439,7 @@ class eN extends Chunk47770.Z {
         if (e.stop(), this._sentVideo) {
           e.getOutboundStats().forEach(t => {
             var n;
-            (null != (n = t.num_frames) ? n : 0) > 0 && F.default.track(es.rMx.VIDEO_STREAM_ENDED, ep(ed(ep(ed({}, this._getAnalyticsProperties()), {
+            (null != (n = t.num_frames) ? n : 0) > 0 && B.default.track(es.rMx.VIDEO_STREAM_ENDED, ep(ed(ep(ed({}, this._getAnalyticsProperties()), {
               app_hardware_acceleration_enabled: V.Z.getAppHardwareAccelerationEnabled(),
               media_session_id: this.getMediaSessionId(),
               sender_user_id: this.userId,
@@ -453,14 +453,14 @@ class eN extends Chunk47770.Z {
             }))
           });
           let t = e.getCameraDurationStats();
-          null != t && t.camera_enabled_duration > 0 && F.default.track(es.rMx.VIDEO_CALL_ENDED, ep(ed({}, t), {
+          null != t && t.camera_enabled_duration > 0 && B.default.track(es.rMx.VIDEO_CALL_ENDED, ep(ed({}, t), {
             media_session_id: this.getMediaSessionId()
           }))
         }
         e.getInboundParticipants().forEach(t => {
           var n;
           let i = e.getInboundStats(t);
-          (null != (n = null == i ? true : i.num_frames) ? n : 0) > 0 && F.default.track(es.rMx.VIDEO_STREAM_ENDED, ed(ep(ed({}, this._getAnalyticsProperties()), {
+          (null != (n = null == i ? true : i.num_frames) ? n : 0) > 0 && B.default.track(es.rMx.VIDEO_STREAM_ENDED, ed(ep(ed({}, this._getAnalyticsProperties()), {
             app_hardware_acceleration_enabled: V.Z.getAppHardwareAccelerationEnabled(),
             media_session_id: this.getMediaSessionId(),
             sender_user_id: t,
@@ -476,7 +476,7 @@ class eN extends Chunk47770.Z {
       k.Z.getMediaEngine().getCodecSurvey().then(e => {
         let n = JSON.parse(e);
         if (null == n || null == n.available_video_encoders || null == n.available_video_decoders) throw Error("codec survey is not available");
-        F.default.track(es.rMx.VOICE_CODEC_DETECTED, ep(ed({}, n), {
+        B.default.track(es.rMx.VOICE_CODEC_DETECTED, ep(ed({}, n), {
           rtc_connection_id: this.getRTCConnectionId(),
           media_session_id: t
         }))
@@ -547,7 +547,7 @@ class eN extends Chunk47770.Z {
         let [{
           batteryUsageRounded: t
         }, n, r, i] = e;
-        F.default.track(es.rMx.VOICE_DISCONNECT, ep(ed({}, s), {
+        B.default.track(es.rMx.VOICE_DISCONNECT, ep(ed({}, s), {
           battery_usage: t,
           krisp_nc_model: n,
           duration_low_noise_detected_ms: null == r ? true : r.lowNoiseMs,
@@ -649,7 +649,7 @@ class eN extends Chunk47770.Z {
     }), f.on(p.Sh.Error, t => {
       if (e !== this._socket) return;
       let n = Z.Z.shouldIncludePreferredRegion() ? Z.Z.getPreferredRegion() : null;
-      this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), F.default.track(es.rMx.VOICE_CONNECTION_FAILURE, ep(ed({}, this._getAnalyticsProperties()), {
+      this.logger.error("Error occurred while connecting to RTC server: ".concat(t)), B.default.track(es.rMx.VOICE_CONNECTION_FAILURE, ep(ed({}, this._getAnalyticsProperties()), {
         hostname: this.hostname,
         port: this.port,
         protocol: this.protocol,
@@ -686,7 +686,7 @@ class eN extends Chunk47770.Z {
         if (this._connecting) {
           let t = k.Z.getSettings(),
             n = this._getAnalyticsProperties();
-          F.default.track(es.rMx.VOICE_CONNECTION_SUCCESS, ed(ep(ed({}, n), {
+          B.default.track(es.rMx.VOICE_CONNECTION_SUCCESS, ed(ep(ed({}, n), {
             hostname: this.hostname,
             port: this.port,
             protocol: this.protocol,
@@ -703,7 +703,7 @@ class eN extends Chunk47770.Z {
           }), this.stateHistory.getVoiceConnectionSuccessStats()));
           let r = performance.now(),
             i = (e, t) => null == e || null == t ? null : e - t;
-          F.default.track(es.rMx.VOICE_CONNECTION_TTC_COLLECTED, {
+          B.default.track(es.rMx.VOICE_CONNECTION_TTC_COLLECTED, {
             rtc_connection_id: n.rtc_connection_id,
             time_1_creation_to_connect: this._connectStartTime - this._createdTime,
             time_2_media_engine_connect: h,
@@ -789,7 +789,7 @@ class eN extends Chunk47770.Z {
   }
   _handleRemoteStreamsReady(e) {
     let t = (0, _.zO)() - this._connectStartTime;
-    F.default.track(es.rMx.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, ep(ed({}, this._getAnalyticsProperties()), {
+    B.default.track(es.rMx.VOICE_CONNECTION_REMOTE_STREAMS_CREATED, ep(ed({}, this._getAnalyticsProperties()), {
       number_of_users: e,
       duration_ms: t
     }))
@@ -875,7 +875,7 @@ class eN extends Chunk47770.Z {
     if (null != s && this.context === el.Yn.DEFAULT) {
       let t = s.getInboundStats(e),
         n = null != (a = null == t ? true : t.num_frames) ? a : 0;
-      null != t && n > 0 && (F.default.track(es.rMx.VIDEO_STREAM_ENDED, ed(ep(ed({}, this._getAnalyticsProperties()), {
+      null != t && n > 0 && (B.default.track(es.rMx.VIDEO_STREAM_ENDED, ed(ep(ed({}, this._getAnalyticsProperties()), {
         app_hardware_acceleration_enabled: V.Z.getAppHardwareAccelerationEnabled(),
         media_session_id: this.getMediaSessionId(),
         sender_user_id: e,
@@ -900,7 +900,7 @@ class eN extends Chunk47770.Z {
   _handleMediaSessionId(e) {
     this._mediaSessionId = e, this.logger.info("Setting media-session-id: ".concat(e, " for rtc-connection-id: ").concat(this.getRTCConnectionId()));
     let t = v.Z.getRawThermalState();
-    F.default.track(es.rMx.MEDIA_SESSION_JOINED, ep(ed({}, this._getAnalyticsProperties()), {
+    B.default.track(es.rMx.MEDIA_SESSION_JOINED, ep(ed({}, this._getAnalyticsProperties()), {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       raw_thermal_state: t
@@ -942,7 +942,7 @@ class eN extends Chunk47770.Z {
     let n = this._secureFramesTransitionStates.size;
     this._secureFramesTransitionStates.delete(e);
     let r = (e, t) => null != e && null != t ? e - t : true;
-    F.default.track(es.rMx.SECURE_FRAMES_TRANSITION, ep(ed({}, this._getAnalyticsProperties()), {
+    B.default.track(es.rMx.SECURE_FRAMES_TRANSITION, ep(ed({}, this._getAnalyticsProperties()), {
       media_session_id: this.getMediaSessionId(),
       parent_media_session_id: this.parentMediaSessionId,
       sender_user_id: this.userId,
@@ -1181,7 +1181,7 @@ class eN extends Chunk47770.Z {
         timeSinceInit: d,
         eventLog: f
       }
-      of this._mlsFailures) F.default.track(es.rMx.MLS_FAILURES, ep(ed({}, this._getAnalyticsProperties()), {
+      of this._mlsFailures) B.default.track(es.rMx.MLS_FAILURES, ep(ed({}, this._getAnalyticsProperties()), {
       media_session_id: i,
       parent_media_session_id: this.parentMediaSessionId,
       failure_id: e,
@@ -1201,7 +1201,7 @@ class eN extends Chunk47770.Z {
     this._mlsFailures = []
   }
   _alertMLSFailure(e, t) {
-    let n = B.default.getCurrentUser();
+    let n = F.default.getCurrentUser();
     ((null == n ? true : n.isStaff()) || (null == n ? true : n.isStaffPersonal())) && h.Z.show({
       title: "MLS Error in ".concat(e),
       body: "Error: ".concat(t, "! Please upload your logs in A/V settings and ask everyone in the call to do the same, and ping us in #av-e2ee in Core Tech!")
@@ -1264,7 +1264,7 @@ class eN extends Chunk47770.Z {
       if (null != this._voiceQuality) {
         let e = this._voiceQuality.getPeriodicStats();
         if (this.shouldReportPeriodicStats(e))
-          for (let t of e) F.default.track(es.rMx.VOICE_QUALITY_PERIODIC_STATS, ep(ed({}, this._getAnalyticsProperties()), {
+          for (let t of e) B.default.track(es.rMx.VOICE_QUALITY_PERIODIC_STATS, ep(ed({}, this._getAnalyticsProperties()), {
             media_session_id: this.getMediaSessionId(),
             sender_user_id: t.userId,
             hostname: this.hostname,
@@ -1300,7 +1300,7 @@ class eN extends Chunk47770.Z {
     })), eu(this, "_trackVoiceConnectionConnecting", () => {
       let e = M.Z.getChannel(this.channelId),
         t = null == e ? true : e.type;
-      F.default.track(es.rMx.VOICE_CONNECTION_CONNECTING, ep(ed({}, this.getAudioDeviceStates(), this.getVideoDeviceStates()), {
+      B.default.track(es.rMx.VOICE_CONNECTION_CONNECTING, ep(ed({}, this.getAudioDeviceStates(), this.getVideoDeviceStates()), {
         guild_id: this.guildId,
         channel_id: this.channelId,
         rtc_connection_id: this.getRTCConnectionId(),

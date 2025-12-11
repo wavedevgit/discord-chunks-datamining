@@ -184,8 +184,8 @@ function D(e) {
     serialize: U,
     clear: G,
     hideIcon: Z = false,
-    isProcessing: B = false,
-    "aria-label": F,
+    isProcessing: F = false,
+    "aria-label": B,
     "aria-labelledby": V,
     label: H,
     description: Y,
@@ -283,7 +283,7 @@ function D(e) {
           "aria-errormessage": null == e ? true : e.errorMessageId,
           "aria-invalid": (null == e ? true : e.errorMessageId) != null,
           disabled: s,
-          "aria-busy": B,
+          "aria-busy": F,
           "aria-disabled": s,
           fullWidth: "horizontal" === q,
           innerRef: e => {
@@ -302,7 +302,7 @@ function D(e) {
           className: E.select,
           "aria-haspopup": "listbox",
           "aria-expanded": d,
-          "aria-label": F,
+          "aria-label": B,
           "aria-labelledby": V,
           children: [eo.length > 0 ? (0, r.jsx)(p.Text, {
             className: E.value,
@@ -313,7 +313,7 @@ function D(e) {
             children: n
           }), (0, r.jsx)("div", {
             className: E.icons,
-            children: B ? (0, r.jsx)(p.bbz, {
+            children: F ? (0, r.jsx)(p.bbz, {
               dotRadius: 3.5,
               themed: true
             }) : (0, r.jsxs)(r.Fragment, {

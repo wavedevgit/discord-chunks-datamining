@@ -41,14 +41,14 @@ function O(e) {
     channel: r,
     onActionTaken: s,
     recurrenceId: c
-  } = e, o = (0, g.xt)(t), d = (0, a.e7)([g.ZP], () => g.ZP.isInterestedInEventRecurrence(t.id, c), [c, t]), f = (0, v.ZP)(t), b = (0, a.e7)([u.Z], () => u.Z.isLurking(n.id), [n.id]), h = (0, p.T)(null == r ? true : r.id, t.id), m = (0, P.Z)({
+  } = e, o = (0, g.xt)(t), d = (0, a.e7)([g.ZP], () => g.ZP.isInterestedInEventRecurrence(t.id, c), [c, t]), f = (0, v.ZP)(t), b = (0, a.e7)([u.Z], () => u.Z.isLurking(n.id), [n.id]), h = (0, p.T)(null == r ? true : r.id, t.id), x = (0, P.Z)({
     guild: n,
     channel: r,
     guildScheduledEvent: t,
     isActive: o,
     recurrenceId: c,
     onActionTaken: s
-  }), x = (0, Z.Zs)(function(e) {
+  }), m = (0, Z.Zs)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         l = Object.keys(n);
@@ -72,15 +72,15 @@ function O(e) {
     isChannelPublic: h,
     canInvite: f,
     entityType: t.entity_type
-  }, m)), j = null != m.onContextMenu ? (0, l.jsx)("div", {
+  }, x)), j = null != x.onContextMenu ? (0, l.jsx)("div", {
     className: k.leadingAction,
     children: (0, l.jsx)(Z.b5, {
-      onClick: m.onContextMenu
+      onClick: x.onContextMenu
     })
   }) : true;
   return (0, l.jsx)(i.Go$, {
     leading: j,
-    actions: x
+    actions: m
   })
 }
 let R = e => {
@@ -94,7 +94,7 @@ let R = e => {
   } = (0, o.ZP)(c.Z.GUILD_EVENT_MODAL), [Z, P] = r.useState(u), R = (0, a.e7)([g.ZP], () => g.ZP.getGuildScheduledEvent(t), [t]), L = null == R ? true : R.id, B = null == R ? true : R.guild_id, F = (0, a.e7)([b.Z], () => b.Z.getGuild(B), [B]), D = null == R ? true : R.channel_id, M = (0, a.e7)([f.Z], () => f.Z.getChannel(D), [D]), A = (0, d.Dt)(), [V, z] = r.useState(T.fL.EVENT_INFO), G = (0, _.Z)(L, Z), U = (0, j.Z)(B, L, Z), [X, {
     loading: W,
     error: H
-  }] = (0, m.Z)(() => x.Z.getGuildEventUsers(null == R ? true : R.id, Z, B));
+  }] = (0, x.Z)(() => m.Z.getGuildEventUsers(null == R ? true : R.id, Z, B));
   r.useEffect(() => {
     null == R ? v() : h.default.track(w.rMx.OPEN_MODAL, {
       type: T.zw,
@@ -128,11 +128,11 @@ let R = e => {
       onClose: v,
       children: [(0, l.jsx)(i.xBx, {
         title: R.name
-      }), (null == R ? true : R.image) != null && (0, l.jsx)(y.Z, {
+      }), (null == R ? true : R.image) != null && (0, l.jsx)(S.Z, {
         source: (0, I.Z)(R),
         className: k.banner
       }), (0, l.jsx)(i.fef, {
-        controls: (0, l.jsx)(S.Z, {
+        controls: (0, l.jsx)(y.Z, {
           selectedTab: V,
           onTabSelected: ee,
           userCount: U

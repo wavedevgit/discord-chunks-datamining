@@ -436,7 +436,7 @@ async function ed(e) {
     oldFormErrors: true,
     rejectWithError: true
   };
-  return null != i ? (await F.Z.post(eo({
+  return null != i ? (await B.Z.post(eo({
     url: ee.ANM.ACTIVITY_CHANNEL_LAUNCH(i, n),
     body: {
       session_id: l,
@@ -543,7 +543,7 @@ async function eh(e) {
   let {
     guildId: o,
     force: s = false
-  } = e, c = H.ZP.getShelfActivities(o), u = c.map(e => b.Z.getApplication(e.application_id)).filter(B.lm);
+  } = e, c = H.ZP.getShelfActivities(o), u = c.map(e => b.Z.getApplication(e.application_id)).filter(F.lm);
   if (!s && !H.ZP.shouldFetchShelf(o)) {
     if (null == (t = H.ZP.getShelfFetchStatus(o)) ? true : t.isFetching) {
       let e, t, n = new Promise(t => {
@@ -567,7 +567,7 @@ async function eh(e) {
     let e = true !== o && "" !== o ? {
         guild_id: o
       } : true,
-      t = await F.Z.get({
+      t = await B.Z.get({
         url: ee.ANM.ACTIVITY_SHELF,
         query: e,
         trackedActionData: {

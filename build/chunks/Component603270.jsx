@@ -217,7 +217,7 @@ function L(e) {
       })
     },
     Z = 12,
-    B = M ? k ? (0, r.jsxs)(r.Fragment, {
+    F = M ? k ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.tBG, {
         size: "custom",
         width: Z,
@@ -230,8 +230,8 @@ function L(e) {
         height: Z
       }), " ", N.intl.string(N.t.NRC3ar)]
     }) : null == E || null == (t = E.description) ? true : t.trim();
-  "" === B && (B = true);
-  let F = () => {
+  "" === F && (F = true);
+  let B = () => {
       U(), y.default.track(C.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: b.id,
         sku_id: h.id,
@@ -258,11 +258,11 @@ function L(e) {
   return (0, r.jsx)(j, {
     appName: b.name,
     title: h.name,
-    description: B,
+    description: F,
     link: "".concat(location.protocol, "//").concat(location.host).concat(C.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(b.id, A.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: Y,
     iconSrc: R,
-    onIconClick: F,
+    onIconClick: B,
     children: (0, r.jsxs)("div", {
       className: P.skuPurchaseButtons,
       children: [(0, r.jsx)(l.Button, {

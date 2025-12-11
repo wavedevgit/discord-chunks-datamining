@@ -90,7 +90,7 @@ function g(e) {
         className: p.cmdDetails,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           lineClamp: 1,
           children: null != (t = null == n ? true : n.displayName) ? t : v
         }), (0, r.jsx)(a.Text, {

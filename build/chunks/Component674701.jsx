@@ -82,10 +82,10 @@ function P(e) {
     })
   }, [t]);
   let Z = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.string(T.t.CeQIwZ) : (0, E.Ou)(t),
-    B = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.formatToPlainString(T.t.PpG27s, {
+    F = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.formatToPlainString(T.t.PpG27s, {
       numberOfYears: k
     }) : (0, E.Ou)(t),
-    F = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.formatToPlainString(T.t.W7AF4C, {
+    B = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.formatToPlainString(T.t.W7AF4C, {
       friendUserName: g.ZP.getName(a)
     }) : (0, E.Ou)(t),
     V = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.string(T.t.OrwKgi) : (0, E.Ou)(t),
@@ -160,7 +160,7 @@ function P(e) {
               variant: "text-xs/normal",
               color: "text-subtle",
               lineClamp: 1,
-              children: B()
+              children: F()
             })]
           })]
         })]
@@ -182,9 +182,9 @@ function P(e) {
         }), (0, r.jsx)(u.Button, {
           size: "sm",
           variant: "expressive",
-          text: F(),
+          text: B(),
           icon: u.OgN,
-          "aria-label": F(),
+          "aria-label": B(),
           onClick: H
         })]
       }), null != R && (0, r.jsx)("div", {

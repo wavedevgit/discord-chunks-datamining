@@ -52,7 +52,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk476945 = require("./476945.js"),
   Chunk945182 = require("./945182.js");
 
-function F(e) {
+function B(e) {
   let {
     Icon: t,
     text: n,
@@ -93,7 +93,7 @@ function V(e) {
         Icon: i,
         getText: a
       } = e;
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(B, {
         Icon: i,
         text: a(),
         className: U.itemApplicationHome,
@@ -116,7 +116,7 @@ function H(e) {
         Icon: a,
         getText: o
       } = e;
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(B, {
         Icon: a,
         text: o(),
         className: t && !n ? U.itemApplicationHome : U.itemWithWumpus,
@@ -260,7 +260,7 @@ function z(e) {
         Icon: i,
         getText: o
       } = e;
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(B, {
         Icon: i,
         text: o(d),
         className: a()(3 === t ? U.itemApplicationHome : U.itemWithWumpus, 0 === n ? u : true),
@@ -351,7 +351,7 @@ function Q(e) {
     isModal: C = false,
     priceOptions: D,
     showPromotionalGiftBanner: x = false
-  } = e, M = (0, o.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), G = (0, T.N)(), Z = null == G || null == (t = G.subscription_trial) ? true : t.sku_id, F = (null == M ? true : M.hasActiveTrial) ? null == k ? true : k.premiumType : null, V = (0, O.Nx)(), H = (0, I.N)(), Y = (0, O.t7)(), W = null != Z || null != F ? L.C.PREMIUM_TRIAL : null != H || Y ? L.C.PREMIUM_DISCOUNT : null, K = (0, y.Vi)(), q = !b && V, Q = null == (n = (0, v.Z)()) ? true : n.planSelection, X = null == Q || null == (i = Q.getBackgroundImageUrl) ? true : i.call(Q), J = null == Q || null == (u = Q.getCardImageUrl) ? true : u.call(Q), $ = (0, N.W)(), ee = (0, s.ap)((0, c.ZP)()), et = ee ? P.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : P.VE.PREMIUM_TIER_2_WHITE_FILL, en = (0, P.A1)(Y, F, H, G, Z), er = q && !ee ? U.rimGlowTier2 : true;
+  } = e, M = (0, o.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), G = (0, T.N)(), Z = null == G || null == (t = G.subscription_trial) ? true : t.sku_id, B = (null == M ? true : M.hasActiveTrial) ? null == k ? true : k.premiumType : null, V = (0, O.Nx)(), H = (0, I.N)(), Y = (0, O.t7)(), W = null != Z || null != B ? L.C.PREMIUM_TRIAL : null != H || Y ? L.C.PREMIUM_DISCOUNT : null, K = (0, y.Vi)(), q = !b && V, Q = null == (n = (0, v.Z)()) ? true : n.planSelection, X = null == Q || null == (i = Q.getBackgroundImageUrl) ? true : i.call(Q), J = null == Q || null == (u = Q.getCardImageUrl) ? true : u.call(Q), $ = (0, N.W)(), ee = (0, s.ap)((0, c.ZP)()), et = ee ? P.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE : P.VE.PREMIUM_TIER_2_WHITE_FILL, en = (0, P.A1)(Y, B, H, G, Z), er = q && !ee ? U.rimGlowTier2 : true;
   return (0, r.jsxs)("div", {
     className: a()(U.card, U.tier2, E, {
       [U.withTier2Rim]: q,
@@ -378,7 +378,7 @@ function Q(e) {
     }), d ? (0, r.jsx)("div", {
       className: U.wumpusImageContainer,
       children: (0, r.jsx)(l.Eep, {
-        src: B,
+        src: F,
         mediaLayoutType: j.hV.RESPONSIVE,
         width: 270,
         height: 242,
@@ -454,7 +454,7 @@ function J(e) {
       ref: s,
       className: U.applicationHomeTierCardSectionHeader,
       variant: "display-md",
-      color: "header-primary",
+      color: "text-strong",
       children: M.intl.string(M.t.vLz3Zs)
     }), (0, r.jsxs)("div", {
       ref: s,

@@ -2,7 +2,7 @@
 /** chunk id: 961926, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk365604 = require("./365604.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,20 +48,20 @@ function p(e, t) {
   }), e
 }
 
-function b(e) {
-  var t, n, b;
+function p(e) {
+  var t, n, p;
   let {
     rule: h,
     onChangeRule: x
   } = e, j = i.useCallback(e => {
-    x(p(f({}, h), {
-      triggerMetadata: p(f({}, h.triggerMetadata), {
+    x(b(m({}, h), {
+      triggerMetadata: b(m({}, h.triggerMetadata), {
         allowList: e
       })
     }))
   }, [x, h]);
   return (0, r.jsxs)("div", {
-    className: m.cardContentsContainer,
+    className: f.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: g.intl.string(g.t.CX5Yfc),
@@ -72,7 +72,7 @@ function b(e) {
         onChange: j,
         initialValue: null == (t = h.triggerMetadata) ? true : t.allowList,
         maxWordCount: u.I3,
-        collapsed: (null == (n = h.triggerMetadata) ? true : n.allowList) == null || (null == (b = h.triggerMetadata) ? true : b.allowList.length) === 0
+        collapsed: (null == (n = h.triggerMetadata) ? true : n.allowList) == null || (null == (p = h.triggerMetadata) ? true : p.allowList.length) === 0
       })]
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.ARROW_DOWN

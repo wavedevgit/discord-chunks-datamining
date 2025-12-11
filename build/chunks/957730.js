@@ -136,7 +136,7 @@ function Z(e, t, n) {
   }).first()
 }
 
-function B(e) {
+function F(e) {
   return {
     order: e.order,
     match: e.match,
@@ -147,7 +147,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   return {
     match: o().anyScopeRegex(e),
     parse: e => ({
@@ -166,15 +166,15 @@ let V = Chunk428595.Z.RULES,
   Q = /(@everyone|@here|@Clyde)\b/,
   X = /^[^\s]+@[^\s]+\.[^\s.]+/,
   J = {
-    link: B(o().defaultRules.link),
-    autolink: B(o().defaultRules.autolink),
-    url: B(o().defaultRules.url),
-    inlineCode: B(V.inlineCode),
-    codeBlock: B(V.codeBlock),
-    rawUserMention: F(Y),
-    rawRoleMention: F(W),
-    rawChannelMention: F(z),
-    rawEmoji: F(q),
+    link: F(o().defaultRules.link),
+    autolink: F(o().defaultRules.autolink),
+    url: F(o().defaultRules.url),
+    inlineCode: F(V.inlineCode),
+    codeBlock: F(V.codeBlock),
+    rawUserMention: B(Y),
+    rawRoleMention: B(W),
+    rawChannelMention: B(z),
+    rawEmoji: B(q),
     mention: {
       match(e, t, n) {
         let r = n.split(" ").pop() + e;
@@ -264,8 +264,8 @@ let V = Chunk428595.Z.RULES,
     })
   },
   $ = {
-    inlineCode: B(V.inlineCode),
-    codeBlock: B(V.codeBlock),
+    inlineCode: F(V.inlineCode),
+    codeBlock: F(V.codeBlock),
     mention: {
       match: o().anyScopeRegex(Y),
       parse(e, t, n) {

@@ -2,8 +2,8 @@
 /** chunk id: 420966, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  V: () => p,
-  Z: () => b
+  V: () => b,
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk235778 = require("./235778.js");
 
-function p() {
+function b() {
   let [e, t] = Chunk473749.useState(true);
   return {
     scrolledToTop: module,
@@ -28,34 +28,34 @@ function p() {
   }
 }
 
-function b(e) {
+function p(e) {
   let {
     guild: t,
-    role: p,
-    selectedSection: b,
+    role: b,
+    selectedSection: p,
     setSelectedSection: h
   } = e, x = i.useCallback(e => {
     h(e)
   }, [h]), j = (0, l.e7)([d.Z], () => {
     var e;
-    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[p.id]
-  }, [p.id, t.id]), v = (0, c.fI)(p), O = (0, u.Z)(t.id, p);
+    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[b.id]
+  }, [b.id, t.id]), v = (0, c.fI)(b), O = (0, u.Z)(t.id, b);
   i.useEffect(() => {
     v && h(g.ZI.PERMISSIONS)
   }, [v, h]);
-  let C = (0, o.e)(t, p);
+  let C = (0, o.e)(t, b);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: f.titleContainer,
+      className: m.titleContainer,
       children: [(0, r.jsx)(a.Text, {
-        className: f.titleText,
-        color: "header-primary",
+        className: m.titleText,
+        color: "text-strong",
         variant: "text-md/semibold",
-        children: m.intl.format(m.t.BUdGkE, {
-          roleName: p.name
+        children: f.intl.format(f.t.BUdGkE, {
+          roleName: b.name
         })
       }), C ? (0, r.jsx)(a.P3F, {
-        className: f.menu,
+        className: m.menu,
         onClick: function(e) {
           (0, s.jW)(e, async () => {
             let {
@@ -82,7 +82,7 @@ function b(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: p
+                role: b
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -96,7 +96,7 @@ function b(e) {
             }
           })
         },
-        "aria-label": m.intl.string(m.t.PdRCRg),
+        "aria-label": f.intl.string(f.t.PdRCRg),
         children: (0, r.jsx)(a.xhG, {
           size: "md",
           color: "currentColor"
@@ -106,31 +106,31 @@ function b(e) {
       messageType: a.QYI.WARNING,
       children: O
     }) : null, (0, r.jsxs)(a.njP, {
-      className: f.tabBar,
-      "aria-label": m.intl.string(m.t["+1H47t"]),
-      selectedItem: b,
+      className: m.tabBar,
+      "aria-label": f.intl.string(f.t["+1H47t"]),
+      selectedItem: p,
       type: "top",
       look: "brand",
       onItemSelect: x,
       children: [(0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.DISPLAY,
         disabled: v,
-        children: m.intl.string(m.t.hmdomw)
+        children: f.intl.string(f.t.hmdomw)
       }), (0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.PERMISSIONS,
-        children: m.intl.string(m.t.WIDE1L)
+        children: f.intl.string(f.t.WIDE1L)
       }), (0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.VERIFICATIONS,
         disabled: v,
-        children: m.intl.string(m.t["5//Muu"])
+        children: f.intl.string(f.t["5//Muu"])
       }), (0, r.jsx)(a.njP.Item, {
-        className: f.tabBarItem,
+        className: m.tabBarItem,
         id: g.ZI.MEMBERS,
         disabled: v,
-        children: v ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
+        children: v ? f.intl.string(f.t["kg//+7"]) : f.intl.formatToPlainString(f.t.bHnZWW, {
           numMembers: String(j)
         })
       })]

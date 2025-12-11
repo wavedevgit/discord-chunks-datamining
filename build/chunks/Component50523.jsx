@@ -44,8 +44,8 @@ function v(e) {
     if (null == x) return;
     let e = E.ZP.getEmbeddedActivitiesForChannel(x).filter(e => e.applicationId === S.id);
     return e.length > 0 ? e[0].compositeInstanceId : true
-  }), M = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = L === y.jy.CAN_LAUNCH, G = null != j && (null == M ? true : M.compositeInstanceId) === j, Z = null != I ? I : T.customId, B = [];
-  U && B.push({
+  }), M = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = L === y.jy.CAN_LAUNCH, G = null != j && (null == M ? true : M.compositeInstanceId) === j, Z = null != I ? I : T.customId, F = [];
+  U && F.push({
     label: null == j ? O.intl.string(O.t.RscU7I) : G ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
     trackingArea: f.j_.PLAY,
     onClick() {
@@ -60,7 +60,7 @@ function v(e) {
       })
     },
     disabled: G
-  }), w && !U && B.push({
+  }), w && !U && F.push({
     label: O.intl.string(O.t.JeK1Wg),
     trackingArea: f.j_.PLAY,
     onClick() {
@@ -73,10 +73,10 @@ function v(e) {
       })
     }
   });
-  let F = (0, p.G)(S);
+  let B = (0, p.G)(S);
   return (0, r.jsx)(d.W, {
-    actions: B,
-    onClickContent: F,
+    actions: F,
+    onClickContent: B,
     header: S.name,
     iconSrc: h.ZP.getApplicationIconURL({
       id: S.id,

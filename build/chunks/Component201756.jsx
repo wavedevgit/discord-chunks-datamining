@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk498607 = require("./498607.js"),
   s = require.n(Chunk498607),
   Chunk399606 = require("./399606.js"),
@@ -65,26 +65,26 @@ function D(e, t) {
 let N = Chunk473749.forwardRef(function(e, t) {
   var n, l, {
       label: i,
-      onFilter: o,
+      onFilter: a,
       isFiltered: s,
       isSorted: c,
       className: d
     } = e,
     C = D(e, ["label", "onFilter", "isFiltered", "isSorted", "className"]);
-  let m = s ? "header-primary" : "text-default";
+  let m = s ? "text-strong" : "text-default";
   return c && (m = "text-brand"), (0, r.jsx)("th", {
-    className: a()(w.tableHeaderCellContainer, d),
+    className: o()(w.tableHeaderCellContainer, d),
     children: (0, r.jsxs)(u.P3F, (n = Z({}, C), l = l = {
       innerRef: t,
-      onClick: o,
-      className: a()(w.tableHeaderCell, {
-        [w.tableHeaderCellWithFilter]: null != o
+      onClick: a,
+      className: o()(w.tableHeaderCell, {
+        [w.tableHeaderCellWithFilter]: null != a
       }),
       children: [(0, r.jsx)(u.Text, {
         variant: "eyebrow",
         color: m,
         children: i
-      }), null != o && (0, r.jsx)("div", {
+      }), null != a && (0, r.jsx)("div", {
         className: w.filterIconButton,
         children: (0, r.jsx)(u.gXV, {
           size: "custom",
@@ -111,7 +111,7 @@ function _(e) {
   let {
     guildId: t,
     currentPagedMembers: n
-  } = e, i = l.useRef(null), o = l.useRef(null), _ = l.useRef(null), R = l.useRef(null), L = l.useRef(null), I = (0, c.e7)([p.Z], () => p.Z.getSearchStateByGuildId(t), [t], s()), P = (0, c.e7)([m.Z, C.Z], () => m.Z.can(O.Plq.MANAGE_GUILD, C.Z.getGuild(t)), [t]), {
+  } = e, i = l.useRef(null), a = l.useRef(null), _ = l.useRef(null), R = l.useRef(null), L = l.useRef(null), I = (0, c.e7)([p.Z], () => p.Z.getSearchStateByGuildId(t), [t], s()), P = (0, c.e7)([m.Z, C.Z], () => m.Z.can(O.Plq.MANAGE_GUILD, C.Z.getGuild(t)), [t]), {
     selectedUserIds: V,
     addUsers: M,
     clearSelection: E
@@ -122,7 +122,7 @@ function _(e) {
     children: (0, r.jsxs)("tr", {
       className: w.tableHeaderRow,
       children: [Y && (0, r.jsx)("th", {
-        className: a()(w.tableHeaderCellContainer, S.xsmallCol),
+        className: o()(w.tableHeaderCellContainer, S.xsmallCol),
         children: (0, r.jsx)(d.u, {
           shouldShow: !W,
           text: H.intl.string(H.t.tJEY0G),
@@ -162,7 +162,7 @@ function _(e) {
             }, n))
           }
         }), (0, r.jsx)(u.yRy, {
-          targetElementRef: o,
+          targetElementRef: a,
           animation: u.yRy.Animation.FADE,
           position: "bottom",
           spacing: 4,
@@ -176,7 +176,7 @@ function _(e) {
               onClick: t
             } = e, n = D(e, ["onClick"]);
             return (0, r.jsx)(N, Z({
-              ref: o,
+              ref: a,
               label: H.intl.string(H.t.sPph4O),
               onFilter: t,
               isFiltered: F,

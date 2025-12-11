@@ -63,7 +63,7 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -121,7 +121,7 @@ function H(e) {
       } = a, d = f.ZP.getDisambiguatedEmojiContext(s).getById(e.emojiId);
       if (null != d) {
         let t = d.require_colons;
-        e = F(Z({}, e), {
+        e = B(Z({}, e), {
           name: t ? ":".concat(d.name, ":") : d.name
         })
       }
@@ -380,7 +380,7 @@ let K = {
 };
 
 function z(e) {
-  return F(Z({}, K), {
+  return B(Z({}, K), {
     link: (0, x.Z)(e),
     devLink: (0, w.Z)(e),
     emoji: V(e),

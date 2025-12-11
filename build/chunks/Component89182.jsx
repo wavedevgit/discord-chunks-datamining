@@ -69,7 +69,7 @@ function m(e) {
     className: d.categoryLabel,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
-      color: "header-primary",
+      color: "text-strong",
       children: n
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",

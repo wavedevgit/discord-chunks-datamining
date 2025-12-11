@@ -22,7 +22,7 @@ function m(e) {
     warnings: m
   } = e, {
     spent: g
-  } = (0, u.Z)(t), v = (0, o.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - i.useMemo(() => {
+  } = (0, u.Z)(t), v = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - i.useMemo(() => {
     var e, t, n;
     return null != (n = null == v || null == (t = v.filter) || null == (e = t.call(v, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [v]);
@@ -31,16 +31,16 @@ function m(e) {
     children: [(0, r.jsx)(l.Mgn, {
       color: s.Z.colors.TEXT_FEEDBACK_WARNING,
       className: p.icon
-    }), (0, r.jsx)(a.xvT, {
+    }), (0, r.jsx)(o.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: f.intl.string(d.default.n5hQhc)
-    }), (0, r.jsxs)(a.xvT, {
+    }), (0, r.jsxs)(o.xvT, {
       variant: "text-sm/medium",
       children: [f.intl.formatToPlainString(d.default.iAaAiG, {
         boostCount: x,
         perksString: n.join(", ")
-      }), null == m ? true : m.map((e, t) => (0, r.jsx)(a.xvT, {
+      }), null == m ? true : m.map((e, t) => (0, r.jsx)(o.xvT, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
         className: p.warning,

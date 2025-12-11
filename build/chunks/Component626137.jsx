@@ -80,7 +80,7 @@ let I = function(e, t, n) {
         text: Chunk388032.intl.string(Chunk388032.t.Uskgxx),
         onClick: () => {
           exports(true), (function(e) {
-            b.default.track(O.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+            p.default.track(O.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
             let t = null == e ? O.E07.DEVELOPER_PORTAL : O.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
@@ -118,7 +118,7 @@ let I = function(e, t, n) {
         analytics: null != module ? Chunk743676.Z.getOverviewAnalytics(module) : null,
         errorCode: Chunk743676.Z.getError()
       })),
-      b = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
+      p = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
       T = null == exports || null == require || null != exports && exports < 500 && null != require && !require.features.has(Chunk981631.GuildFeatures.PARTNERED) && !require.features.has(Chunk981631.GuildFeatures.VERIFIED);
     Chunk473749.useEffect(() => {
       null == module || T || ((0, Chunk798528.Vk)(module), (0, Chunk798528.SR)(module), (0, Chunk798528.xl)(module))

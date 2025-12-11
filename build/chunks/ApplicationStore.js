@@ -260,7 +260,7 @@ function Z(e) {
   b(o.ZP.createFromServer(n.store_listing.sku.application))
 }
 
-function B(e) {
+function F(e) {
   let {
     invite: t
   } = e;
@@ -268,7 +268,7 @@ function B(e) {
   b(o.ZP.createFromServer(t.target_application))
 }
 
-function F(e) {
+function B(e) {
   let {
     storeListing: t
   } = e;
@@ -384,10 +384,10 @@ let q = new z(Chunk570140.Z, {
   GUILD_APPLICATIONS_FETCH_SUCCESS: k,
   BILLING_PAYMENTS_FETCH_SUCCESS: U,
   PAYMENT_UPDATE: G,
-  INVITE_RESOLVE_SUCCESS: B,
+  INVITE_RESOLVE_SUCCESS: F,
   GIFT_CODE_RESOLVE_SUCCESS: Z,
   LIBRARY_FETCH_SUCCESS: w,
-  STORE_LISTING_FETCH_SUCCESS: F,
+  STORE_LISTING_FETCH_SUCCESS: B,
   LOAD_MESSAGES_SUCCESS: V,
   USER_PROFILE_FETCH_SUCCESS: x,
   APP_DM_OPEN: L,

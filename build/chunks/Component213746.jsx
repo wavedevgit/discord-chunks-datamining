@@ -68,7 +68,7 @@ function y(e) {
       className: C.productSection,
       children: [(0, a.jsx)(p.r, {
         subscriptions: n,
-        color: "header-primary"
+        color: "text-strong"
       }), (0, a.jsx)("div", {
         className: C.products,
         children: n.map(e => {
@@ -77,7 +77,7 @@ function y(e) {
             appId: t.id,
             listing: e,
             subscriptionType: n,
-            onDetails: () => (0, b.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+            onDetails: () => (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
           }, e.id)
         })
       })]
@@ -85,14 +85,14 @@ function y(e) {
       className: C.productSection,
       children: [(0, a.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: v.intl.string(v.t.yUGTs8)
       }), (0, a.jsx)("div", {
         className: C.products,
         children: r.map(e => (0, a.jsx)(u.hd, {
           skuId: e.skuId,
           appId: t.id,
-          onDetails: () => (0, b.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+          onDetails: () => (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
         }, e.id))
       })]
     }), (0, a.jsx)(c.Z, {
@@ -111,7 +111,7 @@ function I(e) {
         skuId: i
       }
     }
-  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : true, [i]), d = r.useId(), u = r.useCallback(() => (0, b.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, g.GlobalDiscoveryAppsSections.STORE)), [t]);
+  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : true, [i]), d = r.useId(), u = r.useCallback(() => (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE)), [t]);
   return r.useLayoutEffect(() => {
     var e;
     switch (null == o ? true : o.type) {
@@ -128,7 +128,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            P() || (0, b.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, g.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
           }
         });
       case x.epS.SUBSCRIPTION:
@@ -146,7 +146,7 @@ function I(e) {
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            P() || (0, b.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, g.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
           }
         })
     }
@@ -168,7 +168,7 @@ function S(e) {
   return (0, a.jsx)("div", {
     className: C.legalContainer,
     children: (0, a.jsx)(i.xvT, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-sm/normal",
       children: null != r && null != l ? v.intl.format(v.t.nylPOT, {
         termsHook: e => s(e, r),

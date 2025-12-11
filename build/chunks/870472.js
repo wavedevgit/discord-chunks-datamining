@@ -47,7 +47,7 @@ function c(e, t) {
     },
     setState: u,
     goBack: g,
-    goForward: m
+    goForward: f
   } = e;
   r.useLayoutEffect(() => {
     let e = e => t => {
@@ -90,7 +90,7 @@ function c(e, t) {
       document.removeEventListener("keydown", t), document.removeEventListener("keyup", n)
     }
   }, [u]);
-  let f = r.useCallback(e => {
+  let m = r.useCallback(e => {
       var t, r;
       let i = (null != (r = e.clipboardData.getData("text")) ? r : "").split(s.uz).map(e => e.trim()).filter(e => e.length > 0);
       i.length <= 1 || ((0, a.flushSync)(() => {
@@ -108,7 +108,7 @@ function c(e, t) {
         })
       }), e.preventDefault(), e.stopPropagation(), null == (t = n.current) || t.scrollToBottom())
     }, [u, n]),
-    p = r.useCallback(e => {
+    b = r.useCallback(e => {
       u(t => {
         let {
           tags: n,
@@ -122,7 +122,7 @@ function c(e, t) {
         }
       })
     }, [u]),
-    b = r.useCallback(e => t => {
+    p = r.useCallback(e => t => {
       u(n => {
         let {
           tags: r,
@@ -250,8 +250,8 @@ function c(e, t) {
     y = r.useCallback(e => {
       var t, n, r, l;
       let a = e.metaKey || e.ctrlKey;
-      "z" === e.key && a ? (g().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && a && (m().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (l = i.current) || l.focus(), e.preventDefault(), e.stopPropagation())
-    }, [g, m, i]),
+      "z" === e.key && a ? (g().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && a && (f().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (l = i.current) || l.focus(), e.preventDefault(), e.stopPropagation())
+    }, [g, f, i]),
     N = r.useCallback(e => {
       var t;
       let n = o.trim().length > 0,
@@ -284,7 +284,7 @@ function c(e, t) {
       e.relatedTarget !== e.currentTarget && O(e, false, false)
     }, [O]);
   return {
-    handlePasteEvent: f,
+    handlePasteEvent: m,
     handleInputChange: v,
     handleKeyDown: r.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
@@ -295,8 +295,8 @@ function c(e, t) {
       let t = e.metaKey || e.ctrlKey;
       "Backspace" === e.key ? C(e) : "a" === e.key && t ? N(e) : "Escape" === e.key ? j(e) : s.Bd.has(e.key) && t ? y(e) : "Meta" !== e.key && j(e)
     }, [y, C, N, j, l]),
-    handleRemoveTag: p,
-    handleTagChangeEvent: b,
+    handleRemoveTag: b,
+    handleTagChangeEvent: p,
     handleSelectTag: h,
     handleUnselectTag: x,
     handleResetTagSelections: j,

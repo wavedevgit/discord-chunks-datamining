@@ -107,17 +107,17 @@ function Z(e) {
         compact: n
       });
     case c.p.INTERACTION_BLOCKED:
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(B, {
         compact: n
       });
     default:
-      return (0, r.jsx)(B, {
+      return (0, r.jsx)(F, {
         compact: n
       })
   }
 }
 
-function B(e) {
+function F(e) {
   let {
     compact: t
   } = e;
@@ -141,7 +141,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     compact: t
   } = e;
@@ -483,7 +483,7 @@ function K(e) {
               className: L.systemTag
             }), f && (0, r.jsx)(p.Text, {
               variant: "text-md/normal",
-              color: "header-primary",
+              color: "text-strong",
               tag: "span",
               className: L.spanCorrection,
               children: x.intl.string(x.t.ufawcw)

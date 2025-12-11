@@ -2,7 +2,7 @@
 /** chunk id: 610699, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./539854.js"), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -113,7 +113,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     channel: t,
     guild: n,
@@ -158,7 +158,7 @@ function B(e) {
   }) : null
 }
 
-function F(e) {
+function B(e) {
   var t, n;
   let a, o, {
       invite: s,
@@ -201,7 +201,7 @@ function F(e) {
     } = (0, m.ZP)(_.Z.INVITE_EMBED),
     G = (0, c.Wu)([p.ZP], () => null != M ? p.ZP.getEmbeddedActivitiesForChannel(M.id).filter(e => e.applicationId === b.id).flatMap(e => Array.from(e.userIds)) : [], [M, b.id]),
     Z = (0, c.Wu)([C.default], () => G.map(e => C.default.getUser(e)).filter(e => null != e), [G]),
-    B = i.useCallback(() => {
+    F = i.useCallback(() => {
       (0, f.r$)({
         invite: s,
         action: "accept",
@@ -213,7 +213,7 @@ function F(e) {
         analyticsLocations: U
       })
     }, [s, u, U, d]),
-    F = s.state === w.r2o.ACCEPTING,
+    B = s.state === w.r2o.ACCEPTING,
     H = null != v;
   if (null == v) {
     if (null == s.guild) return (0, r.jsx)(R.Z, {});
@@ -233,11 +233,11 @@ function F(e) {
       members: h,
       membersOnline: g,
       isActivityActive: j,
-      submitting: F,
+      submitting: B,
       buttonLabel: a,
       disabled: Y,
       disabledReason: o,
-      handleAcceptInvite: B,
+      handleAcceptInvite: F,
       onView: y
     })
   })
@@ -283,7 +283,7 @@ function V(e) {
     onClickBanner: C,
     info: (0, r.jsxs)("div", {
       className: j.infoWrapper,
-      children: [(0, r.jsx)(B, {
+      children: [(0, r.jsx)(F, {
         channel: o,
         guild: s,
         hasEnded: !d,

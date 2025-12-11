@@ -99,7 +99,7 @@ function L(e, t, n, r, s) {
 function j(e) {
   let {
     emoji: t
-  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, C] = i.useState(null), [A, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), w = d.E[f.yD.EMOJIS], D = (0, l.dQu)(w.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), B = i.useRef(false), F = i.useRef(0), V = i.useRef(0);
+  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, C] = i.useState(null), [A, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), w = d.E[f.yD.EMOJIS], D = (0, l.dQu)(w.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), F = i.useRef(false), B = i.useRef(0), V = i.useRef(0);
   L(n, o, T, x, j);
   let H = i.useCallback(() => {
     let e = null == o ? true : o.getContext("2d");
@@ -111,7 +111,7 @@ function j(e) {
     let e = t => {
       let n = .001 * t,
         r = n - R.current;
-      if (j.current += -Z.current * r, x.current += -G.current * r, !B.current) {
+      if (j.current += -Z.current * r, x.current += -G.current * r, !F.current) {
         if (Math.abs(G.current) > k) {
           let e = G.current > 0 ? 1 : false;
           G.current -= O * e * window.devicePixelRatio
@@ -126,16 +126,16 @@ function j(e) {
     return e(0), () => cancelAnimationFrame(P.current)
   }, [k, U]);
   let Y = i.useCallback(e => {
-      B.current = true, G.current = 0, Z.current = 0, F.current = e.clientX, V.current = e.clientY
+      F.current = true, G.current = 0, Z.current = 0, B.current = e.clientX, V.current = e.clientY
     }, []),
     W = i.useCallback(e => {
-      if (B.current) {
-        let t = (e.clientX - F.current) / window.devicePixelRatio;
-        G.current = -((e.clientY - V.current) / window.devicePixelRatio) * (y / window.devicePixelRatio), Z.current = -t * (y / window.devicePixelRatio), F.current = e.clientX, V.current = e.clientY
+      if (F.current) {
+        let t = (e.clientX - B.current) / window.devicePixelRatio;
+        G.current = -((e.clientY - V.current) / window.devicePixelRatio) * (y / window.devicePixelRatio), Z.current = -t * (y / window.devicePixelRatio), B.current = e.clientX, V.current = e.clientY
       }
     }, []),
     K = i.useCallback(() => {
-      B.current = false
+      F.current = false
     }, []);
   return i.useEffect(() => (window.addEventListener("mouseup", K), window.addEventListener("mousemove", W), () => {
     window.removeEventListener("mouseup", K), window.removeEventListener("mousemove", W)

@@ -53,11 +53,11 @@ function Z(e) {
       analyticsLocations: [f.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_PURCHASE_BUTTON]
     }))
   }, [i, m]), p = l.useCallback(() => {
-    (0, y.eagerNavigateToSocialLayerStorefront)({
+    (0, N.eagerNavigateToSocialLayerStorefront)({
       guildId: s
     })
   }, [s]), g = l.useCallback(() => {
-    m(E.o4.VISIT_SHOP), (0, y.default)({
+    m(E.o4.VISIT_SHOP), (0, N.default)({
       guildId: s
     }), d()
   }, [s, d, m]), C = l.useCallback(() => {
@@ -75,7 +75,7 @@ function Z(e) {
       className: B.titleDescriptionContainer,
       children: [(0, a.jsx)(u.Heading, {
         variant: "heading-xl/bold",
-        color: "header-primary",
+        color: "text-strong",
         children: i.name
       }), (0, a.jsx)(u.Text, {
         variant: "text-sm/medium",
@@ -84,7 +84,7 @@ function Z(e) {
       })]
     }), (0, a.jsx)(u.Heading, {
       variant: "heading-md/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: h
     }), (0, a.jsxs)("div", {
       className: B.buttonsContainer,
@@ -205,7 +205,7 @@ function M(e) {
     skuId: i,
     applicationId: f,
     guildId: v,
-    isStorefront: y,
+    isStorefront: N,
     analyticsLocations: T,
     analyticsContext: O,
     onClose: R
@@ -280,7 +280,7 @@ function M(e) {
         }), (0, a.jsx)(Z, {
           sku: G,
           guildId: v,
-          shouldShowShopLink: !y,
+          shouldShowShopLink: !N,
           onClose: R,
           trackPDPClick: q
         })]
@@ -299,7 +299,7 @@ function M(e) {
             skuId: G.id,
             isCardHovered: true,
             className: s()(B.modalHeaderButton, B.wishlistButton),
-            nuxGraphic: (0, N.c)(G),
+            nuxGraphic: (0, y.c)(G),
             onClick: $
           }), (0, a.jsx)(U, {
             onClick: J,

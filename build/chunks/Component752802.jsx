@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk46973 = require("./46973.js"),
   Chunk481060 = require("./481060.js"),
@@ -74,13 +74,13 @@ function L(e, t) {
   var n, i, r = function(e, t) {
     if (null == e) return {};
     var n, i, r = {},
-      a = Object.keys(e);
-    for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      l = Object.keys(e);
+    for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
     return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
   return r
 }
@@ -117,12 +117,12 @@ function M(e) {
 function z(e) {
   let {
     participant: t
-  } = e, n = t.user.id, a = (0, o.e7)([j.Z], () => {
+  } = e, n = t.user.id, l = (0, o.e7)([j.Z], () => {
     let e = (0, p.Z)(t.type);
     return j.Z.isLocalMute(t.user.id, e)
-  }, [t]), l = (0, o.e7)([C.default], () => C.default.getId()), {
+  }, [t]), a = (0, o.e7)([C.default], () => C.default.getId()), {
     hasVideo: d
-  } = (0, x.Z)(t, l), f = a && d, h = r.useCallback(() => {
+  } = (0, x.Z)(t, a), f = l && d, h = r.useCallback(() => {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)
   }, [n]);
   return (0, i.jsx)(c.aML, {
@@ -154,12 +154,12 @@ function z(e) {
 }
 
 function V(e, t, r) {
-  return a => {
+  return l => {
     (0, N.Ws)(P.Odu.GO_LIVE, {
       type: N.Qu.GO_LIVE,
       value: N.bk.SETTINGS_OPENED,
       userId: e.user.id
-    }), a.stopPropagation(), null == r || r(), (0, d.jW)(a, async () => {
+    }), l.stopPropagation(), null == r || r(), (0, d.jW)(l, async () => {
       let {
         default: r
       } = await n.e("5704").then(n.bind(n, 360429));
@@ -177,7 +177,7 @@ function U(e) {
     hasActiveStream: t,
     participant: n,
     onEnablePin: r
-  } = e, a = (0, v.bp)(), s = n.user, u = (0, o.e7)([_.default], () => {
+  } = e, l = (0, v.bp)(), s = n.user, u = (0, o.e7)([_.default], () => {
     var e;
     return null != (e = _.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? A.intl.string(A.t.tLxK4l) : A.intl.string(A.t.E5RDnK), {
@@ -185,7 +185,7 @@ function U(e) {
   } = (0, w.aq)("GoLiveTile");
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
-      className: l()(k.controlBackground, {
+      className: a()(k.controlBackground, {
         [k.controlsWithActiveStream]: t
       })
     }), !t && (0, i.jsx)("div", {
@@ -257,7 +257,7 @@ function U(e) {
               } = e, r = L(e, ["onClick"]);
               return (0, i.jsx)(c.P3F, R(D({}, r), {
                 className: k.controlAction,
-                onClick: V(n, a, t),
+                onClick: V(n, l, t),
                 children: (0, i.jsx)(c.xhG, {
                   size: "sm",
                   color: "currentColor"
@@ -276,8 +276,8 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       participant: t,
       width: n,
       locked: r,
-      widgetId: a,
-      pinned: l
+      widgetId: l,
+      pinned: a
     } = e, s = (0, o.e7)([I.Z], () => I.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, v.bp)(), d = null != s && W.has(s.state), h = null != s, p = (0, T.yA)(t.stream), b = (0, T.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: k.tile,
@@ -317,7 +317,7 @@ let W = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
         participant: t,
         hasActiveStream: h,
         onEnablePin: () => {
-          l || (0, f.xh)(a)
+          a || (0, f.xh)(l)
         }
       })]
     })

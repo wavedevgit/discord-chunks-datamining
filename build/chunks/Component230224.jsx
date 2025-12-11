@@ -143,7 +143,7 @@ function T(e) {
         guild: a,
         size: o.Vj.Sizes.SMALL
       }), (0, r.jsx)(l.Heading, {
-        color: "header-primary",
+        color: "text-strong",
         variant: "heading-xl/semibold",
         children: a.name
       })]

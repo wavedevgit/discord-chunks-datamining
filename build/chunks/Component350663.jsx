@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
@@ -61,7 +61,7 @@ let E = {
     let {
       widgetId: t,
       tileWidth: n,
-      tileHeight: a,
+      tileHeight: l,
       layout: S,
       locked: x,
       activeStreams: I,
@@ -73,7 +73,7 @@ let E = {
       participant: e,
       key: e.user.id,
       width: n,
-      height: a,
+      height: l,
       locked: x,
       widgetId: t,
       pinned: _
@@ -137,7 +137,7 @@ let E = {
         contentInventoryIds: []
       })
     }, [M, z]), (0, i.jsx)("div", {
-      className: l()({
+      className: a()({
         [y.gridContainer]: true,
         [y.vertical]: P,
         [y.horizontal]: !P
@@ -147,20 +147,20 @@ let E = {
       } : {
         width: R
       },
-      children: L((e, t, r, l) => (0, i.jsx)(o.animated.div, {
+      children: L((e, t, r, a) => (0, i.jsx)(o.animated.div, {
         className: y.gridItem,
         style: Object.assign({}, e, {
           width: n,
-          height: a,
-          zIndex: N.length - l
+          height: l,
+          zIndex: N.length - a
         }),
         children: (e => {
           let {
             participant: t,
             width: n,
             locked: r,
-            widgetId: a,
-            pinned: l
+            widgetId: l,
+            pinned: a
           } = e;
           return (0, i.jsx)("div", {
             className: y.tileContainer,
@@ -168,8 +168,8 @@ let E = {
               participant: t,
               width: n,
               locked: r,
-              widgetId: a,
-              pinned: l
+              widgetId: l,
+              pinned: a
             }, t.user.id)
           })
         })(t)

@@ -149,7 +149,7 @@ let k = {
       }))
     }
   }),
-  B = e => ({
+  F = e => ({
     name: "line1",
     id: R,
     title: () => _.intl.string(_.t.x0beVT),
@@ -158,7 +158,7 @@ let k = {
     getClassNameForLayout: e => ["modalUS", "modalInternational", "modalUSWithName", "modalInternationalWithName", "settingsUSMobile", "settingsInternationalMobile", "settingsInternationalWithoutNameMobile"].includes(e) ? m.width100 : m.width60,
     renderInput: e => (0, i.jsx)(u.oil, g({}, e))
   }),
-  F = e => ({
+  B = e => ({
     name: "line2",
     id: w,
     title: () => _.intl.string(_.t.i2Z0gI),
@@ -293,15 +293,15 @@ let k = {
   W = {
     modalUS: [
       [Z],
-      [B],
       [F],
+      [B],
       [V],
       [Y, H]
     ],
     modalInternational: [
       [Z],
-      [B],
       [F],
+      [B],
       [V],
       [Y],
       [H]
@@ -309,30 +309,30 @@ let k = {
     modalUSWithName: [
       [Z],
       [G],
-      [B],
       [F],
+      [B],
       [V],
       [Y, H]
     ],
     modalInternationalWithName: [
       [Z],
       [G],
-      [B],
       [F],
+      [B],
       [V],
       [Y],
       [H]
     ],
     settingsUS: [
       [G],
-      [B, F],
+      [F, B],
       [V, Y, H],
       [Z]
     ],
     settingsUSMobile: [
       [G],
-      [B],
       [F],
+      [B],
       [V],
       [Y],
       [H],
@@ -340,29 +340,29 @@ let k = {
     ],
     settingsInternational: [
       [G],
-      [B, F],
+      [F, B],
       [V],
       [Y, H],
       [Z]
     ],
     settingsInternationalMobile: [
       [G],
-      [B],
       [F],
+      [B],
       [V],
       [Y],
       [H],
       [Z]
     ],
     settingsInternationalWithoutName: [
-      [B, F],
+      [F, B],
       [V],
       [Y, H],
       [Z]
     ],
     settingsInternationalWithoutNameMobile: [
-      [B],
       [F],
+      [B],
       [V],
       [Y],
       [H],

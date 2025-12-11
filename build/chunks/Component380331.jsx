@@ -77,10 +77,10 @@ let L = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_GUILD_CATEGORY_
   U = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_UNICODE_CATEGORY_ICON_PADDING),
   G = (0, Chunk624138.Mg)(Chunk551514.__invalid_unicodeCategoryShortcutHeight),
   Z = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_SIZE),
-  B = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
-  F = M + j + 2 * U,
+  F = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_CATEGORY_SEPARATOR_MARGIN_VERTICAL),
+  B = M + j + 2 * U,
   V = L + j,
-  H = V + (Z + 2 * B),
+  H = V + (Z + 2 * F),
   Y = M + k + 2 * U,
   W = 7;
 
@@ -161,7 +161,7 @@ let z = e => {
     }, t)
   }), [v, C, R, S, D, x]), U = i.useMemo(() => [8, 8, 0, 8], []), z = i.useCallback((e, t) => {
     let n = R[t];
-    if (n.type === T.En.RECENT) return F;
+    if (n.type === T.En.RECENT) return B;
     if (n.type === T.En.GUILD) {
       let e = R[t + 1];
       return null != e && e.type !== T.En.GUILD ? H : V
@@ -180,7 +180,7 @@ let z = e => {
     R.forEach(i => {
       i.type === T.En.GUILD ? (t += 1, n += 1) : i.type === T.En.UNICODE ? r += 1 : (e += 1, t += 1)
     });
-    let i = F + t * V + H;
+    let i = B + t * V + H;
     return {
       nonUnicodeCategoryCount: t,
       firstUnicodeCategoryIndex: t,
@@ -207,7 +207,7 @@ let z = e => {
       if (n.type === T.En.RECENT) return t ? 0 : k;
       if (n.type === T.En.GUILD) {
         let n = R[e + 1];
-        return null != n && n.type !== T.En.GUILD ? t ? Z + false * B + j + r : j : t ? r : j
+        return null != n && n.type !== T.En.GUILD ? t ? Z + false * F + j + r : j : t ? r : j
       }
       return t ? j + r : 2 * j
     }, [R, $]),

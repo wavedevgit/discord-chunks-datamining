@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => eo,
-  ln: () => B
+  ln: () => F
 }), require("./290780.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -96,7 +96,7 @@ function Z(e) {
   return null != t ? t : (0, d.e5)(e)
 }
 
-function B(e) {
+function F(e) {
   let t = g.Z.getBasicChannel(e.channel_id);
   if (null == t || !I.TPd.GUILD_TEXTUAL.has(t.type) || v.ZP.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id) || (0, u.zd)(t.id)) returnfalse;
   switch (v.ZP.resolvedMessageNotifications(t)) {
@@ -119,7 +119,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   let {
     hasMoreAfter: t,
     messages: n,
@@ -303,7 +303,7 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return L || N.length > 0 ? N : null
   }
   getSettingsFilteredMentions() {
-    return L || N.length > 0 ? N.filter(B) : null
+    return L || N.length > 0 ? N.filter(F) : null
   }
   hasMention(e) {
     return R[e]
@@ -337,7 +337,7 @@ class ea extends(r = Chunk442837.ZP.Store) {
 T(ea, "displayName", "RecentMentionsStore");
 let eo = new ea(Chunk570140.Z, {
   LOAD_RECENT_MENTIONS: G,
-  LOAD_RECENT_MENTIONS_SUCCESS: F,
+  LOAD_RECENT_MENTIONS_SUCCESS: B,
   LOAD_RECENT_MENTIONS_FAILURE: V,
   SET_RECENT_MENTIONS_FILTER: Q,
   CLEAR_MENTIONS: en,

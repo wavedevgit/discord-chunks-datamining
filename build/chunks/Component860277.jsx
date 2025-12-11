@@ -143,11 +143,11 @@ function G(e) {
   } = e, {
     users: d = [],
     sidekick: _
-  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), m = (0, i.useContext)(y.Q), b = (0, f.dQu)(m.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([h.default], () => h.default.getCurrentUser()), A = (0, i.useRef)(0), P = (0, i.useRef)(true), R = (0, i.useRef)(null), w = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, B = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
-  (0, i.useEffect)(() => (o === N.ij.FRIENDS_LEAVE && (P.current ? l() : B ? (s(), P.current = true) : A.current = setTimeout(() => {
+  } = (0, u.e7)([O.Z], () => O.Z.getCheckpointData()), m = (0, i.useContext)(y.Q), b = (0, f.dQu)(m.primaryColor).hex(), v = d[1], S = d[0], I = (0, u.e7)([h.default], () => h.default.getCurrentUser()), A = (0, i.useRef)(0), P = (0, i.useRef)(true), R = (0, i.useRef)(null), w = null != (t = (0, E._T)(null == _ ? true : _.user)) ? t : "", j = null != (n = (0, E._T)(v)) ? n : "", G = null != (a = (0, E._T)(S)) ? a : "", Z = 1 === d.length, F = (0, u.e7)([p.Z], () => p.Z.useReducedMotion);
+  (0, i.useEffect)(() => (o === N.ij.FRIENDS_LEAVE && (P.current ? l() : F ? (s(), P.current = true) : A.current = setTimeout(() => {
     s(), P.current = true
-  }, x)), () => clearTimeout(A.current)), [s, l, B, o]);
-  let F = (0, i.useMemo)(() => {
+  }, x)), () => clearTimeout(A.current)), [s, l, F, o]);
+  let B = (0, i.useMemo)(() => {
       switch (o) {
         case N.ij.FRIENDS_INTRO:
           return 1;
@@ -156,11 +156,11 @@ function G(e) {
         case N.ij.FRIENDS_BEST:
           return 3;
         case N.ij.FRIENDS_LEAVE:
-          return B ? 3 : 4;
+          return F ? 3 : 4;
         default:
           return 0
       }
-    }, [o, B]),
+    }, [o, F]),
     V = (0, i.useCallback)(e => null != e ? g.ZP.getUserAvatarURL(e, false, 64, "png") : true, []);
   (0, i.useEffect)(() => () => clearTimeout(A.current), []), (0, i.useEffect)(() => {
     o !== N.ij.FRIENDS_LEAVE && (P.current = false)
@@ -169,10 +169,10 @@ function G(e) {
       let e = setInterval(() => {
         var t, n;
         let r = null == (t = R.current) ? true : t.getProperties();
-        null != R.current && (null == r ? true : r.twoFriends.value) === Z && (null == r ? true : r.reducedMotion.value) === B && (null == (n = R.current) || n.play(), clearInterval(e))
+        null != R.current && (null == r ? true : r.twoFriends.value) === Z && (null == r ? true : r.reducedMotion.value) === F && (null == (n = R.current) || n.play(), clearInterval(e))
       }, L);
       return () => clearInterval(e)
-    }, [B, Z]),
+    }, [F, Z]),
     Y = (0, i.useMemo)(() => o < N.ij.FRIENDS_INTRO ? N.ij.FRIENDS_INTRO : o >= N.ij.FRIENDS_BEST ? N.ij.FRIENDS_BEST : o, [o]);
   return (0, r.jsxs)(T.Z, {
     children: [(0, r.jsx)(c.jxI, {
@@ -182,7 +182,7 @@ function G(e) {
       autoplay: false,
       onLoad: H,
       dataBinding: {
-        AnimationState: F,
+        AnimationState: B,
         "Avatar01/img": V(null == _ ? true : _.user),
         "Avatar02/img": V(v),
         "Avatar03/img": V(S),
@@ -193,7 +193,7 @@ function G(e) {
         "Avatar03/Username": G,
         "Avatar04/Username": w,
         twoFriends: Z,
-        reducedMotion: B
+        reducedMotion: F
       },
       withReducedMotion: "play"
     }), (0, r.jsx)("div", {

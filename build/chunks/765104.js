@@ -80,7 +80,7 @@ let R = {},
 function Z() {
   M = Chunk823385.Z.getProps().results.filter(e => e.type === p.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
-class B extends(s = Chunk442837.ZP.PersistedStore) {
+class F extends(s = Chunk442837.ZP.PersistedStore) {
   getState() {
     return {
       shouldShowTopicsBar: r
@@ -165,12 +165,12 @@ class B extends(s = Chunk442837.ZP.PersistedStore) {
   }
 }
 
-function F(e, t, n, r) {
+function B(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
-C(B, "persistKey", "SummaryStore");
-let V = new B(Chunk570140.Z, {
+C(F, "persistKey", "SummaryStore");
+let V = new F(Chunk570140.Z, {
   CONNECTION_OPEN: () => false,
   CHANNEL_SELECT(e) {
     let {
@@ -264,7 +264,7 @@ let V = new B(Chunk570140.Z, {
         a = null == e ? true : e.findIndex(e => e.id === (null == i ? true : i.summaryId))
       } else {
         var n;
-        a = null == (n = R[t]) ? true : n.findIndex(t => F(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
+        a = null == (n = R[t]) ? true : n.findIndex(t => B(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
       }
   },
   SET_SELECTED_SUMMARY(e) {

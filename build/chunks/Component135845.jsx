@@ -65,16 +65,16 @@ function S(e) {
     if (null == a.guild) return (0, r.jsx)(E.Z, {});
     I = (0, h.Qs)(a.guild)
   }
-  let B = null != a.channel ? (0, p.jD)(a.channel) : null,
-    F = g.ZP.getName(M),
+  let F = null != a.channel ? (0, p.jD)(a.channel) : null,
+    B = g.ZP.getName(M),
     V = "active";
   Z && !L ? n = k ? O.intl.string(O.t.oBLoZJ) : O.intl.formatToPlainString(O.t["0QJmA+"], {
-    name: F
+    name: B
   }) : (t = O.intl.string(O.t.I6JG46), V = "active", x && (t = O.intl.string(O.t.Q1W99y), V = "secondary"), n = k ? O.intl.string(O.t["4hyaHu"]) : O.intl.formatToPlainString(O.t.QmlLEq, {
-    name: F
+    name: B
   }));
-  let H = P === I.id && null != B ? (0, r.jsx)(f.Z.Channel, {
-    channel: B
+  let H = P === I.id && null != F ? (0, r.jsx)(f.Z.Channel, {
+    channel: F
   }) : O.intl.formatToPlainString(O.t.u0vaDE, {
     guildName: I.name
   });

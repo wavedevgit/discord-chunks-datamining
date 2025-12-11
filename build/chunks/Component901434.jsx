@@ -1,7 +1,7 @@
 /** Chunk was on 41700 **/
 /** chunk id: 901434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,15 +20,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk504185 = require("./504185.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk951840 = require("./951840.js");
-let j = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
-  x = function(e) {
+let x = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
+  j = function(e) {
     let {
       participants: t,
       channel: n,
       hasConnectPermission: g
-    } = e, x = (0, u.J)(n.guild_id), v = i.useCallback(() => {
-      x ? (0, d.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, x]), C = t.filter(e => e.type === m.Ui.VOICE), I = 4 === C.length ? 2 : 3, _ = (0, l.Wu)([o.Z], () => C.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, C]);
+    } = e, j = (0, u.J)(n.guild_id), v = i.useCallback(() => {
+      j ? (0, d.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, j]), C = t.filter(e => e.type === m.Ui.VOICE), I = 4 === C.length ? 2 : 3, _ = (0, l.Wu)([o.Z], () => C.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, C]);
     return (0, r.jsxs)("div", {
       className: O.container,
       children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)("div", {
@@ -56,13 +56,13 @@ let j = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
           color: "text-default",
           variant: "heading-lg/normal",
           children: 0 === C.length ? y.intl.string(y.t.FUVhyC) : 1 === C.length ? y.intl.formatToPlainString(y.t.EQwZlN, {
-            a: j(n, C[0])
+            a: x(n, C[0])
           }) : 2 === C.length ? y.intl.formatToPlainString(y.t.zBcKoA, {
-            a: j(n, C[0]),
-            b: j(n, C[1])
+            a: x(n, C[0]),
+            b: x(n, C[1])
           }) : C.length > 2 ? y.intl.formatToPlainString(y.t["3AqFaG"], {
-            a: j(n, C[0]),
-            b: j(n, C[1]),
+            a: x(n, C[0]),
+            b: x(n, C[1]),
             n: C.length - 2
           }) : true
         })

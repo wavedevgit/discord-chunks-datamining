@@ -190,7 +190,7 @@ function U(e) {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
-        color: l ? "text-muted" : "header-primary",
+        color: l ? "text-muted" : "text-strong",
         className: S.sliderLabel,
         children: v.intl.string(v.t.vd0D81)
       }), (0, r.jsx)(M, {
@@ -210,7 +210,7 @@ function U(e) {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
-        color: l ? "text-muted" : "header-primary",
+        color: l ? "text-muted" : "text-strong",
         className: S.sliderLabel,
         children: v.intl.string(v.t.sPO3ij)
       }), (0, r.jsx)(M, {
@@ -269,7 +269,7 @@ function G(e) {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
-        color: s ? "text-muted" : "header-primary",
+        color: s ? "text-muted" : "text-strong",
         className: S.sliderLabel,
         children: v.intl.string(v.t.L0oQuh)
       }), (0, r.jsx)(M, {
@@ -315,7 +315,7 @@ function Z(e) {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
-        color: d ? "text-muted" : "header-primary",
+        color: d ? "text-muted" : "text-strong",
         className: S.sliderLabel,
         children: v.intl.string(v.t.UxnnC4)
       }), (0, r.jsx)(M, {
@@ -344,7 +344,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     updateSettings: t
   } = e, n = () => {
@@ -373,7 +373,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     onChangePage: t
   } = e, n = () => t(1);
@@ -390,7 +390,7 @@ function F(e) {
       className: S.achievementTextContainer,
       children: [(0, r.jsx)(c.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: v.intl.string(v.t["6jI0hd"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -465,7 +465,7 @@ function H(e) {
     }), (0, r.jsx)(k, {
       settings: a,
       updateSettings: m
-    }), (0, r.jsx)(F, {
+    }), (0, r.jsx)(B, {
       onChangePage: t
     }), (0, r.jsx)(G, {
       settings: a,
@@ -476,7 +476,7 @@ function H(e) {
     }), (0, r.jsx)(U, {
       settings: a,
       updateSettings: m
-    }), (0, r.jsx)(B, {
+    }), (0, r.jsx)(F, {
       updateSettings: m
     })]
   })

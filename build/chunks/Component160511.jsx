@@ -20,7 +20,7 @@ function d(e) {
     onClose: f,
     isSlideReady: h,
     headerAlignStart: g
-  } = e, [m, b] = l.useState(false), [p, j] = l.useState(null), [y, x] = l.useState(false), [S, v] = l.useState(null), [C, Z] = l.useState(""), O = l.useRef(null);
+  } = e, [m, b] = l.useState(false), [p, j] = l.useState(null), [x, y] = l.useState(false), [S, v] = l.useState(null), [C, Z] = l.useState(""), O = l.useRef(null);
   l.useEffect(() => {
     b(true), s.tn.post({
       url: c.ANM.LOGIN_SMS_SEND,
@@ -48,14 +48,14 @@ function d(e) {
   });
   return (0, r.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), x(true), n({
+      e.preventDefault(), y(true), n({
         mfaType: "sms",
         data: C
       }).catch(e => {
         var t, n;
         v(null != (n = e.message) ? n : null == (t = e.body) ? true : t.message)
       }).finally(() => {
-        x(false)
+        y(false)
       })
     },
     children: [(0, r.jsx)(o.Z.SlideHeader, {
@@ -73,7 +73,7 @@ function d(e) {
           value: C,
           autoComplete: "one-time-code",
           spellCheck: "false",
-          disabled: y
+          disabled: x
         }), (0, r.jsx)(a.Button, {
           variant: "secondary",
           text: u.intl.string(u.t.ZF29L6),
@@ -102,7 +102,7 @@ function d(e) {
       setSlide: d,
       showConfirm: true,
       disabled: C.length !== i.Gz,
-      submitting: y
+      submitting: x
     })]
   })
 }

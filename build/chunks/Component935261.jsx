@@ -44,7 +44,7 @@ function m(e) {
     children: [(0, r.jsx)(h, {
       platform: u
     }), (0, r.jsx)(s.Text, {
-      color: m ? "header-primary" : "always-white",
+      color: m ? "text-strong" : "always-white",
       variant: "text-xs/medium",
       children: b
     })]

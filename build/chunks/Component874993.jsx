@@ -32,7 +32,7 @@ function C(e) {
   } = e, {
     editingRule: N,
     setEditingRule: E
-  } = (0, f.V)(), {
+  } = (0, m.V)(), {
     guild: I,
     subsection: S
   } = (0, l.cj)([s.Z], () => s.Z.getProps()), _ = null != (n = null != (t = null == I ? true : I.id) ? t : C) ? n : j.lds, T = null != N, [P] = (0, u.RD)(_), {
@@ -76,7 +76,7 @@ function C(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: v.intl.string(v.t.uRelgx)
     }), (0, r.jsx)("div", {
       className: O.descriptionContainer,
@@ -94,14 +94,14 @@ function C(e) {
           })
         })]
       })
-    }), P ? (0, r.jsx)(m.Z, {}) : Object.entries(G).map(e => {
+    }), P ? (0, r.jsx)(f.Z, {}) : Object.entries(G).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let l = null != Z[t] ? (0, r.jsx)("div", {
         className: O.categoryHeader,
         children: (0, r.jsx)(a.Text, {
           variant: "text-lg/normal",
-          color: "header-primary",
+          color: "text-strong",
           children: Z[t]
         })
       }) : null;
@@ -110,7 +110,7 @@ function C(e) {
         children: [l, (0, r.jsx)(r.Fragment, {
           children: n.map(e => {
             var t;
-            return (0, r.jsx)(b.Z, {
+            return (0, r.jsx)(p.Z, {
               guildId: _,
               triggerType: e,
               rules: null != (t = w[e]) ? t : [],
@@ -123,7 +123,7 @@ function C(e) {
       guild: I,
       withDivider: false,
       className: O.explicitContentFilterSection
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(b.Z, {
       guildId: _,
       existingRules: R
     }), T && (0, r.jsx)("div", {

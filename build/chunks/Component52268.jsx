@@ -65,8 +65,8 @@ function j(e, t) {
   }
   return i
 }
-let y = () => 80,
-  P = e => {
+let P = () => 80,
+  y = e => {
     var {
       children: t,
       className: n,
@@ -91,15 +91,15 @@ let y = () => 80,
       } = e,
       d = j(e, ["profileEffect", "innerRef", "section", "isSelected", "canUsePremiumCollectibles"]);
     let m = (0, f.V)(n.skuId),
-      y = i.useRef(null),
+      P = i.useRef(null),
       {
         accessibilityLabel: O,
         thumbnailPreviewSrc: v,
         title: E
       } = null != (t = null == m ? true : m.config) ? t : {},
       C = i.useMemo(() => (0, a.JE)(v), [v]);
-    return (0, r.jsxs)(P, x(h({
-      innerRef: null != l ? l : y,
+    return (0, r.jsxs)(y, x(h({
+      innerRef: null != l ? l : P,
       isSelected: s
     }, d), {
       children: [(0, r.jsx)("img", {
@@ -146,9 +146,9 @@ let y = () => 80,
         renderItem: (e, t, d, x) => {
           let {
             section: j,
-            items: y
+            items: P
           } = u[e];
-          return (0, s.EQ)(y[t]).with(p.Tm, () => (0, r.jsxs)(P, {
+          return (0, s.EQ)(P[t]).with(p.Tm, () => (0, r.jsxs)(y, {
             style: h({}, d),
             isSelected: !f,
             onSelect: () => o(null),
@@ -158,10 +158,10 @@ let y = () => 80,
               className: g.notAllowedIcon
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/normal",
-              color: "header-primary",
+              color: "text-strong",
               children: null != n ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.PoWNfe)
             })]
-          }, x)).with(p.oT, () => (0, r.jsxs)(P, {
+          }, x)).with(p.oT, () => (0, r.jsxs)(y, {
             style: d,
             onSelect: a,
             children: [(0, r.jsx)(c.EOn, {
@@ -172,7 +172,7 @@ let y = () => 80,
               className: g.shopIcon
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/normal",
-              color: "header-primary",
+              color: "text-strong",
               children: m.intl.string(m.t.pWG4ze)
             })]
           }, x)).otherwise(e => {
@@ -205,7 +205,7 @@ let y = () => 80,
         },
         getSectionHeight: () => 16,
         getItemKey: (e, t) => u[e].items[t].skuId,
-        getItemHeight: y,
+        getItemHeight: P,
         removeEdgeItemGutters: true
       })
     })

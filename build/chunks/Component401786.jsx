@@ -138,14 +138,14 @@ function j(e) {
     paymentSourceId: o.paymentSourceId,
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_CURRENT_INVOICE_PREVIEW
-  }), B = null != U ? (0, T.Zx)(o, null != (a = null == (t = x[0]) ? true : t.quantity) ? a : 0, U.id) : null, [F] = (0, h.ED)({
+  }), F = null != U ? (0, T.Zx)(o, null != (a = null == (t = x[0]) ? true : t.quantity) ? a : 0, U.id) : null, [B] = (0, h.ED)({
     subscriptionId: o.id,
-    items: B,
+    items: F,
     renewal: true,
     analyticsLocations: G,
     analyticsLocation: f.Z.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
   });
-  if (null == F || null == k || null == U || null == Z) return (0, r.jsx)(c.$jN, {});
+  if (null == B || null == k || null == U || null == Z) return (0, r.jsx)(c.$jN, {});
   let V = o.items.some(e => {
       let {
         planId: t
@@ -163,13 +163,13 @@ function j(e) {
       } = e;
       return N.Z1.has(t)
     }),
-    Y = V || H ? F.total - Z.total : -Z.total,
+    Y = V || H ? B.total - Z.total : -Z.total,
     {
       interval: W,
       intervalCount: K
     } = k,
     z = R.intl.format(R.t["0W23cu"], {
-      endDate: F.subscriptionPeriodStart
+      endDate: B.subscriptionPeriodStart
     });
   return o.isPausedForFractionalPremium && u.fetched && (z = R.intl.format(R.t.eb0xgS, {
     expirationDate: u.endsAt.toDate()
@@ -198,10 +198,10 @@ function j(e) {
           }),
           value: (0, C.og)((0, C.T4)(Y, o.currency), W, K),
           className: w.invoiceCancelRow
-        }), null != B && B.length > 0 ? (0, r.jsxs)("div", {
+        }), null != F && F.length > 0 ? (0, r.jsxs)("div", {
           children: [(0, r.jsx)(E.UN, {}), (0, r.jsx)(y.nd, {
             premiumSubscription: o,
-            renewalInvoice: F,
+            renewalInvoice: B,
             isUpdate: true
           })]
         }) : null]

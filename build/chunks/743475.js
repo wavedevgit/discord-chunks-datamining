@@ -2,9 +2,9 @@
 /** chunk id: 743475, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  BG: () => p,
+  BG: () => b,
   DO: () => h,
-  pt: () => b
+  pt: () => p
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -19,13 +19,13 @@ var Chunk570140 = require("./570140.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }
 
-function b(e) {
+function p(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
@@ -34,12 +34,12 @@ function b(e) {
 async function h(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = g.Z.advancedMode,
-    [p, b] = (0, s.d9)(e.id, [...t]),
+    [b, p] = (0, s.d9)(e.id, [...t]),
     h = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
     x = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (b.length < m.md || p.length < m.X) || n && (h.length < m.md || x.length < m.X))) return void i.Z.show({
-    title: f.intl.string(f.t.iLdiqY),
-    body: f.intl.string(f.t.JOT74c)
+  if (a.Z.getEnabled(e.id) && (!n && (p.length < f.md || b.length < f.X) || n && (h.length < f.md || x.length < f.X))) return void i.Z.show({
+    title: m.intl.string(m.t.iLdiqY),
+    body: m.intl.string(m.t.JOT74c)
   });
   if (d.Z.hasChanges()) {
     r.Z.dispatch({
@@ -60,7 +60,7 @@ async function h(e) {
         error: t
       } = null != (j = new l.Hx(n).getAnyErrorMessageAndField()) ? j : {};
       i.Z.show({
-        title: f.intl.string(f.t.iLdiqY),
+        title: m.intl.string(m.t.iLdiqY),
         body: [e, t].filter(c.lm).join(": ")
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"

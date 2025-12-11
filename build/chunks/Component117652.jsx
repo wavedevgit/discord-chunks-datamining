@@ -108,7 +108,7 @@ let U = e => {
     setSelectedSkuId: k,
     selectedSkuPricePreview: U,
     paymentSourceId: G,
-    skuPricePreviewsById: F,
+    skuPricePreviewsById: B,
     skusById: V
   } = (0, C.JL)(), H = (0, i.e7)([O.default], () => O.default.getCurrentUser()), {
     enabled: Y,
@@ -131,7 +131,7 @@ let U = e => {
       }), null != A && Q(A, e), k(e)
     },
     J = e => {
-      let t = F[e],
+      let t = B[e],
         n = null;
       if (null != t) {
         var i;
@@ -171,7 +171,7 @@ let U = e => {
         selectedSkuPricePreview: U,
         paymentSourceId: G,
         selectedSkuId: M,
-        skuPricePreviewsById: F,
+        skuPricePreviewsById: B,
         skusById: V,
         formatPrice: I.T4
       });
@@ -189,7 +189,7 @@ let U = e => {
           hideProfilePreview: true
         }), (0, r.jsx)("div", {
           className: D.wishlistGiftPreviewFooter,
-          children: (0, r.jsx)(B, {
+          children: (0, r.jsx)(F, {
             handleClose: n,
             selectedSkuId: M
           })
@@ -297,12 +297,12 @@ function Z(e) {
             size: "custom",
             width: 18,
             height: 18,
-            color: "var(--header-primary)"
+            color: "var(--text-strong)"
           })
         }), (0, r.jsxs)("div", {
           className: D.navigateToShopTextWrapper,
           children: [(0, r.jsx)(a.Text, {
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/semibold",
             children: w.intl.string(w.t["1+Co8G"])
           }), (0, r.jsx)(a.Heading, {
@@ -316,14 +316,14 @@ function Z(e) {
           size: "custom",
           width: 20,
           height: 20,
-          color: "var(--header-primary)"
+          color: "var(--text-strong)"
         })
       })]
     })
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     handleClose: t,
     selectedSkuId: n

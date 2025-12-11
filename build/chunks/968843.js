@@ -30,9 +30,9 @@ require.d(exports, {
   iO: () => eP,
   kJ: () => eD,
   m4: () => e1,
-  me: () => eB,
+  me: () => eF,
   qI: () => eH,
-  qb: () => eF,
+  qb: () => eB,
   tP: () => eE,
   tR: () => e_,
   uA: () => eN,
@@ -150,7 +150,7 @@ function Q(e, t, n) {
   if (f) {
     let {
       takeover: r
-    } = n, i = null != r && (0, B.P9)(r, e.id), a = null != r && (0, B.P9)(r, t.id);
+    } = n, i = null != r && (0, F.P9)(r, e.id), a = null != r && (0, F.P9)(r, t.id);
     return i !== a && (i || a) ? i ? K : z : g && O !== v && (O || v) ? O ? z : K : p !== _ ? p ? z : K : m !== h ? m ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 1)
   }
   return p !== _ ? p ? K : z : m !== h ? m ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 0)
@@ -367,7 +367,7 @@ function eb(e, t, n) {
     s = (0, c.e7)([N.Z], () => null != e && N.Z.isQuestExpired(e.id), [e]);
   if (null == e || a || s || o) returnfalse;
   let l = (null == (r = e.userStatus) ? true : r.claimedAt) != null,
-    u = (0, B.Rc)(t, i);
+    u = (0, F.Rc)(t, i);
   return !l || !!u
 }
 
@@ -389,7 +389,7 @@ function ev(e) {
 
 function eS(e) {
   let t = (0, c.e7)([N.Z], () => N.Z.getOptimisticProgress(e.id, o.X.WATCH_VIDEO));
-  return r.useMemo(() => (0, F.BM)(e), [e, t])
+  return r.useMemo(() => (0, B.BM)(e), [e, t])
 }
 
 function eI(e) {
@@ -491,7 +491,7 @@ function ew(e) {
   let t = (0, c.e7)([N.Z], () => N.Z.quests),
     n = eR(Array.from(t.values())),
     i = r.useMemo(() => {
-      let n = (0, B.NI)(t, V.tt);
+      let n = (0, F.NI)(t, V.tt);
       return (0, k.Jg)(n, e)
     }, [e, t, n]);
   return eE(i) ? null : i
@@ -620,7 +620,7 @@ function eZ(e) {
   return [(0, c.e7)([N.Z], () => N.Z.selectedTaskPlatform(e)), r.useCallback(t => (0, T.OR)(e, t), [e])]
 }
 
-function eB(e, t) {
+function eF(e, t) {
   let [n, i] = eZ(e.id), s = r.useMemo(() => (0, U.yH)(e), [e]), l = s.includes(V.cd.DESKTOP), c = s.includes(V.cd.CONSOLE), u = eO(e), d = ev(e), f = r.useMemo(() => (0, a.EQ)(t).with({
     percentComplete: 0
   }, () => null).with({
@@ -673,11 +673,11 @@ function eB(e, t) {
   }, () => c && l ? P.LI.SELECT : c ? P.LI.CONSOLE : P.LI.DESKTOP).exhaustive(), [c, l, f, p, n]), s, i]
 }
 
-function eF(e) {
+function eB(e) {
   var t, n;
   let r = eA(e),
     i = eC(e),
-    [a] = eB(e, i),
+    [a] = eF(e, i),
     s = eE(e),
     l = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
     c = (null == (n = e.userStatus) ? true : n.completedAt) != null,

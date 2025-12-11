@@ -63,7 +63,7 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -155,7 +155,7 @@ class Y extends Chunk473749.PureComponent {
           children: (0, Chunk54381.jsx)(Chunk481060.aML, {
             "data-migration-pending": true,
             text: Chunk388032.intl.string(Chunk388032.t.uCD7qK),
-            children: e => (0, r.jsx)("div", F(Z({}, e), {
+            children: e => (0, r.jsx)("div", B(Z({}, e), {
               children: (0, r.jsx)(f.rsf, {
                 checked: t,
                 onChange: this.handleEnableDisable
@@ -176,11 +176,11 @@ class Y extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), G(this, "handleActionChanged", e => {
-      p.Z.setKeybind(F(Z({}, this.props.keybind), {
+      p.Z.setKeybind(B(Z({}, this.props.keybind), {
         action: e
       }))
     }), G(this, "handleShortcutChange", e => {
-      p.Z.setKeybind(F(Z({}, this.props.keybind), {
+      p.Z.setKeybind(B(Z({}, this.props.keybind), {
         shortcut: e
       }))
     }), G(this, "handleDeleteKeybind", () => {
@@ -189,7 +189,7 @@ class Y extends Chunk473749.PureComponent {
       let {
         keybind: e
       } = this.props;
-      p.Z.setKeybind(F(Z({}, this.props.keybind), {
+      p.Z.setKeybind(B(Z({}, this.props.keybind), {
         enabled: !e.enabled
       }))
     })

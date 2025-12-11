@@ -256,7 +256,7 @@ function Z(e) {
   y.notifCenterLocalItems = y.notifCenterLocalItems.filter(t => !k(t, p.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !k(t, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
-function B(e) {
+function F(e) {
   let {
     gameRelationship: t
   } = e, {
@@ -280,7 +280,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   let {
     userId: t,
     applicationId: n
@@ -391,8 +391,8 @@ let z = new K(Chunk570140.Z, {
   RELATIONSHIP_ADD: G,
   RELATIONSHIP_UPDATE: G,
   RELATIONSHIP_REMOVE: Z,
-  GAME_RELATIONSHIP_ADD: B,
-  GAME_RELATIONSHIP_REMOVE: F,
+  GAME_RELATIONSHIP_ADD: F,
+  GAME_RELATIONSHIP_REMOVE: B,
   NOTIFICATION_CENTER_ITEM_COMPLETED: V,
   SET_RECENT_MENTIONS_FILTER: () => S(),
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: W,

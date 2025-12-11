@@ -39,24 +39,24 @@ function h(e) {
   let {
     onHandleEnableLockdown: n,
     onHandleReportFalseAlarm: l,
-    incidentData: a
-  } = e, s = null != (t = a.raidDetectedAt) ? t : a.dmSpamDetectedAt;
+    incidentData: o
+  } = e, s = null != (t = o.raidDetectedAt) ? t : o.dmSpamDetectedAt;
   return (0, r.jsxs)("div", {
     className: f.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: f.subHeaderTextContainer,
-      children: [(0, r.jsx)(o.b7C, {
+      children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: f.shieldIcon,
         color: i.Z.unsafe_rawColors.RED_345.css
       }), (0, r.jsxs)("div", {
         className: f.subHeaderText,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           className: f.heading,
           variant: "heading-lg/semibold",
           color: "text-feedback-critical",
-          children: (0, d.kk)(a) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
-        }), (0, r.jsx)(o.Text, {
+          children: (0, d.kk)(o) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
+        }), (0, r.jsx)(a.Text, {
           className: f.tagLine,
           variant: "text-sm/medium",
           children: b.intl.format(b.t["4QIIZl"], {
@@ -66,12 +66,12 @@ function h(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: f.buttonContainer,
-      children: [(0, r.jsx)(o.Button, {
+      children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         onClick: l,
         text: b.intl.string(b.t.ISiXba),
         size: "sm"
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(a.Button, {
         variant: "critical-primary",
         onClick: n,
         size: "sm",
@@ -91,25 +91,25 @@ function g(e) {
     className: f.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: f.subHeaderTextContainer,
-      children: [(0, r.jsx)(o.b7C, {
+      children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: f.shieldIcon,
         color: i.Z.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
         className: f.subHeaderText,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           className: f.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
           children: p(n)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           className: f.tagLine,
           variant: "text-sm/medium",
           children: (0, d.OY)(n, l)
         })]
       })]
-    }), (0, r.jsx)(o.Button, {
-      color: a.zx.Colors.BRAND,
+    }), (0, r.jsx)(a.Button, {
+      color: o.zx.Colors.BRAND,
       onClick: t,
       text: b.intl.string(b.t.e1bMNf),
       size: "sm"
@@ -122,37 +122,37 @@ function j(e) {
     onHandleEnableLockdown: t,
     onHandleReportFalseAlarm: n,
     incidentData: l,
-    guildName: a
+    guildName: o
   } = e;
   return (0, r.jsxs)("div", {
     className: f.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: f.subHeaderTextContainer,
-      children: [(0, r.jsx)(o.b7C, {
+      children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: f.shieldIcon,
         color: i.Z.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
         className: f.subHeaderText,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           className: f.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
           children: p(l)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           className: f.tagLine,
           variant: "text-sm/medium",
-          children: (0, d.OY)(l, a)
+          children: (0, d.OY)(l, o)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: f.buttonContainer,
-      children: [(0, r.jsx)(o.Button, {
+      children: [(0, r.jsx)(a.Button, {
         onClick: n,
         text: b.intl.string(b.t.ISiXba),
         variant: "secondary",
         size: "sm"
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(a.Button, {
         onClick: t,
         text: b.intl.string(b.t.e1bMNf),
         size: "sm"
@@ -166,9 +166,9 @@ function x(e) {
     guild: t,
     incidentData: n,
     isUnderLockdown: i,
-    isRaidDetected: a
+    isRaidDetected: o
   } = e, b = l.useCallback(() => {
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let e = {
         source: c.Zu.MEMBER_SAFETY_PAGE,
         location: s.Z.MEMBER_SAFETY_PAGE,
@@ -213,9 +213,9 @@ function x(e) {
     (0, C.kW)(e, t.id)
   }, [t.id]), p = (() => {
     switch (true) {
-      case a && i:
+      case o && i:
         return 3;
-      case a:
+      case o:
         return 1;
       case i:
         return 2;

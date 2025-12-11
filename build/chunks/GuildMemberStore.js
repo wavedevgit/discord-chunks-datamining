@@ -78,12 +78,12 @@ let R = new Chunk710845.Z("GuildMemberStore"),
   U = 0,
   G = {},
   Z = {},
-  B = {
+  F = {
     added: [],
     removed: []
   };
 
-function F(e, t) {
+function B(e, t) {
   if (null == t.communicationDisabledUntil || !(0, m.b)(t)) return V(e, t.userId);
   let n = W(e, t.userId);
   j[n] !== t.communicationDisabledUntil && (0, m.b)(t) && (j[n] = t.communicationDisabledUntil, H(n))
@@ -310,7 +310,7 @@ function ea(e) {
     flags: _,
     collectibles: m,
     displayNameStyles: h
-  }), F(n, g[r.id])
+  }), B(n, g[r.id])
 }
 
 function eo(e) {
@@ -370,7 +370,7 @@ function el(e) {
     fullProfileLoadedTimestamp: Date.now(),
     collectibles: (0, f.Xm)(t.collectibles),
     displayNameStyles: (0, _.bN)(t.display_name_styles)
-  }), F(n, r[t.user.id])
+  }), B(n, r[t.user.id])
 }
 
 function ec(e) {
@@ -446,7 +446,7 @@ function em(e, t) {
       unusualDMActivityUntil: null != (i = t.unusual_dm_activity_until) ? i : null == a ? true : a.unusualDMActivityUntil,
       collectibles: (0, f.Xm)(t.collectibles),
       displayNameStyles: (0, _.bN)(t.display_name_styles)
-    }), F(e, n[t.user.id])
+    }), B(e, n[t.user.id])
   }), U++, true)
 }
 
@@ -531,7 +531,7 @@ function eS(e) {
         collectibles: (0, f.Xm)(a.collectibles),
         displayNameStyles: (0, _.bN)(a.display_name_styles)
       });
-    r[o] = l, F(t, l)
+    r[o] = l, B(t, l)
   }
   returntrue
 }
@@ -568,7 +568,7 @@ function eT(e) {
         fullProfileLoadedTimestamp: null == a ? true : a.fullProfileLoadedTimestamp,
         collectibles: a.collectibles,
         displayNameStyles: a.displayNameStyles
-      }), F(e.guildId, t[i])
+      }), B(e.guildId, t[i])
     }
   }
 }
@@ -825,7 +825,7 @@ class eU extends(r = Chunk442837.ZP.Store) {
   }
   getPendingRoleUpdates(e) {
     var t;
-    return null != (t = Z[e]) ? t : B
+    return null != (t = Z[e]) ? t : F
   }
   getMemberRoleWithPendingUpdates(e, t) {
     var n, r;

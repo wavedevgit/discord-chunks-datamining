@@ -40,7 +40,7 @@ function x(e) {
       className: f.copyContainer,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: f.heading,
         children: b.intl.string(b.t["0/Yz+Y"])
       }), (0, r.jsx)(a.Text, {
@@ -68,14 +68,14 @@ function p(e) {
     transitionState: b,
     location: f,
     sourceQuestContent: p
-  } = e, C = null != (n = (0, s.B4)(a.id)) ? n : a, h = i.useMemo(() => (0, l.K)(C.config), [C]), g = (null == (t = C.userStatus) ? true : t.claimedAt) != null, j = !C.preview && !g, [v, N] = i.useState(j ? "loading" : "claimed");
+  } = e, C = null != (n = (0, s.B4)(a.id)) ? n : a, g = i.useMemo(() => (0, l.K)(C.config), [C]), h = (null == (t = C.userStatus) ? true : t.claimedAt) != null, j = !C.preview && !h, [v, N] = i.useState(j ? "loading" : "claimed");
   i.useEffect(() => {
     if (j) {
       let e = (0, l.zG)(C.config);
       (0, o.QB)(C.id, e, f).then(() => N("claimed")).catch(() => N("error"))
     }
   }, [C, f, j]);
-  let y = "error" === v || null == h;
+  let y = "error" === v || null == g;
   return (0, r.jsx)(d.Z, {
     onClose: c,
     transitionState: b,
@@ -85,10 +85,10 @@ function p(e) {
     isRewardContentLoading: "loading" === v,
     rewardContentHasError: y,
     rewardContent: y ? null : (0, r.jsx)(u.Z, {
-      rewardName: h.messages.name,
+      rewardName: g.messages.name,
       children: (0, r.jsx)(x, {
         quest: C,
-        rewardName: h.messages.name,
+        rewardName: g.messages.name,
         location: f,
         sourceQuestContent: p
       })

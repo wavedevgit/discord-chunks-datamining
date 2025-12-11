@@ -142,8 +142,8 @@ let ey = new Chunk710845.Z("AutocompleteUtils"),
   eU = 50,
   eG = () => true,
   eZ = /(\t|\s)/,
-  eB = [],
-  eF = (r = require("./786074.js").Z).MENTION_EVERYONE,
+  eF = [],
+  eB = (r = require("./786074.js").Z).MENTION_EVERYONE,
   eV = r.MENTION_HERE,
   eH = r.MENTION_GAME,
   eY = r.MENTION_TIMESTAMP,
@@ -247,7 +247,7 @@ function e0(e) {
   for (; h < m;) {
     var E, b, y, O, v, S, I, T, C;
     let e, r, f = n[h];
-    f instanceof M.Z ? (r = f, e = null == (b = F.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
+    f instanceof M.Z ? (r = f, e = null == (b = B.ZP.getNick(c, r.id)) ? true : b.toLocaleLowerCase()) : (e = null == (y = f.nick) ? true : y.toLocaleLowerCase(), r = l[f.userId]);
     let m = null == (E = el.ZP.getGlobalName(r)) ? true : E.toLocaleLowerCase();
     if (null != r && (null == i || i(r))) {
       let n = r.username.toLocaleLowerCase(),
@@ -297,15 +297,15 @@ function e1(e) {
 }
 
 function e3(e) {
-  return e === B.sH || e !== B.Zb && !!(0, L.Q5)(e)
+  return e === F.sH || e !== F.Zb && !!(0, L.Q5)(e)
 }
 
 function e2(e, t, n) {
-  return e === t || (!!n || !!(0, L.Km)(t)) && (e === B.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === B.Zb && (0, L.bw)(t))
+  return e === t || (!!n || !!(0, L.Km)(t)) && (e === F.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === F.Zb && (0, L.bw)(t))
 }
 
 function e4(e, t) {
-  return e === B.sH && (0, L.bw)(t)
+  return e === F.sH && (0, L.bw)(t)
 }
 
 function e5(e) {
@@ -366,11 +366,11 @@ function e9(e, t) {
   return null == e || null == n ? [] : s()(Y.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => X.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) returnfalse;
     let t = n.getGuildId();
-    return null == t || eJ(F.ZP.getMember(t, e.id))
+    return null == t || eJ(B.ZP.getMember(t, e.id))
   }).map(e => {
     var t;
     let r = n.getGuildId(),
-      i = null != r ? F.ZP.getMember(r, e.id) : null;
+      i = null != r ? B.ZP.getMember(r, e.id) : null;
     return {
       type: eu.h8.USER,
       record: e,
@@ -458,7 +458,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           let e = e9(l.id, i);
           if (e.length > 0) return e
         }
-        t = F.ZP.getMembers(u.guild_id).filter(eJ), a && er.Z.requestMembers(u.guild_id, r, i)
+        t = B.ZP.getMembers(u.guild_id).filter(eJ), a && er.Z.requestMembers(u.guild_id, r, i)
       }
       return e0({
         query: r,
@@ -487,7 +487,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         let e = e9(q.Z.getChannelId(t), r);
         if (e.length > 0) return e
       }
-      let l = F.ZP.getMembers(t).filter(eJ);
+      let l = B.ZP.getMembers(t).filter(eJ);
       return i && n.length > 0 && er.Z.requestMembers(t, n, r), e0({
         query: n,
         members: l,
@@ -538,7 +538,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           limit: i = ec.rnv,
           fuzzy: a = true,
           filter: o = eG,
-          type: l = B.sH,
+          type: l = F.sH,
           allowEmptyQueries: c = false,
           requireVocalConnectAccess: u = true,
           boosters: d = {},
@@ -547,7 +547,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         } = e,
         h = e5(n, c),
         g = e3(l);
-      t = null != r ? s()(B.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? m ? U.Z.getAllThreadsForGuild(r) : w.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? w.Z.computeAllActiveJoinedThreads() : []).value();
+      t = null != r ? s()(F.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? m ? U.Z.getAllThreadsForGuild(r) : w.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? w.Z.computeAllActiveJoinedThreads() : []).value();
       let E = {},
         b = [],
         y = G.Z.getMaxScore();
@@ -830,7 +830,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           user: t,
           score: r,
           comparator: i,
-          nick: F.ZP.getNick(n.guild_id, t.id),
+          nick: B.ZP.getNick(n.guild_id, t.id),
           status: K.Z.getStatus(t.id)
         }
       }) : [], y = E.length, O = t.toLowerCase(), v = [];
@@ -852,7 +852,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         }
       }
       let S = [];
-      !n.isPrivate() && r && c && (y < m && a()(O, eF().test) && (S.push(eF()), y += 1), i && y < m && a()(O, eV().test) && (S.push(eV()), y += 1));
+      !n.isPrivate() && r && c && (y < m && a()(O, eB().test) && (S.push(eB()), y += 1), i && y < m && a()(O, eV().test) && (S.push(eV()), y += 1));
       let I = b.N.getCurrentConfig({
         guildId: n.guild_id,
         location: "mention autocomplete"
@@ -888,7 +888,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         }), u += f.length)
       }
       let p = [];
-      return r && o && (u < ec.rnv && a()(d, eF().test) && (p.push(eF()), u += 1), u < ec.rnv && a()(d, eV().test) && p.push(eV())), {
+      return r && o && (u < ec.rnv && a()(d, eB().test) && (p.push(eB()), u += 1), u < ec.rnv && a()(d, eV().test) && p.push(eV())), {
         users: c,
         globals: p,
         roles: f
@@ -944,7 +944,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
       let {
         query: t,
         channel: n,
-        type: r = B.sH,
+        type: r = F.sH,
         channelTypes: i
       } = e;
       return {
@@ -1059,7 +1059,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           })
         })
       }
-      return 0 === (o = s()(o).sortBy(e => false * e.score).value()).length && (o = eB), o
+      return 0 === (o = s()(o).sortBy(e => false * e.score).value()).length && (o = eF), o
     },
     querySoundmoji(e, t) {
       let n = X.default.getCurrentUser();
@@ -1114,12 +1114,12 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           userId: e,
           nick: null != (t = z.Z.getNickname(e)) ? t : null
         }
-      }) : F.ZP.getMembers(n.guild_id).filter(eJ), s = k.default.getId(), l = X.default.getUsers(), c = Q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, es.Fv)(u), p = [];
+      }) : B.ZP.getMembers(n.guild_id).filter(eJ), s = k.default.getId(), l = X.default.getUsers(), c = Q.Z.getGuildId(), u = t.toLocaleLowerCase(), d = (0, es.Fv)(u), p = [];
       c: for (let e of o) {
         var _, m, h, g;
         let t, o;
         if (p.length >= r) break;
-        if (e instanceof M.Z ? (o = e, t = null == (h = F.ZP.getNick(c, o.id)) ? true : h.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]), null == o || o.id === s || o.bot) continue;
+        if (e instanceof M.Z ? (o = e, t = null == (h = B.ZP.getNick(c, o.id)) ? true : h.toLocaleLowerCase()) : (t = null == (g = e.nick) ? true : g.toLocaleLowerCase(), o = l[e.userId]), null == o || o.id === s || o.bot) continue;
         let f = null == (_ = z.Z.getNickname(o.id)) ? true : _.toLocaleLowerCase(),
           E = null == (m = el.ZP.getGlobalName(o)) ? true : m.toLocaleLowerCase();
         if (!ei.BT({

@@ -32,17 +32,17 @@ function x(e) {
     editedIntegration: o,
     webhooks: d,
     editedWebhook: u,
-    isFetching: f,
-    errors: p
-  } = (0, l.cj)([m.default], () => ({
-    editedIntegration: m.default.editedIntegration,
-    editedWebhook: m.default.editedWebhook,
-    errors: m.default.getErrors(),
-    integrations: m.default.integrations,
-    isFetching: m.default.isFetching(),
-    section: m.default.getSection(),
-    sectionId: m.default.getSectionId(),
-    webhooks: m.default.webhooks
+    isFetching: m,
+    errors: b
+  } = (0, l.cj)([f.default], () => ({
+    editedIntegration: f.default.editedIntegration,
+    editedWebhook: f.default.editedWebhook,
+    errors: f.default.getErrors(),
+    integrations: f.default.integrations,
+    isFetching: f.default.isFetching(),
+    section: f.default.getSection(),
+    sectionId: f.default.getSectionId(),
+    webhooks: f.default.webhooks
   }));
   return null == n ? null : (0, r.jsx)(c.Z, {
     guild: n,
@@ -52,9 +52,9 @@ function x(e) {
     webhooks: d,
     editedIntegration: o,
     editedWebhook: u,
-    isFetchingWebhooks: f,
-    hasChanges: m.default.hasChanges,
-    errors: p,
+    isFetchingWebhooks: m,
+    hasChanges: f.default.hasChanges,
+    errors: b,
     refToScroller: t
   })
 }

@@ -59,9 +59,9 @@ function M(e) {
     disabled: U,
     channel: G,
     handleSubmit: Z,
-    isEmpty: B,
-    showAllButtons: F
-  } = e, V = (0, c.e7)([d.Z], () => d.Z.isSubmitButtonEnabled), H = k(G.id, M, B), {
+    isEmpty: F,
+    showAllButtons: B
+  } = e, V = (0, c.e7)([d.Z], () => d.Z.isSubmitButtonEnabled), H = k(G.id, M, F), {
     activeCommand: Y,
     activeCommandOption: W
   } = (0, c.cj)([p.Z], () => ({
@@ -89,7 +89,7 @@ function M(e) {
         disabled: U,
         channel: G
       }, "gift")
-    }), (null == (N = M.gifs) ? true : N.button) != null && null == Y && F && $.push({
+    }), (null == (N = M.gifs) ? true : N.button) != null && null == Y && B && $.push({
       key: "gif",
       node: (0, r.jsx)(C.Z, {
         disabled: U,
@@ -102,7 +102,7 @@ function M(e) {
         disabled: U,
         channel: G
       }, "confetti")
-    }), !er && (null == (P = M.stickers) ? true : P.button) != null && null == Y && F && $.push({
+    }), !er && (null == (P = M.stickers) ? true : P.button) != null && null == Y && B && $.push({
       key: "sticker",
       node: (0, r.jsx)(w.Z, {
         disabled: U,

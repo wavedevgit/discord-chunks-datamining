@@ -468,7 +468,7 @@ let Y = e => {
                   className: B.step,
                   children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/medium",
-                    color: e.isDone ? "text-default" : "header-primary",
+                    color: e.isDone ? "text-default" : "text-strong",
                     className: B.stepName,
                     children: e.name
                   }), (0, a.jsx)(h.Text, {

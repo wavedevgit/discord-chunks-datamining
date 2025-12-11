@@ -204,7 +204,7 @@ function U(e, t) {
 }
 let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
   Z = (0, Chunk251625.oH)((e, t) => e.getRoots().map(C)),
-  B = (0, Chunk251625.oH)((e, t) => {
+  F = (0, Chunk251625.oH)((e, t) => {
     let n = [];
 
     function r(e) {
@@ -217,7 +217,7 @@ let G = (0, Chunk251625.oH)((e, t) => e.sortedGuildNodes().map(e => e.id)),
     }
     return r(e.root), n
   }),
-  F = (0, Chunk251625.oH)((e, t) => e.root.children.map(C));
+  B = (0, Chunk251625.oH)((e, t) => e.root.children.map(C));
 class V extends Chunk750041.Z {
   initialize() {
     this.waitFor(Chunk430824.Z, Chunk9156.ZP, Chunk581883.Z, Chunk486472.Z, Chunk41776.Z, Chunk664915.Z, Chunk937111.Z)
@@ -235,10 +235,10 @@ class V extends Chunk750041.Z {
     return G(I, I.version)
   }
   getFlattenedGuildFolderList() {
-    return B(I, I.version)
+    return F(I, I.version)
   }
   getCompatibleGuildFolders() {
-    return F(I, I.version)
+    return B(I, I.version)
   }
   getFastListGuildFolders() {
     return I.getRoots()

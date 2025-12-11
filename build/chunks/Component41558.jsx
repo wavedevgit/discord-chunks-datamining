@@ -23,7 +23,7 @@ function c(e) {
     className: s.header,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
-      color: "header-primary",
+      color: "text-strong",
       children: t
     }), null != n && null != i && (0, r.jsx)(a.P3F, {
       className: s.viewMore,
@@ -49,7 +49,7 @@ c.buttonTypes = l, c.Loading = function() {
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk194370.hidden,
       variant: "text-md/medium",
-      color: "header-primary",
+      color: "text-strong",
       children: "_"
     })
   })

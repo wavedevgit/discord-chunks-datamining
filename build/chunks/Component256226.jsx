@@ -103,7 +103,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
     }),
     G = (0, c.e7)([m.Z], () => m.Z.roleStyle),
     Z = (null == (a = R.tags) ? true : a.guild_connections) === null,
-    B = i.useCallback(e => {
+    F = i.useCallback(e => {
       (0, _.jW)(e, async () => {
         let {
           default: e
@@ -114,8 +114,8 @@ let N = Chunk473749.forwardRef(function(e, t) {
         }))
       })
     }, [R.id]),
-    F = (0, p.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
-    V = null != (v = R.colorString) ? v : F,
+    B = (0, p.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
+    V = null != (v = R.colorString) ? v : B,
     H = null != (I = (0, l.wK)(V, .6)) ? I : true,
     Y = u.Z.unsafe_rawColors.WHITE_500.css,
     W = (0, l._i)(V);
@@ -181,7 +181,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
       ref: t,
       className: o()(O.role, P),
       style: z,
-      onContextMenu: B,
+      onContextMenu: F,
       onMouseDown: L,
       "aria-label": R.name,
       tabIndex: M

@@ -193,7 +193,7 @@ function Z(e) {
   b = null, T = {}, C = false
 }
 
-function B(e) {
+function F(e) {
   let {
     integrationId: t
   } = e, n = K(t);
@@ -201,7 +201,7 @@ function B(e) {
   y = n, b = null, O = null, T = {}, C = false
 }
 
-function F() {
+function B() {
   y = null, T = {}, C = false
 }
 
@@ -308,8 +308,8 @@ let Q = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SET_SECTION: P,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: Z,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: B,
-    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: B,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: x,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: L,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,

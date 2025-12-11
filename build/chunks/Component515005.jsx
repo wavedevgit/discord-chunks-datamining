@@ -101,8 +101,8 @@ let P = (0, Chunk468194.Mg)(Chunk806512.__invalid_stickerPickerPreviewDimensions
       stickerDescriptors: U,
       stickerPadding: G = R,
       stickerSize: Z = P,
-      ownedStickerPacks: B,
-      enlargeOnInteraction: F = false,
+      ownedStickerPacks: F,
+      enlargeOnInteraction: B = false,
       channel: V,
       currentUser: H,
       checkSendability: Y = true
@@ -125,7 +125,7 @@ let P = (0, Chunk468194.Mg)(Chunk806512.__invalid_stickerPickerPreviewDimensions
       children: U.map(e => {
         var d;
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
-          S = e.type === h.al.STICKER && F && f,
+          S = e.type === h.al.STICKER && B && f,
           T = t => {
             if ((null == D ? true : D.current) === true || (null == x ? true : x.current) === true) return;
             let n = t.altKey;
@@ -168,7 +168,7 @@ let P = (0, Chunk468194.Mg)(Chunk806512.__invalid_stickerPickerPreviewDimensions
                 onMouseMove: P,
                 onClick: R,
                 style: q,
-                children: [!F && (0, r.jsx)("div", {
+                children: [!B && (0, r.jsx)("div", {
                   className: v.inspectedIndicator
                 }), (0, r.jsx)("div", {
                   className: v.iconWrapper,
@@ -185,7 +185,7 @@ let P = (0, Chunk468194.Mg)(Chunk806512.__invalid_stickerPickerPreviewDimensions
               })
             }), e.guild_id);
           case h.al.STICKER: {
-            let s = t && null != B && (0, g.jl)(e.sticker) && !B.has(e.sticker.pack_id),
+            let s = t && null != F && (0, g.jl)(e.sticker) && !F.has(e.sticker.pack_id),
               l = e => {
                 (0, u.jW)(e, async () => {
                   let {
@@ -214,16 +214,16 @@ let P = (0, Chunk468194.Mg)(Chunk806512.__invalid_stickerPickerPreviewDimensions
                 children: (0, E.C)(e.sticker)
               }), (0, r.jsxs)("div", {
                 "aria-hidden": true,
-                children: [!F && (0, r.jsx)("div", {
+                children: [!B && (0, r.jsx)("div", {
                   className: v.inspectedIndicator
                 }), (0, r.jsx)(E.Z, {
                   className: o()(v.stickerNode, {
-                    [v.stickerNodeDimmed]: F && !f && null != N && false !== N.rowIndex && false !== N.columnIndex,
+                    [v.stickerNodeDimmed]: B && !f && null != N && false !== N.rowIndex && false !== N.columnIndex,
                     [v.stickerNodeHidden]: S,
                     [v.stickerUnsendable]: Y && !(0, m.kl)(e.sticker, H, V)
                   }),
                   disableAnimation: !f && !a,
-                  enlargeOnInteraction: F,
+                  enlargeOnInteraction: B,
                   isInteracting: f,
                   maskAsset: f,
                   sticker: e.sticker,

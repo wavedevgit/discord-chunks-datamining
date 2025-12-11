@@ -16,16 +16,16 @@ function u(e) {
   let {
     searchState: t
   } = e, n = l.useMemo(() => ({
-    [o.po.LOADING]: null,
-    [o.po.SUCCESS_STILL_INDEXING]: {
-      icon: (0, r.jsx)(a.Z, {}),
+    [a.po.LOADING]: null,
+    [a.po.SUCCESS_STILL_INDEXING]: {
+      icon: (0, r.jsx)(o.Z, {}),
       message: c.intl.string(c.t.AXPbZr)
     },
-    [o.po.SUCCESS_EMPTY]: {
+    [a.po.SUCCESS_EMPTY]: {
       icon: (0, r.jsx)(s.Z, {}),
       message: c.intl.string(c.t.wdyR52)
     },
-    [o.po.SUCCESS_FULL]: null
+    [a.po.SUCCESS_FULL]: null
   }), [])[t];
   return null == n ? null : (0, r.jsxs)("div", {
     className: d.noResultsContainer,

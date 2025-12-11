@@ -23,16 +23,16 @@ function u(e) {
       className: c.headerContainer,
       children: [(0, r.jsx)(i.Ucv, {
         size: "sm",
-        color: n !== s.br.AVAILABLE ? a.Z.colors.TEXT_MUTED : a.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
+        color: n !== s.br.AVAILABLE ? o.Z.colors.TEXT_MUTED : o.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }), (0, r.jsx)(l.X6q, {
-        color: n !== s.br.AVAILABLE ? "text-muted" : "header-primary",
+        color: n !== s.br.AVAILABLE ? "text-muted" : "text-strong",
         variant: "heading-lg/semibold",
         children: t
       })]
     }), (0, r.jsx)(l.xvT, {
       color: "text-muted",
       variant: "text-sm/medium",
-      children: (0, o.t)(t, n)
+      children: (0, a.t)(t, n)
     })]
   })
 }

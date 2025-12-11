@@ -60,7 +60,7 @@ require.d(exports, {
   dN: () => eb,
   eD: () => eP,
   eW: () => I,
-  ej: () => eB,
+  ej: () => eF,
   ex: () => eR,
   fY: () => tl,
   fw: () => tr,
@@ -96,8 +96,8 @@ require.d(exports, {
   vH: () => $,
   vz: () => k,
   w7: () => eQ,
-  xB: () => B,
-  xH: () => eF,
+  xB: () => F,
+  xH: () => eB,
   xQ: () => tc,
   xb: () => tt,
   xk: () => es,
@@ -370,7 +370,7 @@ let Z = "undefined" == typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_intounderlyingsink_free(e >>> 0, 1));
-class B {
+class F {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
     return this.__wbg_ptr = 0, Z.unregister(this), module
@@ -391,14 +391,14 @@ class B {
     return r.intounderlyingsink_write(this.__wbg_ptr, e)
   }
 }
-let F = "undefined" == typeof FinalizationRegistry ? {
+let B = "undefined" == typeof FinalizationRegistry ? {
   register: () => {},
   unregister: () => {}
 } : new FinalizationRegistry(e => r.__wbg_intounderlyingsource_free(e >>> 0, 1));
 class V {
   __destroy_into_raw() {
     let e = this.__wbg_ptr;
-    return this.__wbg_ptr = 0, F.unregister(this), module
+    return this.__wbg_ptr = 0, B.unregister(this), module
   }
   free() {
     let e = this.__destroy_into_raw();
@@ -704,11 +704,11 @@ function eZ(e) {
   return e.queueMicrotask
 }
 
-function eB(e) {
+function eF(e) {
   return Promise.resolve(e)
 }
 
-function eF() {
+function eB() {
   return u(function(e, t) {
     e.respond(t >>> 0)
   }, arguments)

@@ -75,7 +75,7 @@ function R(e) {
     channelId: R,
     messageId: w,
     roleId: D
-  }), B = (0, m.ZP)(t.id, N), F = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), {
+  }), F = (0, m.ZP)(t.id, N), B = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), {
     isHoveringOrFocusing: H
   } = (0, u.Z)(V);
   i.useEffect(() => {
@@ -105,9 +105,9 @@ function R(e) {
     children: (0, r.jsx)(p.Mt, {
       value: Z,
       openedAt: x,
-      fetchStartedAt: null == B ? true : B.fetchStartedAt,
-      fetchEndedAt: null == B ? true : B.fetchEndedAt,
-      isLoaded: null == B ? true : B.isLoaded,
+      fetchStartedAt: null == F ? true : F.fetchStartedAt,
+      fetchEndedAt: null == F ? true : F.fetchEndedAt,
+      isLoaded: null == F ? true : F.isLoaded,
       children: (0, r.jsxs)(K, {
         ref: V,
         "aria-labelledby": z,
@@ -120,7 +120,7 @@ function R(e) {
           })
         }), (0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: B,
+          displayProfile: F,
           themeType: T.l.POPOUT,
           children: [(0, r.jsx)(O.Z, {
             children: (0, r.jsx)(y.Z, {
@@ -132,12 +132,12 @@ function R(e) {
             className: A.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              displayProfile: B,
+              displayProfile: F,
               guildId: N,
               themeType: T.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
-              displayProfile: B,
+              displayProfile: F,
               guildId: N,
               channelId: R,
               themeType: T.l.POPOUT,
@@ -151,8 +151,8 @@ function R(e) {
           }), (0, r.jsx)(S.Z, {
             user: t,
             currentUser: n,
-            displayProfile: B,
-            guild: F,
+            displayProfile: F,
+            guild: B,
             isHoveringOrFocusing: H,
             onOpenProfile: M ? true : Y,
             channelId: R,

@@ -166,10 +166,10 @@ class S extends(r = Chunk473749.PureComponent) {
       "aria-labelledby": G,
       "aria-describedby": Z
     } = this.props, {
-      fieldProps: B
-    } = (0, Chunk793030.XF_)(this.props), F = 0;
-    y ? null != Chunk120356 && (null != c ? F = Chunk120356[c] : null != Chunk392711 && (F = Chunk120356[Chunk392711])) : F = this.scaleValue(exports);
-    let V = "".concat(F, "%"),
+      fieldProps: F
+    } = (0, Chunk793030.XF_)(this.props), B = 0;
+    y ? null != Chunk120356 && (null != c ? B = Chunk120356[c] : null != Chunk392711 && (B = Chunk120356[Chunk392711])) : B = this.scaleValue(exports);
+    let V = "".concat(B, "%"),
       H = null != Chunk120356 && null != Chunk473749 ? Chunk120356.map((e, t) => {
         let n = a[t],
           r = null != N && N === n,
@@ -193,9 +193,9 @@ class S extends(r = Chunk473749.PureComponent) {
           })
         }, t)
       }) : null,
-      Y = null != R ? R(exports) : "".concat(F.toFixed(0), "%"),
+      Y = null != R ? R(exports) : "".concat(B.toFixed(0), "%"),
       W = null != (e = null == D ? true : D(exports)) ? module : true;
-    return (0, Chunk54381.jsx)(Chunk793030.gNt, b(g({}, B), {
+    return (0, Chunk54381.jsx)(Chunk793030.gNt, b(g({}, F), {
       children: e => (0, i.jsx)(I, {
         active: n,
         keyboardFocused: r && _.Z.keyboardModeEnabled,

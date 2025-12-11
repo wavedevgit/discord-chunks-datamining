@@ -67,20 +67,20 @@ function P(e) {
     guild: t,
     role: n,
     locked: l
-  } = e, a = (0, o.e7)([f.default], () => f.default.getCurrentUser()), u = i.useMemo(() => h.uB({
+  } = e, a = (0, o.e7)([m.default], () => m.default.getCurrentUser()), u = i.useMemo(() => h.uB({
     user: a,
     context: t
   }), [a, t]), g = i.useMemo(() => ({
     [n.id]: T(_({}, n), {
       permissions: h.Hn
     })
-  }), [n]), m = i.useMemo(() => h.uB({
+  }), [n]), f = i.useMemo(() => h.uB({
     user: a,
     context: t,
     roles: g
-  }), [a, t, g]), p = !s.fS(u, m);
+  }), [a, t, g]), b = !s.fS(u, f);
   return (0, r.jsx)(c.u, {
-    text: p ? E.intl.string(E.t["IQ/6Sg"]) : null,
+    text: b ? E.intl.string(E.t["IQ/6Sg"]) : null,
     position: "top",
     children: (0, r.jsx)("div", {
       className: I.clearButtonWrapper,
@@ -88,7 +88,7 @@ function P(e) {
         variant: "primary",
         textVariant: "text-sm/semibold",
         onClick: () => (0, x.TY)(n.id),
-        disabled: s.fS(n.permissions, h.Hn) || p || l,
+        disabled: s.fS(n.permissions, h.Hn) || b || l,
         text: E.intl.string(E.t["UYq7+O"])
       })
     })
@@ -118,7 +118,7 @@ function w(e) {
   });
 
   function o(e) {
-    return m.Z.can(e, t) ? !m.Z.can(e, t, null, {
+    return f.Z.can(e, t) ? !f.Z.can(e, t, null, {
       [n.id]: T(_({}, n), {
         permissions: s.Od(n.permissions, e)
       })
@@ -152,26 +152,26 @@ function Z(e) {
     locked: l,
     setSelectedSection: s,
     initialSearchQuery: o
-  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => b.Z.generateGuildPermissionSpec(t), [t]).map(e => T(_({}, e), {
+  } = e, [c, u] = i.useState(null != o ? o : ""), g = i.useMemo(() => p.Z.generateGuildPermissionSpec(t), [t]).map(e => T(_({}, e), {
     permissions: e.permissions.filter(e => {
       let t = c.trimStart().toLowerCase();
       return e.title.toLowerCase().includes(t) || null != e.description && e.description.toString().toLowerCase().includes(t)
     })
   })).filter(e => e.permissions.length > 0), {
-    headerHeight: m,
-    headerRef: f
+    headerHeight: f,
+    headerRef: m
   } = (0, v.Z)(0), {
     scrolledToTop: h,
     handleScroll: x
   } = (0, O.V)(), j = i.useRef(false);
   return i.useEffect(() => {
-    j.current || "" === c.trimStart() || (p.default.track(N.rMx.SEARCH_STARTED, {
+    j.current || "" === c.trimStart() || (b.default.track(N.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), j.current = true)
   }, [c]), (0, r.jsx)(d.yWw, {
     className: I.scroller,
     style: {
-      scrollPaddingTop: m
+      scrollPaddingTop: f
     },
     onScroll: x,
     children: (0, r.jsxs)("div", {
@@ -180,7 +180,7 @@ function Z(e) {
         className: a()(S.header, S.stickyHeader, {
           [S.stickyHeaderElevated]: !h
         }),
-        ref: f,
+        ref: m,
         children: [(0, r.jsx)(O.Z, {
           guild: t,
           role: n,

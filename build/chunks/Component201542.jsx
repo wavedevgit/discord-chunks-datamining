@@ -96,7 +96,7 @@ let N = Chunk473749.memo(function(e) {
     M = (0, s.e7)([d.ZP], () => d.ZP.getPlaybackRate(d.Ir.VOICE_MESSAGE)),
     [k, U] = i.useState(j > 0),
     [G, Z] = i.useState(j),
-    [B, F] = i.useState(y),
+    [F, B] = i.useState(y),
     [V, H] = i.useState(false),
     [Y, W] = i.useState(false),
     [K, z] = i.useState(false),
@@ -112,7 +112,7 @@ let N = Chunk473749.memo(function(e) {
     }, []),
     ei = i.useCallback(e => {
       let t = e.currentTarget.duration;
-      isNaN(t) || F(t)
+      isNaN(t) || B(t)
     }, []),
     ea = i.useCallback(e => {
       null != y && null != x && (0, u.U)(x, e, y)
@@ -146,12 +146,12 @@ let N = Chunk473749.memo(function(e) {
       z(true)
     }, []),
     ep = i.useCallback(() => {
-      z(false), G === B && eo(), ea(G)
-    }, [G, B, eo, ea]),
+      z(false), G === F && eo(), ea(G)
+    }, [G, F, eo, ea]),
     e_ = i.useCallback(e => {
       let t = L.current;
-      null != B && null != t && (el(e * B), clearTimeout(et.current), et.current = true)
-    }, [B, el]);
+      null != F && null != t && (el(e * F), clearTimeout(et.current), et.current = true)
+    }, [F, el]);
   i.useEffect(() => {
     !k && Y && U(true)
   }, [Y, k]);
@@ -192,7 +192,7 @@ let N = Chunk473749.memo(function(e) {
           i = null != r ? (e - r) / 1e3 : 0;
         null == n || n(t, i), ea(t), em.current = null
       }
-  }, [Y, n, B, ea]), C(L, Y, Z), A(n, Y, W);
+  }, [Y, n, F, ea]), C(L, Y, Z), A(n, Y, W);
   let eE = Y ? l.fpf : l.o1U,
     eb = Y ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
     ey = O.intl.formatToPlainString(O.t.LgCPMt, {
@@ -255,7 +255,7 @@ let N = Chunk473749.memo(function(e) {
       className: v.waveform,
       waveform: b,
       currentTime: G,
-      duration: null != B ? B : 1,
+      duration: null != F ? F : 1,
       playing: Y,
       played: k,
       onDrag: e_,
@@ -264,7 +264,7 @@ let N = Chunk473749.memo(function(e) {
     }), (0, r.jsx)(T, {
       played: k,
       currentTime: G,
-      duration: B
+      duration: F
     }), (0, r.jsx)(l.P3F, {
       className: v.playbackRateContainer,
       onClick: () => I(M),

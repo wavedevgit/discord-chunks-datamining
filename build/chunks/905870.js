@@ -51,17 +51,17 @@ let y = 1048576,
   G = +Chunk70956.Z.Millis.DAY,
   Z = +Chunk70956.Z.Millis.MINUTE;
 
-function B() {
+function F() {
   return Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)()
 }
-class F extends Chunk147913.Z {
+class B extends Chunk147913.Z {
   _initialize() {}
   _terminate() {
-    B() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, Chunk848479.Z.disablePerfMemoryHooks(), Chunk848479.Z.disablePAMemoryProfiler())
+    F() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, Chunk848479.Z.disablePerfMemoryHooks(), Chunk848479.Z.disablePAMemoryProfiler())
   }
   handlePostConnectionOpen() {
     var e, t;
-    if (!B()) return;
+    if (!F()) return;
     let n = null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports);
     "development" !== require && "canary" !== require && (this._supportedNativeChannel = false), clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = setInterval(async () => {
       await this.trackNativeHeapPerformanceStats()
@@ -229,4 +229,4 @@ class F extends Chunk147913.Z {
     })
   }
 }
-let V = new F
+let V = new B

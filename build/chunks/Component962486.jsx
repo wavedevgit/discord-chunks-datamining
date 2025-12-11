@@ -52,7 +52,7 @@ function h(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: f.sectionTitle,
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: O
       }), (0, r.jsx)("div", {
         className: f.content,

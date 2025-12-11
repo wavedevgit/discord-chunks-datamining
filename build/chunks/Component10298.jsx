@@ -19,7 +19,7 @@ let s = e => {
     children: [s, !l && (0, r.jsx)(i.y5t, {
       children: (0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: n
       })
     }), (0, r.jsx)("div", {

@@ -1,5 +1,5 @@
 /** Chunk was on 92339 **/
-/** chunk id: 184100, original params: e,t,i (module,exports,require) **/
+/** chunk id: 184100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => c
 }), require("./388685.js");
@@ -14,16 +14,16 @@ var Chunk54381 = require("./54381.js"),
 function c(e) {
   let {
     onClose: t,
-    initialPercent: i,
+    initialPercent: n,
     numActions: c
-  } = e, [h, l] = a.useState(i), {
-    createMultipleConfetti: p
-  } = a.useContext(r.h);
-  return a.useEffect(() => {
-    setTimeout(() => l(1), 200), setTimeout(() => {
+  } = e, [l, h] = s.useState(n), {
+    createMultipleConfetti: f
+  } = s.useContext(r.h);
+  return s.useEffect(() => {
+    setTimeout(() => h(1), 200), setTimeout(() => {
       let e = window.innerWidth / 2,
         t = window.innerHeight / 2;
-      p({
+      f({
         position: {
           type: "static-random",
           minValue: {
@@ -37,17 +37,17 @@ function c(e) {
         }
       }, 25)
     }, 700), setTimeout(t, 2e3)
-  }, [p, t]), (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(o.Heading, {
+  }, [f, t]), (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(o.Heading, {
       className: u.heading,
       variant: "heading-xl/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: d.intl.format(d.t.pGj5u2, {
         count: c
       })
-    }), (0, n.jsx)(o.Exd, {
-      foregroundGradientColor: [s.Z.unsafe_rawColors.GREEN_300.css, s.Z.unsafe_rawColors.GREEN_230.css],
-      percent: 100 * h,
+    }), (0, i.jsx)(o.Exd, {
+      foregroundGradientColor: [a.Z.unsafe_rawColors.GREEN_300.css, a.Z.unsafe_rawColors.GREEN_230.css],
+      percent: 100 * l,
       animate: true
     })]
   })

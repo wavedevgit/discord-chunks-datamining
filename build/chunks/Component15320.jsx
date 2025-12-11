@@ -117,7 +117,7 @@ function C(e) {
         }), (0, r.jsx)(l.Heading, {
           className: _.title,
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           id: t,
           children: d.title
         }), (0, r.jsx)(x.Z, {
@@ -226,7 +226,7 @@ function E(e) {
         }), (0, r.jsx)(l.Heading, {
           className: _.title,
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           id: t,
           children: d.title
         }), (0, r.jsx)("div", {

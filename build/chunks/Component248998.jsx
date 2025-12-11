@@ -30,7 +30,7 @@ function p(e) {
       onAction: h
     } = i,
     g = m && !o,
-    E = o ? "header-primary" : "text-muted",
+    E = o ? "text-strong" : "text-muted",
     b = o ? "text-default" : "text-muted",
     y = s()(n),
     O = null != h && o,

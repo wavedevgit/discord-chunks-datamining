@@ -189,8 +189,8 @@ function Q(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, g), j = (0, M.vH)(t), {
-    isGeneratingAI: x,
+  }(t, g), x = (0, M.vH)(t), {
+    isGeneratingAI: j,
     enableAIFeatures: C,
     getThreadNameInputAccessory: I
   } = (0, G.U)({
@@ -271,11 +271,11 @@ function Q(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: h,
-    privateThreadMode: j,
+    privateThreadMode: x,
     textAreaState: b,
     location: l,
     enableAIFeatures: C
-  }), D = (0, M.oD)(h, j) ? o.qtY : o.or_;
+  }), D = (0, M.oD)(h, x) ? o.qtY : o.or_;
   return (0, r.jsx)("div", {
     className: V.chat,
     onMouseDown: u,
@@ -307,14 +307,14 @@ function Q(e) {
                   updateThreadSettings: m,
                   error: E,
                   disabled: N,
-                  isGeneratingAI: x,
+                  isGeneratingAI: j,
                   enableAIFeatures: C,
                   getThreadNameInputAccessory: I
                 }), t.type === F.d4z.GUILD_TEXT ? (0, r.jsx)(X, {
                   startedFromMessage: null != n,
                   threadSettings: h,
                   updateThreadSettings: m,
-                  privateThreadMode: j
+                  privateThreadMode: x
                 }) : null]
               })]
             }), (0, r.jsx)(ee, {
@@ -377,7 +377,7 @@ function J(e) {
     getThreadNameInputAccessory: h
   } = e, f = null != (t = l.name) ? t : "", g = (0, L.Op)(s, {
     content: f
-  }), m = (0, M.Od)(n, i), b = null != i && !p, y = (0, x.Dt)(), O = p ? B.intl.string(B.t["Nb2/RE"]) : "" !== m ? m : B.intl.string(B.t["Nb2/RE"]);
+  }), m = (0, M.Od)(n, i), b = null != i && !p, y = (0, j.Dt)(), O = p ? B.intl.string(B.t["Nb2/RE"]) : "" !== m ? m : B.intl.string(B.t["Nb2/RE"]);
   return (0, r.jsx)(o.oil, {
     label: B.intl.string(b ? B.t.JPvIiL : B.t.j3XWjD),
     trailing: h(c),
@@ -428,15 +428,15 @@ function $(e) {
     event: F.CkL.TEXTAREA_BLUR,
     handler: m
   });
-  let x = (0, s.e7)([N.Z], () => N.Z.can(F.Plq.ATTACH_FILES, t)),
+  let j = (0, s.e7)([N.Z], () => N.Z.can(F.Plq.ATTACH_FILES, t)),
     v = (0, L.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(x.Z, {
       channelId: t.id,
       type: Y,
-      canAttachFiles: x
+      canAttachFiles: j
     }), (0, r.jsx)("div", {
       className: V.starterMessageError,
       children: (0, r.jsx)(o.pdY, {

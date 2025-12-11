@@ -66,7 +66,7 @@ let P = (e, t) => {
               className: N.marketingPageTextContainer,
               children: (0, r.jsx)(c.Heading, {
                 variant: "display-md",
-                color: "header-primary",
+                color: "text-strong",
                 className: N.header,
                 children: A.intl.string(A.t.YCZldK)
               })

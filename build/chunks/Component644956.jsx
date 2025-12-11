@@ -2,7 +2,7 @@
 /** chunk id: 644956, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -143,7 +143,7 @@ function Z(e) {
   }, t.userId)
 }
 
-function B(e) {
+function F(e) {
   let {
     popoutProps: t,
     roleId: n,
@@ -215,7 +215,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     roleId: t,
     channelId: n,
@@ -255,7 +255,7 @@ function F(e) {
       preload: async () => {
         null != t && await (0, y.H)(o, t)
       },
-      renderPopout: e => (0, r.jsx)(B, {
+      renderPopout: e => (0, r.jsx)(F, {
         guildId: o,
         channelId: n,
         roleId: t,

@@ -2,7 +2,7 @@
 /** chunk id: 331146, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  E: () => m
+  E: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -34,7 +34,7 @@ function g(e) {
       src: o,
       alt: t.name
     }), (0, r.jsx)(a.Text, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/medium",
       className: u.emojiAlias,
       children: t.name
@@ -51,7 +51,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     tierEmojiIds: t,
     guildId: n,

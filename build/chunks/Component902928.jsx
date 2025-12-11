@@ -18,7 +18,7 @@ let f = e => {
     onComplete: t,
     data: n
   } = e, f = (0, r.useId)(), p = null, h = null, x = n.scopes.some(e => (0, s.sg)(e));
-  return n.clientId === i.t.PLAYSTATION_APPLICATION_ID || n.clientId === i.t.PLAYSTATION_STAGING_APPLICATION_ID ? p = d.Z : x && (p = u.Z), null != n.twoWayLinkCode ? h = c.intl.string(c.t.QhATl2) : x && (h = c.intl.string(c.t.vBPvK3)), (0, a.jsxs)("div", {
+  return n.clientId === o.t.PLAYSTATION_APPLICATION_ID || n.clientId === o.t.PLAYSTATION_STAGING_APPLICATION_ID ? p = d.Z : x && (p = u.Z), null != n.twoWayLinkCode ? h = c.intl.string(c.t.QhATl2) : x && (h = c.intl.string(c.t.vBPvK3)), (0, a.jsxs)("div", {
     className: l.content,
     children: [null != p ? (0, a.jsx)("img", {
       src: p,
@@ -27,11 +27,11 @@ let f = e => {
       "aria-labelledby": f
     }) : null, (0, a.jsxs)("div", {
       className: l.innerContent,
-      children: [(0, a.jsx)(o.Heading, {
+      children: [(0, a.jsx)(i.Heading, {
         variant: "heading-xl/extrabold",
         id: f,
         children: c.intl.string(c.t.qDtJmD)
-      }), null != h ? (0, a.jsx)(o.Text, {
+      }), null != h ? (0, a.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: h
@@ -39,7 +39,7 @@ let f = e => {
     }), (0, a.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: l.footerButton,
-      children: (0, a.jsx)(o.Button, {
+      children: (0, a.jsx)(i.Button, {
         variant: "primary",
         text: c.intl.string(c.t.i4jeWR),
         onClick: t

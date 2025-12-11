@@ -75,7 +75,7 @@ function D(e) {
     notation: "compact",
     compactDisplay: "short",
     maximumFractionDigits: 2
-  }).format(x), B = (0, _.nJ)(D), F = (0, _.UN)(n), V = f.F[n], H = (0, c.dQu)(V.primaryColor).hex(), Y = (0, c.dQu)(V.secondaryColor).hex({
+  }).format(x), F = (0, _.nJ)(D), B = (0, _.UN)(n), V = f.F[n], H = (0, c.dQu)(V.primaryColor).hex(), Y = (0, c.dQu)(V.secondaryColor).hex({
     opacity: .2
   }), W = (0, o.e7)([b.Z], () => b.Z.getGuild(null == M ? true : M.guildId)), K = (0, v.CJ)(), {
     enabled: z
@@ -104,7 +104,7 @@ function D(e) {
     children: [(0, r.jsxs)("div", {
       className: C.card,
       children: [(0, r.jsx)("img", {
-        src: F,
+        src: B,
         alt: "",
         className: C.asset,
         style: {
@@ -130,7 +130,7 @@ function D(e) {
           }), (0, r.jsx)(a.xvT, {
             variant: "text-sm/medium",
             className: C.statText,
-            children: B
+            children: F
           })]
         }), (0, r.jsxs)("div", {
           className: C.stat,

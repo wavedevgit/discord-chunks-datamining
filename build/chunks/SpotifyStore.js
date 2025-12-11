@@ -3,7 +3,7 @@
 "use strict";
 let r, i, a;
 require.d(exports, {
-  Z: () => eB
+  Z: () => eF
 }), require("./388685.js"), require("./49124.js"), require("./35282.js"), require("./539854.js"), require("./704826.js"), require("./997841.js");
 var o, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -74,8 +74,8 @@ let M = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY),
   U = "hm://pusher/v1/connections/",
   G = 30 * Chunk70956.Z.Millis.SECOND,
   Z = 30 * Chunk70956.Z.Millis.SECOND,
-  B = 100,
-  F = 5 * Chunk70956.Z.Millis.MINUTE,
+  F = 100,
+  B = 5 * Chunk70956.Z.Millis.MINUTE,
   V = 5 * Chunk70956.Z.Millis.SECOND,
   H = 1.5 * Chunk70956.Z.Millis.SECOND,
   Y = "Computer",
@@ -429,7 +429,7 @@ function eR() {
   let {
     userId: e
   } = i, t = ep(module);
-  if (null == exports) return en.start(F, () => {
+  if (null == exports) return en.start(B, () => {
     null != i && i.userId === module && (0, Chunk524331.Z)()
   }), false;
   en.stop();
@@ -459,7 +459,7 @@ function eD(e) {
         checkSoundSharing: true,
         checkSoundboardSounds: false
       });
-    t && n && null != r ? (ee.start(Z, ew, false), et.stop()) : et.start(B, () => ee.stop(), false)
+    t && n && null != r ? (ee.start(Z, ew, false), et.stop()) : et.start(F, () => ee.stop(), false)
   }
   returnfalse
 }
@@ -709,4 +709,4 @@ let eZ = new eG(Chunk570140.Z, {
     VOICE_STATE_UPDATES: eL,
     MEDIA_ENGINE_SET_GO_LIVE_SOURCE: eM
   }),
-  eB = eZ
+  eF = eZ

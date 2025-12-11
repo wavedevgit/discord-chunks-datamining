@@ -183,7 +183,7 @@ function ei(e) {
                 children: (0, r.jsx)(j.Z, {})
               }), (0, r.jsx)(h.Mi4, {
                 id: H.yD.VOICE,
-                children: (0, r.jsx)(F.Z, {})
+                children: (0, r.jsx)(B.Z, {})
               }), (0, r.jsx)(h.Mi4, {
                 id: H.yD.GUILDS,
                 children: (0, r.jsx)(G.Z, {})
@@ -199,7 +199,7 @@ function ei(e) {
                 children: (0, r.jsx)(U.Z, {})
               }), (0, r.jsx)(h.Mi4, {
                 id: H.yD.QUESTS,
-                children: (0, r.jsx)(B.Z, {})
+                children: (0, r.jsx)(F.Z, {})
               }), (0, r.jsx)(h.Mi4, {
                 id: H.yD.END,
                 children: (0, r.jsx)(M.Z, {

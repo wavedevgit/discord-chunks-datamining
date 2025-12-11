@@ -41,7 +41,7 @@ function _(e) {
     setHeaderHeight: c
   } = e, u = i.useRef(null), {
     enabled: g
-  } = m.Z.useExperiment({
+  } = f.Z.useExperiment({
     guildId: t.id,
     location: "GuildSettingsRolesOverviewHeader"
   });
@@ -49,10 +49,10 @@ function _(e) {
     var e, t;
     c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : C.Cl)
   }, [c]);
-  let f = i.useCallback(() => {
+  let m = i.useCallback(() => {
       a(n.id)
     }, [a, n.id]),
-    p = g ? O.Z : T;
+    b = g ? O.Z : T;
   return (0, r.jsxs)("div", {
     ref: u,
     children: [(0, r.jsx)(d.Heading, {
@@ -63,7 +63,7 @@ function _(e) {
       color: "text-default",
       variant: "text-sm/normal",
       children: I.intl.string(I.t["1ydhVp"])
-    }), (0, r.jsx)(p, {
+    }), (0, r.jsx)(b, {
       guild: t
     }), (0, r.jsx)(P, {
       guild: t,
@@ -71,7 +71,7 @@ function _(e) {
       filteredRoles: l,
       query: s,
       setQuery: o,
-      onEveryoneRoleClick: f
+      onEveryoneRoleClick: m
     })]
   })
 }
@@ -81,7 +81,7 @@ function T(e) {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, f.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+    (0, m.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
       dismissAction: N.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
@@ -93,7 +93,7 @@ function T(e) {
       children: I.intl.format(I.t.Vg2oTN, {
         breakingChangeDate: n
       })
-    }) : b.Z.can(E.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+    }) : p.Z.can(E.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: I.intl.format(I.t.HYM8OE, {
         onClickMigrate: () => {
@@ -117,8 +117,8 @@ function T(e) {
         breakingChangeDate: n
       })
     });
-  return (0, r.jsx)(p.Z, {
-    look: p.z.WARNING,
+  return (0, r.jsx)(b.Z, {
+    look: b.z.WARNING,
     className: S.migrationInfoBox,
     children: l
   })

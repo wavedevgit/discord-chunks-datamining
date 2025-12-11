@@ -106,7 +106,7 @@ let z = 0,
         tab: H.X1.EMOJI,
         collapsed: !i,
         guild_id: n.id
-      }), e === F.UX.SOUNDMOJI && D.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
+      }), e === B.UX.SOUNDMOJI && D.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
         collapsed: !i
       }), g(r)
     }, [es, t, g]), e_ = i.useCallback(e => {
@@ -126,7 +126,7 @@ let z = 0,
             animate: true
           })
         };
-      return (0, r.jsx)(B.Z, {
+      return (0, r.jsx)(F.Z, {
         emojiDescriptors: n,
         emojiSize: s,
         surrogateCodePoint: ec,
@@ -163,8 +163,8 @@ let z = 0,
           type: s,
           sectionId: l
         } = n;
-        if (s === F.En.SEARCH_RESULTS) return;
-        let c = s === F.En.GUILD ? null != i ? (0, r.jsx)(G.Z, {
+        if (s === B.En.SEARCH_RESULTS) return;
+        let c = s === B.En.GUILD ? null != i ? (0, r.jsx)(G.Z, {
             guild: i,
             height: en,
             width: en
@@ -180,7 +180,7 @@ let z = 0,
           f = n.isNitroLocked,
           _ = f && !d,
           m = f && d,
-          g = s === F.En.SOUNDMOJI ? (0, r.jsx)(p.P3F, {
+          g = s === B.En.SOUNDMOJI ? (0, r.jsx)(p.P3F, {
             className: K.soundmojiViewMore,
             onClick: () => {
               (0, b.hr)(H.X1.SOUNDBOARD), D.default.track(V.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
@@ -235,7 +235,7 @@ let z = 0,
       renderSectionHeader: eg,
       renderSectionFooter: ey,
       sectionMarginBottom: ev,
-      sectionHeaderHeight: i.useCallback(e => h[e].type === F.En.SEARCH_RESULTS ? 0 : ee, [h]),
+      sectionHeaderHeight: i.useCallback(e => h[e].type === B.En.SEARCH_RESULTS ? 0 : ee, [h]),
       sectionFooterHeight: eO
     }
   },
@@ -261,7 +261,7 @@ let z = 0,
       messageId: M,
       isBurstReaction: k,
       listHeaderClassName: U
-    } = e, G = i.useRef(false), B = E.kJ.useStore(e => e.activeCategoryIndex), F = (0, b.Iu)(e => e.searchQuery), H = R.Yk.useSetting(), q = (0, u.e7)([w.default], () => w.default.getCurrentUser()), Q = (0, L.I5)(q), {
+    } = e, G = i.useRef(false), F = E.kJ.useStore(e => e.activeCategoryIndex), B = (0, b.Iu)(e => e.searchQuery), H = R.Yk.useSetting(), q = (0, u.e7)([w.default], () => w.default.getCurrentUser()), Q = (0, L.I5)(q), {
       location: X
     } = (0, m.O)(), {
       analyticsLocations: J
@@ -281,7 +281,7 @@ let z = 0,
       emojiSize: o,
       onEmojiSelect: s,
       onSelectSoundmoji: l,
-      searchQuery: F,
+      searchQuery: B,
       sectionDescriptors: f,
       setCollapsedSections: O,
       getEmojiItemProps: S,
@@ -298,24 +298,24 @@ let z = 0,
       upsellGlowOpacity: er,
       emojiListRef: a
     }), eh = e => {
-      ee(e), "" === F && E.kJ.setActiveCategoryIndex(e)
+      ee(e), "" === B && E.kJ.setActiveCategoryIndex(e)
     }, eg = (0, v.fe)({
       listRef: a,
-      searchQuery: F,
+      searchQuery: B,
       nitroLockedSectionStates: f,
       setUpsellGlowOpacity: ei
     }), eE = (0, v.Qs)({
-      activeCategoryIndex: B,
+      activeCategoryIndex: F,
       isScrolling: G,
       listRef: a,
       onActiveCategoryIndexChange: eh,
       scrollOffset: z,
-      searchQuery: F,
+      searchQuery: B,
       disableForSearch: false
     });
     (0, v.Xs)({
-      searchQuery: F,
-      activeCategoryIndex: B,
+      searchQuery: B,
+      activeCategoryIndex: F,
       listRef: a
     });
     let eb = i.useCallback(e => {
@@ -323,10 +323,10 @@ let z = 0,
           emojiListRef: a,
           sectionDescriptors: f,
           scrollTop: e,
-          searchQuery: F,
+          searchQuery: B,
           setShowUpsell: en
         })
-      }, [eg, eE, a, f, F, en]),
+      }, [eg, eE, a, f, B, en]),
       ey = f.length > 0;
 
     function eO() {
@@ -354,8 +354,8 @@ let z = 0,
         location_stack: J
       })
     }, [X, J, et]), i.useEffect(() => {
-      "" !== F && (ei(0), en(false))
-    }, [F]), (0, r.jsxs)("div", {
+      "" !== B && (ei(0), en(false))
+    }, [B]), (0, r.jsxs)("div", {
       className: K.listWrapper,
       children: [ey ? (0, r.jsx)(g.Z, {
         role: "none presentation",

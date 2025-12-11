@@ -29,13 +29,13 @@ function d(e) {
     role: "link",
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: a()(u.name, u.linkedName),
       children: (0, l.Z)(t)
     })
   }) : (0, r.jsx)(o.Text, {
     variant: "text-md/medium",
-    color: "header-primary",
+    color: "text-strong",
     className: u.name,
     children: (0, l.Z)(t)
   });

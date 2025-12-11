@@ -148,7 +148,7 @@ function b(t) {
         className: C.textContainer,
         children: [(0, a.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: f.intl.string(f.t.L4ifkZ)
         }), (0, a.jsx)(l.Text, {
           variant: "text-md/normal",

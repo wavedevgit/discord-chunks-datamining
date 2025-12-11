@@ -20,11 +20,11 @@ function c(e) {
       className: s.header,
       variant: "eyebrow",
       color: "text-subtle",
-      children: o.intl.string(o.t.yM9Krm)
+      children: a.intl.string(a.t.yM9Krm)
     }), (0, r.jsx)(i.zJl, {
       className: s.container,
       fade: true,
-      children: n.map((e, t) => (0, r.jsx)(a.Z, {
+      children: n.map((e, t) => (0, r.jsx)(o.Z, {
         boost: e
       }, "boost-activity-".concat(t)))
     })]

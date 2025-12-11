@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
 /** chunk id: 208265, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,22 +17,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk804230 = require("./804230.js");
 
-function h(n) {
+function N(n) {
   let {
     classificationId: t,
     transitionState: e,
-    initialSlide: h = g.Cs.SPEED_BUMP,
-    onClose: N
-  } = n, [C, j] = a.useState(h), {
+    initialSlide: N = g.Cs.SPEED_BUMP,
+    onClose: h
+  } = n, [C, j] = a.useState(N), {
     classification: _,
     isDsaEligible: E
   } = (0, r.YG)(null != t ? t : u.lds), I = (null == _ ? true : _.is_spam) || false, v = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
   a.useEffect(() => {
-    j(h)
-  }, [j, h]);
+    j(N)
+  }, [j, N]);
   let S = a.useCallback(() => {
-      d.Z.close(), N()
-    }, [N]),
+      d.Z.close(), h()
+    }, [h]),
     A = a.useCallback(() => {
       var n;
       let t = null == (n = g.JQ[C]) ? true : n.next;

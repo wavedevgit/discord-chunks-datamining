@@ -1,7 +1,7 @@
 /** Chunk was on 79589 **/
 /** chunk id: 240781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => w
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -34,10 +34,10 @@ let P = [{
     avatarSize: Chunk481060.EFr.SIZE_32,
     showStatus: true
   }],
-  y = e => {
+  O = e => {
     let {
       purchase: t
-    } = e, n = (0, o.e7)([h.default], () => h.default.locale), i = (0, d.qS)(t), a = null != t.expiresAt ? (0, v.TD)(Date.now(), t.expiresAt) : null, l = (0, m.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
+    } = e, n = (0, o.e7)([h.default], () => h.default.locale), i = (0, d.qS)(t), a = null != t.expiresAt ? (0, f.TD)(Date.now(), t.expiresAt) : null, l = (0, m.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
       month: "long",
       year: "numeric"
     });
@@ -45,7 +45,7 @@ let P = [{
       className: j.purchaseInfo,
       children: [(0, r.jsx)(c.Text, {
         variant: "text-sm/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: l
       }), null != a && (0, r.jsx)(c.Text, {
         variant: "text-xxs/normal",
@@ -78,17 +78,17 @@ let P = [{
       })]
     })
   },
-  O = e => {
+  w = e => {
     let {
       user: t,
       guildId: n,
       avatarDecoration: a,
       className: h
-    } = e, v = (0, o.e7)([f.Z], () => f.Z.getStatus(t.id)), {
-      product: O,
-      purchase: w
-    } = (0, u.Z)(null == a ? true : a.skuId), C = x.ZP.canUseCollectibles(t), S = (0, d.qS)(w), I = (0, d.G1)(O), E = !C && S, A = (0, p.M)(!I || C), T = (0, m.kd)(O), _ = i.useMemo(() => E ? b.intl.string(b.t["7vkeu5"]) : (0, s.EQ)([I, C, A]).with([true, true, false], () => b.intl.string(b.t.hmyYK8)).with([true, false, true], () => b.intl.string(b.t.q0PlFn)).with([true, false, false], () => b.intl.string(b.t["0xs2sA"])).otherwise(() => b.intl.string(b.t.fEGjVQ)), [E, I, C, A]);
-    return null != O && (null == w || E) ? (0, r.jsxs)("div", {
+    } = e, f = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id)), {
+      product: w,
+      purchase: y
+    } = (0, u.Z)(null == a ? true : a.skuId), C = v.ZP.canUseCollectibles(t), S = (0, d.qS)(y), I = (0, d.G1)(w), E = !C && S, A = (0, p.M)(!I || C), T = (0, m.kd)(w), _ = i.useMemo(() => E ? b.intl.string(b.t["7vkeu5"]) : (0, s.EQ)([I, C, A]).with([true, true, false], () => b.intl.string(b.t.hmyYK8)).with([true, false, true], () => b.intl.string(b.t.q0PlFn)).with([true, false, false], () => b.intl.string(b.t["0xs2sA"])).otherwise(() => b.intl.string(b.t.fEGjVQ)), [E, I, C, A]);
+    return null != w && (null == y || E) ? (0, r.jsxs)("div", {
       className: l()(j.modalPreview, j.shopPreviewContainer, h),
       children: [(0, r.jsx)("div", {
         className: j.shopPreviewBanner,
@@ -132,14 +132,14 @@ let P = [{
                 guildId: n,
                 avatarSize: i,
                 avatarDecorationOverride: a,
-                status: l ? v : true,
+                status: l ? f : true,
                 "aria-hidden": true
               })
             }, "".concat(i).concat(l))
           })
         })]
-      }), null != w && (0, r.jsx)(y, {
-        purchase: w
+      }), null != y && (0, r.jsx)(O, {
+        purchase: y
       })]
     })
   }

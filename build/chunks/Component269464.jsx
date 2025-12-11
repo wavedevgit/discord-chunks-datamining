@@ -2,7 +2,7 @@
 /** chunk id: 269464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  O: () => b
+  O: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk676157 = require("./676157.js");
 
-function b(e) {
+function p(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.features.has(d.GuildFeatures.BANNER), h = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = b && n, {
+  } = e, p = t.features.has(d.GuildFeatures.BANNER), h = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = p && n, {
     analyticsLocations: j
   } = (0, a.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
@@ -42,10 +42,10 @@ function b(e) {
     }, h) : null,
     disabled: !x,
     onChange: v,
-    hint: f.intl.string(f.t.uPvxqJ),
+    hint: m.intl.string(m.t.uPvxqJ),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: g.pC.GUILD_BANNER,
-      maxFileSizeBytes: m.B,
+      maxFileSizeBytes: f.B,
       onComplete: e => {
         let {
           imageUri: t,
@@ -61,10 +61,10 @@ function b(e) {
     }),
     enabled: x
   });
-  return b ? C : (0, r.jsx)(l.P3F, {
+  return p ? C : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: p.upsell,
+    className: b.upsell,
     onClick: O,
     children: C
   })

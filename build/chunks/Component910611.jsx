@@ -55,7 +55,7 @@ function L(e) {
       className: R.linkedLobbyEducationTooltip,
       children: [(0, i.jsx)(u.Text, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: M.intl.string(M.t.YIVr4B)
       }), (0, i.jsx)(u.Text, {
         variant: "text-sm/medium",
@@ -83,7 +83,7 @@ function L(e) {
       children: [r, (0, i.jsxs)(u.Text, {
         className: R.linkedLobby,
         variant: "text-sm/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: ["•", (0, i.jsx)("img", {
           alt: "",
           src: p,

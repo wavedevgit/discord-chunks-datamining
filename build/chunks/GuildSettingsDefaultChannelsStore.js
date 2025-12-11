@@ -4,7 +4,7 @@ require.d(exports, {
   Z: () => I
 }), require("./388685.js"), require("./642613.js");
 var l, i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk45966 = require("./45966.js"),
@@ -25,7 +25,7 @@ class N extends(l = Chunk442837.ZP.Store) {
     if (null == g) returnfalse;
     let e = Chunk45966.Z.getDefaultChannelIds(g).sort(),
       t = Array.from(f).sort();
-    return !a().isEqual(module, exports)
+    return !s().isEqual(module, exports)
   }
   get guildId() {
     return g

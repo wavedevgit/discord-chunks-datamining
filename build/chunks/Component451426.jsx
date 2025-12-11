@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
 /** chunk id: 451426, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => h
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk210097 = require("./210097.js"),
   Chunk420418 = require("./420418.js");
 
-function N(n) {
+function h(n) {
   let {
     className: t,
     isDsaEligible: e,
-    onClose: N,
+    onClose: h,
     onNext: C,
     onBack: j
   } = n, _ = (0, s.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
@@ -44,21 +44,21 @@ function N(n) {
     children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
       direction: o.Z.Direction.VERTICAL,
-      className: h.header,
+      className: N.header,
       separator: false,
       children: [(0, i.jsx)(l.Heading, {
-        className: h.title,
+        className: N.title,
         variant: "heading-xl/semibold",
         children: u.intl.string(u.t["C5q+pW"])
       }), (0, i.jsx)(l.Text, {
-        className: h.subtitle,
+        className: N.subtitle,
         color: "text-default",
         variant: "text-md/normal",
         children: u.intl.string(u.t["G2g/g5"])
-      }), null != N && (0, i.jsx)(l.olH, {
+      }), null != h && (0, i.jsx)(l.olH, {
         "data-migration-pending": true,
-        className: h.closeButton,
-        onClick: N
+        className: N.closeButton,
+        onClick: h
       })]
     }), (0, i.jsxs)(l.hzk, {
       "data-migration-pending": true,
@@ -91,7 +91,7 @@ function N(n) {
           onChange: L
         })
       }), (0, i.jsx)("div", {
-        className: h.policyContainer,
+        className: N.policyContainer,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/semibold",
           children: I

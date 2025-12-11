@@ -40,9 +40,9 @@ var Chunk98405 = require("./98405.js"),
   U = Chunk199838.getterFor(j),
   G = Chunk242606("fetch"),
   Z = Chunk242606("Request"),
-  B = Chunk242606("Headers"),
-  F = Z && Z.prototype,
-  V = B && B.prototype,
+  F = Chunk242606("Headers"),
+  B = Z && Z.prototype,
+  V = F && F.prototype,
   H = Chunk127849.TypeError,
   Y = Chunk127849.encodeURIComponent,
   W = String.fromCharCode,
@@ -296,13 +296,13 @@ if (Chunk477732(eE, {
     forced: !Chunk394227
   }, {
     URLSearchParams: eg
-  }), !Chunk394227 && Chunk880181(B)) {
+  }), !Chunk394227 && Chunk880181(F)) {
   var eb = Chunk46015(V.has),
     ey = Chunk46015(V.set),
     eO = function(e) {
       if (S(e)) {
         var t, n = e.body;
-        if (O(n) === L) return eb(t = e.headers ? new B(e.headers) : new B, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), T(e, {
+        if (O(n) === L) return eb(t = e.headers ? new F(e.headers) : new F, "content-type") || ey(t, "content-type", "application/x-www-form-urlencoded;charset=UTF-8"), T(e, {
           body: C(0, I(n)),
           headers: C(0, t)
         })
@@ -320,9 +320,9 @@ if (Chunk477732(eE, {
       }
     }), Chunk880181(Z)) {
     var ev = function(e) {
-      return g(this, F), new Z(e, arguments.length > 1 ? eO(arguments[1]) : {})
+      return g(this, B), new Z(e, arguments.length > 1 ? eO(arguments[1]) : {})
     };
-    F.constructor = ev, ev.prototype = F, Chunk98405({
+    B.constructor = ev, ev.prototype = B, Chunk98405({
       global: true,
       constructor: true,
       dontCallGetSet: true,

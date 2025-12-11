@@ -94,7 +94,7 @@ function Z(e) {
       }), (0, n.jsx)(l.X6q, {
         className: S.header,
         variant: "display-md",
-        color: "header-primary",
+        color: "text-strong",
         children: O.intl.string(O.t.QWljxE)
       }), (0, n.jsxs)("div", {
         className: S.nameplatePreviewContainer,
@@ -121,8 +121,8 @@ function Z(e) {
         })]
       }), (0, n.jsx)("div", {
         className: S.textContainer,
-        children: O.intl.format(r ? x.default.axh0pl : x.default["+KAArL"], {
-          premiumGroupProductName: (0, h.sO)(),
+        children: O.intl.format(r ? h.default.axh0pl : h.default["+KAArL"], {
+          premiumGroupProductName: (0, x.sO)(),
           primaryName: a
         })
       }), (0, n.jsx)("div", {
@@ -130,7 +130,7 @@ function Z(e) {
         children: (0, n.jsx)(c.zxk, {
           variant: "primary",
           fullWidth: true,
-          text: O.intl.string(x.default.EL9m2H),
+          text: O.intl.string(h.default.EL9m2H),
           onClick: () => {
             t(), (0, b.uL)(j.Z5c.APPLICATION_STORE)
           }
@@ -150,7 +150,7 @@ function G(e) {
     currentUser: c,
     setError: f
   } = e, d = T(e, ["setModalState", "onClose", "premiumGroupSubscriptionId", "isExistingSub", "premiumGroupPrimaryName", "currentUser", "setError"]);
-  let m = (0, h.sO)(),
+  let m = (0, x.sO)(),
     [p, b] = (0, a.useState)(false),
     g = async () => {
       b(true);
@@ -172,22 +172,22 @@ function G(e) {
       src: k.Z,
       type: "image"
     },
-    title: O.intl.formatToPlainString(o ? x.default["0Yxz12"] : x.default.UjA5k8, {
+    title: O.intl.formatToPlainString(o ? h.default["0Yxz12"] : h.default.UjA5k8, {
       premiumGroupProductName: m
     }),
-    subtitle: O.intl.format(o ? x.default.YjSsdH : x.default.qkFeBP, {
+    subtitle: O.intl.format(o ? h.default.YjSsdH : h.default.qkFeBP, {
       premiumGroupProductName: m,
-      cooldownMonths: h.T9,
+      cooldownMonths: x.T9,
       primaryName: s
     }),
     actions: [{
-      text: O.intl.string(x.default["IO+nlU"]),
+      text: O.intl.string(h.default["IO+nlU"]),
       onClick: () => {
-        (0, u.Z)(h.j3)
+        (0, u.Z)(x.j3)
       },
       variant: "secondary"
     }, {
-      text: O.intl.string(x.default.odQeh3),
+      text: O.intl.string(h.default.odQeh3),
       onClick: g,
       variant: "expressive",
       icon: l.SrA,
@@ -202,45 +202,45 @@ function U(e) {
     error: a,
     onClose: i
   } = e, o = T(e, ["error", "onClose"]);
-  let s = (0, h.sO)();
+  let s = (0, x.sO)();
   switch (a) {
     case 1:
-      t = O.intl.formatToPlainString(x.default["wMo6/n"], {
+      t = O.intl.formatToPlainString(h.default["wMo6/n"], {
         premiumGroupProductName: s
-      }), r = O.intl.formatToPlainString(x.default.C08r8L, {
+      }), r = O.intl.formatToPlainString(h.default.C08r8L, {
         premiumGroupProductName: s,
-        cooldownMonths: h.T9
+        cooldownMonths: x.T9
       });
       break;
     case 2:
-      t = O.intl.formatToPlainString(x.default["Um4ml+"], {
+      t = O.intl.formatToPlainString(h.default["Um4ml+"], {
         premiumGroupProductName: s
-      }), r = O.intl.string(x.default.Fm8iss);
+      }), r = O.intl.string(h.default.Fm8iss);
       break;
     case 3:
-      t = O.intl.string(x.default.yGTLxP), r = O.intl.formatToPlainString(x.default["7/qtoL"], {
+      t = O.intl.string(h.default.yGTLxP), r = O.intl.formatToPlainString(h.default["7/qtoL"], {
         premiumGroupProductName: s
       });
       break;
     case 4:
-      t = O.intl.formatToPlainString(x.default["S+UfpQ"], {
+      t = O.intl.formatToPlainString(h.default["S+UfpQ"], {
         premiumGroupProductName: s
-      }), r = O.intl.formatToPlainString(x.default.AKYhx6, {
+      }), r = O.intl.formatToPlainString(h.default.AKYhx6, {
         premiumGroupProductName: s,
-        countryName: (0, h.sf)()
+        countryName: (0, x.sf)()
       });
       break;
     case 5:
-      t = O.intl.formatToPlainString(x.default.anKEqI, {
+      t = O.intl.formatToPlainString(h.default.anKEqI, {
         premiumGroupProductName: s
-      }), r = O.intl.formatToPlainString(x.default["67BbUf"], {
+      }), r = O.intl.formatToPlainString(h.default["67BbUf"], {
         premiumGroupProductName: s
       });
       break;
     default:
-      t = O.intl.formatToPlainString(x.default["Kpg/uU"], {
+      t = O.intl.formatToPlainString(h.default["Kpg/uU"], {
         premiumGroupProductName: s
-      }), r = O.intl.formatToPlainString(x.default.GrEzlX, {
+      }), r = O.intl.formatToPlainString(h.default.GrEzlX, {
         premiumGroupProductName: s
       })
   }
@@ -250,10 +250,10 @@ function U(e) {
     subtitle: r,
     onClose: i,
     actions: [{
-      text: O.intl.string(x.default["IO+nlU"]),
+      text: O.intl.string(h.default["IO+nlU"]),
       variant: "secondary",
       onClick: () => {
-        (0, u.Z)(h.j3)
+        (0, u.Z)(x.j3)
       }
     }]
   }, o))

@@ -15,7 +15,7 @@ function s(e, t, n) {
     isLoading: c,
     error: d,
     highlightedCreatorDetails: u
-  } = (0, l.Z)(e), g = null == u ? true : u.store_page, m = r.useMemo(() => {
+  } = (0, l.Z)(e), g = null == u ? true : u.store_page, f = r.useMemo(() => {
     var e, t;
     let n = function(e) {
         let t = new Set;
@@ -28,21 +28,21 @@ function s(e, t, n) {
       }(null == g || null == (e = g.role_subscription) ? true : e.group_listings),
       r = null == g || null == (t = g.role_subscription) ? true : t.benefit_emojis;
     return null == r ? true : r.filter(e => e.roles.some(e => n.has(e)))
-  }, [null == g ? true : g.role_subscription]), f = null == g ? true : g.guild.icon_hash, p = i.ZP.getGuildIconURL({
+  }, [null == g ? true : g.role_subscription]), m = null == g ? true : g.guild.icon_hash, b = i.ZP.getGuildIconURL({
     id: e,
-    icon: f,
+    icon: m,
     size: n
-  }), b = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), h = null != m && m.length > t ? m.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, v = null == g || null == (s = g.guild) ? true : s.name, O = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, C = !c && null != v && null != f && null != p;
+  }), p = r.useMemo(() => null != f && f.length > t ? f.slice(0, t) : f, [f, t]), h = null != f && f.length > t ? f.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, v = null == g || null == (s = g.guild) ? true : s.name, O = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, C = !c && null != v && null != m && null != b;
   return C ? {
     hasAllImperativeDetails: C,
     isLoading: c,
     details: {
       guildName: v,
-      guildIcon: f,
-      guildAvatarUrl: p,
+      guildIcon: m,
+      guildAvatarUrl: b,
       storePageUrl: j,
       subscriberCount: O,
-      emojisToShow: b,
+      emojisToShow: p,
       notShownEmojiCount: h
     }
   } : {

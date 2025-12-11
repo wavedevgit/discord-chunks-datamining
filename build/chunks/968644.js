@@ -30,17 +30,17 @@ function m(e) {
     selectedRoleIds: m,
     selectedChannelIds: p,
     itemHook: h
-  } = e, f = null == t ? true : t.id, g = (0, l.Wu)([o.Z], () => null != f ? o.Z.getManyRoles(f, m) : [], [f, m]), j = (0, l.Wu)([r.Z, c.default, a.Z], () => Array.from(p).map(e => r.Z.getChannel(e)).filter(s.lm).map(e => (0, i.F6)(e, c.default, a.Z, true))), v = g.map(e => "@".concat(e.name)), x = (null == n ? true : n.singleSelect) ? "" : u.intl.string(u.t.JshhEl), y = "";
-  if (0 === j.length && v.length > 0) x = d(v, h);
-  else j.length > 0 && (x = 0 === j.length ? "" : u.intl.format(u.t.Rj841R, {
+  } = e, f = null == t ? true : t.id, g = (0, l.Wu)([o.Z], () => null != f ? o.Z.getManyRoles(f, m) : [], [f, m]), j = (0, l.Wu)([r.Z, c.default, a.Z], () => Array.from(p).map(e => r.Z.getChannel(e)).filter(s.lm).map(e => (0, i.F6)(e, c.default, a.Z, true))), x = g.map(e => "@".concat(e.name)), v = (null == n ? true : n.singleSelect) ? "" : u.intl.string(u.t.JshhEl), y = "";
+  if (0 === j.length && x.length > 0) v = d(x, h);
+  else j.length > 0 && (v = 0 === j.length ? "" : u.intl.format(u.t.Rj841R, {
     count: j.length,
     extraCount: Math.max(j.length - 2, 0),
     channel1: j[0],
     channel2: j[1],
     itemHook: h
-  }), v.length > 0 && (y = d(v, h, true)));
+  }), x.length > 0 && (y = d(x, h, true)));
   return {
-    helpText: x,
+    helpText: v,
     helpTextAdditional: y
   }
 }
@@ -52,20 +52,20 @@ function p(e) {
     selectedRoleIds: d,
     selectedChannelIds: m,
     itemHook: p
-  } = e, h = null == t ? true : t.id, f = (0, l.Wu)([o.Z], () => null != h ? o.Z.getManyRoles(h, d) : [], [h, d]), g = (0, l.Wu)([r.Z, c.default, a.Z], () => Array.from(m).map(e => r.Z.getChannel(e)).filter(s.lm).map(e => (0, i.F6)(e, c.default, a.Z, true))), j = f.map(e => "@".concat(e.name)), v = (null == n ? true : n.singleSelect) ? "" : u.intl.string(u.t.JshhEl);
-  return 0 === g.length && j.length > 0 ? v = u.intl.format(u.t.vdtNYa, {
+  } = e, h = null == t ? true : t.id, f = (0, l.Wu)([o.Z], () => null != h ? o.Z.getManyRoles(h, d) : [], [h, d]), g = (0, l.Wu)([r.Z, c.default, a.Z], () => Array.from(m).map(e => r.Z.getChannel(e)).filter(s.lm).map(e => (0, i.F6)(e, c.default, a.Z, true))), j = f.map(e => "@".concat(e.name)), x = (null == n ? true : n.singleSelect) ? "" : u.intl.string(u.t.JshhEl);
+  return 0 === g.length && j.length > 0 ? x = u.intl.format(u.t.vdtNYa, {
     count: j.length,
     extraCount: Math.max(j.length - 2, 0),
     role1: j[0],
     role2: j[1],
     itemHook: p
-  }) : g.length > 0 && 0 === j.length ? v = u.intl.format(u.t.ZKywGU, {
+  }) : g.length > 0 && 0 === j.length ? x = u.intl.format(u.t.ZKywGU, {
     count: g.length,
     extraCount: Math.max(g.length - 2, 0),
     channel1: g[0],
     channel2: g[1],
     itemHook: p
-  }) : g.length > 0 && j.length > 0 && (v = u.intl.format(u.t.WewRHM, {
+  }) : g.length > 0 && j.length > 0 && (x = u.intl.format(u.t.WewRHM, {
     channelCount: g.length,
     extraChannelCount: Math.max(g.length - 2, 0),
     channel1: g[0],
@@ -76,7 +76,7 @@ function p(e) {
     role1: j[0],
     role2: j[1]
   })), {
-    helpText: v,
+    helpText: x,
     helpTextAdditional: ""
   }
 }

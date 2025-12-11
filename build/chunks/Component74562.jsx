@@ -37,7 +37,7 @@ function p(e) {
         })
       })
     }), (0, r.jsx)(l.Heading, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "heading-xl/semibold",
       className: g.title,
       children: d.intl.string(d.t["WgZ+3D"])

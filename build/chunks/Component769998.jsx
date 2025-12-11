@@ -2,7 +2,7 @@
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,15 +18,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk239244 = require("./239244.js");
 
-function p(e) {
+function b(e) {
   var t;
   let {
     action: n,
-    triggerType: p,
-    guildId: b,
+    triggerType: b,
+    guildId: p,
     toggled: h,
     onToggleAction: x
-  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, p), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(b)), [b]);
+  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, b), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(p)), [p]);
   if (null == v) return null;
   let {
     headerText: N,
@@ -34,16 +34,16 @@ function p(e) {
     icon: I
   } = v;
   return (0, r.jsxs)("div", {
-    className: f.actionContainer,
+    className: m.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: f.actionIconContainer,
+      className: m.actionIconContainer,
       children: (0, r.jsx)(I, {
         size: "md",
         color: "currentColor",
-        className: f.actionIcon
+        className: m.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: f.actionTextContainer,
+      className: m.actionTextContainer,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
         children: N
@@ -54,21 +54,21 @@ function p(e) {
       }), h && (0, r.jsxs)(a.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: [null === C ? null : p === d.fX.MENTION_SPAM ? m.intl.format(m.t.i3lsKD, {
+        children: [null === C ? null : b === d.fX.MENTION_SPAM ? f.intl.format(f.t.i3lsKD, {
           friendlyDurationString: C
-        }) : m.intl.format(m.t.mvHxze, {
+        }) : f.intl.format(f.t.mvHxze, {
           friendlyDurationString: C
         }), y && (0, r.jsx)(a.P3F, {
           onClick: j(true),
-          className: f.editChannel,
+          className: m.editChannel,
           tag: "span",
           role: "link",
-          children: m.intl.string(m.t["0B95RJ"])
+          children: f.intl.string(f.t["0B95RJ"])
         })]
       })]
     }), (0, r.jsx)(l.u, {
-      text: m.intl.format(m.t.wx6Vb9, {}),
-      "aria-label": m.intl.formatToMarkdownString(m.t.wx6Vb9, {}),
+      text: f.intl.format(f.t.wx6Vb9, {}),
+      "aria-label": f.intl.formatToMarkdownString(f.t.wx6Vb9, {}),
       shouldShow: !y,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.P3F, {

@@ -62,11 +62,11 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       let t = "function" == typeof v ? v(e) : v;
       return null == t ? 0 : t
     }, [v]),
-    B = i.useCallback(e => {
+    F = i.useCallback(e => {
       let t = "function" == typeof y ? y(e) : y;
       return null == t ? 0 : t
     }, [y]),
-    F = i.useRef([]),
+    B = i.useRef([]),
     V = i.useRef([]),
     {
       totalHeight: H,
@@ -101,15 +101,15 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
             offset: a
           }, r = n, e++
         }
-        r += Z(o) + B(o), a[o].offset.bottom = r
+        r += Z(o) + F(o), a[o].offset.bottom = r
       }
       return {
         totalHeight: r += d[2],
         rowDescriptors: i,
         sectionDescriptors: a
       }
-    }, [U, Z, G, B, d, g, E, k]);
-  F.current = W, V.current = Y;
+    }, [U, Z, G, F, d, g, E, k]);
+  B.current = W, V.current = Y;
   let K = i.useCallback(() => {
     var e;
     let t = null == (e = L.current) ? true : e.getScrollerNode();
@@ -196,7 +196,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
           animate: n = false,
           offset: r = 0
         } = t,
-        i = F.current[e],
+        i = B.current[e],
         a = u(L);
       null != i && null != a && a.requestAnimationFrame(() => {
         var t;
@@ -210,7 +210,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       height: D,
       totalHeight: H
     }),
-    getSectionDescriptors: () => F.current,
+    getSectionDescriptors: () => B.current,
     getRowDescriptors: () => V.current,
     getScrollerNode: () => {
       var e;
@@ -249,7 +249,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       if (0 === c) continue;
       let u = G(a),
         d = Z(a),
-        h = B(a);
+        h = F(a);
       if (l <= e) r = l;
       else if (l > e && s < t) {
         n = o;
@@ -279,7 +279,7 @@ let d = Chunk473749.memo(Chunk473749.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, Z, G, B, d, f, p, m, _, R, W, I, h, k, D]), X = i.useMemo(() => {
+  }, [U, Z, G, F, d, f, p, m, _, R, W, I, h, k, D]), X = i.useMemo(() => {
     var e, t, n;
     return {
       top: Q,

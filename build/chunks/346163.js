@@ -2,7 +2,7 @@
 /** chunk id: 346163, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
@@ -18,10 +18,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function p(e) {
   let t, n = (0, c.Ob)(e),
-    b = null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
-    h = null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE),
+    p = null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
+    h = null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE),
     x = (0, i.e7)([s.default], () => {
       let t = s.default.getCurrentUser();
       return null != e && (0, a.eM)(e, t)
@@ -42,27 +42,27 @@ function b(e) {
       isApplicationRejected: S,
       requestCooldownDuration: _
     } = (0, g.Z)(I),
-    T = (null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(f.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) === true,
+    T = (null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(m.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) === true,
     {
       isMonetizationReapplicationDisabled: P
     } = (0, l.eC)(null == e ? true : e.id),
     w = C || (null == I ? true : I.isApplicationPending) === true,
     Z = (null == I ? true : I.canApply) === true,
-    R = p.intl.format(p.t.aJUdOi, {
-      faqUrl: o.Z.getArticleURL(f.BhN.CREATOR_FAQ)
+    R = b.intl.format(b.t.aJUdOi, {
+      faqUrl: o.Z.getArticleURL(m.BhN.CREATOR_FAQ)
     });
-  S && P ? t = true === b ? p.intl.format(p.t["0o1Q+t"], {
-    communityGuidelineUrl: f.EYA.GUIDELINES
-  }) : p.intl.format(p.t.b6h59n, {
-    communityGuidelineUrl: f.EYA.GUIDELINES
-  }) : S && null != _ && (t = p.intl.format(p.t.TvX207, {
+  S && P ? t = true === p ? b.intl.format(b.t["0o1Q+t"], {
+    communityGuidelineUrl: m.EYA.GUIDELINES
+  }) : b.intl.format(b.t.b6h59n, {
+    communityGuidelineUrl: m.EYA.GUIDELINES
+  }) : S && null != _ && (t = b.intl.format(b.t.TvX207, {
     requestCooldownDuration: _,
-    creatorRevenuePolicyUrl: o.Z.getArticleURL(f.BhN.CREATOR_POLICY)
+    creatorRevenuePolicyUrl: o.Z.getArticleURL(m.BhN.CREATOR_POLICY)
   }));
   let D = n && x && false === h,
-    A = n && false === b,
-    L = (0, m.f)(),
-    k = S && Z && x ? p.intl.format(p.t.wbVIUB, {}) : true;
+    A = n && false === p,
+    L = (0, f.f)(),
+    k = S && Z && x ? b.intl.format(b.t.wbVIUB, {}) : true;
   return r.useEffect(() => {
     D && E()
   }, [E, D]), {

@@ -2,7 +2,7 @@
 /** chunk id: 594278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,14 +14,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk81543 = require("./81543.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk248803 = require("./248803.js");
-let m = function(e) {
+let f = function(e) {
   let {
     items: t,
     carouselClassName: n,
     paginationCaretClassName: l,
-    intervalBetweenAutomaticItemRotations: m,
-    renderItem: f
-  } = e, p = i.useMemo(() => new s.Xp, []), [b, h] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [v, O] = i.useState(false), [C, y] = i.useState(false), N = i.useCallback((e, t) => {
+    intervalBetweenAutomaticItemRotations: f,
+    renderItem: m
+  } = e, b = i.useMemo(() => new s.Xp, []), [p, h] = i.useState(d.n.LEFT), [x, j] = i.useState(0), [v, O] = i.useState(false), [C, y] = i.useState(false), N = i.useCallback((e, t) => {
     j(n => {
       let r = n + t;
       return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
@@ -32,8 +32,8 @@ let m = function(e) {
     C || N(t, false)
   }, [N, t, C]);
   return i.useEffect(() => {
-    null != m && (v ? v && p.stop() : p.start(m, E))
-  }, [v, p, m, E]), (0, r.jsxs)("div", {
+    null != f && (v ? v && b.stop() : b.start(f, E))
+  }, [v, b, f, E]), (0, r.jsxs)("div", {
     className: g.root,
     onMouseEnter: () => O(true),
     onMouseLeave: () => O(false),
@@ -50,11 +50,11 @@ let m = function(e) {
       })
     }), (0, r.jsx)(d.Z, {
       step: x,
-      direction: b,
+      direction: p,
       onAnimationStart: () => y(true),
       onAnimationEnd: () => y(false),
       className: a()(g.carousel, n),
-      children: f(t[x])
+      children: m(t[x])
     }), (0, r.jsx)(o.P3F, {
       className: a()(g.carouselCaret, l),
       onClick: E,

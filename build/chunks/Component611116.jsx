@@ -71,7 +71,7 @@ function g(e) {
     children: [(0, r.jsx)(s.Heading, {
       className: E.bentoSectionHeader,
       variant: "display-md",
-      color: "header-primary",
+      color: "text-strong",
       children: i
     }), (0, r.jsx)("div", {
       className: E.bentoBoxesGrid,

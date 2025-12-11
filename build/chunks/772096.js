@@ -189,15 +189,15 @@ let R = g(m({}, l().defaultRules.link), {
       G = C(t(y, L), k);
     if (null == U || null == G || 0 === A(U).trim().length) return u();
     let Z = i().pick(t.rules, j),
-      B = l().parserFor(Z)(p.whitespaceSanitized, L),
-      F = _.whitespaceSanitized,
+      F = l().parserFor(Z)(p.whitespaceSanitized, L),
+      B = _.whitespaceSanitized,
       {
         target: V
       } = w;
     return {
-      content: B,
+      content: F,
       target: V,
-      title: F
+      title: B
     }
   }
 })

@@ -65,7 +65,7 @@ let v = () => (0, Chunk45521.f)(false),
           alt: b.intl.string(b.t.do7AoM)
         }), (0, r.jsx)(s.Text, {
           className: y.upsellTitle,
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-lg/semibold",
           children: b.intl.string(b.t.jJG1pl)
         }), (0, r.jsx)(s.Text, {

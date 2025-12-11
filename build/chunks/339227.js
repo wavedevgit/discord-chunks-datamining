@@ -335,8 +335,8 @@ function G(e, t, n) {
       type: "paragraph",
       content: a(l, true, i)
     };
-  F(r, l, c, 0, []);
-  let u = B(r);
+  B(r, l, c, 0, []);
+  let u = F(r);
   return o.set(e, u), u
 }
 
@@ -370,7 +370,7 @@ function Z(e, t) {
   return s
 }
 
-function B(e) {
+function F(e) {
   if (0 === (e = e.filter(e => e.text.length > 0)).length) return e;
   let t = [e[0]];
   for (let n = 1; n < e.length; n++) {
@@ -382,7 +382,7 @@ function B(e) {
   return t
 }
 
-function F(e, t, n, r, a) {
+function B(e, t, n, r, a) {
   let {
     content: o,
     type: s,
@@ -564,7 +564,7 @@ function H(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = F(e, t, n, r, i)
+    r = B(e, t, n, r, i)
   })), K(t, r)
 }
 

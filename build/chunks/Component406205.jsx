@@ -76,7 +76,7 @@ function O(e) {
         children: [(0, i.jsxs)("div", {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: b.intl.string(b.t.Tqd1Af)
           }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
@@ -86,7 +86,7 @@ function O(e) {
         }), (0, i.jsxs)("div", {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: b.intl.string(b.t["1m22ZB"])
           }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",

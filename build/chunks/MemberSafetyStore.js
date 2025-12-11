@@ -213,7 +213,7 @@ function Z(e) {
   return U(e)
 }
 
-function B(e) {
+function F(e) {
   let {
     guildMembers: t
   } = e, n = false;
@@ -223,7 +223,7 @@ function B(e) {
   }), n
 }
 
-function F(e) {
+function B(e) {
   let {
     guildId: t,
     members: n
@@ -401,8 +401,8 @@ g(X, "displayName", "MemberSafetyStore");
 let J = new X(Chunk570140.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: Z,
-  LOCAL_MESSAGES_LOADED: F,
-  CACHE_LOADED: B,
+  LOCAL_MESSAGES_LOADED: B,
+  CACHE_LOADED: F,
   PASSIVE_UPDATE_V2: V,
   GUILD_CREATE: S,
   GUILD_DELETE: I,

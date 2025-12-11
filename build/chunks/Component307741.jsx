@@ -86,7 +86,7 @@ function S(e) {
     className: y.headingContainer,
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-lg/bold",
-      color: "header-primary",
+      color: "text-strong",
       children: l
     }), (0, r.jsx)(s.xvT, {
       variant: "text-xs/medium",

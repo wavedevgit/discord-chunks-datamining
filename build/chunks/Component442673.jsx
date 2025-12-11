@@ -17,28 +17,28 @@ let u = e => {
     otherUser: r,
     transitionState: u,
     onClose: f
-  } = e, b = i.useCallback(() => {
+  } = e, b = o.useCallback(() => {
     f()
-  }, [f]), p = t.nsfwAllowed, [h, j] = i.useState(false), [g, y] = i.useState(false), x = i.useCallback(() => {
-    y(true), j(false)
+  }, [f]), p = t.nsfwAllowed, [h, j] = o.useState(false), [g, x] = o.useState(false), y = o.useCallback(() => {
+    x(true), j(false)
   }, []), {
     disconnectLinkRequest: O,
     isDisconnectLoading: m
-  } = (0, o.G)({
+  } = (0, i.G)({
     onSuccess: b,
-    onError: x
+    onError: y
   });
   return (0, n.jsxs)(c.IX, {
     transitionState: u,
     onClose: f,
     children: [g && (0, n.jsx)(c.M14, {
       type: "critical",
-      children: s.intl.string(a.default.krIDdy)
+      children: a.intl.string(s.default.krIDdy)
     }), (0, n.jsxs)(c.fef, {
       children: [(0, n.jsx)(l.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: s.intl.formatToPlainString(a.default["NMSTb/"], {
+        header: a.intl.formatToPlainString(s.default["NMSTb/"], {
           isAdult: String(p)
         }),
         icon: (0, n.jsx)(c.Dio, {
@@ -49,27 +49,27 @@ let u = e => {
       }), (0, n.jsxs)(c.Kqy, {
         gap: 16,
         children: [(0, n.jsx)(l.Z.Notice, {
-          notice: p ? s.intl.string(a.default.EvMGLT) : s.intl.string(a.default.f1SUeW)
+          notice: p ? a.intl.string(s.default.EvMGLT) : a.intl.string(s.default.f1SUeW)
         }), (0, n.jsx)(c.Checkbox, {
           checked: h,
           onChange: e => {
-            j(e), y(false)
+            j(e), x(false)
           },
-          label: p ? s.intl.string(a.default["/MYCee"]) : s.intl.string(a.default.VJaHUb)
+          label: p ? a.intl.string(s.default["/MYCee"]) : a.intl.string(s.default.VJaHUb)
         })]
       })]
     }), (0, n.jsx)(c.Go$, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: s.intl.string(s.t["ETE/oC"]),
+        text: a.intl.string(a.t["ETE/oC"]),
         onClick: f,
         disabled: m
       }, {
         variant: "critical-primary",
-        text: s.intl.string(a.default["c5L+sl"]),
+        text: a.intl.string(s.default["c5L+sl"]),
         onClick: () => {
-          y(false), O(r.id)
+          x(false), O(r.id)
         },
         disabled: !h || m,
         loading: m

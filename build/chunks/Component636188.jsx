@@ -231,7 +231,7 @@ function Z() {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     onClick: t,
     tooltipText: n,
@@ -277,7 +277,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     onClick: t
   } = e, n = (0, d.O)(), {
@@ -289,7 +289,7 @@ function F(e) {
       location: n.location,
       location_stack: i
     })
-  }), (0, r.jsx)(B, {
+  }), (0, r.jsx)(F, {
     onClick: t,
     tooltipText: N.intl.string(N.t["IqE0T/"])
   })
@@ -329,7 +329,7 @@ function V(e) {
       contextKey: a
     })
   }
-  return (0, r.jsx)(B, {
+  return (0, r.jsx)(F, {
     disabled: i,
     onClick: l,
     tooltipText: o
@@ -368,7 +368,7 @@ function H(e) {
       }), t ? (0, r.jsx)(V, {
         onAddBackgroundImage: d,
         disabled: h
-      }) : (0, r.jsx)(F, {
+      }) : (0, r.jsx)(B, {
         onClick: u
       }), m.map(e => {
         let t = (0, b.rI)({

@@ -239,15 +239,15 @@ function S(e) {
           className: j.discordIcon
         }), (0, a.jsx)(c.Text, {
           variant: "text-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: p.intl.string(p.t.uvGmCx)
         }), (0, a.jsx)(c.Text, {
           variant: "text-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: "—"
         }), (0, a.jsx)(c.Heading, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: p.intl.string(b.default["95qQRB"])
         })]
       }), (0, a.jsx)(c.P3F, {

@@ -46,8 +46,8 @@ function L(e) {
       planGroup: U,
       openInvoiceId: G,
       analyticsData: Z,
-      analyticsLocation: B,
-      referralTrialOfferId: F,
+      analyticsLocation: F,
+      referralTrialOfferId: B,
       initialPlanId: V,
       subscriptionTier: H,
       handleClose: Y
@@ -93,9 +93,9 @@ function L(e) {
   o()(null != ec, "Step should be set");
   let eC = i.useRef(null),
     [eA, eN] = (0, l.Z)(false, x),
-    eP = null != (n = null != j ? j : F) ? n : null,
+    eP = null != (n = null != j ? j : B) ? n : null,
     eR = null != eP && (!ed || P.nG[eP].skus.includes(er)) ? eP : null,
-    ew = (0, f.N)(F),
+    ew = (0, f.N)(B),
     eD = (0, d.N)(),
     ex = {
       user_trial_offer_id: null == ew ? true : ew.id
@@ -118,8 +118,8 @@ function L(e) {
     ek = i.useRef(null),
     [eU, eG] = i.useState(null),
     eZ = !ev && null != ew && null != er && P.nG[ew.trial_id].skus.includes(er),
-    eB = null == eD || null == (t = eD.discount) ? true : t.plan_ids,
-    eF = !ev && null != eD && null != eB && null != en && eB.includes(en.id),
+    eF = null == eD || null == (t = eD.discount) ? true : t.plan_ids,
+    eB = !ev && null != eD && null != eF && null != en && eF.includes(en.id),
     eV = ev && (0, m.pO)(eI),
     eH = null == V && null == H && ep === R.GZ.SUBSCRIPTION,
     eY = (0, S.Kp)({
@@ -157,9 +157,9 @@ function L(e) {
     trialFooterMessageOverride: M,
     reviewWarningMessage: k,
     purchaseState: eu,
-    referralTrialOfferId: F,
+    referralTrialOfferId: B,
     isTrial: eZ || null != j && null != M,
-    isDiscount: eF,
+    isDiscount: eB,
     handleClose: Y
   })) : (o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.Z, {
     premiumSubscription: W,
@@ -204,7 +204,7 @@ function L(e) {
         flashLegalTerms: () => eN(true),
         invoiceError: eU,
         planError: eM,
-        analyticsLocation: B,
+        analyticsLocation: F,
         baseAnalyticsData: Z,
         flowStartTime: z.startTime,
         trialId: eR,

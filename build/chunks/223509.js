@@ -37,8 +37,8 @@ var r, i, Chunk754793 = require("./754793.js"),
   U = 15,
   G = 16,
   Z = 17,
-  B = 18,
-  F = 19,
+  F = 18,
+  B = 19,
   V = 20,
   H = 21,
   Y = 22,
@@ -280,8 +280,8 @@ function e_(e, t) {
         e.msg = "too many length or distance symbols", n.mode = $;
         break
       }
-      n.have = 0, n.mode = B;
-    case B:
+      n.have = 0, n.mode = F;
+    case F:
       for (; n.have < n.ncode;) {
         for (; es < 3;) {
           if (0 === er) break i;
@@ -296,8 +296,8 @@ function e_(e, t) {
         e.msg = "invalid code lengths set", n.mode = $;
         break
       }
-      n.have = 0, n.mode = F;
-    case F:
+      n.have = 0, n.mode = B;
+    case B:
       for (; n.have < n.nlen + n.ndist;) {
         for (; em = (eT = n.lencode[eo & (1 << n.lenbits) - 1]) >>> 24, eh = eT >>> 16 & 255, eg = 65535 & eT, !(em <= es);) {
           if (0 === er) break i;

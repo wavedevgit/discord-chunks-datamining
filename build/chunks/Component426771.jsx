@@ -53,22 +53,22 @@ function m(e) {
         cost: E,
         costDecorator: P
       }),
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(a.Text, {
         className: p.description,
         color: w,
         variant: "text-sm/medium",
         children: _.description
       })
     }), (0, r.jsx)(u.N4, {
-      children: (null == _ ? true : _.viewCtaTooltip) != null ? (0, r.jsx)(a.u, {
+      children: (null == _ ? true : _.viewCtaTooltip) != null ? (0, r.jsx)(o.u, {
         asContainer: true,
         text: _.viewCtaTooltip,
         delay: 100,
-        children: (0, r.jsx)(o.Button, {
+        children: (0, r.jsx)(a.Button, {
           text: _.viewCta,
           fullWidth: true
         })
-      }) : (0, r.jsx)(o.Button, {
+      }) : (0, r.jsx)(a.Button, {
         text: _.viewCta,
         fullWidth: true
       })

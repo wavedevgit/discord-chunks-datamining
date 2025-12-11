@@ -18,14 +18,14 @@ function c(e) {
     everyoneRole: c,
     otherRoles: d,
     setSelectedSection: u
-  } = e, [g, m] = i.useState(""), [f, p] = i.useState(o.Cl), b = g.trim(), h = i.useMemo(() => d.filter(e => (0, l.uo)(e, b)), [d, b]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
+  } = e, [g, f] = i.useState(""), [m, b] = i.useState(o.Cl), p = g.trim(), h = i.useMemo(() => d.filter(e => (0, l.uo)(e, p)), [d, p]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
     guild: n,
     everyoneRole: c,
     filteredRoles: h,
     setEditRoleId: t,
     query: g,
-    setQuery: m,
-    setHeaderHeight: p
+    setQuery: f,
+    setHeaderHeight: b
   }, "header"), [n, c, h, t, g]);
   return (0, r.jsx)(a.Z, {
     setEditRoleId: t,
@@ -34,7 +34,7 @@ function c(e) {
     otherRoles: d,
     setSelectedSection: u,
     renderHeader: x,
-    headerHeight: f,
+    headerHeight: m,
     query: g
   })
 }

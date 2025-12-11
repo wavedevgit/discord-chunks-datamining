@@ -35,7 +35,7 @@ function h(e) {
       analyticsLocations: j,
       analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: g.qAy.UPLOAD_IMAGE,
-      perks: (0, m.o9)()
+      perks: (0, f.o9)()
     })
   }, [j, t]), C = (0, r.jsx)(o.Z, {
     image: t.splash,
@@ -45,15 +45,15 @@ function h(e) {
     }) : null,
     disabled: !x,
     onChange: v,
-    hint: p.intl.string(p.t.uPvxqJ),
+    hint: b.intl.string(b.t.uPvxqJ),
     enabled: x,
-    maxFileSizeBytes: f.B,
-    onFileSizeError: () => (0, s.Z)(f.B)
+    maxFileSizeBytes: m.B,
+    onFileSizeError: () => (0, s.Z)(m.B)
   });
   return h ? C : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: b.upsell,
+    className: p.upsell,
     onClick: O,
     children: C
   })

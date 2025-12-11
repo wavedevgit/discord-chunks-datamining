@@ -27,14 +27,14 @@ function b(e) {
     },
     children: (0, i.jsxs)("div", {
       className: f.guildHeader,
-      children: [(0, i.jsx)(o.Z, {
+      children: [(0, i.jsx)(r.Z, {
         guild: t,
         isBannerVisible: true
       }), (0, i.jsx)(a.Heading, {
         className: f.guildName,
         variant: "heading-md/semibold",
         children: t.name
-      }), (0, i.jsx)(r.Z, {
+      }), (0, i.jsx)(o.Z, {
         className: f.dropdown,
         open: false
       })]
@@ -47,9 +47,9 @@ function g(e) {
     analyticsLocations: t,
     analyticsLocation: n,
     guild: a,
-    isGIF: r,
-    banner: o
-  } = e, f = r ? (0, l._p)(d.GuildFeatures.ANIMATED_BANNER) : (0, l._p)(d.GuildFeatures.BANNER);
+    isGIF: o,
+    banner: r
+  } = e, f = o ? (0, l._p)(d.GuildFeatures.ANIMATED_BANNER) : (0, l._p)(d.GuildFeatures.BANNER);
   null != f && (0, c.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
@@ -63,13 +63,13 @@ function g(e) {
         }) : u.intl.formatToPlainString(u.t.B253V6, {
           targetLevelOrPlan: n
         })
-      }(f, r),
+      }(f, o),
       image: (0, i.jsx)(b, {
         guild: a,
-        banner: o
+        banner: r
       })
     },
     perkIntro: u.intl.string(u.t.ZuItcI),
-    perks: r ? (0, s.zC)() : (0, s.XO)()
+    perks: o ? (0, s.zC)() : (0, s.XO)()
   })
 }

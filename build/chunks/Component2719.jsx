@@ -122,7 +122,7 @@ function $(e) {
           ref: c,
           children: [(0, r.jsx)(f.Text, {
             tag: "span",
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/normal",
             children: l.username
           }), !l.hasUniqueUsername() && (0, r.jsxs)(f.Text, {
@@ -211,7 +211,7 @@ function ee(e) {
           ref: _,
           children: (0, r.jsx)(f.Text, {
             tag: "span",
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/normal",
             children: null == p ? Y.intl.string(Y.t.ep5kjK) : p
           })
@@ -318,7 +318,7 @@ function en(e) {
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/normal",
             children: t.valueMessage
           })
@@ -365,7 +365,7 @@ function er(e) {
   function p() {
     (0, f.h7j)(e => (0, r.jsx)(w.default, Q(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
-      children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
+      children: a.hasFlag(B.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
       actionText: Y.intl.string(Y.t.N86XcP),
       handleSubmit: e => O.Z.removePhone(e, O.L.USER_SETTINGS_UPDATE)
     })))
@@ -387,7 +387,7 @@ function er(e) {
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/normal",
             children: t
           })
@@ -469,7 +469,7 @@ function ea(e) {
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-md/normal",
             children: l
           })

@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 70297, original params: e,n,t (module,exports,require) **/
+/** chunk id: 70297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C,
   q: () => x
@@ -27,29 +27,29 @@ function x(e) {
 
 function C(e) {
   let {
-    guild: n
-  } = e, t = (0, b.te)(n.id), r = (0, o.Nj)(i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), x = t && !r ? i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : i.z.CHANNEL_BROWSER_NUX;
+    guild: t
+  } = e, n = (0, b.te)(t.id), r = (0, c.Nj)(i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), x = n && !r ? i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : i.z.CHANNEL_BROWSER_NUX;
   (0, d.kk)(x);
-  let C = t ? (0, a.jsxs)(a.Fragment, {
+  let C = n ? (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)("div", {
-      children: [(0, a.jsx)(c.Heading, {
+      children: [(0, a.jsx)(o.Heading, {
         className: m.heading,
         color: "always-white",
         variant: "heading-lg/semibold",
-        children: f.intl.string(f.t.AalzkJ)
-      }), (0, a.jsx)(c.Text, {
+        children: h.intl.string(h.t.AalzkJ)
+      }), (0, a.jsx)(o.Text, {
         className: m.description,
         variant: "text-md/normal",
         color: "always-white",
-        children: f.intl.string(f.t.CXh95Z)
-      }), (0, a.jsx)(c.Button, {
+        children: h.intl.string(h.t.CXh95Z)
+      }), (0, a.jsx)(o.Button, {
         variant: "overlay-primary",
         onClick: () => {
-          s.Z.open(n.id, p.pNK.ONBOARDING), (0, o.Q3)(x, {
-            dismissAction: h.L.PRIMARY
+          s.Z.open(t.id, p.pNK.ONBOARDING), (0, c.Q3)(x, {
+            dismissAction: f.L.PRIMARY
           })
         },
-        text: f.intl.string(f.t["+OtO4e"])
+        text: h.intl.string(h.t["+OtO4e"])
       })]
     }), (0, a.jsx)(u.j, {
       isTooltip: true
@@ -63,35 +63,35 @@ function C(e) {
       alt: "",
       "aria-hidden": true
     }), (0, a.jsxs)("div", {
-      children: [(0, a.jsx)(c.Heading, {
+      children: [(0, a.jsx)(o.Heading, {
         className: m.heading,
         variant: "heading-lg/semibold",
-        color: "header-primary",
-        children: f.intl.string(f.t.utqWEC)
-      }), (0, a.jsx)(c.Text, {
+        color: "text-strong",
+        children: h.intl.string(h.t.utqWEC)
+      }), (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: f.intl.string(f.t["+9etcM"])
-      }), (0, a.jsx)(c.Text, {
+        children: h.intl.string(h.t["+9etcM"])
+      }), (0, a.jsx)(o.Text, {
         className: m.tip,
         variant: "text-md/normal",
         color: "text-default",
-        children: f.intl.format(f.t.Z0axjk, {})
+        children: h.intl.format(h.t.Z0axjk, {})
       })]
     })]
   });
   return (0, a.jsxs)("div", {
     className: l()(m.container, {
-      [m.adminUpsell]: t
+      [m.adminUpsell]: n
     }),
-    children: [(0, a.jsx)(c.P3F, {
+    children: [(0, a.jsx)(o.P3F, {
       className: m.closeButton,
       onClick: () => {
-        (0, o.Q3)(x, {
-          dismissAction: h.L.DISMISS
+        (0, c.Q3)(x, {
+          dismissAction: f.L.DISMISS
         })
       },
-      children: (0, a.jsx)(c.Dio, {
+      children: (0, a.jsx)(o.Dio, {
         size: "md",
         color: "currentColor"
       })

@@ -61,7 +61,7 @@ function f(e) {
     className: n,
     children: [(0, a.jsx)(l.Heading, {
       variant: "heading-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: m.intl.string(m.t.KJEO27)
     }), (0, a.jsx)(u.Z, {
       guild: t.guild,

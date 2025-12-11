@@ -162,7 +162,7 @@ let S = function(e) {
             className: w.verifiedRoleNameDescriptionContainer,
             children: [(0, n.jsx)(u.Text, {
               variant: "text-md/medium",
-              color: "header-primary",
+              color: "text-strong",
               className: w.verifiedRoleName,
               children: e.name
             }), true !== e.description ? (0, n.jsx)(u.Text, {

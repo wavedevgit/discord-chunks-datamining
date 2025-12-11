@@ -142,7 +142,7 @@ function j(e) {
           children: [(0, r.jsxs)(u.Kqy, {
             gap: 8,
             children: [(0, r.jsx)(u.Heading, {
-              color: "header-primary",
+              color: "text-strong",
               variant: A,
               className: C.title,
               children: t.labelTitle

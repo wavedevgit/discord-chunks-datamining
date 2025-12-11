@@ -240,7 +240,7 @@ function S(e) {
         className: m.productInfoContent,
         children: [(0, r.jsx)(s.Heading, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           className: m.productName,
           children: t.name
         }), (0, r.jsx)(s.LZC, {

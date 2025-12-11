@@ -53,20 +53,20 @@ var r, i, a, Chunk848120 = require("./848120.js"),
     var t = f(e);
     return "DataView" === t || d(U, t) || d(G, t)
   },
-  B = function(e) {
+  F = function(e) {
     var t = E(e);
     if (u(t)) {
       var n = I(t);
-      return n && d(n, j) ? n[j] : B(t)
+      return n && d(n, j) ? n[j] : F(t)
     }
   },
-  F = function(e) {
+  B = function(e) {
     if (!u(e)) returnfalse;
     var t = f(e);
     return d(U, t) || d(G, t)
   },
   V = function(e) {
-    if (F(e)) return e;
+    if (B(e)) return e;
     throw new D("Target is not a typed array")
   },
   H = function(e) {
@@ -128,9 +128,9 @@ module.exports = {
   aTypedArrayConstructor: H,
   exportTypedArrayMethod: Y,
   exportTypedArrayStaticMethod: W,
-  getTypedArrayConstructor: B,
+  getTypedArrayConstructor: F,
   isView: Z,
-  isTypedArray: F,
+  isTypedArray: B,
   TypedArray: P,
   TypedArrayPrototype: R
 }

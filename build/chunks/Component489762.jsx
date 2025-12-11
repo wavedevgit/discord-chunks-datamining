@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk318187 = require("./318187.js"),
   Chunk239840 = require("./239840.js");
 
-function B(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,14 +52,14 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      B(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
@@ -140,7 +140,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           sticker: s
         } = e;
         if (null == s) return;
-        let l = H(F({}, a.location), {
+        let l = H(B({}, a.location), {
           object: "" === o ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
         });
         if (null != s && !(0, C.kl)(s, r, n)) {
@@ -150,7 +150,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         }
         if (i) return void((0, w.gM)(s.id) ? (0, A.hW)(s.id) : ((0, N.cQ)({
           sticker: s,
-          location: H(F({}, l), {
+          location: H(B({}, l), {
             object: M.qAy.STICKER
           })
         }), (0, A.SA)(s.id)));
@@ -181,7 +181,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       onSelectSticker: a,
       channel: T,
       currentUser: A
-    }), [Z, B] = i.useState(false), F = i.useCallback(e => {
+    }), [Z, F] = i.useState(false), B = i.useCallback(e => {
       y._O.updateSetting(Array.from(e))
     }, []), V = i.useCallback(e => {
       let t = h[e];
@@ -215,8 +215,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         tab: k.X1.STICKER,
         collapsed: !i,
         sticker_pack_id: n ? e : null
-      }), F(r)
-    }, [C, t, F]), z = i.useCallback(e => {
+      }), B(r)
+    }, [C, t, B]), z = i.useCallback(e => {
       let n = g[e];
       if (null != E) {
         let {
@@ -330,7 +330,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           guildId: n.id,
           channel: T,
           shouldTrackUpsellViewed: !Z,
-          setTrackedUpsellViewed: B
+          setTrackedUpsellViewed: F
         }, "sticker-picker-empty-guild-inline-upsell-".concat(n.id))
       }, [g, t, E, T, Z]),
       sectionFooterHeight: i.useCallback(e => {
@@ -361,8 +361,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       renderRow: j,
       renderSection: M,
       renderSectionFooter: k,
-      sectionFooterHeight: B,
-      renderSectionHeader: F,
+      sectionFooterHeight: F,
+      renderSectionHeader: B,
       sectionHeaderHeight: V
     } = e_({
       collapsedStickersCategories: n,
@@ -444,13 +444,13 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           onScroll: H,
           renderRow: j,
           renderSection: null == l ? M : true,
-          renderSectionHeader: F,
+          renderSectionHeader: B,
           renderSectionFooter: k,
           rowCount: O,
           rowCountBySection: v,
           rowHeight: s > Y ? ei : ea,
           sectionHeaderHeight: V,
-          sectionFooterHeight: B,
+          sectionFooterHeight: F,
           stickyHeaders: true,
           ref: A
         }), (0, r.jsx)(L.Z, {

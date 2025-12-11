@@ -799,11 +799,11 @@ var t = function() {
         G = P.rect.height,
         Z = P.img;
       new Uint32Array(Z.buffer);
-      var B = 4 * j,
-        F = 4;
+      var F = 4 * j,
+        B = 4;
       if (U <= 256 && false == u) {
-        for (var V = new Uint8Array((B = Math.ceil(_ * j / 8)) * G), H = T[h], Y = 0; Y < G; Y++) {
-          var y = Y * B,
+        for (var V = new Uint8Array((F = Math.ceil(_ * j / 8)) * G), H = T[h], Y = 0; Y < G; Y++) {
+          var y = Y * F,
             W = Y * j;
           if (8 == _)
             for (var K = 0; K < j; K++) V[y + K] = H[W + K];
@@ -814,16 +814,16 @@ var t = function() {
           else if (1 == _)
             for (var K = 0; K < j; K++) V[y + (K >> 3)] |= H[W + K] << 7 - (7 & K) * 1
         }
-        Z = V, f = 3, F = 1
+        Z = V, f = 3, B = 1
       } else if (false == O && 1 == v.length) {
         for (var V = new Uint8Array(j * G * 3), z = j * G, y = 0; y < z; y++) {
           var q = 3 * y,
             Q = 4 * y;
           V[q] = Z[Q], V[q + 1] = Z[Q + 1], V[q + 2] = Z[Q + 2]
         }
-        Z = V, f = 2, F = 3, B = 3 * j
+        Z = V, f = 2, B = 3, F = 3 * j
       }
-      P.img = Z, P.bpl = B, P.bpp = F
+      P.img = Z, P.bpl = F, P.bpp = B
     }
     return {
       ctype: f,
@@ -892,11 +892,11 @@ var t = function() {
           s[l - 1].dispose = 1, l - 1 != 0 && _(t, n, r, s, l - 1, Z, a), _(t, n, r, s, l, Z, a)
         }
       }
-    var B = 0;
+    var F = 0;
     if (1 != t.length)
       for (var w = 0; w < s.length; w++) {
         var x = s[w];
-        B += x.rect.width * x.rect.height
+        F += x.rect.width * x.rect.height
       }
     return s
   }

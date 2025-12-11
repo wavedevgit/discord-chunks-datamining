@@ -2,7 +2,7 @@
 /** chunk id: 135793, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  default: () => B,
+  default: () => F,
   s: () => Z
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
@@ -105,7 +105,7 @@ let k = 190,
     }))
   };
 
-function B(e) {
+function F(e) {
   let {
     transitionState: t,
     channel: n,
@@ -128,7 +128,7 @@ function B(e) {
         }
       }
     },
-    children: (0, r.jsx)(F, {
+    children: (0, r.jsx)(B, {
       channel: n,
       message: o,
       onRedeem: l,
@@ -137,7 +137,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     channel: t,
     message: n,

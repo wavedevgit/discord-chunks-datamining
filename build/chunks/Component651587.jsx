@@ -71,8 +71,8 @@ function O(e) {
         let t = n.some(e => e.isTemporary);
         e.push({
           type: "today",
-          title: y.intl.string(y.t["kB2R/0"]),
-          description: t ? y.intl.string(y.t["6AXirz"]) : true,
+          title: v.intl.string(v.t["kB2R/0"]),
+          description: t ? v.intl.string(v.t["6AXirz"]) : true,
           clips: n
         })
       }
@@ -167,7 +167,7 @@ function O(e) {
       let a = r * H,
         s = i.clips.slice(a, a + H);
       return (0, l.jsx)("div", {
-        className: v.clipsRow,
+        className: y.clipsRow,
         children: s.map(e => (0, l.jsx)("div", {
           style: {
             width: L
@@ -188,7 +188,7 @@ function O(e) {
     z = r.useCallback(e => {
       let t = D[e];
       return null == t ? null : (0, l.jsxs)("div", {
-        className: v.sectionHeaderContainer,
+        className: y.sectionHeaderContainer,
         children: [(0, l.jsx)(s.Heading, {
           variant: "text-md/semibold",
           color: "text-default",
@@ -196,13 +196,13 @@ function O(e) {
         }), null != t.description && (0, l.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          className: v.sectionDescription,
+          className: y.sectionDescription,
           children: t.description
         })]
       }, "header-".concat(e))
     }, [D]);
   return P || 0 !== D.length ? P ? (0, l.jsx)("div", {
-    className: v.spinnerContainer,
+    className: y.spinnerContainer,
     children: (0, l.jsx)(s.$jN, {})
   }) : (0, l.jsx)(o.Z, {
     listPadding: j,

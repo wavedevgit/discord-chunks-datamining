@@ -31,7 +31,7 @@ function f() {
       className: Chunk875699.textContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

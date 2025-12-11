@@ -65,8 +65,8 @@ function I(e) {
     U = w.state === b.r2o.ACCEPTING,
     G = null != j ? (0, m.jD)(j) : null,
     Z = null != R,
-    B = null != G,
-    F = null != G && G.isGuildVocal(),
+    F = null != G,
+    B = null != G && G.isGuildVocal(),
     V = null != G && G.isGuildStageVoice(),
     H = (0, o.yE)(null != (t = w.flags) ? t : 0, a.$.IS_GUEST_INVITE),
     Y = null != (v = null == R ? true : R.features.has(b.GuildFeatures.HUB)) && v,
@@ -94,7 +94,7 @@ function I(e) {
     (R = h.Qs(w.guild)).premiumTier = null != (I = w.guild.premium_tier) ? I : b.Eu4.NONE
   }
   let ee = (0, g.e)({
-    isVoiceChannel: F,
+    isVoiceChannel: B,
     isOwnInvite: L,
     isGuest: H,
     isHubGuild: Y,
@@ -129,7 +129,7 @@ function I(e) {
       color: "currentColor",
       className: O.infoIcon
     })
-  })), F ? (C = (0, r.jsx)(_.Z.Channel, {
+  })), B ? (C = (0, r.jsx)(_.Z.Channel, {
     channel: G
   }), T = (0, r.jsxs)("span", {
     className: O.infoTitle,
@@ -145,7 +145,7 @@ function I(e) {
   })) : null != M && M >= 5 || null != k && k > 0 ? T = (0, r.jsx)(_.Z.Data, {
     members: M,
     membersOnline: k
-  }) : B && (T = (0, r.jsx)(_.Z.Channel, {
+  }) : F && (T = (0, r.jsx)(_.Z.Channel, {
     channel: G,
     guild: R
   })), (0, r.jsxs)(_.Z, {
@@ -170,8 +170,8 @@ function I(e) {
           onClick: $,
           loading: U,
           variant: "active",
-          fullWidth: F,
-          text: F ? V ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : Z ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
+          fullWidth: B,
+          text: B ? V ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : Z ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
         })
       })]
     }), R.features.has(b.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {

@@ -69,7 +69,7 @@ function g() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           className: Chunk827186.myServersTitle,
           variant: "heading-md/medium",
-          color: "header-primary",
+          color: "text-strong",
           children: Chunk388032.intl.string(Chunk388032.t.TqdOvC)
         }), !module && (0, Chunk54381.jsx)("div", {
           className: Chunk827186.myServersIgnoredWarning,

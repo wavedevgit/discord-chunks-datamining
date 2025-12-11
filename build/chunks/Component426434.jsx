@@ -26,47 +26,47 @@ function x(e) {
       guild: n
     } = e,
     x = n.mfaLevel,
-    j = (0, l.e7)([u.Z], () => null != n && u.Z.can(p.Plq.MANAGE_GUILD, n), [n]),
+    j = (0, l.e7)([u.Z], () => null != n && u.Z.can(b.Plq.MANAGE_GUILD, n), [n]),
     v = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
     O = (0, d.eM)(n, v),
     C = null == v ? true : v.mfaEnabled,
-    y = x === p.BpS.ELEVATED,
+    y = x === b.BpS.ELEVATED,
     N = O && C,
     E = (0, i.throttle)(async e => {
-      N && await m.Z.updateMFALevel({
+      N && await f.Z.updateMFALevel({
         guildId: n.id,
-        level: e ? p.BpS.ELEVATED : p.BpS.NONE
+        level: e ? b.BpS.ELEVATED : b.BpS.NONE
       })
     }, 1e3);
   if (!j) return null;
-  N || (t = O ? b.intl.format(b.t.nFwNyR, {
+  N || (t = O ? p.intl.format(p.t.nFwNyR, {
     settingsHook: () => (0, c.openUserSettings)(o.n.ACCOUNT_PANEL, {
-      section: p.oAB.ACCOUNT
+      section: b.oAB.ACCOUNT
     })
-  }) : b.intl.string(b.t["9Ghu40"]));
-  let I = n.features.has(p.GuildFeatures.DISCOVERABLE);
+  }) : p.intl.string(p.t["9Ghu40"]));
+  let I = n.features.has(b.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: h.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
       className: h.itemContent,
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
-        color: "header-primary",
-        children: b.intl.string(b.t.lbBfEQ)
+        color: "text-strong",
+        children: p.intl.string(p.t.lbBfEQ)
       }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: [b.intl.string(b.t["a/93J6"]), " ", t]
+        children: [p.intl.string(p.t["a/93J6"]), " ", t]
       })]
     }), !N || y && I ? (0, r.jsx)(a.u, {
-      text: I ? b.intl.string(b.t["KG1V/E"]) : O ? b.intl.string(b.t.NmsheT) : b.intl.string(b.t.LieBta),
-      children: (0, r.jsx)(f.Z, {
+      text: I ? p.intl.string(p.t["KG1V/E"]) : O ? p.intl.string(p.t.NmsheT) : p.intl.string(p.t.LieBta),
+      children: (0, r.jsx)(m.Z, {
         checked: y,
         disabled: true,
         onChange: E,
         className: h.bringToFront
       })
-    }) : (0, r.jsx)(f.Z, {
+    }) : (0, r.jsx)(m.Z, {
       checked: y,
       onChange: E,
       className: h.bringToFront

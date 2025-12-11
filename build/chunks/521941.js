@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 521941, original params: e,n,t (module,exports,require) **/
+/** chunk id: 521941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
 }), require("./539854.js");
@@ -8,23 +8,23 @@ var Chunk473749 = require("./473749.js"),
   Chunk45966 = require("./45966.js");
 
 function i(e) {
-  let n = (0, r.Wu)([l.Z], () => l.Z.getEnabledOnboardingPrompts(e));
+  let t = (0, r.Wu)([l.Z], () => l.Z.getEnabledOnboardingPrompts(e));
   return a.useMemo(() => {
     let e = 0,
-      t = [],
+      n = [],
       a = [],
       r = [],
       l = [];
-    for (var i = 0; i < n.length; i++) {
-      let c = n[i];
-      c.isNew ? t.push(c) : c.hasNewAnswers ? (a.push(c), e += c.options.filter(e => e.isUnseen).length) : c.inOnboarding ? l.push(c) : r.push(c)
+    for (var i = 0; i < t.length; i++) {
+      let o = t[i];
+      o.isNew ? n.push(o) : o.hasNewAnswers ? (a.push(o), e += o.options.filter(e => e.isUnseen).length) : o.inOnboarding ? l.push(o) : r.push(o)
     }
     return {
-      onboardingPromptsRaw: n,
-      newOnboardingPrompts: t,
+      onboardingPromptsRaw: t,
+      newOnboardingPrompts: n,
       onboardingPromptsWithNewAnswers: a,
       newAnswersCount: e,
       onboardingPrompts: r.concat(l)
     }
-  }, [n])
+  }, [t])
 }

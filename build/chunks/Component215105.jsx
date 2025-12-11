@@ -121,7 +121,7 @@ function A(e) {
       })
     } catch (e) {}
     w(y.P.REPLY)
-  }, B = {
+  }, F = {
     [S.status]: s === y.n_.STATUS,
     [S.avatar]: s === y.n_.AVATAR,
     [S.activity]: s === y.n_.ACTIVITY
@@ -130,7 +130,7 @@ function A(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(S.container, B, {
+      className: o()(S.container, F, {
         [S.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {

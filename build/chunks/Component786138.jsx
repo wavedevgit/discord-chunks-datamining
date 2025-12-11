@@ -47,7 +47,7 @@ function y(e) {
     (null == A ? true : A.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
-  }, [A, v]), U = null != (t = null == A ? true : A.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, Z = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, B = G ? b.intl.string(b.t.qDK8gQ) : Z ? b.intl.string(b.t["3m8w+Q"]) : T ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
+  }, [A, v]), U = null != (t = null == A ? true : A.startsWith("prepicked:")) && t, G = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, Z = (0, p.isMac)() && p.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, F = G ? b.intl.string(b.t.qDK8gQ) : Z ? b.intl.string(b.t["3m8w+Q"]) : T ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), B = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -85,11 +85,11 @@ function y(e) {
       id: "stream-settings-audio-enable",
       label: T ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
       checked: P,
-      action: F
+      action: B
     }) : null,
     Y = !R || I || M ? null : (0, r.jsx)(o.sNh, {
       id: "change-windows",
-      label: B,
+      label: F,
       icon: o.hGI,
       action: k
     }),

@@ -4,7 +4,7 @@
 require.d(exports, {
   $Z: () => eU,
   OF: () => eZ,
-  _x: () => eF,
+  _x: () => eB,
   c$: () => eG,
   iE: () => eY
 }), require("./388685.js"), require("./539854.js");
@@ -113,21 +113,21 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       location: "SettingsRendererConfig"
     }).enabled && module.push(Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE), module
   },
-  eB = () => {
+  eF = () => {
     let e = eZ(),
       [t] = (0, Chunk243778.US)(module);
     return exports === Chunk704215.z.DISPLAY_NAME_STYLES_NEW_BADGE || exports === Chunk704215.z.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },
-  eF = () => {
+  eB = () => {
     let e = [];
     return Chunk299886.H.getConfig({
       location: "SettingsRendererConfig"
     }).enabled && module.push(Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE), module
   },
   eV = () => {
-    let e = eF(),
+    let e = eB(),
       [t] = (0, Chunk243778.US)(module);
     return Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE === exports ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
@@ -140,7 +140,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       showPrepaidPaymentPastDueWarning: O,
       searchParams: v,
       numOfPendingFamilyRequests: M,
-      isOverlaySupported: eF,
+      isOverlaySupported: eB,
       isClipsBetaTagShowing: eY = false,
       shouldMergeGameSettings: eW,
       isStaff: eK,
@@ -310,7 +310,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         label: eD.intl.string(eD.t["vi7f+q"]),
         ariaLabel: eD.intl.string(eD.t["vi7f+q"]),
         element: j.Z,
-        newIndicator: (0, r.jsx)(eB, {}),
+        newIndicator: (0, r.jsx)(eF, {}),
         newIndicatorDismissibleContentTypes: [...eZ()],
         notice: {
           stores: [Z.Z, T.Z],
@@ -1529,7 +1529,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.ADVANCED,
         searchableTitles: [eD.intl.string(eD.t.ObIb1Q)],
         parent: eN.s6.SETTINGS_ADVANCED,
-        predicate: () => F.wS
+        predicate: () => B.wS
       },
       [eN.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION]: {
         section: eR.oAB.ADVANCED,
@@ -1606,7 +1606,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eD.intl.string(eD.t["9cb1Uz"]), eD.intl.string(eD.t.HcoRu0)],
         label: eD.intl.string(eD.t["9cb1Uz"]),
         element: e_.Z,
-        predicate: () => !eW && eF
+        predicate: () => !eW && eB
       },
       [eN.s6.CHANGELOG]: {
         section: "changelog",
@@ -1618,11 +1618,11 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: "merchandise",
         onClick: () => {
           let e = "https://discordmerch.com/Dsktopprm";
-          B.default.track(eR.rMx.USER_SETTINGS_MERCH_LINK_CLICKED), (0, V.q)({
+          F.default.track(eR.rMx.USER_SETTINGS_MERCH_LINK_CLICKED), (0, V.q)({
             href: e,
             shouldConfirm: true,
             onConfirm: () => {
-              B.default.track(eR.rMx.USER_SETTINGS_MERCH_LINK_CONFIRMED), (0, m.Z)(e)
+              F.default.track(eR.rMx.USER_SETTINGS_MERCH_LINK_CONFIRMED), (0, m.Z)(e)
             }
           })
         },

@@ -68,7 +68,7 @@ function E() {
       className: Chunk867889.systemServiceTextContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: Chunk388032.intl.string(Chunk388032.t.roHq80)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
@@ -109,7 +109,7 @@ class b extends Chunk473749.PureComponent {
       gap: 16,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: Chunk473749
       }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
         children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {

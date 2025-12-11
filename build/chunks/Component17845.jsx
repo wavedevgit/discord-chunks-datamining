@@ -17,7 +17,7 @@ function p(e) {
   let {
     title: t,
     betaTag: n,
-    color: r = "header-primary"
+    color: r = "text-strong"
   } = e;
   return (0, a.jsxs)(o.Heading, {
     className: l()(u.title, u.uppercase),
@@ -38,7 +38,7 @@ function m(e) {
     className: m,
     children: h,
     betaTag: f = false
-  } = e, b = (0, c.ZP)(), g = (0, s.wj)(b), x = r.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, a.jsx)(p, {
+  } = e, g = (0, c.ZP)(), b = (0, s.wj)(g), x = r.useMemo(() => Array.isArray(t) ? t.map((e, t) => (0, a.jsx)(p, {
     title: e,
     betaTag: f,
     color: n
@@ -56,7 +56,7 @@ function m(e) {
         children: [x, null != i && (0, a.jsx)(o.Text, {
           className: u.description,
           variant: "text-md/medium",
-          color: g ? "text-muted" : "header-primary",
+          color: b ? "text-muted" : "text-strong",
           children: i
         }), null != d && (0, a.jsx)("div", {
           className: u.buttonContainer,

@@ -43,28 +43,28 @@ function x(e) {
     type: t
   } = e, n = i.useMemo(() => {
     switch (t) {
-      case f.QJ.MULTIPLE_CHOICE:
+      case m.QJ.MULTIPLE_CHOICE:
         return {
-          icon: g.jE$, text: p.intl.string(p.t.ooKh3m)
+          icon: g.jE$, text: b.intl.string(b.t.ooKh3m)
         };
-      case f.QJ.PARAGRAPH:
+      case m.QJ.PARAGRAPH:
         return {
-          icon: g.OvV, text: p.intl.string(p.t.gG0JBN)
+          icon: g.OvV, text: b.intl.string(b.t.gG0JBN)
         };
-      case f.QJ.TEXT_INPUT:
+      case m.QJ.TEXT_INPUT:
         return {
-          icon: (0, g.GSL)(m.Z), text: p.intl.string(p.t.w6Q9wz)
+          icon: (0, g.GSL)(f.Z), text: b.intl.string(b.t.w6Q9wz)
         };
-      case f.QJ.TERMS:
+      case m.QJ.TERMS:
         return {
-          icon: g.snC, text: p.intl.string(p.t["3pz9t3"])
+          icon: g.snC, text: b.intl.string(b.t["3pz9t3"])
         };
       default:
         return null
     }
   }, [t]);
   return null == n ? null : (0, r.jsxs)("div", {
-    className: b.typeTag,
+    className: p.typeTag,
     children: [(0, r.jsx)(n.icon, {
       size: "xs",
       color: "currentColor"
@@ -84,19 +84,19 @@ function j(e) {
     field: l
   } = e;
   return (0, r.jsx)("div", {
-    className: b.backgroundContainer,
-    children: i === f.it.REGULAR ? (0, r.jsxs)("div", {
-      className: b.containerPadding,
+    className: p.backgroundContainer,
+    children: i === m.it.REGULAR ? (0, r.jsxs)("div", {
+      className: p.containerPadding,
       children: [(0, r.jsx)(d.xvT, {
         variant: "text-md/medium",
-        className: b.containerTitle,
+        className: p.containerTitle,
         children: t
       }), n]
     }) : (0, r.jsxs)("div", {
-      className: b.compactContainer,
+      className: p.compactContainer,
       children: [(0, r.jsx)(d.xvT, {
         variant: "text-md/medium",
-        className: b.compactTitle,
+        className: p.compactTitle,
         children: t
       }), (0, r.jsx)(x, {
         type: l.field_type
@@ -112,8 +112,8 @@ function O(e) {
     field: n,
     isDropHovered: l,
     onDrop: d,
-    fieldStyle: m
-  } = e, p = (0, s.debounce)(async (e, t, n) => {
+    fieldStyle: f
+  } = e, b = (0, s.debounce)(async (e, t, n) => {
     await d(e, t, n)
   }), x = i.useRef(null), [, O] = (0, o.c)({
     type: v,
@@ -122,7 +122,7 @@ function O(e) {
       field: n
     },
     end: (e, t) => {
-      null == e || t.didDrop() || p(e.field, null, true)
+      null == e || t.didDrop() || b(e.field, null, true)
     }
   }), [, C] = (0, c.L)({
     accept: v,
@@ -134,10 +134,10 @@ function O(e) {
       if (null == l || null == a) return;
       let s = (l.bottom - l.top) / 2,
         o = a.y - l.top;
-      i < t && o < s || i > t && o < s || i === t || p(e.field, t, false)
+      i < t && o < s || i > t && o < s || i === t || b(e.field, t, false)
     },
     drop: e => {
-      p(e.field, t, true)
+      b(e.field, t, true)
     }
   });
   return i.useLayoutEffect(() => (O(C(x)), () => {
@@ -145,16 +145,16 @@ function O(e) {
   }), [O, C]), (0, r.jsxs)("div", {
     ref: x,
     "data-dnd-name": "field-".concat(t),
-    className: a()(b.dragContainer, {
-      [b.dropHovered]: l
+    className: a()(p.dragContainer, {
+      [p.dropHovered]: l
     }),
     children: [(0, r.jsx)("div", {
-      className: a()(b.dragIconContainer, {
-        [b.compact]: m === f.it.COMPACT
+      className: a()(p.dragIconContainer, {
+        [p.compact]: f === m.it.COMPACT
       }),
       children: (0, r.jsx)(g.Vni, {
         size: "xs",
-        className: b.dragIcon,
+        className: p.dragIcon,
         color: u.Z.unsafe_rawColors.PRIMARY_400.css
       })
     }), (0, r.jsx)(j, h({}, e))]
@@ -163,28 +163,28 @@ function O(e) {
 
 function C(e) {
   return (0, r.jsxs)("div", {
-    className: a()(b.formFieldContainer, {
-      [b.compact]: e.fieldStyle === f.it.COMPACT
+    className: a()(p.formFieldContainer, {
+      [p.compact]: e.fieldStyle === m.it.COMPACT
     }),
     children: [(0, r.jsx)("div", {
-      className: b.spacingContainer,
+      className: p.spacingContainer,
       children: e.isDragEnabled ? (0, r.jsx)(O, h({}, e)) : (0, r.jsx)(j, h({}, e))
     }), "side" === e.actionsLocation && (0, r.jsxs)("div", {
-      className: a()(b.actionButtonsContainer, {
-        [b.compact]: e.fieldStyle === f.it.COMPACT,
-        [b.canRemove]: e.canRemove
+      className: a()(p.actionButtonsContainer, {
+        [p.compact]: e.fieldStyle === m.it.COMPACT,
+        [p.canRemove]: e.canRemove
       }),
       children: [(0, r.jsx)(g.P3F, {
-        className: b.actionButton,
+        className: p.actionButton,
         onClick: e.onEdit,
-        "aria-label": p.intl.string(p.t.bt75uw),
+        "aria-label": b.intl.string(b.t.bt75uw),
         children: (0, r.jsx)(g.vdY, {
           size: "xs"
         })
       }), e.canRemove && (0, r.jsx)(g.P3F, {
-        className: b.actionButton,
+        className: p.actionButton,
         onClick: e.onRemove,
-        "aria-label": p.intl.string(p.t.N86XcP),
+        "aria-label": b.intl.string(b.t.N86XcP),
         children: (0, r.jsx)(g.XHJ, {
           size: "xs"
         })

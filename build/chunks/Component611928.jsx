@@ -33,7 +33,7 @@ function p(e) {
   } = e;
   return (0, r.jsx)(t, {
     className: d.icon,
-    color: c.TVs.colors.HEADER_PRIMARY,
+    color: c.TVs.colors.TEXT_STRONG,
     size: "md"
   })
 }

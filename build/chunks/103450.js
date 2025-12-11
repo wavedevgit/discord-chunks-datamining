@@ -45,8 +45,8 @@ function G(e) {
   var t, n;
   let G, {
       activity: Z,
-      embeddedActivity: B,
-      user: F,
+      embeddedActivity: F,
+      user: B,
       onGameJoin: V,
       onClose: H,
       location: Y,
@@ -56,13 +56,13 @@ function G(e) {
       analyticsLocations: K
     } = (0, E.ZP)(null != Y ? Y : []),
     [z, q] = r.useState(false),
-    Q = null != (t = null == B ? true : B.applicationId) ? t : null == Z ? true : Z.application_id,
-    X = null != B || (0, h.Z)(Z),
+    Q = null != (t = null == F ? true : F.applicationId) ? t : null == Z ? true : Z.application_id,
+    X = null != F || (0, h.Z)(Z),
     J = (0, i.e7)([R.default], () => R.default.getCurrentUser()),
-    $ = F.id === (null == J ? true : J.id),
+    $ = B.id === (null == J ? true : J.id),
     ee = (0, p.Z)({
-      channelId: (0, f.p)(null == B ? true : B.location),
-      userId: F.id,
+      channelId: (0, f.p)(null == F ? true : F.location),
+      userId: B.id,
       activity: Z
     }),
     et = (0, i.e7)([C.Z, O.Z, x.Z, S.Z], () => X || null != Q && (0, j.t)({
@@ -77,19 +77,19 @@ function G(e) {
         applicationId: t,
         location: n
       } = e;
-      return (t === (null == Z ? true : Z.application_id) || t === (null == B ? true : B.applicationId)) && (0, f.p)(n) === ee
+      return (t === (null == Z ? true : Z.application_id) || t === (null == F ? true : F.applicationId)) && (0, f.p)(n) === ee
     })),
     er = (0, i.e7)([D.Z], () => null != Z && null != Z.application_id && D.Z.getState(Z.application_id, M.mFx.JOIN) === M.OcF.LOADING),
     ei = (0, b.q)(Q),
     ea = (0, y.A)(ei),
     eo = (0, _.s5)({
-      userId: F.id,
+      userId: B.id,
       activity: Z,
       channelId: ee,
       application: ei
     }),
-    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, w.Z, A.Z], () => null != B ? eo === _.Fw.CAN_JOIN : (0, d.Z)({
-      user: F,
+    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, w.Z, A.Z], () => null != F ? eo === _.Fw.CAN_JOIN : (0, d.Z)({
+      user: B,
       activity: Z,
       application: ei,
       channelId: ee,
@@ -104,12 +104,12 @@ function G(e) {
       PermissionStore: A.Z
     })),
     el = (0, i.e7)([c.ZP], () => {
-      if (Array.from(c.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == B ? true : B.applicationId) && e.location.id === (null == B ? true : B.location.id))) returntrue;
+      if (Array.from(c.ZP.getSelfEmbeddedActivities().values()).some(e => e.applicationId === (null == F ? true : F.applicationId) && e.location.id === (null == F ? true : F.location.id))) returntrue;
       let e = c.ZP.getCurrentEmbeddedActivity();
       return null != e && e.applicationId === (null == Z ? true : Z.application_id)
     }),
     ec = (0, l.O)();
-  if (X && null == B && (null == Z || !(0, m.Z)(Z, M.xjy.CONTEXTLESS))) return null;
+  if (X && null == F && (null == Z || !(0, m.Z)(Z, M.xjy.CONTEXTLESS))) return null;
   let eu = !L.isPlatformEmbedded;
   if (!((0, m.Z)(Z, M.xjy.JOIN) || X) || null == Q) return null;
   let ed = !$ || X && !el,
@@ -117,7 +117,7 @@ function G(e) {
   ed ? eu || et || null == Z || (G = U.intl.formatToPlainString(U.t.SqJBnN, {
     name: Z.name
   })) : G = U.intl.string(U.t["0OiwfH"]);
-  let ep = null != (n = null == B ? true : B.launchId) ? n : null == Z ? true : Z.session_id,
+  let ep = null != (n = null == F ? true : F.launchId) ? n : null == Z ? true : Z.session_id,
     e_ = async (e, t) => {
       if (null == ep || null == Q) return;
       let n = (0, m.Z)(t, M.xjy.EMBEDDED),
@@ -153,7 +153,7 @@ function G(e) {
         let e;
         q(true), null != Z && (e = await a.Z.sendActivityInviteUser({
           type: M.mFx.JOIN_REQUEST,
-          userId: F.id,
+          userId: B.id,
           activity: Z,
           location: M.Sbl.USER_ACTIVITY_ACTIONS
         })), null != e && s.default.selectPrivateChannel(e.id)
@@ -173,7 +173,7 @@ function G(e) {
       }
       if (!e) {
         if (es) {
-          null == V || V(), e_(F, Z), null == H || H();
+          null == V || V(), e_(B, Z), null == H || H();
           return
         }
         await t()

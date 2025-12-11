@@ -107,7 +107,7 @@ let et = e => {
     multiSelect: ea,
     reportId: es,
     textInput: eo
-  } = e, ed = $(t, "checkbox"), ec = $(t, "text_line_resource"), eu = ee(t, "external_link"), em = ee(t, "free_text"), eb = ee(t, "dropdown"), ep = $(t, "text"), eg = i.s.REPORT_TO_MOD.has(n.name), [ef, eh] = l.useState(false), [ex, ev] = l.useState(false), [e_, ej] = l.useState(""), [ey, eO] = l.useState(() => ({})), [eZ, eI] = l.useState(() => ({})), eC = l.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eS = l.useCallback(e => ({
+  } = e, ed = $(t, "checkbox"), ec = $(t, "text_line_resource"), eu = ee(t, "external_link"), em = ee(t, "free_text"), eb = ee(t, "dropdown"), ep = $(t, "text"), eg = i.s.REPORT_TO_MOD.has(n.name), [ef, ex] = l.useState(false), [eh, ev] = l.useState(false), [e_, ej] = l.useState(""), [ey, eO] = l.useState(() => ({})), [eZ, eI] = l.useState(() => ({})), eC = l.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eS = l.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
     textInput: null != em || null != eb ? eZ : true,
@@ -158,7 +158,7 @@ let et = e => {
         var t;
         ek(null == (t = e.body) ? true : t.code)
       }).finally(() => {
-        eh(false)
+        ex(false)
       })
     }, [e.successNodeId, eS, ei, eT, ek]),
     ew = l.useCallback(e => {
@@ -171,15 +171,15 @@ let et = e => {
           eT(["", e.target]);
           break;
         case "submit":
-          eh(true), eE()
+          ex(true), eE()
       }
     }, [el, eT, eE]),
     eM = l.useCallback(e => {
       "Enter" !== e.key || eN || ef || null == t.button || (e.preventDefault(), ew(t.button))
     }, [eN, ef, t.button, ew]);
   l.useEffect(() => {
-    t.is_auto_submit && !ex && (ev(true), ei(eS(["", t.id])))
-  }, [t.is_auto_submit, ex, ei, eS, t.id]);
+    t.is_auto_submit && !eh && (ev(true), ei(eS(["", t.id])))
+  }, [t.is_auto_submit, eh, ei, eS, t.id]);
   let eD = (0, u.fW)(et),
     eR = null != $(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
     eA = (0, c.U)(),
@@ -220,7 +220,7 @@ let et = e => {
         userId: n.user_id
       }) : null, null != $(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(S.Z, {
         guild: n.record
-      }) : null, null != $(t, "breadcrumbs") && (0, r.jsx)(h.Z, {
+      }) : null, null != $(t, "breadcrumbs") && (0, r.jsx)(x.Z, {
         isModeratorReport: eg,
         history: en
       }), function(e) {
@@ -296,7 +296,7 @@ let et = e => {
         state: eZ
       }), (null != t.children && t.children.length > 0 || null != eu && eu.length > 0) && (0, r.jsxs)("div", {
         className: Y.listContainer,
-        children: [(0, r.jsx)(x.Z, {
+        children: [(0, r.jsx)(h.Z, {
           node: t,
           onSelectChild: eT,
           nodeMap: e.nodeMap

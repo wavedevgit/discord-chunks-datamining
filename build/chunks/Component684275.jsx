@@ -69,16 +69,16 @@ function u(e) {
   let {
     rule: n,
     onChangeRule: s
-  } = e, [u, g] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), m = i.useMemo(() => e => {
+  } = e, [u, g] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? true : t.presets)), f = i.useMemo(() => e => {
     s(c(o({}, n), {
       triggerMetadata: c(o({}, n.triggerMetadata), {
         presets: e
       })
     }))
-  }, [s, n]), f = i.useCallback(e => {
+  }, [s, n]), m = i.useCallback(e => {
     let t = e.map(e => e);
-    g(new Set(t)), m(t)
-  }, [m]), p = i.useMemo(() => [{
+    g(new Set(t)), f(t)
+  }, [f]), b = i.useMemo(() => [{
     label: d(a.Ux.PROFANITY).headerText,
     description: d(a.Ux.PROFANITY).subtitleText,
     value: String(a.Ux.PROFANITY)
@@ -94,8 +94,8 @@ function u(e) {
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(l.cOn, {
       selectedValues: Array.from(u).map(String),
-      onChange: f,
-      options: p
+      onChange: m,
+      options: b
     })
   })
 }

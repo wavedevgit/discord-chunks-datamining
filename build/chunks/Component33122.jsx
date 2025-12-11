@@ -92,7 +92,7 @@ let S = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  N = e => (0, r.jsx)(b.ZP, y({}, e)),
+  N = e => (0, r.jsx)(g.ZP, y({}, e)),
   T = e => {
     let t, n, a, {
       item: i,
@@ -103,8 +103,8 @@ let S = {
       playable: m,
       volume: h,
       isMuted: f,
-      onVolumeChange: b,
-      onMute: g
+      onVolumeChange: g,
+      onMute: b
     } = e;
     if (i.type === C.s9s.YOUTUBE_VIDEO) t = y({
       url: (0, C.n8r)(i.youtubeVideoId)
@@ -138,9 +138,9 @@ let S = {
       playable: m,
       className: j.video,
       volume: h,
-      onVolumeChange: b,
+      onVolumeChange: g,
       autoMute: f,
-      onMute: g,
+      onMute: b,
       autoPlay: m,
       renderVideoComponent: E,
       renderImageComponent: N,

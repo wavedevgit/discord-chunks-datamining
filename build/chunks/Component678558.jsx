@@ -100,7 +100,7 @@ let R = e => {
     useExpressiveButton: k = false
   } = e, U = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent", "useExpressiveButton"]), {
     analyticsLocations: G
-  } = (0, p.ZP)(), Z = (0, m.bp)() === y.IlC.POPOUT, [B, F] = i.useState(false), {
+  } = (0, p.ZP)(), Z = (0, m.bp)() === y.IlC.POPOUT, [F, B] = i.useState(false), {
     fractionalState: V
   } = (0, _.Z)(), H = (0, s.e7)([h.Z], () => h.Z.hasFetched);
   i.useEffect(() => {
@@ -112,7 +112,7 @@ let R = e => {
       fractionalState: V
     }),
     z = async () => {
-      F(true), await (0, b.u)({
+      B(true), await (0, b.u)({
         analyticsLocations: G,
         analyticsLocation: t,
         analyticsSourceLocation: n,
@@ -124,7 +124,7 @@ let R = e => {
         applicationId: D,
         handleSubscribeModalClose: x,
         intent: M
-      }), F(false)
+      }), B(false)
     }, q = g.Z.getPremiumTypeSubscription(), Q = (0, r.jsxs)("div", {
       className: S.button,
       children: [j, null != I ? I : v.intl.string(v.t.gKmQ1G)]
@@ -159,7 +159,7 @@ let R = e => {
   }) : k ? (0, r.jsx)(d.Button, {
     variant: "expressive",
     disabled: X,
-    loading: B,
+    loading: F,
     text: null != I ? I : v.intl.string(v.t.gKmQ1G),
     onClick: z
   }) : (0, r.jsx)(d.gtL, A(T({
@@ -169,7 +169,7 @@ let R = e => {
     className: o()(U.className, {
       [S.buttonHighlighted]: L
     }),
-    submitting: B,
+    submitting: F,
     onClick: z,
     pauseAnimation: w,
     children: Q

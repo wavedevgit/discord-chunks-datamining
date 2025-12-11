@@ -1,12 +1,12 @@
 /** Chunk was on 84725 **/
-/** chunk id: 462499, original params: e,n,l (module,exports,require) **/
+/** chunk id: 462499, original params: n,e,l (module,exports,require) **/
 require.d(exports, {
   default: () => b
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
-  i = require.n(Chunk658722),
+  r = require.n(Chunk658722),
   Chunk793030 = require("./793030.js"),
   Chunk399606 = require("./399606.js"),
   Chunk668339 = require("./668339.jsx"),
@@ -23,65 +23,65 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk609442 = require("./609442.js");
 
-function f(e, n, l, a) {
+function f(n, e, l, a) {
   return {
-    channelId: e.value,
-    title: n,
+    channelId: n.value,
+    title: e,
     description: l,
     emoji: null,
     icon: null != a ? a : null
   }
 }
 
-function b(e) {
-  var n, l;
+function b(n) {
+  var e, l;
   let {
-    transitionState: t,
+    transitionState: i,
     onClose: b,
     resourceChannel: N,
     guildId: Z,
-    onSave: y,
-    onDelete: G,
-    onIconUpload: S
-  } = e, [P, U] = r.useState(null != (n = null == N ? true : N.title) ? n : ""), [H, K] = r.useState(null != (l = null == N ? true : N.description) ? l : ""), [L, M] = r.useState(function(e) {
-    if (null == e) return null;
-    let n = p.Z.getChannel(e.channelId);
-    return null == n ? null : {
-      value: n.id,
-      label: n.name
+    onSave: G,
+    onDelete: S,
+    onIconUpload: y
+  } = n, [P, U] = t.useState(null != (e = null == N ? true : N.title) ? e : ""), [H, K] = t.useState(null != (l = null == N ? true : N.description) ? l : ""), [L, M] = t.useState(function(n) {
+    if (null == n) return null;
+    let e = g.Z.getChannel(n.channelId);
+    return null == e ? null : {
+      value: e.id,
+      label: e.name
     }
   }(N)), R = (0, o.e7)([C.Z], () => {
-    var e;
-    return null == (e = C.Z.getResourceChannel(null == N ? true : N.channelId)) ? true : e.icon
+    var n;
+    return null == (n = C.Z.getResourceChannel(null == N ? true : N.channelId)) ? true : n.icon
   }), E = (0, o.Wu)([C.Z], () => {
-    var e, n;
-    return (null != (n = null == (e = C.Z.getSettings()) ? true : e.resourceChannels) ? n : []).map(e => e.channelId)
-  }), T = P.length < m.n || null == L, w = r.useCallback(() => {
-    null == L || P.length <= 0 || (y(f(L, P, H, R)), b())
-  }, [y, b, P, L, R, H]), z = r.useCallback(() => {
-    null == G || G(), b()
-  }, [G, b]), B = r.useCallback(e => {
-    M(e)
-  }, [M]), O = r.useCallback(e => Promise.resolve(g.ZP.getSelectableChannels(Z).filter(n => (0, m.k3)(n.channel) && !E.includes(n.channel.id) && i()(e, n.channel.name)).map(e => ({
-    value: e.channel.id,
-    label: e.channel.name
-  }))), [Z, E]), X = r.useCallback(e => {
-    if (null == e || null == Z) return null;
-    let n = p.Z.getChannel(e.value),
-      l = x.Z.getGuild(Z);
-    if (null == n || null == l) return null;
-    let r = (0, d.KS)(n, l);
-    return null == r ? null : (0, a.jsx)(r, {
+    var n, e;
+    return (null != (e = null == (n = C.Z.getSettings()) ? true : n.resourceChannels) ? e : []).map(n => n.channelId)
+  }), T = P.length < m.n || null == L, w = t.useCallback(() => {
+    null == L || P.length <= 0 || (G(f(L, P, H, R)), b())
+  }, [G, b, P, L, R, H]), z = t.useCallback(() => {
+    null == S || S(), b()
+  }, [S, b]), B = t.useCallback(n => {
+    M(n)
+  }, [M]), O = t.useCallback(n => Promise.resolve(x.ZP.getSelectableChannels(Z).filter(e => (0, m.k3)(e.channel) && !E.includes(e.channel.id) && r()(n, e.channel.name)).map(n => ({
+    value: n.channel.id,
+    label: n.channel.name
+  }))), [Z, E]), X = t.useCallback(n => {
+    if (null == n || null == Z) return null;
+    let e = g.Z.getChannel(n.value),
+      l = p.Z.getGuild(Z);
+    if (null == e || null == l) return null;
+    let t = (0, d.KS)(e, l);
+    return null == t ? null : (0, a.jsx)(t, {
       size: "xs",
       color: "currentColor",
       className: I.channelIcon
     })
-  }, [Z]), _ = r.useCallback(e => {
-    null != S && null != L && S(f(L, P, H), e)
-  }, [L, P, S, H]), D = r.useCallback(() => null == R || null == L ? null : v.ZP.getResourceChannelIconURL({
+  }, [Z]), _ = t.useCallback(n => {
+    null != y && null != L && y(f(L, P, H), n)
+  }, [L, P, y, H]), D = t.useCallback(() => null == R || null == L ? null : v.ZP.getResourceChannelIconURL({
     channelId: L.value,
     icon: R
-  }), [L, R]), F = r.useMemo(() => [{
+  }), [L, R]), F = t.useMemo(() => [{
     variant: "secondary",
     text: k.intl.string(k.t["ETE/oC"]),
     onClick: b
@@ -93,7 +93,7 @@ function b(e) {
   }], [w, T, b]);
   return (0, a.jsxs)(s.Modal, {
     title: k.intl.string(k.t.SNMXYt),
-    transitionState: t,
+    transitionState: i,
     onClose: b,
     actions: F,
     actionBarInput: null != N ? (0, a.jsx)(c.Avr, {
@@ -105,7 +105,7 @@ function b(e) {
       className: I.formGroup,
       children: [(0, a.jsxs)(c.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: [k.intl.string(k.t.nPa4Ju), (0, a.jsx)(j.Z, {})]
       }), (0, a.jsx)(u.d, {
         value: L,
@@ -123,7 +123,7 @@ function b(e) {
       className: I.formGroup,
       children: [(0, a.jsxs)(c.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: [k.intl.string(k.t["lFy+aW"]), (0, a.jsx)(j.Z, {})]
       }), (0, a.jsx)(c.oil, {
         value: P,
@@ -137,7 +137,7 @@ function b(e) {
       className: I.formGroup,
       children: [(0, a.jsx)(c.Heading, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: k.intl.string(k.t.CnkilH)
       }), (0, a.jsx)(c.Kx8, {
         value: H,
@@ -152,7 +152,7 @@ function b(e) {
       children: [(0, a.jsxs)("div", {
         children: [(0, a.jsx)(c.Heading, {
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: k.intl.string(k.t.CB6dyu)
         }), (0, a.jsx)(c.Text, {
           variant: "text-xs/medium",

@@ -214,7 +214,7 @@ function E() {
   return (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: Chunk388032.intl.string(Chunk388032.t["1QHJaW"])
     }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 24

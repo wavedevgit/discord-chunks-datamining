@@ -214,9 +214,9 @@ let k = Chunk473749.forwardRef(function(e, t) {
     debounceTime: K
   }), eL = i.useMemo(() => M(ew, a), [ew, a]), ej = i.useMemo(() => eL.map(e => e.value), [eL]), eM = eL[eL.length - 1], ek = (0, f.Z)(eM), eU = i.useId(), eG = i.useId(), eZ = i.useCallback(e => {
     eS === e || w || (eI(e), e ? null == b || b() : null == v || v())
-  }, [w, v, b, eS]), eB = i.useCallback(e => {
+  }, [w, v, b, eS]), eF = i.useCallback(e => {
     eS && !e && eZ(false)
-  }, [eZ, eS]), eF = (0, p.O)(eB);
+  }, [eZ, eS]), eB = (0, p.O)(eF);
   i.useImperativeHandle(t, () => ({
     close() {
       eZ(false)
@@ -335,7 +335,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
     {
       focusPreviousItem: e1,
       focusNextItem: e3
-    } = B(e0, ey, eL);
+    } = F(e0, ey, eL);
   return (0, r.jsxs)(u.bG, {
     navigator: eW,
     children: [(0, r.jsx)(g.y, {
@@ -414,7 +414,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
                     e.preventDefault()
                   },
                   ref: e => {
-                    eE.current = e, eF.current = e
+                    eE.current = e, eB.current = e
                   },
                   className: o()(T.select, T.searchable, {
                     [T.multi]: m
@@ -500,7 +500,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
         }))
       }
     }), eL.length > 0 && null != el && (0, r.jsx)("div", {
-      children: (0, r.jsx)(F, {
+      children: (0, r.jsx)(B, {
         listRef: e0,
         selectedOptions: eL,
         selectValue: function(e) {
@@ -706,7 +706,7 @@ function Z(e, t) {
   return (e.compareDocumentPosition(t) & n) === n
 }
 
-function B(e, t, n) {
+function F(e, t, n) {
   let r = i.useMemo(() => (0, l.E)({
       getFocusableElements() {
         let t = e.current;
@@ -752,7 +752,7 @@ function B(e, t, n) {
   }
 }
 
-function F(e) {
+function B(e) {
   let {
     selectedOptions: t,
     selectValue: n,
@@ -922,9 +922,9 @@ function W(e) {
       focusPreviousItem: y,
       focusNextItem: O,
       focusLastItem: v
-    } = B(b, f, a);
+    } = F(b, f, a);
   return (0, r.jsxs)(r.Fragment, {
-    children: [a.length > 0 && !h && (0, r.jsx)(F, {
+    children: [a.length > 0 && !h && (0, r.jsx)(B, {
       listRef: b,
       selectedOptions: a,
       renderOptionPrefix: p,

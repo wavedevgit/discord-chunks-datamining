@@ -92,8 +92,8 @@ let R = 490,
     let {
       channel: G,
       type: Z,
-      editorHeight: B,
-      onVisibilityChange: F,
+      editorHeight: F,
+      onVisibilityChange: B,
       editorScrollerRef: V,
       barsHeight: H
     } = e, Y = (0, m.Dt)(), W = (0, l.e7)([E.Z], () => {
@@ -104,7 +104,7 @@ let R = 490,
     }), t, K), X = (null == (n = Z.autocomplete) ? true : n.forceChatLayer) ? g.ZP : h.ZP, J = (0, p.DJ)(z.selectedIndex);
     (0, _.KR)(Y, z.isVisible, J);
     let $ = (0, y.Z)({
-        editorHeight: B,
+        editorHeight: F,
         type: Z,
         state: z
       }),
@@ -116,8 +116,8 @@ let R = 490,
       et = i.useMemo(() => (null == $ ? true : $.top) == null && (null == $ ? true : $.left) == null && (null == $ ? true : $.bottom) == null && (null == $ ? true : $.right) == null ? "" : String(Date.now()), [null == $ ? true : $.top, null == $ ? true : $.left, null == $ ? true : $.bottom, null == $ ? true : $.right]);
     if (i.useEffect(() => {
         var e, t;
-        F(z.isVisible, null != (t = null == (e = z.query) ? true : e.type) ? t : null)
-      }, [F, z.isVisible, null == (a = z.query) ? true : a.type]), !z.isVisible || null == z.query || true === $) return null;
+        B(z.isVisible, null != (t = null == (e = z.query) ? true : e.type) ? t : null)
+      }, [B, z.isVisible, null == (a = z.query) ? true : a.type]), !z.isVisible || null == z.query || true === $) return null;
     let en = null != (P = z.query.typeInfo.renderResults({
       results: z.query.results,
       selectedIndex: z.selectedIndex,
@@ -138,7 +138,7 @@ let R = 490,
       },
       ei = R;
     null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let ea = Math.max(B, null != (k = null == V || null == (C = V.current) ? true : C.clientHeight) ? k : 0),
+    let ea = Math.max(F, null != (k = null == V || null == (C = V.current) ? true : C.clientHeight) ? k : 0),
       eo = Math.min(.5 * window.innerHeight, ea);
     ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);
     let es = (0, r.jsx)(p.ZP, {

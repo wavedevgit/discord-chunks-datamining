@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   B7: () => el,
-  Ek: () => B,
+  Ek: () => F,
   F2: () => X,
   GM: () => en,
-  GP: () => F,
+  GP: () => B,
   H9: () => ee,
   Lo: () => $,
   PK: () => k,
@@ -174,7 +174,7 @@ function Z(e, t) {
   }, [n, a, i])
 }
 
-function B(e, t) {
+function F(e, t) {
   let n = (0, v.Z)(t, e);
   return x(e, "roleColor", r.useMemo(() => {
     var e;
@@ -182,7 +182,7 @@ function B(e, t) {
   }, [n]))
 }
 
-function F(e, t) {
+function B(e, t) {
   let n = (0, v.Z)(t, e);
   return x(e, "channelAccessFormat", r.useMemo(() => null == n ? T.I.SOME_CHANNELS_ACCESS : (0, y.yt)(n) ? T.I.ALL_CHANNELS_ACCESS : T.I.SOME_CHANNELS_ACCESS, [n]))
 }

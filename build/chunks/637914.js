@@ -82,12 +82,12 @@ var a, Chunk50153 = require("./50153.js"),
       e.classList.contains(n) && (t = k[n])
     }), t
   },
-  B = function(e) {
+  F = function(e) {
     if (!y(e)) returnfalse;
     var t = e;
     return !!(t.href && ("http:" === t.protocol || "https:" === t.protocol || "mailto:" === t.protocol))
   },
-  F = function(e) {
+  B = function(e) {
     if (!S(e)) returnfalse;
     var t = e;
     return !!(t.attributes.getNamedItem("src") && t.attributes.getNamedItem("src").value)
@@ -172,11 +172,11 @@ var a, Chunk50153 = require("./50153.js"),
           this._addBreakNode(i, t);
           continue
         }
-        if (F(i)) {
+        if (B(i)) {
           this._addImgNode(i, t);
           continue
         }
-        if (B(i)) {
+        if (F(i)) {
           this._addAnchorNode(i, n, t);
           continue
         }

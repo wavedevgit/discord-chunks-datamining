@@ -69,23 +69,23 @@ function P(e) {
     case Z.ABu.TIKTOK:
       i = (0, x.hf)(C)
   }
-  let R = u.Z.get((0, m.rR)(v.type)),
-    L = null == R || null == (n = R.getPlatformUserUrl) ? true : n.call(R, v);
+  let L = u.Z.get((0, m.rR)(v.type)),
+    R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, v);
   null != _ && _ ? b = (0, l.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(A.__invalid_connectedAccountOpenIconContainer, A.connectedAccountHideIcon)
-  }) : null != L && (b = (0, l.jsx)(s.Anchor, {
-    href: L,
-    "aria-label": (null == R ? true : R.name) != null ? "".concat(R.name, ", ").concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)) : "".concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)),
+  }) : null != R && (b = (0, l.jsx)(s.Anchor, {
+    href: R,
+    "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)) : "".concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)),
     onClick: e => {
       var n;
       n = v.type, (0, f.yw)(Z.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: n,
         other_user_id: N
       }), (0, I.q)({
-        href: L,
-        trusted: (null == R ? true : R.type) !== Z.ABu.DOMAIN
+        href: R,
+        trusted: (null == L ? true : L.type) !== Z.ABu.DOMAIN
       }, e)
     },
     children: (0, l.jsx)(g.Z, {
@@ -107,13 +107,13 @@ function P(e) {
     children: [(0, l.jsxs)("div", {
       className: A.connectedAccount,
       children: [(0, l.jsx)(a.u, {
-        __unsupportedReactNodeAsText: null == R ? true : R.name,
+        __unsupportedReactNodeAsText: null == L ? true : L.name,
         children: (0, l.jsx)("img", {
           alt: T.intl.formatToPlainString(T.t.rtm15P, {
-            name: null == R ? true : R.name
+            name: null == L ? true : L.name
           }),
           className: A.connectedAccountIcon,
-          src: (0, c.wj)(j) ? null == R ? true : R.icon.darkSVG : null == R ? true : R.icon.lightSVG
+          src: (0, c.wj)(j) ? null == L ? true : L.icon.darkSVG : null == L ? true : L.icon.lightSVG
         })
       }), (0, l.jsxs)("div", {
         className: A.connectedAccountNameContainer,

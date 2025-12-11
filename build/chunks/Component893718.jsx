@@ -315,10 +315,10 @@ function eD(e) {
 function ex(e, t, n, r) {
   let i = e.getGuildId(),
     a = (0, p.e7)([D.Z], () => null != i && D.Z.isLurking(i), [i]),
-    o = (0, p.e7)([F.ZP, K.default], () => {
+    o = (0, p.e7)([B.ZP, K.default], () => {
       var e, t;
       let n = K.default.getCurrentUser();
-      return null != (t = null != i && null != n ? null == (e = F.ZP.getMember(i, n.id)) ? true : e.isPending : null) && t
+      return null != (t = null != i && null != n ? null == (e = B.ZP.getMember(i, n.id)) ? true : e.isPending : null) && t
     }),
     s = (0, p.cj)([V.Z], () => {
       var i, a;
@@ -436,7 +436,7 @@ function eG(e, t) {
     channel: U,
     type: G,
     focused: Z,
-    error: F,
+    error: B,
     renderAttachButton: V,
     renderApplicationCommandIcon: H,
     pendingReply: W,
@@ -456,8 +456,8 @@ function eG(e, t) {
     characterCountClassName: ev,
     "aria-describedby": eG,
     "aria-labelledby": eZ,
-    setEditorRef: eB,
-    autoCompletePosition: eF,
+    setEditorRef: eF,
+    autoCompletePosition: eB,
     children: eV,
     disableThemedBackground: eH = false,
     emojiPickerCloseOnModalOuterClick: eY,
@@ -469,7 +469,7 @@ function eG(e, t) {
   let {
     analyticsLocations: eq
   } = (0, b.ZP)(E.Z.CHANNEL_TEXT_AREA), eQ = ew(t), eX = i.useRef(null), eJ = i.useRef(null), e$ = i.useRef(null), e0 = i.useRef(null), e1 = i.useRef(null);
-  null == eB || eB(e$.current);
+  null == eF || eF(e$.current);
   let e3 = (0, y.Z)(U),
     [e2, e4] = i.useState(!e3);
   (0, h.PM)(eQ, e => {
@@ -494,7 +494,7 @@ function eG(e, t) {
     canAttachFiles: te,
     canCreateThreads: tt,
     canEveryoneSendMessages: tn
-  } = ex(U, G, e5, x), tr = G.toolbarType === ee.OW.STATIC, ti = !B.dN.useSetting() && !(0, X.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !Z || f !== ef.GI, to = (0, L.Z)(), {
+  } = ex(U, G, e5, x), tr = G.toolbarType === ee.OW.STATIC, ti = !F.dN.useSetting() && !(0, X.isAndroidWeb)() && null != window.ResizeObserver, ta = !ti || !(null == (n = G.commands) ? true : n.enabled) || !Z || f !== ef.GI, to = (0, L.Z)(), {
     fontSize: ts
   } = (0, p.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -571,9 +571,9 @@ function eG(e, t) {
     }, [tc]);
   (0, J.S)(tc, U.guild_id, U.id);
   let tZ = null != W,
-    tB = e9 && !((e6 || e7) && tn) || tp && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
-    tF = null;
-  null != e5 ? tF = null == H ? true : H(e5, e8, e_.attachButton) : (!e9 || tt) && (tF = null == V ? true : V(tZ, e_.attachButton));
+    tF = e9 && !((e6 || e7) && tn) || tp && (null == (s = G.submit) ? true : s.useDisabledStylesOnSubmit),
+    tB = null;
+  null != e5 ? tB = null == H ? true : H(e5, e8, e_.attachButton) : (!e9 || tt) && (tB = null == V ? true : V(tZ, e_.attachButton));
   let tV = ti && null != m && !e9 && G.showCharacterCount && null == e5,
     tH = ti && !__OVERLAY__ && null != m && null == e5 && G.toolbarType !== ee.OW.NONE && !e9,
     tY = (0, ei.c)({
@@ -629,12 +629,12 @@ function eG(e, t) {
         ref: eQ,
         className: o()(O, {
           [e_.channelTextArea]: true,
-          [e_.channelTextAreaDisabled]: tB,
+          [e_.channelTextAreaDisabled]: tF,
           [e_.highlighted]: em,
           [e_.textAreaMobileThemed]: d.tq,
           [e_.inlineContainer]: tK,
           [e_.flushContainer]: tz,
-          [e_.error]: null != F
+          [e_.error]: null != B
         }),
         children: [tK || tz ? null : (0, r.jsx)(ei.Z, {
           bars: tY
@@ -655,14 +655,14 @@ function eG(e, t) {
             canAttachFiles: te
           }), (0, r.jsxs)("div", {
             className: o()(e_.inner, {
-              [e_.innerDisabled]: tB,
-              [e_.sansAttachButton]: G !== ee.Ie.EDIT && (null != tF || tB && null == tF || e6),
+              [e_.innerDisabled]: tF,
+              [e_.sansAttachButton]: G !== ee.Ie.EDIT && (null != tB || tF && null == tB || e6),
               [e_.sansAttachButtonCreateThread]: G === ee.Ie.THREAD_CREATION,
               [e_.sansAttachButtonCreatePost]: G === ee.Ie.CREATE_FORUM_POST || G === ee.Ie.FORWARD_MESSAGE_INPUT,
               [e_.sansAttachButtonUserProfileReply]: G === ee.Ie.USER_PROFILE_REPLY
             }),
             onMouseDown: tw,
-            children: [tQ, tk && tq, tF, (0, r.jsx)(_.tEY, {
+            children: [tQ, tk && tq, tB, (0, r.jsx)(_.tEY, {
               ringTarget: eQ,
               ringClassName: e_.focusRing,
               children: (0, r.jsx)(et.Z, {
@@ -740,14 +740,14 @@ function eG(e, t) {
           editorHeight: tI,
           barsHeight: 40 * tY.floating.length,
           setValue: (e, t) => null == tf ? true : tf(null, e, t),
-          position: eF
+          position: eB
         }), (0, r.jsx)(j.Z, {
           textValue: f,
           editorHeight: tI,
           channelId: U.id
         }), tJ, eV]
       }), (0, r.jsx)(_.pdY, {
-        error: F
+        error: B
       }), tR ? null : (0, r.jsx)(R.Z, {
         positionTargetRef: eQ,
         type: G,

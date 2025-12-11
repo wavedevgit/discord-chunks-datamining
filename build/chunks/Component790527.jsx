@@ -76,8 +76,8 @@ function D(e) {
       glowUp: U,
       modalClassName: G,
       modalContentClassName: Z,
-      artContainerClassName: B,
-      artClassName: F,
+      artContainerClassName: F,
+      artClassName: B,
       headerClassName: V,
       bodyClassName: H,
       transitionState: Y,
@@ -185,10 +185,10 @@ function D(e) {
         }
       })
     },
-    eA = et ? o()(A.artContainer, A.artContainerBoxShadow, B) : o()(A.artContainer, B),
+    eA = et ? o()(A.artContainer, A.artContainerBoxShadow, F) : o()(A.artContainer, F),
     eN = null;
   return null != em.artURL ? eN = (0, r.jsx)("img", {
-    className: o()(F, A.art),
+    className: o()(B, A.art),
     alt: "",
     src: em.artURL
   }) : null != em.artElement && (eN = em.artElement), (0, r.jsxs)(c.Y0X, {

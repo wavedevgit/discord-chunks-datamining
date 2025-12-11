@@ -28,7 +28,7 @@ function x(e) {
     transitionState: n,
     onClose: x,
     analyticsData: v
-  } = e, C = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]), S = !!(null == C ? true : C.features.has(y.GuildFeatures.INVITES_DISABLED)), [E] = i.useState(false), [m, N] = i.useState(O.Fl), I = (0, a.e7)([g.Z], () => g.Z.getGuildIncident(t)), A = (0, p.BT)(C), D = (0, f.SG)(I) || S, T = (0, f.sN)(I), [P, w] = i.useState(D), [G, R] = i.useState(T), [k, M] = i.useState(false), L = P !== D || G !== T || k, U = S && !A;
+  } = e, C = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]), S = !!(null == C ? true : C.features.has(y.GuildFeatures.INVITES_DISABLED)), [E] = i.useState(false), [N, m] = i.useState(O.Fl), I = (0, a.e7)([f.Z], () => f.Z.getGuildIncident(t)), A = (0, p.BT)(C), D = (0, g.SG)(I) || S, T = (0, g.sN)(I), [P, w] = i.useState(D), [G, R] = i.useState(T), [k, M] = i.useState(false), L = P !== D || G !== T || k, U = S && !A;
   return null == C ? (x(), null) : (0, r.jsx)(l.Modal, {
     transitionState: n,
     title: h.intl.string(h.t.oCYAc7),
@@ -71,7 +71,7 @@ function x(e) {
           })(Object(i)).forEach(function(e) {
             Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
           }), n))
-        }))) : (0, b.n)(C.id, P, G, m);
+        }))) : (0, b.n)(C.id, P, G, N);
         let {
           source: e,
           alertType: n,
@@ -82,9 +82,9 @@ function x(e) {
           source: e,
           raid_alert_id: i,
           raid_alert_type: n,
-          intervention_type_enabled: (0, f.sO)(P, G),
-          intervention_type_disabled: (0, f.lk)(P, G),
-          duration: 60 * m
+          intervention_type_enabled: (0, g.sO)(P, G),
+          intervention_type_disabled: (0, g.lk)(P, G),
+          duration: 60 * N
         }), x()
       },
       loading: E,
@@ -97,9 +97,9 @@ function x(e) {
         placeholder: h.intl.string(h.t.vKYZzc),
         options: (0, O.c1)(),
         select: e => {
-          N(e), M(true)
+          m(e), M(true)
         },
-        isSelected: e => e === m,
+        isSelected: e => e === N,
         serialize: e => String(e)
       }), (0, r.jsxs)("div", {
         className: j.pauseContainer,
@@ -107,7 +107,7 @@ function x(e) {
           className: j.pauseText,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: h.intl.string(h.t.Uwsjn6)
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
@@ -136,7 +136,7 @@ function x(e) {
           className: j.pauseText,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: h.intl.string(h.t["wrDmA/"])
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",

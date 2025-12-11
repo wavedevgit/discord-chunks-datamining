@@ -175,7 +175,7 @@ function J(e) {
     name: g,
     description: E
   } = i.useMemo(() => (0, D.sl)(t, {
-    fakeAppIconURL: F
+    fakeAppIconURL: B
   }), [t]), {
     trackItemImpressionRef: b
   } = (0, j.Z)({
@@ -186,11 +186,11 @@ function J(e) {
     sectionOverallPosition: d,
     promotionalLabel: (0, D.dF)(t)
   }), y = i.useMemo(() => {
-    let e = p ? B.containerDisabled : B.container;
+    let e = p ? F.containerDisabled : F.container;
     return o()(e, {
-      [B.containerBorderRadius]: "row" !== m,
-      [B.rowContainer]: "row" === m,
-      [B.iconCard]: "icon" === m
+      [F.containerBorderRadius]: "row" !== m,
+      [F.rowContainer]: "row" === m,
+      [F.iconCard]: "icon" === m
     }, _)
   }, [_, p, m]);
   return p ? (0, r.jsx)("div", {
@@ -221,15 +221,15 @@ function $(e) {
     name: s,
     iconURL: c
   } = i.useMemo(() => (0, D.sl)(t, {
-    fakeAppIconURL: F
+    fakeAppIconURL: B
   }), [t]);
   return (0, r.jsx)(l.u, {
     __unsupportedReactNodeAsText: s,
     children: (0, r.jsxs)("div", {
-      className: o()(B.iconContainer, n),
+      className: o()(F.iconContainer, n),
       children: [(0, r.jsx)(k.Z, {
         src: c,
-        className: B.iconCard,
+        className: F.iconCard,
         "aria-hidden": true,
         rendersPlaceholder: true
       }), a]
@@ -252,7 +252,7 @@ function ee(e) {
     name: g,
     description: E
   } = i.useMemo(() => (0, D.sl)(t, {
-    fakeAppIconURL: F
+    fakeAppIconURL: B
   }), [t]), b = i.useMemo(() => null == E ? null : (0, L.ae)(E), [E]), y = (0, S.ZP)(h, ""), [v, I] = i.useState(false), T = i.useCallback(() => {
     true === l && I(true)
   }, [l]), C = m || (0, D.lf)(t), A = "large_banner" === n || "medium_banner" === n, P = i.useCallback(() => I(false), []), R = (0, s.e7)([_.Z, N.Z], () => _.Z.inDevModeForApplication(t.id) || N.Z.inTestModeForApplication(t.id), [t.id]), w = (0, D.WA)(t);
@@ -262,9 +262,9 @@ function ee(e) {
       onFocus: T,
       onMouseLeave: P,
       onBlur: P,
-      className: o()(B.bannerImageContainer, {
-        [B.mediumBanner]: "medium_banner" === n,
-        [B.largeBanner]: "large_banner" === n
+      className: o()(F.bannerImageContainer, {
+        [F.mediumBanner]: "medium_banner" === n,
+        [F.largeBanner]: "large_banner" === n
       }),
       children: [(0, r.jsx)("span", {
         className: a,
@@ -276,43 +276,43 @@ function ee(e) {
           overrideImageUrl: p
         })
       }), R || C || w !== d.ww.NONE ? (0, r.jsxs)("div", {
-        className: B.bannerUpperRightContainer,
+        className: F.bannerUpperRightContainer,
         children: [C && (0, r.jsx)("div", {
-          className: B.promotedLabelWrapperBanner,
+          className: F.promotedLabelWrapperBanner,
           children: (0, r.jsx)(c.Heading, {
             variant: "text-xxs/medium",
-            color: "header-primary",
+            color: "text-strong",
             children: Z.intl.string(Z.t["/eVltv"])
           })
         }), R && (0, r.jsx)(et, {}), w !== d.ww.NONE && (0, r.jsx)(O.Z, {
           labelType: w
         })]
       }) : null, (0, r.jsx)("div", {
-        className: B.bannerImageChildContainer,
+        className: F.bannerImageChildContainer,
         children: f
       })]
     }) : null, (0, r.jsxs)("div", {
-      className: o()(B.appDetailsContainer, {
-        [B.appDetailsRowContainer]: "row" === n
+      className: o()(F.appDetailsContainer, {
+        [F.appDetailsRowContainer]: "row" === n
       }),
       children: [(0, r.jsx)(k.Z, {
         src: h,
-        className: o()(B.icon, {
-          [B.rowIcon]: "row" === n
+        className: o()(F.icon, {
+          [F.rowIcon]: "row" === n
         }),
         "aria-hidden": true,
         rendersPlaceholder: true
       }), (0, r.jsxs)("div", {
-        className: B.appDetails,
+        className: F.appDetails,
         children: [(0, r.jsxs)("div", {
-          className: B.appDetailsHeaderContainer,
+          className: F.appDetailsHeaderContainer,
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             lineClamp: 1,
             children: g
           }), !A && C ? (0, r.jsx)("div", {
-            className: B.promotedLabelWrapperNonBanner,
+            className: F.promotedLabelWrapperNonBanner,
             children: (0, r.jsx)(c.Text, {
               variant: "text-xxs/semibold",
               color: "text-muted",
@@ -328,7 +328,7 @@ function ee(e) {
           children: b
         })]
       }), "row" === n ? (0, r.jsx)("div", {
-        className: B.rowDivider
+        className: F.rowDivider
       }) : null]
     })]
   })
@@ -357,7 +357,7 @@ function en(e) {
   return null == a ? null : (0, r.jsx)(l.u, {
     __unsupportedReactNodeAsText: a,
     children: (0, r.jsx)("img", {
-      className: B.staffBadge,
+      className: F.staffBadge,
       alt: a,
       src: V
     })
@@ -375,8 +375,8 @@ function er(e) {
   if (null != s) return (0, r.jsx)("img", {
     src: s,
     alt: (0, D.BQ)(t) ? t.name : "",
-    className: o()(B.bannerImage, {
-      [B.disableFadeIn]: a
+    className: o()(F.bannerImage, {
+      [F.disableFadeIn]: a
     })
   });
   if ((0, D.BQ)(t)) {
@@ -414,15 +414,15 @@ function ei(e) {
   i.useEffect(() => {
     n && u(true)
   }, [n]);
-  let d = o()(B.bannerImage, {
-    [B.disableFadeIn]: a
+  let d = o()(F.bannerImage, {
+    [F.disableFadeIn]: a
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [null != l && c ? (0, r.jsx)("div", {
-      className: B.activityVideoContainer,
+      className: F.activityVideoContainer,
       children: (0, r.jsx)("div", {
-        className: o()(B.activityVideo, {
-          [B.videoFadeOut]: !n
+        className: o()(F.activityVideo, {
+          [F.videoFadeOut]: !n
         }),
         onAnimationEnd: () => n ? null : u(false),
         children: (0, r.jsx)(I.Z, {
@@ -459,8 +459,8 @@ function ea(e) {
   }) : (0, r.jsx)("img", {
     src: l,
     alt: "",
-    className: o()(B.bannerImage, {
-      [B.disableFadeIn]: i
+    className: o()(F.bannerImage, {
+      [F.disableFadeIn]: i
     })
   })
 }
@@ -471,8 +471,8 @@ function eo(e) {
     disableFadeIn: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(B.bannerImage, {
-      [B.disableFadeIn]: n
+    className: o()(F.bannerImage, {
+      [F.disableFadeIn]: n
     }),
     style: {
       backgroundColor: t
@@ -557,7 +557,7 @@ function ec(e) {
     enableVideoBanner: !g,
     children: g ? (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.PULSING_ELLIPSIS,
-      className: B.spinner
+      className: F.spinner
     }) : null
   })) : (0, r.jsx)(el, K(Y({}, d), {
     context: t,
@@ -570,11 +570,11 @@ function ec(e) {
     onClick: e => {
       e.stopPropagation()
     },
-    imageStyle: B.darkenImage,
+    imageStyle: F.darkenImage,
     enableVideoBanner: false,
     disabled: true,
     children: (0, r.jsx)("div", {
-      className: B.voiceLauncherAppCardContainer,
+      className: F.voiceLauncherAppCardContainer,
       children: (0, r.jsx)(c.Button, {
         type: "submit",
         size: "md",

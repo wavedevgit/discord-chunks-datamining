@@ -12,68 +12,68 @@ var r, i, Chunk31775 = require("./31775.js"),
   Chunk914010 = require("./914010.js"),
   Chunk70956 = require("./70956.js");
 let g = {},
-  m = {},
-  f = 0,
-  p = new(a())({
+  f = {},
+  m = 0,
+  b = new(a())({
     max: 5,
     maxAge: Chunk70956.Z.Millis.HOUR
   });
-class b extends(i = Chunk442837.ZP.Store) {
+class p extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk914010.Z)
   }
   isUploadingEmoji() {
-    return f > 0
+    return m > 0
   }
   getEmojiRevision(e) {
     var t;
     return null != (t = g[e]) ? t : 0
   }
   getEmojis(e) {
-    return m[e]
+    return f[e]
   }
   getEmojiRawAsset(e) {
-    return p.get(e)
+    return b.get(e)
   }
-}(r = "displayName") in b ? Object.defineProperty(b, r, {
+}(r = "displayName") in p ? Object.defineProperty(p, r, {
   value: "GuildSettingsEmojiStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : b[r] = "GuildSettingsEmojiStore";
-let h = new b(Chunk570140.Z, {
+}) : p[r] = "GuildSettingsEmojiStore";
+let h = new p(Chunk570140.Z, {
   EMOJI_DELETE: function(e) {
     let {
       guildId: t,
       emojiId: n
     } = e;
-    m[t] = m[t].filter(e => e.id !== n)
+    f[t] = f[t].filter(e => e.id !== n)
   },
   EMOJI_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,
       emojis: n
     } = e;
-    m[t] = n.map(e => new c.Z(e))
+    f[t] = n.map(e => new c.Z(e))
   },
   EMOJI_FETCH_FAILURE: function(e) {
     let {
       guildId: t
     } = e;
-    m[t] = []
+    f[t] = []
   },
   EMOJI_UPLOAD_START: function() {
-    f++
+    m++
   },
   EMOJI_UPLOAD_STOP: function() {
-    f--
+    m--
   },
   EMOJI_CACHE_RAW_EMOJI_ASSET: function(e) {
     let {
       emojiId: t,
       userImage: n
     } = e;
-    p.set(t, n)
+    b.set(t, n)
   },
   GUILD_EMOJIS_UPDATE: function(e) {
     var t;

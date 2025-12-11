@@ -58,7 +58,7 @@ function w(e) {
     channel: s,
     status: u,
     activities: p
-  } = e, h = (0, a.e7)([j.Z], () => null != j.Z.getTypingUsers(s.id)[t.id]), g = (0, a.e7)([x.default], () => x.default.getCurrentUser()), v = (0, a.e7)([y.Z], () => y.Z.isMobileOnline(t.id)), I = (0, a.e7)([O.Z], () => O.Z.getNickname(t.id)), S = (0, f.Z)(t.id), P = i.useRef(null), N = e => {
+  } = e, h = (0, a.e7)([x.Z], () => null != x.Z.getTypingUsers(s.id)[t.id]), g = (0, a.e7)([j.default], () => j.default.getCurrentUser()), v = (0, a.e7)([y.Z], () => y.Z.isMobileOnline(t.id)), I = (0, a.e7)([O.Z], () => O.Z.getNickname(t.id)), S = (0, f.Z)(t.id), P = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -163,16 +163,16 @@ function A(e, t) {
 function D(e) {
   let {
     channel: t
-  } = e, n = x.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
+  } = e, n = j.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
     analyticsLocations: o
   } = (0, p.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, a.e7)([O.Z, x.default, y.Z], () => {
-    let e = (0, I.T)(t.recipients, x.default),
+  } = (0, a.e7)([O.Z, j.default, y.Z], () => {
+    let e = (0, I.T)(t.recipients, j.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      O.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+      O.Z.isFriend(t.id) || t.id === (null == (r = j.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
         status: null != (i = y.Z.getStatus(t.id)) ? i : E.Skl.OFFLINE,
         activities: null != (l = y.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {

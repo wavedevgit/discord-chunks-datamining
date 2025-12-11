@@ -21,10 +21,10 @@ function m(e) {
     guildId: t,
     powerup: n,
     className: i
-  } = e, l = (0, c.ZP)(t, n), a = l.type !== p.A3.LEVEL_ACTIVATED, s = (0, o.Z)(t, n, "GuildPowerupCardBodyFooter"), f = (0, u.P)(n, l, s);
+  } = e, l = (0, c.ZP)(t, n), o = l.type !== p.A3.LEVEL_ACTIVATED, s = (0, a.Z)(t, n, "GuildPowerupCardBodyFooter"), f = (0, u.P)(n, l, s);
   return (0, r.jsx)(d.uf, {
     status: f,
-    cost: a ? n.cost : true,
+    cost: o ? n.cost : true,
     className: i
   })
 }
@@ -38,9 +38,9 @@ function g(e) {
     className: g,
     onHover: v,
     children: x
-  } = e, b = (0, s.Z)(n), h = (0, c.ZP)(n, u), j = h.type !== p.A3.INACTIVE, _ = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, C = (0, o.Z)(n, u, "GuildPowerupCard"), Z = i.useRef(null), {
+  } = e, b = (0, s.Z)(n), h = (0, c.ZP)(n, u), j = h.type !== p.A3.INACTIVE, _ = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, C = (0, a.Z)(n, u, "GuildPowerupCard"), Z = i.useRef(null), {
     onShowMore: w
-  } = (0, a.Z)(n, u), [I, E] = i.useState(false), P = (0, l.O)(E, 1);
+  } = (0, o.Z)(n, u), [I, E] = i.useState(false), P = (0, l.O)(E, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.aB, {
       label: u.title,

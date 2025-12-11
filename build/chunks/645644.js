@@ -497,14 +497,14 @@ function Z(e) {
   for (let t of e.removed) U.destroy(t), D.verbose("handleRunningGamesChange removed", t)
 }
 
-function B(e) {
+function F(e) {
   if (e.pid === y.DEV_PID) return;
   let t = U.getByPid(e.pid);
   if (D.verbose("OVERLAY_SET_INPUT_LOCKED", t), null == t) return void D.error("OVERLAY_SET_INPUT_LOCKED: Unable to find game", e, U.debug);
   t.setLocked(e.locked)
 }
 
-function F(e) {
+function B(e) {
   var t;
   if (D.verbose("OVERLAY_NOTIFICATION_EVENT", e), null == e.gameName && null == e.gameId) return;
   let n = U.getByName(null != (t = e.gameName) ? t : e.gameId);
@@ -666,8 +666,8 @@ class en extends Chunk147913.Z {
       MESSAGE_CREATE: et.handleMessageCreate
     } : {
       OVERLAY_FOCUSED: H,
-      OVERLAY_NOTIFICATION_EVENT: F,
-      OVERLAY_SET_INPUT_LOCKED: B,
+      OVERLAY_NOTIFICATION_EVENT: B,
+      OVERLAY_SET_INPUT_LOCKED: F,
       OVERLAY_WIDGET_CHANGED: V,
       OVERLAY_MESSAGE_EVENT_ACTION: W,
       RUNNING_GAMES_CHANGE: Z,

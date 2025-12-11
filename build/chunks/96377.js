@@ -66,12 +66,12 @@ let _ = {
       };
     if (x) {
       if (h) {
-        var Z, B = "y" === w ? r.we : r.t$,
-          F = "y" === w ? r.I : r.F2,
+        var Z, F = "y" === w ? r.we : r.t$,
+          B = "y" === w ? r.I : r.F2,
           V = "y" === w ? "height" : "width",
           H = x[w],
-          Y = H + A[B],
-          W = H - A[F],
+          Y = H + A[F],
+          W = H - A[B],
           K = I ? -j[V] / 2 : 0,
           z = P === r.BL ? L[V] : j[V],
           q = P === r.BL ? -j[V] : -L[V],
@@ -81,8 +81,8 @@ let _ = {
             height: 0
           },
           J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : (0, f.Z)(),
-          $ = J[B],
-          ee = J[F],
+          $ = J[F],
+          ee = J[B],
           et = (0, s.u)(0, L[V], X[V]),
           en = R ? L[V] / 2 - K - et - $ - k.mainAxis : z - et - $ - k.mainAxis,
           er = R ? -L[V] / 2 + K + et + ee + k.mainAxis : q + et + ee + k.mainAxis,

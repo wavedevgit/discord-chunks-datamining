@@ -75,7 +75,7 @@ let B = Chunk473749.memo(function(e) {
         })
       })]
     }), (0, i.jsx)(c.Heading, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "heading-md/semibold",
       className: G.eventName,
       children: o
@@ -185,7 +185,7 @@ function F(e) {
         }),
         className: G.eventNameClickable,
         children: (0, i.jsx)(c.Text, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-md/semibold",
           className: G.eventName,
           children: n.name

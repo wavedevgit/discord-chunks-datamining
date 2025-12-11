@@ -15,19 +15,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk221875 = require("./221875.js");
 
-function g(t) {
+function C(t) {
   let {
     guildTemplate: n,
     onClick: e,
-    autoFocus: l
-  } = t, s = a.useCallback(() => {
+    autoFocus: a
+  } = t, s = l.useCallback(() => {
     e(n)
   }, [n, e]);
   return (0, i.jsx)(c.Z, {
     icon: o.U[n.id],
     message: n.label,
     onClick: s,
-    autoFocus: l
+    autoFocus: a
   })
 }
 
@@ -35,72 +35,72 @@ function u(t) {
   let {
     className: n,
     isNewUser: e,
-    onClose: a,
-    onChooseTemplate: l,
+    onClose: l,
+    onChooseTemplate: a,
     onJoin: o
   } = t, c = (0, m.E)();
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(r.xBx, {
       "data-migration-pending": true,
       direction: d.Z.Direction.VERTICAL,
-      className: C.header,
+      className: g.header,
       separator: false,
       children: [(0, i.jsx)(r.Heading, {
-        className: C.title,
+        className: g.title,
         variant: "heading-xl/semibold",
         children: e ? p.intl.string(p.t["9U0b1k"]) : p.intl.string(p.t["5HZu07"])
       }), (0, i.jsx)(r.Text, {
-        className: C.subtitle,
+        className: g.subtitle,
         color: "text-default",
         variant: "text-md/normal",
         children: p.intl.string(p.t["wti/H4"])
-      }), null != a && (0, i.jsx)(r.olH, {
+      }), null != l && (0, i.jsx)(r.olH, {
         "data-migration-pending": true,
-        className: C.closeButton,
-        onClick: a
+        className: g.closeButton,
+        onClick: l
       })]
     }), (0, i.jsxs)(r.hzk, {
       "data-migration-pending": true,
-      className: s()(C.templatesList, n),
+      className: s()(g.templatesList, n),
       paddingFix: false,
-      children: [(0, i.jsx)(g, {
+      children: [(0, i.jsx)(C, {
         guildTemplate: c[m.l.CREATE],
-        onClick: l,
+        onClick: a,
         autoFocus: true
       }), (0, i.jsx)(r.Text, {
-        className: C.optionHeader,
+        className: g.optionHeader,
         color: "text-default",
         variant: "text-xs/bold",
         children: p.intl.string(p.t.JGDkfg)
-      }), (0, i.jsx)(g, {
+      }), (0, i.jsx)(C, {
         guildTemplate: c[m.l.GAMING],
-        onClick: l
-      }), (0, i.jsx)(g, {
+        onClick: a
+      }), (0, i.jsx)(C, {
         guildTemplate: c[m.l.FRIENDS],
-        onClick: l
-      }), (0, i.jsx)(g, {
+        onClick: a
+      }), (0, i.jsx)(C, {
         guildTemplate: c[m.l.STUDY],
-        onClick: l
-      }), (0, i.jsx)(g, {
+        onClick: a
+      }), (0, i.jsx)(C, {
         guildTemplate: c[m.l.SCHOOL_CLUB],
-        onClick: l
-      }), (0, i.jsx)(g, {
+        onClick: a
+      }), (0, i.jsx)(C, {
         guildTemplate: c[m.l.LOCAL_COMMUNITY],
-        onClick: l
-      }), (0, i.jsx)(g, {
+        onClick: a
+      }), (0, i.jsx)(C, {
         guildTemplate: c[m.l.CREATORS],
-        onClick: l
+        onClick: a
       })]
     }), null != o && (0, i.jsxs)(r.mzw, {
       "data-migration-pending": true,
-      className: C.footer,
+      className: g.footer,
       children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
-        className: C.footerTitle,
+        className: g.footerTitle,
         children: p.intl.string(p.t["N+Mi/U"])
       }), (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: C.footerButton,
+        className: g.footerButton,
         children: (0, i.jsx)(r.Button, {
           variant: "secondary",
           fullWidth: true,

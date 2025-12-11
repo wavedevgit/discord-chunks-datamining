@@ -92,7 +92,7 @@ let E = () => {
             children: Chunk388032.intl.string(Chunk372807.default.RZqaJn)
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-xl/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: Chunk388032.intl.string(module === Chunk292352.dG.CONTENT_AND_SOCIAL ? Chunk388032.t["+o1pDZ"] : Chunk388032.t.OAuOHD)
           })]
         }), (0, Chunk54381.jsx)(E, {})]

@@ -1,7 +1,7 @@
 /** Chunk was on 33648 **/
 /** chunk id: 646746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => O
+  O: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,11 +24,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk547081 = require("./547081.js"),
   Chunk655428 = require("./655428.js");
 
-function O(e) {
-  var t, n, r, O, j, T;
+function j(e) {
+  var t, n, r, j, O, E;
   let {
-    message: _,
-    forwardOptions: E,
+    message: T,
+    forwardOptions: _,
     channel: P
   } = e, S = w.jU.useSetting(), {
     attachments: D,
@@ -36,12 +36,12 @@ function O(e) {
     hasContent: I,
     contentMessage: R
   } = (0, b.c)({
-    message: _,
+    message: T,
     channel: P,
-    forwardOptions: E
-  }), A = R.components.length > 0 && R.components[0].type === u.re.CHECKPOINT_CARD ? R.components[0].checkpointData : null, N = c.F[null != (t = null == A ? true : A.cardId) ? t : 0], Z = (0, o.dQu)(N.primaryColor).hex(), k = m.d.useExperiment({
+    forwardOptions: _
+  }), A = R.components.length > 0 && R.components[0].type === u.re.CHECKPOINT_CARD ? R.components[0].checkpointData : null, Z = c.F[null != (t = null == A ? true : A.cardId) ? t : 0], N = (0, o.dQu)(Z.primaryColor).hex(), k = m.d.useExperiment({
     location: "forward_preview"
-  }).enabled, F = a.useMemo(() => I ? (0, p.ZP)(_, {
+  }).enabled, F = a.useMemo(() => I ? (0, p.ZP)(T, {
     formatInline: true,
     allowLinks: true,
     allowHeading: true,
@@ -49,11 +49,11 @@ function O(e) {
     allowGameMentions: k,
     hideSimpleEmbedContent: false,
     contentMessage: R
-  }).content : null, [R, I, _, k]), U = D.length, L = null, G = null, V = null;
+  }).content : null, [R, I, T, k]), U = D.length, L = null, G = null, V = null;
   if (U > 0 || M.length > 0) {
     let e = (0, s.countBy)(D, e => (0, f.aw)(e, true)),
-      t = null != (O = e.IMAGE) ? O : 0,
-      a = null != (j = e.VIDEO) ? j : 0;
+      t = null != (j = e.IMAGE) ? j : 0,
+      a = null != (O = e.VIDEO) ? O : 0;
     t > 0 && a > 0 ? (L = x.intl.formatToPlainString(x.t.Lr0Top, {
       image_count: t,
       video_count: a
@@ -64,26 +64,26 @@ function O(e) {
     }), G = 1 === t ? o.XBm : o.Ka2) : (L = x.intl.formatToPlainString(x.t["89ihS8"], {
       count: U
     }), G = o.Ujz), a > 0 && U === a ? V = (0, l.jsxs)("div", {
-      className: i()(y.attachmentPreview, y.attachmentPreviewVideo),
+      className: i()(C.attachmentPreview, C.attachmentPreviewVideo),
       children: [(0, l.jsx)(g.ZP, {
-        className: y.thumbnail,
+        className: C.thumbnail,
         src: D[0].proxy_url,
         width: 56,
         height: 56
       }), (0, l.jsx)(o.g8d, {
-        className: y.playIcon,
+        className: C.playIcon,
         size: "md",
         color: "white"
       })]
     }) : U > 0 ? V = (0, l.jsx)("div", {
-      className: y.attachmentPreview,
+      className: C.attachmentPreview,
       children: (0, l.jsx)(g.ZP, {
         src: D[0].proxy_url,
         width: 56,
         height: 56
       })
     }) : (null == (r = M[0]) || null == (n = r.thumbnail) ? true : n.proxyURL) != null && (V = (0, l.jsx)("div", {
-      className: y.attachmentPreview,
+      className: C.attachmentPreview,
       children: (0, l.jsx)(g.ZP, {
         src: M[0].thumbnail.proxyURL,
         width: 56,
@@ -92,52 +92,52 @@ function O(e) {
     }))
   }
   return U > 1 && null != V && (V = (0, l.jsxs)("div", {
-    className: y.attachmentPreviewOverflow,
+    className: C.attachmentPreviewOverflow,
     children: [(0, l.jsx)(h.ZP, {
       mask: h.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
       width: 56,
       height: 56,
       children: V
     }), (0, l.jsxs)(o.Text, {
-      className: y.overflowCount,
+      className: C.overflowCount,
       variant: "text-xs/semibold",
       color: "text-default",
       children: ["+", U - 1]
     })]
   })), (0, l.jsxs)("div", {
-    className: y.forwardPreview,
+    className: C.forwardPreview,
     children: [(0, l.jsxs)("div", {
-      className: y.contentWrapper,
+      className: C.contentWrapper,
       children: [null != A && (0, l.jsx)(o.Text, {
         variant: "text-md/medium",
-        children: x.intl.string(C.default.goiR2u)
+        children: x.intl.string(y.default.goiR2u)
       }), I && (0, l.jsx)(v.ZP, {
-        className: i()(y.forwardPreviewMessage, U > 0 && y.hasAttachments),
-        message: _,
+        className: i()(C.forwardPreviewMessage, U > 0 && C.hasAttachments),
+        message: T,
         content: F,
         compact: S
       }), U > 0 && (0, l.jsxs)("div", {
-        className: y.attachmentRow,
+        className: C.attachmentRow,
         children: [null != G && (0, l.jsx)(G, {
           size: "custom",
           width: I ? 18 : 20,
-          color: o.TVs.colors.TEXT_LOW_CONTRAST
+          color: o.TVs.colors.TEXT_MUTED
         }), null != L && (0, l.jsx)(o.Text, {
           variant: I ? "text-sm/medium" : "text-md/medium",
-          color: "text-low-contrast",
+          color: "text-muted",
           children: L
         })]
       })]
     }), V, null != A && (0, l.jsx)("div", {
-      className: y.attachmentPreview,
+      className: C.attachmentPreview,
       children: (0, l.jsx)("img", {
         alt: "",
         style: {
-          backgroundColor: Z
+          backgroundColor: N
         },
         width: 56,
         height: 56,
-        src: (0, d.UN)(null != (T = A.cardId) ? T : 0)
+        src: (0, d.UN)(null != (E = A.cardId) ? E : 0)
       })
     })]
   })

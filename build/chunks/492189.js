@@ -39,9 +39,9 @@ var Chunk98405 = require("./98405.js"),
   U = Chunk199838.enforce,
   G = Chunk117895.f,
   Z = Chunk840991.f,
-  B = Chunk127849.RangeError,
-  F = Chunk391246.ArrayBuffer,
-  V = F.prototype,
+  F = Chunk127849.RangeError,
+  B = Chunk391246.ArrayBuffer,
+  V = B.prototype,
   H = Chunk391246.DataView,
   Y = Chunk840475.NATIVE_ARRAY_BUFFER_VIEWS,
   W = Chunk840475.TYPED_ARRAY_TAG,
@@ -121,12 +121,12 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         i = t, d = h(n, o);
         var f = t.byteLength;
         if (true === r) {
-          if (f % o || (s = f - d) < 0) throw new B(X)
-        } else if ((s = _(r) * o) + d > f) throw new B(X);
+          if (f % o || (s = f - d) < 0) throw new F(X)
+        } else if ((s = _(r) * o) + d > f) throw new F(X);
         l = s / o
       } else if (q(t)) return x(E, t);
     else return a(A, E, t);
-    else i = new F(s = (l = m(t)) * o);
+    else i = new B(s = (l = m(t)) * o);
     for (k(e, {
         buffer: i,
         byteOffset: d,

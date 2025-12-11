@@ -32,7 +32,7 @@ function d(e) {
     children: [(0, r.jsxs)(s.Text, {
       className: u.headerText,
       variant: p === c.l.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
-      color: "header-primary",
+      color: "text-strong",
       id: n,
       children: [(0, r.jsx)(o.Z, {
         children: t

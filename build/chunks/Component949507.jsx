@@ -36,7 +36,7 @@ function v(e) {
   }), _ = null != j ? j : function(e) {
     switch (e) {
       case h.BRd.DARK:
-        return g;
+        return b;
       case h.BRd.LIGHT:
         return x
     }
@@ -46,25 +46,25 @@ function v(e) {
     size: 50
   });
   return (0, a.jsxs)(l.P3F, {
-    className: i()(b.card, n),
+    className: i()(g.card, n),
     onClick: r,
     "aria-label": f.intl.string(f.t.RB4L2x),
     children: [(0, a.jsxs)("div", {
-      className: b.cardHeader,
+      className: g.cardHeader,
       children: [(0, a.jsx)("img", {
         src: _,
         alt: "",
-        className: b.splashImage
+        className: g.splashImage
       }), (0, a.jsx)("div", {
-        className: b.guildIcon,
+        className: g.guildIcon,
         children: (0, a.jsx)(o.ZP, {
           mask: o.ZP.Masks.AVATAR_DEFAULT,
           width: 58,
           height: 58,
           children: (0, a.jsx)("div", {
-            className: b.iconMask,
+            className: g.iconMask,
             children: (0, a.jsx)(c.Z, {
-              className: b.__invalid_icon,
+              className: g.__invalid_icon,
               iconSrc: y,
               guild: C,
               size: c.Z.Sizes.LARGE
@@ -73,31 +73,31 @@ function v(e) {
         })
       })]
     }), (0, a.jsxs)("div", {
-      className: b.cardDetails,
+      className: g.cardDetails,
       children: [(0, a.jsxs)("div", {
-        className: b.guildNameWrapper,
+        className: g.guildNameWrapper,
         children: [(0, a.jsx)(d.Z, {
-          className: b.guildBadge,
+          className: g.guildBadge,
           guild: t,
           tooltipColor: l.aML.Colors.PRIMARY
         }), (0, a.jsx)(l.Heading, {
           variant: "heading-md/semibold",
-          className: b.guildName,
+          className: g.guildName,
           children: t.name
         })]
       }), (0, a.jsx)(l.Text, {
-        className: b.guildDescription,
+        className: g.guildDescription,
         variant: "text-sm/normal",
         color: "text-default",
         lineClamp: 2,
         children: t.description
       }), (0, a.jsx)("div", {
-        className: b.memberInfo,
+        className: g.memberInfo,
         children: (0, a.jsxs)("div", {
-          className: b.memberCountWrapper,
+          className: g.memberCountWrapper,
           children: [(0, a.jsx)(l.tBG, {
             color: "currentColor",
-            className: b.memberCountIcon,
+            className: g.memberCountIcon,
             size: "xs"
           }), (0, a.jsx)(l.Text, {
             variant: "text-xs/normal",

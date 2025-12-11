@@ -25,7 +25,7 @@ let f = function(e) {
   });
   let _ = (0, c.gy)(f, n, false, t),
     m = u.rV.MONTH,
-    h = p ? "header-primary" : "always-white";
+    h = p ? "text-strong" : "always-white";
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Text, {
       variant: "heading-xxl/extrabold",

@@ -72,9 +72,9 @@ let S = 747,
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  y = e => (0, a.jsx)(C.ZP, k({}, e));
+  N = e => (0, a.jsx)(C.ZP, k({}, e));
 
-function N(e) {
+function y(e) {
   let t = "videoThumbnailSrc" in e ? e.videoThumbnailSrc : e.src,
     [n, a] = (0, m.Cf)(t, "#000000"),
     r = l.useMemo(() => {
@@ -92,7 +92,7 @@ function T(e) {
     onClick: r,
     playable: o,
     isMuted: i
-  } = e, s = N(t), c = (0, a.jsx)(f.BC, {
+  } = e, s = y(t), c = (0, a.jsx)(f.BC, {
     href: null,
     thumbnail: {
       url: t.videoThumbnailSrc,
@@ -117,7 +117,7 @@ function T(e) {
     autoMute: i,
     autoPlay: o,
     renderVideoComponent: j,
-    renderImageComponent: y,
+    renderImageComponent: N,
     renderLinkComponent: h.iT
   }, i ? "player-muted" : "player-unmuted"), d = {
     background: s
@@ -142,7 +142,7 @@ function O(e) {
     isCurrentItem: r,
     itemIndex: o
   } = e, i = {
-    background: N(t)
+    background: y(t)
   };
   return r ? (0, a.jsx)(u.P3F, {
     onClick: () => n(true),
@@ -174,7 +174,7 @@ let E = (0, Chunk112724.Z)(e => {
     onItemChange: i,
     isMuted: u = true,
     onTrackClick: d
-  } = e, [m, f] = (0, l.useState)(0), C = (0, l.useRef)(0), h = (0, l.useRef)(t.length), [k, j] = (0, l.useState)(true), [y, N] = (0, l.useState)(false), [E, w] = (0, l.useState)(false), [L, R] = (0, l.useState)(false), [A, B] = (0, l.useState)(false), Z = (0, l.useCallback)((e, n) => {
+  } = e, [m, f] = (0, l.useState)(0), C = (0, l.useRef)(0), h = (0, l.useRef)(t.length), [k, j] = (0, l.useState)(true), [N, y] = (0, l.useState)(false), [E, w] = (0, l.useState)(false), [L, R] = (0, l.useState)(false), [A, B] = (0, l.useState)(false), Z = (0, l.useCallback)((e, n) => {
     var a;
     let l = null == (a = t[e]) ? true : a.backgroundSrc,
       r = n.interpolate({
@@ -196,7 +196,7 @@ let E = (0, Chunk112724.Z)(e => {
     }
   }, [t]), W = (0, l.useCallback)(function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-    N(false), w(t);
+    y(false), w(t);
     let n = h.current,
       a = (0, g.gN)(C.current, n),
       l = (0, g.gN)(e, n);
@@ -208,7 +208,7 @@ let E = (0, Chunk112724.Z)(e => {
   }, [W, d]), M = (0, l.useCallback)(() => {
     null == d || d(I.o4.CAROUSEL_PREV), W(C.current - 1)
   }, [W, d]), H = (0, l.useCallback)(e => {
-    N(true), w(!e)
+    y(true), w(!e)
   }, []), F = (0, l.useCallback)(() => {
     E || D()
   }, [E, D]), z = (0, l.useCallback)(e => {
@@ -298,7 +298,7 @@ let E = (0, Chunk112724.Z)(e => {
     onInterval: D,
     interval: o,
     className: n,
-    disable: y || E || r,
+    disable: N || E || r,
     children: [V(), (0, a.jsx)("div", {
       className: v.pagination,
       children: (0, a.jsx)(p.ZP, {

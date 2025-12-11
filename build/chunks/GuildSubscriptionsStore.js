@@ -160,7 +160,7 @@ function Z(e) {
   return N(t, n, r)
 }
 
-function B(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n
@@ -168,7 +168,7 @@ function B(e) {
   return A(t, n)
 }
 
-function F(e) {
+function B(e) {
   let {
     guildId: t,
     channelId: n
@@ -248,8 +248,8 @@ let q = new z(Chunk570140.Z, {
   CONNECTION_CLOSED: R,
   IDLE: w,
   LOGOUT: D,
-  VOICE_CHANNEL_SELECT: F,
-  CHANNEL_SELECT: F,
+  VOICE_CHANNEL_SELECT: B,
+  CHANNEL_SELECT: B,
   GUILD_CREATE: x,
   GUILD_DELETE: L,
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: j,
@@ -258,7 +258,7 @@ let q = new z(Chunk570140.Z, {
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: Z,
   GUILD_SUBSCRIPTIONS: G,
-  CHANNEL_PRELOAD: B,
+  CHANNEL_PRELOAD: F,
   INBOX_OPEN: K,
   THREAD_UPDATE: H,
   THREAD_DELETE: Y,

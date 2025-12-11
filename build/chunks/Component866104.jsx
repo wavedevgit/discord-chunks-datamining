@@ -38,7 +38,7 @@ function C(e) {
     className: T.showMoreButton,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
-      color: "header-primary",
+      color: "text-strong",
       children: I.intl.string(I.t.J4cw1q)
     }), (0, r.jsx)(l.LZC, {
       size: 4,
@@ -156,7 +156,7 @@ function P(e) {
           ref: x,
           children: (0, r.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
-            color: "header-primary",
+            color: "text-strong",
             lineClamp: 2,
             children: w ? I.intl.string(I.t.rtgp7q) : I.intl.formatToPlainString(I.t.NZeik9, {
               guildName: a.name

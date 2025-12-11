@@ -81,12 +81,12 @@ function j(e) {
     customEmoji: D,
     unicodeEmoji: A
   } = (0, u.Z)(null == (t = y.emoji) ? true : t.id, null == (i = y.emoji) ? true : i.name);
-  return (0, f.Oq)(y.emoji) || null != D || null != A || (_ = p.intl.string(p.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
-    className: l()(b.optionCard, {
-      [b.hasError]: N || null != _,
-      [b.dropIndicatorBefore]: null != w && T < w,
-      [b.dropIndicatorAfter]: null != w && T > w,
-      [b.singleColumn]: O
+  return (0, m.Oq)(y.emoji) || null != D || null != A || (_ = b.intl.string(b.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
+    className: l()(p.optionCard, {
+      [p.hasError]: N || null != _,
+      [p.dropIndicatorBefore]: null != w && T < w,
+      [p.dropIndicatorAfter]: null != w && T > w,
+      [p.singleColumn]: O
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
@@ -98,12 +98,12 @@ function j(e) {
         option: y,
         index: C,
         onSave: e => {
-          (0, m.Kk)(j, v.id, {
+          (0, f.Kk)(j, v.id, {
             options: v.options.map(t => t.id === y.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, m.Kk)(j, v.id, {
+          (0, f.Kk)(j, v.id, {
             options: v.options.filter(e => e.id !== y.id)
           })
         }
@@ -115,30 +115,30 @@ function j(e) {
       P(Z(e))
     },
     children: [(0, r.jsx)("div", {
-      className: b.dragContainer,
+      className: p.dragContainer,
       children: (0, r.jsx)(o.Vni, {
         size: "xs",
         color: "currentColor",
-        className: b.__invalid_dragIcon
+        className: p.__invalid_dragIcon
       })
     }), (0, r.jsxs)("div", {
-      className: b.optionCardRow,
+      className: p.optionCardRow,
       children: [(0, r.jsx)("div", {
-        className: b.emoji,
+        className: p.emoji,
         children: (0, r.jsx)(g.Z, {
           emojiId: null == (a = y.emoji) ? true : a.id,
           emojiName: null == (c = y.emoji) ? true : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
-        className: b.text,
+        className: p.text,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
-          color: "header-primary",
+          color: "text-strong",
           lineClamp: 1,
           children: y.title
         }), "" !== y.description && (0, r.jsx)(o.Text, {
-          className: b.description,
+          className: p.description,
           variant: "text-xs/normal",
           color: "text-default",
           children: y.description
@@ -166,7 +166,7 @@ function v(e) {
       return n => (0, r.jsx)(e, x(h({}, n), {
         guild: t,
         prompt: i,
-        onSave: e => (0, m.Kk)(t, i.id, {
+        onSave: e => (0, f.Kk)(t, i.id, {
           options: [...i.options, e]
         }),
         onDelete: () => {},
@@ -175,31 +175,31 @@ function v(e) {
     })
   };
   return (0, r.jsx)(o.P3F, {
-    className: l()(b.optionCard, b.addOptionCard, {
-      [b.addFirstOptionCard]: 0 === i.options.length,
-      [b.singleColumn]: s
+    className: l()(p.optionCard, p.addOptionCard, {
+      [p.addFirstOptionCard]: 0 === i.options.length,
+      [p.singleColumn]: s
     }),
     onClick: () => {
-      i.options.length + 1 === f.fY ? c.Z.show({
-        title: p.intl.string(p.t.TggC7k),
-        body: p.intl.formatToPlainString(p.t.kPQKai, {
-          thresholdCount: f.fY
+      i.options.length + 1 === m.fY ? c.Z.show({
+        title: b.intl.string(b.t.TggC7k),
+        body: b.intl.formatToPlainString(b.t.kPQKai, {
+          thresholdCount: m.fY
         }),
-        confirmText: p.intl.string(p.t.BddRzS),
-        cancelText: p.intl.string(p.t["ETE/oC"]),
+        confirmText: b.intl.string(b.t.BddRzS),
+        cancelText: b.intl.string(b.t["ETE/oC"]),
         onConfirm: d
       }) : d()
     },
     children: (0, r.jsxs)("div", {
-      className: b.optionCardRow,
+      className: p.optionCardRow,
       children: [(0, r.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
-        className: b.plusIcon
+        className: p.plusIcon
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: "header-primary",
-        children: p.intl.string(p.t.Ty3lgp)
+        color: "text-strong",
+        children: b.intl.string(b.t.Ty3lgp)
       })]
     })
   })

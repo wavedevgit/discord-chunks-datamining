@@ -2,7 +2,7 @@
 /** chunk id: 580130, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -121,7 +121,7 @@ function G(e) {
 function Z(e) {
   return P(e.entitlement)
 }
-class B extends(r = Chunk442837.yh) {
+class F extends(r = Chunk442837.yh) {
   initialize() {
     this.syncWith([Chunk283595.Z], () => true)
   }
@@ -228,8 +228,8 @@ class B extends(r = Chunk442837.yh) {
     }), exports
   }
 }
-m(B, "displayName", "EntitlementStore");
-let F = new B(Chunk570140.Z, {
+m(F, "displayName", "EntitlementStore");
+let B = new F(Chunk570140.Z, {
   ENTITLEMENT_FETCH_APPLICATION_START: R,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: w,
   ENTITLEMENT_FETCH_APPLICATION_FAIL: x,

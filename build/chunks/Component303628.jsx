@@ -150,8 +150,8 @@ function w(e) {
       }), k(i)
     }
   }, [t, j.length, n]);
-  let B = w.filter(e => e.filename !== a);
-  return !D && 0 === B.length || D && 0 === j.length ? null : (0, r.jsx)(s.bG, {
+  let F = w.filter(e => e.filename !== a);
+  return !D && 0 === F.length || D && 0 === j.length ? null : (0, r.jsx)(s.bG, {
     navigator: P,
     children: (0, r.jsx)(s.SJ, {
       children: e => {
@@ -166,7 +166,7 @@ function w(e) {
             channelId: t,
             keyboardModeEnabled: C,
             option: e
-          }, e.name)) : B.map(e => (0, r.jsx)(y.Z, {
+          }, e.name)) : F.map(e => (0, r.jsx)(y.Z, {
             channelId: t,
             draftType: n.drafts.type,
             upload: e,

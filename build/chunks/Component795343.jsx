@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -38,12 +38,12 @@ function y(e) {
   } = e, j = (0, d.sp)(), k = null != (t = null == j ? true : j.sessionId) ? t : "", {
     noCache: T,
     includeUnpublished: I
-  } = (0, E.Z)(), L = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, E.Z)(), L = (0, i.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
     currentPage: A,
     totalCount: N,
     isFetchingResults: P
-  } = (0, b.a)(), R = (0, o.Wu)([f.Z], () => f.Z.getProductsBySkus(B)), Z = l.useCallback(() => {
+  } = (0, b.a)(), R = (0, i.Wu)([f.Z], () => f.Z.getProductsBySkus(B)), Z = l.useCallback(() => {
     var e;
     null == a || null == (e = a.current) || e.scrollToTop({
       animate: true
@@ -93,14 +93,14 @@ function y(e) {
       page_type: "catalog"
     }), W((e - 1) * U)
   }, [j, U, W]);
-  return (0, r.jsxs)(C.zp.Provider, {
+  return (0, r.jsxs)(h.zp.Provider, {
     value: x,
     children: [(0, r.jsxs)("div", {
-      className: i()({
+      className: o()({
         [O.productsEmpty]: K
       }),
       children: [K && (0, r.jsx)(S.Z, {}), (0, r.jsxs)("div", {
-        className: i()(O.products, {
+        className: o()(O.products, {
           [O.loadIn]: V
         }),
         ref: M,
@@ -108,9 +108,9 @@ function y(e) {
           newValue: {
             tilePosition: t
           },
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(C.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, C.wO)(e, y, j)
+            onClickAnalytics: (0, h.wO)(e, y, j)
           }, e.skuId)
         }, e.skuId))]
       })]

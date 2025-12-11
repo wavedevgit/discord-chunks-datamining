@@ -225,7 +225,7 @@ function x(e, t) {
   }, [n, U, G]), i.useEffect(() => () => {
     U(), P(S), P(T), G()
   }, [u, c.domReference, U, G]);
-  let B = i.useMemo(() => {
+  let F = i.useMemo(() => {
     function e(e) {
       v.current = e.pointerType
     }
@@ -244,8 +244,8 @@ function x(e, t) {
     }
   }, [p, r, n, y, O]);
   return i.useMemo(() => u ? {
-    reference: B
-  } : {}, [u, B])
+    reference: F
+  } : {}, [u, F])
 }
 let L = null,
   j = 0;
@@ -280,8 +280,8 @@ let G = {
 function Z(e) {
   return "inert" === e ? G.inert : "aria-hidden" === e ? G["aria-hidden"] : G.none
 }
-let B = new WeakSet,
-  F = null,
+let F = new WeakSet,
+  B = null,
   V = 0,
   H = e => e && (e.host || H(e.parentNode)),
   Y = (e, t) => t.map(t => {
@@ -297,8 +297,8 @@ function W(e, t, n, r) {
     s = new Set,
     l = new Set(o),
     c = [];
-  F[i] || (F[i] = new WeakMap);
-  let u = F[i];
+  B[i] || (B[i] = new WeakMap);
+  let u = B[i];
 
   function d(e) {
     !(!e || s.has(e)) && (s.add(e), e.parentNode && d(e.parentNode))
@@ -314,7 +314,7 @@ function W(e, t, n, r) {
             r = Z(a),
             o = (r.get(e) || 0) + 1,
             s = (u.get(e) || 0) + 1;
-          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && B.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
+          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && F.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
         }
     })
   }
@@ -323,8 +323,8 @@ function W(e, t, n, r) {
       let t = Z(a),
         n = (t.get(e) || 0) - 1,
         r = (u.get(e) || 0) - 1;
-      t.set(e, n), u.set(e, r), n || (!B.has(e) && a && e.removeAttribute(a), B.delete(e)), r || e.removeAttribute(i)
-    }), --V || (G.inert = new WeakMap, G["aria-hidden"] = new WeakMap, G.none = new WeakMap, B = new WeakSet, F = {})
+      t.set(e, n), u.set(e, r), n || (!F.has(e) && a && e.removeAttribute(a), F.delete(e)), r || e.removeAttribute(i)
+    }), --V || (G.inert = new WeakMap, G["aria-hidden"] = new WeakMap, G.none = new WeakMap, F = new WeakSet, B = {})
   }
 }
 let K = null,

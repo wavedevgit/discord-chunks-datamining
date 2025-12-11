@@ -84,7 +84,7 @@ function v(e) {
   if (!T && !t && i) {
     let e = f.ZP.formatPriceString(f.ZP.getDefaultPrice(n === E.PremiumTypes.TIER_0 ? E.Xh.PREMIUM_MONTH_TIER_0 : E.Xh.PREMIUM_MONTH_TIER_2), E.rV.MONTH);
     if (o === E.C.PREMIUM_TRIAL) {
-      var G, Z, B, F;
+      var G, Z, F, B;
       return (0, r.jsx)(c.Heading, {
         variant: N,
         color: P,
@@ -92,8 +92,8 @@ function v(e) {
         children: b.intl.format(b.t["9vyovu"], {
           planName: (0, f.MF)(null != (Z = E.IW[null != (G = null == U ? true : U.sku_id) ? G : E.Si.NONE]) ? Z : E.Xh.PREMIUM_MONTH_TIER_2),
           duration: (0, f.if)({
-            intervalType: null != (B = null == U ? true : U.interval) ? B : E.rV.DAY,
-            intervalCount: null != (F = null == U ? true : U.interval_count) ? F : 30,
+            intervalType: null != (F = null == U ? true : U.interval) ? F : E.rV.DAY,
+            intervalCount: null != (B = null == U ? true : U.interval_count) ? B : 30,
             capitalize: false
           }),
           price: e

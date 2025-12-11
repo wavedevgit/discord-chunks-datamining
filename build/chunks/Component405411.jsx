@@ -27,7 +27,7 @@ function d(e) {
     className: c.sectionContainer,
     children: [(0, a.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: o.intl.string(o.t.swIgTL)
     }), (0, a.jsx)("div", {
       className: c.contentContainer,
@@ -36,7 +36,7 @@ function d(e) {
         children: [(0, a.jsxs)(i.Text, {
           className: c.commandName,
           variant: "code",
-          color: "header-primary",
+          color: "text-strong",
           children: [s.GI, e.displayName]
         }), (0, a.jsx)(i.Text, {
           variant: "text-md/normal",

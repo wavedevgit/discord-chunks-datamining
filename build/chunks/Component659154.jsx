@@ -15,28 +15,28 @@ let c = e => {
     onTryAgain: t
   } = e;
   return (0, a.jsxs)("div", {
-    className: o.content,
+    className: i.content,
     children: [(0, a.jsx)("img", {
       src: s,
       width: "254",
       height: "127",
       alt: ""
     }), (0, a.jsxs)("div", {
-      className: o.innerContent,
+      className: i.innerContent,
       children: [(0, a.jsx)(r.Heading, {
         variant: "heading-xl/extrabold",
-        children: i.intl.string(i.t["3dgwPD"])
+        children: o.intl.string(o.t["3dgwPD"])
       }), (0, a.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: i.intl.string(i.t["/GAO1P"])
+        children: o.intl.string(o.t["/GAO1P"])
       })]
     }), (0, a.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: o.footerButton,
+      className: i.footerButton,
       children: (0, a.jsx)(r.Button, {
         variant: "primary",
-        text: i.intl.string(i.t["7NqTJn"]),
+        text: o.intl.string(o.t["7NqTJn"]),
         onClick: t
       })
     })]

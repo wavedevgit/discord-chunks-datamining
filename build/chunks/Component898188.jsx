@@ -118,7 +118,7 @@ function A(e) {
           className: S.text,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: v.intl.format(v.t["/beONw"], {
               step: y.title
             })
@@ -150,7 +150,7 @@ function A(e) {
         className: S.text,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: m.title
         }), (0, r.jsx)(c.Text, {
           variant: "text-xxs/normal",

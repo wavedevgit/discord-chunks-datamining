@@ -452,7 +452,7 @@ function w(e, t) {
   let r = n.findIndex(e => e.id === t);
   if (r === n.length - 1) returnfalse;
   n.push(n.splice(r, 1)[0]);
-  for (let e = 0; e < n.length; e++) F(n[e], e);
+  for (let e = 0; e < n.length; e++) B(n[e], e);
   returntrue
 }
 
@@ -572,7 +572,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     widgetType: t,
     defaultConfig: n
@@ -580,7 +580,7 @@ function B(e) {
   T[t] = b({}, T[t], n)
 }
 
-function F(e, t) {
+function B(e, t) {
   i = O(b({}, i), {
     [e.id]: e.set("zIndex", t)
   })
@@ -855,5 +855,5 @@ let q = new z(Chunk570140.Z, {
   LAYOUT_CREATE_WIDGETS: Z,
   LAYOUT_SET_WIDGET_META: D,
   LAYOUT_SHOW_OVERLAY_EXTRAS_HINT: k,
-  LAYOUT_SET_DEFAULT_CONFIG: B
+  LAYOUT_SET_DEFAULT_CONFIG: F
 })

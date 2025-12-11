@@ -177,9 +177,9 @@ let x = 24,
     } = (0, N.Z)(_, n, a, d), T = (0, s.e7)([p.Z], () => p.Z.isSyncing), {
       activeSubscription: x,
       activeSubscriptionListing: L
-    } = (0, E.Z)(a), j = (null == L ? true : L.id) === t, M = (null == x ? true : x.status) === R.O0b.CANCELED, [G, Z] = i.useState(false), [B, F] = i.useState(false), V = i.useCallback(e => {
+    } = (0, E.Z)(a), j = (null == L ? true : L.id) === t, M = (null == x ? true : x.status) === R.O0b.CANCELED, [G, Z] = i.useState(false), [F, B] = i.useState(false), V = i.useCallback(e => {
       let t = false;
-      null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
+      null != e && (t = e.scrollHeight - e.clientHeight > 1), B(t)
     }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == x && z, Q = () => Z(e => !e), X = (0, u.Z)(P.iP), [J, $] = i.useState(false), ee = J || !X, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == _ ? true : _.published) === true, ei = (null == _ ? true : _.soft_deleted) === true, ea = w.intl.string(w.t.KzmEA9);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: D.container,
@@ -242,12 +242,12 @@ let x = 24,
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                className: o()((!B || !G) && D.tierDescriptionTruncate),
+                className: o()((!F || !G) && D.tierDescriptionTruncate),
                 children: (0, r.jsx)("div", {
                   ref: V,
                   children: Y
                 })
-              }), B && (0, r.jsx)(U, {
+              }), F && (0, r.jsx)(U, {
                 isViewAll: G,
                 onToggle: Q,
                 showMoreText: ea

@@ -46,7 +46,7 @@ function P(e) {
       className: O.purchaseSummarInfo,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: t.name
       }), (0, r.jsx)(f.LZC, {
         size: 4
@@ -67,7 +67,7 @@ function P(e) {
       className: O.purchaseSummaryPrice,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: l
       }), (0, r.jsx)(f.LZC, {
         size: 4
@@ -153,13 +153,13 @@ function I(e) {
     guildProductListingId: l,
     guildId: s,
     skuPricePreview: m
-  } = e, x = (0, u.e7)([g.Z], () => g.Z.getGuildProduct(l));
+  } = e, x = (0, u.e7)([p.Z], () => p.Z.getGuildProduct(l));
   c()(null != x, "guildProductListing cannot be null");
   let [b, v] = a.useState(false);
   a.useEffect(() => {
     !async function() {
       try {
-        v(true), await (0, p.cf)(s, l), v(false)
+        v(true), await (0, g.cf)(s, l), v(false)
       } catch (e) {
         n(), (0, h.Z)({
           body: S.intl.string(S.t.VQ0lXY),

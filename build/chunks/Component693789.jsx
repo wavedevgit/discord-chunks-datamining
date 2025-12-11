@@ -157,9 +157,9 @@ function v(e) {
     "aria-label": U,
     submittingStartedLabel: G,
     submittingFinishedLabel: Z
-  } = e, B = m(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
-  let F = p || h,
-    V = F && (null != w || null != D),
+  } = e, F = m(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
+  let B = p || h,
+    V = B && (null != w || null != D),
     H = V ? null : I,
     Y = y(k, t),
     W = i.useRef(false);
@@ -168,12 +168,12 @@ function v(e) {
   }, [h, G, Z]);
   let K = (0, r.jsx)(l.tEY, _(f({}, k), {
     offset: Y,
-    children: (0, r.jsxs)("button", _(f({}, F ? null : B), {
+    children: (0, r.jsxs)("button", _(f({}, B ? null : F), {
       "aria-label": U,
       "aria-busy": !!h || true,
       ref: M,
-      onClick: F ? e => e.preventDefault() : A,
-      onDoubleClick: F ? e => e.preventDefault() : N,
+      onClick: B ? e => e.preventDefault() : A,
+      onDoubleClick: B ? e => e.preventDefault() : N,
       onMouseUp: p ? true : R,
       onMouseDown: p ? true : P,
       onMouseEnter: w,

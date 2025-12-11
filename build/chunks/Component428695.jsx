@@ -60,7 +60,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
     let P = null;
     "function" == typeof n ? P = n() : null != n && (P = (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: a()(g.title, {
         [g.noImageTitle]: null == s
       }, {

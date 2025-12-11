@@ -22,11 +22,11 @@ var Chunk54381 = require("./54381.js"),
 function x(e, t) {
   var x;
   let b = null != (x = (0, d.Z)(t)) && x,
-    h = (0, a.e7)([c.Z], () => {
+    h = (0, o.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    j = (0, a.e7)([c.Z], () => {
+    j = (0, o.e7)([c.Z], () => {
       var e;
       return null == (e = c.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
@@ -35,17 +35,17 @@ function x(e, t) {
         let {
           guildId: t,
           canUseBoosts: i,
-          allPowerups: a,
+          allPowerups: o,
           unlockedPowerups: c
-        } = e, d = m.intl.string(p.default.KC9HRW), x = m.intl.string(p.default.GJiSmP), b = null == a ? true : a[l.IN], h = (null == c ? true : c[l.IN]) != null, j = m.intl.string(p.default["/egwJA"]), _ = h ? true : m.intl.string(p.default.W6Vwn3), C = h ? true : m.intl.string(p.default.lvk1Gc), Z = h ? m.intl.string(p.default["9CfkLO"]) : m.intl.string(m.t["+7XY31"]), w = h ? "secondary" : "expressive", I = i ? () => {
-          h ? s.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, u.KE)(t, b), (0, o.pTH)()
+        } = e, d = m.intl.string(p.default.KC9HRW), x = m.intl.string(p.default.GJiSmP), b = null == o ? true : o[l.IN], h = (null == c ? true : c[l.IN]) != null, j = m.intl.string(p.default["/egwJA"]), _ = h ? true : m.intl.string(p.default.W6Vwn3), C = h ? true : m.intl.string(p.default.lvk1Gc), Z = h ? m.intl.string(p.default["9CfkLO"]) : m.intl.string(m.t["+7XY31"]), w = h ? "secondary" : "expressive", I = i ? () => {
+          h ? s.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, u.KE)(t, b), (0, a.pTH)()
         } : true;
         return {
           title: d,
           description: x,
           openModal: function(e) {
             let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-            (0, o.ZDy)(async () => {
+            (0, a.ZDy)(async () => {
               let {
                 default: l
               } = await n.e("64767").then(n.bind(n, 754887));
@@ -75,7 +75,7 @@ function x(e, t) {
                 footerAction: i && null != I && null != Z ? {
                   variant: w,
                   text: Z,
-                  icon: "expressive" === w ? o.Ucv : true,
+                  icon: "expressive" === w ? a.Ucv : true,
                   onClick: I
                 } : true
               }, n))
@@ -96,12 +96,12 @@ function x(e, t) {
         allPowerups: h,
         unlockedPowerups: j
       }) : true,
-      a = {};
+      o = {};
     for (let t of e) {
       let e = i(t);
-      null != e && (a[t] = e)
+      null != e && (o[t] = e)
     }
-    return a
+    return o
   }, [e, t, b, h, j])
 }
 

@@ -2,7 +2,7 @@
 /** chunk id: 633957, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -53,7 +53,7 @@ function Z(e) {
     {
       analyticsLocations: Z
     } = (0, g.ZP)(h.Z.ACTIVITY_INSTANCE_EMBED),
-    F = (0, u.O)(),
+    B = (0, u.O)(),
     V = (0, s.e7)([C.Z], () => C.Z.getChannel(S), [S]),
     H = (null == V || null == (t = V.isThread) ? true : t.call(V)) ? null == V ? true : V.parent_id : S,
     Y = (0, s.e7)([T.default], () => T.default.getId()),
@@ -105,14 +105,14 @@ function Z(e) {
       }), et ? await (0, _.Z)({
         targetApplicationId: d.id,
         channelId: S,
-        locationObject: F.location,
+        locationObject: B.location,
         analyticsLocations: Z,
         componentId: er,
         commandOrigin: E.bB.ACTIVITY_INSTANCE_EMBED
       }) : await (0, p.Z)({
         applicationId: W.applicationId,
         activityChannelId: S,
-        locationObject: F.location,
+        locationObject: B.location,
         analyticsLocations: Z,
         componentId: er
       })
@@ -167,7 +167,7 @@ function Z(e) {
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "none",
-              children: (0, r.jsx)(B, {
+              children: (0, r.jsx)(F, {
                 start: eu
               })
             })]
@@ -204,7 +204,7 @@ function Z(e) {
     }
   })
 }
-let B = Chunk473749.memo(e => {
+let F = Chunk473749.memo(e => {
   let {
     start: t
   } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
@@ -215,5 +215,5 @@ let B = Chunk473749.memo(e => {
     }), () => e.stop()
   }, [c, t]), (0, S.m)(n)
 });
-B.displayName = "ActivityRuntimeCounter";
-let F = Chunk473749.memo(Z)
+F.displayName = "ActivityRuntimeCounter";
+let B = Chunk473749.memo(Z)

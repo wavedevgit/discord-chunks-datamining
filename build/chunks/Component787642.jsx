@@ -47,7 +47,7 @@ function m() {
       className: Chunk462408.header,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: Chunk388032.intl.string(Chunk388032.t.IuMx1Y)
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         tag: "div",

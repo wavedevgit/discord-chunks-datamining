@@ -57,16 +57,16 @@ function S(e) {
     U = (0, m.Ap)(S.paymentSourceId),
     G = null != j && !I,
     Z = (0, b.N)(),
-    B = (0, g.Vi)(),
-    F = P.interval === y.rV.YEAR ? O.t.ECT4A5 : O.t.v9QeON,
-    V = () => B && !R && n === y.Xh.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(c.Text, {
+    F = (0, g.Vi)(),
+    B = P.interval === y.rV.YEAR ? O.t.ECT4A5 : O.t.v9QeON,
+    V = () => F && !R && n === y.Xh.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(c.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
       className: v.planOptionDiscount,
       children: O.intl.string(O.t.iQTfWx)
     }) : null,
-    H = () => null != j && !B && (0, r.jsx)(c.Text, {
+    H = () => null != j && !F && (0, r.jsx)(c.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
@@ -75,7 +75,7 @@ function S(e) {
         discount: (0, _.T3)(N, j / 100)
       })
     }),
-    Y = () => B ? V() : P.interval === y.rV.YEAR && null != t || G && !x ? P.interval === y.rV.YEAR && null != t ? (0, r.jsxs)("span", {
+    Y = () => F ? V() : P.interval === y.rV.YEAR && null != t || G && !x ? P.interval === y.rV.YEAR && null != t ? (0, r.jsxs)("span", {
       className: v.planOptionMonthsFree,
       children: ["(", O.intl.string(O.t["122kWB"]), ")"]
     }) : G && !x ? H() : true : null,
@@ -106,7 +106,7 @@ function S(e) {
           regularPrice: (0, h.T4)(k.amount, k.currency)
         })
       }
-      return A ? O.intl.format(F, {
+      return A ? O.intl.format(B, {
         price: (0, h.T4)(k.amount, k.currency)
       }) : P.interval === y.rV.YEAR ? O.intl.formatToPlainString(O.t.rtLTJP, {
         percent: j

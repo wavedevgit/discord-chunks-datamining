@@ -23,21 +23,21 @@ function g(e) {
     connection: n,
     guildId: g,
     location: j
-  } = e, v = (0, r.e7)([u.Z], () => null != n.application_id ? u.Z.getApplication(n.application_id) : null, [n.application_id]), {
-    analyticsLocations: x
+  } = e, x = (0, r.e7)([u.Z], () => null != n.application_id ? u.Z.getApplication(n.application_id) : null, [n.application_id]), {
+    analyticsLocations: v
   } = (0, a.ZP)(j);
   i.useEffect(() => {
-    null != v || null == n.application_id || u.Z.isFetchingApplication(n.application_id) || u.Z.didFetchingApplicationFail(n.application_id) || (0, s.UM)(n.application_id).catch(() => {})
-  }, [v, n.application_id]);
-  let y = null != (t = null == v ? true : v.name) ? t : f.intl.string(f.t.cgPbaZ),
+    null != x || null == n.application_id || u.Z.isFetchingApplication(n.application_id) || u.Z.didFetchingApplicationFail(n.application_id) || (0, s.UM)(n.application_id).catch(() => {})
+  }, [x, n.application_id]);
+  let y = null != (t = null == x ? true : x.name) ? t : f.intl.string(f.t.cgPbaZ),
     {
       hasAlreadyLinked: b,
       canStartAuthorization: C,
       startAuthorization: O,
       fetched: Z
-    } = (0, c.F)(v),
+    } = (0, c.F)(x),
     w = (0, l.jsx)(d.Z, {
-      game: v,
+      game: x,
       size: d.A.MEDIUM
     }),
     _ = i.useCallback(() => {
@@ -73,9 +73,9 @@ function g(e) {
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
       }), t)), O({
-        analyticsLocations: x
+        analyticsLocations: v
       })
-    }, [O, g, n.application_id, j, x]);
+    }, [O, g, n.application_id, j, v]);
   return (0, l.jsx)(p.Z, {
     displayName: y,
     description: n.description,

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
 let h = o().parserFor(Chunk547563.Z),
   f = o().reactFor(o().ruleOutput(Chunk547563.Z, "react"));
 
-function b(e) {
+function g(e) {
   let {
     description: t,
     supportsMarkdown: n
@@ -30,7 +30,7 @@ function b(e) {
     });
     return e.observe(o.current), () => e.disconnect()
   }, []);
-  let [u, p] = r.useState(false), b = r.useCallback(() => {
+  let [u, p] = r.useState(false), g = r.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, a.jsxs)(a.Fragment, {
@@ -53,14 +53,14 @@ function b(e) {
         color: "text-default",
         children: t
       })
-    }), i || u ? (0, a.jsx)(g, {
+    }), i || u ? (0, a.jsx)(b, {
       isShowingMore: u,
-      onToggle: b
+      onToggle: g
     }) : null]
   })
 }
 
-function g(e) {
+function b(e) {
   let {
     onToggle: t,
     isShowingMore: n
@@ -94,10 +94,10 @@ let x = function(e) {
   var t, n;
   let {
     application: i
-  } = e, l = null == (t = i.directory_entry) ? true : t.detailed_description, s = null == (n = i.directory_entry) ? true : n.short_description, o = r.useMemo(() => null != l && l.length > 0 ? (0, a.jsx)(b, {
+  } = e, l = null == (t = i.directory_entry) ? true : t.detailed_description, s = null == (n = i.directory_entry) ? true : n.short_description, o = r.useMemo(() => null != l && l.length > 0 ? (0, a.jsx)(g, {
     description: l,
     supportsMarkdown: true
-  }) : null != s && s.length > 0 ? (0, a.jsx)(b, {
+  }) : null != s && s.length > 0 ? (0, a.jsx)(g, {
     description: s,
     supportsMarkdown: false
   }) : null, [l, s]);
@@ -105,7 +105,7 @@ let x = function(e) {
     className: m.overviewContainer,
     children: [(0, a.jsx)(c.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: p.intl.string(p.t.txraKS)
     }), o]
   })

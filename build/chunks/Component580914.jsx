@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk636977 = require("./636977.js"),
   Chunk685816 = require("./685816.js"),
@@ -53,15 +53,15 @@ let B = (0, Chunk884697.IC)(90),
       heroBlock: P,
       tab: R,
       onVisibilityChange: Z
-    } = e, w = (0, v.W)("HeroBlock"), H = (0, o.O)(e => {
+    } = e, w = (0, v.W)("HeroBlock"), H = (0, i.O)(e => {
       null == Z || Z(e)
-    }, .1, null != Z), D = l.useRef(null), M = (0, x.B)("HeroBlock"), F = (0, u.e7)([b.default], () => b.default.getCurrentUser()), W = (0, h.sp)(), U = l.useMemo(() => {
+    }, .1, null != Z), D = l.useRef(null), M = (0, x.B)("HeroBlock"), F = (0, u.e7)([b.default], () => b.default.getCurrentUser()), W = (0, C.sp)(), U = l.useMemo(() => {
       var e, t;
       return null != P ? P : null == N ? A : {
         rankedSkuIds: null != (e = N.heroRanking) ? e : [],
         name: N.name,
         unpublishedAt: N.unpublishedAt,
-        logoUrl: (0, C.uV)(null != (t = N.heroLogo) ? t : N.logo, {
+        logoUrl: (0, h.uV)(null != (t = N.heroLogo) ? t : N.logo, {
           size: B
         }),
         categorySkuId: N.skuId,
@@ -117,7 +117,7 @@ let B = (0, Chunk884697.IC)(90),
         className: L.riveEventOverlay,
         riveEventTargetRef: D
       }) : null, (0, r.jsx)("div", {
-        className: i()(L.banner, {
+        className: o()(L.banner, {
           [L.rivBanner]: $,
           [L.responsive]: J
         }),
@@ -141,7 +141,7 @@ let B = (0, Chunk884697.IC)(90),
             text: en
           })
         }) : (0, r.jsxs)("div", {
-          className: i()(L.heroHeaderContainer, {
+          className: o()(L.heroHeaderContainer, {
             [L.responsive]: J
           }),
           children: [n ? (0, r.jsx)("div", {
@@ -162,7 +162,7 @@ let B = (0, Chunk884697.IC)(90),
               }), null != U.title && (0, r.jsx)(d.Heading, {
                 variant: "heading-xxl/bold",
                 className: L.title,
-                color: "header-primary",
+                color: "text-strong",
                 children: U.title
               }), "" !== U.summary && (0, r.jsx)(d.Text, {
                 variant: "text-md/normal",

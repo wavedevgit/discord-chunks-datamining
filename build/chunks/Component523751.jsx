@@ -232,8 +232,8 @@ function j(e) {
   if (k === y.Q.NONE) return null;
   let {
     IconComponent: Z,
-    backgroundDarkColor: B,
-    backgroundLightColor: F,
+    backgroundDarkColor: F,
+    backgroundLightColor: B,
     foregroundDarkColor: V,
     foregroundLightColor: H,
     premiumBackgroundColor: Y,
@@ -243,7 +243,7 @@ function j(e) {
   if (null == Z) return null;
   M.premium && (t = W, n = Y);
   let z = (0, c.wj)(j) ? V : H,
-    q = (0, c.wj)(j) ? B : F;
+    q = (0, c.wj)(j) ? F : B;
   t = null != t ? t : z, n = null != n ? n : q;
   let Q = Math.floor(.75 * w) - (null != K ? K : 0);
   return (0, r.jsx)(u.aML, {

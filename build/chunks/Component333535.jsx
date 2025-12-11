@@ -32,7 +32,7 @@ function b(e) {
       className: g.sharePromptContent,
       children: [(0, i.jsx)(a.Text, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: m.intl.string(m.t["5uAO7d"])
       }), (0, i.jsx)(a.Text, {
         variant: "text-sm/medium",

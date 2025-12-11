@@ -1,7 +1,7 @@
 /** Chunk was on 86872 **/
 /** chunk id: 664926, original params: e,l,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,18 +12,18 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk929903 = require("./929903.js");
 
-function c(e) {
+function o(e) {
   let {
     friendMemberIds: l
   } = e, n = (0, i.Wu)([s.default], () => l.slice(0, 3).map(e => s.default.getUser(e)).filter(e => null != e));
   if (0 === n.length) return null;
-  let c = n[0],
-    o = {
+  let o = n[0],
+    c = {
       count: l.length - 1,
-      username: c.username,
+      username: o.username,
       username2: 2 === l.length && n.length >= 2 ? n[1].username : ""
     },
-    m = u.intl.format(u.t["5NHEPu"], o);
+    m = u.intl.format(u.t["5NHEPu"], c);
   return (0, t.jsxs)("div", {
     className: d.container,
     children: [(0, t.jsx)("div", {

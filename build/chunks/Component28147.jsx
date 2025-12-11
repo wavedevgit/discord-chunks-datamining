@@ -78,10 +78,10 @@ let j = Array(6).fill(0).map((e, t) => t),
   G = 5;
 
 function Z(e) {
-  return (0, r.jsx)(B, D({}, e))
+  return (0, r.jsx)(F, D({}, e))
 }
 
-function B(e) {
+function F(e) {
   let {
     context: t,
     query: n,
@@ -137,7 +137,7 @@ function B(e) {
     searchQuery: n,
     textContent: a === g._b.TEXT ? P.intl.string(P.t.LSNOYf) : P.intl.string(P.t.Clu7Qh)
   }) : (0, r.jsxs)("div", {
-    children: [m && (0, r.jsx)(F, {
+    children: [m && (0, r.jsx)(B, {
       context: t,
       commandResults: _,
       query: n
@@ -151,7 +151,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   var t, n;
   let {
     context: a,

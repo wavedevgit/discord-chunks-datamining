@@ -18,7 +18,7 @@ function l(e) {
     className: s.infoContainer,
     children: [(0, r.jsx)(i.Heading, {
       className: s.finishTitle,
-      color: "header-primary",
+      color: "text-strong",
       variant: "heading-xl/bold",
       children: o.intl.string(o.t["3C+rbC"])
     }), (0, r.jsx)(i.Text, {

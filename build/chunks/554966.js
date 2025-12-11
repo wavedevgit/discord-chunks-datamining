@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 554966, original params: e,n,t (module,exports,require) **/
+/** chunk id: 554966, original params: e,t,n (module,exports,require) **/
 module.exports = {
   categoryRow: "e4503acec53c64dd-categoryRow",
   uncategorized: "e4503acec53c64dd-uncategorized",

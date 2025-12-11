@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
 let l = e => {
   let {
     className: t,
-    color: n = "header-primary",
+    color: n = "text-strong",
     responsive: i = true,
     children: l
   } = e;

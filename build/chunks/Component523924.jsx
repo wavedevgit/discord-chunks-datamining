@@ -47,7 +47,7 @@ let f = e => {
       children: [(0, r.jsx)(s.Heading, {
         id: t,
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: (null == b ? true : b.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
           guildName: b.name
         }) : d.intl.string(d.t.gBPcuP)

@@ -54,15 +54,15 @@ function j(e) {
     }
   }, [d, f]), Z = R.length, w = function(e, t, n, a, r) {
     if (0 === t && 0 === e) return null;
-    if (t > 0 && 0 === n) return b.intl.formatToPlainString(b.t.pnzE1t, {
+    if (t > 0 && 0 === n) return g.intl.formatToPlainString(g.t.pnzE1t, {
       mutualGuildCount: t
     });
-    let i = t > 0 ? b.t.YR8PSL : b.t.GQjq6c,
+    let i = t > 0 ? g.t.YR8PSL : g.t.GQjq6c,
       l = new Intl.NumberFormat(a, {
         notation: r ? "compact" : "standard",
         compactDisplay: "short"
       });
-    return b.intl.formatToPlainString(i, {
+    return g.intl.formatToPlainString(i, {
       guildCount: l.format(e),
       mutualGuildCount: t,
       nonMutualGuildCount: l.format(n)
@@ -70,9 +70,9 @@ function j(e) {
   }(N, T, A, O, y);
   return 0 === L.length && null == w ? null : (0, r.jsxs)(r.Fragment, {
     children: [P, (0, r.jsxs)("div", {
-      className: s()(j, g.wrapper),
+      className: s()(j, b.wrapper),
       children: [(0, r.jsx)("div", {
-        className: s()(g.icons, S),
+        className: s()(b.icons, S),
         children: L.length > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [L.map((e, t) => {
             let n = t === L.length - 1 && 0 === Z,
@@ -86,7 +86,7 @@ function j(e) {
                 text: e.name,
                 position: "top",
                 children: (0, r.jsx)("img", {
-                  className: s()(g.icon, C[I]),
+                  className: s()(b.icon, C[I]),
                   src: a,
                   alt: ""
                 })
@@ -94,19 +94,19 @@ function j(e) {
             return n ? (0, r.jsx)(i.Fragment, {
               children: l
             }, e.id) : (0, r.jsx)(p.ZP, {
-              className: g.iconMask,
+              className: b.iconMask,
               height: I,
               width: I,
               mask: p.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
               children: l
             }, e.id)
           }), Z > 0 ? (0, r.jsx)(c.u, {
-            text: b.intl.formatToPlainString(b.t.m6oRrA, {
+            text: g.intl.formatToPlainString(g.t.m6oRrA, {
               appNames: E.format(R.map(e => e.name))
             }),
             position: "top",
             children: (0, r.jsxs)("div", {
-              className: s()(g.moreGuilds, v[I]),
+              className: s()(b.moreGuilds, v[I]),
               children: ["+", Z]
             })
           }) : null]
@@ -115,7 +115,7 @@ function j(e) {
           color: "currentColor",
           width: I,
           height: I,
-          className: g.defaultIcon
+          className: b.defaultIcon
         })
       }), null != w ? (0, r.jsx)(u.Text, {
         variant: _,

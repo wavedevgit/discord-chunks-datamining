@@ -52,7 +52,7 @@ function Z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function B(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,7 +65,7 @@ function B(e) {
   return e
 }
 
-function F(e, t) {
+function B(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -77,7 +77,7 @@ function F(e, t) {
 }
 
 function V(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -263,7 +263,7 @@ function q(e) {
       stream: e
     }
   });
-  return (0, r.jsx)(K, V(B(V(B({}, _), {
+  return (0, r.jsx)(K, V(F(V(F({}, _), {
     application: d
   }), e), {
     overlayVoiceStates: o,

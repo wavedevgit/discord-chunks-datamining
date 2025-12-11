@@ -200,7 +200,7 @@ function y(e) {
         })
       }), (0, r.jsx)(c.Text, {
         variant: null != t ? t : "text-sm/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: d.intl.string(d.t.VZsY3r)
       })]
     }), (0, r.jsx)("div", {

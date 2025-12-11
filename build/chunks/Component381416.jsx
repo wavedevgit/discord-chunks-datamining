@@ -25,7 +25,7 @@ function s(e) {
       })
     }), (0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: null != s ? l.intl.formatToPlainString(l.t.f5Jaw7, {
         guildName: s.name
       }) : l.intl.string(l.t["0sTyEb"])

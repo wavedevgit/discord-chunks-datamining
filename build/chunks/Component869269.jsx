@@ -49,29 +49,29 @@ function x(e) {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/semibold",
           className: h.publishListingInfoHeader,
-          children: b.intl.string(b.t.WOlcS8)
+          children: p.intl.string(p.t.WOlcS8)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: b.intl.string(b.t.rMulDT)
+          children: p.intl.string(p.t.rMulDT)
         })]
       }), (0, r.jsx)(a.u, {
         shouldShow: _,
-        text: b.intl.string(b.t.v7lRIh),
+        text: p.intl.string(p.t.v7lRIh),
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(s.Button, {
             disabled: _,
             variant: "secondary",
             onClick: C,
             loading: v,
-            text: b.intl.string(b.t.Lj6R5m)
+            text: p.intl.string(p.t.Lj6R5m)
           })
         })
       })]
     }), (0, r.jsx)(g.Z, {
       priceTiers: S
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(f.Z, {
       allSubscriptionListings: x
-    }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(u.Z, {
+    }), (0, r.jsx)(m.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(u.Z, {
       onDeleteEditState: y
     })]
   })

@@ -169,8 +169,8 @@ let eL = {
   },
   eG = new Set([Chunk981631.kVF.NO_INPUT_DETECTED, Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED, Chunk981631.kVF.STREAMER_MODE, Chunk981631.kVF.VIDEO_UNSUPPORTED_BROWSER, Chunk981631.kVF.SPOTIFY_AUTO_PAUSED, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_ERROR, Chunk981631.kVF.DISPATCH_INSTALL_SCRIPT_PROGRESS, Chunk981631.kVF.BLOCKED_BY_PROXY]),
   eZ = {},
-  eB = {},
-  eF = Object.freeze({
+  eF = {},
+  eB = Object.freeze({
     id: null,
     message: null,
     buttonText: null,
@@ -273,7 +273,7 @@ let eQ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           voiceState: t
         } = e;
-        return (0, F.gf)(t) === F.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+        return (0, B.gf)(t) === B.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
       }
     },
     [Chunk981631.kVF.LURKING_GUILD]: {
@@ -681,14 +681,14 @@ function e$() {
         premiumSubscription: Chunk913527,
         selectedGuildId: a
       });
-      eV = ex(ew({}, eF), {
+      eV = ex(ew({}, eB), {
         type: require,
         metadata: Chunk442837
       });
       break
     } if (null != eV) {
-    (null == (n = eV.metadata) ? true : require.sampleRate) != null && null == eB[eV.type] && (eB[eV.type] = Math.random() <= eV.metadata.sampleRate);
-    let e = false === eB[eV.type];
+    (null == (n = eV.metadata) ? true : require.sampleRate) != null && null == eF[eV.type] && (eF[eV.type] = Math.random() <= eV.metadata.sampleRate);
+    let e = false === eF[eV.type];
     (eq(eV.type) || module) && (eV = null)
   }
 }
@@ -745,7 +745,7 @@ function e9(e) {
 }
 
 function te() {
-  eZ = {}, eB = {}, eV = null
+  eZ = {}, eF = {}, eV = null
 }
 class tt extends(r = Chunk442837.ZP.Store) {
   initialize() {

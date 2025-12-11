@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk668339 = require("./668339.jsx"),
   Chunk159691 = require("./159691.js"),
@@ -31,9 +31,9 @@ let h = e => {
   let H = l.useCallback(() => {
       u.Z.prune(t.id, h, v), i()
     }, [t.id, h, v, i]),
-    w = (0, o.Wu)([b.Z, m.Z], () => {
+    w = (0, a.Wu)([b.Z, m.Z], () => {
       let e = b.Z.getHighestRole(t);
-      return a()(m.Z.getSortedRoles(t.id)).filter(n => !(0, C.fI)(n) && b.Z.isRoleHigher(t, e, n)).map(e => {
+      return o()(m.Z.getSortedRoles(t.id)).filter(n => !(0, C.fI)(n) && b.Z.isRoleHigher(t, e, n)).map(e => {
         let {
           id: t,
           name: n

@@ -106,7 +106,7 @@ function k(e) {
 }
 
 function U(e) {
-  B(e), V(e)
+  F(e), V(e)
 }
 
 function G(e) {
@@ -126,7 +126,7 @@ function Z(e) {
   j(t, n, r, "Patch")
 }
 
-function B(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
@@ -134,7 +134,7 @@ function B(e) {
   M(t, n)
 }
 
-function F(e) {
+function B(e) {
   let {
     applicationId: t,
     branchId: n
@@ -268,9 +268,9 @@ let J = new X(Chunk570140.Z, {
   DISPATCH_APPLICATION_INSTALL: k,
   DISPATCH_APPLICATION_UPDATE: Z,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: B,
+  DISPATCH_APPLICATION_CANCEL: F,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: F,
+  DISPATCH_APPLICATION_MOVE_UP: B,
   DISPATCH_APPLICATION_REMOVE_FINISHED: V,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: W,

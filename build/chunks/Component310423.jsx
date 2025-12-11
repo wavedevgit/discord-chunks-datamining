@@ -74,7 +74,7 @@ let A = {
 
 function P(e) {
   return (0, r.jsx)(l.Text, C(I({}, A), {
-    color: "header-primary",
+    color: "text-strong",
     children: e
   }))
 }

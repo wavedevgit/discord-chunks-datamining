@@ -75,7 +75,7 @@ function x(e) {
           username: null == t ? true : t.globalName,
           channelName: (0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: r
           }, n.id)
         })

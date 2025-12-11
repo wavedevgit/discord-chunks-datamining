@@ -58,7 +58,7 @@ let O = function(e) {
   r.useEffect(() => {
     (null == A ? true : A.storefront_available) && null != t && (0, l.Z)(t)
   }, [null == A ? true : A.storefront_available, t]);
-  let k = (0, b.Uc)(),
+  let k = (0, g.Uc)(),
     M = (0, i.e7)([p.Z], () => p.Z.getFetchState({
       applicationId: null == A ? true : A.id
     })),
@@ -79,21 +79,21 @@ let O = function(e) {
       previousView: t
     } = F.current;
     (null == A ? true : A.id) != null && M !== p.M.FETCHING && (0, m.zZ)(I.rMx.APP_DIRECTORY_PAGE_VIEWED, {
-      current_page: b.m_.APPLICATION,
+      current_page: g.m_.APPLICATION,
       previous_page: null == t ? true : t.type,
       application_id: A.id,
       referrer: document.referrer,
       suggested_application_ids: null == e ? true : e.map(e => e.id)
     })
   }, [null == A ? true : A.id, M]);
-  let H = r.useMemo(() => [{
+  let z = r.useMemo(() => [{
       id: y.GlobalDiscoveryAppsSections.ABOUT,
       label: S.intl.string(S.t.DkyHMK)
     }, {
       id: y.GlobalDiscoveryAppsSections.STORE,
       label: S.intl.string(S.t.jgEXGB)
     }], []),
-    z = r.useMemo(() => {
+    H = r.useMemo(() => {
       if (null == A) return null;
       switch (Z) {
         case y.GlobalDiscoveryAppsSections.ABOUT:
@@ -110,7 +110,7 @@ let O = function(e) {
       (0, m.zZ)(I.rMx.APP_DIRECTORY_PROFILE_TAB_CLICKED, {
         application_id: t,
         tab_name: e
-      }), w(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, g.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, g.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
+      }), w(e), e === y.GlobalDiscoveryAppsSections.ABOUT ? (0, b.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t)) : (0, b.Gp)(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, e))
     }, [t]),
     Y = Z === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, a.jsx)(c.Z, {
@@ -139,11 +139,11 @@ let O = function(e) {
             children: [R && (0, a.jsx)("div", {
               className: P.contentTabs,
               children: (0, a.jsx)(o.Z, {
-                tabs: H,
+                tabs: z,
                 onTabSelect: V,
                 selectedTab: Z
               })
-            }), z, (0, a.jsx)(j.Z, {
+            }), H, (0, a.jsx)(j.Z, {
               applicationId: t,
               fetchState: M,
               similarApplications: B,

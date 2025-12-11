@@ -136,7 +136,7 @@ function I(e) {
     children: [(0, l.jsx)(a.Heading, {
       className: O.title,
       variant: "heading-lg/bold",
-      color: "header-primary",
+      color: "text-strong",
       children: t ? N.intl.string(N.t.IlHdW8) : N.intl.string(N.t.WsOisp)
     }), (0, l.jsxs)(a.njP, {
       className: O.tabs,

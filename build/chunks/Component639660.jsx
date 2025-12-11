@@ -35,26 +35,26 @@ function _() {
 function C(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([c.Z], () => {
+  } = e, n = (0, o.e7)([c.Z], () => {
     var e;
     return (null == (e = c.Z.getGuild(t)) ? true : e.features.has(v.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
   }), C = (0, d.Z)(t), Z = (0, u.Z)(t), w = C.length > 0 || Z.length > 0, {
     shouldShow: I,
     notificationConfig: E
   } = (0, g._)(t, "GuildPowerupNotificationContainer"), P = [];
-  I && P.push(o.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
+  I && P.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
   let [T, y] = (0, s.ZT)(P, t), N = null != T && null != E, O = [];
-  N || w || O.push(o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  N || w || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
   let [S, A] = (0, s.US)(O), k = (e => {
     let n = [];
     if (w) {
       let e = C.some(e => e.skuId === i.A$),
         l = Z.length > 0 ? h.intl.string(x.default["B3OfL/"]) : true,
-        a = [];
-      e && a.push(h.intl.string(b.default.Sfr0Jw)), Z.length > 0 && a.push(h.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
+        o = [];
+      e && o.push(h.intl.string(b.default.Sfr0Jw)), Z.length > 0 && o.push(h.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
         guildId: t,
         powerupNames: [...C.map(e => e.title), ...null != l ? [l] : []],
-        warnings: a
+        warnings: o
       }, "expiring-powerups"))
     }
     return N && n.push((0, r.jsx)(p.Z, {
@@ -62,7 +62,7 @@ function C(e) {
       markAsDismissed: e => {
         y(e)
       }
-    }, "rollback-notification")), null != e && e === o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(f.Z, {
+    }, "rollback-notification")), null != e && e === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(f.Z, {
       markAsDismissed: A
     }, "info-card")), n
   })(S);

@@ -45,11 +45,11 @@ var G = Array(g);
 d(G);
 var Z = Array(y);
 
-function B(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   this.static_tree = e, this.extra_bits = t, this.extra_base = n, this.elems = r, this.max_length = i, this.has_stree = e && e.length
 }
 
-function F(e, t) {
+function B(e, t) {
   this.dyn_tree = e, this.max_code = 0, this.stat_desc = t
 }
 
@@ -124,7 +124,7 @@ function X() {
   for (; module <= 279;) j[2 * module + 1] = 7, module++, l[7]++;
   for (; module <= 287;) j[2 * module + 1] = 8, module++, l[8]++;
   for (Q(j, b + 1, l), e = 0; module < y; module++) M[2 * module + 1] = 5, M[2 * module] = K(module, 5);
-  r = new B(j, R, E + 1, b, S), i = new B(M, w, 0, y, S), a = new B([], D, 0, O, T)
+  r = new F(j, R, E + 1, b, S), i = new F(M, w, 0, y, S), a = new F([], D, 0, O, T)
 }
 
 function J(e) {
@@ -240,5 +240,5 @@ function e_(e, t, n) {
   return e.pending_buf[e.d_buf + 2 * e.last_lit] = t >>> 8 & 255, e.pending_buf[e.d_buf + 2 * e.last_lit + 1] = 255 & t, e.pending_buf[e.l_buf + e.last_lit] = 255 & n, e.last_lit++, 0 === t ? e.dyn_ltree[2 * n]++ : (e.matches++, t--, e.dyn_ltree[(U[n] + E + 1) * 2]++, e.dyn_dtree[2 * V(t)]++), e.last_lit === e.lit_bufsize - 1
 }
 exports._tr_init = function(e) {
-  eu || (X(), eu = true), e.l_desc = new F(e.dyn_ltree, r), e.d_desc = new F(e.dyn_dtree, i), e.bl_desc = new F(e.bl_tree, a), e.bi_buf = 0, e.bi_valid = 0, J(e)
+  eu || (X(), eu = true), e.l_desc = new B(e.dyn_ltree, r), e.d_desc = new B(e.dyn_dtree, i), e.bl_desc = new B(e.bl_tree, a), e.bi_buf = 0, e.bi_valid = 0, J(e)
 }, exports._tr_stored_block = ed, exports._tr_flush_block = ep, exports._tr_tally = e_, exports._tr_align = ef

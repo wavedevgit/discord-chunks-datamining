@@ -84,22 +84,22 @@ function k(e, t) {
 let U = new Chunk710845.Z("ApplicationCommandIndexStore"),
   G = Symbol("currentUser"),
   Z = Symbol("stale"),
-  B = Symbol("current"),
-  F = Object.freeze({
+  F = Symbol("current"),
+  B = Object.freeze({
     descriptors: [],
     commands: [],
     sectionedCommands: [],
     loading: true
   }),
   V = Object.freeze({
-    serverVersion: B,
+    serverVersion: F,
     fetchState: {
       fetching: false
     },
     result: {
       sections: {},
       sectionIdsByBotId: {},
-      version: B
+      version: F
     }
   }),
   H = Object.freeze({
@@ -229,7 +229,7 @@ function ei(e) {
     }
     t.commands[e.id] = e
   }
-  let d = null != (n = a.version) ? n : B;
+  let d = null != (n = a.version) ? n : F;
   Q(i, {
     serverVersion: d,
     result: {
@@ -420,7 +420,7 @@ class e_ extends(r = Chunk442837.ZP.Store) {
     return e in this.indices
   }
   query(e, t, n) {
-    if (null == y.default.getCurrentUser()) return F;
+    if (null == y.default.getCurrentUser()) return B;
     let r = "channel" === e.type ? e.channel : true,
       i = this.getContextState(e),
       a = this.getUserState(),
@@ -718,7 +718,7 @@ function eC(e) {
     let e = eA(S.Tm[D.bi.BUILT_IN], w, true, true, L);
     null != e && x.push(e)
   }
-  let B = x.flatMap(e => e.data.map(t => k(j({}, t), {
+  let F = x.flatMap(e => e.data.map(t => k(j({}, t), {
     section: e.section
   })));
   if (O === A.p.COMMAND_ONLY || O === A.p.COMMAND_OR_APPLICATION) {
@@ -729,7 +729,7 @@ function eC(e) {
       channel: e,
       guild: t
     } : true;
-    B.sort((e, t) => {
+    F.sort((e, t) => {
       if (v.commands.useScore) {
         var r, i;
         let n = null != (r = e.score) ? r : 0,
@@ -745,7 +745,7 @@ function eC(e) {
     })
   }
   return {
-    commands: B,
+    commands: F,
     descriptors: x.map(e => e.section),
     sectionedCommands: x,
     loading: (null == u ? true : u.fetchState.fetching) === true || (null == f ? true : f.fetchState.fetching) === true || null != E && (null == (r = p.get(E)) ? true : r.fetchState.fetching) === true

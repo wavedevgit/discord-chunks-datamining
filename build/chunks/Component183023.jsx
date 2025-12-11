@@ -106,10 +106,10 @@ let J = 32,
       emojiId: t.emojiId,
       currentGuildId: L.Z.getGuildId()
     });
-    let n = (0, B.Z)(t.name),
+    let n = (0, F.Z)(t.name),
       i = n !== t.name;
     return (0, r.jsx)(c.V, {
-      children: (0, r.jsx)(F.W_, {
+      children: (0, r.jsx)(B.W_, {
         children: (0, r.jsxs)(b.Z, {
           className: K.emojiSection,
           children: [(0, r.jsx)(m.Z, {
@@ -254,7 +254,7 @@ let J = 32,
       emojiId: t.emojiId,
       refreshPositionKey: i
     });
-    return f ? (0, r.jsx)(F.SE, {}) : (0, r.jsx)(c.V, {
+    return f ? (0, r.jsx)(B.SE, {}) : (0, r.jsx)(c.V, {
       "aria-label": t.name,
       children: (0, r.jsx)(ei, {
         node: t,
@@ -283,7 +283,7 @@ let J = 32,
       guildEmoji: x,
       demoMode: k = false,
       nonce: U
-    } = e, B = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([L.Z], () => L.Z.getGuildId()), q = G.ZP.isPremium(B), Q = null != z && (z === (null == v ? true : v.id) || z === (null == T ? true : T.id)), X = null != T, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
+    } = e, F = (0, l.e7)([j.default], () => j.default.getCurrentUser()), z = (0, l.e7)([L.Z], () => L.Z.getGuildId()), q = G.ZP.isPremium(F), Q = null != z && (z === (null == v ? true : v.id) || z === (null == T ? true : T.id)), X = null != T, J = null != (t = null == v ? true : v.isDiscoverable()) && t;
     k && (q = true, J = true, X = false, Q = false);
     let $ = ee(),
       {
@@ -463,7 +463,7 @@ let J = 32,
         })
       },
       eb = J || X && !Q || null != v;
-    return (0, r.jsxs)(F.W_, {
+    return (0, r.jsxs)(B.W_, {
       className: K.popoutContent,
       children: [em(), eb && eE()]
     })
@@ -479,7 +479,7 @@ let J = 32,
       isDisplayingButtonInTopSection: l
     } = e, c = (null != (t = null == i ? true : i.emojis) ? t : []).slice(0, $ + 1).filter(e => e.id !== n).slice(0, $), u = () => a ? null : c.map(e => (0, r.jsx)(d.u, X(q({
       text: e.require_colons ? ":".concat(e.name, ":") : e.name
-    }, F.b_), {
+    }, B.b_), {
       children: (0, r.jsx)(m.Z, {
         className: K.otherEmoji,
         emojiId: e.id,

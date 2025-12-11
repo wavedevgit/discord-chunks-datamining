@@ -279,7 +279,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let t = e.slice();
   return t.sort((e, t) => {
     let n = (0, g.uZ)(e.subscriptionPlanId),
@@ -288,7 +288,7 @@ function B(e) {
   }), t
 }
 
-function F(e) {
+function B(e) {
   return e.filter(e => {
     let {
       subscriptionPlanId: t
@@ -335,7 +335,7 @@ function H(e) {
     }), null != n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(v.Z9, {
         children: N.intl.string(N.t.tuqjWQ)
-      }), F(B((0, y.j)(n.invoiceItems))).map(e => (0, r.jsx)(k, {
+      }), B(F((0, y.j)(n.invoiceItems))).map(e => (0, r.jsx)(k, {
         invoiceItem: e,
         currency: n.currency,
         inTrialPeriod: a
@@ -344,7 +344,7 @@ function H(e) {
       })]
     }) : null, (0, r.jsx)(v.Z9, {
       children: N.intl.string(N.t.qxVrh6)
-    }), F(B((0, y.j)(i.invoiceItems))).map(e => {
+    }), B(F((0, y.j)(i.invoiceItems))).map(e => {
       let n = null != s && !s.some(t => t.subscriptionPlanId === e.subscriptionPlanId && t.quantity === e.quantity);
       return (0, r.jsx)(k, {
         invoiceItem: e,

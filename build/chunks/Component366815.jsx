@@ -14,22 +14,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk137707 = require("./137707.js");
 let d = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
   children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-    color: "header-primary",
+    color: "text-strong",
     variant: "text-xs/normal",
     className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t.GcZzp2)
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-    color: "header-primary",
+    color: "text-strong",
     variant: "text-xs/normal",
     className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t["/NEGrO"])
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-    color: "header-primary",
+    color: "text-strong",
     variant: "text-xs/normal",
     className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t.eUbuHL)
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-    color: "header-primary",
+    color: "text-strong",
     variant: "text-xs/normal",
     className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t.sCAZeI)

@@ -36,7 +36,7 @@ function h(e) {
       analyticsLocations: x,
       analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: g.qAy.BUTTON_CTA,
-      perks: (0, m.o9)()
+      perks: (0, f.o9)()
     })
   }, [x, t]), N = i.useCallback(() => {
     var e;
@@ -47,16 +47,16 @@ function h(e) {
     children: [(0, r.jsx)(l.zxk, {
       disabled: !v,
       variant: "primary",
-      text: p.intl.string(p.t.yG2pUi),
+      text: b.intl.string(b.t.yG2pUi),
       onClick: N
     }), (0, r.jsx)("div", {
-      className: b.hiddenInputContainer,
+      className: p.hiddenInputContainer,
       children: (0, r.jsx)(o.ZP, {
         ref: O,
         disabled: !v,
         onChange: C,
-        maxFileSizeBytes: f.B,
-        onFileSizeError: () => (0, s.Z)(f.B),
+        maxFileSizeBytes: m.B,
+        onFileSizeError: () => (0, s.Z)(m.B),
         tabIndex: false,
         "aria-hidden": true
       })

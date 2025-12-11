@@ -26,7 +26,7 @@ function o() {
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: Chunk207555.header,
       children: Chunk388032.intl.string(Chunk388032.t.e6spZv)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -57,7 +57,7 @@ function c() {
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: Chunk207555.header,
       children: Chunk388032.intl.string(Chunk388032.t.nRE3tc)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -88,7 +88,7 @@ function d() {
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: Chunk207555.header,
       children: Chunk388032.intl.string(Chunk388032.t.VkaI6l)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -119,7 +119,7 @@ function u() {
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",
-      color: "header-primary",
+      color: "text-strong",
       className: Chunk207555.header,
       children: Chunk388032.intl.string(Chunk388032.t["3SM68F"])
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {

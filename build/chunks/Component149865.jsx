@@ -29,7 +29,7 @@ function u(e) {
       children: [(0, r.jsx)(a.Text, {
         tag: "legend",
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: c.title,
         children: _
       }), g ? (0, r.jsx)(a.Text, {

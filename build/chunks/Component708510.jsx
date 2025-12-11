@@ -32,7 +32,7 @@ function E(e) {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, m.k)(e), (0, f.V)(e), (0, s.le)(), (0, s.aC)(e)
+      await (0, f.k)(e), (0, m.V)(e), (0, s.le)(), (0, s.aC)(e)
     } finally {
       n.current = true
     }
@@ -44,7 +44,7 @@ function E(e) {
         rules: t.termRules
       });
     case O.A.APPLY:
-      return (0, r.jsx)(b.r, {
+      return (0, r.jsx)(p.r, {
         pendingFields: t.pendingVerificationFields
       });
     case O.A.DISCOVERABLE:
@@ -73,7 +73,7 @@ function I(e) {
     var e;
     return null == (e = j.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
-    p.Z.setIsAgeRestricted(t, e)
+    b.Z.setIsAgeRestricted(t, e)
   }, [t]), g = n === C.V_K.AGE_RESTRICTED && s !== C.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(a.rsf, {
     label: y.intl.string(y.t.N9xEJF),
@@ -94,7 +94,7 @@ function S() {
     (null == module ? true : module.id) != null && Chunk863249.ZP.fetchVerificationForm(module.id)
   }, [null == module ? true : module.id]);
   let s = Chunk473749.useCallback(t => {
-    (null == e ? true : e.id) != null && p.Z.setSelectedJoinType(e.id, t)
+    (null == e ? true : e.id) != null && b.Z.setSelectedJoinType(e.id, t)
   }, [null == module ? true : module.id]);
   if (null == module || null == exports) return null;
   let {
@@ -103,7 +103,7 @@ function S() {
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 32,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.YJlvBM)
     }), (0, Chunk54381.jsx)(Chunk307375.h, {

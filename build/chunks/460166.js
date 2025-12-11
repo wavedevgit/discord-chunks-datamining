@@ -236,8 +236,8 @@ function G(e) {
 }
 
 function Z(e, t) {
-  let n = B(e);
-  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.wB)(n, B(e), F(e));
+  let n = F(e);
+  true !== e.value["rdf:Description"] && (e = e.value["rdf:Description"]), (0, r.wB)(n, F(e), B(e));
   let i = V(e);
   return {
     value: i,
@@ -246,13 +246,13 @@ function Z(e, t) {
   }
 }
 
-function B(e) {
+function F(e) {
   let t = {};
   for (let n in e.attributes) "rdf:parseType" === n || "rdf:resource" === n || N(n) || (t[P(n)] = e.attributes[n]);
   return t
 }
 
-function F(e) {
+function B(e) {
   let t = {};
   for (let n in e.value) "rdf:value" === n || N(n) || (t[P(n)] = e.value[n].value);
   return t
@@ -271,7 +271,7 @@ function Y(e, t) {
     value: {},
     attributes: {}
   };
-  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, C(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, B(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, L(e.value)), n.description = R(n.value, t), n
+  return true !== e.value["rdf:Description"] && ((0, r.wB)(n.value, C(e.value["rdf:Description"].attributes)), (0, r.wB)(n.attributes, F(e)), e = e.value["rdf:Description"]), (0, r.wB)(n.value, L(e.value)), n.description = R(n.value, t), n
 }
 
 function W(e) {
@@ -297,7 +297,7 @@ function q(e) {
 
 function Q(e, t) {
   let n = q(e.value).value["rdf:li"],
-    r = B(e),
+    r = F(e),
     i = [];
   return true === n ? n = [] : Array.isArray(n) || (n = [n]), n.forEach(e => {
     i.push(X(e))
@@ -316,7 +316,7 @@ function J(e, t) {
   let n = $(e) || T(e.value);
   return {
     value: n,
-    attributes: B(e),
+    attributes: F(e),
     description: R(n, t)
   }
 }

@@ -153,7 +153,7 @@ function M() {
     messageId: require.messageId,
     jumpType: require.jumpType,
     avoidInitialScroll: null != require.messageId
-  }), B(exports.getGuildId(), exports.id)
+  }), F(exports.getGuildId(), exports.id)
 }
 
 function k() {
@@ -161,13 +161,13 @@ function k() {
   if (null == module) return;
   let t = Chunk592125.Z.getChannel(module);
   if (null == exports) return;
-  if (!(0, Chunk131704.Qm)(exports.type)) return void B(exports.getGuildId(), exports.id);
+  if (!(0, Chunk131704.Qm)(exports.type)) return void F(exports.getGuildId(), exports.id);
   let n = Chunk89892.Z.getOrCreate(module);
-  if (require.ready && require.hasFetched) return void B(exports.getGuildId(), exports.id);
+  if (require.ready && require.hasFetched) return void F(exports.getGuildId(), exports.id);
   w({
     guildId: exports.getGuildId(),
     channelId: exports.id
-  }), B(exports.getGuildId(), exports.id)
+  }), F(exports.getGuildId(), exports.id)
 }
 
 function U(e) {
@@ -188,7 +188,7 @@ function U(e) {
     channelId: n,
     messageId: i,
     jumpType: a
-  }), B(t, n)
+  }), F(t, n)
 }
 
 function G(e) {
@@ -217,7 +217,7 @@ function Z(e) {
   })
 }
 
-function B(e, t) {
+function F(e, t) {
   let n = E.ZP.getCurrentSidebarChannelId(t);
   null != n && w({
     guildId: e,
@@ -226,12 +226,12 @@ function B(e, t) {
   })
 }
 
-function F() {
+function B() {
   let e = Chunk944486.Z.getChannelId(),
     t = Chunk914010.Z.getGuildId();
   if (null == exports || null == module) return;
   let n = Chunk433355.ZP.getSidebarState(module);
-  (null == require ? true : require.type) !== Chunk897473.tI.VIEW_CHANNEL && B(exports, module)
+  (null == require ? true : require.type) !== Chunk897473.tI.VIEW_CHANNEL && F(exports, module)
 }
 
 function V(e) {
@@ -243,7 +243,7 @@ function V(e) {
   r === C.e3s && (w({
     guildId: t,
     channelId: n
-  }), B(t, n))
+  }), F(t, n))
 }
 
 function H(e) {
@@ -331,7 +331,7 @@ class Q extends Chunk147913.Z {
     Chunk570140.Z.unsubscribe("CONNECTION_OPEN", M)
   }
   constructor(...e) {
-    super(...e), P(this, "fetchMessages", w), P(this, "loadSelectedChannelIfNecessary", k), P(this, "stores", new Map().set(E.ZP, F)), P(this, "actions", {
+    super(...e), P(this, "fetchMessages", w), P(this, "loadSelectedChannelIfNecessary", k), P(this, "stores", new Map().set(E.ZP, B)), P(this, "actions", {
       APP_STATE_UPDATE: q,
       OVERLAY_INITIALIZE: M,
       CHANNEL_SELECT: U,

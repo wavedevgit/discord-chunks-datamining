@@ -26,7 +26,7 @@ function j(e) {
     label: t,
     description: n,
     guildId: l,
-    widgetEnabled: p,
+    widgetEnabled: b,
     widgetChannelId: j,
     className: v,
     enableLocalUpdate: O
@@ -52,11 +52,11 @@ function j(e) {
     });
     return e.unshift({
       value: h,
-      label: b.intl.string(b.t.u197b7)
+      label: p.intl.string(p.t.u197b7)
     }), e
   }, [C, l, j]), N = i.useCallback(e => {
-    O ? (0, f.c)(l, p, e !== h ? e : null) : m.Z.updateEmbed(l, p, e !== h ? e : null)
-  }, [l, p, O]);
+    O ? (0, m.c)(l, b, e !== h ? e : null) : f.Z.updateEmbed(l, b, e !== h ? e : null)
+  }, [l, b, O]);
   return (0, r.jsx)(s.y6, {
     label: t,
     description: n,

@@ -80,7 +80,7 @@ class S extends Chunk473749.PureComponent {
         className: Chunk678286.username,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: null != (e = exports.globalName) ? module : exports.username
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
@@ -144,7 +144,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
       guild: n
     }, i.id)
   }, [a, n, l]);
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(f.Z, {
     role: "listbox",
     listPadding: [8, 8, 8, 8],
     rowCount: l.length,
@@ -162,23 +162,23 @@ function T(e) {
     h.Z.setSection(O.pNK.SAFETY), (0, j.K)(v.u.DM_AND_SPAM_PROTECTION)
   }, []), g = i.useCallback(e => {
     a(e), 0 === e.trim().length && h.Z.setSearchQuery(e)
-  }, []), m = i.useCallback(() => {
+  }, []), f = i.useCallback(() => {
     a(""), h.Z.setSearchQuery("")
-  }, []), p = i.useCallback(async () => {
+  }, []), b = i.useCallback(async () => {
     if (0 === l.trim().length) {
       h.Z.setSearchQuery(l), c(false);
       return
     }
     if (!s) try {
       c(true);
-      let [e, n] = (0, f.C)(l), r = e[0];
+      let [e, n] = (0, m.C)(l), r = e[0];
       h.Z.setSearchQuery(l), await d.Z.searchGuildBans(t, r, n), c(false)
     } catch (e) {
       c(false)
     }
-  }, [t, s, l]), b = i.useCallback(e => {
-    "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), p())
-  }, [p]);
+  }, [t, s, l]), p = i.useCallback(e => {
+    "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), b())
+  }, [b]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-lg/semibold",
@@ -199,15 +199,15 @@ function T(e) {
         placeholder: C.intl.string(C.t.MiqUmf),
         "aria-label": C.intl.string(C.t.MiqUmf),
         onChange: g,
-        onKeyDown: b,
-        onClear: m
+        onKeyDown: p,
+        onClear: f
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: y.searchButton,
         children: (0, r.jsx)(o.Button, {
           variant: "primary",
           text: C.intl.string(C.t["5h0QOP"]),
-          onClick: p,
+          onClick: b,
           disabled: s,
           loading: s
         })
@@ -220,18 +220,18 @@ function P() {
   var e, t;
   let {
     guild: c,
-    searchQuery: m
+    searchQuery: f
   } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), h = null != Chunk218867 && Chunk218867.trim().length > 0, j = (0, Chunk110924.Z)(Chunk434404), v = Chunk434404 !== Chunk84613, [N] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), S = null != (e = null == N ? true : N.size) ? module : 0, P = (0, Chunk410030.ZP)(), w = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, Z = Chunk473749.useRef(null), R = Chunk473749.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) returnfalse;
     let [
       [n], r
-    ] = (0, f.C)(e);
+    ] = (0, m.C)(e);
     return !!r.includes(t.id) || null != n && !!(t.username.toLowerCase().includes(n.toLowerCase()) || null != t.globalName && t.globalName.toLowerCase().includes(n.toLowerCase()))
   }, []), D = Chunk473749.useCallback((e, t, n) => {
     if (null == e || 0 === n) return [];
     let r = [];
     for (let n of e.keys()) {
-      let e = p.default.getUser(n);
+      let e = b.default.getUser(n);
       null != e && R(t)(e) && r.push(e)
     }
     return r

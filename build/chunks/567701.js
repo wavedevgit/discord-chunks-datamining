@@ -39,8 +39,8 @@
     U = "Sharp",
     G = "Sony",
     Z = "Xiaomi",
-    B = "Zebra",
-    F = "Facebook",
+    F = "Zebra",
+    B = "Facebook",
     V = "Chromium OS",
     H = "Mac OS",
     Y = " Browser",
@@ -176,7 +176,7 @@
         [m, f],
         [/((?:fban\/fbios|fb_iab\/fb4a)(?!.+fbav)|;fbav\/([\w\.]+);)/i],
         [
-          [f, F], m
+          [f, B], m
         ],
         [/(Klarna)\/([\w\.]+)/i, /(kakao(?:talk|story))[\/ ]([\w\.]+)/i, /(naver)\(.*?(\d+\.[\w\.]+).*\)/i, /safari (line)\/([\w\.]+)/i, /\b(line)\/([\w\.]+)\/iab/i, /(alipay)client\/([\w\.]+)/i, /(twitter)(?:and| f.+e\/([\w\.]+))/i, /(chromium|instagram|snapchat)[\/ ]([-\w\.]+)/i],
         [f, m],
@@ -553,11 +553,11 @@
           [p, E]
         ],
         [/droid.+; (cc6666?|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i],
-        [d, [_, B],
+        [d, [_, F],
           [p, b]
         ],
         [/droid.+; (ec30|ps20|tc[2-8]\d[kx])\)/i],
-        [d, [_, B],
+        [d, [_, F],
           [p, E]
         ],
         [/smart-tv.+(samsung)/i],
@@ -640,7 +640,7 @@
           [p, O]
         ],
         [/droid.+; (wt63?0{2,3})\)/i],
-        [d, [_, B],
+        [d, [_, F],
           [p, O]
         ],
         [/droid.+; (glass) \d/i],
@@ -650,7 +650,7 @@
         [/(pico) (4|neo3(?: link|pro)?)/i],
         [_, d, [p, O]],
         [/; (quest( \d| pro)?)/i],
-        [d, [_, F],
+        [d, [_, B],
           [p, O]
         ],
         [/(tesla)(?: qtcarbrowser|\/[-\w\.]+)/i],

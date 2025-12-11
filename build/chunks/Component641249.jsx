@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk798680 = require("./798680.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -84,7 +84,7 @@ function x() {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
-          return n => (0, r.jsx)(t, h(b({}, n), {
+          return n => (0, r.jsx)(t, h(p({}, n), {
             onConfirmDelete: () => {
               I(e.id), n.onClose()
             }
@@ -99,7 +99,7 @@ function x() {
           let {
             EmojiAddModal: e
           } = await require.e("21112").then(require.bind(require, 301160));
-          return n => (0, r.jsx)(e, h(b({}, n), {
+          return n => (0, r.jsx)(e, h(p({}, n), {
             guildId: t,
             initialTierEmojiIds: x,
             onSubmit: E,

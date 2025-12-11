@@ -2,7 +2,7 @@
 /** chunk id: 774380, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk690714 = require("./690714.js");
-let m = e => {
+let f = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, r.jsx)("div", {
@@ -46,11 +46,11 @@ let m = e => {
       })]
     })
   },
-  f = e => {
+  m = e => {
     let {
       onOpenPremiumClick: t
     } = e, n = (0, i.e7)([o.default], () => o.default.getCurrentUser());
-    return c.ZP.isPremium(n, d.PremiumTypes.TIER_2) ? null : (0, r.jsx)(m, {
+    return c.ZP.isPremium(n, d.PremiumTypes.TIER_2) ? null : (0, r.jsx)(f, {
       onOpenPremiumClick: t
     })
   }

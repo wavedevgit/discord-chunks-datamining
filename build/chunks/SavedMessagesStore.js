@@ -2,7 +2,7 @@
 /** chunk id: 768943, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
@@ -271,7 +271,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
 }
 u(Z, "displayName", "SavedMessagesStore");
-let B = new Z(Chunk570140.Z, {
+let F = new Z(Chunk570140.Z, {
   POST_CONNECTION_OPEN: T,
   LOGOUT: C,
   SAVED_MESSAGES_UPDATE: A,

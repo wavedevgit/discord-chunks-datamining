@@ -19,15 +19,15 @@ function g(e) {
     guild: t,
     discoverableGuild: n
   } = e, g = null == t ? true : t.id, {
-    memberCount: m,
-    onlineCount: f
+    memberCount: f,
+    onlineCount: m
   } = (0, a.cj)([d.Z], () => {
     var e, t;
     return {
       memberCount: null != (e = d.Z.getMemberCount(g)) ? e : 1234,
       onlineCount: null != (t = d.Z.getOnlineCount(g)) ? t : 1234
     }
-  }, [g]), p = i.useRef((0, l.Z)()), b = i.useMemo(() => {
+  }, [g]), b = i.useRef((0, l.Z)()), p = i.useMemo(() => {
     var e, r;
     if (null != n) return o.JO.createFromDiscoverableGuild(n);
     if (null == t) return null;
@@ -53,8 +53,8 @@ function g(e) {
       premiumSubscriptionCount: null == t ? true : t.premiumSubscriberCount,
       emojis: i,
       emojiCount: i.length,
-      presenceCount: f,
-      memberCount: m
+      presenceCount: m,
+      memberCount: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -65,23 +65,23 @@ function g(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, m, f]), h = i.useMemo(() => {
+  }, [n, t, f, m]), h = i.useMemo(() => {
     var e;
-    let t = null == b || null == (e = b.emojis) ? true : e[0];
+    let t = null == p || null == (e = p.emojis) ? true : e[0];
     return null != t ? {
       name: t.require_colons ? ":".concat(t.name, ":") : t.name,
       emojiId: t.id,
       animated: t.animated,
       jumboable: true
     } : {}
-  }, [null == b ? true : b.emojis]);
-  return null != b && b.isDiscoverable() ? (0, r.jsx)(c.UA, {
+  }, [null == p ? true : p.emojis]);
+  return null != p && p.isDiscoverable() ? (0, r.jsx)(c.UA, {
     sourceType: o.w6.GUILD,
     expressionSourceApplication: null,
-    expressionSourceGuild: b,
+    expressionSourceGuild: p,
     node: h,
     closePopout: u.dG,
-    nonce: p.current,
+    nonce: b.current,
     demoMode: true
   }) : null
 }

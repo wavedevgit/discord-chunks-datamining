@@ -30,14 +30,14 @@ function Z(e) {
     variant: t,
     icon: l,
     text: r
-  } = n.features.has(p.GuildFeatures.BANNER) ? {
+  } = n.features.has(x.GuildFeatures.BANNER) ? {
     variant: "overlay-secondary",
     icon: s.FmF,
-    text: x.intl.string(x.t.b0y3DL)
+    text: p.intl.string(p.t.b0y3DL)
   } : {
     variant: "expressive",
     icon: s.Ucv,
-    text: x.intl.string(x.t["+7XY31"])
+    text: p.intl.string(p.t["+7XY31"])
   };
   return (0, a.jsx)("div", {
     className: j.editButtonContainer,
@@ -46,7 +46,7 @@ function Z(e) {
       icon: l,
       text: r,
       onClick: () => {
-        h.Z.open(n.id, p.pNK.ONBOARDING, true, p.KsC.SERVER_GUIDE)
+        h.Z.open(n.id, x.pNK.ONBOARDING, true, x.KsC.SERVER_GUIDE)
       }
     })
   })
@@ -59,7 +59,7 @@ let I = Chunk473749.memo(function(e) {
     homeHeaderImage: h,
     isHomeHeaderImageSet: I
   } = (e => {
-    let n = l.useMemo(() => null == e ? null : g.ZP.getGuildHomeHeaderURL({
+    let n = l.useMemo(() => null == e ? null : b.ZP.getGuildHomeHeaderURL({
       id: e.id,
       homeHeader: e.homeHeader
     }), [e]);
@@ -68,7 +68,7 @@ let I = Chunk473749.memo(function(e) {
       isHomeHeaderImageSet: null != n,
       homeHeaderScroll: 200 * (null != n)
     }
-  })(n), y = (0, m.b$)(n.id), N = (0, c.e7)([b.Z], () => (0, f.b)(b.Z, n)), O = (0, d.ZP)();
+  })(n), N = (0, m.b$)(n.id), y = (0, c.e7)([g.Z], () => (0, f.b)(g.Z, n)), O = (0, d.ZP)();
   return (0, a.jsxs)("div", {
     className: j.header,
     children: [(0, a.jsxs)("div", {
@@ -80,7 +80,7 @@ let I = Chunk473749.memo(function(e) {
         style: {
           backgroundImage: "url(".concat(I ? h : "dark" === O ? C : v, ")")
         }
-      }), y && (0, a.jsx)(Z, {
+      }), N && (0, a.jsx)(Z, {
         guild: n
       })]
     }), (0, a.jsx)("div", {
@@ -104,12 +104,12 @@ let I = Chunk473749.memo(function(e) {
               guild: n,
               tooltipPosition: "bottom",
               tooltipColor: s.aML.Colors.PRIMARY
-            }), N && (0, a.jsx)("div", {
+            }), y && (0, a.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
               className: j.inviteButton,
               children: (0, a.jsx)(s.Button, {
                 variant: "secondary",
-                text: x.intl.string(x.t.VINpSK),
+                text: p.intl.string(p.t.VINpSK),
                 onClick: () => (0, s.ZDy)(async () => {
                   let {
                     default: e
@@ -135,7 +135,7 @@ let I = Chunk473749.memo(function(e) {
                       return e
                     }({}, t), r = r = {
                       guild: n,
-                      source: p.t4x.GUILD_HOME
+                      source: x.t4x.GUILD_HOME
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
                       var t = Object.keys(e);
                       if (Object.getOwnPropertySymbols) {

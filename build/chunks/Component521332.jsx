@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk427572 = require("./427572.js");
 
-function x(e) {
+function h(e) {
   let {
     title: t,
     description: n,
@@ -49,20 +49,20 @@ function v(e) {
     reportSubType: v
   } = e, _ = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, b.jc)(t, null == _ ? true : _.type), y = (0, p.i_)(d, v, s);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
-    className: h.container,
+    className: x.container,
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
-      className: h.header,
+      className: x.header,
       children: f.intl.string(f.t["1yxTIJ"])
     }), (0, r.jsx)("div", {
-      className: h.upsellsContainer,
+      className: x.upsellsContainer,
       children: j.map((e, n) => {
         let {
           getTitle: l,
           getDescription: i,
           onApply: a
         } = e;
-        return (0, r.jsx)(x, {
+        return (0, r.jsx)(h, {
           title: l(),
           description: i(),
           onButtonClick: a,

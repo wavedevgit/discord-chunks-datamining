@@ -95,7 +95,7 @@ function v(e) {
   }, true), j = null != h, M = null != b && false === D, k = j || M, U = 0 === v ? E.bannerAspectRatioBot : E.bannerAspectRatioActivity, G = i.useRef(null), Z = i.useCallback(() => {
     let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), B = i.useMemo(() => !!M && new URL(b).pathname.endsWith(".gif"), [M, b]), F = i.useMemo(() => {
+  }, []), F = i.useMemo(() => !!M && new URL(b).pathname.endsWith(".gif"), [M, b]), B = i.useMemo(() => {
     if (null != A) return e => {
       A(e), (0, m.KX)({
         applicationId: C.id,
@@ -126,7 +126,7 @@ function v(e) {
       className: o()(E.bannerWrapper, U, {
         [E.showVideoOnFocus]: M
       }),
-      children: [M && (B ? (0, r.jsx)("div", {
+      children: [M && (F ? (0, r.jsx)("div", {
         className: E.videoBanner,
         style: {
           backgroundImage: "url(".concat(b, ")")
@@ -157,9 +157,9 @@ function v(e) {
           className: E.header,
           children: n
         }), (0, r.jsxs)(O, {
-          onClick: F,
+          onClick: B,
           className: o()(E.contentWrapper, {
-            [E.contentWrapperClickable]: null != F
+            [E.contentWrapperClickable]: null != B
           }),
           children: [null != S && (0, r.jsx)("div", {
             className: E.img,

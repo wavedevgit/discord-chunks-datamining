@@ -2,7 +2,7 @@
 /** chunk id: 45966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -284,7 +284,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
 }
 m(Z, "displayName", "GuildOnboardingPromptsStore");
-let B = new Z(Chunk570140.Z, {
+let F = new Z(Chunk570140.Z, {
   CONNECTION_OPEN: I,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: S,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: A,

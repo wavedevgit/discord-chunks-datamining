@@ -8,7 +8,7 @@ var Chunk822632 = require("./822632.js"),
   Chunk791473 = require("./791473.js");
 let a = {
     isJpegFile: Z,
-    findJpegOffsets: B
+    findJpegOffsets: F
   },
   o = 2,
   s = 65496,
@@ -49,10 +49,10 @@ function Z(e) {
   return !!e && e.byteLength >= o && e.getUint16(0) === s
 }
 
-function B(e) {
+function F(e) {
   let t, n, r, a, o, s, _, m, E, O = l;
   for (; O + c + 5 <= e.byteLength;) {
-    if (i.Z.USE_FILE && F(e, O)) t = e.getUint16(O + u), n = O + u;
+    if (i.Z.USE_FILE && B(e, O)) t = e.getUint16(O + u), n = O + u;
     else if (i.Z.USE_FILE && V(e, O)) t = e.getUint16(O + u), r = O + u;
     else if (i.Z.USE_JFIF && W(e, O)) t = e.getUint16(O + u), a = O + d;
     else if (i.Z.USE_EXIF && K(e, O)) t = e.getUint16(O + u), o = O + f;
@@ -91,7 +91,7 @@ function B(e) {
   }
 }
 
-function F(e, t) {
+function B(e, t) {
   return e.getUint16(t) === v
 }
 

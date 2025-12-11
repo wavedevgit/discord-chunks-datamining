@@ -140,11 +140,11 @@ function Z(e) {
   }, {})
 }
 
-function B() {
+function F() {
   I = true
 }
 
-function F(e) {
+function B(e) {
   let {
     linkedUsers: t,
     familyCenterTeenActivity: n
@@ -378,8 +378,8 @@ class ei extends Chunk750041.Z {
       CONNECTION_OPEN: J,
       CURRENT_USER_UPDATE: X,
       CACHE_LOADED_LAZY: () => this.loadCache(),
-      FAMILY_CENTER_INITIAL_LOAD: F,
-      FAMILY_CENTER_FETCH_START: B,
+      FAMILY_CENTER_INITIAL_LOAD: B,
+      FAMILY_CENTER_FETCH_START: F,
       FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: V,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: Y,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: W,

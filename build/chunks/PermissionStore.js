@@ -125,7 +125,7 @@ function Z(e) {
   N[n.id] = i, R += 1, L(n.getGuildId())
 }
 
-function B(e) {
+function F(e) {
   let {
     channels: t
   } = e, n = false;
@@ -145,7 +145,7 @@ function B(e) {
   return !!n && (R += 1, n)
 }
 
-function F() {
+function B() {
   returntrue
 }
 
@@ -342,12 +342,12 @@ let ee = new J(Chunk570140.Z, {
   GUILD_MEMBER_UPDATE: G,
   CURRENT_USER_UPDATE: G,
   CHANNEL_CREATE: Z,
-  THREAD_CREATE: F,
-  THREAD_UPDATE: F,
-  THREAD_LIST_SYNC: F,
-  LOAD_THREADS_SUCCESS: F,
-  LOAD_ARCHIVED_THREADS_SUCCESS: F,
-  CHANNEL_UPDATES: B,
+  THREAD_CREATE: B,
+  THREAD_UPDATE: B,
+  THREAD_LIST_SYNC: B,
+  LOAD_THREADS_SUCCESS: B,
+  LOAD_ARCHIVED_THREADS_SUCCESS: B,
+  CHANNEL_UPDATES: F,
   LOAD_MESSAGES_SUCCESS: Y,
   SEARCH_MESSAGES_SUCCESS: W,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: W,

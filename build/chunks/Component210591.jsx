@@ -2,7 +2,7 @@
 /** chunk id: 210591, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 }), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,33 +16,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk57175 = require("./57175.js");
 
-function f(e) {
+function m(e) {
   let {
     checked: t,
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.row,
+    className: f.row,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "interactive-text-active",
-      className: m.rowText,
+      className: f.rowText,
       children: n
     }), t ? (0, r.jsx)(c.owK, {
       size: "md",
       color: "currentColor",
       secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
-      className: a()(m.rowIcon, m.rowIconChecked)
+      className: a()(f.rowIcon, f.rowIconChecked)
     }) : (0, r.jsx)("div", {
-      className: a()(m.rowIcon, m.rowIconEmpty)
+      className: a()(f.rowIcon, f.rowIconEmpty)
     })]
   })
 }
 
-function p(e) {
+function b(e) {
   let {
     children: t
-  } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, p = 1 === o, b = (0, c.q_F)({
+  } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, b = 1 === o, p = (0, c.q_F)({
     width: "".concat(100 * o, "%")
   }), h = [g.intl.format(g.t.wtQtXs, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
@@ -53,7 +53,7 @@ function p(e) {
   }), g.intl.format(g.t.zkXN6I, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
   })], x = n ? null : (0, r.jsxs)(c.C3N, {
-    children: [!p && t.map((e, t) => {
+    children: [!b && t.map((e, t) => {
       let {
         title: n,
         items: l
@@ -63,7 +63,7 @@ function p(e) {
           label: n,
           children: (0, r.jsx)(c.Kqy, {
             gap: 8,
-            children: l.map((e, t) => (0, r.jsx)(f, {
+            children: l.map((e, t) => (0, r.jsx)(m, {
               children: e.description,
               checked: e.completed
             }, t))
@@ -75,7 +75,7 @@ function p(e) {
       children: (0, r.jsx)(c.Kqy, {
         gap: 8,
         children: h.map((e, t) => (0, r.jsx)("div", {
-          className: m.row,
+          className: f.row,
           children: (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             children: e
@@ -85,27 +85,27 @@ function p(e) {
     })]
   });
   return (0, r.jsx)("div", {
-    className: m.checklist,
+    className: f.checklist,
     children: (0, r.jsx)("div", {
-      className: m.container,
+      className: f.container,
       children: (0, r.jsxs)(c.Kqy, {
         gap: 16,
         children: [(0, r.jsxs)(c.P3F, {
-          className: m.headerBar,
+          className: f.headerBar,
           onClick: () => l(e => !e),
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
-            className: m.headerText,
+            className: f.headerText,
             children: g.intl.string(g.t["2Xbd/G"])
           }), (0, r.jsx)(d.Z, {
             direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
-            className: m.headerCaret
+            className: f.headerCaret
           })]
-        }), !p && (0, r.jsx)("div", {
-          className: m.progressBarOuter,
+        }), !b && (0, r.jsx)("div", {
+          className: f.progressBarOuter,
           children: (0, r.jsx)(s.animated.div, {
-            className: m.progressBarInner,
-            style: b
+            className: f.progressBarInner,
+            style: p
           })
         }), x]
       })

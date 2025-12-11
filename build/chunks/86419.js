@@ -11,14 +11,14 @@ require.d(exports, {
   IM: () => U,
   M8: () => S,
   RZ: () => j,
-  X6: () => B,
+  X6: () => F,
   kQ: () => V,
   mR: () => b,
   n$: () => L,
   np: () => A,
   ou: () => W,
   qH: () => D,
-  tk: () => F,
+  tk: () => B,
   vI: () => v,
   ww: () => O,
   y8: () => x
@@ -247,7 +247,7 @@ function Z(e, t) {
     })));
   c.Z.setPendingWidgets(i)
 }
-async function B() {
+async function F() {
   let e = Chunk224724.Z.getPendingWidgets();
   if (null !== module) try {
     await Chunk592183.Z.savePendingWidgets(module)
@@ -255,7 +255,7 @@ async function B() {
     console.error("Failed to save sample widgets:", module)
   }
 }
-async function F() {
+async function B() {
   try {
     await Chunk592183.Z.savePendingWidgets([])
   } catch (e) {

@@ -25,20 +25,20 @@ function f(e, t) {
 
 function b(e, t, n, s) {
   let b = arguments.length > 4 && true !== arguments[4] ? arguments[4] : null != t && t.isGuildStageVoice(),
-    h = (0, i.e7)([o.Z], () => null != e ? o.Z.getSortedRoles(e.id) : []),
-    g = (0, i.Wu)([a.ZP], () => null != e ? a.ZP.getMemberIds(e.id) : []),
-    _ = l.useMemo(() => {
+    g = (0, i.e7)([o.Z], () => null != e ? o.Z.getSortedRoles(e.id) : []),
+    h = (0, i.Wu)([a.ZP], () => null != e ? a.ZP.getMemberIds(e.id) : []),
+    x = l.useMemo(() => {
       if (null == e || "@" === s[0]) return [];
-      if (b) return u.Wx(e, h, null != t ? t : null, n, e => f(s, e));
-      let l = u.ik(e, h, null != t ? t : null, n, e => f(s, e));
-      return 0 === l.length && "" === s.trim() && 1 === h.length && (l = u.aq()), l
-    }, [h, s, e, t, n, b]),
-    x = l.useMemo(() => null == e ? [] : u.iI(g, null != t ? t : null, e, n, e => f(s, e)), [g, s, e, t, n]);
+      if (b) return u.Wx(e, g, null != t ? t : null, n, e => f(s, e));
+      let l = u.ik(e, g, null != t ? t : null, n, e => f(s, e));
+      return 0 === l.length && "" === s.trim() && 1 === g.length && (l = u.aq()), l
+    }, [g, s, e, t, n, b]),
+    _ = l.useMemo(() => null == e ? [] : u.iI(h, null != t ? t : null, e, n, e => f(s, e)), [h, s, e, t, n]);
   return l.useEffect(() => {
     null != e && c.Z.requestMembers(e.id, p(s), d.EQ)
   }, [s, e]), {
-    roles: _,
-    members: x,
+    roles: x,
+    members: _,
     getRichTag: l.useCallback(e => {
       let t = null;
       return e.rowType === d.aC.ROLE || e.rowType === d.aC.ADMINISTRATOR ? t = {

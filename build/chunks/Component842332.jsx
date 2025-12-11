@@ -64,7 +64,7 @@ function h(e) {
   }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), i.useEffect(() => {
     (null == d.name || "" === d.name.trim()) && !m && y && null != n && (b(true), O())
   }, [t.id, n, l, d.name, m, y, O]);
-  let j = i.useCallback(function() {
+  let x = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (y) return {
         icon: s.$2U,
@@ -75,7 +75,7 @@ function h(e) {
         loading: f
       }
     }, [y, O, f, n, h.textValue]),
-    x = i.useCallback(function() {
+    j = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       return y ? (0, r.jsx)(a.u, {
         text: u.intl.string(u.t.ZF2oBs),
@@ -95,7 +95,7 @@ function h(e) {
     isGeneratingAI: f,
     generateAIName: O,
     enableAIFeatures: y,
-    renderAiGenerateButton: x,
-    getThreadNameInputAccessory: j
+    renderAiGenerateButton: j,
+    getThreadNameInputAccessory: x
   }
 }

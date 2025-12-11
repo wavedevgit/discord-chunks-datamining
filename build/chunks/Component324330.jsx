@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $r: () => h,
-  JA: () => b,
+  JA: () => p,
   ZP: () => x
 });
 var Chunk54381 = require("./54381.js");
@@ -20,20 +20,20 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk429578 = require("./429578.js");
 
-function p(e) {
+function b(e) {
   if (null == e) returnfalse;
   let t = e.features.has(g.GuildFeatures.COMMUNITY),
     n = e.features.has(g.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL);
   return t || n
 }
 
-function b() {
+function p() {
   let e = Chunk999382.Z.getProps().guild;
-  null != module && (p(module) ? (Chunk434404.Z.close(), (0, Chunk527379._X)(module.id)) : Chunk434404.Z.open(module.id, Chunk981631.pNK.MEMBERS))
+  null != module && (b(module) ? (Chunk434404.Z.close(), (0, Chunk527379._X)(module.id)) : Chunk434404.Z.open(module.id, Chunk981631.pNK.MEMBERS))
 }
 
 function h() {
-  let e = p((0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []));
+  let e = b((0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild, []));
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk429578.rowContainer,
     children: [(0, Chunk54381.jsx)("div", {

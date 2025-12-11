@@ -129,12 +129,12 @@ function j(e) {
     o || C(null)
   }, [o, C]);
   let Z = i.useMemo(() => "" === R ? M : null != E ? E(M, R) : (0, s.Lu)(M, R, null != b ? b : L), [M, R, E, b]),
-    B = i.useRef(true),
-    F = i.useMemo(() => ("single" === d && (B.current = M.find(e => e.value === g)), null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
+    F = i.useRef(true),
+    B = i.useMemo(() => ("single" === d && (F.current = M.find(e => e.value === g)), null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
   i.useEffect(() => {
     if (o) {
       var e, t;
-      G(null != (t = null == (e = B.current) ? true : e.label) ? t : "", "")
+      G(null != (t = null == (e = F.current) ? true : e.label) ? t : "", "")
     }
   }, [o, G]);
   let V = f || p,
@@ -144,7 +144,7 @@ function j(e) {
       let a = Array.from(e);
       "multiple" === d && a.length < 1 ? h([]) : "multiple" === d ? h(a.map(e => e.value)) : h(null != (n = null == (t = a[0]) ? true : t.value) ? n : null), _ && o && (null == l || l(false)), "single" === d && G(null != (i = null == (r = a[0]) ? true : r.label) ? i : "", ""), N(false)
     }, [V, d, h, _, o, l, O, G]),
-    Y = F.length > 0;
+    Y = B.length > 0;
   return (0, r.jsx)(y.Z.Provider, {
     value: P({
       activeDescendantIndex: T,
@@ -157,7 +157,7 @@ function j(e) {
       value: g,
       options: M,
       filteredOptions: Z,
-      selectedOptions: F,
+      selectedOptions: B,
       maxOptionsVisible: a,
       query: x,
       setQuery: G,
@@ -212,8 +212,8 @@ function k(e) {
     selectionMode: U,
     disabled: G,
     readOnly: Z,
-    loading: B,
-    clearable: F,
+    loading: F,
+    clearable: B,
     required: V,
     listBoxId: H,
     inputFieldRef: Y,
@@ -315,7 +315,7 @@ function k(e) {
           }
           break;
         case "Escape":
-          q && F && (e.preventDefault(), e.stopPropagation(), eu());
+          q && B && (e.preventDefault(), e.stopPropagation(), eu());
           break;
         case "Home":
           if (e.preventDefault(), 0 === t) return;
@@ -326,7 +326,7 @@ function k(e) {
           k(t - 1)
       }
       null == v || v(e)
-    }, [U, V, F, q, W, v, eu, Q, et, er, $, en, M, k]),
+    }, [U, V, B, q, W, v, eu, Q, et, er, $, en, M, k]),
     eE = i.useCallback(e => {
       eo(true), ei(e.target.value), null == $ || $(true), null == _ || _(e), k(null)
     }, [_, eo, ei, $, k]),
@@ -369,8 +369,8 @@ function k(e) {
       ref: ey,
       disabled: G,
       readOnly: Z,
-      loading: B,
-      clearable: F,
+      loading: F,
+      clearable: B,
       fullWidth: true,
       showChevronButton: f,
       isOpen: !!J,
@@ -402,7 +402,7 @@ function k(e) {
               readOnly: Z,
               "aria-haspopup": "listbox",
               "aria-autocomplete": "list",
-              "aria-busy": B,
+              "aria-busy": F,
               "aria-controls": H,
               "aria-expanded": !z || J,
               "aria-activedescendant": el,

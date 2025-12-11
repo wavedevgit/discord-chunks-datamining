@@ -63,7 +63,7 @@ function m(e) {
     [k, U] = (0, d.useState)(() => (0, r.OJ)(e.placeholderValue, N, D, P)),
     G = M || k,
     Z = "gregory" === D.identifier && "BC" === G.era,
-    B = (0, d.useMemo)(() => {
+    F = (0, d.useMemo)(() => {
       var t;
       return {
         granularity: N,
@@ -75,8 +75,8 @@ function m(e) {
         shouldForceLeadingZeros: e.shouldForceLeadingZeros
       }
     }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, P, y, Z]),
-    F = (0, d.useMemo)(() => (0, r.oE)({}, B), [B]),
-    V = (0, d.useMemo)(() => new(0, a.C)(m, F), [m, F]),
+    B = (0, d.useMemo)(() => (0, r.oE)({}, F), [F]),
+    V = (0, d.useMemo)(() => new(0, a.C)(m, B), [m, B]),
     H = (0, d.useMemo)(() => V.resolvedOptions(), [V]),
     Y = (0, d.useMemo)(() => V.formatToParts(new Date).filter(e => f[e.type]).reduce((e, t) => (e[_[t.type] || t.type] = true, e), {}), [V]),
     [W, K] = (0, d.useState)(() => e.value || e.defaultValue ? {
@@ -119,7 +119,7 @@ function m(e) {
         (t.length >= n.length || t.length === n.length - 1 && Y.dayPeriod && !W.dayPeriod) && X(Q)
       }
     },
-    en = (0, d.useMemo)(() => (0, r.p2)(x, I, T, C, B), [x, I, T, C, B]),
+    en = (0, d.useMemo)(() => (0, r.p2)(x, I, T, C, F), [x, I, T, C, F]),
     er = (0, c.Q3)({
       ...e,
       value: x,
@@ -189,12 +189,12 @@ function m(e) {
     },
     formatValue(e) {
       if (!M) return "";
-      let t = (0, r.oE)(e, B);
+      let t = (0, r.oE)(e, F);
       return new(0, a.C)(m, t).format(J)
     },
     getDateFormatter(e, t) {
       let n = {
-          ...B,
+          ...F,
           ...t
         },
         i = (0, r.oE)({}, n);

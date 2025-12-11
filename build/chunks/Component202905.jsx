@@ -46,9 +46,9 @@ function v(e) {
   } = e, {
     guild: n,
     guildProfile: v
-  } = (0, s.cj)([m.Z], () => ({
-    guild: m.Z.getGuild(),
-    guildProfile: m.Z.getGuildProfile()
+  } = (0, s.cj)([f.Z], () => ({
+    guild: f.Z.getGuild(),
+    guildProfile: f.Z.getGuildProfile()
   })), O = null == n ? true : n.id, C = (0, s.e7)([c.Z], () => c.Z.get(O)), {
     fetchGuildProfile: y
   } = (0, d.u)(O), N = (null == v ? true : v.visibility) == null || !l.Y.VISIBLE.has(null == v ? true : v.visibility), E = (null == v ? true : v.visibility) === l.k.PUBLIC_WITH_RECRUITMENT;
@@ -64,14 +64,14 @@ function v(e) {
       }))
     }, [null == n ? true : n.id, E]),
     _ = i.useCallback(() => {
-      g.Z.setSection(b.pNK.PROFILE)
+      g.Z.setSection(p.pNK.PROFILE)
     }, []);
   if (null == n) return null;
   let T = null != t ? t : null == C ? true : C.formFields;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: h.intl.string(h.t.AHJddL)
     }), (0, r.jsx)(a.xvT, {
       tag: "p",
@@ -79,11 +79,11 @@ function v(e) {
       color: "text-subtle",
       className: x.applicationBody,
       children: h.intl.string(h.t.Z7TCtd)
-    }), (0, r.jsx)(p.c, {
+    }), (0, r.jsx)(b.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
       className: x.form,
-      children: null != T ? (0, r.jsx)(f.y, {
+      children: null != T ? (0, r.jsx)(m.y, {
         guild: n,
         formFields: T
       }) : (0, r.jsx)(o.$jN, {})

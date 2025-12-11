@@ -1,7 +1,7 @@
 /** Chunk was on 5749 **/
 /** chunk id: 955708, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m,
+  default: () => g,
   x: () => b
 }), require("./388685.js");
 var i, Chunk54381 = require("./54381.js"),
@@ -47,20 +47,20 @@ function h(t, e) {
   }), t
 }
 var b = ((i = {})[i.INTRO = 0] = "INTRO", i[i.SAFETY_TIPS = 1] = "SAFETY_TIPS", i[i.TAKE_ACTION = 2] = "TAKE_ACTION", i);
-let m = t => {
+let g = t => {
   let {
     warningId: e,
     warningType: n,
     senderId: i,
     modalProps: b,
-    channelId: m
-  } = t, [g, O] = a.useState(0), j = a.useMemo(() => ({
-    channelId: m,
+    channelId: g
+  } = t, [m, O] = a.useState(0), j = a.useMemo(() => ({
+    channelId: g,
     senderId: i,
     warningId: e,
     warningType: n,
     isNudgeWarning: false
-  }), [m, i, e, n]);
+  }), [g, i, e, n]);
   a.useEffect(() => {
     (0, c.KQ)(h(x({}, j), {
       viewName: c.pb.SAFETY_TAKEOVER_MODAL
@@ -81,10 +81,10 @@ let m = t => {
     transitionState: b.transitionState,
     parentComponent: "InappropriateConversationModal",
     children: [(0, r.jsx)("div", {
-      className: f.container,
+      className: p.container,
       children: (0, r.jsxs)(s.MyZ, {
         width: 440,
-        activeSlide: g,
+        activeSlide: m,
         centered: false,
         overflow: "visible",
         contentDisplay: "flex",
@@ -109,7 +109,7 @@ let m = t => {
             warningId: e,
             senderId: i,
             trackAnalyticsEvent: v,
-            channelId: m,
+            channelId: g,
             hasReported: _,
             onReport: function() {
               T(true)
@@ -119,19 +119,19 @@ let m = t => {
       })
     }), (0, r.jsxs)(s.mzw, {
       "data-migration-pending": true,
-      className: f.footer,
+      className: p.footer,
       children: [(0, r.jsx)(s.Avr, {
         variant: "secondary",
         size: "sm",
-        text: p.intl.string(p.t.cpT0Cq),
+        text: f.intl.string(f.t.cpT0Cq),
         onClick: function() {
-          b.onClose(), (0, o.T)(m, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
+          b.onClose(), (0, o.T)(g, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
         },
         textVariant: "text-sm/normal"
-      }), 0 !== g && (0, r.jsx)(s.Avr, {
+      }), 0 !== m && (0, r.jsx)(s.Avr, {
         variant: "secondary",
         size: "sm",
-        text: p.intl.string(p.t["13/7kX"]),
+        text: f.intl.string(f.t["13/7kX"]),
         textVariant: "text-sm/normal",
         onClick: () => E(0)
       })]

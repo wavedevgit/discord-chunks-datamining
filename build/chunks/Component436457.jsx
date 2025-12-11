@@ -25,12 +25,12 @@ function N(e) {
     onComplete: n,
     onConnect: a,
     isSlideReady: o
-  } = e, [N, x] = l.useState(""), [A, T] = l.useState(false), [C, j] = l.useState(null), y = l.useRef(null);
+  } = e, [N, x] = l.useState(""), [A, T] = l.useState(false), [C, j] = l.useState(null), O = l.useRef(null);
   l.useEffect(() => {
     var e;
-    o && (null == (e = y.current) || e.focus())
+    o && (null == (e = O.current) || e.focus())
   }, [o]);
-  let O = l.useCallback(e => {
+  let y = l.useCallback(e => {
     e.preventDefault();
     let t = N.trim();
     if ("" === t) return void j(_.intl.string(_.t.IRq5ah));
@@ -70,7 +70,7 @@ function N(e) {
         separator: false,
         children: [(0, s.jsx)(r.Heading, {
           variant: "heading-xl/bold",
-          color: "header-primary",
+          color: "text-strong",
           className: h.title,
           children: _.intl.string(_.t.riOUtB)
         }), (0, s.jsx)(r.Text, {
@@ -80,14 +80,14 @@ function N(e) {
         })]
       }), (0, s.jsxs)(r.hzk, {
         children: [(0, s.jsx)("form", {
-          onSubmit: O,
+          onSubmit: y,
           className: h.inputForm,
           children: (0, s.jsx)(r.oil, {
             label: _.intl.string(_.t.qreV25),
             error: C,
             value: N,
             onChange: x,
-            inputRef: y
+            inputRef: O
           })
         }), (0, s.jsx)(r.Text, {
           color: "text-default",
@@ -113,7 +113,7 @@ function N(e) {
       children: [(0, s.jsx)(r.Button, {
         variant: "primary",
         text: _.intl.string(_.t.VJlc0S),
-        onClick: O,
+        onClick: y,
         disabled: 0 === N.length,
         loading: A
       }), (0, s.jsx)(i.zx, {

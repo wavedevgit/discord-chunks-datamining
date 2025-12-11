@@ -4,7 +4,7 @@
 require.d(exports, {
   DH: () => G,
   Ks: () => U,
-  Ws: () => B,
+  Ws: () => F,
   g2: () => j,
   hf: () => L,
   k3: () => M,
@@ -342,7 +342,7 @@ function Z(e) {
   }
 }
 
-function B(e) {
+function F(e) {
   let {
     location: t
   } = e, {
@@ -362,7 +362,7 @@ function B(e) {
     hasLoadedQuestBar: 0 !== r && 0 !== i
   }
 }
-let F = {
+let B = {
   leading: true,
   trailing: false
 };
@@ -375,5 +375,5 @@ function V(e) {
   } = e;
   return (0, l.h)(i.useCallback(() => {
     t && ((0, S.f2)(n, r), (0, s.showToast)((0, s.createToast)(x.intl.string(x.t["+5kSoW"]), s.ToastType.SUCCESS)))
-  }, [t, n, r]), 3e3, [], F)
+  }, [t, n, r]), 3e3, [], B)
 }

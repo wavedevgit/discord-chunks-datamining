@@ -234,24 +234,24 @@ function Z(e) {
     verifyTitle: i ? y.intl.string(y.t.xi46lg) : y.intl.string(y.t.ZmwvDc)
   }
 }
-let B = () => {
+let F = () => {
     let e = Chunk594174.default.getCurrentUser();
     if (null == module) returnfalse;
     let t = k();
     returntrue !== module.nsfwAllowed || exports
   },
-  F = e => {
-    if (!B() || null == e) returnfalse;
+  B = e => {
+    if (!F() || null == e) returnfalse;
     let t = p.Z.getGuild(e);
     return null != t && (0, u.Y2)(t)
   },
-  V = e => !!B() && null != e && Q(d.Z.getChannel(e)),
+  V = e => !!F() && null != e && Q(d.Z.getChannel(e)),
   H = e => k() && V(e),
   Y = e => !!H(e) && ((0, g.mN)(E.L0.NSFW_VOICE_CHANNEL), true);
 
 function W(e, t, n) {
   if (w(e)) return void(0, g.mN)(E.L0.ACCESS_LARGE_GUILD_UNDERAGE);
-  if (F(e)) {
+  if (B(e)) {
     let e = null != n && N.has(n) ? n : E.L0.NSFW_SERVER;
     (0, g.mN)(e);
     return

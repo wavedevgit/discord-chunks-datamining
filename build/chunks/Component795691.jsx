@@ -20,18 +20,18 @@ function d(e) {
     disabled: u
   } = e, {
     topGames: g,
-    tryFetchTopGames: m
-  } = (0, a.I)(), f = g.get(t), [p, b] = i.useState(false);
+    tryFetchTopGames: f
+  } = (0, a.I)(), m = g.get(t), [b, p] = i.useState(false);
   i.useEffect(() => {
-    b(true), m(t).finally(() => {
-      b(false)
+    p(true), f(t).finally(() => {
+      p(false)
     })
-  }, [t, m]);
-  let h = i.useMemo(() => null == f ? [] : Object.keys(f).filter(e => !n.includes(e)).sort((e, t) => f[t].score - f[e].score), [f, n]),
+  }, [t, f]);
+  let h = i.useMemo(() => null == m ? [] : Object.keys(m).filter(e => !n.includes(e)).sort((e, t) => m[t].score - m[e].score), [m, n]),
     x = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return p && null == f ? (0, r.jsx)(l.$jN, {}) : null == h || 0 === h.length ? null : (0, r.jsxs)(r.Fragment, {
+  return b && null == m ? (0, r.jsx)(l.$jN, {}) : null == h || 0 === h.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {

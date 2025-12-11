@@ -123,7 +123,7 @@ function K(e) {
     entry: et,
     onClose: q
   }), ec = () => i.type !== U.IIU.HANG_STATUS || t.id !== n.id || null == K ? null : (0, r.jsx)(o.u, {
-    text: B.intl.string(B.t.QSOBaq),
+    text: F.intl.string(F.t.QSOBaq),
     children: (0, r.jsx)(s.d3s, {
       size: "xxs"
     })
@@ -134,20 +134,20 @@ function K(e) {
       userId: t.id,
       size: ee !== Z.l.MODAL_V2 ? 60 : 100,
       hangStatusActivity: i,
-      className: a()(F.hangStatusIcon, F.image, {
-        [F.small]: ee !== Z.l.MODAL_V2
+      className: a()(B.hangStatusIcon, B.image, {
+        [B.small]: ee !== Z.l.MODAL_V2
       })
     }) : null == el ? (0, r.jsx)(h.E, {
       image: eo,
       smallImage: es,
       size: n,
       aspectRatio: e,
-      className: F.image
+      className: B.image
     }) : (0, r.jsx)(h.E, {
       image: eo,
       smallImage: es,
       size: n,
-      className: F.clickableImage,
+      className: B.clickableImage,
       aspectRatio: e,
       onClick: e => {
         en({
@@ -160,11 +160,11 @@ function K(e) {
     text: (0, b.O8)(t.id, i),
     id: X
   }) : (0, d.Z)(i) && null != K ? (0, r.jsxs)("div", {
-    className: F.voiceChannelText,
+    className: B.voiceChannelText,
     children: [(0, r.jsx)(s.gj8, {
       size: "xxs",
       color: s.TVs.colors.TEXT_DEFAULT,
-      className: F.voiceIcon
+      className: B.voiceIcon
     }), (0, r.jsx)(x.f, {
       variant: "heading-sm/semibold",
       text: K.name,
@@ -189,7 +189,7 @@ function K(e) {
     if (i.type === U.IIU.HANG_STATUS) return null;
     if ((0, d.Z)(i) && null != Y) return (0, r.jsx)(x.Z, {
       variant: "text-xs/normal",
-      text: B.intl.formatToPlainString(B.t["hq/Qze"], {
+      text: F.intl.formatToPlainString(F.t["hq/Qze"], {
         guildName: Y.name
       }),
       onClick: () => {
@@ -224,7 +224,7 @@ function K(e) {
     if (i.type === U.IIU.WATCHING) return null;
     if ((0, u.Z)(i)) return e_();
     if ((0, v.dS)(i) && (null == (e = i.party) ? true : e.size) != null && (null == (t = i.party) ? true : t.size.length) >= 2) {
-      let e = B.intl.formatToPlainString(B.t["JC/3xw"], {
+      let e = F.intl.formatToPlainString(F.t["JC/3xw"], {
         numSpeakers: null == (a = i.party) ? true : a.size[0],
         numListeners: (null == (o = i.party) ? true : o.size[1]) - (null == (s = i.party) ? true : s.size[0])
       });
@@ -243,7 +243,7 @@ function K(e) {
   }, e_ = () => {
     var e, t, n, a;
     return (null == (e = i.party) ? true : e.size) == null && i.application_id === G.Zc ? (0, r.jsxs)("div", {
-      className: F.gameState,
+      className: B.gameState,
       children: [(0, r.jsx)(m._, {
         href: i.state_url,
         children: (0, r.jsx)(x.Z, {
@@ -252,13 +252,13 @@ function K(e) {
         })
       }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
-        text: B.intl.formatToPlainString(B.t["u//9By"], {
+        text: F.intl.formatToPlainString(F.t["u//9By"], {
           count: "0",
           max: null != (a = null == V ? true : V.getMaxParticipants()) ? a : 0
         })
       })]
     }) : (0, c.Z)(i) && (null == (t = i.party) ? true : t.size) != null && (null == (n = i.party) ? true : n.size.length) >= 2 ? (0, r.jsxs)("div", {
-      className: F.gameState,
+      className: B.gameState,
       children: [(0, r.jsx)(m._, {
         href: i.state_url,
         children: (0, r.jsx)(x.Z, {
@@ -267,9 +267,9 @@ function K(e) {
         })
       }), (0, r.jsx)(x.Z, {
         variant: "text-xs/normal",
-        text: 0 === i.party.size[1] ? B.intl.formatToPlainString(B.t.IM4J4e, {
+        text: 0 === i.party.size[1] ? F.intl.formatToPlainString(F.t.IM4J4e, {
           count: i.party.size[0]
-        }) : B.intl.formatToPlainString(B.t["u//9By"], {
+        }) : F.intl.formatToPlainString(F.t["u//9By"], {
           count: i.party.size[0],
           max: i.party.size[1]
         })
@@ -294,7 +294,7 @@ function K(e) {
   }, eh = () => null == el ? (0, r.jsxs)("div", {
     children: [ed(), ef(), ep()]
   }) : (0, r.jsxs)(s.P3F, {
-    className: F.clickableText,
+    className: B.clickableText,
     onClick: e => {
       en({
         action: "PRESS_TEXT"
@@ -308,7 +308,7 @@ function K(e) {
     onAction: en,
     onClose: q
   }), eE = () => t.id === n.id ? null : (0, r.jsx)("div", {
-    className: F.actions,
+    className: B.actions,
     children: (0, r.jsx)(N.Z, {
       activity: i,
       user: t,
@@ -321,7 +321,7 @@ function K(e) {
     value: $,
     children: (0, r.jsxs)(w.Z, {
       ref: er,
-      className: a()(F.card, z),
+      className: a()(B.card, z),
       onAction: en,
       onClose: q,
       "aria-labelledby": ea ? "".concat(J, " ").concat(X) : X,
@@ -338,15 +338,15 @@ function K(e) {
           appContext: Q
         })
       })), (0, r.jsxs)("div", {
-        className: F.body,
+        className: B.body,
         children: [(0, r.jsxs)("div", {
-          className: F.content,
+          className: B.content,
           children: [!t.bot && eu(), (0, r.jsxs)("div", {
-            className: F.details,
+            className: B.details,
             children: [eh(), !t.bot && (0, r.jsx)(P.Z, {
               user: t,
               activity: i,
-              className: F.badges
+              className: B.badges
             }), em(), ee === Z.l.MODAL_V2 && eE()]
           }), ee === Z.l.MODAL && eE()]
         }), eg()]

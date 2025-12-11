@@ -27,18 +27,18 @@ function h(e) {
     className: i()(m.container, l),
     children: [(0, a.jsx)(s.Heading, {
       variant: "heading-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: p.intl.string(p.t.l6DP2n)
     }), (0, a.jsxs)("div", {
       className: i()(m.list, o),
       children: [c.map((e, t) => (0, a.jsx)(f, {
         url: e.url,
         children: e.name
-      }, t)), null != r.terms_of_service_url ? (0, a.jsx)(b, {
+      }, t)), null != r.terms_of_service_url ? (0, a.jsx)(g, {
         icon: s.aAW,
         url: r.terms_of_service_url,
         children: p.intl.string(p.t.s7STcY)
-      }) : null, null != r.privacy_policy_url ? (0, a.jsx)(b, {
+      }) : null, null != r.privacy_policy_url ? (0, a.jsx)(g, {
         icon: s.mBM,
         url: r.privacy_policy_url,
         children: p.intl.string(p.t.kH3JR5)
@@ -53,7 +53,7 @@ function f(e) {
     url: r,
     children: i
   } = e, o = (0, c.ZP)(), u = d.Z.getByUrl(r), p = (0, l.wj)(o) ? null == u || null == (t = u.icon) ? true : t.darkSVG : null == u || null == (n = u.icon) ? true : n.lightSVG;
-  return (0, a.jsx)(b, {
+  return (0, a.jsx)(g, {
     icon: true === p ? s.xPt : true,
     imageSrc: p,
     url: r,
@@ -61,7 +61,7 @@ function f(e) {
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     icon: t,
     imageSrc: n,

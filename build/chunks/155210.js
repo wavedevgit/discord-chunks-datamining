@@ -105,10 +105,10 @@ function O(e, t, n) {
   }), Z = (0, h.useMemo)(() => {
     let e = new Date;
     return e.setHours(0), G.formatToParts(e).find(e => "dayPeriod" === e.type).value
-  }, [G]), B = (0, h.useMemo)(() => {
+  }, [G]), F = (0, h.useMemo)(() => {
     let e = new Date;
     return e.setHours(12), G.formatToParts(e).find(e => "dayPeriod" === e.type).value
-  }, [G]), F = (0, E.a)({
+  }, [G]), B = (0, E.a)({
     year: "numeric",
     era: "narrow",
     timeZone: "UTC"
@@ -124,20 +124,20 @@ function O(e, t, n) {
         }).toDate("UTC");
         return {
           era: e,
-          formatted: F.formatToParts(t).find(e => "era" === e.type).value
+          formatted: B.formatToParts(t).find(e => "era" === e.type).value
         }
       }),
       i = v(r.map(e => e.formatted));
     if (i)
       for (let e of r) e.formatted = e.formatted.slice(i);
     return r
-  }, [F, t.calendar, e.type]), H = n => {
+  }, [B, t.calendar, e.type]), H = n => {
     if (t.isDisabled || t.isReadOnly) return;
     let r = O.current + n;
     switch (e.type) {
       case "dayPeriod":
         if (U(Z, n)) t.setSegment("dayPeriod", 0);
-        else if (U(B, n)) t.setSegment("dayPeriod", 12);
+        else if (U(F, n)) t.setSegment("dayPeriod", 12);
         else break;
         P.focusNext();
         break;
@@ -201,7 +201,7 @@ function O(e, t, n) {
       inputType: t,
       data: r
     } = e;
-    "insertCompositionText" === t && (n.current && (n.current.textContent = K.current), null != r && (U(Z, r) || U(B, r)) && H(r))
+    "insertCompositionText" === t && (n.current && (n.current.textContent = K.current), null != r && (U(Z, r) || U(F, r)) && H(r))
   }), (0, d.b)(() => {
     let e = n.current;
     return () => {

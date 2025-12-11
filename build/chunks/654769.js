@@ -2,7 +2,7 @@
 /** chunk id: 654769, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => F,
+  W: () => B,
   Z: () => en
 }), require("./388685.js"), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./358797.js"), require("./539854.js"), require("./997841.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -81,7 +81,7 @@ if (M && !k) {
 }
 let G = new Chunk710845.Z("NotificationUtils"),
   Z = M && U || "Chrome" === s().name && 47 > parseFloat(s().version) || "Firefox" === s().name && 52 > parseFloat(s().version);
-async function B() {
+async function F() {
   if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) try {
     return await Chunk998502.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
   } catch (e) {
@@ -90,7 +90,7 @@ async function B() {
   return null
 }
 
-function F(e) {
+function B(e) {
   return "discord://".concat(location.host).concat(e)
 }
 
@@ -102,7 +102,7 @@ function V(e) {
   return null
 }
 async function H() {
-  let e = await B();
+  let e = await F();
   return (null == module ? true : module.authorizationStatus) === "authorized" && (null == module ? true : module.sound) === true
 }
 
@@ -200,7 +200,7 @@ function X(e) {
 }
 async function J() {
   if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) {
-    let e = await B();
+    let e = await F();
     return (null == module ? true : module.authorizationStatus) === "authorized" || (null == module ? true : module.authorizationStatus) === "provisional"
   }
   return null != q && "granted" === q.permission
@@ -208,7 +208,7 @@ async function J() {
 async function $() {
   if (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("notifications")) {
     var e;
-    return (null == (e = await B()) ? true : module.authorizationStatus) !== "undetermined"
+    return (null == (e = await F()) ? true : module.authorizationStatus) !== "undetermined"
   }
   return null != q && "default" !== q.permission
 }
@@ -220,13 +220,13 @@ function ee(e) {
 }
 async function et(e, t, n, r, i) {
   var a, o, s, c, d, f, g;
-  let E, b = await B(),
+  let E, b = await F(),
     D = (null == b ? true : b.authorizationStatus) === "authorized" || (null == b ? true : b.authorizationStatus) === "provisional",
     L = null != b ? D : await J(),
     k = D,
-    F = I.Z.disableNotifications && null == i.overrideStreamerMode,
+    B = I.Z.disableNotifications && null == i.overrideStreamerMode,
     V = !P.isPlatformEmbedded || (0, P.isMac)() && k || R.ZP.shouldDisplayNotifications(),
-    H = !F && L && V,
+    H = !B && L && V,
     W = j(x({}, r), {
       action: true,
       ping: true,

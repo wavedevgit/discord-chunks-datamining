@@ -85,7 +85,7 @@ function g(e) {
     children: [null != n ? (0, r.jsx)(l.x, {
       tag: "legend",
       variant: "text-lg/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: u.legend,
       children: n
     }) : null, g ? (0, r.jsx)(l.x, {

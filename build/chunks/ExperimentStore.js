@@ -89,11 +89,11 @@ function Z(e) {
     return G[e] = t, t
   }
 }
-let B = Chunk987338.qO.map(e => Z(e)),
-  F = 6048e5;
+let F = Chunk987338.qO.map(e => Z(e)),
+  B = 6048e5;
 
 function V(e, t) {
-  return e || B.includes(t)
+  return e || F.includes(t)
 }
 
 function H(e) {
@@ -119,7 +119,7 @@ let K = Date.now(),
 
 function q(e, t) {
   let n = N[e];
-  return !(null == n || (z ? n.time < K : Date.now() - n.time > F)) && n.hash === t
+  return !(null == n || (z ? n.time < K : Date.now() - n.time > B)) && n.hash === t
 }
 
 function Q(e, t) {
@@ -489,7 +489,7 @@ function ed() {
   let t = module.e,
     n = Date.now(),
     r = false;
-  for (let e in exports) require - exports[module].time > F && (delete exports[module], r = true);
+  for (let e in exports) require - exports[module].time > B && (delete exports[module], r = true);
   return Chunk392711 && em(exports), exports
 }
 

@@ -131,10 +131,10 @@ function G(e) {
 }
 
 function Z(e, t) {
-  return B(e) && (e = new Uint8Array(e).buffer), V(F(e), t)
+  return F(e) && (e = new Uint8Array(e).buffer), V(B(e), t)
 }
 
-function B(e) {
+function F(e) {
   try {
     return C.isBuffer(e)
   } catch (e) {
@@ -142,7 +142,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   try {
     return new DataView(e)
   } catch (t) {
@@ -177,7 +177,7 @@ function V(e, {
       pngTextChunks: U,
       pngChunkOffsets: G,
       vp8xChunkOffset: Z,
-      gifHeaderOffset: B
+      gifHeaderOffset: F
     } = s.Z.parseAppMarkers(e, n);
   if (a.Z.USE_JPEG && a.Z.USE_FILE && H(R)) {
     C = true;
@@ -270,13 +270,13 @@ function V(e, {
     let n = O.Z.read(e, Z);
     t ? A.riff = A.riff ? (0, r.wB)({}, A.riff, n) : n : A = (0, r.wB)({}, A, n)
   }
-  if (a.Z.USE_GIF && ei(B)) {
+  if (a.Z.USE_GIF && ei(F)) {
     C = true;
-    let n = v.Z.read(e, B);
+    let n = v.Z.read(e, F);
     t ? A.gif = A.gif ? (0, r.wB)({}, A.gif, n) : n : A = (0, r.wB)({}, A, n)
   }
-  let F = I.Z.get(A, t);
-  F && (t ? A.composite = F : A = (0, r.wB)({}, A, F));
+  let B = I.Z.get(A, t);
+  B && (t ? A.composite = B : A = (0, r.wB)({}, A, B));
   let ea = (a.Z.USE_JPEG || a.Z.USE_WEBP) && a.Z.USE_EXIF && a.Z.USE_THUMBNAIL && S.Z.get(e, A.Thumbnail, D);
   if (ea ? (C = true, A.Thumbnail = ea) : delete A.Thumbnail, P && (t ? (A.file || (A.file = {}), A.file.FileType = P) : A.FileType = P, C = true), !C) throw new T.Z.MetadataMissingError;
   if (n) return Promise.all(N).then(() => A);

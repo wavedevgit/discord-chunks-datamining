@@ -80,10 +80,10 @@ function G(e) {
 }
 
 function Z() {
-  w = true, C = T, B()
+  w = true, C = T, F()
 }
 
-function B() {
+function F() {
   var e;
   if (A = null != (e = Chunk517100.Z.getIdleSince()) ? module : 0, R = Chunk517100.Z.isAFK(), w) T = C;
   else if (I) T = Chunk981631.Skl.INVISIBLE;
@@ -101,16 +101,16 @@ function B() {
   x !== Chunk348327 && (x = Chunk348327), exports && (j = M(L = s()([...N, ...D.filter(e => e.type !== v.IIU.CUSTOM_STATUS)].sort(Chunk158776.f)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
-function F(e) {
-  return I = e.invisible, B()
+function B(e) {
+  return I = e.invisible, F()
 }
 
 function V() {
-  return I = false, B()
+  return I = false, F()
 }
 
 function H() {
-  w = false, C = Chunk981631.Skl.UNKNOWN, B(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
+  w = false, C = Chunk981631.Skl.UNKNOWN, F(), Chunk158776.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
 function Y() {
@@ -118,7 +118,7 @@ function Y() {
 }
 class W extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk77498.Z, Chunk517100.Z, Chunk283595.Z, Chunk293273.Z, Chunk158776.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk293273.Z], B)
+    this.waitFor(Chunk77498.Z, Chunk517100.Z, Chunk283595.Z, Chunk293273.Z, Chunk158776.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk293273.Z], F)
   }
   getLocalPresence() {
     return {
@@ -157,25 +157,25 @@ class W extends(r = Chunk442837.ZP.Store) {
 }
 S(W, "displayName", "SelfPresenceStore");
 let K = new W(Chunk570140.Z, {
-  START_SESSION: B,
+  START_SESSION: F,
   CONNECTION_OPEN: Y,
   CONNECTION_OPEN_SUPPLEMENTAL: H,
   OVERLAY_INITIALIZE: H,
-  CONNECTION_CLOSED: B,
-  IDLE: B,
-  AFK: B,
-  RUNNING_GAMES_CHANGE: B,
-  STREAMING_UPDATE: B,
-  USER_SETTINGS_PROTO_UPDATE: B,
-  LOCAL_ACTIVITY_UPDATE: B,
-  SPOTIFY_PLAYER_STATE: B,
-  SPOTIFY_PLAYER_PLAY: B,
-  USER_CONNECTIONS_UPDATE: B,
-  SESSIONS_REPLACE: B,
-  RPC_APP_DISCONNECTED: B,
-  LIBRARY_FETCH_SUCCESS: B,
-  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: B,
+  CONNECTION_CLOSED: F,
+  IDLE: F,
+  AFK: F,
+  RUNNING_GAMES_CHANGE: F,
+  STREAMING_UPDATE: F,
+  USER_SETTINGS_PROTO_UPDATE: F,
+  LOCAL_ACTIVITY_UPDATE: F,
+  SPOTIFY_PLAYER_STATE: F,
+  SPOTIFY_PLAYER_PLAY: F,
+  USER_CONNECTIONS_UPDATE: F,
+  SESSIONS_REPLACE: F,
+  RPC_APP_DISCONNECTED: F,
+  LIBRARY_FETCH_SUCCESS: F,
+  LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: F,
   LOGOUT: Z,
-  FORCE_INVISIBLE: F,
+  FORCE_INVISIBLE: B,
   WINDOW_FOCUS: V
 })

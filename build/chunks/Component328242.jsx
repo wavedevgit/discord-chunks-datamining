@@ -165,7 +165,7 @@ function T() {
       className: Chunk132011.emptyIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-lg/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: Chunk132011.emptyHeader,
       children: Chunk388032.intl.string(Chunk297940.default["/z3YaZ"])
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {

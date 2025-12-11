@@ -82,7 +82,7 @@ let C = e => {
           }),
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
-            color: "header-primary",
+            color: "text-strong",
             className: I.heading,
             children: t
           }), (0, r.jsx)(E.Z, {
@@ -98,7 +98,7 @@ let C = e => {
             cardType: y.gM.CARD_CAROUSEL_FIRST_ROW
           }), (0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
-            color: "header-primary",
+            color: "text-strong",
             className: I.heading,
             children: n
           }), (0, r.jsx)(E.Z, {
@@ -114,7 +114,7 @@ let C = e => {
             cardType: y.gM.CARD_CAROUSEL_SECOND_ROW
           }), (0, r.jsx)(c.Heading, {
             variant: "heading-xxl/extrabold",
-            color: "header-primary",
+            color: "text-strong",
             className: I.heading,
             children: S.intl.string(S.t.LTaxu9)
           }), (0, r.jsx)(E.Z, {

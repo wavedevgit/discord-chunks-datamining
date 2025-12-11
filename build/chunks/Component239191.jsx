@@ -97,7 +97,7 @@ function k(e) {
   let {
     transitionState: t,
     onClose: i
-  } = e, [a] = n.useState(() => g.Z.gradientPreset), c = (0, d.e7)([x.Z], () => x.Z.theme), [b] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [k, K] = n.useState(() => b ? "system" : null != a ? "gradient" : c), {
+  } = e, [a] = n.useState(() => g.Z.gradientPreset), c = (0, d.e7)([p.Z], () => p.Z.theme), [b] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [k, K] = n.useState(() => b ? "system" : null != a ? "gradient" : c), {
     density: _
   } = (0, o.TCT)(), R = n.useMemo(() => {
     if (null == a && !b) return C;
@@ -108,7 +108,7 @@ function k(e) {
         angle: i,
         theme: s,
         getName: n
-      } = a, d = (0, p.VK)({
+      } = a, d = (0, x.VK)({
         colors: t,
         angle: i
       }), r = n();
@@ -145,7 +145,7 @@ function k(e) {
             className: O.headerImage
           }), (0, s.jsx)(o.Heading, {
             variant: w ? "heading-lg/semibold" : "heading-xl/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: f.intl.string(f.t["7+iCG4"])
           })]
         }), (0, s.jsx)(o.Heading, {

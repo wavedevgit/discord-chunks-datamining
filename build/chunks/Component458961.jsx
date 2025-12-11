@@ -260,7 +260,7 @@ function _(e) {
         children: [(0, n.jsx)(p.Heading, {
           id: E,
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: D.intl.string(D.t.DnNl1T)
         }), (0, n.jsx)(p.Text, {
           variant: "text-sm/normal",

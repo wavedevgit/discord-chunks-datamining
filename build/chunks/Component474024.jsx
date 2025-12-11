@@ -29,33 +29,33 @@ function x(e) {
     var e;
     return (null == (e = d.Z.getProfile(x)) ? true : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
   }, [x]), O = i.useRef(null);
-  (0, f.Z)(O, p.KsC.PROFILE_VISIBILITY);
+  (0, m.Z)(O, b.KsC.PROFILE_VISIBILITY);
   let C = i.useCallback(() => {
-      j ? m.Z.updateGuildProfile(x, {
+      j ? f.Z.updateGuildProfile(x, {
         visibility: u.k.RESTRICTED
-      }) : m.Z.updateGuildProfile(x, {
+      }) : f.Z.updateGuildProfile(x, {
         visibility: v ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
       })
     }, [x, v, j]),
     y = i.useCallback(() => {
-      m.Z.setSection(p.pNK.ACCESS, p.KsC.ACCESS_DISCOVERABLE)
+      f.Z.setSection(b.pNK.ACCESS, b.KsC.ACCESS_DISCOVERABLE)
     }, []),
-    N = null == (t = n.features) ? true : t.includes(p.GuildFeatures.DISCOVERABLE);
+    N = null == (t = n.features) ? true : t.includes(b.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: h.twoColumnContainer,
     ref: O,
     children: [(0, r.jsxs)("div", {
       className: h.column,
       children: [(0, r.jsx)(c.rsf, {
-        label: b.intl.string(b.t.fjHWen),
-        description: b.intl.string(b.t.J1YOV6),
+        label: p.intl.string(p.t.fjHWen),
+        description: p.intl.string(p.t.J1YOV6),
         checked: !j,
         onChange: C,
         disabled: N || !l
       }), N && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: b.intl.format(b.t.R8jY9g, {
+        children: p.intl.format(p.t.R8jY9g, {
           accessLink: (e, t) => (0, r.jsx)(c.Anchor, {
             onClick: y,
             children: e

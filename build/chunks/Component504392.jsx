@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -46,7 +46,7 @@ function R(e) {
   }, [t, R]), i.useEffect(() => {
     (0, v.Sn)(t), (0, v.BN)(t)
   }, [t]), (0, T.Wj)(t);
-  let L = (0, o.e7)([x.Z], () => x.Z.getStateForGuild(t)),
+  let L = (0, a.e7)([x.Z], () => x.Z.getStateForGuild(t)),
     U = (0, h.Z)(t),
     M = i.useRef(false),
     {
@@ -134,7 +134,7 @@ function R(e) {
             listings: i
           } = e, {
             title: l,
-            description: o
+            description: a
           } = function(e) {
             switch (e) {
               case N.Us.LEVEL:
@@ -152,17 +152,17 @@ function R(e) {
             children: [(0, r.jsxs)("div", {
               className: k.powerupHorizontalPadding,
               children: [(0, r.jsx)(c.Heading, {
-                color: "header-primary",
+                color: "text-strong",
                 variant: "heading-lg/semibold",
                 children: l
               }), (0, r.jsx)(c.Text, {
                 color: "text-muted",
                 variant: "text-sm/medium",
-                children: o
+                children: a
               })]
             }), (0, r.jsx)(s, {
               orientation: "horizontal",
-              className: a()(k.powerupContainer, k.powerupHorizontalPadding, {
+              className: o()(k.powerupContainer, k.powerupHorizontalPadding, {
                 [k.powerupsLevelContainer]: n === N.Us.LEVEL
               }),
               fade: true,

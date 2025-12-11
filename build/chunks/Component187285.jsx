@@ -64,7 +64,7 @@ let d = function(e) {
       className: s.headingWrapper,
       children: (0, a.jsx)(l.Heading, {
         className: s.heading,
-        color: "header-primary",
+        color: "text-strong",
         variant: "text-xs/semibold",
         children: n
       })

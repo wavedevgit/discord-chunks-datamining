@@ -81,12 +81,12 @@ function I(e) {
     onClose: b
   } = e, {
     pendingProfileEffect: h
-  } = (0, g.xZ)(null == n ? true : n.id), [P, O] = i.useMemo(() => {
+  } = (0, g.xZ)(null == n ? true : n.id), [y, O] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
   }, [l, c]), [I, S] = i.useState(() => null != f ? f : true !== h ? h : null == p ? null : null != p ? p : null), [w, _] = i.useMemo(() => {
     var e;
-    let t = P.find(e => {
+    let t = y.find(e => {
         let {
           skuId: t
         } = e;
@@ -99,7 +99,7 @@ function I(e) {
       } = e;
       return t === (null == I ? true : I.skuId)
     })) ? e : null, n]
-  }, [I, P, O]), {
+  }, [I, y, O]), {
     product: A,
     purchase: N
   } = (0, d.Z)(null == w ? true : w.skuId), k = i.useRef(null), Z = x.ZP.canUseCollectibles(t), D = true === h ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == h ? true : h.skuId), T = i.useCallback(e => {
@@ -127,7 +127,7 @@ function I(e) {
     }), (0, r.jsxs)(o.hzk, {
       "data-migration-pending": true,
       className: E.modalContent,
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(P.Z, {
         user: t,
         guild: n,
         pendingProfileEffect: I,
@@ -170,18 +170,18 @@ function S(e) {
     categories: m,
     purchases: x
   } = (0, f.ZP)(), j = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
-    analyticsLocations: y
+    analyticsLocations: P
   } = (0, c.ZP)(n, s.Z.EDIT_PROFILE_EFFECT_MODAL), O = (0, g.nh)({
     user: j,
     guildId: null == u ? true : u.id
   });
   return i.useEffect(() => {
-    h.default.track(P.rMx.OPEN_MODAL, {
-      type: P.jXE.PROFILE_EFFECT_CUSTOMIZATION,
-      location_stack: y
+    h.default.track(y.rMx.OPEN_MODAL, {
+      type: y.jXE.PROFILE_EFFECT_CUSTOMIZATION,
+      location_stack: P
     })
-  }, [y]), (0, r.jsx)(c.Gt, {
-    value: y,
+  }, [P]), (0, r.jsx)(c.Gt, {
+    value: P,
     children: (0, r.jsx)(o.Y0X, {
       transitionState: t,
       className: E.modal,
@@ -199,7 +199,7 @@ function S(e) {
         initialSelectedProfileEffect: a,
         currentSavedEffect: O,
         onClose: d,
-        analyticsLocations: y
+        analyticsLocations: P
       })
     })
   })

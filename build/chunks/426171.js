@@ -20,14 +20,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk258939 = require("./258939.js"),
   Chunk956472 = require("./956472.js"),
   Chunk981631 = require("./981631.js");
-let h = "".concat("#").concat("itemSkuId", "="),
-  C = new RegExp("^".concat(h, "(\\d+)$")),
+let C = "".concat("#").concat("itemSkuId", "="),
+  h = new RegExp("^".concat(C, "(\\d+)$")),
   v = [Chunk981631.Z5c.COLLECTIBLES_SHOP],
   E = e => {
     let t = (0, l.TH)();
     r.useEffect(() => {
       if (null != e && v.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(h) && window.location.replace("#")
+        window.location.hash.startsWith(C) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },
@@ -35,13 +35,13 @@ let h = "".concat("#").concat("itemSkuId", "="),
     let e = (0, Chunk258939.R)(),
       t = Chunk473749.useRef(null),
       n = (0, Chunk828700.TH)(),
-      i = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
+      o = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
-        analyticsLocations: h
+        analyticsLocations: C
       } = (0, Chunk906732.ZP)(Chunk607070),
       v = (0, Chunk410127.Z)();
     Chunk473749.useEffect(() => {
-      let e = C.exec(require.hash);
+      let e = h.exec(require.hash);
       null != module ? exports.current = module[1] : exports.current = null
     }, [v, require.hash]);
     let E = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
@@ -56,8 +56,8 @@ let h = "".concat("#").concat("itemSkuId", "="),
               analyticsLocations: n,
               analyticsSource: r,
               tab: l
-            } = e, a = c.Z.getProduct(t), i = c.Z.getCategoryForProduct(t);
-            if (null != a && null != i) {
+            } = e, a = c.Z.getProduct(t), o = c.Z.getCategoryForProduct(t);
+            if (null != a && null != o) {
               let e = a,
                 s = (0, b.oQ)({
                   product: a
@@ -66,14 +66,14 @@ let h = "".concat("#").concat("itemSkuId", "="),
               if (u !== document.activeElement && (null == u || u.focus()), null != a.variantGroupStoreListingId) {
                 let n = c.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
                 if (null != n) {
-                  var o;
+                  var i;
                   e = n;
-                  let r = null == (o = n.variants) ? true : o.findIndex(e => e.skuId === t);
+                  let r = null == (i = n.variants) ? true : i.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, d.$)(n, r)
                 }
               }(0, g.T)({
                 product: e,
-                category: i,
+                category: o,
                 analyticsSource: r,
                 analyticsLocations: n,
                 tab: l,
@@ -82,20 +82,20 @@ let h = "".concat("#").concat("itemSkuId", "="),
             }
           })({
             productSkuId: require,
-            analyticsLocations: h,
+            analyticsLocations: C,
             analyticsSource: Chunk607070,
             tab: v
           })
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [h, Chunk607070, module, E, v])
+    }, [C, Chunk607070, module, E, v])
   },
   _ = e => {
     let t = r.useRef({}),
-      n = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
+      n = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
       l = (0, a.e7)([c.Z], () => c.Z.isFetchingCategories),
-      [o, s] = r.useState(null),
+      [i, s] = r.useState(null),
       u = r.useCallback((e, n) => {
         t.current[e] = n
       }, []),
@@ -111,8 +111,8 @@ let h = "".concat("#").concat("itemSkuId", "="),
         }, 100)
       }, [e, n, l, s]);
     return r.useEffect(() => {
-      l || null == o || (d(o), s(null))
-    }, [l, d, o, s]), {
+      l || null == i || (d(i), s(null))
+    }, [l, d, i, s]), {
       setCategoryRef: u,
       handleScrollToCategory: d
     }

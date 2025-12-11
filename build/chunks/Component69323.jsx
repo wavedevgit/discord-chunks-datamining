@@ -22,10 +22,10 @@ function v(e) {
     powerup: t,
     targetRef: n,
     isCardVisible: v
-  } = e, x = (0, a.e7)([d.Z], () => d.Z.hasLayers()), b = (0, s.useHasAnyModalOpen)(), h = t.skuId === l.A$ ? {
+  } = e, x = (0, o.e7)([d.Z], () => d.Z.hasLayers()), b = (0, s.useHasAnyModalOpen)(), h = t.skuId === l.A$ ? {
     title: g.intl.string(m.default.YWo6VL),
     body: g.intl.string(m.default.gXVvKc),
-    dismissibleContentType: o.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
+    dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, j = [];
   null == h || x || !v || b || j.push(h.dismissibleContentType);
   let [_, C] = (0, u.US)(j), Z = i.useCallback(() => {

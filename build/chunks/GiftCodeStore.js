@@ -184,14 +184,14 @@ function Z(e) {
   }
 }
 
-function B(e) {
+function F(e) {
   let {
     message: t
   } = e;
   return C(t, true)
 }
 
-function F(e) {
+function B(e) {
   let {
     channelId: t,
     messages: n
@@ -302,11 +302,11 @@ let q = new z(Chunk570140.Z, {
     GIFT_CODES_FETCH: M,
     GIFT_CODES_FETCH_SUCCESS: U,
     GIFT_CODES_FETCH_FAILURE: k,
-    MESSAGE_CREATE: B,
-    MESSAGE_UPDATE: B,
-    LOCAL_MESSAGES_LOADED: F,
-    LOAD_MESSAGES_SUCCESS: F,
-    LOAD_MESSAGES_AROUND_SUCCESS: F,
+    MESSAGE_CREATE: F,
+    MESSAGE_UPDATE: F,
+    LOCAL_MESSAGES_LOADED: B,
+    LOAD_MESSAGES_SUCCESS: B,
+    LOAD_MESSAGES_AROUND_SUCCESS: B,
     LOAD_RECENT_MENTIONS_SUCCESS: V,
     LOAD_PINNED_MESSAGES_SUCCESS: H,
     SEARCH_MESSAGES_SUCCESS: Y,

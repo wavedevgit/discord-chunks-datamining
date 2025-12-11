@@ -54,7 +54,7 @@ let S = e => {
       type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
       location_section: a
     }), Promise.resolve()),
-    B = {
+    F = {
       UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== C.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
         transitionState: I,
         onClose: Z,
@@ -194,6 +194,6 @@ let S = e => {
       location_section: a
     })
   }, [a]);
-  let F = B[R];
-  return null == F ? null : F()
+  let B = F[R];
+  return null == B ? null : B()
 }

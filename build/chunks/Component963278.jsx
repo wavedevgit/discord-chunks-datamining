@@ -2,12 +2,12 @@
 /** chunk id: 963278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -19,16 +19,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk222194 = require("./222194.js");
-let C = e => {
+let h = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: a
-  } = e, C = (0, o.e7)([c.default], () => c.default.getCurrentUser()), v = (0, o.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), E = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), _ = (0, f.l)(S).slice(0, 4);
-  return null == C ? null : (0, r.jsxs)("div", {
-    className: i()(h.shelfBlockContainer, h.centeredSection),
+  } = e, h = (0, i.e7)([c.default], () => c.default.getCurrentUser()), v = (0, i.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), E = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), _ = (0, f.l)(S).slice(0, 4);
+  return null == h ? null : (0, r.jsxs)("div", {
+    className: o()(C.shelfBlockContainer, C.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: h.blockHeader,
+      className: C.blockHeader,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
@@ -47,7 +47,7 @@ let C = e => {
         }
       })]
     }), (0, r.jsx)("div", {
-      className: h.feed,
+      className: C.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: _.map((e, n) => {
           if (null == d.Z.getCategoryForProduct(e.skuId) || null == e) return null;

@@ -107,7 +107,7 @@ function S() {
       color: Chunk436774.JX.PREMIUM_TIER_2
     }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
       variant: "text-xs/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: Chunk867814.upsellText,
       children: Chunk175006
     }), (0, Chunk54381.jsx)(Chunk767714.Z, {

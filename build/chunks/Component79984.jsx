@@ -40,7 +40,7 @@ function d() {
         children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
           className: Chunk758539.hidden,
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           lineClamp: 1,
           children: "_"
         })

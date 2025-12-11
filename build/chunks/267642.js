@@ -9,7 +9,7 @@ require.d(exports, {
   Jh: () => L,
   KK: () => W,
   Oe: () => S,
-  Qi: () => F,
+  Qi: () => B,
   Ro: () => O,
   _k: () => G,
   _p: () => D,
@@ -17,7 +17,7 @@ require.d(exports, {
   cP: () => P,
   e9: () => w,
   ee: () => z,
-  gZ: () => B,
+  gZ: () => F,
   ge: () => x,
   ig: () => C,
   nL: () => H,
@@ -337,7 +337,7 @@ let Z = [{
   nextTier: Chunk981631.Eu4.TIER_2
 }];
 
-function B(e, t) {
+function F(e, t) {
   let n = G(e, t);
   if (n > 0) {
     let r = U(e).filter(e => null != e.endsAt),
@@ -357,7 +357,7 @@ function B(e, t) {
   return null
 }
 
-function F(e, t) {
+function B(e, t) {
   let n = C(t),
     r = v.indexOf(t);
   if (false === r) return 0;

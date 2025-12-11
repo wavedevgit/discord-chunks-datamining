@@ -2,7 +2,7 @@
 /** chunk id: 358221, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eB
+  Z: () => eF
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -76,8 +76,8 @@ let D = new Chunk710845.Z("ChannelRTCStore"),
   U = {},
   G = {},
   Z = {},
-  B = {},
   F = {},
+  B = {},
   V = {},
   H = {},
   Y = {};
@@ -199,7 +199,7 @@ function eo(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete k[t] : null != n && (delete F[n], delete H[n], $(n)), ea()
+  return null != t ? delete k[t] : null != n && (delete B[n], delete H[n], $(n)), ea()
 }
 
 function es(e) {
@@ -207,9 +207,9 @@ function es(e) {
     channelId: t,
     messageId: n
   } = e, r = ea();
-  if (null == t || null == n || F[t]) return r;
+  if (null == t || null == n || B[t]) return r;
   let i = E.Z.getChannel(t);
-  return null != i && i.isGuildVocal() ? (V[t] = false, F[t] = true, true) : r
+  return null != i && i.isGuildVocal() ? (V[t] = false, B[t] = true, true) : r
 }
 
 function el(e) {
@@ -296,7 +296,7 @@ function eE(e) {
     channelId: t,
     voiceParticipantsHidden: n
   } = e;
-  B[t] = n
+  F[t] = n
 }
 
 function eb(e) {
@@ -332,7 +332,7 @@ function ev(e) {
     channelId: t,
     chatOpen: n
   } = e;
-  F[t] = n, n && (V[t] = false)
+  B[t] = n, n && (V[t] = false)
 }
 
 function eS(e) {
@@ -340,7 +340,7 @@ function eS(e) {
     channelId: t,
     participantsListOpen: n
   } = e;
-  V[t] = n, n && (F[t] = false)
+  V[t] = n, n && (B[t] = false)
 }
 
 function eI(e) {
@@ -408,7 +408,7 @@ function eN(e) {
       id: t
     }
   } = e;
-  return delete F[t], delete V[t], delete H[t], ei(t)
+  return delete B[t], delete V[t], delete H[t], ei(t)
 }
 
 function eP(e) {
@@ -514,11 +514,11 @@ function eG(e) {
 }
 class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(m.Z, h.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, S.Z, I.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(B, null == e ? true : e.voiceParticipantsHidden)
+    this.waitFor(m.Z, h.default, g.Z, E.Z, u.ZP, f.default, b.Z, y.Z, O.Z, v.default, S.Z, I.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.default], ea), (null == e ? true : e.voiceParticipantsHidden) !== true && Object.assign(F, null == e ? true : e.voiceParticipantsHidden)
   }
   getState() {
     return {
-      voiceParticipantsHidden: B
+      voiceParticipantsHidden: F
     }
   }
   getParticipantsVersion(e) {
@@ -535,7 +535,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   getFilteredParticipants(e) {
     var t;
     let n = W(e);
-    return null != (t = B[e]) && t ? n.toArray(T.sI.FILTERED) : n.toArray(T.sI.NOT_POPPED_OUT)
+    return null != (t = F[e]) && t ? n.toArray(T.sI.FILTERED) : n.toArray(T.sI.NOT_POPPED_OUT)
   }
   getVideoParticipants(e) {
     var t;
@@ -562,7 +562,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getVoiceParticipantsHidden(e) {
     var t;
-    return null != (t = B[e]) && t
+    return null != (t = F[e]) && t
   }
   getSelectedParticipantId(e) {
     let [t, n] = X(e);
@@ -596,10 +596,10 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getChatOpen(e) {
     var t, n, r;
-    return null != (r = null != (n = F[e]) ? n : null == (t = E.Z.getChannel(e)) ? true : t.isVocalThread()) && r
+    return null != (r = null != (n = B[e]) ? n : null == (t = E.Z.getChannel(e)) ? true : t.isVocalThread()) && r
   }
   getAllChatOpen() {
-    return F
+    return B
   }
   getParticipantsListOpen(e) {
     var t;
@@ -621,7 +621,7 @@ class eZ extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 N(eZ, "displayName", "ChannelRTCStore"), N(eZ, "persistKey", "ChannelRTCStore");
-let eB = new eZ(Chunk570140.Z, {
+let eF = new eZ(Chunk570140.Z, {
   CONNECTION_OPEN: K,
   CONNECTION_OPEN_SUPPLEMENTAL: ea,
   THREAD_LIST_SYNC: ea,

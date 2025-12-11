@@ -18,45 +18,45 @@ let p = e => {
     application: p,
     onClose: u,
     transitionState: m
-  } = e, j = (0, l.w)(t), x = n.useCallback(() => (u(), (0, c.ZDy)(async () => {
+  } = e, j = (0, l.w)(t), x = a.useCallback(() => (u(), (0, c.ZDy)(async () => {
     let {
       default: e
     } = await r.e("31907").then(r.bind(r, 366854));
     return r => {
-      var n, i;
-      return (0, a.jsx)(e, (n = function(e) {
+      var a, i;
+      return (0, n.jsx)(e, (a = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
-            a = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            n = Object.keys(r);
+          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
             return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), a.forEach(function(t) {
-            var a;
-            a = r[t], t in e ? Object.defineProperty(e, t, {
-              value: a,
+          }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+              value: n,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = a
+            }) : e[t] = n
           })
         }
         return e
       }({}, r), i = i = {
         channelId: t.id,
         application: p
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, a)
+          var n = Object.getOwnPropertySymbols(e);
+          r.push.apply(r, n)
         }
         return r
       })(Object(i)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-      }), n))
+        Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
+      }), a))
     }
   })), [p, t.id, u]), O = (0, o.ZP)(t, true);
-  return (0, a.jsx)(i.Modal, {
+  return (0, n.jsx)(i.Modal, {
     transitionState: m,
     "aria-label": d.intl.string(d.t.OJknhi),
     onClose: u,
@@ -70,30 +70,30 @@ let p = e => {
       onClick: x,
       variant: "critical-primary"
     }],
-    children: (0, a.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       className: b.content,
-      children: [(0, a.jsx)(s.Z, {
+      children: [(0, n.jsx)(s.Z, {
         game: p,
         size: s.A.XLARGE
-      }), (0, a.jsxs)("div", {
+      }), (0, n.jsxs)("div", {
         className: b.metadata,
-        children: [(0, a.jsxs)("div", {
+        children: [(0, n.jsxs)("div", {
           className: b.metadataHeader,
-          children: [(0, a.jsx)(c.Text, {
+          children: [(0, n.jsx)(c.Text, {
             variant: "text-md/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: p.name
-          }), (0, a.jsx)(c.Text, {
+          }), (0, n.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: d.intl.format(d.t["0NJZAU"], {
               channelName: O
             })
           })]
-        }), null != j && (0, a.jsxs)(a.Fragment, {
-          children: [(0, a.jsx)("div", {
+        }), null != j && (0, n.jsxs)(n.Fragment, {
+          children: [(0, n.jsx)("div", {
             className: b.divider
-          }), (0, a.jsx)(c.Text, {
+          }), (0, n.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             children: j

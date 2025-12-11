@@ -18,10 +18,10 @@ let g = Chunk473749.memo(function(e) {
   let {
     renderHeader: l,
     children: g,
-    isExpanded: m,
-    isStuck: f,
-    onExpand: p,
-    disableAnimation: b,
+    isExpanded: f,
+    isStuck: m,
+    onExpand: b,
+    disableAnimation: p,
     disableBackground: h
   } = e, [x, j] = i.useState(true), [v, O] = i.useState(false), {
     ref: C,
@@ -29,7 +29,7 @@ let g = Chunk473749.memo(function(e) {
   } = (0, c.ZP)(), {
     ref: N,
     height: E = 0
-  } = (0, c.ZP)(), [I, S] = i.useState(m), _ = (0, o.q_F)({
+  } = (0, c.ZP)(), [I, S] = i.useState(f), _ = (0, o.q_F)({
     height: I ? E + y : y,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -66,29 +66,29 @@ let g = Chunk473749.memo(function(e) {
     onRest: () => {
       O(true)
     }
-  }, x || b ? "animate-never" : "respect-motion-settings");
+  }, x || p ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    O(false), S(m)
-  }, [m]), i.useLayoutEffect(() => {
+    O(false), S(f)
+  }, [f]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
     }, 100);
     return () => clearTimeout(e)
   }, []), (0, r.jsx)(o.P3F, {
     className: a()(u.editCard, {
-      [u.toggled]: m,
+      [u.toggled]: f,
       [u.noBackground]: h
     }),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {
-        [u.showOverflow]: m && v
+        [u.showOverflow]: f && v
       }),
       style: _,
       children: [(0, r.jsx)(o.P3F, {
         innerRef: C,
-        onClick: f ? true : p,
+        onClick: m ? true : b,
         className: a()(u.innerHeader, {
-          [u.toggled]: m && f
+          [u.toggled]: f && m
         }),
         "aria-label": d.intl.string(d.t.dcl9MQ),
         children: l

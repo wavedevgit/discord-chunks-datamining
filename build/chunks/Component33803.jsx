@@ -198,17 +198,17 @@ function et(e, t, n) {
   try {
     switch (parseInt(e.actionType)) {
       case g.d.DELETE_USER_MESSAGE:
-        return F.intl.formatToPlainString(F.t.BtKE9h, {
+        return B.intl.formatToPlainString(B.t.BtKE9h, {
           userName: i,
           timestamp: a.fromNow()
         });
       case g.d.SET_COMPLETED:
-        return F.intl.formatToPlainString(F.t.dyo9US, {
+        return B.intl.formatToPlainString(B.t.dyo9US, {
           userName: i,
           timestamp: a.fromNow()
         });
       case g.d.SUBMIT_FEEDBACK:
-        return F.intl.formatToPlainString(F.t["C9/kIO"], {
+        return B.intl.formatToPlainString(B.t["C9/kIO"], {
           userName: i,
           timestamp: a.fromNow()
         });
@@ -294,7 +294,7 @@ let ei = Chunk473749.memo(function(e) {
   });
   return (0, r.jsx)(p.Text, {
     variant: "text-md/normal",
-    color: "header-primary",
+    color: "text-strong",
     tag: "span",
     className: V.spanCorrection,
     children: (0, E.Mq)(n, a, g, f, t)
@@ -350,7 +350,7 @@ function ea(e) {
     }), (0, v.Kh)(e))
   }, [s, q]), ey = i.useCallback(() => {
     (0, y.Xx)(s.id, l, g.d.DELETE_USER_MESSAGE)
-  }, [l, s.id]), eO = (0, B.getFriendlyDurationString)(Number(eo)), ev = null != es, eS = H && null != ea && (null == el || !el.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), eI = s.embeds.length > 0 ? null == (t = s.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eT = null != eI;
+  }, [l, s.id]), eO = (0, F.getFriendlyDurationString)(Number(eo)), ev = null != es, eS = H && null != ea && (null == el || !el.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), eI = s.embeds.length > 0 ? null == (t = s.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? true : t.rawValue : null, eT = null != eI;
   return (0, r.jsx)("div", {
     onMouseEnter: S,
     onMouseLeave: T,
@@ -380,7 +380,7 @@ function ea(e) {
               color: "text-brand",
               tag: "span",
               className: V.username,
-              children: F.intl.string(F.t.hG1StD)
+              children: B.intl.string(B.t.hG1StD)
             }), (0, r.jsx)(h.Z, {
               type: Z.Hb.SYSTEM_DM,
               className: V.systemTag
@@ -418,7 +418,7 @@ function ea(e) {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     tag: "span",
-                    children: F.intl.format(F.t.SYIUTR, {
+                    children: B.intl.format(B.t.SYIUTR, {
                       keyword: et
                     })
                   }), (0, r.jsx)("div", {
@@ -428,7 +428,7 @@ function ea(e) {
                   variant: "text-xs/medium",
                   color: "text-muted",
                   tag: "span",
-                  children: F.intl.format(F.t.ZoOyKB, {
+                  children: B.intl.format(B.t.ZoOyKB, {
                     ruleName: W
                   })
                 }), null != eO && (0, r.jsxs)(r.Fragment, {
@@ -439,7 +439,7 @@ function ea(e) {
                     color: "text-muted",
                     tag: "span",
                     className: V.__invalid_footerText,
-                    children: F.intl.format(F.t["3LYql6"], {
+                    children: B.intl.format(B.t["3LYql6"], {
                       duration: eO
                     })
                   })]
@@ -451,7 +451,7 @@ function ea(e) {
                     color: "text-muted",
                     tag: "span",
                     className: V.titleCase,
-                    children: F.intl.format(F.t["26bB2M"], {
+                    children: B.intl.format(B.t["26bB2M"], {
                       reason: (0, E.hU)(ec)
                     })
                   })]
@@ -487,7 +487,7 @@ function ea(e) {
                 variant: "primary",
                 size: "sm",
                 textVariant: "text-xs/normal",
-                text: F.intl.string(F.t.DEoVWZ),
+                text: B.intl.string(B.t.DEoVWZ),
                 onClick: eh
               })]
             }), eT ? (0, r.jsxs)(r.Fragment, {
@@ -500,7 +500,7 @@ function ea(e) {
                   variant: "primary",
                   size: "sm",
                   textVariant: "text-xs/normal",
-                  text: F.intl.string(F.t.jtkj06)
+                  text: B.intl.string(B.t.jtkj06)
                 })
               })]
             }) : null, (0, r.jsx)("div", {
@@ -512,7 +512,7 @@ function ea(e) {
                 variant: "primary",
                 size: "sm",
                 textVariant: "text-xs/normal",
-                text: F.intl.string(F.t["94JbM3"])
+                text: B.intl.string(B.t["94JbM3"])
               })
             }), eS ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
@@ -524,7 +524,7 @@ function ea(e) {
                   variant: "primary",
                   size: "sm",
                   textVariant: "text-xs/normal",
-                  text: F.intl.string(F.t["3A52tY"])
+                  text: B.intl.string(B.t["3A52tY"])
                 })
               })]
             }) : null, null != el ? (0, r.jsx)(er, {

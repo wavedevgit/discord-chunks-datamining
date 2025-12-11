@@ -91,7 +91,7 @@ function I(e) {
       className: O.gameNamesHeader,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        color: "header-primary",
+        color: "text-strong",
         children: a
       }), (0, r.jsxs)(s.P3F, {
         onClick: d,
@@ -172,7 +172,7 @@ function A() {
       className: Chunk285044.emptyContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         className: Chunk285044.noGamesConnectedText,
         children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {

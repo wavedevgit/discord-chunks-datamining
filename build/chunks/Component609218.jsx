@@ -52,8 +52,8 @@ function M(e) {
     upsellViewedTrackingData: U,
     onClose: G,
     onDisplay: Z,
-    onLearnMore: B,
-    isEmojiPickerOverlay: F = false
+    onLearnMore: F,
+    isEmojiPickerOverlay: B = false
   } = e, V = (0, l.e7)([E.Z], () => E.Z.affinities), H = (0, l.e7)([E.Z], () => E.Z.hasFetched);
   i.useEffect(() => {
     !H && M && d.MH()
@@ -66,7 +66,7 @@ function M(e) {
       m.default.track(C.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: k,
         location_object: C.qAy.NAVIGATION_LINK
-      }), null == B || B(), (0, p.Z)(), G(), (0, f.xf)(), (0, _.uL)(C.Z5c.APPLICATION_STORE)
+      }), null == F || F(), (0, p.Z)(), G(), (0, f.xf)(), (0, _.uL)(C.Z5c.APPLICATION_STORE)
     },
     z = (0, y.N)(),
     q = i.useCallback(() => {
@@ -79,8 +79,8 @@ function M(e) {
     X = (0, S.Z)(T.Si.TIER_2);
   if (Q) {
     let e;
-    e = F ? (0, h.rO)() ? w.Z : D.Z : (0, h.rO)() ? x.Z : L.Z;
-    let t = F ? "nitro-pink" : "green";
+    e = B ? (0, h.rO)() ? w.Z : D.Z : (0, h.rO)() ? x.Z : L.Z;
+    let t = B ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.ZMr, {
         onClick: G,
@@ -113,7 +113,7 @@ function M(e) {
                 [N.withBadge]: null != X
               }),
               variant: "heading-xl/bold",
-              color: "header-primary",
+              color: "text-strong",
               children: a
             }), (0, r.jsx)(u.Text, {
               variant: "text-md/medium",

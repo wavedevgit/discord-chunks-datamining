@@ -2,7 +2,7 @@
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  F: () => f
+  F: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,28 +16,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e) {
+function m(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: f
+    buttonClassName: m
   } = e, {
-    analyticsLocations: p
-  } = (0, a.ZP)(), b = t.features.has(c.GuildFeatures.BANNER), h = i.useCallback(e => {
+    analyticsLocations: b
+  } = (0, a.ZP)(), p = t.features.has(c.GuildFeatures.BANNER), h = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, o.f4)(t, p, n, r)
-  }, [p, t]), x = i.useCallback(e => {
+    (0, o.f4)(t, b, n, r)
+  }, [b, t]), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
-      analyticsLocations: p,
+      analyticsLocations: b,
       analyticsSection: c.jXE.GUILD_BANNER,
       analyticsObject: c.qAy.BUTTON_CTA,
       perks: (0, d.XO)()
     })
-  }, [p, t]), j = i.useCallback(() => {
+  }, [b, t]), j = i.useCallback(() => {
     (0, o.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: g.B,
@@ -46,19 +46,19 @@ function f(e) {
         page: c.ZY5.GUILD_SETTINGS,
         section: c.jXE.GUILD_BANNER
       },
-      analyticsLocations: p
+      analyticsLocations: b
     })
-  }, [p, h]);
-  return b ? (0, r.jsx)("div", {
-    className: f,
+  }, [b, h]);
+  return p ? (0, r.jsx)("div", {
+    className: m,
     children: (0, r.jsx)(l.zxk, {
-      disabled: !(b && n),
+      disabled: !(p && n),
       variant: "primary",
-      text: m.intl.string(m.t.yG2pUi),
+      text: f.intl.string(f.t.yG2pUi),
       onClick: j
     })
   }) : (0, r.jsx)("div", {
-    className: f,
+    className: m,
     children: (0, r.jsx)(s.v, {
       onClick: x
     })

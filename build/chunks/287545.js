@@ -51,8 +51,8 @@ function Z(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let B = 2e3,
-  F = {},
+let F = 2e3,
+  B = {},
   V = {},
   H = {};
 
@@ -83,7 +83,7 @@ function K(e, t) {
 }
 
 function z(e, t) {
-  setTimeout(() => K(e, t), B)
+  setTimeout(() => K(e, t), F)
 }
 
 function q(e) {
@@ -115,7 +115,7 @@ async function Q(e) {
     retries: 2,
     rejectWithError: false
   });
-  let l = F[n],
+  let l = B[n],
     c = (0, L.p)(r),
     u = (0, L.j)(r),
     d = g.Z.getChannel(c),
@@ -155,7 +155,7 @@ async function Q(e) {
     raw_thermal_state: b,
     duration_ms: o,
     embedded_activity_location_kind: r.kind
-  }), delete F[n]
+  }), delete B[n]
 }
 
 function X(e) {
@@ -186,7 +186,7 @@ function X(e) {
     }),
     Z = 1 + k.findIndex(e => e === r),
     {
-      releasePhase: B
+      releasePhase: F
     } = Y(G),
     H = _.Z.getRawThermalState(),
     W = null != P ? [P] : [],
@@ -197,7 +197,7 @@ function X(e) {
       mediaSessionIds: W,
       activitiesInfraVersion: x
     };
-  F[r] = K;
+  B[r] = K;
   let z = V[r];
   (0, I.Ew)(b.nonce) || b.nonce === (null == z ? true : z.nonce) || (z = true), O.default.track(U.rMx.ACTIVITY_SESSION_JOINED, {
     channel_id: v,
@@ -210,7 +210,7 @@ function X(e) {
     raw_thermal_state: H,
     n_participants: null != C ? p.Z.getUserParticipantCount(C.id) : null,
     is_activity_start: o,
-    release_phase: B,
+    release_phase: F,
     shelf_rank: null == G || null == (t = G.activity) ? true : t.shelf_rank,
     shelf_sorted_rank: Z > 0 ? Z : null,
     activity_user_session_id: D,
@@ -239,7 +239,7 @@ function X(e) {
 }
 
 function J(e) {
-  return F[e]
+  return B[e]
 }
 class $ extends Chunk317770.Z {
   _initialize() {

@@ -70,7 +70,7 @@ let A = e => {
     return t ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.kSu, {
         size: "sm",
-        color: s.Z.colors.HEADER_PRIMARY,
+        color: s.Z.colors.TEXT_STRONG,
         "aria-hidden": true
       }), (0, r.jsx)(l.nn4, {
         children: b.intl.string(b.t["tq+6t/"])
@@ -78,7 +78,7 @@ let A = e => {
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.P$X, {
         size: "xs",
-        color: s.Z.colors.HEADER_PRIMARY,
+        color: s.Z.colors.TEXT_STRONG,
         "aria-hidden": true
       }), (0, r.jsx)(l.nn4, {
         children: b.intl.string(b.t.l4qZrp)
@@ -229,7 +229,7 @@ let A = e => {
         children: [(0, r.jsx)(l.Heading, {
           className: y.titleText,
           variant: "display-md",
-          color: "header-primary",
+          color: "text-strong",
           children: b.intl.string(b.t.DbPgAd)
         }), (0, r.jsxs)("div", {
           className: y.tableWrapper,

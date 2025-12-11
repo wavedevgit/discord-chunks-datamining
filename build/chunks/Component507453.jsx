@@ -72,7 +72,7 @@ let o = {
       align: o ? i.Z.Align.START : true,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: s.intl.string(s.t.saHocI)
       }), null != t && (0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",

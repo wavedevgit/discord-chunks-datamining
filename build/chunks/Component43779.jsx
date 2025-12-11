@@ -182,7 +182,7 @@ function O(e) {
           })
         }), (0, a.jsx)(c.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           className: E.header,
           children: ee
         }), et]
@@ -209,7 +209,7 @@ let N = Chunk473749.memo(function(e) {
   } = e;
   return (0, a.jsx)(c.Text, {
     variant: "text-md/semibold",
-    color: "header-primary",
+    color: "text-strong",
     tag: "span",
     className: E.header,
     children: n

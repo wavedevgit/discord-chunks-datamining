@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  U: () => B,
+  U: () => F,
   Z: () => X
 }), require("./388685.js"), require("./642613.js");
 var i, Chunk392711 = require("./392711.js"),
@@ -81,12 +81,12 @@ function Z() {
   var e;
   let t = Chunk944486.Z.getChannelId();
   if (null == exports || !(null == (e = Chunk592125.Z.getChannel(exports)) ? true : module.isForumLikeChannel())) return G(), false;
-  F({
+  B({
     refreshThreadIds: true
   })
 }
 
-function B(e) {
+function F(e) {
   let t = m.Z.getChannel(e);
   return null == t ? [] : Object.values(f.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
     let {
@@ -96,7 +96,7 @@ function B(e) {
   }).sort(k(T))
 }
 
-function F(e) {
+function B(e) {
   let t = m.Z.getChannel(S);
   if (null == t) return;
   (null == e ? true : e.refreshThreadIds) && (R = Object.values(f.Z.getThreadsForParent(t.guild_id, t.id)).map(e => {
@@ -116,7 +116,7 @@ function V(e) {
     guildId: n
   } = e;
   if (null == S || n !== (null == (t = m.Z.getChannel(S)) ? true : t.guild_id)) returnfalse;
-  F({
+  B({
     refreshThreadIds: true
   })
 }
@@ -128,12 +128,12 @@ function H(e) {
   if (null == t.parent_id || t.parent_id !== S) returnfalse;
   let n = (0, b.yv)(t.id),
     r = L.has(t.id);
-  if (n && !r) L.add(t.id), F({
+  if (n && !r) L.add(t.id), B({
     sortThreadIds: true
   });
   else {
     if (n || !r) returnfalse;
-    L.delete(t.id), F({
+    L.delete(t.id), B({
       sortThreadIds: true
     })
   }
@@ -153,7 +153,7 @@ function W(e) {
     channel: t
   } = e;
   if (null == t.parent_id || t.parent_id !== S) returnfalse;
-  x.add(t.id), F({
+  x.add(t.id), B({
     sortThreadIds: true
   })
 }
@@ -171,7 +171,7 @@ function z(e) {
     channelId: t
   } = e;
   if (null == t || t !== S) returnfalse;
-  F({
+  B({
     refreshThreadIds: true
   })
 }
@@ -198,11 +198,11 @@ class Q extends(i = Chunk442837.ZP.Store) {
       a = !(0, c.O)(n, I),
       o = t !== T,
       s = r !== C;
-    return S = e, I = n, T = t, C = r, i ? F({
+    return S = e, I = n, T = t, C = r, i ? B({
       refreshThreadIds: true
-    }) : o ? F({
+    }) : o ? B({
       sortThreadIds: true
-    }) : (a || s) && F(), N
+    }) : (a || s) && B(), N
   }
   getCurrentThreadIds() {
     return N

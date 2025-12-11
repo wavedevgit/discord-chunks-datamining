@@ -67,7 +67,7 @@ function T(e, t) {
 function P(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([b.Z], () => null != t && b.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -91,7 +91,7 @@ function P(e) {
     children: [(0, r.jsxs)("div", {
       className: S.switchItemTextContent,
       children: [(0, r.jsx)(c.Text, {
-        color: "header-primary",
+        color: "text-strong",
         variant: "text-md/semibold",
         children: I.intl.string(I.t.DpRdYK)
       }), (0, r.jsx)(c.Text, {
@@ -114,7 +114,7 @@ function w(e) {
     guild: t,
     className: n,
     withDivider: l = true
-  } = e, s = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+  } = e, s = (0, o.e7)([b.Z], () => null != t && b.Z.can(E.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
@@ -141,7 +141,7 @@ function w(e) {
       children: [(0, r.jsxs)("div", {
         className: S.switchItemTextContent,
         children: [(0, r.jsx)(c.Text, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-md/semibold",
           children: I.intl.string(I.t.bPgfJz)
         }), (0, r.jsx)(c.Text, {
@@ -172,7 +172,7 @@ async function Z(e, t) {
 function R(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(E.GuildFeatures.COMMUNITY), a = (0, u.n2)(t.id), [s, d] = i.useState(t.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([b.Z], () => null != t && b.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(E.GuildFeatures.COMMUNITY), a = (0, u.n2)(t.id), [s, d] = i.useState(t.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
     d(e), await Z(t, e)
   }, [t]);
   return l || !a ? null : (0, r.jsxs)(r.Fragment, {
@@ -200,16 +200,16 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([h.default], () => h.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([b.Z], () => null != t && b.Z.can(E.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([h.default], () => h.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
   } = i.useMemo(() => null == a ? {
     canChangeMFALevel: false,
     showMFAUserTooltip: false
   } : {
-    isGuildOwnerWithMFA: (0, f.yn)(t, a),
-    showMFAUserTooltip: !a.mfaEnabled && (0, f.eM)(t, a)
-  }, [a, t]), b = n === E.BpS.ELEVATED, x = (0, s.throttle)(async e => {
+    isGuildOwnerWithMFA: (0, m.yn)(t, a),
+    showMFAUserTooltip: !a.mfaEnabled && (0, m.eM)(t, a)
+  }, [a, t]), p = n === E.BpS.ELEVATED, x = (0, s.throttle)(async e => {
     d && (u || await v.Z.updateMFALevel({
       guildId: t.id,
       level: e ? E.BpS.ELEVATED : E.BpS.NONE
@@ -223,7 +223,7 @@ function D(e) {
       children: [(0, r.jsx)(c.rsf, {
         label: I.intl.string(I.t.lbBfEQ),
         description: I.intl.string(I.t.REr5AI),
-        checked: b,
+        checked: p,
         onChange: x,
         disabled: !d
       }), u && (0, r.jsx)(c.Wn, {
@@ -231,7 +231,7 @@ function D(e) {
         textVariant: "text-xs/normal",
         children: I.intl.format(I.t.Xz1O0W, {
           onClick: function() {
-            (0, m.openUserSettings)(g.n.ACCOUNT_PANEL, {
+            (0, f.openUserSettings)(g.n.ACCOUNT_PANEL, {
               section: E.oAB.ACCOUNT
             })
           }

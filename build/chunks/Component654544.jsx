@@ -34,7 +34,7 @@ function d(e) {
         alt: e
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: e
       })]
     })

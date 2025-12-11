@@ -125,15 +125,15 @@ let Z = (e, t) => {
   }
 };
 
-function B(e) {
+function F(e) {
   return null == L[j(e)]
 }
 
-function F(e, t) {
+function B(e, t) {
   let {
     forceBatchScan: n = false,
     jitter: r = false
-  } = null != t ? t : {}, i = (null == t ? true : t.isMessageUpdate) ? e.filter(e => (0, C.MD)(e)).filter(B) : e.filter(B);
+  } = null != t ? t : {}, i = (null == t ? true : t.isMessageUpdate) ? e.filter(e => (0, C.MD)(e)).filter(F) : e.filter(F);
   i.forEach(e => {
     let t = j(e);
     null == L[t] && (d.Z.increment({
@@ -280,7 +280,7 @@ function W(e, t) {
       numOfExplicitEmbeds: n.numOfExplicitEmbeds,
       numOfSelfHarmEmbeds: n.numOfSelfHarmEmbeds
     })
-  }), n.length > 0 && (F(n, t), true)
+  }), n.length > 0 && (B(n, t), true)
 }
 
 function K(e) {
@@ -312,7 +312,7 @@ function K(e) {
       numOfExplicitEmbeds: n.numOfExplicitEmbeds,
       numOfSelfHarmEmbeds: n.numOfSelfHarmEmbeds
     })
-  }), t.length > 0 && (F(t), true)
+  }), t.length > 0 && (B(t), true)
 }
 
 function z(e) {

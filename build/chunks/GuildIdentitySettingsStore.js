@@ -119,10 +119,10 @@ function Z() {
   v = {}
 }
 
-function B() {
+function F() {
   k(), I()
 }
-class F extends(m = Chunk442837.ZP.Store) {
+class B extends(m = Chunk442837.ZP.Store) {
   getFormState() {
     return O
   }
@@ -189,10 +189,10 @@ class F extends(m = Chunk442837.ZP.Store) {
     return _
   }
 }
-y(F, "displayName", "GuildIdentitySettingsStore");
-let V = new F(Chunk570140.Z, {
+y(B, "displayName", "GuildIdentitySettingsStore");
+let V = new B(Chunk570140.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: S,
-  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: B,
+  GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: C,
   GUILD_IDENTITY_SETTINGS_SUBMIT: T,
   GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: A,

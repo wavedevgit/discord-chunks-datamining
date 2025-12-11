@@ -24,9 +24,9 @@ function g(e) {
     sortOrder: b,
     tagFilter: y,
     tagSetting: O
-  } = (0, c.H)(t.id), j = (0, i.e7)([o.Z, p.Z], () => !!(o.Z.getThreadIds(t.id, b, y, O).length > 0) || !!(p.Z.getThreads(t.id, b, y, O).length > 0), [t.id, b, y, O]), x = t.isMediaChannel();
-  if (!n || m || x && j) return null;
-  let v = g ? x ? f.intl.string(f.t["WP/IE1"]) : f.intl.string(f.t.zfq9V4) : x ? f.intl.string(f.t.p60yF1) : f.intl.string(f.t.SNOqYC);
+  } = (0, c.H)(t.id), x = (0, i.e7)([o.Z, p.Z], () => !!(o.Z.getThreadIds(t.id, b, y, O).length > 0) || !!(p.Z.getThreads(t.id, b, y, O).length > 0), [t.id, b, y, O]), j = t.isMediaChannel();
+  if (!n || m || j && x) return null;
+  let v = g ? j ? f.intl.string(f.t["WP/IE1"]) : f.intl.string(f.t.zfq9V4) : j ? f.intl.string(f.t.p60yF1) : f.intl.string(f.t.SNOqYC);
   return (0, r.jsx)(h.JO, {
     tooltip: v,
     icon: l.d3s,

@@ -16,12 +16,12 @@ function o(e) {
     backgroundSrc: u,
     animatedBackgroundSrc: a,
     prefersReducedMotion: c = true
-  } = e, d = i.useMemo(() => {
+  } = e, d = l.useMemo(() => {
     let e = null != u ? u : o;
     if (null != e) return {
       "--custom-background-url": "url(".concat(e.toString(), ")")
     }
-  }, [u, o]), p = i.useMemo(() => {
+  }, [u, o]), p = l.useMemo(() => {
     if (null == u) return;
     let e = {
       "--custom-background-static": "url(".concat(u.toString())
@@ -42,11 +42,11 @@ function o(e) {
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(l.xvT, {
+        children: [(0, r.jsx)(i.xvT, {
           variant: "heading-xl/bold",
           tag: "div",
           children: n
-        }), null != t && (0, r.jsxs)(l.xvT, {
+        }), null != t && (0, r.jsxs)(i.xvT, {
           variant: "text-sm/normal",
           children: ["“", t, "”"]
         })]

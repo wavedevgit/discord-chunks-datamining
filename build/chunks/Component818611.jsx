@@ -1,7 +1,7 @@
 /** Chunk was on 79589 **/
 /** chunk id: 818611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => w
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk354841 = require("./354841.js");
 
-function x(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -73,14 +73,14 @@ let j = () => 80,
       onSelect: i,
       isSelected: a = false
     } = e, s = b(e, ["children", "className", "onSelect", "isSelected"]);
-    return (0, r.jsx)(o.P3F, g(x({
-      className: l()(v.decorationGridItem, a ? v.selected : true, n)
+    return (0, r.jsx)(o.P3F, g(v({
+      className: l()(f.decorationGridItem, a ? f.selected : true, n)
     }, s), {
       onClick: i,
       children: t
     }))
   },
-  y = e => {
+  O = e => {
     var {
       user: t,
       avatarDecoration: n,
@@ -91,7 +91,7 @@ let j = () => 80,
     } = e, u = b(e, ["user", "avatarDecoration", "innerRef", "section", "canUsePremiumCollectibles", "isSelected"]);
     let m = i.useRef(null),
       {
-        isHoveringOrFocusing: f
+        isHoveringOrFocusing: x
       } = (0, d.Z)(null != a ? a : m),
       {
         avatarDecorationSrc: j
@@ -99,14 +99,14 @@ let j = () => 80,
         user: t,
         avatarDecorationOverride: n,
         size: 80,
-        onlyAnimateOnHoverOrFocus: !f
+        onlyAnimateOnHoverOrFocus: !x
       });
-    return (0, r.jsxs)(P, g(x({
+    return (0, r.jsxs)(P, g(v({
       innerRef: null != a ? a : m,
       isSelected: o
     }, u), {
       children: [(0, r.jsx)("img", {
-        className: v.presetDecorationImg,
+        className: f.presetDecorationImg,
         src: j,
         alt: n.label
       }), (0, r.jsx)(c.Z, {
@@ -117,7 +117,7 @@ let j = () => 80,
       })]
     }))
   },
-  O = e => {
+  w = e => {
     let {
       user: t,
       guild: n,
@@ -128,7 +128,7 @@ let j = () => 80,
     } = e, d = (0, p.ZP)(), h = u.ZP.canUseCollectibles(t);
     return (0, r.jsx)(o.GMG, {
       fade: true,
-      className: v.list,
+      className: f.list,
       columns: 3,
       sections: d.map(e => {
         let {
@@ -144,20 +144,20 @@ let j = () => 80,
       renderItem: (e, u, g, b) => {
         let {
           section: j,
-          items: O
+          items: w
         } = d[e];
-        return (0, s.EQ)(O[u]).with(p.Tm, () => (0, r.jsxs)(P, {
-          style: x({}, g),
+        return (0, s.EQ)(w[u]).with(p.Tm, () => (0, r.jsxs)(P, {
+          style: v({}, g),
           isSelected: null === i,
           onSelect: () => l(null),
           children: [(0, r.jsx)(o.t6m, {
             size: "md",
             color: "currentColor",
-            className: v.icon
+            className: f.icon
           }), (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
-            color: "header-primary",
-            children: (0, m.ad)(t, n) ? f.intl.string(f.t.CHf9iJ) : f.intl.string(f.t.PoWNfe)
+            color: "text-strong",
+            children: (0, m.ad)(t, n) ? x.intl.string(x.t.CHf9iJ) : x.intl.string(x.t.PoWNfe)
           })]
         }, b)).with(p.oT, () => (0, r.jsxs)(P, {
           style: g,
@@ -167,16 +167,16 @@ let j = () => 80,
             width: 23,
             height: 23,
             color: "currentColor",
-            className: v.shopIcon
+            className: f.shopIcon
           }), (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
-            color: "header-primary",
-            children: f.intl.string(f.t.pWG4ze)
+            color: "text-strong",
+            children: x.intl.string(x.t.pWG4ze)
           })]
         }, b)).otherwise(e => {
           let n = (null == i ? true : i.skuId) === e.skuId;
-          return (0, r.jsx)(y, {
-            style: x({}, g),
+          return (0, r.jsx)(O, {
+            style: v({}, g),
             user: t,
             avatarDecoration: e,
             section: j,
@@ -192,8 +192,8 @@ let j = () => 80,
           header: n
         } = d[e];
         return (0, r.jsx)("div", {
-          className: v.headings,
-          style: g(x({}, t), {
+          className: f.headings,
+          style: g(v({}, t), {
             position: "absolute"
           }),
           children: (0, r.jsx)(o.Text, {

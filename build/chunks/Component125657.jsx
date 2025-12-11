@@ -56,7 +56,7 @@ function v(e) {
           src: E,
           className: j.iconWrapper
         }), (0, i.jsx)(o.Text, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-sm/normal",
           children: x.intl.format(x.t.GyhzGw, {
             user: y.toString()

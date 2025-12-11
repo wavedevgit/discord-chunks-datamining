@@ -2,7 +2,7 @@
 /** chunk id: 667204, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F,
+  Z: () => B,
   d: () => H
 }), require("./781311.js"), require("./539854.js"), require("./415506.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk512722 = require("./512722.js"),
@@ -74,12 +74,12 @@ function Z(e, t) {
   return n
 }
 
-function B(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function F(e) {
+async function B(e) {
   var t, n, r, o, l, u, d, _, m, h, g, E, b, v, I, T, C;
   let {
     command: A,
@@ -89,11 +89,11 @@ async function F(e) {
     maxSizeCallback: U,
     commandOrigin: G = x.bB.CHAT,
     sectionName: Z,
-    interactionLifecycleOptionsFactory: B = K,
-    source: F
+    interactionLifecycleOptionsFactory: F = K,
+    source: B
   } = e;
   if (null == M.channel) return;
-  let H = null != (r = D.Z.getSource(M.channel.id)) ? r : F,
+  let H = null != (r = D.Z.getSource(M.channel.id)) ? r : B,
     W = null != (o = D.Z.getCommandOrigin(M.channel.id)) ? o : G;
   null == M.autocomplete && a.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
@@ -246,7 +246,7 @@ async function F(e) {
     analytics_location: z(W),
     sectionName: Z,
     source: H,
-    interactionLifecycleOptions: await B(A, M, J)
+    interactionLifecycleOptions: await F(A, M, J)
   }))
 }
 let V = e => {
@@ -339,7 +339,7 @@ async function K(e, t, n) {
   if (null == s && null != i.botId) try {
     await l.PR(i.botId)
   } catch (e) {}
-  let u = B(G({}, (0, E.ZP)({
+  let u = F(G({}, (0, E.ZP)({
     channelId: t.channel.id,
     content: "",
     type: n.type === c.yU.CHAT ? j.uaV.CHAT_INPUT_COMMAND : j.uaV.CONTEXT_MENU_COMMAND,

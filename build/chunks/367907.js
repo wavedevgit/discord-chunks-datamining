@@ -2,7 +2,7 @@
 /** chunk id: 367907, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $H: () => F,
+  $H: () => B,
   AB: () => G,
   JS: () => k,
   ZP: () => Y,
@@ -10,7 +10,7 @@ require.d(exports, {
   kO: () => V,
   oG: () => H,
   v_: () => U,
-  yw: () => B
+  yw: () => F
 });
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -151,7 +151,7 @@ function Z(e, t) {
   return null == e ? null != t ? t : null : e.isPrivate() ? null : null != (r = null != (n = e.getGuildId()) ? n : t) ? r : null
 }
 
-function B(e) {
+function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   if (C.default.isThrottled(e)) return;
@@ -165,7 +165,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   if ((0, w.AB)(e)) return {
     channel_static_route: e
   };
@@ -228,6 +228,6 @@ function H(e, t) {
   }), n
 }
 let Y = {
-  trackWithMetadata: B,
+  trackWithMetadata: F,
   getVoiceStateMetadata: V
 }

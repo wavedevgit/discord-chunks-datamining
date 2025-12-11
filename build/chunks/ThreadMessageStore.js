@@ -199,14 +199,14 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     channel: t
   } = e;
   T(t.id)
 }
 
-function F(e) {
+function B(e) {
   let {
     channel: t
   } = e;
@@ -338,8 +338,8 @@ let X = new Q(Chunk570140.Z, {
   RELATIONSHIP_REMOVE: q,
   SEARCH_MESSAGES_SUCCESS: Z,
   MOD_VIEW_SEARCH_MESSAGES_SUCCESS: Z,
-  THREAD_DELETE: F,
-  CHANNEL_DELETE: B,
+  THREAD_DELETE: B,
+  CHANNEL_DELETE: F,
   MESSAGE_CREATE: V,
   MESSAGE_UPDATE: Y,
   MESSAGE_DELETE: W,

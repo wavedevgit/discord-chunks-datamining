@@ -20,7 +20,7 @@ function f(e) {
   let {
     application: t,
     carouselItems: n
-  } = e, f = (0, l.e7)([d.Z], () => d.Z.isFocused()), b = (0, a.jsxs)(a.Fragment, {
+  } = e, f = (0, l.e7)([d.Z], () => d.Z.isFocused()), g = (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("img", {
       className: m.errorImage,
       src: h,
@@ -38,7 +38,7 @@ function f(e) {
       name: t.name
     })
   });
-  let g = r.useCallback((e, t) => {
+  let b = r.useCallback((e, t) => {
     if (e.type === u.s9s.IMG) {
       let t = n.filter(e => e.type === u.s9s.IMG),
         a = t.findIndex(t => t === e);
@@ -65,7 +65,7 @@ function f(e) {
     autoplayInterval: 8e3,
     paused: !f,
     videoAutoPlay: true,
-    onCurrentItemClick: g,
-    errorComponent: b
+    onCurrentItemClick: b,
+    errorComponent: g
   })
 }

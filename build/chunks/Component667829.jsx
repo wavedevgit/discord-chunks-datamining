@@ -234,8 +234,8 @@ class U extends Chunk473749.Component {
       currentAutocompleteType: U,
       "aria-describedby": G,
       "aria-labelledby": Z,
-      accessibilityLabel: B,
-      showValueWhenDisabled: F
+      accessibilityLabel: F,
+      showValueWhenDisabled: B
     } = this.props, {
       submitting: V,
       popup: H
@@ -248,7 +248,7 @@ class U extends Chunk473749.Component {
       id: Chunk388032,
       placeholder: this.getPlaceholder(),
       required: D,
-      accessibilityLabel: B,
+      accessibilityLabel: F,
       disabled: Chunk430742 || false,
       submitting: V,
       isEdit: Chunk117530 === Chunk541716.Ie.EDIT,
@@ -289,14 +289,14 @@ class U extends Chunk473749.Component {
       ref: this.ref
     }, Y), {
       type: Chunk117530,
-      value: Chunk430742 && !F ? (0, Chunk752305.JM)("") : Chunk729594,
+      value: Chunk430742 && !B ? (0, Chunk752305.JM)("") : Chunk729594,
       canUseCommands: null == (t = Chunk117530.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk330122,
       onSubmitFailure: Chunk998698
     })) : (0, Chunk54381.jsx)(Chunk140963.Z, j(x({
       ref: this.ref
     }, Y), {
-      value: Chunk430742 && !F ? "" : l
+      value: Chunk430742 && !B ? "" : l
     }));
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk459273.d9, {

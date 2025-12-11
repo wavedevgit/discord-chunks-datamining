@@ -102,7 +102,7 @@ function I(e) {
     U = L ? true : k,
     G = null != a && ("string" != typeof a || "" !== a),
     Z = null != y && !i.isValidElement(y),
-    B = i.useMemo(() => (0, r.jsxs)("div", {
+    F = i.useMemo(() => (0, r.jsxs)("div", {
       className: o()(g.richTooltipContent, {
         [g.noAsset]: null == y
       }),
@@ -125,14 +125,14 @@ function I(e) {
       })]
     }), [y, S, a, E, G, Z]),
     {
-      isVisible: F,
+      isVisible: B,
       triggerProps: V
     } = (0, _.l)(b({
       targetElementRef: M.targetElementRef
     }, j)),
     H = null != x ? x : "".concat((0, p.Sw)(null != a ? a : ""), "|").concat((0, p.Sw)(E)),
     Y = (0, m.Q)({
-      shouldShow: F
+      shouldShow: B
     });
   if (I) {
     let e = L ? V : O(b({}, V), {
@@ -168,12 +168,12 @@ function I(e) {
   let W = Y((e, t) => t ? (0, r.jsx)(f.pn, {
     isRichTooltip: true,
     children: (0, r.jsx)(d.N, {
-      isVisible: F,
+      isVisible: B,
       isRendered: true,
       targetElementRef: M.targetElementRef,
       anchorRef: D,
       id: k,
-      content: B,
+      content: F,
       position: C,
       align: A,
       spacing: N,
@@ -185,9 +185,9 @@ function I(e) {
     })
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, L || null == B ? null : (0, r.jsx)(s.n, {
+    children: [t, L || null == F ? null : (0, r.jsx)(s.n, {
       id: k,
-      children: B
+      children: F
     }), W]
   })
 }

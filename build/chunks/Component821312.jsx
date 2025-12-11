@@ -18,7 +18,7 @@ function b(e) {
     guildId: t,
     transitionState: n,
     onClose: b
-  } = e, [p, f] = i.useState([]), [g, _] = i.useState(), O = [{
+  } = e, [p, g] = i.useState([]), [f, _] = i.useState(), O = [{
     label: u.intl.string(u.t["//3pvi"]),
     value: o.C2.DM_SPAM
   }, {
@@ -37,7 +37,7 @@ function b(e) {
     label: u.intl.string(u.t.ryPKb7),
     value: o.C2.OTHER
   }], y = i.useCallback(e => {
-    f(e)
+    g(e)
   }, []);
   return null == t ? (b(), null) : (0, r.jsx)(l.Modal, {
     transitionState: n,
@@ -51,7 +51,7 @@ function b(e) {
       onClick: function() {
         (0, s.yw)(c.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
           raid_lockdown_feedback_type: p,
-          raid_lockdown_feedback_other_reason: g,
+          raid_lockdown_feedback_other_reason: f,
           guild_id: t
         }), b()
       },
@@ -69,7 +69,7 @@ function b(e) {
         children: (0, r.jsx)(a.Kx8, {
           placeholder: u.intl.string(u.t["PAM+JR"]),
           onChange: _,
-          value: g,
+          value: f,
           autoFocus: true
         })
       })]

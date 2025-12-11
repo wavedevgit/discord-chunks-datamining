@@ -1,5 +1,5 @@
 /** Chunk was on 82140 **/
-/** chunk id: 178757, original params: e,l,t (module,exports,require) **/
+/** chunk id: 178757, original params: e,t,l (module,exports,require) **/
 module.exports = {
   infoList: "e6fa8e362cdbfb7d-infoList",
   infoListItem: "e6fa8e362cdbfb7d-infoListItem",

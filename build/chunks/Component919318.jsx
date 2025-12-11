@@ -45,26 +45,26 @@ function M(e) {
       channel: s
     }),
     m = (0, f.MC)(o),
-    g = (0, c.e7)([I.Z], () => I.Z.isFocused()),
-    p = (0, h.d$)(l.src),
-    C = x.QK.useSetting(),
+    b = (0, c.e7)([I.Z], () => I.Z.isFocused()),
+    x = (0, h.d$)(l.src),
+    C = p.QK.useSetting(),
     {
       src: v,
       width: Z,
-      height: y,
-      alt: N
+      height: N,
+      alt: y
     } = l;
-  return y > Z ? t = 72 : n = 72, (0, a.jsxs)("div", {
+  return N > Z ? t = 72 : n = 72, (0, a.jsxs)("div", {
     className: E.media,
-    children: [(0, b.Yi)({
+    children: [(0, g.Yi)({
       src: v,
       maxHeight: n,
       maxWidth: t,
       width: Z,
-      height: y,
-      alt: null != N && d && null != m ? m : N,
+      height: N,
+      alt: null != y && d && null != m ? m : y,
       autoPlay: C,
-      animated: p && !d && g,
+      animated: x && !d && b,
       containerClassName: E.thumbnailContainer,
       imageClassName: i()({
         [E.obscured]: d
@@ -80,15 +80,15 @@ function M(e) {
 function k(e) {
   let {
     resource: n
-  } = e, t = (0, c.e7)([j.Z], () => j.Z.getChannel(n.channelId)), r = (0, c.e7)([v.Z], () => v.Z.getMessages(n.channelId)), u = (0, c.e7)([Z.Z], () => Z.Z.can(P.Plq.VIEW_CHANNEL, t)), h = r.first(), f = (0, O.Z)(h), b = (0, o.zy)(h, false), g = (null == b ? true : b.length) > 0 ? b[0] : null, x = null != t && null == r.first() && !r.loadingMore && !r.ready && !r.hasFetched && u;
+  } = e, t = (0, c.e7)([j.Z], () => j.Z.getChannel(n.channelId)), r = (0, c.e7)([v.Z], () => v.Z.getMessages(n.channelId)), u = (0, c.e7)([Z.Z], () => Z.Z.can(P.Plq.VIEW_CHANNEL, t)), h = r.first(), f = (0, O.Z)(h), g = (0, o.zy)(h, false), b = (null == g ? true : g.length) > 0 ? g[0] : null, p = null != t && null == r.first() && !r.loadingMore && !r.ready && !r.hasFetched && u;
   if (l.useEffect(() => {
-      x && d.Z.fetchMessages({
+      p && d.Z.fetchMessages({
         channelId: n.channelId,
         after: n.channelId,
         limit: 5
       })
-    }, [n.channelId, x]), null == t || null == t.guild_id) return null;
-  let C = y.ZP.getResourceChannelIconURL({
+    }, [n.channelId, p]), null == t || null == t.guild_id) return null;
+  let C = N.ZP.getResourceChannelIconURL({
       channelId: t.id,
       icon: n.icon
     }),
@@ -96,7 +96,7 @@ function k(e) {
   return (0, a.jsxs)(s.P3F, {
     className: E.row,
     onClick: e => {
-      null != t && (e.shiftKey ? (0, N.C3)(t.guild_id, t.id) : p.Z.openResourceChannelAsSidebar({
+      null != t && (e.shiftKey ? (0, y.C3)(t.guild_id, t.id) : x.Z.openResourceChannelAsSidebar({
         guildId: t.guild_id,
         channelId: t.id
       }))
@@ -106,7 +106,7 @@ function k(e) {
       children: [(0, a.jsx)(s.Text, {
         className: E.title,
         variant: "text-md/bold",
-        color: "header-primary",
+        color: "text-strong",
         children: n.title
       }), I && null != f && (0, a.jsx)(s.Text, {
         className: E.messageContent,
@@ -137,8 +137,8 @@ function k(e) {
         alt: "",
         "aria-hidden": true
       })
-    }) : null, null == C && null != g ? (0, a.jsx)(M, {
-      firstMedia: g,
+    }) : null, null == C && null != b ? (0, a.jsx)(M, {
+      firstMedia: b,
       channelId: n.channelId
     }) : null]
   })
@@ -153,7 +153,7 @@ function L(e) {
     className: E.emptyContainer,
     children: [(0, a.jsx)(s.Heading, {
       variant: "heading-xl/bold",
-      color: "header-primary",
+      color: "text-strong",
       children: w.intl.string(w.t.owvC9U)
     }), (0, a.jsx)("img", {
       className: E.emptyStateImage,
@@ -166,7 +166,7 @@ function L(e) {
         variant: "primary",
         onClick: () => {
           let e = C.ZP.getDefaultChannel(n.id);
-          null != e && (0, g.uL)(P.Z5c.CHANNEL(n.id, e.id))
+          null != e && (0, b.uL)(P.Z5c.CHANNEL(n.id, e.id))
         },
         fullWidth: true,
         text: w.intl.string(w.t["3iCBUn"])
@@ -176,7 +176,7 @@ function L(e) {
     className: E.container,
     children: [(0, a.jsx)(s.Heading, {
       variant: "heading-lg/bold",
-      color: "header-primary",
+      color: "text-strong",
       children: w.intl.string(w.t.xwY4La)
     }), l.map(e => (0, a.jsx)(k, {
       resource: e

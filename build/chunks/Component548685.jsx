@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk28664 = require("./28664.jsx"),
@@ -44,7 +44,7 @@ let A = e => {
     tab: R,
     buttonContainerClassName: Z,
     orbsSupportedOnly: w
-  } = e, H = (0, o.e7)([g.default], () => g.default.getCurrentUser()), D = h.ZP.canUseCollectibles(H), M = (0, j.B)("FeedBlock"), {
+  } = e, H = (0, i.e7)([g.default], () => g.default.getCurrentUser()), D = C.ZP.canUseCollectibles(H), M = (0, j.B)("FeedBlock"), {
     sortType: F,
     setSortType: W,
     sortedItems: U,
@@ -56,10 +56,10 @@ let A = e => {
     isPremiumUser: D,
     prioritizeUserDiscounts: P,
     orbsSupportedOnly: w
-  }), K = (0, y.St)(U), Y = (0, o.e7)([f.Z], () => f.Z.useReducedMotion), q = (0, o.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
+  }), K = (0, y.St)(U), Y = (0, i.e7)([f.Z], () => f.Z.useReducedMotion), q = (0, i.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
     animationPhase: J,
     startAnimation: X
-  } = (0, O.y)(), $ = (0, C.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
+  } = (0, O.y)(), $ = (0, h.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
     X({
       isShuffling: false,
       onOutroComplete: () => W(e)
@@ -69,7 +69,7 @@ let A = e => {
     })
   }, [X, W, ee]);
   return null == H ? null : (0, r.jsxs)("div", {
-    className: i()(B.popularPicksSection, B.centeredSection),
+    className: o()(B.popularPicksSection, B.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: B.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ let A = e => {
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: i()(B.headerRight, {
+        className: o()(B.headerRight, {
           [L.customCursors]: M
         }),
         children: [(0, r.jsx)(u.Text, {
@@ -102,7 +102,7 @@ let A = e => {
             options: V,
             select: en,
             className: B.sortSelect,
-            popoutClassName: i()({
+            popoutClassName: o()({
               [L.customCursors]: M
             }),
             isSelected: e => e === F,
@@ -142,7 +142,7 @@ let A = e => {
             })
           }, "".concat(e.skuId, "-").concat(t));
           else J === O.g.SORT_OUT ? n = B.sortChangedOutro : J === O.g.SHUFFLE_IN ? n = B.shuffleIntro : J === O.g.SORT_IN && (n = B.sortChangedIntro);
-        return (0, r.jsx)(C.k0, {
+        return (0, r.jsx)(h.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "popular picks",

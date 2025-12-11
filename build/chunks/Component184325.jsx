@@ -73,12 +73,12 @@ function Z(e, t) {
   return n
 }
 
-function B(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = e => {
+let B = e => {
   let {
     badge: t,
     tieredTenureBadge: n,
@@ -159,7 +159,7 @@ function V(e) {
           if (null != n) return null == U || U(), n(t)
         },
         T = () => {
-          e.id === P.i && I.default.track(D.rMx.QUEST_CONTENT_VIEWED, B(G({}, (0, E.mH)(b.jn.QUEST_BADGE)), {
+          e.id === P.i && I.default.track(D.rMx.QUEST_CONTENT_VIEWED, F(G({}, (0, E.mH)(b.jn.QUEST_BADGE)), {
             is_targeted: false
           })), K({
             action: "HOVER_BADGE"
@@ -185,7 +185,7 @@ function V(e) {
           }
         };
       if (R) {
-        let n = (0, r.jsx)(s.Anchor, B(G({}, ee), {
+        let n = (0, r.jsx)(s.Anchor, F(G({}, ee), {
           ref: H,
           children: Q
         }));
@@ -200,7 +200,7 @@ function V(e) {
         }, "".concat(e.id, "-").concat(t))
       }
       if (A) {
-        let n = (0, r.jsx)(s.Anchor, B(G({}, ee), {
+        let n = (0, r.jsx)(s.Anchor, F(G({}, ee), {
             ref: H,
             children: Q
           })),
@@ -239,10 +239,10 @@ function V(e) {
           })
         }, "".concat(e.id, "-").concat(t))
       }
-      let et = (0, r.jsx)(s.Anchor, B(G({}, ee), {
+      let et = (0, r.jsx)(s.Anchor, F(G({}, ee), {
           children: Q
         })),
-        en = F({
+        en = B({
           badge: e,
           tieredTenureBadge: u && e.id !== j.a ? a : true,
           currentUserOwnsOrbBadge: X

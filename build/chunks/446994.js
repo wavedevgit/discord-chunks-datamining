@@ -554,7 +554,7 @@
                     U = 0,
                     G = 0,
                     Z = 0,
-                    B = {
+                    F = {
                       mapOutputToInputTime: function(e) {
                         for (var t = x.length - 1; e < x[t].out_time && t > 0;) t--;
                         var n = x[t];
@@ -567,7 +567,7 @@
                         for (t = 0; t < u.length; t++) u[t] = 0;
                         for (t = 0; t < d.length; t++) d[t] = 0;
                         if (e) {
-                          D = Math.max(0, D - e), w = B.mapOutputToInputTime(D);
+                          D = Math.max(0, D - e), w = F.mapOutputToInputTime(D);
                           for (var r = x.length - 1; D <= x[r].out_time && r >= 0;) x.pop(), r--;
                           x.push({
                             in_time: w,
@@ -592,8 +592,8 @@
                         })
                       }
                     };
-                  B.flush(0), B.setTempo(a);
-                  var F = function(e, t, n) {
+                  F.flush(0), F.setTempo(a);
+                  var B = function(e, t, n) {
                       var r = Math.floor(n),
                         i = r % 2 == 1 ? false : 1;
                       return Math.atan2(i * (t[r] - t[r + 1]), i * (e[r] - e[r + 1]))
@@ -631,10 +631,10 @@
                           O > 0 && Z - f[O - 1] < f[O] - Z && (v = O - 1);
                           var S = Z * o;
                           if (Math.abs(f[v] - Z) < S && u[Math.round(f[v])] > .1 * m[Math.round(Z)]) {
-                            var w = F(t, n, Z),
+                            var w = B(t, n, Z),
                               D = p[v] + _[v] + V(w, Z, p[v], f[v], a) - w;
                             b[G] = w, y[G] = D, P[G] = Math.cos(D), R[G] = Math.sin(D)
-                          } else b[G] = F(t, n, Z), y[G] = 0, P[G] = 1, R[G] = 0
+                          } else b[G] = B(t, n, Z), y[G] = 0, P[G] = 1, R[G] = 0
                         }
                         g[E] = 2 * s;
                         var x = g[v = 0],
@@ -650,7 +650,7 @@
                       } else
                         for (var G = 0; G < E; G++) {
                           var Z = g[G];
-                          p[G] = _[G] = F(t, n, Z)
+                          p[G] = _[G] = B(t, n, Z)
                         }
                     },
                     Y = function() {
@@ -669,7 +669,7 @@
                       for (a * i > o && (a = o / i), t = 0; t < s; t++) d[t] += a * l.m_re[t], d[t + p + e] += a * l.m_im[t];
                       return L += 2, j = 2 * p + e
                     };
-                  return B.process = function(e) {
+                  return F.process = function(e) {
                     var n = e[0].length,
                       i = e[0];
                     if (e.length > 1) {
@@ -685,7 +685,7 @@
                           var h = r.float_array(_);
                           r.blit(d, 0, h, 0, Z), r.blit(u, 0, h, Z, G), r.blit(e[l], 0, h, Z + G, n), m.push(h)
                         }
-                        B.flush(0), n = _, e = m
+                        F.flush(0), n = _, e = m
                       }
                       return w += n / t, D += n / t, e
                     }
@@ -706,7 +706,7 @@
                     var T = [];
                     for (l = 0; l < e.length; l++) T.push(b);
                     return T
-                  }, B
+                  }, F
                 }
               }, function(e, t, n) {
                 "use strict";
@@ -1355,7 +1355,7 @@
             return Object.setPrototypeOf ? Object.setPrototypeOf(e, Object.getPrototypeOf(this)) : e.__proto__ = this.__proto__, e
           }
           S = "undefined" == typeof performance || true === (0, u.default)(performance.now) ? Date.now : performance.now.bind(performance), Z.prototype = Object.create(HTMLElement.prototype, {});
-          var B = function(e) {
+          var F = function(e) {
             (0, s.default)(n, e);
             var t = v(n);
 
@@ -2223,7 +2223,7 @@
               }
             }]), n
           }(Z);
-          (0, h.default)(B, T), B.instanceCount = 0, B.styleManager = new function() {
+          (0, h.default)(F, T), F.instanceCount = 0, F.styleManager = new function() {
             var e = document.createElement("style");
             e.type = "text/css", e.textContent = "ogvjs { display: inline-block; position: relative; -webkit-user-select: none; -webkit-tap-highlight-color: rgba(0,0,0,0); ", document.head.appendChild(e);
             var t = e.sheet;
@@ -2233,7 +2233,7 @@
               var a = e + "{" + r.join(";") + "}";
               t.insertRule(a, t.cssRules.length - 1)
             }
-          }, t.default = B
+          }, t.default = F
         },
         580: (e, t, n) => {
           "use strict";

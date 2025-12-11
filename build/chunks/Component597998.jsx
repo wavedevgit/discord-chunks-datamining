@@ -155,8 +155,8 @@ function k(e) {
     disconnected: M,
     hangStatusActivity: k,
     showHangStatus: U,
-    isSelf: B,
-    handleHoverHangStatus: F,
+    isSelf: F,
+    handleHoverHangStatus: B,
     handleHoverIcons: V,
     onAddHangStatusClicked: H
   } = e;
@@ -223,8 +223,8 @@ function k(e) {
       children: [W, Y]
     }), U || z ? (0, r.jsx)("div", {
       className: A.iconGroup,
-      onMouseEnter: () => null == F ? true : F(true),
-      onMouseLeave: () => null == F ? true : F(false),
+      onMouseEnter: () => null == B ? true : B(true),
+      onMouseLeave: () => null == B ? true : B(false),
       children: z ? (0, r.jsx)(G, {
         application: w,
         iconClassName: v,
@@ -235,7 +235,7 @@ function k(e) {
         userId: L.id,
         hangStatusActivity: k,
         iconClassName: v,
-        isSelf: B,
+        isSelf: F,
         onAddHangStatusClicked: H
       })
     }) : null]
@@ -268,8 +268,8 @@ let U = function(e) {
     serverMute: U,
     guildId: G,
     nick: Z,
-    isGuest: B,
-    flipped: F,
+    isGuest: F,
+    flipped: B,
     className: V,
     overlap: H,
     "aria-label": Y,
@@ -324,7 +324,7 @@ let U = function(e) {
         className: o()(i, A.username, q, {
           [A.usernameSpeaking]: !M && !U && R
         }),
-        children: [null != Z ? Z : v.ZP.getName(K), B ? (0, r.jsxs)("span", {
+        children: [null != Z ? Z : v.ZP.getName(K), F ? (0, r.jsxs)("span", {
           className: A.guestSuffix,
           children: ["\xa0", C.intl.string(C.t["pFO/Ph"])]
         }) : ""]
@@ -376,7 +376,7 @@ let U = function(e) {
     },
     children: (0, r.jsxs)("div", {
       className: o()(A.content, {
-        [A.flipped]: F
+        [A.flipped]: B
       }),
       children: [en(), er(), ei(), ea()]
     })

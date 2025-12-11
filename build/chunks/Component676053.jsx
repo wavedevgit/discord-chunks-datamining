@@ -99,7 +99,7 @@ function T(e) {
     M = S(e, ["title", "body", "assetUrl", "previewUrl", "disableMediaViewer", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef", "position"]);
   let {
     reducedMotion: k
-  } = i.useContext(o.Sfi), U = (0, a.C)(), G = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : U, Z = i.useRef(null), B = (0, o.j1L)(C), F = i.useCallback(() => ({
+  } = i.useContext(o.Sfi), U = (0, a.C)(), G = null != (b = null == (t = (n = (0, o.ZFG)()).isWindowFocused) ? true : t.call(n)) ? b : U, Z = i.useRef(null), F = (0, o.j1L)(C), B = i.useCallback(() => ({
     type: "VIDEO",
     url: T,
     proxyUrl: T,
@@ -120,15 +120,15 @@ function T(e) {
     }, [x]),
     Y = i.useCallback(() => {
       null !== Z.current && Z.current.pause();
-      let e = F();
+      let e = B();
       (0, c.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
       }), null == x || x(), null == D || D()
-    }, [F, D, x]),
-    W = B ? (0, r.jsx)(o.zsu, {
+    }, [B, D, x]),
+    W = F ? (0, r.jsx)(o.zsu, {
       type: "image",
       src: C
     }) : (0, r.jsxs)(r.Fragment, {

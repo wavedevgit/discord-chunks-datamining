@@ -65,7 +65,7 @@ let h = {
         className: p.toastIcon,
         children: t
       }), (0, l.jsx)(s.Text, {
-        color: "header-primary",
+        color: "text-strong",
         variant: "text-sm/semibold",
         children: n
       })]

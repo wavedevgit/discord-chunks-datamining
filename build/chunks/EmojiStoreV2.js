@@ -540,7 +540,7 @@ function eZ(e) {
   })
 }
 
-function eB(e) {
+function eF(e) {
   let {
     guildId: t,
     topEmojisMetadata: n
@@ -550,7 +550,7 @@ function eB(e) {
     topEmojisTTL: c()(c()()).add(1, "days").valueOf()
   })
 }
-class eF extends(r = Chunk442837.ZP.PersistedStore) {
+class eB extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(E.Z, T.ZP, C.Z, A.Z, N.Z, S.default, U.Z, P.ZP, O.Z, Z.Z, I.Z, R.default), null != e && (null != e.pendingUsages && (X.pendingUsages = e.pendingUsages), null != e.emojiReactionPendingUsages && (X.emojiReactionPendingUsages = e.emojiReactionPendingUsages), null != e.expandedSectionsByGuildIds && (X.expandedSectionsByGuildIds = new Set(e.expandedSectionsByGuildIds))), this.syncWith([I.Z], eL)
   }
@@ -617,7 +617,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
         if (null == o || null == s) return 0;
         let c = o.toLowerCase(),
           d = 1 + 4 * (c === a) + (h(c) || h(o) ? 2 : 0) + (g(o) ? 1 : l && E(o) ? .75 : 0) + (t && i.isFavoriteEmojiWithoutFetchingLatest(e) ? .5 : 0),
-          f = r === F.Hz.REACTION ? eE.getScore(s) : eg.getScore(s);
+          f = r === B.Hz.REACTION ? eE.getScore(s) : eg.getScore(s);
         return null != f && (d *= f / 100), d
       };
       e = s().orderBy(e, [e => b(e), e => null != e.names ? e.names[0] : e.name], ["desc", "asc"])
@@ -650,7 +650,7 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
           intention: a,
           forceIncludeExternalGuilds: o
         });
-        return r !== F.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== k.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
+        return r !== B.Z5.PREMIUM_LOCKED || l ? null != r || l && t.type !== k.B.UNICODE || e.unlocked.push(t) : e.locked.push(t), e
       }, {
         unlocked: [],
         locked: []
@@ -683,8 +683,8 @@ class eF extends(r = Chunk442837.ZP.PersistedStore) {
     return null != t && t.favoriteEmojisWithoutFetchingLatest.length > 0
   }
 }
-W(eF, "displayName", "EmojiStore"), W(eF, "persistKey", "EmojiStoreV2"), W(eF, "migrations", [e => K({}, e)]);
-let eV = new eF(Chunk570140.Z, {
+W(eB, "displayName", "EmojiStore"), W(eB, "persistKey", "EmojiStoreV2"), W(eB, "migrations", [e => K({}, e)]);
+let eV = new eB(Chunk570140.Z, {
   LOGOUT: eT,
   BACKGROUND_SYNC: eC,
   CONNECTION_OPEN: eS,
@@ -700,6 +700,6 @@ let eV = new eF(Chunk570140.Z, {
   USER_SETTINGS_PROTO_UPDATE: ej,
   GUILD_ROLE_CREATE: eG,
   GUILD_ROLE_UPDATE: eG,
-  TOP_EMOJIS_FETCH_SUCCESS: eB,
+  TOP_EMOJIS_FETCH_SUCCESS: eF,
   TOGGLE_GUILD_EXPANDED_STATE: eZ
 })

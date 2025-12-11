@@ -28,8 +28,8 @@ function O(e) {
   } = e, {
     analyticsLocations: O
   } = (0, l.ZP)(), {
-    context: j
-  } = (0, o.KZ)(), x = (0, i.Z)(), {
+    context: x
+  } = (0, o.KZ)(), j = (0, i.Z)(), {
     mutualFriendsCount: v,
     mutualFriends: C,
     mutualGuilds: I
@@ -58,7 +58,7 @@ function O(e) {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: y.list,
-      onExpand: () => (0, d.Z)(t.id, x),
+      onExpand: () => (0, d.Z)(t.id, j),
       items: null == C ? Array.from({
         length: v
       }).map((e, t) => (0, r.jsxs)("div", {
@@ -99,7 +99,7 @@ function O(e) {
                 })
               }
               return e
-            }({}, j), t = t = {
+            }({}, x), t = t = {
               userId: i.id,
               sourceAnalyticsLocations: O
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

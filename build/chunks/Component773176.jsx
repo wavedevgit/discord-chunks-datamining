@@ -137,7 +137,7 @@ let ed = Chunk473749.memo(function(e) {
         tooltipText: (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
-            color: "header-primary",
+            color: "text-strong",
             className: ea.emojiTooltipText,
             children: ":".concat(e.name, ":")
           }), (0, i.jsx)(d.Text, {

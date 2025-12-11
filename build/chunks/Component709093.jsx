@@ -111,18 +111,18 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
       U = null != (i = null == k || null == (n = k.sectionHeaderText) ? true : n.call(k)) ? i : null == k ? true : k.label,
       G = null != U && null != D,
       Z = N && G && D === l.h8.REVIEW,
-      B = A ? "nitro-pink" : "nitro-green",
-      F = T(A, C);
+      F = A ? "nitro-pink" : "nitro-green",
+      B = T(A, C);
     return j ? (0, r.jsx)("div", {
       className: h.container,
       children: (0, r.jsx)(o.$1m, {
-        color: B,
+        color: F,
         className: h.headerContainer
       })
     }) : (0, r.jsxs)("div", {
       className: h.container,
       children: [(0, r.jsxs)(o.$1m, {
-        color: B,
+        color: F,
         className: a()(h.headerContainer, {
           [h.containerBottomPadding]: !G
         }),
@@ -147,9 +147,9 @@ let T = (e, t) => t ? (0, _.sO)() : e ? m.intl.string(m.t.lG6a5x) : m.intl.strin
             })
           }), (0, r.jsx)(o.Text, {
             variant: "display-md",
-            color: "header-primary",
+            color: "text-strong",
             className: h.nitroText,
-            children: F
+            children: B
           })]
         })]
       }), (b || y) && (0, r.jsx)(f.Z, {

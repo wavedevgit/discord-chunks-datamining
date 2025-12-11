@@ -54,11 +54,11 @@ function y(e) {
     }), (0, n.jsxs)("div", {
       children: [(0, n.jsx)(s.Text, {
         variant: "text-sm/semibold",
-        color: l ? "always-white" : "header-primary",
+        color: l ? "always-white" : "text-strong",
         children: r
       }), (0, n.jsx)(s.Text, {
         variant: "text-xs/normal",
-        color: l ? "always-white" : c ? "text-muted" : "header-primary",
+        color: l ? "always-white" : c ? "text-muted" : "text-strong",
         children: i
       })]
     }), u && (0, n.jsx)(s.IGR, {

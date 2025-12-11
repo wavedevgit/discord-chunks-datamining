@@ -174,7 +174,7 @@ let I = e => {
           className: E.bannerContentText,
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-lg/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: g.intl.string(g.t.USo4s7)
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",

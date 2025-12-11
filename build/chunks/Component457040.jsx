@@ -63,7 +63,7 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       onSelectSticker: v,
       closePopout: G
     } = e, {
-      location: B
+      location: F
     } = (0, d.O)(), {
       analyticsLocations: z
     } = (0, p.ZP)(f.Z.STICKER_PICKER), q = (null == (a = (0, E.N)()) ? true : a.subscription_trial) != null, Q = i.useRef(null), ee = i.useRef(null), er = i.useRef(null), ei = (0, S.Q)(e => e.showPremiumUpsell), [ea, eo] = (0, m.Iu)(e => [e.searchQuery, e.isSearchSuggestion], s.X), es = i.useRef("");
@@ -156,7 +156,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           case N.al.CREATE_STICKER:
             O.default.track(k.rMx.OPEN_MODAL, {
               type: k.jXE.CREATE_STICKER_MODAL,
-              location: B
+              location: F
             }), (0, u.ZDy)(async () => {
               let {
                 default: t
@@ -169,7 +169,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           case N.al.STICKER:
             null != e.sticker && (0, I.kl)(e.sticker, ep, c) && eO(e)
         }
-      }, [B, ep, c, eO]),
+      }, [F, ep, c, eO]),
       {
         getItemProps: eP,
         getRowProps: eR,
@@ -231,7 +231,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         className: U.emptyState,
         onClose: G
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", F(Z({
+        children: [(0, r.jsx)("div", B(Z({
           ref: Q,
           className: U.listWrapper,
           id: M.Vr
@@ -268,7 +268,7 @@ let V = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
     role: "tabpanel",
     children: e.isLoading ? (0, r.jsx)(u.$jN, {
       className: U.loadingIndicator
-    }) : (0, r.jsx)(er, F(Z({}, e), {
+    }) : (0, r.jsx)(er, B(Z({}, e), {
       ref: t
     }))
   })),

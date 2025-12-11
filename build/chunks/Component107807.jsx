@@ -252,7 +252,7 @@ function $(e) {
             className: q.connectionsChecksGroupTextNameContainer,
             children: [(0, c.jsx)(p.Text, {
               variant: "text-md/medium",
-              color: "header-primary",
+              color: "text-strong",
               children: null != (o = null == _ ? true : _.name) ? o : null == S ? true : S.name
             }), d, null != x ? (0, c.jsx)(m.u, {
               text: x,
@@ -570,7 +570,7 @@ function en(e) {
                   size: 24
                 }), (0, c.jsx)(p.Text, {
                   variant: "text-lg/semibold",
-                  color: "header-primary",
+                  color: "text-strong",
                   className: q.roleGrantedName,
                   children: l.name
                 })]

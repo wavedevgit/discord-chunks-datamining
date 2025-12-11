@@ -37,23 +37,23 @@ function y(e) {
     app: j
   } = (0, d.Rt)(x), {
     analyticsLocations: M
-  } = (0, c.ZP)(), k = (0, h.Ev)(A, null != i ? i : true), U = null == k ? true : k.subscription, G = null == k ? true : k.subscriptionPlan, Z = (0, h.cr)(A, null != i ? i : true), B = null == Z ? true : Z.subscriptionPlan, {
-    entitlementsLoaded: F
+  } = (0, c.ZP)(), k = (0, h.Ev)(A, null != i ? i : true), U = null == k ? true : k.subscription, G = null == k ? true : k.subscriptionPlan, Z = (0, h.cr)(A, null != i ? i : true), F = null == Z ? true : Z.subscriptionPlan, {
+    entitlementsLoaded: B
   } = (0, h.LM)({
     guildId: i
   });
-  null == i && (F = true);
+  null == i && (B = true);
   let V = (0, f.Z)(),
     H = null != U && (0, E.Jf)(U, I),
     Y = r.useMemo(() => {
-      if (!F || null == j || null == O) return u.rf.LOADING;
+      if (!B || null == j || null == O) return u.rf.LOADING;
       if (!L) return u.rf.UNAVAILABLE;
       if (!w) {
         if ((null == G ? true : G.skuId) === O) return u.rf.SUBSCRIBED;
-        if ((null == B ? true : B.skuId) === O && false === H) return u.rf.UPCOMING_PLAN
+        if ((null == F ? true : F.skuId) === O && false === H) return u.rf.UPCOMING_PLAN
       }
       return u.rf.AVAILABLE
-    }, [null == G ? true : G.skuId, L, j, F, H, w, null == B ? true : B.skuId, O]);
+    }, [null == G ? true : G.skuId, L, j, B, H, w, null == F ? true : F.skuId, O]);
   return r.useEffect(() => {
     L && null != O && V && (p.Z.isFetchingForSKU(O) || p.Z.isLoadedForSKU(O) || s.Z.wait(() => {
       (0, l.GZ)(O)

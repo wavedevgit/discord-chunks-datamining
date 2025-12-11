@@ -24,7 +24,7 @@ function d(e) {
       className: c.itemContent,
       children: [(0, r.jsx)(l.Heading, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: t
       }), "string" == typeof n ? (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",

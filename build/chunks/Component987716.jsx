@@ -97,7 +97,7 @@ let C = e => {
     ref: L
   } = x, j = I(x, ["ref"]), M = (0, d.MY)(y, t), k = M === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = M !== d.xr.DEFAULT, G = (0, _.m)(), Z = (0, p.Z)({
     location: "GiftAnimationOptions"
-  }), B = e => {
+  }), F = e => {
     null != P && P(null == e ? true : e)
   };
   return (0, r.jsxs)("div", {
@@ -115,7 +115,7 @@ let C = e => {
         className: o()(b.soundEmojiContainer, Z && b.refresh),
         children: [(0, r.jsx)(u.Z, {
           sound: A,
-          onSelect: B
+          onSelect: F
         }), (0, r.jsx)(h.Z, {
           setEmojiConfetti: N,
           emojiConfetti: null == C ? true : C

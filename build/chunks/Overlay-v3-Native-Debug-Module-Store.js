@@ -2,7 +2,7 @@
 /** chunk id: 670785, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./388685.js");
 var r, Chunk348327 = require("./348327.js"),
   a = require.n(Chunk348327),
@@ -153,7 +153,7 @@ function Z(e) {
   } = e;
   return 0 === t ? D() : x(), true
 }
-class B extends(r = Chunk442837.ZP.Store) {
+class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk509140.Z, Chunk522474.Z)
   }
@@ -164,8 +164,8 @@ class B extends(r = Chunk442837.ZP.Store) {
     return O
   }
 }
-h(B, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let F = new B(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
+h(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
+let B = new F(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
   OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
   OVERLAY_SET_CLICK_ZONES: M,

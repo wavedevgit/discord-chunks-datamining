@@ -83,7 +83,7 @@ function _(e) {
     gridNotice: k,
     renderHeader: U,
     renderUpsell: G
-  } = e, Z = i.useRef(null), B = i.useRef(null), F = i.useRef(null), V = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, o.ep)({
+  } = e, Z = i.useRef(null), F = i.useRef(null), B = i.useRef(null), V = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, o.ep)({
     gridWrapperRef: Z,
     containerWidth: u,
     showingEmptyState: V
@@ -108,7 +108,7 @@ function _(e) {
     isUsingKeyboardNavigation: en
   } = (0, o.t$)({
     columnCounts: Q,
-    expressionsListRef: B,
+    expressionsListRef: F,
     expressionsGrid: K,
     onSelectItem: _,
     store: f,
@@ -130,15 +130,15 @@ function _(e) {
     f.setBottomPosition(null != (t = null == (e = Z.current) ? true : e.getBoundingClientRect().bottom) ? t : null)
   }), i.useEffect(() => f.resetStoreState, [f.resetStoreState]), i.useLayoutEffect(() => {
     var e;
-    null == (e = F.current) || e.focus()
+    null == (e = B.current) || e.focus()
   }, []);
   let es = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Z, {
-      ref: F,
+      ref: B,
       store: f,
       hasSendableExpressions: true,
       onKeyDown: et,
-      expressionsListRef: B,
+      expressionsListRef: F,
       gridNavigatorId: M,
       defaultSearchPlaceholder: E,
       emptySearchPlaceholder: b
@@ -149,7 +149,7 @@ function _(e) {
       className: c.header,
       children: [" ", es, " "]
     }), V && null != y ? y(c.emptyState) : (0, r.jsxs)(r.Fragment, {
-      children: [A(B), null != k && (0, r.jsx)("div", {
+      children: [A(F), null != k && (0, r.jsx)("div", {
         className: c.gridNoticeWrapper,
         children: k
       }), (0, r.jsx)("div", p(d({
@@ -159,7 +159,7 @@ function _(e) {
       }, ee), {
         children: null != W ? (0, r.jsx)(s.Z, {
           categories: t,
-          ref: B,
+          ref: F,
           store: f,
           hasSearchResults: g,
           listPadding: j,

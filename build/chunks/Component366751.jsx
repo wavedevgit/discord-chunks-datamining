@@ -26,12 +26,12 @@ function u(e) {
         size: "md",
         "aria-label": s.intl.string(s.t.cpT0Cq),
         onClick: () => {
-          n(o.L.USER_DISMISS)
+          n(a.L.USER_DISMISS)
         },
         icon: i.Uz9
       })
     }), (0, r.jsx)(i.Mgn, {
-      color: a.Z.colors.TEXT_FEEDBACK_WARNING,
+      color: o.Z.colors.TEXT_FEEDBACK_WARNING,
       className: c.icon
     }), (0, r.jsx)(l.xvT, {
       variant: "text-md/semibold",

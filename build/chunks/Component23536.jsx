@@ -25,7 +25,7 @@ function y(e) {
     onJump: y
   } = e, {
     items: O,
-    state: j
+    state: x
   } = (0, l.cj)([f.Z], () => {
     var e, n;
     let r = f.Z.getPins(t.id);
@@ -33,11 +33,11 @@ function y(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : f.M.LOADING
     }
-  }), x = i.useMemo(() => O.map(e => e.message), [O]), v = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
+  }), j = i.useMemo(() => O.map(e => e.message), [O]), v = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     v && o.Z.ackPins(t.id)
   }, [v, t.id]), (0, c.ZP)(() => {
-    x.some(d.k5) && o.Z.fetchPins(t.id, {
+    j.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
@@ -56,9 +56,9 @@ function y(e) {
     children: (0, r.jsx)(p.ZP, {
       channel: t,
       onFetch: C,
-      messages: x,
-      loading: j === f.M.LOADING,
-      hasMore: j === f.M.LOADED_HAS_MORE,
+      messages: j,
+      loading: x === f.M.LOADING,
+      hasMore: x === f.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
         if (O.length > 0) return;

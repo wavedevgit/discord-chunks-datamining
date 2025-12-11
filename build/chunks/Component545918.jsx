@@ -51,8 +51,8 @@ function B(e) {
     location: t.name,
     subsection: i
   }), (0, l.jsxs)(v.Z, {
-    className: L.header,
-    innerClassname: L.__invalid_innerHeader,
+    className: G.header,
+    innerClassname: G.__invalid_innerHeader,
     channelId: D.oC.MEMBER_SAFETY,
     guildId: t.id,
     hideSearch: true,
@@ -87,12 +87,12 @@ function U(e) {
     sortOrder: D
   });
   r.useEffect(() => {
-    (null == v ? true : v.features.has(Z.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || j(N.e.ALL_MEMBERS)
+    (null == v ? true : v.features.has(M.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) || j(N.e.ALL_MEMBERS)
   }, [v]);
   let U = (0, O.n2)(n),
     F = (0, m.m)(n),
     q = r.useRef(null);
-  (0, P.n)(n);
+  (0, _.n)(n);
   let {
     fetchNextPage: z
   } = (0, f.m)({
@@ -117,8 +117,8 @@ function U(e) {
   return null != v && U ? (0, l.jsxs)(d.Gt, {
     value: R,
     children: [(0, l.jsxs)("div", {
-      className: i()(G.chat, L.page, {
-        [G.threadSidebarOpen]: K
+      className: i()(L.chat, G.page, {
+        [L.threadSidebarOpen]: K
       }),
       children: [(0, l.jsx)(B, {
         guild: v,
@@ -129,14 +129,14 @@ function U(e) {
         ref: q,
         orientation: "vertical",
         children: (0, l.jsx)("div", {
-          className: i()(G.content, L.container),
+          className: i()(L.content, G.container),
           children: u === N.e.ALL_MEMBERS ? (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(I.Z, {
+            children: [(0, l.jsx)(y.Z, {
               guild: v
-            }), (0, l.jsx)(M.Z, {
+            }), (0, l.jsx)(Z.Z, {
               guild: v
             })]
-          }) : (0, l.jsx)(y.Z, {
+          }) : (0, l.jsx)(I.Z, {
             guildId: v.id,
             currentTab: u
           })
@@ -146,7 +146,7 @@ function U(e) {
       })]
     }), F && (u === N.e.ALL_MEMBERS ? (0, l.jsx)(w.Z, {
       guildId: v.id
-    }) : (0, l.jsx)(_.Z, {
+    }) : (0, l.jsx)(P.Z, {
       guildId: v.id
     }))]
   }) : null

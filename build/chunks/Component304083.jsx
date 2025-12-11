@@ -158,7 +158,7 @@ function W(e) {
             quest: t
           }), (0, a.jsx)(m.Heading, {
             className: F.title,
-            color: "header-primary",
+            color: "text-strong",
             variant: "heading-md/medium",
             children: B.intl.format(B.t.EQa7os, {
               questName: t.config.messages.questName

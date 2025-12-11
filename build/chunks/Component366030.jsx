@@ -78,7 +78,7 @@ function Z(e, t) {
   }), e
 }
 
-function B(e) {
+function F(e) {
   let t, {
     connectionType: n,
     connectionMetadataField: i,
@@ -115,13 +115,13 @@ function B(e) {
       className: M.popoutCheckIcon
     }), (0, r.jsx)(_.Text, {
       variant: "text-xs/medium",
-      color: "header-primary",
+      color: "text-strong",
       children: t
     })]
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     eligibilityStates: t
   } = e, n = (0, g.ZP)(), i = (0, _.dQu)(u.Z.unsafe_rawColors.GREEN_330).hex(), a = l().groupBy(t, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : ""));
@@ -166,7 +166,7 @@ function F(e) {
             value: a,
             description: s
           } = e;
-          return o()(null != n, "connectionMetadataField is null"), o()(null != i, "operator is null"), o()(null != a, "value is null"), (0, r.jsx)(B, {
+          return o()(null != n, "connectionMetadataField is null"), o()(null != i, "operator is null"), o()(null != a, "value is null"), (0, r.jsx)(F, {
             connectionType: t,
             connectionMetadataField: n,
             operator: i,
@@ -211,7 +211,7 @@ function V(e) {
       })
     }), (0, r.jsx)("div", {
       className: M.popoutChecks,
-      children: (0, r.jsx)(F, {
+      children: (0, r.jsx)(B, {
         eligibilityStates: o.flat()
       })
     }), (0, r.jsxs)("div", {
@@ -290,7 +290,7 @@ function H(e) {
           color: u.colorString
         }), (0, r.jsx)(_.Text, {
           variant: "text-xs/bold",
-          color: "header-primary",
+          color: "text-strong",
           className: M.roleName,
           children: u.name
         })]

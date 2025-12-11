@@ -60,7 +60,7 @@ class C extends(a = Chunk473749.PureComponent) {
         children: d().times(exports, t => (0, i.jsx)(p.P3F, {
           onClick: () => this.handleDotClick(t),
           className: t === e ? o()(x.dotSelected, l) : o()(x.dotNormal, r),
-          "aria-label": g.intl.formatToPlainString(g.t["2SXOrM"], {
+          "aria-label": b.intl.formatToPlainString(b.t["2SXOrM"], {
             pageNumber: t + 1
           })
         }, "dot-".concat(t)))
@@ -156,8 +156,8 @@ class j extends(r = Chunk473749.PureComponent) {
       paginationDotSelectedClassName: p,
       themedPagination: m,
       includeHitboxPadding: f,
-      style: b,
-      aspectRatio: g,
+      style: g,
+      aspectRatio: b,
       children: v
     } = this.props, {
       visibleIndex: j

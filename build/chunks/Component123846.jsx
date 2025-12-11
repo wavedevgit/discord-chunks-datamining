@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   s = require.n(Chunk954955),
   Chunk498607 = require("./498607.js"),
@@ -65,7 +65,7 @@ function D(e) {
     text: n,
     size: l,
     vanityUrl: i,
-    isFocused: o
+    isFocused: a
   } = e, s = null != l ? l : 16, c = function(e, t) {
     switch (e) {
       case j.gq.BOT:
@@ -132,8 +132,8 @@ function D(e) {
     "aria-label": d,
     children: [null != c ? c : null, (0, r.jsx)(C.Text, {
       variant: 12 === s ? "text-xs/medium" : "text-sm/medium",
-      className: a()(O.labelText, {
-        [O.focused]: o
+      className: o()(O.labelText, {
+        [O.focused]: a
       }),
       children: n
     })]
@@ -145,12 +145,12 @@ function N(e) {
   let {
     guildId: n,
     onClose: i
-  } = e, o = (0, u.e7)([h.Z], () => h.Z.getSearchStateByGuildId(n), [n], d()), {
+  } = e, a = (0, u.e7)([h.Z], () => h.Z.getSearchStateByGuildId(n), [n], d()), {
     inviteCodes: c
   } = (0, x.s)(n), f = (0, u.e7)([m.Z], () => m.Z.getGuild(n)), N = null != (t = null == f ? true : f.vanityURLCode) ? t : null, [_, R] = l.useState(false), {
     selectedSourceInviteCode: L,
     selectedJoinSourceType: I
-  } = o, P = null != I && I !== j.gq.UNSPECIFIED, V = (0, u.e7)([b.Z], () => b.Z.hideInstantInvites, []);
+  } = a, P = null != I && I !== j.gq.UNSPECIFIED, V = (0, u.e7)([b.Z], () => b.Z.hideInstantInvites, []);
   V && (c = []);
   let M = l.useMemo(() => s()(e => {
     let t = e.trim();
@@ -205,7 +205,7 @@ function N(e) {
             className: O.__invalid_caret
           }), (0, r.jsx)(C.Text, {
             variant: "eyebrow",
-            color: "header-primary",
+            color: "text-strong",
             children: y.intl.string(y.t["Kz/cho"])
           })]
         }))
@@ -252,12 +252,12 @@ function N(e) {
         id: "other-join-methods",
         action: () => R(true),
         render: e => (0, r.jsxs)("div", {
-          className: a()(O.containerWithRightCaret, O.customLabelContainer),
+          className: o()(O.containerWithRightCaret, O.customLabelContainer),
           children: [(0, r.jsxs)("div", {
             className: H.label,
             children: [(0, r.jsx)(C.Text, {
               variant: "text-sm/medium",
-              className: a()(O.__invalid_selectedRadio, O.labelText, {
+              className: o()(O.__invalid_selectedRadio, O.labelText, {
                 [O.focused]: e.isFocused
               }),
               children: y.intl.string(y.t["Kz/cho"])

@@ -46,7 +46,7 @@ let u = e => {
         src: d
       }), (0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: c.emptySearchTitle,
         children: s.intl.string(s.t["6HXiuE"])
       }), (0, r.jsx)(i.Text, {

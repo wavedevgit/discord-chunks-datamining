@@ -68,12 +68,12 @@ function M(e) {
     idle: j,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, U = (0, _.bp)() === R.IlC.POPOUT, G = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), Z = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), B = false === (null == (t = null == Z ? true : Z.disabled) || t), F = (0, u.Z)([s])[0], V = (0, h.Z)(a), {
+  } = e, U = (0, _.bp)() === R.IlC.POPOUT, G = (0, o.e7)([T.Z], () => T.Z.isVideoEnabled()), Z = (0, o.e7)([T.Z], () => Object.values(T.Z.getVideoDevices())[0]), F = false === (null == (t = null == Z ? true : Z.disabled) || t), B = (0, u.Z)([s])[0], V = (0, h.Z)(a), {
     parentAnalyticsLocation: H
   } = (0, c.ZP)(), Y = e => {
     (0, f.v)(H, f.d.CAMERA, e), l.Z.setVideoEnabled(e)
   }, W = () => {
-    B ? Y(true) : (0, g.Z)()
+    F ? Y(true) : (0, g.Z)()
   }, K = () => {
     (0, f.v)(H, f.d.POPOUT, true), null != a && (0, P.Z)({
       onConfirm: async () => {
@@ -90,7 +90,7 @@ function M(e) {
       className: L.topControls,
       children: (0, r.jsx)(b.r, {
         idle: j,
-        title: null != (i = null != (n = null == F ? true : F.name) ? n : null == a ? true : a.name) ? i : "",
+        title: null != (i = null != (n = null == B ? true : B.name) ? n : null == a ? true : a.name) ? i : "",
         onJumpToChannel: D,
         preventIdleComponent: E.Z
       })
@@ -104,7 +104,7 @@ function M(e) {
         children: [(0, r.jsx)(I.C, {
           className: x.leftPipIcon,
           enabled: G,
-          cameraUnavailable: !B,
+          cameraUnavailable: !F,
           hasPermission: V,
           onChange: Y,
           onCameraUnavailable: W

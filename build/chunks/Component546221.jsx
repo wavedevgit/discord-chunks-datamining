@@ -38,7 +38,7 @@ function v(e) {
       children: [x.intl.string(x.t["9Ub4KY"]), " ", l]
     }), (0, r.jsx)(i.LZC, {
       size: 16
-    }), (0, r.jsx)(m.ZP, {
+    }), (0, r.jsx)(f.ZP, {
       payoutsByPeriod: t
     })]
   })
@@ -64,7 +64,7 @@ let C = e => {
     application: o
   } = e, {
     loading: g,
-    team: m,
+    team: f,
     currentPeriod: C,
     allPeriods: y,
     metrics: N
@@ -85,14 +85,14 @@ let C = e => {
         size: 8
       }), (0, r.jsxs)("div", {
         className: j.metricsContainer,
-        children: [(0, r.jsx)(f.Z, {
+        children: [(0, r.jsx)(m.Z, {
           label: x.intl.string(x.t.iY1jW3),
           value: (0, a.T4)(null != (t = N.revenue) ? t : 0, h.pKx.USD),
-          additionalContent: (0, r.jsx)(f.H, {
+          additionalContent: (0, r.jsx)(m.H, {
             value: N.revenuePctChange,
             isPercent: true
           })
-        }), (0, r.jsx)(f.Z, {
+        }), (0, r.jsx)(m.Z, {
           label: x.intl.string(x.t["cXyw2/"]),
           value: (0, r.jsxs)(r.Fragment, {
             children: [null != (n = N.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
@@ -102,7 +102,7 @@ let C = e => {
               "aria-hidden": true
             })]
           }),
-          additionalContent: (0, r.jsx)(f.H, {
+          additionalContent: (0, r.jsx)(m.H, {
             value: N.subscriberChange
           })
         })]
@@ -115,20 +115,20 @@ let C = e => {
       className: j.formSection,
       children: (0, r.jsx)(v, {
         payoutsByPeriod: y,
-        team: m
+        team: f
       })
     }), (0, r.jsx)(i.C3N, {
       label: x.intl.string(x.t.O8cDAJ),
       className: j.formSection,
       disabled: I,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(b.Z, {
         guildId: s,
         application: o
       })
     }), (0, r.jsx)(i.C3N, {
       label: x.intl.string(x.t["0n7R2X"]),
       className: j.formSection,
-      children: (0, r.jsx)(b.Z, {
+      children: (0, r.jsx)(p.Z, {
         guildId: s,
         allPeriods: y
       })

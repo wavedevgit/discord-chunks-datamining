@@ -73,13 +73,13 @@ function Z(e, t) {
   return n
 }
 
-function B(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function F(e, t) {
+function B(e, t) {
   if (null == e) return {};
   var n, r, i = V(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -110,7 +110,7 @@ function H() {
       pendingAvatar: Z,
       pendingNameplate: V
     } = Chunk512722,
-    H = F(Chunk512722, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
+    H = B(Chunk512722, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
     Y = (0, Chunk643879.SD)({
       userId: exports.id,
       image: Z
@@ -135,7 +135,7 @@ function H() {
   return require ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)(Chunk906732.Gt, {
     value: Q,
     children: [(0, Chunk54381.jsx)(Chunk475977.Z, {}), (0, Chunk54381.jsx)(Chunk296810.Z, {
-      profilePreview: (0, Chunk54381.jsx)(Chunk678135.Z, B(G({
+      profilePreview: (0, Chunk54381.jsx)(Chunk678135.Z, F(G({
         user: exports,
         canUsePremiumCustomization: q,
         onUpsellClick: Chunk265159.Z,
@@ -143,7 +143,7 @@ function H() {
       }, H), {
         pendingAvatar: Y
       })),
-      nameplatePreview: (0, Chunk54381.jsx)(Chunk566697.Z, B(G({
+      nameplatePreview: (0, Chunk54381.jsx)(Chunk566697.Z, F(G({
         user: exports,
         nameplate: W
       }, H), {

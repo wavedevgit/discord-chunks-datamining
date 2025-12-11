@@ -148,7 +148,7 @@ function Z(e) {
   let j = (null == a ? true : a.discoverable) !== false ? a : null,
     M = (0, m.Cf)(j),
     Z = (0, g.E)("ActivityStatus", l),
-    B = i.useMemo(() => {
+    F = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
         let {
@@ -160,8 +160,8 @@ function Z(e) {
       let i = null != (t = null == (e = r.state) ? true : e.trim()) ? t : null;
       return null == ("" === i ? null : i) && null == r.emoji ? null : r
     }, [n]),
-    F = (0, c.e7)([E.default], () => E.default.getId() === (null == t ? true : t.id)),
-    V = (0, c.e7)([h.Z], () => Z ? F ? h.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === N.IIU.HANG_STATUS) : null : null),
+    B = (0, c.e7)([E.default], () => E.default.getId() === (null == t ? true : t.id)),
+    V = (0, c.e7)([h.Z], () => Z ? B ? h.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === N.IIU.HANG_STATUS) : null : null),
     H = i.useMemo(() => {
       var e;
       return (0, s.uniqWith)(null != (e = null == n ? true : n.filter(e => {
@@ -175,12 +175,12 @@ function Z(e) {
     Y = null == n ? true : n.find(e => e.name === (null == M ? true : M.name)),
     W = (null == t ? true : t.bot) === true,
     K = (0, c.e7)([b.Z], () => b.Z.isBlockedOrIgnored(null == t ? true : t.id)),
-    z = (null == B ? true : B.state) != null,
+    z = (null == F ? true : F.state) != null,
     q = null != j,
     Q = !q && null != l,
     X = H.length + (q || Q ? 1 : 0),
     J = X > 1,
-    $ = ((null == B ? true : B.state) != null || null != V) && "xs" === y,
+    $ = ((null == F ? true : F.state) != null || null != V) && "xs" === y,
     ee = k({
       streamActivity: Y,
       otherActivities: H,
@@ -267,8 +267,8 @@ function Z(e) {
       [R.textXs]: "xs" === y,
       [R.textSm]: "sm" === y
     }),
-    eo = () => null == B && null == V ? null : (0, r.jsx)(I.Z, {
-      customStatusActivity: B,
+    eo = () => null == F && null == V ? null : (0, r.jsx)(I.Z, {
+      customStatusActivity: F,
       textSize: y,
       animateEmoji: O,
       hideEmoji: w,
@@ -282,7 +282,7 @@ function Z(e) {
     });
   return (0, r.jsxs)("div", {
     className: ea,
-    children: [ei(), (null != B || null != V) && X > 0 && (0, r.jsx)(G, {
+    children: [ei(), (null != F || null != V) && X > 0 && (0, r.jsx)(G, {
       textVariant: "text-".concat(y, "/normal"),
       className: p
     }), eo(), P && (0, r.jsx)(v.Z, {})]

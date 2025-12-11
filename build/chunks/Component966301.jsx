@@ -32,7 +32,7 @@ function E(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), m = c.length, f = c.length + u.length, p = m / f * 100, b = Math.max(Math.ceil(85 * f / 100) - m, 0), [h, x] = i.useState(false), j = h ? s.CJ0 : s.u04;
+  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), f = c.length, m = c.length + u.length, b = f / m * 100, p = Math.max(Math.ceil(85 * m / 100) - f, 0), [h, x] = i.useState(false), j = h ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
     className: N.channelCoverage,
     children: [(0, r.jsxs)(s.P3F, {
@@ -40,7 +40,7 @@ function E(e) {
       onClick: () => x(!h),
       children: [(0, r.jsxs)("div", {
         className: N.warningTextContainer,
-        children: [p <= 85 && (0, r.jsx)(s.Mgn, {
+        children: [b <= 85 && (0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
           className: N.warning
@@ -49,15 +49,15 @@ function E(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           children: y.intl.format(y.t.nMVKCX, {
-            numChannelsMissing: f - m
+            numChannelsMissing: m - f
           })
         })]
       }), (0, r.jsxs)("div", {
         className: N.progressContainer,
         children: [(0, r.jsx)(s.Exd, {
           className: N.coverageProgress,
-          foregroundColor: p > 85 ? "var(--status-positive)" : "var(--status-warning)",
-          percent: p
+          foregroundColor: b > 85 ? "var(--status-positive)" : "var(--status-warning)",
+          percent: b
         }), (0, r.jsx)(j, {
           size: "md",
           color: "currentColor",
@@ -90,7 +90,7 @@ function E(e) {
         })
       }), (0, r.jsx)("div", {
         className: N.channelCoverageHint,
-        children: b > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: p > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Mgn, {
             size: "xs",
             color: "currentColor"
@@ -98,7 +98,7 @@ function E(e) {
             variant: "text-xs/normal",
             color: "text-muted",
             children: y.intl.format(y.t.sX8890, {
-              numChannels: b
+              numChannels: p
             })
           })]
         }) : (0, r.jsx)(s.Text, {
@@ -127,7 +127,7 @@ function S(e) {
     saveOnClose: n
   } = e, a = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([h.Z], () => h.Z.editedOnboardingPrompts), d = (0, l.e7)([h.Z], () => h.Z.advancedMode), u = i.useRef(false);
   i.useEffect(() => {
-    a || u.current || (u.current = true, d || 0 !== o.length || (0, b.tS)(t, [(0, C.ae)()], false))
+    a || u.current || (u.current = true, d || 0 !== o.length || (0, p.tS)(t, [(0, C.ae)()], false))
   });
   let g = i.useRef(t);
   if (i.useEffect(() => {
@@ -135,14 +135,14 @@ function S(e) {
     }), i.useEffect(() => {
       if (n) return () => {
         let e = g.current;
-        null != e && (0, b.rS)(e, {
+        null != e && (0, p.rS)(e, {
           ignoreDefaultPrompt: true
-        }).then(() => (0, f.ss)(e.id)).catch(() => {})
+        }).then(() => (0, m.ss)(e.id)).catch(() => {})
       }
     }, [n]), null == t) return null;
-  let p = async () => {
+  let b = async () => {
     try {
-      await (0, b.rS)(t), await (0, m.di)(t.id)
+      await (0, p.rS)(t), await (0, f.di)(t.id)
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {
@@ -167,7 +167,7 @@ function S(e) {
       }), (0, r.jsx)("div", {
         className: N.dot
       }), (0, r.jsx)(s.Anchor, {
-        onClick: p,
+        onClick: b,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",

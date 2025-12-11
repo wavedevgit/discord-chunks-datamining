@@ -107,7 +107,7 @@ let G = new Chunk710845.Z("ConnectionStore"),
       }));
     return e.channels.push(null != a ? a : r), e
   }, e => "CHANNEL_UPDATE" !== e),
-  B = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
+  F = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
     type: "SOUNDBOARD_SOUNDS_RECEIVED",
     updates: []
   } : e).updates.push({
@@ -123,7 +123,7 @@ let G = new Chunk710845.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  F = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null != e ? e : {
+  B = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
@@ -649,7 +649,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     }))
   })
 }), Y(["SOUNDBOARD_SOUNDS"], e => {
-  B.add(e)
+  F.add(e)
 }), Y(["CHANNEL_RECIPIENT_ADD", "CHANNEL_RECIPIENT_REMOVE"], (e, t) => {
   let n = v.Z.getBasicChannel(e.channel_id);
   q({
@@ -711,7 +711,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   })
 }), Y(["GUILD_MEMBERS_CHUNK"], e => {
   a.ZP.Emitter.batched(() => {
-    F.add({
+    B.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found

@@ -121,7 +121,7 @@ function m(e) {
     }), (0, r.jsxs)("div", {
       children: [null != n && (0, r.jsx)(l.xvT, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: n
       }), (0, r.jsx)(l.xvT, {
         variant: "text-sm/normal",

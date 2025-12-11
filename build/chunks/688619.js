@@ -143,13 +143,13 @@
     U = d.unpack,
     G = d.last,
     Z = j,
-    B = k,
-    F = Math.round,
+    F = k,
+    B = Math.round,
     V = function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
       var n = U(module, "rgba"),
         r = G(module) || "rgb";
-      return "hsl" == r.substr(0, 3) ? Z(B(n), r) : (n[0] = F(n[0]), n[1] = F(n[1]), n[2] = F(n[2]), ("rgba" === r || n.length > 3 && n[3] < 1) && (n[3] = n.length > 3 ? n[3] : 1, r = "rgba"), r + "(" + n.slice(0, "rgb" === r ? 3 : 4).join(",") + ")")
+      return "hsl" == r.substr(0, 3) ? Z(F(n), r) : (n[0] = B(n[0]), n[1] = B(n[1]), n[2] = B(n[2]), ("rgba" === r || n.length > 3 && n[3] < 1) && (n[3] = n.length > 3 ? n[3] : 1, r = "rgba"), r + "(" + n.slice(0, "rgb" === r ? 3 : 4).join(",") + ")")
     },
     H = d.unpack,
     Y = Math.round,
@@ -382,8 +382,8 @@
     eU = d.TWOPI,
     eG = Math.min,
     eZ = Math.sqrt,
-    eB = Math.acos,
-    eF = function() {
+    eF = Math.acos,
+    eB = function() {
       for (var e, t = [], n = arguments.length; n--;) t[n] = arguments[n];
       var r = ek(t, "rgb"),
         i = r[0],
@@ -392,7 +392,7 @@
         s = eG(i /= 255, a /= 255, o /= 255),
         l = (i + a + o) / 3,
         c = l > 0 ? 1 - s / l : 0;
-      return 0 === c ? e = NaN : (e = eB(e = (i - a + (i - o)) / 2 / eZ((i - a) * (i - a) + (i - o) * (a - o))), o > a && (e = eU - module), e /= eU), [360 * module, c, l]
+      return 0 === c ? e = NaN : (e = eF(e = (i - a + (i - o)) / 2 / eZ((i - a) * (i - a) + (i - o) * (a - o))), o > a && (e = eU - module), e /= eU), [360 * module, c, l]
     },
     eV = d.unpack,
     eH = d.limit,
@@ -411,7 +411,7 @@
     eX = y,
     eJ = E,
     e$ = f,
-    e0 = eF;
+    e0 = eB;
   eJ.prototype.hsi = function() {
     return e0(this._rgb)
   }, eX.hsi = function() {
@@ -601,8 +601,8 @@
       return tU(r[0], r[1], r[2])
     },
     tZ = d.unpack,
-    tB = d.DEG2RAD,
-    tF = Math.sin,
+    tF = d.DEG2RAD,
+    tB = Math.sin,
     tV = Math.cos,
     tH = function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
@@ -610,7 +610,7 @@
         r = n[0],
         i = n[1],
         a = n[2];
-      return isNaN(a) && (a = 0), [r, tV(a *= tB) * i, tF(a) * i]
+      return isNaN(a) && (a = 0), [r, tV(a *= tF) * i, tB(a) * i]
     },
     tY = d.unpack,
     tW = tH,
@@ -958,9 +958,9 @@
     nU = y,
     nG = E,
     nZ = f,
-    nB = nP;
+    nF = nP;
   nG.prototype.oklab = function() {
-    return nB(this._rgb)
+    return nF(this._rgb)
   }, nU.oklab = function() {
     for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
     return new(Function.prototype.bind.apply(nG, [null].concat(module, ["oklab"])))
@@ -971,12 +971,12 @@
       if ("array" === nk(e = nM(module, "oklab")) && 3 === module.length) return "oklab"
     }
   });
-  var nF = d.unpack,
+  var nB = d.unpack,
     nV = nP,
     nH = tj,
     nY = function() {
       for (var e = [], t = arguments.length; t--;) module[t] = arguments[t];
-      var n = nF(module, "rgb"),
+      var n = nB(module, "rgb"),
         r = nV(n[0], n[1], n[2]);
       return nH(r[0], r[1], r[2])
     },
@@ -1249,12 +1249,12 @@
       }
       return r[0] = rL(r[0]), r[1] = rL(r[1]), r[2] = rL(r[2]), r[3] > .9999999 && (r[3] = 1), new rw(rD(r))
     },
-    rB = y,
-    rF = d.type,
+    rF = y,
+    rB = d.type,
     rV = Math.pow,
     rH = function(e) {
       var t = "rgb",
-        n = rB("#ccc"),
+        n = rF("#ccc"),
         r = 0,
         i = [0, 1],
         a = [],
@@ -1269,9 +1269,9 @@
         _ = true,
         m = 1,
         h = function(e) {
-          if ("string" === rF(e = e || ["#fff", "#000"]) && rB.brewer && rB.brewer[e.toLowerCase()] && (e = rB.brewer[e.toLowerCase()]), "array" === rF(e)) {
+          if ("string" === rB(e = e || ["#fff", "#000"]) && rF.brewer && rF.brewer[e.toLowerCase()] && (e = rF.brewer[e.toLowerCase()]), "array" === rB(e)) {
             1 === e.length && (e = [e[0], e[0]]), e = e.slice(0);
-            for (var t = 0; t < e.length; t++) e[t] = rB(e[t]);
+            for (var t = 0; t < e.length; t++) e[t] = rF(e[t]);
             a.length = 0;
             for (var n = 0; n < e.length; n++) a.push(n / (e.length - 1))
           }
@@ -1301,7 +1301,7 @@
           var f = Math.floor(1e4 * (c = Math.min(1, Math.max(0, c = o[0] + c * (1 - o[0] - o[1])))));
           if (_ && p[f]) i = p[f];
           else {
-            if ("array" === rF(l))
+            if ("array" === rB(l))
               for (var h = 0; h < a.length; h++) {
                 var y = a[h];
                 if (c <= y || c >= y && h === a.length - 1) {
@@ -1309,10 +1309,10 @@
                   break
                 }
                 if (c > y && c < a[h + 1]) {
-                  c = (c - y) / (a[h + 1] - y), i = rB.interpolate(l[h], l[h + 1], c, t);
+                  c = (c - y) / (a[h + 1] - y), i = rF.interpolate(l[h], l[h + 1], c, t);
                   break
                 }
-              } else "function" === rF(l) && (i = l(c));
+              } else "function" === rB(l) && (i = l(c));
             _ && (p[f] = i)
           }
           return i
@@ -1322,15 +1322,15 @@
         };
       h(e);
       var v = function(e) {
-        var t = rB(y(e));
+        var t = rF(y(e));
         return c && t[c] ? t[c]() : t
       };
       return v.classes = function(e) {
         if (null != e) {
-          if ("array" === rF(e)) s = e, i = [e[0], e[e.length - 1]];
+          if ("array" === rB(e)) s = e, i = [e[0], e[e.length - 1]];
           else {
-            var t = rB.analyze(i);
-            s = 0 === e ? [t.min, t.max] : rB.limits(t, "e", e)
+            var t = rF.analyze(i);
+            s = 0 === e ? [t.min, t.max] : rF.limits(t, "e", e)
           }
           return v
         }
@@ -1381,7 +1381,7 @@
           return e
         }, v
       }, v.padding = function(e) {
-        return null != e ? ("number" === rF(e) && (e = [e, e]), o = e, v) : o
+        return null != e ? ("number" === rB(e) && (e = [e, e]), o = e, v) : o
       }, v.colors = function(t, n) {
         arguments.length < 2 && (n = "hex");
         var r = [];
@@ -1403,7 +1403,7 @@
             return v(e)
           })
         }
-        return rB[n] && (r = r.map(function(e) {
+        return rF[n] && (r = r.map(function(e) {
           return e[n]()
         })), r
       }, v.cache = function(e) {
@@ -1411,7 +1411,7 @@
       }, v.gamma = function(e) {
         return null != e ? (m = e, v) : m
       }, v.nodata = function(e) {
-        return null != e ? (n = rB(e), v) : n
+        return null != e ? (n = rF(e), v) : n
       }, v
     };
 
@@ -1621,8 +1621,8 @@
           return e - t
         }), o.push(U[0]);
         for (var Z = 1; Z < U.length; Z += 2) {
-          var B = U[Z];
-          isNaN(B) || false !== o.indexOf(B) || o.push(B)
+          var F = U[Z];
+          isNaN(F) || false !== o.indexOf(F) || o.push(F)
         }
       }
       return o
@@ -1689,12 +1689,12 @@
       } catch (e) {
         returnfalse
       }
-    }, iB = y, iF = rH, iV = {
+    }, iF = y, iB = rH, iV = {
       cool: function() {
-        return iF([iB.hsl(180, 1, .9), iB.hsl(250, .7, .4)])
+        return iB([iF.hsl(180, 1, .9), iF.hsl(250, .7, .4)])
       },
       hot: function() {
-        return iF(["#000", "#f00", "#ff0", "#fff"]).mode("rgb")
+        return iB(["#000", "#f00", "#ff0", "#fff"]).mode("rgb")
       }
     }, iH = {
       OrRd: ["#fff7ec", "#fee8c8", "#fdd49e", "#fdbb84", "#fc8d59", "#ef6548", "#d7301f", "#b30000", "#7f0000"],

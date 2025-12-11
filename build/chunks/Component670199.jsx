@@ -1,7 +1,7 @@
 /** Chunk was on 65652 **/
 /** chunk id: 670199, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => N
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,18 +18,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk420418 = require("./420418.js");
 
-function h(n) {
+function N(n) {
   var t, e;
   let {
     classification: a,
-    isDsaEligible: h = false,
-    isSpam: N = false,
+    isDsaEligible: N = false,
+    isSpam: h = false,
     isCoppa: C = false,
     appealIngestionType: j,
     className: _,
     onClose: E,
     onNext: I
-  } = n, v = (0, d.n)(), T = null != (t = null == a ? true : a.explainer_link) ? t : "", S = null != a && null != a.flagged_content && a.flagged_content.length > 0, A = (0, c.c7)(null == a ? true : a.description), k = !N && !C && (null == j || j === o.j4.IN_APP), Z = null != a && ((0, c.FB)(a) || S);
+  } = n, v = (0, d.n)(), T = null != (t = null == a ? true : a.explainer_link) ? t : "", S = null != a && null != a.flagged_content && a.flagged_content.length > 0, A = (0, c.c7)(null == a ? true : a.description), k = !h && !C && (null == j || j === o.j4.IN_APP), Z = null != a && ((0, c.FB)(a) || S);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(l.xBx, {
       "data-migration-pending": true,
@@ -71,7 +71,7 @@ function h(n) {
         url: g.sQ.AGE_VERIFICATION_LINK,
         text: u.intl.string(u.t["gJs+kf"]),
         onClick: () => v(g.n0.ClickAgeVerificationLink)
-      }), N && !C && (0, i.jsx)(x.Z, {
+      }), h && !C && (0, i.jsx)(x.Z, {
         url: g.sQ.SPAM_LINK,
         text: u.intl.string(u.t["PaNS+I"]),
         onClick: () => v(g.n0.ClickSpamWebformLink)
@@ -79,7 +79,7 @@ function h(n) {
         text: u.intl.string(u.t["Vtyn/7"]),
         url: T,
         onClick: () => v(g.n0.ClickLearnMoreLink)
-      }), k && h && (0, i.jsx)(l.Text, {
+      }), k && N && (0, i.jsx)(l.Text, {
         className: p.learnMore,
         variant: "text-xs/normal",
         children: u.intl.format(u.t.WMUgCX, {})

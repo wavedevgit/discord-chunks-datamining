@@ -256,7 +256,7 @@ function ed(e) {
     categories: eD,
     availableSounds: ex,
     soundCounts: eL
-  } = (0, Z.ZP)(a, {}, ep), [ej, eM] = i.useState([]), ek = (0, Z.FS)(eD, ej, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eG, eZ] = i.useState(false), eB = i.useMemo(() => ek.filter(e => e.items.length > 0), [ek]), eF = i.useMemo(() => eB.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eB]), eV = !eT && J && false !== eF, eH = i.useMemo(() => eV ? [0, 0, 8, 0] : [0, 0, 0, 0], [eV]), eY = C.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = D.ZP.canUseCustomCallSounds(eI), eq = i.useCallback(e => {
+  } = (0, Z.ZP)(a, {}, ep), [ej, eM] = i.useState([]), ek = (0, Z.FS)(eD, ej, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), [eG, eZ] = i.useState(false), eF = i.useMemo(() => ek.filter(e => e.items.length > 0), [ek]), eB = i.useMemo(() => eF.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eF]), eV = !eT && J && false !== eB, eH = i.useMemo(() => eV ? [0, 0, 8, 0] : [0, 0, 0, 0], [eV]), eY = C.T4.useSetting(), eW = i.useMemo(() => new Set(eY), [eY]), eK = null == a, ez = D.ZP.canUseCustomCallSounds(eI), eq = i.useCallback(e => {
     eW.has(e) ? eW.delete(e) : eW.add(e), C.T4.updateSetting(Array.from(eW))
   }, [eW]), eQ = i.useCallback((e, t, n, r) => {
     if (null != S && !R) return S(e, n);
@@ -285,7 +285,7 @@ function ed(e) {
         return g(), (0, H.Z)(e.item.guild.id)
     }
   }, [eE, eQ, g]), eJ = i.useCallback((e, n, i, s, l) => {
-    let c = eB[i.sectionIndex],
+    let c = eF[i.sectionIndex],
       u = J && el(c.categoryInfo, eT, t) && eV;
     return (0, r.jsx)("ul", $(X({}, n), {
       className: o()(q.soundRow, {
@@ -313,14 +313,14 @@ function ed(e) {
         inExpressionPicker: e_
       }, t))
     }), "row-".concat(n["aria-rowindex"]))
-  }, [eB, J, eT, t, Q, eX, a, eK, ez, eA, eE, er, eV, e_, eh]), e$ = i.useCallback((e, t) => {
+  }, [eF, J, eT, t, Q, eX, a, eK, ez, eA, eE, er, eV, e_, eh]), e$ = i.useCallback((e, t) => {
     if (e <= 0 || !J) returnfalse;
-    let n = eB[e],
-      r = eB[e - 1],
+    let n = eF[e],
+      r = eF[e - 1],
       i = el(n.categoryInfo, eT, t),
       a = el(r.categoryInfo, eT, t);
     return i && !a
-  }, [eB, J, eT]), e0 = i.useCallback(() => {
+  }, [eF, J, eT]), e0 = i.useCallback(() => {
     let e = L.Z.getSoundById(eo);
     null != e && eS(e)
   }, []), e1 = i.useCallback(() => {
@@ -330,9 +330,9 @@ function ed(e) {
       onClick: e0
     })
   }, [e0]), e3 = i.useCallback(e => e$(e, t) ? ei : en, [t, e$]), e2 = i.useCallback(e => {
-    let t = e === eB.length - 1;
-    return eV && t ? 50 : eV && e === eF ? 20 : 0
-  }, [eB.length, eV, eF]), e4 = i.useCallback((e, t) => (0, r.jsx)("div", {
+    let t = e === eF.length - 1;
+    return eV && t ? 50 : eV && e === eB ? 20 : 0
+  }, [eF.length, eV, eB]), e4 = i.useCallback((e, t) => (0, r.jsx)("div", {
     children: t
   }, e), []), e5 = i.useCallback((e, n) => {
     let i = "".concat(e.key),
@@ -360,20 +360,20 @@ function ed(e) {
       enablePickerUpsellPremiumBrandRefresh: eh
     }, "header-".concat(i))
   }, [eW, eq, t, e$, J, eT, eV, eh]), e8 = i.useCallback((e, t) => {
-    let n = t === eB.length - 1,
-      i = t === eF;
+    let n = t === eF.length - 1,
+      i = t === eB;
     return eV && n ? (0, r.jsx)("div", {
       className: o()(q.lastSectionFooter, {
         [q.nitroLocked]: i,
         [q.brandRefresh]: eh
       })
-    }) : eV && t === eF ? (0, r.jsx)("div", {
+    }) : eV && t === eB ? (0, r.jsx)("div", {
       className: o()(q.smallPaddingFooter, {
         [q.nitroLocked]: i,
         [q.brandRefresh]: eh
       })
     }) : null
-  }, [eF, eV, eB.length, eh]), e6 = i.useCallback(e => eM((0, G.cK)(e, ex, eI, a, eE)), [a, eI, ex, eE]), e7 = i.useCallback(e => {
+  }, [eB, eV, eF.length, eh]), e6 = i.useCallback(e => eM((0, G.cK)(e, ex, eI, a, eE)), [a, eI, ex, eE]), e7 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -402,7 +402,7 @@ function ed(e) {
       color: "currentColor",
       className: q.settingsIcon
     })
-  }), [e_, e7]), te = i.useCallback(e => (0, r.jsx)(B.Z, {
+  }), [e_, e7]), te = i.useCallback(e => (0, r.jsx)(F.Z, {
     soundboardListRef: e,
     categories: eD,
     shouldUpsellLockedCategories: eV,
@@ -434,7 +434,7 @@ function ed(e) {
     return null
   }, [e1, eV, ew, eU, eG]), tn = i.useCallback(e => {
     var t;
-    return (null == e ? true : e.item.type) !== j.vB.SOUND ? null : (0, r.jsx)(F.Z, {
+    return (null == e ? true : e.item.type) !== j.vB.SOUND ? null : (0, r.jsx)(B.Z, {
       closePicker: g,
       soundboardSound: null != (t = null == e ? true : e.item.sound) ? t : null
     })
@@ -482,7 +482,7 @@ function ed(e) {
       onLearnMore: g,
       onDisplay: ta
     }) : true, (0, r.jsx)(y.Z, {
-      categories: eB,
+      categories: eF,
       collapsedCategories: eW,
       containerWidth: d,
       store: E.Wq,

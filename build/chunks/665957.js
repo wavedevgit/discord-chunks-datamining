@@ -15,9 +15,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk709054 = require("./709054.js");
 
 function f(e, t) {
-  let n = (0, i.Wu)([o.Z], () => {
+  let n = (0, i.Wu)([a.Z], () => {
       var t;
-      return null != (t = o.Z.getAppliedGuildBoostsForGuild(e)) ? t : []
+      return null != (t = a.Z.getAppliedGuildBoostsForGuild(e)) ? t : []
     }, [e]),
     f = r.useMemo(() => [...n].sort((e, t) => d.default.extractTimestamp(e.id) < d.default.extractTimestamp(t.id) ? 1 : false).slice(0, t), [n, t]),
     p = (0, i.Wu)([c.ZP], () => {
@@ -32,7 +32,7 @@ function f(e, t) {
   let m = r.useMemo(() => p.length > 0 ? {
     [e]: p
   } : {}, [e, p]);
-  (0, a.$)(m, "GuildPowerupsRecentActivity");
+  (0, o.$)(m, "GuildPowerupsRecentActivity");
   let g = (0, i.e7)([u.Z], () => {
     var t;
     return null == (t = u.Z.getGuild(e)) ? true : t.premiumSubscriberCount

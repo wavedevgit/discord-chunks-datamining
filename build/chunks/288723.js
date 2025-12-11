@@ -50,15 +50,15 @@ let d = {
           }),
           Z = k ? M ? l.F2 : l.t$ : M ? l.I : l.we;
         N[U] > P[U] && (Z = (0, r.Z)(Z));
-        var B = (0, r.Z)(Z),
-          F = [];
-        if (f && F.push(G[j] <= 0), _ && F.push(G[Z] <= 0, G[B] <= 0), F.every(function(e) {
+        var F = (0, r.Z)(Z),
+          B = [];
+        if (f && B.push(G[j] <= 0), _ && B.push(G[Z] <= 0, G[F] <= 0), B.every(function(e) {
             return e
           })) {
           D = L, w = false;
           break
         }
-        R.set(L, F)
+        R.set(L, B)
       }
       if (w)
         for (var V = O ? 3 : 1, H = function(e) {

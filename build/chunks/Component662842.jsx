@@ -288,7 +288,7 @@ function D(e) {
       }, e.id)), $]
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: a()(R.title, R.live),
       children: W
     }), (0, r.jsxs)("div", {

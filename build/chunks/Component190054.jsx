@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk572004 = require("./572004.js"),
@@ -34,20 +34,20 @@ function f(e) {
       }
       return c
     }(e, ["chunks", "className", "onCopy"]);
-  let y = c.useMemo(() => null == o ? true : o.join(" "), [o]),
-    [O, j] = c.useState(false),
+  let O = c.useMemo(() => null == o ? true : o.join(" "), [o]),
+    [y, j] = c.useState(false),
     h = c.useCallback(() => {
-      (0, a.JG)(y, () => {
+      (0, a.JG)(O, () => {
         j(true), null == p || p()
       })
-    }, [p, y]),
-    m = O ? s.owK : s.TIy;
+    }, [p, O]),
+    g = y ? s.owK : s.TIy;
   return (0, n.jsx)(s.P3F, {
-    className: i()(d.container, f),
+    className: l()(d.container, f),
     onClick: h,
-    children: (0, n.jsx)(l.u, {
-      text: O ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
-      children: (0, n.jsx)(m, (t = function(e) {
+    children: (0, n.jsx)(i.u, {
+      text: y ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
+      children: (0, n.jsx)(g, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -66,7 +66,7 @@ function f(e) {
         return e
       }({}, b), r = r = {
         size: "xxs",
-        color: O ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : s.TVs.colors.INTERACTIVE_TEXT_DEFAULT
+        color: y ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : s.TVs.colors.INTERACTIVE_TEXT_DEFAULT
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

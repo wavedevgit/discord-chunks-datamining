@@ -42,7 +42,7 @@ function L(e) {
   let {
     application: t,
     guild: n
-  } = e, l = (0, v.YB)(n.id), a = (0, v.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([b.Z], () => a.map(e => b.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+  } = e, l = (0, v.YB)(n.id), a = (0, v.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([p.Z], () => a.map(e => p.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: D.intl.string(D.t.p2Rsdl),
     items: [{
       description: D.intl.string(D.t.zbO7fU),
@@ -83,7 +83,7 @@ function k(e) {
     application: t
   } = e, {
     teams: n
-  } = (0, f.Z)({
+  } = (0, m.Z)({
     refreshOnDepChange: false
   }), i = n.find(e => {
     var n;
@@ -133,15 +133,15 @@ function M(e) {
     } = e,
     d = null != o && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
     {
-      currentTab: f,
+      currentTab: m,
       setCurrentTab: v
     } = (0, T.dw)(),
     O = (0, j.f)(),
     S = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
     R = (0, y.Z)(n.id),
-    G = null != n && (0, p.eM)(n, S);
+    G = null != n && (0, b.eM)(n, S);
   if (!O) return (0, r.jsx)(a.$jN, {});
-  switch (f) {
+  switch (m) {
     case T.ue.BASIC_INFO:
       t = (0, r.jsx)(I.Z, {
         guild: n
@@ -163,7 +163,7 @@ function M(e) {
       });
       break;
     default:
-      (0, x.vE)(f)
+      (0, x.vE)(m)
   }
   return (0, r.jsxs)("div", {
     className: A.container,
@@ -187,7 +187,7 @@ function M(e) {
         children: [(0, r.jsxs)(a.njP, {
           className: A.tabBar,
           "aria-label": D.intl.string(D.t["+1H47t"]),
-          selectedItem: f,
+          selectedItem: m,
           type: "top",
           look: "brand",
           onItemSelect: v,
@@ -218,7 +218,7 @@ function M(e) {
             children: (0, r.jsx)(a.Button, {
               disabled: R,
               onClick: () => {
-                let e = b.Z.getEveryoneRole(n);
+                let e = p.Z.getEveryoneRole(n);
                 c.Z.close();
                 let t = {
                   [e.id]: e
@@ -228,7 +228,7 @@ function M(e) {
                   roles: t,
                   initialTab: "role_subscriptions",
                   returnToSection: w.pNK.ROLE_SUBSCRIPTIONS
-                }), (0, C.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
+                }), (0, C.be)(n.id), (0, f.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
               },
               text: D.intl.string(D.t.vM81yY),
               size: "sm",

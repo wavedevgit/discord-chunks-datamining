@@ -11,7 +11,7 @@ var Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t) {
-  if (r.Z.isNotificationDisabled(l.n0.ActivityUserJoin)) return null;
+  if (r.Z.isNotificationDisabled(a.n0.ActivityUserJoin)) return null;
   let n = e.username,
     c = s.intl.format(s.t["Yk+uYG"], {
       username: ""
@@ -21,8 +21,8 @@ function c(e, t) {
     {
       trackView: f,
       trackClick: h
-    } = (0, a.Rg)(l.n0.ActivityUserJoin, {
-      notif_type: l.n0.ActivityUserJoin,
+    } = (0, l.Rg)(a.n0.ActivityUserJoin, {
+      notif_type: a.n0.ActivityUserJoin,
       notif_user_id: e.id,
       activity_type: o.mFx.JOIN,
       activity_name: t.name

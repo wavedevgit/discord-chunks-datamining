@@ -126,7 +126,7 @@ function Z(e) {
   T.hasOwnProperty(t) || (T[t] = null)
 }
 
-function B(e) {
+function F(e) {
   let {
     buildId: t,
     sizeKB: n
@@ -134,7 +134,7 @@ function B(e) {
   T[t] = n
 }
 
-function F(e) {
+function B(e) {
   let {
     buildId: t
   } = e;
@@ -214,8 +214,8 @@ let z = new K(Chunk570140.Z, {
   APPLICATION_BUILD_FETCH_SUCCESS: U,
   APPLICATION_BUILD_NOT_FOUND: G,
   APPLICATION_BUILD_SIZE_FETCH_START: Z,
-  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: B,
-  APPLICATION_BUILD_SIZE_FETCH_FAIL: F,
+  APPLICATION_BUILD_SIZE_FETCH_SUCCESS: F,
+  APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
   APPLICATION_BRANCHES_FETCH_SUCCESS: V,
   APPLICATION_BRANCHES_FETCH_FAIL: H,
   CONNECTION_CLOSED: Y,

@@ -105,11 +105,11 @@ function y(e) {
       children: g.intl.string(g.t["2a50fF"])
     })]
   });
-  return y ? (0, r.jsx)(a.W, {
+  return y ? (0, r.jsx)(o.W, {
     component: "div",
     className: j.saveNoticeContainer,
     children: w && (0, r.jsx)(c.oXn, {
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(a.Z, {
         onSave: () => {
           m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, v(x({}, (0, u.hH)(t)), {
             action_type: b.jQ.BAN,

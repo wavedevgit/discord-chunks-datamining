@@ -58,7 +58,7 @@ function C(e) {
   let {
     guild: t,
     channel: i
-  } = e, l = (0, p.Mf)(i.id);
+  } = e, l = (0, b.Mf)(i.id);
   return "null" === i.id ? (0, r.jsx)("div", {
     className: a()(j.categoryRow, j.uncategorized),
     children: (0, r.jsx)(c.Text, {
@@ -83,7 +83,7 @@ function C(e) {
         }))
       })
     },
-    onClick: e => (e.stopPropagation(), (0, u.s)(t.id, i.id) ? (0, f.pt)(i.id) : (0, c.ZDy)(async () => {
+    onClick: e => (e.stopPropagation(), (0, u.s)(t.id, i.id) ? (0, m.pt)(i.id) : (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("35641").then(n.bind(n, 89216));
@@ -123,10 +123,10 @@ let y = Chunk473749.memo(function() {
       channel: t,
       category: i,
       guild: l,
-      isFirstChannel: m,
+      isFirstChannel: f,
       isLastChannel: C,
       tooltipDirection: E = "right"
-    } = e, I = (0, p.Mf)(t.id, i.id), S = (0, p.t4)(t.id, i.id), _ = (0, p.EH)(t.id, i.id), T = (0, p.lL)(l.id, i.id), P = null != (0, b.Z)(l).find(e => e.id === t.id);
+    } = e, I = (0, b.Mf)(t.id, i.id), S = (0, b.t4)(t.id, i.id), _ = (0, b.EH)(t.id, i.id), T = (0, b.lL)(l.id, i.id), P = null != (0, p.Z)(l).find(e => e.id === t.id);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.u, {
         asContainer: true,
@@ -135,12 +135,12 @@ let y = Chunk473749.memo(function() {
         position: E,
         children: (0, r.jsxs)(c.P3F, {
           className: a()(j.channelRow, {
-            [j.firstChannel]: m,
+            [j.firstChannel]: f,
             [j.lastChannel]: C,
             [j.disabled]: S
           }),
           onClick: e => {
-            if (!S) return e.stopPropagation(), (0, u.s)(l.id, t.id) ? (0, f.pt)(t.id) : (0, c.ZDy)(async () => {
+            if (!S) return e.stopPropagation(), (0, u.s)(l.id, t.id) ? (0, m.pt)(t.id) : (0, c.ZDy)(async () => {
               let {
                 default: e
               } = await n.e("35641").then(n.bind(n, 89216));
@@ -237,7 +237,7 @@ function I(e) {
       isLastChannel: t[l.channel.id].length - 1 === i,
       tooltipDirection: a ? "right" : "top"
     }, s.channel.id)
-  }, [t, n, a]), c = (0, m.tn)(n.id, t, 64);
+  }, [t, n, a]), c = (0, f.tn)(n.id, t, 64);
   return (0, r.jsx)("div", {
     className: l,
     children: c.map((e, t) => {

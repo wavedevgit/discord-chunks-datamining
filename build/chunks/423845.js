@@ -38,8 +38,8 @@ var Chunk620014 = require("./620014.js"),
   U = "[object RegExp]",
   G = "[object Set]",
   Z = "[object String]",
-  B = "[object Symbol]",
-  F = "[object WeakMap]",
+  F = "[object Symbol]",
+  B = "[object WeakMap]",
   V = "[object ArrayBuffer]",
   H = "[object DataView]",
   Y = "[object Float32Array]",
@@ -64,18 +64,18 @@ function et(e, t, n, P, R, w) {
     if (D = m(e), !j) return c(e, D)
   } else {
     var Z = _(e),
-      B = Z == x || Z == L;
+      F = Z == x || Z == L;
     if (b(e)) return l(e, j);
-    if (Z == k || Z == N || B && !R) {
-      if (D = M || B ? {} : g(e), !j) return M ? d(e, s(D, e)) : u(e, o(D, e))
+    if (Z == k || Z == N || F && !R) {
+      if (D = M || F ? {} : g(e), !j) return M ? d(e, s(D, e)) : u(e, o(D, e))
     } else {
       if (!ee[Z]) return R ? e : {};
       D = h(e, Z, j)
     }
   }
   w || (w = new r);
-  var F = w.get(e);
-  if (F) return F;
+  var B = w.get(e);
+  if (B) return B;
   w.set(e, D), v(e) ? e.forEach(function(r) {
     D.add(et(r, t, n, r, e, w))
   }) : y(e) && e.forEach(function(r, i) {
@@ -87,4 +87,4 @@ function et(e, t, n, P, R, w) {
     H && (r = e[i = r]), a(D, i, et(r, t, n, i, e, w))
   }), D
 }
-ee[N] = ee[P] = ee[V] = ee[H] = ee[R] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[Z] = ee[B] = ee[Q] = ee[X] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[F] = false, module.exports = et
+ee[N] = ee[P] = ee[V] = ee[H] = ee[R] = ee[w] = ee[Y] = ee[W] = ee[K] = ee[z] = ee[q] = ee[j] = ee[M] = ee[k] = ee[U] = ee[G] = ee[Z] = ee[F] = ee[Q] = ee[X] = ee[J] = ee[$] = true, ee[D] = ee[x] = ee[B] = false, module.exports = et

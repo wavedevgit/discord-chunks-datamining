@@ -107,15 +107,15 @@ module.exports = function(e) {
         U = t.get(R) || t.get("unstyled"),
         G = U.wrapper,
         Z = U.element || t.get("unstyled").element,
-        B = N.getDepth(),
-        F = "";
-      if (r && (F = r(N)), "li" === Z) {
-        var V = C !== G || null === T || B > T;
-        F = f(F, _(R, B, V, j))
+        F = N.getDepth(),
+        B = "";
+      if (r && (B = r(N)), "li" === Z) {
+        var V = C !== G || null === T || F > T;
+        B = f(B, _(R, F, V, j))
       }
       var H = D || l,
         Y = {
-          className: F,
+          className: B,
           "data-block": true,
           "data-editor": m,
           "data-offset-key": M,

@@ -26,7 +26,7 @@ function j(e) {
   var t, n;
   let {
     guildId: i
-  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
+  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([f.default], () => f.default.getCurrentUser()), {
     onAdoptTag: O,
     isAdopting: C
   } = (0, u.Z)(i), y = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
@@ -36,12 +36,12 @@ function j(e) {
       className: x.section,
       variant: "text-xs/medium",
       color: "text-muted",
-      children: y ? h.intl.string(b.default["6xBCpG"]) : h.intl.string(b.default.eSRKez)
+      children: y ? h.intl.string(p.default["6xBCpG"]) : h.intl.string(p.default.eSRKez)
     }), (0, r.jsx)("div", {
       className: x.divider
     }), (0, r.jsxs)("div", {
       className: l()(x.section, x.body),
-      children: [(0, r.jsx)(p.l, {
+      children: [(0, r.jsx)(b.l, {
         avatar: (0, r.jsx)(o.Z, {
           user: v,
           guildId: i,
@@ -54,7 +54,7 @@ function j(e) {
           guildTag: j.profile.tag,
           inline: false
         }),
-        username: f.ZP.getName(i, null, v),
+        username: m.ZP.getName(i, null, v),
         message: h.intl.string(h.t["6OSasb"])
       }), (0, r.jsx)(s.Button, {
         variant: "primary",

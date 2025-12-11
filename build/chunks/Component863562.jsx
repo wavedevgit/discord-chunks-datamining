@@ -2,7 +2,7 @@
 /** chunk id: 863562, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,48 +17,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk419922 = require("./419922.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk596288 = require("./596288.js");
-let b = e => {
+let p = e => {
   let {
     className: t,
     isDisabled: l,
-    sticker: b,
+    sticker: p,
     canManageSticker: h
   } = e, [x, j] = i.useState(false), [v, O] = (0, d.Z)(null, 4e3), C = async () => {
     O(null), j(true);
     try {
-      await (0, g.Um)(b)
+      await (0, g.Um)(p)
     } catch (e) {
       O(e.body.message), j(false)
     }
-  }, y = u.ZP.useUserTag(b.user);
+  }, y = u.ZP.useUserTag(p.user);
   return (0, r.jsx)(s.u, {
     forceOpen: null != v,
     text: v,
     asContainer: true,
     children: (0, r.jsxs)("div", {
-      className: a()(p.wrapper, t, {
-        [p.wrapperDisabled]: l
+      className: a()(b.wrapper, t, {
+        [b.wrapperDisabled]: l
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(p.content, {
-          [p.contentRemoving]: x
+        className: a()(b.content, {
+          [b.contentRemoving]: x
         }),
-        children: [(0, r.jsx)(m.Z, {
-          className: p.sticker,
+        children: [(0, r.jsx)(f.Z, {
+          className: b.sticker,
           size: 72,
-          sticker: b
+          sticker: p
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(o.Text, {
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-xs/semibold",
-            className: p.stickerName,
-            children: b.name
-          }), null != b.user && (0, r.jsxs)("div", {
-            className: p.user,
+            className: b.stickerName,
+            children: p.name
+          }), null != p.user && (0, r.jsxs)("div", {
+            className: b.user,
             children: [(0, r.jsx)(c.Z, {
-              className: p.userAvatar,
+              className: b.userAvatar,
               size: o.EFr.SIZE_16,
-              user: b.user
+              user: p.user
             }), (0, r.jsx)(o.Text, {
               color: "text-default",
               variant: "text-xs/normal",
@@ -66,9 +66,9 @@ let b = e => {
             })]
           })]
         }), h ? (0, r.jsxs)("div", {
-          className: p.actions,
+          className: b.actions,
           children: [(0, r.jsx)(o.P3F, {
-            className: p.action,
+            className: b.action,
             onClick: () => {
               (0, o.ZDy)(async () => {
                 let {
@@ -92,30 +92,30 @@ let b = e => {
                   }
                   return e
                 }({
-                  sticker: b,
-                  guildId: b.guild_id
+                  sticker: p,
+                  guildId: p.guild_id
                 }, t))
               })
             },
-            "aria-label": f.intl.string(f.t.bt75uw),
+            "aria-label": m.intl.string(m.t.bt75uw),
             children: (0, r.jsx)(o.vdY, {
               size: "xs",
               color: "currentColor",
-              className: p.icon
+              className: b.icon
             })
           }), (0, r.jsx)(o.P3F, {
-            className: a()(p.action, p.actionRemove),
+            className: a()(b.action, b.actionRemove),
             onClick: C,
-            "aria-label": f.intl.string(f.t.N86XcP),
+            "aria-label": m.intl.string(m.t.N86XcP),
             children: (0, r.jsx)(o.Dio, {
               size: "md",
               color: "currentColor",
-              className: p.icon
+              className: b.icon
             })
           })]
         }) : null]
       }), x && (0, r.jsx)(o.$jN, {
-        className: p.spinner
+        className: b.spinner
       })]
     })
   })

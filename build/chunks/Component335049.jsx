@@ -145,7 +145,7 @@ function T(e) {
       className: a()(I.channelIcon, I.image)
     }), (0, i.jsx)(u.Text, {
       className: I.roleName,
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/normal",
       children: p
     }), null != g ? (0, i.jsxs)(u.Text, {
@@ -193,7 +193,7 @@ function Z(e) {
       color: null != (t = p.colorString) ? t : N.Pbq
     }), (0, i.jsx)(u.Text, {
       className: I.roleName,
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/normal",
       children: p.name
     }), s ? (0, i.jsx)(k, {
@@ -223,7 +223,7 @@ function _(e) {
       size: u.EFr.SIZE_24
     }), (0, i.jsx)(u.Text, {
       className: I.roleName,
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/normal",
       children: null != s ? s : o.username
     }), d ? null : (0, i.jsx)(u.Text, {

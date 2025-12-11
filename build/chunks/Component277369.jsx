@@ -19,21 +19,21 @@ function g(e) {
   let {
     guildId: t,
     application: g
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), f = (0, i.e7)([c.default], () => c.default.getCurrentUser()), p = (0, d.mY)();
-  if (null == m || !(0, s.eM)(m, f)) return null;
-  let b = g.team;
+  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, i.e7)([c.default], () => c.default.getCurrentUser()), b = (0, d.mY)();
+  if (null == f || !(0, s.eM)(f, m)) return null;
+  let p = g.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
-      color: p ? "text-muted" : "text-default",
-      children: null != b ? u.intl.format(u.t.erxwWA, {
-        teamName: b.name
+      color: b ? "text-muted" : "text-default",
+      children: null != p ? u.intl.format(u.t.erxwWA, {
+        teamName: p.name
       }) : u.intl.string(u.t.FGzLkK)
     }), (0, r.jsx)(a.LZC, {
       size: 16
     }), (0, r.jsx)(l.zxk, {
-      text: null != b ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
-      variant: null != b ? "secondary" : "primary",
+      text: null != p ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
+      variant: null != p ? "secondary" : "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {
           let {
@@ -73,7 +73,7 @@ function g(e) {
           }
         })
       },
-      disabled: p
+      disabled: b
     })]
   })
 }

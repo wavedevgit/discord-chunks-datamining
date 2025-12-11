@@ -109,7 +109,7 @@ function Z(e) {
   return w.clearGuildId(t)
 }
 
-function B(e) {
+function F(e) {
   e.channels.forEach(e => {
     let {
       guildId: t
@@ -118,7 +118,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   var t;
   let {
     channelId: n
@@ -313,7 +313,7 @@ let eu = new ec(Chunk570140.Z, {
   CATEGORY_EXPAND_ALL: Z,
   CATEGORY_EXPAND: ee,
   CHANNEL_ACK: Y,
-  CHANNEL_COLLAPSE: F,
+  CHANNEL_COLLAPSE: B,
   CHANNEL_CREATE: L,
   CHANNEL_DELETE: L,
   CHANNEL_LOCAL_ACK: Y,
@@ -354,7 +354,7 @@ let eu = new ec(Chunk570140.Z, {
   GUILD_UPDATE: x,
   IMPERSONATE_STOP: Z,
   IMPERSONATE_UPDATE: Z,
-  LOAD_CHANNELS: B,
+  LOAD_CHANNELS: F,
   LOAD_MESSAGES_SUCCESS: Y,
   MESSAGE_ACK: Y,
   MESSAGE_CREATE: V,

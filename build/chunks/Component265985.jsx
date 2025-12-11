@@ -98,7 +98,7 @@ let v = 440,
           }), (0, r.jsxs)("div", {
             children: [(0, r.jsx)(l.Text, {
               variant: "text-md/medium",
-              color: "header-primary",
+              color: "text-strong",
               className: O.emojiName,
               children: y.intl.string(y.t.PrKk4n)
             }), (0, r.jsx)(l.Text, {

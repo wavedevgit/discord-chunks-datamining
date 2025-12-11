@@ -1,7 +1,7 @@
 /** Chunk was on 38062 **/
 /** chunk id: 409110, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,31 +17,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk405122 = require("./405122.js");
 let h = "expanded-area";
 
-function p(e) {
+function j(e) {
   let {
     attachments: t,
     role: n,
     roleLocked: i
-  } = e, [s, m] = r.useState(false);
+  } = e, [l, m] = r.useState(false);
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsxs)(l.P3F, {
+    children: [(0, a.jsxs)(s.P3F, {
       className: f.viewContents,
       onClick: () => {
         m(e => !e)
       },
-      "aria-expanded": s,
+      "aria-expanded": l,
       "aria-controls": h,
-      children: [(0, a.jsx)(l.Text, {
+      children: [(0, a.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: s ? x.intl.string(x.t.DKNxgB) : x.intl.string(x.t.ESEKua)
+        children: l ? x.intl.string(x.t.DKNxgB) : x.intl.string(x.t.ESEKua)
       }), (0, a.jsx)(o.Z, {
         className: f.caretIcon,
-        direction: s ? o.Z.Directions.UP : o.Z.Directions.DOWN
+        direction: l ? o.Z.Directions.UP : o.Z.Directions.DOWN
       })]
-    }), (0, a.jsx)(l.LZC, {
+    }), (0, a.jsx)(s.LZC, {
       size: 12
-    }), s && (0, a.jsxs)("ul", {
+    }), l && (0, a.jsxs)("ul", {
       className: f.contentsContainer,
       id: h,
       children: [(0, a.jsx)(d.Z, {
@@ -68,21 +68,21 @@ function p(e) {
   })
 }
 
-function j(e) {
+function p(e) {
   var t;
   let {
     listing: n
-  } = e, r = null != (t = n.attachments) ? t : [], l = (0, i.e7)([s.Z], () => {
+  } = e, r = null != (t = n.attachments) ? t : [], s = (0, i.e7)([l.Z], () => {
     var e;
-    return s.Z.getRole(n.guild_id, null != (e = n.role_id) ? e : m.lds)
+    return l.Z.getRole(n.guild_id, null != (e = n.role_id) ? e : m.lds)
   }), o = !n.has_entitlement;
-  return 0 === r.length && null == l ? null : 0 === r.length && null != l ? (0, a.jsx)(u.Z, {
-    role: l,
+  return 0 === r.length && null == s ? null : 0 === r.length && null != s ? (0, a.jsx)(u.Z, {
+    role: s,
     textVariant: "text-md/medium",
     locked: o
-  }) : (0, a.jsx)(p, {
+  }) : (0, a.jsx)(j, {
     attachments: r,
-    role: l,
+    role: s,
     roleLocked: o
   })
 }

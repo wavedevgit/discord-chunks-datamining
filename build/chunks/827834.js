@@ -142,12 +142,12 @@ exports.default = function() {
         }
       },
       Z = "offset:",
-      B = {
+      F = {
         type: "literal",
         value: "offset:",
         description: '"offset:"'
       },
-      F = function(e) {
+      B = function(e) {
         return e
       },
       V = function(e, t) {
@@ -362,7 +362,7 @@ exports.default = function() {
 
     function eU() {
       var e;
-      return (e = eG()) === i && (e = eZ()) === i && (e = eB()) === i && (e = eF()), e
+      return (e = eG()) === i && (e = eZ()) === i && (e = eF()) === i && (e = eB()), e
     }
 
     function eG() {
@@ -375,12 +375,12 @@ exports.default = function() {
       return e = eO, t.substr(eO, 6) === N ? (n = N, eO += 6) : (n = i, 0 === eA && eP(P)), n !== i && ez() !== i ? (44 === t.charCodeAt(eO) ? (r = h, eO++) : (r = i, 0 === eA && eP(g)), r !== i && ez() !== i && (a = eW()) !== i ? (ev = e, e = n = R(a)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
-    function eB() {
+    function eF() {
       var e, n, r, a;
       return e = eO, t.substr(eO, 13) === w ? (n = w, eO += 13) : (n = i, 0 === eA && eP(D)), n !== i && ez() !== i ? (44 === t.charCodeAt(eO) ? (r = h, eO++) : (r = i, 0 === eA && eP(g)), r !== i && ez() !== i && (a = eW()) !== i ? (ev = e, e = n = x(a)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
-    function eF() {
+    function eB() {
       var e, n, r, a, o;
       if (e = eO, t.substr(eO, 6) === L ? (n = L, eO += 6) : (n = i, 0 === eA && eP(j)), n !== i)
         if (ez() !== i)
@@ -409,7 +409,7 @@ exports.default = function() {
 
     function eY() {
       var e, n, r;
-      return e = eO, t.substr(eO, 7) === Z ? (n = Z, eO += 7) : (n = i, 0 === eA && eP(B)), n !== i && ez() !== i && (r = eX()) !== i ? (ev = e, e = n = F(r)) : (eO = e, e = l), e
+      return e = eO, t.substr(eO, 7) === Z ? (n = Z, eO += 7) : (n = i, 0 === eA && eP(F)), n !== i && ez() !== i && (r = eX()) !== i ? (ev = e, e = n = B(r)) : (eO = e, e = l), e
     }
 
     function eW() {

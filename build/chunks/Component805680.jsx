@@ -122,8 +122,8 @@ let q = Chunk957825.Om + Chunk149203.Su.MEDIUM,
         }), (0, L.hr)(i)
       },
       "aria-current": t ? "page" : true,
-      className: o()(n, F.navButton, F.navItem, {
-        [F.navButtonActive]: t
+      className: o()(n, B.navButton, B.navItem, {
+        [B.navButtonActive]: t
       })
     }))
   }),
@@ -256,14 +256,14 @@ function J(e) {
     eR = i.useCallback((e, t) => null == W ? true : W(e, "soundboard_picker", t), [W]),
     ew = (null == (s = z.soundmoji) ? true : s.allowSending) === true && null != W,
     eD = "left" === $ ? "right" : "left",
-    ex = null != ee ? ee : "left" === $ ? F.positionLayerDefaultAlignLeft : F.positionLayerDefaultAlignRight,
+    ex = null != ee ? ee : "left" === $ ? B.positionLayerDefaultAlignLeft : B.positionLayerDefaultAlignRight,
     eL = eb ? (0, r.jsx)(Q, {
       id: U._3,
       "aria-controls": U.vO,
       "aria-selected": ec === j.X1.GIF,
       isActive: ec === j.X1.GIF,
       viewType: j.X1.GIF,
-      children: B.intl.string(B.t["6gUTsS"])
+      children: F.intl.string(F.t["6gUTsS"])
     }) : null,
     ej = ey ? (0, r.jsx)(Q, {
       id: Z.ED,
@@ -273,8 +273,8 @@ function J(e) {
       autoFocus: !eu,
       viewType: j.X1.STICKER,
       children: (0, r.jsx)("div", {
-        className: F.stickersNavItem,
-        children: B.intl.string(B.t.nf1s3u)
+        className: B.stickersNavItem,
+        children: F.intl.string(F.t.nf1s3u)
       })
     }) : null,
     eM = (0, r.jsx)(Q, {
@@ -283,12 +283,12 @@ function J(e) {
       "aria-selected": ec === j.X1.EMOJI,
       isActive: ec === j.X1.EMOJI,
       viewType: j.X1.EMOJI,
-      children: B.intl.string(B.t.Xu3wE3)
+      children: F.intl.string(F.t.Xu3wE3)
     });
   return (0, r.jsx)(h.Z, {
     section: M.jXE.EXPRESSION_PICKER,
     children: (0, r.jsx)(I.W5, {
-      className: o()(F.positionLayer, ex),
+      className: o()(B.positionLayer, ex),
       targetRef: l,
       position: J,
       align: $,
@@ -301,33 +301,33 @@ function J(e) {
           isPositioned: n
         } = e;
         return (0, r.jsx)("section", {
-          className: o()(F.positionContainer, {
-            [F.positionContainerOnlyEmoji]: !eO
+          className: o()(B.positionContainer, {
+            [B.positionContainerOnlyEmoji]: !eO
           }),
           ref: er,
           role: "dialog",
-          "aria-label": B.intl.string(B.t.Utlwvi),
+          "aria-label": F.intl.string(F.t.Utlwvi),
           children: n ? (0, r.jsxs)("div", {
-            className: F.drawerSizingWrapper,
+            className: B.drawerSizingWrapper,
             style: {
               width: null == es ? true : es,
               [$]: 0
             },
             ref: eo,
             children: [(0, r.jsx)("div", {
-              className: F.resizeHandle,
+              className: B.resizeHandle,
               onMouseDown: el,
               style: {
                 [eD]: false
               }
             }), (0, r.jsxs)("div", {
-              className: F.contentWrapper,
+              className: B.contentWrapper,
               children: [eO ? (0, r.jsx)("nav", {
-                className: F.nav,
+                className: B.nav,
                 children: (0, r.jsxs)("div", {
-                  className: F.navList,
+                  className: B.navList,
                   role: "tablist",
-                  "aria-label": B.intl.string(B.t["2j4Vgd"]),
+                  "aria-label": F.intl.string(F.t["2j4Vgd"]),
                   children: [eE ? (0, r.jsxs)(r.Fragment, {
                     children: [eM, eL, ej]
                   }) : (0, r.jsxs)(r.Fragment, {
@@ -339,9 +339,9 @@ function J(e) {
                     isActive: ec === j.X1.SOUNDBOARD,
                     viewType: j.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
-                      className: F.soundmojiLabelContainer,
-                      children: [B.intl.string(B.t.EHlAMc), null != eT && (0, r.jsx)(_.IGR, {
-                        text: B.intl.string(B.t.y2b7CA)
+                      className: B.soundmojiLabelContainer,
+                      children: [F.intl.string(F.t.EHlAMc), null != eT && (0, r.jsx)(_.IGR, {
+                        text: F.intl.string(F.t.y2b7CA)
                       })]
                     })
                   })]
@@ -377,7 +377,7 @@ function J(e) {
                 shouldShowSoundmojiInEmojiPicker: (null == (t = z.soundmoji) ? true : t.allowSending) === true,
                 showAddEmojiButton: ev.enabled
               }) : null, ec === j.X1.SOUNDBOARD ? (0, r.jsx)("div", {
-                className: F.soundboardContainer,
+                className: B.soundboardContainer,
                 children: (0, r.jsx)(A.Z, {
                   guildId: K.guild_id,
                   channel: K,
@@ -386,7 +386,7 @@ function J(e) {
                   onSelect: eR,
                   analyticsSource: "expression-picker",
                   renderHeader: e => (0, r.jsx)("div", {
-                    className: F.soundboardHeader,
+                    className: B.soundboardHeader,
                     children: e
                   }),
                   inExpressionPicker: true,

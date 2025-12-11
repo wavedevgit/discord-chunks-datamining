@@ -125,7 +125,7 @@ let ee = (e, t, i) => {
       promotionBannerMarketingComponentFields: w.properties.properties.marketingPageBanner
     }) : l ? M = (0, r.jsx)(A.Z, {
       variant: A.C.SUBSCRIBER_HOME
-    }) : c ? M = (0, r.jsx)(F.Z, {}) : _ && (M = (0, r.jsx)(P._, {}));
+    }) : c ? M = (0, r.jsx)(B.Z, {}) : _ && (M = (0, r.jsx)(P._, {}));
     let Z = (0, s.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
       z = null != Z && Z.status === H.O0b.CANCELED && null != O,
       q = (0, I.N)(),
@@ -147,7 +147,7 @@ let ee = (e, t, i) => {
         ref: en,
         children: [y && E, (0, r.jsxs)("div", {
           className: K.headerContainer,
-          children: [(0, r.jsx)(B.Z, {
+          children: [(0, r.jsx)(F.Z, {
             containerVisibilityPercentage: er
           }), z && null != O.expires_at && (0, r.jsx)(j.Z, {
             expiresAt: O.expires_at,
@@ -335,7 +335,7 @@ let ee = (e, t, i) => {
             },
             className: W.button
           })
-        }), !t && (0, r.jsx)(F.Z, {}), t && (0, r.jsx)(A.Z, {
+        }), !t && (0, r.jsx)(B.Z, {}), t && (0, r.jsx)(A.Z, {
           variant: A.C.SUBSCRIBER_HOME
         })]
       })]

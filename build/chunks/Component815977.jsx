@@ -49,12 +49,12 @@ function L(e) {
       guildId: n
     } = e,
     l = (0, s.e7)([y.Z], () => y.Z.getCurrentPage()),
-    p = (0, s.e7)([y.Z], () => {
+    b = (0, s.e7)([y.Z], () => {
       let e = (0, N.lg)(l);
       return null != e && !y.Z.isEducationUpsellDismissed(e)
     }),
     C = (0, E.Z)(n),
-    A = !C && p;
+    A = !C && b;
   switch (i.useEffect(() => {
       (0, g.Q3)(o.z.COMMUNITY_ONBOARDING_NEW_BADGE)
     }, []), l) {
@@ -65,7 +65,7 @@ function L(e) {
       }) : (0, r.jsx)(w.Z, {});
       break;
     case N.PG.SAFETY_CHECK:
-      t = (0, r.jsx)(b.Z, {});
+      t = (0, r.jsx)(p.Z, {});
       break;
     case N.PG.DEFAULT_CHANNELS:
       t = (0, r.jsx)(I.Z, {
@@ -108,16 +108,16 @@ function L(e) {
         size: c.zx.Sizes.MIN,
         onClick: () => {
           if (y.Z.hasChanges() && !y.Z.canCloseEarly()) {
-            f.S.dispatch(Z.CkL.SHAKE_APP, {
+            m.S.dispatch(Z.CkL.SHAKE_APP, {
               duration: 300,
               intensity: u.$x
-            }), f.S.dispatch(Z.CkL.EMPHASIZE_NOTICE);
+            }), m.S.dispatch(Z.CkL.EMPHASIZE_NOTICE);
             return
           }(0, O.NB)(), (0, h.BG)(), (0, v.bj)(), (0, j.Pk)(), (0, x.$K)(N.PG.LANDING)
         },
-        children: [(0, r.jsx)(m.Z, {
+        children: [(0, r.jsx)(f.Z, {
           className: D.arrow,
-          direction: m.Z.Directions.LEFT
+          direction: f.Z.Directions.LEFT
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
           color: "interactive-text-default",

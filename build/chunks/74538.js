@@ -24,18 +24,18 @@ require.d(exports, {
   Rd: () => en,
   Rt: () => eY,
   T4: () => K,
-  U2: () => F,
+  U2: () => B,
   UV: () => tU,
   UX: () => Q,
   Ue: () => eX,
   V7: () => ef,
   Vw: () => ek,
-  W_: () => eF,
+  W_: () => eB,
   Wz: () => tT,
   XK: () => e$,
   YN: () => tZ,
   Z8: () => eE,
-  ZP: () => tB,
+  ZP: () => tF,
   Zx: () => e0,
   _O: () => tC,
   a5: () => eH,
@@ -148,8 +148,8 @@ let U = {
     BILLING_HISTORY: "https://play.google.com/store/account/orderhistory"
   },
   Z = new Chunk710845.Z("PremiumUtils.tsx"),
-  B = 2592e6;
-var F = function(e) {
+  F = 2592e6;
+var B = function(e) {
   return e.MID = "mid", e.HIGH = "high", e
 }({});
 
@@ -1158,7 +1158,7 @@ function eZ(e, t, n, r) {
   return Y(o.id, (0, T.I5)(r), false, i)
 }
 
-function eB(e) {
+function eF(e) {
   return null != e && 0 !== e.size && Array.from(e).some(e => {
     let {
       subscriptionPlanId: t,
@@ -1169,7 +1169,7 @@ function eB(e) {
   })
 }
 
-function eF(e, t, n) {
+function eB(e, t, n) {
   let r = t.id;
   if (null != e) switch (r) {
     case P.Xh.PREMIUM_MONTH_TIER_0:
@@ -1667,8 +1667,8 @@ function tG(e) {
 function tZ(e) {
   return Math.max(1, Math.ceil((0, y.jc)(new Date(e.currentPeriodEnd), new Date)))
 }
-let tB = Object.freeze({
-  isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < B,
+let tF = Object.freeze({
+  isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < F,
   isPremiumAtLeast: Chunk111361.yd,
   isPremium: Chunk111361.I5,
   isPremiumExactly: Chunk111361.M5,
@@ -1701,8 +1701,8 @@ let tB = Object.freeze({
   getStatusFromInvoice: eM,
   isBaseSubscriptionCanceled: ek,
   getPremiumGuildIntervalPrice: eZ,
-  hasAccountCredit: eB,
-  getBillingReviewSubheader: eF,
+  hasAccountCredit: eF,
+  getBillingReviewSubheader: eB,
   getIntervalForInvoice: eV,
   getPremiumPlanItem: V,
   getGuildBoostPlanItem: e2,
@@ -1742,5 +1742,5 @@ let tB = Object.freeze({
   canUseCollectibles: tv,
   canUsePremiumVoiceFilters: tS,
   formatPriceString: tI,
-  StreamQuality: F
+  StreamQuality: B
 })

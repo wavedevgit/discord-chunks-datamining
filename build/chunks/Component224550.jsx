@@ -75,10 +75,10 @@ let g = (e, t, n, r) => {
         primaryText: U,
         paidURL: f.EYA.PAID_TERMS
       }),
-      B = "",
-      F = "";
+      F = "",
+      B = "";
     if (v) {
-      B = null != S && S > 0 ? m.intl.format(m.t.itoo7A, {
+      F = null != S && S > 0 ? m.intl.format(m.t.itoo7A, {
         days: S,
         virtualGoodsURL: f.EYA.PAID_TERMS_VIRTUAL_GOODS,
         paidURL: f.EYA.PAID_TERMS
@@ -87,58 +87,58 @@ let g = (e, t, n, r) => {
         paidURL: f.EYA.PAID_TERMS
       });
       let e = "";
-      x === p.Vt.ORB_PROFILE_BADGE ? e = m.intl.string(m.t.APcKRo) : x === p.Vt.FRACTIONAL_PREMIUM ? e = m.intl.string(m.t.FhJ74j) : null == S && (e = m.intl.string(m.t["Sxed/G"])), Array.isArray(B) ? B = [...B, " ".concat(e)] : B += " ".concat(e)
+      x === p.Vt.ORB_PROFILE_BADGE ? e = m.intl.string(m.t.APcKRo) : x === p.Vt.FRACTIONAL_PREMIUM ? e = m.intl.string(m.t.FhJ74j) : null == S && (e = m.intl.string(m.t["Sxed/G"])), Array.isArray(F) ? F = [...F, " ".concat(e)] : F += " ".concat(e)
     } else if (I)
-      if (null != s && (null == T ? true : T.subscriptionPeriodEnd) != null) B = m.intl.format(m.t["2VPTay"], {
+      if (null != s && (null == T ? true : T.subscriptionPeriodEnd) != null) F = m.intl.format(m.t["2VPTay"], {
         subtotalRate: E
       });
       else switch (t) {
         case _.rV.MONTH:
-          B = 1 === n ? m.intl.format(m.t["+ywPmZ"], {}) : m.intl.format(m.t.oBwZfh, {
+          F = 1 === n ? m.intl.format(m.t["+ywPmZ"], {}) : m.intl.format(m.t.oBwZfh, {
             intervalCount: n
           });
           break;
         case _.rV.YEAR:
-          B = m.intl.format(m.t.y9gsX5, {});
+          F = m.intl.format(m.t.y9gsX5, {});
           break;
         case true:
-          B = m.intl.format(m.t.UxGFH4, {});
+          F = m.intl.format(m.t.UxGFH4, {});
           break;
         default:
           throw Error("Unexpected interval: ".concat(t))
       } else if (N === f.GZQ.ONE_TIME) switch (P) {
         case f.POd.COLLECTIBLES:
-          F = G, B = y ? m.intl.format(m.t.Amdf8X, {
+          B = G, F = y ? m.intl.format(m.t.Amdf8X, {
             paidURL: f.EYA.PAID_TERMS
           }) : m.intl.format(m.t["40vM4o"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         case f.POd.GUILD_PRODUCT:
-          F = G, B = m.intl.format(m.t["GEAQ+u"], {
+          B = G, F = m.intl.format(m.t["GEAQ+u"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         case f.POd.SOCIAL_LAYER_GAME_ITEM:
-          F = G, B = y || true === j ? m.intl.format(m.t.VCR6hI, {
+          B = G, F = y || true === j ? m.intl.format(m.t.VCR6hI, {
             applicationName: null != L ? L : "game's"
           }) : m.intl.format(m.t.CVITgq, {
             applicationName: null != L ? L : "game's"
           });
           break;
         default:
-          F = Z, B = m.intl.string(m.t["9/siSQ"])
-      } else if (null == b || y) switch (y && (F = G), t) {
+          B = Z, F = m.intl.string(m.t["9/siSQ"])
+      } else if (null == b || y) switch (y && (B = G), t) {
         case _.rV.MONTH:
-          B = y ? m.intl.string(m.t.IjNapk) : m.intl.string(m.t["/sGXPr"]), B = y ? m.intl.string(m.t.IjNapk) : 1 === n ? m.intl.string(m.t["/sGXPr"]) : m.intl.formatToPlainString(m.t.Fqjihk, {
+          F = y ? m.intl.string(m.t.IjNapk) : m.intl.string(m.t["/sGXPr"]), F = y ? m.intl.string(m.t.IjNapk) : 1 === n ? m.intl.string(m.t["/sGXPr"]) : m.intl.formatToPlainString(m.t.Fqjihk, {
             intervalCount: n
           });
           break;
         case _.rV.YEAR:
-          B = y ? m.intl.string(m.t.vAfbG8) : m.intl.string(m.t.IGzFc5);
+          F = y ? m.intl.string(m.t.vAfbG8) : m.intl.string(m.t.IGzFc5);
           break;
         case true:
-          B = "";
+          F = "";
           break;
         default:
           throw Error("Unexpected interval: ".concat(t))
@@ -152,7 +152,7 @@ let g = (e, t, n, r) => {
           planGroup: k,
           isPrepaidPaymentSource: false
         });
-        O || (e = g(w, t, n, b.id)), B = (null == D ? true : D.isPausedAllowsResumeButNotUpdates) ? m.intl.format(m.t.B6oNwB, {
+        O || (e = g(w, t, n, b.id)), F = (null == D ? true : D.isPausedAllowsResumeButNotUpdates) ? m.intl.format(m.t.B6oNwB, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,
@@ -192,10 +192,10 @@ let g = (e, t, n, r) => {
       }
     return (0, r.jsxs)("div", {
       className: h.legalFinePrint,
-      children: ["" !== F && (0, r.jsx)("div", {
-        children: F
-      }), "" !== B && (0, r.jsx)("div", {
+      children: ["" !== B && (0, r.jsx)("div", {
         children: B
+      }), "" !== F && (0, r.jsx)("div", {
+        children: F
       }), C === f.HeQ.PAYSAFE_CARD && (0, r.jsx)("div", {
         children: m.intl.string(m.t.kj9VLI)
       }), C === f.HeQ.SOFORT && (0, r.jsx)("div", {

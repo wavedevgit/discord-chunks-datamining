@@ -87,7 +87,7 @@ let w = Chunk473749.forwardRef((e, t) => {
   let n, {
       log: l,
       className: o,
-      expanded: p,
+      expanded: b,
       guildId: O,
       guild: w,
       onChannelContextMenu: Z,
@@ -105,7 +105,7 @@ let w = Chunk473749.forwardRef((e, t) => {
       return (l.actionType !== E.vB8.DELETE || l.action === E.rsA.MEMBER_BAN_ADD || l.action === E.rsA.MEMBER_KICK || l.action === E.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, N.xO)(l, e))
     }(),
     U = S.headerDefault;
-  p ? U = S.headerExpanded : M && (U = S.headerClickable);
+  b ? U = S.headerExpanded : M && (U = S.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
   n = B === F ? (0, r.jsx)(d.Text, {
@@ -125,7 +125,7 @@ let w = Chunk473749.forwardRef((e, t) => {
       className: a()(S.auditLog, o),
       children: [(0, r.jsxs)(d.P3F, T(_({
         className: U,
-        "aria-expanded": p,
+        "aria-expanded": b,
         onClick: H
       }, e), {
         children: [(0, r.jsx)(N.mp, {
@@ -140,7 +140,7 @@ let w = Chunk473749.forwardRef((e, t) => {
               integration_type: n
             }
           } = l;
-          if (null != e && null != t) return (0, r.jsx)(f.Z, {
+          if (null != e && null != t) return (0, r.jsx)(m.Z, {
             targetElementRef: G,
             user: e,
             guildId: O,
@@ -202,7 +202,7 @@ let w = Chunk473749.forwardRef((e, t) => {
                     }
                     return I.intl.string(I.t["30mdIx"])
                   },
-                  targetHook: (e, t) => l.targetType === E.KFR.USER && l.target instanceof b.Z ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === E.KFR.USER && l.target instanceof p.Z ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {
@@ -210,7 +210,7 @@ let w = Chunk473749.forwardRef((e, t) => {
                     children: e
                   }, t),
                   count: null != (e = a.count) ? e : "",
-                  channel: null == a.channel || "string" == typeof a.channel ? a.channel : (0, m.F6)(a.channel, x.default, h.Z, true),
+                  channel: null == a.channel || "string" == typeof a.channel ? a.channel : (0, f.F6)(a.channel, x.default, h.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: Z,
                     children: e
@@ -223,12 +223,12 @@ let w = Chunk473749.forwardRef((e, t) => {
         }), M ? (0, r.jsx)(j.Z, {
           className: S.expand,
           foreground: S.expandForeground,
-          expanded: p,
+          expanded: b,
           "aria-hidden": true
         }) : null]
-      })), p ? (0, r.jsx)("div", {
+      })), b ? (0, r.jsx)("div", {
         className: S.divider
-      }) : null, p && null != w ? (0, r.jsx)(N.tP, {
+      }) : null, b && null != w ? (0, r.jsx)(N.tP, {
         log: l,
         guild: w,
         onContentClick: R

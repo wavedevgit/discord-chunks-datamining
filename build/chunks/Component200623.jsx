@@ -26,18 +26,18 @@ function g(e) {
     instructions: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: x.cardRow,
+    className: h.cardRow,
     children: [(0, n.jsx)("div", {
-      className: x.stepNumberContainer,
-      children: (0, n.jsx)(i.Text, {
+      className: h.stepNumberContainer,
+      children: (0, n.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        className: x.stepNumber,
+        className: h.stepNumber,
         children: t
       })
-    }), (0, n.jsx)(i.Text, {
+    }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
-      color: "header-primary",
-      className: x.instructions,
+      color: "text-strong",
+      className: h.instructions,
       children: r
     })]
   })
@@ -48,12 +48,12 @@ function C(e) {
     channel: t,
     transitionState: r,
     onClose: C
-  } = e, y = (0, a.e7)([u.default], () => null != u.default.getRemoteSessionId()), O = (0, f.Z)(t, {
+  } = e, O = (0, a.e7)([u.default], () => null != u.default.getRemoteSessionId()), v = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    y && C()
-  }, [y, C]), s.useEffect(() => {
+    O && C()
+  }, [O, C]), s.useEffect(() => {
     (0, p.Z)(t.id, m.YE.XBOX)
   }, [t.id]), (0, n.jsx)(c.Modal, {
     title: b.intl.string(b.t["f+Aijq"]),
@@ -62,15 +62,15 @@ function C(e) {
     onClose: C,
     transitionState: r,
     children: (0, n.jsxs)("div", {
-      className: x.card,
+      className: h.card,
       children: [(0, n.jsxs)("div", {
-        className: x.cardText,
-        children: [(0, n.jsxs)(i.Text, {
+        className: h.cardText,
+        children: [(0, n.jsxs)(o.Text, {
           variant: "text-lg/semibold",
-          color: "header-primary",
-          className: x.cardRow,
+          color: "text-strong",
+          className: h.cardRow,
           children: [(0, n.jsx)(l.Z, {
-            className: x.cardHeaderIcon
+            className: h.cardHeaderIcon
           }), b.intl.string(b.t.ZNlYbK)]
         }), (0, n.jsx)(g, {
           step: 1,
@@ -78,18 +78,18 @@ function C(e) {
         }), (0, n.jsx)(g, {
           step: 2,
           instructions: b.intl.string(b.t.IWuXjC)
-        }), (0, n.jsx)(i.Text, {
+        }), (0, n.jsx)(o.Text, {
           variant: "text-sm/medium",
-          children: (0, n.jsx)(i.Anchor, {
-            className: x.learnMore,
-            href: d.Z.getArticleURL(h.BhN.XBOX_CONNECTION),
+          children: (0, n.jsx)(o.Anchor, {
+            className: h.learnMore,
+            href: d.Z.getArticleURL(x.BhN.XBOX_CONNECTION),
             children: b.intl.string(b.t.hvVgAZ)
           })
         })]
-      }), (0, n.jsx)(o.ZP, {
-        className: x.qrCode,
+      }), (0, n.jsx)(i.ZP, {
+        className: h.qrCode,
         size: 120,
-        text: O
+        text: v
       })]
     })
   })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk297159 = require("./297159.js"),
@@ -33,9 +33,9 @@ function Z(e) {
   return t = n && false !== i ? "full" : n && false === i ? "half" : "none", (0, r.jsxs)("div", {
     className: C.progressContainer,
     children: [(0, r.jsx)("div", {
-      className: a()(C.progress, C[l], C[t])
+      className: o()(C.progress, C[l], C[t])
     }), (0, r.jsx)("div", {
-      className: a()(C.boostContainer, _.boostProgressBackground, {
+      className: o()(C.boostContainer, _.boostProgressBackground, {
         [C.boostContainerActive]: n,
         [_.active]: n
       }),
@@ -53,7 +53,7 @@ function w(e) {
     index: n
   } = e, {
     textColor: l,
-    iconColor: a
+    iconColor: o
   } = (0, g.Z)(t), s = i.useMemo(() => {
     let e = b.C[n];
     if (null == e) return [];
@@ -63,9 +63,9 @@ function w(e) {
       return (0, r.jsxs)("div", {
         className: C.perkRow,
         children: [(0, r.jsx)(i, {
-          color: a,
+          color: o,
           size: "sm"
-        }), (0, r.jsx)(o.xvT, {
+        }), (0, r.jsx)(a.xvT, {
           className: C.perkText,
           color: l,
           variant: "text-sm/medium",
@@ -73,12 +73,12 @@ function w(e) {
         })]
       }, "perk-".concat(n, "-").concat(t))
     })
-  }, [n, a, l]);
+  }, [n, o, l]);
   return (0, r.jsxs)("div", {
     className: C.perkRowContainer,
     children: [s, (0, r.jsx)("div", {
       className: C.perkRow,
-      children: (0, r.jsx)(o.xvT, {
+      children: (0, r.jsx)(a.xvT, {
         color: l,
         variant: "text-sm/medium",
         children: j.intl.string(h.default.nIj3LZ)
@@ -92,8 +92,8 @@ function I(e) {
     guildId: t,
     index: n,
     powerup: l,
-    nextPowerup: a
-  } = e, o = (0, d.ZP)(t, l), s = (0, d.ZP)(t, a), c = o.type !== v.A3.INACTIVE, x = s.type !== v.A3.INACTIVE, b = o.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, j] = i.useState(true);
+    nextPowerup: o
+  } = e, a = (0, d.ZP)(t, l), s = (0, d.ZP)(t, o), c = a.type !== v.A3.INACTIVE, x = s.type !== v.A3.INACTIVE, b = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, j] = i.useState(true);
   (0, u.KT)(h);
   let {
     textColor: _
@@ -103,9 +103,9 @@ function I(e) {
     powerup: l,
     className: C.card,
     children: [(0, r.jsx)(Z, {
-      position: 0 === n ? "start" : null == a ? "end" : "middle",
+      position: 0 === n ? "start" : null == o ? "end" : "middle",
       active: c,
-      nextActive: null != a ? x : true
+      nextActive: null != o ? x : true
     }), (0, r.jsx)(f.Q9, {
       title: l.title,
       textColor: _,

@@ -46,8 +46,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
     className: U,
     id: G,
     disabled: Z,
-    submitting: B,
-    placeholder: F,
+    submitting: F,
+    placeholder: B,
     required: V,
     textAreaPaddingClassName: H,
     onChange: Y,
@@ -81,7 +81,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
     "aria-describedby": eb,
     "aria-labelledby": ey,
     "aria-autocomplete": eO
-  } = e, ev = i.useRef(null), eS = i.useRef(null), eI = i.useRef(true), eT = i.useRef(true), eC = Z || B, eA = i.useCallback((e, t, n) => {
+  } = e, ev = i.useRef(null), eS = i.useRef(null), eI = i.useRef(true), eT = i.useRef(true), eC = Z || F, eA = i.useCallback((e, t, n) => {
     var r;
     let {
       value: i,
@@ -226,7 +226,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
       let t = (0, w.Z)(eR, e, k.id);
       return null == t && (t = (0, x.Z)(eR, e)), null == t && (t = (0, L.Z)(eR, e)), t
     }, [k.id, eR]),
-    eB = i.useCallback(e => (0, D.Z)(e), []);
+    eF = i.useCallback(e => (0, D.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
       event: j.CkL.GLOBAL_CLIPBOARD_PASTE,
@@ -240,7 +240,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
         channelId: k.id,
         guildId: k.guild_id,
         className: o()(M.slateTextArea, H),
-        placeholder: F,
+        placeholder: B,
         readOnly: eC,
         spellCheck: ea,
         autoFocus: !el,
@@ -254,7 +254,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
         onKeyUp: eL,
         decorate: eG,
         renderExtraElement: eZ,
-        renderExtraLeaf: eB,
+        renderExtraLeaf: eF,
         "aria-owns": ep,
         "aria-haspopup": em,
         "aria-expanded": e_,

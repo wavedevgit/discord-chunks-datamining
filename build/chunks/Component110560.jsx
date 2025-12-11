@@ -12,9 +12,9 @@ require.r(exports), require.d(exports, {
   openDisclosureModal: () => Y,
   openPushToPhoneModal: () => et,
   openQuestCollectibleRewardModal: () => V,
-  openQuestInGameRewardModal: () => B,
+  openQuestInGameRewardModal: () => F,
   openQuestMinorEnrollmentBlockModal: () => H,
-  openQuestOrbsRewardModal: () => F,
+  openQuestOrbsRewardModal: () => B,
   openQuestsRewardCodeModal: () => Z,
   openVideoQuestModal: () => Q
 });
@@ -108,7 +108,7 @@ function Z(e) {
   })
 }
 
-function B(e, t, i) {
+function F(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
       default: a
@@ -121,7 +121,7 @@ function B(e, t, i) {
   })
 }
 
-function F(e, t, i) {
+function B(e, t, i) {
   (0, s.ZDy)(async () => {
     let {
       default: a

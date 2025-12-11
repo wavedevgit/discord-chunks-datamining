@@ -24,7 +24,7 @@ function c(e) {
     children: [(0, r.jsx)(s.Text, {
       className: o.questionTitle,
       variant: "text-md/normal",
-      color: "header-primary",
+      color: "text-strong",
       children: t
     }), n]
   })

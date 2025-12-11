@@ -42,7 +42,7 @@ function m(e) {
   }({
     selected: s,
     isHovered: c
-  }), b = r.useCallback(() => m(true), []), g = r.useCallback(() => m(false), []), x = r.useRef(null);
+  }), g = r.useCallback(() => m(true), []), b = r.useCallback(() => m(false), []), x = r.useRef(null);
   return (0, a.jsx)(o.yRy, {
     targetElementRef: x,
     renderPopout: e => {
@@ -93,8 +93,8 @@ function m(e) {
         "aria-label": u.intl.string(u.t["UKOtz+"]),
         children: (0, a.jsxs)("div", {
           className: p.more,
-          onMouseEnter: b,
-          onMouseLeave: g,
+          onMouseEnter: g,
+          onMouseLeave: b,
           children: [(0, a.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: h,
@@ -128,8 +128,8 @@ function h(e) {
     tabs: i,
     onTabSelect: d,
     onAvailableWidthChange: u
-  } = e, [h, f] = r.useState(0), b = r.useRef(h), {
-    lastVisibleIndex: g,
+  } = e, [h, f] = r.useState(0), g = r.useRef(h), {
+    lastVisibleIndex: b,
     onItemLayout: x,
     overflowItemsRef: v,
     itemWidthsRef: C
@@ -138,10 +138,10 @@ function h(e) {
     itemGapPx: 20,
     maxLines: 1,
     containerWidth: h
-  }), j = r.useMemo(() => i.slice(0, g + 1), [g, i]), _ = r.useMemo(() => i.slice(g + 1), [g, i]), y = r.useRef(null), I = r.useCallback(e => {
+  }), j = r.useMemo(() => i.slice(0, b + 1), [b, i]), _ = r.useMemo(() => i.slice(b + 1), [b, i]), y = r.useRef(null), I = r.useCallback(e => {
     let t = e.contentRect.width;
-    if (null == t || b.current === t) return;
-    f(t), b.current = t;
+    if (null == t || g.current === t) return;
+    f(t), g.current = t;
     let n = C.current.reduce((e, t, n) => e + t + 20 * (0 !== n));
     null == u || u(t - n)
   }, [C, u]);

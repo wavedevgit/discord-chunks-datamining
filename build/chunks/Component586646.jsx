@@ -52,7 +52,7 @@ function E(e) {
       className: p.header,
       children: [(0, l.jsx)(a.Heading, {
         variant: "text-sm/bold",
-        color: "header-primary",
+        color: "text-strong",
         children: h.intl.string(h.t.cTQI5t)
       }), null != E && (0, l.jsx)(f.H, {
         chunks: E,

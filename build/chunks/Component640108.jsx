@@ -76,8 +76,8 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = 3e3,
-  F = 1e3,
+let F = 3e3,
+  B = 1e3,
   V = "-:--",
   H = {
     friction: 14,
@@ -663,7 +663,7 @@ class et extends(i = Chunk473749.PureComponent) {
     let {
       dragging: e,
       fullscreen: t
-    } = this.state, n = exports ? F : B, r = Math.max(0, Date.now() - this._lastMove) > require;
+    } = this.state, n = exports ? B : F, r = Math.max(0, Date.now() - this._lastMove) > require;
     r !== this.state.hideControls && null == module && this.setState({
       hideControls: r
     })

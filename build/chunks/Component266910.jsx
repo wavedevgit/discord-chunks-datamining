@@ -97,14 +97,14 @@ let A = function(e) {
     G = null != (O = (0, f.V3)(null == U || null == (t = U.themeColors) ? true : t[0])) ? O : E.BRd.DARK,
     {
       profileThemeStyle: Z,
-      profileThemeClassName: B
+      profileThemeClassName: F
     } = (0, _.Z)({
       theme: G,
       themeType: b.l.VIDEO_TILE_BACKGROUND,
       primaryColor: null != (S = null == U || null == (n = U.themeColors) ? true : n[0]) ? S : null,
       secondaryColor: null != (C = null == U || null == (a = U.themeColors) ? true : a[1]) ? C : null
     }),
-    F = null == U ? true : U.getBannerURL({
+    B = null == U ? true : U.getBannerURL({
       size: 1024,
       canAnimate: h.QK.getSetting()
     }),
@@ -125,10 +125,10 @@ let A = function(e) {
     W = I(v({}, A), {
       backgroundColor: M
     });
-  return null != F && x && k && (W.backgroundImage = "url(".concat(F, ")"), W.backgroundSize = "cover"), (0, r.jsx)("div", {
+  return null != B && x && k && (W.backgroundImage = "url(".concat(B, ")"), W.backgroundSize = "cover"), (0, r.jsx)("div", {
     style: V ? v({}, A, Z) : v({}, W),
     className: o()(y.background, {
-      [B]: V
+      [F]: V
     }),
     children: D ? (0, r.jsx)(d.Z, {
       shouldAnimate: x,

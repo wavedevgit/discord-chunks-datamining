@@ -62,7 +62,7 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,8 +73,8 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -101,7 +101,7 @@ function en(e) {
 }
 
 function er(e) {
-  return null == X[e] && (X = F(Z({}, X), {
+  return null == X[e] && (X = B(Z({}, X), {
     [e]: new C.Z({
       name: e
     })
@@ -109,7 +109,7 @@ function er(e) {
 }
 
 function ei(e) {
-  return null == J[e] && (J = F(Z({}, J), {
+  return null == J[e] && (J = B(Z({}, J), {
     [e]: new T.Z({
       url: e
     })
@@ -224,13 +224,13 @@ function ef(e, t, n) {
   let U = 1 === f.length,
     G = [],
     Z = new Set,
-    B = new Set;
+    F = new Set;
   for (let e of s) {
     let t = el(e.id),
       n = N.Z.getChannel(t),
       i = null != n ? n.getGuildId() : null,
       o = w.Z.getGuild(i);
-    if (B.has(i) && Z.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
+    if (F.has(i) && Z.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
       let e = M.Z.getVoiceStatesForChannel(n.id),
         l = (0, v.HG)("NowPlayingViewStore - voiceMembers"),
@@ -246,7 +246,7 @@ function ef(e, t, n) {
         } = e;
         return j.default.getUser(t)
       }).filter(k.lm).orderBy([c], ["desc"]).value();
-      u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? B.has(i) || (r = null) : (r = o, U = true), B.add(i), Z.add(t), G.push({
+      u.filter(e => !d.includes(e.id)).forEach(e => s.push(e)), U ? F.has(i) || (r = null) : (r = o, U = true), F.add(i), Z.add(t), G.push({
         channel: n,
         guild: o,
         members: u,

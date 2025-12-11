@@ -89,7 +89,7 @@ function b(e) {
       className: _.contentContainer,
       children: [(0, r.jsx)(s.Heading, {
         variant: "lg" === u ? "heading-xl/bold" : "heading-lg/bold",
-        color: "header-primary",
+        color: "text-strong",
         children: p.intl.string(p.t.vnP31W)
       }), (0, r.jsx)(s.Text, {
         variant: "lg" === u ? "text-sm/medium" : "text-xs/medium",

@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk595756 = require("./595756.js");
 
-function x(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -65,7 +65,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       y: 0
     }), [F, J] = r.useState(false), H = "image/gif" === n.type, V = (0, s.v)(n.type), W = V && !H, [Y, q] = r.useState(null), K = (0, d.h)(null != O ? O : f.dG, 500), X = r.useRef(null), Q = r.useRef(0);
     r.useEffect(() => {
-      (0, b.Z)()
+      (0, g.Z)()
     }, []);
     let $ = r.useCallback(function() {
         let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {
@@ -87,7 +87,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       }, [M, z, G, D]),
       ee = r.useCallback(e => {
         if (null == T) return;
-        let t = I(T, e, V);
+        let t = y(T, e, V);
         A(e), Z(t), $(), null == K || K()
       }, [T, $, V, K]),
       et = r.useCallback(() => {
@@ -95,7 +95,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         let e = (z + 90) % 360,
           t = T.height,
           n = T.width,
-          l = I({
+          l = y({
             width: t,
             height: n
           }, R, V);
@@ -112,7 +112,7 @@ let j = new Chunk710845.Z("ImageEditor"),
         let {
           height: e,
           width: t
-        } = C(y(T, z), R);
+        } = I(C(T, z), R);
         return {
           height: e,
           width: t,
@@ -158,8 +158,8 @@ let j = new Chunk710845.Z("ImageEditor"),
         let t = Date.now(),
           l = M.current,
           r = {
-            height: g.eT,
-            width: g.eT
+            height: b.eT,
+            width: b.eT
           },
           a = null;
         if (null != es.current && (es.current(), es.current = null), H) try {
@@ -170,8 +170,8 @@ let j = new Chunk710845.Z("ImageEditor"),
               cropOriginCoordinates: _.current,
               maxDimensions: r,
               imageRotation: z,
-              resizeWidth: g.eT,
-              resizeHeight: g.eT
+              resizeWidth: b.eT,
+              resizeHeight: b.eT
             }, T, R),
             {
               result: i,
@@ -179,7 +179,7 @@ let j = new Chunk710845.Z("ImageEditor"),
             } = await (0, h.$p)(t);
           es.current = a, e = await i
         } catch (e) {
-          j.error("Error cropping GIF", e), a = g.ze.GIF_CROPPING
+          j.error("Error cropping GIF", e), a = b.ze.GIF_CROPPING
         } finally {
           var s;
           null == (s = es.current) || s.call(es), es.current = null
@@ -212,7 +212,7 @@ let j = new Chunk710845.Z("ImageEditor"),
           height: t
         }), L(0), k(false);
         let n = Math.min(Math.max(e, t) / Math.min(e, t), 4);
-        A(n), q(n), Q.current += 1, Z(I({
+        A(n), q(n), Q.current += 1, Z(y({
           width: e,
           height: t
         }, n, V)), $({
@@ -226,27 +226,27 @@ let j = new Chunk710845.Z("ImageEditor"),
     return r.useImperativeHandle(t, () => ({
       reset: ec
     })), (0, l.jsxs)("div", {
-      className: a()(p.imageEditor, {
-        [p.isDragging]: F
+      className: a()(x.imageEditor, {
+        [x.isDragging]: F
       }),
       style: {
         "--custom-image-editor-size": "".concat(288, "px")
       },
       children: [(0, l.jsxs)("div", {
-        className: p.editingContainer,
+        className: x.editingContainer,
         children: [(0, l.jsx)("img", {
           onLoad: ed,
           onError: () => {
             m({
-              error: g.ze.IMAGE_LOAD,
+              error: b.ze.IMAGE_LOAD,
               loading: false
             })
           },
-          style: x({
+          style: p({
             opacity: +(null != T),
             transform: "translate3d(".concat(_.current.x, "px, ").concat(_.current.y, "px, 0) rotate(").concat(z, "deg) scaleX(").concat(D ? "-1" : "1", ")")
           }, el()),
-          className: p.image,
+          className: x.image,
           src: i,
           crossOrigin: "anonymous",
           alt: v.intl.string(v.t.EYR1Fa),
@@ -254,35 +254,35 @@ let j = new Chunk710845.Z("ImageEditor"),
           onMouseDown: ea,
           draggable: false
         }), !W && (0, l.jsx)("div", {
-          className: p.overlay,
+          className: x.overlay,
           style: {
             opacity: +(null != T),
             width: E.width,
             height: E.height
           },
           children: (0, l.jsx)(c.Text, {
-            className: p.panHint,
+            className: x.panHint,
             variant: "text-xs/normal",
             color: "text-strong",
             children: v.intl.string(v.t.oBPhdN)
           })
         })]
       }), W ? (0, l.jsx)("div", {
-        className: p.animatedInfoContainer,
+        className: x.animatedInfoContainer,
         children: (0, l.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           children: v.intl.string(v.t["5XCxir"])
         })
       }) : (0, l.jsxs)("div", {
-        className: p.toolbar,
+        className: x.toolbar,
         children: [(0, l.jsxs)("div", {
-          className: p.toolbarGroup,
+          className: x.toolbarGroup,
           children: [(0, l.jsx)(u.u, {
             text: v.intl.string(v.t.FEIIO9),
             "aria-label": v.intl.string(v.t.FEIIO9),
             children: (0, l.jsx)("div", {
-              className: p.toolbarButton,
+              className: x.toolbarButton,
               children: (0, l.jsx)(c.hU, {
                 size: "sm",
                 variant: "icon-only",
@@ -295,7 +295,7 @@ let j = new Chunk710845.Z("ImageEditor"),
             text: v.intl.string(v.t["4LRS2p"]),
             "aria-label": v.intl.string(v.t["4LRS2p"]),
             children: (0, l.jsx)("div", {
-              className: p.toolbarButton,
+              className: x.toolbarButton,
               children: (0, l.jsx)(c.hU, {
                 size: "sm",
                 variant: "icon-only",
@@ -306,12 +306,12 @@ let j = new Chunk710845.Z("ImageEditor"),
             })
           })]
         }), (0, l.jsxs)("div", {
-          className: a()(p.zoomControls, p.toolbarGroup),
+          className: a()(x.zoomControls, x.toolbarGroup),
           children: [(0, l.jsx)(u.u, {
             text: v.intl.string(v.t.QlArhK),
             "aria-label": v.intl.string(v.t.QlArhK),
             children: (0, l.jsx)("div", {
-              className: p.toolbarButton,
+              className: x.toolbarButton,
               children: (0, l.jsx)(c.hU, {
                 size: "sm",
                 variant: "icon-only",
@@ -322,7 +322,7 @@ let j = new Chunk710845.Z("ImageEditor"),
             })
           }), null != Y && (0, l.jsx)(c.iRW, {
             ref: X,
-            className: p.slider,
+            className: x.slider,
             initialValue: Y,
             minValue: 1,
             maxValue: 4,
@@ -335,7 +335,7 @@ let j = new Chunk710845.Z("ImageEditor"),
             text: v.intl.string(v.t.Ch32tT),
             "aria-label": v.intl.string(v.t.Ch32tT),
             children: (0, l.jsx)("div", {
-              className: p.toolbarButton,
+              className: x.toolbarButton,
               children: (0, l.jsx)(c.hU, {
                 size: "sm",
                 variant: "icon-only",
@@ -349,7 +349,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       })]
     })
   }),
-  y = (e, t) => {
+  C = (e, t) => {
     let {
       width: n,
       height: l
@@ -362,7 +362,7 @@ let j = new Chunk710845.Z("ImageEditor"),
       height: l
     }
   },
-  C = (e, t) => {
+  I = (e, t) => {
     let {
       width: n,
       height: l
@@ -373,11 +373,11 @@ let j = new Chunk710845.Z("ImageEditor"),
     }
   };
 
-function I(e, t, n) {
+function y(e, t, n) {
   let {
     width: l,
     height: r
-  } = C(e, t), i = Math.abs(288 - l) / 2, a = Math.abs(288 - r) / 2;
+  } = I(e, t), i = Math.abs(288 - l) / 2, a = Math.abs(288 - r) / 2;
   return n && (l < 288 || r < 288) ? {
     top: 0,
     bottom: 0,
@@ -395,11 +395,11 @@ let N = (e, t, n) => {
   let {
     height: i,
     width: a
-  } = C(t, n), o = (i = Math.min(i, 288)) / (a = Math.min(a, 288)), s = {
+  } = I(t, n), o = (i = Math.min(i, 288)) / (a = Math.min(a, 288)), s = {
     height: i,
     width: a
-  }, u = Math.floor(o < 1 ? g.eT * o : g.eT / o), c = o < 1 ? u : g.eT, d = o > 1 ? u : g.eT;
-  return l = x({}, e), r = r = {
+  }, u = Math.floor(o < 1 ? b.eT * o : b.eT / o), c = o < 1 ? u : b.eT, d = o > 1 ? u : b.eT;
+  return l = p({}, e), r = r = {
     cropDimensions: s,
     resizeHeight: c,
     resizeWidth: d

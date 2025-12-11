@@ -137,16 +137,16 @@ module.exports = function(e) {
       className: "string",
       variants: [U(), U("#"), U("##"), U("###"), G(), G("#"), G("##"), G("###")]
     },
-    B = [e.BACKSLASH_ESCAPE, {
+    F = [e.BACKSLASH_ESCAPE, {
       begin: /\[/,
       end: /\]/,
       relevance: 0,
       contains: [e.BACKSLASH_ESCAPE]
     }],
-    F = {
+    B = {
       begin: /\/[^\s](?=[^/\n]*\/)/,
       end: /\//,
-      contains: B
+      contains: F
     },
     V = e => {
       let t = r(e, /\//),
@@ -154,7 +154,7 @@ module.exports = function(e) {
       return {
         begin: t,
         end: n,
-        contains: [...B, {
+        contains: [...F, {
           scope: "comment",
           begin: `#(?!.*${n})`,
           end: /$/
@@ -163,7 +163,7 @@ module.exports = function(e) {
     },
     H = {
       scope: "regexp",
-      variants: [V("###"), V("##"), V("#"), F]
+      variants: [V("###"), V("##"), V("#"), B]
     },
     Y = {
       match: r(/`/, y, /`/)

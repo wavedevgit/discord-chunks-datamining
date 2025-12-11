@@ -42,7 +42,7 @@ function x(e) {
           className: f.discordIcon
         }), (0, a.jsx)(l.Text, {
           variant: "text-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: u.intl.string(u.t.uvGmCx)
         }), (0, a.jsxs)("div", {
           className: f.notice,
@@ -76,7 +76,7 @@ function x(e) {
         children: [(0, a.jsx)(l.Heading, {
           className: i()(h.__invalid_channelName, f.title),
           variant: "heading-lg/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: u.intl.string(u.t.JtSpD0)
         }), (0, a.jsx)(l.Text, {
           variant: "text-sm/normal",

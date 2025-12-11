@@ -30,8 +30,8 @@ function x(e) {
     description: c,
     targetType: d,
     index: u,
-    dndName: m,
-    onEdit: f,
+    dndName: f,
+    onEdit: m,
     onMove: x,
     disabled: j = false
   } = e, v = i.useRef(null), O = i.useRef(null), {
@@ -39,7 +39,7 @@ function x(e) {
     dragPreview: y,
     drop: N,
     isDragging: E
-  } = (0, p.Z)(v, d, u, x);
+  } = (0, b.Z)(v, d, u, x);
   return C(O), y(N(v)), (0, r.jsxs)("div", {
     ref: v,
     className: a()(h.card, {
@@ -56,7 +56,7 @@ function x(e) {
       }), !j && (0, r.jsx)("div", {
         ref: O,
         className: h.dragIconWrapper,
-        "data-dnd-name": m,
+        "data-dnd-name": f,
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -66,7 +66,7 @@ function x(e) {
     }), (0, r.jsxs)("div", {
       className: h.cardText,
       children: [(0, r.jsx)(o.Text, {
-        color: "header-primary",
+        color: "text-strong",
         variant: "text-md/semibold",
         children: s
       }), (0, r.jsx)(o.Text, {
@@ -78,8 +78,8 @@ function x(e) {
       className: h.cardActions,
       children: !j && (0, r.jsx)(o.P3F, {
         className: h.cardActionButton,
-        onClick: j ? true : f,
-        "aria-label": b.intl.string(b.t.Eoo8h6),
+        onClick: j ? true : m,
+        "aria-label": p.intl.string(p.t.Eoo8h6),
         "aria-disabled": j,
         children: (0, r.jsx)(o.vdY, {
           size: "xs",
@@ -98,13 +98,13 @@ function j(e) {
     onMove: l,
     guildId: o
   } = e, g = (0, c.Dt)(), {
-    isDragging: p
+    isDragging: b
   } = (0, s.f)(e => ({
     isDragging: e.getItemType() === g
-  })), b = (0, u.mY)();
+  })), p = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
     className: a()(h.container, {
-      [h.isDragging]: p
+      [h.isDragging]: b
     }),
     children: t.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [t > 0 ? (0, r.jsx)("div", {
@@ -113,14 +113,14 @@ function j(e) {
         guildId: o,
         emojiId: e.emoji_id,
         emojiName: e.emoji_name,
-        title: (0, m.Z)(e),
+        title: (0, f.Z)(e),
         description: e.description,
         targetType: g,
         index: t,
-        dndName: (0, f.Z)(e),
+        dndName: (0, m.Z)(e),
         onEdit: () => n(t),
         onMove: l,
-        disabled: b
+        disabled: p
       })]
     }, (0, d.ab)(e)))
   })
@@ -150,7 +150,7 @@ function v(e) {
       }), (0, r.jsx)("div", {
         className: h.cardText,
         children: (0, r.jsx)(o.Text, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-md/normal",
           children: n
         })

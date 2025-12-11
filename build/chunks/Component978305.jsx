@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
@@ -26,17 +26,17 @@ let O = e => {
   let {
     transitionState: r,
     onClose: t
-  } = e, l = (0, b.Z)(), [a, O] = o.useState(false), {
+  } = e, s = (0, b.Z)(), [a, O] = o.useState(false), {
     getLinkCode: j,
     isGetLinkCodeLoading: q
-  } = (0, C.G)({}), _ = (0, m.rW)(), N = (0, m.gU)(), z = o.useRef(N);
-  i()(!l, "FamilyCenterQRCodeModal should only be rendered for teens.");
+  } = (0, C.G)({}), _ = (0, x.rW)(), N = (0, x.gU)(), z = o.useRef(N);
+  i()(!s, "FamilyCenterQRCodeModal should only be rendered for teens.");
   let S = () => {
-    O(e => (u.default.track(x.rMx.FAMILY_CENTER_ACTION, {
-      action: a ? p.YC.HideQRCode : p.YC.RevealQRCode
+    O(e => (u.default.track(p.rMx.FAMILY_CENTER_ACTION, {
+      action: a ? m.YC.HideQRCode : m.YC.RevealQRCode
     }), !e)), a || setTimeout(() => {
       t()
-    }, p.f2)
+    }, m.f2)
   };
   (0, d.ZP)(() => {
     j()
@@ -58,7 +58,7 @@ let O = e => {
       children: [(0, n.jsx)(c.Text, {
         className: h.marginBottom8,
         variant: "text-lg/bold",
-        color: "header-primary",
+        color: "text-strong",
         children: y.intl.string(v.default.AVTZaN)
       }), (0, n.jsx)(c.Text, {
         className: h.marginBottom20,
@@ -70,13 +70,13 @@ let O = e => {
       }), (0, n.jsx)("div", {
         className: g.qrCodeContainer,
         children: (0, n.jsx)(c.P3F, {
-          className: s()(g.qrCodeObscure, {
+          className: l()(g.qrCodeObscure, {
             [g.visible]: E
           }),
           onClick: S,
           children: (0, n.jsx)(f.c2, {
             size: 272,
-            text: E ? _ : p.vH,
+            text: E ? _ : m.vH,
             overlaySize: f.cK.SIZE_60,
             className: g.qrCodeOverlay
           })

@@ -109,7 +109,7 @@ function k(e) {
     }
     let y = (0, T.WD)(t),
       O = E.Z.getChannel(S.default.castMessageIdAsChannelId(n)),
-      v = await B(t, [], true, () => {
+      v = await F(t, [], true, () => {
         let e = null != n ? P.ANM.CHANNEL_MESSAGE_THREADS(t.id, n) : P.ANM.CHANNEL_THREADS(t.id);
         return a.tn.post({
           url: e,
@@ -127,7 +127,7 @@ function k(e) {
 }
 
 function U(e, t, n, r, i) {
-  return B(e, [], true, () => a.tn.post({
+  return F(e, [], true, () => a.tn.post({
     url: P.ANM.CHANNEL_THREADS(e.id),
     body: {
       name: t,
@@ -181,7 +181,7 @@ function G(e) {
         reason: r
       }), i
     }
-    let C = await B(t, s, m, () => a.tn.post({
+    let C = await F(t, s, m, () => a.tn.post({
       url: v,
       body: S,
       rejectWithError: false
@@ -203,7 +203,7 @@ function Z(e, t, n, r, i) {
     location: R.dy.THREAD_CREATION
   })
 }
-async function B(e, t, n, r) {
+async function F(e, t, n, r) {
   let i, a = e.isForumLikeChannel();
   try {
     i = await r(), null == i.body ? s.Z.show({

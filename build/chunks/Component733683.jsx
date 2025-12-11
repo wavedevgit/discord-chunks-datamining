@@ -117,11 +117,11 @@ class E extends(r = Chunk473749.Component) {
     let {
       progress: t
     } = this.props;
-    if (null == e.name || e.key === p.Eu4.NONE) return null;
+    if (null == e.name || e.key === b.Eu4.NONE) return null;
     let n = Math.min(t, e.numRequired);
     return this.getTierDisabled(e) ? {
       title: null,
-      body: h.intl.formatToPlainString(b.default["9CtPjt"], {
+      body: h.intl.formatToPlainString(p.default["9CtPjt"], {
         perk: e.name
       })
     } : {
@@ -141,13 +141,13 @@ class E extends(r = Chunk473749.Component) {
       c = l >= e.numRequired,
       d = null != s && e.key === s.key,
       g = e.key === a[0].key,
-      f = this.getTierDisabled(e);
-    r = g ? x.tierFirst : f ? x.tierInProgress : d ? x.tierCurrent : c ? x.tierAccomplished : x.tierInProgress;
-    let p = e.y - (g ? 0 : C / 2),
-      b = this.state.tierMarkerActive >= t,
-      h = !g && d && b,
+      m = this.getTierDisabled(e);
+    r = g ? x.tierFirst : m ? x.tierInProgress : d ? x.tierCurrent : c ? x.tierAccomplished : x.tierInProgress;
+    let b = e.y - (g ? 0 : C / 2),
+      p = this.state.tierMarkerActive >= t,
+      h = !g && d && p,
       j = this.getTierMarkerTooltipText(e);
-    return (0, i.jsx)(m.AMe, {
+    return (0, i.jsx)(f.AMe, {
       from: {
         scale: 1
       },
@@ -166,10 +166,10 @@ class E extends(r = Chunk473749.Component) {
           children: (0, i.jsx)(o.animated.div, {
             className: r,
             style: {
-              top: p,
+              top: b,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
-            children: h && (0, i.jsx)(m.dz2, {
+            children: h && (0, i.jsx)(f.dz2, {
               size: "md",
               color: "currentColor",
               className: x.currentTierIcon
@@ -211,7 +211,7 @@ class E extends(r = Chunk473749.Component) {
         className: x.background,
         height: e,
         fill: "currentColor"
-      }), (0, i.jsx)(m.AMe, {
+      }), (0, i.jsx)(f.AMe, {
         from: {
           height: 0
         },

@@ -44,7 +44,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk838983 = require("./838983.js"),
   Chunk960324 = require("./960324.js");
 
-function F(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,7 +60,7 @@ function V(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      B(e, t, n[t])
     })
   }
   return e
@@ -131,12 +131,12 @@ function et(e) {
     placeholder: j,
     placeholderVersion: M,
     sourceMetadata: U
-  } = e, [G, B] = a.useState(y), F = null != d && null == d.proxyURL, V = a.useCallback(() => B(false), [B]), H = e => {
-    e.preventDefault(), e.stopPropagation(), null == S || S(false), B(true), F && (N.S.dispatch(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED), N.S.subscribeOnce(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
+  } = e, [G, F] = a.useState(y), B = null != d && null == d.proxyURL, V = a.useCallback(() => F(false), [F]), H = e => {
+    e.preventDefault(), e.stopPropagation(), null == S || S(false), F(true), B && (N.S.dispatch(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED), N.S.subscribeOnce(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V))
   };
   a.useEffect(() => () => {
-    F && N.S.unsubscribe(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
-  }, [F, V]);
+    B && N.S.unsubscribe(k.CkL.VIDEO_EMBED_PLAYBACK_STARTED, V)
+  }, [B, V]);
   let {
     width: Y,
     height: W
@@ -1047,7 +1047,7 @@ class er extends(r = Chunk473749.PureComponent) {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, F(this, "state", V({
+    super(...e), t = this, B(this, "state", V({
       isVisible: null == this.props.obscureReason,
       videoControlsShown: false,
       sourceMetadata: {
@@ -1057,15 +1057,15 @@ class er extends(r = Chunk473749.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, R.vP)(this.props.embed))), F(this, "onReveal", () => {
+    }, (0, R.vP)(this.props.embed))), B(this, "onReveal", () => {
       this.setState({
         isVisible: true
       })
-    }), F(this, "onToggleObscurity", () => {
+    }), B(this, "onToggleObscurity", () => {
       this.setState({
         isVisible: !this.state.isVisible
       })
-    }), F(this, "renderInlineMediaEmbed", function() {
+    }), B(this, "renderInlineMediaEmbed", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         {
           obscureReason: n,
@@ -1085,7 +1085,7 @@ class er extends(r = Chunk473749.PureComponent) {
         },
         children: t.renderMedia(e)
       })
-    }), F(this, "renderEmbedContent", function() {
+    }), B(this, "renderEmbedContent", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         {
           className: n,
@@ -1103,7 +1103,7 @@ class er extends(r = Chunk473749.PureComponent) {
           footer: m
         } = t.renderAll();
       return (0, i.jsx)("article", {
-        className: s()(n, Z.embedFull, B.markup, {
+        className: s()(n, Z.embedFull, F.markup, {
           [Z.isHidden]: e,
           [Z.spoilerEmbed]: a === f.wk.SPOILER,
           [Z.hiddenExplicitEmbed]: t.shouldObscure,
@@ -1128,7 +1128,7 @@ class er extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-F(er, "defaultProps", {
+B(er, "defaultProps", {
   hideMedia: false,
   allowFullScreen: true,
   maxThumbnailWidth: 80,

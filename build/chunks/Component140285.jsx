@@ -21,9 +21,9 @@ function u(e) {
   } = e, {
     editStateId: u,
     guildId: g
-  } = (0, l.N)(), [m, f] = s.GP(u, g);
+  } = (0, l.N)(), [f, m] = s.GP(u, g);
   return (0, r.jsx)(i.FXm, {
-    onChange: e => f(e),
+    onChange: e => m(e),
     options: [{
       name: d.intl.string(d.t["vs2T+B"]),
       value: a.I.SOME_CHANNELS_ACCESS,
@@ -33,7 +33,7 @@ function u(e) {
       value: a.I.ALL_CHANNELS_ACCESS,
       leadingIcon: (0, i.GSL)(o.Z)
     }],
-    value: m,
+    value: f,
     "aria-labelledby": t,
     disabled: n
   })

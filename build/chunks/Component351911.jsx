@@ -79,7 +79,7 @@ function w() {
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         className: Chunk65337.sourceOrPresetName,
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: L ? null != (i = null == Z ? true : Z.name) ? Chunk120356 : Chunk388032.intl.string(Chunk297940.default["hJMA+x"]) : M
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         className: Chunk65337.summaryDetail,

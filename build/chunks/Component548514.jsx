@@ -101,7 +101,7 @@ function T(e) {
       if (t && "true" === e.searchParams.get(O)) {
         e.searchParams.delete(O);
         let t = e.pathname + e.search;
-        (0, b.dL)(t), n()
+        (0, g.dL)(t), n()
       }
     }, [t, n]), {
       onClickInstallApplication: r.useCallback(() => {
@@ -187,7 +187,7 @@ let L = Chunk473749.forwardRef(function(e, t) {
       application_id: n.id
     }), (0, C.JG)((e = n.id, "".concat(location.protocol, "//").concat(location.host).concat(I.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e))), () => (0, c.showToast)((0, c.createToast)(S.intl.string(S.t["L/PwZf"]), c.ToastType.SUCCESS)))
   }, [n.id]), v = r.useCallback(() => {
-    let e = g.ZP.createFromServer(n);
+    let e = b.ZP.createFromServer(n);
     (0, f.uu)({
       application: e,
       entrypoint: "app_directory"
@@ -241,7 +241,7 @@ let L = Chunk473749.forwardRef(function(e, t) {
       if (u && l && t && null != i && null != m) {
         e.searchParams.delete(E);
         let t = e.pathname + e.search;
-        (0, b.dL)(t), h()
+        (0, g.dL)(t), h()
       }
     }, [u, l, i, m, h]);
     let f = r.useCallback(async () => {

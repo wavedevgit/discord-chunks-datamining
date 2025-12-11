@@ -45,23 +45,23 @@ function _(e) {
     guild: n,
     requireDescription: s
   } = e, c = i.useCallback(e => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       discoverySplash: e
     })
   }, []), d = i.useCallback(() => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       discoverySplash: null
     })
   }, []), u = i.useCallback(e => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       description: e
     })
   }, []), {
-    memberCount: p,
-    onlineCount: b
-  } = (0, a.cj)([m.Z], () => ({
-    memberCount: m.Z.getMemberCount(n.id),
-    onlineCount: m.Z.getOnlineCount(n.id)
+    memberCount: b,
+    onlineCount: p
+  } = (0, a.cj)([f.Z], () => ({
+    memberCount: f.Z.getMemberCount(n.id),
+    onlineCount: f.Z.getOnlineCount(n.id)
   }));
   return (0, r.jsxs)("div", {
     className: I.twoColumns,
@@ -70,7 +70,7 @@ function _(e) {
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.Heading, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           className: I.header,
           children: E.intl.string(E.t.LYju5J)
         }), (0, r.jsx)(o.Text, {
@@ -132,8 +132,8 @@ function _(e) {
     }), (0, r.jsx)(h.Z, {
       className: I.preview,
       guild: n,
-      memberCount: p,
-      presenceCount: b
+      memberCount: b,
+      presenceCount: p
     })]
   })
 }
@@ -150,7 +150,7 @@ function T(e) {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.Heading, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: I.header,
         children: E.intl.string(E.t["5b4VCV"])
       }), (0, r.jsx)(o.Text, {
@@ -207,24 +207,24 @@ function P(e) {
     guildMetadata: n,
     requireTag: l,
     error: a
-  } = e, [s, g] = i.useState(null), m = i.useCallback(e => {
+  } = e, [s, g] = i.useState(null), f = i.useCallback(e => {
     let r = Array.from(e),
       i = [...n.keywords].filter(e => !r.includes(e));
     g(null), (0, d.zH)(t, i)
-  }, [t, n]), f = i.useCallback(e => {
+  }, [t, n]), m = i.useCallback(e => {
     let {
       keywords: r
     } = n;
     !(r.length >= y.G7) && (r.includes(e) || (g(null), (0, d.zH)(t, [...r, e])))
-  }, [t, n]), p = i.useMemo(() => (0, b.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
+  }, [t, n]), b = i.useMemo(() => (0, p.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
     let t = n.keywords.length >= y.G7;
     return {
       text: e,
-      onClick: () => f(e),
+      onClick: () => m(e),
       disabled: t,
       tooltipText: t ? E.intl.string(E.t.Xx7XeB) : true
     }
-  }), [n.keywords, n.primaryCategoryId, f]), h = null != a ? a : s, x = i.useMemo(() => n.keywords.map(e => ({
+  }), [n.keywords, n.primaryCategoryId, m]), h = null != a ? a : s, x = i.useMemo(() => n.keywords.map(e => ({
     id: e,
     label: e
   })), [n.keywords]);
@@ -237,8 +237,8 @@ function P(e) {
         description: E.intl.string(E.t.ztiTDH),
         tagsLabel: E.intl.string(E.t["0PJZXj"]),
         tags: x,
-        onRemoveTag: m,
-        onAddTag: f,
+        onRemoveTag: f,
+        onAddTag: m,
         onAddTagError: g,
         maxTags: y.G7,
         maxTaxLength: y._0,
@@ -249,7 +249,7 @@ function P(e) {
         className: I.error,
         children: h
       }) : null]
-    }), p.length > 0 ? (0, r.jsxs)("div", {
+    }), b.length > 0 ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.Heading, {
         variant: "text-xs/bold",
         color: "text-muted",
@@ -258,7 +258,7 @@ function P(e) {
       }), (0, r.jsx)("div", {
         className: I.editableSection,
         children: (0, r.jsx)(u.j, {
-          pills: p
+          pills: b
         })
       })]
     }) : null]
@@ -279,7 +279,7 @@ function w(e) {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.Heading, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: I.header,
         children: E.intl.string(E.t.DhJ8ur)
       }), (0, r.jsx)(o.Text, {
@@ -308,7 +308,7 @@ function Z(e) {
   let {
     preferredLocale: t
   } = e, n = i.useMemo(() => (0, N.jb)(), []), l = i.useCallback(e => {
-    f.Z.updateGuild({
+    m.Z.updateGuild({
       preferredLocale: e
     })
   }, []);
@@ -317,7 +317,7 @@ function Z(e) {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.Heading, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: I.header,
         children: E.intl.string(E.t.pO60fy)
       }), (0, r.jsx)(o.Text, {
@@ -351,12 +351,12 @@ function D(e) {
     errors: l,
     guildMetadata: s,
     guild: o
-  } = (0, a.cj)([p.Z], () => {
+  } = (0, a.cj)([b.Z], () => {
     let {
       errors: e,
       guildMetadata: t,
       guild: n
-    } = p.Z.getProps();
+    } = b.Z.getProps();
     return {
       errors: e,
       guildMetadata: t,

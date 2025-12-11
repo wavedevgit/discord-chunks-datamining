@@ -143,7 +143,7 @@ function e_(e) {
     eR = (0, u.e7)([U.Z], () => U.Z.theme),
     ew = i.useRef((0, W.vx)(Z.Z.boostSlots)).current,
     eD = (0, u.e7)([A.Z], () => null != el ? A.Z.getGuild(el) : true, [el]),
-    ex = (0, u.e7)([F.Z], () => F.Z.defaultPaymentSourceId),
+    ex = (0, u.e7)([B.Z], () => B.Z.defaultPaymentSourceId),
     eL = (0, M.fL)(null != eC ? eC : eT ? ex : null),
     {
       paymentSources: ej,
@@ -152,15 +152,15 @@ function e_(e) {
       setIsSubmittingCurrentStep: eU,
       paymentAuthenticationState: eG,
       setPaymentSourceId: eZ,
-      isSubmittingCurrentStep: eB,
-      paymentError: eF,
+      isSubmittingCurrentStep: eF,
+      paymentError: eB,
       purchaseError: eV,
       purchaseErrorBlockRef: eH
     } = eL,
     eY = Object.keys(ej).length > 0,
     [eW, eK] = i.useState(em - ew.length),
     [ez, eq] = i.useState(false),
-    eQ = (0, u.e7)([B.Z], () => B.Z.popupCallbackCalled),
+    eQ = (0, u.e7)([F.Z], () => F.Z.popupCallbackCalled),
     eX = (0, v.V)(),
     eJ = i.useMemo(() => null != ey && eN && eX ? (0, L.g)(ey, eW) : [{
       planId: ee.Xh.PREMIUM_MONTH_GUILD,
@@ -229,8 +229,8 @@ function e_(e) {
     } = e9.current;
     (async () => {
       if (true === eQ) try {
-        if (null == B.Z.redirectedPaymentId) return;
-        await (0, _.OP)(B.Z.redirectedPaymentId), r(P.h8.CONFIRM), tr(R.A.COMPLETED), null != n && await ep(n, 0 !== eb), null == i || i()
+        if (null == F.Z.redirectedPaymentId) return;
+        await (0, _.OP)(F.Z.redirectedPaymentId), r(P.h8.CONFIRM), tr(R.A.COMPLETED), null != n && await ep(n, 0 !== eb), null == i || i()
       } catch (n) {
         tr(R.A.FAIL), s(n), Y.default.track($.rMx.PAYMENT_FLOW_FAILED, es(ea({}, e), {
           payment_error_code: null == n ? true : n.code,
@@ -416,7 +416,7 @@ function e_(e) {
           variant: "active",
           text: en.intl.string(en.t.eUEeCt),
           type: "submit",
-          loading: eB,
+          loading: eF,
           onClick: async () => {
             l()(null != eJ, "Missing newAdditionalPlans");
             let e = (0, w.m)(ej, ek);
@@ -495,7 +495,7 @@ function e_(e) {
           customCheckoutFlow: eI
         })
     }
-    let b = null != eF && null == (0, P.ly)(eF) ? eF : eV;
+    let b = null != eB && null == (0, P.ly)(eB) ? eB : eV;
     t = e4 === P.h8.ADD_PAYMENT_STEPS ? tE : (0, r.jsx)(k.Z, {
       hideBreadcrumbs: e4 === P.h8.CONFIRM,
       steps: te,

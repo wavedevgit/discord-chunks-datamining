@@ -49,8 +49,8 @@ function R(e) {
     planGroup: U,
     analyticsLocation: G,
     purchaseTokenAuthState: Z,
-    openInvoiceId: B,
-    metadata: F,
+    openInvoiceId: F,
+    metadata: B,
     backButtonEligible: V,
     disablePurchase: H,
     isTrial: Y = false,
@@ -124,10 +124,10 @@ function R(e) {
       priceOptions: z,
       paymentSource: eO,
       isPrepaidPaymentPastDue: eP,
-      openInvoiceId: B,
+      openInvoiceId: F,
       premiumSubscription: t,
       onNext: s,
-      metadata: F,
+      metadata: B,
       sku: ew,
       skuPricePreview: eD,
       purchaseType: X,
@@ -156,7 +156,7 @@ function R(e) {
     } = eM.current;
     eb && !el && null == t && e()
   }, [eb, el, t]);
-  let ek = null != B || X === N.GZQ.ONE_TIME && !el,
+  let ek = null != F || X === N.GZQ.ONE_TIME && !el,
     eU = V && !ek;
   return eb ? null : (0, r.jsxs)(u.mzw, {
     "data-migration-pending": true,

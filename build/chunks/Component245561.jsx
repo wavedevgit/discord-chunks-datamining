@@ -37,7 +37,7 @@ function d(e) {
     emojiContainerClassName: i,
     showsDescription: l = true,
     nameTextVariant: u = "text-md/medium",
-    nameTextColor: d = "header-primary"
+    nameTextColor: d = "text-strong"
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(c.container, n),
@@ -72,7 +72,7 @@ function f(e) {
     emojiContainerClassName: s,
     showsDescription: u = true,
     nameTextVariant: d = "text-md/medium",
-    nameTextColor: f = "header-primary"
+    nameTextColor: f = "text-strong"
   } = e;
   return (0, r.jsxs)("div", {
     className: a()(c.container, i),

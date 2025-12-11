@@ -77,8 +77,8 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
     } = (0, C.n)(n), {
       primaryColor: G,
       secondaryColor: Z
-    } = (0, S.Z)(null == L ? true : L.src), B = (0, a.e7)([h.default], () => h.default.locale), {
-      displayParticipants: F,
+    } = (0, S.Z)(null == L ? true : L.src), F = (0, a.e7)([h.default], () => h.default.locale), {
+      displayParticipants: B,
       participant1: V,
       participant2: H,
       numOtherParticipants: Y
@@ -97,13 +97,13 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       return (0, v.C4)({
         entry: n,
         applicationImageSrc: null == L ? true : L.src,
-        avatarSrcs: F.map(e => e.getAvatarURL(t.guild_id, 128)),
+        avatarSrcs: B.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
-        timestamp: (0, O.yh)(n, B),
+        timestamp: (0, O.yh)(n, F),
         colors: [G, Z],
         channelId: e
       })
-    }, [null == L ? true : L.src, t, F, n, B, Y, V, H, G, Z, j]), {
+    }, [null == L ? true : L.src, t, B, n, F, Y, V, H, G, Z, j]), {
       data: z
     } = (0, _.IX)(n.extra.application_id), q = (0, c.Z)({
       application: z,

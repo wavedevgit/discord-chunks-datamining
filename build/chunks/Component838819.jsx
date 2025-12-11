@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk399606 = require("./399606.js"),
   Chunk952265 = require("./952265.js"),
@@ -58,8 +58,8 @@ let H = e => {
       tab: t = N.AW.HOME
     } = e;
     (0, b.z)(p.f), (0, x.f)();
-    let n = (0, f.Z)((0, o.Z)()),
-      a = (0, s.e7)([h.default], () => h.default.getCurrentUser());
+    let n = (0, f.Z)((0, i.Z)()),
+      a = (0, s.e7)([C.default], () => C.default.getCurrentUser());
     (0, m.p2)();
     let c = (0, A.B)("CollectiblesShop"),
       {
@@ -115,7 +115,7 @@ let H = e => {
     } = (0, S.MV)(J);
     return (0, r.jsx)(g.Gt, {
       value: er,
-      children: (0, r.jsx)(C.k0, {
+      children: (0, r.jsx)(h.k0, {
         newValue: {
           sessionId: n,
           pageCategory: K,
@@ -127,7 +127,7 @@ let H = e => {
             onClose: R,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {
-              className: i()(Z.shop, {
+              className: o()(Z.shop, {
                 [w.customCursors]: c
               }),
               ref: en,
@@ -136,7 +136,7 @@ let H = e => {
                 handleTransition: $,
                 selectedTab: J
               }), (0, r.jsx)("div", {
-                className: i()(Z.shopViewWrapper, {
+                className: o()(Z.shopViewWrapper, {
                   [Z.visible]: X === N.f7.VISIBLE,
                   [Z.in]: X === N.f7.IN,
                   [Z.out]: X === N.f7.OUT

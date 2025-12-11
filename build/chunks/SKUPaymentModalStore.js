@@ -142,11 +142,11 @@ function Z() {
   v = null
 }
 
-function B(e) {
+function F(e) {
   C = e.isGift
 }
 
-function F(e) {
+function B(e) {
   let {
     locked: t
   } = e;
@@ -207,7 +207,7 @@ let H = new V(Chunk570140.Z, {
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: Z,
-  SKU_PURCHASE_UPDATE_IS_GIFT: B,
-  OVERLAY_SET_INPUT_LOCKED: F,
+  SKU_PURCHASE_UPDATE_IS_GIFT: F,
+  OVERLAY_SET_INPUT_LOCKED: B,
   GIFT_CODE_CREATE: k
 })

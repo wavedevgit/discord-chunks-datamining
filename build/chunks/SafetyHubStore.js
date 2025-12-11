@@ -107,14 +107,14 @@ function Z(e) {
   S = t
 }
 
-function B(e) {
+function F(e) {
   let {
     userInput: t
   } = e;
   I = t
 }
 
-function F(e) {
+function B(e) {
   let {} = e;
   O = true, v = null
 }
@@ -274,8 +274,8 @@ let en = new et(Chunk570140.Z, {
   SAFETY_HUB_APPEAL_OPEN: U,
   SAFETY_HUB_APPEAL_CLOSE: G,
   SAFETY_HUB_APPEAL_SIGNAL_SELECT: Z,
-  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: B,
-  SAFETY_HUB_REQUEST_REVIEW_START: F,
+  SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE: F,
+  SAFETY_HUB_REQUEST_REVIEW_START: B,
   SAFETY_HUB_REQUEST_REVIEW_SUCCESS: V,
   SAFETY_HUB_REQUEST_REVIEW_FAILURE: H,
   SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: Y,

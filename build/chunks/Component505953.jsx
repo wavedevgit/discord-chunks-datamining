@@ -156,7 +156,7 @@ function A(e) {
         })
       })]
     }), (0, r.jsx)(o.Text, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-sm/semibold",
       className: v.title,
       children: t.topic

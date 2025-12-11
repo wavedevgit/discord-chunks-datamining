@@ -378,7 +378,7 @@ function Q(e) {
       } = e;
       if (0 === t) return (0, i.jsx)(g.Heading, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: G.header,
         children: H.intl.string(H.t["9F90ic"])
       });

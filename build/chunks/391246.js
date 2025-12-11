@@ -39,8 +39,8 @@ var Chunk127849 = require("./127849.js"),
   U = k && k[R],
   G = Chunk127849[P],
   Z = G && G[R],
-  B = Object.prototype,
-  F = Chunk127849.Array,
+  F = Object.prototype,
+  B = Chunk127849.Array,
   V = Chunk127849.RangeError,
   H = Chunk46015(Chunk760751),
   Y = Chunk46015([].reverse),
@@ -100,7 +100,7 @@ if (Chunk848120) {
     return new M, new M(1.5), new M(NaN), 1 !== M.length || er && !A
   }) ? ((k = function(e) {
     return f(this, U), v(new M(m(e)), this, k)
-  })[R] = U, U.constructor = k, Chunk190289(k, M)) : er && A && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(Z) !== B && Chunk769827(Z, B);
+  })[R] = U, U.constructor = k, Chunk190289(k, M)) : er && A && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(Z) !== F && Chunk769827(Z, F);
   var ei = new G(new k(2)),
     ea = Chunk46015(Z.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk477732(Z, {
@@ -118,7 +118,7 @@ if (Chunk848120) {
   var t = m(e);
   j(this, {
     type: N,
-    bytes: H(F(t), 0),
+    bytes: H(B(t), 0),
     byteLength: t
   }), a || (this.byteLength = t, this.detached = false)
 })[R], Z = (G = function(e, t, n) {

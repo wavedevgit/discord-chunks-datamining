@@ -150,7 +150,7 @@ function U() {
 }
 
 function G(e) {
-  let t = B();
+  let t = F();
   return Object.keys(t).forEach(n => {
     e(t[n]) || delete t[n]
   }), t
@@ -162,10 +162,10 @@ function Z(e, t) {
   return null != (n = O[r]) ? n : v[r]
 }
 
-function B() {
+function F() {
   return m({}, v, O)
 }
-class F extends(r = Chunk442837.ZP.Store) {
+class B extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default);
     let e = Chunk433517.K.get(E);
@@ -175,10 +175,10 @@ class F extends(r = Chunk442837.ZP.Store) {
     return G(e => !e.isHidden())
   }
   getAllLibraryApplications() {
-    return B()
+    return F()
   }
   hasLibraryApplication() {
-    return Object.keys(B()).length > 0
+    return Object.keys(F()).length > 0
   }
   hasApplication(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
@@ -199,7 +199,7 @@ class F extends(r = Chunk442837.ZP.Store) {
         a = null != (r = O[i]) ? r : v[i];
       if (null != a && (0, d.Je)(a) && (t || !a.isHidden())) return a
     }
-    let i = B();
+    let i = F();
     for (let n in i)
       if (i[n].id === e) {
         let e = i[n];
@@ -216,7 +216,7 @@ class F extends(r = Chunk442837.ZP.Store) {
     return y
   }
   get entitledBranchIds() {
-    return a()(B()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
+    return a()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
     return C
@@ -227,8 +227,8 @@ class F extends(r = Chunk442837.ZP.Store) {
     })
   }
 }
-_(F, "displayName", "LibraryApplicationStore");
-let V = new F(Chunk570140.Z, {
+_(B, "displayName", "LibraryApplicationStore");
+let V = new B(Chunk570140.Z, {
   LOGOUT: R,
   LIBRARY_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: D,

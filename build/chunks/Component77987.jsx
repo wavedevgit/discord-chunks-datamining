@@ -18,9 +18,9 @@ function c(e, t) {
   };
 
   function d(n) {
-    return !(0, i.$8)() && r.default.getLoginStatus() !== s.u34.LOGGING_IN && r.default.allowLogoutRedirect() ? null != t ? (0, a.jsx)(t, {
-      renderRedirect: (0, a.jsx)(o.Z, {})
-    }) : (0, a.jsx)(o.Z, {}) : (0, a.jsx)(e, function(e) {
+    return !(0, o.$8)() && r.default.getLoginStatus() !== s.u34.LOGGING_IN && r.default.allowLogoutRedirect() ? null != t ? (0, a.jsx)(t, {
+      renderRedirect: (0, a.jsx)(i.Z, {})
+    }) : (0, a.jsx)(i.Z, {}) : (0, a.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           a = Object.keys(n);

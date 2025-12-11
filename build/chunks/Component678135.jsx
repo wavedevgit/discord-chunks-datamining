@@ -48,8 +48,8 @@ function I(e) {
     pendingDisplayNameStyles: U,
     avatarClassName: G,
     containerClassName: Z,
-    isTryItOut: B = false,
-    disabledInputs: F = false,
+    isTryItOut: F = false,
+    disabledInputs: B = false,
     hideCustomStatus: V = false,
     hideBioSection: H = false,
     hideMessageInput: Y = true,
@@ -101,8 +101,8 @@ function I(e) {
         canUsePremiumCustomization: T,
         pendingBanner: A,
         pendingAccentColor: N,
-        isTryItOut: B,
-        disabledInputs: F,
+        isTryItOut: F,
+        disabledInputs: B,
         onUpsellClick: () => null == C ? true : C({
           object: y.qAy.EDIT_PROFILE_BANNER
         })
@@ -116,15 +116,15 @@ function I(e) {
         previewTheme: en,
         previewPrimaryColor: er,
         className: G,
-        disabledInputs: F,
-        isTryItOut: B,
+        disabledInputs: B,
+        isTryItOut: F,
         onUpsellClick: () => null == C ? true : C({
           object: y.qAy.AVATAR
         })
       }), !V && (0, r.jsx)(p.Z, {
         user: i,
         themeType: O.l.POPOUT,
-        disableToolbar: F
+        disableToolbar: B
       })]
     }), (0, r.jsx)(E.Z, {
       user: i,
@@ -137,7 +137,7 @@ function I(e) {
       pendingPronouns: R,
       pendingLegacyUsernameDisabled: k,
       pendingDisplayNameStyles: U,
-      isTryItOut: B,
+      isTryItOut: F,
       hideBioSection: H,
       pendingBadges: W,
       shouldOpenBadgeTooltip: K

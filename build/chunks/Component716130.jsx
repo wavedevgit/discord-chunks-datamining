@@ -58,8 +58,8 @@ function O(e) {
     guild: t,
     prejoinOnly: n,
     postjoinOnly: l
-  } = e, c = (0, s.e7)([f.Z], () => f.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
-    drag: p,
+  } = e, c = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
+    drag: b,
     drop: j,
     dragSourcePosition: v,
     setIsDraggable: O
@@ -74,16 +74,16 @@ function O(e) {
   return i.useEffect(() => {
     O(false)
   }, [O]), i.useEffect(() => {
-    p(j(C))
-  }, [p, j, C]), (0, r.jsxs)("div", {
+    b(j(C))
+  }, [b, j, C]), (0, r.jsxs)("div", {
     ref: C,
     className: a()(x.separatorSection, {
       [x.dropIndicatorBefore]: null != v && g < v,
       [x.dropIndicatorAfter]: null != v && g > v
     }),
-    children: [!l && u.length < b.b3 ? (0, r.jsxs)(o.P3F, {
+    children: [!l && u.length < p.b3 ? (0, r.jsxs)(o.P3F, {
       className: x.addPrompt,
-      onClick: () => (0, m.tS)(t, [...c, (0, b.yZ)(true)], false),
+      onClick: () => (0, f.tS)(t, [...c, (0, p.yZ)(true)], false),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
@@ -118,12 +118,12 @@ function C(e) {
     postjoinOnly: i,
     includeCount: l,
     singleColumn: a
-  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([f.Z], () => f.Z.editedOnboardingPrompts), y = C.filter(e => e.inOnboarding), N = C.filter(e => true !== e.inOnboarding), E = [...y.map(e => ({
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), y = C.filter(e => e.inOnboarding), N = C.filter(e => true !== e.inOnboarding), E = [...y.map(e => ({
     id: e.id,
     data: e
   })), {
     id: "separator",
-    data: (0, b.ae)()
+    data: (0, p.ae)()
   }, ...N.map(e => ({
     id: e.id,
     data: e
@@ -140,13 +140,13 @@ function C(e) {
         inOnboarding: false,
         required: false
       }));
-    if (n.length > b.b3) return void c.Z.show({
+    if (n.length > p.b3) return void c.Z.show({
       title: h.intl.string(h.t.Cxtq5x),
       body: h.intl.formatToPlainString(h.t["pkbZ+U"], {
-        numQuestions: b.b3
+        numQuestions: p.b3
       })
     });
-    (0, m.tS)(d, [...n, ...r])
+    (0, f.tS)(d, [...n, ...r])
   });
   return null == d ? null : (0, r.jsxs)(r.Fragment, {
     children: [i ? null : (0, r.jsxs)(r.Fragment, {
@@ -160,7 +160,7 @@ function C(e) {
           className: x.subtitle,
           children: h.intl.string(h.t.QvCcYe)
         })]
-      }), y.map((e, t) => (0, r.jsx)(p.Z, {
+      }), y.map((e, t) => (0, r.jsx)(b.Z, {
         guild: d,
         prompt: e,
         disableAutofocus: n,
@@ -177,7 +177,7 @@ function C(e) {
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [N.map((e, t) => (0, r.jsx)(p.Z, {
+      children: [N.map((e, t) => (0, r.jsx)(b.Z, {
         guild: d,
         prompt: e,
         promptIndex: t + y.length,
@@ -185,9 +185,9 @@ function C(e) {
         onPromptDragStart: I,
         onPromptDragReset: S,
         onPromptDragComplete: _
-      }, e.id)), C.length < b.YW ? (0, r.jsxs)(o.P3F, {
+      }, e.id)), C.length < p.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,
-        onClick: () => (0, m.tS)(d, [...C, (0, b.yZ)(false)], false),
+        onClick: () => (0, f.tS)(d, [...C, (0, p.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",

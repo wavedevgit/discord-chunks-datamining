@@ -1,7 +1,7 @@
 /** Chunk was on 92504 **/
 /** chunk id: 680474, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk195006 = require("./195006.js");
 
-function b(e) {
+function g(e) {
   let {
     application: t
   } = e, n = r.useMemo(() => {
@@ -45,7 +45,7 @@ function b(e) {
         className: f.divider
       }), (0, a.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: h.intl.string(h.t["mD+J/i"])
       }), (0, a.jsx)(u.Z, {
         application: t,

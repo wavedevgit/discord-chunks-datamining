@@ -145,7 +145,7 @@ let M = (0, Chunk473749.createContext)(null),
     return L.createElement(d.yF, {
       content: u,
       createCollection: () => new j
-    }, n => L.createElement(B, {
+    }, n => L.createElement(F, {
       props: e,
       forwardedRef: t,
       selectionState: r,
@@ -153,7 +153,7 @@ let M = (0, Chunk473749.createContext)(null),
     }))
   });
 
-function B({
+function F({
   props: e,
   forwardedRef: t,
   selectionState: n,
@@ -194,8 +194,8 @@ function B({
     }, T, t),
     k = T.selectionManager,
     Z = !!(null == x ? true : x.useDraggableCollectionState),
-    B = !!(null == x ? true : x.useDroppableCollectionState);
-  (0, L.useRef)(Z), (0, L.useRef)(B), (0, L.useEffect)(() => {}, [Z, B]);
+    F = !!(null == x ? true : x.useDroppableCollectionState);
+  (0, L.useRef)(Z), (0, L.useRef)(F), (0, L.useEffect)(() => {}, [Z, F]);
   let V = false,
     H = null,
     Y = (0, L.useRef)(null);
@@ -210,7 +210,7 @@ function B({
       ref: Y
     }, x.renderDragPreview) : null
   }
-  if (B && x) {
+  if (F && x) {
     d = x.useDroppableCollectionState({
       collection: T.collection,
       selectionManager: k
@@ -252,7 +252,7 @@ function B({
     tableLayout: "fixed",
     width: "fit-content"
   }));
-  let $ = F("table"),
+  let $ = B("table"),
     ee = (0, w.z)(e, {
       global: true
     });
@@ -288,7 +288,7 @@ function B({
   })))), H)
 }
 
-function F(e) {
+function B(e) {
   let {
     isVirtualized: t
   } = (0, L.useContext)(a.Qk);
@@ -308,7 +308,7 @@ let Y = (0, Chunk406581.IW)(H, (e, t) => {
         throw Error("Unsupported node type in TableHeader: " + e.type)
       }, [])
     }),
-    i = F("thead"),
+    i = B("thead"),
     {
       rowGroupProps: a
     } = (0, O.LA)(),
@@ -359,7 +359,7 @@ function W({
     {
       checkboxProps: c
     } = (0, I.j)(n),
-    u = F("tr");
+    u = B("tr");
   return L.createElement(u, {
     ...l,
     ref: t
@@ -429,7 +429,7 @@ let z = (0, Chunk406581.G5)(K, (e, t, n) => {
       ...O,
       width: _.getColumnWidth(n.key)
     });
-    let S = F("th"),
+    let S = B("th"),
       I = (0, w.z)(e, {
         global: true
       });
@@ -487,8 +487,8 @@ let X = (0, Chunk406581.IW)(Q, (e, t) => {
       defaultClassName: "react-aria-TableBody",
       values: h
     }),
-    E = F("tr"),
-    b = F("td"),
+    E = B("tr"),
+    b = B("td"),
     v = c.columnCount;
   if (m && e.renderEmptyState && i) {
     let t = {},
@@ -508,7 +508,7 @@ let X = (0, Chunk406581.IW)(Q, (e, t) => {
   }
   let {
     rowGroupProps: S
-  } = (0, O.LA)(), I = F("tbody"), T = (0, w.z)(e, {
+  } = (0, O.LA)(), I = B("tbody"), T = (0, w.z)(e, {
     global: true
   });
   return L.createElement(I, {
@@ -595,7 +595,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
   (0, L.useEffect)(() => {
     _ && Z.current
   }, []);
-  let B = _ && _.isDragging(n.key),
+  let F = _ && _.isDragging(n.key),
     {
       children: V,
       ...H
@@ -611,14 +611,14 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
         isFocusVisible: T,
         selectionMode: f.selectionManager.selectionMode,
         selectionBehavior: f.selectionManager.selectionBehavior,
-        isDragging: B,
+        isDragging: F,
         isDropTarget: null == u ? true : u.isDropTarget,
         isFocusVisibleWithin: R,
         id: n.key
       }
     }),
-    W = F("tr"),
-    K = F("td"),
+    W = B("tr"),
+    K = B("td"),
     z = (0, w.z)(e, {
       global: true
     });
@@ -647,7 +647,7 @@ let $ = (0, Chunk406581.IW)(J, (e, t, n) => {
     "data-focused": O.isFocused || true,
     "data-focus-visible": T || true,
     "data-pressed": O.isPressed || true,
-    "data-dragging": B || true,
+    "data-dragging": F || true,
     "data-drop-target": (null == u ? true : u.isDropTarget) || true,
     "data-selection-mode": "none" === f.selectionManager.selectionMode ? true : f.selectionManager.selectionMode,
     "data-focus-visible-within": R || true
@@ -725,7 +725,7 @@ let et = (0, Chunk406581.G5)(ee, (e, t, n) => {
       isHovered: h,
       id: n.key
     }
-  }), b = F("td"), O = (0, w.z)(e, {
+  }), b = B("td"), O = (0, w.z)(e, {
     global: true
   });
   return delete O.id, L.createElement(b, {
@@ -772,7 +772,7 @@ function er(e, t) {
     values: {
       isDropTarget: r
     }
-  }), u = F("tr"), d = F("td");
+  }), u = B("tr"), d = B("td");
   return L.createElement(u, {
     ...(0, w.z)(e, {
       global: true
@@ -816,8 +816,8 @@ function ea() {
     {
       visuallyHiddenProps: o
     } = (0, Chunk485853.S)(),
-    l = F("tr"),
-    c = F("td");
+    l = B("tr"),
+    c = B("td");
   return !Chunk110294 && Chunk900090["aria-hidden"] ? null : Chunk473749.createElement(Chunk913074, {
     role: "row",
     "aria-hidden": Chunk900090["aria-hidden"],
@@ -863,8 +863,8 @@ function ea() {
       defaultClassName: "react-aria-TableLoadingIndicator",
       values: null
     }),
-    m = F("tr"),
-    h = F("td"),
+    m = B("tr"),
+    h = B("td"),
     g = {},
     E = {},
     b = {};

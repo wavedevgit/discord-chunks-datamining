@@ -103,15 +103,15 @@ i.prototype.parse = function(e, t, n) {
       }
     this.hostname.length > d ? this.hostname = "" : this.hostname = this.hostname.toLowerCase(), R || (this.hostname = r.toASCII(this.hostname));
     var Z = this.port ? ":" + this.port : "",
-      B = this.hostname || "";
-    this.host = B + Z, this.href += this.host, R && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== y[0] && (y = "/" + y))
+      F = this.hostname || "";
+    this.host = F + Z, this.href += this.host, R && (this.hostname = this.hostname.substr(1, this.hostname.length - 2), "/" !== y[0] && (y = "/" + y))
   }
   if (!_[S])
     for (var N = 0, D = l.length; N < D; N++) {
-      var F = l[N];
-      if (false !== y.indexOf(F)) {
-        var V = encodeURIComponent(F);
-        V === F && (V = escape(F)), y = y.split(F).join(V)
+      var B = l[N];
+      if (false !== y.indexOf(B)) {
+        var V = encodeURIComponent(B);
+        V === B && (V = escape(B)), y = y.split(B).join(V)
       }
     }
   var H = y.indexOf("#");

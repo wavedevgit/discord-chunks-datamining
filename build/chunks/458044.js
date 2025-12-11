@@ -30,7 +30,7 @@ function f(t) {
       activeAgo: a.intl.formatToPlainString(a.t.N9M4N1, {
         count: 10
       }),
-      attachment: r
+      attachment: i
     }, {
       user: {
         name: "skaterdood12",
@@ -67,7 +67,7 @@ function f(t) {
       activeAgo: a.intl.formatToPlainString(a.t.p0KedC, {
         count: 1
       }),
-      attachment: i
+      attachment: r
     }],
     postPreview: {
       title: a.intl.string(a.t["5GM0TY"]),

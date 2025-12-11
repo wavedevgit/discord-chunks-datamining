@@ -62,15 +62,15 @@ function I(e) {
   var t;
   let {
     pendingState: l,
-    dirtyState: b,
+    dirtyState: p,
     originalGuild: x,
     settingsGuild: I,
     settingsMetadata: S,
     settingsProfile: _
-  } = e, T = I.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = I.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
+  } = e, T = I.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = I.features.has(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, f.A)({
     guildId: I.id
   })) ? t : 0, L = i.useCallback(() => {
-    R(null), p.Z.init(T, O.pNK.ACCESS)
+    R(null), b.Z.init(T, O.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
     try {
       w(true), await e(), R(null)
@@ -79,7 +79,7 @@ function I(e) {
     }
   }, []), G = i.useCallback(async e => {
     try {
-      await p.Z.saveGuild(T, e, {
+      await b.Z.saveGuild(T, e, {
         throwErr: true
       })
     } catch (e) {
@@ -119,7 +119,7 @@ function I(e) {
             features: e
           })
         }
-        b.verificationDirty && await U(t, r, e)
+        p.verificationDirty && await U(t, r, e)
       })
     } else if (l.joinType === j.A.APPLY) {
       let {
@@ -133,7 +133,7 @@ function I(e) {
             features: e
           })
         }
-        b.verificationDirty && await M([...t], true, e), b.profileDirty && null != _ && await (0, f.pV)(I.id, {
+        p.verificationDirty && await M([...t], true, e), p.profileDirty && null != _ && await (0, m.pV)(I.id, {
           visibility: _.visibility
         })
       })
@@ -143,7 +143,7 @@ function I(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (b.verificationDirty && await U(t, r, e), b.guildDirty) {
+        if (p.verificationDirty && await U(t, r, e), p.guildDirty) {
           (0, h.UA)(I, x);
           let e = new Set(I.features);
           e.add(O.GuildFeatures.DISCOVERABLE), e.delete(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
@@ -162,7 +162,7 @@ function I(e) {
         }
       })
     }
-  }, [l, k, I, b, G, U, _, M, x, S]), F = i.useCallback(() => {
+  }, [l, k, I, p, G, U, _, M, x, S]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {

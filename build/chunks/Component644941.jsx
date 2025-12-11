@@ -247,7 +247,7 @@ function ei(e) {
     let {
       applicationId: t,
       analyticsLocations: n
-    } = e, a = (0, y.q)(t), i = (0, v.Z)({
+    } = e, a = (0, I.q)(t), i = (0, v.Z)({
       application: a,
       analyticsLocations: n
     });
@@ -312,10 +312,10 @@ function er(e) {
     trackExternalAction: u
   } = e, {
     clientThemesClassName: f
-  } = (0, I.ZP)(), v = (0, m.e7)([N.default], () => N.default.locale), h = i.useMemo(() => (0, G.fP)(), []), j = (0, m.Wu)([M.Z], () => {
+  } = (0, O.ZP)(), v = (0, m.e7)([N.default], () => N.default.locale), h = i.useMemo(() => (0, G.fP)(), []), j = (0, m.Wu)([M.Z], () => {
     var e;
     return (null != (e = M.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
-  }), [b, E] = i.useState(null), C = (0, L.N)(n), [S, k] = i.useState(null), T = (0, y.q)(n), _ = (0, m.e7)([w.Z], () => w.Z.getGame(n)), Z = null != (t = null == _ ? true : _.name) ? t : null == T ? true : T.name, D = (e, t) => {
+  }), [b, E] = i.useState(null), C = (0, L.N)(n), [S, k] = i.useState(null), T = (0, I.q)(n), _ = (0, m.e7)([w.Z], () => w.Z.getGame(n)), Z = null != (t = null == _ ? true : _.name) ? t : null == T ? true : T.name, D = (e, t) => {
     var a;
     (0, G.UE)({
       gameName: null != Z ? Z : "",
@@ -334,8 +334,8 @@ function er(e) {
       gameName: null != Z ? Z : "",
       authorId: o,
       profileType: G.j7.FullProfile
-    }), (0, O.Jn)()
-  }), (0, y.Z)(j), i.useEffect(() => {
+    }), (0, y.Jn)()
+  }), (0, I.Z)(j), i.useEffect(() => {
     v.startsWith("en") || (null == _ ? true : _.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([n], {
       forceFetch: true
     })
@@ -418,7 +418,7 @@ function el(e) {
     transitionState: n
   } = e, {
     clientThemesClassName: i
-  } = (0, I.ZP)(), r = (0, y.q)(t), l = (0, m.e7)([w.Z], () => w.Z.getGame(t));
+  } = (0, O.ZP)(), r = (0, I.q)(t), l = (0, m.e7)([w.Z], () => w.Z.getGame(t));
   return null == r || null == l ? null : (0, a.jsxs)(g.Y0X, {
     transitionState: n,
     size: g.CgR.DYNAMIC,

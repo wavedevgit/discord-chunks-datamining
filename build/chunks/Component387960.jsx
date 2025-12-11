@@ -23,10 +23,10 @@ let x = [],
   j = function(e) {
     let {
       guildId: t
-    } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([m.Z], () => {
+    } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([f.Z], () => {
       var e, t;
-      return null != (t = null == (e = m.Z.getSettings().resourceChannels) ? true : e.map(e => e.channelId)) ? t : x
-    }), v = (0, a.Wu)([m.Z], () => m.Z.getDismissedSuggestedChannelIds(t)), O = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), C = i.useMemo(() => (0, l.chain)(O).filter(e => e.channel.type === p.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(p.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(p.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [O, v, null == n ? true : n.rulesChannelId, j]), y = i.useCallback(() => {
+      return null != (t = null == (e = f.Z.getSettings().resourceChannels) ? true : e.map(e => e.channelId)) ? t : x
+    }), v = (0, a.Wu)([f.Z], () => f.Z.getDismissedSuggestedChannelIds(t)), O = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), C = i.useMemo(() => (0, l.chain)(O).filter(e => e.channel.type === b.d4z.GUILD_TEXT && e.channel.id !== (null == n ? true : n.rulesChannelId) && !v.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(b.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(b.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [O, v, null == n ? true : n.rulesChannelId, j]), y = i.useCallback(() => {
       let e = C.map(e => e.channel.id);
       (0, g.q6)(t, e)
     }, [t, C]);
@@ -35,13 +35,13 @@ let x = [],
         className: h.suggestedChannelsSection,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          children: b.intl.string(b.t.WThgAR)
+          children: p.intl.string(p.t.WThgAR)
         }), (0, r.jsxs)("div", {
           className: h.suggestedChannelsHeader,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: b.intl.string(b.t.YtNI8C)
+            children: p.intl.string(p.t.YtNI8C)
           }), (0, r.jsxs)(s.P3F, {
             className: h.suggestedChannelsDismiss,
             onClick: y,
@@ -52,12 +52,12 @@ let x = [],
             }), (0, r.jsx)(s.Text, {
               variant: "text-xs/semibold",
               color: "text-brand",
-              children: b.intl.string(b.t.aLqZTl)
+              children: p.intl.string(p.t.aLqZTl)
             })]
           })]
         }), (0, r.jsx)("div", {
           className: h.suggestedChannels,
-          children: C.map((e, t) => (0, r.jsx)(f.Z, {
+          children: C.map((e, t) => (0, r.jsx)(m.Z, {
             channel: e.channel,
             end: t < C.length - 1
           }, e.channel.id))

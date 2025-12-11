@@ -139,9 +139,9 @@ function q(e) {
       currentSubscription: n,
       defaultPlanId: er
     }), [en, n, er, ei]);
-  t = z || eE ? F.intl.string(F.t.nyzoFb) : el ? F.intl.formatToPlainString(B.default["3m9DJK"], {
+  t = z || eE ? B.intl.string(B.t.nyzoFb) : el ? B.intl.formatToPlainString(F.default["3m9DJK"], {
     premiumGroupProductName: (0, G.sO)()
-  }) : (0, P.PV)(w) ? (0, P.W_)(n, ef) : F.intl.formatToPlainString(F.t["sBpy9/"], {
+  }) : (0, P.PV)(w) ? (0, P.W_)(n, ef) : B.intl.formatToPlainString(B.t["sBpy9/"], {
     planName: ef.name
   });
   let ey = null;
@@ -194,7 +194,7 @@ function q(e) {
     }), el && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/medium",
-        children: F.intl.formatToPlainString(B.default["h1i+H8"], {
+        children: B.intl.formatToPlainString(F.default["h1i+H8"], {
           premiumGroupProductName: (0, G.sO)(),
           cooldownMonths: G.T9
         })
@@ -205,7 +205,7 @@ function q(e) {
     }), (0, r.jsx)("div", {
       className: H.paymentSourceWrapper,
       children: (0, r.jsx)(_.ZP, {
-        label: F.intl.string(F.t["mmDvV+"]),
+        label: B.intl.string(B.t["mmDvV+"]),
         paymentSources: Object.values(a),
         selectedPaymentSourceId: eu,
         onChange: h,
@@ -221,7 +221,7 @@ function q(e) {
       currencies: W,
       className: H.currencyWrapper,
       children: (0, r.jsx)(f.Z, {
-        label: F.intl.string(F.t["/AAR02"]),
+        label: B.intl.string(B.t["/AAR02"]),
         selectedCurrency: s.currency,
         currencies: W,
         onChange: K,
@@ -358,7 +358,7 @@ function X(e) {
     }), (0, r.jsxs)(D.aO, {
       className: o()(H.invoice, h),
       children: [(0, r.jsx)(D.Z9, {
-        children: F.intl.string(F.t["2eh+Co"])
+        children: B.intl.string(B.t["2eh+Co"])
       }), (0, r.jsx)(k.Lu, {
         invoice: I,
         newPlan: a,
@@ -482,11 +482,11 @@ function $(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: V.renewalInvoiceDate,
-      children: F.intl.string(F.t.spIYou)
+      children: B.intl.string(B.t.spIYou)
     }), (0, r.jsxs)(D.aO, {
       className: o()(H.invoice, c),
       children: [(0, r.jsx)(D.Z9, {
-        children: F.intl.string(F.t["2eh+Co"])
+        children: B.intl.string(B.t["2eh+Co"])
       }), (0, r.jsx)(k.By, {
         invoice: f,
         isPrepaidPaymentSource: b
@@ -543,13 +543,13 @@ function ee(e) {
     className: H.bodyText,
     children: [(0, r.jsx)("div", {
       className: V.renewalInvoiceDate,
-      children: F.intl.format(F.t["+y0Tjy"], {
+      children: B.intl.format(B.t["+y0Tjy"], {
         renewalDate: b
       })
     }), (0, r.jsxs)(D.aO, {
       className: o()(H.invoice, p),
       children: [(0, r.jsx)(D.Z9, {
-        children: F.intl.string(F.t.iqhIp4)
+        children: B.intl.string(B.t.iqhIp4)
       }), (0, r.jsx)(D.B1, {
         label: t,
         value: (0, P.PK)(a, c, true)

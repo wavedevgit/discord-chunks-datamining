@@ -150,7 +150,7 @@ function Z(e) {
   })).values()]
 }
 
-function B(e) {
+function F(e) {
   let t = O[e];
   if (null == t) return;
   let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
@@ -160,7 +160,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   let {
     guildId: t,
     userId: n,
@@ -309,7 +309,7 @@ function K(e) {
       hiddenActivities: o,
       processedAtTimestamp: s
     }), i.add(t.id))
-  }), i.delete(r), i.forEach(B)
+  }), i.delete(r), i.forEach(F)
 }
 
 function z(e) {
@@ -332,7 +332,7 @@ function q(e) {
       hiddenActivities: a,
       processedAtTimestamp: o
     } = e;
-    null != t && F({
+    null != t && B({
       guildId: E.ME,
       userId: t.id,
       status: n,
@@ -357,7 +357,7 @@ function Q(e) {
       hiddenActivities: o,
       processedAtTimestamp: s
     } = e;
-    F({
+    B({
       guildId: t.id,
       userId: n.id,
       status: r,
@@ -398,7 +398,7 @@ function $(e) {
       hiddenActivities: o,
       processedAtTimestamp: s
     } = e;
-    return F({
+    return B({
       guildId: null != t ? t : E.ME,
       userId: n.id,
       status: r,
@@ -416,7 +416,7 @@ function ee(e) {
     members: n
   } = e;
   n.forEach(e => {
-    null != e.presence && F({
+    null != e.presence && B({
       guildId: t,
       userId: e.user_id,
       status: e.presence.status,
@@ -434,7 +434,7 @@ function et(e) {
     addedMembers: n
   } = e;
   null == n || n.forEach(e => {
-    null != e.presence && F({
+    null != e.presence && B({
       guildId: t,
       userId: e.userId,
       status: e.presence.status,

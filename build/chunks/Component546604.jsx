@@ -33,26 +33,26 @@ function Z(e) {
     onClose: O
   } = e, C = (0, o.e7)([h.Z], () => h.Z.getGuildProduct(Z));
   i()(null != C, "guildProductListing cannot be null"), (0, u.Z)({
-    type: l.ImpressionTypes.MODAL,
-    name: l.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
+    type: s.ImpressionTypes.MODAL,
+    name: s.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
     properties: {
       guild_product_listing_id: Z,
       has_entitlement: true === C.has_entitlement,
       location: _
     }
   });
-  let y = null != (t = (0, p.C)(C)) ? t : "",
-    I = (0, p.k)(C),
+  let I = null != (t = (0, j.C)(C)) ? t : "",
+    y = (0, j.k)(C),
     L = (0, o.e7)([f.Z], () => f.Z.getGuild(N)),
-    D = (0, b.Z)({
+    D = (0, g.Z)({
       guildId: N,
       guildProductListingId: Z,
       sourceAnalyticsLocations: d.Z.GUILD_PRODUCT_INFO_MODAL
     });
-  return (0, a.jsxs)(s.Modal, {
+  return (0, a.jsxs)(l.Modal, {
     title: C.name,
-    subtitle: g.intl.format(g.t.xImSei, {
-      productType: y,
+    subtitle: b.intl.format(b.t.xImSei, {
+      productType: I,
       personName: null != (n = null == L ? true : L.name) ? n : ""
     }),
     size: "md",
@@ -63,8 +63,8 @@ function Z(e) {
     actionBarInput: (0, a.jsx)(c.Text, {
       tag: "div",
       variant: "heading-xl/semibold",
-      color: "header-primary",
-      children: I
+      color: "text-strong",
+      children: y
     }),
     children: [(0, a.jsx)(x.e, {
       height: 267,
@@ -73,7 +73,7 @@ function Z(e) {
       alt: ""
     }), (0, a.jsxs)("div", {
       className: v.body,
-      children: [(0, a.jsx)(j.Z, {
+      children: [(0, a.jsx)(p.Z, {
         listing: C
       }), (0, a.jsx)(c.LZC, {
         size: 16
@@ -83,8 +83,8 @@ function Z(e) {
         size: 16
       }), (0, a.jsx)(c.Heading, {
         variant: "heading-lg/medium",
-        color: "header-primary",
-        children: g.intl.string(g.t.TNnDJs)
+        color: "text-strong",
+        children: b.intl.string(b.t.TNnDJs)
       }), (0, a.jsx)(c.LZC, {
         size: 12
       }), (0, a.jsx)(m.Z, {

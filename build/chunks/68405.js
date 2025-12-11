@@ -2,7 +2,7 @@
 /** chunk id: 68405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  PF: () => F,
+  PF: () => B,
   R7: () => M,
   Tg: () => U,
   UU: () => G,
@@ -11,7 +11,7 @@ require.d(exports, {
   iy: () => Z,
   mO: () => L,
   t1: () => P,
-  uL: () => B,
+  uL: () => F,
   v2: () => j,
   yC: () => x
 }), require("./704826.js"), require("./35282.js");
@@ -295,7 +295,7 @@ function Z(e) {
   return null == t ? e : (0, u.MO)(t) ? (0, u.q5)(t).toString() : e
 }
 
-function B(e) {
+function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0;
@@ -312,7 +312,7 @@ function B(e) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function F(e) {
+function B(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     e in t.gifs ? delete t.gifs[e] : delete t.gifs[Z(e)], _.default.track(E.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)

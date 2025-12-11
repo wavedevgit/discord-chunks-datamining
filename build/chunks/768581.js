@@ -305,7 +305,7 @@ function Z(e) {
   return (null != a ? "https://".concat(a, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
 
-function B(e) {
+function F(e) {
   let t, {
     id: n,
     splash: r,
@@ -317,8 +317,8 @@ function B(e) {
   return (null != a ? "https://".concat(a, "/discovery-splashes/").concat(n, "/").concat(r, ".jpg") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_DISCOVERY_SPLASH(n, r)) + "?size=".concat(i)
 }
 
-function F(e) {
-  return ee(B(e))
+function B(e) {
+  return ee(F(e))
 }
 
 function V(e) {
@@ -511,8 +511,8 @@ let et = {
   getGuildIconURL: V,
   getGuildSplashURL: k,
   getGuildSplashSource: U,
-  getGuildDiscoverySplashURL: B,
-  getGuildDiscoverySplashSource: F,
+  getGuildDiscoverySplashURL: F,
+  getGuildDiscoverySplashSource: B,
   getGuildBannerURL: G,
   getGuildHomeHeaderURL: Z,
   getResourceChannelIconURL: function e(e) {

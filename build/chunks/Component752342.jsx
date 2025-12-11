@@ -41,8 +41,8 @@ function S(e) {
     guildId: S,
     channelId: w,
     messageId: D,
-    roleId: R,
-    sessionId: L,
+    roleId: L,
+    sessionId: R,
     initialSection: M,
     initialSubsection: B,
     transitionState: U,
@@ -50,21 +50,21 @@ function S(e) {
     onClose: G,
     sourceAnalyticsLocations: V = [],
     showGuildProfile: F
-  } = e, W = S === P.ME ? true : S, H = (0, u.ZP)(n.id, F ? W : true), z = s.ZP.getName(W, w, n), Y = (0, c.Dt)(), {
+  } = e, W = S === P.ME ? true : S, z = (0, u.ZP)(n.id, F ? W : true), H = s.ZP.getName(W, w, n), Y = (0, c.Dt)(), {
     analyticsLocations: K
   } = (0, a.ZP)([...V, r.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
-    sourceSessionId: L,
+    sourceSessionId: R,
     guildId: W,
     channelId: w,
     messageId: D,
-    roleId: R
+    roleId: L
   }), q = (0, T.Z)(n), X = (0, f.Z)({
     user: n,
     guildId: W,
     channelId: w,
-    displayProfile: H,
+    displayProfile: z,
     onClose: G
   });
   return (0, l.jsx)(a.Gt, {
@@ -72,9 +72,9 @@ function S(e) {
     children: (0, l.jsx)(d.Mt, {
       value: J,
       openedAt: k,
-      fetchStartedAt: null == H ? true : H.fetchStartedAt,
-      fetchEndedAt: null == H ? true : H.fetchEndedAt,
-      isLoaded: null == H ? true : H.isLoaded,
+      fetchStartedAt: null == z ? true : z.fetchStartedAt,
+      fetchEndedAt: null == z ? true : z.fetchEndedAt,
+      isLoaded: null == z ? true : z.isLoaded,
       children: (0, l.jsx)(i.Y0X, {
         "data-migration-pending": true,
         transitionState: U,
@@ -87,13 +87,13 @@ function S(e) {
             children: (0, l.jsx)(i.H, {
               id: Y,
               children: _.intl.format(_.t.KRe1Fk, {
-                name: z
+                name: H
               })
             })
           }),
           children: (0, l.jsxs)(b.Z, {
             user: n,
-            displayProfile: H,
+            displayProfile: z,
             themeType: E.l.MODAL,
             children: [(0, l.jsx)(y.Z, {
               children: (0, l.jsx)(g.Z, {
@@ -104,13 +104,13 @@ function S(e) {
             }), (0, l.jsxs)("div", {
               children: [(0, l.jsx)(x.Z, {
                 user: n,
-                displayProfile: H,
+                displayProfile: z,
                 themeType: E.l.MODAL
               }), (0, l.jsxs)("div", {
                 className: C.headerInner,
                 children: [(0, l.jsx)(m.Z, {
                   user: n,
-                  displayProfile: H,
+                  displayProfile: z,
                   guildId: W,
                   channelId: w,
                   themeType: E.l.MODAL
@@ -153,18 +153,18 @@ function S(e) {
                 className: C.username,
                 user: n,
                 guildId: W,
-                nickname: z,
-                pronouns: null == H ? true : H.pronouns,
+                nickname: H,
+                pronouns: null == z ? true : z.pronouns,
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(p.Z, {
-                  displayProfile: H,
+                  displayProfile: z,
                   themeType: E.l.MODAL,
                   onClose: G
                 })
               }), (0, l.jsx)(N.Z, {
                 user: n,
                 currentUser: t,
-                displayProfile: H,
+                displayProfile: z,
                 guildId: W,
                 items: q,
                 initialSection: null != M ? M : A.oh.BOT_INFO,

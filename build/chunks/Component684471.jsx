@@ -26,24 +26,24 @@ function x(t) {
     return c.ZP.getName(t)
   });
   return (0, i.jsx)(u.Z, {
-    header: p.intl.string(p.t.sSMgC6),
-    description: p.intl.formatToPlainString(p.t.q2QrTY, {
+    header: f.intl.string(f.t.sSMgC6),
+    description: f.intl.formatToPlainString(f.t.q2QrTY, {
       username: h
     }),
     heroImage: (0, i.jsx)(r.K, {
-      alt: p.intl.string(p.t["3QhxXJ"])
+      alt: f.intl.string(f.t["3QhxXJ"])
     }),
     children: (0, i.jsxs)("div", {
-      className: f.buttonContainer,
+      className: p.buttonContainer,
       children: [(0, i.jsx)(a.Button, {
-        text: p.intl.string(p.t["+o4Q7e"]),
+        text: f.intl.string(f.t["+o4Q7e"]),
         variant: "primary",
         fullWidth: true,
         onClick: () => {
           x(d.x.TAKE_ACTION), n(l.NM.USER_TAKEOVER_MODAL_TAKE_ACTION)
         }
       }), (0, i.jsx)(a.Button, {
-        text: p.intl.string(p.t.xLkGzP),
+        text: f.intl.string(f.t.xLkGzP),
         variant: "secondary",
         fullWidth: true,
         onClick: () => {

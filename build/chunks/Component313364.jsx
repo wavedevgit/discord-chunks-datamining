@@ -39,10 +39,10 @@ function Z(e) {
     guildId: t
   } = e, n = (0, s.e7)([h.Z], () => h.Z.getGuild(t)), {
     analyticsLocations: l
-  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, s.e7)([b.ZP], () => b.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
-    f.Z.closeGuildSidebar(t)
+  } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, s.e7)([p.ZP], () => p.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+    m.Z.closeGuildSidebar(t)
   }, [t]), A = false == !!(null == n ? true : n.features.has(_.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, s.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
-    null != e && (0, p.openUserProfileModal)({
+    null != e && (0, b.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,
       sourceAnalyticsLocations: l
@@ -105,7 +105,7 @@ function Z(e) {
                         color: "text-muted",
                         children: T.intl.format(T.t.Bf6yxB, {
                           onClick: e => {
-                            null != n && (e.preventDefault(), m.Z.close(), (0, j._X)(n.id))
+                            null != n && (e.preventDefault(), f.Z.close(), (0, j._X)(n.id))
                           }
                         })
                       })]

@@ -33,7 +33,7 @@ require.d(exports, {
   wO: () => ec,
   x0: () => er,
   x6: () => $,
-  yn: () => F
+  yn: () => B
 }), require("./539854.js"), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   Chunk979554 = require("./979554.js"),
@@ -186,11 +186,11 @@ let O = e => (null == e ? true : e.premiumType) != null,
   U = e => L(e, i.Z.AVATAR_DECORATION),
   G = (e, t) => (0, r.uniqBy)([...k(e), ...U(t)], "skuId"),
   Z = e => x(e, i.Z.PROFILE_EFFECT),
-  B = e => L(e, i.Z.PROFILE_EFFECT),
-  F = (e, t) => (0, r.uniqBy)([...Z(e), ...B(t)], "skuId"),
+  F = e => L(e, i.Z.PROFILE_EFFECT),
+  B = (e, t) => (0, r.uniqBy)([...Z(e), ...F(t)], "skuId"),
   V = (e, t) => {
     let n = Z(t),
-      r = B(e).filter(e => {
+      r = F(e).filter(e => {
         let {
           skuId: t
         } = e;

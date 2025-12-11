@@ -38,7 +38,7 @@ let u = Chunk473749.memo(function(e) {
       height: 20,
       className: d.micIcon
     }), (0, r.jsxs)(s.Text, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/semibold",
       className: d.text,
       children: [t, " — ", n]

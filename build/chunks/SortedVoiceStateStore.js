@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   PH: () => P,
-  ZP: () => F,
+  ZP: () => B,
   sQ: () => A
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
@@ -272,7 +272,7 @@ function Z() {
     })
   })
 }
-class B extends(r = Chunk442837.ZP.Store) {
+class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
     Z(), this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk271383.ZP, Chunk594174.default, Chunk979651.Z), this.syncWith([Chunk594174.default], M)
   }
@@ -300,8 +300,8 @@ class B extends(r = Chunk442837.ZP.Store) {
     return I(null != e ? e : g.ME).getVersion()
   }
 }
-E(B, "displayName", "SortedVoiceStateStore");
-let F = new B(Chunk570140.Z, {
+E(F, "displayName", "SortedVoiceStateStore");
+let B = new F(Chunk570140.Z, {
   CONNECTION_OPEN: w,
   OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: j,

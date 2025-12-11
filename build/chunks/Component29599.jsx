@@ -194,7 +194,7 @@ let Z = function() {
     })
   }
 
-  function B() {
+  function F() {
     var e;
     let t = require.find(e => e.giftCodeBatchId === D.m8 && !e.consumed),
       i = null != (e = require.filter(e => e.giftCodeBatchId === D.rX && !e.consumed)) ? module : [],
@@ -284,7 +284,7 @@ let Z = function() {
     })
   }
 
-  function F() {
+  function B() {
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk785911.emptyState,
       children: [(0, Chunk54381.jsx)("div", {
@@ -301,7 +301,7 @@ let Z = function() {
     })
   }
   return Chunk410030 && Chunk178100 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [B(), (0, Chunk54381.jsx)("div", {
+    children: [F(), (0, Chunk54381.jsx)("div", {
       className: Chunk785911.marginContainer,
       children: (0, Chunk54381.jsxs)(Chunk481060.y5t, {
         component: (0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -310,7 +310,7 @@ let Z = function() {
         }),
         children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {
           className: Chunk785911.divider
-        }), 0 === Object.keys(Chunk392711).length ? F() : l().keys(Chunk392711).map(e => {
+        }), 0 === Object.keys(Chunk392711).length ? B() : l().keys(Chunk392711).map(e => {
           let {
             skuId: t,
             subscriptionPlanId: n,

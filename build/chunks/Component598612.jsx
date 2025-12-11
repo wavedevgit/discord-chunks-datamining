@@ -36,7 +36,7 @@ function o(e) {
       className: a.headerTitle,
       children: (0, r.jsx)(i.X6q, {
         variant: "heading-xl/normal",
-        color: "header-primary",
+        color: "text-strong",
         children: t
       })
     }), null != n && (0, r.jsx)(i.xvT, {

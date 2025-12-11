@@ -37,8 +37,8 @@ let A = new Chunk710845.Z("EmojiStudio"),
     var t;
     let {
       guildId: n
-    } = e, i = "userImage" in e ? e.userImage : true, h = "emoji" in e ? e.emoji : true, T = !!h, [D, k] = r.useState(null != i ? i : null), [G, Z] = r.useState(false), z = (0, s.e7)([f.Z, p.Z, v.Z], () => {
-      let e = p.Z.getGuildId(),
+    } = e, i = "userImage" in e ? e.userImage : true, h = "emoji" in e ? e.emoji : true, T = !!h, [D, k] = r.useState(null != i ? i : null), [G, Z] = r.useState(false), z = (0, s.e7)([f.Z, x.Z, v.Z], () => {
+      let e = x.Z.getGuildId(),
         t = f.Z.getGuild(e);
       return v.Z.can(w.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
     }), [L, U] = r.useState(null != n ? n : z), [B, F] = r.useState(false), [J, H] = r.useState(null), [V, W] = r.useState(null), [Y, q] = r.useState(function(e) {
@@ -53,12 +53,12 @@ let A = new Chunk710845.Z("EmojiStudio"),
       (0, E.g)(false)
     }), []), r.useEffect(() => {
       if (null == h) return;
-      let e = b.Z.getEmojiRawAsset(h.id);
+      let e = g.Z.getEmojiRawAsset(h.id);
       if (null != e) {
         k(e), X(e.data), q(h.name), Z(false);
         return
       }
-      Z(true), (0, I.Q)(h).then(e => {
+      Z(true), (0, y.Q)(h).then(e => {
         k(e), X(e.data), q(h.name), Z(false)
       }).catch(e => {
         A.error("Failed to fetch emoji image", e), H(O.ze.MISSING_IMAGE_DATA), Z(false)
@@ -68,7 +68,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
       let {
         reason: t
       } = e, n = null != J ? J : V;
-      x.default.track(w.rMx.EMOJI_STUDIO_ENDED, {
+      p.default.track(w.rMx.EMOJI_STUDIO_ENDED, {
         reason: t,
         is_initial: 0 === $.current,
         has_image: null != D,
@@ -96,7 +96,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
             analyticsLocation: {
               page: w.ZY5.EMOJI_STUDIO
             }
-          }), g.M({
+          }), b.M({
             emojiId: e.id,
             userImage: function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -134,7 +134,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
           }
         }(0, E.g)(false), (0, u.Mr3)(O.Hj), ea({
           reason: "uploaded"
-        }), et.current = true, (0, y.y)({
+        }), et.current = true, (0, C.y)({
           emoji: e,
           guildId: L
         }), F(false)
@@ -144,7 +144,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
         H(null), null != D && X(D.data), ee.current = 0, (0, E.g)(false), null == (e = en.current) || e.reset()
       }, [en, D]),
       eu = r.useCallback(() => {
-        (0, I.E)({
+        (0, y.E)({
           onClose: es
         })
       }, [es]),
@@ -168,7 +168,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
           className: R.titleBar,
           children: (0, l.jsx)(u.Heading, {
             variant: "heading-lg/medium",
-            color: "header-primary",
+            color: "text-strong",
             className: R.title,
             children: em
           })
@@ -196,7 +196,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
           className: R.titleBar,
           children: (0, l.jsx)(u.Heading, {
             variant: "heading-lg/medium",
-            color: "header-primary",
+            color: "text-strong",
             className: R.title,
             children: em
           })
@@ -270,7 +270,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
             })
           })
         }), (0, l.jsx)("div", {
-          children: (0, l.jsx)(C.y, {
+          children: (0, l.jsx)(I.y, {
             label: M.intl.string(M.t.m0YV7M),
             name: Y,
             onNameChange: q

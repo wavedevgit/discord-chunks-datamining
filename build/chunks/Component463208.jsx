@@ -193,7 +193,7 @@ function I(e) {
     defaultDirty: N
   }), {
     setShouldValidate: G
-  } = U, Z = O(y, I), B = "object" == typeof P && "type" in P && "tags" === P.type, F = e => {
+  } = U, Z = O(y, I), F = "object" == typeof P && "type" in P && "tags" === P.type, B = e => {
     var t, n;
     let r = e.currentTarget.value;
     null == (t = M.onChange) || t.call(M, r, u), G(true), null == (n = Z.setHasValue) || n.call(Z, "" !== r)
@@ -240,7 +240,7 @@ function I(e) {
       className: o()(_.container, _[D], {
         [_.hasLeading]: null != q,
         [_.hasTrailing]: null != z,
-        [_.hasTags]: B
+        [_.hasTags]: F
       }),
       children: [q, (0, r.jsx)(s.tEY, E(h({
         ringTarget: W
@@ -259,7 +259,7 @@ function I(e) {
           defaultValue: I,
           "data-mana-component": "text-input"
         }, M), {
-          onChange: F,
+          onChange: B,
           onBlur: H,
           onFocus: V,
           ref: l

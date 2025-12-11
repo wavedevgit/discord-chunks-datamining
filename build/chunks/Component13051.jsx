@@ -245,7 +245,7 @@ function R(e) {
             children: Z.intl.string(Z.t.eBtNBa)
           }), (0, i.jsx)(g.Text, {
             className: _.syncedRole,
-            color: "header-primary",
+            color: "text-strong",
             variant: "text-sm/normal",
             children: a
           })]
@@ -260,7 +260,7 @@ function R(e) {
             children: [(0, i.jsxs)(j.Z, {
               direction: j.Z.Direction.VERTICAL,
               children: [(0, i.jsx)(g.Text, {
-                color: "header-primary",
+                color: "text-strong",
                 variant: "text-sm/normal",
                 children: r
               }), (0, i.jsx)(g.Text, {

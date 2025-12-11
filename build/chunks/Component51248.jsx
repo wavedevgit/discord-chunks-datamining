@@ -21,21 +21,21 @@ function g(e) {
     existingRules: n
   } = e, {
     cancelEditingRule: g,
-    isLoading: m,
-    hasChanges: f,
-    editingRule: p,
-    errorMessage: b,
+    isLoading: f,
+    hasChanges: m,
+    editingRule: b,
+    errorMessage: p,
     saveEditingRule: h
   } = (0, c.w)(), {
     updateRule: x
-  } = (0, o.pH)(t), j = null != p, v = j && !(0, s.Vb)(p), O = j || f || v, C = async () => {
-    if (!f && !v) return g();
-    null == p || v || x(p);
+  } = (0, o.pH)(t), j = null != b, v = j && !(0, s.Vb)(b), O = j || m || v, C = async () => {
+    if (!m && !v) return g();
+    null == b || v || x(b);
     let e = n.find(e => {
       let {
         id: t
       } = e;
-      return t === (null == p ? true : p.id)
+      return t === (null == b ? true : b.id)
     });
     try {
       let e = await h(n);
@@ -43,21 +43,21 @@ function g(e) {
     } catch (t) {
       null != e && x(e)
     }
-  }, y = d.intl.string(d.t["ETE/oC"]), N = !f && j ? d.intl.formatToPlainString(d.t.nula34, {
-    ruleName: null == p ? true : p.name
+  }, y = d.intl.string(d.t["ETE/oC"]), N = !m && j ? d.intl.formatToPlainString(d.t.nula34, {
+    ruleName: null == b ? true : b.name
   }) : true;
-  return null != b && (N = (0, r.jsx)(a.Text, {
+  return null != p && (N = (0, r.jsx)(a.Text, {
     variant: "text-md/normal",
     color: "text-feedback-critical",
     className: u.message,
-    children: b
+    children: p
   })), (0, r.jsx)(i.W, {
     component: "div",
     className: u.saveNoticeContainer,
     children: O && (0, r.jsx)(a.oXn, {
       children: (0, r.jsx)(l.Z, {
-        submitting: m,
-        disabled: m,
+        submitting: f,
+        disabled: f,
         onSave: C,
         onReset: g,
         onResetText: y,

@@ -46,7 +46,7 @@ function g(t) {
   let {
     user: e,
     tagId: n,
-    title: r,
+    title: i,
     messageCount: s,
     reactionCount: c,
     activeAgo: d,
@@ -61,8 +61,8 @@ function g(t) {
     children: [(0, a.jsxs)("div", {
       children: [(0, a.jsxs)("div", {
         className: l.inline,
-        children: [(0, a.jsxs)(i.Text, {
-          color: "header-primary",
+        children: [(0, a.jsxs)(r.Text, {
+          color: "text-strong",
           variant: "text-xs/medium",
           className: l.inline,
           children: [(0, a.jsx)("img", {
@@ -75,25 +75,25 @@ function g(t) {
           children: [(0, a.jsx)("span", {
             className: l.bullet,
             children: "•"
-          }), (0, a.jsx)(i.Text, {
-            color: "header-primary",
+          }), (0, a.jsx)(r.Text, {
+            color: "text-strong",
             variant: "text-xxs/medium",
             className: l.inlineTag,
             children: g[n]
           })]
         })]
-      }), (0, a.jsx)(i.Heading, {
-        color: "header-primary",
+      }), (0, a.jsx)(r.Heading, {
+        color: "text-strong",
         variant: "heading-md/semibold",
         className: l.title,
-        children: r
+        children: i
       }), (0, a.jsxs)("div", {
         className: l.inline,
-        children: [(0, a.jsxs)(i.Text, {
+        children: [(0, a.jsxs)(r.Text, {
           color: "text-default",
           variant: "text-xs/medium",
           className: l.alignCenter,
-          children: [(0, a.jsx)(i.kBi, {
+          children: [(0, a.jsx)(r.kBi, {
             size: "xs",
             color: "currentColor",
             className: l.icon
@@ -102,7 +102,7 @@ function g(t) {
           children: [(0, a.jsx)("span", {
             className: l.bullet,
             children: "•"
-          }), (0, a.jsxs)(i.Text, {
+          }), (0, a.jsxs)(r.Text, {
             color: "text-default",
             variant: "text-xs/medium",
             className: l.alignCenter,
@@ -116,7 +116,7 @@ function g(t) {
         }), (0, a.jsx)("span", {
           className: l.bullet,
           children: "•"
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(r.Text, {
           color: "text-default",
           variant: "text-xs/medium",
           children: d
@@ -125,7 +125,7 @@ function g(t) {
     }), null != m && (0, a.jsx)("img", {
       src: m,
       alt: o.intl.formatToPlainString(o.t.MJHFt9, {
-        name: r
+        name: i
       }),
       className: l.attachment
     })]
@@ -137,7 +137,7 @@ function m(t) {
     author: e,
     content: n
   } = t, {
-    name: r,
+    name: i,
     isOP: s,
     avatarSrc: c
   } = e;
@@ -151,15 +151,15 @@ function m(t) {
     }), (0, a.jsxs)("div", {
       children: [(0, a.jsxs)("div", {
         className: l.inline,
-        children: [(0, a.jsx)(i.Text, {
-          color: "header-primary",
+        children: [(0, a.jsx)(r.Text, {
+          color: "text-strong",
           variant: "text-sm/semibold",
-          children: r
+          children: i
         }), s && (0, a.jsx)("span", {
           className: l.opTag,
           children: o.intl.string(o.t.fyE8sH)
         })]
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(r.Text, {
         color: "text-default",
         variant: "text-sm/normal",
         children: n
@@ -172,22 +172,22 @@ function u(t) {
   let {
     title: e,
     messages: n,
-    maxHeight: r
+    maxHeight: i
   } = t;
   return (0, a.jsx)("div", {
     className: l.previewContainer,
     style: {
-      maxHeight: r
+      maxHeight: i
     },
     "aria-hidden": true,
     children: (0, a.jsxs)("div", {
       className: l.preview,
-      children: [(0, a.jsx)(i.kBi, {
+      children: [(0, a.jsx)(r.kBi, {
         size: "md",
         color: "currentColor",
         className: l.forumPostIcon
-      }), (0, a.jsx)(i.Heading, {
-        color: "header-primary",
+      }), (0, a.jsx)(r.Heading, {
+        color: "text-strong",
         variant: "heading-lg/semibold",
         className: l.header,
         children: e
@@ -199,7 +199,7 @@ function u(t) {
               className: l.topSeparator
             }), (0, a.jsxs)("div", {
               className: l.actionBar,
-              children: [(0, a.jsxs)(i.Text, {
+              children: [(0, a.jsxs)(r.Text, {
                 color: "text-brand",
                 variant: "text-xs/medium",
                 className: l.fakeReactions,
@@ -209,11 +209,11 @@ function u(t) {
                   className: l.icon,
                   children: "❤️"
                 }), "17"]
-              }), (0, a.jsxs)(i.Text, {
+              }), (0, a.jsxs)(r.Text, {
                 color: "text-muted",
                 variant: "text-xs/medium",
                 className: l.following,
-                children: [(0, a.jsx)(i.Dkj, {
+                children: [(0, a.jsx)(r.Dkj, {
                   size: "xs",
                   color: "currentColor"
                 }), o.intl.string(o.t["3aOv+h"])]
@@ -225,7 +225,7 @@ function u(t) {
         }))
       }), (0, a.jsx)("div", {
         className: l.chatInput,
-        children: (0, a.jsx)(i.Text, {
+        children: (0, a.jsx)(r.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
           children: o.intl.string(o.t.YzpScd)
@@ -238,40 +238,40 @@ function u(t) {
 function f(t) {
   let {
     id: e
-  } = t, [n, o] = r.useState(0), m = r.useRef(null), {
+  } = t, [n, o] = i.useState(0), m = i.useRef(null), {
     tags: f,
-    posts: p,
-    postPreview: x,
-    ariaLabel: h
+    posts: x,
+    postPreview: p,
+    ariaLabel: b
   } = (0, s.Z)(e);
-  return r.useEffect(() => {
+  return i.useEffect(() => {
     o(0)
-  }, [e]), r.useEffect(() => {
+  }, [e]), i.useEffect(() => {
     var t;
     0 === n && (null == m || null == (t = m.current) ? true : t.clientHeight) != null && o(m.current.clientHeight - 40)
   }, [n]), (0, a.jsxs)("div", {
     className: l.container,
     role: "image",
-    "aria-label": h,
+    "aria-label": b,
     children: [(0, a.jsxs)("div", {
       ref: m,
       className: l.browser,
       "aria-hidden": true,
       children: [(0, a.jsx)("div", {
         className: l.tags,
-        children: f.map((t, e) => (0, a.jsx)(i.Text, {
-          color: "header-primary",
+        children: f.map((t, e) => (0, a.jsx)(r.Text, {
+          color: "text-strong",
           variant: "text-xs/medium",
           className: l.tag,
           children: t
         }, e))
       }), (0, a.jsx)("div", {
         className: l.posts,
-        children: p.map((t, e) => (0, a.jsx)(g, d(c({}, t), {
+        children: x.map((t, e) => (0, a.jsx)(g, d(c({}, t), {
           tags: f
         }), e))
       })]
-    }), (0, a.jsx)(u, d(c({}, x), {
+    }), (0, a.jsx)(u, d(c({}, p), {
       maxHeight: n
     }))]
   })

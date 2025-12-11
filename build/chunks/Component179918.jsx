@@ -52,7 +52,7 @@ let g = e => {
       className: h.bannerContent,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: b.header
       }), (0, r.jsx)(s.xvT, {
         variant: "text-md/medium",

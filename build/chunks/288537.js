@@ -38,8 +38,8 @@ var r, Chunk754793 = require("./754793.js"),
   U = 32,
   G = 42,
   Z = 69,
-  B = 73,
-  F = 91,
+  F = 73,
+  B = 91,
   V = 103,
   H = 113,
   Y = 666,
@@ -234,9 +234,9 @@ function eE(e, t) {
     } if (i.status === Z)
     if (i.gzhead.extra) {
       for (o = i.pending; i.gzindex < (65535 & i.gzhead.extra.length) && (i.pending !== i.pending_buf_size || (i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), ee(e), o = i.pending, i.pending !== i.pending_buf_size));) en(i, 255 & i.gzhead.extra[i.gzindex]), i.gzindex++;
-      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), i.gzindex === i.gzhead.extra.length && (i.gzindex = 0, i.status = B)
-    } else i.status = B;
-  if (i.status === B)
+      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), i.gzindex === i.gzhead.extra.length && (i.gzindex = 0, i.status = F)
+    } else i.status = F;
+  if (i.status === F)
     if (i.gzhead.name) {
       o = i.pending;
       do {
@@ -246,9 +246,9 @@ function eE(e, t) {
         }
         l = i.gzindex < i.gzhead.name.length ? 255 & i.gzhead.name.charCodeAt(i.gzindex++) : 0, en(i, l)
       } while (0 !== l);
-      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), 0 === l && (i.gzindex = 0, i.status = F)
-    } else i.status = F;
-  if (i.status === F)
+      i.gzhead.hcrc && i.pending > o && (e.adler = s(e.adler, i.pending_buf, i.pending - o, o)), 0 === l && (i.gzindex = 0, i.status = B)
+    } else i.status = B;
+  if (i.status === B)
     if (i.gzhead.comment) {
       o = i.pending;
       do {
@@ -274,7 +274,7 @@ function eE(e, t) {
 
 function eb(e) {
   var t;
-  return e && e.state ? (t = e.state.status) !== G && t !== Z && t !== B && t !== F && t !== V && t !== H && t !== Y ? X(e, h) : (e.state = null, t === H ? X(e, g) : _) : h
+  return e && e.state ? (t = e.state.status) !== G && t !== Z && t !== F && t !== B && t !== V && t !== H && t !== Y ? X(e, h) : (e.state = null, t === H ? X(e, g) : _) : h
 }
 
 function ey(e, t) {

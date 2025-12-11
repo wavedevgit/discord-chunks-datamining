@@ -1,7 +1,7 @@
 /** Chunk was on 26494 **/
 /** chunk id: 104265, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,15 +19,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk876800 = require("./876800.js");
 
-function v(e) {
+function x(e) {
   let {
     guildId: t,
     option: n,
     selected: r,
-    onSelect: v,
-    hideMemberCount: x,
+    onSelect: x,
+    hideMemberCount: v,
     canBeNew: y
-  } = e, b = (0, u.wj)((0, p.ZP)()), [C, O] = i.useState(false), Z = C && !x, w = i.useRef(null), {
+  } = e, b = (0, u.wj)((0, p.ZP)()), [C, O] = i.useState(false), Z = C && !v, w = i.useRef(null), {
     reducedMotion: _
   } = i.useContext(d.Sfi), N = (0, c.e7)([h.ZP], () => {
     var e, t, l, i;
@@ -86,7 +86,7 @@ function v(e) {
     children: (0, l.jsxs)(d.P3F, {
       className: j.optionButton,
       onClick: () => {
-        O(!r), v(!r)
+        O(!r), x(!r)
       },
       onMouseDown: () => S(true),
       onMouseUp: () => S(false),
@@ -99,7 +99,7 @@ function v(e) {
         className: j.buttonText,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
-          color: "header-primary",
+          color: "text-strong",
           children: n.title
         }), n.description.length > 0 ? (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",

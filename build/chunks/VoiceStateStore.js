@@ -3,7 +3,7 @@
 "use strict";
 let r, i;
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
@@ -175,7 +175,7 @@ function Z(e) {
   } = e;
   T(t)
 }
-class B extends(a = Chunk442837.ZP.Store) {
+class F extends(a = Chunk442837.ZP.Store) {
   getAllVoiceStates() {
     return h
   }
@@ -247,8 +247,8 @@ class B extends(a = Chunk442837.ZP.Store) {
     return _
   }
 }
-p(B, "displayName", "VoiceStateStore");
-let F = new B(Chunk570140.Z, {
+p(F, "displayName", "VoiceStateStore");
+let B = new F(Chunk570140.Z, {
   CONNECTION_OPEN: j,
   CONNECTION_OPEN_SUPPLEMENTAL: M,
   OVERLAY_INITIALIZE: k,

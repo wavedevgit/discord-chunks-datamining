@@ -256,8 +256,8 @@ let eu = (e, t) => {
       [ek, eU] = i.useState(null),
       eG = i.useRef(""),
       eZ = (0, T.Iu)(e => e.searchQuery),
-      eB = i.useRef(null),
       eF = i.useRef(null),
+      eB = i.useRef(null),
       eV = i.useRef(null);
     null == c && null != eM && (c = eM);
     let eH = null != (a = null != (n = null == c ? true : c.getGuildId()) ? n : f) ? a : null,
@@ -286,7 +286,7 @@ let eu = (e, t) => {
     })), e4 = (0, U.DV)(eZ, c, l, eR), e5 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e8 = D.d4.useSetting(), e6 = i.useMemo(() => new Set(e8), [e8]), e7 = i.useCallback(e => {
       D.d4.updateSetting(Array.from(e))
     }, []), e9 = (0, A.ep)({
-      gridWrapperRef: eB,
+      gridWrapperRef: eF,
       containerWidth: eu,
       listPaddingLeft: eo,
       listScrollbarWidth: es
@@ -377,11 +377,11 @@ let eu = (e, t) => {
         columnCounts: tr,
         onSelectEmoji: er,
         emojiGrid: tn,
-        emojiList: eF,
+        emojiList: eB,
         channelGuildId: eH,
         isBurstReaction: eY
       });
-    ef(eu, eF), ep(eu, e2, eV, eL), i.useEffect(() => {
+    ef(eu, eB), ep(eu, e2, eV, eL), i.useEffect(() => {
       eE || (0, T.ql)("")
     }, [eE]), i.useEffect(() => (j.default.track(X.rMx.OPEN_POPOUT, en({
       type: null != e$ ? e$ : "Emoji Picker",
@@ -419,7 +419,7 @@ let eu = (e, t) => {
       onClose: () => eU(null),
       guildId: ek.guildId,
       emojiId: ek.emojiId
-    }) : eY && !ez && (s = (0, r.jsx)(B.Z, {
+    }) : eY && !ez && (s = (0, r.jsx)(F.Z, {
       onDismiss: () => eW(false)
     }));
     let tm = (e, t) => {
@@ -434,7 +434,7 @@ let eu = (e, t) => {
       tg = (0, r.jsx)(H.Z, {
         channel: c,
         pickerIntention: l,
-        emojiListRef: eF,
+        emojiListRef: eB,
         onKeyDown: e => {
           null == td || td(e), null == ex || ex(e)
         },
@@ -465,7 +465,7 @@ let eu = (e, t) => {
           onScroll: el,
           children: [P ? tg : null, (0, r.jsxs)("div", {
             className: ee.bodyWrapper,
-            ref: eB,
+            ref: eF,
             children: [(0, r.jsx)(z.Z, {
               channel: c,
               closePopout: _
@@ -488,7 +488,7 @@ let eu = (e, t) => {
                 collapsedSections: e6,
                 diversitySurrogate: e2,
                 emojiGrid: tn,
-                emojiListRef: eF,
+                emojiListRef: eB,
                 emojiSize: C,
                 getEmojiItemProps: tl,
                 getEmojiRowProps: tc,
@@ -515,9 +515,9 @@ let eu = (e, t) => {
             pickerIntention: l,
             channel: c
           }), s]
-        }), eI ? null : (0, r.jsx)(F.Z, {
+        }), eI ? null : (0, r.jsx)(B.Z, {
           className: o()(ee.categoryList, eN),
-          emojiListRef: eF,
+          emojiListRef: eB,
           sectionDescriptors: tt,
           intention: l,
           channel: c,

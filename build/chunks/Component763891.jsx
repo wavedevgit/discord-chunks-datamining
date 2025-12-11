@@ -44,7 +44,7 @@ function N(e) {
   } = e, R = (0, f.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: H
-  } = (0, E.Z)(), D = (0, i.e7)([u.default], () => u.default.getCurrentUser()), M = (0, i.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), V = (0, o.ap)(U), [z, G, K] = l.useMemo(() => {
+  } = (0, E.Z)(), D = (0, o.e7)([u.default], () => u.default.getCurrentUser()), M = (0, o.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, K] = l.useMemo(() => {
     switch (P) {
       case S.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYNE), V ? T.Z : k.Z, a.Z.AVATAR_DECORATION];
@@ -80,7 +80,7 @@ function N(e) {
       unpublishedCategoriesShown: H,
       cacheDisabled: w
     })
-  }, [Z, H, w, n, P]), n || null == D) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, H, w, n, P]), n || null == D) ? (0, r.jsx)(C.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")
@@ -96,7 +96,7 @@ function N(e) {
         newValue: {
           tilePosition: t
         },
-        children: (0, r.jsx)(C.Z, {
+        children: (0, r.jsx)(h.Z, {
           skuId: e.skuId,
           onClickAnalytics: (0, v.wO)(e, P, R)
         }, e.skuId)

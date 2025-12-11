@@ -209,7 +209,7 @@ function Z() {
   return module.os = k(), module.browser = M(), module.device = U(), module.system_locale = (0, Chunk627420.qf)(), module.has_client_mods = (0, Chunk903772.e)(), module
 }
 
-function B() {
+function F() {
   var e, t;
   return T(S({}, {
     browser_user_agent: window.navigator.userAgent || "",
@@ -219,7 +219,7 @@ function B() {
   })
 }
 
-function F() {
+function B() {
   let e = {};
   return module.referrer = document.referrer, module.referring_domain = G(), e = S({}, module, x(window.location.href), j())
 }
@@ -233,9 +233,9 @@ function H() {
   let e = Chunk433517.K.get(C);
   null == module && (e = Z(), Chunk433517.K.set(C, module));
   let t = Chunk433517.K.get(A);
-  null == exports && (t = F(), Chunk433517.K.set(A, exports));
+  null == exports && (t = B(), Chunk433517.K.set(A, exports));
   let n = Chunk298444.x.get(A);
-  return null == require && (n = V(F(), "_current"), Chunk298444.x.set(A, require)), S({}, module, B(), exports, require)
+  return null == require && (n = V(B(), "_current"), Chunk298444.x.set(A, require)), S({}, module, F(), exports, require)
 }
 
 function Y() {
@@ -250,7 +250,7 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("479082", 10);
+  let i = parseInt("479102", 10);
   isNaN(i) || (require.client_build_number = i);
   let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : module.call(exports);
   return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require

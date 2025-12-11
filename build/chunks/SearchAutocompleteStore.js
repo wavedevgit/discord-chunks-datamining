@@ -170,7 +170,7 @@ function Z(e) {
   G(t), J(t)
 }
 
-function B(e) {
+function F(e) {
   let t, {
     searchContext: n,
     tokens: r,
@@ -213,7 +213,7 @@ function B(e) {
   return T.set(s, f), c
 }
 
-function F(e) {
+function B(e) {
   var t, n, r;
   let {
     filter: i,
@@ -272,7 +272,7 @@ function H(e, t, n) {
   if (null != a && "" !== a) {
     R(t).forEach(e => {
       if (null == e) return;
-      let r = F({
+      let r = B({
         filter: e,
         currentToken: i,
         searchContext: t,
@@ -339,7 +339,7 @@ function W(e) {
 function K(e, t, n) {
   switch (t.type) {
     case O.Sap.FILTER:
-      let r = F({
+      let r = B({
         filter: t.filter,
         currentToken: t.token,
         searchContext: e,
@@ -443,7 +443,7 @@ class et extends(r = Chunk442837.ZP.Store) {
 S(et, "displayName", "SearchAutocompleteStore");
 let en = new et(Chunk570140.Z, {
     SEARCH_AUTOCOMPLETE_INITIALIZE: Z,
-    SEARCH_AUTOCOMPLETE_QUERY_UPDATE: B,
+    SEARCH_AUTOCOMPLETE_QUERY_UPDATE: F,
     SEARCH_EDITOR_STATE_CLEAR: L,
     CHANNEL_CREATE: z,
     CHANNEL_DELETE: z,

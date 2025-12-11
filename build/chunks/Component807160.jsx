@@ -201,7 +201,7 @@ function ev(e) {
     guildProductListingId: n
   } = e, r = (0, I.hO)(t, n, {
     requireCurrentGuild: false
-  }), o = (0, C.C)(r), s = (0, p.e7)([B.Z], () => B.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? er.intl.string(er.t.H11qcT) : o, c = a.useCallback(async () => {
+  }), o = (0, C.C)(r), s = (0, p.e7)([F.Z], () => F.Z.getGuild(t)), l = (null == r ? true : r.role_id) != null && (null == r ? true : r.attachments_count) === 0 ? er.intl.string(er.t.H11qcT) : o, c = a.useCallback(async () => {
     (null == s ? true : s.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? await (0, P.Z)(ee.Z5c.GUILD_PRODUCT(t, n)) : await (0, P.Z)(ee.Z5c.CHANNEL(t)), (0, k.default)()
   }, [s, t, n]);
   return (0, i.jsxs)(i.Fragment, {
@@ -872,17 +872,17 @@ function eT(e) {
   a.useEffect(() => {
     f && null != d && (0, w.UM)(d)
   }, [d, f]);
-  let I = (0, p.e7)([B.Z], () => B.Z.getGuild(null == m ? true : m.guildId)),
+  let I = (0, p.e7)([F.Z], () => F.Z.getGuild(null == m ? true : m.guildId)),
     T = c ? m : true,
     C = r.subscription,
     A = (0, p.e7)([H.Z], () => null != C && C.type !== ee.NYc.PREMIUM ? H.Z.get(C.items[0].planId) : null),
-    N = (0, p.e7)([F.default], () => {
+    N = (0, p.e7)([B.default], () => {
       var e, t, n, i;
       let a = r.isGift ? null == (e = r.entitlements) ? true : e.find(e => {
         var t;
         return (null == (t = e.user) ? true : t.id) != null && null != e.gifterId
       }) : null;
-      return null == a ? null : null != (i = F.default.getUser(null != (n = null == (t = a.user) ? true : t.id) ? n : null)) ? i : null == a ? true : a.user
+      return null == a ? null : null != (i = B.default.getUser(null != (n = null == (t = a.user) ? true : t.id) ? n : null)) ? i : null == a ? true : a.user
     }, [r]),
     {
       analyticsLocations: P

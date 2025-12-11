@@ -19,11 +19,11 @@ function f(e, t) {
   let {
     nonce: f,
     forQRCode: p
-  } = t, m = e.getGuildId(), h = c.Z.getGuild(m), b = (0, l.Lc)({
+  } = t, m = e.getGuildId(), x = c.Z.getGuild(m), b = (0, l.Lc)({
     guildId: null != m ? m : d.aIL,
     channelId: e.id,
-    channelName: (0, s.F6)(e, o.default, i.Z),
-    guildName: null != (r = null == h ? true : h.name) ? r : u.intl.string(u.t.LJpTRF),
+    channelName: (0, s.F6)(e, i.default, o.Z),
+    guildName: null != (r = null == x ? true : x.name) ? r : u.intl.string(u.t.LJpTRF),
     muted: a.Z.isSelfMute(),
     deafened: a.Z.isSelfDeaf(),
     nonce: f

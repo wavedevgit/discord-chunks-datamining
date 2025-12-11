@@ -76,10 +76,10 @@ function I(e) {
       guildProductListingId: t.id,
       analyticsLocation: O
     }),
-    B = () => {
+    F = () => {
       _.h(D.id, t.id)
     },
-    F = () => {
+    B = () => {
       (0, s.x)({
         listing: t
       })
@@ -96,10 +96,10 @@ function I(e) {
       showTestDownload: false,
       showDeleteProduct: false,
       showReportProduct: true,
-      onEditProduct: M ? B : () => {},
+      onEditProduct: M ? F : () => {},
       onUnpublishProduct: () => {},
       onDeleteProduct: () => {},
-      onReportProduct: F,
+      onReportProduct: B,
       onCopyProductLink: V,
       onTestDownload: () => {}
     });

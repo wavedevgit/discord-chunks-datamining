@@ -60,13 +60,13 @@ function E(e) {
     payoutStatus: r,
     ppgDeferralReasons: i,
     periodEndDate: a
-  } = (0, h.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, m.Zo)(s, "MMM D");
+  } = (0, h.j0)(t), s = null != a ? d()(a).add(15, "days").toISOString() : true, o = (0, f.Zo)(s, "MMM D");
   switch (n) {
     case v.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
         children: [null != o ? O.intl.formatToPlainString(O.t.I6YOjS, {
           payoutDate: o
-        }) : O.intl.string(O.t.G5ATX6), (0, l.jsx)(p.Z, {
+        }) : O.intl.string(O.t.G5ATX6), (0, l.jsx)(b.Z, {
           className: C.statusScheduledIcon
         })]
       });
@@ -87,7 +87,7 @@ function E(e) {
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [O.intl.string(O.t.OtZ5kz), (0, l.jsx)(b.Z, {
+        children: [O.intl.string(O.t.OtZ5kz), (0, l.jsx)(p.Z, {
           className: C.statusDeferredIcon
         })]
       })
@@ -104,7 +104,7 @@ function E(e) {
       return (0, l.jsxs)(l.Fragment, {
         children: [null != o ? O.intl.formatToPlainString(O.t.I6YOjS, {
           payoutDate: o
-        }) : O.intl.string(O.t.ubdQTt), (0, l.jsx)(p.Z, {
+        }) : O.intl.string(O.t.ubdQTt), (0, l.jsx)(b.Z, {
           className: C.statusScheduledIcon
         })]
       });
@@ -121,7 +121,7 @@ function E(e) {
     case v.jw.REJECTED:
     case v.jw.RISK_REVIEW:
       return (0, l.jsxs)(l.Fragment, {
-        children: [f.Z.getStatusErrorText(r), (0, l.jsx)(g.k$p, {
+        children: [m.Z.getStatusErrorText(r), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: C.statusErrorIcon

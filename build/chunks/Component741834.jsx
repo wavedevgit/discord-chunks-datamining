@@ -40,7 +40,7 @@ function u(e) {
         text: c.intl.string(c.t.DY6n4q),
         children: (0, i.jsxs)(a.Text, {
           variant: "text-xs/medium",
-          color: "header-primary",
+          color: "text-strong",
           children: ["+", f]
         })
       })

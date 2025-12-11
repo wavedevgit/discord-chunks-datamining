@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 453223, original params: e,n,t (module,exports,require) **/
+/** chunk id: 453223, original params: e,t,n (module,exports,require) **/
 module.exports = {
   container: "_0b56311ebc6682e2-container",
   tabBar: "_0b56311ebc6682e2-tabBar",

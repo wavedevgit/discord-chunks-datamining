@@ -168,11 +168,11 @@ function Z(e) {
   R === n && (R = null), null == n ? w[t] = [] : w[t] = w[t].filter(e => e.timestamp !== n)
 }
 
-function B() {
+function F() {
   I = Math.max(I - 1, 0)
 }
 
-function F(e) {
+function B(e) {
   var t, n;
   let {
     clip: r
@@ -533,11 +533,11 @@ h(el, "displayName", "ClipsStore"), h(el, "persistKey", "ClipsStore"), h(el, "mi
 })]);
 let ec = new el(Chunk570140.Z, {
     CLIPS_SETTINGS_UPDATE: U,
-    CLIPS_SAVE_CLIP: F,
+    CLIPS_SAVE_CLIP: B,
     CLIPS_SAVE_CLIP_PLACEHOLDER: V,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: H,
     CLIPS_SAVE_CLIP_START: G,
-    CLIPS_SAVE_CLIP_ERROR: B,
+    CLIPS_SAVE_CLIP_ERROR: F,
     CLIPS_SAVE_ANIMATION_END: Z,
     STREAM_START: q,
     STREAM_STOP: Q,

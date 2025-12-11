@@ -98,7 +98,7 @@ let f = {
           value: "text-muted"
         }, {
           label: "Header Primary",
-          value: "header-primary"
+          value: "text-strong"
         }, {
           label: "Header Secondary",
           value: "text-default"

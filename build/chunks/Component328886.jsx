@@ -113,8 +113,8 @@ function U(e) {
     currentUserId: U,
     launchableAppId: G,
     isEmbeddedApplication: Z,
-    tryWithGdnAction: B,
-    staticBannerSrc: F,
+    tryWithGdnAction: F,
+    staticBannerSrc: B,
     onClickContent: V,
     iconSrc: H,
     onView: Y,
@@ -228,7 +228,7 @@ function U(e) {
       trackingArea: _.j_.PLAY,
       onClick: () => {},
       disabled: true
-    } : null != B && (e = B, t = false);
+    } : null != F && (e = F, t = false);
     let n = [];
     return null != e && (n.push(e), X && t && n.push({
       label: j.intl.string(j.t.lw71Nf),
@@ -241,7 +241,7 @@ function U(e) {
       icon: c.uIJ,
       iconButton: true
     })), n
-  }, [ec, ed, ef, ep, B, s.author.id, s.id, W, R.id, R.guild_id, Q, eu, U, e_, X, J]), eh = em.some(e => e.trackingArea === _.j_.CLOUD_PLAY);
+  }, [ec, ed, ef, ep, F, s.author.id, s.id, W, R.id, R.guild_id, Q, eu, U, e_, X, J]), eh = em.some(e => e.trackingArea === _.j_.CLOUD_PLAY);
   (0, D.Z)(eh, Q);
   let eg = i.useMemo(() => ep ? null : (0, r.jsx)(k, {
     presenceActivity: W,
@@ -250,7 +250,7 @@ function U(e) {
   return (0, r.jsx)(p.W, {
     header: w,
     title: A,
-    staticBannerSrc: F,
+    staticBannerSrc: B,
     onClickBanner: V,
     bannerAspectRatio: p.u.ACTIVITY,
     iconSrc: null != H ? H : true,

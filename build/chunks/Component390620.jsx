@@ -15,9 +15,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk758151 = require("./758151.js"),
   Chunk141291 = require("./141291.js");
-let b = 6 * Chunk70956.Z.Millis.SECOND;
+let g = 6 * Chunk70956.Z.Millis.SECOND;
 
-function g(e) {
+function b(e) {
   let {
     emoji: t,
     guildId: n
@@ -60,10 +60,10 @@ function f(e) {
   } = e;
   (0, o.showToast)((0, o.createToast)("", o.ToastType.CUSTOM, {
     position: o.ToastPosition.TOP,
-    component: (0, l.jsx)(g, {
+    component: (0, l.jsx)(b, {
       emoji: t,
       guildId: n
     }),
-    duration: b
+    duration: g
   }))
 }

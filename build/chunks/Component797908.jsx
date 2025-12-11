@@ -18,8 +18,8 @@ let m = function(e) {
   let {
     application: h,
     onSelectApplication: f,
-    showCategory: b = false
-  } = e, g = r.useRef(null), x = null == (t = h.categories) ? true : t[0], [v, C] = r.useState(false), j = r.useCallback(e => {
+    showCategory: g = false
+  } = e, b = r.useRef(null), x = null == (t = h.categories) ? true : t[0], [v, C] = r.useState(false), j = r.useCallback(e => {
     e && C(true)
   }, []), _ = (0, s.lf)(h), y = r.useCallback(() => {
     f(h.id)
@@ -27,13 +27,13 @@ let m = function(e) {
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : true, [v, h]), S = b && null != x;
+  }) : true, [v, h]), S = g && null != x;
   return (0, a.jsx)(i.$, {
-    innerRef: g,
+    innerRef: b,
     onChange: j,
     active: !v,
     children: (0, a.jsx)("div", {
-      ref: g,
+      ref: b,
       className: p.container,
       children: (0, a.jsxs)(o.Z, {
         className: p.card,
@@ -78,7 +78,7 @@ let m = function(e) {
               className: p.title,
               children: (0, a.jsx)(l.Heading, {
                 variant: "heading-md/semibold",
-                color: "header-primary",
+                color: "text-strong",
                 className: p.appName,
                 children: h.name
               })

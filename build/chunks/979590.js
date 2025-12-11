@@ -28,7 +28,7 @@
       a = null,
       l = false,
       c = false;
-    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = F(e.s), i = F(e.v), t = m(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = F(e.s), a = F(e.l), t = p(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = j(n), {
+    return "string" == typeof e && (e = K(e)), "object" == typeof e && (W(e.r) && W(e.g) && W(e.b) ? (t = d(e.r, e.g, e.b), l = true, c = "%" === String(e.r).substr(false) ? "prgb" : "rgb") : W(e.h) && W(e.s) && W(e.v) ? (r = B(e.s), i = B(e.v), t = m(e.h, r, i), l = true, c = "hsv") : W(e.h) && W(e.s) && W(e.l) && (r = B(e.s), a = B(e.l), t = p(e.h, r, a), l = true, c = "hsl"), e.hasOwnProperty("a") && (n = e.a)), n = j(n), {
       ok: l,
       format: e.format || c,
       r: o(255, s(t.r, 0)),
@@ -135,17 +135,17 @@
   }
 
   function h(e, t, n, r) {
-    var i = [B(a(e).toString(16)), B(a(t).toString(16)), B(a(n).toString(16))];
+    var i = [F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16))];
     return r && i[0].charAt(0) == i[0].charAt(1) && i[1].charAt(0) == i[1].charAt(1) && i[2].charAt(0) == i[2].charAt(1) ? i[0].charAt(0) + i[1].charAt(0) + i[2].charAt(0) : i.join("")
   }
 
   function g(e, t, n, r, i) {
-    var o = [B(a(e).toString(16)), B(a(t).toString(16)), B(a(n).toString(16)), B(V(r))];
+    var o = [F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16)), F(V(r))];
     return i && o[0].charAt(0) == o[0].charAt(1) && o[1].charAt(0) == o[1].charAt(1) && o[2].charAt(0) == o[2].charAt(1) && o[3].charAt(0) == o[3].charAt(1) ? o[0].charAt(0) + o[1].charAt(0) + o[2].charAt(0) + o[3].charAt(0) : o.join("")
   }
 
   function E(e, t, n, r) {
-    return [B(V(r)), B(a(e).toString(16)), B(a(t).toString(16)), B(a(n).toString(16))].join("")
+    return [F(V(r)), F(a(e).toString(16)), F(a(t).toString(16)), F(a(n).toString(16))].join("")
   }
 
   function b(e, t) {
@@ -425,7 +425,7 @@
   }, c.fromRatio = function(e, t) {
     if ("object" == typeof e) {
       var n = {};
-      for (var r in e) e.hasOwnProperty(r) && ("a" === r ? n[r] = e[r] : n[r] = F(e[r]));
+      for (var r in e) e.hasOwnProperty(r) && ("a" === r ? n[r] = e[r] : n[r] = B(e[r]));
       e = n
     }
     return c(e, t)
@@ -661,11 +661,11 @@
     return "string" == typeof e && false != e.indexOf("%")
   }
 
-  function B(e) {
+  function F(e) {
     return 1 == e.length ? "0" + e : "" + e
   }
 
-  function F(e) {
+  function B(e) {
     return e <= 1 && (e = 100 * e + "%"), e
   }
 

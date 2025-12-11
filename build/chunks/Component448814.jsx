@@ -104,9 +104,9 @@ function C(e) {
     G = i.useMemo(() => f.map((e, t) => v(y({}, e), {
       index: t
     })), [f]),
-    [Z, B] = i.useState(null != b ? b : []),
-    F = null != O,
-    V = F ? O : Z,
+    [Z, F] = i.useState(null != b ? b : []),
+    B = null != O,
+    V = B ? O : Z,
     H = (0, s.ZP)({
       id: U,
       async scrollToEnd() {},
@@ -129,8 +129,8 @@ function C(e) {
   let K = i.useCallback(e => {
       if (true === a && 1 === V.length && V.includes(e)) return;
       let t = (0, g.cq)(d, V, e);
-      F || B(t), null == I || I(t)
-    }, [a, V, I, F, d]),
+      B || F(t), null == I || I(t)
+    }, [a, V, I, B, d]),
     z = i.useCallback(e => (0, r.jsx)("div", {
       className: E.listBoxItemContent,
       children: (0, r.jsx)(m.x, {

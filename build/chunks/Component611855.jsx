@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
 let d = function(e) {
   let {
     className: t,
-    color: n = "header-primary",
+    color: n = "text-strong",
     textOpacity: i = .9
   } = e, d = (0, l.Fg)(), f = (0, o.wj)(d) ? .2 : .08;
   return (0, r.jsxs)(s.Text, {

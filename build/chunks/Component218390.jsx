@@ -233,7 +233,7 @@ function ep(e) {
   let {
     className: i,
     config: a
-  } = e, s = (0, c.e7)([y.Z], () => y.Z.useReducedMotion), l = a.getImageUrl(s), u = null == (t = a.getBackgroundImageUrl) ? true : t.call(a), d = (0, F.Yr)(u), f = (0, F.Tl)(a.gradientConfig), p = (0, F.$q)(d, f), m = {
+  } = e, s = (0, c.e7)([y.Z], () => y.Z.useReducedMotion), l = a.getImageUrl(s), u = null == (t = a.getBackgroundImageUrl) ? true : t.call(a), d = (0, B.Yr)(u), f = (0, B.Tl)(a.gradientConfig), p = (0, B.$q)(d, f), m = {
     color: null != (n = a.textColor) ? n : "var(--always-white)"
   };
   return (0, r.jsxs)("div", {

@@ -33,7 +33,7 @@ function d(e) {
     applicationNameHook: () => (0, r.jsx)(i.Text, {
       className: u.applicationName,
       variant: "text-md/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: _.name
     }, _.name),
     helpdeskArticle: "#"

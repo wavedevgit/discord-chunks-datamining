@@ -1,5 +1,5 @@
 /** Chunk was on 58121 **/
-/** chunk id: 104155, original params: e,n,t (module,exports,require) **/
+/** chunk id: 104155, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => v,
   Z: () => O
@@ -25,13 +25,13 @@ var Chunk54381 = require("./54381.js"),
 
 function v(e) {
   let {
-    channelId: n
+    channelId: t
   } = e;
-  return (0, a.jsx)(c.Z, {
-    sidebarType: c.y.ThreadSidebar,
+  return (0, a.jsx)(o.Z, {
+    sidebarType: o.y.ThreadSidebar,
     maxWidth: 600,
-    children: (0, a.jsx)(o.Z, {
-      channelId: n,
+    children: (0, a.jsx)(c.Z, {
+      channelId: t,
       baseChannelId: x.oC.CHANNEL_BROWSER
     })
   })
@@ -39,59 +39,59 @@ function v(e) {
 
 function O(e) {
   let {
-    guildId: n
-  } = e, [c, o] = r.useState(""), v = (0, l.e7)([b.Z], () => b.Z.getGuild(n)), O = (0, l.e7)([u.ZP], () => u.ZP.getChannels(n)), y = (0, l.e7)([s.Z], () => s.Z.getCategories(n)), N = (0, f.Fo)(n, y, O, c), _ = (0, l.e7)([p.Z], () => p.Z.canWithPartialContext(g.Plq.MANAGE_CHANNELS, {
-    guildId: n
-  })), w = (0, l.e7)([d.ZP], () => null != d.ZP.getCurrentSidebarChannelId(x.oC.CHANNEL_BROWSER)), Z = r.useCallback(() => o(""), [o]), I = r.useCallback(() => {
+    guildId: t
+  } = e, [o, c] = r.useState(""), v = (0, l.e7)([b.Z], () => b.Z.getGuild(t)), O = (0, l.e7)([u.ZP], () => u.ZP.getChannels(t)), y = (0, l.e7)([s.Z], () => s.Z.getCategories(t)), N = (0, h.Fo)(t, y, O, o), _ = (0, l.e7)([p.Z], () => p.Z.canWithPartialContext(g.Plq.MANAGE_CHANNELS, {
+    guildId: t
+  })), w = (0, l.e7)([d.ZP], () => null != d.ZP.getCurrentSidebarChannelId(x.oC.CHANNEL_BROWSER)), Z = r.useCallback(() => c(""), [c]), I = r.useCallback(() => {
     (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([t.e("29497"), t.e("59679")]).then(t.bind(t, 241865));
-      return t => {
+      } = await Promise.all([n.e("29497"), n.e("59679")]).then(n.bind(n, 241865));
+      return n => {
         var r, l;
         return (0, a.jsx)(e, (r = function(e) {
-          for (var n = 1; n < arguments.length; n++) {
-            var t = null != arguments[n] ? arguments[n] : {},
-              a = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), a.forEach(function(n) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+              a = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), a.forEach(function(t) {
               var a;
-              a = t[n], n in e ? Object.defineProperty(e, n, {
+              a = n[t], t in e ? Object.defineProperty(e, t, {
                 value: a,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[n] = a
+              }) : e[t] = a
             })
           }
           return e
-        }({}, t), l = l = {
+        }({}, n), l = l = {
           channelType: null,
-          guildId: n
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
-          var t = Object.keys(e);
+          guildId: t
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var a = Object.getOwnPropertySymbols(e);
-            t.push.apply(t, a)
+            n.push.apply(n, a)
           }
-          return t
+          return n
         })(Object(l)).forEach(function(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
         }), r))
       }
     })
-  }, [n]);
+  }, [t]);
   return null == v ? null : (0, a.jsxs)("div", {
     className: j.pageBody,
     children: [(0, a.jsxs)("div", {
       className: j.header,
       children: [(0, a.jsx)(i.E1j, {
-        query: c,
+        query: o,
         onChange: e => {
-          "" === c && "" !== e && h.default.track(g.rMx.SEARCH_STARTED, {
+          "" === o && "" !== e && f.default.track(g.rMx.SEARCH_STARTED, {
             search_type: "channel browser"
-          }), o(e.toLowerCase())
+          }), c(e.toLowerCase())
         },
         onClear: Z,
         placeholder: C.intl.string(C.t.s5MnmC)

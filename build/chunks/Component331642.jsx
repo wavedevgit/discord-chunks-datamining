@@ -152,7 +152,7 @@ function I(e) {
         className: g.emoji
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
-        color: "header-primary",
+        color: "text-strong",
         className: g.soundText,
         children: p()
       }), a ? (0, r.jsx)(S, {

@@ -64,7 +64,7 @@ function G(e) {
 }
 let Z = 65;
 
-function B() {
+function F() {
   let e = Chunk473749.useCallback(() => {
     (0, Chunk481060.ZDy)(async () => {
       let {
@@ -86,7 +86,7 @@ function B() {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     displayType: t
   } = e, n = (0, h.PO)("family_center_activity_card"), a = i.useCallback(() => {
@@ -272,7 +272,7 @@ let Y = () => {
       className: module ? Chunk203549.containerV2 : Chunk203549.container,
       children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk203549.connectedCounter,
-        children: [(0, Chunk54381.jsx)(V, {}), (0, Chunk54381.jsx)(B, {})]
+        children: [(0, Chunk54381.jsx)(V, {}), (0, Chunk54381.jsx)(F, {})]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk108319.box,
         children: [(0, Chunk54381.jsx)("div", {
@@ -295,7 +295,7 @@ let Y = () => {
             className: Chunk203549.activityOverview,
             children: [module ? (0, Chunk54381.jsx)(Chunk448524.Z, {}) : null, require ? exports.map(e => {
               let [t] = e;
-              return (0, r.jsx)(F, {
+              return (0, r.jsx)(B, {
                 displayType: t
               }, "".concat(t, "-list"))
             }) : (0, Chunk54381.jsx)(Chunk895328.Z, {

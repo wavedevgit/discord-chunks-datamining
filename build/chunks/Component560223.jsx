@@ -67,7 +67,7 @@ let S = e => {
       headerClassname: a
     } = e, o = (0, r.jsx)(s.Heading, {
       variant: "heading-xxl/extrabold",
-      color: "header-primary",
+      color: "text-strong",
       className: null != a ? a : E.heading,
       children: i
     });
@@ -138,7 +138,7 @@ let S = e => {
         headerClassname: I
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
-        color: "header-primary",
+        color: "text-strong",
         className: o()(E.subtitle, {
           [E.subtitle]: null == O || b,
           [E.subtitleWithButton]: null != O && !b,

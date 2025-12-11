@@ -1,7 +1,7 @@
 /** Chunk was on 61342 **/
 /** chunk id: 410426, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,10 +18,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk46733 = require("./46733.js");
 
-function v(e) {
+function y(e) {
   let {
     isEmptyBecauseQuery: t
-  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, p.z8)(), v = t ? y.noSearchResultsImage : y.noClipsImage, h = r.useCallback(() => {
+  } = e, n = (0, s.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), i = (0, p.z8)(), y = t ? v.noSearchResultsImage : v.noClipsImage, h = r.useCallback(() => {
     (0, o.Z)(f.Z.CLIPS, {
       stackingBehavior: "stack"
     })
@@ -38,9 +38,9 @@ function v(e) {
       return b.intl.format(b.t["xY/8K5"], {
         keybind: e,
         keybindHook: () => (0, l.jsx)("span", {
-          className: y.keybindHintKeys,
+          className: v.keybindHintKeys,
           children: (0, l.jsx)(c.M2$, {
-            className: y.keybindShortcut,
+            className: v.keybindShortcut,
             shortcut: e
           })
         })
@@ -48,15 +48,15 @@ function v(e) {
     }
   })();
   return (0, l.jsx)("div", {
-    className: y.container,
+    className: v.container,
     children: (0, l.jsxs)("div", {
-      className: y.content,
+      className: v.content,
       children: [(0, l.jsx)("div", {
-        className: v
+        className: y
       }), (0, l.jsx)(c.Text, {
         variant: "text-md/medium",
-        className: a()(y.noClipsText, {
-          [y.noSearchResultsText]: t
+        className: a()(v.noClipsText, {
+          [v.noSearchResultsText]: t
         }),
         children: j
       })]

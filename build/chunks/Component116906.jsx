@@ -49,10 +49,10 @@ function O(e) {
   } = (0, m.Z)({
     userId: n.id,
     guildId: O
-  }), D = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([s.Z, c.Z], () => {
-    let e = R ? s.Z.getStatus() : c.Z.getStatus(n.id);
+  }), D = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, R = (0, i.e7)([s.Z, c.Z], () => {
+    let e = L ? s.Z.getStatus() : c.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), M = E.length > 0 || null != C, B = A && null == C && null == w && null != S, U = !L && (M || B), k = _.length > 0;
+  }), M = E.length > 0 || null != C, B = A && null == C && null == w && null != S, U = !R && (M || B), k = _.length > 0;
   return U || k || !D ? (0, l.jsxs)(o.zJl, {
     className: y.scroller,
     fade: true,
@@ -85,7 +85,7 @@ function O(e) {
       })
     }) : null, k ? (0, l.jsx)(p.Z, {
       heading: I.intl.string(I.t.M0zgnT),
-      introText: R ? I.intl.format(I.t["4bk9Ak"], {
+      introText: L ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, n) => (0, l.jsx)(o.Anchor, {
           href: d.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

@@ -27,20 +27,20 @@ let S = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: S
-  } = e, _ = (0, o.sp)(), {
+  } = e, _ = (0, i.sp)(), {
     hasPromoUpsell: O
   } = u.Z.useConfig({
     location: "RewardHeroBlockCards"
   }), x = l.useMemo(() => s.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), y = (0, a.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
     products: j
   } = ((e, t, n) => {
-    let r = (0, h.Z)(),
-      i = (0, a.e7)([s.Z], () => s.Z.products),
-      o = l.useMemo(() => e ? [] : i.size > 0 ? r(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != n) : [], [e, r, t.rankedSkuIds, i, n, t.rewardSkuId]),
-      c = (0, d.a)()(o),
+    let r = (0, C.Z)(),
+      o = (0, a.e7)([s.Z], () => s.Z.products),
+      i = l.useMemo(() => e ? [] : o.size > 0 ? r(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != n) : [], [e, r, t.rankedSkuIds, o, n, t.rewardSkuId]),
+      c = (0, d.a)()(i),
       u = (0, f.l)(c);
     return {
-      products: (0, C.St)(u)
+      products: (0, h.St)(u)
     }
   })(t, n, y), k = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(j.length > 0) && n.rankedSkuIds.every(e => {
     var t;
@@ -48,12 +48,12 @@ let S = e => {
   }), [t, n.rankedSkuIds, j.length]), T = t || k, {
     readyToClaim: I
   } = (0, v.q)(x, n.rewardSkuId), L = null == y && null != n.rewardSkuId && null != x;
-  return (0, r.jsx)(i.Z, {
+  return (0, r.jsx)(o.Z, {
     gap: "xl",
     children: T ? (0, r.jsx)(r.Fragment, {
       children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(b.Z, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [L && !!(O || I) && (0, r.jsx)(o.k0, {
+      children: [L && !!(O || I) && (0, r.jsx)(i.k0, {
         newValue: {
           tilePosition: 0,
           pageSection: "top 4",
@@ -65,7 +65,7 @@ let S = e => {
         })
       }, n.rewardSkuId), j.map((e, t) => {
         let n = s.Z.getCategoryForProduct(e.skuId);
-        return null == e || null == n ? null : (0, r.jsx)(o.k0, {
+        return null == e || null == n ? null : (0, r.jsx)(i.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "top 4",

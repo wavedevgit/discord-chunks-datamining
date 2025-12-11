@@ -2,7 +2,7 @@
 /** chunk id: 743676, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 });
 var r, Chunk877921 = require("./877921.js"),
   l = require.n(Chunk877921),
@@ -50,13 +50,13 @@ function g(e) {
   }({}, i, r, d[t])
 }
 
-function m(e) {
+function f(e) {
   let {
     error: t
   } = e;
   u = t.code
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   getOverviewAnalytics(e) {
     return d[e]
   }
@@ -64,12 +64,12 @@ class f extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-o(f, "displayName", "GuildSettingsAnalyticsStore");
-let p = new f(Chunk570140.Z, {
+o(m, "displayName", "GuildSettingsAnalyticsStore");
+let b = new m(Chunk570140.Z, {
   GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: g,
-  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: m,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: m,
-  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: m
+  GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_FAILURE: f,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_FAILURE: f,
+  GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_FAILURE: f
 })

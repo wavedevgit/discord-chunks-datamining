@@ -2,7 +2,7 @@
 /** chunk id: 271668, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,11 +44,11 @@ let D = 512,
   Z = l().debounce(() => {
     (0, Chunk367907.yw)(Chunk981631.rMx.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
-  B = Chunk473749.forwardRef(function(e, t) {
+  F = Chunk473749.forwardRef(function(e, t) {
     let {
       channel: n,
       canOnlyUseTextCommands: a
-    } = e, s = i.useRef(false), l = i.useRef(0), [B, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = h.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(false), l = i.useRef(0), [F, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = h.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(N.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -102,8 +102,8 @@ let D = 512,
     let ea = i.useCallback(e => e !== q.length - 1 || X ? j : 0, [q.length, X]),
       eo = Q.map(e => e.data.length);
     i.useEffect(() => {
-      null != H.current && Y && null != B && H.current.scrollRowIntoView(B)
-    }, [Y, B]), i.useLayoutEffect(() => {
+      null != H.current && Y && null != F && H.current.scrollRowIntoView(F)
+    }, [Y, F]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
         null == (e = H.current) || e.scrollToSectionTop(0)
@@ -126,13 +126,13 @@ let D = 512,
       }, [n.id]);
     i.useImperativeHandle(t, () => ({
       onTabOrEnter: e => {
-        if (null == B) return !e && (V(0), true);
-        if (null == B) returnfalse;
+        if (null == F) return !e && (V(0), true);
+        if (null == F) returnfalse;
         let t = 0,
           n = 0;
         for (let e of Q)
-          if (t = n, B < (n += e.data.length)) {
-            let n = e.data[B - t],
+          if (t = n, F < (n += e.data.length)) {
+            let n = e.data[F - t],
               r = z.find(e => e.id === n.applicationId);
             el(n, r, (0, S.tI)(e.section));
             break
@@ -142,10 +142,10 @@ let D = 512,
         if (0 === J.length) returntrue;
         let t = X ? x : 0,
           n = J.length + t,
-          r = null == B ? 0 : B + e;
+          r = null == F ? 0 : F + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), V(r), W(true), true
       }
-    }), [J.length, Q, X, z, el, B]);
+    }), [J.length, Q, X, z, el, F]);
     let ec = i.useCallback(e => {
         let t = q[e];
         if (null == t) return null;
@@ -196,7 +196,7 @@ let D = 512,
           command: o,
           channel: n,
           className: R.itemWrapper,
-          selected: B === e,
+          selected: F === e,
           showImage: a.section.id !== o.applicationId,
           section: l,
           onClick: () => el(o, l, (0, S.tI)(a.section)),
@@ -204,15 +204,15 @@ let D = 512,
             V(null), W(false)
           }
         }, s)
-      }, [n, Q, el, z, B]),
+      }, [n, Q, el, z, F]),
       ef = (0, m.Dt)();
-    return (0, p.KR)(ef, true, (0, f.DJ)(B)), i.useEffect(() => () => {
+    return (0, p.KR)(ef, true, (0, f.DJ)(F)), i.useEffect(() => () => {
       (0, p.sJ)()
     }, []), (0, r.jsxs)(f.ZP, {
       id: ef,
       className: R.outerWrapper,
       innerClassName: R.wrapper,
-      onMouseDown: F,
+      onMouseDown: B,
       children: [(0, r.jsx)(I.Z, {
         className: R.rail,
         channel: n,
@@ -240,6 +240,6 @@ let D = 512,
     })
   });
 
-function F(e) {
+function B(e) {
   e.preventDefault()
 }

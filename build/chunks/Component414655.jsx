@@ -165,7 +165,7 @@ function A(e) {
         className: D.emptyStateText,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/medium",
-          color: "header-primary",
+          color: "text-strong",
           children: C.intl.string(C.t.HGnLLT)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",

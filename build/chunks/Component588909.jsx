@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk704215 = require("./704215.js"),
   Chunk952265 = require("./952265.js"),
@@ -101,7 +101,7 @@ function A(e, t) {
       let {
         oneClickGoLiveEnabled: e,
         useStreamCtaCopy: t
-      } = (0, g.tU)("welcomeNotification"), a = _.intl.string(t ? _.t.pEuzii : _.t.U76Ft2), c = e ? e => {
+      } = (0, g.tU)("welcomeNotification"), l = _.intl.string(t ? _.t.pEuzii : _.t.U76Ft2), c = e ? e => {
         let t = () => {
             h("go-live-modal"), u.Z.setInputLocked(false, v.Z.getTargetPID())
           },
@@ -134,12 +134,12 @@ function A(e, t) {
           contextKey: C.u1
         })
       };
-      r ? k.push((0, i.jsx)(l.zxk, {
+      r ? k.push((0, i.jsx)(a.zxk, {
         size: "sm",
         variant: "active",
         onClick: e => c(e),
-        text: a
-      })) : (j.confirmText = a, j.onConfirmClick = (e, t) => {
+        text: l
+      })) : (j.confirmText = l, j.onConfirmClick = (e, t) => {
         u.Z.updateNotificationStatus(t), c(e)
       });
       break
@@ -155,7 +155,7 @@ function A(e, t) {
         gamingId: null == e ? true : e.id,
         maxUserShowCount: 5,
         variant: r ? "subtle" : "default",
-        className: a()({
+        className: l()({
           [N.container]: true,
           [N.containerFaint]: r
         })
@@ -164,7 +164,7 @@ function A(e, t) {
     }
   }
   k.length > 0 && A.unshift(() => (0, i.jsx)("div", {
-    className: a()(N.container, N.containerFaint, N.keybindStreamContainer),
+    className: l()(N.container, N.containerFaint, N.keybindStreamContainer),
     children: k
   })), null == j.renderFooter && A.length > 0 && (j.renderFooter = (e, t, n) => (0, i.jsx)("div", {
     className: N.footerSection,
@@ -174,7 +174,7 @@ function A(e, t) {
     R = r ? true : () => (0, E.QR)((0, S.Pb)(), _.t["z8/sgJ"], _.intl.string(_.t.jZkzVJ), {
       highlightAdminWarningIfElevated: true
     }),
-    L = r ? (0, i.jsx)(l.X6q, {
+    L = r ? (0, i.jsx)(a.X6q, {
       variant: "heading-md/semibold",
       color: "text-strong",
       children: _.intl.string(_.t.KWDIrh)

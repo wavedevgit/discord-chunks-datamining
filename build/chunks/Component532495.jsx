@@ -78,12 +78,12 @@ function U(e, t) {
 }
 
 function G() {
-  var e, t, n, i, j, k, G, Z, B;
-  let F = (0, Chunk442837.e7)([Chunk594174.default], () => {
+  var e, t, n, i, j, k, G, Z, F;
+  let B = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
     }),
-    V = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(F.id)),
+    V = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(B.id)),
     {
       pendingAvatar: H,
       pendingGlobalName: Y,
@@ -103,14 +103,14 @@ function G() {
       })
     }),
     ee = (0, Chunk643879.SD)({
-      userId: F.id,
+      userId: B.id,
       image: H
     }),
     et = (0, Chunk295474.gS)(),
-    en = Chunk74538.ZP.canUsePremiumProfileCustomization(F),
-    er = (0, Chunk150039.gd)(H, F.avatar),
+    en = Chunk74538.ZP.canUsePremiumProfileCustomization(B),
+    er = (0, Chunk150039.gd)(H, B.avatar),
     ei = (0, Chunk150039.f$)(W, null == V ? true : V.banner),
-    ea = (0, Chunk687158.ZP)(F.id),
+    ea = (0, Chunk687158.ZP)(B.id),
     eo = null == ea ? true : ea.getLegacyUsername(),
     es = (null != (i = null == (e = $.global_name) ? true : module.length) ? Chunk512722 : 0) > 0 ? $.global_name : null != (j = null == et ? true : et.nick) ? j : [],
     el = (null != (k = null == (t = $.bio) ? true : exports.length) ? k : 0) > 0 ? $.bio : null != (G = null == et ? true : et.bio) ? G : [],
@@ -127,14 +127,14 @@ function G() {
         onBannerChange: Chunk350327.g_,
         forcedDivider: true
       }, "banner"), (0, Chunk54381.jsx)(Chunk451392.Z, {
-        user: F,
+        user: B,
         pendingAvatarSrc: ee,
         pendingColors: Q,
         onThemeColorsChange: Chunk350327.z5,
         forcedDivider: true
       })]
     }) : (0, Chunk54381.jsx)(Chunk610966.Z, {
-      user: F,
+      user: B,
       savedUserColor: null == V ? true : V.accentColor,
       pendingColor: q,
       setPendingAccentColor: Chunk350327.CM
@@ -142,12 +142,12 @@ function G() {
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk485344.sectionsContainer,
     children: [(0, Chunk54381.jsx)(Chunk349177.Z, {
-      placeholder: F.username,
+      placeholder: B.username,
       errors: es,
-      currentGlobalName: F.globalName,
+      currentGlobalName: B.globalName,
       pendingGlobalName: Y,
       onGlobalNameChange: Chunk809206.W0,
-      user: F
+      user: B
     }), (0, Chunk54381.jsx)(Chunk906364.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t["+T3RI/"]),
       errors: $.pronouns,
@@ -161,19 +161,19 @@ function G() {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.lqaIxI),
       forcedDivider: true
     }, "avatar"), (0, Chunk54381.jsx)(Chunk433411.Z, {
-      user: F,
+      user: B,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t["7v0T9P"])
     }, "decoration"), (0, Chunk54381.jsx)(Chunk818420.Z, {
-      user: F
+      user: B
     }), (0, Chunk54381.jsx)(Chunk513901.Z, {
-      user: F,
+      user: B,
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOo)
     }, "effect"), ep(), (0, Chunk54381.jsx)(Chunk126631.Z, {
       sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEw),
       errors: el,
       onBioChange: e => (0, d.xQ)(e, null == V ? true : V.bio),
       pendingBio: K,
-      currentBio: null != (B = null == V ? true : V.bio) ? B : ""
+      currentBio: null != (F = null == V ? true : V.bio) ? F : ""
     }, "bio"), ec.length > 0 && (0, Chunk54381.jsx)(Chunk74469.Z, {
       availablePrimaryGuilds: ec,
       pendingPrimaryGuildId: J,

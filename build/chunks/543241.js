@@ -18,9 +18,9 @@ require.d(exports, {
   jA: () => D,
   kI: () => N,
   nV: () => K,
-  q5: () => F,
+  q5: () => B,
   to: () => L,
-  wC: () => B,
+  wC: () => F,
   y$: () => x
 }), require("./290780.js"), require("./539854.js"), require("./388685.js"), require("./314940.js"), require("./704826.js"), require("./35282.js");
 var Chunk473749 = require("./473749.js"),
@@ -53,8 +53,8 @@ let N = function(e, t) {
       i = arguments.length > 3 && true !== arguments[3] && arguments[3];
     (0, u.O)(n);
     let a = (0, I.Gt)(e),
-      s = B(n),
-      c = F(n),
+      s = F(n),
+      c = B(n),
       f = V(n),
       {
         topEmojis: h,
@@ -384,13 +384,13 @@ function Z(e, t, n, i) {
   }, [e, t, n, a, i], o.pF)
 }
 
-function B(e) {
+function F(e) {
   return r.useEffect(() => {
     f.DZ.loadIfNecessary()
   }, []), (0, o.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
 }
 
-function F(e) {
+function B(e) {
   return r.useEffect(() => {
     f.DZ.loadIfNecessary()
   }, []), (0, o.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedReactionEmojisWithoutFetchingLatest())

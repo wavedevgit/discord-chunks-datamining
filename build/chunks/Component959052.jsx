@@ -21,7 +21,7 @@ let d = e => {
     } = e;
     return (0, r.jsx)(s.Heading, {
       variant: "heading-sm/medium",
-      color: "header-primary",
+      color: "text-strong",
       className: u.noticeText,
       children: t
     })

@@ -18,7 +18,7 @@ require.d(exports, {
   Vl: () => O,
   b7: () => V,
   ge: () => R,
-  il: () => B,
+  il: () => F,
   nY: () => p,
   pO: () => E,
   q8: () => T,
@@ -204,7 +204,7 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
       includeTaskTypes: a
     })
   },
-  B = (e, t) => {
+  F = (e, t) => {
     if (O(e)) return {
       progressSeconds: 0,
       targetSeconds: 1,
@@ -237,7 +237,7 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     })
   };
 
-function F(e) {
+function B(e) {
   var t;
   let n = e.taskConfigV2.tasks,
     r = n[i.X.ACHIEVEMENT_IN_ACTIVITY],
@@ -247,7 +247,7 @@ function F(e) {
 
 function V(e) {
   var t, n, r, i;
-  let a = F(e.config);
+  let a = B(e.config);
   if (null == a) return null;
   let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.type]) ? true : t.value) ? i : 0,
     s = D(a.target, o);

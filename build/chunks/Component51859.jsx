@@ -26,7 +26,7 @@ function x(e) {
   (0, s.KT)(x);
   let [h, j] = i.useState(false), _ = (0, c.ZP)(t, n).type !== g.A3.INACTIVE, {
     textColor: C
-  } = (0, m.Z)(_), Z = (0, o.g1)(t, "GuildPowerupPerkCard"), w = n.skuId === l.A$;
+  } = (0, m.Z)(_), Z = (0, a.g1)(t, "GuildPowerupPerkCard"), w = n.skuId === l.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => j(e),
     guildId: t,
@@ -43,7 +43,7 @@ function x(e) {
         guildId: t,
         powerup: n
       }),
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         className: v.description,
         color: C,
         variant: "text-sm/medium",

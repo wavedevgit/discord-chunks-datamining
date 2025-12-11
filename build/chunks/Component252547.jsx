@@ -25,7 +25,7 @@ function f(e) {
     children: [(0, a.jsx)(o.X6q, {
       className: u.sectionHeader,
       variant: "text-md/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: d.intl.string(d.t.ak8OHk)
     }), 0 === t.length ? (0, a.jsx)(o.xvT, {
       variant: "text-xs/semibold",

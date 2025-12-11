@@ -135,7 +135,7 @@ function G(e) {
         className: l()(J.headerSection, J.headerSectionLeft),
         children: [ed, (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          color: "header-primary",
+          color: "text-strong",
           className: J.applicationName,
           children: (0, r.jsx)(c.Z, {
             children: i.name
@@ -160,7 +160,7 @@ function G(e) {
           className: J.fade
         }), (0, r.jsxs)("div", {
           className: J.actionButtonsContainer,
-          children: [(0, r.jsx)(I.Z, {
+          children: [(0, r.jsx)(y.Z, {
             appContext: M.IlC.POPOUT,
             applicationId: n,
             channel: F,
@@ -187,7 +187,7 @@ function G(e) {
                 }
               })
             }
-          }) : null, (0, r.jsx)(y.Z, {
+          }) : null, (0, r.jsx)(I.Z, {
             node: ea,
             guestWindow: ec,
             onClick: eu
@@ -198,7 +198,7 @@ function G(e) {
               let {
                 closePopout: n
               } = e;
-              return (0, r.jsx)(P.Z, {
+              return (0, r.jsx)(x.Z, {
                 children: (0, r.jsx)(z.Z, {
                   application: i,
                   channelId: t,
@@ -211,7 +211,7 @@ function G(e) {
               let {
                 isShown: i
               } = n;
-              return (0, o.createElement)(x.Z, (t = function(e) {
+              return (0, o.createElement)(P.Z, (t = function(e) {
                 for (var n = 1; n < arguments.length; n++) {
                   var t = null != arguments[n] ? arguments[n] : {},
                     r = Object.keys(t);

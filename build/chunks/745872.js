@@ -207,19 +207,19 @@ var j = function e(t) {
   Chunk706165 = require("./706165.js"),
   G = Chunk390976.call(Chunk947599, Array.prototype.concat),
   Z = Chunk390976.call(Chunk365088, Array.prototype.splice),
-  B = Chunk390976.call(Chunk947599, String.prototype.replace),
-  F = Chunk390976.call(Chunk947599, String.prototype.slice),
+  F = Chunk390976.call(Chunk947599, String.prototype.replace),
+  B = Chunk390976.call(Chunk947599, String.prototype.slice),
   V = Chunk390976.call(Chunk947599, RegExp.prototype.exec),
   H = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
   Y = /\\(\\)?/g,
   W = function(e) {
-    var t = F(e, 0, 1),
-      n = F(e, false);
+    var t = B(e, 0, 1),
+      n = B(e, false);
     if ("%" === t && "%" !== n) throw new c("invalid intrinsic syntax, expected closing `%`");
     if ("%" === n && "%" !== t) throw new c("invalid intrinsic syntax, expected opening `%`");
     var r = [];
-    return B(e, H, function(e, t, n, i) {
-      r[r.length] = n ? B(i, Y, "$1") : t || e
+    return F(e, H, function(e, t, n, i) {
+      r[r.length] = n ? F(i, Y, "$1") : t || e
     }), r
   },
   K = function(e, t) {
@@ -249,8 +249,8 @@ module.exports = function(e, t) {
   l && (r = l[0], Z(n, G([0, 1], l)));
   for (var d = 1, f = true; d < n.length; d += 1) {
     var p = n[d],
-      _ = F(p, 0, 1),
-      m = F(p, false);
+      _ = B(p, 0, 1),
+      m = B(p, false);
     if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
     if ("constructor" !== p && f || (s = true), r += "." + p, U(x, a = "%" + r + "%")) o = x[a];
     else if (null != o) {

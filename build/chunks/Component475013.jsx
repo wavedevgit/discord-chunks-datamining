@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js");
 
 function N(e) {
-  f.Z.selectRole(e)
+  m.Z.selectRole(e)
 }
 let E = () => {
   let {
@@ -61,28 +61,28 @@ function I(e) {
   a()(null != n, "Guild cannot be null here");
   let o = i.useMemo(() => l.find(e => (0, u.fI)(e)), [l]);
   a()(null != o, "Guild must have an everyone role");
-  let m = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
-    f = (0, s.e7)([p.Z], () => p.Z.getSelectedRoleId()),
-    [b, y] = i.useState(m.length > 0);
+  let f = i.useMemo(() => l.filter(e => !(0, u.fI)(e)), [l]),
+    m = (0, s.e7)([b.Z], () => b.Z.getSelectedRoleId()),
+    [p, y] = i.useState(f.length > 0);
   i.useEffect(() => {
-    y(b || m.length > 0)
-  }, [b, m.length]), (0, d.ZP)(() => {
+    y(p || f.length > 0)
+  }, [p, f.length]), (0, d.ZP)(() => {
     let e = g.Z.getMemberCount(n.id);
     null != e && e <= x.cm && c.Z.requestMembers(n.id, "", 0, false)
   });
   let [E, I] = i.useState(C.ZI.DISPLAY);
   return (i.useEffect(() => {
-    null == f && I(C.ZI.DISPLAY)
-  }, [f]), null != f) ? (0, r.jsx)(j.Z, {
-    editRoleId: f,
+    null == m && I(C.ZI.DISPLAY)
+  }, [m]), null != m) ? (0, r.jsx)(j.Z, {
+    editRoleId: m,
     setEditRoleId: N,
     selectedSection: E,
     setSelectedSection: I
-  }) : b ? (0, r.jsx)(O.Z, {
+  }) : p ? (0, r.jsx)(O.Z, {
     setEditRoleId: N,
     guild: n,
     everyoneRole: o,
-    otherRoles: m,
+    otherRoles: f,
     setSelectedSection: I,
     refToScroller: t
   }) : (0, r.jsx)(v.Z, {

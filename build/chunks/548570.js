@@ -63,7 +63,7 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -130,9 +130,9 @@ function W(e) {
     else {
       var p;
       let e = Z({}, l.state);
-      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? F(Z({}, e), {
+      null != e.messages && (e.messages = e.messages.map(e => null != e.data && "string" == typeof e.data ? B(Z({}, e), {
         data: e.data.substring(0, 100)
-      }) : e)), V.log("[FAST CONNECT] successfully took over websocket, state:", F(Z({}, e), {
+      }) : e)), V.log("[FAST CONNECT] successfully took over websocket, state:", B(Z({}, e), {
         messages: null == (p = e.messages) ? true : p.length
       })), c = l.state.open, u = l.state.identify, d = l.state.messages, f = l.state.clientState
     } null == t && ((t = (0, k.Z)(n)).binaryType = "arraybuffer"), r(t), c && i(u, f), null != d && d.forEach(a), t.onopen = () => i(u, f), t.onmessage = a, t.onclose = s, t.onerror = o
@@ -511,7 +511,7 @@ class ei extends Chunk183139.Z {
   }
   resetSocketOnDispatchError(e) {
     let t = null != e.error.message && e.error.message.indexOf("Guild data was missing from store") >= 0;
-    this.resetSocketOnError(F(Z({}, e), {
+    this.resetSocketOnError(B(Z({}, e), {
       sentry: !t,
       clearCache: t
     }))

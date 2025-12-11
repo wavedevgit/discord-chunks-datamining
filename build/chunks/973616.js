@@ -155,7 +155,7 @@ class h extends m {
     }))
   }
   mergeFromApplicationUpdate(e) {
-    var t, n, r, i, a, o, s, l, c, d, f, p, _, m, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k, U, G, Z, B, F, V, H, Y, W, K;
+    var t, n, r, i, a, o, s, l, c, d, f, p, _, m, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k, U, G, Z, F, B, V, H, Y, W, K;
     return new h({
       id: null != (t = e.id) ? t : this.id,
       name: null != (n = e.name) ? n : this.name,
@@ -195,8 +195,8 @@ class h extends m {
       termsOfServiceUrl: null != (U = e.termsOfServiceUrl) ? U : this.termsOfServiceUrl,
       privacyPolicyUrl: null != (G = e.privacyPolicyUrl) ? G : this.privacyPolicyUrl,
       isVerified: null != (Z = e.isVerified) ? Z : this.isVerified,
-      customInstallUrl: null != (B = e.customInstallUrl) ? B : this.customInstallUrl,
-      installParams: null != (F = e.installParams) ? F : this.installParams,
+      customInstallUrl: null != (F = e.customInstallUrl) ? F : this.customInstallUrl,
+      installParams: null != (B = e.installParams) ? B : this.installParams,
       isDiscoverable: null != (V = e.isDiscoverable) ? V : this.isDiscoverable,
       directoryEntry: null != (H = e.directoryEntry) ? H : this.directoryEntry,
       categories: null != (Y = e.categories) ? Y : this.categories,

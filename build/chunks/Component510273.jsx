@@ -106,7 +106,7 @@ function _(e) {
       className: d.__invalid_nameContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: a()
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",

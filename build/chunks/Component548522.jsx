@@ -2,7 +2,7 @@
 /** chunk id: 548522, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  y: () => p
+  y: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,100 +17,100 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk775129 = require("./775129.js");
 
-function p(e) {
+function b(e) {
   var t;
   let {
     guild: n,
     formFields: c
-  } = e, [p, h] = i.useState(c);
+  } = e, [b, h] = i.useState(c);
   i.useEffect(() => h(c), [c]);
   let x = null != (t = (0, s.A)({
       guildId: n.id
     })) ? t : 0,
     [j, v] = i.useState(null),
-    O = i.useMemo(() => null == p ? true : p.some(e => (0, a.J)(e)), [p]),
-    C = i.useMemo(() => p.length === g.nx, [p]),
+    O = i.useMemo(() => null == b ? true : b.some(e => (0, a.J)(e)), [b]),
+    C = i.useMemo(() => b.length === g.nx, [b]),
     y = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), h(e), null != j && v(null)
     }, [j, n.id]),
     N = i.useCallback(e => {
-      y([...p, e])
-    }, [p, y]),
+      y([...b, e])
+    }, [b, y]),
     E = i.useCallback(e => {
-      y([...p.slice(0, e), ...p.slice(e + 1)])
-    }, [p, y]),
+      y([...b.slice(0, e), ...b.slice(e + 1)])
+    }, [b, y]),
     I = i.useCallback((e, t) => {
-      if (p[e] === t) return;
-      let n = [...p];
+      if (b[e] === t) return;
+      let n = [...b];
       n[e] = t, y(n)
-    }, [p, y]),
+    }, [b, y]),
     S = i.useCallback((e, t, n) => {
-      let r = p.indexOf(e),
-        i = [...p];
+      let r = b.indexOf(e),
+        i = [...b];
       null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), h(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
-    }, [j, p, y]);
+    }, [j, b, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: f.title,
-      children: m.intl.format(m.t["sm+75n"], {
-        currentCount: p.length,
+      className: m.title,
+      children: f.intl.format(f.t["sm+75n"], {
+        currentCount: b.length,
         maxCount: g.nx
       })
-    }), p.map(e => (0, d.a0)({
+    }), b.map(e => (0, d.a0)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,
-      index: p.indexOf(e),
-      isDragEnabled: p.length > 1,
+      index: b.indexOf(e),
+      isDragEnabled: b.length > 1,
       submittedGuildJoinRequestsCount: x,
       removeFormField: E,
       updateFormField: I,
       updateFormFieldOrder: S,
-      canRemove: p.length > 1,
+      canRemove: b.length > 1,
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
     })), !C && (0, r.jsx)("div", {
-      className: f.addQuestionsContainer,
+      className: m.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
         addFormField: N,
         guild: n,
         allowTerms: !O
       })
-    }), !C && (0, r.jsx)(b, {
+    }), !C && (0, r.jsx)(p, {
       addFormField: N
     })]
   })
 }
 
-function b(e) {
+function p(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
-    text: m.intl.string(m.t.EOwiEk),
+    text: f.intl.string(f.t.EOwiEk),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.EOwiEk),
+        label: f.intl.string(f.t.EOwiEk),
         required: true
       })
     }
   }, {
-    text: m.intl.string(m.t.jqrNDh),
+    text: f.intl.string(f.t.jqrNDh),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.jqrNDh),
+        label: f.intl.string(f.t.jqrNDh),
         required: true
       })
     }
   }, {
-    text: m.intl.string(m.t.I5q8vp),
+    text: f.intl.string(f.t.I5q8vp),
     onClick: () => {
       t({
         field_type: a.QJ.TEXT_INPUT,
-        label: m.intl.string(m.t.I5q8vp),
+        label: f.intl.string(f.t.I5q8vp),
         required: true
       })
     }
@@ -119,8 +119,8 @@ function b(e) {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: f.examplesHeader,
-      children: m.intl.string(m.t.ID04cA)
+      className: m.examplesHeader,
+      children: f.intl.string(f.t.ID04cA)
     }), (0, r.jsx)(c.j, {
       pills: n
     })]

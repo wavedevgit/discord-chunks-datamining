@@ -20,18 +20,18 @@ function s(e) {
     disableEveryoneRole: d,
     includeRoleRestrictedPrivateChannels: u = false,
     includeStageVoiceChannels: g = false,
-    helperText: m,
-    className: f
-  } = e, p = (0, l.r)(t, n, u, g), b = (0, a.h)(t, s, d);
+    helperText: f,
+    className: m
+  } = e, b = (0, l.r)(t, n, u, g), p = (0, a.h)(t, s, d);
   return (0, r.jsx)(i.ZP, {
-    channelRows: p,
-    roleRows: b,
+    channelRows: b,
+    roleRows: p,
     guildId: t,
     selectedChannelIds: n,
     selectedRoleIds: s,
     onChange: o,
     placeholder: c,
-    helperText: m,
-    className: f
+    helperText: f,
+    className: m
   })
 }

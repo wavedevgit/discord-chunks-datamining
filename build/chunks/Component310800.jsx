@@ -29,14 +29,14 @@ function h(e) {
     shouldRestrictUpdatingCreatorMonetizationSettings: h
   } = (0, s.gX)(t), x = g.length > 0;
   return (0, r.jsx)("div", {
-    className: b.productListingsHeader,
+    className: p.productListingsHeader,
     children: (0, r.jsx)(l.gNt, {
-      label: x ? p.intl.string(p.t.RwuStQ) : p.intl.string(p.t.WKMcMW),
+      label: x ? b.intl.string(b.t.RwuStQ) : b.intl.string(b.t.WKMcMW),
       children: e => x ? (0, r.jsx)("ul", {
-        className: b.productListings,
+        className: p.productListings,
         id: e.controlId,
         children: g.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(f.Z, {
+          children: (0, r.jsx)(m.Z, {
             guildId: t,
             product: e,
             onEditProduct: () => i(e.id),
@@ -80,7 +80,7 @@ function h(e) {
               var n;
               return n = e.id, void(0, o.JG)((0, u.ar)(t, n))
             },
-            onTestDownload: () => m.Z.open({
+            onTestDownload: () => f.Z.open({
               guildId: t,
               productId: e.id
             }),
@@ -107,7 +107,7 @@ function x(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.zxk, {
-      text: p.intl.string(p.t.riG6Da),
+      text: b.intl.string(b.t.riG6Da),
       icon: l.qJs,
       onClick: () => a(null),
       disabled: n

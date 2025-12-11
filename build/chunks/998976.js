@@ -126,7 +126,7 @@ function f(e) {
       reference: N,
       floating: P
     }), [N, P]),
-    B = i.useMemo(() => {
+    F = i.useMemo(() => {
       let e = {
         position: n,
         left: 0,
@@ -152,8 +152,8 @@ function f(e) {
     update: k,
     refs: G,
     elements: Z,
-    floatingStyles: B
-  }), [E, k, G, Z, B])
+    floatingStyles: F
+  }), [E, k, G, Z, F])
 }
 let p = (e, t) => ({
     ...(0, r.cv)(e),

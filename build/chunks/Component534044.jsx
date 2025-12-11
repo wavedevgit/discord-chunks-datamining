@@ -56,7 +56,7 @@ function p(n) {
       paddingFix: false,
       children: [(0, i.jsx)(l.Heading, {
         variant: "heading-md/bold",
-        color: "header-primary",
+        color: "text-strong",
         className: m.actionsHeader,
         children: x.intl.string(x.t["9BRc1N"])
       }), (0, i.jsx)(c.Z, {

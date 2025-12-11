@@ -41,7 +41,7 @@ function m(e) {
     className: n,
     children: [(0, a.jsx)(o.Heading, {
       variant: "heading-sm/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: d.intl.string(d.t.Fbjlu3)
     }), (0, a.jsx)("ul", {
       className: u.outerContainer,

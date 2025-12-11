@@ -147,7 +147,7 @@ function h(e) {
     children: t,
     className: n,
     tier: i
-  } = e, a = i === u.Eu4.NONE ? "text-muted" : "header-primary", s = i === u.Eu4.NONE || null == i ? "heading-xl/normal" : "heading-xl/bold";
+  } = e, a = i === u.Eu4.NONE ? "text-muted" : "text-strong", s = i === u.Eu4.NONE || null == i ? "heading-xl/normal" : "heading-xl/bold";
   return (0, r.jsxs)("th", {
     className: o()(p.columnHeading, n),
     scope: "col",

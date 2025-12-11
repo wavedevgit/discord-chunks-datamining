@@ -57,8 +57,8 @@ let k = {
       disableGameProfileLinks: U,
       onReaction: G,
       onVoiceChannelPreview: Z,
-      onUserPopoutClosed: B,
-      trackRankingItemInteraction: F
+      onUserPopoutClosed: F,
+      trackRankingItemInteraction: B
     } = e, {
       largeImage: V
     } = (0, v.rv)({
@@ -120,8 +120,8 @@ let k = {
         badges: ef,
         entry: y,
         disableGameProfileLinks: U,
-        onUserPopoutClosed: B,
-        trackRankingItemInteraction: F
+        onUserPopoutClosed: F,
+        trackRankingItemInteraction: B
       }) : (0, r.jsx)(D.jL, {
         channel: b,
         title: y.extra.game_name,
@@ -130,8 +130,8 @@ let k = {
         userDescription: M.t["6oWFUN"],
         entry: y,
         stream: $,
-        onUserPopoutClosed: B,
-        trackRankingItemInteraction: F
+        onUserPopoutClosed: F,
+        trackRankingItemInteraction: B
       }),
       e_ = !eu && ec ? (0, r.jsx)(f.Z, {
         application: el,

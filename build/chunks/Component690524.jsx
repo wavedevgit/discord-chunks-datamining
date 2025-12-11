@@ -93,10 +93,10 @@ let M = {
       let [e, t] = Chunk473749.useState(Chunk474936.Si.TIER_2), [n, b] = Chunk473749.useState(null), y = (0, Chunk442837.Wu)([Chunk430824.Z], () => Chunk430824.Z.getGuildsArray()), [w] = (0, Chunk442837.Wu)([Chunk78839.Z], () => [Chunk78839.Z.getPremiumSubscription()]), x = Chunk305342.map(e => ({
         value: e,
         label: e.name
-      })), [M, k] = Chunk473749.useState(x.length > 0 ? x[0].value : null), [U, G] = Chunk473749.useState(""), [Z, B] = Chunk473749.useState({
+      })), [M, k] = Chunk473749.useState(x.length > 0 ? x[0].value : null), [U, G] = Chunk473749.useState(""), [Z, F] = Chunk473749.useState({
         plan_id: Chunk474936.Xh.PREMIUM_MONTH_TIER_2,
         gift: "true"
-      }), F = "true" !== Z.gift && null != w, [V, H] = Chunk473749.useState(x.length > 0 ? x[0].value : null), {
+      }), B = "true" !== Z.gift && null != w, [V, H] = Chunk473749.useState(x.length > 0 ? x[0].value : null), {
         analyticsLocations: Y
       } = (0, Chunk906732.ZP)(Chunk100527.Z.PAYMENT_FLOW_TEST_PAGE), [W, K] = Chunk473749.useState(""), [z, q] = Chunk473749.useState(Chunk981631.lds), {
         balance: Q,
@@ -229,7 +229,7 @@ let M = {
                   value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0,
                   label: "Nitro Basic"
                 }],
-                onChange: e => B(t => L(D({}, t), {
+                onChange: e => F(t => L(D({}, t), {
                   plan_id: e
                 }))
               }), (0, Chunk54381.jsx)(Chunk199849.y6, {
@@ -242,19 +242,19 @@ let M = {
                   value: "false",
                   label: "Not Gift"
                 }],
-                onChange: e => B(t => L(D({}, t), {
+                onChange: e => F(t => L(D({}, t), {
                   gift: e
                 }))
               })]
             }), (0, Chunk54381.jsx)(Chunk481060.aML, {
               "data-migration-pending": true,
               text: "Already subscribed",
-              shouldShow: F,
+              shouldShow: B,
               children: e => (0, r.jsx)(u.Button, L(D({
                 variant: "primary",
                 text: "Open Link"
               }, e), {
-                disabled: F,
+                disabled: B,
                 onClick: () => {
                   window.open(N.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + a.stringify(D({}, Z)))
                 }

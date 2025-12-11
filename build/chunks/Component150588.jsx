@@ -85,8 +85,8 @@ let D = (0, Chunk467721.animated)(Chunk481060.CJ0),
       sourceQuestContent: G
     } = e, {
       ref: Z,
-      height: B
-    } = (0, d.ZP)(), [F, V] = i.useState(null), [H, Y] = i.useState(null), W = (0, p.Z)(e => {
+      height: F
+    } = (0, d.ZP)(), [B, V] = i.useState(null), [H, Y] = i.useState(null), W = (0, p.Z)(e => {
       let t = e.target;
       V(t.offsetWidth), Y(t.scrollWidth)
     }), K = (0, f.y)(W), z = (0, S.uq)(N), q = N === m.jn.QUESTS_EMBED, Q = (0, h.t5)(a, I.dr.QUESTS_CARD, N, G), X = (null == (t = a.userStatus) ? true : t.completedAt) != null, J = (0, _.O5)(), $ = (0, g.B6)(a.config.expiresAt), ee = (0, g.B6)(a.config.rewardsConfig.rewardsExpireAt), et = i.useMemo(() => null != a.config.cosponsorMetadata, [a]), en = e => {
@@ -97,7 +97,7 @@ let D = (0, Chunk467721.animated)(Chunk481060.CJ0),
         questContentPosition: k,
         sourceQuestContent: G
       })
-    }, er = () => null != F && null != H && F < H, ei = (0, r.jsx)(y.ZP, {
+    }, er = () => null != B && null != H && B < H, ei = (0, r.jsx)(y.ZP, {
       className: A.partnerBranding,
       logotypeClassName: et ? A.partnerBrandingLogotypes : true,
       gameTileSize: y.fF.MEDIUM,
@@ -114,7 +114,7 @@ let D = (0, Chunk467721.animated)(Chunk481060.CJ0),
       }),
       "aria-label": C.intl.string(C.t.dcl9MQ),
       style: {
-        height: z ? B : true
+        height: z ? F : true
       },
       children: [(0, r.jsx)(E.Z, {
         quest: a,

@@ -41,13 +41,13 @@ function h(e) {
 }
 
 function x(e) {
-  return f.$X.filter(t => (null == e ? true : e.id) !== m._ && g.oz(t, e))
+  return m.$X.filter(t => (null == e ? true : e.id) !== f._ && g.oz(t, e))
 }
 
 function j(e) {
   let {
     guild: t
-  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = x(t), m = g.length > 0, j = f.$X.some(e => {
+  } = e, i = (0, s.e7)([d.Z], () => d.Z.getEveryoneRole(t)), g = x(t), f = g.length > 0, j = m.$X.some(e => {
     var n, r;
     return !u.Z.can(e, t, null, {
       [i.id]: (n = h({}, i), r = r = {
@@ -65,38 +65,38 @@ function j(e) {
     })
   }), v = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.itemContent,
+      className: p.itemContent,
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-md/semibold",
-        color: "header-primary",
-        children: p.intl.string(p.t["+vaUlM"])
+        color: "text-strong",
+        children: b.intl.string(b.t["+vaUlM"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: p.intl.format(p.t.RXAtdO, {
+        children: b.intl.format(b.t.RXAtdO, {
           numPerms: g.length
         })
       })]
-    }), m ? (0, r.jsx)(c.Mgn, {
+    }), f ? (0, r.jsx)(c.Mgn, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: b.warning,
-      "aria-label": p.intl.string(p.t["bG7Gu+"])
+      className: p.warning,
+      "aria-label": b.intl.string(b.t["bG7Gu+"])
     }) : (0, r.jsx)(c.owK, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: b.check,
-      "aria-label": p.intl.string(p.t.YQix8y)
+      className: p.check,
+      "aria-label": b.intl.string(b.t.YQix8y)
     })]
   });
-  return m ? j ? (0, r.jsx)(o.u, {
-    text: p.intl.string(p.t["E5v/a/"]),
+  return f ? j ? (0, r.jsx)(o.u, {
+    text: b.intl.string(b.t["E5v/a/"]),
     children: (0, r.jsx)("div", {
-      className: l()(b.simpleItemWrapper, b.disabled),
+      className: l()(p.simpleItemWrapper, p.disabled),
       children: v
     })
   }) : (0, r.jsx)(c.P3F, {
@@ -110,10 +110,10 @@ function j(e) {
         }, n))
       })
     },
-    className: l()(b.simpleItemWrapper, b.clickable),
+    className: l()(p.simpleItemWrapper, p.clickable),
     children: v
   }) : (0, r.jsx)("div", {
-    className: b.simpleItemWrapper,
+    className: p.simpleItemWrapper,
     children: v
   })
 }

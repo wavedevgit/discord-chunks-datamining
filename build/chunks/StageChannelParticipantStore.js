@@ -102,11 +102,11 @@ function Z(e) {
   return null != e && (delete P[e], A.delete(e), true)
 }
 
-function B() {
+function F() {
   N.clear(), A.clear(), P = {}
 }
 
-function F(e, t, n) {
+function B(e, t, n) {
   if (null == n || e.has(n)) return;
   let r = _.Z.getChannel(n);
   (null == r ? true : r.isGuildStageVoice()) && (t.add(n), null == P[n] && e.add(n))
@@ -119,7 +119,7 @@ function V(e) {
   return t.reduce((e, t) => {
     if (null == t.guildId || !N.has(t.guildId)) return e;
     let r = new Set;
-    return (F(n, r, t.oldChannelId), F(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
+    return (B(n, r, t.oldChannelId), B(n, r, t.channelId), 0 === r.size) ? e : U(t.userId, Array.from(r)) || e
   }, false)
 }
 
@@ -243,8 +243,8 @@ class et extends(r = Chunk442837.ZP.Store) {
 }
 T(et, "displayName", "StageChannelParticipantStore");
 let en = new et(Chunk570140.Z, {
-  CONNECTION_OPEN: B,
-  OVERLAY_INITIALIZE: B,
+  CONNECTION_OPEN: F,
+  OVERLAY_INITIALIZE: F,
   VOICE_STATE_UPDATES: V,
   CHANNEL_DELETE: X,
   GUILD_MEMBERS_CHUNK_BATCH: H,

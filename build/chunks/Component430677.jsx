@@ -32,14 +32,14 @@ let v = function(e) {
     onDragStart: _,
     onDragComplete: T,
     onDragReset: P
-  } = e, w = (0, s.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, s.e7)([b.Z], () => b.Z.getGuild(y)), {
+  } = e, w = (0, s.e7)([b.Z], () => b.Z.getChannel(N.channelId)), Z = (0, s.e7)([p.Z], () => p.Z.getGuild(y)), {
     customEmoji: R,
     unicodeEmoji: D
   } = (0, g.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), A = null == N.emoji || null != R || null != D, L = h.ZP.getNewMemberActionIconURL({
     channelId: N.channelId,
     icon: N.icon
   }), k = null;
-  null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKP);
+  null != w && (0, f.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKP);
   let {
     drag: G,
     dragSourcePosition: M,
@@ -128,17 +128,17 @@ let v = function(e) {
         })
       }) : (0, r.jsx)("div", {
         className: j.actionItemEmojiWrapper,
-        children: (0, r.jsx)(f.Z, {
+        children: (0, r.jsx)(m.Z, {
           emojiId: null == (v = N.emoji) ? true : v.id,
           emojiName: null == (O = N.emoji) ? true : O.name,
-          size: f.R.MEDIUM,
+          size: m.R.MEDIUM,
           defaultComponent: (0, r.jsx)(H, {})
         })
       }), (0, r.jsxs)("div", {
         className: j.actionItemText,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: N.title
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",

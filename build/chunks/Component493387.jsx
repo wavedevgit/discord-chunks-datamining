@@ -96,10 +96,10 @@ function P(e) {
       trackingArea: f.j_.CLOUD_PLAY,
       onClick: k
     }
-  }, [k]), G = (0, p.G)(d), Z = i.useMemo(() => null != j ? j : null != G && w ? G : true, [w, j, G]), B = l.Z.useConfig({
+  }, [k]), G = (0, p.G)(d), Z = i.useMemo(() => null != j ? j : null != G && w ? G : true, [w, j, G]), F = l.Z.useConfig({
     location: "RichPresenceGameActivityInviteEmbed"
   }), {
-    canStartAuthorization: F,
+    canStartAuthorization: B,
     hasAlreadyLinked: V,
     startAuthorization: H
   } = (0, u.F)(d), Y = (0, c.K)(H, V), W = !(0, O.Z)(R, E, d.id), K = (0, y.dQ)(x, null == (t = E.activity) ? true : t.type, W);
@@ -119,7 +119,7 @@ function P(e) {
     onView: b,
     presenceActivity: R,
     analyticsLocations: a,
-    showAuthButton: F && !V && B.enabled,
+    showAuthButton: B && !V && F.enabled,
     startAuthorization: Y
   }) : (0, r.jsx)(T.Z, {
     message: E,
@@ -140,7 +140,7 @@ function P(e) {
     hideParty: g,
     partyStatusElement: P,
     analyticsLocations: a,
-    showAuthButton: F && !V && B.enabled,
+    showAuthButton: B && !V && F.enabled,
     startAuthorization: Y
   })
 }

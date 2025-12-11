@@ -1,5 +1,5 @@
 /** Chunk was on 21112 **/
-/** chunk id: 301160, original params: e,i,a (module,exports,require) **/
+/** chunk id: 301160, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
   EmojiAddModal: () => h
 }), require("./388685.js");
@@ -16,32 +16,32 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   let {
     emoji: i,
-    onChange: a,
+    onChange: t,
     value: n
   } = e, o = r.ZP.getEmojiURL({
     id: i.id,
     animated: i.animated,
     size: 24
   });
-  return (0, t.jsx)(s.$q, {
+  return (0, a.jsx)(s.$q, {
     size: 20,
-    className: c.emojiRow,
-    onChange: a,
+    className: d.emojiRow,
+    onChange: t,
     type: s.M0.INVERTED,
     value: n,
     reverse: true,
-    children: (0, t.jsxs)("div", {
-      className: c.emojiLabel,
-      children: [(0, t.jsx)("img", {
-        className: c.emojiImage,
+    children: (0, a.jsxs)("div", {
+      className: d.emojiLabel,
+      children: [(0, a.jsx)("img", {
+        className: d.emojiImage,
         src: o,
         width: 24,
         height: 24,
         alt: ""
-      }), (0, t.jsx)(l.Text, {
-        color: "header-primary",
+      }), (0, a.jsx)(l.Text, {
+        color: "text-strong",
         variant: "text-md/medium",
-        className: c.emojiAlias,
+        className: d.emojiAlias,
         children: i.name
       })]
     })
@@ -51,49 +51,49 @@ function j(e) {
 function h(e) {
   let {
     guildId: i,
-    initialTierEmojiIds: a,
+    initialTierEmojiIds: t,
     onSubmit: s,
     transitionToManageEmoji: r,
     transitionState: h,
     onClose: u
-  } = e, x = (0, m.Z)(i), [p, v] = n.useState(new Set), C = p.size > 0;
-  return (0, t.jsx)(o.Modal, {
+  } = e, x = (0, m.Z)(i), [g, p] = n.useState(new Set), v = g.size > 0;
+  return (0, a.jsx)(o.Modal, {
     transitionState: h,
     onClose: u,
-    title: d.intl.string(d.t.xC6tUv),
+    title: c.intl.string(c.t.xC6tUv),
     actions: [{
-      text: d.intl.string(d.t["ETE/oC"]),
+      text: c.intl.string(c.t["ETE/oC"]),
       variant: "secondary",
       onClick: u
     }, {
-      text: d.intl.format(d.t.pX74jh, {
-        totalEmoji: p.size
+      text: c.intl.format(c.t.pX74jh, {
+        totalEmoji: g.size
       }),
       variant: "primary",
       onClick: function() {
-        s(p), u()
+        s(g), u()
       },
-      disabled: !C
+      disabled: !v
     }],
-    children: (0, t.jsxs)(l.Kqy, {
+    children: (0, a.jsxs)(l.Kqy, {
       gap: "md",
-      children: [(0, t.jsx)(l.Text, {
+      children: [(0, a.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: d.intl.format(d.t["OnK+C1"], {
+        children: c.intl.format(c.t["OnK+C1"], {
           transitionToManageEmoji: r
         })
-      }), null != x && x.length > 0 && (0, t.jsx)("div", {
-        className: c.emojiContainer,
-        children: x.map(e => null != a && a.has(e.id) ? null : (0, t.jsx)(j, {
+      }), null != x && x.length > 0 && (0, a.jsx)("div", {
+        className: d.emojiContainer,
+        children: x.map(e => null != t && t.has(e.id) ? null : (0, a.jsx)(j, {
           emoji: e,
           onChange: () => {
             var i;
-            return i = e.id, void v(e => {
-              let a = new Set(e);
-              return p.has(i) ? a.delete(i) : a.add(i), a
+            return i = e.id, void p(e => {
+              let t = new Set(e);
+              return g.has(i) ? t.delete(i) : t.add(i), t
             })
           },
-          value: p.has(e.id)
+          value: g.has(e.id)
         }, e.id))
       })]
     })

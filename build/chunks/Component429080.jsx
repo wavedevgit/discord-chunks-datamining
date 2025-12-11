@@ -103,7 +103,7 @@ let b = function(e) {
                   className: m.memberInfo,
                   children: [(0, r.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    color: "header-primary",
+                    color: "text-strong",
                     children: E
                   }), (0, r.jsx)(o.Text, {
                     variant: "text-sm/normal",

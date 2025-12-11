@@ -69,7 +69,7 @@ function _(e) {
       color: "text-default",
       className: N.headerNoConfigSubtitle,
       children: y.intl.format(y.t.q5f7tK, {
-        helpdeskArticleUrl: m.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.Button, {
       disabled: n,
@@ -94,12 +94,12 @@ function T(e) {
   } = (0, h.Z)(0), {
     scrolledToTop: w,
     handleScroll: Z
-  } = (0, j.V)(), R = (0, c.e7)([f.Z], () => {
+  } = (0, j.V)(), R = (0, c.e7)([m.Z], () => {
     var e;
-    return null == (e = f.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
-  }, [n.id, t.id]), D = (0, c.Wu)([b.Z], () => {
+    return null == (e = m.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
+  }, [n.id, t.id]), D = (0, c.Wu)([p.Z], () => {
     var e;
-    return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
+    return null != (e = p.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
   }), A = D.length > 1 ? g.O1.OR : g.O1.AND, L = i.useMemo(() => A === g.O1.OR ? D.flat() : null != D && D.length > 0 ? D[0] : [], [A, D]), k = i.useMemo(() => new Set(L.map(e => e.connectionType)), [L]);
 
   function G(e) {
@@ -111,7 +111,7 @@ function T(e) {
       applicationId: t,
       operator: true,
       value: true
-    }), (0, p.d_)(n.id, S(r, A))
+    }), (0, b.d_)(n.id, S(r, A))
   }
 
   function M() {
@@ -139,7 +139,7 @@ function T(e) {
       fullWidth: true,
       variant: "secondary"
     })), U = (0, r.jsxs)(r.Fragment, {
-      children: [(B = () => (0, p.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
+      children: [(B = () => (0, b.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: N.headerTitleContainer,
           children: [(0, r.jsx)("div", {
@@ -158,7 +158,7 @@ function T(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: y.intl.format(y.t.q5f7tK, {
-            helpdeskArticleUrl: m.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
@@ -176,7 +176,7 @@ function T(e) {
           value: n,
           disabled: e || a.length < 2
         })
-      }(l, n.id, A, L, (e, t) => (0, p.d_)(n.id, S(e, t))), function(e, t, n, i, l) {
+      }(l, n.id, A, L, (e, t) => (0, b.d_)(n.id, S(e, t))), function(e, t, n, i, l) {
         function a(n, r) {
           let i = [];
           for (let t of e) i.push(I({}, t));
@@ -237,7 +237,7 @@ function T(e) {
             integrations: l
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(L, e => (0, p.d_)(n.id, S(e, A)), l, n.id, o), e]
+      }(L, e => (0, b.d_)(n.id, S(e, A)), l, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {

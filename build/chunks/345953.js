@@ -196,7 +196,7 @@ function Z(e) {
   n !== f.default.getId() && j(t, n, p.Z.isLocalMute(n, t))
 }
 
-function B(e) {
+function F(e) {
   let {
     context: t,
     userId: n
@@ -204,7 +204,7 @@ function B(e) {
   n !== f.default.getId() && M(t, n, d.Z.isLocalSoundboardMuted(n))
 }
 
-function F(e) {
+function B(e) {
   let {} = e;
   g.hW.updateAsync("audioContextSettings", e => {
     e.user = {}, e.stream = {}
@@ -216,8 +216,8 @@ class V extends Chunk147913.Z {
       POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: Z,
-      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: B,
-      MEDIA_ENGINE_RESET_SETTINGS: F
+      AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
+      MEDIA_ENGINE_RESET_SETTINGS: B
     })
   }
 }

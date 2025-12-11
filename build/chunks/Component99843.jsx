@@ -103,7 +103,7 @@ let m = e => {
             facepileSizeOverride: a.EFr.SIZE_24
           }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
-            color: "header-primary",
+            color: "text-strong",
             children: null != f ? f : ""
           }), (0, r.jsx)(a.vdY, {
             className: b.editIcon,

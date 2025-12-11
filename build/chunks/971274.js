@@ -70,9 +70,9 @@ function u(e) {
       e = (0, r.Me)(e, g, E), (e = (0, r.UC)(e, D, y)) && (e = (0, a.Mw)(e, (null == I ? true : I.calendar) || new(0, s.IQ)), I && "hour" in I ? T(I.set(e)) : T(e))
     }
   }(0, r.wp)(R, g, E) ? w((0, r.Me)(R, g, E)): 0 > R.compare(D) ? x((0, r.N2)(R, h, _, g, E)) : R.compare(M) > 0 && x((0, r.Yn)(R, h, _, g, E));
-  let B = (0, c.useMemo)(() => !!C && (!!(y && y(C)) || (0, r.wp)(C, g, E)), [C, y, g, E]),
-    F = e.isInvalid || "invalid" === e.validationState || B,
-    V = F ? "invalid" : null,
+  let F = (0, c.useMemo)(() => !!C && (!!(y && y(C)) || (0, r.wp)(C, g, E)), [C, y, g, E]),
+    B = e.isInvalid || "invalid" === e.validationState || F,
+    V = B ? "invalid" : null,
     H = (0, c.useMemo)(() => "visible" === O ? h : d(h), [O, h]);
   return {
     isDisabled: null != (n = e.isDisabled) && n,
@@ -88,7 +88,7 @@ function u(e) {
     focusedDate: R,
     timeZone: A,
     validationState: V,
-    isValueInvalid: F,
+    isValueInvalid: B,
     setFocusedDate(e) {
       G(e), j(true)
     },

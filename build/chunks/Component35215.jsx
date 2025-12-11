@@ -92,7 +92,7 @@ function Z(e) {
     i = null != (t = null != r ? n[r] : null) ? t : A.t["D+DkEH"];
   return A.intl.string(i)
 }
-let B = e => {
+let F = e => {
     let {
       quest: t,
       onClose: n
@@ -128,7 +128,7 @@ let B = e => {
       })]
     })
   },
-  F = e => {
+  B = e => {
     let {
       quest: t,
       game: o,
@@ -255,7 +255,7 @@ function H(e) {
     let e = Math.min(o.length, x);
     return (0, r.jsxs)("div", {
       className: N.container,
-      children: [(0, r.jsx)(B, {
+      children: [(0, r.jsx)(F, {
         quest: t,
         onClose: s
       }), (0, r.jsx)("div", {
@@ -271,12 +271,12 @@ function H(e) {
       d.current = e
     },
     className: N.container,
-    children: [(0, r.jsx)(B, {
+    children: [(0, r.jsx)(F, {
       quest: t,
       onClose: s
     }), (0, r.jsxs)("div", {
       className: N.gameGrid,
-      children: [y.map(e => (0, r.jsx)(F, {
+      children: [y.map(e => (0, r.jsx)(B, {
         quest: t,
         game: e,
         sourceQuestContent: l,

@@ -77,9 +77,9 @@ let T = Symbol("NO GUILD ID"),
   U = [],
   G = [],
   Z = null,
-  B = new Map;
+  F = new Map;
 
-function F(e) {
+function B(e) {
   let t = e.data.type;
   switch (t) {
     case a.l.CURRENT_GAMES:
@@ -177,7 +177,7 @@ function X(e) {
 }
 
 function J(e) {
-  var t, n, r, i, a, l, c, u, f, p, g, E, b, O, S, R, G, Z, B, V, K;
+  var t, n, r, i, a, l, c, u, f, p, g, E, b, O, S, R, G, Z, F, V, K;
   let {
     userProfile: z,
     fetchStartedAt: q
@@ -257,7 +257,7 @@ function J(e) {
         name: et.name
       } : null,
       badges: er,
-      widgets: null == (p = z.widgets) ? true : p.map(F).filter(m.lm),
+      widgets: null == (p = z.widgets) ? true : p.map(B).filter(m.lm),
       wishlistSettings: z.wishlist_settings
     }), (null == (E = z.user_profile) || null == (g = E.profile_effect) ? true : g.expires_at) != null) {
     let e = new o.V7;
@@ -271,7 +271,7 @@ function J(e) {
         banner: z.guild_member_profile.banner,
         accentColor: z.guild_member_profile.accent_color,
         themeColors: null == (Z = z.guild_member_profile) ? true : Z.theme_colors,
-        popoutAnimationParticleType: null == (B = z.guild_member_profile) ? true : B.popout_animation_particle_type,
+        popoutAnimationParticleType: null == (F = z.guild_member_profile) ? true : F.popout_animation_particle_type,
         profileEffect: null != e ? {
           skuId: e.sku_id,
           expiresAt: e.expires_at
@@ -435,7 +435,7 @@ function es(e) {
   } = e, r = w.get(t);
   if (null == r) returnfalse;
   w.set(t, I(v({}, r), {
-    widgets: n.map(F).filter(m.lm)
+    widgets: n.map(B).filter(m.lm)
   }))
 }
 
@@ -490,7 +490,7 @@ function e_(e) {
 }
 
 function em(e) {
-  for (let t of (Z = e.applicationConfigs, B.clear(), e.applicationConfigs)) B.set(t.application_id, t)
+  for (let t of (Z = e.applicationConfigs, F.clear(), e.applicationConfigs)) F.set(t.application_id, t)
 }
 class eh extends Chunk750041.Z {
   initialize() {
@@ -557,7 +557,7 @@ class eh extends Chunk750041.Z {
     return Z
   }
   getApplicationWidgetApplicationConfig(e) {
-    return B.get(e)
+    return F.get(e)
   }
   constructor() {
     super({

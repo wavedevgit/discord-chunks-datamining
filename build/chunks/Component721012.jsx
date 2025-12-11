@@ -23,11 +23,11 @@ function c(e) {
   } = t;
   return (0, l.jsxs)("div", {
     className: n,
-    children: [(0, l.jsx)(a.Text, {
+    children: [(0, l.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: s.intl.format(i, {
-        testimonialHook: (e, t) => (0, l.jsx)(a.Text, {
+      children: a.intl.format(i, {
+        testimonialHook: (e, t) => (0, l.jsx)(s.Text, {
           tag: "span",
           variant: "text-sm/bold",
           color: d,
@@ -36,11 +36,11 @@ function c(e) {
       })
     }), (0, l.jsxs)("div", {
       className: o.userContainer,
-      children: [(0, l.jsx)(a.qEK, {
+      children: [(0, l.jsx)(s.qEK, {
         src: r,
-        size: a.EFr.SIZE_16,
+        size: s.EFr.SIZE_16,
         "aria-hidden": true
-      }), (0, l.jsx)(a.Text, {
+      }), (0, l.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
         children: c
@@ -74,29 +74,29 @@ function d(e) {
     className: o.testimonialHeroContainer,
     children: [(0, l.jsx)("div", {
       className: o.animatedContainer,
-      children: (0, l.jsx)(a.W3x, {
+      children: (0, l.jsx)(s.W3x, {
         items: [g],
         renderItem: f,
         getItemKey: e => e.adminTitle
       })
-    }), (0, l.jsx)(a.Text, {
+    }), (0, l.jsx)(s.Text, {
       variant: "text-lg/bold",
       className: o.heroQuotes,
       children: "“"
     }), (0, l.jsxs)("div", {
       className: o.testimonialsControls,
-      children: [(0, l.jsx)(a.hU, {
+      children: [(0, l.jsx)(s.hU, {
         size: "sm",
         variant: "secondary",
-        icon: a.whL,
+        icon: s.whL,
         onClick: d,
-        "aria-label": s.intl.string(s.t["13/7kX"])
-      }), (0, l.jsx)(a.hU, {
+        "aria-label": a.intl.string(a.t["13/7kX"])
+      }), (0, l.jsx)(s.hU, {
         size: "sm",
         variant: "secondary",
-        icon: a.ZSh,
+        icon: s.ZSh,
         onClick: m,
-        "aria-label": s.intl.string(s.t.PDTjLN)
+        "aria-label": a.intl.string(a.t.PDTjLN)
       })]
     })]
   })
@@ -107,23 +107,23 @@ function u(e) {
     item: t,
     state: n,
     cleanup: i,
-    direction: s
-  } = e, [d] = (0, a.q_F)(() => {
+    direction: a
+  } = e, [d] = (0, s.q_F)(() => {
     switch (n) {
-      case a.pJH.ENTERED:
+      case s.pJH.ENTERED:
         return {
           from: {
-            transform: "right" === s ? "translateX(150%)" : "translate(-150%)"
+            transform: "right" === a ? "translateX(150%)" : "translate(-150%)"
           }, to: {
             transform: "translateX(0%)"
           }
         };
-      case a.pJH.YEETED:
+      case s.pJH.YEETED:
         return {
           from: {
             transform: "translateX(0%)"
           }, to: {
-            transform: "right" === s ? "translateX(-150%)" : "translate(150%)"
+            transform: "right" === a ? "translateX(-150%)" : "translate(150%)"
           }, onRest: i
         };
       default:

@@ -38,9 +38,9 @@ function f(e) {
         size: "md",
         "aria-label": c.intl.string(c.t.cpT0Cq),
         onClick: () => {
-          t(o.L.USER_DISMISS)
+          t(a.L.USER_DISMISS)
         },
-        icon: a.Dio
+        icon: o.Dio
       })
     })]
   })

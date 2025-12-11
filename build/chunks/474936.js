@@ -7,7 +7,7 @@ require.d(exports, {
   $X: () => ey,
   $e: () => f,
   $n: () => eJ,
-  A5: () => B,
+  A5: () => F,
   AU: () => X,
   Bo: () => e4,
   C: () => s,
@@ -73,7 +73,7 @@ require.d(exports, {
   dT: () => ef,
   ee: () => eE,
   gW: () => eg,
-  gh: () => F,
+  gh: () => B,
   h1: () => eZ,
   h8: () => el,
   hX: () => e$,
@@ -87,7 +87,7 @@ require.d(exports, {
   mn: () => C,
   nC: () => eO,
   nG: () => eI,
-  nH: () => eB,
+  nH: () => eF,
   nS: () => m,
   o4: () => S,
   pH: () => eL,
@@ -105,7 +105,7 @@ require.d(exports, {
   wh: () => Q,
   xT: () => er,
   y7: () => g,
-  ys: () => eF,
+  ys: () => eB,
   zp: () => Z
 }), require("./388685.js");
 var Chunk314794 = require("./314794.js"),
@@ -347,8 +347,8 @@ let P = Object.freeze({
   U = 28,
   G = 30,
   Z = 30,
-  B = 7,
-  F = 30,
+  F = 7,
+  B = 30,
   V = "775514091874680832",
   H = "845031178288889946",
   Y = 432e6,
@@ -523,14 +523,14 @@ var eG = function(e) {
   eZ = function(e) {
     return e.FREE = "free", e.PREMIUM_STANDARD = "premium-standard", e
   }({});
-let eB = {
+let eF = {
   "1024422698568122368": D,
   "511651876987469824": D,
   "511651885459963904": D,
   "944037208325619722": x,
   "642251038925127690": L
 };
-var eF = function(e) {
+var eB = function(e) {
   return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e
 }({});
 let eV = Object.freeze({

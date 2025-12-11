@@ -21,7 +21,7 @@ function c(e) {
     className: o.container,
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",
-      color: "header-primary",
+      color: "text-strong",
       children: s.intl.string(s.t.BDUDau)
     }), (0, r.jsx)("div", {
       className: o.controlsBarContainer,

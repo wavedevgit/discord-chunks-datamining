@@ -67,7 +67,7 @@ function Z(e) {
   return e
 }
 
-function B(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -78,8 +78,8 @@ function B(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
+function B(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -154,11 +154,11 @@ function Y() {
     G = (0, Chunk924557.w9)(),
     [Z] = (0, Chunk706140.cv)(G ? [Chunk704215.z.CLIPS_SETTINGS_BETA_TAG] : []),
     {
-      shouldMergeGameSettings: B
+      shouldMergeGameSettings: F
     } = Chunk202527.b.useExperiment({
       location: "settings"
     }),
-    F = null != (n = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && require,
+    B = null != (n = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()) && require,
     V = (0, Chunk237292.y0)({
       location: "settings"
     }),
@@ -208,8 +208,8 @@ function Y() {
     numOfPendingFamilyRequests: Chunk726985,
     isOverlaySupported: Chunk388032,
     isClipsBetaTagShowing: Z === Chunk704215.z.CLIPS_SETTINGS_BETA_TAG,
-    shouldMergeGameSettings: B,
-    isStaff: F,
+    shouldMergeGameSettings: F,
+    isStaff: B,
     isInappropriateConversationWarningEnabled: V,
     isInapproprateConversationsDefaultOn: H,
     paymentsBlocked: Y,
@@ -229,7 +229,7 @@ function Y() {
     isChatMentionSuggestionsSettingEnabled: ea,
     isCrossDMSearchEnabledSettingVisible: eo,
     isRedesignedNotificationsEnabled: es
-  }), [q, Z, $, ee, K, J, z, Chunk839469, X, W, H, V, Chunk388032, F, Q, Chunk726985, Y, B, Chunk413182, Chunk906467, et, en, er, ei, ea, eo, es])
+  }), [q, Z, $, ee, K, J, z, Chunk839469, X, W, H, V, Chunk388032, B, Q, Chunk726985, Y, F, Chunk413182, Chunk906467, et, en, er, ei, ea, eo, es])
 }
 
 function W(e) {
@@ -294,7 +294,7 @@ function z(e, t, n) {
       section: o.ID.HEADER,
       label: e.header
     }), e.settings.forEach(e => {
-      r.push(F(Z({}, t[e]), {
+      r.push(B(Z({}, t[e]), {
         tabPredicate: () => null == n || K(e, n, a)
       }))
     }))

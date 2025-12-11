@@ -57,7 +57,7 @@ function x(e) {
               }));
               return [...t, ...e.filter(e => !n.has(e)).map(e => ({
                 ref_id: e,
-                ref_type: b.Qs.CHANNEL
+                ref_type: p.Qs.CHANNEL
               }))]
             })
           },
@@ -75,14 +75,14 @@ function x(e) {
             }), (0, r.jsx)(l.LZC, {
               size: 8
             })]
-          }), (0, r.jsx)(m.Z, {})]
+          }), (0, r.jsx)(f.Z, {})]
         })
       }), (0, r.jsx)(l.gNt, {
         label: h.intl.string(h.t.RdwKw7),
         description: h.intl.string(h.t.zAww7V),
         disabled: E,
-        children: (0, r.jsx)(p.Z, {})
-      }), (0, r.jsx)(f.Z, {})]
+        children: (0, r.jsx)(b.Z, {})
+      }), (0, r.jsx)(m.Z, {})]
     })
   })
 }

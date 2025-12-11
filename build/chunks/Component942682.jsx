@@ -36,7 +36,7 @@ function c(e) {
   return (0, r.jsxs)("div", {
     className: s.container,
     children: [t, (0, r.jsx)(a.xvT, {
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-sm/medium",
       children: n
     })]

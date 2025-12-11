@@ -35,12 +35,12 @@ function h(e) {
           className: f.guildIcon
         }), (0, i.jsx)(l.Heading, {
           variant: "heading-sm/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: s.name
         })]
       }), null != c && (0, i.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: p.intl.format(p.t.jDV3i6, {
           username: c.globalName
         })

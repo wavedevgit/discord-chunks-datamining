@@ -92,7 +92,7 @@ function D(e) {
     guildId: l,
     roleId: o,
     locked: g
-  } = e, f = i.useRef(null), p = i.useMemo(() => ({
+  } = e, m = i.useRef(null), b = i.useMemo(() => ({
     [l]: [t.id]
   }), [l, t.id]);
 
@@ -140,16 +140,16 @@ function D(e) {
       }))
     })
   }
-  return (0, m.$)(p, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
+  return (0, f.$)(b, "GuildSettingsRolesEditMembers"), (0, r.jsx)("div", {
     className: P.contentWidth,
-    children: (0, r.jsx)(b.Z, {
-      targetElementRef: f,
+    children: (0, r.jsx)(p.Z, {
+      targetElementRef: m,
       userId: t.id,
       guildId: l,
       roleId: o,
       position: "left",
       children: e => (0, r.jsxs)(d.P3F, Z(w({}, e), {
-        innerRef: f,
+        innerRef: m,
         className: T.memberRow,
         onContextMenu: j,
         children: [(0, r.jsx)(E.Z, {
@@ -222,15 +222,15 @@ function L(e) {
     handleAddClick: u
   } = e, {
     analyticsLocations: g
-  } = (0, p.ZP)(f.Z.MEMBER_LIST), m = i.useMemo(() => l.trim().toLowerCase(), [l]);
-  (0, C.rY)(t, m);
-  let b = i.useMemo(() => c.filter(e => (0, C.eg)(m, e)), [c, m]),
-    h = i.useMemo(() => b.sort((e, t) => e.name.localeCompare(t.name)), [b]);
-  return (0, r.jsx)(p.Gt, {
+  } = (0, b.ZP)(m.Z.MEMBER_LIST), f = i.useMemo(() => l.trim().toLowerCase(), [l]);
+  (0, C.rY)(t, f);
+  let p = i.useMemo(() => c.filter(e => (0, C.eg)(f, e)), [c, f]),
+    h = i.useMemo(() => p.sort((e, t) => e.name.localeCompare(t.name)), [p]);
+  return (0, r.jsx)(b.Gt, {
     value: g,
     children: (0, r.jsx)(d._2F, {
       className: T.list,
-      sections: [Math.max(b.length, 1)],
+      sections: [Math.max(p.length, 1)],
       sectionHeight: a,
       renderSection: () => (0, r.jsx)("div", {
         style: {
@@ -294,11 +294,11 @@ function G(e) {
     locked: s,
     setSelectedSection: c
   } = e, [u, g] = i.useState(""), {
-    headerHeight: m,
-    headerRef: f
+    headerHeight: f,
+    headerRef: m
   } = (0, y.Z)(0), {
-    scrolledToTop: p,
-    handleScroll: b
+    scrolledToTop: b,
+    handleScroll: p
   } = (0, N.V)(), h = l.managed || s, v = (0, C.e)(t.id, l.id), O = (0, o.e7)([j.Z], () => {
     var e, n;
     return null != (n = null == (e = j.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
@@ -321,12 +321,12 @@ function G(e) {
     className: T.container,
     children: [(0, r.jsx)("div", {
       className: T.headerContainer,
-      ref: f,
+      ref: m,
       children: (0, r.jsx)("div", {
         className: P.contentWidth,
         children: (0, r.jsxs)("div", {
           className: a()(P.header, {
-            [P.stickyHeaderElevated]: !p
+            [P.stickyHeaderElevated]: !b
           }),
           children: [(0, r.jsx)(N.Z, {
             guild: t,
@@ -346,12 +346,12 @@ function G(e) {
         })
       })
     }), (0, r.jsx)(L, {
-      headerHeight: m + 8,
+      headerHeight: f + 8,
       query: u,
       guildId: t.id,
       roleId: l.id,
       locked: h,
-      onScroll: b,
+      onScroll: p,
       roleMembers: v,
       handleAddClick: E
     })]

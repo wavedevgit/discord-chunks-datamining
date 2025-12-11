@@ -200,7 +200,7 @@ function G(e) {
         children: (0, a.jsx)(d.Heading, {
           variant: "heading-md/extrabold",
           className: H.title,
-          color: S ? "header-primary" : "text-muted",
+          color: S ? "text-strong" : "text-muted",
           style: {
             width: "".concat(f.width - 2 * _.I8, "px")
           },

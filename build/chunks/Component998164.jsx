@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551952 = require("./551952.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let b = [];
+let p = [];
 
 function h() {
   return (0, Chunk54381.jsx)("div", {
@@ -66,7 +66,7 @@ function h() {
         className: Chunk551952.actionItemText,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: Chunk388032.intl.string(Chunk388032.t["K/i3iQ"])
         })
       })]
@@ -83,14 +83,14 @@ function x(e) {
       let {
         default: e
       } = await Promise.all([n.e("7590"), n.e("88575")]).then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, p(f({}, n), {
+      return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t,
         onSave: l
       }))
     })
   }, [t, l]);
   return (0, r.jsxs)(a.P3F, {
-    className: m.addActionItem,
+    className: f.addActionItem,
     onClick: s,
     children: [(0, r.jsx)(a.oFk, {
       size: "xs",
@@ -107,7 +107,7 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.Wu)([d.Z], () => {
     var e;
-    return null != (e = d.Z.getSettings().newMemberActions) ? e : b
+    return null != (e = d.Z.getSettings().newMemberActions) ? e : p
   }), a = i.useCallback((e, n) => {
     (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
   }, [t]), g = i.useCallback((e, r, i, l) => {
@@ -118,7 +118,7 @@ let j = function(e) {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), v = n.map(e => p(f({}, e), {
+  }, [n]), v = n.map(e => b(m({}, e), {
     id: e.channelId
   })), O = i.useCallback(e => {
     (0, c.hS)(e)
@@ -128,7 +128,7 @@ let j = function(e) {
     handleDragComplete: N
   } = (0, s.Z)(v, O);
   return (0, r.jsxs)("div", {
-    className: m.section,
+    className: f.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
       guildId: t,
       action: e,

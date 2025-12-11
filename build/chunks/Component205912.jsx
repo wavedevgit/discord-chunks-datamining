@@ -111,7 +111,7 @@ function I(e) {
     placement: "bottom-start"
   }), {
     isMounted: Z,
-    styles: B
+    styles: F
   } = (0, d.Y)(k, {
     common: e => {
       let {
@@ -126,7 +126,7 @@ function I(e) {
       transform: "scaleY(0.96)"
     },
     duration: 100
-  }), F = e => {
+  }), B = e => {
     null == n || n(e), M(false)
   };
   return (0, r.jsx)(p.g, O(b({}, N), {
@@ -142,7 +142,7 @@ function I(e) {
         "aria-invalid": null != e.errorMessageId,
         "aria-errormessage": e.errorMessageId,
         value: t,
-        onChange: F,
+        onChange: B,
         isDisabled: P,
         isRequired: w,
         minValue: i,
@@ -174,11 +174,11 @@ function I(e) {
           style: L,
           className: g.popover,
           children: (0, r.jsx)(u.Vq, {
-            style: B,
+            style: F,
             className: g.dialog,
             children: (0, r.jsx)(f.f, {
               value: t,
-              onChange: F,
+              onChange: B,
               minValue: i,
               maxValue: E,
               disabled: P

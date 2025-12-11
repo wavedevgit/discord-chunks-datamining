@@ -24,8 +24,8 @@ function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([b.default], () => b.default.getCurrentUser()), y = o.useRef(null);
-  async function O(e) {
+  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([b.default], () => b.default.getCurrentUser()), O = o.useRef(null);
+  async function y(e) {
     e.preventDefault(), l()(null != s, "Cannot submit null birthday."), C(true);
     try {
       await u.Av(s, _.L0.NEW_USER_FLOW), t()
@@ -46,11 +46,11 @@ function N(e) {
     }, [N]),
     I = o.useCallback(() => {
       var e;
-      null == (e = y.current) || e.focus()
-    }, [y]);
+      null == (e = O.current) || e.focus()
+    }, [O]);
   return null == j ? null : (0, a.jsxs)("form", {
     className: E.content,
-    onSubmit: O,
+    onSubmit: y,
     children: [(0, a.jsx)(d.gw7, {
       size: "custom",
       width: 56,
@@ -86,7 +86,7 @@ function N(e) {
       children: (0, a.jsx)("div", {
         className: E.buttonWrapper,
         children: (0, a.jsx)(c.zx, {
-          buttonRef: y,
+          buttonRef: O,
           type: "submit",
           size: c.zx.Sizes.LARGE,
           submitting: T,

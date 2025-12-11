@@ -79,8 +79,8 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = new Chunk710845.Z("SubscriptionHeader.tsx"),
-  F = {
+let F = new Chunk710845.Z("SubscriptionHeader.tsx"),
+  B = {
     page: Chunk981631.ZY5.USER_SETTINGS,
     section: Chunk981631.jXE.SETTINGS_PREMIUM,
     object: Chunk981631.qAy.CARD
@@ -193,7 +193,7 @@ function K() {
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,
         analyticsLocations: module,
-        analyticsObject: F
+        analyticsObject: B
       }),
       text: Chunk388032.intl.string(Chunk388032.t["/ygMUY"])
     }),
@@ -266,7 +266,7 @@ let z = function(e) {
     eu = () => {
       if (null != i && null != i.premiumPlanIdFromItems) {
         let e = g.Z.get(i.premiumPlanIdFromItems);
-        if (null == e) return void B.info("Plan not fetched for plan id: ".concat(i.premiumPlanIdFromItems));
+        if (null == e) return void F.info("Plan not fetched for plan id: ".concat(i.premiumPlanIdFromItems));
         let t = (0, v.DE)(e, null == P ? true : P.id, false),
           n = t.length > 0 ? t[0] : i.currency,
           r = true;
@@ -274,7 +274,7 @@ let z = function(e) {
           initialPlanId: i.premiumPlanIdFromItems,
           analyticsLocations: z,
           analyticsLocation: G,
-          analyticsObject: F,
+          analyticsObject: B,
           subscription: i
         }) : $ ? ec() : u.O5(i, z)
       }
@@ -291,7 +291,7 @@ let z = function(e) {
         initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: z,
         analyticsLocation: G,
-        analyticsObject: F,
+        analyticsObject: B,
         subscription: i,
         skipConfirm: true
       }) : u.v4(i, z)
@@ -366,7 +366,7 @@ let z = function(e) {
                 (0, m.Z)({
                   analyticsLocations: z,
                   analyticsLocation: G,
-                  analyticsObject: F,
+                  analyticsObject: B,
                   subscription: i
                 })
               },

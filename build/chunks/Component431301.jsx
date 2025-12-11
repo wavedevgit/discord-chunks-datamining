@@ -37,7 +37,7 @@ function x() {
       className: Chunk188057.container,
       children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         children: Chunk388032.intl.string(Chunk388032.t.UKgg5N)
       }), (0, Chunk54381.jsx)(Chunk413682.w, {
         canManageGuild: x,

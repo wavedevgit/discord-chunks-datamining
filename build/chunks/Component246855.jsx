@@ -56,10 +56,10 @@ function E(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, b] = r.useState(!i), p = (0, c.ZP)(), f = (0, l.apv)(p), x = f ? L.Z : w.Z, h = f ? A.Z : S.Z, C = r.useRef(null), j = r.useRef(null), [g, y] = r.useState(false), [v, _] = r.useState(false), [N, O] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, b] = r.useState(!i), p = (0, c.ZP)(), f = (0, l.apv)(p), x = f ? L.Z : w.Z, h = f ? A.Z : S.Z, C = r.useRef(null), j = r.useRef(null), [g, v] = r.useState(false), [y, _] = r.useState(false), [N, O] = r.useState(false);
   r.useEffect(() => {
-    g && v && N && t()
-  }, [g, v, N, t]), r.useEffect(() => {
+    g && y && N && t()
+  }, [g, y, N, t]), r.useEffect(() => {
     n || i || setTimeout(() => {
       var e;
       null == (e = C.current) || e.play()
@@ -95,7 +95,7 @@ function E(e) {
       playsInline: true,
       className: P.centerOrb,
       controls: false,
-      onCanPlayThrough: r.useCallback(() => y(true), []),
+      onCanPlayThrough: r.useCallback(() => v(true), []),
       onEnded: T,
       children: (0, a.jsx)("source", {
         src: x,
@@ -142,7 +142,7 @@ function D(e) {
           className: P.orbsIcon
         }), (0, a.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: T.intl.formatToPlainString(T.t.YMor7k, {
             count: r
           })
@@ -189,7 +189,7 @@ function k(e) {
   }, [d.id, u, x, c]);
   let L = !O || "loading" === x || null == b && null == m,
     S = "error" === x || null == p || null == b && null != m;
-  return (0, a.jsx)(y.Z, {
+  return (0, a.jsx)(v.Z, {
     onClose: s,
     transitionState: o,
     quest: d,
@@ -197,7 +197,7 @@ function k(e) {
     location: _.dr.ORBS_REWARD_MODAL,
     isRewardContentLoading: L,
     rewardContentHasError: S,
-    rewardContent: S ? null : (0, a.jsx)(v.Z, {
+    rewardContent: S ? null : (0, a.jsx)(y.Z, {
       rewardName: T.intl.string(T.t.Lmysvd),
       children: (0, a.jsx)(D, {
         onClose: s,

@@ -22,9 +22,9 @@ let j = function(e) {
   let {
     transitionState: j,
     streamKey: h,
-    channelId: m,
-    onClose: g
-  } = e, v = (0, i.e7)([s.Z], () => {
+    channelId: g,
+    onClose: m
+  } = e, v = (0, l.e7)([s.Z], () => {
     var e;
     return null == (e = s.Z.getSecureFramesState(h)) ? true : e.epochAuthenticator
   }), x = (0, d.W)({
@@ -33,37 +33,37 @@ let j = function(e) {
     desiredLength: b.YP
   }), P = c.useCallback(() => {
     (0, a.ih)({
-      channelId: m
+      channelId: g
     })
-  }, [m]), w = {
+  }, [g]), w = {
     transitionState: j,
-    title: y.intl.string(y.t.QogHld),
-    subtitle: y.intl.string(y.t.qODBkW)
+    title: O.intl.string(O.t.QogHld),
+    subtitle: O.intl.string(O.t.qODBkW)
   }, T = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
-      className: O.verification,
+      className: y.verification,
       children: [(0, n.jsxs)("div", {
-        className: O.header,
-        children: [(0, n.jsx)(l.Heading, {
+        className: y.header,
+        children: [(0, n.jsx)(i.Heading, {
           variant: "text-sm/bold",
-          color: "header-primary",
-          children: y.intl.string(y.t.cgBTyO)
+          color: "text-strong",
+          children: O.intl.string(O.t.cgBTyO)
         }), null != x && (0, n.jsx)(p.H, {
-          className: O.copyIcon,
+          className: y.copyIcon,
           chunks: x,
-          color: l.TVs.colors.INTERACTIVE_TEXT_DEFAULT,
+          color: i.TVs.colors.INTERACTIVE_TEXT_DEFAULT,
           onCopy: P
         })]
       }), (0, n.jsx)(f.b, {
-        className: O.code,
+        className: y.code,
         chunks: x,
         columns: b.WK
       })]
-    }), (0, n.jsx)(l.Text, {
-      className: O.footer,
+    }), (0, n.jsx)(i.Text, {
+      className: y.footer,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: y.intl.format(y.t["H3+ktv"], {
+      children: O.intl.format(O.t["H3+ktv"], {
         helpArticle: (0, u.uV)()
       })
     })]
@@ -86,7 +86,7 @@ let j = function(e) {
     }
     return e
   }({}, w), r = r = {
-    onClose: g,
+    onClose: m,
     actions: [],
     children: T
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

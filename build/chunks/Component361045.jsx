@@ -40,7 +40,7 @@ function c(e) {
       }), (0, a.jsxs)("div", {
         children: [(0, a.jsxs)(r.Heading, {
           variant: "heading-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           className: o.heading,
           children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(i.Z, {
             className: o.betaTag

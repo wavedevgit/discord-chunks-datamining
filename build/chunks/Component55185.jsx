@@ -50,7 +50,7 @@ function y(e) {
       className: g.toggleContainerText,
       children: [(0, i.jsx)(s.Text, {
         variant: "text-sm/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: p.intl.string(h.default.WhdCGP)
       }), n && (0, i.jsxs)("div", {
         className: g.toggleContainerOnlineRow,
@@ -120,7 +120,7 @@ function j(e) {
       },
       children: [(0, i.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: g.controlTitle,
         children: p.intl.string(h.default["5YsmGI"])
       }), (0, i.jsxs)("div", {

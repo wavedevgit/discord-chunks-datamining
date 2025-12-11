@@ -86,14 +86,14 @@ function Z(e) {
   i = i.truncate(n, r), u.Z.commit(i)
 }
 
-function B(e) {
+function F(e) {
   let {
     channelId: t
   } = e;
   j.log("Clearing messages for ".concat(t)), u.Z.clear(t), L.clear()
 }
 
-function F(e) {
+function B(e) {
   let {
     channelId: t,
     jump: n,
@@ -447,11 +447,11 @@ let eh = new em(Chunk570140.Z, {
   LOAD_MESSAGES: G,
   LOAD_MESSAGES_SUCCESS: V,
   LOAD_MESSAGES_FAILURE: H,
-  LOAD_MESSAGES_SUCCESS_CACHED: F,
+  LOAD_MESSAGES_SUCCESS_CACHED: B,
   LOCAL_MESSAGES_LOADED: ep,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: Z,
-  CLEAR_MESSAGES: B,
+  CLEAR_MESSAGES: F,
   MESSAGE_CREATE: K,
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,

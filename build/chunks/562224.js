@@ -108,13 +108,13 @@ async function N(e, t) {
     location: "startStreamWithSource"
   });
   G !== y.ApplicationStreamPresets.PRESET_AUTO || Z || (G = y.ApplicationStreamPresets.PRESET_VIDEO);
-  let B = G === y.ApplicationStreamPresets.PRESET_AUTO ? y.ApplicationStreamPresets.PRESET_VIDEO : G,
-    [F, V] = null != (b = (0, g.Z)(B, P, x)) ? b : [],
-    H = null != (v = null != F ? F : null == t ? true : t.resolution) ? v : M,
+  let F = G === y.ApplicationStreamPresets.PRESET_AUTO ? y.ApplicationStreamPresets.PRESET_VIDEO : G,
+    [B, V] = null != (b = (0, g.Z)(F, P, x)) ? b : [],
+    H = null != (v = null != B ? B : null == t ? true : t.resolution) ? v : M,
     Y = null != (I = null != V ? V : null == t ? true : t.fps) ? I : k,
     W = null != (C = null == t ? true : t.previewDisabled) ? C : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
-  return (0, h.Z)(B, H, Y, P, x, w) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, Y = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
+  return (0, h.Z)(F, H, Y, P, x, w) || (G = y.ApplicationStreamPresets.PRESET_VIDEO, H = y.ApplicationStreamResolutions.RESOLUTION_720, Y = y.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
     preset: G,
     resolution: H,
     frameRate: Y,

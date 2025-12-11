@@ -2,7 +2,7 @@
 /** chunk id: 516129, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -33,9 +33,9 @@ function u(e) {
   return e
 }
 let g = Chunk692547.Z.unsafe_rawColors.PRIMARY_400.css,
-  m = Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css;
+  f = Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css;
 
-function f(e) {
+function m(e) {
   var {
     enabled: t,
     imageClassName: n,
@@ -55,11 +55,11 @@ function f(e) {
     }
     return i
   }(e, ["enabled", "imageClassName", "iconWrapperClassName"]);
-  let f = (0, o.ZP)(),
-    p = {
+  let m = (0, o.ZP)(),
+    b = {
       height: 18,
       width: 18,
-      color: (0, s.wjy)(f) ? g : m
+      color: (0, s.wjy)(m) ? g : f
     };
   return (0, r.jsx)(c.Z, u({
     className: l()({
@@ -71,9 +71,9 @@ function f(e) {
     }),
     icon: null != a.image && "" !== a.image ? (0, r.jsx)(s.vdY, u({
       size: "custom"
-    }, p)) : (0, r.jsx)(s.FmF, u({
+    }, b)) : (0, r.jsx)(s.FmF, u({
       size: "custom"
-    }, p)),
+    }, b)),
     iconClassName: l()(d.avatarUploadIcon, d.hideDefaultIcon),
     iconWrapperClassName: i,
     showIcon: true,

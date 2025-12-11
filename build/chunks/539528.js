@@ -203,7 +203,7 @@ function C(e) {
     var r = U.indexOf(e.key);
     false === r && (r = 0);
     var i = n - r;
-    i && (L = true, F(i))
+    i && (L = true, B(i))
   }
   var k = N(T()),
     U = [k.key];
@@ -238,7 +238,7 @@ function C(e) {
     })
   }
 
-  function B(e, r) {
+  function F(e, r) {
     var i = "REPLACE",
       a = _(e, r, P(), Q.location);
     R.confirmTransitionTo(a, i, m, function(e) {
@@ -263,16 +263,16 @@ function C(e) {
     })
   }
 
-  function F(e) {
+  function B(e) {
     t.go(e)
   }
 
   function V() {
-    F(false)
+    B(false)
   }
 
   function H() {
-    F(1)
+    B(1)
   }
   var Y = 0;
 
@@ -303,8 +303,8 @@ function C(e) {
     location: k,
     createHref: G,
     push: Z,
-    replace: B,
-    go: F,
+    replace: F,
+    go: B,
     goBack: V,
     goForward: H,
     block: z,
@@ -421,13 +421,13 @@ function x(e) {
   var G = v(),
     Z = [p(G)];
 
-  function B(e) {
+  function F(e) {
     var t = document.querySelector("base"),
       n = "";
     return t && t.getAttribute("href") && (n = P(window.location.href)), n + "#" + b(f + p(e))
   }
 
-  function F(e, t) {
+  function B(e, t) {
     var n = "PUSH",
       r = _(e, true, true, J.location);
     S.confirmTransitionTo(r, n, a, function(e) {
@@ -504,8 +504,8 @@ function x(e) {
     length: t.length,
     action: "POP",
     location: G,
-    createHref: B,
-    push: F,
+    createHref: F,
+    push: B,
     replace: V,
     go: H,
     goBack: Y,

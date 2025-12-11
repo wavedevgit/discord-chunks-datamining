@@ -158,14 +158,14 @@ function Z(e) {
   A = i && a && !o ? t : null
 }
 
-function B(e) {
+function F(e) {
   let {
     id: t
   } = e;
   S.surveyOverride = t, null != t && delete S.hiddenSurveys[t], (0, u.wk)(S.surveyOverride, true)
 }
 
-function F() {
+function B() {
   I = true
 }
 
@@ -244,8 +244,8 @@ let X = new Q(Chunk570140.Z, {
   CONNECTION_RESUMED: j,
   SURVEY_FETCHED: Z,
   SURVEY_HIDE: H,
-  SURVEY_OVERRIDE: B,
-  PUSH_NOTIFICATION_CLICK: F,
+  SURVEY_OVERRIDE: F,
+  PUSH_NOTIFICATION_CLICK: B,
   DISPLAYED_INVITE_SHOW: V,
   LOGOUT: Y,
   SURVEY_SEEN: q

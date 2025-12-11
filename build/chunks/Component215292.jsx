@@ -26,25 +26,25 @@ function L(t) {
     onClose: L,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, G] = a.useState(""), [I, h] = a.useState(null), [D, U] = a.useState(false), y = (0, m.Dt)(), f = (0, l.e7)([g.Z], () => g.Z.getGuild(n), [n]), z = a.useRef(null);
-  a.useEffect(() => {
+  } = t, [E, G] = l.useState(""), [I, h] = l.useState(null), [D, U] = l.useState(false), f = (0, m.Dt)(), y = (0, a.e7)([C.Z], () => C.Z.getGuild(n), [n]), z = l.useRef(null);
+  l.useEffect(() => {
     var t;
     T && (null == (t = z.current) || t.focus())
   }, [T]);
-  let N = a.useCallback(async t => {
-      if (t.preventDefault(), null == f) return;
+  let N = l.useCallback(async t => {
+      if (t.preventDefault(), null == y) return;
       U(true), h(null);
-      let n = C.ZP.getDefaultChannel(f.id);
+      let n = g.ZP.getDefaultChannel(y.id);
       try {
         let t = u.intl.formatToPlainString(u.t.V4lepJ, {
           topic: E
         });
-        await d.Z.createTextChannel(f.id, E, null == n ? true : n.parent_id, t), x()
+        await d.Z.createTextChannel(y.id, E, null == n ? true : n.parent_id, t), x()
       } catch (t) {
         h(new o.yZ(t))
       }
       U(false)
-    }, [f, E, x]),
+    }, [y, E, x]),
     v = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.Button, {
         variant: "primary",
@@ -68,13 +68,13 @@ function L(t) {
         className: _.header,
         direction: c.Z.Direction.VERTICAL,
         separator: false,
-        children: [null != f && (0, i.jsx)(p.Z, {
-          guild: f
+        children: [null != y && (0, i.jsx)(p.Z, {
+          guild: y
         }), (0, i.jsx)(r.Text, {
           className: _.guildName,
-          color: "header-primary",
+          color: "text-strong",
           variant: "text-sm/semibold",
-          children: null == f ? true : f.name
+          children: null == y ? true : y.name
         }), (0, i.jsx)(r.Heading, {
           className: _.title,
           variant: "heading-sm/semibold",
@@ -99,7 +99,7 @@ function L(t) {
             error: null == I ? true : I.getFieldMessage("name"),
             type: "text",
             value: E,
-            id: y,
+            id: f,
             onChange: G,
             placeholder: u.intl.string(u.t.xGOYA8),
             inputRef: z

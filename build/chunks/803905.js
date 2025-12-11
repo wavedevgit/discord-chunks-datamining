@@ -45,7 +45,7 @@ function d(e, t) {
   try {
     let n = c.uM[t.premiumType];
     if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), false;
-    let r = B[n];
+    let r = F[n];
     if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), false;
     return r.skuFeatures.includes(e)
   } catch (e) {
@@ -88,14 +88,14 @@ let M = new f(Chunk848246.q.INCREASED_GUILD_LIMIT),
   U = new f("increasedVideoUploadQuality"),
   G = new f("uploadLargeFiles"),
   Z = new f("warpPrivateBrowsing"),
-  B = Object.freeze({
+  F = Object.freeze({
     [Chunk474936.Si.TIER_0]: new Chunk575691.Z(Chunk474936.Si.TIER_0, [p, _, m, v, j, U, G, T]),
     [Chunk474936.Si.TIER_1]: new Chunk575691.Z(Chunk474936.Si.TIER_1, [p, _, b, y, v, A, P, D, U, G, T]),
     [Chunk474936.Si.TIER_2]: new Chunk575691.Z(Chunk474936.Si.TIER_2, [p, _, m, h, g, b, y, O, v, S, C, A, N, P, R, D, x, L, j, M, k, U, G, T, I, w, E, Z])
   }),
-  F = [A, N, Z],
+  B = [A, N, Z],
   V = [Z];
 
 function H(e, t, n) {
-  return !((0, s.U)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && F.includes(e) || n && V.includes(e)) && e.getFeatureValue(t)
+  return !((0, s.U)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && B.includes(e) || n && V.includes(e)) && e.getFeatureValue(t)
 }

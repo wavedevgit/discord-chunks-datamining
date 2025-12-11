@@ -43,7 +43,7 @@ function u(e) {
       className: c.header,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: f
       }), (0, r.jsxs)(i.P3F, {
         className: c.error,

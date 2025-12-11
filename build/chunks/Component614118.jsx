@@ -53,14 +53,14 @@ function I(e) {
         analyticsLocations: M
       })
     }, [w, null == L ? true : L.applicationId, R, M]),
-    B = i.useCallback(() => {
+    F = i.useCallback(() => {
       null != L && (0, E.P)(L, {
         isGift: false
       }, {
         analyticsLocations: [l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_PURCHASE_BUTTON]
       })
     }, [L]),
-    F = i.useCallback(() => {
+    B = i.useCallback(() => {
       null != L && (0, E.P)(L, {
         isGift: true,
         giftRecipient: null != k ? k : true
@@ -112,13 +112,13 @@ function I(e) {
           fullWidth: true
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
-          onClick: B,
+          onClick: F,
           text: v.intl.format(v.t.Xp5WTn, {
             price: (0, _.T4)(null != (N = null == (I = L.price) ? true : I.amount) ? N : 0, null != (P = null == (T = L.price) ? true : T.currency) ? P : O.pK.USD)
           }),
           fullWidth: true
         }), (0, r.jsx)(b.Z, {
-          onGift: F
+          onGift: B
         })]
       })]
     })]

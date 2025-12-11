@@ -102,7 +102,7 @@ function g() {
       children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk750412.title,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-          color: "header-primary",
+          color: "text-strong",
           variant: "heading-lg/normal",
           children: Chunk388032.intl.format(O, {
             hook: e => (0, r.jsx)(l.Text, {

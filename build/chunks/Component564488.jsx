@@ -19,25 +19,25 @@ let g = Chunk473749.memo(function(e) {
     persistEdit: n = false,
     initWithEdit: g = false
   } = e, {
-    hasChanges: m,
-    editingRule: f,
-    createNewEditingRule: p,
-    setEditingRule: b
+    hasChanges: f,
+    editingRule: m,
+    createNewEditingRule: b,
+    setEditingRule: p
   } = (0, s.V)(), {
     isLoading: h
-  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == f ? true : f.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), O = j && null != f ? f : t, C = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
-    p(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, p]), N = i.useCallback(e => {
-    h || b(e, true)
-  }, [h, b]);
+  } = (0, s.w)(), [x] = i.useState(() => !(0, l.Vb)(t)), j = (null == m ? true : m.id) === t.id || n, v = (0, a.U)(null == t ? true : t.id), O = j && null != m ? m : t, C = i.useMemo(() => (0, o.af)(t.name), [null == t ? true : t.name]), y = i.useCallback(() => {
+    b(t.guildId, t.triggerType)
+  }, [t.guildId, t.triggerType, b]), N = i.useCallback(e => {
+    h || p(e, true)
+  }, [h, p]);
   i.useEffect(() => {
-    g && b(t, true)
-  }, [g, t, b]);
+    g && p(t, true)
+  }, [g, t, p]);
   let E = i.useCallback(() => {
-    j ? m || b(null) : m ? C(() => {
-      b(t)
-    }) : b(t)
-  }, [j, m, C, t, b]);
+    j ? f || p(null) : f ? C(() => {
+      p(t)
+    }) : p(t)
+  }, [j, f, C, t, p]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
       rule: O,
@@ -48,7 +48,7 @@ let g = Chunk473749.memo(function(e) {
       onChangeRule: N,
       onSetupRule: y
     }),
-    isStuck: j && m,
+    isStuck: j && f,
     isExpanded: j,
     onExpand: E,
     children: j && (0, r.jsx)(c.Z, {

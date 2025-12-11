@@ -40,33 +40,33 @@ function C(e) {
     channelId: S,
     messageId: w,
     roleId: D,
-    sessionId: R,
-    transitionState: L,
+    sessionId: L,
+    transitionState: R,
     openedAt: M,
     onClose: B,
     sourceAnalyticsLocations: U = []
   } = e, k = C === N.ME ? true : C, G = (0, m.ZP)(t.id, k), V = u.ZP.getName(k, S, t), F = (0, c.Dt)(), {
     analyticsLocations: W
-  } = (0, a.ZP)([...U, r.Z.USER_PROFILE_MODAL]), H = (0, f.ZB)({
+  } = (0, a.ZP)([...U, r.Z.USER_PROFILE_MODAL]), z = (0, f.ZB)({
     layout: "MODAL",
     userId: t.id,
-    sourceSessionId: R,
+    sourceSessionId: L,
     guildId: k,
     channelId: S,
     messageId: w,
     roleId: D
-  }), z = i.useRef(null), Y = (0, s.X)(z);
+  }), H = i.useRef(null), Y = (0, s.X)(H);
   return (0, l.jsx)(a.Gt, {
     value: W,
     children: (0, l.jsx)(f.Mt, {
-      value: H,
+      value: z,
       openedAt: M,
       fetchStartedAt: null == G ? true : G.fetchStartedAt,
       fetchEndedAt: null == G ? true : G.fetchEndedAt,
       isLoaded: null == G ? true : G.isLoaded,
       children: (0, l.jsxs)(o.Y0X, {
         "data-migration-pending": true,
-        transitionState: L,
+        transitionState: R,
         className: P.root,
         hideShadow: true,
         "aria-labelledby": F,
@@ -84,7 +84,7 @@ function C(e) {
             user: t,
             displayProfile: G,
             themeType: T.l.MODAL,
-            ref: (null == G ? true : G.profileEffect) != null ? z : true,
+            ref: (null == G ? true : G.profileEffect) != null ? H : true,
             children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(y.Z, {
                 user: t

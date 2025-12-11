@@ -306,7 +306,7 @@ function Z(e) {
     if (l) switch (e.type) {
       case v.dCx.ANSWER_USERNAME_FROM:
       case v.dCx.ANSWER_USERNAME_MENTIONS:
-        return (0, r.jsx)(F, {
+        return (0, r.jsx)(B, {
           token: e,
           avatarSize: n
         }, c);
@@ -317,12 +317,12 @@ function Z(e) {
           iconSize: i
         }, c);
       default:
-        return (0, r.jsx)(B, {
+        return (0, r.jsx)(F, {
           text: o,
           className: T.answerPill
         }, c)
     }
-    return (0, r.jsx)(B, {
+    return (0, r.jsx)(F, {
       text: o,
       className: s ? T.filterPill : T.nonText
     }, c)
@@ -336,7 +336,7 @@ function Z(e) {
   }
 }
 
-function B(e) {
+function F(e) {
   let {
     text: t,
     className: n
@@ -349,12 +349,12 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     token: t,
     avatarSize: n
   } = e, i = t.getFullMatch(), a = t.getData("userId"), s = (0, o.e7)([f.default], () => f.default.getUser(a));
-  return null == s ? (0, r.jsx)(B, {
+  return null == s ? (0, r.jsx)(F, {
     text: i,
     className: T.answerPill
   }) : (0, r.jsxs)("div", {
@@ -377,7 +377,7 @@ function V(e) {
     avatarSize: i,
     iconSize: s
   } = e, u = n.getFullMatch(), d = null != (t = n.getData("channelIds")) ? t : [], f = (0, o.e7)([c.Z], () => c.Z.getChannel(d[0]));
-  if (null == f) return (0, r.jsx)(B, {
+  if (null == f) return (0, r.jsx)(F, {
     text: u,
     className: T.answerPill
   });

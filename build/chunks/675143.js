@@ -121,7 +121,7 @@ function E(e, t, n) {
       timeZone: t.timeZone,
       calendar: b.calendar.identifier
     }),
-    B = (0, h.useMemo)(() => Z.formatToParts(R).find(e => "day" === e.type).value, [Z, R]);
+    F = (0, h.useMemo)(() => Z.formatToParts(R).find(e => "day" === e.type).value, [Z, R]);
   return {
     cellProps: {
       role: "gridcell",
@@ -156,6 +156,6 @@ function E(e, t, n) {
     isUnavailable: A,
     isOutsideVisibleRange: 0 > b.compare(t.visibleRange.start) || b.compare(t.visibleRange.end) > 0,
     isInvalid: P,
-    formattedDate: B
+    formattedDate: F
   }
 }

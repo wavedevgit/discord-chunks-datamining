@@ -19,22 +19,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk566564 = require("./566564.jsx"),
   Chunk795477 = require("./795477.jsx"),
   Chunk215023 = require("./215023.js");
-let C = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
+let h = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
 function v(e) {
   let {
     tab: t,
     sortedCategories: n,
-    transitionToTab: o,
+    transitionToTab: i,
     transitionState: s,
     updateAnalyticsState: c,
     refreshCategories: u
   } = e, p = E();
   S(p);
-  let v = (0, a.e7)([i.Z], () => i.Z.useReducedMotion),
+  let v = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
     [_, O] = l.useState(true),
     [x, y] = l.useState(true),
-    j = l.useMemo(() => n.filter(e => !h.y8.some(t => {
+    j = l.useMemo(() => n.filter(e => !C.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
@@ -49,10 +49,10 @@ function v(e) {
         isOrbsExclusive: a
       } = e;
       c(t, n);
-      let i = r && !v,
-        s = a ? h.AW.ORBS : h.AW.CATALOG;
-      O(n), y(!l), o(s, i)
-    }, [v, o, c]),
+      let o = r && !v,
+        s = a ? C.AW.ORBS : C.AW.CATALOG;
+      O(n), y(!l), i(s, o)
+    }, [v, i, c]),
     {
       searchError: T
     } = (0, d.a)();
@@ -60,7 +60,7 @@ function v(e) {
     onRetry: u,
     errorMessage: p,
     errorOrigin: g.i.SHOP_PAGE
-  }) : C.includes(t) ? (0, r.jsx)(b.Z, {
+  }) : h.includes(t) ? (0, r.jsx)(b.Z, {
     handleTransition: k,
     tab: t,
     transitionState: s
@@ -76,7 +76,7 @@ function v(e) {
 }
 let E = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   S = e => {
-    let t = (0, a.e7)([o.default], () => o.default.getCurrentUser()),
+    let t = (0, a.e7)([i.default], () => i.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r

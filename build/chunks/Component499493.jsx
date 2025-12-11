@@ -26,9 +26,9 @@ let j = e => {
     onReaction: r,
     onRequestOpen: j,
     disableActivityProfileLinks: b,
-    customCTA: y,
-    popoutClassname: I,
-    popoutPosition: O = "right"
+    customCTA: I,
+    popoutClassname: O,
+    popoutPosition: y = "right"
   } = e, P = i.useRef(null), w = (0, o.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), E = (0, o.e7)([u.default], () => u.default.getUser(t.author_id)), {
     nick: C,
     avatar: N
@@ -41,14 +41,14 @@ let j = e => {
   }, [E, w]);
   return null == E ? null : (0, a.jsx)(s.yRy, {
     targetElementRef: P,
-    position: O,
+    position: y,
     renderPopout: e => {
       let {
         closePopout: i,
         updatePosition: l
       } = e;
       return (0, a.jsx)("div", {
-        className: I,
+        className: O,
         children: (0, a.jsx)(f.J, {
           entry: t,
           closePopout: i,
@@ -119,7 +119,7 @@ let j = e => {
                   }, n))
                 })]
               })
-            }), null != y ? y : (0, a.jsx)("div", {
+            }), null != I ? I : (0, a.jsx)("div", {
               className: v.reactions,
               children: (0, a.jsx)(s.n$P, {
                 size: "sm"

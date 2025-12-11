@@ -22,7 +22,7 @@ function c(e) {
       color: o.TVs.colors.TEXT_BRAND
     }), (0, r.jsx)(o.Text, {
       className: l.__invalid_content,
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/normal",
       children: t
     })]

@@ -39,7 +39,7 @@ function j(e) {
       className: m.textContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-md/medium",
-        color: "header-primary",
+        color: "text-strong",
         children: t
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",

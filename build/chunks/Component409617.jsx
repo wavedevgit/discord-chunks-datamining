@@ -38,25 +38,25 @@ function C(n) {
     children: [(0, i.jsxs)(o.xBx, {
       "data-migration-pending": true,
       direction: d.Z.Direction.VERTICAL,
-      className: N.header,
+      className: h.header,
       separator: false,
       children: [(0, i.jsx)(o.Heading, {
-        className: N.title,
+        className: h.title,
         variant: "heading-xl/semibold",
         children: p.intl.string(p.t["C5q+pW"])
       }), (0, i.jsx)(o.Text, {
-        className: N.subtitle,
+        className: h.subtitle,
         color: "text-default",
         variant: "text-md/normal",
         children: p.intl.string(p.t.VEcRhw)
       }), null != s && (0, i.jsx)(o.olH, {
         "data-migration-pending": true,
-        className: N.closeButton,
+        className: h.closeButton,
         onClick: s
       })]
     }), (0, i.jsxs)(o.hzk, {
       "data-migration-pending": true,
-      className: l()(h.modalContent, t),
+      className: l()(N.modalContent, t),
       paddingFix: false,
       children: [(0, i.jsx)(o.FXm, {
         value: _,
@@ -85,7 +85,7 @@ function C(n) {
         })]
       }), (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
-        className: h.disclaimer,
+        className: N.disclaimer,
         children: p.intl.format(p.t["8k9GCW"], {})
       })]
     }), (0, i.jsx)(o.mzw, {

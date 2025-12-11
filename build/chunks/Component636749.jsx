@@ -24,7 +24,7 @@ function v() {
       color: Chunk481060.TVs.colors.TEXT_BRAND
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       className: Chunk141291.__invalid_content,
-      color: "header-primary",
+      color: "text-strong",
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t["gd/Yqs"])
     })]
@@ -62,7 +62,7 @@ function k(t) {
         }]),
         onClick: () => h(u.ny.UPVOTE, b.NM.FEEDBACK_UPVOTE),
         "aria-label": g.intl.string(g.t["2GrOCN"]),
-        children: (0, a.jsx)(l.Z, {
+        children: (0, a.jsx)(r.Z, {
           className: x.__invalid_buttonIcon,
           color: "interactive-text-default"
         })
@@ -72,7 +72,7 @@ function k(t) {
         }]),
         onClick: () => h(u.ny.DOWNVOTE, b.NM.FEEDBACK_DOWNVOTE),
         "aria-label": g.intl.string(g.t.COp9BO),
-        children: (0, a.jsx)(r.Z, {
+        children: (0, a.jsx)(l.Z, {
           className: x.__invalid_buttonIcon,
           color: "interactive-text-default"
         })

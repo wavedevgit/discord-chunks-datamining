@@ -80,15 +80,15 @@ function v(e, t, n) {
   } = (0, a.cj)([s.Z], () => ({
     activeCommand: s.Z.getActiveCommand(w.id),
     activeCommandOption: s.Z.getActiveOption(w.id)
-  })), B = (0, m.Z)({
+  })), F = (0, m.Z)({
     navId: "channel-autocomplete",
     scrollerRef: n,
     state: x,
     onFocus: e => W.setSelectedIndex(e)
-  }), F = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), V = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), H = null;
+  }), B = null == (E = e.editorRef.current) ? true : E.getCurrentWord(), V = null == (y = e.editorRef.current) ? true : y.getSlateEditor(), H = null;
   null != V && (H = null != (C = null == (T = c.bN.getSelectedParentOfType(V, _.un)) ? true : T[0]) ? C : null);
   let Y = O(b({}, e), {
-      navigator: B,
+      navigator: F,
       activeCommand: G,
       activeCommandOption: Z,
       activeInlineAutocompleteInput: H,
@@ -97,9 +97,9 @@ function v(e, t, n) {
       hidePersonalInformation: U,
       hideMentionDescription: D === l.Ie.RULES_INPUT,
       emojiIntention: D === l.Ie.RULES_INPUT ? g.Hz.COMMUNITY_CONTENT : g.Hz.CHAT,
-      currentWord: null != (N = null == F ? true : F.word) ? N : "",
-      currentWordIsAtStart: (null == F ? true : F.isAtStart) === true,
-      currentFullWord: null != (P = null == F ? true : F.fullWord) ? P : "",
+      currentWord: null != (N = null == B ? true : B.word) ? N : "",
+      currentWordIsAtStart: (null == B ? true : B.isAtStart) === true,
+      currentFullWord: null != (P = null == B ? true : B.fullWord) ? P : "",
       optionText: null != Z ? (0, o.KF)({
         [Z.name]: null != (R = null == (S = e.editorRef.current) ? true : S.getCurrentCommandOptionValue()) ? R : []
       }, Z.name) : ""
@@ -122,5 +122,5 @@ function v(e, t, n) {
         for (let n of t) n.removeChangeListener(e)
       }
     }
-  }, [W, null == (I = x.query) ? true : I.typeInfo]), [x, W, B]
+  }, [W, null == (I = x.query) ? true : I.typeInfo]), [x, W, F]
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -45,11 +45,11 @@ let y = e => {
   let P = null != (t = null == k ? true : k.skuId) ? t : "",
     {
       handleCardVisibilityChange: R
-    } = (0, h.E)(P, "home", "marketing wide banner"),
+    } = (0, C.E)(P, "home", "marketing wide banner"),
     Z = (0, b.sp)(),
     {
       bannerURL: w
-    } = (0, C.UI)(y),
+    } = (0, h.UI)(y),
     H = j === v.AW.ORBS,
     D = null != y.ctaRoute && "" !== y.ctaRoute,
     M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || D),
@@ -58,7 +58,7 @@ let y = e => {
       if (N(true), y.isDismissible) {
         var e;
         let t = null != (e = y.dismissibleContentVersion) ? e : 0;
-        (0, u.wH)(o.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
+        (0, u.wH)(i.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
           dismissAction: S.L.USER_DISMISS
         })
       }
@@ -93,7 +93,7 @@ let y = e => {
       }
     }, [y.ctaRoute, U]);
   if (null == w || A) return null;
-  let z = i()(x.row, x.between, x.bannerBlockContainer, x.centeredSection, {
+  let z = o()(x.row, x.between, x.bannerBlockContainer, x.centeredSection, {
       [x.extraRounded]: H,
       [x.bannerBlockContainerClickable]: D
     }),
@@ -108,7 +108,7 @@ let y = e => {
           "aria-label": O.intl.string(O.t.WAI6xu)
         })
       }), (0, r.jsx)("div", {
-        className: i()(x.wideBannerBackgroundImg, {
+        className: o()(x.wideBannerBackgroundImg, {
           [x.extraRounded]: H
         }),
         style: null != L ? {
@@ -118,12 +118,12 @@ let y = e => {
           ref: I,
           src: w,
           alt: y.title,
-          className: i()(x.wideBannerArt, {
+          className: o()(x.wideBannerArt, {
             [x.wideBannerArtOrbs]: H
           })
         })
       }), (0, r.jsx)("div", {
-        className: i()(x.wideBannerContentContainer, {
+        className: o()(x.wideBannerContentContainer, {
           [x.wideBannerWithCTAContentContainer]: M
         }),
         style: {
@@ -133,7 +133,7 @@ let y = e => {
           className: x.wideBannerTextContainer,
           children: [(0, r.jsx)(c.Heading, {
             style: {
-              color: null != (n = y.bannerTextColor) ? n : "var(--header-primary)"
+              color: null != (n = y.bannerTextColor) ? n : "var(--text-strong)"
             },
             className: H ? x.wideBannerOrbsHeading : true,
             variant: "heading-xl/bold",
@@ -174,11 +174,11 @@ let y = e => {
       children: D ? (0, r.jsx)(c.P3F, {
         innerRef: T,
         onClick: () => V(null),
-        className: i()(e, z),
+        className: o()(e, z),
         children: G
       }) : (0, r.jsx)("div", {
         ref: T,
-        className: i()(e, z),
+        className: o()(e, z),
         children: G
       })
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 61670 **/
 /** chunk id: 409600, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk100527 = require("./100527.js"),
   Chunk382263 = require("./382263.jsx"),
   Chunk231338 = require("./231338.js");
 
-function p(e) {
+function g(e) {
   let {
     onClose: n,
     onComplete: t,
@@ -38,16 +38,16 @@ function p(e) {
   })
 }
 
-function g(e) {
+function p(e) {
   let {
     loadId: n,
     applicationId: t,
     skuId: c,
-    analyticsLocations: g,
+    analyticsLocations: p,
     isGift: m = false
   } = e, {
     analyticsLocations: b
-  } = (0, a.ZP)(g, l.Z.PREMIUM_PAYMENT_MODAL);
+  } = (0, a.ZP)(p, l.Z.PREMIUM_PAYMENT_MODAL);
   return (0, i.jsx)(a.Gt, {
     value: b,
     children: (0, i.jsx)(s.PaymentContextProvider, {
@@ -64,7 +64,7 @@ function g(e) {
       children: (0, i.jsx)(o.c1, {
         children: (0, i.jsx)(r.KB, {
           isGift: m,
-          children: (0, i.jsx)(p, function(e) {
+          children: (0, i.jsx)(g, function(e) {
             for (var n = 1; n < arguments.length; n++) {
               var t = null != arguments[n] ? arguments[n] : {},
                 i = Object.keys(t);

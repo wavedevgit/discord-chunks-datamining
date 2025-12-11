@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 605276, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,24 +41,24 @@ let v = Chunk473749.memo(function(e) {
       channelId: n,
       title: t,
       icon: d
-    } = e, o = (0, r.e7)([m.Z], () => m.Z.getChannel(n)), p = (0, r.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, r.e7)([f.Z], () => f.Z.can(x.Plq.VIEW_CHANNEL, o)), v = p.first(), Z = (0, s.zy)(v, false), I = (null == Z ? true : Z.length) > 0 ? Z[0] : null, y = null != o && null == v && !p.loadingMore && !p.ready && !p.hasFetched && j;
+    } = e, o = (0, r.e7)([m.Z], () => m.Z.getChannel(n)), x = (0, r.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, r.e7)([f.Z], () => f.Z.can(p.Plq.VIEW_CHANNEL, o)), v = x.first(), Z = (0, s.zy)(v, false), I = (null == Z ? true : Z.length) > 0 ? Z[0] : null, N = null != o && null == v && !x.loadingMore && !x.ready && !x.hasFetched && j;
     return l.useEffect(() => {
-      y && c.Z.fetchMessages({
+      N && c.Z.fetchMessages({
         channelId: n,
         after: n,
         limit: 5
       })
-    }, [n, y]), (0, a.jsx)(i.P3F, {
+    }, [n, N]), (0, a.jsx)(i.P3F, {
       className: C.resourceChannel,
       onClick: e => {
-        null != o && (e.shiftKey ? (0, g.C3)(o.guild_id, o.id) : u.Z.openResourceChannelAsSidebar({
+        null != o && (e.shiftKey ? (0, b.C3)(o.guild_id, o.id) : u.Z.openResourceChannelAsSidebar({
           guildId: o.guild_id,
           channelId: o.id
         }))
       },
       children: (0, a.jsxs)(a.Fragment, {
         children: [(() => {
-          let e = b.ZP.getResourceChannelIconURL({
+          let e = g.ZP.getResourceChannelIconURL({
             channelId: n,
             icon: d
           });
@@ -90,7 +90,7 @@ let v = Chunk473749.memo(function(e) {
   I = Chunk473749.memo(function(e) {
     let {
       guild: n
-    } = e, t = (0, p.Z)(n.id);
+    } = e, t = (0, x.Z)(n.id);
     return 0 === t.length ? null : (0, a.jsx)(i.Zbd, {
       className: C.sidebarCardWrapper,
       children: (0, a.jsxs)("div", {
@@ -98,7 +98,7 @@ let v = Chunk473749.memo(function(e) {
         children: [(0, a.jsx)(i.Heading, {
           className: C.sidebarCardHeader,
           variant: "heading-md/bold",
-          color: "header-primary",
+          color: "text-strong",
           children: j.intl.string(j.t.xwY4La)
         }), (0, a.jsx)("div", {
           className: C.resourceChannelsList,
@@ -111,7 +111,7 @@ let v = Chunk473749.memo(function(e) {
       })
     })
   }),
-  y = Chunk473749.memo(function(e) {
+  N = Chunk473749.memo(function(e) {
     let {
       guild: n,
       isNewMember: t

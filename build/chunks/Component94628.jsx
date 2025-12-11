@@ -20,8 +20,8 @@ function l(e) {
   } = e, u = (0, c.t)(n, l, d), f = r.useCallback(e => u(t, e), [t, u]);
   return (0, a.jsx)(s.G, {
     removeChildWrapper: true,
-    children: (0, a.jsx)(o.OAuth2AuthorizeModal, {
-      transitionState: i.Dvm.ENTERED,
+    children: (0, a.jsx)(i.OAuth2AuthorizeModal, {
+      transitionState: o.Dvm.ENTERED,
       clientId: t.clientId,
       scopes: t.scopes,
       showLogout: true,

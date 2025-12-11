@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk498607 = require("./498607.js"),
-  a = require.n(Chunk498607),
+  o = require.n(Chunk498607),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk203893 = require("./203893.jsx"),
@@ -53,7 +53,7 @@ function g(e) {
   let {
     guildId: t,
     onClose: n
-  } = e, i = (0, o.e7)([u.Z], () => u.Z.getSearchStateByGuildId(t), [t], a()), g = (0, d.dW)(t), j = l.useCallback(() => {
+  } = e, i = (0, a.e7)([u.Z], () => u.Z.getSearchStateByGuildId(t), [t], o()), g = (0, d.dW)(t), j = l.useCallback(() => {
     i.requireUnusualDmActivity || g(d.aY.UNUSUAL_DM_ACTIVITY), (0, C.Dr)(t, h(p({}, i), {
       requireUnusualDmActivity: !i.requireUnusualDmActivity
     }))

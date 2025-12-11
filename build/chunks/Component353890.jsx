@@ -24,17 +24,17 @@ function h(e) {
   let {
     guild: t,
     scrollToQuestions: n
-  } = e, i = (0, a.e7)([m.Z], () => m.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
+  } = e, i = (0, a.e7)([f.Z], () => f.Z.editedDefaultChannelIds), l = (0, u.b)(t.id, i).filter(e => e.isCategory() || (0, c.s)(e.guild_id, e.id));
   return (0, r.jsxs)("div", {
-    className: b.container,
+    className: p.container,
     children: [(0, r.jsx)("div", {
-      className: b.header,
-      children: (0, r.jsx)(f.Z, {
+      className: p.header,
+      children: (0, r.jsx)(m.Z, {
         guildId: t.id,
         scrollToQuestions: n
       })
     }), (0, r.jsxs)("div", {
-      className: b.channelList,
+      className: p.channelList,
       children: [(0, r.jsx)(v, {}), 0 === l.length && (0, r.jsx)(x, {}), (0, r.jsx)(j, {
         channels: l
       })]
@@ -84,9 +84,9 @@ function O(e) {
     label: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.category,
+    className: p.category,
     children: [(0, r.jsx)(g.Z, {
-      className: b.caret,
+      className: p.caret,
       width: 12,
       height: 12,
       direction: g.Z.Directions.DOWN
@@ -105,20 +105,20 @@ function C(e) {
     channel: n
   } = e, i = (0, d.iF)(n), a = null != (t = (0, o.KS)(n)) ? t : s.VL1;
   return (0, r.jsxs)("div", {
-    className: b.channel,
+    className: p.channel,
     children: [(0, r.jsx)(a, {
-      className: b.channelIcon,
+      className: p.channelIcon,
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(s.Text, {
-      className: b.channelName,
+      className: p.channelName,
       variant: "text-md/normal",
       color: "text-muted",
       lineClamp: 1,
       children: n.name
     }), (0, r.jsx)("div", {
       className: l()({
-        [b.chattableIndicator]: i
+        [p.chattableIndicator]: i
       })
     })]
   })

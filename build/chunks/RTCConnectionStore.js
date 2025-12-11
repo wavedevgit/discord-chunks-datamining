@@ -239,11 +239,11 @@ function Z(e) {
   return e.state === _.$7l.ACTIVE && null != r && r.resetBackoff("App state is active"), false
 }
 
-function B(e) {
+function F(e) {
   return e.state === _.hes.RTC_CONNECTED && (I = true), true
 }
 
-function F(e) {
+function B(e) {
   null == r || r.setNoiseCancellationEnabled(e.enabled)
 }
 
@@ -391,7 +391,7 @@ h(z, "displayName", "RTCConnectionStore");
 let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   CONNECTION_OPEN: R,
   CONNECTION_CLOSED: w,
-  RTC_CONNECTION_STATE: B,
+  RTC_CONNECTION_STATE: F,
   RTC_CONNECTION_PING: V,
   RTC_CONNECTION_LOSS_RATE: V,
   RTC_CONNECTION_UPDATE_ID: Y,
@@ -402,7 +402,7 @@ let q = new z(Chunk570140.Z, __OVERLAY__ ? {} : {
   VIDEO_SIZE_UPDATE: K,
   VOICE_STATE_UPDATES: D,
   VOICE_CHANNEL_SELECT: G,
-  AUDIO_SET_NOISE_CANCELLATION: F,
+  AUDIO_SET_NOISE_CANCELLATION: B,
   VOICE_SERVER_UPDATE: x,
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: L,
   REMOTE_SESSION_CONNECT: L,

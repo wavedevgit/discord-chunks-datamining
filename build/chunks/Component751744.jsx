@@ -46,14 +46,14 @@ let f = [{
     }, [j, C]), (0, i.jsx)(r.Modal, {
       onClose: e,
       transitionState: n,
-      title: g.intl.string(g.t["9SDLnj"]),
-      subtitle: g.intl.string(g.t["yvx//1"]),
+      title: p.intl.string(p.t["9SDLnj"]),
+      subtitle: p.intl.string(p.t["yvx//1"]),
       actions: [{
-        text: g.intl.string(g.t.dKacJ8),
+        text: p.intl.string(p.t.dKacJ8),
         onClick: N,
         variant: "secondary"
       }, {
-        text: g.intl.string(g.t["54b8V0"]),
+        text: p.intl.string(p.t["54b8V0"]),
         onClick: () => (0, m.FN)(h),
         loading: v
       }],
@@ -77,21 +77,21 @@ let f = [{
           gap: 8,
           direction: "vertical",
           children: [(0, i.jsx)(u.rT, {
-            title: g.intl.string(g.t.WPwp1b),
+            title: p.intl.string(p.t.WPwp1b),
             children: (0, i.jsx)(u.JZ, {
-              title: g.intl.string(g.t.N9WJMM),
-              description: g.intl.string(g.t.NHq382),
-              buttonText: g.intl.string(g.t["9iy4lB"]),
+              title: p.intl.string(p.t.N9WJMM),
+              description: p.intl.string(p.t.NHq382),
+              buttonText: p.intl.string(p.t["9iy4lB"]),
               titleVariant: "text-md/medium",
-              onButtonPress: () => window.open(p.sQ.AGE_VERIFICATION_LINK, "_blank")
+              onButtonPress: () => window.open(g.sQ.AGE_VERIFICATION_LINK, "_blank")
             })
           }), (0, i.jsx)(c.Kqy, {
             align: "center",
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "text-subtle",
-              children: g.intl.format(g.t.ZbWsOF, {
-                learnMoreLink: p.sQ.LEARN_MORE_UU_APPEAL_LINK
+              children: p.intl.format(p.t.ZbWsOF, {
+                learnMoreLink: g.sQ.LEARN_MORE_UU_APPEAL_LINK
               })
             })
           })]

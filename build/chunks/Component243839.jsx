@@ -252,7 +252,7 @@ function w() {
       } finally {
         exports(false)
       }
-    }, B = async () => {
+    }, F = async () => {
       if (null == Chunk3383 || "" === Chunk3383) return void Chunk622999("No order ID available. Please create an order first.");
       Chunk544891(true);
       try {
@@ -327,7 +327,7 @@ function w() {
           variant: "secondary",
           size: "sm",
           text: require ? "Signing Order..." : "Sign Order",
-          onClick: B,
+          onClick: F,
           disabled: require || null == Chunk3383 || "" === Chunk3383
         })]
       }), null != Chunk563132 && (0, Chunk54381.jsx)("div", {

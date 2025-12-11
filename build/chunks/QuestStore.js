@@ -152,7 +152,7 @@ function ef(e) {
   d = Date.now(), r = false, l = new Map, s = new Map;
   let a = new Map;
   for (let e of t) l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, Z.zi)(e)), e.targetedContent.includes(M.jn.QUEST_BAR) && (0, G.T)({
-    location: F.dr.QUESTS_STORE
+    location: B.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (c = new Map, n)) c.set(e.id, e);
   for (let e of null == N ? true : N.values()) l.has(e.id) || (l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, Z.zi)(e)));
@@ -349,10 +349,10 @@ function eG(e) {
   let {
     user_status: t
   } = e, n = (0, G.T)({
-    location: F.dr.QUESTS_STORE
+    location: B.dr.QUESTS_STORE
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
-  let r = (0, B.U3)(t);
+  let r = (0, F.U3)(t);
   ei(t.quest_id, {
     userStatus: r
   });
@@ -378,14 +378,14 @@ function eZ(e) {
   }
 }
 
-function eB(e) {
+function eF(e) {
   let {
     questId: t
   } = e;
   v = v === t ? null : t
 }
 
-function eF(e) {
+function eB(e) {
   let {
     questId: t,
     platform: n
@@ -647,8 +647,8 @@ let e2 = new e3(Chunk570140.Z, {
     STREAM_CLOSE: eS,
     QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eU,
     QUESTS_PREVIEW_UPDATE_SUCCESS: eZ,
-    QUESTS_DELIVERY_OVERRIDE: eB,
-    QUESTS_SELECT_TASK_PLATFORM: eF,
+    QUESTS_DELIVERY_OVERRIDE: eF,
+    QUESTS_SELECT_TASK_PLATFORM: eB,
     QUESTS_UPDATE_OPTIMISTIC_PROGRESS: eV,
     QUESTS_RESET_OPTIMISTIC_PROGRESS: eH,
     QUESTS_USER_COMPLETION_UPDATE: eJ,

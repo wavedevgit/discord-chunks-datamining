@@ -5,7 +5,7 @@ require.d(exports, {
   Iu: () => G,
   Jw: () => k,
   _r: () => Z,
-  cX: () => F,
+  cX: () => B,
   lv: () => U,
   v: () => L
 });
@@ -86,18 +86,18 @@ function Z(e) {
   return null != i ? w.ZP.getURL(i.surrogates) : ""
 }
 
-function B(e, t) {
+function F(e, t) {
   return i()(e).map(e => {
     var n;
     return null != (n = e[t]) ? n : null
   }).filter(e => null != e).uniq().value()
 }
 
-function F(e) {
+function B(e) {
   var t, n, r, i, a, o;
   if (e.length < 1) return "";
-  let s = B(e, "userId"),
-    l = B(e, "emojiName"),
+  let s = F(e, "userId"),
+    l = F(e, "emojiName"),
     c = l.length < 2 ? null != (t = null == l ? true : l[0]) ? t : "" : l.join(", ");
   return s.length < 1 ? "" : 1 === s.length ? x.intl.formatToPlainString(x.t.yZYxzF, {
     firstUsername: null == (n = P.default.getUser(s[0])) ? true : n.username,

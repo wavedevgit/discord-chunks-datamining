@@ -2,7 +2,7 @@
 /** chunk id: 769140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => B
+  Z: () => F
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -44,13 +44,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk924482 = require("./924482.js"),
   Chunk774797 = require("./774797.js");
 
-function B(e) {
+function F(e) {
   let {
     user: t,
     currentUser: n,
     stream: i,
-    className: B,
-    onClose: F
+    className: F,
+    onClose: B
   } = e, {
     themeType: V,
     theme: H
@@ -79,7 +79,7 @@ function B(e) {
       let e = e => {
         e.stopPropagation(), ee && (Q({
           action: "PRESS_IMAGE"
-        }), c.default.selectVoiceChannel(i.channelId), (0, u.iV)(i), null == F || F())
+        }), c.default.selectVoiceChannel(i.channelId), (0, u.iV)(i), null == B || B())
       };
       return null == ea && $ ? (0, r.jsx)("div", {
         className: U.preview,
@@ -132,7 +132,7 @@ function B(e) {
         channel: W,
         guild: Y,
         onAction: Q,
-        onClose: F
+        onClose: B
       }), (0, r.jsx)(s.Z, {
         users: K,
         guildId: Y.id,
@@ -155,14 +155,14 @@ function B(e) {
       guild: Y,
       channel: W,
       onAction: Q,
-      onClose: F
+      onClose: B
     }),
     ec = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: k.actions,
       children: (0, r.jsx)(D.Z, {
         channel: W,
         onAction: Q,
-        onClose: F
+        onClose: B
       })
     }),
     eu = null != z ? M.intl.formatToPlainString(M.t["4CQq9Q"], {
@@ -172,9 +172,9 @@ function B(e) {
     value: q,
     children: (0, r.jsxs)(N.Z, {
       ref: X,
-      className: B,
+      className: F,
       onAction: Q,
-      onClose: F,
+      onClose: B,
       "aria-label": eu,
       children: [(0, r.jsx)(P.Z, {
         text: eu,
@@ -184,7 +184,7 @@ function B(e) {
         contextMenu: (0, r.jsx)(x.Z, {
           display: "live",
           user: t,
-          onClose: F
+          onClose: B
         })
       }), (0, r.jsxs)("div", {
         className: k.body,

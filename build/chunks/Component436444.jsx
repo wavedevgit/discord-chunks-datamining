@@ -124,7 +124,7 @@ let T = {
       }) : true]
     });
 
-    function B() {
+    function F() {
       L && (U || (0, p.u)({
         analyticsLocations: R,
         analyticsLocation: {
@@ -137,10 +137,10 @@ let T = {
         guild: i
       }))
     }
-    let F = !j && w.fractionalState === h.a$.NONE,
-      V = F ? l.P3F : "div",
-      H = F ? {
-        onClick: B
+    let B = !j && w.fractionalState === h.a$.NONE,
+      V = B ? l.P3F : "div",
+      H = B ? {
+        onClick: F
       } : {},
       Y = j ? g.intl.formatToPlainString(g.t["1o48ki"], {
         tierName: (0, f.nW)(A, {
@@ -159,7 +159,7 @@ let T = {
       W = (0, r.jsxs)(V, S(O({
         className: a()(b.progressBarMarker, {
           [b.progressBarMarkerUnlocked]: j,
-          [b.progressBarMarkerLocked]: F,
+          [b.progressBarMarkerLocked]: B,
           [b.progressBarMarkerLower]: M,
           [b.progressBarMarkerCurrent]: k
         }),

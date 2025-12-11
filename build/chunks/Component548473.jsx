@@ -4,12 +4,12 @@ require.d(exports, {
   B0: () => P,
   ZP: () => L,
   _I: () => A,
-  xm: () => C
+  xm: () => y
 }), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk500923 = require("./500923.js"),
   o = require.n(Chunk500923),
   Chunk442837 = require("./442837.js"),
@@ -64,7 +64,7 @@ function G(e, t) {
   }), e
 }
 
-function y(e) {
+function C(e) {
   let t = (0, c.e7)([m.Z], () => m.Z.useReducedMotion),
     n = i.useRef(null);
   return i.useEffect(() => {
@@ -81,10 +81,10 @@ function y(e) {
   }, [n, t, e]), n
 }
 
-function C() {
-  let e = y(Chunk787117);
+function y() {
+  let e = C(Chunk787117);
   return (0, Chunk54381.jsx)("div", {
-    className: a()(Chunk576085.leftArt, Chunk576085.altFloat),
+    className: s()(Chunk576085.leftArt, Chunk576085.altFloat),
     children: (0, Chunk54381.jsx)("div", {
       ref: module,
       className: Chunk576085.grillingIsland
@@ -93,9 +93,9 @@ function C() {
 }
 
 function P() {
-  let e = y(Chunk535170);
+  let e = C(Chunk535170);
   return (0, Chunk54381.jsx)("div", {
-    className: a()(Chunk576085.rightArt, Chunk576085.altFloat),
+    className: s()(Chunk576085.rightArt, Chunk576085.altFloat),
     children: (0, Chunk54381.jsx)("div", {
       ref: module,
       className: Chunk576085.waffleIsland
@@ -108,7 +108,7 @@ function A(e) {
     guild: t,
     mainIslandClassName: n,
     balloonDogClassName: r
-  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = i.useRef(null), u = y(S), g = N.ZP.getGuildIconURL({
+  } = e, a = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = i.useRef(null), u = C(S), g = N.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
@@ -121,25 +121,25 @@ function A(e) {
         container: d.current,
         renderer: "svg",
         loop: true,
-        autoplay: !s,
+        autoplay: !a,
         animationData: n
       })
     }) : null != d.current && (e = o().loadAnimation({
       container: d.current,
       renderer: "svg",
       loop: true,
-      autoplay: !s,
+      autoplay: !a,
       animationData: JSON.parse(JSON.stringify(T))
     })), () => {
       null == e || e.destroy()
     }
-  }, [g, d, s]), (0, l.jsxs)("div", {
-    className: a()(b.centerArt, b.float),
+  }, [g, d, a]), (0, l.jsxs)("div", {
+    className: s()(b.centerArt, b.float),
     children: [(0, l.jsx)("div", {
-      className: a()(b.balloonDog, r),
+      className: s()(b.balloonDog, r),
       ref: u
     }), (0, l.jsx)("div", {
-      className: a()(b.mainIsland, n),
+      className: s()(b.mainIsland, n),
       ref: d
     })]
   })
@@ -150,11 +150,11 @@ function L(e) {
     guild: t,
     onStart: n,
     onboardingStatus: r,
-    headerId: a,
-    disableTracking: s
+    headerId: s,
+    disableTracking: a
   } = e, o = (0, c.e7)([p.Z], () => p.Z.isLoading()), m = i.useRef(false);
   i.useEffect(() => {
-    if (!s) return h.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, G(D({}, (0, g.hH)(t.id)), {
+    if (!a) return h.default.track(j.rMx.GUILD_ONBOARDING_STEP_VIEWED, G(D({}, (0, g.hH)(t.id)), {
       step: false,
       required: true
     })), () => {
@@ -165,7 +165,7 @@ function L(e) {
         in_onboarding: true
       }))
     }
-  }, [t.id, m, s]);
+  }, [t.id, m, a]);
   let N = i.useMemo(() => (0, f.EB)(t, 135, false, true), [t]);
   return (0, u.ZP)(() => {
     setTimeout(() => {
@@ -187,7 +187,7 @@ function L(e) {
           className: b.coverTitle,
           variant: "text-lg/normal",
           color: "always-white",
-          id: a,
+          id: s,
           children: v.intl.format(v.t["j59F/c"], {
             guildName: null == t ? true : t.name
           })

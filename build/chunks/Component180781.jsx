@@ -23,21 +23,21 @@ function p(e) {
     analyticsPage: n,
     isGIF: p,
     banner: g
-  } = e, v = (0, o.e7)([u.Z], () => u.Z.getGuildId()), _ = (0, o.e7)([s.Z], () => s.Z.getGuild(v)), {
+  } = e, v = (0, i.e7)([u.Z], () => u.Z.getGuildId()), _ = (0, i.e7)([c.Z], () => c.Z.getGuild(v)), {
     analyticsLocations: x
   } = (0, a.ZP)();
-  return null == _ || _.features.has(b.GuildFeatures.ANIMATED_BANNER) || !p && _.features.has(b.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
+  return null == _ || _.features.has(b.GuildFeatures.ANIMATED_BANNER) || !p && _.features.has(b.GuildFeatures.BANNER) ? null : (0, o.jsxs)("div", {
     className: m.container,
-    children: [(0, i.jsx)(r.Ucv, {
+    children: [(0, o.jsx)(r.Ucv, {
       color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: m.guildBoostingIcon
-    }), (0, i.jsx)(r.Text, {
-      color: "header-primary",
+    }), (0, o.jsx)(r.Text, {
+      color: "text-strong",
       variant: "text-sm/semibold",
       children: f.intl.string(f.t["56M7xe"])
-    }), (0, i.jsx)("div", {
+    }), (0, o.jsx)("div", {
       className: m.subscribeButton,
-      children: (0, i.jsx)(r.Avr, {
+      children: (0, o.jsx)(r.Avr, {
         text: f.intl.string(f.t.WUHdZV),
         onClick: () => {
           if (null == _) return;
@@ -52,7 +52,7 @@ function p(e) {
             guild: _,
             isGIF: p,
             banner: g
-          }) : (0, c.Z)({
+          }) : (0, s.Z)({
             analyticsLocations: x,
             analyticsSourceLocation: e,
             guild: _,

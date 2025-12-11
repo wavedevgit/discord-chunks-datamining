@@ -115,7 +115,7 @@ let P = function() {
             htmlFor: "enable-server-tag",
             children: (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/semibold",
-              color: "header-primary",
+              color: "text-strong",
               children: Chunk388032.intl.string(Chunk735703.default["1zams8"])
             })
           }), (0, Chunk54381.jsx)(Chunk481060.rsf, {

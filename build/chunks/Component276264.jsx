@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => X,
-  x: () => F
+  x: () => B
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -80,7 +80,7 @@ function G(e, t) {
 
 function Z(e, t) {
   if (null == e) return {};
-  var n, r, i = B(e, t);
+  var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -88,14 +88,14 @@ function Z(e, t) {
   return i
 }
 
-function B(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
+let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
   V = 3,
   H = Chunk473749.memo(function(e) {
     let {
@@ -300,8 +300,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       guildId: L,
       className: M,
       nameplate: U,
-      hideClanTag: B = false,
-      hideSubtext: F = false,
+      hideClanTag: F = false,
+      hideSubtext: B = false,
       hideTooltip: H = false,
       onMouseDown: Y,
       onKeyDown: W,
@@ -400,7 +400,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
             colorString: null != n ? n : null,
             name: null != E ? E : ec,
             colorStrings: eA,
-            hideClanTag: B,
+            hideClanTag: F,
             user: b,
             guildId: L,
             isHovering: ef
@@ -414,7 +414,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
               colorString: null != n ? n : null,
               name: null != E ? E : ec,
               colorStrings: eA,
-              hideClanTag: B,
+              hideClanTag: F,
               user: b,
               guildId: L,
               isHovering: ef
@@ -437,7 +437,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }),
         nameplate: U,
         subText: (0, r.jsx)(Q, {
-          hideSubtext: F,
+          hideSubtext: B,
           activities: O,
           status: S,
           applicationStream: v,

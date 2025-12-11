@@ -106,8 +106,8 @@ function M(e) {
     hideSystemTag: U = false,
     className: G,
     onClick: Z,
-    onContextMenu: B,
-    onPopoutRequestClose: F,
+    onContextMenu: F,
+    onPopoutRequestClose: B,
     renderPopout: V,
     decorations: H,
     previewGuildId: Y,
@@ -155,7 +155,7 @@ function M(e) {
     }),
     style: eg(),
     onClick: Z,
-    onContextMenu: B,
+    onContextMenu: F,
     children: e_ ? (0, r.jsx)(h.Z, {
       userName: eE,
       displayNameStyles: en,
@@ -183,7 +183,7 @@ function M(e) {
       avatar: n.guildMemberAvatar,
       size: 80
     }) : true,
-    onRequestClose: F,
+    onRequestClose: B,
     clickTrap: M,
     children: e => {
       var {

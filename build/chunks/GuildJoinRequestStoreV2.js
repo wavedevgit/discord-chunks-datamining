@@ -158,14 +158,14 @@ function Z(e) {
     }))
   }), v(t, 0)
 }
-let B = {};
+let F = {};
 
-function F(e) {
+function B(e) {
   let {
     guildId: t,
     applicationTab: n
   } = e;
-  n !== B[t] && (B[t] = n)
+  n !== F[t] && (F[t] = n)
 }
 let V = {};
 
@@ -177,7 +177,7 @@ function H(e) {
   } = e;
   if (r === V[n]) return;
   V[n] = r;
-  let i = null != (t = B[n]) ? t : f.wB.SUBMITTED;
+  let i = null != (t = F[n]) ? t : f.wB.SUBMITTED;
   "REVIEW_APPLICATION" !== i && ((0, d.bk)(i) && L.clear(), (0, d.Nd)(i) && x.clear())
 }
 let Y = {};
@@ -216,7 +216,7 @@ class q extends(r = Chunk442837.ZP.Store) {
   getSelectedApplicationTab(e) {
     var t;
     let n = f.wB.SUBMITTED;
-    return null != (t = B[e]) ? t : n
+    return null != (t = F[e]) ? t : n
   }
   getSelectedSortOrder(e) {
     var t;
@@ -237,7 +237,7 @@ let Q = new q(Chunk570140.Z, {
   GUILD_JOIN_REQUEST_CREATE: U,
   GUILD_JOIN_REQUEST_UPDATE: U,
   GUILD_JOIN_REQUEST_DELETE: G,
-  GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: F,
+  GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: B,
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: H,
   GUILD_JOIN_REQUESTS_SET_SELECTED: W
 })

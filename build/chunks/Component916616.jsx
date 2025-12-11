@@ -117,8 +117,8 @@ let C = Chunk473749.forwardRef((e, t) => {
     renderAccessory: U,
     onClick: G,
     tabIndex: Z,
-    dataSafeSrc: B,
-    useFullWidth: F = false,
+    dataSafeSrc: F,
+    useFullWidth: B = false,
     srcIsAnimated: V
   } = e, H = I(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
   let Y = i.useRef(null),
@@ -162,7 +162,7 @@ let C = Chunk473749.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== _.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: N(K, x, F, D)
+      style: N(K, x, B, D)
     }, H), {
       children: [null != M && (0, r.jsx)("a", {
         tabIndex: false,
@@ -172,7 +172,7 @@ let C = Chunk473749.forwardRef((e, t) => {
         href: M,
         ref: Y,
         "data-role": "img",
-        "data-safe-src": null != B ? B : f
+        "data-safe-src": null != F ? F : f
       }), null != G ? (0, r.jsx)(l.P3F, {
         className: g.clickableWrapper,
         tabIndex: null != Z ? Z : 0,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk636977 = require("./636977.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -41,7 +41,7 @@ function I(e) {
   return (0, r.jsx)(g.Z.Title, {
     onClick: () => a(t),
     wrapperClassName: T.tabWrapper,
-    className: i()(T.tab, {
+    className: o()(T.tab, {
       [T.selected]: l
     }),
     children: n
@@ -53,34 +53,34 @@ function L(e) {
     tab: t,
     selected: n,
     displayText: a,
-    handleTransition: o
-  } = e, [s, u] = l.useState(false), p = l.useRef(null), [b, m] = l.useState(0), h = l.useRef(false), C = e => {
+    handleTransition: i
+  } = e, [s, u] = l.useState(false), p = l.useRef(null), [b, m] = l.useState(0), C = l.useRef(false), h = e => {
     clearTimeout(b), m(setTimeout(() => {
       u(e)
-    }, 100)), e && (h.current = f.Z.keyboardModeEnabled)
+    }, 100)), e && (C.current = f.Z.keyboardModeEnabled)
   }, v = e => {
-    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), C(true))
+    ("Enter" === e.key || " " === e.key) && (e.preventDefault(), h(true))
   };
   return (0, r.jsx)("div", {
     className: T.tabWithMenuContainer,
-    onMouseEnter: () => C(true),
-    onMouseLeave: () => C(false),
+    onMouseEnter: () => h(true),
+    onMouseLeave: () => h(false),
     children: (0, r.jsx)(c.yRy, {
       targetElementRef: p,
       shouldShow: s,
       position: "bottom",
       align: "left",
-      onRequestOpen: () => C(true),
+      onRequestOpen: () => h(true),
       onRequestClose: () => {
         var e;
-        h.current && !f.Z.keyboardModeEnabled && (0, d.Qj)(), C(false), null == (e = p.current) || e.focus()
+        C.current && !f.Z.keyboardModeEnabled && (0, d.Qj)(), h(false), null == (e = p.current) || e.focus()
       },
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
         return (0, r.jsx)(_.Z, {
-          handleTransition: o,
+          handleTransition: i,
           onClose: t
         })
       },
@@ -108,10 +108,10 @@ function L(e) {
           return e
         }({}, e), u = u = {
           ref: p,
-          onClick: () => o(t),
+          onClick: () => i(t),
           onKeyDown: v,
           wrapperClassName: T.tabWrapper,
-          className: i()(T.tab, {
+          className: o()(T.tab, {
             [T.selected]: n
           }),
           children: (0, r.jsxs)("span", {
@@ -145,7 +145,7 @@ function B(e) {
     handleTransition: n
   } = e, a = (0, u.ZP)(), d = (0, s.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: f
-  } = (0, C.W)({
+  } = (0, h.W)({
     location: "collectibles_shop_header_bar"
   }), _ = (0, b.Y)({
     location: "CollectiblesShopHeaderBar"
@@ -162,12 +162,12 @@ function B(e) {
   });
   let A = t === x.AW.ORBS ? y.ZY5.SHOP_ORBS_TAB : y.ZY5.COLLECTIBLES_SHOP,
     N = l.useCallback(() => {
-      (0, h.Y)({
+      (0, C.Y)({
         pageType: A,
         sectionType: y.jXE.ORBS_BALANCE_MENU,
         ctaObject: y.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
-        fromContent: o.j.ORBS_BALANCE_MENU
+        fromContent: i.j.ORBS_BALANCE_MENU
       })
     }, [A]),
     P = l.useCallback(() => {
@@ -181,7 +181,7 @@ function B(e) {
     theme: a,
     children: e => (0, r.jsxs)(g.Z, {
       disableDoubleClick: true,
-      className: i()(e, T.headerBar),
+      className: o()(e, T.headerBar),
       innerClassname: f ? T.headerBarInner : true,
       children: [(0, r.jsxs)(c.P3F, {
         className: T.shopHomeLink,

@@ -90,7 +90,7 @@ function x(e) {
             variant: "text-lg/medium",
             children: (0, r.jsx)(o.PUh, {
               name: p.ZP.getName(n, null, t),
-              colorString: o.TVs.colors.HEADER_PRIMARY.css,
+              colorString: o.TVs.colors.TEXT_STRONG.css,
               colorStrings: null
             })
           }), (0, r.jsx)(I.ZP, {

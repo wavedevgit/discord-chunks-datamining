@@ -12,7 +12,7 @@ var Chunk224706 = require("./224706.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t, n, u, d) {
-  if (l.Z.isNotificationDisabled(s.n0.ActivityInvite) || null == t.activity || null == u.id) return null;
+  if (a.Z.isNotificationDisabled(s.n0.ActivityInvite) || null == t.activity || null == u.id) return null;
   let f = t.activity.type,
     h = d.session_id;
   if (null == h) return null;
@@ -20,7 +20,7 @@ function u(e, t, n, u, d) {
     icon: p,
     title: m,
     body: g
-  } = (0, a.Xi)(e, t, n), {
+  } = (0, l.Xi)(e, t, n), {
     trackView: b,
     trackClick: y
   } = (0, o.Rg)(s.n0.ActivityInvite, {
@@ -42,7 +42,7 @@ function u(e, t, n, u, d) {
       b()
     },
     confirmText: c.intl.string(c.t.VJlc0S),
-    onConfirmClick: (a, l) => {
+    onConfirmClick: (l, a) => {
       var o;
       i.Z.join({
         userId: n.id,
@@ -50,7 +50,7 @@ function u(e, t, n, u, d) {
         applicationId: null != (o = u.altId) ? o : u.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(l), y("join")
+      }), r.Z.updateNotificationStatus(a), y("join")
     },
     onDismissClick: () => {
       y("dismiss")

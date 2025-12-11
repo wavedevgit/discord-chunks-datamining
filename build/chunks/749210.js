@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   V: () => Z,
-  Z: () => F
+  Z: () => B
 }), require("./415506.js"), require("./358797.js"), require("./781311.js");
 var Chunk990547 = require("./990547.js"),
   Chunk149765 = require("./149765.js"),
@@ -120,10 +120,10 @@ function Z(e) {
   }))
 }
 
-function B(e, t) {
+function F(e, t) {
   return null != t ? t : (0, _.V)(e)
 }
-let F = {
+let B = {
   joinGuild: async function(e) {
     var t, r, i, s, u, d;
     let f = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
@@ -194,7 +194,7 @@ let F = {
   },
   waitForGuild: Z,
   async transitionToGuildSync(e, t, n, r) {
-    let i = B((await Z(e)).id, n),
+    let i = F((await Z(e)).id, n),
       a = t;
     (null == t ? true : t.hasOwnProperty("welcomeModalChannelId")) && null == t.welcomeModalChannelId && (a = L(D({}, t), {
       welcomeModalChannelId: null != i ? i : true

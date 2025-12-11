@@ -80,7 +80,7 @@ function S(e) {
         className: y.text,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/semibold",
-          color: "header-primary",
+          color: "text-strong",
           children: null != (t = m.globalName) ? t : m.username
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",

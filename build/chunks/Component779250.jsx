@@ -126,14 +126,14 @@ function z(e) {
     guildEventId: l,
     isEdit: c,
     formErrors: d,
-    transitionState: x,
+    transitionState: m,
     loading: h,
     error: v,
-    onChange: p,
+    onChange: f,
     onSave: j,
     onClose: b,
     createdEvent: y
-  } = e, O = (0, m.Dt)(), E = i.useRef(n), N = !(0, a.isEqual)(E.current, n), T = i.useMemo(() => [{
+  } = e, O = (0, x.Dt)(), E = i.useRef(n), N = !(0, a.isEqual)(E.current, n), T = i.useMemo(() => [{
     slideId: 0,
     label: D.intl.string(D.t["56QlKS"]),
     valid: null == d.entity,
@@ -147,7 +147,7 @@ function z(e) {
     slideId: 2,
     label: D.intl.string(D.t["8aJzT4"]),
     valid: true
-  }], [d, c, N]), w = Object.keys(U).length, k = (0, f.xt)(n), _ = e => Math.max(0, Math.min(e, w - 1)), [A, G] = i.useState(+!!k), [z, F] = i.useState(false), M = i.useMemo(() => T.slice(0, A + 1).map(e => e.valid).every(Boolean), [T, A]), V = A >= T.length ? 3 : T[_(A)].slideId, B = 3 === V;
+  }], [d, c, N]), w = Object.keys(U).length, k = (0, p.xt)(n), _ = e => Math.max(0, Math.min(e, w - 1)), [A, G] = i.useState(+!!k), [z, F] = i.useState(false), M = i.useMemo(() => T.slice(0, A + 1).map(e => e.valid).every(Boolean), [T, A]), V = A >= T.length ? 3 : T[_(A)].slideId, B = 3 === V;
   (0, C.l)(e => e.onUpdateCanCloseModal)(B);
   let X = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     W = i.useRef(null),
@@ -168,7 +168,7 @@ function z(e) {
     },
     J = D.intl.string(D.t.PDTjLN);
   return 2 === V && (J = c ? D.intl.string(D.t.e5VEcE) : D.intl.string(D.t["60lJ0C"])), (0, r.jsxs)(o.Y0X, {
-    transitionState: x,
+    transitionState: m,
     "aria-labelledby": O,
     size: o.CgR.DYNAMIC,
     parentComponent: "ScheduleEventModal",
@@ -198,7 +198,7 @@ function z(e) {
             guildEvent: n,
             validationErrorMessage: d.entity,
             isSlideReady: z,
-            onChange: p
+            onChange: f
           })
         }), (0, r.jsx)(o.Mi4, {
           id: 1,
@@ -206,7 +206,7 @@ function z(e) {
             guildEvent: n,
             guildEventId: l,
             guildId: t,
-            onChange: p,
+            onChange: f,
             error: v,
             validationErrorMessage: d.schedule,
             isSlideReady: z
@@ -268,16 +268,16 @@ function F(e) {
     onClose: u
   } = e;
   (0, s.e7)([h.Z], () => h.Z.getGuild(t));
-  let d = (0, s.e7)([f.ZP], () => f.ZP.getGuildScheduledEvent(l), [l]),
-    g = (0, s.e7)([x.ZP], () => x.ZP.getDefaultChannel(t), [t]),
-    m = (0, O.j$)(d, g),
-    [v, C] = i.useState(m),
+  let d = (0, s.e7)([p.ZP], () => p.ZP.getGuildScheduledEvent(l), [l]),
+    g = (0, s.e7)([m.ZP], () => m.ZP.getDefaultChannel(t), [t]),
+    x = (0, O.j$)(d, g),
+    [v, C] = i.useState(x),
     [P] = i.useState((0, O.Ql)(d)),
     [S, I] = i.useState(null),
     [Z, {
       loading: R,
       error: U
-    }] = (0, p.Z)(async () => {
+    }] = (0, f.Z)(async () => {
       if (null != S) return;
       if (P && null != l) return await j.Z.saveEvent(l, v, t), u();
       let e = await j.Z.createGuildEvent(v, t);

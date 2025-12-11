@@ -62,7 +62,7 @@ function g(e) {
           className: b.ctaContent,
           children: [(0, n.jsx)(c.Text, {
             variant: "text-lg/medium",
-            color: "header-primary",
+            color: "text-strong",
             children: f.intl.string(f.t["67arYL"])
           }), r && (0, n.jsx)(l.zxk, {
             text: f.intl.string(f.t.oyzLpD),

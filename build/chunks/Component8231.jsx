@@ -271,7 +271,7 @@ let w = () => (0, Chunk54381.jsx)("div", {
       Z = (0, b.e)();
     if (!S || !I) return null;
     n = l ? null : null != T ? (0, r.jsx)(D, {}) : (0, r.jsx)(w, {});
-    let B = C === y.Si.TIER_0 || u === y.PremiumTypes.TIER_0;
+    let F = C === y.Si.TIER_0 || u === y.PremiumTypes.TIER_0;
     return (0, r.jsx)(f.Gt, {
       value: O,
       children: (0, r.jsx)("div", {
@@ -281,13 +281,13 @@ let w = () => (0, Chunk54381.jsx)("div", {
           className: v.tableWrapper,
           children: [(0, r.jsxs)("div", {
             className: o()(c, {
-              [v.tier0ColumnPosition]: B,
-              [v.tier2ColumnPosition]: !B
+              [v.tier0ColumnPosition]: F,
+              [v.tier2ColumnPosition]: !F
             }),
-            children: [!B && n, (0, r.jsx)("div", {
+            children: [!F && n, (0, r.jsx)("div", {
               className: o()({
-                [v.tier0ColumnOuter]: B,
-                [v.tier2ColumnOuter]: !B
+                [v.tier0ColumnOuter]: F,
+                [v.tier2ColumnOuter]: !F
               })
             })]
           }), (0, r.jsxs)("table", {

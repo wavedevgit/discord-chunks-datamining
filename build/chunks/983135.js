@@ -43,9 +43,9 @@ function _(e) {
   })
 }
 async function j(e, t) {
-  let n = s.Z.getEnabled(e),
-    a = Array.from(I.Z.editedDefaultChannelIds).filter(e => null != g.Z.getChannel(e)),
-    [o, d] = (0, c.d9)(e, [...a]);
+  let n = a.Z.getEnabled(e),
+    s = Array.from(I.Z.editedDefaultChannelIds).filter(e => null != g.Z.getChannel(e)),
+    [o, d] = (0, c.d9)(e, [...s]);
   if (n && t === S.Un.ONBOARDING_DEFAULT && (d.length < S.md || o.length < S.X)) return void i.Z.show({
     title: x.intl.string(x.t.iLdiqY),
     body: x.intl.string(x.t.JOT74c)
@@ -91,7 +91,7 @@ async function D(e) {
     onboardingResponses: new Set,
     onboardingEnabled: true,
     memberOptions: {
-      isPending: (0, a.Dc)(t),
+      isPending: (0, s.Dc)(t),
       flags: 0
     }
   }), o.ZP.resetOnboardingStatus(t.id), (0, d.EI)(t.id), await (0, d.default)({

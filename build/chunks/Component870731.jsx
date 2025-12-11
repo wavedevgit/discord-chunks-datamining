@@ -27,7 +27,7 @@ let x = Chunk473749.memo(function(e) {
     } = e, {
       query: i,
       setQuery: a
-    } = (0, y.f)(), d = (0, s.e7)([f.ZP], () => f.ZP.getKeybindForAction(v.kg4.SAVE_CLIP)), p = (0, y.f)(e => e.selectedUserIds.size > 0 || null != e.selectedActivity || null != e.selectedGuildId || null != e.selectedYear), x = r.useCallback(() => {
+    } = (0, v.f)(), d = (0, s.e7)([f.ZP], () => f.ZP.getKeybindForAction(y.kg4.SAVE_CLIP)), p = (0, v.f)(e => e.selectedUserIds.size > 0 || null != e.selectedActivity || null != e.selectedGuildId || null != e.selectedYear), x = r.useCallback(() => {
       (0, m.Z)(h.Z.CLIPS, {
         stackingBehavior: "stack"
       })
@@ -78,7 +78,7 @@ let x = Chunk473749.memo(function(e) {
           className: g.titleWithKeybind,
           children: [(0, l.jsx)(o.Heading, {
             variant: "heading-lg/semibold",
-            color: "header-primary",
+            color: "text-strong",
             children: j.intl.string(j.t.z2jK6X)
           }), null != w && (0, l.jsx)(o.M2$, {
             className: g.keybind,
@@ -156,7 +156,7 @@ function C(e) {
     filteredClips: n,
     favoriteClips: i,
     allClips: a
-  } = e, s = (0, y.f)(e => e.selectedGameId), c = (0, y.f)(e => e.setSelectedGameId), u = r.useMemo(() => t.map(e => e.applicationId), [t]), m = (0, d.Z)(u), f = r.useCallback(() => c(null), [c]), b = r.useCallback(() => c("favorites"), [c]), v = r.useMemo(() => new Map(m.map(e => [null == e ? true : e.id, e])), [m]);
+  } = e, s = (0, v.f)(e => e.selectedGameId), c = (0, v.f)(e => e.setSelectedGameId), u = r.useMemo(() => t.map(e => e.applicationId), [t]), m = (0, d.Z)(u), f = r.useCallback(() => c(null), [c]), b = r.useCallback(() => c("favorites"), [c]), y = r.useMemo(() => new Map(m.map(e => [null == e ? true : e.id, e])), [m]);
   return (0, l.jsxs)("div", {
     className: g.sidebar,
     children: [(0, l.jsx)(x, {
@@ -201,7 +201,7 @@ function C(e) {
               name: t,
               count: n,
               icon: (0, l.jsx)(p.Z, {
-                game: v.get(r),
+                game: y.get(r),
                 size: p.A.XSMALL
               }),
               isSelected: s === r,

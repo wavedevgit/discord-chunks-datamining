@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => q,
-  n: () => B
+  n: () => F
 }), require("./415506.js"), require("./388685.js"), require("./361932.js"), require("./187205.js"), require("./781311.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -146,7 +146,7 @@ function Z(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let {
     channelId: t,
     messageId: n,
@@ -167,7 +167,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function B(e) {
   let {
     channelId: t,
     messageId: n,
@@ -351,7 +351,7 @@ async function z(e) {
       });
       break;
     case "cancel":
-      F({
+      B({
         channelId: t,
         messageId: n,
         isEditing: false
@@ -364,7 +364,7 @@ async function z(e) {
       });
       break;
     case "showVoterDetails":
-      B({
+      F({
         channelId: t,
         messageId: n
       });
@@ -385,7 +385,7 @@ let q = {
     } = U(M(e, ["answerId"])), {
       tapShouldOpenVotersModal: s
     } = null != (n = (0, P.Tk)(o)) ? n : {};
-    if (true === s) return void B({
+    if (true === s) return void F({
       channelId: i,
       messageId: a,
       answerId: r
@@ -437,7 +437,7 @@ let q = {
     })
   },
   handlePollSubmitVote: Y,
-  handleUpdateVoteEditingState: F,
+  handleUpdateVoteEditingState: B,
   handlePollActionTapped: z,
   createPoll: async function(e) {
     let {

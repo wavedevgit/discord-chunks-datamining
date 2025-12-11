@@ -128,8 +128,8 @@ let M = e => {
     } = (0, C.Z)(t), [y, T] = i.useState(false), G = (0, h.Dt)(), {
       analyticsLocations: Z
     } = (0, _.ZP)(), {
-      shouldHideGuildPurchaseEntryPoints: B
-    } = (0, g.uP)(null == s ? true : s.id), F = (null == t ? true : t.paymentGateway) === w.gg$.APPLE_PARTNER;
+      shouldHideGuildPurchaseEntryPoints: F
+    } = (0, g.uP)(null == s ? true : s.id), B = (null == t ? true : t.paymentGateway) === w.gg$.APPLE_PARTNER;
     if (null == a || null == n || null == b) return null;
     let V = () => {
         null != s && ((0, O.uL)(w.Z5c.CHANNEL(s.id, D.oC.ROLE_SUBSCRIPTIONS)), (0, S.default)(), f.Z.show(w.kVF.BACK_TO_PREVIOUS_SCREEN, true, L.intl.string(L.t.DvbaM4), () => (0, I.openUserSettings)(v.n.SUBSCRIPTIONS_PANEL, {
@@ -158,7 +158,7 @@ let M = e => {
         nextRenewalDate: Q,
         nextRenewalLabel: X,
         isTrial: J
-      } = b, $ = n.soft_deleted || null == s || F, ee = () => p ? (0, r.jsxs)("div", {
+      } = b, $ = n.soft_deleted || null == s || B, ee = () => p ? (0, r.jsxs)("div", {
         id: G,
         children: [(0, r.jsx)("div", {
           className: j.divider
@@ -182,7 +182,7 @@ let M = e => {
           })]
         }), (0, r.jsx)(u.LZC, {
           size: 16
-        }), !W && !F && (0, r.jsx)(u.gNt, {
+        }), !W && !B && (0, r.jsx)(u.gNt, {
           label: L.intl.string(L.t.wmMFvA),
           children: (0, r.jsx)(k, {
             subscription: t
@@ -191,7 +191,7 @@ let M = e => {
           isTrial: J,
           isCancelled: W,
           isResubscribing: y,
-          shouldHideRoleSubscriptionEntryPoints: B,
+          shouldHideRoleSubscriptionEntryPoints: F,
           onCancelSubscriptionClick: H,
           onChangePlanClick: V,
           onResubscribeClick: Y
@@ -210,7 +210,7 @@ let M = e => {
             color: l.Z.unsafe_rawColors.YELLOW_300.css
           })
         })
-      }) : null, en = () => F ? (0, r.jsx)(c.u, {
+      }) : null, en = () => B ? (0, r.jsx)(c.u, {
         text: L.intl.string(L.t.nv1IqK),
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(u.IGR, {

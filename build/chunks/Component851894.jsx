@@ -114,13 +114,13 @@ function Z(e) {
   } = (0, p.ZP)(d.Z.USER_SETTINGS_GUILD_PROFILE), j = (0, s.e7)([v.default], () => {
     let e = v.default.getCurrentUser();
     return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, j.id) : null), Z = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(j.id, null == a ? true : a.id)), B = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), F = (0, s.cj)([C.Z], () => M(L({}, C.Z.getAllPending()), {
+  }), U = (0, s.e7)([y.ZP], () => null != a ? y.ZP.getMember(a.id, j.id) : null), Z = (0, s.e7)([b.Z], () => !b.Z.isFetchingProfile(j.id, null == a ? true : a.id)), F = (0, s.e7)([O.Z], () => O.Z.hidePersonalInformation), B = (0, s.cj)([C.Z], () => M(L({}, C.Z.getAllPending()), {
     source: C.Z.getSource()
   })), {
     source: V,
     pendingAvatar: H,
     pendingNameplate: Y
-  } = F, W = k(F, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
+  } = B, W = k(B, ["source", "pendingAvatar", "pendingNameplate"]), K = (0, E.SD)({
     userId: j.id,
     image: H
   }), z = (0, m.Ys)({
@@ -137,7 +137,7 @@ function Z(e) {
       destination_pane: R.jXE.SETTINGS_CUSTOMIZE_PROFILE,
       source: V
     })
-  }, [V]), B) ? (0, r.jsx)(u.Z, {}) : Z ? (0, r.jsxs)(p.Gt, {
+  }, [V]), F) ? (0, r.jsx)(u.Z, {}) : Z ? (0, r.jsxs)(p.Gt, {
     value: x,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",

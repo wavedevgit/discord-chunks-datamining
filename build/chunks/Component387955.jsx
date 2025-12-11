@@ -28,7 +28,7 @@ function g(e) {
       src: m
     }), (0, r.jsx)(o.Heading, {
       className: f.title,
-      color: "header-primary",
+      color: "text-strong",
       variant: "heading-xl/bold",
       children: d.intl.format(d.t["au+lPv"], {
         n: t.tag

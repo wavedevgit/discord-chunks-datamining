@@ -2,7 +2,7 @@
 /** chunk id: 926958, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 }), require("./388685.js"), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -22,7 +22,7 @@ let d = [],
   u = false,
   g = [];
 
-function m() {
+function f() {
   let e = Chunk999382.Z.getGuildId();
   if (null == module) {
     d = [], g = [], u = false;
@@ -30,7 +30,7 @@ function m() {
   }
   d = [...Chunk45966.Z.getConnections(module)], g = [], u = false
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk45966.Z, Chunk999382.Z)
   }
@@ -59,11 +59,11 @@ class f extends(r = Chunk442837.ZP.Store) {
     return g.length > 0
   }
 }
-c(f, "displayName", "GuildSettingsOnboardingConnectionsStore");
-let p = new f(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: m,
-  GUILD_SETTINGS_SET_SECTION: m,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: m,
+c(m, "displayName", "GuildSettingsOnboardingConnectionsStore");
+let b = new m(Chunk570140.Z, {
+  GUILD_SETTINGS_INIT: f,
+  GUILD_SETTINGS_SET_SECTION: f,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: f,
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD: function(e) {
     let {
       connection: t

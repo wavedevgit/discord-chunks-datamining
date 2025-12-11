@@ -112,7 +112,7 @@ d.ButtonFooter = e => {
     className: s.notice,
     children: [(0, n.jsx)(o.Text, {
       variant: "eyebrow",
-      color: "header-primary",
+      color: "text-strong",
       children: a.intl.string(l.default.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",

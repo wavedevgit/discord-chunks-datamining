@@ -141,10 +141,10 @@ function H(e) {
   } = e, {
     totalResults: y,
     isSearching: O,
-    isIndexing: j,
-    hasError: x
+    isIndexing: x,
+    hasError: j
   } = l;
-  if (x) return (0, r.jsxs)(U, {
+  if (j) return (0, r.jsxs)(U, {
     children: [(0, r.jsx)("div", {
       className: M.errorImage
     }), (0, r.jsx)("div", {
@@ -152,7 +152,7 @@ function H(e) {
       children: L.intl.string(L.t.uvDZBZ)
     })]
   });
-  if (j) {
+  if (x) {
     let e = s.type === A.aib.GUILD ? L.intl.string(L.t.AXPbZr) : L.intl.string(L.t.Q0JJjv);
     return (0, r.jsxs)(U, {
       children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)("div", {
@@ -205,8 +205,8 @@ let F = [],
       blockCount: h,
       ignoreCount: f,
       isFeedbackVisible: b,
-      dismissFeedbackEntrypoint: j,
-      onSearchModeChange: x,
+      dismissFeedbackEntrypoint: x,
+      onSearchModeChange: j,
       onPageChange: I,
       searchMode: _,
       onBlockedResultsClick: E,
@@ -264,8 +264,8 @@ let F = [],
           searchContext: t,
           searchRequestAnalyticsId: a,
           mode: e
-        }), x(e))
-      }, [x, n.isSearching, t, _, a]),
+        }), j(e))
+      }, [j, n.isSearching, t, _, a]),
       K = i.useCallback((e, r) => {
         let i = g.Z.getChannel(e.channel_id),
           l = null != i ? i.getGuildId() : null,
@@ -369,7 +369,7 @@ let F = [],
       }), (0, r.jsx)(G, {
         searchContext: t,
         isFeedbackVisible: b,
-        dismissFeedbackEntrypoint: j
+        dismissFeedbackEntrypoint: x
       })]
     })
   });
@@ -382,9 +382,9 @@ function V(e) {
     isFeedbackVisible: l,
     dismissFeedbackEntrypoint: a
   } = function() {
-    let [e, t] = i.useState(false), n = (0, j.M_)({
+    let [e, t] = i.useState(false), n = (0, x.M_)({
       location: "SearchResults"
-    }), r = (0, x.f)({
+    }), r = (0, j.f)({
       location: "SearchResults"
     }) && n;
     return (0, u.ZP)(() => {

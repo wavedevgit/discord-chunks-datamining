@@ -86,7 +86,7 @@ function O(e) {
     filteredClips: E,
     favoriteClips: N,
     allClips: M
-  } = (0, y.n)(), {
+  } = (0, v.n)(), {
     onShareClick: D
   } = (0, p.Z)(t), Z = (0, i.e7)([d.Z], () => d.Z.getExportingClipIds().length > 0), L = (0, b.f)(e => e.selectedGameId), H = r.useMemo(() => {
     var e;
@@ -96,7 +96,7 @@ function O(e) {
     return "favorites" === L ? N : null != (e = null == H ? true : H.filteredClips) ? e : E
   }, [L, H, E, N]), A = r.useMemo(() => {
     var e;
-    return "favorites" === L ? v.intl.string(v.t["9rlCk1"]) : null != (e = null == H ? true : H.name) ? e : v.intl.string(v.t.dPVrEv)
+    return "favorites" === L ? y.intl.string(y.t["9rlCk1"]) : null != (e = null == H ? true : H.name) ? e : y.intl.string(y.t.dPVrEv)
   }, [L, H]), R = r.useCallback(e => {
     I(t => {
       let n = new Set(t);
@@ -156,23 +156,23 @@ function O(e) {
                 className: h.headerActions,
                 children: [_ && (0, l.jsxs)(l.Fragment, {
                   children: [(0, l.jsx)(a.u, {
-                    text: v.intl.string(v.t.RDE0Sc),
+                    text: y.intl.string(y.t.RDE0Sc),
                     children: (0, l.jsx)(c.hU, {
                       onClick: z,
                       icon: c.aAc,
                       size: "sm",
                       variant: "icon-only",
-                      "aria-label": v.intl.string(v.t.RDE0Sc),
+                      "aria-label": y.intl.string(y.t.RDE0Sc),
                       loading: Z
                     })
                   }), (0, l.jsx)(a.u, {
-                    text: v.intl.string(v.t.oyYWHE),
+                    text: y.intl.string(y.t.oyYWHE),
                     children: (0, l.jsx)(c.hU, {
                       onClick: U,
                       icon: c.XHJ,
                       size: "sm",
                       variant: "icon-only",
-                      "aria-label": v.intl.string(v.t.oyYWHE)
+                      "aria-label": y.intl.string(y.t.oyYWHE)
                     })
                   })]
                 }), (0, l.jsx)(c.hU, {
@@ -180,7 +180,7 @@ function O(e) {
                   icon: c.Uz9,
                   size: "sm",
                   variant: "icon-only",
-                  "aria-label": v.intl.string(v.t.cpT0Cq)
+                  "aria-label": y.intl.string(y.t.cpT0Cq)
                 })]
               })]
             }), (0, l.jsx)(m.Z, {

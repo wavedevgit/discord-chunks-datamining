@@ -40,7 +40,7 @@ function w(e) {
     channelId: a
   } = e, {
     analyticsLocations: o
-  } = (0, d.ZP)(), u = (0, s.e7)([m.ZP], () => m.ZP.getMember(i, r.id), [r, i]), f = (0, b.X7)(null == u ? true : u.guildId, null == u ? true : u.userId, null != (t = null == u ? true : u.colorStrings) ? t : null);
+  } = (0, d.ZP)(), u = (0, s.e7)([x.ZP], () => x.ZP.getMember(i, r.id), [r, i]), f = (0, b.X7)(null == u ? true : u.guildId, null == u ? true : u.userId, null != (t = null == u ? true : u.colorStrings) ? t : null);
   return (0, l.jsxs)("div", {
     className: T.row,
     children: [(0, l.jsx)(c.qEK, {
@@ -152,7 +152,7 @@ function R(e) {
     containerRef: f,
     recurrenceId: b,
     setRecurrenceId: h
-  } = e, m = (0, s.e7)([x.Z], () => null != x.Z.getGuild(n.id), [n.id]), {
+  } = e, x = (0, s.e7)([m.Z], () => null != m.Z.getGuild(n.id), [n.id]), {
     startTime: g,
     endTime: P
   } = (0, p.ZP)(t, b), R = (0, N.Z)(t.guild_id, t.id, b), L = r.useCallback(e => {
@@ -177,7 +177,7 @@ function R(e) {
       }), (0, l.jsx)(c.Heading, {
         id: a,
         variant: "heading-lg/semibold",
-        color: "header-primary",
+        color: "text-strong",
         className: T.title,
         children: t.name
       })]
@@ -185,7 +185,7 @@ function R(e) {
       className: T.body,
       children: [(0, l.jsx)(k, {
         guild: n,
-        onClick: m ? L : true,
+        onClick: x ? L : true,
         onClose: d
       }), (0, l.jsx)(C.Z, {
         guildScheduledEvent: t,
@@ -200,7 +200,7 @@ function R(e) {
         channelId: null == i ? true : i.id
       }, F.id), null != t.description && (0, l.jsx)("div", {
         className: T.description,
-        children: (0, l.jsx)(y.Z, {
+        children: (0, l.jsx)(S.Z, {
           description: t.description,
           truncate: false,
           guildId: n.id
@@ -208,7 +208,7 @@ function R(e) {
       })]
     }), null != D && (0, l.jsx)("hr", {
       className: T.divider
-    }), null != D && (0, l.jsx)(S.Z, {
+    }), null != D && (0, l.jsx)(y.Z, {
       guildId: n.id,
       recurrenceRule: D,
       guildEventId: t.id,

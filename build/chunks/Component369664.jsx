@@ -215,7 +215,7 @@ let eG = e => {
       })]
     })
   },
-  eB = e => {
+  eF = e => {
     let {
       noticeType: t
     } = e;
@@ -235,7 +235,7 @@ let eG = e => {
       })]
     })
   },
-  eF = e => {
+  eB = e => {
     let {
       noticeType: t
     } = e;
@@ -520,10 +520,10 @@ let eY = Chunk473749.memo(function() {
           noticeType: c.type
         })
       }
-      if (!Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK)) return (0, Chunk54381.jsx)(eB, {
+      if (!Chunk131951.Z.supports(Chunk65154.AN.LOOPBACK)) return (0, Chunk54381.jsx)(eF, {
         noticeType: c.type
       });
-      return (0, Chunk54381.jsx)(eF, {
+      return (0, Chunk54381.jsx)(eB, {
         noticeType: c.type
       });
     case Chunk981631.kVF.NO_INPUT_DEVICES_DETECTED:

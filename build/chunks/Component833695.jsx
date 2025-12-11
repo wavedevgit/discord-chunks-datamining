@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   let {
     listingId: t
-  } = e, n = (0, p.r)(t);
+  } = e, n = (0, b.r)(t);
   return null == n ? null : (0, r.jsx)(s.bL, {
     children: n.name
   })
@@ -33,8 +33,8 @@ function j(e) {
 function v(e) {
   var t, n, s;
   let {
-    guildId: p
-  } = e, v = (0, b.Z)(p), O = (0, a.f3)(), C = (0, i.e7)([f.Z], () => f.Z.getGuild());
+    guildId: b
+  } = e, v = (0, p.Z)(b), O = (0, a.f3)(), C = (0, i.e7)([m.Z], () => m.Z.getGuild());
   return v.loading || null == C ? (0, r.jsx)(l.$jN, {}) : null == v.application ? (0, r.jsx)(u.Z, {
     guild: C
   }) : (0, r.jsxs)(d.Z, {
@@ -46,7 +46,7 @@ function v(e) {
       summaryMetricTrend: null != (s = v.metrics.paymentsCountChange) ? s : 0,
       summaryMetricTrendIsPercent: false,
       children: (0, r.jsx)(h.Z, {
-        guildId: p,
+        guildId: b,
         earningsData: v
       })
     }), (0, r.jsx)(l.gNt, {
@@ -60,13 +60,13 @@ function v(e) {
       label: x.intl.string(x.t.O8cDAJ),
       disabled: O,
       children: (0, r.jsx)(g.Z, {
-        guildId: p,
+        guildId: b,
         application: v.application
       })
     }), (0, r.jsx)(l.gNt, {
       label: x.intl.string(x.t["0n7R2X"]),
-      children: (0, r.jsx)(m.Z, {
-        guildId: p,
+      children: (0, r.jsx)(f.Z, {
+        guildId: b,
         allPeriods: v.payoutsByPeriod
       })
     })]

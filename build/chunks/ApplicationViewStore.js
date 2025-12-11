@@ -57,7 +57,7 @@ function G(e, t) {
 function Z(e, t) {
   return null != e && c()(e.createdAt).isAfter(j) && 0 === t
 }
-let B = {
+let F = {
     [Chunk981631.iEv.NAME]: G,
     [Chunk981631.iEv.PLATFORM]: (e, t, n) => {
       let r = e.libraryApplication.getDistributor(),
@@ -67,11 +67,11 @@ let B = {
     [Chunk981631.iEv.LAST_PLAYED]: (e, t) => e.isNew && !t.isNew ? false : !e.isNew && t.isNew ? 1 : e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1,
     [Chunk981631.iEv.ACTIONS]: null
   },
-  F = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
+  B = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
   V = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
   H = (0, Chunk251625.oH)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
   Y = (0, Chunk251625.oH)((e, t, n, r) => {
-    let i = B[t];
+    let i = F[t];
     if (null == i) return e;
     let a = [...e].sort(i);
     return n === D.sHY.DESCENDING ? a.reverse() : a
@@ -173,7 +173,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return V(M)
   }
   get libraryApplicationViewItems() {
-    return F(M)
+    return B(M)
   }
   get filteredLibraryApplicationViewItems() {
     return H(this.libraryApplicationViewItems, k)

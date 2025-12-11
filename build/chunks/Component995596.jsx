@@ -61,7 +61,7 @@ function T(e) {
       id: t
     } = e;
     return t === a
-  }), [a, n]), b = m ? "header-primary" : u ? "text-muted" : "header-primary", j = m ? d.TVs.colors.HEADER_PRIMARY : u ? d.TVs.colors.TEXT_MUTED : d.TVs.colors.HEADER_PRIMARY;
+  }), [a, n]), b = m ? "text-strong" : u ? "text-muted" : "text-strong", j = m ? d.TVs.colors.TEXT_STRONG : u ? d.TVs.colors.TEXT_MUTED : d.TVs.colors.TEXT_STRONG;
   return (0, l.jsx)(d.yRy, {
     targetElementRef: s,
     renderPopout: e => {
@@ -161,26 +161,26 @@ function S(e) {
     }]),
     {
       lastVisibleIndex: O,
-      onItemLayout: P,
-      overflowItemsRef: _
+      onItemLayout: _,
+      overflowItemsRef: P
     } = (0, o.zP)({
       items: N,
       itemGapPx: 16,
       maxLines: 1,
       containerWidth: c - 200
     }),
-    y = (0, s.e7)([h.ZP], () => null != h.ZP.getGuildSidebarState(n), [n]),
-    I = (0, b.L)({
+    I = (0, s.e7)([h.ZP], () => null != h.ZP.getGuildSidebarState(n), [n]),
+    y = (0, b.L)({
       guildId: n
     }),
-    R = r.useMemo(() => a === g.e.ALL_MEMBERS ? y : null != I && null != I.user, [a, y, I]),
+    R = r.useMemo(() => a === g.e.ALL_MEMBERS ? I : null != y && null != y.user, [a, I, y]),
     w = r.useMemo(() => N.slice(0, O + 1), [O, N]),
     A = r.useMemo(() => N.slice(O + 1), [O, N]),
-    M = (0, m.Z)(e => {
+    Z = (0, m.Z)(e => {
       let t = e.contentRect.width;
       null != t && S.current !== t && (x(t), S.current = t)
     });
-  return (0, u.s)(C, M, [R]), (0, l.jsxs)(l.Fragment, {
+  return (0, u.s)(C, Z, [R]), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(f.Z.Divider, {
       className: v.divider
     }), (0, l.jsxs)("div", {
@@ -190,14 +190,14 @@ function S(e) {
         className: v.measurements,
         children: [N.map((e, t) => (0, l.jsx)(o.AJ, {
           index: t,
-          onItemLayout: P,
+          onItemLayout: _,
           children: (0, l.jsx)(d.njP.Item, {
             id: e.id,
             "aria-label": e.label,
             children: e.label
           })
         }, e.id)), (0, l.jsx)("div", {
-          ref: _,
+          ref: P,
           children: (0, l.jsx)(T, {
             tabs: A,
             onTabSelect: i,

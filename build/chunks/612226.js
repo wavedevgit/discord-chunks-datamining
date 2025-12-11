@@ -4,8 +4,8 @@
 require.d(exports, {
   Q2: () => Z,
   Rv: () => Y,
-  U6: () => F,
-  UD: () => B,
+  U6: () => B,
+  UD: () => F,
   ZP: () => W,
   oT: () => H
 }), require("./415506.js"), require("./539854.js");
@@ -50,7 +50,7 @@ var Chunk2818 = require("./2818.js"),
     return e.NAVIGATION = "NAVIGATION", e.CHAT = "CHAT", e.VOICE_AND_VIDEO = "VOICE_AND_VIDEO", e.MISCELLANEOUS = "MISCELLANEOUS", e.MESSAGE = "MESSAGE", e.DND = "DND", e
   }({});
 
-function B(e) {
+function F(e) {
   switch (e) {
     case "NAVIGATION":
       return G.intl.string(G.t["yGE+jg"]);
@@ -67,7 +67,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   switch (e) {
     case "MESSAGE":
       return G.intl.string(G.t.iepGDn);

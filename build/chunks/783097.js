@@ -4,7 +4,7 @@
 require.d(exports, {
   $d: () => D,
   BQ: () => w,
-  Cb: () => F,
+  Cb: () => B,
   Hu: () => V,
   L1: () => z,
   Ow: () => K,
@@ -18,7 +18,7 @@ require.d(exports, {
   jD: () => x,
   lf: () => M,
   pF: () => W,
-  sl: () => B,
+  sl: () => F,
   vJ: () => j,
   yJ: () => G,
   ye: () => L
@@ -200,7 +200,7 @@ function Z(e) {
   return p()
 }
 
-function B(e) {
+function F(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       fakeAppIconURL: n
@@ -220,7 +220,7 @@ function B(e) {
   }
 }
 
-function F(e) {
+function B(e) {
   return !!w(e) && (e instanceof m.ZP ? e.isMonetized : e.is_monetized)
 }
 

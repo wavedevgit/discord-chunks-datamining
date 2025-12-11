@@ -121,16 +121,16 @@ function Z(e) {
   return e.unread = Object.values(e.unreadByType).some(e => e), e
 }
 
-function B(e, t) {}
+function F(e, t) {}
 
-function F(e, t, n) {
+function B(e, t, n) {
   return Z(t), t.lowImportanceMentionCount = 0, t.highImportanceMentionCount = 0, d.default.forEach(t.mentionCounts, e => {
     let {
       count: n,
       isMentionLowImportance: r
     } = e;
     r ? t.lowImportanceMentionCount += n : t.highImportanceMentionCount += n
-  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (A[null != e ? e : C] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), P++, D(null != e ? e : C), B(t, n), true)
+  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (A[null != e ? e : C] = t, null != e && (t.unread ? N.add(e) : N.delete(e)), P++, D(null != e ? e : C), F(t, n), true)
 }
 
 function V(e, t) {
@@ -152,14 +152,14 @@ function V(e, t) {
     if (!(null != e && !t.includes(e.id) && g.ZP.hasUnread(e.id) && L(e))) return Y(n);
     null != n && N.add(n), i.unreadByType[S.W.CHANNEL] = true
   }
-  return F(n, i, r)
+  return B(n, i, r)
 }
 
 function H(e, t) {
   if (null == e) return;
   let n = w(e),
     r = G(e, n);
-  return r.unreadByType[S.W.GUILD_EVENT] = U(e, t), F(e, r, n)
+  return r.unreadByType[S.W.GUILD_EVENT] = U(e, t), B(e, r, n)
 }
 
 function Y(e, t) {
@@ -213,7 +213,7 @@ function Y(e, t) {
   }
   Z(r);
   let i = w(n);
-  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (A[null != n ? n : C] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), P++, D(null != n ? n : C), B(r, i), true)
+  return (r.unread !== i.unread || r.highImportanceMentionCount !== i.highImportanceMentionCount || r.lowImportanceMentionCount !== i.lowImportanceMentionCount) && (A[null != n ? n : C] = r, null != n && (r.unread ? N.add(n) : N.delete(n)), P++, D(null != n ? n : C), F(r, i), true)
 }
 
 function W(e) {

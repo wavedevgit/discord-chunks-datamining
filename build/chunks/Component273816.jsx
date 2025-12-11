@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ function y(e) {
   let {
     locked: t,
     pinned: n,
-    anchorLeft: a
+    anchorLeft: l
   } = e, y = (0, o.e7)([f.Z], () => f.Z.getSocket()), O = (0, o.e7)([m.Z], () => m.Z.isGPUBoosted());
   (0, d.nU)();
   let v = (0, o.e7)([h.Z], () => h.Z.getWindow(g.$J)),
@@ -54,7 +54,7 @@ function y(e) {
     [H, B] = r.useState(true),
     [Y, Q] = r.useState(true);
   return t && !n ? null : (0, i.jsxs)("div", {
-    className: l()(b.panelGroup, !a && b.rightAligned),
+    className: a()(b.panelGroup, !l && b.rightAligned),
     children: [(z || !t) && (0, i.jsxs)("div", {
       className: b.measurement,
       children: [!t && (0, i.jsx)("div", {

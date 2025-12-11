@@ -61,12 +61,12 @@ let h = () => {
       className: Chunk200471.mainColumn,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/extrabold",
-        color: O ? "redesign-button-overlay-text" : "currentColor",
+        color: O ? "text-overlay-dark" : "currentColor",
         className: Chunk200471.title,
         children: E
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        color: O ? "redesign-button-overlay-text" : "currentColor",
+        color: O ? "text-overlay-dark" : "currentColor",
         children: b
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Button, {

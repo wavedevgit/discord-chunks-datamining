@@ -46,12 +46,12 @@ function p(e) {
     isRewardContentLoading: C,
     rewardContentHasError: b,
     location: f
-  } = e, h = s.jn.REWARD_MODAL, [j, x] = a.useState(true);
+  } = e, h = s.jn.REWARD_MODAL, [x, j] = a.useState(true);
   if (b) return (0, r.jsx)(m, {
     onClose: d,
     transitionState: i
   });
-  let g = C || j;
+  let g = C || x;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: h,
@@ -86,7 +86,7 @@ function p(e) {
               children: (0, r.jsx)(c.Z, {
                 quest: t,
                 sourceQuestContent: n,
-                onLoadComplete: () => x(false),
+                onLoadComplete: () => j(false),
                 location: f
               })
             })]

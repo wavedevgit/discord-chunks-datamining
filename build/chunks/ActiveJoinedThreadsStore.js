@@ -182,14 +182,14 @@ function Z(e, t) {
   returnfalse
 }
 
-function B(e) {
+function F(e) {
   let {
     channel: t
   } = e, n = false;
   return null != t.guild_id && null != t.parent_id && (t.guild_id in S && t.parent_id in S[t.guild_id] && (delete S[t.guild_id][t.parent_id], n = true), t.guild_id in I && t.parent_id in I[t.guild_id] && (delete I[t.guild_id][t.parent_id], n = true), t.guild_id in A && t.parent_id in A[t.guild_id] && (_.default.keys(A[t.guild_id][t.parent_id]).forEach($), delete A[t.guild_id][t.parent_id], n = true), t.guild_id in T && t.parent_id in T[t.guild_id] && (delete T[t.guild_id][t.parent_id], n = true), t.guild_id in C && t.parent_id in C[t.guild_id] && (delete C[t.guild_id][t.parent_id], n = true), n && M(t.guild_id, t.parent_id)), n
 }
 
-function F(e) {
+function B(e) {
   let t = u.Z.getChannel(e.id);
   return null != t && !!m.Z.isActive(e.guildId, t.parent_id, e.id) && k(t.guild_id, t.parent_id, t.id)
 }
@@ -426,9 +426,9 @@ let eu = new ec(Chunk570140.Z, {
   THREAD_UPDATE: U,
   THREAD_DELETE: U,
   CHANNEL_UPDATES: G,
-  CHANNEL_DELETE: B,
-  THREAD_MEMBER_UPDATE: F,
-  THREAD_MEMBERS_UPDATE: F,
+  CHANNEL_DELETE: F,
+  THREAD_MEMBER_UPDATE: B,
+  THREAD_MEMBERS_UPDATE: B,
   LOAD_MESSAGES_SUCCESS: V,
   MESSAGE_CREATE: V,
   MESSAGE_DELETE: V,

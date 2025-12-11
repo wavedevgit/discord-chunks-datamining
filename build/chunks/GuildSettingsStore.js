@@ -63,12 +63,12 @@ function Z(e, t) {
   return n
 }
 
-function B(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Z(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = true,
+let B = true,
   V = ["name", "description", "icon", "splash", "banner", "homeHeader", "afkChannelId", "afkTimeout", "systemChannelId", "verificationLevel", "defaultMessageNotifications", "explicitContentFilter", "features", "systemChannelFlags", "preferredLocale", "rulesChannelId", "safetyAlertsChannelId", "ownerConfiguredContentLevel", "discoverySplash", "publicUpdatesChannelId", "premiumProgressBarEnabled"],
   H = ["brandColorPrimary", "description", "icon", "name", "traits", "visibility", "gameApplicationIds", "customBanner", "tag", "badge", "badgeColorPrimary", "badgeColorSecondary"],
   Y = new Set(["icon", "splash", "banner", "discoverySplash", "homeHeader"]),
@@ -89,7 +89,7 @@ let F = true,
     primaryCategoryId: Chunk128449.o3,
     secondaryCategoryIds: [],
     keywords: [],
-    emojiDiscoverabilityEnabled: F,
+    emojiDiscoverabilityEnabled: B,
     partnerActionedTimestamp: null,
     partnerApplicationTimestamp: null,
     isPublished: false,
@@ -214,7 +214,7 @@ function eA(e) {
   H.forEach(t => {
     if (null != c && e.hasOwnProperty(t)) {
       let n = e[t];
-      true !== n && (c = B(G({}, c), {
+      true !== n && (c = F(G({}, c), {
         [t]: n
       }))
     }
@@ -248,7 +248,7 @@ function eR(e) {
 }
 
 function ew(e) {
-  ef = B(G({}, ef), {
+  ef = F(G({}, ef), {
     [e.invite.code]: eN(e.invite)
   })
 }
@@ -335,7 +335,7 @@ function eZ(e) {
   if (!e_(t)) returnfalse
 }
 
-function eB(e) {
+function eF(e) {
   let {
     guildId: t,
     roleId: n
@@ -344,7 +344,7 @@ function eB(e) {
   u === n && (u = null)
 }
 
-function eF(e) {
+function eB(e) {
   Q = true, X = J = e.enabled, $ = ee = e.channelId
 }
 
@@ -405,7 +405,7 @@ function eQ(e) {
     primaryCategoryId: null != (t = p.primaryCategoryId) ? t : M.o3,
     secondaryCategoryIds: null != (n = p.secondaryCategoryIds) ? n : [],
     keywords: null != (r = p.keywords) ? r : [],
-    emojiDiscoverabilityEnabled: null != (i = p.emojiDiscoverabilityEnabled) ? i : F,
+    emojiDiscoverabilityEnabled: null != (i = p.emojiDiscoverabilityEnabled) ? i : B,
     partnerActionedTimestamp: null != (a = p.partnerActionedTimestamp) ? a : null,
     partnerApplicationTimestamp: null != (o = p.partnerApplicationTimestamp) ? o : null,
     isPublished: null != (l = p.isPublished) && l,
@@ -436,9 +436,9 @@ function e0(e) {
     guildId: t,
     categoryId: n
   } = e;
-  null != s && t === s.id && (el = B(G({}, el), {
+  null != s && t === s.id && (el = F(G({}, el), {
     secondaryCategoryIds: [...el.secondaryCategoryIds, n]
-  }), es = B(G({}, es), {
+  }), es = F(G({}, es), {
     secondaryCategoryIds: [...es.secondaryCategoryIds, n]
   }))
 }
@@ -450,9 +450,9 @@ function e1(e) {
   } = e;
   if (null == s || n !== s.id) return;
   let i = el.secondaryCategoryIds.indexOf(r);
-  false !== i && ((t = [...el.secondaryCategoryIds]).splice(i, 1), el = B(G({}, el), {
+  false !== i && ((t = [...el.secondaryCategoryIds]).splice(i, 1), el = F(G({}, el), {
     secondaryCategoryIds: t
-  })), false !== (i = es.secondaryCategoryIds.indexOf(r)) && ((t = [...es.secondaryCategoryIds]).splice(i, 1), es = B(G({}, es), {
+  })), false !== (i = es.secondaryCategoryIds.indexOf(r)) && ((t = [...es.secondaryCategoryIds]).splice(i, 1), es = F(G({}, es), {
     secondaryCategoryIds: t
   }))
 }
@@ -476,7 +476,7 @@ function e2(e) {
     socialLinks: l,
     about: c
   } = e;
-  null != s && t === s.id && (el = B(G({}, el), {
+  null != s && t === s.id && (el = F(G({}, el), {
     primaryCategoryId: null != n ? n : el.primaryCategoryId,
     keywords: null != r ? r : el.keywords,
     emojiDiscoverabilityEnabled: null != i ? i : el.emojiDiscoverabilityEnabled,
@@ -648,7 +648,7 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_SETTINGS_LOADED_BANS: eD,
   GUILD_SETTINGS_LOADED_BANS_BATCH: ex,
   GUILD_SETTINGS_LOADED_INVITES: eP,
-  GUILD_SETTINGS_SET_WIDGET: eF,
+  GUILD_SETTINGS_SET_WIDGET: eB,
   GUILD_SETTINGS_SET_VANITY_URL: eH,
   GUILD_SETTINGS_SET_MFA_SUCCESS: eY,
   GUILD_SETTINGS_ROLE_SELECT: eU,
@@ -659,7 +659,7 @@ let tt = new te(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_BAN_REMOVE: ej,
   GUILD_ROLE_CREATE: eG,
   GUILD_ROLE_UPDATE: eZ,
-  GUILD_ROLE_DELETE: eB,
+  GUILD_ROLE_DELETE: eF,
   GUILD_UPDATE: eM,
   GUILD_DELETE: ek,
   GUILD_PROFILE_FETCH_SUCCESS: e5,
