@@ -30,8 +30,8 @@ function _(e) {
     targetElementRef: n,
     onClose: _
   } = e, [S, E] = r.useState(false), {
-    trackUserProfileEditAction: T
-  } = (0, m.KZ)(), O = (0, l.e7)([v.default], () => v.default.getId()), {
+    trackUserProfileEditAction: O
+  } = (0, m.KZ)(), T = (0, l.e7)([v.default], () => v.default.getId()), {
     config: N,
     application: P
   } = (0, f.G)(), {
@@ -39,7 +39,7 @@ function _(e) {
     hasAlreadyLinked: I,
     canStartAuthorization: k,
     startAuthorization: R
-  } = (0, d.F)(P), A = (0, x.ZP)(O), {
+  } = (0, d.F)(P), A = (0, x.ZP)(T), {
     analyticsLocations: D
   } = (0, c.ZP)(), Z = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == P ? true : P.id));
   return null != N && null != N.edit_profile_upsell_image && null != P && w ? (0, a.jsx)(u.ZP, {
@@ -70,7 +70,7 @@ function _(e) {
           text: C.intl.string(C.t.VSLDly),
           onClick: () => {
             E(true), (0, b.openUserProfileModal)({
-              userId: O,
+              userId: T,
               section: y.oh.WIDGETS
             }).then(() => {
               r(j.L.TAKE_ACTION), _();
@@ -78,7 +78,7 @@ function _(e) {
                 applicationId: P.id,
                 type: i.l.APPLICATION
               });
-              (0, h.qH)(e.type, e), T(function(e) {
+              (0, h.qH)(e.type, e), O(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -107,7 +107,7 @@ function _(e) {
             R({
               onConfirm: () => {
                 E(true), (0, b.openUserProfileModal)({
-                  userId: O,
+                  userId: T,
                   section: y.oh.WIDGETS
                 }).then(() => {
                   r(j.L.TAKE_ACTION), _()

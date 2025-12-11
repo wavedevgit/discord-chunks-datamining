@@ -54,7 +54,7 @@ let E = {
     [Chunk981631.O0b.PAUSED]: "Paused",
     [Chunk981631.O0b.PAUSE_PENDING]: "Pause Pending"
   },
-  T = {
+  O = {
     [Chunk362786.Id.UNKNOWN]: "Unknown",
     [Chunk362786.Id.ADMIN]: "Admin",
     [Chunk362786.Id.USER]: "User",
@@ -62,7 +62,7 @@ let E = {
     [Chunk362786.Id.DEFERRED_START]: "Deferred Start",
     [Chunk362786.Id.USER_TEMPORARY_BAN]: "User Temp Ban"
   },
-  O = [{
+  T = [{
     label: "Unpaid",
     value: Chunk981631.O0b.UNPAID
   }, {
@@ -180,10 +180,10 @@ function P(e) {
   let {
     subscription: w,
     onUpdated: I
-  } = e, [k, R] = r.useState(false), [A, D] = r.useState(false), [Z, L] = r.useState(false), [M, U] = r.useState(false), [B, F] = r.useState(null), G = e => (null == e && (e = w.status), e in E) ? E[e] : "Unknown status ".concat(e), V = e => {
+  } = e, [k, R] = r.useState(false), [A, D] = r.useState(false), [Z, L] = r.useState(false), [M, U] = r.useState(false), [B, F] = r.useState(null), [G, V] = r.useState(""), H = e => (null == e && (e = w.status), e in E) ? E[e] : "Unknown status ".concat(e), W = e => {
     let t = new Date(e);
     return f.default.fromTimestamp(t.getTime())
-  }, H = async e => {
+  }, z = async e => {
     let {
       status: t = w.status,
       premiumStreakStart: n,
@@ -191,16 +191,16 @@ function P(e) {
     } = e, r = S({
       subscription_status: t
     }, null != n ? {
-      premium_streak_started_at: V(n)
+      premium_streak_started_at: W(n)
     } : null, null != a ? {
-      ended_at: V(a)
+      ended_at: W(a)
     } : null);
     await d.tn.patch({
       url: "/debug/subscriptions/".concat(w.id),
       body: r,
       rejectWithError: false
     }), I()
-  }, W = async () => {
+  }, q = async () => {
     try {
       await g.vc(w.id, g.cN.RENEW, {
         targetDate: o()(new Date),
@@ -212,33 +212,59 @@ function P(e) {
       F((null == (e = t.body) ? true : e.message) || t.message || "Failed to renew subscription")
     }
     I()
-  }, z = (null == (t = y.GP[w.planIdFromItems]) ? true : t.premiumType) === y.PremiumTypes.TIER_0, q = null == (n = w.metadata) ? true : n.ended_at, K = null != q ? new Date(q).toISOString().substring(0, 10) : "", Q = [{
+  }, K = async e => {
+    let {
+      accepted: t
+    } = e;
+    try {
+      await d.tn.post({
+        url: "/debug/subscriptions/".concat(w.id, "/members/").concat(G),
+        body: S({}, t ? {
+          accepted: true
+        } : {}),
+        rejectWithError: false
+      }), V("")
+    } catch (e) {
+      var n;
+      F((null == (n = e.body) ? true : n.message) || e.message || "Failed to add user to group")
+    }
+  }, Q = async () => {
+    try {
+      await d.tn.del({
+        url: "/debug/subscriptions/".concat(w.id, "/members/").concat(G),
+        rejectWithError: false
+      }), V("")
+    } catch (t) {
+      var e;
+      F((null == (e = t.body) ? true : e.message) || t.message || "Failed to remove user from group")
+    }
+  }, Y = (null == (t = y.GP[w.planIdFromItems]) ? true : t.premiumType) === y.PremiumTypes.TIER_0, X = null == (n = w.metadata) ? true : n.ended_at, J = null != X ? new Date(X).toISOString().substring(0, 10) : "", $ = [{
     id: "id",
     label: "ID: ".concat(w.id),
     isDisabled: false
   }, {
     id: "status",
-    label: "Status: ".concat(G()),
+    label: "Status: ".concat(H()),
     isDisabled: false
-  }], Y = w.hasActiveTrial, X = (null == (i = w.metadata) ? true : i.active_discount_id) != null;
-  return Y && Q.push({
+  }], ee = w.hasActiveTrial, et = (null == (i = w.metadata) ? true : i.active_discount_id) != null;
+  return ee && $.push({
     id: "trial",
     label: "Has Trial",
     isDisabled: false
-  }), X && Q.push({
+  }), et && $.push({
     id: "active-discount",
     label: "Has Active Discount",
     isDisabled: false
-  }), w.status !== v.O0b.ACTIVE && Q.push({
+  }), w.status !== v.O0b.ACTIVE && $.push({
     id: "dates",
     label: "Dates: ".concat((0, h.vc)(w.createdAt, "LL"), " - ").concat((0, h.vc)(w.currentPeriodEnd, "LL")),
     isDisabled: false
-  }), w.status === v.O0b.PAUSED && Q.push({
+  }), w.status === v.O0b.PAUSED && $.push({
     id: "pause-reason",
-    label: "Pause Reason: ".concat(w.pauseReason in T ? T[w.pauseReason] : "Unknown pause reason ".concat(w.pauseReason)),
+    label: "Pause Reason: ".concat(w.pauseReason in O ? O[w.pauseReason] : "Unknown pause reason ".concat(w.pauseReason)),
     isDisabled: false
   }), (0, a.jsx)("div", {
-    className: l()(C.card, z ? C.gradientWrapperTier0 : C.gradientWrapperTier2),
+    className: l()(C.card, Y ? C.gradientWrapperTier0 : C.gradientWrapperTier2),
     children: (0, a.jsxs)(m.C3N, {
       label: "Type: ".concat((() => {
         let e = w.planIdFromItems;
@@ -246,12 +272,12 @@ function P(e) {
       })()),
       className: _.fieldset,
       children: [(0, a.jsx)(m.QSK, {
-        items: Q,
+        items: $,
         label: "Tags",
         selectionMode: "none",
         selectionBehavior: "replace",
         disabledKeys: new Set
-      }), Y && (0, a.jsxs)("div", {
+      }), ee && (0, a.jsxs)("div", {
         className: _.collapsablePane,
         children: [(0, a.jsxs)(m.P3F, {
           onClick: () => {
@@ -286,7 +312,7 @@ function P(e) {
             })]
           })]
         })]
-      }), X && (0, a.jsxs)("div", {
+      }), et && (0, a.jsxs)("div", {
         className: _.collapsablePane,
         children: [(0, a.jsxs)(m.P3F, {
           onClick: () => {
@@ -370,10 +396,10 @@ function P(e) {
           gap: 24,
           children: [(0, a.jsx)(u.B6, {
             label: "Status",
-            serialize: e => G(e),
+            serialize: e => H(e),
             isSelected: e => e === w.status,
-            options: O,
-            select: e => H({
+            options: T,
+            select: e => z({
               status: e
             }),
             popoutLayerContext: x.O$
@@ -384,7 +410,7 @@ function P(e) {
                 variant: "primary",
                 size: "sm",
                 text: "Renew Subscription",
-                onClick: e => W()
+                onClick: e => q()
               }), (0, a.jsx)(m.Button, {
                 variant: "secondary",
                 size: "sm",
@@ -408,16 +434,41 @@ function P(e) {
             children: [(0, a.jsx)(m.Wrb, {
               label: "Premium Streak Start Date",
               value: o()(null == (P = w.premiumSince) ? true : P.toISOString().substring(0, 10)),
-              onSelect: e => H({
+              onSelect: e => z({
                 premiumStreakStart: e.toISOString()
               })
             }), (0, a.jsx)(b.Z, {})]
           }), (0, a.jsx)(m.Wrb, {
             label: "Metadata Ended At Date",
-            value: o()(K),
-            onSelect: e => H({
+            value: o()(J),
+            onSelect: e => z({
               endedAt: e.toISOString()
             })
+          }), (null == w ? true : w.planIdFromItems) === y.Xh.PREMIUM_GROUP_MONTH && (0, a.jsxs)(m.Kqy, {
+            gap: 8,
+            children: [(0, a.jsx)(m.oil, {
+              label: "Subscription Group Member User ID",
+              value: G,
+              onChange: V
+            }), (0, a.jsxs)(m.Kqy, {
+              gap: 8,
+              direction: "horizontal",
+              children: [(0, a.jsx)(m.Button, {
+                variant: "primary",
+                size: "sm",
+                text: "Add",
+                onClick: () => K({
+                  accepted: true
+                }),
+                disabled: "" === G
+              }), (0, a.jsx)(m.Button, {
+                variant: "secondary",
+                size: "sm",
+                text: "Remove",
+                onClick: () => Q(),
+                disabled: "" === G
+              })]
+            })]
           })]
         })]
       })]

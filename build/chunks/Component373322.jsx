@@ -31,11 +31,11 @@ let g = ["#51BC9D"],
     } = e, {
       completionSpring: _,
       startCompletionAnimation: S
-    } = (0, h.GX)(), E = (null == (t = v.userStatus) ? true : t.completedAt) != null, T = r.useRef(false), O = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = r.useRef(null), P = (0, d.e7)([p.Z], () => p.Z.hasLayers()), w = (0, u.Z)(P), [I, k] = r.useState(null), [R, A] = r.useState(null), D = r.useRef(new s.qA({
+    } = (0, h.GX)(), E = (null == (t = v.userStatus) ? true : t.completedAt) != null, O = r.useRef(false), T = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = r.useRef(null), P = (0, d.e7)([p.Z], () => p.Z.hasLayers()), w = (0, u.Z)(P), [I, k] = r.useState(null), [R, A] = r.useState(null), D = r.useRef(new s.qA({
       gravity: 0,
       wind: 0
     })), Z = (0, s.uR)(I, R), L = r.useCallback(() => {
-      if (O) return;
+      if (T) return;
       let e = j.current,
         t = N.current;
       if (null != t && null != e && Z.isReady) {
@@ -112,7 +112,7 @@ let g = ["#51BC9D"],
           Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
         }), l), 100)
       }
-    }, [j, N, Z, O]), M = (0, u.Z)(y);
+    }, [j, N, Z, T]), M = (0, u.Z)(y);
     return (r.useEffect(() => {
       E && y && !M && (S(), L())
     }, [y, E, S, L, M]), r.useEffect(() => {
@@ -120,10 +120,10 @@ let g = ["#51BC9D"],
         S(), L()
       }, 200)
     }, [E, w, P, S, L]), r.useEffect(() => {
-      Z.isReady && (!T.current && E && (S(), L()), T.current = E)
-    }, [E, T, L, S, Z]), r.useEffect(() => {
+      Z.isReady && (!O.current && E && (S(), L()), O.current = E)
+    }, [E, O, L, S, Z]), r.useEffect(() => {
       C && E && (S(), L())
-    }, [C, E, S, L]), O) ? null : (0, a.jsxs)("div", {
+    }, [C, E, S, L]), T) ? null : (0, a.jsxs)("div", {
       className: x.wrapper,
       "aria-hidden": "true",
       ref: N,

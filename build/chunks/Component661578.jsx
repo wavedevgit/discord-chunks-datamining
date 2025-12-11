@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 661578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,7 +35,7 @@ function E(e) {
   })
 }
 
-function T(e) {
+function O(e) {
   let {
     quest: t,
     useReducedMotion: n
@@ -43,8 +43,8 @@ function T(e) {
     useReducedMotion: n
   }), g = (0, m.O5)(), y = (0, p.aM)(), {
     errorHints: C,
-    startingConsoleQuest: T,
-    startConsoleQuest: O
+    startingConsoleQuest: O,
+    startConsoleQuest: T
   } = (0, x.GI)({
     questId: t.id,
     beforeRequest: () => {
@@ -120,14 +120,14 @@ function T(e) {
         children: N
       }), (0, a.jsx)(c.P3F, {
         className: l()(S.microphoneUnitRefreshIconWrapper, {
-          [S.disabled]: T
+          [S.disabled]: O
         }),
-        onClick: () => O(),
+        onClick: () => T(),
         children: d.render()
       })]
     }), (0, a.jsxs)("div", {
       className: l()({
-        [S.opacity_50]: T
+        [S.opacity_50]: O
       }),
       children: [P(), 0 === C.length ? null : (0, a.jsx)(E, {
         children: o
@@ -135,7 +135,7 @@ function T(e) {
     })]
   })
 }
-let O = function(e) {
+let T = function(e) {
   let {
     quest: t,
     taskDetails: n
@@ -209,7 +209,7 @@ let O = function(e) {
   return (0, a.jsx)(C.ZP, {
     heading: _.intl.string(_.t.UPWlJu),
     steps: c,
-    children: u && !m && !p && (0, a.jsx)(T, {
+    children: u && !m && !p && (0, a.jsx)(O, {
       useReducedMotion: i,
       quest: t
     })

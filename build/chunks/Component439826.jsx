@@ -206,7 +206,7 @@ function M(e) {
                 className: D.utilButtonIcon
               })
             })
-          }), (0, a.jsx)(T.i, {
+          }), (0, a.jsx)(O.i, {
             onOpen: G,
             onClose: F,
             onSelect: V,
@@ -260,11 +260,11 @@ function M(e) {
           width: 100,
           height: 30,
           className: D.partnerBranding,
-          children: (0, a.jsx)(O.ZP, {
+          children: (0, a.jsx)(T.ZP, {
             className: D.partnerBranding,
             logotypeClassName: D.partnerLogotypes,
             quest: S,
-            separatorSpacing: O.US.MEDIUM,
+            separatorSpacing: T.US.MEDIUM,
             withGameTile: false,
             onLoadComplete: $
           })

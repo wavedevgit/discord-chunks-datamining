@@ -156,7 +156,7 @@ function h(e) {
     ariaHidden: true,
     children: (0, r.jsx)(d.P3F, (t = g({
       innerRef: i,
-      "aria-label": null != a ? a : f.intl.string(f.t.Zc1neM),
+      "aria-label": null != a ? a : f.intl.string(f.t.n9T3Hi),
       "aria-keyshortcuts": "Control+D, Meta+D"
     }, o), n = n = {
       children: (0, r.jsx)(d.Vni, {

@@ -118,7 +118,7 @@ let I = e => {
         sourceQuestContent: r
       }),
       size: "sm",
-      text: T.intl.string(T.t.csptqV)
+      text: O.intl.string(O.t.csptqV)
     })
   },
   R = e => {
@@ -160,7 +160,7 @@ let I = e => {
         variant: "secondary",
         fullWidth: true,
         size: "sm",
-        text: T.intl.string(T.t["93PTEs"])
+        text: O.intl.string(O.t["93PTEs"])
       }, e))
     })
   },
@@ -215,14 +215,14 @@ let I = e => {
       onClick: I,
       pauseAnimation: h || !f && !S,
       className: x,
-      buttonShineClassName: O.shine,
+      buttonShineClassName: T.shine,
       "data-migration-pending": true
     }, _), {
-      children: null != b ? b : T.intl.string(T.t.cfY4PE)
+      children: null != b ? b : O.intl.string(O.t.cfY4PE)
     })) : (0, a.jsx)(i.zxk, P(N({
       fullWidth: true,
       onClick: I,
-      text: null != b ? b : T.intl.string(T.t.cfY4PE)
+      text: null != b ? b : O.intl.string(O.t.cfY4PE)
     }, _), {
       size: _.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
@@ -268,7 +268,7 @@ let I = e => {
       quest: n,
       sourceQuestContent: r
     })), null == y ? null : (0, a.jsx)("div", {
-      className: O.cta,
+      className: T.cta,
       children: y
     })
   };
@@ -276,11 +276,11 @@ let I = e => {
 function L(e) {
   let t = r.useRef(null);
   return (0, a.jsxs)("div", {
-    className: O.ctaButtons,
+    className: T.ctaButtons,
     ref: t,
     children: [e.showBackButton && (0, a.jsx)(i.hU, {
       size: "sm",
-      "aria-label": T.intl.string(T.t["13/7kX"]),
+      "aria-label": O.intl.string(O.t["13/7kX"]),
       onClick: e.onBack,
       icon: s.V7D,
       variant: "secondary"

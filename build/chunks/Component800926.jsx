@@ -29,12 +29,12 @@ let x = Chunk473749.forwardRef(function(e, t) {
     onCtxMenuOpen: _,
     onCtxMenuClose: S,
     onCtxMenuSelect: E,
-    overlayRef: T
-  } = e, O = (null == (n = j.userStatus) ? true : n.completedAt) != null, N = (0, c.Jf)(j), P = r.useRef(null), w = (null == (i = j.userStatus) ? true : i.enrolledAt) != null, I = null != N ? N.percentComplete : y.percentComplete, [k, R] = r.useState(false);
+    overlayRef: O
+  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, N = (0, c.Jf)(j), P = r.useRef(null), w = (null == (i = j.userStatus) ? true : i.enrolledAt) != null, I = null != N ? N.percentComplete : y.percentComplete, [k, R] = r.useState(false);
   return (0, a.jsxs)(a.Fragment, {
-    children: [O && (0, a.jsx)(u.Z, {
+    children: [T && (0, a.jsx)(u.Z, {
       expansionSpring: b,
-      overlayRef: T,
+      overlayRef: O,
       progressBarRef: P,
       quest: j,
       isExpanded: g,
@@ -51,13 +51,13 @@ let x = Chunk473749.forwardRef(function(e, t) {
           range: [0, 1],
           output: [1, 0]
         }),
-        backgroundImage: O ? "linear-gradient(90deg, ".concat(h.cd, ", ").concat(h.v$, ")") : true
+        backgroundImage: T ? "linear-gradient(90deg, ".concat(h.cd, ", ").concat(h.v$, ")") : true
       },
       onMouseEnter: () => R(true),
       onMouseLeave: () => R(false),
       children: (0, a.jsxs)("div", {
         className: f.contentCollapsedWrapper,
-        children: [O && (0, a.jsxs)(a.Fragment, {
+        children: [T && (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(p.Z, {
             quest: j,
             onCtxMenuOpen: _,
@@ -72,7 +72,7 @@ let x = Chunk473749.forwardRef(function(e, t) {
           progressBarRef: P,
           isExpanded: false,
           percentComplete: I
-        }) : null, O && (0, a.jsx)(d.r, {
+        }) : null, T && (0, a.jsx)(d.r, {
           quest: j,
           useReducedMotion: C,
           isExpanded: false,

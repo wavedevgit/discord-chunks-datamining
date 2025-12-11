@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => T
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,10 +26,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk642145 = require("./642145.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk710294 = require("./710294.js");
-let T = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
+let O = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
-function O(e) {
-  var t, n, i, O, P;
+function T(e) {
+  var t, n, i, T, P;
   let {
     quest: w,
     questContent: I,
@@ -48,7 +48,7 @@ function O(e) {
     expansionSpring: z
   } = (0, c.q_F)({
     expansionSpring: +!!k,
-    config: (O = function(e) {
+    config: (T = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           a = Object.keys(n);
@@ -67,7 +67,7 @@ function O(e) {
       return e
     }({}, _.Y), P = P = {
       clamp: true
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(P)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(T, Object.getOwnPropertyDescriptors(P)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
@@ -75,8 +75,8 @@ function O(e) {
       }
       return n
     })(Object(P)).forEach(function(e) {
-      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(P, e))
-    }), O)
+      Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(P, e))
+    }), T)
   }), q = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Q = (0, x.xN)(w.config), Y = (0, x.LM)(w.config), {
     completedRatio: X,
     completedRatioDisplay: J
@@ -133,7 +133,7 @@ function O(e) {
           }), F ? (0, a.jsxs)("div", {
             className: E.progressWrapper,
             children: [q && (0, a.jsx)(c.Fmz, {
-              importData: T,
+              importData: O,
               className: E.confetti,
               loop: false,
               autoplay: false,

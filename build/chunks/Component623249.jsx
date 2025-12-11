@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T,
+  default: () => O,
   y: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -28,13 +28,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk574508 = require("./574508.js");
 
-function T(e) {
+function O(e) {
   var t;
   let {
     quest: n,
     errorHints: i,
     transitionState: y,
-    onClose: T,
+    onClose: O,
     sourceQuestContent: N
   } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), D = (0, C.g2)({
     useReducedMotion: A,
@@ -58,12 +58,12 @@ function T(e) {
   });
   return (0, a.jsx)(s.Modal, {
     transitionState: y,
-    onClose: T,
+    onClose: O,
     title: S.intl.string(S.t.W5lmKt),
     subtitle: I.message,
     actions: [{
       variant: "secondary",
-      onClick: () => void(T(), (0, v.V$)({
+      onClick: () => void(O(), (0, v.V$)({
         quest: n
       }, {
         content: x.jn.CONNECTIONS_MODAL,
@@ -74,7 +74,7 @@ function T(e) {
       text: S.intl.string(S.t["qiS+xj"])
     }, {
       variant: "primary",
-      onClick: () => T(),
+      onClick: () => O(),
       text: S.intl.string(S.t.cpT0Cq)
     }],
     children: (0, a.jsxs)(a.Fragment, {
@@ -98,12 +98,12 @@ function T(e) {
         })]
       }), (0, a.jsxs)("div", {
         className: E.accountsWrapper,
-        children: [(0, a.jsx)(O, {
+        children: [(0, a.jsx)(T, {
           icon: (0, a.jsx)(u.pzj, {
             size: "sm"
           }),
           text: S.intl.string(S.t.br3uIi)
-        }), (0, a.jsx)(O, {
+        }), (0, a.jsx)(T, {
           icon: (0, a.jsx)(u.iWm, {
             size: "sm"
           }),
@@ -134,7 +134,7 @@ function T(e) {
   })
 }
 
-function O(e) {
+function T(e) {
   let {
     icon: t,
     text: n,

@@ -36,17 +36,17 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
         ctaContent: c.jZ.OPEN_DISCLOSURE,
         sourceQuestContent: u.jn.QUEST_BAR_V2
       })
-    }, [t]), T = r.useCallback(() => {
+    }, [t]), O = r.useCallback(() => {
       (0, m.nc)(t, {
         content: u.jn.QUEST_BAR_V2,
         ctaContent: c.jZ.OPEN_GAME_LINK,
         impressionId: S,
         sourceQuestContent: u.jn.QUEST_BAR_V2
       })
-    }, [S, t]), O = C && _, N = (0, a.jsx)(o.P3F, {
-      onClick: T,
+    }, [S, t]), T = C && _, N = (0, a.jsx)(o.P3F, {
+      onClick: O,
       className: l()(g.clickable, {
-        [g.logo]: O
+        [g.logo]: T
       }),
       children: (0, a.jsx)(v, {
         quest: t,
@@ -64,7 +64,7 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
     });
     return (0, a.jsxs)(s.animated.div, {
       className: l()(g.wrapper, g.rewardHighlightWrapper, {
-        [g.interactable]: O
+        [g.interactable]: T
       }),
       style: {
         transform: (0, s.to)([n.to({
@@ -83,7 +83,7 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
       }), (0, a.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: O,
+        isFullyExpanded: T,
         partnerBranding: N,
         useReducedMotion: y
       }), (0, a.jsxs)(s.animated.div, {

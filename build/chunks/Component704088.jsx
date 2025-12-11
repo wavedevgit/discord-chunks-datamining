@@ -135,7 +135,7 @@ let _ = e => {
     })
   },
   S = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [T, O] = Chunk473749.useState(5e3), [N, P] = Chunk473749.useState(false), w = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [O, T] = Chunk473749.useState(5e3), [N, P] = Chunk473749.useState(false), w = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
@@ -170,8 +170,8 @@ let _ = e => {
         D(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
-        }, T))
-      }), [S, T, D, Chunk544891]);
+        }, O))
+      }), [S, O, D, Chunk544891]);
     Chunk473749.useEffect(() => {
       V && A !== Chunk5900._n.UNKNOWN && D(Chunk5900._n.UNKNOWN)
     }, [V, D, A]), Chunk473749.useEffect(() => {
@@ -323,8 +323,8 @@ let _ = e => {
               variant: "text-md/semibold",
               children: "Install time"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
-              select: e => O(e),
-              isSelected: e => e === T,
+              select: e => T(e),
+              isSelected: e => e === O,
               serialize: e => "".concat(e),
               options: [{
                 label: "1 second",

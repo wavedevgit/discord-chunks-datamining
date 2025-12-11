@@ -71,7 +71,7 @@ function B(e) {
   }), F = (0, c.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: G,
     reason: V
-  } = (0, T.qN)({
+  } = (0, O.qN)({
     quest: i,
     location: D.dr.QUESTS_BAR
   }), H = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([f.Z], () => f.Z.hasLayers()), z = r.useRef(null), q = r.useMemo(() => (0, _.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
@@ -100,9 +100,9 @@ function B(e) {
     t ? et.current = window.setTimeout(eg, 75) : eg()
   }, [eg, es]), eE = r.useCallback(() => {
     eS()
-  }, [eS]), eT = r.useCallback(() => {
+  }, [eS]), eO = r.useCallback(() => {
     window.clearTimeout(et.current), ea || ei || en.current || eb(false)
-  }, [ea, ei, eb]), eO = r.useCallback(() => {
+  }, [ea, ei, eb]), eT = r.useCallback(() => {
     var e;
     (0, x.dA)({
       questId: i.id,
@@ -128,8 +128,8 @@ function B(e) {
         impression_id: null == (e = z.current) ? true : e.getId()
       },
       sourceQuestContent: v.jn.QUEST_BAR_V2
-    }), en.current = false, eT()
-  }, [eT, i]);
+    }), en.current = false, eO()
+  }, [eO, i]);
   r.useEffect(() => {
     ei && eN()
   }, [ei, eN]), r.useLayoutEffect(() => {
@@ -182,7 +182,7 @@ function B(e) {
     }
   });
   if (r.useEffect(() => {
-      q && (0, O.loadVideoQuestModal)()
+      q && (0, T.loadVideoQuestModal)()
     }, [q]), r.useEffect(() => {
       if (X) {
         var e;
@@ -250,9 +250,9 @@ function B(e) {
       }), (0, a.jsx)(s.animated.div, {
         "aria-hidden": !$,
         onMouseLeave: eN,
-        onMouseEnter: eO,
+        onMouseEnter: eT,
         onFocus: eE,
-        onBlur: eT,
+        onBlur: eO,
         className: l()(L.wrapper, {
           [L.wrapperInvisible]: !$,
           [L.wrapperVisible]: $ && eu
