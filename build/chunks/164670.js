@@ -2,17 +2,18 @@
 /** chunk id: 164670, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Do: () => b,
-  FE: () => E,
-  K$: () => p,
-  Uc: () => h,
+  $p: () => p,
+  Do: () => y,
+  FE: () => b,
+  K$: () => _,
+  Uc: () => g,
   _Z: () => f,
-  a7: () => y,
-  ac: () => _,
-  vg: () => v,
-  wK: () => m,
-  wQ: () => O,
-  x6: () => g
+  a7: () => O,
+  ac: () => m,
+  vg: () => S,
+  wK: () => h,
+  wQ: () => v,
+  x6: () => E
 }), require("./953529.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -26,20 +27,24 @@ var Chunk392711 = require("./392711.js"),
 let f = Chunk73346.$k ? "webp" : "jpg";
 
 function p(e) {
+  return null != e && u.Nx.has(e.id)
+}
+
+function _(e) {
   return null != e && e.productLine === d.POd.SOCIAL_LAYER_GAME_ITEM
 }
 
-function _() {
+function m() {
   let e = Chunk430824.Z.getGuild(Chunk582113.Kz);
   return null != module && module.features.has(Chunk981631.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? module.id : Chunk582113.ON
 }
 
-function m(e) {
+function h(e) {
   var t, n;
-  return e.id === _() || null != (n = null == (t = e.features) ? true : t.has(d.GuildFeatures.SOCIAL_LAYER_STOREFRONT)) && n
+  return e.id === m() || null != (n = null == (t = e.features) ? true : t.has(d.GuildFeatures.SOCIAL_LAYER_STOREFRONT)) && n
 }
 
-function h(e) {
+function g(e) {
   return {
     applicationId: e.application_id,
     title: e.title,
@@ -63,7 +68,7 @@ function h(e) {
   }
 }
 
-function g(e) {
+function E(e) {
   if (null != e) return {
     carouselItems: e.carousel_items.map(e => ({
       thumbnailAssetId: e.thumbnail_asset_id,
@@ -80,7 +85,7 @@ function g(e) {
   }
 }
 
-function E(e, t) {
+function b(e, t) {
   var n, r, i;
   if (null == t || (null == e || null == (r = e.tenantMetadata) || null == (n = r.socialLayer) ? true : n.carouselItems) == null || 0 === e.tenantMetadata.socialLayer.carouselItems.length) return {
     primaryIconAsset: true,
@@ -96,25 +101,25 @@ function E(e, t) {
   }
 }
 
-function b(e) {
+function y(e) {
   var t, n, r;
   let i = null == e ? true : e.applicationId,
     a = null != (r = null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) ? r : null == e ? true : e.thumbnailAssetId;
   if (null != a && null != i) return l.Z.toURLSafe((0, s._W)(i, a, 512, "webp"))
 }
 
-function y(e) {
+function O(e) {
   var t, n;
   if ((null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardBackgroundImageAssetId) != null && (null == e ? true : e.applicationId) != null) return l.Z.toURLSafe((0, s._W)(e.applicationId, e.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, f))
 }
 
-function O(e, t) {
+function v(e, t) {
   return "".concat(location.protocol).concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT).concat(d.Z5c.GAME_SHOP(e, t.id, t.slug))
 }
 
-function v(e, t) {
+function S(e, t) {
   let n = o.Z.getGuild(e);
-  return null != n && m(n) && (0, c.ne)({
+  return null != n && h(n) && (0, c.ne)({
     location: t
   })
 }
