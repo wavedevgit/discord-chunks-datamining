@@ -66,25 +66,30 @@ function h() {
 }
 async function g() {
   var e, t, n;
-  let r = Chunk998502.ZP.requireModule("discord_media");
-  if (!(null == Chunk147913 ? true : Chunk147913.getMemoryUsageBlob)) return {
+  let r, i = {
     gpu_dedicated_memory: [],
     gpu_renderer_used_memory: []
   };
-  let i = [],
-    a = [],
-    o = await Chunk147913.getMemoryUsageBlob(),
-    s = new Set;
-  for (let r of null != (n = null == Chunk70956 || null == (t = Chunk70956[0]) || null == (e = exports.data) ? true : module.gpus) ? require : [])
-    if (!(!Chunk147913.luid || 0 === Chunk147913.luid || Chunk358085.has(Chunk147913.luid)))
-      if (Chunk358085.add(Chunk147913.luid), null != Chunk147913.memory ? Chunk704806.push(Chunk147913.memory / 1024) : Chunk704806.push(false), null != Chunk147913.memory_usage) {
+  if (!Chunk358085.isPlatformEmbedded || !(0, Chunk358085.isWindows)()) return Chunk704806;
+  try {
+    if (await Chunk998502.ZP.ensureModule("discord_media"), (null == (r = Chunk998502.ZP.requireModule("discord_media")) ? true : Chunk147913.getMemoryUsageBlob) == null) return Chunk704806
+  } catch (e) {
+    return Chunk704806
+  }
+  let a = [],
+    o = [],
+    l = await Chunk147913.getMemoryUsageBlob(),
+    u = new Set;
+  for (let r of null != (n = null == Chunk848479 || null == (t = Chunk848479[0]) || null == (e = exports.data) ? true : module.gpus) ? require : [])
+    if (!(!Chunk147913.luid || 0 === Chunk147913.luid || Chunk981631.has(Chunk147913.luid)))
+      if (Chunk981631.add(Chunk147913.luid), null != Chunk147913.memory ? Chunk626135.push(Chunk147913.memory / 1024) : Chunk626135.push(false), null != Chunk147913.memory_usage) {
         let e = 0;
         for (let t of Chunk147913.memory_usage) exports.memory_usage && (e += exports.memory_usage / 1024);
-        Chunk626135.push(module)
-      } else Chunk626135.push(false);
+        Chunk70956.push(module)
+      } else Chunk70956.push(false);
   return {
-    gpu_dedicated_memory: Chunk704806,
-    gpu_renderer_used_memory: Chunk626135
+    gpu_dedicated_memory: Chunk626135,
+    gpu_renderer_used_memory: Chunk70956
   }
 }
 class E extends Chunk147913.Z {

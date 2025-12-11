@@ -2,9 +2,8 @@
 /** chunk id: 838331, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  hQ: () => T,
-  lo: () => A,
-  yn: () => v
+  hQ: () => I,
+  lo: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -81,23 +80,16 @@ let b = "data-listbox-item-id",
   });
 
 function v(e) {
-  let [t, n] = i.useState(() => new Set(null != e ? [e] : true));
-  return [t, i.useCallback(e => {
-    n(new Set([e]))
-  }, [])]
-}
-
-function S(e) {
   return String(e)
 }
-let I = Chunk473749.createContext({
+let S = Chunk473749.createContext({
   activeDescendant: null,
   selected: new Set,
   setSelected: () => null,
-  itemToString: S
+  itemToString: v
 });
 
-function T(e) {
+function I(e) {
   let {
     placeholder: t,
     children: n,
@@ -106,10 +98,10 @@ function T(e) {
     className: m,
     listClassName: E,
     "aria-label": O,
-    multiSelect: v = false,
+    multiSelect: I = false,
     autoFocus: T = false,
     maxVisibleItems: C = 5,
-    itemToString: A = S,
+    itemToString: A = v,
     emptyStateText: N,
     emptyStateHeader: P,
     onQueryChange: R
@@ -202,7 +194,7 @@ function T(e) {
                 variant: "text-md/normal",
                 children: null != N ? N : d.intl.string(d.t.QwSXv8)
               })]
-            }) : (0, r.jsx)(I.Provider, {
+            }) : (0, r.jsx)(S.Provider, {
               value: {
                 activeDescendant: j,
                 selected: a,
@@ -213,7 +205,7 @@ function T(e) {
                 style: {
                   maxHeight: C * (y + 6)
                 },
-                "aria-multiselectable": v,
+                "aria-multiselectable": I,
                 id: k,
                 ref: U,
                 className: o()(f.list, f.scroller, E),
@@ -235,9 +227,9 @@ function T(e) {
     })
   })
 }
-let C = Chunk473749.createContext(null);
+let T = Chunk473749.createContext(null);
 
-function A(e) {
+function C(e) {
   var t, {
       value: n,
       children: a,
@@ -250,28 +242,28 @@ function A(e) {
     selected: m,
     setSelected: E,
     itemToString: y
-  } = i.useContext(I), v = y(n), S = p === v, T = null != (t = null == d ? true : d.selected) ? t : m.has(n), A = (0, l.JA)(v);
+  } = i.useContext(S), v = y(n), I = p === v, C = null != (t = null == d ? true : d.selected) ? t : m.has(n), A = (0, l.JA)(v);
   return (0, r.jsx)(u.P3F, h(_({
     tag: "li",
     id: v,
     onClick: () => s ? null : E(n),
     [b]: n,
     className: o()(f.item, {
-      [f.focused]: S,
-      [c]: T,
+      [f.focused]: I,
+      [c]: C,
       [f.disabled]: s
     })
   }, A), {
     role: "option",
-    "aria-selected": T,
+    "aria-selected": C,
     "aria-disabled": s,
-    children: (0, r.jsx)(C.Provider, {
+    children: (0, r.jsx)(T.Provider, {
       value: n,
       children: a
     })
   }))
 }
-A.Colors = O, A.Label = function(e) {
+C.Colors = O, C.Label = function(e) {
   let {
     children: t
   } = e;
@@ -279,7 +271,7 @@ A.Colors = O, A.Label = function(e) {
     className: f.itemLabel,
     children: t
   })
-}, A.Icon = function(e) {
+}, C.Icon = function(e) {
   let {
     children: t
   } = e;
@@ -287,22 +279,22 @@ A.Colors = O, A.Label = function(e) {
     className: f.itemCheckbox,
     children: t
   })
-}, A.Checkbox = function(e) {
+}, C.Checkbox = function(e) {
   let {
     checked: t
   } = e, {
     selected: n
-  } = i.useContext(I), a = i.useContext(C);
+  } = i.useContext(S), a = i.useContext(T);
   return (0, r.jsx)("span", {
     className: f.itemCheckbox,
     children: (0, r.jsx)(u.FZ5, {
       checked: null != t ? t : null != a && n.has(a)
     })
   })
-}, A.Checkmark = function() {
+}, C.Checkmark = function() {
   let {
     selected: e
-  } = Chunk473749.useContext(I), t = Chunk473749.useContext(C);
+  } = Chunk473749.useContext(S), t = Chunk473749.useContext(T);
   return module.has(exports) ? (0, Chunk54381.jsx)("span", {
     className: Chunk405100.itemCheckbox,
     children: (0, Chunk54381.jsx)(Chunk481060.owK, {

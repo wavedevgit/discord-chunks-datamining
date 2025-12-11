@@ -1,12 +1,13 @@
 /** Chunk was on 85032 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  wl: () => h,
-  yX: () => m
+  wl: () => y,
+  yX: () => h
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk423802 = require("./423802.js"),
+  Chunk496600 = require("./496600.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk510231 = require("./510231.js"),
   Chunk785717 = require("./785717.jsx"),
@@ -14,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk935587 = require("./935587.js");
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +34,7 @@ function f(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +47,7 @@ function g(e, t) {
   }), e
 }
 
-function p(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -62,121 +63,132 @@ function p(e, t) {
   return i
 }
 
-function b(e) {
+function m(e) {
   var {
     widgetType: t,
     widget: n,
-    onAddGame: b,
-    children: m
-  } = e, h = p(e, ["widgetType", "widget", "onAddGame", "children"]);
-  let [y] = (0, l.ynZ)(), [O, v] = i.useState(""), j = i.useRef(""), x = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
-    trackUserProfileEditAction: P
-  } = (0, c.KZ)(), I = i.useCallback(e => {
-    (0, s.ES)(t, {
-      applicationId: e
-    }), l.uvj.announce(u.intl.string(u.t.q0U3DE)), P({
-      action: "GAME_ADDED",
-      gameId: e,
-      widgetEdited: t
-    }), null == b || b()
-  }, [t, P, b]), {
-    options: w,
-    matchSorterOptions: S
-  } = (0, o.h)(), E = i.useCallback(e => "" === e.trim() ? w : (0, a.Lu)(w, e, g(f({}, S), {
-    threshold: a.Lu.rankings.CONTAINS
-  })), [w, S]), _ = i.useCallback(e => {
-    "" === O.trim() && "" !== e.trim() && P({
-      action: "GAME_SEARCH_SESSION_STARTED",
-      widgetEdited: t,
-      numCharacters: e.trim().length,
-      numResults: E(e).length
-    }), v(e), j.current = e
-  }, [O, P, t, E]), T = i.useMemo(() => "" !== O.trim() ? u.intl.format(u.t.jhiTsN, {
-    searchTerm: O.trim()
-  }) : u.intl.string(u.t.QwSXv8), [O]);
-  return (0, r.jsx)(l.yRy, g(f({}, h), {
+    onAddGame: m,
+    children: h
+  } = e, y = b(e, ["widgetType", "widget", "onAddGame", "children"]);
+  let O = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]),
+    {
+      trackUserProfileEditAction: v
+    } = (0, s.KZ)(),
+    [j, x] = i.useState(""),
+    P = i.useRef(""),
+    I = i.useCallback(e => {
+      (0, u.ES)(t, {
+        applicationId: e
+      }), o.uvj.announce(d.intl.string(d.t.q0U3DE)), v({
+        action: "GAME_ADDED",
+        gameId: e,
+        widgetEdited: t
+      }), null == m || m()
+    }, [t, v, m]),
+    {
+      options: w,
+      matchSorterOptions: S
+    } = (0, c.h)(),
+    E = i.useMemo(() => w.map(e => ({
+      id: String(e.value),
+      value: String(e.value),
+      label: e.label,
+      disabled: O.has(e.value)
+    })), [w, O]),
+    _ = i.useMemo(() => p(g({}, S), {
+      threshold: a.Lu.rankings.CONTAINS,
+      keys: ["label"]
+    }), [S]),
+    T = i.useCallback(e => "" === e.trim() ? E.length : (0, a.Lu)(E, e, _).length, [E, _]),
+    C = i.useCallback(e => {
+      let n = e.target.value;
+      "" === j.trim() && "" !== n.trim() && v({
+        action: "GAME_SEARCH_SESSION_STARTED",
+        widgetEdited: t,
+        numCharacters: n.trim().length,
+        numResults: T(n)
+      }), x(n), P.current = n
+    }, [j, v, t, T]);
+  return (0, r.jsx)(o.yRy, p(g({}, y), {
     onRequestOpen: () => {
-      P({
+      v({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), v(""), j.current = ""
+      }), x(""), P.current = ""
     },
     onRequestClose: () => {
-      P({
+      v({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
-        numCharacters: j.current.trim().length,
-        numResults: E(j.current).length
+        numCharacters: P.current.trim().length,
+        numResults: T(P.current)
       })
     },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(l.DBG, {
-        className: d.gameSearchCombobox,
-        placeholder: u.intl.string(u.t["5h0QOP"]),
-        autoFocus: true,
-        value: y,
-        onChange: e => {
-          I(e), t()
-        },
-        multiSelect: false,
-        maxVisibleItems: 7,
-        emptyStateText: T,
-        emptyStateHeader: "",
-        onQueryChange: _,
-        children: e => E(e).map(e => (0, r.jsx)(l.lo1, {
-          disabled: x.has(e.value),
-          value: String(e.value),
-          children: (0, r.jsx)(l.lo1.Label, {
-            children: (0, r.jsx)(l.Text, {
-              variant: "text-md/medium",
-              color: "text-default",
-              children: e.label
-            })
-          })
-        }, String(e.value)))
+      return (0, r.jsx)(o.VqE, {
+        className: f.gameSearchCombobox,
+        "aria-label": d.intl.string(d.t.uqw8wK),
+        children: (0, r.jsxs)(l.uz, {
+          selectionMode: "single",
+          value: null,
+          onSelectionChange: e => {
+            null != e && (I(e), t())
+          },
+          options: E,
+          matchSorterOptions: _,
+          children: [(0, r.jsx)(l.Ct, {
+            label: d.intl.string(d.t["5h0QOP"]),
+            hideLabel: true,
+            placeholder: d.intl.string(d.t["5h0QOP"]),
+            autoFocus: true,
+            onQueryChange: C
+          }), (0, r.jsx)(l.px, {
+            maxVisibleItems: 7
+          })]
+        })
       })
     },
-    children: e => m(e)
+    children: e => h(e)
   }))
 }
 
-function m(e) {
+function h(e) {
   var {
     disabled: t
-  } = e, n = p(e, ["disabled"]);
+  } = e, n = b(e, ["disabled"]);
   let a = i.useRef(null);
-  return (0, r.jsx)(b, g(f({
+  return (0, r.jsx)(m, p(g({
     targetElementRef: a,
     position: "bottom",
     align: "center"
   }, n), {
-    children: e => (0, r.jsx)(l.Button, f({
+    children: e => (0, r.jsx)(o.Button, g({
       buttonRef: a,
       variant: "secondary",
       size: "sm",
-      icon: l.qJs,
-      text: u.intl.string(u.t.SgTOtX),
+      icon: o.qJs,
+      text: d.intl.string(d.t.SgTOtX),
       disabled: t
     }, e))
   }))
 }
 
-function h(e) {
+function y(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(b, g(f({
+  return (0, r.jsx)(m, p(g({
     targetElementRef: t,
     position: "right",
     align: "top"
   }, e), {
-    children: e => (0, r.jsx)(l.P3F, g(f({
+    children: e => (0, r.jsx)(o.P3F, p(g({
       innerRef: t,
-      className: d.coverButton,
-      "aria-label": u.intl.string(u.t.SgTOtX)
+      className: f.coverButton,
+      "aria-label": d.intl.string(d.t.SgTOtX)
     }, e), {
-      children: (0, r.jsx)(l.svS, {
+      children: (0, r.jsx)(o.svS, {
         color: "currentColor"
       })
     }))

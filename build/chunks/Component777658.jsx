@@ -50,9 +50,7 @@ function _(e) {
   } = t, y = (0, a.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === g
-  }, [g]), O = (0, l.n)({
-    userId: g
-  }), [v, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(g), c.Z.isBlocked(g)], [g]), [I, T] = i.useState(false);
+  }, [g]), O = (0, l.n)(g), [v, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(g), c.Z.isBlocked(g)], [g]), [I, T] = i.useState(false);
   if (b || y) return null;
 
   function C() {
