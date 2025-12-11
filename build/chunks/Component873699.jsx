@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 873699, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,10 +17,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e, t) {
+function O(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(o.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(b.Plq.MANAGE_MESSAGES, t) && f, [t, f]), m = e.reactions.reduce((e, t) => {
+  } = i.useContext(o.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(b.Plq.MANAGE_MESSAGES, t) && f, [t, f]), O = e.reactions.reduce((e, t) => {
     var n;
     return (null == (n = t.count_details) ? true : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
   }, []);
@@ -28,7 +28,7 @@ function m(e, t) {
     id: "remove-emoji-reactions",
     label: p.intl.string(p.t["zx/e4P"]),
     color: "danger",
-    children: m.map(i => {
+    children: O.map(i => {
       var l, s;
       return (0, r.jsx)(o.sNh, {
         id: "remove-emoji-reactions-".concat(null != (l = i.name) ? l : i.id),
@@ -47,7 +47,7 @@ function m(e, t) {
         },
         icon: e => {
           var t, l;
-          return (0, r.jsx)(O, (t = function(e) {
+          return (0, r.jsx)(y, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -84,7 +84,7 @@ function m(e, t) {
   })
 }
 
-function O(e) {
+function y(e) {
   var t;
   let {
     emoji: n,

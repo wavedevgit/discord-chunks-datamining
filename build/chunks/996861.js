@@ -5,15 +5,15 @@ require.d(exports, {
   B8: () => Z,
   F4: () => P,
   HH: () => x,
-  Hd: () => T,
-  Xl: () => w,
+  Hd: () => I,
+  Xl: () => A,
   dF: () => C,
   eM: () => L,
-  fB: () => I,
+  fB: () => T,
   gK: () => M,
-  mG: () => A,
+  mG: () => N,
   qe: () => D,
-  rY: () => N,
+  rY: () => w,
   ts: () => R,
   zW: () => E
 }), require("./54381.js"), require("./473749.js"), require("./481060.js");
@@ -48,7 +48,7 @@ function P(e, t, n) {
   (0, p.JG)(n.shiftKey ? "".concat(t.channel_id, "-").concat(t.id) : t.id)
 }
 
-function I(e, t) {
+function T(e, t) {
   g.default.track(S.rMx.MESSAGE_LINK_COPIED, {
     message_id: t.id,
     channel: t.channel_id
@@ -59,25 +59,25 @@ function _(e, t, n) {
   t.state === S.yb.SEND_FAILED || n.shiftKey ? i.Z.deleteMessage(e.id, t.id, t.state === S.yb.SEND_FAILED) : j.Z.confirmDelete(e, t)
 }
 
-function T(e, t) {
+function I(e, t) {
   i.Z.startEditMessageRecord(e.id, t)
 }
 
 function Z(e, t) {
-  (0, y.Z)(e.id, t.id)
+  (0, v.Z)(e.id, t.id)
 }
 
-function N(e, t, n) {
+function w(e, t, n) {
   if (false === t.pinned) return void(n.shiftKey ? r.Z.pinMessage(e, t.id) : j.Z.confirmPin(e, t));
   n.shiftKey ? r.Z.unpinMessage(e, t.id) : j.Z.confirmUnpin(e, t)
 }
 
-function w(e, t) {
+function A(e, t) {
   (0, l.Z)(e.id, t.id)
 }
 
-function A(e, t) {
-  (0, h.Z)(e, t, true, v.Z.getOptions(t.id))
+function N(e, t) {
+  (0, h.Z)(e, t, true, m.Z.getOptions(t.id))
 }
 
 function x(e, t, n) {
@@ -88,7 +88,7 @@ function x(e, t, n) {
     message: t,
     shouldMention: !n.shiftKey && !i,
     showMentionToggle: !r && !i
-  }), m.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+  }), O.S.dispatch(S.CkL.FOCUS_CHANNEL_TEXT_AREA, {
     channelId: e.id
   })
 }
@@ -98,7 +98,7 @@ function M(e, t) {
 }
 
 function D(e, t) {
-  let n = f.Z.getChannel(O.default.castMessageIdAsChannelId(t.id));
+  let n = f.Z.getChannel(y.default.castMessageIdAsChannelId(t.id));
   null != n && (0, u.ok)(n)
 }
 

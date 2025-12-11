@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 /** chunk id: 225138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => $,
-  default: () => Y
+  S: () => ee,
+  default: () => $
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,6 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk720904 = require("./720904.jsx"),
   Chunk88791 = require("./88791.jsx"),
   Chunk385302 = require("./385302.jsx"),
+  Chunk445445 = require("./445445.js"),
   Chunk873699 = require("./873699.jsx"),
   Chunk134323 = require("./134323.jsx"),
   Chunk429260 = require("./429260.jsx"),
@@ -52,7 +53,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function W(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -71,7 +72,7 @@ function W(e) {
   return e
 }
 
-function J(e, t) {
+function Y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,19 +85,19 @@ function J(e, t) {
   }), e
 }
 
-function Y(e) {
+function $(e) {
   var t, n;
   let i, o, s, d, {
       channel: f,
       message: g,
       target: b,
       mediaItem: p,
-      shouldHideMediaOptions: m,
-      onSelect: O,
-      onHeightUpdate: v
+      shouldHideMediaOptions: O,
+      onSelect: y,
+      onHeightUpdate: m
     } = e,
     {
-      analyticsLocations: y
+      analyticsLocations: v
     } = (0, u.ZP)([c.Z.MESSAGE_CONTEXT_MENU]),
     h = b,
     j = b.getAttribute("data-type"),
@@ -108,8 +109,8 @@ function Y(e) {
       (0, l.kK)(h);)(0, l.kK)(h, HTMLImageElement) && null != h.src && (o = h.src), (0, l.kK)(h, HTMLAnchorElement) && null != h.href && (i = h.href, d = h.textContent, null == o && "img" === h.getAttribute("data-role") && (o = i, h.hasAttribute("data-safe-src") && "" !== h.getAttribute("data-safe-src") && (s = h.getAttribute("data-safe-src")))), h = h.parentNode;
   let P = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(u.Gt, {
-    value: y,
-    children: $({
+    value: v,
+    children: ee({
       message: g,
       channel: f,
       mediaItem: p,
@@ -122,17 +123,17 @@ function Y(e) {
       itemSafeSrc: s,
       itemTextContent: d,
       canReport: true,
-      onHeightUpdate: v,
-      onSelect: O,
+      onHeightUpdate: m,
+      onSelect: y,
       onClose: a.Zy,
       navId: "message",
-      ariaLabel: q.intl.string(q.t.ChPNkN),
-      shouldHideMediaOptions: m
+      ariaLabel: W.intl.string(W.t.ChPNkN),
+      shouldHideMediaOptions: O
     })
   })
 }
 
-function $(e) {
+function ee(e) {
   let {
     message: t,
     channel: n,
@@ -140,26 +141,26 @@ function $(e) {
     textSelection: a,
     favoriteableType: c,
     favoriteableId: u,
-    favoriteableName: Y,
-    itemHref: $,
-    itemSrc: ee,
-    itemSafeSrc: et,
-    itemTextContent: en,
-    canReport: er,
-    onHeightUpdate: ei,
-    onSelect: el,
-    onClose: eo,
-    navId: ea,
-    ariaLabel: es,
-    shouldHideMediaOptions: ec = false
-  } = e, eu = i.useRef(null);
+    favoriteableName: $,
+    itemHref: ee,
+    itemSrc: et,
+    itemSafeSrc: en,
+    itemTextContent: er,
+    canReport: ei,
+    onHeightUpdate: el,
+    onSelect: eo,
+    onClose: ea,
+    navId: es,
+    ariaLabel: ec,
+    shouldHideMediaOptions: eu = false
+  } = e, ed = i.useRef(null);
   i.useEffect(() => {
-    eu.current = Date.now()
+    ed.current = Date.now()
   }, []), i.useEffect(() => () => {
-    if (null != eu.current) {
+    if (null != ed.current) {
       var e;
-      let r = Date.now() - eu.current;
-      y.default.track(Q.rMx.MESSAGE_MENU_TIME_TO_CLOSE, {
+      let r = Date.now() - ed.current;
+      v.default.track(q.rMx.MESSAGE_MENU_TIME_TO_CLOSE, {
         time_to_close_ms: r,
         channel_id: n.id,
         guild_id: null != (e = n.getGuildId()) ? e : true,
@@ -167,24 +168,24 @@ function $(e) {
       })
     }
   }, [n, t]);
-  let ed = i.useCallback(() => {
-      if (null != eu.current) {
+  let ef = i.useCallback(() => {
+      if (null != ed.current) {
         var e;
-        let r = Date.now() - eu.current;
-        y.default.track(Q.rMx.MESSAGE_MENU_TIME_TO_SELECT, {
+        let r = Date.now() - ed.current;
+        v.default.track(q.rMx.MESSAGE_MENU_TIME_TO_SELECT, {
           time_to_first_click_ms: r,
           channel_id: n.id,
           guild_id: null != (e = n.getGuildId()) ? e : true,
           message_id: t.id
         })
       }
-      null == el || el()
-    }, [el, n, t]),
+      null == eo || eo()
+    }, [eo, n, t]),
     {
-      forceIconsLeft: ef,
-      reorderMessageMenuItems: eg
+      forceIconsLeft: eg,
+      reorderMessageMenuItems: eb
     } = (0, d.d)("MessageContextMenu"),
-    eb = (e, t) => {
+    ep = (e, t) => {
       var n;
       return function e(t, n, r, l) {
         if (null == t) return null;
@@ -213,180 +214,177 @@ function $(e) {
             return i
           }(o, ["icon", "iconLeft", "children"]),
           d = null != c ? i.Children.map(c, t => null == t ? null : e(t, true, false, l)) : c;
-        if (r) return i.cloneElement(t, J(W({}, u), {
+        if (r) return i.cloneElement(t, Y(J({}, u), {
           icon: true,
           iconLeft: true,
           children: d
         }));
         if (l) {
           var f;
-          return i.cloneElement(t, J(W({}, u), {
+          return i.cloneElement(t, Y(J({}, u), {
             icon: true,
             iconLeft: null != (f = null != s ? s : n) ? f : a,
             children: d
           }))
         }
         return t
-      }(e, null == t ? true : t.iconToAdd, null != (n = null == t ? true : t.removeIcon) ? n : eg, ef)
+      }(e, null == t ? true : t.iconToAdd, null != (n = null == t ? true : t.removeIcon) ? n : eb, eg)
     },
-    ep = (0, D.Z)(t, n),
-    em = eb((0, g.Z)(a), {
+    eO = (0, D.Z)(t, n),
+    ey = ep((0, g.Z)(a), {
       iconToAdd: o.TIy
     }),
-    eO = eb((0, I.Z)(t, n, a), {
+    em = ep((0, T.Z)(t, n, a), {
       iconToAdd: o.TIy
     }),
-    ev = eb((0, m.Z)(a), {
+    ev = ep((0, O.Z)(a), {
       iconToAdd: o._Ve
     }),
-    ey = eb((0, E.Z)(t, n), {
-      iconToAdd: o.EO4,
+    eh = ep((0, E.Z)(t, n), {
+      iconToAdd: o.UZo,
       removeIcon: false
     }),
-    eh = eb((0, N.Z)(t, n), {
+    ej = ep((0, w.Z)(t, n), {
       removeIcon: false
     }),
-    ej = eb((0, k.Z)(t, n), {
+    eS = ep((0, G.Z)(t, n), {
       removeIcon: false
     }),
-    eS = eb((0, A.Z)(t, n), {
+    eE = ep((0, N.Z)(t, n), {
       removeIcon: false
     }),
-    eE = eb((0, z.Z)(t, n), {
+    eP = ep((0, H.Z)(t, n), {
       removeIcon: false
     }),
-    eP = eb((0, T.Z)(t)),
-    eI = eb((0, H.Z)(t, n), {
+    eT = ep((0, I.Z)(t)),
+    e_ = ep((0, B.Z)(t, n), {
       iconToAdd: o.os0
     }),
-    e_ = eb((0, M.Z)(t, n)),
-    eT = eb((0, j.Z)(t), {
+    eI = ep((0, M.Z)(t, n)),
+    eZ = ep((0, j.Z)(t), {
       iconToAdd: o.plf
     }),
-    eZ = eb((0, v.Z)({
+    ew = ep((0, m.Z)({
       commandType: s.yU.MESSAGE,
       commandTargetId: t.id,
       channel: n,
       guildId: true,
-      onHeightUpdate: ei
+      onHeightUpdate: el
     }), {
       iconToAdd: o.jje
     }),
-    eN = eb((0, U.Z)(t, n), {
+    eA = ep((0, F.Z)(t, n), {
       iconToAdd: o.DuK
     }),
-    ew = eb((0, x.Z)(t, n)),
-    eA = eb((0, P.Z)(t, n)),
-    ex = eb((0, _.Z)(t, n)),
-    eM = eb((0, F.Z)(t, n)),
-    eD = eb((0, C.Z)(t), {
+    eN = ep((0, x.Z)(t, n)),
+    ex = ep((0, P.Z)(t, n)),
+    eM = ep((0, _.Z)(t, n)),
+    eD = ep((0, z.Z)(t, n)),
+    eC = ep((0, C.Z)(t), {
       removeIcon: false
     }),
-    eC = eb((0, S.Z)(t, n)),
-    eL = eb((0, O.Z)(t)),
-    eR = eb((0, B.Z)(t), {
+    eL = ep((0, S.Z)(t, n)),
+    eR = ep((0, y.Z)(t)),
+    ek = ep((0, K.Z)(t), {
       iconToAdd: o.T39
     }),
-    ek = eb((0, R.Z)(t, n), {
-      iconToAdd: o.P$X,
+    eG = ep((0, k.Z)(t, n), {
+      iconToAdd: o.STQ,
       removeIcon: false
     }),
-    eG = eb((0, L.Z)(t, n), {
-      iconToAdd: o.P$X,
+    eU = ep((0, L.Z)(t, n), {
+      iconToAdd: o.STQ,
       removeIcon: false
     }),
-    eU = eb((0, Z.Z)(t, n), {
+    eF = ep((0, Z.Z)(t, n), {
       removeIcon: false
     }),
-    eF = eb((0, G.ZP)(t), {
+    ez = ep((0, U.ZP)(t), {
       removeIcon: false
     }),
-    ez = eb((0, G.eH)(t), {
+    eH = ep((0, U.eH)(t), {
       removeIcon: false
     }),
-    eH = eb((0, G.wY)(t), {
+    eB = ep((0, U.wY)(t), {
       removeIcon: false
     }),
-    eB = eb((0, w.Z)({
+    eK = ep((0, A.Z)({
       type: c,
       id: u,
-      name: Y
+      name: $
     }), {
-      iconToAdd: o.r7p,
-      removeIcon: false
+      iconToAdd: o.r7p
     }),
-    eK = eb((0, h.Z)(a, n.getGuildId()), {
-      iconToAdd: o.b7C,
-      removeIcon: false
+    eX = ep((0, h.Z)(a, n.getGuildId()), {
+      iconToAdd: o.b7C
     }),
-    eX = eb((0, b.Z)(et, t, {
-      shouldHideMediaOptions: ec,
+    eV = ep((0, b.Z)(en, t, {
+      shouldHideMediaOptions: eu,
       contentType: null == l ? true : l.contentType,
       originalContentType: null == l ? true : l.originalContentType
     }), {
-      removeIcon: false
+      iconToAdd: o.XBm
     }),
-    eV = eb((0, K.Z)(t, l)),
-    eQ = eb((0, X.Z)(t)),
-    eq = eb((0, V.Z)(l, {
-      shouldHideMediaOptions: ec
+    eQ = ep((0, X.Z)(t, l)),
+    eq = ep((0, V.Z)(t)),
+    eW = ep((0, Q.Z)(l, {
+      shouldHideMediaOptions: eu
     }), {
-      iconToAdd: o.d3s,
-      removeIcon: false
+      iconToAdd: o.d3s
     }),
-    eW = eb((0, p.Z)(null != $ ? $ : ee, en, t, {
-      shouldHideMediaOptions: ec
+    eJ = ep((0, p.Z)(null != ee ? ee : et, er, t, {
+      shouldHideMediaOptions: eu
     }), {
-      removeIcon: false
+      iconToAdd: o.xPt
     }),
-    eJ = eb((0, f.Z)({
+    eY = ep((0, f.Z)({
       id: t.id,
-      label: q.intl.string(q.t.zBoHlf),
+      label: W.intl.string(W.t.zBoHlf),
       shiftId: "".concat(t.channel_id, "-").concat(t.id)
-    }), {
+    })),
+    e$ = ep((0, R.Z)(t, n), {
+      iconToAdd: o.STQ,
       removeIcon: false
     });
-  return eg ? (0, r.jsxs)(o.v2r, {
-    navId: ea,
-    onClose: eo,
-    "aria-label": es,
-    onSelect: ed,
+  return eb ? (0, r.jsxs)(o.v2r, {
+    navId: es,
+    onClose: ea,
+    "aria-label": ec,
+    onSelect: ef,
     children: [(0, r.jsxs)(o.kSQ, {
-      children: ["" === a ? ep : null, ey, eD, eh, ej, eS, eE]
+      children: ["" === a ? eO : null, eh, eC, ej, eS, eE, eP]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eC, ev, eI, e_, eT, eZ, eN, ew, eA, eM, eL, eR]
+      children: [eL, ev, e_, eI, eZ, ew, eA, eN, ex, eD, eR, ek]
     }), (0, r.jsx)(o.kSQ, {
-      children: eO
+      children: em
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eB, eK, eX, eV, eQ, eq]
+      children: [eK, eX, eV, eQ, eq, eW, eJ]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [ek, eG, eU, er && eF, er && ez, eH]
-    }), (0, r.jsx)(o.kSQ, {
-      children: eW
+      children: [e$, eF, ei && ez, ei && eH, eB]
     })]
   }) : (0, r.jsxs)(o.v2r, {
-    navId: ea,
-    onClose: eo,
-    "aria-label": es,
-    onSelect: ed,
+    navId: es,
+    onClose: ea,
+    "aria-label": ec,
+    onSelect: ef,
     children: [(0, r.jsx)(o.kSQ, {
-      children: em
+      children: ey
     }), (0, r.jsx)(o.kSQ, {
       children: ev
     }), (0, r.jsxs)(o.kSQ, {
-      children: ["" === a ? ep : null, ey, eD, eC]
+      children: ["" === a ? eO : null, eh, eC, eL]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eh, ej, eS, eE]
+      children: [ej, eS, eE, eP]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eP, eI, e_, eT, eZ, eN, ew, eA, ex, eM, eL, eR]
+      children: [eT, e_, eI, eZ, ew, eA, eN, ex, eM, eD, eR, ek]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [ek, eG, eU, er && eF, er && ez, eH]
+      children: [eG, eU, eF, ei && ez, ei && eH, eB]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [eB, eK, eX, eV, eQ, eq]
-    }), (0, r.jsx)(o.kSQ, {
-      children: eW
+      children: [eK, eX, eV, eQ, eq, eW]
     }), (0, r.jsx)(o.kSQ, {
       children: eJ
+    }), (0, r.jsx)(o.kSQ, {
+      children: eY
     })]
   })
 }

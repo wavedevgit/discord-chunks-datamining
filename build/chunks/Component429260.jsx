@@ -2,7 +2,7 @@
 /** chunk id: 429260, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => S,
-  eH: () => I,
+  eH: () => T,
   wY: () => P
 });
 var Chunk54381 = require("./54381.js");
@@ -27,9 +27,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk162085 = require("./162085.js");
 
 function S(e) {
-  let t = (0, i.e7)([m.Z], () => m.Z.getGuildId()),
+  let t = (0, i.e7)([O.Z], () => O.Z.getGuildId()),
     n = (0, p.Q_)(t);
-  return (0, v.a4)(e) ? (0, r.jsx)(a.sNh, {
+  return (0, m.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
     label: n ? h.intl.string(h.t.n5EBAJ) : h.intl.string(h.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
@@ -61,14 +61,14 @@ function P(e) {
     n = (0, b.sP)(e);
   return ((0, s.zq)(() => {
     n && (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-      dismissAction: y.L.AUTO_DISMISS
+      dismissAction: v.L.AUTO_DISMISS
     })
   }), n) ? (0, r.jsx)(a.sNh, {
     id: "report-to-mod",
     label: t ? h.intl.string(j.default["8wsdng"]) : h.intl.string(j.default["1D+vqy"]),
     action: () => {
       (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
-        dismissAction: y.L.USER_DISMISS
+        dismissAction: v.L.USER_DISMISS
       }), (0, f.tV)(e)
     },
     icon: (0, r.jsx)(E, {}),
@@ -76,10 +76,10 @@ function P(e) {
   }) : null
 }
 
-function I(e) {
+function T(e) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
-    n = (0, i.e7)([O.default], () => O.default.getCurrentUser());
-  return (0, v.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
+    n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
+  return (0, m.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",
     label: "[STAFF] Test Message Report",
     action: () => (0, f.Jw)(e, "web_message_context_menu"),
