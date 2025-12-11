@@ -187,8 +187,7 @@ function H(e) {
             context: Y
           }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(h.Z, {
             skuId: null == B || null == (t = B.profileEffect) ? true : t.skuId,
-            isHovering: Q,
-            urlQueryString: "dmView"
+            isHovering: Q
           })]
         })
       })

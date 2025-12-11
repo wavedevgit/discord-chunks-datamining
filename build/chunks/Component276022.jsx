@@ -61,7 +61,7 @@ function E(e) {
         section: h.oAB.AUTHORIZED_APPS
       });
       let e = "";
-      null != b ? e = b.name : null != E && (e = E.username), "" !== e && d.J.setState({
+      null != b ? e = b.name : null != E && (e = E.username), "" !== e && d.JJ.setState({
         searchQuery: e
       }), null == v || v()
     }, [b, v, E]);

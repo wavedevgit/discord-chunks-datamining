@@ -178,7 +178,7 @@ class A extends Chunk473749.PureComponent {
       onClick: C,
       ref: exports,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk277170.header,
+        className: o()(Chunk277170.header, this.props.headerClassName),
         children: this.renderHeader()
       }), (0, Chunk54381.jsx)("div", {
         className: Chunk277170.content,

@@ -400,13 +400,14 @@ function A(e) {
         }, "sort-by")
       })
     },
-    children: e => (0, r.jsx)(d.hU, S(_({}, e), {
+    children: e => (0, r.jsx)(d.Button, S(_({}, e), {
       buttonRef: s,
       variant: "secondary",
       icon: d.uVW,
       onClick: () => {
         a(l ? null : "sort")
       },
+      text: C.intl.string(C.t.XvNMNk),
       "aria-label": C.intl.string(C.t.XvNMNk),
       size: "sm"
     }))

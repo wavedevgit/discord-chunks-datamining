@@ -563,7 +563,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.AUTHORIZED_APPS,
         searchableTitles: [eD.intl.string(eD.t["f6kk+r"])],
         label: eD.intl.string(eD.t["f6kk+r"]),
-        element: en.Z,
+        element: en.ZP,
         url: eR.Z5c.SETTINGS("authorized-apps")
       },
       [eN.s6.SESSIONS]: {

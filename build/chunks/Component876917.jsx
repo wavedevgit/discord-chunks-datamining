@@ -53,7 +53,6 @@ let f = e => {
         resetOnHover: true,
         isHovering: n,
         useOpacityOnHover: false,
-        urlQueryString: "ProfileEffectShopPreview",
         delayIntro: _,
         shopPreview: true
       })
