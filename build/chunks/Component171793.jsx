@@ -21,12 +21,12 @@ function h(t) {
     hideFavorites: g = false,
     modalTitle: p = u.intl.string(u.t["0VinIJ"]),
     defaultText: C = u.intl.string(u.t.OrwKgi)
-  } = t, [v, j] = l.useState(null), [k, I] = l.useState(C), S = l.useCallback(t => {
+  } = t, [v, j] = l.useState(null), [k, I] = l.useState(""), S = l.useCallback(t => {
     j(t), null == h || h(t)
   }, [h]), w = l.useCallback(async () => {
     if (null != v) {
       let t = c.Z.getChannelId();
-      null != t && (await o.Z.sendMessage(t, {
+      null != t && ("" !== k && await o.Z.sendMessage(t, {
         content: k,
         tts: false,
         invalidEmojis: [],

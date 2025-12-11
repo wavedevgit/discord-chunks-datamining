@@ -1,16 +1,17 @@
 /** Chunk was on 9172 **/
 /** chunk id: 325906, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  WrappedUnifiedPaymentModal: () => b
+  WrappedUnifiedPaymentModal: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk563132 = require("./563132.jsx"),
   Chunk791785 = require("./791785.jsx"),
+  Chunk733579 = require("./733579.js"),
   Chunk467368 = require("./467368.js");
 
-function s(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,7 +30,7 @@ function s(e) {
   return e
 }
 
-function p(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -41,97 +42,98 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = e => {
+let d = e => {
     let {
       skuId: t,
       applicationId: n,
       transitionState: i,
       returnRef: l,
-      onComplete: p,
+      onComplete: c,
       onClose: u,
       modalOnClose: d,
       analyticsLocations: b,
       renderHeader: y,
-      paymentModalVersion: f = "v2"
+      paymentModalVersion: O = "v2"
     } = e, {
-      paymentModalProps: O
-    } = (0, c.Li)(), j = o.useCallback((e, t) => {
+      paymentModalProps: f
+    } = (0, s.Li)(), j = o.useCallback((e, t) => {
       d(), null != u && u(e, t)
     }, [d, u]);
-    return (0, r.jsx)(a.PaymentModal, s({
+    return (0, r.jsx)(a.PaymentModal, p({
       transitionState: i,
       returnRef: l,
       applicationId: n,
-      onComplete: p,
+      onComplete: c,
       onClose: j,
       hideShadow: true,
       skuId: t,
       renderHeader: y,
       initialPlanId: null,
       analyticsLocations: b,
-      paymentModalVersion: f
-    }, O))
+      paymentModalVersion: O
+    }, f))
   },
-  d = e => {
+  b = e => {
     let {
       skuId: t
     } = e;
-    return (0, r.jsx)(l.PaymentContextProvider, p(s({}, e), {
+    return (0, r.jsx)(l.PaymentContextProvider, u(p({}, e), {
       skuIDs: null != t ? [t] : [],
       children: e.children
     }))
   },
-  b = e => {
+  y = e => {
     let {
       loadId: t,
       skuId: n,
       applicationId: o,
       analyticsLocations: l,
       analyticsSourceLocation: a,
-      giftContextProps: c,
-      flowSpecificOptions: b,
-      onComplete: y,
+      giftContextProps: s,
+      flowSpecificOptions: y,
+      onComplete: O,
       onClose: f,
-      renderModalProps: O,
-      checkoutFlowConfiguration: j,
-      tenantCheckoutFlowConfig: P,
-      renderHeader: h,
-      stepConfigs: m
+      renderModalProps: j,
+      checkoutFlow: P,
+      checkoutFlowConfiguration: h,
+      tenantCheckoutFlowConfig: C,
+      renderHeader: m,
+      stepConfigs: w
     } = e, {
-      purchaseType: C
-    } = j, {
-      CustomPaymentContextProvider: w = d,
-      UnifiedCheckoutContextProvider: S
-    } = P, k = null != c ? i.KB : i.b6;
-    return (0, r.jsx)(w, {
+      purchaseType: S
+    } = h, {
+      CustomPaymentContextProvider: k = b,
+      UnifiedCheckoutContextProvider: g
+    } = C, v = null != s ? i.KB : i.b6;
+    return (0, r.jsx)(k, {
       skuId: n,
       applicationId: o,
       activeSubscription: null,
       loadId: t,
-      stepConfigs: m,
-      purchaseType: C,
+      stepConfigs: w,
+      purchaseType: S,
       excludeSubscriptionPlansBySKU: true,
-      excludeSKUPurchasePreviews: true,
-      children: (0, r.jsx)(k, p(s({}, c), {
-        children: (0, r.jsx)(S, {
+      excludeSKUPurchasePreviews: P === c.G.ORB_CHECKOUT,
+      children: (0, r.jsx)(v, u(p({}, s), {
+        children: (0, r.jsx)(g, {
           skuId: n,
           loadId: t,
           analyticsLocations: l,
           analyticsSourceLocation: a,
-          onComplete: y,
+          onComplete: O,
           onClose: f,
-          renderModalProps: O,
-          flowSpecificOptions: b,
-          children: (0, r.jsx)(u, {
+          renderModalProps: j,
+          flowSpecificOptions: y,
+          children: (0, r.jsx)(d, {
             applicationId: o,
             skuId: n,
-            renderHeader: h,
+            renderHeader: m,
             analyticsLocations: l,
-            onComplete: y,
+            onComplete: O,
             onClose: f,
-            modalOnClose: O.onClose,
-            transitionState: O.transitionState,
-            returnRef: O.returnRef
+            modalOnClose: j.onClose,
+            transitionState: j.transitionState,
+            returnRef: j.returnRef
           })
         })
       }))

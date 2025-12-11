@@ -18,21 +18,21 @@ function g(e) {
     guild: t,
     error: n,
     onClose: g
-  } = e, h = t.id, p = l.useCallback(() => {
+  } = e, h = t.id, p = i.useCallback(() => {
     g(), a.Z.open(h, u.pNK.INVITES)
-  }, [h, g]), v = l.useCallback(e => (0, i.jsx)(s.P3F, {
+  }, [h, g]), v = i.useCallback(e => (0, l.jsx)(s.P3F, {
     className: c.errorLink,
     onClick: p,
-    children: (0, i.jsx)(s.Text, {
+    children: (0, l.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
       children: e
     })
-  }), [p]), I = l.useCallback(e => (0, i.jsx)(s.Anchor, {
+  }), [p]), I = i.useCallback(e => (0, l.jsx)(s.Anchor, {
     href: u.EYA.INVITES_HELP,
     target: "_blank",
-    children: (0, i.jsx)(s.Text, {
+    children: (0, l.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "text-link",
       tag: "span",
@@ -42,7 +42,7 @@ function g(e) {
     inviteListHook: v,
     inviteHelpHook: I
   }) : d.intl.string(d.t["/FxH6G"]) : "message" in n ? n.message : d.intl.string(d.t.eAn6z2);
-  return (0, i.jsx)(s.Text, {
+  return (0, l.jsx)(s.Text, {
     className: c.errorMessage,
     variant: "text-xs/normal",
     color: "text-feedback-critical",

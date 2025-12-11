@@ -1,1 +1,1 @@
-{"id":"156953","type":"experiment","data":{"kind":"guild","id":"2025-08_invite_role_assignment","label":"Invite Role Assignment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Invite Role Assignment","config":{"enabled":true}}]},"fromModule":{"id":"9414"}}
+{"id":"156953","type":"experiment","data":{"kind":"guild","id":"2025-08_invite_role_assignment","label":"Invite Role Assignment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Invite Role Assignment","config":{"enabled":true}}]},"fromModule":{"id":"7654"}}

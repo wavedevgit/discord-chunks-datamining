@@ -153,6 +153,7 @@ class L {
         });
         return t && (this.lastSpoke[e] = Date.now()), this.participantByIndex.set(n.id, A(T({}, n), {
           speaking: t,
+          voiceDb: _.Z.getVoiceVolume(e),
           latched: x(e),
           lastSpoke: this.lastSpoke[e],
           soundsharing: _.Z.isSoundSharing(e)
@@ -218,6 +219,7 @@ class L {
         userId: e,
         checkIsMuted: true
       }),
+      voiceDb: _.Z.getVoiceVolume(e),
       latched: x(e),
       lastSpoke: null != (i = this.lastSpoke[e]) ? i : 0,
       soundsharing: _.Z.isSoundSharing(e),

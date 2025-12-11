@@ -8,7 +8,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function r(e) {
-  let t = (0, i.e7)([l.Z], () => l.Z.can(s.Plq.KICK_MEMBERS, e), [e]),
+  let t = (0, l.e7)([i.Z], () => i.Z.can(s.Plq.KICK_MEMBERS, e), [e]),
     n = !!((null == e ? true : e.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null == e ? true : e.features.has(s.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)));
   return {
     canCreateApplicationBypassInvites: n && t,

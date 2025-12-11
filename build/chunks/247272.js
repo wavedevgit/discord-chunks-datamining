@@ -15,8 +15,8 @@ function s(e) {
     applicationId: r,
     inviteTargetType: a
   } = e;
-  return (0, l._)().then(() => {
-    i.Z.dispatch({
+  return (0, i._)().then(() => {
+    l.Z.dispatch({
       type: "LOAD_INVITE_SUGGESTIONS",
       omitUserIds: null != t ? t : new Set,
       guild: n,
@@ -28,7 +28,7 @@ function s(e) {
 }
 
 function r(e) {
-  i.Z.dispatch({
+  l.Z.dispatch({
     type: "INVITE_SUGGESTIONS_SEARCH",
     query: e
   })

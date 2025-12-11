@@ -172,24 +172,25 @@ function tf(e) {
     ref: t,
     speaking: n,
     latched: i,
-    streaming: s,
-    currentUser: o,
-    status: c,
-    handleClick: d,
-    handleMouseLeave: u,
-    renderNameTag: m,
-    nameplate: p,
-    selectedGuildId: h,
-    transitionAccountPanel: f,
-    avatarDecoration: b,
-    "data-jump-section": v
-  } = e, j = r.useRef(null), C = null != t ? t : j, _ = (0, eY.NZ)({
-    avatarDecoration: b,
+    voiceDb: s = false / 0,
+    streaming: o,
+    currentUser: c,
+    status: d,
+    handleClick: u,
+    handleMouseLeave: m,
+    renderNameTag: p,
+    nameplate: h,
+    selectedGuildId: f,
+    transitionAccountPanel: b,
+    avatarDecoration: v,
+    "data-jump-section": j
+  } = e, C = r.useRef(null), _ = null != t ? t : C, S = (0, eY.NZ)({
+    avatarDecoration: v,
     size: (0, I.y9)(x.EFr.SIZE_32)
-  }), S = (0, q.Z)(), {
-    updateOpenPopoutRef: E,
-    highlightBadge: O,
-    setHighlightBadge: T
+  }), E = (0, q.Z)(), {
+    updateOpenPopoutRef: O,
+    highlightBadge: T,
+    setHighlightBadge: N
   } = function() {
     let e = r.useRef(null),
       t = r.useCallback(t => {
@@ -215,20 +216,20 @@ function tf(e) {
       highlightBadge: i ? n : true,
       setHighlightBadge: a
     }
-  }(), N = (0, er.A)(p);
-  if (null == o) return null;
-  let P = f && h !== tn.I_8 && h !== tn.ME && null != h ? h : true;
+  }(), P = (0, er.A)(h);
+  if (null == c) return null;
+  let w = b && f !== tn.I_8 && f !== tn.ME && null != f ? f : true;
   return (0, a.jsx)(g.Z, {
     object: tn.qAy.AVATAR,
     children: (0, a.jsx)(eb.Z, {
-      user: o,
-      targetElementRef: C,
+      user: c,
+      targetElementRef: _,
       clickTrap: true,
-      preload: () => (0, ex.Z)(o.id, o.getAvatarURL(P, eb.I), {
+      preload: () => (0, ex.Z)(c.id, c.getAvatarURL(w, eb.I), {
         type: "account_popout",
         withMutualGuilds: false,
         withMutualFriends: false,
-        guildId: P
+        guildId: w
       }),
       renderPopout: (e, t) => {
         let {
@@ -236,15 +237,15 @@ function tf(e) {
           setPopoutRef: r
         } = e;
         return (0, a.jsx)(en.Z, {
-          currentUser: o,
-          highlightBadge: O,
+          currentUser: c,
+          highlightBadge: T,
           openedAt: t,
           onClose: () => {
             null == n || n()
           },
           setPopoutRef: r,
-          guildId: P,
-          guildProfileEnabled: f
+          guildId: w,
+          guildProfileEnabled: b
         })
       },
       position: "top",
@@ -254,35 +255,36 @@ function tf(e) {
       fixed: true,
       ignoreModalClicks: true,
       onRequestClose: () => {
-        u(), T(true)
+        m(), N(true)
       },
-      children: e => (E(e), (0, a.jsxs)(x.P3F, td(tc({
-        innerRef: C,
-        style: N
+      children: e => (O(e), (0, a.jsxs)(x.P3F, td(tc({
+        innerRef: _,
+        style: P
       }, e), {
         onClick: t => {
           var n;
-          null == (n = e.onClick) || n.call(e, t), null == d || d(t)
+          null == (n = e.onClick) || n.call(e, t), null == u || u(t)
         },
         "aria-label": tl.intl.string(tl.t["3Uj+2p"]),
-        "data-jump-section": v,
+        "data-jump-section": j,
         className: l()(ts.avatarWrapper, {
-          [ts.plated]: null != p
+          [ts.plated]: null != h
         }),
         children: [(0, a.jsx)(tu, {
           size: x.EFr["SIZE_".concat(32)],
-          src: o.getAvatarURL(f ? h : true, 28, false),
-          avatarDecoration: _,
-          "aria-label": o.username,
-          status: s ? tn.Skl.STREAMING : c,
+          src: c.getAvatarURL(b ? f : true, 28, false),
+          avatarDecoration: S,
+          "aria-label": c.username,
+          status: o ? tn.Skl.STREAMING : d,
           isSpeaking: n,
           isLatched: i,
+          voiceDb: s,
           className: ts.avatar
         }), (0, a.jsx)("div", {
           className: l()(ts.nameTag, {
             [ts.canCopy]: eX.wS
           }),
-          children: m(S)
+          children: p(E)
         })]
       })))
     })
@@ -815,68 +817,69 @@ function tv() {
       userId: require
     }),
     p = (0, Chunk442837.e7)([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPTTLatched()),
-    h = Chunk51144.ZP.useUserTag(exports, {
+    h = (0, Chunk442837.e7)([Chunk606304.Z], () => Chunk606304.Z.getVoiceVolume(require)),
+    f = Chunk51144.ZP.useUserTag(exports, {
       decoration: "never"
     }),
-    f = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
-    b = (0, Chunk442837.e7)([Chunk19780.Z, Chunk592125.Z], () => {
+    b = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.hidePersonalInformation),
+    g = (0, Chunk442837.e7)([Chunk19780.Z, Chunk592125.Z], () => {
       let e = Chunk19780.Z.getChannelId();
       return null != module ? Chunk592125.Z.getChannel(module) : null
     }),
     {
-      mute: g,
-      selfMute: j,
-      suppress: y
-    } = (0, Chunk294629.Z)(Chunk239091),
+      mute: j,
+      selfMute: y,
+      suppress: _
+    } = (0, Chunk294629.Z)(Chunk410575),
     {
-      selfDeaf: _,
-      deaf: S
-    } = (0, Chunk879815.Z)(Chunk239091),
-    E = (0, Chunk442837.e7)([Chunk304761.C], () => {
+      selfDeaf: S,
+      deaf: E
+    } = (0, Chunk879815.Z)(Chunk410575),
+    O = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
-    O = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    I = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
-    D = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
-    Z = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
-    L = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk628581 || Chunk374023.s.isDisallowPopupsSet() || Chunk571250,
-    M = (0, Chunk332473.b)(),
-    U = (0, Chunk442837.e7)([Chunk258609.default], () => null != Chunk258609.default.getAwaitingRemoteSessionInfo()),
-    B = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
-    F = null == exports ? true : exports.avatarDecoration,
-    G = (0, Chunk541638.R)(exports, null != Chunk575175 ? Chunk575175 : true),
-    V = (0, Chunk676742.Z)(Chunk473749 ? Chunk795318 : Chunk522651),
-    W = Chunk5192.ZP.useName(null != Chunk575175 ? Chunk575175 : true, null, exports),
-    q = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
+    I = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+    D = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getSpeakingWhileMuted()),
+    Z = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
+    L = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
+    M = (0, Chunk481060.s9z)(Chunk481060.JQI) || Chunk659580 || Chunk374023.s.isDisallowPopupsSet() || Chunk628581,
+    U = (0, Chunk332473.b)(),
+    B = (0, Chunk442837.e7)([Chunk258609.default], () => null != Chunk258609.default.getAwaitingRemoteSessionInfo()),
+    F = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
+    G = null == exports ? true : exports.avatarDecoration,
+    V = (0, Chunk541638.R)(exports, null != Chunk522651 ? Chunk522651 : true),
+    W = (0, Chunk676742.Z)(Chunk473749 ? Chunk427217 : Chunk795318),
+    q = Chunk5192.ZP.useName(null != Chunk522651 ? Chunk522651 : true, null, exports),
+    K = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
     {
-      voiceActivityStatusEnabled: K
+      voiceActivityStatusEnabled: Q
     } = (0, Chunk468363.U)({
       location: "Account"
     }),
-    [Q, Y] = (0, Chunk291533.G)(null != Chunk575175 ? Chunk575175 : null),
-    [J, ee] = (0, Chunk812055.b)(),
-    et = Chunk594928.JH.useExperiment({
+    [Y, J] = (0, Chunk291533.G)(null != Chunk522651 ? Chunk522651 : null),
+    [ee, et] = (0, Chunk812055.b)(),
+    en = Chunk594928.JH.useExperiment({
       location: "Account"
     }).enabled,
-    en = (0, Chunk494424.c)(exports, "Account"),
-    er = Chunk299886.H.useConfig({
+    er = (0, Chunk494424.c)(exports, "Account"),
+    ei = Chunk299886.H.useConfig({
       location: "Account"
     }).enabled,
     {
-      analyticsLocations: ei
+      analyticsLocations: el
     } = (0, Chunk906732.ZP)(Chunk100527.Z.ACCOUNT),
-    el = (0, Chunk850020.K)({
+    eo = (0, Chunk850020.K)({
       user: exports,
-      guildId: Chunk473749 && null != Chunk575175 ? Chunk575175 : true
+      guildId: Chunk473749 && null != Chunk522651 ? Chunk522651 : true
     }),
     {
-      isQuestBarEmpty: eo,
-      hasLoadedQuestBar: ed
+      isQuestBarEmpty: ed,
+      hasLoadedQuestBar: em
     } = (0, Chunk659302.Ws)({
       location: Chunk324805.dr.CONFLICT_CHECKS
     }),
-    em = (0, Chunk442837.e7)([Chunk768419.Z, Chunk594174.default, Chunk831506.Z], () => {
+    ex = (0, Chunk442837.e7)([Chunk768419.Z, Chunk594174.default, Chunk831506.Z], () => {
       let e, t = Chunk768419.Z.getSyncingWith(),
         n = Chunk768419.Z.getActivity(),
         a = [];
@@ -886,63 +889,64 @@ function tv() {
       }
       return Chunk54381.length > 1
     }),
-    ex = (0, Chunk172416.Un)({
+    eb = (0, Chunk172416.Un)({
       location: "AccountConnected"
     }),
-    eb = {
+    eg = {
       avatar: [],
       settings: []
     };
-  !Chunk659580 && (Chunk72897 && Chunk670188.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk78933 && Chunk670188.avatar.push(Chunk704215.z.TENURE_BADGE_CHURN_REMINDER), Chunk184301 && Chunk670188.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK), Chunk379839 && Chunk670188.settings.push(Chunk704215.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
+  !Chunk855844 && (Chunk78933 && Chunk620799.avatar.push(Chunk704215.z.DISPLAY_NAME_STYLES_COACHMARK), Chunk379839 && Chunk620799.avatar.push(Chunk704215.z.TENURE_BADGE_CHURN_REMINDER), Chunk670188 && Chunk620799.avatar.push(Chunk704215.z.WIDGETS_RTC_UPSELL_COACHMARK), Chunk359135 && Chunk620799.settings.push(Chunk704215.z.NITRO_PRIVACY_PERK_BETA_COACHMARK));
   let {
-    shouldShowTooltip: eg,
-    dismissTooltip: ev
+    shouldShowTooltip: ev,
+    dismissTooltip: ej
   } = tg(Chunk65154.h7.AUDIO_INPUT), {
-    shouldShowTooltip: ej,
-    dismissTooltip: ey
+    shouldShowTooltip: ey,
+    dismissTooltip: eS
   } = tg(Chunk65154.h7.AUDIO_OUTPUT);
   return (0, Chunk54381.jsx)(Chunk906732.Gt, {
-    value: Chunk359135,
+    value: Chunk516817,
     children: (0, Chunk54381.jsx)(tx, {
       currentUser: exports,
-      username: Chunk473749 ? Chunk243778 : Chunk386725,
+      username: Chunk473749 ? Chunk386725 : Chunk821795,
       transitionAccountPanel: Chunk473749,
       activities: Chunk120356,
       applicationStream: Chunk374470,
-      voiceChannel: Chunk239091,
-      dismissibleContents: Chunk670188,
-      visibleRecurringAvatarDc: Chunk287647,
-      markRecurringAvatarDcAsDismissed: Chunk892567,
-      visibleRecurringDoNotDisturbReminderPopoverDc: Chunk53891,
-      markRecurringDoNotDisturbReminderPopoverDcAsDismissed: Chunk427347,
-      userTag: Chunk789639,
-      hidePrivateData: Chunk930295,
-      occluded: Chunk659580,
-      premiumSubscription: Chunk570928,
-      selfDeaf: Chunk326255,
-      selfMute: Chunk493773,
-      serverDeaf: Chunk771173,
-      serverMute: Chunk410575,
+      voiceChannel: Chunk410575,
+      dismissibleContents: Chunk620799,
+      visibleRecurringAvatarDc: Chunk892567,
+      markRecurringAvatarDcAsDismissed: Chunk53891,
+      visibleRecurringDoNotDisturbReminderPopoverDc: Chunk427347,
+      markRecurringDoNotDisturbReminderPopoverDcAsDismissed: Chunk72897,
+      userTag: Chunk930295,
+      hidePrivateData: Chunk239091,
+      occluded: Chunk855844,
+      premiumSubscription: Chunk1585,
+      selfDeaf: Chunk771173,
+      selfMute: Chunk980591,
+      serverDeaf: Chunk963056,
+      serverMute: Chunk493773,
       speaking: Chunk846519,
-      speakingWhileMuted: Chunk1585,
-      latched: Chunk400354 && null != Chunk239091,
+      voiceDb: Chunk789639,
+      speakingWhileMuted: Chunk571250,
+      latched: Chunk400354 && null != Chunk410575,
       status: Chunk392711,
       streaming: l,
-      suppress: Chunk980591,
-      webBuildOverride: Chunk963056,
-      awaitingRemote: Chunk55311,
-      isEligibleForPomelo: Chunk855844,
-      voiceActivityStatusEnabled: Chunk821795,
-      nameplate: Chunk516817,
-      selectedGuildId: Chunk575175,
-      avatarDecoration: Chunk427217,
-      isQuestBarEmpty: Chunk963590,
-      hasLoadedQuestBar: Chunk562705,
-      isListenAlongVisible: Chunk375720,
-      shouldShowInputDeviceChangedTooltip: Chunk620799,
-      shouldShowOutputDeviceChangedTooltip: Chunk846071,
-      dismissInputDeviceChangedTooltip: Chunk313789,
-      dismissOutputDeviceChangedTooltip: Chunk518596
+      suppress: Chunk326255,
+      webBuildOverride: Chunk570928,
+      awaitingRemote: Chunk575175,
+      isEligibleForPomelo: Chunk55311,
+      voiceActivityStatusEnabled: Chunk287647,
+      nameplate: Chunk963590,
+      selectedGuildId: Chunk522651,
+      avatarDecoration: Chunk243778,
+      isQuestBarEmpty: Chunk562705,
+      hasLoadedQuestBar: Chunk375720,
+      isListenAlongVisible: Chunk184301,
+      shouldShowInputDeviceChangedTooltip: Chunk313789,
+      shouldShowOutputDeviceChangedTooltip: Chunk518596,
+      dismissInputDeviceChangedTooltip: Chunk846071,
+      dismissOutputDeviceChangedTooltip: Chunk875527
     })
   })
 }

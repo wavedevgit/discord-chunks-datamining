@@ -2,7 +2,7 @@
 /** chunk id: 603236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => y,
-  S: () => f
+  S: () => x
 }), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,19 +21,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk444942 = require("./444942.js");
-let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
+let x = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     hideValue: Chunk246946.Z.hideInstantInvites
   }))(e => {
     let {
       value: t,
       autoFocus: n,
-      hideValue: l,
+      hideValue: i,
       onCopy: s,
       disabled: r
     } = e;
-    return (0, i.jsx)(d.Z, {
+    return (0, l.jsx)(d.Z, {
       value: t,
-      hideMessage: l ? x.intl.string(x.t["6HzNgZ"]) : null,
+      hideMessage: i ? S.intl.string(S.t["6HzNgZ"]) : null,
       buttonColor: o.zx.Colors.BRAND,
       onCopy: s,
       autoFocus: n,
@@ -51,56 +51,56 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       setInviteFlags: y,
       copyValue: E,
       changePage: _,
-      inviteChannel: C,
-      source: T,
-      code: b,
-      guildScheduledEvent: N,
-      disabled: A,
-      application: P
+      inviteChannel: b,
+      source: C,
+      code: T,
+      guildScheduledEvent: A,
+      disabled: N,
+      application: M
     } = e, {
-      maxAge: M,
+      maxAge: P,
       maxUses: Z,
-      networkError: w,
-      showVanityURL: j,
-      flags: O
-    } = d, V = l.useCallback(() => {
+      networkError: j,
+      showVanityURL: w,
+      flags: R
+    } = d, O = i.useCallback(() => {
       h.default.track(m.rMx.COPY_INSTANT_INVITE, {
         server: c.Z.getGuildId(),
-        channel: null == C ? true : C.id,
-        channel_type: null == C ? true : C.type,
-        location: T,
-        code: b,
-        guild_scheduled_event_id: null == N ? true : N.id,
-        application_id: null == P ? true : P.id
+        channel: null == b ? true : b.id,
+        channel_type: null == b ? true : b.type,
+        location: C,
+        code: T,
+        guild_scheduled_event_id: null == A ? true : A.id,
+        application_id: null == M ? true : M.id
       })
-    }, [null == P ? true : P.id, C, T, b, N]);
-    return (0, i.jsxs)(u.Kqy, {
+    }, [null == M ? true : M.id, b, C, T, A]);
+    return (0, l.jsxs)(u.Kqy, {
       gap: 16,
-      children: [(0, i.jsx)(f, {
+      children: [(0, l.jsx)(x, {
         value: E,
         autoFocus: a,
-        onCopy: V,
-        disabled: A
-      }), g && (0, i.jsx)(u.rsf, {
-        checked: (0, r.yE)(O, s.$.IS_APPLICATION_BYPASS),
-        onChange: e => y((0, r.mB)(O, s.$.IS_APPLICATION_BYPASS, e)),
-        disabled: A,
-        label: x.intl.string(x.t["1i1bUl"]),
-        description: x.intl.string(x.t["jvd/LF"])
-      }), n || j ? null : (0, i.jsxs)(u.Text, {
+        onCopy: O,
+        disabled: N
+      }), g && (0, l.jsx)(u.rsf, {
+        checked: (0, r.yE)(R, s.$.IS_APPLICATION_BYPASS),
+        onChange: e => y((0, r.mB)(R, s.$.IS_APPLICATION_BYPASS, e)),
+        disabled: N,
+        label: S.intl.string(S.t["1i1bUl"]),
+        description: S.intl.string(S.t["jvd/LF"])
+      }), n || w ? null : (0, l.jsxs)(u.Text, {
         variant: "text-xs/normal",
-        className: S.footerText,
-        children: [(0, p.Vg)(M, Z), " ", a ? (0, i.jsx)(u.Anchor, {
+        className: f.footerText,
+        children: [(0, p.Vg)(P, Z), " ", a ? (0, l.jsx)(u.Anchor, {
           onClick: () => _(I.RV.SETTINGS),
-          children: x.intl.string(x.t["VNe8P/"])
+          children: S.intl.string(S.t["VNe8P/"])
         }) : null]
-      }), !n && a && j ? (0, i.jsxs)(u.Text, {
+      }), !n && a && w ? (0, l.jsxs)(u.Text, {
         variant: "text-xs/normal",
-        className: S.footerText,
-        children: [x.intl.string(x.t["0M2U95"]), " "]
-      }) : null, null != w ? (0, i.jsx)(v.W, {
+        className: f.footerText,
+        children: [S.intl.string(S.t["0M2U95"]), " "]
+      }) : null, null != j ? (0, l.jsx)(v.W, {
         guild: t,
-        error: w,
+        error: j,
         onClose: o
       }) : null]
     })
