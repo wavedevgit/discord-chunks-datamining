@@ -24,19 +24,19 @@ let v = e => {
     message: t
   } = e, n = (0, o.ZP)(t), v = (0, i.e7)([g.Z], () => g.Z.getChannel(t.channel_id)), _ = l.useMemo(() => (0, s.Z)(t), [t]), {
     content: j
-  } = (0, p.Z)(_, {
+  } = (0, b.Z)(_, {
     hideSimpleEmbedContent: false
-  }), y = b.jU.useSetting(), Z = l.useCallback(() => {
+  }), y = p.jU.useSetting(), O = l.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: n
     } = (0, m.f)(t, j, false, false, "", {
-      leadingIconClass: h.attachmentIcon,
-      trailingIconClass: h.attachmentIcon,
+      leadingIconClass: x.attachmentIcon,
+      trailingIconClass: x.attachmentIcon,
       iconSize: f.WW
     });
     return (0, r.jsxs)("div", {
-      className: h.contentContainer,
+      className: x.contentContainer,
       children: [e, (0, r.jsx)(c.ZP, {
         message: t,
         content: j,
@@ -45,15 +45,15 @@ let v = e => {
     })
   }, [t, j, y]);
   return null == v ? null : (0, r.jsxs)("div", {
-    className: h.container,
+    className: x.container,
     children: [(0, r.jsx)(a.Heading, {
-      className: h.header,
+      className: x.header,
       variant: "heading-sm/semibold",
-      children: x.intl.string(x.t.iouM3a)
+      children: h.intl.string(h.t.iouM3a)
     }), (0, r.jsx)(a.Ttm, {
-      className: h.messagePreviewContainer,
+      className: x.messagePreviewContainer,
       children: (0, r.jsx)(d.Z, {
-        childrenMessageContent: Z(),
+        childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {
           message: t,
           channel: v,

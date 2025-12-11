@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 371467, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ej
+  Z: () => eC
 }), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./290780.js");
 var i, Chunk512722 = require("./512722.js"),
   a = require.n(Chunk512722),
@@ -204,7 +204,7 @@ function ev() {
     i = false;
   for (let [n, r] of Object.entries(module)) i = i || function(e, t) {
     var n;
-    if (!j.Z.isFriend(e)) returnfalse;
+    if (!C.Z.isFriend(e)) returnfalse;
     let i = t.gameId;
     if (null == i) returnfalse;
     let r = eO(e);
@@ -213,7 +213,7 @@ function ev() {
         let n = (null == (t = e.timestamps) ? true : t.start) != null ? e.timestamps.start : e.created_at;
         return null != n && Date.now() - n < eh
       }(r)) returnfalse;
-    let a = C.Z.getVoiceChannelId(),
+    let a = j.Z.getVoiceChannelId(),
       l = null == (n = w.Z.getDiscoverableVoiceStateForUser(e)) ? true : n.channelId;
     if (null != a && null != l && a === l) returnfalse;
     let o = (0, z.pL)();
@@ -296,7 +296,7 @@ class eI extends(i = Chunk442837.ZP.Store) {
   }
 }
 $(eI, "displayName", "OverlayNotificationsStore");
-let ej = new eI(Chunk570140.Z, {
+let eC = new eI(Chunk570140.Z, {
   OVERLAY_UPDATE_NOTIFICATION_STATUS: function(e) {
     let {
       notificationId: t,
@@ -456,7 +456,7 @@ let ej = new eI(Chunk570140.Z, {
       voiceStates: t
     } = e;
     if (R.Z.isNotificationDisabled(X.n0.StreamWatchNudge)) returnfalse;
-    let n = C.Z.getVoiceChannelId(),
+    let n = j.Z.getVoiceChannelId(),
       i = y.default.getId(),
       r = I.Z.getMediaSessionId();
     if (null != n && null != r)

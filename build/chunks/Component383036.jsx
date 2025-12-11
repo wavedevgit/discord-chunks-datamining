@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -62,15 +62,15 @@ let f = e => {
       j = x || !b && v.size > 0,
       [y, C] = Chunk473749.useState(""),
       [_, S] = Chunk473749.useState(null),
-      [E, O] = Chunk473749.useState(null);
+      [E, T] = Chunk473749.useState(null);
     return (Chunk473749.useEffect(() => {
       if ("" === y.trim() || !j) {
-        S(null), O(null);
+        S(null), T(null);
         return
       }
       let e = Chunk597688.Z.getProduct(y),
         t = Chunk597688.Z.getCategoryForProduct(y);
-      null != module && null != exports ? (S(module), O(exports)) : (S(null), O(null))
+      null != module && null != exports ? (S(module), T(exports)) : (S(null), T(null))
     }, [y, j]), b) ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."

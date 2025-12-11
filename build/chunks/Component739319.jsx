@@ -23,7 +23,7 @@ function m(e) {
         is_localized: m
       }
     }
-  } = e, [p, b] = l.useState(false), g = l.useRef(o.Z.reactParserFor(o.Z.defaultRules));
+  } = e, [b, p] = l.useState(false), g = l.useRef(o.Z.reactParserFor(o.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(s.Heading, {
@@ -38,7 +38,7 @@ function m(e) {
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: a()(u.smsNumberContainer, {
-          [u.copied]: p
+          [u.copied]: b
         }),
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/normal",
@@ -51,9 +51,9 @@ function m(e) {
           children: (0, r.jsx)(s.Button, {
             variant: "secondary",
             size: "sm",
-            text: p ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
+            text: b ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
             onClick: () => {
-              (0, d.JG)(i, () => b(true))
+              (0, d.JG)(i, () => p(true))
             }
           })
         })]

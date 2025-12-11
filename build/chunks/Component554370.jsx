@@ -155,9 +155,9 @@ function et() {
 
 function en(e) {
   let t = z.Z.isInputLocked(M.Z.getTargetPID());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? j.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: true
-  }) : "keydown" === e.type.toLowerCase() && j.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: false
   }))
 }
@@ -174,7 +174,7 @@ function er(e) {
   } = e, n = (0, F.Z)(), a = (0, o.e7)([M.Z], () => M.Z.getTargetPID()), {
     locked: u,
     focused: m,
-    incompatibleApp: C,
+    incompatibleApp: j,
     hasZeroSizeDimension: N,
     keybind: P
   } = (0, o.cj)([M.Z, x.default, I.Z, S.ZP, z.Z], () => {
@@ -246,7 +246,7 @@ function er(e) {
   }), (0, f.zq)(() => {
     null != V.current && (clearTimeout(V.current), V.current = null)
   }), r.useEffect(() => {
-    if (j.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
       }), u) return (0, s.closeAllModalsInContext)(c.u1M), n.addEventListener("contextmenu", J, false), () => {
       n.removeEventListener("contextmenu", J, false)
@@ -254,7 +254,7 @@ function er(e) {
     n.removeEventListener("contextmenu", J, false)
   }, [u, n]), (0, i.jsx)(p.Gt, {
     value: D,
-    children: N || C ? null : (0, i.jsxs)("div", {
+    children: N || j ? null : (0, i.jsxs)("div", {
       id: "overlay-container",
       className: Q.overlay,
       children: [!t && X, (0, i.jsx)($, {

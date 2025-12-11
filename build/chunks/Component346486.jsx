@@ -10,7 +10,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,16 +36,16 @@ class u extends(r = Chunk473749.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, i = [e.days, e.hours, e.minutes, e.seconds], l = [d.intl.string(d.t["6m/6nM"]), d.intl.string(d.t.n7dksO), d.intl.string(d.t["1LyF1h"]), d.intl.string(d.t.QJyuxY)];
-    if (0 === e.days) i.shift();
+    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [s.intl.string(s.t["6m/6nM"]), s.intl.string(s.t.n7dksO), s.intl.string(s.t["1LyF1h"]), s.intl.string(s.t.QJyuxY)];
+    if (0 === e.days) l.shift();
     else if (!t) {
-      let e = i.shift();
-      i[0] += 24 * e
+      let e = l.shift();
+      l[0] += 24 * e
     }
-    let c = o()(i).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, a.jsxs)("span", {
-      children: [e, n ? l[i.length - t - 1] : null]
+    let c = o()(l).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
+      children: [e, n ? a[l.length - t - 1] : null]
     }, t)]).flatten().value();
-    return (0, a.jsx)("span", {
+    return (0, i.jsx)("span", {
       className: r,
       children: c
     })
@@ -62,14 +62,14 @@ class u extends(r = Chunk473749.PureComponent) {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn8),
       children: "∞"
     });
-    let i = (0, Chunk55935.TD)(Date.now(), module, r);
+    let l = (0, Chunk55935.TD)(Date.now(), module, r);
     return null != exports ? exports(Chunk473749, this.defaultRender.bind(this, Chunk473749)) : this.defaultRender(Chunk473749)
   }
   constructor(...e) {
-    super(...e), s(this, "_interval", true)
+    super(...e), d(this, "_interval", true)
   }
 }
-s(u, "defaultProps", {
+d(u, "defaultProps", {
   showDays: true,
   showUnits: false,
   stopAtOneSec: false,

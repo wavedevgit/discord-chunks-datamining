@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 69439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -37,7 +37,7 @@ let E = [{
   }
 }];
 
-function O(e) {
+function T(e) {
   let t, n, {
     value: r
   } = e;
@@ -57,7 +57,7 @@ function O(e) {
   })
 }
 
-function T(e) {
+function O(e) {
   if (0 === e.length) return null;
   switch (e[0].value) {
     case C.cd.DESKTOP:
@@ -214,8 +214,8 @@ function N(e) {
     isSelected: () => false,
     options: E,
     placeholder: _.intl.string(_.t.drVw4T),
-    renderOptionLabel: O,
-    renderOptionValue: T,
+    renderOptionLabel: T,
+    renderOptionValue: O,
     select: es,
     serialize: e => {
       switch (e) {
@@ -324,8 +324,8 @@ function N(e) {
         },
         options: E,
         placeholder: _.intl.string(_.t.drVw4T),
-        renderOptionLabel: O,
-        renderOptionValue: T,
+        renderOptionLabel: T,
+        renderOptionValue: O,
         select: es,
         serialize: e => {
           switch (e) {

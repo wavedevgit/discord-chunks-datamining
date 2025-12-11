@@ -114,7 +114,7 @@ function X(e) {
             var t;
             let e = await g.Z.getOrEnsurePrivateChannel(c.id),
               i = null != (t = A.Z.getChannel(e)) ? t : null;
-            l()(null != i, "Send channel must be defined"), (0, Z.uL)(F.Z5c.CHANNEL(i.guild_id, i.id)), (0, C.i)(F.IlC.OVERLAY, true), true === n.extra.fake_inventory_item ? await (0, I.k)({
+            l()(null != i, "Send channel must be defined"), (0, Z.uL)(F.Z5c.CHANNEL(i.guild_id, i.id)), (0, j.i)(F.IlC.OVERLAY, true), true === n.extra.fake_inventory_item ? await (0, I.k)({
               channel: i,
               content: B.intl.formatToPlainString(B.t.UVBA9g, {
                 gameName: n.extra.game_name
@@ -149,18 +149,18 @@ function X(e) {
       if (null == c) return;
       let t = await g.Z.getOrEnsurePrivateChannel(c.id),
         n = null != (e = A.Z.getChannel(t)) ? e : null;
-      l()(null != n, "Send channel must be defined"), (0, Z.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, C.i)(F.IlC.OVERLAY, true), (0, W.Ws)(F.Odu.ACTIVITY, {
+      l()(null != n, "Send channel must be defined"), (0, Z.uL)(F.Z5c.CHANNEL(n.guild_id, n.id)), (0, j.i)(F.IlC.OVERLAY, true), (0, W.Ws)(F.Odu.ACTIVITY, {
         type: W.Qu.REDIRECT,
         value: W.bk.CHAT,
         userId: c.id
       })
-    }, j = E ? B.intl.string(B.t["3fRySx"]) : B.intl.string(B.t.XHxDIV);
+    }, C = E ? B.intl.string(B.t["3fRySx"]) : B.intl.string(B.t.XHxDIV);
   return t = "sent" === u ? y ? h.kBi : h.kSu : E ? h.ejJ : h.Uuj, (0, i.jsx)(f.u, {
-    text: j,
-    "aria-label": j,
+    text: C,
+    "aria-label": C,
     children: (0, i.jsx)(h.hU, {
       icon: t,
-      "aria-label": j,
+      "aria-label": C,
       loading: "sending" === u,
       onClick: y ? x : S,
       variant: "subtle" === s ? "icon-only" : "secondary",
@@ -325,7 +325,7 @@ function et(e) {
     gamingId: t,
     maxUserShowCount: n,
     userAffinityThresholdV2: i = .0029
-  } = e, a = (0, j.Z)(t);
+  } = e, a = (0, C.Z)(t);
   (0, O.ZP)(() => {
     (0, N._)()
   });
@@ -439,7 +439,7 @@ function ei(e) {
 function er(e) {
   let {
     locked: t
-  } = e, n = (0, G.II)(), r = null == n ? true : n.id, a = null == n ? true : n.altId, l = (0, j.Z)(r), o = (0, d.e7)([L.default], () => L.default.getCurrentUser()), s = null != a ? a : r, c = (0, d.e7)([k.Z], () => null == s ? null : k.Z.getApplicationActivity(s), [s]);
+  } = e, n = (0, G.II)(), r = null == n ? true : n.id, a = null == n ? true : n.altId, l = (0, C.Z)(r), o = (0, d.e7)([L.default], () => L.default.getCurrentUser()), s = null != a ? a : r, c = (0, d.e7)([k.Z], () => null == s ? null : k.Z.getApplicationActivity(s), [s]);
   (0, O.ZP)(() => (_.L(), () => _.v()));
   let u = et({
     gamingId: s,

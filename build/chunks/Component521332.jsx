@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk427572 = require("./427572.js");
 
-function h(e) {
+function x(e) {
   let {
     title: t,
     description: n,
@@ -27,14 +27,14 @@ function h(e) {
     trackSettingsUpsellsAction: a
   } = e, [o, c] = l.useState(false);
   return (0, s.ZP)(() => {
-    a(b.M4.SETTINGS_UPSELLS_VIEWED)
+    a(p.M4.SETTINGS_UPSELLS_VIEWED)
   }), (0, r.jsx)(d.JZ, {
     title: t,
     description: n,
     buttonText: o ? f.intl.string(f.t["h+WsPb"]) : f.intl.string(f.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
-      i(), c(true), a(b.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
+      i(), c(true), a(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
@@ -47,22 +47,22 @@ function v(e) {
     reportId: s,
     reportType: d,
     reportSubType: v
-  } = e, _ = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, p.jc)(t, null == _ ? true : _.type), y = (0, b.i_)(d, v, s);
+  } = e, _ = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, b.jc)(t, null == _ ? true : _.type), y = (0, p.i_)(d, v, s);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
-    className: x.container,
+    className: h.container,
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
-      className: x.header,
+      className: h.header,
       children: f.intl.string(f.t["1yxTIJ"])
     }), (0, r.jsx)("div", {
-      className: x.upsellsContainer,
+      className: h.upsellsContainer,
       children: j.map((e, n) => {
         let {
           getTitle: l,
           getDescription: i,
           onApply: a
         } = e;
-        return (0, r.jsx)(h, {
+        return (0, r.jsx)(x, {
           title: l(),
           description: i(),
           onButtonClick: a,
@@ -78,7 +78,7 @@ function v(e) {
           report_id: s,
           report_type: d.name,
           report_subtype: v,
-          action: b.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
+          action: p.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })
       }
     })]

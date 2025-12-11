@@ -20,19 +20,18 @@ let d = e => {
     }, [d]);
     let m = t.name,
       {
-        title: p,
-        options: b
+        title: b,
+        options: p
       } = t.data,
       g = l.useCallback(e => {
         null != e && (u(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
-      className: o.marginBottom8,
-      children: [null != p && (0, r.jsx)("div", {
+      children: [null != b && (0, r.jsx)("div", {
         className: o.marginBottom8,
         children: (0, r.jsxs)(a.Text, {
           variant: "text-sm/bold",
-          children: [p, t.should_submit_data && (0, r.jsx)("span", {
+          children: [b, t.should_submit_data && (0, r.jsx)("span", {
             className: s.required,
             children: "*"
           })]
@@ -40,7 +39,7 @@ let d = e => {
       }), (0, r.jsx)(i.y6, {
         value: c,
         onChange: g,
-        options: b
+        options: p
       })]
     }, m)
   },

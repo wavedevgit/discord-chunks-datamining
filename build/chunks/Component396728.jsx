@@ -1,4 +1,4 @@
-/** Chunk was on 23242 **/
+/** Chunk was on 23736 **/
 /** chunk id: 396728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -12,43 +12,43 @@ let o = Chunk473749.memo(function(e) {
   let {
     user: t,
     nameplate: n,
-    isHighlighted: l,
+    isHighlighted: r,
     isPurchased: o,
-    size: u = "default"
-  } = e, c = "small" === u ? 62 : 94, d = "small" === u ? 72 : 110;
-  return (0, r.jsx)("div", {
+    size: c = "default"
+  } = e, d = "small" === c ? 62 : 94, u = "small" === c ? 72 : 110;
+  return (0, a.jsx)("div", {
     className: s.nameplatePreviewContainer,
-    children: (0, r.jsxs)("div", {
+    children: (0, a.jsxs)("div", {
       className: s.nameplatePreviewList,
-      children: [(0, r.jsx)(i.G, {
-        showStatus: true,
-        width: c,
-        opacity: .7,
-        size: u
-      }), (0, r.jsx)(i.G, {
+      children: [(0, a.jsx)(i.G, {
         showStatus: true,
         width: d,
+        opacity: .7,
+        size: c
+      }), (0, a.jsx)(i.G, {
+        showStatus: true,
+        width: u,
         opacity: .85,
-        size: u
-      }), (0, r.jsx)(a.Z, {
+        size: c
+      }), (0, a.jsx)(l.Z, {
         user: t,
         nameplate: n,
         className: s.nameplatePreviewSampleItem,
-        isHighlighted: l,
-        showPlaceholderUser: !l,
+        isHighlighted: r,
+        showPlaceholderUser: !r,
         showStatus: true,
         isPurchased: o,
-        nameplatePreviewSize: "small" === u ? "small" : "default"
-      }), (0, r.jsx)(i.G, {
+        nameplatePreviewSize: "small" === c ? "small" : "default"
+      }), (0, a.jsx)(i.G, {
+        showStatus: true,
+        width: u,
+        opacity: .85,
+        size: c
+      }), (0, a.jsx)(i.G, {
         showStatus: true,
         width: d,
-        opacity: .85,
-        size: u
-      }), (0, r.jsx)(i.G, {
-        showStatus: true,
-        width: c,
         opacity: .7,
-        size: u
+        size: c
       })]
     })
   })

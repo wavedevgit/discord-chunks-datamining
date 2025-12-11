@@ -184,7 +184,7 @@ class R extends Chunk473749.PureComponent {
     let {
       transitionTo: i
     } = this.props, s = this.getErrorMessage(e);
-    return (0, r.jsx)(w, {
+    return (0, r.jsx)(D, {
       sku: n,
       giftCodeCode: e.code,
       transitionTo: i,
@@ -318,7 +318,7 @@ let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
       nativeAppState: m.Z.getState(t)
     }
   })(R),
-  w = e => {
+  D = e => {
     let {
       sku: t,
       children: n,

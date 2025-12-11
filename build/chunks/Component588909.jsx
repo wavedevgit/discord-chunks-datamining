@@ -69,7 +69,7 @@ function P(e) {
     game: t
   } = e, n = (0, f.q)(t.id);
   return null == n ? null : (0, i.jsx)(h.f, {
-    src: n.getIconURL(C.Si.LARGE),
+    src: n.getIconURL(j.Si.LARGE),
     size: 40
   })
 }
@@ -84,11 +84,11 @@ function A(e, t) {
   } = (0, S.Rg)(x.n0.WelcomeNudge, {
     notif_type: x.n0.WelcomeNudge,
     secondary_notif_types: t.map(e => x.nc[e.type])
-  }), C = {}, A = [], k = [];
+  }), j = {}, A = [], k = [];
   for (let o of t) switch (o.type) {
     case x.nc.WELCOME: {
       let t = (null == e ? true : e.altId) != null ? m.Z.getApplicationActivity(e.altId) : (null == e ? true : e.id) != null ? m.Z.getApplicationActivity(e.id) : null;
-      null != t && (0, d.Z)(t, I.xjy.JOIN) && (C.cancelText = _.intl.string(_.t["6F9ivu"]), C.onCancelClick = (e, n) => {
+      null != t && (0, d.Z)(t, I.xjy.JOIN) && (j.cancelText = _.intl.string(_.t["6F9ivu"]), j.onCancelClick = (e, n) => {
         h("unlock"), u.Z.updateNotificationStatus(n), u.Z.setInputLocked(false, v.Z.getTargetPID()), (0, c.h7)(t, false, I.IlC.POPOUT)
       }), r && k.push((0, i.jsx)("div", {
         className: N.keybindShortcutReminder,
@@ -131,7 +131,7 @@ function A(e, t) {
             analyticsLocation: I.Sbl.OVERLAY_NUDGE
           }))
         }, {
-          contextKey: j.u1
+          contextKey: C.u1
         })
       };
       r ? k.push((0, i.jsx)(l.zxk, {
@@ -139,13 +139,13 @@ function A(e, t) {
         variant: "active",
         onClick: e => c(e),
         text: a
-      })) : (C.confirmText = a, C.onConfirmClick = (e, t) => {
+      })) : (j.confirmText = a, j.onConfirmClick = (e, t) => {
         u.Z.updateNotificationStatus(t), c(e)
       });
       break
     }
     case x.nc.CONTENT_INVENTORY: {
-      C.onNotificationShow = () => {
+      j.onNotificationShow = () => {
         u.Z.track(I.rMx.OVERLAY_GAME_INVITE_NOTIFICATION_SHOWN, {
           user_ids: o.entries.map(e => e.author_id),
           entry_ids: o.entries.map(e => e.id)
@@ -160,13 +160,13 @@ function A(e, t) {
           [N.containerFaint]: r
         })
       });
-      r ? A.push(t) : C.renderFooter = t
+      r ? A.push(t) : j.renderFooter = t
     }
   }
   k.length > 0 && A.unshift(() => (0, i.jsx)("div", {
     className: a()(N.container, N.containerFaint, N.keybindStreamContainer),
     children: k
-  })), null == C.renderFooter && A.length > 0 && (C.renderFooter = (e, t, n) => (0, i.jsx)("div", {
+  })), null == j.renderFooter && A.length > 0 && (j.renderFooter = (e, t, n) => (0, i.jsx)("div", {
     className: N.footerSection,
     children: A.filter(e => null != e).map(i => i(e, t, n))
   }));
@@ -191,18 +191,18 @@ function A(e, t) {
     icon: M,
     title: L,
     hint: R
-  }, C), {
+  }, j), {
     onNotificationShow: e => {
       var t;
-      f(), D || (0, p.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (t = C.onNotificationShow) || t.call(C, e)
+      f(), D || (0, p.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (t = j.onNotificationShow) || t.call(j, e)
     },
     onNotificationClick: (e, t) => {
       var n;
-      h("unlock"), u.Z.setInputLocked(false, v.Z.getTargetPID()), D || (0, p.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (n = C.onNotificationClick) || n.call(C, e, t)
+      h("unlock"), u.Z.setInputLocked(false, v.Z.getTargetPID()), D || (0, p.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (n = j.onNotificationClick) || n.call(j, e, t)
     },
     onDismissClick: (e, t) => {
       var n;
-      h("dismiss"), D || (0, p.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (n = C.onDismissClick) || n.call(C, e, t)
+      h("dismiss"), D || (0, p.Q3)(o.z.OVERLAY_OOP_WELCOME_NUX), null == (n = j.onDismissClick) || n.call(j, e, t)
     }
   })
 }

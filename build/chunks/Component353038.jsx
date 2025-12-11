@@ -2,7 +2,7 @@
 /** chunk id: 353038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => y,
-  Z: () => C
+  Z: () => j
 }), require("./388685.js"), require("./415506.js");
 var i, r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -125,13 +125,13 @@ function I(e, t) {
   }
 }
 
-function j(e) {
+function C(e) {
   let {
     computedSize: t
   } = e;
   return t
 }
-class C extends(i = Chunk473749.Component) {
+class j extends(i = Chunk473749.Component) {
   shouldComponentUpdate(e, t) {
     return !(0, u.Z)(t, this.state) || !(0, u.Z)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, u.Z)(e.anchor, this.props.anchor) || !(0, u.Z)(e.size, this.props.size) || !(0, u.Z)(e.minSize, this.props.minSize) || !(0, u.Z)(e.container, this.props.container)
   }
@@ -208,7 +208,7 @@ class C extends(i = Chunk473749.Component) {
         },
         onDragStart: s,
         onDrag: c,
-        resizeValidation: d = j
+        resizeValidation: d = C
       },
       state: {
         operation: h,
@@ -593,4 +593,4 @@ class C extends(i = Chunk473749.Component) {
     }), this.anchor = E(e.anchor), this.size = v(e.size, e.minSize.width, e.minSize.height)
   }
 }
-m(C, "Operations", y)
+m(j, "Operations", y)

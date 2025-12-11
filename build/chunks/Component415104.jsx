@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -30,7 +30,7 @@ function v(e) {
     rowIndex: j,
     impressionRef: y,
     sourceQuestContent: C
-  } = e, [_, S] = r.useState(false), [E, O] = r.useState([]), T = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
+  } = e, [_, S] = r.useState(false), [E, T] = r.useState([]), O = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
     S(true), P({
       questId: i.id,
       event: b.rMx.QUEST_HOVER,
@@ -82,7 +82,7 @@ function v(e) {
       quest: i,
       isHovering: _,
       errorHints: E,
-      warningHints: T,
+      warningHints: O,
       isVisibleInViewport: A,
       sourceQuestContent: C
     }), (0, a.jsx)(x.Z, {
@@ -91,7 +91,7 @@ function v(e) {
       isHovering: _,
       contentPosition: v,
       rowIndex: j,
-      onReceiveErrorHints: O,
+      onReceiveErrorHints: T,
       isVisibleInViewport: A,
       sourceQuestContent: C
     })]

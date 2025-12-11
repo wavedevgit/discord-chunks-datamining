@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -115,8 +115,8 @@ function eo(e) {
     e_ = (0, $.F)(eC),
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
     eE = (0, b.p)(),
-    eO = B.Sb.useSetting(),
-    eT = (0, $.I)(ey),
+    eT = B.Sb.useSetting(),
+    eO = (0, $.I)(ey),
     eN = (0, K.g)(n),
     eP = (0, v.Z)({
       analyticsLocations: ef
@@ -139,7 +139,7 @@ function eo(e) {
     }, 500)
   }, []);
   let eU = e => {
-      null == n || n(), (0, O.openUserProfileModal)(es({
+      null == n || n(), (0, T.openUserProfileModal)(es({
         customStatusPrompt: eZ,
         sourceAnalyticsLocations: ef
       }, ex, e))
@@ -190,7 +190,7 @@ function eo(e) {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT
-            }), (0, a.jsx)(T.Z, {
+            }), (0, a.jsx)(O.Z, {
               user: t,
               displayProfile: eh,
               themeType: ea.l.POPOUT,
@@ -292,7 +292,7 @@ function eo(e) {
                         className: ei.statusPickerModalMenu,
                         "aria-label": er.intl.string(er.t.E13trI),
                         onClose: t,
-                        children: eT
+                        children: eO
                       })
                     },
                     onClick: i.tq ? () => {
@@ -328,7 +328,7 @@ function eo(e) {
                             hideScroller: true,
                             onClose: r,
                             onSelect: true,
-                            children: eT
+                            children: eO
                           })
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                           var n = Object.keys(e);
@@ -365,7 +365,7 @@ function eo(e) {
                         children: eN
                       })
                     }
-                  }), !__OVERLAY__ && V.wS && eO && (0, a.jsx)(Y.V4, {
+                  }), !__OVERLAY__ && V.wS && eT && (0, a.jsx)(Y.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: er.intl.string(er.t["/AXYnE"]),

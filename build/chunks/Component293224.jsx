@@ -179,8 +179,8 @@ function ec(e) {
       })
     },
     I = null == (t = (0, en.II)()) ? true : t.id,
-    j = (0, a.e7)([ee.Z], () => ee.Z.isLimitedInteractionOverrideEnabled(I)),
-    C = (0, U.Hu)({
+    C = (0, a.e7)([ee.Z], () => ee.Z.isLimitedInteractionOverrideEnabled(I)),
+    j = (0, U.Hu)({
       location: m.Z.OVERLAY,
       autoTrackExposure: true
     }),
@@ -196,11 +196,11 @@ function ec(e) {
       let {
         closePopout: t
       } = e, n = E(t);
-      return C ? (0, i.jsx)(W.l, {
+      return j ? (0, i.jsx)(W.l, {
         wide: true,
         showOutputDevices: true,
         onSettingsButtonClick: n,
-        showSearchBar: !j
+        showSearchBar: !C
       }) : _ ? (0, i.jsx)(v.Z, {
         onClose: n,
         maybeRenderPTTCheckbox: true,
@@ -208,7 +208,8 @@ function ec(e) {
         renderInputDevices: true,
         renderInputVolume: true,
         maybeRenderInputMeter: true,
-        renderSettingsButton: true
+        renderSettingsButton: true,
+        appContext: ei.IlC.OVERLAY
       }) : (0, i.jsx)(O.default, {
         onClose: n,
         renderInputDevices: true,
@@ -217,7 +218,8 @@ function ec(e) {
         renderInputVolume: true,
         renderOutputVolume: true,
         renderDeafen: true,
-        minimal: true
+        minimal: true,
+        appContext: ei.IlC.OVERLAY
       })
     },
     align: "center",
@@ -304,7 +306,8 @@ function eu(e) {
         renderDeafenCheckbox: true,
         renderOutputDevices: true,
         renderOutputVolume: true,
-        renderSettingsButton: true
+        renderSettingsButton: true,
+        appContext: ei.IlC.OVERLAY
       }) : (0, i.jsx)(O.default, {
         onClose: E(t),
         renderOutputDevices: true,
@@ -371,8 +374,8 @@ function ed(e) {
     channel: n
   }) : true;
   r.useEffect(() => () => v(), [s, v]);
-  let j = eo(l),
-    C = null == n || !m;
+  let C = eo(l),
+    j = null == n || !m;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: o,
     clickTrap: true,
@@ -381,7 +384,7 @@ function ed(e) {
         closePopout: t
       } = e;
       return (0, i.jsx)(E.Z, {
-        onClose: j(t),
+        onClose: C(t),
         appContext: ei.IlC.OVERLAY
       })
     },
@@ -406,7 +409,7 @@ function ed(e) {
         onContextMenu: b(n),
         onMouseEnter: S,
         onMouseLeave: x,
-        disabled: C,
+        disabled: j,
         isTrayButton: true
       })
     }
@@ -421,7 +424,7 @@ function ef(e) {
     o = r.useRef(null),
     c = (0, a.e7)([X.default], () => X.default.getCurrentUser()),
     u = (0, k.Z)(n),
-    f = (0, a.cj)([Y.Z], () => (0, C.Z)(Y.Z)),
+    f = (0, a.cj)([Y.Z], () => (0, j.Z)(Y.Z)),
     h = (0, a.e7)([F.Z], () => F.Z.getCurrentUserActiveStream()),
     p = (0, a.e7)([et.Z], () => et.Z.getTargetPID()),
     m = (0, $.P)({
@@ -548,7 +551,7 @@ function eh(e) {
       onMouseEnter: S,
       onMouseLeave: x
     }
-  } = (0, c.j)(), I = eo(o), j = (0, a.e7)([T.Z, H.default], () => T.Z.isUserPlayingSounds(H.default.getId()), []) ? "green" : true;
+  } = (0, c.j)(), I = eo(o), C = (0, a.e7)([T.Z, H.default], () => T.Z.isUserPlayingSounds(H.default.getId()), []) ? "green" : true;
   return (0, i.jsx)(d.yRy, {
     targetElementRef: s,
     clickTrap: true,
@@ -583,8 +586,8 @@ function eh(e) {
             userId: H.default.getId()
           }), n(e)
         },
-        highlightedColor: j,
-        defaultColor: j,
+        highlightedColor: C,
+        defaultColor: C,
         onContextMenu: O,
         onMouseEnter: S,
         onMouseLeave: x,
@@ -703,7 +706,7 @@ function em(e) {
 function eg(e) {
   let {
     voiceChannel: t
-  } = e, n = (0, j.KS)(t), r = (0, I.ZP)(t);
+  } = e, n = (0, C.KS)(t), r = (0, I.ZP)(t);
   return (0, i.jsxs)("div", {
     className: ea.voiceChannelNameContainer,
     children: [null != n && (0, i.jsx)(d.Text, {

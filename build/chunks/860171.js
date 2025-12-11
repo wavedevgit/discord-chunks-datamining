@@ -16,7 +16,7 @@ let d = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk889029.Z,
     buildLayout: () => []
   }),
-  S = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
+  T = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
     buildLayout: () => [Chunk290434.R]
   }),
@@ -24,5 +24,5 @@ let d = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
     icon: Chunk657707.m3e,
     getLegacySearchKey: () => (0, Chunk526665.Ml)("StreamerModePanel") ? true : Chunk726985.s6.STREAMER_MODE,
-    buildLayout: () => [(0, Chunk526665.Ml)("StreamerModePanel") ? S : d]
+    buildLayout: () => [(0, Chunk526665.Ml)("StreamerModePanel") ? T : d]
   })

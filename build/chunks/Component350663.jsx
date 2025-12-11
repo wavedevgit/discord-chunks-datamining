@@ -65,11 +65,11 @@ let E = {
       layout: S,
       locked: x,
       activeStreams: I,
-      streamParticipants: j,
-      participantsVersion: C,
+      streamParticipants: C,
+      participantsVersion: j,
       pinned: _,
       padding: Z
-    } = e, N = j.map(e => ({
+    } = e, N = C.map(e => ({
       participant: e,
       key: e.user.id,
       width: n,
@@ -128,7 +128,7 @@ let E = {
       },
       config: E,
       trail: 100 * !A
-    }, A ? "animate-never" : "respect-motion-settings"), M = (0, f.ee)(() => new Set(j.map(e => e.user.id)), [j, C]), z = (0, f.ee)(() => new Set(j.filter(e => I.has((0, u.V9)(e.stream))).map(e => e.user.id)), [j, I, C]);
+    }, A ? "animate-never" : "respect-motion-settings"), M = (0, f.ee)(() => new Set(C.map(e => e.user.id)), [C, j]), z = (0, f.ee)(() => new Set(C.filter(e => I.has((0, u.V9)(e.stream))).map(e => e.user.id)), [C, I, j]);
     return r.useEffect(() => {
       0 !== M.size && (0, f.zi)(b.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),

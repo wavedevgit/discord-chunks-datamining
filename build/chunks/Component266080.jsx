@@ -16,20 +16,20 @@ let m = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, p] = l.useState(false), b = d.Z.getGuild(t), g = null != b;
+  } = e, [m, b] = l.useState(false), p = d.Z.getGuild(t), g = null != p;
   l.useEffect(() => {
-    p(!g)
+    b(!g)
   }, [g]);
   let f = l.useCallback(() => {
-    p(true), a.ZP.trackWithMetadata(c.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
+    b(true), a.ZP.trackWithMetadata(c.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
     }), s.Z.leaveGuild(t)
   }, [t, n]);
-  return null == b ? null : (0, r.jsx)(o.JZ, {
+  return null == p ? null : (0, r.jsx)(o.JZ, {
     title: u.intl.string(u.t.cU96ip),
     description: u.intl.formatToPlainString(u.t["26mR6/"], {
-      guildName: null == b ? true : b.name
+      guildName: null == p ? true : p.name
     }),
     buttonText: m ? u.intl.string(u.t["9Ak99h"]) : u.intl.string(u.t.F3qExp),
     buttonDisabled: m,
@@ -37,10 +37,10 @@ let m = e => {
     onButtonPress: () => {
       (0, i.Z)({
         title: u.intl.formatToPlainString(u.t["1GX6P/"], {
-          name: b.name
+          name: p.name
         }),
         subtitle: u.intl.format(u.t.ZEXC0r, {
-          name: b.name
+          name: p.name
         }),
         confirmText: u.intl.string(u.t.J2TBi3),
         onConfirm: f

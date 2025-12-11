@@ -4,7 +4,7 @@ require.d(exports, {
   Bz: () => _,
   Dl: () => Z,
   bt: () => b,
-  wD: () => C
+  wD: () => j
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -115,7 +115,7 @@ function I(e) {
   })
 }
 
-function j(e) {
+function C(e) {
   var {
     widgetId: t,
     size: n,
@@ -125,7 +125,7 @@ function j(e) {
     containerSpecs: o,
     defaultSize: s
   } = e, c = g(e, ["widgetId", "size", "borderWidth", "padding", "minSize", "containerSpecs", "defaultSize"]);
-  let u = e => C(m({
+  let u = e => j(m({
       operation: d.B.RESIZE_NORTH,
       computedSize: e,
       originSize: e,
@@ -142,7 +142,7 @@ function j(e) {
     };
   null != s && (f.defaultSize = m({}, u(s))), (0, a.nv)(m({}, f))
 }
-let C = e => {
+let j = e => {
   let {
     operation: t,
     computedSize: n,
@@ -214,7 +214,7 @@ function _(e) {
     width: h = s,
     height: m = d,
     ref: g
-  } = (0, l.ZP)(), O = (0, p.Z)(), S = (0, u.ZY)(O), I = (0, r.e7)([c.Z], () => c.Z.windowSize(S), [S]), j = function(e) {
+  } = (0, l.ZP)(), O = (0, p.Z)(), S = (0, u.ZY)(O), I = (0, r.e7)([c.Z], () => c.Z.windowSize(S), [S]), C = function(e) {
     let {
       tileCount: t,
       padding: n,
@@ -244,9 +244,9 @@ function _(e) {
     windowWidth: I.width,
     windowHeight: I.height,
     isVertical: a
-  }), C = y(i, n), _ = E(i, n, {
-    width: h + C,
-    height: m + C
+  }), j = y(i, n), _ = E(i, n, {
+    width: h + j,
+    height: m + j
   }, a), Z = (0, f.MH)(_);
   return {
     tileWidth: _,
@@ -254,7 +254,7 @@ function _(e) {
     widgetWidth: s,
     widgetHeight: d,
     containerRef: g,
-    containerMinMaxSizes: j
+    containerMinMaxSizes: C
   }
 }
 
@@ -281,7 +281,7 @@ function Z(e) {
         locked: u
       } = e,
       d = g(e, ["id", "widgetMinMaxSizes", "containerSize", "layout", "padding", "widget", "borderWidth", "locked"]);
-    null != o && j(m({
+    null != o && C(m({
       widgetId: t,
       size: O(I({
         layout: r,
@@ -314,7 +314,7 @@ function Z(e) {
     if (null != o) {
       if (0 === c) {
         if (u) return;
-        j(m({
+        C(m({
           widgetId: t,
           size: O(n.defaultSize),
           defaultSize: n.defaultSize,
@@ -326,7 +326,7 @@ function Z(e) {
         }, d));
         return
       }
-      j(m({
+      C(m({
         widgetId: t,
         size: O(I({
           layout: r,
@@ -385,7 +385,7 @@ function Z(e) {
       previousContainerSize: r,
       widgetMinMaxSizes: i
     });
-    j(m({
+    C(m({
       widgetId: t,
       size: O(p),
       minSize: O(i.minSize),
@@ -403,7 +403,7 @@ function Z(e) {
         padding: r
       } = e,
       l = g(e, ["id", "widgetMinMaxSizes", "widget", "padding"]);
-    null != i && j(m({
+    null != i && C(m({
       widgetId: t,
       size: O(n.defaultSize),
       defaultSize: n.defaultSize,

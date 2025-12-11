@@ -14,16 +14,16 @@ var Chunk442837 = require("./442837.js"),
 let u = 12633 == require.j ? 18e4 : null;
 
 function f(e) {
-  let t = (0, d.A2)(e),
-    n = (0, r.e7)([l.Z], () => l.Z.isOpen()),
+  let t = (0, s.A2)(e),
+    n = (0, r.e7)([a.Z], () => a.Z.isOpen()),
     f = (0, r.e7)([c.Z], () => c.Z.hasLayers()),
     {
       isQuestBarEmpty: p,
       hasLoadedQuestBar: b
     } = (0, o.Ws)({
-      location: s.dr.QUESTS_BAR
+      location: d.dr.QUESTS_BAR
     });
-  return (0, i.bf)(t && !n && !f && p && b ? a.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+  return (0, l.bf)(t && !n && !f && p && b ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
     cooldownDurationMs: u
   })
 }

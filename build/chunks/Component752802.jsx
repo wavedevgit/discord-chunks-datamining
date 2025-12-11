@@ -117,10 +117,10 @@ function M(e) {
 function z(e) {
   let {
     participant: t
-  } = e, n = t.user.id, a = (0, o.e7)([C.Z], () => {
+  } = e, n = t.user.id, a = (0, o.e7)([j.Z], () => {
     let e = (0, p.Z)(t.type);
-    return C.Z.isLocalMute(t.user.id, e)
-  }, [t]), l = (0, o.e7)([j.default], () => j.default.getId()), {
+    return j.Z.isLocalMute(t.user.id, e)
+  }, [t]), l = (0, o.e7)([C.default], () => C.default.getId()), {
     hasVideo: d
   } = (0, x.Z)(t, l), f = a && d, h = r.useCallback(() => {
     u.Z.toggleLocalMute(n, s.Yn.STREAM)

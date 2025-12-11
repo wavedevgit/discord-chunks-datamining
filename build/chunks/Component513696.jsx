@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk242379 = require("./242379.js");
-let S = (0, Chunk509613.wf)(Chunk313789.n.POGGERMODE_PANEL, {
+let T = (0, Chunk509613.wf)(Chunk313789.n.POGGERMODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
     StronglyDiscouragedCustomComponent: Chunk231765.Z,
     buildLayout: () => []
@@ -26,5 +26,5 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.POGGERMODE_PANEL, {
       className: Chunk242379.poggermodeIcon
     }),
     usePredicate: () => (0, Chunk442837.e7)([Chunk351780.Z], () => Chunk351780.Z.settingsVisible),
-    buildLayout: () => [S]
+    buildLayout: () => [T]
   })

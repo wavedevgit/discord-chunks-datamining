@@ -39,15 +39,15 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), I = (0, u.ee)(() => O, [O]), j = (0, u.ee)(() => E, [E]), C = (0, l.h)(u.zi, 3e3, []);
+  }, []), I = (0, u.ee)(() => O, [O]), C = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
-    0 === I.size || t || C(h.Odu.FRIENDS, {
+    0 === I.size || t || j(h.Odu.FRIENDS, {
       locked: t,
       shownUserIds: Array.from(I),
-      liveUserIds: Array.from(j),
+      liveUserIds: Array.from(C),
       contentInventoryIds: []
     })
-  }, [I, j, t, C]);
+  }, [I, C, t, j]);
   let _ = (0, a.e7)([s.Z], () => null == y ? null : s.Z.getApplicationActivity(y), [y]),
     Z = (0, r.useCallback)((e, t) => {
       let n = function(e) {

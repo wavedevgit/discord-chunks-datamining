@@ -27,7 +27,7 @@ function p(e) {
         subsection: u.CO,
         analyticsLocations: t,
         appContext: e
-      }), (0, l.i)(e)
+      }), (0, l.i)(e, e === c.IlC.POPOUT)
     },
     icon: i.ewm
   })

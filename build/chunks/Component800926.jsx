@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 800926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -29,12 +29,12 @@ let x = Chunk473749.forwardRef(function(e, t) {
     onCtxMenuOpen: _,
     onCtxMenuClose: S,
     onCtxMenuSelect: E,
-    overlayRef: O
-  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, N = (0, c.Jf)(j), P = r.useRef(null), w = (null == (i = j.userStatus) ? true : i.enrolledAt) != null, I = null != N ? N.percentComplete : y.percentComplete, [k, R] = r.useState(false);
+    overlayRef: T
+  } = e, O = (null == (n = j.userStatus) ? true : n.completedAt) != null, N = (0, c.Jf)(j), P = r.useRef(null), w = (null == (i = j.userStatus) ? true : i.enrolledAt) != null, I = null != N ? N.percentComplete : y.percentComplete, [k, R] = r.useState(false);
   return (0, a.jsxs)(a.Fragment, {
-    children: [T && (0, a.jsx)(u.Z, {
+    children: [O && (0, a.jsx)(u.Z, {
       expansionSpring: b,
-      overlayRef: O,
+      overlayRef: T,
       progressBarRef: P,
       quest: j,
       isExpanded: g,
@@ -51,13 +51,13 @@ let x = Chunk473749.forwardRef(function(e, t) {
           range: [0, 1],
           output: [1, 0]
         }),
-        backgroundImage: T ? "linear-gradient(90deg, ".concat(h.cd, ", ").concat(h.v$, ")") : true
+        backgroundImage: O ? "linear-gradient(90deg, ".concat(h.cd, ", ").concat(h.v$, ")") : true
       },
       onMouseEnter: () => R(true),
       onMouseLeave: () => R(false),
       children: (0, a.jsxs)("div", {
         className: f.contentCollapsedWrapper,
-        children: [T && (0, a.jsxs)(a.Fragment, {
+        children: [O && (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(p.Z, {
             quest: j,
             onCtxMenuOpen: _,
@@ -72,7 +72,7 @@ let x = Chunk473749.forwardRef(function(e, t) {
           progressBarRef: P,
           isExpanded: false,
           percentComplete: I
-        }) : null, T && (0, a.jsx)(d.r, {
+        }) : null, O && (0, a.jsx)(d.r, {
           quest: j,
           useReducedMotion: C,
           isExpanded: false,

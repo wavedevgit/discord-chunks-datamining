@@ -22,7 +22,7 @@ let c = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useValue: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAttenuateWhileSpeakingSelf()),
     setValue: t => l.Z.setAttenuation(r.Z.getAttenuation(), t, r.Z.getAttenuateWhileSpeakingOthers())
   }),
-  S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.SMt0Gr),
     useValue: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAttenuateWhileSpeakingOthers()),
     setValue: t => l.Z.setAttenuation(r.Z.getAttenuation(), r.Z.getAttenuateWhileSpeakingSelf(), t)
@@ -31,5 +31,5 @@ let c = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.oSdBvW),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["0A/8Rt"]),
     usePredicate: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.ATTENUATION)),
-    buildLayout: () => [c, d, S]
+    buildLayout: () => [c, d, T]
   })

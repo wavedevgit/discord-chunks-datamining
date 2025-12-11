@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 304083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -143,9 +143,9 @@ function W(e) {
     onGameSheetClosed: v
   } = e, j = r.useRef(null), C = (0, c.e7)([b.Z], () => b.Z.isEnrolling(t.id), [t]), S = r.useMemo(() => (0, _.fh)(t, _.eC.QUEST_BAR_HERO), [t]), E = (0, y.CR)({
     quest: t
-  }), O = r.useMemo(() => (0, _.fh)(t, _.eC.HERO_IMAGE), [t]), N = r.useMemo(() => null == O ? {} : {
-    backgroundImage: "url(".concat(O.url, ")")
-  }, [O]), w = (0, p.ZP)(), I = (0, u.wj)(w);
+  }), T = r.useMemo(() => (0, _.fh)(t, _.eC.HERO_IMAGE), [t]), N = r.useMemo(() => null == T ? {} : {
+    backgroundImage: "url(".concat(T.url, ")")
+  }, [T]), w = (0, p.ZP)(), I = (0, u.wj)(w);
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
       ref: j,
@@ -183,7 +183,7 @@ function W(e) {
           })
         })]
       })
-    }), null != O && (0, a.jsx)(s.animated.div, {
+    }), null != T && (0, a.jsx)(s.animated.div, {
       className: F.contentCollapsedBackgroundWrapper,
       style: {
         opacity: i.to([0, 1], [1, 0])
@@ -198,7 +198,7 @@ function W(e) {
         backdropFilter: i.to([0, 1], [5, 0]).to(e => "blur(".concat(e, "px)")),
         filter: i.to([0, 1], [.8, 1]).to(e => "brightness(".concat(e, ")"))
       },
-      children: [S.isAnimated ? (0, a.jsx)(T.Fl, {
+      children: [S.isAnimated ? (0, a.jsx)(O.Fl, {
         id: "QuestBarContentExpanded_heroAnimated",
         children: e => (0, a.jsx)(z, {
           ref: e,
@@ -206,7 +206,7 @@ function W(e) {
           isExpanded: f,
           reducedMotion: d
         })
-      }) : (0, a.jsx)(T.Fl, {
+      }) : (0, a.jsx)(O.Fl, {
         id: "QuestBarContentExpanded_heroStatic",
         children: e => (0, a.jsx)("img", {
           ref: e,
@@ -265,7 +265,7 @@ function q(e) {
     onCtxMenuSelect: b,
     onGameSheetOpened: v,
     onGameSheetClosed: j
-  } = e, y = (null == (t = n.userStatus) ? true : t.completedAt) != null, _ = i.percentComplete > 0, O = (0, C.z)(n), [T, N, B] = (0, C.me)(n, i), V = r.useRef(null), H = r.useRef(null), W = (0, C._s)({
+  } = e, y = (null == (t = n.userStatus) ? true : t.completedAt) != null, _ = i.percentComplete > 0, T = (0, C.z)(n), [O, N, B] = (0, C.me)(n, i), V = r.useRef(null), H = r.useRef(null), W = (0, C._s)({
     quest: n
   }), z = (0, E.q8)(n), q = (0, C.Jf)(n), K = r.useCallback(() => {
     (0, P.openVideoQuestModal)({
@@ -310,12 +310,12 @@ function q(e) {
         progressBarRef: V,
         isExpanded: true,
         percentComplete: Q,
-        activeScreen: T,
+        activeScreen: O,
         popoutTargetElementRef: H,
         onGameSheetOpened: v,
         onGameSheetClosed: j
       }), (0, a.jsx)(R.n, {
-        children: !y && !(0, S.Gd)(n) && (0, o.EQ)(T).with(g.LI.SELECT, () => (0, a.jsx)(L.Z, {
+        children: !y && !(0, S.Gd)(n) && (0, o.EQ)(O).with(g.LI.SELECT, () => (0, a.jsx)(L.Z, {
           onConsole: () => B(M.cd.CONSOLE),
           onDesktop: () => B(M.cd.DESKTOP)
         })).with(g.LI.DESKTOP, () => (0, a.jsx)(A.Z, {
@@ -336,9 +336,9 @@ function q(e) {
           isExpanded: u,
           awaitingConsoleConnections: W,
           hasMadeProgress: _,
-          isProgressing: O,
-          activeScreen: T,
-          showBackButton: T !== g.LI.SELECT && N.length > 1 && !_ && !O,
+          isProgressing: T,
+          activeScreen: O,
+          showBackButton: O !== g.LI.SELECT && N.length > 1 && !_ && !T,
           onBack: () => B(null),
           taskDetails: i,
           sourceQuestContent: g.jn.QUEST_BAR_V2,
@@ -361,7 +361,7 @@ async function K(e, t, n, a) {
     questContentCTA: n,
     sourceQuestContent: a,
     sourceQuestContentCTA: n
-  }) : (0, O.Rt)(e) && (0, j.R)(M.dr.QUESTS_BAR) ? void await (0, f.AH)(e.id, {
+  }) : (0, T.Rt)(e) && (0, j.R)(M.dr.QUESTS_BAR) ? void await (0, f.AH)(e.id, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: a
@@ -396,10 +396,10 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     taskDetails: S
   } = e, {
     launchInGameActivity: E
-  } = (0, C.zB)(y), T = (0, O.Rt)(y), N = r.useCallback(async () => {
-    let e = T ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST;
-    await K(y, g.jn.QUEST_BAR_V2, e, g.jn.QUEST_BAR_V2), T && E()
-  }, [y, E, T]), P = (null == (n = y.userStatus) ? true : n.enrolledAt) != null, w = d && u;
+  } = (0, C.zB)(y), O = (0, T.Rt)(y), N = r.useCallback(async () => {
+    let e = O ? x.jZ.START_QUEST : x.jZ.ACCEPT_QUEST;
+    await K(y, g.jn.QUEST_BAR_V2, e, g.jn.QUEST_BAR_V2), O && E()
+  }, [y, E, O]), P = (null == (n = y.userStatus) ? true : n.enrolledAt) != null, w = d && u;
   return (0, a.jsxs)(s.animated.div, {
     "aria-hidden": !w,
     className: l()(o, F.contentExpanded, {

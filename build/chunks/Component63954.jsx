@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -437,12 +437,12 @@ function V() {
         children: ["Reward #", t + 1]
       }), (0, a.jsxs)("div", {
         className: R.fields,
-        children: [(0, a.jsx)(O.Z, {
+        children: [(0, a.jsx)(T.Z, {
           title: "Name",
           assetKey: "name",
           onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.name
-        }), (0, a.jsx)(O.Z, {
+        }), (0, a.jsx)(T.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
           onMessageChange: (e, n) => ea(e, n, t),

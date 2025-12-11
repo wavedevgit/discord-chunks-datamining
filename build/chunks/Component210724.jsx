@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 210724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => B,
@@ -71,7 +71,7 @@ function B(e) {
   }), F = (0, c.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: G,
     reason: V
-  } = (0, O.qN)({
+  } = (0, T.qN)({
     quest: i,
     location: D.dr.QUESTS_BAR
   }), H = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([f.Z], () => f.Z.hasLayers()), z = r.useRef(null), q = r.useMemo(() => (0, _.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
@@ -100,9 +100,9 @@ function B(e) {
     t ? et.current = window.setTimeout(eg, 75) : eg()
   }, [eg, es]), eE = r.useCallback(() => {
     eS()
-  }, [eS]), eO = r.useCallback(() => {
+  }, [eS]), eT = r.useCallback(() => {
     window.clearTimeout(et.current), ea || ei || en.current || eb(false)
-  }, [ea, ei, eb]), eT = r.useCallback(() => {
+  }, [ea, ei, eb]), eO = r.useCallback(() => {
     var e;
     (0, x.dA)({
       questId: i.id,
@@ -128,8 +128,8 @@ function B(e) {
         impression_id: null == (e = z.current) ? true : e.getId()
       },
       sourceQuestContent: v.jn.QUEST_BAR_V2
-    }), en.current = false, eO()
-  }, [eO, i]);
+    }), en.current = false, eT()
+  }, [eT, i]);
   r.useEffect(() => {
     ei && eN()
   }, [ei, eN]), r.useLayoutEffect(() => {
@@ -182,7 +182,7 @@ function B(e) {
     }
   });
   if (r.useEffect(() => {
-      q && (0, T.loadVideoQuestModal)()
+      q && (0, O.loadVideoQuestModal)()
     }, [q]), r.useEffect(() => {
       if (X) {
         var e;
@@ -250,9 +250,9 @@ function B(e) {
       }), (0, a.jsx)(s.animated.div, {
         "aria-hidden": !$,
         onMouseLeave: eN,
-        onMouseEnter: eT,
+        onMouseEnter: eO,
         onFocus: eE,
-        onBlur: eO,
+        onBlur: eT,
         className: l()(L.wrapper, {
           [L.wrapperInvisible]: !$,
           [L.wrapperVisible]: $ && eu

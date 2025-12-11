@@ -18,29 +18,30 @@ function c(t) {
     onFormSubmit: n,
     onSuccess: c,
     onClose: d,
-    headerText: m,
-    confirmButtonText: h,
-    confirmButtonVariant: f = "primary"
-  } = t, [y, A] = s.useState(false), [g, v] = s.useState(""), [C, E] = s.useState(null), Z = s.useRef(null), b = async t => {
-    if (t.preventDefault(), E(null), A(true), false === p.test(g)) {
-      E(u.intl.string(u.t.hML7Gw)), A(false);
+    headerText: h,
+    confirmButtonText: m,
+    confirmButtonVariant: f = "primary",
+    helperText: y
+  } = t, [A, g] = s.useState(false), [v, x] = s.useState(""), [C, E] = s.useState(null), Z = s.useRef(null), b = async t => {
+    if (t.preventDefault(), E(null), g(true), false === p.test(v)) {
+      E(u.intl.string(u.t.hML7Gw)), g(false);
       return
     }
     try {
-      let t = null != n ? await n(g) : true;
+      let t = null != n ? await n(v) : true;
       null != c && (null != t ? c({
         response: t,
-        email: g
-      }) : c(g)), d()
+        email: v
+      }) : c(v)), d()
     } catch (t) {
       E(new o.Z(t).getAnyErrorMessage())
     } finally {
-      A(false)
+      g(false)
     }
   };
   return (0, i.jsx)("form", {
     onSubmit: b,
-    children: (0, i.jsx)(a.Modal, {
+    children: (0, i.jsx)(l.Modal, {
       transitionState: e,
       trackingProps: {
         impression: {
@@ -48,24 +49,25 @@ function c(t) {
         },
         impressionType: r.ImpressionTypes.MODAL
       },
-      title: m,
+      title: h,
       actions: [{
         text: u.intl.string(u.t["ETE/oC"]),
         onClick: d,
         variant: "secondary",
-        disabled: y
+        disabled: A
       }, {
-        text: h,
+        text: m,
         variant: f,
-        loading: y,
+        loading: A,
         type: "submit"
       }],
       onClose: d,
-      children: (0, i.jsx)(l.oil, {
+      children: (0, i.jsx)(a.oil, {
         label: u.intl.string(u.t.hvOfmC),
         error: C,
-        value: g,
-        onChange: v,
+        value: v,
+        onChange: x,
+        helperText: y,
         inputRef: Z
       })
     })

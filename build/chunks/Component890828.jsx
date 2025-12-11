@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk805953 = require("./805953.js");
 let P = e => [e.userId, ... function(e) {
-    let t = j.default.getUser(e.userId);
+    let t = C.default.getUser(e.userId);
     if (null == t) return [];
     let n = t.username,
       i = (0, m.e3)(t);
@@ -62,9 +62,9 @@ let P = e => [e.userId, ... function(e) {
     let {
       channel: t,
       query: n
-    } = e, [a] = (0, o.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], Z.Q), [l, u] = r.useState([]);
+    } = e, [a] = (0, o.e7)([j.Z], () => [j.Z.getVoiceStatesForChannel(t.id), j.Z.getVoiceStateVersion()], [t.id], Z.Q), [l, u] = r.useState([]);
     (0, y.BO)(n, Object.values(a), u, k);
-    let d = (0, o.Wu)([C.Z, j.default, O.Z, I.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => j.default.getUser(e.userId)).filter(_.lm).sort((e, t) => {
+    let d = (0, o.Wu)([j.Z, C.default, O.Z, I.Z], () => Object.values(j.Z.getVoiceStatesForChannel(t.id)).map(e => C.default.getUser(e.userId)).filter(_.lm).sort((e, t) => {
         var i, r, a, o;
         if (l.length > 0 && "" !== n.trim()) {
           if (l.some(t => t.userId === e.id)) return false;
@@ -153,7 +153,7 @@ let P = e => [e.userId, ... function(e) {
             variant: O ? "text-sm/semibold" : "text-sm/medium",
             color: E,
             className: T.channelItemNameText,
-            children: (0, u.F6)(m, j.default, I.Z)
+            children: (0, u.F6)(m, C.default, I.Z)
           })]
         }), (0, i.jsx)(c.Text, {
           variant: O ? "text-xs/semibold" : "text-xs/medium",
@@ -234,14 +234,14 @@ function V(e) {
     friendVoiceChannelIds: s
   } = function() {
     let e = function() {
-        let e = (0, o.Wu)([j.default, I.Z, O.Z], () => I.Z.getFriendIDs().sort((e, t) => {
+        let e = (0, o.Wu)([C.default, I.Z, O.Z], () => I.Z.getFriendIDs().sort((e, t) => {
           var n, i, r, a;
           return null == e && null == t ? 0 : null == e ? 1 : null == t ? false : (null != (r = null == (n = O.Z.getUserAffinity(t)) ? true : n.communicationProbability) ? r : 0) - (null != (a = null == (i = O.Z.getUserAffinity(e)) ? true : i.communicationProbability) ? a : 0)
         }).reduce((e, t) => {
-          let n = j.default.getUser(t);
+          let n = C.default.getUser(t);
           return null != n && e.push(n), e
         }, []), []);
-        return (0, o.Wu)([C.Z, v.Z, x.Z], () => Array.from(e.map(e => C.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
+        return (0, o.Wu)([j.Z, v.Z, x.Z], () => Array.from(e.map(e => j.Z.getDiscoverableVoiceStateForUser(e.id)).reduce((e, t) => {
           let n = null == t ? true : t.channelId;
           if (null == n) return e;
           let i = v.Z.getChannel(n);
@@ -295,14 +295,14 @@ function W(e) {
     currentVoiceChannel: a,
     onClose: l,
     onSelect: s
-  } = e, u = (0, o.Wu)([S.Z, E.ZP, C.Z, I.Z, x.Z], () => S.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => x.Z.can(N.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(N.Plq.CONNECT, e.channel)).map(e => {
+  } = e, u = (0, o.Wu)([S.Z, E.ZP, j.Z, I.Z, x.Z], () => S.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => x.Z.can(N.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(N.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
     } = e;
     return t
   })], []).map(e => ({
     channel: e,
-    voiceStates: Object.values(C.Z.getVoiceStatesForChannel(e.id)).filter(e => I.Z.isFriend(e.userId))
+    voiceStates: Object.values(j.Z.getVoiceStatesForChannel(e.id)).filter(e => I.Z.isFriend(e.userId))
   })), []), [d, f] = r.useState(""), [h, p] = r.useState([]);
   (0, y.BO)(d, u, p, A);
   let m = r.useCallback(e => {
@@ -319,7 +319,7 @@ function W(e) {
     v = {
       count: O ? 20 : h.length
     },
-    j = r.useMemo(() => ({
+    C = r.useMemo(() => ({
       onMouseDown: U,
       onMouseMove: U,
       onMouseUp: U,
@@ -345,7 +345,7 @@ function W(e) {
     return e
   }({
     className: T.recentChannelsMenu
-  }, j), n = n = {
+  }, C), n = n = {
     children: [(0, i.jsx)("div", {
       className: T.searchBarContainer,
       children: (0, i.jsx)(c.E1j, {

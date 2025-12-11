@@ -583,7 +583,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [eD.intl.string(eD.t["3fe7U5"])],
         label: eD.intl.string(eD.t["3fe7U5"]),
         ariaLabel: eD.intl.string(eD.t["3fe7U5"]),
-        element: ei.Z,
+        element: ei.ZP,
         impressionName: i.ImpressionNames.USER_SETTINGS_CONNECTIONS,
         impressionProperties: {
           source: null == v ? true : v.source
@@ -602,7 +602,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.CONNECTIONS,
         searchableTitles: [eD.intl.string(eD.t["+/hZM/"])],
         parent: eN.s6.CONNECTIONS,
-        element: ei.Z
+        element: ei.ZP
       },
       [eN.s6.CLIPS]: {
         section: eR.oAB.CLIPS,

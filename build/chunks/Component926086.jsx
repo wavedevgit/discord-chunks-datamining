@@ -34,22 +34,22 @@ function m(e) {
   }), s()), I = {
     timeToLiveMs: S,
     reappearTimeMs: x
-  }, j = r.useRef(I);
+  }, C = r.useRef(I);
   r.useEffect(() => {
-    j.current = I
+    C.current = I
   }), r.useEffect(() => (O.current = setInterval(() => {
     let e = Date.now();
     g(e), y(t => {
       if (0 === t) return e;
       let n = e - t,
-        i = j.current.timeToLiveMs,
-        r = i + j.current.reappearTimeMs;
+        i = C.current.timeToLiveMs,
+        r = i + C.current.reappearTimeMs;
       return n > i ? t + r : t
     })
   }, 100), () => {
     clearInterval(O.current)
   }), []);
-  let C = () => {
+  let j = () => {
       o(Date.now()), E(e => e + 1)
     },
     _ = a > 0 && m - a < 1e3,
@@ -76,7 +76,7 @@ function m(e) {
       children: (0, i.jsx)(f.Z, {
         className: l()(h.clickZone, _ && h.clickBackground),
         children: (0, i.jsx)(u.P3F, {
-          onClick: C,
+          onClick: j,
           className: h.clickable,
           children: (0, i.jsxs)(u.Text, {
             variant: "text-md/semibold",

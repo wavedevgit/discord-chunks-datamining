@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 439826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -206,7 +206,7 @@ function M(e) {
                 className: D.utilButtonIcon
               })
             })
-          }), (0, a.jsx)(O.i, {
+          }), (0, a.jsx)(T.i, {
             onOpen: G,
             onClose: F,
             onSelect: V,
@@ -260,11 +260,11 @@ function M(e) {
           width: 100,
           height: 30,
           className: D.partnerBranding,
-          children: (0, a.jsx)(T.ZP, {
+          children: (0, a.jsx)(O.ZP, {
             className: D.partnerBranding,
             logotypeClassName: D.partnerLogotypes,
             quest: S,
-            separatorSpacing: T.US.MEDIUM,
+            separatorSpacing: O.US.MEDIUM,
             withGameTile: false,
             onLoadComplete: $
           })

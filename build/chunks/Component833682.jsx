@@ -36,13 +36,13 @@ let A = (0, Chunk509613.ON)(Chunk313789.n.VOICE_NOISE_SUPPRESSION_SETTING, {
   },
   Component: function() {
     let t = Chunk473749.useCallback(t => {
-        a.Z.setNoiseCancellation(t === T.Q4.KRISP, T.MP), a.Z.setNoiseSuppression(t === T.Q4.STANDARD, T.MP)
+        a.Z.setNoiseCancellation(t === S.Q4.KRISP, S.MP), a.Z.setNoiseSuppression(t === S.Q4.STANDARD, S.MP)
       }, []),
       {
         noiseCancellation: e,
         noiseSuppression: n,
         isNoiseSuppressionSupported: o,
-        isNoiseCancellationSupported: S
+        isNoiseCancellationSupported: T
       } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
         noiseCancellation: Chunk131951.Z.getNoiseCancellation(),
         noiseSuppression: Chunk131951.Z.getNoiseSuppression(),

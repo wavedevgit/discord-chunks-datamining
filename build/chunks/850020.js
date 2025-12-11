@@ -12,11 +12,11 @@ function o(e) {
   let {
     user: t,
     guildId: n
-  } = e, o = (0, a.e7)([i.ZP], () => null != n && null != t ? i.ZP.getMember(n, t.id) : null);
+  } = e, o = (0, i.e7)([l.ZP], () => null != n && null != t ? l.ZP.getMember(n, t.id) : null);
   return (0, r.useMemo)(() => {
     var e;
     if (null == t) return;
-    let r = (0, l.Pb)(null == o || null == (e = o.collectibles) ? true : e.nameplate);
+    let r = (0, a.Pb)(null == o || null == (e = o.collectibles) ? true : e.nameplate);
     return null != n && null != r ? r : t.nameplate
   }, [o, n, t])
 }

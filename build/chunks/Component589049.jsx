@@ -27,7 +27,7 @@ function h() {
     id: "voice-and-video-settings",
     label: Chunk388032.intl.string(Chunk388032.t.dsXapM),
     action: () => {
-      h || (0, Chunk174609.Z)(), (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
+      (0, Chunk174609.Z)(null, module === Chunk981631.IlC.POPOUT), (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
         section: Chunk981631.oAB.VOICE,
         analyticsLocations: exports
       })

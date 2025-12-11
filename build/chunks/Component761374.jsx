@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 761374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => j
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,10 +27,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk230558 = require("./230558.js");
 
-function C(e) {
+function j(e) {
   var t, n;
   let {
-    id: C,
+    id: j,
     widget: _,
     size: Z,
     locked: N,
@@ -44,9 +44,9 @@ function C(e) {
     showEmpty: L = true
   } = e, M = A ? S.C5.HORIZONTAL : S.C5.VERTICAL, z = M === S.C5.VERTICAL, V = (0, a.e7)([m.Z], () => {
     var e;
-    let t = m.Z.getWidget(C);
+    let t = m.Z.getWidget(j);
     return !!(0, S.ZL)(t) && !N && (null == (e = t.meta.showAllStreams) || e)
-  }, [C, N]), U = (0, a.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, a.e7)([p.Z], () => p.Z.getChannel(U)), {
+  }, [j, N]), U = (0, a.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, a.e7)([p.Z], () => p.Z.getChannel(U)), {
     streamParticipants: G,
     activeStreams: F,
     participantsVersion: H
@@ -94,7 +94,7 @@ function C(e) {
     isVertical: z,
     widgetSize: Z
   }), ee = {
-    id: C,
+    id: j,
     widget: _,
     layout: M,
     participants: G.length,
@@ -114,7 +114,7 @@ function C(e) {
     locked: N
   };
   (0, E.Dl)({
-    id: C,
+    id: j,
     streamParticipants: G,
     layout: M,
     widgetLayoutSpecs: ee
@@ -129,13 +129,13 @@ function C(e) {
     icon: l.hGI,
     absolute: true
   }) : null : (0, i.jsx)("div", {
-    className: j.goLiveGridContainer,
+    className: C.goLiveGridContainer,
     style: {
       opacity: P
     },
     ref: q,
     children: (0, i.jsx)(O.Z, {
-      widgetId: C,
+      widgetId: j,
       tileWidth: Q,
       tileHeight: K,
       locked: N,

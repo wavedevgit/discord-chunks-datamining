@@ -11,54 +11,57 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk316515 = require("./316515.js");
 let c = e => {
-  var t, n;
   let {
     node: {
-      header: c,
-      subheader: u,
-      button: m
+      header: t,
+      subheader: n,
+      button: c
     },
-    isModeratorReport: p
-  } = e, b = (null == m ? true : m.type) === "submit", g = l.useRef(a.Z.reactParserFor((t = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = r
-      })
-    }
-    return e
-  }({}, a.Z.defaultRules), n = n = {
-    link: s.s
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(n)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-  }), t)));
+    isModeratorReport: u,
+    isTidaReport: m = false
+  } = e, b = (null == c ? true : c.type) === "submit", p = l.useMemo(() => {
+    var e, t;
+    return a.Z.reactParserFor((e = function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
+            enumerable: true,
+            configurable: true,
+            writable: true
+          }) : e[t] = r
+        })
+      }
+      return e
+    }({}, a.Z.defaultRules), t = t = {
+      link: s.s
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(t)).forEach(function(n) {
+      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), e))
+  }, []);
   return (0, r.jsxs)("div", {
     className: d.headerContainer,
-    children: [null != c && "" !== c ? (0, r.jsx)(i.Heading, {
+    children: [null != t && "" !== t ? (0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      children: c
-    }) : null, null != u && "" !== c ? (0, r.jsx)(i.Text, {
+      children: t
+    }) : null, null != n && "" !== t ? (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: g.current(u)
-    }) : null, b && !p && (0, r.jsx)(i.Text, {
+      children: p(n)
+    }) : null, b && !u && !m && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: o.intl.format(o.t.Q0tSKT, {})
     })]

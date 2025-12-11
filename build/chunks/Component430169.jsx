@@ -146,7 +146,7 @@ function A(e) {
       children: (0, i.jsx)(l.P3F, {
         onClick: s,
         className: w.watchIconButton,
-        children: (0, i.jsx)(j.a, {
+        children: (0, i.jsx)(C.a, {
           size: "sm",
           color: "green" === c ? "white" : l.TVs.colors.INTERACTIVE_TEXT_ACTIVE.css
         })
@@ -162,10 +162,10 @@ function k(e, t, n) {
   if (null == l) return null;
   let {
     designVariant: u
-  } = (0, S.lj)("OverlayV3StreamWatchNudge"), p = null == n ? true : n.application_id, j = g.Z.getChannel(t), N = null != p ? d.Z.getApplication(p) : null, w = null != p ? b.Z.getDetectableGame(p) : null, T = null != p ? h.ZP.getRunningGames().find(e => e.id === p) : null, k = null != (a = null != (r = null == T ? true : T.name) ? r : null == w ? true : w.name) ? a : null == N ? true : N.name, D = (0, v.oY)(null == j ? true : j.guild_id, null == j ? true : j.id, l), {
+  } = (0, S.lj)("OverlayV3StreamWatchNudge"), p = null == n ? true : n.application_id, C = g.Z.getChannel(t), N = null != p ? d.Z.getApplication(p) : null, w = null != p ? b.Z.getDetectableGame(p) : null, T = null != p ? h.ZP.getRunningGames().find(e => e.id === p) : null, k = null != (a = null != (r = null == T ? true : T.name) ? r : null == w ? true : w.name) ? a : null == N ? true : N.name, D = (0, v.oY)(null == C ? true : C.guild_id, null == C ? true : C.id, l), {
     trackView: R,
     trackClick: L
-  } = (0, C.Rg)(_.n0.StreamWatchNudge, {
+  } = (0, j.Rg)(_.n0.StreamWatchNudge, {
     notif_type: _.n0.StreamWatchNudge,
     notif_user_id: l.id,
     activity_type: null == n ? true : n.type,

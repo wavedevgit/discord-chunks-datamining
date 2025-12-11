@@ -12,85 +12,95 @@ var Chunk54381 = require("./54381.js"),
   Chunk647889 = require("./647889.js"),
   Chunk478411 = require("./478411.js");
 let u = e => {
-    var t, n;
     let {
       data: {
-        title: u,
-        subtitle: m,
-        placeholder: p,
-        rows: b,
-        character_limit: g,
-        pattern: f
+        title: t,
+        subtitle: n,
+        placeholder: u,
+        rows: m,
+        character_limit: b,
+        pattern: p
       },
-      onChange: x,
-      initialText: h,
-      isRequired: v
-    } = e, _ = l.useRef(a.Z.reactParserFor((t = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({}, a.Z.defaultRules), n = n = {
-      link: s.s
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-      var n = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
-      }
-      return n
-    })(Object(n)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = l.useState(""), [Z, O] = l.useState(null);
+      onChange: g,
+      initialText: f,
+      isRequired: h
+    } = e, x = l.useMemo(() => {
+      var e, t;
+      return a.Z.reactParserFor((e = function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[t] = r
+          })
+        }
+        return e
+      }({}, a.Z.defaultRules), t = t = {
+        link: s.s
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
+        }
+        return n
+      })(Object(t)).forEach(function(n) {
+        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+      }), e))
+    }, []), [v, _] = l.useState(""), [j, y] = l.useState(null);
     l.useEffect(() => {
       var e;
-      y(null != (e = null == h ? true : h.value) ? e : "")
-    }, [h]);
-    let I = l.useCallback(e => {
-      let t = null != f ? new RegExp(f) : null;
-      null == t || t.test(e) ? null != e && (O(null), y(e), x({
+      _(null != (e = null == f ? true : f.value) ? e : "")
+    }, [f]);
+    let O = l.useCallback(e => {
+      let t = null != p ? new RegExp(p) : null;
+      null == t || t.test(e) ? null != e && (y(null), _(e), g({
         value: e,
         isValid: true
-      })) : (O(o.intl.string(o.t["24xrGb"])), x({
+      })) : (y(o.intl.string(o.t["24xrGb"])), g({
         value: e,
         isValid: false
       }))
-    }, [x, f]);
+    }, [g, p]);
     return (0, r.jsxs)("div", {
       className: c.marginBottom8,
-      children: [null != u && (0, r.jsx)("div", {
+      children: [null != t && (0, r.jsx)("div", {
         className: c.marginBottom8,
         children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
-          children: [u, v && (0, r.jsx)("span", {
+          children: [t, h && (0, r.jsx)("span", {
             className: d.required,
             children: "*"
           })]
         })
-      }), (0, r.jsx)(i.Kx8, {
-        maxLength: g,
-        onChange: I,
-        value: j,
-        error: Z,
-        rows: b,
-        placeholder: p,
+      }), 1 === m ? (0, r.jsx)(i.oil, {
+        maxLength: b,
+        onChange: O,
+        value: v,
+        error: j,
+        placeholder: u,
         autoFocus: true
-      }), null != m && (0, r.jsx)("div", {
+      }) : (0, r.jsx)(i.Kx8, {
+        maxLength: b,
+        onChange: O,
+        value: v,
+        error: j,
+        rows: m,
+        placeholder: u,
+        autoFocus: true
+      }), null != n && (0, r.jsx)("div", {
+        className: c.marginTop4,
         children: (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: _.current(m)
+          children: x(n)
         })
       })]
     })

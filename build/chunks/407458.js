@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 407458, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  WY: () => S,
+  WY: () => T,
   j$: () => g
 }), require("./539854.js");
 var Chunk442837 = require("./442837.js"),
@@ -16,7 +16,7 @@ let d = (0, Chunk972959.H)(() => ({
   currentPlayingSound: null
 }));
 
-function S() {
+function T() {
   let t = d.getField("currentPlayingSound");
   null == module || module.stop(), d.setState({
     currentPlayingSound: null

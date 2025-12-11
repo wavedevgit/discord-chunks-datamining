@@ -16,8 +16,8 @@ let m = e => {
   let {
     message: t,
     reportId: n
-  } = e, [m, p] = l.useState(false), b = l.useCallback(() => {
-    p(true), a.ZP.trackWithMetadata(c.rMx.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
+  } = e, [m, b] = l.useState(false), p = l.useCallback(() => {
+    b(true), a.ZP.trackWithMetadata(c.rMx.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
       report_id: n
     }), i.Z.deleteMessage(t.getChannelId(), t.id)
   }, [t, n]), g = l.useMemo(() => {
@@ -32,6 +32,6 @@ let m = e => {
     buttonText: m ? u.intl.string(u.t.f3pnLL) : u.intl.string(u.t.ch2xbt),
     buttonDisabled: m,
     buttonVariant: "critical-primary",
-    onButtonPress: b
+    onButtonPress: p
   }) : null
 }

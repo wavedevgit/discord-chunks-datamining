@@ -460,7 +460,7 @@ class eu extends(r = Chunk473749.PureComponent) {
     }), P = async () => {
       this.setState({
         usernameFocused: true
-      }), a.length > 0 && !D.Z.wasRegistrationSuggestionFetched(a) && await w.Z.fetchSuggestionsRegistration(a)
+      }), a.length > 0 && !k.Z.wasRegistrationSuggestionFetched(a) && await D.Z.fetchSuggestionsRegistration(a)
     }, R = e => {
       this.setState({
         username: e.toLocaleLowerCase(),
@@ -470,7 +470,7 @@ class eu extends(r = Chunk473749.PureComponent) {
       children: e()
     }, "custom-header") : (0, i.jsx)(N.Dx, {
       children: er.intl.string(er.t.wC4TlR)
-    }, "title"), k = (0, i.jsxs)(N.gO, {
+    }, "title"), w = (0, i.jsxs)(N.gO, {
       className: es.marginTop20,
       children: [(0, i.jsx)(N.II, {
         autoFocus: true,
@@ -591,7 +591,7 @@ class eu extends(r = Chunk473749.PureComponent) {
         children: [(0, i.jsx)(N.Dx, {
           className: ei.createAccountTemplateHeader,
           children: er.intl.string(er.t.wC4TlR)
-        }), k]
+        }), w]
       }, "register-title")]
     }) : (0, i.jsxs)(N.ZP, {
       onSubmit: this.handleSubmit,
@@ -606,7 +606,7 @@ class eu extends(r = Chunk473749.PureComponent) {
           icon: g.V7D,
           iconPosition: "start"
         })
-      }) : null, L, k]
+      }) : null, L, w]
     })
   }
   render() {
@@ -649,7 +649,7 @@ class eu extends(r = Chunk473749.PureComponent) {
       })), m.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
-      }), null == l || l(e), K.S.dispatch(X.CkL.WAVE_EMPHASIZE)
+      }), null == l || l(e), H.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), ea(this, "handleSubmit", e => {
       null == e || e.preventDefault();
       let {
@@ -678,11 +678,11 @@ class eu extends(r = Chunk473749.PureComponent) {
         dateOfBirthClientError: er.intl.string(er.t.EkokLy)
       }), o = true)), o || this.handleRegister()
     }), ea(this, "trackInputFocus", e => {
-      H.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
+      K.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
         field: e
       })
     }), ea(this, "trackInputBlur", e => {
-      H.default.track(X.rMx.REGISTER_INPUT_BLUR, {
+      K.default.track(X.rMx.REGISTER_INPUT_BLUR, {
         field: e
       })
     }), ea(this, "handleBirthdayChange", e => {
@@ -742,7 +742,7 @@ function ed(e) {
       country: L.Z.getCountryCode(),
       hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()
     })),
-    n = (0, d.e7)([D.Z], () => D.Z.registrationUsernameSuggestion()),
+    n = (0, d.e7)([k.Z], () => k.Z.registrationUsernameSuggestion()),
     [r, a] = s.useState($.EW.FULL);
   return (0, v.Z)({
     type: u.ImpressionTypes.VIEW,
@@ -768,14 +768,14 @@ function eh(e) {
     o = (0, M.a)(n, true, true),
     u = n.length > 0;
   return t = u ? (0, c.EQ)(o).with({
-    type: k.K.ERROR,
+    type: w.K.ERROR,
     message: c.P.select()
   }, e => (0, i.jsx)(g.Text, {
     className: ei.messageNegative,
     variant: "text-sm/normal",
     children: e
   })).with({
-    type: k.K.AVAILABLE,
+    type: w.K.AVAILABLE,
     message: c.P.select()
   }, e => (0, i.jsx)(g.Text, {
     className: ei.messagePositive,
@@ -797,7 +797,7 @@ function eh(e) {
     color: "text-default",
     children: er.intl.string(er.t.z7c4bP)
   }), (0, i.jsx)(B.Z, {
-    show: u && (null == o ? true : o.type) === k.K.ERROR || a,
+    show: u && (null == o ? true : o.type) === w.K.ERROR || a,
     top: false,
     bottom: 20,
     children: t

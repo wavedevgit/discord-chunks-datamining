@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 776570, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ function g() {
     sourcePage: "voice"
   })
 }
-let T = (0, Chunk509613.k4)(Chunk313789.n.VOICE_CATEGORY, {
+let S = (0, Chunk509613.k4)(Chunk313789.n.VOICE_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.K3lovD),
   useNotice: function() {
     let t = (0, Chunk825655.o)("voice");

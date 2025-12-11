@@ -29,8 +29,8 @@ function S(e, t, n, S) {
   if (h.Z.isNotificationDisabled(O.n0.TextChat)) return (0, c.GN)(u.Ay, u.yk), null;
   let {
     icon: I,
-    title: j,
-    body: C
+    title: C,
+    body: j
   } = (0, o.Xi)(e, t, n), {
     trackView: _,
     trackClick: Z
@@ -45,12 +45,12 @@ function S(e, t, n, S) {
   });
   return {
     icon: I,
-    title: j,
+    title: C,
     body: t.content.length > 0 ? (0, l.ZP)(t, {
       noStyleAndInteraction: true,
       formatInline: true,
       hideSimpleEmbedContent: false
-    }).content : C,
+    }).content : j,
     hint: (e, t) => e && !t ? null : (0, b.QR)((0, y.Pb)(), E.t.ykjOAJ, E.intl.string(E.t.jZkzVJ)),
     maxBodyLines: 2,
     renderFooter: (n, r, a) => n && !a ? (0, i.jsx)(g.Z, {

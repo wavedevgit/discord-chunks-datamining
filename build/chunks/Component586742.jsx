@@ -186,7 +186,7 @@ let R = Chunk473749.memo(function(e) {
       })
     }) : h ? (0, i.jsx)("div", {
       ref: p,
-      children: (0, i.jsx)(C.E, {
+      children: (0, i.jsx)(j.E, {
         emptyText: P.intl.string(P.t.aTiM42),
         icon: s.Odl,
         absolute: true
@@ -233,7 +233,7 @@ function V(e) {
       ref: I
     } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
-      participantTileWidth: C,
+      participantTileWidth: j,
       visibleParticipants: _
     } = (0, b.ZB)(O ? E : x, p, {
       tileWidth: N.vZ,
@@ -295,7 +295,7 @@ function V(e) {
         height: c
       } = z(D(k({}, o), {
         widget: a,
-        operation: j.B.RESIZE_NORTH,
+        operation: C.B.RESIZE_NORTH,
         computedSize: {
           width: r,
           height: i
@@ -322,8 +322,8 @@ function V(e) {
     channel: s,
     participants: _,
     participantsVersion: g,
-    width: O ? C : null != E ? E : e.width,
-    height: O ? null != x ? x : e.height : C,
+    width: O ? j : null != E ? E : e.width,
+    height: O ? null != x ? x : e.height : j,
     containerRef: I
   }))
 }

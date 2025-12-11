@@ -136,7 +136,7 @@ function y(e) {
       children: o.map(e => {
         let {
           key: t,
-          useTitle: n
+          getTitle: n
         } = e;
         return (0, r.jsx)(s.njP.Item, {
           id: t,

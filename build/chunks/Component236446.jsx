@@ -2,7 +2,7 @@
 /** chunk id: 236446, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk572378 = require("./572378.js"),
   Chunk478411 = require("./478411.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -46,7 +46,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-class D extends Chunk473749.PureComponent {
+class k extends Chunk473749.PureComponent {
   componentDidMount() {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
@@ -151,7 +151,7 @@ class D extends Chunk473749.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), w(this, "handleContinue", () => {
+    super(...e), D(this, "handleContinue", () => {
       let {
         defaultRoute: e,
         transitionTo: t
@@ -161,21 +161,21 @@ class D extends Chunk473749.PureComponent {
   }
 }
 
-function k(e) {
+function w(e) {
   let t = {
     guildTemplate: (0, c.e7)([f.Z], () => f.Z.getGuildTemplate(e.code)),
     nativeAppState: (0, c.e7)([h.Z], () => h.Z.getState(e.code)),
     authenticated: (0, c.e7)([b.default], () => b.default.isAuthenticated()),
     defaultRoute: (0, c.e7)([j.Z], () => j.Z.defaultRoute)
   };
-  return (0, r.jsx)(D, function(e) {
+  return (0, r.jsx)(k, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        w(e, t, n[t])
+        D(e, t, n[t])
       })
     }
     return e

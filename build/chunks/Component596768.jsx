@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 596768, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk865362 = require("./865362.js"),
   Chunk663618 = require("./663618.js");
-let O = [{
+let T = [{
     key: "id",
     cellClassName: Chunk865362.eventColumn,
     render(e) {
@@ -54,7 +54,7 @@ let O = [{
       return t.toLocaleString()
     }
   }],
-  T = [{
+  O = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -139,7 +139,7 @@ function N() {
     TabBar: x,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
-    tabs: T
+    tabs: O
   }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
@@ -174,7 +174,7 @@ function N() {
         onClick: Chunk31336.Zw
       })]
     }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-      columns: O,
+      columns: T,
       data: Chunk658722,
       selectedRowKey: Chunk913527,
       onClickRow: e => d(e.key)

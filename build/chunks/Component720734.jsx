@@ -1,4 +1,4 @@
-/** Chunk was on 945 **/
+/** Chunk was on 23736 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tv,
@@ -188,8 +188,8 @@ function tf(e) {
     avatarDecoration: v,
     size: (0, I.y9)(x.EFr.SIZE_32)
   }), E = (0, q.Z)(), {
-    updateOpenPopoutRef: O,
-    highlightBadge: T,
+    updateOpenPopoutRef: T,
+    highlightBadge: O,
     setHighlightBadge: N
   } = function() {
     let e = r.useRef(null),
@@ -238,7 +238,7 @@ function tf(e) {
         } = e;
         return (0, a.jsx)(en.Z, {
           currentUser: c,
-          highlightBadge: T,
+          highlightBadge: O,
           openedAt: t,
           onClose: () => {
             null == n || n()
@@ -257,7 +257,7 @@ function tf(e) {
       onRequestClose: () => {
         m(), N(true)
       },
-      children: e => (O(e), (0, a.jsxs)(x.P3F, td(tc({
+      children: e => (T(e), (0, a.jsxs)(x.P3F, td(tc({
         innerRef: _,
         style: P
       }, e), {
@@ -519,13 +519,13 @@ class tx extends Chunk473749.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, B.Z)(e, t, tn.jXE.ACCOUNT_PANEL), (0, F.v)(T.Z.ACCOUNT, F.d.MIC, n)
+      (0, B.Z)(e, t, tn.jXE.ACCOUNT_PANEL), (0, F.v)(O.Z.ACCOUNT, F.d.MIC, n)
     }), to(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, tn.jXE.ACCOUNT_PANEL), (0, F.v)(T.Z.ACCOUNT, F.d.DEAFEN, !t)
+      (0, U.Z)(e, tn.jXE.ACCOUNT_PANEL), (0, F.v)(O.Z.ACCOUNT, F.d.DEAFEN, !t)
     }), to(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eG.Z.isConnected() ? (0, ey.openUserSettings)(ev.n.VOICE_AND_VIDEO_PANEL, {
         section: tn.oAB.VOICE
@@ -542,10 +542,10 @@ class tx extends Chunk473749.PureComponent {
           user: t,
           premiumSubscription: this.props.premiumSubscription,
           webBuildOverride: this.props.webBuildOverride,
-          onInteraction: (0, G.u)("UserSettingsCogContextMenu", T.Z.ACCOUNT)
+          onInteraction: (0, G.u)("UserSettingsCogContextMenu", O.Z.ACCOUNT)
         }))
       })
-    }), to(this, "audioOnInteractionHandler", (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT)), to(this, "handleInputAudioContextMenu", (e, t) => {
+    }), to(this, "audioOnInteractionHandler", (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT)), to(this, "handleInputAudioContextMenu", (e, t) => {
       this.dismissTooltips(), (0, b.jW)(e, async () => {
         let {
           default: e
@@ -835,7 +835,7 @@ function tv() {
       selfDeaf: S,
       deaf: E
     } = (0, Chunk879815.Z)(Chunk410575),
-    O = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    T = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
@@ -1048,7 +1048,7 @@ function ty(e) {
     } = e,
     S = n || s || i,
     E = r.useRef(null),
-    O = r.useRef(null),
+    T = r.useRef(null),
     P = (0, eD.b)(S),
     {
       activeVoice: w,
@@ -1057,9 +1057,9 @@ function ty(e) {
     } = (0, eN.o)(),
     {
       showSilentLagWarning: R
-    } = (0, eT.Y)(),
+    } = (0, eO.Y)(),
     A = null != w,
-    D = (0, eO.z)(w),
+    D = (0, eT.z)(w),
     U = (0, d.e7)([eG.Z], () => eG.Z.isConnected()),
     {
       Component: B,
@@ -1083,11 +1083,11 @@ function ty(e) {
   }) : z;
   let {
     analyticsLocations: K
-  } = (0, N.ZP)(T.Z.AUDIO_INPUT_BUTTON), Q = (0, eS.Hu)({
-    location: T.Z.AUDIO_INPUT_BUTTON,
+  } = (0, N.ZP)(O.Z.AUDIO_INPUT_BUTTON), Q = (0, eS.Hu)({
+    location: O.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   }), Y = (0, eE.av)({
-    location: T.Z.AUDIO_INPUT_BUTTON,
+    location: O.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   });
   r.useEffect(() => () => V(), [S, V]);
@@ -1147,7 +1147,7 @@ function ty(e) {
         return _(), (0, a.jsx)(N.Gt, {
           value: K,
           children: ed ? (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             maybeRenderPTTCheckbox: true,
             renderInputProfiles: eu.length > 0,
@@ -1156,7 +1156,7 @@ function ty(e) {
             renderInputVolume: true,
             renderSettingsButton: true
           }) : (0, a.jsx)(L.default, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             renderInputDevices: true,
             renderInputProfiles: eu.length > 0,
@@ -1344,7 +1344,7 @@ function ty(e) {
                   onCTA: () => $(true)
                 }));
                 let c = () => (0, a.jsx)(e9.Z, tc({
-                  ref: O,
+                  ref: T,
                   plated: null != v,
                   tooltipForceOpen: en,
                   tooltipColor: en ? x.r6K.GREEN : true,
@@ -1378,7 +1378,7 @@ function ty(e) {
                   }
                 }, r));
                 return null != s ? (0, a.jsx)(x.yRy, {
-                  targetElementRef: O,
+                  targetElementRef: T,
                   renderPopout: () => s,
                   animation: x.yRy.Animation.TRANSLATE,
                   animationPosition: "bottom",
@@ -1422,9 +1422,9 @@ function tC(e) {
     location: "HeadphonesButton"
   }), _ = (0, D.Z)(t, n, i), {
     analyticsLocations: S
-  } = (0, N.ZP)(T.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
+  } = (0, N.ZP)(O.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
   r.useEffect(() => () => b(), [h, b]);
-  let O = r.useCallback(e => {
+  let T = r.useCallback(e => {
     o(e, S)
   }, [o, S]);
   return C ? (0, a.jsx)(N.Gt, {
@@ -1438,7 +1438,7 @@ function tC(e) {
         return m(), (0, a.jsx)(N.Gt, {
           value: S,
           children: (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             renderOutputDevices: true,
             renderOutputVolume: true,
@@ -1535,7 +1535,7 @@ function tC(e) {
         className: c
       }),
       onClick: s,
-      onContextMenu: O,
+      onContextMenu: T,
       innerClassName: l()({
         [ts.redIcon]: n
       }),
