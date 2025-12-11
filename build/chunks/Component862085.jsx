@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 862085, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk556012 = require("./556012.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk464992 = require("./464992.js");
+  Chunk239244 = require("./239244.js");
 
 function o(e) {
   let {
@@ -22,13 +22,13 @@ function o(e) {
   let {
     headerText: g,
     descriptionText: m,
-    icon: p
+    icon: f
   } = u;
   return (0, r.jsxs)("div", {
     className: s.actionContainer,
     children: [(0, r.jsx)("div", {
       className: s.actionIconContainer,
-      children: (0, r.jsx)(p, {
+      children: (0, r.jsx)(f, {
         size: "custom",
         color: "currentColor",
         className: s.actionIcon

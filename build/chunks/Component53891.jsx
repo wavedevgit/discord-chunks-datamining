@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 53891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j
@@ -18,9 +18,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk446094 = require("./446094.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let g = new Chunk710845.Z("GuildTagCoachmark");
+let b = new Chunk710845.Z("GuildTagCoachmark");
 
-function b(e) {
+function g(e) {
   function t(t) {
     var n;
     o.Z.dispatch({
@@ -35,13 +35,13 @@ function b(e) {
     isAdopting: n,
     onAdoptTag: r,
     onEditProfile: i
-  } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
-    text: f.intl.string(f.t.jwEaiX),
+  } = (0, h.Z)(e.guild.id, () => t(f.L.TAKE_ACTION)), c = [{
+    text: x.intl.string(x.t.jwEaiX),
     loading: n,
     onClick: r,
     variant: "primary"
   }, {
-    text: f.intl.string(f.t.s5vZlQ),
+    text: x.intl.string(x.t.s5vZlQ),
     onClick: i,
     variant: "secondary"
   }];
@@ -58,13 +58,13 @@ function b(e) {
           guildProfile: e.guild.profile
         }
       },
-      title: f.intl.formatToPlainString(f.t["m/Tc3n"], {
+      title: x.intl.formatToPlainString(x.t["m/Tc3n"], {
         guildName: e.guild.name
       }),
-      body: f.intl.string(f.t.DrAXIr),
+      body: x.intl.string(x.t.DrAXIr),
       actions: c,
       size: "md",
-      onRequestClose: () => t(x.L.USER_DISMISS)
+      onRequestClose: () => t(f.L.USER_DISMISS)
     })]
   })
 }
@@ -78,19 +78,19 @@ function v(e) {
       lastSeenInfo: {
         tag: e.guild.profile.tag
       }
-    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
+    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, f.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   let {
     isAdopting: n,
     onAdoptTag: r,
     onEditProfile: c
-  } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), u = [{
-    text: f.intl.string(f.t.jwEaiX),
+  } = (0, h.Z)(e.guild.id, () => t(f.L.TAKE_ACTION)), u = [{
+    text: x.intl.string(x.t.jwEaiX),
     loading: n,
     onClick: r,
     variant: "primary"
   }, {
-    text: f.intl.string(f.t.s5vZlQ),
+    text: x.intl.string(x.t.s5vZlQ),
     onClick: c,
     variant: "secondary"
   }];
@@ -107,13 +107,13 @@ function v(e) {
           guildProfile: e.guild.profile
         }
       },
-      title: f.intl.formatToPlainString(f.t.VFqnyU, {
+      title: x.intl.formatToPlainString(x.t.VFqnyU, {
         guildName: e.guild.name
       }),
-      body: f.intl.string(f.t.DrAXIr),
+      body: x.intl.string(x.t.DrAXIr),
       actions: u,
       size: "md",
-      onRequestClose: () => t(x.L.USER_DISMISS)
+      onRequestClose: () => t(f.L.USER_DISMISS)
     })]
   })
 }
@@ -121,7 +121,7 @@ function v(e) {
 function j(e) {
   let t = (0, r.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
     n = (0, m.S3)(e.guildId);
-  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(b, {
+  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(g, {
     guild: t,
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
@@ -131,5 +131,5 @@ function j(e) {
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : (g.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
+  }) : (b.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
 }

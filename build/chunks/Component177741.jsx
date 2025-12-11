@@ -8,7 +8,7 @@ require.r(exports), require.d(exports, {
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  d = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -23,20 +23,20 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk138464 = require("./138464.js"),
   Chunk438820 = require("./438820.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk577562 = require("./577562.js"),
-  Chunk426401 = require("./426401.js"),
-  Chunk926734 = require("./926734.js"),
-  Chunk601046 = require("./601046.js"),
-  Chunk421391 = require("./421391.js"),
-  Chunk153911 = require("./153911.js"),
-  Chunk588369 = require("./588369.js"),
+  Chunk372630 = require("./372630.js"),
+  Chunk172625 = require("./172625.js"),
+  Chunk45254 = require("./45254.js"),
+  Chunk554560 = require("./554560.js"),
+  Chunk177808 = require("./177808.js"),
+  Chunk739014 = require("./739014.js"),
+  Chunk496059 = require("./496059.js"),
   U = ((i = {}).WUMPUS_FLIGHT = "wumpus_flight", i.GRADIENT_HIGHLIGHT = "gradient_highlight", i);
 async function C(e, t) {
   try {
     l.Z.dispatch({
       type: "PURCHASED_ITEMS_FESTIVITY_IS_FETCHING_WOW_MOMENT_MEDIA"
     });
-    let a = e ? g.Z : b.Z;
+    let a = e ? S.Z : g.Z;
     window.matchMedia("(min-width: 1012px) and (max-width: 1980px)").matches || window.matchMedia("(min-height: 720px) and (max-height: 1408px)").matches ? a = e ? P.Z : y.Z : (window.matchMedia("(min-width: 1980px)").matches || window.matchMedia("(min-height: 1408px)").matches) && (a = e ? Z.Z : F.Z);
     let n = await u.tn.get({
         url: a,
@@ -49,7 +49,7 @@ async function C(e, t) {
       wumpusMedia: i
     })
   } catch (e) {
-    f.Z.captureException(e), l.Z.dispatch({
+    h.Z.captureException(e), l.Z.dispatch({
       type: "PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_FAILURE"
     })
   }
@@ -60,23 +60,23 @@ function H() {
     [t, a] = Chunk473749.useState(null),
     {
       isFetchingMedia: i,
-      canPlayWowMoment: s
+      canPlayWowMoment: d
     } = (0, Chunk442837.cj)([Chunk438820.Z], () => ({
       isFetchingMedia: Chunk438820.Z.isFetchingWowMomentMedia,
       canPlayWowMoment: Chunk438820.Z.canPlayWowMoment
     })),
     [u, l] = Chunk473749.useState(false),
-    f = (0, Chunk526167.vu)(),
-    g = (0, Chunk526167.rO)(),
-    b = Chunk960048 > 52 || false === Chunk960048 || Chunk426401,
-    P = Chunk426401 ? "video/mp4" : "video/webm",
-    y = Chunk926734 && !module && Chunk120356 && null === exports && false === i;
+    h = (0, Chunk526167.vu)(),
+    S = (0, Chunk526167.rO)(),
+    g = Chunk960048 > 52 || false === Chunk960048 || Chunk172625,
+    P = Chunk172625 ? "video/mp4" : "video/webm",
+    y = Chunk45254 && !module && Chunk120356 && null === exports && false === i;
   Chunk473749.useEffect(() => {
-    Chunk421391 && C(Chunk426401, require)
-  }, [Chunk421391, Chunk426401, require]), Chunk473749.useEffect(() => {
+    Chunk177808 && C(Chunk172625, require)
+  }, [Chunk177808, Chunk172625, require]), Chunk473749.useEffect(() => {
     function t() {
       !module && Chunk438820.Z.canPlayWowMoment && (Chunk570140(true), n = setTimeout(() => {
-        Chunk570140(false), Chunk588369(true), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_WOW_MOMENT_VIEWED, {
+        Chunk570140(false), Chunk496059(true), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_WOW_MOMENT_VIEWED, {
           wow_moment_type: "gradient_highlight"
         }), (0, Chunk138464.H)(false)
       }, 2e3))
@@ -84,9 +84,9 @@ function H() {
     return Chunk585483.S.subscribe(Chunk981631.CkL.PREMIUM_SUBSCRIPTION_CREATED, exports), () => {
       Chunk585483.S.unsubscribe(Chunk981631.CkL.PREMIUM_SUBSCRIPTION_CREATED, exports)
     }
-  }, [module, Chunk926734]);
+  }, [module, Chunk45254]);
   let [Z, F] = Chunk473749.useState(false), [U, H] = Chunk473749.useState(false), O = (0, Chunk481060.q_F)({
-    opacity: .2 * !!Chunk153911,
+    opacity: .2 * !!Chunk739014,
     config: {
       duration: 100
     }
@@ -98,29 +98,29 @@ function H() {
   }, U ? "respect-motion-settings" : "animate-never");
   Chunk473749.useEffect(() => {
     let e = false;
-    return Chunk153911 && (e = window.setTimeout(() => {
+    return Chunk739014 && (e = window.setTimeout(() => {
       H(true)
     }, 1e3)), () => {
       window.clearTimeout(module)
     }
-  }, [Chunk153911]), Chunk473749.useEffect(() => {
+  }, [Chunk739014]), Chunk473749.useEffect(() => {
     let e = false;
     return U && (e = window.setTimeout(() => {
-      H(false), Chunk588369(false)
+      H(false), Chunk496059(false)
     }, 1e3)), () => {
       window.clearTimeout(module)
     }
   }, [U]);
   let x = Chunk544891 && null !== exports,
-    R = x || Chunk153911;
+    R = x || Chunk739014;
   return (0, Chunk54381.jsxs)("div", {
-    className: d()({
-      [Chunk577562.wrapper]: !R,
-      [Chunk577562.activeWrapper]: R
+    className: s()({
+      [Chunk372630.wrapper]: !R,
+      [Chunk372630.activeWrapper]: R
     }),
     children: [x && (0, Chunk54381.jsx)(Chunk70097.Z, {
       autoPlay: true,
-      className: Chunk577562.videoWrapper,
+      className: Chunk372630.videoWrapper,
       onPlay: () => {
         clearTimeout(n), Chunk626135.default.track(Chunk981631.rMx.PREMIUM_WOW_MOMENT_VIEWED, {
           wow_moment_type: "wumpus_flight"
@@ -131,16 +131,16 @@ function H() {
       },
       children: (0, Chunk54381.jsx)("source", {
         src: exports,
-        type: Chunk601046
+        type: Chunk554560
       })
     }), (0, Chunk54381.jsx)(Chunk467721.animated.div, {
-      className: Chunk577562.gadientHighlight,
+      className: Chunk372630.gadientHighlight,
       style: O
     }), (0, Chunk54381.jsx)(Chunk467721.animated.div, {
-      className: Chunk577562.swipeWrapper,
+      className: Chunk372630.swipeWrapper,
       style: v,
       children: (0, Chunk54381.jsxs)("svg", {
-        className: Chunk577562.swipe,
+        className: Chunk372630.swipe,
         viewBox: "0 0 848 1024",
         fill: "none",
         children: [(0, Chunk54381.jsx)("path", {

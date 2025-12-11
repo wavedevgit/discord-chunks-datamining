@@ -7,8 +7,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk100993 = require("./100993.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk984019 = require("./984019.js"),
+  Chunk478411 = require("./478411.js");
 let d = e => {
     let {
       element: t,
@@ -21,9 +21,9 @@ let d = e => {
     let m = t.name,
       {
         title: p,
-        options: g
+        options: b
       } = t.data,
-      _ = l.useCallback(e => {
+      g = l.useCallback(e => {
         null != e && (u(e), n(e))
       }, [n]);
     return (0, r.jsxs)("div", {
@@ -39,8 +39,8 @@ let d = e => {
         })
       }), (0, r.jsx)(i.y6, {
         value: c,
-        onChange: _,
-        options: g
+        onChange: g,
+        options: b
       })]
     }, m)
   },

@@ -12,10 +12,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, n, t, d) {
-  let u = r.useRef(null),
-    [m, g] = r.useState(false);
+  let u = a.useRef(null),
+    [m, g] = a.useState(false);
   return {
-    handleCopyServerIp: r.useCallback(() => (null != u.current && clearTimeout(u.current), (0, o.Se)(e, n, t), (0, l.JG)(null != d ? d : ""), (0, i.showToast)((0, a.Y)(c.intl.string(c.t["+5kSoW"]), i.ToastType.SUCCESS)), g(true), u.current = setTimeout(() => {
+    handleCopyServerIp: a.useCallback(() => (null != u.current && clearTimeout(u.current), (0, o.Se)(e, n, t), (0, l.JG)(null != d ? d : ""), (0, i.showToast)((0, r.Y)(c.intl.string(c.t["+5kSoW"]), i.ToastType.SUCCESS)), g(true), u.current = setTimeout(() => {
       g(false)
     }, 2 * s.Z.Millis.SECOND), () => {
       null != u.current && clearTimeout(u.current)

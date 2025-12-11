@@ -35,13 +35,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk454703 = require("./454703.js");
+  Chunk156132 = require("./156132.js");
 
 function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), j = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), d = (0, E.k5)(t.id), j = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: k
   } = (0, s.cj)([m.Z], () => ({
@@ -78,7 +78,7 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
       isStudyRoomNotice: m
-    } = e, b = null != n && null != i && !f, E = null != t ? (0, v.DK)(t) : null;
+    } = e, _ = null != n && null != i && !f, E = null != t ? (0, v.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -97,7 +97,7 @@ function D(e) {
       }
     }
     if (null == t || d) {
-      if (b) {
+      if (_) {
         let e = L.intl.string(L.t.ZYO5OK);
         return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFc"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
           noticeType: 0,
@@ -133,7 +133,7 @@ function D(e) {
           })
         }
       }
-    } else if (t.entity_type === w.WX.STAGE_INSTANCE && b) {
+    } else if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
       let e = L.intl.string(L.t.ZYO5OK);
       return (null == a ? true : a.speaker) ? e = L.intl.string(L.t["/cnSFc"]) : null != a && (e = L.intl.string(L.t.btSGOj)), {
         noticeType: 0,
@@ -177,7 +177,7 @@ function D(e) {
       return {
         noticeType: 1,
         title: t.name,
-        location: (0, _.m)(e, true),
+        location: (0, b.m)(e, true),
         locationIcon: (0, r.jsx)(c._tJ, {
           size: "custom",
           color: "currentColor",

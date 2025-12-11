@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 310800, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,26 +17,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk613810 = require("./613810.jsx"),
   Chunk391181 = require("./391181.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk82917 = require("./82917.js");
+  Chunk973501 = require("./973501.js");
 
-function b(e) {
+function h(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: i
   } = e, g = (0, d.ue)(t, {
     publishedOnly: false
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: b
+    shouldRestrictUpdatingCreatorMonetizationSettings: h
   } = (0, s.gX)(t), x = g.length > 0;
   return (0, r.jsx)("div", {
-    className: h.productListingsHeader,
+    className: b.productListingsHeader,
     children: (0, r.jsx)(l.gNt, {
-      label: x ? f.intl.string(f.t.RwuStQ) : f.intl.string(f.t.WKMcMW),
+      label: x ? p.intl.string(p.t.RwuStQ) : p.intl.string(p.t.WKMcMW),
       children: e => x ? (0, r.jsx)("ul", {
-        className: h.productListings,
+        className: b.productListings,
         id: e.controlId,
         children: g.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(p.Z, {
+          children: (0, r.jsx)(f.Z, {
             guildId: t,
             product: e,
             onEditProduct: () => i(e.id),
@@ -85,7 +85,7 @@ function b(e) {
               productId: e.id
             }),
             onReportProduct: () => {},
-            disabled: b
+            disabled: h
           })
         }, e.id))
       }) : (0, r.jsx)(a.Z, {
@@ -107,13 +107,13 @@ function x(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.zxk, {
-      text: f.intl.string(f.t.riG6Da),
+      text: p.intl.string(p.t.riG6Da),
       icon: l.qJs,
       onClick: () => a(null),
       disabled: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(h, {
       guildId: t,
       handleCreateOrEditProduct: a
     })]

@@ -9,11 +9,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk369183 = require("./369183.js"),
+  Chunk326279 = require("./326279.js"),
   Chunk533583 = require("./533583.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk193183 = require("./193183.js");
+  Chunk958429 = require("./958429.js");
 
 function T(e) {
   switch (e) {
@@ -32,23 +32,23 @@ function p(e) {
   let t, {
       device: n,
       certifiedDeviceMetadata: p,
-      onClose: v,
-      transitionState: f
+      onClose: f,
+      transitionState: v
     } = e,
     [U, h] = (0, i.useState)(null != n ? T(n.type) : null),
-    _ = (0, i.useRef)(false);
+    x = (0, i.useRef)(false);
 
-  function x() {
-    _.current = true, d.Wz(n.displayName)
+  function D() {
+    x.current = true, d.Wz(n.displayName)
   }(0, o.zq)(() => {
-    _.current || x()
+    x.current || D()
   }), (0, i.useEffect)(() => {
     s.default.track(u.rMx.OPEN_MODAL, {
       type: null != p ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
       device_name: null != p ? "".concat(p.vendor.name, " ").concat(p.model.name) : n.displayName
     })
   }, [n.displayName, p]);
-  let D = null != p ? m.intl.string(m.t.kiqvHd) : m.intl.string(m.t.AbnGI5);
+  let _ = null != p ? m.intl.string(m.t.kiqvHd) : m.intl.string(m.t.AbnGI5);
   switch (n.type) {
     case c.Q.INPUT:
       t = null != p ? m.intl.format(m.t.NqNqy2, {
@@ -105,14 +105,14 @@ function p(e) {
       })
   }
   return (0, a.jsxs)(r.Y0X, {
-    transitionState: f,
-    "aria-label": D,
+    transitionState: v,
+    "aria-label": _,
     parentComponent: "ConnectedDeviceDetectionModal",
     children: [(0, a.jsx)(r.xBx, {
       separator: false,
       children: (0, a.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
-        children: D
+        children: _
       })
     }), (0, a.jsx)(r.hzk, {
       children: (0, a.jsx)(r.Text, {
@@ -123,11 +123,11 @@ function p(e) {
             look: l.zx.Looks.LINK,
             color: l.zx.Colors.LINK,
             onClick: () => {
-              _.current = true, d.Gl(n.displayName), s.default.track(u.rMx.MODAL_DISMISSED, {
+              x.current = true, d.Gl(n.displayName), s.default.track(u.rMx.MODAL_DISMISSED, {
                 type: null != p ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
                 location_object: n.displayName,
                 dismiss_type: "permanent"
-              }), v()
+              }), f()
             },
             children: m.intl.formatToPlainString(m.t.cwS3E6, {
               device: n.displayName
@@ -145,14 +145,14 @@ function p(e) {
             variant: "secondary",
             text: m.intl.string(m.t.vPBgq7),
             onClick: () => {
-              x(), v()
+              D(), f()
             }
           })
         }), (0, a.jsx)(r.Button, {
           variant: "primary",
           text: m.intl.string(m.t.ydkoDT),
           onClick: () => {
-            _.current = true, null != U && d.mo(n.displayName, U, "New Audio Device Detected Modal"), v()
+            x.current = true, null != U && d.mo(n.displayName, U, "New Audio Device Detected Modal"), f()
           }
         })]
       })

@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk925994 = require("./925994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk564355 = require("./564355.js");
+  Chunk72775 = require("./72775.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -241,9 +241,9 @@ class U extends Chunk473749.Component {
       popup: H
     } = this.state, Y = {
       channel: Chunk710845,
-      className: o()(Chunk925994, Chunk564355.textArea, {
-        [Chunk564355.textAreaSlate]: Chunk403182,
-        [Chunk564355.textAreaDisabled]: Chunk430742 || V
+      className: o()(Chunk925994, Chunk72775.textArea, {
+        [Chunk72775.textAreaSlate]: Chunk403182,
+        [Chunk72775.textAreaDisabled]: Chunk430742 || V
       }),
       id: Chunk388032,
       placeholder: this.getPlaceholder(),
@@ -266,10 +266,10 @@ class U extends Chunk473749.Component {
       onKeyDown: Chunk531643,
       onSubmit: Chunk476326,
       textAreaPaddingClassName: o()({
-        [Chunk564355.textAreaForPostCreation]: Chunk117530 === Chunk541716.Ie.CREATE_FORUM_POST,
-        [Chunk564355.textAreaCustomGift]: Chunk117530 === Chunk541716.Ie.CUSTOM_GIFT,
-        [Chunk564355.textAreaForUserProfile]: Chunk117530 === Chunk541716.Ie.USER_PROFILE,
-        [Chunk564355.textAreaForOverlayInlineReply]: Chunk117530 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
+        [Chunk72775.textAreaForPostCreation]: Chunk117530 === Chunk541716.Ie.CREATE_FORUM_POST,
+        [Chunk72775.textAreaCustomGift]: Chunk117530 === Chunk541716.Ie.CUSTOM_GIFT,
+        [Chunk72775.textAreaForUserProfile]: Chunk117530 === Chunk541716.Ie.USER_PROFILE,
+        [Chunk72775.textAreaForOverlayInlineReply]: Chunk117530 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: Chunk137058,
       useNewSlashCommands: Chunk30465,

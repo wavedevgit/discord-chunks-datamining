@@ -1,5 +1,5 @@
 /** Chunk was on 76815 **/
-/** chunk id: 832239, original params: t,n,e (module,exports,require) **/
+/** chunk id: 832239, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   JO: () => o,
   KK: () => u,
@@ -30,17 +30,17 @@ function c() {
 }
 
 function l(t) {
-  return i.tn.del({
+  return a.tn.del({
     url: r.ANM.DELETE_SAFETY_WARNINGS(t),
     rejectWithError: false
   })
 }
 
-function u(t, n) {
-  return i.tn.post({
+function u(t, e) {
+  return a.tn.post({
     url: r.ANM.ADD_SAFETY_WARNING(t),
     body: {
-      safety_warning_type: n
+      safety_warning_type: e
     },
     rejectWithError: false
   })

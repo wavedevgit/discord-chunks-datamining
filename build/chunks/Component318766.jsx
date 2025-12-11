@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345857 = require("./345857.js");
+  Chunk940003 = require("./940003.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,10 +90,10 @@ let A = 20,
   w = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk345857.premiumTooltipContainer,
+      className: Chunk940003.premiumTooltipContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Fmz, {
-        className: o()(Chunk345857.premiumUnlockAnimation, {
-          [Chunk345857.reducedMotion]: module
+        className: o()(Chunk940003.premiumUnlockAnimation, {
+          [Chunk940003.reducedMotion]: module
         }),
         loop: false,
         shouldAnimate: !module,
@@ -101,7 +101,7 @@ let A = 20,
         importData: () => require.e("21812").then(require.t.bind(require, 741855, 19))
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        className: Chunk345857.premiumTooltipText,
+        className: Chunk940003.premiumTooltipText,
         children: Chunk388032.intl.format(Chunk388032.t["/7R4q4"], {})
       })]
     })

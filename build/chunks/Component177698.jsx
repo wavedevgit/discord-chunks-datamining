@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function b(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -92,13 +92,13 @@ let E = (0, Chunk703912.Z)(e => {
             return
           }
           if (e(o), null == O || null == L) return void a.lock();
-          null == new URL(o).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, _({
+          null == new URL(o).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
             application: L
           }, e)), {
             onCloseCallback: () => {
               a.lock()
             }
-          }, w) : (0, i.h7j)(e => (0, r.jsx)(c.ks, _({}, e)), {
+          }, w) : (0, i.h7j)(e => (0, r.jsx)(c.ks, b({}, e)), {
             onCloseCallback: () => {
               a.lock()
             }
@@ -109,7 +109,7 @@ let E = (0, Chunk703912.Z)(e => {
         cleanup: M
       } = function(e, t) {
         function n() {
-          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(o.j, b(_({}, e), {
+          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(o.j, _(b({}, e), {
             title: m.intl.string(m.t.j2d6Km),
             subtitle: m.intl.string(m.t["4LKmN5"]),
             actions: [{
@@ -124,7 +124,7 @@ let E = (0, Chunk703912.Z)(e => {
           }
         }
       }(Z, A);
-    (0, i.h7j)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, b(_({}, e), {
+    (0, i.h7j)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],

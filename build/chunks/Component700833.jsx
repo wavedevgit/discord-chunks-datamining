@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 700833, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Md: () => f,
-  a0: () => p
+  Md: () => p,
+  a0: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -48,74 +48,74 @@ function m(e, t) {
   }), e
 }
 
-function p(e) {
+function f(e) {
   let {
     dropHoveredIndex: t,
-    formField: p,
-    guild: f,
-    index: b,
+    formField: f,
+    guild: p,
+    index: h,
     isDragEnabled: x,
     submittedGuildJoinRequestsCount: j,
-    removeFormField: _,
-    updateFormField: v,
-    updateFormFieldOrder: O,
-    canRemove: C,
-    actionsLocation: y,
-    fieldStyle: N
-  } = e, E = async () => {
-    await _(b)
-  }, I = async e => {
-    await v(b, e)
-  }, S = async (e, t, n) => {
-    await O(e, t, n)
-  }, T = (0, i.uniqueId)(), P = t === b, w = {
+    removeFormField: v,
+    updateFormField: O,
+    updateFormFieldOrder: C,
+    canRemove: y,
+    actionsLocation: N,
+    fieldStyle: E
+  } = e, I = async () => {
+    await v(h)
+  }, S = async e => {
+    await O(h, e)
+  }, _ = async (e, t, n) => {
+    await C(e, t, n)
+  }, T = (0, i.uniqueId)(), P = t === h, w = {
     key: T,
-    index: b,
+    index: h,
     isDragEnabled: x,
     isDropHovered: P,
     onEdit: () => {
-      0 === j ? h(p, I, f) : (0, l.ZDy)(async () => {
+      0 === j ? b(f, S, p) : (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("74673").then(n.bind(n, 394045));
         return t => (0, r.jsx)(e, m(g({}, t), {
-          guildId: f.id,
+          guildId: p.id,
           submittedGuildJoinRequestsCount: j,
-          onConfirm: () => h(p, I, f)
+          onConfirm: () => b(f, S, p)
         }))
       })
     },
-    onRemove: E,
-    onDrop: S,
-    canRemove: C,
-    actionsLocation: y,
-    fieldStyle: N
+    onRemove: I,
+    onDrop: _,
+    canRemove: y,
+    actionsLocation: N,
+    fieldStyle: E
   };
-  switch (p.field_type) {
+  switch (f.field_type) {
     case a.QJ.TERMS:
       return (0, r.jsx)(c.Z, g({
-        channelId: f.rulesChannelId,
-        title: N === a.it.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
-        formField: p
+        channelId: p.rulesChannelId,
+        title: E === a.it.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
+        formField: f
       }, w));
     case a.QJ.PARAGRAPH:
       return (0, r.jsx)(o.Z, g({
-        formField: p
+        formField: f
       }, w));
     case a.QJ.TEXT_INPUT:
       return (0, r.jsx)(d.Z, g({
-        formField: p
+        formField: f
       }, w));
     case a.QJ.MULTIPLE_CHOICE:
       return (0, r.jsx)(s.Z, g({
-        formField: p
+        formField: f
       }, w));
     default:
       return null
   }
 }
 
-function f(e, t, i) {
+function p(e, t, i) {
   switch (e) {
     case a.QJ.TERMS:
       return (0, l.ZDy)(async () => {
@@ -161,7 +161,7 @@ function f(e, t, i) {
   }
 }
 
-function h(e, t, i) {
+function b(e, t, i) {
   switch (e.field_type) {
     case a.QJ.TERMS:
       return (0, l.ZDy)(async () => {

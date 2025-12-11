@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk70399 = require("./70399.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk229870 = require("./229870.js");
+  Chunk119078 = require("./119078.js");
 let I = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: () => ({
@@ -79,8 +79,8 @@ function E(e) {
     } = e,
     {
       placeholder: E,
-      getAriaLabel: L,
-      icon: b
+      getAriaLabel: b,
+      icon: L
     } = I[l],
     O = "small" === o,
     {
@@ -125,33 +125,33 @@ function E(e) {
         return e
       }({
         action: "WIDGET_ADDED"
-      }, P.getProfileEditAnalyticsOptions())), (0, x.L$)(h.qb.WIDGET_ADDED), null == n || n())
+      }, P.getProfileEditAnalyticsOptions())), (0, g.L$)(h.qb.WIDGET_ADDED), null == n || n())
     }, [u, l, P, N, n]);
-  return (null != P && null != b && (a = b(P)), null == P) ? null : (0, i.jsxs)("div", {
+  return (null != P && null != L && (a = L(P)), null == P) ? null : (0, i.jsxs)("div", {
     className: A.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
       className: r()(A.addButtonContent, O && A.sizeSmall, u && A.loading),
       onClick: T,
-      "aria-label": L(P),
+      "aria-label": b(P),
       "aria-busy": u,
       children: [(() => {
         if (null == P) return null;
         let e = E(P);
         switch (e.variant) {
           case "details":
-            return (0, i.jsx)(j.i, {
+            return (0, i.jsx)(x.i, {
               className: A.placeholderPadding,
               applicationId: e.applicationId,
               size: o
             });
           case "grid":
-            return (0, i.jsx)(j.c, {
+            return (0, i.jsx)(x.c, {
               className: A.placeholderPadding,
               applicationIds: e.applicationIds,
               size: o
             });
           case "application-widget":
-            return (0, i.jsx)(g.Z, {
+            return (0, i.jsx)(j.Z, {
               applicationId: e.applicationId,
               size: o
             });
@@ -182,7 +182,7 @@ function E(e) {
     }), (() => {
       if (null == P) return null;
       let e = E(P);
-      return "application-widget" === e.variant ? (0, i.jsx)(g.T, {
+      return "application-widget" === e.variant ? (0, i.jsx)(j.T, {
         applicationId: e.applicationId,
         size: o
       }) : null

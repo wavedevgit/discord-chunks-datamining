@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk149203 = require("./149203.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk577021 = require("./577021.js");
+  Chunk277170 = require("./277170.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,14 +89,14 @@ class A extends Chunk473749.PureComponent {
         return (0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk577021.searchHeader,
+          className: Chunk277170.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.y3LQCG)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
         return (0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk577021.searchHeader,
+          className: Chunk277170.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.H6zNFz)
         });
       default:
@@ -117,7 +117,7 @@ class A extends Chunk473749.PureComponent {
     } = this.state, t = null;
     return null != module && (t = (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: this.handleClearQuery,
-      className: Chunk577021.backButton,
+      className: Chunk277170.backButton,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
       children: (0, Chunk54381.jsx)(Chunk481060.whL, {
         size: "md",
@@ -171,14 +171,14 @@ class A extends Chunk473749.PureComponent {
       id: Chunk149203.vO,
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
-      className: o()(Chunk577021.container, module),
+      className: o()(Chunk277170.container, module),
       onClick: C,
       ref: exports,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk577021.header,
+        className: Chunk277170.header,
         children: this.renderHeader()
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk577021.content,
+        className: Chunk277170.content,
         children: this.renderContent()
       })]
     })

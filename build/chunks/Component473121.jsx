@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk454585 = require("./454585.js"),
   Chunk273744 = require("./273744.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk204800 = require("./204800.js");
+  Chunk316515 = require("./316515.js");
 let c = e => {
   var t, n;
   let {
@@ -19,7 +19,7 @@ let c = e => {
       button: m
     },
     isModeratorReport: p
-  } = e, g = (null == m ? true : m.type) === "submit", _ = l.useRef(a.Z.reactParserFor((t = function(e) {
+  } = e, b = (null == m ? true : m.type) === "submit", g = l.useRef(a.Z.reactParserFor((t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -57,8 +57,8 @@ let c = e => {
     }) : null, null != u && "" !== c ? (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: _.current(u)
-    }) : null, g && !p && (0, r.jsx)(i.Text, {
+      children: g.current(u)
+    }) : null, b && !p && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: o.intl.format(o.t.Q0tSKT, {})
     })]

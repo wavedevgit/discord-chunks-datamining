@@ -13,8 +13,8 @@ function s(e) {
     guildId: t,
     applicationStatus: n,
     sortOrder: s
-  } = e, o = (0, r.e7)([i.Z], () => i.Z.getRequests(t, n), [n, t]);
+  } = e, o = (0, r.e7)([a.Z], () => a.Z.getRequests(t, n), [n, t]);
   return {
-    guildJoinRequests: l.useMemo(() => s === a.Nw.TIMESTAMP_DESC ? [...o].reverse() : o, [s, o])
+    guildJoinRequests: l.useMemo(() => s === i.Nw.TIMESTAMP_DESC ? [...o].reverse() : o, [s, o])
   }
 }

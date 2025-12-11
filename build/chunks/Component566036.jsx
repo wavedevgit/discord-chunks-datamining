@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 566036, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,10 +15,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk383124 = require("./383124.jsx"),
   Chunk795691 = require("./795691.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk448369 = require("./448369.js");
-let f = () => null;
+  Chunk39169 = require("./39169.js");
+let p = () => null;
 
-function h(e) {
+function b(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
@@ -30,7 +30,7 @@ function h(e) {
   return (0, r.jsx)(s.d, {
     multi: true,
     hidePills: true,
-    wrapperClassName: p.selectWrapper,
+    wrapperClassName: f.selectWrapper,
     options: l,
     value: t,
     placeholder: m.intl.string(m.t.JTLolO),
@@ -38,19 +38,19 @@ function h(e) {
     isDisabled: 20 === t.length || i,
     matchSorterOptions: a,
     clearQueryOnSelect: true,
-    customPillContainerClassName: p.pills,
-    renderCustomPill: f
+    customPillContainerClassName: f.pills,
+    renderCustomPill: p
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     gameApplicationIds: t,
     onRemoveGame: n,
     disabled: i
   } = e;
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: p.selectedGames,
+    className: f.selectedGames,
     children: t.map(e => (0, r.jsx)(u.Z, {
       applicationId: e,
       selected: true,
@@ -70,22 +70,22 @@ function j(e) {
     d.Z.updateGuildProfile(s, {
       gameApplicationIds: e
     })
-  }, [s]), p = i.useCallback(e => {
+  }, [s]), f = i.useCallback(e => {
     let t = c.filter(t => t !== e);
     d.Z.updateGuildProfile(s, {
       gameApplicationIds: t
     })
-  }, [s, c]), f = i.useRef(c), j = i.useMemo(() => (a().isEqual(new Set(c), new Set(f.current)) || (f.current = [...c]), f.current), [c]);
+  }, [s, c]), p = i.useRef(c), j = i.useMemo(() => (a().isEqual(new Set(c), new Set(p.current)) || (p.current = [...c]), p.current), [c]);
   return (0, r.jsxs)(o.C3N, {
     label: m.intl.string(m.t.BR68vK),
     description: m.intl.string(m.t.MobxiB),
-    children: [(0, r.jsx)(h, {
+    children: [(0, r.jsx)(b, {
       gameApplicationIds: c,
       handleChange: u,
       disabled: !l
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(h, {
       gameApplicationIds: j,
-      onRemoveGame: p,
+      onRemoveGame: f,
       disabled: !l
     }), (0, r.jsx)(g.Z, {
       guildId: s,

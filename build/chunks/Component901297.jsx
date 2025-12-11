@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk624138 = require("./624138.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk616926 = require("./616926.js");
+  Chunk570810 = require("./570810.js");
 let u = {
   title: "Balance Widget",
   stories: [{

@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk693789 = require("./693789.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
-  Chunk471561 = require("./471561.js");
+  Chunk258678 = require("./258678.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,8 +70,8 @@ function h(e, t) {
   return i
 }
 let g = {
-    primary: o()(Chunk471561.themeColor, Chunk471561.primary),
-    secondary: o()(Chunk471561.themeColor, Chunk471561.secondary),
+    primary: o()(Chunk258678.themeColor, Chunk258678.primary),
+    secondary: o()(Chunk258678.themeColor, Chunk258678.secondary),
     none: ""
   },
   E = e => {

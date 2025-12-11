@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 822693, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk800223 = require("./800223.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let b = "NO_CHANNEL",
+let h = "NO_CHANNEL",
   x = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
 
 function j(e) {
@@ -26,12 +26,12 @@ function j(e) {
     label: t,
     description: n,
     guildId: l,
-    widgetEnabled: f,
+    widgetEnabled: p,
     widgetChannelId: j,
-    className: _,
-    enableLocalUpdate: v
-  } = e, O = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), C = i.useMemo(() => {
-    let e = [...O[c.sH], ...O[c.Zb]].filter(e => {
+    className: v,
+    enableLocalUpdate: O
+  } = e, C = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), y = i.useMemo(() => {
+    let e = [...C[c.sH], ...C[c.Zb]].filter(e => {
       let {
         channel: t
       } = e;
@@ -51,18 +51,18 @@ function j(e) {
       }
     });
     return e.unshift({
-      value: b,
-      label: h.intl.string(h.t.u197b7)
+      value: h,
+      label: b.intl.string(b.t.u197b7)
     }), e
-  }, [O, l, j]), y = i.useCallback(e => {
-    v ? (0, p.c)(l, f, e !== b ? e : null) : m.Z.updateEmbed(l, f, e !== b ? e : null)
-  }, [l, f, v]);
+  }, [C, l, j]), N = i.useCallback(e => {
+    O ? (0, f.c)(l, p, e !== h ? e : null) : m.Z.updateEmbed(l, p, e !== h ? e : null)
+  }, [l, p, O]);
   return (0, r.jsx)(s.y6, {
     label: t,
     description: n,
-    options: C,
+    options: y,
     value: j,
-    onChange: y,
-    className: _
+    onChange: N,
+    className: v
   })
 }

@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk978986 = require("./978986.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk181174 = require("./181174.js");
+  Chunk804665 = require("./804665.js");
 let v = () => (0, Chunk54381.jsx)("div", {
-  className: Chunk181174.separator
+  className: Chunk804665.separator
 });
 
 function h(e) {
@@ -100,7 +100,7 @@ let p = () => {
       onChange: E
     }), (0, Chunk54381.jsx)(v, {}), exports && (0, Chunk54381.jsx)(j, {
       label: Chunk388032.intl.string(Chunk388032.t.bN4m1G),
-      checked: Chunk181174,
+      checked: Chunk804665,
       onChange: _
     })]
   })

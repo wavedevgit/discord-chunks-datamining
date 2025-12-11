@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 708510, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  O: () => I
+  O: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,30 +25,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk384632 = require("./384632.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk912231 = require("./912231.js");
+  Chunk955120 = require("./955120.js");
 
-function N(e) {
+function E(e) {
   let {
     pendingState: t
   } = e, n = i.useRef(false), l = i.useCallback(async e => {
     if (!n.current) try {
-      await (0, m.k)(e), (0, p.V)(e), (0, s.le)(), (0, s.aC)(e)
+      await (0, m.k)(e), (0, f.V)(e), (0, s.le)(), (0, s.aC)(e)
     } finally {
       n.current = true
     }
   }, [n]);
   switch (t.joinType) {
-    case v.A.INVITE:
+    case O.A.INVITE:
       return (0, r.jsx)(x.A, {
         requireTerms: t.requireTerms,
         rules: t.termRules
       });
-    case v.A.APPLY:
-      return (0, r.jsx)(h.r, {
+    case O.A.APPLY:
+      return (0, r.jsx)(b.r, {
         pendingFields: t.pendingVerificationFields
       });
-    case v.A.DISCOVERABLE:
-      return (0, r.jsx)(b.c, {
+    case O.A.DISCOVERABLE:
+      return (0, r.jsx)(h.c, {
         fetchDiscoveryData: l,
         settingsView: t.settingsView,
         requireTerms: t.requireTerms,
@@ -57,7 +57,7 @@ function N(e) {
   }
 }
 
-function E(e) {
+function I(e) {
   let {
     guildId: t
   } = e, {
@@ -73,12 +73,12 @@ function E(e) {
     var e;
     return null == (e = j.Z.pendingState) ? true : e.isAgeRestricted
   }), c = i.useCallback(e => {
-    f.Z.setIsAgeRestricted(t, e)
-  }, [t]), g = n === O.V_K.AGE_RESTRICTED && s !== O.V_K.AGE_RESTRICTED;
+    p.Z.setIsAgeRestricted(t, e)
+  }, [t]), g = n === C.V_K.AGE_RESTRICTED && s !== C.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(a.rsf, {
-    label: C.intl.string(C.t.N9xEJF),
-    description: C.intl.format(C.t.iyQQ62, {
-      helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
+    label: y.intl.string(y.t.N9xEJF),
+    description: y.intl.format(y.t.iyQQ62, {
+      helpArticleLink: u.Z.getArticleURL(C.BhN.NSFW_SERVER_AGE_RESTRICTION)
     }),
     checked: o,
     onChange: c,
@@ -86,7 +86,7 @@ function E(e) {
   })
 }
 
-function I() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps().guild),
     t = (0, Chunk442837.e7)([Chunk658666.Z], () => Chunk658666.Z.pendingState),
     n = (0, Chunk981312.U)();
@@ -94,7 +94,7 @@ function I() {
     (null == module ? true : module.id) != null && Chunk863249.ZP.fetchVerificationForm(module.id)
   }, [null == module ? true : module.id]);
   let s = Chunk473749.useCallback(t => {
-    (null == e ? true : e.id) != null && f.Z.setSelectedJoinType(e.id, t)
+    (null == e ? true : e.id) != null && p.Z.setSelectedJoinType(e.id, t)
   }, [null == module ? true : module.id]);
   if (null == module || null == exports) return null;
   let {
@@ -111,15 +111,15 @@ function I() {
       activeType: Chunk430824,
       guild: module
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk912231.divider
+      className: Chunk955120.divider
     }), !require && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(E, {
+      children: [(0, Chunk54381.jsx)(I, {
         guildId: module.id
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk912231.divider
+        className: Chunk955120.divider
       })]
     }), (0, Chunk54381.jsx)("div", {
-      children: (0, Chunk54381.jsx)(N, {
+      children: (0, Chunk54381.jsx)(E, {
         pendingState: exports
       })
     })]

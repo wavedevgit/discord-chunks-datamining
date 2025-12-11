@@ -2,9 +2,9 @@
 /** chunk id: 1226, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   BO: () => u,
-  cq: () => h,
-  gI: () => p,
-  xN: () => f,
+  cq: () => f,
+  gI: () => h,
+  xN: () => p,
   yA: () => d
 });
 var Chunk348327 = require("./348327.js"),
@@ -12,7 +12,7 @@ var Chunk348327 = require("./348327.js"),
   Chunk972959 = require("./972959.js"),
   Chunk569545 = require("./569545.js");
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -49,7 +49,7 @@ let c = (0, Chunk972959.H)(() => ({
 
 function u(e) {
   var t, n;
-  let i = (0, o.V9)(e);
+  let i = (0, l.V9)(e);
   return null != (n = null == (t = c.useState(e => e.streams, r())[i]) ? true : t.zoom) ? n : 100
 }
 
@@ -57,12 +57,12 @@ function d(e) {
   return u(e) / 100
 }
 
-function h(e, t) {
-  let n = (0, o.V9)(e);
+function f(e, t) {
+  let n = (0, l.V9)(e);
   c.setState(e => {
     var i;
-    return s(a({}, e), {
-      streams: s(a({}, e.streams), {
+    return s(o({}, e), {
+      streams: s(o({}, e.streams), {
         [n]: {
           zoom: t,
           fitOverride: null == (i = e.streams[n]) ? true : i.fitOverride
@@ -72,12 +72,12 @@ function h(e, t) {
   }, true)
 }
 
-function p(e, t) {
-  let n = (0, o.V9)(e);
+function h(e, t) {
+  let n = (0, l.V9)(e);
   c.setState(e => {
     var i;
-    return s(a({}, e), {
-      streams: s(a({}, e.streams), {
+    return s(o({}, e), {
+      streams: s(o({}, e.streams), {
         [n]: {
           zoom: null == (i = e.streams[n]) ? true : i.zoom,
           fitOverride: t
@@ -87,8 +87,8 @@ function p(e, t) {
   })
 }
 
-function f(e) {
+function p(e) {
   var t;
-  let n = (0, o.V9)(e);
+  let n = (0, l.V9)(e);
   return null == (t = c.useState(e => e.streams, r())[n]) ? true : t.fitOverride
 }

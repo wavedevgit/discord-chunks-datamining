@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk428695 = require("./428695.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk449824 = require("./449824.js");
+  Chunk538505 = require("./538505.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -35,8 +35,8 @@ function m(e) {
   }
   return e
 }
-let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
-  b = e => {
+let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
+  _ = e => {
     let {
       guild: t,
       title: n,
@@ -45,7 +45,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       type: d,
       imageMarginX: p,
       imageMarginTop: m,
-      trackingSource: b,
+      trackingSource: _,
       undismissable: E,
       onDismissed: O,
       onClick: v,
@@ -53,7 +53,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       ctaColor: I
     } = e;
     i.useEffect(() => {
-      _(f.rMx.CHANNEL_NOTICE_VIEWED, {
+      b(f.rMx.CHANNEL_NOTICE_VIEWED, {
         notice_type: d,
         guild_id: t.id
       })
@@ -65,7 +65,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       size: s.zx.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
-          source: b,
+          source: _,
           guild_id: t.id,
           notice_type: d
         }), null == v || v()
@@ -119,5 +119,5 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     let {
       showRedesignedChannelNotice: t
     } = (0, d.o)(true);
-    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(b, m({}, e))
+    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(_, m({}, e))
   }

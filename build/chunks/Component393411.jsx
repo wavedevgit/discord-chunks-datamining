@@ -39,7 +39,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk362786 = require("./362786.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk965406 = require("./965406.js");
+  Chunk423768 = require("./423768.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -168,12 +168,12 @@ function Y(e) {
 
 function W() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk965406.wordMark,
+    className: Chunk423768.wordMark,
     children: [(0, Chunk54381.jsx)(Chunk754347.Z, {
-      className: Chunk965406.discordWordmark,
+      className: Chunk423768.discordWordmark,
       "aria-label": Chunk388032.intl.string(Chunk388032.t.FSOz78)
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk965406.classicWordmark
+      className: Chunk423768.classicWordmark
     })]
   })
 }
@@ -185,11 +185,11 @@ function K() {
   return (0, Chunk54381.jsx)(H, {
     wordMark: (0, Chunk54381.jsx)(W, {}),
     subscriptionInfo: (0, Chunk54381.jsx)("div", {
-      className: Chunk965406.planInfo,
+      className: Chunk423768.planInfo,
       children: Chunk388032.intl.string(Chunk388032.t.R0GJL2)
     }),
     buttons: (0, Chunk54381.jsx)(Chunk987997.Z, {
-      className: Chunk965406.toolsButton,
+      className: Chunk423768.toolsButton,
       onClick: () => (0, Chunk963249.Z)({
         subscriptionTier: Chunk474936.Si.TIER_1,
         analyticsLocations: module,
@@ -198,7 +198,7 @@ function K() {
       text: Chunk388032.intl.string(Chunk388032.t["/ygMUY"])
     }),
     statusClasses: {
-      [Chunk965406.tier1]: true
+      [Chunk423768.tier1]: true
     }
   })
 }
@@ -254,7 +254,7 @@ let z = function(e) {
       s()(null != _, "Expected renewalInvoicePreview"), (0, c.ZDy)(async () => {
         let {
           PremiumResubscribeModal: e
-        } = await Promise.all([n.e("84992"), n.e("16"), n.e("23242"), n.e("47168")]).then(n.bind(n, 445968));
+        } = await Promise.all([n.e("84992"), n.e("16"), n.e("23242"), n.e("31800")]).then(n.bind(n, 445968));
         return t => (0, r.jsx)(e, Z(U({}, t), {
           premiumSubscription: i,
           analyticsLocations: z,

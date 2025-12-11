@@ -1,7 +1,7 @@
-/** Chunk was on 73040 **/
-/** chunk id: 801320, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 55114 **/
+/** chunk id: 801320, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,35 +15,35 @@ var Chunk54381 = require("./54381.js"),
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var a = null != arguments[t] ? arguments[t] : {},
+      c = Object.keys(a);
+    "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(a, e).enumerable
+    }))), c.forEach(function(t) {
+      var c;
+      c = a[t], t in e ? Object.defineProperty(e, t, {
+        value: c,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = c
     })
   }
   return e
 }
 let p = ["OTHER"];
 
-function d(e) {
+function f(e) {
   let {
     analyticsData: t,
-    transitionState: d,
-    onClose: f
+    transitionState: f,
+    onClose: _
   } = e;
-  return o.useEffect(() => {
-    l.default.track(b.rMx.OPEN_MODAL, {
+  return r.useEffect(() => {
+    i.default.track(l.rMx.OPEN_MODAL, {
       type: "Video Background Feedback"
     })
-  }, []), (0, n.jsx)(i.Z, {
+  }, []), (0, c.jsx)(d.Z, {
     modalType: "video_background",
     header: s.intl.string(s.t.Wl8qXg),
     body: s.intl.string(s.t.vPw6j0),
@@ -66,40 +66,40 @@ function d(e) {
     }],
     freeformNeededProblems: p,
     onSubmit: function(e) {
-      var o, i, p, d;
+      var r, d, p, f;
       let {
-        rating: f,
+        rating: _,
         problem: m,
         dontShowAgain: O,
         feedback: y
       } = e;
-      O && (0, a.Uv)({
-        feedbackType: _.nw.VIDEO_BACKGROUND,
+      O && (0, o.Uv)({
+        feedbackType: b.nw.VIDEO_BACKGROUND,
         location: "VideoBackgroundFeedbackModal"
-      }), null != f && (i = null != (o = null == m ? true : m.value) ? o : null, l.default.track(b.rMx.VIDEO_BACKGROUND_FEEDBACK, (p = u({}, t), d = d = {
-        reason: i,
-        rating: f,
+      }), null != _ && (d = null != (r = null == m ? true : m.value) ? r : null, i.default.track(l.rMx.VIDEO_BACKGROUND_FEEDBACK, (p = u({}, t), f = f = {
+        reason: d,
+        rating: _,
         feedback: y
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(p, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(p, Object.getOwnPropertyDescriptors(f)) : (function(e, t) {
+        var a = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var c = Object.getOwnPropertySymbols(e);
+          a.push.apply(a, c)
         }
-        return r
-      })(Object(d)).forEach(function(e) {
-        Object.defineProperty(p, e, Object.getOwnPropertyDescriptor(d, e))
-      }), p)), null != m && (0, c.ZDy)(async () => {
+        return a
+      })(Object(f)).forEach(function(e) {
+        Object.defineProperty(p, e, Object.getOwnPropertyDescriptor(f, e))
+      }), p)), null != m && (0, n.ZDy)(async () => {
         let {
           default: e
-        } = await r.e("14466").then(r.bind(r, 729328));
-        return t => (0, n.jsx)(e, u({
+        } = await a.e("14466").then(a.bind(a, 729328));
+        return t => (0, c.jsx)(e, u({
           body: s.intl.string(s.t.aHB11f)
         }, t))
       }))
     },
-    onClose: f,
-    transitionState: d,
+    onClose: _,
+    transitionState: f,
     otherKey: "OTHER"
   })
 }

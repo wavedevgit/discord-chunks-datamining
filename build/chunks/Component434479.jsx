@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => h
+  m: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,9 +10,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk589440 = require("./589440.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk780462 = require("./780462.js"),
-  Chunk55940 = require("./55940.js"),
-  Chunk509612 = require("./509612.js");
+  Chunk879917 = require("./879917.js"),
+  Chunk642915 = require("./642915.js"),
+  Chunk323453 = require("./323453.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -33,7 +33,7 @@ function f(e) {
   return e
 }
 
-function p(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,20 +46,20 @@ function p(e, t) {
   }), e
 }
 
-function h(e) {
+function p(e) {
   var t, {
       id: n,
       className: i,
-      innerClassName: h,
+      innerClassName: p,
       renderIcon: g,
-      text: m,
-      selected: b,
-      trailing: _,
-      background: y,
-      showUnread: O = false,
-      ref: v
+      text: b,
+      selected: m,
+      trailing: y,
+      background: O,
+      showUnread: v = false,
+      ref: j
     } = e,
-    j = function(e, t) {
+    C = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -74,17 +74,17 @@ function h(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let x = (0, o.JA)(n),
-    C = null != (t = (0, a.q)(m)) ? t : "";
+  let x = (0, a.JA)(n),
+    E = null != (t = (0, o.q)(b)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: v,
-    children: (0, r.jsxs)(s.kL8, p(f({}, j), {
-      buttonProps: p(f({}, x), {
+    ref: j,
+    children: (0, r.jsxs)(s.kL8, h(f({}, C), {
+      buttonProps: h(f({}, x), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": C,
+      "aria-label": E,
       focusProps: {
         offset: {
           top: 1,
@@ -92,16 +92,16 @@ function h(e) {
           right: 4
         }
       },
-      onContextMenu: null != j.onContextMenu ? j.onContextMenu : e => {
+      onContextMenu: null != C.onContextMenu ? C.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
-        [d.modeSelected]: b
+        [d.modeSelected]: m
       }, i),
-      children: [y, O ? (0, r.jsx)("div", {
+      children: [O, v ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: l()([d.link, d.basicChannelRowLink, h]),
+        className: l()([d.link, d.basicChannelRowLink, p]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {
@@ -110,8 +110,8 @@ function h(e) {
           }), (0, r.jsx)("div", {
             className: d.name,
             "aria-hidden": true,
-            children: m
-          }), _]
+            children: b
+          }), y]
         })
       })]
     }))

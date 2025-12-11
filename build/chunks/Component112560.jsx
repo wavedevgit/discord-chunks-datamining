@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk388354 = require("./388354.js");
+  Chunk286376 = require("./286376.js");
 
 function c(e) {
   return e < 400 ? "small" : e < 1e3 ? "medium" : "large"

@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 780367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,25 +16,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk662146 = require("./662146.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk815141 = require("./815141.js");
+  Chunk992397 = require("./992397.js");
 
-function b() {
+function m() {
   var e, t;
   let {
     pathname: n
-  } = (0, Chunk828700.TH)(), b = require.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && require !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && require !== Chunk981631.Z5c.ME_ACTIVITY, _ = (0, Chunk442837.e7)([Chunk55589.Z], () => Chunk55589.Z.getPrivateChannelIds()[0]), y = (0, Chunk442837.e7)([Chunk944486.Z], () => {
+  } = (0, Chunk828700.TH)(), m = require.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.ME)) && require !== Chunk981631.Z5c.CHANNEL(Chunk981631.ME) && require !== Chunk981631.Z5c.ME_ACTIVITY, y = (0, Chunk442837.e7)([Chunk55589.Z], () => Chunk55589.Z.getPrivateChannelIds()[0]), O = (0, Chunk442837.e7)([Chunk944486.Z], () => {
     var e;
-    return null != (e = Chunk944486.Z.getChannelId(Chunk981631.ME)) ? module : _
-  }), [O, v] = Chunk473749.useState(false), j = (0, Chunk91192.Ie)("dms");
+    return null != (e = Chunk944486.Z.getChannelId(Chunk981631.ME)) ? module : y
+  }), [v, j] = Chunk473749.useState(false), C = (0, Chunk91192.Ie)("dms");
   return (0, Chunk54381.jsxs)(Chunk682662.H, {
     children: [(0, Chunk54381.jsx)(Chunk276952.Z, {
-      selected: b,
-      hovered: O,
-      className: Chunk815141.pill
+      selected: m,
+      hovered: v,
+      className: Chunk992397.pill
     }), (0, Chunk54381.jsx)(Chunk662146.Z, {
       hideOnClick: true,
       text: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
-      selected: b,
+      selected: m,
       children: (0, Chunk54381.jsx)(Chunk481060.aRk, {
         selected: true,
         lowerBadge: null,
@@ -57,16 +57,16 @@ function b() {
           }
           return e
         }({
-          onMouseEnter: () => v(true),
-          onMouseLeave: () => v(false),
+          onMouseEnter: () => j(true),
+          onMouseLeave: () => j(false),
           onClick: Chunk981631.dG4,
-          selected: b || O,
+          selected: m || v,
           ariaLabel: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
           "aria-owns": "guild-list-dms",
-          "aria-selected": b || O
-        }, j), t = t = {
+          "aria-selected": m || v
+        }, C), t = t = {
           to: {
-            pathname: null != y ? Chunk981631.Z5c.CHANNEL(Chunk981631.ME, y) : Chunk981631.Z5c.ME_DMS,
+            pathname: null != O ? Chunk981631.Z5c.CHANNEL(Chunk981631.ME, O) : Chunk981631.Z5c.ME_DMS,
             state: {
               analyticsSource: {
                 page: Chunk981631.ZY5.GUILD_CHANNEL,

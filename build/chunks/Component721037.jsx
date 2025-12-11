@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk918559 = require("./918559.js"),
   Chunk354459 = require("./354459.js"),
   Chunk408491 = require("./408491.js"),
-  Chunk639965 = require("./639965.js");
+  Chunk684692 = require("./684692.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,7 @@ class k extends Chunk473749.PureComponent {
         resizeConfig: j,
         getDockedRectPositionY: Chunk917107
       }), (0, Chunk54381.jsx)(Chunk522501.mK, {
-        className: Chunk442917 ? Chunk639965.belowSidebar : true
+        className: Chunk442917 ? Chunk684692.belowSidebar : true
       })]
     })
   }

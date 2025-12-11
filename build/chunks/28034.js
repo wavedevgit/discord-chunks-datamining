@@ -1,0 +1,10 @@
+/** Chunk was on 82477 **/
+/** chunk id: 28034, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  messages: "_1ccd1ba5cb2270c2-messages",
+  messageContainer: "_1ccd1ba5cb2270c2-messageContainer",
+  jumpButton: "_1ccd1ba5cb2270c2-jumpButton",
+  message: "_1ccd1ba5cb2270c2-message",
+  divider: "_1ccd1ba5cb2270c2-divider",
+  showAllButtonContainer: "_1ccd1ba5cb2270c2-showAllButtonContainer"
+}

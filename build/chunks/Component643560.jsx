@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 643560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => h
@@ -23,25 +23,25 @@ function h(e) {
   } = e, {
     isEntryAdmin: m,
     canEdit: b,
-    canRemove: _
-  } = (0, u.Z)(t), y = (0, o.Z)({
+    canRemove: y
+  } = (0, u.Z)(t), O = (0, o.Z)({
     id: t.guildId,
     label: p.intl.string(p.t["94lLD7"]),
     onSuccess: f
   });
   i.useEffect(() => {
-    b || _ || null != y || (0, s.Zy)()
+    b || y || null != O || (0, s.Zy)()
   });
-  let O = () => {
+  let j = () => {
     d.kx(t.channelId, t.guildId)
   };
 
-  function j() {
+  function x() {
     (0, s.Zy)(), null == f || f()
   }
   return (0, r.jsxs)(a.v2r, {
     navId: "guild-entry-context",
-    onClose: j,
+    onClose: x,
     "aria-label": p.intl.string(p.t.HpQykc),
     onSelect: h,
     children: [(0, r.jsxs)(a.kSQ, {
@@ -85,9 +85,9 @@ function h(e) {
                 Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
               }), i))
             }
-          }), j()
+          }), x()
         }
-      }) : null, _ ? (0, r.jsx)(a.sNh, {
+      }) : null, y ? (0, r.jsx)(a.sNh, {
         id: "remove-from-hub",
         label: p.intl.string(p.t.KUxYWH),
         action: function() {
@@ -97,21 +97,21 @@ function h(e) {
               guildName: t.name
             }),
             confirmText: p.intl.string(p.t.N86XcP),
-            onConfirm: O
-          }), j()
+            onConfirm: j
+          }), x()
         },
         color: "danger"
       }) : null, m ? null : (0, r.jsx)(a.sNh, {
         id: "report-server-listing",
         label: p.intl.string(p.t.Aen9eh),
         action: function() {
-          null != t && ((0, c.sq)(t), j())
+          null != t && ((0, c.sq)(t), x())
         },
         icon: a.U65,
         color: "danger"
       })]
     }), (0, r.jsx)(a.kSQ, {
-      children: y
+      children: O
     })]
   })
 }

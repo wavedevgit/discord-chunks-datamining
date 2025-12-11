@@ -1,7 +1,7 @@
-/** Chunk was on 95140 **/
-/** chunk id: 194201, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 97368 **/
+/** chunk id: 194201, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 });
 var Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -11,19 +11,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e) {
-  var n, t, c;
-  let d = (0, l.e7)([s.Z], () => s.Z.can(u.Plq.ADMINISTRATOR, e)),
-    p = (0, l.e7)([o.Z], () => null != e && o.Z.getNumRoles(e.id) > 1),
+function d(e) {
+  var t, n, d;
+  let u = (0, i.e7)([c.Z], () => c.Z.can(s.Plq.ADMINISTRATOR, e)),
+    g = (0, i.e7)([o.Z], () => null != e && o.Z.getNumRoles(e.id) > 1),
     {
-      enabled: g
+      enabled: b
     } = a.Z.useExperiment({
       guildId: null == e ? true : e.id,
       location: "useIsPermissionMigrationNotificationAvailable"
     }),
-    O = null != (n = null == e ? true : e.features.has(u.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE)) && n,
-    f = null != (t = null == e ? true : e.features.has(u.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE)) && t,
-    h = g ? i.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION : i.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION,
-    b = (0, r.OA)(h, null != (c = null == e ? true : e.id) ? c : u.lds);
-  return p && d && (!O || !f && g) && !b
+    f = null != (t = null == e ? true : e.features.has(s.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE)) && t,
+    p = null != (n = null == e ? true : e.features.has(s.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE)) && n,
+    h = b ? r.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION : r.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION,
+    j = (0, l.OA)(h, null != (d = null == e ? true : e.id) ? d : s.lds);
+  return g && u && (!f || !p && b) && !j
 }

@@ -21,15 +21,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk933557 = require("./933557.js"),
   Chunk287746 = require("./287746.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10832 = require("./10832.js"),
-  Chunk419246 = require("./419246.js");
+  Chunk491396 = require("./491396.js"),
+  Chunk517868 = require("./517868.js");
 
 function I(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, I = (0, b.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), P = i.useCallback(() => {
-    m.Z.closeChannelSidebar(_.uZ), T && C && (0, h.Kh)(t.id), N && S && (0, h.Kh)(t.id)
+  } = e, I = (0, _.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, g.V)(t.id, t.getRecipientId()), P = i.useCallback(() => {
+    m.Z.closeChannelSidebar(b.uZ), T && C && (0, h.Kh)(t.id), N && S && (0, h.Kh)(t.id)
   }, [t.id, N, S, T, C]), x = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {

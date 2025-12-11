@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 759198, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk977072 = require("./977072.js");
+  Chunk750319 = require("./750319.js");
 
 function s(e) {
   var {
@@ -29,7 +29,7 @@ function s(e) {
     }
     return i
   }(e, ["className", "color"]);
-  return (0, r.jsx)(o.Text, function(e) {
+  return (0, r.jsx)(a.Text, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -48,7 +48,7 @@ function s(e) {
     return e
   }({
     className: l()({
-      [a.text]: null == n
+      [o.text]: null == n
     }, t),
     color: n
   }, i))

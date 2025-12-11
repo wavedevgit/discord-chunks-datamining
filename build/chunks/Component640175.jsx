@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 640175, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,15 +20,15 @@ function u(e) {
     helperText: u,
     guildId: g,
     defaultSettings: m,
-    canManageGuild: p
-  } = e, f = (0, l.e7)([s.Z], () => s.Z.getMemberCount(g)), h = i.useMemo(() => [{
+    canManageGuild: f
+  } = e, p = (0, l.e7)([s.Z], () => s.Z.getMemberCount(g)), b = i.useMemo(() => [{
     name: d.intl.string(d.t["n/bTaY"]),
     value: c.bL.ALL_MESSAGES,
-    desc: null != f && f >= c.qWG ? d.intl.string(d.t["L+P4t2"]) : null
+    desc: null != p && p >= c.qWG ? d.intl.string(d.t["L+P4t2"]) : null
   }, {
     name: d.intl.string(d.t["6fQPhu"]),
     value: c.bL.ONLY_MENTIONS
-  }], [f]), b = i.useCallback(e => {
+  }], [p]), h = i.useCallback(e => {
     o.Z.updateGuild({
       defaultMessageNotifications: e
     })
@@ -37,9 +37,9 @@ function u(e) {
     label: t,
     description: n,
     helperText: u,
-    options: h,
+    options: b,
     value: m,
-    disabled: !p,
-    onChange: b
+    disabled: !f,
+    onChange: h
   })
 }

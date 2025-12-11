@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 11265, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,25 +12,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk165121 = require("./165121.js");
+  Chunk192072 = require("./192072.js");
 let g = Chunk473749.memo(function(e) {
   var t, n;
   let {
     renderHeader: l,
     children: g,
     isExpanded: m,
-    isStuck: p,
-    onExpand: f,
-    disableAnimation: h,
-    disableBackground: b
-  } = e, [x, j] = i.useState(true), [_, v] = i.useState(false), {
-    ref: O,
-    height: C = 0
+    isStuck: f,
+    onExpand: p,
+    disableAnimation: b,
+    disableBackground: h
+  } = e, [x, j] = i.useState(true), [v, O] = i.useState(false), {
+    ref: C,
+    height: y = 0
   } = (0, c.ZP)(), {
-    ref: y,
-    height: N = 0
-  } = (0, c.ZP)(), [E, I] = i.useState(m), S = (0, o.q_F)({
-    height: E ? N + C : C,
+    ref: N,
+    height: E = 0
+  } = (0, c.ZP)(), [I, S] = i.useState(m), _ = (0, o.q_F)({
+    height: I ? E + y : y,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -61,14 +61,14 @@ let g = Chunk473749.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
     onStart: () => {
-      v(false)
+      O(false)
     },
     onRest: () => {
-      v(true)
+      O(true)
     }
-  }, x || h ? "animate-never" : "respect-motion-settings");
+  }, x || b ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    v(false), I(m)
+    O(false), S(m)
   }, [m]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
       j(false)
@@ -77,23 +77,23 @@ let g = Chunk473749.memo(function(e) {
   }, []), (0, r.jsx)(o.P3F, {
     className: a()(u.editCard, {
       [u.toggled]: m,
-      [u.noBackground]: b
+      [u.noBackground]: h
     }),
     children: (0, r.jsxs)(s.animated.div, {
       className: a()(u.contentExpandContainer, {
-        [u.showOverflow]: m && _
+        [u.showOverflow]: m && v
       }),
-      style: S,
+      style: _,
       children: [(0, r.jsx)(o.P3F, {
-        innerRef: O,
-        onClick: p ? true : f,
+        innerRef: C,
+        onClick: f ? true : p,
         className: a()(u.innerHeader, {
-          [u.toggled]: m && p
+          [u.toggled]: m && f
         }),
         "aria-label": d.intl.string(d.t.dcl9MQ),
         children: l
       }), (0, r.jsx)("div", {
-        ref: y,
+        ref: N,
         children: g
       })]
     })

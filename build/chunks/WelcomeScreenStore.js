@@ -2,11 +2,11 @@
 /** chunk id: 995532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I,
-  a: () => a
+  a: () => s
 });
 var r, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = {},
+let s = {},
   o = {},
   u = {},
   c = false,
@@ -25,7 +25,7 @@ function A(e) {
     welcomeScreen: t,
     guildId: n
   } = e;
-  o[n] = null != t ? t : a
+  o[n] = null != t ? t : s
 }
 class T extends(l = Chunk442837.ZP.Store) {
   get(e) {
@@ -84,7 +84,7 @@ let I = new T(Chunk570140.Z, {
       welcomeScreen: t,
       guildId: n
     } = e;
-    o[n] = null != t ? t : a
+    o[n] = null != t ? t : s
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
     E = false, d = true

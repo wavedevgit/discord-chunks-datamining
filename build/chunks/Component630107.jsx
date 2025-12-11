@@ -1,7 +1,7 @@
 /** Chunk was on 10125 **/
 /** chunk id: 630107, original params: e,t,a (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => b
+  default: () => I
 }), require("./388685.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,16 +21,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk781984 = require("./781984.js"),
+  Chunk227633 = require("./227633.js"),
   Chunk74830 = require("./74830.js"),
-  Chunk13299 = require("./13299.js");
+  Chunk770354 = require("./770354.js");
 Chunk442837.ZP.initialize();
-let I = Chunk873546.tq || Chunk873546.Em;
+let v = Chunk873546.tq || Chunk873546.Em;
 
-function b(e) {
+function I(e) {
   let {
     match: t
-  } = e, a = (0, l.e7)([o.Z], () => o.Z.getState("quests")), i = t.params.questId, b = function(e) {
+  } = e, a = (0, i.e7)([o.Z], () => o.Z.getState("quests")), c = t.params.questId, I = function(e) {
     let [t, a] = n.useState(null);
     return n.useEffect(() => {
       (0, u.gU)(e).then(e => a({
@@ -40,82 +40,82 @@ function b(e) {
         status: "error"
       }))
     }, [a, e]), t
-  }(i);
+  }(c);
   n.useEffect(() => {
-    I || (null == a ? ((0, _.dA)({
-      questId: i,
-      event: E.rMx.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
+    v || (null == a ? ((0, x.dA)({
+      questId: c,
+      event: _.rMx.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
       properties: {},
-      sourceQuestContent: x.jn.QUEST_HOME_DESKTOP
-    }), g.Z.openNativeAppModal("quests", E.Etm.DEEP_LINK, {
+      sourceQuestContent: p.jn.QUEST_HOME_DESKTOP
+    }), g.Z.openNativeAppModal("quests", _.Etm.DEEP_LINK, {
       type: T.jE.QUEST_HOME,
       params: {
-        questId: i
+        questId: c
       }
-    })) : a === E.kEZ.OPEN_FAIL && (0, m.dL)({
-      pathname: E.Z5c.QUEST_HOME,
-      hash: i
+    })) : a === _.kEZ.OPEN_FAIL && (0, m.dL)({
+      pathname: _.Z5c.QUEST_HOME,
+      hash: c
     }))
-  }, [a, i]);
-  let f = n.useCallback(() => (0, p.openAppWithQuest)(i), [i]);
-  if (I) return (0, s.jsxs)("div", {
-    className: N.page,
+  }, [a, c]);
+  let f = n.useCallback(() => (0, h.openAppWithQuest)(c), [c]);
+  if (v) return (0, s.jsxs)("div", {
+    className: j.page,
     children: [(0, s.jsx)("img", {
-      className: N.bgImg,
-      src: v.ZP,
+      className: j.bgImg,
+      src: k.ZP,
       alt: ""
     }), (0, s.jsx)("div", {
-      className: N.logoContainer,
+      className: j.logoContainer,
       children: (0, s.jsx)("img", {
-        src: k,
+        src: N,
         alt: ""
       })
-    }), null != b && (0, s.jsxs)("div", {
-      className: N.card,
-      children: ["ok" === b.status && (0, s.jsxs)(s.Fragment, {
+    }), null != I && (0, s.jsxs)("div", {
+      className: j.card,
+      children: ["ok" === I.status && (0, s.jsxs)(s.Fragment, {
         children: [(0, s.jsx)("div", {
-          className: N.gameTile,
+          className: j.gameTile,
           children: (0, s.jsx)("img", {
-            src: "".concat(h.HO).concat(i, "/dark/").concat(b.value.assets.gameTile),
+            src: "".concat(E.HO).concat(c, "/dark/").concat(I.value.assets.gameTile),
             alt: "",
-            className: N.gameTileImg
+            className: j.gameTileImg
           })
-        }), (0, s.jsx)(r.Heading, {
+        }), (0, s.jsx)(l.Heading, {
           variant: "heading-lg/semibold",
           color: "text-default",
-          className: N.headingText,
-          children: b.value.messages.questName
+          className: j.headingText,
+          children: I.value.messages.questName
         })]
-      }), (0, s.jsx)(r.Text, {
+      }), (0, s.jsx)(l.Text, {
         variant: "text-md/normal",
-        className: N.bodyText,
-        children: j.intl.string(j.t.NweJI8)
-      }), (0, s.jsx)(r.Button, {
+        className: j.bodyText,
+        children: b.intl.string(b.t.NweJI8)
+      }), (0, s.jsx)(l.Button, {
         variant: "primary",
-        text: j.intl.string(j.t.UQvCf7),
+        text: b.intl.string(b.t.UQvCf7),
         fullWidth: true,
         onClick: f
       })]
     })]
   });
-  let O = null == a || a === E.kEZ.OPENING || a === E.kEZ.OPEN_FAIL;
+  let O = null == a || a === _.kEZ.OPENING || a === _.kEZ.OPEN_FAIL;
   return (0, s.jsxs)(s.Fragment, {
-    children: [(0, s.jsx)(c.Z, {
-      className: N.backgroundArtwork,
+    children: [(0, s.jsx)(r.Z, {
+      className: j.backgroundArtwork,
       preserveAspectRatio: "xMinYMin slice"
     }), (0, s.jsx)("div", {
-      className: N.container,
+      className: j.container,
       children: (0, s.jsx)(d.ZP, {
         children: O ? (0, s.jsxs)(s.Fragment, {
           children: [(0, s.jsx)(d.Dx, {
-            children: j.intl.string(j.t["Z+hCVU"])
+            children: b.intl.string(b.t["Z+hCVU"])
           }), (0, s.jsx)(d.Hh, {})]
         }) : (0, s.jsxs)(s.Fragment, {
           children: [(0, s.jsx)(d.Dx, {
-            className: N.appOpenedTitle,
-            children: j.intl.string(j.t.csrAMJ)
+            className: j.appOpenedTitle,
+            children: b.intl.string(b.t.csrAMJ)
           }), (0, s.jsx)(d.DK, {
-            children: j.intl.string(j.t.ghBJz9)
+            children: b.intl.string(b.t.ghBJz9)
           })]
         })
       })

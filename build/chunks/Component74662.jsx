@@ -17,15 +17,15 @@ var Chunk657707 = require("./657707.js"),
   Chunk55467 = require("./55467.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk36385 = require("./36385.js");
+  Chunk498264 = require("./498264.js");
 let _ = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk36385.default.bU5ANm),
+    useTitle: () => Chunk388032.intl.string(Chunk498264.default.bU5ANm),
     useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
     StronglyDiscouragedCustomComponent: Chunk55467.R,
     buildLayout: () => []
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk36385.default.bU5ANm),
+    useTitle: () => Chunk388032.intl.string(Chunk498264.default.bU5ANm),
     getLegacySearchKey: () => Chunk726985.s6.PRIVATE_BROWSING_PERK,
     icon: Chunk657707.enf,
     usePredicate: () => {

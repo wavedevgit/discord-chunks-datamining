@@ -1,4 +1,4 @@
-/** Chunk was on 9456 **/
+/** Chunk was on 193 **/
 /** chunk id: 67158, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,29 +7,29 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk55160 = require("./55160.js"),
   Chunk318766 = require("./318766.jsx"),
   Chunk28546 = require("./28546.js"),
   Chunk957825 = require("./957825.js"),
-  Chunk564355 = require("./564355.js");
+  Chunk72775 = require("./72775.js");
 let m = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   let {
     disabled: n,
-    type: l,
+    type: i,
     className: m,
-    onClick: h,
-    channel: g
-  } = e, [f, x, p] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.activeChannelId], s.X), b = i.useCallback(() => {
-    (0, c.j9)(l, g.id), null == h || h()
-  }, [l, h, g.id]);
-  return n ? null : (0, r.jsx)("div", {
-    className: a()(d.CT, u.buttonContainer),
+    onClick: f,
+    channel: h
+  } = e, [g, x, b] = (0, c.Iu)(e => [e.activeView, e.activeViewType, e.activeChannelId], s.X), p = r.useCallback(() => {
+    (0, c.j9)(i, h.id), null == f || f()
+  }, [i, f, h.id]);
+  return n ? null : (0, a.jsx)("div", {
+    className: l()(d.CT, u.buttonContainer),
     ref: t,
-    children: (0, r.jsx)(o.Z, {
-      className: a()(u.emojiButton, m),
-      onClick: b,
-      active: (f === d.X1.GIF || f === d.X1.EMOJI || f === d.X1.STICKER) && x === l && p === g.id,
+    children: (0, a.jsx)(o.Z, {
+      className: l()(u.emojiButton, m),
+      onClick: p,
+      active: (g === d.X1.GIF || g === d.X1.EMOJI || g === d.X1.STICKER) && x === i && b === h.id,
       tabIndex: 0,
       focusProps: {
         offset: {

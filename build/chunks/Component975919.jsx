@@ -1,4 +1,4 @@
-/** Chunk was on 26196 **/
+/** Chunk was on 58973 **/
 /** chunk id: 975919, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => d
@@ -10,7 +10,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk526689 = require("./526689.jsx"),
   Chunk229373 = require("./229373.jsx"),
   Chunk518027 = require("./518027.jsx"),
-  Chunk939101 = require("./939101.js"),
+  Chunk990551 = require("./990551.js"),
   Chunk388032 = require("./388032.jsx");
 let d = e => {
   let {
@@ -18,22 +18,22 @@ let d = e => {
     onClose: n
   } = e, {
     send: d,
-    sending: f,
-    canSend: b
+    sending: b,
+    canSend: f
   } = (0, o.C$)();
   return (0, r.jsx)(a.Modal, {
-    title: u.intl.string(c.default.zgFs8C),
+    title: u.intl.string(i.default.zgFs8C),
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.TXNS7S),
       onClick: d,
-      loading: f,
-      disabled: !b()
+      loading: b,
+      disabled: !f()
     }],
     transitionState: t,
     onClose: n,
-    input: (0, r.jsx)(s.K, {}),
-    actionBarInput: (0, r.jsx)(i.J, {}),
+    input: (0, r.jsx)(c.K, {}),
+    actionBarInput: (0, r.jsx)(s.J, {}),
     children: (0, r.jsx)(l.d, {})
   })
 }

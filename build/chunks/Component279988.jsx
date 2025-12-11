@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,45 +14,45 @@ var Chunk120356 = require("./120356.js"),
   Chunk196345 = require("./196345.jsx"),
   Chunk137158 = require("./137158.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31829 = require("./31829.js");
+  Chunk938645 = require("./938645.js");
 let m = function(e) {
   let {
     channelId: t,
     formField: n,
     index: i,
     isDragEnabled: m,
-    isDropHovered: p,
-    onDrop: f,
-    onEdit: h,
-    onRemove: b,
+    isDropHovered: f,
+    onDrop: p,
+    onEdit: b,
+    onRemove: h,
     canRemove: x,
     title: j,
-    actionsLocation: _,
-    fieldStyle: v
-  } = e, O = n.values, C = O.slice(0, 1), y = O.length - C.length;
+    actionsLocation: v,
+    fieldStyle: O
+  } = e, C = n.values, y = C.slice(0, 1), N = C.length - y.length;
   return (0, r.jsxs)(d.Z, {
     field: n,
     index: i,
     isDragEnabled: m,
-    isDropHovered: p,
-    onDrop: f,
-    onEdit: h,
-    onRemove: b,
+    isDropHovered: f,
+    onDrop: p,
+    onEdit: b,
+    onRemove: h,
     title: j,
     canRemove: x,
-    actionsLocation: _,
-    fieldStyle: v,
+    actionsLocation: v,
+    fieldStyle: O,
     children: [(0, r.jsx)(c.EK, {
-      terms: C,
+      terms: y,
       channelId: t
-    }), 0 !== y && (0, r.jsxs)(s.P3F, {
+    }), 0 !== N && (0, r.jsxs)(s.P3F, {
       className: l()(g.fieldFooterContainer, g.clickable),
-      onClick: h,
+      onClick: b,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: g.clickable,
         children: u.intl.format(u.t.jnhD0S, {
-          count: y
+          count: N
         })
       }), (0, r.jsx)(o.Z, {
         className: g.termsFieldCaretIcon,

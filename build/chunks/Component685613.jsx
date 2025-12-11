@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk475595 = require("./475595.js"),
   Chunk455357 = require("./455357.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk593710 = require("./593710.js"),
+  Chunk479470 = require("./479470.js"),
   m = function(e) {
     return e[e.SMALL = 24] = "SMALL", e[e.MEDIUM = 32] = "MEDIUM", e
   }({}),

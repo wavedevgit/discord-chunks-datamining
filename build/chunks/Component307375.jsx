@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 307375, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => h
+  h: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,63 +16,63 @@ var Chunk54381 = require("./54381.js"),
   Chunk384632 = require("./384632.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk140367 = require("./140367.js");
+  Chunk640940 = require("./640940.js");
 
-function h(e) {
+function b(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, h = l.features.has(m.GuildFeatures.COMMUNITY), b = (0, s.e7)([d.Z], () => d.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
-    let e = t === g.A.DISCOVERABLE && !b,
-      n = h && (t === g.A.DISCOVERABLE || b);
+  } = e, b = l.features.has(m.GuildFeatures.COMMUNITY), h = (0, s.e7)([d.Z], () => d.Z.can(m.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+    let e = t === g.A.DISCOVERABLE && !h,
+      n = b && (t === g.A.DISCOVERABLE || h);
     return [{
       id: g.A.INVITE,
-      title: p.intl.string(p.t["HQVS/L"]),
-      body: p.intl.string(p.t.KzXzFa),
+      title: f.intl.string(f.t["HQVS/L"]),
+      body: f.intl.string(f.t.KzXzFa),
       icon: c.mBM,
       enabled: !e,
-      ineligibleText: p.intl.string(p.t.LIZgwJ)
+      ineligibleText: f.intl.string(f.t.LIZgwJ)
     }, {
       id: g.A.APPLY,
-      title: p.intl.string(p.t.LrFEYW),
-      body: p.intl.string(p.t.kJj2oG),
+      title: f.intl.string(f.t.LrFEYW),
+      body: f.intl.string(f.t.kJj2oG),
       icon: c._XJ,
       enabled: !e,
-      ineligibleText: p.intl.string(p.t.LIZgwJ)
+      ineligibleText: f.intl.string(f.t.LIZgwJ)
     }, {
       id: g.A.DISCOVERABLE,
-      title: p.intl.string(p.t.lhOHL3),
-      body: p.intl.string(p.t.pqQylS),
+      title: f.intl.string(f.t.lhOHL3),
+      body: f.intl.string(f.t.pqQylS),
       icon: c.enf,
       enabled: n,
-      ineligibleText: h ? p.intl.string(p.t.iBpXPg) : p.intl.string(p.t["5TQ+eE"])
+      ineligibleText: b ? f.intl.string(f.t.iBpXPg) : f.intl.string(f.t["5TQ+eE"])
     }]
-  }, [t, h, b]);
+  }, [t, b, h]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Heading, {
       color: "header-primary",
       variant: "text-md/semibold",
-      children: p.intl.string(p.t["N+GnP2"])
+      children: f.intl.string(f.t["N+GnP2"])
     }), (0, r.jsx)(c.Text, {
       color: "text-subtle",
       variant: "text-sm/medium",
-      className: f.bodyText,
-      children: p.intl.format(p.t["Y/jYwu"], {
+      className: p.bodyText,
+      children: f.intl.format(f.t["Y/jYwu"], {
         helpdeskArticle: u.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(c.njP, {
       selectedItem: t,
       onItemSelect: n,
       orientation: "horizontal",
-      className: f.joinOptions,
+      className: p.joinOptions,
       children: x.map(e => {
         let n = e.id === t;
         return (0, r.jsx)(c.njP.Item, {
           id: e.id,
           selectedItem: t,
           disableItemStyles: true,
-          className: f.joinOptionTab,
+          className: p.joinOptionTab,
           disabled: !e.enabled,
           "aria-label": e.title,
           children: (0, r.jsx)(o.u, {
@@ -82,9 +82,9 @@ function h(e) {
             spacing: 16,
             hideOnClick: false,
             children: (0, r.jsxs)("div", {
-              className: a()(f.joinOptionContent, {
-                [f.active]: n,
-                [f.uninteractive]: !e.enabled
+              className: a()(p.joinOptionContent, {
+                [p.active]: n,
+                [p.uninteractive]: !e.enabled
               }),
               children: [(0, r.jsx)(e.icon, {
                 size: "md",

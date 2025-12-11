@@ -1,7 +1,7 @@
 /** Chunk was on 16359 **/
 /** chunk id: 588091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => T
+  default: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,23 +27,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk916001 = require("./916001.jsx"),
   Chunk298243 = require("./298243.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800372 = require("./800372.js");
+  Chunk826451 = require("./826451.js");
 
-function O(e) {
+function P(e) {
   let {
     guildProductListing: t,
     guildId: n,
     skuPricePreview: a
-  } = e, i = (0, y.C)(t), l = (0, p.T4)(a.amount, a.currency), s = (0, u.e7)([v.Z], () => v.Z.getGuild(n));
+  } = e, i = (0, y.C)(t), l = (0, v.T4)(a.amount, a.currency), s = (0, u.e7)([b.Z], () => b.Z.getGuild(n));
   return c()(null != s, "guild cannot be null"), (0, r.jsxs)("div", {
-    className: S.purchaseSummaryContainer,
+    className: O.purchaseSummaryContainer,
     children: [(0, r.jsx)(x.Z, {
       alt: "",
-      className: S.purchaseSummaryImage,
+      className: O.purchaseSummaryImage,
       listing: t,
       imageSize: 100
     }), (0, r.jsxs)("div", {
-      className: S.purchaseSummarInfo,
+      className: O.purchaseSummarInfo,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
         color: "header-primary",
@@ -64,7 +64,7 @@ function O(e) {
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: S.purchaseSummaryPrice,
+      className: O.purchaseSummaryPrice,
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/medium",
         color: "header-primary",
@@ -74,29 +74,29 @@ function O(e) {
       }), (0, r.jsx)(f.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: z.intl.string(z.t["5dWOZX"])
+        children: S.intl.string(S.t["5dWOZX"])
       })]
     })]
   })
 }
 
-function P(e) {
+function L(e) {
   var t;
   let {
     guildProductListing: n,
     guildId: a
-  } = e, i = null != (t = n.attachments) ? t : [], s = i.length > 1, c = (0, _.Z)({
+  } = e, i = null != (t = n.attachments) ? t : [], s = i.length > 1, c = (0, z.Z)({
     guildId: a,
     productId: n.id
   });
   return 0 === i.length ? null : (0, r.jsx)(Z.Z, {
-    label: z.intl.string(z.t.HOkHPB),
+    label: S.intl.string(S.t.HOkHPB),
     children: (0, r.jsxs)("div", {
-      className: l()(S.attachmentsContainer, {
-        [S.attachmentsContainerMultiple]: s
+      className: l()(O.attachmentsContainer, {
+        [O.attachmentsContainerMultiple]: s
       }),
       children: [(0, r.jsx)("div", {
-        className: S.attachmentGrid,
+        className: O.attachmentGrid,
         children: i.map(e => (0, r.jsx)(C.Z, {
           attachment: e
         }, e.id))
@@ -124,19 +124,19 @@ function P(e) {
   })
 }
 
-function L(e) {
+function w(e) {
   let {
     role: t
   } = e;
   return null == t ? null : (0, r.jsx)(Z.Z, {
-    label: z.intl.string(z.t.gWBNet),
+    label: S.intl.string(S.t.gWBNet),
     children: (0, r.jsx)(N.Z, {
       role: t
     })
   })
 }
 
-function w(e) {
+function T(e) {
   return (0, r.jsx)(f.Text, {
     tag: "span",
     variant: "text-md/semibold",
@@ -145,7 +145,7 @@ function w(e) {
   })
 }
 
-function T(e) {
+function I(e) {
   var t;
   let {
     onClose: n,
@@ -153,18 +153,18 @@ function T(e) {
     guildProductListingId: l,
     guildId: s,
     skuPricePreview: m
-  } = e, x = (0, u.e7)([b.Z], () => b.Z.getGuildProduct(l));
+  } = e, x = (0, u.e7)([g.Z], () => g.Z.getGuildProduct(l));
   c()(null != x, "guildProductListing cannot be null");
-  let [v, p] = a.useState(false);
+  let [b, v] = a.useState(false);
   a.useEffect(() => {
     !async function() {
       try {
-        p(true), await (0, g.cf)(s, l), p(false)
+        v(true), await (0, p.cf)(s, l), v(false)
       } catch (e) {
         n(), (0, h.Z)({
-          body: z.intl.string(z.t.VQ0lXY),
-          confirmText: z.intl.string(z.t["NX+WJN"]),
-          header: z.intl.string(z.t.OCwKlu),
+          body: S.intl.string(S.t.VQ0lXY),
+          confirmText: S.intl.string(S.t["NX+WJN"]),
+          header: S.intl.string(S.t.OCwKlu),
           confirmButtonColor: d.zx.Colors.BRAND
         })
       }
@@ -174,47 +174,47 @@ function T(e) {
     C = x.role_id,
     Z = (0, u.e7)([j.Z], () => null != C ? j.Z.getRole(s, C) : true);
   return (0, r.jsx)(o.Modal, {
-    title: z.intl.string(z.t.dhAgv3),
-    subtitle: z.intl.format(z.t.X6yvvo, {
+    title: S.intl.string(S.t.dhAgv3),
+    subtitle: S.intl.format(S.t.X6yvvo, {
       productName: x.name,
-      emphasisHook: w
+      emphasisHook: T
     }),
     onClose: n,
     transitionState: i,
     size: "md",
     actions: [],
-    children: v ? (0, r.jsx)(f.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+    children: b ? (0, r.jsx)(f.$jN, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(f.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: [y ? z.intl.string(z.t["A/RnkK"]) + " " : "", null != Z ? z.intl.format(z.t.IeJDKs, {
+        children: [y ? S.intl.string(S.t["A/RnkK"]) + " " : "", null != Z ? S.intl.format(S.t.IeJDKs, {
           roleName: Z.name,
-          emphasisHook: w
+          emphasisHook: T
         }) : ""]
       }), (0, r.jsx)(f.LZC, {
         size: 12
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: z.intl.string(z.t["9S3QHF"])
+        children: S.intl.string(S.t["9S3QHF"])
       }), (0, r.jsx)(f.LZC, {
         size: 24
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(P, {
         guildProductListing: x,
         guildId: s,
         skuPricePreview: m
       }), (0, r.jsx)(f.LZC, {
         size: 32
       }), (0, r.jsx)("div", {
-        className: S.divider
+        className: O.divider
       }), (0, r.jsx)(f.LZC, {
         size: 32
       }), (0, r.jsxs)("ul", {
-        className: S.benefitsContainer,
-        children: [(0, r.jsx)(P, {
+        className: O.benefitsContainer,
+        children: [(0, r.jsx)(L, {
           guildProductListing: x,
           guildId: s
-        }), (0, r.jsx)(L, {
+        }), (0, r.jsx)(w, {
           role: Z
         })]
       })]

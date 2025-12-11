@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 679891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk846027 = require("./846027.js"),
@@ -29,7 +29,7 @@ function m() {
   for (let e of f) Chunk846027.Z.setDisableLocalVideo(module, Chunk981631.ZUi.MANUAL_ENABLED, Chunk65154.Yn.DEFAULT, false);
   g.clear(), f.clear()
 }
-class _ extends Chunk317770.Z {
+class b extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), Chunk570140.Z.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), Chunk570140.Z.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk928518.Z.addChangeListener(this.handlePopoutChange)
   }
@@ -47,8 +47,8 @@ class _ extends Chunk317770.Z {
       p = c.Z.isVisible(),
       h = s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
       m = o.Z.isLocalVideoDisabled(t, n),
-      _ = g.has(t);
-    !l || p || h || m || _ || (f.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
+      b = g.has(t);
+    !l || p || h || m || b || (f.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
   }
   handleManualLocalVideoToggle(e) {
     let {
@@ -73,4 +73,4 @@ class _ extends Chunk317770.Z {
     })
   }
 }
-let b = new _
+let _ = new b

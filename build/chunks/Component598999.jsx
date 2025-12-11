@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk129633 = require("./129633.js");
+  Chunk619629 = require("./619629.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -141,7 +141,7 @@ class B extends Chunk473749.PureComponent {
       jumping: e
     } = this.props;
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk129633.buttonContainer,
+      className: Chunk619629.buttonContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "secondary",
         size: "sm",
@@ -160,7 +160,7 @@ class B extends Chunk473749.PureComponent {
       closeAriaLabel: a
     } = this.props;
     return null != module && (exports || require || null != Chunk473749 && Chunk473749.isPrivate()) ? (0, Chunk54381.jsx)("div", {
-      className: Chunk129633.buttonContainer,
+      className: Chunk619629.buttonContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.hU, {
         icon: Chunk481060.Dio,
         size: "sm",
@@ -172,7 +172,7 @@ class B extends Chunk473749.PureComponent {
   }
   render() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk129633.actionButtons,
+      className: Chunk619629.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })
   }

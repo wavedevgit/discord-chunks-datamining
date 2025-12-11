@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk893966 = require("./893966.js"),
   Chunk527379 = require("./527379.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk671408 = require("./671408.js");
+  Chunk399158 = require("./399158.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,22 +52,22 @@ function h(e) {
   let {
     guildId: t,
     onPageChange: n
-  } = e, [h, g] = l.useTransition(), j = (0, i.e7)([d.Z], () => d.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), x = (0, i.cj)([d.Z], () => d.Z.getPaginationStateByGuildId(t), [t]), v = (0, u.$j)(t), y = l.useMemo(() => c.LU.map(e => ({
+  } = e, [h, g] = l.useTransition(), j = (0, i.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), x = (0, i.cj)([u.Z], () => u.Z.getPaginationStateByGuildId(t), [t]), v = (0, d.$j)(t), y = l.useMemo(() => c.LU.map(e => ({
     value: e,
     label: Number(e).toLocaleString()
   })), []), O = new Intl.NumberFormat(m.intl.currentLocale).format(j), H = m.intl.formatToPlainString(m.t["RNDnQ/"], {
     count: v ? "..." : O
-  }), _ = j > x.pageSize || v, w = j > c.LU["0"];
+  }), w = j > x.pageSize || v, S = j > c.LU["0"];
   return (0, r.jsxs)("div", {
     className: b.paginationContainer,
     children: [(0, r.jsx)("div", {
       className: b.pageSizeSelection,
-      children: w ? (0, r.jsxs)(r.Fragment, {
+      children: S ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           children: m.intl.string(m.t.jNwLu2)
-        }), (0, r.jsx)(o.B6, {
+        }), (0, r.jsx)(a.B6, {
           "aria-label": H,
           className: b.pageSizeInput,
           options: y,
@@ -82,7 +82,7 @@ function h(e) {
           serialize: e => "".concat(e),
           popoutPosition: "top",
           popoutWidth: 72
-        }), (0, r.jsx)(a.u, {
+        }), (0, r.jsx)(o.u, {
           text: m.intl.string(m.t.ZTNur7),
           shouldShow: v,
           children: (0, r.jsx)(s.Text, {
@@ -101,7 +101,7 @@ function h(e) {
       })
     }), (0, r.jsx)("div", {
       className: b.pagination,
-      children: _ && (0, r.jsx)(s.DsT, {
+      children: w && (0, r.jsx)(s.DsT, {
         className: b.paginationInput,
         totalCount: j,
         pageSize: x.pageSize,

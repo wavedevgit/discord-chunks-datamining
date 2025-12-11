@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 838324, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,23 +15,23 @@ var Chunk442837 = require("./442837.js"),
   Chunk974513 = require("./974513.jsx"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk636942 = require("./636942.js");
+  Chunk212781 = require("./212781.js");
 
-function p(e) {
+function f(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), f = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [h, b] = (0, o.VF)(t, f), [x, j] = (0, d.OA)(t, [...f]), _ = p ? j.length : b.length, v = p ? x.length : h.length, O = _ < u.md, C = v >= u.X, y = j.length - b.length, N = (0, r.jsx)(a.owK, {
+  } = e, f = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), p = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [b, h] = (0, o.VF)(t, p), [x, j] = (0, d.OA)(t, [...p]), v = f ? j.length : h.length, O = f ? x.length : b.length, C = v < u.md, y = O >= u.X, N = j.length - h.length, E = (0, r.jsx)(a.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
     className: m.icon
-  }), E = (0, r.jsx)(a.k$p, {
+  }), I = (0, r.jsx)(a.k$p, {
     size: "sm",
     className: m.icon,
     color: l.Z.colors.WHITE.css,
     secondaryColor: l.Z.colors.BACKGROUND_ACCENT.css
-  }), I = [Math.min(u.X, v) / u.md * 100, Math.min(u.md, _) / u.md * 100], S = !O && C ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
+  }), S = [Math.min(u.X, O) / u.md * 100, Math.min(u.md, v) / u.md * 100], _ = !C && y ? [l.Z.colors.TEXT_FEEDBACK_POSITIVE.css, l.Z.colors.TEXT_FEEDBACK_POSITIVE.css] : [l.Z.colors.TEXT_BRAND.css, l.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsxs)("div", {
@@ -40,22 +40,22 @@ function p(e) {
         variant: "text-xs/bold",
         color: "text-brand",
         children: g.intl.format(g.t.kvroKO, {
-          count: v
+          count: O
         })
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
         color: "text-muted",
         children: g.intl.format(g.t["0MjxJ5"], {
-          count: _
+          count: v
         })
       })]
     }), (0, r.jsx)(a.yGy, {
-      foregroundColors: S,
-      percents: I,
+      foregroundColors: _,
+      percents: S,
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: m.requiredItem,
-      children: [O ? E : N, (0, r.jsx)(a.Text, {
+      children: [C ? I : E, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.intl.format(g.t.k0COZY, {
@@ -64,14 +64,14 @@ function p(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: m.requiredItem,
-      children: [C ? N : E, (0, r.jsx)(a.Text, {
+      children: [y ? E : I, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: g.intl.format(g.t.PwXgSy, {
           count: u.X
         })
       })]
-    }), p && (0, r.jsxs)(r.Fragment, {
+    }), f && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: m.requiredItem,
         children: [(0, r.jsx)(a.d3s, {
@@ -95,7 +95,7 @@ function p(e) {
           variant: "text-xs/normal",
           color: "text-muted",
           children: g.intl.format(g.t["8Geut3"], {
-            count: y,
+            count: N,
             prejoinHook: e => (0, r.jsx)(a.Anchor, {
               onClick: n,
               children: (0, r.jsx)(a.Text, {

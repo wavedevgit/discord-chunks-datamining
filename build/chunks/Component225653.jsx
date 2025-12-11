@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 225653, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => d
@@ -36,7 +36,7 @@ function d(e) {
     p = r.useCallback(e => {
       null != t && o.Z.changeCallRegion(t.channelId, e.id)
     }, [t]),
-    h = r.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
+    f = r.useMemo(() => null == n || 0 === n.length ? null : n.map(e => {
       let {
         id: t,
         name: n
@@ -53,6 +53,6 @@ function d(e) {
     id: "region-select",
     label: u.intl.string(u.t.w8gMqh),
     subtext: d.name,
-    children: h
+    children: f
   })
 }

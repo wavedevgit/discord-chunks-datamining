@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 588275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js");
 
-function p(e, t) {
+function h(e, t) {
   (0, l.jW)(e, async () => {
     let {
       default: e
@@ -55,19 +55,19 @@ function p(e, t) {
   })
 }
 
-function h(e) {
+function p(e) {
   let {
     guildNode: t
-  } = e, n = t.id, l = (0, i.e7)([a.Z], () => a.Z.getRequest(n)), h = (0, i.e7)([a.Z], () => a.Z.getJoinRequestGuild(n), [n]), g = (0, i.e7)([c.Z], () => c.Z.isFocused()), m = (0, i.e7)([s.Z], () => s.Z.getGuildId());
-  return null == h ? null : (0, r.jsx)(u.Z, {
+  } = e, n = t.id, l = (0, i.e7)([o.Z], () => o.Z.getRequest(n)), p = (0, i.e7)([o.Z], () => o.Z.getJoinRequestGuild(n), [n]), g = (0, i.e7)([c.Z], () => c.Z.isFocused()), b = (0, i.e7)([s.Z], () => s.Z.getGuildId());
+  return null == p ? null : (0, r.jsx)(u.Z, {
     guildNode: t,
-    guild: h,
+    guild: p,
     animatable: g,
     draggable: false,
-    selected: n === m,
+    selected: n === b,
     preloadOnClick: false,
-    contextMenu: p,
-    lowerBadge: (null == l ? true : l.applicationStatus) === o.wB.REJECTED ? (0, d.jt)({
+    contextMenu: h,
+    lowerBadge: (null == l ? true : l.applicationStatus) === a.wB.REJECTED ? (0, d.jt)({
       guildJoinRequestStatus: l.applicationStatus
     }) : true,
     route: f.Z5c.GUILD_MEMBER_VERIFICATION(n)

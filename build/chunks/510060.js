@@ -1,19 +1,19 @@
-/** Chunk was on 9456 **/
+/** Chunk was on 193 **/
 /** chunk id: 510060, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   I8: () => o,
-  KW: () => h,
+  KW: () => f,
   LT: () => m,
   Lv: () => s,
   Me: () => c,
   eU: () => d,
   rI: () => u
 });
-var r, Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722);
+var a, Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722);
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +21,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var s = ((r = {})[r.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", r[r.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", r);
+var s = ((a = {})[a.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", a[a.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", a);
 let o = 12;
 class c {
   getWidth(e) {
@@ -34,10 +34,10 @@ class c {
     };
     let t = e / this.maxWidth,
       n = Math.max(Math.floor(t + (e / this.minWidth - t) / 2), 1),
-      r = this.gap * (n - 1);
+      a = this.gap * (n - 1);
     return {
       columns: n,
-      columnWidth: (e - r) / n
+      columnWidth: (e - a) / n
     }
   }
   constructor({
@@ -45,7 +45,7 @@ class c {
     maxWidth: t,
     gap: n
   }) {
-    a(this, "minWidth", true), a(this, "maxWidth", true), a(this, "gap", true), l()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
+    l(this, "minWidth", true), l(this, "maxWidth", true), l(this, "gap", true), i()(e < t, "minWidth needs to be smaller than maxWidth"), this.minWidth = e, this.maxWidth = t, this.gap = n
   }
 }
 let d = {
@@ -55,11 +55,11 @@ let d = {
   u = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.THREE_BY_TWO,
       n = e - 2,
-      r = Math.ceil(n * t);
-    return [n, r]
+      a = Math.ceil(n * t);
+    return [n, a]
   },
   m = 12,
-  h = function(e) {
+  f = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.THREE_BY_TWO;
     return 60 + u(e - 2 * m, t)[1] + 24 + 3 * o
   }

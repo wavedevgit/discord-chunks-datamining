@@ -1,42 +1,20 @@
-/** Chunk was on 50751 **/
-/** chunk id: 609626, original params: e,t,n (module,exports,require) **/
-require.d(exports, {
-  Z: () => c
-});
-var Chunk768581 = require("./768581.js"),
-  Chunk624864 = require("./624864.js"),
-  Chunk620954 = require("./620954.js"),
-  Chunk987650 = require("./987650.js"),
-  Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
-
-function c(e, t) {
-  if (r.Z.isNotificationDisabled(o.n0.ActivityUserJoin)) return null;
-  let n = e.username,
-    c = s.intl.format(s.t["Yk+uYG"], {
-      username: ""
-    }),
-    u = (0, i.ov)(e),
-    d = s.intl.string(s.t.WRj1Wn),
-    {
-      trackView: h,
-      trackClick: p
-    } = (0, l.Rg)(o.n0.ActivityUserJoin, {
-      notif_type: o.n0.ActivityUserJoin,
-      notif_user_id: e.id,
-      activity_type: a.mFx.JOIN,
-      activity_name: t.name
-    });
-  return {
-    icon: u,
-    title: n,
-    body: c,
-    hint: d,
-    onNotificationShow: () => {
-      h()
-    },
-    onDismissClick: () => {
-      p("dismiss")
-    }
-  }
+/** Chunk was on web.js **/
+/** chunk id: 609626, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  metadata: "_857bf4d78ba068ea-metadata",
+  libraryLink: "_857bf4d78ba068ea-libraryLink",
+  libraryIcon: "_857bf4d78ba068ea-libraryIcon",
+  invalidPoop: "_857bf4d78ba068ea-invalidPoop",
+  invalidPoopHorizontal: "_857bf4d78ba068ea-invalidPoopHorizontal",
+  legacySeasonalGiftEmbedWrapper: "_857bf4d78ba068ea-legacySeasonalGiftEmbedWrapper",
+  customGiftEmbedWrapper: "_857bf4d78ba068ea-customGiftEmbedWrapper",
+  giftEmbedWrapperHorizontal: "_857bf4d78ba068ea-giftEmbedWrapperHorizontal",
+  legacySeasonalGiftEmbedBox: "_857bf4d78ba068ea-legacySeasonalGiftEmbedBox",
+  legacySeasonalGiftEmbedBoxHorizontal: "_857bf4d78ba068ea-legacySeasonalGiftEmbedBoxHorizontal",
+  customGiftEmbedBox: "_857bf4d78ba068ea-customGiftEmbedBox",
+  customGiftEmbedBoxHorizontal: "_857bf4d78ba068ea-customGiftEmbedBoxHorizontal",
+  headerIcon: "_857bf4d78ba068ea-headerIcon",
+  collectiblesEmbedWrapper: "_857bf4d78ba068ea-collectiblesEmbedWrapper",
+  collectiblesAcceptButton: "_857bf4d78ba068ea-collectiblesAcceptButton"
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 392885, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -47,7 +47,7 @@ class m extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : m[r] = "GuildSettingsSafetyStore";
-let p = new m(Chunk570140.Z, {
+let f = new m(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: function() {
     if (Chunk999382.Z.getGuildId() === u) returnfalse;
     u = Chunk999382.Z.getGuildId()

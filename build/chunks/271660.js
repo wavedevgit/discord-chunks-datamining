@@ -1,0 +1,17 @@
+/** Chunk was on 1272 **/
+/** chunk id: 271660, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  container: "_9192b0668a22f64c-container",
+  image: "_9192b0668a22f64c-image",
+  assetBlurred: "_9192b0668a22f64c-assetBlurred",
+  decoWrapper: "_9192b0668a22f64c-decoWrapper",
+  overlay: "_9192b0668a22f64c-overlay",
+  darkThemeGradient: "_9192b0668a22f64c-darkThemeGradient",
+  lightThemeGradient: "_9192b0668a22f64c-lightThemeGradient",
+  details: "_9192b0668a22f64c-details",
+  logoContainer: "_9192b0668a22f64c-logoContainer",
+  logo: "_9192b0668a22f64c-logo",
+  logoWithCosponsor: "_9192b0668a22f64c-logoWithCosponsor",
+  title: "_9192b0668a22f64c-title",
+  hovered: "_9192b0668a22f64c-hovered"
+}

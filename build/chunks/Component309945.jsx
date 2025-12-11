@@ -11,9 +11,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk692547 = require("./692547.js"),
   Chunk899667 = require("./899667.js"),
   Chunk317169 = require("./317169.js"),
-  Chunk5238 = require("./5238.js"),
+  Chunk44542 = require("./44542.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk874622 = require("./874622.js");
+  Chunk183742 = require("./183742.js");
 
 function m(e) {
   let {
@@ -22,28 +22,28 @@ function m(e) {
     warnings: m
   } = e, {
     spent: g
-  } = (0, c.Z)(t), v = (0, a.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - i.useMemo(() => {
+  } = (0, u.Z)(t), v = (0, o.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - i.useMemo(() => {
     var e, t, n;
     return null != (n = null == v || null == (t = v.filter) || null == (e = t.call(v, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [v]);
   return x <= 0 ? null : (0, r.jsxs)("div", {
-    className: f.container,
+    className: p.container,
     children: [(0, r.jsx)(l.Mgn, {
       color: s.Z.colors.TEXT_FEEDBACK_WARNING,
-      className: f.icon
-    }), (0, r.jsx)(o.xvT, {
+      className: p.icon
+    }), (0, r.jsx)(a.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
-      children: p.intl.string(d.default.n5hQhc)
-    }), (0, r.jsxs)(o.xvT, {
+      children: f.intl.string(d.default.n5hQhc)
+    }), (0, r.jsxs)(a.xvT, {
       variant: "text-sm/medium",
-      children: [p.intl.formatToPlainString(d.default.iAaAiG, {
+      children: [f.intl.formatToPlainString(d.default.iAaAiG, {
         boostCount: x,
         perksString: n.join(", ")
-      }), null == m ? true : m.map((e, t) => (0, r.jsx)(o.xvT, {
+      }), null == m ? true : m.map((e, t) => (0, r.jsx)(a.xvT, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
-        className: f.warning,
+        className: p.warning,
         children: e
       }, "warning-".concat(t)))]
     })]

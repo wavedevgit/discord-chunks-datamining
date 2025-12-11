@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk396754 = require("./396754.js"),
+var Chunk240005 = require("./240005.js"),
   Chunk404726 = require("./404726.jsx"),
   Chunk98123 = require("./98123.js");
 
@@ -90,4 +90,4 @@ function _(e) {
     artboardProperties: p
   }), n))
 }
-_.riveSrc = Chunk396754.Z
+_.riveSrc = Chunk240005.Z

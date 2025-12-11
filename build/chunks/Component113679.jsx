@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 113679, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,15 +13,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk140031 = require("./140031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk49465 = require("./49465.js");
+  Chunk822809 = require("./822809.js");
 
 function m(e) {
   let {
     guild: t
-  } = e, n = i.useId(), m = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), p = t.features.has(d.GuildFeatures.COMMUNITY), [f, h] = i.useState(t.features.has(d.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), b = i.useCallback(async e => {
-    h(e), await (0, s.fp)(t, e)
+  } = e, n = i.useId(), m = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), f = t.features.has(d.GuildFeatures.COMMUNITY), [p, b] = i.useState(t.features.has(d.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), h = i.useCallback(async e => {
+    b(e), await (0, s.fp)(t, e)
   }, [t]);
-  return p ? null : (0, r.jsxs)("div", {
+  return f ? null : (0, r.jsxs)("div", {
     className: g.bannerContainer,
     children: [(0, r.jsx)(c.Z, {
       width: 64,
@@ -41,8 +41,8 @@ function m(e) {
       className: g.buttonContainer,
       children: (0, r.jsx)(a.rsf, {
         id: n,
-        checked: f,
-        onChange: b,
+        checked: p,
+        onChange: h,
         disabled: !m
       })
     })]

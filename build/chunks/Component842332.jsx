@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 842332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => h
@@ -36,8 +36,8 @@ function h(e) {
     updateThreadSettings: l,
     threadSettings: d,
     textAreaState: h
-  } = e, [f, g] = i.useState(false), [m, b] = i.useState(false), _ = (0, o.o)(), y = i.useCallback(async () => {
-    if (_) {
+  } = e, [f, g] = i.useState(false), [m, b] = i.useState(false), y = (0, o.o)(), O = i.useCallback(async () => {
+    if (y) {
       g(true);
       try {
         let r = null;
@@ -56,46 +56,46 @@ function h(e) {
         g(false)
       }
     }
-  }, [t.id, n, l, _, h.textValue]);
+  }, [t.id, n, l, y, h.textValue]);
   i.useEffect(() => {
     b(false), g(false), t.id === d.parentChannelId && n !== d.parentMessageId && l({
       name: ""
     })
   }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), i.useEffect(() => {
-    (null == d.name || "" === d.name.trim()) && !m && _ && null != n && (b(true), y())
-  }, [t.id, n, l, d.name, m, _, y]);
-  let O = i.useCallback(function() {
+    (null == d.name || "" === d.name.trim()) && !m && y && null != n && (b(true), O())
+  }, [t.id, n, l, d.name, m, y, O]);
+  let j = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      if (_) return {
+      if (y) return {
         icon: s.$2U,
-        onClick: y,
+        onClick: O,
         "aria-label": u.intl.string(u.t.ZF2oBs),
         disabled: e || f || null == n && h.textValue.trim().length < 10,
         tooltip: u.intl.string(u.t.ZF2oBs),
         loading: f
       }
-    }, [_, y, f, n, h.textValue]),
-    j = i.useCallback(function() {
+    }, [y, O, f, n, h.textValue]),
+    x = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      return _ ? (0, r.jsx)(a.u, {
+      return y ? (0, r.jsx)(a.u, {
         text: u.intl.string(u.t.ZF2oBs),
         children: (0, r.jsx)(s.hU, {
           icon: s.$2U,
           variant: "secondary",
           size: "sm",
           "aria-label": u.intl.string(u.t.ZF2oBs),
-          onClick: y,
+          onClick: O,
           disabled: e || f || null == n && h.textValue.trim().length < 10,
           loading: f,
           type: "button"
         })
       }) : null
-    }, [_, f, n, h.textValue, y]);
+    }, [y, f, n, h.textValue, O]);
   return {
     isGeneratingAI: f,
-    generateAIName: y,
-    enableAIFeatures: _,
-    renderAiGenerateButton: j,
-    getThreadNameInputAccessory: O
+    generateAIName: O,
+    enableAIFeatures: y,
+    renderAiGenerateButton: x,
+    getThreadNameInputAccessory: j
   }
 }

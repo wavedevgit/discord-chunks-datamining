@@ -1,9 +1,10 @@
-/** Chunk was on 24358 **/
-/** chunk id: 423589, original params: t,i,e (module,exports,require) **/
+/** Chunk was on 38373 **/
+/** chunk id: 423589, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Mn: () => L,
-  OD: () => S,
-  W9: () => g
+  Mn: () => h,
+  OD: () => g,
+  W9: () => f
 }), require("./388685.js"), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,7 +16,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g() {
+function f() {
   return [{
     label: Chunk388032.intl.string(Chunk388032.t["8ot6gv"]),
     value: Chunk969943.Oe.MINUTES_15
@@ -36,22 +37,22 @@ function g() {
     value: Chunk969943.Oe.ALWAYS
   }]
 }
-let _ = {
+let b = {
   ignoreMute: false,
   ignoreUnreadSetting: true,
   ignoreNotificationSetting: false
 };
 
-function S(t) {
-  let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : _;
-  return r.default.keys(t).filter(e => {
-    var l, a;
-    let r = t[e].message_notifications !== d.bL.NULL,
-      o = n.yE(null != (l = t[e].flags) ? l : 0, c.ic.UNREADS_ALL_MESSAGES) || n.yE(null != (a = t[e].flags) ? a : 0, c.ic.UNREADS_ONLY_MENTIONS);
-    return !i.ignoreUnreadSetting && o || !i.ignoreNotificationSetting && r || !i.ignoreMute && (0, s.m$)(t[e])
+function g(e) {
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : b;
+  return o.default.keys(e).filter(n => {
+    var c, l;
+    let o = e[n].message_notifications !== r.bL.NULL,
+      d = i.yE(null != (c = e[n].flags) ? c : 0, s.ic.UNREADS_ALL_MESSAGES) || i.yE(null != (l = e[n].flags) ? l : 0, s.ic.UNREADS_ONLY_MENTIONS);
+    return !t.ignoreUnreadSetting && d || !t.ignoreNotificationSetting && o || !t.ignoreMute && (0, a.m$)(e[n])
   })
 }
 
-function L(t) {
-  return (0, l.e7)([a.ZP], () => a.ZP.useNewNotifications)
+function h(e) {
+  return (0, c.e7)([l.ZP], () => l.ZP.useNewNotifications)
 }

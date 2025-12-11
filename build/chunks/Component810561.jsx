@@ -1,58 +1,58 @@
-/** Chunk was on 98878 **/
+/** Chunk was on 97476 **/
 /** chunk id: 810561, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk709054 = require("./709054.js"),
   Chunk7697 = require("./7697.js"),
   Chunk421032 = require("./421032.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk393181 = require("./393181.js");
+  Chunk437989 = require("./437989.js");
 
-function _(e) {
+function b(e) {
   let {
     guildId: n,
     recurrenceRule: t,
-    guildEventId: r,
-    onRecurrenceClick: _,
-    hideScroller: p = false,
-    activeRecurrenceId: f
+    guildEventId: i,
+    onRecurrenceClick: b,
+    hideScroller: f = false,
+    activeRecurrenceId: p
   } = e, {
-    recurrenceStartTimes: m,
+    recurrenceStartTimes: h,
     canViewMoreRecurrences: v,
     updateRecurrenceStartTimes: g
-  } = (0, c.Z)(r, n, t), h = p ? "div" : l.Ttm;
-  return (0, i.jsxs)("div", {
+  } = (0, c.Z)(i, n, t), m = f ? "div" : l.Ttm;
+  return (0, a.jsxs)("div", {
     className: u.recurrences,
-    children: [(0, i.jsx)(l.Heading, {
+    children: [(0, a.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
-      children: d.intl.string(d.t["D/jjoa"])
-    }), (0, i.jsxs)(h, {
-      className: a()(u.scroller, {
-        [u.showScroller]: !p
+      children: s.intl.string(s.t["D/jjoa"])
+    }), (0, a.jsxs)(m, {
+      className: r()(u.scroller, {
+        [u.showScroller]: !f
       }),
-      children: [m.map(e => {
+      children: [h.map(e => {
         let n = o.default.fromTimestamp(e.getTime());
-        return (0, i.jsx)(s.Z, {
+        return (0, a.jsx)(d.Z, {
           recurrenceId: n,
           originalScheduledStartTime: e,
-          guildEventId: r,
-          onClick: _,
-          isActive: n === f
+          guildEventId: i,
+          onClick: b,
+          isActive: n === p
         }, n)
-      }), v && (0, i.jsx)("div", {
+      }), v && (0, a.jsx)("div", {
         className: u.buttonContainer,
-        children: (0, i.jsx)(l.Avr, {
+        children: (0, a.jsx)(l.Avr, {
           onClick: e => {
             e.stopPropagation(), g()
           },
-          text: d.intl.string(d.t["8O7Hpy"]),
+          text: s.intl.string(s.t["8O7Hpy"]),
           size: "sm"
         })
       })]

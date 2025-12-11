@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 789574, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -32,8 +32,8 @@ function x(e) {
     editedIntegration: o,
     webhooks: d,
     editedWebhook: u,
-    isFetching: p,
-    errors: f
+    isFetching: f,
+    errors: p
   } = (0, l.cj)([m.default], () => ({
     editedIntegration: m.default.editedIntegration,
     editedWebhook: m.default.editedWebhook,
@@ -52,9 +52,9 @@ function x(e) {
     webhooks: d,
     editedIntegration: o,
     editedWebhook: u,
-    isFetchingWebhooks: p,
+    isFetchingWebhooks: f,
     hasChanges: m.default.hasChanges,
-    errors: f,
+    errors: p,
     refToScroller: t
   })
 }

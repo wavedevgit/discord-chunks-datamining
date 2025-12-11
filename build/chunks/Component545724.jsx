@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk687683 = require("./687683.js"),
-  Chunk978070 = require("./978070.js");
+  Chunk718726 = require("./718726.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,13 +51,13 @@ let h = function(e) {
     children: l,
     user: h,
     channel: m,
-    onClick: _,
-    isFocused: b,
+    onClick: b,
+    isFocused: _,
     isActive: E,
     onOtherHover: O,
     className: v
   } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = () => {
-    I(true), !b || E || C || null == O || O()
+    I(true), !_ || E || C || null == O || O()
   }, N = () => {
     I(false)
   };
@@ -77,7 +77,7 @@ let h = function(e) {
           null != h && (S(true), (0, u.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
+            } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
             return t => (0, r.jsx)(e, g(f({}, t), {
               user: h
             }))
@@ -89,7 +89,7 @@ let h = function(e) {
         },
         onMouseEnter: T,
         onMouseLeave: N,
-        onClick: null != _ ? _ : true,
+        onClick: null != b ? b : true,
         style: {
           LIST_ROW_HEIGHT: d.WN,
           opacity: 1

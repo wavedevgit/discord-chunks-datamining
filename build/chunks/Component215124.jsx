@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 215124, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,17 +19,17 @@ function g(e) {
   let {
     guildId: t,
     allPeriods: g
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), f = (0, c.qi)(t, {
     includeSoftDeleted: true
-  }), f = (0, s.ue)(t, {
+  }), p = (0, s.ue)(t, {
     publishedOnly: false
   }), {
-    allowSelfRemoveMonetization: h
-  } = (0, a.gX)(t), b = g.filter(e => {
+    allowSelfRemoveMonetization: b
+  } = (0, a.gX)(t), h = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = p.length > 0, j = f.length > 0, _ = b.length > 0;
+  }), x = f.length > 0, j = p.length > 0, v = h.length > 0;
   return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
@@ -41,7 +41,7 @@ function g(e) {
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
       text: u.intl.string(u.t.FrOFSo),
-      disabled: !h || x || j || _,
+      disabled: !b || x || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {

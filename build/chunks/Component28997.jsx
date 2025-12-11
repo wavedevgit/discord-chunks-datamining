@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 28997, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk137510 = require("./137510.js"),
-  Chunk922657 = require("./922657.js");
+  Chunk227968 = require("./227968.js");
 
 function c(e) {
   let {
@@ -22,20 +22,20 @@ function c(e) {
     subsection: u = null,
     onClick: g,
     className: m,
-    disabled: p
+    disabled: f
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(o.container, m),
     children: [(0, r.jsx)(a.P3F, {
       className: l()(o.clickableContainer, {
         [o.noAction]: null == g,
-        [o.disabled]: p
+        [o.disabled]: f
       }, m),
-      onClick: p ? true : g,
+      onClick: f ? true : g,
       children: (0, r.jsxs)("div", {
         className: l()(o.backgroundModifierContainer, o[c], {
           [o.selected]: d,
-          [o.disabled]: p,
+          [o.disabled]: f,
           [o.noAction]: null == g
         }),
         children: [(0, r.jsxs)("div", {

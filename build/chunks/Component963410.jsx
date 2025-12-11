@@ -18,15 +18,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk210975 = require("./210975.js"),
   Chunk301107 = require("./301107.js"),
   Chunk65692 = require("./65692.js"),
-  Chunk540247 = require("./540247.js"),
+  Chunk146601 = require("./146601.js"),
   Chunk785792 = require("./785792.jsx"),
   Chunk190054 = require("./190054.jsx"),
   Chunk760373 = require("./760373.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk547990 = require("./547990.js");
+  Chunk979519 = require("./979519.js");
 
-function N(e) {
+function _(e) {
   let {
     badgeText: t,
     badgeColor: r
@@ -54,8 +54,8 @@ function v(e) {
     userId: C
   }), U = (0, p.W)({
     fingerprintBase64: x,
-    chunkSize: _.iQ,
-    desiredLength: _.KN
+    chunkSize: T.iQ,
+    desiredLength: T.KN
   }), k = l.useCallback(() => {
     (0, f.s$)({
       userId: C,
@@ -78,10 +78,10 @@ function v(e) {
   } = (0, E.y)({
     userId: C
   }), K = l.useCallback(() => {
-    null != P && ((0, d.TQ)(C, P, V, R, T.Sbl.E2EE_USER_VERIFY_MODAL), Z())
+    null != P && ((0, d.TQ)(C, P, V, R, h.Sbl.E2EE_USER_VERIFY_MODAL), Z())
   }, [P, C, V, R, Z]), L = l.useCallback(() => {
     null != P && ((0, d.LO)(C, P, V), Z())
-  }, [P, C, V, Z]), [G, Y] = l.useMemo(() => F ? [h.intl.string(h.t.UNUuem), c.TVs.colors.BACKGROUND_BRAND.css] : [h.intl.string(h.t.y2b7CA), c.TVs.colors.STATUS_DANGER.css], [F]), B = l.useMemo(() => (0, d.kK)({
+  }, [P, C, V, Z]), [G, Y] = l.useMemo(() => F ? [j.intl.string(j.t.UNUuem), c.TVs.colors.BACKGROUND_BRAND.css] : [j.intl.string(j.t.y2b7CA), c.TVs.colors.STATUS_DANGER.css], [F]), B = l.useMemo(() => (0, d.kK)({
     isCurrentUserKeyPersistent: M,
     isOtherUserKeyPersistent: V,
     otherUserNickname: w
@@ -97,60 +97,60 @@ function v(e) {
   }, [R, C]);
   let J = {
       transitionState: v,
-      title: h.intl.string(h.t["/WPGnF"]),
-      subtitle: h.intl.format(h.t.oc2kce, {
+      title: j.intl.string(j.t["/WPGnF"]),
+      subtitle: j.intl.format(j.t.oc2kce, {
         username: w
       })
     },
     W = (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsxs)("div", {
-        className: j.verification,
+        className: N.verification,
         children: [z > 0 && (0, n.jsx)(c.Wn, {
           messageType: c.QYI.INFO,
-          className: j.helpMessage,
-          children: h.intl.format(h.t.uZDkz0, {
+          className: N.helpMessage,
+          children: j.intl.format(j.t.uZDkz0, {
             count: z
           })
         }), (0, n.jsxs)("div", {
-          className: j.header,
+          className: N.header,
           children: [(0, n.jsx)(c.Heading, {
             variant: "text-sm/bold",
             color: "header-primary",
-            children: h.intl.string(h.t["/WPGnF"])
+            children: j.intl.string(j.t["/WPGnF"])
           }), null != U && (0, n.jsx)(S.H, {
-            className: j.copyIcon,
+            className: N.copyIcon,
             chunks: U,
             color: c.TVs.colors.INTERACTIVE_TEXT_DEFAULT,
             onCopy: k
           }), (0, n.jsx)("div", {
-            className: j.codeStatus,
+            className: N.codeStatus,
             children: null == U ? (0, n.jsx)(c.$jN, {
-              className: j.spinner,
+              className: N.spinner,
               type: c.RAz.SPINNING_CIRCLE
-            }) : (0, n.jsx)(N, {
+            }) : (0, n.jsx)(_, {
               badgeText: G,
               badgeColor: Y
             })
           })]
         }), (0, n.jsx)(O.b, {
-          className: j.code,
+          className: N.code,
           chunks: U,
-          columns: _.ak
+          columns: T.ak
         })]
       }), (0, n.jsx)(c.Text, {
-        className: j.footer,
+        className: N.footer,
         variant: "text-sm/normal",
         color: "text-muted",
         children: B
       })]
     }),
     X = {
-      text: F ? h.intl.string(h.t["Osb+/n"]) : h.intl.string(h.t["0tvNAn"]),
+      text: F ? j.intl.string(j.t["Osb+/n"]) : j.intl.string(j.t["0tvNAn"]),
       disabled: null == U || D,
       onClick: F ? L : K
     },
     q = {
-      text: h.intl.string(h.t["ETE/oC"]),
+      text: j.intl.string(j.t["ETE/oC"]),
       onClick: Z,
       variant: "secondary"
     };

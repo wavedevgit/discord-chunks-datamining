@@ -4,14 +4,14 @@
 require.d(exports, {
   Z: () => p
 }), require("./388685.js");
-var r, Chunk54381 = require("./54381.js"),
+var a, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk788524 = require("./788524.js");
+  Chunk827954 = require("./827954.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,7 +21,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class p extends(r = Chunk473749.Component) {
+class p extends(a = Chunk473749.Component) {
   componentDidMount() {
     this.props.show && this.animate(1)
   }
@@ -51,13 +51,13 @@ class p extends(r = Chunk473749.Component) {
       href: Chunk981631.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",
-      className: s()(Chunk788524.logo, this.props.className),
+      className: s()(Chunk827954.logo, this.props.className),
       style: this.getAnimatedStyle()
     })
   }
   constructor(...e) {
-    super(...e), f(this, "anim", new l.Z.Value(0)), f(this, "animate", e => {
-      l.Z.spring(this.anim, {
+    super(...e), f(this, "anim", new c.Z.Value(0)), f(this, "animate", e => {
+      c.Z.spring(this.anim, {
         toValue: e,
         friction: 10,
         tension: 100

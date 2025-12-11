@@ -18,15 +18,15 @@ function E(e) {
   let {
     role: n,
     guildId: l
-  } = e, a = (0, u._f)(l, null != n ? n : true, null == n ? true : n.colorStrings), c = (0, i.e7)([o.Z], () => o.Z.roleStyle), E = (0, s.dQu)(s.TVs.unsafe_rawColors.PRIMARY_300).hex(), d = null != (t = null == n ? true : n.colorString) ? t : E;
-  return null == n ? null : "dot" === c ? (0, r.jsx)(s.FhE, {
+  } = e, s = (0, u._f)(l, null != n ? n : true, null == n ? true : n.colorStrings), c = (0, i.e7)([o.Z], () => o.Z.roleStyle), E = (0, a.dQu)(a.TVs.unsafe_rawColors.PRIMARY_300).hex(), d = null != (t = null == n ? true : n.colorString) ? t : E;
+  return null == n ? null : "dot" === c ? (0, r.jsx)(a.FhE, {
     color: null != d ? d : true,
-    colors: a,
+    colors: s,
     background: false,
     tooltip: false
-  }) : (0, r.jsx)(s.xko, {
+  }) : (0, r.jsx)(a.xko, {
     color: null != d ? d : null,
-    colors: a
+    colors: s
   })
 }
 
@@ -38,11 +38,11 @@ function d(e) {
     className: o,
     canRemove: u = false,
     onRemove: E = c.dG
-  } = e, d = (0, s.dQu)(s.TVs.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == i ? true : i.colorString) ? t : d, A = l.useMemo(() => ({
+  } = e, d = (0, a.dQu)(a.TVs.unsafe_rawColors.PRIMARY_300).hex(), _ = null != (t = null == i ? true : i.colorString) ? t : d, A = l.useMemo(() => ({
     backgroundColor: "".concat(_, "27")
   }), [_]);
-  return null == i ? null : (0, r.jsx)(s.P3F, {
-    children: (0, r.jsx)(a.UB, {
+  return null == i ? null : (0, r.jsx)(a.P3F, {
+    children: (0, r.jsx)(s.UB, {
       className: o,
       style: A,
       role: i,

@@ -21,10 +21,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk391876 = require("./391876.jsx"),
   Chunk883166 = require("./883166.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk862474 = require("./862474.js"),
+  Chunk547081 = require("./547081.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk417788 = require("./417788.js"),
-  Chunk612782 = require("./612782.js");
+  Chunk554445 = require("./554445.js"),
+  Chunk998018 = require("./998018.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -141,29 +141,29 @@ function P() {
     } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk54381.jsxs)(Chunk198358.Z, {
     verticalFlow: true,
-    className: Chunk612782.container,
+    className: Chunk998018.container,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk417788.title,
+      className: Chunk554445.title,
       children: [(0, Chunk54381.jsx)(Chunk793030.iWm, {
         size: "refresh_sm",
         color: exports,
-        colorClass: Chunk417788.iconColor
+        colorClass: Chunk554445.iconColor
       }), (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "eyebrow",
-        className: Chunk417788.eyebrow,
-        children: Chunk388032.intl.string(Chunk862474.default.dW6EBf)
+        className: Chunk554445.eyebrow,
+        children: Chunk388032.intl.string(Chunk547081.default.dW6EBf)
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk612782.header,
+      className: Chunk998018.header,
       children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "display-lg",
-        className: Chunk612782.display,
+        className: Chunk998018.display,
         children: Chunk388032.intl.string(Chunk388032.t.URyqtP)
       }), (0, Chunk54381.jsxs)("div", {
         children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "heading-xxl/medium",
-          className: Chunk612782.subtitle,
-          children: Chunk388032.intl.format(Chunk862474.default.gzlOml, {
+          className: Chunk998018.subtitle,
+          children: Chunk388032.intl.format(Chunk547081.default.gzlOml, {
             numGames: require,
             gamesHook: (e, t) => (0, r.jsx)(g.Z, {
               variant: "heading-xxl/medium",
@@ -176,7 +176,7 @@ function P() {
         })]
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk612782.games,
+      className: Chunk998018.games,
       children: Chunk120356.map((e, t) => (0, r.jsx)(N, A(T({}, e), {
         index: t
       }), "game-".concat(t)))

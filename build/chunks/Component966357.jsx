@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 966357, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk314852 = require("./314852.js"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js"),
-  Chunk921072 = require("./921072.js"),
+  Chunk735703 = require("./735703.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m() {
@@ -20,9 +20,9 @@ function m() {
     t = null == module ? true : module.id,
     n = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getProfileError()),
     m = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
-    p = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
-    f = Chunk473749.useMemo(() => (null == require ? true : require.status) === 429 ? Chunk388032.intl.string(Chunk921072.default["bFRS/s"]) : null == require ? true : require.getAnyErrorMessage(), [require]),
-    h = Chunk473749.useCallback(() => {
+    f = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
+    p = Chunk473749.useMemo(() => (null == require ? true : require.status) === 429 ? Chunk388032.intl.string(Chunk735703.default["bFRS/s"]) : null == require ? true : require.getAnyErrorMessage(), [require]),
+    b = Chunk473749.useCallback(() => {
       if (null == module || null == m) return;
       let t = {
         tag: m.tag,
@@ -32,13 +32,13 @@ function m() {
       };
       (0, Chunk699553.pV)(module.id, exports)
     }, [module, m]),
-    b = Chunk473749.useCallback(() => {
+    h = Chunk473749.useCallback(() => {
       null != exports && Chunk434404.Z.init(exports)
     }, [exports]);
   return (0, Chunk54381.jsx)(Chunk796027.Z, {
-    submitting: p,
-    errorMessage: f,
-    onSave: h,
-    onReset: b
+    submitting: f,
+    errorMessage: p,
+    onSave: b,
+    onReset: h
   })
 }

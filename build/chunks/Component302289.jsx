@@ -12,15 +12,15 @@ var Chunk120356 = require("./120356.js"),
   Chunk546791 = require("./546791.js"),
   Chunk785681 = require("./785681.js"),
   Chunk130310 = require("./130310.jsx"),
-  Chunk435757 = require("./435757.js"),
+  Chunk372807 = require("./372807.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk398739 = require("./398739.js"),
-  Chunk519279 = require("./519279.js");
+  Chunk104672 = require("./104672.js"),
+  Chunk108319 = require("./108319.js");
 let _ = () => {
-  let e = (0, Chunk546791.nE)(Chunk388032.intl.string(Chunk435757.default.XJabSN), Chunk388032.intl.string(Chunk435757.default.tr8Gni)),
-    t = (0, Chunk785681.o)((0, Chunk546791.nE)(Chunk388032.intl.string(Chunk435757.default.i4XFEH), Chunk388032.intl.string(Chunk435757.default["3xKGSE"])), (0, Chunk546791.nE)(Chunk388032.intl.string(Chunk435757.default.eHQZuO), Chunk388032.intl.string(Chunk435757.default.XbgrG7)));
+  let e = (0, Chunk546791.nE)(Chunk388032.intl.string(Chunk372807.default.XJabSN), Chunk388032.intl.string(Chunk372807.default.tr8Gni)),
+    t = (0, Chunk785681.o)((0, Chunk546791.nE)(Chunk388032.intl.string(Chunk372807.default.i4XFEH), Chunk388032.intl.string(Chunk372807.default["3xKGSE"])), (0, Chunk546791.nE)(Chunk388032.intl.string(Chunk372807.default.eHQZuO), Chunk388032.intl.string(Chunk372807.default.XbgrG7)));
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-    className: a()(Chunk398739.container, Chunk519279.box),
+    className: a()(Chunk104672.container, Chunk108319.box),
     gap: 24,
     padding: 24,
     children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {

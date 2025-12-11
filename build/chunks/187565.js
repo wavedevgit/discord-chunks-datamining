@@ -1,11 +1,11 @@
-/** Chunk was on 74240 **/
+/** Chunk was on 93671 **/
 /** chunk id: 187565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KJ: () => p,
-  N0: () => b,
+  KJ: () => g,
+  N0: () => v,
   k3: () => j,
   lk: () => C,
-  ng: () => v
+  ng: () => p
 }), require("./388685.js"), require("./457542.js"), require("./781311.js"), require("./953529.js");
 var r, Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -20,14 +20,14 @@ var r, Chunk473749 = require("./473749.js"),
   Chunk983736 = require("./983736.js"),
   Chunk266395 = require("./266395.js"),
   Chunk388032 = require("./388032.jsx"),
-  p = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
+  g = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
 
-function v(e, t, n) {
-  let [r, s] = l.useState(false), c = (0, i.e7)([m.Z], () => m.Z.get(e)), u = (0, i.e7)([a.Z], () => a.Z.pendingState);
+function p(e, t, n) {
+  let [r, a] = l.useState(false), c = (0, i.e7)([m.Z], () => m.Z.get(e)), u = (0, i.e7)([s.Z], () => s.Z.pendingState);
   l.useEffect(() => {
-    t || d.ZP.fetchVerificationForm(e, n).finally(() => s(true))
+    t || d.ZP.fetchVerificationForm(e, n).finally(() => a(true))
   }, [e, n, t]);
-  let x = l.useMemo(() => {
+  let b = l.useMemo(() => {
     var e, n;
     let r;
     if (!t || null == u) return null;
@@ -36,7 +36,7 @@ function v(e, t, n) {
       let e = u.termRules.map(e => e.value.trim()).filter(e => "" !== e);
       r = [{
         field_type: f.QJ.TERMS,
-        label: g.intl.string(g.t["9suSIA"]),
+        label: h.intl.string(h.t["9suSIA"]),
         values: e,
         required: true
       }]
@@ -50,14 +50,14 @@ function v(e, t, n) {
   }, [t, u, c]);
   return {
     hasFetched: r,
-    verificationForm: null != x ? x : c
+    verificationForm: null != b ? b : c
   }
 }
 
-function b(e, t, n) {
+function v(e, t, n) {
   let r = (0, i.e7)([c.Z], () => c.Z.getGuild(e)),
-    a = (0, i.e7)([s.Z], () => s.Z.getGuild());
-  return l.useMemo(() => n && (null == a ? true : a.id) === e ? a : null != r ? r : null != t ? (0, u.Rj)(t) : null, [n, a, e, r, t])
+    s = (0, i.e7)([a.Z], () => a.Z.getGuild());
+  return l.useMemo(() => n && (null == s ? true : s.id) === e ? s : null != r ? r : null != t ? (0, u.Rj)(t) : null, [n, s, e, r, t])
 }
 
 function j(e) {
@@ -75,11 +75,11 @@ function j(e) {
 }
 
 function C(e) {
-  let t = (0, h.rb)(e => e.hasUnsubmittedChanges);
-  l.useEffect(() => ((0, h.a5)(false), () => {
-    (0, h.a5)(false)
+  let t = (0, x.rb)(e => e.hasUnsubmittedChanges);
+  l.useEffect(() => ((0, x.a5)(false), () => {
+    (0, x.a5)(false)
   }), []), l.useEffect(() => {
-    let n = e.some(e => e.field_type !== f.QJ.TERMS && (0, x.OA)(e));
-    n && !t ? (0, h.a5)(true) : !n && t && (0, h.a5)(false)
+    let n = e.some(e => e.field_type !== f.QJ.TERMS && (0, b.OA)(e));
+    n && !t ? (0, x.a5)(true) : !n && t && (0, x.a5)(false)
   }, [e, t])
 }

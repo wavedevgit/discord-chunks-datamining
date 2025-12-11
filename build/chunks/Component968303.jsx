@@ -14,7 +14,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk360920 = require("./360920.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk295907 = require("./295907.js"),
-  Chunk82642 = require("./82642.js");
+  Chunk923416 = require("./923416.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,9 +73,9 @@ function O(e, t) {
   return i
 }
 let v = {
-    side: Chunk82642.side,
-    top: Chunk82642.top,
-    "top-pill": Chunk82642.topPill
+    side: Chunk923416.side,
+    top: Chunk923416.top,
+    "top-pill": Chunk923416.topPill
   },
   S = Chunk473749.forwardRef(function(e, t) {
     let {
@@ -192,12 +192,12 @@ class N extends(r = Chunk473749.Component) {
     } = this.props, h = this.props["aria-label"], g = r === require;
     return (0, Chunk54381.jsx)(Chunk360920.P, {
       className: l()(exports, {
-        [Chunk82642.item]: !Chunk295907,
-        [Chunk82642.brand]: "brand" === Chunk777207,
-        [Chunk82642.selected]: null == i && g,
-        [Chunk82642.themed]: "grey" === Chunk777207,
-        [Chunk82642.disabled]: null == i && Chunk120356,
-        [Chunk82642.destructive]: "destructive" === Chunk473749
+        [Chunk923416.item]: !Chunk295907,
+        [Chunk923416.brand]: "brand" === Chunk777207,
+        [Chunk923416.selected]: null == i && g,
+        [Chunk923416.themed]: "grey" === Chunk777207,
+        [Chunk923416.disabled]: null == i && Chunk120356,
+        [Chunk923416.destructive]: "destructive" === Chunk473749
       }),
       style: this.getStyle(),
       role: "tab",

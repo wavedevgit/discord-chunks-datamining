@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 968820, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk685389 = require("./685389.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk49792 = require("./49792.js");
+  Chunk574094 = require("./574094.js");
 
 function g(e) {
   let {
@@ -21,9 +21,9 @@ function g(e) {
     revenue: n,
     revenueTrend: g,
     summaryMetricLabel: m,
-    summaryMetricValue: p,
-    summaryMetricTrend: f,
-    summaryMetricTrendIsPercent: h
+    summaryMetricValue: f,
+    summaryMetricTrend: p,
+    summaryMetricTrendIsPercent: b
   } = e;
   return (0, r.jsx)(i.C3N, {
     label: d.intl.string(d.t.ofmOzb),
@@ -39,10 +39,10 @@ function g(e) {
           })
         }), (0, r.jsx)(s.Z, {
           label: m,
-          value: p,
+          value: f,
           additionalContent: (0, r.jsx)(l.H, {
-            value: f,
-            isPercent: h
+            value: p,
+            isPercent: b
           })
         })]
       }), t]

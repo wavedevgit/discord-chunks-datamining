@@ -305,9 +305,9 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
 }), Y(["READY_SUPPLEMENTAL"], e => {
   g.Z.readySupplemental.measure(() => {
     a.ZP.Emitter.batched(() => {
-      var t, n;
+      var t;
       e = g.Z.hydrateReadySupplemental.measure(() => R.r$(e, D.Wb.identifyStartTime));
-      let r = e => e.map(e => ({
+      let n = e => e.map(e => ({
           user: e.user,
           status: e.status,
           clientStatus: e.client_status,
@@ -315,29 +315,27 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
           hiddenActivities: e.hidden_activities,
           processedAtTimestamp: e.processed_at_timestamp
         })),
-        i = e.guilds.filter(e => true !== e.unavailable);
-      i.forEach(e => {
-        e.presences = r(e.presences || [])
+        r = e.guilds.filter(e => true !== e.unavailable);
+      r.forEach(e => {
+        e.presences = n(e.presences || [])
       });
-      let a = e.presences ? r(e.presences) : [],
-        o = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, b.q_)(e)),
-        s = null != (n = e.game_invites) ? n : [];
+      let i = e.presences ? n(e.presences) : [],
+        a = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, b.q_)(e));
       g.Z.dispatchReadySupplemental.measure(() => {
         var t;
         q({
           type: "CONNECTION_OPEN_SUPPLEMENTAL",
-          guilds: i,
-          presences: a,
-          lazyPrivateChannels: o,
-          gameInvites: s,
+          guilds: r,
+          presences: i,
+          lazyPrivateChannels: a,
           userActivities: null != (t = e.user_activities) ? t : true
         })
       });
-      let l = [];
-      i.forEach(e => {
+      let o = [];
+      r.forEach(e => {
         e.voice_states.forEach(t => {
           var n, r;
-          l.push({
+          o.push({
             userId: t.user_id,
             guildId: e.id,
             sessionId: t.session_id,
@@ -355,7 +353,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         })
       }), q({
         type: "VOICE_STATE_UPDATES",
-        voiceStates: l,
+        voiceStates: o,
         initial: true
       }), D.GC.update()
     })
@@ -1660,21 +1658,6 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     settings: {
       flags: e.flags
     }
-  })
-}), Y(["GAME_INVITE_CREATE"], e => {
-  q({
-    type: "GAME_INVITE_CREATE",
-    gameInvite: e
-  })
-}), Y(["GAME_INVITE_DELETE"], e => {
-  q({
-    type: "GAME_INVITE_DELETE",
-    inviteId: e.invite_id
-  })
-}), Y(["GAME_INVITE_DELETE_MANY"], e => {
-  q({
-    type: "GAME_INVITE_DELETE_MANY",
-    inviteIds: e.invite_ids
   })
 }), Y(["CONVERSATION_SUMMARY_UPDATE"], e => {
   q(L({

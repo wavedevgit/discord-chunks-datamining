@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 825354, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,21 +6,21 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk726521 = require("./726521.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk595342 = require("./595342.js");
+  Chunk737417 = require("./737417.js");
 
 function f(e) {
   let {
     widget: t,
     userId: n,
-    className: l,
+    className: a,
     menuItems: f
   } = e, g = i.useRef(null), p = () => {
-    (0, c.G1)(n, t)
+    (0, s.G1)(n, t)
   };
   return (0, r.jsx)(o.yRy, {
     targetElementRef: g,
@@ -34,7 +34,7 @@ function f(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-profile-widget-context-menu",
         onClose: () => {
-          (0, s.Zy)(), t()
+          (0, c.Zy)(), t()
         },
         onSelect: () => {},
         "aria-label": u.intl.string(u.t.xpSHSk),
@@ -71,7 +71,7 @@ function f(e) {
       }({}, e), n = n = {
         innerRef: g,
         "aria-label": u.intl.string(u.t.xpSHSk),
-        className: a()(d.button, l),
+        className: l()(d.button, a),
         children: (0, r.jsx)(o.xhG, {
           size: "sm",
           color: "currentColor"

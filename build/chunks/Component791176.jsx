@@ -1,12 +1,12 @@
 /** Chunk was on 66201 **/
 /** chunk id: 791176, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => O
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -20,24 +20,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk50493 = require("./50493.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk536037 = require("./536037.js");
+  Chunk471302 = require("./471302.js");
 
-function O(e) {
+function h(e) {
   var t, n;
   let {
     permission: l,
     roleIds: i,
     guild: _,
     specMap: A
-  } = e, T = g.Plq[l], m = null != (n = null == (t = A[T.toString()]) ? true : t.title) ? n : (0, E.wt)(T), O = I._o.has(T), f = (0, a.Wu)([d.Z], () => d.Z.getManyRoles(_.id, i), [_.id, i]);
+  } = e, T = f.Plq[l], m = null != (n = null == (t = A[T.toString()]) ? true : t.title) ? n : (0, E.wt)(T), h = I._o.has(T), O = (0, s.Wu)([d.Z], () => d.Z.getManyRoles(_.id, i), [_.id, i]);
   return (0, r.jsx)(o.u, {
-    "aria-label": N.intl.string(N.t["0g8Xd/"]),
+    "aria-label": g.intl.string(g.t["0g8Xd/"]),
     __unsupportedReactNodeAsText: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
-        children: O ? N.intl.string(N.t["GEuu/O"]) : N.intl.string(N.t.wgGiCk)
-      }), f.map(e => (0, r.jsx)("div", {
-        className: h.roleTooltipItem,
+        children: h ? g.intl.string(g.t["GEuu/O"]) : g.intl.string(g.t.wgGiCk)
+      }), O.map(e => (0, r.jsx)("div", {
+        className: N.roleTooltipItem,
         children: (0, r.jsx)(c.Z, {
           role: e,
           guildId: _.id
@@ -45,10 +45,10 @@ function O(e) {
       }, e.id))]
     }),
     children: (0, r.jsxs)(u.P3F, {
-      className: s()(h.permissionChiplet, {
-        [h.elevatedPermission]: O
+      className: a()(N.permissionChiplet, {
+        [N.elevatedPermission]: h
       }),
-      children: [O && (0, r.jsx)(u.tQf, {
+      children: [h && (0, r.jsx)(u.tQf, {
         size: "custom",
         width: 16,
         height: 16,
@@ -61,50 +61,50 @@ function O(e) {
     })
   })
 }
-let f = Chunk473749.memo(function(e) {
+let O = Chunk473749.memo(function(e) {
   let {
     member: t,
     onNavigate: n
-  } = e, i = (0, a.e7)([_.Z], () => _.Z.getGuild(t.guildId), [t.guildId]), o = (0, I.B2)(t.userId, t.guildId, I.Qn), c = (0, I.B2)(t.userId, t.guildId, I.pd), E = Object.keys(o).length, d = Object.keys(c).length, f = l.useMemo(() => null != i ? A.Z.getGuildPermissionSpecMap(i) : null, [i]), R = l.useMemo(() => null != i ? A.Z.generateGuildPermissionSpec(i) : null, [i]), S = l.useMemo(() => {
-    if (null == i || null == f) return null;
+  } = e, i = (0, s.e7)([_.Z], () => _.Z.getGuild(t.guildId), [t.guildId]), o = (0, I.B2)(t.userId, t.guildId, I.Qn), c = (0, I.B2)(t.userId, t.guildId, I.pd), E = Object.keys(o).length, d = Object.keys(c).length, O = l.useMemo(() => null != i ? A.Z.getGuildPermissionSpecMap(i) : null, [i]), R = l.useMemo(() => null != i ? A.Z.generateGuildPermissionSpec(i) : null, [i]), S = l.useMemo(() => {
+    if (null == i || null == O) return null;
     if (0 === E) return (0, r.jsx)("div", {
-      className: s()(h.permissionChiplet, h.noModPerms),
+      className: a()(N.permissionChiplet, N.noModPerms),
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-positive",
-        children: N.intl.string(N.t.sXhykX)
+        children: g.intl.string(g.t.sXhykX)
       })
     });
     let e = [];
     return null == R || R.forEach(t => {
       t.permissions.forEach(t => {
         let n = t.flag,
-          l = I.pd.find(e => g.Plq[e] === n);
+          l = I.pd.find(e => f.Plq[e] === n);
         if (null == l) return;
-        let s = o[l];
-        null != s && e.push((0, r.jsx)(O, {
+        let a = o[l];
+        null != a && e.push((0, r.jsx)(h, {
           permission: l,
-          roleIds: s,
+          roleIds: a,
           guild: i,
-          specMap: f
+          specMap: O
         }, l))
       })
     }), e
-  }, [i, E, o, R, f]);
+  }, [i, E, o, R, O]);
   return null == i ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: h.headerContainer,
+      className: N.headerContainer,
       children: [(0, r.jsx)(u.Text, {
         variant: "eyebrow",
         color: "text-default",
-        children: N.intl.string(N.t.ZCq2nC)
+        children: g.intl.string(g.t.ZCq2nC)
       }), (0, r.jsxs)(u.P3F, {
-        className: h.viewAllPermissions,
+        className: N.viewAllPermissions,
         onClick: () => n(m.k.PERMISSIONS),
         children: [(0, r.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-text-default",
-          children: N.intl.format(N.t["0x6aTm"], {
+          children: g.intl.format(g.t["0x6aTm"], {
             count: d
           })
         }), (0, r.jsx)(u.Fbu, {
@@ -116,7 +116,7 @@ let f = Chunk473749.memo(function(e) {
     }), (0, r.jsx)(T.WM, {
       children: (0, r.jsx)(T._2, {
         description: (0, r.jsx)("div", {
-          className: h.permissionsContainer,
+          className: N.permissionsContainer,
           children: S
         })
       })

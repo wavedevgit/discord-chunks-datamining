@@ -1,5 +1,5 @@
-/** Chunk was on 19611 **/
-/** chunk id: 746147, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 17880 **/
+/** chunk id: 746147, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   default: () => m
 });
@@ -18,37 +18,37 @@ function m(e) {
   let {
     onClose: t,
     transitionState: m
-  } = e, d = (0, a.Z)(b.Me), p = r.useMemo(() => d.map(e => e.value), [d]);
-  r.useEffect(() => {
-    l.default.track(s.rMx.OPEN_MODAL, {
+  } = e, _ = (0, r.Z)(b.Me), p = n.useMemo(() => _.map(e => e.value), [_]);
+  n.useEffect(() => {
+    i.default.track(s.rMx.OPEN_MODAL, {
       type: "Ignore User Feedback"
     })
   }, []);
-  let f = r.useCallback(e => {
+  let f = n.useCallback(e => {
     var t;
     let {
-      rating: r,
-      problem: a,
-      feedback: i
-    } = e, l = null == r;
-    (0, _.wT)(r, i, null != (t = null == a ? true : a.value) ? t : null, l), l || (0, c.ZDy)(async () => {
+      rating: n,
+      problem: r,
+      feedback: d
+    } = e, i = null == n;
+    (0, l.wT)(n, d, null != (t = null == r ? true : r.value) ? t : null, i), i || (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("14466").then(n.bind(n, 729328));
-      return t => (0, o.jsx)(e, function(e) {
+      } = await a.e("14466").then(a.bind(a, 729328));
+      return t => (0, c.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            o = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), o.forEach(function(t) {
-            var o;
-            o = n[t], t in e ? Object.defineProperty(e, t, {
-              value: o,
+          var a = null != arguments[t] ? arguments[t] : {},
+            c = Object.keys(a);
+          "function" == typeof Object.getOwnPropertySymbols && (c = c.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(a, e).enumerable
+          }))), c.forEach(function(t) {
+            var c;
+            c = a[t], t in e ? Object.defineProperty(e, t, {
+              value: c,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = o
+            }) : e[t] = c
           })
         }
         return e
@@ -57,12 +57,12 @@ function m(e) {
       }, t))
     })
   }, []);
-  return (0, o.jsx)(i.Z, {
+  return (0, c.jsx)(d.Z, {
     modalType: "ignore_user",
     header: u.intl.string(u.t.Ib6bic),
     body: u.intl.string(u.t["uW0/nV"]),
     problemTitle: u.intl.string(u.t.avs5Vg),
-    problems: d,
+    problems: _,
     freeformNeededProblems: p,
     onSubmit: f,
     onClose: t,

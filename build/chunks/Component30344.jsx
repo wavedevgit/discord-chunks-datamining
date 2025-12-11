@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 30344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -41,27 +41,27 @@ function g(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["games"]);
   let {
     registerItemRef: i,
-    manageFocusOnDelete: l
-  } = (0, a.C)();
+    manageFocusOnDelete: a
+  } = (0, l.C)();
   return (0, r.jsx)(o.Z, {
     games: t,
     renderGame: (e, t) => (0, r.jsx)(u.S, f({
       index: t,
       game: e,
       coverRef: i(e.applicationId),
-      onRemoveGame: l
+      onRemoveGame: a
     }, n))
   })
 }
@@ -72,13 +72,13 @@ function p(e) {
     userId: o,
     widgetType: u,
     disableInteraction: p,
-    games: m
-  } = e, b = (0, i.e7)([l.default], () => l.default.getId() === o), {
+    games: b
+  } = e, m = (0, i.e7)([a.default], () => a.default.getId() === o), {
     getManageButtonForWidget: h
   } = (0, d.j)(), y = h(u), {
     expanded: v,
     setExpanded: O
-  } = (0, s.g)(), j = v ? m : m.slice(0, 8), x = m.length > 8, P = (0, r.jsxs)(r.Fragment, {
+  } = (0, c.g)(), j = v ? b : b.slice(0, 8), x = b.length > 8, P = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -90,12 +90,12 @@ function p(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), x && (0, r.jsx)(c.Z, {
+    }), t)), x && (0, r.jsx)(s.Z, {
       expanded: v,
       onClick: () => O(e => !e)
     })]
   });
-  return b && !p ? (0, r.jsx)(a.d, {
+  return m && !p ? (0, r.jsx)(l.d, {
     emptyListFallbackRef: y,
     children: P
   }) : P

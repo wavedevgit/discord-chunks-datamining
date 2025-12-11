@@ -29,9 +29,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk299939 = require("./299939.jsx"),
   Chunk305813 = require("./305813.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk486730 = require("./486730.js"),
+  Chunk324243 = require("./324243.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk300119 = require("./300119.js");
+  Chunk771753 = require("./771753.js");
 
 function R(e) {
   var t, n, R;
@@ -40,12 +40,12 @@ function R(e) {
     analyticsLocations: I,
     guildId: L,
     onClose: w
-  } = e, B = (0, s.e7)([h.default], () => h.default.getCurrentUser()), Z = (0, C.t)(B, L), M = (0, s.e7)([g.Z], () => g.Z.getGuild(L)), {
+  } = e, B = (0, s.e7)([h.default], () => h.default.getCurrentUser()), Z = (0, v.t)(B, L), M = (0, s.e7)([g.Z], () => g.Z.getGuild(L)), {
     userDisplayNameStyles: G,
     guildDisplayNameStyles: H,
     pendingDisplayNameStyles: Y
-  } = (0, f.mD)(B, L), z = true !== Y ? Y : null != H ? H : G, [F, U] = o.useState(null != (t = null == z ? true : z.fontId) ? t : a.C.DEFAULT), [q, K] = o.useState(null != (n = null == z ? true : z.effectId) ? n : i.m.SOLID), X = (0, S.R)(q), V = (0, S.R)(i.m.GRADIENT), W = null != (R = null == z ? true : z.colors) ? R : [], [$, J] = o.useState(W.length > 0 && q !== i.m.GRADIENT ? W[0] : X.defaultColors[0]), [Q, ee] = o.useState(W.length > 0 && q === i.m.GRADIENT ? W : V.defaultColors);
-  (0, m.Z)({
+  } = (0, m.mD)(B, L), z = true !== Y ? Y : null != H ? H : G, [F, U] = o.useState(null != (t = null == z ? true : z.fontId) ? t : i.C.DEFAULT), [q, K] = o.useState(null != (n = null == z ? true : z.effectId) ? n : a.m.SOLID), X = (0, j.R)(q), V = (0, j.R)(a.m.GRADIENT), W = null != (R = null == z ? true : z.colors) ? R : [], [$, J] = o.useState(W.length > 0 && q !== a.m.GRADIENT ? W[0] : X.defaultColors[0]), [Q, ee] = o.useState(W.length > 0 && q === a.m.GRADIENT ? W : V.defaultColors);
+  (0, p.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
   }, {
@@ -53,10 +53,10 @@ function R(e) {
   });
   let {
     analyticsLocations: et
-  } = (0, p.ZP)(I, u.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), en = o.useMemo(() => q === i.m.GRADIENT ? Q : [$], [q, Q, $]), el = o.useMemo(() => {
+  } = (0, f.ZP)(I, u.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), en = o.useMemo(() => q === a.m.GRADIENT ? Q : [$], [q, Q, $]), el = o.useMemo(() => {
     var e;
     return F !== (null == z ? true : z.fontId) || q !== (null == z ? true : z.effectId) || !(0, c.E)(en, null != (e = null == z ? true : z.colors) ? e : [])
-  }, [z, F, q, en]), eo = (0, j.z)({
+  }, [z, F, q, en]), eo = (0, C.z)({
     hasChanges: el,
     selectedFontId: F,
     selectedEffectId: q,
@@ -69,16 +69,16 @@ function R(e) {
       fontId: e,
       effectId: t,
       colors: n
-    } = (0, _.aY)();
-    U(e), K(t), t === i.m.GRADIENT ? ee(n) : J(n[0]), x.default.track(T.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
-  }, [ee, J]), ei = o.useCallback(e => {
+    } = (0, S.aY)();
+    U(e), K(t), t === a.m.GRADIENT ? ee(n) : J(n[0]), b.default.track(y.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+  }, [ee, J]), ea = o.useCallback(e => {
     K(e)
-  }, [K]), ea = o.useCallback(e => {
-    q === i.m.GRADIENT ? ee(e) : J(e[0])
+  }, [K]), ei = o.useCallback(e => {
+    q === a.m.GRADIENT ? ee(e) : J(e[0])
   }, [q, ee, J]);
-  return null == B ? null : (0, l.jsx)(p.Gt, {
+  return null == B ? null : (0, l.jsx)(f.Gt, {
     value: et,
-    children: (0, l.jsx)(b.k.Provider, {
+    children: (0, l.jsx)(x.k.Provider, {
       value: {
         overrideSettings: true
       },
@@ -102,34 +102,34 @@ function R(e) {
               className: D.sectionHeader,
               children: (0, l.jsx)(d.Heading, {
                 variant: "heading-lg/semibold",
-                children: E.intl.string(y.default.ZPMAlX)
+                children: E.intl.string(_.default.ZPMAlX)
               })
-            }), (0, l.jsx)(N.Z, {
+            }), (0, l.jsx)(O.Z, {
               selectedFontId: F,
               setSelectedFontId: U,
               displayName: Z,
               className: D.selectionSubSection
-            }), (0, l.jsx)(P.Z, {
+            }), (0, l.jsx)(N.Z, {
               selectedEffectId: q,
-              setSelectedEffectId: ei,
+              setSelectedEffectId: ea,
               className: D.selectionSubSection
-            }), (0, l.jsx)(v.Z, {
+            }), (0, l.jsx)(P.Z, {
               selectedColors: en,
-              setSelectedColors: ea,
+              setSelectedColors: ei,
               selectedEffectId: q,
               className: D.selectionSubSection,
               defaultColor: X.defaultColors[0]
             })]
-          }), (0, l.jsx)(k.Z, {
+          }), (0, l.jsx)(T.Z, {
             user: B,
             guild: M,
             displayName: Z,
             selectedFontId: F,
             selectedEffectId: q,
-            selectedColors: q === i.m.SOLID && (0, c.E)(en, X.defaultColors) ? [] : en,
+            selectedColors: q === a.m.SOLID && (0, c.E)(en, X.defaultColors) ? [] : en,
             onClose: w
           })]
-        }), (0, l.jsx)(O.B, {
+        }), (0, l.jsx)(k.B, {
           onApply: eo,
           onSurpriseMe: er,
           onClose: w,

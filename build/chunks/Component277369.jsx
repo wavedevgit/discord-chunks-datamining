@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 277369, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,21 +19,21 @@ function g(e) {
   let {
     guildId: t,
     application: g
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, i.e7)([c.default], () => c.default.getCurrentUser()), f = (0, d.mY)();
-  if (null == m || !(0, s.eM)(m, p)) return null;
-  let h = g.team;
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), f = (0, i.e7)([c.default], () => c.default.getCurrentUser()), p = (0, d.mY)();
+  if (null == m || !(0, s.eM)(m, f)) return null;
+  let b = g.team;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
-      color: f ? "text-muted" : "text-default",
-      children: null != h ? u.intl.format(u.t.erxwWA, {
-        teamName: h.name
+      color: p ? "text-muted" : "text-default",
+      children: null != b ? u.intl.format(u.t.erxwWA, {
+        teamName: b.name
       }) : u.intl.string(u.t.FGzLkK)
     }), (0, r.jsx)(a.LZC, {
       size: 16
     }), (0, r.jsx)(l.zxk, {
-      text: null != h ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
-      variant: null != h ? "secondary" : "primary",
+      text: null != b ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
+      variant: null != b ? "secondary" : "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {
           let {
@@ -73,7 +73,7 @@ function g(e) {
           }
         })
       },
-      disabled: f
+      disabled: p
     })]
   })
 }

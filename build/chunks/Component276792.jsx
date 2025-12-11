@@ -15,19 +15,19 @@ var Chunk657707 = require("./657707.js"),
   Chunk671728 = require("./671728.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605548 = require("./605548.js");
+  Chunk256465 = require("./256465.js");
 
 function h(e) {
   var t, n, h, m;
   let {
-    componentId: _,
-    promotionId: b,
+    componentId: b,
+    promotionId: _,
     content: E,
     renderModalProps: O,
     analyticsLocations: v,
     analyticsLocation: y,
     isLightTheme: I
-  } = e, C = "AnnouncementModalVariant1_".concat(_), {
+  } = e, C = "AnnouncementModalVariant1_".concat(b), {
     onClose: S
   } = O, T = null != (m = null == (t = E.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
     buttonAction: null == (h = E.button) ? true : h.buttonAction,
@@ -57,8 +57,8 @@ function h(e) {
     className: g.modalTopPill
   }) : true;
   return {
-    componentId: _,
-    promotionId: b,
+    componentId: b,
+    promotionId: _,
     renderModalProps: O,
     header: E.header,
     modalTopExtra: A,

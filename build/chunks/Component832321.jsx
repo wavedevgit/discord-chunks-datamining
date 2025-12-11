@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 832321, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,14 +20,14 @@ function g(e) {
     discoverableGuild: n
   } = e, g = null == t ? true : t.id, {
     memberCount: m,
-    onlineCount: p
+    onlineCount: f
   } = (0, a.cj)([d.Z], () => {
     var e, t;
     return {
       memberCount: null != (e = d.Z.getMemberCount(g)) ? e : 1234,
       onlineCount: null != (t = d.Z.getOnlineCount(g)) ? t : 1234
     }
-  }, [g]), f = i.useRef((0, l.Z)()), h = i.useMemo(() => {
+  }, [g]), p = i.useRef((0, l.Z)()), b = i.useMemo(() => {
     var e, r;
     if (null != n) return o.JO.createFromDiscoverableGuild(n);
     if (null == t) return null;
@@ -53,7 +53,7 @@ function g(e) {
       premiumSubscriptionCount: null == t ? true : t.premiumSubscriberCount,
       emojis: i,
       emojiCount: i.length,
-      presenceCount: p,
+      presenceCount: f,
       memberCount: m
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
@@ -65,23 +65,23 @@ function g(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, m, p]), b = i.useMemo(() => {
+  }, [n, t, m, f]), h = i.useMemo(() => {
     var e;
-    let t = null == h || null == (e = h.emojis) ? true : e[0];
+    let t = null == b || null == (e = b.emojis) ? true : e[0];
     return null != t ? {
       name: t.require_colons ? ":".concat(t.name, ":") : t.name,
       emojiId: t.id,
       animated: t.animated,
       jumboable: true
     } : {}
-  }, [null == h ? true : h.emojis]);
-  return null != h && h.isDiscoverable() ? (0, r.jsx)(c.UA, {
+  }, [null == b ? true : b.emojis]);
+  return null != b && b.isDiscoverable() ? (0, r.jsx)(c.UA, {
     sourceType: o.w6.GUILD,
     expressionSourceApplication: null,
-    expressionSourceGuild: h,
-    node: b,
+    expressionSourceGuild: b,
+    node: h,
     closePopout: u.dG,
-    nonce: f.current,
+    nonce: p.current,
     demoMode: true
   }) : null
 }

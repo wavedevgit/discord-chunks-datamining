@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk856651 = require("./856651.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20163 = require("./20163.js");
+  Chunk980120 = require("./980120.js");
 
 function I(e) {
   var n;
@@ -29,74 +29,74 @@ function I(e) {
     account: t,
     locale: i,
     userId: o
-  } = e, r = null != (n = t.metadata) ? n : {}, x = (0, m.FI)(r[j.PC.CREATED_AT], i), I = c.Z.get((0, u.rR)(t.type));
+  } = e, r = null != (n = t.metadata) ? n : {}, x = (0, f.FI)(r[v.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(t.type));
   return (0, l.jsxs)("li", {
-    className: b.connection,
-    children: [(0, l.jsx)(s.u, {
+    className: g.connection,
+    children: [(0, l.jsx)(a.u, {
       __unsupportedReactNodeAsText: null == I ? true : I.name,
       children: (0, l.jsx)("div", {
-        className: b.platformIconContainer,
+        className: g.platformIconContainer,
         children: (0, l.jsx)("img", {
-          alt: g.intl.formatToPlainString(g.t.rtm15P, {
+          alt: j.intl.formatToPlainString(j.t.rtm15P, {
             name: null == I ? true : I.name
           }),
-          className: b.platformIcon,
+          className: g.platformIcon,
           src: null == I ? true : I.icon.lightPNG
         })
       })
     }), (0, l.jsxs)("div", {
-      className: b.connectionInfo,
+      className: g.connectionInfo,
       children: [(0, l.jsxs)("div", {
         children: [(() => {
           var e;
           let n = null == I || null == (e = I.getPlatformUserUrl) ? true : e.call(I, t);
-          return null == n ? (0, l.jsx)(s.u, {
+          return null == n ? (0, l.jsx)(a.u, {
             overflowOnly: true,
             text: t.name,
-            children: (0, l.jsx)(a.Text, {
+            children: (0, l.jsx)(c.Text, {
               variant: "text-sm/normal",
-              className: b.accountNameText,
+              className: g.accountNameText,
               children: t.name
             })
-          }) : (0, l.jsx)(a.Anchor, {
+          }) : (0, l.jsx)(c.Anchor, {
             href: n,
-            className: b.platformUrlAnchor,
+            className: g.platformUrlAnchor,
             useDefaultUnderlineStyles: false,
-            "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJB)) : "".concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJB)),
+            "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJB)) : "".concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJB)),
             onClick: e => {
-              (0, d.yw)(v.rMx.CONNECTED_ACCOUNT_VIEWED, {
+              (0, d.yw)(b.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: t.type,
                 other_user_id: o
               }), (0, h.q)({
                 href: n,
-                trusted: (null == I ? true : I.type) !== v.ABu.DOMAIN
+                trusted: (null == I ? true : I.type) !== b.ABu.DOMAIN
               }, e)
             },
             children: (0, l.jsxs)("div", {
-              className: b.accountName,
-              children: [(0, l.jsx)(s.u, {
+              className: g.accountName,
+              children: [(0, l.jsx)(a.u, {
                 overflowOnly: true,
                 text: t.name,
-                children: (0, l.jsx)(a.Text, {
+                children: (0, l.jsx)(c.Text, {
                   variant: "text-sm/normal",
-                  className: b.accountNameText,
+                  className: g.accountNameText,
                   children: t.name
                 })
-              }), (0, l.jsx)(f.Z, {
-                className: b.platformUrlIcon,
-                direction: f.Z.Directions.RIGHT
+              }), (0, l.jsx)(p.Z, {
+                className: g.platformUrlIcon,
+                direction: p.Z.Directions.RIGHT
               })]
             })
           })
-        })(), null != x && (0, l.jsx)(a.Text, {
+        })(), null != x && (0, l.jsx)(c.Text, {
           variant: "text-xs/normal",
-          children: g.intl.format(g.t["9rfonh"], {
+          children: j.intl.format(j.t["9rfonh"], {
             date: x
           })
         })]
       }), (0, l.jsx)("div", {
-        className: b.metadata,
-        children: t.type === v.ABu.REDDIT ? (0, p.oP)(r) : t.type === v.ABu.STEAM ? (0, p.Dq)(r) : t.type === v.ABu.BLUESKY || t.type === v.ABu.MASTODON || t.type === v.ABu.TWITTER ? (0, p.rJ)(r) : t.type === v.ABu.PAYPAL ? (0, p.li)(r) : t.type === v.ABu.EBAY ? (0, p.ul)(r) : t.type === v.ABu.TIKTOK ? (0, p.hf)(r) : null
+        className: g.metadata,
+        children: t.type === b.ABu.REDDIT ? (0, m.oP)(r) : t.type === b.ABu.STEAM ? (0, m.Dq)(r) : t.type === b.ABu.BLUESKY || t.type === b.ABu.MASTODON || t.type === b.ABu.TWITTER ? (0, m.rJ)(r) : t.type === b.ABu.PAYPAL ? (0, m.li)(r) : t.type === b.ABu.EBAY ? (0, m.ul)(r) : t.type === b.ABu.TIKTOK ? (0, m.hf)(r) : null
       })]
     })]
   })
@@ -107,13 +107,13 @@ function y(e) {
     connections: n,
     userId: t,
     className: i
-  } = e, s = (0, r.e7)([x.default], () => x.default.locale);
+  } = e, a = (0, r.e7)([x.default], () => x.default.locale);
   return 0 === n.length ? null : (0, l.jsx)("ul", {
-    className: o()(b.container, i),
+    className: o()(g.container, i),
     children: n.map(e => (0, l.jsx)(I, {
       account: e,
       userId: t,
-      locale: s
+      locale: a
     }, "".concat(e.type, ":").concat(e.id)))
   })
 }

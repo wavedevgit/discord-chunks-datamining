@@ -1,5 +1,5 @@
 /** Chunk was on 85668 **/
-/** chunk id: 528477, original params: t,e,n (module,exports,require) **/
+/** chunk id: 528477, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
   n: () => v
 });
@@ -22,14 +22,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk773275 = require("./773275.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk36385 = require("./36385.js"),
+  Chunk498264 = require("./498264.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk742098 = require("./742098.js"),
+  Chunk817438 = require("./817438.js"),
   Chunk932889 = require("./932889.js");
 let v = t => {
   let {
     onClose: e
-  } = t, n = (0, u.m)(), {
+  } = t, a = (0, u.m)(), {
     installationStatus: v,
     perkAvailableToUser: k,
     isSupportedPrivateBrowsingPerkPlatform: A,
@@ -45,7 +45,7 @@ let v = t => {
     (0, m.openUserSettings)(_.n.PRIVATE_BROWSING_PANEL, {
       section: g.oAB.CF_WARP
     })
-  }, []), K = [f.Ij.CONNECTED].includes(S), O = A && M && ![f._n.ZERO_TRUST, f._n.ERROR].includes(v) && !j && (!n || k), P = (0, r.useMemo)(() => {
+  }, []), K = [f.Ij.CONNECTED].includes(S), O = A && M && ![f._n.ZERO_TRUST, f._n.ERROR].includes(v) && !j && (!a || k), P = (0, r.useMemo)(() => {
     switch (S) {
       case f.Ij.CONNECTED:
         return T.intl.string(N.default.FBu3XJ);
@@ -64,7 +64,7 @@ let v = t => {
         return T.intl.string(N.default.KN6HOb)
     }
   }, [v, k, P]), U = (0, r.useMemo)(() => {
-    if (!k) return (0, a.jsx)(i.xvT, {
+    if (!k) return (0, n.jsx)(i.xvT, {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: T.intl.format(N.default["0UfKTY"], {
@@ -74,7 +74,7 @@ let v = t => {
     switch (v) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
-        return (0, a.jsx)(i.xvT, {
+        return (0, n.jsx)(i.xvT, {
           variant: "text-sm/normal",
           color: "text-subtle",
           children: K ? T.intl.format(N.default.zwW10o, {
@@ -88,7 +88,7 @@ let v = t => {
           })
         });
       default:
-        return (0, a.jsx)(i.xvT, {
+        return (0, n.jsx)(i.xvT, {
           variant: "text-sm/normal",
           color: "text-subtle",
           children: T.intl.format(N.default.D4hu0v, {
@@ -106,33 +106,33 @@ let v = t => {
       type: E.cd.PRIVACY_PERK_EXIT_MODAL,
       location_stack: w
     })
-  }, [w, O]), O) ? (0, a.jsxs)("div", {
-    className: L.container,
-    children: [(0, a.jsx)(p.v, {
-      className: L.betaBadge
-    }), (0, a.jsxs)("div", {
-      className: L.contentContainer,
-      children: [k && (0, a.jsx)(i.$1m, {
-        className: L.imageWrapper,
+  }, [w, O]), O) ? (0, n.jsxs)("div", {
+    className: b.container,
+    children: [(0, n.jsx)(p.v, {
+      className: b.betaBadge
+    }), (0, n.jsxs)("div", {
+      className: b.contentContainer,
+      children: [k && (0, n.jsx)(i.$1m, {
+        className: b.imageWrapper,
         offsetBottom: false,
         color: "nitro-pink",
-        children: (0, a.jsx)("div", {
-          className: L.imageContainer,
-          children: (0, a.jsx)("img", {
-            src: b,
-            className: L.graphicContainer,
+        children: (0, n.jsx)("div", {
+          className: b.imageContainer,
+          children: (0, n.jsx)("img", {
+            src: L,
+            className: b.graphicContainer,
             alt: "Private Browsing Perk"
           })
         })
-      }), (0, a.jsxs)("div", {
-        className: L.details,
-        children: [(0, a.jsx)(i.X6q, {
+      }), (0, n.jsxs)("div", {
+        className: b.details,
+        children: [(0, n.jsx)(i.X6q, {
           variant: "heading-md/semibold",
           children: B
         }), U]
-      }), !k && (0, a.jsx)("div", {
-        className: L.ctaContainer,
-        children: (0, a.jsx)(d.Z, {
+      }), !k && (0, n.jsx)("div", {
+        className: b.ctaContainer,
+        children: (0, n.jsx)(d.Z, {
           buttonTextOverride: T.intl.string(T.t["8x0jKT"]),
           subscriptionTier: E.Si.TIER_2,
           size: "sm",

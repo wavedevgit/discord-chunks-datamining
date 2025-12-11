@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 308619, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ function u() {
     u = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildProfile()),
     g = (0, Chunk442837.e7)([Chunk314852.Z], () => Chunk314852.Z.getIsUpdating(exports)),
     m = Chunk473749.useMemo(() => null == require ? true : require.getAnyErrorMessage(), [require]),
-    p = Chunk473749.useCallback(() => {
+    f = Chunk473749.useCallback(() => {
       if (null == module || null == u) return;
       let t = {
         name: u.name,
@@ -34,13 +34,13 @@ function u() {
       };
       (0, Chunk699553.pV)(module.id, exports)
     }, [module, u]),
-    f = Chunk473749.useCallback(() => {
+    p = Chunk473749.useCallback(() => {
       null != exports && Chunk434404.Z.init(exports)
     }, [exports]);
   return (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: g,
     errorMessage: m,
-    onSave: p,
-    onReset: f
+    onSave: f,
+    onReset: p
   })
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 312910, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -22,42 +22,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk96761 = require("./96761.js");
-let O = {
+  Chunk708881 = require("./708881.js");
+let C = {
     page: Chunk981631.ZY5.GUILD_SETTINGS,
     section: Chunk981631.jXE.GUILD_SETTINGS_STICKERS,
     object: Chunk981631.qAy.BOOSTING_BANNER
   },
-  C = e => {
+  y = e => {
     let {
       guild: t
     } = e, {
       analyticsLocations: n
     } = (0, s.ZP)(), i = (0, u.Z)(t.id).available, a = x.oCV[x.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
-      className: v.upsellContainer,
+      className: O.upsellContainer,
       children: [(0, r.jsx)(l.Heading, {
-        className: v.upsellHeader,
+        className: O.upsellHeader,
         variant: "heading-xl/semibold",
-        children: _.intl.string(_.t.hzCkyg)
+        children: v.intl.string(v.t.hzCkyg)
       }), (0, r.jsx)(l.Text, {
-        className: v.upsellDescription,
+        className: O.upsellDescription,
         variant: "text-md/normal",
-        children: _.intl.string(_.t.jcesAE)
+        children: v.intl.string(v.t.jcesAE)
       }), (0, r.jsxs)(l.ButtonGroup, {
-        className: v.upsellButtons,
+        className: O.upsellButtons,
         children: [(0, r.jsx)(l.Button, {
           variant: "overlay-primary",
-          text: _.intl.string(_.t.Q5dbTi),
+          text: v.intl.string(v.t.Q5dbTi),
           onClick: () => (0, d.Z)({
             analyticsLocations: n,
-            analyticsLocation: O,
+            analyticsLocation: C,
             guildId: t.id,
             totalNumberOfSlotsToAssign: a
           })
         }), (0, r.jsx)(l.Button, {
           variant: "overlay-primary",
-          text: _.intl.string(_.t.hvVgAZ),
+          text: v.intl.string(v.t.hvVgAZ),
           onClick: () => (0, o.f)({
             guildId: t.id,
             location: {
@@ -68,7 +68,7 @@ let O = {
       })]
     })
   },
-  y = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+  N = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 8,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
@@ -87,23 +87,23 @@ let O = {
       })
     })]
   }),
-  N = e => {
+  E = e => {
     let t, n, i, {
         guild: l,
         guildStickers: a
       } = e,
       s = l.premiumTier,
-      o = (0, f.Qi)(a, s),
-      d = (0, f.FZ)(s),
-      u = (0, f.A3)(s),
+      o = (0, p.Qi)(a, s),
+      d = (0, p.FZ)(s),
+      u = (0, p.A3)(s),
       g = a.length;
-    return null == d || s === x.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = _.intl.formatToPlainString(_.t.ZtAY1f, {
+    return null == d || s === x.Eu4.TIER_3 || o > 0 ? null : (g > u ? (t = v.intl.formatToPlainString(v.t.ZtAY1f, {
       level: d
-    }), n = _.intl.formatToPlainString(_.t["13hOWm"], {
+    }), n = v.intl.formatToPlainString(v.t["13hOWm"], {
       level: d
-    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = _.intl.string(_.t.zT9SxY), n = _.intl.formatToPlainString(_.t.YaW9wI, {
+    }), i = x.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = v.intl.string(v.t.zT9SxY), n = v.intl.formatToPlainString(v.t.YaW9wI, {
       level: d,
-      numAdditional: (0, f.ig)(d)
+      numAdditional: (0, p.ig)(d)
     }), i = x.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(c.Z, {
       header: t,
       text: n,
@@ -112,11 +112,11 @@ let O = {
         page: x.ZY5.GUILD_SETTINGS,
         section: x.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
-        objectType: (0, f.ge)(d)
+        objectType: (0, p.ge)(d)
       }
     }))
   },
-  E = () => {
+  I = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       t = (0, Chunk442837.e7)([Chunk926491.Z], () => {
         var t;
@@ -135,14 +135,14 @@ let O = {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.R5nQkS)
         }), Chunk623624 ? (0, Chunk54381.jsxs)("div", {
-          children: [(0, Chunk54381.jsx)(N, {
+          children: [(0, Chunk54381.jsx)(E, {
             guild: module,
             guildStickers: exports
-          }), (0, Chunk54381.jsx)(y, {})]
-        }) : (0, Chunk54381.jsx)(C, {
+          }), (0, Chunk54381.jsx)(N, {})]
+        }) : (0, Chunk54381.jsx)(y, {
           guild: module
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-          className: Chunk96761.divider
+          className: Chunk708881.divider
         }), (0, Chunk54381.jsx)(Chunk145499.Z, {
           guild: module
         })]

@@ -1,4 +1,4 @@
-/** Chunk was on 33721 **/
+/** Chunk was on 29709 **/
 /** chunk id: 388380, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -25,7 +25,7 @@ let s = {
   },
   ignore(e) {
     r.tn.del({
-      url: o.ANM.FRIEND_SUGGESTION(e),
+      url: l.ANM.FRIEND_SUGGESTION(e),
       rejectWithError: true
     })
   }

@@ -13,14 +13,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk352153 = require("./352153.js"),
   Chunk589694 = require("./589694.jsx"),
   Chunk62001 = require("./62001.js"),
-  Chunk869886 = require("./869886.js");
+  Chunk38282 = require("./38282.js");
 let g = function(e) {
   let {
     scrollContainerRef: t
   } = e, n = (0, l.e7)([a.Z], () => a.Z.notificationItem(), []), {
     showDot: g
-  } = (0, c.Z)(), h = i.useRef(null), [m, _] = i.useState(false), {
-    data: b,
+  } = (0, c.Z)(), h = i.useRef(null), [m, b] = i.useState(false), {
+    data: _,
     loading: E,
     isRefreshing: O,
     handleOnRefresh: v,
@@ -37,16 +37,16 @@ let g = function(e) {
     T = i.useMemo(() => y[0].onViewableItemsChanged, [y]),
     {
       registerItemRef: N
-    } = (0, p.m)(b, T, t),
-    j = i.useMemo(() => b.some(e => "end" === e.data.kind), [b]),
+    } = (0, p.m)(_, T, t),
+    j = i.useMemo(() => _.some(e => "end" === e.data.kind), [_]),
     P = i.useCallback(() => {
       if (j) return;
       let e = t.current;
       if (null == e) return;
       let n = e.scrollHeight;
-      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (_(true), (0, s.es)().finally(() => {
+      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (b(true), (0, s.es)().finally(() => {
         setTimeout(() => {
-          _(false)
+          b(false)
         }, 300)
       }))
     }, [E, m, S, j, t]);
@@ -98,7 +98,7 @@ let g = function(e) {
         item: e
       })
     }, e.id), [N]);
-  return E && 0 === b.length ? (0, r.jsx)("div", {
+  return E && 0 === _.length ? (0, r.jsx)("div", {
     style: {
       padding: "32px",
       textAlign: "center"
@@ -133,7 +133,7 @@ let g = function(e) {
     }), (0, r.jsxs)("div", {
       ref: h,
       className: f.scrollContainer,
-      children: [b.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
+      children: [_.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

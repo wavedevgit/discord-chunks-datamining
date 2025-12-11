@@ -1,9 +1,9 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 621060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j,
-  Zj: () => g,
-  v0: () => f
+  Zj: () => b,
+  v0: () => x
 }), require("./388685.js");
 var a, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,10 +16,10 @@ var a, Chunk54381 = require("./54381.js"),
   Chunk823379 = require("./823379.js"),
   Chunk246992 = require("./246992.js"),
   Chunk252899 = require("./252899.jsx"),
-  Chunk451429 = require("./451429.js"),
-  f = ((a = {}).NONE = "", a.DISMISSIBLE_CONTENT = "Dismissible Content", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
-let g = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
-  b = Chunk473749.forwardRef(function(e, t) {
+  Chunk663618 = require("./663618.js"),
+  x = ((a = {}).NONE = "", a.DISMISSIBLE_CONTENT = "Dismissible Content", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
+let b = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "Billing", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
+  g = Chunk473749.forwardRef(function(e, t) {
     let {
       id: n,
       selected: a,
@@ -27,8 +27,8 @@ let g = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "B
       children: l
     } = e;
     return (0, r.jsx)(c.P3F, {
-      className: s()(x.tabItem, {
-        [x.selected]: a
+      className: s()(f.tabItem, {
+        [f.selected]: a
       }),
       "data-tab-id": n,
       innerRef: t,
@@ -42,19 +42,19 @@ function v(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: a
-  } = e, l = i.useRef(new Map), [s, f] = i.useState(() => new Set), {
-    ref: g,
+  } = e, l = i.useRef(new Map), [s, x] = i.useState(() => new Set), {
+    ref: b,
     width: v
-  } = (0, d.ZP)(), j = i.useRef(null), _ = (0, h.F)(t, a);
+  } = (0, d.ZP)(), j = i.useRef(null), y = (0, h.F)(t, a);
   i.useEffect(() => {
     var e, a, r, i;
     if (null == v) return;
     let s = new Set,
       o = null != v ? v : 0;
     for (let c of (o -= null != (a = null == (e = l.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (i = null == (r = l.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? i : 0) < 0 && s.add(c.id);
-    f(s)
-  }, [t, v, g, n]);
-  let y = i.useCallback(e => {
+    x(s)
+  }, [t, v, b, n]);
+  let C = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -64,33 +64,33 @@ function v(e) {
       onClose: t,
       "aria-label": "Overflowed DevTools Tabs",
       onSelect: t,
-      children: _
+      children: y
     })
-  }, [_]);
+  }, [y]);
   return (0, r.jsxs)("div", {
-    className: x.tabBarContainer,
+    className: f.tabBarContainer,
     children: [(0, r.jsxs)("div", {
-      className: x.tabBar,
-      ref: g,
+      className: f.tabBar,
+      ref: b,
       children: [t.map(e => {
         let {
           id: t,
           name: i
         } = e;
-        if (!s.has(t)) return (0, r.jsx)(b, {
+        if (!s.has(t)) return (0, r.jsx)(g, {
           id: t,
           selected: n === t,
           onClick: n !== t ? () => a(t) : true,
           children: i
         }, t)
       }).filter(m.lm), (0, r.jsx)("div", {
-        className: x.tabMeasurer,
+        className: f.tabMeasurer,
         children: t.map(e => {
           let {
             id: t,
             name: i
           } = e;
-          return (0, r.jsx)(b, {
+          return (0, r.jsx)(g, {
             id: t,
             selected: n === t,
             ref: e => {
@@ -102,11 +102,11 @@ function v(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: x.menu,
+      className: f.menu,
       children: s.size > 0 && (0, r.jsx)(c.yRy, {
         targetElementRef: j,
         layerContext: p.O$,
-        renderPopout: y,
+        renderPopout: C,
         position: "bottom",
         align: "right",
         autoInvert: false,
@@ -132,11 +132,11 @@ function v(e) {
             return e
           }({}, e), n = n = {
             buttonRef: j,
-            className: x.overflowChevron,
+            className: f.overflowChevron,
             size: o.zx.Sizes.ICON,
             look: o.zx.Looks.BLANK,
             children: (0, r.jsx)(u.Z, {
-              className: x.__invalid_overflowIcon,
+              className: f.__invalid_overflowIcon,
               width: 16,
               height: 16
             })

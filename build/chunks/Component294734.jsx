@@ -28,17 +28,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk39154 = require("./39154.js"),
   Chunk245216 = require("./245216.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk823914 = require("./823914.js");
+  Chunk154706 = require("./154706.js");
 
 function N() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk823914.headerContainer,
+    className: Chunk154706.headerContainer,
     children: [(0, Chunk54381.jsx)(Chunk245216.Z, {
       size: "xs",
-      className: Chunk823914.headerIcon,
+      className: Chunk154706.headerIcon,
       color: Chunk692547.Z.colors.TEXT_LOW_CONTRAST
     }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
-      className: Chunk823914.headerText,
+      className: Chunk154706.headerText,
       variant: "text-sm/semibold",
       color: "text-low-contrast",
       children: Chunk388032.intl.string(Chunk388032.t.ToyvLk)

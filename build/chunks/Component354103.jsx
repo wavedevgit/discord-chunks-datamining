@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 354103, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,52 +19,52 @@ var Chunk54381 = require("./54381.js"),
   Chunk383793 = require("./383793.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk977422 = require("./977422.js");
+  Chunk959045 = require("./959045.js");
 
 function j(e) {
   let {
     guild: t
-  } = e, n = i.useRef(null), j = (0, o.g1)(t.id, "GuildSettingsBoostPerks"), _ = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites);
-  (0, u.Z)(n, h.KsC.BOOST_PERKS_VANITY_URL);
+  } = e, n = i.useRef(null), j = (0, o.g1)(t.id, "GuildSettingsBoostPerks"), v = (0, l.e7)([c.Z], () => c.Z.hideInstantInvites);
+  (0, u.Z)(n, b.KsC.BOOST_PERKS_VANITY_URL);
   let {
-    vanityURLCode: v,
-    vanityURLUses: O,
-    originalVanityURLCode: C,
-    errorDetails: y,
-    fetched: N
+    vanityURLCode: O,
+    vanityURLUses: C,
+    originalVanityURLCode: y,
+    errorDetails: N,
+    fetched: E
   } = (0, l.cj)([m.Z], () => ({
     vanityURLCode: m.Z.vanityURLCode,
     vanityURLUses: m.Z.vanityURLUses,
     originalVanityURLCode: m.Z.originalVanityURLCode,
     errorDetails: m.Z.errorDetails,
     fetched: m.Z.fetchedVanityURL
-  })), E = null == t ? true : t.id;
+  })), I = null == t ? true : t.id;
   return (i.useEffect(() => {
-    null == E || N || (0, g.U5)(E)
-  }, [N, E]), null == t) ? null : _ ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
+    null == I || E || (0, g.U5)(I)
+  }, [E, I]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
     ref: n,
     children: [(0, r.jsxs)(a.Heading, {
       variant: "heading-md/medium",
       color: "header-primary",
       className: x.title,
-      children: [b.intl.string(b.t["5XZKy/"]), (0, r.jsx)(p.xl, {
+      children: [h.intl.string(h.t["5XZKy/"]), (0, r.jsx)(f.xl, {
         guild: t
       })]
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
       className: x.description,
-      children: j ? b.intl.format(b.t["J/v84B"], {
-        helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
-      }) : b.intl.format(b.t.koklFG, {
-        helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
+      children: j ? h.intl.format(h.t["J/v84B"], {
+        helpCenterArticle: d.Z.getArticleURL(b.BhN.GUILD_VANITY_URL)
+      }) : h.intl.format(h.t.koklFG, {
+        helpCenterArticle: d.Z.getArticleURL(b.BhN.GUILD_VANITY_URL)
       })
-    }), (0, r.jsx)(f.z, {
+    }), (0, r.jsx)(p.z, {
       guild: t,
-      vanityURLCode: v,
-      vanityURLUses: O,
-      originalVanityURLCode: C,
-      errorDetails: y
+      vanityURLCode: O,
+      vanityURLUses: C,
+      originalVanityURLCode: y,
+      errorDetails: N
     })]
   })
 }

@@ -32,8 +32,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk765305 = require("./765305.js"),
   Chunk190378 = require("./190378.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk785550 = require("./785550.js"),
-  Chunk768982 = require("./768982.js");
+  Chunk452594 = require("./452594.js"),
+  Chunk787068 = require("./787068.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -97,7 +97,7 @@ function B(e) {
       value: n.id,
       options: t.map(e => ({
         value: e.id,
-        label: (0, g.F6)(e, v.default, p.Z, true)
+        label: (0, f.F6)(e, v.default, p.Z, true)
       })),
       onChange: e => {
         let n = t.find(t => t.id === e);
@@ -125,9 +125,9 @@ function G(e) {
     loading: G,
     error: R,
     onSave: z
-  } = (0, N.Z)(i, h), M = r.useMemo(() => _.Z.getStageInstanceByChannel(i.id), [i.id]), [q, L] = r.useState(null != (t = null == M ? true : M.topic) ? t : ""), [U, V] = r.useState(""), [J] = r.useState(A), [K, W] = r.useState({
-    startDate: (0, x.ib)()
-  }), [Y, H] = r.useState(false), Q = (0, y.J)(i), X = (0, y.U)(i), $ = null == M && Q && !J, [ee, et] = r.useState($ && X), en = (0, c.e7)([j.Z], () => j.Z.hasHotspot(D.v.LIVE_STAGE_NOTIFICATION_BADGE)), el = Z.j8.GUILD_ONLY, [er] = r.useState(null != (n = null == M ? true : M.privacy_level) ? n : el), [ei, ea] = r.useState(null), es = (0, S._d)(i.id), ec = (0, S.K3)(i.id), [eo, eu] = r.useState(false), ed = (0, g.ZP)(i), eg = (0, m.q)(o), em = null != p, ex = eg.length > 1;
+  } = (0, _.Z)(i, h), M = r.useMemo(() => S.Z.getStageInstanceByChannel(i.id), [i.id]), [q, L] = r.useState(null != (t = null == M ? true : M.topic) ? t : ""), [U, V] = r.useState(""), [J] = r.useState(A), [K, W] = r.useState({
+    startDate: (0, g.ib)()
+  }), [Y, H] = r.useState(false), Q = (0, y.J)(i), X = (0, y.U)(i), $ = null == M && Q && !J, [ee, et] = r.useState($ && X), en = (0, c.e7)([j.Z], () => j.Z.hasHotspot(D.v.LIVE_STAGE_NOTIFICATION_BADGE)), el = Z.j8.GUILD_ONLY, [er] = r.useState(null != (n = null == M ? true : M.privacy_level) ? n : el), [ei, ea] = r.useState(null), es = (0, P._d)(i.id), ec = (0, P.K3)(i.id), [eo, eu] = r.useState(false), ed = (0, f.ZP)(i), ef = (0, b.q)(o), eb = null != p, eg = ef.length > 1;
   (0, d.ZP)(() => {
     O.default.track(C.rMx.START_STAGE_OPENED, {
       stage_instance_id: null == M ? true : M.id,
@@ -135,7 +135,7 @@ function G(e) {
       guild_id: i.guild_id
     })
   });
-  let eb = e => {
+  let em = e => {
       if (e.preventDefault(), er === Z.j8.PUBLIC && q.length < 20 && !eo) return void eu(true);
       J || null == z || z({
         topic: q,
@@ -143,20 +143,20 @@ function G(e) {
         sendStartNotification: ee
       })
     },
-    ef = r.useRef(null);
+    ex = r.useRef(null);
   r.useEffect(() => {
     var e;
-    null == (e = ef.current) || e.focus()
+    null == (e = ex.current) || e.focus()
   }, []);
   let ej = Y && null != K.startDate && K.startDate >= a()(),
     eh = (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)("div", {
         className: k.blockedUsersContainer,
-        children: null == M && (es > 0 || ec > 0) && (0, l.jsx)(P.mv, {
+        children: null == M && (es > 0 || ec > 0) && (0, l.jsx)(N.mv, {
           channelId: i.id
         })
       }), (0, l.jsxs)("form", {
-        onSubmit: eb,
+        onSubmit: em,
         className: k.form,
         children: [(0, l.jsx)(u.oil, {
           required: true,
@@ -168,18 +168,18 @@ function G(e) {
           maxLength: w.xA,
           value: q,
           autoComplete: "off",
-          inputRef: ef
-        }), em && ex ? (0, l.jsx)(B, {
-          stageChannelsInGuild: eg,
+          inputRef: ex
+        }), eb && eg ? (0, l.jsx)(B, {
+          stageChannelsInGuild: ef,
           channel: i,
           onSelectChannel: p
         }) : null, J && (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsx)(f.Z, {
+          children: [(0, l.jsx)(x.Z, {
             className: k.formItem,
             onScheduleChange: W,
             onRecurrenceChange: e => {
               let t = K.startDate;
-              null != t && ea((0, x.mF)(e, t))
+              null != t && ea((0, g.mF)(e, t))
             },
             schedule: K,
             recurrenceRule: ei,
@@ -200,11 +200,11 @@ function G(e) {
             onChange: e => V(e),
             maxLength: Z.wm
           })
-        }), $ ? (0, l.jsx)(b.Z, {
+        }), $ ? (0, l.jsx)(m.Z, {
           sendStartNotification: ee,
           setSendStartNotification: et,
           showNotificationNewBadge: en
-        }) : null, em && !ex ? (0, l.jsx)(u.Text, {
+        }) : null, eb && !eg ? (0, l.jsx)(u.Text, {
           color: "text-default",
           variant: "text-xs/normal",
           className: k.channelSelection,
@@ -229,7 +229,7 @@ function G(e) {
       }, {
         variant: "primary",
         text: J ? I.intl.string(I.t["60lJ0C"]) : null == M ? I.intl.string(I.t.s8mM8A) : I.intl.string(I.t.K344S7),
-        onClick: eb,
+        onClick: em,
         disabled: "" === q || null == er || A && !ej,
         loading: G
       }],

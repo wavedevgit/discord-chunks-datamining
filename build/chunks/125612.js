@@ -1,0 +1,20 @@
+/** Chunk was on web.js **/
+/** chunk id: 125612, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  keybindMessage: "_740f25428e5fa983-keybindMessage",
+  item: "_740f25428e5fa983-item",
+  switch: "_740f25428e5fa983-switch",
+  removeKeybindFloating: "_740f25428e5fa983-removeKeybindFloating",
+  removeKeybind: "_740f25428e5fa983-removeKeybind",
+  keybindGroup: "_740f25428e5fa983-keybindGroup",
+  keybindGroupContent: "_740f25428e5fa983-keybindGroupContent",
+  defaultKeybindGroup: "_740f25428e5fa983-defaultKeybindGroup",
+  defaultKeybind: "_740f25428e5fa983-defaultKeybind",
+  defaultKeybindShortcutGroup: "_740f25428e5fa983-defaultKeybindShortcutGroup",
+  browserNotice: "_740f25428e5fa983-browserNotice",
+  systemServiceUpsell: "_740f25428e5fa983-systemServiceUpsell",
+  ctaContainer: "_740f25428e5fa983-ctaContainer",
+  warning: "_740f25428e5fa983-warning",
+  addButton: "_740f25428e5fa983-addButton"
+}

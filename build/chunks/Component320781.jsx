@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 320781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,15 +13,15 @@ var Chunk442837 = require("./442837.js"),
   Chunk257511 = require("./257511.jsx"),
   Chunk967128 = require("./967128.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551869 = require("./551869.js");
+  Chunk966635 = require("./966635.js");
 
-function h(e) {
+function f(e) {
   var t;
   let {
     channel: n
-  } = e, h = (0, o.eV)(n), {
-    firstMessage: f
-  } = (0, r.cj)([s.Z], () => s.Z.getMessage(n.id)), m = new Set((0, o.kn)(n, h)), g = null != (t = (0, a.KS)(n)) ? t : l.kBi;
+  } = e, f = (0, o.eV)(n), {
+    firstMessage: h
+  } = (0, r.cj)([s.Z], () => s.Z.getMessage(n.id)), m = new Set((0, o.kn)(n, f)), g = null != (t = (0, a.KS)(n)) ? t : l.kBi;
   return (0, i.jsxs)(u.ZP, {
     channelId: n.id,
     className: p.container,
@@ -34,7 +34,7 @@ function h(e) {
     }), (0, i.jsx)(u.Ot, {
       className: p.header,
       children: n.name
-    }), null == f && (0, i.jsx)(l.Text, {
+    }), null == h && (0, i.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "text-default",
       children: d.intl.string(d.t.mE3KJN)

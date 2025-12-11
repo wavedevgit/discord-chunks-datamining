@@ -10,8 +10,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk782568 = require("./782568.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk520310 = require("./520310.js"),
-  Chunk315665 = require("./315665.js");
+  Chunk467171 = require("./467171.js"),
+  Chunk888186 = require("./888186.js");
 let u = e => {
   let {
     data: {

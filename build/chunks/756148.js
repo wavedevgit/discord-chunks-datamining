@@ -1,9 +1,9 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 12192 **/
 /** chunk id: 756148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => a
+  I: () => r
 });
-class a {
+class r {
   static getSiteKey(e) {
     return null != e ? e : "production" === window.GLOBAL_ENV.PROJECT_ENV ? "6LeYqFcqAAAAAD6iZesmNgVulsO4PkpBdr6NVG6M" : "6LdtfVMqAAAAAMurhtf2pDhK0oqD4eLqeQPh025y"
   }
@@ -12,8 +12,8 @@ class a {
       null != t && (null == n || n("recaptcha-element-exists-callback"), t());
       return
     }
-    let a = document.createElement("script");
-    a.src = "https://www.google.com/recaptcha/enterprise.js?render=".concat(this.getSiteKey(e)), a.id = "recaptcha-script-".concat(this.getSiteKey(e)), a.async = true, a.defer = true, document.body.appendChild(a), null != t && (a.onload = () => {
+    let r = document.createElement("script");
+    r.src = "https://www.google.com/recaptcha/enterprise.js?render=".concat(this.getSiteKey(e)), r.id = "recaptcha-script-".concat(this.getSiteKey(e)), r.async = true, r.defer = true, document.body.appendChild(r), null != t && (r.onload = () => {
       null == n || n("recaptcha-script-onload-callback"), t()
     })
   }

@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 420966, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  V: () => f,
-  Z: () => h
+  V: () => p,
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk852898 = require("./852898.jsx"),
   Chunk203377 = require("./203377.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345987 = require("./345987.js");
+  Chunk235778 = require("./235778.js");
 
-function f() {
+function p() {
   let [e, t] = Chunk473749.useState(true);
   return {
     scrolledToTop: module,
@@ -28,34 +28,34 @@ function f() {
   }
 }
 
-function h(e) {
+function b(e) {
   let {
     guild: t,
-    role: f,
-    selectedSection: h,
-    setSelectedSection: b
+    role: p,
+    selectedSection: b,
+    setSelectedSection: h
   } = e, x = i.useCallback(e => {
-    b(e)
-  }, [b]), j = (0, l.e7)([d.Z], () => {
+    h(e)
+  }, [h]), j = (0, l.e7)([d.Z], () => {
     var e;
-    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
-  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, u.Z)(t.id, f);
+    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[p.id]
+  }, [p.id, t.id]), v = (0, c.fI)(p), O = (0, u.Z)(t.id, p);
   i.useEffect(() => {
-    _ && b(g.ZI.PERMISSIONS)
-  }, [_, b]);
-  let O = (0, o.e)(t, f);
+    v && h(g.ZI.PERMISSIONS)
+  }, [v, h]);
+  let C = (0, o.e)(t, p);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: p.titleContainer,
+      className: f.titleContainer,
       children: [(0, r.jsx)(a.Text, {
-        className: p.titleText,
+        className: f.titleText,
         color: "header-primary",
         variant: "text-md/semibold",
         children: m.intl.format(m.t.BUdGkE, {
-          roleName: f.name
+          roleName: p.name
         })
-      }), O ? (0, r.jsx)(a.P3F, {
-        className: p.menu,
+      }), C ? (0, r.jsx)(a.P3F, {
+        className: f.menu,
         onClick: function(e) {
           (0, s.jW)(e, async () => {
             let {
@@ -82,7 +82,7 @@ function h(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: f
+                role: p
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -102,35 +102,35 @@ function h(e) {
           color: "currentColor"
         })
       }) : null]
-    }), null != v ? (0, r.jsx)(a.Wn, {
+    }), null != O ? (0, r.jsx)(a.Wn, {
       messageType: a.QYI.WARNING,
-      children: v
+      children: O
     }) : null, (0, r.jsxs)(a.njP, {
-      className: p.tabBar,
+      className: f.tabBar,
       "aria-label": m.intl.string(m.t["+1H47t"]),
-      selectedItem: h,
+      selectedItem: b,
       type: "top",
       look: "brand",
       onItemSelect: x,
       children: [(0, r.jsx)(a.njP.Item, {
-        className: p.tabBarItem,
+        className: f.tabBarItem,
         id: g.ZI.DISPLAY,
-        disabled: _,
+        disabled: v,
         children: m.intl.string(m.t.hmdomw)
       }), (0, r.jsx)(a.njP.Item, {
-        className: p.tabBarItem,
+        className: f.tabBarItem,
         id: g.ZI.PERMISSIONS,
         children: m.intl.string(m.t.WIDE1L)
       }), (0, r.jsx)(a.njP.Item, {
-        className: p.tabBarItem,
+        className: f.tabBarItem,
         id: g.ZI.VERIFICATIONS,
-        disabled: _,
+        disabled: v,
         children: m.intl.string(m.t["5//Muu"])
       }), (0, r.jsx)(a.njP.Item, {
-        className: p.tabBarItem,
+        className: f.tabBarItem,
         id: g.ZI.MEMBERS,
-        disabled: _,
-        children: _ ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
+        disabled: v,
+        children: v ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
           numMembers: String(j)
         })
       })]

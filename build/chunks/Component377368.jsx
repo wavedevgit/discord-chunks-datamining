@@ -56,8 +56,8 @@ class C extends Chunk131468.Z {
       if ((null == i || l) && !u.Z.isDeaf() && !h.Z.isLocalSoundboardMuted(r)) try {
         let i = {
           soundKey: "".concat(r, "-").concat(e),
-          soundURL: (0, _.Z)(e),
-          soundVolume: (0, b.Z)(n),
+          soundURL: (0, b.Z)(e),
+          soundVolume: (0, _.Z)(n),
           reportSoundStartedPlaying: () => (0, g.xR)(e, r)
         };
         u.Z.supports(v.AN.SAMPLE_PLAYBACK) ? await (0, E.$)(i) : await (0, E.h)(i, t.playingSoundsWeb)

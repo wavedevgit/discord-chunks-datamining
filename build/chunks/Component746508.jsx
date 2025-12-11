@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 746508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => e7
+  Z: () => e2
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -98,8 +98,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk190378 = require("./190378.js"),
   Chunk345655 = require("./345655.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk890332 = require("./890332.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk424126 = require("./424126.js"),
+  Chunk478411 = require("./478411.js");
 
 function eY(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -183,7 +183,7 @@ function eX() {
     l = null != require && require !== Chunk345655._.CUSTOM;
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: Chunk890332.noiseCancellationPopout,
+    className: Chunk424126.noiseCancellationPopout,
     children: [(0, Chunk54381.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
       text: Chunk388032.intl.formatToPlainString(Chunk388032.t["/tqmfM"], {
@@ -193,7 +193,7 @@ function eX() {
       shouldShow: Chunk120356,
       align: "right",
       children: e => (0, r.jsx)("div", eq(eW({}, e), {
-        children: (0, r.jsx)(b.rsf, {
+        children: (0, r.jsx)(_.rsf, {
           label: eV.intl.string(eV.t["WGWHv/"]),
           checked: t,
           disabled: l,
@@ -214,21 +214,21 @@ function eX() {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
       }
     }), (0, Chunk54381.jsx)("div", {
-      className: a()(Chunk197571.marginBottom8, Chunk197571.marginTop20),
+      className: a()(Chunk478411.marginBottom8, Chunk478411.marginTop20),
       children: (0, Chunk54381.jsx)(Chunk481060.gNt, {
         label: Chunk388032.intl.string(Chunk388032.t.k6h1F4),
         children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.BETWEEN,
-          className: Chunk890332.__invalid_footer,
+          className: Chunk424126.__invalid_footer,
           children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
             href: Chunk981631.EYA.KRISP,
             onClick: e => eJ(e),
             children: (0, Chunk54381.jsx)("div", {
-              className: Chunk890332.krispLogo
+              className: Chunk424126.krispLogo
             })
           }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
             href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
-            className: Chunk890332.krispLink,
+            className: Chunk424126.krispLink,
             onClick: e => eJ(e),
             children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
           })]
@@ -270,13 +270,13 @@ function e0(e) {
       var n;
       E.Z.setVideoEnabled(e), e && (0, K.uL)(ek.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : ek.ME, t.id))
     };
-    (0, R.v)(o, R.d.CAMERA, e), e ? (0, e_.Z)(n, v) : n()
+    (0, R.v)(o, R.d.CAMERA, e), e ? (0, eb.Z)(n, v) : n()
   }, [t, v, o]), I = p || n || f, {
     Component: S,
     play: T,
     events: N
   } = (0, h.o)(c.enabled ? "disable" : "enable");
-  return i.useEffect(() => () => T(), [c.enabled, T]), (0, r.jsx)(eb.Z, eq(eW({
+  return i.useEffect(() => () => T(), [c.enabled, T]), (0, r.jsx)(e_.Z, eq(eW({
     onChange: y,
     onCameraUnavailable: O,
     hasPermission: d,
@@ -299,7 +299,7 @@ function e0(e) {
         }),
         color: "currentColor"
       });
-      return (0, r.jsx)(b.yRy, {
+      return (0, r.jsx)(_.yRy, {
         targetElementRef: s,
         renderPopout: e => {
           let {
@@ -313,17 +313,17 @@ function e0(e) {
         },
         position: "top",
         align: "center",
-        animation: b.yRy.Animation.FADE,
+        animation: _.yRy.Animation.FADE,
         children: (e, l) => {
           var {
             onClick: o
           } = e, c = eK(e, ["onClick"]), {
             isShown: p
           } = l;
-          return (0, r.jsx)(b.aML, {
+          return (0, r.jsx)(_.aML, {
             "data-migration-pending": true,
             text: i,
-            children: e => (0, r.jsx)(_.zx, eq(eW({
+            children: e => (0, r.jsx)(b.zx, eq(eW({
               "data-migration-pending": true,
               buttonRef: s
             }, u, e, c), {
@@ -343,7 +343,7 @@ function e0(e) {
                 var n;
                 o(t), null == (n = e.onContextMenu) || n.call(e)
               },
-              size: _.zx.Sizes.MEDIUM,
+              size: b.zx.Sizes.MEDIUM,
               className: a()(eF.button, eF.buttonColor, {
                 [eF.buttonActive]: n,
                 [eF.fauxDisabled]: t,
@@ -384,7 +384,7 @@ function e1(e) {
     events: O,
     play: v
   } = (0, p.w)();
-  return n ? (0, r.jsx)(b.aML, {
+  return n ? (0, r.jsx)(_.aML, {
     "data-migration-pending": true,
     text: f,
     children: e => (0, r.jsx)(U.Xf, {
@@ -395,11 +395,11 @@ function e1(e) {
           visibleContent: i,
           markAsDismissed: c
         } = n;
-        return (0, r.jsxs)(_.zx, eq(eW(eq(eW({
+        return (0, r.jsxs)(b.zx, eq(eW(eq(eW({
           "data-migration-pending": true
         }, e), {
           fullWidth: true,
-          size: _.zx.Sizes.MEDIUM
+          size: b.zx.Sizes.MEDIUM
         }), O), {
           onClick: () => {
             var n;
@@ -470,27 +470,27 @@ function e4(e) {
   }, [t, g]), O = i.useCallback(() => {
     c(), g ? h(false) : h(true), (0, R.v)(l, R.d.GIFTING)
   }, [l, c, g]);
-  return (0, r.jsx)(b.aML, {
+  return (0, r.jsx)(_.aML, {
     "data-migration-pending": true,
     text: eV.intl.string(eV.t.PEjaCx),
     shouldShow: !g,
     onTooltipShow: u,
     onTooltipHide: d,
-    children: e => (0, r.jsx)(b.yRy, {
+    children: e => (0, r.jsx)(_.yRy, {
       targetElementRef: n,
       shouldShow: g,
-      animation: b.yRy.Animation.FADE,
+      animation: _.yRy.Animation.FADE,
       animationPosition: "top",
       position: "top",
       align: "left",
       spacing: 16,
       onRequestClose: m,
       renderPopout: E,
-      children: () => (0, r.jsx)(_.zx, eq(eW(eq(eW({
+      children: () => (0, r.jsx)(b.zx, eq(eW(eq(eW({
         "data-migration-pending": true
       }, e), {
         fullWidth: true,
-        size: _.zx.Sizes.MEDIUM,
+        size: b.zx.Sizes.MEDIUM,
         buttonRef: n
       }), p), {
         onClick: O,
@@ -549,7 +549,7 @@ function e3(e) {
       [eF.withText]: !j
     })
   });
-  return (0, r.jsx)(b.yRy, {
+  return (0, r.jsx)(_.yRy, {
     targetElementRef: c,
     renderPopout: e => {
       let {
@@ -568,20 +568,20 @@ function e3(e) {
     },
     position: "top",
     align: "center",
-    animation: b.yRy.Animation.FADE,
+    animation: _.yRy.Animation.FADE,
     children: e => {
       var {
         onClick: n,
         onMouseEnter: i
       } = e, l = eK(e, ["onClick", "onMouseEnter"]);
-      return (0, r.jsx)(b.aML, {
+      return (0, r.jsx)(_.aML, {
         "data-migration-pending": true,
         text: N,
-        children: e => (0, r.jsx)(_.zx, eq(eW(eq(eW({
+        children: e => (0, r.jsx)(b.zx, eq(eW(eq(eW({
           "data-migration-pending": true
         }, e), {
           buttonRef: c,
-          size: _.zx.Sizes.MEDIUM,
+          size: b.zx.Sizes.MEDIUM,
           onClick: r => {
             var i;
             (0, R.v)(d, R.d.STREAM, null == I), T ? n(r) : t(), null == (i = e.onClick) || i.call(e)
@@ -638,7 +638,7 @@ class e8 extends Chunk473749.PureComponent {
           onClick: this.handleChannelLinkClick,
           onContextMenu: this.handleChannelLinkContextMenu,
           children: (0, Chunk54381.jsx)(Chunk345243.Z, {
-            className: Chunk890332.channel,
+            className: Chunk424126.channel,
             children: (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
               color: "text-subtle",
@@ -662,7 +662,7 @@ class e8 extends Chunk473749.PureComponent {
     return null != Chunk473749 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === eO.default.getId() && (0, eo.gf)(e.voiceState) === eo.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk54381.jsx)(e$, {}) : !require && exports ? (0, Chunk54381.jsx)(Chunk481060.aML, {
       "data-migration-pending": true,
       text: Chunk388032.intl.string(Chunk388032.t["i+SO/U"]),
-      tooltipClassName: Chunk890332.noiseCancellationTooltip,
+      tooltipClassName: Chunk424126.noiseCancellationTooltip,
       forceOpen: true,
       children: e => {
         let {
@@ -672,7 +672,7 @@ class e8 extends Chunk473749.PureComponent {
           "aria-label": t,
           tooltipText: null,
           disabled: true,
-          icon: b.oIc
+          icon: _.oIc
         })
       }
     }) : (0, Chunk54381.jsx)(Chunk481060.yRy, {
@@ -702,7 +702,7 @@ class e8 extends Chunk473749.PureComponent {
     return null != module && require && 0 !== exports.length ? (0, Chunk54381.jsx)(Chunk226323.Z, {
       voiceStates: exports,
       channel: module,
-      className: Chunk890332.voiceUsers
+      className: Chunk424126.voiceUsers
     }) : null
   }
   renderChannelButtons() {
@@ -729,7 +729,7 @@ class e8 extends Chunk473749.PureComponent {
       } = (0, Chunk829750.t)(module),
       p = (0, Chunk368442.xJ)(module.id);
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk890332.actionButtons,
+      className: Chunk424126.actionButtons,
       children: [(0, Chunk54381.jsx)(e0, {
         channel: module,
         enableActivities: Chunk442837,
@@ -765,17 +765,17 @@ class e8 extends Chunk473749.PureComponent {
       shouldShow: require,
       children: () => (0, Chunk54381.jsxs)("div", {
         ref: this.ref,
-        className: Chunk890332.container,
+        className: Chunk424126.container,
         children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
-          className: Chunk890332.connection,
+          className: Chunk424126.connection,
           align: Chunk600164.Z.Align.CENTER,
           children: [(0, Chunk54381.jsx)("div", {
-            className: Chunk890332.inner,
+            className: Chunk424126.inner,
             children: this.renderConnectionStatus()
           }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
             grow: 0,
             shrink: 0,
-            className: Chunk890332.voiceButtonsContainer,
+            className: Chunk424126.voiceButtonsContainer,
             children: [exports ? this.renderNoiseCancellation() : null, (0, Chunk54381.jsx)(Chunk594117.Z, {
               channel: module
             })]
@@ -813,15 +813,15 @@ class e8 extends Chunk473749.PureComponent {
       z.Kw(eB.v.VOICE_PANEL_INTRODUCTION)
     }), eY(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
       className: a()(eF.voicePanelIntroductionWrapper, "theme-light"),
-      children: [(0, r.jsx)(b.Heading, {
+      children: [(0, r.jsx)(_.Heading, {
         className: eF.voicePanelIntroductionHeader,
         variant: "heading-md/semibold",
         children: eV.intl.string(eV.t["ba/rL2"])
-      }), (0, r.jsx)(b.Text, {
+      }), (0, r.jsx)(_.Text, {
         className: eF.voicePanelIntroductionText,
         variant: "text-sm/normal",
         children: eV.intl.string(eV.t.Ne1Eew)
-      }), (0, r.jsx)(b.Button, {
+      }), (0, r.jsx)(_.Button, {
         fullWidth: true,
         onClick: this.handleCloseVoicePanelIntroduction,
         text: eV.intl.string(eV.t.shaBeH),
@@ -863,7 +863,7 @@ function e5(e) {
     })
   }))
 }
-let e7 = (0, Chunk730749.Z)(function(e) {
+let e2 = (0, Chunk730749.Z)(function(e) {
   let t = (0, B.Z)(),
     n = (0, u.e7)([G.default], () => G.default.getAwaitingRemoteSessionInfo()),
     l = (0, u.e7)([ej.default], () => ej.default.getCurrentUser()),
@@ -894,7 +894,7 @@ let e7 = (0, Chunk730749.Z)(function(e) {
     g = (0, u.e7)([eC.Z, Y.Z], () => Y.Z.hasHotspot(eB.v.VOICE_PANEL_INTRODUCTION) && (0, ew.EO)(l) && !eC.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
     h = (0, u.e7)([eP.Z], () => null != s && eP.Z.hasVideo(s), [s]),
     m = (0, u.e7)([eE.Z], () => eE.Z.getCurrentUserActiveStream()),
-    _ = (0, u.e7)([eI.Z], () => eI.Z.hasLayers()),
+    b = (0, u.e7)([eI.Z], () => eI.Z.hasLayers()),
     E = (0, u.e7)([W.Z], () => W.Z.isViewingRoles(d)),
     O = (0, u.e7)([eS.Z], () => E && !eS.Z.can(ek.Plq.VIEW_CHANNEL, c), [E, c]),
     v = ec.Fg.useSetting(),
@@ -940,7 +940,7 @@ let e7 = (0, Chunk730749.Z)(function(e) {
         channel: c,
         hasVideo: h,
         selfStream: m,
-        hasLayers: _,
+        hasLayers: b,
         voiceStates: T,
         showVoiceStates: v,
         shouldShowVoicePanelIntroduction: g,
@@ -949,11 +949,11 @@ let e7 = (0, Chunk730749.Z)(function(e) {
         analyticsLocations: Z
       })), !N && E && null != d ? (0, r.jsxs)("div", {
         className: eF.viewAsRolesWarning,
-        children: [(0, r.jsx)(b.Text, {
+        children: [(0, r.jsx)(_.Text, {
           variant: "text-sm/normal",
           className: eF.viewAsRolesWarningText,
           children: O ? eV.intl.string(eV.t.efjuQJ) : eV.intl.string(eV.t.br8H2N)
-        }), (0, r.jsx)(b.Button, {
+        }), (0, r.jsx)(_.Button, {
           size: "sm",
           fullWidth: true,
           onClick: () => {

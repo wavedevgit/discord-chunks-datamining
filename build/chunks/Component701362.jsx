@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk717881 = require("./717881.jsx"),
+  Chunk350922 = require("./350922.jsx"),
   Chunk616780 = require("./616780.js"),
   Chunk850827 = require("./850827.jsx"),
   Chunk576855 = require("./576855.jsx"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk871118 = require("./871118.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk839021 = require("./839021.js");
+  Chunk724506 = require("./724506.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -136,16 +136,16 @@ class L extends Chunk473749.PureComponent {
       hideTip: s
     } = this.props;
     return null == require ? null : (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk839021.streamPreviewWrapper, {
-        [Chunk839021.mounted]: Chunk473749
+      className: o()(Chunk724506.streamPreviewWrapper, {
+        [Chunk724506.mounted]: Chunk473749
       }),
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk839021.streamPreview,
+        className: Chunk724506.streamPreview,
         children: [this.renderPreview(require), (0, Chunk54381.jsxs)("div", {
-          className: Chunk839021.body,
-          children: [null != module ? (0, Chunk54381.jsx)(Chunk717881.Z, {
+          className: Chunk724506.body,
+          children: [null != module ? (0, Chunk54381.jsx)(Chunk350922.Z, {
             hideHeader: true,
-            type: Chunk717881.P.STREAM_PREVIEW,
+            type: Chunk350922.P.STREAM_PREVIEW,
             activity: module,
             user: exports,
             guildId: require.guildId,
@@ -158,16 +158,16 @@ class L extends Chunk473749.PureComponent {
             },
             onAction: Chunk120356
           }) : (0, Chunk54381.jsx)(Chunk850827.Z, {
-            type: Chunk717881.P.STREAM_PREVIEW,
+            type: Chunk350922.P.STREAM_PREVIEW,
             applicationStream: require,
             user: exports,
             guildId: require.guildId,
             channelId: require.channelId,
-            className: Chunk839021.activityActions,
+            className: Chunk724506.activityActions,
             onAction: Chunk120356
           }), !Chunk442837 && (0, Chunk54381.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,
-            className: Chunk839021.protip,
+            className: Chunk724506.protip,
             children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t.YRdw70) : Chunk388032.intl.string(Chunk388032.t.CCTgbF)
           })]
         })]

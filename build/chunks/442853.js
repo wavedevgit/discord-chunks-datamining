@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 442853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -28,16 +28,16 @@ function f(e) {
       o.Z.requestMember(g, e)
     })
   }, [b, g]);
-  let _ = (0, l.Wu)([c.ZP], () => {
+  let y = (0, l.Wu)([c.ZP], () => {
       if (null == g) return p;
       let e = [];
       for (let t of b) c.ZP.isMember(g, t) && e.push(t);
       return e
     }, [b, g]),
-    y = r.useMemo(() => {
-      if (null == f || 0 === _.length) return h;
+    O = r.useMemo(() => {
+      if (null == f || 0 === y.length) return h;
       let e = new Set;
-      for (let t of _) {
+      for (let t of y) {
         let n = d.uB({
           user: t,
           context: f
@@ -45,6 +45,6 @@ function f(e) {
         i.e$(n, u.Pl.VIEW_CHANNEL) && e.add(t)
       }
       return e
-    }, [_, f]);
-  return r.useMemo(() => null == t ? true : t.filter(e => y.has(e.author_id)), [t, y])
+    }, [y, f]);
+  return r.useMemo(() => null == t ? true : t.filter(e => O.has(e.author_id)), [t, O])
 }

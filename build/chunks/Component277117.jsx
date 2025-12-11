@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 277117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -20,7 +20,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk648052 = require("./648052.jsx"),
   Chunk280885 = require("./280885.jsx"),
   Chunk483424 = require("./483424.jsx"),
-  Chunk681837 = require("./681837.jsx"),
+  Chunk407699 = require("./407699.jsx"),
   Chunk78806 = require("./78806.jsx"),
   Chunk91433 = require("./91433.jsx"),
   Chunk900927 = require("./900927.jsx"),
@@ -33,7 +33,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk892273 = require("./892273.js");
+  Chunk82600 = require("./82600.js");
 
 function w(e) {
   let {
@@ -59,7 +59,9 @@ function w(e) {
   });
   return (0, r.jsxs)("div", {
     className: R.body,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(O.Z, {
+      userId: t.id
+    }), (0, r.jsx)(E.Z, {
       user: t,
       guildId: A.guild_id,
       nickname: p.ZP.getName(null, A.id, t),
@@ -69,34 +71,30 @@ function w(e) {
         displayProfile: w,
         themeType: T.l.SIDEBAR
       }),
-      nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(y.Z, {
-          userId: t.id
-        }), !H && (0, r.jsx)(Z.Z, {
-          userId: t.id,
-          isVisible: D,
-          onOpenProfile: L
-        })]
+      nicknameIcons: H ? null : (0, r.jsx)(Z.Z, {
+        userId: t.id,
+        isVisible: D,
+        onOpenProfile: L
       })
     }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(v.Z, {
+    }, e.applicationId)), (0, r.jsx)(C.Z, {
       user: t,
       className: R.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
       className: R.card,
-      children: (0, r.jsx)(C.Z, {
+      children: (0, r.jsx)(I.Z, {
         heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(i.Mgn, {
           size: "xxs",
@@ -107,17 +105,17 @@ function w(e) {
           userId: t.id
         })
       })
-    }), B ? (0, r.jsx)(I.Z, {
+    }), B ? (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: L
-    }) : (0, r.jsx)(_.Z, {
+    }) : (0, r.jsx)(y.Z, {
       user: t,
       currentUser: n,
       className: R.card
     }), (0, r.jsxs)(S.Z.Overlay, {
       className: R.overlay,
-      children: [!H && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(C.Z, {
+      children: [!H && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(I.Z, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(b.Z, {
@@ -130,16 +128,16 @@ function w(e) {
         applicationId: F.id,
         commandIds: F.popularApplicationCommandIds,
         channel: A
-      }), G.length > 0 && (0, r.jsx)(C.Z, {
+      }), G.length > 0 && (0, r.jsx)(I.Z, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(O.Z, {
+        children: (0, r.jsx)(j.Z, {
           applicationIds: G
         })
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(I.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "header-primary",
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(v.Z, {
           userId: t.id
         })
       })]

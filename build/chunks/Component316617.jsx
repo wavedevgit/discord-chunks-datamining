@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 316617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,25 +18,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk592125 = require("./592125.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk492402 = require("./492402.js");
-let f = e => {
+  Chunk642900 = require("./642900.js");
+let v = e => {
   let {
     message: t
-  } = e, n = (0, o.ZP)(t), f = (0, i.e7)([_.Z], () => _.Z.getChannel(t.channel_id)), v = l.useMemo(() => (0, s.Z)(t), [t]), {
+  } = e, n = (0, o.ZP)(t), v = (0, i.e7)([g.Z], () => g.Z.getChannel(t.channel_id)), _ = l.useMemo(() => (0, s.Z)(t), [t]), {
     content: j
-  } = (0, p.Z)(v, {
+  } = (0, p.Z)(_, {
     hideSimpleEmbedContent: false
-  }), y = g.jU.useSetting(), Z = l.useCallback(() => {
+  }), y = b.jU.useSetting(), Z = l.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: n
     } = (0, m.f)(t, j, false, false, "", {
-      leadingIconClass: b.attachmentIcon,
-      trailingIconClass: b.attachmentIcon,
-      iconSize: x.WW
+      leadingIconClass: h.attachmentIcon,
+      trailingIconClass: h.attachmentIcon,
+      iconSize: f.WW
     });
     return (0, r.jsxs)("div", {
-      className: b.contentContainer,
+      className: h.contentContainer,
       children: [e, (0, r.jsx)(c.ZP, {
         message: t,
         content: j,
@@ -44,21 +44,21 @@ let f = e => {
       }), n]
     })
   }, [t, j, y]);
-  return null == f ? null : (0, r.jsxs)("div", {
-    className: b.container,
+  return null == v ? null : (0, r.jsxs)("div", {
+    className: h.container,
     children: [(0, r.jsx)(a.Heading, {
-      className: b.header,
+      className: h.header,
       variant: "heading-sm/semibold",
-      children: h.intl.string(h.t.iouM3a)
+      children: x.intl.string(x.t.iouM3a)
     }), (0, r.jsx)(a.Ttm, {
-      className: b.messagePreviewContainer,
+      className: h.messagePreviewContainer,
       children: (0, r.jsx)(d.Z, {
         childrenMessageContent: Z(),
         childrenHeader: (0, r.jsx)(u.ZP, {
           message: t,
-          channel: f,
+          channel: v,
           author: n,
-          guildId: f.guild_id
+          guildId: v.guild_id
         }),
         disableInteraction: true,
         author: n

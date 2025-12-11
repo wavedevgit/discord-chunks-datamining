@@ -50,7 +50,7 @@ function c(e) {
   (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("7082"), n.e("98639")]).then(n.bind(n, 650233));
+    } = await Promise.all([n.e("7082"), n.e("43790")]).then(n.bind(n, 650233));
     return n => (0, r.jsx)(t, l(o({}, n), {
       inviteCode: e
     }))

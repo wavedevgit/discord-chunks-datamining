@@ -10,8 +10,8 @@ var Chunk990547 = require("./990547.js"),
   Chunk573261 = require("./573261.js"),
   Chunk981631 = require("./981631.js");
 let o = {
-  signup: (e, t) => l.Z.post({
-    url: a.ANM.HUB_WAITLIST_SIGNUP,
+  signup: (e, t) => a.Z.post({
+    url: l.ANM.HUB_WAITLIST_SIGNUP,
     body: {
       email: e,
       school: t
@@ -29,8 +29,8 @@ let o = {
     },
     rejectWithError: false
   }),
-  sendVerificationEmail: async (e, t, n) => (await l.Z.post({
-    url: a.ANM.HUB_EMAIL_VERIFY_SEND,
+  sendVerificationEmail: async (e, t, n) => (await a.Z.post({
+    url: l.ANM.HUB_EMAIL_VERIFY_SEND,
     body: {
       email: e,
       guild_id: n,
@@ -52,8 +52,8 @@ let o = {
   async verify(e) {
     if (null != e) try {
       var t;
-      let n = null == (t = (await l.Z.post({
-        url: a.ANM.HUB_EMAIL_VERIFY,
+      let n = null == (t = (await a.Z.post({
+        url: l.ANM.HUB_EMAIL_VERIFY,
         body: {
           token: e
         },
@@ -76,8 +76,8 @@ let o = {
   async verifyCode(e, t, n) {
     if (null != e) try {
       var i;
-      let o = await l.Z.post({
-          url: a.ANM.HUB_EMAIL_VERIFY_CODE,
+      let o = await a.Z.post({
+          url: l.ANM.HUB_EMAIL_VERIFY_CODE,
           body: {
             code: e,
             guild_id: t,

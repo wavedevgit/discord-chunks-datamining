@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk173951 = require("./173951.jsx"),
   Chunk455731 = require("./455731.jsx"),
   Chunk272289 = require("./272289.jsx"),
-  Chunk39642 = require("./39642.js");
+  Chunk902210 = require("./902210.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -43,13 +43,13 @@ function v(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -58,19 +58,19 @@ let O = e => {
       widget: t
     } = e, n = v(e, ["widget"]);
     switch (t.type) {
-      case l.l.FAVORITE_GAMES:
+      case a.l.FAVORITE_GAMES:
         return (0, r.jsx)(g.Z, y({
           widget: t
         }, n));
-      case l.l.CURRENT_GAMES:
+      case a.l.CURRENT_GAMES:
         return (0, r.jsx)(f.Z, y({
           widget: t
         }, n));
-      case l.l.WANT_TO_PLAY_GAMES:
-        return (0, r.jsx)(m.Z, y({
+      case a.l.WANT_TO_PLAY_GAMES:
+        return (0, r.jsx)(b.Z, y({
           widget: t
         }, n));
-      case l.l.PLAYED_GAMES:
+      case a.l.PLAYED_GAMES:
         return (0, r.jsx)(p.Z, y({
           widget: t
         }, n));
@@ -82,32 +82,32 @@ let O = e => {
     var {
       widget: t,
       user: n,
-      disableInteraction: l
+      disableInteraction: a
     } = e, f = v(e, ["widget", "user", "disableInteraction"]);
     let {
       shouldShowSuggestions: g,
       handleDismissSuggestions: p
-    } = (0, c.h)(t), m = (0, a.e7)([o.default], () => o.default.getId() === n.id), j = m && !l && g, x = (0, s.mR)(t), P = (0, s.Hy)(t, {
-      isCurrentUser: m
-    }), _ = (0, s.kQ)(t), I = 1 === (0, s.Gv)(t.type), [w, S] = i.useState(false);
+    } = (0, s.h)(t), b = (0, l.e7)([o.default], () => o.default.getId() === n.id), j = b && !a && g, x = (0, c.mR)(t), P = (0, c.Hy)(t, {
+      isCurrentUser: b
+    }), I = (0, c.kQ)(t), w = 1 === (0, c.Gv)(t.type), [S, E] = i.useState(false);
     return (0, r.jsx)(d.N, {
       value: {
-        expanded: w,
-        setExpanded: S
+        expanded: S,
+        setExpanded: E
       },
       children: (0, r.jsx)(O, y({
         widget: t,
         user: n,
-        disableInteraction: l,
+        disableInteraction: a,
         headerTitle: x,
         headerSubtitle: P,
-        headerActionButtons: m && !I ? [(0, r.jsx)(u.yX, {
-          disabled: _,
+        headerActionButtons: b && !w ? [(0, r.jsx)(u.yX, {
+          disabled: I,
           widgetType: t.type,
           widget: t,
-          onAddGame: () => S(true)
+          onAddGame: () => E(true)
         }, "".concat(t.type, "-browse-games-popout"))] : true,
-        trailingContent: j && (0, r.jsx)(b.Z, {
+        trailingContent: j && (0, r.jsx)(m.Z, {
           userId: n.id,
           widgetType: t.type,
           onDismiss: p,

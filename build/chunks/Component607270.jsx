@@ -15,10 +15,10 @@ var Chunk990547 = require("./990547.js"),
   Chunk799360 = require("./799360.js"),
   Chunk342386 = require("./342386.js"),
   Chunk771934 = require("./771934.js"),
-  Chunk939101 = require("./939101.js"),
+  Chunk990551 = require("./990551.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640744 = require("./640744.js"),
-  Chunk758335 = require("./758335.js");
+  Chunk302461 = require("./302461.js"),
+  Chunk215656 = require("./215656.js");
 
 function g() {
   let {
@@ -32,35 +32,35 @@ function g() {
     }
   });
   let t = (0, Chunk799360.B)({
-      "en-US": Chunk939101.default["f/cLEi"],
-      "en-GB": Chunk939101.default["f/cLEi"]
-    }, Chunk939101.default.CARxAC),
+      "en-US": Chunk990551.default["f/cLEi"],
+      "en-GB": Chunk990551.default["f/cLEi"]
+    }, Chunk990551.default.CARxAC),
     n = () => {
       (0, Chunk771934.DI)(Chunk771934.Ln.APPEARANCE_SETTINGS), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
         from: Chunk550385.tE.SETTING
       }), (0, Chunk342386.default)()
     };
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk640744.container,
+    className: Chunk302461.container,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk640744.iconContainer,
+      className: Chunk302461.iconContainer,
       children: (0, Chunk54381.jsx)("img", {
-        src: Chunk758335.Z,
-        className: Chunk640744.bannerImage,
+        src: Chunk215656.Z,
+        className: Chunk302461.bannerImage,
         alt: ""
       })
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk640744.textContent,
+      className: Chunk302461.textContent,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: exports
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk939101.default.nla4RG)
+        children: Chunk388032.intl.string(Chunk990551.default.nla4RG)
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk640744.buttonContainer,
+      className: Chunk302461.buttonContainer,
       children: (0, Chunk54381.jsx)(Chunk159691.zxk, {
         variant: "primary",
         text: Chunk388032.intl.string(Chunk388032.t.uw9zI7),

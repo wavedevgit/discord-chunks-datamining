@@ -7,7 +7,7 @@ var Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk619864 = require("./619864.js"),
   Chunk193995 = require("./193995.js");
-let a = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+let s = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
 function o(e) {
   return e.replace(/('|\u2019|\uFF07)(s|S)$/, "")
@@ -18,7 +18,7 @@ function u(e) {
 }
 
 function c(e) {
-  return a.has(e)
+  return s.has(e)
 }
 
 function E(e) {
@@ -28,7 +28,7 @@ function E(e) {
 function d(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = e.length >= i.zV && e.length <= i.y_ && t,
-    r = new Set(l()(e.split(/\W+/)).map(o).reject(E).map(u).reject(c).map(s.a).value());
+    r = new Set(l()(e.split(/\W+/)).map(o).reject(E).map(u).reject(c).map(a.a).value());
   return e => (function e(t, n, r) {
     if (Array.isArray(t)) t.forEach(t => e(t, n, r));
     else if ("list" === t.type) t.items.forEach(t => e(t, n, r));
@@ -39,7 +39,7 @@ function d(e) {
         ! function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
           if (E(e = u(o(e))) || c(e)) returnfalse;
-          let r = (0, s.a)(e);
+          let r = (0, a.a)(e);
           if (n) {
             for (let e of t.values())
               if (r.includes(e)) returntrue;

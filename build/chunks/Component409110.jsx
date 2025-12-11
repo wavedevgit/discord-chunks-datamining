@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk916001 = require("./916001.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk929148 = require("./929148.js");
+  Chunk405122 = require("./405122.js");
 let h = "expanded-area";
 
 function p(e) {
@@ -22,42 +22,42 @@ function p(e) {
     attachments: t,
     role: n,
     roleLocked: i
-  } = e, [s, m] = a.useState(false);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(l.P3F, {
+  } = e, [s, m] = r.useState(false);
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsxs)(l.P3F, {
       className: f.viewContents,
       onClick: () => {
         m(e => !e)
       },
       "aria-expanded": s,
       "aria-controls": h,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, a.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-default",
         children: s ? x.intl.string(x.t.DKNxgB) : x.intl.string(x.t.ESEKua)
-      }), (0, r.jsx)(o.Z, {
+      }), (0, a.jsx)(o.Z, {
         className: f.caretIcon,
         direction: s ? o.Z.Directions.UP : o.Z.Directions.DOWN
       })]
-    }), (0, r.jsx)(l.LZC, {
+    }), (0, a.jsx)(l.LZC, {
       size: 12
-    }), s && (0, r.jsxs)("ul", {
+    }), s && (0, a.jsxs)("ul", {
       className: f.contentsContainer,
       id: h,
-      children: [(0, r.jsx)(d.Z, {
+      children: [(0, a.jsx)(d.Z, {
         label: x.intl.string(x.t.DWYJua),
-        children: (0, r.jsx)("ul", {
+        children: (0, a.jsx)("ul", {
           className: f.attachmentGrid,
-          children: t.map(e => (0, r.jsx)(c.Z, {
+          children: t.map(e => (0, a.jsx)(c.Z, {
             attachment: e
           }, e.id))
         })
-      }), null != n && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", {
+      }), null != n && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)("div", {
           className: f.separator
-        }), (0, r.jsx)(d.Z, {
+        }), (0, a.jsx)(d.Z, {
           label: x.intl.string(x.t.o9xphc),
-          children: (0, r.jsx)(u.Z, {
+          children: (0, a.jsx)(u.Z, {
             role: n,
             textVariant: "text-md/medium",
             locked: i
@@ -72,16 +72,16 @@ function j(e) {
   var t;
   let {
     listing: n
-  } = e, a = null != (t = n.attachments) ? t : [], l = (0, i.e7)([s.Z], () => {
+  } = e, r = null != (t = n.attachments) ? t : [], l = (0, i.e7)([s.Z], () => {
     var e;
     return s.Z.getRole(n.guild_id, null != (e = n.role_id) ? e : m.lds)
   }), o = !n.has_entitlement;
-  return 0 === a.length && null == l ? null : 0 === a.length && null != l ? (0, r.jsx)(u.Z, {
+  return 0 === r.length && null == l ? null : 0 === r.length && null != l ? (0, a.jsx)(u.Z, {
     role: l,
     textVariant: "text-md/medium",
     locked: o
-  }) : (0, r.jsx)(p, {
-    attachments: a,
+  }) : (0, a.jsx)(p, {
+    attachments: r,
     role: l,
     roleLocked: o
   })

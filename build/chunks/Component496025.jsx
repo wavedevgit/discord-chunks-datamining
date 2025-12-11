@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -24,8 +24,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk432877 = require("./432877.js"),
   Chunk246992 = require("./246992.js"),
   Chunk37812 = require("./37812.js"),
-  Chunk165432 = require("./165432.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk769633 = require("./769633.js"),
+  Chunk663618 = require("./663618.js");
 
 function O() {
   var e;
@@ -37,10 +37,10 @@ function O() {
     } = (0, Chunk442837.cj)([Chunk592125.Z, Chunk594174.default, Chunk699516.Z], () => ({
       selectedChannel: Chunk592125.Z.getChannel(require),
       options: exports.map(e => {
-        let t = f.Z.getChannel(e.channelId);
+        let t = x.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, h.F6)(t, b.default, g.Z) : e.channelId
+          label: null != t ? (0, h.F6)(t, g.default, b.Z) : e.channelId
         }
       })
     })),
@@ -50,22 +50,22 @@ function O() {
       let t = (0, Chunk95015.x9)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       Chunk258732.Z.updatePrivateChannelRecipientFlags(l.id, exports)
     }, [l]),
-    _ = null != l && !!l.isPrivate() && (0, Chunk95015.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    y = null != l && !!l.isPrivate() && (0, Chunk95015.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
       children: "In-Game NUX Message for DMs"
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk165432.inGameNuxContainer,
+      className: Chunk769633.inGameNuxContainer,
       children: [(0, Chunk54381.jsx)(Chunk668339.d, {
-        wrapperClassName: Chunk165432.search,
+        wrapperClassName: Chunk769633.search,
         options: Chunk493683,
         placeholder: "Select DM",
         value: require,
         onChange: Chunk120356,
         renderOptionPrefix: e => {
           if (null == e) return null;
-          let t = f.Z.getChannel(e.value);
+          let t = x.Z.getChannel(e.value);
           return null == t ? null : (0, a.jsx)(u.qEK, {
             src: (0, p.x)(t),
             "aria-hidden": true,
@@ -111,11 +111,11 @@ function N() {
     }, t)
   });
   return (0, Chunk54381.jsxs)("div", {
-    className: l()(Chunk451429.panel, Chunk165432.panel),
+    className: l()(Chunk663618.panel, Chunk769633.panel),
     children: [module, (0, Chunk54381.jsx)("div", {
-      className: Chunk165432.divider
+      className: Chunk769633.divider
     }), (0, Chunk54381.jsx)(O, {}), (0, Chunk54381.jsx)("div", {
-      className: Chunk165432.divider
+      className: Chunk769633.divider
     }), (0, Chunk54381.jsx)(T, {})]
   })
 }

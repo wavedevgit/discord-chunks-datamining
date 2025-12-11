@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk3383 = require("./3383.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk591627 = require("./591627.js");
+  Chunk611954 = require("./611954.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -279,7 +279,7 @@ function w() {
       direction: "vertical",
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        className: Chunk591627.labelSpacing,
+        className: Chunk611954.labelSpacing,
         children: "This section tests the orderSKU function, order signing, and 3DS authentication. Select SKU ID and payment source from the dropdowns below. Check the console for detailed logs."
       }), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
         label: "Configuration",
@@ -306,7 +306,7 @@ function w() {
           })), !L && (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            className: Chunk591627.labelSpacing,
+            className: Chunk611954.labelSpacing,
             children: "Loading payment sources..."
           })]
         })]
@@ -331,7 +331,7 @@ function w() {
           disabled: require || null == Chunk3383 || "" === Chunk3383
         })]
       }), null != Chunk563132 && (0, Chunk54381.jsx)("div", {
-        className: Chunk591627.labelSpacing,
+        className: Chunk611954.labelSpacing,
         children: Chunk563132.split("\n").map((e, t) => (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           style: {

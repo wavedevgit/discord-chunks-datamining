@@ -1,7 +1,7 @@
-/** Chunk was on 48890 **/
+/** Chunk was on 27381 **/
 /** chunk id: 273602, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => M
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,111 +29,111 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646632 = require("./646632.js");
-async function E(e) {
+  Chunk407157 = require("./407157.js");
+async function P(e) {
   var t, i, n;
   let s, {
       thread: a,
       attachments: o,
       setIsUploading: r,
       guild: g,
-      onClose: p
+      onClose: f
     } = e,
-    f = _.default.castChannelIdAsMessageId(a.id),
-    x = new c.Z;
-  x.on("progress", e => {
+    p = y.default.castChannelIdAsMessageId(a.id),
+    w = new h.Z;
+  w.on("progress", e => {
     let t = (0, v.dg)(g.id);
-    e.currentSize > t && (x.cancel(), r(false), p(), (0, C.G)(a, (0, S.KZ)(o)))
+    e.currentSize > t && (w.cancel(), r(false), f(), (0, S.G)(a, (0, x.KZ)(o)))
   });
-  let w = m.Z.getMessage(a.id, f),
-    T = null != w ? w.attachments : [];
+  let T = m.Z.getMessage(a.id, p),
+    O = null != T ? T.attachments : [];
   r(true);
   try {
-    s = await x.uploadFiles(o)
+    s = await w.uploadFiles(o)
   } catch (e) {
     r(false);
     return
   }
-  let F = [...T, ...null != (t = s.map((e, t) => (0, y.B)(e, t))) ? t : []];
+  let I = [...O, ...null != (t = s.map((e, t) => (0, C.B)(e, t))) ? t : []];
   try {
     await l.tn.patch({
-      url: O.ANM.MESSAGE(a.id, f),
+      url: F.ANM.MESSAGE(a.id, p),
       body: {
-        attachments: F
+        attachments: I
       },
       rejectWithError: false
-    }), p(), h.Z.clearAll(a.id, b.d.ChannelMessage)
+    }), f(), d.Z.clearAll(a.id, b.d.ChannelMessage)
   } catch (e) {
-    r(false), (null == (i = e.body) ? true : i.code) === O.evJ.EXPLICIT_CONTENT && (p(), d.Z.sendExplicitMediaClydeError(a.id, null == (n = e.body) ? true : n.attachments, u.UU.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), h.Z.clearAll(a.id, b.d.ChannelMessage))
+    r(false), (null == (i = e.body) ? true : i.code) === F.evJ.EXPLICIT_CONTENT && (f(), c.Z.sendExplicitMediaClydeError(a.id, null == (n = e.body) ? true : n.attachments, u.UU.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), d.Z.clearAll(a.id, b.d.ChannelMessage))
   }
 }
 
-function P(e) {
+function M(e) {
   var t;
   let {
     threadId: i,
     attachments: l,
-    sendMessage: d,
-    transitionState: h,
-    onClose: c
-  } = e, u = (0, o.e7)([p.Z], () => p.Z.getChannel(i), [i]), b = (0, o.e7)([f.Z], () => f.Z.getGuild(null == u ? true : u.getGuildId()), [u]), m = (0, o.e7)([p.Z], () => p.Z.getChannel(null == u ? true : u.parent_id), [u]), v = null == (t = l[0]) ? true : t.item, [_, y] = s.useState(null);
+    sendMessage: c,
+    transitionState: d,
+    onClose: h
+  } = e, u = (0, o.e7)([f.Z], () => f.Z.getChannel(i), [i]), b = (0, o.e7)([p.Z], () => p.Z.getGuild(null == u ? true : u.getGuildId()), [u]), m = (0, o.e7)([f.Z], () => f.Z.getChannel(null == u ? true : u.parent_id), [u]), v = null == (t = l[0]) ? true : t.item, [y, C] = s.useState(null);
   s.useEffect(() => {
-    null != v && (0, g.Fq)(v.file, (e, t) => y(e), F.dG)
+    null != v && (0, g.Fq)(v.file, (e, t) => C(e), I.dG)
   }, [v]);
-  let C = null != v && null != _ ? {
-      src: _,
-      width: w.TJ,
-      height: w.Lp,
+  let S = null != v && null != y ? {
+      src: y,
+      width: T.TJ,
+      height: T.Lp,
       spoiler: l[0].spoiler,
       alt: l[0].description
     } : null,
-    [S, O] = s.useState(false),
-    P = s.useCallback(() => {
-      (0, x.xI)({
-        added: false
-      }), d(), c()
-    }, [d, c]),
+    [x, F] = s.useState(false),
     M = s.useCallback(() => {
-      null != u && null != b && ((0, x.xI)({
+      (0, w.xI)({
+        added: false
+      }), c(), h()
+    }, [c, h]),
+    Z = s.useCallback(() => {
+      null != u && null != b && ((0, w.xI)({
         added: true
-      }), E({
+      }), P({
         thread: u,
         attachments: l,
-        setIsUploading: O,
+        setIsUploading: F,
         guild: b,
-        onClose: c
+        onClose: h
       }))
-    }, [u, l, O, b, c]);
+    }, [u, l, F, b, h]);
   return null == m ? null : (0, n.jsx)(a.Modal, {
-    title: I.intl.string(I.t["+SZF6S"]),
-    subtitle: I.intl.string(I.t["0Ycgw5"]),
-    transitionState: h,
-    onClose: c,
+    title: j.intl.string(j.t["+SZF6S"]),
+    subtitle: j.intl.string(j.t["0Ycgw5"]),
+    transitionState: d,
+    onClose: h,
     actionBarInput: (0, n.jsx)(r.Avr, {
       variant: "secondary",
-      disabled: S,
-      onClick: c,
-      text: I.intl.string(I.t["ETE/oC"])
+      disabled: x,
+      onClick: h,
+      text: j.intl.string(j.t["ETE/oC"])
     }),
     actions: [{
       variant: "secondary",
-      text: I.intl.string(I.t["8rKVHL"]),
-      disabled: S,
-      onClick: P
+      text: j.intl.string(j.t["8rKVHL"]),
+      disabled: x,
+      onClick: M
     }, {
       variant: "primary",
-      text: I.intl.string(I.t.d611xH),
-      loading: S,
-      onClick: M,
+      text: j.intl.string(j.t.d611xH),
+      loading: x,
+      onClick: Z,
       autoFocus: true
     }],
-    children: (0, n.jsx)(T.oL, {
+    children: (0, n.jsx)(O.oL, {
       channel: m,
-      children: (0, n.jsx)(w.ZP, {
+      children: (0, n.jsx)(T.ZP, {
         threadId: i,
-        goToThread: F.dG,
-        overrideMedia: C,
-        className: j.forumPost
+        goToThread: I.dG,
+        overrideMedia: S,
+        className: E.forumPost
       })
     })
   })

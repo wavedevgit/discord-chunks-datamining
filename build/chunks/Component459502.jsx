@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,17 +21,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk854698 = require("./854698.js"),
   Chunk688641 = require("./688641.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk837815 = require("./837815.js");
+  Chunk144914 = require("./144914.js");
 
-function _(e) {
+function O(e) {
   let {
     channelId: t,
-    showDismiss: _ = true
-  } = e, O = (0, r.e7)([u.Z], () => u.Z.getChannel(t), [t]), x = (0, g.sz)(t), E = null != (0, g.qY)(t), {
-    canManageGuildEvent: j
-  } = (0, o.XJ)(O), S = (0, r.e7)([d.Z], () => x.filter(e => !d.Z.isEventDismissed(e.id)), [x]), P = (0, r.cj)([h.ZP], () => S.reduce((e, t) => (e[t.id] = h.ZP.getUserCount(t.id, (0, b.DK)(t)), e), {}), [S]);
-  return S.length < 1 || E ? null : (0, i.jsx)(i.Fragment, {
-    children: S.map(e => (0, i.jsx)(C.Z, {
+    showDismiss: O = true
+  } = e, x = (0, r.e7)([u.Z], () => u.Z.getChannel(t), [t]), E = (0, g.sz)(t), j = null != (0, g.qY)(t), {
+    canManageGuildEvent: S
+  } = (0, o.XJ)(x), _ = (0, r.e7)([d.Z], () => E.filter(e => !d.Z.isEventDismissed(e.id)), [E]), P = (0, r.cj)([f.ZP], () => _.reduce((e, t) => (e[t.id] = f.ZP.getUserCount(t.id, (0, b.DK)(t)), e), {}), [_]);
+  return _.length < 1 || j ? null : (0, i.jsx)(i.Fragment, {
+    children: _.map(e => (0, i.jsx)(C.Z, {
       icon: (0, i.jsx)(a.Que, {
         size: "custom",
         color: "currentColor",
@@ -39,19 +39,19 @@ function _(e) {
         width: 20
       }),
       color: l.Z.unsafe_rawColors.GREEN_360.css,
-      title: y.intl.formatToPlainString(j(e) ? y.t["1vGXqM"] : y.t.xMJyla, {
+      title: y.intl.formatToPlainString(S(e) ? y.t["1vGXqM"] : y.t.xMJyla, {
         eventName: e.name
       }),
       description: y.intl.formatToPlainString(y.t.PTebCR, {
         startTime: (0, b.ub)(e.scheduled_start_time).startDateTimeString
       }),
       onClick: () => (function(e) {
-        let t = j(e),
+        let t = S(e),
           r = () => {
             (0, a.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("84722"), n.e("80901")]).then(n.bind(n, 296864));
+              } = await Promise.all([n.e("84722"), n.e("5992")]).then(n.bind(n, 296864));
               return n => {
                 var r, l;
                 return (0, i.jsx)(t, (r = function(e) {
@@ -86,11 +86,11 @@ function _(e) {
               }
             })
           };
-        t && (0, c.u1)() && (0, f.s)(e) ? (0, s.Z)(r) : t ? r() : (0, p.bO)({
+        t && (0, c.u1)() && (0, h.s)(e) ? (0, s.Z)(r) : t ? r() : (0, p.bO)({
           eventId: e.id
         })
       })(e),
-      onDismiss: _ ? () => {
+      onDismiss: O ? () => {
         var t;
         return t = e.id, void(0, m.Xy)(t)
       } : true,

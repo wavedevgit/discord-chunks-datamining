@@ -1,5 +1,5 @@
 /** Chunk was on 21112 **/
-/** chunk id: 301160, original params: e,i,t (module,exports,require) **/
+/** chunk id: 301160, original params: e,i,a (module,exports,require) **/
 require.d(exports, {
   EmojiAddModal: () => h
 }), require("./388685.js");
@@ -11,34 +11,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk570533 = require("./570533.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk929828 = require("./929828.js");
+  Chunk851120 = require("./851120.js");
 
 function j(e) {
   let {
     emoji: i,
-    onChange: t,
+    onChange: a,
     value: n
   } = e, o = r.ZP.getEmojiURL({
     id: i.id,
     animated: i.animated,
     size: 24
   });
-  return (0, a.jsx)(s.$q, {
+  return (0, t.jsx)(s.$q, {
     size: 20,
     className: c.emojiRow,
-    onChange: t,
+    onChange: a,
     type: s.M0.INVERTED,
     value: n,
     reverse: true,
-    children: (0, a.jsxs)("div", {
+    children: (0, t.jsxs)("div", {
       className: c.emojiLabel,
-      children: [(0, a.jsx)("img", {
+      children: [(0, t.jsx)("img", {
         className: c.emojiImage,
         src: o,
         width: 24,
         height: 24,
         alt: ""
-      }), (0, a.jsx)(l.Text, {
+      }), (0, t.jsx)(l.Text, {
         color: "header-primary",
         variant: "text-md/medium",
         className: c.emojiAlias,
@@ -51,13 +51,13 @@ function j(e) {
 function h(e) {
   let {
     guildId: i,
-    initialTierEmojiIds: t,
+    initialTierEmojiIds: a,
     onSubmit: s,
     transitionToManageEmoji: r,
     transitionState: h,
     onClose: u
   } = e, x = (0, m.Z)(i), [p, v] = n.useState(new Set), C = p.size > 0;
-  return (0, a.jsx)(o.Modal, {
+  return (0, t.jsx)(o.Modal, {
     transitionState: h,
     onClose: u,
     title: d.intl.string(d.t.xC6tUv),
@@ -75,22 +75,22 @@ function h(e) {
       },
       disabled: !C
     }],
-    children: (0, a.jsxs)(l.Kqy, {
+    children: (0, t.jsxs)(l.Kqy, {
       gap: "md",
-      children: [(0, a.jsx)(l.Text, {
+      children: [(0, t.jsx)(l.Text, {
         variant: "text-md/normal",
         children: d.intl.format(d.t["OnK+C1"], {
           transitionToManageEmoji: r
         })
-      }), null != x && x.length > 0 && (0, a.jsx)("div", {
+      }), null != x && x.length > 0 && (0, t.jsx)("div", {
         className: c.emojiContainer,
-        children: x.map(e => null != t && t.has(e.id) ? null : (0, a.jsx)(j, {
+        children: x.map(e => null != a && a.has(e.id) ? null : (0, t.jsx)(j, {
           emoji: e,
           onChange: () => {
             var i;
             return i = e.id, void v(e => {
-              let t = new Set(e);
-              return p.has(i) ? t.delete(i) : t.add(i), t
+              let a = new Set(e);
+              return p.has(i) ? a.delete(i) : a.add(i), a
             })
           },
           value: p.has(e.id)

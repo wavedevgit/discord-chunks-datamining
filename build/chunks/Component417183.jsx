@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk617015 = require("./617015.js"),
-  Chunk67165 = require("./67165.js");
+  Chunk702301 = require("./702301.js");
 
 function d(e, t, i) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,11 +59,12 @@ class O extends Chunk473749.PureComponent {
     })]).start(e)
   }
   componentWillEnter(e) {
+    var t;
     this.state.opacity.setValue(0), this.state.height.setValue(0), a.Z.parallel([a.Z.timing(this.state.opacity, {
       toValue: 1,
       duration: 200
     }), a.Z.timing(this.state.height, {
-      toValue: h.NV,
+      toValue: null != (t = this.props.height) ? t : h.NV,
       duration: 200
     })]).start(e)
   }
@@ -109,8 +110,9 @@ class O extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
+    var t;
     super(...e), d(this, "state", {
-      height: new a.Z.Value(h.NV),
+      height: new a.Z.Value(null != (t = this.props.height) ? t : h.NV),
       opacity: new a.Z.Value(1),
       hovered: false,
       isContextMenuActive: false
@@ -135,7 +137,7 @@ class O extends Chunk473749.PureComponent {
       }), (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([i.e("79695"), i.e("69220"), i.e("77635")]).then(i.bind(i, 881351));
+        } = await Promise.all([i.e("79695"), i.e("69220"), i.e("26465")]).then(i.bind(i, 881351));
         return i => (0, n.jsx)(e, N(m({}, i), {
           user: t
         }))

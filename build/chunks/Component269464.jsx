@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 269464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  O: () => h
+  O: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,17 +16,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk486324 = require("./486324.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk747530 = require("./747530.js");
+  Chunk676157 = require("./676157.js");
 
-function h(e) {
+function b(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(d.GuildFeatures.BANNER), b = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = h && n, {
+  } = e, b = t.features.has(d.GuildFeatures.BANNER), h = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = b && n, {
     analyticsLocations: j
-  } = (0, a.ZP)(), _ = i.useCallback((e, n) => {
+  } = (0, a.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
-  }, [j, t]), v = i.useCallback(e => {
+  }, [j, t]), O = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: j,
@@ -34,15 +34,15 @@ function h(e) {
       analyticsObject: d.qAy.UPLOAD_IMAGE,
       perks: (0, u.XO)()
     })
-  }, [j, t]), O = (0, r.jsx)(s.Z, {
+  }, [j, t]), C = (0, r.jsx)(s.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
       banner: e
-    }, b) : null,
+    }, h) : null,
     disabled: !x,
-    onChange: _,
-    hint: p.intl.string(p.t.uPvxqJ),
+    onChange: v,
+    hint: f.intl.string(f.t.uPvxqJ),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: g.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,
@@ -51,7 +51,7 @@ function h(e) {
           imageUri: t,
           file: n
         } = e;
-        return _(t, n)
+        return v(t, n)
       },
       analyticsLocation: {
         page: d.ZY5.GUILD_SETTINGS,
@@ -61,11 +61,11 @@ function h(e) {
     }),
     enabled: x
   });
-  return h ? O : (0, r.jsx)(l.P3F, {
+  return b ? C : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: f.upsell,
-    onClick: v,
-    children: O
+    className: p.upsell,
+    onClick: O,
+    children: C
   })
 }

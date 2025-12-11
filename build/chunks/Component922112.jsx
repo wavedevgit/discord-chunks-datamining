@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 922112, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,44 +17,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk8426 = require("./8426.js"),
   Chunk969632 = require("./969632.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
-let b = function(e) {
+  Chunk551952 = require("./551952.js");
+let h = function(e) {
   let {
     guildId: t,
     resourceChannel: l,
-    index: b,
+    index: h,
     onDragComplete: x,
     onDragStart: j,
-    onDragReset: _
+    onDragReset: v
   } = e, {
-    title: v,
-    channelId: O,
-    description: C
-  } = l, y = u.Z.getChannel(O), N = null;
-  null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8X));
-  let E = null == C || 0 === C.length,
-    I = g.ZP.getResourceChannelIconURL({
+    title: O,
+    channelId: C,
+    description: y
+  } = l, N = u.Z.getChannel(C), E = null;
+  null != N && (0, d.k3)(N) || (E = p.intl.string(p.t.kTdL8X));
+  let I = null == y || 0 === y.length,
+    S = g.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
     }),
     {
-      drag: S,
+      drag: _,
       dragSourcePosition: T,
       drop: P,
       setIsDraggable: w
     } = (0, c.Z)({
       type: "RESOURCE_CHANNEL",
       optionId: l.channelId,
-      index: b,
+      index: h,
       onDragStart: j,
       onDragComplete: x,
-      onDragReset: _
+      onDragReset: v
     }),
     Z = i.useCallback(e => {
       (0, m.XG)(l.channelId, e)
     }, [l.channelId]),
     R = i.useCallback((e, n) => {
-      let r = p.Z.getSettings();
+      let r = f.Z.getSettings();
       null != r && ((0, m.XG)(l.channelId, e), (0, m.oo)(t, r).then(() => {
         (0, m.mM)(t, e.channelId, n)
       }))
@@ -100,64 +100,64 @@ let b = function(e) {
         }), i))
       }
     }), [t, l, Z, R]);
-  return null == y ? null : (0, r.jsxs)("div", {
-    className: h.resourceChannelContainer,
+  return null == N ? null : (0, r.jsxs)("div", {
+    className: b.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
-      className: a()(h.resourceChannel, {
-        [h.dropIndicatorBefore]: null != T && b < T,
-        [h.dropIndicatorAfter]: null != T && b > T,
-        [h.resourceChannelError]: null != N
+      className: a()(b.resourceChannel, {
+        [b.dropIndicatorBefore]: null != T && h < T,
+        [b.dropIndicatorAfter]: null != T && h > T,
+        [b.resourceChannelError]: null != E
       }),
       ref: e => {
-        S(P(e))
+        _(P(e))
       },
       children: [(0, r.jsx)("div", {
-        className: h.dragContainer,
+        className: b.dragContainer,
         onMouseEnter: () => w(true),
         onMouseLeave: () => w(false),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: h.dragIcon
+          className: b.dragIcon
         })
-      }), null != I && (0, r.jsx)("div", {
-        className: h.iconWrapper,
+      }), null != S && (0, r.jsx)("div", {
+        className: b.iconWrapper,
         children: (0, r.jsx)("img", {
-          src: I,
-          className: h.icon,
+          src: S,
+          className: b.icon,
           width: 32,
           height: 32,
           alt: "",
           "aria-hidden": true
         })
       }), (0, r.jsxs)("div", {
-        className: h.resourceChannelContent,
+        className: b.resourceChannelContent,
         children: [(0, r.jsx)(o.Text, {
-          className: h.resourceChannelTitle,
+          className: b.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: v
-        }), !E && (0, r.jsx)(o.Text, {
-          className: h.resourceChannelDescription,
+          children: O
+        }), !I && (0, r.jsx)(o.Text, {
+          className: b.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: C
+          children: y
         })]
       }), (0, r.jsx)(s.u, {
-        text: f.intl.string(f.t.bt75uw),
+        text: p.intl.string(p.t.bt75uw),
         children: (0, r.jsx)(o.hU, {
           icon: o.vdY,
           size: "sm",
           variant: "primary",
           onClick: D,
-          "aria-label": f.intl.string(f.t.bt75uw)
+          "aria-label": p.intl.string(p.t.bt75uw)
         })
       })]
-    }), null != N && (0, r.jsx)(o.Text, {
+    }), null != E && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: N
+      children: E
     })]
   })
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 743676, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var r, Chunk877921 = require("./877921.js"),
   l = require.n(Chunk877921),
@@ -56,7 +56,7 @@ function m(e) {
   } = e;
   u = t.code
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk442837.ZP.Store) {
   getOverviewAnalytics(e) {
     return d[e]
   }
@@ -64,8 +64,8 @@ class p extends(r = Chunk442837.ZP.Store) {
     return u
   }
 }
-o(p, "displayName", "GuildSettingsAnalyticsStore");
-let f = new p(Chunk570140.Z, {
+o(f, "displayName", "GuildSettingsAnalyticsStore");
+let p = new f(Chunk570140.Z, {
   GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW_FETCH_SUCCESS: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW_FETCH_SUCCESS: g,
   GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION_FETCH_SUCCESS: g,

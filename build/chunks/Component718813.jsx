@@ -21,7 +21,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk256076 = require("./256076.js");
+  Chunk388596 = require("./388596.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ let T = (0, Chunk663993.Un)({
     name: "ComponentPlayground"
   }),
   j = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("86736"), require.e("86915")]).then(require.bind(require, 869779)),
+    createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("9414"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
@@ -78,7 +78,7 @@ let T = (0, Chunk663993.Un)({
     name: "CollectiblesShop"
   }),
   x = (0, Chunk663993.Un)({
-    createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("86736"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("384"), require.e("95140")]).then(require.bind(require, 994763)),
+    createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("9414"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("9536"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
@@ -216,9 +216,9 @@ class D extends(r = Chunk473749.PureComponent) {
         }
       }(require) : true,
       role: Chunk134616 ? "dialog" : true,
-      className: s()(Chunk256076.layer, {
-        [Chunk256076.baseLayer]: Chunk120356,
-        [Chunk256076.animating]: module,
+      className: s()(Chunk388596.layer, {
+        [Chunk388596.baseLayer]: Chunk120356,
+        [Chunk388596.animating]: module,
         "stop-animations": r === w
       }),
       style: Chunk37234
@@ -304,7 +304,7 @@ class M extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [this.renderArtisanalHack(), (0, Chunk54381.jsx)(Chunk215569.W, {
         component: "div",
-        className: s()(Chunk256076.layers, this.props.className),
+        className: s()(Chunk388596.layers, this.props.className),
         children: this.renderLayers()
       })]
     })
@@ -312,8 +312,8 @@ class M extends Chunk473749.PureComponent {
 }
 
 function k(e) {
-  let t = (0, _.Ll)(),
-    n = (0, c.e7)([b.Z], () => b.Z.getLayers()),
+  let t = (0, b.Ll)(),
+    n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
     r = (0, m.QP)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
   return (0, i.jsx)(M, S(C({}, e), {
     sidebarTheme: t,

@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215113 = require("./215113.jsx"),
   Chunk684245 = require("./684245.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk273339 = require("./273339.js");
+  Chunk209668 = require("./209668.js");
 
 function h() {
   let {
@@ -38,19 +38,19 @@ function h() {
     text: Chunk388032.intl.string(Chunk388032.t.EuHF34),
     children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: () => _(Chunk49436.jn.VIDEO_MODAL, Chunk617136.jZ.OPEN_GAME_LINK),
-      className: Chunk273339.adInfoClickable,
+      className: Chunk209668.adInfoClickable,
       children: (0, Chunk54381.jsxs)("div", {
-        className: i()(Chunk273339.contentHeaderGameInfo, Chunk273339.contentHeaderGameInfoHoverable, {
-          [Chunk273339.contentHeaderGameInfoHoverableExpired]: b
+        className: i()(Chunk209668.contentHeaderGameInfo, Chunk209668.contentHeaderGameInfoHoverable, {
+          [Chunk209668.contentHeaderGameInfoHoverableExpired]: b
         }),
         ref: S,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk273339.contentFooterAdDetailedInfo,
+          className: Chunk209668.contentFooterAdDetailedInfo,
           children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-md/medium",
             color: "header-primary",
-            className: i()(Chunk273339.adDetailsTextSecondary, {
-              [Chunk273339.adDetailsTextSecondaryPortrait]: require
+            className: i()(Chunk209668.adDetailsTextSecondary, {
+              [Chunk209668.adDetailsTextSecondaryPortrait]: require
             }),
             lineClamp: require ? true : 1,
             children: Chunk388032.intl.format(Chunk388032.t.EQa7os, {
@@ -58,13 +58,13 @@ function h() {
             })
           })
         }), (0, Chunk54381.jsxs)("div", {
-          className: i()(Chunk273339.contentFooterAdDetailedInfo, {
-            [Chunk273339.contentFooterAdDetailedInfoPortrait]: require
+          className: i()(Chunk209668.contentFooterAdDetailedInfo, {
+            [Chunk209668.contentFooterAdDetailedInfoPortrait]: require
           }),
           children: [(0, Chunk54381.jsx)("div", {
-            className: i()(Chunk273339.adDetailsTextPrimary, {
-              [Chunk273339.adDetailsTextPrimaryPortrait]: require,
-              [Chunk273339.addFourPxMarginRight]: require
+            className: i()(Chunk209668.adDetailsTextPrimary, {
+              [Chunk209668.adDetailsTextPrimaryPortrait]: require,
+              [Chunk209668.addFourPxMarginRight]: require
             }),
             children: (0, Chunk54381.jsx)(Chunk481060.owK, {
               size: "xs",
@@ -72,9 +72,9 @@ function h() {
             })
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",
-            className: i()(Chunk273339.adDetailsTextPrimary, {
-              [Chunk273339.adDetailsTextPrimaryPortrait]: require,
-              [Chunk273339.addFourPxMarginRight]: require
+            className: i()(Chunk209668.adDetailsTextPrimary, {
+              [Chunk209668.adDetailsTextPrimaryPortrait]: require,
+              [Chunk209668.addFourPxMarginRight]: require
             }),
             color: C ? "text-strong" : "text-subtle",
             lineClamp: 1,
@@ -82,12 +82,12 @@ function h() {
           }), x ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
             children: [(0, Chunk54381.jsx)("div", {
               "aria-hidden": "true",
-              className: i()(Chunk273339.dotSpacer, {
-                [Chunk273339.dotSpacerPortrait]: require
+              className: i()(Chunk209668.dotSpacer, {
+                [Chunk209668.dotSpacerPortrait]: require
               })
             }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
-              className: i()(Chunk273339.adDetailsTextSecondary, {
-                [Chunk273339.adDetailsTextSecondaryPortrait]: require
+              className: i()(Chunk209668.adDetailsTextSecondary, {
+                [Chunk209668.adDetailsTextSecondaryPortrait]: require
               }),
               variant: "heading-sm/medium",
               lineClamp: require ? true : 1,

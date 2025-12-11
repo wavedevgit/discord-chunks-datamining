@@ -1,7 +1,7 @@
-/** Chunk was on 86111 **/
+/** Chunk was on 8087 **/
 /** chunk id: 539598, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,28 +12,28 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk200615 = require("./200615.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk58174 = require("./58174.js");
+  Chunk887704 = require("./887704.js");
 
-function m(e) {
+function f(e) {
   let {
     product: t
   } = e, n = (0, o.ql)(t, c.tuJ.PREMIUM_TIER_2);
   if (null == n) return null;
-  let m = (0, a.qr)(n.amount, n.currency);
+  let f = (0, l.qr)(n.amount, n.currency);
   return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)(i.u, {
       text: u.intl.string(u.t.MPFyJ5),
       "aria-label": u.intl.string(u.t.X3Ekj8),
-      children: (0, r.jsx)(l.SrA, {
+      children: (0, r.jsx)(a.SrA, {
         size: "md",
         color: "currentColor",
         className: d.nitroIcon
       })
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
       children: u.intl.format(u.t.Sv8iic, {
-        price: m,
+        price: f,
         subscribeNowHook: e => (0, r.jsx)(s.F, {
           text: e
         })

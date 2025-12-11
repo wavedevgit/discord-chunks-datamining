@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 295051, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   hH: () => m,
-  xl: () => p,
+  xl: () => f,
   zA: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk821458 = require("./821458.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
-  Chunk829930 = require("./829930.js");
+  Chunk736303 = require("./736303.js");
 
 function u(e) {
   let {
@@ -25,7 +25,7 @@ function u(e) {
     targetPremiumGuildTier: g
   } = e, {
     analyticsLocations: m
-  } = (0, l.ZP)(), p = i.useCallback(e => {
+  } = (0, l.ZP)(), f = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, s.E6)({
       guild: t,
       analyticsLocations: m,
@@ -39,7 +39,7 @@ function u(e) {
     guild: t,
     guildFeature: n,
     className: d.guildFeatureAvailabilityIndicator,
-    onClick: p
+    onClick: f
   })
 }
 
@@ -69,7 +69,7 @@ function m(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     guild: t
   } = e;

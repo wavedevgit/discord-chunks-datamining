@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 575258, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 }), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -27,7 +27,7 @@ let c = {
   g = false,
   m = c;
 
-function p(e) {
+function f(e) {
   let {
     welcomeScreen: t,
     guildId: n
@@ -42,7 +42,7 @@ function p(e) {
   } else m = d = c;
   g = false
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class p extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z)
   }
@@ -61,10 +61,10 @@ class f extends(r = Chunk442837.ZP.Store) {
     }
   }
 }
-o(f, "displayName", "WelcomeScreenSettingsStore");
-let h = new f(Chunk570140.Z, {
-  WELCOME_SCREEN_FETCH_SUCCESS: p,
-  WELCOME_SCREEN_UPDATE: p,
+o(p, "displayName", "WelcomeScreenSettingsStore");
+let b = new p(Chunk570140.Z, {
+  WELCOME_SCREEN_FETCH_SUCCESS: f,
+  WELCOME_SCREEN_UPDATE: f,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
     m = d, g = false
   },
@@ -92,7 +92,7 @@ let h = new f(Chunk570140.Z, {
     u = true
   },
   WELCOME_SCREEN_SUBMIT_SUCCESS: function(e) {
-    p(e), u = false
+    f(e), u = false
   },
   WELCOME_SCREEN_SUBMIT_FAILURE: function() {
     g = true, u = false

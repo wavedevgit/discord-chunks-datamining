@@ -1,0 +1,3 @@
+/** Chunk was on 52634 **/
+/** chunk id: 268703, original params: s (module,exports,require) **/
+module.exports = JSON.parse('{"kxF9br":["SDK 通过 RPC 关联"],"8a7IrV":["已注册关联入口 URL"],"9iLeL2":["已将 URL 配置为 ",[1,"url"]],"AGLx00":["已关联的游戏流程："],"w0pN4R":["链接账号"],"yKwZc2":["管理账号关联"],"aTULMB":["未检测到认证回调。如果您已调用该函数但仍然看到此情况，请检查日志以获取详细信息"],"eg0mNa":["无法关联，因为没有可用的有效关联流程"],"OEkrCx":["此流程将被使用"],"no+FQS":["将使用第一个可用的关联流程，从顶部开始"],"PFxxJa":["如果您的游戏正在运行，且无法关联到 Discord，请尝试查看您游戏的日志以进行调试"],"S94dzs":["RegisterAuthorizeRequestCallback 已调用并正常运行"],"vR0zs6":["账号关联"],"KoK4J9":["开发工具：",[1,"appName"]],"tkIymA":["解除关联"],"K3ObrU":["网页流程："]}')

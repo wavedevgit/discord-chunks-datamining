@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk712243 = require("./712243.js");
+  Chunk16583 = require("./16583.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -105,34 +105,34 @@ let A = e => {
     })
   },
   N = () => (0, Chunk54381.jsxs)("div", {
-    className: Chunk712243.emptyState,
+    className: Chunk16583.emptyState,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk712243.iconContainer,
+      className: Chunk16583.iconContainer,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk712243.iconBackground,
+        className: Chunk16583.iconBackground,
         children: (0, Chunk54381.jsx)(Chunk481060.rm8, {
           size: "md",
           color: "currentColor",
-          className: Chunk712243.icon
+          className: Chunk16583.icon
         })
       }), (0, Chunk54381.jsx)(Chunk499033.Z, {
-        className: Chunk712243.stars
+        className: Chunk16583.stars
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/bold",
-      className: Chunk712243.emptyStateText,
+      className: Chunk16583.emptyStateText,
       children: Chunk388032.intl.string(Chunk388032.t.reLFaV)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      className: Chunk712243.emptyStateSubtext,
+      className: Chunk16583.emptyStateSubtext,
       children: Chunk388032.intl.string(Chunk388032.t.ERdH1o)
     })]
   }),
   P = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk712243.emptyState,
+    className: Chunk16583.emptyState,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      className: Chunk712243.emptyStateSubtext,
+      className: Chunk16583.emptyStateSubtext,
       children: Chunk388032.intl.string(Chunk388032.t.RV3AXf)
     })
   }),
@@ -148,7 +148,7 @@ let A = e => {
   },
   w = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-xs/bold",
-    className: Chunk712243.newBadge,
+    className: Chunk16583.newBadge,
     children: Chunk388032.intl.string(Chunk388032.t.QKMRC4)
   }),
   D = e => {

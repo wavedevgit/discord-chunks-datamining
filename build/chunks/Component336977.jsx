@@ -1,7 +1,7 @@
 /** Chunk was on 76815 **/
-/** chunk id: 336977, original params: t,n,e (module,exports,require) **/
+/** chunk id: 336977, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,37 +17,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk407383 = require("./407383.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk360649 = require("./360649.js"),
+  Chunk40162 = require("./40162.js"),
   Chunk617921 = require("./617921.js");
 
 function g(t) {
   let {
-    onClose: n,
-    source: e = p.I.INAPPROPRIATE_CONVERSATION,
+    onClose: e,
+    source: n = p.I.INAPPROPRIATE_CONVERSATION,
     transitionState: r
-  } = t, o = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [c, I] = a.useState(o), x = a.useRef(null), g = a.useRef(null);
-  async function m() {
-    await n()
+  } = t, o = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [c, I] = i.useState(o), x = i.useRef(null), g = i.useRef(null);
+  async function b() {
+    await e()
   }
-  return a.useEffect(() => {
+  return i.useEffect(() => {
     let t = new Date;
     return d.default.track(N.rMx.VIBING_WUMPUS_VIEWED, {
-      source: e
+      source: n
     }), o || (0, _.JO)(), () => {
       d.default.track(N.rMx.VIBING_WUMPUS_CLOSED, {
         duration_open_ms: new Date().getTime() - t.getTime(),
-        source: e
+        source: n
       }), (0, _.zu)()
     }
-  }, [e]), (0, i.jsxs)("div", {
+  }, [n]), (0, a.jsxs)("div", {
     className: C.riveContainer,
-    children: [(0, i.jsx)(l.b_m, {
+    children: [(0, a.jsx)(l.b_m, {
       withReducedMotion: "halt",
       listenOnDocumentBody: true,
       artboard: "Background",
       ref: g,
       className: C.backgroundRive
-    }), (0, i.jsx)(l.Ioy, {
+    }), (0, a.jsx)(l.Ioy, {
       graphic: {
         rive: l.glG,
         type: "rive",
@@ -62,7 +62,7 @@ function g(t) {
       actions: [{
         text: f.intl.string(f.t["8eKkaf"]),
         onClick: () => {
-          n(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
+          e(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
             action: p.G.BACK_TO_CONVERSATION
           })
         },
@@ -70,33 +70,33 @@ function g(t) {
       }, {
         text: f.intl.string(c ? f.t.RscU7I : f.t.ZcgDJX),
         onClick: () => {
-          var t, n, e, i;
+          var t, e, n, a;
           c ? ((0, _.JO)(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
             action: p.G.PLAY
-          }), null == (t = x.current) || t.play(), null == (n = g.current) || n.play()) : ((0, _.hW)(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
+          }), null == (t = x.current) || t.play(), null == (e = g.current) || e.play()) : ((0, _.hW)(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
             action: p.G.PAUSE
-          }), null == (e = x.current) || e.pause(), null == (i = g.current) || i.pause()), I(!c)
+          }), null == (n = x.current) || n.pause(), null == (a = g.current) || a.pause()), I(!c)
         },
         icon: c ? l.o1U : l.fpf
       }],
-      onClose: m,
+      onClose: b,
       transitionState: r
     })]
   })
 }
 
-function m(t) {
+function b(t) {
   let {
-    onClose: n,
+    onClose: e,
     source: r = p.I.INAPPROPRIATE_CONVERSATION
-  } = t, I = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [g, m] = a.useState(false);
-  async function A() {
+  } = t, I = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [g, b] = i.useState(false);
+  async function m() {
     let {
       default: t
-    } = await e.e("29641").then(e.t.bind(e, 937359, 19));
+    } = await n.e("29641").then(n.t.bind(n, 937359, 19));
     return t
   }
-  return a.useEffect(() => {
+  return i.useEffect(() => {
     let t = new Date;
     return d.default.track(N.rMx.VIBING_WUMPUS_VIEWED, {
       source: r
@@ -106,66 +106,66 @@ function m(t) {
         source: r
       }), (0, _.zu)()
     }
-  }, [r]), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)("div", {
+  }, [r]), (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsx)("div", {
       className: C.ringContainer,
-      children: (0, i.jsx)("img", {
+      children: (0, a.jsx)("img", {
         src: x,
         alt: ""
       })
-    }), (0, i.jsx)(l.Fmz, {
-      importData: A,
+    }), (0, a.jsx)(l.Fmz, {
+      importData: m,
       shouldAnimate: !g && !I,
       className: C.wumpus,
       pauseAtFrame: I ? 200 : true
-    }), (0, i.jsx)(c.u, {
+    }), (0, a.jsx)(c.u, {
       text: g ? f.intl.string(f.t.RscU7I) : f.intl.string(f.t.ZcgDJX),
       position: "top",
       "aria-label": g ? f.intl.string(f.t.RscU7I) : f.intl.string(f.t.ZcgDJX),
-      children: (0, i.jsx)(l.P3F, {
+      children: (0, a.jsx)(l.P3F, {
         onClick: () => {
           g ? ((0, _.JO)(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
             action: p.G.PLAY
           })) : ((0, _.hW)(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
             action: p.G.PAUSE
-          })), m(!g)
+          })), b(!g)
         },
         className: o()(C.iconButton, C.absolute),
-        children: g ? (0, i.jsx)(l.o1U, {
+        children: g ? (0, a.jsx)(l.o1U, {
           size: "xs",
           color: "currentColor",
           className: C.icon
-        }) : (0, i.jsx)(l.fpf, {
+        }) : (0, a.jsx)(l.fpf, {
           size: "xs",
           color: "currentColor",
           className: C.icon
         })
       })
-    }), (0, i.jsx)(l.hzk, {
+    }), (0, a.jsx)(l.hzk, {
       "data-migration-pending": true,
       className: C.body,
-      children: (0, i.jsxs)("div", {
+      children: (0, a.jsxs)("div", {
         className: C.textContainer,
-        children: [(0, i.jsx)(l.Heading, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
           color: "header-primary",
           children: f.intl.string(f.t.L4ifkZ)
-        }), (0, i.jsx)(l.Text, {
+        }), (0, a.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-default",
           children: f.intl.string(f.t.R8LCMZ)
         })]
       })
-    }), (0, i.jsx)(l.mzw, {
+    }), (0, a.jsx)(l.mzw, {
       "data-migration-pending": true,
-      children: (0, i.jsx)("div", {
+      children: (0, a.jsx)("div", {
         className: C.buttonContainer,
-        children: (0, i.jsx)(l.Button, {
+        children: (0, a.jsx)(l.Button, {
           variant: "primary",
           text: f.intl.string(f.t["8eKkaf"]),
           fullWidth: true,
           onClick: () => {
-            n(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
+            e(), d.default.track(N.rMx.VIBING_WUMPUS_ACTION, {
               action: p.G.BACK_TO_CONVERSATION
             })
           }
@@ -174,21 +174,21 @@ function m(t) {
     })]
   })
 }
-let A = t => {
+let m = t => {
   let {
-    onClose: n,
-    transitionState: e
+    onClose: e,
+    transitionState: n
   } = t;
-  return (0, I.J)("inappropriate_conversation_web") ? (0, i.jsx)(g, {
-    onClose: n,
-    transitionState: e
-  }) : (0, i.jsx)(l.Y0X, {
+  return (0, I.J)("inappropriate_conversation_web") ? (0, a.jsx)(g, {
+    onClose: e,
+    transitionState: n
+  }) : (0, a.jsx)(l.Y0X, {
     "data-migration-pending": true,
-    transitionState: e,
+    transitionState: n,
     parentComponent: "VibingWumpusModal",
-    children: (0, i.jsx)(m, {
-      onClose: n,
-      transitionState: e
+    children: (0, a.jsx)(b, {
+      onClose: e,
+      transitionState: n
     })
   })
 }

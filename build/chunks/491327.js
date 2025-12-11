@@ -43,7 +43,7 @@ let y = {
           errorCode: v.lTL.INVALID_PERMISSIONS
         }, "Invalid scope")
       }
-      return (0, _.T5)(r, (0, _.zM)(r, n.application.id, n.authorization.scopes))
+      return (0, b.T5)(r, (0, b.zM)(r, n.application.id, n.authorization.scopes))
     }
   },
   [Chunk981631.Etm.GET_CHANNELS]: {
@@ -98,7 +98,7 @@ let y = {
   },
   [Chunk981631.Etm.SELECT_VOICE_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, b.Z)(e).required().keys({
+    validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60),
       force: e.boolean(),
@@ -116,8 +116,8 @@ let y = {
         }
       } = e;
       if (!r) return s.default.selectVoiceChannel(null), null;
-      let b = f.Z.getVoiceChannelId();
-      if (null != b && b !== r && false === l) throw new m.Z({
+      let _ = f.Z.getVoiceChannelId();
+      if (null != _ && _ !== r && false === l) throw new m.Z({
         errorCode: v.lTL.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
@@ -131,7 +131,7 @@ let y = {
         if (!(0, c.vd)(e.type)) throw new m.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "Channel is not a voice channel");
-        return Promise.all([Promise.resolve(e), (0, _.T5)(e, (0, _.zM)(e, n.application.id, n.authorization.scopes))])
+        return Promise.all([Promise.resolve(e), (0, b.T5)(e, (0, b.zM)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id) {
@@ -154,12 +154,12 @@ let y = {
       let {
         socket: t
       } = e, n = f.Z.getVoiceChannelId(), r = null != n ? u.Z.getChannel(n) : null;
-      return null != r ? (0, _.T5)(r, (0, _.zM)(r, t.application.id, t.authorization.scopes)) : null
+      return null != r ? (0, b.T5)(r, (0, b.zM)(r, t.application.id, t.authorization.scopes)) : null
     }
   },
   [Chunk981631.Etm.SELECT_TEXT_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, b.Z)(e).required().keys({
+    validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60)
     }),
@@ -183,7 +183,7 @@ let y = {
         if (!(0, c.Qm)(e.type)) throw new m.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "Channel is not a text channel");
-        return Promise.all([Promise.resolve(e), (0, _.T5)(e, (0, _.zM)(e, n.application.id, n.authorization.scopes))])
+        return Promise.all([Promise.resolve(e), (0, b.T5)(e, (0, b.zM)(e, n.application.id, n.authorization.scopes))])
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id && !p.Z.can(v.Plq.VIEW_CHANNEL, t)) throw new m.Z({

@@ -1,4 +1,4 @@
-/** Chunk was on 70522 **/
+/** Chunk was on 95528 **/
 /** chunk id: 354589, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
   default: () => L
@@ -49,8 +49,8 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var n;
   let {
     user: r,
-    channel: l,
-    context: a,
+    channel: a,
+    context: c,
     showChatItems: u = true,
     showMediaItems: F = false,
     showChannelCallItems: L = false,
@@ -61,51 +61,51 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   } = e, H = (0, W.Z)({
     userId: r.id,
     guildId: null
-  }), J = (0, T.Z)(r, null, a), V = (0, i.e7)([_.Z, j.Z], () => {
-    let e = _.Z.getVoiceChannelId();
+  }), J = (0, T.Z)(r, null, c), V = (0, i.e7)([v.Z, j.Z], () => {
+    let e = v.Z.getVoiceChannelId();
     return j.Z.getChannel(e)
   }), {
     enabled: K
   } = x.Z.useExperiment({
     guildId: null == V ? true : V.guild_id,
     location: "GroupDMUserContextMenu"
-  }), $ = K ? null == V ? true : V.id : l.id, ee = (0, Q.Z)(r, $), en = (0, M.Z)(r.id, a), er = (0, P.Z)({
+  }), $ = K ? null == V ? true : V.id : a.id, ee = (0, Q.Z)(r, $), en = (0, M.Z)(r.id, c), er = (0, P.Z)({
     user: r,
-    context: a
+    context: c
   }), et = (0, C.Z)({
     user: r,
-    channelId: l.id,
-    context: a
-  }), ei = (0, O.Z)({
+    channelId: a.id,
+    context: c
+  }), ei = (0, _.Z)({
     user: r
-  }), eo = (0, A.Z)(r.id), es = (0, D.Z)(r.id, l.id), el = (0, R.Z)(r.id), ea = (0, g.B)({
+  }), eo = (0, A.Z)(r.id), es = (0, D.Z)(r.id, a.id), ea = (0, R.Z)(r.id), ec = (0, h.B)({
     userId: r.id,
-    channelId: l.id,
-    guildId: l.getGuildId()
-  }), ed = (0, E.Z)(r.id, l.id), ec = (0, S.Z)({
+    channelId: a.id,
+    guildId: a.getGuildId()
+  }), ed = (0, E.Z)(r.id, a.id), el = (0, S.Z)({
     user: r
-  }), eu = (0, c.Z)(null, r), em = (0, v.Z)({
+  }), eu = (0, l.Z)(null, r), em = (0, O.Z)({
     user: r
-  }), ep = (0, I.Z)({
+  }), ef = (0, I.Z)({
     user: r
-  }), eh = (0, U.Z)({
+  }), eb = (0, U.Z)({
     user: r
-  }), eb = (0, y.Z)({
+  }), ep = (0, y.Z)({
     user: r,
     location: "GroupDMUserContextMenu"
-  }), eg = (0, N.Z)({
+  }), eh = (0, N.Z)({
     user: r,
     location: "GroupDMUserContextMenu"
-  }), ef = (0, f.Z)({
+  }), eg = (0, g.Z)({
     id: r.id,
     label: G.intl.string(G.t["/AXYnE"])
-  }), eZ = (0, z.Z)(r.id), ex = (0, h.Z)(r.id), ej = (0, p.Z)(l.id), e_ = (0, Z.Z)(r), ev = (0, b.Z)(r.id), eO = (0, m.Z)(l.id, r.id), eI = (0, w.Z)({
+  }), eZ = (0, z.Z)(r.id), ex = (0, b.Z)(r.id), ej = (0, f.Z)(a.id), ev = (0, Z.Z)(r), eO = (0, p.Z)(r.id), e_ = (0, m.Z)(a.id, r.id), eI = (0, w.Z)({
     commandType: d.yU.USER,
     commandTargetId: r.id,
-    channel: l,
+    channel: a,
     guildId: true,
     onHeightUpdate: X
-  }), eC = (0, k.Z)(r, l), ew = r.isNonUserBot(), ey = l.isManaged(), eP = null == (n = l.recipients) ? true : n.includes(r.id);
+  }), eC = (0, k.Z)(r, a), ew = r.isNonUserBot(), ey = a.isManaged(), eP = null == (n = a.recipients) ? true : n.includes(r.id);
   return (0, t.jsxs)(o.v2r, {
     navId: "user-context",
     onClose: s.Zy,
@@ -114,7 +114,7 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onInteraction: Y,
     children: [!ew && (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsx)(o.kSQ, {
-        children: e_
+        children: ev
       }), (0, t.jsxs)(o.kSQ, {
         children: [q && H, u && J, en, er, !ey && ee, q && et, q && ei, eZ]
       }), F && (0, t.jsx)(o.kSQ, {
@@ -124,12 +124,12 @@ let L = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
       }), (0, t.jsx)(o.kSQ, {
         children: q && eu
       }), (0, t.jsxs)(o.kSQ, {
-        children: [F && el, F && ea, F && ed, eI, q && ec, em, ep, eh, q && eg, q && eb, F && ev]
+        children: [F && ea, F && ec, F && ed, eI, q && el, em, ef, eb, q && eh, q && ep, F && eO]
       }), L && (0, t.jsxs)(o.kSQ, {
-        children: [eO, ej, ex]
+        children: [e_, ej, ex]
       })]
     }), (0, t.jsx)(o.kSQ, {
-      children: ef
+      children: eg
     })]
   })
 }, {

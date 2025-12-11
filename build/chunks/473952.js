@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 473952, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -14,11 +14,11 @@ var Chunk473749 = require("./473749.js"),
 function u(e, t) {
   var n;
   let u = (0, i.e7)([l.Z], () => l.Z.getGuild(e)),
-    d = (0, i.e7)([a.Z], () => a.Z.getStateForGuild(e)),
+    d = (0, i.e7)([o.Z], () => o.Z.getStateForGuild(e)),
     {
       spent: f
     } = (0, s.Z)(e),
-    p = r.useMemo(() => {
+    h = r.useMemo(() => {
       if (null == t || t.type !== c.Us.LEVEL || null == d) return [];
       let e = c.T1[t.skuId];
       return null == e ? [] : Object.entries(c.Rx).filter(t => {
@@ -27,8 +27,8 @@ function u(e, t) {
       }).map(e => {
         let [t] = e;
         return d.allPowerups[t]
-      }).filter(o.lm)
+      }).filter(a.lm)
     }, [t, d]),
-    h = null == p ? true : p.reduce((e, t) => e + t.cost, 0);
-  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - f + (null != h ? h : 0), 0)
+    p = null == h ? true : h.reduce((e, t) => e + t.cost, 0);
+  return Math.max((null != (n = null == u ? true : u.premiumSubscriberCount) ? n : 0) - f + (null != p ? p : 0), 0)
 }

@@ -11,7 +11,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk540026 = require("./540026.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk717255 = require("./717255.js");
+  Chunk397813 = require("./397813.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ class _ extends(r = Chunk473749.PureComponent) {
       dragging: O
     } = this.state, v = Chunk481060.gj8;
     return f || h === _ ? v = Chunk481060.OyP : h < m / 2 && (v = Chunk481060.X2j), (0, Chunk54381.jsxs)("div", {
-      className: s()(require, Chunk717255.container),
+      className: s()(require, Chunk397813.container),
       onMouseEnter: () => {
         clearTimeout(this._hoverTimeout), this.setState({
           hovered: true
@@ -75,8 +75,8 @@ class _ extends(r = Chunk473749.PureComponent) {
       }),
       onKeyDown: this.handleKeyDown,
       children: [(0, Chunk54381.jsx)("div", {
-        className: s()(Chunk717255.volumeButtonSlider, r, {
-          [Chunk717255.sliderVisible]: b || y || O
+        className: s()(Chunk397813.volumeButtonSlider, r, {
+          [Chunk397813.sliderVisible]: b || y || O
         }),
         onMouseEnter: () => {
           clearTimeout(this._hoverTimeout), this.setState({
@@ -99,7 +99,7 @@ class _ extends(r = Chunk473749.PureComponent) {
           ref: this._mediaBar
         })
       }), (0, Chunk54381.jsx)(Chunk481060.P3F, {
-        className: Chunk717255.volumeButton,
+        className: Chunk397813.volumeButton,
         "aria-label": Chunk388032.intl.string(Chunk388032.t["19lt24"]),
         onClick: this.handleToggleMute,
         children: (0, Chunk54381.jsx)(v, {

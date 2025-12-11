@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 278646, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
@@ -8,18 +8,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk262212 = require("./262212.jsx"),
   Chunk795338 = require("./795338.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk5238 = require("./5238.js"),
+  Chunk44542 = require("./44542.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk477487 = require("./477487.js");
+  Chunk694253 = require("./694253.js");
 
 function d(e, t) {
   if (null == t) return;
-  let d = a.uc.has(t.skuId);
+  let d = o.uc.has(t.skuId);
   (0, i.ZDy)(async () => {
     let {
-      default: a
+      default: o
     } = await n.e("13965").then(n.bind(n, 666083));
-    return n => (0, r.jsx)(a, function(e) {
+    return n => (0, r.jsx)(o, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -43,7 +43,7 @@ function d(e, t) {
       description: c.intl.formatToPlainString(s.default.y3wHot, {
         perkName: t.title
       }),
-      image: (0, r.jsx)(o.m, {
+      image: (0, r.jsx)(a.m, {
         className: u.image,
         powerup: t
       }),

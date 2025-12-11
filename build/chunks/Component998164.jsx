@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 998164, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk969632 = require("./969632.js"),
   Chunk430677 = require("./430677.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
+  Chunk551952 = require("./551952.js");
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,15 +47,15 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = [];
+let b = [];
 
-function b() {
+function h() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk197530.actionItemContainer,
+    className: Chunk551952.actionItemContainer,
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk197530.actionItem,
+      className: Chunk551952.actionItem,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk197530.actionItemEmojiWrapper,
+        className: Chunk551952.actionItemEmojiWrapper,
         children: (0, Chunk54381.jsx)(Chunk481060.snC, {
           size: "custom",
           color: "currentColor",
@@ -63,7 +63,7 @@ function b() {
           width: 22
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk197530.actionItemText,
+        className: Chunk551952.actionItemText,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
@@ -82,8 +82,8 @@ function x(e) {
     if (null != t) return (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7590"), n.e("83975")]).then(n.bind(n, 380716));
-      return n => (0, r.jsx)(e, f(p({}, n), {
+      } = await Promise.all([n.e("7590"), n.e("88575")]).then(n.bind(n, 380716));
+      return n => (0, r.jsx)(e, p(f({}, n), {
         guildId: t,
         onSave: l
       }))
@@ -107,7 +107,7 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, l.Wu)([d.Z], () => {
     var e;
-    return null != (e = d.Z.getSettings().newMemberActions) ? e : h
+    return null != (e = d.Z.getSettings().newMemberActions) ? e : b
   }), a = i.useCallback((e, n) => {
     (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
   }, [t]), g = i.useCallback((e, r, i, l) => {
@@ -118,15 +118,15 @@ let j = function(e) {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;
     null != r && (0, c.Hr)(r)
-  }, [n]), _ = n.map(e => f(p({}, e), {
+  }, [n]), v = n.map(e => p(f({}, e), {
     id: e.channelId
-  })), v = i.useCallback(e => {
+  })), O = i.useCallback(e => {
     (0, c.hS)(e)
   }, []), {
-    handleDragStart: O,
-    handleDragReset: C,
-    handleDragComplete: y
-  } = (0, s.Z)(_, v);
+    handleDragStart: C,
+    handleDragReset: y,
+    handleDragComplete: N
+  } = (0, s.Z)(v, O);
   return (0, r.jsxs)("div", {
     className: m.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
@@ -135,10 +135,10 @@ let j = function(e) {
       actionIndex: n,
       onChange: g,
       onDelete: j,
-      onDragStart: O,
-      onDragReset: C,
-      onDragComplete: y
-    }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
+      onDragStart: C,
+      onDragReset: y,
+      onDragComplete: N
+    }, e.channelId)), (0, r.jsx)(h, {}), n.length < o.O9 && (0, r.jsx)(x, {
       guildId: t,
       onAddAction: a
     })]

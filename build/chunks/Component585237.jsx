@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk806844 = require("./806844.js");
+  Chunk938532 = require("./938532.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,9 +71,9 @@ var _ = function(e) {
   return e.SMALL = "SMALL", e.MEDIUM = "MEDIUM", e.LARGE = "LARGE", e
 }(_ || {});
 let m = {
-    SMALL: Chunk806844.dropdownSmall,
-    MEDIUM: Chunk806844.dropdownMedium,
-    LARGE: Chunk806844.dropdownLarge
+    SMALL: Chunk938532.dropdownSmall,
+    MEDIUM: Chunk938532.dropdownMedium,
+    LARGE: Chunk938532.dropdownLarge
   },
   h = e => {
     var {

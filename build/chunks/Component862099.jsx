@@ -42,7 +42,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk507795 = require("./507795.js");
+  Chunk439738 = require("./439738.js");
 let B = Chunk473749.memo(function(e) {
   let {
     heading: t,
@@ -164,9 +164,9 @@ function F(e) {
   } = (0, Z.ZP)(n), {
     startDateTimeString: h,
     upcomingEvent: m,
-    diffMinutes: _
-  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), b = m ? _ > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
-    minutes: _
+    diffMinutes: b
+  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
+    minutes: b
   }) : U.intl.string(U.t.WINqKV) : U.intl.formatToPlainString(U.t.DC6h3G, {
     date: h
   });
@@ -216,7 +216,7 @@ function F(e) {
         color: "text-default",
         variant: "text-xs/normal",
         className: G.startTime,
-        children: b
+        children: _
       })]
     }), (0, i.jsxs)("div", {
       className: s()(G.textBlock, G.singleLine),
@@ -312,7 +312,7 @@ function q(e) {
   let {
     stageInstance: t,
     channel: n
-  } = e, r = (0, o.Wu)([m.Z], () => [...new Set(m.Z.getMutableParticipants(n.id, _.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.e7)([m.Z], () => m.Z.getParticipantCount(n.id, _.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
+  } = e, r = (0, o.Wu)([m.Z], () => [...new Set(m.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.e7)([m.Z], () => m.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
     count: "".concat(l)
   });
   return (0, i.jsx)(B, {
@@ -377,7 +377,7 @@ function Q(e) {
         color: "none",
         variant: "text-xs/normal",
         className: G.userNames,
-        children: (0, b.ER)(a, d, null == t ? true : t.id, n.length)
+        children: (0, _.ER)(a, d, null == t ? true : t.id, n.length)
       })]
     }) : null, p && null == f && (0, i.jsx)(W, {
       channel: t,

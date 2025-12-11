@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 983559, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk231688 = require("./231688.js");
+  Chunk960077 = require("./960077.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,7 +66,7 @@ function H(e) {
     user: n,
     currentUser: m,
     channel: k
-  } = e, H = __OVERLAY__, B = (0, y.ZP)(n.id), V = (0, c.ZP)(), z = i.useRef(Date.now()), {
+  } = e, H = __OVERLAY__, B = (0, O.ZP)(n.id), V = (0, c.ZP)(), z = i.useRef(Date.now()), {
     analyticsLocations: W
   } = (0, u.ZP)(d.Z.USER_PROFILE_SIDEBAR), Y = (0, g.ZB)({
     layout: "SIDEBAR",
@@ -75,19 +75,19 @@ function H(e) {
   }), q = i.useRef(null), {
     isHoveringOrFocusing: K,
     isHovering: Q
-  } = (0, p.Z)(q), X = (0, j.$m)(), J = (0, o.q_F)({
+  } = (0, p.Z)(q), X = (0, x.$m)(), J = (0, o.q_F)({
     opacity: +(null != X.interactionType),
     config: {
       duration: 150
     }
   }), $ = e => {
-    (0, x.openUserProfileModal)(G({
+    (0, v.openUserProfileModal)(G({
       sourceAnalyticsLocations: W,
       hideRestrictedProfile: true
     }, Y, e))
-  }, ee = (0, O.Z)({
+  }, ee = (0, j.Z)({
     location: "UserProfileSidebar"
-  }), et = (null == B ? true : B.widgets) != null && B.widgets.length > 0, en = (0, _.g)({
+  }), et = (null == B ? true : B.widgets) != null && B.widgets.length > 0, en = (0, y.g)({
     location: "UserProfileSidebar"
   }), {
     defaultWishlistId: er
@@ -107,7 +107,7 @@ function H(e) {
       fetchStartedAt: null == B ? true : B.fetchStartedAt,
       fetchEndedAt: null == B ? true : B.fetchEndedAt,
       isLoaded: null == B ? true : B.isLoaded,
-      children: (0, r.jsx)(j.NJ, {
+      children: (0, r.jsx)(x.NJ, {
         value: X,
         children: (0, r.jsxs)(E.Z, {
           ref: q,
@@ -130,16 +130,16 @@ function H(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: U.header,
-              children: [(0, r.jsx)(C.Z, {
+              children: [(0, r.jsx)(I.Z, {
                 user: n,
                 displayProfile: B,
                 themeType: M.l.SIDEBAR,
                 animateOnHoverOrFocusOnly: !K,
                 className: U.banner
-              }), (0, r.jsx)(I.Z, {
+              }), (0, r.jsx)(_.Z, {
                 userId: n.id,
                 className: U.toast
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(C.Z, {
                 user: n,
                 displayProfile: B,
                 channelId: k.id,

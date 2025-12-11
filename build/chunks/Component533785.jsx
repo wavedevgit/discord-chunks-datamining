@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk590961 = require("./590961.jsx"),
   Chunk840724 = require("./840724.jsx"),
-  Chunk661009 = require("./661009.js");
+  Chunk746749 = require("./746749.js");
 
 function d(e) {
   let {
@@ -17,12 +17,12 @@ function d(e) {
     applicationId: d,
     guildId: c,
     analyticsLocations: u,
-    analyticsSectionId: g
-  } = e, p = i.useMemo(() => ({
-    pageSection: g
-  }), [g]);
+    analyticsSectionId: f
+  } = e, g = i.useMemo(() => ({
+    pageSection: f
+  }), [f]);
   return null == n ? null : (0, l.jsx)(o.hL, {
-    newValue: p,
+    newValue: g,
     children: (0, l.jsxs)("div", {
       className: r.container,
       children: [(0, l.jsxs)("div", {

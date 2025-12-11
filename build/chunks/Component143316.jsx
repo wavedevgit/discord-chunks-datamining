@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 143316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
 function d(e) {
   let {
     onClick: t
-  } = e, [n, o] = i.useState(false), d = () => {
+  } = e, [n, a] = i.useState(false), d = () => {
     t(), s.default.track(c.rMx.INBOX_CHANNEL_ACKED, {
       marked_all_channels_as_read: true,
       num_unread_channels_remaining: 0
@@ -24,16 +24,16 @@ function d(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [n ? (0, r.jsx)(f, {
       confirm: d,
-      cancel: () => o(false)
+      cancel: () => a(false)
     }) : null, (0, r.jsx)(l.u, {
       text: u.intl.string(u.t["8k+6QY"]),
-      children: (0, r.jsx)(a.hU, {
+      children: (0, r.jsx)(o.hU, {
         variant: "secondary",
         "aria-label": u.intl.string(u.t["8k+6QY"]),
         size: "sm",
-        icon: a.W6s,
+        icon: o.W6s,
         onClick: e => {
-          e.shiftKey ? d() : o(true)
+          e.shiftKey ? d() : a(true)
         }
       })
     })]
@@ -45,15 +45,15 @@ function f(e) {
     cancel: t,
     confirm: n
   } = e;
-  return (0, r.jsx)(a.SR, {
+  return (0, r.jsx)(o.SR, {
     dismissable: true,
     header: u.intl.string(u.t.h4bVZ2),
     confirmText: u.intl.string(u.t.e6RscS),
     cancelText: u.intl.string(u.t["ETE/oC"]),
-    confirmButtonColor: o.zx.Colors.BRAND,
+    confirmButtonColor: a.zx.Colors.BRAND,
     onCancel: t,
     onConfirm: n,
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(o.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       children: u.intl.string(u.t["0MQ0Bf"])

@@ -1,12 +1,12 @@
 /** Chunk was on 47620 **/
 /** chunk id: 576184, original params: e,r,s (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => g
+  default: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  n = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk319498 = require("./319498.js"),
   Chunk481060 = require("./481060.js"),
   Chunk710845 = require("./710845.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk954824 = require("./954824.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk827414 = require("./827414.js");
+  Chunk963557 = require("./963557.js");
 let h = [{
     id: "discord",
     getName: () => Chunk388032.intl.string(Chunk388032.t.uON9Ui),
@@ -28,12 +28,12 @@ let h = [{
     getName: () => Chunk388032.intl.string(Chunk388032.t.LVbA5X),
     url: "https://www.mozilla.org/en-US/firefox/new/?scene=2"
   }],
-  _ = {
+  u = {
     discord: "browserDiscord",
     firefox: "browserFirefox",
     chrome: "browserChrome"
   };
-class u extends Chunk473749.Component {
+class x extends Chunk473749.Component {
   render() {
     let e, {
       id: r,
@@ -41,50 +41,50 @@ class u extends Chunk473749.Component {
       url: o
     } = this.props.browser;
     return e = null != Chunk473749 ? (0, Chunk54381.jsx)(Chunk481060.Anchor, {
-      className: Chunk827414.btn,
+      className: Chunk963557.btn,
       href: Chunk473749,
       children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
     }) : (0, Chunk54381.jsx)(Chunk319498.rU, {
-      className: Chunk827414.btn,
+      className: Chunk963557.btn,
       to: Chunk981631.Z5c.APPS,
       children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
     }), (0, Chunk54381.jsxs)("li", {
-      className: Chunk827414.browserItem,
+      className: Chunk963557.browserItem,
       children: [(0, Chunk54381.jsx)("div", {
-        className: n()(Chunk827414.browserItemText, Chunk827414.browser, Chunk827414[_[exports]])
+        className: i()(Chunk963557.browserItemText, Chunk963557.browser, Chunk963557[u[exports]])
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk827414.browserItemText,
+        className: Chunk963557.browserItemText,
         children: require()
       }), module]
     })
   }
 }
-class x extends Chunk473749.Component {
+class g extends Chunk473749.Component {
   componentDidMount() {
     Chunk954824.Z.launch("discord://" + this.props.location.pathname, e => {
       new l.Z("UnsupportedBrowser").log("discord://", e)
     })
   }
   render() {
-    let e = h.map(e => (0, t.jsx)(u, {
+    let e = h.map(e => (0, t.jsx)(x, {
       browser: e
     }, e.id));
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk827414.unsupportedBrowser,
+      className: Chunk963557.unsupportedBrowser,
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk827414.wrap,
+        className: Chunk963557.wrap,
         children: [(0, Chunk54381.jsx)(Chunk481060.H, {
-          className: Chunk827414.title,
+          className: Chunk963557.title,
           children: Chunk388032.intl.string(Chunk388032.t["3h+n+8"])
         }), (0, Chunk54381.jsx)("p", {
-          className: Chunk827414.message,
+          className: Chunk963557.message,
           children: Chunk388032.intl.string(Chunk388032.t.yNDLDL)
         }), (0, Chunk54381.jsx)("ul", {
-          className: Chunk827414.browserList,
+          className: Chunk963557.browserList,
           children: module
         })]
       })
     })
   }
 }
-let g = x
+let N = g

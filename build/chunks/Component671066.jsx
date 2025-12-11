@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 671066, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,30 +14,30 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk556012 = require("./556012.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk464992 = require("./464992.js");
+  Chunk239244 = require("./239244.js");
 
 function m(e) {
   var t;
   let {
     action: n,
     triggerType: m,
-    toggled: p,
-    onToggleAction: f
-  } = e, h = e => () => f(e), b = (0, d.c)(n.type, n, m), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.e7)([c.default, o.Z, s.Z], () => {
+    toggled: f,
+    onToggleAction: p
+  } = e, b = e => () => p(e), h = (0, d.c)(n.type, n, m), x = null == (t = n.metadata) ? true : t.channelId, j = (0, i.e7)([c.default, o.Z, s.Z], () => {
     let e = s.Z.getChannel(x);
     return null == e ? null : (0, a.F6)(e, c.default, o.Z)
   }, [x]);
-  if (null == b) return null;
+  if (null == h) return null;
   let {
-    headerText: _,
-    descriptionText: v,
-    icon: O
-  } = b;
+    headerText: v,
+    descriptionText: O,
+    icon: C
+  } = h;
   return (0, r.jsxs)("div", {
     className: g.actionContainer,
     children: [(0, r.jsx)("div", {
       className: g.actionIconContainer,
-      children: (0, r.jsx)(O, {
+      children: (0, r.jsx)(C, {
         size: "md",
         color: "currentColor",
         className: g.actionIcon
@@ -46,18 +46,18 @@ function m(e) {
       className: g.actionTextContainer,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-sm/semibold",
-        children: _
+        children: v
       }), (0, r.jsx)(l.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: v
-      }), p && (0, r.jsxs)(l.Text, {
+        children: O
+      }), f && (0, r.jsxs)(l.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [null != j && u.intl.format(u.t["8Sr/ar"], {
           channelName: j
         }), (0, r.jsx)(l.P3F, {
-          onClick: h(true),
+          onClick: b(true),
           className: g.editChannel,
           tag: "span",
           role: "link",
@@ -66,10 +66,10 @@ function m(e) {
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(l.P3F, {
-        onClick: b.isEditable ? h(false) : true,
+        onClick: h.isEditable ? b(false) : true,
         children: (0, r.jsx)(l.FZ5, {
-          checked: p,
-          disabled: !b.isEditable
+          checked: f,
+          disabled: !h.isEditable
         })
       })
     })]

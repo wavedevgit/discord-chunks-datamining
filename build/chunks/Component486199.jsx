@@ -1,4 +1,4 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 486199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk961174 = require("./961174.js");
+  Chunk29175 = require("./29175.js");
 
 function d(e) {
   let {
@@ -19,11 +19,11 @@ function d(e) {
     icon: r,
     imageSrc: d,
     iconBackgroundColor: u,
-    iconClassName: p,
-    iconWrapperClassName: m,
-    details: b,
-    detailsClassName: g,
-    isHeader: f,
+    iconClassName: b,
+    iconWrapperClassName: p,
+    details: m,
+    detailsClassName: f,
+    isHeader: g,
     isPremium: h,
     children: x
   } = e;
@@ -52,7 +52,7 @@ function d(e) {
         className: l()(c.iconWrapper, a),
         children: o
       })
-    }(r, d, u, p, m) : null, (0, i.jsxs)(o.Kqy, {
+    }(r, d, u, b, p) : null, (0, i.jsxs)(o.Kqy, {
       justify: "center",
       children: [function(e) {
         let {
@@ -61,8 +61,8 @@ function d(e) {
           details: r,
           detailsClassName: d,
           isHeader: u,
-          isPremium: p
-        } = e, m = null == r ? true : r.map((e, t) => {
+          isPremium: b
+        } = e, p = null == r ? true : r.map((e, t) => {
           let {
             icon: n,
             text: r
@@ -86,7 +86,7 @@ function d(e) {
           children: [(0, i.jsxs)(o.Heading, {
             variant: u ? "heading-xl/semibold" : "heading-md/medium",
             className: u ? c.header : c.secondaryHeader,
-            children: [t, p && (0, i.jsx)(a.u, {
+            children: [t, b && (0, i.jsx)(a.u, {
               text: s.intl.string(s.t.VFuFum),
               children: (0, i.jsx)(o.Prq, {
                 size: "xs",
@@ -100,15 +100,15 @@ function d(e) {
             children: n
           }) : null, (0, i.jsx)(o.Kqy, {
             direction: "horizontal",
-            children: m
+            children: p
           })]
         })
       }({
         name: t,
         description: n,
-        details: b,
-        detailsClassName: g,
-        isHeader: f,
+        details: m,
+        detailsClassName: f,
+        isHeader: g,
         isPremium: h
       }), x]
     })]

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk135483 = require("./135483.js"),
   Chunk171019 = require("./171019.jsx"),
@@ -15,21 +15,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk539530 = require("./539530.js"),
   Chunk566697 = require("./566697.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk24391 = require("./24391.js");
+  Chunk332502 = require("./332502.js");
 let x = e => {
     var t;
     let {
       currentUser: n,
       nameplate: i,
       section: o,
-      canUsePremiumCollectibles: d,
+      canUsePremiumCollectibles: u,
       isSelected: x,
       onClick: v
-    } = e, _ = (0, r.useRef)(null), {
-      isHoveringOrFocusing: j
-    } = (0, u.Z)(_);
-    return (0, l.jsxs)(a.P3F, {
-      innerRef: _,
+    } = e, b = (0, r.useRef)(null), {
+      isHoveringOrFocusing: f
+    } = (0, d.Z)(b);
+    return (0, l.jsxs)(s.P3F, {
+      innerRef: b,
       "aria-label": null != (t = i.label) ? t : g.intl.string(g.t.x5CoXR),
       className: h.nameplateItem,
       onClick: v,
@@ -37,15 +37,15 @@ let x = e => {
         nameplate: i,
         user: n,
         showPlaceholderUser: true,
-        isHighlighted: j
+        isHighlighted: f
       }), (0, l.jsx)("div", {
-        className: s()(h.nameplateItemOverlay, {
+        className: a()(h.nameplateItemOverlay, {
           [h.selected]: x
         })
       }), (0, l.jsx)(c.Z, {
         isPurchaseSection: o === p.$0.PURCHASE,
         isPremiumSection: o === p.$0.PREMIUM_PURCHASE,
-        canUsePremiumCollectibles: d,
+        canUsePremiumCollectibles: u,
         skuId: i.skuId
       })]
     })
@@ -57,35 +57,35 @@ let x = e => {
       guildId: r,
       onSelect: i,
       onOpenShop: c
-    } = e, u = d.ZP.canUseCollectibles(t), m = (0, p.ZP)();
-    return (0, l.jsx)(a.u2D, {
+    } = e, d = u.ZP.canUseCollectibles(t), m = (0, p.ZP)();
+    return (0, l.jsx)(s.u2D, {
       className: h.inventory,
-      children: m.map(e => (0, l.jsxs)(a.Kqy, {
+      children: m.map(e => (0, l.jsxs)(s.Kqy, {
         gap: 4,
-        children: [(0, l.jsx)(a.Text, {
+        children: [(0, l.jsx)(s.Text, {
           variant: "text-md/medium",
           children: e.header
         }), e.section === p.$0.PURCHASE && (0, l.jsxs)("div", {
           className: h.inventoryControls,
-          children: [(0, l.jsxs)(a.P3F, {
-            className: s()(h.inventoryControlsButton, {
+          children: [(0, l.jsxs)(s.P3F, {
+            className: a()(h.inventoryControlsButton, {
               [h.selected]: null == n
             }),
             onClick: () => i(null),
-            children: [(0, l.jsx)(a.t6m, {
+            children: [(0, l.jsx)(s.t6m, {
               size: "md",
               color: "currentColor"
-            }), (0, l.jsx)(a.Text, {
+            }), (0, l.jsx)(s.Text, {
               variant: "text-xs/normal",
               children: null != r ? g.intl.string(g.t.CHf9iJ) : g.intl.string(g.t.PoWNfe)
             })]
-          }), (0, l.jsxs)(a.P3F, {
+          }), (0, l.jsxs)(s.P3F, {
             className: h.inventoryControlsButton,
             onClick: c,
-            children: [(0, l.jsx)(a.EOn, {
+            children: [(0, l.jsx)(s.EOn, {
               size: "md",
               color: "currentColor"
-            }), (0, l.jsx)(a.Text, {
+            }), (0, l.jsx)(s.Text, {
               variant: "text-xs/normal",
               children: g.intl.string(g.t.pWG4ze)
             })]
@@ -96,7 +96,7 @@ let x = e => {
             currentUser: t,
             nameplate: r,
             section: e.section,
-            canUsePremiumCollectibles: u,
+            canUsePremiumCollectibles: d,
             isSelected: (null == n ? true : n.skuId) === r.skuId,
             onClick: () => i(r)
           }, r.skuId))

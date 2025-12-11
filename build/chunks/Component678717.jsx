@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => w,
@@ -24,8 +24,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk621060 = require("./621060.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk552883 = require("./552883.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk718728 = require("./718728.js"),
+  Chunk663618 = require("./663618.js");
 
 function E(e) {
   let {
@@ -33,7 +33,7 @@ function E(e) {
     onResize: n,
     onResizeEnd: r
   } = e, i = (0, d.Z)({
-    minDimension: g.h,
+    minDimension: b.h,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
@@ -41,7 +41,7 @@ function E(e) {
   });
   return (0, a.jsx)("div", {
     onMouseDown: i,
-    className: C.resizeHandle
+    className: _.resizeHandle
   })
 }
 
@@ -70,9 +70,9 @@ function T(e) {
     selectedTabId: o
   } = (0, j.ZP)({
     tabs: r,
-    initialSelectedTabId: null != (t = g.Z.lastOpenTabId) ? t : true,
+    initialSelectedTabId: null != (t = b.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
-      (0, f.Qh)({
+      (0, x.Qh)({
         lastOpenTabId: e
       })
     }
@@ -83,7 +83,7 @@ function T(e) {
     properties: {
       panel: o
     }
-  }), (0, a.jsxs)(b.Gk, {
+  }), (0, a.jsxs)(g.Gk, {
     children: [(0, a.jsxs)(m.ZP, {
       className: S.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
@@ -93,8 +93,8 @@ function T(e) {
           onClick: O
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
-          tooltip: y.intl.string(y.t.cpT0Cq),
-          onClick: f.SO
+          tooltip: C.intl.string(C.t.cpT0Cq),
+          onClick: x.SO
         })]
       }),
       children: [(0, a.jsx)(m.ZP.Icon, {
@@ -103,8 +103,8 @@ function T(e) {
       }), (0, a.jsx)(m.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(b.Br, {
-      className: C.layerContainer
+    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(g.Br, {
+      className: _.layerContainer
     })]
   })
 }
@@ -113,14 +113,14 @@ function N() {
   let e = Chunk473749.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
     [n, i] = Chunk473749.useState(null),
-    l = Chunk473749.useCallback(e => (0, f.Qh)({
+    l = Chunk473749.useCallback(e => (0, x.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk473749.useEffect(() => {
     null === require && null !== exports && Chunk120356(exports)
   }, [exports, require]), null === require) ? null : (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: Chunk552883.container,
+    className: Chunk718728.container,
     style: {
       minWidth: Chunk19759.h,
       width: require
@@ -131,7 +131,7 @@ function N() {
       onResize: Chunk120356,
       onResizeEnd: l
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk552883.sidebarContent,
+      className: Chunk718728.sidebarContent,
       children: (0, Chunk54381.jsx)(T, {})
     })]
   })
@@ -139,17 +139,17 @@ function N() {
 
 function P() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk54381.jsx)("div", {
-    className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
+    className: l()(Chunk718728.container, Chunk718728.mobileContainerExpanded),
     children: (0, Chunk54381.jsx)("div", {
-      className: Chunk552883.sidebarContent,
+      className: Chunk718728.sidebarContent,
       children: (0, Chunk54381.jsx)(T, {})
     })
   }) : (0, Chunk54381.jsx)("div", {
-    className: Chunk552883.container,
+    className: Chunk718728.container,
     children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: Chunk31336.SO,
       children: (0, Chunk54381.jsxs)(Chunk665149.ZP, {
-        className: l()(Chunk451429.headerBar, Chunk552883.mobileHeaderCollapsed),
+        className: l()(Chunk663618.headerBar, Chunk718728.mobileHeaderCollapsed),
         toolbar: (0, Chunk54381.jsx)(Chunk259580.Z, {
           direction: Chunk259580.Z.Directions.UP
         }),
@@ -170,7 +170,7 @@ function w(e) {
     isPopout: n = false
   } = e;
   return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
-    className: C.popoutContainer,
+    className: _.popoutContainer,
     children: (0, a.jsx)(T, {
       isPopout: true
     })

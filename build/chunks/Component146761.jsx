@@ -18,9 +18,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk366733 = require("./366733.jsx"),
   Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk96011 = require("./96011.js"),
+  Chunk137427 = require("./137427.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk17845 = require("./17845.js");
+  Chunk12048 = require("./12048.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,10 +67,10 @@ let S = () => (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       top: 12,
       bottom: 12
     },
-    className: Chunk17845.header,
+    className: Chunk12048.header,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "display-md",
-      className: Chunk17845.logoHeader,
+      className: Chunk12048.logoHeader,
       children: (0, Chunk282793.sO)()
     }), (0, Chunk54381.jsx)(Chunk481060.Cts, {
       type: "beta",

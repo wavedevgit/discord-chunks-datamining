@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk87805 = require("./87805.js");
+  Chunk123591 = require("./123591.js");
 
 function m(e) {
   let {
     applicationId: t
-  } = e.match.params, [m, _] = i.useState(false), b = i.useRef(false), [E, O] = i.useState(null), v = !u.isPlatformEmbedded && !a.tq && !m, y = i.useMemo(() => (0, l.Z)(), []);
+  } = e.match.params, [m, b] = i.useState(false), _ = i.useRef(false), [E, O] = i.useState(null), v = !u.isPlatformEmbedded && !a.tq && !m, y = i.useMemo(() => (0, l.Z)(), []);
   return (i.useEffect(() => {
-    v && true !== b.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+    v && true !== _.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
         default: n
       } = e;
@@ -49,7 +49,7 @@ function m(e) {
           rpc_success: false
         })
       }).then(() => n.disconnect())
-    }), b.current = true)
+    }), _.current = true)
   }, [t, v, y]), v && false !== E) ? true === E ? (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(o.Heading, {
@@ -61,7 +61,7 @@ function m(e) {
     }), (0, r.jsx)(s.zxk, {
       variant: "primary",
       text: g.intl.string(g.t.fIv16B),
-      onClick: () => _(true)
+      onClick: () => b(true)
     })]
   }) : (0, r.jsxs)("div", {
     className: h.container,

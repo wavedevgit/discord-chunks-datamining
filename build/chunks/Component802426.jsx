@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk333669 = require("./333669.js");
+  Chunk30172 = require("./30172.js");
 
 function p(e) {
   var t, r, {
@@ -21,13 +21,13 @@ function p(e) {
       var r, n, o = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          i = Object.keys(e);
-        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
     }(e, ["modalConfig", "markAsDismissed"]);
@@ -35,8 +35,8 @@ function p(e) {
       var t;
       null == (t = p.onPrimaryClick) || t.call(p, e), d(c.L.TAKE_ACTION)
     }, [p, d]),
-    y = [p.firstHeader, p.secondHeader].filter(Boolean).join(" "),
-    b = [{
+    b = [p.firstHeader, p.secondHeader].filter(Boolean).join(" "),
+    y = [{
       variant: "secondary",
       text: s.intl.string(s.t["ETE/oC"]),
       onClick: u.onClose
@@ -45,7 +45,7 @@ function p(e) {
       text: p.primaryButtonText,
       onClick: f
     }] : []];
-  return (0, n.jsx)(i.Modal, (t = function(e) {
+  return (0, n.jsx)(a.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -63,24 +63,24 @@ function p(e) {
     }
     return e
   }({}, u), r = r = {
-    title: y,
-    actions: b,
+    title: b,
+    actions: y,
     size: "md",
     children: (0, n.jsx)("div", {
       className: l.container,
       children: (0, n.jsxs)("div", {
         className: l.contentContainer,
-        children: [(0, n.jsx)(a.Text, {
+        children: [(0, n.jsx)(i.Text, {
           tag: "span",
           className: l.description,
           variant: "text-sm/normal",
           children: p.firstBody
-        }), (0, n.jsx)(a.Text, {
+        }), (0, n.jsx)(i.Text, {
           tag: "span",
           className: l.description,
           variant: "text-sm/normal",
           children: p.secondBody
-        }), (0, n.jsx)(a.Text, {
+        }), (0, n.jsx)(i.Text, {
           tag: "span",
           className: l.description,
           variant: "text-sm/normal",

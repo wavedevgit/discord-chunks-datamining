@@ -1,45 +1,45 @@
 /** Chunk was on 99726 **/
-/** chunk id: 839427, original params: e,a,m (module,exports,require) **/
+/** chunk id: 839427, original params: a,e,m (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => n
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk162190 = require("./162190.js"),
-  Chunk205582 = require("./205582.js");
+  Chunk556957 = require("./556957.js");
 
-function n(e) {
+function n(a) {
   let {
-    instance: a
-  } = e, m = (0, s.Z)(a.gameId, "cover");
+    instance: e
+  } = a, m = (0, r.Z)(e.gameId, "cover");
   return (0, g.jsxs)("div", {
-    className: c.container,
+    className: s.container,
     children: [(0, g.jsxs)("div", {
-      className: r()(c.gameImage, c.gameImage1),
+      className: i()(s.gameImage, s.gameImage1),
       children: [(0, g.jsx)("div", {
-        className: r()(c.imageDecoration, c.gameImageOverlay)
+        className: i()(s.imageDecoration, s.gameImageOverlay)
       }), (0, g.jsx)("div", {
-        className: r()(c.imageDecoration, c.gameImageBorder)
+        className: i()(s.imageDecoration, s.gameImageBorder)
       })]
     }), (0, g.jsxs)("div", {
-      className: r()(c.gameImage, c.gameImage2),
+      className: i()(s.gameImage, s.gameImage2),
       children: [(0, g.jsx)("div", {
-        className: r()(c.imageDecoration, c.gameImageOverlay)
+        className: i()(s.imageDecoration, s.gameImageOverlay)
       }), (0, g.jsx)("div", {
-        className: r()(c.imageDecoration, c.gameImageBorder)
+        className: i()(s.imageDecoration, s.gameImageBorder)
       })]
     }), (0, g.jsxs)("div", {
-      className: r()(c.gameImage, c.gameImage3),
+      className: i()(s.gameImage, s.gameImage3),
       children: [(0, g.jsx)("img", {
         src: m,
         alt: "",
-        className: c.image
+        className: s.image
       }), (0, g.jsx)("div", {
-        className: r()(c.imageDecoration, c.gameImageOverlay)
+        className: i()(s.imageDecoration, s.gameImageOverlay)
       }), (0, g.jsx)("div", {
-        className: r()(c.imageDecoration, c.gameImageBorder)
+        className: i()(s.imageDecoration, s.gameImageBorder)
       })]
     })]
   })

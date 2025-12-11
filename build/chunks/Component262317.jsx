@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 262317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   XX: () => U,
@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk927923 = require("./927923.js"),
   Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk92024 = require("./92024.js");
+  Chunk932732 = require("./932732.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -115,7 +115,7 @@ let F = (0, Chunk888651.$)(function(e) {
   var t;
   let {
     collapsed: l,
-    user: h,
+    user: f,
     channel: U,
     mute: V,
     localMute: F,
@@ -144,95 +144,95 @@ let F = (0, Chunk888651.$)(function(e) {
     voicePlatform: eu,
     isSelfOnOtherClient: ed = false,
     tabIndex: ep,
-    location: eh,
-    isSelf: ef,
+    location: ef,
+    isSelf: eh,
     application: em,
     hangStatusActivity: eg,
     requestToStreamActivity: eb,
     showHangStatus: eC
-  } = e, ey = r.useRef(null), [ev, e_] = r.useState(false), eO = r.useRef(null), [ex, eE] = r.useState(false), [ej, eS] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = ej || eZ || eP, eA = ex || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
-    e_(!ev)
+  } = e, ey = r.useRef(null), [ev, eO] = r.useState(false), ex = r.useRef(null), [eE, ej] = r.useState(false), [eS, e_] = r.useState(false), [eP, eI] = r.useState(false), [eZ, eT] = r.useState(false), eN = eS || eZ || eP, eA = eE || eN, ew = (null == eb ? true : eb.session_id) != null, eM = () => {
+    eO(!ev)
   }, eR = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-    null != t && n.has(t) && (eP && eI(false), ej && eS(false)), eL()
+    null != t && n.has(t) && (eP && eI(false), eS && e_(false)), eL()
   }, eL = () => {
-    (et || eC || ew) && (null == ea || ea(h.id))
+    (et || eC || ew) && (null == ea || ea(f.id))
   }, eD = e => {
-    e ? eO.current = setTimeout(() => {
-      eE(true)
-    }, 150 * !!es) : clearTimeout(eO.current)
+    e ? ex.current = setTimeout(() => {
+      ej(true)
+    }, 150 * !!es) : clearTimeout(ex.current)
   };
-  r.useEffect(() => () => clearTimeout(eO.current), []);
+  r.useEffect(() => () => clearTimeout(ex.current), []);
   let ek = e => {
-      e && eE(false)
+      e && ej(false)
     },
     eU = () => {
       if (!(et && (0, v.p9)(U, A.Z, Z.Z, T.Z, b.default)[0])) return;
       let e = {
         streamType: M.lo.GUILD,
-        ownerId: h.id,
+        ownerId: f.id,
         channelId: U.id,
         guildId: U.guild_id
       };
-      I.default.getId() !== h.id && d.default.selectVoiceChannel(U.id), en ? ((0, _.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == ea || ea(h.id)
+      I.default.getId() !== f.id && d.default.selectVoiceChannel(U.id), en ? ((0, O.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == ea || ea(f.id)
     },
     eV = e => {
       (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96306")]).then(n.bind(n, 757387));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96253")]).then(n.bind(n, 757387));
         return t => (0, i.jsx)(e, k(D({}, t), {
-          user: h,
+          user: f,
           guildId: U.guild_id,
           channel: U,
           showMediaItems: true,
           showStageChannelItems: U.isGuildStageVoice(),
           onInteraction: (0, g.u)("GuildChannelUserContextMenu", m.Z.VOICE_USER, {
-            targetUserId: h.id
+            targetUserId: f.id
           })
         }))
       })
     },
-    eF = e => ef ? (0, i.jsx)(x.$, k(D({}, e), {
+    eF = e => eh ? (0, i.jsx)(E.$, k(D({}, e), {
       channel: U,
-      setIsHangStatusInputFocused: eS,
+      setIsHangStatusInputFocused: e_,
       setIsEmojiPickerOpen: eT
-    })) : null != eg ? (0, i.jsx)(E.I, k(D({}, e), {
+    })) : null != eg ? (0, i.jsx)(j.I, k(D({}, e), {
       hangStatusActivity: eg,
       channel: U,
-      userId: h.id
+      userId: f.id
     })) : null,
-    eB = () => (0, i.jsx)(j.Z, {
-      userId: h.id,
+    eB = () => (0, i.jsx)(S.Z, {
+      userId: f.id,
       channel: U
     }),
-    eH = () => (0, f.dl)() && (0, f.zd)(U.id) ? null : (0, i.jsx)(O.Z, {
-      user: h,
+    eH = () => (0, h.dl)() && (0, h.zd)(U.id) ? null : (0, i.jsx)(x.Z, {
+      user: f,
       channel: U,
       onWatch: eU,
       previewIsOpen: es,
-      location: eh
+      location: ef
     }),
     eG = (0, i.jsx)("div", {
       className: L.draggable,
       "data-dnd-name": U.name,
       onMouseEnter: ed ? true : () => {
-        (et || eC || ew) && !ev && (null == el || el(h.id))
+        (et || eC || ew) && !ev && (null == el || el(f.id))
       },
       onMouseLeave: ed ? true : eL,
-      children: (0, i.jsx)(S.Z, {
-        clickTrap: (null == h ? true : h.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && ev,
+      children: (0, i.jsx)(_.Z, {
+        clickTrap: (null == f ? true : f.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && ev,
         targetElementRef: ey,
-        user: h,
+        user: f,
         guildId: U.guild_id,
         channelId: U.id,
         newAnalyticsLocations: [m.Z.VOICE_USER],
         shouldShow: ev,
-        onRequestClose: () => e_(false),
+        onRequestClose: () => eO(false),
         children: e => (e => {
           let t = w.al.has(null != ec ? ec : ""),
             n = {
-              user: h,
+              user: f,
               speaking: X,
               latched: J,
               disconnected: Q,
@@ -263,7 +263,7 @@ let F = (0, Chunk888651.$)(function(e) {
               onDoubleClick: eU,
               onContextMenu: eV,
               guildId: U.guild_id,
-              isSelf: ef,
+              isSelf: eh,
               application: em,
               channelId: U.id,
               hangStatusActivity: eg,
@@ -279,13 +279,13 @@ let F = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return eC && eA ? c = eF : et ? c = eH : ew && h.id !== I.default.getId() ? c = eB : eC && (c = eF), (0, i.jsx)(s.yRy, {
+          return eC && eA ? c = eF : et ? c = eH : ew && f.id !== I.default.getId() ? c = eB : eC && (c = eF), (0, i.jsx)(s.yRy, {
             targetElementRef: ey,
             position: "right",
             renderPopout: c,
             shouldShow: (eo || eC && eN) && !ev,
             onRequestClose: eR,
-            align: eC && eA && !ef ? "center" : true,
+            align: eC && eA && !eh ? "center" : true,
             spacing: eC && eA ? 8 : 0,
             children: () => (0, i.jsx)(P.ZP, k(D({}, n), {
               ref: ey,

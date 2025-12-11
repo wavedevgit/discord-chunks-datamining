@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 271267, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Q: () => g,
-  Z: () => h
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk957011 = require("./957011.js"),
   Chunk756066 = require("./756066.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk52726 = require("./52726.js"),
+  Chunk684734 = require("./684734.js"),
   Chunk270395 = require("./270395.js");
 
 function u(e) {
@@ -78,7 +78,7 @@ function m(e) {
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     guild: t,
     checkboxText: n
@@ -114,7 +114,7 @@ function p(e) {
   })
 }
 
-function f(e) {
+function p(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -127,7 +127,7 @@ function f(e) {
     acceptTermsCheckboxText: d,
     wasRejectedInV1: g
   } = n;
-  return c ? g ? (0, r.jsx)(s.Z, u({}, n)) : (0, r.jsx)(p, {
+  return c ? g ? (0, r.jsx)(s.Z, u({}, n)) : (0, r.jsx)(f, {
     guild: t,
     checkboxText: d
   }) : (0, r.jsx)(m, {
@@ -139,7 +139,7 @@ function f(e) {
   })
 }
 
-function h(e) {
+function b(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -164,7 +164,7 @@ function h(e) {
         children: o.intl.string(o.t["41wkMc"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(f, {
+      }), (0, r.jsx)(p, {
         guild: t,
         monetizationEligibility: n
       })]

@@ -54,8 +54,8 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk451964 = require("./451964.js"),
-  Chunk103126 = require("./103126.js");
+  Chunk444942 = require("./444942.js"),
+  Chunk518800 = require("./518800.js");
 
 function ei(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -190,10 +190,10 @@ class eu extends(i = Chunk473749.PureComponent) {
       inviteChannel: e
     } = this.props;
     return (0, Chunk447003.Z)(module) ? (0, Chunk54381.jsxs)("div", {
-      className: Chunk451964.warningContainer,
+      className: Chunk444942.warningContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Mgn, {
         size: "custom",
-        className: Chunk451964.warningIcon,
+        className: Chunk444942.warningIcon,
         color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css,
         width: 12
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -266,7 +266,7 @@ class eu extends(i = Chunk473749.PureComponent) {
       sections: [1],
       sectionHeight: 0,
       renderRow: () => (0, Chunk54381.jsx)("div", {
-        className: Chunk451964.inviteRowEmptyState,
+        className: Chunk444942.inviteRowEmptyState,
         children: (0, Chunk54381.jsx)(Chunk481060.OZU, {
           children: Chunk388032.intl.string(Chunk388032.t.ojoWgX)
         })
@@ -276,7 +276,7 @@ class eu extends(i = Chunk473749.PureComponent) {
       sections: [1],
       sectionHeight: 0,
       renderRow: () => (0, Chunk54381.jsx)("div", {
-        className: Chunk451964.inviteRowEmptyState,
+        className: Chunk444942.inviteRowEmptyState,
         children: (0, Chunk54381.jsx)(Chunk481060.OZU, {
           children: Chunk388032.intl.string(Chunk388032.t.hzPwGG)
         })
@@ -312,7 +312,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     return null != i ? o = Chunk388032.intl.string(Chunk388032.t.CXpS1I) : null != Chunk473749 && (o = Chunk388032.intl.string(Chunk388032.t.ueCrHB)), {
       bodyContent: (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk451964.subText,
+          className: Chunk444942.subText,
           variant: "text-sm/normal",
           children: Chunk512722
         }), (0, Chunk54381.jsx)(Chunk603236.I, es(el({}, this.props), {
@@ -347,7 +347,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         }))
       })
     } else exports || (d = (0, Chunk54381.jsxs)("div", {
-      className: Chunk451964.footerWithCheckbox,
+      className: Chunk444942.footerWithCheckbox,
       children: [(0, Chunk54381.jsx)(Chunk481060.Checkbox, {
         checked: u === er.value,
         onChange: this.handleToggleMaxAge,
@@ -356,7 +356,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         text: Chunk388032.intl.string(Chunk388032.t.Yx4IiC),
         children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
           onClick: this.openSettings,
-          className: Chunk103126.cursorPointer,
+          className: Chunk518800.cursorPointer,
           children: (0, Chunk54381.jsx)(Chunk481060.ewm, {
             size: "sm",
             color: Chunk692547.Z.unsafe_rawColors.PRIMARY_400.css
@@ -415,8 +415,8 @@ class eu extends(i = Chunk473749.PureComponent) {
     } = this.props;
     return (0, Chunk54381.jsx)("div", {
       className: a()({
-        [Chunk451964.wrapper]: module,
-        [Chunk451964.hasSections]: null != exports
+        [Chunk444942.wrapper]: module,
+        [Chunk444942.hasSections]: null != exports
       }),
       children: this.getModal()
     })

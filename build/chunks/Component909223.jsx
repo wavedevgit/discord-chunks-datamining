@@ -20,10 +20,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk325659 = require("./325659.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk319699 = require("./319699.js"),
+  Chunk478411 = require("./478411.js");
 
-function j(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function j(e) {
   return e
 }
 
-function b(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,52 +64,52 @@ let I = {
     let {
       title: t,
       menuType: i
-    } = e, l = e => {
+    } = e, a = e => {
       let t = async () => {
-        await (0, m.yL)(i, e)
-      }, l = async t => await (0, m.RV)(i, e, t), o = e => {
+        await (0, g.yL)(i, e)
+      }, a = async t => await (0, g.RV)(i, e, t), o = e => {
         let t = null == e ? true : e.token;
-        i === h.BM.MESSAGE ? (0, g.eE)(t) : i === h.BM.USER ? (0, g.JM)(t) : i === h.BM.GUILD && (0, g.FO)(t)
+        i === h.BM.MESSAGE ? (0, f.eE)(t) : i === h.BM.USER ? (0, f.JM)(t) : i === h.BM.GUILD && (0, f.FO)(t)
       };
-      t(), (0, a.ZDy)(async () => {
+      t(), (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("56499").then(n.bind(n, 433570));
-        return n => (0, r.jsx)(e, b(j({}, n), {
-          onFormSubmit: l,
+        return n => (0, r.jsx)(e, j(b({}, n), {
+          onFormSubmit: a,
           onResend: t,
           onSuccess: o,
-          headerText: x.intl.string(x.t.H3Q7U8),
-          confirmButtonText: x.intl.string(x.t["13ofGu"]),
+          headerText: _.intl.string(_.t.H3Q7U8),
+          confirmButtonText: _.intl.string(_.t["13ofGu"]),
           impression: {
             impressionName: s.ImpressionNames.URF_CONFIRM_EMAIL_CODE
           }
         }))
       })
     };
-    return (0, r.jsxs)(a.P3F, {
+    return (0, r.jsxs)(l.P3F, {
       className: E.reportButton,
-      onClick: () => void(0, a.ZDy)(async () => {
+      onClick: () => void(0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("20670").then(n.bind(n, 993018));
-        return t => (0, r.jsx)(e, b(j({}, t), {
-          onSuccess: l,
-          headerText: x.intl.string(x.t.ZLRYGU),
-          confirmButtonText: x.intl.string(x.t.PDTjLN)
+        return t => (0, r.jsx)(e, j(b({}, t), {
+          onSuccess: a,
+          headerText: _.intl.string(_.t.ZLRYGU),
+          confirmButtonText: _.intl.string(_.t.PDTjLN)
         }))
       }),
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         children: t
-      }), (0, r.jsx)(a.LJT, {
+      }), (0, r.jsx)(l.LJT, {
         size: "sm",
         color: "currentColor"
       })]
     })
   },
   y = () => {
-    let [e, t] = Chunk473749.useState(true), [n, s] = Chunk473749.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), g = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), j = () => {
+    let [e, t] = Chunk473749.useState(true), [n, s] = Chunk473749.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), f = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), b = () => {
       (0, Chunk185625.Jj)().then(e => {
         let {
           body: {
@@ -124,7 +124,7 @@ let I = {
     return Chunk473749.useEffect(() => {
       Chunk82554 ? (exports(true), Chunk232567.k({
         withAnalyticsToken: true
-      }).then(() => j()).catch(() => exports(false))) : j()
+      }).then(() => b()).catch(() => exports(false))) : b()
     }, [Chunk82554]), Chunk473749.useEffect(() => {
       (async () => {
         Chunk726521 || (await Chunk893776.Z.getLocationMetadata(), Chunk893776.Z.getExperiments())
@@ -133,17 +133,17 @@ let I = {
       children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
     }) : null != require && require.length > 0 && (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.Z11w18)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.format(Chunk388032.t["532l+q"], {
           supportURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk325659.container,
+        className: Chunk319699.container,
         children: require.map(e => null == I[e] ? null : (0, r.jsx)(N, {
-          title: x.intl.string(I[e]),
+          title: _.intl.string(I[e]),
           menuType: e
         }, e))
       })]

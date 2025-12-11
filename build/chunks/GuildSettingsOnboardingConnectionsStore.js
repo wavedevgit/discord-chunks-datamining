@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 926958, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js"), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -30,7 +30,7 @@ function m() {
   }
   d = [...Chunk45966.Z.getConnections(module)], g = [], u = false
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk45966.Z, Chunk999382.Z)
   }
@@ -59,8 +59,8 @@ class p extends(r = Chunk442837.ZP.Store) {
     return g.length > 0
   }
 }
-c(p, "displayName", "GuildSettingsOnboardingConnectionsStore");
-let f = new p(Chunk570140.Z, {
+c(f, "displayName", "GuildSettingsOnboardingConnectionsStore");
+let p = new f(Chunk570140.Z, {
   GUILD_SETTINGS_INIT: m,
   GUILD_SETTINGS_SET_SECTION: m,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: m,

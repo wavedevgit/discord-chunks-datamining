@@ -1,7 +1,7 @@
 /** Chunk was on 28538 **/
-/** chunk id: 51299, original params: n,t,e (module,exports,require) **/
+/** chunk id: 51299, original params: n,e,a (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => h
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,64 +13,64 @@ var Chunk512722 = require("./512722.js"),
   Chunk23551 = require("./23551.jsx"),
   Chunk122021 = require("./122021.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk122048 = require("./122048.js");
+  Chunk564433 = require("./564433.js");
 
 function m(n) {
   let {
-    onComplete: t,
-    excludedPlatformTypes: e,
-    includedPlatformTypes: a
+    onComplete: e,
+    excludedPlatformTypes: a,
+    includedPlatformTypes: i
   } = n, l = (0, r.fq)();
-  return (0, i.jsx)("div", {
+  return (0, t.jsx)("div", {
     className: u.connectionsContainer,
-    children: l.filter(n => !(null == e ? true : e.has(n.type)) && (null == a || a.has(n.type))).map(n => (0, i.jsx)(p.Z, {
+    children: l.filter(n => !(null == a ? true : a.has(n.type)) && (null == i || i.has(n.type))).map(n => (0, t.jsx)(p.Z, {
       type: n.type,
       className: u.accountBtn,
       innerClassName: u.accountBtnInner,
-      onConnect: () => t(n.type)
+      onConnect: () => e(n.type)
     }, n.type))
   })
 }
 
 function x(n) {
   let {
-    integrations: t,
-    onCompleteApplication: e
+    integrations: e,
+    onCompleteApplication: a
   } = n;
-  if (null == t || null == e) return null;
-  let a = t.filter(n => {
-    var t;
-    return (null == (t = n.application) ? true : t.roleConnectionsVerificationUrl) != null
+  if (null == e || null == a) return null;
+  let i = e.filter(n => {
+    var e;
+    return (null == (e = n.application) ? true : e.roleConnectionsVerificationUrl) != null
   });
-  return 0 === a.length ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(c.Text, {
+  return 0 === i.length ? null : (0, t.jsxs)(t.Fragment, {
+    children: [(0, t.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "interactive-text-default",
       className: u.applicationsHeader,
       children: d.intl.string(d.t.PHjkRE)
-    }), (0, i.jsx)("div", {
+    }), (0, t.jsx)("div", {
       className: u.applicationsContainer,
-      children: a.map(n => {
-        let t = n.application;
-        l()(null != t, "application is null");
-        let a = null == t ? true : t.bot;
-        return l()(null != a, "bot is null"), (0, i.jsxs)(c.P3F, {
-          onClick: () => e(t.id),
+      children: i.map(n => {
+        let e = n.application;
+        l()(null != e, "application is null");
+        let i = null == e ? true : e.bot;
+        return l()(null != i, "bot is null"), (0, t.jsxs)(c.P3F, {
+          onClick: () => a(e.id),
           className: u.application,
-          children: [(0, i.jsx)(s.Z, {
-            user: a,
+          children: [(0, t.jsx)(s.Z, {
+            user: i,
             className: u.applicationIcon
-          }), (0, i.jsxs)("div", {
+          }), (0, t.jsxs)("div", {
             className: u.applicationNameContainer,
-            children: [(0, i.jsx)(c.Heading, {
+            children: [(0, t.jsx)(c.Heading, {
               variant: "heading-sm/semibold",
               className: u.applicationNameText,
-              children: t.name
-            }), null != t.description && t.description.length > 0 ? (0, i.jsx)(c.Text, {
+              children: e.name
+            }), null != e.description && e.description.length > 0 ? (0, t.jsx)(c.Text, {
               variant: "text-xs/normal",
               color: "text-default",
               className: u.applicationNameText,
-              children: t.description
+              children: e.description
             }) : null]
           })]
         }, n.id)
@@ -79,31 +79,31 @@ function x(n) {
   })
 }
 
-function _(n) {
+function h(n) {
   let {
-    transitionState: t,
-    onComplete: e,
-    onClose: a,
+    transitionState: e,
+    onComplete: a,
+    onClose: i,
     excludedPlatformTypes: l,
     includedPlatformTypes: c,
     integrations: s,
     onCompleteApplication: p
   } = n;
-  return (0, i.jsxs)(o.Modal, {
+  return (0, t.jsxs)(o.Modal, {
     title: d.intl.string(d.t.syl6HS),
-    transitionState: t,
-    onClose: a,
+    transitionState: e,
+    onClose: i,
     actions: [],
-    children: [(0, i.jsx)(m, {
+    children: [(0, t.jsx)(m, {
       onComplete: function(n) {
-        e(n), a()
+        a(n), i()
       },
       excludedPlatformTypes: l,
       includedPlatformTypes: c
-    }), (0, i.jsx)(x, {
+    }), (0, t.jsx)(x, {
       integrations: s,
       onCompleteApplication: null != p ? function(n) {
-        null == p || p(n), a()
+        null == p || p(n), i()
       } : true
     })]
   })

@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk648052 = require("./648052.jsx"),
   Chunk537006 = require("./537006.jsx"),
   Chunk483424 = require("./483424.jsx"),
-  Chunk681837 = require("./681837.jsx"),
+  Chunk407699 = require("./407699.jsx"),
   Chunk91433 = require("./91433.jsx"),
   Chunk944043 = require("./944043.jsx"),
   Chunk678738 = require("./678738.jsx"),
@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk155493 = require("./155493.js");
 
 function M(e) {
   let {
@@ -64,7 +64,9 @@ function M(e) {
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: j.body,
-    children: [(0, r.jsx)(T.Z, {
+    children: [(0, r.jsx)(E.Z, {
+      userId: t.id
+    }), (0, r.jsx)(T.Z, {
       user: t,
       guildId: null == k ? true : k.id,
       onOpenProfile: G,
@@ -80,14 +82,10 @@ function M(e) {
         themeType: x.l.POPOUT,
         onClose: B
       }),
-      nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(E.Z, {
-          userId: t.id
-        }), !W && (0, r.jsx)(C.Z, {
-          userId: t.id,
-          isVisible: U,
-          onOpenProfile: G
-        })]
+      nicknameIcons: W ? null : (0, r.jsx)(C.Z, {
+        userId: t.id,
+        isVisible: U,
+        onOpenProfile: G
       })
     }), V === D.OGo.PENDING_INCOMING && (0, r.jsx)(I.Z.Overlay, {
       children: (0, r.jsx)(b.Z, {

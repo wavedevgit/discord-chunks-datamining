@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 718617, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk50493 = require("./50493.js"),
   Chunk981631 = require("./981631.js");
 
-function g(e, t) {
+function f(e, t) {
   return n => {
     if (0 === n) return "auto";
     let r = "forwards" === t.current,
@@ -29,29 +29,29 @@ function g(e, t) {
   }
 }
 
-function N(e) {
+function g(e) {
   var t;
   let {
     userId: n,
-    guildId: N,
-    onClose: h,
-    analyticsLocation: O,
-    className: f
-  } = e, R = (0, a.e7)([E.ZP], () => E.ZP.getGuildSidebarState(N), [N]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, p = (0, u.Z)(n), C = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", D = (0, s.Z)(C), {
-    reducedMotion: U
-  } = l.useContext(o.Sfi), L = l.useCallback(e => {
-    null != R && (0, d.r)(N, n, R.baseChannelId, {
+    guildId: g,
+    onClose: N,
+    analyticsLocation: h,
+    className: O
+  } = e, R = (0, s.e7)([E.ZP], () => E.ZP.getGuildSidebarState(g), [g]), S = null != (t = null == R ? true : R.details.modViewPanel) ? t : I.k.INFO, p = (0, u.Z)(n), C = null == S ? null : S === I.k.INFO ? "backwards" : "forwards", b = (0, a.Z)(C), {
+    reducedMotion: D
+  } = l.useContext(o.Sfi), U = l.useCallback(e => {
+    null != R && (0, d.r)(g, n, R.baseChannelId, {
       modViewPanel: e
     })
-  }, [R, N, n]), M = l.useMemo(() => ({
+  }, [R, g, n]), L = l.useMemo(() => ({
     [m.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: true,
-      action: () => S === I.k.INFO ? h() : L(I.k.INFO)
+      action: () => S === I.k.INFO ? N() : U(I.k.INFO)
     }
-  }), [h, S, L]);
-  l.useEffect(() => (c.Z.enable(), c.Z.enableTemp(M), () => c.Z.disableTemp()), [M]);
-  let x = (0, o.Yzy)(S, {
+  }), [N, S, U]);
+  l.useEffect(() => (c.Z.enable(), c.Z.enableTemp(L), () => c.Z.disableTemp()), [L]);
+  let M = (0, o.Yzy)(S, {
     value: 0,
     from: {
       value: 1
@@ -70,8 +70,8 @@ function N(e) {
       flex: 1,
       overflow: "hidden"
     },
-    children: x((e, t, l) => {
-      var s, a, o;
+    children: M((e, t, l) => {
+      var a, s, o;
       let {
         key: u
       } = l;
@@ -100,34 +100,34 @@ function N(e) {
           backfaceVisibility: "hidden",
           width: "100%",
           height: "100%"
-        }, U.enabled ? {
-          opacity: null == (s = e.value) ? true : s.to(e => 1 - Math.abs(e))
+        }, D.enabled ? {
+          opacity: null == (a = e.value) ? true : a.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (a = e.value) ? true : a.to(g("left", D)),
-          right: null == (o = e.value) ? true : o.to(g("right", D))
+          left: null == (s = e.value) ? true : s.to(f("left", b)),
+          right: null == (o = e.value) ? true : o.to(f("right", b))
         }),
         children: function(e) {
           switch (e) {
             case I.k.INFO:
               return (0, r.jsx)(_.Z, {
                 userId: n,
-                guildId: N,
-                onNavigate: L,
-                className: f
+                guildId: g,
+                onNavigate: U,
+                className: O
               });
             case I.k.MESSAGE_HISTORY:
               return (0, r.jsx)(A.Z, {
                 userId: n,
-                guildId: N,
-                onNavigate: () => L(I.k.INFO),
-                className: f
+                guildId: g,
+                onNavigate: () => U(I.k.INFO),
+                className: O
               });
             case I.k.PERMISSIONS:
               return (0, r.jsx)(T.Z, {
                 userId: n,
-                guildId: N,
-                onNavigate: () => L(I.k.INFO),
-                className: f
+                guildId: g,
+                onNavigate: () => U(I.k.INFO),
+                className: O
               });
             default:
               return null

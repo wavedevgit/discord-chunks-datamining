@@ -1,0 +1,18 @@
+/** Chunk was on 27978 **/
+/** chunk id: 910388, original params: e,t,n (module,exports,require) **/
+"use strict";
+module.exports = {
+  errorMessage: "d332d21efec4a134-errorMessage",
+  createAccountTemplateHeader: "d332d21efec4a134-createAccountTemplateHeader",
+  authBlock: "d332d21efec4a134-authBlock",
+  horizontalAuthBox: "d332d21efec4a134-horizontalAuthBox",
+  flex: "d332d21efec4a134-flex",
+  divider: "d332d21efec4a134-divider",
+  goBackButton: "d332d21efec4a134-goBackButton",
+  messageNegative: "d332d21efec4a134-messageNegative",
+  messagePositive: "d332d21efec4a134-messagePositive",
+  inviteBirthdayInput: "d332d21efec4a134-inviteBirthdayInput",
+  consentBox: "d332d21efec4a134-consentBox",
+  consentSubText: "d332d21efec4a134-consentSubText",
+  birthdayInput: "d332d21efec4a134-birthdayInput"
+}

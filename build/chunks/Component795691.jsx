@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 795691, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk279881 = require("./279881.js"),
   Chunk383124 = require("./383124.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk661656 = require("./661656.js");
+  Chunk772201 = require("./772201.js");
 
 function d(e) {
   let {
@@ -21,17 +21,17 @@ function d(e) {
   } = e, {
     topGames: g,
     tryFetchTopGames: m
-  } = (0, a.I)(), p = g.get(t), [f, h] = i.useState(false);
+  } = (0, a.I)(), f = g.get(t), [p, b] = i.useState(false);
   i.useEffect(() => {
-    h(true), m(t).finally(() => {
-      h(false)
+    b(true), m(t).finally(() => {
+      b(false)
     })
   }, [t, m]);
-  let b = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
+  let h = i.useMemo(() => null == f ? [] : Object.keys(f).filter(e => !n.includes(e)).sort((e, t) => f[t].score - f[e].score), [f, n]),
     x = i.useCallback(e => {
       n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
     }, [d, n]);
-  return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == b || 0 === b.length ? null : (0, r.jsxs)(r.Fragment, {
+  return p && null == f ? (0, r.jsx)(l.$jN, {}) : null == h || 0 === h.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {
@@ -42,7 +42,7 @@ function d(e) {
         children: o.intl.string(o.t.bFGpua)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
-        children: b.map(e => (0, r.jsx)(s.Z, {
+        children: h.map(e => (0, r.jsx)(s.Z, {
           applicationId: e,
           selected: false,
           onClick: x,

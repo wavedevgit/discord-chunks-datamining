@@ -46,8 +46,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk379039 = require("./379039.js"),
-  Chunk810392 = require("./810392.js"),
+  Chunk759675 = require("./759675.js"),
+  Chunk197874 = require("./197874.js"),
   Chunk107283 = require("./107283.js");
 let z = () => {
   (0, Chunk214852.z)(Chunk433811.X);
@@ -93,7 +93,7 @@ let z = () => {
       plans: eI,
       compare: eT
     } = eb,
-    eC = eh ? Chunk379039 : Chunk810392,
+    eC = eh ? Chunk759675 : Chunk197874,
     {
       variant: eA
     } = (0, Chunk931118.ZP)("PremiumBrandRefreshMarketingHeroHeading"),
@@ -106,13 +106,13 @@ let z = () => {
     eL = (0, Chunk54381.jsxs)("div", {
       className: o()(eC.container, eC.responsiveContainer, {
         [eC.containerBackground]: eh || J,
-        [Chunk379039.fadeInFromTop]: !Q && eh
+        [Chunk759675.fadeInFromTop]: !Q && eh
       }),
       "data-cy": "tier-0-marketing-page",
       children: [eh && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk306066.Z, {
-          className: o()(Chunk379039.topOfPageGradient, {
-            [Chunk379039.topOfPageGradientWithCountdown]: ex
+          className: o()(Chunk759675.topOfPageGradient, {
+            [Chunk759675.topOfPageGradientWithCountdown]: ex
           })
         }), (0, Chunk54381.jsx)(Chunk457227.Z, {
           navBarSections: eb,
@@ -120,10 +120,10 @@ let z = () => {
         })]
       }), !eh && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk810392.heroHeaderSideGradient
+          className: Chunk197874.heroHeaderSideGradient
         }), (0, Chunk54381.jsx)("img", {
           src: Chunk107283,
-          className: Chunk810392.heroHeaderBackgroundStars,
+          className: Chunk197874.heroHeaderBackgroundStars,
           alt: ""
         })]
       }), (0, Chunk54381.jsxs)("div", {
@@ -226,7 +226,7 @@ let z = () => {
           subscriptionTier: ef,
           isEligibleForBogoPromotion: ep
         }), (0, Chunk54381.jsx)(Chunk306066.Z, {
-          className: Chunk379039.bottomOfPageGradient
+          className: Chunk759675.bottomOfPageGradient
         })]
       })]
     });

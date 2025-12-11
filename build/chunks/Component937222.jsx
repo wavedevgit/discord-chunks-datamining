@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  F: () => p
+  F: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,49 +16,49 @@ var Chunk54381 = require("./54381.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function f(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: p
+    buttonClassName: f
   } = e, {
-    analyticsLocations: f
-  } = (0, a.ZP)(), h = t.features.has(c.GuildFeatures.BANNER), b = i.useCallback(e => {
+    analyticsLocations: p
+  } = (0, a.ZP)(), b = t.features.has(c.GuildFeatures.BANNER), h = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, o.f4)(t, f, n, r)
-  }, [f, t]), x = i.useCallback(e => {
+    (0, o.f4)(t, p, n, r)
+  }, [p, t]), x = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
-      analyticsLocations: f,
+      analyticsLocations: p,
       analyticsSection: c.jXE.GUILD_BANNER,
       analyticsObject: c.qAy.BUTTON_CTA,
       perks: (0, d.XO)()
     })
-  }, [f, t]), j = i.useCallback(() => {
+  }, [p, t]), j = i.useCallback(() => {
     (0, o.mw)({
       uploadType: u.pC.GUILD_BANNER,
       maxFileSizeBytes: g.B,
-      onComplete: b,
+      onComplete: h,
       analyticsLocation: {
         page: c.ZY5.GUILD_SETTINGS,
         section: c.jXE.GUILD_BANNER
       },
-      analyticsLocations: f
+      analyticsLocations: p
     })
-  }, [f, b]);
-  return h ? (0, r.jsx)("div", {
-    className: p,
+  }, [p, h]);
+  return b ? (0, r.jsx)("div", {
+    className: f,
     children: (0, r.jsx)(l.zxk, {
-      disabled: !(h && n),
+      disabled: !(b && n),
       variant: "primary",
       text: m.intl.string(m.t.yG2pUi),
       onClick: j
     })
   }) : (0, r.jsx)("div", {
-    className: p,
+    className: f,
     children: (0, r.jsx)(s.v, {
       onClick: x
     })

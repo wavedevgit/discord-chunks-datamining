@@ -12,7 +12,7 @@ var Chunk292556 = require("./292556.js"),
   Chunk313789 = require("./313789.js"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
-require("./732213.js");
+require("./530049.js");
 let d = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",

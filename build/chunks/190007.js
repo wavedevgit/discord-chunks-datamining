@@ -1,12 +1,12 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 190007, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   HE: () => u,
   HZ: () => m,
-  Pk: () => f,
-  e$: () => h,
-  l_: () => p,
+  Pk: () => p,
+  e$: () => b,
+  l_: () => f,
   ss: () => x,
   xI: () => g
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
@@ -41,26 +41,26 @@ function m(e, t) {
   })
 }
 
-function p(e) {
+function f(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER",
     connections: e
   })
 }
 
-function f() {
+function p() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"
   })
 }
-async function h(e) {
+async function b(e) {
   var t, n, u;
   let g = s.Z.getEditedConnections(),
     m = [];
   if (g.forEach(e => {
       let t = (0, c.t9)(e);
       m.push(...t)
-    }), m.length > 0) throw b(m), i.Z.show({
+    }), m.length > 0) throw h(m), i.Z.show({
     title: d.intl.string(d.t.ISppXw),
     body: m.join("\n")
   }), Error("failed to validate connections");
@@ -80,14 +80,14 @@ async function h(e) {
       fieldName: e,
       error: t
     } = null != (u = new l.Hx(r).getAnyErrorMessageAndField()) ? u : {}, n = [e, t].filter(a.lm).join(": ");
-    throw b([n]), i.Z.show({
+    throw h([n]), i.Z.show({
       title: d.intl.string(d.t.iLdiqY),
       body: n
     }), r
   }
 }
 
-function b(e) {
+function h(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED",
     errors: e
@@ -96,5 +96,5 @@ function b(e) {
 
 function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return t || s.Z.hasChanges() ? h(e) : Promise.resolve()
+  return t || s.Z.hasChanges() ? b(e) : Promise.resolve()
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 6284 **/
 /** chunk id: 553334, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk330427 = require("./330427.js");
-let _ = [{
+  Chunk656872 = require("./656872.js");
+let d = [{
   value: "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_NOT_USING_ENOUGH",
   nameGetter: () => Chunk388032.intl.string(Chunk388032.t["+RZgNV"])
 }, {
@@ -29,40 +29,40 @@ let _ = [{
   nameGetter: () => Chunk388032.intl.string(Chunk388032.t.wZLu3Y)
 }];
 
-function d(t) {
+function _(t) {
   let {
     application: e,
     subscriptionId: n,
-    onClose: d,
+    onClose: _,
     transitionState: p
-  } = t, [I, N] = a.useState(false), [O, A] = a.useState(null), [E, S] = a.useState(""), P = a.useCallback(() => {
+  } = t, [I, N] = i.useState(false), [O, A] = i.useState(null), [E, S] = i.useState(""), f = i.useCallback(() => {
     null != O && (c.default.track(o.rMx.PREMIUM_APP_CANCELLATION_SURVEY_SUBMITTED, {
       answer: O,
       application_id: e.id,
       reason: E,
       subscription_id: n
-    }), d())
-  }, [e.id, n, O, d, E]);
-  return a.useEffect(() => {
+    }), _())
+  }, [e.id, n, O, _, E]);
+  return i.useEffect(() => {
     s.ZP.updatedUnsyncedSettings({
       disableApplicationSubscriptionCancellationSurvey: I
     })
-  }, [I]), (0, i.jsxs)(l.Modal, {
+  }, [I]), (0, a.jsxs)(l.Modal, {
     title: u.intl.string(u.t.zPxMdQ),
     subtitle: u.intl.string(u.t["QJGdB+"]),
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.geKm7t),
-      onClick: P,
+      onClick: f,
       disabled: null == O
     }],
-    onClose: d,
+    onClose: _,
     transitionState: p,
-    children: [(0, i.jsx)("div", {
+    children: [(0, a.jsx)("div", {
       className: C.answerChoicesContainer,
-      children: (0, i.jsx)(r.FXm, {
+      children: (0, a.jsx)(r.FXm, {
         value: O,
-        options: _.map(t => {
+        options: d.map(t => {
           let {
             nameGetter: e,
             value: n
@@ -74,15 +74,15 @@ function d(t) {
         }),
         onChange: t => A(t)
       })
-    }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === O && (0, i.jsx)("div", {
+    }), "APPLICATION_SUBSCRIPTION_CANCELLATION_SURVEY_ANSWER_CHOICE_OTHER" === O && (0, a.jsx)("div", {
       className: C.otherField,
-      children: (0, i.jsx)(r.oil, {
+      children: (0, a.jsx)(r.oil, {
         autoFocus: true,
         placeholder: u.intl.string(u.t.s6tM8c),
         value: E,
         onChange: S
       })
-    }), (0, i.jsx)(r.Checkbox, {
+    }), (0, a.jsx)(r.Checkbox, {
       checked: I,
       onChange: t => N(t),
       label: u.intl.string(u.t["3vPFQi"]),

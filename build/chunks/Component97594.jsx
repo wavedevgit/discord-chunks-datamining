@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk860153 = require("./860153.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk105969 = require("./105969.js");
+  Chunk281290 = require("./281290.js");
 
 function b(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
@@ -34,7 +34,7 @@ function g(e) {
     enabledContentHarmTypeFlags: g,
     shouldHideMediaOptions: T = false,
     transitionState: v
-  } = e, _ = function(e, t) {
+  } = e, C = function(e, t) {
     if (null == e) return {};
     var n, i, l = function(e, t) {
       if (null == e) return {};
@@ -49,7 +49,7 @@ function g(e) {
     }
     return l
   }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]);
-  let [C, j] = l.useState(null != r ? r : 0), [x, L] = l.useState(false), [D, I] = (0, s.q_F)(() => ({
+  let [_, j] = l.useState(null != r ? r : 0), [x, L] = l.useState(false), [D, I] = (0, s.q_F)(() => ({
     scale: d.Z.useReducedMotion ? 1 : .9,
     x: 0,
     y: 0,
@@ -120,17 +120,17 @@ function g(e) {
         hideShadow: true,
         className: a()(S.carouselModal, e),
         transitionState: v
-      }, _), r = r = {
+      }, C), r = r = {
         size: s.CgR.DYNAMIC,
         animation: o.fM.SUBTLE,
         fullscreenOnMobile: false,
         onClick: t,
         "aria-label": h.intl.string(h.t.AMTX3j),
         parentComponent: "MediaViewerModal",
-        children: (0, i.jsxs)(y.z.Provider, {
+        children: (0, i.jsxs)(f.z.Provider, {
           value: N,
           children: [(0, i.jsx)(E.Z, {
-            item: n[C],
+            item: n[_],
             hideMediaOptions: T,
             onClose: t
           }), (0, i.jsx)("div", {
@@ -138,9 +138,9 @@ function g(e) {
               display: "none"
             },
             ref: P
-          }), (0, i.jsx)(f.ZP, {
+          }), (0, i.jsx)(y.ZP, {
             items: n,
-            startIndex: C,
+            startIndex: _,
             onIndexChange: R,
             enabledContentHarmTypeFlags: g,
             shouldHideMediaOptions: T

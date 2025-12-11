@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 503737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -36,7 +36,7 @@ let d = "ActivityInviteManager",
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
-class p extends Chunk317770.Z {
+class h extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), Chunk570140.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
@@ -46,11 +46,11 @@ class p extends Chunk317770.Z {
   handleModalOpen(e) {
     let {
       activity: t,
-      isPrivate: o,
-      context: a
-    } = e, p = a === s.IlC.POPOUT ? l.u1M : l.z1l;
-    o ? (0, l.h7j)(e => {
-      var n, o;
+      isPrivate: a,
+      context: o
+    } = e, h = o === s.IlC.POPOUT ? l.u1M : l.z1l;
+    a ? (0, l.h7j)(e => {
+      var n, a;
       return (0, r.jsx)(i.Modal, (n = u({
         title: c.intl.formatToPlainString(c.t["2tN7ih"], {
           name: t.name
@@ -61,25 +61,25 @@ class p extends Chunk317770.Z {
           onClick: e.onClose,
           autoFocus: true
         }]
-      }, e), o = o = {
+      }, e), a = a = {
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           children: c.intl.string(c.t.MAxtks)
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
     }, {
       onCloseCallback: f,
       modalKey: d
-    }, p) : (0, l.ZDy)(async () => {
+    }, h) : (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("5598").then(n.bind(n, 621566));
@@ -87,11 +87,11 @@ class p extends Chunk317770.Z {
     }, {
       onCloseCallback: f,
       modalKey: d,
-      contextKey: p
+      contextKey: h
     })
   }
   handleModalClose(e) {
     (0, l.Mr3)(d)
   }
 }
-let h = new p
+let p = new h

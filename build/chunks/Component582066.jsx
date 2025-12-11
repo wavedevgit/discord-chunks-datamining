@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 582066, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,32 +18,32 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk5192 = require("./5192.js"),
   Chunk978088 = require("./978088.jsx"),
-  Chunk921072 = require("./921072.js"),
+  Chunk735703 = require("./735703.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk65992 = require("./65992.js");
+  Chunk801912 = require("./801912.js");
 
 function j(e) {
   var t, n;
   let {
     guildId: i
-  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), _ = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
-    onAdoptTag: v,
-    isAdopting: O
-  } = (0, u.Z)(i), C = (null == _ || null == (t = _.primaryGuild) ? true : t.identityGuildId) === i && (null == _ || null == (n = _.primaryGuild) ? true : n.identityEnabled) === true;
-  if (null != _ && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
+  } = e, j = (0, a.e7)([g.Z], () => g.Z.getGuild(i)), v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), {
+    onAdoptTag: O,
+    isAdopting: C
+  } = (0, u.Z)(i), y = (null == v || null == (t = v.primaryGuild) ? true : t.identityGuildId) === i && (null == v || null == (n = v.primaryGuild) ? true : n.identityEnabled) === true;
+  if (null != v && null != j && (0, c.jq)(j)) return (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(s.Text, {
       className: x.section,
       variant: "text-xs/medium",
       color: "text-muted",
-      children: C ? b.intl.string(h.default["6xBCpG"]) : b.intl.string(h.default.eSRKez)
+      children: y ? h.intl.string(b.default["6xBCpG"]) : h.intl.string(b.default.eSRKez)
     }), (0, r.jsx)("div", {
       className: x.divider
     }), (0, r.jsxs)("div", {
       className: l()(x.section, x.body),
-      children: [(0, r.jsx)(f.l, {
+      children: [(0, r.jsx)(p.l, {
         avatar: (0, r.jsx)(o.Z, {
-          user: _,
+          user: v,
           guildId: i,
           avatarSize: s.EFr.SIZE_40,
           "aria-hidden": true
@@ -54,14 +54,14 @@ function j(e) {
           guildTag: j.profile.tag,
           inline: false
         }),
-        username: p.ZP.getName(i, null, _),
-        message: b.intl.string(b.t["6OSasb"])
+        username: f.ZP.getName(i, null, v),
+        message: h.intl.string(h.t["6OSasb"])
       }), (0, r.jsx)(s.Button, {
         variant: "primary",
-        text: b.intl.string(b.t.cQDYRu),
-        onClick: v,
-        loading: O,
-        disabled: C,
+        text: h.intl.string(h.t.cQDYRu),
+        onClick: O,
+        loading: C,
+        disabled: y,
         fullWidth: true
       })]
     })]

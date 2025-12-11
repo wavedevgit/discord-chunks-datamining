@@ -1,4 +1,4 @@
-/** Chunk was on 86111 **/
+/** Chunk was on 8087 **/
 /** chunk id: 749068, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -12,8 +12,8 @@ let s = e => {
   let {
     skuId: t,
     overrideVariantIndex: n
-  } = e, s = (0, o.LJ)(t), c = (0, l.o)(s);
-  return null != s && (0, a.ox)(s) ? (0, r.jsx)(i.xvT, {
+  } = e, s = (0, o.LJ)(t), c = (0, a.o)(s);
+  return null != s && (0, l.ox)(s) ? (0, r.jsx)(i.xvT, {
     variant: "text-xs/medium",
     color: "text-subtle",
     children: s.variants[null != n ? n : c].variantLabel

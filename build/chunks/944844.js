@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk489863 = require("./489863.js"),
   Chunk497350 = require("./497350.js");
 async function u(e, t, n) {
-  var r, a, c, u;
+  var a, r, l, u;
   let p = (0, d.B)(e);
   if (null == p) throw await f(n, 1, "authorize"), Error("Unsupported client_id for two way link");
   let h = null;
@@ -26,14 +26,14 @@ async function u(e, t, n) {
     });
     h = e.url
   } catch (e) {
-    throw await f(n, null != (a = null == e || null == (r = e.body) ? true : r.code) ? a : 0, "authorize"), Error("error during two way authorize")
+    throw await f(n, null != (r = null == e || null == (a = e.body) ? true : a.code) ? r : 0, "authorize"), Error("error during two way authorize")
   }
   let x = null;
   try {
     i()(null != h, "No URL in authorize response");
     let {
       state: e
-    } = (0, l.xp)(h);
+    } = (0, c.xp)(h);
     i()(null != e, "Authorize URL state query parameter must be present"), x = e
   } catch (e) {
     throw await f(n, 2, "authorize"), Error("error parsing callback params")
@@ -44,32 +44,32 @@ async function u(e, t, n) {
       state: x
     })
   } catch (e) {
-    throw await f(n, null != (u = null == e || null == (c = e.body) ? true : c.code) ? u : 0, "callback"), Error("error during two way callback")
+    throw await f(n, null != (u = null == e || null == (l = e.body) ? true : l.code) ? u : 0, "callback"), Error("error during two way callback")
   }
 }
 async function f(e, t, n) {
   try {
-    await (0, c.i2)(e, t, n)
+    await (0, l.i2)(e, t, n)
   } catch (e) {}
 }
 
 function p(e, t, n) {
-  return r.useCallback(async (r, a) => {
-    if (!a) {
+  return a.useCallback(async (a, r) => {
+    if (!r) {
       try {
-        await (0, c.tR)(r.userCode, "denied")
+        await (0, l.tR)(a.userCode, "denied")
       } catch (e) {}
       e();
       return
     }
-    if (null == r.twoWayLinkCode) try {
-      await (0, c.tR)(r.userCode, "granted"), n(r)
+    if (null == a.twoWayLinkCode) try {
+      await (0, l.tR)(a.userCode, "granted"), n(a)
     } catch (e) {
-      t(r)
+      t(a)
     } else try {
-      await u(r.clientId, r.twoWayLinkCode, r.userCode), n(r)
+      await u(a.clientId, a.twoWayLinkCode, a.userCode), n(a)
     } catch (e) {
-      t(r)
+      t(a)
     }
   }, [e, t, n])
 }

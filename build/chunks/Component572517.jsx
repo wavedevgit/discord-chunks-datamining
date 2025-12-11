@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk347896 = require("./347896.js"),
   Chunk717401 = require("./717401.js"),
   Chunk897942 = require("./897942.jsx"),
-  Chunk432483 = require("./432483.js");
+  Chunk325117 = require("./325117.js");
 
 function h() {
   var e, t;
@@ -40,10 +40,10 @@ function h() {
       backgroundPosition: "right center, 0% 0%"
     });
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk432483.promotionalFooterBanner,
+    className: Chunk325117.promotionalFooterBanner,
     style: P,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk432483.avatar,
+      className: Chunk325117.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
         claimableRewards: j,
         maxRewardImageSrc: v.getImageUrl(f, require),
@@ -52,7 +52,7 @@ function h() {
       })
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
-      className: Chunk432483.bannerText,
+      className: Chunk325117.bannerText,
       color: "always-white",
       children: v.desktopBannerText(j.length)
     })]

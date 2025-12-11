@@ -1,13 +1,13 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 495804, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function a(e) {
   return (0, r.useMemo)(() => {
     if (null == e) return 0;
     let t = (null == e ? true : e.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.oCV[l.Eu4.TIER_3],

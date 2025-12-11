@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk26896 = require("./26896.js");
+  Chunk122083 = require("./122083.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -22,10 +22,10 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function f(e) {
   e.stopPropagation()
 }
-class f extends Chunk473749.PureComponent {
+class h extends Chunk473749.PureComponent {
   render() {
     let {
       className: e,
@@ -36,7 +36,7 @@ class f extends Chunk473749.PureComponent {
       onCancel: a,
       children: o
     } = this.props, s = (0, Chunk54381.jsx)("div", {
-      className: Chunk26896.operations,
+      className: Chunk122083.operations,
       children: Chunk388032.intl.format(Chunk388032.t.wDsPXs, {
         onCancel: () => Chunk925975(Chunk911969.id),
         onSave: this.onClickSave
@@ -45,7 +45,7 @@ class f extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsxs)("div", {
       className: module,
       ref: this.node,
-      onContextMenu: h,
+      onContextMenu: f,
       children: [Chunk957730({
         textValue: exports,
         richValue: require,

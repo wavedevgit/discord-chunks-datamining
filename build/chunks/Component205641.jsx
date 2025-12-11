@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 205641, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,7 +11,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk392711 = require("./392711.js"),
   d = require.n(Chunk392711),
   Chunk82923 = require("./82923.js"),
-  Chunk463299 = require("./463299.js");
+  Chunk583943 = require("./583943.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,8 +21,8 @@ function m(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var p = ((i = p || {})[i.HOVERING = 0] = "HOVERING", i[i.FLYING = 1] = "FLYING", i);
-let f = Object.freeze({
+var f = ((i = f || {})[i.HOVERING = 0] = "HOVERING", i[i.FLYING = 1] = "FLYING", i);
+let p = Object.freeze({
   HOVERING: {
     Y_DURATION: 1500,
     Y_VALUE: false,
@@ -61,13 +61,13 @@ let f = Object.freeze({
   }
 });
 
-function h(e, t, n, r) {
+function b(e, t, n, r) {
   return u.Z.sequence(d().times(t, i => u.Z.timing(e, {
     toValue: r(i),
     duration: n / t
   })))
 }
-class b extends(r = Chunk473749.Component) {
+class h extends(r = Chunk473749.Component) {
   componentDidMount() {
     this.startAnimation()
   }
@@ -89,63 +89,63 @@ class b extends(r = Chunk473749.Component) {
     this.y.setValue(0), this.x.setValue(0), this.opacity.setValue(1), this.fireScale.setValue(1)
   }
   startHoverAnimate() {
-    this.resetAnimation(), this.hoverAnimate(f.HOVERING.Y_VALUE)
+    this.resetAnimation(), this.hoverAnimate(p.HOVERING.Y_VALUE)
   }
   createFireAnimation(e, t, n, r) {
-    return h(this.fireScale, e, t, () => d().random(n, r))
+    return b(this.fireScale, e, t, () => d().random(n, r))
   }
   async hoverAnimate(e) {
     var t;
     if (0 !== this.props.stage || this.isUnmounted) return;
     let n = e > 1,
-      r = n ? f.HOVERING.FIRE_MIN_INTENSITY_FALLING : f.HOVERING.FIRE_MIN_INTENSITY_RISING,
-      i = n ? f.HOVERING.FIRE_MAX_INTENSITY_FALLING : f.HOVERING.FIRE_MAX_INTENSITY_RISING,
-      l = this.createFireAnimation(f.HOVERING.FIRE_COUNT, f.HOVERING.Y_DURATION, r, i),
+      r = n ? p.HOVERING.FIRE_MIN_INTENSITY_FALLING : p.HOVERING.FIRE_MIN_INTENSITY_RISING,
+      i = n ? p.HOVERING.FIRE_MAX_INTENSITY_FALLING : p.HOVERING.FIRE_MAX_INTENSITY_RISING,
+      l = this.createFireAnimation(p.HOVERING.FIRE_COUNT, p.HOVERING.Y_DURATION, r, i),
       a = u.Z.timing(this.y, {
         toValue: e,
-        duration: f.HOVERING.Y_DURATION,
+        duration: p.HOVERING.Y_DURATION,
         easing: u.Z.Easing.inOut(u.Z.Easing.ease)
       });
-    this.currentAnimation = u.Z.parallel([a, l]), await (null == (t = this.currentAnimation) ? true : t.start()), this.hoverAnimate(e * f.HOVERING.Y_VALUE_MODIFIER)
+    this.currentAnimation = u.Z.parallel([a, l]), await (null == (t = this.currentAnimation) ? true : t.start()), this.hoverAnimate(e * p.HOVERING.Y_VALUE_MODIFIER)
   }
   createShakeAnimation(e, t, n) {
-    return h(this.x, e, t, e => d().random(1, n) * (e % 2 == 0 ? 1 : false))
+    return b(this.x, e, t, e => d().random(1, n) * (e % 2 == 0 ? 1 : false))
   }
   async flyAnimate() {
     var e;
     let t = Chunk82923.Z.spring(this.y, {
-        toValue: f.FALLING.Y_VALUE,
+        toValue: p.FALLING.Y_VALUE,
         overshootClamping: true
       }),
       n = Chunk82923.Z.spring(this.fireScale, {
-        toValue: f.FALLING.FIRE_VALUE,
+        toValue: p.FALLING.FIRE_VALUE,
         overshootClamping: true
       }),
       r = Chunk82923.Z.parallel([exports, require]),
       i = Chunk82923.Z.timing(this.y, {
-        toValue: f.STAGING.Y_VALUE,
-        duration: f.STAGING.DURATION
+        toValue: p.STAGING.Y_VALUE,
+        duration: p.STAGING.DURATION
       }),
-      l = this.createShakeAnimation(f.STAGING.SHAKE_COUNT, f.STAGING.DURATION, f.STAGING.SHAKE_INTENSITY),
-      a = this.createFireAnimation(f.STAGING.FIRE_COUNT, f.STAGING.DURATION, f.STAGING.FIRE_MIN_INTENSITY, f.STAGING.FIRE_MAX_INTENSITY),
+      l = this.createShakeAnimation(p.STAGING.SHAKE_COUNT, p.STAGING.DURATION, p.STAGING.SHAKE_INTENSITY),
+      a = this.createFireAnimation(p.STAGING.FIRE_COUNT, p.STAGING.DURATION, p.STAGING.FIRE_MIN_INTENSITY, p.STAGING.FIRE_MAX_INTENSITY),
       s = Chunk82923.Z.parallel([i, Chunk54381, Chunk473749]),
       o = Chunk82923.Z.timing(this.y, {
-        toValue: f.FLYING.Y_VALUE,
-        duration: f.FLYING.DURATION,
-        easing: f.FLYING.Y_EASING
+        toValue: p.FLYING.Y_VALUE,
+        duration: p.FLYING.DURATION,
+        easing: p.FLYING.Y_EASING
       }),
       c = Chunk82923.Z.timing(this.x, {
-        toValue: f.FLYING.X_VALUE,
-        duration: f.FLYING.DURATION,
-        easing: f.FLYING.X_EASING
+        toValue: p.FLYING.X_VALUE,
+        duration: p.FLYING.DURATION,
+        easing: p.FLYING.X_EASING
       }),
       d = Chunk82923.Z.timing(this.opacity, {
-        toValue: f.FLYING.OPACITY_VALUE,
-        duration: f.FLYING.DURATION / f.FLYING.OPACITY_DURATION_DIVIDEND,
-        delay: f.FLYING.DURATION / f.FLYING.OPACITY_DURATION_DIVIDEND
+        toValue: p.FLYING.OPACITY_VALUE,
+        duration: p.FLYING.DURATION / p.FLYING.OPACITY_DURATION_DIVIDEND,
+        delay: p.FLYING.DURATION / p.FLYING.OPACITY_DURATION_DIVIDEND
       }),
-      g = this.createFireAnimation(f.FLYING.FIRE_COUNT, f.FLYING.DURATION, f.FLYING.FIRE_MIN_INTENSITY, f.FLYING.FIRE_MAX_INTENSITY),
-      m = Chunk82923.Z.parallel([o, Chunk392711, d, Chunk463299]);
+      g = this.createFireAnimation(p.FLYING.FIRE_COUNT, p.FLYING.DURATION, p.FLYING.FIRE_MIN_INTENSITY, p.FLYING.FIRE_MAX_INTENSITY),
+      m = Chunk82923.Z.parallel([o, Chunk392711, d, Chunk583943]);
     if (this.currentAnimation = Chunk82923.Z.sequence([r, Chunk120356, m]), await (null == (e = this.currentAnimation) ? true : module.start()), !this.isUnmounted) {
       let {
         onFlyingComplete: e
@@ -182,7 +182,7 @@ class b extends(r = Chunk473749.Component) {
       style: t
     } = this.props;
     return (0, Chunk54381.jsxs)(Chunk82923.Z.div, {
-      className: o()(Chunk463299.animation, module),
+      className: o()(Chunk583943.animation, module),
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -196,19 +196,19 @@ class b extends(r = Chunk473749.Component) {
         return e
       }({}, exports, this.getWumpusStyle()),
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk463299.fireTopWrapper,
+        className: Chunk583943.fireTopWrapper,
         children: (0, Chunk54381.jsx)(Chunk82923.Z.div, {
-          className: Chunk463299.fire,
+          className: Chunk583943.fire,
           style: this.getFireStyle()
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk463299.fireBottomWrapper,
+        className: Chunk583943.fireBottomWrapper,
         children: (0, Chunk54381.jsx)(Chunk82923.Z.div, {
-          className: Chunk463299.fire,
+          className: Chunk583943.fire,
           style: this.getFireStyle()
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk463299.wumpus
+        className: Chunk583943.wumpus
       })]
     })
   }
@@ -216,5 +216,5 @@ class b extends(r = Chunk473749.Component) {
     super(...e), m(this, "x", new u.Z.Value(0)), m(this, "y", new u.Z.Value(0)), m(this, "opacity", new u.Z.Value(1)), m(this, "fireScale", new u.Z.Value(1)), m(this, "currentAnimation", null), m(this, "isUnmounted", false)
   }
 }
-m(b, "Stages", p);
-let x = b
+m(h, "Stages", f);
+let x = h

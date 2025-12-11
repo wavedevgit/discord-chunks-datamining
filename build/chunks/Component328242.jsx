@@ -1,4 +1,4 @@
-/** Chunk was on 47863 **/
+/** Chunk was on 44183 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -25,9 +25,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk567126 = require("./567126.jsx"),
   Chunk615161 = require("./615161.jsx"),
   Chunk761274 = require("./761274.js"),
-  Chunk258587 = require("./258587.js"),
+  Chunk297940 = require("./297940.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk602804 = require("./602804.js");
+  Chunk132011 = require("./132011.js");
 
 function P(e) {
   let {
@@ -101,7 +101,7 @@ function E(e) {
     deviceSources: l,
     screenSources: s,
     sourceType: o,
-    fetchingSources: g,
+    fetchingSources: x,
     selectedSource: O,
     discordSourceId: P,
     hasPermission: E
@@ -114,16 +114,16 @@ function E(e) {
       t = {};
     for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
     return t
-  }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, b.jx)(M, A, n);
+  }), M = (0, d.e7)([g.Z], () => g.Z.quests), k = (0, S.jx)(M, A, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
-  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, b.ov)(t, null == k ? true : k.source.id, P, R) - (0, b.ov)(e, null == k ? true : k.source.id, P, R)) : n, [k, N, n, P, R]);
-  if (g) {
+  let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, S.ov)(t, null == k ? true : k.source.id, P, R) - (0, S.ov)(e, null == k ? true : k.source.id, P, R)) : n, [k, N, n, P, R]);
+  if (x) {
     if (false === E) {
       let e = false;
-      if ((0, x.isMac)()) {
+      if ((0, v.isMac)()) {
         var L, B;
         let t = null === f.Z || true === f.Z || null == (B = f.Z.remoteApp) || null == (L = B.getVersion) ? true : L.call(B);
-        e = !v.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
+        e = !b.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
       }
       return (0, r.jsxs)("div", {
         className: Z.errorBox,
@@ -151,31 +151,31 @@ function E(e) {
     children: G.map(e => (0, r.jsx)(I, {
       onClick: t,
       source: e,
-      selected: null != O && "windowHandle" in O ? (0, S.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
+      selected: null != O && "windowHandle" in O ? (0, _.Z)(e.id, O.windowHandle) : (null == O ? true : O.id) === e.id
     }, e.id))
   })
 }
 
 function T() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk602804.emptyState,
+    className: Chunk132011.emptyState,
     children: [(0, Chunk54381.jsx)(Chunk481060.Odl, {
       size: "md",
       color: Chunk481060.TVs.colors.ICON_MUTED,
-      className: Chunk602804.emptyIcon
+      className: Chunk132011.emptyIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-lg/medium",
       color: "header-primary",
-      className: Chunk602804.emptyHeader,
-      children: Chunk388032.intl.string(Chunk258587.default["/z3YaZ"])
+      className: Chunk132011.emptyHeader,
+      children: Chunk388032.intl.string(Chunk297940.default["/z3YaZ"])
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      className: Chunk602804.emptyBody,
-      children: Chunk388032.intl.string(Chunk258587.default.agwSGA)
+      className: Chunk132011.emptyBody,
+      children: Chunk388032.intl.string(Chunk297940.default.agwSGA)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
-      children: Chunk388032.intl.format(Chunk258587.default.xpVzr3, {
+      children: Chunk388032.intl.format(Chunk297940.default.xpVzr3, {
         helpdeskURL: Chunk63063.Z.getArticleURL(0x53d41ade17)
       })
     })]

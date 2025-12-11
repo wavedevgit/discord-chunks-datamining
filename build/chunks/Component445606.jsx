@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 445606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk907862 = require("./907862.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk30399 = require("./30399.js");
+  Chunk993516 = require("./993516.js");
 
 function s(e) {
   let {
@@ -37,16 +37,16 @@ function s(e) {
     },
     onRequestClose: s,
     actions: [{
-      text: o.intl.string(o.t.RzWDqY),
+      text: a.intl.string(a.t.RzWDqY),
       variant: "primary",
       onClick: c
     }],
     targetElementRef: t,
-    title: o.intl.string(o.t.Ylu2JM),
-    body: o.intl.string(o.t.vgylLQ),
+    title: a.intl.string(a.t.Ylu2JM),
+    body: a.intl.string(a.t.vgylLQ),
     graphic: {
       type: "image",
-      src: a.Z
+      src: o.Z
     }
   })
 }

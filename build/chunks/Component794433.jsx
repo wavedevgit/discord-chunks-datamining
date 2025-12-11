@@ -12,7 +12,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk599684 = require("./599684.js");
+  Chunk979322 = require("./979322.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,9 +36,9 @@ function p(e) {
   return e
 }
 let _ = Object.freeze({
-  SMALL: Chunk599684.small,
-  MEDIUM: Chunk599684.medium,
-  LARGE: Chunk599684.large
+  SMALL: Chunk979322.small,
+  MEDIUM: Chunk979322.medium,
+  LARGE: Chunk979322.large
 });
 var m = function(e) {
   return e.MEMBER = "MEMBER", e.ROLE = "ROLE", e.CHANNEL = "CHANNEL", e.USER = "USER", e

@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk914010 = require("./914010.js"),
   Chunk727785 = require("./727785.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704563 = require("./704563.js");
+  Chunk331924 = require("./331924.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,11 +71,11 @@ function T(e) {
 
 function C() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk704563.voiceListSearchEmpty,
+    className: Chunk331924.voiceListSearchEmpty,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: Chunk704563.noVoiceChannelSelected,
+      className: Chunk331924.noVoiceChannelSelected,
       children: Chunk388032.intl.string(Chunk388032.t.zHjCd1)
     })
   })

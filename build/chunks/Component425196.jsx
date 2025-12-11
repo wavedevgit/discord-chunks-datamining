@@ -33,10 +33,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk391876 = require("./391876.jsx"),
   Chunk883166 = require("./883166.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk862474 = require("./862474.js"),
+  Chunk547081 = require("./547081.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk417788 = require("./417788.js"),
-  Chunk278607 = require("./278607.js");
+  Chunk554445 = require("./554445.js"),
+  Chunk187842 = require("./187842.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -187,20 +187,20 @@ function V() {
       avatarDecoration: t
     } = (0, Chunk442837.e7)([Chunk5888.Z], () => Chunk5888.Z.getCheckpointData());
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk278607.contentSectionInnerClaim,
+    className: Chunk187842.contentSectionInnerClaim,
     children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
       variant: "eyebrow",
-      children: Chunk388032.intl.string(Chunk862474.default["4R3VzK"])
+      children: Chunk388032.intl.string(Chunk547081.default["4R3VzK"])
     }), (0, Chunk54381.jsx)(Chunk391876.Z, {
       variant: "heading-lg/medium",
-      className: Chunk278607.claimSubtitle,
-      children: Chunk388032.intl.string(Chunk862474.default["94azAy"])
+      className: Chunk187842.claimSubtitle,
+      children: Chunk388032.intl.string(Chunk547081.default["94azAy"])
     }), null != module && (0, Chunk54381.jsx)(Chunk204418.Z, {
       user: module,
       guildId: null,
       avatarDecorationOverride: exports
     }), (0, Chunk54381.jsx)(Chunk829468.Z, {
-      className: Chunk278607.claimButton
+      className: Chunk187842.claimButton
     }), (0, Chunk54381.jsx)(Chunk391876.Z, {
       variant: "heading-sm/medium",
       children: Chunk388032.intl.format(Chunk388032.t.eZSTa5, {

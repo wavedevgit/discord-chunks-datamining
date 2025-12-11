@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 621586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,17 +22,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk701488 = require("./701488.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk842350 = require("./842350.js");
-let x = "vc-gifting-".concat((0, Chunk772848.Z)());
+  Chunk542519 = require("./542519.js");
+let E = "vc-gifting-".concat((0, Chunk772848.Z)());
 
-function E(e) {
+function j(e) {
   var t;
   let {
     isHovered: n,
     closePopout: l,
-    onMouseEnter: E,
-    onMouseLeave: j,
-    channel: S
+    onMouseEnter: j,
+    onMouseLeave: S,
+    channel: _
   } = e;
   r.useEffect(() => {
     n || l()
@@ -50,41 +50,41 @@ function E(e) {
       wishlistItems: T,
       wishlistItemSkuIds: N
     } = (0, m.Z)({
-      guildId: (0, f.ac)(),
+      guildId: (0, h.ac)(),
       numWishlistItems: m.W
     });
   return r.useEffect(() => {
-    0 !== N.length && h.default.track(C.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
-      guild_id: S.guild_id,
-      channel_id: S.id,
+    0 !== N.length && f.default.track(C.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+      guild_id: _.guild_id,
+      channel_id: _.id,
       sku_ids: N
     })
-  }, [S.id, S.guild_id, N]), (0, i.jsx)(d.Z, {
+  }, [_.id, _.guild_id, N]), (0, i.jsx)(d.Z, {
     children: (0, i.jsx)(a.VqE, {
-      "aria-labelledby": x,
+      "aria-labelledby": E,
       modal: false,
       children: (0, i.jsxs)("div", {
-        className: O.container,
-        onMouseEnter: E,
-        onMouseLeave: j,
+        className: x.container,
+        onMouseEnter: j,
+        onMouseLeave: S,
         children: [(0, i.jsx)(a.X6q, {
-          className: O.title,
+          className: x.title,
           variant: "text-lg/bold",
           color: "text-strong",
-          children: _.intl.string(_.t.xLP3bi)
+          children: O.intl.string(O.t.xLP3bi)
         }), (0, i.jsx)(a.xvT, {
-          className: O.subtitle,
+          className: x.subtitle,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: _.intl.format(_.t["+SqhBF"], {
-            applicationName: null != (t = null == P ? true : P.name) ? t : _.intl.string(_.t["/1hhto"])
+          children: O.intl.format(O.t["+SqhBF"], {
+            applicationName: null != (t = null == P ? true : P.name) ? t : O.intl.string(O.t["/1hhto"])
           })
         }), (0, i.jsx)("div", {
-          className: O.wishlistItemsContainer,
+          className: x.wishlistItemsContainer,
           children: Z || 0 === T.length ? (0, i.jsx)(a.$jN, {
-            className: O.loading
+            className: x.loading
           }) : T.map(e => (0, i.jsx)(s.i_, {
-            body: _.intl.string(_.t["4yiU7x"]),
+            body: O.intl.string(O.t["4yiU7x"]),
             asset: I,
             assetSize: p.EU,
             position: "top",

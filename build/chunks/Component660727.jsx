@@ -1,5 +1,5 @@
 /** Chunk was on 22942 **/
-/** chunk id: 660727, original params: n,e,a (module,exports,require) **/
+/** chunk id: 660727, original params: e,n,a (module,exports,require) **/
 require.d(exports, {
   default: () => C
 }), require("./388685.js");
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk956664 = require("./956664.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk759415 = require("./759415.js"),
+  Chunk292215 = require("./292215.js"),
   Chunk84717 = require("./84717.js");
 
 function h() {
@@ -25,27 +25,27 @@ function h() {
     extensions: ["jpg", "jpeg", "png"]
   }]
 }
-async function j(n) {
-  let e = (0, p.gT)({
-      id: n.id,
+async function j(e) {
+  let n = (0, p.gT)({
+      id: e.id,
       animated: false,
       size: 48,
       forcePNG: true
     }),
-    a = await fetch(e),
+    a = await fetch(n),
     t = await a.blob();
   return await (0, m.fD)(t)
 }
-let C = function(n) {
+let C = function(e) {
   let {
-    guildId: e,
+    guildId: n,
     onUploadIcon: a,
     onSelectUnicodeEmoji: p,
     onClose: m,
     transitionState: C
-  } = n, v = (0, d.Dt)(), b = u.ZP.getDefaultChannel(e), [N, y] = o.useState("tab-id-role-icon-file-upload"), [_, k] = o.useState(false), z = (0, l.Z)(h);
+  } = e, v = (0, d.Dt)(), b = u.ZP.getDefaultChannel(n), [N, y] = o.useState("tab-id-role-icon-file-upload"), [k, z] = o.useState(false), E = (0, l.Z)(h);
   return o.useEffect(() => {
-    k(false)
+    z(false)
   }, [N]), (0, t.jsx)(i.Y0X, {
     transitionState: C,
     "aria-labelledby": v,
@@ -90,18 +90,18 @@ let C = function(n) {
             className: I.uploadInfo,
             children: x.intl.string(x.t["mz++Qq"])
           }), (0, t.jsx)(c.Z, {
-            onChange: n => {
-              k(false), a(n), m()
+            onChange: e => {
+              z(false), a(e), m()
             },
             onFileSizeError: () => {
-              k(true)
+              z(true)
             },
             maxFileSizeBytes: 256e3,
-            filters: z,
+            filters: E,
             text: x.intl.string(x.t.sdCQY4),
             size: "md",
             variant: "primary"
-          }), _ ? (0, t.jsx)(i.Text, {
+          }), k ? (0, t.jsx)(i.Text, {
             className: I.uploadError,
             color: "text-feedback-critical",
             variant: "text-sm/normal",
@@ -111,14 +111,14 @@ let C = function(n) {
       }) : null, "tab-id-role-icon-emoji" === N ? (0, t.jsx)(r.Z, {
         hasTabWrapper: true,
         closePopout: () => m(),
-        onSelectEmoji: async n => {
+        onSelectEmoji: async e => {
           let {
-            emoji: e
-          } = n;
-          if ((null == e ? true : e.id) != null)(null == e ? true : e.type) === s.B.GUILD && a(await j(e));
-          else if ((null == e ? true : e.surrogates) != null) {
+            emoji: n
+          } = e;
+          if ((null == n ? true : n.id) != null)(null == n ? true : n.type) === s.B.GUILD && a(await j(n));
+          else if ((null == n ? true : n.surrogates) != null) {
             var t, o;
-            p(null != (o = null == (t = e.defaultDiversityChild) ? true : t.surrogates) ? o : e.surrogates)
+            p(null != (o = null == (t = n.defaultDiversityChild) ? true : t.surrogates) ? o : n.surrogates)
           }
           m()
         },

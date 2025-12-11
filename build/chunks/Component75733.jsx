@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 75733, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk434404 = require("./434404.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk83552 = require("./83552.js");
+  Chunk857413 = require("./857413.js");
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,11 +34,11 @@ function p(e) {
   }
   return e
 }
-let f = {
+let p = {
   label: ""
 };
 
-function h(e) {
+function b(e) {
   let {
     emoji: t,
     disabled: n,
@@ -74,7 +74,7 @@ function h(e) {
       let {
         isShown: l
       } = t;
-      return (0, r.jsx)(s.Z, (n = p({}, e), i = i = {
+      return (0, r.jsx)(s.Z, (n = f({}, e), i = i = {
         ref: g,
         tabIndex: 0,
         active: l,
@@ -93,7 +93,7 @@ function h(e) {
   })
 }
 
-function b(e) {
+function h(e) {
   let {
     guildId: t,
     trait: n,
@@ -117,7 +117,7 @@ function b(e) {
     s(t, a, {
       label: e
     })
-  }, [t, a, s]), g = i.useMemo(() => n.emoji, [n.emoji]), p = null != n.label && n.label.length > 0 || null != n.emoji;
+  }, [t, a, s]), g = i.useMemo(() => n.emoji, [n.emoji]), f = null != n.label && n.label.length > 0 || null != n.emoji;
   return (0, r.jsx)("div", {
     className: m.traitWrapper,
     children: (0, r.jsx)(l.oil, {
@@ -127,14 +127,14 @@ function b(e) {
       maxLength: 24,
       leading: {
         type: "emoji",
-        button: (0, r.jsx)(h, {
+        button: (0, r.jsx)(b, {
           emoji: g,
           disabled: o,
           handleSelectEmoji: d
         })
       },
       clearable: {
-        show: p
+        show: f
       },
       onClear: c
     })
@@ -148,7 +148,7 @@ function j(e) {
     canManageGuild: n
   } = e, a = i.useMemo(() => t.traits, [t]), s = i.useCallback((e, t, n) => {
     let r = [...a];
-    r[t] = p({}, a[t], n), d.Z.updateGuildProfile(e, {
+    r[t] = f({}, a[t], n), d.Z.updateGuildProfile(e, {
       traits: r
     })
   }, [a]);
@@ -159,9 +159,9 @@ function j(e) {
       className: m.grid,
       children: x.map(e => {
         var i;
-        return (0, r.jsx)(b, {
+        return (0, r.jsx)(h, {
           guildId: t.id,
-          trait: null != (i = a[e]) ? i : f,
+          trait: null != (i = a[e]) ? i : p,
           index: e,
           onTraitUpdate: s,
           disabled: !n

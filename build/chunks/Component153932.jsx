@@ -1,7 +1,7 @@
 /** Chunk was on 36312 **/
 /** chunk id: 153932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => k
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk974042 = require("./974042.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk862998 = require("./862998.js");
+  Chunk52382 = require("./52382.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ function P(e) {
     e.stopPropagation(), l.Z.cancelFriendRequest(t.id, {
       location: "Spam requests modal"
     })
-  }, a = e => {
+  }, c = e => {
     e.stopPropagation(), l.Z.addRelationship({
       userId: t.id,
       context: {
@@ -93,13 +93,13 @@ function P(e) {
         }), (0, s.jsxs)("div", {
           className: y.actions,
           children: [(0, s.jsx)(p.Z, {
-            icon: c.dz2,
+            icon: a.dz2,
             actionType: p.Z.ActionTypes.ACCEPT,
             tooltip: O.intl.string(O.t.Zcibdf),
-            onClick: a,
+            onClick: c,
             shouldHighlight: e
           }), (0, s.jsx)(p.Z, {
-            icon: c.Dio,
+            icon: a.Dio,
             actionType: p.Z.ActionTypes.DENY,
             tooltip: O.intl.string(O.t.xuio0C),
             onClick: r,
@@ -111,13 +111,13 @@ function P(e) {
   })
 }
 
-function _(e) {
+function k(e) {
   let {
     transitionState: t,
     onClose: n
   } = e, {
-    rows: c
-  } = (0, a.cj)([f.ZP], () => f.ZP.getState()), u = c.filter(g.pJs.PENDING_IGNORED), p = c.filter(g.pJs.SPAM), d = p.length + u.length;
+    rows: a
+  } = (0, c.cj)([f.ZP], () => f.ZP.getState()), u = a.filter(g.pJs.PENDING_IGNORED), p = a.filter(g.pJs.SPAM), d = p.length + u.length;
   i.useEffect(() => {
     0 === d && n()
   }, [d, n]);

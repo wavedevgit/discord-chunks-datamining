@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk777207 = require("./777207.jsx"),
-  Chunk549097 = require("./549097.js");
+  Chunk282029 = require("./282029.js");
 let l = {
   blurpleLight: "blurple-light",
   blurpleMedium: "blurple-medium",

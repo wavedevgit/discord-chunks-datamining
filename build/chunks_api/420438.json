@@ -1,1 +1,1 @@
-{"id":"420438","type":"store","data":{"name":"GuildPromptsStore","functions":[{"name":"initialize","args":["e"]},{"name":"hasViewedPrompt","args":["e","t"]},{"name":"getState","args":[]}],"events":["GUILD_PROMPT_VIEWED","GUILD_DELETE"]},"fromModule":{"id":"91053"}}
+{"id":"420438","type":"store","data":{"name":"GuildPromptsStore","functions":[{"name":"initialize","args":["e"]},{"name":"hasViewedPrompt","args":["e","t"]},{"name":"getState","args":[]}],"events":["GUILD_PROMPT_VIEWED","GUILD_DELETE"]},"fromModule":{"id":"41700"}}

@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 173951, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -12,8 +12,8 @@ var Chunk436846 = require("./436846.jsx"),
 function o(e) {
   var t, n, {
       user: o,
-      widget: s,
-      guildId: c,
+      widget: c,
+      guildId: s,
       channelId: u,
       disableInteraction: d
     } = e,
@@ -22,17 +22,17 @@ function o(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]);
-  return (0, r.jsx)(l.Z, (t = function(e) {
+  return (0, r.jsx)(a.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -51,18 +51,18 @@ function o(e) {
     return e
   }({
     userId: o.id,
-    widget: s,
+    widget: c,
     disableInteraction: d
   }, f), n = n = {
-    children: s.games.length > 0 ? (0, r.jsx)(a.Z, {
+    children: c.games.length > 0 ? (0, r.jsx)(l.Z, {
       userId: o.id,
-      widgetType: s.type,
-      games: s.games,
-      guildId: c,
+      widgetType: c.type,
+      games: c.games,
+      guildId: s,
       channelId: u,
       disableInteraction: d
     }) : (0, r.jsx)(i.Z, {
-      widget: s
+      widget: c
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

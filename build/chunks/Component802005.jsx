@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 802005, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -26,13 +26,13 @@ function m() {
     errorDetails: Chunk566084.Z.errorDetails
   })), {
     guild: m,
-    submitting: p,
-    errors: f,
-    hasChanges: h
-  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), b = Chunk473749.useMemo(() => null != require ? (0, Chunk196961.i)(null == require ? true : require.code) : (0, Chunk203377.LG)(f), [f, require]), x = Chunk473749.useCallback(async () => {
+    submitting: f,
+    errors: p,
+    hasChanges: b
+  } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps()), h = Chunk473749.useMemo(() => null != require ? (0, Chunk196961.i)(null == require ? true : require.code) : (0, Chunk203377.LG)(p), [p, require]), x = Chunk473749.useCallback(async () => {
     if (null != m && (exports && await (0, Chunk736617.en)(m.id, module, {
         throwErr: true
-      }), h)) {
+      }), b)) {
       let e = {
         premiumProgressBarEnabled: m.premiumProgressBarEnabled,
         banner: m.banner,
@@ -42,12 +42,12 @@ function m() {
         throwErr: true
       })
     }
-  }, [m, h, exports, module]), j = Chunk473749.useCallback(() => {
+  }, [m, b, exports, module]), j = Chunk473749.useCallback(() => {
     null != m && (Chunk434404.Z.init(m.id), (0, Chunk736617.H7)())
   }, [m]);
   return (0, Chunk54381.jsx)(Chunk796027.Z, {
-    submitting: p,
-    errorMessage: b,
+    submitting: f,
+    errorMessage: h,
     onSave: x,
     onReset: j
   })

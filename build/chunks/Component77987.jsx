@@ -2,7 +2,7 @@
 /** chunk id: 77987, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  e: () => l
+  e: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,33 +11,33 @@ var Chunk314897 = require("./314897.js"),
   Chunk857458 = require("./857458.jsx"),
   Chunk981631 = require("./981631.js");
 
-function l(e, t) {
-  var n, l;
-  let c = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
+function c(e, t) {
+  var n, c;
+  let l = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
     passProps: true
   };
 
   function d(n) {
-    return !(0, i.$8)() && a.default.getLoginStatus() !== s.u34.LOGGING_IN && a.default.allowLogoutRedirect() ? null != t ? (0, r.jsx)(t, {
-      renderRedirect: (0, r.jsx)(o.Z, {})
-    }) : (0, r.jsx)(o.Z, {}) : (0, r.jsx)(e, function(e) {
+    return !(0, i.$8)() && r.default.getLoginStatus() !== s.u34.LOGGING_IN && r.default.allowLogoutRedirect() ? null != t ? (0, a.jsx)(t, {
+      renderRedirect: (0, a.jsx)(o.Z, {})
+    }) : (0, a.jsx)(o.Z, {}) : (0, a.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          a = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        }))), a.forEach(function(t) {
+          var a;
+          a = n[t], t in e ? Object.defineProperty(e, t, {
+            value: a,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = r
+          }) : e[t] = a
         })
       }
       return e
-    }({}, c.passProps ? n : null))
+    }({}, l.passProps ? n : null))
   }
-  return d.displayName = "Authenticated(".concat(null != (l = null != (n = e.displayName) ? n : e.name) ? l : "<Unknown>", ")"), d
+  return d.displayName = "Authenticated(".concat(null != (c = null != (n = e.displayName) ? n : e.name) ? c : "<Unknown>", ")"), d
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 964821, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk190007 = require("./190007.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk784547 = require("./784547.js");
+  Chunk767757 = require("./767757.js");
 
 function x(e) {
   let {
@@ -26,23 +26,23 @@ function x(e) {
     index: l,
     onDragStart: x,
     onDragReset: j,
-    onDragComplete: _,
-    draggingId: v
-  } = e, O = (0, d.ZP)(), {
-    drag: C,
-    drop: y,
-    dragSourcePosition: N,
-    setIsDraggable: E
+    onDragComplete: v,
+    draggingId: O
+  } = e, C = (0, d.ZP)(), {
+    drag: y,
+    drop: N,
+    dragSourcePosition: E,
+    setIsDraggable: I
   } = (0, m.Z)({
     type: "ONBOARDING_CONNECTION_CARD",
     index: l,
     optionId: t.id,
     onDragStart: () => x(t.id),
-    onDragComplete: e => _(e),
+    onDragComplete: e => v(e),
     onDragReset: () => j()
-  }), I = i.useCallback(() => {
-    (0, p.xI)(l)
-  }, [l]), S = i.useCallback(() => {
+  }), S = i.useCallback(() => {
+    (0, f.xI)(l)
+  }, [l]), _ = i.useCallback(() => {
     (0, c.ZDy)(async () => {
       let {
         default: e
@@ -81,9 +81,9 @@ function x(e) {
         }), i))
       }
     })
-  }, [t, l]), T = t.connection_type === f.zz.APPLICATION, P = t.application_id, w = (0, s.e7)([g.Z], () => T && null != P ? g.Z.getApplication(P) : null, [T, P]), Z = i.useMemo(() => (function(e, t, n) {
+  }, [t, l]), T = t.connection_type === p.zz.APPLICATION, P = t.application_id, w = (0, s.e7)([g.Z], () => T && null != P ? g.Z.getApplication(P) : null, [T, P]), Z = i.useMemo(() => (function(e, t, n) {
     var r, i, l;
-    if (e.connection_type === f.zz.APPLICATION && null != e.application_id) {
+    if (e.connection_type === p.zz.APPLICATION && null != e.application_id) {
       if (null != n) return {
         name: n.name,
         icon: null != (r = n.getIconURL(128)) ? r : null
@@ -99,30 +99,30 @@ function x(e) {
       }
     }
     return {
-      name: h.intl.string(h.t.kFlgsx),
+      name: b.intl.string(b.t.kFlgsx),
       icon: null
     }
-  })(t, O, w), [t, O, w]);
+  })(t, C, w), [t, C, w]);
   return (0, r.jsxs)("div", {
-    className: a()(b.card, {
-      [b.dropIndicatorBefore]: null != N && l < N,
-      [b.dropIndicatorAfter]: null != N && l > N
+    className: a()(h.card, {
+      [h.dropIndicatorBefore]: null != E && l < E,
+      [h.dropIndicatorAfter]: null != E && l > E
     }),
-    onMouseEnter: () => E(true),
-    onMouseLeave: () => E(false),
+    onMouseEnter: () => I(true),
+    onMouseLeave: () => I(false),
     ref: e => {
-      C(y(e))
+      y(N(e))
     },
     children: [(0, r.jsx)("div", {
-      className: b.dragHandle,
+      className: h.dragHandle,
       children: (0, r.jsx)(c.Vni, {
         size: "sm",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: b.leftContent,
+      className: h.leftContent,
       children: [(0, r.jsx)("div", {
-        className: b.icon,
+        className: h.icon,
         children: null != Z.icon ? (0, r.jsx)("img", {
           src: Z.icon,
           alt: "",
@@ -135,7 +135,7 @@ function x(e) {
           color: "currentColor"
         })
       }), (0, r.jsxs)("div", {
-        className: b.textContent,
+        className: h.textContent,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-strong",
@@ -143,28 +143,28 @@ function x(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: null != t.description && t.description.length > 0 ? t.description : h.intl.string(h.t["4nNtsP"])
+          children: null != t.description && t.description.length > 0 ? t.description : b.intl.string(b.t["4nNtsP"])
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: b.actions,
+      className: h.actions,
       children: [(0, r.jsx)(o.u, {
-        text: h.intl.string(h.t.bt75uw),
+        text: b.intl.string(b.t.bt75uw),
         children: (0, r.jsx)(c.P3F, {
-          className: b.editButton,
-          onClick: S,
-          "aria-label": h.intl.string(h.t.bt75uw),
+          className: h.editButton,
+          onClick: _,
+          "aria-label": b.intl.string(b.t.bt75uw),
           children: (0, r.jsx)(c.vdY, {
             size: "xs",
             color: "currentColor"
           })
         })
       }), (0, r.jsx)(o.u, {
-        text: h.intl.string(h.t.N86XcP),
+        text: b.intl.string(b.t.N86XcP),
         children: (0, r.jsx)(c.P3F, {
-          className: b.removeButton,
-          onClick: I,
-          "aria-label": h.intl.string(h.t.N86XcP),
+          className: h.removeButton,
+          onClick: S,
+          "aria-label": b.intl.string(b.t.N86XcP),
           children: (0, r.jsx)(c.XHJ, {
             size: "xs",
             color: "currentColor"

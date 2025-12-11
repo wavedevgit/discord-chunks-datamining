@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,49 +18,49 @@ var Chunk54381 = require("./54381.js"),
   Chunk179809 = require("./179809.jsx"),
   Chunk588275 = require("./588275.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk264096 = require("./264096.js");
+  Chunk284410 = require("./284410.js");
 
-function y(e) {
+function O(e) {
   let {
     onActivate: t,
     children: n
   } = e, s = i.useRef(null), d = (0, l.e7)([u.Z], () => u.Z.hasJoinRequestCoackmark()), f = i.useCallback(() => {
     c.ZP.clearCoachmark()
-  }, []), p = (0, a.Z)(d), h = i.useRef(null);
+  }, []), h = (0, o.Z)(d), p = i.useRef(null);
   return i.useEffect(() => {
-    if (d && d !== p) {
+    if (d && d !== h) {
       var e, n, r, i, l;
-      t(), null == (l = h.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
+      t(), null == (l = p.current) || null == (i = l.ref) || null == (r = i.current) || null == (n = r.layerRef) || null == (e = n.current) || e.updatePosition()
     }
-  }, [h, d, p, t]), (0, r.jsxs)("div", {
-    className: _.container,
-    children: [(0, r.jsx)(o.yRy, {
-      ref: h,
+  }, [p, d, h, t]), (0, r.jsxs)("div", {
+    className: y.container,
+    children: [(0, r.jsx)(a.yRy, {
+      ref: p,
       targetElementRef: s,
       shouldShow: d,
       renderPopout: () => (0, r.jsxs)("div", {
-        className: _.popoutContainer,
+        className: y.popoutContainer,
         children: [(0, r.jsxs)("div", {
-          className: _.popoutContent,
+          className: y.popoutContent,
           children: [(0, r.jsxs)("div", {
-            className: _.coachmarkTextContainer,
-            children: [(0, r.jsx)(o.Heading, {
+            className: y.coachmarkTextContainer,
+            children: [(0, r.jsx)(a.Heading, {
               variant: "heading-md/medium",
-              children: b.intl.string(b.t["0YV0YE"])
-            }), (0, r.jsx)(o.Text, {
+              children: m.intl.string(m.t["0YV0YE"])
+            }), (0, r.jsx)(a.Text, {
               variant: "text-xs/normal",
               color: "text-muted",
-              children: b.intl.string(b.t["0UQVDL"])
+              children: m.intl.string(m.t["0UQVDL"])
             })]
-          }), (0, r.jsx)(o.Button, {
+          }), (0, r.jsx)(a.Button, {
             variant: "primary",
             size: "sm",
-            text: b.intl.string(b.t["4r+amb"]),
+            text: m.intl.string(m.t["4r+amb"]),
             fullWidth: true,
             onClick: f
           })]
         }), (0, r.jsx)("div", {
-          className: _.popoutCaretLeft
+          className: y.popoutCaretLeft
         })]
       }),
       position: "right",
@@ -87,7 +87,7 @@ function y(e) {
           }
           return e
         }({}, e), n = n = {
-          className: _.popoutAnchor,
+          className: y.popoutAnchor,
           ref: s
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -104,46 +104,46 @@ function y(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     onActivate: t
-  } = e, [n, O] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
-    let e = (0, p.qQ)({
+  } = e, [n, v] = i.useState(false), j = (0, l.e7)([d.Z], () => d.Z.getGuildId()), C = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, p.Z)(), E = (0, o.Z)(j), S = i.useMemo(() => {
+    let e = (0, h.qQ)({
       folderId: f.S.PENDING_JOIN_REQUESTS_FOLDER,
-      folderName: b.intl.string(b.t["scsU+l"]),
+      folderName: m.intl.string(m.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });
-    for (let t of x) e.children.push((0, p.Mg)(t, e.id));
+    for (let t of x) e.children.push((0, h.Mg)(t, e.id));
     return e
   }, [x, n]);
   i.useEffect(() => {
-    n && !j && s.Z.fetchRequestToJoinGuilds()
-  }, [n, j]);
-  let S = null != v && x.includes(v);
+    n && !C && s.Z.fetchRequestToJoinGuilds()
+  }, [n, C]);
+  let I = null != j && x.includes(j);
   return (i.useEffect(() => {
-    !n && S && C !== v && O(true)
-  }, [n, S, C, v]), 0 === x.length) ? null : (0, r.jsx)(y, {
+    !n && I && E !== j && v(true)
+  }, [n, I, E, j]), 0 === x.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
-      folderNode: E,
+      folderNode: S,
       expanded: n,
-      selected: S,
+      selected: I,
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {
-        O(!n), c.ZP.clearCoachmark()
+        v(!n), c.ZP.clearCoachmark()
       },
       folderButtonSize: "icon",
       folderButtonContent: (0, r.jsx)("div", {
-        className: _.pendingFolderButtonIcon,
-        children: (0, r.jsx)(o.wGF, {
+        className: y.pendingFolderButtonIcon,
+        children: (0, r.jsx)(a.wGF, {
           size: "sm",
           color: "currentColor"
         })
       }),
       renderChildNode: function(e, t, n) {
-        return e.type !== p.eD.GUILD ? null : (0, r.jsx)(m.Z, {
+        return e.type !== h.eD.GUILD ? null : (0, r.jsx)(b.Z, {
           guildNode: e,
           "aria-setsize": n,
           "aria-posinset": t

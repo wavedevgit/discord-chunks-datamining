@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk898625 = require("./898625.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk18545 = require("./18545.js");
+  Chunk643854 = require("./643854.js");
 
 function S(e) {
   let {
@@ -61,12 +61,12 @@ let T = e => {
     ref: n,
     width: o,
     height: c
-  } = (0, s.ZP)(), [p, f] = i.useState(y.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, s.ZP)(), [p, f] = i.useState(y.hO.INITIAL), T = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: j,
     guildPreviewDisabled: P
-  } = (0, l.cj)([_.Z], () => ({
-    hasFetchedRequestToJoinGuilds: _.Z.hasFetchedRequestToJoinGuilds,
-    guildPreviewDisabled: _.Z.getJoinRequestGuild(t)
+  } = (0, l.cj)([b.Z], () => ({
+    hasFetchedRequestToJoinGuilds: b.Z.hasFetchedRequestToJoinGuilds,
+    guildPreviewDisabled: b.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
     null != N && (0, u.uL)(v.Z5c.CHANNEL(t))
@@ -122,7 +122,7 @@ let T = e => {
               guild: P
             });
           default:
-            return (0, r.jsx)(b.s, {
+            return (0, r.jsx)(_.s, {
               onDiscardApplication: L,
               onContinueApplication: () => (0, h.hk)(t),
               guild: P

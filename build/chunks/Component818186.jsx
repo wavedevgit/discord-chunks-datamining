@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 818186, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,29 +14,29 @@ var Chunk692547 = require("./692547.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk658235 = require("./658235.js");
+  Chunk426153 = require("./426153.js");
 
-function h(e) {
+function p(e) {
   let {
     closePopout: t
   } = e, n = (0, c.If)();
   return (0, r.jsx)(l.u, {
     asContainer: true,
     text: f.intl.string(f.t["lMR96+"]),
-    children: (0, r.jsxs)(o.P3F, {
+    children: (0, r.jsxs)(a.P3F, {
       "aria-label": "".concat(f.intl.string(f.t["lMR96+"]), ", ").concat(n),
-      className: p.friendRequestsButton,
+      className: h.friendRequestsButton,
       onClick: () => {
         u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: s.ud.FRIEND_REQUESTS_BUTTON_CLICK
-        }), a.Z.transitionToSection(d.pJs.PENDING, {
+        }), o.Z.transitionToSection(d.pJs.PENDING, {
           explicit: true
         }), t()
       },
-      children: [(0, r.jsx)(o.iFz, {
+      children: [(0, r.jsx)(a.iFz, {
         size: "xs",
         color: "currentColor"
-      }), (0, r.jsx)(o.mAB, {
+      }), (0, r.jsx)(a.mAB, {
         count: n,
         color: i.Z.colors.BACKGROUND_ACCENT.css
       })]

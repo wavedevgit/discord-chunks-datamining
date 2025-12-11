@@ -18,8 +18,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk810568 = require("./810568.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk226788 = require("./226788.js"),
-  Chunk943987 = require("./943987.js");
+  Chunk452379 = require("./452379.js"),
+  Chunk214636 = require("./214636.js");
 
 function b(e) {
   let {
@@ -27,10 +27,10 @@ function b(e) {
     trackClick: n,
     onInviteResolved: r,
     closeModal: b
-  } = e, [_, y] = i.useState(), I = (0, s.e7)([g.Z], () => {
+  } = e, [y, I] = i.useState(), O = (0, s.e7)([f.Z], () => {
     var e, t;
-    return (null == _ || null == (e = _.guild) ? true : e.id) != null && g.Z.isMember(null == _ || null == (t = _.guild) ? true : t.id)
-  }), O = i.useMemo(() => {
+    return (null == y || null == (e = y.guild) ? true : e.id) != null && f.Z.isMember(null == y || null == (t = y.guild) ? true : t.id)
+  }), P = i.useMemo(() => {
     var e;
     return null == (e = t.websites) ? true : e.find(e => {
       let {
@@ -43,16 +43,16 @@ function b(e) {
       let e = async e => {
         let t = e.split("/").pop();
         if (null != t) {
-          if (null != _ && _.code.toLowerCase() === t.toLowerCase()) return;
+          if (null != y && y.code.toLowerCase() === t.toLowerCase()) return;
           let e = await (0, m.Z)(t);
-          true !== e.banned && (y(e.invite), null != e.invite && (null == r || r(e.invite)))
+          true !== e.banned && (I(e.invite), null != e.invite && (null == r || r(e.invite)))
         }
       };
-      null != O && e(O.url)
-    }, [O, r, _]), null == _ || null == _.guild || !_.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
-  let P = f.ZP.getGuildIconURL({
-    id: _.guild.id,
-    icon: _.guild.icon,
+      null != P && e(P.url)
+    }, [P, r, y]), null == y || null == y.guild || !y.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
+  let w = g.ZP.getGuildIconURL({
+    id: y.guild.id,
+    icon: y.guild.icon,
     size: 32
   });
   return (0, a.jsxs)("div", {
@@ -66,9 +66,9 @@ function b(e) {
       className: l()(h.row, h.gapMd),
       children: [(0, a.jsx)("img", {
         className: j.guildIcon,
-        src: P,
+        src: w,
         alt: v.intl.formatToPlainString(v.t.xm6W9D, {
-          guildName: _.guild.name
+          guildName: y.guild.name
         })
       }), (0, a.jsxs)("div", {
         className: j.inviteInfo,
@@ -76,27 +76,27 @@ function b(e) {
           className: j.guildNameContainer,
           children: [(0, a.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            children: _.guild.name
+            children: y.guild.name
           }), (0, a.jsx)(u.Z, {
-            guild: _.guild,
+            guild: y.guild,
             size: 16
           })]
-        }), null != _.approximate_member_count && (0, a.jsx)(c.Text, {
+        }), null != y.approximate_member_count && (0, a.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           children: v.intl.format(v.t.zRl6XR, {
-            count: _.approximate_member_count
+            count: y.approximate_member_count
           })
         })]
       })]
     }), (0, a.jsx)(c.Button, {
       variant: "secondary",
-      text: I ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
+      text: O ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
       onClick: () => {
         b(), n(p.as.JoinOfficialServer), d.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
-          invite: _,
-          code: _.code,
+          invite: y,
+          code: y.code,
           context: x.IlC.APP
         })
       },

@@ -1,0 +1,23 @@
+/** Chunk was on 9536 **/
+/** chunk id: 568880, original params: e,t,n (module,exports,require) **/
+"use strict";
+module.exports = {
+  previewContainer: "_74a6a7a80cfedda2-previewContainer",
+  icon: "_74a6a7a80cfedda2-icon",
+  welcomeHeader: "_74a6a7a80cfedda2-welcomeHeader",
+  welcomeTitle: "_74a6a7a80cfedda2-welcomeTitle",
+  welcomeChannels: "_74a6a7a80cfedda2-welcomeChannels",
+  headerGuildBadge: "_74a6a7a80cfedda2-headerGuildBadge",
+  flowerStar: "_74a6a7a80cfedda2-flowerStar",
+  descriptionWrapper: "_74a6a7a80cfedda2-descriptionWrapper",
+  divider: "_74a6a7a80cfedda2-divider",
+  welcomeChannel: "_74a6a7a80cfedda2-welcomeChannel",
+  dragging: "_74a6a7a80cfedda2-dragging",
+  channelTitleIcon: "_74a6a7a80cfedda2-channelTitleIcon",
+  channelIcon: "_74a6a7a80cfedda2-channelIcon",
+  warningIcon: "_74a6a7a80cfedda2-warningIcon",
+  channelDescriptionWrapper: "_74a6a7a80cfedda2-channelDescriptionWrapper",
+  notice: "_74a6a7a80cfedda2-notice",
+  noticeIcon: "_74a6a7a80cfedda2-noticeIcon",
+  channelWarning: "_74a6a7a80cfedda2-channelWarning"
+}

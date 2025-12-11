@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 444134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   JC: () => m,
@@ -64,53 +64,53 @@ let u = Chunk473749.createContext({
     } = e, {
       recalculateAnimationPositions: p,
       registerComponent: h,
-      unregisterComponent: x,
-      expansionSpring: f,
-      mountPoints: g
-    } = r.useContext(u), b = r.useRef(null), v = r.useRef(null), j = r.useRef(true);
+      unregisterComponent: f,
+      expansionSpring: x,
+      mountPoints: b
+    } = r.useContext(u), g = r.useRef(null), v = r.useRef(null), j = r.useRef(true);
     r.useEffect(() => {
       p()
     }, [p]), r.useLayoutEffect(() => {
-      let e = b.current;
+      let e = g.current;
       return null != e && h(e, c, d), () => {
-        null != e && x(c, d)
+        null != e && f(c, d)
       }
-    }, [c, d, h, x]);
-    let _ = r.useCallback(e => {
+    }, [c, d, h, f]);
+    let y = r.useCallback(e => {
       let {
         height: t
       } = e;
       j.current !== t && (p(), j.current = t)
     }, [p]);
-    (0, s.PM)(b, _);
-    let y = null == (n = g.get(c)) ? true : n.current,
-      C = null;
-    return null == y ? C = null : m && null != f ? C = (0, a.jsxs)(a.Fragment, {
+    (0, s.PM)(g, y);
+    let C = null == (n = b.get(c)) ? true : n.current,
+      _ = null;
+    return null == C ? _ = null : m && null != x ? _ = (0, a.jsxs)(a.Fragment, {
       children: ["collapsed" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
         style: {
           position: "absolute",
-          opacity: f.to({
+          opacity: x.to({
             range: [0, 1],
             output: [1, 0]
           })
         },
         children: o(v)
-      }), y), "expanded" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
+      }), C), "expanded" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
         style: {
           position: "absolute",
-          opacity: f.to({
+          opacity: x.to({
             range: [0, 1],
             output: [0, 1]
           })
         },
         children: o(v)
-      }), y)]
-    }) : "collapsed" === d && (C = (0, i.createPortal)(o(v), y)), (0, a.jsxs)("div", {
+      }), C)]
+    }) : "collapsed" === d && (_ = (0, i.createPortal)(o(v), C)), (0, a.jsxs)("div", {
       style: {
-        opacity: +(null == C && "collapsed" === d || null == y)
+        opacity: +(null == _ && "collapsed" === d || null == C)
       },
       ref: t,
-      children: [o(b), C]
+      children: [o(g), _]
     })
   }),
   p = e => {
@@ -119,7 +119,7 @@ let u = Chunk473749.createContext({
       expandedContentRef: n,
       collapsedContentRef: i,
       expansionSpring: l
-    } = e, [s, m] = r.useState({}), [p, h] = r.useState([]), [x, f] = r.useState(() => new Map), g = r.useCallback((e, t, n) => {
+    } = e, [s, m] = r.useState({}), [p, h] = r.useState([]), [f, x] = r.useState(() => new Map), b = r.useCallback((e, t, n) => {
       m(a => {
         var r;
         let i = null != (r = a[t]) ? r : {
@@ -131,11 +131,11 @@ let u = Chunk473749.createContext({
             [n]: e
           })
         })
-      }), f(e => {
+      }), x(e => {
         let n = new Map(e);
         return n.set(t, r.createRef()), n
       })
-    }, []), b = r.useCallback((e, t) => {
+    }, []), g = r.useCallback((e, t) => {
       let n = false;
       m(a => {
         var r;
@@ -146,7 +146,7 @@ let u = Chunk473749.createContext({
         return i[t] = null, n = null == i.expanded && null == i.collapsed, d(c({}, a), {
           [e]: i
         })
-      }), n && f(t => {
+      }), n && x(t => {
         let n = new Map(t);
         return n.delete(e), n
       })
@@ -164,15 +164,15 @@ let u = Chunk473749.createContext({
           m = l.top - c.top + o.jK,
           p = d.top - u.top,
           h = l.left - c.left + o.jK,
-          x = d.left - u.left,
-          f = -l.right + c.right + o.jK,
-          g = -d.right + u.right;
+          f = d.left - u.left,
+          x = -l.right + c.right + o.jK,
+          b = -d.right + u.right;
         e.push({
           id: t,
-          collapsedLeft: x,
+          collapsedLeft: f,
           expandedLeft: h,
-          collapsedRight: g,
-          expandedRight: f,
+          collapsedRight: b,
+          expandedRight: x,
           collapsedTop: p,
           expandedTop: m,
           width: l.width
@@ -182,15 +182,15 @@ let u = Chunk473749.createContext({
     }, [s, n, i, h]);
     return (0, a.jsx)(u.Provider, {
       value: {
-        registerComponent: g,
-        unregisterComponent: b,
+        registerComponent: b,
+        unregisterComponent: g,
         animatedComponents: s,
         expandedContentRef: n,
         collapsedContentRef: i,
         recalculateAnimationPositions: v,
         animatedComponentProps: p,
         expansionSpring: l,
-        mountPoints: x
+        mountPoints: f
       },
       children: t
     })

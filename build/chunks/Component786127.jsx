@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 786127, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,10 +20,10 @@ let s = function(e) {
     onRemove: u,
     canRemove: g,
     actionsLocation: m,
-    fieldStyle: p
+    fieldStyle: f
   } = e, {
-    label: f,
-    placeholder: h
+    label: p,
+    placeholder: b
   } = t;
   return (0, r.jsx)(l.Z, {
     field: t,
@@ -33,12 +33,12 @@ let s = function(e) {
     onDrop: c,
     onEdit: d,
     onRemove: u,
-    title: f,
+    title: p,
     canRemove: g,
     actionsLocation: m,
-    fieldStyle: p,
+    fieldStyle: f,
     children: (0, r.jsx)(i.Gi, {
-      placeholder: null != h ? h : a.intl.string(a.t["Sqn+Wh"]),
+      placeholder: null != b ? b : a.intl.string(a.t["Sqn+Wh"]),
       disabled: true
     })
   })

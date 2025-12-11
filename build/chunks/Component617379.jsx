@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 617379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,20 +44,20 @@ function f(e, t) {
   }), e
 }
 
-function p(e) {
+function h(e) {
   let {
     channel: t
   } = e, n = i.useRef(null);
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
     align: "right",
-    animation: o.yRy.Animation.NONE,
+    animation: a.yRy.Animation.NONE,
     position: "bottom",
     renderPopout: e => t.isThread() ? (0, r.jsx)(s.Z, f(d({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
       label: u.intl.string(u.t.ljs3Oe)
-    })) : (0, r.jsx)(a.Z, f(d({}, e), {
+    })) : (0, r.jsx)(o.Z, f(d({}, e), {
       channel: t,
       navId: "recents-notifications",
       label: u.intl.string(u.t.ljs3Oe),
@@ -73,9 +73,9 @@ function p(e) {
       return (0, r.jsx)(l.u, {
         text: u.intl.string(u.t.h850Ss),
         targetElementRef: n,
-        children: (0, r.jsx)(o.hU, {
+        children: (0, r.jsx)(a.hU, {
           "aria-label": u.intl.string(u.t.h850Ss),
-          icon: o.Dkj,
+          icon: a.Dkj,
           variant: "secondary",
           size: "sm",
           onClick: t

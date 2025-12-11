@@ -1,7 +1,7 @@
-/** Chunk was on 79531 **/
+/** Chunk was on 82477 **/
 /** chunk id: 332148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./784620.js"), require("./973216.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -10,24 +10,24 @@ var Chunk544891 = require("./544891.js"),
   Chunk668781 = require("./668781.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let d = {
+let u = {
     async pinMessage(e, t) {
       let {
         id: n,
-        name: r
+        name: i
       } = e;
-      await l.Z.unarchiveThreadIfNecessary(e.id), i.tn.put({
-        url: o.ANM.PIN(n, t),
+      await l.Z.unarchiveThreadIfNecessary(e.id), r.tn.put({
+        url: s.ANM.PIN(n, t),
         oldFormErrors: true,
         rejectWithError: true
       }).catch(() => {
         let t;
         t = e.isPrivate() ? c.intl.formatToPlainString(c.t.Q89oQU, {
-          maxPins: o.tG9
+          maxPins: s.tG9
         }) : c.intl.formatToPlainString(c.t.NnO1S5, {
-          maxPins: o.tG9,
-          channelName: r
-        }), a.Z.show({
+          maxPins: s.tG9,
+          channelName: i
+        }), o.Z.show({
           title: c.intl.string(c.t.HI88Q3),
           body: t,
           confirmText: c.intl.string(c.t.BddRzS)
@@ -35,68 +35,68 @@ let d = {
       })
     },
     async unpinMessage(e, t) {
-      await l.Z.unarchiveThreadIfNecessary(e.id), i.tn.del({
-        url: o.ANM.PIN(e.id, t),
+      await l.Z.unarchiveThreadIfNecessary(e.id), r.tn.del({
+        url: s.ANM.PIN(e.id, t),
         oldFormErrors: true,
         rejectWithError: true
-      }).catch(() => a.Z.show({
+      }).catch(() => o.Z.show({
         title: c.intl.string(c.t.xFjByk),
         body: c.intl.string(c.t["0R/Toc"]),
         confirmText: c.intl.string(c.t["7NqTJn"]),
         cancelText: c.intl.string(c.t["ETE/oC"]),
-        onConfirm: d.unpinMessage.bind(d, e, t)
+        onConfirm: u.unpinMessage.bind(u, e, t)
       }))
     },
     ackPins(e) {
-      r.Z.dispatch({
+      i.Z.dispatch({
         type: "CHANNEL_PINS_ACK",
         channelId: e
       })
     },
     fetchPins(e, t) {
       var n, l;
-      let a = null != (n = null == t ? true : t.reset) && n,
+      let o = null != (n = null == t ? true : t.reset) && n,
         c = null != (l = null == t ? true : t.limit) ? l : 25,
-        d = null == t ? true : t.before;
-      (a || function(e, t) {
-        let n = s.Z.getPins(e);
+        u = null == t ? true : t.before;
+      (o || function(e, t) {
+        let n = a.Z.getPins(e);
         if (null == n) returntrue;
         switch (n.state) {
-          case s.M.FAILED:
+          case a.M.FAILED:
             returntrue;
-          case s.M.LOADING:
-          case s.M.LOADED_FINISHED:
+          case a.M.LOADING:
+          case a.M.LOADED_FINISHED:
             returnfalse;
-          case s.M.LOADED_HAS_MORE:
+          case a.M.LOADED_HAS_MORE:
             if (null == t) return 0 === n.items.length;
             return n.items.at(false).pinnedAt === t
         }
-      }(e, d)) && (r.Z.dispatch({
+      }(e, u)) && (i.Z.dispatch({
         type: "LOAD_PINNED_MESSAGES",
         channelId: e,
-        reset: a
-      }), i.tn.get({
-        url: o.ANM.PINS(e),
+        reset: o
+      }), r.tn.get({
+        url: s.ANM.PINS(e),
         query: {
           limit: c,
-          before: null == d ? true : d.toISOString()
+          before: null == u ? true : u.toISOString()
         },
         retries: 2,
         oldFormErrors: true,
         rejectWithError: true
       }).then(t => {
-        r.Z.dispatch({
+        i.Z.dispatch({
           type: "LOAD_PINNED_MESSAGES_SUCCESS",
           pins: t.body.items,
           channelId: e,
           hasMore: t.body.has_more
         })
       }, () => {
-        r.Z.dispatch({
+        i.Z.dispatch({
           type: "LOAD_PINNED_MESSAGES_FAILURE",
           channelId: e
         })
       }))
     }
   },
-  u = d
+  d = u

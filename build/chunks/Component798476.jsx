@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk174161 = require("./174161.jsx"),
   Chunk220250 = require("./220250.js"),
   Chunk486324 = require("./486324.js"),
-  Chunk505044 = require("./505044.js");
+  Chunk413953 = require("./413953.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ function y(e) {
     null != i && (0, o.ZDy)(async () => {
       let {
         default: a
-      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("21046")]).then(n.bind(n, 712451));
+      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("48564")]).then(n.bind(n, 712451));
       return n => (0, r.jsx)(a, g({
         uploadType: _.pC.GUILD_ICON,
         imageUri: e,

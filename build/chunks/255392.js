@@ -1,3 +1,0 @@
-/** Chunk was on 3394 **/
-/** chunk id: 255392, original params: u (module,exports,require) **/
-module.exports = JSON.parse('{"+utqaz":["Фон подарка: ",[1,"giftStyle"]],"B9XqQk":["Коробка"],"AJ4iir":["Торт"],"P5keo3":["Сундук"],"w84vET":["Кофе"],"6dCq/u":["Кружка"],"+HMF8k":["Нитроуин"],"vd1fu/":["Праздничная коробка"],"aubYGR":["Праздничный торт"],"vjxYqU":["Праздничный сундук"],"bHuJLa":["Праздничный кофе"],"M6cPwB":["Снежный шар"],"GzPel1":["Коробка"]}')

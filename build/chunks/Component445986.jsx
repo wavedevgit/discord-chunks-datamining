@@ -1,8 +1,8 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 92504 **/
 /** chunk id: 445986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => f,
-  Z: () => x
+  Q: () => b,
+  Z: () => v
 }), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,10 +26,10 @@ function p(e, t, n) {
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    }))), a.forEach(function(t) {
       p(e, t, n[t])
     })
   }
@@ -40,8 +40,8 @@ function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -49,30 +49,30 @@ function h(e, t) {
   }), e
 }
 
-function g(e, t) {
+function f(e, t) {
   if (null == e) return {};
-  var n, r, a = function(e, t) {
+  var n, a, r = function(e, t) {
     if (null == e) return {};
-    var n, r, a = {},
+    var n, a, r = {},
       i = Object.keys(e);
-    for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-    return a
+    for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
+    return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
     var i = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+    for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
-  return a
+  return r
 }
 
-function f(e) {
+function b(e) {
   return "".concat(e.split("?")[0], "?size=").concat(2048)
 }
-let _ = e => {
+let g = e => {
   var {
     index: t,
     items: n
-  } = e, a = g(e, ["index", "items"]);
+  } = e, r = f(e, ["index", "items"]);
   let i = n[t],
     l = 0,
     o = [];
@@ -81,38 +81,38 @@ let _ = e => {
       let {
         width: t,
         height: n,
-        src: r
+        src: a
       } = e;
       e === i && (l = o.length), o.push({
-        src: f(r),
+        src: b(a),
         width: t,
         height: n
       })
-    } return (0, r.jsx)(s.Z, h(m({}, a), {
+    } return (0, a.jsx)(s.Z, h(m({}, r), {
     items: o,
     startWith: l
   }))
 };
-class b extends Chunk473749.Component {
+class x extends Chunk473749.Component {
   render() {
     let e = this.props,
       {
         pageSize: t
       } = module,
-      n = g(module, ["pageSize"]),
-      a = exports === Chunk843445.b.SMALL ? Chunk9807.Z : Chunk33122.Z;
+      n = f(module, ["pageSize"]),
+      r = exports === Chunk843445.b.SMALL ? Chunk9807.Z : Chunk33122.Z;
     return (0, Chunk54381.jsx)(Chunk473749, h(m({}, require), {
       onCurrentItemClick: this.handleCurrentItemClick
     }))
   }
   constructor(...e) {
     super(...e), p(this, "handleCurrentItemClick", (e, t) => {
-      e.type !== d.s9s.IMG || (0, i.$sL)() || (0, i.h7j)(e => (0, r.jsx)(i.Y0X, h(m({
+      e.type !== d.s9s.IMG || (0, i.$sL)() || (0, i.h7j)(e => (0, a.jsx)(i.Y0X, h(m({
         size: i.CgR.DYNAMIC,
         "aria-label": u.intl.string(u.t.X4IxWL)
       }, e), {
         parentComponent: "ApplicationStoreListingCarousel",
-        children: (0, r.jsx)(_, h(m({}, e), {
+        children: (0, a.jsx)(g, h(m({}, e), {
           index: t,
           items: this.props.items
         }))
@@ -120,4 +120,4 @@ class b extends Chunk473749.Component {
     })
   }
 }
-let x = b
+let v = x

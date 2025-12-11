@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk151459 = require("./151459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10058 = require("./10058.js");
+  Chunk172421 = require("./172421.js");
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -59,7 +59,7 @@ function C(e, t) {
 function S(e) {
   let {
     className: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.getPendingCount() > 0), _ = (0, s.dQu)(s.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
+  } = e, n = (0, a.e7)([h.Z], () => h.Z.getPendingCount() > 0), b = (0, s.dQu)(s.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
     } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
@@ -72,7 +72,7 @@ function S(e) {
           null == r.current[e] && (r.current[e] = {}), null == n ? delete r.current[e][t] : r.current[e][t] = n, 0 === Object.keys(r.current[e]).length && delete r.current[e]
         },
         i = (n, i, a) => {
-          var s, o, c, u, d, p, g, _, b;
+          var s, o, c, u, d, p, g, b, _;
           if (!h.Z.isFriend(n)) returnfalse;
           let E = m.default.getUser(n);
           if (null == E) returnfalse;
@@ -95,13 +95,13 @@ function S(e) {
             let t = f.Z.getChannel(a);
             if (null != t) {
               let i = "voice-".concat(t.id);
-              (null == (_ = r.current[n]) ? true : _.voice) !== i && (v = true, e(n, "voice", i), y = {
+              (null == (b = r.current[n]) ? true : b.voice) !== i && (v = true, e(n, "voice", i), y = {
                 user: E,
                 voiceChannel: t
               })
             }
           } else(null == (s = r.current[n]) ? true : s.voice) != null && (v = true, e(n, "voice", null));
-          return v && null != y && (b = y, null != l.current && (window.clearTimeout(l.current), l.current = null), t(b), l.current = window.setTimeout(() => {
+          return v && null != y && (_ = y, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
             t(null), l.current = null
           }, 1e4)), v
         },
@@ -172,7 +172,7 @@ function S(e) {
           }))
         }
       }))
-    }), (0, r.jsx)(b.Or, {
+    }), (0, r.jsx)(_.Or, {
       popoutPosition: "bottom",
       popoutAlign: "left",
       children: (e, i, l, a) => (0, r.jsx)(d.JO, C(I({}, l), {
@@ -180,7 +180,7 @@ function S(e) {
         className: t,
         onClick: e,
         icon: s.iFz,
-        iconSize: _,
+        iconSize: b,
         "aria-label": v.intl.string(v.t.TdEu5X),
         tooltip: i ? null : v.intl.string(v.t.TdEu5X),
         selected: i,
@@ -195,7 +195,7 @@ function T(e) {
     className: t
   } = e, {
     enableTopNavButton: n
-  } = (0, _.Cq)({
+  } = (0, b.Cq)({
     location: "friends-button"
   });
   return n ? (0, r.jsx)(S, {

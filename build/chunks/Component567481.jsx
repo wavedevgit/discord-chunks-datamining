@@ -42,7 +42,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
             locked: t,
             pid: n
           }), null == r.id) throw new f.Z({
-          errorCode: b.lTL.INVALID_COMMAND
+          errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         o.Z.setInputLocked(t, n)
       }
@@ -50,7 +50,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     [Chunk981631.Etm.OPEN_OVERLAY_ACTIVITY_INVITE]: {
       scope: Chunk186901.lH,
       validation: e => (0, h.Z)(e).required().keys({
-        type: e.number().required().valid([b.mFx.JOIN]),
+        type: e.number().required().valid([_.mFx.JOIN]),
         pid: e.number().min(0).required()
       }),
       handler(e) {
@@ -62,11 +62,11 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           }
         } = e, i = t.application.id;
         if (null == i) throw new f.Z({
-          errorCode: b.lTL.INVALID_COMMAND
+          errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         let l = d.Z.getApplicationActivity(i);
         if (null == l || null == l.secrets || !(0, g.t9)(n, l.party, l.secrets)) throw new f.Z({
-          errorCode: b.lTL.NO_ELIGIBLE_ACTIVITY
+          errorCode: _.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
           lock: s,
@@ -74,7 +74,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
         } = (0, m.jU)(r), u = (0, c.Z)(l, p.Z);
         return (0, a.h7)(l, u, o).then(() => {
           if (s(), u) throw new f.Z({
-            errorCode: b.lTL.NO_ELIGIBLE_ACTIVITY
+            errorCode: _.lTL.NO_ELIGIBLE_ACTIVITY
           }, "No eligible activity for application. Ensure user does have have privacy enabled.")
         })
       }
@@ -94,7 +94,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           socket: r
         } = e;
         if (null == r.application.id) throw new f.Z({
-          errorCode: b.lTL.INVALID_COMMAND
+          errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         return s.ZP.resolveInvite(t, "Game SDK").then(e => {
           let {
@@ -102,7 +102,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
             code: r
           } = e;
           if (null == t) throw new f.Z({
-            errorCode: b.lTL.INVALID_INVITE
+            errorCode: _.lTL.INVALID_INVITE
           }, "Invalid invite id: ".concat(r));
           let {
             context: i,
@@ -133,7 +133,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           socket: l
         } = e, a = l.application.id;
         if (null == a) throw new f.Z({
-          errorCode: b.lTL.INVALID_COMMAND
+          errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         let {
           lock: s,
@@ -178,7 +178,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
               }), i))
             }
           }, {
-            contextKey: o === b.IlC.POPOUT ? i.u1M : i.z1l,
+            contextKey: o === _.IlC.POPOUT ? i.u1M : i.z1l,
             onCloseCallback: () => {
               s(), e()
             }

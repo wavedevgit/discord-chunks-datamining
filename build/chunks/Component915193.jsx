@@ -1,7 +1,7 @@
-/** Chunk was on 70522 **/
+/** Chunk was on 95528 **/
 /** chunk id: 915193, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,9 +13,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk700582 = require("./700582.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk452438 = require("./452438.js");
+  Chunk805171 = require("./805171.js");
 
-function p(e) {
+function f(e) {
   let {
     color: n,
     className: r
@@ -52,16 +52,16 @@ function p(e) {
   })
 }
 
-function h(e, n) {
-  let r = (0, i.e7)([c.default], () => c.default.getCurrentUser());
+function b(e, n) {
+  let r = (0, i.e7)([l.default], () => l.default.getCurrentUser());
   return null == r || n.ownerId !== r.id || e.id === r.id ? null : (0, t.jsx)(s.sNh, {
     id: "make-dm-owner",
     color: "danger",
     label: u.intl.string(u.t["6t3CyN"]),
     action: () => {
       (0, s.h7j)(i => {
-        var c, h;
-        return (0, t.jsxs)(s.VoidConfirmModal, (c = function(e) {
+        var l, b;
+        return (0, t.jsxs)(s.VoidConfirmModal, (l = function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var r = null != arguments[n] ? arguments[n] : {},
               t = Object.keys(r);
@@ -83,9 +83,9 @@ function h(e, n) {
           header: u.intl.string(u.t.WZoUsm),
           confirmText: u.intl.string(u.t["cY+Oob"]),
           cancelText: u.intl.string(u.t["ETE/oC"]),
-          onConfirm: () => l.Z.setDMOwner(n.id, e.id)
-        }, i), h = h = {
-          children: [(0, t.jsx)(p, {
+          onConfirm: () => a.Z.setDMOwner(n.id, e.id)
+        }, i), b = b = {
+          children: [(0, t.jsx)(f, {
             color: o.Z.unsafe_rawColors.PRIMARY_300.css
           }), (0, t.jsxs)("div", {
             className: m.fromToWrapper,
@@ -105,7 +105,7 @@ function h(e, n) {
           }), (0, t.jsx)(s.Text, {
             variant: "text-md/normal",
             children: u.intl.format(u.t.gsBb3F, {
-              usernameHook: (n, r) => (0, t.jsx)(a.Z, {
+              usernameHook: (n, r) => (0, t.jsx)(c.Z, {
                 usernameIcon: (0, t.jsx)(s.qEK, {
                   className: m.avatarIcon,
                   src: e.getAvatarURL(true, 16),
@@ -119,16 +119,16 @@ function h(e, n) {
               }, r)
             })
           })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(h)) : (function(e, n) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(b)) : (function(e, n) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var t = Object.getOwnPropertySymbols(e);
             r.push.apply(r, t)
           }
           return r
-        })(Object(h)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(h, e))
-        }), c))
+        })(Object(b)).forEach(function(e) {
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(b, e))
+        }), l))
       })
     }
   })

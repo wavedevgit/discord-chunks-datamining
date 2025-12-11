@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk29121 = require("./29121.js"),
   Chunk391594 = require("./391594.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk222311 = require("./222311.js");
+  Chunk505281 = require("./505281.js");
 let k = t => {
   let {
     transitionState: e,
@@ -32,16 +32,16 @@ let k = t => {
     overrideTitle: m,
     overrideDescription: y,
     itemConsumed: S = true,
-    purchaseType: N = I.o8.ORB
-  } = t, B = (0, l.o)(s), P = (0, _.W)(s, B), {
-    analyticsLocations: R
+    purchaseType: N = _.o8.ORB
+  } = t, b = (0, l.o)(s), B = (0, h.W)(s, b), {
+    analyticsLocations: P
   } = (0, u.ZP)([...O, c.Z.COLLECTIBLES_COLLECTED_MODAL]);
   o.useEffect(() => {
-    I.Vt.ORB_PROFILE_BADGE === P.skuId && (0, d.Ls)([(0, v.X)()], 600)
-  }, [P.skuId]);
+    _.Vt.ORB_PROFILE_BADGE === B.skuId && (0, d.Ls)([(0, v.X)()], 600)
+  }, [B.skuId]);
   let {
-    isLoading: T,
-    isFractionalPremiumActive: b,
+    isLoading: R,
+    isFractionalPremiumActive: T,
     expiresAt: g
   } = (0, C.Kd)(), {
     environment: w,
@@ -49,46 +49,46 @@ let k = t => {
     confettiCanvas: $,
     setConfettiCanvas: A,
     customConfettiDisplayOptions: D
-  } = (0, x.$0)(P, N);
-  (0, x.f1)(P, R);
-  let V = (0, h.kd)(P),
+  } = (0, I.$0)(B, N);
+  (0, I.f1)(B, P);
+  let V = (0, x.kd)(B),
     {
       handleUseNow: W,
       isApplying: X
     } = (0, p.W)({
-      product: P,
+      product: B,
       onSuccess: k,
       onError: k
     });
-  if (T) return (0, n.jsx)(r.$jN, {
+  if (R) return (0, n.jsx)(r.$jN, {
     type: r.$jN.Type.SPINNING_CIRCLE
   });
-  let Z = (0, x.Xw)({
-      product: P,
+  let Z = (0, I.Xw)({
+      product: B,
       overrideTitle: m,
       isVariantsGroupEnabled: false,
       shouldShowPromotionalExperience: false,
       productName: V,
       itemConsumed: S
     }),
-    K = (0, x.ys)({
-      product: P,
+    K = (0, I.ys)({
+      product: B,
       overrideDescription: y,
       productName: V,
       itemConsumed: S,
-      isFractionalPremiumActive: b,
+      isFractionalPremiumActive: T,
       expiresAt: g
     }),
-    M = (0, x.cf)({
-      product: P,
+    M = (0, I.cf)({
+      product: B,
       onClose: k,
-      analyticsLocations: R,
+      analyticsLocations: P,
       handleUseNow: W,
       isApplying: X,
       itemConsumed: S
     });
   return (0, n.jsx)(u.Gt, {
-    value: R,
+    value: P,
     children: (0, n.jsxs)("div", {
       ref: G,
       children: [(0, n.jsx)(i.O_, {
@@ -100,7 +100,7 @@ let k = t => {
           type: "dynamic",
           component: r.AX$.COLLECTIBLES_PREVIEW,
           props: {
-            product: P,
+            product: B,
             itemConsumed: S
           }
         },
@@ -114,7 +114,7 @@ let k = t => {
       }) : (0, n.jsx)(E.Z, {
         confettiTarget: G.current,
         confettiCanvas: $,
-        sprites: (0, f.vK)(P.categorySkuId)
+        sprites: (0, f.vK)(B.categorySkuId)
       })]
     })
   })

@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk172351 = require("./172351.jsx"),
   Chunk648052 = require("./648052.jsx"),
   Chunk483424 = require("./483424.jsx"),
-  Chunk681837 = require("./681837.jsx"),
+  Chunk407699 = require("./407699.jsx"),
   Chunk678738 = require("./678738.jsx"),
   Chunk638970 = require("./638970.jsx"),
   Chunk530 = require("./530.jsx"),
@@ -29,8 +29,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk915014 = require("./915014.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk57842 = require("./57842.js"),
-  Chunk116649 = require("./116649.js");
+  Chunk773008 = require("./773008.js"),
+  Chunk155493 = require("./155493.js");
 
 function P(e) {
   let {
@@ -51,7 +51,9 @@ function P(e) {
   return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: N.body,
-    children: [(0, r.jsx)(E.Z, {
+    children: [(0, r.jsx)(m.Z, {
+      userId: t.id
+    }), (0, r.jsx)(E.Z, {
       user: t,
       guildId: null == R ? true : R.id,
       onOpenProfile: D,
@@ -62,14 +64,10 @@ function P(e) {
         themeType: T.l.POPOUT,
         onClose: L
       }),
-      nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(m.Z, {
-          userId: t.id
-        }), !U && (0, r.jsx)(O.Z, {
-          userId: t.id,
-          isVisible: w,
-          onOpenProfile: D
-        })]
+      nicknameIcons: U ? null : (0, r.jsx)(O.Z, {
+        userId: t.id,
+        isVisible: w,
+        onOpenProfile: D
       })
     }), (0, r.jsx)(I.Z, {
       user: t,

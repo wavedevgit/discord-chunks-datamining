@@ -20,7 +20,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,34 +61,34 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
         } = e, i = t.application.id;
         try {
           if (null == i) throw new h.Z({
-            errorCode: _.lTL.INVALID_COMMAND
+            errorCode: b.lTL.INVALID_COMMAND
           }, "No application.");
           let e = c.Z.getApplication(i);
           if (null == e) throw new h.Z({
-            errorCode: _.lTL.INVALID_ENTITLEMENT
+            errorCode: b.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           let t = e.primarySkuId;
           if (null == t) throw new h.Z({
-            errorCode: _.lTL.INVALID_ENTITLEMENT
+            errorCode: b.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           return Promise.race([(function(e, t) {
             let n = d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t);
             return null != n ? Promise.resolve(n) : (0, s.yD)(t).then(() => true === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
           })(t, e.id).then(e => {
             if (!e) throw new h.Z({
-              errorCode: _.lTL.INVALID_ENTITLEMENT
+              errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
           }), (0, l.GR)(O).then(() => {
             throw new h.Z({
-              errorCode: _.lTL.INVALID_ENTITLEMENT
+              errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
           })])
         } catch (e) {
-          throw e.code === _.lTL.INVALID_ENTITLEMENT && (g.ZP.focus(null, true), (0, a.ZDy)(async () => {
+          throw e.code === b.lTL.INVALID_ENTITLEMENT && (g.ZP.focus(null, true), (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
-            return t => (0, r.jsx)(e, E(b({}, t), {
+            return t => (0, r.jsx)(e, E(_({}, t), {
               applicationId: i
             }))
           })), e
@@ -102,10 +102,10 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
           socket: t
         } = e, l = t.application.id;
         if (null == l) throw new h.Z({
-          errorCode: _.lTL.INVALID_COMMAND
+          errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
         return i.tn.post({
-          url: _.ANM.ENTITLEMENT_TICKET(l),
+          url: b.ANM.ENTITLEMENT_TICKET(l),
           body: {
             test_mode: p.Z.inTestModeForApplication(l) || o.Z.inDevModeForApplication(l)
           },
@@ -122,7 +122,7 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
-            return t => (0, r.jsx)(e, E(b({}, t), {
+            return t => (0, r.jsx)(e, E(_({}, t), {
               applicationId: l
             }))
           }), e

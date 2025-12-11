@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 163249, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,48 +15,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk714939 = require("./714939.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk203552 = require("./203552.js");
+  Chunk500591 = require("./500591.js");
 
-function f(e) {
+function p(e) {
   let {
     color: t,
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.roleTag,
+    className: f.roleTag,
     children: [(0, r.jsx)(s.xko, {
-      className: p.roleDot,
+      className: f.roleDot,
       color: t,
       colors: null
     }), (0, r.jsx)("span", {
-      className: p.roleText,
+      className: f.roleText,
       children: n
     })]
   })
 }
 
-function h(e) {
+function b(e) {
   let {
     guild: t,
     display: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(p.banner, t.backgroundClass, {
-      [p.bannerOut]: !n
+    className: a()(f.banner, t.backgroundClass, {
+      [f.bannerOut]: !n
     }),
     children: [(0, r.jsx)("div", {
-      className: p.roles,
+      className: f.roles,
       children: t.roles.map((e, t) => (0, r.jsx)("div", {
-        className: p.rolesRow,
-        children: e.map(e => (0, r.jsx)(f, {
+        className: f.rolesRow,
+        children: e.map(e => (0, r.jsx)(p, {
           color: e.color,
           children: e.name
         }, e.name))
       }, t))
     }), (0, r.jsx)("div", {
-      className: p.profileCard,
+      className: f.profileCard,
       children: (0, r.jsxs)("div", {
-        className: p.avatarContainer,
+        className: f.avatarContainer,
         children: [(0, r.jsx)(s.qEK, {
           size: s.EFr.SIZE_56,
           "aria-hidden": true,
@@ -65,7 +65,7 @@ function h(e) {
         }), (0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-md/bold",
-          className: p.avatarName,
+          className: f.avatarName,
           children: t.username
         })]
       })
@@ -73,9 +73,9 @@ function h(e) {
   })
 }
 
-function b() {
+function h() {
   let e = Chunk473749.useMemo(() => [{
-      backgroundClass: Chunk203552.bannerClubs,
+      backgroundClass: Chunk500591.bannerClubs,
       username: "Wumpus#0000",
       avatar: require("./91055.js"),
       roles: [
@@ -101,7 +101,7 @@ function b() {
         }]
       ]
     }, {
-      backgroundClass: Chunk203552.bannerGaming,
+      backgroundClass: Chunk500591.bannerGaming,
       username: "Graggle#0000",
       avatar: require("./507003.js"),
       roles: [
@@ -127,7 +127,7 @@ function b() {
         }]
       ]
     }, {
-      backgroundClass: Chunk203552.bannerHobbies,
+      backgroundClass: Chunk500591.bannerHobbies,
       username: "Mallow#0000",
       avatar: require("./552557.js"),
       roles: [
@@ -162,9 +162,9 @@ function b() {
     let e = setTimeout(() => Chunk120356((exports + 1) % a.current.length), 6332);
     return () => clearTimeout(module)
   }, [exports]), (0, Chunk54381.jsx)("div", {
-    className: Chunk203552.bannerContainer,
+    className: Chunk500591.bannerContainer,
     "aria-hidden": true,
-    children: module.map((e, n) => (0, r.jsx)(h, {
+    children: module.map((e, n) => (0, r.jsx)(b, {
       guild: e,
       display: n === t
     }, n))
@@ -178,28 +178,28 @@ function x(e) {
     setEditRoleId: l
   } = e, [a, d] = i.useState(false), g = async () => {
     d(true), await o.Z.createRole(t.id), d(false)
-  }, f = i.useCallback(() => {
+  }, p = i.useCallback(() => {
     l(n.id)
   }, [l, n.id]);
   return (0, r.jsx)(c.NM, {
     children: (0, r.jsxs)("div", {
-      className: p.section,
+      className: f.section,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         children: m.intl.string(m.t["LPJmL/"])
       }), (0, r.jsxs)("div", {
-        className: p.container,
-        children: [(0, r.jsx)(b, {}), (0, r.jsx)(s.Heading, {
+        className: f.container,
+        children: [(0, r.jsx)(h, {}), (0, r.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           children: m.intl.string(m.t.ALlnbi)
         }), (0, r.jsx)(s.Text, {
           color: "text-default",
           variant: "text-md/normal",
-          className: p.introBody,
+          className: f.introBody,
           children: m.intl.string(m.t["1ydhVp"])
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: p.button,
+          className: f.button,
           children: (0, r.jsx)(s.Button, {
             variant: "primary",
             text: m.intl.string(m.t.JZZjQK),
@@ -208,10 +208,10 @@ function x(e) {
           })
         })]
       }), (0, r.jsx)(s.izJ, {
-        className: p.divider
+        className: f.divider
       }), (0, r.jsx)(u.Z, {
         role: n,
-        onClick: f
+        onClick: p
       })]
     })
   })

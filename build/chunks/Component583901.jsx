@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk47760 = require("./47760.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk750852 = require("./750852.js");
+  Chunk236510 = require("./236510.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,12 +65,12 @@ function O(e, t) {
 
 function v() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk750852.selectionCircle,
+    className: Chunk236510.selectionCircle,
     children: (0, Chunk54381.jsx)(Chunk481060.owK, {
       size: "md",
       color: "currentColor",
-      className: Chunk750852.checkmarkCircle,
-      colorClass: Chunk750852.checkmark,
+      className: Chunk236510.checkmarkCircle,
+      colorClass: Chunk236510.checkmark,
       secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
     })
   })

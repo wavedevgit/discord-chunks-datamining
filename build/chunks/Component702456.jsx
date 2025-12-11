@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk399521 = require("./399521.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk944658 = require("./944658.js");
+  Chunk938359 = require("./938359.js");
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -82,11 +82,11 @@ function w(e) {
   }, [i]), {
     avatarSrc: f,
     eventHandlers: m
-  } = (0, b.Z)({
+  } = (0, _.Z)({
     userId: i.id,
     size: c.EFr.SIZE_32,
     animateOnHover: true
-  }), _ = async () => {
+  }), b = async () => {
     await d.Z.openPrivateChannel({
       recipientIds: [i.id],
       location: g.Z.FREQUENT_FRIENDS_ROW
@@ -98,7 +98,7 @@ function w(e) {
   }, O = 0 === l, y = O ? c.YqE : a ? c.XcD : true, C = O ? P.intl.string(P.t.aI4VOL) : a ? P.intl.string(P.t.kABl2x) : true;
   return (0, r.jsx)(c.P3F, {
     className: x.frequentFriendAvatarButton,
-    onClick: _,
+    onClick: b,
     onMouseEnter: m.onMouseEnter,
     onMouseLeave: m.onMouseLeave,
     "aria-label": P.intl.formatToPlainString(P.t.M5FjCr, {
@@ -125,7 +125,7 @@ function L() {
   let {
     enabled: e
   } = (0, Chunk399521.Q)("frequent_friends_row"), t = function() {
-    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => _.Z.compare(e.otherUserId, t.otherUserId))),
+    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => b.Z.compare(e.otherUserId, t.otherUserId))),
       t = (0, Chunk442837.Wu)([Chunk594174.default, Chunk699516.Z], () => {
         let t = module.map(e => e.otherUserId),
           n = [];
@@ -153,7 +153,7 @@ function L() {
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), h = Chunk473749.useRef(null), b = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), E = (0, Chunk81643.gD)(), v = Chunk473749.useCallback(() => {
+  }), h = Chunk473749.useRef(null), _ = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), E = (0, Chunk81643.gD)(), v = Chunk473749.useCallback(() => {
     var e;
     let t = null == (e = Chunk367907.current) ? true : module.getScrollerNode();
     null != exports && Chunk100527({
@@ -183,12 +183,12 @@ function L() {
   } = exports, M = (Chunk518950 === Chunk742280.S.AU || Chunk518950 === Chunk742280.S.GB) && !Chunk592125, k = null != Chunk518950 && Chunk742280.M.EU_COUNTRIES.has(Chunk518950) && !Chunk120356, U = !M && !k && null != Chunk518950 && D, G = Chunk493683.scrollWidth > Chunk493683.clientWidth, B = Chunk493683.scrollLeft > 0, H = Chunk493683.scrollLeft < Chunk493683.scrollWidth - Chunk493683.clientWidth - 2;
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk944658.frequentFriendsRow,
+      className: Chunk938359.frequentFriendsRow,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk944658.frequentFriendsHeader,
+        className: Chunk938359.frequentFriendsHeader,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
-          className: Chunk944658.frequentFriendsTitle,
+          className: Chunk938359.frequentFriendsTitle,
           children: Chunk388032.intl.string(Chunk388032.t.QEh90H)
         }), (0, Chunk54381.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
@@ -201,9 +201,9 @@ function L() {
         ref: e => {
           h.current = e, I.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
-        className: a()(Chunk944658.frequentFriendsAvatars, {
-          [Chunk944658.scrollMaskLeft]: G && B,
-          [Chunk944658.scrollMaskRight]: G && H
+        className: a()(Chunk938359.frequentFriendsAvatars, {
+          [Chunk938359.scrollMaskLeft]: G && B,
+          [Chunk938359.scrollMaskRight]: G && H
         }),
         orientation: "horizontal",
         onScroll: L,

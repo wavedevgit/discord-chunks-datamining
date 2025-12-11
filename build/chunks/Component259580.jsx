@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk279737 = require("./279737.js");
+  Chunk716557 = require("./716557.js");
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,10 +66,10 @@ function d(e, t) {
   return i
 }
 let f = {
-    UP: Chunk279737.directionUp,
-    RIGHT: Chunk279737.directionRight,
-    DOWN: Chunk279737.directionDown,
-    LEFT: Chunk279737.directionLeft
+    UP: Chunk716557.directionUp,
+    RIGHT: Chunk716557.directionRight,
+    DOWN: Chunk716557.directionDown,
+    LEFT: Chunk716557.directionLeft
   },
   p = e => {
     var {

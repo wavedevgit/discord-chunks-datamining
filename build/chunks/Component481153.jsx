@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
@@ -22,40 +22,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk569964 = require("./569964.js"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk746049 = require("./746049.js"),
+  Chunk727829 = require("./727829.js"),
+  Chunk478411 = require("./478411.js");
 let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z, Chunk594174.default], e => {
   let {
     giftCode: t
-  } = e, n = f.Z.get(t.skuId), {
+  } = e, n = p.Z.get(t.skuId), {
     subscriptionPlanId: r
   } = t;
   return {
     sku: n,
-    subscriptionPlan: null != r ? (0, _.oE)(r) : null,
+    subscriptionPlan: null != r ? (0, x.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: m.default.getUser(t.userId)
+    gifter: g.default.getUser(t.userId)
   }
 })(e => {
   let {
     error: t,
     giftCode: n,
     gifter: s,
-    sku: a,
+    sku: l,
     application: c,
-    subscriptionPlan: m
-  } = e, p = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
+    subscriptionPlan: g
+  } = e, m = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
     username: s.username
-  }), f = a.name;
-  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
-    skuName: a.name,
-    intervalCount: m.intervalCount
+  }), p = l.name;
+  return null != g && (p = v.intl.formatToPlainString(g.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
+    skuName: l.name,
+    intervalCount: g.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
-    children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
+    children: [null != n.giftStyle ? (0, r.jsx)(f.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
-      className: j.seasonalIcon
+      className: b.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
       src: null != s ? s.getAvatarURL(true, 100) : null,
       size: o.EFr.DEPRECATED_SIZE_100,
@@ -68,15 +68,15 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: p
+        children: m
       }), (0, r.jsxs)(u.Dx, {
-        className: l()(I.marginTop8, b.flexCenter),
-        children: [a.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
+        className: a()(I.marginTop8, j.flexCenter),
+        children: [l.productLine !== _.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.A.MEDIUM,
-          className: j.applicationIcon,
+          className: b.applicationIcon,
           game: c,
-          skuId: a.id
-        }), f]
+          skuId: l.id
+        }), p]
       })]
     })]
   })

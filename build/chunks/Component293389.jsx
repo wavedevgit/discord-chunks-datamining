@@ -30,10 +30,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740508 = require("./740508.js"),
-  Chunk315091 = require("./315091.js"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk675433 = require("./675433.js"),
+  Chunk533348 = require("./533348.js"),
+  Chunk727829 = require("./727829.js"),
+  Chunk478411 = require("./478411.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -207,7 +207,7 @@ function F(e) {
     }), x(true), (0, u.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("82077"), n.e("87087")]).then(n.bind(n, 953848));
+      } = await Promise.all([n.e("82077"), n.e("30709")]).then(n.bind(n, 953848));
       return n => {
         var i, a, o;
         return (0, r.jsx)(t, M(L({}, n), {
@@ -391,14 +391,14 @@ function F(e) {
 
 function V() {
   return (0, Chunk54381.jsx)("div", {
-    className: o()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
+    className: o()(Chunk727829.flexCenter, Chunk675433.notDetected, Chunk675433.activeGame),
     children: (0, Chunk54381.jsxs)("div", {
-      className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
+      className: o()(Chunk675433.gameNameLastPlayed, Chunk727829.vertical),
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk740508.gameName,
+        className: Chunk675433.gameName,
         children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk740508.lastPlayed,
+        className: Chunk675433.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
       })]
     })

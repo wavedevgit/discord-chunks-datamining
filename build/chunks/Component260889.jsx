@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 260889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function m(e) {
   return e
 }
 
-function _(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,15 +49,15 @@ function _(e, t) {
   }), e
 }
 
-function b(e) {
+function _(e) {
   let t = i.useContext(f.AnalyticsContext),
     n = e.voiceChannels[0],
-    b = (0, l.e7)([d.Z], () => null != n && d.Z.can(g.Plq.CONNECT, n.channel));
+    _ = (0, l.e7)([d.Z], () => null != n && d.Z.can(g.Plq.CONNECT, n.channel));
   return null == n ? null : [(0, r.jsx)(a.sNh, {
     id: "join-voice",
     action: function() {
       (0, c.Kh)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
-        source: _(m({}, t.location), {
+        source: b(m({}, t.location), {
           object: g.qAy.LIST_ITEM
         }),
         guild_id: n.guild.id,
@@ -65,12 +65,12 @@ function b(e) {
       }, (0, p.y)(e)))
     },
     label: h.intl.string(h.t["8yOlh9"]),
-    disabled: !b
+    disabled: !_
   }, "join-voice"), (0, r.jsx)(a.sNh, {
     id: "goto-server",
     action: function() {
       (0, u.X)(n.guild.id), o.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
-        source: _(m({}, t.location), {
+        source: b(m({}, t.location), {
           object: g.qAy.LIST_ITEM
         }),
         guild_id: n.guild.id,

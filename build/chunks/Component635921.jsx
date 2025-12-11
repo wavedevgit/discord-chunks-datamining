@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk422034 = require("./422034.jsx"),
   Chunk206127 = require("./206127.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk876544 = require("./876544.js");
+  Chunk904256 = require("./904256.js");
 let S = e => {
     let {
       inOfferExperience: t,
@@ -62,13 +62,13 @@ let S = e => {
   },
   I = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar1
+      className: Chunk904256.settingsSparkleStar1
     }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar2
+      className: Chunk904256.settingsSparkleStar2
     }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar3
+      className: Chunk904256.settingsSparkleStar3
     }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar4
+      className: Chunk904256.settingsSparkleStar4
     })]
   }),
   T = (e, t) => {

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 328159, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,24 +15,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx");
-let p = e => {
+let f = e => {
     var t;
     let {
       reason: n = "",
       emoji_name: d,
       onSetReason: m,
-      onSelectEmoji: p,
-      onClearPressed: f,
-      reasonMinLength: h,
-      reasonMaxLength: b,
+      onSelectEmoji: f,
+      onClearPressed: p,
+      reasonMinLength: b,
+      reasonMaxLength: h,
       placeholder: x,
       position: j
-    } = e, _ = i.useRef(null), [v, O] = i.useState(false), C = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(a.yRy, {
-      targetElementRef: _,
+    } = e, v = i.useRef(null), [O, C] = i.useState(false), y = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), N = (0, r.jsx)(a.yRy, {
+      targetElementRef: v,
       onRequestClose: () => {
-        O(false)
+        C(false)
       },
-      shouldShow: v,
+      shouldShow: O,
       position: "right",
       align: "top",
       animation: a.yRy.Animation.NONE,
@@ -48,32 +48,32 @@ let p = e => {
               emoji: n,
               willClose: r
             } = e;
-            null != n && p(n), r && t()
+            null != n && f(n), r && t()
           }
         })
       },
       children: () => (0, r.jsx)(o.Z, {
         active: false,
         onClick: () => {
-          O(true)
+          C(true)
         },
         tabIndex: 0,
         renderButtonContents: null != d ? () => (0, r.jsx)(s.Z, {
           emojiName: d,
           animated: false
         }) : null,
-        ref: _
+        ref: v
       })
     });
     return (0, r.jsx)(a.oil, {
       placeholder: x,
       value: n,
-      minLength: h,
-      maxLength: b,
+      minLength: b,
+      maxLength: h,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
         type: "emoji",
-        button: y
+        button: N
       },
       onChange: e => {
         m(e)
@@ -81,17 +81,17 @@ let p = e => {
       clearable: {
         show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
       },
-      onClear: f
-    }, "text-input-".concat(j, "-").concat(C))
+      onClear: p
+    }, "text-input-".concat(j, "-").concat(y))
   },
-  f = e => {
+  p = e => {
     let {
       reasonMinLength: t,
       reasonMaxLength: n,
       guildId: i,
       reasons: l
     } = e, s = [m.intl.string(m.t["9dhBGo"]), m.intl.string(m.t["8RmhKF"]), m.intl.string(m.t["2t0V83"]), m.intl.string(m.t.l8WqCR)], o = [];
-    for (let e = 0; e < 4; e++) o.push((0, r.jsx)(p, function(e, t) {
+    for (let e = 0; e < 4; e++) o.push((0, r.jsx)(f, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

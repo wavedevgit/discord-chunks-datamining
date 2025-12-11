@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk170245 = require("./170245.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk507694 = require("./507694.js");
+  Chunk184607 = require("./184607.js");
 
 function y(e) {
   var t;
@@ -40,7 +40,7 @@ function y(e) {
     location: "Friends"
   }), g = i.useCallback(e => {
     e.stopPropagation(), d()
-  }, [d]), _ = i.useCallback(e => {
+  }, [d]), b = i.useCallback(e => {
     e.stopPropagation(), p()
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
@@ -60,7 +60,7 @@ function y(e) {
       icon: s.Dio,
       actionType: m.Z.ActionTypes.DENY,
       tooltip: O.intl.string(O.t.xuio0C),
-      onClick: _,
+      onClick: b,
       shouldHighlight: c
     })]
   })
@@ -128,7 +128,7 @@ function S(e) {
     isGameRelationship: l,
     applicationId: a
   } = e, s = g.ZP.useUserTag(t);
-  return (0, r.jsx)(b.Z, {
+  return (0, r.jsx)(_.Z, {
     user: t,
     hovered: n,
     status: i,
@@ -156,7 +156,7 @@ function T(e) {
     userId: t.id,
     sourceAnalyticsLocations: u
   }), [u, t.id]);
-  return (0, r.jsx)(_.Z, {
+  return (0, r.jsx)(b.Z, {
     isFocused: a,
     user: t,
     onClick: f,

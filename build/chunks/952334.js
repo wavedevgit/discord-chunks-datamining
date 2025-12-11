@@ -1,0 +1,17 @@
+/** Chunk was on 945 **/
+/** chunk id: 952334, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  wrapper: "_8c0340445cac64f9-wrapper",
+  opaqueExpandedBackground: "_8c0340445cac64f9-opaqueExpandedBackground",
+  rewardHighlightWrapper: "_8c0340445cac64f9-rewardHighlightWrapper",
+  interactable: "_8c0340445cac64f9-interactable",
+  submenuWrapper: "_8c0340445cac64f9-submenuWrapper",
+  submenuIcon: "_8c0340445cac64f9-submenuIcon",
+  white: "_8c0340445cac64f9-white",
+  promotedBadgeWrapper: "_8c0340445cac64f9-promotedBadgeWrapper",
+  logo: "_8c0340445cac64f9-logo",
+  clickable: "_8c0340445cac64f9-clickable",
+  promotedBadge: "_8c0340445cac64f9-promotedBadge",
+  promotedBadgeIcon: "_8c0340445cac64f9-promotedBadgeIcon",
+  partnerBranding: "_8c0340445cac64f9-partnerBranding"
+}

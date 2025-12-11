@@ -1,4 +1,4 @@
-/** Chunk was on 9456 **/
+/** Chunk was on 193 **/
 /** chunk id: 724739, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,14 +15,14 @@ let s = e => {
     message: s,
     originalAuthor: o,
     channel: c
-  } = e, d = (0, l.Sw)(o, c), u = null != (n = null != (t = null == d ? true : d.nick) ? t : null == o ? true : o.username) ? n : "", m = (0, a.l)({
+  } = e, d = (0, i.Sw)(o, c), u = null != (n = null != (t = null == d ? true : d.nick) ? t : null == o ? true : o.username) ? n : "", m = (0, l.l)({
     user: null != o ? o : true,
     channelId: c.id,
     guildId: c.guild_id,
     messageId: null == s ? true : s.id,
     stopPropagation: true
   })(null != d ? d : true)(u, c.id);
-  return (0, r.jsx)(i.Text, {
+  return (0, a.jsx)(r.Text, {
     variant: "text-md/semibold",
     children: m
   })

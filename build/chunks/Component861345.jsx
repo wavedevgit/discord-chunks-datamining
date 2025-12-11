@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 861345, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   p: () => j,
-  s: () => _
+  s: () => v
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk157018 = require("./157018.js"),
   Chunk828656 = require("./828656.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk172931 = require("./172931.js");
+  Chunk851132 = require("./851132.js");
 
 function x(e) {
   let {
@@ -31,40 +31,40 @@ function x(e) {
     targetType: d,
     index: u,
     dndName: m,
-    onEdit: p,
+    onEdit: f,
     onMove: x,
     disabled: j = false
-  } = e, _ = i.useRef(null), v = i.useRef(null), {
-    drag: O,
-    dragPreview: C,
-    drop: y,
-    isDragging: N
-  } = (0, f.Z)(_, d, u, x);
-  return O(v), C(y(_)), (0, r.jsxs)("div", {
-    ref: _,
-    className: a()(b.card, {
-      [b.cardDragging]: N,
-      [b.disabled]: j
+  } = e, v = i.useRef(null), O = i.useRef(null), {
+    drag: C,
+    dragPreview: y,
+    drop: N,
+    isDragging: E
+  } = (0, p.Z)(v, d, u, x);
+  return C(O), y(N(v)), (0, r.jsxs)("div", {
+    ref: v,
+    className: a()(h.card, {
+      [h.cardDragging]: E,
+      [h.disabled]: j
     }),
     children: [(0, r.jsxs)("div", {
-      className: b.emojiWrapper,
+      className: h.emojiWrapper,
       children: [(0, r.jsx)(g.Z, {
         guildId: t,
         emojiId: n,
         emojiName: l,
-        className: b.emoji
+        className: h.emoji
       }), !j && (0, r.jsx)("div", {
-        ref: v,
-        className: b.dragIconWrapper,
+        ref: O,
+        className: h.dragIconWrapper,
         "data-dnd-name": m,
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
-          className: b.dragIcon
+          className: h.dragIcon
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: b.cardText,
+      className: h.cardText,
       children: [(0, r.jsx)(o.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
@@ -75,16 +75,16 @@ function x(e) {
         children: c
       })]
     }), (0, r.jsx)("div", {
-      className: b.cardActions,
+      className: h.cardActions,
       children: !j && (0, r.jsx)(o.P3F, {
-        className: b.cardActionButton,
-        onClick: j ? true : p,
-        "aria-label": h.intl.string(h.t.Eoo8h6),
+        className: h.cardActionButton,
+        onClick: j ? true : f,
+        "aria-label": b.intl.string(b.t.Eoo8h6),
         "aria-disabled": j,
         children: (0, r.jsx)(o.vdY, {
           size: "xs",
           color: "currentColor",
-          className: b.cardActionButtonIcon
+          className: h.cardActionButtonIcon
         })
       })
     })]
@@ -98,17 +98,17 @@ function j(e) {
     onMove: l,
     guildId: o
   } = e, g = (0, c.Dt)(), {
-    isDragging: f
+    isDragging: p
   } = (0, s.f)(e => ({
     isDragging: e.getItemType() === g
-  })), h = (0, u.mY)();
+  })), b = (0, u.mY)();
   return 0 === t.length ? null : (0, r.jsx)("div", {
-    className: a()(b.container, {
-      [b.isDragging]: f
+    className: a()(h.container, {
+      [h.isDragging]: p
     }),
     children: t.map((e, t) => (0, r.jsxs)(i.Fragment, {
       children: [t > 0 ? (0, r.jsx)("div", {
-        className: b.divider
+        className: h.divider
       }) : null, (0, r.jsx)(x, {
         guildId: o,
         emojiId: e.emoji_id,
@@ -117,38 +117,38 @@ function j(e) {
         description: e.description,
         targetType: g,
         index: t,
-        dndName: (0, p.Z)(e),
+        dndName: (0, f.Z)(e),
         onEdit: () => n(t),
         onMove: l,
-        disabled: h
+        disabled: b
       })]
     }, (0, d.ab)(e)))
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     onClick: t,
     children: n,
     disabled: i = false
   } = e;
   return (0, r.jsx)(o.P3F, {
-    className: b.container,
+    className: h.container,
     onClick: i ? true : t,
     "aria-disabled": i,
     children: (0, r.jsxs)("div", {
-      className: a()(b.card, b.addBenefit, {
-        [b.disabled]: i
+      className: a()(h.card, h.addBenefit, {
+        [h.disabled]: i
       }),
       children: [(0, r.jsx)("div", {
-        className: b.emojiWrapper,
+        className: h.emojiWrapper,
         children: (0, r.jsx)(o.oFk, {
           size: "xs",
           color: "currentColor",
-          className: b.addBenefitIcon
+          className: h.addBenefitIcon
         })
       }), (0, r.jsx)("div", {
-        className: b.cardText,
+        className: h.cardText,
         children: (0, r.jsx)(o.Text, {
           color: "header-primary",
           variant: "text-md/normal",

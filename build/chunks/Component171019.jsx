@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk597688 = require("./597688.js"),
   Chunk884697 = require("./884697.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk71414 = require("./71414.js");
+  Chunk426602 = require("./426602.js");
 let u = e => {
   let {
     skuId: t,
@@ -21,26 +21,26 @@ let u = e => {
     let e = s.Z.getProduct(t);
     return (0, o.G1)(e)
   });
-  return u || m && n ? null : p ? (0, r.jsx)(a.lBU, {
+  return u || m && n ? null : p ? (0, r.jsx)(l.lBU, {
     className: d.newBadge,
     text: (0, r.jsxs)("div", {
       className: d.newBadgeText,
-      children: [(0, r.jsx)(a.mBM, {
+      children: [(0, r.jsx)(l.mBM, {
         size: "xxs",
         color: "currentColor"
       }), c.intl.string(c.t.y2b7CA)]
     })
-  }) : (0, r.jsx)(a.G2e, {
-    icon: h ? () => (0, r.jsx)(a.SrA, {
+  }) : (0, r.jsx)(l.G2e, {
+    icon: h ? () => (0, r.jsx)(l.SrA, {
       size: "custom",
       color: "currentColor",
       width: 14,
       height: 14
-    }) : () => (0, r.jsx)(a.mBM, {
+    }) : () => (0, r.jsx)(l.mBM, {
       size: "xxs",
       color: "currentColor"
     }),
-    color: l.Z.colors.BACKGROUND_ACCENT.css,
+    color: a.Z.colors.BACKGROUND_ACCENT.css,
     className: d.iconBadge
   })
 }

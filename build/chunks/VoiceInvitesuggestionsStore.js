@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 78332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var i, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -21,7 +21,7 @@ function p() {
   } else if (c && !Chunk19780.Z.isConnected() && null != u) return d(u), u = null, c = false, true;
   returnfalse
 }
-class h extends(r = Chunk442837.ZP.Store) {
+class f extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk19780.Z), this.syncWith([Chunk19780.Z], p)
   }
@@ -32,13 +32,13 @@ class h extends(r = Chunk442837.ZP.Store) {
   getShouldShowPopover(e) {
     return null != e && o.Z.isConnected() && o.Z.getChannelId() === e && !this.getIsPopoverDismissed(e)
   }
-}(i = "displayName") in h ? Object.defineProperty(h, i, {
+}(i = "displayName") in f ? Object.defineProperty(f, i, {
   value: "VoiceInvitesuggestionsStore ",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[i] = "VoiceInvitesuggestionsStore ";
-let f = new h(Chunk570140.Z, {
+}) : f[i] = "VoiceInvitesuggestionsStore ";
+let h = new f(Chunk570140.Z, {
   VOICE_INVITE_SUGGESTIONS_DISMISS_POPOVER: function(e) {
     let {
       channelId: t

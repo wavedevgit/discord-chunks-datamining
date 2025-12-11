@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 774168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk481051 = require("./481051.jsx"),
-  Chunk753797 = require("./753797.js");
+  Chunk464863 = require("./464863.js");
 
 function d(e) {
   let {
@@ -65,15 +65,15 @@ function p(e) {
     mentionCount: l,
     isTyping: o,
     canBadge: s
-  } = e, p = null != l && l > 0, h = null != (t = p ? l : r) ? t : 0, f = s && null != r && r > 0;
+  } = e, p = null != l && l > 0, f = null != (t = p ? l : r) ? t : 0, h = s && null != r && r > 0;
   return (0, i.jsxs)("div", {
     className: a()(u.chatIcon, n),
     children: [(0, i.jsx)(d, {
-      isBadged: f,
+      isBadged: h,
       isTyping: o
-    }), f && (0, i.jsx)(c.Z, {
+    }), h && (0, i.jsx)(c.Z, {
       hasMentions: p,
-      truncatedCount: h > 99 ? "99+" : h,
+      truncatedCount: f > 99 ? "99+" : f,
       className: u.badge
     })]
   })

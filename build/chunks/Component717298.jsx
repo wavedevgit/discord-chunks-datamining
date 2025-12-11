@@ -1,4 +1,4 @@
-/** Chunk was on 47863 **/
+/** Chunk was on 44183 **/
 /** chunk id: 717298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -41,13 +41,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk328242 = require("./328242.jsx"),
   Chunk565574 = require("./565574.jsx"),
   Chunk286420 = require("./286420.jsx"),
-  Chunk173044 = require("./173044.jsx"),
+  Chunk51708 = require("./51708.jsx"),
   Chunk351911 = require("./351911.jsx"),
   Chunk577257 = require("./577257.js"),
   Chunk70722 = require("./70722.js"),
-  Chunk258587 = require("./258587.js"),
+  Chunk297940 = require("./297940.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk468918 = require("./468918.js");
+  Chunk677210 = require("./677210.js");
 
 function X(e) {
   var t;
@@ -57,9 +57,9 @@ function X(e) {
     sourceApplication: o,
     analyticsLocations: X = [],
     selectSource: K = true
-  } = e, q = i.useRef(performance.now()), Y = (0, u.e7)([b.Z], () => (b.Z.getUseSystemScreensharePicker() || b.Z.getUseGamescopeCapture()) && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
+  } = e, q = i.useRef(performance.now()), Y = (0, u.e7)([S.Z], () => (S.Z.getUseSystemScreensharePicker() || S.Z.getUseGamescopeCapture()) && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === g.Z || true === g.Z ? true : g.Z.os.release, W.jR))), {
     analyticsLocations: Q
-  } = (0, v.ZP)(X, x.Z.GO_LIVE_MODAL_V2), $ = (0, u.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
+  } = (0, b.ZP)(X, v.Z.GO_LIVE_MODAL_V2), $ = (0, u.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
     state: et,
     dispatch: en
   } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && K ? "confirm" : "source_select");
@@ -90,7 +90,7 @@ function X(e) {
       sourceType: eu
     } = et,
     ef = i.useCallback(async e => {
-      S.eo.updateSetting(et.notifyFriends), S.I0.updateSetting(et.hidePreview);
+      _.eo.updateSetting(et.notifyFriends), _.I0.updateSetting(et.hidePreview);
       let [t, r] = await (0, T.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
         preset: et.preset,
         fps: et.fps,
@@ -108,7 +108,7 @@ function X(e) {
       }), n()
     }, [n, et, Q]);
   async function ep(e) {
-    await (0, g.Z)({
+    await (0, x.Z)({
       channelId: e
     }) && null != o && ef(o)
   }

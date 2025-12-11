@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk983703 = require("./983703.js");
+  Chunk535881 = require("./535881.js");
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -101,7 +101,7 @@ let M = function(e) {
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
     rows: s,
     section: L
-  } = (0, l.cj)([_.ZP], () => _.ZP.getState()), M = (0, l.e7)([b.Z], () => b.Z.isFocused()), {
+  } = (0, l.cj)([b.ZP], () => b.ZP.getState()), M = (0, l.e7)([_.Z], () => _.Z.isFocused()), {
     relationshipCount: k,
     hasBlockedOrIgnored: U
   } = (0, l.cj)([m.Z], () => ({

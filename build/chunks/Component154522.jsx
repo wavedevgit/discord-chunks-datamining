@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  c = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk267101 = require("./267101.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk891561 = require("./891561.jsx"),
   Chunk333866 = require("./333866.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk451489 = require("./451489.js");
+  Chunk579574 = require("./579574.js");
 
 function g(e) {
   let {
@@ -24,7 +24,7 @@ function g(e) {
     productId: r
   } = e, {
     listingsLoaded: o
-  } = (0, u.eD)(t), s = (0, u.ue)(t), g = i.useRef(null), {
+  } = (0, u.eD)(t), c = (0, u.ue)(t), g = i.useRef(null), {
     sortOption: O
   } = (0, p.s)(), h = i.useMemo(() => (function(e, t) {
     let r, n;
@@ -44,8 +44,8 @@ function g(e) {
       default:
         return e
     }
-    return c().orderBy(e, [r], [n])
-  })(s, O), [s, O]);
+    return s().orderBy(e, [r], [n])
+  })(c, O), [c, O]);
   return o ? (0, n.jsx)("ul", {
     className: j.cardContainer,
     "aria-label": b.intl.string(b.t.qe4kTa),

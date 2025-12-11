@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 287576, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -25,7 +25,7 @@ function c(e) {
   }), {
     currentPeriod: g,
     previousPeriods: m,
-    metrics: p
+    metrics: f
   } = r.useMemo(() => {
     let {
       currentPeriod: e,
@@ -42,7 +42,7 @@ function c(e) {
     payoutsByPeriod: d,
     currentPeriod: g,
     previousPeriods: m,
-    metrics: p,
+    metrics: f,
     application: n
   }
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 572444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => _
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./17294.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,10 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk131951 = require("./131951.js"),
   Chunk246992 = require("./246992.js"),
   Chunk65154 = require("./65154.js"),
-  Chunk653301 = require("./653301.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk663380 = require("./663380.js"),
+  Chunk663618 = require("./663618.js");
 
-function _(e) {
+function y(e) {
   let {
     recording: t
   } = e;
@@ -49,7 +49,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     recording: t,
     playing: n,
@@ -57,7 +57,7 @@ function y(e) {
     onStop: i
   } = e;
   return (0, a.jsx)(d.zF9, {
-    collapsibleContent: (0, a.jsx)(_, {
+    collapsibleContent: (0, a.jsx)(y, {
       recording: t
     }),
     children: e => {
@@ -100,10 +100,10 @@ function y(e) {
   })
 }
 
-function C() {
+function _() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, l] = Chunk473749.useState([]), _ = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [C, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), O = Chunk473749.useRef(null), [T, N] = Chunk473749.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, l] = Chunk473749.useState([]), y = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), O = Chunk473749.useRef(null), [T, N] = Chunk473749.useState(.5), {
     krispModels: P,
     krispModelOverride: w,
     inputMode: I,
@@ -164,9 +164,9 @@ function C() {
     label: "Disabled",
     value: "NONE"
   }), (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk451429.panel,
+    className: Chunk663618.panel,
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk653301.innerPanel,
+      className: Chunk663380.innerPanel,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-lg/bold",
         children: "Krisp Tester"
@@ -185,7 +185,7 @@ function C() {
       }), "KRISP" === G && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.iRW, {
           label: "Krisp Suppression Level",
-          initialValue: _,
+          initialValue: y,
           onValueChange: Chunk846027.Z.setKrispSuppressionLevel,
           minValue: 0,
           maxValue: 100
@@ -214,20 +214,20 @@ function C() {
         children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
           checked: R,
-          onChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
             autoThreshold: e
           })
         }), R && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
             label: "Use Krisp VAD",
             checked: A,
-            onChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
           }), A && (0, Chunk54381.jsx)(Chunk481060.iRW, {
             label: "Krisp VAD Activation Threshold",
             initialValue: D,
-            onValueChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onValueChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadKrispActivationThreshold: e
             }),
             minValue: 0,
@@ -236,7 +236,7 @@ function C() {
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Run Before Processing",
           checked: null != F && F,
-          onChange: e => u.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => u.Z.setMode(g.pM.VOICE_ACTIVITY, {
             vadDuringPreProcess: e
           })
         })]
@@ -270,7 +270,7 @@ function C() {
                 createdAt: Date.now(),
                 suppression: G,
                 echoCancellation: k,
-                krispSuppressionLevel: _
+                krispSuppressionLevel: y
               }])
             })
           },
@@ -289,9 +289,9 @@ function C() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
           children: "Recordings"
-        }), Chunk345959.map((e, t) => (0, a.jsx)(y, {
+        }), Chunk345959.map((e, t) => (0, a.jsx)(C, {
           recording: e,
-          playing: e === C,
+          playing: e === _,
           onPlay: z,
           onStop: H
         }, t))]

@@ -1,4 +1,4 @@
-/** Chunk was on 46931 **/
+/** Chunk was on 48615 **/
 /** chunk id: 274459, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -12,10 +12,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk70956 = require("./70956.js"),
   Chunk456631 = require("./456631.js"),
-  Chunk181201 = require("./181201.js");
+  Chunk516846 = require("./516846.js");
 let p = 6 * Chunk70956.Z.Millis.SECOND,
+  b = 2 * Chunk70956.Z.Millis.SECOND,
   m = 2 * Chunk70956.Z.Millis.SECOND,
-  _ = 2 * Chunk70956.Z.Millis.SECOND,
   g = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
 function v(e) {
@@ -25,8 +25,8 @@ function v(e) {
     onComplete: u
   } = e, {
     emoji: v,
-    sentAt: b
-  } = n, h = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [E, y] = i.useState(true), S = !h, O = (0, o.Yzy)(E, {
+    sentAt: h
+  } = n, E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), [_, y] = i.useState(true), S = !E, O = (0, o.Yzy)(_, {
     from: {
       rotate: false
     },
@@ -46,12 +46,12 @@ function v(e) {
   });
   return (i.useEffect(() => {
     let e;
-    return Date.now() - b >= _ ? (0, d.H)(t) : e = setTimeout(() => {
+    return Date.now() - h >= m ? (0, d.H)(t) : e = setTimeout(() => {
       y(false), S && (0, d.H)(t)
-    }, S ? m : p), () => {
+    }, S ? b : p), () => {
       null != e && clearTimeout(e)
     }
-  }, [b, t, S]), S) ? null : O((e, t) => {
+  }, [h, t, S]), S) ? null : O((e, t) => {
     var n;
     let {
       rotate: i

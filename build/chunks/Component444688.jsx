@@ -13,13 +13,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk418632 = require("./418632.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk97411 = require("./97411.js");
+  Chunk956797 = require("./956797.js");
 let g = function(e) {
   let {
     onClose: t,
     transitionState: a
-  } = e, g = (0, o.e7)([d.default], () => d.default.getCurrentUser()), [b, p] = r.useState(false), v = r.useCallback(() => (null == t || t(), Promise.resolve()), [t]), y = r.useCallback(() => {
-    null == t || t(), (0, u.ZDy)(async () => {
+  } = e, g = (0, c.e7)([d.default], () => d.default.getCurrentUser()), [b, p] = r.useState(false), v = r.useCallback(() => (null == t || t(), Promise.resolve()), [t]), y = r.useCallback(() => {
+    null == t || t(), (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("9343").then(n.bind(n, 642298));
@@ -43,7 +43,7 @@ let g = function(e) {
       }({}, t))
     })
   }, [t]), k = r.useCallback(() => {
-    null == t || t(), l()(null != g, "ResendEmailVerificationButton: currentUser cannot be undefined"), p(true), (0, c.s)(g).finally(() => p(false))
+    null == t || t(), l()(null != g, "ResendEmailVerificationButton: currentUser cannot be undefined"), p(true), (0, u.s)(g).finally(() => p(false))
   }, [g, t]), h = r.useMemo(() => (null == g ? true : g.email) == null ? [{
     text: f.intl.string(f.t.ydw5nX),
     onClick: y,
@@ -65,7 +65,7 @@ let g = function(e) {
     actions: h,
     children: [(0, i.jsx)("div", {
       className: m.imageUnverified
-    }), (0, i.jsx)(u.Text, {
+    }), (0, i.jsx)(o.Text, {
       variant: "text-md/normal",
       className: m.message,
       children: f.intl.string(f.t["0LgOKH"])

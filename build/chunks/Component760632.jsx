@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 760632, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,8 +20,8 @@ function m(e) {
     canManageGuild: t,
     afkTimeout: n,
     afkChannelId: m,
-    label: p
-  } = e, f = i.useMemo(() => [{
+    label: f
+  } = e, p = i.useMemo(() => [{
     value: o,
     label: s.intl.formatToPlainString(s.t.iXLF9W, {
       minutes: 1
@@ -46,16 +46,16 @@ function m(e) {
     label: s.intl.formatToPlainString(s.t.xCjYxK, {
       hours: 1
     })
-  }], []), h = i.useCallback(e => {
+  }], []), b = i.useCallback(e => {
     a.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
   }, []);
   return (0, r.jsx)(l.y6, {
-    label: p,
+    label: f,
     value: null == n ? null : "".concat(n),
-    options: f,
+    options: p,
     isDisabled: null == m || !t,
-    onChange: h
+    onChange: b
   })
 }

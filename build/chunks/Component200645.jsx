@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk761588 = require("./761588.js");
+  Chunk867889 = require("./867889.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,9 +63,9 @@ function E() {
   if (!module) return null;
   let E = "running" === Chunk998502.state;
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk761588.systemServiceContainer,
+    className: Chunk867889.systemServiceContainer,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk761588.systemServiceTextContainer,
+      className: Chunk867889.systemServiceTextContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",

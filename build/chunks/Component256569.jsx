@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 }), require("./388685.js"), require("./358797.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk853276 = require("./853276.jsx"),
   Chunk596390 = require("./596390.js"),
   Chunk870472 = require("./870472.js"),
-  Chunk961010 = require("./961010.js");
+  Chunk420974 = require("./420974.js");
 
-function p(e) {
+function f(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -34,7 +34,7 @@ function p(e) {
     className: m.resizeHandle
   })
 }
-let f = Chunk473749.forwardRef(function(e, t) {
+let p = Chunk473749.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
@@ -58,7 +58,7 @@ let f = Chunk473749.forwardRef(function(e, t) {
       },
       ref: t,
       children: n
-    }), (0, r.jsx)(p, {
+    }), (0, r.jsx)(f, {
       resizableNode: c,
       onResize: g,
       onResizeEnd: e => {
@@ -68,29 +68,29 @@ let f = Chunk473749.forwardRef(function(e, t) {
   })
 });
 
-function h(e) {
+function b(e) {
   var t;
   let {
     initialValue: n,
     onChangeTags: l,
     onChangeNewTagValue: c,
     tagErrors: u = {},
-    placeholder: p,
-    className: h,
-    maxTags: b
-  } = e, x = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, g.V)(n), {
-    handlePasteEvent: O,
-    handleInputChange: C,
-    handleKeyDown: y,
-    handleContainerKeyUp: N,
-    handleRemoveTag: E,
-    handleTagChangeEvent: I,
-    handleSelectTag: S,
+    placeholder: f,
+    className: b,
+    maxTags: h
+  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), O = (0, g.V)(n), {
+    handlePasteEvent: C,
+    handleInputChange: y,
+    handleKeyDown: N,
+    handleContainerKeyUp: E,
+    handleRemoveTag: I,
+    handleTagChangeEvent: S,
+    handleSelectTag: _,
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, g.Q)(v, {
-    scrollerRef: _,
+  } = (0, g.Q)(O, {
+    scrollerRef: v,
     mainInputRef: x,
     mainContainerRef: j
   }), {
@@ -100,7 +100,7 @@ function h(e) {
       selections: D,
       isSelecting: A
     }
-  } = v, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = O, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
     G(false), P(), null == (e = x.current) || e.focus({
       preventScroll: true
@@ -119,7 +119,7 @@ function h(e) {
       if (t) {
         var n;
         let t = D.includes(R[e]);
-        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+        null == (n = x.current) || n.focus(), t ? T(e) : (_(e), setImmediate(() => {
           var e;
           null == (e = x.current) || e.blur(), setTimeout(() => {
             var e;
@@ -127,21 +127,21 @@ function h(e) {
           }, 16)
         }))
       } else T(e, true), G(true)
-    }, [S, T, D, R]);
+    }, [_, T, D, R]);
   return (0, r.jsxs)("div", {
-    className: a()(m.mainContainer, h),
+    className: a()(m.mainContainer, b),
     ref: j,
     tabIndex: 0,
-    onKeyUp: N,
-    children: [(0, r.jsxs)(f, {
-      ref: _,
+    onKeyUp: E,
+    children: [(0, r.jsxs)(p, {
+      ref: v,
       onClick: M,
       children: [R.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
-        onChange: I(t),
+        onChange: S(t),
         onBlur: U,
         onFocus: B(t),
-        onRemove: () => E(t),
+        onRemove: () => I(t),
         isSelected: D.includes(e),
         isSelecting: A,
         error: u[e],
@@ -151,18 +151,18 @@ function h(e) {
           [m.isEditingOtherNodes]: k
         }),
         ref: x,
-        onChange: C,
-        onKeyDownCapture: y,
-        onPaste: O,
+        onChange: y,
+        onKeyDownCapture: N,
+        onPaste: C,
         onBlur: w,
-        placeholder: 0 === R.length ? p : true,
+        placeholder: 0 === R.length ? f : true,
         value: Z
       })]
-    }), null != b && (0, r.jsxs)(s.Text, {
+    }), null != h && (0, r.jsxs)(s.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: m.maxTags,
-      children: [null != (t = null == R ? true : R.length) ? t : 0, "/", b]
+      children: [null != (t = null == R ? true : R.length) ? t : 0, "/", h]
     })]
   })
 }

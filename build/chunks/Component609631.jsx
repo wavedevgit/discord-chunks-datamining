@@ -17,7 +17,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk709048 = require("./709048.jsx"),
   Chunk762328 = require("./762328.jsx"),
   Chunk168718 = require("./168718.jsx"),
-  Chunk793906 = require("./793906.js");
+  Chunk120264 = require("./120264.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -409,8 +409,8 @@ class D extends(r = Chunk473749.Component) {
     } = this.state, _ = this.calculateMaxHeight();
     return (0, Chunk54381.jsx)("div", {
       className: s()({
-        [Chunk793906.clickTrapContainer]: true,
-        [Chunk793906.trapClicks]: Chunk120356
+        [Chunk120264.clickTrapContainer]: true,
+        [Chunk120264.trapClicks]: Chunk120356
       }),
       children: (0, Chunk54381.jsx)(Chunk70007.C1, {
         children: o => {

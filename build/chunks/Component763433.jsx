@@ -1,10 +1,10 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 92504 **/
 /** chunk id: 763433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => h,
   r: () => m
 });
-var r, Chunk54381 = require("./54381.js");
+var a, Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
@@ -13,43 +13,43 @@ var Chunk120356 = require("./120356.js"),
   Chunk984370 = require("./984370.jsx"),
   Chunk825102 = require("./825102.js"),
   Chunk744695 = require("./744695.jsx"),
-  Chunk770593 = require("./770593.js"),
-  m = ((r = {}).DEFAULT = "DEFAULT", r.SEARCH = "SEARCH", r);
+  Chunk766317 = require("./766317.js"),
+  m = ((a = {}).DEFAULT = "DEFAULT", a.SEARCH = "SEARCH", a);
 
 function h(e) {
   let {
     selectedTabId: t,
     handleTransition: n,
-    tabs: r,
+    tabs: a,
     state: i = "DEFAULT",
     onAvailableWidthChange: m,
     icon: h,
-    children: g
-  } = e, f = (0, o.ZP)(), {
-    enabled: _
+    children: f
+  } = e, b = (0, o.ZP)(), {
+    enabled: g
   } = (0, d.W)({
     location: "global_discovery_header_bar"
   });
-  return (0, a.jsx)(s.f6W, {
-    theme: f,
-    children: e => (0, a.jsxs)(c.Z, {
+  return (0, r.jsx)(s.f6W, {
+    theme: b,
+    children: e => (0, r.jsxs)(c.Z, {
       className: l()(e, p.headerBar),
-      innerClassname: _ ? p.headerBarInner : true,
-      children: ["DEFAULT" === i && (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(h, {
+      innerClassname: g ? p.headerBarInner : true,
+      children: ["DEFAULT" === i && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(h, {
           color: "currentColor",
           size: "md"
-        }), (0, a.jsx)(u.Z, {
-          tabs: r,
+        }), (0, r.jsx)(u.Z, {
+          tabs: a,
           selectedTab: t,
           onTabSelect: n,
           onAvailableWidthChange: m
         })]
-      }), (0, a.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: l()(p.headerBarContent, {
           [p.headerBarSearchContent]: "SEARCH" === i
         }),
-        children: g
+        children: f
       })]
     })
   })

@@ -22,22 +22,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk678189 = require("./678189.js");
+  Chunk320463 = require("./320463.js");
 let T = function(e) {
   let {
     transitionState: t,
     entryPoint: n,
     onClose: T
-  } = e, [g, h] = r.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), U = r.useRef(g), [k, L] = (0, u.US)([g], true, true), {
-    loading: S,
-    initiateAgeVerification: N
+  } = e, [g, h] = r.useState(a.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), U = r.useRef(g), [b, k] = (0, u.US)([g], true, true), {
+    loading: L,
+    initiateAgeVerification: S
   } = (0, f.WD)({
     onComplete: T,
     entryPoint: n
-  }), b = r.useMemo(() => (0, s.Z)(), []), G = (0, p.W)("age_verification_get_started_modal"), O = r.useRef(false);
+  }), N = r.useMemo(() => (0, s.Z)(), []), G = (0, p.W)("age_verification_get_started_modal"), O = r.useRef(false);
   return r.useEffect(() => {
-    U.current = k
-  }, [k]), r.useLayoutEffect(() => () => {
+    U.current = b
+  }, [b]), r.useLayoutEffect(() => () => {
     if (O.current) return;
     let e = U.current;
     null != e && (O.current = true, _.Z.maybeOpenAgeVerificationUserFeedback({
@@ -45,24 +45,24 @@ let T = function(e) {
       visibleContent: e
     }))
   }, []), r.useEffect(() => {
-    (0, A.lA)(b, A.d_.PRIMARY, n)
-  }, [b, n]), (0, i.jsxs)(o.Modal, {
+    (0, A.lA)(N, A.d_.PRIMARY, n)
+  }, [N, n]), (0, i.jsxs)(o.Modal, {
     transitionState: t,
     onClose: T,
     title: I.intl.string(I.t.JHNunj),
     subtitle: I.intl.string(I.t["+BLIGh"]),
     actions: [{
       text: I.intl.string(I.t.SJMnkX),
-      loading: S,
+      loading: L,
       icon: l.Gr1,
       iconPosition: "end",
       onClick: async () => {
-        (0, A.x3)(b, A.d_.PRIMARY, A.sU.GET_STARTED), h(a.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await N()
+        (0, A.x3)(N, A.d_.PRIMARY, A.sU.GET_STARTED), h(a.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE), await S()
       }
     }],
-    actionBarInput: (0, i.jsxs)(c.Z, {
+    actionBarInput: (0, i.jsxs)(d.Z, {
       onClick: () => {
-        R.Z.openUrl(E.Z.getArticleURL(C.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(b, A.d_.PRIMARY, A.sU.LEARN_MORE)
+        R.Z.openUrl(E.Z.getArticleURL(C.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(N, A.d_.PRIMARY, A.sU.LEARN_MORE)
       },
       className: M.learnMoreButton,
       children: [I.intl.string(I.t["aA6q/z"]), (0, i.jsx)(l.Gr1, {
@@ -70,12 +70,12 @@ let T = function(e) {
         color: "currentColor"
       })]
     }),
-    children: [(0, x.uH)(b).map((e, t) => {
+    children: [(0, x.uH)(N).map((e, t) => {
       let {
         title: n,
         description: r
       } = e;
-      return (0, i.jsx)(d.JZ, {
+      return (0, i.jsx)(c.JZ, {
         title: n,
         description: r,
         listType: "numbered",
@@ -87,7 +87,7 @@ let T = function(e) {
       className: M.requestContainer,
       children: I.intl.format(I.t.pJAxgQ, {
         handleOnRequestHook: () => {
-          R.Z.openUrl(m.sQ.APPEALS_LINK), (0, A.x3)(b, A.d_.PRIMARY, A.sU.MANUAL_REVIEW_REQUEST)
+          R.Z.openUrl(m.sQ.APPEALS_LINK), (0, A.x3)(N, A.d_.PRIMARY, A.sU.MANUAL_REVIEW_REQUEST)
         }
       })
     })]

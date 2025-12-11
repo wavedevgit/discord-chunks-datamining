@@ -19,7 +19,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk68721 = require("./68721.js"),
   Chunk997653 = require("./997653.js"),
   Chunk740197 = require("./740197.js"),
-  Chunk548820 = require("./548820.js"),
+  Chunk340217 = require("./340217.js"),
   Chunk586021 = require("./586021.js"),
   Chunk579237 = require("./579237.js"),
   Chunk867985 = require("./867985.js"),
@@ -131,7 +131,7 @@ class N extends Chunk47770.Z {
   }
   async _enable() {
     if (this.enabled) return;
-    await this.getAudioContext().audioWorklet.addModule(Chunk548820);
+    await this.getAudioContext().audioWorklet.addModule(Chunk340217);
     let e = new Chunk68721.Z(this.getAudioContext());
     module.on("permission", this.handleAudioPermission);
     try {

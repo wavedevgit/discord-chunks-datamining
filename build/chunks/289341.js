@@ -21,10 +21,10 @@ function h(e) {
   let {
     match: h
   } = e, m = null != (n = (0, u.DR)()) ? n : [], {
-    analyticsLocations: _
+    analyticsLocations: b
   } = (0, o.ZP)([...m, s.Z.ACTIVITY_DETAIL_PAGE]), {
-    applicationId: b
-  } = h.params, [E] = (0, c.Z)([b]), O = null == E || null == (t = E.bot) ? true : t.id, v = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+    applicationId: _
+  } = h.params, [E] = (0, c.Z)([_]), O = null == E || null == (t = E.bot) ? true : t.id, v = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
     null != O && null != v && (async () => {
       try {
@@ -36,17 +36,17 @@ function h(e) {
           r = null != (e = t.searchParams.get("referrer_id")) ? e : true,
           {
             customId: i
-          } = await (0, f.ur)(b, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
+          } = await (0, f.ur)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
         await (0, p.Z)({
-          targetApplicationId: b,
+          targetApplicationId: _,
           channelId: n,
-          analyticsLocations: _,
+          analyticsLocations: b,
           customId: i,
           referrerId: r
         })
       } catch (e) {}
     })()
-  }, [_, b, O, v]), r.useEffect(() => {
+  }, [b, _, O, v]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == O && l.Z.show({
         title: g.intl.string(g.t.PtobXW),

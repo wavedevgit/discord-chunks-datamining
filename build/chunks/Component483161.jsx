@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk620163 = require("./620163.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88651 = require("./88651.js");
+  Chunk897192 = require("./897192.js");
 let A = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     notice: {
@@ -44,21 +44,21 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
           size: Chunk481060.EFr.SIZE_48
         });
       return null == exports ? null : (0, Chunk54381.jsxs)("div", {
-        className: Chunk88651.profileCustomizationTab,
+        className: Chunk897192.profileCustomizationTab,
         children: [(0, Chunk54381.jsx)(Chunk481060.qEK, {
           src: require,
           avatarDecoration: Chunk778825,
           size: Chunk481060.EFr.SIZE_48,
           "aria-label": Chunk388032.intl.string(Chunk388032.t.lqaIxI)
         }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk88651.textContainer,
+          className: Chunk897192.textContainer,
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             color: "header-primary",
             variant: "text-md/medium",
             lineClamp: 1,
             children: null != (t = exports.globalName) ? module : exports.username
           }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk88651.editProfilesRow,
+            className: Chunk897192.editProfilesRow,
             children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-sm/normal",
               color: "currentColor",

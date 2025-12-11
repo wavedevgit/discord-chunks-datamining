@@ -1,7 +1,7 @@
 /** Chunk was on 69015 **/
 /** chunk id: 247265, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,20 +10,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk435757 = require("./435757.js"),
+  Chunk372807 = require("./372807.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk490839 = require("./490839.js");
-let b = e => {
+  Chunk477856 = require("./477856.js");
+let f = e => {
   let {
     currentUser: t,
     otherUser: r,
     transitionState: c,
-    onClose: b
+    onClose: f
   } = e, [p, h] = o.useState(false), j = o.useCallback(() => {
     h(true)
   }, []), y = o.useCallback(() => {
-    b()
-  }, [b]), g = t.nsfwAllowed, {
+    f()
+  }, [f]), g = t.nsfwAllowed, {
     cancelLinkRequest: O,
     isCancelLoading: m
   } = (0, a.G)({
@@ -32,7 +32,7 @@ let b = e => {
   });
   return i()(g, "FamilyCenterDeclineLinkModal should only be rendered for parents."), (0, n.jsxs)(l.IX, {
     transitionState: c,
-    onClose: b,
+    onClose: f,
     children: [p && (0, n.jsx)(l.M14, {
       type: "critical",
       children: u.intl.string(d.default["6gyAQZ"])
@@ -44,7 +44,7 @@ let b = e => {
         icon: (0, n.jsx)(l.Dio, {
           size: "md",
           color: "currentColor",
-          className: f.closeIcon
+          className: b.closeIcon
         })
       })
     }), (0, n.jsx)(l.Go$, {
@@ -52,7 +52,7 @@ let b = e => {
       actions: [{
         variant: "secondary",
         text: u.intl.string(d.default.czincX),
-        onClick: b,
+        onClick: f,
         disabled: m
       }, {
         variant: "critical-primary",

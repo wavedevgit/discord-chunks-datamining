@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk524484 = require("./524484.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk720711 = require("./720711.js");
+  Chunk328607 = require("./328607.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -145,24 +145,24 @@ function x(e) {
     null != k ? (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, N(T({}, t), {
         user: x,
         guildId: k,
         channel: O,
         showMediaItems: true,
-        onInteraction: (0, _.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
+        onInteraction: (0, b.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
           targetUserId: x.id
         })
       }))
     }) : (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
+      } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
       return t => (0, r.jsx)(e, N(T({}, t), {
         user: x,
         showMediaItems: true,
-        onInteraction: (0, _.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
+        onInteraction: (0, b.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
           targetUserId: x.id
         })
       }))
@@ -185,7 +185,7 @@ function x(e) {
         className: S.avatarContainer,
         onContextMenu: z,
         focusProps: j,
-        children: (0, r.jsx)(b.Z, {
+        children: (0, r.jsx)(_.Z, {
           shakeLocation: I.oZ.VOICE_USER,
           isShaking: M,
           children: (0, r.jsx)("div", {
@@ -231,7 +231,7 @@ function A(e) {
       containerRef: l,
       maxVisibleAvatars: t
     }
-  }(t.length - 1), [_, b] = function(e, t, n) {
+  }(t.length - 1), [b, _] = function(e, t, n) {
     let r = [];
     for (let i of e)
       if (i.user.id !== t && !r.some(e => e.user.id === i.user.id)) {
@@ -250,7 +250,7 @@ function A(e) {
       variant: "icon-only",
       size: "sm"
     })
-  }), I = b && u ? t : _;
+  }), I = _ && u ? t : b;
   return I.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(S.scroller, l),
     fade: true,
@@ -275,7 +275,7 @@ function A(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), b ? y : null]
+      }), _ ? y : null]
     })
   })
 }

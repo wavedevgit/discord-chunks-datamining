@@ -31,8 +31,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk36385 = require("./36385.js"),
-  Chunk498374 = require("./498374.js"),
+  Chunk498264 = require("./498264.js"),
+  Chunk74186 = require("./74186.js"),
   Chunk93109 = require("./93109.js"),
   Chunk446818 = require("./446818.js"),
   Chunk932889 = require("./932889.js");
@@ -47,19 +47,19 @@ let U = () => {
         location_stack: exports
       })
     }, [exports]), (0, Chunk54381.jsxs)("div", {
-      className: Chunk498374.settingsContainer,
+      className: Chunk74186.settingsContainer,
       children: [(0, Chunk54381.jsxs)(Chunk793030.$1m, {
         color: "pink",
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk498374.headerContainer,
+          className: Chunk74186.headerContainer,
           children: (0, Chunk54381.jsxs)("div", {
-            className: Chunk498374.header,
+            className: Chunk74186.header,
             children: [(0, Chunk54381.jsxs)("div", {
-              className: Chunk498374.headerLogos,
+              className: Chunk74186.headerLogos,
               children: [(0, Chunk54381.jsx)(Chunk589072.Z, {
                 color: module ? "black" : "white"
               }), (0, Chunk54381.jsx)("div", {
-                className: Chunk498374.headerDivider
+                className: Chunk74186.headerDivider
               }), (0, Chunk54381.jsx)("img", {
                 src: module ? Chunk446818 : Chunk93109,
                 alt: "Cloudflare",
@@ -69,18 +69,18 @@ let U = () => {
             }), (0, Chunk54381.jsx)(Chunk37279.v, {})]
           })
         }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk498374.contentContainer,
+          className: Chunk74186.contentContainer,
           children: [(0, Chunk54381.jsx)("img", {
             src: Chunk932889,
             width: "100",
             alt: "Private browsing perk logo"
           }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk498374.content,
+            className: Chunk74186.content,
             children: [(0, Chunk54381.jsx)(Chunk614074.C, {}), (0, Chunk54381.jsx)(Chunk116282.R, {})]
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk498374.contentSpacer
+            className: Chunk74186.contentSpacer
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk498374.ctaContainer,
+            className: Chunk74186.ctaContainer,
             children: (0, Chunk54381.jsx)(j, {})
           })]
         })]
@@ -95,7 +95,7 @@ let U = () => {
     } = (0, Chunk773275.xf)(), l = (0, Chunk612659.m)();
     if (exports) return (0, Chunk54381.jsx)(Chunk969521.U, {});
     if (!Chunk473749) return (0, Chunk54381.jsxs)("div", {
-      className: Chunk498374.subscribeBtnContainer,
+      className: Chunk74186.subscribeBtnContainer,
       children: [(0, Chunk54381.jsx)(Chunk740594.Z, {
         buttonTextOverride: Chunk388032.intl.string(Chunk388032.t["8x0jKT"]),
         subscriptionTier: Chunk474936.Si.TIER_2,
@@ -129,14 +129,14 @@ let U = () => {
               is_enable_warp: true
             }), require(Chunk5900._n.READY_FOR_LICENSE)
           },
-          text: Chunk388032.intl.string(Chunk36385.default.J09UWz)
+          text: Chunk388032.intl.string(Chunk498264.default.J09UWz)
         });
       case Chunk5900._n.INSTALLING:
       case Chunk5900._n.READY_FOR_LICENSE:
       case Chunk5900._n.WAITING_FOR_TERMS:
       case Chunk5900._n.INSTALLING_TIMEOUT:
         return (0, Chunk54381.jsx)("div", {
-          className: Chunk498374.spinner,
+          className: Chunk74186.spinner,
           children: (0, Chunk54381.jsx)(Chunk793030.$jN, {
             type: Chunk793030.RAz.SPINNING_CIRCLE
           })

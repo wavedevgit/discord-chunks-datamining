@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk78839 = require("./78839.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk616926 = require("./616926.js");
+  Chunk570810 = require("./570810.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,7 +110,7 @@ let M = {
       return (0, Chunk54381.jsx)(Chunk906732.Gt, {
         value: Y,
         children: (0, Chunk54381.jsx)(Chunk481060.zJl, {
-          className: Chunk616926.scroller,
+          className: Chunk570810.scroller,
           children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
             direction: "vertical",
             gap: 24,
@@ -269,12 +269,12 @@ let M = {
                   variant: "text-sm/normal",
                   children: "Virtual Currency Balance:"
                 }), X ? (0, Chunk54381.jsx)("div", {
-                  className: Chunk616926.loader,
+                  className: Chunk570810.loader,
                   children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
                     type: Chunk481060.RAz.SPINNING_CIRCLE
                   })
                 }) : (0, Chunk54381.jsxs)("div", {
-                  className: Chunk616926.balanceWidgetPillContainer,
+                  className: Chunk570810.balanceWidgetPillContainer,
                   children: [null !== J && (0, Chunk54381.jsxs)(Chunk481060.Text, {
                     variant: "text-sm/normal",
                     children: ["Error fetching Virtual Currency Balance: ", J.message]

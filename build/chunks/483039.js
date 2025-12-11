@@ -10,9 +10,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk60482 = require("./60482.js"),
   Chunk535396 = require("./535396.js"),
   Chunk619733 = require("./619733.js"),
-  Chunk400580 = require("./400580.js"),
+  Chunk160589 = require("./160589.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611087 = require("./611087.js");
+  Chunk796571 = require("./796571.js");
 
 function f(e) {
   let t = (0, a.BU)(e, "useGameServerPerk"),

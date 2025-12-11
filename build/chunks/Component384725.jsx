@@ -1,21 +1,21 @@
-/** Chunk was on 37931 **/
+/** Chunk was on 18831 **/
 /** chunk id: 384725, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js");
-let a = {
+let l = {
   open(e) {
-    r.Z.dispatch({
+    o.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_OPEN",
       classificationId: e
-    }), (0, o.ZDy)(async () => {
+    }), (0, a.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("65652"), n.e("67332")]).then(n.bind(n, 208265));
+      } = await Promise.all([n.e("65652"), n.e("29131")]).then(n.bind(n, 208265));
       return n => (0, i.jsx)(t, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

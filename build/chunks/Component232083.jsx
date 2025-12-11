@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk385153 = require("./385153.jsx"),
   Chunk623132 = require("./623132.jsx"),
   Chunk34335 = require("./34335.jsx"),
-  Chunk112794 = require("./112794.js");
+  Chunk553087 = require("./553087.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -38,36 +38,36 @@ function g(e) {
     games: t,
     user: n,
     widgetType: i
-  } = e, l = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["games", "user", "widgetType"]);
   let {
     registerItemRef: o,
-    manageFocusOnDelete: s
-  } = (0, a.C)();
+    manageFocusOnDelete: c
+  } = (0, l.C)();
   return (0, r.jsx)("ul", {
     className: d.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
-      children: (0, r.jsx)(c.Z, f({
+      children: (0, r.jsx)(s.Z, f({
         index: t,
         user: n,
         game: e,
         widgetType: i,
         coverRef: o(e.applicationId),
-        onRemoveGame: s
-      }, l))
+        onRemoveGame: c
+      }, a))
     }, e.applicationId))
   })
 }
@@ -75,16 +75,16 @@ function g(e) {
 function p(e) {
   var t, n;
   let {
-    user: c,
+    user: s,
     widgetType: d,
     disableInteraction: p,
-    games: m
-  } = e, b = (0, i.e7)([l.default], () => l.default.getId() === c.id), {
+    games: b
+  } = e, m = (0, i.e7)([a.default], () => a.default.getId() === s.id), {
     getManageButtonForWidget: h
   } = (0, u.j)(), y = h(d), {
     expanded: v,
     setExpanded: O
-  } = (0, o.g)(), j = v ? m : m.slice(0, 2), x = m.length > 2, P = (0, r.jsxs)(r.Fragment, {
+  } = (0, o.g)(), j = v ? b : b.slice(0, 2), x = b.length > 2, P = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -96,12 +96,12 @@ function p(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), x && (0, r.jsx)(s.Z, {
+    }), t)), x && (0, r.jsx)(c.Z, {
       expanded: v,
       onClick: () => O(e => !e)
     })]
   });
-  return b && !p ? (0, r.jsx)(a.d, {
+  return m && !p ? (0, r.jsx)(l.d, {
     emptyListFallbackRef: y,
     children: P
   }) : P

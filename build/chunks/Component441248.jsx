@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 441248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => b
+  k: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,9 +16,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk168524 = require("./168524.js"),
   Chunk115530 = require("./115530.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk48733 = require("./48733.js");
+  Chunk867751 = require("./867751.js");
 
-function m(e) {
+function b(e) {
   let {
     name: t,
     applicationId: n
@@ -28,17 +28,17 @@ function m(e) {
     source: d.m1.RtcPanel,
     trackEntryPointImpression: true
   });
-  return (0, r.jsx)(o.P3F, {
+  return (0, r.jsx)(a.P3F, {
     onClick: i,
     className: l()(null != i && g.clickableGameName),
-    children: (0, r.jsx)(p.Z, {
+    children: (0, r.jsx)(h.Z, {
       className: g.gameName,
       children: t
     })
   })
 }
 
-function b(e) {
+function m(e) {
   let {
     isStreaming: t,
     application: n,
@@ -46,9 +46,9 @@ function b(e) {
     onClickNotSharing: l,
     isForceShowSharingPopout: d,
     setIsForceShowSharingPopout: f,
-    ref: p,
-    popoutTargetRef: b
-  } = e, _ = null != n ? n.name : null != i ? i.name : h.intl.string(h.t["UQMV/E"]);
+    ref: h,
+    popoutTargetRef: m
+  } = e, y = null != n ? n.name : null != i ? i.name : p.intl.string(p.t["UQMV/E"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
     className: g.gameWrapper,
     children: [(0, r.jsxs)("div", {
@@ -57,22 +57,22 @@ function b(e) {
         className: g.gameIcon,
         game: n,
         pid: null == i ? true : i.pid,
-        ref: p
-      }), t ? (0, r.jsx)(o.Odl, {
+        ref: h
+      }), t ? (0, r.jsx)(a.Odl, {
         size: "md",
         color: "currentColor",
         className: g.liveBadge
       }) : null]
     }), (0, r.jsx)(s.j, {
-      popoutTargetRef: b,
+      popoutTargetRef: m,
       isForceShowSharingPopout: d,
       setIsForceShowSharingPopout: f,
       children: (0, r.jsxs)("div", {
         className: g.info,
-        children: [null != _ ? (0, r.jsx)(m, {
-          name: _,
+        children: [null != y ? (0, r.jsx)(b, {
+          name: y,
           applicationId: null == n ? true : n.id
-        }) : null, (0, r.jsx)(a.V, {
+        }) : null, (0, r.jsx)(o.V, {
           onClick: l
         })]
       })

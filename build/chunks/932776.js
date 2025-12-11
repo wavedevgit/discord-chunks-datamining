@@ -1,4 +1,4 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 932776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => c
@@ -25,11 +25,11 @@ function c() {
         i = (t.type > n ? n : t.type) - (e.type > n ? n : e.type);
       return 0 !== i ? i : e.untranslatedName.localeCompare(t.untranslatedName)
     }), [c]),
-    p = Chunk473749.useMemo(() => exports.startsWith("/") ? u.filter(e => e.type === a.yU.CHAT) : u, [exports, u]),
-    m = Chunk473749.useMemo(() => exports.startsWith("/") ? exports.substring(1) : exports, [exports]);
+    b = Chunk473749.useMemo(() => exports.startsWith("/") ? u.filter(e => e.type === a.yU.CHAT) : u, [exports, u]),
+    p = Chunk473749.useMemo(() => exports.startsWith("/") ? exports.substring(1) : exports, [exports]);
   return {
     query: exports,
-    results: Chunk473749.useMemo(() => (0, Chunk282923.B)(p, d, m), [p, m]),
+    results: Chunk473749.useMemo(() => (0, Chunk282923.B)(b, d, p), [b, p]),
     setQuery: require,
     unfilteredCount: module.length
   }

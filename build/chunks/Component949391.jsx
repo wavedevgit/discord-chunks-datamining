@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk241209 = require("./241209.jsx"),
   Chunk807693 = require("./807693.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk608981 = require("./608981.js");
+  Chunk648441 = require("./648441.js");
 
 function p(e) {
   var n;
@@ -20,12 +20,12 @@ function p(e) {
     eulaId: t,
     transitionState: p,
     onClose: f
-  } = e, h = (0, a.e7)([d.Z], () => d.Z.getEULA(t));
-  i.useEffect(() => {
+  } = e, h = (0, i.e7)([d.Z], () => d.Z.getEULA(t));
+  a.useEffect(() => {
     (0, l.N)(t)
   }, [t]);
-  let S = null != (n = null == h ? true : h.name) ? n : u.intl.string(u.t.ZTNur7),
-    j = null != h ? (0, r.jsx)(c.Z, {
+  let b = null != (n = null == h ? true : h.name) ? n : u.intl.string(u.t.ZTNur7),
+    S = null != h ? (0, r.jsx)(c.Z, {
       children: h.content,
       className: E.markdown
     }) : (0, r.jsx)(s.$jN, {
@@ -34,18 +34,18 @@ function p(e) {
   return (0, r.jsxs)(s.Y0X, {
     transitionState: p,
     size: s.CgR.SMALL,
-    "aria-label": S,
+    "aria-label": b,
     parentComponent: "EULA",
     children: [(0, r.jsxs)(s.xBx, {
       justify: o.Z.Justify.BETWEEN,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: S
+        children: b
       }), (0, r.jsx)(s.olH, {
         onClick: f
       })]
     }), (0, r.jsx)(s.hzk, {
-      children: j
+      children: S
     })]
   })
 }

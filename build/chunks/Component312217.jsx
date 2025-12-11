@@ -10,7 +10,7 @@ var Chunk692547 = require("./692547.js"),
   Chunk410030 = require("./410030.js"),
   Chunk325767 = require("./325767.js");
 
-function c(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -64,7 +64,7 @@ function d(e) {
   }(e, ["width", "height", "color"]);
   let C = (0, l.ZP)(),
     p = (0, o.ap)(C);
-  return (0, n.jsx)("svg", a(c(a(c({}, (0, s.Z)(u)), {
+  return (0, n.jsx)("svg", a(s(a(s({}, (0, c.Z)(u)), {
     width: t,
     height: r,
     viewBox: "0 0 ".concat(t, " ").concat(r),

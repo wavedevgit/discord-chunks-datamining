@@ -24,9 +24,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk5192 = require("./5192.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk5238 = require("./5238.js"),
+  Chunk44542 = require("./44542.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127181 = require("./127181.js"),
+  Chunk905490 = require("./905490.js"),
   Chunk350618 = require("./350618.js");
 let T = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
 
@@ -34,20 +34,20 @@ function y(e) {
   var t, n;
   let {
     guildId: i
-  } = e, c = (0, a.e7)([b.Z], () => b.Z.getGuild(i)), C = (0, a.e7)([_.Z], () => _.Z.getSortedRoles(i).find(e => {
+  } = e, u = (0, o.e7)([h.Z], () => h.Z.getGuild(i)), C = (0, o.e7)([b.Z], () => b.Z.getSortedRoles(i).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), y = (0, a.e7)([h.default], () => h.default.getCurrentUser()), N = null == y ? true : y.id, O = (0, a.e7)([x.ZP], () => null != N ? x.ZP.getMember(i, N) : true, [N, i]), S = (null == O ? true : O.premiumSince) != null, A = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), {
+  })), y = (0, o.e7)([j.default], () => j.default.getCurrentUser()), N = null == y ? true : y.id, O = (0, o.e7)([x.ZP], () => null != N ? x.ZP.getMember(i, N) : true, [N, i]), S = (null == O ? true : O.premiumSince) != null, A = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
     avatarDecorationSrc: k,
     avatarSrc: R,
     eventHandlers: L
   } = (0, v.Z)({
     userId: null == y ? true : y.id,
     guildId: i,
-    size: u.EFr.SIZE_40,
+    size: c.EFr.SIZE_40,
     animateOnHover: !A
   });
-  return null == c || null == O || null == y ? null : (0, r.jsxs)(u.$1m, {
+  return null == u || null == O || null == y ? null : (0, r.jsxs)(c.$1m, {
     className: E.container,
     children: [(0, r.jsx)("img", {
       alt: "",
@@ -55,14 +55,14 @@ function y(e) {
       src: P
     }), (0, r.jsxs)("div", {
       className: E.textContainer,
-      children: [(0, r.jsx)(o.xvT, {
+      children: [(0, r.jsx)(a.xvT, {
         variant: "text-md/semibold",
         children: I.intl.string(S ? w.default.KSWK1U : w.default.XXXX5l)
-      }), (0, r.jsx)(o.xvT, {
+      }), (0, r.jsx)(a.xvT, {
         variant: "text-sm/medium",
         children: I.intl.format(S ? w.default["7fWTg4"] : w.default["7PXeeQ"], {
           onClick: () => {
-            (0, p.f)({
+            (0, f.f)({
               guildId: i,
               location: {
                 section: Z.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR,
@@ -94,7 +94,7 @@ function y(e) {
         user: y,
         src: R,
         avatarDecoration: k,
-        size: u.EFr.SIZE_40,
+        size: c.EFr.SIZE_40,
         "aria-hidden": true,
         animate: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -107,20 +107,20 @@ function y(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      username: (0, r.jsx)(u.PUh, {
+      username: (0, r.jsx)(c.PUh, {
         variant: "text-md/semibold",
-        name: j.ZP.getName(i, null, y),
+        name: _.ZP.getName(i, null, y),
         colorString: C.colorString,
         colorStrings: C.colorStrings
       }),
       className: l()(E.content, E.exampleMessage),
       message: I.intl.string(I.t["6OSasb"]),
-      decorations: (0, r.jsx)(u.Ucv, {
-        color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      decorations: (0, r.jsx)(c.Ucv, {
+        color: c.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
         className: E.boostIcon
       })
-    }), (0, r.jsx)(f.Z, {
-      guild: c,
+    }), (0, r.jsx)(p.Z, {
+      guild: u,
       className: E.content,
       analyticsLocation: {
         page: Z.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -130,7 +130,7 @@ function y(e) {
       size: s.Ph.MEDIUM,
       intent: m.P.NONE,
       fullWidth: true,
-      icon: (0, r.jsx)(u.Ucv, {
+      icon: (0, r.jsx)(c.Ucv, {
         color: "currentColor",
         size: "sm"
       })

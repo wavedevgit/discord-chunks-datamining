@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 469351, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk68920 = require("./68920.js");
+  Chunk155167 = require("./155167.js");
 
 function w(e) {
   let {
@@ -39,23 +39,23 @@ function w(e) {
     hasValidApplication: n
   } = e, {
     listingsLoaded: w
-  } = (0, C.eD)(t), Z = (0, a.e7)([_.Z], () => _.Z.getGuild(t)), R = (0, a.e7)([v.default], () => v.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
+  } = (0, y.eD)(t), Z = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), R = (0, a.e7)([O.default], () => O.default.getCurrentUser()), D = null != Z && (0, x.eM)(Z, R), {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, g.P)(Z);
   let G = i.useCallback(() => {
     if (null == Z) return;
     let e = j.Z.getEveryoneRole(Z);
-    p.Z.close();
+    f.Z.close();
     let t = {
       [e.id]: e
     };
-    (0, f.iD)(Z.id, {
-      type: h.z.SERVER_SHOP,
+    (0, p.iD)(Z.id, {
+      type: b.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
-      returnToSection: I.pNK.GUILD_PRODUCTS
-    }), (0, b.uL)(I.Z5c.CHANNEL(Z.id, S.oC.GUILD_SHOP))
+      returnToSection: S.pNK.GUILD_PRODUCTS
+    }), (0, h.uL)(S.Z5c.CHANNEL(Z.id, _.oC.GUILD_SHOP))
   }, [Z]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == Z) return null;
@@ -66,8 +66,8 @@ function w(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         children: T.intl.format(T.t.xiYuDt, {
-          monetizationPolicyLink: O.Z.getArticleURL(I.BhN.CREATOR_POLICY),
-          serverProductsSupportLink: O.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
+          monetizationPolicyLink: C.Z.getArticleURL(S.BhN.CREATOR_POLICY),
+          serverProductsSupportLink: C.Z.getCreatorSupportArticleURL(S.BhN.SERVER_PRODUCTS)
         })
       })]
     }),
@@ -102,11 +102,11 @@ function w(e) {
         })
       }) : null]
     }),
-    B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(y.Z, {
+    B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(N.Z, {
       guildId: t
-    })).with("manage_listings", () => (0, r.jsx)(N.Z, {
+    })).with("manage_listings", () => (0, r.jsx)(E.Z, {
       guildId: t
-    })).with("payment", () => (0, r.jsx)(E.Z, {
+    })).with("payment", () => (0, r.jsx)(I.Z, {
       guildId: t
     })).exhaustive(),
     F = w ? (0, r.jsx)(o.njP.Panel, {

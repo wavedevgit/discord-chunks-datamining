@@ -16,7 +16,7 @@ function u(e) {
     show: t,
     children: n,
     top: r = 0,
-    bottom: l = 0
+    bottom: a = 0
   } = e, {
     ref: u,
     height: d
@@ -39,14 +39,14 @@ function u(e) {
     },
     to: {
       height: t ? d : 0,
-      paddingBottom: t ? "".concat(l, "px") : "0px",
+      paddingBottom: t ? "".concat(a, "px") : "0px",
       marginTop: t ? "".concat(r, "px") : "0px"
     },
     config: {
       tension: 170,
       friction: 26
     }
-  }), g = (0, o.q_F)({
+  }), f = (0, o.q_F)({
     from: {
       opacity: 0
     },
@@ -58,16 +58,16 @@ function u(e) {
       easing: t ? e => e ** 4 : e => e * (2 - e)
     }
   });
-  return (0, i.jsx)(a.animated.div, {
+  return (0, i.jsx)(l.animated.div, {
     style: {
       overflow: "hidden",
       height: h.height,
       paddingBottom: h.paddingBottom,
       marginTop: h.marginTop
     },
-    children: (0, i.jsx)(a.animated.div, {
+    children: (0, i.jsx)(l.animated.div, {
       style: {
-        opacity: g.opacity
+        opacity: f.opacity
       },
       ref: u,
       children: n

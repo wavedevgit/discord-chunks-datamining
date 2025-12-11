@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 769321, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,29 +19,29 @@ var Chunk120356 = require("./120356.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20163 = require("./20163.js");
+  Chunk980120 = require("./980120.js");
 
-function g(e) {
+function j(e) {
   let {
     applicationRoleConnection: n,
     locale: t,
     onApplicationClicked: i,
     selectedGuildId: o
-  } = e, r = (0, c.rm)(n, t);
+  } = e, r = (0, s.rm)(n, t);
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
-      className: j.platformIconContainer,
-      children: null != n.application.bot ? (0, l.jsx)(a.Z, {
-        user: new p.Z(n.application.bot),
-        size: s.EFr.SIZE_16
-      }) : (0, l.jsx)(s.IMN, {
+      className: v.platformIconContainer,
+      children: null != n.application.bot ? (0, l.jsx)(c.Z, {
+        user: new m.Z(n.application.bot),
+        size: a.EFr.SIZE_16
+      }) : (0, l.jsx)(a.IMN, {
         color: "currentColor",
         size: "sm"
       })
     }), (0, l.jsxs)("div", {
-      className: j.connectionInfo,
-      children: [(0, l.jsxs)(s.P3F, {
-        className: j.connectedAppRoleAccountClickable,
+      className: v.connectionInfo,
+      children: [(0, l.jsxs)(a.P3F, {
+        className: v.connectedAppRoleAccountClickable,
         onClick: () => {
           null == i || i(), (0, d.transitionToGlobalDiscovery)({
             tab: h.GlobalDiscoveryTab.APPS,
@@ -54,51 +54,51 @@ function g(e) {
             }
           })
         },
-        children: [null != n.platform_name ? (0, l.jsx)(s.Text, {
+        children: [null != n.platform_name ? (0, l.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: n.platform_name
-        }) : null, null != n.platform_username ? (0, l.jsx)(s.Text, {
+        }) : null, null != n.platform_username ? (0, l.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: n.platform_username
-        }) : null, (0, l.jsx)(s.Text, {
+        }) : null, (0, l.jsx)(a.Text, {
           variant: "text-xxs/normal",
           color: "text-default",
-          className: j.connectedAppRoleAccountPoweredBy,
-          children: v.intl.format(v.t.zIT9YA, {
+          className: v.connectedAppRoleAccountPoweredBy,
+          children: b.intl.format(b.t.zIT9YA, {
             applicationHook: () => n.application.name
           })
         })]
       }), null != r && r.length > 0 ? (0, l.jsx)("div", {
-        className: j.metadata,
+        className: v.metadata,
         children: r
       }) : null]
     })]
   })
 }
 
-function b(e) {
+function g(e) {
   let {
     applicationRoleConnections: n,
     className: t,
     onClose: i
   } = e, {
-    trackUserProfileAction: s
-  } = (0, x.KZ)(), a = (0, r.e7)([m.default], () => m.default.locale), c = (0, r.e7)([f.Z], () => f.Z.getGuildId());
+    trackUserProfileAction: a
+  } = (0, x.KZ)(), c = (0, r.e7)([f.default], () => f.default.locale), s = (0, r.e7)([p.Z], () => p.Z.getGuildId());
   return 0 === n.length ? null : (0, l.jsx)("ul", {
-    className: o()(j.container, t),
+    className: o()(v.container, t),
     children: n.map((e, n) => (0, l.jsx)("li", {
-      className: j.connection,
-      children: (0, l.jsx)(g, {
+      className: v.connection,
+      children: (0, l.jsx)(j, {
         applicationRoleConnection: e,
-        locale: a,
+        locale: c,
         onApplicationClicked: () => {
-          s({
+          a({
             action: "PRESS_APP_CONNECTION"
           }), i()
         },
-        selectedGuildId: null != c ? c : true
+        selectedGuildId: null != s ? s : true
       })
     }, "".concat(n, "-").concat(e.application.id)))
   })

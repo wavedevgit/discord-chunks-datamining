@@ -2,7 +2,7 @@
 /** chunk id: 200623, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  default: () => g
+  default: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,9 +18,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk927923 = require("./927923.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk5511 = require("./5511.js");
+  Chunk337016 = require("./337016.js");
 
-function _(e) {
+function g(e) {
   let {
     step: t,
     instructions: r
@@ -29,12 +29,12 @@ function _(e) {
     className: x.cardRow,
     children: [(0, n.jsx)("div", {
       className: x.stepNumberContainer,
-      children: (0, n.jsx)(a.Text, {
+      children: (0, n.jsx)(i.Text, {
         variant: "text-sm/semibold",
         className: x.stepNumber,
         children: t
       })
-    }), (0, n.jsx)(a.Text, {
+    }), (0, n.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "header-primary",
       className: x.instructions,
@@ -43,53 +43,53 @@ function _(e) {
   })
 }
 
-function g(e) {
+function C(e) {
   let {
     channel: t,
     transitionState: r,
-    onClose: g
-  } = e, C = (0, o.e7)([u.default], () => null != u.default.getRemoteSessionId()), y = (0, f.Z)(t, {
+    onClose: C
+  } = e, y = (0, a.e7)([u.default], () => null != u.default.getRemoteSessionId()), O = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    C && g()
-  }, [C, g]), s.useEffect(() => {
+    y && C()
+  }, [y, C]), s.useEffect(() => {
     (0, p.Z)(t.id, m.YE.XBOX)
-  }, [t.id]), (0, n.jsx)(i.Modal, {
+  }, [t.id]), (0, n.jsx)(c.Modal, {
     title: b.intl.string(b.t["f+Aijq"]),
     subtitle: b.intl.string(b.t.mYFmDY),
     actions: [],
-    onClose: g,
+    onClose: C,
     transitionState: r,
     children: (0, n.jsxs)("div", {
       className: x.card,
       children: [(0, n.jsxs)("div", {
         className: x.cardText,
-        children: [(0, n.jsxs)(a.Text, {
+        children: [(0, n.jsxs)(i.Text, {
           variant: "text-lg/semibold",
           color: "header-primary",
           className: x.cardRow,
           children: [(0, n.jsx)(l.Z, {
             className: x.cardHeaderIcon
           }), b.intl.string(b.t.ZNlYbK)]
-        }), (0, n.jsx)(_, {
+        }), (0, n.jsx)(g, {
           step: 1,
           instructions: b.intl.string(b.t.dDtkl9)
-        }), (0, n.jsx)(_, {
+        }), (0, n.jsx)(g, {
           step: 2,
           instructions: b.intl.string(b.t.IWuXjC)
-        }), (0, n.jsx)(a.Text, {
+        }), (0, n.jsx)(i.Text, {
           variant: "text-sm/medium",
-          children: (0, n.jsx)(a.Anchor, {
+          children: (0, n.jsx)(i.Anchor, {
             className: x.learnMore,
             href: d.Z.getArticleURL(h.BhN.XBOX_CONNECTION),
             children: b.intl.string(b.t.hvVgAZ)
           })
         })]
-      }), (0, n.jsx)(c.ZP, {
+      }), (0, n.jsx)(o.ZP, {
         className: x.qrCode,
         size: 120,
-        text: y
+        text: O
       })]
     })
   })

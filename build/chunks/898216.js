@@ -1,0 +1,17 @@
+/** Chunk was on 95055 **/
+/** chunk id: 898216, original params: e,t,r (module,exports,require) **/
+module.exports = {
+  akaBadge: "_5149c636683693b9-akaBadge",
+  subHeader: "_5149c636683693b9-subHeader",
+  miniAvatar: "_5149c636683693b9-miniAvatar",
+  miniGuildIcon: "_5149c636683693b9-miniGuildIcon",
+  akaTransfer: "_5149c636683693b9-akaTransfer",
+  guildTransfer: "_5149c636683693b9-guildTransfer",
+  guildName: "_5149c636683693b9-guildName",
+  nickname: "_5149c636683693b9-nickname",
+  spacing: "_5149c636683693b9-spacing",
+  fromToWrapper: "_5149c636683693b9-fromToWrapper _5149c636683693b9-spacing",
+  from: "_5149c636683693b9-from",
+  to: "_5149c636683693b9-to",
+  roleSubscriptionText: "_5149c636683693b9-roleSubscriptionText"
+}

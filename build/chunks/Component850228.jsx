@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk559725 = require("./559725.js"),
   Chunk439041 = require("./439041.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk969590 = require("./969590.js");
+  Chunk379570 = require("./379570.js");
 class p extends Chunk473749.PureComponent {
   componentDidMount() {
     null == this.props.adyenPaymentData && null != this.props.cashAppPayComponent && Chunk559725.cp()
@@ -29,22 +29,22 @@ class p extends Chunk473749.PureComponent {
       children: [(0, Chunk54381.jsx)(Chunk219929.ZP, {
         type: Chunk219929.ZP.Types.CASH_APP,
         size: Chunk219929.Uy.MEDIUM,
-        className: Chunk969590.icon
+        className: Chunk379570.icon
       }), Chunk559725 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: Chunk975060.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
-          className: Chunk969590.connectionInstructions,
+          className: Chunk379570.connectionInstructions,
           children: Chunk388032.intl.format(Chunk388032.t["ze/1yE"], {
             cashtag: Chunk975060
           })
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
-          className: Chunk969590.connectionInstructions,
+          className: Chunk379570.connectionInstructions,
           children: Chunk388032.intl.string(Chunk388032.t.VPOx7N)
         })]
       }) : (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk969590.connectionInstructions,
+        className: Chunk379570.connectionInstructions,
         children: null == Chunk473749 ? Chunk388032.intl.string(Chunk388032.t["CgVe/w"]) : Chunk388032.intl.string(Chunk388032.t["1MqcjI"])
       })]
     })

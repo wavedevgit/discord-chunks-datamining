@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 783454, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk404203 = require("./404203.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk717795 = require("./717795.js");
+  Chunk618374 = require("./618374.js");
 
 function m(e) {
   let {
@@ -21,14 +21,14 @@ function m(e) {
     title: n,
     description: l,
     children: m
-  } = e, [p, f] = i.useState(t), h = () => f(e => !e), b = (0, o.Dt)();
+  } = e, [f, p] = i.useState(t), b = () => p(e => !e), h = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(d.Z, {
       className: a()(g.header, {
-        [g.headerWithDescription]: p && null != l
+        [g.headerWithDescription]: f && null != l
       }),
-      onClick: h,
+      onClick: b,
       children: e => {
         let {
           areaRef: t,
@@ -39,22 +39,22 @@ function m(e) {
             variant: "heading-md/semibold",
             children: n
           }), (0, r.jsx)(s.P3F, {
-            onClick: i(h),
+            onClick: i(b),
             "aria-label": u.intl.string(u.t.e5eQOy),
-            "aria-controls": b,
-            "aria-expanded": p,
+            "aria-controls": h,
+            "aria-expanded": f,
             focusProps: {
               ringTarget: t
             },
             children: (0, r.jsx)(c.Z, {
               className: g.caret,
-              direction: p ? c.Z.Directions.UP : c.Z.Directions.DOWN
+              direction: f ? c.Z.Directions.UP : c.Z.Directions.DOWN
             })
           })]
         })
       }
-    }), p && (0, r.jsxs)("div", {
-      id: b,
+    }), f && (0, r.jsxs)("div", {
+      id: h,
       children: [null != l && (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         className: g.description,

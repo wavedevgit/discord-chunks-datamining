@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 189472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,25 +16,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk621600 = require("./621600.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = e => {
+let f = e => {
   let {
     user: t,
     channelId: n,
-    reportId: x
-  } = e, h = c.Z.getDMFromUserId(t.id), b = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), f = l.useMemo(() => m.ZP.getName(null == b ? true : b.guild_id, null == b ? true : b.id, t), [b, t]), v = (0, i.e7)([u.ZP], () => null == h ? null : u.ZP.isChannelMuted(null, h)), [j, y] = l.useState(null != v && v), Z = l.useCallback(() => {
-    null != h && (y(true), s.ZP.trackWithMetadata(g.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
+    reportId: f
+  } = e, x = c.Z.getDMFromUserId(t.id), h = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), v = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), _ = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [j, y] = l.useState(null != _ && _), Z = l.useCallback(() => {
+    null != x && (y(true), s.ZP.trackWithMetadata(b.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: x
-    }), a.Z.updateChannelOverrideSettings(null, h, {
+      report_id: f
+    }), a.Z.updateChannelOverrideSettings(null, x, {
       muted: true
     }, p.ZB.Muted), o.Z.showMuteSuccessToast(t.id, n))
-  }, [h, n, t, x]);
+  }, [x, n, t, f]);
   return (0, r.jsx)(d.JZ, {
-    title: _.intl.formatToPlainString(_.t.TRp5wR, {
-      username: f
+    title: g.intl.formatToPlainString(g.t.TRp5wR, {
+      username: v
     }),
-    description: _.intl.string(_.t["yM/+AJ"]),
-    buttonText: j ? _.intl.string(_.t.E8x4Nj) : _.intl.string(_.t.HITUcR),
+    description: g.intl.string(g.t["yM/+AJ"]),
+    buttonText: j ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcR),
     buttonDisabled: j,
     onButtonPress: Z
   })

@@ -2,24 +2,24 @@
 /** chunk id: 328626, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g: () => i,
-  y: () => o
+  g: () => a,
+  y: () => i
 }), require("./388685.js");
 var r, Chunk473749 = require("./473749.js"),
-  i = ((r = {}).MOUNTED = "mounted", r.SORT_OUT = "sort-out", r.SORT_IN = "sort-in", r.SHUFFLE_OUT = "shuffle-out", r.SHUFFLE_IN = "shuffle-in", r.FINISHED = "finished", r);
-let o = () => {
-  let [e, t] = Chunk473749.useState("mounted"), [n, r] = Chunk473749.useState(false), i = Chunk473749.useRef(null);
+  a = ((r = {}).MOUNTED = "mounted", r.SORT_OUT = "sort-out", r.SORT_IN = "sort-in", r.SHUFFLE_OUT = "shuffle-out", r.SHUFFLE_IN = "shuffle-in", r.FINISHED = "finished", r);
+let i = () => {
+  let [e, t] = Chunk473749.useState("mounted"), [n, r] = Chunk473749.useState(false), a = Chunk473749.useRef(null);
   return Chunk473749.useEffect(() => {
-    require && "finished" === module && (null !== i.current && i.current.focus(), r(false))
+    require && "finished" === module && (null !== a.current && a.current.focus(), r(false))
   }, [module, require]), {
     animationPhase: module,
     startAnimation: Chunk473749.useCallback(e => {
       let {
         isShuffling: n,
         onOutroComplete: l,
-        returnRef: o
+        returnRef: i
       } = e;
-      (null == o ? true : o.current) != null && (i.current = o.current, r(true)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
+      (null == i ? true : i.current) != null && (a.current = i.current, r(true)), t(n ? "shuffle-out" : "sort-out"), setTimeout(() => {
         l(), t(n ? "shuffle-in" : "sort-in"), setTimeout(() => {
           t("finished")
         }, n ? 200 : 300)

@@ -42,7 +42,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk411851 = require("./411851.js");
+  Chunk195349 = require("./195349.js");
 
 function V(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -155,7 +155,7 @@ function F(e) {
         }), (0, i.jsx)(d.Text, {
           color: "text-muted",
           variant: "text-xs/normal",
-          children: R.zB(g.rowType)
+          children: L.zB(g.rowType)
         }), g.rowType !== D.aC.EMPTY_STATE && (0, i.jsx)(o.u, {
           asContainer: true,
           text: null != r ? r : s(g.rowType, g.disabled),
@@ -214,10 +214,10 @@ function W(e) {
     guild: t,
     channel: l,
     permissionUpdates: r
-  } = e, c = (0, s.e7)([E.Z], () => E.Z.getSortedRoles(t.id)), u = R.RZ(t, c, l, O.yP, r), h = (0, s.e7)([N.ZP], () => R.cR(N.ZP.getMemberIds(t.id), l, t, O.yP, r)), g = (0, C.nG)(l.id);
+  } = e, c = (0, s.e7)([E.Z], () => E.Z.getSortedRoles(t.id)), u = L.RZ(t, c, l, O.yP, r), h = (0, s.e7)([N.ZP], () => L.cR(N.ZP.getMemberIds(t.id), l, t, O.yP, r)), g = (0, C.nG)(l.id);
   return (0, i.jsxs)("div", {
     className: a()(G.settingCard, G.active),
-    children: [(0, i.jsx)(M.Z, {
+    children: [(0, i.jsx)(A.Z, {
       label: U.intl.string(U.t.StpcFU),
       description: U.intl.string(U.t.f7VbhF),
       icon: (0, i.jsx)(d.ewx, {
@@ -275,10 +275,10 @@ function z(e) {
     isPrivateGuildChannel: r,
     roles: o,
     members: u
-  } = e, h = (0, s.e7)([T.Z], () => T.Z.can(B.Pl.ADMINISTRATOR, t)), g = I.Uu(B.Pl.VIEW_CHANNEL, t), m = I.Uu(B.Pl.ADMINISTRATOR, t);
+  } = e, h = (0, s.e7)([T.Z], () => T.Z.can(B.Pl.ADMINISTRATOR, t)), g = R.Uu(B.Pl.VIEW_CHANNEL, t), m = R.Uu(B.Pl.ADMINISTRATOR, t);
   async function f() {
     let e = l.accessPermissions,
-      a = _.default.getCurrentUser();
+      a = P.default.getCurrentUser();
     if (!r && null != await (0, v.T)(t.id, l.id)) return void(0, d.ZDy)(async () => {
       let {
         VoidConfirmModal: e
@@ -297,7 +297,7 @@ function z(e) {
         })
       }))
     });
-    R.$e(l, e, r), r || null == a || h || R.Yh(l, e)
+    L.$e(l, e, r), r || null == a || h || L.Yh(l, e)
   }
   let p = {
     title: U.intl.string(U.t.aUI70g),
@@ -308,7 +308,7 @@ function z(e) {
     className: a()(G.settingCard, {
       [G.active]: r
     }),
-    children: [(0, i.jsx)(M.Z, {
+    children: [(0, i.jsx)(A.Z, {
       description: p.subtitle,
       icon: (0, i.jsx)(d.mBM, {
         size: "custom",
@@ -364,7 +364,7 @@ function z(e) {
           channel: l,
           roles: o,
           members: u,
-          getRemoveTooltipHint: R.yv
+          getRemoveTooltipHint: L.yv
         })]
       })]
     })]
@@ -425,7 +425,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     isPrivateGuildChannel: u,
     locked: h,
     permissionUpdates: m
-  } = e, [f, p] = l.useState(!I.Uu(B.Pl.SEND_MESSAGES, a));
+  } = e, [f, p] = l.useState(!R.Uu(B.Pl.SEND_MESSAGES, a));
   if (null == a || null == c) return null;
   let b = {
     title: U.intl.string(U.t.BAZMBn),
@@ -438,16 +438,16 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     }), (0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: b.subtitle
-    }), null != r && t ? h ? (0, i.jsx)(A.Z, {
+    }), null != r && t ? h ? (0, i.jsx)(_.Z, {
       canSync: false,
       icon: d.DuK,
       noticeText: U.intl.format(U.t.ETJqLl, {
         categoryName: r.name
       })
-    }) : (0, i.jsx)(A.Z, {
+    }) : (0, i.jsx)(_.Z, {
       buttonText: U.intl.string(U.t.NVwuHq),
       canSync: true,
-      icon: (0, d.GSL)(P.Z),
+      icon: (0, d.GSL)(I.Z),
       noticeText: U.intl.format(U.t.OIhm0M, {
         categoryName: r.name
       }),
@@ -463,7 +463,7 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
               let {
                 guild_id: e
               } = r, t = V({}, r.permissionOverwrites);
-              null != e && null == t[e] && (t[e] = I.we(e)), await (0, j.u)(a, t[e].deny, t[e].allow) && (0, g.wk)(a.id, {
+              null != e && null == t[e] && (t[e] = R.we(e)), await (0, j.u)(a, t[e].deny, t[e].allow) && (0, g.wk)(a.id, {
                 permissionOverwrites: Object.values(t)
               })
             }
@@ -480,6 +480,6 @@ let q = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
       isPrivateGuildChannel: u,
       roles: o,
       members: s
-    }), false, (0, i.jsx)(L.Z, {})]
+    }), false, (0, i.jsx)(M.Z, {})]
   })
 })

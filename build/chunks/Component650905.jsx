@@ -105,7 +105,7 @@ let c = new(require("./710845.js")).Z("MFAPlayground"),
               (0, i.ZDy)(async () => {
                 let {
                   MFAModal: i
-                } = await Promise.all([n.e("52030"), n.e("45353")]).then(n.bind(n, 124860));
+                } = await Promise.all([n.e("52030"), n.e("3040")]).then(n.bind(n, 124860));
                 return n => (0, r.jsx)(i, l(o({}, n), {
                   finish: t,
                   mfaChallenge: e

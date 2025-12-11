@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 186023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => h
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,14 +17,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk185625 = require("./185625.js"),
   Chunk255514 = require("./255514.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk584581 = require("./584581.js");
-let b = e => {
+  Chunk351356 = require("./351356.js");
+let h = e => {
   let {
     reportType: t,
     menu: n,
-    modalProps: b,
-    onSubmit: f,
-    onNavigate: v,
+    modalProps: h,
+    onSubmit: v,
+    onNavigate: _,
     emailToken: j,
     isAuthenticated: y = true
   } = e, Z = (0, d.Dt)(), {
@@ -73,9 +73,9 @@ let b = e => {
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r));
-      if (D([...M, e]), null != d.key && (null == v || v(d.key)), E(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
+      if (D([...M, e]), null != d.key && (null == _ || _(d.key)), E(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
           report_sub_type: d.report_type,
@@ -87,9 +87,9 @@ let b = e => {
     },
     H = async e => {
       var r;
-      let l = y ? await (0, g.ZD)(n, t, [...M, e]) : await (0, g.fw)(n, t, [...M, e], j),
+      let l = y ? await (0, b.ZD)(n, t, [...M, e]) : await (0, b.fw)(n, t, [...M, e], j),
         i = null == l || null == (r = l.body) ? true : r.report_id;
-      null != i && A(i), U(O[e.nodeRef].report_type), null == f || f(i)
+      null != i && A(i), U(O[e.nodeRef].report_type), null == v || v(i)
     }, W = () => {
       var e, n;
       if (M.length < 1) return;
@@ -98,7 +98,7 @@ let b = e => {
         i = null != (n = null == l ? true : l.nodeRef) ? n : I;
       if (t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
           report_sub_type: O[i].report_type,
@@ -106,7 +106,7 @@ let b = e => {
           next_node: O[i].id
         })
       }
-      E(null == l || null == (e = l.multiSelect) ? true : e.state), w(null == l ? true : l.textInput), T(i), D(r), null == v || v("..")
+      E(null == l || null == (e = l.multiSelect) ? true : e.state), w(null == l ? true : l.textInput), T(i), D(r), null == _ || _("..")
     }, F = l.useMemo(() => {
       let e = [],
         t = [];
@@ -129,7 +129,7 @@ let b = e => {
     }, [O, I, S, C]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
-    transitionState: b.transitionState,
+    transitionState: h.transitionState,
     "aria-labelledby": Z,
     parentComponent: "InAppReportModal",
     children: (0, r.jsx)(a.MyZ, {
@@ -139,13 +139,13 @@ let b = e => {
       children: F.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
-          className: h.slideContainer,
-          children: (0, r.jsx)(_.Z, {
+          className: x.slideContainer,
+          children: (0, r.jsx)(g.Z, {
             node: e,
             reportType: t,
             reportSubType: B,
             history: M,
-            onModalClose: b.onClose,
+            onModalClose: h.onClose,
             onSelectChild: G,
             onNavigateBack: W,
             multiSelect: P,

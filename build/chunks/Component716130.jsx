@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 716130, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk959508 = require("./959508.jsx"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk314160 = require("./314160.js");
+  Chunk23550 = require("./23550.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,16 +53,16 @@ function _(e, t) {
   }), e
 }
 
-function v(e) {
+function O(e) {
   let {
     guild: t,
     prejoinOnly: n,
     postjoinOnly: l
-  } = e, c = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
-    drag: f,
+  } = e, c = (0, s.e7)([f.Z], () => f.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
+    drag: p,
     drop: j,
-    dragSourcePosition: _,
-    setIsDraggable: v
+    dragSourcePosition: v,
+    setIsDraggable: O
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: g,
@@ -70,20 +70,20 @@ function v(e) {
     onDragStart: () => {},
     onDragComplete: () => {},
     onDragReset: () => {}
-  }), O = i.useRef(null);
+  }), C = i.useRef(null);
   return i.useEffect(() => {
-    v(false)
-  }, [v]), i.useEffect(() => {
-    f(j(O))
-  }, [f, j, O]), (0, r.jsxs)("div", {
-    ref: O,
+    O(false)
+  }, [O]), i.useEffect(() => {
+    p(j(C))
+  }, [p, j, C]), (0, r.jsxs)("div", {
+    ref: C,
     className: a()(x.separatorSection, {
-      [x.dropIndicatorBefore]: null != _ && g < _,
-      [x.dropIndicatorAfter]: null != _ && g > _
+      [x.dropIndicatorBefore]: null != v && g < v,
+      [x.dropIndicatorAfter]: null != v && g > v
     }),
-    children: [!l && u.length < h.b3 ? (0, r.jsxs)(o.P3F, {
+    children: [!l && u.length < b.b3 ? (0, r.jsxs)(o.P3F, {
       className: x.addPrompt,
-      onClick: () => (0, m.tS)(t, [...c, (0, h.yZ)(true)], false),
+      onClick: () => (0, m.tS)(t, [...c, (0, b.yZ)(true)], false),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
@@ -93,57 +93,57 @@ function v(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-brand",
-        children: b.intl.string(b.t.ujFquz)
+        children: h.intl.string(h.t.ujFquz)
       })]
     }) : null, n ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: x.divider
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
-        children: b.intl.string(b.t.tjrGcb)
+        children: h.intl.string(h.t.tjrGcb)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
         className: x.subtitle,
-        children: b.intl.string(b.t.XFa6Q8)
+        children: h.intl.string(h.t.XFa6Q8)
       })]
     })]
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     guildId: t,
     prejoinOnly: n,
     postjoinOnly: i,
     includeCount: l,
     singleColumn: a
-  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), C = O.filter(e => e.inOnboarding), y = O.filter(e => true !== e.inOnboarding), N = [...C.map(e => ({
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([f.Z], () => f.Z.editedOnboardingPrompts), y = C.filter(e => e.inOnboarding), N = C.filter(e => true !== e.inOnboarding), E = [...y.map(e => ({
     id: e.id,
     data: e
   })), {
     id: "separator",
-    data: (0, h.ae)()
-  }, ...y.map(e => ({
+    data: (0, b.ae)()
+  }, ...N.map(e => ({
     id: e.id,
     data: e
   }))], {
-    handleDragStart: E,
-    handleDragReset: I,
-    handleDragComplete: S
-  } = (0, u.Z)(N, e => {
+    handleDragStart: I,
+    handleDragReset: S,
+    handleDragComplete: _
+  } = (0, u.Z)(E, e => {
     let t = e.findIndex(e => "separator" === e.id),
-      n = e.slice(0, t).map(e => _(j({}, e.data), {
+      n = e.slice(0, t).map(e => v(j({}, e.data), {
         inOnboarding: true
       })),
-      r = e.slice(t + 1).map(e => _(j({}, e.data), {
+      r = e.slice(t + 1).map(e => v(j({}, e.data), {
         inOnboarding: false,
         required: false
       }));
-    if (n.length > h.b3) return void c.Z.show({
-      title: b.intl.string(b.t.Cxtq5x),
-      body: b.intl.formatToPlainString(b.t["pkbZ+U"], {
-        numQuestions: h.b3
+    if (n.length > b.b3) return void c.Z.show({
+      title: h.intl.string(h.t.Cxtq5x),
+      body: h.intl.formatToPlainString(h.t["pkbZ+U"], {
+        numQuestions: b.b3
       })
     });
     (0, m.tS)(d, [...n, ...r])
@@ -153,14 +153,14 @@ function O(e) {
       children: [n ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-md/bold",
-          children: b.intl.string(b.t["24Qm4M"])
+          children: h.intl.string(h.t["24Qm4M"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           className: x.subtitle,
-          children: b.intl.string(b.t.QvCcYe)
+          children: h.intl.string(h.t.QvCcYe)
         })]
-      }), C.map((e, t) => (0, r.jsx)(f.Z, {
+      }), y.map((e, t) => (0, r.jsx)(p.Z, {
         guild: d,
         prompt: e,
         disableAutofocus: n,
@@ -168,26 +168,26 @@ function O(e) {
         singleColumn: a,
         promptIndex: t,
         dragIndex: t,
-        onPromptDragStart: E,
-        onPromptDragReset: I,
-        onPromptDragComplete: S
+        onPromptDragStart: I,
+        onPromptDragReset: S,
+        onPromptDragComplete: _
       }, e.id))]
-    }), (0, r.jsx)(v, {
+    }), (0, r.jsx)(O, {
       guild: d,
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [y.map((e, t) => (0, r.jsx)(f.Z, {
+      children: [N.map((e, t) => (0, r.jsx)(p.Z, {
         guild: d,
         prompt: e,
-        promptIndex: t + C.length,
-        dragIndex: t + C.length + 1,
-        onPromptDragStart: E,
-        onPromptDragReset: I,
-        onPromptDragComplete: S
-      }, e.id)), O.length < h.YW ? (0, r.jsxs)(o.P3F, {
+        promptIndex: t + y.length,
+        dragIndex: t + y.length + 1,
+        onPromptDragStart: I,
+        onPromptDragReset: S,
+        onPromptDragComplete: _
+      }, e.id)), C.length < b.YW ? (0, r.jsxs)(o.P3F, {
         className: x.addPrompt,
-        onClick: () => (0, m.tS)(d, [...O, (0, h.yZ)(false)], false),
+        onClick: () => (0, m.tS)(d, [...C, (0, b.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",
@@ -197,7 +197,7 @@ function O(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-brand",
-          children: b.intl.string(b.t.ujFquz)
+          children: h.intl.string(h.t.ujFquz)
         })]
       }) : null]
     })]

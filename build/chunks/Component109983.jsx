@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk531803 = require("./531803.js"),
+  Chunk207568 = require("./207568.js"),
   Chunk216019 = require("./216019.js");
 
 function s(e) {
@@ -16,21 +16,21 @@ function s(e) {
     onClick: s,
     autoFocus: o
   } = e;
-  return (0, i.jsx)(l.tEY, {
+  return (0, i.jsx)(a.tEY, {
     children: (0, i.jsxs)("button", {
-      className: a.container,
+      className: l.container,
       onClick: s,
       autoFocus: o,
       children: [(0, i.jsx)("img", {
-        className: a.icon,
+        className: l.icon,
         alt: "",
         src: t
-      }), (0, i.jsx)(l.Text, {
-        className: a.text,
+      }), (0, i.jsx)(a.Text, {
+        className: l.text,
         variant: "text-md/bold",
         children: n
       }), (0, i.jsx)("img", {
-        className: a.arrow,
+        className: l.arrow,
         alt: "",
         src: r
       })]

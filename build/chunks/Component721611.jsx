@@ -1,4 +1,4 @@
-/** Chunk was on 88569 **/
+/** Chunk was on 91968 **/
 /** chunk id: 721611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
   Chunk467721 = require("./467721.js"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk493773 = require("./493773.js"),
   Chunk996435 = require("./996435.js"),
   Chunk700425 = require("./700425.js"),
-  Chunk910557 = require("./910557.js");
+  Chunk183794 = require("./183794.js");
 
 function g(e) {
   let {
@@ -23,14 +23,14 @@ function g(e) {
     onClick: n,
     active: o
   } = e, {
-    useTitle: i,
-    key: a
-  } = t, s = null == i ? true : i();
+    useTitle: a,
+    key: l
+  } = t, s = null == a ? true : a();
   return c()(null != s, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.mh, {
-    id: a,
+    id: l,
     children: e => {
-      var t, i;
-      return (0, r.jsx)(b.P3F, (t = function(e) {
+      var t, a;
+      return (0, r.jsx)(f.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -50,21 +50,21 @@ function g(e) {
       }({
         onClick: n,
         tag: "li",
-        className: l()({
+        className: i()({
           [p.active]: o
         })
-      }, e), i = i = {
+      }, e), a = a = {
         children: s
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
-      }), t), a)
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+      }), t), l)
     }
   })
 }
@@ -72,19 +72,19 @@ function g(e) {
 function O(e) {
   let {
     categories: t
-  } = e, n = d.Z.useField("currentCategoryKey");
-  (0, f.ZP)(() => {
-    t.some(e => e.key === n) || d.Z.setState({
+  } = e, n = b.Z.useField("currentCategoryKey");
+  (0, d.ZP)(() => {
+    t.some(e => e.key === n) || b.Z.setState({
       currentCategoryKey: t[0].key
     })
   }), o.useEffect(() => () => {
-    d.Z.setState({
+    b.Z.setState({
       currentCategoryKey: true
     })
   }, []);
-  let i = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
-    l = (0, b.q_F)({
-      y: 36 * i,
+  let a = o.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
+    i = (0, f.q_F)({
+      y: 36 * a,
       config: {
         mass: .1,
         friction: 20,
@@ -97,13 +97,13 @@ function O(e) {
       className: p.track,
       children: (0, r.jsx)(s.animated.div, {
         className: p.thumb,
-        style: l
+        style: i
       })
     }), (0, r.jsx)("ul", {
       children: t.map(e => (0, r.jsx)(g, {
         onClick: () => {
           var t;
-          return t = e.key, void d.Z.setState({
+          return t = e.key, void b.Z.setState({
             requestedTargetKey: t,
             showNavigationMobile: false
           })

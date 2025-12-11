@@ -1,4 +1,4 @@
-/** Chunk was on 46931 **/
+/** Chunk was on 48615 **/
 /** chunk id: 98369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -16,10 +16,10 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let g = new Map,
   v = new Map,
-  b = false,
-  h = null;
+  h = false,
+  E = null;
 
-function E() {
+function _() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
@@ -37,8 +37,8 @@ function y() {
     if (require !== module && true !== g.get(module)) {
       r = false;
       break
-    } let i = r !== b;
-  return b = r, i
+    } let i = r !== h;
+  return h = r, i
 }
 
 function S(e) {
@@ -50,26 +50,26 @@ function S(e) {
       let t = u.Z.getSecureFramesRosterMapEntry(e);
       if (null == t) returnfalse;
       let n = new Uint8Array(t),
-        r = m.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
+        r = b.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
         i = (0, f.UB)(e, [u.Z, d.Z]),
         l = r && !i,
         a = l !== g.get(e);
       return g.set(e, l), a
     }(t),
-    r = E(),
+    r = _(),
     i = y();
   return n || r || i
 }
 
 function O() {
-  g.clear(), v.clear(), b = false
+  g.clear(), v.clear(), h = false
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk19780.Z, Chunk959457.Z, Chunk729303.Z, Chunk651941.Z)
   }
   isCallVerified() {
-    return b
+    return h
   }
   isStreamVerified(e) {
     return v.get(e)
@@ -89,8 +89,8 @@ let w = new C(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    if (t === h) returnfalse;
-    h = t, O()
+    if (t === E) returnfalse;
+    E = t, O()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -98,7 +98,7 @@ let w = new C(Chunk570140.Z, {
       state: n,
       context: r
     } = e;
-    if (n !== _.hes.DISCONNECTED) returnfalse;
+    if (n !== m.hes.DISCONNECTED) returnfalse;
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;
@@ -112,7 +112,7 @@ let w = new C(Chunk570140.Z, {
       userIds: t
     } = e, n = s.default.getId(), r = t.reduce((e, t) => n === t ? e : !!S({
       userId: t
-    }) || e, false), i = E(), l = y();
+    }) || e, false), i = _(), l = y();
     return r || i || l
   },
   SECURE_FRAMES_TRANSIENT_KEY_CREATE: S,

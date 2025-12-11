@@ -1,4 +1,4 @@
-/** Chunk was on 79531 **/
+/** Chunk was on 40690 **/
 /** chunk id: 570870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  s = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk10718 = require("./10718.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk891628 = require("./891628.js");
+  Chunk18526 = require("./18526.js");
 let O = e => {
   let t, {
       commandType: n,
@@ -31,39 +31,39 @@ let O = e => {
       onHeightUpdate: C,
       context: I
     } = e,
-    P = (0, a.e7)([f.Z], () => f.Z.getGuild(null != E ? E : O.guild_id)),
-    _ = (0, a.e7)([m.default], () => m.default.getUser(l)),
-    w = (0, h.Z)({
-      user: _,
+    P = (0, s.e7)([g.Z], () => g.Z.getGuild(null != E ? E : O.guild_id)),
+    w = (0, s.e7)([m.default], () => m.default.getUser(l)),
+    S = (0, h.Z)({
+      user: w,
       guildId: null == P ? true : P.id,
       context: I
     }),
-    S = r.useMemo(() => ({
+    Z = r.useMemo(() => ({
       channel: O,
       type: "channel"
     }), [O]),
     {
-      newUIEnabled: Z,
-      searchEnabled: N
+      newUIEnabled: N,
+      searchEnabled: M
     } = b.Z.useConfig({
       location: "useAppsCommandItems"
     }),
-    [M, T] = r.useState(""),
-    A = "" !== M,
+    [T, _] = r.useState(""),
+    A = "" !== T,
     {
       commands: D,
       commandsByActiveSection: k,
       sectionDescriptors: F,
       loading: R
     } = c.wi({
-      context: S,
+      context: Z,
       filters: {
-        text: A ? M : true,
+        text: A ? T : true,
         commandTypes: [n]
       },
       options: {
         limit: x.lr,
-        includeFrecency: Z && !A,
+        includeFrecency: N && !A,
         scoreMethod: A ? d.p.COMMAND_OR_APPLICATION : true
       },
       allowFetch: true
@@ -86,20 +86,20 @@ let O = e => {
       let {
         showAppIcon: n
       } = t;
-      s()(null != O, "menu item should not show if channel is null");
+      a()(null != O, "menu item should not show if channel is null");
       let r = L[e.applicationId],
-        a = n && null != r ? (0, p.ky)(r) : true;
+        s = n && null != r ? (0, p.ky)(r) : true;
       return (0, i.jsx)(o.sNh, {
         id: e.id,
         label: e.displayName,
-        iconLeft: null != a ? () => (0, i.jsx)(a, {
+        iconLeft: null != s ? () => (0, i.jsx)(s, {
           channel: O,
           section: r,
           width: 20,
           height: 20,
           selectable: false
         }) : true,
-        icon: Z ? o.Uuj : true,
+        icon: N ? o.Uuj : true,
         action: () => {
           (0, u.Z)({
             command: e,
@@ -112,7 +112,7 @@ let O = e => {
           })
         }
       }, e.id)
-    }, [O, L, Z, P, l]),
+    }, [O, L, N, P, l]),
     W = r.useCallback(e => {
       let {
         section: t,
@@ -167,8 +167,8 @@ let O = e => {
           }
           return e
         }({}, e), r = r = {
-          query: M,
-          onChange: T,
+          query: T,
+          onChange: _,
           placeholder: y.intl.string(y.t.m1UwbP),
           ref: t
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -185,7 +185,7 @@ let O = e => {
     }, "command-search");
   if (R) t = (0, i.jsx)(o.sNh, {
     id: "menu-commands-placeholder",
-    render: () => (0, i.jsx)(g.Z, {}),
+    render: () => (0, i.jsx)(f.Z, {}),
     disabled: true
   }, "menu-commands-placeholder");
   else {
@@ -198,7 +198,7 @@ let O = e => {
         disabled: true
       }, "menu-commands-empty")]
     });
-    else if (Z)
+    else if (N)
       if (A) t = (0, i.jsxs)(i.Fragment, {
         children: [B, (0, i.jsx)(o.Clw, {}), D.map(e => U(e, {
           showAppIcon: true
@@ -218,7 +218,7 @@ let O = e => {
             return t.id !== x.bi.FRECENCY
           });
         t = (0, i.jsxs)(i.Fragment, {
-          children: [N && B, null != e && W(e), (0, i.jsx)(o.kSQ, {
+          children: [M && B, null != e && W(e), (0, i.jsx)(o.kSQ, {
             label: y.intl.string(y.t.PHjkRE),
             children: n.map(e => G(e))
           })]
@@ -227,13 +227,13 @@ let O = e => {
     else t = D.map(e => U(e, {
       showAppIcon: true
     }));
-    null != w && w.length > 0 && (t = (0, i.jsxs)(i.Fragment, {
-      children: [t, (0, i.jsx)(o.Clw, {}, "separator"), w]
+    null != S && S.length > 0 && (t = (0, i.jsxs)(i.Fragment, {
+      children: [t, (0, i.jsx)(o.Clw, {}, "separator"), S]
     }))
   }
   if (!j.TPd.TEXTUAL.has(O.type))
-    if (null == w) return null;
-    else t = w;
+    if (null == S) return null;
+    else t = S;
   return (0, i.jsx)(o.sNh, {
     id: "apps",
     label: y.intl.string(y.t.PHjkRE),

@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 124823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -30,8 +30,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk544989 = require("./544989.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk231688 = require("./231688.js"),
-  Chunk892273 = require("./892273.js");
+  Chunk960077 = require("./960077.js"),
+  Chunk82600 = require("./82600.js");
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,7 +80,7 @@ function w(e) {
       fetchStartedAt: null == D ? true : D.fetchStartedAt,
       fetchEndedAt: null == D ? true : D.fetchEndedAt,
       isLoaded: null == D ? true : D.isLoaded,
-      children: (0, r.jsxs)(C.Z, {
+      children: (0, r.jsxs)(I.Z, {
         ref: G,
         user: n,
         displayProfile: D,
@@ -93,12 +93,12 @@ function w(e) {
             })
           }), (0, r.jsxs)("div", {
             className: T.header,
-            children: [(0, r.jsx)(O.Z, {
+            children: [(0, r.jsx)(j.Z, {
               user: n,
               displayProfile: D,
               themeType: Z.l.SIDEBAR,
               animateOnHoverOrFocusOnly: !H
-            }), (0, r.jsx)(_.Z, {
+            }), (0, r.jsx)(y.Z, {
               user: n,
               displayProfile: D,
               channelId: w.id,
@@ -107,31 +107,31 @@ function w(e) {
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
-            children: [(0, r.jsx)(I.Z, {
+            children: [(0, r.jsx)(_.Z, {
               user: n,
               guildId: w.guild_id,
               nickname: h.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
               onOpenProfile: A ? true : B,
-              tags: (0, r.jsx)(y.Z, {
+              tags: (0, r.jsx)(O.Z, {
                 displayProfile: D,
                 themeType: Z.l.SIDEBAR
               })
-            }), (0, r.jsxs)(C.Z.Overlay, {
+            }), (0, r.jsxs)(I.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(C.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: H
                 })
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(C.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(v.Z, {
                   userId: n.id
                 })
               })]

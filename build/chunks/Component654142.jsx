@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk652376 = require("./652376.js"),
   Chunk981631 = require("./981631.js");
 
-function m(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,10 +48,10 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = Chunk473749.memo(function(e) {
+let y = Chunk473749.memo(function(e) {
   var {
     folderNode: t
-  } = e, _ = function(e, t) {
+  } = e, y = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -67,11 +67,11 @@ let _ = Chunk473749.memo(function(e) {
     return i
   }(e, ["folderNode"]);
   let {
-    id: y,
-    name: O,
-    color: v,
-    children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(y)), S = function(e) {
+    id: O,
+    name: v,
+    color: j,
+    children: C
+  } = t, x = C.map(e => e.id), E = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), I = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -81,7 +81,7 @@ let _ = Chunk473749.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, h.Z)(t), {
+  }(t), _ = (0, p.Z)(t), {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z
@@ -90,29 +90,29 @@ let _ = Chunk473749.memo(function(e) {
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
   })), w = i.useCallback(() => {
-    a.Z.toggleGuildFolderExpand(y)
-  }, [y]), T = i.useCallback(e => {
-    (0, o.jW)(e, async () => {
+    o.Z.toggleGuildFolderExpand(O)
+  }, [O]), T = i.useCallback(e => {
+    (0, a.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
-      return t => (0, r.jsx)(e, b(m({}, t), {
-        folderId: y,
-        folderName: O,
-        folderColor: v,
+      return t => (0, r.jsx)(e, m(b({}, t), {
+        folderId: O,
+        folderName: v,
+        folderColor: j,
         unread: Z || P > 0
       }))
     })
-  }, [y, O, v, Z, P]);
-  return (0, r.jsx)(p.Z, b(m({}, _), {
+  }, [O, v, j, Z, P]);
+  return (0, r.jsx)(h.Z, m(b({}, y), {
     folderNode: t,
-    expanded: E,
-    selected: null != C && x.includes(C),
+    expanded: S,
+    selected: null != E && x.includes(E),
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z,
-    mediaState: I,
-    defaultFolderName: S,
+    mediaState: _,
+    defaultFolderName: I,
     onExpandCollapse: w,
     onContextMenu: T
   }))

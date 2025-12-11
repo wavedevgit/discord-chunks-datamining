@@ -11,7 +11,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk328110 = require("./328110.js");
+  Chunk166651 = require("./166651.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,10 +83,10 @@ function d(e) {
   }
 }
 let f = {
-  SMALL: Chunk328110.cardIconSmall,
-  MEDIUM: Chunk328110.cardIconMedium,
-  LARGE: Chunk328110.cardIconLarge,
-  XLARGE: Chunk328110.cardIconXLarge
+  SMALL: Chunk166651.cardIconSmall,
+  MEDIUM: Chunk166651.cardIconMedium,
+  LARGE: Chunk166651.cardIconLarge,
+  XLARGE: Chunk166651.cardIconXLarge
 };
 class p extends(r = Chunk473749.PureComponent) {
   static getType(e) {
@@ -100,8 +100,8 @@ class p extends(r = Chunk473749.PureComponent) {
       size: r
     } = this.props;
     return (0, Chunk54381.jsx)("div", {
-      className: s()(r, Chunk328110[exports], require, {
-        [Chunk328110.flipped]: module
+      className: s()(r, Chunk166651[exports], require, {
+        [Chunk166651.flipped]: module
       }),
       children: exports
     })

@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 578053, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g: () => v,
-  u: () => O
+  g: () => O,
+  u: () => C
 }), require("./290780.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,13 +25,13 @@ let x = "NO_CHANNEL";
 function j(e) {
   return {
     value: e.id,
-    label: (0, d.F6)(e, f.default, p.Z),
+    label: (0, d.F6)(e, p.default, f.Z),
     channel: e,
     category: g.Z.getChannel(e.parent_id)
   }
 }
 
-function _(e) {
+function v(e) {
   let {
     option: t
   } = e, {
@@ -46,7 +46,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     canManageGuild: t,
     guildId: n,
@@ -66,15 +66,15 @@ function v(e) {
     });
     return e.unshift({
       value: x,
-      label: b.intl.string(b.t.wGiHkK)
+      label: h.intl.string(h.t.wGiHkK)
     }), e
   }, [d]), g = i.useCallback(e => {
     let t = e === x ? null : e;
-    h.Z.updateGuild({
+    b.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(y, {
     label: o,
     value: null != s ? s : x,
     options: u,
@@ -83,7 +83,7 @@ function v(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     canManageGuild: t,
     guildId: n,
@@ -91,7 +91,7 @@ function O(e) {
     label: o,
     description: d,
     layout: u
-  } = e, g = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), p = i.useMemo(() => {
+  } = e, g = (0, a.e7)([m.Z], () => m.Z.getCategories(n)), f = i.useMemo(() => {
     let e = (0, c.Z)(g._categories, g).filter(e => {
       let {
         channel: t
@@ -105,26 +105,26 @@ function O(e) {
     });
     return e.unshift({
       value: x,
-      label: b.intl.string(b.t.ibUhoa)
+      label: h.intl.string(h.t.ibUhoa)
     }), e
-  }, [g]), f = i.useCallback(e => {
+  }, [g]), p = i.useCallback(e => {
     let t = e === x ? null : e;
-    h.Z.updateGuild({
+    b.Z.updateGuild({
       systemChannelId: t
     })
   }, []);
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(y, {
     label: o,
     description: d,
     layout: u,
     value: null != s ? s : x,
-    options: p,
+    options: f,
     canManageGuild: t,
-    onChange: f
+    onChange: p
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     value: t,
     options: n,
@@ -134,7 +134,7 @@ function C(e) {
     description: c,
     layout: d
   } = e, u = i.useCallback(e => {
-    if (null != e) return (0, r.jsx)(_, {
+    if (null != e) return (0, r.jsx)(v, {
       option: e
     })
   }, []), g = i.useCallback(e => u(e[0]), [u]);

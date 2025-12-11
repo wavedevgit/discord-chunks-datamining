@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk226192 = require("./226192.jsx"),
   Chunk223606 = require("./223606.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk337640 = require("./337640.js");
+  Chunk637276 = require("./637276.js");
 
 function p(e) {
   var t;
@@ -39,39 +39,39 @@ function h(e) {
   let {
     onHandleEnableLockdown: n,
     onHandleReportFalseAlarm: l,
-    incidentData: o
-  } = e, s = null != (t = o.raidDetectedAt) ? t : o.dmSpamDetectedAt;
+    incidentData: a
+  } = e, s = null != (t = a.raidDetectedAt) ? t : a.dmSpamDetectedAt;
   return (0, r.jsxs)("div", {
     className: f.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: f.subHeaderTextContainer,
-      children: [(0, r.jsx)(a.b7C, {
+      children: [(0, r.jsx)(o.b7C, {
         size: "md",
         className: f.shieldIcon,
         color: i.Z.unsafe_rawColors.RED_345.css
       }), (0, r.jsxs)("div", {
         className: f.subHeaderText,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           className: f.heading,
           variant: "heading-lg/semibold",
           color: "text-feedback-critical",
-          children: (0, u.kk)(o) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
-        }), (0, r.jsx)(a.Text, {
+          children: (0, d.kk)(a) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
+        }), (0, r.jsx)(o.Text, {
           className: f.tagLine,
           variant: "text-sm/medium",
           children: b.intl.format(b.t["4QIIZl"], {
-            dateTime: new Date(null != s ? s : "").toLocaleString(b.intl.currentLocale, u.pQ)
+            dateTime: new Date(null != s ? s : "").toLocaleString(b.intl.currentLocale, d.pQ)
           })
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: f.buttonContainer,
-      children: [(0, r.jsx)(a.Button, {
+      children: [(0, r.jsx)(o.Button, {
         variant: "secondary",
         onClick: l,
         text: b.intl.string(b.t.ISiXba),
         size: "sm"
-      }), (0, r.jsx)(a.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "critical-primary",
         onClick: n,
         size: "sm",
@@ -91,25 +91,25 @@ function g(e) {
     className: f.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: f.subHeaderTextContainer,
-      children: [(0, r.jsx)(a.b7C, {
+      children: [(0, r.jsx)(o.b7C, {
         size: "md",
         className: f.shieldIcon,
         color: i.Z.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
         className: f.subHeaderText,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           className: f.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
           children: p(n)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: f.tagLine,
           variant: "text-sm/medium",
-          children: (0, u.OY)(n, l)
+          children: (0, d.OY)(n, l)
         })]
       })]
-    }), (0, r.jsx)(a.Button, {
-      color: o.zx.Colors.BRAND,
+    }), (0, r.jsx)(o.Button, {
+      color: a.zx.Colors.BRAND,
       onClick: t,
       text: b.intl.string(b.t.e1bMNf),
       size: "sm"
@@ -122,37 +122,37 @@ function j(e) {
     onHandleEnableLockdown: t,
     onHandleReportFalseAlarm: n,
     incidentData: l,
-    guildName: o
+    guildName: a
   } = e;
   return (0, r.jsxs)("div", {
     className: f.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: f.subHeaderTextContainer,
-      children: [(0, r.jsx)(a.b7C, {
+      children: [(0, r.jsx)(o.b7C, {
         size: "md",
         className: f.shieldIcon,
         color: i.Z.unsafe_rawColors.BRAND_360.css
       }), (0, r.jsxs)("div", {
         className: f.subHeaderText,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           className: f.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
           children: p(l)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: f.tagLine,
           variant: "text-sm/medium",
-          children: (0, u.OY)(l, o)
+          children: (0, d.OY)(l, a)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: f.buttonContainer,
-      children: [(0, r.jsx)(a.Button, {
+      children: [(0, r.jsx)(o.Button, {
         onClick: n,
         text: b.intl.string(b.t.ISiXba),
         variant: "secondary",
         size: "sm"
-      }), (0, r.jsx)(a.Button, {
+      }), (0, r.jsx)(o.Button, {
         onClick: t,
         text: b.intl.string(b.t.e1bMNf),
         size: "sm"
@@ -166,17 +166,17 @@ function x(e) {
     guild: t,
     incidentData: n,
     isUnderLockdown: i,
-    isRaidDetected: o
+    isRaidDetected: a
   } = e, b = l.useCallback(() => {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let e = {
         source: c.Zu.MEMBER_SAFETY_PAGE,
         location: s.Z.MEMBER_SAFETY_PAGE,
-        alertType: (0, u.T1)(n)
+        alertType: (0, d.T1)(n)
       };
       return n => {
         var l, i;
-        return (0, r.jsx)(d.default, (l = function(e) {
+        return (0, r.jsx)(u.default, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -213,9 +213,9 @@ function x(e) {
     (0, C.kW)(e, t.id)
   }, [t.id]), p = (() => {
     switch (true) {
-      case o && i:
+      case a && i:
         return 3;
-      case o:
+      case a:
         return 1;
       case i:
         return 2;

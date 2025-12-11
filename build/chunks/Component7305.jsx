@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk867983 = require("./867983.js");
+  Chunk400005 = require("./400005.js");
 
 function F(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -238,7 +238,7 @@ let U = function() {
       key: Chunk409813.h8.SELECT_FREE_SKU,
       renderStep: e => (0, l.jsx)(k.S, F({}, e)),
       options: {
-        bodyClassName: Chunk867983.selectFreeSku,
+        bodyClassName: Chunk400005.selectFreeSku,
         isMediumModal: true
       }
     }]

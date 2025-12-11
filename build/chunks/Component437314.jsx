@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 437314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b,
+  Z: () => _,
   j: () => g
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -12,7 +12,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk755429 = require("./755429.js");
+  Chunk397977 = require("./397977.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ let h = Object.freeze({
       })
     })
   };
-class _ extends Chunk473749.PureComponent {
+class b extends Chunk473749.PureComponent {
   render() {
     let {
       type: e,
@@ -134,13 +134,13 @@ class _ extends Chunk473749.PureComponent {
       }
     }(module);
     return module === Chunk981631.pJs.ADD_FRIEND ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: Chunk755429.friendsEmpty,
+      className: Chunk397977.friendsEmpty,
       style: r,
       children: (0, Chunk54381.jsx)(m, {
         theme: require
       })
     }) : (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: Chunk755429.friendsEmpty,
+      className: Chunk397977.friendsEmpty,
       style: r,
       children: (0, Chunk54381.jsx)(Chunk481060.ubH, {
         theme: require,
@@ -164,8 +164,8 @@ class _ extends Chunk473749.PureComponent {
     })
   }
 }
-let b = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
+let _ = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
   theme: Chunk210887.Z.theme
 }), {
   forwardRef: true
-})(_)
+})(b)

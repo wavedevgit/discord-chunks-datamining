@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 373322, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk819640 = require("./819640.js"),
   Chunk617889 = require("./617889.js"),
   Chunk675654 = require("./675654.js"),
-  Chunk157564 = require("./157564.js"),
+  Chunk922630 = require("./922630.js"),
   Chunk197857 = require("./197857.js");
-let b = ["#51BC9D"],
+let g = ["#51BC9D"],
   v = e => {
     var t;
     let {
@@ -26,10 +26,10 @@ let b = ["#51BC9D"],
       overlayRef: i,
       quest: v,
       progressBarRef: j,
-      isExpanded: _,
-      isHovered: y
+      isExpanded: y,
+      isHovered: C
     } = e, {
-      completionSpring: C,
+      completionSpring: _,
       startCompletionAnimation: S
     } = (0, h.GX)(), E = (null == (t = v.userStatus) ? true : t.completedAt) != null, O = r.useRef(false), T = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), N = r.useRef(null), P = (0, d.e7)([p.Z], () => p.Z.hasLayers()), w = (0, u.Z)(P), [I, k] = r.useState(null), [R, A] = r.useState(null), D = r.useRef(new s.qA({
       gravity: 0,
@@ -64,7 +64,7 @@ let b = ["#51BC9D"],
             })
           }
           return e
-        }({}, x.We), s = s = {
+        }({}, f.We), s = s = {
           position: {
             type: "static-random",
             minValue: {
@@ -112,33 +112,33 @@ let b = ["#51BC9D"],
           Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
         }), l), 100)
       }
-    }, [j, N, Z, T]), M = (0, u.Z)(_);
+    }, [j, N, Z, T]), M = (0, u.Z)(y);
     return (r.useEffect(() => {
-      E && _ && !M && (S(), L())
-    }, [_, E, S, L, M]), r.useEffect(() => {
+      E && y && !M && (S(), L())
+    }, [y, E, S, L, M]), r.useEffect(() => {
       E && !P && w && setTimeout(() => {
         S(), L()
       }, 200)
     }, [E, w, P, S, L]), r.useEffect(() => {
       Z.isReady && (!O.current && E && (S(), L()), O.current = E)
     }, [E, O, L, S, Z]), r.useEffect(() => {
-      y && E && (S(), L())
-    }, [y, E, S, L]), T) ? null : (0, a.jsxs)("div", {
-      className: f.wrapper,
+      C && E && (S(), L())
+    }, [C, E, S, L]), T) ? null : (0, a.jsxs)("div", {
+      className: x.wrapper,
       "aria-hidden": "true",
       ref: N,
       children: [(0, a.jsx)(c.animated.div, {
-        className: f.background,
+        className: x.background,
         style: {
-          opacity: C
+          opacity: _
         }
       }), (0, a.jsx)(c.animated.div, {
-        className: l()(f.borders, f.bordersTopLeft),
+        className: l()(x.borders, x.bordersTopLeft),
         style: {
-          opacity: C
+          opacity: _
         }
       }), (0, a.jsxs)(c.animated.div, {
-        className: f.confettiWrapper,
+        className: x.confettiWrapper,
         style: {
           transform: n.to({
             range: [0, 1],
@@ -147,18 +147,18 @@ let b = ["#51BC9D"],
         },
         children: [(0, a.jsx)(s.O_, {
           ref: k,
-          className: f.confetti,
+          className: x.confetti,
           environment: D.current
         }), (0, a.jsx)(s.Ji, {
           ref: A,
-          sprites: [g],
-          colors: b,
-          spriteWidth: x.Ko,
-          spriteHeight: x.Ko
+          sprites: [b],
+          colors: g,
+          spriteWidth: f.Ko,
+          spriteHeight: f.Ko
         }), null != i.current && (0, o.createPortal)((0, a.jsx)(c.animated.div, {
-          className: l()(f.borders, f.bordersBottom),
+          className: l()(x.borders, x.bordersBottom),
           style: {
-            opacity: C
+            opacity: _
           }
         }), i.current)]
       })]

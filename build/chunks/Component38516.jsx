@@ -12,11 +12,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk810568 = require("./810568.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk226788 = require("./226788.js"),
-  Chunk803351 = require("./803351.js");
-let g = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
+  Chunk452379 = require("./452379.js"),
+  Chunk922522 = require("./922522.js");
+let f = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 
-function f(e) {
+function g(e) {
   let {
     website: t,
     trackClick: n
@@ -72,7 +72,7 @@ let p = function(e) {
     let {
       category: t
     } = e;
-    return g.includes(t)
+    return f.includes(t)
   }).sort((e, t) => e.category - t.category);
   return 0 === i.length ? null : (0, a.jsxs)("div", {
     children: [(0, a.jsx)(s.Heading, {
@@ -82,7 +82,7 @@ let p = function(e) {
       children: d.intl.string(d.t["Oj3o1/"])
     }), (0, a.jsx)("div", {
       className: r()(u.row, u.gapMd),
-      children: i.map(e => (0, a.jsx)(f, {
+      children: i.map(e => (0, a.jsx)(g, {
         website: e,
         trackClick: n
       }, e.url))

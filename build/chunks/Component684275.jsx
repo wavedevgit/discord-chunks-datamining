@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 684275, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -75,10 +75,10 @@ function u(e) {
         presets: e
       })
     }))
-  }, [s, n]), p = i.useCallback(e => {
+  }, [s, n]), f = i.useCallback(e => {
     let t = e.map(e => e);
     g(new Set(t)), m(t)
-  }, [m]), f = i.useMemo(() => [{
+  }, [m]), p = i.useMemo(() => [{
     label: d(a.Ux.PROFANITY).headerText,
     description: d(a.Ux.PROFANITY).subtitleText,
     value: String(a.Ux.PROFANITY)
@@ -94,8 +94,8 @@ function u(e) {
   return (0, r.jsx)("div", {
     children: (0, r.jsx)(l.cOn, {
       selectedValues: Array.from(u).map(String),
-      onChange: p,
-      options: f
+      onChange: f,
+      options: p
     })
   })
 }

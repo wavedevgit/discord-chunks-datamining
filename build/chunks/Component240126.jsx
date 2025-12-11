@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 240126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk499033 = require("./499033.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk818398 = require("./818398.js");
+  Chunk919864 = require("./919864.js");
 
 function s(e) {
   let {
@@ -18,20 +18,20 @@ function s(e) {
     disableStars: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.container,
+    className: o.container,
     children: [(0, r.jsxs)("div", {
-      className: a.iconContainer,
+      className: o.iconContainer,
       children: [(0, r.jsx)(t, {
         color: "currentColor",
         size: "custom",
-        className: a.icon,
+        className: o.icon,
         width: 36,
         height: 36
       }), c ? null : (0, r.jsx)(l.Z, {
-        className: a.stars
+        className: o.stars
       })]
     }), (0, r.jsx)(i.Heading, {
-      className: a.header,
+      className: o.header,
       variant: "heading-xl/semibold",
       children: n
     }), (0, r.jsxs)(i.Text, {
@@ -39,10 +39,10 @@ function s(e) {
       variant: "text-xs/normal",
       children: [c ? null : (0, r.jsxs)(i.Text, {
         tag: "span",
-        className: a.protip,
+        className: o.protip,
         variant: "text-xs/bold",
         color: "text-feedback-positive",
-        children: [o.intl.string(o.t["8tvIiN"]), ":", " "]
+        children: [a.intl.string(a.t["8tvIiN"]), ":", " "]
       }), s]
     })]
   })

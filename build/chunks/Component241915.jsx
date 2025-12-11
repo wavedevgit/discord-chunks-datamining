@@ -15,7 +15,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk522501 = require("./522501.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk639965 = require("./639965.js");
+  Chunk684692 = require("./684692.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,10 +44,10 @@ let g = 200,
   y = 132,
   O = 80,
   v = {
-    [Chunk981631.VD2.TOP_RIGHT]: Chunk639965.resizeHandleTopRight,
-    [Chunk981631.VD2.TOP_LEFT]: Chunk639965.resizeHandleTopLeft,
-    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk639965.resizeHandleBottomLeft,
-    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk639965.resizeHandleBottomRight
+    [Chunk981631.VD2.TOP_RIGHT]: Chunk684692.resizeHandleTopRight,
+    [Chunk981631.VD2.TOP_LEFT]: Chunk684692.resizeHandleTopLeft,
+    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk684692.resizeHandleBottomLeft,
+    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk684692.resizeHandleBottomRight
   },
   S = {
     [Chunk981631.VD2.TOP_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT,
@@ -222,9 +222,9 @@ class C extends(r = Chunk473749.PureComponent) {
     }), (0, Chunk54381.jsxs)(Chunk689425.Z, {
       dragAnywhere: true,
       ref: this.handleSetDraggableRef,
-      className: s()(Chunk639965.pictureInPictureWindow, Chunk120356, {
-        [Chunk639965.hidden]: r,
-        [Chunk639965.borderRadius]: Chunk473749
+      className: s()(Chunk684692.pictureInPictureWindow, Chunk120356, {
+        [Chunk684692.hidden]: r,
+        [Chunk684692.borderRadius]: Chunk473749
       }),
       maxX: module,
       maxY: exports,

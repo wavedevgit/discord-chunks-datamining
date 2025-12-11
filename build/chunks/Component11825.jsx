@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 11825, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   z: () => u
@@ -14,17 +14,17 @@ let c = e => {
       item: t,
       closePopout: n
     } = e;
-    return (0, r.jsx)(o.v2r, {
+    return (0, r.jsx)(a.v2r, {
       navId: "notification-actions",
       onClose: n,
       onSelect: n,
       "aria-label": s.intl.string(s.t.ljs3Oe),
-      children: (0, r.jsx)(o.sNh, {
+      children: (0, r.jsx)(a.sNh, {
         id: "delete",
         label: s.intl.string(s.t.oyYWHE),
-        icon: o.XHJ,
+        icon: a.XHJ,
         action: async () => {
-          await (0, a.g3)(t)
+          await (0, o.g3)(t)
         }
       })
     })
@@ -33,7 +33,7 @@ let c = e => {
     let {
       item: t
     } = e, n = i.useRef(null);
-    return (0, r.jsx)(o.yRy, {
+    return (0, r.jsx)(a.yRy, {
       targetElementRef: n,
       renderPopout: e => {
         var n, i;
@@ -69,7 +69,7 @@ let c = e => {
       },
       position: "bottom",
       align: "right",
-      animation: o.yRy.Animation.NONE,
+      animation: a.yRy.Animation.NONE,
       children: e => {
         let {
           onClick: t
@@ -77,10 +77,10 @@ let c = e => {
         return (0, r.jsx)(l.u, {
           text: s.intl.string(s.t["UKOtz+"]),
           asContainer: true,
-          children: (0, r.jsx)(o.hU, {
+          children: (0, r.jsx)(a.hU, {
             buttonRef: n,
             size: "sm",
-            icon: o.xhG,
+            icon: a.xhG,
             variant: "icon-only",
             "aria-label": s.intl.string(s.t["UKOtz+"]),
             "aria-haspopup": "menu",

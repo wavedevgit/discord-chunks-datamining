@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk843445 = require("./843445.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk295265 = require("./295265.js");
+  Chunk612510 = require("./612510.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,19 +42,19 @@ class N extends Chunk473749.PureComponent {
       approximatePresenceCount: t
     } = this.props.guild;
     return null == module || null == exports ? null : (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      className: Chunk295265.memberInfo,
+      className: Chunk612510.memberInfo,
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk295265.dotOnline
+        className: Chunk612510.dotOnline
       }), (0, Chunk54381.jsx)("span", {
-        className: Chunk295265.memberText,
+        className: Chunk612510.memberText,
         children: Chunk388032.intl.format(Chunk388032.t["LC+S+m"], {
           membersOnline: exports
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk295265.dotOffline
+        className: Chunk612510.dotOffline
       }), (0, Chunk54381.jsx)("span", {
-        className: Chunk295265.memberText,
+        className: Chunk612510.memberText,
         children: Chunk388032.intl.format(Chunk388032.t.zRl6XR, {
           count: module
         })
@@ -75,40 +75,40 @@ class N extends Chunk473749.PureComponent {
     let d = (0, Chunk411198.B3)(module),
       p = Chunk388032.intl.string(Chunk388032.t.pxwdrA),
       f = this.handleJoinOrView,
-      _ = Chunk755721.zx.Looks.FILLED,
-      b = Chunk755721.zx.Colors.PRIMARY;
-    return Chunk120356 ? require ? (_ = Chunk755721.zx.Looks.OUTLINED, b = Chunk295265.buttonColorInGuild, p = (0, Chunk54381.jsxs)(Chunk600164.Z, {
+      b = Chunk755721.zx.Looks.FILLED,
+      _ = Chunk755721.zx.Colors.PRIMARY;
+    return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, _ = Chunk612510.buttonColorInGuild, p = (0, Chunk54381.jsxs)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk54381.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.cEnaWx)
       }), (0, Chunk54381.jsx)(Chunk481060.dz2, {
         size: "md",
         color: "currentColor",
-        className: Chunk295265.joinedCheckmark
+        className: Chunk612510.joinedCheckmark
       })]
     })) : Chunk473749 && exports && (p = Chunk388032.intl.string(Chunk388032.t.XpeFYr)) : (p = Chunk388032.intl.string(Chunk388032.t.dKhVQN), f = this.handleLogin), (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk593473, Chunk442837 === Chunk843445.b.SMALL ? Chunk295265.inviteSmall : Chunk295265.inviteLarge),
+      className: a()(Chunk593473, Chunk442837 === Chunk843445.b.SMALL ? Chunk612510.inviteSmall : Chunk612510.inviteLarge),
       children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.s1KcLo)
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk295265.content,
+        className: Chunk612510.content,
         children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk295265.info,
+          className: Chunk612510.info,
           children: [(0, Chunk54381.jsx)(Chunk565138.Z, {
             guild: Chunk749210,
             active: true,
             size: Chunk565138.Z.Sizes.LARGE,
-            className: Chunk295265.guildIcon
+            className: Chunk612510.guildIcon
           }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk295265.infoText,
+            className: Chunk612510.infoText,
             children: [(0, Chunk54381.jsx)("div", {
-              className: Chunk295265.name,
+              className: Chunk612510.name,
               children: module.name
             }), this.renderMemberInfo()]
           })]
         }), (0, Chunk54381.jsx)(Chunk755721.zx, {
           size: Chunk755721.zx.Sizes.SMALL,
-          className: Chunk295265.actionButton,
+          className: Chunk612510.actionButton,
           fullWidth: true,
           color: Chunk703656,
           look: Chunk41776,
@@ -138,7 +138,7 @@ class N extends Chunk473749.PureComponent {
       let e = {
         redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, b.uL)(I.Z5c.LOGIN, {
+      (0, _.uL)(I.Z5c.LOGIN, {
         search: (0, s.stringify)(e),
         source: "verified_guild_invite"
       })
@@ -148,7 +148,7 @@ class N extends Chunk473749.PureComponent {
 let j = (0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk41776.Z], e => {
   let {
     guild: t
-  } = e, n = _.Z.isLurking(t.id);
+  } = e, n = b.Z.isLurking(t.id);
   return {
     isInGuild: null != O.Z.getGuild(t.id) && !n,
     isLurking: n

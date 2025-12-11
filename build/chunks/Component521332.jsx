@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 521332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => v
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk185625 = require("./185625.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk769450 = require("./769450.js");
+  Chunk427572 = require("./427572.js");
 
-function b(e) {
+function h(e) {
   let {
     title: t,
     description: n,
@@ -27,42 +27,42 @@ function b(e) {
     trackSettingsUpsellsAction: a
   } = e, [o, c] = l.useState(false);
   return (0, s.ZP)(() => {
-    a(g.M4.SETTINGS_UPSELLS_VIEWED)
+    a(b.M4.SETTINGS_UPSELLS_VIEWED)
   }), (0, r.jsx)(d.JZ, {
     title: t,
     description: n,
-    buttonText: o ? x.intl.string(x.t["h+WsPb"]) : x.intl.string(x.t.A8t4Nf),
+    buttonText: o ? f.intl.string(f.t["h+WsPb"]) : f.intl.string(f.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
-      i(), c(true), a(g.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
+      i(), c(true), a(b.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
 
-function f(e) {
+function v(e) {
   let {
     settingsUpsells: t,
     channelId: n,
     onModalClose: l,
     reportId: s,
     reportType: d,
-    reportSubType: f
-  } = e, v = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, p.jc)(t, null == v ? true : v.type), y = (0, g.i_)(d, f, s);
+    reportSubType: v
+  } = e, _ = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, p.jc)(t, null == _ ? true : _.type), y = (0, b.i_)(d, v, s);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
-    className: h.container,
+    className: x.container,
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
-      className: h.header,
-      children: x.intl.string(x.t["1yxTIJ"])
+      className: x.header,
+      children: f.intl.string(f.t["1yxTIJ"])
     }), (0, r.jsx)("div", {
-      className: h.upsellsContainer,
+      className: x.upsellsContainer,
       children: j.map((e, n) => {
         let {
           getTitle: l,
           getDescription: i,
           onApply: a
         } = e;
-        return (0, r.jsx)(b, {
+        return (0, r.jsx)(h, {
           title: l(),
           description: i(),
           onButtonClick: a,
@@ -70,15 +70,15 @@ function f(e) {
         }, n)
       })
     }), (0, r.jsx)(a.Avr, {
-      text: x.intl.string(x.t.olebGx),
+      text: f.intl.string(f.t.olebGx),
       onClick: () => {
         (0, u.openUserSettings)(c.n.CONTENT_AND_SOCIAL_PANEL, {
-          section: _.oAB.CONTENT_AND_SOCIAL
-        }), l(), o.ZP.trackWithMetadata(_.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
+          section: g.oAB.CONTENT_AND_SOCIAL
+        }), l(), o.ZP.trackWithMetadata(g.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,
           report_type: d.name,
-          report_subtype: f,
-          action: g.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
+          report_subtype: v,
+          action: b.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })
       }
     })]

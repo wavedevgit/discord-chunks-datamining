@@ -61,8 +61,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk560688 = require("./560688.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk306762 = require("./306762.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk978582 = require("./978582.js"),
+  Chunk533348 = require("./533348.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -214,7 +214,7 @@ class ef extends Chunk473749.PureComponent {
       return (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        className: Chunk306762.participantName,
+        className: Chunk978582.participantName,
         lineClamp: 1,
         children: Chunk473749
       })

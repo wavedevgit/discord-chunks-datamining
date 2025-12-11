@@ -94,8 +94,8 @@ let J = e => {
       eg = (0, A.N)(),
       eh = (0, x.$)(),
       em = (0, T.W)(),
-      e_ = (0, S.Vi)(),
-      eb = (0, M.HI)({
+      eb = (0, S.Vi)(),
+      e_ = (0, M.HI)({
         trialOffer: ef
       }),
       eE = (0, F.V)(),
@@ -114,7 +114,7 @@ let J = e => {
       } = (0, f.Z)({
         forceFetch: true
       }),
-      [eA, eZ] = (0, _.bf)(ej !== W.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [eA, eZ] = (0, b.bf)(ej !== W.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: eP.valueOf(),
         cooldownDurationMs: 0
       }),
@@ -123,15 +123,15 @@ let J = e => {
       }),
       eL = (null == ef ? true : ef.trial_id) === W.a7,
       eR = (0, g.YZ)("NitroTabButton"),
-      eD = (0, b.bg)({
+      eD = (0, _.bg)({
         location: "NitroTabButton"
       }),
       eM = [],
       ek = [];
-    (0, h.Kl)() && ((eT || eC && !eL) && eM.push(o.z.NITRO_TAB_BADGE_OFFER_REMINDER), ev && eM.push(o.z.RECURRING_3P_PROMOTION_POPOVER), e_ && eM.push(o.z.BOGO_2025_NITRO_TAB_BADGE), ew && eM.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), em && eM.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eR && eM.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), eD && eM.push(o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
-    let [eU, eG] = (0, _.US)(eM, true, true);
+    (0, h.Kl)() && ((eT || eC && !eL) && eM.push(o.z.NITRO_TAB_BADGE_OFFER_REMINDER), ev && eM.push(o.z.RECURRING_3P_PROMOTION_POPOVER), eb && eM.push(o.z.BOGO_2025_NITRO_TAB_BADGE), ew && eM.push(o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), em && eM.push(o.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eR && eM.push(o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), eD && eM.push(o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
+    let [eU, eG] = (0, b.US)(eM, true, true);
     eN && ek.push(o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
-    let [eB, eH] = (0, _.US)(ek, true, true), eV = (0, w.H)(a.I.PREMIUM_TAB), [eF, ez] = (0, _.TE)(null != eV && "premiumTab" === eV.properties.properties.oneofKind ? o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (ee = null == eV ? true : eV.id) ? ee : "", true, true);
+    let [eB, eH] = (0, b.US)(ek, true, true), eV = (0, w.H)(a.I.PREMIUM_TAB), [eF, ez] = (0, b.TE)(null != eV && "premiumTab" === eV.properties.properties.oneofKind ? o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (ee = null == eV ? true : eV.id) ? ee : "", true, true);
     if (i.useEffect(() => {
         true === et && null != eU && eG(K.L.AUTO_DISMISS), true === et && null != eB && eH(K.L.AUTO_DISMISS), true === et && null != eF && ez(K.L.AUTO_DISMISS)
       }, [eG, et, eU, eH, eB, eF, ez]), !J({
@@ -155,8 +155,8 @@ let J = e => {
       acknowledgedBadgeCopy: eV.properties.properties.premiumTab.acknowledgedBadgeLabel,
       isDismissed: eF !== o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE
     }), C = 9;
-    else if (e_) n = (0, r.jsx)(L.Z, {}), C = 0;
-    else if (eb) {
+    else if (eb) n = (0, r.jsx)(L.Z, {}), C = 0;
+    else if (e_) {
       let e = (0, M.$q)();
       n = (0, r.jsx)(G._y, {
         isTabSelected: et,

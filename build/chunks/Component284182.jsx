@@ -1,8 +1,8 @@
-/** Chunk was on 9456 **/
+/** Chunk was on 193 **/
 /** chunk id: 284182, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,41 +14,41 @@ var Chunk399606 = require("./399606.js"),
   Chunk76451 = require("./76451.jsx"),
   Chunk117530 = require("./117530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk485998 = require("./485998.js");
+  Chunk279890 = require("./279890.js");
 
-function h(e) {
+function f(e) {
   let {
     parentChannel: t
-  } = e, n = (0, i.Wu)([d.Z], () => {
-    let e = d.Z.getUploads(t.id, a.Ie.CREATE_FORUM_POST.drafts.type);
+  } = e, n = (0, r.Wu)([d.Z], () => {
+    let e = d.Z.getUploads(t.id, l.Ie.CREATE_FORUM_POST.drafts.type);
     return null == e ? true : e.filter(e => true !== e.isThumbnail)
   });
-  return (0, r.jsxs)("div", {
+  return (0, a.jsxs)("div", {
     className: m.container,
-    children: [(0, r.jsx)(l.Text, {
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-md/semibold",
       color: "text-muted",
       children: u.intl.string(u.t.omKGKu)
-    }), (0, r.jsx)(l.Text, {
+    }), (0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       children: u.intl.string(u.t["zUjLl+"])
-    }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(l.zJl, {
+    }), (0, a.jsx)("div", {
+      children: (0, a.jsx)(i.zJl, {
         className: m.uploadsContainer,
         orientation: "horizontal",
         paddingFix: false,
         fade: true,
-        children: (0, r.jsxs)("div", {
+        children: (0, a.jsxs)("div", {
           className: m.uploads,
-          children: [n.map(e => (0, r.jsx)(o.Z, {
+          children: [n.map(e => (0, a.jsx)(o.Z, {
             channelId: t.id,
-            draftType: a.Ie.CREATE_FORUM_POST.drafts.type,
+            draftType: l.Ie.CREATE_FORUM_POST.drafts.type,
             upload: e,
             keyboardModeEnabled: true,
             hideFileName: true,
             size: s.q.SMALL
-          }, e.id)), (0, r.jsx)(c._, {
+          }, e.id)), (0, a.jsx)(c._, {
             channelId: t.id
           })]
         })

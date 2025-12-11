@@ -1,4 +1,4 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 92504 **/
 /** chunk id: 682807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -14,81 +14,81 @@ var Chunk120356 = require("./120356.js"),
   Chunk726542 = require("./726542.js"),
   Chunk881294 = require("./881294.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk84933 = require("./84933.js");
+  Chunk442245 = require("./442245.js");
 
 function h(e) {
   var t, n;
   let {
-    application: a,
+    application: r,
     className: l,
     innerClassName: o
-  } = e, c = null != (n = null == (t = a.directory_entry) ? true : t.external_urls) ? n : [];
-  return null != a.terms_of_service_url || null != a.privacy_policy_url || c.length > 0 ? (0, r.jsxs)("div", {
+  } = e, c = null != (n = null == (t = r.directory_entry) ? true : t.external_urls) ? n : [];
+  return null != r.terms_of_service_url || null != r.privacy_policy_url || c.length > 0 ? (0, a.jsxs)("div", {
     className: i()(m.container, l),
-    children: [(0, r.jsx)(s.Heading, {
+    children: [(0, a.jsx)(s.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       children: p.intl.string(p.t.l6DP2n)
-    }), (0, r.jsxs)("div", {
+    }), (0, a.jsxs)("div", {
       className: i()(m.list, o),
-      children: [c.map((e, t) => (0, r.jsx)(g, {
+      children: [c.map((e, t) => (0, a.jsx)(f, {
         url: e.url,
         children: e.name
-      }, t)), null != a.terms_of_service_url ? (0, r.jsx)(f, {
+      }, t)), null != r.terms_of_service_url ? (0, a.jsx)(b, {
         icon: s.aAW,
-        url: a.terms_of_service_url,
+        url: r.terms_of_service_url,
         children: p.intl.string(p.t.s7STcY)
-      }) : null, null != a.privacy_policy_url ? (0, r.jsx)(f, {
+      }) : null, null != r.privacy_policy_url ? (0, a.jsx)(b, {
         icon: s.mBM,
-        url: a.privacy_policy_url,
+        url: r.privacy_policy_url,
         children: p.intl.string(p.t.kH3JR5)
       }) : null]
     })]
   }) : null
 }
 
-function g(e) {
+function f(e) {
   var t, n;
   let {
-    url: a,
+    url: r,
     children: i
-  } = e, o = (0, c.ZP)(), u = d.Z.getByUrl(a), p = (0, l.wj)(o) ? null == u || null == (t = u.icon) ? true : t.darkSVG : null == u || null == (n = u.icon) ? true : n.lightSVG;
-  return (0, r.jsx)(f, {
+  } = e, o = (0, c.ZP)(), u = d.Z.getByUrl(r), p = (0, l.wj)(o) ? null == u || null == (t = u.icon) ? true : t.darkSVG : null == u || null == (n = u.icon) ? true : n.lightSVG;
+  return (0, a.jsx)(b, {
     icon: true === p ? s.xPt : true,
     imageSrc: p,
-    url: a,
+    url: r,
     children: i
   })
 }
 
-function f(e) {
+function b(e) {
   let {
     icon: t,
     imageSrc: n,
-    iconColor: a,
+    iconColor: r,
     url: l,
     children: c
   } = e, d = (0, u.nu)(), p = null;
-  null != t ? p = (0, r.jsx)(t, {
+  null != t ? p = (0, a.jsx)(t, {
     className: m.listIcon,
-    color: null != a ? a : "currentColor",
+    color: null != r ? r : "currentColor",
     width: 20,
     height: 20,
     size: "custom"
-  }) : null != n && (p = (0, r.jsx)("img", {
+  }) : null != n && (p = (0, a.jsx)("img", {
     className: m.listImage,
     src: n,
     alt: ""
   }));
-  let h = (0, r.jsxs)(r.Fragment, {
-    children: [p, (0, r.jsx)(s.Text, {
+  let h = (0, a.jsxs)(a.Fragment, {
+    children: [p, (0, a.jsx)(s.Text, {
       className: m.listText,
       variant: "text-sm/medium",
       selectable: true,
       children: c
     })]
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, a.jsx)(o.Z, {
     href: l,
     className: i()(m.listItem, m.linkItem),
     trusted: !d,

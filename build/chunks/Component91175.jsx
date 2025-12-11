@@ -1,7 +1,7 @@
 /** Chunk was on 67749 **/
 /** chunk id: 91175, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,65 +11,65 @@ var Chunk54381 = require("./54381.js"),
   Chunk788080 = require("./788080.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js"),
-  Chunk768356 = require("./768356.js"),
+  Chunk729694 = require("./729694.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179835 = require("./179835.js"),
-  Chunk248319 = require("./248319.js");
-let b = function(e) {
+  Chunk139941 = require("./139941.js"),
+  Chunk975401 = require("./975401.js");
+let m = function(e) {
   let {
     onClose: t,
     onComplete: n,
     transitionState: i,
-    webviewUrl: b
-  } = e, C = (0, r.GE)(), [_, h] = a.useState(0), x = a.useCallback(() => {
+    webviewUrl: m
+  } = e, C = (0, s.GE)(), [h, x] = l.useState(0), g = l.useCallback(() => {
     n(), t()
-  }, [n, t]), g = a.useCallback(() => {
-    (0, s.nfh)(d.zJ) && x()
-  }, [x]);
-  (0, c.F5)(g);
-  let k = a.useCallback(e => {
-      if (C && "" !== b) {
+  }, [n, t]), k = l.useCallback(() => {
+    (0, c.nfh)(d.zJ) && g()
+  }, [g]);
+  (0, r.F5)(k);
+  let v = l.useCallback(e => {
+      if (C && "" !== m) {
         var t;
-        (null == e || null == (t = e.data) ? true : t.eventType) === "Verification.Result" && x()
+        (null == e || null == (t = e.data) ? true : t.eventType) === "Verification.Result" && g()
       }
-    }, [b, x, C]),
-    v = a.useCallback(() => {
-      h(_ + 1)
-    }, [_]);
-  return a.useEffect(() => (window.addEventListener("message", k), () => {
-    window.removeEventListener("message", k)
-  }), [k]), (0, l.jsxs)(s.Y0X, {
+    }, [m, g, C]),
+    j = l.useCallback(() => {
+      x(h + 1)
+    }, [h]);
+  return l.useEffect(() => (window.addEventListener("message", v), () => {
+    window.removeEventListener("message", v)
+  }), [v]), (0, a.jsxs)(c.Y0X, {
     "data-migration-pending": true,
     transitionState: i,
-    className: o()(m.root, p.fullbleedContent),
+    className: o()(b.root, p.fullbleedContent),
     parentComponent: "AgeVerificationExpressiveModal",
-    size: s.CgR.MEDIUM,
-    children: [(0, l.jsx)(s.hzk, {
+    size: c.CgR.MEDIUM,
+    children: [(0, a.jsx)(c.hzk, {
       "data-migration-pending": true,
-      className: o()(m.content, m.fullbleed),
+      className: o()(b.content, b.fullbleed),
       scrollbarType: "none",
-      children: (0, l.jsx)("iframe", {
+      children: (0, a.jsx)("iframe", {
         id: "frame",
-        src: b,
-        className: m.iframe,
+        src: m,
+        className: b.iframe,
         allow: "camera; microphone"
-      }, _)
-    }), (0, l.jsx)(s.mzw, {
+      }, h)
+    }), (0, a.jsx)(c.mzw, {
       "data-migration-pending": true,
-      children: (0, l.jsxs)(s.ButtonGroup, {
+      children: (0, a.jsxs)(c.ButtonGroup, {
         fullWidth: true,
-        children: [(0, l.jsx)(s.Button, {
+        children: [(0, a.jsx)(c.Button, {
           fullWidth: true,
           variant: "secondary",
-          icon: s.j9r,
+          icon: c.j9r,
           text: f.intl.string(u.default.b7Oqdu),
           onClick: t
-        }), (0, l.jsx)(s.Button, {
+        }), (0, a.jsx)(c.Button, {
           fullWidth: true,
           variant: "secondary",
-          icon: s.DuK,
+          icon: c.DuK,
           text: f.intl.string(u.default["0vTx7j"]),
-          onClick: v
+          onClick: j
         })]
       })
     })]

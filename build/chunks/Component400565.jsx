@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 400565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => f
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk598077 = require("./598077.js"),
   Chunk430824 = require("./430824.js"),
   Chunk865112 = require("./865112.js"),
-  Chunk121099 = require("./121099.js");
+  Chunk858504 = require("./858504.js");
 let d = e => {
     let {
       mask: t
@@ -31,21 +31,21 @@ let d = e => {
     var t, n;
     let {
       item: i
-    } = e, f = null, p = false, h = (0, l.e7)([s.Z], () => s.Z.getGuild(i.guild_id));
+    } = e, f = null, h = false, p = (0, l.e7)([s.Z], () => s.Z.getGuild(i.guild_id));
     if (null != i.icon_name) f = (0, r.jsx)("img", {
       alt: "",
       src: c.VH[(0, c.RB)(i.icon_name)]
     });
     else if (null != i.other_user) {
-      let e = i.other_user instanceof a.Z ? i.other_user : new a.Z(i.other_user),
+      let e = i.other_user instanceof o.Z ? i.other_user : new o.Z(i.other_user),
         n = null != (t = e.globalName) ? t : e.username;
       f = (0, r.jsx)("img", {
         alt: n,
         className: u.image,
         src: e.getAvatarURL(true, 40)
-      }), p = true
+      }), h = true
     } else f = null != i.icon_url ? (0, r.jsx)("img", {
-      alt: null != (n = null == h ? true : h.name) ? n : "",
+      alt: null != (n = null == p ? true : p.name) ? n : "",
       className: u.image,
       src: i.icon_url
     }) : (0, r.jsx)("img", {
@@ -55,8 +55,8 @@ let d = e => {
     let g = (0, c.Vi)(i.type);
     return (0, r.jsxs)("div", {
       className: u.container,
-      children: [(0, r.jsx)(o.ZP, {
-        mask: null == g ? o.QS.AVATAR_DEFAULT : o.QS.AVATAR_STATUS_ROUND_16,
+      children: [(0, r.jsx)(a.ZP, {
+        mask: null == g ? a.QS.AVATAR_DEFAULT : a.QS.AVATAR_STATUS_ROUND_16,
         width: 40,
         height: 40,
         rightOverhang: 3,
@@ -64,7 +64,7 @@ let d = e => {
         className: u.mask,
         children: (0, r.jsx)("div", {
           className: u.imageContainer,
-          style: p ? true : {
+          style: h ? true : {
             backgroundColor: (0, c.Vu)(i)
           },
           children: f

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 12078, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk570911 = require("./570911.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk453921 = require("./453921.js");
+  Chunk257699 = require("./257699.js");
 
-function _(e) {
+function v(e) {
   let {
     profile: t,
     canManageGuild: n,
@@ -56,7 +56,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     isDiscoverable: t,
     profile: n,
@@ -68,7 +68,7 @@ function v(e) {
     return m.ff.test(e) ? e : m.ZP.getGuildDiscoverySplashURL({
       id: n.id,
       splash: n.customBanner,
-      size: 300 * (0, p.Z)()
+      size: 300 * (0, f.Z)()
     })
   }, [n]);
   if (!t) return null;
@@ -112,28 +112,28 @@ function v(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   var t;
   let {
     profile: n,
     onCustomBannerChange: l,
     canManageGuild: u
-  } = e, m = (0, s.e7)([g.Z], () => g.Z.getGuild(n.id)), p = null != (t = null == m ? true : m.features.has(h.GuildFeatures.DISCOVERABLE)) && t, O = n.id, C = i.useCallback(e => () => {
-    f.Z.updateGuildProfile(O, {
+  } = e, m = (0, s.e7)([g.Z], () => g.Z.getGuild(n.id)), f = null != (t = null == m ? true : m.features.has(b.GuildFeatures.DISCOVERABLE)) && t, C = n.id, y = i.useCallback(e => () => {
+    p.Z.updateGuildProfile(C, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [O]), y = i.useCallback(e => (!p || null == n.customBanner) && e === n.brandColorPrimary, [n, p]);
+  }, [C]), N = i.useCallback(e => (!f || null == n.customBanner) && e === n.brandColorPrimary, [n, f]);
   return (0, r.jsx)(c.gNt, {
     label: x.intl.string(x.t.BSVog8),
     children: (0, r.jsxs)("div", {
       className: j.grid,
-      children: [(0, r.jsx)(_, {
+      children: [(0, r.jsx)(v, {
         profile: n,
         canManageGuild: u,
-        handleClick: C(null),
-        hasCustomBanner: p && null != n.customBanner
-      }), b.cb.map(e => {
+        handleClick: y(null),
+        hasCustomBanner: f && null != n.customBanner
+      }), h.cb.map(e => {
         let {
           name: t,
           color: n
@@ -145,7 +145,7 @@ function O(e) {
             "aria-disabled": !u,
             tabIndex: u ? 0 : false,
             "aria-label": t,
-            onClick: u ? C(n) : true,
+            onClick: u ? y(n) : true,
             style: {
               background: (0, d.dG)(n)
             },
@@ -154,14 +154,14 @@ function O(e) {
             }),
             children: (0, r.jsx)("div", {
               className: a()({
-                [j.itemSelected]: y(n)
+                [j.itemSelected]: N(n)
               })
             })
           })
         }, t)
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(O, {
         canManageGuild: u,
-        isDiscoverable: p,
+        isDiscoverable: f,
         profile: n,
         onCustomBannerChange: l
       })]

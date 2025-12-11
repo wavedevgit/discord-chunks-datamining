@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk145022 = require("./145022.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk322108 = require("./322108.js");
+  Chunk80558 = require("./80558.js");
 
 function y(e, t) {
   return null != t && null != t.discord_web && e.id === t.discord_web.id && e.type === t.discord_web.type
@@ -48,14 +48,14 @@ function O(e) {
 function v() {
   return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk322108.buildInfo,
+      className: Chunk80558.buildInfo,
       children: [(0, Chunk54381.jsx)("div", {
-        className: o()(Chunk322108.barLoader, Chunk322108.barTitle)
+        className: o()(Chunk80558.barLoader, Chunk80558.barTitle)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk322108.barLoader
+        className: Chunk80558.barLoader
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk322108.buttonLoader
+      className: Chunk80558.buttonLoader
     })]
   })
 }

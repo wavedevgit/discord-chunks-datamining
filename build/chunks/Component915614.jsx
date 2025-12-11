@@ -6,10 +6,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk809357 = require("./809357.js"),
-  Chunk795482 = require("./795482.js");
+  Chunk759686 = require("./759686.js");
 
 function c(e) {
   let {
@@ -17,10 +17,10 @@ function c(e) {
     keybind: n,
     className: r,
     IconComponent: c
-  } = e, u = (0, a.o)();
+  } = e, u = (0, o.o)();
   return (0, i.jsxs)("div", {
-    className: l()(s.buttonContainer, r),
-    children: [(0, i.jsx)(o.P3F, {
+    className: a()(s.buttonContainer, r),
+    children: [(0, i.jsx)(l.P3F, {
       className: s.button,
       onClick: t,
       "aria-hidden": true,
@@ -29,7 +29,7 @@ function c(e) {
         color: "currentColor",
         "aria-hidden": true
       })
-    }), null != n && u ? (0, i.jsx)(o.Text, {
+    }), null != n && u ? (0, i.jsx)(l.Text, {
       className: s.keybind,
       "aria-hidden": true,
       variant: "text-xxs/bold",

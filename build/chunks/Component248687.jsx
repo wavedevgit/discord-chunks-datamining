@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk406128 = require("./406128.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk365861 = require("./365861.js");
+  Chunk750593 = require("./750593.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,7 +127,7 @@ class N extends Chunk473749.PureComponent {
         title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),
         note: null != exports ? exports() : module,
         action: require,
-        className: Chunk365861.errorPage
+        className: Chunk750593.errorPage
       })
     }
     return module

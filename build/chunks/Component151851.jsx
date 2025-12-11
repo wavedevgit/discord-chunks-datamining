@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk325645 = require("./325645.js");
+  Chunk94879 = require("./94879.js");
 let S = "#ffffff",
   I = e => y.ZP.close(e),
   T = e => y.ZP.minimize(e),

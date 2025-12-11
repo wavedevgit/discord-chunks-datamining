@@ -1,11 +1,11 @@
-/** Chunk was on 94723 **/
-/** chunk id: 798733, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 86932 **/
+/** chunk id: 798733, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   Z: () => c,
-  f: () => a
+  f: () => r
 });
-var o, Chunk388032 = require("./388032.jsx"),
-  a = ((o = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", o.CONFUSING_LANGUAGE = "I found the language confusing", o.OTHER = "Other", o);
+var n, Chunk388032 = require("./388032.jsx"),
+  r = ((n = {}).COULD_NOT_FIND = "I couldn't find what I was looking for", n.CONFUSING_LANGUAGE = "I found the language confusing", n.OTHER = "Other", n);
 
 function c() {
   return [{

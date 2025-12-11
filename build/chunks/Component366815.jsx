@@ -10,28 +10,28 @@ var Chunk442837 = require("./442837.js"),
   Chunk536442 = require("./536442.js"),
   Chunk142497 = require("./142497.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk785281 = require("./785281.js"),
+  Chunk927476 = require("./927476.js"),
   Chunk137707 = require("./137707.js");
 let d = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
   children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk785281.inlineText,
+    className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t.GcZzp2)
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk785281.inlineText,
+    className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t["/NEGrO"])
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk785281.inlineText,
+    className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t.eUbuHL)
   }), (0, Chunk54381.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk785281.inlineText,
+    className: Chunk927476.inlineText,
     children: Chunk388032.intl.string(Chunk388032.t.sCAZeI)
   })]
 });

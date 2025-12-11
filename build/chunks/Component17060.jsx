@@ -1,4 +1,4 @@
-/** Chunk was on 74815 **/
+/** Chunk was on 82295 **/
 /** chunk id: 17060, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => z
@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388627 = require("./388627.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603841 = require("./603841.js");
+  Chunk714367 = require("./714367.js");
 
 function R(e, t) {
   return i()(e, t)
@@ -67,7 +67,7 @@ function W(e) {
 
 function B(e) {
   var t, n;
-  let [l] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [h.Z];
+  let [l] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [x.Z];
   if (null == e) return null;
   if (null != e.gameId) {
     let t = l.getDetectableGame(e.gameId);
@@ -119,8 +119,8 @@ function A(e) {
   let {
     selectedGame: t,
     setSelectedGame: n
-  } = e, r = (0, o.Wu)([h.Z, y.ZP], () => {
-    let e = h.Z.games,
+  } = e, r = (0, o.Wu)([x.Z, y.ZP], () => {
+    let e = x.Z.games,
       t = e.reduce((e, t) => (e[t.id] = t, e), {});
     return [...e, ...y.ZP.getGamesSeen(false).reduce((e, n) => {
       let l = n.id;
@@ -132,8 +132,8 @@ function A(e) {
       }
       return e
     }, [])]
-  }, []), a = (0, o.e7)([h.Z], () => B(t, [h.Z]), [t]);
-  return (0, l.jsx)(_.g, {
+  }, []), a = (0, o.e7)([x.Z], () => B(t, [x.Z]), [t]);
+  return (0, l.jsx)(h.g, {
     games: r,
     selectedGame: null != a ? a : null,
     onGameSelected: e => {
@@ -184,8 +184,8 @@ function z(e) {
   var t, a;
   let {
     onClose: i,
-    transitionState: _,
-    location: h,
+    transitionState: h,
+    location: x,
     appContext: E
   } = e, J = (0, o.e7)([b.default], () => b.default.getFocusedPID()), L = null != J ? J : (0, I.getPID)(), B = (0, o.e7)([G.default], () => G.default.getTrackedGameByPid(L), [L]), [z, H] = r.useState(null), [q, X] = r.useState(""), V = function() {
     let e = (0, T.II)(),
@@ -197,10 +197,10 @@ function z(e) {
     switch (true) {
       case null != l:
         return {
-          gameId: null != (u = l.applicationId) ? u : true, gameName: null != (s = l.gameName) ? s : true, gamePid: l.pid, fullscreenType: l.fullscreenType, trackedGame: l, runningGame: null != l.gameName && null != (d = y.ZP.getGameForName(l.gameName)) ? d : true
+          gameId: null != (u = l.applicationId) ? u : true, gameName: null != (d = l.gameName) ? d : true, gamePid: l.pid, fullscreenType: l.fullscreenType, trackedGame: l, runningGame: null != l.gameName && null != (s = y.ZP.getGameForName(l.gameName)) ? s : true
         };
       case null != e:
-        var i, u, s, d, c, m;
+        var i, u, d, s, c, m;
         let g = y.ZP.getGameForName(e.name),
           f = null == g ? true : g.pid;
         return {
@@ -221,7 +221,7 @@ function z(e) {
   })), (0, o.e7)([k.Z], () => ({
     nativeState: k.Z.getDebuggingState(),
     breadcrumbs: k.Z.getOverlayLoggingBreadcrumbs()
-  }), [], R)), es = r.useMemo(() => {
+  }), [], R)), ed = r.useMemo(() => {
     let e = {
       game_crashes_occurred: C.t["1UWmCV"],
       poor_performance: C.t["4owu+4"],
@@ -236,7 +236,7 @@ function z(e) {
       label: C.intl.string(e[t]),
       value: t
     }))
-  }, []), ed = r.useMemo(() => {
+  }, []), es = r.useMemo(() => {
     let e = {
       [g.Jx.FULLSCREEN]: C.t.AjBsPe,
       [g.Jx.WINDOWED]: C.t["0oYq2i"],
@@ -250,7 +250,7 @@ function z(e) {
       value: t
     }))
   }, []), ec = async () => {
-    er(true), await (0, s._v)(500), er(false)
+    er(true), await (0, d._v)(500), er(false)
   }, em = async () => {
     var e, t, r, a, u;
     if (null === z && 0 === q.length) {
@@ -259,11 +259,11 @@ function z(e) {
     }
     en(true);
     let o = null != (r = b.default.getFocusedPID()) ? r : (0, I.getPID)(),
-      d = G.default.getTrackedGameByPid(o),
+      s = G.default.getTrackedGameByPid(o),
       m = w.Z.getPopoutInitializationStages(),
-      f = (null == d ? true : d.overlayMethod) != null ? P.gl[d.overlayMethod] : null,
-      y = null != (a = null == d ? true : d.fullscreenType) ? a : g.Jx.UNKNOWN,
-      _ = (0, O.y2)(eo, e => {
+      f = (null == s ? true : s.overlayMethod) != null ? P.gl[s.overlayMethod] : null,
+      y = null != (a = null == s ? true : s.fullscreenType) ? a : g.Jx.UNKNOWN,
+      h = (0, O.y2)(eo, e => {
         for (let t of Object.values(K)) try {
           if (!t(e, o)) returnfalse
         } catch (e) {
@@ -273,7 +273,7 @@ function z(e) {
       }),
       k = Z.Z.getRecentActions(10),
       T = S.Z.getRecentExperimentBuckets(p.Z.getAllExperimentAssignments(), new Date(Date.now() - 7776e6)),
-      C = (null == d ? true : d.fullscreenHistory) == null ? null : Object.entries(d.fullscreenHistory).sort((e, t) => {
+      C = (null == s ? true : s.fullscreenHistory) == null ? null : Object.entries(s.fullscreenHistory).sort((e, t) => {
         let [n] = e, [l] = t;
         return Number(l) - Number(n)
       }).map(e => {
@@ -286,21 +286,21 @@ function z(e) {
         overlay_render_method: f,
         hardware_display_count: null != (u = await (null === v.Z || true === v.Z || null == (t = v.Z.hardware) || null == (e = t.getDisplayCount) ? true : e.call(t))) ? u : null,
         detected_fullscreen_type: g.Jx[y],
-        application_id: null == d ? true : d.applicationId,
-        application_name: null == d ? true : d.gameName,
-        game_pid: null == d ? true : d.pid,
+        application_id: null == s ? true : s.applicationId,
+        application_name: null == s ? true : s.gameName,
+        game_pid: null == s ? true : s.pid,
         recent_overlay_flux_actions: k,
-        overlay_module_state: null == d ? true : d.state,
+        overlay_module_state: null == s ? true : s.state,
         overlay_native_state: JSON.stringify(eu),
         overlay_module_oop_initialization_state: JSON.stringify(m),
         overlay_module_error_message: j.Z.errorMessage,
-        overlay_module_breadcrumbs: JSON.stringify(_),
+        overlay_module_breadcrumbs: JSON.stringify(h),
         fullscreen_history_for_pid: C,
-        media_session_id: x.Z.getMediaSessionId(),
+        media_session_id: _.Z.getMediaSessionId(),
         recent_experiment_buckets: JSON.stringify(T),
-        location: h
+        location: x
       };
-    await N.default.track(D.rMx.OVERLAY_BUG_REPORT, M), await (0, s._v)(1e3), en(false), null == i || i(), (0, c.ZDy)(async () => {
+    await N.default.track(D.rMx.OVERLAY_BUG_REPORT, M), await (0, d._v)(1e3), en(false), null == i || i(), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("86974").then(n.bind(n, 251889));
@@ -329,10 +329,10 @@ function z(e) {
   return (0, f.ZP)(() => {
     N.default.track(D.rMx.OPEN_MODAL, {
       type: "overlay_bug_reporter_modal",
-      location: h
+      location: x
     })
   }), (0, l.jsx)(u.Modal, {
-    transitionState: _,
+    transitionState: h,
     title: C.intl.string(C.t.OKmenM),
     actions: [{
       text: C.intl.string(C.t["ETE/oC"]),
@@ -358,9 +358,9 @@ function z(e) {
             color: ea ? "text-feedback-critical" : "text-strong",
             children: C.intl.string(C.t.Trx7eJ)
           })
-        }), (0, l.jsx)(d.B6, {
+        }), (0, l.jsx)(s.B6, {
           placeholder: C.intl.string(C.t.mKTzjI),
-          options: es,
+          options: ed,
           isSelected: e => e === z,
           select: e => {
             H(e), ei(false), er(false)
@@ -400,9 +400,9 @@ function z(e) {
         }), (0, l.jsx)(A, {
           selectedGame: $,
           setSelectedGame: ee
-        }), (0, l.jsx)(d.B6, {
+        }), (0, l.jsx)(s.B6, {
           placeholder: C.intl.string(C.t.IjlqrF),
-          options: ed,
+          options: es,
           isSelected: e => e === Y,
           select: Q,
           serialize: e => "".concat(e)

@@ -1,7 +1,7 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 678639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,17 +11,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk428530 = require("./428530.jsx"),
-  Chunk484036 = require("./484036.jsx"),
+  Chunk975775 = require("./975775.jsx"),
   Chunk681619 = require("./681619.jsx"),
   Chunk621060 = require("./621060.jsx"),
-  Chunk451429 = require("./451429.js"),
-  Chunk104444 = require("./104444.js");
+  Chunk663618 = require("./663618.js"),
+  Chunk850409 = require("./850409.js");
 
-function f(e, t) {
+function x(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function g(e) {
+function b(e) {
   let {
     store: t,
     dataGetter: n
@@ -32,15 +32,15 @@ function g(e) {
       t.removeChangeListener(e)
     }
   }, [t, n]), (0, a.jsx)(o.zJl, {
-    className: x.inspectorContainer,
+    className: f.inspectorContainer,
     children: (0, a.jsx)(d.Z, {
       data: i
     })
   })
 }
-let b = [{
+let g = [{
     key: "name",
-    cellClassName: Chunk104444.__invalid_eventColumn,
+    cellClassName: Chunk850409.__invalid_eventColumn,
     render(e) {
       let {
         store: t
@@ -57,11 +57,11 @@ let b = [{
         store: t
       } = e;
       return null == t.__getLocalVars ? (0, a.jsxs)("div", {
-        className: x.inspectorContainer,
+        className: f.inspectorContainer,
         children: ["Store is missing ", (0, a.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, a.jsx)(g, {
+      }) : (0, a.jsx)(b, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,7 +74,7 @@ let b = [{
       let {
         store: t
       } = e;
-      return (0, a.jsx)(g, {
+      return (0, a.jsx)(b, {
         store: t,
         dataGetter: e => e
       })
@@ -92,11 +92,11 @@ function j(e) {
     tabs: v
   }, []);
   return (0, a.jsxs)(u.Z, {
-    className: x.subPanel,
+    className: f.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(r, {}), (0, a.jsxs)(c.ZP, {
-      className: l()(h.headerBar, x.subPanelHeaderBar),
+      className: l()(h.headerBar, f.subPanelHeaderBar),
       children: [(0, a.jsx)(c.ZP.Icon, {
         icon: o.lO_,
         tooltip: t.getName()
@@ -109,14 +109,14 @@ function j(e) {
   })
 }
 
-function _() {
+function y() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
     i = Chunk442837.yh.getAll(),
     c = Chunk473749.useMemo(() => Chunk120356.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(f), [Chunk120356]).filter(e => (function(e, t) {
+    })).sort(x), [Chunk120356]).filter(e => (function(e, t) {
       let {
         store: n
       } = e;
@@ -126,9 +126,9 @@ function _() {
     p = Chunk120356.find(e => e._dispatchToken === d);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: l()(Chunk451429.panel, Chunk104444.panel),
+    className: l()(Chunk663618.panel, Chunk850409.panel),
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk104444.toolbar,
+      className: Chunk850409.toolbar,
       children: (0, Chunk54381.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: exports,
@@ -138,7 +138,7 @@ function _() {
         "aria-label": "Search stores"
       })
     }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-      columns: b,
+      columns: g,
       data: Chunk665149,
       selectedRowKey: Chunk428530,
       onClickRow: e => u(e.key)

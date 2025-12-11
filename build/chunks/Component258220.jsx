@@ -22,7 +22,7 @@ function g(e) {
     applicationId: n,
     transitionState: g,
     onClose: h
-  } = e, [m, _] = i.useState(false), [b] = (0, o.Z)([n]), E = null != (t = null == b ? true : b.name) ? t : "This Activity";
+  } = e, [m, b] = i.useState(false), [_] = (0, o.Z)([n]), E = null != (t = null == _ ? true : _.name) ? t : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
       type: f
@@ -49,7 +49,7 @@ function g(e) {
     title: p.intl.string(p.t.NQkK4l),
     actionBarInput: (0, r.jsx)(a.Checkbox, {
       checked: m,
-      onChange: () => _(!m),
+      onChange: () => b(!m),
       label: p.intl.string(p.t["5E9SB9"]),
       labelType: "secondary"
     }),

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 863562, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,64 +16,64 @@ var Chunk54381 = require("./54381.js"),
   Chunk268350 = require("./268350.js"),
   Chunk419922 = require("./419922.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk539437 = require("./539437.js");
-let h = e => {
+  Chunk596288 = require("./596288.js");
+let b = e => {
   let {
     className: t,
     isDisabled: l,
-    sticker: h,
-    canManageSticker: b
-  } = e, [x, j] = i.useState(false), [_, v] = (0, d.Z)(null, 4e3), O = async () => {
-    v(null), j(true);
+    sticker: b,
+    canManageSticker: h
+  } = e, [x, j] = i.useState(false), [v, O] = (0, d.Z)(null, 4e3), C = async () => {
+    O(null), j(true);
     try {
-      await (0, g.Um)(h)
+      await (0, g.Um)(b)
     } catch (e) {
-      v(e.body.message), j(false)
+      O(e.body.message), j(false)
     }
-  }, C = u.ZP.useUserTag(h.user);
+  }, y = u.ZP.useUserTag(b.user);
   return (0, r.jsx)(s.u, {
-    forceOpen: null != _,
-    text: _,
+    forceOpen: null != v,
+    text: v,
     asContainer: true,
     children: (0, r.jsxs)("div", {
-      className: a()(f.wrapper, t, {
-        [f.wrapperDisabled]: l
+      className: a()(p.wrapper, t, {
+        [p.wrapperDisabled]: l
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(f.content, {
-          [f.contentRemoving]: x
+        className: a()(p.content, {
+          [p.contentRemoving]: x
         }),
         children: [(0, r.jsx)(m.Z, {
-          className: f.sticker,
+          className: p.sticker,
           size: 72,
-          sticker: h
+          sticker: b
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(o.Text, {
             color: "header-primary",
             variant: "text-xs/semibold",
-            className: f.stickerName,
-            children: h.name
-          }), null != h.user && (0, r.jsxs)("div", {
-            className: f.user,
+            className: p.stickerName,
+            children: b.name
+          }), null != b.user && (0, r.jsxs)("div", {
+            className: p.user,
             children: [(0, r.jsx)(c.Z, {
-              className: f.userAvatar,
+              className: p.userAvatar,
               size: o.EFr.SIZE_16,
-              user: h.user
+              user: b.user
             }), (0, r.jsx)(o.Text, {
               color: "text-default",
               variant: "text-xs/normal",
-              children: C
+              children: y
             })]
           })]
-        }), b ? (0, r.jsxs)("div", {
-          className: f.actions,
+        }), h ? (0, r.jsxs)("div", {
+          className: p.actions,
           children: [(0, r.jsx)(o.P3F, {
-            className: f.action,
+            className: p.action,
             onClick: () => {
               (0, o.ZDy)(async () => {
                 let {
                   default: e
-                } = await Promise.all([n.e("93626"), n.e("34765")]).then(n.bind(n, 136735));
+                } = await Promise.all([n.e("93626"), n.e("52719")]).then(n.bind(n, 136735));
                 return t => (0, r.jsx)(e, function(e) {
                   for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -92,30 +92,30 @@ let h = e => {
                   }
                   return e
                 }({
-                  sticker: h,
-                  guildId: h.guild_id
+                  sticker: b,
+                  guildId: b.guild_id
                 }, t))
               })
             },
-            "aria-label": p.intl.string(p.t.bt75uw),
+            "aria-label": f.intl.string(f.t.bt75uw),
             children: (0, r.jsx)(o.vdY, {
               size: "xs",
               color: "currentColor",
-              className: f.icon
+              className: p.icon
             })
           }), (0, r.jsx)(o.P3F, {
-            className: a()(f.action, f.actionRemove),
-            onClick: O,
-            "aria-label": p.intl.string(p.t.N86XcP),
+            className: a()(p.action, p.actionRemove),
+            onClick: C,
+            "aria-label": f.intl.string(f.t.N86XcP),
             children: (0, r.jsx)(o.Dio, {
               size: "md",
               color: "currentColor",
-              className: f.icon
+              className: p.icon
             })
           })]
         }) : null]
       }), x && (0, r.jsx)(o.$jN, {
-        className: f.spinner
+        className: p.spinner
       })]
     })
   })

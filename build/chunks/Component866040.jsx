@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk670188 = require("./670188.jsx"),
   Chunk210887 = require("./210887.js"),
   Chunk5192 = require("./5192.js"),
-  Chunk263884 = require("./263884.js");
+  Chunk935418 = require("./935418.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,7 +69,7 @@ function h(e) {
         (0, o.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, m(p({}, n), {
             user: e
           }))

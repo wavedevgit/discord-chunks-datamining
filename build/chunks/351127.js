@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 351127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B2: () => g,
+  B2: () => f,
   Ov: () => m,
   Qn: () => T,
   _o: () => I,
@@ -30,11 +30,11 @@ function m(e, t) {
   return e === t
 }
 
-function g(e, t, n) {
+function f(e, t, n) {
   let _ = (0, l.e7)([u.Z], () => u.Z.getGuild(t), [t]);
-  return (0, l.e7)([a.ZP, c.default, o.Z], () => {
+  return (0, l.e7)([s.ZP, c.default, o.Z], () => {
     let l = {},
-      u = a.ZP.getMember(t, e),
+      u = s.ZP.getMember(t, e),
       A = c.default.getUser(e);
     if (null == _ || null == u || null == A) return l;
     let T = o.Z.getEveryoneRole(_),
@@ -47,8 +47,8 @@ function g(e, t, n) {
       if (r.e$(I, t)) {
         for (let n of (l[e] = [], u.roles)) {
           let r = o.Z.getRole(_.id, n);
-          null != r && ((0, s.Fs)(r, d.Plq.ADMINISTRATOR) || (0, s._N)(r, t)) && l[e].push(r.id)
-        }((0, s.Fs)(T, d.Plq.ADMINISTRATOR) || (0, s._N)(T, t)) && l[e].push(T.id), (0, i.eM)(_, A) && l[e].push(A.id)
+          null != r && ((0, a.Fs)(r, d.Plq.ADMINISTRATOR) || (0, a._N)(r, t)) && l[e].push(r.id)
+        }((0, a.Fs)(T, d.Plq.ADMINISTRATOR) || (0, a._N)(T, t)) && l[e].push(T.id), (0, i.eM)(_, A) && l[e].push(A.id)
       }
     }
     return l

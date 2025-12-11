@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 609174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk365355 = require("./365355.js"),
   Chunk891304 = require("./891304.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk861265 = require("./861265.js");
+  Chunk470165 = require("./470165.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -48,8 +48,8 @@ function h(e, t) {
   }), e
 }
 let m = Chunk185514.Nx.binds["0"],
-  _ = Chunk185514.On.binds["0"],
-  b = e => {
+  b = Chunk185514.On.binds["0"],
+  _ = e => {
     let {
       firstElementFocusJumpSectionProps: t = {}
     } = e, {
@@ -94,7 +94,7 @@ let m = Chunk185514.Nx.binds["0"],
         shouldShow: o,
         text: (0, r.jsxs)(r.Fragment, {
           children: [p.intl.string(p.t["9KJ29e"]), (0, r.jsx)(s.M2$, {
-            shortcut: _
+            shortcut: b
           })]
         }),
         children: e => (0, r.jsx)(s.P3F, h(g({}, e), {

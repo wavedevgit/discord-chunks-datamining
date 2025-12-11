@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk829857 = require("./829857.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk170538 = require("./170538.js");
+  Chunk549337 = require("./549337.js");
 
 function g(t) {
   let {
@@ -43,15 +43,15 @@ function C(t) {
     onClose: s,
     transitionState: f
   } = t, [C, E] = a.useState(), [v, S] = a.useState(false), {
-    teams: j
-  } = (0, m.Z)(), T = j.filter(t => t.payout_account_status === h.C.ACTIVE), b = a.useMemo(() => T.map(t => ({
+    teams: b
+  } = (0, m.Z)(), j = b.filter(t => t.payout_account_status === h.C.ACTIVE), T = a.useMemo(() => j.map(t => ({
     label: t.name,
     value: t.id
-  })), [T]), y = () => {
+  })), [j]), y = () => {
     S(t => !t)
-  }, _ = () => {
+  }, k = () => {
     s(), (0, c.df)(e, C)
-  }, k = a.useCallback(() => {
+  }, V = a.useCallback(() => {
     (0, d.Z)(p.EYA.DEVELOPER_PORTAL_TEAMS)
   }, []);
   if (!n) return (0, i.jsx)(l.Modal, {
@@ -59,7 +59,7 @@ function C(t) {
     actions: [{
       variant: "primary",
       text: x.intl.string(x.t.geKm7t),
-      onClick: _,
+      onClick: k,
       disabled: !v
     }],
     onClose: s,
@@ -78,14 +78,14 @@ function C(t) {
     })
   });
   {
-    let t = 0 === b.length;
+    let t = 0 === T.length;
     return (0, i.jsxs)(l.Modal, {
       title: x.intl.string(x.t.inJKQv),
       subtitle: t ? x.intl.format(x.t.Jyy4pV, {}) : x.intl.string(x.t.U1Vz24),
       actions: [{
         variant: "primary",
         text: t ? x.intl.string(x.t.JddVgE) : x.intl.string(x.t.geKm7t),
-        onClick: t ? k : _
+        onClick: t ? V : k
       }],
       onClose: s,
       transitionState: f,
@@ -93,7 +93,7 @@ function C(t) {
       children: [!t && (0, i.jsx)(g, {
         selectedTeamId: C,
         onSetSelectedTeamId: E,
-        teamOptions: b
+        teamOptions: T
       }), (0, i.jsx)(r.$q, {
         onChange: y,
         size: 20,

@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 450474, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ let u = e => {
     guild: u,
     guildMetadata: g,
     disabled: m
-  } = e, p = (0, l.Wu)([c.Z], () => c.Z.getAllCategories()), f = i.useMemo(() => p.map(e => {
+  } = e, f = (0, l.Wu)([c.Z], () => c.Z.getAllCategories()), p = i.useMemo(() => f.map(e => {
     let {
       categoryId: t,
       name: n
@@ -28,12 +28,12 @@ let u = e => {
       value: t,
       label: n
     }
-  }), [p]);
-  return 0 === f.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
+  }), [f]);
+  return 0 === p.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
     label: t,
     description: n,
     value: g.secondaryCategoryIds,
-    options: f,
+    options: p,
     onChange: e => {
       let {
         secondaryCategoryIds: t

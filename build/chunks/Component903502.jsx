@@ -1,7 +1,7 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk115470 = require("./115470.js"),
   Chunk246992 = require("./246992.js"),
   Chunk531578 = require("./531578.js"),
-  Chunk584314 = require("./584314.js");
+  Chunk746234 = require("./746234.js");
 let h = [{
   label: "second(s)",
   value: 1e3
@@ -28,24 +28,24 @@ let h = [{
   value: 864e5
 }];
 
-function x() {
-  let [e, t] = Chunk473749.useState(null), [n, x] = Chunk473749.useState(0), [f, g] = Chunk473749.useState(1e3), [b, v] = Chunk473749.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+function f() {
+  let [e, t] = Chunk473749.useState(null), [n, f] = Chunk473749.useState(0), [x, b] = Chunk473749.useState(1e3), [g, v] = Chunk473749.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
-  }), _ = Object.entries(Chunk531578.nw), y = _.slice(_.length / 2).map(e => {
+  }), y = Object.entries(Chunk531578.nw), C = y.slice(y.length / 2).map(e => {
     let [t] = e;
     return {
       label: t,
       value: t
     }
-  }), C = Chunk473749.useMemo(() => null != module && b >= 0 && b <= 100 && require >= 0, [module, b, require]);
+  }), _ = Chunk473749.useMemo(() => null != module && g >= 0 && g <= 100 && require >= 0, [module, g, require]);
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk584314.container,
+    className: Chunk746234.container,
     children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 32,
       children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
         label: "Feedback Survey",
-        options: y,
+        options: C,
         value: module,
         onChange: e => {
           t(e)
@@ -80,12 +80,12 @@ function x() {
             value: require.toString(),
             type: "number",
             placeholder: "Duration length",
-            onChange: e => x(parseFloat(e))
+            onChange: e => f(parseFloat(e))
           }), (0, Chunk54381.jsx)(Chunk199849.y6, {
             options: h,
-            value: f,
+            value: x,
             onChange: e => {
-              g(e)
+              b(e)
             },
             popoutLayerContext: Chunk246992.O$
           })]
@@ -98,7 +98,7 @@ function x() {
           helperText: "As a percentage",
           min: 0,
           max: 100,
-          value: b.toString(),
+          value: g.toString(),
           type: "number",
           onChange: e => v(parseFloat(e))
         })
@@ -110,17 +110,17 @@ function x() {
             type: "FEEDBACK_OVERRIDE_CLEAR",
             feedbackType: j.feedbackType
           })),
-          disabled: !C
+          disabled: !_
         }), (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Update",
           onClick: () => void(null != j && Chunk570140.Z.dispatch({
             type: "FEEDBACK_OVERRIDE_SET",
             feedbackType: j.feedbackType,
-            cooldown: require * f,
-            chance: b / 100
+            cooldown: require * x,
+            chance: g / 100
           })),
-          disabled: !C
+          disabled: !_
         })]
       }), null == module && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
@@ -130,7 +130,7 @@ function x() {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: cooldown needs to be a number greater than 0"
-      }), !(b >= 0 && b <= 100) && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), !(g >= 0 && g <= 100) && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-critical",
         children: "Error: chance needs to be a number between 0 and 100"

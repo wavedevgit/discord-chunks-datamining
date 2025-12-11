@@ -20,7 +20,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk484710 = require("./484710.js");
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -64,8 +64,8 @@ class E extends Chunk317770.Z {
     (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("1716"), n.e("83737")]).then(n.bind(n, 701509));
-      return n => (0, r.jsx)(e, b({
+      } = await Promise.all([n.e("1716"), n.e("22611")]).then(n.bind(n, 746882));
+      return n => (0, r.jsx)(e, _({
         source: t
       }, n))
     }, {
@@ -81,7 +81,7 @@ class E extends Chunk317770.Z {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(h.dG, e => (0, r.jsx)(g.default, b({
+    (0, i.oav)(h.dG, e => (0, r.jsx)(g.default, _({
       underageMessage: t
     }, e)))
   }

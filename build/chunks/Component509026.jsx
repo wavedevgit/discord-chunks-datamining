@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 509026, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -34,7 +34,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,10 +47,10 @@ function p(e, t) {
   }), e
 }
 
-function f(e) {
+function p(e) {
   let {
     guild: t
-  } = e, f = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), h = (0, u.Z)(t.id), b = (0, d.Z)(t) - h.length, x = (0, c.mY)();
+  } = e, p = (0, i.e7)([a.Z], () => a.Z.isUploadingEmoji()), b = (0, u.Z)(t.id), h = (0, d.Z)(t) - b.length, x = (0, c.mY)();
   return (0, r.jsxs)(l.gNt, {
     label: g.intl.string(g.t["LDT0Q/"]),
     disabled: x,
@@ -65,33 +65,33 @@ function f(e) {
           let {
             CreateEmojiWithRolesModal: l
           } = await n.e("9007").then(n.bind(n, 604623));
-          return n => (0, r.jsx)(l, p(m({}, n), {
+          return n => (0, r.jsx)(l, f(m({}, n), {
             data: e,
             file: i,
             guildId: t.id
           }))
         })
       },
-      disabled: x || f || 0 === b,
+      disabled: x || p || 0 === h,
       size: "md",
       variant: "primary",
       text: g.intl.string(g.t.AuPtov),
-      loading: f
+      loading: p
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(s.L3, {
       title: g.intl.string(g.t.lu1ZQ2),
       maxSlots: (0, d.Z)(t),
-      emojiCount: h.length,
+      emojiCount: b.length,
       children: (0, r.jsx)(s.FT, {
         guild: t,
-        emojis: h,
+        emojis: b,
         onEdit: (e, t) => {
           (0, l.ZDy)(async () => {
             let {
               UpdateEmojiRolesModal: i
             } = await n.e("9007").then(n.bind(n, 604623));
-            return n => (0, r.jsx)(i, p(m({}, n), {
+            return n => (0, r.jsx)(i, f(m({}, n), {
               emoji: e,
               guildId: t
             }))

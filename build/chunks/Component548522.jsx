@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 548522, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  y: () => f
+  y: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,76 +15,76 @@ var Chunk54381 = require("./54381.js"),
   Chunk217472 = require("./217472.js"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk194973 = require("./194973.js");
+  Chunk775129 = require("./775129.js");
 
-function f(e) {
+function p(e) {
   var t;
   let {
     guild: n,
     formFields: c
-  } = e, [f, b] = i.useState(c);
-  i.useEffect(() => b(c), [c]);
+  } = e, [p, h] = i.useState(c);
+  i.useEffect(() => h(c), [c]);
   let x = null != (t = (0, s.A)({
       guildId: n.id
     })) ? t : 0,
-    [j, _] = i.useState(null),
-    v = i.useMemo(() => null == f ? true : f.some(e => (0, a.J)(e)), [f]),
-    O = i.useMemo(() => f.length === g.nx, [f]),
-    C = i.useCallback(e => {
-      u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && _(null)
-    }, [j, n.id]),
+    [j, v] = i.useState(null),
+    O = i.useMemo(() => null == p ? true : p.some(e => (0, a.J)(e)), [p]),
+    C = i.useMemo(() => p.length === g.nx, [p]),
     y = i.useCallback(e => {
-      C([...f, e])
-    }, [f, C]),
+      u.Z.setPendingMemberVerificationRules(n.id, e), h(e), null != j && v(null)
+    }, [j, n.id]),
     N = i.useCallback(e => {
-      C([...f.slice(0, e), ...f.slice(e + 1)])
-    }, [f, C]),
-    E = i.useCallback((e, t) => {
-      if (f[e] === t) return;
-      let n = [...f];
-      n[e] = t, C(n)
-    }, [f, C]),
-    I = i.useCallback((e, t, n) => {
-      let r = f.indexOf(e),
-        i = [...f];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (C(i), null !== j && _(null)) : j !== t && _(t)
-    }, [j, f, C]);
+      y([...p, e])
+    }, [p, y]),
+    E = i.useCallback(e => {
+      y([...p.slice(0, e), ...p.slice(e + 1)])
+    }, [p, y]),
+    I = i.useCallback((e, t) => {
+      if (p[e] === t) return;
+      let n = [...p];
+      n[e] = t, y(n)
+    }, [p, y]),
+    S = i.useCallback((e, t, n) => {
+      let r = p.indexOf(e),
+        i = [...p];
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), h(i)), n ? (y(i), null !== j && v(null)) : j !== t && v(t)
+    }, [j, p, y]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: p.title,
+      className: f.title,
       children: m.intl.format(m.t["sm+75n"], {
-        currentCount: f.length,
+        currentCount: p.length,
         maxCount: g.nx
       })
-    }), f.map(e => (0, d.a0)({
+    }), p.map(e => (0, d.a0)({
       dropHoveredIndex: j,
       formField: e,
       guild: n,
-      index: f.indexOf(e),
-      isDragEnabled: f.length > 1,
+      index: p.indexOf(e),
+      isDragEnabled: p.length > 1,
       submittedGuildJoinRequestsCount: x,
-      removeFormField: N,
-      updateFormField: E,
-      updateFormFieldOrder: I,
-      canRemove: f.length > 1,
+      removeFormField: E,
+      updateFormField: I,
+      updateFormFieldOrder: S,
+      canRemove: p.length > 1,
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
-    })), !O && (0, r.jsx)("div", {
-      className: p.addQuestionsContainer,
+    })), !C && (0, r.jsx)("div", {
+      className: f.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
-        addFormField: y,
+        addFormField: N,
         guild: n,
-        allowTerms: !v
+        allowTerms: !O
       })
-    }), !O && (0, r.jsx)(h, {
-      addFormField: y
+    }), !C && (0, r.jsx)(b, {
+      addFormField: N
     })]
   })
 }
 
-function h(e) {
+function b(e) {
   let {
     addFormField: t
   } = e, n = i.useMemo(() => [{
@@ -119,7 +119,7 @@ function h(e) {
     children: [(0, r.jsx)(l.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
-      className: p.examplesHeader,
+      className: f.examplesHeader,
       children: m.intl.string(m.t.ID04cA)
     }), (0, r.jsx)(c.j, {
       pills: n

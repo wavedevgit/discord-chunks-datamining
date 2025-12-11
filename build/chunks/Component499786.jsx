@@ -13,9 +13,9 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk534924 = require("./534924.js");
+  Chunk23393 = require("./23393.js");
 let l = () => (0, Chunk54381.jsx)("hr", {
-    className: Chunk534924.sectionDivider
+    className: Chunk23393.sectionDivider
   }),
   c = e => {
     let {

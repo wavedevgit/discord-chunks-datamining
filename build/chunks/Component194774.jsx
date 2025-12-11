@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 194774, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => b
+  h: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,19 +17,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk30513 = require("./30513.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk308212 = require("./308212.js");
+  Chunk823847 = require("./823847.js");
 
-function b(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.features.has(g.GuildFeatures.INVITE_SPLASH), x = n && b, {
+  } = e, h = t.features.has(g.GuildFeatures.INVITE_SPLASH), x = n && h, {
     analyticsLocations: j
-  } = (0, a.ZP)(), _ = i.useCallback(e => {
+  } = (0, a.ZP)(), v = i.useCallback(e => {
     d.Z.updateGuild({
       splash: e
     })
-  }, []), v = i.useCallback(e => {
+  }, []), O = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: j,
@@ -37,24 +37,24 @@ function b(e) {
       analyticsObject: g.qAy.UPLOAD_IMAGE,
       perks: (0, m.o9)()
     })
-  }, [j, t]), O = (0, r.jsx)(o.Z, {
+  }, [j, t]), C = (0, r.jsx)(o.Z, {
     image: t.splash,
     makeURL: e => null != e ? c.ZP.getGuildSplashURL({
       id: t.id,
       splash: e
     }) : null,
     disabled: !x,
-    onChange: _,
-    hint: f.intl.string(f.t.uPvxqJ),
+    onChange: v,
+    hint: p.intl.string(p.t.uPvxqJ),
     enabled: x,
-    maxFileSizeBytes: p.B,
-    onFileSizeError: () => (0, s.Z)(p.B)
+    maxFileSizeBytes: f.B,
+    onFileSizeError: () => (0, s.Z)(f.B)
   });
-  return b ? O : (0, r.jsx)(l.P3F, {
+  return h ? C : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: h.upsell,
-    onClick: v,
-    children: O
+    className: b.upsell,
+    onClick: O,
+    children: C
   })
 }

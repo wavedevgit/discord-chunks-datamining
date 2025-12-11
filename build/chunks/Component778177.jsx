@@ -41,7 +41,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk723642 = require("./723642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk495824 = require("./495824.js");
+  Chunk399781 = require("./399781.js");
 
 function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -312,7 +312,7 @@ let er = {
       text: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
       position: "left",
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk495824.searchLearnMore,
+        className: Chunk399781.searchLearnMore,
         children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.USING_SEARCH),
           title: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),

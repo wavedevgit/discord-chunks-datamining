@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 623691, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => _
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -28,9 +28,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk297827 = require("./297827.js");
+  Chunk499899 = require("./499899.js");
 
-function S(e) {
+function _(e) {
   let {
     guild: t,
     everyoneRole: n,
@@ -47,23 +47,23 @@ function S(e) {
   });
   i.useEffect(() => {
     var e, t;
-    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : O.Cl)
+    c(null != (t = null == (e = u.current) ? true : e.offsetHeight) ? t : C.Cl)
   }, [c]);
-  let p = i.useCallback(() => {
+  let f = i.useCallback(() => {
       a(n.id)
     }, [a, n.id]),
-    f = g ? v.Z : T;
+    p = g ? O.Z : T;
   return (0, r.jsxs)("div", {
     ref: u,
     children: [(0, r.jsx)(d.Heading, {
       variant: "heading-lg/semibold",
-      children: E.intl.string(E.t["LPJmL/"])
+      children: I.intl.string(I.t["LPJmL/"])
     }), (0, r.jsx)(d.Text, {
-      className: I.description,
+      className: S.description,
       color: "text-default",
       variant: "text-sm/normal",
-      children: E.intl.string(E.t["1ydhVp"])
-    }), (0, r.jsx)(f, {
+      children: I.intl.string(I.t["1ydhVp"])
+    }), (0, r.jsx)(p, {
       guild: t
     }), (0, r.jsx)(P, {
       guild: t,
@@ -71,7 +71,7 @@ function S(e) {
       filteredRoles: l,
       query: s,
       setQuery: o,
-      onEveryoneRoleClick: p
+      onEveryoneRoleClick: f
     })]
   })
 }
@@ -81,29 +81,29 @@ function T(e) {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, p.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
-      dismissAction: y.L.INDIRECT_ACTION,
+    (0, f.wE)(c.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+      dismissAction: N.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
     })
   }, [t]);
-  let n = (0, b.vc)(o()(C.zQD), "LL"),
-    l = t.features.has(C.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
+  let n = (0, h.vc)(o()(y.zQD), "LL"),
+    l = t.features.has(y.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: E.intl.format(E.t.Vg2oTN, {
+      children: I.intl.format(I.t.Vg2oTN, {
         breakingChangeDate: n
       })
-    }) : h.Z.can(N.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+    }) : b.Z.can(E.Pl.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: E.intl.format(E.t.HYM8OE, {
+      children: I.intl.format(I.t.HYM8OE, {
         onClickMigrate: () => {
           u.Z.show({
-            title: E.intl.string(E.t.nFE8dD),
-            body: E.intl.format(E.t["1PAzQ6"], {
+            title: I.intl.string(I.t.nFE8dD),
+            body: I.intl.format(I.t["1PAzQ6"], {
               guildName: t.name
             }),
-            cancelText: E.intl.string(E.t["ETE/oC"]),
-            confirmText: E.intl.string(E.t["cY+Oob"]),
+            cancelText: I.intl.string(I.t["ETE/oC"]),
+            confirmText: I.intl.string(I.t["cY+Oob"]),
             onConfirm: () => {
               j.Z.migratePinPermission(t.id)
             }
@@ -113,13 +113,13 @@ function T(e) {
       })
     }) : (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: E.intl.format(E.t.cAuU1S, {
+      children: I.intl.format(I.t.cAuU1S, {
         breakingChangeDate: n
       })
     });
-  return (0, r.jsx)(f.Z, {
-    look: f.z.WARNING,
-    className: I.migrationInfoBox,
+  return (0, r.jsx)(p.Z, {
+    look: p.z.WARNING,
+    className: S.migrationInfoBox,
     children: l
   })
 }
@@ -134,7 +134,7 @@ function P(e) {
     onEveryoneRoleClick: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(v.Z, {
       role: n,
       onClick: o
     }), (0, r.jsx)(w, {
@@ -142,30 +142,30 @@ function P(e) {
       query: l,
       setQuery: s
     }), (0, r.jsx)(d.Text, {
-      className: I.helpText,
+      className: S.helpText,
       color: "text-default",
       variant: "text-sm/normal",
-      children: E.intl.format(E.t.xkC3Yf, {
-        articleURL: x.Z.getArticleURL(C.BhN.PERMISSIONS_TUTORIAL)
+      children: I.intl.format(I.t.xkC3Yf, {
+        articleURL: x.Z.getArticleURL(y.BhN.PERMISSIONS_TUTORIAL)
       })
     }), (0, r.jsx)("div", {
-      className: I.rolesTable,
+      className: S.rolesTable,
       children: (0, r.jsxs)("div", {
-        className: I.tableHeader,
+        className: S.tableHeader,
         children: [(0, r.jsx)("div", {
-          className: I.dragSpacing
+          className: S.dragSpacing
         }), (0, r.jsx)(d.Text, {
-          className: a()(I.tableTitle, I.roleNameSpacing),
+          className: a()(S.tableTitle, S.roleNameSpacing),
           variant: "text-sm/normal",
-          children: E.intl.format(E.t["38N3Vz"], {
+          children: I.intl.format(I.t["38N3Vz"], {
             numRoles: String(i.length)
           })
         }), (0, r.jsx)(d.Text, {
-          className: a()(I.tableTitle, I.memberSpacing),
+          className: a()(S.tableTitle, S.memberSpacing),
           variant: "text-sm/normal",
-          children: E.intl.string(E.t["9Oq93m"])
+          children: I.intl.string(I.t["9Oq93m"])
         }), (0, r.jsx)("div", {
-          className: I.buttonsSpacing
+          className: S.buttonsSpacing
         })]
       })
     })]
@@ -185,20 +185,20 @@ function w(e) {
     s(true), await g.Z.createRole(t.id), s(false)
   };
   return (0, r.jsx)("div", {
-    className: I.__invalid_rolesList,
+    className: S.__invalid_rolesList,
     children: (0, r.jsxs)("div", {
-      className: I.searchContainer,
+      className: S.searchContainer,
       children: [(0, r.jsx)(d.E1j, {
         query: n,
         onChange: o,
         onClear: c,
-        placeholder: E.intl.string(E.t.Sojqsr),
-        "aria-label": E.intl.string(E.t.Sojqsr)
+        placeholder: I.intl.string(I.t.Sojqsr),
+        "aria-label": I.intl.string(I.t.Sojqsr)
       }), (0, r.jsx)(d.Button, {
         size: "sm",
         onClick: u,
         loading: a,
-        text: E.intl.string(E.t.JZZjQK)
+        text: I.intl.string(I.t.JZZjQK)
       })]
     })
   })

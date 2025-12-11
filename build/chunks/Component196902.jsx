@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 196902, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk921072 = require("./921072.js"),
+  Chunk735703 = require("./735703.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764009 = require("./764009.js");
+  Chunk331867 = require("./331867.js");
 let x = function(e) {
   let {
     className: t,
@@ -26,11 +26,11 @@ let x = function(e) {
     tag: i,
     badge: x,
     primaryColor: j,
-    secondaryColor: _,
-    isDisabled: v = false
-  } = e, O = (0, a.e7)([m.Z], () => m.Z.getProps().originalProfile), C = null != O && O.tag !== i;
+    secondaryColor: v,
+    isDisabled: O = false
+  } = e, C = (0, a.e7)([m.Z], () => m.Z.getProps().originalProfile), y = null != C && C.tag !== i;
 
-  function y(e) {
+  function N(e) {
     g.Z.updateGuildProfile(n, {
       tag: e
     })
@@ -38,15 +38,15 @@ let x = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.gNt, {
-      label: h.intl.string(f.default["tN+8pD"]),
+      label: b.intl.string(p.default["tN+8pD"]),
       children: e => (0, r.jsxs)("div", {
-        className: b.tagContainer,
+        className: h.tagContainer,
         children: [(0, r.jsx)("div", {
-          className: b.tagInputContainer,
+          className: h.tagInputContainer,
           children: (0, r.jsx)(s.Is, {
             id: e.controlId,
-            className: b.tagInputWrapper,
-            inputClassName: l()(b.tagInput, "heading-sm/semibold"),
+            className: h.tagInputWrapper,
+            inputClassName: l()(h.tagInput, "heading-sm/semibold"),
             maxLength: 4,
             autoFocus: true,
             placeholder: "WUMP",
@@ -55,27 +55,27 @@ let x = function(e) {
               width: 40,
               height: 40,
               primaryTintColor: j,
-              secondaryTintColor: _
+              secondaryTintColor: v
             }),
-            disabled: v,
+            disabled: O,
             value: null != i ? i : "",
-            onChange: y
+            onChange: N
           })
         }), (0, r.jsx)("div", {
-          className: b.tagTooltip,
+          className: h.tagTooltip,
           children: (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: h.intl.string(f.default.CrHXHt)
+            children: b.intl.string(p.default.CrHXHt)
           })
         })]
       })
-    }), C && (0, r.jsx)(d.Z, {
-      className: b.tagChangeInfoBox,
+    }), y && (0, r.jsx)(d.Z, {
+      className: h.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: h.intl.format(f.default["4ZKDXq"], {
-          articleUrl: u.Z.getArticleURL(p.BhN.SERVER_TAGS)
+        children: b.intl.format(p.default["4ZKDXq"], {
+          articleUrl: u.Z.getArticleURL(f.BhN.SERVER_TAGS)
         })
       })
     })]

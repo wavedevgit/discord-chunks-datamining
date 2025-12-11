@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 566476, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
   Chunk246946 = require("./246946.js"),
-  Chunk147721 = require("./147721.js");
+  Chunk761382 = require("./761382.js");
 
 function u(e) {
   let {
@@ -22,7 +22,7 @@ function u(e) {
     bot: u,
     verifiedBot: g,
     userTag: m
-  } = e, p = (0, a.e7)([c.Z], () => c.Z.hidePersonalInformation);
+  } = e, f = (0, a.e7)([c.Z], () => c.Z.hidePersonalInformation);
   return (0, r.jsxs)("div", {
     className: l()(d.container, t),
     children: [(0, r.jsx)(s.qEK, {
@@ -41,7 +41,7 @@ function u(e) {
       }), u ? (0, r.jsx)(o.Z, {
         className: d.botTag,
         verified: g
-      }) : null, p ? null : (0, r.jsx)(s.Text, {
+      }) : null, f ? null : (0, r.jsx)(s.Text, {
         tag: "span",
         color: "interactive-text-default",
         className: d.userTag,

@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 711165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => w
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk91192 = require("./91192.jsx"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk240126 = require("./240126.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk909136 = require("./909136.js");
+  Chunk217337 = require("./217337.js");
 let Z = {
   offset: {
     left: 4,
@@ -48,21 +48,21 @@ function T() {
     t = Chunk473749.useMemo(() => Object.values(module).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [module]),
     n = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.loading, []),
     l = Chunk473749.useRef(null),
-    o = (0, Chunk724757.Z)("scheduled-messages", Chunk120356);
+    a = (0, Chunk724757.Z)("scheduled-messages", Chunk120356);
   return require ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
-    className: Chunk909136.loadingPlaceholder
+    className: Chunk217337.loadingPlaceholder
   }) : 0 === exports.length ? (0, Chunk54381.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.T39,
     header: Chunk388032.intl.string(Chunk388032.t.aJQZfZ),
     tip: Chunk388032.intl.string(Chunk388032.t.rCN4pN)
   }) : (0, Chunk54381.jsx)(Chunk91192.bG, {
-    navigator: o,
+    navigator: a,
     children: (0, Chunk54381.jsx)(Chunk91192.SJ, {
       children: e => {
         var n, i, {
-            ref: o
+            ref: a
           } = e,
-          a = function(e, t) {
+          o = function(e, t) {
             if (null == e) return {};
             var n, r, i = function(e, t) {
               if (null == e) return {};
@@ -97,9 +97,9 @@ function T() {
         }({
           ref: e => {
             var t;
-            l.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+            l.current = e, a.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
-        }, a), i = i = {
+        }, o), i = i = {
           children: (0, r.jsx)(A, {
             scheduledMessages: t
           })
@@ -123,12 +123,12 @@ function A(e) {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
     var n, r;
-    let i = j.Z.getChannel(t.scheduledMessage.channelId);
+    let i = C.Z.getChannel(t.scheduledMessage.channelId);
     return null == i || (e[i.id] = {
       channel: i,
       scheduledMessages: [...null != (r = null == (n = e[i.id]) ? true : n.scheduledMessages) ? r : [], t]
     }), e
-  }, {}), [t]), l = (0, d.e7)([b.Z], () => b.Z.getMessagesPendingDeletion(), []);
+  }, {}), [t]), l = (0, d.e7)([m.Z], () => m.Z.getMessagesPendingDeletion(), []);
   return (0, r.jsx)(r.Fragment, {
     children: Object.entries(n).map(e => {
       let [t, {
@@ -137,9 +137,9 @@ function A(e) {
       }] = e;
       return (0, r.jsxs)("div", {
         className: N.channelRow,
-        children: [(0, r.jsx)(E.Z, {
+        children: [(0, r.jsx)(S.Z, {
           channel: n,
-          gotoChannel: () => (0, g.uL)(I.Z5c.CHANNEL(n.getGuildId(), n.id)),
+          gotoChannel: () => (0, g.uL)(_.Z5c.CHANNEL(n.getGuildId(), n.id)),
           children: null
         }), i.map(e => {
           let t = l.has(e.scheduledMessageId);
@@ -158,7 +158,7 @@ let R = Chunk473749.memo(function(e) {
     scheduledMessage: t,
     channel: n,
     isPendingDeletion: l
-  } = e, a = new v.ZP({
+  } = e, o = new j.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
     author: x.default.getUser(t.userId),
@@ -169,46 +169,46 @@ let R = Chunk473749.memo(function(e) {
     stateMessage: d
   } = function(e) {
     switch (e) {
-      case _._.SCHEDULED:
+      case y._.SCHEDULED:
         return {
           isError: false, stateMessage: P.intl.string(P.t.Fn6Odn)
         };
-      case _._.ERROR_CHANNEL_NOT_FOUND:
+      case y._.ERROR_CHANNEL_NOT_FOUND:
         return {
           isError: true, stateMessage: P.intl.string(P.t.v5O2dK)
         };
-      case _._.ERROR_USER_NOT_FOUND:
+      case y._.ERROR_USER_NOT_FOUND:
         return {
           isError: true, stateMessage: P.intl.string(P.t.j8uIfG)
         };
-      case _._.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES:
+      case y._.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES:
         return {
           isError: true, stateMessage: P.intl.string(P.t["w6zHX/"])
         };
-      case _._.ERROR_SEND_FAILED:
+      case y._.ERROR_SEND_FAILED:
         return {
           isError: true, stateMessage: P.intl.string(P.t.pflV7z)
         };
-      case _._.ERROR_SCHEDULED_MESSAGES_DISABLED:
+      case y._.ERROR_SCHEDULED_MESSAGES_DISABLED:
         return {
           isError: true, stateMessage: P.intl.string(P.t.j8uIfG)
         };
       default:
-        (0, C.vE)(e)
+        (0, E.vE)(e)
     }
-  }(t.state), p = i.useCallback(() => {
-    (0, m.gD)(t.scheduledMessageId).then(() => {
-      (0, y.C$)()
+  }(t.state), h = i.useCallback(() => {
+    (0, b.gD)(t.scheduledMessageId).then(() => {
+      (0, O.C$)()
     }).catch(e => {
-      (0, y.wW)(e.message)
+      (0, O.wW)(e.message)
     })
   }, [t.scheduledMessageId]), g = i.useCallback(() => {
-    (0, y.uW)({
+    (0, O.uW)({
       scheduledMessage: t
     })
   }, [t]);
   return (0, r.jsx)("div", {
-    className: o()(N.messageContainer, {
+    className: a()(N.messageContainer, {
       [N.messageSendError]: c,
       [N.messageSendScheduled]: !c
     }),
@@ -222,14 +222,14 @@ let R = Chunk473749.memo(function(e) {
         children: d
       }), (0, r.jsxs)("div", {
         className: N.channelMessageAndButtons,
-        children: [(0, r.jsx)(h.Z, {
-          message: a,
+        children: [(0, r.jsx)(p.Z, {
+          message: o,
           channel: n,
           className: N.message,
-          compact: O.jU.getSetting(),
+          compact: v.jU.getSetting(),
           animateAvatar: false,
           focusProps: Z
-        }, a.id), (0, r.jsxs)(u.hE2, {
+        }, o.id), (0, r.jsxs)(u.hE2, {
           size: "sm",
           children: [(0, r.jsx)(u.hU, {
             icon: f.T39,
@@ -238,12 +238,12 @@ let R = Chunk473749.memo(function(e) {
             "aria-label": P.intl.string(P.t.SBcdAN)
           }), (0, r.jsx)(u.hU, {
             icon: f.k$p,
-            onClick: p,
+            onClick: h,
             "aria-label": P.intl.string(P.t.O3sL8F),
             variant: "icon-only"
           })]
         })]
       })]
     })
-  }, a.id)
+  }, o.id)
 })

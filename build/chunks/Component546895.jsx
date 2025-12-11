@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 546895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -72,7 +72,7 @@ let c = {
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-action.lottiejson": () => require.e("71244").then(require.t.bind(require, 398161, 19)),
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-idle.lottiejson": () => require.e("23847").then(require.t.bind(require, 482293, 19)),
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-loop.lottiejson": () => require.e("93554").then(require.t.bind(require, 732573, 19)),
-  "discord_app/images/burst_reactions/BurstReaction_Anime_v01_Lottie.lottiejson": () => require.e("39690").then(require.t.bind(require, 725432, 19)),
+  "discord_app/images/burst_reactions/BurstReaction_Anime_v01_Lottie.lottiejson": () => require.e("219").then(require.t.bind(require, 725432, 19)),
   "discord_app/images/burst_reactions/BurstReaction_Arcade_v01.lottiejson": () => require.e("54931").then(require.t.bind(require, 488583, 19)),
   "discord_app/images/burst_reactions/BurstReaction_BlackHoles_v01.lottiejson": () => require.e("22523").then(require.t.bind(require, 420183, 19)),
   "discord_app/images/burst_reactions/BurstReaction_BlastOff_v04.lottiejson": () => require.e("59642").then(require.t.bind(require, 759983, 19)),
@@ -127,7 +127,7 @@ let c = {
   "discord_app/modules/guild_onboarding/native/animations/landing.lottiejson": () => require.e("69655").then(require.t.bind(require, 461291, 19)),
   "discord_app/modules/guild_onboarding/web/animations/balloon-dog.lottiejson": () => require.e("845").then(require.t.bind(require, 279876, 19)),
   "discord_app/modules/guild_onboarding/web/animations/bubble-island-02.lottiejson": () => require.e("78683").then(require.t.bind(require, 814684, 19)),
-  "discord_app/modules/guild_onboarding/web/animations/grilling-island-02.lottiejson": () => require.e("8271").then(require.t.bind(require, 180504, 19)),
+  "discord_app/modules/guild_onboarding/web/animations/grilling-island-02.lottiejson": () => require.e("8271").then(require.t.bind(require, 787117, 19)),
   "discord_app/modules/guild_onboarding/web/animations/main-island-02.lottiejson": () => require.e("15851").then(require.t.bind(require, 790711, 19)),
   "discord_app/modules/guild_onboarding/web/animations/waffle-island-02.lottiejson": () => require.e("51453").then(require.t.bind(require, 535170, 19)),
   "discord_app/modules/poggermode/images/enable_animation.lottiejson": () => require.e("68170").then(require.t.bind(require, 205663, 19)),

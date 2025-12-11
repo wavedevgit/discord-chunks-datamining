@@ -2,14 +2,14 @@
 /** chunk id: 126026, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => i
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js");
-let i = e => {
+let a = e => {
   let {
     analyticsLocations: t,
-    onCloseCallback: i
+    onCloseCallback: a
   } = e;
   (0, l.ZDy)(async () => {
     let {
@@ -36,6 +36,6 @@ let i = e => {
       analyticsLocations: t
     }, n))
   }, {
-    onCloseCallback: i
+    onCloseCallback: a
   })
 }

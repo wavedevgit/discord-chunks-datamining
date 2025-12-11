@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 353398, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Q5: () => T,
-  Sf: () => S,
+  Sf: () => _,
   ZP: () => w
 }), require("./781311.js"), require("./953529.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
@@ -26,10 +26,10 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk86477 = require("./86477.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk865062 = require("./865062.js"),
+  Chunk478411 = require("./478411.js");
 
-function E(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class I extends(r = Chunk442837.ZP.Store) {
+class S extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk999382.Z, Chunk409059.Z)
   }
@@ -52,36 +52,36 @@ class I extends(r = Chunk442837.ZP.Store) {
     return null != module && null != this.name && (this.name.trim() !== module.name || this.description.trim() !== module.description)
   }
   constructor(...e) {
-    super(...e), E(this, "name", ""), E(this, "description", ""), E(this, "error", null), E(this, "reset", () => {
+    super(...e), I(this, "name", ""), I(this, "description", ""), I(this, "error", null), I(this, "reset", () => {
       let e = this.getTemplate();
       if (null != e) {
         var t, n;
         this.name = null != (t = e.name) ? t : this.name, this.description = null != (n = e.description) ? n : this.description
       } else this.name = "", this.description = "";
       this.emitChange()
-    }), E(this, "setName", e => {
+    }), I(this, "setName", e => {
       this.name = e, this.emitChange()
-    }), E(this, "setDescription", e => {
+    }), I(this, "setDescription", e => {
       this.description = e, this.emitChange()
-    }), E(this, "setError", e => {
+    }), I(this, "setError", e => {
       this.error = e, this.emitChange()
-    }), E(this, "save", async () => {
-      await x.Z.updateGuildTemplate(v.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
+    }), I(this, "save", async () => {
+      await x.Z.updateGuildTemplate(O.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
-E(I, "displayName", "GuildSettingsTemplateMetadataStore_");
-let S = new I(Chunk570140.Z);
+I(S, "displayName", "GuildSettingsTemplateMetadataStore_");
+let _ = new S(Chunk570140.Z);
 
 function T() {
   let [e, t] = Chunk473749.useState(false), n = async () => {
-    exports(true), await S.save(), exports(false)
+    exports(true), await _.save(), exports(false)
   };
   return (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: module,
-    onReset: S.reset,
+    onReset: _.reset,
     onSave: require,
-    disabled: !P(S.name)
+    disabled: !P(_.name)
   })
 }
 
@@ -91,18 +91,18 @@ function P(e) {
 
 function w() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk197571.marginBottom4,
+    className: Chunk478411.marginBottom4,
     children: (0, Chunk54381.jsxs)(Chunk481060.y5t, {
       component: (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.KUw7Ss)
       }),
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk197571.marginBottom20,
+        className: Chunk478411.marginBottom20,
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.c0m8bK, {})
       }), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk86477.divider
+        className: Chunk865062.divider
       }), (0, Chunk54381.jsx)(Z, {})]
     })
   })
@@ -113,7 +113,7 @@ function Z() {
     guild: e
   } = Chunk999382.Z.getProps();
   c()(null != module, "guild cannot be null");
-  let t = (0, Chunk442837.e7)([S], () => S.error),
+  let t = (0, Chunk442837.e7)([_], () => _.error),
     [n, r] = Chunk473749.useState(true),
     {
       loading: a,
@@ -126,7 +126,7 @@ function Z() {
           try {
             await x.Z.loadTemplatesForGuild(e), n(false)
           } catch (e) {
-            S.setError(new b.Hx(e))
+            _.setError(new h.Hx(e))
           }
         }()
       }, [e]), {
@@ -138,18 +138,18 @@ function Z() {
       if (require && !Chunk120356) {
         if (null != s) {
           var e, t;
-          S.setName(null != (e = s.name) ? module : ""), S.setDescription(null != (t = s.description) ? exports : "")
+          _.setName(null != (e = s.name) ? module : ""), _.setDescription(null != (t = s.description) ? exports : "")
         }
         r(false)
       }
     }, [require, s, Chunk120356]), Chunk473749.useEffect(() => () => {
-      S.reset(), S.setError(null)
+      _.reset(), _.setError(null)
     }, []), require) return null != exports ? (0, Chunk54381.jsx)(Chunk481060.Text, {
     color: "text-feedback-critical",
     variant: "text-sm/normal",
     children: exports.message
   }) : (0, Chunk54381.jsx)(Chunk481060.$jN, {
-    className: Chunk197571.marginTop40
+    className: Chunk478411.marginTop40
   });
   let o = null != exports && null == exports.getFirstFieldErrorMessage("name") && null == exports.getFirstFieldErrorMessage("description");
   return (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -158,7 +158,7 @@ function Z() {
       guild: module,
       guildTemplate: s
     }), Chunk512722 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk197571.marginTop8,
+      className: Chunk478411.marginTop8,
       color: "text-feedback-critical",
       variant: "text-sm/normal",
       children: exports.getAnyErrorMessage()
@@ -168,63 +168,63 @@ function Z() {
 
 function R() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk86477.descriptionBox,
+    className: Chunk865062.descriptionBox,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk86477.descriptionSection,
+      className: Chunk865062.descriptionSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["f8u+VO"])
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk865062.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.K2tn16)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk865062.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.om5gNq)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk865062.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t["/VNqdD"])]
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk86477.descriptionSection,
+      className: Chunk865062.descriptionSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "eyebrow",
         children: Chunk388032.intl.string(Chunk388032.t["8zhJEr"])
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk865062.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.k$p, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.WOKI6t)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk865062.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.k$p, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t.ddhDJH)]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk86477.descriptionRow,
+        className: Chunk865062.descriptionRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.k$p, {
           size: "md",
-          className: Chunk86477.descriptionIcon,
+          className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
         }), Chunk388032.intl.string(Chunk388032.t["6Q/DHk"])]
@@ -238,25 +238,25 @@ function D(e) {
     cancel: t,
     confirm: n
   } = e;
-  return (0, i.jsx)(p.SR, {
+  return (0, i.jsx)(f.SR, {
     dismissable: true,
-    header: C.intl.string(C.t["cN/RFD"]),
-    confirmText: C.intl.string(C.t["cN/RFD"]),
-    cancelText: C.intl.string(C.t["ETE/oC"]),
+    header: y.intl.string(y.t["cN/RFD"]),
+    confirmText: y.intl.string(y.t["cN/RFD"]),
+    cancelText: y.intl.string(y.t["ETE/oC"]),
     onCancel: t,
     onConfirm: n,
-    children: (0, i.jsx)(p.Text, {
+    children: (0, i.jsx)(f.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: C.intl.string(C.t["apCQv/"])
+      children: y.intl.string(y.t["apCQv/"])
     })
   })
 }
 
 function A() {
-  let e = (0, Chunk442837.e7)([S], () => S.name),
-    t = (0, Chunk442837.e7)([S], () => S.description),
-    n = (0, Chunk442837.e7)([S], () => S.error),
+  let e = (0, Chunk442837.e7)([_], () => _.name),
+    t = (0, Chunk442837.e7)([_], () => _.description),
+    n = (0, Chunk442837.e7)([_], () => _.error),
     [r, a] = Chunk473749.useState(false),
     s = Chunk473749.useCallback(() => {
       Chunk120356(false)
@@ -273,7 +273,7 @@ function A() {
       required: true,
       error: null != c ? c : null == require ? true : require.getFirstFieldErrorMessage("name"),
       value: module,
-      onChange: e => S.setName(e),
+      onChange: e => _.setName(e),
       placeholder: Chunk388032.intl.string(Chunk388032.t.bMlpvk),
       maxLength: 100,
       onBlur: s,
@@ -283,7 +283,7 @@ function A() {
       label: Chunk388032.intl.string(Chunk388032.t.GxirWa),
       error: null == require ? true : require.getFirstFieldErrorMessage("description"),
       value: exports,
-      onChange: e => S.setDescription(e),
+      onChange: e => _.setDescription(e),
       placeholder: Chunk388032.intl.string(Chunk388032.t.n1FBXh),
       maxLength: 120
     })]
@@ -298,25 +298,25 @@ function L(e) {
   return null == n ? (0, i.jsx)(k, {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(p.gNt, {
-      label: C.intl.string(C.t.zGGcLw),
-      children: (0, i.jsx)(h.Z, {
+    children: [(0, i.jsx)(f.gNt, {
+      label: y.intl.string(y.t.zGGcLw),
+      children: (0, i.jsx)(b.Z, {
         buttonLook: m.zx.Looks.FILLED,
         buttonColor: m.zx.Colors.BRAND,
-        value: (0, _.Z)(n.code)
+        value: (0, v.Z)(n.code)
       })
-    }), n.isDirty && (0, i.jsx)(p.Text, {
+    }), n.isDirty && (0, i.jsx)(f.Text, {
       color: "text-feedback-warning",
-      className: N.marginTop8,
+      className: E.marginTop8,
       variant: "text-sm/normal",
-      children: C.intl.string(C.t.aWsjtD)
+      children: y.intl.string(y.t.aWsjtD)
     }), (0, i.jsxs)("div", {
-      className: s()(N.marginTop20, y.buttonContainer),
+      className: s()(E.marginTop20, N.buttonContainer),
       children: [n.isDirty && (0, i.jsx)(G, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
-        className: y.rightButtonContainer,
+        className: N.rightButtonContainer,
         children: [(0, i.jsx)(M, {
           guild: t,
           guildTemplate: n
@@ -325,8 +325,8 @@ function L(e) {
         })]
       })]
     }), n.isDirty && (0, i.jsx)("div", {
-      className: y.lastSync,
-      children: C.intl.format(C.t.v0AVum, {
+      className: N.lastSync,
+      children: y.intl.format(y.t.v0AVum, {
         timestamp: new Date(n.updatedAt)
       })
     })]
@@ -336,18 +336,18 @@ function L(e) {
 function k(e) {
   let {
     guild: t
-  } = e, n = (0, d.e7)([S], () => S.name), [r, a] = l.useState(false), s = async () => {
-    S.setError(null), a(true);
+  } = e, n = (0, d.e7)([_], () => _.name), [r, a] = l.useState(false), s = async () => {
+    _.setError(null), a(true);
     try {
-      await x.Z.createGuildTemplate(t.id, S.name, S.description)
+      await x.Z.createGuildTemplate(t.id, _.name, _.description)
     } catch (e) {
-      S.setError(new b.Hx(e))
+      _.setError(new h.Hx(e))
     }
     a(false)
   };
-  return (0, i.jsx)(p.Button, {
+  return (0, i.jsx)(f.Button, {
     variant: "primary",
-    text: C.intl.string(C.t.Wxdi8A),
+    text: y.intl.string(y.t.Wxdi8A),
     loading: r,
     disabled: !P(n),
     onClick: s
@@ -359,20 +359,20 @@ function G(e) {
     guild: t,
     guildTemplate: n
   } = e, [r, a] = l.useState(false), s = async () => {
-    S.setError(null), a(true);
+    _.setError(null), a(true);
     try {
       await x.Z.syncGuildTemplate(t.id, n.code)
     } catch (e) {
-      S.setError(new b.Hx(e))
+      _.setError(new h.Hx(e))
     }
     a(false)
   };
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
-    className: y.button,
-    children: (0, i.jsx)(p.Button, {
+    className: N.button,
+    children: (0, i.jsx)(f.Button, {
       variant: "primary",
-      text: C.intl.string(C.t["Nw+0Y/"]),
+      text: y.intl.string(y.t["Nw+0Y/"]),
       loading: r,
       onClick: s
     })
@@ -384,21 +384,21 @@ function M(e) {
     guild: t,
     guildTemplate: n
   } = e, [r, a] = l.useState(false), s = async () => {
-    S.setError(null);
+    _.setError(null);
     try {
-      await x.Z.deleteGuildTemplate(t.id, n.code), S.setName(""), S.setDescription("")
+      await x.Z.deleteGuildTemplate(t.id, n.code), _.setName(""), _.setDescription("")
     } catch (e) {
-      S.setError(new b.Hx(e))
+      _.setError(new h.Hx(e))
     }
     a(false)
   };
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: y.button,
-      children: (0, i.jsx)(p.Button, {
+      className: N.button,
+      children: (0, i.jsx)(f.Button, {
         variant: "critical-secondary",
-        text: C.intl.string(C.t["cN/RFD"]),
+        text: y.intl.string(y.t["cN/RFD"]),
         onClick: () => a(true)
       })
     }), r ? (0, i.jsx)(D, {
@@ -414,14 +414,14 @@ function U(e) {
   } = e;
   return (0, i.jsx)("div", {
     "data-button-hoisted-classname-wrapper": true,
-    className: y.button,
-    children: (0, i.jsx)(p.Button, {
+    className: N.button,
+    children: (0, i.jsx)(f.Button, {
       variant: "secondary",
-      text: C.intl.string(C.t.YI3iV6),
-      onClick: () => (0, p.ZDy)(async () => {
+      text: y.intl.string(y.t.YI3iV6),
+      onClick: () => (0, f.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
+        } = await Promise.all([n.e("10778"), n.e("93099")]).then(n.bind(n, 766775));
         return n => {
           var r, l;
           return (0, i.jsx)(e, (r = function(e) {
@@ -431,7 +431,7 @@ function U(e) {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                E(e, t, n[t])
+                I(e, t, n[t])
               })
             }
             return e

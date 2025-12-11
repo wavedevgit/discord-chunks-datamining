@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 57304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -50,27 +50,27 @@ function m(e, t) {
 let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, o.$5)(t), [b, _] = i.useState(false), y = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, c.Aq)(), j = i.useRef(null), x = i.useCallback(() => {
-    n || _(e => !e)
+  } = e, n = (0, o.$5)(t), [b, y] = i.useState(false), O = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, c.Aq)(), x = i.useRef(null), v = i.useCallback(() => {
+    n || y(e => !e)
   }, [n]);
 
-  function v(e) {
-    (null == e ? true : e.shiftKey) || O.dispatch(h.CkL.POPOUT_CLOSE)
+  function C(e) {
+    (null == e ? true : e.shiftKey) || j.dispatch(h.CkL.POPOUT_CLOSE)
   }
-  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, x), () => {
-    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, x)
-  }), [x]), (0, r.jsx)(a.yRy, {
-    targetElementRef: j,
+  return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, v), () => {
+    u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, v)
+  }), [v]), (0, r.jsx)(a.yRy, {
+    targetElementRef: x,
     shouldShow: b,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
     ignoreModalClicks: true,
-    onRequestClose: () => _(false),
+    onRequestClose: () => y(false),
     renderPopout: function(e) {
       return (0, r.jsx)(s.Z, m(g({}, e), {
-        onJump: v,
+        onJump: C,
         channel: t
       }))
     },
@@ -80,14 +80,14 @@ let b = function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(p.JO, m(g({}, e), {
-        ref: j,
-        onClick: x,
+        ref: x,
+        onClick: v,
         tooltip: i ? null : f.intl.string(f.t["mp1N/2"]),
         icon: a.qQX,
         iconSize: 20,
         "aria-label": f.intl.string(f.t["mp1N/2"]),
         disabled: n,
-        showBadge: y,
+        showBadge: O,
         selected: i
       }))
     }

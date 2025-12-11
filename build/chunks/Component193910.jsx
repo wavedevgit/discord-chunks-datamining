@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk489887 = require("./489887.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk749723 = require("./749723.js");
+  Chunk688169 = require("./688169.js");
 let M = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function R() {
@@ -64,7 +64,7 @@ function L(e) {
     channel: t,
     chatInputType: g,
     options: b,
-    onFileUpload: O,
+    onFileUpload: x,
     onClose: L,
     onSelect: D,
     draftType: k,
@@ -79,11 +79,11 @@ function L(e) {
   }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
   function W() {
-    (0, _.R6)(t, true, "Plus Button")
+    (0, O.R6)(t, true, "Plus Button")
   }
 
   function q() {
-    x.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), V("/", (0, P.JM)("/"))
+    E.default.track(Z.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), V("/", (0, P.JM)("/"))
   }
 
   function K() {
@@ -135,11 +135,11 @@ function L(e) {
   }
 
   function X() {
-    x.default.track(Z.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+    E.default.track(Z.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
-    }), (0, f.Z)({
+    }), (0, h.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -158,14 +158,14 @@ function L(e) {
       n = "txt",
       i = "",
       r = U.match(M);
-    null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, S.d)([(0, j.dp)(new Blob([e], {
+    null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, _.d)([(0, S.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, k), E.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && E.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, k), j.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && j.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: i
     })
   }
   return r.useEffect(() => {
-    x.default.track(Z.rMx.OPEN_POPOUT, {
+    E.default.track(Z.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
@@ -197,7 +197,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "upload-file",
             label: r,
-            action: O
+            action: x
           }, "upload-file");
         case I.r.UPLOAD_TEXT_AS_FILE:
           if ("" === U) return null;
@@ -276,7 +276,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "APP_LAUNCHER",
             label: r,
-            action: () => (0, p._)(h._b.TEXT, g, true, t.id)
+            action: () => (0, p._)(f._b.TEXT, g, true, t.id)
           }, "APP_LAUNCHER");
         case I.r.ACTIVITY:
           return (0, i.jsx)(s.sNh, {

@@ -1,32 +1,32 @@
-/** Chunk was on 26196 **/
+/** Chunk was on 58973 **/
 /** chunk id: 526689, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => c
+  d: () => i
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk757853 = require("./757853.jsx"),
   Chunk72214 = require("./72214.js"),
   Chunk135102 = require("./135102.js"),
-  Chunk727350 = require("./727350.js");
-let c = () => {
+  Chunk409805 = require("./409805.js");
+let i = () => {
   let {
     selectedDestinations: e,
     maxDestinations: t,
     searchText: n,
-    message: c,
+    message: i,
     channel: u,
     updateSelectShareDestinations: d
   } = (0, Chunk135102.C$)(), {
-    results: f,
-    updateSearchText: b
+    results: b,
+    updateSearchText: f
   } = (0, Chunk72214.s)({
     selectedDestinations: module,
     includeMissingDMs: true
   });
   (0, Chunk473749.useEffect)(() => {
-    b(require)
-  }, [b, require]);
+    f(require)
+  }, [f, require]);
   let p = (0, Chunk473749.useCallback)(t => {
       let n = e.findIndex(e => {
         let {
@@ -46,12 +46,12 @@ let c = () => {
   return (0, Chunk54381.jsx)(Chunk757853.F, {
     paddingBottom: 16,
     paddingTop: 16,
-    rowData: f,
-    message: c,
+    rowData: b,
+    message: i,
     originChannel: u,
     handleToggleDestination: p,
     selectedDestinations: module,
     disableSelection: g,
-    rowClassName: Chunk727350.rowContainer
+    rowClassName: Chunk409805.rowContainer
   })
 }

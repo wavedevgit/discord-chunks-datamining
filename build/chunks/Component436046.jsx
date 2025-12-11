@@ -1,4 +1,4 @@
-/** Chunk was on 91848 **/
+/** Chunk was on 24028 **/
 /** chunk id: 436046, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -18,22 +18,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk181576 = require("./181576.js");
+  Chunk520698 = require("./520698.js");
 
 function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), y = o.useRef(null);
+  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([b.default], () => b.default.getCurrentUser()), y = o.useRef(null);
   async function O(e) {
     e.preventDefault(), l()(null != s, "Cannot submit null birthday."), C(true);
     try {
-      await d.Av(s, h.L0.NEW_USER_FLOW), t()
+      await u.Av(s, _.L0.NEW_USER_FLOW), t()
     } catch (e) {
-      if (null != e.body && null != e.body.date_of_birth) d.wE(h.L0.NEW_USER_FLOW), d.hp(h.L0.NEW_USER_FLOW), n();
+      if (null != e.body && null != e.body.date_of_birth) u.wE(_.L0.NEW_USER_FLOW), u.hp(_.L0.NEW_USER_FLOW), n();
       else {
         var a;
-        (null == e || null == (a = e.body) ? true : a.username) != null ? A(b.intl.string(b.t["TGg/2k"])) : A(null == e ? true : e.body.message)
+        (null == e || null == (a = e.body) ? true : a.username) != null ? A(h.intl.string(h.t["TGg/2k"])) : A(null == e ? true : e.body.message)
       }
     }
     C(false)
@@ -51,30 +51,30 @@ function N(e) {
   return null == j ? null : (0, a.jsxs)("form", {
     className: E.content,
     onSubmit: O,
-    children: [(0, a.jsx)(u.gw7, {
+    children: [(0, a.jsx)(d.gw7, {
       size: "custom",
       width: 56,
       height: 40,
       className: E.logo,
       color: r.Z.unsafe_rawColors.BRAND_500.css
-    }), (0, a.jsx)(u.Heading, {
+    }), (0, a.jsx)(d.Heading, {
       className: E.title,
       variant: "heading-xl/semibold",
-      children: b.intl.string(b.t.n7i7sv)
-    }), (0, a.jsx)(u.Text, {
+      children: h.intl.string(h.t.n7i7sv)
+    }), (0, a.jsx)(d.Text, {
       color: "text-default",
       className: E.description,
       variant: "text-md/normal",
-      children: b.intl.format(b.t.fa8kW1, {
-        helpURL: f.Z.getArticleURL(m.BhN.AGE_GATE)
+      children: h.intl.format(h.t.fa8kW1, {
+        helpURL: p.Z.getArticleURL(m.BhN.AGE_GATE)
       })
-    }), (0, a.jsx)(u.ze6, {
+    }), (0, a.jsx)(d.ze6, {
       theme: m.BRd.LIGHT,
-      children: (0, a.jsx)(_.Z, {
+      children: (0, a.jsx)(f.Z, {
         required: true,
         autoFocus: true,
         wrapperClassName: E.formItem,
-        label: b.intl.string(b.t.rhBeKe),
+        label: h.intl.string(h.t.rhBeKe),
         name: "birthday",
         onChange: v,
         onPopulated: I,
@@ -92,7 +92,7 @@ function N(e) {
           submitting: T,
           disabled: null == s,
           fullWidth: true,
-          children: b.intl.string(b.t.PDTjLN)
+          children: h.intl.string(h.t.PDTjLN)
         })
       })
     })]

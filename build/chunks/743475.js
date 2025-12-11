@@ -1,10 +1,10 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 743475, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  BG: () => f,
-  DO: () => b,
-  pt: () => h
+  BG: () => p,
+  DO: () => h,
+  pt: () => b
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -19,27 +19,27 @@ var Chunk570140 = require("./570140.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f() {
+function p() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }
 
-function h(e) {
+function b(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
   })
 }
-async function b(e) {
+async function h(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = g.Z.advancedMode,
-    [f, h] = (0, s.d9)(e.id, [...t]),
-    b = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
+    [p, b] = (0, s.d9)(e.id, [...t]),
+    h = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
     x = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (h.length < m.md || f.length < m.X) || n && (b.length < m.md || x.length < m.X))) return void i.Z.show({
-    title: p.intl.string(p.t.iLdiqY),
-    body: p.intl.string(p.t.JOT74c)
+  if (a.Z.getEnabled(e.id) && (!n && (b.length < m.md || p.length < m.X) || n && (h.length < m.md || x.length < m.X))) return void i.Z.show({
+    title: f.intl.string(f.t.iLdiqY),
+    body: f.intl.string(f.t.JOT74c)
   });
   if (d.Z.hasChanges()) {
     r.Z.dispatch({
@@ -60,7 +60,7 @@ async function b(e) {
         error: t
       } = null != (j = new l.Hx(n).getAnyErrorMessageAndField()) ? j : {};
       i.Z.show({
-        title: p.intl.string(p.t.iLdiqY),
+        title: f.intl.string(f.t.iLdiqY),
         body: [e, t].filter(c.lm).join(": ")
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"

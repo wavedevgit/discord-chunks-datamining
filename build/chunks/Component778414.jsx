@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => W,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk830202 = require("./830202.js");
+  Chunk3083 = require("./3083.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,13 +63,13 @@ function L(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,7 +78,7 @@ function M(e) {
   var {
     widget: t
   } = e, n = L(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(I.Z, G({
+  return t instanceof h.q ? (0, r.jsx)(w.Z, G({
     widget: t
   }, n)) : t instanceof y.zy ? (0, r.jsx)(C.Z, G({
     widget: t
@@ -87,7 +87,7 @@ function M(e) {
 
 function B() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk830202.ukTeenDisclaimer,
+    className: Chunk3083.ukTeenDisclaimer,
     children: [(0, Chunk54381.jsx)(Chunk481060.d3s, {
       size: "xs"
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -106,20 +106,20 @@ function F(e) {
     application: n
   } = (0, j.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), l = (0, _.Z)(t.id), a = (0, v.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, v.k)({
     location: "ApplicationWidgetUpsell"
-  }), o = l.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
-  return null == n || !a || null == i || o ? null : (0, r.jsx)(f.ZP, {
-    contentTypes: [s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
+  }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
+  return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
+    contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
       let {
         visibleContent: i,
-        markAsDismissed: l
+        markAsDismissed: a
       } = e;
-      return i === s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(w.Z, {
+      return i === c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(S.Z, {
         user: t,
         application: n,
-        onDismiss: l
+        onDismiss: a
       }) : null
     }
   })
@@ -129,40 +129,40 @@ function U(e) {
   let {
     user: t,
     guildId: n,
-    channelId: l
-  } = e, a = (0, _.Z)(t.id), s = (0, o.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
-    let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, g.U)();
+    channelId: a
+  } = e, l = (0, I.Z)(t.id), c = (0, o.e7)([b.default], () => b.default.getId() === t.id), s = (() => {
+    let [e, t] = (0, o.Wu)([m.Z], () => [m.Z.ipCountryCode, m.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, v.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === a.length && s, j = i.useMemo(() => a.filter(y.Wc), [a]), x = i.useMemo(() => a.filter(e => e instanceof h.q), [a]);
-  (0, O.J)(s, j);
-  var I = t.id;
+  }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  (0, O.J)(c, j);
+  var w = t.id;
   (0, P.s)(x);
   let {
-    data: w,
+    data: S,
     refetch: T
-  } = (0, p.O)(I), C = i.useRef(w);
-  C.current = w, i.useEffect(() => {
+  } = (0, p.O)(w), C = i.useRef(S);
+  C.current = S, i.useEffect(() => {
     null !== C.current && T()
   }, [T]);
   let k = () => (0, r.jsxs)(r.Fragment, {
-    children: [s && c && (0, r.jsx)(B, {}), s && (0, r.jsx)(F, {
+    children: [c && s && (0, r.jsx)(B, {}), c && (0, r.jsx)(F, {
       user: t
-    }), a.map((e, i) => (0, r.jsx)(M, {
+    }), l.map((e, i) => (0, r.jsx)(M, {
       widget: e,
       user: t,
       guildId: n,
-      channelId: l,
+      channelId: a,
       index: i
-    }, e instanceof h.q ? "".concat(e.type, "-").concat(e.applicationId) : "".concat(e.type))), s && (0, r.jsx)(S.Z, {})]
+    }, e instanceof h.q ? "".concat(e.type, "-").concat(e.applicationId) : "".concat(e.type))), c && (0, r.jsx)(E.Z, {})]
   });
   if (f)
     if (d) return (0, r.jsx)(D.Z, {});
     else return (0, r.jsx)(A.Z, {});
-  return s ? (0, r.jsx)(E.K, {
+  return c ? (0, r.jsx)(_.K, {
     children: k()
   }) : k()
 }
@@ -171,20 +171,20 @@ function W(e) {
   var {
     user: t
   } = e, n = L(e, ["user"]);
-  let l = i.useRef(null);
+  let a = i.useRef(null);
   (0, x.r)({
-    containerRef: l
+    containerRef: a
   });
   let o = (0, k.h)(t.id);
   return (0, r.jsxs)(N.F, {
     "data-scroller": true,
-    scrollerRef: l,
-    className: a()(R.scroller, {
+    scrollerRef: a,
+    className: l()(R.scroller, {
       [R.hasToolbar]: o
     }),
     fade: true,
     children: [(0, r.jsx)(T.Z, {
-      scrollerRef: l
+      scrollerRef: a
     }), (0, r.jsx)(U, G({
       user: t
     }, n))]

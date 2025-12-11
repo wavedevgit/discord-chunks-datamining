@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 438306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -15,8 +15,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk967128 = require("./967128.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk734335 = require("./734335.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk312794 = require("./312794.js"),
+  Chunk960324 = require("./960324.js");
 
 function g(e) {
   let {
@@ -27,23 +27,23 @@ function g(e) {
     children: [(0, i.jsx)(d.Kq, {
       channelType: t.type
     }), (0, i.jsx)(d.Ot, {
-      children: h.intl.format(h.t.I3R7Vn, {
+      children: f.intl.format(f.t.I3R7Vn, {
         channelName: n
       })
     }), (0, i.jsx)(d.jz, {
       className: m.markup,
-      children: h.intl.format(h.t.pYMVRT, {
+      children: f.intl.format(f.t.pYMVRT, {
         channelName: n,
         topicHook: () => s.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
     }), g ? (0, i.jsx)("div", {
-      className: f.buttonContainer,
+      className: h.buttonContainer,
       children: (0, i.jsx)(l.Button, {
         size: "sm",
         variant: "secondary",
-        text: h.intl.string(h.t["3gUsJb"]),
+        text: f.intl.string(f.t["3gUsJb"]),
         onClick: () => {
           a.ZP.open(t.id)
         },

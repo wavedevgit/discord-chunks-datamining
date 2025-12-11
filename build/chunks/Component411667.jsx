@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 411667, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk346163 = require("./346163.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk515444 = require("./515444.js");
+  Chunk652138 = require("./652138.js");
 
 function c(e) {
   let t, {
@@ -21,10 +21,10 @@ function c(e) {
       createEnableRequest: u,
       resubmittedRequest: g,
       requestRejectedNoticeText: m,
-      reapplyNoticeText: p
+      reapplyNoticeText: f
     } = (0, l.Z)(n),
-    f = n.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED),
-    h = n.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    p = n.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED),
+    b = n.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != d) return (0, r.jsx)("div", {
     className: o.noticeContainer,
     children: (0, r.jsx)(i.M14, {
@@ -32,8 +32,8 @@ function c(e) {
       children: d.getAnyErrorMessage()
     })
   });
-  let b = null;
-  return null != m ? b = m : g ? b = s.intl.string(s.t.MyJpJT) : null != p ? (b = p, t = s.intl.string(s.t["YKw/NQ"])) : h ? b = s.intl.string(s.t.e2g9sW) : f && (b = s.intl.string(s.t.rxI9sl)), null != b ? (0, r.jsx)("div", {
+  let h = null;
+  return null != m ? h = m : g ? h = s.intl.string(s.t.MyJpJT) : null != f ? (h = f, t = s.intl.string(s.t["YKw/NQ"])) : b ? h = s.intl.string(s.t.e2g9sW) : p && (h = s.intl.string(s.t.rxI9sl)), null != h ? (0, r.jsx)("div", {
     className: o.noticeContainer,
     children: (0, r.jsx)(i.Wn, {
       messageType: i.QYI.WARNING,
@@ -43,7 +43,7 @@ function c(e) {
         onClick: u,
         loading: c
       }),
-      children: b
+      children: h
     })
   }) : null
 }

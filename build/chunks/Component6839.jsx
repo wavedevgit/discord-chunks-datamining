@@ -47,8 +47,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk995774 = require("./995774.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk302854 = require("./302854.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk87611 = require("./87611.js"),
+  Chunk478411 = require("./478411.js");
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -328,13 +328,13 @@ class es extends Chunk473749.PureComponent {
       reactionType: a
     } = this.props, o = [];
     return 0 === exports.length && this.state.loadingMore ? o.push(1) : (o.push(exports.length), module && o.push(1)), (0, Chunk54381.jsxs)("div", {
-      className: Chunk302854.reactorsContainer,
+      className: Chunk87611.reactorsContainer,
       children: [Chunk120356 === Chunk566006.O.BURST && (0, Chunk54381.jsx)(ei, {
         emoji: require.emoji,
         channelId: Chunk473749.getChannelId(),
         messageId: Chunk473749.id
       }), (0, Chunk54381.jsx)(Chunk481060._2F, {
-        className: Chunk302854.reactors,
+        className: Chunk87611.reactors,
         fade: true,
         ref: this.scrollerRef,
         sections: o,

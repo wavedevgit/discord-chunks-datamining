@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624968 = require("./624968.jsx"),
   Chunk261538 = require("./261538.jsx"),
-  Chunk152928 = require("./152928.js");
+  Chunk222065 = require("./222065.js");
 let d = [{
     label: "xxs",
     value: "xxs"

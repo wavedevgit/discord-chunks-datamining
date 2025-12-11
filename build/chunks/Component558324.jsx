@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 558324, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,10 +17,10 @@ let o = e => {
       onRemoveTag: u,
       onAddTag: g,
       onAddTagError: m,
-      maxTaxLength: p,
-      maxTags: f,
-      disabled: h,
-      placeholder: b
+      maxTaxLength: f,
+      maxTags: p,
+      disabled: b,
+      placeholder: h
     } = e,
     x = function(e, t) {
       if (null == e) return {};
@@ -37,16 +37,16 @@ let o = e => {
       }
       return i
     }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [j, _] = i.useState(null != d ? d : ""), v = i.useCallback(() => {
+  let [j, v] = i.useState(null != d ? d : ""), O = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
-      if (null != f && o.length >= f) {
+      if (null != p && o.length >= p) {
         null == m || m(s.intl.string(s.t.Xx7XeB));
         return
       }
-      g(e), _("")
+      g(e), v("")
     }
-  }, [j, f, g, m, o.length]), O = i.useCallback(e => {
+  }, [j, p, g, m, o.length]), C = i.useCallback(e => {
     switch (e.key) {
       case a.vn.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
@@ -54,9 +54,9 @@ let o = e => {
       case a.vn.ENTER:
       case a.vn.TAB:
       case a.vn.COMMA:
-        e.preventDefault(), e.stopPropagation(), v()
+        e.preventDefault(), e.stopPropagation(), O()
     }
-  }, [v, j.length, u, o]);
+  }, [O, j.length, u, o]);
   return (0, r.jsx)(l.oil, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -83,12 +83,12 @@ let o = e => {
     }
   }, x), n = n = {
     value: j,
-    onKeyDown: O,
-    onChange: _,
-    maxLength: p,
-    disabled: h,
-    onBlur: v,
-    placeholder: b
+    onKeyDown: C,
+    onChange: v,
+    maxLength: f,
+    disabled: b,
+    onBlur: O,
+    placeholder: h
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

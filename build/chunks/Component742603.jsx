@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -39,14 +39,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk39219 = require("./39219.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk303962 = require("./303962.js"),
+  Chunk960324 = require("./960324.js");
 
 function V(e) {
   let {
     focusedParticipant: t,
     channel: n
-  } = e, r = (0, O.bp)(), l = (0, a.e7)([I.Z], () => I.Z.getLayout(n.id, r));
+  } = e, r = (0, x.bp)(), l = (0, a.e7)([I.Z], () => I.Z.getLayout(n.id, r));
   return (0, i.jsx)(P.Z, {
     children: (0, i.jsx)(A.Z, {
       participant: t,
@@ -64,7 +64,7 @@ function F(e) {
     channel: n,
     stream: r,
     color: l
-  } = e, a = (0, S.Z)(n, t, r);
+  } = e, a = (0, _.Z)(n, t, r);
   return null == t || null == r ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
       className: k.avatar,
@@ -145,7 +145,7 @@ function H(e) {
   } = (0, a.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), C = (0, h.ZP)(t), O = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = D.intl.string(D.t.BVZqJl);
+  }), [t.id]), C = (0, f.ZP)(t), x = (0, h.KS)(t), [_] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = D.intl.string(D.t.BVZqJl);
   t.isDM() ? P = D.intl.string(D.t.jN2DfZ) : t.isGroupDM() && (P = D.intl.string(D.t["e5y+gm"]));
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
@@ -194,7 +194,7 @@ function H(e) {
           className: l()(k.channelStatus, U.markup, {
             [k.hoverable]: R
           }),
-          children: x.Z.parseVoiceChannelStatus(T, true, {
+          children: E.Z.parseVoiceChannelStatus(T, true, {
             channelId: t.id
           })
         }), R && (0, i.jsx)(s.vdY, {
@@ -206,7 +206,7 @@ function H(e) {
         })]
       })
     }) : null,
-    F = (0, j.m$)({
+    F = (0, S.m$)({
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
@@ -230,8 +230,8 @@ function H(e) {
         children: [(0, i.jsx)(y.ZP.Title, {
           wrapperClassName: k.title,
           children: (0, i.jsxs)(i.Fragment, {
-            children: [null != O ? (0, i.jsx)(y.ZP.ChannelIcon, {
-              icon: O,
+            children: [null != x ? (0, i.jsx)(y.ZP.ChannelIcon, {
+              icon: x,
               "aria-label": P
             }) : null, C, F && (0, i.jsx)(o.u, {
               text: D.intl.string(D.t.QyZ4Td),
@@ -243,16 +243,16 @@ function H(e) {
               })
             })]
           })
-        }), (0, i.jsx)(_.TS, {
+        }), (0, i.jsx)(O.TS, {
           channel: t,
           guild: r
         }), (0, i.jsx)(B, {
-          focusedApplication: S,
+          focusedApplication: _,
           focusedParticipant: b,
           channel: t
         })]
       })
-    }), (0, i.jsx)(E.Z, {
+    }), (0, i.jsx)(j.Z, {
       channelId: t.id
     })]
   })

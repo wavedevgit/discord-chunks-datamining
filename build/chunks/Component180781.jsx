@@ -1,4 +1,4 @@
-/** Chunk was on 72891 **/
+/** Chunk was on 76543 **/
 /** chunk id: 180781, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -15,48 +15,48 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk413955 = require("./413955.js");
+  Chunk861203 = require("./861203.js");
 
 function p(e) {
   let {
     analyticsSection: t,
     analyticsPage: n,
     isGIF: p,
-    banner: x
-  } = e, m = (0, a.e7)([d.Z], () => d.Z.getGuildId()), N = (0, a.e7)([s.Z], () => s.Z.getGuild(m)), {
-    analyticsLocations: h
-  } = (0, o.ZP)();
-  return null == N || N.features.has(u.GuildFeatures.ANIMATED_BANNER) || !p && N.features.has(u.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
-    className: g.container,
+    banner: g
+  } = e, v = (0, o.e7)([u.Z], () => u.Z.getGuildId()), _ = (0, o.e7)([s.Z], () => s.Z.getGuild(v)), {
+    analyticsLocations: x
+  } = (0, a.ZP)();
+  return null == _ || _.features.has(b.GuildFeatures.ANIMATED_BANNER) || !p && _.features.has(b.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
+    className: m.container,
     children: [(0, i.jsx)(r.Ucv, {
       color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: g.guildBoostingIcon
+      className: m.guildBoostingIcon
     }), (0, i.jsx)(r.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: _.intl.string(_.t["56M7xe"])
+      children: f.intl.string(f.t["56M7xe"])
     }), (0, i.jsx)("div", {
-      className: g.subscribeButton,
+      className: m.subscribeButton,
       children: (0, i.jsx)(r.Avr, {
-        text: _.intl.string(_.t.WUHdZV),
+        text: f.intl.string(f.t.WUHdZV),
         onClick: () => {
-          if (null == N) return;
+          if (null == _) return;
           let e = {
             section: t,
             page: n,
-            object: u.qAy.UPSELL_HEADER
+            object: b.qAy.UPSELL_HEADER
           };
-          null != x ? (0, l.c)({
-            analyticsLocations: h,
+          null != g ? (0, l.c)({
+            analyticsLocations: x,
             analyticsLocation: e,
-            guild: N,
+            guild: _,
             isGIF: p,
-            banner: x
+            banner: g
           }) : (0, c.Z)({
-            analyticsLocations: h,
+            analyticsLocations: x,
             analyticsSourceLocation: e,
-            guild: N,
-            perks: p ? (0, f.zC)() : (0, f.XO)()
+            guild: _,
+            perks: p ? (0, d.zC)() : (0, d.XO)()
           })
         },
         textVariant: "text-sm/semibold"

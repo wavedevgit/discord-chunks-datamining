@@ -11,8 +11,8 @@ var r, i, l, a, Chunk392711 = require("./392711.js"),
   Chunk176505 = require("./176505.js");
 let h = {},
   m = {},
-  _ = {},
-  b = {};
+  b = {},
+  _ = {};
 
 function E(e) {
   let t = m[e];
@@ -24,12 +24,12 @@ function E(e) {
     let n = Math.max(r, t.length - 26);
     m[e] = o().slice(t, n)
   }
-  _[e] = Date.now()
+  b[e] = Date.now()
 }
 
 function O(e, t, n, r) {
   h[e].add(t);
-  let i = _[t];
+  let i = b[t];
   (null == i || i + 3e5 > Date.now()) && E(t), null == m[t] && (m[t] = []), m[t].push({
     id: n,
     userId: r
@@ -40,14 +40,14 @@ function v(e) {
   let {
     channel: t
   } = e;
-  delete m[t.id], delete _[t.id]
+  delete m[t.id], delete b[t.id]
 }
 class y extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk914010.Z)
   }
   getActiveChannelsFetchStatus(e) {
-    return b[e]
+    return _[e]
   }
   getActiveChannelIds(e) {
     return h[e]
@@ -57,7 +57,7 @@ class y extends(a = Chunk442837.ZP.Store) {
   }
   shouldFetch(e) {
     var t;
-    return null == h[e] && !(null == (t = b[e]) ? true : t.loading)
+    return null == h[e] && !(null == (t = _[e]) ? true : t.loading)
   }
 }
 l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
@@ -111,7 +111,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     let {
       guildId: t
     } = e;
-    b[t] = {
+    _[t] = {
       loading: true,
       error: null,
       fetchedAt: Date.now()
@@ -122,7 +122,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       guildId: t,
       channels: n
     } = e;
-    b[t] = {
+    _[t] = {
       loading: false,
       error: null,
       fetchedAt: Date.now()
@@ -141,7 +141,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       guildId: t,
       error: n
     } = e;
-    b[t] = {
+    _[t] = {
       loading: false,
       error: n,
       fetchedAt: null

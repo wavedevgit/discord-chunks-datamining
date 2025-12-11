@@ -1,23 +1,23 @@
-/** Chunk was on 9456 **/
+/** Chunk was on 193 **/
 /** chunk id: 260503, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => i
 });
 var Chunk473749 = require("./473749.js"),
   Chunk924826 = require("./924826.js");
 
-function l(e) {
+function i(e) {
   let {
     listRef: t,
     padding: n,
-    channel: l,
-    isEnabled: a
-  } = e, s = r.useCallback(e => {
-    let r = t.current,
-      i = document.querySelector(e);
-    null != i && (null == r || r.scrollIntoViewNode({
-      node: i,
+    channel: i,
+    isEnabled: l
+  } = e, s = a.useCallback(e => {
+    let a = t.current,
+      r = document.querySelector(e);
+    null != r && (null == a || a.scrollIntoViewNode({
+      node: r,
       padding: n,
       callback: () => {
         var t;
@@ -26,20 +26,20 @@ function l(e) {
         })
       }
     }))
-  }, [n, t]), o = r.useCallback(() => new Promise(e => {
+  }, [n, t]), o = a.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToTop({
       callback: () => requestAnimationFrame(e)
     })
-  }), [t]), c = r.useCallback(() => new Promise(e => {
+  }), [t]), c = a.useCallback(() => new Promise(e => {
     let n = t.current;
     null == n || n.scrollToBottom({
       callback: () => requestAnimationFrame(e)
     })
   }), [t]);
-  return (0, i.ZP)({
-    id: "forum-channel-list-".concat(l.id),
-    isEnabled: a,
+  return (0, r.ZP)({
+    id: "forum-channel-list-".concat(i.id),
+    isEnabled: l,
     scrollToStart: o,
     scrollToEnd: c,
     setFocus: s

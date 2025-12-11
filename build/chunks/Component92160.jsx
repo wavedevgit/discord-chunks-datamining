@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 92160, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk289086 = require("./289086.js");
+  Chunk540203 = require("./540203.js");
 
 function c(e) {
   let {
@@ -22,7 +22,7 @@ function c(e) {
     animateStatus: u,
     firstLine: g,
     secondLine: m,
-    disabled: p
+    disabled: f
   } = e;
   return (0, r.jsxs)("div", {
     className: l()(t, o.enableContainer),
@@ -61,12 +61,12 @@ function c(e) {
           size: "sm",
           text: null != i ? i : s.intl.string(s.t["5U0kL8"]),
           onClick: c,
-          disabled: p
+          disabled: f
         })
       }), (0, r.jsx)(a.Button, {
         variant: n ? "critical-primary" : "primary",
         size: "sm",
-        disabled: null == d || !n || p,
+        disabled: null == d || !n || f,
         text: n ? s.intl.string(s.t.R9GHya) : s.intl.string(s.t.JFfins),
         onClick: d
       })]

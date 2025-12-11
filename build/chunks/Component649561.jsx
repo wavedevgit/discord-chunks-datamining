@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
   Chunk286379 = require("./286379.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975290 = require("./975290.js");
+  Chunk995965 = require("./995965.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,11 +83,11 @@ class k extends Chunk473749.PureComponent {
       observe: false,
       children: (0, Chunk54381.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.DARK,
-        children: r => (0, i.jsxs)(p.P3F, {
+        children: r => (0, i.jsxs)(h.P3F, {
           innerRef: this.contentDomRef,
-          className: o()(r, P.container),
+          className: s()(r, P.container),
           onClick: e => e.stopPropagation(),
-          children: [(0, i.jsx)(_.ZP, {
+          children: [(0, i.jsx)(m.ZP, {
             expand: true,
             icon: (0, i.jsx)(v.Z, {
               width: 40,
@@ -131,7 +131,7 @@ class k extends Chunk473749.PureComponent {
     }), w(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), D(), f.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+      }), D(), p.Z.track(C.rMx.NOTIFICATION_CLICKED, {
         notif_type: j.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
@@ -146,7 +146,7 @@ class k extends Chunk473749.PureComponent {
     })
   }
 }
-let R = a().throttle(() => {
+let R = l().throttle(() => {
   Chunk797614.Z.increment({
     name: Chunk286379.V.APP_CRASHED,
     tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -164,11 +164,11 @@ class A extends Chunk473749.PureComponent {
       error: e,
       info: t
     });
-    let i = (0, O.getPID)(),
-      r = (0, O.getRPCAuthToken)();
+    let i = (0, E.getPID)(),
+      r = (0, E.getRPCAuthToken)();
     (0, g.lW)({
       type: C.BmY.DISPATCH,
-      pid: (0, O.getPID)(),
+      pid: (0, E.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -180,15 +180,15 @@ class A extends Chunk473749.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", D));
-    let s = (0, E.V6)(e, x.gl.Hook, {
+    let a = (0, x.V6)(e, S.gl.Hook, {
       extra: t
     });
-    f.Z.track(C.rMx.APP_CRASHED, {
+    p.Z.track(C.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
-      sentry_issue_id: s,
+      sentry_issue_id: a,
       error_level: "fatal"
     }), R()
   }

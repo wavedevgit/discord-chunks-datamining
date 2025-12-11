@@ -15,7 +15,7 @@ var a, Chunk392711 = require("./392711.js"),
   Chunk855674 = require("./855674.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,14 +24,14 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -98,7 +98,7 @@ class P extends(a = Chunk442837.ZP.Store) {
     }
   }
 }
-_(P, "displayName", "ChannelSettingsIntegrationsStore");
+b(P, "displayName", "ChannelSettingsIntegrationsStore");
 let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_INIT: T,
     INTEGRATION_SETTINGS_SAVE_SUCCESS: T,
@@ -135,7 +135,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
         settings: t
       } = e;
       if (null == O) returnfalse;
-      O = b({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && N()
+      O = _({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && N()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
       i = null, r = null, E = [], O = null, y = Chunk981631.QZA.CLOSED
@@ -157,7 +157,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
             if (n === t.id) returntrue
           });
           if (null != r) {
-            let n = b({}, t, r);
+            let n = _({}, t, r);
             E[e] = n, C || (null == O ? true : O.id) !== n.id || (O = n)
           } else(null == O ? true : O.id) === t.id && (O = null), E.splice(e, 1)
         }

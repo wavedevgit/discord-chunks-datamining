@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk668339 = require("./668339.jsx"),
   Chunk159691 = require("./159691.js"),
@@ -16,24 +16,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk485386 = require("./485386.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk797966 = require("./797966.js");
+  Chunk180746 = require("./180746.js");
 let h = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: i
   } = e, [h, g] = l.useState(7), [j, x] = l.useState(null), [v, y] = l.useState([]), O = l.useCallback(async () => {
-    x(null), x(await d.Z.updateEstimate(t.id, h, v))
+    x(null), x(await u.Z.updateEstimate(t.id, h, v))
   }, [h, t.id, v]);
   l.useEffect(() => {
     O()
   }, [O]);
   let H = l.useCallback(() => {
-      d.Z.prune(t.id, h, v), i()
+      u.Z.prune(t.id, h, v), i()
     }, [t.id, h, v, i]),
-    _ = (0, a.Wu)([b.Z, m.Z], () => {
+    w = (0, o.Wu)([b.Z, m.Z], () => {
       let e = b.Z.getHighestRole(t);
-      return o()(m.Z.getSortedRoles(t.id)).filter(n => !(0, C.fI)(n) && b.Z.isRoleHigher(t, e, n)).map(e => {
+      return a()(m.Z.getSortedRoles(t.id)).filter(n => !(0, C.fI)(n) && b.Z.isRoleHigher(t, e, n)).map(e => {
         let {
           id: t,
           name: n
@@ -60,7 +60,7 @@ let h = e => {
     transitionState: n,
     children: (0, r.jsxs)("div", {
       className: p.content,
-      children: [(0, r.jsx)(u.FXm, {
+      children: [(0, r.jsx)(d.FXm, {
         label: f.intl.string(f.t.YccTvK),
         value: String(h),
         options: [{
@@ -77,7 +77,7 @@ let h = e => {
         onChange: e => {
           g(Number(e))
         }
-      }), (0, r.jsx)(u.zJl, {
+      }), (0, r.jsx)(d.zJl, {
         className: p.scroller,
         children: (0, r.jsx)(s.d, {
           label: f.intl.string(f.t.buoe17),
@@ -85,9 +85,9 @@ let h = e => {
           multi: true,
           value: v,
           onChange: e => y(e),
-          options: _
+          options: w
         })
-      }), (0, r.jsx)(u.Text, {
+      }), (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
         children: v.length > 0 ? f.intl.format(f.t["5WxHHp"], {
           members: j,

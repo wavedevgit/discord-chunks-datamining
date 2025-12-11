@@ -8,7 +8,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk302221 = require("./302221.js"),
-  Chunk781176 = require("./781176.js");
+  Chunk899272 = require("./899272.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,7 +49,7 @@ class d extends(r = Chunk473749.PureComponent) {
       className: module,
       children: (0, Chunk54381.jsx)("canvas", {
         ref: this.canvas,
-        className: Chunk781176.canvas,
+        className: Chunk899272.canvas,
         width: exports,
         height: require
       })
@@ -85,18 +85,18 @@ class d extends(r = Chunk473749.PureComponent) {
         m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
       }
       m.addColorStop(1, this.fillColor), f.fillStyle = m;
-      let _ = i.length >= s ? s : i.length;
+      let b = i.length >= s ? s : i.length;
       f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
-      let b = Math.floor(r.width / (_ - 3)),
-        E = .5 * b;
-      f.translate(b - b * p, 0), f.beginPath();
-      let O = -b;
+      let _ = Math.floor(r.width / (b - 3)),
+        E = .5 * _;
+      f.translate(_ - _ * p, 0), f.beginPath();
+      let O = -_;
       i.forEach((e, r) => {
         t = {
           x: O,
           y: h * e / g
-        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + E, n.y, t.x - E, t.y, t.x, t.y), n = t, O += b
-      }), f.stroke(), f.lineTo(O - b, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
+        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + E, n.y, t.x - E, t.y, t.x, t.y), n = t, O += _
+      }), f.stroke(), f.lineTo(O - _, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
     })
   }
 }

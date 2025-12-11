@@ -1,9 +1,9 @@
 /** Chunk was on 76815 **/
-/** chunk id: 532498, original params: t,n,e (module,exports,require) **/
+/** chunk id: 532498, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  J: () => a
+  J: () => i
 });
-let i = (0, require("./427164.js").le)({
+let a = (0, require("./427164.js").le)({
   name: "2025-11-vibing-wumpus-v2",
   kind: "user",
   defaultConfig: {
@@ -16,8 +16,8 @@ let i = (0, require("./427164.js").le)({
   }
 });
 
-function a(t) {
-  return i.useConfig({
+function i(t) {
+  return a.useConfig({
     location: t
   }).enabled
 }

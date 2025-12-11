@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 976983, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => _,
+  B: () => v,
   Z: () => j
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
@@ -19,9 +19,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk570961 = require("./570961.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk900492 = require("./900492.js");
+  Chunk762524 = require("./762524.js");
 
-function b(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,54 +57,54 @@ function j(e) {
   var t, i, a, c;
   let {
     guild: j,
-    prompt: _,
-    singleColumn: v,
-    promptIndex: O,
-    option: C,
-    hasError: y,
-    onDragStart: N,
-    onDragComplete: E,
-    onDragReset: I
-  } = e, S = null, T = s().findIndex(_.options, e => e.id === C.id), {
+    prompt: v,
+    singleColumn: O,
+    promptIndex: C,
+    option: y,
+    hasError: N,
+    onDragStart: E,
+    onDragComplete: I,
+    onDragReset: S
+  } = e, _ = null, T = s().findIndex(v.options, e => e.id === y.id), {
     drag: P,
     dragSourcePosition: w,
     drop: Z,
     setIsDraggable: R
   } = (0, d.Z)({
-    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(_.id),
+    type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
     index: T,
-    optionId: C.id,
-    onDragStart: N,
-    onDragComplete: E,
-    onDragReset: I
+    optionId: y.id,
+    onDragStart: E,
+    onDragComplete: I,
+    onDragReset: S
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = C.emoji) ? true : t.id, null == (i = C.emoji) ? true : i.name);
-  return (0, p.Oq)(C.emoji) || null != D || null != A || (S = f.intl.string(f.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
-    className: l()(h.optionCard, {
-      [h.hasError]: y || null != S,
-      [h.dropIndicatorBefore]: null != w && T < w,
-      [h.dropIndicatorAfter]: null != w && T > w,
-      [h.singleColumn]: v
+  } = (0, u.Z)(null == (t = y.emoji) ? true : t.id, null == (i = y.emoji) ? true : i.name);
+  return (0, f.Oq)(y.emoji) || null != D || null != A || (_ = p.intl.string(p.t["61wfmh"])), (0, r.jsxs)(o.P3F, {
+    className: l()(b.optionCard, {
+      [b.hasError]: N || null != _,
+      [b.dropIndicatorBefore]: null != w && T < w,
+      [b.dropIndicatorAfter]: null != w && T > w,
+      [b.singleColumn]: O
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return t => (0, r.jsx)(e, x(b({}, t), {
+      return t => (0, r.jsx)(e, x(h({}, t), {
         guild: j,
-        prompt: _,
-        option: C,
-        index: O,
+        prompt: v,
+        option: y,
+        index: C,
         onSave: e => {
-          (0, m.Kk)(j, _.id, {
-            options: _.options.map(t => t.id === C.id ? e : t)
+          (0, m.Kk)(j, v.id, {
+            options: v.options.map(t => t.id === y.id ? e : t)
           })
         },
         onDelete: () => {
-          (0, m.Kk)(j, _.id, {
-            options: _.options.filter(e => e.id !== C.id)
+          (0, m.Kk)(j, v.id, {
+            options: v.options.filter(e => e.id !== y.id)
           })
         }
       }))
@@ -115,44 +115,44 @@ function j(e) {
       P(Z(e))
     },
     children: [(0, r.jsx)("div", {
-      className: h.dragContainer,
+      className: b.dragContainer,
       children: (0, r.jsx)(o.Vni, {
         size: "xs",
         color: "currentColor",
-        className: h.__invalid_dragIcon
+        className: b.__invalid_dragIcon
       })
     }), (0, r.jsxs)("div", {
-      className: h.optionCardRow,
+      className: b.optionCardRow,
       children: [(0, r.jsx)("div", {
-        className: h.emoji,
+        className: b.emoji,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null == (a = C.emoji) ? true : a.id,
-          emojiName: null == (c = C.emoji) ? true : c.name,
+          emojiId: null == (a = y.emoji) ? true : a.id,
+          emojiName: null == (c = y.emoji) ? true : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
-        className: h.text,
+        className: b.text,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
-          children: C.title
-        }), "" !== C.description && (0, r.jsx)(o.Text, {
-          className: h.description,
+          children: y.title
+        }), "" !== y.description && (0, r.jsx)(o.Text, {
+          className: b.description,
           variant: "text-xs/normal",
           color: "text-default",
-          children: C.description
+          children: y.description
         })]
       })]
-    }), null != S && (0, r.jsx)(o.Text, {
+    }), null != _ && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: S
+      children: _
     })]
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     guild: t,
     prompt: i,
@@ -163,7 +163,7 @@ function _(e) {
       let {
         default: e
       } = await n.e("1862").then(n.bind(n, 801001));
-      return n => (0, r.jsx)(e, x(b({}, n), {
+      return n => (0, r.jsx)(e, x(h({}, n), {
         guild: t,
         prompt: i,
         onSave: e => (0, m.Kk)(t, i.id, {
@@ -175,31 +175,31 @@ function _(e) {
     })
   };
   return (0, r.jsx)(o.P3F, {
-    className: l()(h.optionCard, h.addOptionCard, {
-      [h.addFirstOptionCard]: 0 === i.options.length,
-      [h.singleColumn]: s
+    className: l()(b.optionCard, b.addOptionCard, {
+      [b.addFirstOptionCard]: 0 === i.options.length,
+      [b.singleColumn]: s
     }),
     onClick: () => {
-      i.options.length + 1 === p.fY ? c.Z.show({
-        title: f.intl.string(f.t.TggC7k),
-        body: f.intl.formatToPlainString(f.t.kPQKai, {
-          thresholdCount: p.fY
+      i.options.length + 1 === f.fY ? c.Z.show({
+        title: p.intl.string(p.t.TggC7k),
+        body: p.intl.formatToPlainString(p.t.kPQKai, {
+          thresholdCount: f.fY
         }),
-        confirmText: f.intl.string(f.t.BddRzS),
-        cancelText: f.intl.string(f.t["ETE/oC"]),
+        confirmText: p.intl.string(p.t.BddRzS),
+        cancelText: p.intl.string(p.t["ETE/oC"]),
         onConfirm: d
       }) : d()
     },
     children: (0, r.jsxs)("div", {
-      className: h.optionCardRow,
+      className: b.optionCardRow,
       children: [(0, r.jsx)(o.oFk, {
         size: "md",
         color: "currentColor",
-        className: h.plusIcon
+        className: b.plusIcon
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: f.intl.string(f.t.Ty3lgp)
+        children: p.intl.string(p.t.Ty3lgp)
       })]
     })
   })

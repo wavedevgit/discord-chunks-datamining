@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 428760, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk730671 = require("./730671.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk554867 = require("./554867.js");
+  Chunk773655 = require("./773655.js");
 
 function u(e) {
   let {
@@ -21,30 +21,30 @@ function u(e) {
     textAreaClassName: u,
     subtitleText: g,
     initialValue: m
-  } = e, p = i.useMemo(() => null != m ? m : [], [m]), {
-    value: f,
-    onChange: h,
-    errorMessage: b
+  } = e, f = i.useMemo(() => null != m ? m : [], [m]), {
+    value: p,
+    onChange: b,
+    errorMessage: h
   } = (0, o.Z)(t, m, n);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(d.keywordsContainer, l),
       children: [(0, r.jsx)(s.lcI, {
         className: a()(d.keywordsTextArea, u),
-        value: f,
-        onChange: h,
+        value: p,
+        onChange: b,
         placeholder: c.intl.string(c.t.UyaxJy)
       }), (0, r.jsx)(s.Text, {
         className: d.keywordsCounter,
         variant: "text-xs/normal",
         color: "text-muted",
-        children: "".concat(p.length, " / ").concat(n)
+        children: "".concat(f.length, " / ").concat(n)
       })]
-    }), null != b ? (0, r.jsx)(s.Text, {
+    }), null != h ? (0, r.jsx)(s.Text, {
       className: a()(d.paddingTop, d.errorText),
       variant: "text-xs/medium",
       color: "text-feedback-critical",
-      children: b
+      children: h
     }) : (0, r.jsx)(s.Text, {
       className: d.paddingTop,
       variant: "text-xs/normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 37709 **/
+/** Chunk was on 6841 **/
 /** chunk id: 599263, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => S
@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk973051 = require("./973051.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk718215 = require("./718215.js");
+  Chunk321347 = require("./321347.js");
 
 function S(e) {
   let {
@@ -41,24 +41,24 @@ function S(e) {
     ref: n,
     width: o,
     height: S
-  } = (0, u.ZP)(), k = (0, a.Wu)([y.Z], () => y.Z.getOnboardingPromptsForOnboarding(t)), A = (0, a.e7)([y.Z], () => y.Z.getEnabled(t)), B = (0, a.e7)([y.Z], () => y.Z.getConnections(t)), R = (0, a.e7)([f.Z], () => f.Z.getRulesPrompt(t)), L = i.useCallback((e, n, r) => {
-    j.Z.selectOption(t, e, n, r)
+  } = (0, u.ZP)(), k = (0, s.Wu)([y.Z], () => y.Z.getOnboardingPromptsForOnboarding(t)), A = (0, s.e7)([y.Z], () => y.Z.getEnabled(t)), B = (0, s.e7)([y.Z], () => y.Z.getConnections(t)), R = (0, s.e7)([m.Z], () => m.Z.getRulesPrompt(t)), L = i.useCallback((e, n, r) => {
+    _.Z.selectOption(t, e, n, r)
   }, [t]), F = i.useCallback(() => {
-    j.Z.completeOnboarding(t, k)
-  }, [t, k]), M = (0, a.e7)([b.Z], () => b.Z.getGuild(t)), G = i.useMemo(() => null == M ? null : v.ZP.getGuildSplashURL({
+    _.Z.completeOnboarding(t, k)
+  }, [t, k]), M = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), G = i.useMemo(() => null == M ? null : O.ZP.getGuildSplashURL({
     id: M.id,
     splash: M.splash
-  }), [M]), V = (0, m.N)(G), H = (0, a.e7)([N.ZP], () => N.ZP.getCurrentOnboardingStep(t)), [U, q] = i.useState(null != G ? null : "cover"), W = i.useCallback(e => {
-    q(H), j.Z.setUserOnboardingStep(t, e)
-  }, [t, H]), z = (0, a.e7)([h.Z], () => h.Z.isFullServerPreview(t)), J = (0, a.e7)([N.ZP], () => N.ZP.getOnboardingStatus(t)), X = null != k && k.length > 0, Y = i.useCallback(() => {
+  }), [M]), V = (0, f.N)(G), H = (0, s.e7)([N.ZP], () => N.ZP.getCurrentOnboardingStep(t)), [U, q] = i.useState(null != G ? null : "cover"), W = i.useCallback(e => {
+    q(H), _.Z.setUserOnboardingStep(t, e)
+  }, [t, H]), z = (0, s.e7)([g.Z], () => g.Z.isFullServerPreview(t)), J = (0, s.e7)([N.ZP], () => N.ZP.getOnboardingStatus(t)), X = null != k && k.length > 0, Y = i.useCallback(() => {
     (0, N.kp)(J) && A && (X || 0 !== B.length) ? B.length > 0 ? W("connections") : W(0) : F()
   }, [J, A, X, B.length, W, F]);
   i.useEffect(() => {
     if (!N.ZP.shouldShowOnboarding(t)) return d.Z.escapeToDefaultChannel(t);
-    (0, g.E)(t)
+    (0, b.E)(t)
   }, [t]);
   let Q = (0, c.Yzy)(H, {
-      config: s.config.default,
+      config: l.config.default,
       from: {
         scale: .8,
         opacity: 0
@@ -73,12 +73,12 @@ function S(e) {
   return (i.useEffect(() => {
     if (!$ || K) {
       let e = setTimeout(() => {
-        (0, x.uL)(Z.Z5c.CHANNEL(t))
+        (0, h.uL)(Z.Z5c.CHANNEL(t))
       }, 1e3);
       return () => clearTimeout(e)
     }
   }, [$, K, t]), N.ZP.shouldShowOnboarding(t) && null != M) ? (0, r.jsxs)("div", {
-    className: l()(w.main, {
+    className: a()(w.main, {
       [w.fullBorderWithGradient]: null == G
     }),
     ref: n,
@@ -88,10 +88,10 @@ function S(e) {
       width: o,
       height: S,
       imageClassName: w.cover
-    }) : (0, r.jsx)(_.Z, {}), null != V && (0, r.jsx)("div", {
+    }) : (0, r.jsx)(x.Z, {}), null != V && (0, r.jsx)("div", {
       className: w.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, O.aD)(V, .16), " 0%, ").concat((0, O.aD)(V, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, j.aD)(V, .16), " 0%, ").concat((0, j.aD)(V, 1), " 100%)")
       }
     }), null == G ? null : (0, r.jsx)("div", {
       className: w.gradient
@@ -99,7 +99,7 @@ function S(e) {
       let {
         key: o
       } = i;
-      return (0, r.jsx)(s.animated.div, {
+      return (0, r.jsx)(l.animated.div, {
         style: e,
         children: (() => {
           switch (H) {

@@ -1,7 +1,7 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 58175 **/
 /** chunk id: 821312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,64 +11,64 @@ var Chunk54381 = require("./54381.js"),
   Chunk177862 = require("./177862.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk882313 = require("./882313.js");
+  Chunk247873 = require("./247873.js");
 
-function p(e) {
+function b(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: p
-  } = e, [m, b] = r.useState([]), [g, f] = r.useState(), h = [{
-    label: d.intl.string(d.t["//3pvi"]),
-    value: s.C2.DM_SPAM
+    onClose: b
+  } = e, [p, f] = i.useState([]), [g, _] = i.useState(), O = [{
+    label: u.intl.string(u.t["//3pvi"]),
+    value: o.C2.DM_SPAM
   }, {
-    label: d.intl.string(d.t.SdVsip),
-    value: s.C2.MENTION_SPAM
+    label: u.intl.string(u.t.SdVsip),
+    value: o.C2.MENTION_SPAM
   }, {
-    label: d.intl.string(d.t.uTiSVL),
-    value: s.C2.CHANNEL_SPAM
+    label: u.intl.string(u.t.uTiSVL),
+    value: o.C2.CHANNEL_SPAM
   }, {
-    label: d.intl.string(d.t.GQczU8),
-    value: s.C2.SUS_NEW_MEMBERS
+    label: u.intl.string(u.t.GQczU8),
+    value: o.C2.SUS_NEW_MEMBERS
   }, {
-    label: d.intl.string(d.t.AAgqy3),
-    value: s.C2.CHANGING_SETTINGS
+    label: u.intl.string(u.t.AAgqy3),
+    value: o.C2.CHANGING_SETTINGS
   }, {
-    label: d.intl.string(d.t.ryPKb7),
-    value: s.C2.OTHER
-  }], x = r.useCallback(e => {
-    b(e)
+    label: u.intl.string(u.t.ryPKb7),
+    value: o.C2.OTHER
+  }], y = i.useCallback(e => {
+    f(e)
   }, []);
-  return null == t ? (p(), null) : (0, i.jsx)(l.Modal, {
+  return null == t ? (b(), null) : (0, r.jsx)(l.Modal, {
     transitionState: n,
-    title: d.intl.string(d.t.f5hd9P),
+    title: u.intl.string(u.t.f5hd9P),
     actions: [{
-      text: d.intl.string(d.t["ETE/oC"]),
-      onClick: p,
+      text: u.intl.string(u.t["ETE/oC"]),
+      onClick: b,
       variant: "secondary"
     }, {
-      text: d.intl.string(d.t.nAt0rE),
+      text: u.intl.string(u.t.nAt0rE),
       onClick: function() {
-        (0, o.yw)(c.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
-          raid_lockdown_feedback_type: m,
+        (0, s.yw)(c.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
+          raid_lockdown_feedback_type: p,
           raid_lockdown_feedback_other_reason: g,
           guild_id: t
-        }), p()
+        }), b()
       },
-      disabled: 0 === m.length
+      disabled: 0 === p.length
     }],
-    onClose: p,
-    children: (0, i.jsxs)(a.Kqy, {
+    onClose: b,
+    children: (0, r.jsxs)(a.Kqy, {
       gap: 8,
-      children: [(0, i.jsx)(a.cOn, {
-        selectedValues: m,
-        onChange: x,
-        options: h
-      }), m.includes(s.C2.OTHER) && (0, i.jsx)("div", {
-        className: u.textboxContainer,
-        children: (0, i.jsx)(a.Kx8, {
-          placeholder: d.intl.string(d.t["PAM+JR"]),
-          onChange: f,
+      children: [(0, r.jsx)(a.cOn, {
+        selectedValues: p,
+        onChange: y,
+        options: O
+      }), p.includes(o.C2.OTHER) && (0, r.jsx)("div", {
+        className: d.textboxContainer,
+        children: (0, r.jsx)(a.Kx8, {
+          placeholder: u.intl.string(u.t["PAM+JR"]),
+          onChange: _,
           value: g,
           autoFocus: true
         })

@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk34211 = require("./34211.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk431138 = require("./431138.js"),
-  Chunk368955 = require("./368955.js");
-let m = Chunk231338.j_.MAIN_NAVIGATION_MENU;
+  Chunk820014 = require("./820014.js");
+let f = Chunk231338.j_.MAIN_NAVIGATION_MENU;
 
 function p(e) {
   let {
@@ -24,55 +24,55 @@ function p(e) {
     avoidRouter: p,
     openNavAriaLabel: h,
     hideNavAriaLabel: I
-  } = e, k = r.useId(), [g, A] = r.useState(false), O = r.useCallback(() => A(!g), [g]), f = r.useCallback(e => {
-    ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), g && O())
-  }, [g, O]);
-  return r.useEffect(() => (window.addEventListener("keydown", f), () => window.removeEventListener("keydown", f)), [f]), (0, n.jsx)("header", {
-    className: l()(N.header, t),
+  } = e, b = r.useId(), [k, g] = r.useState(false), A = r.useCallback(() => g(!k), [k]), O = r.useCallback(e => {
+    ("Escape" === e.key || "Esc" === e.key) && (e.preventDefault(), k && A())
+  }, [k, A]);
+  return r.useEffect(() => (window.addEventListener("keydown", O), () => window.removeEventListener("keydown", O)), [O]), (0, n.jsx)("header", {
+    className: l()(m.header, t),
     children: (0, n.jsxs)("nav", {
-      className: N.headerInner,
+      className: m.headerInner,
       children: [(0, n.jsx)(a, {
         tag: "div",
-        eventName: m,
-        className: N.headerLogo,
+        eventName: f,
+        className: m.headerLogo,
         data: {
           linkClicked: "logo"
         },
         children: (0, n.jsx)(o.Z, {
           avoidRouter: p,
-          className: N.logoWrapper,
+          className: m.logoWrapper,
           to: u.am.INDEX,
           from: u.j_.MAIN_NAVIGATION_MENU,
           children: (0, n.jsx)("img", {
-            className: N.logo,
-            src: _.r.ASSET_LOGO_DISCORD_SVG,
+            className: m.logo,
+            src: N.r.ASSET_LOGO_DISCORD_SVG,
             alt: "Discord",
             itemProp: "logo"
           })
         })
       }), (0, n.jsx)(a, {
         tag: "div",
-        className: N.hamburgerButton,
-        eventName: m,
+        className: m.hamburgerButton,
+        eventName: f,
         data: {
           linkClicked: "mobile-menu"
         },
         children: (0, n.jsx)(i.r, {
-          open: g,
+          open: k,
           "aria-haspopup": "true",
-          "aria-label": g ? I : h,
-          "aria-expanded": g,
-          "aria-controls": k,
-          onClick: O
+          "aria-label": k ? I : h,
+          "aria-expanded": k,
+          "aria-controls": b,
+          onClick: A
         })
       }), (0, n.jsxs)("ul", {
-        className: g ? N.headerNavOpen : N.headerNav,
+        className: k ? m.headerNavOpen : m.headerNav,
         children: [(0, n.jsx)(d.o, {
           avoidRouter: p,
           TrackClick: a,
-          styles: N,
+          styles: m,
           isMobile: true,
-          isVisible: g
+          isVisible: k
         }), (0, n.jsx)(c.p, {
           onChange: s
         })]

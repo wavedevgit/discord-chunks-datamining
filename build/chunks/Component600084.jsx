@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -38,16 +38,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk963392 = require("./963392.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk701766 = require("./701766.js"),
+  Chunk478411 = require("./478411.js");
 
 function V(e) {
   let {
     canManageRoles: t,
     channel: n
   } = e, r = t && (0, p.Yk)(n), a = (0, l.e7)([v.ZP], () => null != n.guild_id && n === v.ZP.getDefaultChannel(n.guild_id), [n]);
-  if ((0, h.Z)(n.id)) return null;
-  if (n.isForumPost()) return (0, i.jsx)(S.Z, {
+  if ((0, f.Z)(n.id)) return null;
+  if (n.isForumPost()) return (0, i.jsx)(_.Z, {
     channel: n
   });
   if (C.Ec.has(n.type)) return (0, i.jsx)(w.Z, {
@@ -69,14 +69,14 @@ function F(e) {
   let {
     channel: n,
     showingBanner: p
-  } = e, h = (0, d.ZP)(n), {
+  } = e, f = (0, d.ZP)(n), {
     type: C
-  } = n, v = (0, l.e7)([O.default], () => n.isPrivate() ? O.default.getUser(n.getRecipientId()) : null), S = x.ZP.useUserTag(v), {
+  } = n, v = (0, l.e7)([x.default], () => n.isPrivate() ? x.default.getUser(n.getRecipientId()) : null), _ = E.ZP.useUserTag(v), {
     canManageRoles: N,
     canReadMessageHistory: A
-  } = (0, l.cj)([_.Z], () => ({
-    canManageRoles: _.Z.can(R.Plq.MANAGE_ROLES, n),
-    canReadMessageHistory: _.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
+  } = (0, l.cj)([O.Z], () => ({
+    canManageRoles: O.Z.can(R.Plq.MANAGE_ROLES, n),
+    canReadMessageHistory: O.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
   })), w = (0, l.e7)([g.Z], () => C === R.d4z.DM ? g.Z.getMutualGuilds(n.getRecipientId()) : null, [n, C]), M = (0, u.Z)(null != (t = null == v ? true : v.id) ? t : R.lds), {
     authorizedAppToken: F,
     authorizedAppsFetchState: B
@@ -108,10 +108,10 @@ function F(e) {
         application: M,
         channel: n,
         oauth2Token: F
-      }), H && (0, i.jsx)(f.Z, {
+      }), H && (0, i.jsx)(h.Z, {
         channel: n
       })]
-    })) : e = (0, i.jsx)(E.Z, {
+    })) : e = (0, i.jsx)(j.Z, {
       userId: n.getRecipientId(),
       channel: n,
       showingBanner: p
@@ -121,22 +121,22 @@ function F(e) {
       children: [null != v && !v.isProvisional && (0, i.jsx)(a.Heading, {
         variant: "heading-xl/medium",
         className: U.marginBottom20,
-        children: S
+        children: _
       }), D.intl.format(D.t["Qvg+6+"], {
-        username: h
+        username: f
       }), (null == v ? true : v.isProvisional) && (0, i.jsx)(m.q, {
         userId: v.id
       }), e]
     })
   }
   if (n.isMultiUserDM())
-    if (n.isManaged()) return (0, i.jsxs)(j.ZP, {
+    if (n.isManaged()) return (0, i.jsxs)(S.ZP, {
       channelId: n.id,
-      children: [(0, i.jsx)(j.Ot, {
+      children: [(0, i.jsx)(S.Ot, {
         children: D.intl.format(D.t.I3R7Vn, {
-          channelName: h
+          channelName: f
         })
-      }), (0, i.jsx)(j.jz, {
+      }), (0, i.jsx)(S.jz, {
         children: D.intl.string(D.t.M8Ao6I)
       })]
     });
@@ -146,17 +146,17 @@ function F(e) {
   else return (0, i.jsx)(T.Z, {
     channel: n,
     children: D.intl.format(D.t.MFwcqO, {
-      name: h
+      name: f
     })
   });
   return A ? (0, i.jsx)(V, {
     channel: n,
     canManageRoles: N
-  }) : (0, i.jsx)(j.ZP, {
+  }) : (0, i.jsx)(S.ZP, {
     channelId: n.id,
-    children: (0, i.jsx)(j.jz, {
+    children: (0, i.jsx)(S.jz, {
       children: D.intl.format(D.t.hPVEQG, {
-        channelName: h
+        channelName: f
       })
     })
   })

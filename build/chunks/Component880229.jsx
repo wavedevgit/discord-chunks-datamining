@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk686807 = require("./686807.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161270 = require("./161270.js");
+  Chunk903907 = require("./903907.js");
 let z = (0, Chunk313201.hQ)(),
   E = (0, Chunk313201.hQ)(),
   O = (0, Chunk624138.Mg)(Chunk477690.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
@@ -44,7 +44,7 @@ function P(e) {
     emojiId: n,
     emojiName: l,
     className: r
-  } = e, o = (0, s.e7)([g.ZP], () => null != n ? g.ZP.getCustomEmojiById(n) : true);
+  } = e, o = (0, c.e7)([g.ZP], () => null != n ? g.ZP.getCustomEmojiById(n) : true);
   return (0, i.jsx)(u.Z, {
     emojiId: n,
     emojiName: l,
@@ -60,10 +60,10 @@ function R(e) {
     checked: l,
     disabled: r = false,
     onChange: a
-  } = e, s = l || r;
+  } = e, c = l || r;
   return (0, i.jsxs)("label", {
     className: o()(M.row, {
-      [M.checked]: s,
+      [M.checked]: c,
       [M.disabled]: r
     }),
     children: [(0, i.jsx)("div", {
@@ -77,7 +77,7 @@ function R(e) {
       children: [(0, i.jsx)(m.tEY, {
         children: (0, i.jsx)("input", {
           type: "checkbox",
-          checked: s,
+          checked: c,
           disabled: r,
           className: M.checkboxInput,
           onChange: function(e) {
@@ -105,7 +105,7 @@ function L(e) {
     dupeBenefits: r,
     selectedBenefits: o,
     onToggleBenefit: a
-  } = e, s = l.every(e => o.has(e));
+  } = e, c = l.every(e => o.has(e));
   return l.length > 0 ? (0, i.jsxs)("div", {
     className: M.section,
     children: [(0, i.jsx)(m.Heading, {
@@ -120,7 +120,7 @@ function L(e) {
           color: "currentColor",
           className: M.rowIcon
         }),
-        checked: s,
+        checked: c,
         onChange: function(e) {
           for (let t of l) r.has(t) || a(t, e)
         },
@@ -161,9 +161,9 @@ function D(e) {
     fromSubscriptionListing: n,
     existingChannelBenefits: r,
     existingIntangibleBenefits: o,
-    onSubmit: s,
+    onSubmit: c,
     onClose: d
-  } = e, u = n.role_benefits.benefits, [h, x] = l.useState(() => new Set(u)), f = l.useMemo(() => u.filter(k.rC), [u]), g = (0, S.Z)(f), j = l.useMemo(() => u.filter(k.lL), [u]), p = l.useMemo(() => new Set(g.filter(e => r.some(t => t.ref_id === e.ref_id))), [g, r]), _ = l.useMemo(() => new Set(j.filter(e => o.some(t => (0, c.Z)(e, t)))), [o, j]);
+  } = e, u = n.role_benefits.benefits, [h, x] = l.useState(() => new Set(u)), f = l.useMemo(() => u.filter(k.rC), [u]), g = (0, S.Z)(f), j = l.useMemo(() => u.filter(k.lL), [u]), p = l.useMemo(() => new Set(g.filter(e => r.some(t => t.ref_id === e.ref_id))), [g, r]), b = l.useMemo(() => new Set(j.filter(e => o.some(t => (0, s.Z)(e, t)))), [o, j]);
 
   function v(e, t) {
     x(n => {
@@ -172,13 +172,13 @@ function D(e) {
     })
   }
 
-  function b(e) {
+  function C(e) {
     e.preventDefault();
     let t = u.filter(e => h.has(e));
-    s(t.filter(k.rC).filter(e => !p.has(e)), t.filter(k.lL).filter(e => !_.has(e))), d()
+    c(t.filter(k.rC).filter(e => !p.has(e)), t.filter(k.lL).filter(e => !b.has(e))), d()
   }
   return (0, i.jsx)("form", {
-    onSubmit: b,
+    onSubmit: C,
     children: (0, i.jsxs)(a.Modal, {
       transitionState: t,
       onClose: d,
@@ -193,7 +193,7 @@ function D(e) {
         variant: "primary",
         text: B.intl.string(B.t["27a21y"]),
         disabled: 0 === h.size,
-        onClick: b
+        onClick: C
       }],
       children: [0 === g.length && 0 === j.length && (0, i.jsx)(m.Text, {
         variant: "text-md/normal",
@@ -209,7 +209,7 @@ function D(e) {
         title: B.intl.string(B.t.RdwKw7),
         selectAllText: B.intl.string(B.t.aJPLVE),
         benefits: j,
-        dupeBenefits: _,
+        dupeBenefits: b,
         selectedBenefits: h,
         onToggleBenefit: v
       })]
@@ -285,17 +285,17 @@ function F(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, r = (0, s.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, s.e7)([b.Z], () => b.Z.getCategories(t.id)), a = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
+  } = e, r = (0, c.e7)([w.Z], () => w.Z.getSortedRoles(t.id)), o = (0, c.e7)([C.Z], () => C.Z.getCategories(t.id)), a = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
     let {
       channel: t
     } = e;
-    return _.zS.has(t.type)
+    return b.zS.has(t.type)
   }).map(e => {
     let {
       channel: t
     } = e;
     return t
-  })), [o]), c = l.useMemo(() => r.flatMap(e => {
+  })), [o]), s = l.useMemo(() => r.flatMap(e => {
     var t;
     if ((0, v.fI)(e) || (null == (t = e.tags) ? true : t.subscription_listing_id) != null || (0, v._N)(e, Z.TC2)) return [];
     let n = (0, y.Z)(a, e).length;
@@ -304,9 +304,9 @@ function F(e) {
       channelCount: n
     } : []
   }), [r, a]);
-  return c.length > 0 ? (0, i.jsx)("div", {
+  return s.length > 0 ? (0, i.jsx)("div", {
     className: M.list,
-    children: c.map(e => (0, i.jsx)(H, {
+    children: s.map(e => (0, i.jsx)(H, {
       guildId: t.id,
       role: e.role,
       channelCount: e.channelCount,
@@ -323,7 +323,7 @@ function G(e) {
     onClose: t,
     guildId: n,
     onSelect: l
-  } = e, r = (0, s.e7)([w.Z], () => w.Z.getGuild(n));
+  } = e, r = (0, c.e7)([_.Z], () => _.Z.getGuild(n));
   return null == r ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(m.xBx, {
       "data-migration-pending": true,
@@ -354,16 +354,16 @@ function W(e) {
     role: r,
     onCancel: o,
     onImport: a
-  } = e, s = l.useRef(r);
-  null != r && (s.current = r);
-  let c = null != r ? r : s.current,
+  } = e, c = l.useRef(r);
+  null != r && (c.current = r);
+  let s = null != r ? r : c.current,
     d = (0, h.Z)(() => {
-      let e = b.Z.getCategories(n);
+      let e = C.Z.getCategories(n);
       return e._categories.flatMap(t => e[t.channel.id].filter(e => {
         let {
           channel: t
         } = e;
-        return _.zS.has(t.type)
+        return b.zS.has(t.type)
       }).map(e => {
         let {
           channel: t
@@ -371,7 +371,7 @@ function W(e) {
         return t
       }))
     }),
-    u = l.useMemo(() => (0, y.Z)(d, c), [d, c]),
+    u = l.useMemo(() => (0, y.Z)(d, s), [d, s]),
     [f, g] = l.useState(() => new Set(u.map(e => e.id)));
 
   function j(e, t) {
@@ -391,7 +391,7 @@ function W(e) {
         id: E,
         variant: "heading-md/semibold",
         children: B.intl.format(B.t.iuPodG, {
-          roleName: c.name
+          roleName: s.name
         })
       }), (0, i.jsx)(m.olH, {
         "data-migration-pending": true,
@@ -468,7 +468,7 @@ function A(e) {
     guildId: n,
     onClose: r,
     onImport: o
-  } = e, [a, s] = l.useState();
+  } = e, [a, c] = l.useState();
   return (0, i.jsx)(m.Y0X, {
     "data-migration-pending": true,
     transitionState: t,
@@ -483,7 +483,7 @@ function A(e) {
         children: (0, i.jsx)(G, {
           onClose: r,
           guildId: n,
-          onSelect: s
+          onSelect: c
         })
       }), (0, i.jsx)(m.Mi4, {
         id: 1,
@@ -491,7 +491,7 @@ function A(e) {
           onClose: r,
           guildId: n,
           role: a,
-          onCancel: () => s(true),
+          onCancel: () => c(true),
           onImport: o
         })
       })]

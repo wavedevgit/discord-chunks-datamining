@@ -17,12 +17,12 @@ let h = (0, Chunk112724.Z)(Chunk333323.Z),
   f = function(e) {
     let {
       guildId: n
-    } = e, t = (0, a.e7)([m.Z], () => m.Z.getGuild(n), [n]), s = (0, a.e7)([o.Z], () => o.Z.hasLoadedExperiments), u = (0, d.g)(n);
-    return (r.useEffect(() => {
-      if (s && !u) return void i.Z.escapeToDefaultChannel(n)
-    }, [n, s, u]), null != t && u) ? (0, l.jsx)(h, {
+    } = e, t = (0, r.e7)([m.Z], () => m.Z.getGuild(n), [n]), c = (0, r.e7)([d.Z], () => d.Z.hasLoadedExperiments), u = (0, o.g)(n);
+    return (l.useEffect(() => {
+      if (c && !u) return void i.Z.escapeToDefaultChannel(n)
+    }, [n, c, u]), null != t && u) ? (0, a.jsx)(h, {
       guild: t
-    }) : (0, l.jsx)(c.Z, {
+    }) : (0, a.jsx)(s.Z, {
       channelId: true
     })
   }

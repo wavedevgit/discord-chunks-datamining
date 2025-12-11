@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 399614, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk969632 = require("./969632.js"),
   Chunk922112 = require("./922112.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
+  Chunk551952 = require("./551952.js");
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,48 +47,48 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = [],
-  b = function(e) {
+let b = [],
+  h = function(e) {
     let {
       guildId: t
-    } = e, b = (0, l.Wu)([d.Z], () => {
+    } = e, h = (0, l.Wu)([d.Z], () => {
       var e;
-      return null != (e = d.Z.getSettings().resourceChannels) ? e : h
-    }), x = i.useMemo(() => b.map(e => f(p({}, e), {
+      return null != (e = d.Z.getSettings().resourceChannels) ? e : b
+    }), x = i.useMemo(() => h.map(e => p(f({}, e), {
       id: e.channelId
-    })), [b]), {
+    })), [h]), {
       handleDragStart: j,
-      handleDragReset: _,
-      handleDragComplete: v
-    } = (0, s.Z)(x, c.lq), O = i.useCallback((e, n) => {
+      handleDragReset: v,
+      handleDragComplete: O
+    } = (0, s.Z)(x, c.lq), C = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
-    }, [t]), C = i.useCallback(() => {
+    }, [t]), y = i.useCallback(() => {
       if (null != t) return (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, f(p({}, n), {
+        return n => (0, r.jsx)(e, p(f({}, n), {
           guildId: t,
           onSave: c.r2,
-          onIconUpload: O
+          onIconUpload: C
         }))
       })
-    }, [t, O]);
+    }, [t, C]);
     return (0, r.jsxs)("div", {
       className: m.editResources,
-      children: [b.map((e, n) => (0, r.jsx)(u.Z, {
+      children: [h.map((e, n) => (0, r.jsx)(u.Z, {
         guildId: t,
         resourceChannel: e,
         index: n,
         onDragStart: j,
-        onDragReset: _,
-        onDragComplete: v
-      }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
+        onDragReset: v,
+        onDragComplete: O
+      }, e.channelId)), h.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: m.addActionItem,
-        onClick: C,
+        onClick: y,
         children: [(0, r.jsx)(a.oFk, {
           size: "xs",
           color: "currentColor"

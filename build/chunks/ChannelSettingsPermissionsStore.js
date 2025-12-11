@@ -24,7 +24,7 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function b(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ let E = new Set,
 
 function P(e) {
   let t = e.getGuildId(),
-    n = _({}, e.permissionOverwrites);
+    n = b({}, e.permissionOverwrites);
   return null != t && null == n[t] && (n[t] = d.we(t)), n
 }
 
@@ -129,10 +129,10 @@ let Z = new A(Chunk570140.Z, {
       deny: i
     } = e, l = null == y ? true : y[t];
     if (null == l || null == C) returnfalse;
-    l = b(_({}, l), {
+    l = _(b({}, l), {
       allow: n,
       deny: i
-    }), y = b(_({}, y), {
+    }), y = _(b({}, y), {
       [t]: l
     }), E.add(t), O = g.QZA.OPEN, v = !s().isEqual(y, I), r = d.o4(C, S)
   },
@@ -167,7 +167,7 @@ let Z = new A(Chunk570140.Z, {
       let n = {};
       return E.forEach(e => {
         null != y && (n[e] = y[e])
-      }), null == n[t] && null == C.permissionOverwrites[t] && (n[t] = d.we(t)), null == (y = _({}, C.permissionOverwrites, n))[T] ? T = t : null != N && null != y[N] && (T = N, N = null), r = d.o4(C, S), true
+      }), null == n[t] && null == C.permissionOverwrites[t] && (n[t] = d.we(t)), null == (y = b({}, C.permissionOverwrites, n))[T] ? T = t : null != N && null != y[N] && (T = N, N = null), r = d.o4(C, S), true
     }(e.id) && (n = true);
     return n
   },

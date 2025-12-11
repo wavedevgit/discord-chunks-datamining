@@ -1,8 +1,8 @@
 /** Chunk was on 31924 **/
 /** chunk id: 625651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h,
-  f: () => T
+  default: () => y,
+  f: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk795338 = require("./795338.jsx"),
   Chunk17622 = require("./17622.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk5238 = require("./5238.js"),
+  Chunk44542 = require("./44542.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk514186 = require("./514186.js");
+  Chunk259819 = require("./259819.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -43,37 +43,37 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function T(e, t) {
   if (null == e) return {};
-  var n, r, o = function(e, t) {
+  var n, r, a = function(e, t) {
     if (null == e) return {};
-    var n, r, o = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-    return o
+    var n, r, a = {},
+      o = Object.keys(e);
+    for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+    return a
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
   }
-  return o
+  return a
 }
 
-function T(e) {
+function h(e) {
   var t, n, {
-      size: a,
+      size: o,
       title: c,
       body: s,
       warningText: u,
       acknowledgementText: d,
-      error: f,
-      isLoading: b,
+      error: b,
+      isLoading: f,
       onDeactivate: m
     } = e,
-    p = _(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]);
-  let [k, g] = o.useState(false);
+    p = T(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]);
+  let [k, g] = a.useState(false);
   return (0, r.jsxs)(i.Modal, (t = j({}, p), n = n = {
-    size: a,
+    size: o,
     title: O.intl.formatToPlainString(v.default.iEBw1M, {
       perk: c
     }),
@@ -87,7 +87,7 @@ function T(e) {
     }, {
       variant: "critical-primary",
       text: O.intl.string(v.default.PYPdl4),
-      loading: b,
+      loading: f,
       onClick: m,
       disabled: null != d && !k
     }],
@@ -103,11 +103,11 @@ function T(e) {
         variant: "text-sm/medium",
         children: u
       })]
-    }), null != f && (0, r.jsx)(i.xvT, {
+    }), null != b && (0, r.jsx)(i.xvT, {
       className: I.errorText,
       color: "text-feedback-critical",
       variant: "text-sm/semibold",
-      children: f
+      children: b
     }), null != d && (0, r.jsx)("div", {
       className: I.acknowledgementContainer,
       children: (0, r.jsx)(l.Checkbox, {
@@ -129,37 +129,37 @@ function T(e) {
   }), t))
 }
 
-function h(e) {
+function y(e) {
   var {
     guildId: t,
     powerup: n
-  } = e, l = _(e, ["guildId", "powerup"]);
+  } = e, l = T(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: h,
-    error: y,
-    isLoading: w
+    onDeactivate: y,
+    error: w,
+    isLoading: C
   } = (0, p.Z)(t, n), {
-    onClose: C
-  } = l, E = o.useCallback(e => {
-    e.stopPropagation(), h().then(() => {
-      null == C || C()
+    onClose: E
+  } = l, S = a.useCallback(e => {
+    e.stopPropagation(), y().then(() => {
+      null == E || E()
     })
-  }, [C, h]), S = function(e, t) {
+  }, [E, y]), N = function(e, t) {
     let n = (0, c.e7)([u.Z], () => u.Z.getMemberCount(e)),
       l = (0, s.Z)(e),
-      b = (0, c.e7)([f.Z], () => {
+      f = (0, c.e7)([b.Z], () => {
         var t;
-        return (null == (t = f.Z.getGuild(e)) ? true : t.vanityURLCode) != null
+        return (null == (t = b.Z.getGuild(e)) ? true : t.vanityURLCode) != null
       }),
       p = (0, m.g1)(e, "Powerup Deactivate Modal"),
-      k = (0, c.e7)([d.Z], () => t.skuId !== a.If || null == l ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
+      k = (0, c.e7)([d.Z], () => t.skuId !== o.If || null == l ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
         var n, r;
         return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = l[t.id]) ? r : 0)
       }, 0), [e, t.skuId, l]);
-    return o.useMemo(() => {
+    return a.useMemo(() => {
       let e;
       switch (t.skuId) {
-        case a.If:
+        case o.If:
           e = k > 0 ? O.intl.formatToPlainString(v.default["4jSvr1"], {
             perk: t.title,
             memberCount: k
@@ -167,8 +167,8 @@ function h(e) {
             perk: t.title
           });
           break;
-        case a.A$:
-          e = b ? (0, r.jsx)(i.xvT, {
+        case o.A$:
+          e = f ? (0, r.jsx)(i.xvT, {
             color: "text-feedback-critical",
             variant: "text-sm/semibold",
             children: O.intl.string(v.default.hN75yb)
@@ -178,8 +178,8 @@ function h(e) {
             children: O.intl.string(v.default.Du91Rb)
           });
           break;
-        case a.MB:
-        case a.Vk:
+        case o.MB:
+        case o.Vk:
           e = O.intl.string(v.default.Vf2ZcR);
           break;
         default:
@@ -188,16 +188,16 @@ function h(e) {
             memberCount: null != n ? n : 0
           })
       }
-      return b && t.skuId === a.XW && (e = (0, r.jsxs)(r.Fragment, {
+      return f && t.skuId === o.XW && (e = (0, r.jsxs)(r.Fragment, {
         children: [e, (0, r.jsx)(i.xvT, {
           color: "text-feedback-critical",
           variant: "text-sm/semibold",
           children: p ? O.intl.string(v.default.TkNA7b) : O.intl.string(v.default.M4XL5n)
         })]
       })), e
-    }, [t, k, n, b, p])
+    }, [t, k, n, f, p])
   }(t, n);
-  return (0, b.$)(t, n, b.w.DEACTIVATE), (0, r.jsx)(T, j({
+  return (0, f.$)(t, n, f.w.DEACTIVATE), (0, r.jsx)(h, j({
     size: n.type === x.Us.LEVEL ? "md" : "sm",
     title: n.title,
     body: (() => {
@@ -213,9 +213,9 @@ function h(e) {
           })
       }
     })(),
-    warningText: S,
-    error: y,
-    isLoading: w,
-    onDeactivate: E
+    warningText: N,
+    error: w,
+    isLoading: C,
+    onDeactivate: S
   }, l))
 }

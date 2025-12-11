@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk210887 = require("./210887.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk932720 = require("./932720.js");
+  Chunk969373 = require("./969373.js");
 let h = function() {
   let {
     analyticsLocations: e
@@ -24,8 +24,8 @@ let h = function() {
   }, [exports]);
   let h = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.LIGHT),
     m = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.DARKER),
-    _ = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.MIDNIGHT),
-    b = Chunk473749.useMemo(() => [{
+    b = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.MIDNIGHT),
+    _ = Chunk473749.useMemo(() => [{
       theme: Chunk981631.BRd.LIGHT,
       label: Chunk388032.t.K2sFfo,
       color: h.hex()
@@ -36,8 +36,8 @@ let h = function() {
     }, {
       theme: Chunk981631.BRd.MIDNIGHT,
       label: Chunk388032.t.Do4ZJx,
-      color: _.hex()
-    }], [h, m, _]),
+      color: b.hex()
+    }], [h, m, b]),
     E = Chunk473749.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,
@@ -51,10 +51,10 @@ let h = function() {
       null != require.current && E(require.current)
     }, [E]);
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk932720.themeSection,
+    className: Chunk969373.themeSection,
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk932720.themeSelector,
-      children: [b.map(e => (0, r.jsxs)("button", {
+      className: Chunk969373.themeSelector,
+      children: [_.map(e => (0, r.jsxs)("button", {
         type: "button",
         className: g.themeOption,
         onClick: () => E(e.theme),

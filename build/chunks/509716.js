@@ -1,45 +1,26 @@
 /** Chunk was on web.js **/
 /** chunk id: 509716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  f: () => l
-}), require("./388685.js"), require("./781311.js");
-var Chunk456007 = require("./456007.js"),
-  Chunk895924 = require("./895924.js"),
-  Chunk351133 = require("./351133.js"),
-  Chunk689079 = require("./689079.js"),
-  Chunk388032 = require("./388032.jsx");
-
-function l(e) {
-  let {
-    option: t,
-    content: n,
-    guildId: l,
-    channelId: c,
-    allowEmptyValues: u,
-    commandOrigin: d = i.bB.CHAT
-  } = e, f = null != n ? (0, r.KF)({
-    content: n
-  }, "content").trim() : "", p = t.required, _ = "" === f;
-  if (null == n) return p ? {
-    success: false,
-    error: s.intl.string(s.t.JZJQL2)
-  } : {
-    success: true
-  };
-  if (_) return u ? {
-    success: true
-  } : p ? {
-    success: false,
-    error: s.intl.string(s.t.JZJQL2)
-  } : {
-    success: false,
-    error: (0, o.al)(t)
-  };
-  let m = n.length > 1 ? {
-      type: "text",
-      text: f
-    } : n[0],
-    h = a.Z[t.type](m, t, c, l, d);
-  return h.success || null != h.error || (h.error = (0, o.al)(t)), h
+module.exports = {
+  root: "_3ec704473ec6c7bf-root",
+  contentContainer: "_3ec704473ec6c7bf-contentContainer",
+  bodyContent: "_3ec704473ec6c7bf-bodyContent",
+  header: "_3ec704473ec6c7bf-header",
+  enhancedHeader: "_3ec704473ec6c7bf-enhancedHeader",
+  subHeader: "_3ec704473ec6c7bf-subHeader",
+  content: "_3ec704473ec6c7bf-content",
+  enhancedContent: "_3ec704473ec6c7bf-enhancedContent",
+  footer: "_3ec704473ec6c7bf-footer",
+  enhancedFooter: "_3ec704473ec6c7bf-enhancedFooter",
+  primaryActions: "_3ec704473ec6c7bf-primaryActions",
+  enhancedPrimaryActions: "_3ec704473ec6c7bf-enhancedPrimaryActions",
+  secondaryAction: "_3ec704473ec6c7bf-secondaryAction",
+  enhancedSecondaryAction: "_3ec704473ec6c7bf-enhancedSecondaryAction",
+  closeButton: "_3ec704473ec6c7bf-closeButton",
+  artContainer: "_3ec704473ec6c7bf-artContainer",
+  artContainerBoxShadow: "_3ec704473ec6c7bf-artContainerBoxShadow",
+  art: "_3ec704473ec6c7bf-art",
+  sparkleBadge: "_3ec704473ec6c7bf-sparkleBadge",
+  newBadge: "_3ec704473ec6c7bf-newBadge",
+  betaTag: "_3ec704473ec6c7bf-betaTag"
 }

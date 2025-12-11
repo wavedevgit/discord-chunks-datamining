@@ -1,7 +1,7 @@
 /** Chunk was on 76418 **/
 /** chunk id: 34251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk291967 = require("./291967.jsx"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk258910 = require("./258910.js");
+  Chunk679789 = require("./679789.js");
 
-function p(e) {
+function x(e) {
   let {
     quest: t,
     rewardName: n,
@@ -42,55 +42,55 @@ function p(e) {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: f.heading,
-        children: x.intl.string(x.t["0/Yz+Y"])
+        children: b.intl.string(b.t["0/Yz+Y"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: x.intl.format(x.t["v1u/zq"], {
+        children: b.intl.format(b.t["v1u/zq"], {
           rewardName: n
         })
       })]
     }), (0, r.jsx)(a.Button, {
       variant: "secondary",
       size: "sm",
-      text: x.intl.string(x.t.OD6Tvf),
+      text: b.intl.string(b.t.OD6Tvf),
       disabled: true,
       fullWidth: true
     })]
   })
 }
 
-function C(e) {
+function p(e) {
   var t, n;
   let {
     initialQuest: a,
     onClose: c,
-    transitionState: x,
+    transitionState: b,
     location: f,
-    sourceQuestContent: C
-  } = e, h = null != (n = (0, s.B4)(a.id)) ? n : a, g = i.useMemo(() => (0, l.K)(h.config), [h]), _ = (null == (t = h.userStatus) ? true : t.claimedAt) != null, j = !h.preview && !_, [v, N] = i.useState(j ? "loading" : "claimed");
+    sourceQuestContent: p
+  } = e, C = null != (n = (0, s.B4)(a.id)) ? n : a, h = i.useMemo(() => (0, l.K)(C.config), [C]), g = (null == (t = C.userStatus) ? true : t.claimedAt) != null, j = !C.preview && !g, [v, N] = i.useState(j ? "loading" : "claimed");
   i.useEffect(() => {
     if (j) {
-      let e = (0, l.zG)(h.config);
-      (0, o.QB)(h.id, e, f).then(() => N("claimed")).catch(() => N("error"))
+      let e = (0, l.zG)(C.config);
+      (0, o.QB)(C.id, e, f).then(() => N("claimed")).catch(() => N("error"))
     }
-  }, [h, f, j]);
-  let b = "error" === v || null == g;
+  }, [C, f, j]);
+  let y = "error" === v || null == h;
   return (0, r.jsx)(d.Z, {
     onClose: c,
-    transitionState: x,
-    quest: h,
-    sourceQuestContent: C,
+    transitionState: b,
+    quest: C,
+    sourceQuestContent: p,
     location: m.dr.INGAME_REWARD_MODAL,
     isRewardContentLoading: "loading" === v,
-    rewardContentHasError: b,
-    rewardContent: b ? null : (0, r.jsx)(u.Z, {
-      rewardName: g.messages.name,
-      children: (0, r.jsx)(p, {
-        quest: h,
-        rewardName: g.messages.name,
+    rewardContentHasError: y,
+    rewardContent: y ? null : (0, r.jsx)(u.Z, {
+      rewardName: h.messages.name,
+      children: (0, r.jsx)(x, {
+        quest: C,
+        rewardName: h.messages.name,
         location: f,
-        sourceQuestContent: C
+        sourceQuestContent: p
       })
     })
   })

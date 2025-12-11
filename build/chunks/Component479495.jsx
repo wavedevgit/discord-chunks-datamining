@@ -24,7 +24,7 @@ var n, Chunk54381 = require("./54381.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk478411 = require("./478411.js");
 
 function P(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,14 +57,14 @@ class E extends(n = Chunk473749.PureComponent) {
       children: [(0, Chunk54381.jsx)("img", {
         alt: "",
         src: null == Chunk593473 ? require("./26230.js") : require("./935227.js"),
-        className: Chunk197571.marginBottom20
+        className: Chunk478411.marginBottom20
       }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
         children: Chunk388032.intl.string(Chunk388032.t["1LV6Kq"])
       }), (0, Chunk54381.jsxs)(Chunk388905.gO, {
-        className: Chunk197571.marginTop20,
+        className: Chunk478411.marginTop20,
         children: [(0, Chunk54381.jsx)(Chunk388905.II, {
           label: Chunk388032.intl.string(Chunk388032.t["8dM4FO"]),
-          className: Chunk197571.marginBottom20,
+          className: Chunk478411.marginBottom20,
           name: "password",
           value: module,
           onChange: e => this.setState({
@@ -137,9 +137,9 @@ class E extends(n = Chunk473749.PureComponent) {
       children: [(0, Chunk54381.jsx)("img", {
         alt: "",
         src: require("./26230.js"),
-        className: o()(Chunk197571.marginBottom20, Chunk873546.tq ? Chunk197571.marginTop20 : "")
+        className: o()(Chunk478411.marginBottom20, Chunk873546.tq ? Chunk478411.marginTop20 : "")
       }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom40,
+        className: Chunk478411.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.WAUOoK)
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         text: Chunk388032.intl.string(Chunk388032.t["uJWIj/"]),

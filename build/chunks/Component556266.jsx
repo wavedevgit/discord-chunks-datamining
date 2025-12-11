@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 556266, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk152242 = require("./152242.jsx"),
   Chunk231338 = require("./231338.js");
 
-function _(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -40,76 +40,76 @@ function _(e) {
   }
   return e
 }
-let j = function() {
+let I = function() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return (t, n, l) => (0, i.jsx)(v.Z, {
-    step: l,
+  return (t, n, a) => (0, i.jsx)(v.Z, {
+    step: a,
     onClose: () => n(false),
     isGift: e
   })
 };
 
-function I(e) {
+function P(e) {
   let {
     onClose: t,
     onComplete: n,
-    transitionState: l,
-    applicationId: a,
+    transitionState: a,
+    applicationId: l,
     analyticsLocationObject: s,
     skuId: o,
-    isGift: d
-  } = e, {} = (0, c.JL)(), {
+    isGift: c
+  } = e, {} = (0, d.JL)(), {
     analyticsLocations: u
   } = (0, r.ZP)();
   return (0, i.jsx)(f.PaymentModal, {
     onClose: t,
     onComplete: n,
-    applicationId: a,
+    applicationId: l,
     skuId: o,
-    renderHeader: j(d),
+    renderHeader: I(c),
     initialPlanId: null,
     analyticsObject: s,
     analyticsLocations: u,
-    transitionState: l
+    transitionState: a
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     loadId: t,
     applicationId: n,
     skuId: f,
     analyticsLocations: v,
-    isGift: j = false,
-    giftRecipient: P,
-    giftingOrigin: w
+    isGift: I = false,
+    giftRecipient: w,
+    giftingOrigin: _
   } = e, {
     analyticsLocations: y
-  } = (0, r.ZP)(v, a.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), S = (0, s.q)(n);
-  return l.useEffect(() => {
+  } = (0, r.ZP)(v, l.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), S = (0, s.q)(n);
+  return a.useEffect(() => {
     null == S || null == S.guildId || null == f || p.Z.isFetchingForSKU(f) || null != m.Z.get(f) || (0, h.y)(S.guildId, f)
   }, [S, f]), (0, i.jsx)(r.Gt, {
     value: y,
-    children: (0, i.jsx)(c.PaymentContextProvider, {
+    children: (0, i.jsx)(d.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
         return [g.WA, ...e ? [C.jM] : [], g.s2, ...g.yp, g.wo, {
-          key: d.h8.CONFIRM,
-          renderStep: e => (0, i.jsx)(x.d, _({}, e))
+          key: c.h8.CONFIRM,
+          renderStep: e => (0, i.jsx)(x.d, j({}, e))
         }]
-      }(j),
+      }(I),
       applicationId: n,
       skuIDs: [f],
       activeSubscription: null,
       purchaseType: b.GZ.ONE_TIME,
-      isGift: j,
+      isGift: I,
       children: (0, i.jsx)(u.c1, {
         children: (0, i.jsx)(o.KB, {
-          isGift: j,
-          giftRecipient: P,
-          giftingOrigin: w,
-          children: (0, i.jsx)(I, _({}, e))
+          isGift: I,
+          giftRecipient: w,
+          giftingOrigin: _,
+          children: (0, i.jsx)(P, j({}, e))
         })
       })
     })

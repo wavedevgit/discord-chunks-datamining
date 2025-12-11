@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 919498, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => d,
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk971082 = require("./971082.jsx"),
   Chunk853072 = require("./853072.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk885486 = require("./885486.js");
+  Chunk912747 = require("./912747.js");
 
 function d(e) {
   var {
@@ -21,17 +21,17 @@ function d(e) {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["applicationId"]);
-  let i = (0, s.Z)(t);
+  let i = (0, c.Z)(t);
   return i.length > 0 ? (0, r.jsx)(o.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -50,7 +50,7 @@ function d(e) {
     }
     return e
   }({
-    label: c.intl.formatToPlainString(c.t.ujhJdG, {
+    label: s.intl.formatToPlainString(s.t.ujhJdG, {
       numFriends: i.length
     }),
     users: i,
@@ -65,38 +65,38 @@ function f(e) {
     guildId: d,
     channelId: f,
     className: g
-  } = e, p = (0, s.Z)(n), m = p.length > 0, b = function(e, t, n) {
-    let r = e.slice(0, 3).map(e => a.ZP.getName(t, n, e));
-    return 1 === e.length ? c.intl.formatToPlainString(c.t.FURqTU, {
+  } = e, p = (0, c.Z)(n), b = p.length > 0, m = function(e, t, n) {
+    let r = e.slice(0, 3).map(e => l.ZP.getName(t, n, e));
+    return 1 === e.length ? s.intl.formatToPlainString(s.t.FURqTU, {
       name: r[0]
-    }) : 2 === e.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
+    }) : 2 === e.length ? s.intl.formatToPlainString(s.t["08Usu/"], {
       name1: r[0],
       name2: r[1]
-    }) : 3 === e.length ? c.intl.formatToPlainString(c.t.NTYHag, {
+    }) : 3 === e.length ? s.intl.formatToPlainString(s.t.NTYHag, {
       name1: r[0],
       name2: r[1],
       name3: r[2]
-    }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
+    }) : s.intl.formatToPlainString(s.t["i/5oAn"], {
       name1: r[0],
       name2: r[1],
       name3: r[2],
       numPeople: e.length - 3
     })
-  }(p, d, f), h = (0, l.Z)({
+  }(p, d, f), h = (0, a.Z)({
     location: "SocialProofButton",
     applicationId: n,
     source: i.m1.UserProfile,
     sourceUserId: t,
     trackEntryPointImpression: true
   });
-  return m && null != h ? (0, r.jsx)(o.$, {
+  return b && null != h ? (0, r.jsx)(o.$, {
     users: p,
-    label: b,
+    label: m,
     className: g,
     onClick: h,
     guildId: d,
     channelId: f,
-    "aria-label": b,
+    "aria-label": m,
     overflowCountColor: "text-strong",
     overflowCountClassName: u.gameCoverOverflowCount
   }) : null

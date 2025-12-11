@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 995993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  m: () => C
+  m: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,21 +23,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk176505 = require("./176505.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk885525 = require("./885525.js");
+  Chunk884874 = require("./884874.js");
 
-function C(e) {
+function E(e) {
   let {
     guild: t,
-    selected: C
-  } = e, E = (0, f.Z)(t), S = (0, u.Nj)(o.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([p.Z], () => Array.from(p.Z.getNewChannelIds(t.id)).filter(e => p.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, v.W.GUILD_ONBOARDING_QUESTION)), N = I.length > b.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
+    selected: E
+  } = e, S = (0, f.Z)(t), I = (0, u.Nj)(a.z.CHANNEL_BROWSER_NEW_BADGE_NUX), _ = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), P = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), N = _.length > m.Cb, Z = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
-      n = g.ZP.lastMessageId(t.id, v.W.GUILD_ONBOARDING_QUESTION);
+      n = g.ZP.lastMessageId(t.id, j.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
-    let r = m.default.extractTimestamp(n);
+    let r = b.default.extractTimestamp(n);
     return null != e && e > r
   }), w = i.useCallback(() => {
-    (0, h.uL)(y.Z5c.CHANNEL(t.id, E ? O.oC.CUSTOMIZE_COMMUNITY : O.oC.CHANNEL_BROWSER))
-  }, [t.id, E]), T = i.useCallback(e => {
+    (0, p.uL)(O.Z5c.CHANNEL(t.id, S ? v.oC.CUSTOMIZE_COMMUNITY : v.oC.CHANNEL_BROWSER))
+  }, [t.id, S]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -76,19 +76,19 @@ function C(e) {
       }
     })
   }, [t]), A = null;
-  return S && !P && !N || C || Z || (A = (0, r.jsx)(s.IGR, {
-    color: a.Z.colors.BADGE_BACKGROUND_DEFAULT.css,
-    text: j.intl.string(j.t.y2b7CA),
+  return I && !P && !N || E || Z || (A = (0, r.jsx)(s.IGR, {
+    color: o.Z.colors.BADGE_BACKGROUND_DEFAULT.css,
+    text: C.intl.string(C.t.y2b7CA),
     className: x.newChannel
-  })), (0, r.jsx)(_.m, {
+  })), (0, r.jsx)(y.m, {
     id: "channels-".concat(t.id),
     renderIcon: e => (0, r.jsx)(s.H$4, {
       size: "md",
       color: "currentColor",
       className: e
     }),
-    text: E ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
-    selected: C,
+    text: S ? C.intl.string(C.t.h9mGOP) : C.intl.string(C.t.et6wav),
+    selected: E,
     onClick: w,
     onContextMenu: T,
     trailing: A

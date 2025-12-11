@@ -1,12 +1,12 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk493773 = require("./493773.js"),
@@ -16,67 +16,67 @@ var Chunk54381 = require("./54381.js"),
   Chunk82409 = require("./82409.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk888831 = require("./888831.js");
+  Chunk122069 = require("./122069.js");
 
-function b(e) {
+function m(e) {
   let {
     children: t,
     popoutPosition: n,
     popoutAlign: l,
-    targetElementRef: p,
-    spacing: b = 0
+    targetElementRef: h,
+    spacing: m = 0
   } = e, {
-    isOpen: y,
-    setIsOpen: O
-  } = (0, f.Z)(), v = i.useCallback(() => {
-    O(false)
-  }, [O]), j = i.useCallback(() => {
-    O(!y)
-  }, [y, O]);
+    isOpen: O,
+    setIsOpen: v
+  } = (0, f.Z)(), j = i.useCallback(() => {
+    v(false)
+  }, [v]), C = i.useCallback(() => {
+    v(!O)
+  }, [O, v]);
   (0, c.ZP)(() => {
     let e = () => {
-      O(false)
+      v(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, j)), [j]);
+  }), i.useEffect(() => (u.S.subscribe(p.CkL.TOGGLE_INBOX, C), () => void u.S.unsubscribe(p.CkL.TOGGLE_INBOX, C)), [C]);
   let {
     entrypoint: x
   } = (0, d.pN)({
     location: "NotificationsInboxPopout"
   });
-  return (0, r.jsx)(a.yRy, {
-    targetElementRef: p,
-    shouldShow: y,
+  return (0, r.jsx)(o.yRy, {
+    targetElementRef: h,
+    shouldShow: O,
     align: l,
-    animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
+    animation: x === d.u3.TITLE_BAR_LEFT ? o.yRy.Animation.TRANSLATE : o.yRy.Animation.FADE,
     animationPosition: x === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
     position: n,
-    onRequestClose: v,
-    spacing: b,
-    renderPopout: () => (0, r.jsx)(a.VqE, {
+    onRequestClose: j,
+    spacing: m,
+    renderPopout: () => (0, r.jsx)(o.VqE, {
       "aria-label": g.intl.string(g.t.GSmTKJ),
-      className: o()({
-        [m.repositionLayerTitlebarPopout]: x === d.u3.TITLE_BAR_LEFT,
-        [m.repositionLayerSidebarPopout]: x === d.u3.SERVER_RAIL_TOP
+      className: a()({
+        [b.repositionLayerTitlebarPopout]: x === d.u3.TITLE_BAR_LEFT,
+        [b.repositionLayerSidebarPopout]: x === d.u3.SERVER_RAIL_TOP
       }),
-      children: (0, r.jsx)(_, {})
+      children: (0, r.jsx)(y, {})
     }),
     children: (e, n) => {
       let {
         isShown: r
       } = n;
-      return t(j, r, e)
+      return t(C, r, e)
     }
   })
 }
 
-function _() {
+function y() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk888831.container,
+    className: Chunk122069.container,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk888831.backgroundContainer,
+      className: Chunk122069.backgroundContainer,
       children: (0, Chunk54381.jsx)("span", {
-        className: Chunk888831.background
+        className: Chunk122069.background
       })
     }), (0, Chunk54381.jsx)(Chunk82409.Z, {})]
   })

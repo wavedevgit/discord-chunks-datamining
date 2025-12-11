@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 993397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk378661 = require("./378661.js"),
-  Chunk360514 = require("./360514.js");
+  Chunk884193 = require("./884193.js"),
+  Chunk548498 = require("./548498.js");
 
 function C(e) {
   let {
@@ -48,7 +48,7 @@ function C(e) {
   return (0, i.jsx)(u.Z, {
     compact: l,
     role: "group",
-    childrenMessageContent: (0, i.jsx)(h.Z, {
+    childrenMessageContent: (0, i.jsx)(f.Z, {
       compact: l,
       className: g.blockedSystemMessage,
       iconNode: c,
@@ -75,28 +75,28 @@ let y = Chunk473749.memo(function(e) {
     unreadId: s,
     collapsedReason: u
   } = e, {
-    hasJumpTarget: h = false
-  } = n, [m, y] = r.useState(h), v = r.useCallback(() => y(e => !e), []);
+    hasJumpTarget: f = false
+  } = n, [m, y] = r.useState(f), v = r.useCallback(() => y(e => !e), []);
   r.useEffect(() => {
-    h && y(true)
-  }, [h]);
-  let _ = n.hasUnread ? n.content.length - 1 : n.content.length;
+    f && y(true)
+  }, [f]);
+  let O = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, i.jsxs)("div", {
     className: a()({
       [b.groupStart]: true,
       [g.expanded]: m
     }),
-    children: [n.hasUnread && (!m || (null == (t = n.content[0]) ? true : t.type) === f.ys_.DIVIDER) ? (0, i.jsx)(p.Z, {
+    children: [n.hasUnread && (!m || (null == (t = n.content[0]) ? true : t.type) === h.ys_.DIVIDER) ? (0, i.jsx)(p.Z, {
       isUnread: true,
       id: s
     }, "divider") : null, (0, i.jsx)(C, {
-      count: _,
+      count: O,
       compact: o,
       expanded: m,
       onClick: v,
       collapsedReason: u
     }, "collapsed-message-item"), m ? n.content.map((e, t) => {
-      if (e.type === f.ys_.DIVIDER && t > 0) {
+      if (e.type === h.ys_.DIVIDER && t > 0) {
         var r, a;
         let e = null != (a = null == (r = n.content[t + 1]) ? true : r.isGroupStart) && a;
         return (0, i.jsx)(p.Z, {
@@ -105,8 +105,8 @@ let y = Chunk473749.memo(function(e) {
           id: s
         }, "divider")
       }
-      if (e.type === f.ys_.MESSAGE || e.type === f.ys_.THREAD_STARTER_MESSAGE) {
-        let t = e.type === f.ys_.THREAD_STARTER_MESSAGE ? d.Ru : d.ZP;
+      if (e.type === h.ys_.MESSAGE || e.type === h.ys_.THREAD_STARTER_MESSAGE) {
+        let t = e.type === h.ys_.THREAD_STARTER_MESSAGE ? d.Ru : d.ZP;
         return (0, i.jsx)(t, {
           id: (0, c.p)(l.id, e.content.id),
           className: g.__invalid_blocked,

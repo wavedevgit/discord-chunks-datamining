@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 957011, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,8 +16,8 @@ var Chunk473749 = require("./473749.js"),
 function u(e, t) {
   let n = (0, i.e7)([s.Z], () => s.Z.getGuild(e)),
     [u, g] = r.useState(),
-    [m, p] = r.useState(false),
-    f = (0, d.Ob)(n);
+    [m, f] = r.useState(false),
+    p = (0, d.Ob)(n);
   return {
     canSubmitAcceptance: (0, i.e7)([o.default], () => {
       let e = o.default.getCurrentUser();
@@ -26,16 +26,16 @@ function u(e, t) {
     error: u,
     loading: m,
     submitAcceptTermsRequest: r.useCallback(async () => {
-      if (null != e && (f || null != t)) {
-        p(true), g(true);
+      if (null != e && (p || null != t)) {
+        f(true), g(true);
         try {
           null != t ? await c.wE(e, t) : await c.zo(e)
         } catch (e) {
           g(new l.Z(e))
         } finally {
-          p(false)
+          f(false)
         }
       }
-    }, [e, t, f])
+    }, [e, t, p])
   }
 }

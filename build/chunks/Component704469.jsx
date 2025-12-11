@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 704469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -21,8 +21,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk396728 = require("./396728.jsx"),
   Chunk58201 = require("./58201.js"),
   Chunk201964 = require("./201964.js"),
-  Chunk374370 = require("./374370.js");
-let y = e => {
+  Chunk635492 = require("./635492.js");
+let C = e => {
     let {
       product: t,
       isCardHovered: n
@@ -32,11 +32,11 @@ let y = e => {
     } = (0, p.L)(t), c = r === l.Z.PROFILE_EFFECT;
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)("div", {
-        className: i()(_.productPreview, {
-          [_.faded]: (s || o) && !n,
-          [_.fullPreview]: c
+        className: i()(y.productPreview, {
+          [y.faded]: (s || o) && !n,
+          [y.fullPreview]: c
         }),
-        children: (0, a.jsx)(C, {
+        children: (0, a.jsx)(_, {
           product: t,
           isCardHovered: n
         })
@@ -45,7 +45,7 @@ let y = e => {
       })]
     })
   },
-  C = e => {
+  _ = e => {
     let {
       product: t,
       isCardHovered: n
@@ -59,7 +59,7 @@ let y = e => {
           removeSetHeight: true
         });
       case l.Z.AVATAR_DECORATION:
-        return (0, a.jsx)(f.R, {
+        return (0, a.jsx)(x.R, {
           item: s,
           user: r,
           isHighlighted: n,
@@ -67,21 +67,21 @@ let y = e => {
           avatarSize: c.EFr.SIZE_120
         });
       case l.Z.NAMEPLATE:
-        return (0, a.jsx)(b.Z, {
+        return (0, a.jsx)(g.Z, {
           nameplate: s,
           user: r,
           isHighlighted: n,
           isPurchased: false
         });
       case l.Z.BUNDLE:
-        return (0, a.jsx)(g.d, {
+        return (0, a.jsx)(b.d, {
           product: t,
           user: r,
           isHighlighted: n,
           isPurchased: false
         });
       case l.Z.EXTERNAL_SKU:
-        return (0, a.jsx)(x.b, {
+        return (0, a.jsx)(f.b, {
           product: t,
           animationState: n ? "on" : "off"
         });
@@ -98,8 +98,8 @@ let y = e => {
       color: c.TVs.colors.INTERACTIVE_TEXT_ACTIVE,
       width: 40,
       height: 40,
-      className: i()(_.productPreviewIconOverlay, {
-        [_.hidden]: t
+      className: i()(y.productPreviewIconOverlay, {
+        [y.hidden]: t
       })
     })
   },
@@ -111,7 +111,7 @@ let y = e => {
     } = e, i = (0, h.LJ)(t), l = (0, m.o)(i);
     if (null == i) return null;
     let s = (0, v.W)(i, null != r ? r : l);
-    return (0, a.jsx)(y, {
+    return (0, a.jsx)(C, {
       product: s,
       isCardHovered: n
     })

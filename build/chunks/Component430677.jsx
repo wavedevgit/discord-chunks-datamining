@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,24 +20,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk430824 = require("./430824.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
-let _ = function(e) {
-  var t, l, _, v, O;
+  Chunk551952 = require("./551952.js");
+let v = function(e) {
+  var t, l, v, O, C;
   let {
-    guildId: C,
-    action: y,
-    actionIndex: N,
-    onChange: E,
-    onDelete: I,
-    onDragStart: S,
+    guildId: y,
+    action: N,
+    actionIndex: E,
+    onChange: I,
+    onDelete: S,
+    onDragStart: _,
     onDragComplete: T,
     onDragReset: P
-  } = e, w = (0, s.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, s.e7)([h.Z], () => h.Z.getGuild(C)), {
+  } = e, w = (0, s.e7)([p.Z], () => p.Z.getChannel(N.channelId)), Z = (0, s.e7)([b.Z], () => b.Z.getGuild(y)), {
     customEmoji: R,
     unicodeEmoji: D
-  } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != R || null != D, L = b.ZP.getNewMemberActionIconURL({
-    channelId: y.channelId,
-    icon: y.icon
+  } = (0, g.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), A = null == N.emoji || null != R || null != D, L = h.ZP.getNewMemberActionIconURL({
+    channelId: N.channelId,
+    icon: N.icon
   }), k = null;
   null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKP);
   let {
@@ -47,16 +47,16 @@ let _ = function(e) {
     setIsDraggable: B
   } = (0, u.Z)({
     type: "NEW_MEMBER_ACTION",
-    index: N,
-    optionId: y.channelId,
-    onDragStart: S,
+    index: E,
+    optionId: N.channelId,
+    onDragStart: _,
     onDragComplete: T,
     onDragReset: P
   }), F = i.useCallback(() => {
-    if (null != C) return (0, c.ZDy)(async () => {
+    if (null != y) return (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7590"), n.e("83975")]).then(n.bind(n, 380716));
+      } = await Promise.all([n.e("7590"), n.e("88575")]).then(n.bind(n, 380716));
       return t => {
         var n, i;
         return (0, r.jsx)(e, (n = function(e) {
@@ -77,10 +77,10 @@ let _ = function(e) {
           }
           return e
         }({}, t), i = i = {
-          guildId: C,
-          action: y,
-          onSave: (e, t, n) => E(N, e, t, n),
-          onDelete: () => I(N)
+          guildId: y,
+          action: N,
+          onSave: (e, t, n) => I(E, e, t, n),
+          onDelete: () => S(E)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -93,15 +93,15 @@ let _ = function(e) {
         }), n))
       }
     })
-  }, [C, y, N, E, I]);
+  }, [y, N, E, I, S]);
   if (null == w || null == Z) return null;
-  let H = null != (O = (0, d.KS)(w)) ? O : c.VL1;
+  let H = null != (C = (0, d.KS)(w)) ? C : c.VL1;
   return (0, r.jsxs)("div", {
     className: j.actionItemContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(j.actionItem, {
-        [j.dropIndicatorBefore]: null != M && N < M,
-        [j.dropIndicatorAfter]: null != M && N > M,
+        [j.dropIndicatorBefore]: null != M && E < M,
+        [j.dropIndicatorAfter]: null != M && E > M,
         [j.actionItemError]: null != k
       }),
       ref: e => {
@@ -128,10 +128,10 @@ let _ = function(e) {
         })
       }) : (0, r.jsx)("div", {
         className: j.actionItemEmojiWrapper,
-        children: (0, r.jsx)(p.Z, {
-          emojiId: null == (_ = y.emoji) ? true : _.id,
-          emojiName: null == (v = y.emoji) ? true : v.name,
-          size: p.R.MEDIUM,
+        children: (0, r.jsx)(f.Z, {
+          emojiId: null == (v = N.emoji) ? true : v.id,
+          emojiName: null == (O = N.emoji) ? true : O.name,
+          size: f.R.MEDIUM,
           defaultComponent: (0, r.jsx)(H, {})
         })
       }), (0, r.jsxs)("div", {
@@ -139,7 +139,7 @@ let _ = function(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: y.title
+          children: N.title
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",

@@ -1,4 +1,4 @@
-/** Chunk was on 47863 **/
+/** Chunk was on 44183 **/
 /** chunk id: 560749, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -27,15 +27,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk823379 = require("./823379.js"),
   Chunk102172 = require("./102172.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk258587 = require("./258587.js"),
+  Chunk297940 = require("./297940.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603410 = require("./603410.js");
+  Chunk311066 = require("./311066.js");
 
 function E(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([y.ZP, b.default], () => y.ZP.getVoiceStatesForChannel(t.record).map(e => b.default.getUser(e.user.id)).filter(C.lm));
+  } = e, i = (0, o.e7)([b.Z], () => b.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([y.ZP, S.default], () => y.ZP.getVoiceStatesForChannel(t.record).map(e => S.default.getUser(e.user.id)).filter(C.lm));
   return (0, r.jsxs)(c.P3F, {
     className: I.channelResult,
     onClick: () => n(t.record.id),
@@ -80,29 +80,29 @@ function T(e) {
     searchOptions: {
       frecencyBoosters: true
     }
-  }), b = (0, o.Wu)([S.Z, x.ZP, _.Z, v.Z, j.Z], () => {
+  }), S = (0, o.Wu)([_.Z, v.ZP, g.Z, b.Z, j.Z], () => {
     let e = [],
-      t = S.Z.getGuildId();
+      t = _.Z.getGuildId();
     if (null == t) return e;
-    for (let n of x.ZP.getVocalChannelIds(t)) {
-      let t = _.Z.getChannel(n);
-      null != t && (0, O.JL)(t, v.Z, j.Z) && e.push(t)
+    for (let n of v.ZP.getVocalChannelIds(t)) {
+      let t = g.Z.getChannel(n);
+      null != t && (0, O.JL)(t, b.Z, j.Z) && e.push(t)
     }
     return e
-  }), y = (0, o.Wu)([f.Z, _.Z, g.Z, v.Z, j.Z], () => {
+  }), y = (0, o.Wu)([f.Z, g.Z, x.Z, b.Z, j.Z], () => {
     let e = [],
       t = new Set;
     for (let n of f.Z.getChannelHistory()) {
-      let r = _.Z.getChannel(n);
-      (null == r ? true : r.type) === w.d4z.GUILD_VOICE && (0, O.JL)(r, v.Z, j.Z) && (t.add(r.id), e.push(r))
+      let r = g.Z.getChannel(n);
+      (null == r ? true : r.type) === w.d4z.GUILD_VOICE && (0, O.JL)(r, b.Z, j.Z) && (t.add(r.id), e.push(r))
     }
-    for (let n of g.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, v.Z, j.Z) && (t.add(n.id), e.push(n));
+    for (let n of x.Z.getFrequentlyWithoutFetchingLatest()) n instanceof h.Sf && n.type === w.d4z.GUILD_VOICE && !t.has(n.id) && (0, O.JL)(n, b.Z, j.Z) && (t.add(n.id), e.push(n));
     return e
   }), T = i.useMemo(() => {
     let e = new Set(y.map(e => e.id)),
-      t = new Set(b.map(e => e.id));
-    return [...b.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, u.Z)(e.id)).filter(C.lm)]
-  }, [y, b]), A = "" !== a ? m : T;
+      t = new Set(S.map(e => e.id));
+    return [...S.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, u.Z)(e.id)).filter(C.lm)]
+  }, [y, S]), A = "" !== a ? m : T;
   return (0, r.jsxs)("div", {
     className: s()(I.root, n),
     children: [(0, r.jsx)("div", {
@@ -146,20 +146,20 @@ function T(e) {
 
 function N() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk603410.emptyState,
+    className: Chunk311066.emptyState,
     children: [(0, Chunk54381.jsx)(Chunk481060._Ve, {
-      className: Chunk603410.emptyIcon,
+      className: Chunk311066.emptyIcon,
       size: "md",
       color: Chunk481060.TVs.colors.ICON_MUTED
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk603410.emptyHeader,
+      className: Chunk311066.emptyHeader,
       variant: "text-lg/medium",
       color: "header-primary",
-      children: Chunk388032.intl.string(Chunk258587.default.sWGfr9)
+      children: Chunk388032.intl.string(Chunk297940.default.sWGfr9)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      children: Chunk388032.intl.string(Chunk258587.default["nBRtt/"])
+      children: Chunk388032.intl.string(Chunk297940.default["nBRtt/"])
     })]
   })
 }

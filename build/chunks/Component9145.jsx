@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -37,15 +37,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk617552 = require("./617552.jsx"),
   Chunk719296 = require("./719296.js"),
   Chunk225639 = require("./225639.js"),
-  Chunk651612 = require("./651612.jsx"),
+  Chunk996726 = require("./996726.jsx"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk33985 = require("./33985.js");
+  Chunk257536 = require("./257536.js");
 let F = Chunk884338.u8.SIZE_32,
   B = {
-    [Chunk918559.MI.NO_CHAT]: Chunk33985.noChat,
-    [Chunk918559.MI.RESIZABLE]: Chunk33985.resizable
+    [Chunk918559.MI.NO_CHAT]: Chunk257536.noChat,
+    [Chunk918559.MI.RESIZABLE]: Chunk257536.resizable
   };
 
 function V(e) {
@@ -54,7 +54,7 @@ function V(e) {
     maxHeight: V,
     connectedLocation: z,
     renderExternalHeader: W
-  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(z), [z]), K = (0, T.p)(z), Q = (0, s.e7)([O.Z], () => O.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
+  } = e, Y = (0, N.Z)(), q = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(z), [z]), K = (0, T.p)(z), Q = (0, s.e7)([j.Z], () => j.Z.getChannel(K)), X = (0, Z.gb)(q), J = (0, Z.uF)(X), $ = i.useCallback(() => {
     (0, S.tg)(k.Ez.PIP)
   }, []), ee = i.useRef(null), et = (0, s.e7)([E.ZP], () => E.ZP.getFocusedLayout()), en = et !== k.MI.NO_CHAT, [er, ei] = i.useState(null != (n = null != (t = m.ZP.activityPanelHeight) ? t : V) ? n : null), el = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -85,10 +85,10 @@ function V(e) {
     ec ? ((t = es.width / k.I0) > es.height && (e = (t = es.height) * k.I0), eu = (es.height - t) / 2) : ((e = Math.min(es.height * k.I0)) > es.width && (t = (e = es.width) / k.I0), ed = (es.width - e) / 2)
   }
   let eh = J.get(null != (l = null == Y ? true : Y.id) ? l : ""),
-    ef = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
-    eg = (0, s.Wu)([j.ZP], () => {
+    ef = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
+    eg = (0, s.Wu)([x.ZP], () => {
       var e;
-      return null == Q ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(Q.guild_id, e))
+      return null == Q ? [] : Array.from(null != (e = null == eh ? true : eh.embeddedActivity.userIds) ? e : []).map(e => x.ZP.getMember(Q.guild_id, e))
     }, [eh, Q]),
     em = i.useMemo(() => {
       let e = new Map;
@@ -146,15 +146,15 @@ function V(e) {
         }), r) : l
       }, [o, e, n, t])
     }(en, er, V),
-    e_ = (0, L.y)();
+    ey = (0, L.y)();
   if (null == Y) return null;
-  let ey = [];
-  null != eh && (ey = Array.from(eh.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
-  let eO = e => {
+  let eO = [];
+  null != eh && (eO = Array.from(eh.embeddedActivity.userIds).map(e => C.default.getUser(e)).filter(e => null != e && true !== e));
+  let ej = e => {
     var t;
     if (null == e || true === e || e === w.ag) return null;
     let n = em.get(e.id),
-      i = null != (t = null == n ? true : n.nick) ? t : I.ZP.getName(e);
+      i = null != (t = null == n ? true : n.nick) ? t : _.ZP.getName(e);
     return (0, r.jsx)(c.u, {
       asContainer: true,
       text: i,
@@ -201,10 +201,10 @@ function V(e) {
           className: H.footer,
           children: [(0, r.jsx)(w.ZP, {
             renderIcon: false,
-            users: ey,
+            users: eO,
             size: F,
             max: 6,
-            renderUser: eO
+            renderUser: ej
           }), (0, r.jsxs)("div", {
             className: H.footerButtons,
             children: [(0, r.jsxs)("div", {
@@ -220,14 +220,14 @@ function V(e) {
               })]
             }), (0, r.jsx)("div", {
               className: H.leaveButtonContainer,
-              children: (0, r.jsx)(_.Z, {
+              children: (0, r.jsx)(y.Z, {
                 applicationId: Y.id,
                 location: z,
                 centerButton: true,
                 color: "disconnect"
               })
             })]
-          }), e_ ? (0, r.jsx)(y.Z, {
+          }), ey ? (0, r.jsx)(O.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, f.yw)(U.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, A.Z)({
@@ -244,12 +244,12 @@ function V(e) {
         maxHeight: V,
         resizableNode: ee,
         onResize: e => {
-          C.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          I.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: true
           }), ei(e)
         },
         onResizeEnd: e => {
-          C.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
+          I.S.dispatch(U.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: false
           }), el(e)
         }

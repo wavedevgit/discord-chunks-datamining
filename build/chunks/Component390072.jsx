@@ -1,7 +1,7 @@
-/** Chunk was on 47135 **/
+/** Chunk was on 66452 **/
 /** chunk id: 390072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,14 +10,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk11868 = require("./11868.jsx"),
   Chunk217804 = require("./217804.js"),
   Chunk765305 = require("./765305.js"),
-  Chunk831272 = require("./831272.js");
+  Chunk984946 = require("./984946.js");
 
-function d(e) {
+function u(e) {
   let {
     guildScheduledEvent: t,
     channel: n,
-    onClose: d
-  } = e, _ = t.entity_type === a.WX.EXTERNAL, f = r.useCallback(e => (0, c.Qt)(t, d)(e), [t, d]), h = (0, o.u)(t, n);
+    onClose: u
+  } = e, f = t.entity_type === o.WX.EXTERNAL, b = r.useCallback(e => (0, s.Qt)(t, u)(e), [t, u]), h = (0, c.u)(t, n);
   if (null == h) return null;
   let {
     IconComponent: m,
@@ -28,19 +28,19 @@ function d(e) {
       color: "currentColor",
       width: 20,
       height: 20,
-      className: u.channelIcon
+      className: d.channelIcon
     }), (0, l.jsx)(i.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      className: u.locationText,
-      children: (0, s.m)(x, true)
+      className: d.locationText,
+      children: (0, a.m)(x, true)
     })]
   });
   return (0, l.jsx)("div", {
-    className: u.row,
-    children: null != f ? (0, l.jsx)(i.P3F, {
-      className: _ ? u.externalLocation : u.channelLocation,
-      onClick: f,
+    className: d.row,
+    children: null != b ? (0, l.jsx)(i.P3F, {
+      className: f ? d.externalLocation : d.channelLocation,
+      onClick: b,
       children: g
     }) : g
   })

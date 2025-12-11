@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 618748, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,13 +36,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk176505 = require("./176505.js"),
   Chunk829857 = require("./829857.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk459560 = require("./459560.js");
+  Chunk629203 = require("./629203.js");
 
 function L(e) {
   let {
     application: t,
     guild: n
-  } = e, l = (0, _.YB)(n.id), a = (0, _.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+  } = e, l = (0, v.YB)(n.id), a = (0, v.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([b.Z], () => a.map(e => b.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: D.intl.string(D.t.p2Rsdl),
     items: [{
       description: D.intl.string(D.t.zbO7fU),
@@ -73,7 +73,7 @@ function L(e) {
       completed: c
     }]
   }];
-  return (0, r.jsx)(I.Z, {
+  return (0, r.jsx)(S.Z, {
     children: u
   })
 }
@@ -83,7 +83,7 @@ function k(e) {
     application: t
   } = e, {
     teams: n
-  } = (0, p.Z)({
+  } = (0, f.Z)({
     refreshOnDepChange: false
   }), i = n.find(e => {
     var n;
@@ -113,7 +113,7 @@ function G(e) {
   return (0, o.P)(n), t = s ? a === w.KsC.ROLE_SUBSCRIPTION_EMOJI ? T.ue.EMOJIS : T.ue.TIERS : T.ue.PAYMENT, (0, r.jsx)(j.l, {
     guildId: n.id,
     refetchOnMount: true,
-    children: (0, r.jsx)(v.in, {
+    children: (0, r.jsx)(O.in, {
       guildId: n.id,
       children: (0, r.jsx)(T.M7, {
         initialTab: t,
@@ -133,27 +133,27 @@ function M(e) {
     } = e,
     d = null != o && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
     {
-      currentTab: p,
-      setCurrentTab: _
+      currentTab: f,
+      setCurrentTab: v
     } = (0, T.dw)(),
-    v = (0, j.f)(),
-    I = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
-    R = (0, C.Z)(n.id),
-    G = null != n && (0, f.eM)(n, I);
-  if (!v) return (0, r.jsx)(a.$jN, {});
-  switch (p) {
+    O = (0, j.f)(),
+    S = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
+    R = (0, y.Z)(n.id),
+    G = null != n && (0, p.eM)(n, S);
+  if (!O) return (0, r.jsx)(a.$jN, {});
+  switch (f) {
     case T.ue.BASIC_INFO:
-      t = (0, r.jsx)(E.Z, {
+      t = (0, r.jsx)(I.Z, {
         guild: n
       });
       break;
     case T.ue.TIERS:
-      t = (0, r.jsx)(S.Z, {
+      t = (0, r.jsx)(_.Z, {
         guildId: n.id
       });
       break;
     case T.ue.PAYMENT:
-      t = (0, r.jsx)(N.Z, {
+      t = (0, r.jsx)(E.Z, {
         guild: n
       });
       break;
@@ -163,7 +163,7 @@ function M(e) {
       });
       break;
     default:
-      (0, x.vE)(p)
+      (0, x.vE)(f)
   }
   return (0, r.jsxs)("div", {
     className: A.container,
@@ -178,7 +178,7 @@ function M(e) {
           variant: "text-sm/normal",
           children: D.intl.string(D.t.KyGv0k)
         })]
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(N.Z, {
         guild: n
       }), d && (0, r.jsx)(k, {
         application: o
@@ -187,10 +187,10 @@ function M(e) {
         children: [(0, r.jsxs)(a.njP, {
           className: A.tabBar,
           "aria-label": D.intl.string(D.t["+1H47t"]),
-          selectedItem: p,
+          selectedItem: f,
           type: "top",
           look: "brand",
-          onItemSelect: _,
+          onItemSelect: v,
           children: [(0, r.jsx)(s.Z, {
             id: T.ue.BASIC_INFO,
             disabledTooltip: D.intl.string(D.t.NVDuUX),
@@ -218,7 +218,7 @@ function M(e) {
             children: (0, r.jsx)(a.Button, {
               disabled: R,
               onClick: () => {
-                let e = h.Z.getEveryoneRole(n);
+                let e = b.Z.getEveryoneRole(n);
                 c.Z.close();
                 let t = {
                   [e.id]: e
@@ -228,7 +228,7 @@ function M(e) {
                   roles: t,
                   initialTab: "role_subscriptions",
                   returnToSection: w.pNK.ROLE_SUBSCRIPTIONS
-                }), (0, O.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
+                }), (0, C.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
               },
               text: D.intl.string(D.t.vM81yY),
               size: "sm",

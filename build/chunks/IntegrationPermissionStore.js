@@ -1,4 +1,4 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 905753, original params: e,t,n (module,exports,require) **/
 let i, r, l;
 require.d(exports, {
@@ -17,22 +17,22 @@ function u(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = {},
-  m = {},
-  b = false;
+let b = {},
+  p = {},
+  m = false;
 
-function g() {
-  i = true, p = {}, m = {}, r = true, l = true, b = false
+function f() {
+  i = true, b = {}, p = {}, r = true, l = true, m = false
 }
-class f extends(a = Chunk442837.ZP.Store) {
+class g extends(a = Chunk442837.ZP.Store) {
   getApplicationPermissions() {
-    return p
+    return b
   }
   getCommands() {
-    return m
+    return p
   }
   getCommand(e) {
-    return null == m ? true : m[e]
+    return null == p ? true : p[e]
   }
   getEditedApplication() {
     return r
@@ -41,28 +41,28 @@ class f extends(a = Chunk442837.ZP.Store) {
     return l
   }
   isUnavailable() {
-    return b
+    return m
   }
   getApplicationId() {
     return i
   }
 }
-u(f, "displayName", "IntegrationPermissionStore");
-let h = new f(Chunk570140.Z, {
-  LOGOUT: g,
+u(g, "displayName", "IntegrationPermissionStore");
+let h = new g(Chunk570140.Z, {
+  LOGOUT: f,
   INTEGRATION_PERMISSION_SETTINGS_APPLICATION_PERMISSIONS_FETCH_FAILURE: function(e) {
     let {
       applicationId: t
     } = e;
     if (t !== i) returnfalse;
-    b = true
+    m = true
   },
-  INTEGRATION_PERMISSION_SETTINGS_CLEAR: g,
+  INTEGRATION_PERMISSION_SETTINGS_CLEAR: f,
   INTEGRATION_PERMISSION_SETTINGS_INIT: function(e) {
     let {
       applicationId: t
     } = e;
-    g(), i = t
+    f(), i = t
   },
   INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE: function(e) {
     var t, n;
@@ -73,12 +73,12 @@ let h = new f(Chunk570140.Z, {
     } = e;
     if (r !== i) returnfalse;
     if (l === i) {
-      p = (0, d.tk)(a);
+      b = (0, d.tk)(a);
       return
     }
-    let o = m[l];
+    let o = p[l];
     if (null == o) returnfalse;
-    m[l] = (t = function(e) {
+    p[l] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -125,7 +125,7 @@ let h = new f(Chunk570140.Z, {
       applicationId: t
     } = e;
     if (t !== i) returnfalse;
-    b = true
+    m = true
   },
   INTEGRATION_PERMISSION_SETTINGS_COMMANDS_FETCH_SUCCESS: function(e) {
     let {
@@ -145,6 +145,6 @@ let h = new f(Chunk570140.Z, {
           }),
           n = l[e.id];
         null != n && (t.permissions = (0, d.tk)(n)), a[e.id] = t
-      } m = a
+      } p = a
   }
 })

@@ -1,7 +1,7 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 494118, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk780384 = require("./780384.js"),
@@ -12,16 +12,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk725875 = require("./725875.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk437121 = require("./437121.js"),
+  Chunk431263 = require("./431263.js"),
   Chunk893916 = require("./893916.js"),
   Chunk408942 = require("./408942.js");
 
-function g(e) {
+function f(e) {
   let {
     followedChannelWebhooks: t,
     editedWebhook: n,
-    selectableWebhookChannels: g,
-    errors: f,
+    selectableWebhookChannels: f,
+    errors: g,
     canNavigate: h
   } = e, x = (0, a.ZP)();
   return (0, i.jsxs)("div", {
@@ -31,28 +31,28 @@ function g(e) {
         helpdeskArticle: s.Z.getArticleURL(d.BhN.CHANNEL_FOLLOWING)
       })
     }), (0, i.jsx)(l.izJ, {
-      className: p.headerDivider
+      className: b.headerDivider
     }), t.length > 0 ? (0, i.jsx)(c.Z, {
       webhooks: t,
       editedWebhook: n,
-      selectableWebhookChannels: g,
-      errors: f,
+      selectableWebhookChannels: f,
+      errors: g,
       canNavigate: h
     }) : function(e, t) {
-      let n = (0, r.wj)(e) ? m : b;
+      let n = (0, r.wj)(e) ? p : m;
       return (0, i.jsxs)(o.Z, {
         direction: o.Z.Direction.VERTICAL,
         align: o.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
           src: n,
-          className: p.emptyStateImage
+          className: b.emptyStateImage
         }), (0, i.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           children: u.intl.string(u.t.gzuVH0)
         }), (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: p.emptyStateButton,
+          className: b.emptyStateButton,
           children: (0, i.jsx)(l.Button, {
             variant: "primary",
             text: u.intl.string(u.t["ZwSt+T"]),

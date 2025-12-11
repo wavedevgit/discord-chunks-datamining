@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk217702 = require("./217702.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk969868 = require("./969868.js"),
+  Chunk520597 = require("./520597.js"),
   Chunk476945 = require("./476945.js"),
   Chunk945182 = require("./945182.js");
 
@@ -36,7 +36,7 @@ function I(t) {
     analyticsObject: r
   } = t;
   return (0, c.ZP)(() => {
-    j.default.track(T.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
+    m.default.track(_.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
       location: r,
       location_stack: e
     })
@@ -45,28 +45,28 @@ function I(t) {
       "data-migration-pending": true,
       size: s.CgR.DYNAMIC,
       transitionState: n,
-      className: E.modalRoot,
+      className: x.modalRoot,
       parentComponent: "GiftCategorySelectModal",
       children: [(0, i.jsxs)(s.xBx, {
         "data-migration-pending": true,
-        className: E.header,
+        className: x.header,
         separator: false,
         children: [(0, i.jsx)(s.Heading, {
           variant: "heading-md/semibold",
-          children: x.intl.string(x.t.YBGjso)
+          children: h.intl.string(h.t.YBGjso)
         }), (0, i.jsx)(s.olH, {
           "data-migration-pending": true,
           onClick: () => {
-            j.default.track(T.rMx.MODAL_DISMISSED, {
-              type: T.jXE.GIFT_CATEGORY_SELECT_MODAL,
-              location_object: T.qAy.BUTTON_CTA
+            m.default.track(_.rMx.MODAL_DISMISSED, {
+              type: _.jXE.GIFT_CATEGORY_SELECT_MODAL,
+              location_object: _.qAy.BUTTON_CTA
             }), a()
           },
-          className: E.cursorPointer
+          className: x.cursorPointer
         })]
       }), (0, i.jsx)(s.hzk, {
         "data-migration-pending": true,
-        className: E.modalContent,
+        className: x.modalContent,
         children: (0, i.jsx)(N, {
           analyticsLocations: e,
           giftRecipient: o,
@@ -86,23 +86,23 @@ function N(t) {
     onClose: a
   } = t, {
     showBothNitroSkusInCategorySelect: c
-  } = y.G.useExperiment({
+  } = j.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
   }), {
-    analyticsLocations: d
-  } = (0, u.ZP)(l.Z.GIFT_CATEGORY_SELECT_MODAL), p = t => {
+    analyticsLocations: u
+  } = (0, d.ZP)(l.Z.GIFT_CATEGORY_SELECT_MODAL), p = t => {
     t && a()
-  }, _ = t => {
+  }, g = t => {
     var i, a;
-    let o = T.AnalyticsObjectTypes.NITRO_SKU_SELECTION;
-    t === h.Si.TIER_2 ? o = T.AnalyticsObjectTypes.NITRO_STANDARD : t === h.Si.TIER_0 && (o = T.AnalyticsObjectTypes.NITRO_BASIC), (0, O.Z)({
+    let o = _.AnalyticsObjectTypes.NITRO_SKU_SELECTION;
+    t === b.Si.TIER_2 ? o = _.AnalyticsObjectTypes.NITRO_STANDARD : t === b.Si.TIER_0 && (o = _.AnalyticsObjectTypes.NITRO_BASIC), (0, f.Z)({
       isGift: true,
       giftRecipient: e,
-      giftingOrigin: h.Wt.DM_CHANNEL,
+      giftingOrigin: b.Wt.DM_CHANNEL,
       initialPlanId: null,
-      analyticsLocations: d,
+      analyticsLocations: u,
       subscriptionTier: t,
       analyticsObject: (i = function(t) {
         for (var e = 1; e < arguments.length; e++) {
@@ -122,8 +122,8 @@ function N(t) {
         }
         return t
       }({}, n), a = a = {
-        section: T.jXE.GIFT_CATEGORY_SELECT_MODAL,
-        object: T.qAy.GIFT_CATEGORY_OPTION,
+        section: _.jXE.GIFT_CATEGORY_SELECT_MODAL,
+        object: _.qAy.GIFT_CATEGORY_OPTION,
         objectType: o
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
         var n = Object.keys(t);
@@ -140,37 +140,37 @@ function N(t) {
   };
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.P3F, {
-      onClick: () => _(c ? h.Si.TIER_2 : true),
+      onClick: () => g(c ? b.Si.TIER_2 : true),
       children: (0, i.jsxs)("div", {
-        className: o()(E.categoryButton, E.nitroButton),
+        className: o()(x.categoryButton, x.nitroButton),
         children: [(0, i.jsx)(s.Text, {
           variant: "display-sm",
           color: "always-white",
-          className: E.buttonText,
-          children: x.intl.string(x.t.lG6a5x)
+          className: x.buttonText,
+          children: h.intl.string(h.t.lG6a5x)
         }), (0, i.jsx)(A, {
           imageType: 0
         })]
       })
     }), c && (0, i.jsx)(s.P3F, {
-      onClick: () => _(h.Si.TIER_0),
+      onClick: () => g(b.Si.TIER_0),
       children: (0, i.jsxs)("div", {
-        className: o()(E.nitroBasicButton, E.categoryButton),
+        className: o()(x.nitroBasicButton, x.categoryButton),
         children: [(0, i.jsx)(s.Text, {
           variant: "display-sm",
           color: "always-white",
-          className: E.buttonText,
-          children: x.intl.string(x.t["t9uG/o"])
+          className: x.buttonText,
+          children: h.intl.string(h.t["t9uG/o"])
         }), (0, i.jsx)(A, {
           imageType: 1
         })]
       })
     }), (0, i.jsx)(s.P3F, {
       onClick: () => {
-        (0, m.Z)({
+        (0, O.Z)({
           isGift: true,
-          giftingOrigin: h.Wt.DM_CHANNEL,
-          analyticsLocations: d,
+          giftingOrigin: b.Wt.DM_CHANNEL,
+          analyticsLocations: u,
           analyticsObject: n,
           giftRecipient: e,
           onClose: p,
@@ -178,12 +178,12 @@ function N(t) {
         })
       },
       children: (0, i.jsxs)("div", {
-        className: o()(E.shopButton, E.categoryButton),
+        className: o()(x.shopButton, x.categoryButton),
         children: [(0, i.jsx)(s.Text, {
           variant: "display-sm",
           color: "always-white",
-          className: E.buttonText,
-          children: x.intl.string(x.t.gFlB9b)
+          className: x.buttonText,
+          children: h.intl.string(h.t.gFlB9b)
         }), (0, i.jsx)(A, {
           imageType: 2
         })]
@@ -197,20 +197,20 @@ function A(t) {
     imageType: e
   } = t, {
     avatarPlaceholderSrc: n
-  } = (0, _.Z)({
-    size: (0, d.y9)(s.EFr.SIZE_80)
+  } = (0, g.Z)({
+    size: (0, u.y9)(s.EFr.SIZE_80)
   }), a = (0, p.Z)("a_c3cffc19e9784f7d0b005eecdf1b566e", s.EFr.SIZE_80, false);
   return 0 === e || 1 === e ? (0, i.jsx)("div", {
-    className: E.wumpusImageContainer,
+    className: x.wumpusImageContainer,
     children: (0, i.jsx)(s.Eep, {
-      src: 1 === e ? f : C,
-      mediaLayoutType: b.hV.RESPONSIVE,
+      src: 1 === e ? E : C,
+      mediaLayoutType: T.hV.RESPONSIVE,
       width: 122,
       height: 110,
       zoomable: false
     })
   }) : 2 === e ? (0, i.jsx)("div", {
-    className: E.shopImageContainer,
+    className: x.shopImageContainer,
     children: (0, i.jsx)(s.qEK, {
       src: n,
       avatarDecoration: a,

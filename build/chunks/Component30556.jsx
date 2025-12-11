@@ -1,8 +1,8 @@
 /** Chunk was on 93979 **/
 /** chunk id: 30556, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  H: () => p,
-  v: () => f
+  H: () => m,
+  v: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -47,7 +47,7 @@ function u(e, n) {
   return i
 }
 
-function m(e) {
+function f(e) {
   let {
     userId: n,
     onClose: t
@@ -57,11 +57,26 @@ function m(e) {
     }), null == t || t(), (0, o.pTH)()
   }, [n, t]);
   return {
-    action: a.yM.SEND_MESSAGE,
+    action: c.yM.SEND_MESSAGE,
     icon: o.kBi,
     onClick: l,
-    text: c.intl.string(c.t.zROXEV)
+    text: s.intl.string(s.t.zROXEV)
   }
+}
+
+function m(e) {
+  var {
+    userId: n,
+    onClose: t,
+    variant: i = "primary"
+  } = e, o = u(e, ["userId", "onClose", "variant"]);
+  let r = f({
+    userId: n,
+    onClose: t
+  });
+  return (0, l.jsx)(a.O1, d({
+    variant: i
+  }, r, o))
 }
 
 function p(e) {
@@ -70,32 +85,17 @@ function p(e) {
     onClose: t,
     variant: i = "primary"
   } = e, o = u(e, ["userId", "onClose", "variant"]);
-  let r = m({
-    userId: n,
-    onClose: t
-  });
-  return (0, l.jsx)(s.O1, d({
-    variant: i
-  }, r, o))
-}
-
-function f(e) {
-  var {
-    userId: n,
-    onClose: t,
-    variant: i = "primary"
-  } = e, o = u(e, ["userId", "onClose", "variant"]);
-  let r = m({
+  let r = f({
       userId: n,
       onClose: t
     }),
     {
-      text: a
+      text: c
     } = r,
-    c = u(r, ["text"]);
-  return (0, l.jsx)(s.pt, d({
-    tooltipText: a,
-    "aria-label": a,
+    s = u(r, ["text"]);
+  return (0, l.jsx)(a.pt, d({
+    tooltipText: c,
+    "aria-label": c,
     variant: i
-  }, c, o))
+  }, s, o))
 }

@@ -1,5 +1,5 @@
-/** Chunk was on 64387 **/
-/** chunk id: 580584, original params: e,t,o (module,exports,require) **/
+/** Chunk was on 15222 **/
+/** chunk id: 580584, original params: a,e,t (module,exports,require) **/
 require.d(exports, {
   default: () => b
 });
@@ -11,14 +11,14 @@ var Chunk332664 = require("./332664.jsx"),
   Chunk388032 = require("./388032.jsx");
 let r = [Chunk814249.R7.OTHER];
 
-function b(e) {
+function b(a) {
   let {
-    transitionState: t,
-    startRating: o,
+    transitionState: e,
+    startRating: t,
     onClose: b,
     onSubmit: m
-  } = e;
-  return (0, _.jsx)(a.Z, {
+  } = a;
+  return (0, c.jsx)(o.Z, {
     modalType: "summary",
     header: n.intl.string(n.t.hghcMh),
     body: n.intl.string(n.t.QFU785),
@@ -27,11 +27,11 @@ function b(e) {
     onClose: b,
     ratingOptions: [i.aZ.GOOD, i.aZ.BAD],
     ratingEmojiKind: "thumb",
-    transitionState: t,
-    problems: (0, c.iq)(),
+    transitionState: e,
+    problems: (0, d.iq)(),
     freeformNeededProblems: r,
-    otherKey: c.R7.OTHER,
-    startRating: o,
+    otherKey: d.R7.OTHER,
+    startRating: t,
     hideDontShowAgainCheckbox: true
   })
 }

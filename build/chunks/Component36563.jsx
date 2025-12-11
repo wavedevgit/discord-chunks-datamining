@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk120230 = require("./120230.js");
+  Chunk826529 = require("./826529.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,12 +81,12 @@ function S() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
   switch (module) {
     case Chunk481060.EFr.SIZE_16:
-      return Chunk120230.size16;
+      return Chunk826529.size16;
     case Chunk481060.EFr.SIZE_20:
-      return Chunk120230.size20;
+      return Chunk826529.size20;
     case Chunk481060.EFr.SIZE_24:
     default:
-      return Chunk120230.size24
+      return Chunk826529.size24
   }
 }
 
@@ -253,7 +253,7 @@ function P(e) {
         onContextMenu: t => (0, d.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, y(E({}, n), {
             user: e,
             guildId: s,

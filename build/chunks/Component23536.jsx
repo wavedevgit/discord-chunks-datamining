@@ -1,7 +1,7 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 23536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./784620.js"), require("./973216.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,13 +19,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let b = [];
 
-function _(e) {
+function y(e) {
   let {
     channel: t,
-    onJump: _
+    onJump: y
   } = e, {
-    items: y,
-    state: O
+    items: O,
+    state: j
   } = (0, l.cj)([f.Z], () => {
     var e, n;
     let r = f.Z.getPins(t.id);
@@ -33,37 +33,37 @@ function _(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : f.M.LOADING
     }
-  }), j = i.useMemo(() => y.map(e => e.message), [y]), x = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
+  }), x = i.useMemo(() => O.map(e => e.message), [O]), v = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
-    x && o.Z.ackPins(t.id)
-  }, [x, t.id]), (0, c.ZP)(() => {
-    j.some(d.k5) && o.Z.fetchPins(t.id, {
+    v && o.Z.ackPins(t.id)
+  }, [v, t.id]), (0, c.ZP)(() => {
+    x.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
-  let v = i.useCallback(() => {
+  let C = i.useCallback(() => {
       o.Z.fetchPins(t.id)
     }, [t.id]),
-    C = i.useCallback(() => {
+    I = i.useCallback(() => {
       var e;
       o.Z.fetchPins(t.id, {
-        before: null == (e = y.at(false)) ? true : e.pinnedAt
+        before: null == (e = O.at(false)) ? true : e.pinnedAt
       })
-    }, [t.id, y]),
-    I = (0, l.e7)([h.Z], () => (0, a.ap)(h.Z.theme));
+    }, [t.id, O]),
+    _ = (0, l.e7)([h.Z], () => (0, a.ap)(h.Z.theme));
   return (0, r.jsx)(s.VqE, {
     "aria-label": m.intl.string(m.t["mp1N/2"]),
     children: (0, r.jsx)(p.ZP, {
       channel: t,
-      onFetch: v,
-      messages: j,
-      loading: O === f.M.LOADING,
-      hasMore: O === f.M.LOADED_HAS_MORE,
+      onFetch: C,
+      messages: x,
+      loading: j === f.M.LOADING,
+      hasMore: j === f.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
-        if (y.length > 0) return;
+        if (O.length > 0) return;
         let e = m.intl.string(t.isPrivate() ? m.t.rhqcbJ : m.t.fmyaWJ),
-          i = I ? n(306059) : n(281485);
+          i = _ ? n(306059) : n(281485);
         return (0, r.jsx)(p.nH, {
           msg: e,
           image: i
@@ -76,8 +76,8 @@ function _(e) {
       onCloseMessage: function(e, n) {
         null != e && (n.shiftKey ? o.Z.unpinMessage(t, e.id) : u.Z.confirmUnpin(t, e))
       },
-      onJump: _,
-      loadMore: C,
+      onJump: y,
+      loadMore: I,
       getProTip: function() {
         return t.isPrivate() ? m.intl.string(m.t["3dLGAs"]) : m.intl.string(m.t.KTbRcg)
       },

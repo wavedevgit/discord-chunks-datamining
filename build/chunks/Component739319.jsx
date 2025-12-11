@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk454585 = require("./454585.js"),
   Chunk572004 = require("./572004.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk852950 = require("./852950.js");
+  Chunk595670 = require("./595670.js");
 
 function m(e) {
   let {
@@ -23,7 +23,7 @@ function m(e) {
         is_localized: m
       }
     }
-  } = e, [p, g] = l.useState(false), _ = l.useRef(o.Z.reactParserFor(o.Z.defaultRules));
+  } = e, [p, b] = l.useState(false), g = l.useRef(o.Z.reactParserFor(o.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(s.Heading, {
@@ -34,7 +34,7 @@ function m(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: _.current(n)
+      children: g.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: a()(u.smsNumberContainer, {
@@ -53,7 +53,7 @@ function m(e) {
             size: "sm",
             text: p ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
             onClick: () => {
-              (0, d.JG)(i, () => g(true))
+              (0, d.JG)(i, () => b(true))
             }
           })
         })]

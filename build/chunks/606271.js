@@ -49,7 +49,7 @@ class P {
         type: "RPC_APP_CONNECTED",
         socketId: e.id,
         application: e.application
-      }), b.default.track(C.rMx.AUTHORIZED_APP_CONNECTED, {
+      }), _.default.track(C.rMx.AUTHORIZED_APP_CONNECTED, {
         app_id: e.application.id,
         transport: e.transport
       })
@@ -103,7 +103,7 @@ class P {
         if (null != n) {
           let r = o.Z.getChannel(n);
           if (null == r) return;
-          let i = _.Z.getVoiceState(r.getGuildId(), e.userId);
+          let i = b.Z.getVoiceState(r.getGuildId(), e.userId);
           if (null == i) return;
           this.rpcServer.dispatchToSubscriptions(t, {
             channel_id: i.channelId

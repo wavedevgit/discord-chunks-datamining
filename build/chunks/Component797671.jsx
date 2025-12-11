@@ -1,4 +1,4 @@
-/** Chunk was on 17474 **/
+/** Chunk was on 81690 **/
 /** chunk id: 797671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => L
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk920454 = require("./920454.js");
+  Chunk549922 = require("./549922.js");
 
 function L(e) {
   var t, n;
@@ -35,7 +35,7 @@ function L(e) {
     transitionState: R,
     onSubmit: S,
     onClose: j
-  } = e, [N, M] = i.useState(w.Sc2), [k, D] = i.useState(w.d4z.GUILD_TEXT), [Z, A] = i.useState(""), [B, G] = i.useState(false), O = (0, a.e7)([m.Z], () => m.Z.getGuild(L), [L]), H = (0, f.m)(L), U = (0, g.Ui)(O), V = i.useMemo(() => (function(e) {
+  } = e, [N, M] = i.useState(w.Sc2), [k, D] = i.useState(w.d4z.GUILD_TEXT), [Z, A] = i.useState(""), [B, G] = i.useState(false), O = (0, o.e7)([m.Z], () => m.Z.getGuild(L), [L]), H = (0, g.m)(L), U = (0, h.Ui)(O), V = i.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
@@ -72,7 +72,7 @@ function L(e) {
         label: n,
         value: i,
         description: r,
-        isBeta: o
+        isBeta: a
       } = e;
       return {
         name: (0, l.jsxs)("div", {
@@ -83,8 +83,8 @@ function L(e) {
             children: [(0, l.jsxs)(d.Text, {
               variant: "text-md/normal",
               color: "header-primary",
-              children: [n, (0, l.jsx)(_.p, {
-                isBeta: o
+              children: [n, (0, l.jsx)(f.p, {
+                isBeta: a
               })]
             }), (0, l.jsx)(d.Text, {
               variant: "text-xs/normal",
@@ -100,7 +100,7 @@ function L(e) {
   })({
     canCreateStageChannel: H,
     canCreateMediaChannel: U
-  }), [H, U]), W = (0, a.e7)([x.Z], () => x.Z.getCategories(L)._categories, [L]), z = i.useMemo(() => W.map(e => {
+  }), [H, U]), W = (0, o.e7)([x.Z], () => x.Z.getCategories(L)._categories, [L]), z = i.useMemo(() => W.map(e => {
     let {
       channel: t
     } = e;
@@ -141,12 +141,12 @@ function L(e) {
         },
         rejectWithError: true
       }).then(e => {
-        h.Z.checkGuildTemplateDirty(L), S(e.body.id), j()
+        b.Z.checkGuildTemplateDirty(L), S(e.body.id), j()
       }, e => {}).finally(() => {
         G(false)
       })
     },
-    children: (0, l.jsx)(o.Modal, {
+    children: (0, l.jsx)(a.Modal, {
       transitionState: R,
       title: T.intl.string(T.t["fUYU+j"]),
       onClose: j,
@@ -183,7 +183,7 @@ function L(e) {
           label: T.intl.string(T.t.PVbHDl),
           value: Z,
           onChange: function(e) {
-            (0, b.zi)(k) && (e = (0, v.Nj)(e)), A(e)
+            (0, _.zi)(k) && (e = (0, v.Nj)(e)), A(e)
           },
           maxLength: w.HN8,
           placeholder: T.intl.string(T.t["bw/b8E"]),

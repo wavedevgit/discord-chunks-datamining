@@ -2,12 +2,12 @@
 /** chunk id: 382790, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => x
 }), require("./388685.js");
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk552062 = require("./552062.jsx"),
   Chunk416568 = require("./416568.jsx"),
@@ -18,7 +18,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk483962 = require("./483962.jsx"),
   Chunk711553 = require("./711553.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk585816 = require("./585816.js");
+  Chunk546753 = require("./546753.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,33 +29,33 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function O(e) {
   let {
     closePopout: t
   } = e;
-  return (0, r.jsx)(f.Z, {
+  return (0, r.jsx)(p.Z, {
     onClose: t
   })
 }
-class O extends(i = Chunk473749.PureComponent) {
+class E extends(i = Chunk473749.PureComponent) {
   render() {
     let {
       selectedGuildId: e,
       locked: t,
       contained: n,
       className: i
-    } = this.props, s = null != module ? (0, Chunk54381.jsx)(Chunk178528.Z, {
+    } = this.props, a = null != module ? (0, Chunk54381.jsx)(Chunk178528.Z, {
       guildId: module,
       onDragStart: this.onDragStart
     }, module) : (0, Chunk54381.jsx)(Chunk711553.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
-      renderSettings: b,
+      renderSettings: O,
       onDragStart: this.onDragStart,
       children: (0, Chunk54381.jsx)(Chunk483962.Z, {})
-    }), o = require ? "div" : Chunk518084.ZP;
+    }), s = require ? "div" : Chunk518084.ZP;
     return (0, Chunk54381.jsxs)(Chunk120356, {
-      className: l()(Chunk585816.base, {
-        [Chunk585816.widget]: !require
+      className: o()(Chunk546753.base, {
+        [Chunk546753.widget]: !require
       }, i),
       children: [(0, Chunk54381.jsx)(Chunk416568.Z, {
         isOverlay: true,
@@ -73,9 +73,9 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-v(O, "defaultProps", {
+v(E, "defaultProps", {
   contained: false
 });
-let E = Chunk442837.ZP.connectStores([Chunk914010.Z], () => ({
+let x = Chunk442837.ZP.connectStores([Chunk914010.Z], () => ({
   selectedGuildId: Chunk914010.Z.getGuildId()
-}))(O)
+}))(E)

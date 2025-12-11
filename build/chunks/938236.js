@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 938236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => u
@@ -27,7 +27,7 @@ function o(e) {
   return e
 }
 
-function s(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -39,18 +39,18 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
+let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
   u = (0, Chunk663042.U)((e, t) => ({
     stack: [],
     wishlistStack: [],
     gameIds: {},
     peekedGameIds: {},
     onLoad: (n, r, i) => {
-      let a = new Set(i.map(e => e.applicationId));
+      let l = new Set(i.map(e => e.applicationId));
       for (let i of (e({
-          stack: [...n.filter(e => !a.has(e)), ...c],
-          wishlistStack: [...r.filter(e => !a.has(e)), ...c]
-        }), Object.values(l.l))) t().setNext(6, i)
+          stack: [...n.filter(e => !l.has(e)), ...s],
+          wishlistStack: [...r.filter(e => !l.has(e)), ...s]
+        }), Object.values(a.l))) t().setNext(6, i)
     },
     setNext: (e, n) => {
       let r = t().getNext(e, n);
@@ -59,43 +59,43 @@ let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
       t()._setPeekedGameIds(n, i)
     },
     getNext: (e, n) => {
-      let r = n === l.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack,
+      let r = n === a.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack,
         i = r.slice(0, e),
-        a = r.slice(e);
-      return t()._setStack(n, a), i
+        l = r.slice(e);
+      return t()._setStack(n, l), i
     },
-    peekNext: (e, n) => (n === l.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).slice(0, e),
+    peekNext: (e, n) => (n === a.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).slice(0, e),
     bump: (e, n) => {
       var r;
       let i = null != (r = t().gameIds[n]) ? r : [],
-        l = i.indexOf(e);
-      if (false === l) return;
-      let a = [...i];
-      a.splice(l, 1);
+        a = i.indexOf(e);
+      if (false === a) return;
+      let l = [...i];
+      l.splice(a, 1);
       let o = t().getNext(1, n),
-        s = t().peekNext(7, n);
-      t()._setGameIds(n, [...a, ...o]), t()._setPeekedGameIds(n, [...s, ...o])
+        c = t().peekNext(7, n);
+      t()._setGameIds(n, [...l, ...o]), t()._setPeekedGameIds(n, [...c, ...o])
     },
     bumpMultiple: (e, n) => {
       var r;
       let i = (null != (r = t().gameIds[n]) ? r : []).filter(t => !e.includes(t)),
-        l = t().getNext(6 - i.length, n),
-        a = t().peekNext(7, n);
-      t()._setGameIds(n, [...i, ...l]), t()._setPeekedGameIds(n, [...a, ...l])
+        a = t().getNext(6 - i.length, n),
+        l = t().peekNext(7, n);
+      t()._setGameIds(n, [...i, ...a]), t()._setPeekedGameIds(n, [...l, ...a])
     },
     remove: (e, n) => {
-      let r = (n === l.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).filter(t => t !== e);
+      let r = (n === a.l.WANT_TO_PLAY_GAMES ? t().wishlistStack : t().stack).filter(t => t !== e);
       t()._setStack(n, r), t()._setPeekedGameIds(n, t().peekNext(7, n))
     },
     _setGameIds: (t, n) => {
       e(e => ({
-        gameIds: s(o({}, e.gameIds), {
+        gameIds: c(o({}, e.gameIds), {
           [t]: n
         })
       }))
     },
     _setStack: (t, n) => {
-      t === l.l.WANT_TO_PLAY_GAMES ? e({
+      t === a.l.WANT_TO_PLAY_GAMES ? e({
         wishlistStack: n
       }) : e({
         stack: n
@@ -103,7 +103,7 @@ let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     },
     _setPeekedGameIds: (t, n) => {
       e(e => ({
-        peekedGameIds: s(o({}, e.peekedGameIds), {
+        peekedGameIds: c(o({}, e.peekedGameIds), {
           [t]: n
         })
       }))

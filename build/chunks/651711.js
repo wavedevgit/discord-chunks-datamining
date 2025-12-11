@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 651711, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,11 +21,11 @@ function u(e) {
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, {
     isUserMFAEnabled: g,
     isModerationMFAEnabled: m
-  } = (0, o.N)(), p = r.useCallback(async () => {
+  } = (0, o.N)(), f = r.useCallback(async () => {
     var e, r;
     g ? m || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? true : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? true : e.call(n)), null == t || t()
-  }, [g, m, t, n]), f = (0, s.R)({
-    onEnableMFAClick: p
+  }, [g, m, t, n]), p = (0, s.R)({
+    onEnableMFAClick: f
   });
   return r.useMemo(() => {
     if (null == e) return null;
@@ -94,13 +94,13 @@ function u(e) {
         checkedLabel: d.intl.string(d.t.NqVyFk),
         uncheckedLabel: d.intl.string(d.t.VcDNIV),
         description: d.intl.format(d.t["7NzkfV"], {
-          enableMFAHook: f
+          enableMFAHook: p
         }),
         checked: e.hasEnabled2FA,
         actionLabel: i ? d.intl.string(d.t.BU4Diu) : true,
-        actionHandler: i ? p : true
+        actionHandler: i ? f : true
       })
     }
     returntrue === u && o.sort(e => e.checked ? 0 : false), o
-  }, [e, u, g, n, m, f, p])
+  }, [e, u, g, n, m, p, f])
 }

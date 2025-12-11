@@ -42,10 +42,10 @@ class g extends Chunk317770.Z {
         (0, i.nfh)(f) && (0, i.Mr3)(f);
         return
       }
-      let _ = o.Z.getChannel(m);
-      if (!(null == _ ? true : _.isGuildStageVoice())) return;
-      let b = (0, u.gf)(h) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-      if (null != _ && b) {
+      let b = o.Z.getChannel(m);
+      if (!(null == b ? true : b.isGuildStageVoice())) return;
+      let _ = (0, u.gf)(h) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+      if (null != b && _) {
         if ((0, i.nfh)(f)) return;
         (0, i.ZDy)(async () => {
           let {
@@ -74,7 +74,7 @@ class g extends Chunk317770.Z {
             }
             return e
           }({}, t), {
-            channel: _
+            channel: b
           }))
         }, {
           modalKey: f,

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk227919 = require("./227919.js");
+  Chunk200471 = require("./200471.js");
 let h = () => {
   var e;
   let {
@@ -44,25 +44,25 @@ let h = () => {
   };
   return (0, Chunk54381.jsxs)("div", {
     ref: require,
-    className: Chunk227919.container,
+    className: Chunk200471.container,
     style: {
       backgroundImage: "url(".concat(h, ")")
     },
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk227919.artContainer,
+      className: Chunk200471.artContainer,
       "aria-hidden": true,
       role: "presentation",
       children: (0, Chunk54381.jsx)("img", {
         src: g,
-        className: Chunk227919.art,
+        className: Chunk200471.art,
         alt: ""
       })
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk227919.mainColumn,
+      className: Chunk200471.mainColumn,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/extrabold",
         color: O ? "redesign-button-overlay-text" : "currentColor",
-        className: Chunk227919.title,
+        className: Chunk200471.title,
         children: E
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 729311, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,30 +31,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk353890 = require("./353890.jsx"),
   Chunk716130 = require("./716130.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk868893 = require("./868893.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk196732 = require("./196732.js"),
+  Chunk960324 = require("./960324.js");
 
 function w(e) {
   let {
     guild: t
-  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, l.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, C.Z)(t), b = (0, l.e7)([_.Z], () => _.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [v, O] = i.useState(false);
+  } = e, a = (0, l.e7)([d.Z], () => d.Z.getEnabled(t.id)), p = (0, l.e7)([f.Z], () => f.Z.hasFetched(t.id)), b = (0, y.Z)(t), h = (0, l.e7)([v.Z], () => v.Z.editedDefaultChannelIds), x = b.filter(e => !h.has(e.id)), [O, C] = i.useState(false);
   return (i.useEffect(() => {
-    f || a || (0, m.S)(t.id)
-  }, [t.id, f, a]), v || 0 === x.length) ? null : (0, r.jsxs)("div", {
+    p || a || (0, m.S)(t.id)
+  }, [t.id, p, a]), O || 0 === x.length) ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      children: S.intl.string(S.t.NN7rD3)
+      children: _.intl.string(_.t.NN7rD3)
     }), (0, r.jsxs)("div", {
       className: T.recsSubheader,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: S.intl.string(S.t["3Uuql+"])
+        children: _.intl.string(_.t["3Uuql+"])
       }), (0, r.jsxs)(o.P3F, {
         className: T.dismissAll,
-        onClick: () => O(true),
+        onClick: () => C(true),
         children: [(0, r.jsx)(o.dz2, {
           size: "xxs",
           color: "currentColor",
@@ -63,7 +63,7 @@ function w(e) {
           className: T.dismissAllText,
           variant: "text-xs/medium",
           color: "text-brand",
-          children: S.intl.string(S.t.ZC3PJ2)
+          children: _.intl.string(_.t.ZC3PJ2)
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -101,12 +101,12 @@ function w(e) {
           }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "primary",
-            text: S.intl.string(S.t.OYkgVk),
+            text: _.intl.string(_.t.OYkgVk),
             onClick: () => (0, j.pt)(e.id)
           }) : (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
-            text: S.intl.string(S.t.zA9d1J),
+            text: _.intl.string(_.t.zA9d1J),
             icon: o.mBM,
             iconPosition: "start",
             onClick: () => {
@@ -164,17 +164,17 @@ function w(e) {
 function Z(e) {
   let {
     saveOnClose: t = false
-  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([h.ZP], () => h.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([f.Z], () => f.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([O.Z], () => O.Z.advancedMode), g = i.useRef(null), [m, p] = i.useState(false), _ = i.useRef(n);
+  } = e, n = (0, l.e7)([x.Z], () => x.Z.getGuild()), a = (0, l.e7)([d.Z], () => d.Z.isLoading()), s = (0, l.e7)([b.ZP], () => b.ZP.getChannels(null == n ? true : n.id)), c = (0, l.e7)([p.Z], () => p.Z.getCategories(null == n ? true : n.id)), u = (0, l.e7)([C.Z], () => C.Z.advancedMode), g = i.useRef(null), [m, f] = i.useState(false), v = i.useRef(n);
   return (i.useEffect(() => {
-    _.current = n
+    v.current = n
   }), i.useEffect(() => {
     if (t) {
       let {
         current: e
-      } = _;
+      } = v;
       return () => {
         null != e && (0, j.DO)(e).then(() => {
-          u && (0, v.rS)(e, {
+          u && (0, O.rS)(e, {
             ignoreDefaultPrompt: true
           }).catch(() => {})
         }).catch(() => {})
@@ -186,27 +186,27 @@ function Z(e) {
       className: T.channelBrowser,
       children: [(0, r.jsx)(o.P3F, {
         className: T.collapseButton,
-        onClick: () => p(e => !e),
-        children: (0, r.jsx)(b.Z, {
-          direction: m ? b.Z.Directions.DOWN : b.Z.Directions.UP,
+        onClick: () => f(e => !e),
+        children: (0, r.jsx)(h.Z, {
+          direction: m ? h.Z.Directions.DOWN : h.Z.Directions.UP,
           height: 16,
           width: 16
         })
       }), (0, r.jsx)(o.Heading, {
         className: T.header,
         variant: "heading-lg/extrabold",
-        children: S.intl.string(S.t["4GSygh"])
+        children: _.intl.string(_.t["4GSygh"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: S.intl.string(S.t.Kq7FAS)
-      }), (0, r.jsx)(y.Wu, {
+        children: _.intl.string(_.t.Kq7FAS)
+      }), (0, r.jsx)(N.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
       }), m ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(w, {
           guild: n
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(E.Z, {
           className: T.channelBrowserOuter,
           guild: n,
           categories: c,
@@ -219,16 +219,16 @@ function Z(e) {
         }), (0, r.jsx)(o.Heading, {
           className: T.prejoinHeader,
           variant: "heading-lg/extrabold",
-          children: S.intl.string(S.t.g2RnpV)
+          children: _.intl.string(_.t.g2RnpV)
         }), (0, r.jsx)(o.Text, {
           className: T.prejoinSubHeader,
           variant: "text-sm/normal",
           color: "text-default",
-          children: S.intl.string(S.t.bLDQ1Q)
+          children: _.intl.string(_.t.bLDQ1Q)
         }), (0, r.jsx)("div", {
           ref: g,
           className: T.advancedModeQuestions,
-          children: (0, r.jsx)(I.Z, {
+          children: (0, r.jsx)(S.Z, {
             guildId: n.id,
             prejoinOnly: true,
             includeCount: true,
@@ -236,7 +236,7 @@ function Z(e) {
           })
         })]
       })]
-    }), (0, r.jsx)(E.Z, {
+    }), (0, r.jsx)(I.Z, {
       guild: n,
       scrollToQuestions: () => {
         null != g.current && g.current.scrollIntoView({

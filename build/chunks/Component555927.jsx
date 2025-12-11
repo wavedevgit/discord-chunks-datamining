@@ -132,7 +132,7 @@ function f(e) {
       })
     })
   }
-  let _ = s.map((e, n) => {
+  let b = s.map((e, n) => {
       let {
         playingMembers: i,
         game: a,
@@ -155,15 +155,15 @@ function f(e) {
         })
       }, n)
     }),
-    b = g.map(e => e.id);
-  return [..._, (0, r.jsx)(l.kSQ, {
+    _ = g.map(e => e.id);
+  return [...b, (0, r.jsx)(l.kSQ, {
     label: "".concat(c.intl.string(c.t["mIx+gG"]), " - ").concat(g.length),
     children: p({
       priorityMembers: t.filter(e => {
         let {
           user: t
         } = e;
-        return b.includes(t.id)
+        return _.includes(t.id)
       }),
       otherMembers: g.filter(e => !u.has(e.id)),
       totalMembers: g.length,

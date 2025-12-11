@@ -1,18 +1,18 @@
-/** Chunk was on 74732 **/
+/** Chunk was on 74783 **/
 /** chunk id: 157283, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => c
+  u: () => s
 });
 var r, l, Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
-let a = {
+let o = {
     showRefreshedStreamTaxonomy: false
   },
-  s = (0, Chunk818083.B)({
+  c = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_stream_survey_taxonomy_refresh",
     label: "Stream survey taxonomy refresh",
-    defaultConfig: a,
+    defaultConfig: o,
     treatments: [{
       id: 1,
       label: "Show refreshed stream taxonomy",
@@ -33,7 +33,7 @@ let a = {
           })
         }
         return e
-      }({}, a), l = l = {
+      }({}, o), l = l = {
         showRefreshedStreamTaxonomy: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
@@ -48,18 +48,18 @@ let a = {
     }]
   });
 
-function c(e) {
+function s(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
     isInHoldout: r
-  } = o.L.useExperiment({
+  } = i.L.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return s.useExperiment({
+  return c.useExperiment({
     location: t
   }, {
     disable: r,

@@ -1,26 +1,26 @@
-/** Chunk was on 94723 **/
-/** chunk id: 559187, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 86932 **/
+/** chunk id: 559187, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => r
 });
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function r(e) {
   let {
     problem: t,
-    feedback: n,
-    reportType: a,
+    feedback: a,
+    reportType: r,
     reportId: c = null,
-    rating: l = null,
-    dontShowAgain: i
+    rating: d = null,
+    dontShowAgain: l
   } = e;
-  o.default.track(r.rMx.IAR_FEEDBACK_SUBMITTED, {
+  n.default.track(o.rMx.IAR_FEEDBACK_SUBMITTED, {
     reason: t,
-    report_type: a,
+    report_type: r,
     report_id: c,
-    rating: l,
-    feedback: n,
-    dont_show_again: i
+    rating: d,
+    feedback: a,
+    dont_show_again: l
   })
 }

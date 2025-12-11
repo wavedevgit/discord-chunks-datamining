@@ -16,7 +16,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk598077 = require("./598077.js"),
   Chunk594174 = require("./594174.js"),
   Chunk426563 = require("./426563.js"),
-  Chunk245141 = require("./245141.js");
+  Chunk608908 = require("./608908.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,15 +92,15 @@ function N() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : b.SIZE_24;
   switch (module) {
     case b.SIZE_16:
-      return Chunk245141.size16;
+      return Chunk608908.size16;
     case b.SIZE_24:
-      return Chunk245141.size24;
+      return Chunk608908.size24;
     case b.SIZE_32:
-      return Chunk245141.size32;
+      return Chunk608908.size32;
     case b.SIZE_56:
-      return Chunk245141.size56;
+      return Chunk608908.size56;
     default:
-      return Chunk245141.size24
+      return Chunk608908.size24
   }
 }
 
@@ -133,10 +133,10 @@ class R extends(r = Chunk473749.PureComponent) {
       let t = null == Chunk481060 && null == Chunk473749 && Chunk670188 === module.length - 1,
         s = require(module[Chunk670188], exports, Chunk670188);
       Chunk120356.push(exports ? (0, Chunk54381.jsx)("div", {
-        className: Chunk245141.avatarContainer,
+        className: Chunk608908.avatarContainer,
         children: s
       }, T(null != (d = module[Chunk670188]) ? Chunk598077 : null, Chunk670188)) : (0, Chunk54381.jsx)(Chunk686546.ZP, {
-        className: Chunk245141.avatarContainerMasked,
+        className: Chunk608908.avatarContainerMasked,
         height: r,
         width: r,
         mask: Chunk686546.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
@@ -177,8 +177,8 @@ class R extends(r = Chunk473749.PureComponent) {
     return this.props.renderIcon ? (0, Chunk54381.jsx)(Chunk481060.gj8, {
       size: "md",
       color: "currentColor",
-      colorClass: Chunk245141.__invalid_foreground,
-      className: Chunk245141.icon
+      colorClass: Chunk608908.__invalid_foreground,
+      className: Chunk608908.icon
     }) : null
   }
   render() {
@@ -193,7 +193,7 @@ class R extends(r = Chunk473749.PureComponent) {
       popoutUserId: l
     } = this.state;
     if (null == Chunk481060) return (0, Chunk54381.jsxs)("div", {
-      className: s()(module, Chunk245141.container, N(exports)),
+      className: s()(module, Chunk608908.container, N(exports)),
       children: [this.renderIcon(), this.renderUsers()]
     });
     let c = require.find(e => e instanceof d.Z && e.id === l),

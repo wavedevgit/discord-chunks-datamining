@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 65721, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -8,16 +8,16 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk682662 = require("./682662.jsx"),
-  Chunk811270 = require("./811270.js");
+  Chunk906519 = require("./906519.js");
 
 function s(e) {
   let {
     fullWidth: t
   } = e;
-  return (0, r.jsx)(o.H, {
+  return (0, r.jsx)(a.H, {
     children: (0, r.jsx)("div", {
-      className: l()(a.guildSeparator, {
-        [a.fullWidth]: t
+      className: l()(o.guildSeparator, {
+        [o.fullWidth]: t
       })
     })
   })

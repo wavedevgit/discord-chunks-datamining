@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk259580 = require("./259580.jsx"),
-  Chunk843491 = require("./843491.js");
+  Chunk936127 = require("./936127.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,7 +35,7 @@ class f extends Chunk473749.PureComponent {
     } = this.props, n = module.map(this.renderBreadcrumb);
     return (0, Chunk54381.jsx)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.START,
-      className: o()(Chunk843491.breadcrumbs, exports),
+      className: o()(Chunk936127.breadcrumbs, exports),
       children: require
     })
   }

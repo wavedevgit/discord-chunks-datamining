@@ -1,10 +1,10 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 974513, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  O4: () => f,
-  OA: () => p,
-  Wu: () => h
+  O4: () => p,
+  OA: () => f,
+  Wu: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,12 +18,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t) {
+function f(e, t) {
   let n = (0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
   return [(0, l.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
 }
 
-function f(e) {
+function p(e) {
   let t = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(e)),
     [n, r] = function(e) {
       let t = (0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
@@ -32,7 +32,7 @@ function f(e) {
   return !!t && r.length >= g.md && n.length >= g.X
 }
 
-function h(e) {
+function b(e) {
   let {
     guildId: t,
     className: n

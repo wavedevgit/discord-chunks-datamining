@@ -20,9 +20,9 @@ function h(e) {
   var t;
   let h = (0, s.SE)(e),
     m = g.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
-    _ = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
-    b = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
-    E = h && (m || _) && !b,
+    b = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
+    _ = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
+    E = h && (m || b) && !_,
     O = i.useCallback(() => {
       var t;
       (0, u.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds, true, p.L.DISMISS)
@@ -55,7 +55,7 @@ function h(e) {
         }({
           guild: e,
           canEveryoneModerate: m,
-          isDefaultNotificationsAllMessages: _
+          isDefaultNotificationsAllMessages: b
         }, n))
       }, {
         onCloseCallback: O
@@ -64,5 +64,5 @@ function h(e) {
         guild_id: null != (t = null == e ? true : e.id) ? t : d.lds
       }), v.current = true
     }
-  }, [m, e, O, _, E])
+  }, [m, e, O, b, E])
 }

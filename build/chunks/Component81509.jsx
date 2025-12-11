@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 81509, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,29 +18,29 @@ var Chunk120356 = require("./120356.js"),
   Chunk594278 = require("./594278.jsx"),
   Chunk549631 = require("./549631.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk980989 = require("./980989.js");
+  Chunk130194 = require("./130194.js");
 
-function b(e) {
+function h(e) {
   let {
     subscribers: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: h.guildSubscriberCount,
+    className: b.guildSubscriberCount,
     children: [(0, r.jsx)("div", {
-      className: h.subscriberCountValue,
+      className: b.subscriberCountValue,
       children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "always-white",
         children: t
       })
     }), (0, r.jsxs)("div", {
-      className: h.subscriberCountText,
-      children: [(0, r.jsx)(p.Z, {
+      className: b.subscriberCountText,
+      children: [(0, r.jsx)(f.Z, {
         color: a.Z.colors.WHITE.css
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        children: f.intl.string(f.t["3NNXPW"])
+        children: p.intl.string(p.t["3NNXPW"])
       })]
     })]
   })
@@ -57,19 +57,19 @@ function x(e) {
     icon: n
   });
   return (0, r.jsxs)("div", {
-    className: h.guildCardHeader,
+    className: b.guildCardHeader,
     children: [(0, r.jsx)(d.Z, {
-      className: h.guildCardHeaderAvatar,
+      className: b.guildCardHeaderAvatar,
       iconSrc: i,
       guild: a,
       size: d.Z.Sizes.LARGE
     }), (0, r.jsxs)("div", {
-      className: h.guildCardHeaderTitle,
+      className: b.guildCardHeaderTitle,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
         children: t
-      }), null != l && (0, r.jsx)(b, {
+      }), null != l && (0, r.jsx)(h, {
         subscribers: l
       })]
     })]
@@ -83,7 +83,7 @@ function j(e) {
     quoteAttributionTitle: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: h.guildCardQuote,
+    className: b.guildCardQuote,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-lg/normal",
       color: "interactive-text-active",
@@ -91,15 +91,15 @@ function j(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "interactive-text-active",
-      children: f.intl.format(f.t.m0b6Kj, {
+      children: p.intl.format(p.t.m0b6Kj, {
         attributionName: n,
-        attributionTitle: null != i ? i : f.intl.string(f.t.pclUFJ)
+        attributionTitle: null != i ? i : p.intl.string(p.t.pclUFJ)
       })
     })]
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     emojisToShow: t,
     notShownEmojiCount: n,
@@ -108,24 +108,24 @@ function _(e) {
     null != i && (0, c.Z)(i)
   };
   return (0, r.jsx)("div", {
-    className: h.guildPremiumEmojis,
+    className: b.guildPremiumEmojis,
     children: a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
         color: "header-primary",
-        className: h.premiumEmojisTitle,
-        children: f.intl.string(f.t.wg53L8)
+        className: b.premiumEmojisTitle,
+        children: p.intl.string(p.t.wg53L8)
       }), (0, r.jsxs)("div", {
-        className: h.premiumEmojisRow,
+        className: b.premiumEmojisRow,
         children: [(0, r.jsxs)("div", {
-          className: l()(h.emojisContainer, null != n && h.fullEmojisContainer),
+          className: l()(b.emojisContainer, null != n && b.fullEmojisContainer),
           children: [t.map(e => (0, r.jsx)(o.Z, {
-            className: h.emoji,
+            className: b.emoji,
             emojiId: e.id,
             emojiName: e.name,
             animated: e.animated
           }, e.id)), null != n && (0, r.jsx)("div", {
-            className: h.extraEmojiCount,
+            className: b.extraEmojiCount,
             children: (0, r.jsxs)(s.Text, {
               variant: "text-md/semibold",
               color: "text-default",
@@ -133,30 +133,30 @@ function _(e) {
             })
           })]
         }), (0, r.jsx)("div", {
-          className: h.viewServerButtonContainer,
+          className: b.viewServerButtonContainer,
           children: (0, r.jsx)(s.Button, {
             variant: "secondary",
             disabled: null == i,
             onClick: d,
-            text: f.intl.string(f.t.mQ2IGa),
+            text: p.intl.string(p.t.mQ2IGa),
             fullWidth: true
           })
         })]
       })]
     }) : (0, r.jsx)("div", {
-      className: h.viewServerButtonContainer,
+      className: b.viewServerButtonContainer,
       children: (0, r.jsx)(s.Button, {
         variant: "secondary",
         disabled: null == i,
         onClick: d,
-        text: f.intl.string(f.t.mQ2IGa),
+        text: p.intl.string(p.t.mQ2IGa),
         fullWidth: true
       })
     })
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     highlightedCreatorGuild: t
   } = e, {
@@ -169,39 +169,39 @@ function v(e) {
     hasAllImperativeDetails: d
   } = o;
   if (c) return (0, r.jsx)("div", {
-    className: h.guildCard,
+    className: b.guildCard,
     children: (0, r.jsx)(s.$jN, {})
   });
   if (!d) return null;
   let {
     guildIcon: u,
     guildName: m,
-    guildAvatarUrl: p,
-    subscriberCount: f,
-    emojisToShow: b,
-    notShownEmojiCount: v,
-    storePageUrl: O
+    guildAvatarUrl: f,
+    subscriberCount: p,
+    emojisToShow: h,
+    notShownEmojiCount: O,
+    storePageUrl: C
   } = o.details;
   return (0, r.jsxs)("div", {
-    className: h.guildCard,
+    className: b.guildCard,
     children: [(0, r.jsx)(x, {
       guildIcon: u,
       guildName: m,
-      guildAvatarUrl: p,
-      subscriberCount: f
+      guildAvatarUrl: f,
+      subscriberCount: p
     }), (0, r.jsx)(j, {
       quote: i,
       quoteAttribution: l,
       quoteAttributionTitle: a
-    }), (0, r.jsx)(_, {
-      emojisToShow: b,
-      notShownEmojiCount: v,
-      storePageUrl: O
+    }), (0, r.jsx)(v, {
+      emojisToShow: h,
+      notShownEmojiCount: O,
+      storePageUrl: C
     })]
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     highlightedCreators: t
   } = e;
@@ -209,13 +209,13 @@ function O(e) {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: f.intl.string(f.t["tJp+QV"])
+      children: p.intl.string(p.t["tJp+QV"])
     }), (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsx)(m.Z, {
-      carouselClassName: h.creatorGuildCarousel,
+      carouselClassName: b.creatorGuildCarousel,
       items: t,
-      renderItem: e => (0, r.jsx)(v, {
+      renderItem: e => (0, r.jsx)(O, {
         highlightedCreatorGuild: e
       }),
       intervalBetweenAutomaticItemRotations: 7e3

@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -106,7 +106,7 @@ function O() {
     captchaKey: T,
     onCaptchaVerify: e => {
       s.tn.post({
-        url: y.ANM.CAPTCHA,
+        url: C.ANM.CAPTCHA,
         body: {
           captcha_key: e
         },
@@ -118,17 +118,17 @@ function O() {
     },
     theme: exports,
     onClick: e => {
-      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
+      e === C.PUi.EMAIL_OR_PHONE || e === C.PUi.EMAIL || e === C.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
         return t => (0, a.jsx)(e, E({
-          layerContext: x.mK,
-          reason: f.L.USER_ACTION_REQUIRED
+          layerContext: f.mK,
+          reason: x.L.USER_ACTION_REQUIRED
         }, t))
       }, {
-        modalKey: C.M,
-        Layer: x.ZP
+        modalKey: _.M,
+        Layer: f.ZP
       })
     },
     onLogout: () => {

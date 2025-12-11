@@ -1,7 +1,7 @@
-/** Chunk was on 44011 **/
-/** chunk id: 593589, original params: n,e,t (module,exports,require) **/
+/** Chunk was on 55791 **/
+/** chunk id: 593589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,40 +12,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk207035 = require("./207035.js"),
   Chunk823748 = require("./823748.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk815523 = require("./815523.js");
+  Chunk63606 = require("./63606.js");
 
-function Z(n) {
+function f(e) {
   let {
-    windowKey: e,
-    channel: t
-  } = n;
-  return (0, l.jsx)(c.Z, {
+    windowKey: t,
+    channel: n
+  } = e;
+  return (0, r.jsx)(l.Z, {
     withTitleBar: true,
-    windowKey: e,
-    title: t.name,
-    channelId: t.id,
-    contentClassName: h.popoutContent,
-    children: (0, l.jsx)(o.Z.Provider, {
-      value: t.guild_id,
-      children: (0, l.jsx)(d.Z, {
-        providedChannel: t
+    windowKey: t,
+    title: n.name,
+    channelId: n.id,
+    contentClassName: b.popoutContent,
+    children: (0, r.jsx)(o.Z.Provider, {
+      value: n.guild_id,
+      children: (0, r.jsx)(u.Z, {
+        providedChannel: n
       })
     })
   })
 }
 
-function x(n, e) {
-  let t = (0, s.P)(e),
+function h(e, t) {
+  let n = (0, c.P)(t),
     o = i.useCallback(() => {
-      a.open("".concat(u.KJ3.CHANNEL_POPOUT, "-").concat(n.id), e => (0, l.jsx)(Z, {
-        windowKey: e,
-        channel: n
+      s.open("".concat(d.KJ3.CHANNEL_POPOUT, "-").concat(e.id), t => (0, r.jsx)(f, {
+        windowKey: t,
+        channel: e
       }), {
         defaultWidth: 854,
         defaultHeight: 480
       })
-    }, [n]);
-  return t ? (0, l.jsx)(r.sNh, {
+    }, [e]);
+  return n ? (0, r.jsx)(a.sNh, {
     id: "channel-pop-out",
     label: "Open in Popout",
     action: () => o()

@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk78839 = require("./78839.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk409150 = require("./409150.js");
+  Chunk65439 = require("./65439.js");
 async function O(e, t, n, r) {
   let i = (0, E.MY)(e, t);
   await (0, d.bG)(n), await (0, u.Mg)(e, {
@@ -52,9 +52,9 @@ function v(e) {
 
 function S() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk409150.body,
+    className: Chunk65439.body,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk409150.uncancelImage
+      className: Chunk65439.uncancelImage
     }), (0, Chunk54381.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t.G27uHe)
     })]

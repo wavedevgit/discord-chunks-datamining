@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 942478, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,13 +36,13 @@ function u() {
       await Chunk434404.Z.updateEmbed(module.id, exports, require)
     }
     return Promise.resolve()
-  }, [module, exports]), p = Chunk473749.useCallback(() => {
+  }, [module, exports]), f = Chunk473749.useCallback(() => {
     null != module && Chunk434404.Z.init(module.id)
   }, [module]);
   return (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: require,
     errorMessage: g,
     onSave: m,
-    onReset: p
+    onReset: f
   })
 }

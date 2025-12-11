@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 966301, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  ZP: () => E,
-  Zm: () => S
+  ZP: () => I,
+  Zm: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,59 +26,59 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk314160 = require("./314160.js");
+  Chunk23550 = require("./23550.js");
 
-function N(e) {
+function E(e) {
   let {
     guildId: t,
     prompts: n
-  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), m = c.length, p = c.length + u.length, f = m / p * 100, h = Math.max(Math.ceil(85 * p / 100) - m, 0), [b, x] = i.useState(false), j = b ? s.CJ0 : s.u04;
+  } = e, a = (0, l.e7)([g.Z], () => g.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...a]), m = c.length, f = c.length + u.length, p = m / f * 100, b = Math.max(Math.ceil(85 * f / 100) - m, 0), [h, x] = i.useState(false), j = h ? s.CJ0 : s.u04;
   return (0, r.jsxs)("div", {
-    className: y.channelCoverage,
+    className: N.channelCoverage,
     children: [(0, r.jsxs)(s.P3F, {
-      className: y.coverageHeader,
-      onClick: () => x(!b),
+      className: N.coverageHeader,
+      onClick: () => x(!h),
       children: [(0, r.jsxs)("div", {
-        className: y.warningTextContainer,
-        children: [f <= 85 && (0, r.jsx)(s.Mgn, {
+        className: N.warningTextContainer,
+        children: [p <= 85 && (0, r.jsx)(s.Mgn, {
           size: "xs",
           color: "currentColor",
-          className: y.warning
+          className: N.warning
         }), (0, r.jsx)(s.Text, {
-          className: y.coverageTitle,
+          className: N.coverageTitle,
           variant: "text-xs/medium",
           color: "text-muted",
-          children: C.intl.format(C.t.nMVKCX, {
-            numChannelsMissing: p - m
+          children: y.intl.format(y.t.nMVKCX, {
+            numChannelsMissing: f - m
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: y.progressContainer,
+        className: N.progressContainer,
         children: [(0, r.jsx)(s.Exd, {
-          className: y.coverageProgress,
-          foregroundColor: f > 85 ? "var(--status-positive)" : "var(--status-warning)",
-          percent: f
+          className: N.coverageProgress,
+          foregroundColor: p > 85 ? "var(--status-positive)" : "var(--status-warning)",
+          percent: p
         }), (0, r.jsx)(j, {
           size: "md",
           color: "currentColor",
-          className: y.caret
+          className: N.caret
         })]
       })]
-    }), b ? (0, r.jsxs)("div", {
-      className: y.channelCoverageDetails,
+    }), h ? (0, r.jsxs)("div", {
+      className: N.channelCoverageDetails,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: C.intl.string(C.t["0FM4i+"])
+        children: y.intl.string(y.t["0FM4i+"])
       }), (0, r.jsx)("div", {
-        className: y.channels,
+        className: N.channels,
         children: u.map(e => {
           var t;
           let n = null != (t = (0, o.KS)(e)) ? t : s.VL1;
           return (0, r.jsx)("div", {
-            className: y.channelPill,
+            className: N.channelPill,
             children: (0, r.jsxs)(s.Text, {
-              className: y.channel,
+              className: N.channel,
               variant: "text-xs/normal",
               color: "interactive-text-active",
               children: [(0, r.jsx)(n, {
@@ -89,45 +89,45 @@ function N(e) {
           }, e.id)
         })
       }), (0, r.jsx)("div", {
-        className: y.channelCoverageHint,
-        children: h > 0 ? (0, r.jsxs)(r.Fragment, {
+        className: N.channelCoverageHint,
+        children: b > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Mgn, {
             size: "xs",
             color: "currentColor"
           }), (0, r.jsx)(s.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: C.intl.format(C.t.sX8890, {
-              numChannels: h
+            children: y.intl.format(y.t.sX8890, {
+              numChannels: b
             })
           })]
         }) : (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: C.intl.string(C.t.o4s29v)
+          children: y.intl.string(y.t.o4s29v)
         })
       })]
     }) : null]
   })
 }
 
-function E(e) {
+function I(e) {
   let {
     saveOnClose: t
   } = e, n = (0, l.e7)([u.Z], () => u.Z.getGuild());
-  return null == n ? null : (0, r.jsx)(I, {
+  return null == n ? null : (0, r.jsx)(S, {
     guild: n,
     saveOnClose: t
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, a = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([b.Z], () => b.Z.editedOnboardingPrompts), d = (0, l.e7)([b.Z], () => b.Z.advancedMode), u = i.useRef(false);
+  } = e, a = (0, l.e7)([c.Z], () => c.Z.isLoading()), o = (0, l.e7)([h.Z], () => h.Z.editedOnboardingPrompts), d = (0, l.e7)([h.Z], () => h.Z.advancedMode), u = i.useRef(false);
   i.useEffect(() => {
-    a || u.current || (u.current = true, d || 0 !== o.length || (0, h.tS)(t, [(0, O.ae)()], false))
+    a || u.current || (u.current = true, d || 0 !== o.length || (0, b.tS)(t, [(0, C.ae)()], false))
   });
   let g = i.useRef(t);
   if (i.useEffect(() => {
@@ -135,55 +135,55 @@ function I(e) {
     }), i.useEffect(() => {
       if (n) return () => {
         let e = g.current;
-        null != e && (0, h.rS)(e, {
+        null != e && (0, b.rS)(e, {
           ignoreDefaultPrompt: true
-        }).then(() => (0, p.ss)(e.id)).catch(() => {})
+        }).then(() => (0, f.ss)(e.id)).catch(() => {})
       }
     }, [n]), null == t) return null;
-  let f = async () => {
+  let p = async () => {
     try {
-      await (0, h.rS)(t), await (0, m.di)(t.id)
+      await (0, b.rS)(t), await (0, m.di)(t.id)
     } catch (e) {}
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Heading, {
-      className: y.header,
+      className: N.header,
       variant: "heading-lg/extrabold",
-      children: d ? C.intl.string(C.t.AGjtFv) : C.intl.string(C.t.dqCzoT)
+      children: d ? y.intl.string(y.t.AGjtFv) : y.intl.string(y.t.dqCzoT)
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      children: C.intl.string(C.t["q/6MLL"])
+      children: y.intl.string(y.t["q/6MLL"])
     }), (0, r.jsxs)("div", {
-      className: y.links,
+      className: N.links,
       children: [(0, r.jsx)(s.Anchor, {
         target: "_blank",
-        href: v.EYA.GUILD_ONBOARDING_EXAMPLES,
+        href: O.EYA.GUILD_ONBOARDING_EXAMPLES,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: C.intl.string(C.t.Ok55Kh)
+          children: y.intl.string(y.t.Ok55Kh)
         })
       }), (0, r.jsx)("div", {
-        className: y.dot
+        className: N.dot
       }), (0, r.jsx)(s.Anchor, {
-        onClick: f,
+        onClick: p,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: C.intl.string(C.t["6gsjdM"])
+          children: y.intl.string(y.t["6gsjdM"])
         })
       }), (0, r.jsx)("div", {
-        className: y.dot
+        className: N.dot
       }), (0, r.jsx)(x.Wu, {
         guildId: t.id
       })]
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(E, {
       guildId: t.id,
       prompts: o
     }), n && (0, r.jsx)(j.Z, {}), (0, r.jsx)("div", {
-      className: y.prompts,
-      children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(_.Z, {
+      className: N.prompts,
+      children: a ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(v.Z, {
         postjoinOnly: d,
         guildId: t.id
       })
@@ -191,7 +191,7 @@ function I(e) {
   })
 }
 
-function S() {
+function _() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
     t = (0, Chunk442837.e7)([Chunk208665.Z], () => Chunk208665.Z.submitting),
     n = (0, Chunk442837.e7)([Chunk926958.Z], () => Chunk926958.Z.isSubmitting()),

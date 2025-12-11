@@ -23,10 +23,10 @@ let s = e => {
       null == (e = u.current) || e.setSelectionRange(c.current, c.current), c.current = null
     }
   });
-  let g = r.useCallback(() => {
+  let b = r.useCallback(() => {
       m(false)
     }, []),
-    f = r.useCallback(() => {
+    g = r.useCallback(() => {
       m(true)
     }, []);
   return (0, l.jsx)(i.oil, {
@@ -37,8 +37,8 @@ let s = e => {
     onChange: h,
     placeholder: o.intl.string(o.t.U2JFHZ),
     name: "emoji_name",
-    onBlur: g,
-    onFocus: f,
+    onBlur: b,
+    onFocus: g,
     label: s,
     clearable: true,
     required: true

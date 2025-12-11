@@ -1,4 +1,4 @@
-/** Chunk was on 81141 **/
+/** Chunk was on 38035 **/
 /** chunk id: 357823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => v
@@ -23,17 +23,17 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     channel: n,
-    guildId: u,
-    onSelect: a,
+    guildId: a,
+    onSelect: u,
     onInteraction: d,
     context: g
-  } = e, v = n.id, C = t.isNonUserBot(), M = t.id === E.default.getId(), O = (0, _.Z)(t), I = (0, s.Z)(t, u, v), b = (0, A.Y)({
+  } = e, v = n.id, C = t.isNonUserBot(), M = t.id === E.default.getId(), b = (0, _.Z)(t), O = (0, s.Z)(t, a, v), I = (0, A.Y)({
     isOwnSettings: M,
     userId: t.id,
     channelId: v,
-    guildId: u,
+    guildId: a,
     context: g
-  }), [Z, N] = (0, A.E)(t, v, u), T = (0, f.Z)(t, u, v), h = (0, o.Z)({
+  }), [Z, N] = (0, A.E)(t, v, a), T = (0, f.Z)(t, a, v), h = (0, o.Z)({
     id: t.id,
     label: S.intl.string(S.t["/AXYnE"])
   }), R = (0, c.Z)(t.id, n);
@@ -41,13 +41,13 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     navId: "user-context",
     onClose: r.Zy,
     "aria-label": S.intl.string(S.t.liqwPJ),
-    onSelect: a,
+    onSelect: u,
     onInteraction: d,
     variant: "fixed",
     children: !C && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(l.kSQ, {
-        children: [O, I]
-      }), R, b, !M && (0, i.jsx)(l.kSQ, {
+        children: [b, O]
+      }), R, I, !M && (0, i.jsx)(l.kSQ, {
         children: (0, i.jsxs)(l.sNh, {
           id: "more-options",
           label: S.intl.string(S.t.PdRCRg),

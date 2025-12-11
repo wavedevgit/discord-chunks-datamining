@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk454703 = require("./454703.js");
+  Chunk156132 = require("./156132.js");
 let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
   m = function(e) {
     let {
@@ -23,8 +23,8 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       message: l,
       image: s,
       type: m,
-      imageStyles: _,
-      imageMarginX: b,
+      imageStyles: b,
+      imageMarginX: _,
       imageMarginTop: E,
       trackingSource: O,
       undismissable: v,
@@ -77,7 +77,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       color: "text-muted",
       children: l
     }));
-    let A = null != b ? "".concat(b, "px") : "16px";
+    let A = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(g.container, N),
       children: [true === v ? null : (0, r.jsx)(c.P3F, {
@@ -102,7 +102,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         },
         children: (0, r.jsx)("img", {
           className: g.image,
-          style: _,
+          style: b,
           src: s,
           alt: ""
         })

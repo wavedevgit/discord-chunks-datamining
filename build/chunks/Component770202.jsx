@@ -1,12 +1,12 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk493683 = require("./493683.js"),
   Chunk239091 = require("./239091.js"),
@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk473403 = require("./473403.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk55940 = require("./55940.js");
+  Chunk642915 = require("./642915.js");
 
-function v(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,14 +31,14 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function x(e, t) {
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class C extends Chunk98597.ZP {
+class E extends Chunk98597.ZP {
   render() {
     let {
       channel: e,
@@ -57,14 +57,14 @@ class C extends Chunk98597.ZP {
       connectChannelDropTarget: n,
       connectChannelDragSource: i,
       connectDragPreview: l,
-      canReorderChannel: a
+      canReorderChannel: o
     } = this.props, s = (0, Chunk54381.jsx)("li", {
-      className: o()(this.getClassName(), {
-        [Chunk55940.disabled]: this.isDisabled()
+      className: a()(this.getClassName(), {
+        [Chunk642915.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
-        className: Chunk55940.iconVisibility,
+        className: Chunk642915.iconVisibility,
         channel: module,
         selected: exports,
         onClick: this.handleClick,
@@ -81,10 +81,10 @@ class C extends Chunk98597.ZP {
     return Chunk442837 ? require(Chunk473749(Chunk493683)) : Chunk493683
   }
   constructor(...e) {
-    super(...e), v(this, "handleContextMenu", e => {
+    super(...e), j(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, i = h.Z.getGuild(t.getGuildId());
+      } = this.props, i = p.Z.getGuild(t.getGuildId());
       null != i && (0, c.jW)(e, async () => {
         let {
           default: e
@@ -100,21 +100,21 @@ class C extends Chunk98597.ZP {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(j({}, n), {
+        }(C({}, n), {
           channel: t,
           guild: i
         }))
       })
-    }), v(this, "handleClick", e => {
+    }), j(this, "handleClick", e => {
       ! function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-        (0, f.uL)(_.Z5c.CHANNEL(t, e.id), {
+        (0, f.uL)(y.Z5c.CHANNEL(t, e.id), {
           state: {
             analyticsSource: {
-              page: _.ZY5.GUILD_CHANNEL,
-              section: _.jXE.CHANNEL_LIST,
-              object: _.qAy.CHANNEL
+              page: y.ZY5.GUILD_CHANNEL,
+              section: y.jXE.CHANNEL_LIST,
+              object: y.qAy.CHANNEL
             }
           }
         })
@@ -122,18 +122,18 @@ class C extends Chunk98597.ZP {
     })
   }
 }
-let E = (0, Chunk146773.B)(C),
-  S = Chunk473749.memo(function(e) {
+let S = (0, Chunk146773.B)(E),
+  I = Chunk473749.memo(function(e) {
     let {
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, a.cj)([p.Z, g.Z], () => {
-      let e = p.Z.getChannel(t.parent_id);
+    } = e, l = (0, o.cj)([h.Z, g.Z], () => {
+      let e = h.Z.getChannel(t.parent_id);
       return {
-        canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),
-        canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
+        canManageChannel: g.Z.can(y.Plq.MANAGE_CHANNELS, t),
+        canReorderChannel: true !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(E, j({}, l, e))
+    return (0, r.jsx)(S, C({}, l, e))
   })

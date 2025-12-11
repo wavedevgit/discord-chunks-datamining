@@ -1,11 +1,11 @@
 /** Chunk was on 58121 **/
 /** chunk id: 905204, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => g
 }), require("./472816.js"), require("./794429.js"), require("./539854.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  i = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -17,113 +17,113 @@ var Chunk473749 = require("./473749.js"),
   Chunk526761 = require("./526761.js");
 
 function f(e) {
-  s.Z.dispatch({
+  o.Z.dispatch({
     type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES",
     guildId: e
   })
 }
-let g = {};
+let m = {};
 
-function _(e) {
-  let n = (0, o.e7)([h.Z], () => {
+function g(e) {
+  let n = (0, c.e7)([p.Z], () => {
     var n;
-    return null != (n = h.Z.getPendingResponseOptions(e)) ? n : g
+    return null != (n = p.Z.getPendingResponseOptions(e)) ? n : m
   }, [e]);
-  return r.useEffect(() => (f(e), () => f(e)), [e]), r.useEffect(() => {
-    null != n && 0 !== Object.keys(n).length && p.Z.updateOnboardingResponses(e)
+  return a.useEffect(() => (f(e), () => f(e)), [e]), a.useEffect(() => {
+    null != n && 0 !== Object.keys(n).length && b.Z.updateOnboardingResponses(e)
   }, [e, n]), {
-    handleSelectOption: r.useCallback((n, t, r) => {
-      let l = h.Z.getOnboardingResponses(e),
+    handleSelectOption: a.useCallback((n, t, a) => {
+      let r = p.Z.getOnboardingResponses(e),
         {
-          addedRoleIds: o,
+          addedRoleIds: c,
           removedRoleIds: f
-        } = function(e, n, t, r) {
-          var l, a, o, s, c;
-          let d = [],
-            p = [];
+        } = function(e, n, t, a) {
+          var r, i, c, o, d;
+          let s = [],
+            b = [];
           if (e.singleSelect && t) {
-            let t = e.options.find(e => r.includes(e.id));
-            d = i().difference(null != (l = n.roleIds) ? l : [], null != (a = null == t ? true : t.roleIds) ? a : []), p = i().difference(null != (o = null == t ? true : t.roleIds) ? o : [], null != (s = n.roleIds) ? s : [])
-          } else if (t) d = null != (c = n.roleIds) ? c : [], p = [];
+            let t = e.options.find(e => a.includes(e.id));
+            s = l().difference(null != (r = n.roleIds) ? r : [], null != (i = null == t ? true : t.roleIds) ? i : []), b = l().difference(null != (c = null == t ? true : t.roleIds) ? c : [], null != (o = n.roleIds) ? o : [])
+          } else if (t) s = null != (d = n.roleIds) ? d : [], b = [];
           else {
-            let t = e.options.filter(e => r.includes(e.id)),
-              l = t.filter(e => n.id !== e.id),
-              a = t.map(e => e.roleIds).flat().filter(u.lm),
-              o = l.map(e => e.roleIds).flat().filter(u.lm);
-            d = [], p = i().difference(a, o)
+            let t = e.options.filter(e => a.includes(e.id)),
+              r = t.filter(e => n.id !== e.id),
+              i = t.map(e => e.roleIds).flat().filter(u.lm),
+              c = r.map(e => e.roleIds).flat().filter(u.lm);
+            s = [], b = l().difference(i, c)
           }
           return {
-            addedRoleIds: d,
-            removedRoleIds: p
+            addedRoleIds: s,
+            removedRoleIds: b
           }
-        }(n, t, r, l),
+        }(n, t, a, r),
         {
-          addedChannelIds: g,
-          removedChannelIds: _
+          addedChannelIds: m,
+          removedChannelIds: g
         } = function(e) {
-          var n, t, r, l, a;
+          var n, t, a, r, i;
           let {
-            guildId: o,
-            prompt: s,
-            option: d,
-            selected: p,
-            responses: m
-          } = e, f = [], g = [];
-          if (s.singleSelect && p) {
-            let e = s.options.find(e => m.includes(e.id));
-            f = i().difference(null != (n = d.channelIds) ? n : [], null != (t = null == e ? true : e.channelIds) ? t : []), g = i().difference(null != (r = null == e ? true : e.channelIds) ? r : [], null != (l = d.channelIds) ? l : [])
-          } else if (p) f = null != (a = d.channelIds) ? a : [], g = [];
+            guildId: c,
+            prompt: o,
+            option: s,
+            selected: b,
+            responses: h
+          } = e, f = [], m = [];
+          if (o.singleSelect && b) {
+            let e = o.options.find(e => h.includes(e.id));
+            f = l().difference(null != (n = s.channelIds) ? n : [], null != (t = null == e ? true : e.channelIds) ? t : []), m = l().difference(null != (a = null == e ? true : e.channelIds) ? a : [], null != (r = s.channelIds) ? r : [])
+          } else if (b) f = null != (i = s.channelIds) ? i : [], m = [];
           else {
-            let e = s.options.filter(e => m.includes(e.id)),
-              n = e.filter(e => d.id !== e.id),
+            let e = o.options.filter(e => h.includes(e.id)),
+              n = e.filter(e => s.id !== e.id),
               t = e.map(e => e.channelIds).flat().filter(u.lm),
-              r = n.map(e => e.channelIds).flat().filter(u.lm);
-            f = [], g = i().difference(t, r)
+              a = n.map(e => e.channelIds).flat().filter(u.lm);
+            f = [], m = l().difference(t, a)
           }
-          return (0, c.hi)(o) && f.push(...h.Z.getDefaultChannelIds(o)), {
+          return (0, d.hi)(c) && f.push(...p.Z.getDefaultChannelIds(c)), {
             addedChannelIds: f,
-            removedChannelIds: g
+            removedChannelIds: m
           }
         }({
           guildId: e,
           prompt: n,
           option: t,
-          selected: r,
-          responses: l
+          selected: a,
+          responses: r
         }),
         x = function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
-              r = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              a = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
               return Object.getOwnPropertyDescriptor(t, e).enumerable
-            }))), r.forEach(function(n) {
-              var r;
-              r = t[n], n in e ? Object.defineProperty(e, n, {
-                value: r,
+            }))), a.forEach(function(n) {
+              var a;
+              a = t[n], n in e ? Object.defineProperty(e, n, {
+                value: a,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[n] = r
+              }) : e[n] = a
             })
           }
           return e
-        }({}, g.reduce((n, t) => {
-          let r = d.ZP.getChannelIdFlags(e, t);
+        }({}, m.reduce((n, t) => {
+          let a = s.ZP.getChannelIdFlags(e, t);
           return n[t] = {
-            flags: (0, a.mB)(r, m.ic.OPT_IN_ENABLED, true)
+            flags: (0, i.mB)(a, h.ic.OPT_IN_ENABLED, true)
           }, n
-        }, {}), _.reduce((n, t) => {
-          let r = d.ZP.getChannelIdFlags(e, t);
+        }, {}), g.reduce((n, t) => {
+          let a = s.ZP.getChannelIdFlags(e, t);
           return n[t] = {
-            flags: (0, a.mB)(r, m.ic.OPT_IN_ENABLED, false)
+            flags: (0, i.mB)(a, h.ic.OPT_IN_ENABLED, false)
           }, n
         }, {}));
-      p.Z.selectOption(e, n.id, t.id, r), s.Z.dispatch({
+      b.Z.selectOption(e, n.id, t.id, a), o.Z.dispatch({
         type: "USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK",
         guildId: e,
         overrides: x
-      }), p.Z.updateRolesLocal(e, o, f)
+      }), b.Z.updateRolesLocal(e, c, f)
     }, [e])
   }
 }

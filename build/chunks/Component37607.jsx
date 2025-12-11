@@ -1,4 +1,4 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 37607, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk466070 = require("./466070.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk588993 = require("./588993.js");
+  Chunk389968 = require("./389968.js");
 
 function x(e) {
   let {
@@ -37,7 +37,7 @@ function x(e) {
       })]
     }), n.map(e => {
       var t;
-      return (0, i.jsx)(b.t, {
+      return (0, i.jsx)(m.t, {
         channel: e,
         application: r,
         name: e.name,
@@ -55,17 +55,17 @@ function x(e) {
 function j(e) {
   let {
     guild: t
-  } = e, n = (0, p.F)(t.id), l = a().groupBy(n, e => {
+  } = e, n = (0, b.F)(t.id), l = a().groupBy(n, e => {
     var t;
     return null == (t = e.linkedLobby) ? true : t.application_id
   }), c = Object.keys(l);
   return r.useEffect(() => {
-    0 === n.length && s.Z.setSection(g.b4C.OVERVIEW)
+    0 === n.length && s.Z.setSection(f.b4C.OVERVIEW)
   }, [n]), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
-      children: f.intl.format(f.t["9gsSLu"], {
-        helpdeskArticle: m.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
+      children: g.intl.format(g.t["9gsSLu"], {
+        helpdeskArticle: p.Z.getArticleURL(f.BhN.LINKED_LOBBIES)
       })
     }), (0, i.jsx)(o.izJ, {
       className: h.headerDivider

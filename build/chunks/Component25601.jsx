@@ -1,21 +1,21 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 25601, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk655645 = require("./655645.js");
+  Chunk616891 = require("./616891.js");
 
-function a(e) {
+function o(e) {
   let {
     mentionsCount: t,
     isMentionLowImportance: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o.mentionsBadge,
+    className: a.mentionsBadge,
     "aria-hidden": true,
     children: (0, r.jsx)(l.mAB, {
       count: t,

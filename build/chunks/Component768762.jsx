@@ -9,7 +9,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk192754 = require("./192754.js");
+  Chunk546610 = require("./546610.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,9 +27,9 @@ let d = {
   },
   f = {
     [d.UP]: "",
-    [d.RIGHT]: Chunk192754.right,
-    [d.DOWN]: Chunk192754.down,
-    [d.LEFT]: Chunk192754.left
+    [d.RIGHT]: Chunk546610.right,
+    [d.DOWN]: Chunk546610.down,
+    [d.LEFT]: Chunk546610.left
   };
 class p extends(r = Chunk473749.PureComponent) {
   render() {

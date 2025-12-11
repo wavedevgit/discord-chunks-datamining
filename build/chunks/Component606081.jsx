@@ -65,12 +65,12 @@ function m(e) {
   return d("Offer", e)
 }
 m.ItemConditions = g, m.ItemAvailability = h;
-var _ = ((a = _ || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
+var b = ((a = b || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
 
-function b(e) {
+function _(e) {
   return d("QuantitativeValue", e)
 }
-b.UnitCodes = _;
+_.UnitCodes = b;
 class E extends(r = Chunk473749.Component) {
   render() {
     let {
@@ -97,7 +97,7 @@ c(E, "Thing", p), c(E, "Brand", p), c(E, "Person", function(e) {
   return d("AggregateRating", e)
 }), c(E, "AggregateOffer", function(e) {
   return d("AggregateOffer", e)
-}), c(E, "QuantitativeValue", b), c(E, "UnitPriceSpecification", function(e) {
+}), c(E, "QuantitativeValue", _), c(E, "UnitPriceSpecification", function(e) {
   return d("UnitPriceSpecification", e)
 });
 let O = E

@@ -18,9 +18,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk5192 = require("./5192.js"),
   Chunk501517 = require("./501517.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk964721 = require("./964721.js"),
+  Chunk162085 = require("./162085.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk144736 = require("./144736.js");
+  Chunk577651 = require("./577651.js");
 
 function S() {
   return [{
@@ -63,13 +63,13 @@ function C(t) {
   } = t, [k, x] = i.useState(null != j ? A : m), [D, I] = i.useState(""), [R, U] = i.useState(null), {
     isModReportClosed: N,
     isModReport: Z
-  } = (0, o.cj)([g.Z], () => {
-    let t = g.Z.getChannel(j);
+  } = (0, o.cj)([_.Z], () => {
+    let t = _.Z.getChannel(j);
     return {
       isModReportClosed: null == t ? true : t.isArchivedThread(),
       isModReport: null == t ? true : t.isModeratorReportChannel()
     }
-  }), [P, Y] = i.useState(false), [F, L] = i.useState(false), B = (0, _.sE)(e, {
+  }), [P, Y] = i.useState(false), [F, L] = i.useState(false), B = (0, g.sE)(e, {
     location: r,
     targetUserId: null == n ? true : n.id,
     targets: v
@@ -85,7 +85,7 @@ function C(t) {
         F && null != j && f.Z.resolveFlag(j)
       })
     }
-    B(_.jQ.BAN), y()
+    B(g.jQ.BAN), y()
   }, [R, D, C, B, y, v, T, P, e, k, n, j, F]), H = i.useCallback(t => {
     x(t)
   }, []), K = i.useCallback(t => {
@@ -131,21 +131,21 @@ function C(t) {
         onClick: w
       }), t
     })(),
-    actionBarInput: V ? (0, l.jsx)(c.Checkbox, {
+    actionBarInput: V ? (0, l.jsx)(s.Checkbox, {
       checked: F,
       onChange: t => L(t),
       label: M.intl.string(p.default["8yIKem"])
     }) : true,
-    children: (0, l.jsxs)(c.Kqy, {
+    children: (0, l.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 24,
-      children: [(0, l.jsxs)(c.Kqy, {
+      children: [(0, l.jsxs)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: [P && (0, l.jsx)(c.M14, {
+        children: [P && (0, l.jsx)(s.M14, {
           type: "critical",
           children: M.intl.string(M.t.IrYX1y)
-        }), (0, l.jsx)(c.FXm, {
+        }), (0, l.jsx)(s.FXm, {
           required: true,
           label: M.intl.string(null != j ? M.t["+KCLVp"] : M.t.w4Ivys),
           value: D,
@@ -172,7 +172,7 @@ function C(t) {
           className: a()(h.reasonFreeText, {
             [h.hidden]: "other" !== D
           }),
-          children: (0, l.jsx)(c.Kx8, {
+          children: (0, l.jsx)(s.Kx8, {
             maxLength: E.GNZ,
             onChange: G,
             value: null != R ? R : "",
@@ -180,7 +180,7 @@ function C(t) {
             autoFocus: true
           })
         })]
-      }), (0, l.jsx)(s.y6, {
+      }), (0, l.jsx)(c.y6, {
         label: M.intl.string(null != j ? M.t.ERSM8H : M.t["8l3W0y"]),
         options: S(),
         value: k,

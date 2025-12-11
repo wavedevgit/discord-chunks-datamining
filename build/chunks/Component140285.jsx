@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 140285, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,9 +21,9 @@ function u(e) {
   } = e, {
     editStateId: u,
     guildId: g
-  } = (0, l.N)(), [m, p] = s.GP(u, g);
+  } = (0, l.N)(), [m, f] = s.GP(u, g);
   return (0, r.jsx)(i.FXm, {
-    onChange: e => p(e),
+    onChange: e => f(e),
     options: [{
       name: d.intl.string(d.t["vs2T+B"]),
       value: a.I.SOME_CHANNELS_ACCESS,

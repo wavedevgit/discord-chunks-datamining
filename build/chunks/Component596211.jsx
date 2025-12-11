@@ -16,24 +16,24 @@ function c(t) {
     } = t,
     s = function(t, e) {
       if (null == t) return {};
-      var n, r, o = function(t, e) {
+      var n, r, a = function(t, e) {
         if (null == t) return {};
-        var n, r, o = {},
-          a = Object.keys(t);
-        for (r = 0; r < a.length; r++) n = a[r], e.indexOf(n) >= 0 || (o[n] = t[n]);
-        return o
+        var n, r, a = {},
+          o = Object.keys(t);
+        for (r = 0; r < o.length; r++) n = o[r], e.indexOf(n) >= 0 || (a[n] = t[n]);
+        return a
       }(t, e);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(t);
-        for (r = 0; r < a.length; r++) n = a[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (o[n] = t[n])
+        var o = Object.getOwnPropertySymbols(t);
+        for (r = 0; r < o.length; r++) n = o[r], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (a[n] = t[n])
       }
-      return o
+      return a
     }(t, ["guildId", "productId", "attachmentId"]);
   let {
     isLoading: u,
     downloadAttachment: f
-  } = (0, a.Z)(c, i);
-  return (0, r.jsx)(o.zxk, (e = function(t) {
+  } = (0, o.Z)(c, i);
+  return (0, r.jsx)(a.zxk, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var n = null != arguments[e] ? arguments[e] : {},
         r = Object.keys(n);

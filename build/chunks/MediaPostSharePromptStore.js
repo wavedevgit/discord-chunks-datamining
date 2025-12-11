@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 48929, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var i, r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -11,20 +11,20 @@ var i, r, Chunk442837 = require("./442837.js"),
   Chunk709054 = require("./709054.js"),
   Chunk522579 = require("./522579.js");
 let p = new Set;
-class h extends(i = Chunk442837.ZP.Store) {
+class f extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk430198.Z)
   }
   shouldDisplayPrompt(e) {
     return p.has(e)
   }
-}(r = "displayName") in h ? Object.defineProperty(h, r, {
+}(r = "displayName") in f ? Object.defineProperty(f, r, {
   value: "MediaPostSharePromptStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[r] = "MediaPostSharePromptStore";
-let f = new h(Chunk570140.Z, {
+}) : f[r] = "MediaPostSharePromptStore";
+let h = new f(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     p = new Set
   },

@@ -23,48 +23,48 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk939101 = require("./939101.js"),
-  Chunk486730 = require("./486730.js"),
+  Chunk990551 = require("./990551.js"),
+  Chunk324243 = require("./324243.js"),
   Chunk509614 = require("./509614.js"),
   Chunk880511 = require("./880511.js"),
   Chunk985443 = require("./985443.js"),
   Chunk612253 = require("./612253.js"),
   Chunk872532 = require("./872532.js"),
-  Chunk398300 = require("./398300.js"),
-  Chunk184071 = require("./184071.js"),
-  Chunk368243 = require("./368243.js"),
-  Chunk119121 = require("./119121.js"),
-  Chunk404583 = require("./404583.js"),
-  Chunk295349 = require("./295349.js"),
-  Chunk631572 = require("./631572.js"),
-  Chunk999675 = require("./999675.js"),
-  Chunk238027 = require("./238027.js"),
-  Chunk997585 = require("./997585.js"),
-  Chunk138431 = require("./138431.js"),
-  Chunk305516 = require("./305516.js"),
-  Chunk980984 = require("./980984.js"),
-  Chunk952842 = require("./952842.js"),
-  Chunk38244 = require("./38244.js"),
-  Chunk491878 = require("./491878.js"),
-  Chunk751049 = require("./751049.js"),
-  Chunk518971 = require("./518971.js"),
-  Chunk85726 = require("./85726.js"),
-  Chunk281652 = require("./281652.js"),
-  Chunk982935 = require("./982935.js"),
-  Chunk831399 = require("./831399.js"),
-  Chunk91342 = require("./91342.js"),
-  Chunk181708 = require("./181708.js"),
-  Chunk290650 = require("./290650.js"),
-  Chunk751125 = require("./751125.js"),
-  Chunk904505 = require("./904505.js"),
-  Chunk712626 = require("./712626.js"),
-  Chunk386014 = require("./386014.js"),
-  Chunk845571 = require("./845571.js"),
-  Chunk220046 = require("./220046.js"),
-  Chunk385874 = require("./385874.js"),
-  Chunk371000 = require("./371000.js"),
-  Chunk377679 = require("./377679.js"),
-  Chunk825087 = require("./825087.js");
+  Chunk836236 = require("./836236.js"),
+  Chunk94314 = require("./94314.js"),
+  Chunk548475 = require("./548475.js"),
+  Chunk967830 = require("./967830.js"),
+  Chunk742694 = require("./742694.js"),
+  Chunk406459 = require("./406459.js"),
+  Chunk91830 = require("./91830.js"),
+  Chunk32357 = require("./32357.js"),
+  Chunk147146 = require("./147146.js"),
+  Chunk801794 = require("./801794.js"),
+  Chunk739790 = require("./739790.js"),
+  Chunk779235 = require("./779235.js"),
+  Chunk511974 = require("./511974.js"),
+  Chunk508111 = require("./508111.js"),
+  Chunk459872 = require("./459872.js"),
+  Chunk860751 = require("./860751.js"),
+  Chunk584470 = require("./584470.js"),
+  Chunk810933 = require("./810933.js"),
+  Chunk857245 = require("./857245.js"),
+  Chunk383057 = require("./383057.js"),
+  Chunk370026 = require("./370026.js"),
+  Chunk120368 = require("./120368.js"),
+  Chunk73500 = require("./73500.js"),
+  Chunk763341 = require("./763341.js"),
+  Chunk778851 = require("./778851.js"),
+  Chunk399299 = require("./399299.js"),
+  Chunk646560 = require("./646560.js"),
+  Chunk27217 = require("./27217.js"),
+  Chunk918009 = require("./918009.js"),
+  Chunk378325 = require("./378325.js"),
+  Chunk962526 = require("./962526.js"),
+  Chunk670948 = require("./670948.js"),
+  Chunk965468 = require("./965468.js"),
+  Chunk222419 = require("./222419.js"),
+  Chunk740778 = require("./740778.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -186,35 +186,35 @@ let ef = (e, t) => ec({
       description: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
       onClick: exports,
-      previewImage: Chunk184071.serverProfiles.thumbnail,
-      videoUrl: Chunk184071.serverProfiles.assetUrl
+      previewImage: Chunk94314.serverProfiles.thumbnail,
+      videoUrl: Chunk94314.serverProfiles.assetUrl
     }, R = {
       name: "referralProgram",
       title: Chunk388032.intl.string(Chunk388032.t.tPY4o9),
       description: Chunk388032.intl.format(Chunk388032.t.jRPQUH, {
-        learnMoreLink: Chunk398300
+        learnMoreLink: Chunk836236
       }),
-      previewImage: Chunk184071.referralProgram.thumbnail,
-      videoUrl: Chunk184071.referralProgram.assetUrl
+      previewImage: Chunk94314.referralProgram.thumbnail,
+      videoUrl: Chunk94314.referralProgram.assetUrl
     }, w = {
       name: "customThemes",
-      title: Chunk388032.intl.string(Chunk939101.default.XokIHM),
-      description: Chunk388032.intl.string(Chunk939101.default["7esQMC"]),
+      title: Chunk388032.intl.string(Chunk990551.default.XokIHM),
+      description: Chunk388032.intl.string(Chunk990551.default["7esQMC"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      previewImage: Chunk184071.customThemes.thumbnail,
+      previewImage: Chunk94314.customThemes.thumbnail,
       onClick: () => {
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
       },
-      videoUrl: Chunk184071.customThemes.assetUrl
+      videoUrl: Chunk94314.customThemes.assetUrl
     }, D = {
       name: "displayNameStyles",
-      title: Chunk388032.intl.string(Chunk486730.default.ABtBDQ),
-      description: Chunk388032.intl.string(Chunk486730.default.MFNXZh),
+      title: Chunk388032.intl.string(Chunk324243.default.ABtBDQ),
+      description: Chunk388032.intl.string(Chunk324243.default.MFNXZh),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      previewImage: Chunk184071.displayNameStyles.thumbnail,
+      previewImage: Chunk94314.displayNameStyles.thumbnail,
       onClick: Chunk985443,
       badgeText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
-      videoUrl: Chunk184071.displayNameStyles.assetUrl
+      videoUrl: Chunk94314.displayNameStyles.assetUrl
     }, x = {
       name: "recurring3PPromotions",
       title: Chunk388032.intl.string(Chunk388032.t.m7PucM),
@@ -226,52 +226,52 @@ let ef = (e, t) => ec({
         analyticsLocations: module
       }),
       badgeText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),
-      previewImage: Chunk184071.recurring3PPromotions.thumbnail,
-      videoUrl: Chunk184071.recurring3PPromotions.thumbnail
+      previewImage: Chunk94314.recurring3PPromotions.thumbnail,
+      videoUrl: Chunk94314.recurring3PPromotions.thumbnail
     }, L = {
       name: "showYourStyle",
       title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmv),
       description: Chunk388032.intl.string(Chunk388032.t.UsOUxY),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      previewImage: Chunk184071.showYourStyle.thumbnail,
+      previewImage: Chunk94314.showYourStyle.thumbnail,
       onClick: exports,
-      videoUrl: Chunk184071.showYourStyle.assetUrl
+      videoUrl: Chunk94314.showYourStyle.assetUrl
     }, j = {
       name: "yourSpace",
       title: Chunk388032.intl.string(Chunk388032.t.Wme3nX),
       description: Chunk388032.intl.string(Chunk388032.t["/aAIqV"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      previewImage: Chunk184071.yourSpace.thumbnail,
+      previewImage: Chunk94314.yourSpace.thumbnail,
       onClick: Chunk612253,
-      videoUrl: Chunk184071.yourSpace.assetUrl
+      videoUrl: Chunk94314.yourSpace.assetUrl
     }, M = {
       name: "emojis",
       title: Chunk388032.intl.string(Chunk388032.t.zY5PPb),
       description: Chunk388032.intl.string(Chunk388032.t.R5Xag2),
-      previewImage: Chunk184071.emojis.thumbnail,
-      videoUrl: Chunk184071.emojis.assetUrl
+      previewImage: Chunk94314.emojis.thumbnail,
+      videoUrl: Chunk94314.emojis.assetUrl
     }, k = {
       name: "noLimits",
       title: Chunk388032.intl.string(Chunk388032.t["6b3ydG"]),
       description: Chunk388032.intl.string(Chunk388032.t["Y+IJyg"]),
-      previewImage: Chunk184071.noLimits.thumbnail,
-      videoUrl: Chunk184071.noLimits.assetUrl
+      previewImage: Chunk94314.noLimits.thumbnail,
+      videoUrl: Chunk94314.noLimits.assetUrl
     };
     return {
       whatsNewBoxes: Chunk509614 ? [
-        [Chunk295349],
-        [Chunk404583, Chunk119121]
+        [Chunk406459],
+        [Chunk742694, Chunk967830]
       ] : Chunk880511.enabled ? [
-        [Chunk631572],
-        [Chunk368243, Chunk119121]
+        [Chunk91830],
+        [Chunk548475, Chunk967830]
       ] : [
-        [Chunk404583],
-        [Chunk368243, Chunk119121]
+        [Chunk742694],
+        [Chunk548475, Chunk967830]
       ],
       bestOfBoxes: [
-        [Chunk999675],
-        [Chunk238027],
-        [Chunk997585, Chunk138431]
+        [Chunk32357],
+        [Chunk147146],
+        [Chunk801794, Chunk739790]
       ]
     }
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 17030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk223135 = require("./223135.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
-  Chunk787267 = require("./787267.js");
+  Chunk876376 = require("./876376.js");
 
 function b(e) {
   let {
@@ -25,16 +25,16 @@ function b(e) {
     selectedDefaultStatus: b,
     setIsEmojiPickerOpen: C,
     defaultStatusVariant: y
-  } = e, v = r.useRef(null), _ = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), O = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
+  } = e, v = r.useRef(null), O = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), x = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
     emojiId: t.id,
     emojiName: t.name,
     animated: !!t.animated
-  }) : null != b ? (0, i.jsx)(h.Z, {
+  }) : null != b ? (0, i.jsx)(f.Z, {
     className: g.icon,
     userId: u.default.getId(),
     size: 20,
     hangStatusActivity: {
-      type: f.IIU.HANG_STATUS,
+      type: h.IIU.HANG_STATUS,
       state: b
     },
     fallbackVariant: y
@@ -49,8 +49,8 @@ function b(e) {
         closePopout: r
       } = e;
       return (0, i.jsx)(c.Z, {
-        channel: _,
-        guildId: null != (t = null == _ ? true : _.guild_id) ? t : true,
+        channel: O,
+        guildId: null != (t = null == O ? true : O.guild_id) ? t : true,
         closePopout: r,
         onSelectEmoji: e => {
           let {
@@ -103,7 +103,7 @@ function b(e) {
         ref: v,
         active: a,
         tabIndex: 0,
-        renderButtonContents: null == t && null == b ? null : O
+        renderButtonContents: null == t && null == b ? null : x
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

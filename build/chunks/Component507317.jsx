@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 507317, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,18 +19,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk486324 = require("./486324.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
+  Chunk551952 = require("./551952.js");
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(m.GuildFeatures.BANNER), _ = i.useCallback((e, i) => {
+  } = e, j = t.features.has(m.GuildFeatures.BANNER), v = i.useCallback((e, i) => {
     if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
     (0, l.ZDy)(async () => {
       let {
         default: l
-      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("7016")]).then(n.bind(n, 712451));
+      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("76543")]).then(n.bind(n, 712451));
       return n => (0, r.jsx)(l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -59,10 +59,10 @@ let j = function(e) {
             homeHeader: n
           })
         },
-        uploadType: f.pC.HOME_HEADER
+        uploadType: p.pC.HOME_HEADER
       }, n))
     })
-  }, [t.id]), v = i.useCallback(e => {
+  }, [t.id]), O = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, a.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
         section: m.jXE.GUILD_SETTINGS_ONBOARDING,
@@ -78,19 +78,19 @@ let j = function(e) {
         page: m.ZY5.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, p.XO)()
+      perks: (0, f.XO)()
     })
-  }, [t]), O = (0, r.jsx)(c.Z, {
+  }, [t]), C = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
     makeURL: e => null != e ? u.ZP.getGuildHomeHeaderURL({
       id: t.id,
       homeHeader: e
     }) : null,
     disabled: !j,
-    onChange: _,
-    hint: b.intl.string(b.t.NyXznh),
+    onChange: v,
+    hint: h.intl.string(h.t.NyXznh),
     enabled: j,
-    maxFileSizeBytes: h.B
+    maxFileSizeBytes: b.B
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -98,12 +98,12 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nY)
+        children: h.intl.string(h.t.BBj1nY)
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
         guildFeature: m.GuildFeatures.BANNER,
-        onClick: v
+        onClick: O
       })]
     }), (0, r.jsxs)("div", {
       className: x.section,
@@ -112,19 +112,19 @@ let j = function(e) {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: b.intl.string(b.t.Vwintv)
+          children: h.intl.string(h.t.Vwintv)
         }), (0, r.jsx)("div", {
           className: x.uploadButton,
           children: (0, r.jsx)(d.Z, {
-            onChange: _,
-            maxFileSizeBytes: h.B,
-            text: b.intl.string(b.t.yG2pUi),
+            onChange: v,
+            maxFileSizeBytes: b.B,
+            text: h.intl.string(h.t.yG2pUi),
             size: "md",
             variant: "primary"
           })
         })]
       }), (0, r.jsx)("div", {
-        children: O
+        children: C
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -133,12 +133,12 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nY)
+        children: h.intl.string(h.t.BBj1nY)
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
         guildFeature: m.GuildFeatures.BANNER,
-        onClick: v
+        onClick: O
       })]
     }), (0, r.jsxs)("div", {
       className: x.section,
@@ -148,19 +148,19 @@ let j = function(e) {
           variant: "text-sm/normal",
           color: "text-default",
           className: x.bannerDescription,
-          children: b.intl.string(b.t.Vwintv)
+          children: h.intl.string(h.t.Vwintv)
         }), (0, r.jsx)(l.Button, {
           variant: "expressive",
           icon: l.Ucv,
-          text: b.intl.string(b.t["+7XY31"]),
-          onClick: v
+          text: h.intl.string(h.t["+7XY31"]),
+          onClick: O
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsx)(l.P3F, {
           "aria-hidden": true,
           tabIndex: false,
-          onClick: v,
-          children: O
+          onClick: O,
+          children: C
         })
       })]
     })]

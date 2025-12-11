@@ -1,21 +1,21 @@
-/** Chunk was on 9456 **/
+/** Chunk was on 193 **/
 /** chunk id: 983200, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  $x: () => a,
+  $x: () => l,
   GV: () => s,
-  S$: () => h,
+  S$: () => f,
   Vn: () => o,
   tu: () => u
 });
 var Chunk473749 = require("./473749.js"),
   Chunk31775 = require("./31775.js"),
-  l = require.n(Chunk31775);
-let a = 0,
+  i = require.n(Chunk31775);
+let l = 0,
   s = 4,
   o = 4,
   c = "absolute",
-  d = new(l())({
+  d = new(i())({
     max: 100
   });
 
@@ -23,17 +23,17 @@ function u(e) {
   let {
     numAttachments: t,
     containerWidth: n,
-    containerHeight: i
+    containerHeight: r
   } = e;
-  return r.useMemo(() => (function(e) {
+  return a.useMemo(() => (function(e) {
     let {
       numAttachments: t,
       containerWidth: n,
-      containerHeight: r
-    } = e, i = "".concat(t, "-").concat(n, "-").concat(r), l = d.get(i);
-    if (null != l) return l;
+      containerHeight: a
+    } = e, r = "".concat(t, "-").concat(n, "-").concat(a), i = d.get(r);
+    if (null != i) return i;
     {
-      let e = ((e, t, n, r) => {
+      let e = ((e, t, n, a) => {
         if (0 === n) return [];
         if (1 === n) return [{
           width: e,
@@ -43,7 +43,7 @@ function u(e) {
           position: c
         }];
         if (2 === n) {
-          let n = Math.ceil((e - r) / 2);
+          let n = Math.ceil((e - a) / 2);
           return [{
             top: 0,
             left: 0,
@@ -52,15 +52,15 @@ function u(e) {
             height: t
           }, {
             top: 0,
-            left: n + r,
+            left: n + a,
             position: c,
             width: n,
             height: t
           }]
         }
         if (3 === n) {
-          let n = Math.ceil((e - r) / 2),
-            i = Math.ceil((t - r) / 2);
+          let n = Math.ceil((e - a) / 2),
+            r = Math.ceil((t - a) / 2);
           return [{
             top: 0,
             left: 0,
@@ -69,54 +69,54 @@ function u(e) {
             height: t
           }, {
             top: 0,
-            left: n + r,
+            left: n + a,
             position: c,
             width: n,
-            height: i
+            height: r
           }, {
-            top: i + r,
-            left: n + r,
+            top: r + a,
+            left: n + a,
             position: c,
             width: n,
-            height: i
+            height: r
           }]
         } {
-          let n = Math.ceil((e - r) / 2),
-            i = Math.ceil((t - r) / 2);
+          let n = Math.ceil((e - a) / 2),
+            r = Math.ceil((t - a) / 2);
           return [{
             top: 0,
             left: 0,
             position: c,
             width: n,
-            height: i
+            height: r
           }, {
-            top: i + r,
+            top: r + a,
             left: 0,
             position: c,
             width: n,
-            height: i
+            height: r
           }, {
             top: 0,
-            left: n + r,
+            left: n + a,
             position: c,
             width: n,
-            height: i
+            height: r
           }, {
-            top: i + r,
-            left: n + r,
+            top: r + a,
+            left: n + a,
             position: c,
             width: n,
-            height: i
+            height: r
           }]
         }
-      })(n, r, t, 4);
-      return d.set(i, e), e
+      })(n, a, t, 4);
+      return d.set(r, e), e
     }
   })({
     numAttachments: t,
     containerWidth: n,
-    containerHeight: i
-  }), [t, n, i])
+    containerHeight: r
+  }), [t, n, r])
 }
 
 function m(e) {
@@ -128,11 +128,11 @@ function m(e) {
   }))
 }
 
-function h(e) {
+function f(e) {
   let {
     imageContainerStyles: t,
     containerWidth: n,
-    containerHeight: i
-  } = e, l = r.useRef(m(t)), a = r.useRef(n), s = r.useRef(i), o = n > a.current + 100, c = i > s.current + 100;
-  return (o || c) && (l.current = m(t)), l.current
+    containerHeight: r
+  } = e, i = a.useRef(m(t)), l = a.useRef(n), s = a.useRef(r), o = n > l.current + 100, c = r > s.current + 100;
+  return (o || c) && (i.current = m(t)), i.current
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 526717, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -28,25 +28,25 @@ function s(e, t, n) {
       }(null == g || null == (e = g.role_subscription) ? true : e.group_listings),
       r = null == g || null == (t = g.role_subscription) ? true : t.benefit_emojis;
     return null == r ? true : r.filter(e => e.roles.some(e => n.has(e)))
-  }, [null == g ? true : g.role_subscription]), p = null == g ? true : g.guild.icon_hash, f = i.ZP.getGuildIconURL({
+  }, [null == g ? true : g.role_subscription]), f = null == g ? true : g.guild.icon_hash, p = i.ZP.getGuildIconURL({
     id: e,
-    icon: p,
+    icon: f,
     size: n
-  }), h = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), b = null != m && m.length > t ? m.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, _ = null == g || null == (s = g.guild) ? true : s.name, v = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, O = !c && null != _ && null != p && null != f;
-  return O ? {
-    hasAllImperativeDetails: O,
+  }), b = r.useMemo(() => null != m && m.length > t ? m.slice(0, t) : m, [m, t]), h = null != m && m.length > t ? m.length - t : null, x = null == u ? true : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : true, v = null == g || null == (s = g.guild) ? true : s.name, O = null == g || null == (o = g.role_subscription) ? true : o.subscriber_count, C = !c && null != v && null != f && null != p;
+  return C ? {
+    hasAllImperativeDetails: C,
     isLoading: c,
     details: {
-      guildName: _,
-      guildIcon: p,
-      guildAvatarUrl: f,
+      guildName: v,
+      guildIcon: f,
+      guildAvatarUrl: p,
       storePageUrl: j,
-      subscriberCount: v,
-      emojisToShow: h,
-      notShownEmojiCount: b
+      subscriberCount: O,
+      emojisToShow: b,
+      notShownEmojiCount: h
     }
   } : {
-    hasAllImperativeDetails: O,
+    hasAllImperativeDetails: C,
     isLoading: c,
     error: d
   }

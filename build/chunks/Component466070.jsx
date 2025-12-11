@@ -1,4 +1,4 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 466070, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => d
@@ -33,9 +33,9 @@ function d(e) {
   var t, {
       channel: d,
       application: u,
-      showApplicationImage: p
+      showApplicationImage: b
     } = e,
-    m = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -50,8 +50,8 @@ function d(e) {
       }
       return r
     }(e, ["channel", "application", "showApplicationImage"]);
-  let b = (0, a.w)(d),
-    g = r.useCallback(() => (0, l.ZDy)(async () => {
+  let m = (0, a.w)(d),
+    f = r.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("30019").then(n.bind(n, 719498));
@@ -72,12 +72,12 @@ function d(e) {
         }), n))
       }
     }), [u, d]),
-    f = p ? null != (t = u.getIconURL(48)) ? t : o.pK["0"] : true;
+    g = b ? null != (t = u.getIconURL(48)) ? t : o.pK["0"] : true;
   return (0, i.jsx)(s.Z, c({
-    imageSrc: f,
-    onButtonClick: g,
-    details: null != b ? [{
-      text: b
+    imageSrc: g,
+    onButtonClick: f,
+    details: null != m ? [{
+      text: m
     }] : true
-  }, m))
+  }, p))
 }

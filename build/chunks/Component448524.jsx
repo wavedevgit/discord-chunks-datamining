@@ -15,26 +15,26 @@ var Chunk399606 = require("./399606.js"),
   Chunk792258 = require("./792258.jsx"),
   Chunk657825 = require("./657825.jsx"),
   Chunk872608 = require("./872608.jsx"),
-  Chunk435757 = require("./435757.js"),
+  Chunk372807 = require("./372807.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk336888 = require("./336888.js");
+  Chunk949285 = require("./949285.js");
 let h = () => {
   let e = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getTopUserActivities()),
     t = (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getTopGuildActivities());
   return 0 === module.length && 0 === exports.length ? null : (0, Chunk54381.jsxs)("div", {
-    className: Chunk336888.container,
+    className: Chunk949285.container,
     children: [module.length > 0 && (0, Chunk54381.jsxs)("div", {
-      className: Chunk336888.actionSection,
+      className: Chunk949285.actionSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "text-md/medium",
-        className: Chunk336888.sectionHeader,
-        children: Chunk388032.intl.string(Chunk435757.default.BxbvS7)
+        className: Chunk949285.sectionHeader,
+        children: Chunk388032.intl.string(Chunk372807.default.BxbvS7)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk336888.avatarList,
+        className: Chunk949285.avatarList,
         children: 1 === module.length ? (0, Chunk54381.jsx)(Chunk657825.Z, {
           userId: module[0].user_id,
           subText: (0, Chunk546791.Kp)(module[0].dms_sent, module[0].call_count),
-          className: Chunk336888.userRow
+          className: Chunk949285.userRow
         }) : module.map(e => (0, r.jsx)(f.Z, {
           userId: e.user_id,
           dmsSent: e.dms_sent,
@@ -42,17 +42,17 @@ let h = () => {
         }, e.user_id))
       })]
     }), exports.length > 0 && (0, Chunk54381.jsxs)("div", {
-      className: Chunk336888.actionSection,
+      className: Chunk949285.actionSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "text-md/medium",
-        className: Chunk336888.sectionHeader,
-        children: Chunk388032.intl.string(Chunk435757.default.Lq9Set)
+        className: Chunk949285.sectionHeader,
+        children: Chunk388032.intl.string(Chunk372807.default.Lq9Set)
       }), 1 === exports.length ? (0, Chunk54381.jsx)(Chunk792258.Z, {
         guildId: exports[0].guild_id,
         customSubtext: (0, Chunk546791.Kp)(exports[0].messages_sent, exports[0].call_count),
-        className: Chunk336888.guildRow
+        className: Chunk949285.guildRow
       }) : (0, Chunk54381.jsx)("div", {
-        className: Chunk336888.avatarList,
+        className: Chunk949285.avatarList,
         children: exports.map(e => {
           var t, n;
           let i = s.Z.getGuild(e.guild_id),

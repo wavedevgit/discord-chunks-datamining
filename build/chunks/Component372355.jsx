@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk179839 = require("./179839.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk883287 = require("./883287.js");
+  Chunk898216 = require("./898216.js");
 let N = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk706454.default.locale;
   return "https://".concat(Chunk981631.xr4, "/hc/").concat(module.toLowerCase(), "/requests/new?ticket_form_id=360000168511")
@@ -104,12 +104,12 @@ function j(e) {
     type: a.ImpressionTypes.MODAL,
     name: a.ImpressionNames.GUILD_TRANSFER_OWNERSHIP
   });
-  let Z = b.ZP.getNickname(t.id, true, p),
+  let Z = _.ZP.getNickname(t.id, true, p),
     F = p.hasAvatarForGuild(t.id),
     G = () => (0, n.jsxs)("span", {
       className: g.guildTransfer,
       children: [null != t.icon ? (0, n.jsx)(l.qEK, {
-        src: _.ZP.getGuildIconURL({
+        src: b.ZP.getGuildIconURL({
           id: t.id,
           icon: t.icon,
           size: 16

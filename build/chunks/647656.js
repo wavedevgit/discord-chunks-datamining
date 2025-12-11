@@ -18,7 +18,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk452426 = require("./452426.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let b = ["1402418171662569542"],
+let _ = ["1402418171662569542"],
   E = {
     [Chunk981631.Etm.SET_ACTIVITY]: {
       scope: {
@@ -48,7 +48,7 @@ let b = ["1402418171662569542"],
           party: (0, h.Z)(e).keys({
             id: e.string().min(2).max(128),
             size: e.array().items(e.number().min(0)).length(2),
-            privacy: e.number().default(_.RYY.PRIVATE).valid([_.RYY.PRIVATE, _.RYY.PUBLIC])
+            privacy: e.number().default(b.RYY.PRIVATE).valid([b.RYY.PRIVATE, b.RYY.PUBLIC])
           }),
           secrets: (0, h.Z)(e).keys({
             match: e.string().min(2).max(128),
@@ -61,7 +61,7 @@ let b = ["1402418171662569542"],
           })).min(1).max(2),
           instance: e.boolean(),
           supported_platforms: e.array().items(e.string().min(1).max(32)).min(1).max(10),
-          type: e.number().default(_.IIU.PLAYING).valid(_.IIU.PLAYING, _.IIU.LISTENING, _.IIU.WATCHING, _.IIU.COMPETING),
+          type: e.number().default(b.IIU.PLAYING).valid(b.IIU.PLAYING, b.IIU.LISTENING, b.IIU.WATCHING, b.IIU.COMPETING),
           status_display_type: e.number().optional().valid(a.D.NAME, a.D.STATE, a.D.DETAILS)
         }).allow(null)
       }),
@@ -76,10 +76,10 @@ let b = ["1402418171662569542"],
           isSocketConnected: O
         } = e;
         if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(a.transport)) throw new g.Z({
-          errorCode: _.lTL.INVALID_COMMAND
+          errorCode: b.lTL.INVALID_COMMAND
         }, 'command not available from "'.concat(a.transport, '" transport'));
         if (null == h && m.He.IPC === a.transport) throw new g.Z({
-          errorCode: _.lTL.INVALID_COMMAND
+          errorCode: b.lTL.INVALID_COMMAND
         }, "nonzero pid required");
         if (null == E) return s.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
@@ -92,7 +92,7 @@ let b = ["1402418171662569542"],
         let y = a.application.id;
         E.application_id = y;
         let I = a.transport === m.He.POST_MESSAGE;
-        E.platform = I ? _.M7m.EMBEDDED : _.M7m.DESKTOP;
+        E.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
         let C = c.Z.getApplication(null != y ? y : true),
           S = null != (r = E.instance) && r,
           T = null == (t = E.party) ? true : t.privacy;
@@ -107,16 +107,16 @@ let b = ["1402418171662569542"],
           buttons: Z,
           type: w
         } = E;
-        if (null == w && (E.type = _.IIU.PLAYING), null != x) {
+        if (null == w && (E.type = b.IIU.PLAYING), null != x) {
           let e = i().values(x).filter(e => !!e);
-          if (null != P && i().intersection(e, [P.id]).length > 0 && !b.includes(a.application.id)) throw new g.Z({
-            errorCode: _.lTL.INVALID_ACTIVITY_SECRET
+          if (null != P && i().intersection(e, [P.id]).length > 0 && !_.includes(a.application.id)) throw new g.Z({
+            errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
           if (i().uniq(e).length < e.length) throw new g.Z({
-            errorCode: _.lTL.INVALID_ACTIVITY_SECRET
+            errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
           if (null != Z) throw new g.Z({
-            errorCode: _.lTL.INVALID_ACTIVITY_SECRET
+            errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
         if (null != Z && (v.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = v, null != A)
@@ -149,7 +149,7 @@ let b = ["1402418171662569542"],
             state: null != (i = E.state) ? i : "",
             has_urls: null != E.state_url || null != E.details_url || (null == (t = E.assets) ? true : t.large_url) != null || (null == (n = E.assets) ? true : n.small_url) != null
           };
-          return null != u && (f.has_match_secret = !!u.match, f.has_join_secret = !!u.join), null != j && (f.has_images = !!(j.large_image || j.small_image || j.invite_cover_image)), null != p && (f.party_max = null != p.size && p.size[1] > 0 ? p.size[1] : true, f.party_id = p.id), d.default.track(_.rMx.ACTIVITY_UPDATED, f), E
+          return null != u && (f.has_match_secret = !!u.match, f.has_join_secret = !!u.join), null != j && (f.has_images = !!(j.large_image || j.small_image || j.invite_cover_image)), null != p && (f.party_max = null != p.size && p.size[1] > 0 ? p.size[1] : true, f.party_id = p.id), d.default.track(b.rMx.ACTIVITY_UPDATED, f), E
         })
       }
     }

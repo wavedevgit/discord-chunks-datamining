@@ -1,0 +1,18 @@
+/** Chunk was on web.js **/
+/** chunk id: 75424, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  churnFooterContainer: "_649887ccbedc7c32-churnFooterContainer",
+  churnFooterGlow: "_649887ccbedc7c32-churnFooterGlow",
+  churnFooterTopBorder: "_649887ccbedc7c32-churnFooterTopBorder",
+  churnFooterContent: "_649887ccbedc7c32-churnFooterContent",
+  churnFooterContentBody: "_649887ccbedc7c32-churnFooterContentBody",
+  churnFooterIcon: "_649887ccbedc7c32-churnFooterIcon",
+  churnFooterContentBodyInner: "_649887ccbedc7c32-churnFooterContentBodyInner",
+  churnFooterCopy: "_649887ccbedc7c32-churnFooterCopy",
+  churnFooterCTAs: "_649887ccbedc7c32-churnFooterCTAs",
+  churnFooterClaimCTA: "_649887ccbedc7c32-churnFooterClaimCTA",
+  churnFooterClaimCTAInner: "_649887ccbedc7c32-churnFooterClaimCTAInner",
+  churnFooterClaimIcon: "_649887ccbedc7c32-churnFooterClaimIcon",
+  churnFooterClaimCopy: "_649887ccbedc7c32-churnFooterClaimCopy"
+}

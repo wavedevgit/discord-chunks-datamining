@@ -1,8 +1,8 @@
 /** Chunk was on 40897 **/
 /** chunk id: 507294, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => Z,
-  g: () => C
+  default: () => S,
+  g: () => Z
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,10 +27,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk225104 = require("./225104.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk375563 = require("./375563.js"),
-  Chunk245141 = require("./245141.js");
+  Chunk151544 = require("./151544.js"),
+  Chunk608908 = require("./608908.js");
 
-function k(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -49,25 +49,25 @@ function k(e) {
   return e
 }
 
-function C(e, t) {
+function Z(e, t) {
   (0, u.ZDy)(async () => {
     let {
       default: i
     } = await r.e("38413").then(r.bind(r, 107807));
-    return r => (0, n.jsx)(i, k({
+    return r => (0, n.jsx)(i, C({
       role: e,
       guildId: t
     }, r))
   })
 }
-let Z = function(e) {
+let S = function(e) {
   let {
     guildId: t,
     transitionState: l,
-    onClose: Z
-  } = e, S = (0, c.e7)([h.Z], () => h.Z.getSortedRoles(t)), D = (0, c.e7)([j.default], () => j.default.getId()), E = (0, c.e7)([O.ZP], () => O.ZP.getMember(t, D)), [I, A] = i.useState([]), T = (0, p.ZP)();
+    onClose: S
+  } = e, D = (0, c.e7)([h.Z], () => h.Z.getSortedRoles(t)), _ = (0, c.e7)([j.default], () => j.default.getId()), E = (0, c.e7)([O.ZP], () => O.ZP.getMember(t, _)), [I, A] = i.useState([]), T = (0, p.ZP)();
   if (i.useEffect(() => {
-      0 !== I.length && y.default.track(P.rMx.PASSPORT_ENTRY_VIEWED, k({
+      0 !== I.length && y.default.track(P.rMx.PASSPORT_ENTRY_VIEWED, C({
         role_ids: I.map(e => {
           let {
             role_id: t
@@ -78,11 +78,11 @@ let Z = function(e) {
     }, [t, I]), i.useEffect(() => {
       f.Z.getGuildRoleConnectionsConfigurations(t).then(e => A(e))
     }, [t]), null == E) return null;
-  let U = S.filter(e => null === e.tags.guild_connections);
+  let U = D.filter(e => null === e.tags.guild_connections);
   return (0, n.jsx)(a.Modal, {
     transitionState: l,
     title: N.intl.string(N.t.ghtnss),
-    onClose: Z,
+    onClose: S,
     subtitle: N.intl.format(N.t["Y+TsEV"], {
       helpdeskArticleUrl: x.Z.getArticleURL(P.BhN.CONNECTION_DETAILS)
     }),
@@ -107,14 +107,14 @@ let Z = function(e) {
                 a = (null == i ? true : i.bot) != null ? (0, n.jsx)("img", {
                   src: new g.Z(i.bot).getAvatarURL(t, 24),
                   alt: "",
-                  className: o()(_.botAvatar, w.avatar)
+                  className: o()(w.botAvatar, k.avatar)
                 }) : null
               } else {
                 let t = v.Z.get(e.connection_type);
                 a = (0, n.jsx)("img", {
                   src: (0, s.ap)(T) ? t.icon.lightSVG : t.icon.darkSVG,
                   alt: "",
-                  className: w.avatar
+                  className: k.avatar
                 })
               }
               null != a && (i["".concat(e.connection_type, ":").concat(e.application_id)] = a)
@@ -122,8 +122,8 @@ let Z = function(e) {
             return Object.values(i)
           }(e.id);
         return (0, n.jsxs)(u.P3F, {
-          className: o()(_.verifiedRole, l ? _.verifiedRoleHasRole : null),
-          onClick: l ? true : () => C(e, t),
+          className: o()(w.verifiedRole, l ? w.verifiedRoleHasRole : null),
+          onClick: l ? true : () => Z(e, t),
           onContextMenu: l ? i => {
             var l;
             return l = e.id, void(0, d.jW)(i, async () => {
@@ -132,7 +132,7 @@ let Z = function(e) {
               } = await r.e("60079").then(r.bind(r, 850902));
               return r => {
                 var i, o;
-                return (0, n.jsx)(e, (i = k({}, r), o = o = {
+                return (0, n.jsx)(e, (i = C({}, r), o = o = {
                   roleId: l,
                   onLeaveRole: () => f.Z.unassignGuildRoleConnection(t, l)
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -149,7 +149,7 @@ let Z = function(e) {
             })
           } : true,
           children: [l ? (0, n.jsx)("div", {
-            className: _.roleCheckmark,
+            className: w.roleCheckmark,
             children: (0, n.jsx)(u.kmB, {
               size: "xs",
               color: "currentColor"
@@ -159,16 +159,16 @@ let Z = function(e) {
             role: e,
             size: 24
           }), (0, n.jsxs)("div", {
-            className: _.verifiedRoleNameDescriptionContainer,
+            className: w.verifiedRoleNameDescriptionContainer,
             children: [(0, n.jsx)(u.Text, {
               variant: "text-md/medium",
               color: "header-primary",
-              className: _.verifiedRoleName,
+              className: w.verifiedRoleName,
               children: e.name
             }), true !== e.description ? (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
               color: "text-default",
-              className: _.verifiedRoleDescription,
+              className: w.verifiedRoleDescription,
               children: e.description
             }) : null]
           }), (0, n.jsx)(b.ZP, {

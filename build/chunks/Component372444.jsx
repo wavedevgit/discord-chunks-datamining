@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 372444, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk678558 = require("./678558.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk736692 = require("./736692.js");
+  Chunk255258 = require("./255258.js");
 let m = e => {
   let {
     guild: t,
@@ -40,17 +40,17 @@ let m = e => {
   })
 };
 
-function p(e) {
+function f(e) {
   let {
     header: t,
     text: i,
     analyticsLocation: a,
     guild: d,
     className: u,
-    textColor: p,
-    headerColor: f,
-    buttonProps: h,
-    useExpressiveButton: b
+    textColor: f,
+    headerColor: p,
+    buttonProps: b,
+    useExpressiveButton: h
   } = e, {
     analyticsLocations: x
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
@@ -66,12 +66,12 @@ function p(e) {
         className: g.content,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
-          color: null != f ? f : "always-white",
+          color: null != p ? p : "always-white",
           className: g.header,
           children: t
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          color: null != p ? p : "always-white",
+          color: null != f ? f : "always-white",
           children: i
         })]
       }), (0, r.jsx)("div", {
@@ -80,8 +80,8 @@ function p(e) {
           guild: d,
           analyticsLocation: a,
           className: g.button,
-          buttonProps: h,
-          useExpressiveButton: b
+          buttonProps: b,
+          useExpressiveButton: h
         })
       })]
     })

@@ -201,7 +201,7 @@ let G = {
       } else(0, s.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("45965")]).then(n.bind(n, 560114));
         return t => {
           var n, s;
           return (0, r.jsx)(e, (n = function(e) {
@@ -318,7 +318,7 @@ let G = {
       if (!j.Z.isDiscordCdnUrl(r)) throw new x.Z({
         errorCode: M.lTL.INVALID_PAYLOAD
       }, "mediaUrl must be a Discord CDN url");
-      (0, _.Z)({
+      (0, b.Z)({
         applicationId: i,
         channelId: null == a ? true : a.id,
         mediaUrl: r
@@ -379,7 +379,7 @@ let G = {
         let t = false,
           r = (0, R.jU)(p),
           l = s.z1l;
-        (O.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = s.u1M), (0, b.M)({
+        (O.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = s.u1M), (0, _.M)({
           applicationId: f,
           channel: g,
           command: {

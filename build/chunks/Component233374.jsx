@@ -1,4 +1,4 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 92504 **/
 /** chunk id: 233374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -8,32 +8,32 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk538719 = require("./538719.js");
+  Chunk753078 = require("./753078.js");
 let o = function(e) {
   let {
     tabs: t,
     onTabSelect: n,
-    selectedTab: a,
+    selectedTab: r,
     className: o
   } = e;
-  return (0, r.jsx)(l.njP, {
+  return (0, a.jsx)(l.njP, {
     type: "top-pill",
-    selectedItem: a,
+    selectedItem: r,
     onItemSelect: n,
     className: o,
     children: t.map((e, t) => {
       let {
         id: n,
-        label: a,
+        label: r,
         count: o
       } = e;
-      return (0, r.jsx)(l.njP.Item, {
+      return (0, a.jsx)(l.njP.Item, {
         id: n,
         className: i()(s.tabItem, {
           [s.firstChildSpacingFix]: 0 === t
         }),
-        "aria-label": a,
-        children: null != o && o > 0 ? "".concat(a, " (").concat(o, ")") : a
+        "aria-label": r,
+        children: null != o && o > 0 ? "".concat(r, " (").concat(o, ")") : r
       }, n)
     })
   })

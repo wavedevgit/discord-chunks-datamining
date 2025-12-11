@@ -45,8 +45,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk611480 = require("./611480.js"),
   Chunk653477 = require("./653477.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486730 = require("./486730.js"),
-  Chunk953752 = require("./953752.js"),
+  Chunk324243 = require("./324243.js"),
+  Chunk54354 = require("./54354.js"),
   Chunk328756 = require("./328756.js");
 
 function K(e, t, n) {
@@ -193,16 +193,16 @@ function er() {
     });
   return (0, Chunk54381.jsx)(Chunk481060.Rny, {
     children: (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
-      className: Chunk953752.preview,
+      className: Chunk54354.preview,
       "aria-hidden": true,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk953752.previewHeader,
+        className: Chunk54354.previewHeader,
         children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["2RHHgz"])
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk953752.previewAvatars,
+          className: Chunk54354.previewAvatars,
           children: [Chunk981631.Skl.ONLINE, Chunk981631.Skl.DND, Chunk981631.Skl.IDLE].map(e => (0, r.jsx)(c.Xo$, {
             "aria-label": V.intl.string(V.t.lqaIxI),
             src: W,
@@ -211,7 +211,7 @@ function er() {
           }, e))
         })]
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk953752.previewMessage,
+        className: Chunk54354.previewMessage,
         children: (0, Chunk54381.jsx)(Chunk753206.Z, {
           compact: module,
           author: Q(z({}, (0, Chunk739566.ZH)(exports)), {
@@ -356,8 +356,8 @@ function eu() {
     })
   }
   return (0, Chunk54381.jsx)(Chunk481060.rsf, {
-    label: Chunk388032.intl.string(Chunk486730.default["2gFUEw"]),
-    description: Chunk388032.intl.format(Chunk486730.default.L8U56h, {
+    label: Chunk388032.intl.string(Chunk324243.default["2gFUEw"]),
+    description: Chunk388032.intl.format(Chunk324243.default.L8U56h, {
       onClickOpenModal() {
         (0, Chunk829716.I)({
           analyticsLocations: exports
@@ -452,7 +452,7 @@ function ep() {
   return (0, Chunk54381.jsx)("div", {
     ref: Chunk627845,
     title: Chunk388032.intl.string(Chunk388032.t.e3TR1b),
-    className: Chunk953752.reducedMotion,
+    className: Chunk54354.reducedMotion,
     children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.e3TR1b),
       description: Chunk388032.intl.format(Chunk388032.t["2l9U2j"], {
@@ -602,7 +602,7 @@ function eh() {
             }) : e % 1 == 0 ? "" : true,
             "aria-labelledby": $
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk953752.ttsPreviewWrapper,
+            className: Chunk54354.ttsPreviewWrapper,
             children: (0, Chunk54381.jsx)(Chunk481060.Button, {
               size: "sm",
               icon: require ? Chunk481060.fpf : Chunk481060.o1U,

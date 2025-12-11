@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 664342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -87,7 +87,7 @@ function T(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(O.ZP.Icon, P(Z({}, e), {
+      return (0, r.jsx)(j.ZP.Icon, P(Z({}, e), {
         ref: s,
         onClick: o,
         tooltip: n ? null : c,
@@ -104,13 +104,13 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), O = (0, u.Z)(t), v = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, _.Z)({
+  } = e, O = (0, c.Z)(t, "Sidebar Overflow"), j = (0, u.Z)(t), C = (0, g.Z)(t), I = (0, m.Z)(t), _ = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, y.Z)({
     id: t.id,
     label: E.intl.string(E.t.DQ797g)
   }), A = (0, b.Z)(t), D = (0, p.Z)(t);
 
   function L() {
-    (0, j.Kh)(t.id)
+    (0, x.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -118,15 +118,15 @@ function N(e) {
     "aria-label": E.intl.string(E.t["1NBjqb"]),
     onSelect: i,
     children: [(0, r.jsxs)(l.kSQ, {
-      children: [y, (0, r.jsx)(l.sNh, {
+      children: [O, (0, r.jsx)(l.sNh, {
         id: "open",
         label: E.intl.string(E.t.IxVmZi),
         action: L
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [v, C]
+      children: [C, I]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [T, O, P, D]
+      children: [T, j, P, D]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
@@ -134,7 +134,7 @@ function N(e) {
         icon: l.rgF,
         action: function() {
           L(), setTimeout(() => {
-            x.S.dispatch(S.CkL.FOCUS_SEARCH, {
+            v.S.dispatch(S.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: false
             })
           }, 2e3)
@@ -144,11 +144,11 @@ function N(e) {
         label: E.intl.string(E.t["2BSH7n"]),
         icon: l.rgF,
         action: function() {
-          L(), x.S.dispatch(S.CkL.TOGGLE_CHANNEL_PINS)
+          L(), v.S.dispatch(S.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [A, I, Z, N]
+      children: [A, _, Z, N]
     }), (0, r.jsxs)(l.kSQ, {
       children: [R, w]
     })]
@@ -161,16 +161,16 @@ function R(e) {
     baseChannelId: n
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [t.isForumPost() ? null : (0, r.jsx)(C.Z, {
+    children: [t.isForumPost() ? null : (0, r.jsx)(I.Z, {
       channel: t
-    }), t.isModeratorReportChannel() ? (0, r.jsx)(v.Z, {
+    }), t.isModeratorReportChannel() ? (0, r.jsx)(C.Z, {
       channel: t
     }) : null, (0, r.jsx)(T, {
       channel: t
-    }), (0, r.jsx)(O.ZP.Icon, {
+    }), (0, r.jsx)(j.ZP.Icon, {
       icon: l.Dio,
       tooltip: E.intl.string(E.t.cpT0Cq),
-      onClick: () => (0, I.vN)((0, y.e)(t), null != n ? n : t.parent_id)
+      onClick: () => (0, _.vN)((0, O.e)(t), null != n ? n : t.parent_id)
     })]
   })
 }

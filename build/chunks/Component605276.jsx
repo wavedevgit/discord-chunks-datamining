@@ -1,7 +1,7 @@
 /** Chunk was on 12009 **/
 /** chunk id: 605276, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,65 +20,65 @@ var Chunk54381 = require("./54381.js"),
   Chunk825334 = require("./825334.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31499 = require("./31499.js");
+  Chunk358053 = require("./358053.js");
 let v = Chunk473749.memo(function(e) {
     let {
       guild: n
     } = e, {
       guildProfile: t,
-      fetchGuildProfile: a
-    } = (0, o.u)(n.id);
-    return (r.useEffect(() => {
-      a()
-    }, [a]), null == t) ? null : (0, l.jsx)(d.ZP, {
+      fetchGuildProfile: r
+    } = (0, d.u)(n.id);
+    return (l.useEffect(() => {
+      r()
+    }, [r]), null == t) ? null : (0, a.jsx)(o.ZP, {
       profile: t,
       disableCTA: true,
       disableGuildNameClick: true
     })
   }),
-  _ = e => {
+  Z = e => {
     let {
       channelId: n,
       title: t,
-      icon: o
-    } = e, d = (0, a.e7)([m.Z], () => m.Z.getChannel(n)), x = (0, a.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, a.e7)([f.Z], () => f.Z.can(b.Plq.VIEW_CHANNEL, d)), v = x.first(), _ = (0, c.zy)(v, false), Z = (null == _ ? true : _.length) > 0 ? _[0] : null, I = null != d && null == v && !x.loadingMore && !x.ready && !x.hasFetched && j;
-    return r.useEffect(() => {
-      I && s.Z.fetchMessages({
+      icon: d
+    } = e, o = (0, r.e7)([m.Z], () => m.Z.getChannel(n)), p = (0, r.e7)([h.Z], () => h.Z.getMessages(n)), j = (0, r.e7)([f.Z], () => f.Z.can(x.Plq.VIEW_CHANNEL, o)), v = p.first(), Z = (0, s.zy)(v, false), I = (null == Z ? true : Z.length) > 0 ? Z[0] : null, y = null != o && null == v && !p.loadingMore && !p.ready && !p.hasFetched && j;
+    return l.useEffect(() => {
+      y && c.Z.fetchMessages({
         channelId: n,
         after: n,
         limit: 5
       })
-    }, [n, I]), (0, l.jsx)(i.P3F, {
+    }, [n, y]), (0, a.jsx)(i.P3F, {
       className: C.resourceChannel,
       onClick: e => {
-        null != d && (e.shiftKey ? (0, p.C3)(d.guild_id, d.id) : u.Z.openResourceChannelAsSidebar({
-          guildId: d.guild_id,
-          channelId: d.id
+        null != o && (e.shiftKey ? (0, g.C3)(o.guild_id, o.id) : u.Z.openResourceChannelAsSidebar({
+          guildId: o.guild_id,
+          channelId: o.id
         }))
       },
-      children: (0, l.jsxs)(l.Fragment, {
+      children: (0, a.jsxs)(a.Fragment, {
         children: [(() => {
-          let e = g.ZP.getResourceChannelIconURL({
+          let e = b.ZP.getResourceChannelIconURL({
             channelId: n,
-            icon: o
+            icon: d
           });
-          return null != o && null != e ? (0, l.jsx)("img", {
+          return null != d && null != e ? (0, a.jsx)("img", {
             src: e,
             className: C.resourceImage,
             alt: "",
             "aria-hidden": true
-          }) : null != Z ? (0, l.jsx)("img", {
+          }) : null != I ? (0, a.jsx)("img", {
             className: C.resourceImage,
-            src: Z.src,
-            alt: Z.alt
-          }) : (0, l.jsx)("div", {
+            src: I.src,
+            alt: I.alt
+          }) : (0, a.jsx)("div", {
             className: C.placeholderImage,
-            children: (0, l.jsx)(i.hH0, {
+            children: (0, a.jsx)(i.hH0, {
               size: "xs",
               color: "currentColor"
             })
           })
-        })(), (0, l.jsx)(i.Text, {
+        })(), (0, a.jsx)(i.Text, {
           className: C.guildInfoText,
           variant: "text-sm/semibold",
           color: "none",
@@ -87,22 +87,22 @@ let v = Chunk473749.memo(function(e) {
       })
     }, n)
   },
-  Z = Chunk473749.memo(function(e) {
+  I = Chunk473749.memo(function(e) {
     let {
       guild: n
-    } = e, t = (0, x.Z)(n.id);
-    return 0 === t.length ? null : (0, l.jsx)(i.Zbd, {
+    } = e, t = (0, p.Z)(n.id);
+    return 0 === t.length ? null : (0, a.jsx)(i.Zbd, {
       className: C.sidebarCardWrapper,
-      children: (0, l.jsxs)("div", {
+      children: (0, a.jsxs)("div", {
         className: C.sidebarCard,
-        children: [(0, l.jsx)(i.Heading, {
+        children: [(0, a.jsx)(i.Heading, {
           className: C.sidebarCardHeader,
           variant: "heading-md/bold",
           color: "header-primary",
           children: j.intl.string(j.t.xwY4La)
-        }), (0, l.jsx)("div", {
+        }), (0, a.jsx)("div", {
           className: C.resourceChannelsList,
-          children: t.map(e => (0, l.jsx)(_, {
+          children: t.map(e => (0, a.jsx)(Z, {
             channelId: e.channelId,
             title: e.title,
             icon: e.icon
@@ -111,16 +111,16 @@ let v = Chunk473749.memo(function(e) {
       })
     })
   }),
-  I = Chunk473749.memo(function(e) {
+  y = Chunk473749.memo(function(e) {
     let {
       guild: n,
       isNewMember: t
     } = e;
-    return (0, l.jsxs)("aside", {
+    return (0, a.jsxs)("aside", {
       className: C.sidebar,
-      children: [(0, l.jsx)(v, {
+      children: [(0, a.jsx)(v, {
         guild: n
-      }), t && (0, l.jsx)(Z, {
+      }), t && (0, a.jsx)(I, {
         guild: n
       })]
     })

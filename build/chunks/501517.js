@@ -1,18 +1,18 @@
-/** Chunk was on 76826 **/
-/** chunk id: 501517, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 98414 **/
+/** chunk id: 501517, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => l
 });
 var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let l = {
-  resolveFlag: e => n.tn.post({
-    url: o.ANM.MODERATOR_REPORT_CLOSE(e),
+  resolveFlag: e => r.tn.post({
+    url: i.ANM.MODERATOR_REPORT_CLOSE(e),
     body: {},
     rejectWithError: true
   }),
-  reopenModReport: e => n.tn.put({
-    url: o.ANM.REPORT_TO_MOD_REOPEN(e),
+  reopenModReport: e => r.tn.put({
+    url: i.ANM.REPORT_TO_MOD_REOPEN(e),
     rejectWithError: true
   })
 }

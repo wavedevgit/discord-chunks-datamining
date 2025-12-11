@@ -5,15 +5,15 @@ require.d(exports, {
   D: () => o
 });
 var Chunk54381 = require("./54381.js"),
-  Chunk998893 = require("./998893.js"),
-  Chunk398300 = require("./398300.js");
+  Chunk79522 = require("./79522.js"),
+  Chunk836236 = require("./836236.js");
 let o = () => (0, Chunk54381.jsx)("div", {
-  className: Chunk998893.container,
+  className: Chunk79522.container,
   children: (0, Chunk54381.jsx)("div", {
     children: (0, Chunk54381.jsx)("img", {
-      src: Chunk398300.Z,
+      src: Chunk836236.Z,
       alt: "",
-      className: Chunk998893.image
+      className: Chunk79522.image
     })
   })
 })

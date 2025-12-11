@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 450377, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -30,9 +30,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk181339 = require("./181339.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk776853 = require("./776853.js");
+  Chunk876549 = require("./876549.js");
 
-function S(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -67,40 +67,40 @@ function T(e, t) {
 function P(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = i.useCallback(async e => {
     let {
       value: n
     } = e;
     try {
-      await _.Z.saveGuild(t.id, {
+      await v.Z.saveGuild(t.id, {
         verificationLevel: n
-      }), _.Z.updateGuild({
+      }), v.Z.updateGuild({
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(I.intl.string(I.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
-    let e = (0, j.IF)(null == t ? true : t.features.has(N.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
+    let e = (0, j.IF)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(_({}, e), {
       tooltipPosition: "left"
     }));
     return (0, j.LJ)(e)
   }, [t]), s = i.useMemo(() => a.find(e => e.value === (null == t ? true : t.verificationLevel)), [t, a]);
   return (0, r.jsxs)("div", {
-    className: I.setupContainer,
+    className: S.setupContainer,
     children: [(0, r.jsxs)("div", {
-      className: I.switchItemTextContent,
+      className: S.switchItemTextContent,
       children: [(0, r.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: E.intl.string(E.t.DpRdYK)
+        children: I.intl.string(I.t.DpRdYK)
       }), (0, r.jsx)(c.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: E.intl.format(E.t.iuRk2j, {})
+        children: I.intl.format(I.t.iuRk2j, {})
       })]
-    }), (0, r.jsx)(C.Z, {
-      changeTitle: E.intl.string(E.t.TxESJG),
+    }), (0, r.jsx)(y.Z, {
+      changeTitle: I.intl.string(I.t.TxESJG),
       value: null == s ? true : s.value,
       options: a,
       disabled: !n,
@@ -114,45 +114,45 @@ function w(e) {
     guild: t,
     className: n,
     withDivider: l = true
-  } = e, s = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
+  } = e, s = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), d = i.useCallback(async e => {
     let {
       value: n
     } = e;
     try {
-      await _.Z.saveGuild(t.id, {
+      await v.Z.saveGuild(t.id, {
         explicitContentFilter: n
-      }), _.Z.updateGuild({
+      }), v.Z.updateGuild({
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(I.intl.string(I.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
-    let e = (0, j.MF)(null == t ? true : t.features.has(N.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
+    let e = (0, j.MF)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(_({}, e), {
       tooltipPosition: "left"
     }));
     return (0, j.LJ)(e)
   }, [t]), g = i.useMemo(() => u.find(e => e.value === (null == t ? true : t.explicitContentFilter)), [t, u]);
   return (0, r.jsxs)(r.Fragment, {
     children: [l && (0, r.jsx)(c.izJ, {
-      className: I.divider
+      className: S.divider
     }), (0, r.jsxs)("div", {
-      className: a()(I.setupContainer, n),
+      className: a()(S.setupContainer, n),
       children: [(0, r.jsxs)("div", {
-        className: I.switchItemTextContent,
+        className: S.switchItemTextContent,
         children: [(0, r.jsx)(c.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: E.intl.string(E.t.bPgfJz)
+          children: I.intl.string(I.t.bPgfJz)
         }), (0, r.jsx)(c.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          children: E.intl.format(E.t.BI4ukC, {
-            helpdeskArticle: x.Z.getArticleURL(N.BhN.SAFE_DIRECT_MESSAGING)
+          children: I.intl.format(I.t.BI4ukC, {
+            helpdeskArticle: x.Z.getArticleURL(E.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
-      }), (0, r.jsx)(C.Z, {
-        changeTitle: E.intl.string(E.t["eBd+Uv"]),
+      }), (0, r.jsx)(y.Z, {
+        changeTitle: I.intl.string(I.t["eBd+Uv"]),
         value: null == g ? true : g.value,
         options: u,
         disabled: !s,
@@ -162,9 +162,9 @@ function w(e) {
   })
 }
 async function Z(e, t) {
-  if (e.features.has(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
+  if (e.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) === t) return;
   let n = e.features;
-  return t ? n.add(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await _.Z.saveGuild(e.id, {
+  return t ? n.add(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) : n.delete(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY), await v.Z.saveGuild(e.id, {
     features: n
   })
 }
@@ -172,15 +172,15 @@ async function Z(e, t) {
 function R(e) {
   let {
     guild: t
-  } = e, n = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(N.GuildFeatures.COMMUNITY), a = (0, u.n2)(t.id), [s, d] = i.useState(t.features.has(N.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
+  } = e, n = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), l = t.features.has(E.GuildFeatures.COMMUNITY), a = (0, u.n2)(t.id), [s, d] = i.useState(t.features.has(E.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), g = i.useCallback(async e => {
     d(e), await Z(t, e)
   }, [t]);
   return l || !a ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: I.setupContainer,
+      className: S.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: E.intl.string(E.t.jDarmy),
-        description: E.intl.string(E.t["/ee7yK"]),
+        label: I.intl.string(I.t.jDarmy),
+        description: I.intl.string(I.t["/ee7yK"]),
         badge: "beta",
         checked: s,
         onChange: g,
@@ -188,10 +188,10 @@ function R(e) {
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: E.intl.string(E.t.JxO63z)
+        children: I.intl.string(I.t.JxO63z)
       })]
     }), (0, r.jsx)(c.izJ, {
-      className: I.divider
+      className: S.divider
     })]
   })
 }
@@ -200,39 +200,39 @@ function D(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, l = (0, o.e7)([f.Z], () => null != t && f.Z.can(N.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = e, l = (0, o.e7)([p.Z], () => null != t && p.Z.can(E.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([h.default], () => h.default.getCurrentUser()), {
     isGuildOwnerWithMFA: d,
     showMFAUserTooltip: u
   } = i.useMemo(() => null == a ? {
     canChangeMFALevel: false,
     showMFAUserTooltip: false
   } : {
-    isGuildOwnerWithMFA: (0, p.yn)(t, a),
-    showMFAUserTooltip: !a.mfaEnabled && (0, p.eM)(t, a)
-  }, [a, t]), h = n === N.BpS.ELEVATED, x = (0, s.throttle)(async e => {
-    d && (u || await _.Z.updateMFALevel({
+    isGuildOwnerWithMFA: (0, f.yn)(t, a),
+    showMFAUserTooltip: !a.mfaEnabled && (0, f.eM)(t, a)
+  }, [a, t]), b = n === E.BpS.ELEVATED, x = (0, s.throttle)(async e => {
+    d && (u || await v.Z.updateMFALevel({
       guildId: t.id,
-      level: e ? N.BpS.ELEVATED : N.BpS.NONE
+      level: e ? E.BpS.ELEVATED : E.BpS.NONE
     }))
   }, 1e3);
   return l ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.izJ, {
-      className: I.divider
+      className: S.divider
     }), (0, r.jsxs)("div", {
-      className: I.setupContainer,
+      className: S.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: E.intl.string(E.t.lbBfEQ),
-        description: E.intl.string(E.t.REr5AI),
-        checked: h,
+        label: I.intl.string(I.t.lbBfEQ),
+        description: I.intl.string(I.t.REr5AI),
+        checked: b,
         onChange: x,
         disabled: !d
       }), u && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: E.intl.format(E.t.Xz1O0W, {
+        children: I.intl.format(I.t.Xz1O0W, {
           onClick: function() {
             (0, m.openUserSettings)(g.n.ACCOUNT_PANEL, {
-              section: N.oAB.ACCOUNT
+              section: E.oAB.ACCOUNT
             })
           }
         })
@@ -248,7 +248,7 @@ function A() {
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps(), []), n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
   return null == module ? null : require ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)("div", {
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk776853.headerContainer,
+      className: Chunk876549.headerContainer,
       variant: "heading-lg/semibold",
       children: Chunk388032.intl.string(Chunk388032.t["suhY+Y"])
     }), (0, Chunk54381.jsx)(Chunk723136.z, {
@@ -263,9 +263,9 @@ function A() {
     }), (0, Chunk54381.jsx)(w, {
       guild: module
     }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-      className: Chunk776853.divider
+      className: Chunk876549.divider
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk776853.setupContainer,
+      className: Chunk876549.setupContainer,
       children: (0, Chunk54381.jsx)(Chunk181339.w, {
         guild: module
       })

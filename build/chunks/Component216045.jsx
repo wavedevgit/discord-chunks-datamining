@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk532495 = require("./532495.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk391371 = require("./391371.js");
+  Chunk581571 = require("./581571.js");
 
 function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -147,7 +147,7 @@ function H() {
         user: exports,
         nameplate: W
       }, H), {
-        className: null == W ? Chunk391371.nameplatePreviewPlaceholder : true,
+        className: null == W ? Chunk581571.nameplatePreviewPlaceholder : true,
         isHighlighted: true
       })),
       children: (0, Chunk54381.jsx)(Chunk532495.Z, {})
@@ -165,7 +165,7 @@ function H() {
         })
       })
     }), et && !K && (0, Chunk54381.jsx)(Chunk53691.p, {
-      className: Chunk391371.floatingNitroUpsell,
+      className: Chunk581571.floatingNitroUpsell,
       showUpsell: et && !J,
       text: Chunk388032.intl.format(Chunk388032.t.TmfgI2, {
         onClick: () => (0, Chunk267717.y)({

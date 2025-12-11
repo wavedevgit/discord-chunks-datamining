@@ -87,12 +87,12 @@ class P extends Chunk317770.Z {
       if (null != t) return {
         userDiscountOffer: t
       };
-      let n = (0, b.J0)();
+      let n = (0, _.J0)();
       return null != n ? {
         userTrialOffer: n
       } : {}
     }), N(this, "mayShowAnnouncementModal", async () => {
-      if (await (0, _.l2)(), h.s.isDisallowPopupsSet()) return;
+      if (await (0, b.l2)(), h.s.isDisallowPopupsSet()) return;
       let e = this.getOfferFromStore(),
         t = v.Z.getCurrentConfig({
           location: "announcementManager"

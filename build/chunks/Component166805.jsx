@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 166805, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P: () => O
+  P: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,62 +21,62 @@ var Chunk54381 = require("./54381.js"),
   Chunk24318 = require("./24318.js"),
   Chunk822693 = require("./822693.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk356086 = require("./356086.js");
+  Chunk854815 = require("./854815.js");
 
-function v(e) {
+function O(e) {
   let {
     guildId: t
   } = e, {
     guildProfile: c,
     fetchGuildProfile: m,
-    fetchStatus: v
-  } = (0, g.u)(t), O = v !== u.a.FETCHED, {
-    fetchedEmbed: C,
-    embedEnabled: y,
-    embedChannelId: N
-  } = (0, s.cj)([f.Z], () => {
+    fetchStatus: O
+  } = (0, g.u)(t), C = O !== u.a.FETCHED, {
+    fetchedEmbed: y,
+    embedEnabled: N,
+    embedChannelId: E
+  } = (0, s.cj)([p.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = f.Z.getProps();
+    } = p.Z.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !O && !P && !y;
+  }), I = i.useMemo(() => (0, h.S)(t), [t]), S = i.useMemo(() => (0, h.a)(t), [t]), [_, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !N;
   i.useEffect(() => {
-    C || (0, p.R)(t)
-  }, [C, t]), i.useEffect(() => {
+    y || (0, f.R)(t)
+  }, [y, t]), i.useEffect(() => {
     m()
   }, [t, m]);
   let Z = i.useCallback(async e => {
-    T(true), await (0, h.c)(t, e, N), T(false)
-  }, [N, t]);
-  return C ? (0, r.jsxs)(r.Fragment, {
+    T(true), await (0, b.c)(t, e, E), T(false)
+  }, [E, t]);
+  return y ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.rsf, {
       label: j.intl.string(j.t.NR6huS),
-      checked: y,
+      checked: N,
       onChange: Z,
-      disabled: S
+      disabled: _
     }), w ? (0, r.jsx)(a.xvT, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      className: _.subtext,
+      className: v.subtext,
       children: j.intl.string(j.t["zCGuJ+"])
-    }) : null, y ? (0, r.jsxs)(r.Fragment, {
+    }) : null, N ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(x.m, {
         label: j.intl.string(j.t.LUo0Q8),
         description: j.intl.string(j.t.LxVR9A),
         guildId: t,
-        widgetEnabled: y,
-        widgetChannelId: N,
+        widgetEnabled: N,
+        widgetChannelId: E,
         enableLocalUpdate: true
       }), (0, r.jsxs)("div", {
-        className: _.twoColumns,
+        className: v.twoColumns,
         children: [(0, r.jsx)("div", {
-          className: _.column,
+          className: v.column,
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.TRyLUh),
             children: (0, r.jsx)(d.Z, {
@@ -84,29 +84,29 @@ function v(e) {
             })
           })
         }), (0, r.jsx)("div", {
-          className: _.column,
+          className: v.column,
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.VECJcK),
-            children: (0, r.jsx)(d.Z, {
-              value: E
-            })
-          })
-        })]
-      }), (0, r.jsx)("div", {
-        className: _.divider
-      }), (0, r.jsxs)("div", {
-        className: _.twoColumns,
-        children: [(0, r.jsx)("div", {
-          className: _.column,
-          children: (0, r.jsx)(a.gNt, {
-            label: j.intl.string(j.t.XVGbn1),
-            description: j.intl.string(j.t["+baN11"]),
             children: (0, r.jsx)(d.Z, {
               value: I
             })
           })
+        })]
+      }), (0, r.jsx)("div", {
+        className: v.divider
+      }), (0, r.jsxs)("div", {
+        className: v.twoColumns,
+        children: [(0, r.jsx)("div", {
+          className: v.column,
+          children: (0, r.jsx)(a.gNt, {
+            label: j.intl.string(j.t.XVGbn1),
+            description: j.intl.string(j.t["+baN11"]),
+            children: (0, r.jsx)(d.Z, {
+              value: S
+            })
+          })
         }), (0, r.jsx)("img", {
-          className: _.column,
+          className: v.column,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -116,14 +116,14 @@ function v(e) {
   }) : (0, r.jsx)(o.$jN, {})
 }
 
-function O(e) {
+function C(e) {
   let {
     guildId: t
   } = e, n = (0, s.e7)([m.Z], () => m.Z.enabled);
   return (0, r.jsx)(o.C3N, {
     label: j.intl.string(j.t["qlhNb+"]),
     description: j.intl.string(j.t["dNn/1i"]),
-    children: n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
+    children: n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(O, {
       guildId: t
     })
   })

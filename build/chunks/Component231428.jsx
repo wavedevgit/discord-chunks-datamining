@@ -29,8 +29,8 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk504333 = require("./504333.js"),
-  Chunk982710 = require("./982710.js");
+  Chunk144923 = require("./144923.js"),
+  Chunk354351 = require("./354351.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -173,21 +173,21 @@ class G extends(r = Chunk473749.PureComponent) {
       locale: r
     } = this.props, a = null != require && require.isPurchasedExternally;
     return 0 !== exports.length || Chunk473749 ? (0, Chunk54381.jsxs)("div", {
-      className: Chunk504333.verticalFit,
+      className: Chunk144923.verticalFit,
       children: [null != require && Chunk473749 ? this.renderPremiumExternalSubscription(require) : null, exports.length > 0 ? (0, Chunk54381.jsxs)("div", {
-        className: s()(Chunk504333.paymentPane, Chunk504333.verticalFit),
+        className: s()(Chunk144923.paymentPane, Chunk144923.verticalFit),
         children: [module ? null : (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk504333.paymentRow, Chunk504333.bottomDivider),
+          className: s()(Chunk144923.paymentRow, Chunk144923.bottomDivider),
           children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-            className: Chunk504333.paymentRowHeader,
+            className: Chunk144923.paymentRowHeader,
             children: [(0, Chunk54381.jsx)("div", {
-              className: Chunk982710.date,
+              className: Chunk354351.date,
               children: Chunk388032.intl.string(Chunk388032.t["5t11BV"])
             }), (0, Chunk54381.jsx)("div", {
-              className: Chunk504333.paymentRowHeaderDescription,
+              className: Chunk144923.paymentRowHeaderDescription,
               children: Chunk388032.intl.string(Chunk388032.t.yAAPb2)
             }), (0, Chunk54381.jsx)("div", {
-              className: Chunk982710.amount,
+              className: Chunk354351.amount,
               children: Chunk388032.intl.string(Chunk388032.t["6MqHXV"])
             })]
           })

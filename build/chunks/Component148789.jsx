@@ -1,4 +1,4 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 148789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -8,16 +8,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk298213 = require("./298213.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk231796 = require("./231796.js");
+  Chunk31590 = require("./31590.js");
 
 function c(e) {
   let {
     userId: t,
     applicationId: n
-  } = e, [c, u] = i.useState(false), [d, f] = i.useState(false), p = i.useCallback(async e => {
+  } = e, [c, u] = i.useState(false), [d, f] = i.useState(false), h = i.useCallback(async e => {
     e.stopPropagation(), f(true);
     try {
-      await o.Z.cancelFriendRequest({
+      await a.Z.cancelFriendRequest({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -25,10 +25,10 @@ function c(e) {
     } finally {
       f(false)
     }
-  }, [n, t]), h = i.useCallback(async e => {
+  }, [n, t]), p = i.useCallback(async e => {
     e.stopPropagation(), u(true);
     try {
-      await o.Z.maybeConfirmFriendRequestAccept({
+      await a.Z.maybeConfirmFriendRequestAccept({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -43,14 +43,14 @@ function c(e) {
       size: "sm",
       children: [(0, r.jsx)(l.zxk, {
         variant: "active",
-        onClick: h,
-        text: a.intl.string(a.t.Zcibdf),
+        onClick: p,
+        text: o.intl.string(o.t.Zcibdf),
         loading: c,
         disabled: d
       }), (0, r.jsx)(l.zxk, {
         variant: "secondary",
-        onClick: p,
-        text: a.intl.string(a.t.xuio0C),
+        onClick: h,
+        text: o.intl.string(o.t.xuio0C),
         loading: d,
         disabled: c
       })]

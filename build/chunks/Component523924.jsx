@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk937111 = require("./937111.js"),
   Chunk850493 = require("./850493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk394121 = require("./394121.js");
+  Chunk871612 = require("./871612.js");
 let f = e => {
   let {
     headerId: t,
@@ -21,19 +21,19 @@ let f = e => {
     confirmText: g,
     onWithdrawApplication: h,
     rejectionReason: m = null,
-    guild: _ = null
-  } = e, b = (0, l.e7)([c.Z], () => {
+    guild: b = null
+  } = e, _ = (0, l.e7)([c.Z], () => {
     var e;
-    return c.Z.getCooldown(null != (e = null == _ ? true : _.id) ? e : "0")
+    return c.Z.getCooldown(null != (e = null == b ? true : b.id) ? e : "0")
   }), {
     canReapply: E,
     isLoading: O
-  } = (0, u.o)(null == _ ? true : _.id);
+  } = (0, u.o)(null == b ? true : b.id);
   i.useEffect(() => {
-    null == b && null != _ && o.Z.fetchJoinRequestCooldown(_.id)
-  }, [b, _]);
-  let v = (null != b ? b : 0) > 0,
-    y = v && null != b ? Math.ceil((1e3 * b - Date.now()) / 864e5) : 0;
+    null == _ && null != b && o.Z.fetchJoinRequestCooldown(b.id)
+  }, [_, b]);
+  let v = (null != _ ? _ : 0) > 0,
+    y = v && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: p.confirmation,
     children: [(0, r.jsx)("div", {
@@ -48,8 +48,8 @@ let f = e => {
         id: t,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == _ ? true : _.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
-          guildName: _.name
+        children: (null == b ? true : b.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
+          guildName: b.name
         }) : d.intl.string(d.t.gBPcuP)
       }), null != m && "" !== m ? (0, r.jsxs)(s.Text, {
         variant: "text-md/medium",
@@ -75,7 +75,7 @@ let f = e => {
           onClick: f,
           variant: "secondary",
           size: "md",
-          loading: null == b || O,
+          loading: null == _ || O,
           disabled: v || O,
           text: n,
           fullWidth: true

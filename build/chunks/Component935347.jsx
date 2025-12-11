@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk905656 = require("./905656.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744749 = require("./744749.js");
+  Chunk528195 = require("./528195.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,7 +56,7 @@ class P extends Chunk473749.PureComponent {
       connected: l,
       soundpack: a
     } = this.props, s = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, b.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, _.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
       problems: false,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -80,56 +80,56 @@ class P extends Chunk473749.PureComponent {
       let i = this._loadingText,
         l = null;
       return null != this._eventLoadingText && (i = this._eventLoadingText), null != exports && (i = exports.name, l = exports.incident_updates[0].body), (0, Chunk54381.jsxs)("div", {
-        className: Chunk744749.container,
+        className: Chunk528195.container,
         "data-fade": require,
         style: {
           "--connecting-container-fade-duration": "".concat(200, "ms"),
           "--connecting-content-fade-duration": "".concat(150, "ms")
         },
         children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk744749.content,
+          className: Chunk528195.content,
           children: [(0, Chunk54381.jsx)(Chunk905656.Z, {
             autoPlay: true,
             loop: !module,
             setRef: this.setVideoRef,
             onReady: this.handleReady,
-            className: a()(Chunk744749.spinner, this.state.ready ? Chunk744749.ready : "")
+            className: a()(Chunk528195.spinner, this.state.ready ? Chunk528195.ready : "")
           }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk744749.text,
+            className: Chunk528195.text,
             children: [null != exports ? null : (0, Chunk54381.jsx)("div", {
-              className: Chunk744749.tipTitle,
+              className: Chunk528195.tipTitle,
               children: Chunk388032.intl.string(Chunk388032.t.v0R1Lh)
             }), (0, Chunk54381.jsx)("div", {
-              className: null != exports ? Chunk744749.title : Chunk744749.tip,
+              className: null != exports ? Chunk528195.title : Chunk528195.tip,
               children: Chunk473749
             }), (0, Chunk54381.jsx)("div", {
-              className: Chunk744749.body,
+              className: Chunk528195.body,
               children: Chunk120356
             })]
           })]
         }), (0, Chunk54381.jsxs)("div", {
-          className: a()(Chunk744749.problems, {
-            [Chunk744749.slideIn]: this.state.problems
+          className: a()(Chunk528195.problems, {
+            [Chunk528195.slideIn]: this.state.problems
           }),
           children: [(0, Chunk54381.jsx)("div", {
-            className: Chunk744749.problemsText,
+            className: Chunk528195.problemsText,
             children: Chunk388032.intl.string(Chunk388032.t.AG2zPM)
           }), (0, Chunk54381.jsxs)("div", {
             children: [(0, Chunk54381.jsxs)(Chunk481060.Anchor, {
-              className: Chunk744749.twitterLink,
+              className: Chunk528195.twitterLink,
               href: Chunk981631.yXt.TWITTER_SUPPORT,
               target: "_blank",
               children: [(0, Chunk54381.jsx)(Chunk481060.TAi, {
                 size: "xs",
                 color: "currentColor",
-                className: Chunk744749.icon
+                className: Chunk528195.icon
               }), Chunk388032.intl.string(Chunk388032.t.KlyTbj)]
             }), (0, Chunk54381.jsxs)(Chunk481060.Anchor, {
-              className: Chunk744749.statusLink,
+              className: Chunk528195.statusLink,
               href: Chunk981631.yXt.STATUS,
               target: "_blank",
               children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
-                className: Chunk744749.icon
+                className: Chunk528195.icon
               }), Chunk388032.intl.string(Chunk388032.t.AgXXyy)]
             })]
           })]

@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 970061, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
-  Chunk992981 = require("./992981.js");
+  Chunk723820 = require("./723820.js");
 
 function g(e) {
   let {
@@ -44,14 +44,14 @@ function m(e) {
     buttonLabel: l,
     buttonCallback: a,
     disabled: o
-  } = e, [m, p] = i.useState(false), f = n.flatMap(e => e.items.map(e => e.completed)), h = f.filter(e => e).length / f.length, b = (0, c.q_F)({
-    width: "".concat(100 * h, "%")
+  } = e, [m, f] = i.useState(false), p = n.flatMap(e => e.items.map(e => e.completed)), b = p.filter(e => e).length / p.length, h = (0, c.q_F)({
+    width: "".concat(100 * b, "%")
   });
   return (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsxs)(c.P3F, {
       className: u.headerBar,
-      onClick: () => p(e => !e),
+      onClick: () => f(e => !e),
       children: [(0, r.jsx)(c.Heading, {
         variant: "heading-md/semibold",
         className: u.headerText,
@@ -64,7 +64,7 @@ function m(e) {
       className: u.progressBarOuter,
       children: (0, r.jsx)(s.animated.div, {
         className: u.progressBarInner,
-        style: b
+        style: h
       })
     }), !m && n.map((e, t) => {
       let {
@@ -96,7 +96,7 @@ function m(e) {
           size: "sm",
           text: l,
           onClick: a,
-          disabled: 1 !== h || o
+          disabled: 1 !== b || o
         })
       })]
     })]

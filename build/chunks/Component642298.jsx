@@ -25,14 +25,14 @@ function S(t) {
     onClose: e
   } = t, S = (0, i.e7)([s.default], () => s.default.getCurrentUser());
   r.useEffect(() => (o.default.track(x.rMx.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED), () => (0, l.Zy)()), []);
-  let g = null == S ? true : S.verified,
-    p = g ? C.Ax.CONFIRM_START : C.Ax.EMAIL_AND_PASSWORD,
-    [f, m] = r.useState(p),
+  let f = null == S ? true : S.verified,
+    g = f ? C.Ax.CONFIRM_START : C.Ax.EMAIL_AND_PASSWORD,
+    [p, m] = r.useState(g),
     [v, h] = r.useState(null),
     [y, T] = r.useState(null),
     [M, I] = r.useState(""),
     [R, O] = r.useState();
-  switch (f) {
+  switch (p) {
     case C.Ax.CONFIRM_START:
       return (0, a.jsx)(A.Z, {
         onNext: () => m(C.Ax.CONFIRM_CODE),
@@ -71,7 +71,7 @@ function S(t) {
     case C.Ax.EMAIL_AND_PASSWORD:
       return (0, a.jsx)(_.Z, {
         emailToken: v,
-        onBack: g ? () => m(null != R && N.Mr.has(R) ? C.Ax.CHANGE_EMAIL_WARNING : C.Ax.CHANGE_EMAIL_REASONS) : null,
+        onBack: f ? () => m(null != R && N.Mr.has(R) ? C.Ax.CHANGE_EMAIL_WARNING : C.Ax.CHANGE_EMAIL_REASONS) : null,
         onNext: t => {
           o.default.track(x.rMx.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, {
             change_email_reason_enum: R

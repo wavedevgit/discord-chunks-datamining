@@ -1,7 +1,7 @@
-/** Chunk was on 17302 **/
+/** Chunk was on 82477 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,8 +9,6 @@ var Chunk399606 = require("./399606.js"),
   Chunk524437 = require("./524437.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk317632 = require("./317632.js"),
-  Chunk602478 = require("./602478.js"),
   Chunk598999 = require("./598999.jsx"),
   Chunk2818 = require("./2818.js"),
   Chunk768943 = require("./768943.js"),
@@ -19,108 +17,95 @@ var Chunk399606 = require("./399606.js"),
   Chunk818186 = require("./818186.jsx"),
   Chunk999671 = require("./999671.jsx"),
   Chunk946443 = require("./946443.jsx"),
-  Chunk264233 = require("./264233.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk407067 = require("./407067.js");
+  Chunk557208 = require("./557208.js");
 
-function v(e) {
+function y(e) {
   let {
     tab: t,
     setTab: n,
-    badgeState: h,
-    closePopout: m
+    badgeState: f,
+    closePopout: p
   } = e, {
-    enabled: b,
-    inInbox: _
-  } = d.Z.useExperiment({
-    location: "RecentsPopout"
-  }), v = (0, p.Us)({
-    location: "RecentsHeader"
-  }), {
-    enabled: x
+    enabled: g,
+    inInbox: y
   } = c.Z.useExperiment({
+    location: "RecentsPopout"
+  }), v = (0, d.Us)({
     location: "RecentsHeader"
-  }), C = (0, i.e7)([s.Z], () => s.Z.getUnseenInviteCount()), E = (0, i.e7)([f.Z], () => f.Z.getOverdueMessageReminderCount());
-  return (0, r.jsxs)(u.h4, {
-    className: O.header,
+  }), j = (0, i.e7)([u.Z], () => u.Z.getOverdueMessageReminderCount());
+  return (0, r.jsxs)(s.h4, {
+    className: m.header,
     children: [(0, r.jsxs)("div", {
-      className: O.headerTitle,
-      children: [(0, r.jsx)(a.xx7, {
+      className: m.headerTitle,
+      children: [(0, r.jsx)(o.xx7, {
         size: "md",
         color: "currentColor",
-        className: O.inboxIcon
-      }), (0, r.jsx)(a.Heading, {
-        className: O.inboxTitle,
+        className: m.inboxIcon
+      }), (0, r.jsx)(o.Heading, {
+        className: m.inboxTitle,
         variant: "text-lg/semibold",
         color: "interactive-text-active",
-        children: y.intl.string(y.t.GSmTKJ)
-      }), (0, r.jsxs)(a.kL8, {
-        className: O.controls,
+        children: b.intl.string(b.t.GSmTKJ)
+      }), (0, r.jsxs)(o.kL8, {
+        className: m.controls,
         onClick: e => e.stopPropagation(),
         focusProps: {
           enabled: false
         },
-        "aria-label": y.intl.string(y.t["8k+6QY"]),
-        children: [(0, r.jsx)(j, {
+        "aria-label": b.intl.string(b.t["8k+6QY"]),
+        children: [(0, r.jsx)(O, {
           tab: t
-        }), (0, r.jsx)(g.Z, {
-          closePopout: m
+        }), (0, r.jsx)(h.Z, {
+          closePopout: p
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: O.headerTabs,
-      children: (0, r.jsxs)(a.njP, {
+      className: m.headerTabs,
+      children: (0, r.jsxs)(o.njP, {
         selectedItem: t,
         type: "top",
         look: "brand",
         onItemSelect: n,
-        className: O.tabBar,
-        children: [(0, r.jsxs)(a.njP.Item, {
+        className: m.tabBar,
+        children: [(0, r.jsxs)(o.njP.Item, {
           id: l.X.FOR_YOU,
-          "aria-label": y.intl.string(y.t["En+D+u"]),
-          className: O.tab,
-          children: [y.intl.string(y.t["En+D+u"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(a.fWl, {
-            color: o.Z.colors.STATUS_DANGER.css,
-            className: O.iconBadge
+          "aria-label": b.intl.string(b.t["En+D+u"]),
+          className: m.tab,
+          children: [b.intl.string(b.t["En+D+u"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
+            color: a.Z.colors.STATUS_DANGER.css,
+            className: m.iconBadge
           }) : null]
-        }), (0, r.jsx)(a.njP.Item, {
+        }), (0, r.jsx)(o.njP.Item, {
           id: l.X.UNREADS,
-          className: O.tab,
-          children: y.intl.string(y.t.sRUdB8)
-        }), (0, r.jsx)(a.njP.Item, {
-          "aria-label": y.intl.string(y.t.GRZF96),
+          className: m.tab,
+          children: b.intl.string(b.t.sRUdB8)
+        }), (0, r.jsx)(o.njP.Item, {
+          "aria-label": b.intl.string(b.t.GRZF96),
           id: l.X.MENTIONS,
-          className: O.tab,
-          children: y.intl.string(y.t.GRZF96)
-        }), x ? (0, r.jsxs)(a.njP.Item, {
-          "aria-label": "game_invites",
-          id: l.X.GAME_INVITES,
-          className: O.tab,
-          children: [y.intl.string(y.t.apq3cU), C > 0 ? (0, r.jsx)(a.fWl, {
-            color: o.Z.colors.STATUS_DANGER.css,
-            className: O.iconBadge
-          }) : null]
-        }) : null, b && _ ? (0, r.jsx)(a.njP.Item, {
-          "aria-label": y.intl.string(y.t["2pAkDA"]),
+          className: m.tab,
+          children: b.intl.string(b.t.GRZF96)
+        }), g && y ? (0, r.jsx)(o.njP.Item, {
+          "aria-label": b.intl.string(b.t["2pAkDA"]),
           id: l.X.BOOKMARKS,
-          className: O.tab,
-          children: 0 === E ? y.intl.string(y.t["2pAkDA"]) : y.intl.formatToPlainString(y.t.I4fryG, {
-            count: E
+          className: m.tab,
+          children: 0 === j ? b.intl.string(b.t["2pAkDA"]) : b.intl.formatToPlainString(b.t.I4fryG, {
+            count: j
           })
-        }) : null, v ? (0, r.jsx)(a.njP.Item, {
+        }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
-          className: O.tab,
-          children: y.intl.string(y.t.Fn6Odn)
+          className: m.tab,
+          children: b.intl.string(b.t.Fn6Odn)
         }) : null]
       })
     })]
   })
 }
 
-function j(e) {
+function O(e) {
   let {
     tab: t
   } = e;
-  return t === l.X.FOR_YOU ? (0, r.jsx)(h.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
+  return t === l.X.FOR_YOU ? (0, r.jsx)(f.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(g.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(p.Z, {}) : null
 }

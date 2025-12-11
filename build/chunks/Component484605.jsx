@@ -15,14 +15,14 @@ var Chunk264418 = require("./264418.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk21299 = require("./21299.js");
+  Chunk942257 = require("./942257.js");
 let h = e => {
   let {
     targetElementRef: t,
     discountOffer: h,
     premiumSubscription: m,
-    dismissCoachmark: _,
-    children: b
+    dismissCoachmark: b,
+    children: _
   } = e, {
     analyticsLocations: E
   } = (0, s.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, m), v = (0, r.jsx)(i.Z, {
@@ -50,7 +50,7 @@ let h = e => {
       text: f.intl.string(f.t.zrCzVB),
       variant: "expressive",
       onClick: () => {
-        _(p.L.TAKE_ACTION), (0, l.ZDy)(async () => {
+        b(p.L.TAKE_ACTION), (0, l.ZDy)(async () => {
           let {
             PremiumBrandRefreshSubscriptionCancellationModal: e
           } = await n.e("26526").then(n.bind(n, 48813));
@@ -93,12 +93,12 @@ let h = e => {
       icon: l.SrA
     }],
     onRequestClose: () => {
-      _(p.L.USER_DISMISS)
+      b(p.L.USER_DISMISS)
     }
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      children: b
+      children: _
     }), v]
   })
 }

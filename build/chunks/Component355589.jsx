@@ -1,4 +1,4 @@
-/** Chunk was on 9456 **/
+/** Chunk was on 193 **/
 /** chunk id: 355589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk467721 = require("./467721.js"),
@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk710352 = require("./710352.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk951718 = require("./951718.js");
+  Chunk111101 = require("./111101.js");
 
 function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,10 +57,10 @@ function U(e, t, n) {
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      a = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
+    }))), a.forEach(function(t) {
       U(e, t, n[t])
     })
   }
@@ -71,8 +71,8 @@ function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var a = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, a)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -114,12 +114,12 @@ let Y = e => {
       guild: t,
       roles: n
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, a.jsx)("div", {
       className: B.rolesList,
       "aria-label": z.intl.formatToPlainString(z.t.PCs0oo, {
         numRoles: n.length
       }),
-      children: n.map(e => (0, r.jsx)(x.UB, {
+      children: n.map(e => (0, a.jsx)(x.UB, {
         role: e,
         canRemove: false,
         onRemove: H.VqG,
@@ -138,11 +138,11 @@ let Y = e => {
     let {
       handleHide: t
     } = e;
-    return (0, r.jsx)(g.P3F, {
+    return (0, a.jsx)(h.P3F, {
       onClick: t,
       className: B.closeButton,
       "aria-label": z.intl.string(z.t.WAI6xu),
-      children: (0, r.jsx)(g.Dio, {
+      children: (0, a.jsx)(h.Dio, {
         size: "md",
         color: "currentColor",
         className: B.closeIcon
@@ -154,15 +154,15 @@ let Y = e => {
       expanded: t,
       onClick: n
     } = e;
-    return (0, r.jsx)(g.P3F, {
+    return (0, a.jsx)(h.P3F, {
       onClick: n,
       className: B.closeButton,
       "aria-label": t ? z.intl.string(z.t.iTcuma) : z.intl.string(z.t.dcl9MQ),
-      children: t ? (0, r.jsx)(g.dOc, {
+      children: t ? (0, a.jsx)(h.dOc, {
         size: "xs",
         color: "currentColor",
         className: B.closeIcon
-      }) : (0, r.jsx)(g.bJT, {
+      }) : (0, a.jsx)(h.bJT, {
         size: "xs",
         color: "currentColor",
         className: B.closeIcon
@@ -171,7 +171,7 @@ let Y = e => {
   },
   ee = e => {
     let t, {
-        hasAnyThread: l,
+        hasAnyThread: i,
         hasActiveThreads: s,
         channel: x
       } = e,
@@ -188,15 +188,15 @@ let Y = e => {
       {
         tagFilter: ee
       } = (0, M.H)(x.id),
-      et = (0, m.e7)([w.Z], () => w.Z.getGuild(x.getGuildId())),
+      et = (0, m.e7)([S.Z], () => S.Z.getGuild(x.getGuildId())),
       en = (0, Z.r_)(x),
       {
-        transitions: er,
-        setVisible: ei
+        transitions: ea,
+        setVisible: er
       } = (() => {
-        let [e, t] = i.useState(true);
+        let [e, t] = r.useState(true);
         return {
-          transitions: (0, g.Yzy)(e, {
+          transitions: (0, h.Yzy)(e, {
             keys: e => e ? "shown" : "hidden",
             config: J,
             from: {
@@ -213,7 +213,7 @@ let Y = e => {
           setVisible: t
         }
       })(),
-      el = (0, g.Yzy)(U, {
+      ei = (0, h.Yzy)(U, {
         from: {
           maxHeight: 0
         },
@@ -227,11 +227,11 @@ let Y = e => {
           duration: 200
         }
       }),
-      ea = i.useCallback(e => {
+      el = r.useCallback(e => {
         var t;
         null == (t = e.clickHandler) || t.call(e)
       }, []),
-      es = (t = x.id, i.useCallback(() => (ei(false), E.Z.hideAdminOnboarding(t, true)), [t, ei])),
+      es = (t = x.id, r.useCallback(() => (er(false), _.Z.hideAdminOnboarding(t, true)), [t, er])),
       {
         onboardingSteps: eo,
         isDismissed: ec,
@@ -240,54 +240,54 @@ let Y = e => {
       } = (e => {
         let {
           guild: t,
-          channel: l,
-          hasAnyThread: a,
+          channel: i,
+          hasAnyThread: l,
           handleHide: s
-        } = e, [c, d] = i.useState(false), h = (0, A.c)(l.id), x = (0, m.e7)([I.Z], () => I.Z.hasHidden(l.id)), p = function(e, t, l, a) {
+        } = e, [c, d] = r.useState(false), f = (0, A.c)(i.id), x = (0, m.e7)([E.Z], () => E.Z.hasHidden(i.id)), b = function(e, t, i, l) {
           let s = null == e ? true : e.id,
-            o = (0, m.e7)([T.Z], () => null != s ? T.Z.getSortedRoles(s) : true);
-          return i.useMemo(() => {
-            let i, s = new X,
+            o = (0, m.e7)([w.Z], () => null != s ? w.Z.getSortedRoles(s) : true);
+          return r.useMemo(() => {
+            let r, s = new X,
               c = (null == t ? true : t.isMediaChannel()) === true;
-            return null == e || null == t || c || null == o || s.addStep(function(e, t, i, l) {
-              let a = (0, b.Z)(i) ? u.$e(H.Plq.VIEW_CHANNEL, H.Plq.SEND_MESSAGES) : H.Plq.SEND_MESSAGES,
-                s = null != e ? (0, R.E)(t, i, a).filter(e => i.permissionOverwrites.hasOwnProperty(e.id) || (0, y.fI)(e)) : [],
+            return null == e || null == t || c || null == o || s.addStep(function(e, t, r, i) {
+              let l = (0, p.Z)(r) ? u.$e(H.Plq.VIEW_CHANNEL, H.Plq.SEND_MESSAGES) : H.Plq.SEND_MESSAGES,
+                s = null != e ? (0, R.E)(t, r, l).filter(e => r.permissionOverwrites.hasOwnProperty(e.id) || (0, T.fI)(e)) : [],
                 o = s.length > 0,
-                c = s.some(e => (0, y.fI)(e));
+                c = s.some(e => (0, T.fI)(e));
               return {
                 name: z.intl.string(z.t["/Ax2gs"]),
                 description: z.intl.string(z.t.gAIOfg),
                 isDone: o && c,
                 shouldWarn: o && !c,
-                children: o ? (0, r.jsx)(Y, {
+                children: o ? (0, a.jsx)(Y, {
                   guild: e,
                   roles: s
                 }) : null,
                 clickHandler: () => {
-                  K(D.ZI.PERMISSIONS), (0, g.ZDy)(async () => {
+                  K(D.ZI.PERMISSIONS), (0, h.ZDy)(async () => {
                     let {
                       default: t
                     } = await n.e("78704").then(n.bind(n, 560602));
-                    return l(true), n => (0, r.jsx)(t, V(G({}, n), {
-                      channel: i,
+                    return i(true), n => (0, a.jsx)(t, V(G({}, n), {
+                      channel: r,
                       guild: e,
-                      permission: a,
+                      permission: l,
                       currentSelectedRoles: s
                     }))
                   }, {
                     modalKey: "SEND_MESSAGE_ROLE_PERMISSION_FIX_MODAL_KEY",
                     onCloseRequest: H.VqG,
-                    onCloseCallback: () => l(false)
+                    onCloseCallback: () => i(false)
                   })
                 }
               }
-            }(e, o, t, a)), c || s.addStep((e => {
+            }(e, o, t, l)), c || s.addStep((e => {
               let t = null != e.topic && e.topic.length > 0;
               return {
                 name: z.intl.string(z.t.UgJu1e),
                 description: z.intl.string(z.t["3C6/G1"]),
                 clickHandler: () => {
-                  K(D.ZI.GUIDELINES), f.ZP.open(e.id, true, H.ZfP.TOPIC)
+                  K(D.ZI.GUIDELINES), g.ZP.open(e.id, true, H.ZfP.TOPIC)
                 },
                 isDone: t
               }
@@ -297,11 +297,11 @@ let Y = e => {
                 name: z.intl.string(z.t.xiBFCi),
                 description: z.intl.string(z.t.wCv4Oz),
                 clickHandler: () => {
-                  K(D.ZI.TAGS), f.ZP.open(e.id), (0, g.ZDy)(async () => {
+                  K(D.ZI.TAGS), g.ZP.open(e.id), (0, h.ZDy)(async () => {
                     let {
                       default: t
                     } = await n.e("21971").then(n.bind(n, 201049));
-                    return n => (0, r.jsx)(t, V(G({}, n), {
+                    return n => (0, a.jsx)(t, V(G({}, n), {
                       channelId: e.id,
                       guildId: e.guild_id
                     }))
@@ -315,169 +315,169 @@ let Y = e => {
                 name: z.intl.string(z.t.QlyC9s),
                 description: z.intl.string(z.t["+50LJg"]),
                 clickHandler: () => {
-                  K(D.ZI.DEFAULT_REACTION), (0, g.ZDy)(async () => {
+                  K(D.ZI.DEFAULT_REACTION), (0, h.ZDy)(async () => {
                     let {
                       default: t
                     } = await n.e("80404").then(n.bind(n, 158586));
-                    return n => (0, r.jsx)(t, V(G({}, n), {
+                    return n => (0, a.jsx)(t, V(G({}, n), {
                       channel: e
                     }))
                   })
                 },
                 isDone: t
               }
-            })(t)), s.addStep((i = null == e ? true : e.id, {
+            })(t)), s.addStep((r = null == e ? true : e.id, {
               name: z.intl.string(z.t["6A0O64"]),
               description: c ? z.intl.string(z.t["8hI5vr"]) : z.intl.format(z.t.ysxcAw, {
                 onClick: e => {
-                  null != i && (e.preventDefault(), e.stopPropagation(), (0, k.qz)(), (0, g.ZDy)(async () => {
+                  null != r && (e.preventDefault(), e.stopPropagation(), (0, k.qz)(), (0, h.ZDy)(async () => {
                     let {
                       default: e
                     } = await n.e("18417").then(n.bind(n, 740696));
-                    return t => (0, r.jsx)(e, V(G({}, t), {
-                      guildId: i
+                    return t => (0, a.jsx)(e, V(G({}, t), {
+                      guildId: r
                     }))
                   }))
                 }
               }),
               clickHandler: () => {
-                K(D.ZI.CREATE_POST), N.S.dispatch(H.CkL.FOCUS_COMPOSER_TITLE)
+                K(D.ZI.CREATE_POST), O.S.dispatch(H.CkL.FOCUS_COMPOSER_TITLE)
               },
-              isDone: l
+              isDone: i
             })), s
-          }, [t, e, o, l, a])
-        }(t, l, a, d), j = p.isAllDone(), v = h || x || !(e => {
-          let t = P.default.extractTimestamp(e);
+          }, [t, e, o, i, l])
+        }(t, i, l, d), j = b.isAllDone(), v = f || x || !(e => {
+          let t = I.default.extractTimestamp(e);
           return o()().isBefore(o()(t).add(o().duration(15, "days")))
-        })(l.id), _ = i.useRef(0);
-        return i.useEffect(() => (c || !j || v ? clearTimeout(_.current) : _.current = setTimeout(() => {
+        })(i.id), C = r.useRef(0);
+        return r.useEffect(() => (c || !j || v ? clearTimeout(C.current) : C.current = setTimeout(() => {
           s()
-        }, 60 * O.Z.Millis.SECOND), () => clearTimeout(_.current)), [j, v, s, c]), {
-          onboardingSteps: p,
+        }, 60 * P.Z.Millis.SECOND), () => clearTimeout(C.current)), [j, v, s, c]), {
+          onboardingSteps: b,
           isHidden: x,
-          isDismissed: h,
+          isDismissed: f,
           isAllDone: j
         }
       })({
         guild: et,
         channel: x,
-        hasAnyThread: l,
+        hasAnyThread: i,
         handleHide: es
       }),
       em = !ed && !ec,
-      eh = (0, F.AF)(),
-      eg = x.isMediaChannel(),
-      ef = e => eh.getState().setOnboardingExpanded(e);
-    return ((0, p.ZP)(() => {
+      ef = (0, F.AF)(),
+      eh = x.isMediaChannel(),
+      eg = e => ef.getState().setOnboardingExpanded(e);
+    return ((0, b.ZP)(() => {
       eu && em && es()
     }), (e => {
       let {
         isAllDone: t,
         isVisible: n,
-        canManageChannel: r,
-        guildId: l,
-        channel: a
-      } = e, s = (0, m.e7)([T.Z], () => null != l ? T.Z.partitionVersion(l) : true), o = i.useCallback(() => {
-        N.S.dispatch(H.CkL.REMEASURE_TARGET)
+        canManageChannel: a,
+        guildId: i,
+        channel: l
+      } = e, s = (0, m.e7)([w.Z], () => null != i ? w.Z.partitionVersion(i) : true), o = r.useCallback(() => {
+        O.S.dispatch(H.CkL.REMEASURE_TARGET)
       }, []);
-      i.useEffect(() => {
+      r.useEffect(() => {
         o()
-      }, [o, t, n, r, s, a.id, a.permissionOverwrites])
+      }, [o, t, n, a, s, l.id, l.permissionOverwrites])
     })({
       isAllDone: eu,
       isVisible: em,
       canManageChannel: en,
       guildId: null == et ? true : et.id,
       channel: x
-    }), i.useEffect(() => {
-      ec || ei(!ed)
-    }, [ec, ei, ed]), (0, p.ZP)(() => {
-      l && em || ef(true)
-    }), null == et) ? null : (0, v.iZ)(x) ? s || 0 !== ee.size ? ee.size > 0 ? null : (0, r.jsx)(_.Z, {
+    }), r.useEffect(() => {
+      ec || er(!ed)
+    }, [ec, er, ed]), (0, b.ZP)(() => {
+      i && em || eg(true)
+    }), null == et) ? null : (0, v.iZ)(x) ? s || 0 !== ee.size ? ee.size > 0 ? null : (0, a.jsx)(C.Z, {
       guild: et
-    }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(_.Z, {
+    }) : (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(C.Z, {
         guild: et
-      }), (0, r.jsx)(C.q, {})]
-    }) : em && en ? eg ? l ? null : (0, r.jsx)(j.Z, {
+      }), (0, a.jsx)(y.q, {})]
+    }) : em && en ? eh ? i ? null : (0, a.jsx)(j.Z, {
       channel: x
-    }) : (0, r.jsx)(r.Fragment, {
-      children: er((e, t) => t ? (0, r.jsx)(c.animated.div, {
+    }) : (0, a.jsx)(a.Fragment, {
+      children: ea((e, t) => t ? (0, a.jsx)(c.animated.div, {
         style: e,
         className: B.container,
-        children: (0, r.jsxs)("div", {
+        children: (0, a.jsxs)("div", {
           className: B.wrapper,
-          children: [(0, r.jsx)("div", {
+          children: [(0, a.jsx)("div", {
             className: B.headerRow,
-            children: (0, r.jsxs)(g.y5t, {
-              component: (0, r.jsx)(g.Heading, {
+            children: (0, a.jsxs)(h.y5t, {
+              component: (0, a.jsx)(h.Heading, {
                 variant: "heading-md/semibold",
                 children: z.intl.string(z.t.LhlgY9)
               }),
-              children: [(0, r.jsx)(g.Heading, {
+              children: [(0, a.jsx)(h.Heading, {
                 variant: "heading-md/medium",
                 className: B.header,
                 children: z.intl.format(z.t["9L+8bz"], {
                   numCompleted: eo.completedSteps.toString(),
                   numSteps: eo.steps.length.toString()
                 })
-              }), (0, r.jsxs)(g.Text, {
+              }), (0, a.jsxs)(h.Text, {
                 variant: "text-xs/normal",
                 className: B.visibilityInfo,
-                children: [(0, r.jsx)(g.d3s, {
+                children: [(0, a.jsx)(h.d3s, {
                   size: "xxs",
                   color: "currentColor",
                   className: B.icon
                 }), z.intl.string(z.t.znhX2R)]
-              }), (0, r.jsx)($, {
+              }), (0, a.jsx)($, {
                 expanded: U,
-                onClick: () => ef(!U)
-              }), (0, r.jsx)(Q, {
+                onClick: () => eg(!U)
+              }), (0, a.jsx)(Q, {
                 handleHide: es
               })]
             })
-          }), el((e, t) => t ? (0, r.jsx)(c.animated.div, {
+          }), ei((e, t) => t ? (0, a.jsx)(c.animated.div, {
             style: e,
             className: B.listContainer,
-            children: (0, r.jsx)("ol", {
+            children: (0, a.jsx)("ol", {
               className: B.checklist,
-              children: eo.getSteps().map(e => (0, r.jsxs)(g.P3F, {
+              children: eo.getSteps().map(e => (0, a.jsxs)(h.P3F, {
                 tag: "li",
                 "aria-label": e.name,
-                onClick: () => ea(e),
-                className: a()(B.stepContainer, {
+                onClick: () => el(e),
+                className: l()(B.stepContainer, {
                   [B.completed]: e.isDone
                 }),
-                children: [e.shouldWarn ? (0, r.jsx)(g.Mgn, {
+                children: [e.shouldWarn ? (0, a.jsx)(h.Mgn, {
                   size: "custom",
                   width: 20,
                   height: 20,
-                  color: h.Z.colors.STATUS_DANGER.css,
+                  color: f.Z.colors.STATUS_DANGER.css,
                   className: B.stepStatus
-                }) : e.isDone ? (0, r.jsx)(g.G2e, {
-                  color: h.Z.colors.STATUS_POSITIVE_BACKGROUND.css,
-                  icon: g.dz2,
+                }) : e.isDone ? (0, a.jsx)(h.G2e, {
+                  color: f.Z.colors.STATUS_POSITIVE_BACKGROUND.css,
+                  icon: h.dz2,
                   style: q,
                   className: B.stepStatus
-                }) : (0, r.jsx)(g.G2e, {
+                }) : (0, a.jsx)(h.G2e, {
                   disableColor: true,
-                  icon: (0, g.GSL)(S.Z),
+                  icon: (0, h.GSL)(N.Z),
                   style: W,
-                  className: a()(B.stepStatus, B.completed)
-                }), (0, r.jsxs)("div", {
+                  className: l()(B.stepStatus, B.completed)
+                }), (0, a.jsxs)("div", {
                   className: B.step,
-                  children: [(0, r.jsx)(g.Text, {
+                  children: [(0, a.jsx)(h.Text, {
                     variant: "text-md/medium",
                     color: e.isDone ? "text-default" : "header-primary",
                     className: B.stepName,
                     children: e.name
-                  }), (0, r.jsx)(g.Text, {
+                  }), (0, a.jsx)(h.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
                     className: B.stepDescription,
                     children: e.description
                   }), e.children]
-                }), (0, r.jsx)(g.Fbu, {
+                }), (0, a.jsx)(h.Fbu, {
                   size: "custom",
                   color: "currentColor",
                   width: 12,
@@ -488,7 +488,7 @@ let Y = e => {
           }) : null)]
         })
       }) : null)
-    }) : l ? null : (0, r.jsx)(L.Z, {
+    }) : i ? null : (0, a.jsx)(L.Z, {
       channelName: x.name,
       guildId: x.guild_id,
       tagFilter: ee,

@@ -1,4 +1,4 @@
-/** Chunk was on 53950 **/
+/** Chunk was on 945 **/
 /** chunk id: 704088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => S
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk246992 = require("./246992.js"),
   Chunk474936 = require("./474936.js");
-let y = Chunk473749.forwardRef((e, t) => {
+let C = Chunk473749.forwardRef((e, t) => {
   let [n, i] = r.useState(null), [l, o] = r.useState(null), [d, u] = r.useState(false), m = r.useCallback(async () => {
     u(true), o(null), i(null);
     try {
@@ -82,8 +82,8 @@ let y = Chunk473749.forwardRef((e, t) => {
     })]
   })
 });
-y.displayName = "DebugWarpLicenseInfo";
-let C = e => {
+C.displayName = "DebugWarpLicenseInfo";
+let _ = e => {
     let {
       onSuccess: t
     } = e, [n, i] = r.useState(false), [l, o] = r.useState(0), [d, u] = r.useState(null);
@@ -380,7 +380,7 @@ let C = e => {
           children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk License Extension Task"
-          }), (0, Chunk54381.jsx)(C, {
+          }), (0, Chunk54381.jsx)(_, {
             onSuccess: () => {
               var e;
               null == (e = w.current) || module.refresh()
@@ -390,7 +390,7 @@ let C = e => {
           children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
-          }), (0, Chunk54381.jsx)(y, {
+          }), (0, Chunk54381.jsx)(C, {
             ref: w
           })]
         })]

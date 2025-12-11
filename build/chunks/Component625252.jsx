@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk154115 = require("./154115.js"),
+  Chunk861526 = require("./861526.js"),
   Chunk66094 = require("./66094.js");
 
 function E(e, t, n) {
@@ -58,19 +58,19 @@ function O() {
       }, (0, Chunk617136.mH)(Chunk49436.jn.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk154115.container,
+    className: Chunk861526.container,
     style: exports,
     children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-      className: Chunk154115.textContainer,
+      className: Chunk861526.textContainer,
       justify: "space-between",
       children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 4,
         children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk154115.headerContainer,
+          className: Chunk861526.headerContainer,
           children: [(0, Chunk54381.jsx)("img", {
             alt: "",
             src: Chunk66094,
-            className: Chunk154115.icon
+            className: Chunk861526.icon
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/bold",
             color: "always-white",

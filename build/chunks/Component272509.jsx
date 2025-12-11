@@ -17,23 +17,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk817238 = require("./817238.js");
+  Chunk171339 = require("./171339.js");
 
 function C(t) {
   let {
     guildId: i,
     transitionState: C,
     onClose: h,
-    analyticsType: v = r.z.APP_DIRECTORY_UPSELL_MODAL
+    analyticsType: v = o.z.APP_DIRECTORY_UPSELL_MODAL
   } = t;
   return n.useEffect(() => {
     d.default.track(x.rMx.DISMISSIBLE_CONTENT_SHOWN, {
-      type: r.z[v],
+      type: o.z[v],
       guild_id: i
     })
-  }, [i, v]), (0, s.jsx)(o.ExpressiveModal, {
-    title: _.intl.string(_.t["2tv5YG"]),
-    subtitle: _.intl.string(_.t.pgwlD7),
+  }, [i, v]), (0, s.jsx)(a.ExpressiveModal, {
+    title: f.intl.string(f.t["2tv5YG"]),
+    subtitle: f.intl.string(f.t.pgwlD7),
     transitionState: C,
     size: "sm",
     graphic: {
@@ -44,9 +44,9 @@ function C(t) {
     onClose: h,
     actions: [{
       variant: "secondary",
-      text: _.intl.string(_.t.L5eIZ2),
+      text: f.intl.string(f.t.L5eIZ2),
       onClick: () => {
-        h(), (0, c.Q3)(v, {
+        h(), (0, l.Q3)(v, {
           forceTrack: true,
           dismissAction: u.L.SECONDARY,
           guildId: i
@@ -54,13 +54,13 @@ function C(t) {
       }
     }, {
       variant: "primary",
-      text: _.intl.string(_.t["5e8Mrp"]),
+      text: f.intl.string(f.t["5e8Mrp"]),
       onClick: () => {
-        h(), (0, c.Q3)(v, {
+        h(), (0, l.Q3)(v, {
           forceTrack: true,
           dismissAction: u.L.PRIMARY,
           guildId: i
-        }), (0, a.transitionToGlobalDiscovery)({
+        }), (0, c.transitionToGlobalDiscovery)({
           tab: I.GlobalDiscoveryTab.APPS,
           newSessionState: {
             guildId: i,
@@ -75,37 +75,37 @@ function C(t) {
       className: p.listContainer,
       children: [(0, s.jsxs)("li", {
         className: p.listItem,
-        children: [(0, s.jsx)(l.$2U, {
+        children: [(0, s.jsx)(r.$2U, {
           color: "currentColor",
           className: p.wandIcon
-        }), (0, s.jsx)(l.Text, {
+        }), (0, s.jsx)(r.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: _.intl.string(_.t["0vKo5F"])
+          children: f.intl.string(f.t["0vKo5F"])
         })]
       }), (0, s.jsx)(b.Z, {
         className: p.divider
       }), (0, s.jsxs)("li", {
         className: p.listItem,
-        children: [(0, s.jsx)(l.wGt, {
+        children: [(0, s.jsx)(r.wGt, {
           color: "currentColor",
           className: p.robotIcon
-        }), (0, s.jsx)(l.Text, {
+        }), (0, s.jsx)(r.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: _.intl.string(_.t.CprEDO)
+          children: f.intl.string(f.t.CprEDO)
         })]
       }), (0, s.jsx)(b.Z, {
         className: p.divider
       }), (0, s.jsxs)("li", {
         className: p.listItem,
-        children: [(0, s.jsx)(l.EO4, {
+        children: [(0, s.jsx)(r.EO4, {
           color: "currentColor",
           className: p.smileIcon
-        }), (0, s.jsx)(l.Text, {
+        }), (0, s.jsx)(r.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: _.intl.string(_.t.wQJMPC)
+          children: f.intl.string(f.t.wQJMPC)
         })]
       })]
     })

@@ -47,7 +47,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk815660 = require("./815660.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk378846 = require("./378846.js");
+  Chunk54497 = require("./54497.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -511,7 +511,7 @@ function eo() {
     }),
     _ = (0, Chunk438976.Z)();
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk378846.accountProfileCard,
+    className: Chunk54497.accountProfileCard,
     children: [(0, Chunk54381.jsx)(Chunk867176.b, {
       user: exports,
       displayProfile: require,
@@ -522,9 +522,9 @@ function eo() {
       bannerHeight: 100,
       themePadding: 0
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk378846.userInfo,
+      className: Chunk54497.userInfo,
       children: [(0, Chunk54381.jsx)(X, {
-        className: Chunk378846.avatar,
+        className: Chunk54497.avatar,
         src: Chunk692547,
         avatarDecoration: Chunk28664,
         status: Chunk120356,
@@ -532,19 +532,19 @@ function eo() {
         "aria-label": exports.username
       }), (0, Chunk54381.jsxs)("div", {
         children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk378846.profileCardUsernameRow,
+          className: Chunk54497.profileCardUsernameRow,
           children: [(0, Chunk54381.jsx)(Chunk129861.Z, {
             user: exports,
-            className: Chunk378846.userTag,
-            discriminatorClass: Chunk378846.discriminator,
+            className: Chunk54497.userTag,
+            discriminatorClass: Chunk54497.discriminator,
             displayNameStylesType: Chunk821795.F.STATIC
           }), (0, Chunk54381.jsx)(ei, {
             user: exports
           })]
         }), (0, Chunk54381.jsx)(Chunk184325.Z, {
           badges: Chunk473749,
-          className: Chunk378846.badgeList,
-          badgeClassName: Chunk378846.badge
+          className: Chunk54497.badgeList,
+          badgeClassName: Chunk54497.badge
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
@@ -553,18 +553,18 @@ function eo() {
         onClick: J
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk378846.background,
+      className: Chunk54497.background,
       children: [null != Chunk512722 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk378846.avatarError,
+        className: Chunk54497.avatarError,
         variant: "text-xs/normal",
         color: "text-feedback-critical",
         children: Chunk512722
       }) : null, (0, Chunk54381.jsxs)("div", {
-        className: Chunk378846.fieldList,
+        className: Chunk54497.fieldList,
         children: [(0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_DISPLAY_NAME,
           children: (0, Chunk54381.jsx)(ee, {
-            className: Chunk378846.fieldSpacerBottom,
+            className: Chunk54497.fieldSpacerBottom,
             user: exports
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
@@ -575,19 +575,19 @@ function eo() {
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_EMAIL,
           children: (0, Chunk54381.jsx)(en, {
-            className: Chunk378846.fieldSpacer,
+            className: Chunk54497.fieldSpacer,
             user: exports
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_PHONE_NUMBER,
           children: (0, Chunk54381.jsx)(er, {
-            className: Chunk378846.fieldSpacer,
+            className: Chunk54497.fieldSpacer,
             user: exports
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_AGE_GROUP,
           children: (0, Chunk54381.jsx)(ea, {
-            className: Chunk378846.fieldSpacer
+            className: Chunk54497.fieldSpacer
           })
         })]
       })]
