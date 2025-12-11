@@ -487,28 +487,30 @@ function t4() {
   e0.on(Chunk46973.aB.Connection, e => {
     tz(e), tQ(e), t2(e);
     let t = tK();
-    e.setAttenuation(t.attenuation, t.attenuateWhileSpeakingSelf, t.attenuateWhileSpeakingOthers), e.setQoS(t.qos), (0, K.D)({
+    e.setAttenuation(t.attenuation, t.attenuateWhileSpeakingSelf, t.attenuateWhileSpeakingOthers), e.setQoS(t.qos);
+    let n = (0, K.D)({
       location: "setupMediaEngine"
-    }).enabled && (e.setExperimentFlag(ew.V8.H265_HARDWARE_ONLY, true), (0, ep.isWindows)() ? tY().then(t => {
+    }).treatment;
+    n === K.$.NoSoftwareDecode ? (e.setExperimentFlag(ew.V8.H265_HARDWARE_ONLY, true), (0, ep.isWindows)() ? tY().then(t => {
       e.setExperimentFlag(ew.V8.H265_HARDWARE_DECODE_AVAILABLE, t)
-    }) : (0, ep.isMac)() && e.setExperimentFlag(ew.V8.H265_HARDWARE_DECODE_AVAILABLE, true));
-    let n = ev.Z.getGuildId(),
+    }) : (0, ep.isMac)() && e.setExperimentFlag(ew.V8.H265_HARDWARE_DECODE_AVAILABLE, true)) : n === K.$.Disabled && (e.setExperimentFlag(ew.V8.H265_HARDWARE_ONLY, true), e.setExperimentFlag(ew.V8.H265_HARDWARE_DECODE_AVAILABLE, false));
+    let i = ev.Z.getGuildId(),
       {
-        muteBeforeProcessing: i,
-        pttBeforeProcessing: o,
-        skipEncode: s
-      } = (null != n ? V.Z : F.Z).getCurrentConfig({
+        muteBeforeProcessing: o,
+        pttBeforeProcessing: s,
+        skipEncode: l
+      } = (null != i ? V.Z : F.Z).getCurrentConfig({
         location: "setupMediaEngine",
-        guildId: null != n ? n : true
+        guildId: null != i ? i : true
       }, {
         autoTrackExposure: true
       });
-    i && e.setExperimentFlag(ew.V8.MUTE_BEFORE_PROCESSING, true), o && e.setExperimentFlag(ew.V8.PTT_BEFORE_PROCESSING, true), s && e.setExperimentFlag(ew.V8.SKIP_ENCODE, true), (0, q.J)({
+    o && e.setExperimentFlag(ew.V8.MUTE_BEFORE_PROCESSING, true), s && e.setExperimentFlag(ew.V8.PTT_BEFORE_PROCESSING, true), l && e.setExperimentFlag(ew.V8.SKIP_ENCODE, true), (0, q.J)({
       location: "setupMediaEngine"
     }).enabled && e.setExperimentFlag(ew.V8.LOW_LATENCY_RATE_CONTROL, true);
-    let l = false,
-      c = true;
-    if (e.setExperimentFlag(ew.V8.RESET_DECODER_ON_ERRORS, true), l && e.setExperimentFlag(ew.V8.SOFTWARE_FALLBACK_ON_ERRORS, true), c && e.setExperimentFlag(ew.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS, true), e.context === ew.Yn.STREAM) {
+    let c = false,
+      u = true;
+    if (e.setExperimentFlag(ew.V8.RESET_DECODER_ON_ERRORS, true), c && e.setExperimentFlag(ew.V8.SOFTWARE_FALLBACK_ON_ERRORS, true), u && e.setExperimentFlag(ew.V8.SOFTWARE_FALLBACK_ON_CONSECUTIVE_ERRORS, true), e.context === ew.Yn.STREAM) {
       let t = nu(e7);
       e.setSoundshareDiscardRearChannels(t);
       let {
