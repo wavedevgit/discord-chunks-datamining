@@ -24,7 +24,8 @@ function s(e, t) {
         index: c,
         facing: u,
         hardwareId: d,
-        containerId: f
+        containerId: f,
+        effects: p
       } = t;
       return /^default/.test(s) ? (r = true, i = o.w5, s = s.replace("default", "Default")) : i = null != i && "" !== i ? i : s, null != c && (n = c), {
         id: i,
@@ -35,7 +36,8 @@ function s(e, t) {
         originalId: a,
         facing: u,
         hardwareId: d,
-        containerId: f
+        containerId: f,
+        effects: p
       }
     });
   return e !== o.h7.VIDEO_INPUT && !r && (null === i() || true === i() || null == (n = i().os) ? true : n.family) != null && /^win/i.test(i().os.family) && a.unshift({

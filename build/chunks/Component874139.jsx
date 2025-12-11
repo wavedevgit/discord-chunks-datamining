@@ -27,7 +27,7 @@ function E(e) {
     onClick: E,
     wishlistId: b,
     cardSize: y,
-    title: O = m.intl.string(m.t["7lZ31J"])
+    title: O
   } = e, {
     analyticsLocations: v
   } = (0, o.ZP)(), {
@@ -111,7 +111,7 @@ function E(e) {
       className: h.header,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
-        children: O
+        children: null != O ? O : m.intl.string(m.t["7lZ31J"])
       })
     }), (0, r.jsx)("div", {
       className: h.cardsContainer,

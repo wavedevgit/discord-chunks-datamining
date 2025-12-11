@@ -24,7 +24,10 @@ function m(e) {
     location: n
   } = e, u = (0, p.cZ)({
     location: n
-  }), m = (0, i.e7)([c.Z], () => (null == t ? true : t.userId) != null ? c.Z.getMutualGuilds(t.userId) : []), h = (0, i.Wu)([d.Z], () => (null == t ? true : t.userId) == null ? [] : d.Z.getActivities(t.userId)), g = (0, i.e7)([a.Z], () => (null == t ? true : t.userId) != null ? a.Z.getUserOutbox(t.userId) : null), E = r.useMemo(() => null != m && m.some(e => e.guild.id === _.ON), [m]), b = r.useMemo(() => {
+  }), m = (0, i.Wu)([c.Z], () => {
+    var e;
+    return (null == t ? true : t.userId) == null ? [] : null != (e = c.Z.getMutualGuilds(t.userId)) ? e : []
+  }), h = (0, i.Wu)([d.Z], () => (null == t ? true : t.userId) == null ? [] : d.Z.getActivities(t.userId)), g = (0, i.e7)([a.Z], () => (null == t ? true : t.userId) != null ? a.Z.getUserOutbox(t.userId) : null), E = r.useMemo(() => null != m && m.some(e => e.guild.id === _.ON), [m]), b = r.useMemo(() => {
     if ((null == t ? true : t.widgets) == null) returnfalse;
     let e = new Set(null == t ? true : t.widgets.map(e => e instanceof l.zy ? e.games.map(e => e.applicationId) : e instanceof s.q ? e.applicationId : true).filter(f.lm).flat());
     for (let t of _.RI)

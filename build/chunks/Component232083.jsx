@@ -82,9 +82,9 @@ function p(e) {
   } = e, m = (0, i.e7)([a.default], () => a.default.getId() === s.id), {
     getManageButtonForWidget: h
   } = (0, u.j)(), y = h(d), {
-    expanded: v,
-    setExpanded: O
-  } = (0, o.g)(), j = v ? b : b.slice(0, 2), x = b.length > 2, P = (0, r.jsxs)(r.Fragment, {
+    expanded: O,
+    setExpanded: v
+  } = (0, o.g)(), j = O ? b : b.slice(0, 2), x = b.length > 2, P = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g, (t = f({}, e), n = n = {
       games: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -97,8 +97,8 @@ function p(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), x && (0, r.jsx)(c.Z, {
-      expanded: v,
-      onClick: () => O(e => !e)
+      expanded: O,
+      onClick: () => v(e => !e)
     })]
   });
   return m && !p ? (0, r.jsx)(l.d, {

@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk517157 = require("./517157.js"),
   Chunk860717 = require("./860717.jsx"),
   Chunk28671 = require("./28671.jsx"),
-  Chunk430790 = require("./430790.jsx"),
+  Chunk729424 = require("./729424.jsx"),
   Chunk34335 = require("./34335.jsx"),
   Chunk683881 = require("./683881.jsx"),
   Chunk190862 = require("./190862.jsx"),
@@ -106,7 +106,7 @@ function F(e) {
     application: n
   } = (0, j.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, v.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, O.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
@@ -135,10 +135,10 @@ function U(e) {
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), d = (0, v.k)({
+  })(), d = (0, O.k)({
     location: "UserProfileModalV2Widgets"
   }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, O.J)(c, j);
+  (0, v.J)(c, j);
   var w = t.id;
   (0, P.s)(x);
   let {
@@ -149,15 +149,19 @@ function U(e) {
     null !== C.current && T()
   }, [T]);
   let k = () => (0, r.jsxs)(r.Fragment, {
-    children: [c && s && (0, r.jsx)(B, {}), c && (0, r.jsx)(F, {
-      user: t
+    children: [c && (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(E.Z, {
+        className: R.editingHeader
+      }), s && (0, r.jsx)(B, {}), (0, r.jsx)(F, {
+        user: t
+      })]
     }), l.map((e, i) => (0, r.jsx)(M, {
       widget: e,
       user: t,
       guildId: n,
       channelId: a,
       index: i
-    }, e instanceof h.q ? "".concat(e.type, "-").concat(e.applicationId) : "".concat(e.type))), c && (0, r.jsx)(E.Z, {})]
+    }, e instanceof h.q ? "".concat(e.type, "-").concat(e.applicationId) : "".concat(e.type)))]
   });
   if (f)
     if (d) return (0, r.jsx)(D.Z, {});

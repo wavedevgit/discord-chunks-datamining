@@ -27,8 +27,8 @@ function m(e) {
   } = (0, c.KZ)(), y = i.useMemo(() => new s.q({
     type: a.l.APPLICATION,
     applicationId: n.id
-  }), [n.id]), v = i.useCallback(() => {
-    null != y && ((0, u.qH)(y.type, y, true), h(function(e) {
+  }), [n.id]), O = i.useCallback(() => {
+    null != y && ((0, u.qH)(y.type, y), h(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -85,7 +85,7 @@ function m(e) {
               applicationName: n.name
             }),
             onClick: () => {
-              m(p.L.TAKE_ACTION), v()
+              m(p.L.TAKE_ACTION), O()
             }
           })
         })]

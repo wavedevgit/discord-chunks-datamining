@@ -96,18 +96,18 @@ function A(e) {
     wishlistId: E,
     currentUser: A,
     wishlistSettings: Z
-  } = (0, l.cj)([O.Z, y.default], () => {
-    let e = O.Z.getFirstWishlistId(n.id);
+  } = (0, l.cj)([v.Z, y.default], () => {
+    let e = v.Z.getFirstWishlistId(n.id);
     return {
       wishlistId: e,
       currentUser: y.default.getCurrentUser(),
-      wishlistSettings: null != e ? O.Z.getWishlistSettings(n.id, e) : null
+      wishlistSettings: null != e ? v.Z.getWishlistSettings(n.id, e) : null
     }
   }), {
     analyticsLocations: R
   } = (0, d.ZP)(), {
     trackUserProfileWishlistAction: G
-  } = (0, v.KZ)(), L = (null == A ? true : A.id) === n.id, M = false === n.nsfwAllowed, B = T.t9, [F, U] = i.useState(true);
+  } = (0, O.KZ)(), L = (null == A ? true : A.id) === n.id, M = false === n.nsfwAllowed, B = T.t9, [F, U] = i.useState(true);
   i.useEffect(() => {
     (null == Z ? true : Z.visibility) != null && U(Z.visibility === a.f.PUBLIC)
   }, [null == Z ? true : Z.visibility]);
@@ -131,11 +131,11 @@ function A(e) {
       action: n,
       productLines: r
     })
-  }, [G]), V = (0, x.Z)({
+  }, [G]), q = (0, x.Z)({
     wishlistId: E,
     onAction: K,
     productLines: null != (t = null == W ? true : W.getProductLines()) ? t : null
-  }), q = i.useCallback(() => {
+  }), V = i.useCallback(() => {
     if (null == E) return;
     let e = F ? a.f.PRIVATE : a.f.PUBLIC;
     U(!F), m.Z.updateWishlistVisibility(E, e), G({
@@ -197,7 +197,7 @@ function A(e) {
     children: [(0, r.jsx)(P.Z, {
       scrollerRef: S
     }), (0, r.jsxs)("div", {
-      ref: V,
+      ref: q,
       className: D.headerRow,
       children: [(0, r.jsxs)("div", {
         className: D.teenDisclaimer,
@@ -241,7 +241,7 @@ function A(e) {
         isWishlistPublic: F,
         handleOpenShop: Y,
         handleOpenGameShop: Q,
-        handleToggleWishlistVisibility: q,
+        handleToggleWishlistVisibility: V,
         socialLayerStorefrontApplicationId: B
       }) : (0, r.jsx)(k, {
         isSocialLayerStorefrontEnabled: z,

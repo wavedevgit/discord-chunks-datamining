@@ -38,28 +38,28 @@ var Chunk54381 = require("./54381.js"),
 let R = {
   FULL_WISHLIST: {
     title: Chunk388032.intl.string(Chunk388032.t["7lZ31J"]),
-    getSubtitle: i => P.intl.formatToPlainString(P.t.BjEX38, {
+    getSubtitle: i => E.intl.formatToPlainString(E.t.BjEX38, {
       username: i
     }),
     showIcons: false
   },
   MIXED: {
     title: Chunk388032.intl.string(Chunk388032.t.SK5rmi),
-    getSubtitle: i => P.intl.formatToPlainString(P.t.dIDKgi, {
+    getSubtitle: i => E.intl.formatToPlainString(E.t.dIDKgi, {
       username: i
     }),
     showIcons: true
   },
   SHOP_ONLY: {
     title: Chunk388032.intl.string(Chunk388032.t.SK5rmi),
-    getSubtitle: i => P.intl.formatToPlainString(P.t.wyMp1j, {
+    getSubtitle: i => E.intl.formatToPlainString(E.t.wyMp1j, {
       username: i
     }),
     showIcons: false
   },
   SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY: {
     title: Chunk388032.intl.string(Chunk388032.t.BCi1gT),
-    getSubtitle: i => P.intl.formatToPlainString(P.t.BjEX38, {
+    getSubtitle: i => E.intl.formatToPlainString(E.t.BjEX38, {
       username: i
     }),
     showIcons: false
@@ -73,9 +73,9 @@ function M(i) {
     themeClass: s
   } = i;
   return (0, n.jsx)("div", {
-    className: a()(E.wishlistBannerHeader, s),
+    className: a()(P.wishlistBannerHeader, s),
     children: (0, n.jsxs)("div", {
-      className: E.wishlistBannerTitleContainer,
+      className: P.wishlistBannerTitleContainer,
       children: [(0, n.jsx)(d.Heading, {
         variant: "heading-lg/bold",
         children: e
@@ -110,7 +110,7 @@ function H(i) {
     onOpenWishlist: r
   } = i;
   return null == e ? null : (0, n.jsx)("li", {
-    className: E.wishlistBannerListItem,
+    className: P.wishlistBannerListItem,
     children: (0, n.jsx)(b.BO, {
       item: e.item,
       remainingCount: t,
@@ -123,7 +123,7 @@ function H(i) {
               items: e.item.bundleItems
             };
             return (0, n.jsx)("div", {
-              className: E.bundlePreviewBanner,
+              className: P.bundlePreviewBanner,
               children: (0, n.jsx)(h.d, {
                 product: t,
                 isPurchased: false,
@@ -160,14 +160,14 @@ function G(i) {
     analyticsLocations: f
   } = i;
   return (0, n.jsxs)("ul", {
-    className: E.wishlistBannerGrid,
+    className: P.wishlistBannerGrid,
     children: [e.map((i, e) => {
       let {
         item: t,
         source: s
       } = i;
       return (0, n.jsx)("li", {
-        className: E.wishlistBannerListItem,
+        className: P.wishlistBannerListItem,
         children: ((i, e) => {
           var t, s;
           let {
@@ -231,10 +231,11 @@ let W = function(i) {
   } = (0, C.ZP)({
     user: e,
     numItems: L.zL,
-    location: "Wishlist Banner"
+    location: "Wishlist Banner",
+    source: L.bd.WISHLIST_BANNER
   }), S = s.useMemo(() => "loading" === x.status, [x.status]), _ = T.ZP.getName(e), {
     theme: y,
-    primaryColor: P,
+    primaryColor: E,
     secondaryColor: H
   } = (0, g.Z)({
     user: e,
@@ -245,7 +246,7 @@ let W = function(i) {
   } = (0, p.Z)({
     theme: y,
     themeType: null,
-    primaryColor: P,
+    primaryColor: E,
     secondaryColor: H
   }), z = s.useCallback(() => {
     (0, I.openUserProfileModal)({
@@ -261,7 +262,7 @@ let W = function(i) {
   }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [j, c])], D = null == o ? true : o.getBannerURL({
     canAnimate: false,
     size: 713
-  }), U = s.useMemo(() => h ? c.slice(0, L.zL - 1) : c, [c, h]), Y = (0, B.g)(U, e), X = h ? c[L.zL - 1] : null, K = b - L.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
+  }), U = s.useMemo(() => h ? c.slice(0, L.zL - 1) : c, [c, h]), Y = (0, N.g)(U, e), X = h ? c[L.zL - 1] : null, K = b - L.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
     if (i && !S && c.length > 0) {
       let i = c.map(i => {
         let {
@@ -269,7 +270,7 @@ let W = function(i) {
         } = i;
         return e.skuId
       });
-      N.default.track(v.rMx.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED, {
+      B.default.track(v.rMx.IMPRESSION_GIFT_OPTION_WISHLIST_BANNER_VIEWED, {
         gift_recipient_id: e.id,
         sku_ids: i,
         location_stack: r,
@@ -284,10 +285,10 @@ let W = function(i) {
   }, [S, c, e.id, r]), V = (0, l.O)(J, true, !S && !q);
   return "error" === x.status ? null : (0, n.jsxs)("div", {
     ref: V,
-    className: a()(E.wishlistBanner, Z),
+    className: a()(P.wishlistBanner, Z),
     style: W,
     children: [null != D && (0, n.jsx)("div", {
-      className: E.backgroundImage,
+      className: P.backgroundImage,
       style: {
         backgroundImage: "url(".concat(D, ")")
       }

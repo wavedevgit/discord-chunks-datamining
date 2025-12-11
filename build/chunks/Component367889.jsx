@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 367889, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  F: () => E
+  F: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -19,7 +19,7 @@ let g = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk813732.Z,
     buildLayout: () => []
   }),
-  E = (0, Chunk509613.m7)(Chunk313789.n.SUBSCRIPTIONS_SIDEBAR_ITEM, {
+  I = (0, Chunk509613.m7)(Chunk313789.n.SUBSCRIPTIONS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     getLegacySearchKey: () => Chunk726985.s6.SUBSCRIPTIONS,
     icon: Chunk657707.XOf,

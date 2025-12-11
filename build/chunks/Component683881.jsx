@@ -27,7 +27,7 @@ function p(e) {
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), h = (0, l.e7)([c.default], () => c.default.getCurrentUser()), y = (0, o.zPA)(), v = i.useMemo(() => {
+  })), h = (0, l.e7)([c.default], () => c.default.getCurrentUser()), y = (0, o.zPA)(), O = i.useMemo(() => {
     if (null == h || null == b) return null;
     let {
       id: e,
@@ -87,26 +87,26 @@ function p(e) {
       })
     }
     return null
-  }, [b, h]), O = i.useRef(null), j = i.useCallback(() => {
+  }, [b, h]), v = i.useRef(null), j = i.useCallback(() => {
     if (null == n.current) return;
     let e = n.current.getBoundingClientRect();
-    O.current = {
+    v.current = {
       x: e.left,
       y: e.top
     }
   }, [n]);
   if (i.useEffect(() => {
       if (!p) {
-        O.current = null;
+        v.current = null;
         return
       }
-      null == O.current && j()
-    }, [p, j]), true !== p || null == m || null == v) return null;
-  null == O.current && j();
+      null == v.current && j()
+    }, [p, j]), true !== p || null == m || null == O) return null;
+  null == v.current && j();
   let {
     x: x,
     y: P
-  } = null != (t = O.current) ? t : {
+  } = null != (t = v.current) ? t : {
     x: 0,
     y: 0
   }, I = m.x - x - 60 * !!y, w = m.y - P;
@@ -115,6 +115,6 @@ function p(e) {
     style: {
       transform: "translate3d(".concat(I, "px, ").concat(w, "px, 0)")
     },
-    children: v
+    children: O
   })
 }

@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk580784 = require("./580784.js");
-let v = Chunk481060.EFr.SIZE_40,
-  O = (0, Chunk481060.dcp)(v);
+let O = Chunk481060.EFr.SIZE_40,
+  v = (0, Chunk481060.dcp)(O);
 
 function j(e) {
   let {
@@ -102,9 +102,9 @@ function j(e) {
       })
     },
     children: [(0, r.jsx)(l.qEK, {
-      src: t.getAvatarURL(x, O),
+      src: t.getAvatarURL(x, v),
       "aria-label": t.username,
-      size: v,
+      size: O,
       status: E ? m.Skl.UNKNOWN : j,
       statusBackdropColor: E ? true : (0, l.QFD)(w),
       isMobile: T,

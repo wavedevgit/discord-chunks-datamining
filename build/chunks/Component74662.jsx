@@ -17,7 +17,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk888645 = require("./888645.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk498264 = require("./498264.js");
-let I = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
+let E = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk498264.default.bU5ANm),
     useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
     buildLayout: () => [Chunk888645.m]
@@ -39,7 +39,7 @@ let I = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
         });
       return Chunk657707 && (exports || require) && (!module || Chunk54381)
     },
-    buildLayout: () => [I],
+    buildLayout: () => [E],
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163._x

@@ -27,16 +27,16 @@ function h(e) {
     applicationId: s,
     className: u,
     disableInteraction: h = false
-  } = e, v = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = v.length > 0, P = o.qH, I = a && !h && (0, f.M8)(c) && v.length < P, {
+  } = e, O = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], v = O.length > 0, P = o.qH, I = a && !h && (0, f.M8)(c) && O.length < P, {
     trackUserProfileAction: w
-  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), _ = (0, i.useRef)(null), [T, C] = (0, i.useState)(0), [D, k] = (0, i.useState)(false), N = x(E, _, v, S, C);
+  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), _ = (0, i.useRef)(null), [T, C] = (0, i.useState)(0), [D, k] = (0, i.useState)(false), N = x(E, _, O, S, C);
   if ((0, i.useEffect)(() => (N(), window.addEventListener("resize", N), () => {
       window.removeEventListener("resize", N)
-    }), [N, null == v ? true : v.join("")]), !O && !I) return null;
-  let A = D ? v : v.slice(0, v.length - T);
+    }), [N, null == O ? true : O.join("")]), !v && !I) return null;
+  let A = D ? O : O.slice(0, O.length - T);
   return (0, r.jsxs)("div", {
     className: l()(m.tagListContainer, u),
-    children: [O && (0, r.jsxs)(r.Fragment, {
+    children: [v && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("ul", {
         className: m.tagList,
         "aria-label": b.intl.string(b.t.EfjTi4),
@@ -123,7 +123,7 @@ let y = e => {
   })
 };
 
-function v(e) {
+function O(e) {
   let {
     numberOfOverflowingTags: t
   } = e;
@@ -134,7 +134,7 @@ function v(e) {
   })
 }
 
-function O() {
+function v() {
   return (0, Chunk54381.jsx)(Chunk259580.Z, {
     direction: Chunk259580.Z.Directions.LEFT,
     width: 12,
@@ -157,7 +157,7 @@ function j(e) {
   return l ? (0, r.jsx)("div", {
     className: m.expandButton,
     ref: o,
-    children: (0, r.jsx)(v, {
+    children: (0, r.jsx)(O, {
       numberOfOverflowingTags: n
     })
   }) : (0, r.jsx)(c.u, {
@@ -168,7 +168,7 @@ function j(e) {
       onClick: t ? a : i,
       "aria-label": d,
       className: t ? m.collapseButton : m.expandButton,
-      children: t ? (0, r.jsx)(O, {}) : (0, r.jsx)(v, {
+      children: t ? (0, r.jsx)(v, {}) : (0, r.jsx)(O, {
         numberOfOverflowingTags: n
       })
     })

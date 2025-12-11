@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 199548, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  ts: () => E
+  ts: () => I
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -24,7 +24,7 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
     usePredicate: () => (0, Chunk526665.gN)("ActivityPrivacyPanel"),
     buildLayout: () => [Chunk418878.v, Chunk330187.b, Chunk87513.o]
   }),
-  E = (0, Chunk509613.m7)(Chunk313789.n.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
+  I = (0, Chunk509613.m7)(Chunk313789.n.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
     getLegacySearchKey: () => (0, Chunk526665.Gl)("ActivityPrivacyPanel") ? true : Chunk726985.s6.ACTIVITY_PRIVACY,
     icon: Chunk657707.KED,

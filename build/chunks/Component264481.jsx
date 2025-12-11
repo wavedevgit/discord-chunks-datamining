@@ -22,10 +22,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk771838 = require("./771838.js");
 let h = [() => Chunk388032.intl.string(Chunk388032.t.madJdE), () => Chunk388032.intl.string(Chunk388032.t.NYmfoP), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8h), () => Chunk388032.intl.string(Chunk388032.t.DnsJE8)],
   y = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeE), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYj"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1g), () => Chunk388032.intl.string(Chunk388032.t["jhBm0+"])],
-  v = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXA), () => Chunk388032.intl.string(Chunk388032.t.aAFW7V), e => b.intl.formatToPlainString(b.t.h2g0cM, {
+  O = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXA), () => Chunk388032.intl.string(Chunk388032.t.aAFW7V), e => b.intl.formatToPlainString(b.t.h2g0cM, {
     name: e
   }), () => Chunk388032.intl.string(Chunk388032.t.rrYh58), () => Chunk388032.intl.string(Chunk388032.t["HX3K+F"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aY"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v0"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3h), () => Chunk388032.intl.string(Chunk388032.t.HRcTFL), () => Chunk388032.intl.string(Chunk388032.t.NuCqPt), () => Chunk388032.intl.string(Chunk388032.t["M1tw+4"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y2), () => Chunk388032.intl.string(Chunk388032.t.Cu95PQ), () => Chunk388032.intl.string(Chunk388032.t["R/wFuh"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVT), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
-  O = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
+  v = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
 
 function j(e) {
   let {
@@ -84,7 +84,7 @@ function I(e) {
     name: u
   }), [p] = i.useState(() => {
     var e;
-    return (null != (e = (0, a.sample)(v)) ? e : v[0])(u)
+    return (null != (e = (0, a.sample)(O)) ? e : O[0])(u)
   }), h = i.useCallback(() => {
     o.Z.openPrivateChannel({
       recipientIds: t.id
@@ -108,7 +108,7 @@ function w() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk54381.jsx)("div", {
     className: Chunk771838.connectionPlatforms,
-    children: O.map((t, n) => {
+    children: v.map((t, n) => {
       let i = s.Z.get(t);
       if (null == i) return null;
       let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;

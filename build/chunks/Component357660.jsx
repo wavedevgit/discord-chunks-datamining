@@ -2,14 +2,16 @@
 /** chunk id: 357660, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => S
+  T: () => T
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk497321 = require("./497321.jsx"),
   Chunk266454 = require("./266454.js"),
+  Chunk246946 = require("./246946.js"),
   Chunk924052 = require("./924052.jsx"),
   Chunk28682 = require("./28682.js"),
   Chunk996435 = require("./996435.js"),
@@ -19,31 +21,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk520118 = require("./520118.js");
 
-function g(e) {
+function b(e) {
   let {
     notice: t,
     children: n
   } = e, {
     showNotice: l,
-    handleStoreUpdate: u
-  } = (0, c.Cu)(), d = null == t ? true : t.stores;
+    handleStoreUpdate: c
+  } = (0, d.Cu)(), u = null == t ? true : t.stores;
   i.useEffect(() => {
-    if (null != d) {
-      let e = new a.Fh(d, () => {
-        u(d)
+    if (null != u) {
+      let e = new a.Fh(u, () => {
+        c(u)
       });
-      return e.attach("SettingPanelNotice"), u(d), () => {
+      return e.attach("SettingPanelNotice"), c(u), () => {
         e.detach()
       }
     }
-  }, [d, u]);
+  }, [u, c]);
   let f = i.useMemo(() => {
     if (null == t || !l) return null;
     let {
       element: e
     } = t;
     return (0, r.jsx)(s.oXn, {
-      className: h.notice,
+      className: E.notice,
       children: (0, r.jsx)(e, {})
     })
   }, [t, l]);
@@ -55,21 +57,21 @@ function g(e) {
   })
 }
 
-function E(e) {
+function y(e) {
   let {
     scrollerRef: t,
     panelKey: n,
     notice: a,
     children: o
   } = e, l = i.useRef(null);
-  return (0, r.jsx)(g, {
+  return (0, r.jsx)(b, {
     notice: a,
     children: (0, r.jsx)(s.w0Z, {
       "data-settings-panel-scroller": true,
-      className: h.scroller,
+      className: E.scroller,
       ref: t,
       children: (0, r.jsx)("div", {
-        className: h.panel,
+        className: E.panel,
         ref: l,
         children: (0, r.jsx)(s.JcV, {
           containerRef: l,
@@ -80,54 +82,54 @@ function E(e) {
   })
 }
 
-function b(e) {
+function O(e) {
   let {
     layout: t
   } = e;
   return (0, r.jsx)("div", {
-    className: h.categories,
+    className: E.categories,
     children: t.map((e, n) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(_.Z, {
         node: e
-      }), n !== t.length - 1 && (0, r.jsx)(p.Z, {
-        className: h.divider
+      }), n !== t.length - 1 && (0, r.jsx)(m.Z, {
+        className: E.divider
       })]
     }, e.key))
   })
 }
 
-function y(e) {
+function v(e) {
   var t, n;
   let {
     panelKey: a,
     layout: o,
     notice: l
-  } = e, c = null != (t = d.Z.useState(e => {
+  } = e, c = null != (t = p.Z.useState(e => {
     let {
       currentTabKeys: t
     } = e;
     return t.get(a)
   })) ? t : o[0].key;
   i.useEffect(() => {
-    let e = d.Z.getField("currentTabKeys");
+    let e = p.Z.getField("currentTabKeys");
     if (o.some(t => t.key === e.get(a))) return;
     let t = new Map(e);
-    t.set(a, o[0].key), d.Z.setState({
+    t.set(a, o[0].key), p.Z.setState({
       currentTabKeys: t
     })
   }, [o, a]);
   let u = e => {
-      let t = new Map(d.Z.getField("currentTabKeys"));
-      t.set(a, e), d.Z.setState({
+      let t = new Map(p.Z.getField("currentTabKeys"));
+      t.set(a, e), p.Z.setState({
         currentTabKeys: t
       })
     },
-    f = null != (n = o.find(e => e.key === c)) ? n : o[0];
-  return (0, r.jsxs)(E, {
+    d = null != (n = o.find(e => e.key === c)) ? n : o[0];
+  return (0, r.jsxs)(y, {
     panelKey: a,
     notice: l,
     children: [(0, r.jsx)(s.njP, {
-      className: h.tabBar,
+      className: E.tabBar,
       selectedItem: c,
       onItemSelect: u,
       orientation: "horizontal",
@@ -145,71 +147,72 @@ function y(e) {
       })
     }), (0, r.jsx)(s.njP.Panel, {
       id: c,
-      children: null != f.StronglyDiscouragedCustomComponent ? (0, r.jsx)(f.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(b, {
-        layout: f.layout
+      children: null != d.StronglyDiscouragedCustomComponent ? (0, r.jsx)(d.StronglyDiscouragedCustomComponent, {}) : (0, r.jsx)(O, {
+        layout: d.layout
       })
     })]
   })
 }
 
-function O(e) {
+function S(e) {
   let {
     panelKey: t,
     notice: n,
     layout: a
   } = e, o = i.useRef(null);
-  return (0, _.i)(t, a, o), (0, r.jsx)(E, {
+  return (0, h.i)(t, a, o), (0, r.jsx)(y, {
     scrollerRef: o,
     panelKey: t,
     notice: n,
-    children: (0, r.jsx)(b, {
+    children: (0, r.jsx)(O, {
       layout: a
     })
   })
 }
 
-function v(e) {
+function I(e) {
   let {
     component: t,
     panelKey: n,
     notice: i
   } = e;
-  return (0, r.jsx)(E, {
+  return (0, r.jsx)(y, {
     panelKey: n,
     notice: i,
     children: (0, r.jsx)(t, {})
   })
 }
 
-function S(e) {
+function T(e) {
   let {
     node: t
   } = e, {
     layout: n
-  } = t;
+  } = t, o = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation);
   if (i.useEffect(() => {
       var e, n;
-      if ((null == (e = t.parent) ? true : e.type) !== u.Jq.SIDEBAR_ITEM || null == t.parent.trailing) return;
+      if ((null == (e = t.parent) ? true : e.type) !== f.Jq.SIDEBAR_ITEM || null == t.parent.trailing) return;
       let {
         trailing: r
       } = t.parent, i = "getDismissibleContentTypes" in r ? null == (n = r.getDismissibleContentTypes) ? true : n.call(r) : null;
       null != i && i.forEach(e => {
-        (0, l.Q3)(e, {
-          dismissAction: m.L.AUTO,
+        (0, c.Q3)(e, {
+          dismissAction: g.L.AUTO,
           forceTrack: true
         })
       })
-    }, [t]), null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(v, {
+    }, [t]), o && t.hideInStreamerMode) return (0, r.jsx)(l.Z, {});
+  if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(I, {
     component: t.StronglyDiscouragedCustomComponent,
     panelKey: t.key,
     notice: t.notice
   });
-  if ((0, u.sp)(n)) return (0, r.jsx)(y, {
+  if ((0, f.sp)(n)) return (0, r.jsx)(v, {
     panelKey: t.key,
     notice: t.notice,
     layout: n
   });
-  if ((0, u.iU)(n)) return (0, r.jsx)(O, {
+  if ((0, f.iU)(n)) return (0, r.jsx)(S, {
     panelKey: t.key,
     notice: t.notice,
     layout: n

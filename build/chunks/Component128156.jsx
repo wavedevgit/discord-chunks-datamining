@@ -74,9 +74,9 @@ function S(e) {
   });
   if (!W && !H && !L) {
     var z;
-    return M ? (0, r.jsx)(v.Uf, {
+    return M ? (0, r.jsx)(O.Uf, {
       onClose: C
-    }) : (0, r.jsx)(v.P9, {
+    }) : (0, r.jsx)(O.P9, {
       user: t,
       guildId: null != (z = null == S ? true : S.guildId) ? z : E,
       channelId: _,
@@ -86,7 +86,7 @@ function S(e) {
   return (0, r.jsxs)(j.F, {
     className: w.scroller,
     fade: true,
-    children: [W ? (0, r.jsx)(O.Z, {
+    children: [W ? (0, r.jsx)(v.Z, {
       heading: I.intl.string(I.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: w.cards,
@@ -120,7 +120,7 @@ function S(e) {
           })
         })]
       })
-    }) : null, H ? (0, r.jsx)(O.Z, {
+    }) : null, H ? (0, r.jsx)(v.Z, {
       heading: I.intl.string(I.t.jzgEoL),
       introText: M ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {

@@ -2,7 +2,7 @@
 /** chunk id: 512832, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,32 +10,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk176879 = require("./176879.js"),
   Chunk874139 = require("./874139.jsx"),
   Chunk120209 = require("./120209.js"),
-  Chunk228168 = require("./228168.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk228168 = require("./228168.js");
 
-function d(e) {
+function u(e) {
   let {
     user: t,
     onOpenProfile: n
-  } = e, d = i.useCallback(() => {
+  } = e, u = i.useCallback(() => {
     null == n || n({
       section: c.oh.WISHLIST
     })
   }, [n]), {
-    displayedWishlistItems: f,
-    defaultWishlistId: p
+    displayedWishlistItems: d,
+    defaultWishlistId: f,
+    title: p
   } = (0, o.QX)({
     user: t,
     numItems: o.fA,
-    source: a.Yw.POPOUT,
+    source: a.bd.POPOUT,
     location: "User Profile Popout"
   });
-  return null == f || 0 === f.length ? null : (0, r.jsx)(s.Z, {
+  return null == d || 0 === d.length ? null : (0, r.jsx)(s.Z, {
     profileOwner: t,
-    wishlistItems: f,
-    wishlistId: p,
-    onClick: d,
+    wishlistItems: d,
+    wishlistId: f,
+    onClick: u,
     cardSize: l.H.SMALL,
-    title: u.intl.string(u.t.BCi1gT)
+    title: p
   })
 }

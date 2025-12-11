@@ -1,7 +1,7 @@
 /** Chunk was on 85032 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,11 +21,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk284459 = require("./284459.js");
 
-function O() {
+function v() {
   let {
     trackUserProfileAction: e,
     trackUserProfileEditAction: t
-  } = (0, Chunk785717.KZ)(), O = Chunk473749.useRef(false), j = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
+  } = (0, Chunk785717.KZ)(), v = Chunk473749.useRef(false), j = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
     application: x,
     config: P
   } = (0, Chunk50130.G)(), {
@@ -78,10 +78,10 @@ function O() {
     })
   }, [exports]), _ = null == j || null == x || null == S || !w, T = null != I;
   if (Chunk473749.useEffect(() => {
-      !_ && T && (O.current || (module({
+      !_ && T && (v.current || (module({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
         applicationId: x.id
-      }), O.current = true))
+      }), v.current = true))
     }, [_, T, module, null == x ? true : x.id]), _) return (0, Chunk54381.jsx)("div", {
     className: Chunk284459.loading,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})

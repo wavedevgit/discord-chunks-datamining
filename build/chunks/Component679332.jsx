@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk299206 = require("./299206.jsx"),
   Chunk785717 = require("./785717.jsx"),
-  Chunk475413 = require("./475413.jsx"),
+  Chunk732380 = require("./732380.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function f(e, t, n) {
@@ -71,8 +71,8 @@ function _(e) {
         }, t))
       })
     },
-    children: e => (0, r.jsx)(u.oY, p({
-      ref: f,
+    children: e => (0, r.jsx)(u.f6, p({
+      buttonRef: f,
       action: "PRESS_OPTIONS",
       icon: a.xhG,
       tooltipText: d.intl.string(d.t["UKOtz+"])

@@ -2,107 +2,131 @@
 /** chunk id: 176879, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  QX: () => f,
-  ZP: () => d,
-  fA: () => u
+  QX: () => _,
+  ZP: () => p,
+  fA: () => f
 });
 var Chunk473749 = require("./473749.js"),
   Chunk164670 = require("./164670.js"),
   Chunk765907 = require("./765907.js"),
   Chunk81939 = require("./81939.js"),
+  Chunk125742 = require("./125742.js"),
   Chunk687158 = require("./687158.js"),
   Chunk321947 = require("./321947.js"),
-  Chunk602733 = require("./602733.js");
-let u = 4;
+  Chunk602733 = require("./602733.js"),
+  Chunk388032 = require("./388032.jsx");
+let f = 4;
 
-function d(e) {
+function p(e) {
   let {
     user: t,
-    numItems: n = c.zL,
-    source: u = c.Yw.USER_PROFILE,
+    numItems: n = u.zL,
+    location: d,
+    source: f
+  } = e, p = (0, l.ZP)(t.id), {
+    enabledInPopout: _,
+    enabledInSidebar: m
+  } = (0, s.u)({
     location: d
-  } = e, f = (0, s.ZP)(t.id), {
-    defaultWishlistId: p,
-    wishlist: _,
-    popularCollectiblesProducts: m,
-    isFetchingWishlist: h,
-    isValidatingPopularProducts: g,
-    isFetchingPopularProducts: E,
-    wishlistError: b
-  } = (0, c.ZL)(t, n, u), {
-    isDisplayProfileSocialLayerStorefrontEligible: y
+  }), h = r.useMemo(() => f === u.bd.POPOUT ? _ : f !== u.bd.DM_SIDE_PANEL || m, [f, _, m]), g = r.useMemo(() => f === u.bd.POPOUT ? u.Yw.POPOUT : u.Yw.USER_PROFILE, [f]), {
+    defaultWishlistId: E,
+    wishlist: b,
+    popularCollectiblesProducts: y,
+    isFetchingWishlist: O,
+    isValidatingPopularProducts: v,
+    isFetchingPopularProducts: S,
+    wishlistError: I
+  } = (0, u.ZL)({
+    giftRecipient: t,
+    minNumItems: h ? n : 0,
+    source: g
+  }), {
+    isDisplayProfileSocialLayerStorefrontEligible: T
   } = (0, a.Z)({
-    displayProfile: f,
+    displayProfile: p,
     location: d
   }), {
-    wishlistItems: O
+    wishlistItems: C
   } = (0, o.Z)({
     guildId: (0, i.ac)(),
     numWishlistItems: n
-  }), v = r.useMemo(() => {
+  }), A = r.useMemo(() => {
     var e;
-    return (null != (e = null == _ ? true : _.items) ? e : []).filter(e => true !== e.isOwned && (0, l.F)(e)).length > 0 || y ? O : []
-  }, [null == _ ? true : _.items, y, O]), {
-    displayItems: S,
-    hasMoreItems: I,
-    totalWishlistItemCount: T,
-    wishlistItemCountToBeDisplayed: C
-  } = (0, c.UD)({
-    wishlist: _,
-    popularCollectiblesProducts: m,
-    popularSocialLayerStorefrontItems: v,
-    wishlistError: b,
+    return h && ((null != (e = null == b ? true : b.items) ? e : []).filter(e => true !== e.isOwned && (0, c.F)(e)).length > 0 || T) ? C : []
+  }, [null == b ? true : b.items, T, h, C]), {
+    displayItems: N,
+    hasMoreItems: P,
+    totalWishlistItemCount: R,
+    wishlistItemCountToBeDisplayed: w
+  } = (0, u.UD)({
+    wishlist: b,
+    popularCollectiblesProducts: y,
+    popularSocialLayerStorefrontItems: A,
+    wishlistError: I,
     numItems: n
   });
   return {
-    displayItems: S,
-    hasMoreItems: I,
-    totalWishlistItemCount: T,
-    wishlistItemCountToBeDisplayed: C,
-    fetchState: r.useMemo(() => h || g || E ? {
+    displayItems: N,
+    hasMoreItems: P,
+    totalWishlistItemCount: R,
+    wishlistItemCountToBeDisplayed: w,
+    fetchState: r.useMemo(() => O || v || S ? {
       status: "loading"
-    } : null != b ? {
+    } : null != I ? {
       status: "error",
-      error: b
+      error: I
     } : {
       status: "success"
-    }, [h, g, E, b]),
-    defaultWishlistId: p,
-    wishlist: _
+    }, [O, v, S, I]),
+    defaultWishlistId: E,
+    wishlist: b
   }
 }
 
-function f(e) {
+function _(e) {
   let {
     user: t,
-    numItems: n = c.zL,
-    source: i = c.Yw.USER_PROFILE,
+    numItems: n = u.zL,
+    source: i,
     location: a
   } = e, {
     displayItems: o,
     defaultWishlistId: s,
     wishlist: l,
-    hasMoreItems: u,
+    hasMoreItems: c,
     totalWishlistItemCount: f,
-    wishlistItemCountToBeDisplayed: p,
-    fetchState: _
-  } = d({
+    wishlistItemCountToBeDisplayed: _,
+    fetchState: m
+  } = p({
     user: t,
     numItems: n,
     source: i,
     location: a
-  }), m = r.useMemo(() => {
+  }), {
+    displayedWishlistItems: h,
+    title: g
+  } = r.useMemo(() => {
     let e = null == l ? true : l.items.filter(e => true !== e.isOwned);
-    return null == e || 0 === e.length ? null : e.length > 1 && e.length < n ? o.map(e => e.item) : e
+    return null == e || 0 === e.length ? {
+      displayedWishlistItems: null,
+      title: null
+    } : e.length > 1 && e.length < n && o.length > e.length ? {
+      displayedWishlistItems: o.map(e => e.item),
+      title: d.intl.string(d.t.BCi1gT)
+    } : {
+      displayedWishlistItems: e,
+      title: d.intl.string(d.t["7lZ31J"])
+    }
   }, [o, l, n]);
   return {
     displayItems: o,
-    hasMoreItems: u,
+    hasMoreItems: c,
     totalWishlistItemCount: f,
-    wishlistItemCountToBeDisplayed: p,
-    fetchState: _,
+    wishlistItemCountToBeDisplayed: _,
+    fetchState: m,
     defaultWishlistId: s,
     wishlist: l,
-    displayedWishlistItems: m
+    displayedWishlistItems: h,
+    title: g
   }
 }

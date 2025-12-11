@@ -192,20 +192,20 @@ function A(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), m = (0, s.Dt)(), {
     trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), _ = i.useCallback(() => {
+  } = (0, p.KZ)(), [y, O] = i.useState("idle"), [v, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), _ = i.useCallback(() => {
     h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
-    }), v("editing")
+    }), O("editing")
   }, [d, h]), T = i.useCallback(() => {
-    let e = O.trim(),
+    let e = v.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, b.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
+    (0, b.Bu)(d, f, "" !== e ? e : true), O("completed"), n && h({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
     })
-  }, [d, f, O, t, h]), C = i.useCallback(e => {
+  }, [d, f, v, t, h]), C = i.useCallback(e => {
     j(e)
   }, []);
   return i.useEffect(() => {
@@ -223,7 +223,7 @@ function A(e) {
       children: I.intl.string(I.t.JxKXeT)
     }), (0, r.jsx)(c.Kx8, {
       id: g,
-      value: O,
+      value: v,
       placeholder: w,
       onChange: C,
       onBlur: T,
@@ -291,7 +291,7 @@ function Z(e) {
   }, M = f.default.getCurrentUser(), B = (null == M ? true : M.id) === t.id, F = 1 === (0, b.Gv)(o), U = !s && B, W = U && (0, b.vI)(o), H = U && !F, {
     registerDragHandleRef: z
   } = (0, h.C)();
-  if (G) return (0, r.jsx)(v.i, {});
+  if (G) return (0, r.jsx)(O.i, {});
   let K = () => (0, r.jsx)(y.Z, {
       coverRef: g,
       className: null == Z || s ? true : w.hoverActiveEffect,
@@ -302,7 +302,7 @@ function Z(e) {
       disableInteraction: s,
       hideTooltip: true
     }),
-    V = () => (0, r.jsxs)("div", {
+    q = () => (0, r.jsxs)("div", {
       className: l()(S.card, p),
       children: [H ? (0, r.jsxs)("div", {
         className: S.dragHandleContainer,
@@ -330,7 +330,7 @@ function Z(e) {
           user: t,
           guildId: n,
           channelId: i
-        }), (0, r.jsx)(O.Z, {
+        }), (0, r.jsx)(v.Z, {
           tags: k,
           isCurrentUser: B,
           widgetType: o,
@@ -354,6 +354,6 @@ function Z(e) {
     index: null != u ? u : 0,
     widgetType: o,
     game: a,
-    children: V()
-  }) : V()
+    children: q()
+  }) : q()
 }

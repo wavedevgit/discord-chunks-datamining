@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk391122 = require("./391122.js");
 
-function O(e) {
+function v(e) {
   let {
     index: t,
     widget: n,
@@ -40,7 +40,7 @@ function O(e) {
       return null != (e = n.id) ? e : (0, s.hQ)()
     }, [n.id]),
     {
-      isDragging: O,
+      isDragging: v,
       dragSourcePosition: j
     } = (0, p.Y9)({
       dragRef: c,
@@ -60,10 +60,10 @@ function O(e) {
     I = x && t > j;
   return (0, r.jsxs)("div", {
     ref: u,
-    className: l()(v.dragAndDropTarget, {
-      [v.dropIndicatorBefore]: P,
-      [v.dropIndicatorAfter]: I,
-      [v.isDragging]: O
+    className: l()(O.dragAndDropTarget, {
+      [O.dropIndicatorBefore]: P,
+      [O.dropIndicatorAfter]: I,
+      [O.isDragging]: v
     }),
     "aria-label": y.intl.formatToPlainString(y.t.YLczh4, {
       positionNumber: t + 1
@@ -71,7 +71,7 @@ function O(e) {
     children: [(0, r.jsx)(b.Z, {
       buttonRef: c,
       widget: n,
-      className: v.dragHandleButton,
+      className: O.dragHandleButton,
       additionalMenuItems: a
     }), o]
   })
@@ -97,7 +97,7 @@ function j(e) {
     widget: n,
     onAction: S
   }), _ = w && null != p && !a, T = () => (0, r.jsxs)("div", {
-    className: l()(v.container, f),
+    className: l()(O.container, f),
     children: [(0, r.jsx)(m.Z, {
       userId: t,
       headingId: I,
@@ -114,7 +114,7 @@ function j(e) {
   return (0, r.jsx)("section", {
     ref: E,
     "aria-labelledby": I,
-    children: _ ? (0, r.jsx)(O, {
+    children: _ ? (0, r.jsx)(v, {
       index: null != p ? p : 0,
       widget: n,
       additionalManageWidgetMenuItems: P,

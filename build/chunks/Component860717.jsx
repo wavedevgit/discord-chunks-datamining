@@ -207,9 +207,9 @@ function M(e) {
     case "TEXT_WITH_IMAGE":
       return (0, r.jsx)(K, A({}, t));
     case "SEPARATOR":
-      return (0, r.jsx)(V, A({}, t));
+      return (0, r.jsx)(q, A({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(q, {})
+      return (0, r.jsx)(V, {})
   }
 }
 
@@ -291,7 +291,7 @@ function z(e) {
   let {
     content: t
   } = e, n = i.useId(), a = (0, y._)();
-  return null != t ? (0, r.jsx)(O.Z, {
+  return null != t ? (0, r.jsx)(v.Z, {
     type: s.re.TEXT_DISPLAY,
     id: n,
     content: t,
@@ -331,12 +331,12 @@ function K(e) {
   })
 }
 
-function V(e) {
+function q(e) {
   let {
     size: t = "small",
     divider: n = false
   } = e, a = i.useId();
-  return (0, r.jsx)(v.Z, {
+  return (0, r.jsx)(O.Z, {
     type: s.re.SEPARATOR,
     id: a,
     divider: n,
@@ -344,7 +344,7 @@ function V(e) {
   })
 }
 
-function q() {
+function V() {
   let e = function() {
       let e = Chunk473749.useContext(Q);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
@@ -464,8 +464,8 @@ let et = Object.assign(function(e) {
   } = e, m = (0, o.e7)([w.default], () => w.default.getId()) === n.id, {
     application: h,
     game: y,
-    config: v
-  } = J(a), O = null == h ? true : h.getIconURL(16), x = (0, P.O)(n.id).data, S = null == x ? true : x.find(e => e.application_id === a.applicationId), T = (0, b.Z)({
+    config: O
+  } = J(a), v = null == h ? true : h.getIconURL(16), x = (0, P.O)(n.id).data, S = null == x ? true : x.find(e => e.application_id === a.applicationId), T = (0, b.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == y ? true : y.id,
     source: p.m1.UserProfile,
@@ -486,9 +486,9 @@ let et = Object.assign(function(e) {
       analyticsLocations: F
     }))
   }, [L, B, t, a.applicationId, F]), W = null == s && D && !R && L, H = (0, r.jsxs)(r.Fragment, {
-    children: [null != O ? (0, r.jsx)("img", {
+    children: [null != v ? (0, r.jsx)("img", {
       className: N.appIcon,
-      src: O,
+      src: v,
       width: 16,
       height: 16,
       alt: ""
@@ -507,7 +507,7 @@ let et = Object.assign(function(e) {
     className: l()(N.headerTitle, N.clickable),
     onClick: T,
     children: H
-  }), K = (0, o.e7)([I.default], () => I.default.locale), V = i.useMemo(() => {
+  }), K = (0, o.e7)([I.default], () => I.default.locale), q = i.useMemo(() => {
     let e = function(e, t, n) {
       var r, i, a;
       let l = new Intl.NumberFormat(n, {
@@ -543,7 +543,7 @@ let et = Object.assign(function(e) {
         config: t,
         numberFormat: l
       }
-    }(null != S ? S : null, null != v ? v : null, K);
+    }(null != S ? S : null, null != O ? O : null, K);
     return G.map(function t(n) {
       switch (n.type) {
         case "HERO":
@@ -572,7 +572,7 @@ let et = Object.assign(function(e) {
           return n
       }
     })
-  }, [v, S, K]);
+  }, [O, S, K]);
   return (0, r.jsxs)(C.Z, Z(A({}, e), {
     userId: n.id,
     widget: a,
@@ -590,7 +590,7 @@ let et = Object.assign(function(e) {
       children: (0, r.jsx)($, {
         widget: a,
         children: (0, r.jsx)(M, {
-          component: V
+          component: q
         })
       })
     }), m && (0, r.jsxs)("div", {
