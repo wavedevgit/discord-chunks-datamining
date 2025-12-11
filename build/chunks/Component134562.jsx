@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk308569 = require("./308569.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36884 = require("./36884.js"),
-  Chunk75277 = require("./75277.js");
+  Chunk73377 = require("./73377.js");
 
 function c(t) {
   let {
@@ -20,7 +20,7 @@ function c(t) {
   return (0, a.jsxs)(r.Ioy, {
     graphic: {
       type: "image",
-      src: o
+      src: o.Z
     },
     title: l.intl.string(l.t.hhR7gX),
     onClose: e,
