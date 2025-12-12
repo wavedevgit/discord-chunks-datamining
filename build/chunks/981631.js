@@ -1705,7 +1705,7 @@ let tU = {
     APPEARANCE_THEME_PICKER: "Appearance Theme Picker",
     ACCESSIBILITY: "Accessibility",
     OVERLAY: "Overlay",
-    LOCALE: "Language",
+    LANGUAGE: "Language",
     STREAMER_MODE: "Streamer Mode",
     SUBSCRIPTIONS: "Subscriptions",
     PREMIUM: "Discord Nitro",

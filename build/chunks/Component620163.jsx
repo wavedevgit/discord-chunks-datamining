@@ -1446,7 +1446,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         url: eR.Z5c.SETTINGS("keybinds")
       },
       [eN.s6.LANGUAGE]: {
-        section: eR.oAB.LOCALE,
+        section: eR.oAB.LANGUAGE,
         searchableTitles: [eD.intl.string(eD.t.IHMsPn), eD.intl.string(eD.t.dyamEI), eD.intl.string(eD.t.p8NOwi), eD.intl.string(eD.t["+o/sOo"])],
         label: eD.intl.string(eD.t.KyFVyi),
         element: ef.Z,

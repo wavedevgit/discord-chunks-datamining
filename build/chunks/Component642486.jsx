@@ -47,7 +47,7 @@ function h() {
     b = Chunk473749.useCallback(e => {
       h(e), m.nextTick(() => {
         l.ZP.updateLocale(e), (0, s.Mr3)(d.USER_SETTINGS_MODAL_KEY) && (0, d.openUserSettings)(u.n.LANGUAGE_AND_TIME_PANEL, {
-          section: f.oAB.LOCALE
+          section: f.oAB.LANGUAGE
         })
       })
     }, []);

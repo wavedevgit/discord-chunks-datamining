@@ -157,7 +157,7 @@ function I() {
       [Chunk981631.oAB.TEXT, Chunk313789.n.CHAT_PANEL],
       [Chunk981631.oAB.NOTIFICATIONS, module ? Chunk313789.n.NOTIFICATIONS_PANEL : Chunk313789.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL],
       [Chunk981631.oAB.KEYBINDS, Chunk313789.n.KEYBINDS_PANEL],
-      [Chunk981631.oAB.LOCALE, Chunk313789.n.LANGUAGE_AND_TIME_PANEL],
+      [Chunk981631.oAB.LANGUAGE, Chunk313789.n.LANGUAGE_AND_TIME_PANEL],
       [Chunk981631.oAB.WINDOWS, Chunk313789.n.WINDOWS_PANEL],
       [Chunk981631.oAB.LINUX, Chunk313789.n.LINUX_PANEL],
       [Chunk981631.oAB.STREAMER_MODE, Chunk313789.n.STREAMER_MODE_PANEL],
@@ -199,12 +199,14 @@ function C(e) {
   if ((0, f.yP)("renderUserSettingsRedirector")) {
     let e = I(),
       r = e.get(t.section);
-    if (null == r) S({
-      section: t.section,
-      subsection: t.subsection,
-      urlOrigin: n
-    }), i();
-    else {
+    if (null == r) {
+      S({
+        section: t.section,
+        subsection: t.subsection,
+        urlOrigin: n
+      }), O();
+      return
+    } {
       let n = null != t.subsection && "" !== t.subsection ? e.get(p.oAB[t.subsection]) : null;
       O(null != n ? n : r, {
         section: t.section,
