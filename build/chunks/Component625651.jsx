@@ -1,21 +1,16 @@
 /** Chunk was on 31924 **/
 /** chunk id: 625651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => y,
-  f: () => h
+  default: () => I,
+  f: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk494497 = require("./494497.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk14263 = require("./14263.js"),
-  Chunk650774 = require("./650774.js"),
-  Chunk485386 = require("./485386.js"),
-  Chunk430824 = require("./430824.js"),
   Chunk870246 = require("./870246.js"),
-  Chunk158638 = require("./158638.js"),
+  Chunk268574 = require("./268574.js"),
   Chunk448222 = require("./448222.js"),
   Chunk795338 = require("./795338.jsx"),
   Chunk17622 = require("./17622.jsx"),
@@ -24,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk259819 = require("./259819.js");
 
-function j(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +38,7 @@ function j(e) {
   return e
 }
 
-function T(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, a = function(e, t) {
     if (null == e) return {};
@@ -59,60 +54,60 @@ function T(e, t) {
   return a
 }
 
-function h(e) {
+function x(e) {
   var t, n, {
       size: o,
-      title: c,
+      title: l,
       body: s,
       warningText: u,
       acknowledgementText: d,
       error: b,
       isLoading: f,
-      onDeactivate: m
+      onDeactivate: x
     } = e,
-    p = T(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]);
-  let [k, g] = a.useState(false);
-  return (0, r.jsxs)(i.Modal, (t = j({}, p), n = n = {
+    I = v(e, ["size", "title", "body", "warningText", "acknowledgementText", "error", "isLoading", "onDeactivate"]);
+  let [O, j] = a.useState(false);
+  return (0, r.jsxs)(i.Modal, (t = g({}, I), n = n = {
     size: o,
-    title: O.intl.formatToPlainString(v.default.iEBw1M, {
-      perk: c
+    title: p.intl.formatToPlainString(m.default.iEBw1M, {
+      perk: l
     }),
-    subtitle: O.intl.formatToPlainString(v.default["7o0K+2"], {
-      perk: c
+    subtitle: p.intl.formatToPlainString(m.default["7o0K+2"], {
+      perk: l
     }),
     actions: [{
       variant: "secondary",
-      text: O.intl.string(O.t["ETE/oC"]),
-      onClick: p.onClose
+      text: p.intl.string(p.t["ETE/oC"]),
+      onClick: I.onClose
     }, {
       variant: "critical-primary",
-      text: O.intl.string(v.default.PYPdl4),
+      text: p.intl.string(m.default.PYPdl4),
       loading: f,
-      onClick: m,
-      disabled: null != d && !k
+      onClick: x,
+      disabled: null != d && !O
     }],
     children: [s, (0, r.jsxs)("div", {
-      className: I.warningContainer,
+      className: k.warningContainer,
       children: [(0, r.jsx)(i.xvT, {
         color: "text-feedback-critical",
         variant: "eyebrow",
-        children: O.intl.string(v.default.OVt5CC)
+        children: p.intl.string(m.default.OVt5CC)
       }), (0, r.jsx)(i.xvT, {
-        className: I.warningText,
+        className: k.warningText,
         tag: "span",
         variant: "text-sm/medium",
         children: u
       })]
     }), null != b && (0, r.jsx)(i.xvT, {
-      className: I.errorText,
+      className: k.errorText,
       color: "text-feedback-critical",
       variant: "text-sm/semibold",
       children: b
     }), null != d && (0, r.jsx)("div", {
-      className: I.acknowledgementContainer,
-      children: (0, r.jsx)(l.Checkbox, {
-        checked: k,
-        onChange: g,
+      className: k.acknowledgementContainer,
+      children: (0, r.jsx)(c.Checkbox, {
+        checked: O,
+        onChange: j,
         label: d,
         labelType: "secondary"
       })
@@ -129,93 +124,57 @@ function h(e) {
   }), t))
 }
 
-function y(e) {
+function I(e) {
   var {
     guildId: t,
     powerup: n
-  } = e, l = T(e, ["guildId", "powerup"]);
+  } = e, c = v(e, ["guildId", "powerup"]);
   let {
-    onDeactivate: y,
-    error: w,
-    isLoading: C
-  } = (0, p.Z)(t, n), {
-    onClose: E
-  } = l, S = a.useCallback(e => {
-    e.stopPropagation(), y().then(() => {
-      null == E || E()
+    onDeactivate: m,
+    error: p,
+    isLoading: I
+  } = (0, u.Z)(t, n), {
+    onClose: O
+  } = c, j = a.useCallback(e => {
+    e.stopPropagation(), m().then(() => {
+      null == O || O()
     })
-  }, [E, y]), N = function(e, t) {
-    let n = (0, c.e7)([u.Z], () => u.Z.getMemberCount(e)),
-      l = (0, s.Z)(e),
-      f = (0, c.e7)([b.Z], () => {
-        var t;
-        return (null == (t = b.Z.getGuild(e)) ? true : t.vanityURLCode) != null
-      }),
-      p = (0, m.g1)(e, "Powerup Deactivate Modal"),
-      k = (0, c.e7)([d.Z], () => t.skuId !== o.If || null == l ? 0 : d.Z.getSortedRoles(e).reduce((e, t) => {
-        var n, r;
-        return (null == (n = t.colorStrings) ? true : n.secondaryColor) == null ? e : e + (null != (r = l[t.id]) ? r : 0)
-      }, 0), [e, t.skuId, l]);
-    return a.useMemo(() => {
-      let e;
-      switch (t.skuId) {
-        case o.If:
-          e = k > 0 ? O.intl.formatToPlainString(v.default["4jSvr1"], {
-            perk: t.title,
-            memberCount: k
-          }) : O.intl.formatToPlainString(v.default.cavtEo, {
-            perk: t.title
-          });
-          break;
-        case o.A$:
-          e = f ? (0, r.jsx)(i.xvT, {
-            color: "text-feedback-critical",
-            variant: "text-sm/semibold",
-            children: O.intl.string(v.default.hN75yb)
-          }) : (0, r.jsx)(i.xvT, {
-            color: "text-feedback-critical",
-            variant: "text-sm/semibold",
-            children: O.intl.string(v.default.Du91Rb)
-          });
-          break;
-        case o.MB:
-        case o.Vk:
-          e = O.intl.string(v.default.Vf2ZcR);
-          break;
-        default:
-          e = O.intl.formatToPlainString(v.default["4jSvr1"], {
-            perk: t.title,
-            memberCount: null != n ? n : 0
-          })
-      }
-      return f && t.skuId === o.XW && (e = (0, r.jsxs)(r.Fragment, {
-        children: [e, (0, r.jsx)(i.xvT, {
-          color: "text-feedback-critical",
-          variant: "text-sm/semibold",
-          children: p ? O.intl.string(v.default.TkNA7b) : O.intl.string(v.default.M4XL5n)
-        })]
-      })), e
-    }, [t, k, n, f, p])
+  }, [O, m]), T = function(e, t) {
+    let {
+      warningText: n,
+      vanityUrlWarning: c
+    } = (0, s.Z)(e, t);
+    return a.useMemo(() => t.skuId === o.A$ ? (0, r.jsx)(i.xvT, {
+      color: "text-feedback-critical",
+      variant: "text-sm/semibold",
+      children: n
+    }) : null != c ? (0, r.jsxs)(r.Fragment, {
+      children: [n, (0, r.jsx)(i.xvT, {
+        color: "text-feedback-critical",
+        variant: "text-sm/semibold",
+        children: c
+      })]
+    }) : n, [t.skuId, n, c])
   }(t, n);
-  return (0, f.$)(t, n, f.w.DEACTIVATE), (0, r.jsx)(h, j({
-    size: n.type === x.Us.LEVEL ? "md" : "sm",
+  return (0, l.$)(t, n, l.w.DEACTIVATE), (0, r.jsx)(x, g({
+    size: n.type === f.Us.LEVEL ? "md" : "sm",
     title: n.title,
     body: (() => {
       switch (n.type) {
-        case x.Us.LEVEL:
-          return (0, r.jsx)(g.Z, {
+        case f.Us.LEVEL:
+          return (0, r.jsx)(b.Z, {
             powerup: n
           });
-        case x.Us.PERK:
-          return (0, r.jsx)(k.m, {
-            className: I.image,
+        case f.Us.PERK:
+          return (0, r.jsx)(d.m, {
+            className: k.image,
             powerup: n
           })
       }
     })(),
-    warningText: N,
-    error: w,
-    isLoading: C,
-    onDeactivate: S
-  }, l))
+    warningText: T,
+    error: p,
+    isLoading: I,
+    onDeactivate: j
+  }, c))
 }

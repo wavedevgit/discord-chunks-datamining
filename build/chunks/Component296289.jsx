@@ -31,7 +31,7 @@ function d(e) {
     }
     return a
   }(e, ["guildId", "gameInstance"]);
-  let [b, f] = a.useState(false), [m, p] = a.useState(true), g = (0, c.Z)(n.gameId, "cover");
+  let [f, b] = a.useState(false), [m, p] = a.useState(true), g = (0, c.Z)(n.gameId, "cover");
   return (0, r.jsx)(o.f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -62,16 +62,16 @@ function d(e) {
     }),
     warningText: s.intl.string(l.default.ukbS3E),
     acknowledgementText: s.intl.string(l.default.xjRtF9),
-    isLoading: b,
+    isLoading: f,
     error: m,
     onDeactivate: () => {
-      p(true), f(true), (0, i.s9)(t, n.planId, n.entitlementId).then(() => {
+      p(true), b(true), (0, i.s9)(t, n.planId, n.entitlementId).then(() => {
         d.onClose()
       }).catch(e => {
         var t;
         p(null != (t = e.body.message) ? t : e.message)
       }).finally(() => {
-        f(false)
+        b(false)
       })
     }
   }, d))
