@@ -43,9 +43,9 @@ function C(e) {
     notificationConfig: E
   } = (0, g._)(t, "GuildPowerupNotificationContainer"), P = [];
   I && P.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
-  let [T, y] = (0, s.ZT)(P, t), N = null != T && null != E, O = [];
-  N || w || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
-  let [S, A] = (0, s.US)(O), k = (e => {
+  let [T, N] = (0, s.ZT)(P, t), y = null != T && null != E, O = [];
+  y || w || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
+  let [S, A] = (0, s.US)(O), L = (e => {
     let n = [];
     if (w) {
       let e = C.some(e => e.skuId === i.A$),
@@ -57,21 +57,21 @@ function C(e) {
         warnings: o
       }, "expiring-powerups"))
     }
-    return N && n.push((0, r.jsx)(p.Z, {
+    return y && n.push((0, r.jsx)(p.Z, {
       notificationConfig: E,
       markAsDismissed: e => {
-        y(e)
+        N(e)
       }
     }, "rollback-notification")), null != e && e === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(f.Z, {
       markAsDismissed: A
     }, "info-card")), n
   })(S);
-  return 0 !== k.length || n ? (0, r.jsxs)("div", {
+  return 0 !== L.length || n ? (0, r.jsxs)("div", {
     className: j.container,
     children: [(0, r.jsx)(l.xvT, {
       variant: "eyebrow",
       color: "text-subtle",
       children: h.intl.string(b.default["3FRirU"])
-    }), n && (0, r.jsx)(_, {}), k.map(e => e)]
+    }), n && (0, r.jsx)(_, {}), L.map(e => e)]
   }) : null
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 877362, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -30,24 +30,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk350618 = require("./350618.js");
 let T = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk99690.Z;
 
-function y(e) {
+function N(e) {
   var t, n;
   let {
     guildId: i
   } = e, u = (0, a.e7)([h.Z], () => h.Z.getGuild(i)), C = (0, a.e7)([b.Z], () => b.Z.getSortedRoles(i).find(e => {
     var t;
     return (null == (t = e.tags) ? true : t.premium_subscriber) === null
-  })), y = (0, a.e7)([j.default], () => j.default.getCurrentUser()), N = null == y ? true : y.id, O = (0, a.e7)([x.ZP], () => null != N ? x.ZP.getMember(i, N) : true, [N, i]), S = (null == O ? true : O.premiumSince) != null, A = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), {
-    avatarDecorationSrc: k,
+  })), N = (0, a.e7)([j.default], () => j.default.getCurrentUser()), y = null == N ? true : N.id, O = (0, a.e7)([x.ZP], () => null != y ? x.ZP.getMember(i, y) : true, [y, i]), S = (null == O ? true : O.premiumSince) != null, A = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), {
+    avatarDecorationSrc: L,
     avatarSrc: R,
-    eventHandlers: L
+    eventHandlers: k
   } = (0, v.Z)({
-    userId: null == y ? true : y.id,
+    userId: null == N ? true : N.id,
     guildId: i,
     size: c.EFr.SIZE_40,
     animateOnHover: !A
   });
-  return null == u || null == O || null == y ? null : (0, r.jsxs)(c.$1m, {
+  return null == u || null == O || null == N ? null : (0, r.jsxs)(c.$1m, {
     className: E.container,
     children: [(0, r.jsx)("img", {
       alt: "",
@@ -90,10 +90,10 @@ function y(e) {
           })
         }
         return e
-      }({}, L), n = n = {
-        user: y,
+      }({}, k), n = n = {
+        user: N,
         src: R,
-        avatarDecoration: k,
+        avatarDecoration: L,
         size: c.EFr.SIZE_40,
         "aria-hidden": true,
         animate: true
@@ -109,7 +109,7 @@ function y(e) {
       }), t)),
       username: (0, r.jsx)(c.PUh, {
         variant: "text-md/semibold",
-        name: _.ZP.getName(i, null, y),
+        name: _.ZP.getName(i, null, N),
         colorString: C.colorString,
         colorStrings: C.colorStrings
       }),

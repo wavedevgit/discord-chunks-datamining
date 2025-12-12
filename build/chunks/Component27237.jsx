@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 27237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => I
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -30,7 +30,7 @@ function Z(e) {
     nextActive: i,
     position: l
   } = e;
-  return t = n && false !== i ? "full" : n && false === i ? "half" : "none", (0, r.jsxs)("div", {
+  return t = n && false !== i ? v.vW.FULL : n && false === i ? v.vW.HALF : v.vW.NONE, (0, r.jsxs)("div", {
     className: C.progressContainer,
     children: [(0, r.jsx)("div", {
       className: o()(C.progress, C[l], C[t])
@@ -88,41 +88,47 @@ function w(e) {
 }
 
 function I(e) {
+  let t, {
+      guildId: n,
+      index: l,
+      powerup: o,
+      nextPowerup: a
+    } = e,
+    s = (0, d.ZP)(n, o),
+    c = (0, d.ZP)(n, a),
+    x = s.type !== v.A3.INACTIVE,
+    b = c.type !== v.A3.INACTIVE,
+    h = s.type === v.A3.TIER_OVERRIDE_ACTIVATED,
+    [j, _] = i.useState(true);
+  (0, u.KT)(j), t = 0 === l ? v.m.START : null == a ? v.m.END : v.m.MIDDLE;
   let {
-    guildId: t,
-    index: n,
-    powerup: l,
-    nextPowerup: o
-  } = e, a = (0, d.ZP)(t, l), s = (0, d.ZP)(t, o), c = a.type !== v.A3.INACTIVE, x = s.type !== v.A3.INACTIVE, b = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [h, j] = i.useState(true);
-  (0, u.KT)(h);
-  let {
-    textColor: _
-  } = (0, g.Z)(c);
+    textColor: I
+  } = (0, g.Z)(x);
   return (0, r.jsxs)(m.Z, {
-    guildId: t,
-    powerup: l,
+    guildId: n,
+    powerup: o,
     className: C.card,
     children: [(0, r.jsx)(Z, {
-      position: 0 === n ? "start" : null == o ? "end" : "middle",
-      active: c,
-      nextActive: null != o ? x : true
+      position: t,
+      active: x,
+      nextActive: null != a ? b : true
     }), (0, r.jsx)(f.Q9, {
-      title: l.title,
-      textColor: _,
-      footer: !b && (0, r.jsx)(m.g, {
+      title: o.title,
+      textColor: I,
+      footer: !h && (0, r.jsx)(m.g, {
         className: C.footer,
-        guildId: t,
-        powerup: l
+        guildId: n,
+        powerup: o
       }),
       children: (0, r.jsx)(w, {
-        isActive: c,
-        index: n
+        isActive: x,
+        index: l
       })
-    }), !b && (0, r.jsx)(f.N4, {
+    }), !h && (0, r.jsx)(f.N4, {
       children: (0, r.jsx)(p.ZP, {
-        guildId: t,
-        powerup: l,
-        onError: j
+        guildId: n,
+        powerup: o,
+        onError: _
       })
     })]
   })
