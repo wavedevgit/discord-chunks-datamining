@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 61440, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  F: () => d
+  F: () => T
 });
 var Chunk442837 = require("./442837.js"),
   Chunk857595 = require("./857595.js"),
@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk324243 = require("./324243.js");
-let d = (0, Chunk509613.qs)(Chunk313789.n.DISPLAY_NAME_STYLES, {
+let T = (0, Chunk509613.qs)(Chunk313789.n.DISPLAY_NAME_STYLES, {
   useTitle: () => Chunk388032.intl.string(Chunk324243.default["2gFUEw"]),
   useSubtitle: () => {
     let {

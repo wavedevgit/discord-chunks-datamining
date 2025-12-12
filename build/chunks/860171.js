@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 860171, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  g: () => d
+  g: () => T
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -16,13 +16,13 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk889029.Z,
     buildLayout: () => []
   }),
-  T = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
+  d = (0, Chunk509613.wf)(Chunk313789.n.STREAMER_MODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
     buildLayout: () => [Chunk290434.R]
   }),
-  d = (0, Chunk509613.m7)(Chunk313789.n.STREAMER_MODE_SIDEBAR_ITEM, {
+  T = (0, Chunk509613.m7)(Chunk313789.n.STREAMER_MODE_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.S5GfOW),
     icon: Chunk657707.m3e,
     getLegacySearchKey: () => (0, Chunk526665.Ml)("StreamerModePanel") ? true : Chunk726985.s6.STREAMER_MODE,
-    buildLayout: () => [(0, Chunk526665.Ml)("StreamerModePanel") ? T : S]
+    buildLayout: () => [(0, Chunk526665.Ml)("StreamerModePanel") ? d : S]
   })

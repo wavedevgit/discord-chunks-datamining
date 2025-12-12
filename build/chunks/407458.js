@@ -1,8 +1,8 @@
 /** Chunk was on 77069 **/
 /** chunk id: 407458, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  WY: () => T,
-  j$: () => d
+  WY: () => d,
+  j$: () => T
 }), require("./539854.js");
 var Chunk442837 = require("./442837.js"),
   Chunk292556 = require("./292556.js"),
@@ -16,14 +16,14 @@ let S = (0, Chunk972959.H)(() => ({
   currentPlayingSound: null
 }));
 
-function T() {
+function d() {
   let t = S.getField("currentPlayingSound");
   null == module || module.stop(), S.setState({
     currentPlayingSound: null
   })
 }
 
-function d(t) {
+function T(t) {
   return (0, u.qs)("".concat(o.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
     useTitle: t.useTitle,
     useSubtitle: () => c.intl.format(c.t.OOiGCM, {

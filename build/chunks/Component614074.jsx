@@ -35,7 +35,7 @@ let S = () => {
         case Chunk5900._n.ZERO_TRUST:
           return Chunk388032.intl.string(Chunk498264.default["7zgDRR"]);
         case Chunk5900._n.INSTALLED:
-          return (0, Chunk54381.jsx)(T, {})
+          return (0, Chunk54381.jsx)(d, {})
       }
     }, [module, exports]);
     return (0, Chunk54381.jsx)(Chunk793030.X6q, {
@@ -43,7 +43,7 @@ let S = () => {
       children: require
     })
   },
-  T = () => {
+  d = () => {
     switch ((0, Chunk773275.xf)(t => t.connectionStatus)) {
       case Chunk5900.Ij.INITIALIZING:
         return (0, Chunk54381.jsxs)("span", {
