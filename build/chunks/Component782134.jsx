@@ -87,13 +87,13 @@ let E = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
         label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
         description: _,
         layout: "vertical",
-        children: e => t ? (0, i.jsx)(T.NP, {
+        children: e => t ? (0, i.jsx)(S.NP, {
           isSpeaking: c,
           className: g.autoThresholdSlider,
           id: e.controlId,
           ariaDescribedBy: e.describedById,
           ariaLabelledBy: e.labelId
-        }) : (0, i.jsx)(T.t8, {
+        }) : (0, i.jsx)(S.t8, {
           volume: a,
           id: e.controlId,
           ariaDescribedBy: e.describedById,

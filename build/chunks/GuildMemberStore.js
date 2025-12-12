@@ -368,7 +368,7 @@ function el(e) {
     unusualDMActivityUntil: t.unusual_dm_activity_until,
     flags: t.flags,
     fullProfileLoadedTimestamp: Date.now(),
-    collectibles: (0, f.Xm)(t.collectibles),
+    collectibles: (0, f.X)(t.collectibles),
     displayNameStyles: (0, _.bN)(t.display_name_styles)
   }), B(n, r[t.user.id])
 }
@@ -444,7 +444,7 @@ function em(e, t) {
       flags: t.flags,
       fullProfileLoadedTimestamp: null == a ? true : a.fullProfileLoadedTimestamp,
       unusualDMActivityUntil: null != (i = t.unusual_dm_activity_until) ? i : null == a ? true : a.unusualDMActivityUntil,
-      collectibles: (0, f.Xm)(t.collectibles),
+      collectibles: (0, f.X)(t.collectibles),
       displayNameStyles: (0, _.bN)(t.display_name_styles)
     }), B(e, n[t.user.id])
   }), U++, true)
@@ -528,7 +528,7 @@ function eS(e) {
         fullProfileLoadedTimestamp: null == s ? true : s.fullProfileLoadedTimestamp,
         flags: a.flags,
         unusualDMActivityUntil: null != (i = a.unusual_dm_activity_until) ? i : null == s ? true : s.unusualDMActivityUntil,
-        collectibles: (0, f.Xm)(a.collectibles),
+        collectibles: (0, f.X)(a.collectibles),
         displayNameStyles: (0, _.bN)(a.display_name_styles)
       });
     r[o] = l, B(t, l)

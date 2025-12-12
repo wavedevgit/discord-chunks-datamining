@@ -74,7 +74,7 @@ let C = e => {
       onMouseEnter: s,
       onMouseLeave: l,
       children: (0, r.jsx)(_.Z, {
-        nameplate: (0, b.EU)(t),
+        nameplate: (0, b.E)(t),
         hovered: a,
         placement: p.i.MINI_PREVIEW
       })

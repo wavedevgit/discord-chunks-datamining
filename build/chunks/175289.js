@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 175289, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  y: () => S
+  y: () => d
 });
 var Chunk509613 = require("./509613.js"),
   Chunk63063 = require("./63063.js"),
@@ -13,7 +13,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk1921 = require("./1921.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.k4)(Chunk313789.n.MOTION_CATEGORY, {
+let d = (0, Chunk509613.k4)(Chunk313789.n.MOTION_CATEGORY, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.e3TR1b),
   useSubtitle: () => Chunk388032.intl.format(Chunk388032.t["2l9U2j"], {
     helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REDUCED_MOTION)

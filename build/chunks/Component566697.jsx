@@ -56,7 +56,7 @@ let N = {
       isPurchased: Z = false,
       skipEffectDisplayName: F = false,
       width: B
-    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != a ? (0, p.EU)(a) : P, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), Q = null != t ? (0, b.Ly)({
+    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != a ? (0, p.E)(a) : P, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), Q = null != t ? (0, b.Ly)({
       pendingNickname: M,
       pendingGlobalName: j,
       user: t,

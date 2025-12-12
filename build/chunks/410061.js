@@ -95,12 +95,11 @@ let d = (e, t) => {
         } = e;
         return g.current.has(t)
       })) && r;
-      o(i), n.current = 0, i || null == e || e.config.effects.forEach(e => {
-        let {
-          src: t
-        } = e;
-        h.current.has(t) || h.current.set(t, 0)
-      })
+      if (o(i), n.current = 0, !i && null != e)
+        for (let {
+            src: t
+          }
+          of e.config.effects) h.current.has(t) || h.current.set(t, 0)
     }
   }, [e, t]), r.useEffect(() => {
     if (null == e || 0 === e.config.effects.length || false === _ || 0 !== n.current) return;

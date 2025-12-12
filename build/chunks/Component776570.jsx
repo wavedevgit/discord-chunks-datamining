@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk97951 = require("./97951.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function S() {
+function d() {
   return (0, Chunk54381.jsx)(Chunk825655.Z, {
     sourcePage: "voice"
   })
@@ -25,7 +25,7 @@ let g = (0, Chunk509613.k4)(Chunk313789.n.VOICE_CATEGORY, {
     let t = (0, Chunk825655.o)("voice");
     return Chunk473749.useMemo(() => module.canPrompt ? {
       type: Chunk970013.v.STRONGLY_DISCOURAGED_CUSTOM,
-      notice: S
+      notice: d
     } : null, [module.canPrompt])
   },
   buildLayout: () => [Chunk665388.J, Chunk589741.d, Chunk97951.F]

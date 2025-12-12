@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 513696, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  g: () => S
+  g: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,12 +12,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk242379 = require("./242379.js");
-let d = (0, Chunk509613.wf)(Chunk313789.n.POGGERMODE_PANEL, {
+let T = (0, Chunk509613.wf)(Chunk313789.n.POGGERMODE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
     StronglyDiscouragedCustomComponent: Chunk231765.Z,
     buildLayout: () => []
   }),
-  S = (0, Chunk509613.m7)(Chunk313789.n.POGGERMODE_SIDEBAR_ITEM, {
+  d = (0, Chunk509613.m7)(Chunk313789.n.POGGERMODE_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
     getLegacySearchKey: () => Chunk726985.s6.POGGERMODE,
     icon: () => (0, Chunk54381.jsx)("img", {
@@ -26,5 +26,5 @@ let d = (0, Chunk509613.wf)(Chunk313789.n.POGGERMODE_PANEL, {
       className: Chunk242379.poggermodeIcon
     }),
     usePredicate: () => (0, Chunk442837.e7)([Chunk351780.Z], () => Chunk351780.Z.settingsVisible),
-    buildLayout: () => [d]
+    buildLayout: () => [T]
   })

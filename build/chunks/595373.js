@@ -39,7 +39,7 @@ let I = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_SETTING, {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk65154.pM.PUSH_TO_TALK)
   },
   setValue: function(t) {
-    (0, c.XH)(t ? S.pM.PUSH_TO_TALK : S.pM.VOICE_ACTIVITY, [u.Z.USER_SETTINGS_VOICE_AND_VIDEO])
+    (0, c.XH)(t ? d.pM.PUSH_TO_TALK : d.pM.VOICE_ACTIVITY, [u.Z.USER_SETTINGS_VOICE_AND_VIDEO])
   },
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)]
 })
