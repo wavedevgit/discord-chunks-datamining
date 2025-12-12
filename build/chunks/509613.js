@@ -81,12 +81,12 @@ function c(e, t) {
 }
 
 function u(e) {
-  return "function" == typeof(null == e ? true : e.buildLayout)
+  return "buildLayout" in e && "function" == typeof e.buildLayout
 }
 
 function d(e) {
   if (u(e)) {
-    let t = e.buildLayout().map(e => d(e)),
+    let t = e.buildLayout().map(d),
       {
         buildLayout: n
       } = e,

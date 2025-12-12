@@ -228,7 +228,7 @@ function P(e) {
       var n;
       F((null == (n = e.body) ? true : n.message) || e.message || "Failed to add user to group")
     }
-  }, Q = async () => {
+  }, Y = async () => {
     try {
       await d.tn.del({
         url: "/debug/subscriptions/".concat(w.id, "/members/").concat(G),
@@ -238,7 +238,7 @@ function P(e) {
       var e;
       F((null == (e = t.body) ? true : e.message) || t.message || "Failed to remove user from group")
     }
-  }, Y = (null == (t = y.GP[w.planIdFromItems]) ? true : t.premiumType) === y.PremiumTypes.TIER_0, X = null == (n = w.metadata) ? true : n.ended_at, J = null != X ? new Date(X).toISOString().substring(0, 10) : "", $ = [{
+  }, Q = (null == (t = y.GP[w.planIdFromItems]) ? true : t.premiumType) === y.PremiumTypes.TIER_0, X = null == (n = w.metadata) ? true : n.ended_at, J = null != X ? new Date(X).toISOString().substring(0, 10) : "", $ = [{
     id: "id",
     label: "ID: ".concat(w.id),
     isDisabled: false
@@ -264,7 +264,7 @@ function P(e) {
     label: "Pause Reason: ".concat(w.pauseReason in O ? O[w.pauseReason] : "Unknown pause reason ".concat(w.pauseReason)),
     isDisabled: false
   }), (0, a.jsx)("div", {
-    className: l()(C.card, Y ? C.gradientWrapperTier0 : C.gradientWrapperTier2),
+    className: l()(C.card, Q ? C.gradientWrapperTier0 : C.gradientWrapperTier2),
     children: (0, a.jsxs)(m.C3N, {
       label: "Type: ".concat((() => {
         let e = w.planIdFromItems;
@@ -465,7 +465,7 @@ function P(e) {
                 variant: "secondary",
                 size: "sm",
                 text: "Remove",
-                onClick: () => Q(),
+                onClick: () => Y(),
                 disabled: "" === G
               })]
             })]

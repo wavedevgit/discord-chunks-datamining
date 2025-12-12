@@ -184,7 +184,7 @@ function tf(e) {
     transitionAccountPanel: b,
     avatarDecoration: v,
     "data-jump-section": j
-  } = e, C = r.useRef(null), _ = null != t ? t : C, S = (0, eY.NZ)({
+  } = e, C = r.useRef(null), _ = null != t ? t : C, S = (0, eQ.NZ)({
     avatarDecoration: v,
     size: (0, I.y9)(x.EFr.SIZE_32)
   }), E = (0, q.Z)(), {
@@ -441,7 +441,7 @@ class tx extends Chunk473749.PureComponent {
                 })
               });
             case u.z.DISPLAY_NAME_STYLES_COACHMARK:
-              return (0, a.jsx)(Q.e, {
+              return (0, a.jsx)(Y.e, {
                 markAsDismissed: r,
                 targetElementRef: this.avatarWithPopoutRef,
                 children: this.renderAvatarWithPopout({
@@ -620,7 +620,7 @@ class tx extends Chunk473749.PureComponent {
       (0, eX.JG)(e8.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eQ.default.track(tn.rMx.TEXT_COPIED, {
+      })), eY.default.track(tn.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let a = {
@@ -675,7 +675,7 @@ class tx extends Chunk473749.PureComponent {
             className: l()({
               [ts.withDisplayNameStyles]: null != e
             }),
-            children: (0, a.jsx)(Y.Z, {
+            children: (0, a.jsx)(Q.Z, {
               userName: n,
               displayNameStyles: e,
               effectDisplayType: this.state.hovered ? K.F.ANIMATED : K.F.STATIC,
@@ -853,11 +853,11 @@ function tv() {
     q = Chunk5192.ZP.useName(null != Chunk522651 ? Chunk522651 : true, null, exports),
     K = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
     {
-      voiceActivityStatusEnabled: Q
+      voiceActivityStatusEnabled: Y
     } = (0, Chunk468363.U)({
       location: "Account"
     }),
-    [Y, J] = (0, Chunk291533.G)(null != Chunk522651 ? Chunk522651 : null),
+    [Q, J] = (0, Chunk291533.G)(null != Chunk522651 ? Chunk522651 : null),
     [ee, et] = (0, Chunk812055.b)(),
     en = Chunk594928.JH.useExperiment({
       location: "Account"
@@ -1083,10 +1083,10 @@ function ty(e) {
   }) : z;
   let {
     analyticsLocations: K
-  } = (0, N.ZP)(T.Z.AUDIO_INPUT_BUTTON), Q = (0, eS.Hu)({
+  } = (0, N.ZP)(T.Z.AUDIO_INPUT_BUTTON), Y = (0, eS.Hu)({
     location: T.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
-  }), Y = (0, eE.av)({
+  }), Q = (0, eE.av)({
     location: T.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   });
@@ -1276,14 +1276,14 @@ function ty(e) {
         onContextMenu: X,
         role: "switch",
         className: l()({
-          [ts.micButtonWithMenu]: Q
+          [ts.micButtonWithMenu]: Y
         }),
         orangeGlow: R,
         redGlow: S,
         "aria-label": tl.intl.string(tl.t.w4m945),
         "aria-checked": S,
         disabled: o
-      }), Q && (0, a.jsx)(x.yRy, {
+      }), Y && (0, a.jsx)(x.yRy, {
         targetElementRef: j,
         position: "top",
         align: "left",
@@ -1324,7 +1324,7 @@ function ty(e) {
           } = t;
           let l = i ? x.u04 : x.CJ0,
             s = [];
-          return !i && (es && s.push(u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK), s.push(u.z.VOICE_FILTER_LAUNCH_COACHMARK), Y && U && !A && s.push(u.z.VOICE_FILTER_FIRST_USE_COACHMARK)), (0, a.jsx)("div", {
+          return !i && (es && s.push(u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK), s.push(u.z.VOICE_FILTER_LAUNCH_COACHMARK), Q && U && !A && s.push(u.z.VOICE_FILTER_FIRST_USE_COACHMARK)), (0, a.jsx)("div", {
             children: (0, a.jsx)(W.ZP, {
               bypassAutoDismiss: true,
               contentTypes: s,

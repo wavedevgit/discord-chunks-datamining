@@ -128,7 +128,7 @@ function M(e) {
     onCtxMenuOpen: G,
     onCtxMenuSelect: V,
     sourceQuestContent: H
-  } = e, W = (0, C.PB)(S), z = (0, p.ZP)(), q = ((0, d.wj)(z) ? R.BRd.DARK : R.BRd.LIGHT) === R.BRd.DARK, K = (0, j.tP)(S), Q = (null == (t = S.userStatus) ? true : t.claimedAt) != null, Y = (0, j.B6)(S.config.expiresAt, {
+  } = e, W = (0, C.PB)(S), z = (0, p.ZP)(), q = ((0, d.wj)(z) ? R.BRd.DARK : R.BRd.LIGHT) === R.BRd.DARK, K = (0, j.tP)(S), Y = (null == (t = S.userStatus) ? true : t.claimedAt) != null, Q = (0, j.B6)(S.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), X = (null == (n = S.userStatus) ? true : n.enrolledAt) != null, J = (null == (i = S.userStatus) ? true : i.completedAt) != null, {
@@ -292,11 +292,11 @@ function M(e) {
               color: "always-white",
               children: null != (m = null == (s = S.config.cosponsorMetadata) ? true : s.name) ? m : S.config.messages.gamePublisher
             })]
-          }), K || Q ? null : (0, a.jsx)(u.Text, {
+          }), K || Y ? null : (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: ee,
             children: A.intl.format(A.t["7D8r4F"], {
-              expiryDate: Y
+              expiryDate: Q
             })
           })]
         })]

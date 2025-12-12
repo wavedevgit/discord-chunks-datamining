@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 304083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Q
+  Z: () => Y
 }), require("./388685.js"), require("./953529.js"), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -274,7 +274,7 @@ function q(e) {
       sourceQuestContent: g.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: x.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [n]), Q = null != q ? q.percentComplete : i.percentComplete;
+  }, [n]), Y = null != q ? q.percentComplete : i.percentComplete;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
       className: l()(F.postEnrollmentBackground, F.postEnrollmentBackgroundCollapsed),
@@ -309,7 +309,7 @@ function q(e) {
         quest: n,
         progressBarRef: V,
         isExpanded: true,
-        percentComplete: Q,
+        percentComplete: Y,
         activeScreen: T,
         popoutTargetElementRef: H,
         onGameSheetOpened: v,
@@ -376,7 +376,7 @@ async function K(e, t, n, a) {
     sourceQuestContentCTA: n
   }))
 }
-let Q = Chunk473749.forwardRef(function(e, t) {
+let Y = Chunk473749.forwardRef(function(e, t) {
   var n;
   let {
     children: i,

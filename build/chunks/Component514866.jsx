@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,10 +20,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js"),
   Chunk134612 = require("./134612.js"),
+  Chunk407383 = require("./407383.js"),
   Chunk293717 = require("./293717.js"),
   Chunk478411 = require("./478411.js");
 
-function y() {
+function C() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     r = Chunk695346.Rt.useSetting();
@@ -39,7 +40,9 @@ function y() {
         variant: "primary",
         size: "sm",
         text: "Launch Vibing Wumpus",
-        onClick: () => (0, Chunk423932.Z)()
+        onClick: () => (0, Chunk423932.Z)({
+          source: Chunk407383.I.KEYBIND
+        })
       })
     }), (0, Chunk54381.jsx)("div", {
       className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),

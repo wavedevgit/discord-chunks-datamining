@@ -33,7 +33,7 @@ let E = t => {
       cta: t,
       isNudgeWarning: A
     })
-  }, [n, i, _, E, A]), m = r.useCallback(t => {
+  }, [n, i, _, E, A]), N = r.useCallback(t => {
     let {
       text: e,
       onClick: n
@@ -44,18 +44,18 @@ let E = t => {
       variant: "secondary",
       textVariant: "text-sm/normal"
     })
-  }, []), p = r.useCallback(() => {
+  }, []), m = r.useCallback(() => {
     switch (O) {
       case "SAFETY_TIPS":
       case "ABOUT_SAFETY_ALERTS":
-        return (0, s.jsx)(m, {
+        return (0, s.jsx)(N, {
           text: S.intl.string(S.t["13/7kX"]),
           onClick: () => h("ACTIONS")
         });
       default:
         return null
     }
-  }, [O, m]), N = r.useCallback(() => {
+  }, [O, N]), p = r.useCallback(() => {
     switch (O) {
       case "SAFETY_TIPS":
         return S.intl.string(S.t.EtNxi6);
@@ -80,7 +80,7 @@ let E = t => {
       justify: a.Z.Justify.CENTER,
       children: (0, s.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
-        children: N()
+        children: p()
       })
     }), (0, s.jsx)(l.Ttm, {
       children: (0, s.jsxs)(l.MyZ, {
@@ -111,12 +111,12 @@ let E = t => {
     }), (0, s.jsxs)(l.mzw, {
       "data-migration-pending": true,
       justify: a.Z.Justify.BETWEEN,
-      children: [(0, s.jsx)(m, {
+      children: [(0, s.jsx)(N, {
         text: S.intl.string(S.t.cpT0Cq),
         onClick: () => {
           e(), b(c.NM.USER_SAFETY_TOOLS_DISMISS)
         }
-      }), p()]
+      }), m()]
     })]
   })
 }

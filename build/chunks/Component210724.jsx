@@ -74,20 +74,20 @@ function B(e) {
   } = (0, O.qN)({
     quest: i,
     location: D.dr.QUESTS_BAR
-  }), H = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([f.Z], () => f.Z.hasLayers()), z = r.useRef(null), q = r.useMemo(() => (0, _.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(K), Y = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+  }), H = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([f.Z], () => f.Z.hasLayers()), z = r.useRef(null), q = r.useMemo(() => (0, _.q8)(i), [i]), K = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(K), Q = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: X,
     isLoading: J
   } = (0, S.kC)(), $ = r.useContext(R.T) || B && G && !J && !F, ee = r.useRef($), et = r.useRef(false), en = r.useRef(false), [ea, er] = r.useState(false), [ei, el] = r.useState(false), [es, eo] = r.useState(false), [ec, ed] = r.useState(true), [eu, em] = r.useState(true), ep = r.useRef(null), eh = r.useRef(null), ef = r.useRef(null), ex = (0, C.Rf)(i), eb = r.useCallback(e => {
-    Y || (ed(false), eo(e))
-  }, [Y]), eg = r.useCallback(() => {
+    Q || (ed(false), eo(e))
+  }, [Q]), eg = r.useCallback(() => {
     eb(true)
   }, [eb]), ev = r.useCallback(() => {
     er(true)
   }, []), ej = r.useCallback(() => {
-    er(false), en.current || Y || eb(false)
-  }, [Y, eb]), ey = r.useCallback(() => {
-    er(false), Y || eb(false), en.current = false
-  }, [Y, eb]), eC = r.useCallback(() => {
+    er(false), en.current || Q || eb(false)
+  }, [Q, eb]), ey = r.useCallback(() => {
+    er(false), Q || eb(false), en.current = false
+  }, [Q, eb]), eC = r.useCallback(() => {
     el(true)
   }, []), e_ = r.useCallback(() => {
     el(false), eb(false)
@@ -133,10 +133,10 @@ function B(e) {
   r.useEffect(() => {
     ei && eN()
   }, [ei, eN]), r.useLayoutEffect(() => {
-    K && !Q && en.current && eg()
-  }, [eg, K, Q]), r.useLayoutEffect(() => {
-    Y || !K || Q || en.current || eb(false)
-  }, [K, Y, Q, eb]), r.useLayoutEffect(() => {
+    K && !Y && en.current && eg()
+  }, [eg, K, Y]), r.useLayoutEffect(() => {
+    Q || !K || Y || en.current || eb(false)
+  }, [K, Q, Y, eb]), r.useLayoutEffect(() => {
     $ !== ee.current && em(false), ee.current = $
   }, [$]);
   let eP = K ? D.XZ : D.R4,
@@ -234,7 +234,7 @@ function B(e) {
     }, [$, eu, J, i.id, V]), r.useEffect(() => {
       (!G || F) && b.Z.clearTracking(), $ && eu && !J && !X && B && b.Z.stopTracking(i.id)
     }, [G, F, $, eu, J, X, B, i.id]), !B || !$ && eu && !J || X) return X ? p.log("Not rendered due to asset error") : B || p.log("Not rendered due to ineligibility"), null;
-  let eR = 70 + 78 * !!Y;
+  let eR = 70 + 78 * !!Q;
   return (0, a.jsx)(E.A, {
     questOrQuests: i,
     questContent: v.jn.QUEST_BAR_V2,
@@ -288,7 +288,7 @@ function B(e) {
                 onCtxMenuClose: ej,
                 onCtxMenuSelect: ey,
                 overlayRef: ef
-              }, Y ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(I.Z, {
+              }, Q ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(I.Z, {
                 expansionSpring: ew,
                 className: L.content,
                 collapsedHeight: eR,

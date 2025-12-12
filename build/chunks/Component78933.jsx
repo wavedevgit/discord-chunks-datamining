@@ -158,8 +158,8 @@ function eo(e) {
       em && null != eu || (eP(), ez())
     }, [eP, ez, em, eu]),
     eK = em && null != eu,
-    eQ = (0, q.K)(eu, ef, eW, n, ez),
-    eY = (0, C.k)({
+    eY = (0, q.K)(eu, ef, eW, n, ez),
+    eQ = (0, C.k)({
       location: "UserProfileAccountPopout"
     });
   return (0, a.jsx)(m.Gt, {
@@ -251,8 +251,8 @@ function eo(e) {
               className: ei.menus,
               children: [(0, a.jsx)(D.Z.Overlay, {
                 className: ei.menuOverlay,
-                children: (0, a.jsxs)(Y.XE, {
-                  children: [(0, a.jsx)(Y.V4, {
+                children: (0, a.jsxs)(Q.XE, {
+                  children: [(0, a.jsx)(Q.V4, {
                     action: "EDIT_PROFILE",
                     label: em ? er.intl.string(er.t.Ip9nBS) : er.intl.string(er.t.s5vZlQ),
                     icon: c.vdY,
@@ -261,18 +261,18 @@ function eo(e) {
                       let {
                         closePopout: t
                       } = e;
-                      return (0, a.jsx)(Y.gp, {
+                      return (0, a.jsx)(Q.gp, {
                         navId: "edit-profile-submenu",
                         "aria-label": er.intl.string(er.t.szTA8E),
                         onClose: t,
-                        children: eQ
+                        children: eY
                       })
                     } : true,
                     trailing: eW ? (0, a.jsx)(c.IGR, {
                       text: er.intl.string(er.t.y2b7CA)
                     }) : true,
                     ref: eA
-                  }), (0, a.jsx)(Y.V4, {
+                  }), (0, a.jsx)(Q.V4, {
                     action: "PRESS_SET_STATUS",
                     label: (0, a.jsx)(X.Z, {}),
                     sublabel: null != e_ && e_,
@@ -287,7 +287,7 @@ function eo(e) {
                       let {
                         closePopout: t
                       } = e;
-                      return (0, a.jsx)(Y.gp, {
+                      return (0, a.jsx)(Q.gp, {
                         navId: "set-status-submenu",
                         className: ei.statusPickerModalMenu,
                         "aria-label": er.intl.string(er.t.E13trI),
@@ -346,8 +346,8 @@ function eo(e) {
                 })
               }), (0, a.jsx)(D.Z.Overlay, {
                 className: ei.menuOverlay,
-                children: (0, a.jsxs)(Y.XE, {
-                  children: [(0, a.jsx)(Y.V4, {
+                children: (0, a.jsxs)(Q.XE, {
+                  children: [(0, a.jsx)(Q.V4, {
                     action: "PRESS_SWITCH_ACCOUNTS",
                     icon: c.lMe,
                     label: er.intl.string(er.t.oMNyYN),
@@ -358,14 +358,14 @@ function eo(e) {
                       let {
                         closePopout: t
                       } = e;
-                      return (0, a.jsx)(Y.gp, {
+                      return (0, a.jsx)(Q.gp, {
                         navId: "switch-accounts-submenu",
                         "aria-label": er.intl.string(er.t.wFhVqL),
                         onClose: t,
                         children: eN
                       })
                     }
-                  }), !__OVERLAY__ && V.wS && eO && (0, a.jsx)(Y.V4, {
+                  }), !__OVERLAY__ && V.wS && eO && (0, a.jsx)(Q.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
                     label: er.intl.string(er.t["/AXYnE"]),
@@ -380,7 +380,7 @@ function eo(e) {
             skuId: eh.profileEffect.skuId,
             isHovering: ej
           })]
-        }), !eK && eY ? (0, a.jsx)(Q.Z, {
+        }), !eK && eQ ? (0, a.jsx)(Y.Z, {
           targetElementRef: eA,
           onClose: n
         }) : null, (0, a.jsx)(g.Z, {})]

@@ -139,7 +139,7 @@ function ea(e) {
       (0, L.JG)(t, () => i(true))
     },
     className: X.copyId,
-    children: ["Application Id: ", t, " ", n ? Y.intl.string(Y.t.t5VZ88) : null]
+    children: ["Application Id: ", t, " ", n ? Q.intl.string(Q.t.t5VZ88) : null]
   })
 }
 let er = Chunk473749.memo(function(e) {
@@ -308,13 +308,13 @@ let er = Chunk473749.memo(function(e) {
   });
 
 function el(e) {
-  let t, n = (t = Object.values((0, d.Wu)([R.Z], () => R.Z.getWidgetsForLayout(Q.$S))), t.find(t => t.type === e));
+  let t, n = (t = Object.values((0, d.Wu)([R.Z], () => R.Z.getWidgetsForLayout(Y.$S))), t.find(t => t.type === e));
   return [n, () => {
     if (null != n)(0, f.E9)(n.id);
     else {
       let t = et[e];
       if (null == t) return;
-      let n = t(Q.$S);
+      let n = t(Y.$S);
       (0, f.A4)(n)
     }
   }]
