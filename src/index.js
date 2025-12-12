@@ -233,6 +233,11 @@ async function main() {
       "utf-8"
     );
     await fs.writeFile(
+      "./build/names.json",
+      JSON.stringify(names),
+      "utf-8"
+    );
+    await fs.writeFile(
       "./build/ids.json",
       JSON.stringify(ids),
       "utf-8"
