@@ -46,14 +46,14 @@ let E = e => {
     var t;
     return (null == (t = a.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
   }), [t, n.rankedSkuIds, j.length]), T = t || k, {
-    readyToClaim: I
-  } = (0, b.q)(x, n.rewardSkuId), L = null == y && null != n.rewardSkuId && null != x;
+    readyToClaim: L
+  } = (0, b.q)(x, n.rewardSkuId), I = null == y && null != n.rewardSkuId && null != x;
   return (0, r.jsx)(i.Z, {
     gap: "xl",
     children: T ? (0, r.jsx)(r.Fragment, {
       children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(m.Z, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [L && !!(O || I) && (0, r.jsx)(s.k0, {
+      children: [I && !!(O || L) && (0, r.jsx)(s.k0, {
         newValue: {
           tilePosition: 0,
           pageSection: "top 4",

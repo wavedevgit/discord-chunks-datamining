@@ -82,8 +82,8 @@ let B = (0, Chunk884697.IC)(90),
       heroBannerStatic: Y,
       heroBannerAnimated: q,
       heroBannerRive: Q
-    } = (0, E.hr)(U), J = null != (t = null == z ? true : z.responsive) && t, X = null == z ? true : z.backgroundStyle, $ = null != Q, ee = R === k.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T);
-    ee && V && (en = I.intl.string(I.t.dVz4hi));
+    } = (0, E.hr)(U), J = null != (t = null == z ? true : z.responsive) && t, X = null == z ? true : z.backgroundStyle, $ = null != Q, ee = R === k.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? L.intl.string(L.t["1CdL8d"]) : L.intl.string(L.t.xYKa1T);
+    ee && V && (en = L.intl.string(L.t.dVz4hi));
     let {
       analyticsLocations: er
     } = (0, g.ZP)(), el = () => {
@@ -111,15 +111,15 @@ let B = (0, Chunk884697.IC)(90),
     };
     return null != F && (n || U !== A) ? (0, r.jsxs)("div", {
       ref: H,
-      className: L.heroBlock,
+      className: I.heroBlock,
       children: [$ ? (0, O.gT)({
         isCustomCursorEnabled: M,
-        className: L.riveEventOverlay,
+        className: I.riveEventOverlay,
         riveEventTargetRef: D
       }) : null, (0, r.jsx)("div", {
-        className: i()(L.banner, {
-          [L.rivBanner]: $,
-          [L.responsive]: J
+        className: i()(I.banner, {
+          [I.rivBanner]: $,
+          [I.responsive]: J
         }),
         style: null != X ? {
           background: X
@@ -132,41 +132,41 @@ let B = (0, Chunk884697.IC)(90),
           eventTargetRef: D
         })
       }), (0, r.jsxs)("div", {
-        className: L.heroBlockContent,
+        className: I.heroBlockContent,
         children: [$ ? (0, r.jsx)("div", {
-          className: L.rivBannerButtonContainer,
+          className: I.rivBannerButtonContainer,
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
             onClick: el,
             text: en
           })
         }) : (0, r.jsxs)("div", {
-          className: i()(L.heroHeaderContainer, {
-            [L.responsive]: J
+          className: i()(I.heroHeaderContainer, {
+            [I.responsive]: J
           }),
           children: [n ? (0, r.jsx)("div", {
-            className: L.heroHeaderBadgeLogoSummaryContainer
+            className: I.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
-            className: L.heroHeaderBadgeLogoSummaryContainer,
+            className: I.heroHeaderBadgeLogoSummaryContainer,
             children: [null != U.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: true,
-              text: I.intl.string(I.t["h/uBCR"]),
-              className: L.limitedTimeBadge
+              text: L.intl.string(L.t["h/uBCR"]),
+              className: I.limitedTimeBadge
             }), (0, r.jsxs)("div", {
-              className: L.heroLogoNameContainer,
+              className: I.heroLogoNameContainer,
               children: [null != K && (0, r.jsx)("img", {
-                className: L.heroHeaderLogo,
+                className: I.heroHeaderLogo,
                 src: K,
                 alt: U.name,
                 style: null == G ? true : G.toDesktopStyles()
               }), null != U.title && (0, r.jsx)(d.Heading, {
                 variant: "heading-xxl/bold",
-                className: L.title,
+                className: I.title,
                 color: "text-strong",
                 children: U.title
               }), "" !== U.summary && (0, r.jsx)(d.Text, {
                 variant: "text-md/normal",
-                className: ee ? L.orbsSubHeaderText : L.subHeaderText,
+                className: ee ? I.orbsSubHeaderText : I.subHeaderText,
                 style: null != U.bannerTextColor ? {
                   color: U.bannerTextColor
                 } : true,
@@ -174,7 +174,7 @@ let B = (0, Chunk884697.IC)(90),
               })]
             })]
           }), !n && (0, r.jsx)("div", {
-            className: L.heroHeaderButtonContainer,
+            className: I.heroHeaderButtonContainer,
             children: (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
               onClick: el,

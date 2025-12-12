@@ -37,8 +37,8 @@ function y(e) {
     tab: y
   } = e, j = (0, d.sp)(), k = null != (t = null == j ? true : j.sessionId) ? t : "", {
     noCache: T,
-    includeUnpublished: I
-  } = (0, v.Z)(), L = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
+    includeUnpublished: L
+  } = (0, v.Z)(), I = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: B,
     currentPage: A,
     totalCount: N,
@@ -59,10 +59,10 @@ function y(e) {
       sessionId: k,
       checkpoint: C.a.SHOP_RENDERED,
       tab: y,
-      unpublishedCategoriesShown: I,
+      unpublishedCategoriesShown: L,
       cacheDisabled: T
     })
-  }, [k, I, T, n, y]);
+  }, [k, L, T, n, y]);
   let M = l.useRef(null),
     {
       setQueryPageSize: F,
@@ -70,7 +70,7 @@ function y(e) {
       queryPageSize: U
     } = (0, p.S)(),
     [V, z] = l.useState(false),
-    G = n || P || null == L;
+    G = n || P || null == I;
   l.useEffect(() => {
     if (G) return void z(false);
     D.length > 0 && z(true)

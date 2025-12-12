@@ -45,7 +45,7 @@ let P = e => {
     } = e, {
       noCache: T,
       includeUnpublished: B
-    } = (0, v.Z)(), P = (0, m.Pc)("CollectiblesFeedShop") && b === L.AW.ORBS, R = (n = function(e) {
+    } = (0, v.Z)(), P = (0, m.Pc)("CollectiblesFeedShop") && b === I.AW.ORBS, R = (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -62,7 +62,7 @@ let P = e => {
         })
       }
       return e
-    }({}, L.fH), o = o = {
+    }({}, I.fH), o = o = {
       name: A.intl.string(A.t.bfXHLB),
       summary: A.intl.string(A.t.MWDrou),
       title: A.intl.string(A.t.hhOtGl)
@@ -125,7 +125,7 @@ let P = e => {
         categories: []
       }), (0, r.jsx)(O.Z, {
         isLoading: M,
-        title: b === L.AW.ORBS ? A.intl.string(A.t.dFgeuZ) : A.intl.string(A.t.NSv5KV),
+        title: b === I.AW.ORBS ? A.intl.string(A.t.dFgeuZ) : A.intl.string(A.t.NSv5KV),
         numVisibleItems: u,
         tab: b
       })]
@@ -153,14 +153,14 @@ let P = e => {
           case s.z.FEED:
             let f = e.sortedSkuIds;
             l = (0, r.jsx)(O.Z, {
-              title: b === L.AW.ORBS ? A.intl.string(A.t.dFgeuZ) : A.intl.string(A.t.NSv5KV),
+              title: b === I.AW.ORBS ? A.intl.string(A.t.dFgeuZ) : A.intl.string(A.t.NSv5KV),
               isLoading: M || g,
               numVisibleItems: u,
               sortedSkuIds: f,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? N.feedblockInteractiveBackground : true,
-              prioritizeUserDiscounts: b === L.AW.HOME,
+              prioritizeUserDiscounts: b === I.AW.HOME,
               tab: b,
-              orbsSupportedOnly: b === L.AW.ORBS
+              orbsSupportedOnly: b === I.AW.ORBS
             }, n);
             break;
           case s.z.WIDE_BANNER:
@@ -172,7 +172,7 @@ let P = e => {
                 } = (0, d.H4)(a.z.COLLECTIBLES_SHOP_WIDE_BANNER, t);
               if (n) return null
             }
-            l = (0, r.jsx)(I.Z, {
+            l = (0, r.jsx)(L.Z, {
               wideBannerBlock: e,
               tab: b
             }, n);
@@ -226,13 +226,13 @@ let P = e => {
       transitionState: o
     } = e, i = l.useRef(null), {
       handleScroll: s
-    } = (0, u.z)(i, n), a = (0, b.R)(), d = (0, f.sp)(), [p, m] = l.useState(L.IV), [C, h] = l.useState(false);
+    } = (0, u.z)(i, n), a = (0, b.R)(), d = (0, f.sp)(), [p, m] = l.useState(I.IV), [C, h] = l.useState(false);
     return l.useEffect(() => {
       if (null != i.current) {
         let e = () => {
             if (null == i.current) return;
             let e = i.current.getDistanceFromBottom();
-            p >= 36 ? h(e < 20) : e <= 200 && m(e => e + L.IV)
+            p >= 36 ? h(e < 20) : e <= 200 && m(e => e + I.IV)
           },
           t = i.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
@@ -252,7 +252,7 @@ let P = e => {
             numVisibleItems: p,
             isFetchingCategories: a,
             tab: n
-          }), n !== L.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
+          }), n !== I.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
             className: N.endOfFeed,
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-md/semibold",
@@ -267,7 +267,7 @@ let P = e => {
                 }), g.default.track(B.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == d ? true : d.sessionId,
                   page_type: n,
-                  page_category: n === L.AW.HOME || null == d ? true : d.pageCategory,
+                  page_category: n === I.AW.HOME || null == d ? true : d.pageCategory,
                   cta_name: "browse the shop button"
                 })
               },
@@ -276,13 +276,13 @@ let P = e => {
           })]
         }), (0, r.jsx)(T.Z, {
           peaking: C,
-          transitioning: o === L.f7.OUT
+          transitioning: o === I.f7.OUT
         }), (0, r.jsx)(T.Z, {
           style: {
             left: 1850
           },
           peaking: C,
-          transitioning: o === L.f7.OUT
+          transitioning: o === I.f7.OUT
         })]
       })
     })

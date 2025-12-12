@@ -37,8 +37,8 @@ let j = Chunk473749.memo(function(e) {
     isHoveringOrFocusing: k
   } = (0, g.Z)(j), {
     readyToClaim: T,
-    collectibleProductSkuIds: I,
-    collectedSkuIds: L
+    collectibleProductSkuIds: L,
+    collectedSkuIds: I
   } = (0, b.q)(t, n), B = (0, a.e7)([C.Z], () => C.Z.isClaiming === n);
   return (0, r.jsx)(c.$, {
     onChange: o,
@@ -79,7 +79,7 @@ let j = Chunk473749.memo(function(e) {
                 children: v.intl.string(v.t["0mDmg/"])
               }), (0, r.jsx)(u.u, {
                 text: T ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
-                  totalCount: I.length
+                  totalCount: L.length
                 }),
                 align: "right",
                 caretConfig: {
@@ -101,8 +101,8 @@ let j = Chunk473749.memo(function(e) {
                 className: S.progressContainer,
                 children: [(0, r.jsx)(f.Z, {
                   variant: f.y.BLUE,
-                  progress: L.length,
-                  maximum: I.length
+                  progress: I.length,
+                  maximum: L.length
                 }), (0, r.jsxs)("div", {
                   className: i()(S.progressTextContainer, {
                     [S.readyToClaimText]: T
@@ -114,8 +114,8 @@ let j = Chunk473749.memo(function(e) {
                     variant: "text-xs/medium",
                     color: "currentColor",
                     children: v.intl.formatToPlainString(v.t["5TwASM"], {
-                      collectedCount: L.length,
-                      totalCount: I.length
+                      collectedCount: I.length,
+                      totalCount: L.length
                     })
                   })]
                 })]

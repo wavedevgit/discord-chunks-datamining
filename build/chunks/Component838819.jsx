@@ -64,7 +64,7 @@ let H = e => {
     let c = (0, A.B)("CollectiblesShop"),
       {
         onClose: R
-      } = (0, L.Db)(),
+      } = (0, I.Db)(),
       {
         currentTab: D,
         hasFilters: M
@@ -132,7 +132,7 @@ let H = e => {
               }),
               ref: en,
               tabIndex: false,
-              children: [(0, r.jsx)(I.I, {
+              children: [(0, r.jsx)(L.I, {
                 handleTransition: $,
                 selectedTab: J
               }), (0, r.jsx)("div", {

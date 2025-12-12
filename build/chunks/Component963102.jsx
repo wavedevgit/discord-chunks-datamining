@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421200 = require("./421200.js");
 
-function I(e) {
+function L(e) {
   let {
     tab: t,
     displayText: n,
@@ -48,7 +48,7 @@ function I(e) {
   })
 }
 
-function L(e) {
+function I(e) {
   let {
     tab: t,
     selected: n,
@@ -199,12 +199,12 @@ function B(e) {
             tab: l,
             displayText: o
           } = e;
-          return l === x.AW.CATALOG ? (0, r.jsx)(L, {
+          return l === x.AW.CATALOG ? (0, r.jsx)(I, {
             tab: l,
             selected: (0, x.RE)(t) || t === l,
             displayText: o,
             handleTransition: n
-          }, l) : (0, r.jsx)(I, {
+          }, l) : (0, r.jsx)(L, {
             tab: l,
             displayText: o,
             selected: t === l,

@@ -31,9 +31,9 @@ let y = e => {
   let {
     wideBannerBlock: y,
     tab: j
-  } = e, k = C.Z.getCategoryByStoreListingId(y.categoryStoreListingId), T = l.useRef(null), I = l.useRef(null), [L, B] = l.useState(), [A, N] = l.useState(false);
+  } = e, k = C.Z.getCategoryByStoreListingId(y.categoryStoreListingId), T = l.useRef(null), L = l.useRef(null), [I, B] = l.useState(), [A, N] = l.useState(false);
   l.useEffect(() => {
-    let e = I.current;
+    let e = L.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && B(1080 * (e.naturalHeight / e.naturalWidth))
@@ -111,11 +111,11 @@ let y = e => {
         className: i()(x.wideBannerBackgroundImg, {
           [x.extraRounded]: H
         }),
-        style: null != L ? {
-          height: "".concat(L, "px")
+        style: null != I ? {
+          height: "".concat(I, "px")
         } : true,
         children: (0, r.jsx)("img", {
-          ref: I,
+          ref: L,
           src: w,
           alt: y.title,
           className: i()(x.wideBannerArt, {
@@ -127,7 +127,7 @@ let y = e => {
           [x.wideBannerWithCTAContentContainer]: M
         }),
         style: {
-          maxHeight: null != L ? "".concat(L, "px") : "auto"
+          maxHeight: null != I ? "".concat(I, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: x.wideBannerTextContainer,

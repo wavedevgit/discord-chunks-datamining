@@ -51,7 +51,7 @@ function N(e) {
       case E.AW.PROFILE_EFFECTS:
         return [O.intl.string(O.t["1cNjtx"]), V ? A.Z : B.Z, o.Z.PROFILE_EFFECT];
       case E.AW.NAMEPLATES:
-        return [O.intl.string(O.t.V68Fqz), V ? L.Z : I.Z, o.Z.NAMEPLATE];
+        return [O.intl.string(O.t.V68Fqz), V ? I.Z : L.Z, o.Z.NAMEPLATE];
       case E.AW.BUNDLES:
         return [O.intl.string(O.t.FYFpps), V ? j.Z : y.Z, o.Z.BUNDLE]
     }
