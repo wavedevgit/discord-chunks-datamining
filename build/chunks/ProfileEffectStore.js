@@ -2,14 +2,15 @@
 /** chunk id: 25251, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
-});
+  Z: () => v
+}), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var r, Chunk392711 = require("./392711.js"),
+  Chunk979554 = require("./979554.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk212161 = require("./212161.js");
 
-function l(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,80 +18,83 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = {},
-  u = (e, t) => !(0, i.isEqual)(c[e], t) && (c[e] = t, true),
-  d = e => {
-    let t = false;
-    return e.items.forEach(n => {
-      if (!(0, s.H)(n)) return;
-      let r = {
-        skuId: e.skuId,
-        config: n
-      };
-      u(e.skuId, r) && (t = true)
-    }), t
-  },
+let u = {},
+  d = (e, t) => !(0, i.isEqual)(u[e], t) && (u[e] = t, true),
   f = e => {
-    let t = false;
-    return e.forEach(e => {
-      e.products.forEach(e => {
-        d(e) && (t = true)
-      })
-    }), t
+    var t, n;
+    let r = false;
+    if (e.type !== o.Z.PROFILE_EFFECT && e.type !== o.Z.VARIANTS_GROUP) return r;
+    let a = [...e.items, ...null != (n = null == (t = e.variants) ? true : t.flatMap(e => e.items)) ? n : []].filter(l.H);
+    for (let e of (0, i.uniqBy)(a, "skuId")) {
+      let t = {
+        skuId: e.skuId,
+        config: e
+      };
+      d(e.skuId, t) && (r = true)
+    }
+    return r
   },
   p = e => {
     let t = false;
     return e.forEach(e => {
-      d(e) && (t = true)
+      e.products.forEach(e => {
+        f(e) && (t = true)
+      })
     }), t
   },
   _ = e => {
-    let {
-      product: t
-    } = e;
-    return d(t)
+    let t = false;
+    return e.forEach(e => {
+      f(e) && (t = true)
+    }), t
   },
   m = e => {
     let {
-      categories: t
+      product: t
     } = e;
-    return f(t.categories)
+    return f(t)
   },
   h = e => {
     let {
-      shopHome: t
+      categories: t
     } = e;
-    return f(t.categories)
+    return p(t.categories)
   },
   g = e => {
     let {
-      purchases: t
+      shopHome: t
     } = e;
-    return p(t)
+    return p(t.categories)
   },
   E = e => {
     let {
       purchases: t
     } = e;
-    return null != t && p(t)
+    return _(t)
   },
   b = e => {
-    c = {}
+    let {
+      purchases: t
+    } = e;
+    return null != t && _(t)
+  },
+  y = e => {
+    u = {}
   };
-class y extends(r = Chunk442837.ZP.Store) {
+class O extends(r = Chunk442837.ZP.Store) {
   getAllProfileEffects() {
-    return Object.values(c)
+    return Object.values(u)
   }
   getProfileEffect(e) {
-    return null != e ? c[e] : true
+    return null != e ? u[e] : true
   }
 }
-l(y, "displayName", "ProfileEffectStore");
-let O = new y(Chunk570140.Z, {
-  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: _,
-  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: m,
-  COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: h,
-  COLLECTIBLES_PURCHASES_FETCH_SUCCESS: g,
-  COLLECTIBLES_CLAIM_SUCCESS: E,
-  LOGOUT: b
+c(O, "displayName", "ProfileEffectStore");
+let v = new O(Chunk570140.Z, {
+  COLLECTIBLES_PRODUCT_FETCH_SUCCESS: m,
+  COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: h,
+  COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: g,
+  COLLECTIBLES_PURCHASES_FETCH_SUCCESS: E,
+  COLLECTIBLES_CLAIM_SUCCESS: b,
+  LOGOUT: y
 })
