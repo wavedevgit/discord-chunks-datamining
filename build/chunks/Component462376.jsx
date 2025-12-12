@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk624138 = require("./624138.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk451964 = require("./451964.js");
+  Chunk444942 = require("./444942.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,7 +50,7 @@ class x extends Chunk473749.Component {
     if (null == exports || null == require)
       if (null != module) return (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk451964.acronym,
+        className: Chunk444942.acronym,
         "aria-hidden": true,
         children: module
       });
@@ -59,7 +59,7 @@ class x extends Chunk473749.Component {
       src: exports,
       "aria-label": require,
       size: Chunk481060.EFr.SIZE_32,
-      className: Chunk451964.inviteRowAvatar
+      className: Chunk444942.inviteRowAvatar
     })
   }
   render() {
@@ -78,13 +78,13 @@ class x extends Chunk473749.Component {
       disabled: Chunk473749
     });
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk451964.inviteRow,
+      className: Chunk444942.inviteRow,
       onMouseEnter: this.handleMouseEnter,
       onMouseLeave: this.handleMouseLeave,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk451964.inviteRowInfo,
+        className: Chunk444942.inviteRowInfo,
         children: [this.renderUserOrChannel(), (0, Chunk54381.jsxs)("div", {
-          className: Chunk451964.inviteRowName,
+          className: Chunk444942.inviteRowName,
           children: [Chunk51144.ZP.getName(module), null != exports ? (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z, true) : null]
         })]
       }), Chunk630810]

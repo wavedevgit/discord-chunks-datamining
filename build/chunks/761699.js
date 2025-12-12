@@ -2,25 +2,25 @@
 /** chunk id: 761699, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => o
+  f: () => a
 });
 let r = 1e3,
   i = window;
 
-function o(e, t) {
+function a(e, t) {
   let n = i;
   if (true !== n && null != n.requestIdleCallback && null != n.cancelIdleCallback) {
-    var o;
+    var a;
     let i = false,
-      a = null,
+      o = null,
       s = () => {
-        i || (i = true, null != a && (n.clearTimeout(a), a = null), e())
+        i || (i = true, null != o && (n.clearTimeout(o), o = null), e())
       },
       l = n.requestIdleCallback(s, t);
-    return a = n.setTimeout(() => {
+    return o = n.setTimeout(() => {
       i || n.cancelIdleCallback(l), s()
-    }, null != (o = null == t ? true : t.timeout) ? o : r), () => {
-      n.cancelIdleCallback(l), null != a && (n.clearTimeout(a), a = null)
+    }, null != (a = null == t ? true : t.timeout) ? a : r), () => {
+      n.cancelIdleCallback(l), null != o && (n.clearTimeout(o), o = null)
     }
   } {
     let t = n.setTimeout(e, 0);

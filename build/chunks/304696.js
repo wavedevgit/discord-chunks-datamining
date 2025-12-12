@@ -22,16 +22,16 @@ function s(e) {
   let {
     quest: r,
     taskDetails: i,
-    thirdPartyTaskDetails: o
+    thirdPartyTaskDetails: a
   } = e;
-  if ((null == (t = r.userStatus) ? true : t.completedAt) != null) return a.intl.string(a.t.BzFeTF);
+  if ((null == (t = r.userStatus) ? true : t.completedAt) != null) return o.intl.string(o.t.BzFeTF);
   if ((null == (n = r.userStatus) ? true : n.enrolledAt) != null) {
     let {
       percentComplete: e
-    } = i, t = null != o ? o.percentComplete : e;
-    return t >= .75 ? a.intl.string(a.t.gvCR4H) : t >= .45 && t <= .55 ? a.intl.string(a.t.JNx8sG) : t > 0 ? a.intl.string(a.t.JMbfnc) : a.intl.string(a.t["7e5k7L"])
+    } = i, t = null != a ? a.percentComplete : e;
+    return t >= .75 ? o.intl.string(o.t.gvCR4H) : t >= .45 && t <= .55 ? o.intl.string(o.t.JNx8sG) : t > 0 ? o.intl.string(o.t.JMbfnc) : o.intl.string(o.t["7e5k7L"])
   }
-  return a.intl.formatToPlainString(a.t.EQa7os, {
+  return o.intl.formatToPlainString(o.t.EQa7os, {
     questName: r.config.messages.questName
   })
 }
@@ -43,12 +43,12 @@ function l(e) {
     gameTitle: r,
     cosponsorName: i
   } = e;
-  return t ? null == i ? a.intl.formatToPlainString(a.t.Piihy1, {
+  return t ? null == i ? o.intl.formatToPlainString(o.t.Piihy1, {
     gamePublisher: n
-  }) : a.intl.formatToPlainString(a.t.DV47Gy, {
+  }) : o.intl.formatToPlainString(o.t.DV47Gy, {
     gamePublisher: n,
     cosponsorName: i
-  }) : a.intl.formatToPlainString(a.t.euizJY, {
+  }) : o.intl.formatToPlainString(o.t.euizJY, {
     gamePublisher: n,
     gameTitle: r
   })
@@ -60,38 +60,38 @@ function c(e) {
 
 function u(e) {
   switch (e) {
-    case o.yq.SUGGESTED:
-      return a.intl.string(a.t.gBfXPZ);
-    case o.yq.MOST_RECENT:
-      return a.intl.string(a.t.K6oEu2);
-    case o.yq.EXPIRING_SOON:
-      return a.intl.string(a.t.IB22n3);
-    case o.yq.RECENTLY_ENROLLED:
-      return a.intl.string(a.t["BB+2tX"])
+    case a.yq.SUGGESTED:
+      return o.intl.string(o.t.gBfXPZ);
+    case a.yq.MOST_RECENT:
+      return o.intl.string(o.t.K6oEu2);
+    case a.yq.EXPIRING_SOON:
+      return o.intl.string(o.t.IB22n3);
+    case a.yq.RECENTLY_ENROLLED:
+      return o.intl.string(o.t["BB+2tX"])
   }
 }
 
 function d(e) {
   switch (e) {
-    case o.UP.VIRTUAL_CURRENCY:
-      return a.intl.string(a.t.ElYQFS);
-    case o.UP.COLLECTIBLE:
-      return a.intl.string(a.t.Jg17Ut);
-    case o.UP.IN_GAME:
-      return a.intl.string(a.t["O/J2kr"]);
-    case o.oH.VIDEO:
-      return a.intl.string(a.t.e0iISA);
-    case o.oH.PLAY:
-      return a.intl.string(a.t["1nJR4p"])
+    case a.UP.VIRTUAL_CURRENCY:
+      return o.intl.string(o.t.ElYQFS);
+    case a.UP.COLLECTIBLE:
+      return o.intl.string(o.t.Jg17Ut);
+    case a.UP.IN_GAME:
+      return o.intl.string(o.t["O/J2kr"]);
+    case a.oH.VIDEO:
+      return o.intl.string(o.t.e0iISA);
+    case a.oH.PLAY:
+      return o.intl.string(o.t["1nJR4p"])
   }
 }
 
 function f(e) {
   switch (e) {
     case "reward":
-      return a.intl.string(a.t.vjLqAU);
+      return o.intl.string(o.t.vjLqAU);
     case "task":
-      return a.intl.string(a.t.Hufmss)
+      return o.intl.string(o.t.Hufmss)
   }
 }
 let p = e => "".concat(location.protocol, "//").concat(location.host, "/quests/").concat(e);

@@ -5,5 +5,5 @@ var Chunk507604 = require("./507604.js"),
   Chunk117895 = require("./117895.js"),
   Chunk530575 = require("./530575.js");
 module.exports = function(e, t, n) {
-  r ? i.f(e, t, o(0, n)) : e[t] = n
+  r ? i.f(e, t, a(0, n)) : e[t] = n
 }

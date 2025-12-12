@@ -1,4 +1,4 @@
-/** Chunk was on 40283 **/
+/** Chunk was on 24783 **/
 /** chunk id: 3689, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -13,16 +13,16 @@ var Chunk442837 = require("./442837.js"),
 
 function u(e, t) {
   let u = arguments.length > 2 && true !== arguments[2] ? arguments[2] : e.type,
-    s = (0, c.e7)([l.Z], () => l.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
+    s = (0, i.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
   if (__OVERLAY__ || !s) return null;
-  let b = () => {
-    (0, i.ZDy)(async () => {
+  let d = () => {
+    (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("26861")]).then(n.bind(n, 241865));
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("12333")]).then(n.bind(n, 241865));
       return n => {
-        var c, i;
-        return (0, r.jsx)(t, (c = function(e) {
+        var i, l;
+        return (0, r.jsx)(t, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -39,35 +39,35 @@ function u(e, t) {
             })
           }
           return e
-        }({}, n), i = i = {
+        }({}, n), l = l = {
           channelType: u,
           guildId: e.guild_id,
           categoryId: e.parent_id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(i)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(i, e))
-        }), c))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        }), i))
       }
     })
   };
   switch (u) {
     case o.d4z.GUILD_TEXT:
-      return (0, r.jsx)(i.sNh, {
+      return (0, r.jsx)(l.sNh, {
         id: "create-text-channel",
         label: a.intl.string(a.t.HHkTJP),
-        action: b
+        action: d
       });
     case o.d4z.GUILD_VOICE:
-      return (0, r.jsx)(i.sNh, {
+      return (0, r.jsx)(l.sNh, {
         id: "create-voice-channel",
         label: a.intl.string(a.t.AlbZaI),
-        action: b
+        action: d
       });
     default:
       return null

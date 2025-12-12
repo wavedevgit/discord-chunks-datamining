@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk791473 = require("./791473.js"),
   Chunk822632 = require("./822632.js"),
   Chunk462468 = require("./462468.js");
-let a = 0x66747970,
+let o = 0x66747970,
   s = 0x69707270,
   l = 0x6d657461,
   c = 0x696c6f63,
@@ -30,12 +30,12 @@ function g(e, t) {
     } = E(e, t);
   if (_ < r) return;
   let h = e.getUint32(t + n);
-  if (h === a) return w(e, m, _);
+  if (h === o) return w(e, m, _);
   if (h === s) return D(e, t, m, _);
   if (h === f) return x(e, t, m, _);
   if (h === p) return L(e, m, _);
   let g = e.getUint8(m);
-  return h === l ? M(e, t, m + i, _) : h === c ? (0, o.I)(e, g, m + i, _) : h === u ? U(e, t, g, m + i, _) : h === d ? Z(e, t, g, m + i, _) : {
+  return h === l ? M(e, t, m + i, _) : h === c ? (0, a.I)(e, g, m + i, _) : h === u ? U(e, t, g, m + i, _) : h === d ? Z(e, t, g, m + i, _) : {
     type: true,
     length: _
   }
@@ -45,16 +45,16 @@ function E(e, t) {
   let n = 4,
     r = 4,
     i = 8,
-    o = 12,
-    a = e.getUint32(t);
-  return b(a) ? {
+    a = 12,
+    o = e.getUint32(t);
+  return b(o) ? {
     length: e.byteLength - t,
     contentOffset: t + n + r
-  } : y(a) && O(e, t) ? {
-    length: e.getUint32(t + o),
+  } : y(o) && O(e, t) ? {
+    length: e.getUint32(t + a),
     contentOffset: t + n + r + i
   } : {
-    length: a,
+    length: o,
     contentOffset: t + n + r
   }
 }
@@ -198,22 +198,22 @@ function M(e, t, n, r) {
 function k(e, t, n) {
   let r = [_, m],
     i = [],
-    o = t;
-  for (; o < t + n;) {
-    let t = g(e, o);
+    a = t;
+  for (; a < t + n;) {
+    let t = g(e, a);
     if (true === t) break;
-    true !== t.type && (true === t.itemType || false !== r.indexOf(t.itemType)) && i.push(t), o += t.length
+    true !== t.type && (true === t.itemType || false !== r.indexOf(t.itemType)) && i.push(t), a += t.length
   }
   return i
 }
 
 function U(e, t, n, r, i) {
   let {
-    offsets: o
+    offsets: a
   } = G(n, r);
   return {
     type: "iinf",
-    itemInfos: k(e, o.itemInfos, i - (o.itemInfos - t)),
+    itemInfos: k(e, a.itemInfos, i - (a.itemInfos - t)),
     length: i
   }
 }
@@ -228,11 +228,11 @@ function G(e, t) {
   }
 }
 
-function Z(e, t, n, r, o) {
+function Z(e, t, n, r, a) {
   r += 3;
-  let a = {
+  let o = {
     type: "infe",
-    length: o
+    length: a
   };
-  return (0 === n || 1 === n) && (a.itemId = e.getUint16(r), r += 2, a.itemProtectionIndex = e.getUint16(r), r += 2, a.itemName = (0, i.o7)(e, r), r += a.itemName.length + 1), n >= 2 && (2 === n ? (a.itemId = e.getUint16(r), r += 2) : 3 === n && (a.itemId = e.getUint32(r), r += 4), a.itemProtectionIndex = e.getUint16(r), r += 2, a.itemType = e.getUint32(r), r += 4, a.itemName = (0, i.o7)(e, r), r += a.itemName.length + 1, a.itemType === m ? (a.contentType = (0, i.o7)(e, r), t + o > (r += a.contentType.length + 1) && (a.contentEncoding = (0, i.o7)(e, r), r += a.contentEncoding.length + 1)) : a.itemType === h && (a.itemUri = (0, i.o7)(e, r), r += a.itemUri.length + 1)), a
+  return (0 === n || 1 === n) && (o.itemId = e.getUint16(r), r += 2, o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemName = (0, i.o7)(e, r), r += o.itemName.length + 1), n >= 2 && (2 === n ? (o.itemId = e.getUint16(r), r += 2) : 3 === n && (o.itemId = e.getUint32(r), r += 4), o.itemProtectionIndex = e.getUint16(r), r += 2, o.itemType = e.getUint32(r), r += 4, o.itemName = (0, i.o7)(e, r), r += o.itemName.length + 1, o.itemType === m ? (o.contentType = (0, i.o7)(e, r), t + a > (r += o.contentType.length + 1) && (o.contentEncoding = (0, i.o7)(e, r), r += o.contentEncoding.length + 1)) : o.itemType === h && (o.itemUri = (0, i.o7)(e, r), r += o.itemUri.length + 1)), o
 }

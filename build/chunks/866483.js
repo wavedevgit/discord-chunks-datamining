@@ -9,19 +9,19 @@ require.d(exports, {
 }), require("./388685.js"), require("./642613.js"), require("./761699.js"), require("./626135.js"), require("./981631.js");
 let r = ["COLD_START"],
   i = "NO_REASONS",
-  o = true,
-  a = new Map;
+  a = true,
+  o = new Map;
 
 function s(e) {
   var t;
-  let n = null != (t = a.get(e)) ? t : 0;
-  a.set(e, n + 1)
+  let n = null != (t = o.get(e)) ? t : 0;
+  o.set(e, n + 1)
 }
 
 function l(e) {
   var t;
-  let n = (null != (t = a.get(e)) ? t : 0) - 1;
-  n <= 0 ? a.delete(e) : a.set(e, n)
+  let n = (null != (t = o.get(e)) ? t : 0) - 1;
+  n <= 0 ? o.delete(e) : o.set(e, n)
 }
 
 function c(e) {
@@ -29,11 +29,11 @@ function c(e) {
 }
 
 function u() {
-  return a.size > 0 || o
+  return o.size > 0 || a
 }
 
 function d() {
-  let e = [...o ? r : [], ...a.keys()].sort();
+  let e = [...a ? r : [], ...o.keys()].sort();
   return module.length > 0 ? module.join(",") : i
 }
 
@@ -48,5 +48,5 @@ function p(e) {
 }
 
 function _(e) {
-  u(), o = false, e(), u()
+  u(), a = false, e(), u()
 }

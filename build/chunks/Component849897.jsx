@@ -36,10 +36,10 @@ let _ = {
         games: t
       },
       selectedIndex: n,
-      query: a,
+      query: o,
       onHover: s,
       onClick: c
-    } = e, f = t.map((e, t) => (0, r.jsx)(o.ZP.Game, {
+    } = e, f = t.map((e, t) => (0, r.jsx)(a.ZP.Game, {
       onClick: c,
       onHover: s,
       selected: n === t,
@@ -50,7 +50,7 @@ let _ = {
       children: [(0, l.gm)({
         titleWithQuery: p,
         titleWithoutQuery: _,
-        query: a,
+        query: o,
         getQuery: e => "".concat(u.ME).concat(e)
       }), f]
     }, "mentions")

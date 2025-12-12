@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk97028 = require("./97028.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk810568 = require("./810568.js"),
   Chunk168524 = require("./168524.js"),
   Chunk214288 = require("./214288.js"),
-  Chunk638912 = require("./638912.js");
+  Chunk35583 = require("./35583.js");
 let m = 10,
   h = 2;
 
@@ -24,13 +24,13 @@ function g(e) {
     game: t,
     activityLevel: n,
     hideTooltip: i
-  } = e, o = t.getIconURL(24), a = (0, p.B)(), g = (0, f.Z)({
+  } = e, a = t.getIconURL(24), o = (0, p.B)(), g = (0, f.Z)({
     location: "GuildProfile",
     source: d.m1.GuildProfile,
     trackEntryPointImpression: true,
     applicationId: t.id
   });
-  if (null == o) return null;
+  if (null == a) return null;
   let E = !i,
     b = (null == n ? true : n.level) === s.m.HIGH,
     y = (0, r.jsx)(c.Text, {
@@ -47,7 +47,7 @@ function g(e) {
         className: _.gameIcon,
         children: [(0, r.jsx)("img", {
           className: _.gameIconImage,
-          src: o,
+          src: a,
           alt: t.name
         }), b && (0, r.jsx)(u.ZP, {
           mask: u.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
@@ -66,7 +66,7 @@ function g(e) {
         })]
       })
     });
-  return a ? (0, r.jsx)(c.P3F, {
+  return o ? (0, r.jsx)(c.P3F, {
     onClick: g,
     className: _.gameIconWrapper,
     children: O
@@ -117,17 +117,17 @@ function y(e) {
   let {
     gamesToDisplay: t,
     lastGameToDisplay: n,
-    remainingGames: o,
+    remainingGames: a,
     activity: s
   } = e, u = i.useMemo(() => {
     if (null == n) return null;
     let e = n.getIconURL(24);
     if (null == e) return null;
-    if (0 === o.length) return (0, r.jsx)(g, {
+    if (0 === a.length) return (0, r.jsx)(g, {
       game: n,
       activityLevel: s[n.id]
     });
-    let t = o;
+    let t = a;
     return (0, r.jsx)(l.u, {
       "aria-label": "",
       position: "bottom",
@@ -136,9 +136,9 @@ function y(e) {
         activity: s
       }),
       children: (0, r.jsxs)("div", {
-        className: a()(_.gameIcon, _.extraGameItem),
+        className: o()(_.gameIcon, _.extraGameItem),
         children: [(0, r.jsx)("img", {
-          className: a()(_.gameIconImage, _.extraGameIconImage),
+          className: o()(_.gameIconImage, _.extraGameIconImage),
           src: e,
           alt: n.name
         }), (0, r.jsx)("div", {
@@ -153,7 +153,7 @@ function y(e) {
         })]
       })
     })
-  }, [n, o, s]);
+  }, [n, a, s]);
   return null == t || 0 === t.length ? null : 1 === t.length ? (0, r.jsx)("div", {
     className: _.container,
     children: (0, r.jsx)(b, {

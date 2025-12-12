@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Bp: () => i,
-  r7: () => o,
+  r7: () => a,
   u: () => r
 });
 var r = function(e) {
@@ -12,6 +12,6 @@ var r = function(e) {
   i = function(e) {
     return e[e.ENCRYPT = 0] = "ENCRYPT", e[e.DECRYPT = 1] = "DECRYPT", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e[e.PROTOCOL_VERSION_CHANGED = 0] = "PROTOCOL_VERSION_CHANGED", e
   }({})

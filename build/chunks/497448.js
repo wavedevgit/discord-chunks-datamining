@@ -15,7 +15,7 @@ let c = Chunk473749.createContext(null);
 
 function u(e) {
   let t = (0, l.useContext)(c) || {};
-  (0, a.l)(t, e);
+  (0, o.l)(t, e);
   let {
     ref: n,
     ...r
@@ -27,8 +27,8 @@ function d(e, t) {
   let {
     focusProps: n
   } = (0, i.K)(e), {
-    keyboardProps: a
-  } = (0, o.v)(e), c = (0, s.d)(n, a), d = u(t), f = e.isDisabled ? {} : d, p = (0, l.useRef)(e.autoFocus);
+    keyboardProps: o
+  } = (0, a.v)(e), c = (0, s.d)(n, o), d = u(t), f = e.isDisabled ? {} : d, p = (0, l.useRef)(e.autoFocus);
   (0, l.useEffect)(() => {
     p.current && t.current && (0, r.e)(t.current), p.current = false
   }, [t]);

@@ -2,13 +2,13 @@
 /** chunk id: 298228, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  O: () => i
+  O: () => o
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk399606 = require("./399606.js"),
   Chunk1870 = require("./1870.js");
-let i = e => {
-  let t = (0, l.e7)([o.Z], () => o.Z.purchases);
+let o = e => {
+  let t = (0, l.e7)([a.Z], () => a.Z.purchases);
   return (0, r.useMemo)(() => {
     let n = [],
       r = [];

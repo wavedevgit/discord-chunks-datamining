@@ -201,7 +201,7 @@ function G() {
       currentUserId: o
     } = t;
     if (e.voiceChannelId !== r || null == r || function(e) {
-        let t = E.Z.getChannel(e);
+        let t = _.Z.getChannel(e);
         if (null == t) returnfalse;
         let n = t.getGuildId();
         if (null == n) returnfalse;

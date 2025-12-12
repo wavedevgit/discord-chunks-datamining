@@ -2,12 +2,12 @@
 /** chunk id: 21055, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => a
+  B: () => o
 });
 var Chunk503461 = require("./503461.js"),
   Chunk190313 = require("./190313.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,12 +15,12 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a {
+class o {
   get prefix() {
     return this.table.prefix
   }
   withoutLogging() {
-    return new a(this.originalPrefix, this.table.tableId, this.table.database, false)
+    return new o(this.originalPrefix, this.table.tableId, this.table.database, false)
   }
   get(e, t) {
     return this.table.get([e, t])
@@ -51,12 +51,12 @@ class a {
     return this.putWithGeneration(e, t, n, null, i)
   }
   putWithGeneration(e, t, n, i) {
-    let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : r.Sn.Replace;
+    let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : r.Sn.Replace;
     return this.table.put({
       key: [e, t],
       data: n,
       generation: i
-    }, o)
+    }, a)
   }
   delete(e, t) {
     switch (arguments.length) {
@@ -84,7 +84,7 @@ class a {
     return this.table.getMapEntriesSyncUnsafe()
   }
   constructor(e, t, n, r = true) {
-    o(this, "originalPrefix", true), o(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
+    a(this, "originalPrefix", true), a(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
   }
 }
 class s {
@@ -96,12 +96,12 @@ class s {
     this.putWithGeneration(e, t, n, null, i)
   }
   putWithGeneration(e, t, n, i) {
-    let o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : r.Sn.Replace;
+    let a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : r.Sn.Replace;
     return this.state.put({
       key: [e, t],
       data: n,
       generation: i
-    }, o)
+    }, a)
   }
   delete(e, t) {
     switch (arguments.length) {
@@ -119,6 +119,6 @@ class s {
     return this.state.deleteGeneration([], e, t)
   }
   constructor(e) {
-    o(this, "state", true), this.state = e
+    a(this, "state", true), this.state = e
   }
 }

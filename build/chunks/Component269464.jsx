@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 269464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  O: () => h
+  O: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,56 +16,56 @@ var Chunk54381 = require("./54381.js"),
   Chunk486324 = require("./486324.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk747530 = require("./747530.js");
+  Chunk676157 = require("./676157.js");
 
-function h(e) {
+function p(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(u.GuildFeatures.BANNER), x = t.features.has(u.GuildFeatures.ANIMATED_BANNER), b = h && n, {
+  } = e, p = t.features.has(d.GuildFeatures.BANNER), h = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = p && n, {
     analyticsLocations: j
-  } = (0, s.ZP)(), _ = i.useCallback((e, n) => {
+  } = (0, a.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)
-  }, [j, t]), v = i.useCallback(e => {
+  }, [j, t]), O = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
       analyticsLocations: j,
-      analyticsSection: u.jXE.GUILD_BANNER,
-      analyticsObject: u.qAy.UPLOAD_IMAGE,
-      perks: (0, d.XO)()
+      analyticsSection: d.jXE.GUILD_BANNER,
+      analyticsObject: d.qAy.UPLOAD_IMAGE,
+      perks: (0, u.XO)()
     })
-  }, [j, t]), O = (0, r.jsx)(a.Z, {
+  }, [j, t]), C = (0, r.jsx)(s.Z, {
     image: t.banner,
     makeURL: e => null != e ? o.ZP.getGuildBannerURL({
       id: t.id,
       banner: e
-    }, x) : null,
-    disabled: !b,
-    onChange: _,
-    hint: p.intl.string(p.t.uPvxqJ),
+    }, h) : null,
+    disabled: !x,
+    onChange: v,
+    hint: m.intl.string(m.t.uPvxqJ),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: g.pC.GUILD_BANNER,
-      maxFileSizeBytes: m.B,
+      maxFileSizeBytes: f.B,
       onComplete: e => {
         let {
           imageUri: t,
           file: n
         } = e;
-        return _(t, n)
+        return v(t, n)
       },
       analyticsLocation: {
-        page: u.ZY5.GUILD_SETTINGS,
-        section: u.jXE.GUILD_BANNER
+        page: d.ZY5.GUILD_SETTINGS,
+        section: d.jXE.GUILD_BANNER
       },
       analyticsLocations: j
     }),
-    enabled: b
+    enabled: x
   });
-  return h ? O : (0, r.jsx)(l.P3F, {
+  return p ? C : (0, r.jsx)(l.P3F, {
     "aria-hidden": true,
     tabIndex: false,
-    className: f.upsell,
-    onClick: v,
-    children: O
+    className: b.upsell,
+    onClick: O,
+    children: C
   })
 }

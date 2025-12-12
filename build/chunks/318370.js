@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   n: () => i,
-  y: () => o
+  y: () => a
 });
 let r = (0, require("./427164.js").le)({
     name: "2025-12-stage-pawtect",
@@ -21,7 +21,7 @@ let r = (0, require("./427164.js").le)({
     location: e
   }).enabled;
 
-function o(e) {
+function a(e) {
   return r.getConfig({
     location: e
   }).enabled

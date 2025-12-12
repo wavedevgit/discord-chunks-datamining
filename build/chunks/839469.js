@@ -21,7 +21,7 @@ function d() {
   let e = Chunk996733.Z.useField("query"),
     t = (0, Chunk991346.Pt)(),
     n = Chunk473749.useRef(new Chunk170401.Z((0, Chunk991346.ji)(exports))),
-    o = Chunk473749.useCallback(async e => {
+    a = Chunk473749.useCallback(async e => {
       let t = await n.current.search(e.trim());
       u.setState({
         searchResults: t,

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk591759 = require("./591759.js"),
-  Chunk781452 = require("./781452.js");
+  Chunk838983 = require("./838983.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,8 +36,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,15 +45,15 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let d = "https://www.tiktok.com",
   f = "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 
 function p(e, t) {
-  let n = o.Z.toURLSafe(null != e ? e : "");
+  let n = a.Z.toURLSafe(null != e ? e : "");
   if (null === n) return "";
   if (null == t) return n.toString();
   for (let e in t) {
@@ -67,15 +67,15 @@ function _(e) {
   var {
     src: t,
     autoMute: n
-  } = e, o = c(e, ["src", "autoMute"]);
-  let a = i.useRef(null),
+  } = e, a = c(e, ["src", "autoMute"]);
+  let o = i.useRef(null),
     s = i.useCallback(e => {
       if (e.data["x-tiktok-player"] && e.origin === d && "onPlayerReady" === e.data.type) {
-        var t, r, i, o;
-        n && (null == (o = a.current) || null == (i = o.contentWindow) || i.postMessage({
+        var t, r, i, a;
+        n && (null == (a = o.current) || null == (i = a.contentWindow) || i.postMessage({
           type: "mute",
           "x-tiktok-player": true
-        }, e.origin)), null == (r = a.current) || null == (t = r.contentWindow) || t.postMessage({
+        }, e.origin)), null == (r = o.current) || null == (t = r.contentWindow) || t.postMessage({
           type: "play",
           "x-tiktok-player": true
         }, e.origin)
@@ -87,8 +87,8 @@ function _(e) {
   });
   return (0, r.jsx)(h, l({
     src: u,
-    ref: a
-  }, o))
+    ref: o
+  }, a))
 }
 
 function m(e) {
@@ -96,28 +96,28 @@ function m(e) {
     src: t,
     autoMute: n
   } = e, i = c(e, ["src", "autoMute"]);
-  let o = p(t, {
+  let a = p(t, {
     autoplay: "1",
     auto_play: "1",
     mute: n ? "1" : true
   });
   return (0, r.jsx)(h, l({
-    src: o
+    src: a
   }, i))
 }
 let h = Chunk473749.forwardRef(function(e, t) {
   var {
     allowFullScreen: n
   } = e, i = c(e, ["allowFullScreen"]);
-  let o = n ? "".concat(f, " allow-fullscreen") : f,
+  let a = n ? "".concat(f, " allow-fullscreen") : f,
     s = n ? "autoplay; fullscreen" : "autoplay";
   return (0, r.jsx)("iframe", l({
     ref: t,
-    className: a.embedIframe,
+    className: o.embedIframe,
     allow: s,
     frameBorder: 0,
     scrolling: "no",
-    sandbox: o,
+    sandbox: a,
     allowFullScreen: n
   }, i))
 });

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk468194 = require("./468194.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk490095 = require("./490095.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk940992 = require("./940992.js");
+  Chunk806512 = require("./806512.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,8 +68,8 @@ function A(e, t) {
   if (null == e) return {};
   var n, r, i = N(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -77,17 +77,17 @@ function A(e, t) {
 function N(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions),
-  R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewPadding),
+let P = (0, Chunk468194.Mg)(Chunk806512.__invalid_stickerPickerPreviewDimensions),
+  R = (0, Chunk468194.Mg)(Chunk806512.__invalid_stickerPickerPreviewPadding),
   w = 250,
   D = Chunk473749.memo(function(e) {
     let {
       isDisplayingIndividualStickers: t = false,
-      preferAnimation: o = true,
+      preferAnimation: a = true,
       getStickerItemProps: l,
       getStickerRowProps: S,
       gutterWidth: T,
@@ -141,7 +141,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             }), (0, c.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("97162")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("47985")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, I({
                 guildId: e.guild_id
               }, n))
@@ -159,7 +159,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             return (0, r.jsx)("div", C(I({}, J), {
               children: (0, r.jsxs)(c.P3F, {
                 "aria-label": e.name,
-                className: a()(v.createSticker, k, {
+                className: o()(v.createSticker, k, {
                   [v.createInspected]: f
                 }),
                 innerRef: G,
@@ -197,7 +197,7 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
             return (0, i.createElement)("div", C(I({}, J), {
               key: e.sticker.id
             }), (0, r.jsxs)(c.P3F, {
-              className: a()(v.sticker, k, {
+              className: o()(v.sticker, k, {
                 [v.stickerInspected]: f,
                 [v.showPulse]: Q === e.sticker.id
               }),
@@ -217,12 +217,12 @@ let P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
                 children: [!B && (0, r.jsx)("div", {
                   className: v.inspectedIndicator
                 }), (0, r.jsx)(E.Z, {
-                  className: a()(v.stickerNode, {
+                  className: o()(v.stickerNode, {
                     [v.stickerNodeDimmed]: B && !f && null != N && false !== N.rowIndex && false !== N.columnIndex,
                     [v.stickerNodeHidden]: S,
                     [v.stickerUnsendable]: Y && !(0, m.kl)(e.sticker, H, V)
                   }),
-                  disableAnimation: !f && !o,
+                  disableAnimation: !f && !a,
                   enlargeOnInteraction: B,
                   isInteracting: f,
                   maskAsset: f,

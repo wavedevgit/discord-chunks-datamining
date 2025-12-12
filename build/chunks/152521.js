@@ -12,7 +12,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk215023 = require("./215023.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js");
-let c = e => e === a.Vt.FRACTIONAL_PREMIUM ? l.CL : o.XAJ,
+let c = e => e === o.Vt.FRACTIONAL_PREMIUM ? l.CL : a.XAJ,
   u = () => {
     (0, Chunk266454.zu)(Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL) || ((0, Chunk266454.Q3)(Chunk704215.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, {
       dismissAction: Chunk921944.L.INDIRECT_ACTION,

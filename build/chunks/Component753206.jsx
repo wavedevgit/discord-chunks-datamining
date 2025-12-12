@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk628238 = require("./628238.js"),
   Chunk750030 = require("./750030.js"),
   Chunk492593 = require("./492593.jsx"),
   Chunk25015 = require("./25015.jsx"),
   Chunk963550 = require("./963550.jsx"),
   Chunk845080 = require("./845080.jsx"),
-  Chunk360514 = require("./360514.js");
+  Chunk548498 = require("./548498.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function E(e) {
   var t;
   let {
     message: n,
-    channel: o,
+    channel: a,
     compact: _,
     className: h,
     isGroupStart: E,
@@ -77,12 +77,12 @@ function E(e) {
     allowLinks: true,
     previewLinkTarget: true
   }), A = i.useMemo(() => (0, f.Z)(g(m({}, e), {
-    channel: o,
+    channel: a,
     guildId: I
-  })), [e, o, I]);
+  })), [e, a, I]);
   return (0, r.jsx)(c.Z, {
     compact: _,
-    className: a()(h, {
+    className: o()(h, {
       [p.message]: true,
       [p.cozyMessage]: !_,
       [p.groupStart]: E

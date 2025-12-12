@@ -54,7 +54,7 @@ class p {
       let i = this.listeners.get(Chunk473749.notification.id);
       if (null == Chunk481060) continue;
       let {
-        offsetHeight: o
+        offsetHeight: a
       } = Chunk481060.element;
       (Chunk481060.top !== exports || Chunk481060.height !== Chunk710845 || Chunk481060.index !== require) && (e = true), Chunk481060.top = exports, Chunk481060.height = Chunk710845, Chunk481060.index = require, 0 === exports && (this.matchHeight !== Chunk710845 && (e = true), this.matchHeight = Chunk710845), t += Chunk710845 + 8, require++
     }
@@ -121,7 +121,7 @@ let b = {
 };
 
 function y(e, t, n) {
-  let [o, d] = (0, i.q_F)(() => ({
+  let [a, d] = (0, i.q_F)(() => ({
     from: {
       opacity: 0,
       scale: 1,
@@ -136,18 +136,18 @@ function y(e, t, n) {
         var r;
         let {
           locked: i,
-          matchHeight: o,
+          matchHeight: a,
           height: d,
           top: _,
           index: y
         } = n;
         if (null == (r = s.default.getCurrentUser()) ? true : r.isStaff()) {
-          let t = a.Z.getWindow(u.$J),
+          let t = o.Z.getWindow(u.$J),
             n = null != t ? l.Z.windowSize((0, c.ZY)(t)) : true;
           f.info("Notification layout update", {
             id: e,
             locked: i,
-            matchHeight: o,
+            matchHeight: a,
             height: d,
             top: _,
             index: y
@@ -160,15 +160,15 @@ function y(e, t, n) {
           scale: h(y, i),
           transform: g(y, i, _),
           contentOpacity: E(y, i),
-          height: i ? o : d
+          height: i ? a : d
         };
         O({
           from: t ? true : {
             opacity: 0,
             scale: 1.1,
-            transform: -((i ? o : d) * 1),
+            transform: -((i ? a : d) * 1),
             contentOpacity: 1,
-            height: i ? o : d
+            height: i ? a : d
           },
           to: v,
           config: b
@@ -191,6 +191,6 @@ function y(e, t, n) {
     }
   }, [t, n, e, y]), {
     ref: O,
-    springs: o
+    springs: a
   }
 }

@@ -52,7 +52,7 @@ let d = 50,
   p = 100;
 
 function _(e, t) {
-  return t = null != t ? t : 1, u(l({}, a.We), {
+  return t = null != t ? t : 1, u(l({}, o.We), {
     position: {
       type: "static-random",
       minValue: {
@@ -88,7 +88,7 @@ let m = function(e) {
     confettiVelocityMultiplier: s,
     sprites: l,
     colors: c
-  } = e, [u, m] = i.useState(null), h = (0, o.uR)(n, u), [g, E] = i.useState(false);
+  } = e, [u, m] = i.useState(null), h = (0, a.uR)(n, u), [g, E] = i.useState(false);
   return i.useEffect(() => {
     let e = Array(f).fill(0);
     return null != t && h.isReady && !g && (e = e.map((n, r) => setTimeout(() => {
@@ -96,11 +96,11 @@ let m = function(e) {
     }, r * p))), () => {
       for (let t of e) clearTimeout(t)
     }
-  }, [h, t, g, s]), (0, r.jsx)(o.Ji, {
+  }, [h, t, g, s]), (0, r.jsx)(a.Ji, {
     ref: m,
-    sprites: null != l ? l : a.CA,
-    colors: null != c ? c : a.Br,
-    spriteWidth: a.Ko,
-    spriteHeight: a.Ko
+    sprites: null != l ? l : o.CA,
+    colors: null != c ? c : o.Br,
+    spriteWidth: o.Ko,
+    spriteHeight: o.Ko
   })
 }

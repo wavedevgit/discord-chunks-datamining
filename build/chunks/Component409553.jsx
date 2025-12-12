@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk921869 = require("./921869.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk493358 = require("./493358.js");
+  Chunk167945 = require("./167945.js");
 
 function u(e) {
   let {
@@ -19,7 +19,7 @@ function u(e) {
     onClose: n
   } = e, u = s.Z.getArticleURL(c.BhN.XBOX_CONNECTION), p = l.intl.format(l.t.CIc3IN, {
     helpdeskArticleUrl: u
-  }), f = r.useMemo(() => [{
+  }), b = r.useMemo(() => [{
     label: l.intl.string(l.t.ihQXsb),
     icon: i.gj8
   }, {
@@ -45,6 +45,6 @@ function u(e) {
       height: 160,
       alt: ""
     }),
-    valueProps: f
+    valueProps: b
   })
 }

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -33,18 +33,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk302463 = require("./302463.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk829675 = require("./829675.js");
+  Chunk176727 = require("./176727.js");
 
 function D(e) {
   let {
     className: t,
     onClick: n,
     children: i,
-    buttonRef: o
+    buttonRef: a
   } = e;
   return (0, r.jsx)(u.zx, {
-    buttonRef: o,
-    className: a()(w.button, t),
+    buttonRef: a,
+    className: o()(w.button, t),
     innerClassName: w.buttonInner,
     look: u.zx.Looks.OUTLINED,
     color: u.zx.Colors.WHITE,
@@ -86,8 +86,8 @@ function M() {
     t = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     n = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId(exports)),
     {
-      viewingRoles: o,
-      backNavigationSection: a,
+      viewingRoles: a,
+      backNavigationSection: o,
       isFullServerPreview: u,
       isServerShopPreview: v
     } = (0, Chunk442837.cj)([Chunk160404.Z], () => ({
@@ -97,39 +97,39 @@ function M() {
       isServerShopPreview: null != exports && Chunk160404.Z.isViewingServerShop(exports)
     }));
   if (null == Chunk120356 || null == exports) return null;
-  let M = L(a),
-    k = j(a),
+  let M = L(o),
+    k = j(o),
     U = require === Chunk176505.oC.GUILD_ONBOARDING,
     G = e => {
       let {
         backToSettings: n
       } = e;
-      null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(C.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && h.Z.open(t, a), a === C.pNK.ROLE_SUBSCRIPTIONS && (0, m.GN)(t))
+      null != t && (I.Z.isFullServerPreview(t) && (0, g.uL)(C.Z5c.CHANNEL(t)), p.ZP.shouldShowOnboarding(t) && (f.Z.finishOnboarding(t), (0, _.EI)(t)), (0, S.mL)(t), n && h.Z.open(t, o), o === C.pNK.ROLE_SUBSCRIPTIONS && (0, m.GN)(t))
     };
   return (0, Chunk54381.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
-    className: Chunk829675.notice,
+    className: Chunk176727.notice,
     children: [(0, Chunk54381.jsxs)(D, {
       onClick: () => G({
         backToSettings: true
       }),
-      className: Chunk829675.backButton,
+      className: Chunk176727.backButton,
       children: [(0, Chunk54381.jsx)(Chunk671533.Z, {
         width: 16,
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
-        className: Chunk829675.backArrow
+        className: Chunk176727.backArrow
       }), M]
     }), U && Chunk755721 ? (0, Chunk54381.jsx)("div", {
-      className: Chunk829675.noticeContents,
+      className: Chunk176727.noticeContents,
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk829675.noticeText,
+        className: Chunk176727.noticeText,
         children: Chunk388032.intl.string(Chunk388032.t.PxbiAf)
       })
     }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk829675.noticeContents,
+      className: Chunk176727.noticeContents,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk829675.noticeText,
+        className: Chunk176727.noticeText,
         children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
           numRoles: Object.keys(Chunk120356).length
         }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8t, {
@@ -174,7 +174,7 @@ function M() {
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       })]
-    }), Chunk755721 || a === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(x, {
+    }), Chunk755721 || o === Chunk981631.pNK.ROLE_SUBSCRIPTIONS ? null : (0, Chunk54381.jsx)(x, {
       onClick: () => G({
         backToSettings: false
       })
@@ -187,7 +187,7 @@ function k(e) {
     guildId: t
   } = e;
   return (0, s.e7)([I.Z], () => I.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: a()(w.settingsWrapper, {
+    className: o()(w.settingsWrapper, {
       [w.windows]: (0, v.isWindows)(),
       [w.osx]: (0, v.isMac)()
     }),

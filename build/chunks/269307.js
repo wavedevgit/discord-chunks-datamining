@@ -1,0 +1,24 @@
+/** Chunk was on 69773 **/
+/** chunk id: 269307, original params: e,t,n (module,exports,require) **/
+"use strict";
+module.exports = {
+  panel: "_79a1fed34c2d29d6-panel",
+  panelHeader: "_79a1fed34c2d29d6-panelHeader",
+  panelContent: "_79a1fed34c2d29d6-panelContent",
+  logo: "_79a1fed34c2d29d6-logo",
+  qrcodeContent: "_79a1fed34c2d29d6-qrcodeContent",
+  qrcodeCard: "_79a1fed34c2d29d6-qrcodeCard",
+  qrcodeOverlay: "_79a1fed34c2d29d6-qrcodeOverlay",
+  qrcodeSpinner: "_79a1fed34c2d29d6-qrcodeSpinner",
+  qrcodeText: "_79a1fed34c2d29d6-qrcodeText",
+  qrcodeTextHeading: "_79a1fed34c2d29d6-qrcodeTextHeading",
+  dividerContent: "_79a1fed34c2d29d6-dividerContent",
+  divider: "_79a1fed34c2d29d6-divider",
+  dividerText: "_79a1fed34c2d29d6-dividerText",
+  fallbackContent: "_79a1fed34c2d29d6-fallbackContent",
+  fallbackContentTextGroup: "_79a1fed34c2d29d6-fallbackContentTextGroup",
+  fallbackContentHeading: "_79a1fed34c2d29d6-fallbackContentHeading",
+  fallbackContentAction: "_79a1fed34c2d29d6-fallbackContentAction",
+  fallbackContentCode: "_79a1fed34c2d29d6-fallbackContentCode",
+  wumpus: "_79a1fed34c2d29d6-wumpus"
+}

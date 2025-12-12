@@ -21,16 +21,16 @@ module.exports = {
       return (e - t) / (n - t)
     }
 
-    function o(e, t, n) {
+    function a(e, t, n) {
       return t + e * (n - t)
     }
 
-    function a(e, t, n) {
+    function o(e, t, n) {
       return e * n + (1 - e) * t
     }
 
     function s(e, t, n) {
-      return a(2 * e - e * e, t, n)
+      return o(2 * e - e * e, t, n)
     }
 
     function l(e) {
@@ -49,8 +49,8 @@ module.exports = {
       return e <= 18 ? l(e) : e > 18 && e <= 44 ? c(e) : u(e)
     }
     var f = i(e / 1.7, 0, 20);
-    f = o(f, 0, .8);
-    var p = o(i(r / 1.7, 0, 20), .5, 200),
+    f = a(f, 0, .8);
+    var p = a(i(r / 1.7, 0, 20), .5, 200),
       _ = s(f, d(p), .01);
     return {
       tension: t(p),

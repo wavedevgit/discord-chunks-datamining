@@ -21,13 +21,13 @@ function _(e) {
     label: t,
     onChange: n,
     enabled: i,
-    subLabel: o
+    subLabel: a
   } = e;
-  return (0, r.jsx)(a.rsf, {
+  return (0, r.jsx)(o.rsf, {
     label: t,
     checked: !!i,
     onChange: n,
-    description: o
+    description: a
   })
 }
 
@@ -67,15 +67,15 @@ function m() {
         let {
           category: t,
           label: i,
-          subLabel: o
-        } = e, a = E[t], l = (0, r.jsx)(_, {
+          subLabel: a
+        } = e, o = E[t], l = (0, r.jsx)(_, {
           label: i(),
-          subLabel: o(),
+          subLabel: a(),
           enabled: n[t],
           onChange: e => g(t, e)
         }, i());
-        return null != a ? (0, r.jsx)(s.F, {
-          setting: a,
+        return null != o ? (0, r.jsx)(s.F, {
+          setting: o,
           children: l
         }, i()) : l
       }), (0, Chunk54381.jsxs)(Chunk921801.F, {

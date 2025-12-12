@@ -33,7 +33,7 @@ function u(e) {
     S = v[0],
     I = v[1];
   r.useEffect(function() {
-    (0, o.k$)(h, y)
+    (0, a.k$)(h, y)
   }, [h, y]);
   var T = r.useMemo(function() {
       return {
@@ -49,7 +49,7 @@ function u(e) {
         }])
       }
     }, [n, d, m, p, S]),
-    C = (0, a.D)(_ || E, y, T),
+    C = (0, o.D)(_ || E, y, T),
     A = C.state,
     N = C.styles,
     P = C.forceUpdate,
@@ -69,5 +69,5 @@ function u(e) {
         update: R || l
       }
     }, [O, I, n, A, N, R, P]);
-  return (0, o.$p)(g)(w)
+  return (0, a.$p)(g)(w)
 }

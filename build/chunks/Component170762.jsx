@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk73536 = require("./73536.js");
+  Chunk635346 = require("./635346.js");
 let l = e => {
   let {
     markAsDismissed: t
@@ -24,10 +24,10 @@ let l = e => {
       className: s.content,
       children: (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
-        children: a.intl.string(a.t.xdRf69)
+        children: o.intl.string(o.t.xdRf69)
       })
     }), (0, r.jsx)(i.P3F, {
-      onClick: () => t(o.L.UNKNOWN),
+      onClick: () => t(a.L.UNKNOWN),
       children: (0, r.jsx)(i.Dio, {
         size: "md",
         color: "currentColor",

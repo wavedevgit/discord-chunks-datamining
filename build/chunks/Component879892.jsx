@@ -61,8 +61,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let O = "apply-guild-boost-modal";
@@ -110,7 +110,7 @@ async function v(e) {
     contextKey: x
   });
   let j = [];
-  u.Z.isLoadedForPremiumSKUs() || j.push((0, s.Y2)()), c.Z.hasFetched || (j.push(o.jg()), j.push((0, a.X8)())), j.length > 0 && (null == S || S(true), await Promise.allSettled(j), null == S || S(false));
+  u.Z.isLoadedForPremiumSKUs() || j.push((0, s.Y2)()), c.Z.hasFetched || (j.push(a.jg()), j.push((0, o.X8)())), j.length > 0 && (null == S || S(true), await Promise.allSettled(j), null == S || S(false));
   let M = (0, f.vx)(c.Z.boostSlots),
     k = M.length,
     U = e => {
@@ -131,8 +131,8 @@ async function v(e) {
       return n => {
         var {
           onClose: i
-        } = n, o = b(n, ["onClose"]);
-        return (0, r.jsx)(t, E(h({}, o), {
+        } = n, a = b(n, ["onClose"]);
+        return (0, r.jsx)(t, E(h({}, a), {
           onClose: e => {
             i(), U(e)
           },

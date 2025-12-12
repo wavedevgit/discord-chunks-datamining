@@ -1,7 +1,7 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 14338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk670188 = require("./670188.jsx"),
   Chunk237583 = require("./237583.jsx"),
   Chunk768581 = require("./768581.js"),
-  Chunk374379 = require("./374379.js");
+  Chunk807788 = require("./807788.js");
 
-function _(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,64 +51,64 @@ function y(e, t) {
   }), e
 }
 
-function O(e) {
+function x(e) {
   let {
     channel: t,
     speaker: l,
     className: g
-  } = e, O = i.useRef(null), {
-    newestAnalyticsLocation: x
-  } = (0, u.ZP)(), j = (0, h.bp)(), {
-    reducedMotion: v
-  } = i.useContext(o.Sfi), C = (0, d.Z)({
+  } = e, x = i.useRef(null), {
+    newestAnalyticsLocation: j
+  } = (0, u.ZP)(), v = (0, h.bp)(), {
+    reducedMotion: C
+  } = i.useContext(o.Sfi), I = (0, d.Z)({
     userId: l.id
-  }), I = null != l.member ? (0, m.CA)(l.member) : null, S = e => {
+  }), _ = null != l.member ? (0, m.CA)(l.member) : null, S = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return n => (0, r.jsx)(e, y(_({}, n), {
+      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
+      return n => (0, r.jsx)(e, O(y({}, n), {
         user: l.user,
         guildId: t.guild_id,
         channel: t,
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", x)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", j)
       }))
     }, {
-      context: j
+      context: v
     })
   };
   return (0, r.jsx)(f.Z, {
-    targetElementRef: O,
+    targetElementRef: x,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
     children: e => (0, r.jsx)(s.u, {
-      targetElementRef: O,
+      targetElementRef: x,
       __unsupportedReactNodeAsText: l.userNick,
       position: "bottom",
-      children: (0, r.jsx)(o.P3F, y(_({}, e), {
-        innerRef: O,
+      children: (0, r.jsx)(o.P3F, O(y({}, e), {
+        innerRef: x,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
         onContextMenu: S,
         children: (0, r.jsx)(o.qEK, {
-          src: null != I ? I : l.user.getAvatarURL(t.guild_id, 24),
+          src: null != _ ? _ : l.user.getAvatarURL(t.guild_id, 24),
           size: o.EFr.SIZE_24,
           className: a()(b.avatar, g),
           "aria-label": l.userNick,
-          isSpeaking: C && !v.enabled
+          isSpeaking: I && !C.enabled
         })
       }))
     })
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     speakers: t,
     channel: n
@@ -118,7 +118,7 @@ function x(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(O, {
+    renderUser: (e, t, i) => (0, r.jsx)(x, {
       channel: n,
       speaker: e,
       className: t

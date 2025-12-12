@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 388610, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l;
+let r, i, a, o, s, l;
 require.d(exports, {
   Z: () => ee
 }), require("./997841.js"), require("./388685.js");
@@ -66,15 +66,15 @@ let A = Chunk981631.QZA.CLOSED,
   x = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
 function L(e) {
-  if (null == o || o.id !== e) returnfalse;
-  if (o === a) {
+  if (null == a || a.id !== e) returnfalse;
+  if (a === o) {
     let t = O.Z.getChannel(e);
     if (null == t) returnfalse;
-    a = o = t, s = O.Z.getChannel(a.parent_id)
+    o = a = t, s = O.Z.getChannel(o.parent_id)
   } else {
     let t = O.Z.getChannel(e);
     if (null == t) returnfalse;
-    o = t, null != a && (a = a.set("permissionOverwrites", o.permissionOverwrites), s = O.Z.getChannel(a.parent_id))
+    a = t, null != o && (o = o.set("permissionOverwrites", a.permissionOverwrites), s = O.Z.getChannel(o.parent_id))
   }
   returntrue
 }
@@ -82,8 +82,8 @@ function L(e) {
 function j(e) {
   let t = O.Z.getChannel(e.channelId);
   if (null == t) return k();
-  A = v.QZA.OPEN, a = o = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != a && (a = a.set("nsfw", a.isNSFW())), s = O.Z.getChannel(a.parent_id), l = a.getGuildId();
-  let n = a.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
+  A = v.QZA.OPEN, o = a = t, D = "location" in e && null != e.location ? e.location : null, i = "subsection" in e ? e.subsection : null, null != o && (o = o.set("nsfw", o.isNSFW())), s = O.Z.getChannel(o.parent_id), l = o.getGuildId();
+  let n = o.isModeratorReportChannel() ? v.CoT.PERMISSIONS : v.CoT.OVERVIEW;
   return N = {}, M({
     type: "CHANNEL_SETTINGS_SET_SECTION",
     section: null != r ? r : n,
@@ -92,8 +92,8 @@ function j(e) {
 }
 
 function M(e) {
-  r = e.section, i = e.subsection, null != a && r === v.CoT.INSTANT_INVITES && (R = true, m.tn.get({
-    url: v.ANM.INSTANT_INVITES(a.id),
+  r = e.section, i = e.subsection, null != o && r === v.CoT.INSTANT_INVITES && (R = true, m.tn.get({
+    url: v.ANM.INSTANT_INVITES(o.id),
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {
@@ -105,7 +105,7 @@ function M(e) {
 }
 
 function k() {
-  w = false, A = Chunk981631.QZA.CLOSED, r = null, a = o = null, s = null, P = {}
+  w = false, A = Chunk981631.QZA.CLOSED, r = null, o = a = null, s = null, P = {}
 }
 
 function U() {
@@ -113,7 +113,7 @@ function U() {
 }
 
 function G() {
-  o = a, A = Chunk981631.QZA.OPEN
+  a = o, A = Chunk981631.QZA.OPEN
 }
 
 function Z(e) {
@@ -124,10 +124,10 @@ function Z(e) {
   }, {})
 }
 let F = d().debounce(() => {
-  if (null == a || null == o) returnfalse;
-  let e = a.toJS(),
-    t = o.toJS();
-  x.every(n => e[n] === t[n]) && a !== o && (a = o, $.emitChange())
+  if (null == o || null == a) returnfalse;
+  let e = o.toJS(),
+    t = a.toJS();
+  x.every(n => e[n] === t[n]) && o !== a && (o = a, $.emitChange())
 }, 500);
 
 function B(e) {
@@ -136,7 +136,7 @@ function B(e) {
     channelType: n,
     topic: r,
     bitrate: i,
-    userLimit: o,
+    userLimit: a,
     nsfw: s,
     flags: l,
     rateLimitPerUser: c,
@@ -156,14 +156,14 @@ function B(e) {
     iconEmoji: S,
     themeColor: T
   } = e;
-  if (null == a) returnfalse;
-  null != t && (a = a.set("name", t)), null != r && (a = a.set("topic", r)), null != i && (a = a.set("bitrate", i)), null != o && (a = a.set("userLimit", o)), null != s && (a = a.set("nsfw", s)), null != l && (a = a.set("flags", l)), null != c && (a = a.set("rateLimitPerUser", c)), null != u && (a = a.set("defaultThreadRateLimitPerUser", u)), null != d && (a = a.set("threadMetadata", C(I({}, a.threadMetadata), {
+  if (null == o) returnfalse;
+  null != t && (o = o.set("name", t)), null != r && (o = o.set("topic", r)), null != i && (o = o.set("bitrate", i)), null != a && (o = o.set("userLimit", a)), null != s && (o = o.set("nsfw", s)), null != l && (o = o.set("flags", l)), null != c && (o = o.set("rateLimitPerUser", c)), null != u && (o = o.set("defaultThreadRateLimitPerUser", u)), null != d && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     autoArchiveDuration: d
-  }))), null != f && (a = a.set("threadMetadata", C(I({}, a.threadMetadata), {
+  }))), null != f && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     locked: f
-  }))), null != p && (a = a.set("threadMetadata", C(I({}, a.threadMetadata), {
+  }))), null != p && (o = o.set("threadMetadata", C(I({}, o.threadMetadata), {
     invitable: p
-  }))), null != _ && (a = a.set("defaultAutoArchiveDuration", _)), null != m && (a = a.set("template", m)), null != n && (a = a.set("type", n)), true !== g && (a = a.set("rtcRegion", g)), null != E && (a = a.set("videoQualityMode", E)), true !== h && (a = a.set("defaultReactionEmoji", h)), null != b && (a = a.set("availableTags", b)), null != y && (a = a.set("defaultSortOrder", y)), null != v && (a = a.set("defaultTagSetting", v)), null != O && (a = a.set("defaultForumLayout", O)), true !== S && (a = a.set("iconEmoji", S)), null != T && (a = a.set("themeColor", T)), F()
+  }))), null != _ && (o = o.set("defaultAutoArchiveDuration", _)), null != m && (o = o.set("template", m)), null != n && (o = o.set("type", n)), true !== g && (o = o.set("rtcRegion", g)), null != E && (o = o.set("videoQualityMode", E)), true !== h && (o = o.set("defaultReactionEmoji", h)), null != b && (o = o.set("availableTags", b)), null != y && (o = o.set("defaultSortOrder", y)), null != v && (o = o.set("defaultTagSetting", v)), null != O && (o = o.set("defaultForumLayout", O)), true !== S && (o = o.set("iconEmoji", S)), null != T && (o = o.set("themeColor", T)), F()
 }
 
 function V(e) {
@@ -199,14 +199,14 @@ function W(e) {
 }
 
 function K(e) {
-  return !!L(e) && null != a && (null != l && null == a.permissionOverwrites[l] && (l = a.getGuildId()), true)
+  return !!L(e) && null != o && (null != l && null == o.permissionOverwrites[l] && (l = o.getGuildId()), true)
 }
 
 function z(e) {
   let {
     channels: t
   } = e;
-  if (null == a) returnfalse;
+  if (null == o) returnfalse;
   let n = false;
   for (let e of t) n = K(e.id) || n;
   return n
@@ -225,7 +225,7 @@ function Q(e) {
       id: t
     }
   } = e;
-  if (null == a || a.id !== t) returnfalse;
+  if (null == o || o.id !== t) returnfalse;
   A = v.QZA.CLOSED
 }
 
@@ -240,7 +240,7 @@ class J extends(c = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z)
   }
   hasChanges() {
-    return a !== o
+    return o !== a
   }
   isOpen() {
     return w
@@ -258,7 +258,7 @@ class J extends(c = Chunk442837.ZP.Store) {
     return this.hasChanges()
   }
   getChannel() {
-    return a
+    return o
   }
   getFormState() {
     return A
@@ -270,7 +270,7 @@ class J extends(c = Chunk442837.ZP.Store) {
     return {
       submitting: A === Chunk981631.QZA.SUBMITTING,
       errors: N,
-      channel: a,
+      channel: o,
       section: r,
       subsection: i,
       invites: P,

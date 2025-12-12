@@ -10,8 +10,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk594174 = require("./594174.js");
 
 function s(e) {
-  let t = (0, i.e7)([a.default], () => a.default.getUser(null == e ? true : e.creator_id), [e]);
+  let t = (0, i.e7)([o.default], () => o.default.getUser(null == e ? true : e.creator_id), [e]);
   return r.useEffect(() => {
-    null == t && (null == e ? true : e.creator_id) != null && o.Z.requestMembersById(e.guild_id, e.creator_id)
+    null == t && (null == e ? true : e.creator_id) != null && a.Z.requestMembersById(e.guild_id, e.creator_id)
   }, [e, t]), t
 }

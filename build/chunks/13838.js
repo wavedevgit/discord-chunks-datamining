@@ -118,7 +118,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          s = Object.values(E.Z.getVoiceStatesForChannel(l.id));
+          s = Object.values(_.Z.getVoiceStatesForChannel(l.id));
         return n && i().differenceBy(s, n, e => {
           let {
             userId: t
@@ -151,7 +151,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          s = Object.values(E.Z.getVoiceStatesForChannel(l.id));
+          s = Object.values(_.Z.getVoiceStatesForChannel(l.id));
         return i().differenceBy(n, s, e => {
           let {
             userId: t
@@ -184,7 +184,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          s = Object.values(E.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
+          s = Object.values(_.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
         return i().differenceWith(s, n, i().isEqual).forEach(e => r(e)), s
       }
     }
@@ -198,11 +198,11 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, v.zy)(_.Z.getState()),
-        hostname: _.Z.getHostname(),
-        pings: _.Z.getPings(),
-        average_ping: _.Z.getAveragePing(),
-        last_ping: _.Z.getLastPing()
+        state: (0, v.zy)(b.Z.getState()),
+        hostname: b.Z.getHostname(),
+        pings: b.Z.getPings(),
+        average_ping: b.Z.getAveragePing(),
+        last_ping: b.Z.getLastPing()
       };
       return i().isEqual(r, t) || n(r), r
     }
@@ -332,7 +332,7 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        currentUser: b.default.getCurrentUser()
+        currentUser: E.default.getCurrentUser()
       };
       return null == r.currentUser || null != t && (0, s.Z)(r, t) || n((0, T.Z)(r.currentUser)), r
     }

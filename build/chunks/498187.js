@@ -64,10 +64,10 @@ let g = {
 function b(e) {
   let t, n, {
       entry: i,
-      location: a,
+      location: o,
       baseEntryData: c
     } = e,
-    u = (0, o.q)(i.extra.application_id),
+    u = (0, a.q)(i.extra.application_id),
     p = null == u ? true : u.getIconURL(d.Si.LARGE),
     m = i.extra.game_name;
   if (null != i.extra.platform) {
@@ -77,7 +77,7 @@ function b(e) {
     })
   }
   n = i.content_type === r.s.PLAYED_GAME && (0, l.kr)(i) && !(0, l.n2)(i) ? f.t.vPg1JT : f.t.rPqqts;
-  let b = E[a],
+  let b = E[o],
     y = {
       onClick: (0, s.Z)({
         location: b,

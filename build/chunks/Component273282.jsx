@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 273282, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => x
+  c: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,54 +17,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk30513 = require("./30513.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk43628 = require("./43628.js");
+  Chunk434170 = require("./434170.js");
 
-function x(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: x
+    buttonClassName: h
   } = e, {
-    analyticsLocations: b
-  } = (0, s.ZP)(), j = t.features.has(g.GuildFeatures.INVITE_SPLASH), _ = n && j, v = i.useRef(null), O = i.useCallback(e => {
+    analyticsLocations: x
+  } = (0, a.ZP)(), j = t.features.has(g.GuildFeatures.INVITE_SPLASH), v = n && j, O = i.useRef(null), C = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
-  }, []), C = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, d.E6)({
+  }, []), y = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
-      analyticsLocations: b,
+      analyticsLocations: x,
       analyticsSection: g.jXE.GUILD_INVITE_BACKGROUND,
       analyticsObject: g.qAy.BUTTON_CTA,
-      perks: (0, m.o9)()
+      perks: (0, f.o9)()
     })
-  }, [b, t]), y = i.useCallback(() => {
+  }, [x, t]), N = i.useCallback(() => {
     var e;
-    null == (e = v.current) || e.activateUploadDialogue()
+    null == (e = O.current) || e.activateUploadDialogue()
   }, []);
   return j ? (0, r.jsxs)("div", {
-    className: x,
+    className: h,
     children: [(0, r.jsx)(l.zxk, {
-      disabled: !_,
+      disabled: !v,
       variant: "primary",
-      text: f.intl.string(f.t.yG2pUi),
-      onClick: y
+      text: b.intl.string(b.t.yG2pUi),
+      onClick: N
     }), (0, r.jsx)("div", {
-      className: h.hiddenInputContainer,
+      className: p.hiddenInputContainer,
       children: (0, r.jsx)(o.ZP, {
-        ref: v,
-        disabled: !_,
-        onChange: O,
-        maxFileSizeBytes: p.B,
-        onFileSizeError: () => (0, a.Z)(p.B),
+        ref: O,
+        disabled: !v,
+        onChange: C,
+        maxFileSizeBytes: m.B,
+        onFileSizeError: () => (0, s.Z)(m.B),
         tabIndex: false,
         "aria-hidden": true
       })
     })]
   }) : (0, r.jsx)("div", {
-    className: x,
-    children: (0, r.jsx)(u.v, {
-      onClick: C
+    className: h,
+    children: (0, r.jsx)(d.v, {
+      onClick: y
     })
   })
 }

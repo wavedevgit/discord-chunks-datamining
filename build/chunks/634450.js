@@ -11,27 +11,27 @@ function i(e, t) {
   e.pop()
 }
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
-let o = function(e, t) {
+let a = function(e, t) {
   true === t && (t = "");
-  var n, o = e && e.split("/") || [],
-    a = t && t.split("/") || [],
+  var n, a = e && e.split("/") || [],
+    o = t && t.split("/") || [],
     s = e && r(e),
     l = t && r(t),
     c = s || l;
-  if (e && r(e) ? a = o : o.length && (a.pop(), a = a.concat(o)), !a.length) return "/";
-  if (a.length) {
-    var u = a[a.length - 1];
+  if (e && r(e) ? o = a : a.length && (o.pop(), o = o.concat(a)), !o.length) return "/";
+  if (o.length) {
+    var u = o[o.length - 1];
     n = "." === u || ".." === u || "" === u
   } else n = false;
-  for (var d = 0, f = a.length; f >= 0; f--) {
-    var p = a[f];
-    "." === p ? i(a, f) : ".." === p ? (i(a, f), d++) : d && (i(a, f), d--)
+  for (var d = 0, f = o.length; f >= 0; f--) {
+    var p = o[f];
+    "." === p ? i(o, f) : ".." === p ? (i(o, f), d++) : d && (i(o, f), d--)
   }
   if (!c)
-    for (; d--;) a.unshift("..");
-  !c || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
-  var _ = a.join("/");
+    for (; d--;) o.unshift("..");
+  !c || "" === o[0] || o[0] && r(o[0]) || o.unshift("");
+  var _ = o.join("/");
   return n && "/" !== _.substr(false) && (_ += "/"), _
 }

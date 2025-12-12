@@ -8,12 +8,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk325767 = require("./325767.js"),
   Chunk645652 = require("./645652.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646428 = require("./646428.js");
+  Chunk889752 = require("./889752.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,9 +78,9 @@ function h(e) {
   return (0, r.jsx)(l.Z, {
     className: t,
     forceUseColor: n,
-    children: (0, r.jsx)(a.IGR, {
+    children: (0, r.jsx)(o.IGR, {
       disableColor: true,
-      className: o()(u.tag, {
+      className: a()(u.tag, {
         [u.inheritTextColor]: i,
         [u.inheritBackgroundColor]: s
       }),

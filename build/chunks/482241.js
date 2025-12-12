@@ -32,22 +32,22 @@ let m = {
     rejectWithError: false
   }),
   joinVoiceEvent(e, t) {
-    o.default.selectVoiceChannel(t), (0, a.uL)(_.Z5c.CHANNEL(e, t))
+    a.default.selectVoiceChannel(t), (0, o.uL)(_.Z5c.CHANNEL(e, t))
   },
   saveEvent(e, t, n) {
     let i = p.pg.has(t.entityType) ? t.channelId : null,
-      o = p._U.has(t.entityType) ? t.entityMetadata : null,
-      a = null != t.image && false === /^data:/.test(t.image) ? true : t.image,
+      a = p._U.has(t.entityType) ? t.entityMetadata : null,
+      o = null != t.image && false === /^data:/.test(t.image) ? true : t.image,
       s = {
         name: t.name,
         description: t.description,
-        image: a,
+        image: o,
         privacy_level: t.privacyLevel,
         scheduled_start_time: t.scheduledStartTime,
         scheduled_end_time: t.scheduledEndTime,
         entity_type: t.entityType,
         channel_id: i,
-        entity_metadata: o,
+        entity_metadata: a,
         recurrence_rule: (0, d.J1)(t.recurrenceRule)
       };
     return r.tn.patch({
@@ -102,7 +102,7 @@ let m = {
     }), n
   },
   async fetchGuildEventUserCounts(e, t, n) {
-    let o = {
+    let a = {
         url: _.ANM.GUILD_EVENT_USER_COUNTS(e, t),
         query: {
           guild_scheduled_event_exception_ids: n
@@ -111,12 +111,12 @@ let m = {
       },
       {
         body: {
-          guild_scheduled_event_count: a,
+          guild_scheduled_event_count: o,
           guild_scheduled_event_exception_counts: s
         }
-      } = await r.tn.get(o),
+      } = await r.tn.get(a),
       l = {
-        eventCount: a,
+        eventCount: o,
         recurrenceCounts: s
       };
     return i.Z.dispatch({
@@ -153,45 +153,45 @@ let m = {
       guildId: e
     })
   },
-  async createRsvpForGuildEvent(e, t, n, o) {
-    let a = s.default.getId();
+  async createRsvpForGuildEvent(e, t, n, a) {
+    let o = s.default.getId();
     try {
       return i.Z.dispatch({
         type: "GUILD_SCHEDULED_EVENT_USER_ADD",
-        userId: a,
+        userId: o,
         guildId: n,
         guildEventId: e,
         guildEventExceptionId: t,
-        response: o
+        response: a
       }), await r.tn.put({
         url: _.ANM.USER_GUILD_EVENT(n, e, t),
         body: {
-          response: o
+          response: a
         },
         rejectWithError: false
       })
     } catch (r) {
       throw i.Z.dispatch({
         type: "GUILD_SCHEDULED_EVENT_USER_REMOVE",
-        userId: a,
-        guildId: n,
-        guildEventId: e,
-        guildEventExceptionId: t,
-        response: o
-      }), r
-    }
-  },
-  async deleteRsvpForGuildEvent(e, t, n) {
-    let o = s.default.getId(),
-      a = u.ZP.getRsvp(e, t, o);
-    if (null != a) try {
-      return i.Z.dispatch({
-        type: "GUILD_SCHEDULED_EVENT_USER_REMOVE",
         userId: o,
         guildId: n,
         guildEventId: e,
         guildEventExceptionId: t,
-        response: a.response
+        response: a
+      }), r
+    }
+  },
+  async deleteRsvpForGuildEvent(e, t, n) {
+    let a = s.default.getId(),
+      o = u.ZP.getRsvp(e, t, a);
+    if (null != o) try {
+      return i.Z.dispatch({
+        type: "GUILD_SCHEDULED_EVENT_USER_REMOVE",
+        userId: a,
+        guildId: n,
+        guildEventId: e,
+        guildEventExceptionId: t,
+        response: o.response
       }), await r.tn.del({
         url: _.ANM.USER_GUILD_EVENT(n, e, t),
         rejectWithError: false
@@ -199,11 +199,11 @@ let m = {
     } catch (r) {
       throw i.Z.dispatch({
         type: "GUILD_SCHEDULED_EVENT_USER_ADD",
-        userId: o,
+        userId: a,
         guildId: n,
         guildEventId: e,
         guildEventExceptionId: t,
-        response: a.response
+        response: o.response
       }), r
     }
   },
@@ -219,12 +219,12 @@ let m = {
     }
   },
   async fetchUsersForGuildEvent(e, t, n) {
-    let o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : p.rC;
+    let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : p.rC;
     if (null == e || null == n) return [];
-    let a = await r.tn.get({
+    let o = await r.tn.get({
       url: _.ANM.GUILD_EVENT_USERS(n, e, t),
       query: {
-        limit: o,
+        limit: a,
         with_member: true,
         upgrade_response_type: true
       },
@@ -233,24 +233,24 @@ let m = {
     return i.Z.dispatch({
       type: "GUILD_SCHEDULED_EVENT_USERS_FETCH_SUCCESS",
       guildEventId: e,
-      guildScheduledEventUsers: a.body,
+      guildScheduledEventUsers: o.body,
       guildId: n,
       guildEventExceptionId: t
-    }), a.body.users
+    }), o.body.users
   },
   createGuildEventException(e, t, n) {
     let {
       original_scheduled_start_time: i,
-      scheduled_start_time: o,
-      scheduled_end_time: a,
+      scheduled_start_time: a,
+      scheduled_end_time: o,
       is_canceled: s
     } = e;
     return r.tn.post({
       url: _.ANM.GUILD_EVENT_EXCEPTIONS(t, n),
       body: {
         original_scheduled_start_time: i,
-        scheduled_start_time: o,
-        scheduled_end_time: a,
+        scheduled_start_time: a,
+        scheduled_end_time: o,
         is_canceled: s
       },
       rejectWithError: false
@@ -258,15 +258,15 @@ let m = {
   },
   updateGuildEventException(e, t, n, i) {
     let {
-      scheduled_start_time: o,
-      scheduled_end_time: a,
+      scheduled_start_time: a,
+      scheduled_end_time: o,
       is_canceled: s
     } = e;
     return r.tn.patch({
       url: _.ANM.GUILD_EVENT_EXCEPTION(t, n, i),
       body: {
-        scheduled_start_time: o,
-        scheduled_end_time: a,
+        scheduled_start_time: a,
+        scheduled_end_time: o,
         is_canceled: s
       },
       rejectWithError: false

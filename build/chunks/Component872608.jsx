@@ -11,14 +11,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk546791 = require("./546791.js"),
   Chunk198952 = require("./198952.jsx"),
-  Chunk869392 = require("./869392.js");
+  Chunk789651 = require("./789651.js");
 let d = e => {
   let {
     userId: t,
     dmsSent: n,
     callCount: d
   } = e, f = (0, i.e7)([s.default], () => s.default.getUser(t));
-  return true === f ? null : (0, r.jsx)(o.i_, {
+  return true === f ? null : (0, r.jsx)(a.i_, {
     title: f.username,
     body: (0, l.Kp)(n, d),
     asContainer: true,
@@ -26,7 +26,7 @@ let d = e => {
       className: u.container,
       children: (0, r.jsx)(c.r, {
         user: f,
-        avatarSize: a.EFr.SIZE_40
+        avatarSize: o.EFr.SIZE_40
       })
     })
   })

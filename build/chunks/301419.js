@@ -60,19 +60,19 @@ function f(e) {
     } = n.extra.media,
     p = n.extra.artist.name,
     _ = {
-      onClick: () => (0, i.o)(a.Hw.ALBUM, n.extra.media.external_parent_id),
+      onClick: () => (0, i.o)(o.Hw.ALBUM, n.extra.media.external_parent_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
         itemName: n.extra.media.parent_title
       })
     },
     m = {
-      onClick: () => (0, i.o)(a.Hw.ARTIST, n.extra.artist.external_id),
+      onClick: () => (0, i.o)(o.Hw.ARTIST, n.extra.artist.external_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
         itemName: p
       })
     };
   return u === r.p.SPOTIFY && (t = {
-    type: o.kG.SPOTIFY
+    type: a.kG.SPOTIFY
   }), d(c({}, l), {
     title: p,
     thumbnailUrl: f,

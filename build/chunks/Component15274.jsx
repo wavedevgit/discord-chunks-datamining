@@ -55,15 +55,15 @@ function d(e, t) {
 function f(e) {
   let {
     eventId: t,
-    recurrenceId: o
+    recurrenceId: a
   } = e;
   (0, i.openModalLazy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("4096"), n.e("47135")]).then(n.bind(n, 697849));
+    } = await Promise.all([n.e("4096"), n.e("66452")]).then(n.bind(n, 697849));
     return n => (0, r.jsx)(e, c({
       guildScheduledEventId: t,
-      initialRecurrenceId: o
+      initialRecurrenceId: a
     }, n))
   })
 }
@@ -71,7 +71,7 @@ async function p(e, t) {
   let {
     guild_id: n
   } = e;
-  await o.Z.transitionToGuildSync(n, t), f({
+  await a.Z.transitionToGuildSync(n, t), f({
     eventId: e.id,
     event: e
   })
@@ -86,6 +86,6 @@ function _(e, t) {
       channel: e
     }))
   }, {
-    contextKey: t === a.IlC.POPOUT ? s.u1 : s.z1
+    contextKey: t === o.IlC.POPOUT ? s.u1 : s.z1
   })
 }

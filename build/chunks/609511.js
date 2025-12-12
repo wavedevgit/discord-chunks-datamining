@@ -50,10 +50,10 @@ module.exports = function(e, t, n) {
     case _:
       return new A(e);
     case f:
-      return o(e);
+      return a(e);
     case p:
       return new A;
     case m:
-      return a(e)
+      return o(e)
   }
 }

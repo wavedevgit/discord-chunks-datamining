@@ -3,20 +3,20 @@
 "use strict";
 var Chunk169774 = require("./169774.js"),
   Chunk816731 = require("./816731.js"),
-  o = Chunk169774.isPlatform("Mac OS X"),
-  a = {
+  a = Chunk169774.isPlatform("Mac OS X"),
+  o = {
     isCtrlKeyCommand: function(e) {
       return !!e.ctrlKey && !e.altKey
     },
     isOptionKeyCommand: function(e) {
-      return o && e.altKey
+      return a && e.altKey
     },
     usesMacOSHeuristics: function() {
-      return o
+      return a
     },
     hasCommandModifier: function(e) {
-      return o ? !!e.metaKey && !e.altKey : a.isCtrlKeyCommand(e)
+      return a ? !!e.metaKey && !e.altKey : o.isCtrlKeyCommand(e)
     },
     isSoftNewlineEvent: Chunk816731
   };
-module.exports = a
+module.exports = o

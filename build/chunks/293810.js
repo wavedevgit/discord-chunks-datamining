@@ -9,14 +9,14 @@ require.d(exports, {
   Qs: () => l,
   Xy: () => s,
   e3: () => c,
-  fF: () => o,
-  iP: () => a,
+  fF: () => a,
+  iP: () => o,
   iv: () => _
 });
 var Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js");
-let o = 3,
-  a = "(max-width: 485px)",
+let a = 3,
+  o = "(max-width: 485px)",
   s = "(max-height: 450px)";
 var l = function(e) {
     return e[e.CHANNEL = 1] = "CHANNEL", e[e.INTANGIBLE = 2] = "INTANGIBLE", e

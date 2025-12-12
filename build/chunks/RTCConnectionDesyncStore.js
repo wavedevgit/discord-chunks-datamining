@@ -38,7 +38,7 @@ function v(e, t, n) {
     }),
     i = (0, m.PH)(r, null != t ? t : h.ME, e.id);
   b.set(e.id, i);
-  let o = {
+  let a = {
     type: g.fO.USER,
     user: e,
     id: e.id,
@@ -55,7 +55,7 @@ function v(e, t, n) {
     localVideoDisabled: false,
     isPoppedOut: false
   };
-  y.set(e.id, o)
+  y.set(e.id, a)
 }
 
 function S(e) {
@@ -91,7 +91,7 @@ function A(e) {
     state: t,
     context: n
   } = e;
-  if (n !== o.Yn.DEFAULT || t !== h.hes.DISCONNECTED) returnfalse;
+  if (n !== a.Yn.DEFAULT || t !== h.hes.DISCONNECTED) returnfalse;
   T()
 }
 
@@ -115,7 +115,7 @@ function P(e) {
     channelId: r,
     context: i
   } = e;
-  return i === o.Yn.DEFAULT && t.reduce((e, t) => {
+  return i === a.Yn.DEFAULT && t.reduce((e, t) => {
     if (null != _.Z.getVoiceStateForChannel(r, t)) return e;
     let i = p.default.getUser(t);
     return null == i ? (O.add(t), e) : (v(i, n, r), true)
@@ -127,7 +127,7 @@ function R(e) {
     userId: t,
     context: n
   } = e;
-  return n === o.Yn.DEFAULT && S(t)
+  return n === a.Yn.DEFAULT && S(t)
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {

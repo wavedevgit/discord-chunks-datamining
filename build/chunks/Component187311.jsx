@@ -27,12 +27,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk796943 = require("./796943.js"),
-  Chunk582425 = require("./582425.js"),
-  Chunk345554 = require("./345554.js"),
-  Chunk88490 = require("./88490.js"),
-  Chunk466674 = require("./466674.js"),
-  Chunk201284 = require("./201284.js");
+  Chunk134781 = require("./134781.js"),
+  Chunk691091 = require("./691091.js"),
+  Chunk347516 = require("./347516.js"),
+  Chunk941714 = require("./941714.js"),
+  Chunk466410 = require("./466410.js"),
+  Chunk97794 = require("./97794.js");
 
 function R(e) {
   let {
@@ -56,10 +56,10 @@ function E(e) {
   let {
     onVideoLoaded: t,
     isLoading: n
-  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), p = (0, c.ZP)(), x = (0, l.apv)(p), h = x ? A.Z : T.Z, b = x ? S.Z : L.Z, C = r.useRef(null), j = r.useRef(null), [g, _] = r.useState(false), [v, y] = r.useState(false), [N, O] = r.useState(false);
+  } = e, i = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), [u, m] = r.useState(!i), b = (0, c.ZP)(), p = (0, l.apv)(b), x = p ? A.Z : T.Z, h = p ? S.Z : L.Z, C = r.useRef(null), j = r.useRef(null), [g, v] = r.useState(false), [y, N] = r.useState(false), [O, _] = r.useState(false);
   r.useEffect(() => {
-    g && v && N && t()
-  }, [g, v, N, t]), r.useEffect(() => {
+    g && y && O && t()
+  }, [g, y, O, t]), r.useEffect(() => {
     n || i || setTimeout(() => {
       var e;
       null == (e = C.current) || e.play()
@@ -83,9 +83,9 @@ function E(e) {
         [w.hidden]: u
       }),
       controls: false,
-      onCanPlayThrough: r.useCallback(() => y(true), []),
+      onCanPlayThrough: r.useCallback(() => N(true), []),
       children: (0, a.jsx)("source", {
-        src: b,
+        src: h,
         type: "video/webm"
       })
     }), (0, a.jsx)(f.Z, {
@@ -95,16 +95,16 @@ function E(e) {
       playsInline: true,
       className: w.centerOrb,
       controls: false,
-      onCanPlayThrough: r.useCallback(() => _(true), []),
+      onCanPlayThrough: r.useCallback(() => v(true), []),
       onEnded: P,
       children: (0, a.jsx)("source", {
-        src: h,
+        src: x,
         type: "video/webm"
       })
     }), (0, a.jsxs)("div", {
       className: w.smallOrbContainer,
       children: [(0, a.jsx)(R, {
-        onVideoLoaded: r.useCallback(() => O(true), [])
+        onVideoLoaded: r.useCallback(() => _(true), [])
       }), (0, a.jsx)(R, {}), (0, a.jsx)(R, {}), (0, a.jsx)(R, {})]
     })]
   })
@@ -118,12 +118,12 @@ function D(e) {
     orbsBalance: i,
     onVideoLoaded: s
   } = e, o = async () => {
-    (0, p.Y)({
-      pageType: N.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: N.jXE.ORBS_REWARD_MODAL,
-      ctaObject: N.qAy.CTA_TO_ORBS_SHOP
+    (0, b.Y)({
+      pageType: O.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: O.jXE.ORBS_REWARD_MODAL,
+      ctaObject: O.qAy.CTA_TO_ORBS_SHOP
     }), await n(), (0, m.mK)({
-      tab: O.AW.ORBS,
+      tab: _.AW.ORBS,
       analyticsLocations: [],
       analyticsSource: u.Z.QUEST_REWARD_MODAL
     })
@@ -137,7 +137,7 @@ function D(e) {
       className: w.copyContainer,
       children: [(0, a.jsxs)("div", {
         className: w.heading,
-        children: [(0, a.jsx)(h.M, {
+        children: [(0, a.jsx)(x.M, {
           shouldUseThemeColor: true,
           className: w.orbsIcon
         }), (0, a.jsx)(l.Heading, {
@@ -181,27 +181,27 @@ function k(e) {
   } = e, d = null != (n = (0, j.B4)(i.id)) ? n : i, u = (null == (t = d.userStatus) ? true : t.claimedAt) != null, {
     balance: m,
     error: f
-  } = (0, x.A)(), p = (0, g.LM)(d.config), [h, N] = r.useState(u ? "success" : "loading"), [O, w] = r.useState(false), T = r.useCallback(() => {
+  } = (0, p.A)(), b = (0, g.LM)(d.config), [x, O] = r.useState(u ? "success" : "loading"), [_, w] = r.useState(false), T = r.useCallback(() => {
     w(true)
   }, []);
   r.useEffect(() => {
-    u || "loading" !== h || (0, b.QB)(d.id, C.y$.CROSS_PLATFORM, c).then(() => N("success")).catch(() => N("error"))
-  }, [d.id, u, h, c]);
-  let A = !O || "loading" === h || null == m && null == f,
-    L = "error" === h || null == p || null == m && null != f;
-  return (0, a.jsx)(v.Z, {
+    u || "loading" !== x || (0, h.QB)(d.id, C.y$.CROSS_PLATFORM, c).then(() => O("success")).catch(() => O("error"))
+  }, [d.id, u, x, c]);
+  let A = !_ || "loading" === x || null == m && null == f,
+    L = "error" === x || null == b || null == m && null != f;
+  return (0, a.jsx)(y.Z, {
     onClose: s,
     transitionState: o,
     quest: d,
     sourceQuestContent: l,
-    location: y.dr.ORBS_REWARD_MODAL,
+    location: N.dr.ORBS_REWARD_MODAL,
     isRewardContentLoading: A,
     rewardContentHasError: L,
-    rewardContent: L ? null : (0, a.jsx)(_.Z, {
+    rewardContent: L ? null : (0, a.jsx)(v.Z, {
       rewardName: P.intl.string(P.t.Lmysvd),
       children: (0, a.jsx)(D, {
         onClose: s,
-        orbsEarned: p,
+        orbsEarned: b,
         orbsBalance: m,
         isLoading: A,
         onVideoLoaded: T

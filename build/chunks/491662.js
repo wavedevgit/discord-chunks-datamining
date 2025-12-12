@@ -10,14 +10,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk881998 = require("./881998.js");
 
 function s(e, t) {
-  let n = (0, i.e7)([a.default], () => a.default.getNewestTokenForApplication(e)),
-    s = (0, i.e7)([a.default], () => null != e ? a.default.getFetchStateForApplication(e) : a.FetchState.NOT_FETCHED),
-    l = s === a.FetchState.FETCHED,
+  let n = (0, i.e7)([o.default], () => o.default.getNewestTokenForApplication(e)),
+    s = (0, i.e7)([o.default], () => null != e ? o.default.getFetchStateForApplication(e) : o.FetchState.NOT_FETCHED),
+    l = s === o.FetchState.FETCHED,
     {
       disableFetch: c = false
     } = null != t ? t : {};
   return r.useEffect(() => {
-    c || s !== a.FetchState.NOT_FETCHED || null != e && o.Z.fetchByApplicationId(e)
+    c || s !== o.FetchState.NOT_FETCHED || null != e && a.Z.fetchByApplicationId(e)
   }, [c, s, e]), {
     token: n,
     fetched: l

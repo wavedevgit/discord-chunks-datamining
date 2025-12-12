@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk360920 = require("./360920.jsx"),
-  Chunk301106 = require("./301106.js");
+  Chunk693257 = require("./693257.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,12 +81,12 @@ let d = e => {
     onDoubleClick: _,
     onMouseDown: y,
     onContextMenu: m,
-    children: [(0, r.jsx)(o.P, u(l({}, v), {
+    children: [(0, r.jsx)(a.P, u(l({}, v), {
       innerRef: C,
       focusProps: l({
         ringTarget: N
       }, d),
-      className: a.focusTarget,
+      className: o.focusTarget,
       "aria-label": S,
       "aria-describedby": I,
       onClick: e => {

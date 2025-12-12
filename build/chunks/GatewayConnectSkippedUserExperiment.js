@@ -2,7 +2,7 @@
 /** chunk id: 249308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => o,
+  L: () => a,
   n: () => i
 });
 let r = (0, require("./818083.js").B)({
@@ -36,7 +36,7 @@ function i() {
   }).logSkipped
 }
 
-function o() {
+function a() {
   return r.getCurrentConfig({
     location: "shouldLogPostConnectSkipped"
   }).logPostSkipped

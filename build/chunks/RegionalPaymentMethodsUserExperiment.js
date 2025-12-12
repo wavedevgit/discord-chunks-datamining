@@ -4,12 +4,12 @@
 require.d(exports, {
   Ul: () => u,
   YE: () => l,
-  ZP: () => a
+  ZP: () => o
 }), require("./388685.js");
 var Chunk818083 = require("./818083.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2021-08_regional_payment_methods",
     label: "Regional Payment Methods",
@@ -167,7 +167,7 @@ let a = (0, Chunk818083.B)({
   ]);
 
 function l(e) {
-  return true !== e && s.has(e) ? s.get(e) : o.intl.string(o.t.jdPblk)
+  return true !== e && s.has(e) ? s.get(e) : a.intl.string(a.t.jdPblk)
 }
 let c = new Map([
   ["arzte_und_apotheker_bank", "\xc4rzte- und Apothekerbank"],
@@ -200,5 +200,5 @@ let c = new Map([
 ]);
 
 function u(e) {
-  return true !== e && c.has(e) ? c.get(e) : o.intl.string(o.t.jdPblk)
+  return true !== e && c.has(e) ? c.get(e) : a.intl.string(a.t.jdPblk)
 }

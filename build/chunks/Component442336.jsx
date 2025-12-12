@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 442336, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -51,27 +51,27 @@ function m(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, n = i.useRef(null), [b, _] = (0, l.Wu)([o.ZP], () => [o.ZP.isChannelMuted(t.getGuildId(), t.id), o.ZP.resolvedMessageNotifications(t)], [t]), [y, O] = i.useState(false);
+  } = e, n = i.useRef(null), [b, y] = (0, l.Wu)([o.ZP], () => [o.ZP.isChannelMuted(t.getGuildId(), t.id), o.ZP.resolvedMessageNotifications(t)], [t]), [O, x] = i.useState(false);
   i.useEffect(() => {
-    let e = () => O(true);
+    let e = () => x(true);
     return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let x = e => {
+  let j = e => {
       e.shiftKey ? s.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !b
-      }, d.UE.muted(!b)) : O(e => !e)
+      }, d.UE.muted(!b)) : x(e => !e)
     },
-    j = f.intl.string(f.t.h850Ss);
+    v = f.intl.string(f.t.h850Ss);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
-    shouldShow: y,
+    shouldShow: O,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
-    onRequestClose: () => O(false),
+    onRequestClose: () => x(false),
     renderPopout: e => (0, r.jsx)(p.Z, m(g({}, e), {
       channel: t,
       navId: "channel-context",
@@ -84,10 +84,10 @@ function b(e) {
       } = t;
       return (0, r.jsx)(u.ZP.Icon, m(g({}, e), {
         ref: n,
-        onClick: x,
-        tooltip: i ? null : j,
-        icon: b || _ !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
-        "aria-label": j,
+        onClick: j,
+        tooltip: i ? null : v,
+        icon: b || y !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
+        "aria-label": v,
         selected: i
       }))
     }

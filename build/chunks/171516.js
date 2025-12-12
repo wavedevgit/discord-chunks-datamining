@@ -15,11 +15,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk804739 = require("./804739.js");
 
 function d(e) {
-  return (0, r.e7)([l.Z, o.Z, c.Z, a.Z], () => null != e && (0, u.t)({
+  return (0, r.e7)([l.Z, a.Z, c.Z, o.Z], () => null != e && (0, u.t)({
     LibraryApplicationStore: l.Z,
-    LaunchableGameStore: o.Z,
+    LaunchableGameStore: a.Z,
     DispatchApplicationStore: c.Z,
-    ConnectedAppsStore: a.Z,
+    ConnectedAppsStore: o.Z,
     applicationId: e
   }), [e])
 }
@@ -30,6 +30,6 @@ function f(e) {
   } = (0, i.IX)(e), n = (0, r.e7)([s.Z], () => {
     var e;
     return null != t ? null != (e = s.Z.getOfficialGame(t)) ? e : s.Z.getGameByApplication(t) : null
-  }, [t]), o = d(e), a = d(null == n ? true : n.id);
-  return null != n && a ? n.id : o && null != e ? e : null
+  }, [t]), a = d(e), o = d(null == n ? true : n.id);
+  return null != n && o ? n.id : a && null != e ? e : null
 }

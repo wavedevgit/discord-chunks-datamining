@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => N
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -57,7 +57,7 @@ function I() {
       skuId: t,
       applicationId: n
     }
-    of o().values(O)) {
+    of a().values(O)) {
     if (v.includes(exports)) continue;
     let r = Chunk812206.Z.getApplication(require);
     if (null == r) {
@@ -94,7 +94,7 @@ class A extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk812206.Z, Chunk580130.Z, Chunk594190.ZP, Chunk55563.Z, Chunk594174.default), v = null != (e = Chunk433517.K.get(b)) ? module : v
   }
   getDetectedOffPlatformPremiumPerks() {
-    return o().values(y)
+    return a().values(y)
   }
 }
 E(A, "displayName", "DetectedOffPlatformPremiumPerksStore");

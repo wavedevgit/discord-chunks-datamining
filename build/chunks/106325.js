@@ -23,7 +23,7 @@ function _(e) {
 function m(e, t, n) {
   let {
     item: m
-  } = e, h = (0, p.q)(_(i.Z), "@react-aria/tag"), g = (0, o.Me)(), {
+  } = e, h = (0, p.q)(_(i.Z), "@react-aria/tag"), g = (0, a.Me)(), {
     onRemove: E
   } = r.L.get(t) || {}, {
     rowProps: b,
@@ -39,7 +39,7 @@ function m(e, t, n) {
   }, C = (0, u.Kf)();
   "virtual" === C && "undefined" != typeof window && "ontouchstart" in window && (C = "pointer");
   let A = E && ("keyboard" === C || "virtual" === C) ? h.format("removeDescription") : "",
-    N = (0, a.P)(A),
+    N = (0, o.P)(A),
     P = m.key === t.selectionManager.focusedKey,
     R = null != t.selectionManager.focusedKey,
     w = false;

@@ -2,12 +2,12 @@
 /** chunk id: 479661, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  e: () => a,
-  n: () => o
+  e: () => o,
+  n: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   id: "2025-08_custom_theme_share_send",
   kind: "user",
   label: "Custom Theme Share Send",
@@ -24,8 +24,8 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
-  return o.useExperiment({
+function o(e) {
+  return a.useExperiment({
     location: e
   }).enabled
 }

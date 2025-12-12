@@ -16,14 +16,14 @@ var Chunk399606 = require("./399606.js"),
   Chunk331372 = require("./331372.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk418783 = require("./418783.js");
+  Chunk962828 = require("./962828.js");
 
 function m(e) {
   let {
     guildId: t,
     user: n,
     username: s
-  } = e, l = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("img", {
+  } = e, l = (0, i.e7)([o.Z], () => !o.Z.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("img", {
     src: c,
     className: _.userAvatar,
     alt: ""
@@ -36,14 +36,14 @@ function m(e) {
     }),
     children: [(0, r.jsx)(d.Z, {
       avatar: u
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       className: _.thankYouText,
       tag: "p",
       color: "status-positive-text",
       variant: "heading-xl/medium",
       children: p.intl.format(p.t["52BAtC"], {
         username: s,
-        usernameHook: (e, t) => (0, r.jsx)(o.Text, {
+        usernameHook: (e, t) => (0, r.jsx)(a.Text, {
           tag: "span",
           color: "status-positive-text",
           variant: "heading-xxl/extrabold",
@@ -56,23 +56,23 @@ function m(e) {
 }
 
 function h(e) {
-  var t, i, o;
+  var t, i, a;
   let {
-    channel: a,
+    channel: o,
     message: d,
     compact: _
   } = e, h = (0, s.ZP)(d), g = (0, l.l)({
     user: d.author,
-    channelId: a.id,
-    guildId: a.guild_id,
+    channelId: o.id,
+    guildId: o.guild_id,
     messageId: d.id
   })(h), E = p.intl.format(p.t.TQs67g, {
     username: h.nick,
     usernameHook: g,
-    productName: null != (o = null == (i = d.purchaseNotification) || null == (t = i.guild_product_purchase) ? true : t.product_name) ? o : "",
+    productName: null != (a = null == (i = d.purchaseNotification) || null == (t = i.guild_product_purchase) ? true : t.product_name) ? a : "",
     handleProductListingClick: () => {
       var e, t, n;
-      (0, u.uL)(f.Z5c.GUILD_PRODUCT(a.guild_id, null != (n = null == (t = d.purchaseNotification) || null == (e = t.guild_product_purchase) ? true : e.listing_id) ? n : ""))
+      (0, u.uL)(f.Z5c.GUILD_PRODUCT(o.guild_id, null != (n = null == (t = d.purchaseNotification) || null == (e = t.guild_product_purchase) ? true : e.listing_id) ? n : ""))
     }
   });
   return (0, r.jsxs)(r.Fragment, {
@@ -83,7 +83,7 @@ function h(e) {
       children: E
     }), (0, r.jsx)(m, {
       username: h.nick,
-      guildId: a.guild_id,
+      guildId: o.guild_id,
       user: d.author
     })]
   })

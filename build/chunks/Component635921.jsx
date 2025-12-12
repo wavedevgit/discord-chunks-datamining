@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,19 +25,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk422034 = require("./422034.jsx"),
   Chunk206127 = require("./206127.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk876544 = require("./876544.js");
+  Chunk904256 = require("./904256.js");
 let S = e => {
     let {
       inOfferExperience: t,
       subscriptionTier: n,
       containerClassName: i,
-      buttonClassName: o,
+      buttonClassName: a,
       isApplicationHome: s,
       isDarkMode: c,
       isEligibleForBogoPromotion: u
     } = e, d = u ? (0, r.jsx)(E.Z, {
       color: c ? l.Tt.BRAND_INVERTED : true,
-      className: a()(v.button, v.subButton, o, {
+      className: o()(v.button, v.subButton, a, {
         [v.extendedButton]: t && s,
         [v.whiteSubButton]: s && !c
       }),
@@ -46,36 +46,36 @@ let S = e => {
       hasActivePromotion: true
     }) : (0, r.jsx)(E.Z, {
       color: c || !s ? l.Tt.BRAND_INVERTED : true,
-      className: a()(v.button, v.subButton, o, {
+      className: o()(v.button, v.subButton, a, {
         [v.extendedButton]: t && s,
         [v.whiteSubButton]: s && !c
       }),
       subscriptionTier: n
     }), f = t && s ? null : (0, r.jsx)(g.Z, {
-      className: a()(v.button, o),
+      className: o()(v.button, a),
       color: s ? true : l.Tt.WHITE
     });
     return (0, r.jsxs)("div", {
-      className: a()(v.buttonContainer, i),
+      className: o()(v.buttonContainer, i),
       children: [d, " ", f]
     })
   },
   I = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar1
+      className: Chunk904256.settingsSparkleStar1
     }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar2
+      className: Chunk904256.settingsSparkleStar2
     }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar3
+      className: Chunk904256.settingsSparkleStar3
     }), (0, Chunk54381.jsx)(Chunk535322.A, {
-      className: Chunk876544.settingsSparkleStar4
+      className: Chunk904256.settingsSparkleStar4
     })]
   }),
   T = (e, t) => {
     let {
       className: n,
       buttonClassName: i,
-      subscriptionTier: o,
+      subscriptionTier: a,
       isDarkMode: f
     } = e, {
       analyticsLocations: E
@@ -84,7 +84,7 @@ let S = e => {
       value: E,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: a()(v.container, n, {
+        className: o()(v.container, n, {
           [v.settingsContainer]: !T,
           [v.affinityHeight]: !T && N
         }),
@@ -104,11 +104,11 @@ let S = e => {
           }) : (0, r.jsx)(C, {}), A || y ? (0, r.jsx)("div", {
             className: v.buttonContainer,
             children: (0, r.jsx)(g.Z, {
-              className: a()(v.button, i),
+              className: o()(v.button, i),
               color: l.Tt.WHITE
             })
           }) : (0, r.jsx)(S, {
-            subscriptionTier: o,
+            subscriptionTier: a,
             inOfferExperience: T,
             buttonClassName: i,
             isDarkMode: f
@@ -126,16 +126,16 @@ function C(e) {
     variant: t = "text-lg/normal",
     withBottomMargin: n = true,
     isApplicationHome: i
-  } = e, o = (0, y.$)();
+  } = e, a = (0, y.$)();
   return (0, r.jsx)(c.Text, {
     variant: t,
     color: i ? "text-subtle" : "always-white",
-    className: a()(v.description, {
+    className: o()(v.description, {
       [v.descriptionBottomMargin]: n,
       [v.descriptionV2]: i
     }),
     children: O.intl.format(O.t.kt9wxs, {
-      cheapestMonthlyPrice: o
+      cheapestMonthlyPrice: a
     })
   })
 }

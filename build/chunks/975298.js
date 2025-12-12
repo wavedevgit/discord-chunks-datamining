@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./642613.js"), require("./583741.js"), require("./388685.js"), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
@@ -65,7 +65,7 @@ let S = e => {
     isFetching: n = false,
     entitlements: r,
     unactivatedFractionalPremiumUnits: i,
-    currentUser: a,
+    currentUser: o,
     premiumSubscription: s,
     fetchedAllEntitlements: c,
     excludeReverseTrialFromCountdown: u
@@ -81,8 +81,8 @@ let S = e => {
   if (n) return v(y({}, d), {
     fetched: false
   });
-  if (null == a || 0 === r.length && 0 === i.length) return d;
-  let f = r.filter(e => null != e.endsAt && null != e.startsAt).sort((e, t) => (o()(null != e.endsAt && null != t.endsAt, "endsAt should not be null"), e.endsAt < t.endsAt) ? false : +(e.endsAt > t.endsAt));
+  if (null == o || 0 === r.length && 0 === i.length) return d;
+  let f = r.filter(e => null != e.endsAt && null != e.startsAt).sort((e, t) => (a()(null != e.endsAt && null != t.endsAt, "endsAt should not be null"), e.endsAt < t.endsAt) ? false : +(e.endsAt > t.endsAt));
   if (f.reverse(), f.length > 0 && (f.length !== r.length || null == f[0].startsAt || null == f[0].endsAt)) {
     let e = Array.from(r.values()).map(e => e.id),
       t = "fractional redemption entitlements should have startsAt/endsAt";
@@ -120,11 +120,11 @@ function T() {
     forceFetch: false,
     excludeReverseTrial: false,
     excludeReverseTrialFromCountdown: false
-  }, i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), o = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getFractionalPremium({
+  }, i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), a = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getFractionalPremium({
     excludeReverseTrial: exports
   })), s = (0, Chunk442837.e7)([Chunk580130.Z], () => Chunk580130.Z.fetchedAllEntitlements), l = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getUnactivatedFractionalPremiumUnits()), m = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), [h, E] = Chunk473749.useState(S({
     isFetching: I(module, Chunk512722) || Chunk580130.Z.fetchingAllEntitlements,
-    entitlements: o,
+    entitlements: a,
     unactivatedFractionalPremiumUnits: l,
     currentUser: Chunk512722,
     premiumSubscription: Chunk122289,
@@ -137,13 +137,13 @@ function T() {
     })
   }), Chunk473749.useEffect(() => {
     let e = S({
-      entitlements: o,
+      entitlements: a,
       unactivatedFractionalPremiumUnits: l,
       currentUser: Chunk512722,
       premiumSubscription: Chunk122289,
       fetchedAllEntitlements: Chunk913527,
       excludeReverseTrialFromCountdown: require
     });
-    Chunk474936(t => (0, a.isEqual)(t, e) ? t : e)
-  }, [Chunk512722, o, Chunk122289, l, Chunk913527, require]), Chunk74538
+    Chunk474936(t => (0, o.isEqual)(t, e) ? t : e)
+  }, [Chunk512722, a, Chunk122289, l, Chunk913527, require]), Chunk74538
 }

@@ -28,7 +28,7 @@ function h(e) {
     themeType: g
   } = (0, d.z)(), E = g === _.l.MODAL_V2, b = (0, i.e7)([u.Z], () => u.Z.isInChannel(t.id));
   if (!(0, i.e7)([c.Z], () => {
-      let e = (0, a.dl)() && (0, a.zd)(t.id);
+      let e = (0, o.dl)() && (0, o.zd)(t.id);
       return (t.isPrivate() || c.Z.can(p.Plq.CONNECT, t)) && !e
     })) return null;
   let y = () => g === _.l.MODAL || g === _.l.MODAL_V2 ? m.intl.string(m.t["3xjX0U"]) : t.isDM() || t.isGroupDM() ? m.intl.string(m.t["7hwn2A"]) : t.isGuildStageVoice() ? m.intl.string(m.t.Acqcot) : m.intl.string(m.t.BXxdl7),
@@ -36,7 +36,7 @@ function h(e) {
     v = e => {
       e.stopPropagation(), null == n || n({
         action: "PRESS_JOIN_CALL_BUTTON"
-      }), t.isGuildStageVoice() ? (0, l.Cq)(t) : (o.default.selectVoiceChannel(t.id), (0, s.Kh)(t.id)), null == h || h()
+      }), t.isGuildStageVoice() ? (0, l.Cq)(t) : (a.default.selectVoiceChannel(t.id), (0, s.Kh)(t.id)), null == h || h()
     };
   return (0, r.jsx)(f.O1, {
     text: b ? y() : O(),

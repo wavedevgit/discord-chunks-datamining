@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk658722 = require("./658722.js"),
-  a = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk30408 = require("./30408.js");
+  Chunk955734 = require("./955734.js");
 
 function b(e) {
   let {
@@ -40,11 +40,11 @@ function y(e) {
     isTransfer: t = false,
     selectedSlotGuilds: n,
     onClose: i,
-    onSelectGuild: o,
+    onSelectGuild: a,
     query: s
   } = e, b = (0, l.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), y = (0, l.Wu)([p.Z], () => b.reduce((e, t) => {
     let r = p.Z.getGuild(t);
-    return null == r || null != n && n.some(e => e.id === t) || (s.length <= 0 || a()(s.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
+    return null == r || null != n && n.some(e => e.id === t) || (s.length <= 0 || o()(s.toLowerCase(), null == r ? true : r.name.toLowerCase())) && e.push(r), e
   }, []));
 
   function O() {
@@ -66,7 +66,7 @@ function y(e) {
     }), y.map(e => (0, r.jsxs)(c.P3F, {
       className: E.selectGuild,
       onClick: () => {
-        o(e)
+        a(e)
       },
       children: [(0, r.jsx)(d.Z, {
         className: E.selectGuildIcon,
@@ -98,14 +98,14 @@ function O(e) {
   let {
     onClose: t,
     onSelectGuild: n,
-    transitionState: o,
-    isTransfer: a = false,
+    transitionState: a,
+    isTransfer: o = false,
     selectedSlotGuilds: l
   } = e, [c, u] = i.useState(""), d = async () => {
     await t()
-  }, f = a ? g.intl.string(g.t.IB13DV) : g.intl.string(g.t.cQYceV);
+  }, f = o ? g.intl.string(g.t.IB13DV) : g.intl.string(g.t.cQYceV);
   return (0, r.jsx)(s.Modal, {
-    transitionState: o,
+    transitionState: a,
     onClose: d,
     size: "md",
     title: f,
@@ -118,7 +118,7 @@ function O(e) {
       onClose: t,
       onSelectGuild: n,
       query: c,
-      isTransfer: a,
+      isTransfer: o,
       selectedSlotGuilds: l
     })
   })

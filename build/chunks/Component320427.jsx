@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 320427, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,8 +14,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk304388 = require("./304388.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function h() {
-  return (h = Object.assign || function(e) {
+function f() {
+  return (f = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
@@ -24,11 +24,11 @@ function h() {
   }).apply(this, arguments)
 }
 
-function f() {
+function h() {
   let e = (0, Chunk399606.e7)([Chunk673125.Z], () => Chunk673125.Z.getDrawMode()),
     t = (null == module ? true : module.type) === Chunk984063.W.LINE,
     n = Chunk473749.useRef(null),
-    f = () => {
+    h = () => {
       exports ? (0, Chunk125268.Bo)(null) : (0, Chunk125268.Bo)({
         type: Chunk984063.W.LINE
       })
@@ -37,7 +37,7 @@ function f() {
     renderPopout: () => null,
     popoutTargetRef: require,
     children: e => {
-      var r, l, o = h({}, function(e) {
+      var r, l, o = f({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
@@ -63,7 +63,7 @@ function f() {
         label: p.intl.string(p.t.ZQCf9V),
         isActive: t,
         iconComponent: a.vdY,
-        onClick: f
+        onClick: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

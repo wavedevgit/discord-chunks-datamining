@@ -50,7 +50,7 @@ function l(e) {
   let {
     sectionId: t,
     commandsByActiveSection: n
-  } = e, [l, c] = r.useState(a.bS.ALPHABETICAL), u = r.useMemo(() => {
+  } = e, [l, c] = r.useState(o.bS.ALPHABETICAL), u = r.useMemo(() => {
     var e, r;
     return null != (r = null == (e = n.find(e => e.section.id === t)) ? true : e.data) ? r : []
   }, [n, t]), {
@@ -62,17 +62,17 @@ function l(e) {
   r.useEffect(() => {
     let e = t;
     i.i6(e, {
-      dontRefetchMs: o.Z.Millis.DAY
+      dontRefetchMs: a.Z.Millis.DAY
     })
   }, [t]), r.useLayoutEffect(() => {
-    f && c(a.bS.POPULAR)
+    f && c(o.bS.POPULAR)
   }, [f]);
   let p = u;
   switch (l) {
-    case a.bS.POPULAR:
+    case o.bS.POPULAR:
       p = d;
       break;
-    case a.bS.ALPHABETICAL:
+    case o.bS.ALPHABETICAL:
       p = u
   }
   return {

@@ -66,7 +66,7 @@ function ee(e, t, n, N, P, R) {
       Z = G == D || G == x;
     if (b(e)) return l(e, L);
     if (G == M || G == A || Z && !P) {
-      if (w = j || Z ? {} : g(e), !L) return j ? d(e, s(w, e)) : u(e, a(w, e))
+      if (w = j || Z ? {} : g(e), !L) return j ? d(e, s(w, e)) : u(e, o(w, e))
     } else {
       if (!$[G]) return P ? e : {};
       w = h(e, G, L)
@@ -83,7 +83,7 @@ function ee(e, t, n, N, P, R) {
   var B = k ? j ? p : f : j ? keysIn : S,
     V = U ? true : B(e);
   return i(V || e, function(r, i) {
-    V && (r = e[i = r]), o(w, i, ee(r, t, n, i, e, R))
+    V && (r = e[i = r]), a(w, i, ee(r, t, n, i, e, R))
   }), w
 }
 $[A] = $[N] = $[B] = $[V] = $[P] = $[R] = $[H] = $[Y] = $[W] = $[K] = $[z] = $[L] = $[j] = $[M] = $[k] = $[U] = $[G] = $[Z] = $[q] = $[Q] = $[X] = $[J] = true, $[w] = $[D] = $[F] = false, module.exports = ee

@@ -14,11 +14,11 @@ function l(e) {
   let {
     userId: t,
     renderApplicationName: n
-  } = e, l = (0, o.Z)(t);
+  } = e, l = (0, a.Z)(t);
   return r.useMemo(() => null != l ? s.intl.format(s.t.rSUACb, {
-    helpdeskArticle: i.Z.getArticleURL(a.BhN.SLAYER_PROVISIONAL_ACCOUNTS),
+    helpdeskArticle: i.Z.getArticleURL(o.BhN.SLAYER_PROVISIONAL_ACCOUNTS),
     applicationName: () => n(l)
   }) : s.intl.format(s.t["q+N8L6"], {
-    helpdeskArticle: i.Z.getArticleURL(a.BhN.SLAYER_PROVISIONAL_ACCOUNTS)
+    helpdeskArticle: i.Z.getArticleURL(o.BhN.SLAYER_PROVISIONAL_ACCOUNTS)
   }), [l, n])
 }

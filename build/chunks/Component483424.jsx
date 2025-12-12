@@ -32,12 +32,12 @@ function _(e) {
   } = (0, c.Z)({
     userId: t.id,
     guildId: _
-  }), O = t.id === n.id, v = (0, i.e7)([s.Z, a.Z], () => {
-    let e = O ? s.Z.getStatus() : a.Z.getStatus(t.id, _);
+  }), O = t.id === n.id, v = (0, i.e7)([s.Z, o.Z], () => {
+    let e = O ? s.Z.getStatus() : o.Z.getStatus(t.id, _);
     return e === p.Sk.OFFLINE || e === p.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: S
-  } = (0, o.U)({
+  } = (0, a.U)({
     location: "UserProfileFeaturedActivity"
   });
   return v || null == E ? v || null == b ? S && !v && null != y ? (0, r.jsx)(f.Z, {

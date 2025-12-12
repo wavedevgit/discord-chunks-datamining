@@ -41,9 +41,9 @@ function p(e, t) {
   let n = l.Z.getChannel(e);
   if (null == n) return;
   let r = (0, s.e)(n);
-  o.Z.preload(n.guild_id, n.id), (0, c.uL)(u.Z5c.CHANNEL(r, n.id), f({
+  a.Z.preload(n.guild_id, n.id), (0, c.uL)(u.Z5c.CHANNEL(r, n.id), f({
     openChannel: true
-  }, t)), (null == t ? true : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && a.Z.updateChatOpen(n.id, true)
+  }, t)), (null == t ? true : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && o.Z.updateChatOpen(n.id, true)
 }
 
 function _(e, t) {

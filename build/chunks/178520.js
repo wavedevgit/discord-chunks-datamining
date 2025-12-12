@@ -12,7 +12,7 @@ var Chunk658722 = require("./658722.js"),
 function s(e, t, n) {
   var r;
   let i = null != (r = null == n ? true : n.bypassPredicates) && r,
-    o = new Set,
+    a = new Set,
     s = function(e) {
       var r;
       let c = arguments.length > 1 && true !== arguments[1] && arguments[1],
@@ -20,30 +20,30 @@ function s(e, t, n) {
         d = (null == (r = e.usePredicate) ? true : r.call(e)) === false && !i || c,
         f = l(e, t, d, null == n ? true : n.legacyMatches) || u,
         p = false;
-      if ((0, a.Lk)(e))
+      if ((0, o.Lk)(e))
         for (let t of e.layout) p = s(t, d, f) || p;
-      return !d && (f || p) && o.add(e.key), f || p
+      return !d && (f || p) && a.add(e.key), f || p
     };
-  return s(e), o
+  return s(e), a
 }
 
 function l(e, t, n, r) {
   var s, l, c, u;
   let d = null == (s = e.getLegacySearchKey) ? true : s.call(e);
   if (null != d && null != r) return t.length < 2 || r.has(d);
-  if (e.type === a.Jq.SECTION && e.hoisted) returntrue;
-  if (e.type === a.Jq.TAB_ITEM) returnfalse;
+  if (e.type === o.Jq.SECTION && e.hoisted) returntrue;
+  if (e.type === o.Jq.TAB_ITEM) returnfalse;
   let f = "useTitle" in e ? null == (l = e.useTitle) ? true : l.call(e, false) : true,
     p = "useSearchTerms" in e ? null == (c = e.useSearchTerms) ? true : c.call(e) : true;
   if (n || null == f && null == p) returnfalse;
   if ("" === t) returntrue;
-  if (e.type === a.Jq.STATIC) returnfalse;
+  if (e.type === o.Jq.STATIC) returnfalse;
   let _ = t.toLowerCase();
   for (let e of null != p ? p : [])
     if (i()(_, e.toLowerCase())) returntrue;
   let m = false;
   if (null != f) {
-    let e = null == (u = (0, o.qgQ)(f)) ? true : u.toLowerCase();
+    let e = null == (u = (0, a.qgQ)(f)) ? true : u.toLowerCase();
     null != e && (m = i()(_, e))
   }
   return m

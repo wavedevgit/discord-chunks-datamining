@@ -1,4 +1,4 @@
-/** Chunk was on 74732 **/
+/** Chunk was on 74783 **/
 /** chunk id: 142402, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => j
@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk531578 = require("./531578.js"),
   Chunk70722 = require("./70722.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk768127 = require("./768127.js");
-let v = [Chunk70722.kr.OTHER];
+  Chunk40207 = require("./40207.js");
+let _ = [Chunk70722.kr.OTHER];
 
 function j(e) {
   let {
@@ -32,7 +32,7 @@ function j(e) {
     analyticsData: S
   } = e;
   l.useEffect(() => {
-    f.default.track(p.rMx.OPEN_MODAL, {
+    m.default.track(p.rMx.OPEN_MODAL, {
       type: "Stream Problem Report",
       other_user_id: j.ownerId,
       application_id: null != h ? h.id : null,
@@ -43,56 +43,56 @@ function j(e) {
   }, [j.ownerId, h]);
   let {
     showRefreshedStreamTaxonomy: P
-  } = (0, s.u)({
+  } = (0, c.u)({
     location: "StreamFeedback"
   }), {
     surveyEmojiKind: C
-  } = (0, c.R)({
+  } = (0, s.R)({
     location: "StreamFeedback"
   });
 
   function w(e) {
-    var t, l, i;
+    var t, l, a;
     let {
-      dontShowAgain: s,
-      rating: c,
-      feedback: u
+      dontShowAgain: c,
+      rating: s,
+      feedback: d
     } = e;
-    if (s && (0, a.Uv)({
+    if (c && (0, o.Uv)({
         feedbackType: g.nw.STREAM,
         location: "StreamFeedback"
-      }), null != c) {
+      }), null != s) {
       if (P) {
         let {
           category: n,
           problem: r
         } = e;
-        (0, m.Z)({
+        (0, f.Z)({
           problem: null != (t = null == r ? true : r.value) ? t : null,
           category: n,
           variant: null != (l = null == r ? true : r.variant) ? l : null,
           stream: j,
-          feedback: u,
+          feedback: d,
           streamApplication: h,
           analyticsData: S,
           location: "Stream End",
-          rating: c
+          rating: s
         })
       } else {
         let {
           problem: t
         } = e;
-        (0, m.Z)({
-          problem: null != (i = null == t ? true : t.value) ? i : null,
+        (0, f.Z)({
+          problem: null != (a = null == t ? true : t.value) ? a : null,
           stream: j,
-          feedback: u,
+          feedback: d,
           streamApplication: h,
           analyticsData: S,
           location: "Stream End",
-          rating: c
+          rating: s
         })
       }
-      null != e.problem && (0, o.ZDy)(async () => {
+      null != e.problem && (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
@@ -114,16 +114,16 @@ function j(e) {
           }
           return e
         }({
-          body: O.intl.string(O.t.mMTVnv)
+          body: y.intl.string(y.t.mMTVnv)
         }, t))
       })
     }
   }
-  let R = O.intl.string(O.t["5smP3R"]),
-    k = O.intl.string(O.t["0uxA2V"]),
-    T = O.intl.string(O.t.CqjnLN),
+  let R = y.intl.string(y.t["5smP3R"]),
+    k = y.intl.string(y.t["0uxA2V"]),
+    T = y.intl.string(y.t.CqjnLN),
     F = {
-      impressionName: i.ImpressionNames.STREAM_FEEDBACK_MODAL,
+      impressionName: a.ImpressionNames.STREAM_FEEDBACK_MODAL,
       impressionProperties: {
         media_session_id: S.media_session_id,
         rtc_connection_id: S.rtc_connection_id,
@@ -133,85 +133,85 @@ function j(e) {
   if (P) {
     let e = {
         value: g.tX.CONNECTION,
-        label: O.intl.string(y.default.FVhMw6),
-        problemsHeader: O.intl.string(O.t["6Y1t5P"]),
-        problemOptions: (0, a.Z1)(),
+        label: y.intl.string(v.default.FVhMw6),
+        problemsHeader: y.intl.string(y.t["6Y1t5P"]),
+        problemOptions: (0, o.Z1)(),
         freeformConfig: {
           value: g.T_.FREEFORM,
-          label: O.intl.string(O.t.emlT91)
+          label: y.intl.string(y.t.emlT91)
         }
       },
       n = {
         value: g.tX.AUDIO,
-        label: O.intl.string(y.default.PL2l6A),
-        problemsHeader: O.intl.string(O.t["6Y1t5P"]),
-        problemOptions: (0, a.w9)({
+        label: y.intl.string(v.default.PL2l6A),
+        problemsHeader: y.intl.string(y.t["6Y1t5P"]),
+        problemOptions: (0, o.w9)({
           isMobile: false
         }),
         freeformConfig: {
           value: g.b9.FREEFORM,
-          label: O.intl.string(O.t.emlT91)
+          label: y.intl.string(y.t.emlT91)
         }
       },
       l = {
         value: g.tX.VIDEO,
-        label: O.intl.string(y.default["0WFzPh"]),
-        problemsHeader: O.intl.string(O.t["6Y1t5P"]),
-        problemOptions: (0, a.NX)(),
+        label: y.intl.string(v.default["0WFzPh"]),
+        problemsHeader: y.intl.string(y.t["6Y1t5P"]),
+        problemOptions: (0, o.NX)(),
         freeformConfig: {
           value: g.ct.FREEFORM,
-          label: O.intl.string(O.t.emlT91)
+          label: y.intl.string(y.t.emlT91)
+        }
+      },
+      a = {
+        value: g.tX.PEOPLE,
+        label: y.intl.string(v.default.Moa3W9),
+        problemsHeader: y.intl.string(y.t["6Y1t5P"]),
+        problemOptions: (0, o.hP)(),
+        freeformConfig: {
+          value: g.s_.FREEFORM,
+          label: y.intl.string(y.t.emlT91)
         }
       },
       i = {
-        value: g.tX.PEOPLE,
-        label: O.intl.string(y.default.Moa3W9),
-        problemsHeader: O.intl.string(O.t["6Y1t5P"]),
-        problemOptions: (0, a.hP)(),
-        freeformConfig: {
-          value: g.s_.FREEFORM,
-          label: O.intl.string(O.t.emlT91)
-        }
-      },
-      o = {
         value: t ? g.tX.STREAMING : g.tX.STREAM_WATCHING,
-        label: O.intl.string(t ? y.default["0ZBLiZ"] : y.default.TVTIT1),
-        problemsHeader: O.intl.string(O.t["6Y1t5P"]),
-        problemOptions: (0, a.Ez)({
+        label: y.intl.string(t ? v.default["0ZBLiZ"] : v.default.TVTIT1),
+        problemsHeader: y.intl.string(y.t["6Y1t5P"]),
+        problemOptions: (0, o.Ez)({
           isStreamer: t
         }),
         freeformConfig: {
           value: g.MJ.FREEFORM,
-          label: O.intl.string(O.t.emlT91)
+          label: y.intl.string(y.t.emlT91)
         }
       };
-    return (0, r.jsx)(b.Z, {
+    return (0, r.jsx)(u.Z, {
       onSubmit: w,
       onClose: E,
       ratingHeader: R,
       ratingEmojiKind: C,
       ratingBody: t ? k : T,
-      categoriesHeader: O.intl.string(y.default.tq8598),
-      optionsTree: [e, n, l, o, i],
+      categoriesHeader: y.intl.string(v.default.tq8598),
+      optionsTree: [e, n, l, i, a],
       impression: F,
       transitionState: x
     })
   }
-  return (0, r.jsx)(u.Z, {
+  return (0, r.jsx)(d.Z, {
     modalType: "stream",
     header: R,
     ratingEmojiKind: C,
     impression: F,
     body: t ? k : T,
-    problemTitle: O.intl.string(O.t["6Y1t5P"]),
-    problems: (0, d.Z)({
+    problemTitle: y.intl.string(y.t["6Y1t5P"]),
+    problems: (0, b.Z)({
       isStreamer: t,
       isEndStream: true
     }),
-    freeformNeededProblems: v,
+    freeformNeededProblems: _,
     onSubmit: w,
     onClose: E,
     transitionState: x,
-    otherKey: _.kr.OTHER
+    otherKey: O.kr.OTHER
   })
 }

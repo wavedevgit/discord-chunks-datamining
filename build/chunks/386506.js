@@ -25,7 +25,7 @@ async function d(e) {
         version: s.Ji
       },
       headers: {
-        Authorization: null != (t = o.default.getToken()) ? t : ""
+        Authorization: null != (t = a.default.getToken()) ? t : ""
       },
       oldFormErrors: true,
       rejectWithError: false
@@ -41,7 +41,7 @@ async function f(e) {
       url: (0, s.pU)(u),
       body: {
         payload: e,
-        token: o.default.getToken(),
+        token: a.default.getToken(),
         version: s.Ji
       },
       oldFormErrors: true,
@@ -67,7 +67,7 @@ function _(e) {
     url: (0, s.pU)(c),
     body: e,
     headers: {
-      Authorization: null != (t = o.default.getToken()) ? t : ""
+      Authorization: null != (t = a.default.getToken()) ? t : ""
     },
     oldFormErrors: true,
     rejectWithError: false
@@ -84,6 +84,6 @@ function _(e) {
 }
 r = async e => {
   try {
-    await a.Z.flushCookies()
+    await o.Z.flushCookies()
   } catch (e) {}
 }

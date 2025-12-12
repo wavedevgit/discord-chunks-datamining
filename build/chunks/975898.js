@@ -33,7 +33,7 @@ function l(e, t, n) {
   }, {
     pressProps: T,
     isPressed: C
-  } = (0, a.r)({
+  } = (0, o.r)({
     onPressStart: E,
     onPressEnd: b,
     onPressChange: y,
@@ -44,7 +44,7 @@ function l(e, t, n) {
   }), {
     pressProps: A,
     isPressed: N
-  } = (0, a.r)({
+  } = (0, o.r)({
     onPressStart: E,
     onPressEnd: b,
     onPressChange: y,
@@ -60,7 +60,7 @@ function l(e, t, n) {
   } = (0, s.kc)(e, n), R = (0, r.d)(T, P), w = (0, i.z)(e, {
     labelable: true
   });
-  return (0, o.y)(n, t.defaultSelected, t.setSelected), {
+  return (0, a.y)(n, t.defaultSelected, t.setSelected), {
     labelProps: (0, r.d)(A, {
       onClick: e => e.preventDefault()
     }),

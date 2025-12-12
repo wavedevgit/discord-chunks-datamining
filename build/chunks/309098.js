@@ -2,11 +2,11 @@
 /** chunk id: 309098, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => o
+  E: () => a
 });
 let r = new Map,
   i = new Map;
-class o {
+class a {
   format(e, t) {
     let n = this.strings.getStringForLocale(e, this.locale);
     return "function" == typeof n ? n(t, this) : n
@@ -14,11 +14,11 @@ class o {
   plural(e, t, n = "cardinal") {
     let i = t["=" + e];
     if (i) return "function" == typeof i ? i() : i;
-    let o = this.locale + ":" + n,
-      a = r.get(o);
-    return a || (a = new Intl.PluralRules(this.locale, {
+    let a = this.locale + ":" + n,
+      o = r.get(a);
+    return o || (o = new Intl.PluralRules(this.locale, {
       type: n
-    }), r.set(o, a)), "function" == typeof(i = t[a.select(e)] || t.other) ? i() : i
+    }), r.set(a, o)), "function" == typeof(i = t[o.select(e)] || t.other) ? i() : i
   }
   number(e) {
     let t = i.get(this.locale);

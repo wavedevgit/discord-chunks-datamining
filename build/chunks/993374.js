@@ -73,10 +73,10 @@ function _(e, t) {
   if (null == e.user) returnfalse;
   let {
     globalName: i,
-    username: o
+    username: a
   } = e.user;
   for (let e of n)
-    if (p(o, e)) returntrue;
+    if (p(a, e)) returntrue;
   for (let e of n)
     if (p(i, e)) returntrue;
   returnfalse
@@ -114,7 +114,7 @@ class h {
       selectedSourceInviteCode: f,
       selectedJoinSourceType: p
     } = this._searchState;
-    return !(t.length > 0 && !_(e, t) || c.size > 0 && !m(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == p || e.joinSourceType === p) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, a.b)(e) || i && e.hasUnusualAccountActivity || l && (0, o.EY)(e)))
+    return !(t.length > 0 && !_(e, t) || c.size > 0 && !m(e, c) || null != u.afterDate && e.joinedAtTimestamp < u.afterDate || null != u.beforeDate && e.joinedAtTimestamp > u.beforeDate || null != d.afterDate && s.default.extractTimestamp(e.userId) < d.afterDate || null != d.beforeDate && s.default.extractTimestamp(e.userId) > d.beforeDate) && (null == f || e.sourceInviteCode === f) && (null == p || e.joinSourceType === p) && (!n && !r && !i && !l || !!(n && e.hasUnusualDmActivity || r && (0, o.b)(e) || i && e.hasUnusualAccountActivity || l && (0, a.EY)(e)))
   }
   constructor(e) {
     c(this, "guildId", true), c(this, "_searchState", true), c(this, "hasDefaultQuery", true), this.guildId = e, this._searchState = d(), this.hasDefaultQuery = true

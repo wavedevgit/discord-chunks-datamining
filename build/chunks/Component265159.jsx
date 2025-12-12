@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -55,10 +55,10 @@ function u() {
     } = await require.e("38047").then(require.bind(require, 975863));
     return t => (0, r.jsx)(e, c(s({}, t), {
       source: {
-        page: o.ZY5.USER_SETTINGS,
-        section: o.jXE.SETTINGS_CUSTOMIZE_PROFILE,
-        object: o.qAy.BUTTON_CTA,
-        type: o.AnalyticsObjectTypes.BUY
+        page: a.ZY5.USER_SETTINGS,
+        section: a.jXE.SETTINGS_CUSTOMIZE_PROFILE,
+        object: a.qAy.BUTTON_CTA,
+        type: a.AnalyticsObjectTypes.BUY
       }
     }))
   })

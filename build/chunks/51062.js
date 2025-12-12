@@ -64,20 +64,20 @@ function v(e, t, n) {
   let {
     channel: w,
     type: D
-  } = e, [x, L] = r.useState(() => (0, _.PA)()), j = (0, i.Z)(), M = (0, o.e7)([u.ZP, p.default], () => {
+  } = e, [x, L] = r.useState(() => (0, _.PA)()), j = (0, i.Z)(), M = (0, a.e7)([u.ZP, p.default], () => {
     var e, t;
     let n = p.default.getCurrentUser();
     return null != (t = null != w.guild_id && null != n ? null == (e = u.ZP.getMember(w.guild_id, n.id)) ? true : e.isPending : null) && t
   }), {
     canMentionEveryone: k,
     hidePersonalInformation: U
-  } = (0, o.cj)([d.Z, f.Z], () => ({
+  } = (0, a.cj)([d.Z, f.Z], () => ({
     canMentionEveryone: w.isPrivate() || M || D === l.Ie.RULES_INPUT || d.Z.can(h.Plq.MENTION_EVERYONE, w),
     hidePersonalInformation: f.Z.hidePersonalInformation
   }), [w, D, M]), {
     activeCommand: G,
     activeCommandOption: Z
-  } = (0, o.cj)([s.Z], () => ({
+  } = (0, a.cj)([s.Z], () => ({
     activeCommand: s.Z.getActiveCommand(w.id),
     activeCommandOption: s.Z.getActiveOption(w.id)
   })), F = (0, m.Z)({
@@ -100,7 +100,7 @@ function v(e, t, n) {
       currentWord: null != (N = null == B ? true : B.word) ? N : "",
       currentWordIsAtStart: (null == B ? true : B.isAtStart) === true,
       currentFullWord: null != (P = null == B ? true : B.fullWord) ? P : "",
-      optionText: null != Z ? (0, a.KF)({
+      optionText: null != Z ? (0, o.KF)({
         [Z.name]: null != (R = null == (S = e.editorRef.current) ? true : S.getCurrentCommandOptionValue()) ? R : []
       }, Z.name) : ""
     }),

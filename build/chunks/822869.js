@@ -83,11 +83,11 @@ function p(e) {
       num_query_changes: f,
       any_destination_has_slowmode: p
     }), "message-shortcut" === _) {
-    let e = a.Z.getChannel(t);
+    let e = o.Z.getChannel(t);
     s.default.track(l.rMx.MESSAGE_SHORTCUT_ACTION_SENT, u({
       action: "forward",
       original_message_id: n
-    }, (0, o.hH)(null == e ? true : e.guild_id), (0, o.v_)(e)))
+    }, (0, a.hH)(null == e ? true : e.guild_id), (0, a.v_)(e)))
   }
 }
 

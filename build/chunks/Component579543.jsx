@@ -23,8 +23,8 @@ function u(e) {
     partyStatusElement: _,
     presenceActivity: m,
     guildId: h
-  } = e, g = !(0, s.Z)(m, f, n.id), E = (0, a.dQ)(n.name, null == (t = f.activity) ? true : t.type, g), b = i.useMemo(() => {
-    if (null != m) return () => (0, o.aG)(m)
+  } = e, g = !(0, s.Z)(m, f, n.id), E = (0, o.dQ)(n.name, null == (t = f.activity) ? true : t.type, g), b = i.useMemo(() => {
+    if (null != m) return () => (0, a.aG)(m)
   }, [m]);
   return g ? (0, r.jsx)(l.Z, {
     application: n,

@@ -1,5 +1,5 @@
-/** Chunk was on 31216 **/
-/** chunk id: 450634, original params: t,e,n (module,exports,require) **/
+/** Chunk was on 96760 **/
+/** chunk id: 450634, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
   default: () => f
 });
@@ -27,8 +27,8 @@ function f(t) {
     transitionState: O,
     analyticsData: h
   } = t;
-  a.useEffect(() => {
-    r.default.track(s.rMx.OPEN_MODAL, {
+  i.useEffect(() => {
+    l.default.track(s.rMx.OPEN_MODAL, {
       type: "Activity Feedback Modal",
       application_id: g.id,
       application_name: g.name,
@@ -37,56 +37,56 @@ function f(t) {
     })
   }, [g]);
   let j = (null == (e = g.embeddedActivityConfig) ? true : e.displays_advertisements) === true;
-  return (0, i.jsx)(c.Z, {
+  return (0, n.jsx)(d.Z, {
     modalType: "activity",
     header: m.intl.formatToPlainString(m.t.QXYwoD, {
       applicationName: g.name
     }),
     body: m.intl.string(m.t["9hk2KF"]),
     problemTitle: m.intl.string(m.t.g1q5fr),
-    problems: (0, _.Z)(true, j),
+    problems: (0, r.Z)(true, j),
     freeformNeededProblems: p,
     onSubmit: function(t) {
       var e;
       let {
-        rating: a,
-        problem: c,
-        dontShowAgain: _,
+        rating: i,
+        problem: d,
+        dontShowAgain: r,
         feedback: u
       } = t;
-      _ && (r.default.track(s.rMx.ACTIVITY_REPORT_DONT_SHOW, {
+      r && (l.default.track(s.rMx.ACTIVITY_REPORT_DONT_SHOW, {
         application_id: g.id,
-        rating: a
-      }), (0, l.Uv)({
-        feedbackType: b.nw.ACTIVITY,
+        rating: i
+      }), (0, o.Uv)({
+        feedbackType: _.nw.ACTIVITY,
         location: "ActivityFeedback"
-      })), null != a && ((0, d.Z)({
-        problem: null != (e = null == c ? true : c.value) ? e : null,
+      })), null != i && ((0, b.Z)({
+        problem: null != (e = null == d ? true : d.value) ? e : null,
         channel: f,
         embeddedActivityLocation: v,
         feedback: u,
         activityApplication: g,
         analyticsData: h,
         location: "Activity End",
-        rating: a
-      }), null != c && (0, o.ZDy)(async () => {
+        rating: i
+      }), null != d && (0, c.ZDy)(async () => {
         let {
           default: t
-        } = await n.e("14466").then(n.bind(n, 729328));
-        return e => (0, i.jsx)(t, function(t) {
+        } = await a.e("14466").then(a.bind(a, 729328));
+        return e => (0, n.jsx)(t, function(t) {
           for (var e = 1; e < arguments.length; e++) {
-            var n = null != arguments[e] ? arguments[e] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
-              return Object.getOwnPropertyDescriptor(n, t).enumerable
-            }))), i.forEach(function(e) {
-              var i;
-              i = n[e], e in t ? Object.defineProperty(t, e, {
-                value: i,
+            var a = null != arguments[e] ? arguments[e] : {},
+              n = Object.keys(a);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(t) {
+              return Object.getOwnPropertyDescriptor(a, t).enumerable
+            }))), n.forEach(function(e) {
+              var n;
+              n = a[e], e in t ? Object.defineProperty(t, e, {
+                value: n,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : t[e] = i
+              }) : t[e] = n
             })
           }
           return t

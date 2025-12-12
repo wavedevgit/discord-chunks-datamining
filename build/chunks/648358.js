@@ -8,14 +8,14 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk433517 = require("./433517.js"),
   Chunk865066 = require("./865066.js");
-let a = "systemServiceAutoInstall";
+let o = "systemServiceAutoInstall";
 
 function s() {
-  Chunk433517.K.set(a, true)
+  Chunk433517.K.set(o, true)
 }
 
 function l() {
   Chunk473749.useEffect(() => {
-    null == Chunk433517.K.get(a) && (s(), (0, Chunk865066.sU)("first-start", false))
+    null == Chunk433517.K.get(o) && (s(), (0, Chunk865066.sU)("first-start", false))
   }, [])
 }

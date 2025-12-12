@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk314897 = require("./314897.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk796771 = require("./796771.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk989532 = require("./989532.js"),
+  Chunk478411 = require("./478411.js");
 
 function j(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
@@ -54,19 +54,19 @@ class b extends Chunk473749.PureComponent {
   handoff(t) {
     d.default.requestRedirect(p.Etm.BROWSER_HANDOFF, {
       handoffToken: t,
-      fingerprint: f.default.getFingerprint()
+      fingerprint: u.default.getFingerprint()
     }).then(this.done, this.failed)
   }
   renderDone() {
     return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
         src: require("./69008.js"),
-        className: Chunk197571.marginBottom20
+        className: Chunk478411.marginBottom20
       }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.YsLqvs)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        className: Chunk197571.marginBottom40,
+        className: Chunk478411.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
@@ -79,12 +79,12 @@ class b extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
         src: require("./69008.js"),
-        className: Chunk197571.marginBottom20
+        className: Chunk478411.marginBottom20
       }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.hsLIsW)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
-        className: Chunk197571.marginBottom40,
+        className: Chunk478411.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
@@ -96,7 +96,7 @@ class b extends Chunk473749.PureComponent {
   renderHandoff() {
     return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk54381.jsx)(Chunk388905.Hh, {}), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ctWa65)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["53IHoo"])
@@ -120,7 +120,7 @@ class b extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsx)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.CENTER,
       align: Chunk600164.Z.Align.CENTER,
-      className: Chunk796771.wrapper,
+      className: Chunk989532.wrapper,
       children: module
     })
   }
@@ -135,7 +135,7 @@ class b extends Chunk473749.PureComponent {
         stage: D
       }), N()
     }), j(this, "handleOpenApp", () => {
-      (0, u.uL)(p.Z5c.ME)
+      (0, f.uL)(p.Z5c.ME)
     });
     let {
       search: n

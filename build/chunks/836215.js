@@ -17,11 +17,11 @@ Chunk98405({
 }, {
   toSpliced: function(e, t) {
     var n, r, i, p, _ = l(this),
-      m = a(_),
+      m = o(_),
       h = s(e, m),
       g = arguments.length,
       E = 0;
-    for (0 === g ? n = r = 0 : 1 === g ? (n = 0, r = m - h) : (n = g - 2, r = f(d(c(t), 0), m - h)), p = u(i = o(m + n - r)); E < h; E++) p[E] = _[E];
+    for (0 === g ? n = r = 0 : 1 === g ? (n = 0, r = m - h) : (n = g - 2, r = f(d(c(t), 0), m - h)), p = u(i = a(m + n - r)); E < h; E++) p[E] = _[E];
     for (; E < h + n; E++) p[E] = arguments[E - h + 2];
     for (; E < i; E++) p[E] = _[E + r - n];
     return p

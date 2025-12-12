@@ -2,18 +2,18 @@
 /** chunk id: 760283, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = function(e, t, r) {
-  var i, o, a, s, l = this,
+  var i, a, o, s, l = this,
     c = {},
     u = 0,
     d = false;
-  for (o = 0, i = l.getMatches(e, t, r); o < i.length; ++o) i[o].seq && (u = Math.max(u, i[o].level));
-  for (o = 0; o < i.length; ++o) {
-    if (i[o].seq) {
-      if (i[o].level !== u) continue;
-      d = true, c[i[o].seq] = 1, l.fireCallback(i[o].callback, r, i[o].combo, i[o].seq);
+  for (a = 0, i = l.getMatches(e, t, r); a < i.length; ++a) i[a].seq && (u = Math.max(u, i[a].level));
+  for (a = 0; a < i.length; ++a) {
+    if (i[a].seq) {
+      if (i[a].level !== u) continue;
+      d = true, c[i[a].seq] = 1, l.fireCallback(i[a].callback, r, i[a].combo, i[a].seq);
       continue
     }
-    d || l.fireCallback(i[o].callback, r, i[o].combo)
+    d || l.fireCallback(i[a].callback, r, i[a].combo)
   }
-  s = "keypress" === r.type && l.ignoreNextKeypress, a = n(64e3), r.type !== l.nextExpectedAction || a(e) || s || l.resetSequences(c), l.ignoreNextKeypress = d && "keydown" === r.type
+  s = "keypress" === r.type && l.ignoreNextKeypress, o = n(64e3), r.type !== l.nextExpectedAction || o(e) || s || l.resetSequences(c), l.ignoreNextKeypress = d && "keydown" === r.type
 }

@@ -60,7 +60,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk599706 = require("./599706.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk84822 = require("./84822.js");
+  Chunk649519 = require("./649519.js");
 let eo = [14, 14, 12, 12, 10, 8, 6],
   ec = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
@@ -185,7 +185,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
     }
     return null
   },
-  e_ = e => {
+  eb = e => {
     let {
       activity: t,
       analyticsLocations: n
@@ -221,8 +221,8 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
       })]
     })
   };
-var eb = ((r = eb || {}).XBOX = "XBOX", r.SPOTIFY = "SPOTIFY", r.MULTIPLE = "MULTIPLE", r);
-let eE = e => {
+var eE = ((r = eE || {}).XBOX = "XBOX", r.SPOTIFY = "SPOTIFY", r.MULTIPLE = "MULTIPLE", r);
+let e_ = e => {
   let t, {
     src: n,
     onClick: r,
@@ -265,7 +265,7 @@ let eE = e => {
     children: t
   }) : t
 };
-eE.Src = eb;
+e_.Src = eE;
 let eO = e => {
   let {
     priorityUser: t,
@@ -312,7 +312,7 @@ let eO = e => {
     }) : l]
   })
 };
-eO.Icon = eE;
+eO.Icon = e_;
 let ev = e => {
   var t, n, {
       children: r,
@@ -465,7 +465,7 @@ ev.Header = eO, ev.Body = e => {
         partySize: r,
         members: l
       })]
-    }), (0, i.jsx)(e_, {
+    }), (0, i.jsx)(eb, {
       activity: a,
       analyticsLocations: s
     })]
@@ -484,39 +484,39 @@ ev.Header = eO, ev.Body = e => {
     assets: g,
     details: h,
     state: m,
-    application_id: _
+    application_id: b
   } = c, {
-    hasButton: b
+    hasButton: E
   } = eh({
     activity: c,
     user: d
-  }), E = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), I = (0, S.Z)({
+  }), _ = null != (r = null == (t = (0, w.T7)(f)) ? true : t.src) ? r : n(211827), I = (0, S.Z)({
     application: f,
     analyticsLocations: p
   });
   return null != c.assets || (0, O.Z)(c) || null != I ? (0, i.jsxs)(ep, {
     children: [(0, i.jsxs)("div", {
       className: s()(es.activitySection, {
-        [es.activitySectionWithButtons]: b
+        [es.activitySectionWithButtons]: E
       }),
       children: [null != g && 0 !== Object.keys(g).length ? (0, i.jsxs)("div", {
         className: es.activitySectionAssets,
         children: [(0, i.jsx)("img", {
           alt: null != (l = g.large_text) ? l : "",
-          src: null != (a = u(_, g.large_image, [160, 160])) ? a : E,
+          src: null != (a = u(b, g.large_image, [160, 160])) ? a : _,
           className: s()(es.largeImage, {
             [es.largeImageMask]: null != g.small_image
           })
         }), null != g.small_image ? (0, i.jsx)("img", {
           alt: null != (o = g.small_text) ? o : "",
-          src: u(_, g.small_image, [64, 64]),
+          src: u(b, g.small_image, [64, 64]),
           className: es.smallImage
         }) : null]
       }) : (0, i.jsx)("div", {
         className: es.activitySectionAssets,
         children: (0, i.jsx)("img", {
           alt: "",
-          src: E,
+          src: _,
           className: es.largeImage
         })
       }), (0, i.jsxs)("div", {
@@ -538,7 +538,7 @@ ev.Header = eO, ev.Body = e => {
         activity: c,
         user: d
       })]
-    }), (0, i.jsx)(e_, {
+    }), (0, i.jsx)(eb, {
       activity: c,
       analyticsLocations: p
     })]
@@ -615,7 +615,7 @@ ev.Header = eO, ev.Body = e => {
       className: es.twitchSectionPreviewWrapper,
       aspectRatio: 16 / 9,
       children: (0, i.jsxs)(f.P3F, {
-        href: (0, E.Z)(r),
+        href: (0, _.Z)(r),
         tag: "a",
         target: "_blank",
         children: [(0, i.jsx)("img", {
@@ -638,7 +638,7 @@ ev.Header = eO, ev.Body = e => {
       }),
       children: [(0, i.jsx)("img", {
         alt: "",
-        src: _.Z.get(el.ABu.TWITCH).icon.lightSVG,
+        src: b.Z.get(el.ABu.TWITCH).icon.lightSVG,
         className: es.twitchSectionIcon
       }), (0, i.jsxs)("div", {
         children: [ec(c), null != u ? eu(u) : null]
@@ -673,7 +673,7 @@ ev.Header = eO, ev.Body = e => {
   }), h = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ea.intl.string(ea.t.eXan7B), m = (0, M.Z)({
     userId: l.id,
     guildId: o
-  }), _ = (0, k.j)({
+  }), b = (0, k.j)({
     displayNameStyles: m
   });
   return (0, i.jsxs)(ep, {
@@ -685,7 +685,7 @@ ev.Header = eO, ev.Body = e => {
         "aria-label": l.username,
         className: es.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [ec(er.ZP.getName(l), _), eu(h)]
+        children: [ec(er.ZP.getName(l), b), eu(h)]
       }), (0, i.jsx)(Z.ZP, {
         size: Z.ZP.Sizes.SMALL
       })]
@@ -712,10 +712,10 @@ ev.Header = eO, ev.Body = e => {
   if (null == u) return null;
   let h = x.Z.getApplication(u);
   if (null == h) return null;
-  let _ = null != t.created_at && t.created_at > 0 ? {
+  let b = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    E = (0, et.xF)(h.id, s, 300);
+    _ = (0, et.xF)(h.id, s, 300);
   return (0, i.jsxs)(ep, {
     children: [(0, i.jsxs)("div", {
       className: es.embeddedActivityTopRow,
@@ -729,20 +729,20 @@ ev.Header = eO, ev.Body = e => {
           variant: "text-sm/semibold",
           children: h.name
         })
-      }), null != _ ? (0, i.jsx)("div", {
+      }), null != b ? (0, i.jsx)("div", {
         className: es.embeddedActivityTimeElapsed,
         children: (0, i.jsx)(f.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
           children: (0, i.jsx)(ed, {
-            timestamps: _
+            timestamps: b
           })
         })
       }) : null]
     }), (0, i.jsxs)("div", {
       className: es.embeddedActivityPlayerContainer,
-      children: [null != E ? (0, i.jsx)("img", {
-        src: E,
+      children: [null != _ ? (0, i.jsx)("img", {
+        src: _,
         alt: h.name,
         className: es.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
@@ -758,7 +758,7 @@ ev.Header = eO, ev.Body = e => {
             size: "sm",
             text: ea.intl.string(ea.t.VJlc0S),
             onClick: e => {
-              e.stopPropagation(), (0, b.Z)({
+              e.stopPropagation(), (0, E.Z)({
                 applicationId: u,
                 activityChannelId: n.id,
                 locationObject: p.location,

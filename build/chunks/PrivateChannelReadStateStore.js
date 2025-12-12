@@ -1,7 +1,7 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 358652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,39 +19,39 @@ function g() {
   return module.length > 20 && (module.length = 20), !(0, Chunk251625.EF)(module, h) && (h = module, p = new Set(module), true)
 }
 
-function m() {
+function b() {
   return g()
 }
 
-function b(e) {
+function m(e) {
   let {
     channelId: t
   } = e, n = c.Z.getChannel(t);
-  return null != n && !!(0, a.hv)(n.type) && g()
+  return null != n && !!(0, o.hv)(n.type) && g()
 }
-class _ extends(r = Chunk442837.ZP.Store) {
+class y extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk55589.Z, Chunk592125.Z, Chunk944486.Z, Chunk306680.ZP)
   }
   getUnreadPrivateChannelIds() {
     return h
   }
-}(i = "displayName") in _ ? Object.defineProperty(_, i, {
+}(i = "displayName") in y ? Object.defineProperty(y, i, {
   value: "PrivateChannelReadStateStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : _[i] = "PrivateChannelReadStateStore";
-let y = new _(Chunk570140.Z, {
-  CONNECTION_OPEN: m,
-  OVERLAY_INITIALIZE: m,
-  MESSAGE_CREATE: b,
-  MESSAGE_ACK: b,
+}) : y[i] = "PrivateChannelReadStateStore";
+let O = new y(Chunk570140.Z, {
+  CONNECTION_OPEN: b,
+  OVERLAY_INITIALIZE: b,
+  MESSAGE_CREATE: m,
+  MESSAGE_ACK: m,
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e, n = c.Z.getChannel(t);
-    return null != n && !!(0, a.hv)(n.type) && g()
+    return null != n && !!(0, o.hv)(n.type) && g()
   },
   CHANNEL_DELETE: function(e) {
     let {
@@ -71,7 +71,7 @@ let y = new _(Chunk570140.Z, {
         id: t
       }
     } = e, n = c.Z.getChannel(t);
-    return null != n && !!(0, a.hv)(n.type) && g()
+    return null != n && !!(0, o.hv)(n.type) && g()
   },
   CHANNEL_UPDATES: function(e) {
     let {
@@ -82,7 +82,7 @@ let y = new _(Chunk570140.Z, {
       }
       of t) {
       let t = c.Z.getChannel(e);
-      null != t && (0, a.hv)(t.type) && (n = true)
+      null != t && (0, o.hv)(t.type) && (n = true)
     }
     return !!n && g()
   }

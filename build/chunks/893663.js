@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk581883 = require("./581883.js"),
   Chunk710111 = require("./710111.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -67,8 +67,8 @@ function f(e) {
 function p(e, t) {
   var n, r;
   let i = null == (n = t[e]) ? true : n.joinSound,
-    a = null == (r = t[o.hY]) ? true : r.joinSound,
-    l = null != i ? i : a;
+    o = null == (r = t[a.hY]) ? true : r.joinSound,
+    l = null != i ? i : o;
   return null != l ? c(s({}, l), {
     type: +(null != i)
   }) : true

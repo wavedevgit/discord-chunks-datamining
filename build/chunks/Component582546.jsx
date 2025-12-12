@@ -32,7 +32,7 @@ function h(e) {
     return (null == (e = f.default.getCurrentUser()) ? true : e.id) === n.id
   }), O = (0, i.e7)([c.Z], () => c.Z.hasConnectedAccount());
   if ("recent" !== g || !(0, l.AZ)(h)) return null;
-  if (!O) return (0, r.jsx)(o.sNh, {
+  if (!O) return (0, r.jsx)(a.sNh, {
     id: "connect-spotify",
     label: m.intl.formatToPlainString(m.t.XWSHTb, {
       platform: _.ai
@@ -46,8 +46,8 @@ function h(e) {
     }
   });
   if (y) return null;
-  let v = (0, a.dU)(h) ? null == (t = h.extra.entries[0]) ? true : t.media : h.extra.media;
-  return null == v ? null : (0, r.jsx)(o.sNh, {
+  let v = (0, o.dU)(h) ? null == (t = h.extra.entries[0]) ? true : t.media : h.extra.media;
+  return null == v ? null : (0, r.jsx)(a.sNh, {
     id: "play-on-spotify",
     label: m.intl.string(m.t.rRffNz),
     action: () => {

@@ -19,15 +19,15 @@ function d(e, t, n) {
       closeModal: t,
       isGift: n
     },
-    a = r.useRef(i);
+    o = r.useRef(i);
   r.useEffect(() => {
-    a.current = i
+    o.current = i
   }), r.useEffect(() => {
     let {
       closeModal: t,
       isGift: n
-    } = a.current;
-    null != e && e.isPurchasedExternally && null != e.paymentGateway && !n && (o.Z.show({
+    } = o.current;
+    null != e && e.isPurchasedExternally && null != e.paymentGateway && !n && (a.Z.show({
       title: u.intl.formatToPlainString(u.t["6mIX6s"], {
         paymentGatewayName: c.Vz[e.paymentGateway]
       }),
@@ -42,18 +42,18 @@ function d(e, t, n) {
 let f = [];
 
 function p(e, t) {
-  let n = (0, i.e7)([a.Z], () => null != e ? a.Z.get(e) : null),
-    o = (0, i.Wu)([s.Z], () => {
+  let n = (0, i.e7)([o.Z], () => null != e ? o.Z.get(e) : null),
+    a = (0, i.Wu)([s.Z], () => {
       let e = null != n ? s.Z.getForSku(n.skuId) : null;
       return null != e ? Array.from(e) : f
     }),
-    c = r.useMemo(() => o.filter(e => {
+    c = r.useMemo(() => a.filter(e => {
       let {
         parentId: t,
         consumed: n
       } = e;
       return null != t && !n
-    }), [o]);
+    }), [a]);
   return {
     hasEntitlements: !t && null != n && null != c && c.length >= l.ZP.getIntervalMonths(n.interval, n.intervalCount),
     entitlements: c

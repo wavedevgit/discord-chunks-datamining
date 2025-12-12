@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   X0: () => s,
-  uH: () => a,
-  zv: () => o
+  uH: () => o,
+  zv: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   id: "2024-11_soundmoji_rendering",
   label: "Render soundmojis",
   kind: "user",
@@ -25,11 +25,11 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e;
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: false
@@ -40,7 +40,7 @@ function s(e) {
   let {
     location: t
   } = e;
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     autoTrackExposure: false

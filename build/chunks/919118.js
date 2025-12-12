@@ -3,11 +3,11 @@
 "use strict";
 let r;
 require.d(exports, {
-  J: () => a
+  J: () => o
 });
 let i = Symbol.for("react-aria.i18n.locale"),
-  o = Symbol.for("react-aria.i18n.strings");
-class a {
+  a = Symbol.for("react-aria.i18n.strings");
+class o {
   getStringForLocale(e, t) {
     let n = this.getStringsForLocale(t)[e];
     if (!n) throw Error(`Could not find intl message ${e} in ${t} locale`);
@@ -21,9 +21,9 @@ class a {
     if ("undefined" == typeof window) return null;
     let t = window[i];
     if (true === r) {
-      let e = window[o];
+      let e = window[a];
       if (!e) return null;
-      for (let n in r = {}, e) r[n] = new a({
+      for (let n in r = {}, e) r[n] = new o({
         [t]: e[n]
       }, t)
     }

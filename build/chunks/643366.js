@@ -2,7 +2,7 @@
 /** chunk id: 643366, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Y: () => l
+  Y: () => c
 });
 var Chunk473749 = require("./473749.js"),
   Chunk110924 = require("./110924.js"),
@@ -10,9 +10,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk497350 = require("./497350.js"),
   Chunk981631 = require("./981631.js");
 
-function l(e) {
-  let t = (0, a.Z)(e);
-  r.useEffect(() => {
+function c(e) {
+  let t = (0, r.Z)(e);
+  a.useEffect(() => {
     if (e === t) return;
     let n = null;
     "user-code-input" !== e.type && "handoff" !== e.type && (n = (0, i.B)(e.userCodeData.clientId)), o.default.track(s.rMx.DEVICE_LINK_STEP, {

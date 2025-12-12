@@ -32,15 +32,15 @@ let g = Chunk998502.ZP.requireModule("discord_rpc").RPCIPC,
     PONG: 4
   };
 
-function _(e, t) {
+function b(e, t) {
   null != e.setHandshakeComplete ? e.setHandshakeComplete(t) : e._didHandshake = t
 }
 
-function b(e) {
+function E(e) {
   return null != e.getHandshakeComplete ? e.getHandshakeComplete() : e._didHandshake
 }
 
-function E(e) {
+function _(e) {
   return new Promise((t, n) => {
     "string" == typeof e && (e = g.net.createConnection(e));
     let r = new v(e, "json");
@@ -130,7 +130,7 @@ class v extends Chunk76238.Z {
         this.handleHandshake(e, n), e.emit("handshake", n);
         break;
       case m.FRAME:
-        if (!b(e)) throw Error("did not handshake");
+        if (!E(e)) throw Error("did not handshake");
         e.emit("request", n);
         break;
       case m.CLOSE:
@@ -141,11 +141,11 @@ class v extends Chunk76238.Z {
     }
   }
   handleHandshake(e, t) {
-    if (b(e)) throw Error("already did handshake");
-    this.clientId = t.client_id, this.checkRpcVersion(+t.v), _(e, true)
+    if (E(e)) throw Error("already did handshake");
+    this.clientId = t.client_id, this.checkRpcVersion(+t.v), b(e, true)
   }
   constructor(e, t) {
-    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, _(e, false)
+    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, b(e, false)
   }
 }
 class y extends Chunk836560.EventEmitter {
@@ -183,7 +183,7 @@ class y extends Chunk836560.EventEmitter {
   constructor() {
     super();
     let e = g.net.createServer(e => this.handleConnection(e));
-    module.on("error", e => h.error("Error: ".concat(e.message))), g.getAvailableSocket(E).then(t => {
+    module.on("error", e => h.error("Error: ".concat(e.message))), g.getAvailableSocket(_).then(t => {
       e.listen(t, () => {
         ("function" == typeof e.listening ? e.listening() : e.listening) && h.info("Starting on ".concat(e.address()))
       })

@@ -5,7 +5,7 @@ let r, i;
 require.d(exports, {
   Z: () => I
 }), require("./415506.js");
-var o, Chunk442837 = require("./442837.js"),
+var a, Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk358085 = require("./358085.js"),
@@ -49,13 +49,13 @@ function E(e) {
     paymentSourceType: t,
     state: n,
     path: i,
-    query: o
+    query: a
   } = e;
   if (t !== u.HeQ.PAYPAL || n !== r) return;
-  let a = window.popupBridge.onComplete;
-  "function" == typeof a && a(null, {
+  let o = window.popupBridge.onComplete;
+  "function" == typeof o && o(null, {
     path: i,
-    queryItems: o
+    queryItems: a
   })
 }
 
@@ -82,7 +82,7 @@ function O() {
     i = e, window.open(e), S.emitChange()
   }
 });
-class v extends(o = Chunk442837.ZP.Store) {
+class v extends(a = Chunk442837.ZP.Store) {
   getClient() {
     return f
   }

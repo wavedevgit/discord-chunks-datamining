@@ -2,28 +2,28 @@
 /** chunk id: 401975, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk213301 = require("./213301.js"),
-  Chunk586312 = require("./586312.js");
-let a = e => {
+  a = require.n(Chunk120356),
+  Chunk595868 = require("./595868.js"),
+  Chunk853637 = require("./853637.js");
+let s = e => {
   let {
     skipPulseAnimation: t = false
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(i.productCardContainer, s.productSkeletonCardContainer, {
-      [s.pulseAnimation]: !t
+    className: a()(o.productCardContainer, i.productSkeletonCardContainer, {
+      [i.pulseAnimation]: !t
     }),
     children: (0, r.jsxs)("div", {
-      className: o()(i.productCardContentContainer, s.productSkeletonContent),
+      className: a()(o.productCardContentContainer, i.productSkeletonContent),
       children: [(0, r.jsx)("div", {
-        className: s.productSkeletonTitle
+        className: i.productSkeletonTitle
       }), (0, r.jsx)("div", {
-        className: s.productSkeletonDescription
+        className: i.productSkeletonDescription
       })]
     })
   })

@@ -81,14 +81,14 @@ function G(e) {
     })),
     er = (0, i.e7)([D.Z], () => null != Z && null != Z.application_id && D.Z.getState(Z.application_id, M.mFx.JOIN) === M.OcF.LOADING),
     ei = (0, b.q)(Q),
-    eo = (0, y.A)(ei),
-    ea = (0, _.s5)({
+    ea = (0, y.A)(ei),
+    eo = (0, _.s5)({
       userId: B.id,
       activity: Z,
       channelId: ee,
       application: ei
     }),
-    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, w.Z, A.Z], () => null != F ? ea === _.Fw.CAN_JOIN : (0, d.Z)({
+    es = (0, i.e7)([v.Z, T.Z, I.Z, N.Z, P.Z, w.Z, A.Z], () => null != F ? eo === _.Fw.CAN_JOIN : (0, d.Z)({
       user: B,
       activity: Z,
       application: ei,
@@ -123,7 +123,7 @@ function G(e) {
       let n = (0, m.Z)(t, M.xjy.EMBEDDED),
         r = P.Z.getVoiceChannelId(),
         i = v.Z.getChannel(r);
-      if (await a.Z.join({
+      if (await o.Z.join({
           userId: e.id,
           sessionId: ep,
           applicationId: Q,
@@ -134,7 +134,7 @@ function G(e) {
           locationObject: ec.location,
           analyticsLocations: K
         }), !n) {
-        var o;
+        var a;
         (0, g.Z)({
           type: M.q5t.JOIN,
           userId: e.id,
@@ -142,7 +142,7 @@ function G(e) {
           channelId: r,
           channelType: null == i ? true : i.type,
           applicationId: Q,
-          partyId: null != t ? null == t || null == (o = t.party) ? true : o.id : "",
+          partyId: null != t ? null == t || null == (a = t.party) ? true : a.id : "",
           locationObject: ec.location,
           analyticsLocations: K
         })
@@ -151,14 +151,14 @@ function G(e) {
       let e = false;
       async function t() {
         let e;
-        q(true), null != Z && (e = await o.Z.sendActivityInviteUser({
+        q(true), null != Z && (e = await a.Z.sendActivityInviteUser({
           type: M.mFx.JOIN_REQUEST,
           userId: B.id,
           activity: Z,
           location: M.Sbl.USER_ACTIVITY_ACTIONS
         })), null != e && s.default.selectPrivateChannel(e.id)
       }
-      if (X && !eo) {
+      if (X && !ea) {
         if (null == Q) return;
         if (!es) return t();
         if (e = await (0, u.Z)({

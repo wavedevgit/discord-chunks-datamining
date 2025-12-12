@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -49,9 +49,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk295907 = require("./295907.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk993103 = require("./993103.js"),
-  Chunk450943 = require("./450943.js"),
-  Chunk315091 = require("./315091.js");
+  Chunk225375 = require("./225375.js"),
+  Chunk82144 = require("./82144.js"),
+  Chunk533348 = require("./533348.js");
 
 function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -101,27 +101,27 @@ let et = {
   },
   er = 475,
   ei = 267,
-  eo = 128;
+  ea = 128;
 
-function ea(e) {
+function eo(e) {
   let {
     header: t
-  } = e, n = x.Z.getCameraComponent(), o = (0, l.e7)([x.Z], () => x.Z.getVideoDeviceId()), a = (0, S.Z)();
+  } = e, n = x.Z.getCameraComponent(), a = (0, l.e7)([x.Z], () => x.Z.getVideoDeviceId()), o = (0, S.Z)();
   return i.useEffect(() => {
     let e = L.default.getCurrentUser();
-    if (a && null != e) {
+    if (o && null != e) {
       let t = (0, O.P)(e);
-      (0, v.FU)(t, o, {
+      (0, v.FU)(t, a, {
         track: false
       }).catch(H.dG4)
     }
-  }, [a, o]), (0, r.jsxs)("div", {
+  }, [o, a]), (0, r.jsxs)("div", {
     className: q.previewRoot,
     children: [(0, r.jsx)(c.$jN, {}), (0, r.jsx)("div", {
       className: q.preview,
       children: (0, r.jsx)(n, {
         disabled: false,
-        deviceId: o,
+        deviceId: a,
         width: er,
         height: ei
       })
@@ -136,15 +136,15 @@ function es(e) {
   let {
     canVideo: t,
     channel: n,
-    numVideoDevices: o
+    numVideoDevices: a
   } = e, {
     parentAnalyticsLocation: s
   } = (0, h.ZP)(), {
     cameraUnavailable: l,
     enabled: d
-  } = (0, I.Z)(), p = (0, T.Z)(n), _ = i.useRef(null), g = o > 1;
+  } = (0, I.Z)(), p = (0, T.Z)(n), _ = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
-    className: a()(q.wrapper, q.actions),
+    className: o()(q.wrapper, q.actions),
     children: [(0, r.jsx)(A.Z, {
       iconComponent: c.Dio,
       label: K.intl.string(K.t.WAI6xu),
@@ -175,13 +175,13 @@ function es(e) {
         let {
           onClick: i
         } = e, {
-          isShown: o
+          isShown: a
         } = t;
         return (0, r.jsx)(P.C, {
           buttonRef: _,
           join: true,
           enabled: d,
-          className: a()(q.actionButton, {
+          className: o()(q.actionButton, {
             [q.fullRegionDropdownButtonOverride]: g
           }),
           color: "green",
@@ -190,7 +190,7 @@ function es(e) {
           cameraUnavailable: l,
           channel: n,
           onPopoutClick: g ? i : null,
-          popoutOpen: o,
+          popoutOpen: a,
           onCameraUnavailable: C.Z,
           onChange: () => {
             var e;
@@ -218,7 +218,7 @@ function el(e) {
   var t;
   let {
     animatedStyle: n,
-    y: o,
+    y: a,
     x: f,
     channel: m
   } = e, {
@@ -226,8 +226,8 @@ function el(e) {
   } = (0, h.ZP)(_.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), S = (0, l.e7)([D.Z], () => D.Z.getGuild(m.guild_id)), I = null != S ? k.ZP.getGuildIconURL({
     id: S.id,
     icon: S.icon,
-    size: eo
-  }) : null, T = null != (t = (0, g.x)(m, eo, true)) ? t : I, C = (0, E.ZP)(m), [A, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(W.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), P = null != S ? "".concat(C, ", ").concat(S.name) : C, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(m.id)), Z = i.useCallback(e => {
+    size: ea
+  }) : null, T = null != (t = (0, g.x)(m, ea, true)) ? t : I, C = (0, E.ZP)(m), [A, N] = (0, l.Wu)([x.Z], () => [x.Z.supports(W.AN.VIDEO), Object.keys(x.Z.getVideoDevices()).length]), P = null != S ? "".concat(C, ", ").concat(S.name) : C, L = (0, l.e7)([j.Z], () => j.Z.isFocused()), M = (0, l.e7)([U.Z], () => U.Z.getMode(m.id)), Z = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), F = (0, c.q_F)({
     value: +!!O,
@@ -251,14 +251,14 @@ function el(e) {
     X = M === H.WtW.VOICE || V && m.type === H.d4z.GUILD_VOICE ? K.intl.string(K.t.Js8cK3) : K.intl.string(K.t.KcnWCO),
     $ = (0, r.jsxs)(r.Fragment, {
       children: [null != S && null == I ? (0, r.jsx)("div", {
-        className: a()(q.icon, z.wrapper, z.ringingIncoming),
+        className: o()(q.icon, z.wrapper, z.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
           className: q.mask,
           mask: b.QS.AVATAR_DEFAULT,
           width: O ? 40 : 80,
           height: O ? 40 : 80,
           children: (0, r.jsx)("div", {
-            className: a()(q.guildIcon, q.guildIconWithoutImage),
+            className: o()(q.guildIcon, q.guildIconWithoutImage),
             children: (0, r.jsx)("div", {
               className: q.guildAcronym,
               children: (0, w.gM)(S)
@@ -295,7 +295,7 @@ function el(e) {
       selector: ".".concat(q.root),
       initialPosition: {
         left: f,
-        top: o
+        top: a
       },
       maxX: ec.width,
       maxY: ec.height,
@@ -304,7 +304,7 @@ function el(e) {
       children: (0, r.jsx)(c.f6W, {
         theme: O ? H.BRd.DARK : true,
         children: e => (0, r.jsxs)(s.animated.div, {
-          className: a()(q.root, Q.elevationHigh, {
+          className: o()(q.root, Q.elevationHigh, {
             [q.previewCamera]: O
           }, e),
           style: ee(J({}, n), {
@@ -312,7 +312,7 @@ function el(e) {
             minHeight: F.value.interpolate([0, 1], [el.height, ei]),
             translateX: F.value.interpolate([0, 1], [0, false * Math.abs(er - el.width) / 2])
           }),
-          children: [O ? (0, r.jsx)(ea, {
+          children: [O ? (0, r.jsx)(eo, {
             header: $
           }) : (0, r.jsx)("div", {
             className: q.mainChannelInfo,

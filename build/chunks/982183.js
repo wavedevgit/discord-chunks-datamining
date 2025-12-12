@@ -29,8 +29,8 @@ let s = "Notifications Inbox",
 
 function f(e) {
   return (0, i.yS)({
-    id: o.STv,
-    name: "bookmarks" === e ? a.intl.string(a.t["2pAkDA"]) : a.intl.string(a.t.HcoRu0),
+    id: a.STv,
+    name: "bookmarks" === e ? o.intl.string(o.t["2pAkDA"]) : o.intl.string(o.t.HcoRu0),
     description: "",
     icon: true,
     features: []

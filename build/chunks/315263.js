@@ -42,7 +42,7 @@ var Chunk701190 = require("./701190.js"),
 require("./215023.js");
 var Chunk324805 = require("./324805.js");
 async function U(e, t) {
-  await o.Z.dispatch({
+  await a.Z.dispatch({
     type: "INVITE_MODAL_OPEN",
     invite: e,
     code: t,
@@ -72,25 +72,25 @@ let Z = {
 function F(e) {
   var t;
   let {
-    skipExtensionCheck: o,
+    skipExtensionCheck: a,
     analyticsLocations: s
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Z, P = (0, g.zO)(e);
   if (null != P && (P.type === h.g.INVITE || P.type === h.g.EMBEDDED_ACTIVITY_INVITE)) return e => (null == e || e.preventDefault(), G(P), true);
   if (null != P && (P.type === h.g.APP_DIRECTORY_PROFILE || P.type === h.g.APP_DIRECTORY_STOREFRONT || P.type === h.g.APP_DIRECTORY_STOREFRONT_SKU)) return t => {
-    var i, o;
+    var i, a;
     null == t || t.preventDefault();
     let {
-      code: a
+      code: o
     } = P, {
       applicationId: s,
       skuId: l
     } = P.type === h.g.APP_DIRECTORY_PROFILE || P.type === h.g.APP_DIRECTORY_STOREFRONT ? {
-      applicationId: a,
+      applicationId: o,
       skuId: true
-    } : null != (i = (0, p.Q)(a)) ? i : {
+    } : null != (i = (0, p.Q)(o)) ? i : {
       applicationId: true,
       skuId: true
-    }, c = null != (o = w.Z.getGuildId()) ? o : true;
+    }, c = null != (a = w.Z.getGuildId()) ? a : true;
     return null == s ? (0, j.Z)(e) : (x.default.track(M.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
@@ -118,7 +118,7 @@ function F(e) {
     let {
       code: r,
       url: i
-    } = P, o = _.Z.getApplication(r), f = new URL(i), p = null != (t = f.searchParams.get("referrer_id")) ? t : true, h = (0, d.Z)(), {
+    } = P, a = _.Z.getApplication(r), f = new URL(i), p = null != (t = f.searchParams.get("referrer_id")) ? t : true, h = (0, d.Z)(), {
       currentChannelId: g,
       instanceId: E,
       isCurrentlyInInstance: b,
@@ -139,8 +139,8 @@ function F(e) {
       })
     }).catch(() => {}), true);
     {
-      let e = null == o || null == (n = o.bot) ? true : n.id;
-      return null != e && (a.Z.openPrivateChannel({
+      let e = null == a || null == (n = a.bot) ? true : n.id;
+      return null != e && (o.Z.openPrivateChannel({
         recipientIds: e
       }).then(async e => {
         let {
@@ -182,15 +182,15 @@ function F(e) {
   if (null != P && P.type === h.g.QUESTS_EMBED && (0, S.c)({
       location: k.dr.EMBED_MOBILE
     })) return e => {
-    var t, r, o;
-    let a, s;
+    var t, r, a;
+    let o, s;
     null == e || e.preventDefault();
     let {
       search: l
     } = null != (t = L.Z.toURLSafe(P.url)) ? t : {};
     if (null != l) {
       let e = new URLSearchParams(l);
-      a = null != (r = e.get("sort")) ? r : true, s = null != (o = e.get("filter")) ? o : true
+      o = null != (r = e.get("sort")) ? r : true, s = null != (a = e.get("filter")) ? a : true
     }
     return Promise.resolve().then(n.bind(n, 110560)).then(e => {
       let {
@@ -214,14 +214,14 @@ function F(e) {
       t = null == F ? true : F.startsWith("/discovery/applications"),
       r = e[t ? 3 : 2],
       i = "search" === r,
-      o = t && "categories" === r && "featured" !== e[4];
+      a = t && "categories" === r && "featured" !== e[4];
     return t => {
-      let r, a, s;
+      let r, o, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
         let e = new URLSearchParams(B);
-        r = null != (l = e.get("q")) ? l : true, a = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
-      } else o && (a = e[4]);
+        r = null != (l = e.get("q")) ? l : true, o = null != (c = e.get("category_id")) ? c : true, s = null != (u = e.get("page")) ? u : true
+      } else a && (o = e[4]);
       return Promise.resolve().then(n.bind(n, 749681)).then(e => {
         let {
           transitionToGlobalDiscovery: t
@@ -230,7 +230,7 @@ function F(e) {
         } = n(49898);
         t({
           tab: i.APPS,
-          categoryId: null == a || Number.isNaN(a) ? true : Number(a),
+          categoryId: null == o || Number.isNaN(o) ? true : Number(o),
           page: null == s || Number.isNaN(s) ? true : Number(s),
           query: r
         })
@@ -290,5 +290,5 @@ function F(e) {
     t({
       tab: r.SERVERS
     })
-  }), true) : o || null == (0, N.v)(e) ? true : t => (null == t || t.preventDefault(), A.Z.show(e), true)
+  }), true) : a || null == (0, N.v)(e) ? true : t => (null == t || t.preventDefault(), A.Z.show(e), true)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => f
@@ -26,13 +26,13 @@ let f = () => {
       isDesktop: f,
       withMentions: h = false,
       initialPageSize: p
-    } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
-      initialized: y,
-      loading: O,
-      items: v,
-      hasMore: j,
-      cursor: C,
-      errored: x
+    } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), b = r.useRef(false), [m, y] = r.useState(false), {
+      initialized: O,
+      loading: v,
+      items: j,
+      hasMore: C,
+      cursor: x,
+      errored: E
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -41,49 +41,49 @@ let f = () => {
       cursor: c.Z.cursor,
       errored: c.Z.errored
     })), {
-      roleFilter: E,
-      everyoneFilter: S
-    } = (0, i.cj)([a.ZP], () => ({
-      everyoneFilter: a.ZP.everyoneFilter,
-      roleFilter: a.ZP.roleFilter
+      roleFilter: S,
+      everyoneFilter: I
+    } = (0, i.cj)([o.ZP], () => ({
+      everyoneFilter: o.ZP.everyoneFilter,
+      roleFilter: o.ZP.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
-      y && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
-    }, [t, y]);
-    let I = (0, o.Z)();
+      O && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
+    }, [t, O]);
+    let _ = (0, a.Z)();
     r.useEffect(() => () => {
-      f ? !I() && (x || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
-    }, [n, v, f, I, x]), r.useEffect(() => {
+      f ? !_() && (E || j.length > 100) && (0, s.jF)() : n && j.length > 100 && (0, s.jF)()
+    }, [n, j, f, _, E]), r.useEffect(() => {
       let e = g && t;
-      (!y || e) && (0, s.jk)({
+      (!O || e) && (0, s.jk)({
         limit: null != p ? p : h ? 8 : 20,
         with_mentions: h,
-        roles_filter: E,
-        everyone_filter: S
+        roles_filter: S,
+        everyone_filter: I
       })
-    }, [y, g, t, h, E, S, p]);
+    }, [O, g, t, h, S, I, p]);
     let P = r.useCallback(async e => {
-      !m.current && y && j && null != C && (e || !x) && (m.current = true, _(true), await (0, s.jk)({
-        after: C,
+      !b.current && O && C && null != x && (e || !E) && (b.current = true, y(true), await (0, s.jk)({
+        after: x,
         with_mentions: h,
-        roles_filter: E,
-        everyone_filter: S,
+        roles_filter: S,
+        everyone_filter: I,
         limit: h ? 8 : 20
       }, () => {
-        m.current = false
-      }), _(false))
-    }, [y, j, C, x, h, E, S]);
+        b.current = false
+      }), y(false))
+    }, [O, C, x, E, h, S, I]);
     return {
-      initialized: y,
-      loading: O,
-      items: v,
-      hasMore: j,
+      initialized: O,
+      loading: v,
+      items: j,
+      hasMore: C,
       loadMore: P,
-      loadingMore: b,
+      loadingMore: m,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: x
+      errored: E
     }
   })({
     isFocused: true,

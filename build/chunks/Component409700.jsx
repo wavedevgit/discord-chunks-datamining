@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -24,8 +24,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk240479 = require("./240479.jsx"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk937309 = require("./937309.js"),
-  Chunk463063 = require("./463063.js");
+  Chunk258462 = require("./258462.js"),
+  Chunk349971 = require("./349971.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,14 +72,14 @@ function C() {
     onVolumeChange: t
   } = (0, Chunk824690.Z)();
   return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
-    className: Chunk937309.sliderContainer,
+    className: Chunk258462.sliderContainer,
     onClick: e => e.stopPropagation(),
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["2JbvKw"])
     }), (0, Chunk54381.jsx)(Chunk481060.iRW, {
       onValueChange: exports,
-      className: Chunk937309.slider,
+      className: Chunk258462.slider,
       initialValue: (0, Chunk36703.P)(module),
       maxValue: 100
     })]
@@ -92,8 +92,8 @@ function A(e) {
     forceShowBetaLabel: n = false
   } = e, i = (0, m.V2)({
     location: "SoundmojiBanner"
-  }), o = (0, s.e7)([f.default], () => _.ZP.canUseSoundboardEverywhere(f.default.getCurrentUser())), a = (0, s.e7)([d.Z], () => d.Z.getGuildId());
-  return n || o || t.guildId === E.X8 || t.guildId === a || !i ? (0, r.jsx)(u.IGR, {
+  }), a = (0, s.e7)([f.default], () => _.ZP.canUseSoundboardEverywhere(f.default.getCurrentUser())), o = (0, s.e7)([d.Z], () => d.Z.getGuildId());
+  return n || a || t.guildId === E.X8 || t.guildId === o || !i ? (0, r.jsx)(u.IGR, {
     text: "BETA",
     color: l.Z.colors.BACKGROUND_BRAND.css,
     className: y.betaBadge
@@ -126,7 +126,7 @@ function N(e) {
     sound: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(y.infoContainer, y.infoTooltip),
+    className: o()(y.infoContainer, y.infoTooltip),
     children: [(0, r.jsx)(A, {
       sound: t
     }), (0, r.jsxs)("div", {
@@ -156,8 +156,8 @@ function P(e) {
   let {
     renderPopout: t,
     position: n,
-    tooltipText: o,
-    children: a,
+    tooltipText: a,
+    children: o,
     setTooltipShowing: s,
     clickableClassName: l
   } = e, [d, f] = i.useState(false), [p, _] = i.useState(String(Date.now())), m = i.useCallback(e => {
@@ -194,15 +194,15 @@ function P(e) {
       onTooltipShow: () => {
         E && (null == s || s(true))
       },
-      text: o,
+      text: a,
       position: "top",
       shouldShow: E,
       children: ["(", (0, r.jsx)(u.P3F, T(S({}, e), {
         innerRef: g,
-        "aria-label": o,
+        "aria-label": a,
         onClick: m,
         className: l,
-        children: a
+        children: o
       }))]
     })
   })

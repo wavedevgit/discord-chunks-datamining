@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk885387 = require("./885387.jsx"),
@@ -67,11 +67,11 @@ function g(e) {
   let {
     size: t,
     variant: n
-  } = e, o = (0, l.e7)([f.default], () => f.default.getCurrentUser());
-  a()(null != o, "ResendEmailVerificationButton: currentUser cannot be undefined");
+  } = e, a = (0, l.e7)([f.default], () => f.default.getCurrentUser());
+  o()(null != a, "ResendEmailVerificationButton: currentUser cannot be undefined");
   let [s, c] = i.useState(false), d = i.useCallback(() => {
-    c(true), h(o).then(() => c(false))
-  }, [o]);
+    c(true), h(a).then(() => c(false))
+  }, [a]);
   return (0, r.jsx)(u.Button, {
     size: t,
     variant: n,

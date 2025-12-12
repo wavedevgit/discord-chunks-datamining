@@ -49,15 +49,15 @@ function f(e) {
   var t;
   let {
     channelId: n,
-    ownerId: o
-  } = (0, i.my)(e), a = l.Z.getRTCConnection(e);
+    ownerId: a
+  } = (0, i.my)(e), o = l.Z.getRTCConnection(e);
   return u({
     channelId: n,
-    mediaSessionId: null != (t = null == a ? true : a.getMediaSessionId()) ? t : true,
-    rtcConnectionId: null == a ? true : a.getRTCConnectionId(),
+    mediaSessionId: null != (t = null == o ? true : o.getMediaSessionId()) ? t : true,
+    rtcConnectionId: null == o ? true : o.getRTCConnectionId(),
     mediaContext: r.Yn.STREAM,
     streamKey: e,
-    userId: o
+    userId: a
   }, p())
 }
 

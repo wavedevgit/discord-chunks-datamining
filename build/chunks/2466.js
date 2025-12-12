@@ -1,12 +1,12 @@
 /** Chunk was on 68784 **/
 /** chunk id: 2466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 });
 var Chunk489887 = require("./489887.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a() {
+function l() {
   return Object.freeze({
     [Chunk489887.lc.ONE_HOUR]: Chunk388032.intl.formatToPlainString(Chunk388032.t["b/mgtw"], {
       num: 1

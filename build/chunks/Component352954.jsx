@@ -34,7 +34,7 @@ function c(e) {
 }
 let u = {
   openSecureFramesStreamVerification: function(e, t) {
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let i = (await n.e("94904").then(n.bind(n, 660250))).default;
       return n => (0, r.jsx)(i, c({
         streamKey: e,
@@ -43,14 +43,14 @@ let u = {
     })
   },
   openSecureFramesUserVerificationModal: function(e, t, i, s) {
-    i() && (0, o.ZDy)(async () => {
+    i() && (0, a.ZDy)(async () => {
       let i = (await n.e("33397").then(n.bind(n, 963410))).default;
       return n => (0, r.jsx)(i, c({
         userId: e,
         channelId: t
       }, n))
     }, {
-      contextKey: s === a.IlC.POPOUT ? o.u1M : o.z1l
+      contextKey: s === o.IlC.POPOUT ? a.u1M : a.z1l
     })
   },
   openSecureFramesUpdateConfirmation: function(e) {
@@ -58,13 +58,13 @@ let u = {
       title: t,
       subtitle: n,
       confirmText: r = s.intl.string(s.t["cY+Oob"]),
-      onConfirm: o
+      onConfirm: a
     } = e;
     (0, i.Z)({
       title: t,
       subtitle: n,
       confirmText: r,
-      onConfirm: o
+      onConfirm: a
     })
   },
   handleSecureFramesUserVerificationLink: function(e) {

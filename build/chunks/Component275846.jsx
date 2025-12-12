@@ -20,10 +20,10 @@ let l = {
         title: n,
         body: i,
         hasButton: s
-      } = e, l = s ? (0, r.jsx)(o.Button, {
+      } = e, l = s ? (0, r.jsx)(a.Button, {
         text: "Action"
       }) : true;
-      return (0, r.jsx)(a.To, {
+      return (0, r.jsx)(o.To, {
         "data-migration-pending": true,
         type: t,
         title: n,
@@ -80,8 +80,8 @@ let l = {
         children: t,
         disabled: n,
         required: i,
-        errorMessage: o
-      } = e, a = (null == o ? true : o.trim()) === "" ? true : o, l = ["h1", "h2", "h3", "h4", "h5", "legend"];
+        errorMessage: a
+      } = e, o = (null == a ? true : a.trim()) === "" ? true : a, l = ["h1", "h2", "h3", "h4", "h5", "legend"];
       return (0, r.jsx)("div", {
         style: {
           display: "flex",
@@ -106,8 +106,8 @@ let l = {
             tag: e,
             disabled: n,
             required: i,
-            error: a,
-            errorId: null != a ? "error-id-".concat(e) : true,
+            error: o,
+            errorId: null != o ? "error-id-".concat(e) : true,
             children: t
           })]
         }, e))

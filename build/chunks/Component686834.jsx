@@ -15,7 +15,7 @@ var Chunk49436 = require("./49436.js"),
   Chunk150588 = require("./150588.jsx"),
   Chunk21730 = require("./21730.js"),
   Chunk231919 = require("./231919.js"),
-  Chunk523137 = require("./523137.js");
+  Chunk89480 = require("./89480.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,8 +29,8 @@ function _(e, t, n) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -60,11 +60,11 @@ function h(e) {
     questOrQuests: t,
     questContent: n,
     questContentPosition: m,
-    trackGuildAndChannelMetadata: n === a.jn.QUESTS_EMBED,
+    trackGuildAndChannelMetadata: n === o.jn.QUESTS_EMBED,
     sourceQuestContent: h,
-    children: e => (0, r.jsx)(o.animated.div, {
+    children: e => (0, r.jsx)(a.animated.div, {
       style: {
-        maxHeight: n === a.jn.QUESTS_EMBED ? true : O.to({
+        maxHeight: n === o.jn.QUESTS_EMBED ? true : O.to({
           range: [0, 1],
           output: [f.DJ, P]
         })

@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk719247 = require("./719247.js");
 
 function s(e) {
-  let t = (0, r.e7)([a.Z], () => a.Z.getMatchingActivity(e)),
-    [n, s] = (0, o.Z)([null == t ? true : t.application_id, "application_id" in e.extra ? e.extra.application_id : true]);
+  let t = (0, r.e7)([o.Z], () => o.Z.getMatchingActivity(e)),
+    [n, s] = (0, a.Z)([null == t ? true : t.application_id, "application_id" in e.extra ? e.extra.application_id : true]);
   return {
     activity: t,
     embeddedActivity: (0, r.e7)([i.ZP], () => i.ZP.getEmbeddedActivityForUserId(e.author_id, null == n ? true : n.id)),

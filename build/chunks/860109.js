@@ -22,9 +22,9 @@ function s(e) {
   let {
     theme: m,
     saturation: h
-  } = (0, a.ZF)(), {
+  } = (0, o.ZF)(), {
     highContrastModeEnabled: g
-  } = r.useContext(o.S), E = r.useRef(null), b = l(), y = r.useCallback((e, t) => {
+  } = r.useContext(a.S), E = r.useRef(null), b = l(), y = r.useCallback((e, t) => {
     let n = null == e ? true : e[t];
     return null == n ? null : "object" == typeof n && "value" in n ? n.value : n
   }, []);
@@ -41,7 +41,7 @@ function s(e) {
       if (null == t || null == t.viewModelInstance || null == p) return;
       let r = s[null != n ? n : ""];
       for (let n of Object.entries(p)) {
-        var i, o, a, l, c, u, d, f, _, O, v, S, I;
+        var i, a, o, l, c, u, d, f, _, O, v, S, I;
         if (e.signal.aborted) return;
         let s = n[0],
           p = n[1],
@@ -61,7 +61,7 @@ function s(e) {
                   saturation: h,
                   highContrastModeEnabled: g
                 }).rgba();
-                null == (a = t.viewModelInstance) || null == (o = a.color(s)) || o.rgba(n, r, i, 255 * l)
+                null == (o = t.viewModelInstance) || null == (a = o.color(s)) || a.rgba(n, r, i, 255 * l)
               } else null == (c = t.viewModelInstance) || null == (l = c.color(s)) || l.rgba(e.r, e.g, e.b, null != (u = e.a) ? u : 255)
             }
             break;
@@ -118,9 +118,9 @@ function l() {
         throw e
       });
       if (null == r || (null == n ? true : n.aborted)) return Promise.resolve(null);
-      let o = await r.arrayBuffer(),
-        a = await (0, i.decodeImage)(new Uint8Array(o));
-      return e.current[t] = a, a
+      let a = await r.arrayBuffer(),
+        o = await (0, i.decodeImage)(new Uint8Array(a));
+      return e.current[t] = o, o
     }
   }, [])
 }
@@ -130,26 +130,26 @@ function c(e) {
     rive: t,
     artboard: n,
     artboardProperties: i,
-    dynamicDataBinding: o,
-    onDataBindingChange: a
-  } = e, s = null != o, l = r.useCallback(e => {
+    dynamicDataBinding: a,
+    onDataBindingChange: o
+  } = e, s = null != a, l = r.useCallback(e => {
     var t;
-    return s ? null == o || null == (t = o[e]) ? true : t.type : i[null != n ? n : ""][e]
-  }, [s, o, i, n]);
+    return s ? null == a || null == (t = a[e]) ? true : t.type : i[null != n ? n : ""][e]
+  }, [s, a, i, n]);
   r.useEffect(() => {
-    if (null == t || null == a) return;
+    if (null == t || null == o) return;
     let e = [];
-    return Object.entries(a).forEach(n => {
+    return Object.entries(o).forEach(n => {
       var r, i;
-      let [o, a] = n, s = l(o);
-      if (null == s || null == a) return;
-      let c = null == (i = t.viewModelInstance) || null == (r = i[s]) ? true : r.call(i, o);
-      null != c && (c.on(a), e.push([a, c]))
+      let [a, o] = n, s = l(a);
+      if (null == s || null == o) return;
+      let c = null == (i = t.viewModelInstance) || null == (r = i[s]) ? true : r.call(i, a);
+      null != c && (c.on(o), e.push([o, c]))
     }), () => {
       e.forEach(e => {
         let [t, n] = e;
         null != n && n.off(t)
       })
     }
-  }, [t, a, l])
+  }, [t, o, l])
 }

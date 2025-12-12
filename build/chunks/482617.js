@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk302221 = require("./302221.js");
 let s = 500,
   l = 100;
@@ -21,10 +21,10 @@ function c(e) {
       return
     }
     let e = Date.now(),
-      n = o().throttle(() => {
+      n = a().throttle(() => {
         let r = Math.min((Date.now() - e) / s, 1),
-          o = (0, a.BM)(t, i, r);
-        d(o), f.current = o, r < 1 && (p.current = requestAnimationFrame(n))
+          a = (0, o.BM)(t, i, r);
+        d(a), f.current = a, r < 1 && (p.current = requestAnimationFrame(n))
       }, l);
     return p.current = requestAnimationFrame(n), () => {
       var e;

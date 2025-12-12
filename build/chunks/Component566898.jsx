@@ -13,11 +13,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk481060 = require("./481060.js"),
-  Chunk674944 = require("./674944.js");
+  Chunk471038 = require("./471038.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function p() {
 
 function _() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk674944.avatar,
+    className: Chunk471038.avatar,
     style: {
       opacity: .08
     }
@@ -63,13 +63,13 @@ function m(e) {
     width: t,
     height: n,
     opacity: i,
-    className: a
+    className: o
   } = e, l = {
     width: f(t),
     opacity: null != i ? i : s().random(.02, .08)
   };
   return null != n && (l.height = f(n)), (0, r.jsx)("div", {
-    className: o()(a, {
+    className: a()(o, {
       [c.blob]: true
     }),
     style: l
@@ -80,7 +80,7 @@ function h(e) {
   let t, {
       groupStart: n = false,
       compact: i = false,
-      attachmentSpecs: a,
+      attachmentSpecs: o,
       usernameWidth: u,
       usernameOpacity: f,
       className: h,
@@ -99,7 +99,7 @@ function h(e) {
   }) : i && (t = (0, r.jsxs)(r.Fragment, {
     children: [i && (0, r.jsx)(m, {
       width: E,
-      className: o()({
+      className: a()({
         [c.compactTimestamp]: true,
         [c.hidden]: !n
       })
@@ -112,7 +112,7 @@ function h(e) {
     })]
   })), (0, r.jsxs)("div", {
     "aria-hidden": true,
-    className: o()(h, {
+    className: a()(h, {
       [c.wrapper]: true,
       [c.compact]: i,
       [c.cozy]: !i
@@ -127,13 +127,13 @@ function h(e) {
           opacity: .06
         }, t))
       })]
-    }), null != a && (0, r.jsx)("div", {
+    }), null != o && (0, r.jsx)("div", {
       className: c.attachmentContainer,
       children: (0, r.jsx)("div", {
         className: c.attachment,
         style: d({
           opacity: .03
-        }, a)
+        }, o)
       })
     })]
   })
@@ -149,17 +149,17 @@ function v(e) {
     messages: t,
     groupSpacing: n = 0,
     compact: i = false,
-    attachmentSpecs: o,
-    className: a
-  } = e, l = null != o ? o.last ? t - 1 : s().random(0, t - 1) : false, c = s().random(80, 120), u = s().random(.1, .2);
+    attachmentSpecs: a,
+    className: o
+  } = e, l = null != a ? a.last ? t - 1 : s().random(0, t - 1) : false, c = s().random(80, 120), u = s().random(.1, .2);
   return (0, r.jsx)(r.Fragment, {
     children: Array(t).fill(null).map((e, t) => (0, r.jsx)(h, {
       compact: i,
-      className: a,
+      className: o,
       usernameWidth: c,
       usernameOpacity: u,
       groupStart: 0 === t,
-      attachmentSpecs: t === l ? o : true,
+      attachmentSpecs: t === l ? a : true,
       style: 0 === t ? {
         marginTop: f(n)
       } : true

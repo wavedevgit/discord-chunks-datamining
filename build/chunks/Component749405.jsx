@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk486622 = require("./486622.js"),
   Chunk376191 = require("./376191.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk513245 = require("./513245.js");
+  Chunk13929 = require("./13929.js");
 
 function g(e) {
   let {
@@ -22,12 +22,12 @@ function g(e) {
     channel: g
   } = e, h = (0, c.K)(), m = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
-  }, []), _ = i.useCallback(() => {
-    s.Z.closeChannelSidebar(o.uZ)
   }, []), b = i.useCallback(() => {
+    s.Z.closeChannelSidebar(o.uZ)
+  }, []), E = i.useCallback(() => {
     s.Z.closeChannelSidebar(o.uZ), h && (0, a.Kh)(g.id)
   }, [g.id, h]), {
-    acceptMessageRequest: E,
+    acceptMessageRequest: _,
     rejectMessageRequest: O,
     isAcceptLoading: v,
     isRejectLoading: y,
@@ -36,8 +36,8 @@ function g(e) {
     isOptimisticRejected: S
   } = (0, u.m)({
     user: n,
-    onAcceptSuccess: b,
-    onRejectSuccess: _,
+    onAcceptSuccess: E,
+    onRejectSuccess: b,
     onError: m
   }), T = v || y || I || C || S;
   return (0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ function g(e) {
           size: "sm",
           text: p.intl.string(p.t.Kz8Pwr),
           onClick: e => {
-            e.stopPropagation(), E(g.id)
+            e.stopPropagation(), _(g.id)
           },
           disabled: T,
           loading: v || I || C

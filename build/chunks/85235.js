@@ -10,12 +10,12 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let s = {
   search(e, t) {
-    null == o.Z.getResults(e, t) && (i.Z.dispatch({
+    null == a.Z.getResults(e, t) && (i.Z.dispatch({
       type: "INTEGRATION_QUERY",
       integration: e,
       query: t
     }), r.tn.get({
-      url: a.ANM.INTEGRATION_SEARCH("tenor"),
+      url: o.ANM.INTEGRATION_SEARCH("tenor"),
       query: {
         q: t
       },

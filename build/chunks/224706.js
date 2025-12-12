@@ -44,8 +44,8 @@ function M(e) {
     secret: n,
     channelId: r,
     intent: i = D.Ws.PLAY,
-    embedded: o = false,
-    source: a,
+    embedded: a = false,
+    source: o,
     locationObject: s,
     analyticsLocations: l,
     preferDeepLink: u = false
@@ -73,8 +73,8 @@ function M(e) {
   G({
     applicationId: t,
     channelId: r,
-    embedded: o,
-    source: a,
+    embedded: a,
+    source: o,
     locationObject: s,
     analyticsLocations: l
   }).then(e => 0 === e ? null : T.Z.waitConnected(t).then(() => Promise.race([T.Z.waitSubscribed(t, w.zMe.ACTIVITY_JOIN)]))).then(() => {
@@ -83,7 +83,7 @@ function M(e) {
       applicationId: t,
       secret: n,
       intent: i,
-      embedded: o
+      embedded: a
     })
   }).catch(() => c.Z.dispatch({
     type: "ACTIVITY_JOIN_FAILED",
@@ -104,7 +104,7 @@ function U(e) {
     query: {
       client_id: e,
       response_type: "token",
-      scope: [o.x.IDENTIFY].join(" ")
+      scope: [a.x.IDENTIFY].join(" ")
     },
     retries: 3,
     body: {
@@ -132,8 +132,8 @@ async function G(e) {
     branchId: n,
     channelId: r,
     embedded: i = false,
-    source: o,
-    locationObject: a = {},
+    source: a,
+    locationObject: o = {},
     analyticsLocations: s = []
   } = e;
   if (i) {
@@ -143,8 +143,8 @@ async function G(e) {
     }), 0) : await (0, u.Z)({
       applicationId: t,
       activityChannelId: null != r ? r : true,
-      source: o,
-      locationObject: a,
+      source: a,
+      locationObject: o,
       analyticsLocations: s
     }) ? 0 : Promise.resolve()
   }
@@ -207,10 +207,10 @@ let Z = {
       let e = v.Z.getActiveLibraryApplication(i.id);
       if (null != e) {
         let r = e.getFlags(),
-          i = a.yE(r, w.eHb.OVERLAY_DISABLED);
-        t && i !== t && (r = a.x9(r, w.eHb.OVERLAY_DISABLED));
-        let o = a.yE(r, w.eHb.OVERLAY_V3_DISABLED);
-        null != n && n !== o && (r = a.x9(r, w.eHb.OVERLAY_V3_DISABLED)), P.h(e.id, e.branchId, r);
+          i = o.yE(r, w.eHb.OVERLAY_DISABLED);
+        t && i !== t && (r = o.x9(r, w.eHb.OVERLAY_DISABLED));
+        let a = o.yE(r, w.eHb.OVERLAY_V3_DISABLED);
+        null != n && n !== a && (r = o.x9(r, w.eHb.OVERLAY_V3_DISABLED)), P.h(e.id, e.branchId, r);
         return
       }
     }
@@ -374,16 +374,16 @@ let Z = {
       iconHash: n,
       publisher: r,
       distributor: i,
-      sku: o,
-      executableName: a
-    } = e, l = (0, f.F)(a);
+      sku: a,
+      executableName: o
+    } = e, l = (0, f.F)(o);
     j.log("Reporting unverified game: ", {
       name: t,
-      executableName: a,
+      executableName: o,
       iconHash: n,
       publisher: r,
       distributor: i,
-      sku: o,
+      sku: a,
       cleanedExecutable: l
     }), null != l && s.tn.post({
       url: w.ANM.UNVERIFIED_APPLICATIONS,
@@ -391,7 +391,7 @@ let Z = {
         name: t,
         os: (0, C.getPlatformName)(),
         icon: n,
-        distributor_application: k(i, o),
+        distributor_application: k(i, a),
         executable: l,
         publisher: r,
         report_version: L
@@ -441,8 +441,8 @@ let Z = {
       sessionId: n,
       applicationId: r,
       channelId: i,
-      messageId: o,
-      intent: a = D.Ws.PLAY,
+      messageId: a,
+      intent: o = D.Ws.PLAY,
       embedded: s = false,
       source: l,
       locationObject: u,
@@ -455,7 +455,7 @@ let Z = {
       sessionId: n,
       applicationId: r,
       channelId: i,
-      messageId: o
+      messageId: a
     }), Promise.resolve(true);
     c.Z.dispatch({
       type: "ACTIVITY_JOIN_LOADING",
@@ -464,12 +464,12 @@ let Z = {
     });
     try {
       let e = (0, C.platformPrefersDeepLink)(),
-        c = await N.Z.getJoinSecret(t, n, r, i, o);
+        c = await N.Z.getJoinSecret(t, n, r, i, a);
       return null == f && M({
         applicationId: r,
         secret: c,
         channelId: i,
-        intent: a,
+        intent: o,
         embedded: s,
         source: l,
         locationObject: u,

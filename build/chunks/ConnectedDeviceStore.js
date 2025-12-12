@@ -27,9 +27,9 @@ let h = {
     ignoredDevices: {}
   },
   m = h,
-  _ = false,
-  b = {},
+  b = false,
   E = {},
+  _ = {},
   O = {},
   v = {
     id: null,
@@ -66,19 +66,19 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return m
   }
   get initialized() {
-    return _
+    return b
   }
   get lastDeviceConnected() {
     return O
   }
   get inputDevices() {
-    return b
+    return E
   }
   get lastInputSystemDevice() {
     return v
   }
   get outputDevices() {
-    return E
+    return _
   }
   get lastOutputSystemDevice() {
     return y
@@ -133,13 +133,13 @@ let N = new T(Chunk570140.Z, {
           let n = null != (t = e.originalId) ? t : e.originalName;
           n !== y.id && (y.justChanged = true), y.id = n
         }
-      }), !_) {
-      b = r, E = i, _ = true;
+      }), !b) {
+      E = r, _ = i, b = true;
       return
     }
-    let a = Object.keys(b),
+    let a = Object.keys(E),
       s = Object.keys(r),
-      o = Object.keys(E),
+      o = Object.keys(_),
       c = Object.keys(i),
       u = l().difference(a, s),
       d = l().difference(o, c);
@@ -147,7 +147,7 @@ let N = new T(Chunk570140.Z, {
       O[e] = S(O[e], e, p.Q.INPUT)
     }), l().difference(c, o).forEach(e => {
       O[e] = S(O[e], e, p.Q.OUTPUT)
-    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (b = r, E = i, true)
+    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (E = r, _ = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
     let {
@@ -156,13 +156,13 @@ let N = new T(Chunk570140.Z, {
       location: r
     } = e;
     if (n === p.a.INPUT || n === p.a.INPUT_AND_OUTPUT) {
-      let e = b[t];
+      let e = E[t];
       null != e && s.Z.wait(() => o.Z.setInputDevice(e, {
         location: r
       }))
     }
     if (n === p.a.OUTPUT || n === p.a.INPUT_AND_OUTPUT) {
-      let e = E[t];
+      let e = _[t];
       s.Z.wait(() => o.Z.setOutputDevice(e, {
         location: r
       }))

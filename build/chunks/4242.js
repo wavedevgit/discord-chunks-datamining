@@ -15,7 +15,7 @@ require("./231338.js");
 var Chunk388032 = require("./388032.jsx");
 
 function s(e) {
-  return e.name !== o.uj && (e.name !== o._j || l(e.darkBackground) && l(e.lightBackground))
+  return e.name !== a.uj && (e.name !== a._j || l(e.darkBackground) && l(e.lightBackground))
 }
 
 function l(e) {
@@ -23,7 +23,7 @@ function l(e) {
 }
 let c = e => {
   var t;
-  return null != (t = o.N3[e]) ? t : o.jD
+  return null != (t = a.N3[e]) ? t : a.jD
 };
 
 function u(e) {
@@ -31,9 +31,9 @@ function u(e) {
     n = i().toRGBA8(t)[0],
     r = document.createElement("canvas");
   r.width = t.width, r.height = t.height;
-  let o = r.getContext("2d"),
-    a = new ImageData(new Uint8ClampedArray(n), t.width, t.height);
-  return o.putImageData(a, 0, 0), r.toDataURL("image/png")
+  let a = r.getContext("2d"),
+    o = new ImageData(new Uint8ClampedArray(n), t.width, t.height);
+  return a.putImageData(o, 0, 0), r.toDataURL("image/png")
 }
 
 function d() {

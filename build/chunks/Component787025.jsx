@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk906467 = require("./906467.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk697257 = require("./697257.js");
+  Chunk612505 = require("./612505.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,8 +61,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -84,13 +84,13 @@ function y(e) {
   (0, c.Tt)({
     location: f.intl.string(f.t["3S2494"])
   });
-  let a = (0, s.e7)([u.Z], () => u.Z.isDeveloper) ? "92px" : true;
+  let o = (0, s.e7)([u.Z], () => u.Z.isDeveloper) ? "92px" : true;
   return (0, r.jsx)(l.f6W, {
     theme: d.BRd.DARK,
     children: e => (0, r.jsx)("div", {
-      className: o()(e, p.oauth2PageWrapper, i),
+      className: a()(e, p.oauth2PageWrapper, i),
       style: {
-        marginBottom: a
+        marginBottom: o
       },
       children: true === n ? t : (0, r.jsx)("div", {
         className: p.oauth2PageContent,
@@ -104,24 +104,24 @@ function O(e) {
   var t, n, {
       hideHeader: i
     } = e,
-    o = E(e, ["hideHeader"]);
-  return (0, r.jsxs)(a.IX, g(m({}, o), {
+    a = E(e, ["hideHeader"]);
+  return (0, r.jsxs)(o.IX, g(m({}, a), {
     onClose: () => {
       var e;
-      return Promise.resolve(null == (e = o.onClose) ? true : e.call(o))
+      return Promise.resolve(null == (e = a.onClose) ? true : e.call(a))
     },
-    children: [i ? null : (0, r.jsx)(a.xBx, {
-      title: null != (t = o.title) ? t : "",
-      subtitle: o.subtitle
-    }), (0, r.jsx)(a.fef, {
-      controls: o.input,
-      children: o.children
-    }), (0, r.jsx)(a.mzw, {
-      children: o.preview
-    }), (0, r.jsx)(a.Go$, {
-      leading: o.actionBarInput,
-      actions: null != (n = o.actions) ? n : [],
-      actionsFullWidth: null == o.actionBarInput
+    children: [i ? null : (0, r.jsx)(o.xBx, {
+      title: null != (t = a.title) ? t : "",
+      subtitle: a.subtitle
+    }), (0, r.jsx)(o.fef, {
+      controls: a.input,
+      children: a.children
+    }), (0, r.jsx)(o.mzw, {
+      children: a.preview
+    }), (0, r.jsx)(o.Go$, {
+      leading: a.actionBarInput,
+      actions: null != (n = a.actions) ? n : [],
+      actionsFullWidth: null == a.actionBarInput
     })]
   }))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 35855 **/
 /** chunk id: 164267, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => j
+  default: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   c = require.n(Chunk120356),
   Chunk167490 = require("./167490.js"),
   Chunk505609 = require("./505609.js"),
-  Chunk417154 = require("./417154.js");
+  Chunk585018 = require("./585018.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -30,7 +30,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,30 +43,30 @@ function f(e, t) {
   }), e
 }
 
-function l() {
+function f() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk417154.customPointer
+    className: Chunk585018.customPointer
   })
 }
 
-function b() {
+function d() {
   return (0, Chunk54381.jsx)("div", {
-    className: c()(Chunk417154.customPointer, Chunk417154.huePointer)
+    className: c()(Chunk585018.customPointer, Chunk585018.huePointer)
   })
 }
-let O = (0, Chunk167490.iS)(e => (0, n.jsxs)("div", {
-    className: a.pickerWrapper,
+let l = (0, Chunk167490.iS)(e => (0, n.jsxs)("div", {
+    className: u.pickerWrapper,
     children: [(0, n.jsx)("div", {
-      className: a.saturation,
-      children: (0, n.jsx)(u.Saturation, f(p({}, e), {
-        pointer: l
+      className: u.saturation,
+      children: (0, n.jsx)(s.Saturation, b(p({}, e), {
+        pointer: f
       }))
     }), (0, n.jsx)("div", {
-      className: a.hue,
-      children: (0, n.jsx)(u.Hue, f(p({}, e), {
+      className: u.hue,
+      children: (0, n.jsx)(s.Hue, b(p({}, e), {
         direction: "horizontal",
-        pointer: b
+        pointer: d
       }))
     })]
   })),
-  j = Chunk473749.memo(O)
+  O = Chunk473749.memo(l)

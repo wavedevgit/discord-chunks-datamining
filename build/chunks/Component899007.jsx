@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk420660 = require("./420660.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk671955 = require("./671955.js"),
-  Chunk66856 = require("./66856.js");
+  Chunk108096 = require("./108096.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function R(e) {
   let {
     user: t,
     displayProfile: n,
-    guildId: o,
+    guildId: a,
     channelId: m,
     themeType: T,
     animateOnHover: A,
@@ -92,13 +92,13 @@ function R(e) {
   } = (0, s.cj)([p.Z], () => ({
     status: (0, c.Z)(G) ? O.Skl.STREAMING : p.Z.getStatus(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), B = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = a()(I.avatar, w), {
+  })), B = true !== D ? D : Z, V = [S.l.MODAL, S.l.MODAL_V2].includes(T) ? l.EFr.SIZE_120 : l.EFr.SIZE_80, H = o()(I.avatar, w), {
     avatarDecorationSrc: Y,
     avatarSrc: W,
     eventHandlers: K
   } = (0, E.Z)({
     userId: t.id,
-    guildId: null != n ? n.guildId : o,
+    guildId: null != n ? n.guildId : a,
     size: V,
     animateOnHover: A
   }), z = (0, r.jsx)(P, {
@@ -117,7 +117,7 @@ function R(e) {
     className: H,
     children: z
   })) : (0, r.jsx)(l.P3F, N(C({}, K), {
-    className: a()(H, I.clickable),
+    className: o()(H, I.clickable),
     focusProps: {
       ringClassName: I.focusRing
     },

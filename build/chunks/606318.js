@@ -2,14 +2,14 @@
 /** chunk id: 606318, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  DX: () => o,
+  DX: () => a,
   Gr: () => s,
-  S2: () => a
+  S2: () => o
 });
 var Chunk866442 = require("./866442.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function a(e) {
   return {
     primaryColor: 0 === e.primary_color ? i.Pbq : (0, r.Rf)(e.primary_color),
     secondaryColor: null == e.secondary_color ? null : (0, r.Rf)(e.secondary_color),
@@ -17,7 +17,7 @@ function o(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   return null != e && null != e.colorStrings && null != e.colorStrings.primaryColor && null != e.colorStrings.secondaryColor
 }
 

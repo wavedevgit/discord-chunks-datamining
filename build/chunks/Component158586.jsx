@@ -1,7 +1,7 @@
 /** Chunk was on 80404 **/
 /** chunk id: 158586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,24 +12,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk946458 = require("./946458.jsx"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk172107 = require("./172107.js");
-let j = e => {
-  var t, n, j, p, b, x, h;
+  Chunk47945 = require("./47945.js");
+let f = e => {
+  var t, n, f, j, b, p, x;
   let {
-    channel: f,
+    channel: h,
     onClose: v,
     transitionState: y
-  } = e, [g, O] = o.useState(null != (j = f.defaultReactionEmoji) ? j : null), [N, w] = o.useState(false), [E, P] = o.useState(false), k = o.useRef(null), _ = (null != (p = null == (t = f.defaultReactionEmoji) ? true : t.emojiId) ? p : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), C = (null != (x = null == (n = f.defaultReactionEmoji) ? true : n.emojiName) ? x : null) !== (null != (h = null == g ? true : g.emojiName) ? h : null), R = _ || C, B = e => {
+  } = e, [g, O] = o.useState(null != (f = h.defaultReactionEmoji) ? f : null), [N, w] = o.useState(false), [E, P] = o.useState(false), k = o.useRef(null), C = (null != (j = null == (t = h.defaultReactionEmoji) ? true : t.emojiId) ? j : null) !== (null != (b = null == g ? true : g.emojiId) ? b : null), R = (null != (p = null == (n = h.defaultReactionEmoji) ? true : n.emojiName) ? p : null) !== (null != (x = null == g ? true : g.emojiName) ? x : null), B = C || R, I = e => {
     O(null == e ? null : (null == e ? true : e.id) != null ? {
       emojiId: e.id
     } : {
       emojiName: e.optionallyDiverseSequence
     })
-  }, I = async () => {
-    if (R) {
+  }, S = async () => {
+    if (B) {
       w(true), P(false);
       try {
-        await (0, a.wk)(f.id, {
+        await (0, r.wk)(h.id, {
           defaultReactionEmoji: g
         }), v()
       } catch (e) {
@@ -52,41 +52,41 @@ let j = e => {
       variant: "primary",
       text: u.intl.string(u.t["R3BPH+"]),
       loading: N,
-      disabled: !R,
-      onClick: I,
+      disabled: !B,
+      onClick: S,
       autoFocus: true
     }],
     children: [(0, i.jsx)(s.Z, {
       reactionEmoji: g
-    }), (0, i.jsxs)(r.ButtonGroup, {
+    }), (0, i.jsxs)(a.ButtonGroup, {
       size: "sm",
       className: m.buttonRow,
-      children: [(0, i.jsx)(r.yRy, {
+      children: [(0, i.jsx)(a.yRy, {
         targetElementRef: k,
         renderPopout: e => {
           let {
             closePopout: t
           } = e;
           return (0, i.jsx)(c.Z, {
-            guildId: null == f ? true : f.guild_id,
+            guildId: null == h ? true : h.guild_id,
             closePopout: t,
             onSelectEmoji: e => {
               let {
                 emoji: n,
                 willClose: i
               } = e;
-              B(n), i && t()
+              I(n), i && t()
             },
             pickerIntention: d.Hz.COMMUNITY_CONTENT,
-            channel: f
+            channel: h
           })
         },
         position: "right",
-        animation: r.yRy.Animation.NONE,
+        animation: a.yRy.Animation.NONE,
         align: "center",
         children: e => {
           var t, n;
-          return (0, i.jsx)(r.Button, (t = function(e) {
+          return (0, i.jsx)(a.Button, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -122,12 +122,12 @@ let j = e => {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
           }), t))
         }
-      }), null != g && (0, i.jsx)(r.Button, {
+      }), null != g && (0, i.jsx)(a.Button, {
         text: u.intl.string(u.t.N86XcP),
         variant: "critical-secondary",
-        onClick: () => B(null)
+        onClick: () => I(null)
       })]
-    }), E ? (0, i.jsx)(r.Text, {
+    }), E ? (0, i.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-feedback-critical",
       children: u.intl.string(u.t.F75nNl)

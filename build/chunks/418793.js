@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk887003 = require("./887003.js"),
   Chunk49436 = require("./49436.js");
 
-function o(e) {
+function a(e) {
   let t = {};
   for (let n of Object.keys(e)) {
     let r = parseInt(n);
@@ -15,12 +15,12 @@ function o(e) {
   }
   return t
 }
-let a = e => {
+let o = e => {
     switch (e.type) {
       case r.w.REWARD_CODE:
         return {
           type: r.w.REWARD_CODE, skuId: e.sku_id, asset: e.asset, assetVideo: e.asset_video, messages: {
-            redemptionInstructionsByPlatform: o(e.messages.redemption_instructions_by_platform),
+            redemptionInstructionsByPlatform: a(e.messages.redemption_instructions_by_platform),
             name: e.messages.name,
             nameWithArticle: e.messages.name_with_article
           }, approximateCount: e.approximate_count, redemptionLink: e.redemption_link
@@ -28,7 +28,7 @@ let a = e => {
       case r.w.COLLECTIBLE:
         return {
           type: r.w.COLLECTIBLE, skuId: e.sku_id, asset: e.asset, assetVideo: e.asset_video, messages: {
-            redemptionInstructionsByPlatform: o(e.messages.redemption_instructions_by_platform),
+            redemptionInstructionsByPlatform: a(e.messages.redemption_instructions_by_platform),
             name: e.messages.name,
             nameWithArticle: e.messages.name_with_article
           }, expiresAt: e.expires_at, expirationMode: e.expiration_mode, expiresAtPremium: e.expires_at_premium
@@ -36,7 +36,7 @@ let a = e => {
       case r.w.VIRTUAL_CURRENCY:
         return {
           type: r.w.VIRTUAL_CURRENCY, skuId: e.sku_id, messages: {
-            redemptionInstructionsByPlatform: o(e.messages.redemption_instructions_by_platform),
+            redemptionInstructionsByPlatform: a(e.messages.redemption_instructions_by_platform),
             name: e.messages.name,
             nameWithArticle: e.messages.name_with_article
           }, orbQuantity: e.orb_quantity
@@ -44,7 +44,7 @@ let a = e => {
       case r.w.FRACTIONAL_PREMIUM:
         return {
           type: r.w.FRACTIONAL_PREMIUM, skuId: e.sku_id, asset: e.asset, assetVideo: e.asset_video, quantity: e.quantity, messages: {
-            redemptionInstructionsByPlatform: o(e.messages.redemption_instructions_by_platform),
+            redemptionInstructionsByPlatform: a(e.messages.redemption_instructions_by_platform),
             name: e.messages.name,
             nameWithArticle: e.messages.name_with_article
           }
@@ -52,7 +52,7 @@ let a = e => {
       case r.w.IN_GAME:
         return {
           type: r.w.IN_GAME, skuId: e.sku_id, asset: e.asset, assetVideo: e.asset_video, messages: {
-            redemptionInstructionsByPlatform: o(e.messages.redemption_instructions_by_platform),
+            redemptionInstructionsByPlatform: a(e.messages.redemption_instructions_by_platform),
             name: e.messages.name,
             nameWithArticle: e.messages.name_with_article
           }
@@ -61,7 +61,7 @@ let a = e => {
   },
   s = e => ({
     assignmentMethod: e.assignment_method,
-    rewards: e.rewards.map(a),
+    rewards: e.rewards.map(o),
     rewardsExpireAt: e.rewards_expire_at,
     platforms: e.platforms
   })

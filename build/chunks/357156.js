@@ -39,7 +39,7 @@ let d = {
     return e.isGuildStageVoice() ? t = c.LK : e.isGuildVoice() && (t = c.AN), [i.$e(t, u.Pl.CREATE_EVENTS), i.$e(t, u.Pl.MANAGE_EVENTS)]
   },
   _ = e => {
-    let [t, n] = (0, l.lM)(e) ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : p(e), [i, c, _, m] = (0, o.Wu)([a.Z], () => [a.Z.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e), a.Z.can(u.Pl.MANAGE_GUILD_EXPRESSIONS, e), a.Z.can(t, e), a.Z.can(n, e)]), h = (0, o.e7)([s.default], () => s.default.getCurrentUser()), g = r.useCallback(e => f(e, h, c, i), [i, c, h]), E = r.useCallback(e => f(e, h, m, _), [m, _, h]);
+    let [t, n] = (0, l.lM)(e) ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : p(e), [i, c, _, m] = (0, a.Wu)([o.Z], () => [o.Z.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e), o.Z.can(u.Pl.MANAGE_GUILD_EXPRESSIONS, e), o.Z.can(t, e), o.Z.can(n, e)]), h = (0, a.e7)([s.default], () => s.default.getCurrentUser()), g = r.useCallback(e => f(e, h, c, i), [i, c, h]), E = r.useCallback(e => f(e, h, m, _), [m, _, h]);
     return null == e ? d : {
       canCreateExpressions: i,
       canCreateGuildEvent: _,
@@ -50,20 +50,20 @@ let d = {
     }
   },
   m = function(e) {
-    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.Z,
+    let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.Z,
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.default,
       [r, i] = (0, l.lM)(e) ? [u.Pl.CREATE_EVENTS, u.Pl.MANAGE_EVENTS] : p(e),
-      o = t.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e),
+      a = t.can(u.Pl.CREATE_GUILD_EXPRESSIONS, e),
       c = t.can(u.Pl.MANAGE_GUILD_EXPRESSIONS, e),
       _ = t.can(r, e),
       m = t.can(i, e),
       h = n.getCurrentUser();
     return null == e ? d : {
-      canCreateExpressions: o,
+      canCreateExpressions: a,
       canCreateGuildEvent: _,
       canManageAllExpressions: c,
       canManageAllEvents: m,
-      canManageGuildExpression: e => f(e, h, c, o),
+      canManageGuildExpression: e => f(e, h, c, a),
       canManageGuildEvent: e => f(e, h, m, _)
     }
   }

@@ -39,7 +39,7 @@ function T(e) {
     context: n,
     locationObject: r,
     onActivityItemSelected: i,
-    embeddedActivitiesManager: a,
+    embeddedActivitiesManager: o,
     assetNames: s = ["embedded_cover"],
     backgroundResolution: l = I,
     launchingComponentId: c,
@@ -65,7 +65,7 @@ function T(e) {
     application: t.application,
     context: n,
     locationObject: r,
-    embeddedActivitiesManager: a,
+    embeddedActivitiesManager: o,
     onActivityItemSelectedProp: i,
     launchingComponentId: c,
     commandOrigin: d,
@@ -77,7 +77,7 @@ function T(e) {
     joinableEmbeddedApp: T,
     activityAction: P,
     onActivityItemSelected: R,
-    labelType: O ? E.label_type : o.ww.NONE,
+    labelType: O ? E.label_type : a.ww.NONE,
     staffReleasePhase: w
   }
 }
@@ -86,8 +86,8 @@ function C(e, t) {
   var n;
   let i = null != (n = e.flags) ? n : 0;
   if (!((0, r.yE)(i, v.udG.EMBEDDED_RELEASED) || (0, r.yE)(i, v.udG.EMBEDDED_FIRST_PARTY))) return;
-  let o = t.client_platform_config[(0, h.Z)((0, u.getOS)())].release_phase;
-  return O.eB.includes(o) ? o.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : true
+  let a = t.client_platform_config[(0, h.Z)((0, u.getOS)())].release_phase;
+  return O.eB.includes(a) ? a.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : true
 }
 
 function A(e) {
@@ -95,17 +95,17 @@ function A(e) {
     context: t,
     applicationId: n,
     fetchesApplication: r = true
-  } = e, i = 0, o = "channel" === t.type ? t.channel : true, a = (0, E.Z)(), l = (0, b.Z)({
+  } = e, i = 0, a = "channel" === t.type ? t.channel : true, o = (0, E.Z)(), l = (0, b.Z)({
     fetchesApplication: r
-  }), c = (0, s.q)(n, r), u = (0, _.ZP)(o).find(e => {
+  }), c = (0, s.q)(n, r), u = (0, _.ZP)(a).find(e => {
     let {
       embeddedActivity: t
     } = e;
     return null != c && c.id === t.applicationId
   });
   if (null == c) return i;
-  let d = (0, m.p)(null == a ? true : a.location);
-  return null != o && d === o.id && (null == l ? true : l.id) === c.id ? i = 2 : null != u && (i = 1), i
+  let d = (0, m.p)(null == o ? true : o.location);
+  return null != a && d === a.id && (null == l ? true : l.id) === c.id ? i = 2 : null != u && (i = 1), i
 }
 
 function N(e) {
@@ -113,7 +113,7 @@ function N(e) {
   let {
     application: n,
     botUserIdForAppDM: r,
-    context: o,
+    context: a,
     locationObject: s,
     embeddedActivitiesManager: u,
     onActivityItemSelectedProp: _,
@@ -126,12 +126,12 @@ function N(e) {
     referrerId: v,
     onConfirmActivityLaunchChecksAlertOpen: S
   } = e, I = null != (t = null == n ? true : n.id) ? t : "", T = A({
-    context: o,
+    context: a,
     applicationId: I,
     fetchesApplication: y
   }), {
     analyticsLocations: C
-  } = (0, a.ZP)(), N = (0, E.Z)(), P = (0, c.A)(n);
+  } = (0, o.ZP)(), N = (0, E.Z)(), P = (0, c.A)(n);
   if (null == n) return () => {
     null == _ || _({
       applicationId: ""
@@ -150,7 +150,7 @@ function N(e) {
           } catch (e) {}
           return
         }
-        let e = "channel" === o.type ? o.channel.id : true;
+        let e = "channel" === a.type ? a.channel.id : true;
         if (null != r) try {
           e = await i.Z.openPrivateChannel({
             recipientIds: r,
@@ -179,7 +179,7 @@ function N(e) {
       return async () => {
         d.ZP.isLaunchingActivity() || await (0, f.Z)({
           applicationId: I,
-          activityChannelId: "channel" === o.type ? o.channel.id : true,
+          activityChannelId: "channel" === a.type ? a.channel.id : true,
           locationObject: s,
           analyticsLocations: C,
           componentId: m,

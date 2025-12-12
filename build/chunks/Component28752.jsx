@@ -14,8 +14,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk688465 = require("./688465.jsx"),
   Chunk314583 = require("./314583.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk443663 = require("./443663.js"),
-  Chunk430864 = require("./430864.js"),
+  Chunk116357 = require("./116357.js"),
+  Chunk960324 = require("./960324.js"),
   Chunk413097 = require("./413097.js");
 
 function h(e, t, n) {
@@ -51,14 +51,14 @@ function b(e) {
     fakeAppIconURL: m,
     size: E
   }), [t]), h = i.useMemo(() => [{
-    type: o.Y.USER_INSTALL,
-    icon: a.oLu,
+    type: a.Y.USER_INSTALL,
+    icon: o.oLu,
     title: f.intl.string(f.t.aCg60P),
     subtitle: f.intl.string(f.t.YeiIUZ),
     beta: false
   }, {
-    type: o.Y.GUILD_INSTALL,
-    icon: a.QTo,
+    type: a.Y.GUILD_INSTALL,
+    icon: o.QTo,
     title: f.intl.string(f.t.E64YCz),
     subtitle: f.intl.string(f.t.bbtoKm),
     beta: false
@@ -82,7 +82,7 @@ function b(e) {
       })]
     }), (0, r.jsx)("ul", {
       className: p.rows,
-      children: h.map(e => (0, r.jsxs)(a.P3F, {
+      children: h.map(e => (0, r.jsxs)(o.P3F, {
         tag: "li",
         className: p.row,
         onClick: () => n(e.type),
@@ -94,16 +94,16 @@ function b(e) {
           className: p.rowInner,
           children: [(0, r.jsxs)("div", {
             className: p.rowDetails,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "interactive-text-active",
               children: e.title
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
               children: e.subtitle
             })]
-          }), e.beta && (0, r.jsx)(u.Z, {}), (0, r.jsx)(a.Fbu, {
+          }), e.beta && (0, r.jsx)(u.Z, {}), (0, r.jsx)(o.Fbu, {
             size: "md",
             color: "currentColor",
             className: p.rightIcon
@@ -135,13 +135,13 @@ function O(e) {
   } = e, n = t.name, i = (0, s.vJ)(t);
   return (0, r.jsxs)("div", {
     className: p.titleContainer,
-    children: [(0, r.jsx)(a.Heading, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: n
     }), i ? (0, r.jsx)("div", {
       className: p.partnerLabelContainer,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: f.intl.string(f.t.LO4f0P)
@@ -154,7 +154,7 @@ let v = 3;
 function S(e) {
   let {
     description: t
-  } = e, [o, s] = i.useState(true);
+  } = e, [a, s] = i.useState(true);
   i.useLayoutEffect(() => s(false), []);
   let l = i.useMemo(() => {
       let {
@@ -183,16 +183,16 @@ function S(e) {
       isTransitioning: b,
       onTransitionEnd: y
     } = (0, c.Z)(g({
-      isExpanded: o
+      isExpanded: a
     }, h)),
-    O = o || b;
+    O = a || b;
   return (0, r.jsxs)("div", {
     className: p.descriptionContainer,
     children: [(0, r.jsx)("div", {
       ref: E,
       className: p.overflowHidden,
       onTransitionEnd: y,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         ref: u,
         className: _.markup,
         variant: "text-sm/medium",
@@ -202,19 +202,19 @@ function S(e) {
         },
         children: l
       })
-    }), null != m && m > v ? (0, r.jsxs)(a.P3F, {
+    }), null != m && m > v ? (0, r.jsxs)(o.P3F, {
       className: p.expandableDescriptionClickable,
       onClick: () => s(e => !e),
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
         children: O ? f.intl.string(f.t.u4YJ8g) : f.intl.string(f.t["N/tajD"])
-      }), O ? (0, r.jsx)(a.u04, {
+      }), O ? (0, r.jsx)(o.u04, {
         size: "sm",
-        color: a.TVs.colors.TEXT_BRAND
-      }) : (0, r.jsx)(a.CJ0, {
+        color: o.TVs.colors.TEXT_BRAND
+      }) : (0, r.jsx)(o.CJ0, {
         size: "sm",
-        color: a.TVs.colors.TEXT_BRAND
+        color: o.TVs.colors.TEXT_BRAND
       })]
     }) : null]
   })
@@ -223,7 +223,7 @@ function S(e) {
 function I() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(null),
-    [r, o] = Chunk473749.useState(null);
+    [r, a] = Chunk473749.useState(null);
   return Chunk473749.useLayoutEffect(() => {
     let t = module.current;
     if (null === exports || 0 === exports.clientHeight) return;

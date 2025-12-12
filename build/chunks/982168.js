@@ -62,7 +62,7 @@ function y(e) {
   let {
     loaded: t,
     firstMessage: n
-  } = a.Z.getMessage(e);
+  } = o.Z.getMessage(e);
   return !t || null == n || !(0, i.X6)(n, r.qn.EXPLICIT)
 }
 
@@ -71,14 +71,14 @@ function O(e, t) {
 }
 
 function v(e) {
-  return e.sort((e, t) => e.id == o.a.MULTIPLE_REPORTS ? false : +(t.id == o.a.MULTIPLE_REPORTS))
+  return e.sort((e, t) => e.id == a.a.MULTIPLE_REPORTS ? false : +(t.id == a.a.MULTIPLE_REPORTS))
 }
 
 function S(e, t) {
   var n, r, i;
-  let o = l.Z.getChannel(e);
-  if (null == o || !o.isModeratorReportChannel()) returnfalse;
-  let a = u.Z.getMessages(e).first();
-  return (null == a || null == (i = a.messageSnapshots) || null == (r = i[0]) || null == (n = r.moderatorReport) ? true : n.reported_user_id) === t
+  let a = l.Z.getChannel(e);
+  if (null == a || !a.isModeratorReportChannel()) returnfalse;
+  let o = u.Z.getMessages(e).first();
+  return (null == o || null == (i = o.messageSnapshots) || null == (r = i[0]) || null == (n = r.moderatorReport) ? true : n.reported_user_id) === t
 }
 require("./806246.js")

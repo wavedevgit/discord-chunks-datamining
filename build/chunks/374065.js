@@ -27,20 +27,20 @@ function p(e) {
     ChannelStore: n,
     GuildStore: r,
     PermissionStore: i,
-    VoiceStateStore: o
-  } = e, a = n.getChannel(t);
-  if (null == a) return 3;
-  if (!c.Gu.includes(a.type)) return 7;
+    VoiceStateStore: a
+  } = e, o = n.getChannel(t);
+  if (null == o) return 3;
+  if (!c.Gu.includes(o.type)) return 7;
   if (!(0, l.a)()) return 6;
-  if (null != a && !a.isPrivate()) {
-    let e = a.getGuildId();
+  if (null != o && !o.isPrivate()) {
+    let e = o.getGuildId();
     if (null == e) return 4;
     let n = r.getGuild(e);
-    if ((null == n ? true : n.afkChannelId) === a.id) return 5;
-    let s = i.can(u.Plq.CONNECT, a);
-    if (!i.can(u.Plq.USE_EMBEDDED_ACTIVITIES, a)) return 1;
-    let l = o.getCurrentClientVoiceChannelId(a.getGuildId()) === t;
-    if (a.isVocal() && !l && !s) return 2
+    if ((null == n ? true : n.afkChannelId) === o.id) return 5;
+    let s = i.can(u.Plq.CONNECT, o);
+    if (!i.can(u.Plq.USE_EMBEDDED_ACTIVITIES, o)) return 1;
+    let l = a.getCurrentClientVoiceChannelId(o.getGuildId()) === t;
+    if (o.isVocal() && !l && !s) return 2
   }
   return 0
 }
@@ -49,18 +49,18 @@ function _(e) {
   return p({
     channelId: e,
     ChannelStore: i.Z,
-    GuildStore: o.Z,
-    PermissionStore: a.Z,
+    GuildStore: a.Z,
+    PermissionStore: o.Z,
     VoiceStateStore: s.Z
   })
 }
 
 function m(e) {
-  return (0, r.e7)([i.Z, o.Z, a.Z, s.Z], () => p({
+  return (0, r.e7)([i.Z, a.Z, o.Z, s.Z], () => p({
     channelId: e,
     ChannelStore: i.Z,
-    GuildStore: o.Z,
-    PermissionStore: a.Z,
+    GuildStore: a.Z,
+    PermissionStore: o.Z,
     VoiceStateStore: s.Z
   }), [e])
 }

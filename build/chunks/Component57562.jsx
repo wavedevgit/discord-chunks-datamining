@@ -15,14 +15,14 @@ var Chunk481060 = require("./481060.js"),
 let c = 6e3;
 
 function u(e) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "POGGERMODE_ACHIEVEMENT_UNLOCK",
     achievementId: e
   })
 }
 
 function d(e, t) {
-  let n = (0, a.oX)(e);
+  let n = (0, o.oX)(e);
   null != n && (0, i.showToast)((0, i.createToast)(l.intl.string(l.t.MPpEUA), i.ToastType.CUSTOM, {
     position: i.ToastPosition.BOTTOM,
     component: (0, r.jsx)(s.Z, {

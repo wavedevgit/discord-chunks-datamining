@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 196961, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   i: () => l,
-  p: () => s
+  p: () => a
 });
 var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -27,6 +27,6 @@ function l(e) {
   }
 }
 
-function s(e) {
+function a(e) {
   return e.features.has(r.GuildFeatures.VANITY_URL) || e.features.has(r.GuildFeatures.GUILD_WEB_PAGE_VANITY_URL) && null != e.vanityURLCode
 }

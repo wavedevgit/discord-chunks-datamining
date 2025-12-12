@@ -17,14 +17,14 @@ function p(e, t) {
     r = null,
     i = s(e.currentTarget);
   if ("function" == typeof i.caretRangeFromPoint) {
-    var o = i.caretRangeFromPoint(e.x, e.y);
-    n = o.startContainer, r = o.startOffset
+    var a = i.caretRangeFromPoint(e.x, e.y);
+    n = a.startContainer, r = a.startOffset
   } else {
     if (!e.rangeParent) return null;
     n = e.rangeParent, r = e.rangeOffset
   }
   n = f(n), r = f(r);
-  var l = f(a(n));
+  var l = f(o(n));
   return c(t, l, r, l, r)
 }
 
@@ -43,12 +43,12 @@ function _(e) {
 
 function m(e, t) {
   var n = i.moveText(e.getCurrentContent(), e.getSelection(), t);
-  return o.push(e, n, "insert-fragment")
+  return a.push(e, n, "insert-fragment")
 }
 
 function h(e, t, n) {
   var r = i.insertText(e.getCurrentContent(), t, n, e.getCurrentInlineStyle());
-  return o.push(e, r, "insert-fragment")
+  return a.push(e, r, "insert-fragment")
 }
 module.exports = {
   onDragEnd: function(e) {
@@ -57,18 +57,18 @@ module.exports = {
   onDrop: function(e, t) {
     var n = new r(t.nativeEvent.dataTransfer),
       i = e._latestEditorState,
-      o = p(t.nativeEvent, i);
-    if (t.preventDefault(), e._dragCount = 0, e.exitCurrentMode(), null != o) {
-      var a = n.getFiles();
-      if (a.length > 0) {
-        if (e.props.handleDroppedFiles && d(e.props.handleDroppedFiles(o, a))) return;
-        l(a, function(t) {
-          t && e.update(h(i, o, t))
+      a = p(t.nativeEvent, i);
+    if (t.preventDefault(), e._dragCount = 0, e.exitCurrentMode(), null != a) {
+      var o = n.getFiles();
+      if (o.length > 0) {
+        if (e.props.handleDroppedFiles && d(e.props.handleDroppedFiles(a, o))) return;
+        l(o, function(t) {
+          t && e.update(h(i, a, t))
         });
         return
       }
       var s = e._internalDrag ? "internal" : "external";
-      e.props.handleDrop && d(e.props.handleDrop(o, n, s)) || (e._internalDrag ? e.update(m(i, o)) : e.update(h(i, o, n.getText()))), _(e)
+      e.props.handleDrop && d(e.props.handleDrop(a, n, s)) || (e._internalDrag ? e.update(m(i, a)) : e.update(h(i, a, n.getText()))), _(e)
     }
   }
 }

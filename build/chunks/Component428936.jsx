@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk893966 = require("./893966.js"),
   Chunk527379 = require("./527379.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk671408 = require("./671408.js");
+  Chunk399158 = require("./399158.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,12 +57,12 @@ function h(e) {
     label: Number(e).toLocaleString()
   })), []), O = new Intl.NumberFormat(m.intl.currentLocale).format(j), H = m.intl.formatToPlainString(m.t["RNDnQ/"], {
     count: v ? "..." : O
-  }), _ = j > x.pageSize || v, w = j > c.LU["0"];
+  }), w = j > x.pageSize || v, S = j > c.LU["0"];
   return (0, r.jsxs)("div", {
     className: b.paginationContainer,
     children: [(0, r.jsx)("div", {
       className: b.pageSizeSelection,
-      children: w ? (0, r.jsxs)(r.Fragment, {
+      children: S ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
@@ -101,7 +101,7 @@ function h(e) {
       })
     }), (0, r.jsx)("div", {
       className: b.pagination,
-      children: _ && (0, r.jsx)(s.DsT, {
+      children: w && (0, r.jsx)(s.DsT, {
         className: b.paginationInput,
         totalCount: j,
         pageSize: x.pageSize,

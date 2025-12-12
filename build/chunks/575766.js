@@ -1,12 +1,12 @@
 /** Chunk was on 9924 **/
 /** chunk id: 575766, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => i
+  n: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk941028 = require("./941028.js");
 
-function i(e) {
+function a(e) {
   l.useEffect(() => (r.k$(e), () => {
     r.kr(e)
   }), [e])

@@ -20,15 +20,15 @@ function _(e) {
   let {
     applicationId: t,
     message: n
-  } = e, [o, s, l] = (0, a.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
+  } = e, [a, s, l] = (0, o.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
-    null != o || s || l || u.ZP.fetchApplication(t)
-  }, [o, s, l, t]), null != o && (0, p.Eb)({
-    customInstallUrl: o.customInstallUrl,
-    installParams: o.installParams,
-    integrationTypesConfig: o.integrationTypesConfig
+    null != a || s || l || u.ZP.fetchApplication(t)
+  }, [a, s, l, t]), null != a && (0, p.Eb)({
+    customInstallUrl: a.customInstallUrl,
+    installParams: a.installParams,
+    integrationTypesConfig: a.integrationTypesConfig
   })) ? (0, r.jsx)(m, {
-    application: o,
+    application: a,
     message: n
   }) : null
 }
@@ -37,10 +37,10 @@ function m(e) {
   let {
     application: t,
     message: n
-  } = e, a = i.useCallback(() => {
+  } = e, o = i.useCallback(() => {
     (0, c.h)({
-      type: o.ImpressionTypes.VIEW,
-      name: o.ImpressionNames.APP_OAUTH2_LINK_EMBED,
+      type: a.ImpressionTypes.VIEW,
+      name: a.ImpressionNames.APP_OAUTH2_LINK_EMBED,
       properties: {
         application_id: t.id
       }
@@ -53,7 +53,7 @@ function m(e) {
     children: (0, r.jsx)(f.O, {
       app: t,
       linkType: f.U.OAUTH,
-      onView: a,
+      onView: o,
       message: n
     })
   })

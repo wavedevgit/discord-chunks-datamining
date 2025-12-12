@@ -18,14 +18,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk332325 = require("./332325.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk830260 = require("./830260.js");
+  Chunk103554 = require("./103554.js");
 
 function g() {
   let e = (0, Chunk326528.b)(),
     t = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     n = null != exports && module.some(e => e.id === t) ? exports : module[0].id,
     g = e => {
-      a.Z.setSection(_.oAB.GAMES, e)
+      o.Z.setSection(_.oAB.GAMES, e)
     },
     E = () => {
       switch (require) {
@@ -33,7 +33,7 @@ function g() {
           return (0, Chunk54381.jsx)(Chunk574755.Z, {});
         case Chunk332325.Z.OVERLAY:
           return (0, Chunk54381.jsx)(Chunk327885.Z, {
-            className: Chunk830260.body,
+            className: Chunk103554.body,
             showHeader: false
           });
         case Chunk332325.Z.ACTIVITY_PRIVACY:
@@ -41,24 +41,24 @@ function g() {
         case Chunk332325.Z.MY_GAMES:
         default:
           return (0, Chunk54381.jsx)(Chunk293389.Z, {
-            className: Chunk830260.body,
+            className: Chunk103554.body,
             showHeader: false
           })
       }
     };
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk830260.heading,
+      className: Chunk103554.heading,
       variant: "heading-xl/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.URyqtP)
     }), (0, Chunk54381.jsx)(Chunk481060.njP, {
-      className: Chunk830260.tabBar,
+      className: Chunk103554.tabBar,
       selectedItem: require,
       onItemSelect: g,
       orientation: "horizontal",
       type: "top",
       look: "brand",
-      children: module.map(e => (0, r.jsxs)(o.njP.Item, {
+      children: module.map(e => (0, r.jsxs)(a.njP.Item, {
         className: h.tab,
         id: e.id,
         "aria-label": e.title,

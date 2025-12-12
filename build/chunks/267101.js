@@ -20,12 +20,12 @@ var Chunk38618 = require("./38618.js"),
   Chunk981631 = require("./981631.js");
 let f = e => {
     let t = (0, i.e7)([u.Z], () => null != e ? u.Z.getGuildProductsForGuildFetchState(e) : u.M.FETCHED, [e]),
-      n = (0, i.e7)([o.Z], () => o.Z.isConnected()),
-      [a, s] = r.useState(true);
+      n = (0, i.e7)([a.Z], () => a.Z.isConnected()),
+      [o, s] = r.useState(true);
     return r.useEffect(() => {
-      a && (t === u.M.NOT_FETCHED || t === u.M.FETCHED && u.Z.isGuildProductsCacheExpired(e)) && n && c.EB(e), s(!n)
-    }, [e, n, t, a]), {
-      listingsLoaded: t === u.M.FETCHED && !a
+      o && (t === u.M.NOT_FETCHED || t === u.M.FETCHED && u.Z.isGuildProductsCacheExpired(e)) && n && c.EB(e), s(!n)
+    }, [e, n, t, o]), {
+      listingsLoaded: t === u.M.FETCHED && !o
     }
   },
   p = function(e, t) {
@@ -33,20 +33,20 @@ let f = e => {
       requireCurrentGuild: n
     } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
       requireCurrentGuild: true
-    }, a = (0, i.e7)([o.Z], () => o.Z.isConnected()), s = (0, i.e7)([l.Z], () => l.Z.getGuildId());
+    }, o = (0, i.e7)([a.Z], () => a.Z.isConnected()), s = (0, i.e7)([l.Z], () => l.Z.getGuildId());
     return r.useEffect(() => {
       let r = u.Z.getGuildProductFetchState(t);
-      if ((!n || s === e) && a && r === u.M.NOT_FETCHED) try {
+      if ((!n || s === e) && o && r === u.M.NOT_FETCHED) try {
         c.cf(e, t)
       } catch (e) {}
-    }, [e, t, a, s, n]), (0, i.e7)([u.Z], () => u.Z.getGuildProduct(t))
+    }, [e, t, o, s, n]), (0, i.e7)([u.Z], () => u.Z.getGuildProduct(t))
   },
   _ = function(e) {
     let {
       publishedOnly: t
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return (0, i.e7)([u.Z, a.Z], () => u.Z.getGuildProductsForGuild(e, {
-      publishedOnly: null != t ? t : !a.Z.isViewingServerShop(e)
+    return (0, i.e7)([u.Z, o.Z], () => u.Z.getGuildProductsForGuild(e, {
+      publishedOnly: null != t ? t : !o.Z.isViewingServerShop(e)
     }))
   },
   m = e => (0, i.e7)([u.Z], () => null == e ? true : u.Z.getGuildProduct(e)),

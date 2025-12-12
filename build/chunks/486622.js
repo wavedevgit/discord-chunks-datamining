@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 486622, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => b
@@ -24,11 +24,11 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: r,
     onError: b
-  } = e, C = (0, f.Z)(), [y, v] = i.useState(false), [_, O] = i.useState(false), [x, E] = i.useState(false), [j, S] = i.useState(false), [P, I] = i.useState(false), Z = y || _ || x, T = i.useCallback(async e => {
+  } = e, C = (0, h.Z)(), [y, v] = i.useState(false), [O, x] = i.useState(false), [E, j] = i.useState(false), [S, _] = i.useState(false), [P, I] = i.useState(false), Z = y || O || E, T = i.useCallback(async e => {
     if (!Z) {
       v(true);
       try {
-        await (0, p.e4)(e), S(true), null == n || n()
+        await (0, p.e4)(e), _(true), null == n || n()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
@@ -38,19 +38,19 @@ function b(e) {
     }
   }, [Z, n, b]), N = i.useCallback(async e => {
     if (!Z) {
-      O(true);
+      x(true);
       try {
         await (0, p.gN)(e), I(true), null == r || r()
       } catch (t) {
         let e = new a.Hx(t);
         null == b || b(e)
       } finally {
-        O(false)
+        x(false)
       }
     }
   }, [Z, r, b]), A = i.useCallback(async e => {
     if (Z) return;
-    O(true);
+    x(true);
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
@@ -59,19 +59,19 @@ function b(e) {
       let e = new a.Hx(t);
       null == b || b(e)
     } finally {
-      O(false)
+      x(false)
     }
   }, [Z, r, b]), w = i.useCallback(async e => {
     if (Z) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
-      E(true);
+      j(true);
       try {
         await (0, c.Z)(t.id, t.getAvatarURL(true, 80), {
           withMutualGuilds: true,
           withMutualFriendsCount: true
         })
       } catch (e) {} finally {
-        E(false)
+        j(false)
       }
     }
     let n = async () => {
@@ -84,7 +84,7 @@ function b(e) {
         other_user_id: null == t ? true : t.id
       }), await T(e)
     };
-    (0, h.H)({
+    (0, f.H)({
       channelId: e,
       onConfirm: n,
       onCancel: () => {
@@ -108,7 +108,7 @@ function b(e) {
         }), null != n && n()
       },
       r = u.kJ.getSetting();
-    null == r ? (0, h.V)({
+    null == r ? (0, f.V)({
       channel: e,
       onConfirm: i,
       onCancel: () => {
@@ -125,9 +125,9 @@ function b(e) {
     rejectAll: A,
     markAsNotSpam: M,
     isAcceptLoading: y,
-    isRejectLoading: _,
-    isUserProfileLoading: x,
-    isOptimisticAccepted: j,
+    isRejectLoading: O,
+    isUserProfileLoading: E,
+    isOptimisticAccepted: S,
     isOptimisticRejected: P
   }
 }

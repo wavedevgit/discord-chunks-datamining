@@ -1,16 +1,16 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 798528, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   SR: () => o,
-  Vk: () => a,
+  Vk: () => s,
   xl: () => c
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e, t) {
+function a(e, t) {
   let n = new Date,
     i = new Date(n.getTime() - (n.getDay() + 1) * 864e5 - 36288e5);
   return r.tn.get({
@@ -25,8 +25,8 @@ function s(e, t) {
   })
 }
 
-function a(e) {
-  return s(e, l.ANM.GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW).then(t => {
+function s(e) {
+  return a(e, l.ANM.GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW).then(t => {
     let {
       body: n
     } = t;
@@ -44,7 +44,7 @@ function a(e) {
 }
 
 function o(e) {
-  return s(e, l.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW).then(t => {
+  return a(e, l.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW).then(t => {
     let {
       body: n
     } = t;
@@ -62,7 +62,7 @@ function o(e) {
 }
 
 function c(e) {
-  return s(e, l.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION).then(t => {
+  return a(e, l.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION).then(t => {
     let {
       body: n
     } = t, r = n.filter(e => e.hasOwnProperty("pct_retained")).map(e => {

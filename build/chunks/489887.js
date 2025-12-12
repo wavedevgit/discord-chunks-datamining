@@ -7,14 +7,14 @@ require.d(exports, {
   Az: () => s,
   Dv: () => u,
   WA: () => l,
-  fw: () => a,
-  gY: () => o,
+  fw: () => o,
+  gY: () => a,
   lc: () => d
 }), require("./388685.js");
 var Chunk957825 = require("./957825.js");
 let i = "POLL_CREATION_MODAL_KEY",
-  o = 1,
-  a = 10,
+  a = 1,
+  o = 10,
   s = 300,
   l = 55,
   c = 3,

@@ -41,7 +41,7 @@ class u extends Chunk81825.Z {
       giftStyle: e.gift_style,
       guildId: e.guild_id,
       deleted: e.deleted,
-      sku: null != e.sku ? a.Z.createFromServer(e.sku) : null,
+      sku: null != e.sku ? o.Z.createFromServer(e.sku) : null,
       sourceType: null != (r = e.source_type) ? r : null,
       fulfillmentStatus: null != (i = e.fulfillment_status) ? i : null
     })
@@ -54,7 +54,7 @@ class u extends Chunk81825.Z {
     if (this.isGiftable || this.deleted) returnfalse;
     if (this.type === l.qc2.PREMIUM_SUBSCRIPTION) {
       let n = t.get(this.skuId);
-      if (null != n && !n.premium || !o.ZP.canInstallPremiumApplications(e)) returnfalse
+      if (null != n && !n.premium || !a.ZP.canInstallPremiumApplications(e)) returnfalse
     }
     let r = new Date;
     if (null != this.startsAt && r < this.startsAt || null != this.endsAt && r >= this.endsAt) returnfalse;

@@ -75,7 +75,7 @@ function E(e) {
 }
 class b extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(a.default, l.Z, c.ZP);
+    this.waitFor(o.default, l.Z, c.ZP);
     let t = null != e ? e : d({}, m);
     for (let e in t) h[e] = t[e]
   }

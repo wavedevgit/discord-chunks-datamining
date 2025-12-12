@@ -2,10 +2,10 @@
 /** chunk id: 883904, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EG: () => a,
+  EG: () => o,
   KC: () => l,
   Nj: () => s,
-  Vr: () => o,
+  Vr: () => a,
   cm: () => i,
   pR: () => c
 });
@@ -17,13 +17,13 @@ let i = (e, t) => {
       guildId: t
     })
   },
-  o = e => {
+  a = e => {
     r.Z.dispatch({
       type: "DCF_HANDLE_DC_DISMISSED",
       dismissibleContent: e
     })
   },
-  a = () => {
+  o = () => {
     Chunk570140.Z.dispatch({
       type: "DCF_RESET"
     })

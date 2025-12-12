@@ -11,14 +11,14 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  DP: () => o,
+  DP: () => a,
   ZI: () => u,
   ZP: () => c,
-  t$: () => a
+  t$: () => o
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./539854.js"), require("./290780.js"), require("./415506.js");
 let i = e => "__section__".concat(e),
-  o = e => "__section_header__".concat(e),
-  a = e => parseInt(e.replace(/^__section__/, ""), 10);
+  a = e => "__section_header__".concat(e),
+  o = e => parseInt(e.replace(/^__section__/, ""), 10);
 
 function s(e) {
   return e.reduce((e, t, n) => t < e[0] ? [t, n] : e, [e[0], 0])
@@ -50,8 +50,8 @@ class c {
       columns: n = this.columns,
       itemGutter: r = this.itemGutter,
       removeEdgeItemGutters: i = this.removeEdgeItemGutters,
-      getItemKey: o = this.getItemKey,
-      getItemHeight: a = this.getItemHeight,
+      getItemKey: a = this.getItemKey,
+      getItemHeight: o = this.getItemHeight,
       getSectionHeight: s = this.getSectionHeight,
       bufferWidth: l = this.bufferWidth,
       padding: c = this.padding,
@@ -61,7 +61,7 @@ class c {
       sectionGutter: p = this.sectionGutter,
       dir: _ = this.dir
     } = e;
-    (this.sections !== t || this.columns !== n || this.itemGutter !== r || this.removeEdgeItemGutters !== i || this.getItemKey !== o || this.getSectionHeight !== s || this.getItemHeight !== a || this.bufferWidth !== l || this.padding !== c || this.paddingVertical !== u || this.paddingHorizontal !== d || this.marginLeft !== f || this.sectionGutter !== p || this.dir !== _) && (this.needsFullCompute = true, this.sections = t, this.columns = n, this.itemGutter = r, this.getItemKey = o, this.getSectionHeight = s, this.getItemHeight = a, this.bufferWidth = l, this.padding = c, this.paddingVertical = u, this.paddingHorizontal = d, this.marginLeft = f, this.sectionGutter = p, this.dir = _)
+    (this.sections !== t || this.columns !== n || this.itemGutter !== r || this.removeEdgeItemGutters !== i || this.getItemKey !== a || this.getSectionHeight !== s || this.getItemHeight !== o || this.bufferWidth !== l || this.padding !== c || this.paddingVertical !== u || this.paddingHorizontal !== d || this.marginLeft !== f || this.sectionGutter !== p || this.dir !== _) && (this.needsFullCompute = true, this.sections = t, this.columns = n, this.itemGutter = r, this.getItemKey = a, this.getSectionHeight = s, this.getItemHeight = o, this.bufferWidth = l, this.padding = c, this.paddingVertical = u, this.paddingHorizontal = d, this.marginLeft = f, this.sectionGutter = p, this.dir = _)
   }
   computeFullCoords() {
     var e, t;
@@ -69,7 +69,7 @@ class c {
     let {
       columns: n,
       getItemKey: r,
-      getItemHeight: a,
+      getItemHeight: o,
       itemGutter: l,
       getSectionHeight: c,
       bufferWidth: u,
@@ -103,22 +103,22 @@ class c {
         }
         let [n, i] = s(this.columnHeights);
         i < this.lastColumnIndex && this.currentRow++, this.lastColumnIndex = i;
-        let o = a(E, u, this.columnWidth),
+        let a = o(E, u, this.columnWidth),
           c = {
             position: "absolute",
             [f]: this.columnWidth * i + l * (i + 1) - l + m,
             width: this.columnWidth,
             top: require - p,
-            height: o
+            height: a
           },
           d = {
             section: E,
             row: this.currentRow,
             column: i
           };
-        this.coordsMap[module] = c, this.gridData.coordinates[module] = d, this.columnHeights[i] = require + o + l, this.itemGrid[i] = null != (t = this.itemGrid[i]) ? exports : [], this.itemGrid[i].push(module), u++
+        this.coordsMap[module] = c, this.gridData.coordinates[module] = d, this.columnHeights[i] = require + a + l, this.itemGrid[i] = null != (t = this.itemGrid[i]) ? exports : [], this.itemGrid[i].push(module), u++
       }
-      d > 0 && (this.coordsMap[o(E)] = {
+      d > 0 && (this.coordsMap[a(E)] = {
         position: "sticky",
         [f]: m,
         width: this.columnWidth * require + l * require,
@@ -141,13 +141,13 @@ class c {
       coordsMap: r
     } = this;
     this.visibleSections = {};
-    let o = 0;
-    for (; o < this.sections.length;) {
-      let a = this.sections[o],
-        s = i(o),
+    let a = 0;
+    for (; a < this.sections.length;) {
+      let o = this.sections[a],
+        s = i(a),
         l = r[s];
       if (null == l) {
-        o++;
+        a++;
         continue
       }
       let {
@@ -155,26 +155,26 @@ class c {
       } = l, u = c + l.height;
       if (c > t) break;
       if (u < e) {
-        o++;
+        a++;
         continue
       }
       let d = 0,
         f = 1;
-      for (u < t && u > e && (d = a - 1, f = false), this.visibleSections[s] = []; d >= 0 && d < a;) {
-        let i = n(o, d),
-          a = null != i ? r[i] : null;
-        if (null == i || null == a) {
+      for (u < t && u > e && (d = o - 1, f = false), this.visibleSections[s] = []; d >= 0 && d < o;) {
+        let i = n(a, d),
+          o = null != i ? r[i] : null;
+        if (null == i || null == o) {
           d += f;
           continue
         }
         let {
           top: l,
           height: u
-        } = a;
-        l + c > e - u && l + c < t && (false === f ? this.visibleSections[s].unshift([i, o, d]) : this.visibleSections[s].push([i, o, d])), d += f
+        } = o;
+        l + c > e - u && l + c < t && (false === f ? this.visibleSections[s].unshift([i, a, d]) : this.visibleSections[s].push([i, a, d])), d += f
       }
       if (c < e && u > t) break;
-      o++
+      a++
     }
   }
   getMaxColumnHeight() {
@@ -208,10 +208,10 @@ function u(e, t, n) {
     if (null == t[i]) r[i] = e[i];
     else {
       let r = e[i],
-        o = t[i];
+        a = t[i];
       for (let e = 0; e < r.length; e++) {
         let [t] = r[e];
-        o.some(e => {
+        a.some(e => {
           let [n] = e;
           return t === n
         }) || n(r[e][1], r[e][2], true)
@@ -220,13 +220,13 @@ function u(e, t, n) {
     if (null == e[r]) i[r] = t[r];
     else {
       let i = e[r],
-        o = t[r];
-      for (let e = 0; e < o.length; e++) {
-        let [t] = o[e];
+        a = t[r];
+      for (let e = 0; e < a.length; e++) {
+        let [t] = a[e];
         i.some(e => {
           let [n] = e;
           return n === t
-        }) || n(o[e][1], o[e][2], false)
+        }) || n(a[e][1], a[e][2], false)
       }
     }
 }

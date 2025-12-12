@@ -64,7 +64,7 @@ function g(e) {
       })) : true
     })),
     assets: i().keyBy(e.assets, "id"),
-    application: null != e.application ? o.ZP.createFromServer(e.application) : true
+    application: null != e.application ? a.ZP.createFromServer(e.application) : true
   }
 }
 
@@ -91,21 +91,21 @@ function b(e, t) {
     primaryIconAsset: true,
     primaryIconLabel: true
   };
-  let o = e.tenantMetadata.socialLayer.carouselItems[0];
-  return null == o.labelIconAssetId ? {
+  let a = e.tenantMetadata.socialLayer.carouselItems[0];
+  return null == a.labelIconAssetId ? {
     primaryIconAsset: true,
     primaryIconLabel: true
   } : {
-    primaryIconAsset: null != (i = l.Z.toURLSafe((0, s._W)(t, o.labelIconAssetId, 512, "webp"))) ? i : true,
-    primaryIconLabel: o.label
+    primaryIconAsset: null != (i = l.Z.toURLSafe((0, s._W)(t, a.labelIconAssetId, 512, "webp"))) ? i : true,
+    primaryIconLabel: a.label
   }
 }
 
 function y(e) {
   var t, n, r;
   let i = null == e ? true : e.applicationId,
-    o = null != (r = null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) ? r : null == e ? true : e.thumbnailAssetId;
-  if (null != o && null != i) return l.Z.toURLSafe((0, s._W)(i, o, 512, "webp"))
+    a = null != (r = null == e || null == (n = e.tenantMetadata) || null == (t = n.socialLayer) ? true : t.cardImageAssetId) ? r : null == e ? true : e.thumbnailAssetId;
+  if (null != a && null != i) return l.Z.toURLSafe((0, s._W)(i, a, 512, "webp"))
 }
 
 function O(e) {
@@ -118,7 +118,7 @@ function v(e, t) {
 }
 
 function S(e, t) {
-  let n = a.Z.getGuild(e);
+  let n = o.Z.getGuild(e);
   return null != n && h(n) && (0, c.ne)({
     location: t
   })

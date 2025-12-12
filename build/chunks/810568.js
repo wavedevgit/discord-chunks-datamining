@@ -35,7 +35,7 @@ let d = () => (0, Chunk772848.Z)(),
       authorId: c,
       profileType: u
     } = e;
-    return o.default.track(a.rMx.GAME_PROFILE_OPEN, {
+    return a.default.track(o.rMx.GAME_PROFILE_OPEN, {
       view_id: t,
       source: n,
       game_name: r,
@@ -55,7 +55,7 @@ let d = () => (0, Chunk772848.Z)(),
       similarGames: u,
       officialGuildId: d
     } = e;
-    o.default.track(a.rMx.GAME_PROFILE_CLOSE, {
+    a.default.track(o.rMx.GAME_PROFILE_CLOSE, {
       view_id: t,
       game_name: n,
       application_id: r,
@@ -76,7 +76,7 @@ let d = () => (0, Chunk772848.Z)(),
       viewId: l,
       officialGuildId: c
     } = e;
-    o.default.track(a.rMx.GAME_PROFILE_ACTION, {
+    a.default.track(o.rMx.GAME_PROFILE_ACTION, {
       game_name: t,
       application_id: n,
       action: r,
@@ -95,7 +95,7 @@ let d = () => (0, Chunk772848.Z)(),
       feedback: s,
       submitted: l
     } = e;
-    return o.default.track(a.rMx.GAME_PROFILE_FEEDBACK, {
+    return a.default.track(o.rMx.GAME_PROFILE_FEEDBACK, {
       view_id: t,
       application_id: n,
       suggested_game_name: r,

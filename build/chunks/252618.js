@@ -83,16 +83,16 @@ function h(e) {
 }
 
 function g(e) {
-  (0, a.j)(() => _.setState({
+  (0, o.j)(() => _.setState({
     notificationCount: e
   }))
 }
 
 function E(e) {
-  return (0, a.j)(() => _.setState(t => ({
+  return (0, o.j)(() => _.setState(t => ({
     titles: [e, ...t.titles]
   }))), () => {
-    (0, a.j)(() => _.setState(t => ({
+    (0, o.j)(() => _.setState(t => ({
       titles: t.titles.filter(t => t !== e)
     })))
   }
@@ -133,7 +133,7 @@ function I() {
       flashQueue: t
     } = e, n = m(e).filter(e => null != e).join(" | "), r = h(e);
     return ["".concat(r).concat(n), t[0]]
-  }, Chunk55160.X), [n, o] = Chunk473749.useState(false), a = Chunk473749.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
+  }, Chunk55160.X), [n, a] = Chunk473749.useState(false), o = Chunk473749.useRef(0), s = null == exports ? true : exports.messages[Chunk731965.current % exports.messages.length];
   return Chunk473749.useEffect(() => {
     if (null == exports) {
       Chunk731965.current = 0, Chunk748521(false);
@@ -148,7 +148,7 @@ function I() {
         y(exports.id), Chunk748521(false);
         return
       }
-      Chunk748521(e => !e || (a.current += 1, false))
+      Chunk748521(e => !e || (o.current += 1, false))
     }, exports.interval);
     return () => clearInterval(module)
   }, [exports]), require ? s : module

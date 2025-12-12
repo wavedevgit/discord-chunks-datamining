@@ -31,7 +31,7 @@ function g(e) {
   if (null == x) return null;
   let S = (0, o.KW)(x.flags);
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(f.C3, {
+    children: [(0, i.jsx)(p.C3, {
       children: y ? (0, i.jsx)(c.h, {
         confirmCta: h.intl.string(h.t.PBHFSq),
         onConfirm: C,
@@ -55,12 +55,12 @@ function g(e) {
           applicationName: null == v ? true : v.name
         }) : h.intl.string(h.t.n1Pu8C)
       })
-    }), !y && (0, i.jsx)(f.O3, {
-      children: (0, i.jsx)(p.Z, {
+    }), !y && (0, i.jsx)(p.O3, {
+      children: (0, i.jsx)(f.Z, {
         onBack: n,
         backText: h.intl.string(h.t.TQBY1J),
         onPrimary: C,
-        primaryCTA: p.g.CONTINUE,
+        primaryCTA: f.g.CONTINUE,
         primaryText: h.intl.string(h.t["gZhF+3"])
       })
     })]

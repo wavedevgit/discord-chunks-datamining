@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk937111 = require("./937111.js"),
   Chunk850493 = require("./850493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk394121 = require("./394121.js");
+  Chunk871612 = require("./871612.js");
 let f = e => {
   let {
     headerId: t,
@@ -21,19 +21,19 @@ let f = e => {
     confirmText: g,
     onWithdrawApplication: h,
     rejectionReason: m = null,
-    guild: _ = null
-  } = e, b = (0, l.e7)([c.Z], () => {
+    guild: b = null
+  } = e, E = (0, l.e7)([c.Z], () => {
     var e;
-    return c.Z.getCooldown(null != (e = null == _ ? true : _.id) ? e : "0")
+    return c.Z.getCooldown(null != (e = null == b ? true : b.id) ? e : "0")
   }), {
-    canReapply: E,
+    canReapply: _,
     isLoading: O
-  } = (0, u.o)(null == _ ? true : _.id);
+  } = (0, u.o)(null == b ? true : b.id);
   i.useEffect(() => {
-    null == b && null != _ && o.Z.fetchJoinRequestCooldown(_.id)
-  }, [b, _]);
-  let v = (null != b ? b : 0) > 0,
-    y = v && null != b ? Math.ceil((1e3 * b - Date.now()) / 864e5) : 0;
+    null == E && null != b && o.Z.fetchJoinRequestCooldown(b.id)
+  }, [E, b]);
+  let v = (null != E ? E : 0) > 0,
+    y = v && null != E ? Math.ceil((1e3 * E - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: p.confirmation,
     children: [(0, r.jsx)("div", {
@@ -48,8 +48,8 @@ let f = e => {
         id: t,
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: (null == _ ? true : _.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
-          guildName: _.name
+        children: (null == b ? true : b.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
+          guildName: b.name
         }) : d.intl.string(d.t.gBPcuP)
       }), null != m && "" !== m ? (0, r.jsxs)(s.Text, {
         variant: "text-md/medium",
@@ -63,7 +63,7 @@ let f = e => {
       }) : null]
     }), (0, r.jsxs)("div", {
       className: p.confirmationButtonRow,
-      children: [E || O ? (0, r.jsx)(a.u, {
+      children: [_ || O ? (0, r.jsx)(a.u, {
         asContainer: true,
         text: v ? d.intl.formatToPlainString(d.t.A0f0P7, {
           days: y
@@ -75,13 +75,13 @@ let f = e => {
           onClick: f,
           variant: "secondary",
           size: "md",
-          loading: null == b || O,
+          loading: null == E || O,
           disabled: v || O,
           text: n,
           fullWidth: true
         })
       }) : null, (0, r.jsx)(s.Button, {
-        onClick: () => h(E || O),
+        onClick: () => h(_ || O),
         variant: "critical-primary",
         size: "md",
         text: g,

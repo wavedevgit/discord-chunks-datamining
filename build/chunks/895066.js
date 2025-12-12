@@ -169,8 +169,8 @@ class g extends Chunk47770.Z {
   }
   getE2EEStats() {
     let e = i().reduce(this.inboundStats, (e, t) => {
-      var n, r, i, o, a, s, l, c, u;
-      return e.passthroughCount += null != (n = t.passthroughCount) ? n : 0, e.decryptSuccessCount += null != (r = t.decryptSuccessCount) ? r : 0, e.decryptFailureCount += null != (i = t.decryptFailureCount) ? i : 0, e.decryptDuration += null != (o = t.decryptDuration) ? o : 0, e.decryptAttempts += null != (a = t.decryptAttempts) ? a : 0, e.decryptMissingKeyCount += null != (s = t.decryptMissingKeyCount) ? s : 0, e.decryptInvalidNonceCount += null != (l = t.decryptInvalidNonceCount) ? l : 0, e.decryptFailureAfterSuccessCount += (null != (c = t.decryptFailureCount) ? c : 0) - (null != (u = t.decryptFailureBeforeSuccessCount) ? u : 0), e
+      var n, r, i, a, o, s, l, c, u;
+      return e.passthroughCount += null != (n = t.passthroughCount) ? n : 0, e.decryptSuccessCount += null != (r = t.decryptSuccessCount) ? r : 0, e.decryptFailureCount += null != (i = t.decryptFailureCount) ? i : 0, e.decryptDuration += null != (a = t.decryptDuration) ? a : 0, e.decryptAttempts += null != (o = t.decryptAttempts) ? o : 0, e.decryptMissingKeyCount += null != (s = t.decryptMissingKeyCount) ? s : 0, e.decryptInvalidNonceCount += null != (l = t.decryptInvalidNonceCount) ? l : 0, e.decryptFailureAfterSuccessCount += (null != (c = t.decryptFailureCount) ? c : 0) - (null != (u = t.decryptFailureBeforeSuccessCount) ? u : 0), e
     }, {
       passthroughCount: 0,
       decryptSuccessCount: 0,
@@ -242,13 +242,13 @@ class g extends Chunk47770.Z {
         numRateSamples: O
       } = h;
       if (true !== y && b > y) {
-        var t, n, r, i, o, a, s, l, c, u, d, f, p, _;
+        var t, n, r, i, a, o, s, l, c, u, d, f, p, _;
         let v = b - y,
           S = {
             userId: m,
             silent: null != (n = E.silent) ? require : 0 - (null != (t = g.silent) ? exports : 0),
             normal: null != (i = E.normal) ? i : 0 - (null != (r = g.normal) ? Chunk392711 : 0),
-            merged: null != (a = E.merged) ? Chunk46973 : 0 - (null != (o = g.merged) ? Chunk47770 : 0),
+            merged: null != (o = E.merged) ? Chunk46973 : 0 - (null != (a = g.merged) ? Chunk47770 : 0),
             expanded: null != (l = E.expanded) ? Chunk909766 : 0 - (null != (s = g.expanded) ? Chunk379649 : 0),
             accelerated: null != (u = E.accelerated) ? Chunk179654 : 0 - (null != (c = g.accelerated) ? Chunk140828 : 0),
             preemptiveExpanded: null != (f = E.preemptiveExpanded) ? f : 0 - (null != (d = g.preemptiveExpanded) ? d : 0),
@@ -297,14 +297,14 @@ class g extends Chunk47770.Z {
         r = 0;
       i().forEach(e.rtp.outbound, e => {
         if ("audio" === e.type) {
-          var t, n, i, o, a, s, l, c, u;
+          var t, n, i, a, o, s, l, c, u;
           r = null != (t = e.bitrateTarget) ? t : 0, this.outboundStats = _(f({}, this.outboundStats), {
             packetsSent: e.packetsSent,
             bytesSent: e.bytesSent,
             packetsLost: null != (n = e.packetsLost) ? n : 0,
             passthroughCount: null != (i = e.passthroughCount) ? i : 0,
-            encryptSuccessCount: null != (o = e.encryptSuccessCount) ? o : 0,
-            encryptFailureCount: null != (a = e.encryptFailureCount) ? a : 0,
+            encryptSuccessCount: null != (a = e.encryptSuccessCount) ? a : 0,
+            encryptFailureCount: null != (o = e.encryptFailureCount) ? o : 0,
             encryptDuration: null != (s = e.encryptDuration) ? s : 0,
             encryptAttempts: null != (l = e.encryptAttempts) ? l : 0,
             encryptMaxAttempts: null != (c = e.encryptMaxAttempts) ? c : 0,
@@ -314,14 +314,14 @@ class g extends Chunk47770.Z {
       }), this.decryptionFailures = e.transport.decryptionFailures, this.routingFailures = e.transport.routingFailures, this.appendTargetRates(this.outboundStats, e.transport.availableOutgoingBitrate, r), i().forEach(e.rtp.inbound, (t, n) => {
         i().forEach(t, t => {
           if ("audio" === t.type) {
-            var r, o, a, s, l, c, u, d, p, _, m, h, g, E, b, y, O, v, S, I;
+            var r, a, o, s, l, c, u, d, p, _, m, h, g, E, b, y, O, v, S, I;
             let T = null != (r = e.transport.ping) ? r : 0,
               C = t.packetsReceived,
               A = t.packetsLost,
               N = t.bytesReceived,
               P = t.nackCount,
-              R = null != (o = t.fecPacketsReceived) ? o : 0,
-              w = null != (a = t.fecPacketsDiscarded) ? a : 0,
+              R = null != (a = t.fecPacketsReceived) ? a : 0,
+              w = null != (o = t.fecPacketsDiscarded) ? o : 0,
               D = null != (s = t.jitterBuffer) ? s : 0,
               x = {
                 audioJitterBuffer: t.audioJitterBuffer,
@@ -351,20 +351,20 @@ class g extends Chunk47770.Z {
             if (null != this.inboundStats[n]) {
               let e = this.inboundStats[n],
                 r = C - e.packetsReceived,
-                o = A - e.packetsLost,
-                a = 0,
+                a = A - e.packetsLost,
+                o = 0,
                 s = e.mosBuckets,
                 l = null != (h = e.decryptFailureBeforeSuccessCount) ? h : j.decryptSuccessCount > 0 ? j.decryptFailureCount : true;
-              r > 0 && o >= 0 && (a = this.calculateMos(T + D, i().clamp(o / (r + o), 0, 1)), s[Math.floor(a)]++), this.inboundStats[n] = f({
+              r > 0 && a >= 0 && (o = this.calculateMos(T + D, i().clamp(a / (r + a), 0, 1)), s[Math.floor(o)]++), this.inboundStats[n] = f({
                 packetsReceived: C,
                 bytesReceived: N,
                 packetsLost: A,
                 nackCount: null != P ? P : 0,
                 fecPacketsReceived: R,
                 fecPacketsDiscarded: w,
-                mos: a,
-                mosSum: e.mosSum + a,
-                mosCount: e.mosCount + +(a > 0),
+                mos: o,
+                mosSum: e.mosSum + o,
+                mosCount: e.mosCount + +(o > 0),
                 mosBuckets: s,
                 bufferStats: x,
                 frameOpStats: L,
@@ -407,11 +407,11 @@ class g extends Chunk47770.Z {
           }
         })
       }), true !== e.audioDevice && (this.sampleAudioDevice(e.audioDevice.input, this.inputDeviceStats), this.sampleAudioDevice(e.audioDevice.output, this.outputDeviceStats));
-      let o = false,
-        a = false;
-      this.outboundStats.packetsSent > t && (o = true, this.duration.speaking++), i().reduce(this.inboundStats, (e, t) => (e.packetsReceived += t.packetsReceived, e), {
+      let a = false,
+        o = false;
+      this.outboundStats.packetsSent > t && (a = true, this.duration.speaking++), i().reduce(this.inboundStats, (e, t) => (e.packetsReceived += t.packetsReceived, e), {
         packetsReceived: 0
-      }).packetsReceived > n.packetsReceived && (a = true, this.duration.listening++), (o || a) && this.duration.participation++
+      }).packetsReceived > n.packetsReceived && (o = true, this.duration.listening++), (a || o) && this.duration.participation++
     }, this.networkQuality = new c.Z, this.systemResources = new u.Z, this.inboundStats = {}, this.outboundStats = {
       packetsSent: 0,
       bytesSent: 0,

@@ -68,12 +68,12 @@ function f(e) {
     paddingBottom: h = 0,
     getScrollerState: g,
     getAnchorId: E
-  } = e, b = (0, o.Z)(), y = (0, r.useRef)(d), [O] = (0, r.useState)(() => new i.Z), {
+  } = e, b = (0, a.Z)(), y = (0, r.useRef)(d), [O] = (0, r.useState)(() => new i.Z), {
     dirty: v,
     chunkStart: S,
     chunkEnd: I,
     forceUpdateOnChunkChange: T
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     chunkSize: _,
     getScrollerState: g,
     forceUpdate: b
@@ -123,8 +123,8 @@ function p(e) {
     scrollerRef: t,
     anchor: n,
     getScrollerState: i,
-    listComputer: o,
-    getAnchorId: a,
+    listComputer: a,
+    getAnchorId: o,
     totalHeight: s
   } = e;
   (0, r.useLayoutEffect)(() => {
@@ -133,10 +133,10 @@ function p(e) {
     } = t, {
       scrollTop: r
     } = i();
-    if (null == n || null == n.row || null == e || null == a || 0 === r) return;
+    if (null == n || null == n.row || null == e || null == o || 0 === r) return;
     let s = t => {
-      if (t < 0 || t >= o.sections[n.section] || a(n.section, n.row) !== n.id) returnfalse;
-      let [i] = o.computeScrollPosition(n.section, t), s = i - n.scrollOffset;
+      if (t < 0 || t >= a.sections[n.section] || o(n.section, n.row) !== n.id) returnfalse;
+      let [i] = a.computeScrollPosition(n.section, t), s = i - n.scrollOffset;
       return r !== s && (e.scrollTop = s), true
     };
     !s(n.row) && (s(n.row - 1) || s(n.row + 1))

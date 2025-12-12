@@ -1,7 +1,7 @@
-/** Chunk was on 77898 **/
+/** Chunk was on 979 **/
 /** chunk id: 739859, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => b
+  default: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,25 +19,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk43860 = require("./43860.js");
+  Chunk122900 = require("./122900.js");
 
-function b(e) {
+function E(e) {
   var t;
   let {
     levelUpData: n
-  } = e, [s, b] = d.useState(false), [f, v] = d.useState(false), [N, y] = d.useState(false), U = (0, T.GG)(), w = d.useRef(null), B = d.useRef(null), {
+  } = e, [s, E] = d.useState(false), [f, v] = d.useState(false), [N, y] = d.useState(false), U = (0, m.GG)(), w = d.useRef(null), B = d.useRef(null), {
     currentBadge: j,
     prevBadge: C,
     levelUpVideoSrc: R
   } = n, k = d.useCallback(() => {
-    let e = 700 * (j.id !== g.VU.PREMIUM_TENURE_1_MONTH);
+    let e = 700 * (j.id !== T.VU.PREMIUM_TENURE_1_MONTH);
     B.current.currentTime = 0, setTimeout(() => {
       y(true), B.current.play()
     }, e)
   }, [j.id]);
   d.useEffect(() => {
     s && k()
-  }, [s, k]), (0, c.Z)({
+  }, [s, k]), (0, o.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.TIERED_TENURE_BADGE_LEVEL_UP,
     properties: {
@@ -49,7 +49,7 @@ function b(e) {
     null != B.current && B.current.load()
   }, []);
   let I = d.useCallback(() => {
-      v(false), y(false), k(), w.current.style.display = "none", w.current.offsetWidth, w.current.style.display = "", x.default.track(h.rMx.TIERED_TENURE_BADGE_LEVEL_UP_REPLAY_CLICKED, {
+      v(false), y(false), k(), w.current.style.display = "none", w.current.offsetWidth, w.current.style.display = "", x.default.track(g.rMx.TIERED_TENURE_BADGE_LEVEL_UP_REPLAY_CLICKED, {
         new_badge_id: j.id
       })
     }, [j.id, k]),
@@ -58,50 +58,50 @@ function b(e) {
       "--custom-new-badge-color": "linear-gradient(to right, ".concat(n.currentBadgeTextGradient, ")")
     };
   return (0, a.jsxs)("div", {
-    className: i()(E.content, {
-      [E.ended]: f,
-      [E.loaded]: s,
-      [E.started]: N
+    className: i()(p.content, {
+      [p.ended]: f,
+      [p.loaded]: s,
+      [p.started]: N
     }),
     style: L,
     ref: w,
-    children: [(0, a.jsx)(u.Z, {
+    children: [(0, a.jsx)(b.Z, {
       ref: B,
-      className: E.video,
+      className: p.video,
       src: R,
       playsInline: true,
-      onLoadedData: () => b(true),
+      onLoadedData: () => E(true),
       onEnded: () => v(true)
     }), (0, a.jsxs)("div", {
-      className: E.textContainer,
-      children: [(0, a.jsx)(_.Z, {
+      className: p.textContainer,
+      children: [(0, a.jsx)(u.Z, {
         width: 60,
         height: 15
-      }), null != C && (0, a.jsx)(o.Text, {
+      }), null != C && (0, a.jsx)(l.Text, {
         variant: "display-md",
-        className: i()(E.badgeText, E.old),
-        children: p.intl.string(C.nameUnformatted)
-      }), (0, a.jsx)(o.Text, {
+        className: i()(p.badgeText, p.old),
+        children: h.intl.string(C.nameUnformatted)
+      }), (0, a.jsx)(l.Text, {
         variant: "display-md",
-        className: i()(E.badgeText, E.new),
-        children: p.intl.string(j.nameUnformatted)
-      }), null != U && (0, a.jsx)(o.Text, {
+        className: i()(p.badgeText, p.new),
+        children: h.intl.string(j.nameUnformatted)
+      }), null != U && (0, a.jsx)(l.Text, {
         variant: "text-xs/medium",
-        className: E.subscribedText,
-        children: p.intl.formatToPlainString(p.t["f/OGgM"], {
-          timeFrame: (0, m.q)(j.id, j.tenureReqNumMonths),
+        className: p.subscribedText,
+        children: h.intl.formatToPlainString(h.t["f/OGgM"], {
+          timeFrame: (0, _.q)(j.id, j.tenureReqNumMonths),
           date: U
         })
       }), (0, a.jsx)("div", {
-        className: E.actionButtons,
-        children: (0, a.jsx)(l.u, {
-          text: p.intl.string(p.t.hsvh0i),
-          children: (0, a.jsx)(o.hU, {
-            icon: o.o1U,
+        className: p.actionButtons,
+        children: (0, a.jsx)(c.u, {
+          text: h.intl.string(h.t.hsvh0i),
+          children: (0, a.jsx)(l.hU, {
+            icon: l.o1U,
             variant: "secondary",
             size: "sm",
             onClick: I,
-            "aria-label": p.intl.string(p.t.hsvh0i)
+            "aria-label": h.intl.string(h.t.hsvh0i)
           })
         })
       })]

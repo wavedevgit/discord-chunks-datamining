@@ -2,18 +2,18 @@
 /** chunk id: 491697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => o
+  m: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk422909 = require("./422909.js");
+var Chunk439604 = require("./439604.js");
 
-function o(e) {
+function a(e) {
   let {
     alt: t,
     ariaLabel: n,
-    ariaHidden: o,
-    role: a,
+    ariaHidden: a,
+    role: o,
     size: s = 64
   } = e;
   return (0, r.jsx)("img", {
@@ -24,7 +24,7 @@ function o(e) {
     src: i.Z,
     alt: t,
     "aria-label": n,
-    "aria-hidden": o,
-    role: null != a ? a : "img"
+    "aria-hidden": a,
+    role: null != o ? o : "img"
   })
 }

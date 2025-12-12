@@ -57,8 +57,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,18 +66,18 @@ function h(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function E(e) {
   let t, n;
   var {
-    afk: o
+    afk: a
   } = e, s = h(e, ["afk"]);
   let [c, u] = i.useState(false);
-  return o ? (t = d.intl.string(d.t.Y40Jke), n = d.intl.string(d.t["5J4yGc"])) : (t = d.intl.string(d.t.FJSZVM), n = d.intl.string(d.t.etJjgW)), (0, r.jsx)(a.u_l, p({
+  return a ? (t = d.intl.string(d.t.Y40Jke), n = d.intl.string(d.t["5J4yGc"])) : (t = d.intl.string(d.t.FJSZVM), n = d.intl.string(d.t.etJjgW)), (0, r.jsx)(o.u_l, p({
     size: "md",
     title: t,
     subtitle: n,
@@ -88,7 +88,7 @@ function E(e) {
       },
       variant: "primary"
     }],
-    actionBarInput: (0, r.jsx)(a.XZJ, {
+    actionBarInput: (0, r.jsx)(o.XZJ, {
       checked: c,
       onChange: e => u(e),
       label: d.intl.string(d.t["5E9SB9"]),
@@ -102,7 +102,7 @@ let b = () => {
   function t() {
     null !== module.current && ((0, Chunk481060.Mr3)(module.current), module.current = null)
   }
-  let [a, l] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), d = Chunk473749.useCallback(() => {
+  let [o, l] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), d = Chunk473749.useCallback(() => {
     module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(E, p({
       afk: l
     }, e)))

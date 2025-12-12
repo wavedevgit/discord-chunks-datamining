@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 426434, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,57 +19,57 @@ var Chunk392711 = require("./392711.js"),
   Chunk449226 = require("./449226.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk824804 = require("./824804.js");
+  Chunk146473 = require("./146473.js");
 
-function b(e) {
+function x(e) {
   let t, {
       guild: n
     } = e,
-    b = n.mfaLevel,
-    j = (0, l.e7)([d.Z], () => null != n && d.Z.can(f.Plq.MANAGE_GUILD, n), [n]),
-    _ = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
-    v = (0, u.eM)(n, _),
-    O = null == _ ? true : _.mfaEnabled,
-    C = b === f.BpS.ELEVATED,
-    y = v && O,
-    N = (0, i.throttle)(async e => {
-      y && await m.Z.updateMFALevel({
+    x = n.mfaLevel,
+    j = (0, l.e7)([u.Z], () => null != n && u.Z.can(b.Plq.MANAGE_GUILD, n), [n]),
+    v = (0, l.e7)([g.default], () => g.default.getCurrentUser()),
+    O = (0, d.eM)(n, v),
+    C = null == v ? true : v.mfaEnabled,
+    y = x === b.BpS.ELEVATED,
+    N = O && C,
+    E = (0, i.throttle)(async e => {
+      N && await f.Z.updateMFALevel({
         guildId: n.id,
-        level: e ? f.BpS.ELEVATED : f.BpS.NONE
+        level: e ? b.BpS.ELEVATED : b.BpS.NONE
       })
     }, 1e3);
   if (!j) return null;
-  y || (t = v ? h.intl.format(h.t.nFwNyR, {
+  N || (t = O ? p.intl.format(p.t.nFwNyR, {
     settingsHook: () => (0, c.openUserSettings)(o.n.ACCOUNT_PANEL, {
-      section: f.oAB.ACCOUNT
+      section: b.oAB.ACCOUNT
     })
-  }) : h.intl.string(h.t["9Ghu40"]));
-  let E = n.features.has(f.GuildFeatures.DISCOVERABLE);
+  }) : p.intl.string(p.t["9Ghu40"]));
+  let I = n.features.has(b.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
-    className: x.simpleItemWrapper,
+    className: h.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
-      className: x.itemContent,
-      children: [(0, r.jsx)(a.Heading, {
+      className: h.itemContent,
+      children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
         color: "text-strong",
-        children: h.intl.string(h.t.lbBfEQ)
-      }), (0, r.jsxs)(a.Text, {
+        children: p.intl.string(p.t.lbBfEQ)
+      }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: [h.intl.string(h.t["a/93J6"]), " ", t]
+        children: [p.intl.string(p.t["a/93J6"]), " ", t]
       })]
-    }), !y || C && E ? (0, r.jsx)(s.u, {
-      text: E ? h.intl.string(h.t["KG1V/E"]) : v ? h.intl.string(h.t.NmsheT) : h.intl.string(h.t.LieBta),
-      children: (0, r.jsx)(p.Z, {
-        checked: C,
+    }), !N || y && I ? (0, r.jsx)(a.u, {
+      text: I ? p.intl.string(p.t["KG1V/E"]) : O ? p.intl.string(p.t.NmsheT) : p.intl.string(p.t.LieBta),
+      children: (0, r.jsx)(m.Z, {
+        checked: y,
         disabled: true,
-        onChange: N,
-        className: x.bringToFront
+        onChange: E,
+        className: h.bringToFront
       })
-    }) : (0, r.jsx)(p.Z, {
-      checked: C,
-      onChange: N,
-      className: x.bringToFront
+    }) : (0, r.jsx)(m.Z, {
+      checked: y,
+      onChange: E,
+      className: h.bringToFront
     })]
   })
 }

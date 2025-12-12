@@ -19,7 +19,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk568836 = require("./568836.jsx"),
   Chunk345898 = require("./345898.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk697582 = require("./697582.js");
+  Chunk241308 = require("./241308.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,8 +37,8 @@ class v extends(r = Chunk473749.PureComponent) {
       storeListing: t,
       isHorizontal: n,
       className: r,
-      renderCustomTagline: o,
-      renderCustomTitle: a,
+      renderCustomTagline: a,
+      renderCustomTitle: o,
       renderCustomMedia: s,
       isEmbed: l
     } = this.props, c = Chunk86357 ? Chunk568836.$G : Chunk345898.Z;
@@ -58,8 +58,8 @@ class v extends(r = Chunk473749.PureComponent) {
         sku: t,
         renderCustomActions: n,
         isMouseOver: r,
-        showBuyInline: o
-      } = this.props, a = (o || !t.requiresPayment) && !e, s = a && r;
+        showBuyInline: a
+      } = this.props, o = (a || !t.requiresPayment) && !e, s = o && r;
       return null != n ? n() : (0, i.jsxs)("div", {
         className: b.priceOs,
         children: [(0, i.jsx)(l.Z, {
@@ -70,7 +70,7 @@ class v extends(r = Chunk473749.PureComponent) {
         }), (0, i.jsx)(c.n, {
           systems: [E.TaA.WINDOWS],
           className: b.platform
-        }), a ? (0, i.jsx)("div", {
+        }), o ? (0, i.jsx)("div", {
           children: "deprecated!"
         }) : null]
       })
@@ -80,35 +80,35 @@ class v extends(r = Chunk473749.PureComponent) {
         muted: t,
         showMediaPlaceholder: n,
         onToggleMute: r,
-        sku: a,
+        sku: o,
         isHorizontal: l,
         storeListing: c
       } = this.props;
-      return (0, p.K$)(a) ? (0, i.jsx)(_.A, {
-        sku: a,
+      return (0, p.K$)(o) ? (0, i.jsx)(_.A, {
+        sku: o,
         shape: "custom",
         containerClassName: b.socialLayerStorefrontCardContainer,
         backgroundImageClassName: b.socialLayerStorefrontCardBackgroundImage,
         foregroundImageClassName: b.socialLayerStorefrontCardImage
-      }) : (0, i.jsxs)(o.Fragment, {
+      }) : (0, i.jsxs)(a.Fragment, {
         children: [(0, i.jsx)(f.Z, {
           className: s()(b.splashContainer, {
             [b.splashContainerHorizontal]: l
           }),
-          video: null != c.previewVideo ? (0, m._W)(a.applicationId, c.previewVideo) : true,
-          image: null != c.thumbnail ? (0, m._W)(a.applicationId, c.thumbnail, O) : true,
-          title: a.name,
+          video: null != c.previewVideo ? (0, m._W)(o.applicationId, c.previewVideo) : true,
+          image: null != c.thumbnail ? (0, m._W)(o.applicationId, c.thumbnail, O) : true,
+          title: o.name,
           playing: e,
           muted: t,
           placeholder: n,
           onToggleMute: r,
           splashClassName: b.splashVideo,
           splashPlaceholderClassName: b.splashPlaceholder
-        }), a.exclusive ? (0, i.jsx)(d.Z, {
+        }), o.exclusive ? (0, i.jsx)(d.Z, {
           className: s()(b.exclusiveRegular, {
             [b.exclusivePlaying]: e
           })
-        }) : a.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
+        }) : o.isTheGameAwardsWinner ? (0, i.jsx)(u.Z, {
           className: s()(b.exclusiveRegular, {
             [b.exclusivePlaying]: e
           })

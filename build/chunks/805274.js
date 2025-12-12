@@ -55,7 +55,7 @@ function u(e, t) {
   }, _ = (0, r.FK)(n, u, t.timeZone, true), {
     ariaLabel: m,
     ariaLabelledBy: h
-  } = r.Lh.get(t), g = (0, a.b)({
+  } = r.Lh.get(t), g = (0, o.b)({
     "aria-label": [m, _].filter(Boolean).join(", "),
     "aria-labelledby": h
   }), E = (0, c.a)({
@@ -63,7 +63,7 @@ function u(e, t) {
     timeZone: t.timeZone
   }), {
     locale: b
-  } = (0, l.j)(), y = (0, o.useMemo)(() => {
+  } = (0, l.j)(), y = (0, a.useMemo)(() => {
     let e = (0, i.zJ)((0, i.Lg)(t.timeZone), b, d);
     return [...Array(7).keys()].map(n => {
       let r = e.add({

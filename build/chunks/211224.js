@@ -33,7 +33,7 @@ function c(e) {
 }
 let u = {
   getActiveErrors: () => Chunk959457.Z.getAllActiveStreamKeys().map(e => r.Z.getQuality(e) === s.IE4.BAD ? c({
-    type: o.u.STREAM_BAD_NETWORK_QUALITY
-  }, (0, a.rT)(e)) : null).filter(Chunk823379.lm),
+    type: a.u.STREAM_BAD_NETWORK_QUALITY
+  }, (0, o.rT)(e)) : null).filter(Chunk823379.lm),
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

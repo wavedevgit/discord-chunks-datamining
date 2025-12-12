@@ -12,7 +12,7 @@ var Chunk722733 = require("./722733.js"),
   i = function(e) {
     return e.OLDEST_CREATION_DATE = "oldest_creation_date", e.TOP_SOUNDS = "top_sounds", e.NEWEST_CREATION_DATE = "newest_creation_date", e.RECENTLY_USED_BY_USER = "recently_used_by_user", e.METRICS_CAPTURE = "metrics_capture", e
   }({});
-let o = (0, Chunk722733.Z)({
+let a = (0, Chunk722733.Z)({
   name: "2025-10-soundboard-xp-3",
   kind: "user",
   defaultConfig: {
@@ -37,26 +37,26 @@ let o = (0, Chunk722733.Z)({
   }
 });
 
-function a(e) {
-  return o.getConfig({
+function o(e) {
+  return a.getConfig({
     location: e
   })
 }
 
 function s(e) {
-  return o.useConfig({
+  return a.useConfig({
     location: e
   })
 }
 
 function l(e) {
-  return "top_sounds" === a(e).sortingStrategy
+  return "top_sounds" === o(e).sortingStrategy
 }
 
 function c(e) {
-  return "metrics_capture" === a(e).sortingStrategy
+  return "metrics_capture" === o(e).sortingStrategy
 }
 
 function u(e) {
-  return "recently_used_by_user" === a(e).sortingStrategy
+  return "recently_used_by_user" === o(e).sortingStrategy
 }

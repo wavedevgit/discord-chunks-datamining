@@ -8,11 +8,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk693789 = require("./693789.jsx"),
   Chunk709692 = require("./709692.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk933434 = require("./933434.js");
+  Chunk355747 = require("./355747.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ function f(e) {
 
 function p(e) {
   let t, n, {
-      header: o,
+      header: a,
       children: d,
       confirmText: f,
       cancelText: p,
@@ -95,16 +95,16 @@ function p(e) {
     transitionState: y,
     impression: I,
     parentComponent: "ConfirmModal",
-    children: [null != o ? (0, r.jsx)(l.xB, {
+    children: [null != a ? (0, r.jsx)(l.xB, {
       "data-migration-pending": true,
       separator: false,
       children: (0, r.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
-        children: o
+        children: a
       })
     }) : null, (0, r.jsx)(l.hz, {
       "data-migration-pending": true,
-      className: a()(u.content, b),
+      className: o()(u.content, b),
       children: d
     }), (0, r.jsxs)(l.mz, {
       "data-migration-pending": true,

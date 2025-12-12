@@ -2,17 +2,17 @@
 /** chunk id: 553890, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 let r = 18761,
   i = 19789,
-  o = {
+  a = {
     BIG_ENDIAN: 19789,
     LITTLE_ENDIAN: 18761,
-    getByteOrder: a
+    getByteOrder: o
   };
 
-function a(e, t) {
+function o(e, t) {
   if (e.getUint16(t) === r) return r;
   if (e.getUint16(t) === i) return i;
   throw Error("Illegal byte order value. Faulty image.")

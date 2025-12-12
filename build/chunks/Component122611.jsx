@@ -102,7 +102,7 @@ let P = e => {
   } = e;
   switch ((0, I.Z)(t)) {
     case I.R.ENABLE_PUBLIC_GUILD:
-      return (0, r.jsx)(_.Z, {
+      return (0, r.jsx)(b.Z, {
         guild: t
       });
     case I.R.MAX_MEMBER_COUNT:
@@ -114,7 +114,7 @@ let P = e => {
         guild: t
       });
     case I.R.GUILD_MFA_WARNING:
-      return (0, r.jsx)(E.Z, {
+      return (0, r.jsx)(_.Z, {
         guild: t
       });
     case I.R.COMMANDS_MIGRATION:
@@ -130,7 +130,7 @@ let P = e => {
         guild: t
       })
   }
-  return b.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
+  return E.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

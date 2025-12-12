@@ -36,7 +36,7 @@ function A(e) {
     experimentEnabled: t,
     premiumSubscription: n,
     mostRecentSubscription: r,
-    previousPremiumSubscription: a
+    previousPremiumSubscription: o
   } = e;
   if (!t) returnfalse;
   if (null != r && r.status === T.O0b.ENDED) {
@@ -44,9 +44,9 @@ function A(e) {
       t = r.hasPremiumAtLeast(I.PremiumTypes.TIER_2);
     if (null != e && t && i()().subtract(C, "days").isBefore(e)) returnfalse
   }
-  if (null != a && a.status === T.O0b.ENDED) {
-    let e = a.endedAt,
-      t = a.hasPremiumAtLeast(I.PremiumTypes.TIER_2);
+  if (null != o && o.status === T.O0b.ENDED) {
+    let e = o.endedAt,
+      t = o.hasPremiumAtLeast(I.PremiumTypes.TIER_2);
     if (null != e && t && i()().subtract(C, "days").isBefore(e)) returnfalse
   }
   if (null != n) {
@@ -56,7 +56,7 @@ function A(e) {
       i = (0, p.isAndroid)() && n.paymentGateway !== T.gg$.GOOGLE;
     if (e || r || i) returnfalse
   }
-  return !(o.tq && f.Z.isFractionalPremiumActive())
+  return !(a.tq && f.Z.isFractionalPremiumActive())
 }
 
 function N() {
@@ -126,7 +126,7 @@ async function P() {
       autoTrackExposure: false
     }),
     {
-      enabled: a
+      enabled: o
     } = (0, Chunk61196.aW)(),
     {
       enabled: f

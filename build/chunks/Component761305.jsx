@@ -17,9 +17,9 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk478411 = require("./478411.js");
 
-function x(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -71,21 +71,21 @@ class E extends(r = Chunk473749.PureComponent) {
     } = this.state;
     return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.Z33eiP)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.format(Chunk388032.t.NRWtfC, {
           guildName: require.name
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk197571.marginTop40,
+        className: Chunk478411.marginTop40,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
           fullWidth: true,
           onClick: () => exports(module)
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk197571.marginTop8,
+        className: Chunk478411.marginTop8,
         children: (0, Chunk54381.jsx)(Chunk481060.Avr, {
           text: Chunk388032.intl.string(Chunk388032.t["cGmT/J"]),
           onClick: () => {
@@ -103,14 +103,14 @@ class E extends(r = Chunk473749.PureComponent) {
     return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
         src: require("./105020.js"),
-        className: Chunk197571.marginBottom20
+        className: Chunk478411.marginBottom20
       }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["/dcuR5"])
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk197571.marginTop40,
+        className: Chunk478411.marginTop40,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
           fullWidth: true,
@@ -127,14 +127,14 @@ class E extends(r = Chunk473749.PureComponent) {
     return module ? this.renderBusy() : exports ? this.renderSuccess() : this.renderError()
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), _(this, "state", {
       busy: true,
       success: false,
       guild: null
     })
   }
 }
-x(E, "defaultProps", {
+_(E, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
 let v = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({

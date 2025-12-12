@@ -9,14 +9,14 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk786167 = require("./786167.js");
+  Chunk792683 = require("./792683.js");
 
 function l(e) {
   let {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     iconNode: (0, r.jsx)(i.or_, {
       size: "md",
       color: "currentColor",
@@ -24,6 +24,6 @@ function l(e) {
     }),
     timestamp: t.timestamp,
     compact: n,
-    children: a.intl.string(a.t.OCs36J)
+    children: o.intl.string(o.t.OCs36J)
   })
 }

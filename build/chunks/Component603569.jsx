@@ -14,14 +14,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk54942 = require("./54942.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk148806 = require("./148806.js");
+  Chunk517319 = require("./517319.js");
 let E = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk148806.default.RZqaJn),
+    useTitle: () => Chunk388032.intl.string(Chunk517319.default.RZqaJn),
     StronglyDiscouragedCustomComponent: Chunk54942.Z,
     buildLayout: () => []
   }),
   I = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
-    useTitle: () => Chunk388032.intl.string(Chunk148806.default.RZqaJn),
+    useTitle: () => Chunk388032.intl.string(Chunk517319.default.RZqaJn),
     getLegacySearchKey: () => Chunk726985.s6.PRIVACY_FAMILY_CENTER,
     icon: Chunk657707.BFJ,
     trailing: {

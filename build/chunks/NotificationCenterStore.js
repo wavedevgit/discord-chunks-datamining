@@ -1,7 +1,7 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 774807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -54,7 +54,7 @@ let h = 90 * Chunk70956.Z.Millis.DAY,
   };
 class g extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(o.ZP), null != e) {
+    if (this.waitFor(a.ZP), null != e) {
       var t;
       (p = e).localItemAcks = function(e) {
         let t = {};
@@ -87,11 +87,11 @@ class g extends(r = Chunk442837.ZP.PersistedStore) {
   }
 }
 
-function m() {
+function b() {
   p.hasNewMentions = false, p.isDataStale = false, p.isRefreshing = false
 }
 u(g, "displayName", "NotificationCenterStore"), u(g, "persistKey", "NotificationCenterStore");
-let b = new g(Chunk570140.Z, {
+let m = new g(Chunk570140.Z, {
   MESSAGE_CREATE: function(e) {
     let {
       message: t
@@ -117,6 +117,6 @@ let b = new g(Chunk570140.Z, {
   NOTIFICATION_CENTER_REFRESH: function() {
     p.isRefreshing = true
   },
-  LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: m,
-  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: m
+  LOAD_NOTIFICATION_CENTER_ITEMS_FAILURE: b,
+  LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS: b
 })

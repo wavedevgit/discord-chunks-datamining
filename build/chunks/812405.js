@@ -53,48 +53,48 @@ function v(e, t, n) {
 }
 module.exports = function(e, t) {
   var n = t.which,
-    o = e._latestEditorState;
+    a = e._latestEditorState;
 
   function s(n) {
     var r = e.props[n];
     return !!r && (r(t), true)
   }
   switch (n) {
-    case a.RETURN:
-      if (t.preventDefault(), e.props.handleReturn && c(e.props.handleReturn(t, o))) return;
+    case o.RETURN:
+      if (t.preventDefault(), e.props.handleReturn && c(e.props.handleReturn(t, a))) return;
       break;
-    case a.ESC:
+    case o.ESC:
       if (t.preventDefault(), s("onEscape")) return;
       break;
-    case a.TAB:
+    case o.TAB:
       if (s("onTab")) return;
       break;
-    case a.UP:
+    case o.UP:
       if (s("onUpArrow")) return;
       break;
-    case a.RIGHT:
+    case o.RIGHT:
       if (s("onRightArrow")) return;
       break;
-    case a.DOWN:
+    case o.DOWN:
       if (s("onDownArrow")) return;
       break;
-    case a.LEFT:
+    case o.LEFT:
       if (s("onLeftArrow")) return;
       break;
-    case a.SPACE:
+    case o.SPACE:
       O && y(t) && t.preventDefault()
   }
   var l = e.props.keyBindingFn(t);
   if (null == l || "" === l) {
-    if (n === a.SPACE && O && y(t)) {
-      var u = r.replaceText(o.getCurrentContent(), o.getSelection(), "\xa0");
-      e.update(i.push(o, u, "insert-characters"))
+    if (n === o.SPACE && O && y(t)) {
+      var u = r.replaceText(a.getCurrentContent(), a.getSelection(), "\xa0");
+      e.update(i.push(a, u, "insert-characters"))
     }
     return
   }
-  if ("undo" === l) return void b(t, o, e.update);
-  if (t.preventDefault(), !(e.props.handleKeyCommand && c(e.props.handleKeyCommand(l, o, t.timeStamp)))) {
-    var d = v(l, o, t);
-    d !== o && e.update(d)
+  if ("undo" === l) return void b(t, a, e.update);
+  if (t.preventDefault(), !(e.props.handleKeyCommand && c(e.props.handleKeyCommand(l, a, t.timeStamp)))) {
+    var d = v(l, a, t);
+    d !== a && e.update(d)
   }
 }

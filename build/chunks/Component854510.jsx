@@ -1,7 +1,7 @@
 /** Chunk was on 1906 **/
 /** chunk id: 854510, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => a
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,25 +10,25 @@ var Chunk793030 = require("./793030.js"),
   Chunk320596 = require("./320596.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function c(t) {
+function a(t) {
   let {
     channel: e,
     onAccept: n,
-    transitionState: c,
-    onClose: a
-  } = t, u = (0, s.z)(e.id), d = (0, s.bA)(e.id);
+    transitionState: a,
+    onClose: c
+  } = t, d = (0, s.z)(e.id), u = (0, s.bA)(e.id);
   return (0, r.jsx)(i.Modal, {
-    onClose: a,
-    transitionState: c,
+    onClose: c,
+    transitionState: a,
     actions: [{
       text: o.intl.string(o.t.CZGqeT),
       variant: "secondary",
-      onClick: a
+      onClick: c
     }, {
       text: o.intl.string(o.t.mbD50D),
       variant: "primary",
       onClick: () => {
-        n(e), a()
+        n(e), c()
       }
     }],
     title: function(t) {
@@ -44,8 +44,8 @@ function c(t) {
         number: e
       })
     }({
-      blockedUsersCount: u.length,
-      ignoredUsersCount: d.length
+      blockedUsersCount: d.length,
+      ignoredUsersCount: u.length
     }),
     subtitle: function(t) {
       let {
@@ -58,10 +58,10 @@ function c(t) {
         number: e
       })
     }({
-      blockedUsersCount: u.length,
-      ignoredUsersCount: d.length
+      blockedUsersCount: d.length,
+      ignoredUsersCount: u.length
     }),
-    children: [...u, ...d].map(t => {
+    children: [...d, ...u].map(t => {
       let {
         user: n,
         id: i,

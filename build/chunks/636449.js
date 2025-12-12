@@ -14,7 +14,7 @@ function s() {
   returnfalse
 }
 async function l(e, t) {
-  let n, s = i.Z.getWindowOpen(a.KJ3.ACTIVITY_POPOUT);
+  let n, s = i.Z.getWindowOpen(o.KJ3.ACTIVITY_POPOUT);
   e && !s && r.Z.wait(() => {
     r.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
@@ -25,5 +25,5 @@ async function l(e, t) {
   } catch (e) {
     n = false
   }
-  return !n && e && o.close(a.KJ3.ACTIVITY_POPOUT), n
+  return !n && e && a.close(o.KJ3.ACTIVITY_POPOUT), n
 }

@@ -17,12 +17,12 @@ function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function o(e, t) {
+function a(e, t) {
   if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function a(e, t) {
+function o(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -42,10 +42,10 @@ var Chunk553468 = require("./553468.js"),
 module.exports = function(e) {
   function t(e) {
     i(this, t);
-    var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+    var n = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return n._toValue = e.toValue, n._easing = true !== e.easing ? e.easing : d, n._duration = true !== e.duration ? e.duration : 500, n._delay = true !== e.delay ? e.delay : 0, n.__isInteraction = true === e.isInteraction || e.isInteraction, n
   }
-  return a(t, e), r(t, [{
+  return o(t, e), r(t, [{
     key: "start",
     value: function(e, t, n) {
       var r = this;

@@ -40,7 +40,7 @@ async function d(e) {
   let {
     skuId: t,
     loadId: n,
-    onRedeemStart: a,
+    onRedeemStart: o,
     onRedeemSucceed: d,
     onRedeemFail: f,
     shouldRefetchBalance: p = true,
@@ -51,21 +51,21 @@ async function d(e) {
       type: "VIRTUAL_CURRENCY_REDEEM_START",
       skuId: t
     })
-  }), null == a || a();
+  }), null == o || o();
   try {
     let e = {
         checkout_session_id: n,
         is_rental: _
       },
-      o = (await r.tn.post({
+      a = (await r.tn.post({
         url: l.ANM.VIRTUAL_CURRENCY_SKU_REDEEM(t),
         body: e,
         rejectWithError: false
       })).body;
-    if (null == o || !Array.isArray(o)) {
+    if (null == a || !Array.isArray(a)) {
       let e = "Could not read entitlements from Virtual Currency redemption response. Response: ",
-        t = Error(e, o);
-      throw c.error(e, o), s.Z.captureException(t, {
+        t = Error(e, a);
+      throw c.error(e, a), s.Z.captureException(t, {
         tags: {
           app_context: "virtual_currency"
         }
@@ -74,10 +74,10 @@ async function d(e) {
     return i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS",
       skuId: t,
-      entitlements: o
-    }), p && u(), null == d || d(o), o
+      entitlements: a
+    }), p && u(), null == d || d(a), a
   } catch (n) {
-    let e = n instanceof o.HF ? n : new o.HF(n);
+    let e = n instanceof a.HF ? n : new a.HF(n);
     i.Z.dispatch({
       type: "VIRTUAL_CURRENCY_REDEEM_FAIL",
       skuId: t,

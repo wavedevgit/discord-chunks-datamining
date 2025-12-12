@@ -139,9 +139,9 @@ function v(e) {
   });
   if (r) returntrue;
   let i = null != (t = f.Z.getFeedbackConfig(e)) ? t : O[e],
-    o = [I, S, C],
-    a = null != (n = i.eligibilityChecks) ? n : [];
-  return o.every(e => e(i)) && a.every(e => e(i))
+    a = [I, S, C],
+    o = null != (n = i.eligibilityChecks) ? n : [];
+  return a.every(e => e(i)) && o.every(e => e(i))
 }
 
 function S(e) {
@@ -161,13 +161,13 @@ function I(e) {
 }
 
 function T(e, t) {
-  var n, o, a;
+  var n, a, o;
   let s, l = null == (n = u.A2.getSetting()[t.feedbackType]) ? true : n.lastImpressionTime;
-  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (o = i.K.get(t.storageKey)) ? o : true) || Number.isNaN(s) || u.A2.updateSetting(e => E(h({}, e), {
+  return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (a = i.K.get(t.storageKey)) ? a : true) || Number.isNaN(s) || u.A2.updateSetting(e => E(h({}, e), {
     [t.feedbackType]: E(h({}, e[t.feedbackType]), {
       lastImpressionTime: s
     })
-  }))), (null != (a = (0, r.max)([l, s])) ? a : 0) + e.cooldown < Date.now()
+  }))), (null != (o = (0, r.max)([l, s])) ? o : 0) + e.cooldown < Date.now()
 }
 
 function C(e) {

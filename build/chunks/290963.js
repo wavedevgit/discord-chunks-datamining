@@ -3,20 +3,20 @@
 "use strict";
 module.exports = function(e, t, n, r) {
   var i = t.getStartKey(),
-    o = t.getEndKey(),
-    a = e.getBlockMap(),
-    s = a.toSeq().skipUntil(function(e, t) {
+    a = t.getEndKey(),
+    o = e.getBlockMap(),
+    s = o.toSeq().skipUntil(function(e, t) {
       return t === i
     }).takeUntil(function(e, t) {
-      return t === o
+      return t === a
     }).concat([
-      [o, a.get(o)]
+      [a, o.get(a)]
     ]).map(function(e) {
       var t = e.getDepth() + n;
       return t = Math.max(0, Math.min(t, r)), e.set("depth", t)
     });
-  return a = a.merge(s), e.merge({
-    blockMap: a,
+  return o = o.merge(s), e.merge({
+    blockMap: o,
     selectionBefore: t,
     selectionAfter: t
   })

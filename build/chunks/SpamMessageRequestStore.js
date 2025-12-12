@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk592125 = require("./592125.js"),
   Chunk750041 = require("./750041.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = new Set,
+let o = new Set,
   s = new Set,
   l = false;
 
@@ -25,11 +25,11 @@ function c(e) {
 
 function u(e) {
   let t = false;
-  return c(e) && !a.has(e.id) && (a.add(e.id), t = true), !c(e) && a.has(e.id) && (a.delete(e.id), t = true), !c(e) && s.has(e.id) && (s.delete(e.id), t = true), t
+  return c(e) && !o.has(e.id) && (o.add(e.id), t = true), !c(e) && o.has(e.id) && (o.delete(e.id), t = true), !c(e) && s.has(e.id) && (s.delete(e.id), t = true), t
 }
 
 function d() {
-  a.clear(), s.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
+  o.clear(), s.clear(), Object.values(Chunk592125.Z.getMutablePrivateChannels()).forEach(e => {
     u(e)
   }), l = true
 }
@@ -59,7 +59,7 @@ function m(e) {
   let {
     channel: t
   } = e, n = false;
-  return a.has(t.id) && (a.delete(t.id), n = true), n
+  return o.has(t.id) && (o.delete(t.id), n = true), n
 }
 class h extends Chunk750041.Z {
   initialize() {
@@ -67,22 +67,22 @@ class h extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot(h.LATEST_SNAPSHOT_VERSION);
-    null != module && (a = new Set(module))
+    null != module && (o = new Set(module))
   }
   takeSnapshot() {
     return {
       version: h.LATEST_SNAPSHOT_VERSION,
-      data: Array.from(a)
+      data: Array.from(o)
     }
   }
   getSpamChannelIds() {
-    return a
+    return o
   }
   getSpamChannelsCount() {
-    return a.size
+    return o.size
   }
   isSpam(e) {
-    return a.has(e)
+    return o.has(e)
   }
   isAcceptedOptimistic(e) {
     return s.has(e)
@@ -102,5 +102,5 @@ class h extends Chunk750041.Z {
     })
   }
 }
-o(h, "displayName", "SpamMessageRequestStore"), o(h, "LATEST_SNAPSHOT_VERSION", 1);
+a(h, "displayName", "SpamMessageRequestStore"), a(h, "LATEST_SNAPSHOT_VERSION", 1);
 let g = new h

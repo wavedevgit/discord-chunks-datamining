@@ -10,19 +10,19 @@ function i(e, t) {
   return Object.setPrototypeOf(e, t.prototype)
 }
 
-function o(e) {
+function a(e) {
   let {
     andFail: t = true
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (t) throw Error()
 }
 
-function a(e) {
+function o(e) {
   return e.length > 0
 }
 require.d(exports, {
-  UT: () => o,
-  dZ: () => a,
+  UT: () => a,
+  dZ: () => o,
   gh: () => i,
   iG: () => r
 }), require("./415506.js")

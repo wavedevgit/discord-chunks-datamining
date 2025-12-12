@@ -49,8 +49,8 @@ function R(e) {
 function w(e) {
   for (let r of E.Z.quests.values()) {
     var t, n;
-    let o = (0, v.Mo)(r);
-    if (null != r && (0, S.Rt)(r) && r.config.features.includes(i.S.ACTIVITY_QUEST_AUTO_ENROLLMENT) && !(0, O.zi)(r) && o === e && o !== I.Ts && (null == (t = r.userStatus) ? true : t.completedAt) == null && (null == (n = r.userStatus) ? true : n.enrolledAt) == null) return void(0, h.AH)(r.id, {
+    let a = (0, v.Mo)(r);
+    if (null != r && (0, S.Rt)(r) && r.config.features.includes(i.S.ACTIVITY_QUEST_AUTO_ENROLLMENT) && !(0, O.zi)(r) && a === e && a !== I.Ts && (null == (t = r.userStatus) ? true : t.completedAt) == null && (null == (n = r.userStatus) ? true : n.enrolledAt) == null) return void(0, h.AH)(r.id, {
       questContent: b.jn.RUNNING_ACTIVITY,
       questContentCTA: g.jZ.ACCEPT_QUEST,
       sourceQuestContent: b.jn.RUNNING_ACTIVITY
@@ -71,7 +71,7 @@ class L extends Chunk147913.Z {
       let e = this.heartbeats[r],
         t = this.getActivelyProgressingQuests(r);
       for (let n of new Set(e.keys())) t.has(n) || this.terminateHeartbeat(n, r);
-      for (let [i, o] of t.entries()) !e.has(i) && (null == n || n(E.Z.quests.get(i))) && this.initiateHeartbeat(i, r, o.applicationId)
+      for (let [i, a] of t.entries()) !e.has(i) && (null == n || n(E.Z.quests.get(i))) && this.initiateHeartbeat(i, r, a.applicationId)
     }
   }
   getActivelyProgressingQuests(e) {
@@ -113,7 +113,7 @@ class L extends Chunk147913.Z {
       for (let i of Chunk754700.values()) {
         let r = (0, Chunk254579.vj)(Chunk670081);
         if (!R(Chunk670081) || null == Chunk754700) continue;
-        let o = Chunk754700.find(e => e === t);
+        let a = Chunk754700.find(e => e === t);
         null != Chunk147913 ? module.set(Chunk670081.id, {
           applicationId: Chunk147913
         }) : D(Chunk754700, require) && module.set(Chunk670081.id, {
@@ -169,16 +169,16 @@ class L extends Chunk147913.Z {
       let {
         progressSeconds: n,
         targetSeconds: i
-      } = (0, v.il)(t, r.T.DESKTOP), o = Math.max(0, (i - n) * _.Z.Millis.SECOND);
-      return o <= C ? o + N : C
+      } = (0, v.il)(t, r.T.DESKTOP), a = Math.max(0, (i - n) * _.Z.Millis.SECOND);
+      return a <= C ? a + N : C
     }), T(this, "initiateHeartbeat", (e, t, n) => {
       let i = this.heartbeats[t];
       if (i.has(e)) return void P.log("~ initiateHeartbeat -> Heartbeat already initiated for questId: ".concat(e));
-      let o = () => {
-        let a = this.getActivelyProgressingQuests(t);
-        if (a.has(e)) {
+      let a = () => {
+        let o = this.getActivelyProgressingQuests(t);
+        if (o.has(e)) {
           var s;
-          let c = a.get(e),
+          let c = o.get(e),
             u = null != (s = null == c ? true : c.applicationId) ? s : n;
           if (t === r.X.STREAM_ON_DESKTOP) {
             let n = d.Z.getCurrentUserActiveStream();
@@ -197,11 +197,11 @@ class L extends Chunk147913.Z {
             applicationId: u
           });
           let f = this.calculateHeartbeatDurationMs(e),
-            p = window.setTimeout(o, f);
+            p = window.setTimeout(a, f);
           i.set(e, p)
         } else P.log("~ initiateHeartbeat -> Quest ".concat(e, " is no longer actively progressing, terminating heartbeat")), this.terminateHeartbeat(e, t)
       };
-      P.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), o()
+      P.log("~ initiateHeartbeat -> Initiating heartbeat for Quest ".concat(e)), a()
     }), T(this, "terminateHeartbeat", (e, t) => {
       let n = this.heartbeats[t],
         r = E.Z.quests,

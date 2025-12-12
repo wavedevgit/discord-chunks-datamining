@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk561308 = require("./561308.js"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
-  Chunk451419 = require("./451419.js");
+  Chunk925002 = require("./925002.js");
 let p = [Chunk297781.An],
   _ = [Chunk317261._.WEEK],
   m = e => {
@@ -24,11 +24,11 @@ let p = [Chunk297781.An],
       channel: n,
       selected: i
     } = e, {
-      largeImage: o
+      largeImage: a
     } = (0, s.rv)({
       entry: t
     }), m = (0, c.Nq)(t);
-    return null != m && (0, a.Hi)(m, _) ? (0, r.jsxs)(d.Zb, {
+    return null != m && (0, o.Hi)(m, _) ? (0, r.jsxs)(d.Zb, {
       selected: i,
       children: [(0, r.jsxs)(d.e$, {
         children: [(0, r.jsx)(d.F9, {
@@ -44,7 +44,7 @@ let p = [Chunk297781.An],
           }, n))
         })]
       }), (0, r.jsx)(l.f, {
-        src: null == o ? true : o.src,
+        src: null == a ? true : a.src,
         size: 48,
         className: f.thumbnail
       })]

@@ -20,8 +20,8 @@ function f(e) {
     channelId: n
   } = e, r = (0, u.U)({
     location: "useDesktopSearchContext"
-  }), f = a.rR.useSetting(), p = r && f;
-  return (0, o.e7)([l.Z, s.Z, c.Z], () => {
+  }), f = o.rR.useSetting(), p = r && f;
+  return (0, a.e7)([l.Z, s.Z, c.Z], () => {
     let e = l.Z.getGuild(t),
       r = s.Z.getChannel(n);
     return c.Z.getGuildId() === d.I_8 ? {

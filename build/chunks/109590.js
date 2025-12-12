@@ -85,7 +85,7 @@ function O(e) {
   let {
     loaded: t,
     firstMessage: n
-  } = (0, o.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, o.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
+  } = (0, a.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, a.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
   return null != r && y(t, n) && I(r, e.id), {
     loaded: t,
     firstMessage: n
@@ -132,7 +132,7 @@ async function C(e) {
       body: {
         threads: i
       }
-    } = await a.tn.post({
+    } = await o.tn.post({
       url: f.ANM.FORUM_POSTS(e),
       body: {
         thread_ids: t

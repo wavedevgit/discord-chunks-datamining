@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 832321, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,19 +19,19 @@ function g(e) {
     guild: t,
     discoverableGuild: n
   } = e, g = null == t ? true : t.id, {
-    memberCount: m,
-    onlineCount: p
-  } = (0, s.cj)([u.Z], () => {
+    memberCount: f,
+    onlineCount: m
+  } = (0, a.cj)([d.Z], () => {
     var e, t;
     return {
-      memberCount: null != (e = u.Z.getMemberCount(g)) ? e : 1234,
-      onlineCount: null != (t = u.Z.getOnlineCount(g)) ? t : 1234
+      memberCount: null != (e = d.Z.getMemberCount(g)) ? e : 1234,
+      onlineCount: null != (t = d.Z.getOnlineCount(g)) ? t : 1234
     }
-  }, [g]), f = i.useRef((0, l.Z)()), h = i.useMemo(() => {
+  }, [g]), b = i.useRef((0, l.Z)()), p = i.useMemo(() => {
     var e, r;
     if (null != n) return o.JO.createFromDiscoverableGuild(n);
     if (null == t) return null;
-    let i = a.ZP.getGuildEmoji(t.id);
+    let i = s.ZP.getGuildEmoji(t.id);
     return o.JO.createFromDiscoverableGuild((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -53,8 +53,8 @@ function g(e) {
       premiumSubscriptionCount: null == t ? true : t.premiumSubscriberCount,
       emojis: i,
       emojiCount: i.length,
-      presenceCount: p,
-      memberCount: m
+      presenceCount: m,
+      memberCount: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -65,23 +65,23 @@ function g(e) {
     })(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     }), e))
-  }, [n, t, m, p]), x = i.useMemo(() => {
+  }, [n, t, f, m]), h = i.useMemo(() => {
     var e;
-    let t = null == h || null == (e = h.emojis) ? true : e[0];
+    let t = null == p || null == (e = p.emojis) ? true : e[0];
     return null != t ? {
       name: t.require_colons ? ":".concat(t.name, ":") : t.name,
       emojiId: t.id,
       animated: t.animated,
       jumboable: true
     } : {}
-  }, [null == h ? true : h.emojis]);
-  return null != h && h.isDiscoverable() ? (0, r.jsx)(c.UA, {
+  }, [null == p ? true : p.emojis]);
+  return null != p && p.isDiscoverable() ? (0, r.jsx)(c.UA, {
     sourceType: o.w6.GUILD,
     expressionSourceApplication: null,
-    expressionSourceGuild: h,
-    node: x,
-    closePopout: d.dG,
-    nonce: f.current,
+    expressionSourceGuild: p,
+    node: h,
+    closePopout: u.dG,
+    nonce: b.current,
     demoMode: true
   }) : null
 }

@@ -4,7 +4,7 @@
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,6 +36,6 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
     return null == l.lastUsedTimeMs || null == l.lastUsedCommandId ? null : (module > l.lastUsedTimeMs + s && (l.lastUsedCommandId = null, l.lastUsedTimeMs = null), l.lastUsedCommandId)
   }
 }
-a(u, "displayName", "AppLauncherLastUsedCommandStore"), a(u, "persistKey", "AppLauncherLastUsedCommandStore"), new u(Chunk570140.Z, {
+o(u, "displayName", "AppLauncherLastUsedCommandStore"), o(u, "persistKey", "AppLauncherLastUsedCommandStore"), new u(Chunk570140.Z, {
   APPLICATION_COMMAND_USED: c
 })

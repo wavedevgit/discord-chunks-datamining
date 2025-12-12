@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk994102 = require("./994102.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk114004 = require("./114004.js");
+  Chunk693155 = require("./693155.js");
 
 function b(e) {
   var t;
@@ -42,10 +42,10 @@ function b(e) {
       className: E.cloudPlaySection,
       children: [(0, r.jsxs)("div", {
         className: E.cloudPlaySectionTextContainer,
-        children: [R === i.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(a.IGR, {
+        children: [R === i.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
           text: g.intl.string(g.t.y2b7CA),
-          color: o.Z.colors.BACKGROUND_BRAND.css
-        }), (0, r.jsx)(a.Text, {
+          color: a.Z.colors.BACKGROUND_BRAND.css
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/medium",
           children: g.intl.string(g.t.IQjdmV)
         })]

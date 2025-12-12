@@ -11,10 +11,10 @@ function i(e) {
   let {
     applicationId: n,
     activityConfigs: i,
-    applications: o
-  } = e, a = null != (t = null == o ? true : o.find(e => e.id === n)) ? t : r.Z.getApplication(n), s = i.find(e => e.application_id === n);
-  return null == s || null == a ? null : {
+    applications: a
+  } = e, o = null != (t = null == a ? true : a.find(e => e.id === n)) ? t : r.Z.getApplication(n), s = i.find(e => e.application_id === n);
+  return null == s || null == o ? null : {
     activity: s,
-    application: a
+    application: o
   }
 }

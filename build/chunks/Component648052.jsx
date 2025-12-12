@@ -28,14 +28,14 @@ function d(e) {
     onClose: f,
     shouldOpenBadgeTooltip: p,
     shouldGlowTenureBadge: _
-  } = e, m = (0, a.Z)(t, c), h = i.useMemo(() => {
+  } = e, m = (0, o.Z)(t, c), h = i.useMemo(() => {
     if (null == d) return (0, s.w)(m);
     let e = new Set(m.map(e => e.id)),
       t = [...m, ...d.filter(t => !e.has(t.id))];
     return (0, s.w)(t)
   }, [m, d]);
   return 0 === h.length ? null : (0, r.jsx)(r.Fragment, {
-    children: (0, o.chunk)(h, u[n]).map(e => (0, r.jsx)(l.Z, {
+    children: (0, a.chunk)(h, u[n]).map(e => (0, r.jsx)(l.Z, {
       badges: e,
       displayProfile: t,
       onClose: f,

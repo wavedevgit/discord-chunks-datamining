@@ -2,7 +2,7 @@
 /** chunk id: 188742, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 let r = new(require("./113638.js")).Z(i);
 
@@ -12,7 +12,7 @@ function i(e) {
     return true !== t ? t().then(e => e.default) : Promise.resolve({})
   }
 }
-let o = {
+let a = {
   setEmojiLocale: function(e) {
     r.setParams(e)
   },

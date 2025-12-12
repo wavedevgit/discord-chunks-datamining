@@ -1,7 +1,7 @@
-/** Chunk was on 72891 **/
+/** Chunk was on 76543 **/
 /** chunk id: 321867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,41 +18,41 @@ var Chunk54381 = require("./54381.js"),
   Chunk486324 = require("./486324.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk637285 = require("./637285.js");
+  Chunk216246 = require("./216246.js");
 
-function h(e) {
+function x(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, h = (0, o.e7)([u.default], () => u.default.getCurrentUser()), A = g.ZP.canUseAnimatedAvatar(h), P = g.ZP.canUsePremiumProfileCustomization(h), b = n === p.pC.BANNER && P || n === p.pC.AVATAR && A, {
-    sourceAnalyticsLocations: v
-  } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
-  if (a.useEffect(() => {
-      b || f.default.track(_.rMx.PREMIUM_UPSELL_VIEWED, {
+  } = e, x = (0, r.e7)([b.default], () => b.default.getCurrentUser()), A = f.ZP.canUseAnimatedAvatar(x), y = f.ZP.canUsePremiumProfileCustomization(x), C = n === p.pC.BANNER && y || n === p.pC.AVATAR && A, {
+    sourceAnalyticsLocations: h
+  } = (0, s.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
+  if (i.useEffect(() => {
+      C || d.default.track(m.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
-        location_stack: v
+        location_stack: h
       })
-    }, [b, t, v]), b) return null;
-  let E = (0, i.jsx)(s.Z, {
-    className: m.__invalid_getNitroLink,
-    size: r.zx.Sizes.SMALL,
-    look: r.zx.Looks.LINK,
-    color: r.zx.Colors.LINK,
-    subscriptionTier: x.Si.TIER_2,
+    }, [C, t, h]), C) return null;
+  let P = (0, o.jsx)(c.Z, {
+    className: _.__invalid_getNitroLink,
+    size: a.zx.Sizes.SMALL,
+    look: a.zx.Looks.LINK,
+    color: a.zx.Colors.LINK,
+    subscriptionTier: g.Si.TIER_2,
     textOptions: {
-      textOverride: N.intl.format(N.t["944tDv"], {})
+      textOverride: v.intl.format(v.t["944tDv"], {})
     },
     showIcon: false,
     premiumModalAnalyticsLocation: {
       section: t,
-      object: _.qAy.BUTTON_CTA
+      object: m.qAy.BUTTON_CTA
     },
     disableShine: true
   });
-  return (0, i.jsx)(d.Z, {
+  return (0, o.jsx)(u.Z, {
     reducedRightPadding: true,
-    className: m.nitroPreviewUpsell,
-    text: N.intl.format(N.t.Og803x, {}),
-    button: E
+    className: _.nitroPreviewUpsell,
+    text: v.intl.format(v.t.Og803x, {}),
+    button: P
   })
 }

@@ -33,7 +33,7 @@ function d(e) {
     } = e;
     t.forEach(e => {
       e.forEach(e => {
-        c[u(e)] = (0, a.e5)(e)
+        c[u(e)] = (0, o.e5)(e)
       })
     })
   })
@@ -46,7 +46,7 @@ function f(e) {
   if (null == t.id || null == t.channel_id) returnfalse;
   let n = u(t),
     r = c[n];
-  return null != r && (c[n] = (0, a.wi)(r, {
+  return null != r && (c[n] = (0, o.wi)(r, {
     attachments: t.attachments,
     embeds: t.embeds
   }), true)

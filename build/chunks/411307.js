@@ -10,16 +10,16 @@ class r {
     let n = [],
       r = t[0];
     for (let i = 1; i < t.length; i++) {
-      let o = t[i];
-      if (o.index >= r.index + r.text.length) {
-        n.push(r), r = o;
+      let a = t[i];
+      if (a.index >= r.index + r.text.length) {
+        n.push(r), r = a;
         continue
       }
-      let a = null,
+      let o = null,
         s = null;
-      o.text.length > r.text.length ? (a = o, s = r) : (a = r, s = o), e.debug(() => {
-        console.log(`${this.constructor.name} remove ${s} by ${a}`)
-      }), r = a
+      a.text.length > r.text.length ? (o = a, s = r) : (o = r, s = a), e.debug(() => {
+        console.log(`${this.constructor.name} remove ${s} by ${o}`)
+      }), r = o
     }
     return null != r && n.push(r), n
   }

@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk475637 = require("./475637.js"),
   Chunk925300 = require("./925300.js"),
-  o = /^(\d+)(th|st|nd|rd)?/i,
-  a = /\d+/i,
+  a = /^(\d+)(th|st|nd|rd)?/i,
+  o = /\d+/i,
   s = {
     narrow: /^(b|a)/i,
     abbreviated: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i,
@@ -61,8 +61,8 @@ var Chunk475637 = require("./475637.js"),
   };
 let g = {
   ordinalNumber: (0, Chunk925300.Z)({
-    matchPattern: o,
-    parsePattern: a,
+    matchPattern: a,
+    parsePattern: o,
     valueCallback: function(e) {
       return parseInt(e, 10)
     }

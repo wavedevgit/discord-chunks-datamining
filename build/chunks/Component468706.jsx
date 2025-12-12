@@ -41,11 +41,11 @@ function f(e, t) {
       messageId: t,
       channelId: e
     }), !l.Z.canSubmitFpReport(t)) {
-    o.Z.show({
+    a.Z.show({
       title: c.intl.string(c.t["iS/eFN"]),
       body: c.intl.string(c.t.YrjcgR),
       confirmText: c.intl.string(c.t.BddRzS)
-    }), a.Z.disableFalsePositiveButton(e, t);
+    }), o.Z.disableFalsePositiveButton(e, t);
     return
   }(0, i.ZDy)(async () => {
     let {

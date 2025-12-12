@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk235894 = require("./235894.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975405 = require("./975405.js");
+  Chunk377311 = require("./377311.js");
 let y = e => {
   var t;
   let {
@@ -48,23 +48,23 @@ let y = e => {
   }, [n]), C = i.useCallback(() => {
     (0, s.Z)(u.Z.getArticleURL(g.BhN.CONFETTI_POTION))
   }, []);
-  return O && null != I && (null == S ? true : S.type) === m.B.CONFETTI ? (0, r.jsx)(a.P3F, {
+  return O && null != I && (null == S ? true : S.type) === m.B.CONFETTI ? (0, r.jsx)(o.P3F, {
     onFocus: T,
     onClick: C,
     "aria-label": E.intl.string(E.t.Mp5k6E),
-    children: (0, r.jsx)(o.u, {
+    children: (0, r.jsx)(a.u, {
       text: E.intl.formatToPlainString(E.t["FE++aN"], {
         user: I
       }),
       children: (0, r.jsxs)("div", {
         ref: y,
         className: b.potionBadge,
-        children: [(0, r.jsx)(a.l22, {
+        children: [(0, r.jsx)(o.l22, {
           size: "custom",
           color: "currentColor",
           width: 12,
           height: 12
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/bold",
           color: "currentColor",
           children: E.intl.string(E.t["8Rrro+"])

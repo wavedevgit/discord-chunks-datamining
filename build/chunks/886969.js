@@ -6,9 +6,9 @@ require.d(exports, {
 });
 var Chunk774078 = require("./774078.js");
 let i = 6e4,
-  o = 12e5;
+  a = 12e5;
 
-function a(e) {
+function o(e) {
   return e.minutes > 0 || e.seconds > 0 ? 23 === e.hours ? {
     days: e.days + 1,
     hours: 0,
@@ -25,5 +25,5 @@ function a(e) {
 function s(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = e.clone();
-  return t && (n = n.subtract(o, "milliseconds")), a((0, r.Z)(n.toDate(), i))
+  return t && (n = n.subtract(a, "milliseconds")), o((0, r.Z)(n.toDate(), i))
 }

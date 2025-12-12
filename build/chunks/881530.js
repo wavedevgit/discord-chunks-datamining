@@ -46,7 +46,7 @@ function p(e) {
     onClose: h
   } = e, g = (0, s.Z)(f({
     location: t,
-    source: a.m1.UserProfile,
+    source: o.m1.UserProfile,
     trackEntryPointImpression: true
   }, (0, c.nK)({
     user: n,
@@ -56,7 +56,7 @@ function p(e) {
     applicationId: null == _ ? true : _.id,
     onClose: h
   }), b = (0, i.Z)(p);
-  return b && null != _ ? E : !b && (0, o.Z)(p) ? g : (0, r.Z)(p) && n.id !== d.id ? () => (0, l.s)({
+  return b && null != _ ? E : !b && (0, a.Z)(p) ? g : (0, r.Z)(p) && n.id !== d.id ? () => (0, l.s)({
     activity: p,
     user: n,
     index: 0

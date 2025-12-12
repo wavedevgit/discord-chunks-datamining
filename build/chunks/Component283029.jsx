@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk609894 = require("./609894.js");
+  a = require.n(Chunk120356),
+  Chunk977826 = require("./977826.js");
 let s = function(e) {
   let {
     className: t,
@@ -17,12 +17,12 @@ let s = function(e) {
     useReducedMotion: l
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(a.imageWrapper, t, {
-      [a.cooldown]: s
+    className: a()(o.imageWrapper, t, {
+      [o.cooldown]: s
     }),
     children: (0, r.jsx)("img", {
-      className: o()(a.image, i, {
-        [a.cooldownImage]: s
+      className: a()(o.image, i, {
+        [o.cooldownImage]: s
       }),
       src: s ? n(971149) : l ? n(908635) : n(83957),
       alt: ""

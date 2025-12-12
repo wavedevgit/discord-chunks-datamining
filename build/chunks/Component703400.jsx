@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk22928 = require("./22928.jsx"),
-  Chunk73930 = require("./73930.js");
+  Chunk872699 = require("./872699.js");
 let s = 20,
   l = e => {
     let {
@@ -16,8 +16,8 @@ let s = 20,
       iconSize: n = s
     } = e;
     return null == t ? null : (0, r.jsxs)("div", {
-      className: a.container,
-      children: [(0, r.jsx)(o.h, {
+      className: o.container,
+      children: [(0, r.jsx)(a.h, {
         application: t,
         iconSize: n
       }), (0, r.jsx)(i.Text, {

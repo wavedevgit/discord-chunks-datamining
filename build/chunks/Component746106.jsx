@@ -29,10 +29,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk998502 = require("./998502.js"),
   Chunk264783 = require("./264783.js"),
   Chunk892071 = require("./892071.jsx"),
-  Chunk347583 = require("./347583.js"),
+  Chunk271860 = require("./271860.js"),
   Chunk388032 = require("./388032.jsx");
 
-function R(e, t, n, r, a) {
+function R(e, t, n, r, o) {
   let s = i.useContext(p.Z),
     l = i.useCallback(() => ({
       i18n: {
@@ -84,7 +84,7 @@ function R(e, t, n, r, a) {
           stepCount: t
         })
       },
-      locale: a,
+      locale: o,
       theme: e,
       saturation: t,
       defaultLayerContext: b.nz,
@@ -94,12 +94,12 @@ function R(e, t, n, r, a) {
       trackImpression: s,
       isWindowFocused: () => r,
       dynamicGraphicComponents: c._
-    }), [e, t, n, s, r, a]),
+    }), [e, t, n, s, r, o]),
     [u, d] = i.useState(l);
   return i.useLayoutEffect(() => {
     function e() {
       d(l)
-    }(0, o.waitForAllDefaultIntlMessagesLoaded)().then(e), P.intl.onLocaleChange(e)
+    }(0, a.waitForAllDefaultIntlMessagesLoaded)().then(e), P.intl.onLocaleChange(e)
   }, [l]), u
 }
 
@@ -107,8 +107,8 @@ function w(e) {
   let {
     windowKey: t,
     themeOverride: n,
-    children: o
-  } = e, a = null != t, [c] = i.useState(() => T.ZP.getEnableHardwareAcceleration()), {
+    children: a
+  } = e, o = null != t, [c] = i.useState(() => T.ZP.getEnableHardwareAcceleration()), {
     locale: p,
     theme: b,
     focused: N,
@@ -129,8 +129,8 @@ function w(e) {
     return {
       locale: v.default.locale,
       theme: null != n ? n : S.Z.theme,
-      focused: a ? y.Z.getWindowFocused(t) : I.Z.isFocused(),
-      currentWindow: a && null != (e = y.Z.getWindow(t)) ? e : window,
+      focused: o ? y.Z.getWindowFocused(t) : I.Z.isFocused(),
+      currentWindow: o && null != (e = y.Z.getWindow(t)) ? e : window,
       fontScale: d.Z.fontScale,
       fontScaleClass: d.Z.fontScaleClass,
       keyboardModeEnabled: d.Z.keyboardModeEnabled,
@@ -156,7 +156,7 @@ function w(e) {
     q = (0, g.U)("RootThemeContextProvider"),
     Q = (0, E.A)("RootThemeContextProvider"),
     X = (0, _.On)({
-      isPopoutWindow: a
+      isPopoutWindow: o
     }),
     J = R(b, L, i.useMemo(() => {
       let e = [];
@@ -186,14 +186,14 @@ function w(e) {
         alwaysShowLinkDecorations: G,
         hardwareAccelerationEnabled: c,
         highContrastMode: B && F,
-        isPopoutWindow: a,
+        isPopoutWindow: o,
         rootClassName: s()(X, {
           "confetti-mode": Z,
           "refresh-fast-follow-avatars": W,
           "refresh-fast-follow-guild-bg": K,
           "refresh-fast-follow-distinct-borders": z
         }),
-        children: o
+        children: a
       })
     })
   })

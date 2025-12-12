@@ -35,9 +35,9 @@ class g extends Chunk912095.Z {
     super.destroy(module), this.pc.close()
   }
   setCodecs(e, t, n) {
-    var r, i, o;
-    let a;
-    (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (a = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null != (r = null == a ? true : a.payloadType) ? r : 0, a = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null != (i = null == a ? true : a.payloadType) ? i : 0, this.fpc.rtxPayloadType = null != (o = null == a ? true : a.rtxPayloadType) ? o : 0, this.pc.negotiationNeeded())
+    var r, i, a;
+    let o;
+    (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (o = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null != (r = null == o ? true : o.payloadType) ? r : 0, o = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null != (i = null == o ? true : o.payloadType) ? i : 0, this.fpc.rtxPayloadType = null != (a = null == o ? true : o.rtxPayloadType) ? a : 0, this.pc.negotiationNeeded())
   }
   setStream(e) {
     this.fpc.direction = null != e ? d.Ns.SENDRECV : d.Ns.SENDONLY, this.pc.setStream(null != e ? e : null)
@@ -64,38 +64,38 @@ class g extends Chunk912095.Z {
   }
   setVideoEncoderParameters(e) {}
   constructor(e) {
-    super(e), m(this, "pc", true), m(this, "fpc", true), m(this, "codecs", []), m(this, "logger", true), this.logger = new o.Yd("Connection(".concat(e.context, ")"));
+    super(e), m(this, "pc", true), m(this, "fpc", true), m(this, "codecs", []), m(this, "logger", true), this.logger = new a.Yd("Connection(".concat(e.context, ")"));
     let t = new l.Z;
     t.on("answer", e => this.pc.setRemoteDescription(e).catch(e => this.logger.error("Failed to set remote description (answer): ".concat(e)))), t.on("offer", e => {
       this.pc.setRemoteDescription(e).then(() => this.pc.createAnswer()).then(e => this.fpc.setRemoteDescription(e)).catch(e => this.logger.error("Failed to set remote description (offer): ".concat(e)))
     }), t.direction = null != this.input.stream ? d.Ns.SENDRECV : d.Ns.SENDONLY, this.fpc = t;
     let n = new u.Z(this.voiceBitrate);
     n.on("addtrack", (e, t) => this.createOutput(h(e), t)), n.on("removetrack", (e, t) => this.destroyOutput(h(e), t)), n.once("connected", () => {
-      this.input.reset(), this.setConnectionState(p.$j.CONNECTED), this.on(a.Sh.Stats, this.handleStats), this.input.on(c.G.VoiceActivity, this.handleVoiceActivity)
+      this.input.reset(), this.setConnectionState(p.$j.CONNECTED), this.on(o.Sh.Stats, this.handleStats), this.input.on(c.G.VoiceActivity, this.handleVoiceActivity)
     }), n.on("connecting", () => this.setConnectionState(p.$j.DTLS_CONNECTING)), n.on("checking", () => this.setConnectionState(p.$j.ICE_CHECKING)), n.on("failed", () => this.setConnectionState(p.$j.NO_ROUTE)), n.on("disconnected", () => this.setConnectionState(p.$j.DISCONNECTED)), n.on("closed", () => this.setConnectionState(p.$j.DISCONNECTED)), n.on("offer", e => {
       let {
         sdp: n
       } = e, {
         outboundStreams: r,
         codecs: i,
-        audioSSRC: o,
+        audioSSRC: a,
         videoSSRC: s,
         rtxSSRC: l
       } = (0, d.Nl)(n, false);
       this.codecs = i;
       let c = (0, d.nX)(n);
-      t.outboundStreams = r, this.audioSSRC = o, t.extensions = c, this.videoStreamParameters[0].ssrc === s && this.videoStreamParameters[0].rtxSsrc === l && this.videoReady || (this.videoStreamParameters[0].ssrc = s, this.videoStreamParameters[0].rtxSsrc = l, this.emit(a.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, this.videoStreamParameters[0].ssrc, this.videoStreamParameters[0].rtxSsrc, this.videoStreamParameters), this.videoReady = true)
+      t.outboundStreams = r, this.audioSSRC = a, t.extensions = c, this.videoStreamParameters[0].ssrc === s && this.videoStreamParameters[0].rtxSsrc === l && this.videoReady || (this.videoStreamParameters[0].ssrc = s, this.videoStreamParameters[0].rtxSsrc = l, this.emit(o.Sh.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, this.videoStreamParameters[0].ssrc, this.videoStreamParameters[0].rtxSsrc, this.videoStreamParameters), this.videoReady = true)
     }), n.once("offer", e => {
       let {
         sdp: t
       } = e;
-      this.emit(a.Sh.Connected, "webrtc", (0, d.sc)(t, false))
+      this.emit(o.Sh.Connected, "webrtc", (0, d.sc)(t, false))
     }), null != this.input.stream ? n.setStream(this.input.stream) : n.negotiationNeeded(), this.pc = n
   }
 }
 
 function E(e) {
   let t = "".concat(null != i().name && "" !== i().name ? i().name : "unknown", " ").concat(null != i().version && "" !== i().version ? i().version : "unknown"),
-    n = new o.Yd("Connection(".concat(e.context, ")"));
+    n = new a.Yd("Connection(".concat(e.context, ")"));
   return _.WS ? (n.info("Using Unified Plan (".concat(t, ")")), new f.Z(e)) : (n.info("Using Plan B (".concat(t, ")")), new g(e))
 }

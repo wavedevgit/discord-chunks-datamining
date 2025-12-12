@@ -38,13 +38,13 @@ let A = [],
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
-  let l = b.Z.getGuild(n),
+  let l = E.Z.getGuild(n),
     a = e.replace(R, x.intl.string(x.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
       return null == i ? e : null != (r = m.ZP.getNick(n, i.id)) ? r : S.ZP.getName(i)
     }).replace(/<@&?(\d+)>/g, (e, t) => {
-      let n = null != l ? _.Z.getRole(l.id, t) : null;
+      let n = null != l ? b.Z.getRole(l.id, t) : null;
       return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLA2)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = h.Z.getChannel(t);
@@ -117,15 +117,15 @@ function V(e) {
     message: o,
     optimistic: c
   } = e;
-  if (c || E.Z.isSelfDeaf()) returnfalse;
+  if (c || _.Z.isSelfDeaf()) returnfalse;
   let u = h.Z.getChannel(s);
   if (null == u) returnfalse;
   let d = y.Z.getChannelId(),
-    _ = g.ZP.getCurrentSidebarChannelId(d),
-    b = s === d || s === _,
-    C = p.OW.getSetting() && o.tts && b,
+    b = g.ZP.getCurrentSidebarChannelId(d),
+    E = s === d || s === b,
+    C = p.OW.getSetting() && o.tts && E,
     T = O.Z.getTTSType(),
-    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && b);
+    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && E);
   if ((C || N) && !v.Z.isBlockedOrIgnoredForMessage(o)) {
     if (A.indexOf(o.id) >= 0) returnfalse;
     A.unshift(o.id) > 10 && A.pop();

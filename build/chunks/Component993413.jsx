@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk403182 = require("./403182.js"),
   Chunk587446 = require("./587446.jsx"),
   Chunk504983 = require("./504983.jsx"),
-  Chunk607878 = require("./607878.js");
+  Chunk500207 = require("./500207.js");
 
 function f(e) {
   return e.replace(/[0-9.,]+ ?kb/g, e => {
@@ -38,7 +38,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   let {
     title: n,
     titleIcon: i,
-    titleId: o,
+    titleId: a,
     description: l,
     children: f,
     className: _,
@@ -52,7 +52,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
     showPremiumIcon: v = false
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(d.customizationSection, _, {
+    className: o()(d.customizationSection, _, {
       [d.disabled]: h,
       [d.hideDivider]: g,
       [d.showBorder]: E,
@@ -67,7 +67,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
       hasBackground: y,
       children: [(0, r.jsxs)(s.vwX, {
         className: d.title,
-        id: o,
+        id: a,
         children: [n, v && (0, r.jsx)(c.Z, {}), i]
       }), null != l ? (0, r.jsx)(s.R94, {
         type: s.R94.Types.DESCRIPTION,

@@ -2,7 +2,7 @@
 /** chunk id: 627050, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => o,
+  N: () => a,
   d: () => i
 });
 var Chunk818083 = require("./818083.js");
@@ -21,7 +21,7 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "guild",
     id: "2025-06_game_mentions",
     label: "Game Mentions - Guild",

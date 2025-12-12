@@ -1,4 +1,4 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 125657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk485386 = require("./485386.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk144645 = require("./144645.js");
+  Chunk939248 = require("./939248.js");
 
 function v(e) {
   var t;
@@ -28,18 +28,18 @@ function v(e) {
     applicationIntegration: v
   } = e, {
     application: O
-  } = v, y = null != O.bot ? new b.Z(O.bot) : null, _ = (0, a.e7)([g.ZP], () => null != y ? g.ZP.getMember(n.id, y.id) : null, [y, n]), C = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), N = (0, a.Wu)([f.Z], () => {
+  } = v, y = null != O.bot ? new m.Z(O.bot) : null, C = (0, a.e7)([f.ZP], () => null != y ? f.ZP.getMember(n.id, y.id) : null, [y, n]), N = (0, a.e7)([g.Z], () => g.Z.getEveryoneRole(n)), S = (0, a.Wu)([g.Z], () => {
     var e;
-    return f.Z.getManyRoles(n.id, null != (e = null == _ ? true : _.roles) ? e : [])
-  }), S = null == y ? true : y.id;
+    return g.Z.getManyRoles(n.id, null != (e = null == C ? true : C.roles) ? e : [])
+  }), I = null == y ? true : y.id;
   r.useEffect(() => {
-    null != S && s.Z.requestMembersById(n.id, S)
-  }, [n.id, S]);
-  let I = r.useMemo(() => l.$e(C.permissions, ...N.map(e => e.permissions)), [N, C]);
+    null != I && s.Z.requestMembersById(n.id, I)
+  }, [n.id, I]);
+  let w = r.useMemo(() => l.$e(N.permissions, ...S.map(e => e.permissions)), [S, N]);
   if (null == y) return null;
-  let w = h.ZP.getApplicationIconURL({
+  let E = h.ZP.getApplicationIconURL({
     id: O.id,
-    guildMember: _,
+    guildMember: C,
     bot: O.bot,
     icon: O.icon,
     size: 32
@@ -47,13 +47,13 @@ function v(e) {
   return (0, i.jsx)(o.Zbd, {
     editable: true,
     className: j.card,
-    children: (0, i.jsxs)(p.Z, {
-      direction: p.Z.Direction.VERTICAL,
-      children: [(0, i.jsxs)(p.Z, {
-        align: p.Z.Align.CENTER,
+    children: (0, i.jsxs)(b.Z, {
+      direction: b.Z.Direction.VERTICAL,
+      children: [(0, i.jsxs)(b.Z, {
+        align: b.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: w,
+          src: E,
           className: j.iconWrapper
         }), (0, i.jsx)(o.Text, {
           color: "text-strong",
@@ -68,7 +68,7 @@ function v(e) {
       }), function(e, t, n, r) {
         let a = [],
           s = [];
-        for (let e of m.VY) l.e$(r, e) ? a.push(e) : s.push(e);
+        for (let e of p.VY) l.e$(r, e) ? a.push(e) : s.push(e);
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(o.izJ, {
             className: j.divider
@@ -91,7 +91,7 @@ function v(e) {
             disabledPermissionsHeader: x.intl.string(x.t["/rEZ2i"])
           }) : null]
         })
-      }(y, n, null != (t = null == _ ? true : _.roles) ? t : [], I)]
+      }(y, n, null != (t = null == C ? true : C.roles) ? t : [], w)]
     })
   })
 }

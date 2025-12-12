@@ -99,7 +99,7 @@ function K(e, t) {
       if (D.trackGame(e), R.has(e)) return;
       R.add(e), (0, _.PY)(e, "maybeTrackGame", {
         newOverlayMethod: null != t ? f.gl[t] : null
-      }), a.Z.updateOverlayState(e, f.mM.WAITING_FOR_POPOUT_OPEN, "OverlayStore.maybeTrackGame")
+      }), o.Z.updateOverlayState(e, f.mM.WAITING_FOR_POPOUT_OPEN, "OverlayStore.maybeTrackGame")
     } catch (t) {
       P.error("Error tracking game:", t), (0, _.PV)(e, t, {
         crashType: "renderer"
@@ -148,7 +148,7 @@ async function Q() {
 
 function X(e) {
   let t = l.ZP.getGameOrTransformedSubgameForPID(e);
-  a.Z.setAssociatedGame(null != U ? U : d.UNSET_PID, e, t)
+  o.Z.setAssociatedGame(null != U ? U : d.UNSET_PID, e, t)
 }
 
 function J() {
@@ -174,7 +174,7 @@ function $(e, t) {
       }
     }
   }
-  a.Z.setFocusedPID(0 === e ? null : e, t, n)
+  o.Z.setFocusedPID(0 === e ? null : e, t, n)
 }
 
 function ee() {
@@ -183,8 +183,8 @@ function ee() {
 
 function et(e) {
   if (Y.allDone) {
-    if (!w.has(e)) return void a.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "maybeTrackSuccessfullyShown");
-    a.Z.successfullyShown(e)
+    if (!w.has(e)) return void o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "maybeTrackSuccessfullyShown");
+    o.Z.successfullyShown(e)
   }
 }
 
@@ -203,17 +203,17 @@ function er(e) {
       windowHandleSentToNative: t
     }), t) {
     let e = null != j ? j : d.UNSET_PID;
-    Y.reactInitializationStarted ? a.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "handleOverlayV3WindowHandleInitialized") : a.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION, "handleOverlayV3WindowHandleInitialized"), (0, _.bs)(e, "window_handle_initialized")
+    Y.reactInitializationStarted ? o.Z.updateOverlayState(e, f.mM.WAITING_FOR_SUCCESSFUL_SHOW, "handleOverlayV3WindowHandleInitialized") : o.Z.updateOverlayState(e, f.mM.WAITING_FOR_REACT_INITIALIZATION, "handleOverlayV3WindowHandleInitialized"), (0, _.bs)(e, "window_handle_initialized")
   }
 }
 async function ei() {
   Chunk509140.Z.isModuleLoaded || Chunk509140.Z.isModuleLoading || await (0, Chunk932404.Nk)(), D = await (0, Chunk886189.H)()
 }
-async function eo(e) {
+async function ea(e) {
   e.overlayMethod === f.gl.OutOfProcess || e.overlayMethod === f.gl.OutOfProcessLimitedInteraction ? (await ei(), K(e.pid, e.overlayMethod)) : z(e.pid), eI.emitChange()
 }
 
-function ea() {
+function eo() {
   W(), G = null
 }
 
@@ -231,7 +231,7 @@ function el(e) {
     createWindowTriggeringPID: t,
     nativeWindowHandle: n
   } = e;
-  a.Z.updateOverlayState(t, f.mM.WAITING_FOR_MODULE_POPOUT_CAPTURE, "handleOverlayCreateWindowHandleSuccess")
+  o.Z.updateOverlayState(t, f.mM.WAITING_FOR_MODULE_POPOUT_CAPTURE, "handleOverlayCreateWindowHandleSuccess")
 }
 
 function ec(e) {
@@ -240,7 +240,7 @@ function ec(e) {
     error: n,
     nativeWindowHandle: r
   } = e;
-  a.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), Y = N(C({}, Y), {
+  o.Z.updateOverlayState(t, f.mM.OVERLAY_CRASHED_DISABLED, "handleOverlayWindowCreationFailure"), Y = N(C({}, Y), {
     errorMessage: "Error in _createOutOfProcessOverlayHostWindow: " + n
   }), (0, _.bs)(t, "renderer_window_mounting_failed", {
     error: n,
@@ -321,7 +321,7 @@ function eE(e) {
 }
 
 function eb(e) {
-  P.verbose("Updating OverlayMethod", e), eo(e)
+  P.verbose("Updating OverlayMethod", e), ea(e)
 }
 
 function ey(e) {
@@ -412,7 +412,7 @@ let eI = new eS(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {
     OVERLAY_OOP_UI_SHOW_INACTIVE_SUCCESS: em,
     OVERLAY_OOP_POPOUT_INITIALIZATION_STAGE_CHANGED: eg,
     OVERLAY_UI_FOCUSED_PID: eE,
-    OVERLAY_V3_PRE_CREATE_POPOUT: ea,
+    OVERLAY_V3_PRE_CREATE_POPOUT: eo,
     OVERLAY_V3_POST_CREATE_POPOUT: es,
     OVERLAY_V3_CREATE_WINDOW_HANDLE_SUCCESS: el,
     OVERLAY_V3_WINDOW_CREATION_FAILURE: ec,

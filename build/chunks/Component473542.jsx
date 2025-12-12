@@ -33,9 +33,9 @@ let d = e => {
       children: (0, r.jsx)(i.$jN, {
         type: i.RAz.SPINNING_CIRCLE
       })
-    }) : (0, r.jsx)(o.Gt, {
+    }) : (0, r.jsx)(a.Gt, {
       value: s,
-      children: (0, r.jsx)(a.ZP, {
+      children: (0, r.jsx)(o.ZP, {
         onClose: d,
         onComplete: f,
         transitionState: i.Dvm.ENTERED,

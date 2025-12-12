@@ -3,10 +3,10 @@
 "use strict";
 var Chunk733359 = require("./733359.js"),
   Chunk257469 = require("./257469.js"),
-  o = function(e, t) {
+  a = function(e, t) {
     return e === t
   },
-  a = function(e) {
+  o = function(e) {
     return !!e
   },
   s = [];
@@ -15,11 +15,11 @@ function l(e, t, n) {
   var s = [];
   return i(t.map(function(e) {
     return e.has(n)
-  }).toList(), o, a, function(t, i) {
-    var o = e.getText();
+  }).toList(), a, o, function(t, i) {
+    var a = e.getText();
     s.push({
-      offset: r.strlen(o.slice(0, t)),
-      length: r.strlen(o.slice(t, i)),
+      offset: r.strlen(a.slice(0, t)),
+      length: r.strlen(a.slice(t, i)),
       style: n
     })
   }), s

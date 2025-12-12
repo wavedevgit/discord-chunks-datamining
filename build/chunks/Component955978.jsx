@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 955978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,65 +17,65 @@ var Chunk54381 = require("./54381.js"),
   Chunk620954 = require("./620954.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk439419 = require("./439419.js");
+  Chunk562811 = require("./562811.js");
 
-function O(e, t, n) {
-  var O;
-  if (p.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
-  let v = d.default.getUser(e);
-  if (null == v) return null;
-  let E = u.Z.getCurrentlySelectedChannelId(),
-    b = c.Z.getChannel(E),
-    _ = o.Z.getApplication(t),
-    S = a.ZP.getRunningGames().find(e => e.id === t),
-    x = null != (O = null == S ? true : S.name) ? O : null == _ ? true : _.name,
-    I = (0, h.oY)(null == b ? true : b.guild_id, null == b ? true : b.id, v),
-    C = (0, i.jsxs)("div", {
-      className: y.nowPlayingNotification,
+function y(e, t, n) {
+  var y;
+  if (h.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
+  let O = d.default.getUser(e);
+  if (null == O) return null;
+  let v = u.Z.getCurrentlySelectedChannelId(),
+    E = c.Z.getChannel(v),
+    S = a.Z.getApplication(t),
+    x = o.ZP.getRunningGames().find(e => e.id === t),
+    I = null != (y = null == x ? true : x.name) ? y : null == S ? true : S.name,
+    C = (0, f.oY)(null == E ? true : E.guild_id, null == E ? true : E.id, O),
+    j = (0, i.jsxs)("div", {
+      className: b.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
-        className: y.nowPlayingNotificationIcon,
+        className: b.nowPlayingNotificationIcon,
         children: (0, i.jsx)(l.Z, {
-          user: v,
+          user: O,
           "aria-hidden": true,
           size: r.EFr.SIZE_24
         })
       }), (0, i.jsx)("div", {
-        className: y.body,
+        className: b.body,
         children: (0, i.jsx)(r.Text, {
           variant: "text-sm/medium",
           color: "interactive-text-default",
-          className: y.bodyText,
+          className: b.bodyText,
           children: g.intl.format(g.t["q7/rgv"], {
-            username: null != I ? I : v.username,
-            gameName: x,
-            gameIcon: () => null != _ || null != S ? (0, i.jsx)(s.Z, {
-              game: _,
-              pid: null == S ? true : S.pid,
+            username: null != C ? C : O.username,
+            gameName: I,
+            gameIcon: () => null != S || null != x ? (0, i.jsx)(s.Z, {
+              game: S,
+              pid: null == x ? true : x.pid,
               size: s.A.XSMALL,
-              className: y.gameIcon
+              className: b.gameIcon
             }) : null
           })
         })
       })]
     }),
     {
-      trackView: j,
+      trackView: _,
       trackClick: Z
-    } = (0, f.Rg)(m.n0.NowPlayingNotification, {
+    } = (0, p.Rg)(m.n0.NowPlayingNotification, {
       notif_type: m.n0.NowPlayingNotification,
-      notif_user_id: v.id,
+      notif_user_id: O.id,
       activity_type: n.type,
-      activity_name: null != x ? x : n.name
+      activity_name: null != I ? I : n.name
     });
   return {
-    body: C,
-    className: y.nowPlayingNotificationContainer,
-    wrapperClassName: y.nowPlayingNotificationWrapper,
-    animationWrapperClassName: y.nowPlayingNotificationAnimationWrapper,
+    body: j,
+    className: b.nowPlayingNotificationContainer,
+    wrapperClassName: b.nowPlayingNotificationWrapper,
+    animationWrapperClassName: b.nowPlayingNotificationAnimationWrapper,
     maxBodyLines: 1,
     disableClickableRegions: true,
     onNotificationShow: () => {
-      j()
+      _()
     },
     onDismissClick: () => {
       Z("dismiss")

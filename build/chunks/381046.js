@@ -4,7 +4,7 @@
 var Chunk260674 = require("./260674.js"),
   Chunk288660 = require("./288660.js"),
   Chunk72689 = require("./72689.js"),
-  a = Object.prototype.hasOwnProperty,
+  o = Object.prototype.hasOwnProperty,
   s = {
     brackets: function(e) {
       return e + "[]"
@@ -51,7 +51,7 @@ var Chunk260674 = require("./260674.js"),
     return "string" == typeof e || "number" == typeof e || "boolean" == typeof e || "symbol" == typeof e || "bigint" == typeof e
   },
   m = {},
-  h = function e(t, n, o, a, s, c, d, f, h, g, E, b, y, O, v, S, I, T) {
+  h = function e(t, n, a, o, s, c, d, f, h, g, E, b, y, O, v, S, I, T) {
     for (var C, A = t, N = T, P = 0, R = false; true !== (N = N.get(m)) && !R;) {
       var w = N.get(t);
       if (P += 1, true !== w)
@@ -59,7 +59,7 @@ var Chunk260674 = require("./260674.js"),
         else R = true;
       true === N.get(m) && (P = 0)
     }
-    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = y(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
+    if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = y(A) : "comma" === a && l(A) && (A = i.maybeMap(A, function(e) {
         return e instanceof Date ? y(e) : e
       })), null === A) {
       if (c) return h && !S ? h(n, p.encoder, I, "key", O) : n;
@@ -68,7 +68,7 @@ var Chunk260674 = require("./260674.js"),
     if (_(A) || i.isBuffer(A)) return h ? [v(S ? n : h(n, p.encoder, I, "key", O)) + "=" + v(h(A, p.encoder, I, "value", O))] : [v(n) + "=" + v(String(A))];
     var D = [];
     if (true === A) return D;
-    if ("comma" === o && l(A)) S && h && (A = i.maybeMap(A, h)), C = [{
+    if ("comma" === a && l(A)) S && h && (A = i.maybeMap(A, h)), C = [{
       value: A.length > 0 ? A.join(",") || null : true
     }];
     else if (l(g)) C = g;
@@ -77,17 +77,17 @@ var Chunk260674 = require("./260674.js"),
       C = E ? x.sort(E) : x
     }
     var L = f ? String(n).replace(/\./g, "%2E") : String(n),
-      j = a && l(A) && 1 === A.length ? L + "[]" : L;
+      j = o && l(A) && 1 === A.length ? L + "[]" : L;
     if (s && l(A) && 0 === A.length) return j + "[]";
     for (var M = 0; M < C.length; ++M) {
       var k = C[M],
         U = "object" == typeof k && k && true !== k.value ? k.value : A[k];
       if (!d || null !== U) {
         var G = b && f ? String(k).replace(/\./g, "%2E") : String(k),
-          Z = l(A) ? "function" == typeof o ? o(j, G) : j : j + (b ? "." + G : "[" + G + "]");
+          Z = l(A) ? "function" == typeof a ? a(j, G) : j : j + (b ? "." + G : "[" + G + "]");
         T.set(t, P);
         var F = r();
-        F.set(m, T), u(D, e(U, Z, o, a, s, c, d, f, "comma" === o && S && l(A) ? null : h, g, E, b, y, O, v, S, I, F))
+        F.set(m, T), u(D, e(U, Z, a, o, s, c, d, f, "comma" === a && S && l(A) ? null : h, g, E, b, y, O, v, S, I, F))
       }
     }
     return D
@@ -99,12 +99,12 @@ var Chunk260674 = require("./260674.js"),
     if (null !== e.encoder && true !== e.encoder && "function" != typeof e.encoder) throw TypeError("Encoder has to be a function.");
     var t, n = e.charset || p.charset;
     if (true !== e.charset && "utf-8" !== e.charset && "iso-8859-1" !== e.charset) throw TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
-    var r = o.default;
+    var r = a.default;
     if (true !== e.format) {
-      if (!a.call(o.formatters, e.format)) throw TypeError("Unknown format option provided.");
+      if (!o.call(a.formatters, e.format)) throw TypeError("Unknown format option provided.");
       r = e.format
     }
-    var i = o.formatters[r],
+    var i = a.formatters[r],
       c = p.filter;
     if (("function" == typeof e.filter || l(e.filter)) && (c = e.filter), t = e.arrayFormat in s ? e.arrayFormat : "indices" in e ? e.indices ? "indices" : "repeat" : p.arrayFormat, "commaRoundTrip" in e && "boolean" != typeof e.commaRoundTrip) throw TypeError("`commaRoundTrip` must be a boolean, or absent");
     var u = true === e.allowDots ? true === e.encodeDotInKeys || p.allowDots : !!e.allowDots;
@@ -131,20 +131,20 @@ var Chunk260674 = require("./260674.js"),
     }
   };
 module.exports = function(e, t) {
-  var n, i, o = e,
-    a = g(t);
-  "function" == typeof a.filter ? o = (i = a.filter)("", o) : l(a.filter) && (n = i = a.filter);
+  var n, i, a = e,
+    o = g(t);
+  "function" == typeof o.filter ? a = (i = o.filter)("", a) : l(o.filter) && (n = i = o.filter);
   var c = [];
-  if ("object" != typeof o || null === o) return "";
-  var d = s[a.arrayFormat],
-    f = "comma" === d && a.commaRoundTrip;
-  n || (n = Object.keys(o)), a.sort && n.sort(a.sort);
+  if ("object" != typeof a || null === a) return "";
+  var d = s[o.arrayFormat],
+    f = "comma" === d && o.commaRoundTrip;
+  n || (n = Object.keys(a)), o.sort && n.sort(o.sort);
   for (var p = r(), _ = 0; _ < n.length; ++_) {
     var m = n[_],
-      E = o[m];
-    a.skipNulls && null === E || u(c, h(E, m, d, f, a.allowEmptyArrays, a.strictNullHandling, a.skipNulls, a.encodeDotInKeys, a.encode ? a.encoder : null, a.filter, a.sort, a.allowDots, a.serializeDate, a.format, a.formatter, a.encodeValuesOnly, a.charset, p))
+      E = a[m];
+    o.skipNulls && null === E || u(c, h(E, m, d, f, o.allowEmptyArrays, o.strictNullHandling, o.skipNulls, o.encodeDotInKeys, o.encode ? o.encoder : null, o.filter, o.sort, o.allowDots, o.serializeDate, o.format, o.formatter, o.encodeValuesOnly, o.charset, p))
   }
-  var b = c.join(a.delimiter),
-    y = true === a.addQueryPrefix ? "?" : "";
-  return a.charsetSentinel && ("iso-8859-1" === a.charset ? y += "utf8=%26%2310003%3B&" : y += "utf8=%E2%9C%93&"), b.length > 0 ? y + b : ""
+  var b = c.join(o.delimiter),
+    y = true === o.addQueryPrefix ? "?" : "";
+  return o.charsetSentinel && ("iso-8859-1" === o.charset ? y += "utf8=%26%2310003%3B&" : y += "utf8=%E2%9C%93&"), b.length > 0 ? y + b : ""
 }

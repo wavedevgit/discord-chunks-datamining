@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk639119 = require("./639119.js"),
   Chunk715130 = require("./715130.js"),
   Chunk655525 = require("./655525.jsx"),
-  Chunk437207 = require("./437207.jsx"),
+  Chunk244989 = require("./244989.jsx"),
   Chunk675957 = require("./675957.js"),
   Chunk93237 = require("./93237.js"),
   Chunk484605 = require("./484605.jsx"),
@@ -54,7 +54,7 @@ var Chunk54381 = require("./54381.js"),
 let Q = e => {
     let {
       selected: t
-    } = e, n = (0, s.e7)([b.default], () => b.default.getCurrentUser()), r = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, x.N)(), a = (0, C.Vi)(), o = (0, V.V)(), c = (0, y.Qo)(n, r), u = (0, s.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != o || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, s.e7)([E.default], () => E.default.getCurrentUser()), r = (0, s.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, x.N)(), a = (0, C.Vi)(), o = (0, V.V)(), c = (0, y.Qo)(n, r), u = (0, s.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != o || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   J = e => {
@@ -80,8 +80,8 @@ let Q = e => {
         }
         return i
       }(e, ["selected", "nitroTabButtonRef", "route", "locationState"]);
-    let el = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
-      ea = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()),
+    let el = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
+      ea = (0, s.e7)([_.Z], () => _.Z.getPremiumTypeSubscription()),
       {
         variant: es,
         hasNitroTabBadgeOfferReminder: eo
@@ -94,11 +94,11 @@ let Q = e => {
       eg = (0, P.$)(),
       eh = (0, S.W)(),
       em = (0, C.Vi)(),
-      e_ = (0, D.HI)({
+      eb = (0, D.HI)({
         trialOffer: ep
       }),
-      eb = (0, V.V)(),
-      eE = (0, D.eW)(),
+      eE = (0, V.V)(),
+      e_ = (0, D.eW)(),
       eO = (0, R._h)(),
       ev = (0, F.Kn)(),
       ey = O.Z.getAlmostExpiringTrialOffers([Y.Si.TIER_2]),
@@ -121,7 +121,7 @@ let Q = e => {
         location: "NitroTabButton"
       }),
       ew = (null == ep ? true : ep.trial_id) === Y.a7,
-      eL = (0, _.bg)({
+      eL = (0, b.bg)({
         location: "NitroTabButton"
       }),
       eR = [],
@@ -154,7 +154,7 @@ let Q = e => {
       isDismissed: eH !== o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE
     }), I = 9;
     else if (em) n = (0, r.jsx)(w.Z, {}), I = 0;
-    else if (e_) {
+    else if (eb) {
       let e = (0, D.$q)();
       n = (0, r.jsx)(U._y, {
         isTabSelected: ee,
@@ -175,8 +175,8 @@ let Q = e => {
       offerExpiresAt: null
     }), I = 2) : eh ? (n = (0, r.jsx)(H.S, {
       expiresAt: eP
-    }), I = 4) : null != eb ? (n = (0, r.jsx)(z.Z, {
-      copy: eb,
+    }), I = 4) : null != eE ? (n = (0, r.jsx)(z.Z, {
+      copy: eE,
       showStars: false
     }), I = 1) : null != ef ? (n = es === T.tE.OFFER_COUNTDOWN && eS ? (0, r.jsx)(G.a, {
       discountOffer: ef
@@ -200,7 +200,7 @@ let Q = e => {
       isTabSelected: ee,
       shouldShowOfferReminder: eI
     }), I = 4);
-    eE && (n = (0, r.jsx)(U._y, {
+    e_ && (n = (0, r.jsx)(U._y, {
       isTabSelected: ee,
       badgeCopy: K.intl.string(K.t.RDE0Sc),
       offerExpiresAt: null

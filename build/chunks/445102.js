@@ -11,11 +11,11 @@ async function r(e, t) {
     rating: n,
     category: r,
     reasonCode: o,
-    reasonDescription: s,
-    variant: u,
-    feedback: d,
+    reasonDescription: d,
+    variant: s,
+    feedback: u,
     analyticsData: c
-  } = t, b = l.Z.getSettings(), f = l.Z.getInputDeviceId(), O = l.Z.getInputDevices()[f], v = l.Z.getOutputDeviceId(), _ = l.Z.getOutputDevices()[v], m = l.Z.getVideoDeviceId(), E = l.Z.getVideoDevices()[m], p = l.Z.getNoiseCancellation(), g = l.Z.getMediaEngine().getAudioSubsystem(), h = l.Z.getMediaEngine().getAudioLayer(), S = await a.Z.getKrispModel();
+  } = t, b = l.Z.getSettings(), f = l.Z.getInputDeviceId(), O = l.Z.getInputDevices()[f], v = l.Z.getOutputDeviceId(), m = l.Z.getOutputDevices()[v], E = l.Z.getVideoDeviceId(), p = l.Z.getVideoDevices()[E], g = l.Z.getNoiseCancellation(), _ = l.Z.getMediaEngine().getAudioSubsystem(), h = l.Z.getMediaEngine().getAudioLayer(), S = await a.Z.getKrispModel();
   i.default.track(e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -37,9 +37,9 @@ async function r(e, t) {
     rating: null != n ? n : "no response",
     category: r,
     reason_code: o,
-    reason_description: s,
-    reason_variant: u,
-    feedback: d,
+    reason_description: d,
+    reason_variant: s,
+    feedback: u,
     audio_input_mode: b.mode,
     automatic_audio_input_sensitivity_enabled: b.modeOptions.autoThreshold,
     audio_input_sensitivity: b.modeOptions.threshold,
@@ -48,11 +48,11 @@ async function r(e, t) {
     noise_suppression_enabled: b.noiseSuppression,
     automatic_gain_control_enabled: b.automaticGainControl,
     voice_output_volume: b.outputVolume,
-    noise_cancellation_enabled: p,
+    noise_cancellation_enabled: g,
     input_device_name: null == O ? true : O.name,
-    output_device_name: null == _ ? true : _.name,
-    video_device_name: null == E ? true : E.name,
-    audio_subsystem: g,
+    output_device_name: null == m ? true : m.name,
+    video_device_name: null == p ? true : p.name,
+    audio_subsystem: _,
     audio_layer: h,
     automatic_audio_subsystem: b.automaticAudioSubsystem,
     krisp_nc_model: S

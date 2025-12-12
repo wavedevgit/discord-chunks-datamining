@@ -62,8 +62,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,8 +71,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -109,13 +109,13 @@ let y = (0, Chunk663042.U)(e => ({
         let r = e.collectionAssets[t];
         null != r && URL.revokeObjectURL(r.src);
         let i = URL.createObjectURL(n),
-          o = f({}, e.collectionAssets);
-        return o[t] = {
+          a = f({}, e.collectionAssets);
+        return a[t] = {
           type: t,
           name: n.name,
           src: i
         }, _(f({}, e), {
-          collectionAssets: o,
+          collectionAssets: a,
           previewEnabled: true
         })
       })
@@ -129,11 +129,11 @@ let y = (0, Chunk663042.U)(e => ({
           {
             [t]: i
           } = r,
-          o = m(r, [t].map(E)),
-          a = Object.keys(o).length > 0 || Object.keys(e.avatarDecorationAssets).length > 0;
+          a = m(r, [t].map(E)),
+          o = Object.keys(a).length > 0 || Object.keys(e.avatarDecorationAssets).length > 0;
         return _(f({}, e), {
-          collectionAssets: o,
-          previewEnabled: a
+          collectionAssets: a,
+          previewEnabled: o
         })
       })
     }),
@@ -162,11 +162,11 @@ let y = (0, Chunk663042.U)(e => ({
           {
             [t]: i
           } = r,
-          o = m(r, [t].map(E)),
-          a = Object.keys(o).length > 0 || Object.keys(e.collectionAssets).length > 0;
+          a = m(r, [t].map(E)),
+          o = Object.keys(a).length > 0 || Object.keys(e.collectionAssets).length > 0;
         return _(f({}, e), {
-          avatarDecorationAssets: o,
-          previewEnabled: a
+          avatarDecorationAssets: a,
+          previewEnabled: o
         })
       })
     }),
@@ -204,32 +204,32 @@ let y = (0, Chunk663042.U)(e => ({
     let {
       previewEnabled: t,
       previewProfileEffectSkuId: n
-    } = y(), o = t ? n : null, a = (0, l.mr)(o);
+    } = y(), a = t ? n : null, o = (0, l.mr)(a);
     return r.useMemo(() => {
-      if (null == a || null == e) return null;
+      if (null == o || null == e) return null;
       let {
         effects: t,
         stillFrames: n
-      } = a.config, r = null != n && Object.keys(n).length > 0;
+      } = o.config, r = null != n && Object.keys(n).length > 0;
       if (0 === t.length && !r) return null;
-      let o = (0, i.cloneDeep)(e);
-      if (o.title = a.name, o.effects = t.map(e => {
+      let a = (0, i.cloneDeep)(e);
+      if (a.title = o.name, a.effects = t.map(e => {
           let {
             base64: t
           } = e;
           return m(e, ["base64"])
         }), r) {
         var s, l, u, d, f, p;
-        o.reducedMotionSrc = null != (d = null == (s = n[c.cq.REDUCED_MOTION]) ? true : s.src) ? d : "", o.staticFrameSrc = null != (f = null == (l = n[c.cq.STATIC]) ? true : l.src) ? f : "", o.thumbnailPreviewSrc = null != (p = null == (u = n[c.cq.THUMBNAIL]) ? true : u.src) ? p : ""
+        a.reducedMotionSrc = null != (d = null == (s = n[c.cq.REDUCED_MOTION]) ? true : s.src) ? d : "", a.staticFrameSrc = null != (f = null == (l = n[c.cq.STATIC]) ? true : l.src) ? f : "", a.thumbnailPreviewSrc = null != (p = null == (u = n[c.cq.THUMBNAIL]) ? true : u.src) ? p : ""
       }
-      return o
-    }, [a, e])
+      return a
+    }, [o, e])
   },
   I = (e, t) => _(f({}, e), {
     asset: t.src
   }),
   T = (e, t) => {
-    if (e.type !== a.Z.AVATAR_DECORATION) return e;
+    if (e.type !== o.Z.AVATAR_DECORATION) return e;
     let n = (0, i.cloneDeep)(e);
     if (n.items.length > 0) {
       let r = n.items[0];
@@ -265,7 +265,7 @@ let y = (0, Chunk663042.U)(e => ({
       previewAvatarDecorationSkuId: n
     } = y(), i = y(e => e.avatarDecorationAssets);
     return r.useMemo(() => {
-      if (null == e || e.type !== a.Z.AVATAR_DECORATION || 0 === e.items.length) return e;
+      if (null == e || e.type !== o.Z.AVATAR_DECORATION || 0 === e.items.length) return e;
       let r = C(t, i, n);
       return null == r ? e : T(e, r)
     }, [e, t, n, i])

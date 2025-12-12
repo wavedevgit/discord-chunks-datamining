@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 110977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => s
@@ -16,7 +16,7 @@ let s = Chunk473749.memo(function(e) {
     let {
       favoriteAdded: e,
       clearFavoriteAdded: t
-    } = (0, o.up)();
+    } = (0, a.up)();
     return i.useEffect(() => {
       if (e) {
         let e = setTimeout(() => {
@@ -34,7 +34,7 @@ let s = Chunk473749.memo(function(e) {
     spacing: 12,
     position: "right",
     align: "center",
-    text: a.intl.string(a.t["4tSWQg"]),
+    text: o.intl.string(o.t["4tSWQg"]),
     "aria-label": t,
     children: (0, r.jsx)("div", {
       children: n

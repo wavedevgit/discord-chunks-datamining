@@ -10,15 +10,15 @@ function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function o(e, t) {
+function a(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
     r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
-function a(e, t, n) {
-  return t && o(e.prototype, t), n && o(e, n), e
+function o(e, t, n) {
+  return t && a(e.prototype, t), n && a(e, n), e
 }
 
 function s(e, t, n) {
@@ -33,7 +33,7 @@ var l = function() {
   function e(t) {
     i(this, e), s(this, "entered", []), s(this, "isNodeInDocument", true), this.isNodeInDocument = t
   }
-  return a(module, [{
+  return o(module, [{
     key: "enter",
     value: function(e) {
       var t = this,

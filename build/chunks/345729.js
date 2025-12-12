@@ -2,19 +2,19 @@
 /** chunk id: 345729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => o
+  C: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js");
 
-function o() {
+function a() {
   let {
     reducedMotion: e
   } = Chunk473749.useContext(Chunk793030.Sfi), {
     isOpen: t,
     setIsOpen: n,
-    refs: o,
-    floatingStyles: a,
+    refs: a,
+    floatingStyles: o,
     getReferenceProps: s,
     getFloatingProps: l,
     context: c
@@ -37,8 +37,8 @@ function o() {
   return {
     isOpen: exports,
     setIsOpen: require,
-    refs: o,
-    floatingStyles: a,
+    refs: a,
+    floatingStyles: o,
     getReferenceProps: s,
     getFloatingProps: l,
     transitionStyles: module.enabled ? {} : u

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   l = require.n(Chunk954955),
   Chunk95015 = require("./95015.js"),
@@ -22,8 +22,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127947 = require("./127947.js"),
-  Chunk893973 = require("./893973.js");
+  Chunk860302 = require("./860302.js"),
+  Chunk378369 = require("./378369.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,12 +70,12 @@ class A extends Chunk473749.Component {
       className: t,
       children: n,
       useChatFontScaling: i,
-      tabIndex: o = 0
+      tabIndex: a = 0
     } = this.props, {
       isReactionPickerActive: s
     } = this.state;
     if (module.state === Chunk981631.yb.SENDING || (0, Chunk95015.yE)(module.flags, Chunk981631.iLy.EPHEMERAL)) return null;
-    let l = Chunk473749 ? Chunk893973 : Chunk127947,
+    let l = Chunk473749 ? Chunk378369 : Chunk860302,
       u = {
         size: "sm",
         color: "currentColor",
@@ -83,7 +83,7 @@ class A extends Chunk473749.Component {
       };
     return module.type === Chunk981631.uaV.EMOJI_ADDED && 0 === module.reactions.length ? (0, Chunk54381.jsx)(Chunk387188.e, {
       message: module,
-      className: a()(l.reactionBtn, exports)
+      className: o()(l.reactionBtn, exports)
     }) : (0, Chunk54381.jsx)(Chunk481060.yRy, {
       targetElementRef: this.ref,
       shouldShow: Chunk954955,
@@ -99,13 +99,13 @@ class A extends Chunk473749.Component {
           text: y.intl.string(y.t.lfIHs4),
           children: (0, r.jsxs)(f.P3F, C(I({}, e), {
             innerRef: this.ref,
-            tabIndex: o,
+            tabIndex: a,
             onClick: e => {
               this.handleAddReactionClick(e)
             },
             onMouseEnter: () => (0, p.x)(b.qR.AddReactionPopoutMouseEntered),
             onFocus: () => (0, p.x)(b.qR.AddReactionPopoutFocused),
-            className: a()(l.reactionBtn, {
+            className: o()(l.reactionBtn, {
               [l.active]: s
             }, t),
             children: [(0, r.jsx)(f.EO4, I({}, u)), n]
@@ -139,9 +139,9 @@ class A extends Chunk473749.Component {
       } = e, {
         channel: n,
         message: i
-      } = this.props, o = {
+      } = this.props, a = {
         openPopoutType: "message_reaction_emoji_picker"
-      }, a = (0, r.jsx)(g.$, {
+      }, o = (0, r.jsx)(g.$, {
         closePopout: t,
         channel: n,
         onSelectEmoji: e => {
@@ -152,7 +152,7 @@ class A extends Chunk473749.Component {
           } = e;
           this.onAddReaction(n, i), r && (i ? l()(t, 150)() : t())
         },
-        analyticsOverride: o,
+        analyticsOverride: a,
         messageId: i.id
       });
       return (0, r.jsx)(u.M.Consumer, {
@@ -162,8 +162,8 @@ class A extends Chunk473749.Component {
           } = e;
           return t ? (0, r.jsx)(f.VqE, {
             "aria-label": y.intl.string(y.t["7Xqzdj"]),
-            children: a
-          }) : a
+            children: o
+          }) : o
         }
       })
     })

@@ -33,7 +33,7 @@ class y extends Chunk147913.Z {
   _fetch(e) {
     if (!(0, f.c)({
         location: p.dr.QUESTS_MANAGER
-      }) || s.Z.isFetchingCurrentQuests || ((0, a.xw)(), c.DL.getConfig({
+      }) || s.Z.isFetchingCurrentQuests || ((0, o.xw)(), c.DL.getConfig({
         location: p.dr.QUESTS_MANAGER
       }).enabled && "focused" !== i.Z.getState())) return;
     let {
@@ -41,7 +41,7 @@ class y extends Chunk147913.Z {
     } = d.Z.getConfig({
       location: "QuestFetchManager"
     });
-    t || (0, a.w)(l.Ok.DESKTOP_ACCOUNT_PANEL_AREA, e)
+    t || (0, o.w)(l.Ok.DESKTOP_ACCOUNT_PANEL_AREA, e)
   }
   constructor(...e) {
     super(...e), _(this, "instantiatedAt", Date.now()), _(this, "initialFetchTimerId", null), _(this, "recurringFetchTimerId", null), _(this, "lastFetchAttemptedAt", 0), _(this, "lastFetchedQuestForLocaleChangeAt", 0), _(this, "handleQuestsFetchCurrentQuestsBegin", () => {

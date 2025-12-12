@@ -15,9 +15,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk738774 = require("./738774.js"),
   Chunk981631 = require("./981631.js");
 let d = e => {
-    let t = (0, o.Z)();
+    let t = (0, a.Z)();
     r.useEffect(() => {
-      null != e && e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && s.Z.getMonetizationRestrictionsFetchState(e.id) === s.M.NOT_FETCHED && a.Xj(e.id, {
+      null != e && e.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && s.Z.getMonetizationRestrictionsFetchState(e.id) === s.M.NOT_FETCHED && o.Xj(e.id, {
         signal: t
       })
     }, [e, t]);
@@ -35,11 +35,11 @@ let d = e => {
     let n = (0, i.e7)([l.Z], () => l.Z.getGuild(e), [e]),
       {
         restrictions: r,
-        restrictionsLoading: o
+        restrictionsLoading: a
       } = d(n);
     return {
-      shouldHideGuildPurchaseEntryPoints: !((null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE)) || (null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) || (null == n ? true : n.features.has(u.GuildFeatures.SOCIAL_LAYER_STOREFRONT))) || (o ? null == (t = null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
-      restrictionsLoading: o
+      shouldHideGuildPurchaseEntryPoints: !((null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE)) || (null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) || (null == n ? true : n.features.has(u.GuildFeatures.SOCIAL_LAYER_STOREFRONT))) || (a ? null == (t = null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.uq)(r)),
+      restrictionsLoading: a
     }
   },
   p = e => {
@@ -47,14 +47,14 @@ let d = e => {
     let n = (0, i.e7)([l.Z], () => l.Z.getGuild(e), [e]),
       {
         restrictions: r,
-        restrictionsLoading: o
+        restrictionsLoading: a
       } = d(n),
-      a = o ? null == (t = null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.Q6)(r),
+      o = a ? null == (t = null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t : (0, c.Q6)(r),
       s = !!(null == n ? true : n.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING));
     return {
-      shouldRestrictUpdatingCreatorMonetizationSettings: a || s,
-      allowSelfRemoveMonetization: !a,
-      restrictionsLoading: o
+      shouldRestrictUpdatingCreatorMonetizationSettings: o || s,
+      allowSelfRemoveMonetization: !o,
+      restrictionsLoading: a
     }
   },
   _ = e => {

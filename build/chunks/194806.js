@@ -62,7 +62,7 @@ class d {
     this.lastState = Chunk503461.hi.Closed, null == (e = this.raw) || module.close(), this.raw = null, Chunk350167.r.removeCompletionCallback(this.databaseStateCallback)
   }
   disable(e) {
-    return null == this.raw ? Promise.resolve() : (this.lastState = a.hi.Disabled, this.execute({
+    return null == this.raw ? Promise.resolve() : (this.lastState = o.hi.Disabled, this.execute({
       type: "db.disable",
       handle: 0,
       reason: e
@@ -71,7 +71,7 @@ class d {
   execute(e, t) {
     if (null == this.raw) throw Error("database is no longer open (database: ".concat(this));
     let n = "key" in e ? e.key[0] : e.table,
-      i = () => o.r.executeAsync(null != t ? t : e.type, t => {
+      i = () => a.r.executeAsync(null != t ? t : e.type, t => {
         this.raw.execute(t, u(l({}, e), {
           handle: 0
         }))
@@ -128,7 +128,7 @@ class d {
     }, t) : Promise.resolve())
   }
   constructor(e) {
-    s(this, "name", true), s(this, "handle", true), s(this, "raw", true), s(this, "lastState", true), s(this, "databaseStateCallback", true), this.raw = e, this.name = e.name, this.lastState = a.hi.Open, this.handle = e.handle, this.databaseStateCallback = o.r.addDatabaseStateCallback((e, t) => {
+    s(this, "name", true), s(this, "handle", true), s(this, "raw", true), s(this, "lastState", true), s(this, "databaseStateCallback", true), this.raw = e, this.name = e.name, this.lastState = o.hi.Open, this.handle = e.handle, this.databaseStateCallback = a.r.addDatabaseStateCallback((e, t) => {
       this.handle === e && (this.lastState = t)
     })
   }

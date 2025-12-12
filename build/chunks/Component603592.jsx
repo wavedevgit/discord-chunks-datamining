@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 603592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -6,48 +6,48 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk276952 = require("./276952.jsx"),
   Chunk682662 = require("./682662.jsx"),
   Chunk662146 = require("./662146.jsx"),
-  Chunk790952 = require("./790952.js");
+  Chunk799830 = require("./799830.js");
 let h = Chunk473749.forwardRef(function(e, t) {
   var n, l;
   let {
     id: h,
     onClick: p,
     onContextMenu: g,
-    icon: m,
-    selected: b,
-    tooltip: _,
-    upperBadge: y,
-    lowerBadge: O,
-    lowerBadgeSize: v,
-    showPill: j = true,
-    className: C,
-    "aria-label": x,
-    children: E,
-    onMouseEnter: S,
-    onMouseLeave: I,
+    icon: b,
+    selected: m,
+    tooltip: y,
+    upperBadge: O,
+    lowerBadge: v,
+    lowerBadgeSize: j,
+    showPill: C = true,
+    className: x,
+    "aria-label": E,
+    children: S,
+    onMouseEnter: I,
+    onMouseLeave: _,
     onMouseDown: P
-  } = e, N = (0, a.Ie)(h), [Z, w] = i.useState(false);
+  } = e, N = (0, o.Ie)(h), [Z, w] = i.useState(false);
   return (0, r.jsxs)(u.H, {
-    children: [j ? (0, r.jsx)("div", {
+    children: [C ? (0, r.jsx)("div", {
       className: f.pill,
       children: (0, r.jsx)(c.Z, {
         hovered: Z,
-        selected: b
+        selected: m
       })
     }) : null, (0, r.jsx)(d.Z, {
-      text: _,
-      selected: b,
+      text: y,
+      selected: m,
       children: (0, r.jsx)(s.aRk, {
         selected: true,
-        upperBadge: y,
-        lowerBadge: O,
-        lowerBadgeSize: v,
+        upperBadge: O,
+        lowerBadge: v,
+        lowerBadgeSize: j,
         children: (0, r.jsx)(s.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -68,24 +68,24 @@ let h = Chunk473749.forwardRef(function(e, t) {
         }({
           innerRef: t,
           onMouseEnter: () => {
-            null == S || S(), w(true)
+            null == I || I(), w(true)
           },
           onMouseLeave: () => {
-            null == I || I(), w(false)
+            null == _ || _(), w(false)
           },
           onMouseDown: P,
-          className: o()(f.circleIconButton, C, {
-            [f.selected]: b || Z
+          className: a()(f.circleIconButton, x, {
+            [f.selected]: m || Z
           }),
           onClick: p,
-          "aria-label": "string" == typeof _ && null == x ? _ : x,
-          "aria-selected": b,
+          "aria-label": "string" == typeof y && null == E ? y : E,
+          "aria-selected": m,
           onContextMenu: g,
           focusProps: {
             enabled: false
           }
         }, N), l = l = {
-          children: null != m && (0, r.jsx)(m, {
+          children: null != b && (0, r.jsx)(b, {
             className: f.circleIcon,
             color: "currentColor"
           })
@@ -100,6 +100,6 @@ let h = Chunk473749.forwardRef(function(e, t) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
         }), n))
       })
-    }), E]
+    }), S]
   })
 })

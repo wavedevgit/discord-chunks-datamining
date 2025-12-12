@@ -25,7 +25,7 @@ function c(e) {
     oauth2Callback: m
   } = e;
   if (null != n) {
-    a.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
+    o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
       application_id: t,
       guild_id: d,
       auth_type: "custom_url",
@@ -37,13 +37,13 @@ function c(e) {
     return
   }
   if (null != u && Object.values(u).some(e => (null == e ? true : e.oauth2_install_params) != null || (null == e ? true : e.oauth2InstallParams) != null)) {
-    a.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
+    o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
       application_id: t,
       guild_id: d,
       auth_type: "in_app",
       source: _,
       device_platform: r.tq ? "mobile_web" : "desktop_web"
-    }), (0, o.openOAuth2Modal)({
+    }), (0, a.openOAuth2Modal)({
       clientId: t,
       guildId: d,
       channelId: f,
@@ -52,13 +52,13 @@ function c(e) {
     });
     return
   }
-  null != c && (a.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
+  null != c && (o.default.track(l.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
     application_id: t,
     guild_id: d,
     auth_type: "in_app",
     source: _,
     device_platform: r.tq ? "mobile_web" : "desktop_web"
-  }), (0, o.openOAuth2Modal)({
+  }), (0, a.openOAuth2Modal)({
     clientId: t,
     guildId: d,
     channelId: f,

@@ -40,7 +40,7 @@ let l = e => {
       referralsStatuses: n
     } = e;
     return l({
-      hasSentAll: n.sent >= a.Q,
+      hasSentAll: n.sent >= o.Q,
       hasSentAtLeastOne: n.sent >= 1,
       helpdeskArticle: t
     })

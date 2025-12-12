@@ -8,7 +8,7 @@ var Chunk626135 = require("./626135.js"),
   Chunk360347 = require("./360347.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -34,9 +34,9 @@ function l(e) {
   let {
     tab_opened: t,
     source: n
-  } = e, a = (0, i.Z)();
-  r.default.track(o.rMx.FRIENDS_LIST_CLICKED, s({
+  } = e, o = (0, i.Z)();
+  r.default.track(a.rMx.FRIENDS_LIST_CLICKED, s({
     tab_opened: t,
     source: n
-  }, a))
+  }, o))
 }

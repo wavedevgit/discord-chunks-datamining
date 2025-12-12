@@ -29,9 +29,9 @@ var Chunk175730 = require("./175730.js"),
   }),
   h = function(e, t) {
     if (true === t && (t = false), c.has(e) && !t) return c.get(e);
-    if ((0, a.xj)(e)) return c.set(e, m), m;
+    if ((0, o.xj)(e)) return c.set(e, m), m;
     var n = getComputedStyle(e),
-      r = (0, a.zd)(e) && e.ownerSVGElement && e.getBBox(),
+      r = (0, o.zd)(e) && e.ownerSVGElement && e.getBBox(),
       i = !f && "border-box" === n.boxSizing,
       l = d.test(n.writingMode || ""),
       h = !r && u.test(n.overflowY || ""),
@@ -60,21 +60,21 @@ var Chunk175730 = require("./175730.js"),
         devicePixelContentBoxSize: _(Math.round(L * devicePixelRatio), Math.round(j * devicePixelRatio), l),
         borderBoxSize: _(M, k, l),
         contentBoxSize: _(L, j, l),
-        contentRect: new o.N(O, E, L, j)
+        contentRect: new a.N(O, E, L, j)
       });
     return c.set(e, U), U
   },
   g = function(e, t, n) {
     var i = h(e, n),
-      o = i.borderBoxSize,
-      a = i.contentBoxSize,
+      a = i.borderBoxSize,
+      o = i.contentBoxSize,
       s = i.devicePixelContentBoxSize;
     switch (t) {
       case r.z.DEVICE_PIXEL_CONTENT_BOX:
         return s;
       case r.z.BORDER_BOX:
-        return o;
+        return a;
       default:
-        return a
+        return o
     }
   }

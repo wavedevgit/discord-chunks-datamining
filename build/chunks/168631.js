@@ -16,7 +16,7 @@ require("./564334.js");
 var Chunk981631 = require("./981631.js");
 
 function c(e) {
-  return null == e ? null : (0, a.Bd)(e) > .5 ? l.BRd.DARK : l.BRd.LIGHT
+  return null == e ? null : (0, o.Bd)(e) > .5 ? l.BRd.DARK : l.BRd.LIGHT
 }
 
 function u(e, t, n) {
@@ -29,15 +29,15 @@ let d = (0, Chunk392711.memoize)(e => {
       base: "#ffffff",
       contrastRatio: s.S3.HighContrastText
     });
-    return (0, a._i)(t)
+    return (0, o._i)(t)
   }, e => e),
   f = (0, Chunk392711.memoize)((e, t, n) => {
     let r = (null != n ? n : c(e)) !== l.BRd.LIGHT,
-      a = .5,
+      o = .5,
       s = .1,
       u = .8,
-      d = i().mix(i()(e), i()(t), a, "lab"),
+      d = i().mix(i()(e), i()(t), o, "lab"),
       f = Math.round(100 * d.get("hsl.l")) / 100,
-      p = r ? (0, o.clamp)(f, 0, s) : (0, o.clamp)(f, u, 1);
+      p = r ? (0, a.clamp)(f, 0, s) : (0, a.clamp)(f, u, 1);
     return i()(d).set("hsl.l", p).num()
   }, (e, t, n) => "".concat(e, "-").concat(t, "-").concat(n))

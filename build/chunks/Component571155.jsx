@@ -16,13 +16,13 @@ function s(e) {
     disabled: n,
     size: s
   } = e;
-  return (0, i.A)("CheckboxIndicator") ? (0, r.jsx)(o.C, {
+  return (0, i.A)("CheckboxIndicator") ? (0, r.jsx)(a.C, {
     checked: t,
     disabled: n,
     displayOnly: true,
     usageVariant: "indicator",
     "aria-hidden": true
-  }) : (0, r.jsx)(a.Ik, {
+  }) : (0, r.jsx)(o.Ik, {
     value: t,
     disabled: n,
     size: s

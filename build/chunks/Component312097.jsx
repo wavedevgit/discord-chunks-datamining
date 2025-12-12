@@ -38,8 +38,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,8 +47,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = "Media Viewer Modal";
@@ -60,7 +60,7 @@ function _(e, t) {
     } = e,
     g = d(e, ["location", "contextKey"]);
   let E = null == (f = g.items[null != (_ = g.startingIndex) ? _ : 0]) || null == (c = f.sourceMetadata) ? true : c.message,
-    b = o.Z.getChannel(null == E ? true : E.channel_id);
+    b = a.Z.getChannel(null == E ? true : E.channel_id);
   (0, s.fS)({
     guildId: null == b ? true : b.guild_id,
     channelId: null == b ? true : b.id,
@@ -68,7 +68,7 @@ function _(e, t) {
     numMediaItems: g.items.length,
     source: m,
     hasMediaOptions: !g.shouldHideMediaOptions
-  }), a.default.track(l.rMx.OPEN_MODAL, {
+  }), o.default.track(l.rMx.OPEN_MODAL, {
     type: l.jXE.MEDIA_VIEWER,
     source: m,
     guild_id: null == b ? true : b.guild_id,

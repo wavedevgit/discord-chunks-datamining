@@ -1,12 +1,12 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 285573, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk239091 = require("./239091.js"),
   Chunk146773 = require("./146773.jsx"),
@@ -17,24 +17,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk473403 = require("./473403.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk55940 = require("./55940.js");
-let _ = (0, Chunk146773.B)(function(e) {
+  Chunk642915 = require("./642915.js");
+let y = (0, Chunk146773.B)(function(e) {
   let {
     guild: t,
     selectedChannelId: l,
     position: c,
-    disableManageChannels: _,
-    sorting: y,
-    sortingType: O,
-    sortingPosition: v,
-    connectChannelDragSource: j,
-    connectChannelDropTarget: C,
-    tabIndex: x
-  } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
+    disableManageChannels: y,
+    sorting: O,
+    sortingType: v,
+    sortingPosition: j,
+    connectChannelDragSource: C,
+    connectChannelDropTarget: x,
+    tabIndex: E
+  } = e, S = (0, o.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), S = (0, a.e7)([u.Z], () => u.Z.getChannel(null == E ? true : E.parent_id)), I = l === (null == E ? true : E.id), P = (0, a.e7)([f.Z], () => null != S ? f.Z.can(g.Plq.MANAGE_CHANNELS, S) : null != t && f.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
-    null != E && (0, s.jW)(e, async () => {
+  }), I = (0, o.e7)([u.Z], () => u.Z.getChannel(null == S ? true : S.parent_id)), _ = l === (null == S ? true : S.id), P = (0, o.e7)([f.Z], () => null != I ? f.Z.can(g.Plq.MANAGE_CHANNELS, I) : null != t && f.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
+    null != S && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await n.e("70623").then(n.bind(n, 99334));
@@ -58,7 +58,7 @@ let _ = (0, Chunk146773.B)(function(e) {
           }
           return e
         }({}, t), i = i = {
-          channel: E
+          channel: S
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -71,33 +71,33 @@ let _ = (0, Chunk146773.B)(function(e) {
         }), n))
       }
     })
-  }, [E]);
-  if (null == E) return null;
-  let Z = (0, h.jo)(c, v),
-    w = (0, h.CN)(E, y, O),
+  }, [S]);
+  if (null == S) return null;
+  let Z = (0, h.jo)(c, j),
+    w = (0, h.CN)(S, O, v),
     T = (0, r.jsx)("div", {
-      className: o()(Z, {
-        [b.disabled]: w,
-        [b.selected]: I
+      className: a()(Z, {
+        [m.disabled]: w,
+        [m.selected]: _
       }),
-      "data-dnd-name": E.name,
+      "data-dnd-name": S.name,
       children: (0, r.jsxs)(p.ZP, {
-        className: b.iconVisibility,
-        channel: E,
+        className: m.iconVisibility,
+        channel: S,
         guild: t,
-        selected: I,
+        selected: _,
         onContextMenu: N,
         forceInteractable: true,
-        resolvedUnreadSetting: m.i.ONLY_MENTIONS,
+        resolvedUnreadSetting: b.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(h.eP, {
-          channel: E,
-          tabIndex: x
+          channel: S,
+          tabIndex: E
         }), (0, r.jsx)(h.hR, {
-          channel: E,
-          disableManageChannels: _,
-          tabIndex: x
+          channel: S,
+          disableManageChannels: y,
+          tabIndex: E
         })]
       })
     });
-  return P && (T = C(j(T))), T
+  return P && (T = x(C(T))), T
 })

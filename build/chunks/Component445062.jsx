@@ -36,8 +36,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,23 +45,23 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function d(e) {
-  return e ? a.intl.string(a.t.S5anIc) : a.intl.string(a.t.q3O3J8)
+  return e ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8)
 }
 
 function f(e) {
   var {
     isSelfStream: t,
     centerButton: n = false,
-    onMouseEnter: a,
+    onMouseEnter: o,
     onMouseLeave: s
   } = e, u = c(e, ["isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave"]);
-  let f = n ? o.d : o.Z,
+  let f = n ? a.d : a.Z,
     {
       Component: p,
       events: _
@@ -71,7 +71,7 @@ function f(e) {
     isTrayButton: false,
     iconComponent: p,
     onMouseEnter: e => {
-      null == a || a(e), _.onMouseEnter()
+      null == o || o(e), _.onMouseEnter()
     },
     onMouseLeave: e => {
       null == s || s(e), _.onMouseLeave()

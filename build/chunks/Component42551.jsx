@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk527379 = require("./527379.js"),
   Chunk285173 = require("./285173.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk115491 = require("./115491.js");
+  Chunk236143 = require("./236143.js");
 let x = new Set;
 
 function v(e) {
@@ -32,7 +32,7 @@ function v(e) {
   }, [t, n]), O = l.useMemo(() => s()(y, 300), [y]), H = l.useCallback(e => {
     let t = new Set(null != e ? e : []);
     c(t), O(t)
-  }, [O]), _ = l.useCallback(e => {
+  }, [O]), w = l.useCallback(e => {
     let {
       record: n
     } = e;
@@ -45,7 +45,7 @@ function v(e) {
         guildId: t
       }, n.id)
     }
-  }, [t]), w = l.useCallback((e, t) => {
+  }, [t]), S = l.useCallback((e, t) => {
     let n = new Map(v.map(e => [e.record.id, e]));
     return e.filter(e => {
       let r = n.get(e.value);
@@ -65,8 +65,8 @@ function v(e) {
       value: Array.from(a),
       onSelectionChange: H,
       options: v,
-      formatOption: _,
-      customMatchSorter: w,
+      formatOption: w,
+      customMatchSorter: S,
       selectionMode: "multiple",
       autoFocus: true,
       closeOnSelect: false,

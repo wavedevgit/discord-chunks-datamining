@@ -12,11 +12,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk41959 = require("./41959.jsx"),
   Chunk245561 = require("./245561.jsx"),
-  Chunk839763 = require("./839763.js");
+  Chunk992802 = require("./992802.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,8 +61,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = e => {
@@ -79,13 +79,13 @@ let h = e => {
       application: t,
       asset: n,
       className: i
-    } = e, o = _(e, ["application", "asset", "className"]);
+    } = e, a = _(e, ["application", "asset", "className"]);
     return (0, r.jsx)(s.Z, d({
       application: t,
       size: s.H.MEDIUM,
       asset: n,
       className: i
-    }, o))
+    }, a))
   },
   g = e => {
     var {
@@ -93,8 +93,8 @@ let h = e => {
       className: n,
       id: i
     } = e, s = _(e, ["children", "className", "id"]);
-    return (0, r.jsx)(a.Heading, p(d({
-      className: o()(c.header, n),
+    return (0, r.jsx)(o.Heading, p(d({
+      className: a()(c.header, n),
       variant: "heading-xl/extrabold",
       id: i
     }, s), {
@@ -104,7 +104,7 @@ let h = e => {
 
 function E() {
   return (0, Chunk54381.jsx)("hr", {
-    className: Chunk839763.divider
+    className: Chunk992802.divider
   })
 }
 let b = e => {
@@ -112,15 +112,15 @@ let b = e => {
       className: t,
       title: n,
       description: i
-    } = e, o = _(e, ["className", "title", "description"]);
+    } = e, a = _(e, ["className", "title", "description"]);
     return (0, r.jsxs)("div", p(d({
       className: t
-    }, o), {
-      children: [(0, r.jsx)(a.Heading, {
+    }, a), {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
         color: "text-strong",
         children: n
-      }), (0, r.jsx)(a.Heading, {
+      }), (0, r.jsx)(o.Heading, {
         variant: "heading-sm/normal",
         color: "text-default",
         children: i
@@ -132,10 +132,10 @@ let b = e => {
       applicationId: t,
       storeListingBenefits: n,
       skuBenefits: i,
-      className: a
+      className: o
     } = e, s = _(e, ["applicationId", "storeListingBenefits", "skuBenefits", "className"]);
     return (0, r.jsx)("div", p(d({
-      className: o()(c.benefitsContainer, a)
+      className: a()(c.benefitsContainer, o)
     }, s), {
       children: (0, r.jsx)(l.GU, {
         applicationId: t,
@@ -151,7 +151,7 @@ let b = e => {
       className: n
     } = e, i = _(e, ["children", "className"]);
     return (0, r.jsx)("div", p(d({
-      className: o()(c.container, n)
+      className: a()(c.container, n)
     }, i), {
       children: t
     }))

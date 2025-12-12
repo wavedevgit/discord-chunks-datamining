@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 199649, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -26,22 +26,22 @@ function g(e) {
   } = e, y = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
   (0, o.Z)(b.id);
   let v = (0, s.Z)(b.id),
-    _ = b.isSystemDM(),
-    O = y && !_ && !b.isMultiUserDM(),
-    x = {};
-  if (_) {
+    O = b.isSystemDM(),
+    x = y && !O && !b.isMultiUserDM(),
+    E = {};
+  if (O) {
     let e = v ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
-    x.message = m.intl.string(m.t.Bt2N7D), x.subtitle = m.intl.string(m.t["n/Vzkw"]), x.buttonText = e, x.buttonIcon = v ? l.rgF : true, x.onButtonClick = () => {
+    E.message = m.intl.string(m.t.Bt2N7D), E.subtitle = m.intl.string(m.t["n/Vzkw"]), E.buttonText = e, E.buttonIcon = v ? l.rgF : true, E.onButtonClick = () => {
       if (v) {
-        open(f.D2), u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
+        open(h.D2), u.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
-          target: f.D2
+          target: h.D2
         });
         return
       }
-      open(d.Z.getArticleURL(h.BhN.SYSTEM_DMS))
-    }, x.imageSrc = n(780961)
-  } else O && (x.message = m.intl.string(m.t["9T6N5/"]), x.buttonText = m.intl.string(m.t.XyHpKH), x.onButtonClick = () => {
+      open(d.Z.getArticleURL(f.BhN.SYSTEM_DMS))
+    }, E.imageSrc = n(780961)
+  } else x && (E.message = m.intl.string(m.t["9T6N5/"]), E.buttonText = m.intl.string(m.t.XyHpKH), E.onButtonClick = () => {
     a.Z.unblockUser(b.getRecipientId())
   });
   return (0, i.jsx)(p.Z, (t = function(e) {
@@ -61,7 +61,7 @@ function g(e) {
       })
     }
     return e
-  }({}, x), g = g = {
+  }({}, E), g = g = {
     children: C
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
     var n = Object.keys(e);

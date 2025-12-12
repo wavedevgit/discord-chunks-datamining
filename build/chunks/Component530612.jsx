@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
-  Chunk44093 = require("./44093.js");
+  Chunk733443 = require("./733443.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,28 +46,28 @@ function d(e) {
     eventHandlers: p
   } = (0, s.Z)({
     userId: null == n ? true : n.id,
-    size: a.EFr.SIZE_32
+    size: o.EFr.SIZE_32
   }), _ = null != (t = n.globalName) ? t : n.username;
   return (0, r.jsxs)("div", {
     className: l.container,
     children: [(0, r.jsx)("div", {
       className: l.userAvatar,
-      children: (0, r.jsx)(a.qEK, u({
-        className: o()({
+      children: (0, r.jsx)(o.qEK, u({
+        className: a()({
           [l.muted]: d
         }),
         src: f,
         "aria-label": _,
-        size: a.EFr.SIZE_32
+        size: o.EFr.SIZE_32
       }, p))
     }), (0, r.jsxs)("div", {
       className: l.usernameContainer,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(o.Text, {
         className: l.userName,
         color: d ? "text-muted" : "text-default",
         variant: "text-md/semibold",
         children: _
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: l.userName,
         color: d ? "text-muted" : "text-subtle",
         variant: "text-xs/normal",
@@ -75,7 +75,7 @@ function d(e) {
       })]
     }), (0, r.jsx)("div", {
       className: l.checkbox,
-      children: (0, r.jsx)(a.Checkbox, {
+      children: (0, r.jsx)(o.Checkbox, {
         disabled: d,
         checked: i,
         onChange: e => c(n, e),

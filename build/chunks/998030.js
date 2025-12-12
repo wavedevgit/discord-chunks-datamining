@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk427164 = require("./427164.js"),
   Chunk46841 = require("./46841.js"),
   Chunk283066 = require("./283066.js");
-let a = (0, Chunk427164.le)({
+let o = (0, Chunk427164.le)({
   name: "2025-09-wishlist-in-dm-gifting-flow",
   kind: "user",
   defaultConfig: {
@@ -34,9 +34,9 @@ let a = (0, Chunk427164.le)({
 function s(e) {
   let {
     location: t
-  } = e, n = a.useConfig({
+  } = e, n = o.useConfig({
     location: t
-  }).enabled, r = (0, o.Z)({
+  }).enabled, r = (0, a.Z)({
     location: t
   }), s = (0, i.S)({
     location: t
@@ -49,7 +49,7 @@ function l(e) {
     location: t
   } = e, n = s({
     location: t
-  }), r = a.useConfig({
+  }), r = o.useConfig({
     location: t
   });
   return n && r.shouldShowShopBannerWhenWishlistEmpty

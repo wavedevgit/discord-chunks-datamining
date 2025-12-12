@@ -18,7 +18,7 @@ let c = (0, Chunk748521.F)((e, t) => ({
   isLoading: false,
   inProgressLocale: true,
   error: true,
-  localeData: o.default,
+  localeData: a.default,
   setLoadingStarted: t => e({
     isLoading: true,
     inProgressLocale: t
@@ -66,7 +66,7 @@ async function d(e) {
 async function f(e) {
   let t = c.getState(),
     r = n(602473).q[e];
-  if (null == r) return void t.setLocaleData(o.default);
+  if (null == r) return void t.setLocaleData(a.default);
   let i = await r();
   {
     let {

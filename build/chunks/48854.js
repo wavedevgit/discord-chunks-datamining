@@ -2,13 +2,13 @@
 /** chunk id: 48854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => a
+  r: () => o
 });
 var Chunk709054 = require("./709054.js");
 let i = 0,
-  o = new Chunk709054.SnowflakeSequence;
+  a = new Chunk709054.SnowflakeSequence;
 
-function a() {
+function o() {
   let e = Date.now();
-  return i !== module && (o.reset(), i = module), Chunk709054.default.fromTimestampWithSequence(module, o)
+  return i !== module && (a.reset(), i = module), Chunk709054.default.fromTimestampWithSequence(module, a)
 }

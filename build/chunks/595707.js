@@ -33,8 +33,8 @@ function u(e) {
     style: n,
     children: r,
     defaultClassName: i,
-    defaultChildren: o,
-    defaultStyle: a,
+    defaultChildren: a,
+    defaultStyle: o,
     values: l
   } = e;
   return (0, s.useMemo)(() => {
@@ -44,20 +44,20 @@ function u(e) {
       defaultClassName: i
     }) : t, s = "function" == typeof n ? n({
       ...l,
-      defaultStyle: a || {}
+      defaultStyle: o || {}
     }) : n, c = "function" == typeof r ? r({
       ...l,
-      defaultChildren: o
-    }) : null == r ? o : r, {
+      defaultChildren: a
+    }) : null == r ? a : r, {
       className: null != e ? e : i,
-      style: s || a ? {
-        ...a,
+      style: s || o ? {
+        ...o,
         ...s
       } : true,
-      children: null != c ? c : o,
+      children: null != c ? c : a,
       "data-rac": ""
     }
-  }, [t, n, r, i, o, a, l])
+  }, [t, n, r, i, a, o, l])
 }
 
 function d(e, t) {
@@ -77,9 +77,9 @@ function d(e, t) {
 
 function f(e, t, n) {
   let {
-    ref: a,
+    ref: o,
     ...l
-  } = d(n, e.slot) || {}, c = (0, r.B)((0, s.useMemo)(() => (0, i.l)(t, a), [t, a])), u = (0, o.d)(l, e);
+  } = d(n, e.slot) || {}, c = (0, r.B)((0, s.useMemo)(() => (0, i.l)(t, o), [t, o])), u = (0, a.d)(l, e);
   return "style" in l && l.style && "style" in e && e.style && ("function" == typeof l.style || "function" == typeof e.style ? u.style = t => {
     let n = "function" == typeof l.style ? l.style(t) : l.style,
       r = {
@@ -104,7 +104,7 @@ function p(e = true) {
   let [t, n] = (0, s.useState)(e), r = (0, s.useRef)(false), i = (0, s.useCallback)(e => {
     r.current = true, n(!!e)
   }, []);
-  return (0, a.b)(() => {
+  return (0, o.b)(() => {
     r.current || n(false)
   }, []), [i, t]
 }

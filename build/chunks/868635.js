@@ -2,13 +2,13 @@
 /** chunk id: 868635, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => o,
+  G: () => a,
   v: () => i
 });
 var Chunk708644 = require("./708644.js"),
   i = (0, Chunk708644.HP)(function() {
     return /firefox/i.test(navigator.userAgent)
   }),
-  o = (0, Chunk708644.HP)(function() {
+  a = (0, Chunk708644.HP)(function() {
     return !!window.safari
   })

@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
   Chunk871499 = require("./871499.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk808602 = require("./808602.js");
+  Chunk71425 = require("./71425.js");
 
 function f(e) {
   let {
@@ -24,11 +24,11 @@ function f(e) {
     children: [(0, r.jsx)(s.CJ0, {
       size: "md",
       color: "currentColor",
-      className: a()(n ? d.upCaret : d.leftCaret, t)
+      className: o()(n ? d.upCaret : d.leftCaret, t)
     }), (0, r.jsx)(s.BFJ, {
       size: "md",
       color: "currentColor",
-      className: a()(d.members, t)
+      className: o()(d.members, t)
     })]
   })
 }
@@ -43,11 +43,11 @@ function p(e) {
     children: [(0, r.jsx)(s.CJ0, {
       size: "md",
       color: "currentColor",
-      className: a()(n ? d.downCaret : d.rightCaret, t)
+      className: o()(n ? d.downCaret : d.rightCaret, t)
     }), n && (0, r.jsx)(s.BFJ, {
       size: "md",
       color: "currentColor",
-      className: a()(d.members, t)
+      className: o()(d.members, t)
     })]
   })
 }
@@ -56,29 +56,29 @@ function _(e) {
   let {
     channelId: t,
     className: n,
-    isParticipantsOpen: o,
+    isParticipantsOpen: a,
     isVertical: s = false,
     hideTooltip: _ = false
   } = e;
 
   function m() {
-    l.Z.toggleParticipants(t, !o)
+    l.Z.toggleParticipants(t, !a)
   }
   let h = i.useCallback(e => {
     let {
       className: t
     } = e;
-    return o ? (0, r.jsx)(p, {
+    return a ? (0, r.jsx)(p, {
       className: t,
       isVertical: s
     }) : (0, r.jsx)(f, {
       className: t,
       isVertical: s
     })
-  }, [o, s]);
+  }, [a, s]);
   return (0, r.jsx)(c.Z, {
-    label: o ? u.intl.string(u.t.QJMRUB) : u.intl.string(u.t.vZiwmG),
-    className: a()(d.participantsButton, n),
+    label: a ? u.intl.string(u.t.QJMRUB) : u.intl.string(u.t.vZiwmG),
+    className: o()(d.participantsButton, n),
     onClick: m,
     iconComponent: h,
     shouldShowTooltip: !_

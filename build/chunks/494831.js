@@ -1,10 +1,10 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 494831, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Cl: () => u,
-  ey: () => d,
-  pM: () => f
+  Cl: () => d,
+  ey: () => u,
+  pM: () => b
 });
 var Chunk149765 = require("./149765.js"),
   Chunk900089 = require("./900089.js"),
@@ -13,14 +13,14 @@ var Chunk149765 = require("./149765.js"),
   Chunk981631 = require("./981631.js"),
   Chunk141006 = require("./141006.js"),
   Chunk388032 = require("./388032.jsx");
-let u = 371,
-  d = 30,
+let d = 371,
+  u = 30,
   g = Chunk700785.TP;
 Chunk149765.Od(g, Chunk981631.Plq.MENTION_EVERYONE);
-let m = Chunk149765.$e(g, Chunk981631.Plq.VIEW_AUDIT_LOG, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MUTE_MEMBERS, Chunk981631.Plq.DEAFEN_MEMBERS, Chunk981631.Plq.MOVE_MEMBERS, Chunk981631.Plq.PRIORITY_SPEAKER, Chunk981631.Plq.MODERATE_MEMBERS),
-  p = Chunk149765.$e(m, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_THREADS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.SEND_TTS_MESSAGES);
-Chunk149765.IH(p, Chunk981631.Plq.VIEW_GUILD_ANALYTICS), (0, Chunk900089.Fw)("BRAND_500"), Chunk700785.Hn, (0, Chunk900089.Fw)("GREEN_360"), (0, Chunk900089.Fw)("YELLOW_300"), (0, Chunk900089.Fw)("RED_400");
-let f = [{
+let f = Chunk149765.$e(g, Chunk981631.Plq.VIEW_AUDIT_LOG, Chunk981631.Plq.MANAGE_NICKNAMES, Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS, Chunk981631.Plq.MANAGE_MESSAGES, Chunk981631.Plq.MUTE_MEMBERS, Chunk981631.Plq.DEAFEN_MEMBERS, Chunk981631.Plq.MOVE_MEMBERS, Chunk981631.Plq.PRIORITY_SPEAKER, Chunk981631.Plq.MODERATE_MEMBERS),
+  m = Chunk149765.$e(f, Chunk981631.Plq.MANAGE_CHANNELS, Chunk981631.Plq.MANAGE_THREADS, Chunk981631.Plq.MANAGE_ROLES, Chunk981631.Plq.MANAGE_GUILD_EXPRESSIONS, Chunk981631.Plq.MANAGE_GUILD, Chunk981631.Plq.MANAGE_WEBHOOKS, Chunk981631.Plq.SEND_TTS_MESSAGES);
+Chunk149765.IH(m, Chunk981631.Plq.VIEW_GUILD_ANALYTICS), (0, Chunk900089.Fw)("BRAND_500"), Chunk700785.Hn, (0, Chunk900089.Fw)("GREEN_360"), (0, Chunk900089.Fw)("YELLOW_300"), (0, Chunk900089.Fw)("RED_400");
+let b = [{
   id: Chunk103576.g.SOLID,
   colors: {
     primary_color: Chunk981631.p6O,

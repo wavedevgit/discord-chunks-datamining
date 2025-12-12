@@ -26,7 +26,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk73346 = require("./73346.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk550125 = require("./550125.js");
+  Chunk961482 = require("./961482.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,7 +90,7 @@ class R extends(r = Chunk473749.Component) {
   renderViewInStoreButton() {
     return (0, Chunk54381.jsx)(Chunk755721.zx.Link, {
       to: this.getStoreListingLocation(),
-      className: Chunk550125.actionButton,
+      className: Chunk961482.actionButton,
       color: Chunk755721.zx.Colors.GREEN,
       size: Chunk755721.zx.Sizes.SMALL,
       children: Chunk388032.intl.string(Chunk388032.t["W+NB90"])
@@ -102,7 +102,7 @@ class R extends(r = Chunk473749.Component) {
       storeListing: t,
       width: n,
       fetchFailed: r,
-      renderFallback: o
+      renderFallback: a
     } = this.props, s = require > Chunk568836.aL;
     return null == module || null == exports ? r ? Chunk473749() : (0, Chunk54381.jsx)(Chunk568836.OR, {
       isHorizontal: Chunk442837
@@ -154,8 +154,8 @@ class R extends(r = Chunk473749.Component) {
       let {
         inLibrary: n,
         width: r,
-        renderCustomTitle: o,
-        renderCustomTagline: a,
+        renderCustomTitle: a,
+        renderCustomTagline: o,
         renderCustomMedia: s
       } = this.props, {
         playing: l,
@@ -169,8 +169,8 @@ class R extends(r = Chunk473749.Component) {
         inLibrary: n,
         onToggleMute: this.handleToggleMute,
         renderCustomActions: () => this.renderActions(e),
-        renderCustomTitle: o,
-        renderCustomTagline: a,
+        renderCustomTitle: a,
+        renderCustomTagline: o,
         renderCustomMedia: s,
         isHorizontal: u,
         isEmbed: true
@@ -180,16 +180,16 @@ class R extends(r = Chunk473749.Component) {
         inLibrary: t,
         application: n,
         skuId: r,
-        libraryApplication: o,
-        renderCustomActions: a
+        libraryApplication: a,
+        renderCustomActions: o
       } = this.props;
-      if (null != a) return (0, i.jsx)("div", {
+      if (null != o) return (0, i.jsx)("div", {
         className: T.tileActions,
-        children: a()
+        children: o()
       });
       if (null == n) return null;
       let s = null != n && n.primarySkuId === r,
-        c = null != o && o.hasFlag(S.eHb.HIDDEN);
+        c = null != a && a.hasFlag(S.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: T.tileActions,
         children: [!s || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {

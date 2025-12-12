@@ -1,11 +1,9 @@
-/** Chunk was on 88499 **/
-/** chunk id: 861526, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 861526, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
-  button: "button__67645",
-  orangeGlow: "orangeGlow__67645",
-  redGlow: "redGlow__67645",
-  enabled: "enabled__67645",
-  disabled: "disabled__67645",
-  plated: "plated__67645",
-  plateMuted: "plateMuted__67645"
+  container: "c501831bd1d46894-container",
+  textContainer: "c501831bd1d46894-textContainer",
+  headerContainer: "c501831bd1d46894-headerContainer",
+  icon: "c501831bd1d46894-icon"
 }

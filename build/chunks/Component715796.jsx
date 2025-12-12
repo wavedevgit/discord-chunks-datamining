@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 715796, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  P: () => u
+  P: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,13 +12,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
+function d(e) {
   let t = (null == e ? true : e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === true,
-    u = (null == e ? true : e.features.has(c.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
-    d = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
-    g = null != e && (0, a.eM)(e, d);
+    d = (null == e ? true : e.features.has(c.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
+    u = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
+    g = null != e && (0, s.eM)(e, u);
   i.useEffect(() => {
-    null != e && t && g && (0, s.ZDy)(async () => {
+    null != e && t && g && (0, a.ZDy)(async () => {
       let {
         default: t
       } = await n.e("710").then(n.bind(n, 32342));
@@ -43,7 +43,7 @@ function u(e) {
           return e
         }({}, n), l = l = {
           guildId: e.id,
-          requireTeamSetup: u
+          requireTeamSetup: d
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -56,5 +56,5 @@ function u(e) {
         }), i))
       }
     })
-  }, [t, u, e, g])
+  }, [t, d, e, g])
 }

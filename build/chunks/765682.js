@@ -8,7 +8,7 @@ require.d(exports, {
   LN: () => i,
   RA: () => g,
   SH: () => p,
-  _$: () => o,
+  _$: () => a,
   aK: () => u,
   km: () => h,
   pS: () => s,
@@ -31,7 +31,7 @@ let i = {
     samedi: 6,
     sam: 6
   },
-  o = {
+  a = {
     janvier: 1,
     jan: 1,
     "jan.": 1,
@@ -72,7 +72,7 @@ let i = {
     dec: 12,
     "dec.": 12
   },
-  a = {
+  o = {
     un: 1,
     deux: 2,
     trois: 3,
@@ -111,11 +111,11 @@ let i = {
     année: "year",
     années: "year"
   },
-  l = `(?:${(0,Chunk800911.q3)(a)}|[0-9]+|[0-9]+\\.[0-9]+|une?\\b|quelques?|demi-?)`;
+  l = `(?:${(0,Chunk800911.q3)(o)}|[0-9]+|[0-9]+\\.[0-9]+|une?\\b|quelques?|demi-?)`;
 
 function c(e) {
   let t = e.toLowerCase();
-  return true !== a[t] ? a[t] : "une" === t || "un" === t ? 1 : t.match(/quelques?/) ? 3 : t.match(/demi-?/) ? .5 : parseFloat(t)
+  return true !== o[t] ? o[t] : "une" === t || "un" === t ? 1 : t.match(/quelques?/) ? 3 : t.match(/demi-?/) ? .5 : parseFloat(t)
 }
 let u = "(?:[0-9]{1,2}(?:er)?)";
 

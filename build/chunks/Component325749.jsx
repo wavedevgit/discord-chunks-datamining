@@ -45,16 +45,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk225639 = require("./225639.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk896681 = require("./896681.js");
+  Chunk153438 = require("./153438.js");
 let V = Chunk884338.u8.SIZE_24;
 
 function G(e) {
   let {
     applicationId: n,
     channelId: t
-  } = e, i = (0, a.e7)([v.Z], () => v.Z.getApplication(n)), G = (0, a.e7)([R.ZP], () => R.ZP.getSelfEmbeddedActivities().get(n)), F = (0, a.e7)([_.Z], () => _.Z.getChannel(t)), H = j.Sb.useSetting(), q = (0, a.Wu)([T.ZP], () => {
+  } = e, i = (0, a.e7)([m.Z], () => m.Z.getApplication(n)), G = (0, a.e7)([R.ZP], () => R.ZP.getSelfEmbeddedActivities().get(n)), F = (0, a.e7)([T.Z], () => T.Z.getChannel(t)), H = j.Sb.useSetting(), q = (0, a.Wu)([w.ZP], () => {
     var e;
-    return null == F || null == G ? [] : Array.from(null != (e = G.userIds) ? e : []).map(e => T.ZP.getMember(F.guild_id, e))
+    return null == F || null == G ? [] : Array.from(null != (e = G.userIds) ? e : []).map(e => w.ZP.getMember(F.guild_id, e))
   }, [G, F]), X = o.useMemo(() => {
     let e = new Map;
     return q.forEach(n => {
@@ -64,7 +64,7 @@ function G(e) {
     var t;
     if (null == e || e === D.ag) return null;
     let o = X.get(e.id),
-      i = null != (t = null == o ? true : o.nick) ? t : N.ZP.getName(e);
+      i = null != (t = null == o ? true : o.nick) ? t : _.ZP.getName(e);
     return (0, r.jsx)(u.u, {
       asContainer: true,
       text: i,
@@ -75,9 +75,9 @@ function G(e) {
         className: J.avatar
       }, e.id)
     }, e.id)
-  }, [X]), Q = null == G ? true : G.userIds, ee = (0, a.Wu)([w.default], () => Array.from(null != Q ? Q : []).map(e => w.default.getUser(e)).filter(e => null != e), [Q]), en = o.useCallback(() => {
+  }, [X]), Q = null == G ? true : G.userIds, ee = (0, a.Wu)([S.default], () => Array.from(null != Q ? Q : []).map(e => S.default.getUser(e)).filter(e => null != e), [Q]), en = o.useCallback(() => {
     let e = (0, E.getPID)();
-    p.Z.setInputLocked(!b.Z.isInputLocked(e), e)
+    p.Z.setInputLocked(!v.Z.isInputLocked(e), e)
   }, []), et = (0, U.P)(), {
     canStayOnTop: er,
     popoutWindowAlwaysOnTop: eo,
@@ -88,7 +88,7 @@ function G(e) {
         O.setAlwaysOnTop(M.KJ3.ACTIVITY_POPOUT, e)
       }, []);
     return {
-      canStayOnTop: S.isPlatformEmbedded && A.ZP.supportsFeature(M.eRX.POPOUT_WINDOWS),
+      canStayOnTop: N.isPlatformEmbedded && A.ZP.supportsFeature(M.eRX.POPOUT_WINDOWS),
       popoutWindowAlwaysOnTop: e,
       handleStayOnTop: n
     }
@@ -117,7 +117,7 @@ function G(e) {
     }
   }(), es = o.useRef(null);
   if (null == i || null == G) return null;
-  let ed = (0, r.jsx)(m.Z, {
+  let ed = (0, r.jsx)(b.Z, {
     application: i,
     size: 24,
     className: J.appIcon

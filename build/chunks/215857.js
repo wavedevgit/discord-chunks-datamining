@@ -13,11 +13,11 @@ function i(e, t) {
   }
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,9 +30,9 @@ require.d(exports, {
 });
 var s = function() {
   function e(t, n) {
-    r(this, e), a(this, "ownerDocument", null), a(this, "globalContext", true), a(this, "optionsArgs", true), this.globalContext = t, this.optionsArgs = n
+    r(this, e), o(this, "ownerDocument", null), o(this, "globalContext", true), o(this, "optionsArgs", true), this.globalContext = t, this.optionsArgs = n
   }
-  return o(module, [{
+  return a(module, [{
     key: "window",
     get: function() {
       return this.globalContext ? this.globalContext : "undefined" != typeof window ? window : true

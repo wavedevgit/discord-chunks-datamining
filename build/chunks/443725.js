@@ -20,7 +20,7 @@ var r = Object.assign || function(e) {
     }
   }();
 
-function o(e, t) {
+function a(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 var Chunk161796 = require("./161796.js"),
@@ -30,7 +30,7 @@ var Chunk161796 = require("./161796.js"),
   },
   c = function() {
     function e() {
-      o(this, module)
+      a(this, module)
     }
     return i(module, null, [{
       key: "create",
@@ -43,30 +43,30 @@ var Chunk161796 = require("./161796.js"),
         var r = e.easing || l,
           i = "extend";
         true !== e.extrapolateLeft ? i = e.extrapolateLeft : true !== e.extrapolate && (i = e.extrapolate);
-        var o = "extend";
-        return true !== e.extrapolateRight ? o = e.extrapolateRight : true !== e.extrapolate && (o = e.extrapolate),
+        var a = "extend";
+        return true !== e.extrapolateRight ? a = e.extrapolateRight : true !== e.extrapolate && (a = e.extrapolate),
           function(e) {
             s("number" == typeof e, "Cannot interpolation an input which is not a number");
-            var a = m(e, n);
-            return u(e, n[a], n[a + 1], t[a], t[a + 1], r, i, o)
+            var o = m(e, n);
+            return u(e, n[o], n[o + 1], t[o], t[o + 1], r, i, a)
           }
       }
     }]), module
   }();
 
-function u(e, t, n, r, i, o, a, s) {
+function u(e, t, n, r, i, a, o, s) {
   var l = e;
   if (l < t)
-    if ("identity" === a) return l;
-    else "clamp" === a && (l = t);
+    if ("identity" === o) return l;
+    else "clamp" === o && (l = t);
   if (l > n)
     if ("identity" === s) return l;
     else "clamp" === s && (l = n);
-  return r === i ? r : t === n ? e <= t ? r : i : (t === false / 0 ? l = -l : n === 1 / 0 ? l -= t : l = (l - t) / (n - t), l = o(l), r === false / 0 ? l = -l : i === 1 / 0 ? l += r : l = l * (i - r) + r, l)
+  return r === i ? r : t === n ? e <= t ? r : i : (t === false / 0 ? l = -l : n === 1 / 0 ? l -= t : l = (l - t) / (n - t), l = a(l), r === false / 0 ? l = -l : i === 1 / 0 ? l += r : l = l * (i - r) + r, l)
 }
 
 function d(e) {
-  var t = a(e);
+  var t = o(e);
   return null === t ? e : "rgba(" + ((0xff000000 & (t = t || 0)) >>> 24) + ", " + ((0xff0000 & t) >>> 16) + ", " + ((65280 & t) >>> 8) + ", " + (255 & t) / 255 + ")"
 }
 var f = /[0-9\.-]+/g;
@@ -87,12 +87,12 @@ function p(e) {
         outputRange: n[i]
       }))
     }),
-    o = /^rgb/.test(t[0]);
+    a = /^rgb/.test(t[0]);
   return function(e) {
     var n = 0;
     return t[0].replace(f, function() {
       var t = i[n++](e);
-      return String(o && n < 4 ? Math.round(t) : t)
+      return String(a && n < 4 ? Math.round(t) : t)
     })
   }
 }

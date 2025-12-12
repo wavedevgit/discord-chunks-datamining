@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 444982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk239091 = require("./239091.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,7 +41,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = {
+let x = {
   [Chunk981631.Odu.VIDEO]: {
     renderWidget(e) {
       let {
@@ -61,18 +61,18 @@ let S = {
         locked: n,
         size: r,
         padding: l,
-        borderWidth: o,
-        showEmpty: a
+        borderWidth: a,
+        showEmpty: o
       } = e;
-      return (0, d.js)(t) ? (0, i.jsx)(f.Z, {
+      return (0, d.js)(t) ? (0, i.jsx)(p.Z, {
         id: t.id,
         locked: n,
         widget: t,
-        height: "auto" === r.height ? 0 : r.height - 2 * l - 2 * o,
-        width: "auto" === r.width ? 0 : r.width - 2 * l - 2 * o,
-        showEmpty: a,
+        height: "auto" === r.height ? 0 : r.height - 2 * l - 2 * a,
+        width: "auto" === r.width ? 0 : r.width - 2 * l - 2 * a,
+        showEmpty: o,
         padding: l,
-        borderWidth: o
+        borderWidth: a
       }) : null
     },
     renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
@@ -85,7 +85,7 @@ let S = {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, _(b({}, n), {
+            return n => (0, i.jsx)(t, S(E({}, n), {
               widget: e
             }))
           })
@@ -104,17 +104,17 @@ let S = {
         widget: n,
         anchorLeft: r,
         locked: l,
-        showEmpty: o
+        showEmpty: a
       } = e;
       return (0, d.Aw)(n) ? (0, i.jsx)(m.ZP, {
         anchorLeft: r,
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: v.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : O.At,
+        widget: O.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : y.At,
         isPreviewingInGame: false,
-        showEmpty: o
+        showEmpty: a
       }) : null
     },
     renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
@@ -127,7 +127,7 @@ let S = {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, E({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -142,7 +142,7 @@ let S = {
         widget: t,
         locked: n
       } = e;
-      return (0, i.jsx)(a.Z, {
+      return (0, i.jsx)(o.Z, {
         id: t.id,
         locked: n,
         pinned: t.pinned
@@ -158,7 +158,7 @@ let S = {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, E({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -174,7 +174,7 @@ let S = {
         locked: n,
         anchorLeft: r
       } = e;
-      return (0, i.jsx)(h.Z, {
+      return (0, i.jsx)(f.Z, {
         id: t.id,
         anchorLeft: r,
         locked: n,
@@ -196,12 +196,12 @@ let S = {
         widget: n,
         locked: r,
         size: l,
-        dragStart: o,
-        anchorTop: a,
+        dragStart: a,
+        anchorTop: o,
         anchorLeft: s,
         showEmpty: u,
-        padding: h,
-        borderWidth: p
+        padding: f,
+        borderWidth: h
       } = e;
       return (0, d.ZL)(n) ? (0, i.jsx)(c.Z, {
         id: n.id,
@@ -209,20 +209,20 @@ let S = {
         pinned: n.pinned,
         opacity: n.opacity,
         size: l,
-        anchorTop: a,
+        anchorTop: o,
         anchorLeft: s,
         widget: n,
         isPreviewingInGame: false,
-        dragStart: o,
+        dragStart: a,
         horizontal: null != (t = n.meta.horizontal) && t,
-        padding: h,
-        borderWidth: p,
+        padding: f,
+        borderWidth: h,
         showEmpty: u
       }) : null
     },
     renderTitle: e => (0, i.jsx)(g.XM, {
       widgetId: e.id,
-      children: E.intl.string(E.t["386XRo"])
+      children: v.intl.string(v.t["386XRo"])
     }),
     renderButtons(e) {
       var t;
@@ -233,7 +233,7 @@ let S = {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, _(b({}, n), {
+              return n => (0, i.jsx)(t, S(E({}, n), {
                 widget: e
               }))
             })
@@ -254,7 +254,7 @@ let S = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(p.Z, {
+      return (0, i.jsx)(h.Z, {
         locked: t
       })
     }
@@ -266,7 +266,7 @@ let S = {
         showEmpty: n,
         widget: r
       } = e;
-      return (0, i.jsx)(y.Z, {
+      return (0, i.jsx)(b.Z, {
         pinned: r.pinned,
         locked: t,
         showEmpty: n
@@ -282,7 +282,7 @@ let S = {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t => (0, i.jsx)(e, b({}, t))
+            return t => (0, i.jsx)(e, E({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -296,7 +296,7 @@ let S = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(o.ZP, {
+      return (0, i.jsx)(a.ZP, {
         locked: t
       })
     },

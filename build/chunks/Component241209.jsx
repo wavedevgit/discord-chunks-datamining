@@ -15,8 +15,8 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk772096 = require("./772096.js"),
   Chunk428595 = require("./428595.js"),
   Chunk532901 = require("./532901.jsx"),
-  Chunk963071 = require("./963071.js"),
-  Chunk154257 = require("./154257.js");
+  Chunk510609 = require("./510609.js"),
+  Chunk164701 = require("./164701.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,14 +65,14 @@ let I = O(b({}, u().defaultRules), {
     heading: O(b({}, u().defaultRules.heading), {
       react(e, t, n) {
         let r = "h".concat(e.level);
-        return (0, o.jsx)(f.Z, {
+        return (0, a.jsx)(f.Z, {
           tag: r,
           children: t(e.content, n)
         }, n.key)
       }
     }),
     paragraph: O(b({}, u().defaultRules.paragraph), {
-      react: (e, t, n) => (0, o.jsx)("div", {
+      react: (e, t, n) => (0, a.jsx)("div", {
         className: h.paragraph,
         children: t(e.content, n)
       }, n.key)
@@ -95,7 +95,7 @@ let I = O(b({}, u().defaultRules), {
       order: 6
     }),
     blockQuote: O(b({}, u().defaultRules.blockQuote), {
-      react: (e, t, n) => (0, o.jsx)("blockquote", {
+      react: (e, t, n) => (0, a.jsx)("blockquote", {
         className: h.blockquote,
         children: S(e)
       }, n.key)
@@ -115,20 +115,20 @@ let I = O(b({}, u().defaultRules), {
     }),
     inlineCode: O(b({}, Chunk428595.Z.RULES.inlineCode), {
       order: 6,
-      react: (e, t, n) => (0, o.jsx)("code", {
+      react: (e, t, n) => (0, a.jsx)("code", {
         className: h.codeInline,
         children: S(e)
       }, n.key)
     }),
     codeBlock: O(b({}, u().defaultRules.codeBlock), {
       react(e, t, r) {
-        let i = () => (0, o.jsx)("pre", {
-          children: (0, o.jsx)("code", {
+        let i = () => (0, a.jsx)("pre", {
+          children: (0, a.jsx)("code", {
             className: l()(g.scrollbarGhostHairline, "hljs"),
             children: S(e)
           })
         }, r.key);
-        return (0, o.jsx)(d.GI, {
+        return (0, a.jsx)(d.GI, {
           createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
           webpackId: 364964,
           renderFallback: i,
@@ -136,8 +136,8 @@ let I = O(b({}, u().defaultRules), {
             if (!(e.lang && t.hasLanguage(e.lang)) || "string" != typeof e.content) return i();
             {
               let n = t.highlight(e.lang, e.content, true);
-              return null == n ? i() : (0, o.jsx)("pre", {
-                children: (0, o.jsx)("code", {
+              return null == n ? i() : (0, a.jsx)("pre", {
+                children: (0, a.jsx)("code", {
                   className: l()(g.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
@@ -160,11 +160,11 @@ class A extends(i = Chunk473749.PureComponent) {
       state: n,
       parser: r,
       output: i
-    } = this.props, a = i(r("".concat(exports, "\n\n"), b({
+    } = this.props, o = i(r("".concat(exports, "\n\n"), b({
       inline: false
     }, require)));
     return (0, Chunk54381.jsx)("div", {
-      className: l()(Chunk963071.markdown, module),
+      className: l()(Chunk510609.markdown, module),
       children: Chunk473749
     })
   }

@@ -75,8 +75,8 @@ function N(e) {
   if (null == e) return;
   let r = e.animated;
   if (null == r && null != e.id) {
-    var i, o;
-    r = null != (o = null == (i = a.ZP.getCustomEmojiById(e.id)) ? true : i.animated) && o
+    var i, a;
+    r = null != (a = null == (i = o.ZP.getCustomEmojiById(e.id)) ? true : i.animated) && a
   }
   let l = t && null != r && r;
   return {
@@ -97,15 +97,15 @@ function P(e) {
 }
 
 function R(e, t) {
-  var n, r, i, o;
+  var n, r, i, a;
   let {
-    formattedExpirationLabel: a
+    formattedExpirationLabel: o
   } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, {
     poll: s
   } = e;
   if (null == s) return;
   let p = e.state === S.yb.SENT,
-    _ = p ? null != a ? a : (0, v.H)(s.expiry) : "",
+    _ = p ? null != o ? o : (0, v.H)(s.expiry) : "",
     m = null == _ && p,
     {
       selectedAnswerIds: h,
@@ -117,7 +117,7 @@ function R(e, t) {
     I = true;
   if (!P(e)) {
     let t = f.Z.getMessage(e.channel_id, e.id);
-    I = !e.isSearchHit && null != t, O = null != (o = null == t ? true : t.reactions) ? o : O
+    I = !e.isSearchHit && null != t, O = null != (a = null == t ? true : t.reactions) ? a : O
   }
   let C = h.size > 0,
     A = O.some(e => true === e.me_vote),
@@ -152,7 +152,7 @@ function R(e, t) {
 }
 
 function w(e, t) {
-  var n, a;
+  var n, o;
   let {
     animateEmoji: s = false,
     theme: l = "dark",
@@ -163,8 +163,8 @@ function w(e, t) {
   if (null == d) return;
   let f = p.default.getCurrentUser();
   if (null == f) return;
-  let _ = o.Z.useReducedMotion,
-    m = null == (a = u.Z.getChannel(e.getChannelId())) || null == (n = a.getGuildId) ? true : n.call(a),
+  let _ = a.Z.useReducedMotion,
+    m = null == (o = u.Z.getChannel(e.getChannelId())) || null == (n = o.getGuildId) ? true : n.call(o),
     g = (0, y.E)(f, m),
     v = d.answers,
     S = d.layout_type,
@@ -195,14 +195,14 @@ function w(e, t) {
     let r = C(Z, "".concat(e.answer_id));
     return null != (n = null == r || null == (t = r.count_details) ? true : t.vote) ? n : 0
   })), z = v.map(e => {
-    var t, n, o;
-    let a = "".concat(e.answer_id),
-      l = C(Z, a),
+    var t, n, a;
+    let o = "".concat(e.answer_id),
+      l = C(Z, o),
       c = null != (n = null == l || null == (t = l.count_details) ? true : t.vote) ? n : 0,
       u = 0 === Y ? 0 : c / Y,
-      d = F.has(a),
+      d = F.has(o),
       f = c >= K && 0 !== c,
-      p = M && null != (o = null == l ? true : l.me_vote) && o,
+      p = M && null != (a = null == l ? true : l.me_vote) && a,
       m = A({
         didSelfVote: p,
         hasVoted: M,
@@ -212,7 +212,7 @@ function w(e, t) {
         showResults: H
       });
     return {
-      answerId: a,
+      answerId: o,
       pollMedia: {
         text: e.poll_media.text,
         emoji: N(e.poll_media.emoji, {

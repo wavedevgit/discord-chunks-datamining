@@ -1,7 +1,7 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -82,7 +82,7 @@ let g = [{
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("45965")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(i, p(h({}, n), {
         guild: e,
         channel: t,
@@ -90,7 +90,7 @@ let g = [{
       }))
     })
   }],
-  m = e => {
+  b = e => {
     let {
       guild: t,
       channel: n
@@ -103,13 +103,13 @@ let g = [{
           handler: u,
           renderIcon: d
         } = e, f = "".concat(i, "-").concat(t.id);
-        return (0, r.jsx)(o.m, {
+        return (0, r.jsx)(a.m, {
           id: f,
           renderIcon: d,
           text: c(),
           selected: l && "JOIN_SERVERS" === i,
           onClick: null != n ? () => u(t, n) : true,
-          trailing: "JOIN_SERVERS" === i && s > 0 ? (0, a.N)(s) : null
+          trailing: "JOIN_SERVERS" === i && s > 0 ? (0, o.N)(s) : null
         }, f)
       })
     })

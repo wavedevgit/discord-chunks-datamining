@@ -13,19 +13,19 @@ function i(e) {
   let t = e.match(/<([A-Za-z_][A-Za-z0-9._-]*)([^>]*)>/);
   if (!t) return e;
   let n = t[1],
-    r = o(e),
-    i = a(e).filter(e => false === r.indexOf(e));
+    r = a(e),
+    i = o(e).filter(e => false === r.indexOf(e));
   return 0 === i.length ? e : c(e, n, l(i))
 }
 
-function o(e) {
+function a(e) {
   let t, n = [],
     r = /xmlns:([\w-]+)=["'][^"']+["']/g;
   for (; null !== (t = r.exec(e));) false === n.indexOf(t[1]) && n.push(t[1]);
   return n
 }
 
-function a(e) {
+function o(e) {
   let t, n = [],
     r = /\b([A-Za-z_][A-Za-z0-9._-]*):[A-Za-z_][A-Za-z0-9._-]*\b/g;
   for (; null !== (t = r.exec(e));) {

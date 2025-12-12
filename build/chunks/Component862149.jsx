@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 862149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,14 +10,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk495940 = require("./495940.js");
+  Chunk972237 = require("./972237.js");
 
 function u(e) {
   let {
     withHeader: t = true,
     size: n = 15
-  } = e, i = (0, a.e7)([s.Z], () => s.Z.useReducedMotion);
-  return (0, r.jsxs)(o.Kqy, {
+  } = e, i = (0, o.e7)([s.Z], () => s.Z.useReducedMotion);
+  return (0, r.jsxs)(a.Kqy, {
     gap: 4,
     children: [t && (0, r.jsx)("div", {
       className: l()(c.wrapper, {
@@ -54,19 +54,19 @@ function f() {
       gap: 12,
       padding: 4
     },
-    className: l()(Chunk495940.wrapper, {
-      [Chunk495940.noAnimation]: module
+    className: l()(Chunk972237.wrapper, {
+      [Chunk972237.noAnimation]: module
     }),
     children: [(0, Chunk54381.jsx)("div", {
-      className: l()(Chunk495940.avatar, Chunk495940.loadingAnimation)
+      className: l()(Chunk972237.avatar, Chunk972237.loadingAnimation)
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk495940.lineContainer,
+      className: Chunk972237.lineContainer,
       children: [(0, Chunk54381.jsx)(d, {
-        className: l()(Chunk495940.lineMedium, Chunk495940.loadingAnimation)
+        className: l()(Chunk972237.lineMedium, Chunk972237.loadingAnimation)
       }), (0, Chunk54381.jsx)(d, {
-        className: l()(Chunk495940.lineShort, Chunk495940.loadingAnimation)
+        className: l()(Chunk972237.lineShort, Chunk972237.loadingAnimation)
       }), (0, Chunk54381.jsx)(d, {
-        className: l()(Chunk495940.lineLong, Chunk495940.loadingAnimation)
+        className: l()(Chunk972237.lineLong, Chunk972237.loadingAnimation)
       })]
     })]
   })

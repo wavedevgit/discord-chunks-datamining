@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk801292 = require("./801292.js");
+  Chunk282341 = require("./282341.js");
 let m = [{
   name: "gif",
   extensions: ["gif"]
@@ -25,7 +25,7 @@ function h(e) {
   let {
     showRemoveAvatarButton: t,
     errors: n,
-    onAvatarChange: o,
+    onAvatarChange: a,
     sectionTitle: h,
     changeAvatarButtonText: g,
     guildId: E,
@@ -54,7 +54,7 @@ function h(e) {
     children: (0, r.jsxs)("div", {
       className: _.buttonsContainer,
       children: [(0, r.jsx)(T, {
-        className: a()({
+        className: o()({
           [_.buttonHighlighted]: S
         }),
         size: s.zx.Sizes.SMALL,
@@ -67,7 +67,7 @@ function h(e) {
           variant: "secondary",
           size: "sm",
           text: null != E ? p.intl.string(p.t.TDjKDm) : p.intl.string(p.t.twB3fz),
-          onClick: () => o(null)
+          onClick: () => a(null)
         })
       })]
     })

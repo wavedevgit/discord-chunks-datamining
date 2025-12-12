@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk494296 = require("./494296.js");
+  Chunk154236 = require("./154236.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ function U(e) {
   }), Q = (null == Z || null == (t = Z.userStatus) ? true : t.claimedAt) != null, X = (null == Z || null == (I = Z.userStatus) ? true : I.enrolledAt) != null, J = (null == Z || null == (x = Z.userStatus) ? true : x.completedAt) != null, $ = (0, s.e7)([h.Z], () => h.Z.getState().theme), ee = (0, c.wj)($) ? R.BR.DARK : R.BR.LIGHT, et = (0, s.e7)([_.Z], () => _.Z.useReducedMotion), {
     ref: en,
     height: er
-  } = (0, p.ZP)(), [ei, eo] = i.useState(et), ea = (0, m.Aq)(), es = (0, a.eg)();
+  } = (0, p.ZP)(), [ei, ea] = i.useState(et), eo = (0, m.Aq)(), es = (0, o.eg)();
   i.useEffect(() => {
     let e = es.current;
     return null == e || e.addEventListener("scroll", H), () => {
@@ -108,7 +108,7 @@ function U(e) {
         tension: 450,
         friction: 45
       },
-      onRest: () => eo(true)
+      onRest: () => ea(true)
     }),
     ec = (0, u.Yzy)(ei, {
       from: {
@@ -121,7 +121,7 @@ function U(e) {
       }
     }),
     eu = () => {
-      ea.dispatch(P.CkL.POPOUT_CLOSE)
+      eo.dispatch(P.CkL.POPOUT_CLOSE)
     },
     ed = "top" === V ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j),
     ef = () => {
@@ -205,7 +205,7 @@ function U(e) {
         tileAssetType: "game"
       }
     })();
-  return (0, r.jsx)(o.animated.div, {
+  return (0, r.jsx)(a.animated.div, {
     ref: e => {
       W.current = e
     },
@@ -256,7 +256,7 @@ function U(e) {
           className: D.right,
           children: (0, r.jsxs)("div", {
             className: D.imgWrapper,
-            children: [ec((e, t) => t && (0, r.jsx)(o.animated.div, {
+            children: [ec((e, t) => t && (0, r.jsx)(a.animated.div, {
               style: e,
               className: D.imgUnderlay
             })), "game" === eg.tileAssetType && (0, r.jsx)("img", {

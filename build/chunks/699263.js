@@ -2,13 +2,13 @@
 /** chunk id: 699263, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk592125 = require("./592125.js"),
   Chunk19780 = require("./19780.js"),
   Chunk938475 = require("./938475.js");
 
-function a(e) {
+function o(e) {
   var t;
   return null == e ? {
     channel_id: true,
@@ -19,6 +19,6 @@ function a(e) {
     channel_id: e,
     guild_id: null == (t = r.Z.getChannel(e)) ? true : t.guild_id,
     media_session_id: i.Z.getMediaSessionId(),
-    call_num_participants: o.ZP.countVoiceStatesForChannel(e)
+    call_num_participants: a.ZP.countVoiceStatesForChannel(e)
   }
 }

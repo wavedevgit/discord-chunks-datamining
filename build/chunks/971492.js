@@ -34,9 +34,9 @@ function l(e) {
 function c(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "respect-motion-settings",
     s = arguments.length > 3 ? arguments[3] : true,
-    c = r.useContext(o.S).reducedMotion.enabled,
+    c = r.useContext(a.S).reducedMotion.enabled,
     u = t;
-  "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = l({}, t, a.F));
+  "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = l({}, t, o.F));
   let [d, f, p] = (0, i.useTransition)(e, u, s);
   return 4 == arguments.length ? [d, f, p] : d
 }

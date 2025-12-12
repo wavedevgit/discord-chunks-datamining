@@ -2,8 +2,8 @@
 /** chunk id: 795448, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ni: () => a,
-  PV: () => o,
+  Ni: () => o,
+  PV: () => a,
   Zm: () => s,
   d$: () => i
 });
@@ -15,14 +15,14 @@ function i() {
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "MESSAGE_GIFT_INTENT_SHOWN",
     recipientUserId: e
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "GIFT_INTENT_FLOW_PURCHASED_GIFT",
     recipientUserId: e

@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk124347 = require("./124347.jsx"),
   Chunk785717 = require("./785717.jsx"),
   Chunk502762 = require("./502762.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk419173 = require("./419173.js");
+  Chunk949048 = require("./949048.js");
 
 function p(e) {
   let {
     previewData: t,
     className: n,
-    onClick: o
+    onClick: a
   } = e, {
     trackUserProfileAction: p
   } = (0, c.KZ)(), _ = i.useRef(false);
@@ -33,11 +33,11 @@ function p(e) {
       p({
         action: "PRESS_APPLICATION_WIDGET_PREVIEW",
         applicationId: t.application.id
-      }), null == o || o()
+      }), null == a || a()
     },
     "aria-label": t.application.name,
     children: (0, r.jsxs)(u.Z.Overlay, {
-      className: a()(f.container, n),
+      className: o()(f.container, n),
       children: [(0, r.jsxs)(s.Kqy, {
         gap: 8,
         padding: 8,

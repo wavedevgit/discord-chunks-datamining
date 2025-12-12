@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 723914, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,9 +16,9 @@ function c(e) {
     isInventoryFeedEnabled: t,
     canManageGuild: n,
     features: c
-  } = e, u = i.useCallback(e => {
+  } = e, d = i.useCallback(e => {
     let t = new Set(c);
-    e ? (t.add(a.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(a.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(a.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(a.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER)), s.Z.updateGuild({
+    e ? (t.add(s.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(s.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(s.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(s.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER)), a.Z.updateGuild({
       features: t
     })
   }, [c]);
@@ -28,7 +28,7 @@ function c(e) {
     children: (0, r.jsx)(l.rsf, {
       label: o.intl.string(o.t.WompT5),
       checked: t,
-      onChange: u,
+      onChange: d,
       disabled: !n
     })
   })

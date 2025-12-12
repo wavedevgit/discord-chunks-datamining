@@ -2,12 +2,12 @@
 /** chunk id: 74501, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk822632 = require("./822632.js"),
   Chunk610388 = require("./610388.js"),
   Chunk765592 = require("./765592.js");
-let a = {
+let o = {
     read: d
   },
   s = "8BIM",
@@ -17,7 +17,7 @@ let a = {
 
 function d(e, t) {
   let n = (0, r.Wp)(new Uint8Array(e).buffer),
-    a = {},
+    o = {},
     d = 0;
   for (; d < e.length;) {
     let e = (0, r.oH)(n, d, u);
@@ -35,18 +35,18 @@ function d(e, t) {
           id: p,
           value: (0, r.oH)(e, 0, h)
         };
-      if (o.Z[p]) {
+      if (a.Z[p]) {
         try {
-          i.description = o.Z[p].description(e)
+          i.description = a.Z[p].description(e)
         } catch (e) {
           i.description = "<no description formatter>"
         }
-        a[_ || o.Z[p].name] = i
-      } else t && (a[`undefined-${p}`] = i)
+        o[_ || a.Z[p].name] = i
+      } else t && (o[`undefined-${p}`] = i)
     }
     d += h + h % 2
   }
-  return a
+  return o
 }
 
 function f(e, t) {

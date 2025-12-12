@@ -6,26 +6,26 @@ require.d(exports, {
 });
 var Chunk159447 = require("./159447.js"),
   Chunk473749 = require("./473749.js");
-let o = 0,
-  a = new Map;
+let a = 0,
+  o = new Map;
 
 function s(e) {
   let [t, n] = (0, i.useState)();
   return (0, r.b)(() => {
     if (!e) return;
-    let t = a.get(e);
+    let t = o.get(e);
     if (t) n(t.element.id);
     else {
-      let r = `react-aria-description-${o++}`;
+      let r = `react-aria-description-${a++}`;
       n(r);
       let i = document.createElement("div");
       i.id = r, i.style.display = "none", i.textContent = e, document.body.appendChild(i), t = {
         refCount: 0,
         element: i
-      }, a.set(e, t)
+      }, o.set(e, t)
     }
     return t.refCount++, () => {
-      t && 0 == --t.refCount && (t.element.remove(), a.delete(e))
+      t && 0 == --t.refCount && (t.element.remove(), o.delete(e))
     }
   }, [e]), {
     "aria-describedby": e ? t : true

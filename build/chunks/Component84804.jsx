@@ -9,30 +9,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk55373 = require("./55373.jsx"),
   Chunk761006 = require("./761006.jsx"),
-  Chunk95530 = require("./95530.js"),
-  Chunk798500 = require("./798500.js");
+  Chunk621477 = require("./621477.js"),
+  Chunk319515 = require("./319515.js");
 let u = e => {
   let {
     containerVisibilityPercentage: t
-  } = e, n = (0, i.e7)([o.Z], () => o.Z.useReducedMotion);
+  } = e, n = (0, i.e7)([a.Z], () => a.Z.useReducedMotion);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: l.jumpingWumpusContainer,
-      children: (0, r.jsx)(a.ZP, {
+      children: (0, r.jsx)(o.ZP, {
         scaleAnimationData: {
           startScale: .9,
           endScale: 1,
-          duration: a.SR
+          duration: o.SR
         },
         yAxisAnimationData: {
           range: 20,
-          duration: a.b5,
-          path: a.js.SINE
+          duration: o.b5,
+          path: o.js.SINE
         },
         animateXAxisWiggle: true,
         isMotionReduced: n,
         parallaxAnimationData: {
-          pathDirection: a.eo.UP,
+          pathDirection: o.eo.UP,
           range: 125,
           containerVisibilityPercentage: t,
           changeOpacity: true

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk26033 = require("./26033.js"),
   Chunk178762 = require("./178762.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk709516 = require("./709516.js");
+  Chunk214226 = require("./214226.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,7 +86,7 @@ function O(e) {
     trackEntryPointImpression: true,
     sourceUserId: O.author_id
   });
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: I,
     align: "top",
     position: "right",
@@ -95,7 +95,7 @@ function O(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: y,
         onClose: () => {
           (0, s.Zy)(), t()
@@ -103,28 +103,28 @@ function O(e) {
         "aria-label": _.intl.string(_.t.liqwPJ),
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsxs)(a.kSQ, {
-            children: [C, null != w && (0, r.jsx)(a.sNh, {
+          children: [(0, r.jsxs)(o.kSQ, {
+            children: [C, null != w && (0, r.jsx)(o.sNh, {
               id: "game-profile",
               label: _.intl.string(_.t.f7aVGn),
               action: e => {
                 w(e), null == T || T()
               }
             })]
-          }), (0, r.jsxs)(a.kSQ, {
+          }), (0, r.jsxs)(o.kSQ, {
             children: [A, P]
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(o.u, {
+    children: e => (0, r.jsx)(a.u, {
       asContainer: true,
       text: _.intl.string(_.t["UKOtz+"]),
-      children: (0, r.jsx)(a.P3F, b(g({
+      children: (0, r.jsx)(o.P3F, b(g({
         innerRef: I,
         className: m.menuIcon
       }, e), {
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(o.xhG, {
           color: "currentColor",
           size: "custom",
           width: 16,

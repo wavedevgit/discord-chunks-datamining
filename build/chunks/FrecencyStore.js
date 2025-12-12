@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => w
 }), require("./35282.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk704907 = require("./704907.js"),
@@ -104,7 +104,7 @@ function N() {
   var e;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.guildAndChannelFrecency) ? true : module.guildAndChannels;
   if (null == exports) returnfalse;
-  S.overwriteHistory(o().mapValues(exports, e => b(g({}, e), {
+  S.overwriteHistory(a().mapValues(exports, e => b(g({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), P.pendingUsages)
 }

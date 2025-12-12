@@ -18,7 +18,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk655227 = require("./655227.js");
+  Chunk710930 = require("./710930.js");
 let g = function(e) {
   var t;
   let {
@@ -26,7 +26,7 @@ let g = function(e) {
     subscriptionTier: g
   } = e, {
     analyticsLocations: E
-  } = (0, s.ZP)(a.Z.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), b = (0, u.N)(), y = (0, o.Z)(null != b && null != b.expires_at ? Date.parse(b.expires_at) : 0), {
+  } = (0, s.ZP)(o.Z.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), b = (0, u.N)(), y = (0, a.Z)(null != b && null != b.expires_at ? Date.parse(b.expires_at) : 0), {
     variant: O,
     showNagbar: v
   } = (0, c.ZP)("PremiumDiscountEndingNotice");

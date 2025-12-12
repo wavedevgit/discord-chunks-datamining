@@ -7,15 +7,15 @@ require.d(exports, {
 var Chunk134915 = require("./134915.js"),
   Chunk386239 = require("./386239.js"),
   Chunk473749 = require("./473749.js");
-let a = Math.round(1e10 * Math.random()),
+let o = Math.round(1e10 * Math.random()),
   s = 0;
 
 function l(e) {
   var t, n;
-  let l = (0, o.useMemo)(() => e.name || `radio-group-${a}-${++s}`, [e.name]),
+  let l = (0, a.useMemo)(() => e.name || `radio-group-${o}-${++s}`, [e.name]),
     [c, u] = (0, i.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
-    [d] = (0, o.useState)(c),
-    [f, p] = (0, o.useState)(null),
+    [d] = (0, a.useState)(c),
+    [f, p] = (0, a.useState)(null),
     _ = (0, r.Q3)({
       ...e,
       value: c

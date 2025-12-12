@@ -27,7 +27,7 @@ function _(e, t, n) {
 let m = 5 * Chunk70956.Z.Millis.MINUTE;
 
 function h(e) {
-  return e.distributor === p.GQo.ROBLOX ? (0, a.x3)(e) : null
+  return e.distributor === p.GQo.ROBLOX ? (0, o.x3)(e) : null
 }
 
 function g(e) {
@@ -50,18 +50,18 @@ class E extends Chunk147913.Z {
   }
   logHeartbeat(e, t, n) {
     var r, i;
-    let o = e.runningGame,
+    let a = e.runningGame,
       u = performance.now(),
       _ = t ? 0 : Math.round(u - e.lastHeartbeatTime),
-      m = null != (i = o.id) ? i : null == (r = s.Z.getGameByName(o.name)) ? true : r.id;
+      m = null != (i = a.id) ? i : null == (r = s.Z.getGameByName(a.name)) ? true : r.id;
     c.default.track(p.rMx.RUNNING_GAME_HEARTBEAT, {
       game_id: m,
-      game_name: o.name,
-      game_distributor: o.distributor,
-      game_distributor_game_id: o.sku,
-      game_metadata: (0, a.sD)(o),
-      game_executable: (0, d.N6)(o.exePath),
-      game_detection_enabled: (0, f.ik)(o),
+      game_name: a.name,
+      game_distributor: a.distributor,
+      game_distributor_game_id: a.sku,
+      game_metadata: (0, o.sD)(a),
+      game_executable: (0, d.N6)(a.exePath),
+      game_detection_enabled: (0, f.ik)(a),
       initial_heartbeat: t,
       final_heartbeat: n,
       game_session_id: e.sessionId,

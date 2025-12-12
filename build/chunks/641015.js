@@ -17,8 +17,8 @@ function s() {
 
 function l(e) {
   if (null == e) returnfalse;
-  if (a.TPd.CALLABLE.has(e.type)) returntrue;
-  let t = i.Z.can(a.Plq.USE_SOUNDBOARD, e),
-    n = i.Z.can(a.Plq.SPEAK, e);
+  if (o.TPd.CALLABLE.has(e.type)) returntrue;
+  let t = i.Z.can(o.Plq.USE_SOUNDBOARD, e),
+    n = i.Z.can(o.Plq.SPEAK, e);
   return e.isGuildVoiceOrThread() && t && n
 }

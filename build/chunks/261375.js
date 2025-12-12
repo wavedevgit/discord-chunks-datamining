@@ -32,11 +32,11 @@ class E {
     let t = performance.now(),
       [n, r] = await Promise.all([_.Z.basicChannels(e).getKvEntries(), _.Z.syncedBasicChannels(e).getKvEntries()]),
       i = performance.now() - t,
-      [o, a] = O(r),
-      s = new Set(o);
-    return this.synced = s, g.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(s.size, " unsynced: ").concat(a.length, ")")), {
+      [a, o] = O(r),
+      s = new Set(a);
+    return this.synced = s, g.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(s.size, " unsynced: ").concat(o.length, ")")), {
       all: n,
-      stale: a,
+      stale: o,
       channels: n.filter(e => {
         let [t, n] = e;
         return s.has(t)
@@ -53,16 +53,16 @@ class E {
     for (let n of e.channels.filter(e => null != e.guild_id)) b(c.Z.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t)
   }
   handleBackgroundSync(e, t) {
-    for (let o of e.guilds) switch (o.data_mode) {
+    for (let a of e.guilds) switch (a.data_mode) {
       case "unavailable":
         break;
       case "partial":
         var n, r, i;
-        let e = e => (0, s.q_)(e, o.id);
-        this.onGuildUpdate(o.id, null != (r = null == (n = o.partial_updates.channels) ? true : n.map(e)) ? r : [], null != (i = o.partial_updates.deleted_channel_ids) ? i : [], t);
+        let e = e => (0, s.q_)(e, a.id);
+        this.onGuildUpdate(a.id, null != (r = null == (n = a.partial_updates.channels) ? true : n.map(e)) ? r : [], null != (i = a.partial_updates.deleted_channel_ids) ? i : [], t);
         break;
       default:
-        this.onGuildSync(o.id, t)
+        this.onGuildSync(a.id, t)
     }
   }
   handleConnectionOpen(e, t) {

@@ -25,10 +25,10 @@ function m(e) {
     }), E) {
     case d.GlobalDiscoveryTab.SERVERS:
       let b = e.selectedServersTab;
-      return null != b ? o.Z.setState({
+      return null != b ? a.Z.setState({
         selectedTab: b,
         entrypoint: null != (t = e.entrypoint) ? t : _.Qq.UNKNOWN
-      }) : o.Z.setState({
+      }) : a.Z.setState({
         entrypoint: null != (n = e.entrypoint) ? n : _.Qq.UNKNOWN
       }), (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_SERVERS, e.extra);
     case d.GlobalDiscoveryTab.APPS:
@@ -36,15 +36,15 @@ function m(e) {
         let t = (0, i.PM)(),
           {
             guildId: n,
-            entrypoint: o
+            entrypoint: a
           } = e.newSessionState;
         if (r.z8.setState({
             sessionId: t,
             guildId: null != n ? n : null,
-            entrypoint: o,
+            entrypoint: a,
             trackedOpenedFromExternalEntrypoint: false
           }), c.default.track(f.rMx.APP_DIRECTORY_OPENED, {
-            source: null == o ? true : o.name,
+            source: null == a ? true : a.name,
             session_id: t,
             guild_id: n,
             user_id: null == (g = l.default.getCurrentUser()) ? true : g.id
@@ -65,7 +65,7 @@ function m(e) {
       if (null != e.categoryId) return (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(e.categoryId.toString()));
       else return (0, s.uL)(f.Z5c.GLOBAL_DISCOVERY_APPS);
     case d.GlobalDiscoveryTab.QUESTS:
-      return (0, a.navigateToQuestHome)({
+      return (0, o.navigateToQuestHome)({
         fromContent: e.questContent,
         questId: e.questId,
         forceDiscoveryQuestHomeRoute: true

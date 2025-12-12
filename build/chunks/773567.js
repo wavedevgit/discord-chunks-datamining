@@ -6,7 +6,7 @@ require.d(exports, {
   LN: () => i,
   RA: () => m,
   SH: () => d,
-  _$: () => o,
+  _$: () => a,
   km: () => _
 });
 var Chunk800911 = require("./800911.js");
@@ -30,7 +30,7 @@ let i = {
     sáb: 6,
     sab: 6
   },
-  o = {
+  a = {
     enero: 1,
     ene: 1,
     "ene.": 1,
@@ -69,7 +69,7 @@ let i = {
     dic: 12,
     "dic.": 12
   },
-  a = {
+  o = {
     uno: 1,
     dos: 2,
     tres: 3,
@@ -108,11 +108,11 @@ let i = {
     año: "year",
     años: "year"
   },
-  l = `(?:${(0,Chunk800911.q3)(a)}|[0-9]+|[0-9]+\\.[0-9]+|un?|uno?|una?|algunos?|unos?|demi-?)`;
+  l = `(?:${(0,Chunk800911.q3)(o)}|[0-9]+|[0-9]+\\.[0-9]+|un?|uno?|una?|algunos?|unos?|demi-?)`;
 
 function c(e) {
   let t = e.toLowerCase();
-  if (true !== a[t]) return a[t];
+  if (true !== o[t]) return o[t];
   if ("un" === t || "una" === t || "uno" === t) return 1;
   if (t.match(/algunos?/)) return 3;
   if (t.match(/unos?/)) return 3;

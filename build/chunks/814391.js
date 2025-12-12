@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
   Chunk388032 = require("./388032.jsx");
-let a = 60,
+let o = 60,
   s = 3600,
   l = 86400,
   c = 2592e3,
@@ -22,8 +22,8 @@ let a = 60,
   }),
   f = (e, t) => null != t && null != t[e],
   p = (e, t, n) => {
-    var r, i, o;
-    return f(e, t) ? null != (i = null != (r = t[e]) ? r : null == n ? true : n[e]) ? i : null : null != (o = null == n ? true : n[e]) ? o : null
+    var r, i, a;
+    return f(e, t) ? null != (i = null != (r = t[e]) ? r : null == n ? true : n[e]) ? i : null : null != (a = null == n ? true : n[e]) ? a : null
   },
   _ = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
@@ -32,16 +32,16 @@ let a = 60,
       _ = d(),
       m = (e, t) => {
         let r = p(e, f, n ? _ : true);
-        return null == r ? null : "string" == typeof r ? r : o.intl.formatToPlainString(r, {
+        return null == r ? null : "string" == typeof r ? r : a.intl.formatToPlainString(r, {
           count: t
         })
       };
-    if (r < a) {
+    if (r < o) {
       let e = (null == f ? true : f.seconds) != null ? m("seconds", r) : m("minutes", 1);
       if (null != e) return e
     }
     if (r < s) {
-      let e = m("minutes", Math.floor(r / a));
+      let e = m("minutes", Math.floor(r / o));
       if (null != e) return e
     }
     if (r < l) {

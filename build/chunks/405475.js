@@ -20,24 +20,24 @@ function l(e, t, n) {
 }
 class c extends Chunk47770.Z {
   createUser(e) {
-    this.recognizedUserIds.add(e), this.setupKeyRatchetForUser(e, this.latestPreparedTransitionVersion, a.Bp.DECRYPT)
+    this.recognizedUserIds.add(e), this.setupKeyRatchetForUser(e, this.latestPreparedTransitionVersion, o.Bp.DECRYPT)
   }
   destroyUser(e) {
     this.recognizedUserIds.delete(e), this.encryptionWorker.postMessage({
-      type: a.u.DESTROY_USER,
+      type: o.u.DESTROY_USER,
       userId: e
     })
   }
   updateLocalUserCodecs(e, t) {
     this.encryptionWorker.postMessage({
-      type: a.u.UPDATE_CODECS,
+      type: o.u.UPDATE_CODECS,
       audioCodec: e,
       videoCodec: t
     })
   }
   updateSsrcs(e, t, n) {
     this.encryptionWorker.postMessage({
-      type: a.u.UPDATE_SSRC,
+      type: o.u.UPDATE_SSRC,
       userId: e,
       audioSsrc: t,
       videoSsrcs: n
@@ -58,7 +58,7 @@ class c extends Chunk47770.Z {
   executeSecureFramesTransition(e) {
     if (!this.secureFramesTransitions.has(e)) return void this.logger.warn("[TAG] Transition ID " + e + " not found, ignoring.");
     let t = this.secureFramesTransitions.get(e);
-    this.secureFramesTransitions.delete(e), t === this.dave.kDisabledVersion && this.mlsSession.Reset(), this.setupKeyRatchetForUser(this.userId, t, a.Bp.ENCRYPT), this.onSecureFramesStateChanged()
+    this.secureFramesTransitions.delete(e), t === this.dave.kDisabledVersion && this.mlsSession.Reset(), this.setupKeyRatchetForUser(this.userId, t, o.Bp.ENCRYPT), this.onSecureFramesStateChanged()
   }
   getMLSKeyPackage(e) {
     e(this.mlsSession.GetMarshalledKeyPackage())
@@ -90,7 +90,7 @@ class c extends Chunk47770.Z {
       let {
         data: t
       } = e;
-      t.type === a.r7.PROTOCOL_VERSION_CHANGED ? (this.currentEncryptorProtocolVersion = t.protocolVersion, this.onSecureFramesStateChanged()) : this.logger.warn("Unknown message type from encryption worker", t)
+      t.type === o.r7.PROTOCOL_VERSION_CHANGED ? (this.currentEncryptorProtocolVersion = t.protocolVersion, this.onSecureFramesStateChanged()) : this.logger.warn("Unknown message type from encryption worker", t)
     }, module.onerror = e => {
       this.logger.error("Encryption worker error", e)
     }, module.onmessageerror = e => {
@@ -113,7 +113,7 @@ class c extends Chunk47770.Z {
         writable: n
       } = e.createEncodedStreams();
       this.encryptionWorker.postMessage({
-        type: a.u.RTC_TRANSFORM,
+        type: o.u.RTC_TRANSFORM,
         readable: t,
         writable: n
       }, [t, n])
@@ -122,7 +122,7 @@ class c extends Chunk47770.Z {
   setupKeyRatchetForUser(e, t, n) {
     let r = this.makeUserKeyRatchet(e, t);
     this.encryptionWorker.postMessage({
-      type: a.u.SET_KEY_RATCHET,
+      type: o.u.SET_KEY_RATCHET,
       userId: e,
       operation: n,
       protocolVersion: t,
@@ -130,8 +130,8 @@ class c extends Chunk47770.Z {
     })
   }
   prepareSecureFramesRatchets(e, t) {
-    for (let e of this.getRecognizedUserIDs()) e !== this.userId && this.setupKeyRatchetForUser(e, t, a.Bp.DECRYPT);
-    e === this.dave.kInitTransitionId ? (this.setupKeyRatchetForUser(this.userId, t, a.Bp.ENCRYPT), this.onSecureFramesStateChanged()) : this.secureFramesTransitions.set(e, t), this.latestPreparedTransitionVersion = t
+    for (let e of this.getRecognizedUserIDs()) e !== this.userId && this.setupKeyRatchetForUser(e, t, o.Bp.DECRYPT);
+    e === this.dave.kInitTransitionId ? (this.setupKeyRatchetForUser(this.userId, t, o.Bp.ENCRYPT), this.onSecureFramesStateChanged()) : this.secureFramesTransitions.set(e, t), this.latestPreparedTransitionVersion = t
   }
   onSecureFramesStateChanged() {
     var e;
@@ -147,9 +147,9 @@ class c extends Chunk47770.Z {
   constructor(e, t, n) {
     super(), l(this, "logger", true), l(this, "dave", true), l(this, "transientKeys", true), l(this, "mlsSession", true), l(this, "encryptionWorker", true), l(this, "userId", true), l(this, "currentEncryptorProtocolVersion", 0), l(this, "recognizedUserIds", new Set), l(this, "secureFramesTransitions", new Map), l(this, "latestPreparedTransitionVersion", 0), l(this, "lastSecureFramesStateUpdate", null), this.logger = new i.Yd("DaveSessionManager"), this.dave = e, this.transientKeys = t, this.userId = n;
     let r = "",
-      a = "";
-    this.mlsSession = new e.Session(r, a, (e, t) => {
-      this.emit(o.Sh.MLSFailure, e, t)
+      o = "";
+    this.mlsSession = new e.Session(r, o, (e, t) => {
+      this.emit(a.Sh.MLSFailure, e, t)
     }), this.encryptionWorker = this.setupEncryptionWorker()
   }
 }

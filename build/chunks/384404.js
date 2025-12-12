@@ -48,7 +48,7 @@ var Chunk131522 = require("./131522.js"),
   }),
   _ = function() {
     exports.createEmpty = function(e) {
-      return t.createWithContent(a.createFromText(""), e)
+      return t.createWithContent(o.createFromText(""), e)
     }, exports.createWithContent = function(e, n) {
       if (0 === e.getBlockMap().count()) return t.createEmpty(n);
       var r = e.getBlockMap().first().getKey();
@@ -71,17 +71,17 @@ var Chunk131522 = require("./131522.js"),
         var r = t.get("decorator"),
           i = r;
         null === n.decorator ? i = null : n.decorator && (i = n.decorator);
-        var o = n.currentContent || e.getCurrentContent();
+        var a = n.currentContent || e.getCurrentContent();
         if (i !== r) {
-          var a, s = t.get("treeMap");
-          a = i && r ? E(o, o.getBlockMap(), s, i, r) : h(o, i), t.merge({
+          var o, s = t.get("treeMap");
+          o = i && r ? E(a, a.getBlockMap(), s, i, r) : h(a, i), t.merge({
             decorator: i,
-            treeMap: a,
+            treeMap: o,
             nativelyRenderedContent: null
           });
           return
         }
-        o !== e.getCurrentContent() && t.set("treeMap", g(e, o.getBlockMap(), o.getEntityMap(), i)), t.merge(n)
+        a !== e.getCurrentContent() && t.set("treeMap", g(e, a.getBlockMap(), a.getEntityMap(), i)), t.merge(n)
       }))
     };
     var e = exports.prototype;
@@ -155,25 +155,25 @@ var Chunk131522 = require("./131522.js"),
     }, exports.push = function(e, n, r) {
       var i = !(arguments.length > 3) || true === arguments[3] || arguments[3];
       if (e.getCurrentContent() === n) return e;
-      var o = s.getDirectionMap(n, e.getDirectionMap());
+      var a = s.getDirectionMap(n, e.getDirectionMap());
       if (!e.getAllowUndo()) return t.set(e, {
         currentContent: n,
-        directionMap: o,
+        directionMap: a,
         lastChangeType: r,
         selection: n.getSelectionAfter(),
         forceSelection: i,
         inlineStyleOverride: null
       });
-      var a = e.getSelection(),
+      var o = e.getSelection(),
         l = e.getCurrentContent(),
         c = e.getUndoStack(),
         u = n;
-      a !== l.getSelectionAfter() || b(e, r) ? (c = c.push(l), u = u.set("selectionBefore", a)) : ("insert-characters" === r || "backspace-character" === r || "delete-character" === r) && (u = u.set("selectionBefore", l.getSelectionBefore()));
+      o !== l.getSelectionAfter() || b(e, r) ? (c = c.push(l), u = u.set("selectionBefore", o)) : ("insert-characters" === r || "backspace-character" === r || "delete-character" === r) && (u = u.set("selectionBefore", l.getSelectionBefore()));
       var d = e.getInlineStyleOverride();
       false === ["adjust-depth", "change-block-type", "split-block"].indexOf(r) && (d = null);
       var p = {
         currentContent: u,
-        directionMap: o,
+        directionMap: a,
         undoStack: c,
         redoStack: f(),
         lastChangeType: r,
@@ -188,10 +188,10 @@ var Chunk131522 = require("./131522.js"),
         r = n.peek();
       if (!r) return e;
       var i = e.getCurrentContent(),
-        o = s.getDirectionMap(r, e.getDirectionMap());
+        a = s.getDirectionMap(r, e.getDirectionMap());
       return t.set(e, {
         currentContent: r,
-        directionMap: o,
+        directionMap: a,
         undoStack: n.shift(),
         redoStack: e.getRedoStack().push(i),
         forceSelection: true,
@@ -206,10 +206,10 @@ var Chunk131522 = require("./131522.js"),
         r = n.peek();
       if (!r) return e;
       var i = e.getCurrentContent(),
-        o = s.getDirectionMap(r, e.getDirectionMap());
+        a = s.getDirectionMap(r, e.getDirectionMap());
       return t.set(e, {
         currentContent: r,
-        directionMap: o,
+        directionMap: a,
         undoStack: e.getUndoStack().push(i),
         redoStack: n.shift(),
         forceSelection: true,
@@ -234,17 +234,17 @@ function m(e, t, n) {
 
 function h(e, t) {
   return e.getBlockMap().map(function(n) {
-    return o.generate(e, n, t)
+    return a.generate(e, n, t)
   }).toOrderedMap()
 }
 
 function g(e, t, n, r) {
   var i = e.getCurrentContent().set("entityMap", n),
-    a = i.getBlockMap();
+    o = i.getBlockMap();
   return e.getImmutable().get("treeMap").merge(t.toSeq().filter(function(e, t) {
-    return e !== a.get(t)
+    return e !== o.get(t)
   }).map(function(e) {
-    return o.generate(i, e, r)
+    return a.generate(i, e, r)
   }))
 }
 
@@ -252,7 +252,7 @@ function E(e, t, n, r, i) {
   return n.merge(t.toSeq().filter(function(t) {
     return r.getDecorations(t, e) !== i.getDecorations(t, e)
   }).map(function(t) {
-    return o.generate(e, t, r)
+    return a.generate(e, t, r)
   }))
 }
 

@@ -45,8 +45,8 @@ function l(e) {
 function c(e, t) {
   let n = e;
   if (null == n) {
-    if (null == a.default.getCurrentUser()) returnfalse;
-    n = o.Z.getVoiceChannelId()
+    if (null == o.default.getCurrentUser()) returnfalse;
+    n = a.Z.getVoiceChannelId()
   }
   if (null == n) returnfalse;
   let r = i.Z.getChannel(n);

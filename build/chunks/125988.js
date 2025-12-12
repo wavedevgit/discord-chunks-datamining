@@ -21,7 +21,7 @@ let d = e => {
     onlyAnimateOnHoverOrFocus: p = false
   } = e, [_, m] = r.useState(false), {
     canAnimate: h
-  } = (0, o.j)(_, p), g = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null), E = (0, c.Z)((0, a.Ys)({
+  } = (0, a.j)(_, p), g = (0, i.e7)([s.ZP], () => null != n && null != t ? s.ZP.getMember(n, t.id) : null), E = (0, c.Z)((0, o.Ys)({
     userValue: null == t ? true : t.avatarDecoration,
     guildValue: null == g ? true : g.avatarDecoration,
     guildId: n

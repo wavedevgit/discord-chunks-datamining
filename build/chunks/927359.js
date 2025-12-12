@@ -82,37 +82,37 @@ function f(e, t) {
   switch (t) {
     case 0:
       n = {
-        days: a.t["/wnvqA"],
-        hours: a.t.Jsq0XN,
-        minutes: a.t["SBd+Bs"]
+        days: o.t["/wnvqA"],
+        hours: o.t.Jsq0XN,
+        minutes: o.t["SBd+Bs"]
       };
       break;
     case 1:
       n = {
-        days: a.t.UD5nn5,
-        hours: a.t.Hg8Fee,
-        minutes: a.t.XSbQZZ
+        days: o.t.UD5nn5,
+        hours: o.t.Hg8Fee,
+        minutes: o.t.XSbQZZ
       };
       break;
     case 2:
       n = {
-        days: a.t.rLqNad,
-        hours: a.t.d1LvCA,
-        minutes: a.t.Z2LX7K
+        days: o.t.rLqNad,
+        hours: o.t.d1LvCA,
+        minutes: o.t.Z2LX7K
       };
       break;
     case 4:
       n = {
-        days: a.t.xQ3zuN,
-        hours: a.t.SFU7QN,
-        minutes: a.t.Y4FNdL
+        days: o.t.xQ3zuN,
+        hours: o.t.SFU7QN,
+        minutes: o.t.Y4FNdL
       };
       break;
     case 3:
       n = {
-        days: a.t.fYmirx,
-        hours: a.t["C3RO+g"],
-        minutes: a.t.r77oHc
+        days: o.t.fYmirx,
+        hours: o.t["C3RO+g"],
+        minutes: o.t.r77oHc
       };
       break;
     default:
@@ -123,7 +123,7 @@ function f(e, t) {
   try {
     l = (0, i.QX)(s, n)
   } catch (e) {
-    o.Z.captureMessage("Error trying to format string for fractional nitro duration pill")
+    a.Z.captureMessage("Error trying to format string for fractional nitro duration pill")
   }
   return l
 }

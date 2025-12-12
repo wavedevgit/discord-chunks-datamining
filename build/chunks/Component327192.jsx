@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -42,7 +42,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk856651 = require("./856651.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk11049 = require("./11049.js");
+  Chunk454578 = require("./454578.js");
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,47 +85,47 @@ function V(e, t) {
 let H = e => {
   var t, n;
   let i, {
-      integration: o
+      integration: a
     } = e,
     {
-      isJoining: a,
+      isJoining: o,
       joinErrorMessage: s,
       showJoinErrorMessage: c
     } = (0, l.cj)([I.Z], () => ({
-      isJoining: I.Z.isJoining(o.id),
-      joinErrorMessage: "" === I.Z.joinErrorMessage(o.id) ? U.intl.string(U.t.j2d6Km) : I.Z.joinErrorMessage(o.id),
-      showJoinErrorMessage: true !== I.Z.joinErrorMessage(o.id)
-    }), [o.id]);
+      isJoining: I.Z.isJoining(a.id),
+      joinErrorMessage: "" === I.Z.joinErrorMessage(a.id) ? U.intl.string(U.t.j2d6Km) : I.Z.joinErrorMessage(a.id),
+      showJoinErrorMessage: true !== I.Z.joinErrorMessage(a.id)
+    }), [a.id]);
 
   function u() {
-    _.Z.joinServer(o.id, () => {})
+    _.Z.joinServer(a.id, () => {})
   }
-  return null == (0, l.e7)([T.Z], () => T.Z.getGuild(o.guild.id), [o.guild.id]) && (i = (0, r.jsx)(f.Button, {
+  return null == (0, l.e7)([T.Z], () => T.Z.getGuild(a.guild.id), [a.guild.id]) && (i = (0, r.jsx)(f.Button, {
     size: "sm",
     onClick: u,
-    disabled: a,
+    disabled: o,
     variant: "primary",
-    text: a ? U.intl.string(U.t.RXvQQu) : U.intl.string(U.t.XpeFYr)
+    text: o ? U.intl.string(U.t.RXvQQu) : U.intl.string(U.t.XpeFYr)
   })), (0, r.jsxs)("div", {
     className: G.integrationWrapper,
     children: [(0, r.jsxs)("div", {
       className: G.integration,
       children: [(0, r.jsx)(v.Z, {
         size: v.Z.Sizes.SMALL,
-        guild: o.guild,
+        guild: a.guild,
         className: G.guildIcon
       }), (0, r.jsxs)("div", {
         className: G.integrationInner,
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: o.guild.name
+          children: a.guild.name
         }), (0, r.jsx)(f.Anchor, {
-          href: null == (n = g.Z.get(o.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, o.account),
+          href: null == (n = g.Z.get(a.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, a.account),
           children: (0, r.jsx)(f.Text, {
             variant: "text-xs/normal",
             color: "text-default",
-            children: o.account.name
+            children: a.account.name
           })
         })]
       }), i]
@@ -142,7 +142,7 @@ function Y(e) {
   let {
     onDisconnect: t,
     account: n,
-    theme: o,
+    theme: a,
     locale: l
   } = e, [p, m] = i.useState(n.friendSync), [h, v] = i.useState(n.visibility), [I, T] = i.useState(n.metadataVisibility), [C, A] = i.useState(n.showActivity), [P, x] = i.useState(null), [Z, B] = i.useState(null), [Y, W] = i.useState(false), [K, z] = i.useState([]), q = (0, E.rR)(n.type), Q = g.Z.get(q);
   i.useEffect(() => {
@@ -158,9 +158,9 @@ function Y(e) {
     var t;
     let n = g.Z.get(e.type),
       i = g.Z.get(q),
-      a = "1" === (null != (t = e.metadata) ? t : {})[k.PC.TWITTER_VERIFIED],
+      o = "1" === (null != (t = e.metadata) ? t : {})[k.PC.TWITTER_VERIFIED],
       s = null;
-    return n.type === M.ABu.TWITTER && a && (s = (0, r.jsx)(u.u, {
+    return n.type === M.ABu.TWITTER && o && (s = (0, r.jsx)(u.u, {
       text: U.intl.string(U.t.Jebrww),
       children: (0, r.jsx)(S.Z, {
         color: c.Z.unsafe_rawColors.TWITTER.css,
@@ -174,7 +174,7 @@ function Y(e) {
       children: [(0, r.jsx)("img", {
         alt: i.name,
         className: G.connectionIcon,
-        src: (0, d.wj)(o) ? i.icon.darkSVG : i.icon.lightSVG
+        src: (0, d.wj)(a) ? i.icon.darkSVG : i.icon.lightSVG
       }), (0, r.jsxs)("div", {
         children: [(0, r.jsxs)("div", {
           className: G.connectionAccountLabelContainer,
@@ -195,7 +195,7 @@ function Y(e) {
         })]
       }), (0, r.jsx)(f.P3F, {
         className: G.connectionDelete,
-        onClick: ea,
+        onClick: eo,
         "aria-label": U.intl.string(U.t.ppppRJ),
         focusProps: {
           offset: {
@@ -220,7 +220,7 @@ function Y(e) {
     var t;
     let n = null != (t = e.metadata) ? t : {},
       i = null,
-      o = (0, b.FI)(n[k.PC.CREATED_AT], l);
+      a = (0, b.FI)(n[k.PC.CREATED_AT], l);
     switch (e.type) {
       case M.ABu.REDDIT:
         i = (0, O.oP)(n, G.metadataItem);
@@ -242,15 +242,15 @@ function Y(e) {
       case M.ABu.TIKTOK:
         i = (0, O.hf)(n, G.metadataItem)
     }
-    null !== o && (null == i && (i = []), null == i || i.push((0, r.jsx)(f.Text, {
+    null !== a && (null == i && (i = []), null == i || i.push((0, r.jsx)(f.Text, {
       variant: "text-xs/normal",
       color: "text-subtle",
       className: G.connectedAccountVanityMetadataCreatedAt,
       children: U.intl.format(U.t["9rfonh"], {
-        date: o
+        date: a
       })
     }, "member-since")));
-    let a = K.includes(e.id),
+    let o = K.includes(e.id),
       s = U.intl.string(U.t.wzzjk9);
     if (null == i || 0 === i.length)
       if (true !== g.Z.get(e.type).hasMetadata) return null;
@@ -264,16 +264,16 @@ function Y(e) {
           helpdeskUrl: N.Z.getArticleURL(M.BhN.CONNECTION_DETAILS)
         })
       }, "label")], s = U.intl.string(U.t["LVh3/5"]);
-    return a && (s = U.intl.string(U.t.i4jeWR)), i.push((0, r.jsx)("div", {
+    return o && (s = U.intl.string(U.t.i4jeWR)), i.push((0, r.jsx)("div", {
       className: G.metadataRefreshButton,
       children: (0, r.jsx)(f.Button, {
         text: s,
         variant: "secondary",
         size: "sm",
         loading: Y,
-        disabled: a,
+        disabled: o,
         "aria-label": U.intl.string(U.t.sCkLYH),
-        onClick: a ? true : () => {
+        onClick: o ? true : () => {
           W(true), _.Z.refresh(e.type, e.id).finally(() => {
             setTimeout(() => {
               K.push(e.id), z(K), W(false)
@@ -289,18 +289,18 @@ function Y(e) {
 
   function en(e) {
     var t;
-    let i, o, a;
+    let i, a, o;
     return M.BFP.has(n.type) && (i = (0, r.jsx)(f.rsf, {
       label: U.intl.string(U.t["+KCMSi"]),
       checked: p,
       onChange: ec
-    })), M.vbS.has(n.type) && (o = (0, r.jsx)(f.rsf, {
+    })), M.vbS.has(n.type) && (a = (0, r.jsx)(f.rsf, {
       label: U.intl.format(U.t["6u6J0q"], {
         platform: e.name
       }),
       checked: C,
       onChange: eu
-    })), (null == (t = g.Z.get(n.type)) ? true : t.hasMetadata) === true && (a = (0, r.jsx)(f.rsf, {
+    })), (null == (t = g.Z.get(n.type)) ? true : t.hasMetadata) === true && (o = (0, r.jsx)(f.rsf, {
       label: U.intl.string(U.t.FYKGsL),
       checked: 1 === I,
       onChange: el,
@@ -311,7 +311,7 @@ function Y(e) {
         label: U.intl.string(U.t.f7yOAX),
         checked: 1 === h,
         onChange: es
-      }), a, o, i]
+      }), o, a, i]
     })
   }
 
@@ -319,7 +319,7 @@ function Y(e) {
     return n.revoked ? (0, r.jsx)(s.Wn, {
       messageType: s.QYI.INFO,
       children: U.intl.format(U.t["6C4lgA"], {
-        onReconnect: eo
+        onReconnect: ea
       })
     }) : n.integrations.length > 0 ? (0, r.jsx)(f.gNt, {
       label: U.intl.string(U.t.fOe3fZ),
@@ -333,14 +333,14 @@ function Y(e) {
     if (n.revoked || n.integrations.length > 0) return (0, r.jsx)(f.izJ, {})
   }
 
-  function eo() {
+  function ea() {
     (0, y.Z)({
       platformType: n.type,
       location: "User Settings"
     })
   }
 
-  function ea() {
+  function eo() {
     let e = g.Z.get(n.type);
     (0, f.h7j)(i => (0, r.jsx)(s.Modal, V(F({
       title: U.intl.formatToPlainString(U.t.U5x12f, {
@@ -416,7 +416,7 @@ function Y(e) {
   }, [n]);
   let ed = (0, R.wy)("ConnectedAccount");
   return (0, r.jsxs)("div", {
-    className: a()(G.connection, {
+    className: o()(G.connection, {
       [G.connectionUserSettingsRedesign]: ed
     }),
     children: [$(n), ee(n), et(n), en(Q), ei(), er()]
@@ -453,7 +453,7 @@ function z() {
   }
   let t = (0, Chunk122021.fq)();
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk11049.connectionsContainer,
+    className: Chunk454578.connectionsContainer,
     children: [exports.slice(0, 10).map(e => (0, r.jsx)(m.Z, {
       type: e.type,
       className: G.__invalid_accountButton,
@@ -461,10 +461,10 @@ function z() {
     }, e.type)), (0, Chunk54381.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t.QqTz8b),
       children: (0, Chunk54381.jsx)("div", {
-        className: a()(Chunk11049.accountAddWrapper, Chunk11049.__invalid_accountButton),
+        className: o()(Chunk454578.accountAddWrapper, Chunk454578.__invalid_accountButton),
         children: (0, Chunk54381.jsx)(Chunk481060.tEY, {
           children: (0, Chunk54381.jsx)("button", {
-            className: a()(Chunk11049.accountAddInner, Chunk11049.accountButtonInner),
+            className: o()(Chunk454578.accountAddInner, Chunk454578.accountButtonInner),
             type: "button",
             onClick: module,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.Zhcj9X),
@@ -484,8 +484,8 @@ function q(e) {
   let t, {
     fetching: n,
     accounts: i,
-    theme: o,
-    locale: a
+    theme: a,
+    locale: o
   } = e;
 
   function s(e) {
@@ -498,15 +498,15 @@ function q(e) {
   return t = n ? (0, r.jsx)(f.$jN, {
     type: f.$jN.Type.SPINNING_CIRCLE
   }) : 0 === i.length ? (0, r.jsx)(f.ubH, {
-    theme: o,
+    theme: a,
     children: (0, r.jsx)(f.OZU, {
       note: U.intl.string(U.t.WenGZ2),
       children: U.intl.string(U.t.aoLS84)
     })
   }) : i.filter(e => g.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(Y, {
-    theme: o,
+    theme: a,
     account: e,
-    locale: a,
+    locale: o,
     onDisconnect: () => s(e)
   }, t)), (0, r.jsx)("div", {
     className: G.connectionList,
@@ -519,7 +519,7 @@ function Q() {
     t = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.isFetching()),
     n = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     i = (0, Chunk410030.ZP)(),
-    o = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
+    a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
   return module ? null : (0, Chunk54381.jsx)(q, {
     fetching: exports,
     accounts: require,
@@ -531,7 +531,7 @@ let X = () => {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.isFetching()),
     t = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     n = (0, Chunk410030.ZP)(),
-    o = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
+    a = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
   return Chunk473749.useEffect(() => {
     Chunk457330.Z.fetch()
   }, []), (0, Chunk54381.jsxs)(Chunk273313.Z, {

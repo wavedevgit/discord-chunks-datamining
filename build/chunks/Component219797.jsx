@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk524444 = require("./524444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk512399 = require("./512399.js");
+  Chunk977267 = require("./977267.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,7 +82,7 @@ function T(e) {
     placeholderVersion: n.placeholder_version,
     contentType: n.content_type,
     originalContentType: n.original_content_type,
-    srcIsAnimated: (0, o.yE)(null != (t = n.flags) ? t : 0, E.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, a.yE)(null != (t = n.flags) ? t : 0, E.J0y.IS_ANIMATED),
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -100,9 +100,9 @@ function T(e) {
 function C(e) {
   var t;
   let n = e.item.originalItem,
-    a = i.useCallback(() => {
+    o = i.useCallback(() => {
       var e;
-      return (0, o.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsx)(l.u, {
+      return (0, a.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsx)(l.u, {
         text: b.intl.string(b.t["/fgfWh"]),
         children: (0, r.jsxs)("div", {
           className: y.clipPill,
@@ -126,8 +126,8 @@ function C(e) {
     src: n.url,
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
-    srcIsAnimated: (0, o.yE)(null != (t = n.flags) ? t : 0, E.J0y.IS_ANIMATED),
-    renderOverlayContent: a,
+    srcIsAnimated: (0, a.yE)(null != (t = n.flags) ? t : 0, E.J0y.IS_ANIMATED),
+    renderOverlayContent: o,
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -153,9 +153,9 @@ function N(e) {
   let {
     message: t,
     item: n
-  } = e, r = n.originalItem, o = (0, d.RT)(d.Ir.VOICE_MESSAGE, r.id), a = i.useCallback((e, n, i) => {
-    var o;
-    (0, f.tb)(t.id, null != (o = r.duration_secs) ? o : null, n, t.author.id)
+  } = e, r = n.originalItem, a = (0, d.RT)(d.Ir.VOICE_MESSAGE, r.id), o = i.useCallback((e, n, i) => {
+    var a;
+    (0, f.tb)(t.id, null != (a = r.duration_secs) ? a : null, n, t.author.id)
   }, [t, r.duration_secs]), s = i.useCallback((e, n) => {
     var i;
     (0, f.EW)(t.id, null != (i = r.duration_secs) ? i : null, e, t.author.id, n)
@@ -169,10 +169,10 @@ function N(e) {
     src: r.url,
     durationSecs: r.duration_secs,
     waveform: r.waveform,
-    onPlay: a,
+    onPlay: o,
     onPause: s,
     onError: l,
-    playbackCacheKey: o
+    playbackCacheKey: a
   }))
 }
 
@@ -207,9 +207,9 @@ function D(e) {
   let {
     attachment: n,
     message: i
-  } = e, o = i.channel_id, s = (0, a.e7)([p.Z], () => {
+  } = e, a = i.channel_id, s = (0, o.e7)([p.Z], () => {
     var e;
-    return null == (e = p.Z.getBasicChannel(o)) ? true : e.guild_id
+    return null == (e = p.Z.getBasicChannel(a)) ? true : e.guild_id
   }), {
     clip_created_at: l,
     clip_participants: c,

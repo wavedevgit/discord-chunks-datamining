@@ -2,7 +2,7 @@
 /** chunk id: 472736, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  y: () => o
+  y: () => a
 });
 var Chunk473749 = require("./473749.js");
 
@@ -10,21 +10,21 @@ function i() {
   return true !== window.ResizeObserver
 }
 
-function o(e) {
+function a(e) {
   let {
     ref: t,
     box: n,
-    onResize: o
+    onResize: a
   } = e;
   (0, r.useEffect)(() => {
     let e = null == t ? true : t.current;
     if (e)
-      if (!i()) return window.addEventListener("resize", o, false), () => {
-        window.removeEventListener("resize", o, false)
+      if (!i()) return window.addEventListener("resize", a, false), () => {
+        window.removeEventListener("resize", a, false)
       };
       else {
         let t = new window.ResizeObserver(e => {
-          e.length && o()
+          e.length && a()
         });
         return t.observe(e, {
           box: n
@@ -32,5 +32,5 @@ function o(e) {
           e && t.unobserve(e)
         }
       }
-  }, [o, t, n])
+  }, [a, t, n])
 }

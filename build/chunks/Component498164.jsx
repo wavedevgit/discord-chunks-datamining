@@ -88,14 +88,14 @@ let M = {
       if (null == S.default.getCurrentUser()) return;
       let {
         guildTemplate: i
-      } = await b.Z.resolveGuildTemplate(t);
+      } = await E.Z.resolveGuildTemplate(t);
       if (null == i) throw new x.Z({
         errorCode: w.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
       return P.ZP.focus(), (0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
+        } = await Promise.all([n.e("10778"), n.e("93099")]).then(n.bind(n, 766775));
         return t => {
           var n, l;
           return (0, r.jsx)(e, (n = R({}, t), l = l = {
@@ -228,8 +228,8 @@ let M = {
         case Z.jE.OAUTH2:
           let r = new URL(w.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           r.search = n.search;
-          let l = (0, E.getOAuth2AuthorizeProps)(r.toString());
-          if (null != l) return (0, E.openOAuth2ModalWithCreateGuildModal)(l), true;
+          let l = (0, _.getOAuth2AuthorizeProps)(r.toString());
+          if (null != l) return (0, _.openOAuth2ModalWithCreateGuildModal)(l), true;
           returnfalse;
         case Z.jE.ONE_TIME_LOGIN:
           if (null != n) return (0, O.Y)({
@@ -260,7 +260,7 @@ let M = {
                   failure_reason: "activity_already_running",
                   attempt_id: n
                 });
-                let a = await _.ZP.fetchApplication(e),
+                let a = await b.ZP.fetchApplication(e),
                   s = null == a || null == (r = a.bot) ? true : r.id;
                 if (null == s) return void T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,

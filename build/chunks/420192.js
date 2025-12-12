@@ -17,18 +17,18 @@ class u extends Chunk727916.Z {
   }
   innerExtract(e, t) {
     let n = t[l].toLowerCase(),
-      o = t[c].toLowerCase(),
-      a = r.pS[o];
+      a = t[c].toLowerCase(),
+      o = r.pS[a];
     if ("volgend" == n || "komend" == n || "aankomend" == n) {
       let t = {};
-      return t[a] = 1, i.L.createRelativeFromReference(e.reference, t)
+      return t[o] = 1, i.L.createRelativeFromReference(e.reference, t)
     }
     if ("afgelopen" == n || "vorig" == n) {
       let t = {};
-      return t[a] = false, i.L.createRelativeFromReference(e.reference, t)
+      return t[o] = false, i.L.createRelativeFromReference(e.reference, t)
     }
     let s = e.createParsingComponents(),
       u = new Date(e.reference.instant.getTime());
-    return o.match(/week/i) ? (u.setDate(u.getDate() - u.getDay()), s.imply("day", u.getDate()), s.imply("month", u.getMonth() + 1), s.imply("year", u.getFullYear())) : o.match(/maand/i) ? (u.setDate(1), s.imply("day", u.getDate()), s.assign("year", u.getFullYear()), s.assign("month", u.getMonth() + 1)) : o.match(/jaar/i) && (u.setDate(1), u.setMonth(0), s.imply("day", u.getDate()), s.imply("month", u.getMonth() + 1), s.assign("year", u.getFullYear())), s
+    return a.match(/week/i) ? (u.setDate(u.getDate() - u.getDay()), s.imply("day", u.getDate()), s.imply("month", u.getMonth() + 1), s.imply("year", u.getFullYear())) : a.match(/maand/i) ? (u.setDate(1), s.imply("day", u.getDate()), s.assign("year", u.getFullYear()), s.assign("month", u.getMonth() + 1)) : a.match(/jaar/i) && (u.setDate(1), u.setMonth(0), s.imply("day", u.getDate()), s.imply("month", u.getMonth() + 1), s.assign("year", u.getFullYear())), s
   }
 }

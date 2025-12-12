@@ -38,23 +38,23 @@ let p = {
   push(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : i()("modal"),
       r = arguments.length > 3 ? arguments[3] : true,
-      a = arguments.length > 4 && true !== arguments[4] ? arguments[4] : u.IlC.APP;
+      o = arguments.length > 4 && true !== arguments[4] ? arguments[4] : u.IlC.APP;
     return (0, s.Ll)(f({
       key: n,
       modal: (0, c.Z)(e, {}, t, n)
-    }, r)), o.Z.dispatch({
+    }, r)), a.Z.dispatch({
       type: "MODAL_PUSH",
       modal: e,
       props: t,
       key: n,
-      appContext: a
+      appContext: o
     }), n
   },
   pushLazy(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : i()("modal"),
       r = arguments.length > 3 ? arguments[3] : true,
-      o = (0, a.D)();
-    return null != o && o.isReady() ? (e instanceof Promise ? e.then(e => {
+      a = (0, o.D)();
+    return null != a && a.isReady() ? (e instanceof Promise ? e.then(e => {
       let {
         default: t
       } = e;
@@ -62,7 +62,7 @@ let p = {
     }) : e()).then(e => this.push(e, t, n, r)) : new Promise(i => l.Z.enqueue(() => i(this.pushLazy(e, t, n, r))))
   },
   updateAnimation(e, t) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "MODAL_UPDATE",
       key: e,
       props: {},
@@ -76,7 +76,7 @@ let p = {
     })
   },
   popWithKey(e, t) {
-    (0, s.GZ)(e, t), o.Z.dispatch({
+    (0, s.GZ)(e, t), a.Z.dispatch({
       type: "MODAL_POP",
       key: e,
       onExited: t

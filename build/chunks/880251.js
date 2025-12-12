@@ -14,15 +14,15 @@ var Chunk473749 = require("./473749.js"),
 function c(e) {
   let {
     bot: t
-  } = e, n = (0, a.ye)(e), {
+  } = e, n = (0, o.ye)(e), {
     url: c
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     applicationId: n ? e.id : true,
     size: 600,
     names: ["embedded_cover"]
   });
   return r.useMemo(() => {
-    let r, o, u = l.u.BOT;
+    let r, a, u = l.u.BOT;
     if (null != t) {
       let {
         banner: e
@@ -32,7 +32,7 @@ function c(e) {
         banner: e,
         size: 512,
         canAnimate: false
-      }), (0, s.xR)(e) && null == c && (o = (0, s.aN)({
+      }), (0, s.xR)(e) && null == c && (a = (0, s.aN)({
         id: t.id,
         banner: e,
         size: 512,
@@ -40,14 +40,14 @@ function c(e) {
       }))
     }
     if (n) {
-      let t = (0, a.yJ)(e);
+      let t = (0, o.yJ)(e);
       null != c && (r = c, u = l.u.ACTIVITY);
       let n = null == t ? true : t.activity_preview_video_asset_id;
-      null != n && (o = (0, i.Z)(e.id, n), u = l.u.ACTIVITY)
+      null != n && (a = (0, i.Z)(e.id, n), u = l.u.ACTIVITY)
     }
     return {
       staticBannerSrc: r,
-      videoBannerSrc: o,
+      videoBannerSrc: a,
       bannerAspectRatio: u
     }
   }, [c, t, n, e])

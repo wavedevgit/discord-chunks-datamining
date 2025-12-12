@@ -5,8 +5,8 @@ var Chunk444675 = require("./444675.js");
   "use strict";
   if (!e.setImmediate) {
     var n, i = 1,
-      o = {},
-      a = false,
+      a = {},
+      o = false,
       s = e.document,
       l = Object.getPrototypeOf && Object.getPrototypeOf(e);
     l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? p() : _() ? m() : e.MessageChannel ? h() : s && "onreadystatechange" in s.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
@@ -15,15 +15,15 @@ var Chunk444675 = require("./444675.js");
   function c(e) {
     "function" != typeof e && (e = Function("" + e));
     for (var t = Array(arguments.length - 1), r = 0; r < t.length; r++) t[r] = arguments[r + 1];
-    var a = {
+    var o = {
       callback: e,
       args: t
     };
-    return o[i] = a, n(i), i++
+    return a[i] = o, n(i), i++
   }
 
   function u(e) {
-    delete o[e]
+    delete a[e]
   }
 
   function d(e) {
@@ -48,15 +48,15 @@ var Chunk444675 = require("./444675.js");
   }
 
   function f(e) {
-    if (a) setTimeout(f, 0, e);
+    if (o) setTimeout(f, 0, e);
     else {
-      var t = o[e];
+      var t = a[e];
       if (t) {
-        a = true;
+        o = true;
         try {
           d(t)
         } finally {
-          u(e), a = false
+          u(e), o = false
         }
       }
     }

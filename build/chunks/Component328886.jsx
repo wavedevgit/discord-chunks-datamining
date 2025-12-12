@@ -37,16 +37,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk967249 = require("./967249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk837262 = require("./837262.js");
+  Chunk927997 = require("./927997.js");
 
 function k(e) {
   let {
     presenceActivity: t,
     remoteJoinPlatform: n
-  } = e, o = (0, R.Cx)({
+  } = e, a = (0, R.Cx)({
     platforms: null == t ? true : t.supported_platforms,
     currentPlatform: x.M7m.DESKTOP
-  }), l = i.useMemo(() => o.map(e => {
+  }), l = i.useMemo(() => a.map(e => {
     switch (e) {
       case R.Ol.MOBILE:
         return (0, r.jsx)(c.AtH, {
@@ -75,14 +75,14 @@ function k(e) {
           color: "currentColor"
         });
       case R.Ol.VR:
-        return (0, r.jsx)(a.Pb9, {
+        return (0, r.jsx)(o.Pb9, {
           size: "xxs",
           color: "currentColor"
         });
       default:
         return null
     }
-  }).filter(O.lm), [o]);
+  }).filter(O.lm), [a]);
   if (!(null != n || l.length > 0)) return null;
   let u = null != n ? (0, A.V)(n) : j.intl.string(j.t["4dGUP0"]);
   return (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ function k(e) {
 }
 
 function U(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     message: s,
     application: O,
@@ -129,7 +129,7 @@ function U(e) {
     enabled: $
   } = m.Q.useConfig({
     location: "rich_presence_game_invite"
-  }), ee = null != (a = null == W || null == (t = W.timestamps) ? true : t.start) ? a : null == W ? true : W.created_at, et = i.useMemo(() => {
+  }), ee = null != (o = null == W || null == (t = W.timestamps) ? true : t.start) ? o : null == W ? true : W.created_at, et = i.useMemo(() => {
     var e;
     return null != ee ? (0, r.jsxs)("div", {
       className: M.timestampContainer,
@@ -146,21 +146,21 @@ function U(e) {
         textFontCode: false
       })]
     }) : null
-  }, [ee, null == W || null == (n = W.timestamps) ? true : n.end, $]), en = (0, T.H)(s), er = (0, b.N)(O.id), ei = i.useMemo(() => er.some(e => (0, g.ig)(e) === o.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
+  }, [ee, null == W || null == (n = W.timestamps) ? true : n.end, $]), en = (0, T.H)(s), er = (0, b.N)(O.id), ei = i.useMemo(() => er.some(e => (0, g.ig)(e) === a.o.GLOBAL) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.YqE, {
       size: "xxs",
       color: "currentColor"
     }), j.intl.string(j.t.TsWCdW)]
-  }) : null, [er]), eo = i.useMemo(() => (0, r.jsxs)(c.Text, {
+  }) : null, [er]), ea = i.useMemo(() => (0, r.jsxs)(c.Text, {
     variant: "text-xs/normal",
     className: M.tagline,
     color: "none",
     lineClamp: 2,
     children: [en ? (0, v.$v)(s, A, R, U, false) : et, en ? null : ei]
-  }), [en, s, A, R, U, et, ei]), ea = i.useMemo(() => (0, r.jsxs)("div", {
+  }), [en, s, A, R, U, et, ei]), eo = i.useMemo(() => (0, r.jsxs)("div", {
     className: M.info,
-    children: [eo, z || en ? null : q]
-  }), [eo, z, en, q]), es = !!G, el = (0, E.A)(O), {
+    children: [ea, z || en ? null : q]
+  }), [ea, z, en, q]), es = !!G, el = (0, E.A)(O), {
     canJoin: ec,
     remoteJoinPlatform: eu
   } = (0, S.h)({
@@ -254,7 +254,7 @@ function U(e) {
     onClickBanner: V,
     bannerAspectRatio: p.u.ACTIVITY,
     iconSrc: null != H ? H : true,
-    info: ea,
+    info: eo,
     actions: em,
     primaryActionFirst: true,
     onClickContent: V,

@@ -3,7 +3,7 @@
 var Chunk400353 = require("./400353.js"),
   Chunk991530 = require("./991530.js"),
   Chunk433005 = require("./433005.js"),
-  a = 1 / 0;
-module.exports = Chunk400353 && 1 / Chunk433005(new Chunk400353([, true]))[1] == a ? function(e) {
+  o = 1 / 0;
+module.exports = Chunk400353 && 1 / Chunk433005(new Chunk400353([, true]))[1] == o ? function(e) {
   return new r(e)
 } : Chunk991530

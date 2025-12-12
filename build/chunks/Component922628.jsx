@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -52,8 +52,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,20 +61,20 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function f(e) {
   var {
     body: t
-  } = e, o = u(e, ["body"]);
+  } = e, a = u(e, ["body"]);
   (0, i.ZDy)(async () => {
     let {
       VoidConfirmModal: e
     } = await Promise.resolve().then(n.bind(n, 481060));
-    return n => (0, r.jsx)(e, c(s({}, n, o), {
+    return n => (0, r.jsx)(e, c(s({}, n, a), {
       children: (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         children: t
@@ -88,8 +88,8 @@ function p(e) {
     message: t
   } = e;
   f({
-    header: o.intl.string(o.t.OjbtDm),
-    confirmText: o.intl.string(o.t.BddRzS),
+    header: a.intl.string(a.t.OjbtDm),
+    confirmText: a.intl.string(a.t.BddRzS),
     body: t
   })
 }

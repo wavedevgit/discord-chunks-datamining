@@ -19,11 +19,11 @@ class d extends Chunk727916.Z {
   innerExtract(e, t) {
     let n = t[c].toLowerCase(),
       i = r.LN[n],
-      o = t[l],
+      a = t[l],
       s = t[u],
-      d = o || s;
+      d = a || s;
     d = (d = d || "").toLowerCase();
     let f = null;
-    return "ultima" == d || "scorsa" == d ? f = "ultima" : "prossima" == d ? f = "prossima" : "questa" == d && (f = "questa"), (0, a.Rv)(e.reference, i, f)
+    return "ultima" == d || "scorsa" == d ? f = "ultima" : "prossima" == d ? f = "prossima" : "questa" == d && (f = "questa"), (0, o.Rv)(e.reference, i, f)
   }
 }

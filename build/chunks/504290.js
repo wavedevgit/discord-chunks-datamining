@@ -3,8 +3,8 @@
 "use strict";
 var Chunk287353 = require("./287353.js"),
   Chunk621523 = require("./621523.js"),
-  o = require("./127849.js").String;
+  a = require("./127849.js").String;
 module.exports = !!Object.getOwnPropertySymbols && !Chunk621523(function() {
   var e = Symbol("symbol detection");
-  return !o(module) || !(Object(module) instanceof Symbol) || !Symbol.sham && Chunk287353 && Chunk287353 < 41
+  return !a(module) || !(Object(module) instanceof Symbol) || !Symbol.sham && Chunk287353 && Chunk287353 < 41
 })

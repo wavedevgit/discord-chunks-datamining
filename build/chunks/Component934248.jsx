@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk709014 = require("./709014.jsx");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -60,15 +60,15 @@ let u = {
   },
   d = e => {
     let t = i.useRef(null),
-      a = i.useRef(e);
-    a.current = e;
+      o = i.useRef(e);
+    o.current = e;
     let l = i.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
-      d = i.useCallback(e => (0, r.jsx)(o.L, c(s({}, e), {
+      d = i.useCallback(e => (0, r.jsx)(a.L, c(s({}, e), {
         src: () => n.e("75535").then(n.t.bind(n, 405115, 19)),
         ref: t,
-        initialAnimation: a.current,
+        initialAnimation: o.current,
         markers: u
       })), []);
     return {

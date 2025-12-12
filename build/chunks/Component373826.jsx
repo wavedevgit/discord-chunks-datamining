@@ -11,7 +11,7 @@ var Chunk194983 = require("./194983.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk671955 = require("./671955.js"),
-  Chunk704543 = require("./704543.js");
+  Chunk251806 = require("./251806.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function p(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -78,7 +78,7 @@ function m(e) {
   } = e, d = p(e, ["text", "onClick", "component"]);
   let {
     themeType: _
-  } = (0, a.z)(), m = "string" == typeof t ? t.trim() : t;
+  } = (0, o.z)(), m = "string" == typeof t ? t.trim() : t;
   if (null == m || "" === m) return null;
   let h = () => _ === s.l.MODAL || _ === s.l.MODAL_V2 ? (0, r.jsx)(c, f(u({
     color: "text-default"
@@ -91,7 +91,7 @@ function m(e) {
       children: m
     })
   }));
-  return null != n ? (0, r.jsx)(o.P3F, {
+  return null != n ? (0, r.jsx)(a.P3F, {
     onClick: e => {
       e.stopPropagation(), n(e)
     },
@@ -102,12 +102,12 @@ function m(e) {
 
 function h(e) {
   return (0, r.jsx)(m, u({
-    component: o.Heading
+    component: a.Heading
   }, e))
 }
 
 function g(e) {
   return (0, r.jsx)(m, u({
-    component: o.Text
+    component: a.Text
   }, e))
 }

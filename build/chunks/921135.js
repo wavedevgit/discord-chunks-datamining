@@ -14,8 +14,8 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 1.5,
-  a = 5,
+let a = 1.5,
+  o = 5,
   s = 1,
   l = 1e3;
 class c {
@@ -58,7 +58,7 @@ class c {
     if ((null == (n = this.cachedCodecInfo) ? true : require.frameRate) != null) v = this.cachedCodecInfo.frameRate;
     else if ("function" == typeof p.getVideoPlaybackQuality) {
       if (null !== this.lockedFrameRate) v = this.lockedFrameRate;
-      else if (Math.abs(p.currentTime - this.lastCurrentTime) > o && this.lastCurrentTime > 0)
+      else if (Math.abs(p.currentTime - this.lastCurrentTime) > a && this.lastCurrentTime > 0)
         if (this.recentFrameRates.length >= 3) {
           let e = this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length;
           this.lockedFrameRate = Math.round(module), v = this.lockedFrameRate, this.lastKnownFrameRate = this.lockedFrameRate
@@ -68,7 +68,7 @@ class c {
           t = p.currentTime - this.baselineTime;
         if (exports >= s && module > 0) {
           let n = module / exports;
-          this.recentFrameRates.push(require), this.recentFrameRates.length > a && this.recentFrameRates.shift(), v = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = v
+          this.recentFrameRates.push(require), this.recentFrameRates.length > o && this.recentFrameRates.shift(), v = Math.round(this.recentFrameRates.reduce((e, t) => e + t, 0) / this.recentFrameRates.length), this.lastKnownFrameRate = v
         } else null !== this.lastKnownFrameRate && (v = this.lastKnownFrameRate)
       }
       this.lastCurrentTime = p.currentTime

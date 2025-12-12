@@ -43,14 +43,14 @@ let C = {
     if (null == t ? true : t.hasSubscribers(T.CkL.POPOUT_CLOSE_AFTER_MODALS)) return t.dispatch(T.CkL.POPOUT_CLOSE_AFTER_MODALS), false;
     let n = O.Z.getGuildId(),
       i = y.Z.getChannelId(n),
-      o = m.Z.getChannel(i),
-      l = _.ZP.getSection(i, null == o ? true : o.isDM()) === T.ULH.SIDEBAR_CHAT ? _.ZP.getSidebarState(i) : null,
+      a = m.Z.getChannel(i),
+      l = _.ZP.getSection(i, null == a ? true : a.isDM()) === T.ULH.SIDEBAR_CHAT ? _.ZP.getSidebarState(i) : null,
       c = (null == l ? true : l.type) === d.tI.VIEW_THREAD || (null == l ? true : l.type) === d.tI.VIEW_CHANNEL ? l.channelId : null;
     if (false === A(i) || false === A(c)) returnfalse;
     if (null != i && (null == l ? true : l.type) === d.tI.CREATE_THREAD) return u.Z.closeChannelSidebar(i), false;
     let f = N(i),
       p = N(c);
-    return null == i || f || p || null == l ? null != i && !f && a.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, false) : I.S.dispatch(T.CkL.SCROLLTO_PRESENT) : u.Z.closeChannelSidebar(i), false
+    return null == i || f || p || null == l ? null != i && !f && o.Z.getChatOpen(i) ? r.Z.updateChatOpen(i, false) : I.S.dispatch(T.CkL.SCROLLTO_PRESENT) : u.Z.closeChannelSidebar(i), false
   }
 };
 
@@ -65,8 +65,8 @@ function A(e) {
 function N(e) {
   if (null == e) returnfalse;
   let t = false;
-  return E.Z.getMessages(e).hasMoreAfter && (i.Z.jumpToPresent(e, T.AQB), t = true), b.ZP.hasUnread(e) && ((0, o.ack)(e, {
+  return E.Z.getMessages(e).hasMoreAfter && (i.Z.jumpToPresent(e, T.AQB), t = true), b.ZP.hasUnread(e) && ((0, a.ack)(e, {
     object: T.qAy.MARK_CHANNEL_AS_READ_KEYBIND,
     objectType: T.AnalyticsObjectTypes.ACK_MANUAL
-  }), t = true), (0, o.iV)(e), t
+  }), t = true), (0, a.iV)(e), t
 }

@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk727916 = require("./727916.js");
 let i = 1,
-  o = 2,
-  a = 3,
+  a = 2,
+  o = 3,
   s = 4,
   l = 5,
   c = 6;
@@ -21,9 +21,9 @@ class u extends Chunk727916.Z {
       u = e.refDate,
       d = new Date(u.getTime());
     if (t[i]) r.start.imply("hour", u.getHours()), r.start.imply("minute", u.getMinutes()), r.start.imply("second", u.getSeconds()), r.start.imply("millisecond", u.getMilliseconds());
-    else if (t[o]) {
-      let e = t[o],
-        n = t[a];
+    else if (t[a]) {
+      let e = t[a],
+        n = t[o];
       "明" == e || "聽" == e ? u.getHours() > 1 && d.setDate(d.getDate() + 1) : "昨" == e || "尋" == e || "琴" == e ? d.setDate(d.getDate() - 1) : "前" == e ? d.setDate(d.getDate() - 2) : "大前" == e ? d.setDate(d.getDate() - 3) : "後" == e ? d.setDate(d.getDate() + 2) : "大後" == e && d.setDate(d.getDate() + 3), "早" == n || "朝" == n ? r.start.imply("hour", 6) : "晚" == n && (r.start.imply("hour", 22), r.start.imply("meridiem", 1))
     } else if (t[s]) {
       let e = t[s][0];

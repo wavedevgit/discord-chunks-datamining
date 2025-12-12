@@ -26,7 +26,7 @@ async function u() {
     null == Chunk522474.Z.getWindow(Chunk501787.$J) && (null == module || module())
   }
   let r = new Promise(t => {
-    e = t, a.Z.addChangeListener(n)
+    e = t, o.Z.addChangeListener(n)
   });
   try {
     await Promise.race([exports, Chunk579092])
@@ -47,11 +47,11 @@ async function f() {
     }, 5e3)
   });
 
-  function a() {
+  function o() {
     null == module || module()
   }
   let l = new Promise(t => {
-    e = t, o.Z.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", a), o.Z.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", a)
+    e = t, a.Z.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS", o), a.Z.subscribe("OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED", o)
   });
   try {
     await Promise.race([Chunk579092, Chunk501787])

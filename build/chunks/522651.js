@@ -18,7 +18,7 @@ function l(e, t, n) {
   let l = i.Z.getChannelId(),
     c = i.Z.getGuildId(),
     u = null == (s = r.Z.getChannel(l)) ? true : s.type;
-  o.default.track(a.rMx.CALL_BUTTON_CLICKED, {
+  a.default.track(o.rMx.CALL_BUTTON_CLICKED, {
     location: e,
     button_name: t,
     toggled_active: n,

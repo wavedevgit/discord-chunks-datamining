@@ -2,21 +2,21 @@
 /** chunk id: 490504, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk967628 = require("./967628.js");
-let a = function(e) {
+  Chunk840111 = require("./840111.js");
+let o = function(e) {
   let {
     message: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     children: [(0, r.jsx)(i.d3s, {
       size: "custom",
-      className: o.icon,
+      className: a.icon,
       width: 20,
       height: 20,
       color: i.TVs.colors.TEXT_FEEDBACK_WARNING

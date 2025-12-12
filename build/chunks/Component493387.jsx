@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
 function A(e, t) {
   var n;
   let r = (0, h.h)(e),
-    i = (0, o.e7)([d.Z, g.Z], () => {
+    i = (0, a.e7)([d.Z, g.Z], () => {
       let t = d.Z.getApplication(e);
       return null != t ? g.Z.getGameByApplication(t) : null
     }, [e]);
@@ -49,24 +49,24 @@ function A(e, t) {
 }
 
 function N(e, t) {
-  var n, r, i, o;
+  var n, r, i, a;
   let {
-    bot: a
+    bot: o
   } = t, s = (null == (n = e.activity) ? true : n.icon_override) != null ? (0, E.xF)(t.id, null == (r = e.activity) ? true : r.icon_override) : null;
   return {
     iconSrc: null != s ? s : b.ZP.getApplicationIconURL({
       id: t.id,
       icon: t.icon,
-      bot: a
+      bot: o
     }),
-    name: null != (o = null == (i = e.activity) ? true : i.name_override) ? o : t.name
+    name: null != (a = null == (i = e.activity) ? true : i.name_override) ? a : t.name
   }
 }
 
 function P(e) {
   var t, n;
   let {
-    analyticsLocations: o,
+    analyticsLocations: a,
     application: d,
     channel: _,
     currentUserId: m,
@@ -88,11 +88,11 @@ function P(e) {
     launchableAppId: M
   } = A(d.id, E.author.id), k = (0, v.Z)({
     application: d,
-    analyticsLocations: o
+    analyticsLocations: a
   }), U = i.useMemo(() => {
     if (null != k) return {
       label: C.intl.string(C.t["jaYS/h"]),
-      icon: a.v3n,
+      icon: o.v3n,
       trackingArea: f.j_.CLOUD_PLAY,
       onClick: k
     }
@@ -118,7 +118,7 @@ function P(e) {
     iconSrc: D,
     onView: b,
     presenceActivity: R,
-    analyticsLocations: o,
+    analyticsLocations: a,
     showAuthButton: B && !V && F.enabled,
     startAuthorization: Y
   }) : (0, r.jsx)(T.Z, {
@@ -139,7 +139,7 @@ function P(e) {
     currentUserPresenceActivity: h,
     hideParty: g,
     partyStatusElement: P,
-    analyticsLocations: o,
+    analyticsLocations: a,
     showAuthButton: B && !V && F.enabled,
     startAuthorization: Y
   })

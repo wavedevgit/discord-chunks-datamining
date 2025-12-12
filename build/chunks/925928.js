@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
   Chunk388032 = require("./388032.jsx");
-let a = 60,
+let o = 60,
   s = 3600,
   l = 86400,
   c = 2592e3,
@@ -34,17 +34,17 @@ function p(e) {
     seconds: t,
     getFormatter: n
   } = e, r = n(), i = "";
-  return t < a ? o.intl.formatToPlainString(r.minutes, {
+  return t < o ? a.intl.formatToPlainString(r.minutes, {
     minutes: 1
-  }) : t < s ? o.intl.formatToPlainString(r.minutes, {
-    minutes: Math.floor(t / a)
-  }) : t < l ? o.intl.formatToPlainString(r.hours, {
+  }) : t < s ? a.intl.formatToPlainString(r.minutes, {
+    minutes: Math.floor(t / o)
+  }) : t < l ? a.intl.formatToPlainString(r.hours, {
     hours: Math.floor(t / s)
-  }) : t < c ? o.intl.formatToPlainString(r.days, {
+  }) : t < c ? a.intl.formatToPlainString(r.days, {
     days: Math.floor(t / l)
-  }) : t < u ? o.intl.formatToPlainString(r.months, {
+  }) : t < u ? a.intl.formatToPlainString(r.months, {
     months: Math.floor(t / c)
-  }) : o.intl.formatToPlainString(r.years, {
+  }) : a.intl.formatToPlainString(r.years, {
     years: Math.floor(t / u)
   })
 }

@@ -29,14 +29,14 @@ function y(e) {
   } = e, y = (0, m.Z)(), O = (0, h.M8)(), {
     familyCenterInitialized: v,
     isLoading: S
-  } = (0, o.cj)([f.Z], () => ({
+  } = (0, a.cj)([f.Z], () => ({
     familyCenterInitialized: f.Z.getIsInitialized(),
     isLoading: f.Z.isLoading()
   })), I = (0, _.M)(), {
     selectedTab: T,
     handleTabChange: C
   } = (0, p.Z)(), A = u.default.getCurrentUser(), N = null != y, P = v && null != A && !N;
-  (0, a.ZP)(() => {
+  (0, o.ZP)(() => {
     (0, c.e)("family-center"), null != n && n()
   });
   let R = {
@@ -54,12 +54,12 @@ function y(e) {
         isConsideredAdult: e,
         numOfAcceptedRequests: n,
         selectedTab: r,
-        selectedTeenId: o
+        selectedTeenId: a
       } = w.current;
       d.default.track(E.rMx.FAMILY_CENTER_VIEWED, {
         is_considered_adult: e,
         num_of_accepted_links: n,
-        selected_teen_id: o,
+        selected_teen_id: a,
         initial_page: g.QH[r],
         source: g._6[t]
       }), l.Z.increment({

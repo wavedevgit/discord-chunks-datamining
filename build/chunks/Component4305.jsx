@@ -16,11 +16,11 @@ function l(e) {
     message: t,
     usernameHook: l,
     compact: c
-  } = e, u = (0, o.ZP)(t), d = l(u), f = i.Z.getSystemMessageUserJoin(t.id), p = s.intl.format(f, {
+  } = e, u = (0, a.ZP)(t), d = l(u), f = i.Z.getSystemMessageUserJoin(t.id), p = s.intl.format(f, {
     username: u.nick,
     usernameHook: d
   });
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
     compact: c,

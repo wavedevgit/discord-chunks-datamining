@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk967538 = require("./967538.jsx"),
   Chunk885302 = require("./885302.jsx"),
   Chunk914677 = require("./914677.jsx"),
-  Chunk86852 = require("./86852.js"),
+  Chunk543130 = require("./543130.js"),
   m = function(e) {
     return e[e.NITRO_GEM = 0] = "NITRO_GEM", e[e.NITRO_LOGO = 1] = "NITRO_LOGO", e[e.AVATAR_DECO = 2] = "AVATAR_DECO", e
   }({});
@@ -24,7 +24,7 @@ let h = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
-    } = e, o = i.useMemo(() => (0, u.Z)(t, l.EFr.SIZE_120, false), [t]);
+    } = e, a = i.useMemo(() => (0, u.Z)(t, l.EFr.SIZE_120, false), [t]);
     return (0, r.jsx)("div", {
       className: _.avatarDecoContainer,
       children: (0, r.jsx)("div", {
@@ -32,7 +32,7 @@ let h = e => {
         children: (0, r.jsx)("img", {
           className: _.avatarDecoImage,
           alt: n,
-          src: o
+          src: a
         })
       })
     })
@@ -42,7 +42,7 @@ let h = e => {
       showAnimations: t = true,
       iconClassName: n,
       staticPercentage: i,
-      innerCircleClassName: o,
+      innerCircleClassName: a,
       progressCircleStrokeSize: l,
       backgroundCircleSize: u,
       percentage: m,
@@ -59,7 +59,7 @@ let h = e => {
         case 0:
           return (0, r.jsx)(d.Z, {
             className: C ? _.nitroGemAnimation : true,
-            backgroundColor: a()(_.gemBackgroundFill, o),
+            backgroundColor: o()(_.gemBackgroundFill, a),
             backgroundCircleSize: u
           });
         case 1:
@@ -78,9 +78,9 @@ let h = e => {
       }
     };
     return (0, r.jsx)("div", {
-      className: a()(_.progressCircle, n),
+      className: o()(_.progressCircle, n),
       children: (0, r.jsx)(p.Z, {
-        animationClassName: a()(_.activeProgressCircle, {
+        animationClassName: o()(_.activeProgressCircle, {
           [_.activeProgressCircleAnimation]: C,
           [null != v ? v : ""]: C
         }),

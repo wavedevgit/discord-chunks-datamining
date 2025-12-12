@@ -2,16 +2,16 @@
 /** chunk id: 781308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  LN: () => o,
+  LN: () => a,
   RA: () => d,
   SH: () => y,
   U0: () => E,
-  _$: () => a,
+  _$: () => o,
   km: () => g
 });
 var Chunk800911 = require("./800911.js"),
   Chunk140081 = require("./140081.js");
-let o = {
+let a = {
     söndag: 0,
     sön: 0,
     so: 0,
@@ -34,7 +34,7 @@ let o = {
     lör: 6,
     lö: 6
   },
-  a = {
+  o = {
     januari: 1,
     jan: 1,
     "jan.": 1,

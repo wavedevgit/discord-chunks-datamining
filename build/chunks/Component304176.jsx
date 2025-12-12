@@ -24,7 +24,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk804309 = require("./804309.js");
+  Chunk288027 = require("./288027.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -101,7 +101,7 @@ let A = 40,
         (0, p.uL)(b.Z5c.CHANNEL(n.id, y.oC.ROLE_SUBSCRIPTIONS))
       },
       x = N ? D : w;
-    return (0, r.jsx)(a.VqE, {
+    return (0, r.jsx)(o.VqE, {
       children: (0, r.jsx)(E.W_, {
         children: (0, r.jsxs)("div", {
           className: v.popoutContainer,
@@ -116,23 +116,23 @@ let A = 40,
               }))
             }), (0, r.jsxs)("div", {
               className: v.truncatingText,
-              children: [(0, r.jsx)(a.Heading, {
+              children: [(0, r.jsx)(o.Heading, {
                 variant: "heading-md/semibold",
                 className: v.roleName,
-                children: (0, r.jsx)(o.Z, {
+                children: (0, r.jsx)(a.Z, {
                   children: S
                 })
-              }), (0, r.jsx)(a.Text, {
+              }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 children: P
               })]
             })]
-          }), (0, r.jsx)(a.Button, {
+          }), (0, r.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: O.intl.string(O.t["H930+H"]),
             onClick: x,
-            icon: a.Ucv,
+            icon: o.Ucv,
             fullWidth: true,
             autoFocus: true
           })]

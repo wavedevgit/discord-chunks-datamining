@@ -13,7 +13,7 @@ var Chunk48657 = require("./48657.js"),
   Chunk800054 = require("./800054.js"),
   p = Array;
 module.exports = function(e) {
-  var t, n, _, m, h, g, E = o(e),
+  var t, n, _, m, h, g, E = a(e),
     b = l(this),
     y = arguments.length,
     O = y > 1 ? arguments[1] : true,
@@ -22,7 +22,7 @@ module.exports = function(e) {
   var S = f(E),
     I = 0;
   if (S && !(this === p && s(S)))
-    for (n = b ? new this : [], h = (m = d(E, S)).next; !(_ = i(h, m)).done; I++) g = v ? a(m, O, [_.value, I], true) : _.value, u(n, I, g);
+    for (n = b ? new this : [], h = (m = d(E, S)).next; !(_ = i(h, m)).done; I++) g = v ? o(m, O, [_.value, I], true) : _.value, u(n, I, g);
   else
     for (t = c(E), n = b ? new this(t) : p(t); t > I; I++) g = v ? O(E[I], I) : E[I], u(n, I, g);
   return n.length = I, n

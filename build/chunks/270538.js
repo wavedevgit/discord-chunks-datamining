@@ -32,7 +32,7 @@ class f extends Chunk147913.Z {
     super(...e), l(this, "handleOverlayMounted", e => {
       c = Date.now()
     }), l(this, "handleNotificationEvent", e => {
-      if (e.action !== a.bv.Viewed) return;
+      if (e.action !== o.bv.Viewed) return;
       let t = Date.now(),
         n = e.notificationType;
       d = {
@@ -46,14 +46,14 @@ class f extends Chunk147913.Z {
         disabled: r
       } = e;
       if (!t) return;
-      let a = Date.now(),
-        l = null != c ? a - c : null,
+      let o = Date.now(),
+        l = null != c ? o - c : null,
         f = null,
         p = null;
       for (let [e, t] of u.entries()) {
-        let r = o.Z.getDisabledSettingByNotificationType(e);
+        let r = a.Z.getDisabledSettingByNotificationType(e);
         if (null != r && r === n) {
-          let n = a - t;
+          let n = o - t;
           (null == f || n < f) && (f = n, p = {
             notificationType: e,
             timestamp: t

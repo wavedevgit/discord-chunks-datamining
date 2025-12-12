@@ -23,9 +23,9 @@ let _ = 15,
   m = 1e3;
 
 function h(e, t, n) {
-  let r = o.Z.getChannel(n);
+  let r = a.Z.getChannel(n);
   if (null == r) return [];
-  let a = e === i.re.USER_SELECT || e === i.re.MENTIONABLE_SELECT,
+  let o = e === i.re.USER_SELECT || e === i.re.MENTIONABLE_SELECT,
     s = e === i.re.ROLE_SELECT || e === i.re.MENTIONABLE_SELECT,
     {
       users: l,
@@ -35,7 +35,7 @@ function h(e, t, n) {
       channel: r,
       canMentionEveryone: false,
       canMentionHere: false,
-      canMentionUsers: a,
+      canMentionUsers: o,
       canMentionRoles: s,
       includeAllGuildUsers: true,
       includeNonMentionableRoles: true,
@@ -58,7 +58,7 @@ function h(e, t, n) {
 }
 
 function g(e, t, n) {
-  let r = o.Z.getChannel(t);
+  let r = a.Z.getChannel(t);
   return null == r ? [] : u.ZP.queryApplicationCommandChannelResults({
     query: e,
     channel: r,
@@ -81,7 +81,7 @@ function E(e, t) {
         var t;
         let n = c.default.getUser(e.id);
         if (null == n) return null;
-        let r = null != i ? a.ZP.getNick(i.id, n.id) : true;
+        let r = null != i ? o.ZP.getNick(i.id, n.id) : true;
         return {
           type: p.tM.USER,
           value: n.id,
@@ -100,7 +100,7 @@ function E(e, t) {
       }
       case r.$.CHANNEL: {
         if (null == i) return null;
-        let t = o.Z.getChannel(e.id);
+        let t = a.Z.getChannel(e.id);
         if (null == t || t.guild_id !== i.id || n.length > 0 && !n.includes(t.type)) return null;
         return {
           type: p.tM.CHANNEL,

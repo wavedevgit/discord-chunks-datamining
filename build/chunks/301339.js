@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 /** chunk id: 301339, original params: e (module,exports,re quire) **/
-function t(e, t, n, r, i, o, a) {
+function t(e, t, n, r, i, a, o) {
   try {
-    var s = e[o](a),
+    var s = e[a](o),
       l = s.value
   } catch (e) {
     return void n(e)
@@ -13,15 +13,15 @@ module.exports = function(e) {
   return function() {
     var n = this,
       r = arguments;
-    return new Promise(function(i, o) {
-      var a = e.apply(n, r);
+    return new Promise(function(i, a) {
+      var o = e.apply(n, r);
 
       function s(e) {
-        t(a, i, o, s, l, "next", e)
+        t(o, i, a, s, l, "next", e)
       }
 
       function l(e) {
-        t(a, i, o, s, l, "throw", e)
+        t(o, i, a, s, l, "throw", e)
       }
       s(true)
     })

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk176354 = require("./176354.js"),
   Chunk675654 = require("./675654.js"),
-  Chunk42868 = require("./42868.js");
+  Chunk700700 = require("./700700.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,7 +69,7 @@ function I(e) {
     targetPosition: b
   } = e, [I, T] = i.useState(0), [C, A] = i.useState(0), [N, P] = i.useState(null), {
     confettiCanvas: R
-  } = i.useContext(u.h), w = (0, o.uR)(R, N), D = i.useMemo(() => [{
+  } = i.useContext(u.h), w = (0, a.uR)(R, N), D = i.useMemo(() => [{
     src: null == n.id ? _.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: false,
@@ -129,17 +129,17 @@ function I(e) {
       }
     }))
   }, [w, I, C]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.Ji, {
+    children: [(0, r.jsx)(a.Ji, {
       ref: P,
       sprites: D,
       colors: S,
       spriteWidth: m.Ko,
       spriteHeight: m.Ko
     }), (0, r.jsx)(d.ZP, {
-      children: (0, r.jsx)(a.animated.div, {
+      children: (0, r.jsx)(o.animated.div, {
         style: E({}, j),
         className: h.emojiContainer,
-        children: (0, r.jsx)(a.animated.div, {
+        children: (0, r.jsx)(o.animated.div, {
           style: y(E({}, M), {
             opacity: M.opacity
           }),

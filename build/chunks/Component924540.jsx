@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -21,14 +21,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk639119 = require("./639119.js"),
   Chunk533246 = require("./533246.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk788963 = require("./788963.js");
+  Chunk952908 = require("./952908.js");
 let b = 6e4;
 
 function y(e) {
   let {
     isTabSelected: t,
     expiresAt: n,
-    badgeCopy: o,
+    badgeCopy: a,
     className: p,
     tooltipTextOverride: _,
     tooltipPosition: m,
@@ -42,7 +42,7 @@ function y(e) {
     }),
     position: null != m ? m : "top",
     children: (0, r.jsxs)("div", {
-      className: a()(E.premiumTrialBadge, S ? E.premiumOfferUnackedBadge : E.premiumOfferWithTimerAcknowledgedBadge, p, {
+      className: o()(E.premiumTrialBadge, S ? E.premiumOfferUnackedBadge : E.premiumOfferWithTimerAcknowledgedBadge, p, {
         [E.premiumTrialBadgeSelected]: t
       }),
       children: [(0, r.jsx)(c.T39, {
@@ -54,7 +54,7 @@ function y(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "eyebrow",
         color: S ? "always-white" : "text-strong",
-        children: o
+        children: a
       })]
     })
   })
@@ -65,10 +65,10 @@ function O(e) {
   let {
     isTabSelected: n,
     trialOffer: i,
-    shouldShowOfferReminder: o
-  } = e, a = null == (t = (0, m.N)()) ? true : t.subscription_trial, s = (0, p.a5)({
-    intervalType: null == a ? true : a.interval,
-    intervalCount: null == a ? true : a.interval_count
+    shouldShowOfferReminder: a
+  } = e, o = null == (t = (0, m.N)()) ? true : t.subscription_trial, s = (0, p.a5)({
+    intervalType: null == o ? true : o.interval,
+    intervalCount: null == o ? true : o.interval_count
   }), l = (0, h.YF)(i), {
     hasExperimentalTooltip: c
   } = (0, _.ZP)("PremiumOfferTabBadge");
@@ -78,7 +78,7 @@ function O(e) {
     offerExpiresAt: i.expires_at,
     tooltipTextOverride: c ? l : null,
     tooltipPosition: c ? "right" : "top",
-    shouldShowOfferReminder: o
+    shouldShowOfferReminder: a
   })
 }
 
@@ -87,19 +87,19 @@ function v(e) {
     isTabSelected: t,
     userDiscount: n,
     includesAmountOff: i,
-    shouldShowOfferReminder: o
-  } = e, a = g.intl.formatToPlainString(g.t.iiLbvu, {
+    shouldShowOfferReminder: a
+  } = e, o = g.intl.formatToPlainString(g.t.iiLbvu, {
     percent: n.discount.amount
   }), s = (0, h.h$)(n), {
     hasExperimentalTooltip: l
   } = (0, _.ZP)("PremiumOfferTabBadge");
   return (0, r.jsx)(S, {
     isTabSelected: t,
-    badgeCopy: i ? a : g.intl.string(g.t["/DTtr6"]),
+    badgeCopy: i ? o : g.intl.string(g.t["/DTtr6"]),
     offerExpiresAt: n.expires_at,
     tooltipTextOverride: l ? s : null,
     tooltipPosition: l ? "right" : "top",
-    shouldShowOfferReminder: o
+    shouldShowOfferReminder: a
   })
 }
 
@@ -108,7 +108,7 @@ function S(e) {
     isTabSelected: t,
     badgeCopy: n,
     offerExpiresAt: i,
-    tooltipTextOverride: o,
+    tooltipTextOverride: a,
     tooltipPosition: s,
     shouldShowOfferReminder: l = false
   } = e;
@@ -116,11 +116,11 @@ function S(e) {
     expiresAt: i,
     isTabSelected: t,
     badgeCopy: n,
-    tooltipTextOverride: o,
+    tooltipTextOverride: a,
     tooltipPosition: s,
     shouldShowOfferReminder: l
   }) : (0, r.jsx)("div", {
-    className: a()(E.premiumTrialBadge, E.premiumOfferUnackedBadge),
+    className: o()(E.premiumTrialBadge, E.premiumOfferUnackedBadge),
     children: (0, r.jsx)(c.Text, {
       variant: "eyebrow",
       className: E.premiumOfferBadgeCopy,

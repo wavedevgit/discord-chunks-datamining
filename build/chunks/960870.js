@@ -47,7 +47,7 @@ function d(e) {
     trackUserProfileAction: h
   } = (0, s.KZ)(), {
     analyticsLocations: g
-  } = (0, o.ZP)(), E = null != _ ? _ : g, b = (0, i.e7)([a.Z], () => a.Z.getUserOutbox(t.id));
+  } = (0, a.ZP)(), E = null != _ ? _ : g, b = (0, i.e7)([o.Z], () => o.Z.getUserOutbox(t.id));
   return (0, r.useCallback)(e => {
     let {
       action: t

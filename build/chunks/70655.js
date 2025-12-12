@@ -35,11 +35,11 @@ class h extends Chunk147913.Z {
       POST_CONNECTION_OPEN: () => this._handleConnectionOpen()
     }), d(this, "_handleTestRegionsResponse", e => {
       let t = e.map(e => e.region);
-      s.Z.shouldPerformLatencyTest(t) ? a.Z.getMediaEngine().rankRtcRegions(e).then(e => {
+      s.Z.shouldPerformLatencyTest(t) ? o.Z.getMediaEngine().rankRtcRegions(e).then(e => {
         m.verbose("RTC region latency test completed, ranked regions are: ", e), (0, r.o)(e, t)
       }).catch(e => m.warn(e)) : m.verbose("RTC cached ranked preferred regions are ".concat(s.Z.getPreferredRegions()))
     }), d(this, "_fetchAndScheduleRefetch", () => {
-      let e = a.Z.supports(u.AN.PORT_AWARE_LATENCY_TESTING) ? 2 : 1;
+      let e = o.Z.supports(u.AN.PORT_AWARE_LATENCY_TESTING) ? 2 : 1;
       (0, r.J)(e).then(e => this._handleTestRegionsResponse(e.body)).catch(e => m.warn(e)), this.refetchTimeout = setTimeout(this._fetchAndScheduleRefetch, _ * l.Z.Millis.MINUTE)
     }), d(this, "_handleConnectionOpen", () => {
       if (c.isPlatformEmbedded && !__OVERLAY__) {

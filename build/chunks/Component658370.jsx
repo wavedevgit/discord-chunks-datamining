@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk74538 = require("./74538.js"),
   Chunk773104 = require("./773104.js"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk743612 = require("./743612.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk505754 = require("./505754.js");
+  Chunk290643 = require("./290643.js");
 let g = e => {
   var t;
   let {
@@ -44,7 +44,7 @@ let g = e => {
     })
   }), P = (0, f._)(S), R = e => (null == e ? true : e.hideOnHoverComponent) !== true;
   return (0, r.jsxs)("div", {
-    className: o()(h.cardDescription, null == P || null == (t = P.description) ? true : t.className),
+    className: a()(h.cardDescription, null == P || null == (t = P.description) ? true : t.className),
     children: [(0, r.jsx)(p.Z, {
       title: n,
       cardVariantStyleInfo: P,
@@ -53,14 +53,14 @@ let g = e => {
       description: b
     }), O && (0, r.jsx)(d.Z, {
       className: g,
-      look: a.zx.Looks.BLANK,
-      color: a.zx.Colors.CUSTOM,
+      look: o.zx.Looks.BLANK,
+      color: o.zx.Colors.CUSTOM,
       subscriptionTier: _.Si.TIER_2,
       textOptions: {
         textOverride: N
       },
       showGradient: true
-    }), 0 !== y.length && R(null == P ? true : P.descriptionCta) && null != v && (0, r.jsx)(a.zx, {
+    }), 0 !== y.length && R(null == P ? true : P.descriptionCta) && null != v && (0, r.jsx)(o.zx, {
       "data-migration-pending": true,
       className: g,
       onClick: v,

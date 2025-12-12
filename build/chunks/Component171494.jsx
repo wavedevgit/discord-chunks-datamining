@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk590433 = require("./590433.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk266973 = require("./266973.js");
+  Chunk327097 = require("./327097.js");
 
 function g(t) {
   var n, e;
@@ -30,34 +30,34 @@ function g(t) {
     onClose: D
   } = t, {
     analyticsLocations: k
-  } = (0, c.ZP)(), _ = null != (e = null != (n = null == x ? true : x[0]) ? n : null == k ? true : k[0]) ? e : null, T = (0, s.e7)([h.default], () => h.default.getUser(w), [w]), [S, U] = (0, f.ZP)(w, g), [Z, E] = i.useState(false), P = i.useCallback(async () => {
-    if (null != T) {
+  } = (0, c.ZP)(), T = null != (e = null != (n = null == x ? true : x[0]) ? n : null == k ? true : k[0]) ? e : null, _ = (0, s.e7)([h.default], () => h.default.getUser(w), [w]), [S, U] = (0, f.ZP)(w, g), [Z, E] = a.useState(false), P = a.useCallback(async () => {
+    if (null != _) {
       E(true);
       try {
-        await o.Z.setCommunicationDisabledDuration(g, w, null, null, _), (0, r.showToast)((0, r.createToast)(b.intl.string(b.t["/Mmbfv"]), r.ToastType.SUCCESS)), D()
+        await o.Z.setCommunicationDisabledDuration(g, w, null, null, T), (0, r.showToast)((0, r.createToast)(b.intl.string(b.t["/Mmbfv"]), r.ToastType.SUCCESS)), D()
       } catch (t) {
         (0, r.showToast)((0, r.createToast)(b.intl.string(b.t.epyCuh), r.ToastType.FAILURE))
       } finally {
         E(false)
       }
     }
-  }, [g, T, w, D, _]), j = i.useCallback(() => {
+  }, [g, _, w, D, T]), j = a.useCallback(() => {
     U || D()
   }, [U, D]);
   return ((0, u.ZP)(() => {
-    null != T && p.default.track(v.rMx.OPEN_MODAL, {
+    null != _ && p.default.track(v.rMx.OPEN_MODAL, {
       type: m.av,
       guild_id: g,
-      other_user_id: T.id
+      other_user_id: _.id
     })
-  }), i.useEffect(() => {
-    (null == T || null == g) && D()
-  }), null == T || null == g) ? null : (0, l.jsx)(a.Modal, {
+  }), a.useEffect(() => {
+    (null == _ || null == g) && D()
+  }), null == _ || null == g) ? null : (0, l.jsx)(i.Modal, {
     transitionState: C,
     onClose: D,
     title: b.intl.string(b.t["+ZD3ou"]),
     subtitle: b.intl.format(b.t["t+abNU"], {
-      username: T.username,
+      username: _.username,
       countdown: t => null == S ? null : (0, l.jsx)(d.Z, {
         className: y.countdown,
         deadline: new Date(S),

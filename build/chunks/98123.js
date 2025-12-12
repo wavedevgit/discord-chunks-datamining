@@ -80,7 +80,7 @@ function p(e) {
           console.error("Rive file load error", e, t)
         })
       };
-    (0, a.f)(r)
+    (0, o.f)(r)
   }, [e, t]), null != t) ? {
     status: "loaded",
     buffer: t

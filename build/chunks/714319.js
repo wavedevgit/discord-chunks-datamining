@@ -1,7 +1,7 @@
 /** Chunk was on 66201 **/
 /** chunk id: 714319, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => a,
+  G: () => s,
   Z: () => o
 });
 var r, Chunk536895 = require("./536895.js");
@@ -25,7 +25,7 @@ function i(e) {
   return e
 }
 
-function s(e, t) {
+function a(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -37,31 +37,31 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var a = ((r = {}).UPDATE_ITEM_COUNT = "UPDATE_ITEM_COUNT", r.SET_FOCUSED_INDEX = "SET_FOCUSED_INDEX", r);
+var s = ((r = {}).UPDATE_ITEM_COUNT = "UPDATE_ITEM_COUNT", r.SET_FOCUSED_INDEX = "SET_FOCUSED_INDEX", r);
 
 function o(e, t) {
   switch (t.type) {
     case l.Us.NAVIGATE_UP:
-      return s(i({}, e), {
+      return a(i({}, e), {
         focusedIndex: Math.max(0, e.focusedIndex - 1)
       });
     case l.Us.NAVIGATE_DOWN:
-      return s(i({}, e), {
+      return a(i({}, e), {
         focusedIndex: Math.min(e.focusedIndex + 1, e.itemCount - 1)
       });
     case l.Us.NAVIGATE_START:
-      return s(i({}, e), {
+      return a(i({}, e), {
         focusedIndex: 0
       });
     case l.Us.NAVIGATE_END:
-      return s(i({}, e), {
+      return a(i({}, e), {
         focusedIndex: e.itemCount - 1
       });
     case "UPDATE_ITEM_COUNT":
       let {
         itemCount: n
       } = t;
-      return s(i({}, e), {
+      return a(i({}, e), {
         itemCount: n,
         focusedIndex: Math.min(n - 1, e.focusedIndex)
       });
@@ -69,7 +69,7 @@ function o(e, t) {
       let {
         index: r
       } = t;
-      return s(i({}, e), {
+      return a(i({}, e), {
         focusedIndex: Math.max(0, Math.min(r, e.itemCount - 1))
       });
     case l.Us.SELECT_FOCUSED_ITEM:

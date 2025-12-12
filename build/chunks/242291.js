@@ -76,27 +76,27 @@ function D() {
 }
 async function x(e) {
   let t = _.default.getCurrentUser(),
-    n = (0, a.Z)(),
+    n = (0, o.Z)(),
     r = (0, v.k9)(e);
   if (null == n || f.Lr.has(n.type) || null == r || !h.ZP.canUseCustomCallSounds(t) || !(0, O.D)()) return;
   await (0, E.w)();
   let i = r.guildId === S.hY ? S.X8 : r.guildId,
-    o = b.Z.getSound(i, r.soundId);
-  if (null != o) {
-    if (!A(o, n) || !N(t, o, n, true) || !P(n)) return null;
-    w(o, n.id)
+    a = b.Z.getSound(i, r.soundId);
+  if (null != a) {
+    if (!A(a, n) || !N(t, a, n, true) || !P(n)) return null;
+    w(a, n.id)
   }
 }
 
 function L(e) {
   let {
     isSoundboardButtonDisabled: t = false
-  } = e, n = (0, r.e7)([_.default], () => _.default.getCurrentUser()), o = [];
+  } = e, n = (0, r.e7)([_.default], () => _.default.getCurrentUser()), a = [];
   if (!t && !D()) {
     let e = (0, g.Fc)(n);
-    (h.ZP.canUseCustomCallSounds(n) || e) && o.push(i.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL)
+    (h.ZP.canUseCustomCallSounds(n) || e) && a.push(i.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL)
   }
-  return o
+  return a
 }
 
 function j(e, t) {
@@ -113,15 +113,15 @@ function j(e, t) {
 function M(e, t, n) {
   (0, l.PS)(e, r => {
     let i = t.guildId === S.X8,
-      o = i ? y.H$.DEFAULT : y.H$.CUSTOM,
-      a = null != r.joinSound ? y.MW.UPDATED : y.MW.ADDED;
+      a = i ? y.H$.DEFAULT : y.H$.CUSTOM,
+      o = null != r.joinSound ? y.MW.UPDATED : y.MW.ADDED;
     r.joinSound = {
       soundId: t.soundId,
       guildId: i ? S.hY : t.guildId
     }, k({
       guildId: e,
-      changeType: a,
-      soundSource: o,
+      changeType: o,
+      soundSource: a,
       soundType: y.jy.ENTRY,
       location: n
     })
@@ -134,10 +134,10 @@ function k(e) {
     changeType: n,
     soundType: r,
     soundSource: i,
-    location: o
+    location: a
   } = e;
   m.default.track(I.rMx.USER_CUSTOM_CALL_SOUND_SETTING_UPDATED, {
-    location_stack: o,
+    location_stack: a,
     guild_id: "" === t ? 0 : Number(t),
     change_type: n,
     sound_type: r,
@@ -159,7 +159,7 @@ function G(e) {
     sound: t,
     location: n
   } = e;
-  o.ZP.trackWithMetadata(I.rMx.EXPRESSION_FAVORITED, {
+  a.ZP.trackWithMetadata(I.rMx.EXPRESSION_FAVORITED, {
     location: n,
     expression_type: T.X1.SOUNDBOARD,
     expression_id: t.soundId,

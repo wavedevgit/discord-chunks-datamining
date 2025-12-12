@@ -4,10 +4,10 @@ let t = "[A-Za-z$_][0-9A-Za-z$_]*",
   n = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
   r = ["true", "false", "null", "undefined", "NaN", "Infinity"],
   i = ["Object", "Function", "Boolean", "Symbol", "Math", "Date", "Number", "BigInt", "String", "RegExp", "Array", "Float32Array", "Float64Array", "Int8Array", "Uint8Array", "Uint8ClampedArray", "Int16Array", "Int32Array", "Uint16Array", "Uint32Array", "BigInt64Array", "BigUint64Array", "Set", "Map", "WeakSet", "WeakMap", "ArrayBuffer", "SharedArrayBuffer", "Atomics", "DataView", "JSON", "Promise", "Generator", "GeneratorFunction", "AsyncFunction", "Reflect", "Proxy", "Intl", "WebAssembly"],
-  o = ["Error", "EvalError", "InternalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"],
-  a = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
+  a = ["Error", "EvalError", "InternalError", "RangeError", "ReferenceError", "SyntaxError", "TypeError", "URIError"],
+  o = ["setInterval", "setTimeout", "clearInterval", "clearTimeout", "require", "exports", "eval", "isFinite", "isNaN", "parseFloat", "parseInt", "decodeURI", "decodeURIComponent", "encodeURI", "encodeURIComponent", "escape", "unescape"],
   s = ["arguments", "this", "super", "console", "window", "document", "localStorage", "sessionStorage", "module", "global"],
-  l = [].concat(a, i, o);
+  l = [].concat(o, i, a);
 
 function c(e) {
   let c = e.regex,
@@ -30,8 +30,8 @@ function c(e) {
       ">" !== i || u(e, {
         after: r
       }) || t.ignoreMatch();
-      let o = e.input.substring(r);
-      if ((n = o.match(/^\s*=/)) || (n = o.match(/^\s+extends\s+/)) && 0 === n.index) return void t.ignoreMatch()
+      let a = e.input.substring(r);
+      if ((n = a.match(/^\s*=/)) || (n = a.match(/^\s+extends\s+/)) && 0 === n.index) return void t.ignoreMatch()
     },
     E = {
       $pattern: t,
@@ -181,7 +181,7 @@ function c(e) {
       match: c.either(/\bJSON/, /\b[A-Z][a-z]+([A-Z][a-z]*|\d)*/, /\b[A-Z]{2,}([A-Z][a-z]+|\d)+([A-Z][a-z]*)*/, /\b[A-Z]{2,}[a-z]+([A-Z][a-z]+|\d)*([A-Z][a-z]*)*/),
       className: "title.class",
       keywords: {
-        _: [...i, ...o]
+        _: [...i, ...a]
       }
     },
     j = {
@@ -214,7 +214,7 @@ function c(e) {
     return c.concat("(?!", e.join("|"), ")")
   }
   let G = {
-      match: c.concat(/\b/, U([...a, "super", "import"].map(e => `${e}\\s*\\(`)), d, c.lookahead(/\s*\(/)),
+      match: c.concat(/\b/, U([...o, "super", "import"].map(e => `${e}\\s*\\(`)), d, c.lookahead(/\s*\(/)),
       className: "title.function",
       relevance: 0
     },
@@ -346,8 +346,8 @@ function c(e) {
 }
 module.exports = function(e) {
   let i = e.regex,
-    o = c(e),
-    a = t,
+    a = c(e),
+    o = t,
     u = ["any", "void", "number", "boolean", "string", "object", "never", "symbol", "bigint", "unknown"],
     d = {
       begin: [/namespace/, /\s+/, e.IDENT_RE],
@@ -364,7 +364,7 @@ module.exports = function(e) {
         keyword: "interface extends",
         built_in: u
       },
-      contains: [o.exports.CLASS_REFERENCE]
+      contains: [a.exports.CLASS_REFERENCE]
     },
     p = {
       className: "meta",
@@ -381,20 +381,20 @@ module.exports = function(e) {
     },
     h = {
       className: "meta",
-      begin: "@" + a
+      begin: "@" + o
     },
     g = (e, t, n) => {
       let r = e.contains.findIndex(e => e.label === t);
       if (false === r) throw Error("can not find mode to replace");
       e.contains.splice(r, 1, n)
     };
-  Object.assign(o.keywords, m), o.exports.PARAMS_CONTAINS.push(h);
-  let E = o.contains.find(e => "attr" === e.scope),
+  Object.assign(a.keywords, m), a.exports.PARAMS_CONTAINS.push(h);
+  let E = a.contains.find(e => "attr" === e.scope),
     b = Object.assign({}, E, {
-      match: i.concat(a, i.lookahead(/\s*\?:/))
+      match: i.concat(o, i.lookahead(/\s*\?:/))
     });
-  return o.exports.PARAMS_CONTAINS.push([o.exports.CLASS_REFERENCE, E, b]), o.contains = o.contains.concat([h, d, f, b]), g(o, "shebang", e.SHEBANG()), g(o, "use_strict", p), o.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(o, {
+  return a.exports.PARAMS_CONTAINS.push([a.exports.CLASS_REFERENCE, E, b]), a.contains = a.contains.concat([h, d, f, b]), g(a, "shebang", e.SHEBANG()), g(a, "use_strict", p), a.contains.find(e => "func.def" === e.label).relevance = 0, Object.assign(a, {
     name: "TypeScript",
     aliases: ["ts", "tsx", "mts", "cts"]
-  }), o
+  }), a
 }

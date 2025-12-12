@@ -8,7 +8,7 @@ var Chunk625137 = require("./625137.js");
 
 function i(e, t) {
   var n, i;
-  let o = (null == (n = e.tags) ? true : n.guild_connections) !== true,
-    a = (null == (i = t.tags) ? true : i.guild_connections) !== true;
-  return o && !a ? 1 : !o && a ? false : (0, r.y2)(e, t)
+  let a = (null == (n = e.tags) ? true : n.guild_connections) !== true,
+    o = (null == (i = t.tags) ? true : i.guild_connections) !== true;
+  return a && !o ? 1 : !a && o ? false : (0, r.y2)(e, t)
 }

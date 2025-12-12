@@ -2,7 +2,7 @@
 /** chunk id: 259706, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  e: () => _
+  e: () => x
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,69 +17,69 @@ var Chunk873546 = require("./873546.js"),
   Chunk954824 = require("./954824.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk457570 = require("./457570.js"),
+  Chunk777431 = require("./777431.js"),
   Chunk74830 = require("./74830.js");
 
-function _(e) {
+function x(e) {
   let {
     token: t,
     hasError: n,
-    errorReason: _
+    errorReason: x
   } = e;
   return n ? (0, r.jsxs)("div", {
-    className: p.page,
+    className: m.page,
     children: [(0, r.jsx)("div", {
-      className: p.logoContainer,
+      className: m.logoContainer,
       children: (0, r.jsx)("img", {
-        src: f,
+        src: p,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: p.content,
-      children: [(0, r.jsx)(a.SM, {
+      className: m.content,
+      children: [(0, r.jsx)(l.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: p.headingText,
-        children: m.intl.string(m.t.RtCSr1)
+        className: m.headingText,
+        children: g.intl.string(g.t.RtCSr1)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: p.bodyText,
-        children: m.intl.string(m.t["S+YjYJ"])
+        className: m.bodyText,
+        children: g.intl.string(g.t["S+YjYJ"])
       }), (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: m.intl.string(m.t.j3cG2p),
+        text: g.intl.string(g.t.j3cG2p),
         fullWidth: true,
         onClick: () => {
-          d.default.track(g.rMx.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
-            error_reason: _
-          }), (0, c.uL)(g.Z5c.LOGIN)
+          d.default.track(f.rMx.ONE_TIME_LOGIN_BACK_TO_LOGIN_CLICKED, {
+            error_reason: x
+          }), (0, c.uL)(f.Z5c.LOGIN)
         }
       })]
     })]
   }) : (0, r.jsxs)("div", {
-    className: p.page,
+    className: m.page,
     children: [(0, r.jsx)("div", {
-      className: p.logoContainer,
+      className: m.logoContainer,
       children: (0, r.jsx)("img", {
-        src: f,
+        src: p,
         alt: ""
       })
     }), (0, r.jsxs)("div", {
-      className: p.content,
-      children: [(0, r.jsx)(a.SM, {
+      className: m.content,
+      children: [(0, r.jsx)(l.SM, {
         alt: ""
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        className: p.headingText,
-        children: m.intl.string(m.t["9h/0Rl"])
+        className: m.headingText,
+        children: g.intl.string(g.t["9h/0Rl"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: p.bodyText,
-        children: m.intl.string(m.t.Wgm7Om)
+        className: m.bodyText,
+        children: g.intl.string(g.t.Wgm7Om)
       }), (0, r.jsx)(o.Button, {
         variant: "primary",
-        text: m.intl.string(m.t.NydsTd),
+        text: g.intl.string(g.t.NydsTd),
         fullWidth: true,
         onClick: () => {
           var e;
@@ -99,17 +99,17 @@ function _(e) {
               return "discord://"
             }(t),
             r = (0, s.zS)(n);
-          d.default.track(g.rMx.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
+          d.default.track(f.rMx.ONE_TIME_LOGIN_APP_DETECTION_ATTEMPTED, {
             detection_type: "mobile_button_clicked",
             device_type: i.tq ? "mobile" : "tablet",
             platform: null == (e = d.default.getSuperProperties()) ? true : e.os
-          }), null != r && d.default.track(g.rMx.DEEP_LINK_CLICKED, {
-            fingerprint: (0, l.K)(r.fingerprint),
+          }), null != r && d.default.track(f.rMx.DEEP_LINK_CLICKED, {
+            fingerprint: (0, a.K)(r.fingerprint),
             attempt_id: r.attemptId,
             source: r.utmSource
           }), h.Z.launch(n, e => {
             e || (0, c.dL)({
-              pathname: g.Z5c.LOGIN
+              pathname: f.Z5c.LOGIN
             })
           })
         }

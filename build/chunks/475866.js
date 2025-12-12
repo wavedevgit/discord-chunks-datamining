@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk147913 = require("./147913.js"),
   Chunk188274 = require("./188274.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,19 +15,19 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = 1e3;
+let o = 1e3;
 class s extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), o(this, "_recentActions", new i.Z(a)), o(this, "trackAction", e => {
+    super(...e), a(this, "_recentActions", new i.Z(o)), a(this, "trackAction", e => {
       let {
         type: t
       } = e;
       this._recentActions.push(t)
-    }), o(this, "getRecentActions", e => this._recentActions.slice(-e).reverse()), o(this, "handlePostConnectionOpen", () => {
-      this._recentActions = new i.Z(a)
-    }), o(this, "handleTrackAction", e => {
+    }), a(this, "getRecentActions", e => this._recentActions.slice(-e).reverse()), a(this, "handlePostConnectionOpen", () => {
+      this._recentActions = new i.Z(o)
+    }), a(this, "handleTrackAction", e => {
       this.trackAction(e)
-    }), o(this, "actions", {
+    }), a(this, "actions", {
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
       OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: this.handleTrackAction,
       LAYOUT_SET_PINNED: this.handleTrackAction,

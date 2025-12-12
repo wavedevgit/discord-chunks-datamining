@@ -13,8 +13,8 @@ function s(e, t) {
   true === t && (t = []);
   var n, l = (0, r.Z)(e),
     c = l === (null == (n = e.ownerDocument) ? true : n.body),
-    u = (0, o.Z)(l),
-    d = c ? [u].concat(u.visualViewport || [], (0, a.Z)(l) ? l : []) : l,
+    u = (0, a.Z)(l),
+    d = c ? [u].concat(u.visualViewport || [], (0, o.Z)(l) ? l : []) : l,
     f = t.concat(d);
   return c ? f : f.concat(s((0, i.Z)(d)))
 }

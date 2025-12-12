@@ -1,7 +1,7 @@
 /** Chunk was on 86590 **/
 /** chunk id: 384331, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  ForwardFailedAlertModal: () => S
+  ForwardFailedAlertModal: () => Z
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk912332 = require("./912332.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk296719 = require("./296719.js");
+  Chunk862587 = require("./862587.js");
 
 function x(e) {
   let {
@@ -38,7 +38,7 @@ function x(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     channel: n
   } = e, t = (0, s.ZP)(n);
@@ -52,7 +52,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function w(e) {
   let {
     user: n
   } = e, t = m.ZP.useName(n), r = (0, i.e7)([p.Z], () => p.Z.getNickname(n.id)), c = (0, i.e7)([b.Z], () => b.Z.getStatus(n.id));
@@ -67,7 +67,7 @@ function v(e) {
   })
 }
 
-function w(e) {
+function P(e) {
   let {
     channel: n
   } = e, t = (0, i.e7)([h.Z], () => h.Z.getGuild(null == n ? true : n.guild_id)), r = (0, s.ZP)(n);
@@ -81,7 +81,7 @@ function w(e) {
   })
 }
 
-function P(e) {
+function S(e) {
   let {
     destination: n
   } = e, {
@@ -91,16 +91,16 @@ function P(e) {
     channel: "channel" === n.type ? f.Z.getChannel(n.id) : null,
     user: "user" === n.type ? j.default.getUser(n.id) : null
   }));
-  return (null == t ? true : t.isGroupDM()) ? (0, l.jsx)(_, {
+  return (null == t ? true : t.isGroupDM()) ? (0, l.jsx)(v, {
     channel: t
-  }) : null != r ? (0, l.jsx)(v, {
+  }) : null != r ? (0, l.jsx)(w, {
     user: r
-  }) : null != t ? (0, l.jsx)(w, {
+  }) : null != t ? (0, l.jsx)(P, {
     channel: t
   }) : null
 }
 
-function S(e) {
+function Z(e) {
   var n, t, {
       message: i,
       failedDestinations: a,
@@ -160,7 +160,7 @@ function S(e) {
       })
     }), (0, l.jsx)("div", {
       className: O.failedDestinations,
-      children: a.map((e, n) => (0, l.jsx)(P, {
+      children: a.map((e, n) => (0, l.jsx)(S, {
         destination: e
       }, n))
     })]

@@ -46,17 +46,17 @@ function m(e) {
 class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.waitFor(a.Z, s.Z, l.ZP), this.syncWith([s.Z], _), null == e) return;
+    if (this.waitFor(o.Z, s.Z, l.ZP), this.syncWith([s.Z], _), null == e) return;
     let {
       suggestedChannels: r,
       dismissedSuggestions: i,
-      channelOpensByChannelId: o
+      channelOpensByChannelId: a
     } = e;
     if (null != r)
       for (let e in r) t = new Set(r[e]), d[e] = true !== t ? t : new Set;
     if (null != i)
       for (let e in i) n = new Set(i[e]), f[e] = true !== n ? n : new Set;
-    p = null != o ? o : {}
+    p = null != a ? a : {}
   }
   getSuggestedChannelId(e) {
     return null

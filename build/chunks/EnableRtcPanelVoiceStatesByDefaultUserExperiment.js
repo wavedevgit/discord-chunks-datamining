@@ -2,12 +2,12 @@
 /** chunk id: 262572, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => a,
+  d: () => o,
   t: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_enable_rtc_panel_voice_states_by_default",
   label: "Enable RTC panel voice states by default experiment",
@@ -23,7 +23,7 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -34,7 +34,7 @@ function a(e) {
   }, {
     autoTrackExposure: n
   });
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }, {
     disable: r,
@@ -53,7 +53,7 @@ function s(e) {
   }, {
     autoTrackExposure: n
   });
-  return o.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     disable: r,

@@ -76,8 +76,8 @@ function P(e) {
     searchQueryString: n,
     searchQuery: r,
     offset: i
-  } = e, o = (0, p.Tm)(t);
-  f.Z.clearSearchMessages(o), E.Z.setShowNoResultsAlt(t), E.Z.setShowBlockedResults(t, false), E.Z.updateSearchResultsQuery(t, n, r, i), E.Z.addSearchHistoryItem(t, n)
+  } = e, a = (0, p.Tm)(t);
+  f.Z.clearSearchMessages(a), E.Z.setShowNoResultsAlt(t), E.Z.setShowBlockedResults(t, false), E.Z.updateSearchResultsQuery(t, n, r, i), E.Z.addSearchHistoryItem(t, n)
 }
 
 function R(e) {
@@ -86,16 +86,16 @@ function R(e) {
     searchContext: n,
     searchQueryString: r,
     searchEverywhere: i,
-    offset: o
-  } = e, a = (0, p.Tm)(n), s = null != (t = b.Z.getSearchMode(a)) ? t : v.o, l = {
-    offset: o
+    offset: a
+  } = e, o = (0, p.Tm)(n), s = null != (t = b.Z.getSearchMode(o)) ? t : v.o, l = {
+    offset: a
   };
   n.type === S.aib.DMS ? f.Z.fetchTabMessages({
     searchContext: n,
     searchTabs: [O.sR.MESSAGES],
     searchQueryString: r,
     searchMode: s,
-    getId: () => a,
+    getId: () => o,
     getLimit: () => S.vpv,
     pagination: l,
     trackExactTotalHits: true,
@@ -108,7 +108,7 @@ function R(e) {
         searchContext: n,
         searchQueryString: t,
         searchQuery: r,
-        offset: o
+        offset: a
       })
     }
   }) : f.Z.fetchMessages({
@@ -126,7 +126,7 @@ function R(e) {
         searchContext: n,
         searchQueryString: t,
         searchQuery: r,
-        offset: o
+        offset: a
       })
     }
   })
@@ -142,10 +142,10 @@ function D(e, t) {
   var n;
   let r = (0, p.Tm)(e),
     i = null != (n = b.Z.getEditorState(r)) ? n : u.nR(d.Jl(g.ZP)),
-    o = u.c2(t, i);
-  o = u.Hl(o, 512);
-  let s = (0, p.kG)(t).filter(e => e.type !== a.ZP.NON_TOKEN_TYPE);
-  o = u.lv(s, o, g.ZP), o = u.iK(0 + t.length, o), E.Z.updateSearchEditorState(e, o)
+    a = u.c2(t, i);
+  a = u.Hl(a, 512);
+  let s = (0, p.kG)(t).filter(e => e.type !== o.ZP.NON_TOKEN_TYPE);
+  a = u.lv(s, a, g.ZP), a = u.iK(0 + t.length, a), E.Z.updateSearchEditorState(e, a)
 }
 
 function x(e, t) {
@@ -167,21 +167,21 @@ function j(e, t, n) {
   let r = (0, p.Tm)(e),
     i = b.Z.getEditorState(r);
   if (null == i) return;
-  let o = u.Sq(i),
-    a = t.type === S.aib.CHANNEL ? (0, p.EX)(o) : o;
-  D(t, a = a.trim());
+  let a = u.Sq(i),
+    o = t.type === S.aib.CHANNEL ? (0, p.EX)(a) : a;
+  D(t, o = o.trim());
   let l = b.Z.getSearchMode(r);
   E.Z.updateSearchMode(t, null != l ? l : v.o), m.Z.transitionSessionAnalytics(e, t);
-  let c = (0, p.kG)(a),
+  let c = (0, p.kG)(o),
     d = (0, p.$G)(c);
   m.Z.refreshSearchQueryAnalyticsId(t), (0, y.tI)({
     searchContext: t,
     query: d,
-    queryString: a,
+    queryString: o,
     searchQuerySource: O.w7.SEARCH_XDM_SETTINGS
   }), R({
     searchContext: t,
-    searchQueryString: a,
+    searchQueryString: o,
     offset: 0
   });
   let _ = (0, p.Tm)(t);
@@ -206,9 +206,9 @@ let k = {
   ensureSearchInputDecorators: function(e) {
     let t, n = (0, p.Tm)(e),
       r = b.Z.getEditorState(n),
-      o = null == r ? true : r.getCurrentContent(),
-      a = null == r ? true : r.getSelection();
-    null != o && null != a ? (t = u.l8(d.Jl(g.ZP), o), t = i.EditorState.forceSelection(t, a)) : t = u.nR(d.Jl(g.ZP)), E.Z.updateSearchEditorState(e, t)
+      a = null == r ? true : r.getCurrentContent(),
+      o = null == r ? true : r.getSelection();
+    null != a && null != o ? (t = u.l8(d.Jl(g.ZP), a), t = i.EditorState.forceSelection(t, o)) : t = u.nR(d.Jl(g.ZP)), E.Z.updateSearchEditorState(e, t)
   },
   setSearchQuery: function(e) {
     let {
@@ -216,20 +216,20 @@ let k = {
       performSearch: n,
       replace: r,
       resultsState: i,
-      searchQuerySource: o
+      searchQuerySource: a
     } = e, {
-      mode: a,
+      mode: o,
       cursorScope: s
     } = i, l = 0;
-    null != a.token ? l = a.token.start : (null == s ? true : s.currentToken) != null && (l = s.currentToken.end);
-    let c = null != a.token ? a.token.end : l;
+    null != o.token ? l = o.token.start : (null == s ? true : s.currentToken) != null && (l = s.currentToken.end);
+    let c = null != o.token ? o.token.end : l;
     L({
       query: t,
       anchor: l,
       focus: c,
       performSearch: n,
       replace: r,
-      searchQuerySource: o
+      searchQuerySource: a
     })
   },
   dispatchSetSearchQuery: L,
@@ -238,7 +238,7 @@ let k = {
   openSearchFiltersModal: function(e) {
     (0, y.aR)({
       searchContext: e
-    }), (0, o.openModalLazy)(async () => {
+    }), (0, a.openModalLazy)(async () => {
       let {
         default: t
       } = await n.e("37979").then(n.bind(n, 238088));

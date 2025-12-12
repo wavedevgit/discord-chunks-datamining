@@ -7,6 +7,6 @@ require.d(exports, {
 var Chunk981631 = require("./981631.js");
 
 function i(e, t, n, i) {
-  let o = null != n ? n : t;
-  return null != o && e.can(r.Plq.CREATE_INSTANT_INVITE, o) || null != t && null != t.vanityURLCode || (null == i ? true : i.invite_code) != null
+  let a = null != n ? n : t;
+  return null != a && e.can(r.Plq.CREATE_INSTANT_INVITE, a) || null != t && null != t.vanityURLCode || (null == i ? true : i.invite_code) != null
 }

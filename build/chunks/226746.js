@@ -10,8 +10,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk526761 = require("./526761.js");
 
 function s(e) {
-  let t = (0, o.Z)({
-    scrollPosition: a.Y_.GUILD_TAG
+  let t = (0, a.Z)({
+    scrollPosition: o.Y_.GUILD_TAG
   });
   return r.useCallback(() => {
     (0, i.s4)(e), t()

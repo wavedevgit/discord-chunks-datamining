@@ -71,7 +71,7 @@ class E {
       if (null != e) {
         let r = s.Z.getUnsafeMutableRoles(n.id),
           i = "partial" === n.data_mode ? d.EO(n.id, r, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : u.qt(n.id, n.roles);
-        this.put(c.rk(c.sp(n, e), u.an(i), a.ZP.getSelfMember(n.id)), t)
+        this.put(c.rk(c.sp(n, e), u.an(i), o.ZP.getSelfMember(n.id)), t)
       }
     }
   }
@@ -84,7 +84,7 @@ class E {
   handleGuildUpdate(e, t) {
     let n = l.Z.getGuild(e.guild.id),
       r = c.R(e.guild, n);
-    this.put(c.rk(r, u.an(u.qt(e.guild.id, e.guild.roles)), a.ZP.getSelfMember(e.guild.id)), t)
+    this.put(c.rk(r, u.an(u.qt(e.guild.id, e.guild.roles)), o.ZP.getSelfMember(e.guild.id)), t)
   }
   handleGuildDelete(e, t) {
     this.delete(e.guild.id, t)
@@ -94,27 +94,27 @@ class E {
       r = s.Z.getUnsafeMutableRoles(e.guildId);
     null != n && this.put(c.rk(n, u.an(h(_({}, r), {
       [e.role.id]: u.wD(e.guildId, e.role)
-    })), a.ZP.getSelfMember(e.guildId)), t)
+    })), o.ZP.getSelfMember(e.guildId)), t)
   }
   handleGuildRoleDelete(e, t) {
     let n = l.Z.getGuild(e.guildId);
     if (null != n) {
       let r = _({}, s.Z.getUnsafeMutableRoles(e.guildId));
       delete r[e.roleId];
-      let i = a.ZP.getSelfMember(e.guildId);
+      let i = o.ZP.getSelfMember(e.guildId);
       null != i && (i = h(_({}, i), {
         roles: i.roles.filter(t => t !== e.roleId)
       })), this.put(c.rk(n, u.an(r), i), t)
     }
   }
   handleGuildMemberAdd(e, t) {
-    if (null != e.joinedAt && e.user.id === o.default.getId()) {
+    if (null != e.joinedAt && e.user.id === a.default.getId()) {
       let n = l.Z.getGuild(e.guildId);
-      null != n && this.put(c.rk((0, i.kH)(n, e.joinedAt), u.an(s.Z.getUnsafeMutableRoles(n.id)), a.ZP.getSelfMember(n.id)), t)
+      null != n && this.put(c.rk((0, i.kH)(n, e.joinedAt), u.an(s.Z.getUnsafeMutableRoles(n.id)), o.ZP.getSelfMember(n.id)), t)
     }
   }
   handleGuildMemberUpdate(e, t) {
-    if (e.user.id !== o.default.getId()) return;
+    if (e.user.id !== a.default.getId()) return;
     let n = l.Z.getGuild(e.guildId);
     null != n && this.put(c.rk(n, u.an(s.Z.getUnsafeMutableRoles(n.id)), {
       roles: e.roles,
@@ -123,7 +123,7 @@ class E {
   }
   resetInMemoryState() {}
   putOne(e, t) {
-    let n = e.members.find(e => e.user.id === o.default.getId()),
+    let n = e.members.find(e => e.user.id === a.default.getId()),
       r = l.Z.getGuild(e.id),
       i = c.rk(c.wD(e, r), u.an(e.roles instanceof Array ? u.qt(e.id, e.roles) : e.roles), null != n ? {
         userId: n.user.id,

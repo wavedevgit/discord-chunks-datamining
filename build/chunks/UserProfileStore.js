@@ -82,10 +82,10 @@ let T = Symbol("NO GUILD ID"),
 function B(e) {
   let t = e.data.type;
   switch (t) {
-    case o.l.CURRENT_GAMES:
-    case o.l.FAVORITE_GAMES:
-    case o.l.PLAYED_GAMES:
-    case o.l.WANT_TO_PLAY_GAMES:
+    case a.l.CURRENT_GAMES:
+    case a.l.FAVORITE_GAMES:
+    case a.l.PLAYED_GAMES:
+    case a.l.WANT_TO_PLAY_GAMES:
       let n = e.data.games.map(e => ({
           applicationId: e.game_id,
           comment: e.comment,
@@ -97,7 +97,7 @@ function B(e) {
         type: t,
         games: r
       });
-    case o.l.APPLICATION:
+    case a.l.APPLICATION:
       return new g.q({
         id: e.id,
         type: t,
@@ -126,13 +126,13 @@ function W(e, t) {
   var n, r;
   let i = D.get(e);
   if (null == i) return;
-  let o = i.get(t);
-  if (null == o) return;
-  let a = o.profileEffect;
-  if ((null == a ? true : a.expiresAt) == null) return;
-  let s = 1e3 * a.expiresAt + b.Cm - Date.now();
+  let a = i.get(t);
+  if (null == a) return;
+  let o = a.profileEffect;
+  if ((null == o ? true : o.expiresAt) == null) return;
+  let s = 1e3 * o.expiresAt + b.Cm - Date.now();
   if (s <= 0) {
-    i.set(t, I(v({}, o), {
+    i.set(t, I(v({}, a), {
       profileEffect: true
     })), null == (r = L.get(e)) || r.delete(t), eg.emitChange();
     return
@@ -177,7 +177,7 @@ function X(e) {
 }
 
 function J(e) {
-  var t, n, r, i, o, l, c, u, f, p, g, E, b, O, S, R, G, Z, F, V, K;
+  var t, n, r, i, a, l, c, u, f, p, g, E, b, O, S, R, G, Z, F, V, K;
   let {
     userProfile: z,
     fetchStartedAt: q
@@ -228,7 +228,7 @@ function J(e) {
   if (null != H && H.userId === z.user.id && (Date.now() > H.expiresAtMs ? H = null : $(er, H)), w.set(z.user.id, {
       userId: z.user.id,
       banner: null == (i = z.user_profile) ? true : i.banner,
-      accentColor: null == (o = z.user_profile) ? true : o.accent_color,
+      accentColor: null == (a = z.user_profile) ? true : a.accent_color,
       themeColors: null == (l = z.user_profile) ? true : l.theme_colors,
       popoutAnimationParticleType: null == (c = z.user_profile) ? true : c.popout_animation_particle_type,
       bio: null != (O = null == (u = z.user_profile) ? true : u.bio) ? O : "",
@@ -260,7 +260,7 @@ function J(e) {
       widgets: null == (p = z.widgets) ? true : p.map(B).filter(m.lm),
       wishlistSettings: z.wishlist_settings
     }), (null == (E = z.user_profile) || null == (g = E.profile_effect) ? true : g.expires_at) != null) {
-    let e = new a.V7;
+    let e = new o.V7;
     x.set(z.user.id, e), Y(z.user.id)
   }
   if (null != z.guild_member_profile) {
@@ -287,7 +287,7 @@ function J(e) {
       e.set(z.guild_member_profile.guild_id, t), D.set(z.user.id, e)
     }
     if ((null == (K = z.guild_member_profile) || null == (V = K.profile_effect) ? true : V.expires_at) != null) {
-      let e = new a.V7,
+      let e = new o.V7,
         t = L.get(z.user.id);
       if (null != t) t.set(z.guild_member_profile.guild_id, e);
       else {
@@ -311,8 +311,8 @@ function ee(e) {
     userId: t,
     guildId: n,
     withMutualFriends: r
-  } = e, i = null != n ? n : T, o = C.get(t);
-  if (null != o) o.add(i);
+  } = e, i = null != n ? n : T, a = C.get(t);
+  if (null != a) a.add(i);
   else {
     let e = new Set;
     e.add(i), C.set(t, e)
@@ -325,8 +325,8 @@ function et(e) {
   let {
     userId: r,
     guildId: i,
-    apiError: o,
-    fetchStartedAt: a
+    apiError: a,
+    fetchStartedAt: o
   } = e;
   null == (t = C.get(r)) || t.delete(null != i ? i : T), A.delete(r);
   let s = null != (n = w.get(r)) ? n : {
@@ -346,7 +346,7 @@ function et(e) {
     fetchEndedAt: 0,
     fetchError: true
   };
-  s.fetchStartedAt = a, s.fetchEndedAt = Date.now(), s.fetchError = o, w.set(r, s), (null == o ? true : o.status) === 404 && (M.set(r, 0), j.set(r, U), k.set(r, G))
+  s.fetchStartedAt = o, s.fetchEndedAt = Date.now(), s.fetchError = a, w.set(r, s), (null == a ? true : a.status) === 404 && (M.set(r, 0), j.set(r, U), k.set(r, G))
 }
 
 function en(e) {
@@ -355,7 +355,7 @@ function en(e) {
     accent_color: n,
     banner: r,
     bio: i,
-    pronouns: o,
+    pronouns: a,
     popout_animation_particle_type: s,
     theme_colors: l,
     profile_effect: c
@@ -365,7 +365,7 @@ function en(e) {
       accentColor: n,
       banner: r,
       bio: i,
-      pronouns: o,
+      pronouns: a,
       popoutAnimationParticleType: s,
       themeColors: l,
       profileEffect: null != c ? {
@@ -373,7 +373,7 @@ function en(e) {
         expiresAt: c.expires_at
       } : true
     })), (null == c ? true : c.expires_at) != null) {
-    let e = new a.V7;
+    let e = new o.V7;
     x.set(t, e), Y(t)
   }
 }
@@ -384,7 +384,7 @@ function er(e) {
     guild_id: n,
     accent_color: r,
     banner: i,
-    bio: o,
+    bio: a,
     pronouns: s,
     popout_animation_particle_type: l,
     theme_colors: c,
@@ -396,7 +396,7 @@ function er(e) {
   if (d.set(n, I(v({}, f), {
       accentColor: r,
       banner: i,
-      bio: o,
+      bio: a,
       pronouns: s,
       popoutAnimationParticleType: l,
       themeColors: c,
@@ -405,7 +405,7 @@ function er(e) {
         expiresAt: u.expires_at
       } : true
     })), (null == u ? true : u.expires_at) != null) {
-    let e = new a.V7,
+    let e = new o.V7,
       r = L.get(t);
     if (null != r) r.set(n, e);
     else {
@@ -420,11 +420,11 @@ function ei(e) {
   V = true
 }
 
-function eo(e) {
+function ea(e) {
   V = false, null != e.guild_id ? er(e) : en(e)
 }
 
-function ea(e) {
+function eo(e) {
   V = false
 }
 
@@ -452,8 +452,8 @@ function el(e) {
   };
   let i = w.get(r);
   if (null != i) {
-    var o;
-    let e = null != (o = i.badges) ? o : [];
+    var a;
+    let e = null != (a = i.badges) ? a : [];
     $(e, H), w.set(r, I(v({}, i), {
       badges: e
     }))
@@ -566,8 +566,8 @@ class eh extends Chunk750041.Z {
       USER_PROFILE_FETCH_FAILURE: et,
       USER_PROFILE_FETCH_SUCCESS: J,
       USER_PROFILE_UPDATE_START: ei,
-      USER_PROFILE_UPDATE_SUCCESS: eo,
-      USER_PROFILE_UPDATE_FAILURE: ea,
+      USER_PROFILE_UPDATE_SUCCESS: ea,
+      USER_PROFILE_UPDATE_FAILURE: eo,
       WIDGET_PENDING_SAVE_SUCCESS: es,
       USER_PROFILE_PIN_BADGES_ON_CLIENT: el,
       MUTUAL_FRIENDS_FETCH_START: z,

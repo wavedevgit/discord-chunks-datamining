@@ -1,7 +1,7 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 950969, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -29,7 +29,7 @@ function g(e) {
     i = f.ZP.isChannelMuted(n, t.id);
   return (!r || !i) && d.ZP.getMentionCount(e) > 0
 }
-let m = Chunk473749.forwardRef(function(e, t) {
+let b = Chunk473749.forwardRef(function(e, t) {
   var n, i, {
       guildId: s,
       guildChannels: c,
@@ -50,13 +50,13 @@ let m = Chunk473749.forwardRef(function(e, t) {
       }
       return i
     }(e, ["guildId", "guildChannels", "guildChannelsVersion"]);
-  let f = (0, o.T)(s, c, u, {
+  let f = (0, a.T)(s, c, u, {
       withVoiceChannels: false
     }, {
       ignoreRecents: true
     }),
-    m = (0, l.e7)([h.Z], () => h.Z.isFocused());
-  return (0, r.jsx)(a.Z, (n = function(e) {
+    b = (0, l.e7)([h.Z], () => h.Z.isFocused());
+  return (0, r.jsx)(o.Z, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -79,7 +79,7 @@ let m = Chunk473749.forwardRef(function(e, t) {
     isUnread: p,
     isMentioned: g,
     items: f,
-    animate: m
+    animate: b
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

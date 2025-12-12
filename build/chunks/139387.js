@@ -72,7 +72,7 @@ let s = {
     try {
       r.Z.dispatch({
         type: "INTEGRATION_SETTINGS_SUBMITTING"
-      }), await o.U3({
+      }), await a.U3({
         applicationId: e,
         commandId: e,
         defaultEveryoneValue: true,
@@ -107,7 +107,7 @@ let s = {
     try {
       r.Z.dispatch({
         type: "INTEGRATION_SETTINGS_SUBMITTING"
-      }), await a.Z.update(e, t.id, t), r.Z.dispatch({
+      }), await o.Z.update(e, t.id, t), r.Z.dispatch({
         type: "INTEGRATION_SETTINGS_SAVE_SUCCESS"
       })
     } catch (e) {

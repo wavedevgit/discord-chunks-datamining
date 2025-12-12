@@ -63,7 +63,7 @@ let d = Object.freeze({
   }),
   f = (0, Chunk663042.U)(() => d),
   p = (e, t) => {
-    o.default.track(a.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
+    a.default.track(o.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
       location: t
     }), (0, i.j)(() => {
       f.setState(t => {

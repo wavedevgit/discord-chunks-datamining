@@ -6,12 +6,12 @@ require.d(exports, {
 });
 var Chunk727785 = require("./727785.js");
 
-function i(e, t, n, o) {
+function i(e, t, n, a) {
   let {
-    length: a
-  } = n, s = o, l = t;
-  if (0 === a) return 0;
+    length: o
+  } = n, s = a, l = t;
+  if (0 === o) return 0;
   if (null == s) s = l;
   else if (s === l) return l;
-  return (l += e === r.a8.UP ? false : 1) < 0 || l >= a ? i(e, l < 0 ? a : false, n, s) : n[l].type === r.h8.HEADER ? i(e, l, n, s) : l
+  return (l += e === r.a8.UP ? false : 1) < 0 || l >= o ? i(e, l < 0 ? o : false, n, s) : n[l].type === r.h8.HEADER ? i(e, l, n, s) : l
 }

@@ -8,7 +8,7 @@ require.d(exports, {
   k5: () => A,
   q5: () => O
 }), require("./35282.js"), require("./388685.js");
-var r, i, o, Chunk544891 = require("./544891.js"),
+var r, i, a, Chunk544891 = require("./544891.js"),
   Chunk70956 = require("./70956.js"),
   Chunk591759 = require("./591759.js"),
   Chunk981631 = require("./981631.js");
@@ -21,7 +21,7 @@ let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
   p = new Set(["/external/"]),
   _ = +Chunk70956.Z.Millis.HOUR,
   m = new Set([window.GLOBAL_ENV.CDN_HOST, null == (r = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? true : r.substring(2)].map(u).filter(Boolean)),
-  h = new Set((null != (o = null == (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? true : i.split(",")) ? o : []).map(e => e.substring(2)).map(u).filter(Boolean)),
+  h = new Set((null != (a = null == (i = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? true : i.split(",")) ? a : []).map(e => e.substring(2)).map(u).filter(Boolean)),
   g = false,
   E = false;
 
@@ -78,7 +78,7 @@ function A(e) {
   return e.attachments.some(I) || e.embeds.some(C)
 }
 async function N(e) {
-  let t = await a.tn.post({
+  let t = await o.tn.post({
     url: c.ANM.ATTACHMENTS_REFRESH_URLS,
     body: {
       attachment_urls: [e]

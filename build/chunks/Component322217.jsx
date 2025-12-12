@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk173511 = require("./173511.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk56413 = require("./56413.js");
+  Chunk338182 = require("./338182.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,14 +49,14 @@ function u(e, t) {
 }
 
 function d(e) {
-  return (0, r.jsx)(o.w0Z, {
-    className: a.variants,
-    children: Object.values(i.O).map(t => (0, r.jsxs)(o.Zbd, {
-      className: a.card,
-      children: [(0, r.jsx)(o.Text, u(l({}, e), {
+  return (0, r.jsx)(a.w0Z, {
+    className: o.variants,
+    children: Object.values(i.O).map(t => (0, r.jsxs)(a.Zbd, {
+      className: o.card,
+      children: [(0, r.jsx)(a.Text, u(l({}, e), {
         variant: t,
         children: e.children
-      })), (0, r.jsx)(o.Text, {
+      })), (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-subtle",
         children: t

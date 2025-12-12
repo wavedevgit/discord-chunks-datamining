@@ -69,10 +69,10 @@ function g() {
 
 function E(e, t) {
   let n = r.useMemo(() => (0, s.Ql)(e), [e]),
-    i = (0, o.Pt)(),
+    i = (0, a.Pt)(),
     {
       searchResults: u
-    } = (0, a.F)(),
+    } = (0, o.F)(),
     d = new Set;
   for (let e of u) {
     let t = e;
@@ -104,15 +104,15 @@ function E(e, t) {
 
 function b(e, t, n) {
   let i = g(),
-    o = (0, u.Z)(e, t, {
+    a = (0, u.Z)(e, t, {
       legacyMatches: n,
       bypassPredicates: i
     }),
-    [a, s] = r.useState(o),
-    l = y(a, o);
+    [o, s] = r.useState(a),
+    l = y(o, a);
   return r.useEffect(() => {
-    l && s(o)
-  }, [l, o]), a
+    l && s(a)
+  }, [l, a]), o
 }
 
 function y(e, t) {

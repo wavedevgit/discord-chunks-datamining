@@ -20,17 +20,17 @@ let d = (0, Chunk663042.U)(e => ({
   f = d;
 
 function p(e) {
-  (0, o.j)(() => d.setState({
+  (0, a.j)(() => d.setState({
     isOnStartStageScreen: e
   }))
 }
 
 function _(e) {
-  let t = (0, a.e7)([l.Z], () => l.Z.getVoiceChannelId() === e.id),
-    n = (0, a.e7)([s.Z], () => s.Z.can(c.yP, e), [e]),
+  let t = (0, o.e7)([l.Z], () => l.Z.getVoiceChannelId() === e.id),
+    n = (0, o.e7)([s.Z], () => s.Z.can(c.yP, e), [e]),
     i = (0, u.Z)(e.id),
-    o = n && !i;
+    a = n && !i;
   r.useEffect(() => {
-    t ? o || p(false) : p(o)
-  }, [t, o])
+    t ? a || p(false) : p(a)
+  }, [t, a])
 }

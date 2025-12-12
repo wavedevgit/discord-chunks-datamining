@@ -15,8 +15,8 @@ var Chunk556585 = require("./556585.js"),
     n = t < 2 ? true : arguments[1];
   if (t && true === n) return u(this, e);
   var r = c(this, e);
-  a(t, 1);
-  for (var i = o(n), s = 0; s < r.length;)
+  o(t, 1);
+  for (var i = a(n), s = 0; s < r.length;)
     if (r[s++] === i) returntrue;
   returnfalse
 }, {

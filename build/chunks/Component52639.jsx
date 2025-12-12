@@ -1,7 +1,7 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,28 +19,28 @@ var Chunk81897 = require("./81897.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk686625 = require("./686625.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk439178 = require("./439178.js");
+  Chunk3311 = require("./3311.js");
 
-function y(e) {
+function O(e) {
   let {
     user: t,
     channelId: n
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: O
   } = (0, l.ZP)(), {
-    context: O
-  } = (0, o.KZ)(), x = (0, i.Z)(), {
-    mutualFriendsCount: j,
-    mutualFriends: v,
-    mutualGuilds: C
-  } = (0, c.Z)(t), I = !t.bot && null != j && j > 0, S = null != C && C.length > 0;
-  return I || S ? (0, r.jsxs)(g.Z.Overlay, {
-    className: _.overlay,
+    context: x
+  } = (0, o.KZ)(), j = (0, i.Z)(), {
+    mutualFriendsCount: v,
+    mutualFriends: C,
+    mutualGuilds: I
+  } = (0, c.Z)(t), _ = !t.bot && null != v && v > 0, S = null != I && I.length > 0;
+  return _ || S ? (0, r.jsxs)(g.Z.Overlay, {
+    className: y.overlay,
     children: [S && (0, r.jsx)(m.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZq"]),
-      listClassName: _.list,
-      items: C.map(e => {
+      listClassName: y.list,
+      items: I.map(e => {
         let {
           guild: n,
           nick: i
@@ -52,17 +52,17 @@ function y(e) {
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), S && I && (0, r.jsx)(p.Z, {
-      className: _.divider
-    }), I && (0, r.jsx)(m.Z, {
+    }), S && _ && (0, r.jsx)(p.Z, {
+      className: y.divider
+    }), _ && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3j"]),
-      listClassName: _.list,
-      onExpand: () => (0, d.Z)(t.id, x),
-      items: null == v ? Array.from({
-        length: j
+      listClassName: y.list,
+      onExpand: () => (0, d.Z)(t.id, j),
+      items: null == C ? Array.from({
+        length: v
       }).map((e, t) => (0, r.jsxs)("div", {
-        className: _.loadingMutualFriend,
+        className: y.loadingMutualFriend,
         children: [(0, r.jsx)(a.ZT, {
           width: 40,
           opacity: .08
@@ -70,7 +70,7 @@ function y(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : v.map(e => {
+      }, t)) : C.map(e => {
         let {
           key: t,
           user: i,
@@ -99,9 +99,9 @@ function y(e) {
                 })
               }
               return e
-            }({}, O), t = t = {
+            }({}, x), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: y
+              sourceAnalyticsLocations: O
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

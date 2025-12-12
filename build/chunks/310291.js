@@ -1,32 +1,32 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 310291, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk232473 = require("./232473.js");
-let a = (e, t) => {
+let s = (e, t) => {
   let {
     groupType: n,
     teamId: i
-  } = t, [a, o] = r.useState(true), [c, u] = r.useState([]), d = r.useCallback(async () => {
-    if (u([]), null == e) return void o(false);
+  } = t, [s, o] = r.useState(true), [c, d] = r.useState([]), u = r.useCallback(async () => {
+    if (d([]), null == e) return void o(false);
     try {
       o(true);
-      let t = await s.C(e, {
+      let t = await a.C(e, {
         grouping_type: n
       });
-      u(t)
+      d(t)
     } catch (e) {} finally {
       o(false)
     }
   }, [e, n]);
   return r.useEffect(() => {
-    d()
-  }, [d]), {
+    u()
+  }, [u]), {
     payoutsByPeriod: r.useMemo(() => (e => {
       let t = {};
       for (let n of e) {
@@ -44,6 +44,6 @@ let a = (e, t) => {
       }
       return l().orderBy(Object.values(t), ["periodStartingAt"], ["desc"])
     })(null != i ? c.filter(e => e.user_id === i) : c), [c, i]),
-    loading: a
+    loading: s
   }
 }

@@ -75,16 +75,16 @@ let S = e => {
       userProfile: n,
       guildMember: r,
       guildMemberProfile: i
-    } = e, o = null != n ? n : i, a = [];
-    if ((null == r ? true : r.nick) && a.push(h.cm.NICKNAME), (null == o ? true : o.pronouns) && a.push(h.cm.PRONOUNS), null == t ? true : t.avatar) {
+    } = e, a = null != n ? n : i, o = [];
+    if ((null == r ? true : r.nick) && o.push(h.cm.NICKNAME), (null == a ? true : a.pronouns) && o.push(h.cm.PRONOUNS), null == t ? true : t.avatar) {
       let e = (0, f.xR)(null == t ? true : t.avatar);
-      a.push(e ? h.cm.ANIMATED_AVATAR : h.cm.AVATAR)
+      o.push(e ? h.cm.ANIMATED_AVATAR : h.cm.AVATAR)
     }
-    if (null == o ? true : o.banner) {
-      let e = (0, f.xR)(null == o ? true : o.banner);
-      a.push(e ? h.cm.ANIMATED_BANNER : h.cm.BANNER)
+    if (null == a ? true : a.banner) {
+      let e = (0, f.xR)(null == a ? true : a.banner);
+      o.push(e ? h.cm.ANIMATED_BANNER : h.cm.BANNER)
     }
-    return (null == o ? true : o.bio) && a.push(h.cm.BIO), (null == o ? true : o.themeColors) != null && true !== o.themeColors.find(e => null !== e) && a.push(h.cm.THEME), (null == t ? true : t.avatarDecoration) != null && a.push(h.cm.AVATAR_DECORATION), (null == o ? true : o.profileEffect) != null && a.push(h.cm.PROFILE_EFFECT), a
+    return (null == a ? true : a.bio) && o.push(h.cm.BIO), (null == a ? true : a.themeColors) != null && true !== a.themeColors.find(e => null !== e) && o.push(h.cm.THEME), (null == t ? true : t.avatarDecoration) != null && o.push(h.cm.AVATAR_DECORATION), (null == a ? true : a.profileEffect) != null && o.push(h.cm.PROFILE_EFFECT), o
   },
   I = e => {
     let t = l.Z.getStatus(e),
@@ -96,15 +96,15 @@ let S = e => {
     var t, n, r;
     let {
       layout: i,
-      userId: o,
-      guildId: a,
+      userId: a,
+      guildId: o,
       sessionId: c,
       sourceSessionId: d,
       showGuildProfile: f = true
-    } = e, p = u.default.getUser(o);
+    } = e, p = u.default.getUser(a);
     if (null == p) return {};
-    let _ = (0, m.Of)(null == p ? true : p.id, f ? a : true),
-      h = f && null != a ? s.ZP.getMember(a, null == p ? true : p.id) : null;
+    let _ = (0, m.Of)(null == p ? true : p.id, f ? o : true),
+      h = f && null != o ? s.ZP.getMember(o, null == p ? true : p.id) : null;
     return {
       profile_layout: i,
       profile_session_id: c,
@@ -155,15 +155,15 @@ let S = e => {
   },
   N = e => ({
     application_id: e,
-    application_linked: null != e && a.default.getFetchStateForApplication(e) === a.FetchState.FETCHED ? null != a.default.getNewestTokenForApplication(e) : null
+    application_linked: null != e && o.default.getFetchStateForApplication(e) === o.FetchState.FETCHED ? null != o.default.getNewestTokenForApplication(e) : null
   }),
   P = e => {
     let {
       guildId: t,
       channelId: n,
       messageId: i,
-      roleId: o,
-      widgetType: a,
+      roleId: a,
+      widgetType: o,
       analyticsLocations: s,
       action: l,
       section: c,
@@ -174,8 +174,8 @@ let S = e => {
       profile_action: l,
       profile_section: c,
       source_message_id: i,
-      source_role_id: o,
-      widget_type: a
+      source_role_id: a,
+      widget_type: o
     }))
   },
   R = e => {
@@ -186,8 +186,8 @@ let S = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      profileUi: o,
-      viewStartedAt: a,
+      profileUi: a,
+      viewStartedAt: o,
       fetchStartedAt: s,
       timeToInteractiveMs: l,
       timeToLoadMs: c,
@@ -195,8 +195,8 @@ let S = e => {
     } = e;
     (null != l ? l : 0) <= 0 || (null != c ? c : 0) <= 0 || (null != u ? u : 0) <= 0 || d.default.track(g.rMx.USER_PROFILE_UI_VIEWED, v(y({}, (0, r.hH)(t), (0, r.JS)(n), C(e), A(e)), {
       location_stack: i,
-      profile_ui: o,
-      view_started_at: a,
+      profile_ui: a,
+      view_started_at: o,
       fetch_started_at: s,
       time_to_interactive_ms: l,
       time_to_load_ms: c,
@@ -208,8 +208,8 @@ let S = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      action: o,
-      display: a,
+      action: a,
+      display: o,
       activity: s,
       stream: l,
       entry: c,
@@ -218,8 +218,8 @@ let S = e => {
     } = e;
     d.default.track(g.rMx.USER_PROFILE_ACTIVITY_ACTION, v(y({}, (0, r.hH)(t), (0, r.JS)(n), C(e), A(e)), {
       location_stack: i,
-      activity_action: o,
-      activity_display: a,
+      activity_action: a,
+      activity_display: o,
       activity_type: T(null != l ? g.IIU.STREAMING : null == s ? true : s.type),
       activity_name: null == s ? true : s.name,
       activity_platform: null == s ? true : s.platform,
@@ -247,11 +247,11 @@ let S = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      badge: o
+      badge: a
     } = e;
     d.default.track(g.rMx.USER_PROFILE_BADGE_PRESSED, v(y({}, (0, r.hH)(t), (0, r.JS)(n), C(e), A(e)), {
       location_stack: i,
-      badge: o
+      badge: a
     }))
   },
   x = e => {
@@ -259,26 +259,26 @@ let S = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      badge: o
+      badge: a
     } = e;
     d.default.track(g.rMx.USER_PROFILE_BADGE_HOVERED, v(y({}, (0, r.hH)(t), (0, r.JS)(n), C(e), A(e)), {
       location_stack: i,
-      badge: o
+      badge: a
     }))
   },
   L = e => {
     var t, n, r;
     let {
       displayProfile: i,
-      isProfileOpen: a
+      isProfileOpen: o
     } = e, s = null == i ? true : i.userId, u = null != s ? l.Z.findActivity(s, e => {
       let {
         type: t
       } = e;
-      return null != o.Z.getAnyStreamForUser(s) ? t === g.IIU.PLAYING : t !== g.IIU.CUSTOM_STATUS
+      return null != a.Z.getAnyStreamForUser(s) ? t === g.IIU.PLAYING : t !== g.IIU.CUSTOM_STATUS
     }) : null;
     d.default.track(g.rMx.DM_PROFILE_TOGGLED, {
-      is_profile_open: a,
+      is_profile_open: o,
       has_images: !!(null != (r = null == u || null == (t = u.assets) ? true : t.large_image) ? r : null == u || null == (n = u.assets) ? true : n.small_image),
       is_friend: c.Z.isFriend(s),
       viewed_profile_user_id: s,
@@ -292,19 +292,19 @@ let S = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      action: o,
-      widgetEdited: a,
+      action: a,
+      widgetEdited: o,
       gameId: s,
       numResults: l,
       numCharacters: c,
       applicationId: u
     } = e;
     P(v(y({}, e), {
-      action: o
+      action: a
     })), d.default.track(g.rMx.USER_PROFILE_EDIT_ACTION, v(y({}, (0, r.hH)(t), (0, r.JS)(n), C(e), N(u)), {
       location_stack: i,
-      edit_action: o,
-      widget_edited: a,
+      edit_action: a,
+      widget_edited: o,
       game_id: s,
       num_results: l,
       num_characters: c,
@@ -316,8 +316,8 @@ let S = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      widgetEdited: o,
-      gameIds: a,
+      widgetEdited: a,
+      gameIds: o,
       tags: s,
       numCharactersCommentary: l,
       isWidgetRemoved: c
@@ -326,8 +326,8 @@ let S = e => {
       action: "EDIT_SAVED"
     })), d.default.track(g.rMx.USER_PROFILE_EDIT_SAVED, v(y({}, (0, r.hH)(t), (0, r.JS)(n), C(e)), {
       location_stack: i,
-      widget_edited: o,
-      game_ids: a,
+      widget_edited: a,
+      game_ids: o,
       tags: s,
       num_characters_commentary: l,
       is_widget_removed: c
@@ -338,17 +338,17 @@ let S = e => {
       guildId: t,
       channelId: n,
       analyticsLocations: i,
-      action: o,
-      wishlistId: a,
+      action: a,
+      wishlistId: o,
       skuId: s,
       productLines: l
     } = e;
     P(v(y({}, e), {
-      action: o
+      action: a
     })), d.default.track(g.rMx.USER_PROFILE_WISHLIST_ACTION, v(y({}, (0, r.hH)(t), (0, r.JS)(n), C(e)), {
       location_stack: i,
-      action_type: o,
-      wishlist_id: a,
+      action_type: a,
+      wishlist_id: o,
       sku_id: s,
       product_lines: null != l ? Array.from(l) : []
     }))

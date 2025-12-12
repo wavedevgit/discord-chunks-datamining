@@ -65,10 +65,10 @@ function y(e) {
     application: n,
     activityAction: P
   });
-  return (0, r.jsx)(o.u, {
+  return (0, r.jsx)(a.u, {
     shouldShow: null != j,
     __unsupportedReactNodeAsText: j,
-    children: (0, r.jsx)(a.Button, {
+    children: (0, r.jsx)(o.Button, {
       type: "submit",
       size: "md",
       variant: D,

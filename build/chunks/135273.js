@@ -14,11 +14,11 @@ function i(e, t, n) {
 require.d(exports, {
   Z: () => l
 }), require("./980754.js"), require("./290780.js"), require("./539854.js");
-let o = null != (r = globalThis.__getTotalRequireTime) ? r : () => 0,
-  a = "undefined" != typeof performance;
+let a = null != (r = globalThis.__getTotalRequireTime) ? r : () => 0,
+  o = "undefined" != typeof performance;
 class s {
   get isTracing() {
-    return !!a && !!this.isTracing_ && (!(Date.now() > this.endTime_) || (this.isTracing_ = false, false))
+    return !!o && !!this.isTracing_ && (!(Date.now() > this.endTime_) || (this.isTracing_ = false, false))
   }
   get endTime() {
     return this.endTime_
@@ -53,7 +53,7 @@ class s {
     }), this.addImportLogDetail())
   }
   addImportLogDetail() {
-    let e = o();
+    let e = a();
     module - this.lastImportDuration > 25 && (this.addDetail("JS Imports", Math.ceil(module) + "ms"), this.lastImportDuration = module)
   }
   markWithDelta(e, t) {
@@ -63,18 +63,18 @@ class s {
   markAt(e, t, n) {
     var r, i;
     if (!this.isTracing) return;
-    let o = 0;
-    for (; o < this.logs.length; o++) {
+    let a = 0;
+    for (; a < this.logs.length; a++) {
       let {
         timestamp: e
-      } = this.logs[o];
+      } = this.logs[a];
       if (null != e && e > n) break
     }
-    this.logs.splice(o, 0, {
+    this.logs.splice(a, 0, {
       emoji: e,
       log: t,
       timestamp: n,
-      prefix: null != (i = null == (r = this.logs[o]) ? true : r.prefix) ? i : ""
+      prefix: null != (i = null == (r = this.logs[a]) ? true : r.prefix) ? i : ""
     })
   }
   addDetail(e, t) {
@@ -89,17 +89,17 @@ class s {
     let r = this.prefix;
     this.mark(e, "Start ".concat(t)), this.prefix += "| ";
     let i = Date.now(),
-      o = n(),
-      a = Date.now() - i;
-    return this.prefix = r, this.mark(e, "Finish ".concat(t), a), o
+      a = n(),
+      o = Date.now() - i;
+    return this.prefix = r, this.mark(e, "Finish ".concat(t), o), a
   }
   async timeAsync(e, t, n) {
     if (!this.isTracing) return n();
     this.mark(e, "Start ".concat(t));
     let r = Date.now(),
       i = await n(),
-      o = Date.now() - r;
-    return this.mark(e, "Finish ".concat(t), o), i
+      a = Date.now() - r;
+    return this.mark(e, "Finish ".concat(t), a), i
   }
   setServerTrace(e) {
     this.logGroups[0].serverTrace = e

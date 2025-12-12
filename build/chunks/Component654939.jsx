@@ -68,9 +68,9 @@ let g = e => {
     actions: S,
     onShow: I,
     estimatedTooltipHeight: T = 300
-  } = e, C = u.vK[t].nameUnformatted, A = (f.intl.string(f.t.lG6a5x) + " " + f.intl.string(C)).toLocaleUpperCase(), N = (0, a.Z)(t), P = (0, s.J)(t);
+  } = e, C = u.vK[t].nameUnformatted, A = (f.intl.string(f.t.lG6a5x) + " " + f.intl.string(C)).toLocaleUpperCase(), N = (0, o.Z)(t), P = (0, s.J)(t);
   (0, i.useEffect)(() => {
-    o.a[o.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = P
+    a.a[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = P
   }, [P]);
   let R = (0, i.useCallback)(() => {
       null == n || n(d.L.USER_DISMISS)
@@ -80,7 +80,7 @@ let g = e => {
       size: "lg",
       graphic: {
         type: "dynamic",
-        component: o.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
+        component: a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
         aspectRatio: "6/4",
         props: {
           src: P,

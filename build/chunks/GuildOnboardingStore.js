@@ -82,7 +82,7 @@ function b() {
 }
 class y extends(r = Chunk442837.ZP.Store) {
   shouldShowOnboarding(e) {
-    return e !== a.ME && e !== a.I_8 && !!c(u[e])
+    return e !== o.ME && e !== o.I_8 && !!c(u[e])
   }
   getOnboardingStatus(e) {
     return u[e]

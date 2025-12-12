@@ -8,7 +8,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk710845 = require("./710845.js"),
   Chunk607802 = require("./607802.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -40,13 +40,13 @@ function l(e) {
 new Chunk710845.Z("SearchSessionAnalyticsManager");
 class c {
   upsertState(e, t) {
-    let n = (0, o.Tm)(e),
+    let n = (0, a.Tm)(e),
       r = this.sessions.get(n),
       i = null != r ? r : l();
     this.sessions.set(n, s({}, i, t))
   }
   getState(e) {
-    let t = (0, o.Tm)(e);
+    let t = (0, a.Tm)(e);
     return this.sessions.get(t)
   }
   getSessionId(e) {
@@ -70,21 +70,21 @@ class c {
     let {
       searchContext: t,
       searchLocation: n
-    } = e, r = (0, o.Tm)(t);
+    } = e, r = (0, a.Tm)(t);
     this.sessions.set(r, l(n))
   }
   terminate(e) {
-    let t = (0, o.Tm)(e);
+    let t = (0, a.Tm)(e);
     this.sessions.delete(t)
   }
   transitionSessionAnalytics(e, t) {
     var n;
-    let r = (0, o.Tm)(e),
-      i = (0, o.Tm)(t);
+    let r = (0, a.Tm)(e),
+      i = (0, a.Tm)(t);
     this.sessions.set(i, null != (n = this.sessions.get(r)) ? n : l()), this.sessions.delete(r)
   }
   constructor() {
-    a(this, "sessions", new Map)
+    o(this, "sessions", new Map)
   }
 }
 let u = new c

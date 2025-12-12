@@ -103,13 +103,13 @@ function w(e) {
 }
 
 function D(e) {
-  let t = (0, a.u)("age_verification_utils"),
+  let t = (0, o.u)("age_verification_utils"),
     n = (0, s.yo)();
   return t && n && (null == e ? true : e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
 
 function x(e) {
-  let t = (0, a.z)("age_verification_utils"),
+  let t = (0, o.z)("age_verification_utils"),
     n = (0, s.Jm)();
   return t && n && (null == e ? true : e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
@@ -119,12 +119,12 @@ function L(e) {
 }
 
 function j(e) {
-  return null != e && (0, a.u)("age_verification_utils") && (0, s.sf)() && e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD)
+  return null != e && (0, o.u)("age_verification_utils") && (0, s.sf)() && e.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD)
 }
 
 function M(e) {
   let t = (0, r.e7)([p.Z], () => p.Z.getGuild(e)),
-    n = (0, a.z)("age_verification_utils"),
+    n = (0, o.z)("age_verification_utils"),
     i = (0, s.L5)();
   return null != t && n && i && t.features.has(b.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD)
 }
@@ -148,8 +148,8 @@ function U() {
 function G(e) {
   let t = (0, s.l6)(),
     n = (0, u.Y2)(e),
-    o = M(null == e ? true : e.id),
-    a = (0, r.e7)([_.default], () => {
+    a = M(null == e ? true : e.id),
+    o = (0, r.e7)([_.default], () => {
       var e;
       return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
@@ -170,7 +170,7 @@ function G(e) {
       description: n ? y.intl.format(y.t["7uIWQM"], {}) : y.intl.format(y.t.x1coPo, {}),
       agreement: y.intl.string(y.t.PBG51l),
       modalType: i.it.NSFW_CHANNEL_AGE_VERIFY
-    } : o ? {
+    } : a ? {
       title: y.intl.string(y.t.UYReTs),
       description: y.intl.string(y.t.SxY4IW),
       agreement: y.intl.string(y.t["5B+npG"]),
@@ -182,7 +182,7 @@ function G(e) {
       modalType: i.it.NSFW_CHANNEL_AGE_VERIFY
     }
   }
-  return a ? {
+  return o ? {
     title: y.intl.string(n ? y.t["H0SG/g"] : y.t.NEabBa),
     description: y.intl.format(n ? y.t["6++3cX"] : y.t["2kHZes"], {
       helpURL: m.Z.getArticleURL(b.BhN.NSFW_AGE_GATING)
@@ -201,7 +201,7 @@ function Z(e) {
   let t = (0, s.l6)(),
     n = U(),
     i = e === E.L0.NSFW_SERVER || e === E.L0.NSFW_SERVER_INVITE || e === E.L0.NSFW_SERVER_INVITE_EMBED,
-    o = (0, r.e7)([_.default], () => {
+    a = (0, r.e7)([_.default], () => {
       var e;
       return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     });
@@ -222,7 +222,7 @@ function Z(e) {
     verifyTitle: y.intl.string(y.t.UYReTs),
     verifyGateDescription: y.intl.string(y.t.SxY4IW),
     verifyAgreementButtonText: y.intl.string(y.t["5B+npG"])
-  } : o && i && !n ? {
+  } : a && i && !n ? {
     verifyTitle: y.intl.string(y.t["H0SG/g"]),
     verifyGateDescription: y.intl.format(y.t["6++3cX"], {
       helpURL: m.Z.getArticleURL(b.BhN.AGE_GATE)
@@ -277,10 +277,10 @@ function Q(e) {
   let n = f.Z.didAgree(e.guild_id),
     r = (null == (t = _.default.getCurrentUser()) ? true : t.nsfwAllowed) === false,
     i = (0, l.c_)("age-gate-utils"),
-    o = (0, c.U)("age-gate-utils"),
-    a = i || o,
+    a = (0, c.U)("age-gate-utils"),
+    o = i || a,
     d = (0, s.sf)(),
-    m = !(n && !r) || d && a;
+    m = !(n && !r) || d && o;
   if (e.isNSFW() && m) returntrue;
   let h = e.guild_id,
     g = p.Z.getGuild(h);
@@ -294,14 +294,14 @@ function X(e) {
       var e;
       return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
-    o = M(null == e ? true : e.guild_id),
-    a = (0, l.pY)("age-gate-utils"),
+    a = M(null == e ? true : e.guild_id),
+    o = (0, l.pY)("age-gate-utils"),
     d = (0, c.s)("age-gate-utils"),
-    m = a || d,
+    m = o || d,
     h = (0, r.e7)([p.Z], () => p.Z.getGuild(null == e ? true : e.guild_id)),
     g = m && t,
     E = !(n && !i) || g;
-  return null != e && (!!e.isNSFW() && !!E || null != h && (!!(0, u.Y2)(h) && !!E || !!o && !!t))
+  return null != e && (!!e.isNSFW() && !!E || null != h && (!!(0, u.Y2)(h) && !!E || !!a && !!t))
 }
 
 function J() {

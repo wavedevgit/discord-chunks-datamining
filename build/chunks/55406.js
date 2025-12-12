@@ -7,7 +7,7 @@ require.r(exports), require.d(exports, {
   renderChangelogMessageMarkup: () => P
 }), require("./35282.js"), require("./704826.js");
 var Chunk159635 = require("./159635.js"),
-  o = require.n(Chunk159635),
+  a = require.n(Chunk159635),
   Chunk800927 = require("./800927.js"),
   Chunk945884 = require("./945884.js"),
   Chunk594199 = require("./594199.js"),
@@ -51,13 +51,13 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = o().defaultRules.lheading,
-  m = o().defaultRules.heading,
-  h = o().defaultRules.link,
-  g = o().defaultRules.image,
-  E = o().defaultRules.list,
-  b = o().defaultRules.blockQuote,
-  y = o().defaultRules.paragraph,
+let _ = a().defaultRules.lheading,
+  m = a().defaultRules.heading,
+  h = a().defaultRules.link,
+  g = a().defaultRules.image,
+  E = a().defaultRules.list,
+  b = a().defaultRules.blockQuote,
+  y = a().defaultRules.paragraph,
   O = /\{(.+?)}/,
   v = /^\$(\w+?)\$/;
 r = require("./235375.jsx");
@@ -67,11 +67,11 @@ let S = e => {
     } = e;
     return (e, n, r) => {
       let i = O.exec(e[1]),
-        a = e[1].replace(O, "");
-      return t && (a = a.toUpperCase()), {
+        o = e[1].replace(O, "");
+      return t && (o = o.toUpperCase()), {
         className: null != i ? i[1] : null,
         level: "=" === e[2] ? 1 : 2,
-        content: o().parseInline(n, a, r)
+        content: a().parseInline(n, o, r)
       }
     }
   },
@@ -111,9 +111,9 @@ let S = e => {
     }), "function" == typeof r.customRules.lheading ? r.customRules.lheading(e) : r.customRules.lheading)
   }),
   C = e => p(d({}, I(e)), {
-    newline: d({}, o().defaultRules.newline),
+    newline: d({}, a().defaultRules.newline),
     text: l.ZP,
-    list: a.Z,
+    list: o.Z,
     subtext: s.Z
   });
 

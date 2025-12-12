@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk493544 = require("./493544.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486807 = require("./486807.js");
+  Chunk153995 = require("./153995.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,11 +76,11 @@ function N(e) {
   var t, n;
   let {
     section: i,
-    setPreventNavigation: a,
+    setPreventNavigation: o,
     scrollerRef: s
   } = e;
   (0, l.Z)({
-    type: o.ImpressionTypes.PANE,
+    type: a.ImpressionTypes.PANE,
     name: null == i ? true : i.impressionName,
     properties: null == i ? true : i.impressionProperties
   });
@@ -89,7 +89,7 @@ function N(e) {
   return (0, r.jsx)(m.Z, {
     section: i.section,
     children: (0, r.jsx)(c, S(O({}, u), {
-      setPreventNavigation: a,
+      setPreventNavigation: o,
       refToScroller: s
     }))
   })
@@ -141,15 +141,15 @@ class P extends Chunk473749.PureComponent {
       section: t,
       title: n,
       showUserSettingsSearch: i
-    } = this.props, o = e.flatMap(e => e.newIndicatorDismissibleContentTypes).filter(e => null != e), a = null != t ? t : e[0].section;
+    } = this.props, a = e.flatMap(e => e.newIndicatorDismissibleContentTypes).filter(e => null != e), o = null != t ? t : e[0].section;
     return (0, r.jsx)(u.ZP, {
-      contentTypes: o,
+      contentTypes: a,
       children: t => {
         let {
-          visibleContent: o
+          visibleContent: a
         } = t;
         return (0, r.jsxs)(s.njP, {
-          selectedItem: a,
+          selectedItem: o,
           onItemSelect: this.handleSetSection,
           orientation: "vertical",
           "aria-label": n,
@@ -170,7 +170,7 @@ class P extends Chunk473749.PureComponent {
                 let i = null != (n = e.element) ? n : g.VqG;
                 return (0, r.jsx)(i, {}, t);
               default:
-                return this.renderSettingsSectionTabBarItem(e, a === e.section, o)
+                return this.renderSettingsSectionTabBarItem(e, o === e.section, a)
             }
           })]
         })
@@ -196,8 +196,8 @@ class P extends Chunk473749.PureComponent {
       sidebarTheme: t,
       section: n,
       title: i,
-      onClose: o,
-      hideSidebar: a
+      onClose: a,
+      hideSidebar: o
     } = this.props, s = this.getPredicateSections(), l = Chunk481060.find(e => e.section === n);
     if (null == Chunk213609 || null == require) return null;
     let u = null != (e = "string" == typeof Chunk213609.label ? Chunk213609.label : Chunk213609.ariaLabel) ? module : Chunk473749;
@@ -241,22 +241,22 @@ class P extends Chunk473749.PureComponent {
       } = this.props, {
         shouldPreventNavigation: r,
         onPreventNavigation: i
-      } = this.state, o = () => {
+      } = this.state, a = () => {
         var r;
         null == t || t(e);
         let {
           notice: i
-        } = null != (r = n.find(t => e === t.section)) ? r : {}, o = null != i ? i.stores : null;
-        null != o && o.forEach(e => {
+        } = null != (r = n.find(t => e === t.section)) ? r : {}, a = null != i ? i.stores : null;
+        null != a && a.forEach(e => {
           this._subscribedStores.includes(e) || (e.addChangeListener(this.handleNoticeStoreUpdate), this._subscribedStores.push(e))
         }), this.setState(S(O({}, I), {
           sidebarOpen: false
         }))
       };
-      this.validNavigation() && !r && (o(), _.Z.addBreadcrumb({
+      this.validNavigation() && !r && (a(), _.Z.addBreadcrumb({
         category: "settings",
         message: "Set section: ".concat(e)
-      })), r && null != i && i(o)
+      })), r && null != i && i(a)
     }), y(this, "handleClose", () => {
       if (this.validNavigation()) {
         let {
@@ -269,7 +269,7 @@ class P extends Chunk473749.PureComponent {
     }), y(this, "renderSettingsSectionTabBarItem", (e, t, n) => {
       let {
         section: i,
-        label: o = null,
+        label: a = null,
         ariaLabel: l,
         onClick: c,
         variant: u,
@@ -283,7 +283,7 @@ class P extends Chunk473749.PureComponent {
         size: "custom",
         width: 20,
         height: 20,
-        color: a.Z.colors.STATUS_WARNING.css
+        color: o.Z.colors.STATUS_WARNING.css
       }) : null != e.decoration ? y = (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-muted",
@@ -294,12 +294,12 @@ class P extends Chunk473749.PureComponent {
         count: h
       }));
       let O = i === g.oAB.PREMIUM ? (0, r.jsx)(d.Z, {
-        label: o,
+        label: a,
         isSelected: t,
         decoration: y
-      }) : null == y ? o : (0, r.jsxs)("div", {
+      }) : null == y ? a : (0, r.jsxs)("div", {
         className: b.tabBarItemContainer,
-        children: [o, y]
+        children: [a, y]
       });
       return (0, r.jsx)(s.njP.Item, {
         variant: u,

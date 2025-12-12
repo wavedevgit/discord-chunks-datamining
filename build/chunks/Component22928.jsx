@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk768581 = require("./768581.js"),
-  Chunk512409 = require("./512409.js");
+  Chunk802565 = require("./802565.js");
 let s = 20,
   l = e => {
     let {
       application: t,
       iconSize: n = s
-    } = e, l = i.useMemo(() => o.ZP.getApplicationIconURL({
+    } = e, l = i.useMemo(() => a.ZP.getApplicationIconURL({
       id: t.id,
       icon: t.icon,
       size: n
     }), [t, n]);
     return (0, r.jsx)("img", {
-      className: a.applicationIcon,
+      className: o.applicationIcon,
       src: l,
       alt: "",
       height: n,

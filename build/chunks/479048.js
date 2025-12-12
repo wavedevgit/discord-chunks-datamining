@@ -3,5 +3,5 @@
 "use strict";
 var Chunk154028 = require("./154028.js"),
   Chunk25124 = require("./25124.js"),
-  o = "DOMException";
-Chunk25124(Chunk154028(o), o)
+  a = "DOMException";
+Chunk25124(Chunk154028(a), a)

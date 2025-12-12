@@ -28,7 +28,7 @@ function g(e) {
     skuId: O,
     appId: v,
     onHeaderTitleClick: S
-  } = e, I = (0, o.e7)([l.Z], () => l.Z.getForSKU(O), [O]), T = (0, o.e7)([s.Z], () => s.Z.get(O), [O]), C = (0, d.M)(O);
+  } = e, I = (0, a.e7)([l.Z], () => l.Z.getForSKU(O), [O]), T = (0, a.e7)([s.Z], () => s.Z.get(O), [O]), C = (0, d.M)(O);
   if (null == T) return null;
   let A = null != (n = T.name) ? n : "",
     N = null != (g = null == I || null == (t = I.description) ? true : t.trim()) ? g : true,
@@ -57,7 +57,7 @@ function g(e) {
       tag: null != w ? (0, r.jsx)(i.V, {
         text: w
       }) : true,
-      FallbackIcon: a.Prq
+      FallbackIcon: o.Prq
     })
   })
 }

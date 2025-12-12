@@ -23,5 +23,5 @@ let s = Object.freeze({
   u = e => {
     (0, i.j)(() => l.setState({
       shouldShowWarning: e
-    })), e && o.S.dispatch(a.CkL.EMPHASIZE_NOTICE)
+    })), e && a.S.dispatch(o.CkL.EMPHASIZE_NOTICE)
   }

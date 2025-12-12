@@ -2,8 +2,8 @@
 /** chunk id: 70722, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C7: () => a,
-  Ec: () => o,
+  C7: () => o,
+  Ec: () => a,
   Mm: () => E,
   T6: () => c,
   ZM: () => m,
@@ -22,8 +22,8 @@ var Chunk214627 = require("./214627.js"),
   i = function(e) {
     return e.BLACK_SCREEN = "BLACK_SCREEN", e.BLURRY = "BLURRY", e.LAGGING = "LAGGING", e.OUT_OF_SYNC = "OUT_OF_SYNC", e.AUDIO_MISSING = "AUDIO_MISSING", e.AUDIO_POOR = "AUDIO_POOR", e.GAME_ISSUE = "GAME_ISSUE", e.STREAM_STOPPED = "STREAM_STOPPED", e.NO_ISSUE = "NO_ISSUE", e.OTHER = "OTHER", e.VIBES_OFF = "VIBES_OFF", e
   }({});
-let o = ">=19.0.0",
-  a = ">=22.0.0",
+let a = ">=19.0.0",
+  o = ">=22.0.0",
   s = ">=22.0.0",
   l = ">=24.0.0",
   c = ">=10.0.17763",

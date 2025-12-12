@@ -3,18 +3,18 @@
 "use strict";
 var Chunk48511 = require("./48511.js"),
   Chunk815329 = require("./815329.js"),
-  o = function(e, t, n) {
+  a = function(e, t, n) {
     for (var r, i = e; null != (r = i.next); i = r)
       if (r.key === t) return i.next = r.next, n || (r.next = e.next, e.next = r), r
   },
-  a = function(e, t) {
+  o = function(e, t) {
     if (e) {
-      var n = o(e, t);
+      var n = a(e, t);
       return n && n.value
     }
   },
   s = function(e, t, n) {
-    var r = o(e, t);
+    var r = a(e, t);
     r ? r.value = n : e.next = {
       key: t,
       next: e.next,
@@ -22,10 +22,10 @@ var Chunk48511 = require("./48511.js"),
     }
   },
   l = function(e, t) {
-    return !!e && !!o(e, t)
+    return !!e && !!a(e, t)
   },
   c = function(e, t) {
-    if (e) return o(e, t, true)
+    if (e) return a(e, t, true)
   };
 module.exports = function() {
   var e, t = {
@@ -38,7 +38,7 @@ module.exports = function() {
       return r && n && n === r && (e = true), !!r
     },
     get: function(t) {
-      return a(e, t)
+      return o(e, t)
     },
     has: function(t) {
       return l(e, t)

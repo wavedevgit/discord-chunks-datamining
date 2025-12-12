@@ -11,11 +11,11 @@ function i(e, t) {
   returnfalse
 }
 
-function o(e) {
+function a(e) {
   returnfalse
 }
 
-function a() {
+function o() {
   returnfalse
 }
 
@@ -26,6 +26,6 @@ require.d(exports, {
   EV: () => s,
   GZ: () => i,
   Ll: () => r,
-  lE: () => a,
-  om: () => o
+  lE: () => o,
+  om: () => a
 })

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk522942 = require("./522942.js"),
   Chunk131016 = require("./131016.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -61,16 +61,16 @@ function b(e) {
     main: t,
     light1: n,
     light2: r,
-    dark1: o,
-    dark2: a,
+    dark1: a,
+    dark2: o,
     toonStroke: s
   } = (0, i.hX)(e);
   return {
     [d]: t,
     [f]: n,
     [p]: r,
-    [_]: o,
-    [m]: a,
+    [_]: a,
+    [m]: o,
     [h]: s
   }
 }
@@ -87,20 +87,20 @@ function O(e, t) {
   let {
     shouldWrap: n = false,
     fontOpacity: i = 1
-  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, o = {};
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, a = {};
   switch (e) {
     case r.m.GRADIENT:
     case r.m.GLOW:
-      o = y(t);
+      a = y(t);
       break;
     case r.m.NEON:
     case r.m.POP:
     case r.m.TOON:
     case r.m.SOLID:
     default:
-      t.length > 0 && (o = b(t[0]))
+      t.length > 0 && (a = b(t[0]))
   }
-  return l(a({}, o), {
+  return l(o({}, a), {
     [g]: n ? "wrap" : "nowrap",
     [E]: i
   })

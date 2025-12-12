@@ -8,10 +8,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk451697 = require("./451697.js"),
+  Chunk457858 = require("./457858.js"),
   u = function(e) {
     return e[e.SMALL = 0] = "SMALL", e[e.LARGE = 1] = "LARGE", e
   }({});
@@ -20,16 +20,16 @@ function d(e) {
   var t;
   let {
     game: n,
-    application: o,
+    application: a,
     size: u,
     className: d
-  } = e, [f, p] = i.useState(false), _ = null != (t = null == o ? true : o.name) ? t : n.name, m = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null, h = () => {
+  } = e, [f, p] = i.useState(false), _ = null != (t = null == a ? true : a.name) ? t : n.name, m = null != n.firstReleaseDate ? new Date(n.firstReleaseDate) : null, h = () => {
     p(true)
   }, g = () => {
     p(false)
   };
   return null == n.coverImageUrl || f ? (0, r.jsxs)("div", {
-    className: a()(c.fallback, d),
+    className: o()(c.fallback, d),
     children: [(0, r.jsx)("div", {
       className: c.spacer
     }), (0, r.jsx)(s.xvT, {

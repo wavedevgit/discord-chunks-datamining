@@ -23,7 +23,7 @@ function c(e) {
     onNonTier2Subscriber: _,
     onTier2Subscriber: m,
     onCustomCriteria: h
-  } = e, g = (0, s.N)(), E = (0, a.N)(), b = (0, r.e7)([i.Z], () => i.Z.getPremiumTypeSubscription()), y = o.ZP.getPremiumTypeFromSubscription(b);
+  } = e, g = (0, s.N)(), E = (0, o.N)(), b = (0, r.e7)([i.Z], () => i.Z.getPremiumTypeSubscription()), y = a.ZP.getPremiumTypeFromSubscription(b);
   if (null != h) {
     let e = h();
     if (null != e) return e

@@ -5,28 +5,28 @@ require.d(exports, {
 });
 var Chunk973772 = require("./973772.js"),
   Chunk535396 = require("./535396.js"),
-  Chunk265397 = require("./265397.js"),
+  Chunk556970 = require("./556970.js"),
   Chunk388032 = require("./388032.jsx");
 
 function a(e) {
   var t, n, a;
   let s, {
-      guildId: u,
-      powerups: c
+      guildId: c,
+      powerups: u
     } = e,
-    d = (0, r.Gv)(u, c),
-    p = d.some(e => e.type !== i.A3.INACTIVE);
-  if (c.length <= 0) return null;
-  let f = d.reduce((e, t) => {
+    d = (0, r.Gv)(c, u),
+    f = d.some(e => e.type !== i.A3.INACTIVE);
+  if (u.length <= 0) return null;
+  let p = d.reduce((e, t) => {
     let {
       sourceEntitlement: n
     } = t, r = null == n ? true : n.ends_at;
     return null == r ? e : null == e || r < e ? r : e
   }, true);
-  null != f ? s = {
+  null != p ? s = {
     type: "expiring",
-    expiringAt: f
-  } : p && (s = {
+    expiringAt: p
+  } : f && (s = {
     type: "active",
     statusText: o.intl.string(l.default.FFLkmx)
   });
@@ -51,13 +51,13 @@ function a(e) {
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    x = p ? m : g;
+    x = f ? m : g;
   return {
-    isActive: p,
+    isActive: f,
     status: s,
     cost: x,
-    costDecorator: !p && v > x ? "+" : true,
-    expiringAt: f,
+    costDecorator: !f && v > x ? "+" : true,
+    expiringAt: p,
     activeCost: m,
     minCost: g,
     totalCost: v

@@ -7,18 +7,18 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk711703 = require("./711703.js"),
   Chunk484710 = require("./484710.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk449081 = require("./449081.js");
+  Chunk381285 = require("./381285.js");
 
 function f(e) {
   let {
     label: t,
     labelHook: n,
-    count: o,
+    count: a,
     dismissNotice: f,
     className: p,
     noticeType: _
@@ -33,18 +33,18 @@ function f(e) {
       n(), (0, l.l)(_, c.up.LEARN_MORE)
     }, [_, n]);
   return (0, r.jsxs)("div", {
-    className: a()(d.safetySettingsNotice, p),
+    className: o()(d.safetySettingsNotice, p),
     children: [(0, r.jsx)(s.d3s, {
       size: "md"
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "interactive-text-active",
-      children: null != o ? u.intl.format(t, {
+      children: null != a ? u.intl.format(t, {
         hook: (e, t) => (0, r.jsx)(s.Anchor, {
           onClick: g,
           children: e
         }, t),
-        count: o
+        count: a
       }) : u.intl.format(t, {
         hook: (e, t) => (0, r.jsx)(s.Anchor, {
           onClick: g,

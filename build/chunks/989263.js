@@ -12,7 +12,7 @@ var Chunk131704 = require("./131704.js"),
 let s = Chunk981631.S7T.VIEW_CHANNEL | Chunk981631.S7T.READ_MESSAGE_HISTORY;
 
 function l(e) {
-  return null != e && (e.type === a.d4z.DM || e.type === a.d4z.GROUP_DM || (0, r.Qm)(e.type) && o.Z.canBasicChannel(s, e))
+  return null != e && (e.type === o.d4z.DM || e.type === o.d4z.GROUP_DM || (0, r.Qm)(e.type) && a.Z.canBasicChannel(s, e))
 }
 
 function c(e) {

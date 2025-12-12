@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk739566 = require("./739566.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk636518 = require("./636518.js");
+  Chunk231288 = require("./231288.js");
 
 function d(e) {
   var t;
@@ -23,9 +23,9 @@ function d(e) {
     onClickThread: p,
     onClickViewThreads: _,
     onContextMenuThread: m
-  } = e, h = (0, s.ZP)(n), g = f(h), E = (0, i.e7)([a.Z], () => {
+  } = e, h = (0, s.ZP)(n), g = f(h), E = (0, i.e7)([o.Z], () => {
     var e;
-    return a.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
+    return o.Z.getChannel(null == (e = n.messageReference) ? true : e.channel_id)
   }), b = c.intl.format(c.t.cZ9Uf2, {
     actorName: h.nick,
     actorHook: g,
@@ -37,7 +37,7 @@ function d(e) {
     viewThreadsOnClick: _
   });
   return (0, r.jsx)(l.Z, {
-    iconNode: (0, r.jsx)(o.or_, {
+    iconNode: (0, r.jsx)(a.or_, {
       size: "md",
       color: "currentColor",
       className: u.icon

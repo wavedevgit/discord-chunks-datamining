@@ -3,11 +3,11 @@
 var Chunk706627 = require("./706627.js"),
   Chunk292403 = require("./292403.js"),
   Chunk906087 = require("./906087.js"),
-  a = Object.prototype.hasOwnProperty;
+  o = Object.prototype.hasOwnProperty;
 module.exports = function(e) {
-  if (!r(e)) return o(e);
+  if (!r(e)) return a(e);
   var t = i(e),
     n = [];
-  for (var s in e) "constructor" == s && (t || !a.call(e, s)) || n.push(s);
+  for (var s in e) "constructor" == s && (t || !o.call(e, s)) || n.push(s);
   return n
 }

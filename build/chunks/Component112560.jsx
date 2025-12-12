@@ -8,10 +8,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk388354 = require("./388354.js");
+  Chunk286376 = require("./286376.js");
 
 function c(e) {
   return e < 400 ? "small" : e < 1e3 ? "medium" : "large"
@@ -39,29 +39,29 @@ function u(e) {
       padding: 4
     },
     children: [!_ && null != p && (0, r.jsx)("div", {
-      className: o()(l.art, l[d]),
+      className: a()(l.art, l[d]),
       style: {
         backgroundImage: "url(".concat(p, ")")
       }
-    }), null != i ? (0, r.jsx)(a.Text, {
+    }), null != i ? (0, r.jsx)(o.Text, {
       color: "none",
       variant: "text-md/semibold",
       className: l.header,
       children: i
-    }) : null, null != u ? (0, r.jsx)(a.Text, {
+    }) : null, null != u ? (0, r.jsx)(o.Text, {
       className: l.errorCodeMessage,
       variant: "text-sm/semibold",
       color: "text-muted",
       selectable: true,
       children: u
-    }) : null, null != c && (null == u || "small" !== d) ? (0, r.jsx)(a.Text, {
+    }) : null, null != c && (null == u || "small" !== d) ? (0, r.jsx)(o.Text, {
       color: "none",
       className: l.description,
       variant: "text-sm/medium",
       children: c
     }) : null, m || null == n ? null : (0, r.jsx)("div", {
       className: l.outerButton,
-      children: (0, r.jsx)(a.Button, {
+      children: (0, r.jsx)(o.Button, {
         size: "small" === d ? "sm" : "md",
         variant: "secondary",
         onClick: e => {

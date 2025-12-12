@@ -14,12 +14,12 @@ module.exports = function e(t, n) {
     if (t.constructor === RegExp) return t.source === n.source && t.flags === n.flags;
     if (t.valueOf !== Object.prototype.valueOf) return t.valueOf() === n.valueOf();
     if (t.toString !== Object.prototype.toString) return t.toString() === n.toString();
-    if ((r = (o = Object.keys(t)).length) !== Object.keys(n).length) returnfalse;
+    if ((r = (a = Object.keys(t)).length) !== Object.keys(n).length) returnfalse;
     for (i = r; 0 != i--;)
-      if (!Object.prototype.hasOwnProperty.call(n, o[i])) returnfalse;
+      if (!Object.prototype.hasOwnProperty.call(n, a[i])) returnfalse;
     for (i = r; 0 != i--;) {
-      var r, i, o, a = o[i];
-      if (!e(t[a], n[a])) returnfalse
+      var r, i, a, o = a[i];
+      if (!e(t[o], n[o])) returnfalse
     }
     returntrue
   }

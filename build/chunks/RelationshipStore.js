@@ -115,7 +115,7 @@ function L(e) {
     [e.relationship.id]: e.relationship.since
   })), null != e.relationship.originApplicationId && (y = f(u({}, y), {
     [e.relationship.id]: e.relationship.originApplicationId
-  })), e.relationship.isSpamRequest ? g.add(e.relationship.id) : g.delete(e.relationship.id), e.relationship.userIgnored ? (E.add(e.relationship.id), e.relationship.type === l.OGo.PENDING_INCOMING ? b.add(e.relationship.id) : e.relationship.type === l.OGo.FRIEND && b.delete(e.relationship.id)) : (E.delete(e.relationship.id), b.delete(e.relationship.id)), w(), e.relationship.type === l.OGo.FRIEND && t === l.OGo.PENDING_OUTGOING && o.Z.dispatch({
+  })), e.relationship.isSpamRequest ? g.add(e.relationship.id) : g.delete(e.relationship.id), e.relationship.userIgnored ? (E.add(e.relationship.id), e.relationship.type === l.OGo.PENDING_INCOMING ? b.add(e.relationship.id) : e.relationship.type === l.OGo.FRIEND && b.delete(e.relationship.id)) : (E.delete(e.relationship.id), b.delete(e.relationship.id)), w(), e.relationship.type === l.OGo.FRIEND && t === l.OGo.PENDING_OUTGOING && a.Z.dispatch({
     type: "FRIEND_REQUEST_ACCEPTED",
     user: e.relationship.user
   })
@@ -162,7 +162,7 @@ class G extends(r = Chunk442837.ZP.Store) {
   isBlockedForMessage(e) {
     var t, n, r, i;
     if (null != e.author && _.get(e.author.id) === l.OGo.BLOCKED) returntrue;
-    if (e instanceof a.ZP) {
+    if (e instanceof o.ZP) {
       if (this.isBlocked(null == (i = e.interactionMetadata) || null == (r = i.user) ? true : r.id)) returntrue
     } else if (this.isBlocked(null == (n = e.interaction_metadata) || null == (t = n.user) ? true : t.id)) returntrue;
     returnfalse
@@ -173,7 +173,7 @@ class G extends(r = Chunk442837.ZP.Store) {
   isIgnoredForMessage(e) {
     var t, n, r, i;
     if (null != e.author && this.isIgnored(e.author.id)) returntrue;
-    if (e instanceof a.ZP) {
+    if (e instanceof o.ZP) {
       if (this.isIgnored(null == (i = e.interactionMetadata) || null == (r = i.user) ? true : r.id)) returntrue
     } else if (this.isIgnored(null == (n = e.interaction_metadata) || null == (t = n.user) ? true : t.id)) returntrue;
     returnfalse

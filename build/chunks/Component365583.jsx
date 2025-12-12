@@ -31,7 +31,7 @@ function y(e) {
     activity: t,
     onOpenGameSettings: n
   } = e;
-  return (0, u.Z)(t) || (0, c.Z)(t) || (0, a.Z)(t) ? b : (0, l.Z)(t) && !(0, s.Z)(t) ? n : null
+  return (0, u.Z)(t) || (0, c.Z)(t) || (0, o.Z)(t) ? b : (0, l.Z)(t) && !(0, s.Z)(t) ? n : null
 }
 
 function O(e) {
@@ -61,7 +61,7 @@ function S(e) {
   let {
     user: t,
     activity: n,
-    entry: a,
+    entry: o,
     onAction: s,
     onClose: l,
     appContext: c
@@ -72,10 +72,10 @@ function S(e) {
     })) return null;
   let d = v({
     activity: n,
-    entry: a,
+    entry: o,
     onOpenGameSettings: u
   });
-  return null == d ? null : (0, r.jsx)(o.sNh, {
+  return null == d ? null : (0, r.jsx)(a.sNh, {
     id: "manage-privacy",
     label: E.intl.string(E.t.anfNPV),
     action: () => {

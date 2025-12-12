@@ -58,10 +58,10 @@ function j(e, t) {
 }
 
 function M(e, t) {
-  var n, r, i, o, a, s, l;
+  var n, r, i, a, o, s, l;
   let c = null == t ? null : y.Z.getMessage(e.id, t),
-    u = null != (a = null == c || null == (r = c.embeds) || null == (n = r[0]) ? true : n.rawTitle) ? a : "",
-    d = null != (s = null == c || null == (o = c.poll) || null == (i = o.question) ? true : i.text) ? s : "";
+    u = null != (o = null == c || null == (r = c.embeds) || null == (n = r[0]) ? true : n.rawTitle) ? o : "",
+    d = null != (s = null == c || null == (a = c.poll) || null == (i = a.question) ? true : i.text) ? s : "";
   if ("" !== u) return j(u, 40);
   {
     if ("" !== d) return j(d, 80);
@@ -92,7 +92,7 @@ function k(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: i,
-    privateThreadMode: a,
+    privateThreadMode: o,
     location: s,
     onThreadCreated: c,
     useDefaultThreadName: d,
@@ -101,7 +101,7 @@ function k(e) {
   return r.useCallback(async (e, r, p) => {
     var _;
     let m = null == n,
-      h = L(i, a),
+      h = L(i, o),
       g = null != (_ = i.name) ? _ : "";
     if ("" === g && d) {
       let e = M(t, n);
@@ -111,7 +111,7 @@ function k(e) {
       O = E.Z.getChannel(S.default.castMessageIdAsChannelId(n)),
       v = await F(t, [], true, () => {
         let e = null != n ? P.ANM.CHANNEL_MESSAGE_THREADS(t.id, n) : P.ANM.CHANNEL_THREADS(t.id);
-        return o.tn.post({
+        return a.tn.post({
           url: e,
           body: {
             name: g,
@@ -123,11 +123,11 @@ function k(e) {
         })
       });
     v !== O && (l.Z.clearDraft(t.id, b.d.ThreadSettings), l.Z.clearDraft(t.id, b.d.FirstThreadMessage), null == c || c(v), (m || e.length > 0 || null != r && r.length > 0 || null != p && p.length > 0) && Z(v, e, r, p, f)), u.Z.clearAll(t.id, b.d.FirstThreadMessage)
-  }, [t, n, i, c, a, s, d, f])
+  }, [t, n, i, c, o, s, d, f])
 }
 
 function U(e, t, n, r, i) {
-  return F(e, [], true, () => o.tn.post({
+  return F(e, [], true, () => a.tn.post({
     url: P.ANM.CHANNEL_THREADS(e.id),
     body: {
       name: t,
@@ -143,7 +143,7 @@ function G(e) {
   let {
     parentChannel: t,
     name: n,
-    appliedTags: a,
+    appliedTags: o,
     analyticsLocations: s,
     onThreadCreated: c,
     upload: d
@@ -157,7 +157,7 @@ function G(e) {
       S = {
         name: n,
         auto_archive_duration: O,
-        applied_tags: a,
+        applied_tags: o,
         message: {
           content: e,
           sticker_ids: r,
@@ -181,7 +181,7 @@ function G(e) {
         reason: r
       }), i
     }
-    let C = await F(t, s, m, () => o.tn.post({
+    let C = await F(t, s, m, () => a.tn.post({
       url: v,
       body: S,
       rejectWithError: false
@@ -191,7 +191,7 @@ function G(e) {
       channelId: t.id,
       postId: C.id
     }), null == c || c(C), C
-  }, [t, n, a, c, s, d])
+  }, [t, n, o, c, s, d])
 }
 
 function Z(e, t, n, r, i) {
@@ -204,24 +204,24 @@ function Z(e, t, n, r, i) {
   })
 }
 async function F(e, t, n, r) {
-  let i, o = e.isForumLikeChannel();
+  let i, a = e.isForumLikeChannel();
   try {
     i = await r(), null == i.body ? s.Z.show({
       title: w.intl.string(w.t.j2d6Km),
       body: w.intl.string(w.t.fEptJP)
-    }) : (a.Z.dispatch({
+    }) : (o.Z.dispatch({
       type: "SLOWMODE_RESET_COOLDOWN",
       slowmodeType: O.S.CreateThread,
       channelId: e.id
-    }), a.Z.dispatch({
+    }), o.Z.dispatch({
       type: "THREAD_CREATE_LOCAL",
       channelId: i.body.id
     }))
   } catch (r) {
     var l, u, p, m, g, b, y, S, I;
     if ((null == (l = r.body) ? true : l.code) === P.evJ.TOO_MANY_THREADS) s.Z.show({
-      title: o ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
-      body: o ? w.intl.string(w.t.KGaiEK) : w.intl.string(w.t.P0wT5S)
+      title: a ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
+      body: a ? w.intl.string(w.t.KGaiEK) : w.intl.string(w.t.P0wT5S)
     });
     else if ((null == (u = r.body) ? true : u.code) === P.evJ.TOO_MANY_ANNOUNCEMENT_THREADS) s.Z.show({
       title: w.intl.string(w.t["1KEdvB"]),
@@ -229,14 +229,14 @@ async function F(e, t, n, r) {
     });
     else if ((null == (p = r.body) ? true : p.code) === P.evJ.SLOWMODE_RATE_LIMITED) {
       let t = null != (b = r.body.retry_after) ? b : 0;
-      t > 0 && a.Z.dispatch({
+      t > 0 && o.Z.dispatch({
         type: "SLOWMODE_SET_COOLDOWN",
         channelId: e.id,
         slowmodeType: O.S.CreateThread,
         cooldownMs: t * v.Z.Millis.SECOND
       })
     } else if (429 === r.status) s.Z.show({
-      title: o ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
+      title: a ? w.intl.string(w.t.vWNFkx) : w.intl.string(w.t["1KEdvB"]),
       body: w.intl.string(w.t.Whhv4w)
     });
     else if (N.fZ.has(null == (m = r.body) ? true : m.code)) throw r;
@@ -244,7 +244,7 @@ async function F(e, t, n, r) {
       if (null != n)
         if ((null == (y = r.body) ? true : y.code) === P.evJ.EXPLICIT_CONTENT) {
           let t = (0, h.r)();
-          null != r.body.attachments && r.body.attachments.length > 0 && (a.Z.dispatch({
+          null != r.body.attachments && r.body.attachments.length > 0 && (o.Z.dispatch({
             type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE",
             messageId: t,
             channelId: e.id,
@@ -262,7 +262,7 @@ async function F(e, t, n, r) {
           let n = d.Z.getAndDeleteMostRecentUserCreatedThreadId();
           if (null != n) {
             let r = E.Z.getChannel(n);
-            return a.Z.wait(() => {
+            return o.Z.wait(() => {
               null == r ? t() : e(r)
             }), false
           }
@@ -276,7 +276,7 @@ async function F(e, t, n, r) {
   let T = await new Promise((e, t) => {
     null == i.body && t(), E.Z.addConditionalChangeListener(() => {
       let t = E.Z.getChannel(i.body.id);
-      if (null != t) return a.Z.wait(() => {
+      if (null != t) return o.Z.wait(() => {
         e(t)
       }), false
     })

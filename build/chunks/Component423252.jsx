@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk305347 = require("./305347.jsx"),
   Chunk220250 = require("./220250.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk505044 = require("./505044.js");
+  Chunk413953 = require("./413953.js");
 
 function u(e) {
   let {
@@ -27,13 +27,13 @@ function u(e) {
       }
     }), (0, r.jsx)("div", {
       className: c.avatarContainer,
-      children: (0, r.jsx)(o.ZP, {
-        mask: o.QS.CLAN_ICON,
+      children: (0, r.jsx)(a.ZP, {
+        mask: a.QS.CLAN_ICON,
         width: 70,
         height: 70,
         children: (0, r.jsx)("div", {
           className: c.avatarWrapper,
-          children: (0, r.jsx)(a.Ft, {
+          children: (0, r.jsx)(o.Ft, {
             guildId: t,
             guildName: null != n ? n : "?",
             guildIcon: null,

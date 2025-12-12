@@ -35,9 +35,9 @@ let c = {
     let {
       activeStreams: t
     } = e;
-    return t.filter(e => e.state === a.jm8.RECONNECTING).map(e => l({
+    return t.filter(e => e.state === o.jm8.RECONNECTING).map(e => l({
       type: i.u.STREAM_RECONNECTING
-    }, (0, o.rT)((0, r.V9)(e))))
+    }, (0, a.rT)((0, r.V9)(e))))
   },
   makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

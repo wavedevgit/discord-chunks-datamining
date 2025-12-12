@@ -56,28 +56,28 @@ module.exports = function(e) {
     }, e.COMMENT("%", "$", {
       relevance: 0
     })],
-    o = {
+    a = {
       begin: /\{/,
       end: /\}/,
       relevance: 0,
       contains: ["self", ...i]
     },
-    a = e.inherit(o, {
+    o = e.inherit(a, {
       relevance: 0,
       endsParent: true,
-      contains: [o, ...i]
+      contains: [a, ...i]
     }),
     s = {
       begin: /\s+/,
       relevance: 0
     },
-    l = [a],
+    l = [o],
     c = [{
       begin: /\[/,
       end: /\]/,
       endsParent: true,
       relevance: 0,
-      contains: [o, ...i]
+      contains: [a, ...i]
     }],
     u = function(e, t) {
       return {

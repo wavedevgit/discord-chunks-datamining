@@ -72,10 +72,10 @@ let {
     size: i = f.lE
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (null == e.format_type) return null;
-  let o = e.format_type;
-  e.format_type === d.u3.GIF && t && (o = d.u3.PNG);
-  let a = I(o),
-    s = p.ANM.STICKER_ASSET(e.id, a),
+  let a = e.format_type;
+  e.format_type === d.u3.GIF && t && (a = d.u3.PNG);
+  let o = I(a),
+    s = p.ANM.STICKER_ASSET(e.id, o),
     c = false;
   try {
     let {
@@ -86,12 +86,12 @@ let {
     }).enabled
   } catch (e) {}
   let u = c ? "&force_sdr=true" : "",
-    _ = a === d.og.WEBP ? "&quality=lossless" : "";
+    _ = o === d.og.WEBP ? "&quality=lossless" : "";
   if ("development" !== h) {
     if (e.format_type === d.u3.LOTTIE) return "".concat(location.protocol).concat(g).concat(s);
     let n = e.format_type === d.u3.APNG && t && !(0, l.isAndroid)() ? "&passthrough=false" : "",
-      o = Math.min(2, (0, r.x_)());
-    return "".concat(location.protocol).concat(m).concat(s, "?size=").concat((0, r.oO)(i * o)).concat(n).concat(_).concat(u)
+      a = Math.min(2, (0, r.x_)());
+    return "".concat(location.protocol).concat(m).concat(s, "?size=").concat((0, r.oO)(i * a)).concat(n).concat(_).concat(u)
   }
   let E = "".concat(location.protocol).concat(m).concat(s);
   return c ? "".concat(E, "?force_sdr=true") : E
@@ -102,7 +102,7 @@ let {
   stickers: e.stickers,
   previewSticker: S(e)
 }), R = (e, t) => e === f.yr.ANIMATE_ON_INTERACTION ? t : e !== f.yr.NEVER_ANIMATE, w = (e, t, n, r) => {
-  if (a.Z.getUploadCount(n, r) > 0) returntrue;
+  if (o.Z.getUploadCount(n, r) > 0) returntrue;
   let i = c.Z.getStickerPreview(n, r);
   if (null != i && i.length > 0) returntrue;
   switch (e) {
@@ -117,7 +117,7 @@ let {
 }, D = e => e.type === d.n0.GUILD, x = e => e.type === d.n0.STANDARD, L = e => e.stickerItems.length > 0 ? e.stickerItems : e.stickers.length > 0 ? e.stickers : [], j = e => {
   if (null === e) returnfalse;
   let t = e.guild_id;
-  return true !== o.Z.getGuild(t)
+  return true !== a.Z.getGuild(t)
 }, M = [];
 
 function k() {

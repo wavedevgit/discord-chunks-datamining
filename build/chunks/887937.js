@@ -3,8 +3,8 @@
 "use strict";
 var Chunk745872 = require("./745872.js"),
   Chunk638934 = require("./638934.js"),
-  o = Chunk638934(Chunk745872("String.prototype.indexOf"));
+  a = Chunk638934(Chunk745872("String.prototype.indexOf"));
 module.exports = function(e, t) {
   var n = r(e, !!t);
-  return "function" == typeof n && o(e, ".prototype.") > false ? i(n) : n
+  return "function" == typeof n && a(e, ".prototype.") > false ? i(n) : n
 }

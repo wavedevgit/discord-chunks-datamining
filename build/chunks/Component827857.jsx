@@ -45,27 +45,27 @@ function _(e) {
       onPaymentRequestFailure: () => {},
       onValidPaymentRequest: () => {},
       onChooseType: () => {},
-      loadingComponent: (0, r.jsx)(o.$jN, {
+      loadingComponent: (0, r.jsx)(a.$jN, {
         style: {
           marginTop: 16
         },
-        type: o.RAz.PULSING_ELLIPSIS
+        type: a.RAz.PULSING_ELLIPSIS
       })
     };
-  return e.renderStepBody ? (0, r.jsx)(c.t, p({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(a.Ch, p({}, n, e)) : (0, r.jsx)(a.Tr, p({}, n, e))
+  return e.renderStepBody ? (0, r.jsx)(c.t, p({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(o.Ch, p({}, n, e)) : (0, r.jsx)(o.Tr, p({}, n, e))
 }
 
 function m(e) {
   let {
     paymentRequestWallet: t
-  } = e, n = i.useRef(null), [o, a] = i.useState(false), s = () => {
+  } = e, n = i.useRef(null), [a, o] = i.useState(false), s = () => {
     null != n.current && n.current.show()
   };
   return (0, r.jsx)(u.yL, {
     footer: (0, r.jsx)(l.Z, {
       primaryCTA: l.Z.CTAType.CONTINUE,
       primaryText: d.intl.string("applePay" === t ? d.t.WoXvJL : d.t.wnVVr0),
-      primaryDisabled: !o,
+      primaryDisabled: !a,
       onPrimary: () => s(),
       onBack: () => {}
     }),
@@ -74,7 +74,7 @@ function m(e) {
       renderStepBody: true,
       paymentRequestWallet: t,
       paymentRequestRef: n,
-      onValidPaymentRequest: () => a(true)
+      onValidPaymentRequest: () => o(true)
     })
   })
 }
@@ -89,7 +89,7 @@ let h = {
       skuIDs: [],
       activeSubscription: null,
       children: (0, r.jsxs)(u.$0, {
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-xl/semibold",
           children: "Payment Request"
         }), (0, r.jsx)(u.E_, {

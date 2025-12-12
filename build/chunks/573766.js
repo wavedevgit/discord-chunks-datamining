@@ -184,23 +184,23 @@ let i = {
   34853: "GPS Info IFD Pointer",
   40091: {
     name: "XPTitle",
-    description: o
+    description: a
   },
   40092: {
     name: "XPComment",
-    description: o
+    description: a
   },
   40093: {
     name: "XPAuthor",
-    description: o
+    description: a
   },
   40094: {
     name: "XPKeywords",
-    description: o
+    description: a
   },
   40095: {
     name: "XPSubject",
-    description: o
+    description: a
   },
   42112: "GDALMetadata",
   42113: "GDALNoData",
@@ -323,6 +323,6 @@ let i = {
   51112: "RawToPreviewGain"
 };
 
-function o(e) {
+function a(e) {
   return new TextDecoder("utf-16").decode(new Uint8Array(e)).replace(/\u0000+$/, "")
 }

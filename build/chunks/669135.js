@@ -2,18 +2,18 @@
 /** chunk id: 669135, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => a
+  S: () => o
 });
 var Chunk990547 = require("./990547.js"),
   Chunk573261 = require("./573261.js"),
   Chunk981631 = require("./981631.js");
-let a = async function(e) {
+let o = async function(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = {
       registration_id: e
     };
   return (await i.Z.post({
-    url: o.ANM.USER_WARP_LICENSE,
+    url: a.ANM.USER_WARP_LICENSE,
     body: n,
     retries: 3,
     oldFormErrors: true,

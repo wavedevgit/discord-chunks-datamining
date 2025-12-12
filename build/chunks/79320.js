@@ -3,25 +3,25 @@
 "use strict";
 require.d(exports, {
   Vb: () => l,
-  Yk: () => a,
+  Yk: () => o,
   zP: () => s
 });
 var Chunk663042 = require("./663042.js"),
   Chunk731965 = require("./731965.js");
-let o = (0, Chunk663042.U)(e => ({
+let a = (0, Chunk663042.U)(e => ({
   inDndMode: false
 }));
 
-function a(e) {
-  (0, i.j)(() => o.setState({
+function o(e) {
+  (0, i.j)(() => a.setState({
     inDndMode: e
   }))
 }
 
 function s() {
-  return o(e => e.inDndMode)
+  return a(e => e.inDndMode)
 }
 
 function l() {
-  return o.getState().inDndMode
+  return a.getState().inDndMode
 }

@@ -8,14 +8,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk920155 = require("./920155.jsx"),
   Chunk744399 = require("./744399.jsx"),
   Chunk966902 = require("./966902.jsx"),
   Chunk237872 = require("./237872.jsx"),
   Chunk562618 = require("./562618.jsx"),
-  Chunk254477 = require("./254477.js");
+  Chunk770966 = require("./770966.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,8 +60,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,15 +69,15 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function y(e) {
   var t, {
       title: n,
-      body: o,
+      body: a,
       badge: _,
       graphic: h,
       size: b = "md",
@@ -120,7 +120,7 @@ function y(e) {
         onClick: R,
         variant: null != v ? "color-mix" : true
       }), null != h && (0, r.jsx)("div", {
-        className: a()(p.graphic, {
+        className: o()(p.graphic, {
           [p["graphic--".concat(b)]]: null != b
         }),
         children: (0, r.jsx)(s.zsu, g(m({}, h), {
@@ -128,7 +128,7 @@ function y(e) {
         }))
       }), (0, r.jsx)(f.Y, {
         title: n,
-        body: o,
+        body: a,
         badge: _,
         textLink: O
       }), null != y && y.length > 0 ? (0, r.jsx)(c.k, {

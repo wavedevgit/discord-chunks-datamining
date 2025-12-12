@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk892001 = require("./892001.js"),
   Chunk252417 = require("./252417.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk878449 = require("./878449.js");
+  Chunk940640 = require("./940640.js");
 
 function x(e) {
   let {
@@ -23,43 +23,43 @@ function x(e) {
     channelId: x,
     onClose: h
   } = e, {
-    mutualFriends: v
-  } = (0, c.Z)(n), {
-    analyticsLocations: j
-  } = (0, s.ZP)(), {
-    context: g,
-    trackUserProfileAction: b
-  } = (0, a.KZ)(), I = (0, r.Z)();
+    mutualFriends: b
+  } = (0, s.Z)(n), {
+    analyticsLocations: v
+  } = (0, a.ZP)(), {
+    context: j,
+    trackUserProfileAction: g
+  } = (0, c.KZ)(), I = (0, r.Z)();
   return i.useEffect(() => {
     (0, d.Z)(n.id, I)
   }, [n.id, I]), (0, l.jsx)(o.zJl, {
     className: p.listScroller,
     fade: true,
-    children: null == v ? (0, l.jsx)("div", {
+    children: null == b ? (0, l.jsx)("div", {
       className: p.empty,
       children: (0, l.jsx)(o.$jN, {})
-    }) : 0 === v.length ? (0, l.jsxs)("div", {
+    }) : 0 === b.length ? (0, l.jsxs)("div", {
       className: p.empty,
       children: [(0, l.jsx)("div", {
         className: p.emptyIconFriends
       }), (0, l.jsx)("div", {
         className: p.emptyText,
-        children: f.intl.string(f.t["/5p4gx"])
+        children: m.intl.string(m.t["/5p4gx"])
       })]
-    }) : v.map(e => {
+    }) : b.map(e => {
       let {
         key: n,
         user: i,
         status: o
       } = e;
-      return (0, l.jsx)(m.Z, {
+      return (0, l.jsx)(f.Z, {
         user: i,
         status: o,
         guildId: t,
         channelId: x,
         onSelect: () => {
           var e, n, t;
-          null == h || h(), b({
+          null == h || h(), g({
             action: "PRESS_MUTUAL_FRIEND"
           }), e = i.id, (0, u.openUserProfileModal)((n = function(e) {
             for (var n = 1; n < arguments.length; n++) {
@@ -78,9 +78,9 @@ function x(e) {
               })
             }
             return e
-          }({}, g), t = t = {
+          }({}, j), t = t = {
             userId: e,
-            sourceAnalyticsLocations: j
+            sourceAnalyticsLocations: v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

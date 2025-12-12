@@ -26,7 +26,7 @@ async function _(e, t) {
     d.default.compare(e.id, m) > 0 && (0, c.Ex)(e, n) && h++
   });
   let g = s.Z.getChannel(e);
-  null != g && g.isThread() && (g.isArchivedThread() && await a.Z.unarchiveThread(g, false), o.Z.hasJoined(e) || await a.Z.joinThread(g, "Mark Unread")), p.log("Marking unread", {
+  null != g && g.isThread() && (g.isArchivedThread() && await o.Z.unarchiveThread(g, false), a.Z.hasJoined(e) || await o.Z.joinThread(g, "Mark Unread")), p.log("Marking unread", {
     channelId: e,
     messageId: t
   }), r.tn.post({

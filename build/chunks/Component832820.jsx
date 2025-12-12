@@ -18,13 +18,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk576645 = require("./576645.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk354617 = require("./354617.js");
+  Chunk332974 = require("./332974.js");
 
 function E(e) {
   let {
     emojiConfetti: t
   } = e, n = i.useMemo(() => null == t ? null : null == t.id ? t.optionallyDiverseSequence : t.name, [t]);
-  return null == t ? (0, r.jsx)(a.EO4, {
+  return null == t ? (0, r.jsx)(o.EO4, {
     size: "sm",
     color: "currentColor"
   }) : (0, r.jsx)(s.Z, {
@@ -78,7 +78,7 @@ let b = function(e) {
       positionRef: w,
       position: "top",
       align: "left",
-      children: () => (0, r.jsxs)(a.P3F, {
+      children: () => (0, r.jsxs)(o.P3F, {
         innerRef: w,
         onClick: () => A(!C),
         className: g.emojiSelectContainer,
@@ -87,7 +87,7 @@ let b = function(e) {
           children: (0, r.jsx)(E, {
             emojiConfetti: null != n ? n : true
           })
-        }), (0, r.jsx)(o.xvT, {
+        }), (0, r.jsx)(a.xvT, {
           variant: "text-sm/medium",
           children: null == n ? h.intl.string(h.t.mzfiGW) : h.intl.format(h.t.Hcd9OU, {
             emojiName: S
@@ -96,7 +96,7 @@ let b = function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: g.end,
-      children: [(0, r.jsx)(a.Button, {
+      children: [(0, r.jsx)(o.Button, {
         onClick: R,
         text: T,
         variant: "primary"

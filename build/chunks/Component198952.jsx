@@ -10,9 +10,9 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk998502 = require("./998502.js"),
-  Chunk148806 = require("./148806.js"),
+  Chunk517319 = require("./517319.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk574999 = require("./574999.js");
+  Chunk158933 = require("./158933.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,16 +58,16 @@ let _ = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       user: t,
       avatarSize: n = i.EFr.SIZE_48
     } = e, {
-      avatarSrc: a,
+      avatarSrc: o,
       avatarDecorationSrc: c,
       eventHandlers: u
-    } = (0, o.Z)({
+    } = (0, a.Z)({
       userId: null == t ? true : t.id,
       size: n
     });
     return (0, r.jsx)("div", p(d({}, u), {
       children: (0, r.jsx)(_, {
-        src: a,
+        src: o,
         avatarDecoration: c,
         size: n,
         "aria-label": l.intl.formatToPlainString(s.default.kFj4h1, {

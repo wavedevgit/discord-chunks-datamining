@@ -66,12 +66,12 @@ function f(e, t) {
 }
 
 function p(e) {
-  return (0, a.Wh)(s.VI, e)
+  return (0, o.Wh)(s.VI, e)
 }
 
 function _(e, t, n) {
   var r, i, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, w, x, L;
-  return (0, a.oI)(s.VI, n, {
+  return (0, o.oI)(s.VI, n, {
     id: e.id,
     joinedAt: t.joinedAt,
     premiumSubscriberCount: t.premiumSubscriberCount,
@@ -81,7 +81,7 @@ function _(e, t, n) {
     splash: null != (l = e.splash) ? l : null,
     banner: null != (c = e.banner) ? c : null,
     homeHeader: null != (u = e.home_header) ? u : null,
-    features: (0, o.G)(e.features),
+    features: (0, a.G)(e.features),
     preferredLocale: null != (d = e.preferred_locale) ? d : s.Cx.preferredLocale,
     ownerId: e.owner_id,
     application_id: null != (f = e.application_id) ? f : null,
@@ -115,13 +115,13 @@ function _(e, t, n) {
 
 function m(e, t) {
   var n, r;
-  let o = null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? true : t.joinedAt) ? n : null,
+  let a = null != e.joined_at ? new Date(e.joined_at) : null != (n = null == t ? true : t.joinedAt) ? n : null,
     s = null != (r = e.premium_subscription_count) ? r : 0;
-  return null == e.properties ? (i()(null != t, "If guild.properties is null, existingGuild must be passed in"), (0, a.TS)(t, {
-    joinedAt: o,
+  return null == e.properties ? (i()(null != t, "If guild.properties is null, existingGuild must be passed in"), (0, o.TS)(t, {
+    joinedAt: a,
     premiumSubscriberCount: s
   })) : _(e.properties, {
-    joinedAt: o,
+    joinedAt: a,
     premiumSubscriberCount: s
   }, t)
 }
@@ -161,7 +161,7 @@ function b(e) {
     icon: e.icon,
     splash: e.splash,
     banner: e.banner,
-    features: (0, o.G)(e.features),
+    features: (0, a.G)(e.features),
     verificationLevel: e.verification_level,
     vanityURLCode: e.vanity_url_code,
     premiumSubscriberCount: e.premium_subscription_count,
@@ -180,7 +180,7 @@ function y(e) {
     icon: e.icon,
     premiumSubscriberCount: null != (t = e.premiumSubscriberCount) ? t : s.Cx.premiumSubscriberCount,
     premiumTier: null != (n = e.premiumTier) ? n : s.Cx.premiumTier,
-    features: (0, o.G)(e.features)
+    features: (0, a.G)(e.features)
   })
 }
 
@@ -201,7 +201,7 @@ function v(e) {
     icon: null != (n = e.icon) ? n : null,
     description: null != (r = e.description) ? r : null,
     splash: null != (i = e.splash) ? i : null,
-    features: (0, o.G)(e.features)
+    features: (0, a.G)(e.features)
   })
 }
 
@@ -213,7 +213,7 @@ function S(e) {
     icon: null != (t = e.icon) ? t : null,
     description: null != (n = e.description) ? n : null,
     splash: null != (r = e.splash) ? r : null,
-    features: (0, o.G)(e.features),
+    features: (0, a.G)(e.features),
     verificationLevel: null != (i = e.verification_level) ? i : s.Cx.verificationLevel
   })
 }
@@ -227,12 +227,12 @@ function I(e) {
     description: null != (n = e.description) ? n : null,
     splash: null != (r = e.splash) ? r : null,
     discoverySplash: null != (i = e.discovery_splash) ? i : null,
-    features: (0, o.G)(e.features)
+    features: (0, a.G)(e.features)
   })
 }
 
 function T(e) {
-  var t, n, r, i, a, l;
+  var t, n, r, i, o, l;
   return P({
     id: e.id,
     name: e.name || "",
@@ -242,7 +242,7 @@ function T(e) {
     splash: e.splash || null,
     banner: e.banner || null,
     homeHeader: e.homeHeader || null,
-    features: (0, o.G)(e.features),
+    features: (0, a.G)(e.features),
     preferredLocale: e.preferredLocale || s.Cx.preferredLocale,
     afkChannelId: e.afkChannelId || null,
     afkTimeout: e.afkTimeout,
@@ -270,7 +270,7 @@ function T(e) {
     hubType: e.hubType,
     latestOnboardingQuestionId: null != (r = e.latestOnboardingQuestionId) ? r : null,
     profile: null != (i = e.profile) ? i : null,
-    premiumFeatures: null != (a = e.premiumFeatures) ? a : null,
+    premiumFeatures: null != (o = e.premiumFeatures) ? o : null,
     moderatorReporting: null != (l = e.moderatorReporting) ? l : null
   })
 }
@@ -321,7 +321,7 @@ function C(e) {
 
 function A(e) {
   let t = f(u({}, e), {
-    features: (0, o.G)(e.features),
+    features: (0, a.G)(e.features),
     joinedAt: null != e.joinedAt ? new Date(e.joinedAt) : null
   });
   return delete t.roles, delete t.member, P(t)
@@ -332,7 +332,7 @@ function N(e) {
 }
 
 function P(e) {
-  return (0, a.bk)(s.VI, e)
+  return (0, o.bk)(s.VI, e)
 }
 
 function R(e) {

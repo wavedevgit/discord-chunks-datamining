@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   G: () => i,
-  W: () => o
+  W: () => a
 });
 var Chunk535396 = require("./535396.js");
 let i = [{
@@ -52,7 +52,7 @@ let i = [{
       features: []
     }
   }],
-  o = [{
+  a = [{
     type: Chunk535396.Us.PERK,
     skuId: "4",
     title: "Lorem ipsum",

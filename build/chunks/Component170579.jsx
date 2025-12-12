@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk483444 = require("./483444.jsx"),
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk639119 = require("./639119.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk716619 = require("./716619.js");
+  Chunk221078 = require("./221078.js");
 
 function b(e, t) {
   let n = f.ZP.getDefaultPrice(e),
@@ -49,9 +49,9 @@ let y = e => {
       percent: n
     }) : s && (l = g.intl.string(g.t.gtNqJQ)), (0, r.jsx)("div", {
       className: E.trialBadgeContainer,
-      children: (0, r.jsx)(a.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "text-xs/bold",
-        className: o()(E.trialOfferText, {
+        className: a()(E.trialOfferText, {
           [E.tier0TrialOffer]: t
         }),
         children: l
@@ -79,7 +79,7 @@ let y = e => {
       P = null == N || null == (t = N.discount) ? true : t.amount;
     return (0, r.jsxs)("div", {
       "aria-hidden": true,
-      className: o()({
+      className: a()({
         [E.headerBackground]: !A,
         [E.tier2HeaderBackground]: A
       }, I),
@@ -91,14 +91,14 @@ let y = e => {
         className: E.headerTop,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(n, {
-            className: o()(E.headerIcon, {
+            className: a()(E.headerIcon, {
               [E.nonTier2]: !A
             })
           }), (T || C) && (0, r.jsx)(y, {
             isTier0: S === h.PremiumTypes.TIER_0,
             discountAmount: C ? P : true
           })]
-        }), !i && (0, r.jsx)(a.olH, {
+        }), !i && (0, r.jsx)(o.olH, {
           "data-migration-pending": true,
           hideOnFullscreen: f,
           onClick: O,

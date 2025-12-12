@@ -8,7 +8,7 @@ var Chunk836560 = require("./836560.js"),
   Chunk579092 = require("./579092.js"),
   Chunk643191 = require("./643191.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,25 +21,25 @@ class l extends Chunk836560.EventEmitter {
   log(e, t) {
     let n = new u(e),
       r = (t, r) => {
-        let i, a = {
+        let i, o = {
             name: t,
             time: false
           },
-          s = o.Sv.now();
+          s = a.Sv.now();
         try {
           i = r()
         } finally {
-          a.time = o.Sv.now() - s, this.persist && n.traces.push(a), this.emit("trace", e.type, t, a.time)
+          o.time = a.Sv.now() - s, this.persist && n.traces.push(o), this.emit("trace", e.type, t, o.time)
         }
         return i
       };
-    n.startTime = o.Sv.now();
+    n.startTime = a.Sv.now();
     try {
       t(r)
     } catch (e) {
       throw n.error = e, e
     } finally {
-      n.totalTime = o.Sv.now() - n.startTime, this.persist && n.totalTime > 0 && this.logs.push(n), this.logs.length > 1e3 && this.logs.shift(), this.emit("log", e)
+      n.totalTime = a.Sv.now() - n.startTime, this.persist && n.totalTime > 0 && this.logs.push(n), this.logs.length > 1e3 && this.logs.shift(), this.emit("log", e)
     }
     return n
   }
@@ -51,16 +51,16 @@ class l extends Chunk836560.EventEmitter {
       if (null == e || t.name === e)
         for (let e of t.traces) i.push([e.name, t.name, e.time]);
     i.sort((e, t) => t[2] - e[2]), i.length > r && (i.length = r);
-    let o = 0,
-      a = 0,
+    let a = 0,
+      o = 0,
       l = i.map(t => {
-        let [n, r, i] = t, a = "".concat(n);
-        return null == e && (a += "<".concat(r, ">")), o = Math.max(a.length, o), [a, i]
+        let [n, r, i] = t, o = "".concat(n);
+        return null == e && (o += "<".concat(r, ">")), a = Math.max(o.length, a), [o, i]
       }).map(e => {
         let [t, n] = e;
-        return a += n, "".concat(t.padEnd(o + 1, " "), " - ").concat(n, "ms")
+        return o += n, "".concat(t.padEnd(a + 1, " "), " - ").concat(n, "ms")
       }).join("\n");
-    return 0 === i.length || i[0][2] < 10 || a < 20 || (s.log("Using Hermes:", true !== (null == (t = n.g) ? true : t.HermesInternal)), s.log("".concat(null != e ? "\n\n=== ".concat(e, " ===") : "", "\n").concat(l, "\n")), s.log("Total Time: ".concat(a, "ms"))), i
+    return 0 === i.length || i[0][2] < 10 || o < 20 || (s.log("Using Hermes:", true !== (null == (t = n.g) ? true : t.HermesInternal)), s.log("".concat(null != e ? "\n\n=== ".concat(e, " ===") : "", "\n").concat(l, "\n")), s.log("Total Time: ".concat(o, "ms"))), i
   }
   getLastActionMetrics(e) {
     var t;
@@ -68,23 +68,23 @@ class l extends Chunk836560.EventEmitter {
       i = {};
     for (let e of this.logs)
       for (let t of e.traces) i[t.name] = [t.name, e.name, t.time];
-    let o = Object.values(i);
-    o.sort((e, t) => t[2] - e[2]), o.length > r && (o.length = r);
-    let a = 0,
+    let a = Object.values(i);
+    a.sort((e, t) => t[2] - e[2]), a.length > r && (a.length = r);
+    let o = 0,
       l = 0,
-      c = o.map(e => {
+      c = a.map(e => {
         let [t, n, r] = e;
-        return a = Math.max(t.length, a), [t, r]
+        return o = Math.max(t.length, o), [t, r]
       }).map(e => {
         let [t, n] = e;
-        return l += n, "".concat(t.padEnd(a + 1, " "), " - ").concat(n, "ms")
+        return l += n, "".concat(t.padEnd(o + 1, " "), " - ").concat(n, "ms")
       }).join("\n");
-    return 0 === o.length || l < 8 || s.log("\nUsing Hermes: ".concat(true !== (null == (t = n.g) ? true : t.HermesInternal)), "\n\n=== ".concat(e, " ===\n").concat(c), "\nTotal Time: ".concat(l, "ms\n\n")), o
+    return 0 === a.length || l < 8 || s.log("\nUsing Hermes: ".concat(true !== (null == (t = n.g) ? true : t.HermesInternal)), "\n\n=== ".concat(e, " ===\n").concat(c), "\nTotal Time: ".concat(l, "ms\n\n")), a
   }
   constructor({
     persist: e = false
   } = {}) {
-    super(), a(this, "logs", []), a(this, "persist", true), this.persist = e
+    super(), o(this, "logs", []), o(this, "persist", true), this.persist = e
   }
 }
 let c = 0;
@@ -102,6 +102,6 @@ class u {
     }
   }
   constructor(e) {
-    a(this, "id", true), a(this, "action", true), a(this, "createdAt", true), a(this, "startTime", 0), a(this, "totalTime", 0), a(this, "traces", []), a(this, "error", true), this.id = c++, this.action = e, this.createdAt = new Date
+    o(this, "id", true), o(this, "action", true), o(this, "createdAt", true), o(this, "startTime", 0), o(this, "totalTime", 0), o(this, "traces", []), o(this, "error", true), this.id = c++, this.action = e, this.createdAt = new Date
   }
 }

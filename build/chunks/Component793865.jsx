@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410575 = require("./410575.jsx"),
@@ -29,9 +29,9 @@ function g(e) {
     onInteraction: E
   } = e, {
     analyticsLocations: b
-  } = (0, c.ZP)(), y = (0, a.e7)([d.default], () => {
+  } = (0, c.ZP)(), y = (0, o.e7)([d.default], () => {
     let e = d.default.getCurrentUser();
-    return o()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
+    return a()(null != e, "VideoDeviceMenu: currentUser cannot be undefined"), e
   }), O = (0, u.M)({
     deviceType: m.h7.VIDEO_INPUT,
     analyticsLocations: b,

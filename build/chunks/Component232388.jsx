@@ -22,7 +22,7 @@ function d() {
       label: Chunk388032.intl.string(Chunk388032.t["3CqDxp"]),
       description: Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
       checked: module,
-      onChange: e => a.Z.setQoS(e)
+      onChange: e => o.Z.setQoS(e)
     })
   })
 }

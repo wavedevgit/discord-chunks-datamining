@@ -1,13 +1,13 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 958832, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let l = {};
-class s extends Chunk442837.ZP.Store {
+class a extends Chunk442837.ZP.Store {
   hasFetched(e) {
     return null != l[e]
   }
@@ -15,7 +15,7 @@ class s extends Chunk442837.ZP.Store {
     return "874345844743213126" === e ? ["1041887225819955252", "985996080107892776", "1035280727610241166"] : l[e]
   }
 }
-let a = new s(Chunk570140.Z, {
+let s = new a(Chunk570140.Z, {
   GUILD_TOP_READ_CHANNELS_FETCH_SUCCESS: function(e) {
     let {
       guildId: t,

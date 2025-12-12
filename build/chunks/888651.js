@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 888651, original params: e,t,n (module,exports,require) **/
 if (require.d(exports, {
-    $: () => h,
+    $: () => f,
     Q: () => p
   }), 12633 == require.j) var Chunk692402 = require("./692402.js");
 var Chunk275833 = require("./275833.js"),
@@ -34,7 +34,7 @@ function p(e) {
   }))(e)
 }
 
-function h(e) {
+function f(e) {
   return (0, r.E)(d, {
     canDrag(e) {
       let {

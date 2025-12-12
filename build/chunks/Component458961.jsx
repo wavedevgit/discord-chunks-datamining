@@ -44,7 +44,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk179598 = require("./179598.js");
+  Chunk342762 = require("./342762.js");
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -122,7 +122,7 @@ function J(e) {
     value: e,
     label: (0, x.T4)(e, L.pKx.USD)
   })), [o, A]);
-  return (0, n.jsx)(g.d, {
+  return (0, n.jsx)(f.d, {
     label: l,
     errorMessage: i,
     value: A,
@@ -136,7 +136,7 @@ function J(e) {
 }
 
 function _(e) {
-  var t, A, a, l, i, g, h, q, U, M, _, ee;
+  var t, A, a, l, i, f, h, q, U, M, _, ee;
   let {
     guildId: et,
     productId: eA,
@@ -146,16 +146,16 @@ function _(e) {
     publishedOnly: true
   }).length, [et]), es = (null == ei ? true : ei.published) === true, {
     application: ed
-  } = (0, v.Z)(et, B.wW.GUILD_ROLE_SUBSCRIPTIONS), eu = I.M["0"], ec = j.QK.useSetting(), eg = (0, P.n)(), ef = r.useCallback(() => {
+  } = (0, v.Z)(et, B.wW.GUILD_ROLE_SUBSCRIPTIONS), ec = I.M["0"], eu = j.QK.useSetting(), ef = (0, P.n)(), eg = r.useCallback(() => {
     var e;
-    return (null == ei || null == (e = ei.image_asset) ? true : e.application_id) == null ? eu.data : (0, O._W)(ei.image_asset.application_id, ei.image_asset, 600, eg && ec ? true : "webp")
-  }, [eu, ei, eg, ec]), {
+    return (null == ei || null == (e = ei.image_asset) ? true : e.application_id) == null ? ec.data : (0, O._W)(ei.image_asset.application_id, ei.image_asset, 600, ef && eu ? true : "webp")
+  }, [ec, ei, ef, eu]), {
     shouldRestrictUpdatingCreatorMonetizationSettings: ep
   } = (0, C.gX)(et);
   r.useEffect(() => {
     ep && (er(), (0, W.B)(D.intl.string(D.t.OLf3xn), D.t["90LBVr"]))
   }, [ep, er]);
-  let [em, ev] = r.useState(null != (a = null == ei ? true : ei.name) ? a : ""), [eh, eq] = r.useState(null != (l = null == ei ? true : ei.description) ? l : ""), [eb, eC] = r.useState(null != (i = null == ei ? true : ei.price_tier) ? i : true), [eU, ej] = r.useState(ef), [eV, ex] = r.useState(null != (g = null == ei || null == (t = ei.image_asset) ? true : t.filename) ? g : eu.name), [eO, eP] = r.useState(false), [eF, ey] = r.useState(), eN = r.useMemo(() => null != eb ? (0, x.T4)(eb, L.pKx.USD) : true, [eb]), [eI, eK] = r.useState(true), {
+  let [em, ev] = r.useState(null != (a = null == ei ? true : ei.name) ? a : ""), [eh, eq] = r.useState(null != (l = null == ei ? true : ei.description) ? l : ""), [eb, eC] = r.useState(null != (i = null == ei ? true : ei.price_tier) ? i : true), [eU, ej] = r.useState(eg), [eV, ex] = r.useState(null != (f = null == ei || null == (t = ei.image_asset) ? true : t.filename) ? f : ec.name), [eO, eP] = r.useState(false), [eF, ey] = r.useState(), eN = r.useMemo(() => null != eb ? (0, x.T4)(eb, L.pKx.USD) : true, [eb]), [eI, eK] = r.useState(true), {
     changesSaving: eT,
     saveError: eZ,
     saveProductWithAttachments: eW,
@@ -187,7 +187,7 @@ function _(e) {
     }), [ei, em, eb, eh, eU, eV, eO, eD, eS, eX]),
     e3 = r.useMemo(() => e_ || null == eH || "publish" === eH || null != ez ? null : (0, n.jsx)(p.oXn, {
       className: R.successNotice,
-      children: (0, n.jsx)(c.Z, {
+      children: (0, n.jsx)(u.Z, {
         message: (0, n.jsxs)("div", {
           className: R.successNoticeMessage,
           children: [(0, n.jsx)(p.owK, {
@@ -242,8 +242,8 @@ function _(e) {
   }, [ez, et, ed]), r.useEffect(() => {
     e_ && eM(true)
   }, [e_]);
-  let e7 = r.useRef(null),
-    e2 = !e1 || !es && eo >= w.dD;
+  let e8 = r.useRef(null),
+    e7 = !e1 || !es && eo >= w.dD;
   return (0, n.jsxs)(p.Y0X, {
     transitionState: en,
     size: p.CgR.DYNAMIC,
@@ -279,7 +279,7 @@ function _(e) {
       children: [(0, n.jsx)(p.zJl, {
         children: (0, n.jsxs)("div", {
           className: R.productFieldsSection,
-          ref: e7,
+          ref: e8,
           children: [(0, n.jsx)(p.oil, {
             label: D.intl.string(D.t.Hsk7xT),
             error: null == ez ? true : ez.getFirstFieldErrorMessage("name"),
@@ -330,7 +330,7 @@ function _(e) {
             children: (0, n.jsx)(T.s, {
               onFileAdded: () => {
                 var e;
-                null == (e = e7.current) || e.scrollIntoView({
+                null == (e = e8.current) || e.scrollIntoView({
                   behavior: "smooth",
                   block: "end"
                 })
@@ -351,7 +351,7 @@ function _(e) {
         children: (0, n.jsxs)("div", {
           className: R.productPreview,
           children: [(0, n.jsx)(S.Z, {
-            disabled: e2,
+            disabled: e7,
             disabledTooltip: es ? D.intl.string(D.t["0NQ00t"]) : eo >= w.dD ? D.intl.format(D.t.IqWPVt, {
               maxProducts: w.dD
             }) : D.intl.string(D.t["Ax89/c"]),
@@ -420,7 +420,7 @@ function _(e) {
             text: D.intl.string(D.t.C6wP2Q),
             value: eI,
             onChange: e => {
-              e ? eK(true) : eX ? (0, f.Z)({
+              e ? eK(true) : eX ? (0, g.Z)({
                 title: D.intl.string(D.t["2WihyY"]),
                 subtitle: D.intl.string(D.t.ixRBLh),
                 confirmText: D.intl.string(D.t.N86XcP),
@@ -450,7 +450,7 @@ function _(e) {
           })
         })]
       })
-    }), (0, n.jsx)(u.W, {
+    }), (0, n.jsx)(c.W, {
       component: "div",
       className: R.successNoticeContainer,
       children: e3

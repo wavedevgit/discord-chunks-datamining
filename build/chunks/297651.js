@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 297651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => m
@@ -18,11 +18,11 @@ function m(e, t) {
     m = (0, s.sp)(),
     p = (0, r.e7)([o.Z], () => o.Z.getProduct(e)),
     h = (0, d.x)(),
-    x = l.ZP.canUseCollectibles(h),
-    f = a.useRef(null),
-    g = a.useCallback(() => {
-      let a = null != p ? (0, c.Vw)(p, x, false) : null,
-        r = null != p ? (0, c.eu)(p, x, false) : true;
+    f = l.ZP.canUseCollectibles(h),
+    x = a.useRef(null),
+    b = a.useCallback(() => {
+      let a = null != p ? (0, c.Vw)(p, f, false) : null,
+        r = null != p ? (0, c.eu)(p, f, false) : true;
       i.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
         collectibles_shop_session_id: null == m ? true : m.sessionId,
         sku_id: e,
@@ -36,15 +36,15 @@ function m(e, t) {
         type: n,
         category_position: null == m ? true : m.categoryPosition
       })
-    }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, x, t, p, e, n]),
-    b = a.useCallback(e => {
-      e ? null === f.current && (f.current = setTimeout(() => {
-        g(), f.current = null
-      }, 1e3)) : null !== f.current && (clearTimeout(f.current), f.current = null)
-    }, [g]);
+    }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, f, t, p, e, n]),
+    g = a.useCallback(e => {
+      e ? null === x.current && (x.current = setTimeout(() => {
+        b(), x.current = null
+      }, 1e3)) : null !== x.current && (clearTimeout(x.current), x.current = null)
+    }, [b]);
   return a.useEffect(() => () => {
-    null !== f.current && (clearTimeout(f.current), f.current = null)
+    null !== x.current && (clearTimeout(x.current), x.current = null)
   }, []), {
-    handleCardVisibilityChange: b
+    handleCardVisibilityChange: g
   }
 }

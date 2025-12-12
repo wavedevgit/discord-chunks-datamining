@@ -1,26 +1,26 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 141014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => a,
+  N: () => l,
   g: () => o
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
-let l = Chunk473749.createContext(null);
+let a = Chunk473749.createContext(null);
 
-function a(e) {
+function l(e) {
   let {
     value: t,
     children: n
   } = e;
-  return (0, r.jsx)(l.Provider, {
+  return (0, r.jsx)(a.Provider, {
     value: t,
     children: n
   })
 }
 
 function o() {
-  let e = Chunk473749.useContext(l);
+  let e = Chunk473749.useContext(a);
   if (null == module) throw Error("useGameWidgetExpandCollapse must be used within a GameWidgetExpandCollapseContextProvider");
   return module
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk836560 = require("./836560.js"),
   Chunk376398 = require("./376398.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -54,7 +54,7 @@ class c extends Chunk836560.EventEmitter {
         noiseSuppression: false,
         autoGainControl: false
       },
-      video: l(a({}, e), {
+      video: l(o({}, e), {
         frameRate: 30
       })
     };
@@ -77,7 +77,7 @@ class c extends Chunk836560.EventEmitter {
     this.emit("speaking", this.stream.getAudioTracks().some(e => e.enabled))
   }
   constructor(e, t) {
-    super(), o(this, "id", true), o(this, "stream", true), o(this, "pool", true), o(this, "streamId", true), e.getVideoTracks().forEach(e => {
+    super(), a(this, "id", true), a(this, "stream", true), a(this, "pool", true), a(this, "streamId", true), e.getVideoTracks().forEach(e => {
       e.onended = () => {
         this.emit("desktopsourceend")
       }

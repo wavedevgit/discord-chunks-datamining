@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk422034 = require("./422034.jsx"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk612574 = require("./612574.js");
+  Chunk789922 = require("./789922.js");
 
 function f(e) {
   let {
     affinities: t,
     className: n
-  } = e, o = e => null != e.globalName ? e.globalName : e.username, f = i.useMemo(() => t.length > 1 ? u.intl.formatToPlainString(u.t.HaVk0X, {
-    username: o(t[0]),
+  } = e, a = e => null != e.globalName ? e.globalName : e.username, f = i.useMemo(() => t.length > 1 ? u.intl.formatToPlainString(u.t.HaVk0X, {
+    username: a(t[0]),
     numFriends: t.length - 1
   }) : "", [t]);
   if (t.length <= 1) return null;
@@ -29,7 +29,7 @@ function f(e) {
     size: c.EF.SIZE_20
   }, e.id));
   return (0, r.jsxs)("div", {
-    className: a()(d.container, n),
+    className: o()(d.container, n),
     children: [(0, r.jsx)("div", {
       className: d.iconContainer,
       children: p

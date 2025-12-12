@@ -156,7 +156,7 @@ async function w() {
       emojis: n,
       applications: r,
       cardId: i,
-      powerLevel: o,
+      powerLevel: a,
       powerLevelPercentile: s,
       messages: l,
       voice: c,
@@ -303,8 +303,8 @@ async function x(e, t) {
     other_user_id: t,
     message_variant: i.toString()
   });
-  let o = d.ZP.parse(r, e);
-  return l.Z.sendMessage(r.id, o, false, {
+  let a = d.ZP.parse(r, e);
+  return l.Z.sendMessage(r.id, a, false, {
     location: "checkpoint-sidekick"
   })
 }
@@ -318,7 +318,7 @@ async function L() {
 }
 
 function j(e) {
-  return a.Z.dispatch({
+  return o.Z.dispatch({
     type: "CHECKPOINT_SET_VOLUME",
     volume: e
   })
@@ -331,7 +331,7 @@ function M() {
 }
 
 function k(e) {
-  return a.Z.dispatch({
+  return o.Z.dispatch({
     type: "CHECKPOINT_SET_HIGHEST_SLIDE_SEEN",
     slide: e
   })

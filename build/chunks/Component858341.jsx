@@ -1,4 +1,4 @@
-/** Chunk was on 41413 **/
+/** Chunk was on 72804 **/
 /** chunk id: 858341, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => k
@@ -21,49 +21,49 @@ var Chunk374470 = require("./374470.js"),
 function k(e) {
   var n;
   let t, k, Z, {
-      channel: m,
-      message: x,
-      target: S,
-      attachment: j,
-      onSelect: v
+      channel: b,
+      message: m,
+      target: x,
+      attachment: S,
+      onSelect: j
     } = e,
-    _ = S;
-  if (null != j) k = t = j.url;
+    v = x;
+  if (null != S) k = t = S.url;
   else
     for (;
-      (0, i.kK)(_);)(0, i.kK)(_, HTMLImageElement) && null != _.src && (k = _.src), (0, i.kK)(_, HTMLAnchorElement) && null != _.href && (t = _.href, Z = _.textContent), _ = _.parentNode;
-  let b = null == (n = document.getSelection()) ? true : n.toString(),
-    C = (0, a.Z)(b),
-    Q = (0, o.Z)(b),
-    w = (0, f.Z)(x, m),
-    T = (0, p.Z)(x, m),
-    H = (0, h.Z)(x, m),
-    I = (0, u.Z)(x, m),
-    K = (0, d.Z)(null != t ? t : k, Z),
-    M = (0, c.Z)({
-      id: x.id,
+      (0, i.kK)(v);)(0, i.kK)(v, HTMLImageElement) && null != v.src && (k = v.src), (0, i.kK)(v, HTMLAnchorElement) && null != v.href && (t = v.href, Z = v.textContent), v = v.parentNode;
+  let C = null == (n = document.getSelection()) ? true : n.toString(),
+    Q = (0, c.Z)(C),
+    w = (0, o.Z)(C),
+    T = (0, f.Z)(m, b),
+    H = (0, p.Z)(m, b),
+    I = (0, h.Z)(m, b),
+    K = (0, u.Z)(m, b),
+    M = (0, d.Z)(null != t ? t : k, Z),
+    N = (0, r.Z)({
+      id: m.id,
       label: g.intl.string(g.t.zBoHlf),
-      shiftId: "".concat(x.channel_id, "-").concat(x.id)
+      shiftId: "".concat(m.channel_id, "-").concat(m.id)
     }),
-    N = (0, c.Z)({
-      id: x.author.id,
+    _ = (0, r.Z)({
+      id: m.author.id,
       label: g.intl.string(g.t.Muw4wm)
     });
   return (0, l.jsxs)(s.v2r, {
     navId: "message",
-    onClose: r.Zy,
+    onClose: a.Zy,
     "aria-label": g.intl.string(g.t.ChPNkN),
-    onSelect: v,
+    onSelect: j,
     children: [(0, l.jsx)(s.kSQ, {
-      children: C
-    }), (0, l.jsx)(s.kSQ, {
       children: Q
-    }), (0, l.jsxs)(s.kSQ, {
-      children: [w, T, H, I]
     }), (0, l.jsx)(s.kSQ, {
-      children: K
+      children: w
     }), (0, l.jsxs)(s.kSQ, {
-      children: [M, N]
+      children: [T, H, I, K]
+    }), (0, l.jsx)(s.kSQ, {
+      children: M
+    }), (0, l.jsxs)(s.kSQ, {
+      children: [N, _]
     })]
   })
 }

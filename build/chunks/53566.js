@@ -2,7 +2,7 @@
 /** chunk id: 53566, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => a
+  n: () => o
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk372817 = require("./372817.js");
 
@@ -15,7 +15,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   if (null == e) return {
     x: 0,
     y: 0
@@ -34,7 +34,7 @@ function o(e) {
     y: n
   }
 }
-class a {
+class o {
   disconnect() {
     window.removeEventListener("keydown", this.handleDraggedElementKeyDown, {
       capture: true
@@ -47,7 +47,7 @@ class a {
       return e === r
     })) ? true : t[0];
     null != n && (this.actions.hover([n], {
-      clientOffset: o(e)
+      clientOffset: a(e)
     }), this.currentHoveredNode = e, this.previewer.render(this.monitor), this.announcer.announceHover(e, n), null == e || e.focus())
   }
   getNextDropTarget() {
@@ -77,8 +77,8 @@ class a {
       return this.manager.getMonitor().canDropOnTarget(n) && e.push(r), e
     }, [])
   }
-  constructor(e, t, n, o, a) {
-    i(this, "targetNodes", true), i(this, "manager", true), i(this, "previewer", true), i(this, "announcer", true), i(this, "currentHoveredNode", true), i(this, "focusManager", true), i(this, "actions", true), i(this, "monitor", true), i(this, "handleDraggedElementKeyDown", true), this.targetNodes = t, this.manager = n, this.previewer = o, this.announcer = a, this.handleDraggedElementKeyDown = async e => {
+  constructor(e, t, n, a, o) {
+    i(this, "targetNodes", true), i(this, "manager", true), i(this, "previewer", true), i(this, "announcer", true), i(this, "currentHoveredNode", true), i(this, "focusManager", true), i(this, "actions", true), i(this, "monitor", true), i(this, "handleDraggedElementKeyDown", true), this.targetNodes = t, this.manager = n, this.previewer = a, this.announcer = o, this.handleDraggedElementKeyDown = async e => {
       switch (e.key) {
         case "ArrowUp":
         case "ArrowLeft":

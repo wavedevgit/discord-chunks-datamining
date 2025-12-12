@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -32,7 +32,7 @@ class s extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), a(this, "handleClick", () => {
+    super(...e), o(this, "handleClick", () => {
       let {
         onClick: e,
         index: t
@@ -55,7 +55,7 @@ class l extends Chunk473749.PureComponent {
     }, "spotify-artist-".concat(n)))
   }
   constructor(...e) {
-    super(...e), a(this, "handleOpenSpotifyArtist", e => {
+    super(...e), o(this, "handleOpenSpotifyArtist", e => {
       let {
         onOpenSpotifyArtist: t
       } = this.props;

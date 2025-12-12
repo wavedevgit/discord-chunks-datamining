@@ -28,10 +28,10 @@ function f(e, t, n, r) {
       if ((0, l.Z)(e)) return d.intl.string(d.t.jQ1plj);
       return d.intl.string(d.t.t1yj0N);
     case u.d4z.GUILD_FORUM:
-      let o = e.isMediaChannel();
-      if (i) return o ? d.intl.string(d.t["pZ/fYa"]) : d.intl.string(d.t.ibmpPi);
-      if ((0, l.Z)(e)) return o ? d.intl.string(d.t.gfVCfL) : d.intl.string(d.t.UbLM3J);
-      return o ? d.intl.string(d.t.seKITE) : d.intl.string(d.t["0sDXdm"]);
+      let a = e.isMediaChannel();
+      if (i) return a ? d.intl.string(d.t["pZ/fYa"]) : d.intl.string(d.t.ibmpPi);
+      if ((0, l.Z)(e)) return a ? d.intl.string(d.t.gfVCfL) : d.intl.string(d.t.UbLM3J);
+      return a ? d.intl.string(d.t.seKITE) : d.intl.string(d.t["0sDXdm"]);
     case u.d4z.GUILD_MEDIA:
       if (i) return d.intl.string(d.t["pZ/fYa"]);
       if ((0, l.Z)(e)) return d.intl.string(d.t.gfVCfL);
@@ -75,8 +75,8 @@ function p(e, t) {
       textFocused: m = false
     } = n;
   if (null == e) return null;
-  null == t && (t = a.Z.getGuild(e.getGuildId()));
-  let h = (0, i.n)(null == t ? true : t.id, [a.Z, s.default, o.ZP]);
+  null == t && (t = o.Z.getGuild(e.getGuildId()));
+  let h = (0, i.n)(null == t ? true : t.id, [o.Z, s.default, a.ZP]);
   if (e.isModeratorReportChannel()) return r.U65;
   if ((null == e ? true : e.id) === (null == t ? true : t.rulesChannelId)) return r.snC;
   let g = e.isNSFW();

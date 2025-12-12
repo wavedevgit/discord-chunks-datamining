@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
 }), require("./415506.js"), require("./35282.js"), require("./49124.js");
 var Chunk836560 = require("./836560.js"),
   Chunk525654 = require("./525654.js"),
-  o = require.n(Chunk525654),
+  a = require.n(Chunk525654),
   Chunk664751 = require("./664751.js"),
   Chunk772848 = require("./772848.js"),
   Chunk544891 = require("./544891.js"),
@@ -55,22 +55,22 @@ class h extends Chunk836560.EventEmitter {
           cmd: n,
           evt: r,
           nonce: i,
-          data: o
+          data: a
         } = t;
         if (n === u.Etm.DISPATCH) {
           if (r === u.zMe.READY) return void this.emit("connected");
           if (r === u.zMe.ERROR) {
             this.emit("error", new c.Z({
-              errorCode: o.code
-            }, o.message)), this.disconnect();
+              errorCode: a.code
+            }, a.message)), this.disconnect();
             return
           }
-          return void this.emit(f(n, r), o)
+          return void this.emit(f(n, r), a)
         }
-        let a = null;
-        r === u.zMe.ERROR && (a = new c.Z({
-          errorCode: o.code
-        }, o.message), o = null), this.emit(f(n, i), a, o)
+        let o = null;
+        r === u.zMe.ERROR && (o = new c.Z({
+          errorCode: a.code
+        }, a.message), a = null), this.emit(f(n, i), o, a)
       }, m.onclose = m.onerror = e => this.disconnect(e))
     }
   }
@@ -97,14 +97,14 @@ class h extends Chunk836560.EventEmitter {
         }), this.connect();
         return
       }
-      let o = (0, s.Z)(),
-        a = JSON.stringify({
+      let a = (0, s.Z)(),
+        o = JSON.stringify({
           cmd: e,
           args: t,
           evt: n,
-          nonce: o
+          nonce: a
         });
-      this.once(f(e, o), (e, t) => null != e ? i(e) : r(t)), null == m || m.send(a)
+      this.once(f(e, a), (e, t) => null != e ? i(e) : r(t)), null == m || m.send(o)
     })
   }
   requestOnce(e, t, n) {
@@ -131,7 +131,7 @@ class h extends Chunk836560.EventEmitter {
     })
   }
   requestRedirect(e, t, n) {
-    if ("Chrome" === o().name && parseInt(o().version, 10) >= 58) return this.requestOnce(e, t, n);
+    if ("Chrome" === a().name && parseInt(a().version, 10) >= 58) return this.requestOnce(e, t, n);
     let r = encodeURIComponent(JSON.stringify({
         cmd: e,
         args: t,

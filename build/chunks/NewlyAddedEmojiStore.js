@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => v
 });
 var r, Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk709054 = require("./709054.js");
@@ -108,8 +108,8 @@ class O extends(r = Chunk442837.ZP.PersistedStore) {
     let n = this.getLastSeenEmojiByGuild(e);
     if (null == n || l.default.compare(t, n.id) > 0) returntrue;
     {
-      let e = o()(n.lastSeen);
-      return o()().isBefore(e.add(2, "weeks")) && !n.acknowledged
+      let e = a()(n.lastSeen);
+      return a()().isBefore(e.add(2, "weeks")) && !n.acknowledged
     }
   }
 }

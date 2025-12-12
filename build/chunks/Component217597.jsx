@@ -1,30 +1,30 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 217597, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk49792 = require("./49792.js");
+  Chunk574094 = require("./574094.js");
 
-function a(e) {
+function s(e) {
   let {
     label: t,
     sublabel: n,
-    value: a,
+    value: s,
     additionalContent: o,
     tooltip: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: s.metricCard,
+    className: a.metricCard,
     "aria-label": t,
     children: [(0, r.jsxs)("div", {
-      className: s.metricCardLabelContainer,
+      className: a.metricCardLabelContainer,
       children: [(0, r.jsx)(l.Text, {
-        className: s.metricCardLabel,
+        className: a.metricCardLabel,
         variant: "text-xs/medium",
         color: "interactive-text-default",
         "aria-hidden": true,
@@ -34,7 +34,7 @@ function a(e) {
         children: (0, r.jsx)(l.d3s, {
           size: "xs",
           color: "currentColor",
-          className: s.__invalid_labelTooltipIcon
+          className: a.__invalid_labelTooltipIcon
         })
       }), null != n ? (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
@@ -45,7 +45,7 @@ function a(e) {
       tag: "span",
       variant: "heading-xl/medium",
       color: "text-strong",
-      children: a
+      children: s
     }), o]
   })
 }

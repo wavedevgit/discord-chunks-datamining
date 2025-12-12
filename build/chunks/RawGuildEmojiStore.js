@@ -31,7 +31,7 @@ function l(e, t) {
     roles: i.roles,
     managed: i.managed,
     version: i.version,
-    type: a.B.GUILD
+    type: o.B.GUILD
   };
   return n
 }

@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk848275 = require("./848275.jsx"),
   Chunk786773 = require("./786773.jsx"),
   Chunk284881 = require("./284881.js"),
-  Chunk129103 = require("./129103.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk512508 = require("./512508.js"),
+  Chunk960324 = require("./960324.js");
 
 function f(e) {
   var t;
@@ -46,8 +46,8 @@ function f(e) {
     }
   })();
   return null == _ ? null : (0, r.jsxs)("div", {
-    className: o()(d.markup, u.container),
-    children: [(0, r.jsx)(a.xvT, {
+    className: a()(d.markup, u.container),
+    children: [(0, r.jsx)(o.xvT, {
       variant: "text-lg/normal",
       color: "text-strong",
       children: (0, r.jsx)("div", {

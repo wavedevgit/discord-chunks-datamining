@@ -44,9 +44,9 @@ class E extends Chunk47770.Z {
     let n = t.filter(e => e.active),
       r = this.videoStreams.length !== n.length;
     if (this.audioSSRC = e, this.videoStreams = n, this.videoStreams.length > 1) {
-      var o, a, s, l;
-      let e = null != (s = null == (o = i().minBy(this.videoStreams, e => e.quality)) ? true : o.ssrc) ? s : 0,
-        t = null != (l = null == (a = i().maxBy(this.videoStreams, e => e.quality)) ? true : a.ssrc) ? l : 0;
+      var a, o, s, l;
+      let e = null != (s = null == (a = i().minBy(this.videoStreams, e => e.quality)) ? true : a.ssrc) ? s : 0,
+        t = null != (l = null == (o = i().maxBy(this.videoStreams, e => e.quality)) ? true : o.ssrc) ? l : 0;
       (e !== this.lqSSRC || t !== this.hqSSRC || r) && (this.lqSSRC = e, this.hqSSRC = t, this.reset(), this.update())
     } else r && this.reset(), this.update()
   }
@@ -209,7 +209,7 @@ class E extends Chunk47770.Z {
   constructor(e) {
     super(), f(this, "supportsSeamless", true), f(this, "logger", true), f(this, "userId", true), f(this, "streamId", true), f(this, "resolutionWidth", true), f(this, "resolutionHeight", true), f(this, "zoom", true), f(this, "videoStreams", true), f(this, "audioSSRC", true), f(this, "hqSSRC", true), f(this, "lqSSRC", true), f(this, "switchState", true), f(this, "pendingSSRC", true), f(this, "currentSSRC", true), f(this, "downgraded", true), f(this, "throttleDowngradeChanges", true), f(this, "lastDowngradeChangeTime", true), f(this, "otherUsers", true), f(this, "debugQualityOverride", true), f(this, "incomingVideoEnabled", true), f(this, "delayedCall", true), f(this, "delayedUpdate", true), this.supportsSeamless = e, this.streamId = null, this.resolutionWidth = 0, this.resolutionHeight = 0, this.zoom = 1, this.videoStreams = [], this.audioSSRC = 0, this.hqSSRC = 0, this.lqSSRC = 0, this.switchState = 0, this.pendingSSRC = false, this.currentSSRC = false, this.downgraded = false, this.throttleDowngradeChanges = true, this.lastDowngradeChangeTime = true, this.otherUsers = new Set, this.debugQualityOverride = d.Z.NO_OVERRIDE, this.incomingVideoEnabled = true, this.delayedUpdate = () => {
       this.delayedCall.delay()
-    }, this.logger = new s.Z("GoLiveQualityManager"), this.delayedCall = new a.sW(m, () => {
+    }, this.logger = new s.Z("GoLiveQualityManager"), this.delayedCall = new o.sW(m, () => {
       this.update()
     })
   }

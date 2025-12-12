@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -45,7 +45,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk992878 = require("./992878.js"),
+  Chunk279839 = require("./279839.js"),
   Chunk413097 = require("./413097.js"),
   Chunk969728 = require("./969728.js");
 
@@ -92,8 +92,8 @@ function z(e, t) {
   if (null == e) return {};
   var n, r, i = q(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -101,8 +101,8 @@ function z(e, t) {
 function q(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var Q = function(e) {
@@ -114,8 +114,8 @@ function X(e) {
   let {
     application: n,
     look: i = "large_banner",
-    onClick: o,
-    imageStyle: a,
+    onClick: a,
+    imageStyle: o,
     enableVideoBanner: s = true,
     children: l,
     sectionName: c,
@@ -128,7 +128,7 @@ function X(e) {
   } = e, g = null != (t = (0, f.Z)(_)) ? t : _;
   return (0, r.jsx)(J, {
     application: n,
-    onClick: o,
+    onClick: a,
     sectionName: c,
     resultsPosition: u,
     disabled: _,
@@ -137,12 +137,12 @@ function X(e) {
     sectionOverallPosition: d,
     children: "icon" === i ? (0, r.jsx)($, {
       application: n,
-      imageStyle: a,
+      imageStyle: o,
       children: l
     }) : (0, r.jsx)(ee, {
       application: n,
       look: i,
-      imageStyle: a,
+      imageStyle: o,
       enableVideoBanner: s,
       disableBannerFadeIn: g !== _,
       overrideImageUrl: m,
@@ -156,7 +156,7 @@ function J(e) {
   let {
     application: t,
     onClick: n,
-    children: o,
+    children: a,
     sectionName: s,
     resultsPosition: l,
     sectionOverallPosition: d,
@@ -187,7 +187,7 @@ function J(e) {
     promotionalLabel: (0, D.dF)(t)
   }), y = i.useMemo(() => {
     let e = p ? F.containerDisabled : F.container;
-    return a()(e, {
+    return o()(e, {
       [F.containerBorderRadius]: "row" !== m,
       [F.rowContainer]: "row" === m,
       [F.iconCard]: "icon" === m
@@ -196,7 +196,7 @@ function J(e) {
   return p ? (0, r.jsx)("div", {
     ref: f ? b : true,
     className: y,
-    children: o
+    children: a
   }) : (0, r.jsx)(c.P3F, {
     innerRef: f ? b : true,
     className: y,
@@ -207,7 +207,7 @@ function J(e) {
       applicationDescription: E
     }),
     children: (0, r.jsx)(c.Rny, {
-      children: o
+      children: a
     })
   })
 }
@@ -216,7 +216,7 @@ function $(e) {
   let {
     application: t,
     imageStyle: n,
-    children: o
+    children: a
   } = e, {
     name: s,
     iconURL: c
@@ -226,13 +226,13 @@ function $(e) {
   return (0, r.jsx)(l.u, {
     __unsupportedReactNodeAsText: s,
     children: (0, r.jsxs)("div", {
-      className: a()(F.iconContainer, n),
+      className: o()(F.iconContainer, n),
       children: [(0, r.jsx)(k.Z, {
         src: c,
         className: F.iconCard,
         "aria-hidden": true,
         rendersPlaceholder: true
-      }), o]
+      }), a]
     })
   })
 }
@@ -241,7 +241,7 @@ function ee(e) {
   let {
     application: t,
     look: n,
-    imageStyle: o,
+    imageStyle: a,
     enableVideoBanner: l,
     disableBannerFadeIn: u,
     children: f,
@@ -262,12 +262,12 @@ function ee(e) {
       onFocus: T,
       onMouseLeave: P,
       onBlur: P,
-      className: a()(F.bannerImageContainer, {
+      className: o()(F.bannerImageContainer, {
         [F.mediumBanner]: "medium_banner" === n,
         [F.largeBanner]: "large_banner" === n
       }),
       children: [(0, r.jsx)("span", {
-        className: o,
+        className: a,
         children: (0, r.jsx)(er, {
           application: t,
           fallbackColor: y,
@@ -292,12 +292,12 @@ function ee(e) {
         children: f
       })]
     }) : null, (0, r.jsxs)("div", {
-      className: a()(F.appDetailsContainer, {
+      className: o()(F.appDetailsContainer, {
         [F.appDetailsRowContainer]: "row" === n
       }),
       children: [(0, r.jsx)(k.Z, {
         src: h,
-        className: a()(F.icon, {
+        className: o()(F.icon, {
           [F.rowIcon]: "row" === n
         }),
         "aria-hidden": true,
@@ -338,9 +338,9 @@ function et() {
   return (0, Chunk54381.jsx)(Chunk28664.u, {
     text: Chunk388032.intl.string(Chunk388032.t.CfTySQ),
     children: (0, Chunk54381.jsx)("div", {
-      className: Chunk992878.devShelfBadge,
+      className: Chunk279839.devShelfBadge,
       children: (0, Chunk54381.jsx)(Chunk880448.Z, {
-        className: Chunk992878.devShelfIcon
+        className: Chunk279839.devShelfIcon
       })
     })
   })
@@ -353,12 +353,12 @@ function en(e) {
   if (!(null == n ? true : n.isStaff()) && !(null == n ? true : n.isStaffPersonal())) return null;
   let i = (0, D.yJ)(t);
   if (null == i || !(0, D.BQ)(t)) return null;
-  let o = (0, E.fD)(t, i);
-  return null == o ? null : (0, r.jsx)(l.u, {
-    __unsupportedReactNodeAsText: o,
+  let a = (0, E.fD)(t, i);
+  return null == a ? null : (0, r.jsx)(l.u, {
+    __unsupportedReactNodeAsText: a,
     children: (0, r.jsx)("img", {
       className: F.staffBadge,
-      alt: o,
+      alt: a,
       src: V
     })
   })
@@ -369,31 +369,31 @@ function er(e) {
     application: t,
     fallbackColor: n,
     showVideo: i,
-    disableFadeIn: o,
+    disableFadeIn: a,
     overrideImageUrl: s
   } = e;
   if (null != s) return (0, r.jsx)("img", {
     src: s,
     alt: (0, D.BQ)(t) ? t.name : "",
-    className: a()(F.bannerImage, {
-      [F.disableFadeIn]: o
+    className: o()(F.bannerImage, {
+      [F.disableFadeIn]: a
     })
   });
   if ((0, D.BQ)(t)) {
     if ((0, D.ye)(t)) return (0, r.jsx)(ei, {
       application: t,
       showVideo: i,
-      disableFadeIn: o
+      disableFadeIn: a
     });
-    if (null != t.bot) return (0, r.jsx)(eo, {
+    if (null != t.bot) return (0, r.jsx)(ea, {
       bot: t.bot,
       fallbackColor: n,
-      disableFadeIn: o
+      disableFadeIn: a
     })
   }
-  return (0, r.jsx)(ea, {
+  return (0, r.jsx)(eo, {
     fallbackColor: n,
-    disableFadeIn: o
+    disableFadeIn: a
   })
 }
 
@@ -401,7 +401,7 @@ function ei(e) {
   let {
     application: t,
     showVideo: n,
-    disableFadeIn: o
+    disableFadeIn: a
   } = e, s = (0, b.Z)({
     applicationId: t.id,
     size: 600,
@@ -414,14 +414,14 @@ function ei(e) {
   i.useEffect(() => {
     n && u(true)
   }, [n]);
-  let d = a()(F.bannerImage, {
-    [F.disableFadeIn]: o
+  let d = o()(F.bannerImage, {
+    [F.disableFadeIn]: a
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [null != l && c ? (0, r.jsx)("div", {
       className: F.activityVideoContainer,
       children: (0, r.jsx)("div", {
-        className: a()(F.activityVideo, {
+        className: o()(F.activityVideo, {
           [F.videoFadeOut]: !n
         }),
         onAnimationEnd: () => n ? null : u(false),
@@ -442,36 +442,36 @@ function ei(e) {
   })
 }
 
-function eo(e) {
+function ea(e) {
   let {
     bot: t,
     fallbackColor: n,
     disableFadeIn: i
-  } = e, o = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), l = (0, R.aN)({
+  } = e, a = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), l = (0, R.aN)({
     id: t.id,
     banner: t.banner,
-    canAnimate: !o,
+    canAnimate: !a,
     size: 600
   });
-  return null == l ? (0, r.jsx)(ea, {
+  return null == l ? (0, r.jsx)(eo, {
     fallbackColor: n,
     disableFadeIn: i
   }) : (0, r.jsx)("img", {
     src: l,
     alt: "",
-    className: a()(F.bannerImage, {
+    className: o()(F.bannerImage, {
       [F.disableFadeIn]: i
     })
   })
 }
 
-function ea(e) {
+function eo(e) {
   let {
     fallbackColor: t,
     disableFadeIn: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(F.bannerImage, {
+    className: o()(F.bannerImage, {
       [F.disableFadeIn]: n
     }),
     style: {
@@ -485,8 +485,8 @@ function es(e) {
     application: t,
     sectionName: n,
     resultsPosition: r,
-    query: o,
-    installOnDemand: a,
+    query: a,
+    installOnDemand: o,
     location: s
   } = e, {
     pushHistory: l
@@ -502,15 +502,15 @@ function es(e) {
         source: w.Z.entrypoint(),
         promotional_label: (0, D.dF)(t),
         location: s,
-        query: o,
+        query: a,
         num_friends_who_play: c.length
       }), l({
         type: x.gc.APPLICATION,
         application: t,
-        installOnDemand: a,
+        installOnDemand: o,
         sectionName: n
       })
-    }, [t, a, s, l, o, r, n, c])
+    }, [t, o, s, l, a, r, n, c])
   }
 }
 
@@ -527,8 +527,8 @@ function ec(e) {
   var {
     context: t,
     application: n,
-    location: o,
-    sectionName: a,
+    location: a,
+    sectionName: o,
     isOneClickCTA: l,
     fetchesApplication: u = true
   } = e, d = z(e, ["context", "application", "location", "sectionName", "isOneClickCTA", "fetchesApplication"]);
@@ -544,13 +544,13 @@ function ec(e) {
     } = (0, L.P7)({
       context: t,
       application: n,
-      location: o,
-      sectionName: a,
+      location: a,
+      sectionName: o,
       launchingComponentId: f,
       fetchesApplication: u
     });
   return y === E.JS.START || y === E.JS.JOIN ? l ? (0, r.jsx)(X, K(Y({}, d), {
-    sectionName: a,
+    sectionName: o,
     application: n,
     onClick: b,
     disabled: p || h,
@@ -561,11 +561,11 @@ function ec(e) {
     }) : null
   })) : (0, r.jsx)(el, K(Y({}, d), {
     context: t,
-    sectionName: a,
+    sectionName: o,
     application: n,
-    location: o
+    location: a
   })) : (0, r.jsx)(X, K(Y({}, d), {
-    sectionName: a,
+    sectionName: o,
     application: n,
     onClick: e => {
       e.stopPropagation()

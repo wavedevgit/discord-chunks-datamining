@@ -7,20 +7,20 @@ Object.defineProperty(exports, "__esModule", {
 let Chunk718939 = require("./718939.js"),
   Chunk148468 = require("./148468.js");
 
-function o(e) {
+function a(e) {
   let t = (0, i.getFileChunk)(e);
   return r.FileTypes.checkByFileType(t, "m4a")
 }
 exports.isAAC = function(e, t) {
   let n = (0, i.getFileChunk)(e);
-  return !!r.FileTypes.checkByFileType(n, "aac") || (null == t || !t.excludeSimilarTypes) && o(n)
+  return !!r.FileTypes.checkByFileType(n, "aac") || (null == t || !t.excludeSimilarTypes) && a(n)
 }, exports.isAMR = function(e) {
   let t = (0, i.getFileChunk)(e);
   return r.FileTypes.checkByFileType(t, "amr")
 }, exports.isFLAC = function(e) {
   let t = (0, i.getFileChunk)(e);
   return r.FileTypes.checkByFileType(t, "flac")
-}, exports.isM4A = o, exports.isMP3 = function(e) {
+}, exports.isM4A = a, exports.isMP3 = function(e) {
   let t = (0, i.getFileChunk)(e);
   return r.FileTypes.checkByFileType(t, "mp3")
 }, exports.isWAV = function(e) {

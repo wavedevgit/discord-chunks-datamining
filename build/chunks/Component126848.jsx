@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,19 +22,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk924540 = require("./924540.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk563042 = require("./563042.js");
+  Chunk836374 = require("./836374.js");
 
 function O() {
   let e, t = arguments.length > 0 && true !== arguments[0] && arguments[0],
     n = (0, Chunk639119.N)(),
-    o = (0, Chunk622909.N)(),
-    a = (0, Chunk367074.Vi)(),
+    a = (0, Chunk622909.N)(),
+    o = (0, Chunk367074.Vi)(),
     l = null != (0, Chunk347896.Z)(),
-    c = a || Chunk692547,
+    c = o || Chunk692547,
     u = (null == require ? true : require.trial_id) === Chunk474936.a7,
     y = [];
-  Chunk481060 && Chunk563042.push(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE);
-  let [O, v] = (0, Chunk243778.US)(Chunk563042, true, true);
+  Chunk481060 && Chunk836374.push(Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE);
+  let [O, v] = (0, Chunk243778.US)(Chunk836374, true, true);
   return Chunk473749.useEffect(() => {
     true === exports && O === Chunk704215.z.BOGO_2025_NITRO_TAB_BADGE && v(Chunk921944.L.AUTO_DISMISS)
   }, [v, exports, O]), Chunk481060 ? e = (0, Chunk54381.jsx)(Chunk655525.Z, {}) : null != Chunk120356 ? e = (0, Chunk54381.jsx)(Chunk924540.GN, {
@@ -51,7 +51,7 @@ function v(e) {
   var t, n;
   let {
     decoration: i,
-    label: o,
+    label: a,
     isSelected: s
   } = e, d = (0, f.Vi)(), p = null != (n = null != (t = O(s)) ? t : i) ? n : (0, r.jsx)(c.SrA, {
     size: "sm",
@@ -59,12 +59,12 @@ function v(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(y.premiumLabel, {
+      className: o()(y.premiumLabel, {
         [y.selected]: s && !d
       }),
-      children: [o, p]
+      children: [a, p]
     }), (0, r.jsx)("div", {
-      className: a()(y.background, {
+      className: o()(y.background, {
         [y.selectedBackground]: !d && s
       })
     })]

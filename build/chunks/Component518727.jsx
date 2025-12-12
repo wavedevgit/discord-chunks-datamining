@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -18,15 +18,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk585483 = require("./585483.js"),
   Chunk402426 = require("./402426.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk839249 = require("./839249.js"),
-  Chunk293914 = require("./293914.js"),
-  Chunk503019 = require("./503019.js");
+  Chunk872050 = require("./872050.js"),
+  Chunk77517 = require("./77517.js"),
+  Chunk493969 = require("./493969.js");
 let b = 1e3,
   y = e => {
     let {
       children: t,
       isConfirmationStep: n,
-      isEligibleForWowMoment: o,
+      isEligibleForWowMoment: a,
       shouldPrefetchWowMoment: b
     } = e, y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [O, v] = (0, i.useState)("entry"), S = (0, i.useRef)(null), I = (0, i.useRef)(null), T = (0, i.useCallback)(() => {
       if ("entry" === O && (v("idle"), null != S.current)) {
@@ -45,17 +45,17 @@ let b = 1e3,
     let {
       mediaUrls: P,
       isSuccess: R
-    } = (0, _.Z)(!y && o && A), w = (0, i.useRef)(null), [D, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
+    } = (0, _.Z)(!y && a && A), w = (0, i.useRef)(null), [D, x] = (0, i.useState)(false), [L, j] = (0, i.useState)(false), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(false);
     if ((0, i.useEffect)(() => {
         let e;
-        o && n && !U && "none" === M && (y || !R ? (k("static"), y || (G(true), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.Z.dispatch({
+        a && n && !U && "none" === M && (y || !R ? (k("static"), y || (G(true), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = false) : (k("animated"), j(true), e = true), c.Z.dispatch({
           type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
           value: true,
           isAnimated: e
         }), f.default.track(m.rMx.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
           wow_moment_type: e ? "animated" : "static"
         }))
-      }, [y, o, n, R, U, M]), (0, i.useEffect)(() => {
+      }, [y, a, n, R, U, M]), (0, i.useEffect)(() => {
         function e() {
           x(true), C()
         }
@@ -78,7 +78,7 @@ let b = 1e3,
             muted: true,
             autoPlay: true,
             onEnded: T,
-            className: a()(h.video, "entry" === O ? h.visible : h.hidden),
+            className: o()(h.video, "entry" === O ? h.visible : h.hidden),
             children: (0, r.jsx)("source", {
               src: P.modalGlowEntry
             })
@@ -88,7 +88,7 @@ let b = 1e3,
           playsInline: true,
           muted: true,
           loop: true,
-          className: a()(h.video, "idle" === O ? h.visible : h.hidden),
+          className: o()(h.video, "idle" === O ? h.visible : h.hidden),
           children: (0, r.jsx)("source", {
             src: P.modalGlowIdle
           })
@@ -96,7 +96,7 @@ let b = 1e3,
           ref: I,
           playsInline: true,
           muted: true,
-          className: a()(h.video, "exit" === O ? h.visible : h.hidden),
+          className: o()(h.video, "exit" === O ? h.visible : h.hidden),
           children: (0, r.jsx)("source", {
             src: P.modalGlowExit
           })

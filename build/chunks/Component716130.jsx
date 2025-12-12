@@ -1,13 +1,13 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 716130, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk959508 = require("./959508.jsx"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk314160 = require("./314160.js");
+  Chunk23550 = require("./23550.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,151 +53,151 @@ function _(e, t) {
   }), e
 }
 
-function v(e) {
+function O(e) {
   let {
     guild: t,
     prejoinOnly: n,
     postjoinOnly: l
-  } = e, c = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), d = c.filter(e => e.inOnboarding), g = d.length, {
-    drag: f,
+  } = e, c = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), u = c.filter(e => e.inOnboarding), g = u.length, {
+    drag: b,
     drop: j,
-    dragSourcePosition: _,
-    setIsDraggable: v
-  } = (0, u.Z)({
+    dragSourcePosition: v,
+    setIsDraggable: O
+  } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: g,
     optionId: "separator",
     onDragStart: () => {},
     onDragComplete: () => {},
     onDragReset: () => {}
-  }), O = i.useRef(null);
+  }), C = i.useRef(null);
   return i.useEffect(() => {
-    v(false)
-  }, [v]), i.useEffect(() => {
-    f(j(O))
-  }, [f, j, O]), (0, r.jsxs)("div", {
-    ref: O,
-    className: s()(b.separatorSection, {
-      [b.dropIndicatorBefore]: null != _ && g < _,
-      [b.dropIndicatorAfter]: null != _ && g > _
+    O(false)
+  }, [O]), i.useEffect(() => {
+    b(j(C))
+  }, [b, j, C]), (0, r.jsxs)("div", {
+    ref: C,
+    className: a()(x.separatorSection, {
+      [x.dropIndicatorBefore]: null != v && g < v,
+      [x.dropIndicatorAfter]: null != v && g > v
     }),
-    children: [!l && d.length < h.b3 ? (0, r.jsxs)(o.P3F, {
-      className: b.addPrompt,
-      onClick: () => (0, m.tS)(t, [...c, (0, h.yZ)(true)], false),
+    children: [!l && u.length < p.b3 ? (0, r.jsxs)(o.P3F, {
+      className: x.addPrompt,
+      onClick: () => (0, f.tS)(t, [...c, (0, p.yZ)(true)], false),
       children: [(0, r.jsx)(o.oFk, {
         size: "custom",
         color: "currentColor",
-        className: b.plusIcon,
+        className: x.plusIcon,
         width: 20,
         height: 20
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-brand",
-        children: x.intl.string(x.t.ujFquz)
+        children: h.intl.string(h.t.ujFquz)
       })]
     }) : null, n ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: b.divider
+        className: x.divider
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
-        children: x.intl.string(x.t.tjrGcb)
+        children: h.intl.string(h.t.tjrGcb)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        className: b.subtitle,
-        children: x.intl.string(x.t.XFa6Q8)
+        className: x.subtitle,
+        children: h.intl.string(h.t.XFa6Q8)
       })]
     })]
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     guildId: t,
     prejoinOnly: n,
     postjoinOnly: i,
     includeCount: l,
-    singleColumn: s
-  } = e, u = (0, a.e7)([g.Z], () => g.Z.getGuild(t)), O = (0, a.e7)([p.Z], () => p.Z.editedOnboardingPrompts), C = O.filter(e => e.inOnboarding), y = O.filter(e => true !== e.inOnboarding), N = [...C.map(e => ({
+    singleColumn: a
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([m.Z], () => m.Z.editedOnboardingPrompts), y = C.filter(e => e.inOnboarding), N = C.filter(e => true !== e.inOnboarding), E = [...y.map(e => ({
     id: e.id,
     data: e
   })), {
     id: "separator",
-    data: (0, h.ae)()
-  }, ...y.map(e => ({
+    data: (0, p.ae)()
+  }, ...N.map(e => ({
     id: e.id,
     data: e
   }))], {
-    handleDragStart: E,
-    handleDragReset: I,
-    handleDragComplete: S
-  } = (0, d.Z)(N, e => {
+    handleDragStart: I,
+    handleDragReset: S,
+    handleDragComplete: _
+  } = (0, u.Z)(E, e => {
     let t = e.findIndex(e => "separator" === e.id),
-      n = e.slice(0, t).map(e => _(j({}, e.data), {
+      n = e.slice(0, t).map(e => v(j({}, e.data), {
         inOnboarding: true
       })),
-      r = e.slice(t + 1).map(e => _(j({}, e.data), {
+      r = e.slice(t + 1).map(e => v(j({}, e.data), {
         inOnboarding: false,
         required: false
       }));
-    if (n.length > h.b3) return void c.Z.show({
-      title: x.intl.string(x.t.Cxtq5x),
-      body: x.intl.formatToPlainString(x.t["pkbZ+U"], {
-        numQuestions: h.b3
+    if (n.length > p.b3) return void c.Z.show({
+      title: h.intl.string(h.t.Cxtq5x),
+      body: h.intl.formatToPlainString(h.t["pkbZ+U"], {
+        numQuestions: p.b3
       })
     });
-    (0, m.tS)(u, [...n, ...r])
+    (0, f.tS)(d, [...n, ...r])
   });
-  return null == u ? null : (0, r.jsxs)(r.Fragment, {
+  return null == d ? null : (0, r.jsxs)(r.Fragment, {
     children: [i ? null : (0, r.jsxs)(r.Fragment, {
       children: [n ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-md/bold",
-          children: x.intl.string(x.t["24Qm4M"])
+          children: h.intl.string(h.t["24Qm4M"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          className: b.subtitle,
-          children: x.intl.string(x.t.QvCcYe)
+          className: x.subtitle,
+          children: h.intl.string(h.t.QvCcYe)
         })]
-      }), C.map((e, t) => (0, r.jsx)(f.Z, {
-        guild: u,
+      }), y.map((e, t) => (0, r.jsx)(b.Z, {
+        guild: d,
         prompt: e,
         disableAutofocus: n,
         includeCount: l,
-        singleColumn: s,
+        singleColumn: a,
         promptIndex: t,
         dragIndex: t,
-        onPromptDragStart: E,
-        onPromptDragReset: I,
-        onPromptDragComplete: S
+        onPromptDragStart: I,
+        onPromptDragReset: S,
+        onPromptDragComplete: _
       }, e.id))]
-    }), (0, r.jsx)(v, {
-      guild: u,
+    }), (0, r.jsx)(O, {
+      guild: d,
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [y.map((e, t) => (0, r.jsx)(f.Z, {
-        guild: u,
+      children: [N.map((e, t) => (0, r.jsx)(b.Z, {
+        guild: d,
         prompt: e,
-        promptIndex: t + C.length,
-        dragIndex: t + C.length + 1,
-        onPromptDragStart: E,
-        onPromptDragReset: I,
-        onPromptDragComplete: S
-      }, e.id)), O.length < h.YW ? (0, r.jsxs)(o.P3F, {
-        className: b.addPrompt,
-        onClick: () => (0, m.tS)(u, [...O, (0, h.yZ)(false)], false),
+        promptIndex: t + y.length,
+        dragIndex: t + y.length + 1,
+        onPromptDragStart: I,
+        onPromptDragReset: S,
+        onPromptDragComplete: _
+      }, e.id)), C.length < p.YW ? (0, r.jsxs)(o.P3F, {
+        className: x.addPrompt,
+        onClick: () => (0, f.tS)(d, [...C, (0, p.yZ)(false)], false),
         children: [(0, r.jsx)(o.oFk, {
           size: "custom",
           color: "currentColor",
-          className: b.plusIcon,
+          className: x.plusIcon,
           width: 20,
           height: 20
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-brand",
-          children: x.intl.string(x.t.ujFquz)
+          children: h.intl.string(h.t.ujFquz)
         })]
       }) : null]
     })]

@@ -13,16 +13,16 @@ var Chunk275726 = require("./275726.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk834129 = require("./834129.jsx"),
   Chunk594174 = require("./594174.js"),
-  Chunk546484 = require("./546484.js"),
+  Chunk792389 = require("./792389.js"),
   Chunk388032 = require("./388032.jsx");
 let p = {
-    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk546484.default.komFTv,
-    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk546484.default.FAJmJV,
-    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk546484.default["90r/sR"]
+    [Chunk275726.u.REPORT_TO_MOD_BAN_USER]: () => Chunk792389.default.komFTv,
+    [Chunk275726.u.REPORT_TO_MOD_KICK_USER]: () => Chunk792389.default.FAJmJV,
+    [Chunk275726.u.REPORT_TO_MOD_TIMEOUT_USER]: () => Chunk792389.default["90r/sR"]
   },
   _ = {
-    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk546484.default["4023i8"],
-    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk546484.default.UE81zV
+    [Chunk275726.u.REPORT_TO_MOD_DELETED_MESSAGE]: () => Chunk792389.default["4023i8"],
+    [Chunk275726.u.REPORT_TO_MOD_CLOSED_REPORT]: () => Chunk792389.default.UE81zV
   };
 
 function m(e) {
@@ -31,19 +31,19 @@ function m(e) {
   } = e, n = null;
   switch (t) {
     case i.u.REPORT_TO_MOD_BAN_USER:
-      n = a.pgN;
+      n = o.pgN;
       break;
     case i.u.REPORT_TO_MOD_KICK_USER:
-      n = a.I9k;
+      n = o.I9k;
       break;
     case i.u.REPORT_TO_MOD_TIMEOUT_USER:
-      n = a.YlB;
+      n = o.YlB;
       break;
     case i.u.REPORT_TO_MOD_DELETED_MESSAGE:
-      n = a.XHJ;
+      n = o.XHJ;
       break;
     case i.u.REPORT_TO_MOD_CLOSED_REPORT:
-      n = a.kmB
+      n = o.kmB
   }
   return null != n ? (0, r.jsx)(n, {
     size: "refresh_sm",
@@ -56,12 +56,12 @@ function h(e) {
   let {
     message: n,
     channel: i,
-    compact: a
+    compact: o
   } = e, {
     author: d,
     mentions: _,
     type: h
-  } = n, g = (0, s.ZP)(n), E = n.getChannelId(), b = (0, o.e7)([u.default], () => u.default.getUser(_[0]), [_]), y = (0, s.JZ)(d, i), O = (0, l.l)({
+  } = n, g = (0, s.ZP)(n), E = n.getChannelId(), b = (0, a.e7)([u.default], () => u.default.getUser(_[0]), [_]), y = (0, s.JZ)(d, i), O = (0, l.l)({
     user: d,
     channelId: E,
     guildId: i.guild_id,
@@ -84,7 +84,7 @@ function h(e) {
       type: h
     }),
     timestamp: n.timestamp,
-    compact: a,
+    compact: o,
     children: T
   })
 }
@@ -94,12 +94,12 @@ function g(e) {
   let {
     message: n,
     channel: i,
-    compact: o
+    compact: a
   } = e, {
-    author: a,
+    author: o,
     type: u
-  } = n, d = (0, s.ZP)(n), p = n.getChannelId(), h = (0, s.JZ)(a, i), g = (0, l.l)({
-    user: a,
+  } = n, d = (0, s.ZP)(n), p = n.getChannelId(), h = (0, s.JZ)(o, i), g = (0, l.l)({
+    user: o,
     channelId: p,
     guildId: i.guild_id,
     messageId: n.id
@@ -114,7 +114,7 @@ function g(e) {
       type: u
     }),
     timestamp: n.timestamp,
-    compact: o,
+    compact: a,
     children: b
   })
 }
@@ -123,17 +123,17 @@ function E(e) {
   let {
     message: t,
     channel: n,
-    compact: o
+    compact: a
   } = e, {
-    type: a
+    type: o
   } = t;
-  return a === i.u.REPORT_TO_MOD_BAN_USER || a === i.u.REPORT_TO_MOD_KICK_USER || a === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(h, {
+  return o === i.u.REPORT_TO_MOD_BAN_USER || o === i.u.REPORT_TO_MOD_KICK_USER || o === i.u.REPORT_TO_MOD_TIMEOUT_USER ? (0, r.jsx)(h, {
     message: t,
     channel: n,
-    compact: o
+    compact: a
   }) : (0, r.jsx)(g, {
     message: t,
     channel: n,
-    compact: o
+    compact: a
   })
 }

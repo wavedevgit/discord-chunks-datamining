@@ -4,9 +4,9 @@ require.d(exports, {
   K9: () => y,
   NX: () => h,
   R_: () => O,
-  e$: () => g,
+  e$: () => m,
   ti: () => S,
-  zV: () => m
+  zV: () => f
 }), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./314940.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -18,7 +18,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return o.ZP.getUserAvatarURL({
     id: e.id,
@@ -28,11 +28,11 @@ function m(e) {
   }, t, 80)
 }
 
-function g(e) {
+function m(e) {
   let t = (0, l._I)(e.username).replace(u.RN, "").replace(u.iF, ".").toLowerCase();
   return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
-let f = ["@", "#", ":"],
+let g = ["@", "#", ":"],
   E = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
   p = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
@@ -40,7 +40,7 @@ function h(e) {
   var t;
   let n = e.username.toLowerCase();
   if ((t = u.kt, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) returntrue;
-  for (let e of f)
+  for (let e of g)
     if (n.includes(e)) returntrue;
   for (let e of p)
     if (n === e.toLowerCase()) returntrue;

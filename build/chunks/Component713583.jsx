@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk239091 = require("./239091.js"),
   Chunk962293 = require("./962293.jsx"),
   Chunk555573 = require("./555573.js"),
   Chunk761652 = require("./761652.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk585238 = require("./585238.js");
+  Chunk368489 = require("./368489.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,7 +56,7 @@ function h(e, t) {
 
 function g(e) {
   var t;
-  let o, p, m, {
+  let a, p, m, {
       className: g,
       activeCommand: E,
       activeOption: b,
@@ -87,16 +87,16 @@ function g(e) {
   if (null == E) return null;
   if (null != b) {
     let e = y[b.name].lastValidationResult;
-    o = b.displayName, p = b.displayDescription, m = (null == e ? true : e.success) ? null : null == e ? true : e.error
-  } else o = "".concat(u.GI).concat(E.displayName), p = E.displayDescription, m = null;
+    a = b.displayName, p = b.displayDescription, m = (null == e ? true : e.success) ? null : null == e ? true : e.error
+  } else a = "".concat(u.GI).concat(E.displayName), p = E.displayDescription, m = null;
   return (0, r.jsxs)("div", {
-    className: a()(g, f.bar),
+    className: o()(g, f.bar),
     onContextMenu: v,
     children: [(0, r.jsxs)("div", {
       className: f.commandInfo,
       children: [(0, r.jsx)("span", {
         className: f.name,
-        children: o
+        children: a
       }), null != m ? (0, r.jsx)("span", {
         className: f.error,
         children: m

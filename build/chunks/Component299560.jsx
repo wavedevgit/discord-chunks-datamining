@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk70399 = require("./70399.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk229870 = require("./229870.js");
+  Chunk119078 = require("./119078.js");
 let I = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: () => ({

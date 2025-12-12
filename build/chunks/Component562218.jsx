@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk941651 = require("./941651.js"),
+  Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
 let h = () => {
     var e;
@@ -64,7 +64,7 @@ let h = () => {
       loading: y
     });
     let A = (0, Chunk74538.Ju)(E),
-      N = A ? Chunk388032.intl.string(Chunk941651.default.qbDPGM) : Chunk388032.intl.formatToPlainString(Chunk388032.t.LZunzZ, {
+      N = A ? Chunk388032.intl.string(Chunk353149.default.qbDPGM) : Chunk388032.intl.formatToPlainString(Chunk388032.t.LZunzZ, {
         planPremiumType: Chunk74538.ZP.getTierDisplayNameByPlanId("".concat(E))
       });
     return (0, Chunk54381.jsx)(Chunk793030.Modal, {

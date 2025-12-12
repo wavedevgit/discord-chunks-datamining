@@ -9,9 +9,9 @@ var Chunk725095 = require("./725095.js"),
   Chunk695346 = require("./695346.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk542395 = require("./542395.js");
+  Chunk307139 = require("./307139.js");
 let c = (0, Chunk509613.qs)(Chunk313789.n.GAME_UPDATE_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk542395.default["3TO4/r"]),
+  useTitle: () => Chunk388032.intl.string(Chunk307139.default["3TO4/r"]),
   useValue: Chunk695346.p1.useSetting,
   setValue: Chunk820942.c,
   usePredicate: () => (0, Chunk725095.EX)({

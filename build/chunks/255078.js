@@ -201,9 +201,9 @@ class b extends Chunk81825.Z {
       r = null;
     if (e.type === d.NYc.PREMIUM) {
       let i = p.GP[e.items[0].planId],
-        o = i.interval,
+        a = i.interval,
         s = i.intervalCount;
-      n = (0, a.Xr)(e.items, o, s), null != t && (r = (0, a.Xr)(t.items, o, s))
+      n = (0, o.Xr)(e.items, a, s), null != t && (r = (0, o.Xr)(t.items, a, s))
     } else null != t && t.items.length > 0 && (r = t.items[0].planId);
     this.planId = n, this.additionalPlans = e.items.filter(e => e.planId !== n), null != t && null != r && (t.planId = r, t.additionalPlans = t.items.filter(e => e.planId !== r))
   }

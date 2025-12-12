@@ -2,12 +2,12 @@
 /** chunk id: 297159, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  P: () => o
+  P: () => a
 });
 var Chunk481060 = require("./481060.js"),
   Chunk267642 = require("./267642.js");
 
-function o(e) {
+function a(e) {
   switch (e) {
     case i.Ro.EMOJI:
       return r.EO4;

@@ -2,13 +2,13 @@
 /** chunk id: 96052, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => a
+  U: () => o
 });
 var Chunk570140 = require("./570140.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   r.Z.dispatch({
     type: "MESSAGE_CREATE",
     channelId: e,
@@ -31,8 +31,8 @@ function s(e) {
   } = e;
   return {
     id: i.default.fromTimestamp(Date.parse(r)),
-    type: o.uaV.STAGE_RAISE_HAND,
-    flags: o.iLy.EPHEMERAL,
+    type: a.uaV.STAGE_RAISE_HAND,
+    flags: a.iLy.EPHEMERAL,
     content: "",
     channel_id: t,
     author: n,
@@ -44,7 +44,7 @@ function s(e) {
     mention_roles: [],
     mention_everyone: false,
     timestamp: r,
-    state: o.yb.SENT,
+    state: a.yb.SENT,
     tts: false
   }
 }

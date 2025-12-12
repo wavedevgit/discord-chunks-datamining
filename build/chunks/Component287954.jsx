@@ -57,8 +57,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -110,14 +110,14 @@ function E(e) {
     resetInteraction: v,
     interactionSourceId: S,
     interactionPopoutTargetRef: I
-  } = (0, o.Xo)(), T = [u.l.MODAL, u.l.MODAL_V2].includes(p) ? (0, a.z)(t.id, n) : true, C = O === b.sourceType && y === c.P.REACT, A = O === b.sourceType && y === c.P.REPLY, N = (C || A) && S === b.sourceId;
+  } = (0, a.Xo)(), T = [u.l.MODAL, u.l.MODAL_V2].includes(p) ? (0, o.z)(t.id, n) : true, C = O === b.sourceType && y === c.P.REACT, A = O === b.sourceType && y === c.P.REPLY, N = (C || A) && S === b.sourceId;
   return (0, r.jsx)(i.yRy, _(f({
     targetElementRef: null != I ? I : true,
     renderPopout: e => {
       let {
         setPopoutRef: i
-      } = e, o = C ? s.Z : l.Z;
-      return (0, r.jsx)(o, f({
+      } = e, a = C ? s.Z : l.Z;
+      return (0, r.jsx)(a, f({
         user: t,
         guildId: n,
         channelId: d,

@@ -5,8 +5,8 @@ exports.createDateTimeFormat = d, exports.createDateTimeFormats = f;
 var n = /(?:[Eec]{1,6}|G{1,5}|(?:[yYu]+|U{1,5})|[ML]{1,5}|d{1,2}|a|[hkHK]{1,2}|m{1,2}|s{1,2}|z{1,4})(?=([^']*'[^']*')*[^']*$)/g,
   r = /[QxXVOvZASjgFDwWIQqH]/,
   i = ["numeric", "2-digit", "short", "long", "narrow"],
-  o = ["short", "short", "short", "long", "narrow"],
   a = ["short", "short", "short", "long", "narrow"],
+  o = ["short", "short", "short", "long", "narrow"],
   s = ["weekday", "era", "year", "month", "day"],
   l = ["hour", "minute", "second", "timeZoneName"];
 
@@ -30,9 +30,9 @@ function d(e) {
         case "E":
         case "e":
         case "c":
-          return t.weekday = o[e.length - 1], "{weekday}";
+          return t.weekday = a[e.length - 1], "{weekday}";
         case "G":
-          return t.era = a[e.length - 1], "{era}";
+          return t.era = o[e.length - 1], "{era}";
         case "y":
         case "Y":
         case "u":
@@ -64,7 +64,7 @@ function d(e) {
 }
 
 function f(e) {
-  var t, n, r, i, o, a = e.availableFormats,
+  var t, n, r, i, a, o = e.availableFormats,
     s = e.timeFormats,
     l = e.dateFormats,
     f = e.medium,
@@ -77,9 +77,9 @@ function f(e) {
       r = Array((e.match(/E/g) || []).length + 1);
     return n.length > 2 && (t = t.replace(/(M|L)+/, n.join("$1"))), r.length > 2 && (t = t.replace(/([Eec])+/, r.join("$1"))), t
   }
-  for (t in a) a.hasOwnProperty(t) && (r = d(n = h(t, a[t]))) && (p.push(r), c(r) ? m.push(n) : u(r) && _.push(n));
+  for (t in o) o.hasOwnProperty(t) && (r = d(n = h(t, o[t]))) && (p.push(r), c(r) ? m.push(n) : u(r) && _.push(n));
   for (i = 0; i < _.length; i += 1)
-    for (o = 0; o < m.length; o += 1)(r = d(n = f.replace("{0}", _[i]).replace("{1}", m[o]).replace(/^[,\s]+|[,\s]+$/gi, ""))) && p.push(r);
+    for (a = 0; a < m.length; a += 1)(r = d(n = f.replace("{0}", _[i]).replace("{1}", m[a]).replace(/^[,\s]+|[,\s]+$/gi, ""))) && p.push(r);
   for (t in s) s.hasOwnProperty(t) && (r = d(n = h(t, s[t]))) && p.push(r);
   for (t in l) l.hasOwnProperty(t) && (r = d(n = h(t, l[t]))) && p.push(r);
   return p

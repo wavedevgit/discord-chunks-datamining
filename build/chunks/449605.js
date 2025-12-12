@@ -22,14 +22,14 @@ function d(e, t, n) {
       shouldFetchPreview: m,
       previewUrl: h,
       isLoading: g
-    } = (0, i.cj)([a.Z], () => ({
-      shouldFetchPreview: !d && a.Z.shouldFetchPreview(e, t, n),
-      previewUrl: d ? null : a.Z.getPreviewURL(e, t, n),
-      isLoading: !d && a.Z.getIsPreviewLoading(e, t, n)
+    } = (0, i.cj)([o.Z], () => ({
+      shouldFetchPreview: !d && o.Z.shouldFetchPreview(e, t, n),
+      previewUrl: d ? null : o.Z.getPreviewURL(e, t, n),
+      isLoading: !d && o.Z.getIsPreviewLoading(e, t, n)
     })),
     E = p || _;
   return (r.useEffect(() => {
-    m && !d && E && (0, o.n9)(e, t, n)
+    m && !d && E && (0, a.n9)(e, t, n)
   }, [m, t, e, n, d, E]), d || !E) ? {
     previewUrl: true,
     isLoading: false

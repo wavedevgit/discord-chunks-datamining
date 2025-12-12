@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 603784, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -28,9 +28,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk501801 = require("./501801.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk404211 = require("./404211.js");
+  Chunk876334 = require("./876334.js");
 
-function S(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,7 +69,7 @@ class P extends Chunk473749.PureComponent {
     } = this.props;
     return (0, Chunk54381.jsxs)("span", {
       onContextMenu: exports,
-      className: Chunk404211.userHook,
+      className: Chunk876334.userHook,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk51144.ZP.getUserTag(module, {
@@ -77,7 +77,7 @@ class P extends Chunk473749.PureComponent {
         })
       }), "0" !== module.discriminator && (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        className: Chunk404211.discrim,
+        className: Chunk876334.discrim,
         children: ["#", module.discriminator]
       })]
     })
@@ -87,8 +87,8 @@ let w = Chunk473749.forwardRef((e, t) => {
   let n, {
       log: l,
       className: o,
-      expanded: f,
-      guildId: v,
+      expanded: b,
+      guildId: O,
       guild: w,
       onChannelContextMenu: Z,
       onContentClick: R,
@@ -102,33 +102,33 @@ let w = Chunk473749.forwardRef((e, t) => {
       let {
         changes: e
       } = l;
-      return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
+      return (l.actionType !== E.vB8.DELETE || l.action === E.rsA.MEMBER_BAN_ADD || l.action === E.rsA.MEMBER_KICK || l.action === E.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, N.xO)(l, e))
     }(),
-    U = I.headerDefault;
-  f ? U = I.headerExpanded : M && (U = I.headerClickable);
+    U = S.headerDefault;
+  b ? U = S.headerExpanded : M && (U = S.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
-  n = B === F ? (0, r.jsx)(u.Text, {
-    className: I.timestamp,
+  n = B === F ? (0, r.jsx)(d.Text, {
+    className: S.timestamp,
     variant: "text-sm/normal",
     children: B
-  }) : (0, r.jsxs)(u.Text, {
-    className: I.timestamp,
+  }) : (0, r.jsxs)(d.Text, {
+    className: S.timestamp,
     variant: "text-sm/normal",
     children: [B, "—", F]
   });
-  let H = M ? D : N.dG4;
-  return (0, r.jsx)(a.mh, {
+  let H = M ? D : E.dG4;
+  return (0, r.jsx)(s.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
       ref: t,
-      className: s()(I.auditLog, o),
-      children: [(0, r.jsxs)(u.P3F, T(S({
+      className: a()(S.auditLog, o),
+      children: [(0, r.jsxs)(d.P3F, T(_({
         className: U,
-        "aria-expanded": f,
+        "aria-expanded": b,
         onClick: H
       }, e), {
-        children: [(0, r.jsx)(y.mp, {
+        children: [(0, r.jsx)(N.mp, {
           action: l.action,
           actionType: l.actionType,
           targetType: l.targetType
@@ -140,54 +140,54 @@ let w = Chunk473749.forwardRef((e, t) => {
               integration_type: n
             }
           } = l;
-          if (null != e && null != t) return (0, r.jsx)(p.Z, {
+          if (null != e && null != t) return (0, r.jsx)(m.Z, {
             targetElementRef: G,
             user: e,
-            guildId: v,
+            guildId: O,
             newAnalyticsLocations: [g.Z.AVATAR],
             children: e => {
               var t;
-              return (0, r.jsx)(u.qEK, T(S({}, e), {
+              return (0, r.jsx)(d.qEK, T(_({}, e), {
                 ref: G,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
-                className: I.avatar,
-                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, O.j)() : null == (t = l.user) ? true : t.getAvatarURL(v, 40),
+                className: S.avatar,
+                src: l.action === E.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === E.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === E.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === E.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, C.j)() : null == (t = l.user) ? true : t.getAvatarURL(O, 40),
                 "aria-hidden": true,
-                size: u.EFr.SIZE_40
+                size: d.EFr.SIZE_40
               }))
             }
           });
           if (null != n) {
-            let e = d.Z.get(n);
+            let e = u.Z.get(n);
             if (null != e) {
               let t = (0, c.wj)(k) ? e.icon.darkSVG : e.icon.lightSVG;
-              return (0, r.jsx)(u.qEK, {
-                className: I.avatar,
+              return (0, r.jsx)(d.qEK, {
+                className: S.avatar,
                 src: t,
                 "aria-hidden": true,
-                size: u.EFr.SIZE_40
+                size: d.EFr.SIZE_40
               })
             }
           }
           return null
         }(), (0, r.jsxs)("div", {
-          className: I.timeWrap,
+          className: S.timeWrap,
           children: [(0, r.jsx)("div", {
-            className: I.title,
+            className: S.title,
             children: function() {
               var e;
               let t, {
                 user: n,
                 target: i,
-                options: s
+                options: a
               } = l;
-              t = (0, _.lM)(i) ? i.name : i.toString();
-              let a = C.N5(l);
-              return null != a ? (0, r.jsx)("div", {
-                className: I.overflowEllipsis,
-                children: E.intl.format(a, {
+              t = (0, v.lM)(i) ? i.name : i.toString();
+              let s = y.N5(l);
+              return null != s ? (0, r.jsx)("div", {
+                className: S.overflowEllipsis,
+                children: I.intl.format(s, {
                   user: n,
                   target: t,
                   userHook: (e, t) => {
@@ -197,38 +197,38 @@ let w = Chunk473749.forwardRef((e, t) => {
                     }, t);
                     if (null != l.options.integration_type) {
                       var n;
-                      let e = d.Z.get(l.options.integration_type);
-                      return null != (n = null == e ? true : e.name) ? n : E.intl.string(E.t["n+olu7"])
+                      let e = u.Z.get(l.options.integration_type);
+                      return null != (n = null == e ? true : e.name) ? n : I.intl.string(I.t["n+olu7"])
                     }
-                    return E.intl.string(E.t["30mdIx"])
+                    return I.intl.string(I.t["30mdIx"])
                   },
-                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === E.KFR.USER && l.target instanceof p.Z ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {
                     onContextMenu: A,
                     children: e
                   }, t),
-                  count: null != (e = s.count) ? e : "",
-                  channel: null == s.channel || "string" == typeof s.channel ? s.channel : (0, m.F6)(s.channel, b.default, x.Z, true),
+                  count: null != (e = a.count) ? e : "",
+                  channel: null == a.channel || "string" == typeof a.channel ? a.channel : (0, f.F6)(a.channel, x.default, h.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: Z,
                     children: e
                   }, t),
-                  subtarget: s.subtarget
+                  subtarget: a.subtarget
                 })
               }) : null
             }()
           }), n]
         }), M ? (0, r.jsx)(j.Z, {
-          className: I.expand,
-          foreground: I.expandForeground,
-          expanded: f,
+          className: S.expand,
+          foreground: S.expandForeground,
+          expanded: b,
           "aria-hidden": true
         }) : null]
-      })), f ? (0, r.jsx)("div", {
-        className: I.divider
-      }) : null, f && null != w ? (0, r.jsx)(y.tP, {
+      })), b ? (0, r.jsx)("div", {
+        className: S.divider
+      }) : null, b && null != w ? (0, r.jsx)(N.tP, {
         log: l,
         guild: w,
         onContentClick: R

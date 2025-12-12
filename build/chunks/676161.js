@@ -14,9 +14,9 @@ function s(e) {
     context: t,
     commands: n,
     limit: s = n.length
-  } = e, l = (0, a.D)(t), c = (0, i.R)(l), u = r.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
+  } = e, l = (0, o.D)(t), c = (0, i.R)(l), u = r.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
   return r.useMemo(() => c.map(e => u[e]).filter(e => null != e).sort((e, t) => {
-    let n = o.ZP.getScoreWithoutLoadingLatest(l, e);
-    return o.ZP.getScoreWithoutLoadingLatest(l, t) - n
+    let n = a.ZP.getScoreWithoutLoadingLatest(l, e);
+    return a.ZP.getScoreWithoutLoadingLatest(l, t) - n
   }).slice(0, s), [c, u, l, s])
 }

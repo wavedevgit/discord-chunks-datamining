@@ -3,7 +3,7 @@
 "use strict";
 var Chunk571078 = require("./571078.js"),
   Chunk744569 = require("./744569.js"),
-  o = Chunk571078("keys");
+  a = Chunk571078("keys");
 module.exports = function(e) {
-  return o[e] || (o[e] = i(e))
+  return a[e] || (a[e] = i(e))
 }

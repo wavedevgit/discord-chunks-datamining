@@ -7,22 +7,22 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk896810 = require("./896810.js");
+  Chunk434762 = require("./434762.js");
 let d = function(e) {
   let {
     className: t,
     color: n = "text-strong",
     textOpacity: i = .9
-  } = e, d = (0, l.Fg)(), f = (0, a.wj)(d) ? .2 : .08;
+  } = e, d = (0, l.Fg)(), f = (0, o.wj)(d) ? .2 : .08;
   return (0, r.jsxs)(s.Text, {
     variant: "text-xxs/medium",
     color: n,
-    className: o()(u.promotedTag, t),
+    className: a()(u.promotedTag, t),
     children: [(0, r.jsx)("span", {
       className: u.promotedTagBackground,
       style: {

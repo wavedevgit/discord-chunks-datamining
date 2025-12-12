@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk385499 = require("./385499.jsx"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk246946 = require("./246946.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk739406 = require("./739406.js");
+  Chunk955743 = require("./955743.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,8 +46,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -55,8 +55,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -68,7 +68,7 @@ let v = e => {
       primary: t,
       secondary: n,
       botType: i,
-      botVerified: a,
+      botVerified: o,
       discriminatorClass: u,
       className: f,
       usernameClass: p,
@@ -80,7 +80,7 @@ let v = e => {
       location: "DiscordTag"
     });
     return (0, r.jsxs)("div", {
-      className: o()(h.info, {
+      className: a()(h.info, {
         [h.withDisplayNameStyles]: y && null != E
       }, f),
       children: [(0, r.jsx)(s.u, {
@@ -88,7 +88,7 @@ let v = e => {
         shouldShow: g,
         "aria-label": !!g && true,
         children: (0, r.jsx)("span", {
-          className: o()(h.__invalid_username, p),
+          className: a()(h.__invalid_username, p),
           children: null != E ? (0, r.jsx)(d.Z, {
             userName: t,
             displayNameStyles: E,
@@ -96,12 +96,12 @@ let v = e => {
           }) : t
         })
       }), null != n ? (0, r.jsx)("span", {
-        className: o()(h.infoSpacing, u),
+        className: a()(h.infoSpacing, u),
         children: n
       }) : true, null != i && (0, r.jsx)(l.Z, {
         type: i,
-        className: o()(h.infoSpacing, _),
-        verified: a
+        className: a()(h.infoSpacing, _),
+        verified: o
       })]
     })
   },
@@ -110,14 +110,14 @@ let v = e => {
       user: t,
       nick: n,
       forceUsername: i,
-      showAccountIdentifier: o,
+      showAccountIdentifier: a,
       overrideDiscriminator: s,
       forcePomelo: l,
       hideBotTag: c = false,
       hideDiscriminator: d = false,
       displayNameStylesType: m = u.F.PLAIN
     } = e, h = b(e, ["user", "nick", "forceUsername", "showAccountIdentifier", "overrideDiscriminator", "forcePomelo", "hideBotTag", "hideDiscriminator", "displayNameStylesType"]);
-    let g = (0, a.e7)([p.Z], () => p.Z.hidePersonalInformation),
+    let g = (0, o.e7)([p.Z], () => p.Z.hidePersonalInformation),
       y = g || d || t.isNonUserBot(),
       S = t.toString(),
       I = c ? null : O(t),
@@ -129,7 +129,7 @@ let v = e => {
       let e = A === S && N && i ? _.ZP.getUserTag(t, {
           forcePomelo: l
         }) : A,
-        n = o && e !== "@".concat(S) ? _.ZP.getUserTag(t) : true;
+        n = a && e !== "@".concat(S) ? _.ZP.getUserTag(t) : true;
       return (0, r.jsx)(v, E({
         primary: e,
         secondary: n,

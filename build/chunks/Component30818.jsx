@@ -1,18 +1,18 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 30818, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  z: () => s
+  z: () => a
 });
 var Chunk54381 = require("./54381.js"),
   Chunk640175 = require("./640175.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e) {
+function a(e) {
   let {
     guildId: t,
     defaultSettings: n,
-    canManageGuild: s
+    canManageGuild: a
   } = e;
   return (0, r.jsx)(i.z, {
     label: l.intl.string(l.t["23TVhl"]),
@@ -20,6 +20,6 @@ function s(e) {
     helperText: l.intl.string(l.t.xdY0pC),
     guildId: t,
     defaultSettings: n,
-    canManageGuild: s
+    canManageGuild: a
   })
 }

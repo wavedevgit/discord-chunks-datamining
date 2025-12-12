@@ -14,10 +14,10 @@ function s(e, t) {
     collection: n,
     onLoadMore: s,
     scrollOffset: l = 1
-  } = e, c = (0, a.useRef)(null), u = (0, i.i)(e => {
+  } = e, c = (0, o.useRef)(null), u = (0, i.i)(e => {
     for (let t of e) t.isIntersecting && s && s()
   });
-  (0, o.b)(() => (t.current && (c.current = new IntersectionObserver(u, {
+  (0, a.b)(() => (t.current && (c.current = new IntersectionObserver(u, {
     root: (0, r.r)(null == t ? true : t.current),
     rootMargin: `0px ${100*l}% ${100*l}% ${100*l}%`
   }), c.current.observe(t.current)), () => {

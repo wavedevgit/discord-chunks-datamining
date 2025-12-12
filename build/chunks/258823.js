@@ -6,11 +6,11 @@ require.d(exports, {
 });
 var Chunk610388 = require("./610388.js");
 let i = {
-  read: o
+  read: a
 };
 
-function o(e, t) {
-  let n = a(e, t),
+function a(e, t) {
+  let n = o(e, t),
     r = u(e, t, n);
   return {
     "Bits Per Sample": s(e, t, n),
@@ -21,61 +21,61 @@ function o(e, t) {
   }
 }
 
-function a(e, t) {
+function o(e, t) {
   return r.Z.getShortAt(e, t)
 }
 
 function s(e, t, n) {
   let i = 2;
   if (3 > n) return;
-  let o = r.Z.getByteAt(e, t + i);
+  let a = r.Z.getByteAt(e, t + i);
   return {
-    value: o,
-    description: "" + o
+    value: a,
+    description: "" + a
   }
 }
 
 function l(e, t, n) {
   let i = 3;
   if (5 > n) return;
-  let o = r.Z.getShortAt(e, t + i);
+  let a = r.Z.getShortAt(e, t + i);
   return {
-    value: o,
-    description: `${o}px`
+    value: a,
+    description: `${a}px`
   }
 }
 
 function c(e, t, n) {
   let i = 5;
   if (7 > n) return;
-  let o = r.Z.getShortAt(e, t + i);
+  let a = r.Z.getShortAt(e, t + i);
   return {
-    value: o,
-    description: `${o}px`
+    value: a,
+    description: `${a}px`
   }
 }
 
 function u(e, t, n) {
   let i = 7;
   if (8 > n) return;
-  let o = r.Z.getByteAt(e, t + i);
+  let a = r.Z.getByteAt(e, t + i);
   return {
-    value: o,
-    description: "" + o
+    value: a,
+    description: "" + a
   }
 }
 
 function d(e, t, n, i) {
-  let o = 8;
+  let a = 8;
   if (8 + 3 * n > i) return;
-  let a = [];
+  let o = [];
   for (let i = 0; i < n; i++) {
-    let n = t + o + 3 * i;
-    a.push([r.Z.getByteAt(e, n), r.Z.getByteAt(e, n + 1), r.Z.getByteAt(e, n + 2)])
+    let n = t + a + 3 * i;
+    o.push([r.Z.getByteAt(e, n), r.Z.getByteAt(e, n + 1), r.Z.getByteAt(e, n + 2)])
   }
   return {
-    value: a,
-    description: a.length > 1 ? f(a) + p(a) : ""
+    value: o,
+    description: o.length > 1 ? f(o) + p(o) : ""
   }
 }
 

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk2052 = require("./2052.js"),
@@ -22,12 +22,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk349085 = require("./349085.js");
+  Chunk708122 = require("./708122.js");
 let v = e => {
   let {
     className: t,
     guildId: n,
-    channel: o,
+    channel: a,
     shouldTrackUpsellViewed: v,
     setTrackedUpsellViewed: S
   } = e, {
@@ -41,11 +41,11 @@ let v = e => {
       A && N && v && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
         location: I,
         guild_id: null == C ? true : C.id,
-        channel_id: null == o ? true : o.id,
+        channel_id: null == a ? true : a.id,
         type: "Expression Picker Inline Sticker Upsell",
         location_stack: T
       }), S(true))
-    }, [N, C, o, I, v, S, T, A]), null == C || !A) return null;
+    }, [N, C, a, I, v, S, T, A]), null == C || !A) return null;
   if (N) {
     let e = () => {
       (0, p.Z)({
@@ -56,7 +56,7 @@ let v = e => {
       })
     };
     return (0, r.jsxs)("div", {
-      className: a()(O.upsell, t),
+      className: o()(O.upsell, t),
       children: [(0, r.jsx)(l.$zw, {
         size: "md",
         color: "currentColor",
@@ -79,7 +79,7 @@ let v = e => {
       (0, f._Q)(), _.Z.open(n, E.pNK.STICKERS, I)
     };
     return (0, r.jsxs)("div", {
-      className: a()(O.upsell, t),
+      className: o()(O.upsell, t),
       children: [(0, r.jsx)(l.SlE, {
         size: "custom",
         color: "currentColor",

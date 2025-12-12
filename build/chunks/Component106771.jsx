@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk570949 = require("./570949.jsx"),
   Chunk753972 = require("./753972.jsx"),
   Chunk532309 = require("./532309.js"),
-  Chunk934347 = require("./934347.js"),
+  Chunk878246 = require("./878246.js"),
   Chunk413097 = require("./413097.js");
 
 function m(e, t, n) {
@@ -50,7 +50,7 @@ function g(e) {
   } = e, y = i.useCallback(e => {
     if ((0, l.BQ)(m)) {
       let t = m instanceof s.ZP ? m : s.ZP.createFromServer(m);
-      (0, a.vq)(e, e => (0, r.jsx)(u.Z, h({
+      (0, o.vq)(e, e => (0, r.jsx)(u.Z, h({
         application: t
       }, e)))
     }
@@ -72,14 +72,14 @@ function g(e) {
     query: E,
     searchResultsPosition: b
   });
-  return (0, r.jsx)(o.P3F, {
+  return (0, r.jsx)(a.P3F, {
     className: p.clickable,
     innerRef: e => {
       T.current = e
     },
     onClick: g,
     onContextMenu: y,
-    children: (0, r.jsxs)(o.Rny, {
+    children: (0, r.jsxs)(a.Rny, {
       className: p.focusBlock,
       children: [(0, r.jsx)(d.Z, {
         src: O,
@@ -88,18 +88,18 @@ function g(e) {
         rendersPlaceholder: true
       }), (0, r.jsxs)("div", {
         className: p.cmdDetails,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-strong",
           lineClamp: 1,
           children: null != (t = null == n ? true : n.displayName) ? t : v
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
           lineClamp: 1,
           children: I
         })]
-      }), null != n ? (0, r.jsx)(o.Text, {
+      }), null != n ? (0, r.jsx)(a.Text, {
         className: p.cmdAppName,
         variant: "text-sm/normal",
         color: "text-subtle",

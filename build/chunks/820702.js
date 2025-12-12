@@ -12,38 +12,38 @@
   }
 
   function i(e, t, n, i) {
-    var o = e + " ";
+    var a = e + " ";
     switch (n) {
       case "s":
         return t || i ? "p\xe1r sek\xfand" : "p\xe1r sekundami";
       case "ss":
-        if (t || i) return o + (r(e) ? "sekundy" : "sek\xfand");
-        return o + "sekundami";
+        if (t || i) return a + (r(e) ? "sekundy" : "sek\xfand");
+        return a + "sekundami";
       case "m":
         return t ? "min\xfata" : i ? "min\xfatu" : "min\xfatou";
       case "mm":
-        if (t || i) return o + (r(e) ? "min\xfaty" : "min\xfat");
-        return o + "min\xfatami";
+        if (t || i) return a + (r(e) ? "min\xfaty" : "min\xfat");
+        return a + "min\xfatami";
       case "h":
         return t ? "hodina" : i ? "hodinu" : "hodinou";
       case "hh":
-        if (t || i) return o + (r(e) ? "hodiny" : "hod\xedn");
-        return o + "hodinami";
+        if (t || i) return a + (r(e) ? "hodiny" : "hod\xedn");
+        return a + "hodinami";
       case "d":
         return t || i ? "deň" : "dňom";
       case "dd":
-        if (t || i) return o + (r(e) ? "dni" : "dn\xed");
-        return o + "dňami";
+        if (t || i) return a + (r(e) ? "dni" : "dn\xed");
+        return a + "dňami";
       case "M":
         return t || i ? "mesiac" : "mesiacom";
       case "MM":
-        if (t || i) return o + (r(e) ? "mesiace" : "mesiacov");
-        return o + "mesiacmi";
+        if (t || i) return a + (r(e) ? "mesiace" : "mesiacov");
+        return a + "mesiacmi";
       case "y":
         return t || i ? "rok" : "rokom";
       case "yy":
-        if (t || i) return o + (r(e) ? "roky" : "rokov");
-        return o + "rokmi"
+        if (t || i) return a + (r(e) ? "roky" : "rokov");
+        return a + "rokmi"
     }
   }
   return e.defineLocale("sk", {

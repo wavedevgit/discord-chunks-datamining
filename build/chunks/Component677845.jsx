@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 677845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => _
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,48 +25,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk251564 = require("./251564.js"),
   Chunk695492 = require("./695492.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk312439 = require("./312439.js");
+  Chunk106076 = require("./106076.js");
 
-function S(e) {
+function _(e) {
   let {
     participants: t,
     onClick: n,
-    onDoubleClick: S,
+    onDoubleClick: _,
     onContextMenu: P,
     channel: I,
     className: Z,
     inCall: T,
     totalNumberOfParticipants: N,
     popoutType: A
-  } = e, w = (0, m.bp)() === E.IlC.POPOUT, M = (0, o.e7)([C.Z], () => C.Z.getGuild(I.guild_id), [I.guild_id]), {
+  } = e, w = (0, m.bp)() === j.IlC.POPOUT, M = (0, o.e7)([C.Z], () => C.Z.getGuild(I.guild_id), [I.guild_id]), {
     dismissedActivityEntryPointTileChannel: R
-  } = (0, O.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
+  } = (0, x.d)(), L = (0, o.e7)([p.Z], () => p.Z.getUserParticipantCount(I.id), [I]), D = (0, b.bt)(I.id, t), k = r.useCallback(() => {
     (0, a.j)(() => {
-      O.d.setState({
+      x.d.setState({
         dismissedActivityEntryPointTileChannel: I.id
       })
     })
   }, [I.id]);
   r.useEffect(() => {
     null != R && I.id !== R && (0, a.j)(() => {
-      O.d.setState({
+      x.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
   }, [I.id, R]);
-  let U = (0, o.e7)([y.Z], () => I.isPrivate() || (0, f.b)(y.Z, M, I), [M, I]),
+  let U = (0, o.e7)([y.Z], () => I.isPrivate() || (0, h.b)(y.Z, M, I), [M, I]),
     V = (null == M ? true : M.afkChannelId) === I.id,
     F = I.userLimit <= 0 || I.userLimit > 1,
     B = (0, o.e7)([c.ZP], () => c.ZP.getEmbeddedActivitiesForChannel(I.id).length <= 0),
-    H = (0, h.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    H = (0, f.Nj)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, u.KF)(I.id) !== u.jy.CAN_LAUNCH,
     z = null != R && R === I.id,
-    W = D.map(e => t => (0, i.jsx)(_.ZP, {
+    W = D.map(e => t => (0, i.jsx)(O.ZP, {
       participant: e,
       channel: I,
-      className: j.tile,
+      className: S.tile,
       onClick: n,
-      onDoubleClick: S,
+      onDoubleClick: _,
       onContextMenu: P,
       inCall: T,
       width: t,
@@ -90,7 +90,7 @@ function S(e) {
     inPopout: w,
     handleClose: k,
     userParticipantCount: L
-  })) : W.push(e => (0, i.jsx)(x.Z, {
+  })) : W.push(e => (0, i.jsx)(E.Z, {
     width: e,
     channel: I,
     guild: M,

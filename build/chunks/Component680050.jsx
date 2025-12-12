@@ -16,7 +16,7 @@ let m = e => {
   var t, n;
   let {
     parents: m
-  } = e, p = (0, o.PO)("share_with_parent_element"), [g, _] = l.useState(false), x = l.useCallback(() => {
+  } = e, b = (0, o.PO)("share_with_parent_element"), [p, g] = l.useState(false), f = l.useCallback(() => {
     (0, s.ty)().then(() => {
       var e, t;
       (0, a.showToast)((0, i.Y)(u.intl.formatToPlainString(u.t.wr4IT5, {
@@ -24,23 +24,23 @@ let m = e => {
         parent1: m[0].username,
         parent2: null == (e = m[1]) ? true : e.username,
         parent3: null == (t = m[2]) ? true : t.username
-      }), a.ToastType.SUCCESS)), _(true)
+      }), a.ToastType.SUCCESS)), g(true)
     }).catch(() => {
-      c.Z.showFailedToast()
+      d.Z.showFailedToast()
     })
   }, [m]);
-  if (0 === m.length || !p) return null;
-  let b = u.intl.formatToPlainString(u.t.HqyWeO, {
+  if (0 === m.length || !b) return null;
+  let x = u.intl.formatToPlainString(u.t.HqyWeO, {
     count: m.length,
     parent1: m[0].username,
     parent2: null == (t = m[1]) ? true : t.username,
     parent3: null == (n = m[2]) ? true : n.username
   });
-  return (0, r.jsx)(d.JZ, {
-    title: b,
+  return (0, r.jsx)(c.JZ, {
+    title: x,
     description: u.intl.string(u.t["5l/hlt"]),
-    buttonText: g ? u.intl.string(u.t.ntuuk7) : u.intl.string(u.t["sYdX/H"]),
-    buttonDisabled: g,
-    onButtonPress: x
+    buttonText: p ? u.intl.string(u.t.ntuuk7) : u.intl.string(u.t["sYdX/H"]),
+    buttonDisabled: p,
+    onButtonPress: f
   })
 }

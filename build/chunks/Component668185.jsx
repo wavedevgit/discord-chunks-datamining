@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk422559 = require("./422559.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk979995 = require("./979995.js");
+  Chunk463442 = require("./463442.js");
 
 function d(e) {
   let {
@@ -20,14 +20,14 @@ function d(e) {
     deniedPermissions: d,
     onPermissionsChange: f,
     guild: p
-  } = e, _ = i.useMemo(() => o.U_(p.permissions), [p.permissions]);
+  } = e, _ = i.useMemo(() => a.U_(p.permissions), [p.permissions]);
   i.useEffect(() => {
-    f(false, o.hX(n, _))
+    f(false, a.hX(n, _))
   }, [_, f, n]);
-  let m = l.VY.filter(e => o.e$(n, e)),
-    h = m.filter(e => !o.e$(_, e)).map(e => {
+  let m = l.VY.filter(e => a.e$(n, e)),
+    h = m.filter(e => !a.e$(_, e)).map(e => {
       let t = (0, l.wt)(e),
-        n = !o.e$(d, e);
+        n = !a.e$(d, e);
       return (0, r.jsx)("li", {
         className: u.permission,
         children: (0, r.jsx)(s.Checkbox, {
@@ -37,7 +37,7 @@ function d(e) {
         })
       }, String(e))
     }),
-    g = m.filter(e => o.e$(_, e)).map(e => {
+    g = m.filter(e => a.e$(_, e)).map(e => {
       let t = (0, l.wt)(e);
       return (0, r.jsxs)("li", {
         className: u.permission,
@@ -48,7 +48,7 @@ function d(e) {
             color: "currentColor",
             className: u.icon
           })
-        }), (0, r.jsx)(a.x, {
+        }), (0, r.jsx)(o.x, {
           variant: "text-md/normal",
           children: t
         })]
@@ -57,7 +57,7 @@ function d(e) {
   return (0, r.jsxs)("div", {
     className: u.botPermissions,
     children: [h.length > 0 ? (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(a.x, {
+      children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "text-default",
         children: c.intl.format(c.t.sOaT2j, {
@@ -69,7 +69,7 @@ function d(e) {
         children: h
       })]
     }) : null, g.length > 0 ? (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(a.x, {
+      children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "text-default",
         children: c.intl.format(c.t.fsOkF4, {

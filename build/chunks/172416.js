@@ -47,7 +47,7 @@ function u(e) {
     location: t
   } = e, n = c.useConfig({
     location: t
-  }).enabled, i = (0, r.e7)([o.default], () => o.default.getCurrentUser()), s = (0, a.I5)(i);
+  }).enabled, i = (0, r.e7)([a.default], () => a.default.getCurrentUser()), s = (0, o.I5)(i);
   return n && s
 }
 
@@ -61,15 +61,15 @@ function d(e) {
   }), i = u({
     location: t,
     autoTrackExposure: n
-  }), o = l.useConfig({
+  }), a = l.useConfig({
     location: t
   }).enabled;
-  return !r && o || i
+  return !r && a || i
 }
 
 function f(e) {
-  let t = o.default.getCurrentUser(),
-    n = (0, a.I5)(t);
+  let t = a.default.getCurrentUser(),
+    n = (0, o.I5)(t);
   return c.getConfig({
     location: e
   }).enabled && n

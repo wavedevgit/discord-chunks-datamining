@@ -18,7 +18,7 @@ var Chunk473749 = require("./473749.js"),
 let u = "no primary app command for application",
   d = [Chunk911969.yU.PRIMARY_ENTRY_POINT];
 async function f(e, t) {
-  let n, r = a.Z.getChannel(e);
+  let n, r = o.Z.getChannel(e);
   if (null != r && null == (n = p({
       channel: r,
       type: "channel"
@@ -34,7 +34,7 @@ async function f(e, t) {
 
 function p(e, t) {
   return l.ZP.query(e, {
-    commandTypes: [o.yU.PRIMARY_ENTRY_POINT]
+    commandTypes: [a.yU.PRIMARY_ENTRY_POINT]
   }, {
     placeholderCount: 1,
     scoreMethod: c.p.COMMAND_ONLY,
@@ -48,13 +48,13 @@ function _(e, t) {
   let {
     commands: n,
     loading: i
-  } = m(e, t), o = n[0], a = null != o;
+  } = m(e, t), a = n[0], o = null != a;
   return r.useEffect(() => {
-    a || i || (0, s.j)({
+    o || i || (0, s.j)({
       type: "application",
       applicationId: t
     })
-  }, [t, a, i]), o
+  }, [t, o, i]), a
 }
 
 function m(e, t) {
@@ -81,6 +81,6 @@ function h(e) {
 function g(e) {
   if (null == e) returnfalse;
   let t = null != e.integration_types && e.integration_types.includes(i.Y.USER_INSTALL),
-    n = null != e.contexts && e.contexts.includes(o.D.BOT_DM);
+    n = null != e.contexts && e.contexts.includes(a.D.BOT_DM);
   return t && n
 }

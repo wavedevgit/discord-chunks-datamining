@@ -1,8 +1,8 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => x,
-  NK: () => C
+  I: () => E,
+  NK: () => x
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,12 +13,12 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk695346 = require("./695346.js"),
   Chunk885110 = require("./885110.js"),
   Chunk223730 = require("./223730.jsx"),
-  Chunk498778 = require("./498778.js"),
+  Chunk418924 = require("./418924.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk87587 = require("./87587.js"),
-  Chunk354810 = require("./354810.js");
+  Chunk509780 = require("./509780.js"),
+  Chunk273701 = require("./273701.js");
 
-function b(e) {
+function m(e) {
   let {
     closePopout: t
   } = e;
@@ -39,11 +39,11 @@ function b(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     showCurrentGame: t,
     shouldShowStatus: n = false
-  } = e, r = (0, o.e7)([d.Z], () => d.Z.getStatus());
+  } = e, r = (0, a.e7)([d.Z], () => d.Z.getStatus());
   return (0, i.jsxs)("div", {
     className: g.toggleContainer,
     children: [(0, i.jsxs)("div", {
@@ -74,7 +74,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     children: t
   } = e, n = (0, l.useRef)(null);
@@ -88,12 +88,12 @@ function y(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(y, {
-    children: [(0, i.jsx)(_, {
+  return (0, i.jsxs)(O, {
+    children: [(0, i.jsx)(y, {
       showCurrentGame: n
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
@@ -107,11 +107,11 @@ function O(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     closePopout: t
   } = e;
-  return (0, i.jsxs)(y, {
+  return (0, i.jsxs)(O, {
     children: [(0, i.jsxs)(s.Kqy, {
       align: "start",
       gap: 0,
@@ -138,18 +138,18 @@ function v(e) {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: p.intl.string(h.default.Yl0mh4)
-    }), (0, i.jsx)(b, {
+    }), (0, i.jsx)(m, {
       closePopout: t
     })]
   })
 }
 
-function j(e) {
+function C(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
-  return (0, i.jsxs)(y, {
-    children: [(0, i.jsx)(_, {
+  return (0, i.jsxs)(O, {
+    children: [(0, i.jsx)(y, {
       showCurrentGame: n,
       shouldShowStatus: true
     }), (0, i.jsx)(s.Text, {
@@ -163,16 +163,16 @@ function j(e) {
     })]
   })
 }
-var C = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var x = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
-function x(e) {
+function E(e) {
   let {
     showPopout: t,
     popoutState: n,
     handleClose: r,
-    popoutTargetRef: o,
+    popoutTargetRef: a,
     children: d
-  } = e, [g, b] = (0, l.useState)(n), _ = (0, l.useRef)(null), y = function(e) {
+  } = e, [g, m] = (0, l.useState)(n), y = (0, l.useRef)(null), O = function(e) {
     if (null === e) return null;
     switch (e) {
       case 0:
@@ -214,34 +214,34 @@ function x(e) {
         };
       case 3:
         return {
-          type: "popout", children: O
+          type: "popout", children: v
         };
       case 4:
         return {
-          type: "popout", children: v
+          type: "popout", children: j
         };
       case 5:
         return {
-          type: "popout", children: j
+          type: "popout", children: C
         };
       default:
         return null
     }
-  }(g), C = (0, l.useRef)(t);
+  }(g), x = (0, l.useRef)(t);
   if ((0, l.useEffect)(() => {
-      t && !C.current && b(n), t !== C.current && (C.current = t)
-    }, [n, t]), null == y || !t) return d;
-  if ("popover" === y.type) {
-    var x, E;
+      t && !x.current && m(n), t !== x.current && (x.current = t)
+    }, [n, t]), null == O || !t) return d;
+  if ("popover" === O.type) {
+    var E, S;
     let {
       action: e,
       title: t,
       body: n,
       textLink: l
-    } = y;
+    } = O;
     return (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(a.J2, {
-        targetElementRef: o,
+      children: [(0, i.jsx)(o.J2, {
+        targetElementRef: a,
         shouldShow: true,
         position: "top",
         align: "center",
@@ -252,9 +252,9 @@ function x(e) {
         gradientColor: "purple",
         graphic: {
           type: "image",
-          src: m.Z
+          src: b.Z
         },
-        actions: [(x = function(e) {
+        actions: [(E = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -271,29 +271,29 @@ function x(e) {
             })
           }
           return e
-        }({}, e), E = E = {
+        }({}, e), S = S = {
           onClick: t => {
             var n;
             null == (n = e.onClick) || n.call(e, t), r()
           }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(E, Object.getOwnPropertyDescriptors(S)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(E)).forEach(function(e) {
-          Object.defineProperty(x, e, Object.getOwnPropertyDescriptor(E, e))
-        }), x)]
+        })(Object(S)).forEach(function(e) {
+          Object.defineProperty(E, e, Object.getOwnPropertyDescriptor(S, e))
+        }), E)]
       }), d]
     })
   }
   let {
-    children: S
-  } = y;
+    children: I
+  } = O;
   return (0, i.jsx)(s.yRy, {
-    targetElementRef: _,
+    targetElementRef: y,
     shouldShow: true,
     spacing: 10,
     position: "top",
@@ -302,13 +302,13 @@ function x(e) {
       let {
         closePopout: t
       } = e;
-      return (0, i.jsx)(S, {
+      return (0, i.jsx)(I, {
         closePopout: t
       })
     },
     onRequestClose: r,
     children: () => (0, i.jsx)(s.P3F, {
-      innerRef: _,
+      innerRef: y,
       onClick: r,
       children: d
     })

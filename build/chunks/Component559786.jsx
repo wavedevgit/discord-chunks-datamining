@@ -18,42 +18,42 @@ function d(e) {
     transitionTo: t,
     token: n,
     width: d
-  } = e, [h, g] = i.useState(u.n.START), [m, p] = i.useState(null), [f, _] = i.useState(""), x = {
+  } = e, [h, f] = i.useState(u.n.START), [g, m] = i.useState(null), [p, x] = i.useState(""), _ = {
     impression_group: s.ImpressionGroups.ACCOUNT_REVERT_FLOW
   };
   return (0, r.jsx)("div", {
     style: {
       margin: "8px"
     },
-    children: (0, r.jsxs)(l.MyZ, {
+    children: (0, r.jsxs)(a.MyZ, {
       activeSlide: h,
       width: d,
-      onSlideReady: p,
-      children: [(0, r.jsx)(l.Mi4, {
+      onSlideReady: m,
+      children: [(0, r.jsx)(a.Mi4, {
         id: u.n.START,
-        impressionProperties: x,
+        impressionProperties: _,
         impressionName: s.ImpressionNames.ACCOUNT_REVERT_EXPLAINER,
         children: (0, r.jsx)(o.Z, {
-          setSlide: g,
+          setSlide: f,
           transitionTo: t
         })
-      }), (0, r.jsx)(l.Mi4, {
+      }), (0, r.jsx)(a.Mi4, {
         id: u.n.PASSWORD,
-        impressionProperties: x,
+        impressionProperties: _,
         impressionName: s.ImpressionNames.ACCOUNT_REVERT_CHANGE_PASSWORD,
-        children: (0, r.jsx)(a.Z, {
-          setOriginalEmail: _,
-          setSlide: g,
+        children: (0, r.jsx)(l.Z, {
+          setOriginalEmail: x,
+          setSlide: f,
           transitionTo: t,
-          ready: m === u.n.PASSWORD,
+          ready: g === u.n.PASSWORD,
           token: n
         })
-      }), (0, r.jsx)(l.Mi4, {
+      }), (0, r.jsx)(a.Mi4, {
         id: u.n.SUCCESS,
-        impressionProperties: x,
+        impressionProperties: _,
         impressionName: s.ImpressionNames.ACCOUNT_REVERT_SUCCESS,
         children: (0, r.jsx)(c.Z, {
-          email: f
+          email: p
         })
       })]
     })

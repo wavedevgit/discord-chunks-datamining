@@ -19,13 +19,13 @@ function s(e) {
     compact: u
   } = e, {
     nick: d
-  } = (0, i.ZP)(t), f = l(), p = c(), _ = a.intl.format(a.t.MMN2Jq, {
+  } = (0, i.ZP)(t), f = l(), p = c(), _ = o.intl.format(o.t.MMN2Jq, {
     username: d,
     usernameHook: f,
     otherUsername: s,
     otherUsernameHook: p
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     icon: n(570111),
     timestamp: t.timestamp,
     compact: u,

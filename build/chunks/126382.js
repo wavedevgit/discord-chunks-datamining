@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   $: () => i,
-  D: () => a
+  D: () => o
 });
 var Chunk427164 = require("./427164.js"),
   i = function(e) {
     return e.Control = "control", e.NoSoftwareDecode = "no_software_decode", e.Disabled = "disabled", e
   }({});
-let o = (0, Chunk427164.le)({
+let a = (0, Chunk427164.le)({
   name: "2025-11-h265-no-software",
   kind: "user",
   defaultConfig: {
@@ -25,11 +25,11 @@ let o = (0, Chunk427164.le)({
   }
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e;
-  return o.getConfig({
+  return a.getConfig({
     location: t
   })
 }

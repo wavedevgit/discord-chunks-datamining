@@ -1,7 +1,7 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 319738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KZ: () => x,
+  KZ: () => f,
   TA: () => p,
   UK: () => h
 }), require("./415506.js");
@@ -55,7 +55,7 @@ async function h(e, t) {
   }).catch(() => (l.Z.showFailedToast(m.wQ.GENERIC_ERROR), null))
 }
 
-function x(e) {
+function f(e) {
   r.Z.dispatch({
     type: "GENERATED_POOL_REMOVE_FROM_LIST",
     poolId: e

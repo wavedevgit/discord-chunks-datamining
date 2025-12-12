@@ -2,7 +2,7 @@
 /** chunk id: 47770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js");
 var Chunk836560 = require("./836560.js");
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   on(e, t) {
     this.emitter.on(e, t)
   }

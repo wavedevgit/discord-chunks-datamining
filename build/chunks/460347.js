@@ -15,16 +15,16 @@ var Chunk95015 = require("./95015.js"),
 function c(e, t, n) {
   var i;
   if (n.isFullServerPreview(e)) returntrue;
-  let o = t.getSelfMember(e);
-  if (null == o) returnfalse;
-  let a = t.getSelfMemberJoinedAt(e);
-  return !(null == a || (0, r.yE)(null != (i = o.flags) ? i : 0, l.q.COMPLETED_HOME_ACTIONS)) && Date.now() - a.getTime() < s.Z.Millis.WEEK
+  let a = t.getSelfMember(e);
+  if (null == a) returnfalse;
+  let o = t.getSelfMemberJoinedAt(e);
+  return !(null == o || (0, r.yE)(null != (i = a.flags) ? i : 0, l.q.COMPLETED_HOME_ACTIONS)) && Date.now() - o.getTime() < s.Z.Millis.WEEK
 }
 
 function u(e) {
-  return c(e, a.ZP, o.Z)
+  return c(e, o.ZP, a.Z)
 }
 
 function d(e) {
-  return (0, i.e7)([a.ZP, o.Z], () => c(e, a.ZP, o.Z))
+  return (0, i.e7)([o.ZP, a.Z], () => c(e, o.ZP, a.Z))
 }

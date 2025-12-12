@@ -27,29 +27,29 @@ let l = {
 };
 
 function c(e) {
-  return null != e.dmSpamDetectedAt && i()(e.dmSpamDetectedAt).add(a.lp, "hours") > i()() || null != e.raidDetectedAt && i()(e.raidDetectedAt).add(a.lp, "hours") > i()()
+  return null != e.dmSpamDetectedAt && i()(e.dmSpamDetectedAt).add(o.lp, "hours") > i()() || null != e.raidDetectedAt && i()(e.raidDetectedAt).add(o.lp, "hours") > i()()
 }
 
 function u(e) {
-  return null != e.raidDetectedAt && i()(e.raidDetectedAt).add(a.lp, "hours") > i()()
+  return null != e.raidDetectedAt && i()(e.raidDetectedAt).add(o.lp, "hours") > i()()
 }
 
 function d(e) {
-  return null != e.dmSpamDetectedAt && i()(e.dmSpamDetectedAt).add(a.lp, "hours") > i()()
+  return null != e.dmSpamDetectedAt && i()(e.dmSpamDetectedAt).add(o.lp, "hours") > i()()
 }
 
 function f(e) {
-  return null == e ? true : u(e) ? o.Hl.JOIN_RAID : o.Hl.DM_RAID
+  return null == e ? true : u(e) ? a.Hl.JOIN_RAID : a.Hl.DM_RAID
 }
 
 function p(e, t) {
   let n = [];
-  return e && n.push(o.dj.INVITES_DISABLED), t && n.push(o.dj.DMS_DISABLED), n
+  return e && n.push(a.dj.INVITES_DISABLED), t && n.push(a.dj.DMS_DISABLED), n
 }
 
 function _(e, t) {
   let n = [];
-  return e || n.push(o.dj.INVITES_DISABLED), t || n.push(o.dj.DMS_DISABLED), n
+  return e || n.push(a.dj.INVITES_DISABLED), t || n.push(a.dj.DMS_DISABLED), n
 }
 
 function m(e) {
@@ -69,9 +69,9 @@ function E(e, t) {
   let r = null != (n = e.dmsDisabledUntil) ? n : e.invitesDisabledUntil;
   if (null == r) return "";
   let i = null != e.dmsDisabledUntil,
-    o = null != e.invitesDisabledUntil;
+    a = null != e.invitesDisabledUntil;
   switch (true) {
-    case i && o:
+    case i && a:
       return s.intl.formatToPlainString(s.t.hCZitf, {
         guildName: t,
         time: new Date(r).toLocaleString(s.intl.currentLocale, l)
@@ -81,7 +81,7 @@ function E(e, t) {
         guildName: t,
         time: new Date(r).toLocaleString(s.intl.currentLocale, l)
       });
-    case o:
+    case a:
       return s.intl.formatToPlainString(s.t.M3iSyL, {
         guildName: t,
         time: new Date(r).toLocaleString(s.intl.currentLocale, l)

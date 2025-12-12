@@ -71,13 +71,13 @@ function P(e) {
     status: f.Z.getStatus(e),
     isMobile: f.Z.isMobileOnline(e),
     activities: f.Z.getActivities(e),
-    applicationStream: N.Z.getAnyStreamForUser(e)
+    applicationStream: O.Z.getAnyStreamForUser(e)
   }
 }
 
 function S(e) {
   let t = [];
-  return r()(O.ZP.memberOf(e)).map(y.Z.getGuild).sortBy(e => null != e ? e.name.toLowerCase() : null).forEach(e => {
+  return r()(N.ZP.memberOf(e)).map(y.Z.getGuild).sortBy(e => null != e ? e.name.toLowerCase() : null).forEach(e => {
     null != e && t.push(e)
   }), {
     mutualGuildsLength: t.length,
@@ -87,7 +87,7 @@ function S(e) {
 class D extends Chunk81825.Z {
   get comparator() {
     var e, t, i, n, s;
-    return [this.type, +(this.giftIntentType !== Chunk474936.hX.FRIEND_ANNIVERSARY), null != (s = null != (n = null == (e = this.nickname) ? true : module.toLowerCase()) ? n : null == (i = this.user) || null == (t = require.globalName) ? true : exports.toLowerCase()) ? Chunk392711 : this.usernameLower]
+    return [this.type, null != (s = null != (n = null == (e = this.nickname) ? true : module.toLowerCase()) ? n : null == (i = this.user) || null == (t = require.globalName) ? true : exports.toLowerCase()) ? Chunk392711 : this.usernameLower]
   }
   constructor(e) {
     var t;
@@ -201,18 +201,18 @@ let j = true,
   R = true,
   A = false;
 
-function F() {
+function M() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   j && (module || k !== Chunk981631.pJs.ONLINE && k !== Chunk981631.pJs.ADD_FRIEND) && !L && (j = false, L = true, Chunk194359.Z.fetchRelationships())
 }
 
-function M() {
-  if (j = true, R ? L = false : F(), _ = _.reset(), A) return;
+function x() {
+  if (j = true, R ? L = false : M(), _ = _.reset(), A) return;
   let e = _.getRelationshipCounts();
   k = 0 === module[Chunk981631.OGo.FRIEND] ? 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : Chunk981631.pJs.ONLINE
 }
 
-function x() {
+function F() {
   _ = R ? new C : _.reset()
 }
 
@@ -223,7 +223,7 @@ function T(e) {
 }
 class U extends(n = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk633289.Z, Chunk199902.Z, Chunk353926.Z, Chunk5254.Z, Chunk91896.Z, Chunk271383.ZP, Chunk430824.Z, Chunk441623.ZP, Chunk158776.Z, Chunk699516.Z, Chunk594174.default), this.syncWith([Chunk699516.Z], x), this.syncWith([Chunk91896.Z], x), this.syncWith([Chunk5254.Z], x), this.syncWith([Chunk441623.ZP], x), this.syncWith([Chunk594174.default], T(G)), this.syncWith([Chunk158776.Z, Chunk199902.Z], T(P)), M()
+    this.waitFor(Chunk633289.Z, Chunk199902.Z, Chunk353926.Z, Chunk5254.Z, Chunk91896.Z, Chunk271383.ZP, Chunk430824.Z, Chunk441623.ZP, Chunk158776.Z, Chunk699516.Z, Chunk594174.default), this.syncWith([Chunk699516.Z], F), this.syncWith([Chunk91896.Z], F), this.syncWith([Chunk5254.Z], F), this.syncWith([Chunk441623.ZP], F), this.syncWith([Chunk594174.default], T(G)), this.syncWith([Chunk158776.Z, Chunk199902.Z], T(P)), x()
   }
   getState() {
     return {
@@ -236,16 +236,16 @@ class U extends(n = Chunk442837.ZP.Store) {
 b(U, "displayName", "FriendsStore");
 let J = new U(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
-    M()
+    x()
   },
   FRIENDS_SET_SECTION: function(e) {
-    k = e.section, F()
+    k = e.section, M()
   },
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
-    return R = null != t, x(), !R
+    return R = null != t, F(), !R
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
     L = false

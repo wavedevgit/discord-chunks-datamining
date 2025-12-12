@@ -20,8 +20,8 @@ function l(e) {
   let c = t.emoji;
   if (null == c.id || null == l || !(0, i.zi)(l.type)) returntrue;
   let u = r.ZP.getUsableCustomEmojiById(c.id),
-    d = o.ZP.isInternalEmojiForGuildId(u, l.getGuildId()),
-    f = a.BT({
+    d = a.ZP.isInternalEmojiForGuildId(u, l.getGuildId()),
+    f = o.BT({
       permission: s.Plq.USE_EXTERNAL_EMOJIS,
       user: n,
       context: l

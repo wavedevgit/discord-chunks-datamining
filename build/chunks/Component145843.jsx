@@ -18,7 +18,7 @@ function u(e) {
     analyticsLocation: n
   } = e, {
     analyticsLocations: u
-  } = (0, a.ZP)(n), d = (0, l.Z)({
+  } = (0, o.ZP)(n), d = (0, l.Z)({
     application: t,
     analyticsLocations: u
   });
@@ -32,10 +32,10 @@ function u(e) {
   let f = () => {
     null == d || d()
   };
-  return (0, r.jsx)(o.Button, {
+  return (0, r.jsx)(a.Button, {
     variant: "primary",
     size: "md",
-    icon: o.v3n,
+    icon: a.v3n,
     text: c.intl.string(c.t["jaYS/h"]),
     onClick: f,
     fullWidth: true

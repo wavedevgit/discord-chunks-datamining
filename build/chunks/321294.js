@@ -17,11 +17,11 @@ function i(e) {
   return "Undefined"
 }
 
-function o(e) {
+function a(e) {
   return e[0][0] / e[0][1] + e[1][0] / e[1][1] / 60 + e[2][0] / e[2][1] / 3600
 }
 require.d(exports, {
   SI: () => r,
   V1: () => i,
-  gg: () => o
+  gg: () => a
 })

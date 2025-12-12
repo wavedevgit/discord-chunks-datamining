@@ -1,4 +1,4 @@
-/** Chunk was on 47863 **/
+/** Chunk was on 44183 **/
 /** chunk id: 59468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => d
@@ -18,7 +18,7 @@ async function d(e) {
   } = e, u = s.Z.getVideoDevices(), f = (0, l.Z)(s.Z.getMediaEngine(), d, {
     width: t,
     height: n
-  }), p = (0, o._)(), h = await p, m = await f, _ = m.filter(e => e.id.startsWith(i.vA.SCREEN)).map(e => {
+  }), p = (0, o._)(), h = await p, m = await f, g = m.filter(e => e.id.startsWith(i.vA.SCREEN)).map(e => {
     var t, n;
     let r = e.name;
     return "Entire screen" === r ? r = a.intl.string(a.t.R4wpLN) : /^Screen \d+$/.test(r) && (r = a.intl.formatToPlainString(a.t["y/R7n4"], {
@@ -52,15 +52,15 @@ async function d(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), g = function(e, t) {
+  }), x = function(e, t) {
     let n = {};
     return t.forEach(e => {
       n[e.id] = e
     }), e.forEach(e => {
       n[e.id] = e
     }), Object.values(n)
-  }(m.filter(e => e.id.startsWith(i.vA.WINDOW)), h), x = [];
-  return d.includes(i.vA.CAMERA) && (x = Object.entries(u).filter(e => {
+  }(m.filter(e => e.id.startsWith(i.vA.WINDOW)), h), v = [];
+  return d.includes(i.vA.CAMERA) && (v = Object.entries(u).filter(e => {
     let [t, n] = e;
     return !n.disabled
   }).map((e, t) => {
@@ -71,8 +71,8 @@ async function d(e) {
       url: o
     }
   })), {
-    windowSources: g,
-    screenSources: _,
-    cameraSources: x
+    windowSources: x,
+    screenSources: g,
+    cameraSources: v
   }
 }

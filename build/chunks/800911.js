@@ -12,11 +12,11 @@ function i(e) {
   return e instanceof Array ? [...e] : e instanceof Map ? Array.from(e.keys()) : Object.keys(e)
 }
 
-function o(e) {
+function a(e) {
   let t = i(e).sort((e, t) => t.length - e.length).join("|").replace(/\./g, "\\.");
   return `(?:${t})`
 }
 require.d(exports, {
   Xf: () => r,
-  q3: () => o
+  q3: () => a
 })

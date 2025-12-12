@@ -65,13 +65,13 @@ function m(e) {
   return d("Offer", e)
 }
 m.ItemConditions = g, m.ItemAvailability = h;
-var _ = ((a = _ || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
+var b = ((a = b || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
 
-function b(e) {
+function E(e) {
   return d("QuantitativeValue", e)
 }
-b.UnitCodes = _;
-class E extends(r = Chunk473749.Component) {
+E.UnitCodes = b;
+class _ extends(r = Chunk473749.Component) {
   render() {
     let {
       debug: e,
@@ -85,19 +85,19 @@ class E extends(r = Chunk473749.Component) {
     })
   }
 }
-c(E, "Thing", p), c(E, "Brand", p), c(E, "Person", function(e) {
+c(_, "Thing", p), c(_, "Brand", p), c(_, "Person", function(e) {
   return d("Person", e)
-}), c(E, "Organization", function(e) {
+}), c(_, "Organization", function(e) {
   return d("Organization", e)
-}), c(E, "ItemPage", function(e) {
+}), c(_, "ItemPage", function(e) {
   return d("ItemPage", e)
-}), c(E, "Product", f), c(E, "Offer", m), c(E, "Rating", function(e) {
+}), c(_, "Product", f), c(_, "Offer", m), c(_, "Rating", function(e) {
   return d("Rating", e)
-}), c(E, "AggregateRating", function(e) {
+}), c(_, "AggregateRating", function(e) {
   return d("AggregateRating", e)
-}), c(E, "AggregateOffer", function(e) {
+}), c(_, "AggregateOffer", function(e) {
   return d("AggregateOffer", e)
-}), c(E, "QuantitativeValue", b), c(E, "UnitPriceSpecification", function(e) {
+}), c(_, "QuantitativeValue", E), c(_, "UnitPriceSpecification", function(e) {
   return d("UnitPriceSpecification", e)
 });
-let O = E
+let O = _

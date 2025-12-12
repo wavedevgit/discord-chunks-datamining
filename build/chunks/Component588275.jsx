@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 588275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -58,16 +58,16 @@ function h(e, t) {
 function p(e) {
   let {
     guildNode: t
-  } = e, n = t.id, l = (0, i.e7)([a.Z], () => a.Z.getRequest(n)), p = (0, i.e7)([a.Z], () => a.Z.getJoinRequestGuild(n), [n]), g = (0, i.e7)([c.Z], () => c.Z.isFocused()), m = (0, i.e7)([s.Z], () => s.Z.getGuildId());
+  } = e, n = t.id, l = (0, i.e7)([o.Z], () => o.Z.getRequest(n)), p = (0, i.e7)([o.Z], () => o.Z.getJoinRequestGuild(n), [n]), g = (0, i.e7)([c.Z], () => c.Z.isFocused()), b = (0, i.e7)([s.Z], () => s.Z.getGuildId());
   return null == p ? null : (0, r.jsx)(u.Z, {
     guildNode: t,
     guild: p,
     animatable: g,
     draggable: false,
-    selected: n === m,
+    selected: n === b,
     preloadOnClick: false,
     contextMenu: h,
-    lowerBadge: (null == l ? true : l.applicationStatus) === o.wB.REJECTED ? (0, d.jt)({
+    lowerBadge: (null == l ? true : l.applicationStatus) === a.wB.REJECTED ? (0, d.jt)({
       guildJoinRequestStatus: l.applicationStatus
     }) : true,
     route: f.Z5c.GUILD_MEMBER_VERIFICATION(n)

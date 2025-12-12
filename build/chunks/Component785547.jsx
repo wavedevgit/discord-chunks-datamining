@@ -27,7 +27,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk701560 = require("./701560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk767248 = require("./767248.js");
+  Chunk48208 = require("./48208.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -135,8 +135,8 @@ class M extends(r = Chunk473749.Component) {
       fullWidth: t,
       size: n,
       color: r,
-      customDisabledColor: o,
-      isPlayShiny: a,
+      customDisabledColor: a,
+      isPlayShiny: o,
       onDropdownOpen: s,
       onDropdownClose: l,
       analyticsListSort: c,
@@ -160,8 +160,8 @@ class M extends(r = Chunk473749.Component) {
     let {
       className: n,
       fullWidth: r,
-      size: o,
-      customDisabledColor: a,
+      size: a,
+      customDisabledColor: o,
       tooltipPosition: s
     } = this.props;
     return (0, i.jsxs)("div", {
@@ -169,8 +169,8 @@ class M extends(r = Chunk473749.Component) {
       children: [(0, i.jsxs)(c.zx, {
         className: n,
         fullWidth: r,
-        size: o,
-        color: null != a ? a : A.disabledButtonColor,
+        size: a,
+        color: null != o ? o : A.disabledButtonColor,
         disabled: true,
         children: [this.getText(e), this.renderProgressBar()]
       }), (0, i.jsx)(l.u, {
@@ -196,22 +196,22 @@ class M extends(r = Chunk473749.Component) {
       size: Chunk481060.Exd.Sizes.XSMALL,
       foregroundColor: require.paused ? Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css : Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
       backgroundColor: Chunk692547.Z.unsafe_rawColors.TRANSPARENT.css,
-      className: Chunk767248.progress
+      className: Chunk48208.progress
     })
   }
   renderActionButton(e, t) {
     let {
       className: n,
       fullWidth: r,
-      size: o,
-      color: a,
+      size: a,
+      color: o,
       isCloudSyncing: s
     } = this.props;
     return (0, i.jsxs)(c.zx, {
       className: n,
       fullWidth: r,
-      size: o,
-      color: null != a ? a : c.zx.Colors.GREEN,
+      size: a,
+      color: null != o ? o : c.zx.Colors.GREEN,
       submitting: "uninstalling" === e || s,
       onClick: e => this.handleClick(e, t),
       children: [this.getText(e), this.renderProgressBar()]
@@ -268,11 +268,11 @@ class M extends(r = Chunk473749.Component) {
 function k(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, f.O)(), [r, o] = (0, a.Wu)([E.Z, b.Z], () => [(0, h.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, a.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, a.e7)([m.Z], () => m.Z.hasNoBuild(t.id, t.branchId), [t]);
+  } = e, n = (0, f.O)(), [r, a] = (0, o.Wu)([E.Z, b.Z], () => [(0, h.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([m.Z], () => m.Z.hasNoBuild(t.id, t.branchId), [t]);
   return (0, i.jsx)(M, w(P({}, e), {
     analyticsContext: n,
     actionState: r,
-    dispatchState: o,
+    dispatchState: a,
     isCloudSyncing: s,
     hasNoBuild: l
   }))

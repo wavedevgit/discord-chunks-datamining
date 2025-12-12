@@ -47,8 +47,8 @@ let d = "mp",
         let t = new URL(e, location.protocol + window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT),
           n = e.toLowerCase().endsWith(".gif"),
           r = e.toLowerCase().endsWith(".webp"),
-          o = e.toLowerCase().endsWith(".avif");
-        return n && t.searchParams.set("format", "webp"), (n || r || o) && t.searchParams.set("animated", "true"), t.toString()
+          a = e.toLowerCase().endsWith(".avif");
+        return n && t.searchParams.set("format", "webp"), (n || r || a) && t.searchParams.set("animated", "true"), t.toString()
       },
       serialize: e => e
     }
@@ -61,12 +61,12 @@ function y(e) {
 async function O(e) {
   let {
     body: t
-  } = await o.tn.get({
+  } = await a.tn.get({
     url: u.ANM.APPLICATION_ASSETS(e),
     oldFormErrors: true,
     rejectWithError: false
   });
-  return a.Z.dispatch({
+  return o.Z.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
     assets: t
@@ -91,8 +91,8 @@ function I(e, t, n) {
   }
   if (null == e || null == t) return;
   let i = Array.isArray(n) ? Math.max(...n) : n,
-    a = "number" == typeof i ? "?size=".concat((0, c.oO)(i)) : "";
-  return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".").concat(r).concat(a) : "".concat((0, o.K0)(), "/applications/").concat(e, "/app-assets/").concat(t, ".").concat(r).concat(a)
+    o = "number" == typeof i ? "?size=".concat((0, c.oO)(i)) : "";
+  return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/app-assets/").concat(e, "/").concat(t, ".").concat(r).concat(o) : "".concat((0, a.K0)(), "/applications/").concat(e, "/app-assets/").concat(t, ".").concat(r).concat(o)
 }
 async function T(e) {
   let t = await v(e);
@@ -103,7 +103,7 @@ async function C(e, t) {
   if (0 === n.length) return;
   let {
     body: r
-  } = await o.tn.post({
+  } = await a.tn.post({
     url: u.ANM.APPLICATION_EXTERNAL_ASSETS(e),
     body: {
       urls: n
@@ -124,47 +124,47 @@ function A(e, t) {
     for (let r = 0; r < e.length; r++) {
       let i = e[r];
       if (null == i) continue;
-      let o = Object.prototype.hasOwnProperty.call(b, i) ? b[i] : true;
-      null != o && (t[r] = S(d, o), n++)
+      let a = Object.prototype.hasOwnProperty.call(b, i) ? b[i] : true;
+      null != a && (t[r] = S(d, a), n++)
     }
   return n === e.length
 }
 
 function N(e, t, n, r) {
   let i = false;
-  for (let o = 0; o < e.length; o++) {
-    let a = e[o];
-    if (null == a || null != t[o]) continue;
-    let s = Object.prototype.hasOwnProperty.call(n, a) && n[a];
+  for (let a = 0; a < e.length; a++) {
+    let o = e[a];
+    if (null == o || null != t[a]) continue;
+    let s = Object.prototype.hasOwnProperty.call(n, o) && n[o];
     if (!s) {
       if (null == r || r <= 0) {
-        t[o] = null;
+        t[a] = null;
         continue
       }
       i = true
     }
-    t[o] = s.id
+    t[a] = s.id
   }
   return i
 }
 async function P(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 1;
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH",
     applicationId: e
   });
   let r = [],
     i = t.filter(e => (null == e ? true : e.startsWith("http:")) || (null == e ? true : e.startsWith("https:")));
-  if (i.length > 0 && await C(e, i), A(t, r)) return a.Z.dispatch({
+  if (i.length > 0 && await C(e, i), A(t, r)) return o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r;
-  let o = await T(e);
-  return (a.Z.dispatch({
+  let a = await T(e);
+  return (o.Z.dispatch({
     type: "APPLICATION_ASSETS_UPDATE",
     applicationId: e,
-    assets: o
-  }), N(t, r, o, n)) ? O(e).then(() => P(e, t, n - 1)) : (a.Z.dispatch({
+    assets: a
+  }), N(t, r, a, n)) ? O(e).then(() => P(e, t, n - 1)) : (o.Z.dispatch({
     type: "APPLICATION_ASSETS_FETCH_SUCCESS",
     applicationId: e
   }), r)

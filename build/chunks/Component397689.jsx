@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk445924 = require("./445924.jsx"),
   Chunk654904 = require("./654904.jsx"),
   Chunk486324 = require("./486324.js"),
-  Chunk86698 = require("./86698.js");
+  Chunk802031 = require("./802031.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ function v(e) {
   let {
     user: t,
     guild: n,
-    displayProfile: o,
+    displayProfile: a,
     canUsePremiumCustomization: f,
     previewAvatar: g,
     previewAvatarDecorationSrc: b,
@@ -76,10 +76,10 @@ function v(e) {
   } = e, N = i.useRef(null), {
     analyticsLocations: P,
     newestAnalyticsLocation: R
-  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == o ? true : o.canUsePremiumProfileCustomization) || f, x = (0, r.jsx)(O, {
+  } = (0, c.ZP)(), w = (0, s.e7)([d.Z], () => d.Z.getStatus(t.id)), D = null == n || (null == a ? true : a.canUsePremiumProfileCustomization) || f, x = (0, r.jsx)(O, {
     src: g,
     avatarDecoration: b,
-    imageClassName: a()(I, {
+    imageClassName: o()(I, {
       [h.overlay]: !T
     }),
     size: l.EFr.SIZE_80,
@@ -116,7 +116,7 @@ function v(e) {
     },
     children: e => (0, r.jsxs)(l.P3F, y(E({}, e), {
       innerRef: N,
-      className: a()(h.avatar, h.clickable),
+      className: o()(h.avatar, h.clickable),
       children: [x, (0, r.jsx)(l.vdY, {
         size: "custom",
         className: h.overlayIcon,
@@ -127,7 +127,7 @@ function v(e) {
     }))
   }) : (0, r.jsxs)(l.P3F, {
     onClick: A,
-    className: a()(h.avatar, h.clickable),
+    className: o()(h.avatar, h.clickable),
     children: [x, (0, r.jsx)(l.SrA, {
       size: "custom",
       className: h.overlayIcon,

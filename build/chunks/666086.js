@@ -44,7 +44,7 @@ class O extends Chunk147913.Z {
   maybeSendGiftingPromptSystemMessageDelayed(e, t, n, r) {
     new i.sW(b, () => {
       let i = p.Z.getChannelId();
-      !h.ZP.isGiftIntentMessageInCooldown(n) && e === i && f.Z.isReady(e) && (a.Z.sendGiftingPromptSystemMessage(e, {
+      !h.ZP.isGiftIntentMessageInCooldown(n) && e === i && f.Z.isReady(e) && (o.Z.sendGiftingPromptSystemMessage(e, {
         giftIntentType: t,
         recipientUserId: n,
         giftIntentSecondaryAction: r

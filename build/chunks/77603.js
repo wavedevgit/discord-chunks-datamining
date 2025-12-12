@@ -23,8 +23,8 @@ let c = e => {
       cachedImageURL: null,
       imageURL: null
     };
-    let f = 600 * (0, a.Z)(),
-      p = null != (i = null != (r = null != (n = (null == c || null == (t = c.assets) ? true : t.invite_cover_image) != null ? (0, o.xF)(c.application_id, c.assets.invite_cover_image, f) : null) ? n : d) ? r : u.getCoverImageURL(f)) ? i : null;
+    let f = 600 * (0, o.Z)(),
+      p = null != (i = null != (r = null != (n = (null == c || null == (t = c.assets) ? true : t.invite_cover_image) != null ? (0, a.xF)(c.application_id, c.assets.invite_cover_image, f) : null) ? n : d) ? r : u.getCoverImageURL(f)) ? i : null;
     return {
       cachedImageURL: d,
       imageURL: p
@@ -34,19 +34,19 @@ let c = e => {
     let {
       messageId: t,
       presenceActivity: n,
-      application: o
+      application: a
     } = e, {
-      cachedImageURL: a,
+      cachedImageURL: o,
       imageURL: u
     } = (0, i.cj)([l.Z], () => c({
       messageId: t,
       presenceActivity: n,
-      application: o
-    }), [t, n, o]);
+      application: a
+    }), [t, n, a]);
     return r.useEffect(() => {
-      a !== u && s.s({
+      o !== u && s.s({
         messageId: t,
         coverImageURL: u
       })
-    }, [a, u, t]), u
+    }, [o, u, t]), u
   }

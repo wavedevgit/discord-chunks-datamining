@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk837411 = require("./837411.js"),
   Chunk705556 = require("./705556.jsx"),
   Chunk955418 = require("./955418.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk155493 = require("./155493.js");
 
 function l(e) {
   let {
@@ -22,13 +22,13 @@ function l(e) {
   } = e, f = (0, i.Z)(t.id, n);
   return (0, r.jsxs)("div", {
     className: s.footer,
-    children: [f && (0, r.jsx)(a.Z, {
+    children: [f && (0, r.jsx)(o.Z, {
       user: t,
       guildId: n,
       channelId: l,
       onClose: c,
       disableAutoFocus: d
-    }), !f && (0, r.jsx)(o.Z, {
+    }), !f && (0, r.jsx)(a.Z, {
       user: t,
       guildId: n,
       onClose: c,

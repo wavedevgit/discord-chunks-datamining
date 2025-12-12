@@ -28,11 +28,11 @@ var Chunk791819 = require("./791819.js"),
   Chunk26095 = require("./26095.js"),
   p = require.n(Chunk26095),
   _ = function(e) {
-    var t = (0, a.Z)();
+    var t = (0, o.Z)();
     return t.displayName = e, t
   }("Router-History"),
   m = function(e) {
-    var t = (0, a.Z)();
+    var t = (0, o.Z)();
     return t.displayName = e, t
   }("Router"),
   h = function(e) {
@@ -110,13 +110,13 @@ function S(e) {
   var t = e.computedMatch,
     n = e.to,
     r = e.push,
-    a = true !== r && r;
+    o = true !== r && r;
   return i.createElement(m.Consumer, null, function(e) {
     e || (0, s.Z)(false);
     var r = e.history,
       c = e.staticContext,
-      u = a ? r.push : r.replace,
-      d = (0, o.ob)(t ? "string" == typeof n ? v(n, t.params) : (0, l.Z)({}, n, {
+      u = o ? r.push : r.replace,
+      d = (0, a.ob)(t ? "string" == typeof n ? v(n, t.params) : (0, l.Z)({}, n, {
         pathname: v(n.pathname, t.params)
       }) : n);
     return c ? (u(d), null) : i.createElement(g, {
@@ -124,8 +124,8 @@ function S(e) {
         u(d)
       },
       onUpdate: function(e, t) {
-        var n = (0, o.ob)(t.to);
-        (0, o.Hp)(n, (0, l.Z)({}, d, {
+        var n = (0, a.ob)(t.to);
+        (0, a.Hp)(n, (0, l.Z)({}, d, {
           key: n.key
         })) || u(d)
       },
@@ -142,11 +142,11 @@ function A(e, t) {
     r = I[n] || (I[n] = {});
   if (r[e]) return r[e];
   var i = [],
-    o = {
+    a = {
       regexp: u()(e, i, t),
       keys: i
     };
-  return C < T && (r[e] = o, C++), o
+  return C < T && (r[e] = a, C++), a
 }
 
 function N(e, t) {
@@ -156,31 +156,31 @@ function N(e, t) {
   var n = t,
     r = n.path,
     i = n.exact,
-    o = true !== i && i,
-    a = n.strict,
-    s = true !== a && a,
+    a = true !== i && i,
+    o = n.strict,
+    s = true !== o && o,
     l = n.sensitive,
     c = true !== l && l;
   return [].concat(r).reduce(function(t, n) {
     if (!n && "" !== n) return null;
     if (t) return t;
     var r = A(n, {
-        end: o,
+        end: a,
         strict: s,
         sensitive: c
       }),
       i = r.regexp,
-      a = r.keys,
+      o = r.keys,
       l = i.exec(e);
     if (!l) return null;
     var u = l[0],
       d = l.slice(1),
       f = e === u;
-    return o && !f ? null : {
+    return a && !f ? null : {
       path: n,
       url: "/" === n && "" === u ? "/" : u,
       isExact: f,
-      params: a.reduce(function(e, t, n) {
+      params: o.reduce(function(e, t, n) {
         return e[t.name] = d[n], e
       }, {})
     }
@@ -196,17 +196,17 @@ var P = function(e) {
       t || (0, s.Z)(false);
       var n = e.props.location || t.location,
         r = e.props.computedMatch ? e.props.computedMatch : e.props.path ? N(n.pathname, e.props) : t.match,
-        o = (0, l.Z)({}, t, {
+        a = (0, l.Z)({}, t, {
           location: n,
           match: r
         }),
-        a = e.props,
-        c = a.children,
-        u = a.component,
-        d = a.render;
+        o = e.props,
+        c = o.children,
+        u = o.component,
+        d = o.render;
       return Array.isArray(c) && 0 === c.length && (c = null), i.createElement(m.Provider, {
-        value: o
-      }, o.match ? c ? "function" == typeof c ? c(o) : c : u ? i.createElement(u, o) : d ? d(o) : null : "function" == typeof c ? c(o) : null)
+        value: a
+      }, a.match ? c ? "function" == typeof c ? c(a) : c : u ? i.createElement(u, a) : d ? d(a) : null : "function" == typeof c ? c(a) : null)
     })
   }, t
 }(Chunk473749.Component);
@@ -223,17 +223,17 @@ var w = function(e) {
     var e = this;
     return i.createElement(m.Consumer, null, function(t) {
       t || (0, s.Z)(false);
-      var n, r, o = e.props.location || t.location;
+      var n, r, a = e.props.location || t.location;
       return i.Children.forEach(e.props.children, function(e) {
         if (null == r && i.isValidElement(e)) {
           n = e;
-          var a = e.props.path || e.props.from;
-          r = a ? N(o.pathname, (0, l.Z)({}, e.props, {
-            path: a
+          var o = e.props.path || e.props.from;
+          r = o ? N(a.pathname, (0, l.Z)({}, e.props, {
+            path: o
           })) : t.match
         }
       }), r ? i.cloneElement(n, {
-        location: o,
+        location: a,
         computedMatch: r
       }) : null
     })

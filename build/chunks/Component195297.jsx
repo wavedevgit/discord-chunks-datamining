@@ -1,7 +1,7 @@
 /** Chunk was on 72891 **/
 /** chunk id: 195297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,14 +20,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk382775 = require("./382775.js");
+  Chunk749013 = require("./749013.js");
 
-function P(e) {
+function A(e) {
   let {
     transitionState: t,
     onClose: o,
-    onComplete: P,
-    uploadType: b,
+    onComplete: A,
+    uploadType: P,
     showUpsellHeader: v,
     analyticsPage: E
   } = e, [j, R] = a.useState(false), y = (0, c.vRw)(), {
@@ -46,7 +46,7 @@ function P(e) {
     o(), (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("59732"), n.e("42529")]).then(n.bind(n, 712451));
+      } = await Promise.all([n.e("59732"), n.e("37988")]).then(n.bind(n, 712451));
       return t => (0, i.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -69,8 +69,8 @@ function P(e) {
         file: new File([l], "tenor.gif", {
           type: "image/gif"
         }),
-        onCrop: P,
-        uploadType: b,
+        onCrop: A,
+        uploadType: P,
         showUpsellHeader: v
       }, t))
     }, {
@@ -78,7 +78,7 @@ function P(e) {
     })
   }
   a.useEffect(() => {
-    _.default.track(N.rMx.OPEN_MODAL, {
+    g.default.track(N.rMx.OPEN_MODAL, {
       type: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
       location_stack: I,
       location: {
@@ -86,7 +86,7 @@ function P(e) {
       }
     })
   }, [I, E]);
-  let w = b === m.pC.AVATAR || b === m.pC.BANNER,
+  let w = P === m.pC.AVATAR || P === m.pC.BANNER,
     O = (0, f.M)(!w);
   return (0, i.jsx)(d.Gt, {
     value: I,
@@ -94,31 +94,31 @@ function P(e) {
       onClose: o,
       transitionState: t,
       children: [(0, i.jsx)(l.xBx, {
-        title: h.intl.string(h.t["xsC+/y"])
+        title: _.intl.string(_.t["xsC+/y"])
       }), v && !O && (0, i.jsx)("div", {
-        className: A.upsellHeaderContainer,
+        className: h.upsellHeaderContainer,
         children: (0, i.jsx)(p.Z, {
-          type: b,
+          type: P,
           analyticsPage: E,
           analyticsSection: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
           isGIF: true
         })
       }), (0, i.jsxs)("div", {
-        className: A.gifPickerContainer,
+        className: h.gifPickerContainer,
         children: [(0, i.jsx)(u.Z, {
-          className: r()(A.gifPicker, {
-            [A.loadingOverlay]: j
+          className: r()(h.gifPicker, {
+            [h.loadingOverlay]: j
           }),
           onSelectGIF: Z,
           headingColor: "text-subtle",
           hideFavorites: true
         }), j && (0, i.jsx)(c.$jN, {
-          className: A.spinner
-        }), v && O && (0, i.jsx)(g.Z, {
-          uploadType: b,
+          className: h.spinner
+        }), v && O && (0, i.jsx)(b.Z, {
+          uploadType: P,
           analyticsSource: C,
           showUpsell: true,
-          className: A.nitroUpsell
+          className: h.nitroUpsell
         })]
       })]
     })

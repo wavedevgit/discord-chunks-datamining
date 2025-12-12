@@ -22,11 +22,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk961987 = require("./961987.js");
+  Chunk251309 = require("./251309.js");
 let v = e => {
   let {
     dismissibleContent: t
-  } = e, n = (0, c.a0)(), v = (0, o.e7)([p.default], () => m.ZP.isPremiumExactly(p.default.getCurrentUser(), b.PremiumTypes.TIER_2)), {
+  } = e, n = (0, c.a0)(), v = (0, a.e7)([p.default], () => m.ZP.isPremiumExactly(p.default.getCurrentUser(), b.PremiumTypes.TIER_2)), {
     enabled: S
   } = l.g.useExperiment({
     location: "OutboundPromotionNotice"
@@ -71,7 +71,7 @@ let v = e => {
         visibleContent: t,
         markAsDismissed: n
       } = e;
-      if (t === a.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return T(n)
+      if (t === o.z.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return T(n)
     }
   })
 }

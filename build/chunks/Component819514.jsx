@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk95015 = require("./95015.js"),
   Chunk793030 = require("./793030.js"),
   Chunk248514 = require("./248514.jsx"),
@@ -24,10 +24,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546484 = require("./546484.js"),
-  Chunk625221 = require("./625221.js");
+  Chunk792389 = require("./792389.js"),
+  Chunk552593 = require("./552593.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ class P extends Chunk473749.PureComponent {
       } = this.state,
       l = this.props,
       {
-        channel: o,
+        channel: a,
         message: c,
         showContextMenuHint: d,
         moderatorReportData: f
@@ -76,37 +76,37 @@ class P extends Chunk473749.PureComponent {
         }
         return i
       }(Chunk120356, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
-      m = o.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk95015.yE)(Chunk248514.flags, Chunk981631.iLy.CROSSPOSTED);
+      b = a.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk95015.yE)(Chunk248514.flags, Chunk981631.iLy.CROSSPOSTED);
     Chunk332148 && (e = (0, Chunk54381.jsx)(Chunk576855.Z, {
-      className: Chunk625221.spacingTop,
+      className: Chunk552593.spacingTop,
       children: Chunk388032.intl.format(Chunk388032.t.IxY7E6, {})
     })), (0, Chunk970257.vc)(Chunk248514) && (t = (0, Chunk54381.jsx)("div", {
-      className: Chunk625221.spacingTop,
+      className: Chunk552593.spacingTop,
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.x0jzo9),
         checked: require,
         onChange: this.handleToggleReport
       })
     }));
-    let b = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
-      _ = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    let m = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
+      y = (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk625221.message,
+          className: Chunk552593.message,
           children: (0, Chunk54381.jsx)(Chunk294218.Z, {
-            channel: o,
+            channel: a,
             message: Chunk248514,
             disableInteraction: true
           })
         }), exports, module]
       });
     if ((null == Chunk904245 ? true : Chunk904245.moderatorReportChannelId) != null) {
-      var y, S;
+      var O, I;
       let {
         isFlagResolved: e
       } = Chunk904245;
       return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
-        value: o.guild_id,
-        children: (0, Chunk54381.jsx)(Chunk793030.Modal, (y = I({
+        value: a.guild_id,
+        children: (0, Chunk54381.jsx)(Chunk793030.Modal, (O = _({
           title: Chunk388032.intl.string(Chunk388032.t.MWMcg7),
           subtitle: Chunk501517,
           actions: [{
@@ -116,25 +116,25 @@ class P extends Chunk473749.PureComponent {
           }],
           actionBarInput: module ? true : (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
             checked: Chunk473749,
-            label: Chunk388032.intl.string(Chunk546484.default["8yIKem"]),
+            label: Chunk388032.intl.string(Chunk792389.default["8yIKem"]),
             onChange: e => this.handleToggleResolveFlag(e)
           })
-        }, Chunk933557), S = S = {
+        }, Chunk933557), I = I = {
           children: Chunk699516
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(Chunk594174, Object.getOwnPropertyDescriptors(S)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(Chunk594174, Object.getOwnPropertyDescriptors(I)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(S)).forEach(function(e) {
-          Object.defineProperty(y, e, Object.getOwnPropertyDescriptor(S, e))
+        })(Object(I)).forEach(function(e) {
+          Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(I, e))
         }), Chunk594174))
       })
     }
     return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
-      value: o.guild_id,
+      value: a.guild_id,
       children: (0, Chunk54381.jsx)(Chunk793030.Modal, {
         title: Chunk726521 ? Chunk388032.intl.string(Chunk388032.t.aIz1oV) : Chunk388032.intl.string(Chunk388032.t.MWMcg7),
         subtitle: Chunk501517,
@@ -154,10 +154,10 @@ class P extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), I(this, "state", {
       report: false,
       resolveFlag: false
-    }), S(this, "handleDelete", () => {
+    }), I(this, "handleDelete", () => {
       let {
         report: e,
         resolveFlag: t
@@ -167,27 +167,27 @@ class P extends Chunk473749.PureComponent {
         moderatorReportData: i
       } = this.props, {
         moderatorReportChannelId: l,
-        isFlagResolved: o
+        isFlagResolved: a
       } = null != i ? i : {};
-      e ? (0, m.ak)(r, "message_delete_alert", () => f.Z.deleteMessage(n.id, r.id).then(() => {
+      e ? (0, b.ak)(r, "message_delete_alert", () => f.Z.deleteMessage(n.id, r.id).then(() => {
         if (null != l) {
           var e, n;
-          t && !o && b.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !a && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })) : f.Z.deleteMessage(n.id, r.id).then(() => {
         if (null != l) {
           var e, n;
-          t && !o && b.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
+          t && !a && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
-    }), S(this, "handleDeleteMana", () => {
+    }), I(this, "handleDeleteMana", () => {
       var e, t;
       this.handleDelete(), null == (e = (t = this.props).onClose) || e.call(t)
-    }), S(this, "handleToggleReport", e => {
+    }), I(this, "handleToggleReport", e => {
       this.setState({
         report: e
       })
-    }), S(this, "handleToggleResolveFlag", e => {
+    }), I(this, "handleToggleResolveFlag", e => {
       this.setState({
         resolveFlag: e
       })
@@ -196,21 +196,21 @@ class P extends Chunk473749.PureComponent {
 }
 let N = {
   confirmPin: function(e, t) {
-    let n, i = (0, h.F6)(e, y.default, _.Z);
-    n = e.isPrivate() ? C.intl.string(C.t.hMRngA) : C.intl.formatToPlainString(C.t["3IRluI"], {
+    let n, i = (0, h.F6)(e, O.default, y.Z);
+    n = e.isPrivate() ? x.intl.string(x.t.hMRngA) : x.intl.formatToPlainString(x.t["3IRluI"], {
       channelName: i
     }), (0, c.Z)({
-      title: C.intl.string(C.t.bKMaZX),
+      title: x.intl.string(x.t.bKMaZX),
       subtitle: n,
-      confirmText: C.intl.string(C.t.rOQ5BX),
+      confirmText: x.intl.string(x.t.rOQ5BX),
       variant: "primary",
       onConfirm: () => {
         d.Z.pinMessage(e, t.id)
       },
-      cancelText: C.intl.string(C.t["ETE/oC"]),
+      cancelText: x.intl.string(x.t["ETE/oC"]),
       children: (0, r.jsx)("div", {
-        className: E.message,
-        children: (0, r.jsx)(v.Z, {
+        className: S.message,
+        children: (0, r.jsx)(j.Z, {
           channel: e,
           message: t,
           animateAvatar: false,
@@ -221,24 +221,24 @@ let N = {
   },
   confirmUnpin: function(e, t) {
     (0, c.Z)({
-      title: C.intl.string(C.t.CFF2vL),
-      subtitle: C.intl.string(C.t.NjEPp7),
-      confirmText: C.intl.string(C.t.lAU5jB),
+      title: x.intl.string(x.t.CFF2vL),
+      subtitle: x.intl.string(x.t.NjEPp7),
+      confirmText: x.intl.string(x.t.lAU5jB),
       variant: "critical",
       onConfirm: () => {
         d.Z.unpinMessage(e, t.id)
       },
-      cancelText: C.intl.string(C.t["ETE/oC"]),
+      cancelText: x.intl.string(x.t["ETE/oC"]),
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: o()(E.message, E.spacing),
-          children: (0, r.jsx)(v.Z, {
+          className: a()(S.message, S.spacing),
+          children: (0, r.jsx)(j.Z, {
             channel: e,
             message: t,
             disableInteraction: true
           })
         }), (0, r.jsx)(p.Z, {
-          children: C.intl.format(C.t.oCVB3Y, {})
+          children: x.intl.format(x.t.oCVB3Y, {})
         })]
       })
     })
@@ -246,7 +246,7 @@ let N = {
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
-    (0, u.h7j)(l => (0, r.jsx)(P, I({
+    (0, u.h7j)(l => (0, r.jsx)(P, _({
       channel: e,
       message: t,
       showContextMenuHint: n,
@@ -255,14 +255,14 @@ let N = {
   },
   confirmEdit: function(e, t, n) {
     (0, c.Z)({
-      title: C.intl.string(C.t.aIz1oV),
-      subtitle: C.intl.string(C.t.grBcM8),
-      confirmText: C.intl.string(C.t["cY+Oob"]),
+      title: x.intl.string(x.t.aIz1oV),
+      subtitle: x.intl.string(x.t.grBcM8),
+      confirmText: x.intl.string(x.t["cY+Oob"]),
       variant: "primary",
       onConfirm: () => {
         f.Z.editMessage(e, t, n)
       },
-      cancelText: C.intl.string(C.t["ETE/oC"])
+      cancelText: x.intl.string(x.t["ETE/oC"])
     })
   }
 }

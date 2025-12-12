@@ -41,7 +41,7 @@ function p(e, t, d) {
   let _ = (0, s.Cf)(e),
     m = (0, i.e7)([l.default], () => l.default.getId());
   if (null == e) return null;
-  let h = (0, a.V9)(e),
+  let h = (0, o.V9)(e),
     g = null != (p = c.Z.getVideoStats(h)) ? p : {},
     E = f({
       media_session_id: c.Z.getMediaSessionId(h),
@@ -50,7 +50,7 @@ function p(e, t, d) {
       max_viewers: c.Z.getMaxViewers(h)
     }, g),
     b = () => {
-      null == d || d(), null != e && (0, o.ZDy)(async () => {
+      null == d || d(), null != e && (0, a.ZDy)(async () => {
         let {
           default: t
         } = await n.e("18912").then(n.bind(n, 340140));
@@ -62,11 +62,11 @@ function p(e, t, d) {
         }, n))
       })
     };
-  return (0, r.jsx)(o.sNh, {
+  return (0, r.jsx)(a.sNh, {
     id: "report-stream-problem",
     color: "danger",
     label: u.intl.string(u.t.sdnCxV),
     action: b,
-    icon: o.Mgn
+    icon: a.Mgn
   })
 }

@@ -4,12 +4,12 @@
 require.d(exports, {
   CH: () => l,
   Co: () => s,
-  j4: () => o
+  j4: () => a
 });
 var Chunk433517 = require("./433517.js"),
   Chunk427164 = require("./427164.js");
-let o = "gateway_encoding_override",
-  a = (0, Chunk427164.le)({
+let a = "gateway_encoding_override",
+  o = (0, Chunk427164.le)({
     name: "2025-12-desktop-json-gateway-encoding",
     kind: "user",
     defaultConfig: {
@@ -23,11 +23,11 @@ let o = "gateway_encoding_override",
   });
 
 function s(e) {
-  return a.useConfig({
+  return o.useConfig({
     location: e
   }).enableDesktopJSONGatewayEncoding
 }
 
 function l() {
-  return Chunk433517.K.get(o)
+  return Chunk433517.K.get(a)
 }

@@ -1,5 +1,5 @@
 /** Chunk was on 85668 **/
-/** chunk id: 37279, original params: t,e,n (module,exports,require) **/
+/** chunk id: 37279, original params: t,e,a (module,exports,require) **/
 require.d(exports, {
   v: () => d
 });
@@ -10,12 +10,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk692547 = require("./692547.js"),
   Chunk801729 = require("./801729.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk959576 = require("./959576.js");
+  Chunk598217 = require("./598217.js");
 let d = t => {
   let {
     className: e = ""
   } = t;
-  return (0, a.jsx)(s.IG, {
+  return (0, n.jsx)(s.IG, {
     text: c.intl.string(c.t.oW0eUd),
     className: i()(o.betaBadge, e),
     color: l.Z.colors.BADGE_EXPRESSIVE_BACKGROUND_DEFAULT.css

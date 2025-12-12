@@ -7,15 +7,15 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk438976 = require("./438976.js"),
-  Chunk812278 = require("./812278.js");
+  Chunk451080 = require("./451080.js");
 let s = e => {
   let {
     children: t,
     header: n,
     notice: s
-  } = e, l = (0, o.Z)();
+  } = e, l = (0, a.Z)();
   return (0, r.jsxs)("div", {
-    className: a.settingsPage,
+    className: o.settingsPage,
     children: [s, !l && (0, r.jsx)(i.y5t, {
       children: (0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",

@@ -11,18 +11,18 @@ var Chunk876215 = require("./876215.js"),
   Chunk835473 = require("./835473.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk716587 = require("./716587.js");
+  Chunk367843 = require("./367843.js");
 
 function d(e) {
   let {
     item: t
-  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, f = null == n ? true : n.content_type, g = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, h = (0, s.q)(g), m = (0, l.e7)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), _ = f === i.s.TOP_GAME, b = null == h ? true : h.getIconURL(240);
-  return (null == d ? true : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == h || null == m || null == b ? null : (0, r.jsx)("div", {
+  } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, d = null == n ? true : n.extra, p = null == n ? true : n.author_id, f = null == n ? true : n.content_type, g = (null == d ? true : d.type) === "played_game_extra" || (null == d ? true : d.type) === "launched_activity_extra" ? d.application_id : true, h = (0, s.q)(g), m = (0, l.e7)([o.default], () => null != p ? o.default.getUser(p) : null, [p]), b = f === i.s.TOP_GAME, E = null == h ? true : h.getIconURL(240);
+  return (null == d ? true : d.type) !== "played_game_extra" || "contentInventory" !== t.data.kind || null == h || null == m || null == E ? null : (0, r.jsx)("div", {
     className: u.container,
     children: (0, r.jsxs)("div", {
       className: u.card,
       children: [(0, r.jsx)("img", {
-        src: b,
+        src: E,
         alt: h.name,
         className: u.gameIcon
       }), (0, r.jsxs)("div", {
@@ -31,7 +31,7 @@ function d(e) {
           variant: "text-md/semibold",
           color: "text-strong",
           children: h.name
-        }), _ && (0, r.jsx)("div", {
+        }), b && (0, r.jsx)("div", {
           className: u.badge,
           children: (0, r.jsx)(a.Text, {
             variant: "text-xs/semibold",

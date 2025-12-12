@@ -43,7 +43,7 @@ function d(e) {
   l[t][n] = {
     loading: false,
     results: r.map(e => ({
-      type: a.nkL[t].type,
+      type: o.nkL[t].type,
       meta: e
     }))
   }, c = {

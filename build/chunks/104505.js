@@ -3,29 +3,29 @@
 "use strict";
 require.d(exports, {
   X: () => s,
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js");
 
-function a(e) {
-  let [t, n] = r.useState(false), [a, s] = r.useState(false), l = (0, i.e7)([o.Z], () => o.Z.keyboardModeEnabled);
+function o(e) {
+  let [t, n] = r.useState(false), [o, s] = r.useState(false), l = (0, i.e7)([a.Z], () => a.Z.keyboardModeEnabled);
   r.useEffect(() => {
     let t = e.current;
     if (null == t) return;
     n(false), s(false);
     let r = () => n(true),
       i = () => n(false),
-      o = () => s(true),
-      a = e => {
+      a = () => s(true),
+      o = e => {
         t.contains(e.relatedTarget) || s(false)
       };
-    return t.addEventListener("mouseenter", r), t.addEventListener("mouseleave", i), t.addEventListener("focusin", o), t.addEventListener("focusout", a), () => {
-      t.removeEventListener("mouseenter", r), t.removeEventListener("mouseleave", i), t.removeEventListener("focusin", o), t.removeEventListener("focusout", a)
+    return t.addEventListener("mouseenter", r), t.addEventListener("mouseleave", i), t.addEventListener("focusin", a), t.addEventListener("focusout", o), () => {
+      t.removeEventListener("mouseenter", r), t.removeEventListener("mouseleave", i), t.removeEventListener("focusin", a), t.removeEventListener("focusout", o)
     }
   }, [e]);
-  let c = l && a;
+  let c = l && o;
   return {
     isHovering: t,
     isFocusing: c,

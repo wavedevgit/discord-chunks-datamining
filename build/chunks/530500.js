@@ -5,7 +5,7 @@ module.exports = function(e) {
     n = t + "[:=]" + t,
     r = "[ \\t\\f]+",
     i = "([^\\\\:= \\t\\f\\n]|\\\\.)+",
-    o = {
+    a = {
       end: "(" + n + "|" + r + ")",
       relevance: 0,
       starts: {
@@ -36,7 +36,7 @@ module.exports = function(e) {
         begin: i,
         endsParent: true
       }],
-      starts: o
+      starts: a
     }, {
       className: "attr",
       begin: i + t + "$"

@@ -2,12 +2,12 @@
 /** chunk id: 160871, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => o
+  d: () => a
 });
 let r = new Set(["Arab", "Syrc", "Samr", "Mand", "Thaa", "Mend", "Nkoo", "Adlm", "Rohg", "Hebr"]),
   i = new Set(["ae", "ar", "arc", "bcc", "bqi", "ckb", "dv", "fa", "glk", "he", "ku", "mzn", "nqo", "pnb", "ps", "sd", "ug", "ur", "yi"]);
 
-function o(e) {
+function a(e) {
   if (Intl.Locale) {
     let t = new Intl.Locale(e).maximize(),
       n = "function" == typeof t.getTextInfo ? t.getTextInfo() : t.textInfo;

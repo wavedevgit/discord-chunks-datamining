@@ -61,14 +61,14 @@ function E(e, t) {
 }
 
 function b(e) {
-  u.default.track(p.rMx.GUILD_ONBOARDING_LOADED, E(h({}, (0, a.hH)(e)), {
+  u.default.track(p.rMx.GUILD_ONBOARDING_LOADED, E(h({}, (0, o.hH)(e)), {
     has_new_prompts: false,
     number_of_prompts: 0
   }))
 }
 
 function y(e) {
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "GUILD_ONBOARDING_PROMPTS_FETCH_START",
     guildId: e
   }), i.tn.get({
@@ -78,11 +78,11 @@ function y(e) {
     let {
       body: n
     } = t, r = (0, f.cf)(n);
-    return o.Z.dispatch(h({
+    return a.Z.dispatch(h({
       type: "GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS",
       guildId: e
     }, r)).then(() => r.prompts)
-  }, t => (o.Z.dispatch({
+  }, t => (a.Z.dispatch({
     type: "GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE",
     guildId: e
   }), t))
@@ -90,18 +90,18 @@ function y(e) {
 async function O(e) {
   var t, n;
   let i = s.default.getId(),
-    o = (0, r.yE)(null != (n = null == (t = l.ZP.getMember(e, i)) ? true : t.flags) ? n : 0, _.q.COMPLETED_ONBOARDING),
-    a = c.Z.getGuild(e);
-  if (null == a || !a.features.has(p.GuildFeatures.GUILD_ONBOARDING)) return Promise.resolve();
+    a = (0, r.yE)(null != (n = null == (t = l.ZP.getMember(e, i)) ? true : t.flags) ? n : 0, _.q.COMPLETED_ONBOARDING),
+    o = c.Z.getGuild(e);
+  if (null == o || !o.features.has(p.GuildFeatures.GUILD_ONBOARDING)) return Promise.resolve();
   let u = d.Z.shouldFetchPrompts(e),
     f = d.Z.getOnboardingPrompts(e);
-  if (!u && f.length > 0) return f.every(e => !e.inOnboarding) ? T(e) : o || v(e), Promise.resolve();
+  if (!u && f.length > 0) return f.every(e => !e.inOnboarding) ? T(e) : a || v(e), Promise.resolve();
   let m = await y(e);
-  return Array.isArray(m) && m.every(e => !e.inOnboarding) ? (T(e), Promise.resolve()) : (o || v(e), m)
+  return Array.isArray(m) && m.every(e => !e.inOnboarding) ? (T(e), Promise.resolve()) : (a || v(e), m)
 }
 
 function v(e) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GUILD_ONBOARDING_START",
     guildId: e
   })
@@ -110,10 +110,10 @@ let S = false,
   I = false;
 
 function T(e) {
-  u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(h({}, (0, a.hH)(e)), {
+  u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, E(h({}, (0, o.hH)(e)), {
     step: S,
     required: true
-  })), u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(h({}, (0, a.hH)(e)), {
+  })), u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, E(h({}, (0, o.hH)(e)), {
     step: S,
     skipped: false,
     is_final_step: true,

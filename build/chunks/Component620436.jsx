@@ -1,35 +1,35 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 620436, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var r, Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk211870 = require("./211870.js");
+  Chunk402241 = require("./402241.js");
 
-function a(e) {
+function s(e) {
   let {
     type: t
   } = e;
   return (0, i.jsx)("div", {
-    className: s.dividerContainer,
+    className: a.dividerContainer,
     children: (0, i.jsx)("div", {
-      className: s.dividerIconContainer,
+      className: a.dividerIconContainer,
       children: function(e) {
         switch (e) {
           case "arrow_down":
             return (0, i.jsx)(l.cQm, {
               size: "md",
               color: "currentColor",
-              className: s.dividierIcon
+              className: a.dividierIcon
             });
           case "cross":
             return (0, i.jsx)(l.Dio, {
               size: "md",
               color: "currentColor",
-              className: s.dividierIcon
+              className: a.dividierIcon
             });
           default:
             return null
@@ -38,4 +38,4 @@ function a(e) {
     })
   })
 }
-a.Type = ((r = {}).ARROW_DOWN = "arrow_down", r.CROSS = "cross", r)
+s.Type = ((r = {}).ARROW_DOWN = "arrow_down", r.CROSS = "cross", r)

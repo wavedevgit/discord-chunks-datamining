@@ -57,9 +57,9 @@ class d extends(r = Chunk473749.Component) {
       rootMargin: n,
       threshold: r
     } = e;
-    t ? c.has(t) ? this.elementId = c.get(t) || "" : c.set(t, (0, o.Z)()) : this.elementId = l;
+    t ? c.has(t) ? this.elementId = c.get(t) || "" : c.set(t, (0, a.Z)()) : this.elementId = l;
     let i = this.getVisibilityObserverId();
-    u.has(i) || u.set(i, new a.Z({
+    u.has(i) || u.set(i, new o.Z({
       root: t,
       rootMargin: n,
       threshold: r

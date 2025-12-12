@@ -1,12 +1,12 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 520116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk135938 = require("./135938.js"),
@@ -22,30 +22,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk809780 = require("./809780.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk557047 = require("./557047.js");
-let C = {
+  Chunk28034 = require("./28034.js");
+let x = {
     left: 4,
     right: false
   },
-  x = [Chunk981631.uaV.THREAD_CREATED];
+  E = [Chunk981631.uaV.THREAD_CREATED];
 
-function E(e) {
+function S(e) {
   var t, n, l;
   let {
-    channel: o,
+    channel: a,
     message: c,
     compact: u,
     isGroupStart: d,
     treatSpam: f,
     gotoChannel: p
-  } = e, g = (0, a.JA)(null != (t = c.id) ? t : ""), m = i.useCallback(e => {
+  } = e, g = (0, o.JA)(null != (t = c.id) ? t : ""), b = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
-      null == (t = document.querySelector('[data-recents-channel="'.concat(o.id, '"]'))) || t.focus()
+      null == (t = document.querySelector('[data-recents-channel="'.concat(a.id, '"]'))) || t.focus()
     }
-  }, [o.id]), b = x.includes(c.type);
+  }, [a.id]), m = E.includes(c.type);
   return (0, r.jsx)(s.tEY, {
-    offset: C,
+    offset: x,
     children: (0, r.jsxs)("div", (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -64,21 +64,21 @@ function E(e) {
       }
       return e
     }({
-      className: j.messageContainer,
-      onKeyDown: m
+      className: C.messageContainer,
+      onKeyDown: b
     }, g), l = l = {
-      children: [!b && (0, r.jsx)(_.Z, {
-        className: j.jumpButton,
+      children: [!m && (0, r.jsx)(y.Z, {
+        className: C.jumpButton,
         onJump: e => p(e, c.id)
       }), (0, r.jsx)(h.Z, {
         id: c.id,
         message: c,
-        channel: o,
-        className: j.message,
+        channel: a,
+        className: C.message,
         compact: u,
         animateAvatar: false,
         isGroupStart: d,
-        onKeyDown: m,
+        onKeyDown: b,
         treatSpam: f
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -94,53 +94,53 @@ function E(e) {
   })
 }
 
-function S(e) {
+function I(e) {
   var t, n;
   let {
     channel: i,
     channelRecord: l,
-    gotoChannel: a
+    gotoChannel: o
   } = e, {
     enabled: h
   } = c.Z.useExperiment({
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), _ = p.jU.useSetting(), C = (0, d.P1)(l), x = false, S = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), I = null != (n = null == (t = m.default.getUser(g.default.getId())) ? true : t.hasFlag(O.xW$.SPAMMER)) && n, P = [];
+  }), y = p.jU.useSetting(), x = (0, d.P1)(l), E = false, I = 0 === i.messages.length || a()(i.messages[0].timestamp).isSame(a()(), "day"), _ = null != (n = null == (t = b.default.getUser(g.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, P = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
-      n = i.messages.slice(0, y.hC);
+      n = i.messages.slice(0, O.hC);
     n.forEach(n => {
-      if (!S && (null == e || !e.isSame(n.timestamp, "day"))) {
-        let t = (0, b.vc)(n.timestamp, "LL");
+      if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
+        let t = (0, m.vc)(n.timestamp, "LL");
         P.push((0, r.jsx)(f.Z, {
-          className: j.divider,
+          className: C.divider,
           children: t
-        }, t)), e = o()(n.timestamp)
+        }, t)), e = a()(n.timestamp)
       }
       let i = null == t || (0, u.Z)(l, t, n);
-      t = n, x = x || (0, d.DQ)(n), P.push((0, r.jsx)(E, {
+      t = n, E = E || (0, d.DQ)(n), P.push((0, r.jsx)(S, {
         channel: l,
         message: n,
-        compact: _,
+        compact: y,
         isGroupStart: i,
-        treatSpam: !I && h && (0, d.DQ)(n) && C,
-        gotoChannel: a
+        treatSpam: !_ && h && (0, d.DQ)(n) && x,
+        gotoChannel: o
       }, n.id))
-    }), i.messages.length >= y.hC && P.push((0, r.jsx)("div", {
-      className: j.showAllButtonContainer,
+    }), i.messages.length >= O.hC && P.push((0, r.jsx)("div", {
+      className: C.showAllButtonContainer,
       children: (0, r.jsx)(s.Avr, {
         variant: "primary",
-        text: "".concat(v.intl.string(v.t["9OB9hq"]), " ›"),
-        onClick: e => a(e, n[n.length - 1].id)
+        text: "".concat(j.intl.string(j.t["9OB9hq"]), " ›"),
+        onClick: e => o(e, n[n.length - 1].id)
       })
     }, "view-all")), 0 === P.length && (P = [(0, r.jsx)(s.$jN, {}, "spinner")])
   }
-  return x && C && c.Z.trackExposure({
+  return E && x && c.Z.trackExposure({
     location: "20e3b0_2"
   }), (0, r.jsx)("div", {
-    className: j.messages,
+    className: C.messages,
     children: P
   })
 }

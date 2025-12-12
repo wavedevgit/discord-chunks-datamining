@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -24,12 +24,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk844642 = require("./844642.js");
+  Chunk713791 = require("./713791.js");
 
 function O() {
   return (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-sm/normal",
-    className: Chunk844642.description,
+    className: Chunk713791.description,
     children: Chunk388032.intl.string(Chunk388032.t.zZp618)
   })
 }
@@ -39,7 +39,7 @@ function v() {
     currentSession: e
   } = (0, Chunk136097.h)();
   return null == module ? (0, Chunk54381.jsx)("div", {
-    className: Chunk844642.loading,
+    className: Chunk713791.loading,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   }) : (0, Chunk54381.jsx)(Chunk481060.C3N, {
     label: Chunk388032.intl.string(Chunk388032.t.LLS19o),
@@ -54,17 +54,17 @@ function S() {
   let {
     currentSession: e,
     otherSessions: t
-  } = (0, Chunk136097.h)(), n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), [o, a] = Chunk473749.useState(new Set);
+  } = (0, Chunk136097.h)(), n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), [a, o] = Chunk473749.useState(new Set);
   return null == module && 0 === exports.length || 0 === exports.length && (null == require ? true : require.mfaEnabled) || !(exports.length > 0) && (null == require ? true : require.mfaEnabled) ? null : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.xx1MWc),
       children: [exports.map(e => (0, r.jsx)(T, {
         session: e,
-        useChecks: o.size > 0,
-        checked: o.has(e.id_hash),
+        useChecks: a.size > 0,
+        checked: a.has(e.id_hash),
         setChecked: t => {
-          let n = new Set(o);
-          t ? n.add(e.id_hash) : n.delete(e.id_hash), a(n)
+          let n = new Set(a);
+          t ? n.add(e.id_hash) : n.delete(e.id_hash), o(n)
         }
       }, e.id_hash)), (null == require ? true : require.mfaEnabled) ? null : (0, Chunk54381.jsx)(C, {})]
     }), exports.length > 0 ? (0, Chunk54381.jsx)(Chunk481060.gNt, {
@@ -72,7 +72,7 @@ function S() {
       description: Chunk388032.intl.string(Chunk388032.t.OTXyaf),
       children: (0, Chunk54381.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk844642.logOutAllButton,
+        className: Chunk713791.logOutAllButton,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "critical-secondary",
           size: "sm",
@@ -95,14 +95,14 @@ function I() {
     header: Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     children: [(0, Chunk54381.jsx)(O, {}), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 24,
-      className: Chunk844642.sessions,
+      className: Chunk713791.sessions,
       children: [(0, Chunk54381.jsx)(v, {}), (0, Chunk54381.jsx)(S, {})]
     })]
   })
 }
 
 function T(e) {
-  var t, n, i, o, s;
+  var t, n, i, a, s;
   let {
     session: c,
     current: f,
@@ -112,9 +112,9 @@ function T(e) {
   } = e, g = null != (s = null == (t = c.client_info) ? true : t.location) ? s : null == (n = c.client_info) ? true : n.ip, E = null == (i = c.client_info) ? true : i.platform, {
     text: O,
     icon: v
-  } = A(null == (o = c.client_info) ? true : o.os), S = f ? null : (0, d.p)(c.approx_last_used_time), I = [O, E].filter(_.lm), T = [g, S].filter(_.lm);
+  } = A(null == (a = c.client_info) ? true : a.os), S = f ? null : (0, d.p)(c.approx_last_used_time), I = [O, E].filter(_.lm), T = [g, S].filter(_.lm);
   return (0, r.jsxs)("div", {
-    className: a()(y.session, f ? y.currentSession : null),
+    className: o()(y.session, f ? y.currentSession : null),
     children: [(0, r.jsx)("div", {
       className: y.sessionIcon,
       children: (0, r.jsx)(v, {
@@ -172,25 +172,25 @@ function T(e) {
 
 function C() {
   return (0, Chunk54381.jsxs)("div", {
-    className: a()(Chunk844642.session, Chunk844642.legacySession),
+    className: o()(Chunk713791.session, Chunk713791.legacySession),
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk844642.sessionIcon,
+      className: Chunk713791.sessionIcon,
       children: (0, Chunk54381.jsx)(Chunk460562.Z, {
         width: "32",
         height: "32"
       })
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk844642.sessionInfo,
+      className: Chunk713791.sessionInfo,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk844642.sessionInfoRow,
+        className: Chunk713791.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk54381.jsx)("span", {
           children: Chunk388032.intl.string(Chunk388032.t.iUa0sn)
         })
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        className: Chunk844642.sessionInfoRow,
+        className: Chunk713791.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk54381.jsx)("span", {
           children: Chunk388032.intl.format(Chunk388032.t["044+8i"], {

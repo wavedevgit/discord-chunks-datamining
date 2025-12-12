@@ -160,7 +160,7 @@ function b(e) {
     case l.vf.HUBS:
       return l.gU;
     default:
-      (0, a.vE)(e)
+      (0, o.vE)(e)
   }
 }
 
@@ -216,17 +216,17 @@ async function I(e) {
     guildId: n,
     index: r,
     categoryId: i,
-    analyticsLocation: a,
+    analyticsLocation: o,
     options: l
   } = e, u = _(f({}, l), {
     loadId: t
   });
-  await s.Ub(n, a, u), o.default.track(c.rMx.GUILD_DISCOVERY_GUILD_SELECTED, {
+  await s.Ub(n, o, u), a.default.track(c.rMx.GUILD_DISCOVERY_GUILD_SELECTED, {
     guild_id: n,
     load_id: t,
     card_index: r,
     category_id: i,
-    location: a
+    location: o
   })
 }
 

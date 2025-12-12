@@ -2,9 +2,9 @@
 /** chunk id: 591146, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CL: () => o,
+  CL: () => a,
   Ml: () => i,
-  VM: () => a
+  VM: () => o
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -62,13 +62,13 @@ function i(e) {
   returnfalse
 }
 
-function o(e) {
+function a(e) {
   return r.useExperiment({
     location: e
   }).darkerGuildListBackground
 }
 
-function a(e) {
+function o(e) {
   return r.useExperiment({
     location: e
   }).distinctBorders

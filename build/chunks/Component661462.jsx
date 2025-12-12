@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => v,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk592183 = require("./592183.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk778414 = require("./778414.jsx"),
   Chunk414655 = require("./414655.jsx"),
   Chunk228168 = require("./228168.js"),
-  Chunk883101 = require("./883101.js");
+  Chunk237297 = require("./237297.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,26 +57,26 @@ function v(e) {
     children: t,
     className: n,
     scrollerRef: i
-  } = e, l = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        l = Object.keys(e);
-      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var l = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["children", "className", "scrollerRef"]);
   return (0, r.jsx)(o.Ttm, O(y({
     ref: i,
-    className: a()(h.tabPanelScroller, n),
+    className: l()(h.tabPanelScroller, n),
     fade: true
-  }, l), {
+  }, a), {
     children: t
   }))
 }
@@ -86,33 +86,33 @@ function j(e) {
     user: t,
     currentUser: n,
     section: i,
-    subsection: l,
-    displayProfile: a,
+    subsection: a,
+    displayProfile: l,
     guildId: o,
-    channelId: s,
-    onClose: c
+    channelId: c,
+    onClose: s
   } = e;
-  return i === b.oh.ACTIVITY ? (0, r.jsx)(d.Z, {
+  return i === m.oh.ACTIVITY ? (0, r.jsx)(d.Z, {
     user: t,
     currentUser: n,
-    displayProfile: a,
+    displayProfile: l,
     guildId: o,
-    channelId: s,
-    subsection: l,
-    onClose: c
-  }) : i === b.oh.MUTUAL_FRIENDS ? (0, r.jsx)(f.Z, {
+    channelId: c,
+    subsection: a,
+    onClose: s
+  }) : i === m.oh.MUTUAL_FRIENDS ? (0, r.jsx)(f.Z, {
     user: t,
     guildId: o,
-    channelId: s,
-    onClose: c
-  }) : i === b.oh.MUTUAL_GUILDS ? (0, r.jsx)(g.Z, {
+    channelId: c,
+    onClose: s
+  }) : i === m.oh.MUTUAL_GUILDS ? (0, r.jsx)(g.Z, {
     user: t,
-    onClose: c
-  }) : i === b.oh.WIDGETS ? (0, r.jsx)(p.C, {
+    onClose: s
+  }) : i === m.oh.WIDGETS ? (0, r.jsx)(p.C, {
     user: t,
     guildId: o,
-    channelId: s
-  }) : i === b.oh.WISHLIST ? (0, r.jsx)(m.Z, {
+    channelId: c
+  }) : i === m.oh.WISHLIST ? (0, r.jsx)(b.Z, {
     profileOwner: t
   }) : null
 }
@@ -121,27 +121,27 @@ function x(e) {
   var t;
   let {
     user: n,
-    currentUser: l,
-    displayProfile: a,
+    currentUser: a,
+    displayProfile: l,
     guildId: d,
     channelId: f,
     items: g,
     initialSection: p,
-    initialSubsection: m,
+    initialSubsection: b,
     onClose: v
   } = e, {
     trackUserProfileAction: x
-  } = (0, s.KZ)(), [{
+  } = (0, c.KZ)(), [{
     section: P,
-    subsection: _,
-    text: I
-  }, w] = i.useState(O(y({}, null != (t = g.find(e => {
+    subsection: I,
+    text: w
+  }, S] = i.useState(O(y({}, null != (t = g.find(e => {
     let {
       section: t
     } = e;
     return t === p
   })) ? t : g[0]), {
-    subsection: m
+    subsection: b
   }));
   return (0, r.jsxs)("div", {
     className: h.container,
@@ -155,11 +155,11 @@ function x(e) {
         look: "custom",
         selectedItem: P,
         onItemSelect: e => {
-          if (u.Z.hasSaveablePendingChanges() && P === b.oh.WIDGETS) return void c.Z.notifyPendingWidgets();
+          if (u.Z.hasSaveablePendingChanges() && P === m.oh.WIDGETS) return void s.Z.notifyPendingWidgets();
           x({
             action: "PRESS_SECTION",
             section: e
-          }), w(t => {
+          }), S(t => {
             var n;
             return null != (n = g.find(t => t.section === e)) ? n : t
           })
@@ -173,22 +173,22 @@ function x(e) {
       })
     }), (0, r.jsx)(o.njP.Panel, {
       id: P,
-      "aria-label": I,
+      "aria-label": w,
       className: h.tabBarPanel,
       children: (0, r.jsx)(o.y5t, {
         component: (0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
-            children: I
+            children: w
           })
         }),
         children: (0, r.jsx)(j, {
           user: n,
-          currentUser: l,
-          displayProfile: a,
+          currentUser: a,
+          displayProfile: l,
           guildId: d,
           channelId: f,
           section: P,
-          subsection: _,
+          subsection: I,
           onClose: v
         })
       })

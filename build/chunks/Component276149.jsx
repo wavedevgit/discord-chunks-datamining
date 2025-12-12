@@ -59,8 +59,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -83,14 +83,14 @@ function b(e) {
   } = e, b = g(e, ["variant", "size", "hangStatusChannel", "onAction", "userId"]);
   let y = (0, i.e7)([c.Z], () => c.Z.getChannelId() === p.id),
     O = () => {
-      null == m || m(), a.default.selectVoiceChannel(p.id), (0, l.Kh)(p.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, h(_({
+      null == m || m(), o.default.selectVoiceChannel(p.id), (0, l.Kh)(p.id), u.default.track(d.rMx.HANG_STATUS_CTA_CLICKED, h(_({
         source: "UserProfilePopout"
       }, (0, s.Z)(p.id)), {
         other_user_id: E,
         cta_type: y ? "open" : "join"
       }))
     };
-  return (0, r.jsx)(o.Button, _({
+  return (0, r.jsx)(a.Button, _({
     text: y ? f.intl.string(f.t.BXxdl7) : f.intl.string(f.t["9C444m"]),
     onClick: O,
     variant: t,

@@ -32,7 +32,7 @@ function b(e, t, n) {
   if (!(Z >= 0 && Z <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if (!U.localize) throw RangeError("locale must contain localize property");
   if (!U.formatLong) throw RangeError("locale must contain formatLong property");
-  var F = (0, o.default)(e);
+  var F = (0, a.default)(e);
   if (!(0, r.default)(F)) throw RangeError("Invalid time value");
   var B = (0, l.Z)(F),
     V = (0, i.Z)(F, B),
@@ -49,8 +49,8 @@ function b(e, t, n) {
     if ("''" === r) return "'";
     var i = r[0];
     if ("'" === i) return y(r);
-    var o = a.Z[i];
-    if (o) return !(null != n && n.useAdditionalWeekYearTokens) && (0, c.Do)(r) && (0, c.qp)(r, t, String(e)), !(null != n && n.useAdditionalDayOfYearTokens) && (0, c.Iu)(r) && (0, c.qp)(r, t, String(e)), o(V, r, U.localize, H);
+    var a = o.Z[i];
+    if (a) return !(null != n && n.useAdditionalWeekYearTokens) && (0, c.Do)(r) && (0, c.qp)(r, t, String(e)), !(null != n && n.useAdditionalDayOfYearTokens) && (0, c.Iu)(r) && (0, c.qp)(r, t, String(e)), a(V, r, U.localize, H);
     if (i.match(E)) throw RangeError("Format string contains an unescaped latin alphabet character `" + i + "`");
     return r
   }).join("")

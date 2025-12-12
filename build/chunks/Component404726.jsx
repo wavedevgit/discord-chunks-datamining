@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk860109 = require("./860109.js");
 
 function f(e) {
-  var t, n, o;
+  var t, n, a;
   let {
     buffer: f,
     autoplay: p = true,
@@ -36,19 +36,19 @@ function f(e) {
     eventCapture: N,
     assetLoader: P,
     onLoad: R
-  } = e, w = i.useContext(l.S), D = (0, s.C)(), x = null != (o = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? o : D, [L, j] = i.useState(true), M = i.useRef(null), {
+  } = e, w = i.useContext(l.S), D = (0, s.C)(), x = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : D, [L, j] = i.useState(true), M = i.useRef(null), {
     rive: k,
     RiveComponent: U
-  } = (0, a.useRive)({
+  } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: f,
     autoplay: p,
     stateMachines: L,
     artboard: b,
     useOffscreenRenderer: true,
-    layout: new a.Layout({
-      fit: null != m ? u.M[m] : a.Fit.Cover,
-      alignment: null != h ? u.Y[h] : a.Alignment.Center
+    layout: new o.Layout({
+      fit: null != m ? u.M[m] : o.Fit.Cover,
+      alignment: null != h ? u.Y[h] : o.Alignment.Center
     }),
     isTouchScrollEnabled: T,
     listenOnDocumentBody: A,
@@ -63,12 +63,12 @@ function f(e) {
     getProperties: () => {
       var e, t;
       return null != (t = null == k || null == (e = k.viewModelInstance) ? true : e.properties.reduce((e, t) => {
-        var n, r, i, o, a;
-        return "viewModel" === t.type && (null == k || null == (a = k.viewModelInstance) || null == (o = a.viewModel(t.name)) || o.properties.forEach(n => {
-          var r, i, o;
+        var n, r, i, a, o;
+        return "viewModel" === t.type && (null == k || null == (o = k.viewModelInstance) || null == (a = o.viewModel(t.name)) || a.properties.forEach(n => {
+          var r, i, a;
           e[t.name + "/" + n.name] = {
             type: n.type,
-            value: null == k || null == (o = k.viewModelInstance) || null == (i = o[n.type]) || null == (r = i.call(o, "".concat(t.name, "/").concat(n.name))) ? true : r.value
+            value: null == k || null == (a = k.viewModelInstance) || null == (i = a[n.type]) || null == (r = i.call(a, "".concat(t.name, "/").concat(n.name))) ? true : r.value
           }
         })), e[t.name] = {
           type: t.type,
@@ -103,8 +103,8 @@ function f(e) {
         t = () => {
           clearTimeout(M.current)
         };
-      return k.on(a.EventType.Play, e), k.on(a.EventType.Pause, t), k.on(a.EventType.Stop, t), () => {
-        k.off(a.EventType.Play, e), k.off(a.EventType.Pause, t), k.off(a.EventType.Stop, t)
+      return k.on(o.EventType.Play, e), k.on(o.EventType.Pause, t), k.on(o.EventType.Stop, t), () => {
+        k.off(o.EventType.Play, e), k.off(o.EventType.Pause, t), k.off(o.EventType.Stop, t)
       }
     }
   }, [k, y, w.reducedMotion.enabled]), i.useLayoutEffect(() => {
@@ -123,10 +123,10 @@ function f(e) {
   i.useEffect(() => {
     if (null == k) return;
     let e = t => {
-      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && w.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(a.EventType.Advance, e)))
+      null != t.data && "number" == typeof t.data && (G.current = t.data, t.data > 0 && ("halt" === y && w.reducedMotion.enabled && k.isPlaying && k.pause(), k.off(o.EventType.Advance, e)))
     };
-    return k.on(a.EventType.Advance, e), p && k.play(), () => {
-      k.off(a.EventType.Advance, e)
+    return k.on(o.EventType.Advance, e), p && k.play(), () => {
+      k.off(o.EventType.Advance, e)
     }
   }, [k, w.reducedMotion.enabled, y, p]);
   let Z = i.useRef(false);

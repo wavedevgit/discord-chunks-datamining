@@ -14,16 +14,16 @@ var Chunk544891 = require("./544891.js"),
   Chunk388032 = require("./388032.jsx");
 let d = {
   setPendingWidgets(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "WIDGET_PENDING_SET",
       widgets: e
     })
   },
   async savePendingWidgets(e) {
     var t;
-    let n = null == (t = a.default.getCurrentUser()) ? true : t.id;
+    let n = null == (t = o.default.getCurrentUser()) ? true : t.id;
     if (null == n) return;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "WIDGET_PENDING_SAVE_START"
     });
     let i = e.map(e => e.toSubmission());
@@ -36,13 +36,13 @@ let d = {
         oldFormErrors: true,
         rejectWithError: true
       });
-      return o.Z.dispatch({
+      return a.Z.dispatch({
         type: "WIDGET_PENDING_SAVE_SUCCESS",
         userId: n,
         widgets: e.body.widgets
       }), e.body
     } catch (e) {
-      throw o.Z.dispatch({
+      throw a.Z.dispatch({
         type: "WIDGET_PENDING_SAVE_FAILURE"
       }), e
     }
@@ -57,14 +57,14 @@ let d = {
       type: "WIDGET_SUGGESTED_FETCH_START"
     });
     try {
-      var e, t, n, i, a, s;
+      var e, t, n, i, o, s;
       let u = await Chunk544891.tn.get({
         url: Chunk981631.ANM.USER_PROFILE_SUGGESTED_GAMES,
         rejectWithError: true
       });
       ((null == (e = Chunk388032.body) ? true : module.suggested_games) == null || (null == (t = Chunk388032.body) ? true : exports.suggested_wishlist_games) == null) && Chunk960048.Z.captureMessage("Suggested games or wishlist games not found"), Chunk570140.Z.dispatch({
         type: "WIDGET_SUGGESTED_FETCH_SUCCESS",
-        suggestedGamesIds: null != (a = null == (n = Chunk388032.body) ? true : require.suggested_games) ? Chunk594174 : [],
+        suggestedGamesIds: null != (o = null == (n = Chunk388032.body) ? true : require.suggested_games) ? Chunk594174 : [],
         suggestedWishlistGamesIds: null != (s = null == (i = Chunk388032.body) ? true : Chunk780384.suggested_wishlist_games) ? Chunk585483 : []
       })
     } catch (e) {
@@ -74,7 +74,7 @@ let d = {
     }
   },
   removeGameFromSuggestedGames(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "WIDGET_SUGGESTED_REMOVE_GAME",
       applicationId: e
     })

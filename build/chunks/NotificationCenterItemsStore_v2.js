@@ -133,25 +133,25 @@ function N(e) {
     let {
       type: r,
       user: i,
-      since: o,
-      is_spam_request: a,
+      since: a,
+      is_spam_request: o,
       user_ignored: s,
       origin_application_id: l
     } = e;
-    if (null == i || (s && n.add(i.id), r !== m.OGo.PENDING_INCOMING || a || s || null == o)) return null;
+    if (null == i || (s && n.add(i.id), r !== m.OGo.PENDING_INCOMING || o || s || null == a)) return null;
     let c = d.default.getUser(i.id);
     if (null == c) return null;
-    t.push((0, _.mH)(c, o, l))
+    t.push((0, _.mH)(c, a, l))
   }), e.gameRelationships.forEach(e => {
     let {
       type: r,
       id: i,
-      application_id: o,
-      since: a
+      application_id: a,
+      since: o
     } = e;
     if (r !== m.OGo.PENDING_INCOMING || n.has(i)) return;
     let s = d.default.getUser(i);
-    null != s && t.push((0, _.LF)(s, a, o))
+    null != s && t.push((0, _.LF)(s, o, a))
   }), e.guilds.forEach(e => {
     e.guild_scheduled_events.forEach(e => {
       Y(e)
@@ -232,24 +232,24 @@ function G(e) {
     id: n,
     type: r,
     isSpamRequest: i,
-    userIgnored: o,
-    user: a,
+    userIgnored: a,
+    user: o,
     since: s,
     originApplicationId: l
   } = t;
-  if (r === m.OGo.PENDING_INCOMING && !i && !o) {
+  if (r === m.OGo.PENDING_INCOMING && !i && !a) {
     if (null == s) return null;
-    if (null != a) {
-      let e = d.default.getUser(a.id);
+    if (null != o) {
+      let e = d.default.getUser(o.id);
       null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, _.mH)(e, s, l)])
     }
   }
-  r !== m.OGo.FRIEND || null == t.user || o || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => k(e, p.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(g({}, e), {
+  r !== m.OGo.FRIEND || null == t.user || a || (y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => k(e, p.O7.INCOMING_FRIEND_REQUESTS, t.user.id) ? b(g({}, e), {
     acked: true,
     forceUnacked: false,
-    local_id: "incoming_friend_requests_accepted_".concat(a.id, "_").concat(e.id),
+    local_id: "incoming_friend_requests_accepted_".concat(o.id, "_").concat(e.id),
     type: p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED
-  }) : e)), (r === m.OGo.BLOCKED || o) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !k(e, p.O7.INCOMING_FRIEND_REQUESTS, n) && !k(e, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
+  }) : e)), (r === m.OGo.BLOCKED || a) && (y.notifCenterLocalItems = y.notifCenterLocalItems.filter(e => !k(e, p.O7.INCOMING_FRIEND_REQUESTS, n) && !k(e, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, n) && !k(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n) && !k(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, n)))
 }
 
 function Z(e) {
@@ -263,15 +263,15 @@ function F(e) {
     id: n,
     type: r,
     since: i,
-    applicationId: o
+    applicationId: a
   } = t;
   if (u.Z.isBlockedOrIgnored(n)) returnfalse;
   if (r === m.OGo.PENDING_INCOMING) {
     let e = d.default.getUser(n);
-    null != i && null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, _.LF)(e, i, o)])
+    null != i && null != e && (y.notifCenterLocalItems = [...y.notifCenterLocalItems, (0, _.LF)(e, i, a)])
   } else {
     if (r !== m.OGo.FRIEND) returnfalse;
-    y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n, o) ? b(g({}, e), {
+    y.notifCenterLocalItems = y.notifCenterLocalItems.map(e => U(e, p.O7.INCOMING_GAME_FRIEND_REQUESTS, n, a) ? b(g({}, e), {
       acked: true,
       forceUnacked: false,
       local_id: "incoming_game_friend_requests_accepted_".concat(n, "_").concat(e.id),
@@ -322,7 +322,7 @@ function W(e) {
 }
 class K extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(d.default, u.Z, a.Z), null != e) {
+    if (this.waitFor(d.default, u.Z, o.Z), null != e) {
       let t = e => b(g({}, e), {
           message: null != e.message ? new c.ZP(e.message) : true
         }),

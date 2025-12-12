@@ -214,7 +214,7 @@ class I {
   }
   setLimitedInteraction(e) {
     var t, n;
-    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), a.ZP.setFocusable(h.$J, !e)
+    null == (n = this.module) || null == (t = n.setLimitedInteraction) || t.call(n, e), o.ZP.setFocusable(h.$J, !e)
   }
   setCaptureZoneCallback(e) {
     var t, n;

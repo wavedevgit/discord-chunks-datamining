@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk866442 = require("./866442.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk28660 = require("./28660.js"),
   Chunk934424 = require("./934424.js"),
-  Chunk572425 = require("./572425.js");
+  Chunk468234 = require("./468234.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,8 +67,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -76,8 +76,8 @@ function T(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = e => {
@@ -92,7 +92,7 @@ function N(e) {
   var t;
   let {
     user: n,
-    displayProfile: o,
+    displayProfile: a,
     guildId: b,
     pendingBanner: O,
     children: v,
@@ -109,11 +109,11 @@ function N(e) {
     bannerSrc: U,
     status: G
   } = (0, E.Z)({
-    displayProfile: o,
+    displayProfile: a,
     pendingBanner: O,
     size: N,
     canAnimate: D || !k ? L : M
-  }), Z = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.dcp)(I)), B = (0, s._i)((0, d.ZP)(F, Z, false)), V = (0, f.Z)(null != (t = null != w ? w : null == o ? true : o.primaryColor) ? t : B).hex, H = A(I), Y = H + T - R, W = P - C - R;
+  }), Z = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), F = n.getAvatarURL(b, (0, u.dcp)(I)), B = (0, s._i)((0, d.ZP)(F, Z, false)), V = (0, f.Z)(null != (t = null != w ? w : null == a ? true : a.primaryColor) ? t : B).hex, H = A(I), Y = H + T - R, W = P - C - R;
   return (0, r.jsxs)("svg", {
     className: y.mask,
     viewBox: "0 0 ".concat(N, " ").concat(P),
@@ -143,7 +143,7 @@ function N(e) {
       overflow: "visible",
       mask: "url(#".concat(x, ")"),
       children: [v, (0, r.jsx)("div", {
-        className: a()(y.banner, S),
+        className: o()(y.banner, S),
         onMouseMove: () => j(true),
         onMouseLeave: () => j(false),
         style: {
@@ -165,11 +165,11 @@ function P(e) {
     themeType: t,
     displayProfile: n,
     canUsePremiumProfileCustomization: i = false
-  } = e, o = T(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
-  let a = b.q[t],
+  } = e, a = T(e, ["themeType", "displayProfile", "canUsePremiumProfileCustomization"]);
+  let o = b.q[t],
     s = i || (null == n ? true : n.canUsePremiumProfileCustomization) || false;
-  return (0, r.jsx)(N, I(v({}, o, a), {
+  return (0, r.jsx)(N, I(v({}, a, o), {
     displayProfile: n,
-    themePadding: s ? a.themePadding : 0
+    themePadding: s ? o.themePadding : 0
   }))
 }

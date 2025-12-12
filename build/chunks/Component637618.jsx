@@ -18,7 +18,7 @@ var Chunk990547 = require("./990547.js"),
 function f(e) {
   let {
     code: t
-  } = e, [n, f] = t.split("-"), p = (0, c.hO)(n, f), _ = (0, o.e7)([l.Z], () => l.Z.getGuildId());
+  } = e, [n, f] = t.split("-"), p = (0, c.hO)(n, f), _ = (0, a.e7)([l.Z], () => l.Z.getGuildId());
   return ((0, s.Z)({
     type: d.n.VIEW,
     name: i.ImpressionNames.GUILD_PRODUCT_LISTING_EMBED,
@@ -31,7 +31,7 @@ function f(e) {
   }), null == p || _ !== n) ? null : (0, r.jsx)(u.H, {
     guildProductListing: p,
     guildId: n,
-    location: a.Z.GUILD_PRODUCT_EMBED_CARD,
+    location: o.Z.GUILD_PRODUCT_EMBED_CARD,
     cardWidth: 390,
     thumbnailHeight: 219
   })

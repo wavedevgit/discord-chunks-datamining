@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk695346 = require("./695346.js"),
   Chunk572004 = require("./572004.js");
@@ -25,17 +25,17 @@ function c(e) {
 
   function _(e) {
     let n = null != c && e.shiftKey ? c : t;
-    o()(null != n, "cannot copy null text"), (0, l.JG)(n, i)
+    a()(null != n, "cannot copy null text"), (0, l.JG)(n, i)
   }
   let m = d || p;
   if (__OVERLAY__ || !m || !l.wS || null == t) return null;
   let h = "devmode-copy-id-".concat(t);
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(o.sNh, {
     id: h,
     label: n,
     action: _,
-    icon: u ? true : a.VuL,
-    iconLeft: u ? a.VuL : true,
+    icon: u ? true : o.VuL,
+    iconLeft: u ? o.VuL : true,
     focusedClassName: f
   }, h)
 }

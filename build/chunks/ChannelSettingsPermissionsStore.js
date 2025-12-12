@@ -24,7 +24,7 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function b(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = new Set,
+let _ = new Set,
   O = Chunk981631.QZA.CLOSED,
   v = false,
   y = null,
@@ -62,14 +62,14 @@ let E = new Set,
 
 function P(e) {
   let t = e.getGuildId(),
-    n = _({}, e.permissionOverwrites);
+    n = b({}, e.permissionOverwrites);
   return null != t && null == n[t] && (n[t] = d.we(t)), n
 }
 
 function x() {
   if (C = Chunk388610.Z.getChannel(), S = Chunk388610.Z.getCategory(), null == C) returnfalse;
   let e = C.getGuildId();
-  I = y = P(C), null == y[T] && (T = module), i = null != S, r = Chunk700785.o4(C, S), N = null, v = false, O = Chunk981631.QZA.CLOSED, E.clear()
+  I = y = P(C), null == y[T] && (T = module), i = null != S, r = Chunk700785.o4(C, S), N = null, v = false, O = Chunk981631.QZA.CLOSED, _.clear()
 }
 class A extends(l = Chunk442837.ZP.Store) {
   initialize() {
@@ -85,7 +85,7 @@ class A extends(l = Chunk442837.ZP.Store) {
     return null == y ? true : y[e]
   }
   get editedPermissionIds() {
-    return Array.from(E)
+    return Array.from(_)
   }
   get permissionOverwrites() {
     return y
@@ -129,12 +129,12 @@ let Z = new A(Chunk570140.Z, {
       deny: i
     } = e, l = null == y ? true : y[t];
     if (null == l || null == C) returnfalse;
-    l = b(_({}, l), {
+    l = E(b({}, l), {
       allow: n,
       deny: i
-    }), y = b(_({}, y), {
+    }), y = E(b({}, y), {
       [t]: l
-    }), E.add(t), O = g.QZA.OPEN, v = !s().isEqual(y, I), r = d.o4(C, S)
+    }), _.add(t), O = g.QZA.OPEN, v = !s().isEqual(y, I), r = d.o4(C, S)
   },
   CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
     let {
@@ -150,7 +150,7 @@ let Z = new A(Chunk570140.Z, {
     Chunk388610.Z.getSection() === Chunk981631.CoT.PERMISSIONS && x()
   },
   CHANNEL_SETTINGS_CLOSE: function() {
-    O = Chunk981631.QZA.CLOSED, y = null, I = null, C = null, S = null, v = false, E.clear(), T = null, N = null
+    O = Chunk981631.QZA.CLOSED, y = null, I = null, C = null, S = null, v = false, _.clear(), T = null, N = null
   },
   CHANNEL_UPDATES: function(e) {
     let {
@@ -165,9 +165,9 @@ let Z = new A(Chunk570140.Z, {
       if (null == t) returnfalse;
       I = P(C);
       let n = {};
-      return E.forEach(e => {
+      return _.forEach(e => {
         null != y && (n[e] = y[e])
-      }), null == n[t] && null == C.permissionOverwrites[t] && (n[t] = d.we(t)), null == (y = _({}, C.permissionOverwrites, n))[T] ? T = t : null != N && null != y[N] && (T = N, N = null), r = d.o4(C, S), true
+      }), null == n[t] && null == C.permissionOverwrites[t] && (n[t] = d.we(t)), null == (y = b({}, C.permissionOverwrites, n))[T] ? T = t : null != N && null != y[N] && (T = N, N = null), r = d.o4(C, S), true
     }(e.id) && (n = true);
     return n
   },

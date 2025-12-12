@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 390583, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk723047 = require("./723047.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function p(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,61 +48,61 @@ function p(e, t) {
   }), e
 }
 
-function f() {
+function b() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [n, f] = Chunk290348.UE(module), h = Chunk473749.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
+  } = (0, Chunk727843.N)(), [n, b] = Chunk290348.UE(module), p = Chunk473749.useMemo(() => new Set(require.map(e => e.ref_id)), [require]);
 
-  function x(e, t) {
+  function h(e, t) {
     let {
       channelId: r,
       description: i,
       emojiId: l,
-      emojiName: s
-    } = e, a = [...n], o = {
+      emojiName: a
+    } = e, s = [...n], o = {
       name: "",
       description: i,
       emoji_id: l,
-      emoji_name: s,
-      ref_type: d.Qs.CHANNEL,
+      emoji_name: a,
+      ref_type: u.Qs.CHANNEL,
       ref_id: r
     };
-    null != t ? a[t] = o : a.push(o), f(a)
+    null != t ? s[t] = o : s.push(o), b(s)
   }
-  let b = (0, Chunk723047.mY)();
+  let x = (0, Chunk723047.mY)();
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk861345.p, {
       benefits: require,
       onEdit: function(e) {
-        (0, l.h7j)(i => (0, r.jsx)(c.x3, p(m({}, i), {
+        (0, l.h7j)(i => (0, r.jsx)(c.x3, m(f({}, i), {
           guildId: t,
-          omitChannelIds: h,
+          omitChannelIds: p,
           initialData: n[e],
-          onSave: t => x(t, e),
+          onSave: t => h(t, e),
           onDelete: () => (function(e) {
             let t = [...n];
-            t.splice(e, 1), f(t)
+            t.splice(e, 1), b(t)
           })(e)
         })))
       },
       onMove: function(e, t) {
         let r = [...n],
           [i] = r.splice(e, 1);
-        r.splice(t, 0, i), f(r)
+        r.splice(t, 0, i), b(r)
       },
       guildId: exports
     }), require.length > 0 && (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 8
     }), (0, Chunk54381.jsx)(Chunk861345.s, {
       onClick: function() {
-        (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, p(m({}, e), {
+        (0, Chunk481060.h7j)(e => (0, r.jsx)(c.x3, m(f({}, e), {
           guildId: t,
-          omitChannelIds: h,
-          onSave: e => x(e)
+          omitChannelIds: p,
+          onSave: e => h(e)
         })))
       },
-      disabled: b,
+      disabled: x,
       children: Chunk388032.intl.string(Chunk388032.t.PLSCUg)
     })]
   })

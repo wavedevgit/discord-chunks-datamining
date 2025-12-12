@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk518950 = require("./518950.js"),
   Chunk357355 = require("./357355.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk880406 = require("./880406.js");
+  Chunk264247 = require("./264247.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,14 +53,14 @@ function p() {
       username: p(module[0])
     }) : "", [module]);
   return 0 === module.length ? null : (0, Chunk54381.jsxs)("div", {
-    className: Chunk880406.container,
+    className: Chunk264247.container,
     children: [(0, Chunk54381.jsx)(Chunk481060.qEK, f({
-      className: Chunk880406.__invalid_icon,
+      className: Chunk264247.__invalid_icon,
       src: require,
       "aria-label": exports.username,
       size: Chunk481060.EFr.SIZE_24
     }, d)), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk880406.text,
+      className: Chunk264247.text,
       variant: "text-sm/normal",
       color: "always-white",
       children: _

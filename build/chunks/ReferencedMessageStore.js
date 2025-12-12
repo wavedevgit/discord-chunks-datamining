@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => U
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk31775 = require("./31775.js"),
-  o = require.n(Chunk31775),
+  a = require.n(Chunk31775),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk247206 = require("./247206.js"),
@@ -47,7 +47,7 @@ class g {
     return this._cachedMessageIds
   }
   constructor() {
-    p(this, "_cachedMessages", new(o())({
+    p(this, "_cachedMessages", new(a())({
       max: 100,
       dispose: (e, t) => this.handleCacheDisposed(e, t)
     })), p(this, "_cachedMessageIds", new Set)

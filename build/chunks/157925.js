@@ -4,17 +4,17 @@
 require.d(exports, {
   $z: () => l,
   BM: () => c,
-  Df: () => a,
+  Df: () => o,
   Wq: () => u,
-  gD: () => o,
+  gD: () => a,
   sV: () => s,
   xA: () => i
 }), require("./388685.js"), require("./63063.js"), require("./981631.js");
 var Chunk765305 = require("./765305.js");
 require("./388032.jsx");
 let i = 240,
-  o = "834488117758001152",
-  a = "stage-invite",
+  a = "834488117758001152",
+  o = "stage-invite",
   s = "age-verification-speedbump-modal",
   l = "stage-channel-audience-notice-shown";
 var c = function(e) {

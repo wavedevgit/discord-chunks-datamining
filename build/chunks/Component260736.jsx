@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk587091 = require("./587091.js");
+  Chunk215130 = require("./215130.js");
 
 function p(e) {
   let {
@@ -26,7 +26,7 @@ function p(e) {
     channelId: n.channel_id,
     guildId: p.guild_id,
     messageId: n.id
-  })(_), h = a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
+  })(_), h = o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -43,10 +43,10 @@ function p(e) {
       })
     }), (0, r.jsxs)(i.P3F, {
       onClick: () => {
-        window.open(a.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
+        window.open(o.Z.getArticleURL(u.BhN.HD_STREAMING_POTION), "_blank")
       },
       className: f.embed,
-      children: [(0, r.jsx)(o.Z, {}), (0, r.jsxs)("div", {
+      children: [(0, r.jsx)(a.Z, {}), (0, r.jsxs)("div", {
         className: f.text,
         children: [(0, r.jsx)(i.Text, {
           color: "text-default",

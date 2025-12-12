@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 155133, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,13 +11,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk268350 = require("./268350.js");
 
 function o(e) {
-  let [t, n] = r.useState("loading"), o = (0, i.e7)([s.Z], () => s.Z.getStickersByGuildId(e));
+  let [t, n] = r.useState("loading"), o = (0, i.e7)([a.Z], () => a.Z.getStickersByGuildId(e));
   return (r.useEffect(() => {
     let t = new AbortController,
       r = t.signal;
     return (async () => {
       try {
-        await (0, a.SV)(e, r), n("success"), t = null
+        await (0, s.SV)(e, r), n("success"), t = null
       } catch (e) {
         n("error"), t = null
       }

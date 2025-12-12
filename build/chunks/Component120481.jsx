@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk685578 = require("./685578.js"),
-  Chunk953782 = require("./953782.js");
+  Chunk299477 = require("./299477.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,11 +54,11 @@ function f(e, t) {
   let {
     attributes: n,
     children: i,
-    element: o
+    element: a
   } = t;
-  return "timestampMentionInput" === o.type ? (0, r.jsx)(p, {
+  return "timestampMentionInput" === a.type ? (0, r.jsx)(p, {
     attributes: n,
-    element: o,
+    element: a,
     children: i
   }) : null
 }
@@ -67,7 +67,7 @@ let p = e => {
     element: t,
     attributes: n,
     children: i
-  } = e, l = (0, a.vt)(), u = (0, a.UE)(), f = o()(s.inlineElement, s.optionPill, s.timestampMention, {
+  } = e, l = (0, o.vt)(), u = (0, o.UE)(), f = a()(s.inlineElement, s.optionPill, s.timestampMention, {
     [s.selectedPill]: u && l,
     [s.erroredPill]: t.error
   }), p = (0, r.jsx)("span", {

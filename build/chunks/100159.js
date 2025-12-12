@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk812206 = require("./812206.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -32,14 +32,14 @@ function a(e) {
 function s(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    o = r.Z.getApplication(e.applicationId),
+    a = r.Z.getApplication(e.applicationId),
     s = e.getPrice(),
     l = e.getPrice(null, false),
     c = {
       sku_id: e.id,
       sku_type: e.type,
       application_id: e.applicationId,
-      application_name: null != o ? o.name : null,
+      application_name: null != a ? a.name : null,
       store_title: e.name,
       distribution_type: e.premium ? "premium" : "distribution"
     },
@@ -64,5 +64,5 @@ function s(e) {
     has_controller_support: e.hasFeature(i.Qa3.CONTROLLER_SUPPORT),
     has_cloud_saves: e.hasFeature(i.Qa3.CLOUD_SAVES),
     has_secure_networking: e.hasFeature(i.Qa3.SECURE_NETWORKING)
-  }), a({}, c, u, d)
+  }), o({}, c, u, d)
 }

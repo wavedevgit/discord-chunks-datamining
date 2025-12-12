@@ -3,8 +3,8 @@
 "use strict";
 var Chunk840475 = require("./840475.js"),
   Chunk569743 = require("./569743.js"),
-  o = Chunk840475.aTypedArrayConstructor;
+  a = Chunk840475.aTypedArrayConstructor;
 (0, Chunk840475.exportTypedArrayStaticMethod)("of", function() {
-  for (var e = 0, t = arguments.length, n = new(o(this))(exports); exports > module;) require[module] = arguments[module++];
+  for (var e = 0, t = arguments.length, n = new(a(this))(exports); exports > module;) require[module] = arguments[module++];
   return require
 }, Chunk569743)

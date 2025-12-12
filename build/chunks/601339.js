@@ -9,25 +9,25 @@ require.d(exports, {
 var Chunk928276 = require("./928276.js"),
   Chunk21814 = require("./21814.js"),
   Chunk473749 = require("./473749.js");
-let a = (0, Chunk473749.createContext)({
+let o = (0, Chunk473749.createContext)({
   isNative: true,
   open: u,
   useHref: e => e
 });
 
 function s() {
-  return (0, Chunk473749.useContext)(a)
+  return (0, Chunk473749.useContext)(o)
 }
 
 function l(e, t, n = true) {
-  var o, a;
+  var a, o;
   let {
     metaKey: s,
     ctrlKey: c,
     altKey: u,
     shiftKey: d
   } = t;
-  (0, i.vU)() && (null == (a = window.event) || null == (o = a.type) ? true : o.startsWith("key")) && "_blank" === e.target && ((0, i.V5)() ? s = true : c = true);
+  (0, i.vU)() && (null == (o = window.event) || null == (a = o.type) ? true : a.startsWith("key")) && "_blank" === e.target && ((0, i.V5)() ? s = true : c = true);
   let f = (0, i.Pf)() && (0, i.V5)() && !(0, i.zc)() && 1 ? new KeyboardEvent("keydown", {
     keyIdentifier: "Enter",
     metaKey: s,

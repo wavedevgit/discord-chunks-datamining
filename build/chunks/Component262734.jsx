@@ -26,10 +26,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk918559 = require("./918559.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk909357 = require("./909357.js");
+  Chunk2266 = require("./2266.js");
 let N = {
-  [Chunk918559.MI.NO_CHAT]: Chunk909357.noChat,
-  [Chunk918559.MI.RESIZABLE]: Chunk909357.resizable
+  [Chunk918559.MI.NO_CHAT]: Chunk2266.noChat,
+  [Chunk918559.MI.RESIZABLE]: Chunk2266.resizable
 };
 
 function j(e) {
@@ -38,19 +38,19 @@ function j(e) {
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
     selectedChannelId: j,
     selectedVoiceChannelId: P
-  } = (0, s.cj)([b.Z], () => ({
-    selectedChannelId: b.Z.getChannelId(),
-    selectedVoiceChannelId: b.Z.getVoiceChannelId()
+  } = (0, s.cj)([E.Z], () => ({
+    selectedChannelId: E.Z.getChannelId(),
+    selectedVoiceChannelId: E.Z.getVoiceChannelId()
   })), x = (0, s.e7)([g.Z], () => null != P && j === P && g.Z.getChatOpen(P), [j, P]), A = (0, s.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
-    E.Z.updateFrameLayoutMode({
+    _.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
       layoutMode: y.U.PIP
     })
   }, [t.applicationId]), k = i.useCallback(() => {
-    E.Z.stopFrame({
+    _.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -66,7 +66,7 @@ function j(e) {
     return e.observe(L.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
+      null == w.current || w.current.contains(e.target) || l || _.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
         layoutMode: y.U.PIP
       })
@@ -116,7 +116,7 @@ function j(e) {
         })
       }), (0, r.jsxs)("div", {
         className: T.footer,
-        children: [(0, r.jsx)(_.Z, {
+        children: [(0, r.jsx)(b.Z, {
           appContext: I.IlC.APP,
           applicationId: n.id,
           shouldPrioritizeGroupPlusIcon: true,

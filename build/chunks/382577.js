@@ -2,12 +2,12 @@
 /** chunk id: 382577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e) {
+function a(e) {
   let t = (0, r.useRef)(e);
   (0, r.useEffect)(() => {
     t.current = e

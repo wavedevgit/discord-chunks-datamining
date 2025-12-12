@@ -98,14 +98,14 @@ function O(e) {
     paymentAuthenticationState: R,
     selectedSkuId: w,
     isGift: k
-  }), G = (0, a.N)(h), Z = !k && null != G && null != w && m.nG[G.trial_id].skus.includes(w), F = () => {
+  }), G = (0, o.N)(h), Z = !k && null != G && null != w && m.nG[G.trial_id].skus.includes(w), F = () => {
     c(Object.values(I).length < 1 && null == n ? f.h8.PLAN_SELECT : f.h8.REVIEW, {
       trackedFromStep: j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE
     })
   }, B = null != E ? E : F;
   i()(S, "Step should be set here");
-  let V = (0, o.Z)(() => Date.now(), [S]),
-    H = (0, o.Z)(() => null != O && null == x.current ? j ? f.h8.PAYMENT_ELEMENT : O : j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE, [O, x.current, j]);
+  let V = (0, a.Z)(() => Date.now(), [S]),
+    H = (0, a.Z)(() => null != O && null == x.current ? j ? f.h8.PAYMENT_ELEMENT : O : j ? f.h8.PAYMENT_ELEMENT : f.h8.PAYMENT_TYPE, [O, x.current, j]);
   return (0, s.vP)({
     paymentModalArgs: U,
     initialStep: H,

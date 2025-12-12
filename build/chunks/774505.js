@@ -9,8 +9,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var Chunk698091 = require("./698091.js"),
-  o = r(require("./64995.js")),
-  a = r(require("./377421.js")),
+  a = r(require("./64995.js")),
+  o = r(require("./377421.js")),
   s = r(require("./866330.js")),
   Chunk239189 = require("./239189.js"),
   Chunk473749 = require("./473749.js"),
@@ -41,7 +41,7 @@ var Chunk698091 = require("./698091.js"),
       var n;
       return (n = e.call(this) || this)._value = t, n.done = true, n.elapsedTime = true, n.lastPosition = true, n.lastVelocity = true, n.v0 = true, i.is.num(n._value) && (n.lastPosition = n._value), n
     }
-    o(t, e), t.create = function(e, n) {
+    a(t, e), t.create = function(e, n) {
       return new t(e)
     };
     var n = t.prototype;
@@ -63,7 +63,7 @@ var Chunk698091 = require("./698091.js"),
         output: [t, n]
       }), r
     }
-    o(t, e), t.create = function(e, n) {
+    a(t, e), t.create = function(e, n) {
       if (true === n && (n = e), i.is.str(e) && i.is.str(n)) return new t(e, n);
       throw TypeError('Expected "from" and "to" to be strings')
     };
@@ -91,7 +91,7 @@ var Chunk698091 = require("./698091.js"),
       var n;
       return true === t && (t = null), (n = e.call(this) || this).source = true, n.setValue(t), n
     }
-    o(t, e);
+    a(t, e);
     var n = t.prototype;
     return n.getValue = function(e) {
       if (!this.source) return null;
@@ -99,8 +99,8 @@ var Chunk698091 = require("./698091.js"),
       return i.each(this.source, function(n, r) {
         if (f(n)) t[r] = n.getValue(e);
         else {
-          var o = i.getFluidConfig(n);
-          o ? t[r] = o.get() : e || (t[r] = n)
+          var a = i.getFluidConfig(n);
+          a ? t[r] = a.get() : e || (t[r] = n)
         }
       }), t
     }, n.setValue = function(e) {
@@ -126,9 +126,9 @@ var Chunk698091 = require("./698091.js"),
   O = function(e) {
     function t(t, n) {
       var r;
-      return (r = e.call(this, null) || this).source = true, e.prototype.setValue.call(a(r), r._makeAnimated(t, n)), r
+      return (r = e.call(this, null) || this).source = true, e.prototype.setValue.call(o(r), r._makeAnimated(t, n)), r
     }
-    o(t, e), t.create = function(e, n) {
+    a(t, e), t.create = function(e, n) {
       return new t(e, n)
     };
     var n = t.prototype;
@@ -152,7 +152,7 @@ var Chunk698091 = require("./698091.js"),
       var n;
       return (n = e.call(this, null) || this).update = t, n.dirty = false, n
     }
-    o(t, e);
+    a(t, e);
     var n = t.prototype;
     return n.setValue = function(t, n) {
       if (t) {
@@ -174,12 +174,12 @@ var Chunk698091 = require("./698091.js"),
   }(y),
   S = function(e, t) {
     return c.forwardRef(function(n, r) {
-      var o = c.useRef(null),
-        a = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
+      var a = c.useRef(null),
+        o = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
         l = i.useForceUpdate(),
         d = new v(function() {
-          var e = o.current;
-          if (!a || e) {
+          var e = a.current;
+          if (!o || e) {
             var n = !!e && t.applyAnimatedValues(e, d.getValue(true));
             false === n && l()
           }
@@ -198,8 +198,8 @@ var Chunk698091 = require("./698091.js"),
             })
           }
       }), c.createElement(e, s({}, t.getComponentProps(d.getValue()), {
-        ref: a && function(e) {
-          o.current = I(r, e)
+        ref: o && function(e) {
+          a.current = I(r, e)
         }
       }))
     })
@@ -212,16 +212,16 @@ var T = Symbol.for("AnimatedComponent"),
   C = function(e, t) {
     var n = true === t ? {} : t,
       r = n.applyAnimatedValues,
-      o = true === r ? function() {
+      a = true === r ? function() {
         returnfalse
       } : r,
-      a = n.createAnimatedStyle,
-      s = true === a ? function(e) {
+      o = n.createAnimatedStyle,
+      s = true === o ? function(e) {
         return new y(e)
-      } : a,
+      } : o,
       l = n.getComponentProps,
       c = {
-        applyAnimatedValues: o,
+        applyAnimatedValues: a,
         createAnimatedStyle: s,
         getComponentProps: true === l ? function(e) {
           return e

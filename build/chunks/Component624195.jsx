@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk729594 = require("./729594.js"),
-  Chunk781452 = require("./781452.js");
+  Chunk838983 = require("./838983.js");
 let l = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)"),
   c = 500,
   u = 400;
@@ -19,7 +19,7 @@ function d(e) {
     n = null,
     r = null;
   try {
-    t = (r = a.parse(e, true)).host, n = r.pathname
+    t = (r = o.parse(e, true)).host, n = r.pathname
   } catch (e) {
     return null
   }
@@ -35,16 +35,16 @@ function f(e) {
     }
   } = e;
   if (null == n || null == i) return null;
-  let a = d(n);
-  if (null == a) return null;
-  let l = a.query.iframe_url;
+  let o = d(n);
+  if (null == o) return null;
+  let l = o.query.iframe_url;
   if (null == l || Array.isArray(l) || null == d(l)) return null;
   let {
     width: f,
     height: p
   } = i, _ = f, m = p;
   return (f > c || p > u) && (f > p ? (_ = c, m = c * p / f) : (_ = u * f / p, m = u)), (0, r.jsx)("iframe", {
-    className: o()(s.embedAmazonMusic, t),
+    className: a()(s.embedAmazonMusic, t),
     src: l,
     style: {
       width: _,

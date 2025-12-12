@@ -109,7 +109,7 @@ function T(e) {
     state: c.bZ.FETCHING,
     invite: null,
     errorStatus: null
-  }), a.Z.wait(() => (0, l.hH)(t).catch(u.VqG)), true)
+  }), o.Z.wait(() => (0, l.hH)(t).catch(u.VqG)), true)
 }
 class C extends(r = Chunk442837.ZP.Store) {
   getInvite(e) {

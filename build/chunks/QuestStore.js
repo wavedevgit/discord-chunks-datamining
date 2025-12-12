@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 616022, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N;
+let r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N;
 require.d(exports, {
   Z: () => e4
 }), require("./388685.js");
@@ -68,13 +68,13 @@ let K = 6 * Chunk70956.Z.Millis.HOUR,
   et = 864e6;
 
 function en() {
-  r = false, i = false, o = new Map, a = false, s = new Map, l = new Map, c = new Map, u = new Map, d = 0, f = 0, p = new Set, _ = new Set, m = new Set, h = new Set, g = new Set, z = new Map, b = new Map, y = new Map, O = new Map, v = null, S = new Map, E = new Set, I = new Map, T = new Map, eX(), C = null, N = new Map, $ = new Map, A = new Map
+  r = false, i = false, a = new Map, o = false, s = new Map, l = new Map, c = new Map, u = new Map, d = 0, f = 0, p = new Set, _ = new Set, m = new Set, h = new Set, g = new Set, z = new Map, b = new Map, y = new Map, O = new Map, v = null, S = new Map, E = new Set, I = new Map, T = new Map, eX(), C = null, N = new Map, $ = new Map, A = new Map
 }
 
 function er(e, t) {
-  var n, r, i, o;
+  var n, r, i, a;
   if (null != t.userStatus)
-    for (let a of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, R.isNil)(a) && w.T.DESKTOP.has(a.eventName) && ((null == (i = a.heartbeat) ? true : i.lastBeatAt) != null ? E.add(e) : (null == (o = a.heartbeat) ? true : o.lastBeatAt) == null && E.delete(e))
+    for (let o of Object.values(null != (r = null == (n = t.userStatus) ? true : n.progress) ? r : {})) !(0, R.isNil)(o) && w.T.DESKTOP.has(o.eventName) && ((null == (i = o.heartbeat) ? true : i.lastBeatAt) != null ? E.add(e) : (null == (a = o.heartbeat) ? true : a.lastBeatAt) == null && E.delete(e))
 }
 
 function ei(e, t) {
@@ -88,13 +88,13 @@ function ei(e, t) {
   }
 }
 
-function eo(e, t) {
+function ea(e, t) {
   let n = new Map(b);
   n.set(e, t), b = n
 }
 
-function ea(e, t) {
-  eo(e, t);
+function eo(e, t) {
+  ea(e, t);
   let n = l.get(e),
     r = null == n ? true : n.userStatus;
   null != r && null == r.claimedAt && ei(e, {
@@ -118,14 +118,14 @@ function el(e, t) {
   let r = l.get(e),
     i = null == r ? true : r.userStatus;
   if (null != i && null == i.claimedAt) {
-    var o;
+    var a;
     let n = es({
       entitlements: t
     });
-    null != n && eo(e, n), ei(e, {
+    null != n && ea(e, n), ei(e, {
       userStatus: W(H({}, i), {
         claimedAt: t.claimedAt,
-        claimedTier: null != (o = null == n ? true : n.tier) ? o : null
+        claimedTier: null != (a = null == n ? true : n.tier) ? a : null
       })
     })
   }
@@ -150,13 +150,13 @@ function ef(e) {
     questEnrollmentBlockedUntil: i
   } = e;
   d = Date.now(), r = false, l = new Map, s = new Map;
-  let o = new Map;
-  for (let e of t) l.set(e.id, e), s.set(e.id, e.config), o.set(e.id, (0, Z.zi)(e)), e.targetedContent.includes(M.jn.QUEST_BAR) && (0, G.T)({
+  let a = new Map;
+  for (let e of t) l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, Z.zi)(e)), e.targetedContent.includes(M.jn.QUEST_BAR) && (0, G.T)({
     location: B.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (c = new Map, n)) c.set(e.id, e);
-  for (let e of null == N ? true : N.values()) l.has(e.id) || (l.set(e.id, e), s.set(e.id, e.config), o.set(e.id, (0, Z.zi)(e)));
-  T = o, eQ(), C = null != i ? new Date(i) : null
+  for (let e of null == N ? true : N.values()) l.has(e.id) || (l.set(e.id, e), s.set(e.id, e.config), a.set(e.id, (0, Z.zi)(e)));
+  T = a, eQ(), C = null != i ? new Date(i) : null
 }
 
 function ep() {
@@ -167,7 +167,7 @@ function e_(e) {
   let {
     placement: t
   } = e;
-  i = true, (o = new Map(o)).set(t, true)
+  i = true, (a = new Map(a)).set(t, true)
 }
 
 function em(e) {
@@ -194,18 +194,18 @@ function eg(e) {
 }
 
 function eE() {
-  a = true
+  o = true
 }
 
 function eb(e) {
   let {
     quests: t
   } = e;
-  for (let e of (a = false, u = new Map, t)) u.set(e.id, e)
+  for (let e of (o = false, u = new Map, t)) u.set(e.id, e)
 }
 
 function ey() {
-  a = false
+  o = false
 }
 
 function eO(e) {
@@ -278,7 +278,7 @@ function eP(e) {
     questId: t,
     rewardCode: n
   } = e, r = new Set(m);
-  r.delete(t), m = r, ea(t, n)
+  r.delete(t), m = r, eo(t, n)
 }
 
 function eR(e) {
@@ -399,8 +399,8 @@ function eV(e) {
     questId: n,
     taskEventName: r,
     progress: i
-  } = e, o = null != (t = z.get(n)) ? t : new Map;
-  o.set(r, i), z.set(n, o)
+  } = e, a = null != (t = z.get(n)) ? t : new Map;
+  a.set(r, i), z.set(n, a)
 }
 
 function eH(e) {
@@ -415,13 +415,13 @@ function eY(e) {
     quest: t,
     placement: n,
     adDecisionData: r,
-    adContext: a,
+    adContext: o,
     responseTtlSeconds: s,
     metadataRaw: l,
     metadataSealed: c,
     fetchedAt: u
   } = e;
-  f = Date.now(), i = false, (o = new Map(o)).set(n, false);
+  f = Date.now(), i = false, (a = new Map(a)).set(n, false);
   let {
     enableNewRequestBehavior: d
   } = U.Z.getConfig({
@@ -434,7 +434,7 @@ function eY(e) {
       fetchedAt: u,
       ttlMillis: eW(s),
       adDecisionData: r,
-      adContext: a,
+      adContext: o,
       metadataRaw: l,
       metadataSealed: c
     };
@@ -442,7 +442,7 @@ function eY(e) {
   } else null == t ? I.delete(n) : I.set(n, {
     quest: t,
     adDecisionData: r,
-    adContext: a,
+    adContext: o,
     metadataRaw: l,
     metadataSealed: c
   })
@@ -458,7 +458,7 @@ function eK(e) {
   let {
     placement: t
   } = e;
-  I.delete(t), f = Date.now(), i = false, (o = new Map(o)).set(t, false)
+  I.delete(t), f = Date.now(), i = false, (a = new Map(a)).set(t, false)
 }
 
 function ez() {
@@ -520,7 +520,7 @@ class e3 extends(P = Chunk442837.ZP.Store) {
     return r
   }
   get isFetchingClaimedQuests() {
-    return a
+    return o
   }
   isFetchingQuestPreview(e) {
     return g.has(e)
@@ -536,7 +536,7 @@ class e3 extends(P = Chunk442837.ZP.Store) {
   }
   isFetchingQuestToDeliverByPlacement(e) {
     var t;
-    return null != (t = null == o ? true : o.get(e)) && t
+    return null != (t = null == a ? true : a.get(e)) && t
   }
   get questDeliveryOverride() {
     return l.get(null != v ? v : "")

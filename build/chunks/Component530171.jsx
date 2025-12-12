@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk913793 = require("./913793.js"),
   Chunk23893 = require("./23893.js"),
@@ -16,34 +16,34 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393903 = require("./393903.js"),
   Chunk206403 = require("./206403.jsx"),
-  Chunk481446 = require("./481446.js");
+  Chunk623357 = require("./623357.js");
 
 function h(e) {
   let {
     title: t,
     collapsedSubtitle: n,
-    isExpanded: o,
+    isExpanded: a,
     onExpandedChange: h,
     onExpandedChangeComplete: g,
     children: E,
     animate: b = true
-  } = e, y = i.useRef(null), [O, v] = i.useState(null), S = i.useRef(o), I = i.useRef(false);
+  } = e, y = i.useRef(null), [O, v] = i.useState(null), S = i.useRef(a), I = i.useRef(false);
   i.useEffect(() => {
-    S.current !== o && (I.current = true, S.current = o)
-  }, [o]);
+    S.current !== a && (I.current = true, S.current = a)
+  }, [a]);
   let T = i.useCallback(e => {
-      null != e.target && I.current && (I.current = false, null == g || g(o))
-    }, [o, g]),
+      null != e.target && I.current && (I.current = false, null == g || g(a))
+    }, [a, g]),
     C = i.useMemo(() => (0, s.debounce)(T, 50), [T]),
     A = (0, p.y)(C, [], {
       enabled: null != g
     }),
-    N = o && null != O;
+    N = a && null != O;
   return i.useLayoutEffect(() => {
     null != y.current && null == O && v(y.current.clientHeight)
   }, [O]), (0, r.jsxs)(l.pJ, {
     ref: A,
-    isExpanded: o,
+    isExpanded: a,
     onExpandedChange: h,
     children: [(0, r.jsx)(_.x, {
       ref: y,
@@ -57,17 +57,17 @@ function h(e) {
           slot: "trigger",
           className: m.triggerButton,
           children: (0, r.jsx)(u.sXD, {
-            className: a()(m.icon, {
-              [m.iconClosed]: !o
+            className: o()(m.icon, {
+              [m.iconClosed]: !a
             }),
             color: d.Z.colors.ICON_LINK
           })
         })
       }),
-      onClick: () => h(!o),
+      onClick: () => h(!a),
       headingColor: "text-link"
     }), (0, r.jsx)(l.V2, {
-      className: a()(m.panel, {
+      className: o()(m.panel, {
         [m.disablePanelAnimation]: !b
       }),
       children: (0, r.jsx)(f.Kqy, {

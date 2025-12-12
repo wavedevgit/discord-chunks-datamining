@@ -9,8 +9,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk312097 = require("./312097.jsx"),
   Chunk810568 = require("./810568.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk226788 = require("./226788.js"),
-  Chunk275914 = require("./275914.js");
+  Chunk452379 = require("./452379.js"),
+  Chunk588109 = require("./588109.js");
 
 function u(e) {
   let {
@@ -25,9 +25,9 @@ function u(e) {
       url: e,
       type: "IMAGE"
     })), ...e]
-  }, [t.artwork, t.screenshots]), g = m.length > 2;
+  }, [t.artwork, t.screenshots]), f = m.length > 2;
 
-  function f(e) {
+  function g(e) {
     if (null == u.current) return;
     let t = u.current.getScrollerState().scrollLeft;
     u.current.scrollTo({
@@ -42,7 +42,7 @@ function u(e) {
       color: "text-strong",
       children: s.intl.string(s.t.bNdK5x)
     }), (0, a.jsxs)("div", {
-      className: g ? d.gameProfileMediaSmall : d.gameProfileMediaLarge,
+      className: f ? d.gameProfileMediaSmall : d.gameProfileMediaLarge,
       children: [(0, a.jsx)(r.xVE, {
         ref: u,
         className: d.imageScroller,
@@ -69,13 +69,13 @@ function u(e) {
             })
           })
         }, t))
-      }), g && (0, a.jsxs)("div", {
+      }), f && (0, a.jsxs)("div", {
         className: d.mediaOverlay,
         children: [(0, a.jsx)("div", {
           className: d.gradientLeft
         }), (0, a.jsx)(r.P3F, {
           className: d.arrowClickable,
-          onClick: () => f(false),
+          onClick: () => g(false),
           children: (0, a.jsx)(r.whL, {
             className: d.arrow,
             color: "currentColor"
@@ -84,7 +84,7 @@ function u(e) {
           className: d.gradientRight
         }), (0, a.jsx)(r.P3F, {
           className: d.arrowClickable,
-          onClick: () => f(1),
+          onClick: () => g(1),
           children: (0, a.jsx)(r.ZSh, {
             className: d.arrow,
             color: "currentColor"

@@ -1,4 +1,4 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 325476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j
@@ -9,9 +9,9 @@ var i, r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk352543 = require("./352543.js");
+  Chunk781466 = require("./781466.js");
 
-function p(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,20 +20,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), i.forEach(function(t) {
-      p(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function b(e, t) {
   }), e
 }
 
-function g(e, t) {
+function f(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -61,28 +61,28 @@ function g(e, t) {
   }
   return r
 }
-class f extends(i = Chunk473749.PureComponent) {
+class g extends(i = Chunk473749.PureComponent) {
   render() {
     let e = this.props,
       {
         scrollable: t
       } = module,
-      n = g(module, ["scrollable"]);
+      n = f(module, ["scrollable"]);
     return exports ? (0, Chunk54381.jsx)("aside", {
-      className: Chunk352543.sidebarScrollable,
+      className: Chunk781466.sidebarScrollable,
       children: (0, Chunk54381.jsx)(Chunk481060.Ttm, {
         fade: true,
-        className: Chunk352543.scroller,
-        children: (0, Chunk54381.jsx)(Chunk600164.Z.Child, b(m({}, require), {
+        className: Chunk781466.scroller,
+        children: (0, Chunk54381.jsx)(Chunk600164.Z.Child, m(p({}, require), {
           wrap: true
         }))
       })
-    }) : (0, Chunk54381.jsx)(Chunk600164.Z.Child, b(m({}, require), {
+    }) : (0, Chunk54381.jsx)(Chunk600164.Z.Child, m(p({}, require), {
       wrap: true
     }))
   }
 }
-p(f, "defaultProps", {
+b(g, "defaultProps", {
   basis: 232,
   grow: 0,
   shrink: 0
@@ -93,19 +93,19 @@ class h extends Chunk473749.PureComponent {
       {
         className: t
       } = module,
-      n = g(module, ["className"]);
-    return (0, Chunk54381.jsx)(Chunk600164.Z.Child, m({
-      className: s()(Chunk352543.content, exports),
+      n = f(module, ["className"]);
+    return (0, Chunk54381.jsx)(Chunk600164.Z.Child, p({
+      className: s()(Chunk781466.content, exports),
       wrap: true
     }, require))
   }
 }
 class x extends(r = Chunk473749.PureComponent) {
   render() {
-    return (0, Chunk54381.jsx)(Chunk600164.Z, m({}, this.props))
+    return (0, Chunk54381.jsx)(Chunk600164.Z, p({}, this.props))
   }
 }
-p(x, "defaultProps", {
+b(x, "defaultProps", {
   direction: Chunk600164.Z.Direction.HORIZONTAL,
   justify: Chunk600164.Z.Justify.START,
   align: Chunk600164.Z.Align.START,
@@ -113,5 +113,5 @@ p(x, "defaultProps", {
   shrink: 1,
   grow: 1,
   basis: "auto"
-}), p(x, "Direction", Chunk600164.Z.Direction), p(x, "Justify", Chunk600164.Z.Justify), p(x, "Align", Chunk600164.Z.Align), p(x, "Wrap", Chunk600164.Z.Wrap), p(x, "Sidebar", f), p(x, "Content", h);
+}), b(x, "Direction", Chunk600164.Z.Direction), b(x, "Justify", Chunk600164.Z.Justify), b(x, "Align", Chunk600164.Z.Align), b(x, "Wrap", Chunk600164.Z.Wrap), b(x, "Sidebar", g), b(x, "Content", h);
 let j = x

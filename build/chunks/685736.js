@@ -67,7 +67,7 @@ class g {
     return new h(await i.getLatest(t, n, r))
   }
   async load(e, t, n) {
-    let r = a.Z.getBasicChannel(t);
+    let r = o.Z.getBasicChannel(t);
     if (null == t || null == r || !(0, d.v)(r)) return new h([]);
     {
       let i = l.Z.messages(e);
@@ -84,7 +84,7 @@ class g {
     for (let n of e.messages)(0, d.$)(n.channel_id) && this.insertStale(e.guildId, n.channel_id, n, t)
   }
   handleLoadMessagesSuccess(e, t) {
-    let n = a.Z.getBasicChannel(e.channelId);
+    let n = o.Z.getBasicChannel(e.channelId);
     null != n && (0, d.$)(e.channelId) && (e.isAfter || e.isBefore || e.hasMoreAfter || !(e.limit > 5) ? this.upsertMany(n.guild_id, e.channelId, e.messages, t) : this.replaceChannel(n.guild_id, e.channelId, e.messages, t))
   }
   handleMessageDelete(e, t) {
@@ -101,26 +101,26 @@ class g {
   }
   resetInMemoryState() {}
   insertStale(e, t, n, i) {
-    let a = l.Z.messagesTransaction(i),
-      s = o.Z.lastTimeConnectedChanged();
-    a.put(e, t, c.a.fromMessage(e, t, n, s), r.Sn.Skip)
+    let o = l.Z.messagesTransaction(i),
+      s = a.Z.lastTimeConnectedChanged();
+    o.put(e, t, c.a.fromMessage(e, t, n, s), r.Sn.Skip)
   }
   upsertOne(e, t, n, i) {
-    let a = l.Z.messagesTransaction(i),
-      s = o.Z.lastTimeConnectedChanged();
-    a.put(e, t, c.a.fromMessage(e, t, n, s), r.Sn.Replace), a.trimChannel(e, t, u.ZP.saveLimit(t))
+    let o = l.Z.messagesTransaction(i),
+      s = a.Z.lastTimeConnectedChanged();
+    o.put(e, t, c.a.fromMessage(e, t, n, s), r.Sn.Replace), o.trimChannel(e, t, u.ZP.saveLimit(t))
   }
   upsertMany(e, t, n, r) {
     let i = l.Z.messagesTransaction(r),
-      a = o.Z.lastTimeConnectedChanged();
-    for (let r of n) i.put(e, t, c.a.fromMessage(e, t, r, a));
+      o = a.Z.lastTimeConnectedChanged();
+    for (let r of n) i.put(e, t, c.a.fromMessage(e, t, r, o));
     i.trimChannel(e, t, u.ZP.saveLimit(t))
   }
   replaceChannel(e, t, n, r) {
     let i = l.Z.messagesTransaction(r),
-      a = o.Z.lastTimeConnectedChanged(),
+      o = a.Z.lastTimeConnectedChanged(),
       d = u.ZP.saveLimit(t),
-      f = (n.length > d ? n.slice(n.length - d) : n).map(n => c.a.fromMessage(e, t, n, a));
+      f = (n.length > d ? n.slice(n.length - d) : n).map(n => c.a.fromMessage(e, t, n, o));
     s.Z.getConfig({
       location: "replaceChannel"
     }).enabled ? i.replaceChannel(e, t, f) : i.replaceAll(e, t, f), i.trimChannel(e, t, u.ZP.saveLimit(t))
@@ -128,9 +128,9 @@ class g {
   async updateOne(e, t, n, r) {
     if (null == n.id) return void m.warn("updateOne: message.id is null; cannot update a message if we do not know its id.");
     let i = l.Z.messages(r.database),
-      a = await i.get(e, t, n.id),
-      s = o.Z.lastTimeConnectedChanged();
-    null != a && i.put(e, t, c.a.fromMessage(e, t, _({}, a.message, n), s))
+      o = await i.get(e, t, n.id),
+      s = a.Z.lastTimeConnectedChanged();
+    null != o && i.put(e, t, c.a.fromMessage(e, t, _({}, o.message, n), s))
   }
   deleteOne(e, t, n, r) {
     l.Z.messagesTransaction(r).deleteMessage(e, t, n)

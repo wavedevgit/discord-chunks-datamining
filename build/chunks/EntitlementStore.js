@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => B
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk314794 = require("./314794.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -129,7 +129,7 @@ class F extends(r = Chunk442837.yh) {
     return h[e]
   }
   getGiftable() {
-    return o().values(g)
+    return a().values(g)
   }
   getForApplication(e) {
     let t = b[e];
@@ -182,8 +182,8 @@ class F extends(r = Chunk442837.yh) {
         if (null != n && n.isValid(e, f.Z, r)) returntrue
       }
     if (I.has(n)) returnfalse;
-    let o = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
-    return !!(null != o && o.sku.id === t && (0, d.Je)(o)) || null
+    let a = null != r ? u.Z.getLibraryApplication(n, r) : u.Z.getActiveLibraryApplication(n);
+    return !!(null != a && a.sku.id === t && (0, d.Je)(a)) || null
   }
   hasFetchedForApplicationIds(e) {
     return e.every(e => I.has(e))
@@ -206,9 +206,9 @@ class F extends(r = Chunk442837.yh) {
       excludeReverseTrial: n = false
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, r = [], i = new Date;
     return null == (e = this.getForApplication(Chunk474936.CL)) || module.forEach(e => {
-      let o = null != e.endsAt && e.endsAt < i,
-        a = e.sourceType === p.kNB.REVERSE_TRIAL && n;
-      e.type !== p.qc2.FRACTIONAL_REDEMPTION || o && !t || a || r.push(e)
+      let a = null != e.endsAt && e.endsAt < i,
+        o = e.sourceType === p.kNB.REVERSE_TRIAL && n;
+      e.type !== p.qc2.FRACTIONAL_REDEMPTION || a && !t || o || r.push(e)
     }), r
   }
   isFractionalPremiumActive() {
@@ -224,7 +224,7 @@ class F extends(r = Chunk442837.yh) {
     var e;
     let t = [];
     return null == (e = this.getForApplication(Chunk474936.CL)) || module.forEach(e => {
-      a.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
+      o.k.ACTIVE_FRACTIONAL_PREMIUM_SKUS.has(e.skuId) && !e.consumed && t.push(e)
     }), exports
   }
 }

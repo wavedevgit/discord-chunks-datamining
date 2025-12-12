@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ class c extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-a(c, "displayName", "RecentlyActiveCollapseStore"), a(c, "persistKey", "RecentlyActiveCollapseStore");
+o(c, "displayName", "RecentlyActiveCollapseStore"), o(c, "persistKey", "RecentlyActiveCollapseStore");
 let u = new c(Chunk570140.Z, {
   SET_RECENTLY_ACTIVE_COLLAPSED: l
 })

@@ -6,7 +6,7 @@ require.d(exports, {
   y: () => _
 }), require("./358797.js"), require("./388685.js"), require("./539854.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk135273 = require("./135273.js");
 require("./17089.js");
 var Chunk673011 = require("./673011.js"),
@@ -84,7 +84,7 @@ class _ {
   }
   waitFor() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-    let r = exports.map((e, t) => (o()(null != e, "Store.waitFor(...) called with null Store at index ".concat(t, " for store ").concat(this.getName())), null != e._dispatcher) ? (o()(e._dispatcher === this._dispatcher, "Stores belong to two separate dispatchers."), e.getDispatchToken()) : null);
+    let r = exports.map((e, t) => (a()(null != e, "Store.waitFor(...) called with null Store at index ".concat(t, " for store ").concat(this.getName())), null != e._dispatcher) ? (a()(e._dispatcher === this._dispatcher, "Stores belong to two separate dispatchers."), e.getDispatchToken()) : null);
     this._dispatcher.addDependencies(this.getDispatchToken(), r.filter(e => null != e))
   }
   emitChange() {

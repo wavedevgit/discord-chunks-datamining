@@ -36,11 +36,11 @@ function m(e) {
     onClose: h
   }), y = (0, l.h)(null == n ? true : n.application_id);
   if (null == b && null != n && (0, s.Z)(n)) return (0, r.jsx)(d.O1, {
-    icon: o.jje,
+    icon: a.jje,
     text: _.intl.string(_.t.RscU7I),
     fullWidth: g !== p.l.MODAL_V2,
     onClick: e => {
-      e.stopPropagation(), null != y ? a.Z.launch({
+      e.stopPropagation(), null != y ? o.Z.launch({
         applicationId: y
       }) : (null == m || m({
         action: "PRESS_PLAY_BUTTON"
@@ -60,7 +60,7 @@ function m(e) {
     text: I,
     asContainer: !T,
     children: (0, r.jsx)(d.O1, {
-      icon: C ? o.YVR : o.iWm,
+      icon: C ? a.YVR : a.iWm,
       text: S,
       disabled: !T,
       loading: O,

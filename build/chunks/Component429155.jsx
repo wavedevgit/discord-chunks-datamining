@@ -12,12 +12,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk28546 = require("./28546.js"),
   Chunk122567 = require("./122567.js"),
   Chunk98528 = require("./98528.js"),
-  Chunk557340 = require("./557340.js");
+  Chunk889230 = require("./889230.js");
 let f = 20,
   p = Chunk473749.forwardRef(function(e, t) {
     let {
       categories: n,
-      store: o,
+      store: a,
       hasSearchResults: c,
       listPadding: p,
       renderRow: m,
@@ -33,7 +33,7 @@ let f = 20,
       sectionFooterHeight: T,
       renderUpsell: C,
       onScroll: A
-    } = e, N = i.useRef(false), P = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), w = o.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
+    } = e, N = i.useRef(false), P = i.useRef(null), R = (0, l.Iu)(e => e.searchQuery), w = a.useStore(e => e.activeCategoryIndex), D = i.useMemo(() => n.map(e => (0, s._O)(e.categoryInfo) ? {
       isNitroLocked: e.categoryInfo.isNitroLocked
     } : {
       isNitroLocked: false
@@ -41,7 +41,7 @@ let f = 20,
       activeCategoryIndex: w,
       isScrolling: N,
       listRef: P,
-      onActiveCategoryIndexChange: o.setActiveCategoryIndex,
+      onActiveCategoryIndexChange: a.setActiveCategoryIndex,
       scrollOffset: f,
       searchQuery: R
     }), L = i.useCallback(e => {
@@ -96,7 +96,7 @@ let f = 20,
       }
     }), []), (0, r.jsxs)("div", {
       className: d.wrapper,
-      children: [R.length > 0 && !c && null != y ? y() : (0, r.jsx)(a.Z, {
+      children: [R.length > 0 && !c && null != y ? y() : (0, r.jsx)(o.Z, {
         role: "none presentation",
         listPadding: p,
         onScroll: L,
@@ -127,15 +127,15 @@ function m(e) {
     scrollTop: i
   } = e;
   if (null == t.current) return;
-  let o = (0, c.y)({
+  let a = (0, c.y)({
     listRef: t,
     searchQuery: n,
     nitroLockedSectionStates: r,
     scrollTop: i
   });
   l.Iu.setState({
-    isNitroLockedSectionVisible: o.isNitroLockedSectionVisible,
-    areOnlyNitroLockedSectionsVisible: o.areOnlyNitroLockedSectionsVisible
+    isNitroLockedSectionVisible: a.isNitroLockedSectionVisible,
+    areOnlyNitroLockedSectionsVisible: a.areOnlyNitroLockedSectionsVisible
   })
 }
 let h = p

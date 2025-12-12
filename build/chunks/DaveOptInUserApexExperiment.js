@@ -2,13 +2,13 @@
 /** chunk id: 529558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NJ: () => a,
+  NJ: () => o,
   Th: () => s,
-  m8: () => o
+  m8: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2023-08_secure_frames_encryption",
     label: "Allowing testing DAVE protocol for voice/video",
@@ -25,7 +25,7 @@ let o = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_dave_for_browser",
     label: "Allowing testing DAVE protocol for browser",

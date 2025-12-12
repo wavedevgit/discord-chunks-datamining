@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZQ: () => i,
-  bH: () => o
+  bH: () => a
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -29,7 +29,7 @@ function i(e) {
   })
 }
 
-function o(e) {
+function a(e) {
   return r.getCurrentConfig({
     location: e
   }).showSettingsToggle

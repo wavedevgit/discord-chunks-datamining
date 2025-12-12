@@ -8,11 +8,11 @@ var Chunk46015 = require("./46015.js"),
   Chunk382698 = require("./382698.js"),
   l = Chunk46015([].push);
 module.exports = function(e) {
-  if (o(e)) return e;
+  if (a(e)) return e;
   if (i(e)) {
     for (var t = e.length, n = [], r = 0; r < t; r++) {
       var c = e[r];
-      "string" == typeof c ? l(n, c) : ("number" == typeof c || "Number" === a(c) || "String" === a(c)) && l(n, s(c))
+      "string" == typeof c ? l(n, c) : ("number" == typeof c || "Number" === o(c) || "String" === o(c)) && l(n, s(c))
     }
     var u = n.length,
       d = true;

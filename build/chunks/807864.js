@@ -8,13 +8,13 @@ function r(e) {
     r = false,
     {
       onContention: i,
-      onContentionResolved: o,
-      onTimeout: a,
+      onContentionResolved: a,
+      onTimeout: o,
       timeoutMs: s
     } = e,
     l = function(e, l) {
-      n.length > 0 ? (i(l, n), r = true) : r && (o(), r = false), n.push(l);
-      let c = null == s || null == a ? null : setTimeout(() => a(l, n), s);
+      n.length > 0 ? (i(l, n), r = true) : r && (a(), r = false), n.push(l);
+      let c = null == s || null == o ? null : setTimeout(() => o(l, n), s);
       return new Promise((r, i) => {
         t = t.then(e).then(r, i).then(() => n.splice(0, 1)), null != c && (t = t.then(() => clearTimeout(c)))
       })

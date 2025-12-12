@@ -38,8 +38,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,8 +47,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -57,8 +57,8 @@ function p(e) {
     channel: t
   } = e, n = d(e, ["channel"]);
   let c = (0, i.e7)([s.Z], () => t.isPrivate() || s.Z.can(l.Pl.CONNECT, t));
-  if (t.isDM() || t.isGroupDM()) return (0, r.jsx)(o.Csw, u({}, n));
+  if (t.isDM() || t.isGroupDM()) return (0, r.jsx)(a.Csw, u({}, n));
   let f = t.isGuildStageVoice(),
-    p = !c || (0, a.Z)(t);
-  return f && p ? (0, r.jsx)(o.pki, u({}, n)) : f ? (0, r.jsx)(o.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(o.BVY, u({}, n)) : p ? (0, r.jsx)(o.gjC, u({}, n)) : (0, r.jsx)(o.gj8, u({}, n))
+    p = !c || (0, o.Z)(t);
+  return f && p ? (0, r.jsx)(a.pki, u({}, n)) : f ? (0, r.jsx)(a.ewx, u({}, n)) : t.isNSFW() ? (0, r.jsx)(a.BVY, u({}, n)) : p ? (0, r.jsx)(a.gjC, u({}, n)) : (0, r.jsx)(a.gj8, u({}, n))
 }

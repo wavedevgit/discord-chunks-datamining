@@ -25,6 +25,6 @@ let f = "BODY",
       let g = null == (n = (0, r.uB)(e)) ? true : n.activeElement;
       if ((0, r.VG)(g) || i.fCx.isActive() || _.has(t) || m.has(t) || h.has(t)) returnfalse;
       let E = null != g && g.tagName === f;
-      return !(o.Z.keyboardModeEnabled && !E && !/^[a-zA-Z0-9]$/.test(t) || c.S.hasSubscribers(d.CkL.MODAL_CLOSE) || a.Z.hasLayers()) && ("Tab" === t && c.S.hasSubscribers(d.CkL.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), c.S.dispatch(d.CkL.TEXTAREA_FOCUS), false) : !(l.Z.isConnected() && s.Z.getMode() === d.pM4.PUSH_TO_TALK && !s.Z.isSelfMute() && Object.values(s.Z.getShortcuts()).map(u.d2).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !p.has(t) && c.S.dispatchToLastSubscribed(d.CkL.TEXTAREA_FOCUS)))
+      return !(a.Z.keyboardModeEnabled && !E && !/^[a-zA-Z0-9]$/.test(t) || c.S.hasSubscribers(d.CkL.MODAL_CLOSE) || o.Z.hasLayers()) && ("Tab" === t && c.S.hasSubscribers(d.CkL.TEXTAREA_FOCUS) && null != document.querySelector('[data-can-focus="true"]') ? (e.preventDefault(), c.S.dispatch(d.CkL.TEXTAREA_FOCUS), false) : !(l.Z.isConnected() && s.Z.getMode() === d.pM4.PUSH_TO_TALK && !s.Z.isSelfMute() && Object.values(s.Z.getShortcuts()).map(u.d2).some(t => t.map(e => e.keyCode).includes(e.keyCode))) && void(!e.metaKey && !e.ctrlKey && !p.has(t) && c.S.dispatchToLastSubscribed(d.CkL.TEXTAREA_FOCUS)))
     }
   }

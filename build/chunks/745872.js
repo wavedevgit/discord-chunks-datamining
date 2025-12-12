@@ -242,8 +242,8 @@ module.exports = function(e, t) {
   var n = W(e),
     r = n.length > 0 ? n[0] : "",
     i = K("%" + r + "%", t),
-    o = i.name,
-    a = i.value,
+    a = i.name,
+    o = i.value,
     s = false,
     l = i.alias;
   l && (r = l[0], Z(n, G([0, 1], l)));
@@ -252,18 +252,18 @@ module.exports = function(e, t) {
       _ = B(p, 0, 1),
       m = B(p, false);
     if (('"' === _ || "'" === _ || "`" === _ || '"' === m || "'" === m || "`" === m) && _ !== m) throw new c("property names with quotes must have matching quotes");
-    if ("constructor" !== p && f || (s = true), r += "." + p, U(x, o = "%" + r + "%")) a = x[o];
-    else if (null != a) {
-      if (!(p in a)) {
+    if ("constructor" !== p && f || (s = true), r += "." + p, U(x, a = "%" + r + "%")) o = x[a];
+    else if (null != o) {
+      if (!(p in o)) {
         if (!t) throw new u("base intrinsic for " + e + " exists, but the property is not available.");
         return
       }
       if (O && d + 1 >= n.length) {
-        var h = O(a, p);
-        a = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : a[p]
-      } else f = U(a, p), a = a[p];
-      f && !s && (x[o] = a)
+        var h = O(o, p);
+        o = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : o[p]
+      } else f = U(o, p), o = o[p];
+      f && !s && (x[a] = o)
     }
   }
-  return a
+  return o
 }

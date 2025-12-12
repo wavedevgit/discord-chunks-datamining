@@ -5,7 +5,7 @@ let r, i;
 require.d(exports, {
   Z: () => q
 }), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./415506.js");
-var o, Chunk392711 = require("./392711.js"),
+var a, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
@@ -381,24 +381,24 @@ function C(e) {
   let {
     layoutId: t,
     widgets: n,
-    version: o,
-    defaultResolution: a
+    version: a,
+    defaultResolution: o
   } = e;
-  if (null != r[t] && r[t].version === o) returnfalse;
+  if (null != r[t] && r[t].version === a) returnfalse;
   let s = [];
   n.forEach((e, t) => {
     let n = A(e.type),
       r = O(b({}, e), {
         zIndex: t
       });
-    "" === r.id && (r.id = (0, l.Z)()), null != n && (r.pinned = n.pinned, false !== n.anchor.left && (r.anchor = (0, _.jL)(n.anchor, a)), false !== n.size.width && (r.size = (0, _.Ox)(n.size, a))), i = O(b({}, i), {
+    "" === r.id && (r.id = (0, l.Z)()), null != n && (r.pinned = n.pinned, false !== n.anchor.left && (r.anchor = (0, _.jL)(n.anchor, o)), false !== n.size.width && (r.size = (0, _.Ox)(n.size, o))), i = O(b({}, i), {
       [r.id]: new p.Z(r)
     }), s.push(r.id)
   }), r = O(b({}, r), {
     [t]: new f.Z({
       id: t,
       widgets: s,
-      version: o
+      version: a
     })
   })
 }
@@ -416,8 +416,8 @@ function A(e) {
 function N(e, t) {
   let n = i[e];
   if (null == n) returnfalse;
-  let o = r[n.layoutId];
-  return null != o && t(n, o)
+  let a = r[n.layoutId];
+  return null != a && t(n, a)
 }
 
 function P(e) {
@@ -426,16 +426,16 @@ function P(e) {
     anchor: n,
     size: r,
     opacity: i,
-    minSize: o,
-    defaultSize: a
+    minSize: a,
+    defaultSize: o
   } = e;
   return N(t, (e, t) => j({
     widget: e,
     anchor: n,
     size: r,
     opacity: i,
-    minSize: o,
-    defaultSize: a
+    minSize: a,
+    defaultSize: o
   }))
 }
 
@@ -490,16 +490,16 @@ function j(e) {
     widget: t,
     anchor: n,
     size: r,
-    opacity: o,
-    minSize: a,
+    opacity: a,
+    minSize: o,
     defaultSize: s
   } = e;
   if (i = O(b({}, i), {
       [t.id]: t.merge({
         anchor: null != n ? n : t.anchor,
         size: null != r ? r : t.size,
-        opacity: null != o ? o : t.opacity,
-        minSize: null != a ? a : t.minSize
+        opacity: null != a ? a : t.opacity,
+        minSize: null != o ? o : t.minSize
       })
     }), null != s) {
     let e = T[t.type];
@@ -565,9 +565,9 @@ function Z(e) {
     t = t.set("zIndex", n.widgets.length), i = O(b({}, i), {
       [t.id]: t
     });
-    let o = [...n.widgets, t.id];
+    let a = [...n.widgets, t.id];
     r = O(b({}, r), {
-      [n.id]: n.set("widgets", o)
+      [n.id]: n.set("widgets", a)
     })
   })
 }
@@ -618,18 +618,18 @@ function K(e) {
   let t = T[e];
   if (null != t) return t.defaultSettings
 }
-class z extends(o = Chunk442837.ZP.PersistedStore) {
+class z extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && null != e.layouts && null != e.widgets ? (r = Y(e.layouts), i = W(e.widgets)) : (r = {}, i = {});
     let t = false,
       n = [];
     s().forEach(T, (e, t) => {
       e.layoutPolicy === m.W.REQUIRED && n.push(t)
-    }), s().forEach(r, (e, o) => {
-      let a = this.getWidgetsForLayout(o),
+    }), s().forEach(r, (e, a) => {
+      let o = this.getWidgetsForLayout(a),
         s = false;
       for (let r of n) {
-        let n = a.find(e => e.type === r);
+        let n = o.find(e => e.type === r);
         if (null != n || T[r].version !== e.version) continue;
         s = t = true;
         let c = (0, l.Z)(),
@@ -638,23 +638,23 @@ class z extends(o = Chunk442837.ZP.PersistedStore) {
         n = new p.Z(O(b({}, u), {
           type: r,
           id: c,
-          layoutId: o,
-          zIndex: a.length
-        })), a.push(n), i = O(b({}, i), {
+          layoutId: a,
+          zIndex: o.length
+        })), o.push(n), i = O(b({}, i), {
           [c]: n
         })
       }
-      s && (e = e.set("widgets", a.map(e => {
+      s && (e = e.set("widgets", o.map(e => {
         let {
           id: t
         } = e;
         return t
       })), r = O(b({}, r), {
-        [o]: e
+        [a]: e
       }))
     }), s().forEach(i, (e, n) => {
-      let o = r[e.layoutId];
-      (null == o || 0 > o.widgets.indexOf(n)) && (i = b({}, i), delete i[n], t = true)
+      let a = r[e.layoutId];
+      (null == a || 0 > a.widgets.indexOf(n)) && (i = b({}, i), delete i[n], t = true)
     }), t && (this.persist(), this.emitChange())
   }
   getState() {
@@ -720,8 +720,8 @@ class z extends(o = Chunk442837.ZP.PersistedStore) {
       switch (r.layoutPolicy) {
         case m.W.REQUIRED:
         case m.W.OPTIONAL_DEFAULT:
-          var o;
-          if ((null != (o = r.version) ? o : 0) === t) {
+          var a;
+          if ((null != (a = r.version) ? a : 0) === t) {
             let t = K(i);
             if (null == t) return;
             n.push(O(b({}, t), {
@@ -744,20 +744,20 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
   if (5 === r && module) {
     let r = v,
       i = [],
-      o = module.map(e => {
-        let o = null != t ? t[e] : null,
-          a = null != n ? n[e] : null,
+      a = module.map(e => {
+        let a = null != t ? t[e] : null,
+          o = null != n ? n[e] : null,
           s = {
             id: e,
             layoutId: r,
             type: e,
-            anchor: o || {
+            anchor: a || {
               top: false,
               left: false,
               bottom: null,
               right: null
             },
-            size: a || {
+            size: o || {
               width: false,
               height: false
             },
@@ -766,9 +766,9 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
           };
         return i.push([s.id, s]), s.id
       }),
-      a = {
+      o = {
         id: r,
-        widgets: o
+        widgets: a
       };
     return {
       layouts: [
@@ -788,31 +788,31 @@ E(z, "displayName", "LayoutStore"), E(z, "persistKey", "LayoutStore"), E(z, "mig
   } = e, r = new Set(Object.keys(h.Odu)), i = Array.from(n).filter(e => {
     let [t] = e;
     return !r.has(t)
-  }), o = Array.from(t).filter(e => {
+  }), a = Array.from(t).filter(e => {
     let [t] = e;
     return t !== v
   });
-  return o.forEach(e => {
-    let [t, n] = e, r = null, o = null;
+  return a.forEach(e => {
+    let [t, n] = e, r = null, a = null;
     if (n.widgets.find(e => {
         let n = i.find(n => {
           let [r, i] = n;
           return r === e && i.layoutId === t
         });
-        return null != n && (null == o && n[1].type === h.Odu.VOICE && (o = n[0]), null == r && n[1].type === h.Odu.TEXT && (r = n[1].pinned), null != r && null != o || true)
-      }), r || null == o) return;
-    let a = (0, l.Z)();
-    n.widgets = [o, a];
+        return null != n && (null == a && n[1].type === h.Odu.VOICE && (a = n[0]), null == r && n[1].type === h.Odu.TEXT && (r = n[1].pinned), null != r && null != a || true)
+      }), r || null == a) return;
+    let o = (0, l.Z)();
+    n.widgets = [a, o];
     let s = K(h.Odu.GUILDS_TEXT);
-    null != s && i.push([a, O(b({}, s), {
+    null != s && i.push([o, O(b({}, s), {
       type: h.Odu.GUILDS_TEXT,
-      id: a,
+      id: o,
       layoutId: t,
       zIndex: 2
     })])
   }), {
     widgets: i,
-    layouts: o
+    layouts: a
   }
 }, e => {
   let {

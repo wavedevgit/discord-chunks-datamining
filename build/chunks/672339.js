@@ -28,12 +28,12 @@ function h(e) {
       e.width = _.HE.width, e.height = _.HE.height;
       let n = e.getContext("2d");
       i()(null != n, "Canvas context is missing");
-      let o = r.height / r.width,
-        a = _.HE.height,
-        s = _.HE.height / o,
+      let a = r.height / r.width,
+        o = _.HE.height,
+        s = _.HE.height / a,
         l = (e.width - s) / 2,
-        c = (e.height - a) / 2;
-      n.drawImage(r, l, c, s, a);
+        c = (e.height - o) / 2;
+      n.drawImage(r, l, c, s, o);
       let u = n.getImageData(0, 0, e.width, e.height);
       t({
         data: u.data,
@@ -62,12 +62,12 @@ function E(e, t, n, r, i) {
 }
 async function b(e, t, n) {
   let r, i = false;
-  if (null == n) return E(e, t, o.zZ.NONE);
-  if (n === _.f7) return E(e, t, o.zZ.BACKGROUND_BLUR);
+  if (null == n) return E(e, t, a.zZ.NONE);
+  if (n === _.f7) return E(e, t, a.zZ.BACKGROUND_BLUR);
   if ("string" == typeof n || "number" == typeof n) {
-    var a;
+    var o;
     let e = (0, f.Z)()[n];
-    i = null != (a = e.isVideo) && a, r = e.source
+    i = null != (o = e.isVideo) && o, r = e.source
   } else {
     let e = n.asset;
     i = (0, s.xR)(e) || (0, s.ay)(e), r = (0, s.rI)({
@@ -79,8 +79,8 @@ async function b(e, t, n) {
   }
   if (null != r) try {
     let n = i ? true : await h(r),
-      a = i ? await g(r) : true;
-    E(e, t, o.zZ.BACKGROUND_REPLACEMENT, n, a)
+      o = i ? await g(r) : true;
+    E(e, t, a.zZ.BACKGROUND_REPLACEMENT, n, o)
   } catch (e) {
     (0, c.Nm)()
   }
@@ -90,8 +90,8 @@ async function y(e, t) {
     track: n = true,
     location: r
   } = t;
-  await b(o.TO.CAMERA_BACKGROUND_LIVE, {
-    type: o.W$.INPUT_DEVICE
+  await b(a.TO.CAMERA_BACKGROUND_LIVE, {
+    type: a.W$.INPUT_DEVICE
   }, e), n && (0, d.Bh)(e, r, "Enabled")
 }
 async function O(e, t, n) {
@@ -99,8 +99,8 @@ async function O(e, t, n) {
     track: r = true,
     location: i
   } = n;
-  (0, c.GS)(), await b(o.TO.CAMERA_BACKGROUND_PREVIEW, {
-    type: o.W$.STREAM,
+  (0, c.GS)(), await b(a.TO.CAMERA_BACKGROUND_PREVIEW, {
+    type: a.W$.STREAM,
     streamId: t
   }, e), r && (0, d.Bh)(e, i, "Preview")
 }

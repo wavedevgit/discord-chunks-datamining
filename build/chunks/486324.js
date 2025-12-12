@@ -5,7 +5,7 @@ require.d(exports, {
   C5: () => b,
   Ff: () => v,
   Ij: () => m,
-  L0: () => a,
+  L0: () => o,
   MY: () => _,
   N8: () => f,
   PB: () => S,
@@ -21,15 +21,15 @@ require.d(exports, {
   sX: () => g,
   u: () => I,
   ut: () => h,
-  vJ: () => o,
+  vJ: () => a,
   xT: () => d
 });
 var Chunk678916 = require("./678916.js"),
   i = function(e) {
     return e.AVATAR = "AVATAR", e.BANNER = "BANNER", e.GUILD_BANNER = "GUILD_BANNER", e.VIDEO_BACKGROUND = "VIDEO_BACKGROUND", e.SCHEDULED_EVENT_IMAGE = "SCHEDULED_EVENT_IMAGE", e.HOME_HEADER = "HOME_HEADER", e.AVATAR_DECORATION = "AVATAR_DECORATION", e.GUILD_ICON = "GUILD_ICON", e
   }({});
-let o = 432,
-  a = 2400,
+let a = 432,
+  o = 2400,
   s = 848,
   l = 2400,
   c = 1350,
@@ -46,7 +46,7 @@ let o = 432,
   y = 172.8,
   O = 108,
   v = Chunk678916.HE.width / Chunk678916.HE.height,
-  S = o / v;
+  S = a / v;
 var I = function(e) {
   return e[e.CROP_GIF_START = 0] = "CROP_GIF_START", e[e.CROP_GIF_COMPLETE = 1] = "CROP_GIF_COMPLETE", e[e.CROP_GIF_ERROR = 2] = "CROP_GIF_ERROR", e
 }({})

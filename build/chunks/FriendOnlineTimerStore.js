@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ class d extends(r = Chunk442837.ZP.PersistedStore) {
     return c
   }
 }
-a(d, "displayName", "FriendOnlineTimerStore"), a(d, "persistKey", "FriendOnlineTimerStore");
+o(d, "displayName", "FriendOnlineTimerStore"), o(d, "persistKey", "FriendOnlineTimerStore");
 let f = new d(Chunk570140.Z, {
   FRIEND_ONLINE_TIMER_REPORTED: u
 })

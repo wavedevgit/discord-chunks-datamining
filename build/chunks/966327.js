@@ -2,7 +2,7 @@
 /** chunk id: 966327, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => o
+  c: () => a
 });
 var Chunk473749 = require("./473749.js");
 
@@ -11,7 +11,7 @@ function i(e, t) {
   null != e && "object" == typeof e && "current" in e && (e.current = t)
 }
 
-function o(e) {
+function a(e) {
   let t = r.useRef(null);
   return {
     triggerRef: r.useCallback(n => {

@@ -55,8 +55,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = e => {
@@ -80,14 +80,14 @@ let h = e => {
     focusProps: E,
     onClick: b
   } = e, y = _(e, ["href", "className", "iconClassName", "rel", "target", "mimeType", "fileName", "focusProps", "onClick"]);
-  let O = i.useMemo(() => o.X.getDefaultLinkInterceptor(t), [t]),
+  let O = i.useMemo(() => a.X.getDefaultLinkInterceptor(t), [t]),
     v = i.useCallback(e => {
       s.default.track(l.rMx.MEDIA_DOWNLOAD_BUTTON_TAPPED, {
         attachment_type: null == h ? true : h[0],
         attachment_subtype: null == h ? true : h[1]
       }), null == b || b(), null == O || O(e)
     }, [O, h, b]);
-  return null != g ? (0, r.jsx)(a.Anchor, p(d({
+  return null != g ? (0, r.jsx)(o.Anchor, p(d({
     href: t,
     onClick: v,
     target: m,
@@ -97,7 +97,7 @@ let h = e => {
     focusProps: E
   }, y), {
     children: g
-  })) : (0, r.jsx)(a.Anchor, p(d({
+  })) : (0, r.jsx)(o.Anchor, p(d({
     href: t,
     onClick: v,
     target: m,
@@ -106,7 +106,7 @@ let h = e => {
     "aria-label": c.intl.string(c.t["1WjMbC"]),
     focusProps: E
   }, y), {
-    children: (0, r.jsx)(a._8t, {
+    children: (0, r.jsx)(o._8t, {
       size: "md",
       color: "currentColor",
       className: u

@@ -16,7 +16,7 @@ function l(e) {
     entry: n,
     onAction: l,
     onClose: c
-  } = e, u = (0, o.Mq)(n), d = (0, a.Z)({
+  } = e, u = (0, a.Mq)(n), d = (0, o.Z)({
     applicationId: u ? n.extra.application_id : true,
     onClose: c
   });

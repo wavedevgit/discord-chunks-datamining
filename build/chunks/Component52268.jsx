@@ -1,7 +1,7 @@
 /** Chunk was on 55183 **/
 /** chunk id: 52268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,10 +15,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk731896 = require("./731896.js"),
   Chunk528439 = require("./528439.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk364705 = require("./364705.js"),
+  Chunk176404 = require("./176404.js"),
   Chunk223223 = require("./223223.js");
 
-function x(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function x(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ let P = () => 80,
       className: n,
       isSelected: i = false
     } = e, l = j(e, ["children", "className", "isSelected"]);
-    return (0, r.jsx)(c.P3F, b(x({
+    return (0, r.jsx)(c.P3F, x(h({
       className: o()(g.effectGridItem, n, {
         [g.selected]: i
       })
@@ -94,22 +94,22 @@ let P = () => 80,
       P = i.useRef(null),
       {
         accessibilityLabel: O,
-        thumbnailPreviewSrc: _,
-        title: v
+        thumbnailPreviewSrc: v,
+        title: E
       } = null != (t = null == m ? true : m.config) ? t : {},
-      E = i.useMemo(() => (0, a.JE)(_), [_]);
-    return (0, r.jsxs)(y, b(x({
+      C = i.useMemo(() => (0, a.JE)(v), [v]);
+    return (0, r.jsxs)(y, x(h({
       innerRef: null != l ? l : P,
       isSelected: s
     }, d), {
       children: [(0, r.jsx)("img", {
-        src: h,
+        src: b,
         alt: O,
         className: g.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: g.presetEffectImg,
-        src: E,
-        alt: v
+        src: C,
+        alt: E
       }), (0, r.jsx)(u.Z, {
         skuId: n.skuId,
         canUsePremiumCollectibles: c,
@@ -118,7 +118,7 @@ let P = () => 80,
       })]
     }))
   },
-  _ = e => {
+  v = e => {
     let {
       user: t,
       guild: n,
@@ -126,7 +126,7 @@ let P = () => 80,
       selectedProfileEffectRef: l,
       onSelect: o,
       onOpenShop: a
-    } = e, u = (0, p.ZP)(), f = null != i, h = d.ZP.canUseCollectibles(t);
+    } = e, u = (0, p.ZP)(), f = null != i, b = d.ZP.canUseCollectibles(t);
     return (0, r.jsx)("section", {
       className: g.section,
       children: (0, r.jsx)(c.GMG, {
@@ -143,13 +143,13 @@ let P = () => 80,
           } = e;
           return t.length
         }),
-        renderItem: (e, t, d, b) => {
+        renderItem: (e, t, d, x) => {
           let {
             section: j,
             items: P
           } = u[e];
           return (0, s.EQ)(P[t]).with(p.Tm, () => (0, r.jsxs)(y, {
-            style: x({}, d),
+            style: h({}, d),
             isSelected: !f,
             onSelect: () => o(null),
             children: [(0, r.jsx)(c.t6m, {
@@ -161,7 +161,7 @@ let P = () => 80,
               color: "text-strong",
               children: null != n ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.PoWNfe)
             })]
-          }, b)).with(p.oT, () => (0, r.jsxs)(y, {
+          }, x)).with(p.oT, () => (0, r.jsxs)(y, {
             style: d,
             onSelect: a,
             children: [(0, r.jsx)(c.EOn, {
@@ -175,17 +175,17 @@ let P = () => 80,
               color: "text-strong",
               children: m.intl.string(m.t.pWG4ze)
             })]
-          }, b)).otherwise(e => {
+          }, x)).otherwise(e => {
             let t = (null == i ? true : i.skuId) === e.skuId;
             return (0, r.jsx)(O, {
-              style: x({}, d),
+              style: h({}, d),
               section: j,
               profileEffect: e,
               innerRef: t ? l : true,
               isSelected: t,
               onSelect: () => o(e),
-              canUsePremiumCollectibles: h
-            }, b)
+              canUsePremiumCollectibles: b
+            }, x)
           })
         },
         renderSection: (e, t) => {
@@ -193,7 +193,7 @@ let P = () => 80,
             header: n
           } = u[e];
           return (0, r.jsx)("div", {
-            style: b(x({}, t), {
+            style: x(h({}, t), {
               height: "".concat(16, "px"),
               position: "absolute"
             }),

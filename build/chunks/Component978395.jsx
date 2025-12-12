@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk155493 = require("./155493.js");
 
 function M(e) {
   let {
@@ -54,14 +54,14 @@ function M(e) {
   } = (0, i.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), Y = (0, a.vh)(t.id), W = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), K = (0, f.b)({
+  })), Y = (0, o.vh)(t.id), W = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), K = (0, f.b)({
     location: "UserProfilePopoutBody"
   }), z = (0, p.E)({
     location: "UserProfilePopoutBody"
   }), q = t.id === n.id, Q = (0, _.Z)({
     location: "UserProfilePopoutBody"
   }), X = (null == M ? true : M.widgets) != null && M.widgets.length > 0, J = Q && X, $ = (0, d.I5)(n);
-  return (0, r.jsxs)(o.Ttm, {
+  return (0, r.jsxs)(a.Ttm, {
     fade: true,
     className: j.body,
     children: [(0, r.jsx)(E.Z, {
@@ -112,9 +112,9 @@ function M(e) {
       className: j.card,
       children: (0, r.jsx)(O.Z, {
         heading: L.intl.string(L.t.Iyka0U),
-        headingIcon: (0, r.jsx)(o.Mgn, {
+        headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
-          color: o.TVs.colors.TEXT_STRONG
+          color: a.TVs.colors.TEXT_STRONG
         }),
         headingColor: "text-strong",
         children: (0, r.jsx)(s.n, {

@@ -2,12 +2,12 @@
 /** chunk id: 586072, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  AC: () => a,
+  AC: () => o,
   IW: () => s,
   aC: () => l,
   bT: () => i,
   kR: () => c,
-  z: () => o
+  z: () => a
 });
 var Chunk818083 = require("./818083.js");
 let i = (0, Chunk818083.B)({
@@ -25,7 +25,7 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "guild",
     id: "2022-09_creator_monetization_raven",
     label: "Creator Monetization Onboarding v2",
@@ -40,7 +40,7 @@ let i = (0, Chunk818083.B)({
       }
     }]
   }),
-  a = (0, Chunk818083.B)({
+  o = (0, Chunk818083.B)({
     kind: "user",
     id: "2022-09_creator_monetization_raven_users",
     label: "Creator Monetization Onboarding v2 Users",

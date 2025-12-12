@@ -55,7 +55,7 @@ var d = {
     return "" + c
   },
   __create: function(e, t, n) {
-    return d.__add(new o({
+    return d.__add(new a({
       type: e,
       mutability: t,
       data: n || {}
@@ -72,8 +72,8 @@ var d = {
   __mergeData: function(e, t) {
     var n = d.__get(e),
       i = r({}, n.getData(), t),
-      o = n.set("data", i);
-    return l = l.set(e, o), o
+      a = n.set("data", i);
+    return l = l.set(e, a), a
   },
   __replaceData: function(e, t) {
     var n = d.__get(e).set("data", t);

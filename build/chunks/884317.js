@@ -8,12 +8,12 @@ var r = this && this.__awaiter || function(e, t, n, r) {
       t(e)
     })
   }
-  return new(n || (n = Promise))(function(n, o) {
-    function a(e) {
+  return new(n || (n = Promise))(function(n, a) {
+    function o(e) {
       try {
         l(r.next(e))
       } catch (e) {
-        o(e)
+        a(e)
       }
     }
 
@@ -21,12 +21,12 @@ var r = this && this.__awaiter || function(e, t, n, r) {
       try {
         l(r.throw(e))
       } catch (e) {
-        o(e)
+        a(e)
       }
     }
 
     function l(e) {
-      e.done ? n(e.value) : i(e.value).then(a, s)
+      e.done ? n(e.value) : i(e.value).then(o, s)
     }
     l((r = r.apply(e, t || [])).next())
   })
@@ -35,7 +35,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 }), exports.MessageLoader = true, exports.loadAllMessagesInLocale = s, exports.waitForAllDefaultIntlMessagesLoaded = l, exports.createLoader = c;
 let Chunk868072 = require("./868072.js");
-class o {
+class a {
   constructor(t, n) {
     if (this.messages = {}, this.localeImportMap = t, this.supportedLocales = Object.keys(t), this.defaultLocale = n, this._localeLoadingPromises = {}, this._parseCache = {}, this._subscribers = new Set, this.fallbackMessage = new i.InternalIntlMessage([], this.defaultLocale), e.hot)
       for (let [n, i] of Object.entries(t)) e.hot.accept(i, () => r(this, true, true, function*() {
@@ -58,17 +58,17 @@ class o {
     if (this.isLocaleLoading(t) && !this.isLocaleLoaded(this.defaultLocale)) return this.fallbackMessage;
     let i = this.getMessageValue(e, this.defaultLocale);
     if (null != i) return i;
-    let o = null == (n = this.fallbackLoader) ? true : n.get(e, t);
-    if (null != o) return o;
-    let a = null != this._debugKeyMap ? `"${this._debugKeyMap[e]}" (${e})` : e,
+    let a = null == (n = this.fallbackLoader) ? true : n.get(e, t);
+    if (null != a) return a;
+    let o = null != this._debugKeyMap ? `"${this._debugKeyMap[e]}" (${e})` : e,
       s = null != this._localeFileMap ? `${t} (${this._localeFileMap[t]})` : t,
       l = null != this._localeFileMap ? `${this.defaultLocale} (${this._localeFileMap[this.defaultLocale]})` : this.defaultLocale;
-    return console.warn(`Requested message ${a} does not have a value in the requested locale ${s} nor the default locale ${l}`), this.fallbackMessage
+    return console.warn(`Requested message ${o} does not have a value in the requested locale ${s} nor the default locale ${l}`), this.fallbackMessage
   }
   getMessageValue(e, t) {
-    var n, r, o;
-    let a = null == (n = this._parseCache[t]) ? true : n[e];
-    if (a) return a;
+    var n, r, a;
+    let o = null == (n = this._parseCache[t]) ? true : n[e];
+    if (o) return o;
     if (null == this.messages[t]) {
       this.supportedLocales.includes(t) && this._loadLocale(t);
       return
@@ -76,7 +76,7 @@ class o {
     let s = this.messages[t][e];
     if (null != s) {
       let n = new i.InternalIntlMessage(s, t);
-      return (null != (r = (o = this._parseCache)[t]) ? r : o[t] = {})[e] = n, n
+      return (null != (r = (a = this._parseCache)[t]) ? r : a[t] = {})[e] = n, n
     }
   }
   _loadLocale(e) {
@@ -87,12 +87,12 @@ class o {
       if (null == this.localeImportMap[e])
         if (!this.supportedLocales.includes(e)) return;
         else throw Error(`Requested to load locale ${e}, which should be supported, but no source for translation data was provided.`);
-      let o = this.localeImportMap[e](),
-        a = null != (i = null == (r = this._localeLoadingPromises[e]) ? true : r.initialized) && i;
+      let a = this.localeImportMap[e](),
+        o = null != (i = null == (r = this._localeLoadingPromises[e]) ? true : r.initialized) && i;
       this._localeLoadingPromises[e] = {
-        initialized: a,
-        current: o
-      }, this.messages[e] = (yield o).default, this._localeLoadingPromises[e] = {
+        initialized: o,
+        current: a
+      }, this.messages[e] = (yield a).default, this._localeLoadingPromises[e] = {
         initialized: true,
         current: true
       }, this.emitChange()
@@ -125,22 +125,22 @@ class o {
     })
   }
 }
-exports.MessageLoader = o;
-let a = [];
+exports.MessageLoader = a;
+let o = [];
 
 function s(e) {
   return r(this, true, true, function*() {
-    yield Promise.all(a.map(t => t._loadLocale(e)))
+    yield Promise.all(o.map(t => t._loadLocale(e)))
   })
 }
 
 function l() {
   return r(this, true, true, function*() {
-    yield Promise.all(a.map(e => e.waitForDefaultLocale()))
+    yield Promise.all(o.map(e => e.waitForDefaultLocale()))
   })
 }
 
 function c(e, t) {
-  let n = new o(e, t);
-  return a.push(n), n
+  let n = new a(e, t);
+  return o.push(n), n
 }

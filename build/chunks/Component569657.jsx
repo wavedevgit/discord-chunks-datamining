@@ -1,13 +1,13 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 569657, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
-  s = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk913793 = require("./913793.js"),
   Chunk247062 = require("./247062.js"),
   Chunk23893 = require("./23893.js"),
@@ -23,71 +23,71 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk739499 = require("./739499.js");
+  Chunk824222 = require("./824222.js");
 
-function C(e) {
+function y(e) {
   let {
     guild: t
   } = e;
   i.useEffect(() => {
-    (0, p.wE)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
-      dismissAction: _.L.INDIRECT_ACTION,
+    (0, m.wE)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id, {
+      dismissAction: v.L.INDIRECT_ACTION,
       guildId: t.id,
       forceTrack: true
     })
   }, [t]);
-  let n = !(0, f.OA)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id) || !t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) || !t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE),
-    l = (0, x.vc)(s()(j.zQD), "LL");
-  return (0, r.jsxs)(a.pJ, {
-    className: O.infobox,
+  let n = !(0, b.OA)(g.z.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id) || !t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) || !t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE),
+    l = (0, h.vc)(a()(j.zQD), "LL");
+  return (0, r.jsxs)(s.pJ, {
+    className: C.infobox,
     defaultExpanded: n,
     children: [(0, r.jsx)(o.X, {
       level: 2,
-      children: (0, r.jsx)(u.tEY, {
+      children: (0, r.jsx)(d.tEY, {
         children: (0, r.jsxs)(c.z, {
           slot: "trigger",
-          className: O.header,
-          children: [(0, r.jsx)(u.Mgn, {
+          className: C.header,
+          children: [(0, r.jsx)(d.Mgn, {
             color: "currentColor"
-          }), (0, r.jsx)(u.xvT, {
+          }), (0, r.jsx)(d.xvT, {
             variant: "heading-lg/semibold",
             tag: "span",
-            children: v.intl.string(v.t["F+YaVP"])
-          }), (0, r.jsx)(u.hic, {
-            className: O.expandButton
+            children: O.intl.string(O.t["F+YaVP"])
+          }), (0, r.jsx)(d.hic, {
+            className: C.expandButton
           })]
         })
       })
-    }), (0, r.jsx)(a.V2, {
-      className: O.panel,
+    }), (0, r.jsx)(s.V2, {
+      className: C.panel,
       children: (0, r.jsxs)("div", {
-        className: O.content,
+        className: C.content,
         children: [(0, r.jsxs)("p", {
-          children: [v.intl.format(v.t.xaPmNf, {}), (0, r.jsxs)("ul", {
-            className: O.infoList,
+          children: [O.intl.format(O.t.xaPmNf, {}), (0, r.jsxs)("ul", {
+            className: C.infoList,
             children: [(0, r.jsx)("li", {
-              children: v.intl.format(v.t.tUarT8, {})
+              children: O.intl.format(O.t.tUarT8, {})
             }), (0, r.jsx)("li", {
-              children: v.intl.format(v.t.r807RN, {})
+              children: O.intl.format(O.t.r807RN, {})
             })]
           })]
-        }), (0, r.jsx)(u.y5t, {
+        }), (0, r.jsx)(d.y5t, {
           forceLevel: 3,
-          children: (0, r.jsx)(u.X6q, {
+          children: (0, r.jsx)(d.X6q, {
             variant: "text-md/bold",
-            children: v.intl.string(v.t.bLwbyU)
+            children: O.intl.string(O.t.bLwbyU)
           })
         }), (0, r.jsx)("p", {
-          children: v.intl.format(v.t.eo5E6e, {
+          children: O.intl.format(O.t.eo5E6e, {
             breakingChangeDate: l
           })
         }), (0, r.jsx)("p", {
-          children: v.intl.format(v.t.iLwQzv, {
+          children: O.intl.format(O.t.iLwQzv, {
             breakingChangeDate: l
           })
         }), (0, r.jsx)("div", {
-          className: O.divider
-        }), (0, r.jsx)(y, {
+          className: C.divider
+        }), (0, r.jsx)(N, {
           guild: t
         })]
       })
@@ -95,77 +95,77 @@ function C(e) {
   })
 }
 
-function y(e) {
+function N(e) {
   let {
     guild: t
-  } = e, n = (0, d.e7)([h.Z], () => h.Z.can(j.Plq.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), s = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, o] = i.useState(true), [c, g] = i.useState(true);
+  } = e, n = (0, u.e7)([p.Z], () => p.Z.can(j.Plq.ADMINISTRATOR, t)), l = t.features.has(j.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), a = t.features.has(j.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [s, o] = i.useState(true), [c, g] = i.useState(true);
   return n ? (0, r.jsxs)("form", {
-    className: O.form,
+    className: C.form,
     children: [(0, r.jsxs)("fieldset", {
       children: [(0, r.jsx)("legend", {
-        children: v.intl.string(v.t["/SSzPD"])
-      }), (0, r.jsx)(N, {
-        label: v.intl.string(v.t.KMbKTt),
-        migratedLabel: v.intl.string(v.t.IJKefK),
+        children: O.intl.string(O.t["/SSzPD"])
+      }), (0, r.jsx)(E, {
+        label: O.intl.string(O.t.KMbKTt),
+        migratedLabel: O.intl.string(O.t.IJKefK),
         migrated: l,
-        enabled: a,
+        enabled: s,
         onChange: o
-      }), (0, r.jsx)(N, {
-        label: v.intl.string(v.t["7ltOG9"]),
-        migratedLabel: v.intl.string(v.t.gVKQNA),
-        migrated: s,
+      }), (0, r.jsx)(E, {
+        label: O.intl.string(O.t["7ltOG9"]),
+        migratedLabel: O.intl.string(O.t.gVKQNA),
+        migrated: a,
         enabled: c,
         onChange: g
       })]
-    }), (0, r.jsx)(u.zxk, {
-      text: v.intl.string(v.t["1Qm822"]),
-      disabled: (!a || l) && (!c || s),
+    }), (0, r.jsx)(d.zxk, {
+      text: O.intl.string(O.t["1Qm822"]),
+      disabled: (!s || l) && (!c || a),
       onClick: () => {
         var e, n;
         return e = t, n = {
-          migratePin: a && !l,
-          migrateSlowmode: c && !s
-        }, void m.Z.show({
-          title: v.intl.string(v.t.fM5aQ2),
-          body: v.intl.format(v.t.rLbJs6, {
+          migratePin: s && !l,
+          migrateSlowmode: c && !a
+        }, void f.Z.show({
+          title: O.intl.string(O.t.fM5aQ2),
+          body: O.intl.format(O.t.rLbJs6, {
             guildName: e.name
           }),
-          cancelText: v.intl.string(v.t["ETE/oC"]),
-          confirmText: v.intl.string(v.t["cY+Oob"]),
+          cancelText: O.intl.string(O.t["ETE/oC"]),
+          confirmText: O.intl.string(O.t["cY+Oob"]),
           onConfirm: () => {
-            E(e.id, n)
+            I(e.id, n)
           }
         })
       }
     })]
   }) : (0, r.jsx)("p", {
-    children: v.intl.string(v.t.hvFwHy)
+    children: O.intl.string(O.t.hvFwHy)
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     label: t,
     migratedLabel: n,
     migrated: i,
     enabled: l,
-    onChange: s
+    onChange: a
   } = e;
-  return (0, r.jsx)(u.XZJ, {
+  return (0, r.jsx)(d.XZJ, {
     label: i ? n : t,
     labelType: "primary",
     disabled: i,
     checked: l || i,
-    onChange: s
+    onChange: a
   })
 }
-async function E(e, t) {
+async function I(e, t) {
   try {
-    await b.Z.migratePermissions(e, t)
+    await x.Z.migratePermissions(e, t)
   } catch (e) {
-    m.Z.show({
-      title: v.intl.string(v.t.R0RpRX),
-      body: v.intl.string(v.t["58yMLG"]),
+    f.Z.show({
+      title: O.intl.string(O.t.R0RpRX),
+      body: O.intl.string(O.t["58yMLG"]),
       confirmVariant: "secondary"
     })
   }

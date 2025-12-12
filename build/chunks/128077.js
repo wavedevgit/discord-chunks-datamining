@@ -31,7 +31,7 @@ function m(e) {
       let n = null != t ? t : (0, d.Nb)(e);
       try {
         var r;
-        return null != (r = (await o.tn.get({
+        return null != (r = (await a.tn.get({
           url: p.ANM.ENTITLEMENTS_FOR_APPLICATION(n),
           query: {
             sku_ids: e,
@@ -46,7 +46,7 @@ function m(e) {
     C = (0, r.useCallback)(async (e, t, n) => {
       let r = O.current;
       if (null == r) {
-        E(new a.ZP("Order not created yet")), y(false);
+        E(new o.ZP("Order not created yet")), y(false);
         return
       }
       y(true), E(null);
@@ -61,8 +61,8 @@ function m(e) {
           if (e.errors && e.errors.length > 0) {
             let t = e.errors;
             if (t.includes(2e3)) {
-              let e = new a.ZP("Insufficient balance");
-              throw e.code = a.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE, e
+              let e = new o.ZP("Insufficient balance");
+              throw e.code = o.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE, e
             }
             let n = "Order signing failed with errors: ".concat(t.join(", "));
             throw Error(n)
@@ -70,16 +70,16 @@ function m(e) {
           if (i.status === s.iF.DRAFT) throw Error("Order could not be signed.");
           throw Error("Unexpected order status: ".concat(i.status))
         }
-        let o = (0, d.Nb)(e),
-          c = await T(e, o);
+        let a = (0, d.Nb)(e),
+          c = await T(e, a);
         if (0 === c.length) {
           await new Promise(e => setTimeout(e, 500));
-          let t = await T(e, o);
+          let t = await T(e, a);
           if (0 === t.length) throw Error("No entitlements found after order signing");
           h(t), y(false), null == n || n(t)
         } else h(c), y(false), null == n || n(c)
       } catch (e) {
-        E(e instanceof a.ZP ? e : new a.ZP(e)), y(false)
+        E(e instanceof o.ZP ? e : new o.ZP(e)), y(false)
       }
     }, [T]),
     A = (0, r.useCallback)(function(e, t, n) {
@@ -87,18 +87,18 @@ function m(e) {
         i = () => {
           y(true), E(null)
         },
-        o = e => {
+        a = e => {
           h(e), y(false), null == n || n(e)
         },
-        a = e => {
+        o = e => {
           E(e), y(false)
         };
       return (0, u.df)({
         skuId: e,
         loadId: t,
         onRedeemStart: i,
-        onRedeemSucceed: o,
-        onRedeemFail: a,
+        onRedeemSucceed: a,
+        onRedeemFail: o,
         isRental: r
       })
     }, []),
@@ -106,7 +106,7 @@ function m(e) {
       let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
       if (v) {
         if (r) {
-          E(new a.ZP("Rental orders are not supported via Orders API yet")), y(false);
+          E(new o.ZP("Rental orders are not supported via Orders API yet")), y(false);
           return
         }
         C(e, t, n)

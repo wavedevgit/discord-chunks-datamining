@@ -63,8 +63,8 @@ function v(e, t) {
 function S(e) {
   let {
     userId: t,
-    className: o,
-    children: a
+    className: a,
+    children: o
   } = e, l = i.useCallback(() => {
     (0, u.k)({
       kind: "user"
@@ -80,10 +80,10 @@ function S(e) {
     })
   }, [t]);
   return (0, r.jsx)(d.Z, {
-    className: o,
+    className: a,
     onClick: l,
     onContextMenu: c,
-    children: a
+    children: o
   })
 }
 
@@ -98,11 +98,11 @@ function I(e) {
     viewingChannelId: C
   } = e, A = i.useRef(null), {
     analyticsLocations: N
-  } = (0, c.ZP)(l.Z.USER_MENTION), P = (0, a.e7)([h.default], () => h.default.getUser(u)), R = (0, a.e7)([p.Z], () => p.Z.getChannel(b)), w = null != R ? R.getGuildId() : null, D = T || null == P || null == w || null == b ? true : e => {
+  } = (0, c.ZP)(l.Z.USER_MENTION), P = (0, o.e7)([h.default], () => h.default.getUser(u)), R = (0, o.e7)([p.Z], () => p.Z.getChannel(b)), w = null != R ? R.getGuildId() : null, D = T || null == P || null == w || null == b ? true : e => {
     null != R && (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("6915"), n.e("8982"), n.e("7717"), n.e("20037")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("6915"), n.e("8982"), n.e("7717"), n.e("75548")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, v(y({}, t), {
         viewingChannelId: C,
         user: P,
@@ -110,7 +110,7 @@ function I(e) {
         guildId: w
       }))
     })
-  }, x = E.ZP.useName(P), L = (0, a.e7)([p.Z, _.ZP, m.Z], () => g.ZP.getNickname(w, b, P));
+  }, x = E.ZP.useName(P), L = (0, o.e7)([p.Z, _.ZP, m.Z], () => g.ZP.getNickname(w, b, P));
   if (null == P) return (0, r.jsx)(S, {
     userId: O,
     className: t,
@@ -133,7 +133,7 @@ function I(e) {
       user: P,
       guildId: null != w ? w : true,
       channelId: b,
-      position: o.tq ? "top" : "right",
+      position: a.tq ? "top" : "right",
       clickTrap: true,
       children: e => j(e)
     })

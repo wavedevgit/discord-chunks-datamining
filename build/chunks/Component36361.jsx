@@ -92,7 +92,7 @@ function v(e) {
         node: t
       });
     case i.Jq.CUSTOM:
-      return (0, r.jsx)(a.X, {
+      return (0, r.jsx)(o.X, {
         children: (0, r.jsx)(t.Component, {})
       });
     default:
@@ -108,7 +108,7 @@ function S(e) {
   } = e;
   return t.type === i.Jq.PANEL ? (0, r.jsx)(v, {
     node: t
-  }) : (0, r.jsx)(o.Z, {
+  }) : (0, r.jsx)(a.Z, {
     node: t,
     children: (0, r.jsx)(v, {
       node: t

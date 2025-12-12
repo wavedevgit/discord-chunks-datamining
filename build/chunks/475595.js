@@ -15,8 +15,8 @@ var Chunk754700 = require("./754700.js"),
   Chunk115179 = require("./115179.js"),
   Chunk324805 = require("./324805.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk380299 = require("./380299.js"),
-  Chunk772400 = require("./772400.js");
+  Chunk255649 = require("./255649.js"),
+  Chunk636573 = require("./636573.js");
 let f = 3,
   p = /\.([a-zA-Z0-9]+)$/,
   _ = ["video/mp4", "video/webm"];
@@ -27,11 +27,11 @@ var m = function(e) {
 function h(e, t, n) {
   let r = O(e, t, n),
     i = v(t),
-    o = null != i && _.includes(i);
+    a = null != i && _.includes(i);
   return {
     url: r,
     mimetype: i,
-    isAnimated: o
+    isAnimated: a
   }
 }
 
@@ -65,34 +65,34 @@ let E = {
   }
 };
 
-function b(e, t, n, o) {
-  let a, l = false,
+function b(e, t, n, a) {
+  let o, l = false,
     c = false;
   switch (t) {
     case "hero":
-      a = g(e.config.assets.heroVideo, e.config.assets.hero);
+      o = g(e.config.assets.heroVideo, e.config.assets.hero);
       break;
     case "hero_image":
-      a = e.config.assets.hero;
+      o = e.config.assets.hero;
       break;
     case "hero_video": {
       let t = e.config.assets.heroVideo;
       if (null == t) return null;
-      a = t;
+      o = t;
       break
     }
     case "quest_bar_hero":
-      a = g(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
+      o = g(e.config.assets.questBarHeroVideo, e.config.assets.questBarHero);
       break;
     case "quest_bar_hero_video": {
       let t = e.config.assets.questBarHeroVideo;
       if (null == t) return null;
-      a = t;
+      o = t;
       break
     }
     case "reward": {
       let t = (0, s.hF)(e);
-      if (t.type === i.w.VIRTUAL_CURRENCY) return o ? {
+      if (t.type === i.w.VIRTUAL_CURRENCY) return a ? {
         url: d.Z,
         mimetype: "video/mp4",
         isAnimated: true
@@ -101,24 +101,24 @@ function b(e, t, n, o) {
         mimetype: "video/webm",
         isAnimated: true
       };
-      a = g(t.assetVideo, t.asset);
+      o = g(t.assetVideo, t.asset);
       break
     }
     case "reward_image": {
       let t = (0, s.hF)(e);
       if (t.type === i.w.VIRTUAL_CURRENCY) return null;
-      a = t.asset;
+      o = t.asset;
       break
     }
     case "game_tile":
-      "dark" === n && null != e.config.assets.gameTileDark ? a = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? a = e.config.assets.gameTileLight : (a = e.config.assets.gameTile, l = true);
+      "dark" === n && null != e.config.assets.gameTileDark ? o = e.config.assets.gameTileDark : "light" === n && null != e.config.assets.gameTileLight ? o = e.config.assets.gameTileLight : (o = e.config.assets.gameTile, l = true);
       break;
     case "logo_type":
-      "dark" === n && null != e.config.assets.logotypeDark ? a = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? a = e.config.assets.logotypeLight : (a = e.config.assets.logotype, l = true);
+      "dark" === n && null != e.config.assets.logotypeDark ? o = e.config.assets.logotypeDark : "light" === n && null != e.config.assets.logotypeLight ? o = e.config.assets.logotypeLight : (o = e.config.assets.logotype, l = true);
       break;
     case "cosponsor_logo_type":
       if (null == e.config.cosponsorMetadata) return null;
-      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? a = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? a = e.config.cosponsorMetadata.logotypeLight : (a = e.config.cosponsorMetadata.logotype, l = true);
+      "dark" === n && null != e.config.cosponsorMetadata.logotypeDark ? o = e.config.cosponsorMetadata.logotypeDark : "light" === n && null != e.config.cosponsorMetadata.logotypeLight ? o = e.config.cosponsorMetadata.logotypeLight : (o = e.config.cosponsorMetadata.logotype, l = true);
       break;
     case "video_player_video":
     case "video_player_video_low_res":
@@ -128,14 +128,14 @@ function b(e, t, n, o) {
     case "video_player_transcript": {
       var f;
       if (!("taskConfigV2" in e.config)) return null;
-      let n = e.config.taskConfigV2.tasks[o ? r.X.WATCH_VIDEO_ON_MOBILE : r.X.WATCH_VIDEO],
+      let n = e.config.taskConfigV2.tasks[a ? r.X.WATCH_VIDEO_ON_MOBILE : r.X.WATCH_VIDEO],
         i = E[t],
         s = null == n || null == (f = n.assets[i.variant]) ? true : f[i.property];
       if (null == s) return null;
-      a = s, c = true
+      o = s, c = true
     }
   }
-  let p = h(e.id, a, {
+  let p = h(e.id, o, {
     theme: l ? n : true
   });
   return c && null == p.mimetype ? null : p
@@ -192,7 +192,7 @@ function S(e) {
 }
 
 function I(e, t) {
-  let n = (0, a.Z)();
+  let n = (0, o.Z)();
   return n < f ? {
     width: e,
     height: t
@@ -205,12 +205,12 @@ function I(e, t) {
 function T(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
   if (e.startsWith("blob:")) return e;
-  let n = o.Z.toURLSafe(e);
+  let n = a.Z.toURLSafe(e);
   return null == n ? e : (null != t.format && n.searchParams.append("format", t.format), null != t.width && n.searchParams.append("width", "".concat(S(t.width))), null != t.height && n.searchParams.append("height", "".concat(S(t.height))), n.toString())
 }
 
 function C(e, t) {
   if (e.startsWith("blob:")) return e;
-  let n = o.Z.toURLSafe(e);
+  let n = a.Z.toURLSafe(e);
   return null == n ? null : (n.searchParams.append("format", "webp"), null != t && (n.searchParams.append("width", "".concat(S(t.width))), n.searchParams.append("height", "".concat(S(t.height)))), n.toString())
 }

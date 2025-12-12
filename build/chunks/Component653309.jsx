@@ -8,11 +8,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk887490 = require("./887490.js"),
-  Chunk12888 = require("./12888.js"),
-  Chunk953782 = require("./953782.js"),
-  Chunk3954 = require("./3954.js");
+  Chunk884878 = require("./884878.js"),
+  Chunk299477 = require("./299477.js"),
+  Chunk468830 = require("./468830.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,25 +53,25 @@ function p(e, t) {
   }), e
 }
 let _ = {
-  strong: Chunk12888.bold,
-  em: Chunk12888.italics,
-  u: Chunk12888.underline,
-  s: Chunk12888.strikethrough,
-  inlineCode: Chunk12888.inlineCode,
-  link: Chunk12888.fakeLink,
-  url: Chunk12888.fakeLink,
-  autolink: Chunk12888.fakeLink,
-  silentPrefix: Chunk12888.fakeLink,
-  spoiler: o()(Chunk3954.spoilerContent, Chunk3954.spoilerMarkdownContent, Chunk3954.obscuredTextContent, Chunk12888.spoiler),
-  staticRouteLink: Chunk12888.fakeLink,
-  syntaxBefore: Chunk12888.syntaxBefore,
-  syntaxAfter: Chunk12888.syntaxAfter,
-  codeBlockText: Chunk12888.codeBlockText,
-  codeBlockSyntax: Chunk12888.codeBlockSyntax,
-  codeBlockLang: Chunk12888.codeBlockLang,
-  subtext: Chunk12888.subtext,
-  mentionSuggestion: Chunk953782.mentionSuggestion,
-  mentionSuggestionSimpleColorVariant: Chunk953782.mentionSuggestionSimpleColorVariant
+  strong: Chunk884878.bold,
+  em: Chunk884878.italics,
+  u: Chunk884878.underline,
+  s: Chunk884878.strikethrough,
+  inlineCode: Chunk884878.inlineCode,
+  link: Chunk884878.fakeLink,
+  url: Chunk884878.fakeLink,
+  autolink: Chunk884878.fakeLink,
+  silentPrefix: Chunk884878.fakeLink,
+  spoiler: a()(Chunk468830.spoilerContent, Chunk468830.spoilerMarkdownContent, Chunk468830.obscuredTextContent, Chunk884878.spoiler),
+  staticRouteLink: Chunk884878.fakeLink,
+  syntaxBefore: Chunk884878.syntaxBefore,
+  syntaxAfter: Chunk884878.syntaxAfter,
+  codeBlockText: Chunk884878.codeBlockText,
+  codeBlockSyntax: Chunk884878.codeBlockSyntax,
+  codeBlockLang: Chunk884878.codeBlockLang,
+  subtext: Chunk884878.subtext,
+  mentionSuggestion: Chunk299477.mentionSuggestion,
+  mentionSuggestionSimpleColorVariant: Chunk299477.mentionSuggestionSimpleColorVariant
 };
 
 function m(e, t) {
@@ -82,8 +82,8 @@ function m(e, t) {
       text: f
     } = t,
     m = false,
-    [h] = a.bN.node(e, a.C0.parent(a.bN.findPath(e, f)));
-  switch (a.bN.isEditor(h) ? "editor" : h.type) {
+    [h] = o.bN.node(e, o.C0.parent(o.bN.findPath(e, f)));
+  switch (o.bN.isEditor(h) ? "editor" : h.type) {
     case "line":
     case "blockQuote": {
       m = true;
@@ -99,12 +99,12 @@ function m(e, t) {
           throw Error("Slate: Unknown decoration attribute: ".concat(t))
         }
       }).filter(e => null != e).join(" ");
-      n = o()(e, {
+      n = a()(e, {
         [s.syntaxOverride]: "||" === u.text || "\\" === u.text
       })
     }
   }
-  return n = o()(n, {
+  return n = a()(n, {
     [l.emptyText]: "" === f.text
   }), (0, r.jsx)("span", p(d({}, i), {
     className: n,

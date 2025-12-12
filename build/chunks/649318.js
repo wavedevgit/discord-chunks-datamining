@@ -14,7 +14,7 @@ require.d(exports, {
 var Chunk403644 = require("./403644.js"),
   i = require.n(Chunk403644),
   Chunk565925 = require("./565925.js"),
-  a = require.n(Chunk565925),
+  o = require.n(Chunk565925),
   Chunk21690 = require("./21690.js"),
   l = require.n(Chunk21690),
   Chunk264344 = require("./264344.js"),
@@ -120,8 +120,8 @@ function I(e) {
     mid: t,
     type: n,
     setup: r,
-    direction: o,
-    baseSDP: a,
+    direction: a,
+    baseSDP: o,
     codec: s,
     payload: l,
     bitrate: c,
@@ -131,7 +131,7 @@ function I(e) {
     sendingVideo: b,
     enableAudioNack: O
   } = e;
-  if ("inactive" === o && !_.WS) return {
+  if ("inactive" === a && !_.WS) return {
     connection: {
       ip: "0.0.0.0",
       version: 4
@@ -151,8 +151,8 @@ function I(e) {
   };
   let {
     media: [v]
-  } = d.parse(a);
-  if (v.type = n, v.protocol = y, v.payloads = l, v.setup = r, v.mid = t, v.rtcpMux = "rtcp-mux", v.direction = o, v.ssrcs = f, f.length > 0 && (null != E && (v.ssrcGroups = i()(f, g).map(e => {
+  } = d.parse(o);
+  if (v.type = n, v.protocol = y, v.payloads = l, v.setup = r, v.mid = t, v.rtcpMux = "rtcp-mux", v.direction = a, v.ssrcs = f, f.length > 0 && (null != E && (v.ssrcGroups = i()(f, g).map(e => {
       let t = e[0].id;
       return {
         semantics: "FID",
@@ -234,8 +234,8 @@ function T(e) {
     baseSDP: n,
     direction: r,
     audioCodec: i,
-    audioPayloadType: o,
-    audioBitRate: a,
+    audioPayloadType: a,
+    audioBitRate: o,
     videoCodec: s,
     videoPayloadType: l,
     videoBitRate: c,
@@ -249,8 +249,8 @@ function T(e) {
       let [r, u, f, m, h] = t;
       if ("video" === f && (0 === l || 0 === d)) return;
       let g = "audio" === f ? i : s,
-        E = "audio" === f ? o : l,
-        b = "audio" === f ? a : c;
+        E = "audio" === f ? a : l,
+        b = "audio" === f ? o : c;
       _.push(I({
         mid: h,
         type: f,
@@ -267,7 +267,7 @@ function T(e) {
   } else {
     let e = "answer" === t ? "passive" : "actpass",
       u = f.filter(e => {
-        let [t, n, r, i, o] = e;
+        let [t, n, r, i, a] = e;
         return "inactive" !== i && "audio" === r
       }).map(e => {
         let [t, n] = e;
@@ -280,13 +280,13 @@ function T(e) {
         direction: r,
         baseSDP: n,
         codec: i,
-        payload: o,
-        bitrate: a,
+        payload: a,
+        bitrate: o,
         ssrcs: u.flat(),
         extensions: p
       })), l > 0) {
       let t = f.filter(e => {
-        let [t, n, r, i, o] = e;
+        let [t, n, r, i, a] = e;
         return "inactive" !== i && "video" === r
       }).map(e => {
         let [t, n] = e;
@@ -319,8 +319,8 @@ function C(e) {
     baseSDP: n,
     audioCodec: r,
     audioPayloadType: i,
-    audioBitRate: o,
-    videoCodec: a,
+    audioBitRate: a,
+    videoCodec: o,
     videoPayloadType: s,
     videoBitRate: l,
     sendingVideo: c,
@@ -338,10 +338,10 @@ function C(e) {
       mid: b
     } = e;
     "" !== h ? t = v(h, d, "audio" === g ? "a" : "v") : (t = [], "sendonly" === E ? E = "inactive" : "sendrecv" === E && (E = "recvonly"));
-    let y = "audio" === g ? r : a,
+    let y = "audio" === g ? r : o,
       O = "audio" === g ? i : s,
       S = "audio" === g ? null : u,
-      T = "audio" === g ? o : l;
+      T = "audio" === g ? a : l;
     _.push(I({
       mid: b,
       type: g,
@@ -364,19 +364,19 @@ function C(e) {
 }
 
 function A(e, t, n, r, i) {
-  let o = e.find(e => e.codec === r);
-  if (null == o) return null;
-  let a = t.find(e => RegExp("^apt=".concat(o.payload)).test(e.config)),
+  let a = e.find(e => e.codec === r);
+  if (null == a) return null;
+  let o = t.find(e => RegExp("^apt=".concat(a.payload)).test(e.config)),
     s = null;
-  if (null != a) {
-    let t = e.find(e => e.codec === p.ad.RTX && e.payload === a.payload);
+  if (null != o) {
+    let t = e.find(e => e.codec === p.ad.RTX && e.payload === o.payload);
     null != t && (s = t.payload)
   }
   return {
     type: n,
     name: r,
     priority: i + 1,
-    payloadType: o.payload,
+    payloadType: a.payload,
     rtxPayloadType: s
   }
 }
@@ -385,8 +385,8 @@ function N(e, t) {
   let n = d.parse(e).media.reduce((e, n) => {
     let r, {
       type: i,
-      rtp: o,
-      ssrcs: a,
+      rtp: a,
+      ssrcs: o,
       fmtp: s,
       direction: l,
       mid: c
@@ -398,15 +398,15 @@ function N(e, t) {
       }), i) {
       case "audio":
         [p.ad.OPUS].forEach((t, n) => {
-          let r = A(o, s, i, t, n);
+          let r = A(a, s, i, t, n);
           null != r && e.codecs.push(r)
-        }), "sendrecv" === l && null != (r = null == a ? true : a.find(e => "cname" === e.attribute)) && (e.audioSSRC = r.id);
+        }), "sendrecv" === l && null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.audioSSRC = r.id);
         break;
       case "video":
         (t ? [p.ad.H265, p.ad.H264, p.ad.VP8, p.ad.VP9] : [p.ad.H264, p.ad.VP8, p.ad.VP9]).forEach((t, n) => {
-          let r = A(o, s, i, t, n);
+          let r = A(a, s, i, t, n);
           null != r && e.codecs.push(r)
-        }), "sendrecv" === l && (null != (r = null == a ? true : a.find(e => "cname" === e.attribute)) && (e.videoSSRC = r.id), null != (r = null == a ? true : a.findLast(e => "cname" === e.attribute)) && (r.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = r.id))
+        }), "sendrecv" === l && (null != (r = null == o ? true : o.find(e => "cname" === e.attribute)) && (e.videoSSRC = r.id), null != (r = null == o ? true : o.findLast(e => "cname" === e.attribute)) && (r.id === e.videoSSRC && E.warn("Unable to find a unique rtx SSRC!"), e.rtxSSRC = r.id))
     }
     return e
   }, {
@@ -416,16 +416,16 @@ function N(e, t) {
     videoSSRC: 0,
     rtxSSRC: 0
   });
-  return n.codecs = l()(n.codecs, a()), n
+  return n.codecs = l()(n.codecs, o()), n
 }
 
 function P(e, t) {
   var n;
   let {
     codecs: r
-  } = N(e, t), i = r.find(e => e.name === p.ad.VP8), o = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null != (n = null == i ? true : i.rtxPayloadType) ? n : 0, " rtx"), "i");
+  } = N(e, t), i = r.find(e => e.name === p.ad.VP8), a = RegExp("^a=ice|a=extmap|a=fingerprint|opus|VP8|".concat(null != (n = null == i ? true : i.rtxPayloadType) ? n : 0, " rtx"), "i");
   return {
-    sdp: [...new Set(e.split(/\r\n/).filter(e => o.test(e)))].join("\n"),
+    sdp: [...new Set(e.split(/\r\n/).filter(e => a.test(e)))].join("\n"),
     codecs: r
   }
 }

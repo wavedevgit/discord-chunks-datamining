@@ -29,7 +29,7 @@ class p extends Chunk147913.Z {
         this.maybeFetchSubscriptions(), this.maybeFetchCountryCode(), this.maybeFetchMostRecentSubscription()
       }
     }), f(this, "maybeFetchSubscriptions", async () => {
-      let e = a.default.getCurrentUser(),
+      let e = o.default.getCurrentUser(),
         t = s.Z.isSubscriptionFetching;
       if ((0, u.I5)(e)) {
         l.Z.hasFetchedSubscriptions() || t || await (0, r.jg)();
@@ -38,12 +38,12 @@ class p extends Chunk147913.Z {
       }
     }), f(this, "maybeFetchMostRecentSubscription", () => {
       var e;
-      let t = a.default.getCurrentUser(),
+      let t = o.default.getCurrentUser(),
         n = (0, u.xI)(null != (e = null == t ? true : t.premiumType) ? e : null, d.PremiumTypes.TIER_1),
         i = l.Z.getIsFetchingMostRecentSubscription();
       null != t && n && t.hasHadPremium() && !i && (0, r.ou)()
     }), f(this, "maybeFetchCountryCode", async () => {
-      let e = a.default.getCurrentUser();
+      let e = o.default.getCurrentUser();
       (0, u.I5)(e) && !s.Z.ipCountryCodeLoaded && await this.fetchCountryCode()
     }), f(this, "fetchCountryCode", async () => {
       await (0, r.GE)(), null != s.Z.ipCountryCode && await (0, r.tZ)()

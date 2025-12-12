@@ -101,11 +101,11 @@ function S(e) {
     return o
   }(e, ["guildProductContext", "sourceAnalyticsLocations", "applicationId"]);
   let {
-    analyticsLocations: d
+    analyticsLocations: b
   } = (0, c.ZP)(n, o.Z.GUILD_PRODUCT_PAYMENT_MODAL);
   return (0, r.jsx)(g.R, m(v({}, t), {
     children: (0, r.jsx)(c.Gt, {
-      value: d,
+      value: b,
       children: (0, r.jsx)(i.PaymentContextProvider, {
         stepConfigs: x,
         applicationId: u,
@@ -116,7 +116,7 @@ function S(e) {
           children: (0, r.jsx)(l.KB, {
             children: (0, r.jsx)(s.PaymentModal, v({
               initialPlanId: null,
-              analyticsLocations: d,
+              analyticsLocations: b,
               renderHeader: P.L
             }, f))
           })

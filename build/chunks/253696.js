@@ -54,7 +54,7 @@ function g(e) {
     rowSize: _,
     isBurstReaction: h,
     analyticsObject: g
-  } = e, E = a.Z.getChannel(s.Z.getChannelId()), b = null == E ? true : E.getGuildId(), y = n === f.Hz.REACTION ? o.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : o.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? o.ZP.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.Hz.REACTION ? o.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : o.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, S = y.slice(0, v), I = null != b ? o.ZP.getGuildEmoji(b) : [], T = Object.values(null != (t = o.ZP.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
+  } = e, E = o.Z.getChannel(s.Z.getChannelId()), b = null == E ? true : E.getGuildId(), y = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.frequently.slice() : a.ZP.emojiFrecencyWithoutFetchingLatest.frequently.slice(), O = null != E ? a.ZP.getDisambiguatedEmojiContext(E.getGuildId()).favoriteEmojisWithoutFetchingLatest : [], v = n === f.Hz.REACTION ? a.ZP.emojiReactionFrecencyWithoutFetchingLatest.numFrequentlyItems : a.ZP.emojiFrecencyWithoutFetchingLatest.numFrequentlyItems, S = y.slice(0, v), I = null != b ? a.ZP.getGuildEmoji(b) : [], T = Object.values(null != (t = a.ZP.getDisambiguatedEmojiContext(null == E ? true : E.getGuildId()).groupedCustomEmojis) ? t : {}).reduce((e, t) => e += t.length, 0), {
     topEmojis: C,
     newlyAddedEmojis: A
   } = (0, u._)({

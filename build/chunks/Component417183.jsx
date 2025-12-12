@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk617015 = require("./617015.js"),
-  Chunk67165 = require("./67165.js");
+  Chunk702301 = require("./702301.js");
 
 function d(e, t, i) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,7 +36,7 @@ function m(e) {
   return e
 }
 
-function N(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var i = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function N(e, t) {
     Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
   }), e
 }
-class O extends Chunk473749.PureComponent {
+class N extends Chunk473749.PureComponent {
   componentWillLeave(e) {
     a.Z.parallel([a.Z.timing(this.state.opacity, {
       toValue: 0,
@@ -79,7 +79,7 @@ class O extends Chunk473749.PureComponent {
       user: c,
       onClick: h,
       isActive: d,
-      className: O,
+      className: N,
       activeClassName: y
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk91192.mh, {
@@ -89,8 +89,8 @@ class O extends Chunk473749.PureComponent {
           left: false,
           right: false
         },
-        children: (0, n.jsx)(a.Z.div, N(m({
-          className: o()(O, p.peopleListItem, null != y ? {
+        children: (0, n.jsx)(a.Z.div, O(m({
+          className: o()(N, p.peopleListItem, null != y ? {
             [y]: d || s
           } : null, {
             [p.active]: d || s
@@ -137,8 +137,8 @@ class O extends Chunk473749.PureComponent {
       }), (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([i.e("79695"), i.e("69220"), i.e("77635")]).then(i.bind(i, 881351));
-        return i => (0, n.jsx)(e, N(m({}, i), {
+        } = await Promise.all([i.e("79695"), i.e("69220"), i.e("26465")]).then(i.bind(i, 881351));
+        return i => (0, n.jsx)(e, O(m({}, i), {
           user: t
         }))
       }, {
@@ -151,4 +151,4 @@ class O extends Chunk473749.PureComponent {
     })
   }
 }
-let y = O
+let y = N

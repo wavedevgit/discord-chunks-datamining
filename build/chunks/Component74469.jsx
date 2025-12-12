@@ -23,14 +23,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk131085 = require("./131085.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk999087 = require("./999087.js");
+  Chunk149782 = require("./149782.js");
 let S = (0, Chunk313201.hQ)(),
   I = Chunk473749.memo(function(e) {
     let {
       availablePrimaryGuilds: t,
       pendingPrimaryGuildId: n,
       onChange: c
-    } = e, [I, T] = (0, u.US)([a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), C = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), A = (0, o.e7)([h.default], () => {
+    } = e, [I, T] = (0, u.US)([o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE]), C = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), A = (0, a.e7)([h.default], () => {
       var e;
       return (0, f.Pb)(null == (e = h.default.getCurrentUser()) ? true : e.primaryGuild).guildId
     }), N = true !== n ? n : A, P = i.useMemo(() => t.reduce((e, t) => {
@@ -42,15 +42,15 @@ let S = (0, Chunk313201.hQ)(),
     }, []), [t]), R = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
-      let o = C.get(e.value);
-      if (null == o) return null;
-      let a = null == (t = o.profile) ? true : t.tag;
-      return null == a ? null : (0, r.jsx)(g.Z, {
-        guildTag: a,
-        guildBadge: null != (i = null == (n = o.profile) ? true : n.badge) ? i : true,
-        guildId: o.id,
+      let a = C.get(e.value);
+      if (null == a) return null;
+      let o = null == (t = a.profile) ? true : t.tag;
+      return null == o ? null : (0, r.jsx)(g.Z, {
+        guildTag: o,
+        guildBadge: null != (i = null == (n = a.profile) ? true : n.badge) ? i : true,
+        guildId: a.id,
         guildName: e.label,
-        guildIcon: o.icon,
+        guildIcon: a.icon,
         guildIconSize: 32
       })
     }, [C]), w = i.useCallback(e => {
@@ -67,13 +67,13 @@ let S = (0, Chunk313201.hQ)(),
     }, [C]), D = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
-      let o = C.get(e.value);
-      if (null == o) return null;
-      let a = null == (t = o.profile) ? true : t.tag;
-      return null == a ? null : (0, r.jsx)(p.m0, {
-        guildId: o.id,
-        guildTag: a,
-        guildBadge: null != (i = null == (n = o.profile) ? true : n.badge) ? i : true,
+      let a = C.get(e.value);
+      if (null == a) return null;
+      let o = null == (t = a.profile) ? true : t.tag;
+      return null == o ? null : (0, r.jsx)(p.m0, {
+        guildId: a.id,
+        guildTag: o,
+        guildBadge: null != (i = null == (n = a.profile) ? true : n.badge) ? i : true,
         badgeSize: b.Gg.SIZE_16,
         textColor: "interactive-text-default",
         textVariant: "text-sm/semibold"
@@ -92,7 +92,7 @@ let S = (0, Chunk313201.hQ)(),
       title: O.intl.string(O.t.Pdd1nd),
       titleId: S,
       ref: U,
-      titleIcon: I === a.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, r.jsx)(l.IGR, {
+      titleIcon: I === o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, r.jsx)(l.IGR, {
         text: O.intl.string(O.t.y2b7CA),
         className: v.newBadge
       }),

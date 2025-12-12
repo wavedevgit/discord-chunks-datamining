@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 848442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -28,7 +28,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk176505 = require("./176505.js"),
   Chunk629481 = require("./629481.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk296553 = require("./296553.js");
+  Chunk265665 = require("./265665.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,43 +67,43 @@ function Z(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, p.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([O.Z], () => O.Z.getGuild(t)), x = (null == g ? true : g.features.has(C.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), w = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
-  return (0, r.jsx)(j.m, {
+  } = e, u = (0, p.RF)(t, "guild_shop_channel_row"), g = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), E = (null == g ? true : g.features.has(x.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(S.tM, "false"), w = (0, a.e7)([d.Z], () => d.Z.useReducedMotion);
+  return (0, r.jsx)(C.m, {
     id: "shop-".concat(t),
-    className: l()(I.previewChannelRow, {
-      [I.selected]: n,
-      [I.phantomPreview]: Z
+    className: l()(_.previewChannelRow, {
+      [_.selected]: n,
+      [_.phantomPreview]: Z
     }),
-    innerClassName: I.previewChannelRowContent,
-    renderIcon: e => (0, r.jsx)(m.Z, {
+    innerClassName: _.previewChannelRowContent,
+    renderIcon: e => (0, r.jsx)(b.Z, {
       width: 20,
       height: 20,
-      className: l()([e, I.shopIcon])
+      className: l()([e, _.shopIcon])
     }),
-    text: S.intl.string(S.t.al5EXL),
+    text: I.intl.string(I.t.al5EXL),
     selected: n,
     onClick: i,
     trailing: (0, r.jsxs)("div", {
-      className: I.gifSection,
+      className: _.gifSection,
       children: [w ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
-        text: S.intl.string(S.t.y2b7CA),
-        className: I.newBadge
+        text: I.intl.string(I.t.y2b7CA),
+        className: _.newBadge
       }) : (0, r.jsx)("img", {
         src: (0, h.b)("server_products/storefront/money.gif"),
-        className: I.money,
+        className: _.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {
-        className: I.closeButton,
+        className: _.closeButton,
         onClick: e => {
-          if (e.stopPropagation(), (0, b.Q3)(a.z.SERVER_SHOP_PHANTOM_PREVIEW), v.default.track(C.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, f.hH)(t)), {
-              action_taken: E.mz.DISMISS_CHANNEL_ROW
-            })), !u || !x) {
+          if (e.stopPropagation(), (0, m.Q3)(o.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, f.hH)(t)), {
+              action_taken: S.mz.DISMISS_CHANNEL_ROW
+            })), !u || !E) {
             var n;
-            (0, _.dL)(C.Z5c.CHANNEL(t, null == (n = y.ZP.getDefaultChannel(t)) ? true : n.id))
+            (0, y.dL)(x.Z5c.CHANNEL(t, null == (n = O.ZP.getDefaultChannel(t)) ? true : n.id))
           }
         },
-        "aria-label": S.intl.string(S.t.cpT0Cq),
+        "aria-label": I.intl.string(I.t.cpT0Cq),
         children: (0, r.jsx)(c.k$p, {
           size: "xs",
           color: "currentColor"
@@ -117,23 +117,23 @@ function w(e) {
   let {
     guild: t,
     selected: i
-  } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
-    s.K.set(E.tM, "true"), (0, _.uL)(C.Z5c.CHANNEL(t.id, x.oC.GUILD_SHOP))
+  } = e, l = (0, g.g)(t, "guild_shop_channel_row"), a = () => {
+    s.K.set(S.tM, "true"), (0, y.uL)(x.Z5c.CHANNEL(t.id, E.oC.GUILD_SHOP))
   };
   return l ? (0, r.jsx)(Z, {
     guildId: t.id,
     selected: i,
-    handleClick: o
-  }) : (0, r.jsx)(j.m, {
+    handleClick: a
+  }) : (0, r.jsx)(C.m, {
     id: "shop-".concat(t.id),
-    renderIcon: e => (0, r.jsx)(m.Z, {
+    renderIcon: e => (0, r.jsx)(b.Z, {
       width: 20,
       height: 20,
       className: e
     }),
-    text: S.intl.string(S.t.al5EXL),
+    text: I.intl.string(I.t.al5EXL),
     selected: i,
-    onClick: o,
+    onClick: a,
     onContextMenu: e => {
       null != t && (0, u.jW)(e, async () => {
         let {

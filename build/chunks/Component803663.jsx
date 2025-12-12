@@ -34,7 +34,7 @@ function h(e) {
   let T = e => {
     e.stopPropagation(), null == n || n({
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
-    }), a.AC(O, y), (0, o.Kh)(y), null == h || h()
+    }), o.AC(O, y), (0, a.Kh)(y), null == h || h()
   };
   return (0, r.jsx)(p.O1, {
     text: m.intl.string(m.t.ZYO5OK),

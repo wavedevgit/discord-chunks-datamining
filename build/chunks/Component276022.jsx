@@ -28,7 +28,7 @@ function E(e) {
     guildId: y,
     context: O,
     onItemClick: v
-  } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, o.e7)([m.Z], () => null != I ? m.Z.can(h.Plq.MANAGE_GUILD, I) : null), C = true, A = true, N = (0, l.LD)(y, A), P = (0, l.PL)(C, A), R = (0, o.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
+  } = e, S = null != (t = null == b ? true : b.id) ? t : null == E ? true : E.id, I = _.Z.getGuild(y), T = (0, a.e7)([m.Z], () => null != I ? m.Z.can(h.Plq.MANAGE_GUILD, I) : null), C = true, A = true, N = (0, l.LD)(y, A), P = (0, l.PL)(C, A), R = (0, a.e7)([p.default], () => null != p.default.getNewestTokenForApplication(S)), {
     isUserApp: w,
     isGuildApp: D
   } = i.useMemo(() => {
@@ -38,13 +38,13 @@ function E(e) {
       isUserApp: false
     };
     let i = Object.values(null != (n = null == (e = N.result) ? true : e.sections) ? n : {}),
-      o = Object.values(null != (r = null == (t = P.result) ? true : t.sections) ? r : {});
+      a = Object.values(null != (r = null == (t = P.result) ? true : t.sections) ? r : {});
     return {
       isGuildApp: i.some(e => {
         var t;
         return (null == (t = e.descriptor.application) ? true : t.id) === S
       }),
-      isUserApp: o.some(e => {
+      isUserApp: a.some(e => {
         var t;
         return (null == (t = e.descriptor.application) ? true : t.id) === S
       })
@@ -67,11 +67,11 @@ function E(e) {
     }, [b, v, E]);
   if (O === h.IlC.POPOUT) return null;
   let j = [];
-  return D && T && j.push((0, r.jsx)(a.sNh, {
+  return D && T && j.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
     label: g.intl.string(g.t.IuSJT8),
     action: x
-  }, "manage-server-integration")), w && R && j.push((0, r.jsx)(a.sNh, {
+  }, "manage-server-integration")), w && R && j.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
     label: g.intl.string(g.t.V8ruvz),
     action: L

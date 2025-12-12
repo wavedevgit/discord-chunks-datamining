@@ -1,5 +1,5 @@
-/** Chunk was on 42124 **/
-/** chunk id: 7225, original params: t,e,i (module,exports,require) **/
+/** Chunk was on 65672 **/
+/** chunk id: 7225, original params: e,t,c (module,exports,require) **/
 require.d(exports, {
   default: () => v
 }), require("./388685.js");
@@ -20,83 +20,83 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk979007 = require("./979007.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465103 = require("./465103.js"),
-  Chunk325380 = require("./325380.js");
+  Chunk426931 = require("./426931.js"),
+  Chunk51766 = require("./51766.js");
 
-function v(t) {
+function v(e) {
   let {
-    onClose: e,
-    transitionState: i,
+    onClose: t,
+    transitionState: c,
     appId: v,
     guildId: w
-  } = t, C = (0, o.e7)([p.Z], () => p.Z.getApplication(v), [v]), [Z, y] = r.useState(() => p.Z.isFetchingApplication(v) ? {
+  } = e, C = (0, s.e7)([d.Z], () => d.Z.getApplication(v), [v]), [Z, y] = i.useState(() => d.Z.isFetchingApplication(v) ? {
     status: 1
   } : {
     status: 0
   });
-  r.useEffect(() => {
+  i.useEffect(() => {
     0 === Z.status && (y({
       status: 1
     }), l.ZP.fetchApplication(v).then(() => {
       y({
         status: 2
       })
-    }).catch(t => {
+    }).catch(e => {
       y({
         status: 3,
-        error: t.message
+        error: e.message
       })
     }))
   }, [v, Z.status]);
   let {
     subscriptions: O,
     otps: P
-  } = (0, x.q)(v);
+  } = (0, b.q)(v);
   if (null == C) return null;
-  let T = m.intl.formatToPlainString(m.t.XDRjs5, {
+  let T = g.intl.formatToPlainString(g.t.XDRjs5, {
       appName: C.name
     }),
-    A = (0, n.jsx)("div", {
-      className: b.icon,
-      children: (0, n.jsx)(u.Z, {})
+    A = (0, a.jsx)("div", {
+      className: m.icon,
+      children: (0, a.jsx)(p.Z, {})
     }),
-    I = d.wS ? (0, n.jsx)(c.hU, {
-      "aria-label": m.intl.string(m.t.WqhZss),
-      icon: () => (0, n.jsx)(c.xPt, {
+    I = u.wS ? (0, a.jsx)(o.hU, {
+      "aria-label": g.intl.string(g.t.WqhZss),
+      icon: () => (0, a.jsx)(o.xPt, {
         size: "sm"
       }),
       onClick: () => {
-        let t = "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(v, g.GlobalDiscoveryAppsSections.STORE));
-        (0, d.JG)(t, () => (0, c.showToast)((0, c.createToast)(m.intl.string(m.t["L/PwZf"]), c.ToastType.SUCCESS))), (0, _.X)(v, _.B.STORE_MODAL)
+        let e = "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(v, _.GlobalDiscoveryAppsSections.STORE));
+        (0, u.JG)(e, () => (0, o.showToast)((0, o.createToast)(g.intl.string(g.t["L/PwZf"]), o.ToastType.SUCCESS))), (0, f.X)(v, f.B.STORE_MODAL)
       },
       variant: "icon-only"
     }) : true;
-  return (0, n.jsxs)(s.IX, {
-    transitionState: i,
+  return (0, a.jsxs)(r.IX, {
+    transitionState: c,
     "aria-label": T,
-    onClose: e,
+    onClose: t,
     size: "xxl",
-    children: [(0, n.jsx)(s.xBx, {
+    children: [(0, a.jsx)(r.xBx, {
       leading: A,
       title: T,
       trailing: I
-    }), (0, n.jsx)(a.Z, {
-      children: (0, n.jsx)("main", {
+    }), (0, a.jsx)(n.Z, {
+      children: (0, a.jsx)("main", {
         className: j.bodyInner,
-        children: (0, n.jsx)(f.AF, {
+        children: (0, a.jsx)(x.AF, {
           app: C,
           guildId: w,
           subscriptions: O,
           otps: P
         })
       })
-    }), (0, n.jsx)(s.mzw, {
-      children: (0, n.jsx)(c.Text, {
+    }), (0, a.jsx)(r.mzw, {
+      children: (0, a.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: null != C.termsOfServiceUrl || null != C.privacyPolicyUrl ? (0, n.jsx)(h.Z, {
+        children: null != C.termsOfServiceUrl || null != C.privacyPolicyUrl ? (0, a.jsx)(h.Z, {
           termsOfServiceUrl: C.termsOfServiceUrl,
           privacyPolicyUrl: C.privacyPolicyUrl
-        }) : m.intl.string(m.t["3ZY+0D"])
+        }) : g.intl.string(g.t["3ZY+0D"])
       })
     })]
   })

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk916752 = require("./916752.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk960324 = require("./960324.js");
 
 function c(e) {
   let {
@@ -18,10 +18,10 @@ function c(e) {
     showTooltip: n = true,
     className: i
   } = e, c = (0, s.Z)(t), u = (0, r.jsx)("span", {
-    className: o()(l.timestamp, i),
+    className: a()(l.timestamp, i),
     children: c
   });
-  returntrue !== n ? u : (0, r.jsx)(a.u, {
+  returntrue !== n ? u : (0, r.jsx)(o.u, {
     __unsupportedReactNodeAsText: t.full,
     ariaHidden: true,
     children: u

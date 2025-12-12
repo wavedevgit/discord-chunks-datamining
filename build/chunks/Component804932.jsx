@@ -25,7 +25,7 @@ let _ = Chunk473749.createContext(""),
   m = e => {
     let {
       children: t
-    } = e, [n] = i.useState(() => (0, o.Z)());
+    } = e, [n] = i.useState(() => (0, a.Z)());
     return (0, r.jsx)(_.Provider, {
       value: n,
       children: t
@@ -52,8 +52,8 @@ function E(e) {
     unreadsCount: n,
     totalMessagesCount: r,
     viewId: i,
-    unreadsBadgeMentionCount: o,
-    unreadsBadgeChannelCount: a,
+    unreadsBadgeMentionCount: a,
+    unreadsBadgeChannelCount: o,
     unreadMessageItemsCount: s,
     unreadMentionsCount: l
   } = e;
@@ -62,8 +62,8 @@ function E(e) {
     unreads_count: n,
     total_messages_count: r,
     view_id: i,
-    unreads_badge_mention_count: o,
-    unreads_badge_channel_count: a,
+    unreads_badge_mention_count: a,
+    unreads_badge_channel_count: o,
     unread_message_items_count: s,
     unread_mentions_count: l
   })
@@ -77,7 +77,7 @@ function y(e) {
   let {
     message: r,
     interactionType: i,
-    viewId: o
+    viewId: a
   } = e;
   c.default.track(p.rMx.NOTIFICATIONS_INBOX_ITEM_INTERACTED, {
     interaction_type: i,
@@ -85,7 +85,7 @@ function y(e) {
     channel_id: r.channel_id,
     author_id: r.author.id,
     message_type: r.type,
-    view_id: o,
+    view_id: a,
     mentioned_game_ids: null != (n = null == (t = r.mentionGames) ? true : t.map(e => e.id)) ? n : []
   })
 }
@@ -109,14 +109,14 @@ function v(e) {
     totalMessagesCount: n,
     unreadItemsCount: r,
     totalItemsCount: i,
-    viewId: o
+    viewId: a
   } = e;
   c.default.track(p.rMx.NOTIFICATIONS_INBOX_UNMOUNTED, {
     unreads_count: t,
     total_messages_count: n,
     unread_items_count: r,
     total_items_count: i,
-    view_id: o
+    view_id: a
   })
 }
 
@@ -126,8 +126,8 @@ function S(e) {
     messagesCount: n,
     unreadMessagesCount: r,
     channelsFetched: i,
-    mentionsFetched: o,
-    loadingTrigger: a,
+    mentionsFetched: a,
+    loadingTrigger: o,
     viewId: s
   } = e;
   c.default.track(p.rMx.NOTIFICATIONS_INBOX_DATA_LOADED, {
@@ -135,8 +135,8 @@ function S(e) {
     messages_count: n,
     unread_messages_count: r,
     channels_fetched: i,
-    mentions_fetched: o,
-    loading_trigger: null != a ? a : f.X.UNKNOWN,
+    mentions_fetched: a,
+    loading_trigger: null != o ? o : f.X.UNKNOWN,
     view_id: s
   })
 }
@@ -146,10 +146,10 @@ function I(e) {
     notificationCenterVariant: t,
     entrypoint: n,
     messages: r,
-    unreadMessages: o,
+    unreadMessages: a,
     viewId: c,
     messagesByCategory: p
-  } = e, _ = i.useRef(null), m = i.useRef(false), h = (0, a.e7)([u.Z], () => u.Z.isLoading), b = (0, l.Z)(h), y = (0, a.e7)([u.Z], () => {
+  } = e, _ = i.useRef(null), m = i.useRef(false), h = (0, o.e7)([u.Z], () => u.Z.isLoading), b = (0, l.Z)(h), y = (0, o.e7)([u.Z], () => {
     var e;
     return null != (e = u.Z.currentRequestAnalyticsPayload) ? e : null
   }), {
@@ -163,11 +163,11 @@ function I(e) {
       entrypoint: n
     }), _.current = Date.now()
   }), i.useEffect(() => {
-    if (null != _.current && ((null == r ? true : r.length) > 0 || (null == o ? true : o.length) > 0) && !m.current) {
+    if (null != _.current && ((null == r ? true : r.length) > 0 || (null == a ? true : a.length) > 0) && !m.current) {
       let e = Date.now() - _.current;
       m.current = true, E({
         timeToLoad: e,
-        unreadsCount: o.length,
+        unreadsCount: a.length,
         totalMessagesCount: r.length,
         unreadsBadgeMentionCount: O,
         unreadsBadgeChannelCount: I.length,
@@ -176,24 +176,24 @@ function I(e) {
         viewId: c
       })
     }
-  }, [r, o, c, I, O, p]), i.useEffect(() => {
+  }, [r, a, c, I, O, p]), i.useEffect(() => {
     let e = (null == y ? true : y.loadingTrigger) === f.X.AUTO_LOAD;
     if (null != y && true === b && false === h && !e) {
       var t;
       S({
         timeToLoad: null == y ? true : y.timeToLoad,
         messagesCount: r.length,
-        unreadMessagesCount: o.length,
+        unreadMessagesCount: a.length,
         loadingTrigger: null != (t = null == y ? true : y.loadingTrigger) ? t : f.X.UNKNOWN,
         viewId: null == y ? true : y.viewId,
         channelsFetched: null == y ? true : y.channelsFetched,
         mentionsFetched: null == y ? true : y.mentionsFetched
       })
     }
-  }, [h, r, o, c, b, y]), (0, s.zq)(() => {
+  }, [h, r, a, c, b, y]), (0, s.zq)(() => {
     var e, t;
     v({
-      unreadsCount: null != (e = null == o ? true : o.length) ? e : 0,
+      unreadsCount: null != (e = null == a ? true : a.length) ? e : 0,
       totalMessagesCount: null != (t = null == r ? true : r.length) ? t : 0,
       unreadItemsCount: p.UNREAD.length,
       totalItemsCount: p.TODAY.length + p.YESTERDAY.length + p.OLDER.length,

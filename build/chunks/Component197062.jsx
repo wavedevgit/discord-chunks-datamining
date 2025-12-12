@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
-let a = (e, t) => {
+let o = (e, t) => {
     let n = {
       display: "flex",
       gap: "4px",
@@ -30,7 +30,7 @@ let a = (e, t) => {
   s = {
     getForumChannelPermissionText: function() {
       return Chunk388032.intl.format(Chunk388032.t.zlXUVY, {
-        warningHook: a
+        warningHook: o
       })
     }
   }

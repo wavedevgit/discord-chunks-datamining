@@ -7,21 +7,21 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk401975 = require("./401975.jsx"),
-  Chunk638758 = require("./638758.js"),
-  Chunk887353 = require("./887353.js"),
-  Chunk198501 = require("./198501.js");
+  Chunk986517 = require("./986517.js"),
+  Chunk213875 = require("./213875.js"),
+  Chunk489538 = require("./489538.js");
 let u = () => (0, Chunk54381.jsx)("div", {
-  className: Chunk198501.skeletonsContainer,
+  className: Chunk489538.skeletonsContainer,
   children: Array.from({
     length: 3
   }).map((e, t) => (0, r.jsxs)("div", {
-    className: a.cardsContainer,
+    className: s.cardsContainer,
     children: [(0, r.jsx)("div", {
-      className: o()(s.catalogBanner, c.bannerSkeleton)
+      className: a()(i.catalogBanner, c.bannerSkeleton)
     }), Array.from({
       length: 12
-    }, (e, t) => (0, r.jsx)(i.Z, {}, t))]
+    }, (e, t) => (0, r.jsx)(o.Z, {}, t))]
   }, t))
 })

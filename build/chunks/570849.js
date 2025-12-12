@@ -1,5 +1,5 @@
 /** Chunk was on 9558 **/
-/** chunk id: 570849, original params: e,t,n (module,exports,require) **/
+/** chunk id: 570849, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   l: () => l,
   u: () => s
@@ -16,7 +16,7 @@ function l(e, t) {
   })
 }
 async function s(e) {
-  let t = (await a.tn.get({
+  let t = (await n.tn.get({
     url: i.ANM.GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES(e),
     rejectWithError: false
   })).body;

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk695346 = require("./695346.js"),
   Chunk592125 = require("./592125.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk766106 = require("./766106.js");
+  Chunk178947 = require("./178947.js");
 
 function S(e) {
   let {
@@ -51,13 +51,13 @@ function I(e) {
   } = e, n = (0, s.e7)([h.Z], () => h.Z.getSoundById(t)), i = (0, f.V2)({
     location: "SoundboardMentionInline"
   }), {
-    isPlaying: o,
-    playSound: a
+    isPlaying: a,
+    playSound: o
   } = (0, m.Z)(n);
   return i ? null == n ? (0, r.jsx)(S, {}) : (0, r.jsx)(T, {
     className: v.inlineTextArea,
-    isPlaying: o,
-    playSound: a,
+    isPlaying: a,
+    playSound: o,
     sound: n
   }) : null
 }
@@ -67,7 +67,7 @@ function T(e) {
     className: t,
     sound: n,
     playSound: i,
-    isPlaying: o
+    isPlaying: a
   } = e, s = (null == n ? true : n.emojiId) != null || (null == n ? true : n.emojiName) != null, l = O.intl.formatToPlainString(O.t.tuMUJ2, {
     emojiName: null == n ? true : n.emojiName,
     soundName: null == n ? true : n.name
@@ -78,8 +78,8 @@ function T(e) {
     "aria-label": l,
     tag: "span",
     onClick: i,
-    className: a()(v.inlineContainer, v.inlineButton, {
-      [v.playing]: true === o
+    className: o()(v.inlineContainer, v.inlineButton, {
+      [v.playing]: true === a
     }, t),
     children: [s && (0, r.jsx)(u.Z, {
       emojiId: null == n ? true : n.emojiId,
@@ -94,13 +94,13 @@ let C = function(e) {
   let {
     channelId: t,
     messageId: n,
-    soundId: o,
-    messageSounds: a,
+    soundId: a,
+    messageSounds: o,
     jumbo: c = false
-  } = e, u = b.jU.useSetting(), f = (0, s.e7)([h.Z], () => h.Z.getSoundById(o), [o]), O = i.useMemo(() => {
+  } = e, u = b.jU.useSetting(), f = (0, s.e7)([h.Z], () => h.Z.getSoundById(a), [a]), O = i.useMemo(() => {
     var e;
-    return null != (e = (0, p.Z)(t, n, o, a)) ? e : f
-  }, [t, n, o, a, f]), I = (0, s.e7)([y.Z], () => y.Z.getChannel(t)), C = (0, d.X0)({
+    return null != (e = (0, p.Z)(t, n, a, o)) ? e : f
+  }, [t, n, a, o, f]), I = (0, s.e7)([y.Z], () => y.Z.getChannel(t)), C = (0, d.X0)({
     location: "SoundboardMention"
   }), A = i.useRef(null), {
     isPlaying: N,

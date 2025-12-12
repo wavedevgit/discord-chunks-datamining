@@ -14,10 +14,10 @@ var Chunk442837 = require("./442837.js"),
 function l(e, t) {
   var n;
   let r = null == (n = s.default.getCurrentUser()) ? true : n.id,
-    l = a.ZP.isSuppressEveryoneEnabled(t),
-    c = a.ZP.isSuppressRolesEnabled(t),
+    l = o.ZP.isSuppressEveryoneEnabled(t),
+    c = o.ZP.isSuppressRolesEnabled(t),
     u = null != e.mentions && e.mentions.some(e => e.id === r),
-    d = null == t || null == r ? null : o.ZP.getMember(t, r),
+    d = null == t || null == r ? null : a.ZP.getMember(t, r),
     f = null != e.mention_roles && null != d && null != d.roles && e.mention_roles.some(e => d.roles.includes(e));
   i.Z.dispatch({
     type: "MESSAGE_NOTIFICATION_SHOWN",
@@ -50,8 +50,8 @@ function E(e) {
     mentioned: n,
     roleMentioned: r,
     everyoneMentioned: i
-  } = e, o = Date.now();
-  c = o, null != t && (p[t] = o), n && (u = o, null != t && (_[t] = o)), r && (d = o, null != t && (h[t] = o)), i && (f = o, null != t && (m[t] = o))
+  } = e, a = Date.now();
+  c = a, null != t && (p[t] = a), n && (u = a, null != t && (_[t] = a)), r && (d = a, null != t && (h[t] = a)), i && (f = a, null != t && (m[t] = a))
 }
 class b extends Chunk442837.ZP.Store {
   initialize() {

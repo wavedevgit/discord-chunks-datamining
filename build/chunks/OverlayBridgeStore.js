@@ -115,7 +115,7 @@ class er {
       }), this.actionsToFlush.clear()), this.waitingActionsToFlush.size > 0 && this.enqueueWaitingActions()
     }), B(this, "dispatchPayloads", e => {
       this.isDispatching = true, e.forEach(e => l.Z.dispatch(e)), this.isDispatching = false
-    }), B(this, "queueDispatch", e => !(!Q() || eo.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
+    }), B(this, "queueDispatch", e => !(!Q() || ea.has(e.type)) && (this.isDispatching ? this.waitingActionsToFlush.add(e) : ("USER_SETTINGS_PROTO_UPDATE" === e.type && (e = Y(V({}, e), {
       settings: {
         type: e.settings.type,
         proto: (0, R.cv)(e.settings.type, e.settings.proto)
@@ -128,8 +128,8 @@ class er {
   }
 }
 let ei = new er,
-  eo = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "PASSWORDLESS_START", "PASSWORDLESS_FAILURE", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "SHOW_KEYBOARD_SHORTCUTS", "DM_SETTINGS_UPSELL_SHOW", "USER_PROFILE_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "HIDE_KEYBOARD_SHORTCUTS", "USER_PROFILE_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_HISTORY_WEB_CLEAR_ITEMS", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED", "MEDIA_ENGINE_CONNECTION_STATS", "RTC_CONNECTION_UPDATE_ID", "ACTIVE_AV_ERRORS_CHANGED", "BURST_REACTION_ANIMATION_ADD", "ADYEN_CREATE_CASH_APP_PAY_COMPONENT_SUCCESS"]),
-  ea = new Set,
+  ea = new Set(["CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "WINDOW_INIT", "WINDOW_FULLSCREEN_CHANGE", "WINDOW_FOCUS", "WINDOW_RESIZED", "WINDOW_HIDDEN", "CHANNEL_SELECT", "DELAYED_CHANNEL_SELECT", "DELAYED_SELECT_FLUSH", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_FAILURE", "LOAD_MESSAGES", "MESSAGE_START_EDIT", "MESSAGE_UPDATE_EDIT", "MESSAGE_END_EDIT", "APP_VIEW_SET_HOME_LINK", "APPLICATION_STORE_LOCATION_CHANGE", "LOGIN", "LOGIN_SUCCESS", "LOGIN_FAILURE", "LOGIN_MFA_STEP", "LOGIN_MFA", "LOGIN_ACCOUNT_SCHEDULED_FOR_DELETION", "LOGIN_ACCOUNT_DISABLED", "LOGIN_RESET", "FINGERPRINT", "REGISTER", "REGISTER_SUCCESS", "START_SESSION", "FORGOT_PASSWORD_SENT", "UPDATE_TOKEN", "SET_CONSENT_REQUIRED", "PASSWORDLESS_START", "PASSWORDLESS_FAILURE", "CONTEXT_MENU_OPEN", "CONTEXT_MENU_CLOSE", "MODAL_PUSH", "MODAL_POP", "MODAL_UPDATE", "MODAL_POP_ALL", "GUILD_SETTINGS_OPEN", "USER_SETTINGS_MODAL_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "EMAIL_VERIFICATION_MODAL_OPEN", "QUICKSWITCHER_SHOW", "IFE_EXPERIMENT_SEARCH_MODAL_OPEN", "SHOW_KEYBOARD_SHORTCUTS", "DM_SETTINGS_UPSELL_SHOW", "USER_PROFILE_MODAL_OPEN", "INTERACTION_MODAL_CREATE", "INTERACTION_IFRAME_MODAL_CREATE", "GUILD_SETTINGS_CLOSE", "USER_SETTINGS_MODAL_CLOSE", "CHANNEL_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "HIDE_KEYBOARD_SHORTCUTS", "USER_PROFILE_MODAL_CLOSE", "QUICKSWITCHER_SHOW", "QUICKSWITCHER_HIDE", "QUICKSWITCHER_SWITCH_TO", "QUICKSWITCHER_SEARCH", "QUICKSWITCHER_SELECT", "UPDATE_CHANNEL_DIMENSIONS", "UPDATE_CHANNEL_LIST_DIMENSIONS", "UPDATE_GUILD_LIST_DIMENSIONS", "TRACK", "CHANNEL_SETTINGS_INIT", "CHANNEL_SETTINGS_CLOSE", "GUILD_SETTINGS_INIT", "GUILD_SETTINGS_OPEN", "GUILD_SETTINGS_CLOSE", "TUTORIAL_INDICATOR_SHOW", "TUTORIAL_INDICATOR_HIDE", "TUTORIAL_INDICATOR_SUPPRESS_ALL", "USER_SETTINGS_ACCOUNT_INIT", "USER_SETTINGS_ACCOUNT_CLOSE", "NOTICE_SHOW", "NOTICE_DISMISS", "NOTICE_DISABLE", "SEARCH_EDITOR_STATE_CHANGE", "SEARCH_EDITOR_STATE_CLEAR", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS", "SEARCH_ENSURE_SEARCH_STATE", "SEARCH_AUTOCOMPLETE_QUERY_UPDATE", "SEARCH_HISTORY_WEB_CLEAR_ITEMS", "SEARCH_SET_SHOW_BLOCKED_RESULTS", "LAYOUT_CREATE", "POPOUT_WINDOW_OPEN", "POPOUT_WINDOW_CLOSE", "POPOUT_WINDOW_SET_ALWAYS_ON_TOP", "TYPING_START_LOCAL", "TYPING_STOP_LOCAL", "SPOTIFY_SET_ACTIVE_DEVICE", "LOAD_INVITE_SUGGESTIONS", "INVITE_SUGGESTIONS_SEARCH", "IMPERSONATE_UPDATE", "IMPERSONATE_STOP", "CREATE_PENDING_REPLY", "CREATE_SHALLOW_PENDING_REPLY", "DELETE_PENDING_REPLY", "USER_SETTINGS_PROTO_UPDATE_EDIT_INFO", "APPLICATION_COMMAND_INDEX_FETCH_REQUEST", "APPLICATION_COMMAND_INDEX_FETCH_SUCCESS", "APPLICATION_COMMAND_INDEX_FETCH_FAILURE", "APPLICATION_COMMAND_EXECUTE_BAD_VERSION", "APPLICATION_COMMAND_AUTOCOMPLETE_REQUEST", "APPLICATION_COMMAND_AUTOCOMPLETE_RESPONSE", "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", "APPLICATION_COMMAND_SET_PREFERRED_COMMAND", "APPLICATION_COMMAND_UPDATE_OPTIONS", "APPLICATION_COMMAND_UPDATE_CHANNEL_STATE", "APPLICATION_COMMAND_USED", "DCF_HANDLE_DC_SHOWN", "DCF_HANDLE_DC_DISMISSED", "MEDIA_ENGINE_CONNECTION_STATS", "RTC_CONNECTION_UPDATE_ID", "ACTIVE_AV_ERRORS_CHANGED", "BURST_REACTION_ANIMATION_ADD", "ADYEN_CREATE_CASH_APP_PAY_COMPONENT_SUCCESS"]),
+  eo = new Set,
   es = false,
   el = new Chunk710845.Z("OverlayBridgeStore"),
   ec = {};
@@ -142,8 +142,8 @@ function eu(e) {
 function ed(e, t) {
   var n, r;
   let i = null == (n = ec[e]) ? true : n.error,
-    o = null == (r = ec[e]) ? true : r.error_description;
-  ec[e] = V({}, ec[e], t), null != i && (ec[e].error = i), null != o && (ec[e].error_description = o)
+    a = null == (r = ec[e]) ? true : r.error_description;
+  ec[e] = V({}, ec[e], t), null != i && (ec[e].error = i), null != a && (ec[e].error_description = a)
 }
 
 function ef(e) {
@@ -198,7 +198,7 @@ function eh() {
     exports().then(e => {
       if (Array.isArray(e) && 0 !== e.length)
         for (let l of (el.log("transitionOverlayPIDStatus: Uploaded minidumps", e), e)) {
-          var t, n, r, i, o, a, s;
+          var t, n, r, i, a, o, s;
           if (null == l) continue;
           let e = null != l.processName ? D.Z.getGameByExecutable(l.processName) : null;
           L.default.track(Z.rMx.OVERLAY_HOOK_CRASHED, {
@@ -207,8 +207,8 @@ function eh() {
             game_id: null != (n = null == e ? true : e.id) ? n : null,
             minidump_exception_type: null != (r = l.exceptionString) ? r : null,
             minidump_exception_module_name: null != (i = l.exceptionModuleName) ? i : null,
-            minidump_relative_crash_address: null != (o = l.relativeCrashAddress) ? o : null,
-            minidump_exception_module_version: null != (a = l.exceptionModuleVersion) ? a : null,
+            minidump_relative_crash_address: null != (a = l.relativeCrashAddress) ? a : null,
+            minidump_exception_module_version: null != (o = l.exceptionModuleVersion) ? o : null,
             minidump_exception_module_code_id: null != (s = l.exceptionModuleCodeId) ? s : null
           })
         }
@@ -257,8 +257,8 @@ async function eb(e) {
   let i = await (0, G.K)();
   if (null == i) return void el.error("Trying to attach to pid=".concat(e, ", but overlay module failed loaded"));
   ep = "attach.transitionOverlayPIDStatus", eg(e, "ATTACHING"), ep = "attach.attachToProcess";
-  let o = await m.YT(e);
-  null == o ? (ep = "attach.transitionOverlayPIDStatus (CONNECTING)", eg(e, "CONNECTING", "ATTACHING"), ep = "attach.reconcileHostProcess", await eE(i), i.connectProcess(e)) : (ep = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", eg(e, "HOOK_FAILED", "ATTACHING"), el.warn("Could not hook to pid=".concat(e, ", error=").concat(o)))
+  let a = await m.YT(e);
+  null == a ? (ep = "attach.transitionOverlayPIDStatus (CONNECTING)", eg(e, "CONNECTING", "ATTACHING"), ep = "attach.reconcileHostProcess", await eE(i), i.connectProcess(e)) : (ep = "attach.transitionOverlayPIDStatus (HOOK_FAILED)", eg(e, "HOOK_FAILED", "ATTACHING"), el.warn("Could not hook to pid=".concat(e, ", error=").concat(a)))
 }
 async function ey(e) {
   if (e_.isMutexHeld() || el.error("_detachPIDMustBeLocked: overlayMutex is not held.", e), !q.has(e)) return void el.warn("Trying to detach from pid ".concat(e, ", which is in an unknown state"));
@@ -364,14 +364,14 @@ function eC(e) {
 function eA(e, t, n) {
   var r;
   let i = null == (r = b.ZP.getGameForPID(e)) ? true : r.name,
-    o = D.Z.getGameByName(i),
-    a = V({
+    a = D.Z.getGameByName(i),
+    o = V({
       game_name: i,
-      game_id: null == o ? null : o.id,
+      game_id: null == a ? null : a.id,
       success: t,
       overlay_method: S.gl[S.gl.Hook]
     }, n);
-  ed(e, V({}, a)), (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv, {
+  ed(e, V({}, o)), (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv, {
     width: n.graphics_width,
     height: n.graphics_height
   });
@@ -403,25 +403,25 @@ function eR(e) {
     case Z.BmY.CONNECT:
       let t = w.default.getToken();
       if (null == t) break;
-      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv), Promise.all([(0, I.Z)(t, e.pid), a.ZP.PersistedStore.getAllStates()]).then(t => {
+      (0, d.te)(U.OVERLAY_LAYOUT_ID, x.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), F.bv), Promise.all([(0, I.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
           pid: i,
-          token: o
+          token: a
         } = e;
         h.lW({
           type: Z.BmY.STORAGE_SYNC,
           pid: i,
-          token: o,
+          token: a,
           states: r
         }), h.lW({
           type: Z.BmY.DISPATCH,
           pid: i,
-          token: o,
+          token: a,
           payloads: [n]
         }), eg(i, "READY"), (0, U.setPID)(i), f.Z.overlayReady(i);
-        let a = eu(i);
-        ed(i, Y(V({}, a), {
-          total_mount_time_ms: null != a.mounting_started_at ? new Date().getTime() - a.mounting_started_at : true
+        let o = eu(i);
+        ed(i, Y(V({}, o), {
+          total_mount_time_ms: null != o.mounting_started_at ? new Date().getTime() - o.mounting_started_at : true
         }))
       });
       break;
@@ -458,7 +458,7 @@ function eL(e) {
     pid: n
   } = e, r = q.get(n);
   if ((ee.has(n) && ev(true), null != r && null != K[n]) && (t || "READY" === r || "CRASHED" === r)) {
-    if (t ? en.delete(n) : en.add(n), ea.clear(), null != ex && (clearTimeout(ex), ex = null, t)) return;
+    if (t ? en.delete(n) : en.add(n), eo.clear(), null != ex && (clearTimeout(ex), ex = null, t)) return;
     t ? eD(t, n) : ex = setTimeout(() => {
       eD(t, n), ex = null
     }, 100)
@@ -469,11 +469,11 @@ function ej(e) {
   let {
     region: t
   } = e;
-  ea.add(t), eD(false, $)
+  eo.add(t), eD(false, $)
 }
 
 function eM() {
-  ea.clear(), eD(true, $)
+  eo.clear(), eD(true, $)
 }
 
 function ek(e) {
@@ -482,7 +482,7 @@ function ek(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "1a19b33b881adc57925b821d1b12f5020d1414c3"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "edbfc2b08f504ab9b6bf26c33c2356e50e4443c1"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -542,7 +542,7 @@ function eY(e) {
     sessionId: n,
     applicationId: r,
     channelId: i,
-    messageId: o
+    messageId: a
   } = e;
   setImmediate(() => {
     u.Z.join({
@@ -550,7 +550,7 @@ function eY(e) {
       sessionId: n,
       applicationId: r,
       channelId: i,
-      messageId: o
+      messageId: a
     }), null != $ && f.Z.setInputLocked(true, $)
   })
 }

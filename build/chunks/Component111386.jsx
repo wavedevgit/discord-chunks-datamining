@@ -11,11 +11,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk798690 = require("./798690.js");
+  Chunk555412 = require("./555412.js");
 let d = e => {
   let {
     children: t
-  } = e, [n, d] = (0, s.US)([o.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [f, p] = i.useState(false), _ = i.useRef(null);
+  } = e, [n, d] = (0, s.US)([a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP]), [f, p] = i.useState(false), _ = i.useRef(null);
   i.useEffect(() => {
     let e = setTimeout(() => {
       p(true)
@@ -25,11 +25,11 @@ let d = e => {
   let m = i.useCallback(() => {
     d(l.L.USER_DISMISS)
   }, [d]);
-  return n !== o.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP ? t : (0, r.jsxs)(r.Fragment, {
+  return n !== a.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP ? t : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: _,
       children: t
-    }), (0, r.jsx)(a.J, {
+    }), (0, r.jsx)(o.J, {
       targetElementRef: _,
       shouldShow: f,
       onRequestClose: m,

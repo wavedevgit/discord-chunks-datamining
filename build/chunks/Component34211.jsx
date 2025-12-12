@@ -1,7 +1,7 @@
 /** Chunk was on 87626 **/
 /** chunk id: 34211, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  o: () => N
+  o: () => m
 }), require("./388685.js");
 var n, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,8 +19,8 @@ function u(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-let _ = Chunk231338.j_.MAIN_NAVIGATION_MENU;
-class N extends(n = Chunk473749.PureComponent) {
+let N = Chunk231338.j_.MAIN_NAVIGATION_MENU;
+class m extends(n = Chunk473749.PureComponent) {
   render() {
     let e, t = (0, Chunk948789.fQ)(this.context.router),
       {
@@ -28,10 +28,10 @@ class N extends(n = Chunk473749.PureComponent) {
         isVisible: n,
         styles: s,
         TrackClick: u,
-        avoidRouter: N
+        avoidRouter: m
       } = this.props,
       {
-        sectionShown: m
+        sectionShown: f
       } = this.state;
     return (e = null != Chunk330711.Z ? Chunk330711.Z.getLocale().toLowerCase() : "", [{
       route: Chunk231338.am.DOWNLOAD,
@@ -112,9 +112,9 @@ class N extends(n = Chunk473749.PureComponent) {
     }]).map(e => null != e.links ? (0, r.jsx)(o.Z, {
       title: e.title,
       links: e.links,
-      isOpen: m === e.title,
+      isOpen: f === e.title,
       isMobile: a,
-      avoidRouter: N,
+      avoidRouter: m,
       TrackClick: u,
       onClose: this.closeSubNav,
       onOpen: this.openSubNav
@@ -123,7 +123,7 @@ class N extends(n = Chunk473749.PureComponent) {
       role: "none",
       children: (0, r.jsx)(u, {
         className: s.mainNavLink,
-        eventName: _,
+        eventName: N,
         data: e.linkClicked ? {
           linkClicked: e.linkClicked
         } : {},
@@ -135,7 +135,7 @@ class N extends(n = Chunk473749.PureComponent) {
       className: t(e.route) ? s.listItemActive : s.listItemInactive,
       role: "none",
       children: (0, r.jsx)(i.Z, {
-        avoidRouter: N,
+        avoidRouter: m,
         to: e.route,
         from: c.j_.MAIN_NAVIGATION_MENU,
         tabIndex: n ? 0 : false,
@@ -143,7 +143,7 @@ class N extends(n = Chunk473749.PureComponent) {
         children: (0, r.jsx)(u, {
           tag: "span",
           className: s.mainNavLink,
-          eventName: _,
+          eventName: N,
           data: {
             linkClicked: e.linkClicked
           },
@@ -172,7 +172,7 @@ class N extends(n = Chunk473749.PureComponent) {
     })
   }
 }
-u(N, "defaultProps", {
+u(m, "defaultProps", {
   isMobile: false,
   isVisible: true
 })

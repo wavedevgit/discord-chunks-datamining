@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 976269, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,24 +13,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk969632 = require("./969632.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function u(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), a = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), d = i.useCallback(() => {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getSettings()), s = (0, l.e7)([c.Z], () => c.Z.getSubmitting()), u = i.useCallback(() => {
     try {
       (0, o.oo)(t, n)
     } catch (e) {}
   }, [t, n]);
-  return (0, r.jsx)(s.Z, {
-    onSave: d,
+  return (0, r.jsx)(a.Z, {
+    onSave: u,
     onReset: o.bj,
-    submitting: a,
-    onSaveText: u.intl.string(u.t["R3BPH+"])
+    submitting: s,
+    onSaveText: d.intl.string(d.t["R3BPH+"])
   })
 }
 let g = function() {
   let e = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-  return null == module ? null : (0, Chunk54381.jsx)(d, {
+  return null == module ? null : (0, Chunk54381.jsx)(u, {
     guildId: module.id
   })
 }

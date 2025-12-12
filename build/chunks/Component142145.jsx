@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk480210 = require("./480210.js"),
   Chunk119837 = require("./119837.js"),
-  Chunk107225 = require("./107225.js");
+  Chunk664545 = require("./664545.js");
 let s = e => {
   var t, n, s, l, c;
   let {
@@ -30,7 +30,7 @@ let s = e => {
   }
   return y ? (0, r.jsx)("img", {
     src: null != (s = null == b ? true : b.src) ? s : u.src,
-    className: a.effect,
+    className: o.effect,
     style: {
       top: (null != (l = null == (t = u.position) ? true : t.y) ? l : 0) - E,
       left: null != (c = null == (n = u.position) ? true : n.x) ? c : 0
@@ -38,7 +38,7 @@ let s = e => {
     alt: "",
     "aria-hidden": true
   }) : (0, r.jsx)("img", {
-    src: o.td,
+    src: a.td,
     alt: "",
     "aria-hidden": true
   })

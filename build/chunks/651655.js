@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk427786 = require("./427786.js"),
   i = require.n(Chunk427786);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = new(require("./710845.js")).Z("Queue");
+let o = new(require("./710845.js")).Z("Queue");
 class s {
   enqueue(e, t, n) {
     this.queue.push({
@@ -45,8 +45,8 @@ class s {
             this.logger.error("", e)
           }
         } else {
-          var o;
-          let n = null != (o = t.retryAfter) ? o : this.defaultRetryAfter;
+          var a;
+          let n = null != (a = t.retryAfter) ? a : this.defaultRetryAfter;
           this.logger.info("Rate limited. Delaying draining of queue for ".concat(n, " ms. LogId:").concat(r, " QueueLength: ").concat(this.queue.length)), this.timeout = setTimeout(() => {
             this.queue.unshift(e), this.timeout = null, this._drainIfNecessary()
           }, n)
@@ -54,7 +54,7 @@ class s {
       };
     this.logger.log("Draining message from queue LogId:".concat(Chunk427786, " QueueLength: ").concat(this.queue.length)), this.drain(exports, i)
   }
-  constructor(e = a, t = 100) {
-    o(this, "logger", true), o(this, "defaultRetryAfter", true), o(this, "queue", true), o(this, "timeout", true), o(this, "draining", true), this.logger = e, this.defaultRetryAfter = t, this.queue = new(i()), this.timeout = null, this.draining = false
+  constructor(e = o, t = 100) {
+    a(this, "logger", true), a(this, "defaultRetryAfter", true), a(this, "queue", true), a(this, "timeout", true), a(this, "draining", true), this.logger = e, this.defaultRetryAfter = t, this.queue = new(i()), this.timeout = null, this.draining = false
   }
 }

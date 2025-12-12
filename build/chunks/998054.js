@@ -40,9 +40,9 @@ let d = async () => {
 }, f = () => new Promise(async (e, t) => {
   try {
     var n, r, i;
-    let o = await (null === a.ZP || true === a.ZP || null == (i = a.ZP.getDiscordUtils) || null == (r = i.call(a.ZP)) || null == (n = r.runWarpCommand) ? true : n.call(r, "registration", "show"));
-    if (null != o.error) return void t(o);
-    e(o)
+    let a = await (null === o.ZP || true === o.ZP || null == (i = o.ZP.getDiscordUtils) || null == (r = i.call(o.ZP)) || null == (n = r.runWarpCommand) ? true : n.call(r, "registration", "show"));
+    if (null != a.error) return void t(a);
+    e(a)
   } catch (e) {
     t(e)
   }

@@ -19,14 +19,14 @@ class f extends Chunk727916.Z {
   }
   innerExtract(e, t) {
     let n = e.createParsingResult(t.index, t[0]),
-      o = i._$[t[u].toLowerCase()],
-      a = parseInt(t[l]);
-    if (a > 31) return t.index = t.index + t[l].length, null;
-    if (n.start.assign("month", o), n.start.assign("day", a), t[d]) {
+      a = i._$[t[u].toLowerCase()],
+      o = parseInt(t[l]);
+    if (o > 31) return t.index = t.index + t[l].length, null;
+    if (n.start.assign("month", a), n.start.assign("day", o), t[d]) {
       let e = (0, i.SH)(t[d]);
       n.start.assign("year", e)
     } else {
-      let t = (0, r.r)(e.refDate, a, o);
+      let t = (0, r.r)(e.refDate, o, a);
       n.start.imply("year", t)
     }
     if (t[c]) {

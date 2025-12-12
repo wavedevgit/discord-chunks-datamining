@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
   Chunk566006 = require("./566006.js"),
@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk434624 = require("./434624.jsx"),
   Chunk287151 = require("./287151.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127947 = require("./127947.js"),
-  Chunk893973 = require("./893973.js");
+  Chunk860302 = require("./860302.js"),
+  Chunk378369 = require("./378369.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,7 +80,7 @@ class I extends Chunk473749.PureComponent {
       disableReactionCreates: t,
       disableReactionUpdates: n,
       isLurking: i,
-      isGuest: o,
+      isGuest: a,
       isPendingMember: c,
       isForumToolbar: g,
       channel: E,
@@ -94,12 +94,12 @@ class I extends Chunk473749.PureComponent {
       visibleReactionsCount: C
     } = this.props, {
       disableTransitionAppear: A
-    } = this.state, N = v ? Chunk893973 : Chunk127947, P = C > 0;
+    } = this.state, N = v ? Chunk378369 : Chunk860302, P = C > 0;
     if (!P && !y) return null;
     let R = y || P;
     return (0, Chunk54381.jsxs)(Chunk215569.W, {
       component: "div",
-      className: a()(N.reactions, b),
+      className: o()(N.reactions, b),
       transitionAppear: !A,
       role: "group",
       transitionLeave: false,
@@ -124,7 +124,7 @@ class I extends Chunk473749.PureComponent {
         onClick: t => {
           t.stopPropagation(), (0, p.op)(E, e)
         },
-        className: a()(N.reaction, O, N.remainingReactions),
+        className: o()(N.reaction, O, N.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs4),
         children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
           className: N.reactionInner,
@@ -137,7 +137,7 @@ class I extends Chunk473749.PureComponent {
         channel: E,
         useChatFontScaling: v,
         isHovered: this.state.isHovered,
-        className: a()({
+        className: o()({
           [N.forceShow]: R
         })
       })]
@@ -155,16 +155,16 @@ let T = e => {
   let {
     message: t,
     maxReactions: n,
-    hoistReaction: o
+    hoistReaction: a
   } = e, {
-    combinedReactions: a,
+    combinedReactions: o,
     remainingReactions: s,
     visibleReactionsCount: l
   } = i.useMemo(() => {
     let e = [],
-      r = S(t.reactions, o),
+      r = S(t.reactions, a),
       i = null != n && n < r.length ? r.slice(0, n) : r,
-      a = r.length - i.length,
+      o = r.length - i.length,
       s = r.length;
     return i.forEach(t => {
       t.burst_count > 0 && e.push(y(E({}, t), {
@@ -175,12 +175,12 @@ let T = e => {
     }), {
       combinedReactions: e,
       visibleReactionsCount: s,
-      remainingReactions: a
+      remainingReactions: o
     }
-  }, [o, n, t.reactions]);
+  }, [a, n, t.reactions]);
   return (0, r.jsx)(I, y(E({}, e), {
     visibleReactionsCount: l,
-    combinedReactions: a,
+    combinedReactions: o,
     remainingReactions: s
   }))
 }

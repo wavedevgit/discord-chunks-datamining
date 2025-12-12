@@ -29,7 +29,7 @@ function d(e) {
     searchResultsQueryString: null,
     searchResultsQuery: null,
     searchResultsOffset: null,
-    searchMode: a.o
+    searchMode: o.o
   };
   return c.set(e, n), n
 }
@@ -82,8 +82,8 @@ function E(e) {
     queryString: n,
     query: r,
     offset: i
-  } = e, o = d(t);
-  o.searchResultsQueryString = n, o.searchResultsQuery = r, o.searchResultsOffset = null != i ? i : 0
+  } = e, a = d(t);
+  a.searchResultsQueryString = n, a.searchResultsQuery = r, a.searchResultsOffset = null != i ? i : 0
 }
 
 function b(e) {

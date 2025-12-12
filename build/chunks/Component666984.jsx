@@ -17,7 +17,7 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704543 = require("./704543.js");
+  Chunk251806 = require("./251806.js");
 
 function h(e) {
   var t, n, h, g, E;
@@ -28,7 +28,7 @@ function h(e) {
   } = e, {
     themeType: v
   } = (0, u.z)(), S = (0, l.Ih)(y, b), I = (0, l.Fe)(y, b);
-  if (!(0, s.Z)(y) || !(0, a.Z)(y, f.xjy.PLAY) && !(0, a.Z)(y, f.xjy.SYNC)) return null;
+  if (!(0, s.Z)(y) || !(0, o.Z)(y, f.xjy.PLAY) && !(0, o.Z)(y, f.xjy.SYNC)) return null;
   let T = e => {
       null == e || e.stopPropagation(), null == O || O({
         action: "PRESS_PLAY_ON_SPOTIFY_BUTTON"
@@ -72,7 +72,7 @@ function h(e) {
         })
       })
     }), (0, r.jsx)(d.pt, {
-      icon: o.iOO,
+      icon: a.iOO,
       tooltipText: null != (g = I.tooltip) ? g : _.intl.string(_.t.eU3inB),
       "aria-label": null != (E = I.label) ? E : _.intl.string(_.t.eU3inB),
       disabled: I.disabled,

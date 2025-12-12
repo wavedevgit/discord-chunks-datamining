@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk911969 = require("./911969.js"),
   Chunk739754 = require("./739754.jsx"),
   Chunk970184 = require("./970184.jsx"),
   Chunk197653 = require("./197653.jsx"),
   Chunk987106 = require("./987106.jsx"),
   Chunk568248 = require("./568248.jsx"),
-  Chunk695796 = require("./695796.js");
+  Chunk515067 = require("./515067.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,9 +40,9 @@ function _(e) {
 
 function m(e) {
   switch (e.type) {
-    case a.re.BUTTON:
+    case o.re.BUTTON:
       return (0, r.jsx)(u.Z, _({}, e));
-    case a.re.THUMBNAIL:
+    case o.re.THUMBNAIL:
       return (0, r.jsx)(d.Z, _({}, e))
   }
 }
@@ -54,19 +54,19 @@ function h(e) {
     renderComponents: i
   } = e, {
     message: u
-  } = (0, l.CJ)(), [d, p] = (0, c.e4)(), _ = (0, c.$Y)(p), h = n.type === a.re.BUTTON;
+  } = (0, l.CJ)(), [d, p] = (0, c.e4)(), _ = (0, c.$Y)(p), h = n.type === o.re.BUTTON;
   return (0, r.jsxs)("div", {
     className: f.section,
     ref: d,
     children: [(0, r.jsxs)("div", {
       className: f.children,
       children: [(0, r.jsx)("div", {
-        className: o()(f.textChildren, {
+        className: a()(f.textChildren, {
           [f.verticallyCenterAlign]: h
         }),
         children: i(t)
       }), (0, r.jsx)("div", {
-        className: o()(f.accessory, {
+        className: a()(f.accessory, {
           [f.restrictWidth]: _
         }),
         children: m(n)

@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk561466 = require("./561466.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk409738 = require("./409738.js");
+  Chunk629709 = require("./629709.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -79,8 +79,8 @@ function x() {
   let e = (0, Chunk53432.Z)(),
     t = (0, Chunk606669.Z)(),
     n = (0, Chunk74869.Z)(),
-    o = D.useField("controlsLayout"),
-    a = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)(Chunk828214.kS, {
+    a = D.useField("controlsLayout"),
+    o = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)(Chunk828214.kS, {
       label: "Controls",
       children: [(0, Chunk54381.jsx)(Chunk828214.k5, {
         id: "controls-right",
@@ -140,7 +140,7 @@ function L() {
     onRequestClose: () => {},
     children: t => (0, r.jsx)(m.hU, w(P({
       size: "sm",
-      icon: o.ewm,
+      icon: a.ewm,
       "aria-label": "Settings",
       variant: "icon-only"
     }, t), {
@@ -233,7 +233,7 @@ function j(e) {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",
-          icon: o.TIy,
+          icon: a.TIy,
           onClick: R
         }) : null, (0, r.jsx)("div", {
           className: A.headerRight,
@@ -241,7 +241,7 @@ function j(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: A.page,
-        children: [(0, r.jsx)(a.zJl, {
+        children: [(0, r.jsx)(o.zJl, {
           fade: true,
           className: A.sidebar,
           children: null != E ? (0, r.jsx)(v.N, {

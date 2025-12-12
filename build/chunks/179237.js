@@ -18,7 +18,7 @@ var r, Chunk109393 = require("./109393.js"),
   p = function(e) {
     r || (r = l.colorNames ? RegExp("(" + Object.keys(l.colorNames).join("|") + ")", "g") : /^\b$/);
     var t = e.output.map(function(e) {
-        return (0, o.je)(e).replace(u, s.c).replace(r, s.c)
+        return (0, a.je)(e).replace(u, s.c).replace(r, s.c)
       }),
       n = t.map(function(e) {
         return e.match(c).map(Number)
@@ -29,7 +29,7 @@ var r, Chunk109393 = require("./109393.js"),
           return e[t]
         })
       }).map(function(t) {
-        return (0, a.m)((0, i.pi)((0, i.pi)({}, e), {
+        return (0, o.m)((0, i.pi)((0, i.pi)({}, e), {
           output: t
         }))
       });

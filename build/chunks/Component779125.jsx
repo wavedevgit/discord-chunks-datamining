@@ -49,7 +49,7 @@ function O(e) {
     className: l,
     openChatWithoutConnecting: d
   } = e, f = (0, i.e7)([h.default, m.Z], () => null == t ? "" : (0, c.F6)(t, h.default, m.Z), [t]);
-  return (0, r.jsx)(o.u, {
+  return (0, r.jsx)(a.u, {
     "data-pending-richtooltip-migration": true,
     __unsupportedReactNodeAsText: f,
     position: "top",
@@ -57,7 +57,7 @@ function O(e) {
       role: "link",
       className: l,
       onClick: e => {
-        e.stopPropagation(), null != n ? n() : (null != s && s(), (0, a.pTH)(), y(null == t ? true : t.guild_id, null == t ? true : t.id, d))
+        e.stopPropagation(), null != n ? n() : (null != s && s(), (0, o.pTH)(), y(null == t ? true : t.guild_id, null == t ? true : t.id, d))
       },
       iconType: (0, g.wl)(t),
       children: f

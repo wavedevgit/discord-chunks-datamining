@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk614277 = require("./614277.jsx"),
   Chunk698708 = require("./698708.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk633290 = require("./633290.js");
+  Chunk301120 = require("./301120.js");
 
 function S(e) {
   var t, n;
@@ -35,9 +35,9 @@ function S(e) {
     reviewWarningMessage: E,
     planGroup: T,
     openInvoiceId: k,
-    analyticsData: _,
-    analyticsLocation: w,
-    handleClose: Z
+    analyticsData: w,
+    analyticsLocation: Z,
+    handleClose: _
   } = e, {
     activeSubscription: A,
     application: D,
@@ -57,12 +57,12 @@ function S(e) {
     purchaseState: Q,
     subscriptionMetadataRequest: V,
     setHasAcceptedTerms: K
-  } = (0, f.JL)();
+  } = (0, p.JL)();
   a()(null != W, "Expected plan to be selected");
   let U = r.useRef(null),
     [X, $] = (0, c.Z)(false, 500),
     ee = null == V ? true : V.guild_id,
-    et = (0, o.e7)([p.Z], () => p.Z.getGuild(ee), [ee]),
+    et = (0, o.e7)([f.Z], () => f.Z.getGuild(ee), [ee]),
     [en, ei] = r.useState(null),
     er = (0, m.KW)(null != (t = null == z ? true : z.flags) ? t : 0);
   r.useEffect(() => {
@@ -128,7 +128,7 @@ function S(e) {
         metadata: er ? true : V,
         purchaseState: Q,
         hideSubscriptionDetails: true,
-        handleClose: Z
+        handleClose: _
       }) : (0, i.jsx)(d.Z, {
         premiumSubscription: A,
         paymentSources: L,
@@ -147,7 +147,7 @@ function S(e) {
         onCurrencyChange: e => G(e),
         hasOpenInvoice: null != k,
         purchaseState: Q,
-        handleClose: Z
+        handleClose: _
       })]
     }), (0, i.jsx)(v.O3, {
       children: (0, i.jsx)(x.Z, {
@@ -158,8 +158,8 @@ function S(e) {
         onPurchaseError: e => J(e),
         legalTermsNodeRef: ea,
         flashLegalTerms: () => $(true),
-        analyticsLocation: w,
-        baseAnalyticsData: _,
+        analyticsLocation: Z,
+        baseAnalyticsData: w,
         flowStartTime: B.startTime,
         planGroup: T,
         purchaseTokenAuthState: M,

@@ -17,25 +17,25 @@ let s = "Exif IFD Pointer",
 
 function d(e, t, n) {
   let r = i.Z.getByteOrder(e, t),
-    o = f(e, t, r, n);
+    a = f(e, t, r, n);
   return {
-    tags: o = m(o = _(o = p(o, e, t, r, n), e, t, r, n), e, t, r, n),
+    tags: a = m(a = _(a = p(a, e, t, r, n), e, t, r, n), e, t, r, n),
     byteOrder: r
   }
 }
 
 function f(e, t, n, r) {
-  return (0, a.N)(e, o.n1, t, (0, a.a)(e, t, n), n, r)
+  return (0, o.N)(e, a.n1, t, (0, o.a)(e, t, n), n, r)
 }
 
 function p(e, t, n, i, l) {
-  return true !== e[s] ? (0, r.wB)(e, (0, a.N)(t, o.nR, n, n + e[s].value, i, l)) : e
+  return true !== e[s] ? (0, r.wB)(e, (0, o.N)(t, a.nR, n, n + e[s].value, i, l)) : e
 }
 
 function _(e, t, n, i, s) {
-  return true !== e[l] ? (0, r.wB)(e, (0, a.N)(t, o.C9, n, n + e[l].value, i, s)) : e
+  return true !== e[l] ? (0, r.wB)(e, (0, o.N)(t, a.C9, n, n + e[l].value, i, s)) : e
 }
 
 function m(e, t, n, i, s) {
-  return true !== e[c] ? (0, r.wB)(e, (0, a.N)(t, o.$8, n, n + e[c].value, i, s)) : e
+  return true !== e[c] ? (0, r.wB)(e, (0, o.N)(t, a.$8, n, n + e[c].value, i, s)) : e
 }

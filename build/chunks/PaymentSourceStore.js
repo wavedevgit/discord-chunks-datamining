@@ -54,7 +54,7 @@ function _(e) {
   let {
     paymentSources: t
   } = e;
-  for (let e of (d = {}, f = null, t)) d[e.id] = a.ZP.createFromServer(e), e.default && (f = e.id);
+  for (let e of (d = {}, f = null, t)) d[e.id] = o.ZP.createFromServer(e), e.default && (f = e.id);
   null == f && t.length > 0 && (f = t[0].id), p = true
 }
 

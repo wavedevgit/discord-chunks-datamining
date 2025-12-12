@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk934415 = require("./934415.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk60044 = require("./60044.js");
+  Chunk56324 = require("./56324.js");
 let m = 4,
   h = 6,
   g = 1e3;
@@ -25,7 +25,7 @@ function E(e) {
     giftIntentType: t,
     recipientUser: n,
     channel: E
-  } = e, b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), y = i.useRef(null), [O, v] = i.useState(0), {
+  } = e, b = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), y = i.useRef(null), [O, v] = i.useState(0), {
     createMultipleConfettiAt: S
   } = i.useContext(c.h), I = i.useCallback(e => ({
     size: {
@@ -53,7 +53,7 @@ function E(e) {
     let n = I({
       confettiSize: 8
     });
-    new a.sW(g, () => {
+    new o.sW(g, () => {
       S(t.left + t.width / 2, t.top + t.height / 2, n, 60)
     }).delay()
   }, [S, y, b, I]);

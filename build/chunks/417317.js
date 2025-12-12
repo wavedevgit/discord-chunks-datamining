@@ -17,8 +17,8 @@ function c(e) {
     location: n
   } = e, c = (0, l.cZ)({
     location: n
-  }), u = (0, i.e7)([o.Z], () => o.Z.getGuild(null != t ? t : null), [t]), d = (0, i.e7)([s.Z], () => null != u ? s.Z.getStorefrontData(u.id) : true);
+  }), u = (0, i.e7)([a.Z], () => a.Z.getGuild(null != t ? t : null), [t]), d = (0, i.e7)([s.Z], () => null != u ? s.Z.getStorefrontData(u.id) : true);
   return r.useEffect(() => {
-    (null == u ? true : u.id) != null && c && (0, a.YL)(null == u ? true : u.id, false)
+    (null == u ? true : u.id) != null && c && (0, o.YL)(null == u ? true : u.id, false)
   }, [null == u ? true : u.id, d, c]), d
 }

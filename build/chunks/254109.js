@@ -101,28 +101,28 @@ function g() {
 }
 
 function E(e, t) {
-  o.default.track(a.rMx.MEDIA_VIEWER_IMAGE_SAVED, l({
+  a.default.track(o.rMx.MEDIA_VIEWER_IMAGE_SAVED, l({
     url: e,
     success: t
   }, g()))
 }
 
 function b(e, t) {
-  o.default.track(a.rMx.MEDIA_VIEWER_IMAGE_COPIED, l({
+  a.default.track(o.rMx.MEDIA_VIEWER_IMAGE_COPIED, l({
     url: e,
     success: t
   }, g()))
 }
 
 function y(e, t) {
-  o.default.track(a.rMx.MEDIA_VIEWER_LINK_COPIED, l({
+  a.default.track(o.rMx.MEDIA_VIEWER_LINK_COPIED, l({
     href: e,
     success: t
   }, g()))
 }
 
 function O(e) {
-  o.default.track(a.rMx.MEDIA_VIEWER_LINK_OPENED, l({
+  a.default.track(o.rMx.MEDIA_VIEWER_LINK_OPENED, l({
     href: e
   }, g()))
 }

@@ -29,7 +29,7 @@ function p(e) {
     activity: f
   } = e, {
     channelId: p
-  } = null != (t = (0, c.rq)(f)) ? t : {}, _ = (0, o.e7)([u.Z], () => u.Z.getStageInstanceByChannel(p), [p]), m = i.useRef(null), h = i.useCallback(() => {
+  } = null != (t = (0, c.rq)(f)) ? t : {}, _ = (0, a.e7)([u.Z], () => u.Z.getStageInstanceByChannel(p), [p]), m = i.useRef(null), h = i.useCallback(() => {
     let e = s.Z.getChannel(p);
     null != e && l.Cq(e)
   }, [p]), g = null != (n = null == _ ? true : _.topic) ? n : f.name, E = d.intl.formatToPlainString(d.t["T+DNAA"], {
@@ -37,12 +37,12 @@ function p(e) {
   });
   return (0, r.jsx)("div", {
     ref: m,
-    children: (0, r.jsx)(a.P3F, {
+    children: (0, r.jsx)(o.P3F, {
       onClick: h,
       focusProps: {
         ringTarget: m
       },
-      children: (0, r.jsx)(a.Heading, {
+      children: (0, r.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
         children: E
       })

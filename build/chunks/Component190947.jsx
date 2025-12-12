@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   Z: () => s,
-  b: () => a
+  b: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk199849 = require("./199849.jsx"),
   Chunk991862 = require("./991862.js");
 
-function a(e) {
+function o(e) {
   let {
     currencies: t,
     className: n,
@@ -25,7 +25,7 @@ let s = function(e) {
   let {
     label: t,
     currencies: n,
-    onChange: a,
+    onChange: o,
     selectedCurrency: s,
     className: l,
     disabled: c = false
@@ -34,10 +34,10 @@ let s = function(e) {
   let u = n.map((e, t) => ({
       key: t,
       value: e,
-      label: "".concat(e.toUpperCase(), " - ").concat((0, o.T)(e))
+      label: "".concat(e.toUpperCase(), " - ").concat((0, a.T)(e))
     })),
     d = e => {
-      null != e && a(e)
+      null != e && o(e)
     };
   return (0, r.jsx)(i.y6, {
     label: t,

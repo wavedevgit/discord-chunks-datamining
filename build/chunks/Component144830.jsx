@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var _ = function(e) {
@@ -240,7 +240,7 @@ function b(e) {
       return null != e ? i = r - e : null != t && (i = r - t), Math.abs(i) / 1e3 / 60
     }
     getTimeUnit(e, t, n) {
-      let r = (0, o.jU)(e, e => E(e, n, t));
+      let r = (0, a.jU)(e, e => E(e, n, t));
       if (null == r) throw Error("Could not get the time unit in PlayTime with time: ".concat(e, " for type: ").concat(n, " in location: ").concat(t));
       return r
     }
@@ -257,7 +257,7 @@ function b(e) {
         {
           location: n,
           messageProps: i,
-          isApplicationStreaming: a
+          isApplicationStreaming: o
         } = t,
         s = f(t, ["location", "messageProps", "isApplicationStreaming"]),
         {
@@ -269,13 +269,13 @@ function b(e) {
         _ = g[n][u];
       if (null == _) return null;
       let m = _[p],
-        h = Math.floor((0, o.A3)(l, p));
+        h = Math.floor((0, a.A3)(l, p));
       return (0, r.jsx)(e, d(c({}, s), {
-        children: null == m ? true : m(h, i, a)
+        children: null == m ? true : m(h, i, o)
       }))
     }
     constructor(...e) {
-      super(...e), l(this, "timer", new a.Xp), l(this, "state", {
+      super(...e), l(this, "timer", new o.Xp), l(this, "state", {
         time: this.getDiff()
       }), l(this, "update", () => {
         this.setState({

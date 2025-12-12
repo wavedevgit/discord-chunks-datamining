@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk524484 = require("./524484.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk720711 = require("./720711.js");
+  Chunk328607 = require("./328607.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -147,24 +147,24 @@ function Z(e) {
     null != G ? (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, P(j({}, t), {
         user: Z,
         guildId: G,
         channel: v,
         showMediaItems: true,
-        onInteraction: (0, b.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
+        onInteraction: (0, E.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
           targetUserId: Z.id
         })
       }))
     }) : (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
+      } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
       return t => (0, r.jsx)(e, P(j({}, t), {
         user: Z,
         showMediaItems: true,
-        onInteraction: (0, b.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
+        onInteraction: (0, E.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
           targetUserId: Z.id
         })
       }))
@@ -189,12 +189,12 @@ function Z(e) {
       children: (0, r.jsx)(c.P3F, {
         innerRef: p,
         onClick: t => {
-          e.onClick(t), (0, _.v)(f, _.d.VOICE_USER)
+          e.onClick(t), (0, b.v)(f, b.d.VOICE_USER)
         },
         className: N.avatarContainer,
         onContextMenu: W,
         focusProps: x,
-        children: (0, r.jsx)(E.Z, {
+        children: (0, r.jsx)(_.Z, {
           shakeLocation: S.oZ.VOICE_USER,
           isShaking: U,
           children: (0, r.jsx)("div", {
@@ -238,26 +238,26 @@ function w(e) {
       containerRef: l,
       maxVisibleAvatars: t
     }
-  }(t.length - 1), [_, b] = function(e, t, n) {
+  }(t.length - 1), [b, E] = function(e, t, n) {
     let r = [];
     for (let i of e)
       if (i.user.id !== t && !r.some(e => e.user.id === i.user.id)) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, g, m), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(o.u, {
+  }(t, g, m), _ = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(o.u, {
     text: O,
     ariaHidden: true,
     children: (0, r.jsx)(c.hU, {
       "aria-label": O,
       onClick: () => d(!u),
-      icon: () => (0, r.jsx)(E, {
+      icon: () => (0, r.jsx)(_, {
         size: "md"
       }),
       variant: "icon-only",
       size: "sm"
     })
-  }), I = b && u ? t : _;
+  }), I = E && u ? t : b;
   return I.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(N.scroller, l),
     fade: true,
@@ -282,7 +282,7 @@ function w(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), b ? y : null]
+      }), E ? y : null]
     })
   })
 }

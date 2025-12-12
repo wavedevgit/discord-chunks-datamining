@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk575053 = require("./575053.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk476365 = require("./476365.js"),
   Chunk483454 = require("./483454.jsx"),
@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk938590 = require("./938590.jsx"),
   Chunk590617 = require("./590617.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk701323 = require("./701323.js"),
-  Chunk616926 = require("./616926.js");
+  Chunk717452 = require("./717452.js"),
+  Chunk570810 = require("./570810.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
     return (0, Chunk54381.jsxs)("div", {
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        className: Chunk616926.headerWithSpacing,
+        className: Chunk570810.headerWithSpacing,
         children: "Default Options"
       }), (0, Chunk54381.jsx)("div", {
         children: Object.entries(module).map(e => {
@@ -95,7 +95,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
     let {
       theme: t,
       colorText: n,
-      colorBackground: o,
+      colorBackground: a,
       inputBackgroundColor: u,
       tabBackgroundColor: p,
       storyType: E
@@ -122,7 +122,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
       elementsAppearanceOptions: {
         theme: t,
         colorText: n,
-        colorBackground: o,
+        colorBackground: a,
         inputBackgroundColor: u,
         tabBackgroundColor: p
       }
@@ -141,7 +141,7 @@ let v = new Chunk710845.Z("PaymentElement.web.stories"),
         children: [(0, r.jsx)(_.H, {
           stepConfigs: [A(E)],
           children: (0, r.jsx)("div", {
-            className: a()(h.paymentElementContainer, {
+            className: o()(h.paymentElementContainer, {
               [h.fullLengthPaymentElementContainer]: "joined-payment-address-elements" === E
             }),
             children: (0, r.jsxs)(i.Elements, {

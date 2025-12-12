@@ -35,11 +35,11 @@ function p(e) {
     }
   }, {
     disableTrack: null == h
-  }, [h]), null == h) ? null : (0, r.jsx)(o.u, {
+  }, [h]), null == h) ? null : (0, r.jsx)(a.u, {
     text: f.intl.string(f.t.JVwWva),
     position: "top",
     children: (0, r.jsx)(u.O1, {
-      icon: a.v3n,
+      icon: o.v3n,
       text: f.intl.string(f.t["jaYS/h"]),
       size: "sm",
       onClick: e => {

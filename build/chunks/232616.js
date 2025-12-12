@@ -6,14 +6,14 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk335218 = require("./335218.js"),
-  o = require.n(Chunk335218),
-  a = {};
+  a = require.n(Chunk335218),
+  o = {};
 
 function s(e, t) {
-  true === t && (t = o());
-  var n = (0, r.useRef)(a),
+  true === t && (t = a());
+  var n = (0, r.useRef)(o),
     i = n.current;
   return (0, r.useEffect)(function() {
     n.current = i
-  }), n.current !== a && t(e, n.current) || (i = e), i
+  }), n.current !== o && t(e, n.current) || (i = e), i
 }

@@ -95,24 +95,24 @@ function x(e) {
   let {
     onComplete: t,
     entryPoint: n,
-    isRetry: a = false,
+    isRetry: o = false,
     visibleContent: s = null,
     shouldShowExpressiveModal: d = false,
     classificationId: f = null
   } = e, [h, g] = r.useState(false), E = (0, i.e7)([p.default], () => p.default.getCurrentUser()), {
     current: y
   } = r.useRef(null == E ? true : E.ageVerificationStatus), O = (0, c.GE)(), v = r.useCallback(() => {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "CLOSE_AGE_VERIFICATION_MODAL",
       status: y
-    }), a || O || u.Z.maybeOpenAgeVerificationUserFeedback({
+    }), o || O || u.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_intro_screen",
       visibleContent: s
     })
-  }, [y, a, s, O]), S = r.useCallback(async e => {
+  }, [y, o, s, O]), S = r.useCallback(async e => {
     g(true);
     try {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "INITIATE_AGE_VERIFICATION"
       });
       let r = await (0, m.pU)({
@@ -147,10 +147,10 @@ function L(e) {
       return null == (e = p.default.getCurrentUser()) ? true : e.ageVerificationStatus
     }),
     n = (0, s.Z)(t),
-    o = (0, i.e7)([d.default], () => null != d.default.getSuspendedUserToken()),
-    a = (0, i.e7)([d.default], () => d.default.isAuthenticated()),
+    a = (0, i.e7)([d.default], () => null != d.default.getSuspendedUserToken()),
+    o = (0, i.e7)([d.default], () => d.default.isAuthenticated()),
     l = null != n && null != t && n !== t,
-    c = !o && !a;
+    c = !a && !o;
   r.useEffect(() => {
     (l || c) && e()
   }, [e, l, c])

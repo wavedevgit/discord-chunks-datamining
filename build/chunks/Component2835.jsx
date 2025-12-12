@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk12532 = require("./12532.js"),
   Chunk564756 = require("./564756.js"),
   Chunk612776 = require("./612776.js"),
-  Chunk591666 = require("./591666.js");
+  Chunk921872 = require("./921872.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,8 +59,8 @@ function y(e) {
   let {
     isSelected: t,
     icon: n,
-    color: o,
-    onClick: a
+    color: a,
+    onClick: o
   } = e, [l, u] = i.useState(false), d = (0, c.q_F)({
     from: {
       scale: 0
@@ -73,13 +73,13 @@ function y(e) {
   return (0, r.jsx)(s.animated.div, {
     style: g({}, d),
     children: (0, r.jsx)(c.P3F, {
-      onClick: a,
+      onClick: o,
       className: m.clickable,
       onMouseEnter: () => u(true),
       onMouseLeave: () => u(false),
       children: (0, r.jsx)(f, {
         colorClass: m.stepColor,
-        color: o,
+        color: a,
         style: {
           opacity: t || l ? 1 : .5
         }
@@ -100,27 +100,27 @@ function v(e) {
   let {
     activeSlide: t,
     setActiveSlide: n,
-    color: o,
+    color: a,
     className: s
   } = e, c = Number.parseInt(t.toString(), 10), f = (0, l.e7)([d.Z], () => Number.parseInt(d.Z.highestSlideSeen)), p = O();
   return i.useEffect(() => {
     c > f && (0, u.f7)("".concat(c))
   }, [c, f]), (0, r.jsx)("div", {
-    className: a()(m.container, s),
+    className: o()(m.container, s),
     children: p.map((e, t) => {
       let {
         icon: i,
-        slide: a
-      } = e, s = Number.parseInt(a, 10);
+        slide: o
+      } = e, s = Number.parseInt(o, 10);
       return f >= s ? (0, r.jsx)(y, {
         isSelected: c === s,
         icon: i,
-        onClick: () => n(a),
-        color: o
+        onClick: () => n(o),
+        color: a
       }, "step-indicator-".concat(t)) : (0, r.jsx)("div", {
         className: m.unknownIcon,
         style: {
-          borderColor: o,
+          borderColor: a,
           opacity: .5
         }
       }, "step-indicator-".concat(t))

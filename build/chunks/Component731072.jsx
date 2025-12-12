@@ -1,7 +1,7 @@
-/** Chunk was on 86736 **/
+/** Chunk was on 9414 **/
 /** chunk id: 731072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,33 +11,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk434404 = require("./434404.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk13051 = require("./13051.jsx"),
-  Chunk66544 = require("./66544.js");
+  Chunk456928 = require("./456928.js");
 
-function p(e) {
+function b(e) {
   let {
     integrations: t,
     editedIntegration: n,
-    guild: p,
-    platformType: m,
-    labelText: b,
-    descriptionText: g,
-    helpText: f,
+    guild: b,
+    platformType: p,
+    labelText: m,
+    descriptionText: f,
+    helpText: g,
     errors: h,
     canNavigate: x
-  } = e, j = o.Z.get(m), v = r.useCallback(async e => {
-    x() && (await s.Z.enableIntegration(p.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
-  }, [x, p.id]), O = r.useCallback(e => {
-    x() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
-  }, [x, n, p.id]), y = r.useCallback(e => {
+  } = e, j = o.Z.get(p), v = r.useCallback(async e => {
+    x() && (await s.Z.enableIntegration(b.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
+  }, [x, b.id]), O = r.useCallback(e => {
+    x() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(b.id, e.id))
+  }, [x, n, b.id]), y = r.useCallback(e => {
     x() && (e === (null == n ? true : n.id) ? a.Z.stopEditingIntegration() : a.Z.startEditingIntegration(e))
   }, [x, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
-      name: b,
+      name: m,
       icon: null == j ? true : j.icon.whiteSVG,
       iconBackgroundColor: null == j ? true : j.color,
       iconClassName: u.platformIcon,
-      description: g,
+      description: f,
       isHeader: true
     }), (0, i.jsx)(l.izJ, {
       className: u.headerDivider
@@ -49,7 +49,7 @@ function p(e) {
     }), t.map(e => (0, i.jsx)(d.Z, {
       integration: e,
       editedIntegration: n,
-      guild: p,
+      guild: b,
       isExpanded: (null == n ? true : n.id) === e.id,
       onEnable: v,
       onDisable: O,
@@ -58,7 +58,7 @@ function p(e) {
       className: u.helpText,
       color: "text-muted",
       variant: "text-sm/normal",
-      children: f
+      children: g
     })]
   })
 }

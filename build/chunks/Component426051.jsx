@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 426051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,22 +16,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk376191 = require("./376191.jsx"),
   Chunk86203 = require("./86203.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk539410 = require("./539410.js");
+  Chunk282850 = require("./282850.js");
 
-function _(e) {
+function b(e) {
   let {
     active: t,
     user: n,
-    channel: _
-  } = e, b = (0, d.V)(), E = i.useCallback(() => {
+    channel: b
+  } = e, E = (0, d.V)(), _ = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(h.intl.string(h.t.pIQ3h4), a.ToastType.FAILURE)), s.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
   }, []), O = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ)
   }, []), v = i.useCallback(() => {
-    c.Z.closeChannelSidebar(u.uZ), b && (0, o.Kh)(_.id)
-  }, [_.id, b]), {
+    c.Z.closeChannelSidebar(u.uZ), E && (0, o.Kh)(b.id)
+  }, [b.id, E]), {
     acceptMessageRequest: y,
     isAcceptLoading: I,
     isUserProfileLoading: C,
@@ -40,13 +40,13 @@ function _(e) {
     user: n,
     onAcceptSuccess: v,
     onRejectSuccess: O,
-    onError: E
+    onError: _
   }), T = I || C, N = T || S;
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(f.Z, {
       otherUser: n,
-      channel: _,
+      channel: b,
       active: t
     }), (0, r.jsxs)("div", {
       className: m.actions,
@@ -55,12 +55,12 @@ function _(e) {
         size: "sm",
         text: h.intl.string(h.t.vicfl6),
         onClick: e => {
-          y(_.id), e.stopPropagation()
+          y(b.id), e.stopPropagation()
         },
         disabled: N,
         loading: T
       }), (0, r.jsx)(g.Z, {
-        channel: _
+        channel: b
       })]
     })]
   })

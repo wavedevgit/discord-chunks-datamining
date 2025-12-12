@@ -8,7 +8,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ class s extends Chunk147913.Z {
   _trackIfSessionMetadataExists(e) {
     if (null != e.session_metadata) {
       var t;
-      i.default.track(o.rMx.MESSAGE_DISPATCH_SESSION_METADATA_FOUND, {
+      i.default.track(a.rMx.MESSAGE_DISPATCH_SESSION_METADATA_FOUND, {
         message_id: e.id,
         channel_id: e.channel_id,
         author_id: null == (t = e.author) ? true : t.id,
@@ -48,7 +48,7 @@ class s extends Chunk147913.Z {
     }
   }
   constructor(...e) {
-    super(...e), a(this, "actions", {
+    super(...e), o(this, "actions", {
       MESSAGE_CREATE: e => this.handleMessageCreate(e),
       MESSAGE_UPDATE: e => this.handleMessageUpdate(e)
     })

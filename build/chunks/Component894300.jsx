@@ -20,7 +20,7 @@ function u(e) {
     className: t,
     game: n
   } = e;
-  return (0, a.hi)() && null != n && n.elevated ? (0, r.jsx)("div", {
+  return (0, o.hi)() && null != n && n.elevated ? (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(i.Wn, {
       messageType: i.QYI.WARNING,
@@ -31,7 +31,7 @@ function u(e) {
         onClick: c
       }),
       children: l.intl.format(l.t["LJzl+0"], {
-        helpCenterLink: o.Z.getArticleURL(s.BhN.SYSTEM_SERVICE)
+        helpCenterLink: a.Z.getArticleURL(s.BhN.SYSTEM_SERVICE)
       })
     })
   }) : null

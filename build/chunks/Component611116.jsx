@@ -8,13 +8,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk572995 = require("./572995.js"),
   Chunk42373 = require("./42373.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk642650 = require("./642650.js"),
-  Chunk595475 = require("./595475.js");
+  Chunk291049 = require("./291049.js"),
+  Chunk538654 = require("./538654.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,14 +60,14 @@ function g(e) {
     className: t,
     boxLayout: n,
     title: i,
-    shouldLoadVideo: o,
+    shouldLoadVideo: a,
     isReducedMotion: u,
     includeSideGradient: p = false,
     startLeftAligned: m = false,
     enablePremiumBrandRefreshDesign: g
   } = e, E = g ? f : d;
   return (0, r.jsxs)("div", {
-    className: a()(E.boxBackdrop, t),
+    className: o()(E.boxBackdrop, t),
     children: [(0, r.jsx)(s.Heading, {
       className: E.bentoSectionHeader,
       variant: "display-md",
@@ -92,7 +92,7 @@ function g(e) {
             index: t + +!!m
           }, e), {
             size: n,
-            shouldLoadVideo: o,
+            shouldLoadVideo: a,
             isReducedMotion: u,
             enablePremiumBrandRefreshDesign: g
           }), e.name))

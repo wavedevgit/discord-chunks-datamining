@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 420966, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  V: () => f,
-  Z: () => h
+  V: () => b,
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk852898 = require("./852898.jsx"),
   Chunk203377 = require("./203377.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345987 = require("./345987.js");
+  Chunk235778 = require("./235778.js");
 
-function f() {
+function b() {
   let [e, t] = Chunk473749.useState(true);
   return {
     scrolledToTop: module,
@@ -28,36 +28,36 @@ function f() {
   }
 }
 
-function h(e) {
+function p(e) {
   let {
     guild: t,
-    role: f,
-    selectedSection: h,
-    setSelectedSection: x
-  } = e, b = i.useCallback(e => {
-    x(e)
-  }, [x]), j = (0, l.e7)([u.Z], () => {
+    role: b,
+    selectedSection: p,
+    setSelectedSection: h
+  } = e, x = i.useCallback(e => {
+    h(e)
+  }, [h]), j = (0, l.e7)([d.Z], () => {
     var e;
-    return null == (e = u.Z.getRoleMemberCount(t.id)) ? true : e[f.id]
-  }, [f.id, t.id]), _ = (0, c.fI)(f), v = (0, d.Z)(t.id, f);
+    return null == (e = d.Z.getRoleMemberCount(t.id)) ? true : e[b.id]
+  }, [b.id, t.id]), v = (0, c.fI)(b), O = (0, u.Z)(t.id, b);
   i.useEffect(() => {
-    _ && x(g.ZI.PERMISSIONS)
-  }, [_, x]);
-  let O = (0, o.e)(t, f);
+    v && h(g.ZI.PERMISSIONS)
+  }, [v, h]);
+  let C = (0, o.e)(t, b);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: p.titleContainer,
-      children: [(0, r.jsx)(s.Text, {
-        className: p.titleText,
+      className: m.titleContainer,
+      children: [(0, r.jsx)(a.Text, {
+        className: m.titleText,
         color: "text-strong",
         variant: "text-md/semibold",
-        children: m.intl.format(m.t.BUdGkE, {
-          roleName: f.name
+        children: f.intl.format(f.t.BUdGkE, {
+          roleName: b.name
         })
-      }), O ? (0, r.jsx)(s.P3F, {
-        className: p.menu,
+      }), C ? (0, r.jsx)(a.P3F, {
+        className: m.menu,
         onClick: function(e) {
-          (0, a.jW)(e, async () => {
+          (0, s.jW)(e, async () => {
             let {
               default: e
             } = await Promise.resolve().then(n.bind(n, 741247));
@@ -82,7 +82,7 @@ function h(e) {
                 return e
               }({}, n), l = l = {
                 guild: t,
-                role: f
+                role: b
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -96,41 +96,41 @@ function h(e) {
             }
           })
         },
-        "aria-label": m.intl.string(m.t.PdRCRg),
-        children: (0, r.jsx)(s.xhG, {
+        "aria-label": f.intl.string(f.t.PdRCRg),
+        children: (0, r.jsx)(a.xhG, {
           size: "md",
           color: "currentColor"
         })
       }) : null]
-    }), null != v ? (0, r.jsx)(s.Wn, {
-      messageType: s.QYI.WARNING,
-      children: v
-    }) : null, (0, r.jsxs)(s.njP, {
-      className: p.tabBar,
-      "aria-label": m.intl.string(m.t["+1H47t"]),
-      selectedItem: h,
+    }), null != O ? (0, r.jsx)(a.Wn, {
+      messageType: a.QYI.WARNING,
+      children: O
+    }) : null, (0, r.jsxs)(a.njP, {
+      className: m.tabBar,
+      "aria-label": f.intl.string(f.t["+1H47t"]),
+      selectedItem: p,
       type: "top",
       look: "brand",
-      onItemSelect: b,
-      children: [(0, r.jsx)(s.njP.Item, {
-        className: p.tabBarItem,
+      onItemSelect: x,
+      children: [(0, r.jsx)(a.njP.Item, {
+        className: m.tabBarItem,
         id: g.ZI.DISPLAY,
-        disabled: _,
-        children: m.intl.string(m.t.hmdomw)
-      }), (0, r.jsx)(s.njP.Item, {
-        className: p.tabBarItem,
+        disabled: v,
+        children: f.intl.string(f.t.hmdomw)
+      }), (0, r.jsx)(a.njP.Item, {
+        className: m.tabBarItem,
         id: g.ZI.PERMISSIONS,
-        children: m.intl.string(m.t.WIDE1L)
-      }), (0, r.jsx)(s.njP.Item, {
-        className: p.tabBarItem,
+        children: f.intl.string(f.t.WIDE1L)
+      }), (0, r.jsx)(a.njP.Item, {
+        className: m.tabBarItem,
         id: g.ZI.VERIFICATIONS,
-        disabled: _,
-        children: m.intl.string(m.t["5//Muu"])
-      }), (0, r.jsx)(s.njP.Item, {
-        className: p.tabBarItem,
+        disabled: v,
+        children: f.intl.string(f.t["5//Muu"])
+      }), (0, r.jsx)(a.njP.Item, {
+        className: m.tabBarItem,
         id: g.ZI.MEMBERS,
-        disabled: _,
-        children: _ ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
+        disabled: v,
+        children: v ? f.intl.string(f.t["kg//+7"]) : f.intl.formatToPlainString(f.t.bHnZWW, {
           numMembers: String(j)
         })
       })]

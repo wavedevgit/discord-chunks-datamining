@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk582113 = require("./582113.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk308285 = require("./308285.js");
+  Chunk685822 = require("./685822.js");
 
 function O(t) {
   let {
@@ -48,16 +48,16 @@ function O(t) {
     analyticsLocations: T
   } = t, [S, j] = a.useState({
     state: "LINK"
-  }), [k, N] = a.useState(false), v = (0, l.e7)([m.Z], () => m.Z.getApplication(n.applicationId)), E = (0, _.F)(v), {
+  }), [k, N] = a.useState(false), v = (0, l.e7)([_.Z], () => _.Z.getApplication(n.applicationId)), E = (0, m.F)(v), {
     analyticsLocations: L
-  } = (0, f.ZP)(null != T ? T : [], x.Z.SOCIAL_LAYER_GIFT_CODE_CLAIM_MODAL);
+  } = (0, x.ZP)(null != T ? T : [], f.Z.SOCIAL_LAYER_GIFT_CODE_CLAIM_MODAL);
   a.useEffect(() => {
     r.redeemed && "LINK" === S.state && j({
       state: "ERROR",
-      error: new o.yZ(b.intl.string(b.t.Iw2TUW), A.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED)
+      error: new o.yZ(A.intl.string(A.t.Iw2TUW), y.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED)
     })
   }, [r, S.state]);
-  let R = a.useRef({
+  let b = a.useRef({
     analyticsLocations: L,
     giftCode: r,
     hasCustomMessage: null != g && "" !== g,
@@ -71,10 +71,10 @@ function O(t) {
     let {
       analyticsLocations: t,
       skuId: e
-    } = R.current;
-    h.default.track(A.rMx.OPEN_MODAL, {
+    } = b.current;
+    h.default.track(y.rMx.OPEN_MODAL, {
       location_stack: t,
-      type: y.tb,
+      type: R.tb,
       sku_id: e,
       application_id: null == v ? true : v.id
     })
@@ -87,12 +87,12 @@ function O(t) {
       emojiName: a,
       soundId: s,
       skuProductLine: l
-    } = R.current;
-    h.default.track(A.rMx.GIFT_ACCEPT_STEP, {
+    } = b.current;
+    h.default.track(y.rMx.GIFT_ACCEPT_STEP, {
       to_step: S.state,
       location_stack: t,
       has_custom_message: e,
-      is_custom_message_edited: e && n !== b.intl.string(b.t.ZkOo1U),
+      is_custom_message_edited: e && n !== A.intl.string(A.t.ZkOo1U),
       gift_style: i.giftStyle,
       gift_code: i.code,
       emoji_name: a,
@@ -109,15 +109,15 @@ function O(t) {
       customGiftMessage: s,
       emojiName: l,
       soundId: o
-    } = R.current;
-    h.default.track(A.rMx.SLAYER_STOREFRONT_GIFT_CODE_CLAIM_CLICKED, {
+    } = b.current;
+    h.default.track(y.rMx.SLAYER_STOREFRONT_GIFT_CODE_CLAIM_CLICKED, {
       location_stack: n,
       sku_id: i,
       application_id: null == v ? true : v.id,
       gift_code: r.code,
       gift_style: null != (e = null == (t = r.giftStyle) ? true : t.toString()) ? e : null,
       has_custom_message: a,
-      is_custom_message_edited: a && s !== b.intl.string(b.t.ZkOo1U),
+      is_custom_message_edited: a && s !== A.intl.string(A.t.ZkOo1U),
       emoji_name: l,
       sound_id: o
     });
@@ -147,7 +147,7 @@ function O(t) {
         application: v,
         transitionState: e,
         onClose: s,
-        successStateButtonText: b.intl.string(b.t.go1e4x),
+        successStateButtonText: A.intl.string(A.t.go1e4x),
         onSuccessButtonClick: M,
         isSuccessButtonLoading: k,
         analyticsLocations: L,
@@ -186,11 +186,11 @@ let P = t => {
       hasAlreadyLinked: c
     } = t,
     u = T.default.getCurrentUser();
-  return o.code === A.evJ.INVALID_GIFT_REDEMPTION_OWNED ? (e = b.intl.string(b.t.uXnSGo), n = c ? b.intl.formatToPlainString(b.t["TNRN/e"], {
+  return o.code === y.evJ.INVALID_GIFT_REDEMPTION_OWNED ? (e = A.intl.string(A.t.uXnSGo), n = c ? A.intl.formatToPlainString(A.t["TNRN/e"], {
     applicationName: r.name
-  }) : b.intl.formatToPlainString(b.t.VkR30M, {
+  }) : A.intl.formatToPlainString(A.t.VkR30M, {
     applicationName: r.name
-  })) : (e = b.intl.string(b.t.dMYg1c), n = (0, k.QW)(o, u)), (0, i.jsxs)(s.IX, {
+  })) : (e = A.intl.string(A.t.dMYg1c), n = (0, k.QW)(o, u)), (0, i.jsxs)(s.IX, {
     transitionState: a,
     onClose: l,
     children: [(0, i.jsx)(s.xBx, {
@@ -205,7 +205,7 @@ let P = t => {
     }), (0, i.jsx)(s.Go$, {
       actions: [{
         variant: "primary",
-        text: b.intl.string(b.t.WAI6xu),
+        text: A.intl.string(A.t.WAI6xu),
         onClick: l
       }],
       actionsFullWidth: true
@@ -222,22 +222,22 @@ function G(t) {
     successStateButtonText: c,
     onSuccessButtonClick: u,
     isSuccessButtonLoading: d,
-    analyticsLocations: x,
-    startAuthorizeResult: f
+    analyticsLocations: f,
+    startAuthorizeResult: x
   } = t, {
-    hasAlreadyLinked: _,
-    canStartAuthorization: m,
+    hasAlreadyLinked: m,
+    canStartAuthorization: _,
     startAuthorization: g,
     fetched: p
-  } = f, C = a.useRef({
-    analyticsLocations: x,
+  } = x, C = a.useRef({
+    analyticsLocations: f,
     skuId: e.id,
     applicationId: n.id,
-    canStartAuthorization: m
+    canStartAuthorization: _
   });
   a.useEffect(() => {
-    C.current.canStartAuthorization = m
-  }, [m]), a.useEffect(() => {
+    C.current.canStartAuthorization = _
+  }, [_]), a.useEffect(() => {
     if (!p) return;
     let {
       analyticsLocations: t,
@@ -245,22 +245,22 @@ function G(t) {
       applicationId: n,
       canStartAuthorization: i
     } = C.current;
-    h.default.track(A.rMx.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, {
+    h.default.track(y.rMx.SLAYER_STOREFRONT_LINK_ACCOUNT_STEP_VIEWED, {
       location_stack: t,
       sku_id: e,
       application_id: n,
       is_gift: true,
-      is_account_linked: _,
+      is_account_linked: m,
       can_start_authorization: i
     })
-  }, [p, _]);
+  }, [p, m]);
   let T = a.useCallback(() => {
     let {
       analyticsLocations: t,
       skuId: e,
       applicationId: n
     } = C.current;
-    h.default.track(A.rMx.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, {
+    h.default.track(y.rMx.SLAYER_STOREFRONT_ACCOUNT_LINK_CLICKED, {
       location_stack: t,
       sku_id: e,
       application_id: n,
@@ -279,32 +279,32 @@ function G(t) {
       })
     })
   });
-  let S = _ ? {
+  let S = m ? {
     variant: "primary",
     text: c,
     onClick: u,
     loading: d
   } : {
     variant: "primary",
-    text: b.intl.string(b.t["VDAhr+"]),
+    text: A.intl.string(A.t["VDAhr+"]),
     onClick: T,
     icon: s.uIJ,
-    disabled: !m
+    disabled: !_
   };
   return (0, i.jsx)(L.M, {
     sku: e,
     application: n,
     transitionState: l,
     onClose: o,
-    hasAlreadyLinked: _,
-    canStartAuthorization: m,
+    hasAlreadyLinked: m,
+    canStartAuthorization: _,
     primaryCTAButtonProps: S,
-    bodyText: _ ? b.intl.formatToPlainString(b.t.sL5yz7, {
+    bodyText: m ? A.intl.formatToPlainString(A.t.sL5yz7, {
       applicationName: n.name
-    }) : b.intl.formatToPlainString(b.t.PaYE38, {
+    }) : A.intl.formatToPlainString(A.t.PaYE38, {
       applicationName: n.name
     }),
-    title: b.intl.string(b.t["Bn1J+a"])
+    title: A.intl.string(A.t["Bn1J+a"])
   })
 }
 
@@ -316,31 +316,31 @@ function Z(t) {
     application: c,
     giftCode: u,
     customGiftMessage: d,
-    analyticsLocations: x,
-    emojiName: f,
-    soundId: _
-  } = t, m = (0, E.a)(c), g = (0, v.I)(c), [p, C] = a.useState(null), S = (0, l.e7)([T.default], () => T.default.getUser(u.userId)), k = N.ZP.getName(S), I = a.useRef({
-    analyticsLocations: x,
+    analyticsLocations: f,
+    emojiName: x,
+    soundId: m
+  } = t, _ = (0, E.a)(c), g = (0, v.I)(c), [p, C] = a.useState(null), S = (0, l.e7)([T.default], () => T.default.getUser(u.userId)), k = N.ZP.getName(S), I = a.useRef({
+    analyticsLocations: f,
     skuId: o.id,
     applicationId: c.id,
-    isLaunchable: m,
+    isLaunchable: _,
     isApplicationConnected: g
   });
   if (a.useEffect(() => {
-      I.current.isLaunchable = m, I.current.isApplicationConnected = g
-    }, [m, g]), null == m) return (0, i.jsx)(s.IX, {
+      I.current.isLaunchable = _, I.current.isApplicationConnected = g
+    }, [_, g]), null == _) return (0, i.jsx)(s.IX, {
     transitionState: e,
     onClose: n,
     children: (0, i.jsx)(s.fef, {
       children: (0, i.jsx)(r.$jN, {})
     })
   });
-  let L = m && !g ? {
+  let L = _ && !g ? {
     variant: "primary",
-    text: b.intl.string(b.t["s+J8Dl"]),
+    text: A.intl.string(A.t["s+J8Dl"]),
     onClick: () => {
-      h.default.track(A.rMx.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED, {
-        location_stack: x,
+      h.default.track(y.rMx.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED, {
+        location_stack: f,
         sku_id: o.id,
         application_id: c.id,
         is_gift: true
@@ -349,14 +349,14 @@ function Z(t) {
     icon: s.rgF
   } : {
     variant: "primary",
-    text: b.intl.string(b.t.cpT0Cq),
+    text: A.intl.string(A.t.cpT0Cq),
     onClick: () => {
-      h.default.track(A.rMx.SLAYER_STOREFRONT_CLAIM_MODAL_CLOSE_BUTTON_CLICKED, {
-        location_stack: x,
+      h.default.track(y.rMx.SLAYER_STOREFRONT_CLAIM_MODAL_CLOSE_BUTTON_CLICKED, {
+        location_stack: f,
         sku_id: o.id,
         application_id: c.id,
         is_gift: true,
-        is_launchable: null != m && m,
+        is_launchable: null != _ && _,
         is_application_connected: g
       }), n()
     }
@@ -370,14 +370,14 @@ function Z(t) {
         top: "-".concat(100, "px")
       },
       ref: t => C(t)
-    }), (0, i.jsx)(R.y, {
+    }), (0, i.jsx)(b.y, {
       sku: o
     }), (0, i.jsxs)(s.fef, {
       children: [(0, i.jsx)(s.xvT, {
         variant: "text-md/normal",
         color: "text-subtle",
         className: M.giftSenderText,
-        children: b.intl.formatToPlainString(b.t["6yrIzU"], {
+        children: A.intl.formatToPlainString(A.t["6yrIzU"], {
           sender: k
         })
       }), null != d && "" !== d && (0, i.jsx)(s.xvT, {
@@ -389,16 +389,16 @@ function Z(t) {
         className: M.giftSentToGameNoticeContainerPadding,
         children: (0, i.jsx)(s.M14, {
           type: "success",
-          children: b.intl.formatToPlainString(b.t.W2znvX, {
+          children: A.intl.formatToPlainString(A.t.W2znvX, {
             skuName: o.name,
             applicationName: c.name
           })
         })
       }), null != p && (0, i.jsx)(F, {
         confettiTarget: p,
-        emojiName: f
-      }), null != _ && (0, i.jsx)(D, {
-        soundId: _
+        emojiName: x
+      }), null != m && (0, i.jsx)(D, {
+        soundId: m
       })]
     }), (0, i.jsx)(s.Go$, {
       actions: [L],
@@ -430,10 +430,10 @@ let D = t => {
       c(false)
     }, []);
     if (s || !r) return null;
-    let x = null != n ? S.ZP.getURL(n) : true;
+    let f = null != n ? S.ZP.getURL(n) : true;
     return (0, i.jsx)(g.Z, {
       confettiTarget: o.current,
-      emojiURL: x,
+      emojiURL: f,
       numBursts: 5,
       particlesPerBurst: 50,
       speedValues: B,

@@ -26,8 +26,8 @@ function p(e) {
   } = e, g = null == (t = (0, s.hp)(_)) ? true : t.errorCode;
 
   function E() {
-    (0, a.w)(i.Yn.DEFAULT, n), o.Z.setDisableLocalVideo(n, u.ZUi.DISABLED, i.Yn.DEFAULT, false), setTimeout(() => {
-      o.Z.setDisableLocalVideo(n, u.ZUi.MANUAL_ENABLED, i.Yn.DEFAULT, false)
+    (0, o.w)(i.Yn.DEFAULT, n), a.Z.setDisableLocalVideo(n, u.ZUi.DISABLED, i.Yn.DEFAULT, false), setTimeout(() => {
+      a.Z.setDisableLocalVideo(n, u.ZUi.MANUAL_ENABLED, i.Yn.DEFAULT, false)
     }, 1e3)
   }
   return (0, r.jsx)(c.Z, {

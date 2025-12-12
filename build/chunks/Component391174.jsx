@@ -7,25 +7,25 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk725436 = require("./725436.js"),
-  Chunk947469 = require("./947469.js"),
-  Chunk430864 = require("./430864.js");
+  Chunk276713 = require("./276713.js"),
+  Chunk960324 = require("./960324.js");
 
 function u(e) {
   let {
     description: t,
     className: n,
-    guildId: o,
+    guildId: a,
     truncate: u = true
   } = e, d = i.useMemo(() => (0, s.m)(t, true, {
-    guildId: o,
+    guildId: a,
     allowLinks: true,
     allowHeading: true,
     allowList: true
-  }), [t, o]);
+  }), [t, a]);
   return (0, r.jsx)("div", {
-    className: a()(l.descriptionText, n, c.markup, {
+    className: o()(l.descriptionText, n, c.markup, {
       [l.truncate]: u
     }),
     children: d

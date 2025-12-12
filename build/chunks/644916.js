@@ -28,7 +28,7 @@ function p(e) {
     case i.z.ACTIVITIES_VOICE_LAUNCHER_BADGE:
       return (0, l.O)({
         storeState: s.ZP.getState(),
-        surface: a.eR.VOICE_LAUNCHER
+        surface: o.eR.VOICE_LAUNCHER
       });
     case i.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK:
       return 0;
@@ -37,7 +37,7 @@ function p(e) {
     case i.z.GAME_SHOP_ANNOUNCEMENT_MODAL:
       return f.dQ;
     default:
-      return (0, o.UT)(e, {
+      return (0, a.UT)(e, {
         andFail: false
       }), 0
   }

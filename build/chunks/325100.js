@@ -26,13 +26,13 @@ let c = e => {
       location: t
     } = e, {
       enabled: n
-    } = a.n.getCurrentConfig({
+    } = o.n.getCurrentConfig({
       location: t
     });
     return n ? {
       enabled: false,
       discountEnabled: false
-    } : o.E.getConfig({
+    } : a.E.getConfig({
       location: t
     })
   },
@@ -41,9 +41,9 @@ let c = e => {
       location: t
     } = e, {
       enabled: n
-    } = a.n.useExperiment({
+    } = o.n.useExperiment({
       location: t
-    }), r = o.E.useConfig({
+    }), r = a.E.useConfig({
       location: t
     });
     return n ? {
@@ -57,27 +57,27 @@ let c = e => {
       location: t
     } = e, {
       search: n,
-      pathname: o
+      pathname: a
     } = (0, i.TH)(), {
-      enabled: a
+      enabled: o
     } = u({
       location: t
     }), {
       deep_link_type: s
     } = (0, r.parse)(n);
-    return d(a, o, s)
+    return d(o, a, s)
   },
   p = function(e) {
     let {
       location: t
     } = e, n = arguments.length > 1 && true !== arguments[1] && arguments[1], i = window.location.pathname, {
-      deep_link_type: o
+      deep_link_type: a
     } = (0, r.parse)(window.location.search);
     if (i.startsWith(s.Z5c.BILLING_MANAGE_SUBSCRIPTION)) returnfalse;
     let {
-      enabled: a
+      enabled: o
     } = c({
       location: t
     });
-    return d(n || a, i, o)
+    return d(n || o, i, a)
   }

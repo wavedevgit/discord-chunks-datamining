@@ -26,7 +26,7 @@ module.exports = function(e, t, n, h, g, E) {
     if (!c(t)) returnfalse;
     b = true, S = false
   }
-  if (T && !S) return E || (E = new r), b || u(e) ? i(e, t, n, h, g, E) : o(e, t, O, n, h, g, E);
+  if (T && !S) return E || (E = new r), b || u(e) ? i(e, t, n, h, g, E) : a(e, t, O, n, h, g, E);
   if (!(n & d)) {
     var C = S && m.call(e, "__wrapped__"),
       A = I && m.call(t, "__wrapped__");
@@ -36,5 +36,5 @@ module.exports = function(e, t, n, h, g, E) {
       return E || (E = new r), g(N, P, n, h, E)
     }
   }
-  return !!T && (E || (E = new r), a(e, t, n, h, g, E))
+  return !!T && (E || (E = new r), o(e, t, n, h, g, E))
 }

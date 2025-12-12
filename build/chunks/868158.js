@@ -11,7 +11,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk287328 = require("./287328.js"),
   Chunk406966 = require("./406966.js"),
   Chunk795513 = require("./795513.js"),
@@ -70,8 +70,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -79,8 +79,8 @@ function T(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = new Chunk710845.Z("ReadyPayloadUtils"),
@@ -92,12 +92,12 @@ function w(e, t) {
   var n, {
       guilds: r,
       merged_members: i,
-      merged_presences: o
+      merged_presences: a
     } = e,
-    a = T(e, ["guilds", "merged_members", "merged_presences"]);
-  let s = k(R, null == o ? true : o.friends),
+    o = T(e, ["guilds", "merged_members", "merged_presences"]);
+  let s = k(R, null == a ? true : a.friends),
     l = null != (n = null == r ? true : r.map((e, t) => {
-      let n = k(R, null == o ? true : o.guilds[t]),
+      let n = k(R, null == a ? true : a.guilds[t]),
         r = k(R, null == i ? true : i[t]);
       return I(v({}, e), {
         unavailable: true === e.voice_states,
@@ -113,7 +113,7 @@ function w(e, t) {
       voice_states: e.voice_states,
       unavailable: false
     }));
-  return null != c && l.push(c), R = {}, I(v({}, a), {
+  return null != c && l.push(c), R = {}, I(v({}, o), {
     presences: s,
     guilds: l
   })
@@ -134,7 +134,7 @@ function D() {
 
 function x(e, t, n) {
   var r, {
-      users: o,
+      users: a,
       relationships: s,
       private_channels: l,
       merged_members: c,
@@ -142,7 +142,7 @@ function x(e, t, n) {
     } = e,
     d = T(e, ["users", "relationships", "private_channels", "merged_members", "guilds"]);
   G(n);
-  let f = k(R = a().keyBy(o, e => e.id), s);
+  let f = k(R = o().keyBy(a, e => e.id), s);
   null == l || l.forEach(e => {
     let t = e.recipient_ids;
     null != t && (e.recipients = t.map(e => (i()(null != R[e], "Missing user in compressed ready payload"), R[e]))), delete e.recipient_ids
@@ -150,7 +150,7 @@ function x(e, t, n) {
   let p = null != (r = null == u ? true : u.map((e, t) => true === e.unavailable ? e : (e.members = k(R, null == c ? true : c[t]), F(e)))) ? r : [],
     _ = L(t, u, e => F(e));
   return null != _ && p.push(_), I(v({}, d), {
-    users: o,
+    users: a,
     presences: [],
     relationships: f,
     guilds: p,
@@ -228,7 +228,7 @@ function Z(e, t, n) {
 }
 
 function F(e) {
-  var t, n, r, i, o, a, s, l;
+  var t, n, r, i, a, o, s, l;
   let c = U(e.id);
   if ("partial" !== e.data_mode) return {
     id: e.id,
@@ -265,8 +265,8 @@ function F(e) {
     dataMode: e.data_mode,
     channels: {
       op: "update",
-      writes: null != (o = null == (t = e.partial_updates.channels) ? true : t.map(t => (0, h.q_)(t, e.id))) ? o : [],
-      deletes: null != (a = e.partial_updates.deleted_channel_ids) ? a : []
+      writes: null != (a = null == (t = e.partial_updates.channels) ? true : t.map(t => (0, h.q_)(t, e.id))) ? a : [],
+      deletes: null != (o = e.partial_updates.deleted_channel_ids) ? o : []
     },
     channelTimestampUpdates: e.channel_updates,
     emojis: Z(c.emojis, e.partial_updates.emojis, e.partial_updates.deleted_emoji_ids),
@@ -289,7 +289,7 @@ function F(e) {
 }
 
 function B(e, t) {
-  var n, r, i, o, a, s, l, c;
+  var n, r, i, a, o, s, l, c;
   if (null == t && (t = U(e.id)), "partial" !== e.data_mode) return {
     id: e.id,
     guild_scheduled_events: e.guild_scheduled_events,
@@ -301,7 +301,7 @@ function B(e, t) {
     properties: e.properties,
     roles: e.roles,
     stage_instances: e.stage_instances,
-    threads: null != (o = null == (i = e.threads) ? true : i.map(t => (0, h.q_)(t, e.id))) ? o : [],
+    threads: null != (a = null == (i = e.threads) ? true : i.map(t => (0, h.q_)(t, e.id))) ? a : [],
     threadMessages: V(e.threads),
     presences: e.presences,
     activity_instances: e.activity_instances,
@@ -326,7 +326,7 @@ function B(e, t) {
     id: e.id,
     channels: {
       op: "update",
-      writes: null != (a = null == (n = e.partial_updates.channels) ? true : n.map(t => (0, h.q_)(t, e.id))) ? a : [],
+      writes: null != (o = null == (n = e.partial_updates.channels) ? true : n.map(t => (0, h.q_)(t, e.id))) ? o : [],
       deletes: null != (s = e.partial_updates.deleted_channel_ids) ? s : []
     },
     channelTimestampUpdates: e.channel_updates,

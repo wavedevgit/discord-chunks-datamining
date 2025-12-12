@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk21730 = require("./21730.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk305348 = require("./305348.js"),
+  Chunk551328 = require("./551328.js"),
   Chunk87181 = require("./87181.js");
 
 function h(e, t, n) {
@@ -46,12 +46,12 @@ function E(e) {
     questId: t,
     questContent: n,
     fullWidth: i
-  } = e, o = () => {
+  } = e, a = () => {
     (0, u.navigateToQuestHome)({
       fromContent: n
     }), l.default.track(f.rMx.QUEST_CONTENT_CLICKED, g({
       quest_id: t,
-      click_id: (0, a.Z)(),
+      click_id: (0, o.Z)(),
       cta_name: c.jZ.VIEW_QUESTS,
       is_targeted: false
     }, (0, c.mH)(n)))
@@ -61,7 +61,7 @@ function E(e) {
     children: (0, r.jsx)(s.Button, {
       fullWidth: i,
       variant: "primary",
-      onClick: o,
+      onClick: a,
       text: p.intl.string(p.t.GURBQl)
     })
   })
@@ -72,7 +72,7 @@ function b(e) {
     questId: t,
     fallbackReason: n,
     bodyText: i,
-    questContent: a
+    questContent: o
   } = e, {
     containerRef: l,
     size: u
@@ -81,7 +81,7 @@ function b(e) {
     ref: e => {
       l.current = e
     },
-    className: o()(_.container, {
+    className: a()(_.container, {
       [_.wide]: "lg" === u,
       [_.tall]: "lg" !== u
     }),
@@ -98,7 +98,7 @@ function b(e) {
         children: i
       }), (0, r.jsx)(E, {
         questId: t,
-        questContent: a,
+        questContent: o,
         fullWidth: "lg" !== u
       })]
     }), (0, r.jsx)("div", {

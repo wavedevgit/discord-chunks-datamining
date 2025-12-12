@@ -43,16 +43,16 @@ class f {
         t = Chunk261875.Z.database(module);
       null == exports || exports.transaction(e => {
         var t, n;
-        let r = a.Z.computeState(),
+        let r = o.Z.computeState(),
           i = l.Z.userSettingsTransaction(e);
         for (let e in r) i.put({
           id: Number(e),
           value: r[e]
         });
-        let o = null != (n = null == (t = a.Z.settings.versions) ? true : t.dataVersion) ? n : false;
+        let a = null != (n = null == (t = o.Z.settings.versions) ? true : t.dataVersion) ? n : false;
         l.Z.nonGuildVersionsTransaction(e).put({
           id: "user_settings_version",
-          version: o
+          version: a
         })
       }, "handleUserSettingsProtoChange")
     }), u(this, "throttledOnChange", i().debounce(this.handleUserSettingsProtoChange, 0))

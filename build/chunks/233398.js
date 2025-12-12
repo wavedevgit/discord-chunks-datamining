@@ -2,17 +2,17 @@
 /** chunk id: 233398, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BH: () => a,
-  Dp: () => o,
+  BH: () => o,
+  Dp: () => a,
   Ig: () => s
 });
 var Chunk663042 = require("./663042.js"),
   Chunk731965 = require("./731965.js");
-let o = "#5865F2",
-  a = 74,
+let a = "#5865F2",
+  o = 74,
   s = (0, Chunk663042.U)((e, t) => ({
     colors: [],
-    chassisMixAmount: a,
+    chassisMixAmount: o,
     gradientAngle: 0,
     setColors: t => {
       (0, i.j)(() => {
@@ -39,13 +39,13 @@ let o = "#5865F2",
       let {
         colors: n,
         chassisMixAmount: r,
-        gradientAngle: o
+        gradientAngle: a
       } = t;
       (0, i.j)(() => {
         e({
           colors: n,
           chassisMixAmount: r,
-          gradientAngle: o
+          gradientAngle: a
         })
       })
     },

@@ -63,7 +63,7 @@ function g(e, t) {
   let n = d.default.getCurrentUser();
   i()(null != n, "setFlag: user cannot be undefined");
   let r = t ? n.flags | e : n.flags & ~e;
-  return a.tn.patch({
+  return o.tn.patch({
     url: p.ANM.ME,
     oldFormErrors: true,
     body: {
@@ -75,7 +75,7 @@ function g(e, t) {
 
 function E(e) {
   let t = d.default.getUser(e);
-  return null != t ? Promise.resolve(t) : a.tn.get({
+  return null != t ? Promise.resolve(t) : o.tn.get({
     url: p.ANM.USER(e),
     oldFormErrors: true,
     rejectWithError: false
@@ -97,7 +97,7 @@ async function y(e) {
     withMutualGuilds: n,
     withMutualFriendsCount: r,
     withMutualFriends: i,
-    guildId: o,
+    guildId: a,
     connectionsRoleId: c,
     joinRequestId: u,
     abortSignal: d
@@ -105,34 +105,34 @@ async function y(e) {
   s.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
-    guildId: o,
+    guildId: a,
     withMutualFriends: i
   });
   try {
-    let l = await a.tn.get({
+    let l = await o.tn.get({
       url: p.ANM.USER_PROFILE(e),
       query: {
         type: t,
         with_mutual_guilds: n,
         with_mutual_friends: i,
         with_mutual_friends_count: r && (null == i || !i),
-        guild_id: o,
+        guild_id: a,
         connections_role_id: c,
         join_request_id: u
       },
       signal: d,
       rejectWithError: true
     });
-    null == f || f(l.body, o), s.Z.dispatch({
+    null == f || f(l.body, a), s.Z.dispatch({
       type: "USER_UPDATE",
       user: l.body.user
     }), s.Z.dispatch({
       type: "USER_PROFILE_FETCH_SUCCESS",
       userProfile: l.body,
       fetchStartedAt: m
-    }), null != o && null != l.body.guild_member && s.Z.dispatch({
+    }), null != a && null != l.body.guild_member && s.Z.dispatch({
       type: "GUILD_MEMBER_PROFILE_UPDATE",
-      guildId: o,
+      guildId: a,
       guildMember: l.body.guild_member
     })
   } catch (t) {
@@ -141,7 +141,7 @@ async function y(e) {
       apiError: new l.Hx(t),
       fetchStartedAt: m,
       userId: e,
-      guildId: o
+      guildId: a
     }), t
   }
 }
@@ -151,7 +151,7 @@ async function O(e, t) {
     userId: e
   });
   try {
-    let n = await a.tn.get({
+    let n = await o.tn.get({
       url: p.ANM.USER_RELATIONSHIPS(e),
       oldFormErrors: true,
       signal: t,

@@ -21,8 +21,8 @@ class c extends Chunk19467.V {
     return !!e.match(/^\s*$/i) && (s(n) || l(n))
   }
   mergeResults(e, t, n, r) {
-    let s = (0, o.RA)(n.text);
-    l(n) && (s = (0, a.de)(s));
+    let s = (0, a.RA)(n.text);
+    l(n) && (s = (0, o.de)(s));
     let c = i.L.createRelativeFromReference(i.X2.fromDate(t.start.date()), s);
     return new i.G5(t.reference, t.index, `${t.text}${e}${n.text}`, c)
   }

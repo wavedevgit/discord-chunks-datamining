@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 46832, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk836560 = require("./836560.js"),
   Chunk317381 = require("./317381.js"),
@@ -25,11 +25,11 @@ function g(e, t, n) {
 }
 let h = 10 * Chunk70956.Z.Millis.SECOND,
   m = new Map,
-  _ = new Set,
-  b = (e, t, n) => {
+  b = new Set,
+  E = (e, t, n) => {
     n([u.Z.CLOSE, t], e)
   };
-class E extends Chunk836560.EventEmitter {
+class _ extends Chunk836560.EventEmitter {
   routeEvent(e, t, n, r) {
     if (!Array.isArray(n)) return void console.warn("[PostMessageTransport] Protocol error: event data should be an Array!");
     let [i, l] = n;
@@ -70,7 +70,7 @@ class E extends Chunk836560.EventEmitter {
       let {
         id: t
       } = e;
-      _.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
+      b.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
         Array.from(i.ZP.getSelfEmbeddedActivities().entries()).forEach(e => {
           let [t, n] = e;
           a.default.track(f.rMx.ACTIVITY_HANDSHAKE_TIMED_OUT, {
@@ -86,7 +86,7 @@ class E extends Chunk836560.EventEmitter {
       let {
         id: n
       } = e;
-      _.delete(n);
+      b.delete(n);
       let [r, i] = null != (t = Array.from(m.entries()).find(e => {
         let [t, r] = e;
         return r.frameId === n
@@ -104,7 +104,7 @@ class E extends Chunk836560.EventEmitter {
         null != r ? this.disconnectSocket(r, {
           code: e.code,
           message: e.message
-        }, true) : b(t, {
+        }, true) : E(t, {
           code: e.code,
           message: e.message
         }, n)
@@ -141,7 +141,7 @@ class E extends Chunk836560.EventEmitter {
         }, e.message)
       }
       let s = t.frame_id;
-      if (!_.has(s)) throw this.logger.error("Unrecognized frame ID ".concat(s)), new c.Z({
+      if (!b.has(s)) throw this.logger.error("Unrecognized frame ID ".concat(s)), new c.Z({
         closeCode: f.$VG.CLOSE_UNSUPPORTED
       }, "Unrecognized frame ID ".concat(s));
       null != t.sdk_version && a.default.track(f.rMx.ACTIVITY_HANDSHAKE, {
@@ -156,7 +156,7 @@ class E extends Chunk836560.EventEmitter {
           frameId: s,
           version: Number(t.v),
           logger: this.logger,
-          postClose: b,
+          postClose: E,
           encoding: null != (o = t.encoding) ? o : "json"
         })
       } catch (e) {
@@ -164,10 +164,10 @@ class E extends Chunk836560.EventEmitter {
       }
       this.logger.info("Socket Opened: ".concat(i.id));
       try {
-        if (await this.validateSocketClient(i, e, t.client_id), !_.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.Z({
+        if (await this.validateSocketClient(i, e, t.client_id), !b.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.Z({
           closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Unrecognized frame ID ".concat(s));
-        m.set(e, i), _.delete(s), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        m.set(e, i), b.delete(s), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }

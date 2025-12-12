@@ -2,11 +2,11 @@
 /** chunk id: 985754, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => o
+  W: () => a
 });
 var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let o = {
+let a = {
   [Chunk981631.HeQ.CARD]: () => Chunk388032.intl.string(Chunk388032.t["ei5/p8"]),
   [Chunk981631.HeQ.PAYPAL]: () => Chunk388032.intl.string(Chunk388032.t["2dgEq+"]),
   [Chunk981631.HeQ.SOFORT]: () => Chunk388032.intl.string(Chunk388032.t["edKX/1"]),

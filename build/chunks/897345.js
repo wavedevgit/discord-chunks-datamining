@@ -12,9 +12,9 @@ var Chunk674180 = require("./674180.js"),
   Chunk981631 = require("./981631.js");
 
 function l(e) {
-  let t = (0, o.RF)(null == e ? true : e.id, "channel_list"),
+  let t = (0, a.RF)(null == e ? true : e.id, "channel_list"),
     n = (0, i.mY)(null == e ? true : e.id),
-    l = (0, a.g)(e, "channel_list"),
+    l = (0, o.g)(e, "channel_list"),
     {
       shouldHideGuildPurchaseEntryPoints: c
     } = (0, r.uP)(null == e ? true : e.id);
@@ -22,7 +22,7 @@ function l(e) {
 }
 
 function c(e, t) {
-  let n = (0, o.C4)(null == e ? true : e.id, "channel_list"),
+  let n = (0, a.C4)(null == e ? true : e.id, "channel_list"),
     r = (0, i.on)(null == e ? true : e.id, t);
   return null != e && (e.features.has(s.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) || n && r)
 }

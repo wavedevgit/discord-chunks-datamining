@@ -48,8 +48,8 @@ function h(e) {
 
 function g(e, t, n) {
   null != p[e] && p[e].stop();
-  let r = new o.V7;
-  r.start(n, () => a.Z.dispatch({
+  let r = new a.V7;
+  r.start(n, () => o.Z.dispatch({
     type: "ACTIVITY_LAUNCH_FAIL",
     applicationId: e,
     activityType: t
@@ -59,18 +59,18 @@ function g(e, t, n) {
 function E(e, t, n) {
   var r, i;
   let {
-    applicationId: o,
-    remotePartyId: a
+    applicationId: a,
+    remotePartyId: o
   } = n;
   if (e === c.OcF.COMPLETE) {
-    null == (r = f[o]) || delete r[t], null != p[o] && (p[o].stop(), delete p[o]);
+    null == (r = f[a]) || delete r[t], null != p[a] && (p[a].stop(), delete p[a]);
     return
   }
-  let s = null != (i = f[o]) ? i : {};
+  let s = null != (i = f[a]) ? i : {};
   s[t] = {
     state: e,
-    remotePartyId: a
-  }, f[o] = s, __OVERLAY__ || e !== c.OcF.FAILED ? e === c.OcF.LOADING && null != a && g(o, t, m) : g(o, t, _)
+    remotePartyId: o
+  }, f[a] = s, __OVERLAY__ || e !== c.OcF.FAILED ? e === c.OcF.LOADING && null != o && g(a, t, m) : g(a, t, _)
 }
 
 function b(e) {
@@ -103,11 +103,11 @@ function O() {
     var n, r;
     let {
       applicationId: i,
-      remotePartyId: o
-    } = e, a = s.Z.getApplicationActivity(i), u = l.Z.getApplicationActivity(i);
-    ((null == a || null == (n = a.party) ? true : n.id) === o || (null == u || null == (r = u.party) ? true : r.id) === o) && (E(c.OcF.COMPLETE, c.mFx.JOIN, {
+      remotePartyId: a
+    } = e, o = s.Z.getApplicationActivity(i), u = l.Z.getApplicationActivity(i);
+    ((null == o || null == (n = o.party) ? true : n.id) === a || (null == u || null == (r = u.party) ? true : r.id) === a) && (E(c.OcF.COMPLETE, c.mFx.JOIN, {
       applicationId: i,
-      remotePartyId: o
+      remotePartyId: a
     }), t = true)
   }), exports
 }

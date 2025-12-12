@@ -26,8 +26,8 @@ function f(e, t) {
   let n = 0,
     r = null;
   for (var [i, {
-      min_version: o
-    }] of Object.entries(e)) o <= t && o > n && (n = o, r = i);
+      min_version: a
+    }] of Object.entries(e)) a <= t && a > n && (n = a, r = i);
   return r
 }
 class p extends Chunk147913.Z {
@@ -39,18 +39,18 @@ class p extends Chunk147913.Z {
         let e = await i.Z.fetchChangelogConfig(),
           t = e.body,
           n = (0, c.b)(),
-          o = f(t, n);
+          a = f(t, n);
         if (r.Z.dispatch({
             type: "CHANGE_LOG_SET_CONFIG",
             config: e.body,
-            latestChangelogId: o
-          }), null == o || true !== t[o].show_on_startup) return;
+            latestChangelogId: a
+          }), null == a || true !== t[a].show_on_startup) return;
         let d = l.Z.lastSeenChangelogId(),
           p = l.Z.lastSeenChangelogDate();
-        if (null != d && 0 >= s.default.compare(o, d)) return;
-        let _ = await i.Z.fetchChangelog(o, a.default.locale);
+        if (null != d && 0 >= s.default.compare(a, d)) return;
+        let _ = await i.Z.fetchChangelog(a, o.default.locale);
         if (null == _) return;
-        if (null == p || null == l.Z.lastSeenChangelogDate()) return void i.Z.markChangelogAsSeen(o, _.date);
+        if (null == p || null == l.Z.lastSeenChangelogDate()) return void i.Z.markChangelogAsSeen(a, _.date);
         if (l.Z.isLocked()) return;
         new Date(_.date) > new Date(p) && (0, u.Z)()
       } finally {

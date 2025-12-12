@@ -21,7 +21,7 @@ require.d(exports, {
 var Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,14 +30,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -83,7 +83,7 @@ let S = [1, 2, 3, 5, 6],
   I = ["en-GB"];
 
 function T() {
-  return (0, Chunk388032.getLanguages)().filter(e => !I.includes(e.code)).map(e => "en-US" === e.code ? l(a({}, e), {
+  return (0, Chunk388032.getLanguages)().filter(e => !I.includes(e.code)).map(e => "en-US" === e.code ? l(o({}, e), {
     name: i.intl.string(i.t.LQLMGP)
   }) : e)
 }

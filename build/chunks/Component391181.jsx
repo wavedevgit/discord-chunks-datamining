@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk166081 = require("./166081.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk48691 = require("./48691.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk692316 = require("./692316.js");
+  Chunk446285 = require("./446285.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,8 +64,8 @@ function O(e) {
     showEditProduct: t,
     showUnpublishProduct: n,
     showCopyLink: i,
-    showTestDownload: o,
-    showDeleteProduct: a,
+    showTestDownload: a,
+    showDeleteProduct: o,
     showReportProduct: l,
     onEditProduct: c,
     onUnpublishProduct: u,
@@ -93,7 +93,7 @@ function O(e) {
           label: _.intl.string(_.t.XR26uj),
           icon: s.xPt,
           action: f
-        }), o && (0, r.jsx)(s.sNh, {
+        }), a && (0, r.jsx)(s.sNh, {
           id: "guild-product-test-download",
           label: _.intl.string(_.t.aXoI6U),
           icon: s._8t,
@@ -104,7 +104,7 @@ function O(e) {
           id: "guild-product-unpublish",
           label: _.intl.string(_.t.QrkMlN),
           action: u
-        }), a && (0, r.jsx)(s.sNh, {
+        }), o && (0, r.jsx)(s.sNh, {
           id: "guild-product-delete",
           label: _.intl.string(_.t.zWjqvB),
           color: "danger",
@@ -126,8 +126,8 @@ function v(e) {
   let {
     product: t,
     guildId: n,
-    showEditProduct: o,
-    showUnpublishProduct: a,
+    showEditProduct: a,
+    showUnpublishProduct: o,
     showTestDownload: l,
     showCopyLink: c,
     showDeleteProduct: u,
@@ -152,8 +152,8 @@ function v(e) {
       renderPopout: e => (0, r.jsx)(O, b(g({}, e), {
         guildId: n,
         productId: t.id,
-        showEditProduct: o,
-        showUnpublishProduct: a,
+        showEditProduct: a,
+        showUnpublishProduct: o,
         showCopyLink: c,
         showTestDownload: l,
         showReportProduct: d,
@@ -194,7 +194,7 @@ function S(e) {
     product: t,
     guildId: n,
     onEditProduct: i,
-    onUnpublishProduct: o,
+    onUnpublishProduct: a,
     onDeleteProduct: h,
     onCopyProductLink: E,
     onTestDownload: S,
@@ -213,7 +213,7 @@ function S(e) {
       showDeleteProduct: true,
       showReportProduct: false,
       onEditProduct: i,
-      onUnpublishProduct: o,
+      onUnpublishProduct: a,
       onDeleteProduct: h,
       onCopyLink: E,
       onTestDownload: S,
@@ -222,7 +222,7 @@ function S(e) {
   }
   return (0, r.jsxs)(s.kL8, {
     tag: "article",
-    className: a()(m.productCardClickable, m.productCard, {
+    className: o()(m.productCardClickable, m.productCard, {
       [m.disabled]: I
     }),
     onClick: I ? true : i,
@@ -273,7 +273,7 @@ function S(e) {
         showDeleteProduct: true,
         showReportProduct: false,
         onEditProduct: i,
-        onUnpublishProduct: o,
+        onUnpublishProduct: a,
         onDeleteProduct: h,
         onCopyProductLink: E,
         onTestDownload: S,

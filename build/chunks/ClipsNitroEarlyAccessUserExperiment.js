@@ -153,7 +153,7 @@ function u() {
 let d = e => {
   let {
     autoTrackExposure: t
-  } = e, n = (0, a.Z)(o.Z), {
+  } = e, n = (0, o.Z)(a.Z), {
     enablePremiumEarlyAccessGoLiveRoadblock: r
   } = l.useExperiment({
     location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"

@@ -1,32 +1,32 @@
-/** Chunk was on 98878 **/
+/** Chunk was on 76246 **/
 /** chunk id: 939863, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773433 = require("./773433.js"),
+  Chunk492249 = require("./492249.js"),
   Chunk296507 = require("./296507.js"),
   Chunk866402 = require("./866402.js");
 
-function d(e) {
+function s(e) {
   let {
     className: n,
     children: t
   } = e;
-  return (0, i.jsxs)("div", {
-    className: a()(o.container, n),
-    children: [(0, i.jsx)("img", {
+  return (0, a.jsxs)("div", {
+    className: r()(c.container, n),
+    children: [(0, a.jsx)("img", {
       alt: l.intl.string(l.t.VoB8Oc),
-      src: s,
-      className: a()(o.sparkleIcon, o.sparkleBottom)
-    }), t, (0, i.jsx)("img", {
+      src: d,
+      className: r()(c.sparkleIcon, c.sparkleBottom)
+    }), t, (0, a.jsx)("img", {
       alt: l.intl.string(l.t.VoB8Oc),
-      src: c,
-      className: a()(o.sparkleIcon, o.sparkleTop)
+      src: o,
+      className: r()(c.sparkleIcon, c.sparkleTop)
     })]
   })
 }

@@ -2,19 +2,19 @@
 /** chunk id: 598612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => a
+  Y: () => o
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk836519 = require("./836519.js");
+  Chunk860317 = require("./860317.js");
 
-function a(e) {
+function o(e) {
   let {
     title: t,
     subtitle: n,
-    type: a = "primary"
+    type: o = "primary"
   } = e;
-  return "secondary" === a ? (0, r.jsx)(i.Kqy, {
+  return "secondary" === o ? (0, r.jsx)(i.Kqy, {
     gap: 8,
     padding: {
       left: 12,
@@ -33,7 +33,7 @@ function a(e) {
       bottom: 24
     },
     children: [(0, r.jsx)("div", {
-      className: o.headerTitle,
+      className: a.headerTitle,
       children: (0, r.jsx)(i.X6q, {
         variant: "heading-xl/normal",
         color: "text-strong",

@@ -114,7 +114,7 @@ function O(e, t, n) {
     timeZone: "UTC"
   }), V = (0, h.useMemo)(() => {
     if ("era" !== e.type) return [];
-    let n = (0, o.Mw)(new(0, a.aw)(1, 1, 1), t.calendar),
+    let n = (0, a.Mw)(new(0, o.aw)(1, 1, 1), t.calendar),
       r = t.calendar.getEras().map(e => {
         let t = n.set({
           year: 1,
@@ -154,21 +154,21 @@ function O(e, t, n) {
       case "year": {
         if (!j.isValidPartialNumber(r)) return;
         let i = j.parse(r),
-          o = i,
-          a = 0 === e.minValue;
+          a = i,
+          o = 0 === e.minValue;
         if ("hour" === e.type && t.dateFormatter.resolvedOptions().hour12) {
           switch (t.dateFormatter.resolvedOptions().hourCycle) {
             case "h11":
-              i > 11 && (o = j.parse(n));
+              i > 11 && (a = j.parse(n));
               break;
             case "h12":
-              a = false, i > 12 && (o = j.parse(n))
+              o = false, i > 12 && (a = j.parse(n))
           }
           true !== e.value && e.value >= 12 && i > 1 && (i += 12)
-        } else true !== e.maxValue && i > e.maxValue && (o = j.parse(n));
+        } else true !== e.maxValue && i > e.maxValue && (a = j.parse(n));
         if (isNaN(i)) return;
-        let s = 0 !== o || a;
-        s && t.setSegment(e.type, o), true !== e.maxValue && (Number(i + "0") > e.maxValue || r.length >= String(e.maxValue).length) ? (O.current = "", s && P.focusNext()) : O.current = r
+        let s = 0 !== a || o;
+        s && t.setSegment(e.type, a), true !== e.maxValue && (Number(i + "0") > e.maxValue || r.length >= String(e.maxValue).length) ? (O.current = "", s && P.focusNext()) : O.current = r
       }
     }
   }, Y = () => {

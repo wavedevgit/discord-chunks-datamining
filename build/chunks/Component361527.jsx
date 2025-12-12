@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk254625 = require("./254625.jsx"),
   Chunk51632 = require("./51632.jsx"),
-  Chunk892227 = require("./892227.js");
+  Chunk469426 = require("./469426.js");
 
 function s(e) {
   return (0, a.jsx)(l._, {
@@ -22,7 +22,7 @@ function c() {
     gameId: e
   } = (0, Chunk51632.D)();
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk892227.gameProfileContainer,
+    className: Chunk469426.gameProfileContainer,
     children: [(0, Chunk54381.jsxs)(Chunk793030.xvT, {
       variant: "text-lg/normal",
       children: ["Game Profile - gameId: ", module]

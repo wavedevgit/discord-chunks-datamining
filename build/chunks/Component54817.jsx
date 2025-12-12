@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
   Chunk739566 = require("./739566.js"),
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk682392 = require("./682392.js");
+  Chunk138851 = require("./138851.js");
 
 function h(e) {
   let {
@@ -41,7 +41,7 @@ function h(e) {
     onMouseEnter: b,
     onMouseLeave: y,
     children: (0, r.jsx)(d.Z, {
-      className: o()(m.mainContainer, {
+      className: a()(m.mainContainer, {
         [m.compact]: n
       }),
       iconNode: n ? null : (0, r.jsx)(u.S, {
@@ -50,18 +50,18 @@ function h(e) {
       iconContainerClassName: m.iconContainer,
       compact: n,
       children: (0, r.jsxs)("div", {
-        className: o()(m.content, {
+        className: a()(m.content, {
           [m.compact]: n
         }),
         children: [(0, r.jsx)(c.nD, {
           message: t,
           messageClassname: m.spanCorrection,
-          className: o()(m.usernameContainer, m.spanCorrection, {
+          className: a()(m.usernameContainer, m.spanCorrection, {
             [m.compact]: n
           }),
           username: (0, r.jsxs)("div", {
             className: m.spanCorrection,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
@@ -75,7 +75,7 @@ function h(e) {
           compact: n,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: o()(m.__invalid_messageContent, {
+          className: a()(m.__invalid_messageContent, {
             [m.compact]: n
           }),
           children: t.type === f.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? _.intl.format(_.t["+m8eD7"], {

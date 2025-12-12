@@ -2,7 +2,7 @@
 /** chunk id: 945577, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => a,
+  U: () => o,
   a: () => s
 });
 var Chunk818083 = require("./818083.js");
@@ -10,7 +10,7 @@ let i = {
     isXDMSearchEnabled: false,
     inExperiment: false
   },
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-06_search_desktop_xdm_experiment",
     label: "Search Desktop XDM Experiment",
@@ -32,13 +32,13 @@ let i = {
     }]
   });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     autoTrackExposure: n = true
   } = e, {
     isXDMSearchEnabled: r
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n
@@ -52,7 +52,7 @@ function s(e) {
     autoTrackExposure: n = true
   } = e, {
     isXDMSearchEnabled: r
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n

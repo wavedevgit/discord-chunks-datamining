@@ -17,14 +17,14 @@ let c = e => e.application_id === l.Ev || e.platform === s.M7m.XBOX,
   u = e => e.platform === s.M7m.PS4 || e.platform === s.M7m.PS5;
 
 function d(e, t) {
-  let n = (0, o.Gs)(t);
+  let n = (0, a.Gs)(t);
   if (null == n) returnfalse;
   let i = r.Z.getApplication(n);
   return null != i && e === i.name.toLowerCase()
 }
 
 function f(e, t) {
-  return null != e && (c(e) || u(e) ? d(e.name.toLowerCase(), t) : null != t && t.id === a.Jk && e.application_id === a.$z || null != e.application_id && _(e.application_id, t))
+  return null != e && (c(e) || u(e) ? d(e.name.toLowerCase(), t) : null != t && t.id === o.Jk && e.application_id === o.$z || null != e.application_id && _(e.application_id, t))
 }
 
 function p(e, t) {
@@ -33,15 +33,15 @@ function p(e, t) {
 }
 
 function _(e, t) {
-  let n = (0, o.MC)(t);
+  let n = (0, a.MC)(t);
   return null != n && n.some(t => t === e)
 }
 
 function m(e, t) {
   let n;
-  for (let [r, o] of e)
-    if (_(t, o) && !(0, i.zi)(o)) {
-      n = o;
+  for (let [r, a] of e)
+    if (_(t, a) && !(0, i.zi)(a)) {
+      n = a;
       break
     } return n
 }

@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk564355 = require("./564355.js");
+  Chunk72775 = require("./72775.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,7 +70,7 @@ function S(e) {
     Component: S,
     events: I,
     play: T
-  } = (0, o.$)(), {
+  } = (0, a.$)(), {
     enabled: C
   } = d.G.useExperiment({
     location: "gift-button"
@@ -119,7 +119,7 @@ function S(e) {
       }
     })
   };
-  return (0, r.jsx)(a.u, {
+  return (0, r.jsx)(o.u, {
     ariaHidden: N,
     text: g.intl.string(N ? g.t.TW4JV0 : g.t.sWtWDX),
     children: (0, r.jsx)(m.Z, v(y({

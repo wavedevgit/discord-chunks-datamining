@@ -19,20 +19,20 @@ var Chunk51025 = require("./51025.js"),
   Chunk981631 = require("./981631.js");
 
 function f(e, t, n) {
-  let r = o.Z.getApplication(e);
+  let r = a.Z.getApplication(e);
   if (null == r) return;
-  let i = a.Z.getTargetBuildId(r.id, t),
-    s = a.Z.getTargetManifests(r.id, t);
+  let i = o.Z.getTargetBuildId(r.id, t),
+    s = o.Z.getTargetManifests(r.id, t);
   null != i && null != s && null != u.L && (0, u.L)(r, t, i, s, n)
 }
 
 function p(e, t) {
-  let n = o.Z.getApplication(e);
-  if (null != n) return r.li(n, t, a.Z.getTargetBuildId(n.id, t), a.Z.getTargetManifests(n.id, t))
+  let n = a.Z.getApplication(e);
+  if (null != n) return r.li(n, t, o.Z.getTargetBuildId(n.id, t), o.Z.getTargetManifests(n.id, t))
 }
 
 function _(e, t, n) {
-  let i = o.Z.getApplication(e);
+  let i = a.Z.getApplication(e);
   if (null != i) return r.cG(i, t, n)
 }
 

@@ -6,18 +6,18 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk80568 = require("./80568.js");
+  Chunk175996 = require("./175996.js");
 let c = 14;
 
 function u(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsx)(a.qDn, {
-    className: o()(l.questsIcon, t),
+  return (0, r.jsx)(o.qDn, {
+    className: a()(l.questsIcon, t),
     size: "custom",
     height: c,
     width: c,

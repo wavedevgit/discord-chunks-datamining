@@ -8,7 +8,7 @@ var Chunk579092 = require("./579092.js"),
   Chunk198584 = require("./198584.js"),
   Chunk444675 = require("./444675.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -87,4 +87,4 @@ class u {
     }), this.addDatabaseStateCallback((e, t) => c.info("".concat(e, " (state: ").concat(t, ")")))), this.initialized = true)
   }
 }
-a(u, "counter", 0), a(u, "pending", new Map), a(u, "initialized", false), a(u, "dbStateCallbacks", []), a(u, "completionCallbacks", [])
+o(u, "counter", 0), o(u, "pending", new Map), o(u, "initialized", false), o(u, "dbStateCallbacks", []), o(u, "completionCallbacks", [])

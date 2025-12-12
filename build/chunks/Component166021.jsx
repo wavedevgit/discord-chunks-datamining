@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk51636 = require("./51636.jsx"),
-  Chunk329352 = require("./329352.js");
+  Chunk801762 = require("./801762.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ let m = 910,
     let {
       cards: t,
       className: n,
-      cardType: o
+      cardType: a
     } = e, d = () => window.innerWidth < m ? 1 : window.innerWidth < h ? 2 : 3, [p, g] = i.useState(0), [E, b] = i.useState(d()), y = t.length;
     i.useEffect(() => {
       let e = () => {
@@ -88,7 +88,7 @@ let m = 910,
         className: u.cardContainer,
         children: [y > E && (0, r.jsx)(l.P3F, {
           onClick: O ? v : true,
-          className: a()({
+          className: o()({
             [u.leftArrow]: O,
             [u.inactiveArrow]: !O
           }),
@@ -108,7 +108,7 @@ let m = 910,
                 transform: null == i ? true : i.to(e => "translate3d(".concat(e, "%,0,0)"))
               },
               children: (0, r.jsx)(c.Z, _(f({}, t[n]), {
-                cardType: o
+                cardType: a
               }), "".concat(t[n].name, "_").concat(n, "_perks_card"))
             }, "".concat(t[n].name, "_").concat(n, "_animated_div"))
           })

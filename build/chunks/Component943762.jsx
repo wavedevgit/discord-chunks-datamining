@@ -11,25 +11,25 @@ var Chunk481060 = require("./481060.js"),
   Chunk884338 = require("./884338.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk188206 = require("./188206.js");
+  Chunk433699 = require("./433699.js");
 
 function c(e) {
   let {
     activityUsers: t,
     guildId: n,
-    activityText: a
+    activityText: o
   } = e;
   return (0, r.jsxs)("div", {
     className: l.wrapper,
-    children: [(0, r.jsx)(o.ZP, {
+    children: [(0, r.jsx)(a.ZP, {
       guildId: n,
       users: t,
       max: 6,
-      size: o.u8.SIZE_16
+      size: a.u8.SIZE_16
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "none",
-      children: a
+      children: o
     })]
   })
 }
@@ -40,13 +40,13 @@ function u(e) {
     activityUsersCount: n
   } = e;
   switch (null == t ? true : t.type) {
-    case a.IIU.STREAMING:
+    case o.IIU.STREAMING:
       return {
         text: s.intl.formatToPlainString(s.t.tyCw2q, {
           count: n
         }), Icon: i.m3e
       };
-    case a.IIU.LISTENING:
+    case o.IIU.LISTENING:
       return {
         text: s.intl.formatToPlainString(s.t["2l8yka"], {
           count: n

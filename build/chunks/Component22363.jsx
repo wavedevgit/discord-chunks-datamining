@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk646574 = require("./646574.jsx"),
   Chunk543241 = require("./543241.js"),
   Chunk912648 = require("./912648.jsx"),
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk533432 = require("./533432.jsx"),
   Chunk149203 = require("./149203.js"),
   Chunk185923 = require("./185923.js"),
-  Chunk359175 = require("./359175.js");
+  Chunk101972 = require("./101972.js");
 let _ = e => {
   let {
     channel: t,
@@ -41,7 +41,7 @@ let _ = e => {
       onFocus: g,
       autoFocus: E,
       defaultSearchPlaceholder: (0, s.nV)(i, O)
-    }), i === f.Hz.REACTION ? (0, r.jsx)(a.Z, {
+    }), i === f.Hz.REACTION ? (0, r.jsx)(o.Z, {
       checked: O,
       onClick: v
     }) : null, null != n ? n : (0, r.jsx)(c.Z, {
@@ -53,7 +53,7 @@ let _ = e => {
     })]
   });
   return (0, r.jsx)("div", {
-    className: o()(p.header, _),
+    className: a()(p.header, _),
     children: null != S ? S(T) : T
   })
 }

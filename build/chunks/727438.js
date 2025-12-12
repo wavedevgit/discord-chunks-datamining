@@ -25,8 +25,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -34,8 +34,8 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let d = {
@@ -51,7 +51,7 @@ class p extends Chunk445346.y {
     return f = e, null == p._clearAllPromise && (p._clearAllPromise = new Promise(t => {
       requestIdleCallback(() => {
         p.clearPersistQueue(e), p.allPersistKeys.forEach(t => {
-          p.shouldClear(e, t) && a.K.remove(t)
+          p.shouldClear(e, t) && o.K.remove(t)
         }), s.y.getAll().forEach(t => {
           t instanceof p && p.shouldClear(e, t.getClass().persistKey) && (t._isInitialized = false, t.initializeIfNeeded())
         }), p._clearAllPromise = null, t()
@@ -75,7 +75,7 @@ class p extends Chunk445346.y {
       let e = {};
       return p.allPersistKeys.forEach(t => {
         var n;
-        e[t] = (null != (n = a.K.get(t)) ? n : d)._state
+        e[t] = (null != (n = o.K.get(t)) ? n : d)._state
       }), module
     })
   }
@@ -109,22 +109,22 @@ class p extends Chunk445346.y {
     }
   }
   static migrateAndReadStoreState(e, t) {
-    if (null != f && p.shouldClear(f, e)) return a.K.remove(e), {
+    if (null != f && p.shouldClear(f, e)) return o.K.remove(e), {
       state: true,
       requiresPersist: false
     };
-    let n = null != p._clearAllPromise ? null : a.K.get(e),
+    let n = null != p._clearAllPromise ? null : o.K.get(e),
       r = null != n ? n : d,
       {
         _state: i,
-        _version: o
+        _version: a
       } = r,
       s = c(r, ["_state", "_version"]),
       l = null == t ? 0 : t.length;
-    if (0 !== l && o !== l && null != t) {
-      let e = null != o ? o : 0,
+    if (0 !== l && a !== l && null != t) {
+      let e = null != a ? a : 0,
         n = i;
-      for (null == o && (n = s); e < l;) n = (0, t[e])(n), e++;
+      for (null == a && (n = s); e < l;) n = (0, t[e])(n), e++;
       return {
         state: n,
         requiresPersist: true

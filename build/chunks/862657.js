@@ -72,10 +72,10 @@ let m = 2592e6;
 function h(e, t, n) {
   var r;
   let i = Array.isArray(t) ? new Map(t.map(e => [e.id, e])) : t,
-    o = Array.isArray(n) ? new Map(n.map(e => [e.id, e])) : n,
-    a = i.get(e);
-  if (null != a) return a;
-  let s = null == (r = o.get(e)) ? true : r.replacementId;
+    a = Array.isArray(n) ? new Map(n.map(e => [e.id, e])) : n,
+    o = i.get(e);
+  if (null != o) return o;
+  let s = null == (r = a.get(e)) ? true : r.replacementId;
   if (null != s) return i.get(s)
 }
 
@@ -148,7 +148,7 @@ function A(e) {
     location: "getQuestDeliveryDataForPlacement"
   });
   if (t) {
-    let t = a.Z.questAdDecisionByPlacement.get(e);
+    let t = o.Z.questAdDecisionByPlacement.get(e);
     return null == t ? null : {
       questId: t.questId,
       adDecisionData: t.adDecisionData,
@@ -157,7 +157,7 @@ function A(e) {
       metadataSealed: t.metadataSealed
     }
   } {
-    let t = a.Z.questToDeliverForPlacement.get(e);
+    let t = o.Z.questToDeliverForPlacement.get(e);
     return null == t ? null : {
       questId: t.quest.id,
       adDecisionData: t.adDecisionData,
@@ -174,9 +174,9 @@ function N(e, t) {
   if (null == r) return c.Jp;
   let {
     adDecisionData: i,
-    questId: o
+    questId: a
   } = null != (n = A(r)) ? n : {};
-  return null != i && o === e ? i : c.Jp
+  return null != i && a === e ? i : c.Jp
 }
 
 function P(e) {
@@ -198,7 +198,7 @@ function w(e) {
 }
 
 function D(e, t) {
-  o.Z.captureException(e, _(f({}, t), {
+  a.Z.captureException(e, _(f({}, t), {
     tags: _(f({}, null == t ? true : t.tags), {
       app_context: "quests"
     })

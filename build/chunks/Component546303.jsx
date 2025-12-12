@@ -1,9 +1,9 @@
 /** Chunk was on 62934 **/
 /** chunk id: 546303, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => C
 });
-var r, a, Chunk54381 = require("./54381.js"),
+var a, r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,40 +15,40 @@ var r, a, Chunk54381 = require("./54381.js"),
   Chunk899789 = require("./899789.jsx"),
   Chunk735276 = require("./735276.jsx"),
   Chunk619733 = require("./619733.js"),
-  Chunk847328 = require("./847328.js"),
+  Chunk914820 = require("./914820.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk62525 = require("./62525.js");
-let p = (r = function(e) {
+  Chunk468678 = require("./468678.js");
+let h = (a = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
-      r = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      a = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), r.forEach(function(n) {
-      var r;
-      r = t[n], n in e ? Object.defineProperty(e, n, {
-        value: r,
+    }))), a.forEach(function(n) {
+      var a;
+      a = t[n], n in e ? Object.defineProperty(e, n, {
+        value: a,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[n] = r
+      }) : e[n] = a
     })
   }
   return e
-}({}, Chunk619733.IX), a = a = {
+}({}, Chunk619733.IX), r = r = {
   initialStep: Chunk619733.EK.SERVER_SETTINGS
-}, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
+}, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
   var t = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t.push.apply(t, r)
+    var a = Object.getOwnPropertySymbols(e);
+    t.push.apply(t, a)
   }
   return t
-})(Object(a)).forEach(function(e) {
-  Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
-}), r);
+})(Object(r)).forEach(function(e) {
+  Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(r, e))
+}), a);
 
-function h(e) {
+function C(e) {
   let {
     guildId: n
   } = e;
@@ -57,8 +57,8 @@ function h(e) {
   }, [n]);
   let t = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(n)),
     {
-      catalog: r,
-      instances: a
+      catalog: a,
+      instances: r
     } = l.useMemo(() => {
       var e, n;
       return {
@@ -66,38 +66,38 @@ function h(e) {
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    h = a.length >= v.YX;
-  return 0 === r.length ? (0, i.jsx)("div", {
-    className: j.container,
+    C = r.length >= x.YX;
+  return 0 === a.length ? (0, i.jsx)("div", {
+    className: p.container,
     children: (0, i.jsx)(c.$jN, {
       type: c.RAz.SPINNING_CIRCLE,
-      className: j.spinner
+      className: p.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: j.container,
+    className: p.container,
     children: [(0, i.jsx)(s.X6q, {
-      className: j.heading,
+      className: p.heading,
       variant: "heading-md/semibold",
-      children: b.intl.string(_.default["3vWDMz"])
-    }), h && (0, i.jsx)("div", {
-      className: j.maxInstancesWarning,
+      children: j.intl.string(v.default["3vWDMz"])
+    }), C && (0, i.jsx)("div", {
+      className: p.maxInstancesWarning,
       children: (0, i.jsx)(f.C, {})
     }), (0, i.jsx)(s.zJl, {
-      className: j.gameContainerWrapper,
+      className: p.gameContainerWrapper,
       children: (0, i.jsx)("div", {
-        className: j.gameContainer,
-        children: r.map((e, t) => (0, i.jsx)(g.Z, {
+        className: p.gameContainer,
+        children: a.map((e, t) => (0, i.jsx)(g.Z, {
           guildId: n,
           game: e,
-          onClick: () => (0, x.Z)({
+          onClick: () => (0, b.Z)({
             guildId: n,
-            stepConfig: p,
+            stepConfig: h,
             initialGameServerGame: e,
             analyticsLocation: d.Z.GAME_SERVER_PAGE_SIDEBAR
           }),
-          imageClassName: j.image,
-          titleClassName: j.title,
-          disabled: h,
+          imageClassName: p.image,
+          titleClassName: p.title,
+          disabled: C,
           location: d.Z.GAME_SERVER_PAGE_SIDEBAR
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })

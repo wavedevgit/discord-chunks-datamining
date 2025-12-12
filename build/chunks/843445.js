@@ -1,11 +1,11 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 92504 **/
 /** chunk id: 843445, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  b: () => i,
-  x: () => r
+  b: () => r,
+  x: () => a
 });
-let r = 1e3,
-  i = Object.freeze({
+let a = 1e3,
+  r = Object.freeze({
     SMALL: "small",
     LARGE: "large"
   })

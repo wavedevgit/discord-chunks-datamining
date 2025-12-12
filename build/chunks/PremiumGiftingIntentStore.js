@@ -7,7 +7,7 @@ require.d(exports, {
   zj: () => E
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -74,8 +74,8 @@ function L(e, t) {
   r.setFullYear(t);
   let i = new Date(r.getTime());
   i.setDate(r.getDate() - b);
-  let o = new Date(r.getTime());
-  return o.setDate(r.getDate() + b), n > i && n < o
+  let a = new Date(r.getTime());
+  return a.setDate(r.getDate() + b), n > i && n < a
 }
 
 function j(e) {
@@ -101,12 +101,7 @@ function M() {
       })
     }
   }
-  N.sort((e, t) => {
-    let n = d.Z.getUserAffinity(e),
-      r = d.Z.getUserAffinity(t),
-      i = null != n ? n.dmProbability : 0;
-    return (null != r ? r.dmProbability : 0) - i
-  });
+  N.sort((e, t) => d.Z.compareByDmProbability(e, t));
   let t = 0;
   for (let e of N) null != Chunk752048.Z.getUserAffinity(module) && Chunk752048.Z.getUserAffinity(module).dmProbability > T && exports < E && (P.add(module), exports++)
 }
@@ -211,7 +206,7 @@ function et(e) {
   if (!t) return;
   w = e;
   let n = p.Z.getFriendIDs().filter(e => !p.Z.isIgnored(e));
-  o().sampleSize(n, e).forEach(e => {
+  a().sampleSize(n, e).forEach(e => {
     let t = p.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);

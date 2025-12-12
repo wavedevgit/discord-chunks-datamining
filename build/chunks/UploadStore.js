@@ -77,19 +77,19 @@ function v(e) {
   let {
     channelId: r,
     file: i,
-    uploader: o,
-    message: a
+    uploader: a,
+    message: o
   } = e;
-  if (o._aborted || o._errored) return;
+  if (a._aborted || a._errored) return;
   let s = null != (t = f[r]) ? t : d;
-  if (p[i.id] = o, f[r] = [...s, i], null == a) return;
-  _[i.id] = a;
+  if (p[i.id] = a, f[r] = [...s, i], null == o) return;
+  _[i.id] = o;
   let {
     items: c
   } = i;
-  null != c && (m[a.id] = u(l({}, i), {
+  null != c && (m[o.id] = u(l({}, i), {
     items: c
-  })), null != (n = a.nonce) || a.id
+  })), null != (n = o.nonce) || o.id
 }
 
 function S(e) {

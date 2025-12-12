@@ -1,7 +1,7 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,30 +16,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk451478 = require("./451478.js"),
   Chunk61634 = require("./61634.js"),
   Chunk325257 = require("./325257.jsx"),
-  Chunk144618 = require("./144618.js");
-let b = Chunk473749.memo(function(e) {
+  Chunk357863 = require("./357863.js");
+let m = Chunk473749.memo(function(e) {
   var t, n;
   let {
-    guildNode: b,
-    lowerBadge: _
-  } = e, y = b.id, O = (0, l.e7)([f.Z], () => f.Z.getGuild(y)), v = (0, a.E)(O), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), E = (0, p.Z)(y), {
-    badge: S,
-    unread: I,
+    guildNode: m,
+    lowerBadge: y
+  } = e, O = m.id, v = (0, l.e7)([f.Z], () => f.Z.getGuild(O)), j = (0, o.E)(v), C = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), E = (0, c.Z)(e => e.guildId), S = (0, p.Z)(O), {
+    badge: I,
+    unread: _,
     isMentionLowImportance: P
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(y),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(y),
-    unread: d.default.hasUnread(y)
-  })), N = (0, s.Ij)(O) && 0 === S, Z = i.useMemo(() => null != _ ? _ : N ? (0, r.jsx)("div", {
-    className: m.pauseBackground,
-    children: (0, r.jsx)(o.fpf, {
+    badge: d.default.getMentionCount(O),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(O),
+    unread: d.default.hasUnread(O)
+  })), N = (0, s.Ij)(v) && 0 === I, Z = i.useMemo(() => null != y ? y : N ? (0, r.jsx)("div", {
+    className: b.pauseBackground,
+    children: (0, r.jsx)(a.fpf, {
       size: "custom",
       color: "currentColor",
-      className: m.pause,
+      className: b.pause,
       width: 10,
       height: 10
     })
-  }) : null, [_, N]);
+  }) : null, [y, N]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -58,16 +58,16 @@ let b = Chunk473749.memo(function(e) {
     }
     return e
   }({}, e), n = n = {
-    guild: O,
-    unavailable: C,
-    animatable: j,
-    selected: x === y,
-    badge: S,
+    guild: v,
+    unavailable: x,
+    animatable: C,
+    selected: E === O,
+    badge: I,
     isMentionLowImportance: P,
     lowerBadge: Z,
-    unread: I,
-    mediaState: E,
-    guildJoinRequestStatus: v
+    unread: _,
+    mediaState: S,
+    guildJoinRequestStatus: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

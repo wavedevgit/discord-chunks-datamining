@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 150689, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,25 +16,25 @@ function c(e) {
     setEditRoleId: t,
     guild: n,
     everyoneRole: c,
-    otherRoles: u,
-    setSelectedSection: d
-  } = e, [g, m] = i.useState(""), [p, f] = i.useState(o.Cl), h = g.trim(), x = i.useMemo(() => u.filter(e => (0, l.uo)(e, h)), [u, h]), b = i.useCallback(() => (0, r.jsx)(a.Z, {
+    otherRoles: d,
+    setSelectedSection: u
+  } = e, [g, f] = i.useState(""), [m, b] = i.useState(o.Cl), p = g.trim(), h = i.useMemo(() => d.filter(e => (0, l.uo)(e, p)), [d, p]), x = i.useCallback(() => (0, r.jsx)(s.Z, {
     guild: n,
     everyoneRole: c,
-    filteredRoles: x,
+    filteredRoles: h,
     setEditRoleId: t,
     query: g,
-    setQuery: m,
-    setHeaderHeight: f
-  }, "header"), [n, c, x, t, g]);
-  return (0, r.jsx)(s.Z, {
+    setQuery: f,
+    setHeaderHeight: b
+  }, "header"), [n, c, h, t, g]);
+  return (0, r.jsx)(a.Z, {
     setEditRoleId: t,
     guild: n,
     everyoneRole: c,
-    otherRoles: u,
-    setSelectedSection: d,
-    renderHeader: b,
-    headerHeight: p,
+    otherRoles: d,
+    setSelectedSection: u,
+    renderHeader: x,
+    headerHeight: m,
     query: g
   })
 }

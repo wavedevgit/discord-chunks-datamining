@@ -16,7 +16,7 @@ require.d(exports, {
 var Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk212819 = require("./212819.js"),
@@ -88,7 +88,7 @@ function x() {
 
 function L() {
   let e = new Date().getFullYear();
-  return new Set(a().range(2015, module + 1).map(e => e.toString()))
+  return new Set(o().range(2015, module + 1).map(e => e.toString()))
 }
 
 function j(e, t) {
@@ -136,22 +136,22 @@ function K(e) {
 
 function z(e, t) {
   let n, r, i = e.getFullMatch().trim().toLowerCase(),
-    o = U()[i];
-  return null != o ? [n, r] = o() : D().has(i) ? [n, r] = k(i, "MMMM", "month") : x().has(i) ? [n, r] = k(i, "dddd", "day") : L().has(i) ? [n, r] = k(i, "YYYY", "year") : [n, r] = k(i, C.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
+    a = U()[i];
+  return null != a ? [n, r] = a() : D().has(i) ? [n, r] = k(i, "MMMM", "month") : x().has(i) ? [n, r] = k(i, "dddd", "day") : L().has(i) ? [n, r] = k(i, "YYYY", "year") : [n, r] = k(i, C.b2L, "day"), !!(n.isValid() && r.isValid()) && ("before" === t ? (r = n, n = null) : "after" === t && (n = r, r = null), e.setData("start", n), e.setData("end", r), true)
 }
 
 function q(e, t, n) {
   let r = f.ZP.getChannels(n)[f.sH].concat(f.ZP.getChannels(n)[f.Zb]),
     i = f.ZP.getTextChannelNameDisambiguations(n),
-    o = S.Z.getCurrentConfig({
+    a = S.Z.getCurrentConfig({
       location: "guildChannelValidator"
     }).enabled,
-    s = a().chain(r).map(e => {
+    s = o().chain(r).map(e => {
       let {
         channel: t
       } = e;
       return t
-    }).concat(o && null != n ? d.Z.getAllThreadsForGuild(n) : []).filter(e => {
+    }).concat(a && null != n ? d.Z.getAllThreadsForGuild(n) : []).filter(e => {
       var n, r;
       return t === (null != (r = null == (n = i[e.id]) ? true : n.name) ? r : e.name)
     }).value();
@@ -205,7 +205,7 @@ function ee() {
 }
 
 function et() {
-  return a().sample(ee())
+  return o().sample(ee())
 }
 
 function en(e, t, n) {
@@ -217,7 +217,7 @@ function en(e, t, n) {
 
 function er(e, t, n) {
   let r = e.toLocaleLowerCase();
-  return a()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
+  return o()(n).filter(e => i()(r, e.toLocaleLowerCase())).take(t).map(e => ({
     text: e
   })).value()
 }
@@ -246,18 +246,18 @@ function ei(e) {
   }), i
 }
 
-function eo(e) {
+function ea(e) {
   let {
     query: t,
     searchContext: n,
     maxResults: r = 10,
     tokens: i
-  } = e, o = {
+  } = e, a = {
     query: t = t.trim().split("#")[0],
     limit: r,
     request: false,
     boosters: (0, g.Cq)(c.h8.USER)
-  }, a = [];
+  }, o = [];
   switch (n.type) {
     case C.aib.GUILD:
     case C.aib.GUILD_CHANNEL:
@@ -271,20 +271,20 @@ function eo(e) {
               text: b.ZP.getUserTag(n)
             }), t.add(n.id))
           },
-          o = _.Z.getCurrentlySelectedChannelId(n.guildId);
-        return g.ZP.getRecentlyTalked(o, r).forEach(e => {
+          a = _.Z.getCurrentlySelectedChannelId(n.guildId);
+        return g.ZP.getRecentlyTalked(a, r).forEach(e => {
           let {
             record: t
           } = e;
           return i(t)
         }), O.Z.getRecentMessageAuthorIds(n.guildId).forEach(e => i(h.default.getUser(e))), e.slice(0, r)
       }
-      a = g.ZP.queryGuildUsers(w(P({}, o), {
+      o = g.ZP.queryGuildUsers(w(P({}, a), {
         guildId: n.guildId
       }));
       break;
     case C.aib.CHANNEL:
-      a = g.ZP.queryChannelUsers(w(P({}, o), {
+      o = g.ZP.queryChannelUsers(w(P({}, a), {
         channelId: n.channelId
       }));
       break;
@@ -292,11 +292,11 @@ function eo(e) {
       let s = ei(null != i ? i : []);
       if (null != s && s.length > 0) {
         let e = h.default.getCurrentUser();
-        null != e && s.push(e), a = g.ZP.queryUsers(w(P({}, o), {
+        null != e && s.push(e), o = g.ZP.queryUsers(w(P({}, a), {
           users: s,
           boosters: (0, g.Cq)(c.h8.USER)
         }))
-      } else a = g.ZP.queryAllUsers(w(P({}, o), {
+      } else o = g.ZP.queryAllUsers(w(P({}, a), {
         boosters: (0, g.Cq)(c.h8.USER)
       }));
       break;
@@ -306,7 +306,7 @@ function eo(e) {
   let l = h.default.getCurrentUser(),
     u = t.toLowerCase().replace(/^@/, ""),
     d = null != l && t.length > 0 && (A.intl.string(A.t.Qf3ptv).startsWith(u) || C.ME.substr(1).startsWith(u)),
-    f = a.filter(e => {
+    f = o.filter(e => {
       let {
         record: t
       } = e;
@@ -326,7 +326,7 @@ function eo(e) {
   }), f
 }
 
-function ea() {
+function eo() {
   return !Chunk246946.Z.hidePersonalInformation
 }
 
@@ -342,7 +342,7 @@ function es(e, t, n) {
       limit: t,
       boosters: (0, g.Cq)(c.h8.USER)
     }),
-    o = a()(r.concat(i)).sort(c.qU).map(e => {
+    a = o()(r.concat(i)).sort(c.qU).map(e => {
       let {
         record: t,
         comparator: n
@@ -357,18 +357,18 @@ function es(e, t, n) {
     let e = _.Z.getChannelId(),
       t = d.Z.getChannel(e);
     if (null != t && t.isPrivate()) {
-      let n = o.findIndex(t => {
+      let n = a.findIndex(t => {
         let {
           channel: n
         } = t;
         return n.id === e
       });
       if (false !== n) {
-        let e = o[n];
-        o.splice(n, 1), o.unshift(e)
+        let e = a[n];
+        a.splice(n, 1), a.unshift(e)
       } else if (t.isGroupDM()) {
         let e = (0, u.F6)(t, h.default, p.Z);
-        o.unshift({
+        a.unshift({
           text: e,
           channel: t,
           key: t.id
@@ -378,7 +378,7 @@ function es(e, t, n) {
           n = h.default.getUser(e);
         if (null != n) {
           let e = b.ZP.getUserTag(n);
-          o.unshift({
+          a.unshift({
             text: e,
             channel: t,
             key: t.id
@@ -387,7 +387,7 @@ function es(e, t, n) {
       }
     }
   }
-  return o.slice(0, t)
+  return a.slice(0, t)
 }
 
 function el(e, t, n) {
@@ -422,11 +422,11 @@ function el(e, t, n) {
       n = i.find(t => t.id === e);
     null != n && (i.splice(i.indexOf(n), 1), i.unshift(n))
   }
-  let o = f.ZP.getTextChannelNameDisambiguations(t);
-  return a()(i).take(n).map(e => {
+  let a = f.ZP.getTextChannelNameDisambiguations(t);
+  return o()(i).take(n).map(e => {
     var t, n;
     return {
-      text: "".concat(null != (n = null == (t = o[e.id]) ? true : t.name) ? n : e.name),
+      text: "".concat(null != (n = null == (t = a[e.id]) ? true : t.name) ? n : e.name),
       channel: e,
       key: e.id
     }
@@ -461,8 +461,8 @@ function ep(e) {
       componentType: "FILTER",
       key: Y(A.intl.string(A.t["1TUdFo"])),
       plainText: A.intl.string(A.t["1TUdFo"]),
-      validator: ea,
-      getAutocompletions: eo
+      validator: eo,
+      getAutocompletions: ea
     },
     [C.dCx.ANSWER_USERNAME_FROM]: {
       follows: [C.dCx.FILTER_FROM],
@@ -477,8 +477,8 @@ function ep(e) {
       componentType: "FILTER",
       key: Y(A.intl.string(A.t["i96lO+"])),
       plainText: A.intl.string(A.t["i96lO+"]),
-      validator: ea,
-      getAutocompletions: eo
+      validator: eo,
+      getAutocompletions: ea
     },
     [C.dCx.ANSWER_USERNAME_MENTIONS]: {
       follows: [C.dCx.FILTER_MENTIONS],
@@ -680,10 +680,10 @@ function eE(e) {
     n = [];
   for (let r of Object.keys(e_)) {
     if (n.length >= t) break;
-    let o = e_[r].key;
-    eg(r) && null != o && i()(e.toLowerCase(), o) && n.push({
+    let a = e_[r].key;
+    eg(r) && null != a && i()(e.toLowerCase(), a) && n.push({
       token: r,
-      text: o
+      text: a
     })
   }
   return n

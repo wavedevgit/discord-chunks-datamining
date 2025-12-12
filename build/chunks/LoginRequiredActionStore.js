@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -77,7 +77,7 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     return s
   }
 }
-a(h, "displayName", "LoginRequiredActionStore"), a(h, "persistKey", "LoginRequiredActionStore");
+o(h, "displayName", "LoginRequiredActionStore"), o(h, "persistKey", "LoginRequiredActionStore");
 let g = new h(Chunk570140.Z, {
   LOGIN_ATTEMPTED: d,
   CONNECTION_OPEN: f,

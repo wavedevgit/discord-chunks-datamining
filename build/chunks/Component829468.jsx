@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk5888 = require("./5888.js"),
   Chunk639949 = require("./639949.jsx"),
   Chunk391876 = require("./391876.jsx"),
-  Chunk670847 = require("./670847.js"),
+  Chunk638398 = require("./638398.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _(e) {
@@ -21,7 +21,7 @@ function _(e) {
   let {
     className: _,
     textSize: m = 18
-  } = e, h = (0, i.e7)([a.default], () => a.default.getCurrentUser()), {
+  } = e, h = (0, i.e7)([o.default], () => o.default.getCurrentUser()), {
     avatarDecoration: g
   } = (0, i.e7)([c.Z], () => c.Z.getCheckpointData()), E = (0, i.Wu)([s.Z], () => {
     if ((null == g ? true : g.skuId) == null) return [];
@@ -30,7 +30,7 @@ function _(e) {
   }), b = null != (n = null == h || null == (t = h.avatarDecoration) ? true : t.skuId) ? n : null, y = null != b && b === (null == g ? true : g.skuId), O = null != E[0], v = () => {
     O || (0, l._Z)()
   }, S = async () => {
-    O && !y && await (0, o.Mn)({
+    O && !y && await (0, a.Mn)({
       avatarDecoration: g
     })
   };

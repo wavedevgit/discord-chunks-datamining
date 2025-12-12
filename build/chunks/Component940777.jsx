@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk603274 = require("./603274.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk499951 = require("./499951.js");
+  Chunk547355 = require("./547355.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -82,28 +82,28 @@ function R() {
       unread: H
     } = (0, Chunk919755.Z)(G),
     z = function(e) {
-      let t = (0, s.e7)([v.Z], () => v.Z.getVoiceChannelId()),
+      let t = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()),
         n = null != t && null != e[t],
-        r = (0, s.e7)([y.Z], () => {
+        r = (0, s.e7)([O.Z], () => {
           if (!n) returnfalse;
-          let t = y.Z.getCurrentUserActiveStream();
+          let t = O.Z.getCurrentUserActiveStream();
           return null != t && null != e[t.channelId]
         }),
-        i = (0, s.e7)([y.Z], () => y.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
-        l = (0, s.e7)([j.Z], () => n && null != t && j.Z.hasVideo(t), [n, t]),
-        o = (0, s.Wu)([f.ZP], () => C.default.keys(e).reduce((e, t) => (e.push(...f.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
-        a = (0, s.e7)([f.ZP], () => Array.from(f.ZP.getSelfEmbeddedActivities().values()).some(t => {
+        i = (0, s.e7)([O.Z], () => O.Z.getAllApplicationStreams().some(t => null != e[t.channelId])),
+        l = (0, s.e7)([C.Z], () => n && null != t && C.Z.hasVideo(t), [n, t]),
+        a = (0, s.Wu)([f.ZP], () => x.default.keys(e).reduce((e, t) => (e.push(...f.ZP.getEmbeddedActivitiesForChannel(t)), e), [])),
+        o = (0, s.e7)([f.ZP], () => Array.from(f.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
           } = t, r = (0, h.p)(n);
           return null != r && null != e[r]
         })),
-        c = o.length > 0,
+        c = a.length > 0,
         u = false,
         d = false,
         p = false,
         g = false;
-      return n ? (u = !l, d = l, p = r, g = a) : (p = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, p = r, g = o) : (p = i, g = c), (0, b.Or)({
         audio: u,
         video: d,
         screenshare: p,
@@ -121,7 +121,7 @@ function R() {
       selected: F,
       hovered: M,
       unread: H && !k,
-      className: Chunk499951.pill
+      className: Chunk547355.pill
     }), (0, Chunk54381.jsx)(Chunk603274.Z, {
       onShow: K,
       children: (0, Chunk54381.jsx)(Chunk110977.S, {
@@ -154,13 +154,13 @@ function R() {
               })
             },
             children: (0, Chunk54381.jsx)("div", {
-              className: o()(Chunk499951.ring, {
-                [Chunk499951.ringActive]: R
+              className: a()(Chunk547355.ring, {
+                [Chunk547355.ringActive]: R
               }),
               children: (0, Chunk54381.jsx)(Chunk481060.r7p, {
                 size: "custom",
                 color: "currentColor",
-                className: Chunk499951.favoriteIcon,
+                className: Chunk547355.favoriteIcon,
                 width: 20,
                 height: 20
               })

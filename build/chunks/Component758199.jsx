@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk92951 = require("./92951.jsx"),
   Chunk907331 = require("./907331.js"),
   Chunk793030 = require("./793030.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk914498 = require("./914498.js"),
   Chunk967249 = require("./967249.js"),
   Chunk217702 = require("./217702.js"),
-  Chunk906376 = require("./906376.js"),
+  Chunk984694 = require("./984694.js"),
   b = function(e) {
     return e[e.BOT = 0] = "BOT", e[e.ACTIVITY = 1] = "ACTIVITY", e
   }({});
@@ -49,7 +49,7 @@ function O(e) {
   } = e;
   return null != t ? (0, r.jsx)(c.P3F, {
     onClick: t,
-    className: a()({
+    className: o()({
       [E.cursorPointer]: null != t
     }, i),
     children: n
@@ -63,7 +63,7 @@ function v(e) {
   let {
     title: t,
     header: n,
-    footer: o,
+    footer: a,
     info: _,
     staticBannerSrc: h,
     videoBannerSrc: b,
@@ -123,7 +123,7 @@ function v(e) {
     className: E.embed,
     children: [k && (0, r.jsxs)(O, {
       onClick: V,
-      className: a()(E.bannerWrapper, U, {
+      className: o()(E.bannerWrapper, U, {
         [E.showVideoOnFocus]: M
       }),
       children: [M && (F ? (0, r.jsx)("div", {
@@ -158,7 +158,7 @@ function v(e) {
           children: n
         }), (0, r.jsxs)(O, {
           onClick: B,
-          className: a()(E.contentWrapper, {
+          className: o()(E.contentWrapper, {
             [E.contentWrapperClickable]: null != B
           }),
           children: [null != S && (0, r.jsx)("div", {
@@ -180,13 +180,13 @@ function v(e) {
             })]
           })]
         }), I.length > 0 && (0, r.jsx)("div", {
-          className: a()(E.actionWrapper, T ? E.actionWrapperPrimaryFirst : null),
+          className: o()(E.actionWrapper, T ? E.actionWrapperPrimaryFirst : null),
           children: I.map((e, t) => {
             let {
               label: n,
               icon: i,
-              onClick: o,
-              disabled: a,
+              onClick: a,
+              disabled: o,
               disabledReason: s,
               submitting: l,
               trackingArea: u,
@@ -197,12 +197,12 @@ function v(e) {
               text: n,
               children: (0, r.jsx)(c.hU, {
                 variant: _ ? "overlay-primary" : "overlay-secondary",
-                disabled: a || null != s,
+                disabled: o || null != s,
                 loading: l,
                 icon: i,
                 "aria-label": n,
                 onClick: e => {
-                  o(e), (0, m.KX)({
+                  a(e), (0, m.KX)({
                     applicationId: C.id,
                     linkType: C.linkType,
                     area: u,
@@ -216,12 +216,12 @@ function v(e) {
               className: E.buttonWithPossibleDisabledTextWrapper,
               children: [(0, r.jsx)(c.zxk, {
                 variant: _ ? "overlay-primary" : "overlay-secondary",
-                disabled: a || null != s,
+                disabled: o || null != s,
                 loading: l,
                 icon: i,
                 text: n,
                 onClick: e => {
-                  o(e), (0, m.KX)({
+                  a(e), (0, m.KX)({
                     applicationId: C.id,
                     linkType: C.linkType,
                     area: u,
@@ -240,7 +240,7 @@ function v(e) {
             }, n)
           })
         })]
-      }), null != o && o]
+      }), null != a && a]
     })]
   })
 }

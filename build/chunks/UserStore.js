@@ -43,8 +43,8 @@ function I(e, t, n) {
   if (null == r) returnfalse;
   let i = r;
   i = null == n ? r.removeGuildAvatarHash(t) : r.addGuildAvatarHash(t, n), O[r.id] = i;
-  let o = r !== i;
-  return o && v++, o
+  let a = r !== i;
+  return a && v++, a
 }
 
 function T(e, t) {
@@ -75,10 +75,10 @@ function A(e) {
   null != r && (e.nsfwAllowed = r, delete e.nsfw_allowed);
   let i = e.age_verification_status;
   null != i && (e.ageVerificationStatus = i, delete e.age_verification_status);
-  let o = e.public_flags;
-  null != o && (e.publicFlags = o, delete e.public_flags);
-  let a = e.purchased_flags;
-  true !== a && (e.purchasedFlags = a, delete e.purchased_flags);
+  let a = e.public_flags;
+  null != a && (e.publicFlags = a, delete e.public_flags);
+  let o = e.purchased_flags;
+  true !== o && (e.purchasedFlags = o, delete e.purchased_flags);
   let d = e.premium_usage_flags;
   true !== d && (e.premiumUsageFlags = d, delete e.premium_usage_flags), null === e.banner_color && delete e.banner_color;
   let _ = e.avatar_decoration_data;
@@ -105,12 +105,12 @@ function P(e) {
     i = true !== e.id && e.id === h.default.getId();
   if (null == r) true !== (t = (r = new _.Z(e)).premiumType) && i && (r.premiumType = w((0, p.QI)(r), r.premiumType));
   else if (n) {
-    var o;
+    var a;
     let n = A(e);
-    true !== (t = null != (o = n.premium_type) ? o : n.premiumType) && i && (0, p.VR)(n) && (n = R(n)), n = C(r, n), r = r.merge(n)
+    true !== (t = null != (a = n.premium_type) ? a : n.premiumType) && i && (0, p.VR)(n) && (n = R(n)), n = C(r, n), r = r.merge(n)
   }(0, p.jX)((0, p.QI)(r), t, r.premiumType);
-  let a = O[e.id] !== r;
-  return O[e.id] = r, a && v++, a
+  let o = O[e.id] !== r;
+  return O[e.id] = r, o && v++, o
 }
 
 function R(e) {
@@ -136,17 +136,17 @@ function D(e, t) {
 }
 
 function x(e, t) {
-  var n, r, i, o, a;
+  var n, r, i, a, o;
   null != e.author && "SENDING" !== e.state && N(e.author) && P(e.author, t), null == (n = e.mentions) || n.forEach(e => {
     N(e) && P(e, t)
-  }), (null == (r = e.interaction) ? true : r.user) != null && N(null == (i = e.interaction) ? true : i.user) && P(e.interaction.user, t), null == (o = e.attachments) || o.forEach(e => {
+  }), (null == (r = e.interaction) ? true : r.user) != null && N(null == (i = e.interaction) ? true : i.user) && P(e.interaction.user, t), null == (a = e.attachments) || a.forEach(e => {
     var n;
     null == (n = e.clip_participants) || n.forEach(e => {
       N(e) && P(e, t)
     })
-  }), D(e.resolved, t), (null == (a = e.interaction_metadata) ? true : a.user) != null && N(e.interaction_metadata.user) && P(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
-    var n, r, i, o, a, s, l;
-    (null == (r = e.moderator_report) || null == (n = r.reported_member) ? true : n.user) != null && P(e.moderator_report.reported_member.user, t), (null == (o = e.moderator_report) || null == (i = o.reporting_member) ? true : i.user) != null && P(e.moderator_report.reporting_member.user, t), Object.values(null != (l = null == (s = e.message) || null == (a = s.resolved) ? true : a.users) ? l : {}).forEach(e => {
+  }), D(e.resolved, t), (null == (o = e.interaction_metadata) ? true : o.user) != null && N(e.interaction_metadata.user) && P(e.interaction_metadata.user, t), null != e.message_snapshots && e.message_snapshots.forEach(e => {
+    var n, r, i, a, o, s, l;
+    (null == (r = e.moderator_report) || null == (n = r.reported_member) ? true : n.user) != null && P(e.moderator_report.reported_member.user, t), (null == (a = e.moderator_report) || null == (i = a.reporting_member) ? true : i.user) != null && P(e.moderator_report.reporting_member.user, t), Object.values(null != (l = null == (s = e.message) || null == (o = s.resolved) ? true : o.users) ? l : {}).forEach(e => {
       N(e) && P(e, t)
     })
   })
@@ -388,8 +388,8 @@ function en(e) {
     if (null == t) returnfalse;
     let n = et.reduce((n, i) => {
       if (e.user.hasOwnProperty(i)) {
-        let o = t.set((0, r.camelCase)(i), e.user[i]);
-        n = n || o !== t, t = o
+        let a = t.set((0, r.camelCase)(i), e.user[i]);
+        n = n || a !== t, t = a
       }
       return n
     }, false);
@@ -411,11 +411,11 @@ function ei(e) {
   t.forEach(e => P(e.user))
 }
 
-function eo(e) {
+function ea(e) {
   return P(e.user)
 }
 
-function ea(e) {
+function eo(e) {
   return !!e.isMember && P(e.user)
 }
 
@@ -489,8 +489,8 @@ function e_(e) {
         id: n,
         username: r,
         avatar: i,
-        discriminator: o,
-        bot: a
+        discriminator: a,
+        bot: o
       },
       avatar: s
     } = e;
@@ -498,8 +498,8 @@ function e_(e) {
       id: n,
       username: r,
       avatar: i,
-      discriminator: o,
-      bot: a
+      discriminator: a,
+      bot: o
     }), I(n, t.id, s)
   })
 }
@@ -632,19 +632,19 @@ function ew(e) {
   let {
     participants: t
   } = e;
-  return t.reduce((e, t) => (0, a.Z)(t) && P(t.member.user) || e, false)
+  return t.reduce((e, t) => (0, o.Z)(t) && P(t.member.user) || e, false)
 }
 
 function eD(e) {
   let {} = e, t = O[h.default.getId()];
-  return null != t && (O[h.default.getId()] = t.set("ageVerificationStatus", o.F$.CLIENT_ONLY_PENDING), true)
+  return null != t && (O[h.default.getId()] = t.set("ageVerificationStatus", a.F$.CLIENT_ONLY_PENDING), true)
 }
 
 function ex(e) {
   let {
     status: t
   } = e, n = O[h.default.getId()];
-  return null != n && n.ageVerificationStatus === o.F$.CLIENT_ONLY_PENDING && (O[h.default.getId()] = n.set("ageVerificationStatus", t), true)
+  return null != n && n.ageVerificationStatus === a.F$.CLIENT_ONLY_PENDING && (O[h.default.getId()] = n.set("ageVerificationStatus", t), true)
 }
 
 function eL(e) {
@@ -739,10 +739,10 @@ class eM extends Chunk750041.Z {
       GUILD_SETTINGS_LOADED_BANS: er,
       GUILD_SETTINGS_LOADED_BANS_BATCH: ei,
       GUILD_CREATE: e_,
-      GUILD_BAN_ADD: eo,
-      GUILD_BAN_REMOVE: eo,
-      CHANNEL_RECIPIENT_ADD: ea,
-      CHANNEL_RECIPIENT_REMOVE: ea,
+      GUILD_BAN_ADD: ea,
+      GUILD_BAN_REMOVE: ea,
+      CHANNEL_RECIPIENT_ADD: eo,
+      CHANNEL_RECIPIENT_REMOVE: eo,
       GUILD_STICKERS_FETCH_SUCCESS: ej,
       GUILD_JOIN_REQUEST_CREATE: eS,
       GUILD_JOIN_REQUEST_UPDATE: eS,

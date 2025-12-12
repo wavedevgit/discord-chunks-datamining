@@ -42,8 +42,8 @@ let i = {
   CET: {
     timezoneOffsetDuringDst: 120,
     timezoneOffsetNonDst: 60,
-    dstStart: e => a(e, r.mr.MARCH, r.OG.SUNDAY, 2),
-    dstEnd: e => a(e, r.mr.OCTOBER, r.OG.SUNDAY, 3)
+    dstStart: e => o(e, r.mr.MARCH, r.OG.SUNDAY, 2),
+    dstEnd: e => o(e, r.mr.OCTOBER, r.OG.SUNDAY, 3)
   },
   CHADT: 825,
   CHAST: 765,
@@ -55,8 +55,8 @@ let i = {
   CT: {
     timezoneOffsetDuringDst: false,
     timezoneOffsetNonDst: false,
-    dstStart: e => o(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
-    dstEnd: e => o(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
+    dstStart: e => a(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
+    dstEnd: e => a(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
   },
   CVT: false,
   CXT: 420,
@@ -75,8 +75,8 @@ let i = {
   ET: {
     timezoneOffsetDuringDst: false,
     timezoneOffsetNonDst: false,
-    dstStart: e => o(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
-    dstEnd: e => o(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
+    dstStart: e => a(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
+    dstEnd: e => a(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
   },
   FJST: 780,
   FJT: 720,
@@ -142,8 +142,8 @@ let i = {
   MT: {
     timezoneOffsetDuringDst: false,
     timezoneOffsetNonDst: false,
-    dstStart: e => o(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
-    dstEnd: e => o(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
+    dstStart: e => a(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
+    dstEnd: e => a(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
   },
   MUT: 240,
   MVT: 300,
@@ -175,8 +175,8 @@ let i = {
   PT: {
     timezoneOffsetDuringDst: false,
     timezoneOffsetNonDst: false,
-    dstStart: e => o(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
-    dstEnd: e => o(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
+    dstStart: e => a(e, r.mr.MARCH, r.OG.SUNDAY, 2, 2),
+    dstEnd: e => a(e, r.mr.NOVEMBER, r.OG.SUNDAY, 1, 2)
   },
   PWT: 540,
   PYST: false,
@@ -226,18 +226,18 @@ let i = {
   YEKT: 360
 };
 
-function o(e, t, n, r, i = 0) {
-  let a = 0,
+function a(e, t, n, r, i = 0) {
+  let o = 0,
     s = 0;
-  for (; s < r;) new Date(e, t - 1, ++a).getDay() === n && s++;
-  return new Date(e, t - 1, a, i)
+  for (; s < r;) new Date(e, t - 1, ++o).getDay() === n && s++;
+  return new Date(e, t - 1, o, i)
 }
 
-function a(e, t, n, r = 0) {
-  let i, o = 0 === n ? 7 : n,
+function o(e, t, n, r = 0) {
+  let i, a = 0 === n ? 7 : n,
     s = new Date(e, t - 1 + 1, 1, 12),
     l = 0 === s.getDay() ? 7 : s.getDay();
-  return i = l === o ? 7 : l < o ? 7 + l - o : l - o, s.setDate(s.getDate() - i), new Date(e, t - 1, s.getDate(), r)
+  return i = l === a ? 7 : l < a ? 7 + l - a : l - a, s.setDate(s.getDate() - i), new Date(e, t - 1, s.getDate(), r)
 }
 
 function s(e, t, n = {}) {

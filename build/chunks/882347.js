@@ -27,13 +27,13 @@ async function h(e) {
     return await (0, p.Z)(t, n)
   } catch (s) {
     let e = null != i ? r.E.GUILD_CHANNEL : r.E.PRIVATE_CHANNEL;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
       nonce: "",
       applicationId: t,
       channelId: null != n ? n : null,
       guildId: null != i ? i : null,
-      error: new a.Hx(s),
+      error: new o.Hx(s),
       locationKind: e
     })
   }
@@ -46,10 +46,10 @@ async function g(e) {
   } = e;
   return (null == t || !!await new Promise(e => {
     let i = l.ZP.getSelfEmbeddedActivities().get(t.id),
-      o = (0, f.p)(null == i ? true : i.location),
-      a = s.Z.getChannel(o);
-    if (null == i || null == a) return void e(true);
-    null == r || r(), (0, u.Z)(t, a, () => {
+      a = (0, f.p)(null == i ? true : i.location),
+      o = s.Z.getChannel(a);
+    if (null == i || null == o) return void e(true);
+    null == r || r(), (0, u.Z)(t, o, () => {
       (0, _.Z)().leaveActivity({
         location: i.location,
         applicationId: t.id,
@@ -64,17 +64,17 @@ async function E(e) {
     applicationId: n,
     channel: r,
     user: i,
-    onConfirmActivityLaunchChecksAlertOpen: o
+    onConfirmActivityLaunchChecksAlertOpen: a
   } = e;
   if (null == i.nsfwAllowed) {
-    var a, s, l;
+    var o, s, l;
     let e = null != t ? t : await h({
       applicationId: n,
       channelId: null == r ? true : r.id,
       guildId: null != (s = null == r ? true : r.getGuildId()) ? s : true
     });
-    if (null == e || null != (l = null == (a = e.embeddedActivityConfig) ? true : a.requires_age_gate) && l && !await new Promise(t => {
-        null == o || o(), (0, c.V)({
+    if (null == e || null != (l = null == (o = e.embeddedActivityConfig) ? true : o.requires_age_gate) && l && !await new Promise(t => {
+        null == a || a(), (0, c.V)({
           application: e,
           channelId: null == r ? true : r.id,
           onAgree: () => t(true),
@@ -89,15 +89,15 @@ async function b(e) {
   let {
     application: n,
     applicationId: r,
-    channel: o,
-    onConfirmActivityLaunchChecksAlertOpen: a
+    channel: a,
+    onConfirmActivityLaunchChecksAlertOpen: o
   } = e, s = null != n ? n : await h({
     applicationId: r,
-    channelId: null == o ? true : o.id,
-    guildId: null != (t = null == o ? true : o.getGuildId()) ? t : true
+    channelId: null == a ? true : a.id,
+    guildId: null != (t = null == a ? true : a.getGuildId()) ? t : true
   });
   return null != s && (!!((0, i.yE)(s.flags, m.udG.EMBEDDED_RELEASED) || s.isVerified || l.ZP.hasActivityEverBeenLaunched(r)) || new Promise(e => {
-    null == a || a(), (0, d.j)({
+    null == o || o(), (0, d.j)({
       application: s,
       onConfirm: () => e(true),
       onCancel: () => e(false)

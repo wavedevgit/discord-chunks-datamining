@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk676733 = require("./676733.js"),
   Chunk777207 = require("./777207.jsx"),
-  Chunk852940 = require("./852940.js");
+  Chunk849749 = require("./849749.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,8 +58,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,14 +67,14 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function p(e) {
   return (0, r.jsx)(i.bL, u(l({}, e), {
-    className: a.cell
+    className: o.cell
   }))
 }
 
@@ -83,10 +83,10 @@ function _(e) {
     children: t
   } = e, n = d(e, ["children"]);
   return (0, r.jsx)(i.sg, u(l({}, n), {
-    className: a.column,
-    children: (0, r.jsx)(o.x, {
+    className: o.column,
+    children: (0, r.jsx)(a.x, {
       variant: "eyebrow",
-      className: a.columnText,
+      className: o.columnText,
       children: t
     })
   }))
@@ -94,19 +94,19 @@ function _(e) {
 
 function m(e) {
   return (0, r.jsx)(i.X2, u(l({}, e), {
-    className: a.row
+    className: o.row
   }))
 }
 
 function h(e) {
   return (0, r.jsx)(i.RM, u(l({}, e), {
-    className: a.body
+    className: o.body
   }))
 }
 
 function g(e) {
   return (0, r.jsx)(i.xD, u(l({}, e), {
-    className: a.header
+    className: o.header
   }))
 }
 
@@ -114,17 +114,17 @@ function E(e) {
   var {
     header: t,
     footer: n,
-    children: o
+    children: a
   } = e, s = d(e, ["header", "footer", "children"]);
   return (0, r.jsx)("div", {
-    className: a.container,
+    className: o.container,
     children: (0, r.jsxs)(i.iA, u(l({}, s), {
-      className: a.table,
+      className: o.table,
       children: [null != t && (0, r.jsx)("div", {
-        className: a.header,
+        className: o.header,
         children: t
-      }), o, null != n && (0, r.jsx)("div", {
-        className: a.footer,
+      }), a, null != n && (0, r.jsx)("div", {
+        className: o.footer,
         children: n
       })]
     }))

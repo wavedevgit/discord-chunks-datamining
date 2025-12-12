@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk211242 = require("./211242.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk840416 = require("./840416.js"),
+  Chunk859228 = require("./859228.js"),
   Chunk51125 = require("./51125.js"),
   Chunk47268 = require("./47268.js");
 
@@ -28,7 +28,7 @@ function E(e) {
     className: t
   } = e, n = (0, c.ZP)(), i = (0, s.wj)(n) ? h : g;
   return (0, r.jsxs)("div", {
-    className: o()(m.container, t),
+    className: a()(m.container, t),
     children: [(0, r.jsx)(l.Heading, {
       className: m.header,
       variant: "heading-xl/semibold",
@@ -54,7 +54,7 @@ function E(e) {
 
 function b() {
   return (0, Chunk54381.jsx)(E, {
-    className: Chunk840416.settings
+    className: Chunk859228.settings
   })
 }
 
@@ -86,14 +86,14 @@ function O(e) {
     className: t
   } = e;
   return (0, f.Q)() ? (0, r.jsxs)(l.Zbd, {
-    className: o()(m.blockedPaymentsWarning, t),
+    className: a()(m.blockedPaymentsWarning, t),
     type: l.Zbd.Types.CUSTOM,
     children: [(0, r.jsx)(l.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       className: m.blockedPaymentsWarningIcon,
-      color: a.Z.unsafe_rawColors.YELLOW_300.css
+      color: o.Z.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
       children: _.intl.format(_.t.NYkcCh, {

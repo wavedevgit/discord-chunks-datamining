@@ -99,15 +99,15 @@ function O(e) {
   if (!(!i && h.dismissibleContentSeenDuringSession.has(t))) {
     if (!(i && y(t, n))) {
       if (i) {
-        var o;
-        let e = null != (o = h.seenForGuildId.get(n)) ? o : new Set;
+        var a;
+        let e = null != (a = h.seenForGuildId.get(n)) ? a : new Set;
         e.add(t), h.seenForGuildId.set(n, e)
       } else h.dismissibleContentSeenDuringSession.add(t);
       if (null == h.dailyCapPeriodStart) {
         let e = new Date;
         e.setHours(0, 0, 0, 0), h.dailyCapPeriodStart = e.getTime()
       }
-      h.numberOfDCsShownToday += 1, h.numberOfDCsShownToday > m && a.default.track(c.rMx.DCF_CAP_EXCEEDED, {
+      h.numberOfDCsShownToday += 1, h.numberOfDCsShownToday > m && o.default.track(c.rMx.DCF_CAP_EXCEEDED, {
         cap_type: _,
         dismissible_content: t,
         shown_dcs: h.numberOfDCsShownToday

@@ -1,0 +1,24 @@
+/** Chunk was on 9536 **/
+/** chunk id: 399255, original params: e,t,n (module,exports,require) **/
+"use strict";
+module.exports = {
+  emptyRoles: "_5f97b45169dc1b9d-emptyRoles",
+  emptyRolesText: "_5f97b45169dc1b9d-emptyRolesText",
+  roleRow: "_5f97b45169dc1b9d-roleRow",
+  roleRowDragging: "_5f97b45169dc1b9d-roleRowDragging",
+  dragIcon: "_5f97b45169dc1b9d-dragIcon",
+  roleNameContainer: "_5f97b45169dc1b9d-roleNameContainer",
+  shield: "_5f97b45169dc1b9d-shield " + require("./712721.js").desaturateUserColors,
+  roleIcon: "_5f97b45169dc1b9d-roleIcon",
+  lock: "_5f97b45169dc1b9d-lock",
+  subscriptionRoleIcon: "_5f97b45169dc1b9d-subscriptionRoleIcon",
+  roleName: "_5f97b45169dc1b9d-roleName",
+  memberCountContainer: "_5f97b45169dc1b9d-memberCountContainer",
+  person: "_5f97b45169dc1b9d-person",
+  buttonsContainer: "_5f97b45169dc1b9d-buttonsContainer",
+  roleRowDisableHover: "_5f97b45169dc1b9d-roleRowDisableHover",
+  dragIconHidden: "_5f97b45169dc1b9d-dragIconHidden",
+  containerDragAfter: "_5f97b45169dc1b9d-containerDragAfter",
+  containerDragBefore: "_5f97b45169dc1b9d-containerDragBefore",
+  roleFlowerStar: "_5f97b45169dc1b9d-roleFlowerStar"
+}

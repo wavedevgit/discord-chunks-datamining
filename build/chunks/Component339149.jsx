@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 339149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => N,
@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -23,9 +23,9 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk353042 = require("./353042.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk820093 = require("./820093.js");
+  Chunk145606 = require("./145606.js");
 
-function x(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,72 +34,72 @@ function x(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      x(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
-let S = {
+let I = {
   [Chunk981631.vxO.INSTALLING]: {
-    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk707409.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["p+2sE+"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk707409.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk707409.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.UPDATING]: {
-    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzC"], {
+    [Chunk707409.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["6F9QzC"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVq"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["2OVgVq"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1L, {
+    [Chunk707409.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.mgQg1L, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t.aTdq44, {
+    [Chunk707409.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t.aTdq44, {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.REPAIRING]: {
-    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk707409.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["p+2sE+"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => C.intl.formatToPlainString(C.t["/0NgPI"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk707409.J6.MINUTES]: (e, t) => C.intl.formatToPlainString(C.t.ZIwMzr, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk707409.J6.HOURS]: (e, t) => C.intl.formatToPlainString(C.t["3IQDUi"], {
       name: e,
       timeRemaining: t
     })
   }
 };
-class I extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   renderText() {
     let {
       state: e,
@@ -120,20 +120,20 @@ class I extends Chunk473749.PureComponent {
     return null != module ? module : Chunk388032.intl.string(Chunk388032.t.cw57ar)
   }
   constructor(...e) {
-    super(...e), x(this, "renderProgressBody", (e, t) => {
+    super(...e), E(this, "renderProgressBody", (e, t) => {
       let {
         state: n,
         application: r
       } = this.props, {
         stage: i,
         progress: l,
-        total: o,
-        type: a
+        total: a,
+        type: o
       } = n;
-      if (null == l || null == o || null == i) return null;
+      if (null == l || null == a || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
-        c = 0 !== s ? Math.max(1, (o - l) / s) : null,
-        u = S[a],
+        c = 0 !== s ? Math.max(1, (a - l) / s) : null,
+        u = I[o],
         d = null != u ? Object.keys(u) : [],
         {
           unit: f,
@@ -169,7 +169,7 @@ class P extends(r = Chunk473749.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57ar) : (0, Chunk54381.jsx)(I, {
+    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57ar) : (0, Chunk54381.jsx)(_, {
       application: module,
       state: exports,
       isPaused: require
@@ -187,7 +187,7 @@ class P extends(r = Chunk473749.PureComponent) {
           scale: this.state.animationScale
         }]
       },
-      className: a()(require, Chunk820093.progressContainer),
+      className: o()(require, Chunk145606.progressContainer),
       onClick: this.handleOnClick,
       children: (0, Chunk54381.jsx)(Chunk28664.u, {
         __unsupportedReactNodeAsText: this.getTooltipText(),
@@ -200,7 +200,7 @@ class P extends(r = Chunk473749.PureComponent) {
             children: (0, Chunk54381.jsx)(Chunk481060._8t, {
               size: "md",
               color: "currentColor",
-              className: Chunk820093.downloadIcon
+              className: Chunk145606.downloadIcon
             })
           })
         })
@@ -208,13 +208,13 @@ class P extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), x(this, "state", {
+    super(...e), E(this, "state", {
       animationScale: new s.Z.Value(0)
-    }), x(this, "handleOnClick", e => {
+    }), E(this, "handleOnClick", e => {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, m.uL)(v.Z5c.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, b.uL)(j.Z5c.APPLICATION_LIBRARY)
     })
   }
 }
@@ -228,7 +228,7 @@ function N(e, t) {
     return null != l && e.push(l), e
   }, [])
 }
-x(P, "defaultProps", {
+E(P, "defaultProps", {
   strokeSize: Chunk481060._3P.StrokeSizes.MEDIUM
 });
 let Z = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.Z], () => {
@@ -264,6 +264,6 @@ let Z = Chunk442837.ZP.connectStores([Chunk941128.Z, Chunk417363.Z, Chunk812206.
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
     component: l.Fragment,
-    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, E({}, n)) : null
-  }) : (0, i.jsx)(P, E({}, n))
+    children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(P, S({}, n)) : null
+  }) : (0, i.jsx)(P, S({}, n))
 })

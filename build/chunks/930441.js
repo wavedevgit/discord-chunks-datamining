@@ -2,17 +2,17 @@
 /** chunk id: 930441, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $Z: () => o,
-  M0: () => a,
+  $Z: () => a,
+  M0: () => o,
   Od: () => s,
   vG: () => i
 });
 var Chunk388032 = require("./388032.jsx");
 let i = "emails";
-var o = function(e) {
+var a = function(e) {
   return e.COMMUNICATION = "communication", e.SOCIAL = "social", e.TIPS = "tips", e.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", e.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", e.FAMILY_CENTER_DIGEST = "family_center_digest", e
 }({});
-let a = ["tips", "recommendations_and_events", "updates_and_announcements"],
+let o = ["tips", "recommendations_and_events", "updates_and_announcements"],
   s = [{
     category: "communication",
     label: () => Chunk388032.intl.string(Chunk388032.t["B75+xe"]),

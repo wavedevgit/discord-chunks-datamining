@@ -24,8 +24,8 @@ class c extends Chunk147913.Z {
       let {
         state: t,
         channelId: n
-      } = e, r = t === s.hes.RTC_CONNECTED, i = r && !this.prevConnected, l = o.Z.getChannel(n), c = null == l ? true : l.getGuildId(), u = this.tempMutedChannel === n;
-      i && null != c && (u ? this.tempMutedChannel = null : (0, a.M2)(c)), this.prevConnected = r
+      } = e, r = t === s.hes.RTC_CONNECTED, i = r && !this.prevConnected, l = a.Z.getChannel(n), c = null == l ? true : l.getGuildId(), u = this.tempMutedChannel === n;
+      i && null != c && (u ? this.tempMutedChannel = null : (0, o.M2)(c)), this.prevConnected = r
     }), l(this, "handleMute", e => {
       let {
         channelId: t
@@ -39,9 +39,9 @@ class c extends Chunk147913.Z {
         let {
           userId: t,
           channelId: i,
-          sessionId: o
+          sessionId: a
         } = e;
-        t === n && o !== r && null != i && (this.tempMutedChannel = i)
+        t === n && a !== r && null != i && (this.tempMutedChannel = i)
       })
     }), l(this, "actions", {
       RTC_CONNECTION_STATE: this.handleRTCConnectionState,

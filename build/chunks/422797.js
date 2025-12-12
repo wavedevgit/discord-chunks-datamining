@@ -2,11 +2,11 @@
 /** chunk id: 422797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => a
+  $: () => o
 });
 var Chunk427164 = require("./427164.js"),
   Chunk751823 = require("./751823.js");
-let o = (0, Chunk427164.le)({
+let a = (0, Chunk427164.le)({
   kind: "user",
   name: "2025-10-krisp-at-end",
   defaultConfig: {
@@ -29,7 +29,7 @@ let o = (0, Chunk427164.le)({
   }
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t,
     disable: n = false
@@ -41,7 +41,7 @@ function a(e) {
     disable: n,
     autoTrackExposure: true
   });
-  return r || n ? o.definition.defaultConfig : o.getConfig({
+  return r || n ? a.definition.defaultConfig : a.getConfig({
     location: t
   })
 }

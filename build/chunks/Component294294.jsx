@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 294294, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,17 +16,17 @@ var Chunk512722 = require("./512722.js"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function f(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([d.Z], () => d.Z.getGuild(t));
+  } = e, n = (0, a.e7)([u.Z], () => u.Z.getGuild(t));
   return l()(null != n, "Guild not found"), (0, r.jsxs)(o.AL, {
     guildId: t,
     children: [(0, r.jsx)(c.Z, {
       children: g.intl.string(g.t["WMyX2+"])
-    }), (0, r.jsx)(a.LZC, {
+    }), (0, r.jsx)(s.LZC, {
       size: 32
-    }), (0, r.jsx)(u.Z, {
+    }), (0, r.jsx)(d.Z, {
       guild: n,
       isGuildProducts: true
     })]

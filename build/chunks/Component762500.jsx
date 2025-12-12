@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk617015 = require("./617015.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk934422 = require("./934422.js");
+  Chunk756853 = require("./756853.js");
 
 function P(e) {
   let {
@@ -48,13 +48,13 @@ function P(e) {
     analyticsLocations: U
   } = (0, d.ZP)(), {
     Component: G
-  } = (0, c.V)(), B = (0, o.e7)([I.ZP], () => I.ZP.getFriendAnniversaryYears(M.id)), H = (0, b.ao)({
+  } = (0, c.V)(), B = (0, o.e7)([I.ZP], () => I.ZP.getFriendAnniversaryYears(M.id)), H = (0, E.ao)({
     location: "gift-intent-friend-row",
     isGift: true,
     giftRecipient: M
   });
   i.useEffect(() => {
-    let e = _.Z.getUserAffinity(M.id);
+    let e = b.Z.getUserAffinity(M.id);
     (0, p.h)({
       name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
       type: s.ImpressionTypes.VIEW,
@@ -66,7 +66,7 @@ function P(e) {
   }, [M, k]);
   let V = e => {
       e.stopPropagation();
-      let t = _.Z.getUserAffinity(M.id);
+      let t = b.Z.getUserAffinity(M.id);
       O.default.track(S.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: k,
         affinity: null == t ? true : t.communicationProbability
@@ -119,7 +119,7 @@ function P(e) {
             applicationStream: Z,
             status: x,
             user: M,
-            userIgnored: E.Z.isIgnored(M.id)
+            userIgnored: _.Z.isIgnored(M.id)
           }), (0, r.jsxs)("div", {
             className: j.anniversarySubtext,
             children: [(0, r.jsx)(u.iFz, {

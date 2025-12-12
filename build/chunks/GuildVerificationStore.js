@@ -41,17 +41,17 @@ function b(e) {
   let n = d.Z.getGuild(e),
     r = f.default.getCurrentUser();
   if (null == n || n.verificationLevel === p.sFg.NONE || null == r || (0, s.eM)(n, r) || r.isPhoneVerified()) return;
-  let o = c.ZP.getMember(n.id, r.id);
-  if (null != o) {
+  let a = c.ZP.getMember(n.id, r.id);
+  if (null != a) {
     var l;
-    if ((0, i.yE)(null != (l = o.flags) ? l : 0, _.q.BYPASSES_VERIFICATION)) return;
+    if ((0, i.yE)(null != (l = a.flags) ? l : 0, _.q.BYPASSES_VERIFICATION)) return;
     let e = new Set;
-    for (let t of o.roles) {
+    for (let t of a.roles) {
       let r = u.Z.getRole(n.id, t);
       null == r || r.managed || e.add(t)
     }
     let t = new Date("2022-12-02 00:00:00"),
-      r = null == o.joinedAt || new Date(o.joinedAt) < t;
+      r = null == a.joinedAt || new Date(a.joinedAt) < t;
     if (!(n.features.has(p.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED) && !r) && e.size > 0) return
   }
   let m = +r.createdAt + 6e4 * p.YeM.ACCOUNT_AGE - Date.now(),
@@ -63,7 +63,7 @@ function b(e) {
     I = false;
   r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= p.sFg.LOW && !r.verified, v = n.verificationLevel >= p.sFg.VERY_HIGH, S = n.verificationLevel >= p.sFg.MEDIUM && m > 0, I = n.verificationLevel >= p.sFg.HIGH && h > 0);
   let T = [];
-  I && T.push(h), S && T.push(m), T.length > 0 && (t = setTimeout(() => a.Z.dispatch({
+  I && T.push(h), S && T.push(m), T.length > 0 && (t = setTimeout(() => o.Z.dispatch({
     type: "GUILD_VERIFICATION_CHECK",
     guildId: e
   }), Math.max(...T))), E[e] = {

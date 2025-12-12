@@ -18,7 +18,7 @@ function u(e) {
     context: n,
     launchingComponentId: u,
     onSubmissionComplete: d
-  } = e, f = (0, s.q)(t), p = (0, i.e7)([a.ZP], () => a.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : true)), _ = (0, i.e7)([l.Z], () => l.Z.isLaunchingFrame(t)), m = null != f && (0, c.g)(f) ? _ : null != p && p.isLaunching && p.componentId === u, h = (0, o.Z)(m);
+  } = e, f = (0, s.q)(t), p = (0, i.e7)([o.ZP], () => o.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : true)), _ = (0, i.e7)([l.Z], () => l.Z.isLaunchingFrame(t)), m = null != f && (0, c.g)(f) ? _ : null != p && p.isLaunching && p.componentId === u, h = (0, a.Z)(m);
   return r.useEffect(() => {
     !m && h && (null == d || d())
   }, [m, h, d]), {

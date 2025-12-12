@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk290348 = require("./290348.js"),
   Chunk367719 = require("./367719.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk480872 = require("./480872.js");
+  Chunk421778 = require("./421778.js");
 let f = e => {
   let {
     listingName: t
@@ -50,12 +50,12 @@ let _ = e => {
       image: h
     }), !n && (0, r.jsx)("div", {
       className: d.draftBadgeContainer,
-      children: (0, r.jsx)(o.v, {})
+      children: (0, r.jsx)(a.v, {})
     }), (0, r.jsx)(i.Text, {
       variant: "heading-xl/semibold",
       className: d.tierPrice,
       tag: "div",
-      children: (0, a.T4)(g.price, g.currency)
+      children: (0, o.T4)(g.price, g.currency)
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
       color: "interactive-text-default",

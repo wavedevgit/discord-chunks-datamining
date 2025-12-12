@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk907179 = require("./907179.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk637079 = require("./637079.js"),
+  Chunk854000 = require("./854000.js"),
   Chunk609440 = require("./609440.js");
 
 function v(e, t, n) {
@@ -58,7 +58,7 @@ function I(e) {
     onHide: N,
     newAnalyticsLocations: P = [],
     disableAutoFocus: R = false
-  } = e, w = (0, o.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+  } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
     analyticsLocations: D
   } = (0, l.ZP)([...P, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
     layout: "POPOUT",
@@ -72,7 +72,7 @@ function I(e) {
     null == v || v(null == L ? true : L.current)
   }, [L, v]);
   let M = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    k = R ? "div" : a.VqE;
+    k = R ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
     value: D,
     children: (0, r.jsx)(d.Mt, {
@@ -102,16 +102,16 @@ function I(e) {
                 children: [(0, r.jsx)(_.Z, {
                   user: t,
                   guildId: n
-                }), (0, r.jsx)(a.Heading, {
+                }), (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/bold",
                   children: b.intl.string(b.t.b33pLD)
-                }), (0, r.jsx)(a.Text, {
+                }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
                   children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
                     username: u.ZP.getName(n, I, t)
                   })
                 })]
-              }), (0, r.jsxs)(a.Kqy, {
+              }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
                   isBlocked: w,

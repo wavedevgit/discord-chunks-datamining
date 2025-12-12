@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk503438 = require("./503438.js"),
   Chunk100527 = require("./100527.js"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk666984 = require("./666984.jsx"),
   Chunk670451 = require("./670451.jsx"),
   Chunk671955 = require("./671955.js"),
-  Chunk704543 = require("./704543.js");
+  Chunk251806 = require("./251806.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,44 +74,44 @@ function x(e) {
   let {
     user: t,
     currentUser: n,
-    activity: o,
+    activity: a,
     className: P,
     onClose: w
   } = e, x = (0, _.Dt)(), L = (0, _.Dt)(), {
     themeType: j
   } = (0, b.z)(), M = (0, p.Z)({
-    activity: o,
+    activity: a,
     user: t
-  }), k = (0, E.Z)(o), U = null != k.text && "" !== k.text, {
+  }), k = (0, E.Z)(a), U = null != k.text && "" !== k.text, {
     largeImage: G
-  } = (0, d.FO)(o), {
+  } = (0, d.FO)(a), {
     analyticsLocations: Z
   } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), F = (0, h.Z)({
     display: "live",
     user: t,
-    activity: o,
+    activity: a,
     entry: M,
     analyticsLocations: Z
   }), B = (0, g.Z)({
     userId: t.id,
     onAction: F
   });
-  if (!(0, l.Z)(o)) return null;
+  if (!(0, l.Z)(a)) return null;
   let V = () => {
       var e, n;
-      let l = null != (n = null == (e = o.state) ? true : e.split("; ")) ? n : [];
-      return 0 === l.length ? null : null == o.sync_id ? (0, r.jsx)(S.Z, {
+      let l = null != (n = null == (e = a.state) ? true : e.split("; ")) ? n : [];
+      return 0 === l.length ? null : null == a.sync_id ? (0, r.jsx)(S.Z, {
         variant: "text-xs/normal",
         text: l.join(", ")
       }) : (0, r.jsx)(S.Z, {
         variant: "text-xs/normal",
         text: l.map((e, n) => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)(s.P3F, {
-            className: a()(N.clickableText, N.inline),
+            className: o()(N.clickableText, N.inline),
             onClick: e => {
               e.stopPropagation(), F({
                 action: "OPEN_SPOTIFY_ARTIST"
-              }), (0, m.d$)(o, t.id, n)
+              }), (0, m.d$)(a, t.id, n)
             },
             children: e
           }), n < l.length - 1 ? ", " : ""]
@@ -121,7 +121,7 @@ function x(e) {
     H = () => {
       let {
         timestamps: e
-      } = o;
+      } = a;
       if (null == e) return null;
       let {
         start: t,
@@ -136,7 +136,7 @@ function x(e) {
       className: N.actions,
       children: (0, r.jsx)(T.Z, {
         user: t,
-        activity: o,
+        activity: a,
         onAction: F
       })
     });
@@ -144,7 +144,7 @@ function x(e) {
     value: Z,
     children: (0, r.jsxs)(O.Z, {
       ref: B,
-      className: a()(N.card, P),
+      className: o()(N.card, P),
       onAction: F,
       onClose: w,
       "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
@@ -154,7 +154,7 @@ function x(e) {
         contextMenu: (0, r.jsx)(C.Z, {
           display: "live",
           user: t,
-          activity: o,
+          activity: a,
           entry: M,
           onClose: w
         })
@@ -169,24 +169,24 @@ function x(e) {
             onClick: e => {
               e.stopPropagation(), F({
                 action: "OPEN_SPOTIFY_ALBUM"
-              }), (0, m.Z5)(o, t.id)
+              }), (0, m.Z5)(a, t.id)
             }
           }), (0, r.jsxs)("div", {
             className: N.details,
             children: [(0, r.jsxs)("div", {
               children: [(0, r.jsx)(S.f, {
                 variant: "heading-sm/semibold",
-                text: o.details,
+                text: a.details,
                 onClick: () => {
                   F({
                     action: "OPEN_SPOTIFY_TRACK"
-                  }), (0, m.aG)(o)
+                  }), (0, m.aG)(a)
                 },
                 id: x
               }), V()]
             }), (0, r.jsx)(y.Z, {
               user: t,
-              activity: o,
+              activity: a,
               className: N.badges
             }), H(), j === A.l.MODAL_V2 && Y()]
           }), j === A.l.MODAL && Y()]

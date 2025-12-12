@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 983559, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk231688 = require("./231688.js");
+  Chunk960077 = require("./960077.js");
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,7 +65,7 @@ function G(e) {
     user: n,
     currentUser: m,
     channel: M
-  } = e, G = __OVERLAY__, F = (0, _.ZP)(n.id), B = (0, o.ZP)(), V = i.useRef(Date.now()), {
+  } = e, G = __OVERLAY__, F = (0, y.ZP)(n.id), B = (0, o.ZP)(), V = i.useRef(Date.now()), {
     analyticsLocations: z
   } = (0, d.ZP)(c.Z.USER_PROFILE_SIDEBAR), W = (0, g.ZB)({
     layout: "SIDEBAR",
@@ -74,17 +74,17 @@ function G(e) {
   }), Y = i.useRef(null), {
     isHoveringOrFocusing: q,
     isHovering: K
-  } = (0, u.Z)(Y), Q = (0, O.$m)(), X = (0, s.q_F)({
+  } = (0, u.Z)(Y), Q = (0, x.$m)(), X = (0, s.q_F)({
     opacity: +(null != Q.interactionType),
     config: {
       duration: 150
     }
   }), J = e => {
-    (0, x.openUserProfileModal)(U({
+    (0, j.openUserProfileModal)(U({
       sourceAnalyticsLocations: z,
       hideRestrictedProfile: true
     }, W, e))
-  }, $ = (0, y.Z)({
+  }, $ = (0, O.Z)({
     location: "UserProfileSidebar"
   }), ee = (null == F ? true : F.widgets) != null && F.widgets.length > 0, et = (0, b.g)({
     location: "UserProfileSidebar"
@@ -106,7 +106,7 @@ function G(e) {
       fetchStartedAt: null == F ? true : F.fetchStartedAt,
       fetchEndedAt: null == F ? true : F.fetchEndedAt,
       isLoaded: null == F ? true : F.isLoaded,
-      children: (0, r.jsx)(O.NJ, {
+      children: (0, r.jsx)(x.NJ, {
         value: Q,
         children: (0, r.jsxs)(S.Z, {
           ref: Y,
@@ -129,16 +129,16 @@ function G(e) {
               })]
             }), (0, r.jsxs)("div", {
               className: k.header,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(C.Z, {
                 user: n,
                 displayProfile: F,
                 themeType: L.l.SIDEBAR,
                 animateOnHoverOrFocusOnly: !q,
                 className: k.banner
-              }), (0, r.jsx)(C.Z, {
+              }), (0, r.jsx)(I.Z, {
                 userId: n.id,
                 className: k.toast
-              }), (0, r.jsx)(j.Z, {
+              }), (0, r.jsx)(v.Z, {
                 user: n,
                 displayProfile: F,
                 channelId: M.id,
@@ -159,7 +159,7 @@ function G(e) {
               onOpenProfile: G ? true : J
             }), $ && ee && (0, r.jsx)("div", {
               className: k.widgetPreviews,
-              children: (0, r.jsx)(I.Z, {
+              children: (0, r.jsx)(_.Z, {
                 user: n,
                 widgets: F.widgets,
                 onOpenUserProfileModal: J

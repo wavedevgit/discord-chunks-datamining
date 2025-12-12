@@ -11,8 +11,8 @@ var Chunk835473 = require("./835473.js"),
   Chunk618158 = require("./618158.jsx"),
   Chunk922745 = require("./922745.jsx"),
   Chunk611500 = require("./611500.jsx"),
-  Chunk702952 = require("./702952.js"),
-  Chunk186880 = require("./186880.js");
+  Chunk322785 = require("./322785.js"),
+  Chunk290953 = require("./290953.js");
 
 function d(e) {
   var t;
@@ -35,15 +35,15 @@ function d(e) {
         idle: m,
         title: null != (t = null == h ? true : h.name) ? t : "",
         onJumpToChannel: _,
-        preventIdleComponent: a.Z
+        preventIdleComponent: o.Z
       })
     }), (0, r.jsx)("div", {
       className: u.bottomControls,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(a.Z, {
         grow: 1,
         shrink: 1,
-        justify: o.Z.Justify.END,
-        align: o.Z.Align.CENTER,
+        justify: a.Z.Justify.END,
+        align: a.Z.Align.CENTER,
         children: (0, r.jsx)(l.Z, {
           applicationId: n,
           className: c.rightPipIcon

@@ -1,0 +1,18 @@
+/** Chunk was on web.js **/
+/** chunk id: 58349, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  container: "b5010be6beaa8120-container",
+  eventName: "b5010be6beaa8120-eventName",
+  description: "b5010be6beaa8120-description",
+  descriptionWithThumbnail: "b5010be6beaa8120-descriptionWithThumbnail",
+  spacer: "b5010be6beaa8120-spacer",
+  rsvpCount: "b5010be6beaa8120-rsvpCount",
+  rsvpIcon: "b5010be6beaa8120-rsvpIcon",
+  creator: "b5010be6beaa8120-creator",
+  eventInfoStatusContainer: "b5010be6beaa8120-eventInfoStatusContainer",
+  statusContainer: "b5010be6beaa8120-statusContainer",
+  withThumbnail: "b5010be6beaa8120-withThumbnail",
+  thumbnailContainer: "b5010be6beaa8120-thumbnailContainer",
+  thumbnail: "b5010be6beaa8120-thumbnail"
+}

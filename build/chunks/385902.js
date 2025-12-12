@@ -1,8 +1,8 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => y,
-  _: () => _
+  K: () => O,
+  _: () => y
 });
 var Chunk473749 = require("./473749.js"),
   Chunk494497 = require("./494497.js"),
@@ -17,80 +17,80 @@ var Chunk473749 = require("./473749.js"),
   Chunk834209 = require("./834209.js"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk265397 = require("./265397.js"),
+  Chunk556970 = require("./556970.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t) {
+function y(e, t) {
   var n;
-  let r = (0, l.e7)([o.Z], () => {
+  let r = (0, l.e7)([a.Z], () => {
       var t;
-      return null == (t = o.Z.getGuild(e)) ? true : t.features
+      return null == (t = a.Z.getGuild(e)) ? true : t.features
     }),
-    a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    u = null == a ? true : a.allPowerups[i.A$],
+    o = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    u = null == o ? true : o.allPowerups[i.A$],
     d = (0, f.ZP)(e, u),
-    _ = (0, c.q8)(e, t),
-    y = null == u ? true : u.storeRemovalDate,
-    O = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
-    v = _ && null != y && !O && d.type === p.A3.POWERUP_ACTIVATED,
-    j = v ? {
-      title: b.intl.formatToPlainString(m.default.mgoPkU, {
+    y = (0, c.q8)(e, t),
+    O = null == u ? true : u.storeRemovalDate,
+    v = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
+    j = y && null != O && !v && d.type === p.A3.POWERUP_ACTIVATED,
+    C = j ? {
+      title: m.intl.formatToPlainString(b.default.mgoPkU, {
         perkName: null == u ? true : u.title
       }),
-      description: b.intl.formatToPlainString(m.default.UT9pkI, {
-        dateString: (0, h.Z)(y)
+      description: m.intl.formatToPlainString(b.default.UT9pkI, {
+        dateString: (0, h.Z)(O)
       })
     } : null;
   return {
-    shouldShow: v,
-    notificationConfig: j
+    shouldShow: j,
+    notificationConfig: C
   }
 }
 
-function y(e, t) {
-  var n, _, y, O;
-  let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
-    j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    C = null != (y = (0, d.Z)(e)) && y,
-    x = (0, c.q8)(e, t),
-    E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
-    I = (0, f.ZP)(e, S),
-    P = null == S ? true : S.storeRemovalDate,
-    N = null == E || null == (_ = E.allPowerups) ? true : _[i.XW],
-    Z = (0, l.e7)([o.Z], () => {
+function O(e, t) {
+  var n, y, O, v;
+  let j = (0, l.e7)([a.Z], () => a.Z.getGuild(e)),
+    C = (0, l.e7)([o.Z], () => o.Z.hasLayers()),
+    x = null != (O = (0, d.Z)(e)) && O,
+    E = (0, c.q8)(e, t),
+    S = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
+    I = null == S || null == (n = S.allPowerups) ? true : n[i.A$],
+    _ = (0, f.ZP)(e, I),
+    P = null == I ? true : I.storeRemovalDate,
+    N = null == S || null == (y = S.allPowerups) ? true : y[i.XW],
+    Z = (0, l.e7)([a.Z], () => {
       var t;
-      return null == (t = o.Z.getGuild(e)) ? true : t.features
+      return null == (t = a.Z.getGuild(e)) ? true : t.features
     }),
-    w = null != (O = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && O,
+    w = null != (v = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && v,
     {
       onActivate: T
     } = (0, u._C)(e, N),
-    A = !j && C && x && null != S && !w && I.type === p.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    A = !C && x && E && null != I && !w && _.type === p.A3.POWERUP_ACTIVATED && null != P && null != N && null != j,
     R = r.useCallback(e => {
       e.stopPropagation(), T()
     }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, h.Z)(P),
-        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LD"]) : true;
+        t = j.premiumTier === g.Eu4.TIER_2 ? m.intl.string(b.default["0uo/LD"]) : true;
       return {
-        firstHeader: S.title,
-        secondHeader: b.intl.formatToPlainString(m.default["8imxAq"], {
+        firstHeader: I.title,
+        secondHeader: m.intl.formatToPlainString(b.default["8imxAq"], {
           dateString: e
         }),
-        firstBody: b.intl.formatToPlainString(m.default["/bW9tW"], {
-          serverName: v.name
+        firstBody: m.intl.formatToPlainString(b.default["/bW9tW"], {
+          serverName: j.name
         }),
-        secondBody: b.intl.formatToPlainString(m.default.D09fdi, {
+        secondBody: m.intl.formatToPlainString(b.default.D09fdi, {
           dateString: e,
-          boostCount: S.cost
+          boostCount: I.cost
         }),
-        thirdBody: b.intl.string(m.default["+zvKPr"]),
+        thirdBody: m.intl.string(b.default["+zvKPr"]),
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }
-    }, [A, S, P, v, R]);
+    }, [A, I, P, j, R]);
   return {
     shouldShow: A,
     modalConfig: D

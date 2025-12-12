@@ -1,4 +1,4 @@
-/** Chunk was on 26473 **/
+/** Chunk was on 3298 **/
 /** chunk id: 241306, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk296643 = require("./296643.jsx"),
   Chunk343312 = require("./343312.jsx"),
   Chunk162190 = require("./162190.js"),
-  Chunk333275 = require("./333275.js");
+  Chunk879125 = require("./879125.js");
 
 function u() {
   let {
@@ -20,17 +20,17 @@ function u() {
   if (null == module) return null;
   let u = null == module ? true : module.plans.find(e => e.id === n);
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk333275.container,
+    className: Chunk879125.container,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk333275.content,
+      className: Chunk879125.content,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk333275.headerContainer,
+        className: Chunk879125.headerContainer,
         children: [(0, Chunk54381.jsx)("img", {
           src: null != require ? require : "",
-          className: Chunk333275.image,
+          className: Chunk879125.image,
           alt: module.name
         }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk333275.header,
+          className: Chunk879125.header,
           children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/semibold",
             color: "text-strong",
@@ -42,17 +42,17 @@ function u() {
           })]
         })]
       }), null != u && (0, Chunk54381.jsx)("div", {
-        className: Chunk333275.statsGrid,
+        className: Chunk879125.statsGrid,
         children: u.specifications.map((e, n) => {
           var t;
           return (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsxs)("div", {
               className: c.statItem,
-              children: [(0, r.jsx)(l.X6q, {
+              children: [(0, r.jsx)(a.X6q, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 children: e.title
-              }), (0, r.jsx)(l.xvT, {
+              }), (0, r.jsx)(a.xvT, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: e.description
@@ -63,11 +63,11 @@ function u() {
           }, n)
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk333275.poweredBy,
+        className: Chunk879125.poweredBy,
         children: (0, Chunk54381.jsx)(Chunk296643.Z, {})
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk333275.imageBackground,
+      className: Chunk879125.imageBackground,
       children: (0, Chunk54381.jsx)(Chunk441494.b, {
         imageUrl: null != require ? require : ""
       })

@@ -52,9 +52,9 @@ function R(e) {
     sent_user_ids: n,
     refresh_at: r,
     recipient_status: i,
-    has_eligible_friends: o
+    has_eligible_friends: a
   } = e;
-  I = true, T = o, m = false, f = t, p = new Set(n), C = r, _ = i
+  I = true, T = a, m = false, f = t, p = new Set(n), C = r, _ = i
 }
 
 function w(e) {
@@ -112,13 +112,13 @@ function G(e) {
   let {
     userTrialOfferId: t
   } = e;
-  m || (0, l.C$)(), h.has(t) || (L(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  m || (0, l.C$)(), h.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function Z(e) {
   let t = e.type === i.u.PREMIUM_REFERRAL ? e.content : null;
   if (null == t) returnfalse;
-  g.has(t) || h.has(t) || (L(t), a.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
+  g.has(t) || h.has(t) || (L(t), o.Z.wait(() => (0, l.IB)(t).catch(c.VqG)))
 }
 
 function F() {

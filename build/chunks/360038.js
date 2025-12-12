@@ -25,10 +25,10 @@ let p = {
   action(e, t) {
     let n, p = parseInt(t.split("+")[1], 10);
     if (0 === p && (p = 10), isNaN(p) || 0 === p) return;
-    let _ = o.o.getConfig({
+    let _ = a.o.getConfig({
         location: "jumptoguild"
       }).dmsTab,
       m = +!!_;
-    if (null != (n = 1 === p || _ && 2 === p ? f.ME : (0, i.z)(r.Z, l.Z, c.Z) ? p === 2 + m ? f.I_8 : d.ZP.getFlattenedGuildIds()[p - 3 - m] : d.ZP.getFlattenedGuildIds()[p - 2 - m])) return n === f.ME && _ && 2 === p ? (0, a.uL)(f.Z5c.ME_DMS) : n === f.ME && null == u.Z.getGuildId() ? (0, a.uL)(f.Z5c.CHANNEL(n)) : (0, s.X)(n), false
+    if (null != (n = 1 === p || _ && 2 === p ? f.ME : (0, i.z)(r.Z, l.Z, c.Z) ? p === 2 + m ? f.I_8 : d.ZP.getFlattenedGuildIds()[p - 3 - m] : d.ZP.getFlattenedGuildIds()[p - 2 - m])) return n === f.ME && _ && 2 === p ? (0, o.uL)(f.Z5c.ME_DMS) : n === f.ME && null == u.Z.getGuildId() ? (0, o.uL)(f.Z5c.CHANNEL(n)) : (0, s.X)(n), false
   }
 }

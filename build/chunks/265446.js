@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk53529 = require("./53529.js"),
   Chunk436660 = require("./436660.js"),
   Chunk887490 = require("./887490.js");
-let a = ["applicationCommand"],
+let o = ["applicationCommand"],
   s = ["gameMentionInput", "timestampMentionInput"];
 
 function l(e) {
@@ -21,11 +21,11 @@ function l(e) {
     e.insertBreak()
   }, e.insertText = t => {
     if (0 > t.indexOf("\r") && 0 > t.indexOf("\n")) return void n(t);
-    let o = t.split(/\r\n|\r|\n/);
-    if (!c(e)) return void n(o.join(" "));
+    let a = t.split(/\r\n|\r|\n/);
+    if (!c(e)) return void n(a.join(" "));
     r.T.withSingleEntry(e, () => {
       let t = false;
-      for (let r of o) t && i.Q.splitNodes(e, {
+      for (let r of a) t && i.Q.splitNodes(e, {
         always: true
       }), n(r), t = true
     })
@@ -34,7 +34,7 @@ function l(e) {
 
 function c(e) {
   var t;
-  let n = o.bN.getCurrentBlock(e),
-    r = o.bN.getCurrentInline(e);
-  return null != n && !a.includes(n[0].type) && !s.includes(null == r || null == (t = r[0]) ? true : t.type)
+  let n = a.bN.getCurrentBlock(e),
+    r = a.bN.getCurrentInline(e);
+  return null != n && !o.includes(n[0].type) && !s.includes(null == r || null == (t = r[0]) ? true : t.type)
 }

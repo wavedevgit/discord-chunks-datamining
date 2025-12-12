@@ -20,11 +20,11 @@ class d extends Chunk727916.Z {
     let n = t[c].toLowerCase(),
       i = r.LN[n];
     if (true === i) return null;
-    let o = t[l],
+    let a = t[l],
       s = t[u],
-      d = o || s || "";
+      d = a || s || "";
     d = d.toLowerCase();
     let f = null;
-    return "pasado" == d ? f = "this" : "pr\xf3ximo" == d || "proximo" == d ? f = "next" : "este" == d && (f = "this"), (0, a.Rv)(e.reference, i, f)
+    return "pasado" == d ? f = "this" : "pr\xf3ximo" == d || "proximo" == d ? f = "next" : "este" == d && (f = "this"), (0, o.Rv)(e.reference, i, f)
   }
 }

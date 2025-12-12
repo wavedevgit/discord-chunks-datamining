@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk903518 = require("./903518.js"),
   Chunk580357 = require("./580357.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk353441 = require("./353441.js");
+  Chunk609442 = require("./609442.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,12 +60,12 @@ function k(e) {
     guildId: y,
     welcomeMessage: I,
     onSave: P
-  } = e, [C, _] = l.useState(v({}, I)), w = (0, s.e7)([m.Z], () => m.Z.getGuild(y)), Z = l.useCallback(e => {
+  } = e, [C, w] = l.useState(v({}, I)), Z = (0, s.e7)([m.Z], () => m.Z.getGuild(y)), S = l.useCallback(e => {
     let t = {};
     return Promise.resolve(g.ZP.getMembers(y).filter(n => {
       var r;
       let l = p.default.getUser(n.userId);
-      if (null != l && (t[n.userId] = l), null == w || null == l || !(0, f.Y)(w, l)) returnfalse;
+      if (null != l && (t[n.userId] = l), null == Z || null == l || !(0, f.Y)(Z, l)) returnfalse;
       let a = "".concat(null != (r = n.nick) ? r : "", " ").concat(null == l ? true : l.username);
       return i()(e.toLowerCase(), a.toLowerCase())
     }).map(e => {
@@ -75,7 +75,7 @@ function k(e) {
         label: null != (l = null != (r = e.nick) ? r : null == (n = t[e.userId]) ? true : n.username) ? l : ""
       }
     }))
-  }, [y, w]), S = l.useCallback(e => {
+  }, [y, Z]), L = l.useCallback(e => {
     if (null == y || null == e) return null;
     let t = g.ZP.getMember(y, e.value);
     if (null == t) return null;
@@ -87,22 +87,22 @@ function k(e) {
       src: l,
       "aria-hidden": true
     })
-  }, [y]), L = l.useCallback(e => {
+  }, [y]), U = l.useCallback(e => {
     let {
       value: t
     } = e;
-    _(e => j(v({}, e), {
+    w(e => j(v({}, e), {
       authorIds: null != t ? [t] : []
     }))
-  }, [_]), U = l.useCallback(e => {
-    _(t => j(v({}, t), {
+  }, [w]), G = l.useCallback(e => {
+    w(t => j(v({}, t), {
       message: null != e ? e : ""
     }))
-  }, [_]), G = l.useCallback(() => {
+  }, [w]), M = l.useCallback(() => {
     P(C), O()
-  }, [O, P, C]), M = l.useCallback(() => {
+  }, [O, P, C]), T = l.useCallback(() => {
     P(null), O()
-  }, [P, O]), T = null != (t = C.authorIds[0]) ? t : "", E = (0, s.e7)([g.ZP], () => null != y ? g.ZP.getMember(y, T) : null), R = (0, s.e7)([p.default], () => null != E ? p.default.getUser(E.userId) : null), H = null != (a = null != (n = null == E ? true : E.nick) ? n : null == R ? true : R.username) ? a : "", N = function(e) {
+  }, [P, O]), E = null != (t = C.authorIds[0]) ? t : "", R = (0, s.e7)([g.ZP], () => null != y ? g.ZP.getMember(y, E) : null), H = (0, s.e7)([p.default], () => null != R ? p.default.getUser(R.userId) : null), N = null != (a = null != (n = null == R ? true : R.nick) ? n : null == H ? true : H.username) ? a : "", D = function(e) {
     if (null == e.message || 0 === e.message.length) return null;
     if (null == e.authorIds || 0 === e.authorIds.length)
       if (e.message.length < d.ZR) return h.intl.formatToPlainString(h.t.Lj831L, {
@@ -112,24 +112,24 @@ function k(e) {
     return e.message.length < d.ZR ? h.intl.formatToPlainString(h.t.TJGHXt, {
       minLength: d.ZR
     }) : null
-  }(C), D = l.useMemo(() => [{
+  }(C), Q = l.useMemo(() => [{
     text: h.intl.string(h.t["ETE/oC"]),
     onClick: O,
     variant: "secondary"
   }, {
     text: h.intl.string(h.t["R3BPH+"]),
-    onClick: G,
+    onClick: M,
     variant: "primary",
-    disabled: 0 === C.message.length || null != N
-  }], [N, G, O, C.message.length]);
+    disabled: 0 === C.message.length || null != D
+  }], [D, M, O, C.message.length]);
   return (0, r.jsxs)(o.Modal, {
     title: h.intl.string(h.t.UnLrit),
     transitionState: k,
     onClose: O,
-    actions: D,
+    actions: Q,
     actionBarInput: (0, r.jsx)(c.Avr, {
       text: h.intl.string(h.t.N86XcP),
-      onClick: M,
+      onClick: T,
       variant: "critical"
     }),
     children: [(0, r.jsxs)("div", {
@@ -144,12 +144,12 @@ function k(e) {
         children: h.intl.string(h.t.mQHK2S)
       }), (0, r.jsx)(u.d, {
         value: {
-          value: T,
-          label: H
+          value: E,
+          label: N
         },
-        renderOptionPrefix: S,
-        options: Z,
-        onChange: L,
+        renderOptionPrefix: L,
+        options: S,
+        onChange: U,
         filter: false
       })]
     }), (0, r.jsx)("div", {
@@ -167,12 +167,12 @@ function k(e) {
       }), (0, r.jsx)(c.Kx8, {
         placeholder: h.intl.string(h.t["kX/Sbx"]),
         value: C.message,
-        onChange: U,
+        onChange: G,
         maxLength: d.W4
-      }), null != N ? (0, r.jsx)(c.Text, {
+      }), null != D ? (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-feedback-critical",
-        children: N
+        children: D
       }) : null]
     })]
   })

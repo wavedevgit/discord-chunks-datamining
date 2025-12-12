@@ -8,9 +8,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk520463 = require("./520463.js");
+  Chunk839356 = require("./839356.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,8 +55,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function f(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = {
@@ -84,9 +84,9 @@ function g(e) {
     style: u
   } = e, p = f(e, ["type", "className", "disabled", "children", "style"]);
   let g = m;
-  return i && (g = h), (0, r.jsx)(a.Text, d(c({
+  return i && (g = h), (0, r.jsx)(o.Text, d(c({
     variant: "text-sm/normal",
-    className: o()(s[t], n, s[g]),
+    className: a()(s[t], n, s[g]),
     style: u
   }, p), {
     children: l

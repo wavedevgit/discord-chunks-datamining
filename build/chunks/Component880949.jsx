@@ -7,33 +7,33 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk601964 = require("./601964.js"),
-  Chunk741470 = require("./741470.js");
+  Chunk522316 = require("./522316.js");
 let d = e => {
   let {
     className: t,
     guild: n,
-    isSelected: o = true,
+    isSelected: a = true,
     width: d = 32,
     height: f = 32,
     shouldAnimate: p = true,
     isLocked: _ = false
-  } = e, [m, h] = i.useState(false), g = (0, c.EB)(n, 32, p && o), E = () => h(true), b = () => h(false);
+  } = e, [m, h] = i.useState(false), g = (0, c.EB)(n, 32, p && a), E = () => h(true), b = () => h(false);
   return (0, r.jsxs)("div", {
     onFocus: E,
     onBlur: b,
     onMouseOver: E,
     onMouseLeave: b,
     children: [(0, r.jsx)(l.ZP, {
-      className: a()(u.mask, t),
-      mask: o || m ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
+      className: o()(u.mask, t),
+      mask: a || m ? l.QS.SQUIRCLE : l.QS.AVATAR_DEFAULT,
       width: d,
       height: f,
       children: null == g ? (0, r.jsx)("div", {
-        className: a()(u.guildIcon, u.guildIconWithoutImage),
+        className: o()(u.guildIcon, u.guildIconWithoutImage),
         children: (0, r.jsx)("div", {
           className: u.guildAcronym,
           children: (0, c.gM)(n)

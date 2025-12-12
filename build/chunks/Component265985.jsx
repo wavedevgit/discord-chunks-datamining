@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk575460 = require("./575460.jsx"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk673854 = require("./673854.js");
+  Chunk627153 = require("./627153.js");
 let v = 440,
   S = 80,
   I = 4,
@@ -33,8 +33,8 @@ let v = 440,
       onClose: t,
       listing: n,
       step: i,
-      guildId: a
-    } = e, s = (0, m.YB)(a), c = (0, u.Z)(b.Xy), f = () => {
+      guildId: o
+    } = e, s = (0, m.YB)(o), c = (0, u.Z)(b.Xy), f = () => {
       if (i !== d.h8.CONFIRM) return null;
       let e = null == n.image_asset ? true : (0, p._W)(n.application_id, n.image_asset, S);
       return (0, r.jsx)("div", {
@@ -58,7 +58,7 @@ let v = 440,
       })
     })();
     return (0, r.jsxs)("div", {
-      className: o()(O.headerContainer, {
+      className: a()(O.headerContainer, {
         [O.headerEmpty]: c || null == _
       }),
       children: [_, f(), (0, r.jsx)(l.P3F, {
@@ -78,7 +78,7 @@ let v = 440,
       onClose: t,
       listing: n,
       guildId: i
-    } = e, o = (0, a.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, h.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.rC).slice(0, null === u.length ? I : I - 1), p = (0, g.Z)(d).slice(0, null === u.length ? I : I - 1), m = () => {
+    } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuild(i), [i]), u = (0, h.Z)(i).filter(e => e.roles.includes(n.role_id)), d = n.role_benefits.benefits.filter(_.rC).slice(0, null === u.length ? I : I - 1), p = (0, g.Z)(d).slice(0, null === u.length ? I : I - 1), m = () => {
       var e;
       if (0 === u.length) return null;
       let t = u[0];
@@ -119,7 +119,7 @@ let v = 440,
         variant: "heading-xl/semibold",
         color: "text-default",
         children: y.intl.format(y.t["1HIsTk"], {
-          serverName: null == o ? true : o.name
+          serverName: null == a ? true : a.name
         })
       }), (0, r.jsx)(l.Text, {
         className: O.confirmationSubtitle,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk354459 = require("./354459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk238377 = require("./238377.js");
+  Chunk299348 = require("./299348.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,10 +87,10 @@ function w(e) {
     users: t,
     disableInteraction: n,
     guildId: i,
-    participantType: o,
+    participantType: a,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = R(o, t.length);
+  } = e, c = R(a, t.length);
   return (0, r.jsx)(f.VqE, {
     "aria-label": c,
     className: I.popoutWrapper,
@@ -106,7 +106,7 @@ function w(e) {
           guildId: null != i ? i : true,
           channelId: s,
           nick: y.ZP.getNickname(i, s, e),
-          className: a()(I.memberListItem, {
+          className: o()(I.memberListItem, {
             [I.popoutDisabled]: n
           }),
           textClassName: I.memberListItemText,
@@ -123,10 +123,10 @@ function D(e) {
     users: t,
     guildId: n,
     channelId: i,
-    maxVisibleUsers: o = 3,
+    maxVisibleUsers: a = 3,
     className: s,
     participantType: l
-  } = e, c = R(l, t.length), u = t.length < o ? S.intl.format(S.t["A+bT9O"], {
+  } = e, c = R(l, t.length), u = t.length < a ? S.intl.format(S.t["A+bT9O"], {
     users: t.length,
     user1: y.ZP.getName(n, i, t[0]),
     user2: y.ZP.getName(n, i, t[1]),
@@ -136,7 +136,7 @@ function D(e) {
   return (0, r.jsx)(d.u, {
     text: u,
     children: (0, r.jsxs)("div", {
-      className: a()(I.viewers, s),
+      className: o()(I.viewers, s),
       children: [(0, r.jsx)(f.tEF, {
         size: "xs",
         color: "currentColor",
@@ -153,7 +153,7 @@ let x = [];
 function L(e) {
   let {
     channelId: t,
-    guildId: o,
+    guildId: a,
     participant: s,
     className: d,
     compact: h = false,
@@ -179,7 +179,7 @@ function L(e) {
       k(), (0, p.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, N(C({}, n), {
           user: t
         }))
@@ -191,13 +191,13 @@ function L(e) {
   if (h) return (0, r.jsx)(D, {
     maxVisibleUsers: S,
     users: M,
-    guildId: o,
+    guildId: a,
     channelId: t,
     className: d,
     participantType: s.type
   });
   let Z = l()(M).take(S).map(e => (0, r.jsx)(f.qEK, {
-    src: e.getAvatarURL(o, 24),
+    src: e.getAvatarURL(a, 24),
     "aria-label": e.username,
     size: f.EFr.SIZE_24,
     className: I.viewer
@@ -215,7 +215,7 @@ function L(e) {
         renderPopout: () => (0, r.jsx)(w, {
           participantType: s.type,
           handleUserContextMenu: G,
-          guildId: o,
+          guildId: a,
           channelId: t,
           users: M,
           disableInteraction: y
@@ -224,7 +224,7 @@ function L(e) {
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: T,
-          className: a()(I.viewers, d),
+          className: o()(I.viewers, d),
           children: Z
         })
       })

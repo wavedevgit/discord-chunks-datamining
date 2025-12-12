@@ -8,13 +8,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
   Chunk3957 = require("./3957.js"),
   Chunk279743 = require("./279743.jsx"),
-  Chunk334709 = require("./334709.js"),
-  Chunk702315 = require("./702315.js");
+  Chunk7822 = require("./7822.js"),
+  Chunk989093 = require("./989093.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,20 +47,20 @@ function _(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: d.header,
-    children: [(0, r.jsx)(a.Heading, {
+    children: [(0, r.jsx)(o.Heading, {
       variant: "text-md/medium",
       color: "text-strong",
       children: (0, r.jsx)("label", {
         htmlFor: i,
-        className: o()(d.title, {
+        className: a()(d.title, {
           [d.disabled]: s
         }),
         children: t
       })
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      className: o()(d.description, {
+      className: a()(d.description, {
         [d.disabled]: s
       }),
       children: n
@@ -74,7 +74,7 @@ function m(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(d.container, t),
+    className: a()(d.container, t),
     children: n
   })
 }
@@ -88,7 +88,7 @@ function h(e) {
   return (0, r.jsx)(s.F, {
     setting: t,
     children: (0, r.jsx)("div", {
-      className: o()(d.container, n),
+      className: a()(d.container, n),
       children: i
     })
   })
@@ -99,19 +99,19 @@ function g(e) {
     setting: t,
     className: n,
     children: i,
-    scrollPosition: a,
+    scrollPosition: o,
     scrollHighlightDelay: f
-  } = e, p = (0, l.a)(a);
+  } = e, p = (0, l.a)(o);
   return (0, r.jsx)(s.F, {
     setting: t,
     children: (0, r.jsxs)("div", {
-      className: o()(d.container, n, {
-        [u.settingsBackgroundFlashElement]: null != a
+      className: a()(d.container, n, {
+        [u.settingsBackgroundFlashElement]: null != o
       }),
       ref: p,
-      children: [i, null != a ? (0, r.jsx)(c.Z, {
+      children: [i, null != o ? (0, r.jsx)(c.Z, {
         animationDelay: f,
-        scrollPosition: a
+        scrollPosition: o
       }) : null]
     })
   })

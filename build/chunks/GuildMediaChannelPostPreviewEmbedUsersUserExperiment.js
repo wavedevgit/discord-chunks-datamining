@@ -2,12 +2,12 @@
 /** chunk id: 312146, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ui: () => a,
+  Ui: () => o,
   p$: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk981631 = require("./981631.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "guild",
   id: "2023-03_guild_media_channel",
   label: "Media Channel",
@@ -23,11 +23,11 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   var t;
   let {
     enabled: n
-  } = o.useExperiment({
+  } = a.useExperiment({
     guildId: null != (t = null == e ? true : e.id) ? t : i.lds,
     location: "96e84c_1"
   }, {

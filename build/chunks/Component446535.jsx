@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk485386 = require("./485386.js"),
   Chunk496675 = require("./496675.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk797966 = require("./797966.js");
+  Chunk180746 = require("./180746.js");
 let h = e => {
   let {
     guild: t,
@@ -31,7 +31,7 @@ let h = e => {
   let H = l.useCallback(() => {
       d.Z.prune(t.id, h, v), i()
     }, [t.id, h, v, i]),
-    _ = (0, a.Wu)([b.Z, m.Z], () => {
+    w = (0, a.Wu)([b.Z, m.Z], () => {
       let e = b.Z.getHighestRole(t);
       return o()(m.Z.getSortedRoles(t.id)).filter(n => !(0, C.fI)(n) && b.Z.isRoleHigher(t, e, n)).map(e => {
         let {
@@ -85,7 +85,7 @@ let h = e => {
           multi: true,
           value: v,
           onChange: e => y(e),
-          options: _
+          options: w
         })
       }), (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",

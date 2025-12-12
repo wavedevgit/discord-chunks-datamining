@@ -12,26 +12,26 @@ var Chunk473749 = require("./473749.js"),
 function o(e, t) {
   let A = (0, r.e7)([i.Z], () => i.Z.getGuildApplication(e, t)),
     [o, s] = n.useState(null == A),
-    [d, u] = n.useState(),
-    [c, g] = n.useState(false),
-    f = n.useCallback(async () => {
+    [d, c] = n.useState(),
+    [u, f] = n.useState(false),
+    g = n.useCallback(async () => {
       if (null == A && null != e) {
-        g(true), s(true);
+        f(true), s(true);
         try {
           await l.ZP.getApplicationsForGuild(e, {
             type: t,
             includeTeam: true
           })
         } catch (e) {
-          u(new a.Hx(e))
+          c(new a.Hx(e))
         } finally {
           s(false)
         }
       }
     }, [A, t, e]);
   return n.useEffect(() => {
-    c || f()
-  }, [c, f]), {
+    u || g()
+  }, [u, g]), {
     application: A,
     error: d,
     loading: o

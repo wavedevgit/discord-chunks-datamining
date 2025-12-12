@@ -26,7 +26,7 @@ var Chunk473749 = require("./473749.js"),
   f = function(e) {
     function t(t, n) {
       var r = e.call(this, t, n) || this,
-        i = r.handleExited.bind((0, o.Z)(r));
+        i = r.handleExited.bind((0, a.Z)(r));
       return r.state = {
         contextValue: {
           isMounting: true
@@ -34,7 +34,7 @@ var Chunk473749 = require("./473749.js"),
         handleExited: i,
         firstRender: true
       }, r
-    }(0, a.Z)(t, e);
+    }(0, o.Z)(t, e);
     var n = t.prototype;
     return n.componentDidMount = function() {
       this.mounted = true, this.setState({
@@ -64,13 +64,13 @@ var Chunk473749 = require("./473749.js"),
         t = e.component,
         n = e.childFactory,
         i = (0, r.Z)(e, ["component", "childFactory"]),
-        o = this.state.contextValue,
-        a = u(this.state.children).map(n);
+        a = this.state.contextValue,
+        o = u(this.state.children).map(n);
       return (delete i.appear, delete i.enter, delete i.exit, null === t) ? s.createElement(l.Z.Provider, {
-        value: o
-      }, a) : s.createElement(l.Z.Provider, {
-        value: o
-      }, s.createElement(t, i, a))
+        value: a
+      }, o) : s.createElement(l.Z.Provider, {
+        value: a
+      }, s.createElement(t, i, o))
     }, t
   }(Chunk473749.Component);
 f.propTypes = {}, f.defaultProps = d;

@@ -2,7 +2,7 @@
 /** chunk id: 330477, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  b: () => a
+  b: () => o
 }), require("./388685.js"), require("./539854.js");
 var Chunk836560 = require("./836560.js");
 
@@ -15,7 +15,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,7 +27,7 @@ function o(e) {
   }
   return e
 }
-class a {
+class o {
   safeDispatch(e) {
     for (var t, n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
     if (!this.hasSubscribers(e)) {
@@ -89,7 +89,7 @@ class a {
   }
   constructor(e = {}) {
     var t;
-    i(this, "emitter", new r.EventEmitter), i(this, "options", true), i(this, "_savedDispatches", {}), this.options = o({
+    i(this, "emitter", new r.EventEmitter), i(this, "options", true), i(this, "_savedDispatches", {}), this.options = a({
       maxListeners: 100,
       enableDevtools: false
     }, e);

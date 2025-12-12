@@ -1,4 +1,4 @@
-/** Chunk was on 74240 **/
+/** Chunk was on 93671 **/
 /** chunk id: 73880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q8: () => o,
@@ -17,18 +17,18 @@ function o(e) {
     value: t,
     placeholder: n,
     onChange: i,
-    disabled: a,
+    disabled: s,
     autofocus: o
   } = e;
   return (0, r.jsx)(l.Kx8, {
-    maxLength: s.RS,
+    maxLength: a.RS,
     value: null != t ? t : "",
     placeholder: null != n ? n : "",
     onChange: i,
-    disabled: a,
+    disabled: s,
     autoFocus: o,
     autosize: true,
-    showRemainingCharacterCount: !a
+    showRemainingCharacterCount: !s
   })
 }
 
@@ -57,7 +57,7 @@ function u(e) {
       value: t.response,
       onChange: l,
       autofocus: n,
-      placeholder: a.intl.string(a.t["Sqn+Wh"])
+      placeholder: s.intl.string(s.t["Sqn+Wh"])
     })
   })
 }

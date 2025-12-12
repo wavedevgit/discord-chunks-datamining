@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => i,
-  s: () => o
+  s: () => a
 });
 var Chunk981631 = require("./981631.js");
 
@@ -12,7 +12,7 @@ function i(e) {
   return (null == (t = e.messageReference) ? true : t.type) === r.Uvt.FORWARD
 }
 
-function o(e) {
+function a(e) {
   var t;
   return (null == (t = e.message_reference) ? true : t.type) === r.Uvt.FORWARD
 }

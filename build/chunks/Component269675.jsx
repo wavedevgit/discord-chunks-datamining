@@ -27,12 +27,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk807152 = require("./807152.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk183261 = require("./183261.js");
+  Chunk134792 = require("./134792.js");
 
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), P = (0, p.Z)(t), x = (0, E.Z)(t), A = (0, a.e7)([_.Z], () => _.Z.isSubscriptionFetching), Z = (0, b.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([g.Z], () => g.Z.isConnected()), P = (0, p.Z)(t), x = (0, _.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, E.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || A || L;
@@ -83,7 +83,7 @@ function P(e) {
   let {
     guildId: t
   } = e;
-  return (0, r.jsx)(b.l, {
+  return (0, r.jsx)(E.l, {
     guildId: t,
     refetchOnMount: true,
     children: (0, r.jsx)(j, {

@@ -39,7 +39,7 @@ function s(e) {
     open: f,
     onOpenChange: p,
     transform: d,
-    middleware: [null == s ? (0, o.X5)() : true, (0, o.dp)({
+    middleware: [null == s ? (0, a.X5)() : true, (0, a.dp)({
       apply(e) {
         let {
           rects: t,
@@ -54,8 +54,8 @@ function s(e) {
           maxHeight: "".concat(_.current(t.reference), "px")
         })
       }
-    }), (0, o.RR)(), (0, o.cv)(n), (0, o.uY)()],
-    whileElementsMounted: a.Me,
+    }), (0, a.RR)(), (0, a.cv)(n), (0, a.uY)()],
+    whileElementsMounted: o.Me,
     placement: s,
     strategy: "fixed"
   }), y = (0, i.bQ)(b, {

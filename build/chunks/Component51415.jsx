@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 51415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -9,10 +9,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk22095 = require("./22095.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk840846 = require("./840846.js");
+  Chunk192172 = require("./192172.js");
 let c = function() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk840846.container,
+    className: Chunk192172.container,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       color: "text-feedback-info",

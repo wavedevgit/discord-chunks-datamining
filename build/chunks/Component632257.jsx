@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,21 +20,21 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk125321 = require("./125321.js");
+  Chunk845761 = require("./845761.js");
 let b = e => {
     let {
       isAuthenticated: t,
       user: n
-    } = e, i = (0, _.I5)(n, h.PremiumTypes.TIER_2), a = (0, d.ZP)();
+    } = e, i = (0, _.I5)(n, h.PremiumTypes.TIER_2), o = (0, d.ZP)();
     return (0, r.jsx)(c.Z, {
       section: m.jXE.NAVIGATION,
       children: (0, r.jsx)(l.f6W, {
-        theme: a,
+        theme: o,
         children: e => (0, r.jsxs)(f.Z, {
           isAuthenticated: t,
-          className: o()(e, {
-            [E.headerBarV2LightBackground]: !i && !(0, s.wj)(a),
-            [E.headerBarV2DarkBackground]: !i && (0, s.wj)(a)
+          className: a()(e, {
+            [E.headerBarV2LightBackground]: !i && !(0, s.wj)(o),
+            [E.headerBarV2DarkBackground]: !i && (0, s.wj)(o)
           }),
           role: "navigation",
           children: [(0, r.jsx)(f.Z.Icon, {

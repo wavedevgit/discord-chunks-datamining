@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 38703, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk407810 = require("./407810.js");
+  Chunk163022 = require("./163022.js");
 
-function h(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,21 +37,21 @@ function h(e) {
   return e
 }
 
-function x() {
+function h() {
   let e = (0, Chunk442837.e7)([Chunk926958.Z], () => Chunk926958.Z.getEditedConnections()),
     t = (0, Chunk442837.e7)([Chunk926958.Z], () => Chunk926958.Z.isSubmitting()),
-    x = Chunk473749.useCallback(() => {
+    h = Chunk473749.useCallback(() => {
       (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
         } = await require.e("11798").then(require.bind(require, 8656));
-        return t => (0, r.jsx)(e, h({}, t))
+        return t => (0, r.jsx)(e, p({}, t))
       })
     }, []),
-    b = Chunk473749.useMemo(() => module.map(e => {
+    x = Chunk473749.useMemo(() => module.map(e => {
       var t, n;
-      return t = h({}, e), n = n = {
-        id: (0, m.a4)(e)
+      return t = p({}, e), n = n = {
+        id: (0, f.a4)(e)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -87,16 +87,16 @@ function x() {
       (0, c.l_)(t)
     }, []),
     {
-      handleDragStart: _,
-      handleDragReset: v,
-      handleDragComplete: O,
-      draggingId: C
-    } = (0, Chunk710344.Z)(b, j),
-    y = module.length < Chunk290511.yx;
+      handleDragStart: v,
+      handleDragReset: O,
+      handleDragComplete: C,
+      draggingId: y
+    } = (0, Chunk710344.Z)(x, j),
+    N = module.length < Chunk290511.yx;
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk407810.connectionsSection,
+    className: Chunk163022.connectionsSection,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk407810.connectionsSectionHeader,
+      className: Chunk163022.connectionsSectionHeader,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/bold",
         children: Chunk388032.intl.string(Chunk388032.t.Cl8F8H)
@@ -106,7 +106,7 @@ function x() {
         children: Chunk388032.intl.format(Chunk388032.t.vqgyJR, {
           linkedRolesUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CONNECTION_DETAILS_ADMIN)
         })
-      }), !y && (0, Chunk54381.jsx)(Chunk481060.Text, {
+      }), !N && (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         children: Chunk388032.intl.format(Chunk388032.t.Nc7guW, {
@@ -114,19 +114,19 @@ function x() {
         })
       })]
     }), module.length > 0 && (0, Chunk54381.jsx)("div", {
-      className: Chunk407810.connectionsList,
-      children: b.map((e, t) => (0, r.jsx)(d.Z, {
+      className: Chunk163022.connectionsList,
+      children: x.map((e, t) => (0, r.jsx)(u.Z, {
         connection: e,
         index: t,
-        onDragStart: _,
-        onDragReset: v,
-        onDragComplete: O,
-        draggingId: C
+        onDragStart: v,
+        onDragReset: O,
+        onDragComplete: C,
+        draggingId: y
       }, e.id))
     }), (0, Chunk54381.jsxs)("button", {
-      className: Chunk407810.addConnectionButton,
-      onClick: x,
-      disabled: !y || exports,
+      className: Chunk163022.addConnectionButton,
+      onClick: h,
+      disabled: !N || exports,
       type: "button",
       children: [(0, Chunk54381.jsx)(Chunk481060.oFk, {
         size: "custom",

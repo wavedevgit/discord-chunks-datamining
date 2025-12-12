@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 823873, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,29 +11,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk924301 = require("./924301.js"),
   Chunk725436 = require("./725436.js"),
   Chunk79874 = require("./79874.js"),
-  Chunk376108 = require("./376108.js"),
+  Chunk315416 = require("./315416.js"),
   Chunk230900 = require("./230900.js"),
   Chunk854698 = require("./854698.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk372539 = require("./372539.js");
+  Chunk617821 = require("./617821.js");
 
-function b(e) {
+function E(e) {
   var t, n;
   let {
-    eventId: b
-  } = e, E = (0, l.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(b), [b]), O = (0, l.e7)([h.Z], () => h.Z.getGuild(null == E ? true : E.guild_id), [E]), v = (0, l.e7)([g.Z], () => g.Z.getChannel(null == E ? true : E.channel_id), [E]), y = (0, u.zI)(b, null), I = null != E && (0, o.xt)(E), C = null != E ? (0, f.DK)(E) : null, S = (0, d.Z)(null == E ? true : E.guild_id, null == E ? true : E.id, C), T = null == y ? true : y.startTime.toISOString(), {
+    eventId: E
+  } = e, _ = (0, l.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(E), [E]), O = (0, l.e7)([h.Z], () => h.Z.getGuild(null == _ ? true : _.guild_id), [_]), v = (0, l.e7)([g.Z], () => g.Z.getChannel(null == _ ? true : _.channel_id), [_]), y = (0, u.zI)(E, null), I = null != _ && (0, o.xt)(_), C = null != _ ? (0, f.DK)(_) : null, S = (0, d.Z)(null == _ ? true : _.guild_id, null == _ ? true : _.id, C), T = null == y ? true : y.startTime.toISOString(), {
     startDateTimeString: N
   } = i.useMemo(() => I ? {
     startDateTimeString: m.intl.string(m.t.TxqPQR)
-  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, I]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == v ? true : v.name) ? t : j, x = null != v ? (0, s.KS)(v) : null;
-  if (null == E || null == O) return null;
-  let A = null != E.description && E.description.length > 0;
+  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, I]), j = null != _ ? (0, p.cS)(_) : true, P = null != (t = null == v ? true : v.name) ? t : j, x = null != v ? (0, s.KS)(v) : null;
+  if (null == _ || null == O) return null;
+  let A = null != _.description && _.description.length > 0;
   return (0, r.jsxs)("div", {
-    className: _.eventContainer,
+    className: b.eventContainer,
     children: [(0, r.jsx)("div", {
-      className: _.eventTimeAndUser,
+      className: b.eventTimeAndUser,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/semibold",
         color: I ? "status-positive" : "text-brand",
@@ -41,21 +41,21 @@ function b(e) {
       })
     }), (0, r.jsx)(a.Text, {
       variant: "text-lg/semibold",
-      className: A ? _.eventTitle : true,
-      children: E.name
+      className: A ? b.eventTitle : true,
+      children: _.name
     }), A && (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
-      className: _.eventDescription,
-      children: (0, c.m)(null != (n = E.description) ? n : "", true, {
+      className: b.eventDescription,
+      children: (0, c.m)(null != (n = _.description) ? n : "", true, {
         guildId: O.id
       })
     }), (0, r.jsx)("hr", {
-      className: _.eventDivider
+      className: b.eventDivider
     }), (0, r.jsxs)("div", {
-      className: _.eventInfoContainer,
+      className: b.eventInfoContainer,
       children: [(0, r.jsxs)("div", {
-        className: _.eventLocationRow,
+        className: b.eventLocationRow,
         children: [(0, r.jsx)(a.BFJ, {
           size: "xs",
           color: "currentColor"
@@ -67,14 +67,14 @@ function b(e) {
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: _.eventLocationRow,
+        className: b.eventLocationRow,
         children: [null != x ? (0, r.jsx)(x, {
           size: "xs",
           color: "currentColor"
         }) : null, (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          className: _.eventLocationText,
+          className: b.eventLocationText,
           children: null != P ? (0, c.m)(P, true) : null
         })]
       })]

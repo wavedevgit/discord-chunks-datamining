@@ -13,8 +13,8 @@ var Chunk512722 = require("./512722.js"),
 
 function s(e, t) {
   var n;
-  i()(e.item.platform === o.ow.WEB, "Upload must be in the Web format");
-  let r = (0, a.B)(e, t);
+  i()(e.item.platform === a.ow.WEB, "Upload must be in the Web format");
+  let r = (0, o.B)(e, t);
   return Promise.resolve({
     file: e.item.file,
     name: null != (n = r.filename) ? n : ""

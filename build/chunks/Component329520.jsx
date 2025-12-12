@@ -53,7 +53,7 @@ function y(e) {
     hideText: y = false,
     hideTooltip: O = false,
     canTruncate: v = true
-  } = e, S = (0, o.e7)([d.Z], () => d.Z.getChannel(t.channelId)), I = (0, c.ZP)(S), {
+  } = e, S = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), I = (0, c.ZP)(S), {
     analyticsLocations: T
   } = (0, s.ZP)(), C = i.useCallback(() => {
     (0, f.A)({
@@ -68,7 +68,7 @@ function y(e) {
     P = !O && null != S && null != I;
   return (0, r.jsxs)(r.Fragment, {
     children: [!b && (0, r.jsx)(p.Z, {
-      icon: a.ARS,
+      icon: o.ARS,
       tooltipText: P ? I : true,
       tooltipAriaLabel: P ? (0, l.ZP)({
         channel: S
@@ -97,12 +97,12 @@ function O(e) {
     hideTooltip: _ = false,
     canTruncate: h = true,
     showChannelName: E = false
-  } = e, b = (0, o.e7)([d.Z], () => d.Z.getChannel(t.channelId)), y = (0, c.ZP)(b), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, v = null != O ? O : g.intl.string(g.t.eXan7B), S = null != O ? O : g.intl.string(g.t.eXan7B), I = null != y ? (0, r.jsxs)(r.Fragment, {
+  } = e, b = (0, a.e7)([d.Z], () => d.Z.getChannel(t.channelId)), y = (0, c.ZP)(b), O = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, v = null != O ? O : g.intl.string(g.t.eXan7B), S = null != O ? O : g.intl.string(g.t.eXan7B), I = null != y ? (0, r.jsxs)(r.Fragment, {
     children: [v, " (", y, ")"]
   }) : v, T = E ? I : v, C = null != y ? "".concat(S, " (").concat(y, ")") : S;
   return (0, r.jsx)(m.Z, {
     icon: u ? true : (0, r.jsx)(p.Z, {
-      icon: a.ARS,
+      icon: o.ARS,
       className: l
     }),
     text: T,

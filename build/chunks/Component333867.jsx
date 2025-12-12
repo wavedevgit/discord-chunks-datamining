@@ -63,8 +63,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let S = "payment-modal",
@@ -100,7 +100,7 @@ function C(e) {
     },
     j = g ? I : S,
     M = f.default.getCurrentUser();
-  if (!(null == M ? true : M.verified)) return void(0, o.ZDy)(async () => {
+  if (!(null == M ? true : M.verified)) return void(0, a.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -115,8 +115,8 @@ function C(e) {
       }))
     }
   });
-  a.Z.wait(() => {
-    a.Z.dispatch({
+  o.Z.wait(() => {
+    o.Z.dispatch({
       type: "PAYMENT_MODAL_OPEN"
     })
   });
@@ -136,7 +136,7 @@ function C(e) {
       variantsReturnStyle: w
     })
   }, G = () => {
-    null != t && T.has(t) && (0, o.Mr3)(j)
+    null != t && T.has(t) && (0, a.Mr3)(j)
   }, Z = {
     loadId: x,
     skuId: u,
@@ -163,8 +163,8 @@ let A = e => {
       skuId: n,
       analyticsLocations: r,
       onStepChange: i,
-      modalKey: o,
-      isGift: a = false,
+      modalKey: a,
+      isGift: o = false,
       giftMessage: s,
       giftingOrigin: l,
       giftRecipient: c,
@@ -178,7 +178,7 @@ let A = e => {
       skuId: n,
       analyticsLocations: r,
       giftContextProps: {
-        isGift: a,
+        isGift: o,
         giftMessage: s,
         giftingOrigin: l,
         giftRecipient: c
@@ -189,7 +189,7 @@ let A = e => {
         onStepChange: i
       },
       openModalOptions: {
-        modalKey: o,
+        modalKey: a,
         onCloseCallback: f,
         onCloseRequest: p
       }
@@ -200,7 +200,7 @@ let A = e => {
       loadId: t,
       skuId: n,
       analyticsLocations: i,
-      onStepChange: a,
+      onStepChange: o,
       modalKey: s,
       isGift: l = false,
       giftMessage: c,
@@ -211,9 +211,9 @@ let A = e => {
       onCloseRequest: _,
       onComplete: h
     } = e;
-    return (0, o.ZDy)(async () => e => {
+    return (0, a.ZDy)(async () => e => {
       var {
-        onClose: o,
+        onClose: a,
         returnRef: s
       } = e, p = O(e, ["onClose", "returnRef"]);
       return (0, r.jsx)(m.ZP, y(E({}, p), {
@@ -225,11 +225,11 @@ let A = e => {
         analyticsLocations: i,
         giftRecipient: d,
         onClose: e => {
-          o(), null == f || f(e)
+          a(), null == f || f(e)
         },
         onComplete: h,
         returnRef: s,
-        onStepChange: a
+        onStepChange: o
       }))
     }, {
       modalKey: s,

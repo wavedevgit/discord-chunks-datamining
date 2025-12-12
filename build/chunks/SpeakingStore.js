@@ -44,8 +44,8 @@ function v(e, t) {
 }
 
 function S(e, t, n) {
-  var r, i, o;
-  return ((null != (o = null == (i = m.get(e)) || null == (r = i.get(t)) ? true : r.flags) ? o : p.Dg.NONE) & n) === n
+  var r, i, a;
+  return ((null != (a = null == (i = m.get(e)) || null == (r = i.get(t)) ? true : r.flags) ? a : p.Dg.NONE) & n) === n
 }
 
 function I(e, t) {
@@ -61,20 +61,20 @@ function I(e, t) {
 
 function T(e, t, n) {
   var r, i;
-  let o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : false / 0,
-    a = O(e),
-    s = a.get(t),
+  let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : false / 0,
+    o = O(e),
+    s = o.get(t),
     l = null != (r = null == s ? true : s.flags) ? r : 0;
   if (0 === l && 0 === n) returnfalse;
-  if (0 === n) a.delete(t), 0 === a.size && m.delete(e);
+  if (0 === n) o.delete(t), 0 === o.size && m.delete(e);
   else {
     let e = null != (i = null == s ? true : s.since) ? i : null,
       r = (l & p.Dg.VOICE) === p.Dg.VOICE,
       c = (n & p.Dg.VOICE) === p.Dg.VOICE;
-    r !== c && (e = c ? Date.now() : null), a.set(t, {
+    r !== c && (e = c ? Date.now() : null), o.set(t, {
       flags: n,
       since: e,
-      voiceDb: o
+      voiceDb: a
     })
   }
   returntrue
@@ -115,8 +115,8 @@ function N(e) {
       userId: n,
       channelId: r,
       sessionId: i
-    } = t, o = false, a = E;
-    return n === h && i === g && (E = null != r ? r : null), a !== E && (o = m.delete(p.Yn.DEFAULT) || o), null == r ? o = n === h && i === g ? m.delete(p.Yn.DEFAULT) || o : v(p.Yn.DEFAULT, n) || o : n === h && i !== g ? o = m.delete(p.Yn.DEFAULT) || o : n !== h && r !== u.Z.getChannelId() && (o = v(p.Yn.DEFAULT, n) || o), o || e
+    } = t, a = false, o = E;
+    return n === h && i === g && (E = null != r ? r : null), o !== E && (a = m.delete(p.Yn.DEFAULT) || a), null == r ? a = n === h && i === g ? m.delete(p.Yn.DEFAULT) || a : v(p.Yn.DEFAULT, n) || a : n === h && i !== g ? a = m.delete(p.Yn.DEFAULT) || a : n !== h && r !== u.Z.getChannelId() && (a = v(p.Yn.DEFAULT, n) || a), a || e
   }, false)
 }
 
@@ -134,8 +134,8 @@ class R extends(r = Chunk442837.ZP.Store) {
   getSpeakingDuration(e, t) {
     var n, r;
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : p.Yn.DEFAULT,
-      o = null == (r = m.get(i)) || null == (n = r.get(e)) ? true : n.since;
-    return null != o ? t - o : 0
+      a = null == (r = m.get(i)) || null == (n = r.get(e)) ? true : n.since;
+    return null != a ? t - a : 0
   }
   getSpeakers() {
     var e, t;
@@ -183,7 +183,7 @@ class R extends(r = Chunk442837.ZP.Store) {
   getVoiceVolume(e) {
     var t, n, r;
     let i = arguments.length > 1 && true !== arguments[1] ? arguments[1] : p.Yn.DEFAULT;
-    return (0, a.h)({
+    return (0, o.h)({
       location: "SpeakingStore"
     }).enabled && null != (r = null == (n = m.get(i)) || null == (t = n.get(e)) ? true : t.voiceDb) ? r : false / 0
   }

@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 748855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => f
+  L: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,19 +12,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk106301 = require("./106301.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk948790 = require("./948790.js"),
-  Chunk334405 = require("./334405.js");
+  Chunk227426 = require("./227426.js"),
+  Chunk564546 = require("./564546.js");
 
-function f(e) {
+function h(e) {
   let {
     label: t,
     icon: n,
     setStatus: l,
-    isFavorited: f,
+    isFavorited: h,
     onFavoriteClick: m
   } = e, [g, b] = r.useState(false), C = (0, o.e7)([u.Z], () => u.Z.getFavoritedStatuses().length >= u.o), y = r.useCallback(e => {
     e.stopPropagation(), null == m || m()
-  }, [m]), v = f ? c.r7p : c.vxU;
+  }, [m]), v = h ? c.r7p : c.vxU;
   return (0, i.jsxs)(c.P3F, {
     onClick: l,
     onMouseEnter: () => {
@@ -33,14 +33,14 @@ function f(e) {
     onMouseLeave: () => {
       b(false)
     },
-    className: a()(h.item, h.labelContainer, p.container),
+    className: a()(f.item, f.labelContainer, p.container),
     children: [n, (0, i.jsx)(c.Text, {
       variant: "text-md/normal",
       className: p.itemText,
       children: t
     }), g && null != m && (0, i.jsx)(c.aML, {
       "data-migration-pending": true,
-      text: C && !f ? d.intl.string(d.t.YSDH9n) : true,
+      text: C && !h ? d.intl.string(d.t.YSDH9n) : true,
       children: e => {
         var t, n;
         return (0, i.jsx)(c.P3F, (t = function(e) {
@@ -65,7 +65,7 @@ function f(e) {
           onClick: y,
           children: (0, i.jsx)(v, {
             className: p.closeIcon,
-            color: f ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
+            color: h ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

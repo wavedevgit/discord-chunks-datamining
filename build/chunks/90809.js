@@ -32,7 +32,7 @@ function p(e, t, n) {
     }
   } = r.B.get(t), S = (0, u.useRef)(null), I = () => {
     if (n.current) {
-      let e = (0, a.QL)(n.current);
+      let e = (0, o.QL)(n.current);
       if ("child" === g) {
         if (n.current.contains(document.activeElement) && n.current !== document.activeElement) return;
         let r = "last" === t.selectionManager.childFocusStrategy ? _(e) : e.firstChild();
@@ -52,9 +52,9 @@ function p(e, t, n) {
     onAction: v ? () => v(m.key) : b,
     isDisabled: 0 === t.collection.size
   }), A = e => {
-    var r, o, c, u, d;
+    var r, a, c, u, d;
     if (!e.currentTarget.contains(e.target) || t.isKeyboardNavigationDisabled || !n.current || !document.activeElement) return;
-    let f = (0, a.QL)(n.current);
+    let f = (0, o.QL)(n.current);
     switch (f.currentNode = document.activeElement, e.key) {
       case "ArrowLeft": {
         let t = "rtl" === y ? f.nextNode() : f.previousNode();
@@ -63,7 +63,7 @@ function p(e, t, n) {
         });
         else {
           if ((null == (r = O.getKeyLeftOf) ? true : r.call(O, m.key)) !== m.key) {
-            null == (o = n.current.parentElement) || o.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent));
+            null == (a = n.current.parentElement) || a.dispatchEvent(new KeyboardEvent(e.nativeEvent.type, e.nativeEvent));
             break
           }
           "cell" === g && "rtl" === y ? ((0, i.e)(n.current), (0, s.G)(n.current, {
@@ -98,7 +98,7 @@ function p(e, t, n) {
     }
   }, N = e => {
     if (S.current = m.key, e.target !== n.current) {
-      (0, o.E)() || t.selectionManager.setFocusedKey(m.key);
+      (0, a.E)() || t.selectionManager.setFocusedKey(m.key);
       return
     }
     requestAnimationFrame(() => {

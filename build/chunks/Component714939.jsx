@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 714939, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk313905 = require("./313905.js");
+  Chunk788652 = require("./788652.js");
 
 function o(e) {
   let {
@@ -17,10 +17,10 @@ function o(e) {
     onClick: n
   } = e;
   return (0, r.jsxs)(i.P3F, {
-    className: a.container,
+    className: s.container,
     onClick: n,
     children: [(0, r.jsx)("div", {
-      className: a.icon,
+      className: s.icon,
       children: (0, r.jsx)(i.BFJ, {
         size: "custom",
         color: "currentColor",
@@ -28,19 +28,19 @@ function o(e) {
         height: 20
       })
     }), (0, r.jsxs)("div", {
-      className: a.description,
+      className: s.description,
       children: [(0, r.jsx)(i.Text, {
-        className: a.label,
+        className: s.label,
         color: "none",
         variant: "text-md/bold",
-        children: s.intl.string(s.t.yiaoNr)
+        children: a.intl.string(a.t.yiaoNr)
       }), (0, r.jsxs)(i.Text, {
         color: "none",
         variant: "text-xs/normal",
-        children: [t.name, " • ", s.intl.string(s.t.JwYI3O)]
+        children: [t.name, " • ", a.intl.string(a.t.JwYI3O)]
       })]
     }), (0, r.jsx)(l.Z, {
-      className: a.arrow,
+      className: s.arrow,
       direction: l.Z.Directions.RIGHT
     })]
   })

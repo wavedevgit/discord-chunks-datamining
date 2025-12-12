@@ -28,9 +28,9 @@ require.d(exports, {
   Ky: () => l,
   RF: () => c
 }), require("./388685.js"), require("./35282.js");
-let o = {};
+let a = {};
 
-function a(e, t) {
+function o(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
@@ -40,18 +40,18 @@ function s(e) {
 }
 
 function l(e, t) {
-  return o[a(e, t)]
+  return a[o(e, t)]
 }
 
 function c(e, t, n) {
-  let r = a(e, t);
-  o[r] = i({}, o[r], n)
+  let r = o(e, t);
+  a[r] = i({}, a[r], n)
 }
 
 function u(e) {
-  for (let t in o) {
+  for (let t in a) {
     let [n, r] = s(t);
-    e(n, r, o[t])
+    e(n, r, a[t])
   }
-  o = {}
+  a = {}
 }

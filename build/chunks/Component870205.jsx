@@ -63,13 +63,13 @@ function p(e) {
     case s.bS.ALPHABETICAL:
       t = l.intl.string(l.t.m8xsti)
   }
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: d,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.Z, {
+      return (0, r.jsx)(o.Z, {
         sortOrder: n,
         onSortOptionClick: c,
         closePopout: t
@@ -77,12 +77,12 @@ function p(e) {
     },
     position: "bottom",
     align: "left",
-    children: e => (0, r.jsx)(o.Button, f(u({}, e), {
+    children: e => (0, r.jsx)(a.Button, f(u({}, e), {
       buttonRef: d,
       size: "sm",
       variant: "secondary",
       "aria-label": l.intl.string(l.t.yeYaHf),
-      icon: o.uVW,
+      icon: a.uVW,
       text: t
     }))
   })

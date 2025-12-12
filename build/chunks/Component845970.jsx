@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk528027 = require("./528027.jsx"),
   Chunk686807 = require("./686807.jsx"),
   Chunk113318 = require("./113318.js"),
-  Chunk685172 = require("./685172.js");
+  Chunk678238 = require("./678238.js");
 
 function d(e) {
   let {
@@ -22,18 +22,18 @@ function d(e) {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
-  }), f = null != i ? (0, r.jsx)(a.P3F, {
+  }), f = null != i ? (0, r.jsx)(o.P3F, {
     className: u.__invalid_channelLink,
     onClick: i.navigateToChannel,
     "aria-label": i.ariaLabel,
     role: "link",
-    children: (0, r.jsx)(a.Text, {
+    children: (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-strong",
-      className: o()(u.name, u.linkedName),
+      className: a()(u.name, u.linkedName),
       children: (0, l.Z)(t)
     })
-  }) : (0, r.jsx)(a.Text, {
+  }) : (0, r.jsx)(o.Text, {
     variant: "text-md/medium",
     color: "text-strong",
     className: u.name,
@@ -43,7 +43,7 @@ function d(e) {
     className: u.container,
     children: [(0, r.jsxs)("div", {
       className: u.infoContainer,
-      children: [f, (0, r.jsx)(a.Text, {
+      children: [f, (0, r.jsx)(o.Text, {
         color: "interactive-text-default",
         variant: "text-sm/normal",
         children: t.description

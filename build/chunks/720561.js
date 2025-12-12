@@ -3,5 +3,5 @@
 "use strict";
 var Chunk127849 = require("./127849.js"),
   Chunk880181 = require("./880181.js"),
-  o = Chunk127849.WeakMap;
-module.exports = Chunk880181(o) && /native code/.test(String(o))
+  a = Chunk127849.WeakMap;
+module.exports = Chunk880181(a) && /native code/.test(String(a))

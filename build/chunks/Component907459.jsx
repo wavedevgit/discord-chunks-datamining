@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk755721 = require("./755721.js"),
@@ -32,16 +32,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk164161 = require("./164161.js");
+  Chunk610494 = require("./610494.js");
 let D = () => {
     var e, t, n;
     let i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremium(Chunk594174.default.getCurrentUser())),
-      o = (0, Chunk639119.N)(),
-      a = (null == Chunk120356 || null == (e = Chunk120356.subscription_trial) ? true : module.sku_id) === Chunk474936.Si.TIER_2;
+      a = (0, Chunk639119.N)(),
+      o = (null == Chunk120356 || null == (e = Chunk120356.subscription_trial) ? true : module.sku_id) === Chunk474936.Si.TIER_2;
     return (0, Chunk54381.jsx)(Chunk767714.Z, {
       size: Chunk755721.zx.Sizes.MEDIUM,
       textOptions: {
-        textOverride: Chunk473749 ? Chunk388032.intl.string(Chunk388032.t.IJI7yk) : a ? (0, Chunk74538.Rt)({
+        textOverride: Chunk473749 ? Chunk388032.intl.string(Chunk388032.t.IJI7yk) : o ? (0, Chunk74538.Rt)({
           intervalType: null == Chunk120356 || null == (t = Chunk120356.subscription_trial) ? true : exports.interval,
           intervalCount: null == Chunk120356 || null == (n = Chunk120356.subscription_trial) ? true : require.interval_count
         }) : Chunk388032.intl.string(Chunk388032.t.mr4K7D)
@@ -80,7 +80,7 @@ let D = () => {
     let {
       isCoachmark: t,
       markAsDismissed: n
-    } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), o = () => {
+    } = e, i = (0, s.e7)([T.Z], () => T.Z.isUpsellPreview), a = () => {
       null == n || n(N.L.DISMISS), (0, m.Ll)(), (0, I.O)(), t || (0, y.openUserSettings)(b.n.APPEARANCE_PANEL, {
         section: A.oAB.APPEARANCE
       })
@@ -88,7 +88,7 @@ let D = () => {
     return (0, r.jsxs)("div", {
       className: w.editorFooter,
       children: [i && (0, r.jsx)(D, {}), (0, r.jsx)(l.zxk, {
-        onClick: o,
+        onClick: a,
         variant: "secondary",
         fullWidth: true,
         text: i || t ? R.intl.string(R.t["dqH+qr"]) : R.intl.string(R.t.Olc2K3)
@@ -101,7 +101,7 @@ function j(e) {
     isCoachmark: t,
     markAsDismissed: n
   } = e, {
-    analyticsLocations: o
+    analyticsLocations: a
   } = (0, _.ZP)(p.Z.APP_ICON_EDITOR), l = (0, s.e7)([O.default], () => O.default.getCurrentUser()), {
     isUpsellPreview: c,
     shouldEditorAnimate: h
@@ -112,17 +112,17 @@ function j(e) {
   i.useEffect(() => {
     c && v.default.track(A.rMx.PREMIUM_UPSELL_VIEWED, {
       type: P.cd.APP_ICON_UPSELL,
-      location_stack: o
+      location_stack: a
     })
-  }, [c, o]);
+  }, [c, a]);
   let E = (0, d.Z)(null, c ? I.O : A.dG4);
   return (i.useEffect(() => {
     if (c && !g) return I.O
   }, [c, g]), null == l) ? null : (0, r.jsx)(_.Gt, {
-    value: o,
+    value: a,
     children: (0, r.jsx)("div", {
       ref: E,
-      className: a()(w.editor, h ? w.editorAnimate : null),
+      className: o()(w.editor, h ? w.editorAnimate : null),
       "data-app-right-panel": true,
       children: (0, r.jsxs)(u.y5t, {
         children: [(0, r.jsx)(x, {

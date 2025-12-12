@@ -22,8 +22,8 @@ function l(e) {
   var t, n;
   let {
     game: r
-  } = e, s = i.ZP.isDetectionEnabled(r), l = null != (n = r.id) ? n : null == (t = o.Z.getGameByName(r.name)) ? true : t.id;
-  null != l && (0, a.M)(l, s)
+  } = e, s = i.ZP.isDetectionEnabled(r), l = null != (n = r.id) ? n : null == (t = a.Z.getGameByName(r.name)) ? true : t.id;
+  null != l && (0, o.M)(l, s)
 }
 class c extends Chunk147913.Z {
   constructor(...e) {

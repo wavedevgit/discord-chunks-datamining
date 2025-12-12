@@ -10,27 +10,27 @@ var Chunk313789 = require("./313789.js"),
   Chunk51144 = require("./51144.js"),
   Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk941651 = require("./941651.js"),
+  Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (e, t) => {
     var n;
     if (null == t) return null;
     let r = null == (n = t.recipients) ? true : n.find(t => t !== e.id),
-      i = o.default.getUser(r);
-    return null == i ? null : (0, a.XM)(i)
+      i = a.default.getUser(r);
+    return null == i ? null : (0, o.XM)(i)
   },
   f = e => {
     let t, n, {
-        sender: o,
+        sender: a,
         channel: f,
         isSender: p,
         inviteState: _
       } = e,
       m = (0, s.sO)();
     if (p) {
-      let e = d(o, f);
+      let e = d(a, f);
       if (null == e) return null;
-      let a = u.intl.format(c.default.MkcFjx, {
+      let o = u.intl.format(c.default.MkcFjx, {
         receiverName: e,
         premiumGroupProductName: m
       });
@@ -65,12 +65,12 @@ let d = (e, t) => {
           })
       }
       return {
-        message: a,
+        message: o,
         header: t,
         body: n
       }
     } else {
-      let e = (0, a.XM)(o),
+      let e = (0, o.XM)(a),
         r = u.intl.format(c.default["51Kv/4"], {
           senderName: e,
           premiumGroupProductName: m,

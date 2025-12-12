@@ -41,7 +41,7 @@ module.exports = function(e) {
         relevance: 0
       }]
     },
-    o = [{
+    a = [{
       className: "params",
       begin: /\(/,
       end: /\)/,
@@ -54,7 +54,7 @@ module.exports = function(e) {
         begin: /\.\.\./
       }, e.C_NUMBER_MODE, e.C_BLOCK_COMMENT_MODE, n, i]
     }],
-    a = {
+    o = {
       className: "title",
       begin: e.UNDERSCORE_IDENT_RE,
       relevance: 0
@@ -65,9 +65,9 @@ module.exports = function(e) {
         beginKeywords: t,
         end: r,
         excludeEnd: true,
-        contains: [].concat(o)
+        contains: [].concat(a)
       }, {});
-      return s.contains.push(a), s.contains.push(e.C_NUMBER_MODE), s.contains.push(e.C_BLOCK_COMMENT_MODE), s.contains.push(n), s
+      return s.contains.push(o), s.contains.push(e.C_NUMBER_MODE), s.contains.push(e.C_BLOCK_COMMENT_MODE), s.contains.push(n), s
     },
     l = {
       className: "built_in",

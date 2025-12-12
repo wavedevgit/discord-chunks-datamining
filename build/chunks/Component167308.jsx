@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 167308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk444134 = require("./444134.jsx"),
   Chunk836831 = require("./836831.jsx"),
   Chunk324805 = require("./324805.js"),
-  Chunk835343 = require("./835343.js");
+  Chunk674293 = require("./674293.js");
 let m = e => {
   let {
     contentLocation: t,
@@ -20,18 +20,18 @@ let m = e => {
     progressBarRef: m,
     isExpanded: p,
     percentComplete: h,
-    activeScreen: x,
-    popoutTargetElementRef: f,
-    onGameSheetOpened: g,
-    onGameSheetClosed: b
+    activeScreen: f,
+    popoutTargetElementRef: x,
+    onGameSheetOpened: b,
+    onGameSheetClosed: g
   } = e, v = (0, l.eQ)(n), j = (0, l.vf)({
     quest: n,
     isExpanded: p,
-    activeScreen: x,
+    activeScreen: f,
     sourceQuestContent: i.jn.QUEST_BAR_V2,
-    popoutTargetElementRef: f,
-    onGameSheetOpened: g,
-    onGameSheetClosed: b
+    popoutTargetElementRef: x,
+    onGameSheetOpened: b,
+    onGameSheetClosed: g
   });
   return (0, a.jsxs)("div", {
     className: u.questProgressWrapper,

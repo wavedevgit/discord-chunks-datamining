@@ -1,10 +1,10 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 743475, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  BG: () => f,
-  DO: () => x,
-  pt: () => h
+  BG: () => b,
+  DO: () => h,
+  pt: () => p
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -19,34 +19,34 @@ var Chunk570140 = require("./570140.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }
 
-function h(e) {
+function p(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
   })
 }
-async function x(e) {
-  let t = Array.from(u.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
+async function h(e) {
+  let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = g.Z.advancedMode,
-    [f, h] = (0, a.d9)(e.id, [...t]),
-    x = (0, a.kl)(e.id, t, g.Z.editedOnboardingPrompts),
-    b = (0, a.kl)(e.id, t, g.Z.editedOnboardingPrompts, a.V7);
-  if (s.Z.getEnabled(e.id) && (!n && (h.length < m.md || f.length < m.X) || n && (x.length < m.md || b.length < m.X))) return void i.Z.show({
-    title: p.intl.string(p.t.iLdiqY),
-    body: p.intl.string(p.t.JOT74c)
+    [b, p] = (0, s.d9)(e.id, [...t]),
+    h = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
+    x = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
+  if (a.Z.getEnabled(e.id) && (!n && (p.length < f.md || b.length < f.X) || n && (h.length < f.md || x.length < f.X))) return void i.Z.show({
+    title: m.intl.string(m.t.iLdiqY),
+    body: m.intl.string(m.t.JOT74c)
   });
-  if (u.Z.hasChanges()) {
+  if (d.Z.hasChanges()) {
     r.Z.dispatch({
       type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SUBMIT"
     });
     try {
-      await (0, d.n_)(e.id, {
+      await (0, u.n_)(e.id, {
         default_channel_ids: t
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS",
@@ -60,7 +60,7 @@ async function x(e) {
         error: t
       } = null != (j = new l.Hx(n).getAnyErrorMessageAndField()) ? j : {};
       i.Z.show({
-        title: p.intl.string(p.t.iLdiqY),
+        title: m.intl.string(m.t.iLdiqY),
         body: [e, t].filter(c.lm).join(": ")
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_FAILED"

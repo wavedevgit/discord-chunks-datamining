@@ -6,10 +6,10 @@ require.d(exports, {
 });
 var Chunk836560 = require("./836560.js");
 let i = 160,
-  o = 500;
-var a = function(e) {
+  a = 500;
+var o = function(e) {
   return e.VERTICAL = "vertical", e.HORIZONTAL = "horizontal", e
-}(a || {});
+}(o || {});
 let s = {
   open: false,
   orientation: null
@@ -32,7 +32,7 @@ function c() {
 }
 class u extends Chunk836560.EventEmitter {
   get orientations() {
-    return Object.values(a)
+    return Object.values(o)
   }
   get state() {
     return s
@@ -50,6 +50,6 @@ class u extends Chunk836560.EventEmitter {
     } else s.open && (s.open = false, this.emit("changed", s))
   }
   constructor() {
-    super(), setInterval(() => this.check(), o)
+    super(), setInterval(() => this.check(), a)
   }
 }

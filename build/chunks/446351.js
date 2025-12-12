@@ -16,41 +16,41 @@ let l = {
 
 function u(e, t, n) {
   let i = r.Z.getByteOrder(e, t),
-    a = (0, s.N)(e, o.Xr, t, (0, s.a)(e, t, i), i, n);
-  return d(e, t, a, i)
+    o = (0, s.N)(e, a.Xr, t, (0, s.a)(e, t, i), i, n);
+  return d(e, t, o, i)
 }
 
 function d(e, t, n, r) {
   if (!n.MPEntry) return n;
-  let o = [];
+  let a = [];
   for (let s = 0; s < Math.ceil(n.MPEntry.value.length / c); s++) {
-    o[s] = {};
+    a[s] = {};
     let l = f(n.MPEntry.value, s * c, i.Z.getTypeSize("LONG"), r);
-    o[s].ImageFlags = p(l), o[s].ImageFormat = _(l), o[s].ImageType = m(l);
+    a[s].ImageFlags = p(l), a[s].ImageFormat = _(l), a[s].ImageType = m(l);
     let u = f(n.MPEntry.value, s * c + 4, i.Z.getTypeSize("LONG"), r);
-    o[s].ImageSize = {
+    a[s].ImageSize = {
       value: u,
       description: "" + u
     };
     let d = h(s, n.MPEntry, r, t);
-    o[s].ImageOffset = {
+    a[s].ImageOffset = {
       value: d,
       description: "" + d
     };
     let g = f(n.MPEntry.value, s * c + 12, i.Z.getTypeSize("SHORT"), r);
-    o[s].DependentImage1EntryNumber = {
+    a[s].DependentImage1EntryNumber = {
       value: g,
       description: "" + g
     };
     let E = f(n.MPEntry.value, s * c + 14, i.Z.getTypeSize("SHORT"), r);
-    o[s].DependentImage2EntryNumber = {
+    a[s].DependentImage2EntryNumber = {
       value: E,
       description: "" + E
-    }, o[s].image = e.buffer.slice(d, d + u), (0, a.eN)(o[s], "base64", function() {
-      return (0, a.sq)(this.image)
+    }, a[s].image = e.buffer.slice(d, d + u), (0, o.eN)(a[s], "base64", function() {
+      return (0, o.sq)(this.image)
     })
   }
-  return n.Images = o, n
+  return n.Images = a, n
 }
 
 function f(e, t, n, i) {
@@ -59,9 +59,9 @@ function f(e, t, n, i) {
     for (let i = 0; i < n; i++) r += e[t + i] << 8 * i;
     return r
   }
-  let o = 0;
-  for (let r = 0; r < n; r++) o += e[t + r] << 8 * (n - 1 - r);
-  return o
+  let a = 0;
+  for (let r = 0; r < n; r++) a += e[t + r] << 8 * (n - 1 - r);
+  return a
 }
 
 function p(e) {

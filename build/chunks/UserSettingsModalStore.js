@@ -48,18 +48,18 @@ function O(e) {
 
 function v(e) {
   var t, n, r, i;
-  let o = a.default.getCurrentUser();
-  if (null == o) return S();
+  let a = o.default.getCurrentUser();
+  if (null == a) return S();
   d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.QZA.OPEN, _ = {}, h = c({}, m = {
     [s.oAB.ACCOUNT]: {
-      userId: o.id,
-      username: o.username,
-      discriminator: o.discriminator,
-      email: o.email,
-      avatar: o.avatar,
+      userId: a.id,
+      username: a.username,
+      discriminator: a.discriminator,
+      email: a.email,
+      avatar: a.avatar,
       password: "",
       newPassword: null,
-      claimed: o.isClaimed()
+      claimed: a.isClaimed()
     }
   }), E = null != (n = e.analyticsLocation) ? n : null, b = null != (r = e.analyticsLocations) ? r : [], y = null != (i = e.searchParams) ? i : null
 }

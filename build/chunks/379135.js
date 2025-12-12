@@ -6,11 +6,11 @@ require.d(exports, {
 });
 var Chunk462049 = require("./462049.js");
 let i = {
-  isAvifFile: o,
-  findAvifOffsets: a
+  isAvifFile: a,
+  findAvifOffsets: o
 };
 
-function o(e) {
+function a(e) {
   if (!e) returnfalse;
   try {
     let t = (0, r.ER)(e, 0);
@@ -20,6 +20,6 @@ function o(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   return (0, r.ku)(e)
 }

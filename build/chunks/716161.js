@@ -38,7 +38,7 @@ async function f() {
 }
 async function p(e, t, n) {
   try {
-    let o = await r.tn.post({
+    let a = await r.tn.post({
       url: d.ANM.VIDEO_FILTER_ASSETS,
       body: {
         type: t,
@@ -49,8 +49,8 @@ async function p(e, t, n) {
     });
     return i.Z.dispatch({
       type: "VIDEO_FILTER_ASSET_UPLOAD_SUCCESS",
-      videoFilterAsset: o.body
-    }), o.body
+      videoFilterAsset: a.body
+    }), a.body
   } catch (e) {
     throw new u.Z(e)
   }
@@ -67,9 +67,9 @@ async function _(e) {
   })
 }
 async function m(e) {
-  if (await o.hW.updateAsync("voiceAndVideo", t => {
+  if (await a.hW.updateAsync("voiceAndVideo", t => {
       t.videoBackgroundFilterDesktop = (0, c.i7)(e)
-    }, o.fy.FREQUENT_USER_ACTION), (0, c.rD)(e)) {
+    }, a.fy.FREQUENT_USER_ACTION), (0, c.rD)(e)) {
     let t = await r.tn.post({
       url: d.ANM.VIDEO_FILTER_ASSET_LAST_USED(e.id),
       rejectWithError: false
@@ -85,7 +85,7 @@ async function m(e) {
 }
 
 function h(e) {
-  a.Z.isSupported() && i.Z.dispatch({
+  o.Z.isSupported() && i.Z.dispatch({
     type: "MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS",
     settings: e
   })

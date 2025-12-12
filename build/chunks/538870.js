@@ -36,9 +36,9 @@ function g(e) {
   } = e, {
     shouldReduceMotion: E,
     isAppFocused: b
-  } = (0, i.cj)([o.Z, a.Z], () => ({
-    shouldReduceMotion: o.Z.useReducedMotion,
-    isAppFocused: a.Z.isAppFocused()
+  } = (0, i.cj)([a.Z, o.Z], () => ({
+    shouldReduceMotion: a.Z.useReducedMotion,
+    isAppFocused: o.Z.isAppFocused()
   }));
   return r.useMemo(() => {
     let e = {};

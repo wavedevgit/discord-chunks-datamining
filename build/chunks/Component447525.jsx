@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk660199 = require("./660199.js"),
   Chunk40786 = require("./40786.js"),
-  Chunk172964 = require("./172964.js");
+  Chunk715941 = require("./715941.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function d(e, t) {
 }
 
 function f(e, t) {
-  return "type" in e ? "timestamp" !== e.type ? null : a.Z.getCurrentConfig({
+  return "type" in e ? "timestamp" !== e.type ? null : o.Z.getCurrentConfig({
     location: "renderElement"
   }, {
     autoTrackExposure: false
@@ -64,13 +64,13 @@ function p(e) {
   var t;
   let {
     timestamp: n,
-    replace: a
+    replace: o
   } = e, l = e => {
     let {
       timestamp: t,
       format: r
     } = e, i = null != t ? Math.floor(t.getTime() / 1e3) : n.timestamp, s = null != r ? r : n.format;
-    a((0, o.He)(i, s))
+    o((0, a.He)(i, s))
   };
   return (0, r.jsxs)("div", {
     className: s.container,
@@ -89,14 +89,14 @@ function p(e) {
         })
       }
     }), (0, r.jsx)(i.FXm, {
-      options: Object.entries(o.Qh).map(e => {
+      options: Object.entries(a.Qh).map(e => {
         let [t, r] = e;
         return {
           name: r(n.parsed),
           value: t
         }
       }),
-      value: null != (t = n.format) ? t : o.K_,
+      value: null != (t = n.format) ? t : a.K_,
       onChange: e => {
         l({
           format: e

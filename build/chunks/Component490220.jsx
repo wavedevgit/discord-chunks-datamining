@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk643879 = require("./643879.js"),
   Chunk25990 = require("./25990.js"),
   Chunk678135 = require("./678135.jsx"),
-  Chunk575169 = require("./575169.js");
+  Chunk674472 = require("./674472.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,7 +43,7 @@ function p(e) {
     containerClassName: _
   } = e, {
     reducedMotion: m
-  } = i.useContext(a.Sfi), {
+  } = i.useContext(o.Sfi), {
     pendingAvatar: h,
     pendingBanner: g,
     pendingAvatarDecoration: E,
@@ -57,7 +57,7 @@ function p(e) {
     tryItOutBanner: C,
     tryItOutAvatarDecoration: A,
     tryItOutDisplayNameStyles: N
-  } = (0, o.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), P = (0, s.SD)({
+  } = (0, a.cj)([l.Z], () => f({}, l.Z.getAllPending(), l.Z.getAllTryItOut())), P = (0, s.SD)({
     userId: d.id,
     image: null != T ? T : h
   });

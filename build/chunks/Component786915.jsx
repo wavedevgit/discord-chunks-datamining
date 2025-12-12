@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -45,12 +45,12 @@ function y(e) {
     stream: r,
     channel: y,
     exitFullScreen: v,
-    appContext: _,
-    analyticsLocation: O,
-    guildScheduledEvent: x,
-    shouldPrioritizeGroupPlusIcon: E = false,
-    isRichPresenceInvite: j = false,
-    iconClassName: S,
+    appContext: O,
+    analyticsLocation: x,
+    guildScheduledEvent: E,
+    shouldPrioritizeGroupPlusIcon: j = false,
+    isRichPresenceInvite: S = false,
+    iconClassName: _,
     look: P,
     size: I,
     buttonText: Z,
@@ -76,21 +76,21 @@ function y(e) {
     } = (0, c.ZP)(),
     M = null == y ? true : y.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
-    L = (0, a.e7)([h.Z], () => null != t ? h.Z.getApplicationActivity(t) : true),
-    D = null == t || E ? o.ejJ : o.gQj,
+    L = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : true),
+    D = null == t || j ? o.ejJ : o.gQj,
     k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
-  return null != L && j ? (0, i.jsx)(m.Z, {
+  return null != L && S ? (0, i.jsx)(m.Z, {
     onClick: () => {
       null != w && (0, u.v)(w, u.d.INVITE), s.h7(L, false, A)
     },
     iconComponent: D,
     label: k,
-    iconClassName: S,
+    iconClassName: _,
     look: P,
     size: I,
     buttonText: Z,
     color: null != T ? T : true
-  }) : null != R && null != y && f.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, i.jsx)(m.Z, C({
+  }) : null != R && null != y && h.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, i.jsx)(m.Z, C({
     onClick: () => {
       l()(null != R, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
         function(e) {
@@ -107,7 +107,7 @@ function y(e) {
           null == c || c(), (0, o.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
+            } = await Promise.all([n.e("49049"), n.e("7654"), n.e("97016")]).then(n.bind(n, 560114));
             return n => {
               var o, s;
               return (0, i.jsx)(e, (o = C({}, n), s = s = {
@@ -138,15 +138,15 @@ function y(e) {
           channel: y,
           streamUserId: null == r ? true : r.ownerId,
           applicationId: t,
-          appContext: null != _ ? _ : A,
+          appContext: null != O ? O : A,
           exitFullScreen: v,
-          analyticsLocation: O,
-          guildScheduledEvent: x
+          analyticsLocation: x,
+          guildScheduledEvent: E
         })
     },
     iconComponent: D,
     label: k,
-    iconClassName: S,
+    iconClassName: _,
     look: P,
     size: I,
     color: T,

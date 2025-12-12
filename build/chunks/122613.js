@@ -55,11 +55,11 @@ async function _(e) {
   if (null == e.targetApplicationId) returnfalse;
   let n = false;
   try {
-    t = await (0, l.Z)(e.targetApplicationId, e.channelId), n = (0, o.R)()
+    t = await (0, l.Z)(e.targetApplicationId, e.channelId), n = (0, a.R)()
   } catch (e) {
     returnfalse
   }
-  return (0, o.C)(n, () => m(p(d({}, e), {
+  return (0, a.C)(n, () => m(p(d({}, e), {
     targetApplication: t
   })))
 }
@@ -67,7 +67,7 @@ async function m(e) {
   let {
     targetApplication: t,
     locationObject: n,
-    channelId: o,
+    channelId: a,
     analyticsLocations: l,
     componentId: u,
     commandOrigin: d,
@@ -79,8 +79,8 @@ async function m(e) {
     inviterUserId: g,
     onConfirmActivityLaunchChecksAlertOpen: E
   } = e, b = (0, c.Z)(), y = i.default.getCurrentUser();
-  return null != o && null != r.Z.getChannel(o) && null != y && null != t && (a.tZ(t.id), await (0, s.G6)({
-    channelId: o,
+  return null != a && null != r.Z.getChannel(a) && null != y && null != t && (o.tZ(t.id), await (0, s.G6)({
+    channelId: a,
     applicationId: t.id,
     isStart: true,
     embeddedActivitiesManager: b,

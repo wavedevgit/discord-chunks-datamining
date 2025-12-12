@@ -13,7 +13,7 @@ let s = [Chunk231338.Pl.SET_VOICE_CHANNEL_STATUS, Chunk231338.Pl.CONNECT, Chunk2
   l = [Chunk231338.Pl.SET_VOICE_CHANNEL_STATUS];
 
 function c(e, t, n, r) {
-  return (n ? l : s).every(n => null == r ? t.can(n, e) : o.BT({
+  return (n ? l : s).every(n => null == r ? t.can(n, e) : a.BT({
     permission: n,
     user: r,
     context: e

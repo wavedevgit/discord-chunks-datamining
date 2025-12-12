@@ -22,12 +22,12 @@ function s(e) {
         section_name: t,
         num_items: n,
         num_visible_items: s,
-        source: o.Z.entrypoint()
+        source: a.Z.entrypoint()
       }
     })
   }, c = 1;
   return {
-    trackSectionImpressionRef: (0, a.Z)({
+    trackSectionImpressionRef: (0, o.Z)({
       onVisible: l,
       threshold: c
     })

@@ -8,8 +8,8 @@ require.d(exports, {
 });
 var Chunk720479 = require("./720479.js");
 let i = 1723856,
-  o = 1824665,
-  a = 5500;
+  a = 1824665,
+  o = 5500;
 
 function s(e, t, n, r) {
   return e + 365 * t + Math.floor(t / 4) + 30 * (n - 1) + r - 1
@@ -31,12 +31,12 @@ function u(e, t) {
 }
 class d {
   fromJulianDay(e) {
-    let [t, n, o] = l(i, e), s = "AM";
-    return t <= 0 && (s = "AA", t += a), new(0, r.aw)(this, s, t, n, o)
+    let [t, n, a] = l(i, e), s = "AM";
+    return t <= 0 && (s = "AA", t += o), new(0, r.aw)(this, s, t, n, a)
   }
   toJulianDay(e) {
     let t = e.year;
-    return "AA" === e.era && (t -= a), s(i, t, e.month, e.day)
+    return "AA" === e.era && (t -= o), s(i, t, e.month, e.day)
   }
   getDaysInMonth(e) {
     return u(e.year, e.month)
@@ -59,8 +59,8 @@ class d {
 }
 class f extends d {
   fromJulianDay(e) {
-    let [t, n, o] = l(i, e);
-    return t += a, new(0, r.aw)(this, "AA", t, n, o)
+    let [t, n, a] = l(i, e);
+    return t += o, new(0, r.aw)(this, "AA", t, n, a)
   }
   getEras() {
     return ["AA"]
@@ -74,12 +74,12 @@ class f extends d {
 }
 class p extends d {
   fromJulianDay(e) {
-    let [t, n, i] = l(o, e), a = "CE";
-    return t <= 0 && (a = "BCE", t = 1 - t), new(0, r.aw)(this, a, t, n, i)
+    let [t, n, i] = l(a, e), o = "CE";
+    return t <= 0 && (o = "BCE", t = 1 - t), new(0, r.aw)(this, o, t, n, i)
   }
   toJulianDay(e) {
     let t = e.year;
-    return "BCE" === e.era && (t = 1 - t), s(o, t, e.month, e.day)
+    return "BCE" === e.era && (t = 1 - t), s(a, t, e.month, e.day)
   }
   getDaysInMonth(e) {
     let t = e.year;

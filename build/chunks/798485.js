@@ -30,7 +30,7 @@ var Chunk703579 = require("./703579.js"),
       var r = n.pop();
       t(r);
       var i = r.children;
-      Array.isArray(i) || a(false), n = n.concat([].concat(i.reverse()))
+      Array.isArray(i) || o(false), n = n.concat([].concat(i.reverse()))
     }
   },
   l = function(e) {
@@ -49,7 +49,7 @@ module.exports = {
   fromRawTreeStateToRawState: function(e) {
     var t = e.blocks,
       n = [];
-    return (Array.isArray(t) || a(false), Array.isArray(t) && t.length) ? (s(t, function(e) {
+    return (Array.isArray(t) || o(false), Array.isArray(t) && t.length) ? (s(t, function(e) {
       var t = r({}, e);
       l(e) && (t.depth = t.depth || 0, c(e), null != e.children && e.children.length > 0) || (delete t.children, n.push(t))
     }), e.blocks = n, r({}, e, {
@@ -61,28 +61,28 @@ module.exports = {
       n = [];
     return e.blocks.forEach(function(e) {
       var i = l(e),
-        a = e.depth || 0,
+        o = e.depth || 0,
         s = r({}, e, {
           children: []
         });
       if (!i) return void t.push(s);
       var c = n[0];
-      if (null == c && 0 === a) t.push(s);
-      else if (null == c || c.depth < a - 1) {
+      if (null == c && 0 === o) t.push(s);
+      else if (null == c || c.depth < o - 1) {
         var u = {
-          key: o(),
+          key: a(),
           text: "",
-          depth: a - 1,
+          depth: o - 1,
           type: e.type,
           children: [],
           entityRanges: [],
           inlineStyleRanges: []
         };
-        n.unshift(u), 1 === a ? t.push(u) : null != c && c.children.push(u), u.children.push(s)
-      } else if (c.depth === a - 1) c.children.push(s);
+        n.unshift(u), 1 === o ? t.push(u) : null != c && c.children.push(u), u.children.push(s)
+      } else if (c.depth === o - 1) c.children.push(s);
       else {
-        for (; null != c && c.depth >= a;) n.shift(), c = n[0];
-        a > 0 ? c.children.push(s) : t.push(s)
+        for (; null != c && c.depth >= o;) n.shift(), c = n[0];
+        o > 0 ? c.children.push(s) : t.push(s)
       }
     }), r({}, e, {
       blocks: t

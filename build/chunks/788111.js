@@ -10,13 +10,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk699516 = require("./699516.js");
 
 function s(e) {
-  let t = o.Rt.useSetting(),
+  let t = a.Rt.useSetting(),
     {
       isBlocked: n,
       isIgnored: s
-    } = (0, i.cj)([a.Z], () => ({
-      isBlocked: a.Z.isBlocked(e),
-      isIgnored: a.Z.isIgnored(e)
+    } = (0, i.cj)([o.Z], () => ({
+      isBlocked: o.Z.isBlocked(e),
+      isIgnored: o.Z.isIgnored(e)
     })),
     [l, c] = (0, r.useState)(n || s);
   return (0, r.useEffect)(() => c(n || s), [n, s]), [l && !(s && t), (0, r.useCallback)(() => {

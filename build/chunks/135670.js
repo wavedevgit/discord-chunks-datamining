@@ -8,7 +8,7 @@ var Chunk47770 = require("./47770.js"),
   Chunk46973 = require("./46973.js"),
   Chunk65154 = require("./65154.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ class c extends Chunk47770.Z {
     return __OVERLAY__
   }
   supports(e) {
-    return e === o.AN.AUTO_ENABLE && __OVERLAY__
+    return e === a.AN.AUTO_ENABLE && __OVERLAY__
   }
   connect(e, t, n) {
     throw Error("NOT_IMPLEMENTED")
@@ -82,7 +82,7 @@ class c extends Chunk47770.Z {
     returnfalse
   }
   setDesktopSource(e) {
-    arguments.length > 1 && true !== arguments[1] ? arguments[1] : o.Yn.DEFAULT
+    arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.Yn.DEFAULT
   }
   setSoundshareSource(e, t, n) {}
   getDesktopSource() {
@@ -179,6 +179,6 @@ class c extends Chunk47770.Z {
   }
   setNoiseCancellationEnableStats(e) {}
   constructor(...e) {
-    super(...e), a(this, "Video", s), a(this, "Camera", l)
+    super(...e), o(this, "Video", s), o(this, "Camera", l)
   }
 }

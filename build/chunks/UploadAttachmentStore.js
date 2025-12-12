@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => R
 }), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
@@ -53,7 +53,7 @@ let O = e => {
     channelId: n,
     showLargeMessageDialog: r,
     draftType: i,
-    allowOptimization: a
+    allowOptimization: o
   } = e, s = [...g(n, i)];
   if (s.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) return void l.Z.show({
     title: p.intl.string(p.t.wOr6hB),
@@ -61,8 +61,8 @@ let O = e => {
       limit: f.dN1
     })
   });
-  o().forEach(t, e => {
-    let t = new c.nH(e, n, r, s.length, a);
+  a().forEach(t, e => {
+    let t = new c.nH(e, n, r, s.length, o);
     t.upload(), s.push(t)
   }), b(n, i, s)
 };
@@ -72,11 +72,11 @@ function v(e) {
     channelId: t,
     id: n,
     draftType: r
-  } = e, i = [...g(t, r)], o = i.findIndex(e => (0, u.TC)({
+  } = e, i = [...g(t, r)], a = i.findIndex(e => (0, u.TC)({
     uri: n,
     filename: n
   }, e));
-  o > false && (i.splice(o, 1)[0].removeFromMsgDraft(), b(t, r, i))
+  a > false && (i.splice(a, 1)[0].removeFromMsgDraft(), b(t, r, i))
 }
 
 function S(e) {
@@ -97,10 +97,10 @@ function I(e) {
     id: n,
     filename: r,
     description: i,
-    spoiler: o,
-    thumbnail: a,
+    spoiler: a,
+    thumbnail: o,
     draftType: s
-  } = e, l = [...g(t, s)].map(e => (e.id === n && (true !== r && (e.filename = r), true !== o && (e.spoiler = o), true !== i && (e.description = i), true !== a && (e.isThumbnail = a)), e));
+  } = e, l = [...g(t, s)].map(e => (e.id === n && (true !== r && (e.filename = r), true !== a && (e.spoiler = a), true !== i && (e.description = i), true !== o && (e.isThumbnail = o)), e));
   b(t, s, l)
 }
 
@@ -110,9 +110,9 @@ function T(e) {
     id: n,
     file: r,
     draftType: i,
-    allowOptimization: o
-  } = e, a = [...g(t, i)].filter(e => e.id !== n), s = new c.nH(r, t, true, true, o);
-  s.upload(), a.push(s), b(t, i, a)
+    allowOptimization: a
+  } = e, o = [...g(t, i)].filter(e => e.id !== n), s = new c.nH(r, t, true, true, a);
+  s.upload(), o.push(s), b(t, i, o)
 }
 
 function C(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -22,15 +22,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk120816 = require("./120816.js"),
   Chunk31336 = require("./31336.js"),
   Chunk257785 = require("./257785.jsx"),
-  Chunk484036 = require("./484036.jsx"),
+  Chunk975775 = require("./975775.jsx"),
   Chunk681619 = require("./681619.jsx"),
   Chunk621060 = require("./621060.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk599832 = require("./599832.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk865362 = require("./865362.js"),
+  Chunk663618 = require("./663618.js");
 let N = [{
   key: "event",
-  cellClassName: Chunk599832.eventColumn,
+  cellClassName: Chunk865362.eventColumn,
   render(e) {
     let {
       event: t
@@ -39,7 +39,7 @@ let N = [{
   }
 }, {
   key: "location",
-  cellClassName: Chunk599832.locationColumn,
+  cellClassName: Chunk865362.locationColumn,
   render(e) {
     let {
       properties: t
@@ -81,7 +81,7 @@ function w(e) {
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
       className: O.copyPropertyButton,
-      onClick: () => (0, g.JG)(JSON.stringify(i), () => s(true)),
+      onClick: () => (0, b.JG)(JSON.stringify(i), () => s(true)),
       children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -107,7 +107,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = f.default.getUser(i), h = o()(r);
+      } = e, d = x.default.getUser(i), h = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
@@ -120,7 +120,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
               className: O.copyEventButton,
-              onClick: () => (0, g.JG)(t),
+              onClick: () => (0, b.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, g.JG)(JSON.stringify(function(e) {
+              (0, b.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -159,23 +159,23 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             tooltip: "Close",
             onClick: s
           })]
-        }), (0, a.jsxs)(_.E, {
+        }), (0, a.jsxs)(y.E, {
           className: O.commonProperties,
-          children: [(0, a.jsx)(_.Z9, {
+          children: [(0, a.jsx)(y.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
               dateTime: r.toISOString(),
-              title: (0, b.vc)(h, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, b.Y4)(h)]
+              title: (0, g.vc)(h, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, g.Y4)(h)]
             })
-          }), null != d && (0, a.jsx)(_.Z9, {
+          }), null != d && (0, a.jsx)(y.Z9, {
             name: "User",
             copyValue: d.id,
             children: (0, a.jsx)(m.Z, {
               user: d
             })
-          }), (0, a.jsx)(_.Z9, {
+          }), (0, a.jsx)(y.Z9, {
             name: "Fingerprint",
             copyValue: i,
             children: (0, a.jsx)("code", {
@@ -276,13 +276,13 @@ function D() {
       p(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
-  let f = Chunk129861.filter(e => {
+  let x = Chunk129861.filter(e => {
       for (let t of s)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [g, b] = Chunk473749.useState(true),
-    _ = Chunk594174.find(e => e.key === g),
+    [b, g] = Chunk473749.useState(true),
+    y = Chunk594174.find(e => e.key === b),
     {
       TabBar: P,
       renderSelectedTab: w
@@ -291,11 +291,11 @@ function D() {
     }, []);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: l()(Chunk451429.panel, Chunk599832.panel),
+    className: l()(Chunk663618.panel, Chunk865362.panel),
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk599832.toolbar,
+      className: Chunk865362.toolbar,
       children: [(0, Chunk54381.jsx)(Chunk755721.zx, {
-        className: Chunk599832.toolbarButton,
+        className: Chunk865362.toolbarButton,
         look: Chunk755721.zx.Looks.BLANK,
         size: Chunk755721.zx.Sizes.ICON,
         onClick: Chunk31336.Zw,
@@ -308,9 +308,9 @@ function D() {
           })
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk599832.toolbarDivider
+        className: Chunk865362.toolbarDivider
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk599832.filters,
+        className: Chunk865362.filters,
         children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
@@ -323,7 +323,7 @@ function D() {
         })
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk599832.toolbar,
+      className: Chunk865362.toolbar,
       children: (0, Chunk54381.jsx)(Chunk481060.E1j, {
         size: "sm",
         query: exports,
@@ -335,9 +335,9 @@ function D() {
       columns: N,
       data: Chunk594174,
       selectedRowKey: Chunk572004,
-      onClickRow: e => b(e.key)
-    }), null != Chunk257785 && (0, Chunk54381.jsxs)(Chunk484036.Z, {
-      className: Chunk599832.subPanel,
+      onClickRow: e => g(e.key)
+    }), null != Chunk257785 && (0, Chunk54381.jsxs)(Chunk975775.Z, {
+      className: Chunk865362.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
       children: [(0, Chunk54381.jsx)(P, {}), w({

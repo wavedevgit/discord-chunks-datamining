@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk140081 = require("./140081.js");
 let i = RegExp("([^\\d]|^)([0-3]{0,1}[0-9]{1})[\\/\\.\\-]([0-3]{0,1}[0-9]{1})(?:[\\/\\.\\-]([0-9]{4}|[0-9]{2}))?(\\W|$)", "i"),
-  o = 1,
-  a = 5,
+  a = 1,
+  o = 5,
   s = 2,
   l = 3,
   c = 4;
@@ -21,8 +21,8 @@ class u {
     return i
   }
   extract(e, t) {
-    let n = t.index + t[o].length,
-      i = t.index + t[0].length - t[a].length;
+    let n = t.index + t[a].length,
+      i = t.index + t[0].length - t[o].length;
     if (n > 0 && e.text.substring(0, n).match("\\d/?$") || i < e.text.length && e.text.substring(i).match("^/?\\d")) return;
     let s = e.text.substring(n, i);
     if (s.match(/^\d\.\d$/) || s.match(/^\d\.\d{1,2}\.\d{1,2}\s*$/) || !t[c] && 0 > s.indexOf("/")) return;

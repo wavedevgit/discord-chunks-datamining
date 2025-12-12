@@ -23,7 +23,7 @@ function p(e) {
     runAfterLaunchAttempt: _
   } = e, {
     data: m
-  } = (0, a.IX)(t), h = (0, i.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), g = (0, i.e7)([l.Z], () => l.Z.getConnectedFrame()), E = (0, c.A)(m);
+  } = (0, o.IX)(t), h = (0, i.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), g = (0, i.e7)([l.Z], () => l.Z.getConnectedFrame()), E = (0, c.A)(m);
   return r.useCallback(async () => {
     if (null == t || null == m) return;
     let e = null != h && h.applicationId === t;
@@ -43,7 +43,7 @@ function p(e) {
       });
       else {
         var r, i;
-        (null == m || null == (r = m.bot) ? true : r.id) != null && await (0, o.W)({
+        (null == m || null == (r = m.bot) ? true : r.id) != null && await (0, a.W)({
           appId: t,
           botId: null == m || null == (i = m.bot) ? true : i.id,
           analyticsLocations: null != n ? n : []

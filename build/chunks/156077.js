@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,7 +16,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = 10;
+let o = 10;
 class s extends Chunk442837.yh {
   isVideoStatsEnabled(e) {
     var t;
@@ -31,8 +31,8 @@ class s extends Chunk442837.yh {
       this.videoStatsEnabled.delete(e) && this.emitChange();
       return
     }
-    if (this.videoStatsEnabled.has(e) && this.videoStatsEnabled.delete(e), this.videoStatsEnabled.set(e, t), this.videoStatsEnabled.size > a) {
-      let e = this.videoStatsEnabled.size - a,
+    if (this.videoStatsEnabled.has(e) && this.videoStatsEnabled.delete(e), this.videoStatsEnabled.set(e, t), this.videoStatsEnabled.size > o) {
+      let e = this.videoStatsEnabled.size - o,
         t = this.videoStatsEnabled.keys();
       for (let n = 0; n < e; n++) {
         let e = t.next().value;
@@ -45,7 +45,7 @@ class s extends Chunk442837.yh {
     this.videoStatsEnabled.delete(e) && this.emitChange()
   }
   constructor(...e) {
-    super(...e), o(this, "videoStatsEnabled", new Map)
+    super(...e), a(this, "videoStatsEnabled", new Map)
   }
 }
 let l = new s(Chunk570140.Z, {}),

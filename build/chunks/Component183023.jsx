@@ -5,13 +5,13 @@ require.d(exports, {
   Az: () => et,
   Oe: () => en,
   UA: () => ei,
-  n_: () => eo,
+  n_: () => ea,
   vk: () => er
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk507274 = require("./507274.jsx"),
@@ -52,7 +52,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk176505 = require("./176505.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975900 = require("./975900.js");
+  Chunk411564 = require("./411564.js");
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -146,16 +146,16 @@ let J = 32,
       hasJoinedExpressionSourceGuild: n,
       isDisplayingJoinGuildButtonInPopout: i
     } = e, {
-      id: o,
+      id: a,
       icon: s,
       name: l
     } = t, c = J, d = k.ZP.getGuildIconURL({
-      id: o,
+      id: a,
       icon: s,
       size: c,
       canAnimate: true
     }), f = (n = null == n || n) || t.isDiscoverable(), _ = () => {
-      t.isDiscoverable() ? (0, U.Ub)(o, {}) : n && (0, D.uL)(V.Z5c.CHANNEL(o, x.Z.getChannelId(o)))
+      t.isDiscoverable() ? (0, U.Ub)(a, {}) : n && (0, D.uL)(V.Z5c.CHANNEL(a, x.Z.getChannelId(a)))
     }, m = () => null != d && f ? (0, r.jsxs)(p.P3F, {
       "aria-label": l,
       onClick: _,
@@ -223,7 +223,7 @@ let J = 32,
         children: m()
       }), (0, r.jsxs)(b.Z, {
         direction: b.Z.Direction.VERTICAL,
-        className: a()(K.__invalid_guildInformation, K.truncatingText),
+        className: o()(K.__invalid_guildInformation, K.truncatingText),
         children: [(0, r.jsxs)(b.Z, {
           align: b.Z.Align.CENTER,
           children: [(0, r.jsx)(C.Z, {
@@ -242,9 +242,9 @@ let J = 32,
       node: t,
       closePopout: n,
       refreshPositionKey: i,
-      nonce: o
+      nonce: a
     } = e, {
-      expressionSourceGuild: a,
+      expressionSourceGuild: o,
       expressionSourceApplication: s,
       sourceType: l,
       joinedEmojiSourceGuildRecord: u,
@@ -261,17 +261,17 @@ let J = 32,
         sourceType: l,
         expressionSourceApplication: s,
         guildEmoji: null != d ? d : true,
-        expressionSourceGuild: a,
+        expressionSourceGuild: o,
         joinedEmojiSourceGuildRecord: u,
         closePopout: n,
         onToggleShowMoreEmojis: i,
         demoMode: false,
-        nonce: o
+        nonce: a
       })
     })
   },
   ei = e => {
-    var t, n, o;
+    var t, n, a;
     let {
       node: c,
       sourceType: d,
@@ -299,7 +299,7 @@ let J = 32,
         isUnusableRoleSubscriptionEmoji: A.Fv(x, null != z ? z : true),
         userIsRoleSubscriber: N.Z.getUserSubscriptionRoles(x.guildId).size > 0
       }, [x, z]),
-      ea = !!er && (0, O.Ol)(null == x ? true : x.guildId),
+      eo = !!er && (0, O.Ol)(null == x ? true : x.guildId),
       {
         analyticsLocations: es
       } = (0, g.ZP)(h.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL);
@@ -309,7 +309,7 @@ let J = 32,
       properties: {
         location_stack: es,
         emoji_guild_id: null != (n = null == x ? true : x.guildId) ? n : null,
-        emoji_id: null != (o = null == x ? true : x.id) ? o : null
+        emoji_id: null != (a = null == x ? true : x.id) ? a : null
       }
     }, {
       disableTrack: !et
@@ -325,7 +325,7 @@ let J = 32,
         userIsRoleSubscriber: ei,
         emojiComesFromCurrentGuild: Q,
         isDiscoverable: J,
-        shouldHideRoleSubscriptionCTA: ea,
+        shouldHideRoleSubscriptionCTA: eo,
         onOpenPremiumSettings: () => {
           C(), M.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
@@ -333,7 +333,7 @@ let J = 32,
           }), (0, R.z)()
         }
       }),
-      eu = X && er && !ea && (q && et || !q),
+      eu = X && er && !eo && (q && et || !q),
       ed = ec.emojiDescription,
       ef = (0, I.u)({
         emojiId: c.emojiId,
@@ -417,7 +417,7 @@ let J = 32,
           i = () => {
             n && (null == D || D(), eh || k || M.default.track(V.rMx.EMOJI_UPSELL_POPOUT_MORE_EMOJIS_OPENED, ef), eg(!eh))
           },
-          o = () => {
+          a = () => {
             let e = W.intl.string(W.t.pnsAS2);
             return (0, r.jsx)(p.P3F, {
               onClick: i,
@@ -432,7 +432,7 @@ let J = 32,
                 }), (0, r.jsx)(p.CJ0, {
                   size: "md",
                   color: "currentColor",
-                  className: a()(K.showMoreEmojisArrow, {
+                  className: o()(K.showMoreEmojisArrow, {
                     [K.showMoreEmojisArrowCollapsed]: !eh
                   })
                 })]
@@ -451,7 +451,7 @@ let J = 32,
             hasJoinedExpressionSourceGuild: X,
             isDisplayingJoinGuildButtonInPopout: ep
           }), n && (0, r.jsxs)(r.Fragment, {
-            children: [o(), null != c.emojiId && eh && (0, r.jsx)(eo, {
+            children: [a(), null != c.emojiId && eh && (0, r.jsx)(ea, {
               emojiId: c.emojiId,
               expressionSourceGuild: v,
               popoutData: ec,
@@ -468,16 +468,16 @@ let J = 32,
       children: [em(), eb && eE()]
     })
   },
-  eo = e => {
+  ea = e => {
     var t;
     let {
       emojiId: n,
       expressionSourceGuild: i,
-      hasJoinedEmojiSourceGuild: o,
-      popoutData: a,
+      hasJoinedEmojiSourceGuild: a,
+      popoutData: o,
       onClose: s,
       isDisplayingButtonInTopSection: l
-    } = e, c = (null != (t = null == i ? true : i.emojis) ? t : []).slice(0, $ + 1).filter(e => e.id !== n).slice(0, $), u = () => o ? null : c.map(e => (0, r.jsx)(d.u, X(q({
+    } = e, c = (null != (t = null == i ? true : i.emojis) ? t : []).slice(0, $ + 1).filter(e => e.id !== n).slice(0, $), u = () => a ? null : c.map(e => (0, r.jsx)(d.u, X(q({
       text: e.require_colons ? ":".concat(e.name, ":") : e.name
     }, B.b_), {
       children: (0, r.jsx)(m.Z, {
@@ -488,11 +488,11 @@ let J = 32,
     }), e.id)), {
       type: f,
       description: _
-    } = a, h = () => f === Z.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
+    } = o, h = () => f === Z.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(w.Z, {
         subscriptionTier: Y.Si.TIER_2,
         textOptions: {
-          textOverride: a.text
+          textOverride: o.text
         },
         className: K.ctaButton,
         fullWidth: true,
@@ -511,7 +511,7 @@ let J = 32,
       children: (0, r.jsx)(p.Button, {
         variant: "primary",
         size: "sm",
-        text: a.text,
+        text: o.text,
         fullWidth: true,
         onClick: () => {
           (0, U.Ub)(i.id, {})

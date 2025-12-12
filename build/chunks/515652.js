@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk778882 = require("./778882.js"),
   Chunk401010 = require("./401010.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var s = (a(r = {}, Chunk778882.FILE, {
+var s = (o(r = {}, Chunk778882.FILE, {
   exposeProperties: {
     files: function(e) {
       return Array.prototype.slice.call(e.files)
@@ -25,24 +25,24 @@ var s = (a(r = {}, Chunk778882.FILE, {
     }
   },
   matchesTypes: ["Files"]
-}), a(r, Chunk778882.HTML, {
+}), o(r, Chunk778882.HTML, {
   exposeProperties: {
     html: function(e, t) {
-      return (0, o.R)(e, t, "")
+      return (0, a.R)(e, t, "")
     }
   },
   matchesTypes: ["Html", "text/html"]
-}), a(r, Chunk778882.URL, {
+}), o(r, Chunk778882.URL, {
   exposeProperties: {
     urls: function(e, t) {
-      return (0, o.R)(e, t, "").split("\n")
+      return (0, a.R)(e, t, "").split("\n")
     }
   },
   matchesTypes: ["Url", "text/uri-list"]
-}), a(r, Chunk778882.TEXT, {
+}), o(r, Chunk778882.TEXT, {
   exposeProperties: {
     text: function(e, t) {
-      return (0, o.R)(e, t, "")
+      return (0, a.R)(e, t, "")
     }
   },
   matchesTypes: ["Text", "text/plain"]

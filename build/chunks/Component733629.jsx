@@ -1,15 +1,15 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 733629, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk824804 = require("./824804.js");
+  Chunk146473 = require("./146473.js");
 
-function s(e) {
+function a(e) {
   let {
     title: t,
     settings: n

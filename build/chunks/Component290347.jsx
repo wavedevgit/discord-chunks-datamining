@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk188784 = require("./188784.js");
+  Chunk641635 = require("./641635.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -126,7 +126,7 @@ function Z(e) {
   } = e, {
     onClose: V,
     transitionState: F
-  } = x, z = (0, _.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
+  } = x, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
@@ -183,7 +183,7 @@ function Z(e) {
       })
     }
   }, [G, Z.type]), i.useEffect(() => {
-    (0, E.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
+    (0, _.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return v.default.track(I.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
@@ -191,7 +191,7 @@ function Z(e) {
       v.default.track(I.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), (0, E.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
+      }), (0, _.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
         dismissAction: C.L.DISMISS
       })
     }
@@ -212,7 +212,7 @@ function Z(e) {
       }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === Z.type ? (0, r.jsx)(b.Z, {
+        children: ["video" === Z.type ? (0, r.jsx)(E.Z, {
           className: a()(T.video, w),
           autoPlay: !W,
           loop: true,

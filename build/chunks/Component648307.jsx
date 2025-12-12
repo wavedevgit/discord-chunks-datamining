@@ -22,10 +22,10 @@ function f(e) {
   return i.useMemo(() => {
     if (f) {
       let e = (0, s.XX)(t);
-      return (0, a.i)(e) !== a.Q.NONE
+      return (0, o.i)(e) !== o.Q.NONE
     }
     return t.features.has(d.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) || t.features.has(d.GuildFeatures.HUB) || t.features.has(d.GuildFeatures.VERIFIED) || t.features.has(d.GuildFeatures.PARTNERED)
-  }, [t, f]) ? (0, r.jsx)(o.i_, {
+  }, [t, f]) ? (0, r.jsx)(a.i_, {
     asset: f ? (0, r.jsx)(u.Z, {
       guild: t,
       size: 20
@@ -38,7 +38,7 @@ function f(e) {
     align: "center",
     body: t.name,
     children: n
-  }) : (0, r.jsx)(o.u, {
+  }) : (0, r.jsx)(a.u, {
     position: "right",
     align: "center",
     text: t.name,

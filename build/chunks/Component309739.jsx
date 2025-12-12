@@ -18,8 +18,8 @@ var Chunk524437 = require("./524437.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk498778 = require("./498778.js"),
-  Chunk85240 = require("./85240.js");
+  Chunk418924 = require("./418924.js"),
+  Chunk827186 = require("./827186.js");
 
 function h(e) {
   let {
@@ -28,11 +28,11 @@ function h(e) {
   return (0, r.jsxs)(u.Z, {
     className: t,
     title: p.intl.string(p.t.Cq98yL),
-    children: [(0, r.jsx)(b, {}), (0, r.jsx)(o.izJ, {
+    children: [(0, r.jsx)(b, {}), (0, r.jsx)(a.izJ, {
       gap: 32
-    }), (0, r.jsx)(g, {}), (0, r.jsx)(o.izJ, {
+    }), (0, r.jsx)(g, {}), (0, r.jsx)(a.izJ, {
       gap: 32
-    }), (0, r.jsx)(E, {}), (0, r.jsx)(o.izJ, {
+    }), (0, r.jsx)(E, {}), (0, r.jsx)(a.izJ, {
       gap: 32
     }), (0, r.jsx)(y, {})]
   })
@@ -49,33 +49,33 @@ function g() {
       name: Chunk388032.intl.string(Chunk388032.t.UzGMH9)
     }, {
       value: Chunk524437.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS,
-      name: Chunk388032.intl.string(Chunk498778.default["/sAeRY"])
+      name: Chunk388032.intl.string(Chunk418924.default["/sAeRY"])
     }, {
       value: Chunk524437.GI.ACTIVITY_STATUS_OFF,
-      name: Chunk388032.intl.string(Chunk498778.default.m3oL7Q)
+      name: Chunk388032.intl.string(Chunk418924.default.m3oL7Q)
     }];
   return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk498778.default.TG0QsS),
-    description: Chunk388032.intl.string(Chunk498778.default.OO17Lg),
+    label: Chunk388032.intl.string(Chunk418924.default.TG0QsS),
+    description: Chunk388032.intl.string(Chunk418924.default.OO17Lg),
     children: [(0, Chunk54381.jsx)(Chunk481060.FXm, {
-      label: Chunk388032.intl.string(Chunk498778.default["/LHVbt"]),
+      label: Chunk388032.intl.string(Chunk418924.default["/LHVbt"]),
       options: Chunk921801,
       value: exports,
       onChange: e => n(e)
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk85240.myServersContainer,
+      className: Chunk827186.myServersContainer,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk85240.myServersHeaderContainer,
+        className: Chunk827186.myServersHeaderContainer,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-          className: Chunk85240.myServersTitle,
+          className: Chunk827186.myServersTitle,
           variant: "heading-md/medium",
           color: "text-strong",
           children: Chunk388032.intl.string(Chunk388032.t.TqdOvC)
         }), !module && (0, Chunk54381.jsx)("div", {
-          className: Chunk85240.myServersIgnoredWarning,
+          className: Chunk827186.myServersIgnoredWarning,
           children: (0, Chunk54381.jsx)(Chunk481060.M14, {
             type: "warning",
-            children: Chunk388032.intl.string(Chunk498778.default["xxI0/W"])
+            children: Chunk388032.intl.string(Chunk418924.default["xxI0/W"])
           })
         })]
       }), (0, Chunk54381.jsx)(Chunk940276.Z, {})]
@@ -89,16 +89,16 @@ function E() {
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk498778.default["5rYBAQ"]),
+      label: Chunk388032.intl.string(Chunk418924.default["5rYBAQ"]),
       children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk498778.default.khuuzv),
-        description: Chunk388032.intl.string(Chunk498778.default["8EWsJ8"]),
+        label: Chunk388032.intl.string(Chunk418924.default.khuuzv),
+        description: Chunk388032.intl.string(Chunk418924.default["8EWsJ8"]),
         id: "allow-friends-to-join-my-game",
         checked: module,
         onChange: e => c.cP.updateSetting(e)
       }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk498778.default.Uz5Ipi),
-        description: Chunk388032.intl.string(Chunk498778.default.CZI2Gb),
+        label: Chunk388032.intl.string(Chunk418924.default.Uz5Ipi),
+        description: Chunk388032.intl.string(Chunk418924.default.CZI2Gb),
         id: "allow-vc-join-without-request",
         checked: exports,
         onChange: e => c.Ou.updateSetting(e)
@@ -109,15 +109,15 @@ function E() {
 
 function b() {
   let e = Chunk695346.G6.useSetting(),
-    t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk498778.default.UQ9RHJ) : Chunk388032.intl.string(Chunk388032.t.oKqC4t);
+    t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk418924.default.UQ9RHJ) : Chunk388032.intl.string(Chunk388032.t.oKqC4t);
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 32,
       children: [(0, Chunk54381.jsx)("div", {
-        children: Chunk388032.intl.string(Chunk498778.default.t2YsrV)
+        children: Chunk388032.intl.string(Chunk418924.default.t2YsrV)
       }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk498778.default.WhdCGP),
+        label: Chunk388032.intl.string(Chunk418924.default.WhdCGP),
         description: exports,
         id: "share-my-activity",
         checked: module,
@@ -132,7 +132,7 @@ function y() {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk54381.jsx)(Chunk481060.Zbd, {
       type: Chunk481060.Zbd.Types.PRIMARY,
-      className: Chunk85240.privacyTermsCard,
+      className: Chunk827186.privacyTermsCard,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.xvCsx4, {

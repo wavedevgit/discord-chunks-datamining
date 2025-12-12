@@ -2,13 +2,13 @@
 /** chunk id: 346005, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N: () => o
+  N: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk821541 = require("./821541.jsx");
 
-function o(e) {
+function a(e) {
   let {
     children: t
   } = e;

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk82364 = require("./82364.js");
+  Chunk53519 = require("./53519.js");
 let c = Object.freeze({
     tension: 400,
     friction: 30
@@ -45,9 +45,9 @@ function d(e) {
       update: p
     }, n || document.hasFocus() ? "animate-always" : "animate-never");
   return (0, r.jsx)("div", {
-    className: o()(f, l.wrapper),
+    className: a()(f, l.wrapper),
     "aria-hidden": true,
-    children: _((e, t) => t && (0, r.jsx)(a.animated.span, {
+    children: _((e, t) => t && (0, r.jsx)(o.animated.span, {
       className: l.item,
       style: e
     }))

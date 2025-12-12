@@ -61,29 +61,29 @@ function I(e) {
 exports.isArgumentsObject = Chunk670575, exports.isGeneratorFunction = Chunk131604, exports.isTypedArray = Chunk837447, exports.isPromise = function(e) {
   return "undefined" != typeof Promise && e instanceof Promise || null !== e && "object" == typeof e && "function" == typeof e.then && "function" == typeof e.catch
 }, exports.isArrayBufferView = function(e) {
-  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : a(e) || I(e)
+  return "undefined" != typeof ArrayBuffer && ArrayBuffer.isView ? ArrayBuffer.isView(e) : o(e) || I(e)
 }, exports.isUint8Array = function(e) {
-  return "Uint8Array" === o(e)
+  return "Uint8Array" === a(e)
 }, exports.isUint8ClampedArray = function(e) {
-  return "Uint8ClampedArray" === o(e)
+  return "Uint8ClampedArray" === a(e)
 }, exports.isUint16Array = function(e) {
-  return "Uint16Array" === o(e)
+  return "Uint16Array" === a(e)
 }, exports.isUint32Array = function(e) {
-  return "Uint32Array" === o(e)
+  return "Uint32Array" === a(e)
 }, exports.isInt8Array = function(e) {
-  return "Int8Array" === o(e)
+  return "Int8Array" === a(e)
 }, exports.isInt16Array = function(e) {
-  return "Int16Array" === o(e)
+  return "Int16Array" === a(e)
 }, exports.isInt32Array = function(e) {
-  return "Int32Array" === o(e)
+  return "Int32Array" === a(e)
 }, exports.isFloat32Array = function(e) {
-  return "Float32Array" === o(e)
+  return "Float32Array" === a(e)
 }, exports.isFloat64Array = function(e) {
-  return "Float64Array" === o(e)
+  return "Float64Array" === a(e)
 }, exports.isBigInt64Array = function(e) {
-  return "BigInt64Array" === o(e)
+  return "BigInt64Array" === a(e)
 }, exports.isBigUint64Array = function(e) {
-  return "BigUint64Array" === o(e)
+  return "BigUint64Array" === a(e)
 }, g.working = "undefined" != typeof Map && g(new Map), exports.isMap = function(e) {
   return "undefined" != typeof Map && (g.working ? g(e) : e instanceof Map)
 }, E.working = "undefined" != typeof Set && E(new Set), exports.isSet = function(e) {

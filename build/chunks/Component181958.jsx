@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk101859 = require("./101859.js");
+  Chunk23372 = require("./23372.js");
 let l = e => {
     let {
       data: t,
@@ -20,10 +20,10 @@ let l = e => {
       onClick: c,
       disabled: u
     } = t;
-    return (0, r.jsx)(a.tEY, {
+    return (0, r.jsx)(o.tEY, {
       children: (0, r.jsx)("button", {
         type: "button",
-        className: o()(s.item, l),
+        className: a()(s.item, l),
         onClick: c,
         disabled: n || u,
         children: i
@@ -38,7 +38,7 @@ let l = e => {
     } = e;
     return (0, r.jsx)("div", {
       role: "group",
-      className: o()(s.group, i),
+      className: a()(s.group, i),
       children: t.map((e, t) => (0, r.jsx)(l, {
         data: e,
         disabled: n

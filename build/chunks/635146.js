@@ -22,10 +22,10 @@ let s = {
   c = s;
 
 function u(e, t) {
-  let n = e === a.D.ENTERING || e === a.D.ENTERED,
+  let n = e === o.D.ENTERING || e === o.D.ENTERED,
     {
       reducedMotion: c
-    } = r.useContext(o.S),
+    } = r.useContext(a.S),
     u = n || c.enabled || "subtle" === t ? "scale(1)" : "scale(0.9)";
   return (0, i.q)({
     opacity: +!!n,

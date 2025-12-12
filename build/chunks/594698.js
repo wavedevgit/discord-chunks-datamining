@@ -2,9 +2,9 @@
 /** chunk id: 594698, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H6: () => o,
+  H6: () => a,
   LN: () => r,
-  SH: () => a,
+  SH: () => o,
   _$: () => i
 });
 let r = {
@@ -67,9 +67,9 @@ let r = {
     dez: 12,
     "dez.": 12
   },
-  o = "[0-9]{1,4}(?![^\\s]\\d)(?:\\s*[a|d]\\.?\\s*c\\.?|\\s*a\\.?\\s*d\\.?)?";
+  a = "[0-9]{1,4}(?![^\\s]\\d)(?:\\s*[a|d]\\.?\\s*c\\.?|\\s*a\\.?\\s*d\\.?)?";
 
-function a(e) {
+function o(e) {
   if (e.match(/^[0-9]{1,4}$/)) {
     let t = parseInt(e);
     return t < 100 && (t > 50 ? t += 1900 : t += 2e3), t

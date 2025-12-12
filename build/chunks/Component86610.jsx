@@ -91,7 +91,7 @@ class T {
       key: null,
       renderStep: e => (0, r.jsx)(m.I, {
         paymentModalStepProps: e,
-        defaultStep: a.h8.REVIEW
+        defaultStep: o.h8.REVIEW
       })
     } : {
       key: null,
@@ -105,11 +105,11 @@ class T {
       allowGiftCustomization: n
     } = this.internalCheckoutFlowControls;
     if (this.checkoutFlow !== u.G.ORB_CHECKOUT) return {
-      key: a.h8.ADD_PAYMENT_STEPS,
+      key: o.h8.ADD_PAYMENT_STEPS,
       renderStep: e => (0, r.jsx)(p.a, {
         paymentModalStepProps: e,
-        returnStep: a.h8.REVIEW,
-        returnStepIfNoPaymentSources: t && n ? a.h8.GIFT_CUSTOMIZATION : true
+        returnStep: o.h8.REVIEW,
+        returnStepIfNoPaymentSources: t && n ? o.h8.GIFT_CUSTOMIZATION : true
       }),
       options: {
         renderHeader: true
@@ -123,10 +123,10 @@ class T {
       allowGiftCustomization: n
     } = this.internalCheckoutFlowControls;
     return t && n ? {
-      key: a.h8.GIFT_CUSTOMIZATION,
+      key: o.h8.GIFT_CUSTOMIZATION,
       renderStep: e => (0, r.jsx)(_.P, {
         paymentModalStepProps: e,
-        unifiedStepDefinition: this.getUnifiedStepDefinition(a.h8.GIFT_CUSTOMIZATION)
+        unifiedStepDefinition: this.getUnifiedStepDefinition(o.h8.GIFT_CUSTOMIZATION)
       }),
       options: {
         isLargeModal: true,
@@ -157,13 +157,13 @@ class T {
       CUSTOM_CONFIRM_STEP_CONFIG: n
     } = this.tenantCheckoutFlowConfig, {
       disablePaymentAuthSteps: r
-    } = this.internalCheckoutFlowControls, i = this.getPredicateStepConfig(), o = this.getGiftCustomizationStepConfig({
+    } = this.internalCheckoutFlowControls, i = this.getPredicateStepConfig(), a = this.getGiftCustomizationStepConfig({
       isGift: t
     }), s = this.getAddPaymentStepConfig({
       isGift: t
-    }), c = this.getReviewStepConfig(), u = this.createDefinedStepConfigsArray([i, o, s, ...r ? [] : l.yp, c]);
+    }), c = this.getReviewStepConfig(), u = this.createDefinedStepConfigsArray([i, a, s, ...r ? [] : l.yp, c]);
     return null != n && u.push({
-      key: a.h8.CONFIRM,
+      key: o.h8.CONFIRM,
       renderStep: n.renderStep,
       options: n.options
     }), u
@@ -174,7 +174,7 @@ class T {
   openCheckoutModal(e) {
     let {
       openModalOptions: t,
-      flowSpecificOptions: a,
+      flowSpecificOptions: o,
       giftContextProps: s,
       onComplete: l,
       onClose: c,
@@ -186,7 +186,7 @@ class T {
     } = e, m = null != d ? d : (0, i.Z)(), {
       modalKey: h
     } = t, g = this.generateRenderHeader(), E = null != f ? f : this.getApplicationId(u), b = false;
-    return (0, o.ZDy)(async () => {
+    return (0, a.ZDy)(async () => {
       let {
         WrappedUnifiedPaymentModal: e
       } = await n.e("9172").then(n.bind(n, 325906));
@@ -209,11 +209,11 @@ class T {
         analyticsSourceLocation: p,
         renderModalProps: t,
         giftContextProps: s,
-        flowSpecificOptions: a
+        flowSpecificOptions: o
       })
     }, v(y({}, t), {
       onCloseRequest() {
-        null != t.onCloseRequest && t.onCloseRequest(b, m), (0, o.Mr3)(h)
+        null != t.onCloseRequest && t.onCloseRequest(b, m), (0, a.Mr3)(h)
       },
       modalKey: h
     }))

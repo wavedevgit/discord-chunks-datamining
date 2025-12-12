@@ -89,22 +89,22 @@ class b extends Chunk442837.yh {
           i()(null != t, "Shadow state must be set in dual-read mode before running validation."), (0, u.tL)(this.getName(), "Kkv", r => {
             let {
               root: i
-            } = this.state, o = Object.keys(i), a = Object.keys(t.root);
-            for (let a of o) {
-              if (!Object.prototype.hasOwnProperty.call(t.root, a)) {
-                r(i[a], n);
+            } = this.state, a = Object.keys(i), o = Object.keys(t.root);
+            for (let o of a) {
+              if (!Object.prototype.hasOwnProperty.call(t.root, o)) {
+                r(i[o], n);
                 continue
               }
-              let o = i[a],
-                s = t.root[a],
-                l = o.derived.memoized[e],
+              let a = i[o],
+                s = t.root[o],
+                l = a.derived.memoized[e],
                 c = s.derived.memoized[e];
               if (null != l && l === c) continue;
-              r(o, s);
+              r(a, s);
               let u = {};
-              o.derived.memoized[e] = u, s.derived.memoized[e] = u
+              a.derived.memoized[e] = u, s.derived.memoized[e] = u
             }
-            for (let e of a) Object.prototype.hasOwnProperty.call(i, e) || r(n, t.root[e])
+            for (let e of o) Object.prototype.hasOwnProperty.call(i, e) || r(n, t.root[e])
           })
         });
         break
@@ -160,12 +160,12 @@ class b extends Chunk442837.yh {
         memoized: r,
         length: i
       }
-    } = t, o = r[_];
-    return null == o && (r[_] = o = {
+    } = t, a = r[_];
+    return null == a && (r[_] = a = {
       current: n,
       version: this._derivedVersion(r),
       length: i
-    }), o
+    }), a
   }
   partitionLength(e) {
     let t = this.state.root[e];
@@ -188,12 +188,12 @@ class b extends Chunk442837.yh {
       let i = this.state.root[t];
       if (null == i) return r;
       let {
-        root: o,
+        root: a,
         derived: {
-          memoized: a
+          memoized: o
         }
-      } = i, s = a[n];
-      return g.call(a, n) || (s = e(t, o), a[n] = s), s
+      } = i, s = o[n];
+      return g.call(o, n) || (s = e(t, a), o[n] = s), s
     }
   }
   memoized(e) {
@@ -247,22 +247,22 @@ class b extends Chunk442837.yh {
             "function" == typeof e ? e(n, this.state.root) : null != e && (n = e);
             let r = {},
               i = 0,
-              o = 0;
+              a = 0;
             for (let e in n) {
               let t = Object.keys(n[e]).length;
-              i++, o += t, r[e] = {
+              i++, a += t, r[e] = {
                 root: n[e],
                 derived: {
                   length: t,
                   memoized: {}
                 }
               }
-            }(0 !== o || 0 !== this.state.derived.length) && (t = true, this.setKkvState({
+            }(0 !== a || 0 !== this.state.derived.length) && (t = true, this.setKkvState({
               root: r,
               derived: {
                 memoized: {},
                 numPartitions: i,
-                length: o
+                length: a
               }
             }))
           },
@@ -283,8 +283,8 @@ class b extends Chunk442837.yh {
               } = this.state;
               return i.numPartitions++, i.length++, t = true, true
             }
-            let o = i.root[n];
-            return "function" == typeof r && (r = r(o)), !(true !== o && (0, l.$E)(o, r)) && (i.root[n] = r, true === o && (i.derived.length++, this.state.derived.length++), i.derived.memoized = {}, t = true, true)
+            let a = i.root[n];
+            return "function" == typeof r && (r = r(a)), !(true !== a && (0, l.$E)(a, r)) && (i.root[n] = r, true === a && (i.derived.length++, this.state.derived.length++), i.derived.memoized = {}, t = true, true)
           },
           setPartition: (e, n) => {
             let r = this.state.root[e];
@@ -294,7 +294,7 @@ class b extends Chunk442837.yh {
               if (0 === r) returnfalse;
               let {
                 root: i,
-                derived: o
+                derived: a
               } = this.state;
               return i[e] = {
                 root: n,
@@ -302,12 +302,12 @@ class b extends Chunk442837.yh {
                   length: r,
                   memoized: {}
                 }
-              }, o.numPartitions++, o.length += r, t = true, true
+              }, a.numPartitions++, a.length += r, t = true, true
             }
             if ("function" == typeof n && (n = n(r.root)), E(r.root, n)) returnfalse;
             let i = Object.keys(n).length,
-              o = r.derived.length;
-            if (this.state.derived.length -= o, 0 === i) delete this.state.root[e], this.state.derived.numPartitions--;
+              a = r.derived.length;
+            if (this.state.derived.length -= a, 0 === i) delete this.state.root[e], this.state.derived.numPartitions--;
             else {
               let {
                 root: t,
@@ -341,18 +341,18 @@ class b extends Chunk442837.yh {
             let r = n.derived.length,
               {
                 root: i,
-                derived: o
+                derived: a
               } = this.state;
-            return delete i[e], o.numPartitions--, o.length -= r, t = true, true
+            return delete i[e], a.numPartitions--, a.length -= r, t = true, true
           }
         };
       for (let i in e) {
-        let o = e[i],
-          a = e => {
-            if (t = false, o(e, r), !t) returnfalse;
+        let a = e[i],
+          o = e => {
+            if (t = false, a(e, r), !t) returnfalse;
             this.state.derived.memoized = {}
           };
-        n[i] = a
+        n[i] = o
       }
     }
     super(s.Z, n), d(this, "state", {

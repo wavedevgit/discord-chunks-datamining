@@ -11,10 +11,10 @@ var r, i, l, a, Chunk392711 = require("./392711.js"),
   Chunk176505 = require("./176505.js");
 let h = {},
   m = {},
-  _ = {},
-  b = {};
+  b = {},
+  E = {};
 
-function E(e) {
+function _(e) {
   let t = m[e];
   if (null == t) return;
   let n = f.default.fromTimestamp(Date.now() - 9e5),
@@ -24,13 +24,13 @@ function E(e) {
     let n = Math.max(r, t.length - 26);
     m[e] = o().slice(t, n)
   }
-  _[e] = Date.now()
+  b[e] = Date.now()
 }
 
 function O(e, t, n, r) {
   h[e].add(t);
-  let i = _[t];
-  (null == i || i + 3e5 > Date.now()) && E(t), null == m[t] && (m[t] = []), m[t].push({
+  let i = b[t];
+  (null == i || i + 3e5 > Date.now()) && _(t), null == m[t] && (m[t] = []), m[t].push({
     id: n,
     userId: r
   })
@@ -40,14 +40,14 @@ function v(e) {
   let {
     channel: t
   } = e;
-  delete m[t.id], delete _[t.id]
+  delete m[t.id], delete b[t.id]
 }
 class y extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk914010.Z)
   }
   getActiveChannelsFetchStatus(e) {
-    return b[e]
+    return E[e]
   }
   getActiveChannelIds(e) {
     return h[e]
@@ -57,7 +57,7 @@ class y extends(a = Chunk442837.ZP.Store) {
   }
   shouldFetch(e) {
     var t;
-    return null == h[e] && !(null == (t = b[e]) ? true : t.loading)
+    return null == h[e] && !(null == (t = E[e]) ? true : t.loading)
   }
 }
 l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
@@ -76,7 +76,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     if (null == r) returnfalse;
     r.forEach(e => {
       var t;
-      E(e), (null == (t = m[e]) ? true : t.length) === 0 && delete m[e]
+      _(e), (null == (t = m[e]) ? true : t.length) === 0 && delete m[e]
     });
     let i = o().chain(Array.from(r)).filter(e => e in m).sortBy(e => {
       var t, n;
@@ -111,7 +111,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
     let {
       guildId: t
     } = e;
-    b[t] = {
+    E[t] = {
       loading: true,
       error: null,
       fetchedAt: Date.now()
@@ -122,7 +122,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       guildId: t,
       channels: n
     } = e;
-    b[t] = {
+    E[t] = {
       loading: false,
       error: null,
       fetchedAt: Date.now()
@@ -141,7 +141,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty
       guildId: t,
       error: n
     } = e;
-    b[t] = {
+    E[t] = {
       loading: false,
       error: n,
       fetchedAt: null

@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk572004 = require("./572004.js"),
   Chunk105801 = require("./105801.js"),
-  Chunk414726 = require("./414726.js");
+  Chunk423341 = require("./423341.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ let h = "Stats for Nerds",
   N = "Error";
 
 function P(e) {
-  var t, n, r, i, o, a, s, l, c, u, d, f, p, _, m;
+  var t, n, r, i, a, o, s, l, c, u, d, f, p, _, m;
   return JSON.stringify({
     media: {
       video: {
@@ -89,7 +89,7 @@ function P(e) {
         height: e.videoHeight
       },
       audio: {
-        codec: null != (m = null == (o = e.codecInfo) ? true : o.audioCodecDescription) ? m : null == (a = e.codecInfo) ? true : a.audioCodec,
+        codec: null != (m = null == (a = e.codecInfo) ? true : a.audioCodecDescription) ? m : null == (o = e.codecInfo) ? true : o.audioCodec,
         codecRaw: null == (s = e.codecInfo) ? true : s.audioCodec,
         bitRate: (null == (l = e.codecInfo) ? true : l.audioBitrate) != null ? Math.round(e.codecInfo.audioBitrate) : null,
         channels: null == (c = e.codecInfo) ? true : c.audioChannels,
@@ -126,7 +126,7 @@ function R(e) {
   }, []);
   let V = i.useCallback(() => {
     let e = P(U);
-    (0, a.JG)(e, () => {
+    (0, o.JG)(e, () => {
       F(true), null != B.current && clearTimeout(B.current), B.current = window.setTimeout(() => {
         F(false), B.current = null
       }, 2e3)
@@ -141,35 +141,35 @@ function R(e) {
         children: h
       }), (0, r.jsxs)("div", {
         className: l.headerButtons,
-        children: [(0, r.jsx)(o.aML, {
+        children: [(0, r.jsx)(a.aML, {
           "data-migration-pending": true,
           text: Z ? b : E,
           children: e => (0, r.jsx)("div", f(u({}, e), {
-            children: (0, r.jsx)(o.P3F, {
+            children: (0, r.jsx)(a.P3F, {
               className: l.copyButton,
               onClick: V,
               "aria-label": Z ? b : E,
               focusProps: {
                 offset: 2
               },
-              children: (0, r.jsx)(o.TIy, {
+              children: (0, r.jsx)(a.TIy, {
                 size: "md",
                 color: "currentColor"
               })
             })
           }))
-        }), (0, r.jsx)(o.aML, {
+        }), (0, r.jsx)(a.aML, {
           "data-migration-pending": true,
           text: g,
           children: e => (0, r.jsx)("div", f(u({}, e), {
-            children: (0, r.jsx)(o.P3F, {
+            children: (0, r.jsx)(a.P3F, {
               className: l.closeButton,
               onClick: G,
               "aria-label": g,
               focusProps: {
                 offset: 2
               },
-              children: (0, r.jsx)(o.Dio, {
+              children: (0, r.jsx)(a.Dio, {
                 size: "md",
                 color: "currentColor"
               })

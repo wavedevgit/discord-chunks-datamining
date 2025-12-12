@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 820400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk592183 = require("./592183.js"),
   Chunk86419 = require("./86419.js"),
   Chunk172416 = require("./172416.js"),
-  Chunk667108 = require("./667108.js");
+  Chunk87489 = require("./87489.js");
 
 function d() {
   let e = (0, Chunk172416.Un)({
@@ -21,12 +21,12 @@ function d() {
       (0, s.ES)(e, t)
     };
   return module ? (0, Chunk54381.jsxs)("div", {
-    className: Chunk667108.container,
+    className: Chunk87489.container,
     children: [(0, Chunk54381.jsx)(Chunk481060.C3N, {
       label: "User Profile Widgets",
       description: "Generate and test different widget configurations for user profiles.",
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk667108.buttonGroup,
+        className: Chunk87489.buttonGroup,
         children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Add Favorite Game",

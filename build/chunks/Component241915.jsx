@@ -15,7 +15,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk522501 = require("./522501.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk639965 = require("./639965.js");
+  Chunk684692 = require("./684692.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,10 +44,10 @@ let g = 200,
   y = 132,
   O = 80,
   v = {
-    [Chunk981631.VD2.TOP_RIGHT]: Chunk639965.resizeHandleTopRight,
-    [Chunk981631.VD2.TOP_LEFT]: Chunk639965.resizeHandleTopLeft,
-    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk639965.resizeHandleBottomLeft,
-    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk639965.resizeHandleBottomRight
+    [Chunk981631.VD2.TOP_RIGHT]: Chunk684692.resizeHandleTopRight,
+    [Chunk981631.VD2.TOP_LEFT]: Chunk684692.resizeHandleTopLeft,
+    [Chunk981631.VD2.BOTTOM_LEFT]: Chunk684692.resizeHandleBottomLeft,
+    [Chunk981631.VD2.BOTTOM_RIGHT]: Chunk684692.resizeHandleBottomRight
   },
   S = {
     [Chunk981631.VD2.TOP_RIGHT]: Chunk347469.y.HORIZONTAL_LEFT,
@@ -66,17 +66,17 @@ function T(e) {
     resizableNode: t,
     onResize: n,
     onResizeEnd: r,
-    resizeConfig: a,
+    resizeConfig: o,
     position: l
   } = e, u = (0, c.Z)({
-    minDimension: a.minWidth,
-    maxDimension: a.maxWidth + E / 2,
+    minDimension: o.minWidth,
+    maxDimension: o.maxWidth + E / 2,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: r,
     orientation: S[l],
     usePointerEvents: true
-  }), d = o.useCallback(e => {
+  }), d = a.useCallback(e => {
     e.stopPropagation(), u(e)
   }, [u]);
   return (0, i.jsx)("div", {
@@ -109,12 +109,12 @@ class C extends(r = Chunk473749.PureComponent) {
       edgeOffsetTop: n,
       edgeOffsetLeft: r,
       edgeOffsetBottom: i,
-      edgeOffsetRight: o,
-      maxX: a,
+      edgeOffsetRight: a,
+      maxX: o,
       maxY: s,
       dockedRect: l,
       getDockedRectPositionY: c
-    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), _ = Math.round(a - o - this._boundWidth);
+    } = this.props, u = Math.round(n), d = Math.round(s - i - this._boundHeight), p = Math.round(r), _ = Math.round(o - a - this._boundWidth);
     if (null != l) {
       var m, h, g;
       return {
@@ -207,8 +207,8 @@ class C extends(r = Chunk473749.PureComponent) {
       maxY: t,
       dockedRect: n,
       hidden: r,
-      roundCorners: o,
-      className: a,
+      roundCorners: a,
+      className: o,
       position: l,
       resizeConfig: c
     } = this.props, d = this.getWidth(), f = {};
@@ -222,9 +222,9 @@ class C extends(r = Chunk473749.PureComponent) {
     }), (0, Chunk54381.jsxs)(Chunk689425.Z, {
       dragAnywhere: true,
       ref: this.handleSetDraggableRef,
-      className: s()(Chunk639965.pictureInPictureWindow, Chunk120356, {
-        [Chunk639965.hidden]: r,
-        [Chunk639965.borderRadius]: Chunk473749
+      className: s()(Chunk684692.pictureInPictureWindow, Chunk120356, {
+        [Chunk684692.hidden]: r,
+        [Chunk684692.borderRadius]: Chunk473749
       }),
       maxX: module,
       maxY: exports,
@@ -248,7 +248,7 @@ class C extends(r = Chunk473749.PureComponent) {
   constructor(...e) {
     super(...e), m(this, "state", {
       isResizing: false
-    }), m(this, "_draggable", true), m(this, "_innerDivRef", o.createRef()), m(this, "_resizeObserver", true), m(this, "_width", null), m(this, "_boundWidth", 0), m(this, "_boundHeight", 0), m(this, "_velocityX", 0), m(this, "_velocityY", 0), m(this, "_lastMoveTime", true), m(this, "_lastMoveX", 0), m(this, "_lastMoveY", 0), m(this, "ensureIsInPosition", () => {
+    }), m(this, "_draggable", true), m(this, "_innerDivRef", a.createRef()), m(this, "_resizeObserver", true), m(this, "_width", null), m(this, "_boundWidth", 0), m(this, "_boundHeight", 0), m(this, "_velocityX", 0), m(this, "_velocityY", 0), m(this, "_lastMoveTime", true), m(this, "_lastMoveX", 0), m(this, "_lastMoveY", 0), m(this, "ensureIsInPosition", () => {
       this.setPosition(this.props.position)
     }), m(this, "ensureWidth", () => {
       let {
@@ -259,8 +259,8 @@ class C extends(r = Chunk473749.PureComponent) {
         resizeConfig: i
       } = this.props;
       if (null == i) return;
-      let o = I(r - (t + n), i);
-      this.getWidth() > o && (this._width = o, null == e || e(o))
+      let a = I(r - (t + n), i);
+      this.getWidth() > a && (this._width = a, null == e || e(a))
     }), m(this, "handleSetInnerDivRef", e => {
       this._innerDivRef.current = e;
       let t = null == e ? true : e.ownerDocument.defaultView;
@@ -294,13 +294,13 @@ class C extends(r = Chunk473749.PureComponent) {
     }), m(this, "handleDragEnd", (e, t) => {
       var n, r;
       let i, {
-          maxX: o,
-          maxY: a
+          maxX: a,
+          maxY: o
         } = this.props,
         s = this.calculateDecayingPosition(e, t, this._velocityX, this._velocityY),
         l = true,
         c = true;
-      if (s.x > o / 2 && (c = false), s.y > a / 2 && (l = false), i = l && c ? f.VD2.TOP_LEFT : l && !c ? f.VD2.TOP_RIGHT : !l && c ? f.VD2.BOTTOM_LEFT : f.VD2.BOTTOM_RIGHT, this.animateToPosition(i, this.ensureIsInPosition), i !== this.props.position) {
+      if (s.x > a / 2 && (c = false), s.y > o / 2 && (l = false), i = l && c ? f.VD2.TOP_LEFT : l && !c ? f.VD2.TOP_RIGHT : !l && c ? f.VD2.BOTTOM_LEFT : f.VD2.BOTTOM_RIGHT, this.animateToPosition(i, this.ensureIsInPosition), i !== this.props.position) {
         let {
           id: e,
           onMove: t
@@ -320,7 +320,7 @@ let A = e => {
       selectedPIPWindow: t,
       pipWindows: n,
       pipWidth: r,
-      maxX: a,
+      maxX: o,
       maxY: l,
       onWindowMove: c,
       onWindowResize: u,
@@ -331,17 +331,17 @@ let A = e => {
       resizeConfig: v,
       className: S,
       getDockedRectPositionY: I
-    } = e, [T, A] = o.useState(false), N = o.useMemo(() => null == t ? null : n.map(e => {
+    } = e, [T, A] = a.useState(false), N = a.useMemo(() => null == t ? null : n.map(e => {
       if (e.id !== t.id && e.component !== f.NYg.ACTIVITY && e.component !== f.NYg.FRAME) return null;
       let n = "string" == typeof e.component ? m[e.component] : e.component;
       return (0, i.jsx)(n, h({
         width: r
       }, e.props), e.id)
-    }), [n, t, r, m]), P = o.useCallback(() => {
+    }), [n, t, r, m]), P = a.useCallback(() => {
       A(true)
-    }, []), R = o.useCallback(() => {
+    }, []), R = a.useCallback(() => {
       A(false)
-    }, []), w = o.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), D = o.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
+    }, []), w = a.useMemo(() => n.some(e => e.component === f.NYg.ACTIVITY), [n]), D = a.useMemo(() => n.some(e => e.component === f.NYg.FRAME), [n]);
     return null == t ? (0, i.jsx)(d.ZP, {
       children: (0, i.jsx)("div", {
         className: _.pictureInPicture
@@ -360,7 +360,7 @@ let A = e => {
           onResize: u,
           onDragStart: P,
           onDragEnd: R,
-          maxX: a,
+          maxX: o,
           maxY: l,
           width: r,
           dockedRect: p,

@@ -2,7 +2,7 @@
 /** chunk id: 548668, original params: e,t,a (module,exports,require) **/
 let n;
 require.d(exports, {
-  $: () => f
+  $: () => O
 });
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk436620 = require("./436620.js"),
   Chunk330711 = require("./330711.js"),
-  Chunk10416 = require("./10416.js");
+  Chunk997999 = require("./997999.js");
 
-function k(e, t, a) {
+function b(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
     value: a,
     enumerable: true,
@@ -26,12 +26,12 @@ function k(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-let g = "Footer Navigation",
-  A = {
+let k = "Footer Navigation",
+  g = {
     BLURPLE: "Blurple",
     PRIMARY: "Primary"
   },
-  O = e => {
+  A = e => {
     let {
       colorVariant: t,
       animate: a
@@ -51,7 +51,7 @@ let g = "Footer Navigation",
       })
     })
   };
-class f extends(r = Chunk473749.PureComponent) {
+class O extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.setState({
       token: (0, Chunk213919.getToken)(),
@@ -94,20 +94,20 @@ class f extends(r = Chunk473749.PureComponent) {
       },
       alt: "Download Discord",
       className: (0, u.l)(I, "button", i),
-      href: m.am.DOWNLOAD,
+      href: f.am.DOWNLOAD,
       children: h.Z.Messages.NAVIGATION_DOWNLOAD
     });
-    let d = null != o ? m.$w.REGISTER_WITH_REDIRECT(o) : m.$w.REGISTER,
-      _ = h.Z.Messages.COMMON_SIGN_UP_NOW;
-    return e && (d = m.$w.ME, _ = h.Z.Messages.COMMON_OPEN_DISCORD), (0, s.jsx)(n, {
-      eventName: g,
+    let d = null != o ? f.$w.REGISTER_WITH_REDIRECT(o) : f.$w.REGISTER,
+      N = h.Z.Messages.COMMON_SIGN_UP_NOW;
+    return e && (d = f.$w.ME, N = h.Z.Messages.COMMON_OPEN_DISCORD), (0, s.jsx)(n, {
+      eventName: k,
       className: (0, u.l)(I, "button", this.props.variant),
       data: {
         linkClicked: e ? "open" : "login",
         googleAnalytics: true
       },
       href: d,
-      children: _
+      children: N
     })
   }
   render() {
@@ -119,7 +119,7 @@ class f extends(r = Chunk473749.PureComponent) {
       showWave: i
     } = this.props, {
       animateBackground: d,
-      token: _
+      token: N
     } = this.state, p = [{
       title: Chunk330711.Z.Messages.NAVIGATION_PRODUCT,
       routes: [{
@@ -242,20 +242,20 @@ class f extends(r = Chunk473749.PureComponent) {
     }].map(e => {
       let t = e.routes.map((e, t) => e.external ? (0, s.jsx)(n, {
         className: I.route,
-        eventName: g,
+        eventName: k,
         data: {
           linkClicked: e.tracking
         },
         href: e.link,
         children: e.title
-      }, e.link || t) : (0, s.jsx)(N.Z, {
+      }, e.link || t) : (0, s.jsx)(m.Z, {
         avoidRouter: l,
         to: e.link,
         from: "footer_navigation",
         className: I.route,
         children: (0, s.jsx)(n, {
           tag: "span",
-          eventName: g,
+          eventName: k,
           data: {
             linkClicked: e.tracking
           },
@@ -275,21 +275,21 @@ class f extends(r = Chunk473749.PureComponent) {
       onChange: this.handleVisibility,
       children: (0, Chunk54381.jsxs)("footer", {
         ref: this.ref,
-        className: o()((0, Chunk982905.l)(Chunk10416, "footer", module), r),
+        className: o()((0, Chunk982905.l)(Chunk997999, "footer", module), r),
         style: exports,
-        children: [Chunk120356 ? (0, Chunk54381.jsx)(O, {
+        children: [Chunk120356 ? (0, Chunk54381.jsx)(A, {
           colorVariant: module,
           animate: Chunk213919
         }) : null, (0, Chunk54381.jsxs)("div", {
-          className: Chunk10416.footerContent,
+          className: Chunk997999.footerContent,
           children: [(0, Chunk54381.jsxs)("div", {
-            className: Chunk10416.navigation,
+            className: Chunk997999.navigation,
             children: [(0, Chunk54381.jsx)("div", {
-              className: Chunk10416.logoWrap,
+              className: Chunk997999.logoWrap,
               children: (0, Chunk54381.jsx)(n, {
-                className: Chunk10416.logo,
+                className: Chunk997999.logo,
                 href: Chunk231338.am.INDEX,
-                eventName: g,
+                eventName: k,
                 data: {
                   linkClicked: "logo"
                 },
@@ -300,16 +300,16 @@ class f extends(r = Chunk473749.PureComponent) {
               })
             }), Chunk436620]
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk10416.separator
+            className: Chunk997999.separator
           }), (0, Chunk54381.jsxs)("div", {
-            className: Chunk10416.joinDiscord,
+            className: Chunk997999.joinDiscord,
             children: [(0, Chunk54381.jsxs)("div", {
-              className: Chunk10416.stats,
+              className: Chunk997999.stats,
               children: [(0, Chunk54381.jsx)("h2", {
-                className: Chunk10416.readyToJoin,
+                className: Chunk997999.readyToJoin,
                 children: Chunk330711.Z.Messages.FOOTER_READY_TO_TRY_DISCORD
               }), (0, Chunk54381.jsx)("h3", {
-                className: Chunk10416.joinOtherPlayers,
+                className: Chunk997999.joinOtherPlayers,
                 children: Chunk330711.Z.Messages.FOOTER_JOIN_OVER_PLAYERS_TODAY.format({
                   num: Chunk231338.vS
                 })
@@ -321,23 +321,23 @@ class f extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(e) {
-    super(e), k(this, "state", {
+    super(e), b(this, "state", {
       animateBackground: false,
       isMobile: null,
       token: null,
       isAppCompatible: true
-    }), k(this, "ref", l.createRef()), k(this, "handleVisibility", e => {
+    }), b(this, "ref", l.createRef()), b(this, "handleVisibility", e => {
       this.setState({
         animateBackground: e
       })
-    }), null != e.locale && h.Z.setLocale(e.locale), n = t => (0, s.jsx)(_.Z, function(e) {
+    }), null != e.locale && h.Z.setLocale(e.locale), n = t => (0, s.jsx)(N.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(a);
         "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
           return Object.getOwnPropertyDescriptor(a, e).enumerable
         }))), n.forEach(function(t) {
-          k(e, t, a[t])
+          b(e, t, a[t])
         })
       }
       return e
@@ -347,7 +347,7 @@ class f extends(r = Chunk473749.PureComponent) {
     }, t))
   }
 }
-k(f, "Variants", A), k(f, "defaultProps", {
-  variant: A.PRIMARY,
+b(O, "Variants", g), b(O, "defaultProps", {
+  variant: g.PRIMARY,
   showWave: true
 })

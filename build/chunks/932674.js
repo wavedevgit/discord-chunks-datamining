@@ -52,7 +52,7 @@ function m(e) {
     isDateUnavailable: C
   } = e, A = e.value || e.defaultValue || e.placeholderValue || null, [N, P] = (0, r.iZ)(A, e.granularity), R = P || "UTC";
   if (A && !(N in A)) throw Error("Invalid granularity " + N + " for value " + A.toString());
-  let w = (0, d.useMemo)(() => new(0, o.C)(m), [m]),
+  let w = (0, d.useMemo)(() => new(0, a.C)(m), [m]),
     D = (0, d.useMemo)(() => g(w.resolvedOptions().calendar), [g, w]),
     [x, L] = (0, u.z)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
     [j] = (0, d.useState)(x),
@@ -76,7 +76,7 @@ function m(e) {
       }
     }, [e.maxGranularity, N, e.hourCycle, e.shouldForceLeadingZeros, P, y, Z]),
     B = (0, d.useMemo)(() => (0, r.oE)({}, F), [F]),
-    V = (0, d.useMemo)(() => new(0, o.C)(m, B), [m, B]),
+    V = (0, d.useMemo)(() => new(0, a.C)(m, B), [m, B]),
     H = (0, d.useMemo)(() => V.resolvedOptions(), [V]),
     Y = (0, d.useMemo)(() => V.formatToParts(new Date).filter(e => f[e.type]).reduce((e, t) => (e[_[t.type] || t.type] = true, e), {}), [V]),
     [W, K] = (0, d.useState)(() => e.value || e.defaultValue ? {
@@ -85,7 +85,7 @@ function m(e) {
     z = (0, d.useRef)(null),
     q = (0, d.useRef)(D);
   (0, d.useEffect)(() => {
-    (0, a.jv)(D, q.current) || (q.current = D, U(t => Object.keys(W).length > 0 ? (0, s.Mw)(t, D) : (0, r.OJ)(e.placeholderValue, N, D, P)))
+    (0, o.jv)(D, q.current) || (q.current = D, U(t => Object.keys(W).length > 0 ? (0, s.Mw)(t, D) : (0, r.OJ)(e.placeholderValue, N, D, P)))
   }, [D, N, W, P, e.placeholderValue]), x && Object.keys(W).length < Object.keys(Y).length && K(W = {
     ...Y
   }), null == x && Object.keys(W).length === Object.keys(Y).length && (K(W = {}), U((0, r.OJ)(e.placeholderValue, N, D, P)));
@@ -126,7 +126,7 @@ function m(e) {
       builtinValidation: en
     }),
     ei = er.displayValidation.isInvalid,
-    eo = e.validationState || (ei ? "invalid" : null);
+    ea = e.validationState || (ei ? "invalid" : null);
   return {
     ...er,
     value: M,
@@ -136,7 +136,7 @@ function m(e) {
     setValue: X,
     segments: $,
     dateFormatter: V,
-    validationState: eo,
+    validationState: ea,
     isInvalid: ei,
     granularity: N,
     maxGranularity: null != (i = e.maxGranularity) ? i : "year",
@@ -190,7 +190,7 @@ function m(e) {
     formatValue(e) {
       if (!M) return "";
       let t = (0, r.oE)(e, F);
-      return new(0, o.C)(m, t).format(J)
+      return new(0, a.C)(m, t).format(J)
     },
     getDateFormatter(e, t) {
       let n = {
@@ -198,25 +198,25 @@ function m(e) {
           ...t
         },
         i = (0, r.oE)({}, n);
-      return new(0, o.C)(e, i)
+      return new(0, a.C)(e, i)
     }
   }
 }
 
-function h(e, t, n, r, o, a, s, l) {
+function h(e, t, n, r, a, o, s, l) {
   let c = ["hour", "minute", "second"],
     u = n.formatToParts(e),
     d = [];
   for (let e of u) {
     let n = _[e.type] || e.type,
       u = f[n];
-    "era" === n && 1 === a.getEras().length && (u = false);
+    "era" === n && 1 === o.getEras().length && (u = false);
     let p = f[n] && !t[n],
       m = f[n] ? (0, i.p)(n, e.value, s) : null,
       h = {
         type: n,
         text: p ? m : e.value,
-        ...g(o, n, r),
+        ...g(a, n, r),
         isPlaceholder: p,
         placeholder: m,
         isEditable: u
@@ -224,21 +224,21 @@ function h(e, t, n, r, o, a, s, l) {
     "hour" === n ? (d.push({
       type: "literal",
       text: "⁦",
-      ...g(o, "literal", r),
+      ...g(a, "literal", r),
       isPlaceholder: false,
       placeholder: "",
       isEditable: false
     }), d.push(h), n === l && d.push({
       type: "literal",
       text: "⁩",
-      ...g(o, "literal", r),
+      ...g(a, "literal", r),
       isPlaceholder: false,
       placeholder: "",
       isEditable: false
     })) : c.includes(n) && n === l ? (d.push(h), d.push({
       type: "literal",
       text: "⁩",
-      ...g(o, "literal", r),
+      ...g(a, "literal", r),
       isPlaceholder: false,
       placeholder: "",
       isEditable: false
@@ -263,11 +263,11 @@ function g(e, t, n) {
       };
     case "month":
       return {
-        value: e.month, minValue: (0, a.jx)(e), maxValue: e.calendar.getMonthsInYear(e)
+        value: e.month, minValue: (0, o.jx)(e), maxValue: e.calendar.getMonthsInYear(e)
       };
     case "day":
       return {
-        value: e.day, minValue: (0, a.PA)(e), maxValue: e.calendar.getDaysInMonth(e)
+        value: e.day, minValue: (0, o.PA)(e), maxValue: e.calendar.getDaysInMonth(e)
       }
   }
   if ("hour" in e) switch (t) {

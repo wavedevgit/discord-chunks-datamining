@@ -6,20 +6,20 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk282971 = require("./282971.js");
+  Chunk244848 = require("./244848.js");
 
 function s(e) {
   let {
     children: t,
     label: n
   } = e;
-  return (0, r.jsxs)("li", {
-    children: [(0, r.jsx)(i.Text, {
+  return (0, a.jsxs)("li", {
+    children: [(0, a.jsx)(r.Text, {
       variant: "text-xs/semibold",
       color: "text-default",
-      className: a.benefitLabel,
+      className: i.benefitLabel,
       children: n
-    }), (0, r.jsx)(i.LZC, {
+    }), (0, a.jsx)(r.LZC, {
       size: 12
     }), t]
   })

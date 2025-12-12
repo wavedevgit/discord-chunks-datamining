@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 277369, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,23 +19,23 @@ function g(e) {
   let {
     guildId: t,
     application: g
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, i.e7)([c.default], () => c.default.getCurrentUser()), f = (0, u.mY)();
-  if (null == m || !(0, a.eM)(m, p)) return null;
-  let h = g.team;
+  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, i.e7)([c.default], () => c.default.getCurrentUser()), b = (0, d.mY)();
+  if (null == f || !(0, s.eM)(f, m)) return null;
+  let p = g.team;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
-      color: f ? "text-muted" : "text-default",
-      children: null != h ? d.intl.format(d.t.erxwWA, {
-        teamName: h.name
-      }) : d.intl.string(d.t.FGzLkK)
-    }), (0, r.jsx)(s.LZC, {
+      color: b ? "text-muted" : "text-default",
+      children: null != p ? u.intl.format(u.t.erxwWA, {
+        teamName: p.name
+      }) : u.intl.string(u.t.FGzLkK)
+    }), (0, r.jsx)(a.LZC, {
       size: 16
     }), (0, r.jsx)(l.zxk, {
-      text: null != h ? d.intl.string(d.t["/Fjq5P"]) : d.intl.string(d.t["6ih+b4"]),
-      variant: null != h ? "secondary" : "primary",
+      text: null != p ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
+      variant: null != p ? "secondary" : "primary",
       onClick: () => {
-        (0, s.ZDy)(async () => {
+        (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("83942").then(n.bind(n, 743582));
@@ -73,7 +73,7 @@ function g(e) {
           }
         })
       },
-      disabled: f
+      disabled: b
     })]
   })
 }

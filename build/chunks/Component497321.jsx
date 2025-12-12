@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk26621 = require("./26621.js");
+  Chunk737430 = require("./737430.js");
 
 function f(e) {
   let {
@@ -27,8 +27,8 @@ function f(e) {
     className: d.streamerModeEnabled,
     children: [(0, r.jsx)("div", {
       className: d.streamerModeEnabledImage
-    }), (0, r.jsx)(a.P3F, {
-      className: o()(d.streamerModeEnabledBtn, {
+    }), (0, r.jsx)(o.P3F, {
+      className: a()(d.streamerModeEnabledBtn, {
         [d.disabled]: t
       }),
       onClick: n,

@@ -9,13 +9,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
   Chunk612776 = require("./612776.js"),
-  Chunk433080 = require("./433080.js");
+  Chunk903612 = require("./903612.js");
 let p = {
     duration: 800,
     easing: Chunk748780.Z.Easing.bezier(.4, 0, 0, 1)
@@ -26,7 +26,7 @@ function m(e) {
   let {
     activeSlide: t,
     children: n,
-    className: o,
+    className: a,
     slideClassName: l
   } = e, m = (0, u.Z)(t), h = i.useMemo(() => {
     let e = {};
@@ -62,13 +62,13 @@ function m(e) {
   return (0, r.jsx)(_.Provider, {
     value: E,
     children: (0, r.jsx)("div", {
-      className: o,
+      className: a,
       children: E((e, t, n) => {
         let {
           key: i
         } = n;
         return (0, r.jsx)(s.animated.div, {
-          className: a()(f.slide, l),
+          className: o()(f.slide, l),
           style: e,
           children: h[t]
         }, i)

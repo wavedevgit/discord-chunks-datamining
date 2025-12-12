@@ -9,8 +9,8 @@ require("./473749.js"), require("./399606.js");
 var Chunk481060 = require("./481060.js");
 require("./607070.js");
 var Chunk388032 = require("./388032.jsx");
-require("./265397.js");
-var Chunk630564 = require("./630564.js");
+require("./556970.js");
+var Chunk918820 = require("./918820.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,8 +38,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,8 +47,8 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -61,17 +61,17 @@ function d(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Heading, {
-      className: a.topPerksCardHeading,
+      className: o.topPerksCardHeading,
       variant: "heading-lg/extrabold",
       children: t
     }), (0, r.jsx)(i.Text, {
-      className: a.topPerksCardDescription,
+      className: o.topPerksCardDescription,
       variant: "text-sm/normal",
       children: n
     }), (0, r.jsxs)("div", {
-      className: a.labelsContainer,
+      className: o.labelsContainer,
       children: [null != s && (0, r.jsxs)("div", {
-        className: a.topPerksCardLabelContainer,
+        className: o.topPerksCardLabelContainer,
         children: [(0, r.jsx)(i.Ucv, {
           size: "sm",
           color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -80,7 +80,7 @@ function d(e) {
           children: s
         })]
       }), l && (0, r.jsxs)("div", {
-        className: a.topPerksCardLabelContainer,
+        className: o.topPerksCardLabelContainer,
         children: [(0, r.jsx)(i.owK, {
           size: "custom",
           height: 14,
@@ -89,7 +89,7 @@ function d(e) {
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/semibold",
           color: "currentColor",
-          children: o.intl.string(o.t.pCMkDb)
+          children: a.intl.string(a.t.pCMkDb)
         })]
       })]
     })]

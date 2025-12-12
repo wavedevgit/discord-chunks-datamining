@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 565849, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk295051 = require("./295051.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk64929 = require("./64929.js");
+  Chunk682310 = require("./682310.js");
 
 function g(e) {
   let {
@@ -20,36 +20,36 @@ function g(e) {
     canManageGuild: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: d.container,
+    className: u.container,
     children: [(0, r.jsxs)("div", {
-      className: d.column,
+      className: u.column,
       children: [(0, r.jsxs)(i.Heading, {
         variant: "heading-md/medium",
         color: "text-strong",
-        className: d.title,
-        children: [u.intl.string(u.t["0r0AzF"]), (0, r.jsx)(o.zA, {
+        className: u.title,
+        children: [d.intl.string(d.t["0r0AzF"]), (0, r.jsx)(o.zA, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        className: d.text,
-        children: u.intl.string(u.t.UfqmIb)
+        className: u.text,
+        children: d.intl.string(d.t.UfqmIb)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        className: d.text,
-        children: u.intl.format(u.t.vBcWUv, {
+        className: u.text,
+        children: d.intl.format(d.t.vBcWUv, {
           articleURL: l.Z.getArticleURL(c.BhN.GUILD_BANNER_SPLASH)
         })
-      }), (0, r.jsx)(s.F, {
+      }), (0, r.jsx)(a.F, {
         guild: t,
         canManageGuild: n,
-        buttonClassName: d.button
+        buttonClassName: u.button
       })]
     }), (0, r.jsx)("div", {
-      className: d.column,
-      children: (0, r.jsx)(a.O, {
+      className: u.column,
+      children: (0, r.jsx)(s.O, {
         guild: t,
         canManageGuild: n
       })

@@ -32,7 +32,7 @@ function m(e) {
 function h(e, t, n) {
   var r;
   let {
-    abortController: a,
+    abortController: o,
     onRequestProgress: c
   } = m(e), _ = null != (r = u.Z.getState().animationType) ? r : f.q.BASIC, h = {
     animation_type: _,
@@ -41,17 +41,17 @@ function h(e, t, n) {
   i.tn.post({
     url: p.ANM.CUSTOM_CALL_SOUNDS(e),
     body: h,
-    signal: a.signal,
+    signal: o.signal,
     onRequestProgress: c,
     rejectWithError: true
   }).then(p.VqG, () => {
-    if (a.signal.aborted) return
-  }), (0, l.Z)([o.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
+    if (o.signal.aborted) return
+  }), (0, l.Z)([a.Z.CHANNEL_CALL], n, t, s.jy.ENTRY)
 }
 
-function g(e, t, n, r, o) {
+function g(e, t, n, r, a) {
   var c;
-  let u = null != t.emojiId ? a.ZP.getCustomEmojiById(t.emojiId) : null,
+  let u = null != t.emojiId ? o.ZP.getCustomEmojiById(t.emojiId) : null,
     {
       abortController: d,
       onRequestProgress: f
@@ -69,5 +69,5 @@ function g(e, t, n, r, o) {
     rejectWithError: true
   }).then(p.VqG, () => {
     if (d.signal.aborted) return
-  }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT, o)
+  }), (0, l.Z)(null != r ? r : [], n, t, s.jy.DEFAULT, a)
 }

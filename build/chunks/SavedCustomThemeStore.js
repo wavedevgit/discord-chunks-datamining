@@ -25,7 +25,7 @@ function d(e) {
     let t = s.yW[e.base_theme];
     return e.colors.length > 0 && "number" == typeof e.gradient_angle && "number" == typeof e.base_mix && null != t
   } catch (e) {
-    return a.Z.captureMessage("Invalid saved custom theme: " + e, {
+    return o.Z.captureMessage("Invalid saved custom theme: " + e, {
       tags: {
         app_context: "SavedCustomThemeStore"
       }
@@ -54,7 +54,7 @@ let p = e => {
     let {
       error: t
     } = e;
-    u = 3, a.Z.captureException(t, {
+    u = 3, o.Z.captureException(t, {
       tags: {
         app_context: "SavedCustomThemeStore"
       }

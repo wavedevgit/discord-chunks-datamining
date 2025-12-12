@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,20 +20,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk461671 = require("./461671.js");
+  Chunk933751 = require("./933751.js");
 
 function j(e) {
   let {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [l, j] = i.useState(false), x = (0, s.Wu)([m.Z], () => {
+  } = (0, f.KZ)(), [a, j] = i.useState(false), x = (0, c.Wu)([b.Z], () => {
     var e;
-    return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, s.Wu)([m.Z], () => m.Z.getChangedWidgets()), _ = (0, s.Wu)([m.Z], () => m.Z.getRemovedWidgets()), I = (0, s.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, s.e7)([m.Z], () => m.Z.isSubmitting), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(I, {
+    return null != (e = b.Z.getSaveablePendingWidgets()) ? e : []
+  }), P = (0, c.Wu)([b.Z], () => b.Z.getChangedWidgets()), I = (0, c.Wu)([b.Z], () => b.Z.getRemovedWidgets()), w = (0, c.e7)([b.Z], () => b.Z.hasSaveablePendingChanges()), S = (0, c.e7)([b.Z], () => b.Z.isSubmitting), E = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
     from: {
       opacity: 0,
-      y: 80 * !S
+      y: 80 * !E
     },
     enter: {
       opacity: 1,
@@ -41,7 +41,7 @@ function j(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !S
+      y: 80 * !E
     }
   });
   i.useEffect(() => {
@@ -54,13 +54,13 @@ function j(e) {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    I && c.uvj.announce(O.intl.string(O.t["0Y/qkL"]))
-  }, [I]);
+    w && s.uvj.announce(O.intl.string(O.t["0Y/qkL"]))
+  }, [w]);
   let T = i.useCallback(async () => {
       try {
         await p.Z.savePendingWidgets(x)
       } catch (e) {
-        (0, b.L$)(h.qb.WIDGET_SAVE_FAILURE);
+        (0, m.L$)(h.qb.WIDGET_SAVE_FAILURE);
         return
       }
       for (let e of P) {
@@ -76,42 +76,42 @@ function j(e) {
           return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
         }, 0)), n(t)
       }
-      for (let e of _) n({
+      for (let e of I) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [x, P, _, n]),
+    }, [x, P, I, n]),
     C = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
-  return E((e, n) => n ? (0, r.jsx)(o.animated.div, {
+  return _((e, n) => n ? (0, r.jsx)(o.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: a()(v.content, {
-        [v.emphasized]: l
+      className: l()(v.content, {
+        [v.emphasized]: a
       }),
       "aria-label": O.intl.string(O.t["odDw+z"]),
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         className: v.message,
         children: O.intl.string(O.t["/lQiX/"])
       }), (0, r.jsxs)("div", {
         className: v.actions,
-        children: [(0, r.jsx)(c.Button, {
+        children: [(0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
           text: O.intl.string(O.t.yBZMsQ),
           onClick: C,
-          disabled: !I || w
-        }), (0, r.jsx)(c.Button, {
+          disabled: !w || S
+        }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "primary",
           text: O.intl.string(O.t["R3BPH+"]),
           onClick: T,
-          loading: w,
-          disabled: !I || w
+          loading: S,
+          disabled: !w || S
         })]
       })]
     })

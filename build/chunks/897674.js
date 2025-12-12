@@ -26,12 +26,12 @@ function u(e) {
   } = e, {
     feed: u,
     filters: d
-  } = (0, i.cj)([o.Z], () => ({
-    feed: o.Z.getFeed(t),
-    filters: o.Z.getFilters()
+  } = (0, i.cj)([a.Z], () => ({
+    feed: a.Z.getFeed(t),
+    filters: a.Z.getFilters()
   })), f = r.useMemo(() => {
     let e = n ? null == u ? true : u.unranked_game_entries.map(e => e.content) : null == u ? true : u.entries.map(e => e.content);
     return null != d ? null == e ? true : e.filter(e => c(d, e)) : e
   }, [u, d, n]);
-  return f = (0, a.Z)(f), f = (0, s.Z)(f), f = (0, l.Z)(f)
+  return f = (0, o.Z)(f), f = (0, s.Z)(f), f = (0, l.Z)(f)
 }

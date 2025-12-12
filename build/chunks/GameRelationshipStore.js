@@ -49,12 +49,12 @@ function y() {
   h.values().forEach(r => {
     let {
       type: i,
-      id: o
+      id: a
     } = r;
     if (i === l.OGo.FRIEND) n += 1;
     else if (i === l.OGo.PENDING_OUTGOING) t += 1;
     else if (i === l.OGo.PENDING_INCOMING) {
-      if (s.Z.isSpam(o) || s.Z.isIgnored(o)) return;
+      if (s.Z.isSpam(a) || s.Z.isIgnored(a)) return;
       e += 1
     }
   }), g = module, E = exports, b = require

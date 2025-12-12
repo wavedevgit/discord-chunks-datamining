@@ -3,7 +3,7 @@
 "use strict";
 var Chunk745872 = require("./745872.js"),
   Chunk834889 = require("./834889.js"),
-  o = require("./134533.js")(),
+  a = require("./134533.js")(),
   Chunk566817 = require("./566817.js"),
   Chunk815329 = require("./815329.js"),
   l = Chunk745872("%Math.floor%");
@@ -13,9 +13,9 @@ module.exports = function(e, t) {
   var n = arguments.length > 2 && !!arguments[2],
     r = true,
     c = true;
-  if ("length" in e && a) {
-    var u = a(e, "length");
+  if ("length" in e && o) {
+    var u = o(e, "length");
     u && !u.configurable && (r = false), u && !u.writable && (c = false)
   }
-  return (r || c || !n) && (o ? i(e, "length", t, true, true) : i(e, "length", t)), e
+  return (r || c || !n) && (a ? i(e, "length", t, true, true) : i(e, "length", t)), e
 }

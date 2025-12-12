@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ class c extends(r = Chunk442837.ZP.Store) {
     return null != e ? s.get(e) : true
   }
 }
-a(c, "displayName", "GuildRoleConnectionEligibilityStore");
+o(c, "displayName", "GuildRoleConnectionEligibilityStore");
 let u = new c(Chunk570140.Z, {
   GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS: l
 })

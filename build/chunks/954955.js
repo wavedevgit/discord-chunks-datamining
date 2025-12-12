@@ -3,7 +3,7 @@
 var Chunk661233 = require("./661233.js"),
   Chunk586769 = require("./586769.js"),
   Chunk675769 = require("./675769.js"),
-  a = "Expected a function",
+  o = "Expected a function",
   s = Math.max,
   l = Math.min;
 module.exports = function(e, t, n) {
@@ -11,7 +11,7 @@ module.exports = function(e, t, n) {
     h = false,
     g = false,
     E = true;
-  if ("function" != typeof e) throw TypeError(a);
+  if ("function" != typeof e) throw TypeError(o);
 
   function b(t) {
     var n = c,
@@ -59,7 +59,7 @@ module.exports = function(e, t, n) {
     }
     return true === p && (p = setTimeout(S, t)), f
   }
-  return t = o(t) || 0, r(n) && (h = !!n.leading, d = (g = "maxWait" in n) ? s(o(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), C.cancel = function() {
+  return t = a(t) || 0, r(n) && (h = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), C.cancel = function() {
     true !== p && clearTimeout(p), m = 0, c = _ = u = p = true
   }, C.flush = T, C
 }

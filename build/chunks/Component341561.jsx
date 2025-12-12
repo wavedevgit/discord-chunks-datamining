@@ -22,7 +22,7 @@ var Chunk588468 = require("./588468.jsx"),
   Chunk761652 = require("./761652.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk913235 = require("./913235.js");
+  Chunk648439 = require("./648439.js");
 let O = 8,
   v = 4,
   S = 4,
@@ -51,10 +51,10 @@ let P = {
   stores: [Chunk926491.Z],
   matches: (e, t, n, r, i) => n.length > 1,
   queryResults(e, t, n, r, i) {
-    let a = r.allowSoundmoji && (0, o.dX)({
+    let o = r.allowSoundmoji && (0, a.dX)({
         location: "queryResults"
       }),
-      c = r.allowStickers || a ? 0 : I,
+      c = r.allowStickers || o ? 0 : I,
       u = E.rnv + c,
       {
         emojis: {
@@ -81,7 +81,7 @@ let P = {
       f = t.slice(0, r), "-" === n[0] && (f = t.filter(e => e.sticker.name === n))
     }
     let p = [];
-    a && (p = _.ZP.querySoundmoji(n, e).map(e => ({
+    o && (p = _.ZP.querySoundmoji(n, e).map(e => ({
       sound: e
     })).slice(0, S), "-" === n[0] && (p = p.filter(e => e.sound.name === n)));
     let m = d.slice(0, Math.max(T, u - f.length - p.length));
@@ -103,9 +103,9 @@ let P = {
       results: {
         emojis: t,
         stickers: n,
-        soundmoji: o
+        soundmoji: a
       },
-      selectedIndex: a,
+      selectedIndex: o,
       query: s,
       onHover: l,
       onClick: c
@@ -113,7 +113,7 @@ let P = {
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, m.HI)({
         query: s,
-        selectedIndex: a,
+        selectedIndex: o,
         autocompletes: t,
         onHover: l,
         onClick: c,
@@ -132,7 +132,7 @@ let P = {
         className: y.divider
       }), (0, m.HI)({
         query: s,
-        selectedIndex: a,
+        selectedIndex: o,
         autocompletes: n,
         onHover: l,
         onClick: c,
@@ -155,12 +155,12 @@ let P = {
         key: "stickers",
         indexOffset: t.length,
         headerClassName: u ? y.secondarySection : true
-      }), (u || d) && o.length > 0 && (0, r.jsx)(i.ZP.Divider, {
+      }), (u || d) && a.length > 0 && (0, r.jsx)(i.ZP.Divider, {
         className: y.divider
       }), (0, m.HI)({
         query: s,
-        selectedIndex: a,
-        autocompletes: o,
+        selectedIndex: o,
+        autocompletes: a,
         onHover: l,
         onClick: c,
         titleWithQuery: b.t["0cKBGM"],
@@ -190,12 +190,12 @@ let P = {
         stickers: r
       },
       index: i,
-      options: o,
+      options: a,
       channel: s
     } = e;
     if (i < t.length) {
       let e = t[i];
-      return o.insertText(A(e), N(e)), {
+      return a.insertText(A(e), N(e)), {
         type: h.z2.EMOJI,
         metadata: {
           emojiId: e.id,
@@ -209,7 +209,7 @@ let P = {
     }
     if ((i -= t.length) < r.length) {
       let e = r[i];
-      return o.insertText(""), o.sendSticker(e.sticker, u.V0.AUTOCOMPLETE), {
+      return a.insertText(""), a.sendSticker(e.sticker, u.V0.AUTOCOMPLETE), {
         type: h.z2.STICKER,
         metadata: {
           numEmojiResults: t.length,
@@ -220,7 +220,7 @@ let P = {
     }
     if ((i -= r.length) < n.length) {
       let e = n[i];
-      return o.insertText((0, a.Z)(e.sound.guildId, e.sound.soundId)), p.default.track(E.rMx.SOUNDMOJI_SELECT, {
+      return a.insertText((0, o.Z)(e.sound.guildId, e.sound.soundId)), p.default.track(E.rMx.SOUNDMOJI_SELECT, {
         channel_id: s.id,
         guild_id: s.guild_id,
         sound_guild_id: e.sound.guildId,

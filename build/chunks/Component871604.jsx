@@ -50,8 +50,8 @@ function I(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -59,8 +59,8 @@ function I(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -70,15 +70,15 @@ function C(e) {
     closePopout: n
   } = e, v = I(e, ["user", "closePopout"]);
   let T = i.useRef(null),
-    C = (0, o.e7)([g.Z], () => {
+    C = (0, a.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.getUserProfile(t.id)) ? true : e.application
     }),
-    A = (0, o.e7)([f.Z, d.Z], () => d.Z.getChannel(f.Z.getChannelId())),
+    A = (0, a.e7)([f.Z, d.Z], () => d.Z.getChannel(f.Z.getChannelId())),
     N = (0, s.Z)(A),
     P = t.id,
     R = i.useCallback(() => {
-      null != C && (N ? ((0, l.X)(C.id), (0, a.Mr3)((0, E.z)(P, null == A ? true : A.guild_id)), null == n || n(), p.default.track(y.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
+      null != C && (N ? ((0, l.X)(C.id), (0, o.Mr3)((0, E.z)(P, null == A ? true : A.guild_id)), null == n || n(), p.default.track(y.rMx.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, {
         application_id: C.id
       })) : (0, h.L)(S({
         applicationId: C.id
@@ -88,20 +88,20 @@ function C(e) {
   if (null == C || !(0, u.Eb)(C)) return null;
   let {
     customInstallUrl: D
-  } = C, x = null == D || m.Z.isDiscordUrl(D) ? a.qJs : a.Gr1, L = N ? true : x;
-  return _.wS ? (0, r.jsx)(a.yRy, {
+  } = C, x = null == D || m.Z.isDiscordUrl(D) ? o.qJs : o.Gr1, L = N ? true : x;
+  return _.wS ? (0, r.jsx)(o.yRy, {
     targetElementRef: T,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
         "aria-label": O.intl.string(O.t.dbkxVm),
         onSelect: true,
-        children: (0, r.jsx)(a.kSQ, {
-          children: (0, r.jsx)(a.sNh, {
+        children: (0, r.jsx)(o.kSQ, {
+          children: (0, r.jsx)(o.sNh, {
             id: "copy",
             label: O.intl.string(O.t.XWDihq),
             action: () => (0, _.JG)((0, c.J)(C))

@@ -2,12 +2,12 @@
 /** chunk id: 413872, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => o
+  t: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk225779 = require("./225779.jsx");
-let o = {
+let a = {
   title: "Notice",
   stories: [{
     id: "notice",
@@ -16,7 +16,7 @@ let o = {
       let {
         color: t,
         message: n
-      } = e, o = {
+      } = e, a = {
         BRAND: i.DM.BRAND,
         INFO: i.DM.INFO,
         WARNING: i.DM.WARNING,
@@ -25,7 +25,7 @@ let o = {
         NEUTRAL: i.DM.NEUTRAL
       };
       return (0, r.jsx)(i.qX, {
-        color: o[t],
+        color: a[t],
         children: n
       })
     },

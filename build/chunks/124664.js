@@ -8,11 +8,11 @@ module.exports = (e, t) => {
   if ("number" == typeof e && (e = String(e)), "string" != typeof e) return null;
   let n = null;
   if ((t = t || {}).rtl) {
-    let r, i = t.includePrerelease ? o[a.COERCERTLFULL] : o[a.COERCERTL];
+    let r, i = t.includePrerelease ? a[o.COERCERTLFULL] : a[o.COERCERTL];
     for (;
       (r = i.exec(e)) && (!n || n.index + n[0].length !== e.length);) n && r.index + r[0].length === n.index + n[0].length || (n = r), i.lastIndex = r.index + r[1].length + r[2].length;
     i.lastIndex = false
-  } else n = e.match(t.includePrerelease ? o[a.COERCEFULL] : o[a.COERCE]);
+  } else n = e.match(t.includePrerelease ? a[o.COERCEFULL] : a[o.COERCE]);
   if (null === n) return null;
   let s = n[2],
     l = n[3] || "0",

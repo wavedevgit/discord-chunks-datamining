@@ -23,19 +23,19 @@ var Chunk46015 = require("./46015.js"),
   }),
   b = String(String).split("String"),
   y = module.exports = function(e, t, n) {
-    "Symbol(" === m(p(t), 0, 7) && (t = "[" + h(p(t), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!a(e, "name") || l && e.name !== t) && (s ? _(e, "name", {
+    "Symbol(" === m(p(t), 0, 7) && (t = "[" + h(p(t), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), n && n.getter && (t = "get " + t), n && n.setter && (t = "set " + t), (!o(e, "name") || l && e.name !== t) && (s ? _(e, "name", {
       value: t,
       configurable: true
-    }) : e.name = t), E && n && a(n, "arity") && e.length !== n.arity && _(e, "length", {
+    }) : e.name = t), E && n && o(n, "arity") && e.length !== n.arity && _(e, "length", {
       value: n.arity
     });
     try {
-      n && a(n, "constructor") && n.constructor ? s && _(e, "prototype", {
+      n && o(n, "constructor") && n.constructor ? s && _(e, "prototype", {
         writable: false
       }) : e.prototype && (e.prototype = true)
     } catch (e) {}
     var r = d(e);
-    return a(r, "source") || (r.source = g(b, "string" == typeof t ? t : "")), e
+    return o(r, "source") || (r.source = g(b, "string" == typeof t ? t : "")), e
   };
 Function.prototype.toString = y(function() {
   return Chunk880181(this) && f(this).source || Chunk845691(this)

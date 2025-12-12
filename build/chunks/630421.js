@@ -61,7 +61,7 @@ function p(e) {
     var R = (0, i.Z)(l),
       w = "clientHeight",
       D = "clientWidth";
-    R === (0, o.Z)(l) && (R = (0, a.Z)(l), "static" !== (0, s.Z)(R).position && "absolute" === m && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && p === r.ut) && (N = r.I, S -= (b && R === P && P.visualViewport ? P.visualViewport.height : R[w]) - c.height, S *= h ? 1 : false), (u === r.t$ || (u === r.we || u === r.I) && p === r.ut) && (A = r.F2, O -= (b && R === P && P.visualViewport ? P.visualViewport.width : R[D]) - c.width, O *= h ? 1 : false)
+    R === (0, a.Z)(l) && (R = (0, o.Z)(l), "static" !== (0, s.Z)(R).position && "absolute" === m && (w = "scrollHeight", D = "scrollWidth")), (u === r.we || (u === r.t$ || u === r.F2) && p === r.ut) && (N = r.I, S -= (b && R === P && P.visualViewport ? P.visualViewport.height : R[w]) - c.height, S *= h ? 1 : false), (u === r.t$ || (u === r.we || u === r.I) && p === r.ut) && (A = r.F2, O -= (b && R === P && P.visualViewport ? P.visualViewport.width : R[D]) - c.width, O *= h ? 1 : false)
   }
   var x = Object.assign({
       position: m
@@ -69,7 +69,7 @@ function p(e) {
     L = true === E ? f({
       x: O,
       y: S
-    }, (0, o.Z)(l)) : {
+    }, (0, a.Z)(l)) : {
       x: O,
       y: S
     };
@@ -84,8 +84,8 @@ let _ = {
       n = e.options,
       r = n.gpuAcceleration,
       i = true === r || r,
-      o = n.adaptive,
-      a = true === o || o,
+      a = n.adaptive,
+      o = true === a || a,
       s = n.roundOffsets,
       u = true === s || s,
       d = {
@@ -99,7 +99,7 @@ let _ = {
     null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign({}, t.styles.popper, p(Object.assign({}, d, {
       offsets: t.modifiersData.popperOffsets,
       position: t.options.strategy,
-      adaptive: a,
+      adaptive: o,
       roundOffsets: u
     })))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign({}, t.styles.arrow, p(Object.assign({}, d, {
       offsets: t.modifiersData.arrow,

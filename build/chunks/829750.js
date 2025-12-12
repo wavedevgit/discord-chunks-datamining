@@ -11,13 +11,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e) {
-  return (0, r.cj)([o.ZP, i.Z], () => {
-    let t = o.ZP.countVoiceStatesForChannel(e.id),
+  return (0, r.cj)([a.ZP, i.Z], () => {
+    let t = a.ZP.countVoiceStatesForChannel(e.id),
       n = i.Z.getGuild(e.getGuildId());
     return null == n ? {
       reachedLimit: false,
       limit: false
-    } : e.type === a.d4z.GUILD_STAGE_VOICE ? {
+    } : e.type === o.d4z.GUILD_STAGE_VOICE ? {
       reachedLimit: t > n.maxStageVideoChannelUsers,
       limit: n.maxStageVideoChannelUsers
     } : {
@@ -28,12 +28,12 @@ function s(e) {
 }
 
 function l(e) {
-  let t = o.ZP.countVoiceStatesForChannel(e.id),
+  let t = a.ZP.countVoiceStatesForChannel(e.id),
     n = i.Z.getGuild(e.getGuildId());
   return null == n ? {
     reachedLimit: false,
     limit: false
-  } : e.type === a.d4z.GUILD_STAGE_VOICE ? {
+  } : e.type === o.d4z.GUILD_STAGE_VOICE ? {
     reachedLimit: t > n.maxStageVideoChannelUsers,
     limit: n.maxStageVideoChannelUsers
   } : {

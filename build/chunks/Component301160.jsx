@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk570533 = require("./570533.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk929828 = require("./929828.js");
+  Chunk851120 = require("./851120.js");
 
 function j(e) {
   let {
@@ -25,15 +25,15 @@ function j(e) {
   });
   return (0, a.jsx)(s.$q, {
     size: 20,
-    className: c.emojiRow,
+    className: d.emojiRow,
     onChange: t,
     type: s.M0.INVERTED,
     value: n,
     reverse: true,
     children: (0, a.jsxs)("div", {
-      className: c.emojiLabel,
+      className: d.emojiLabel,
       children: [(0, a.jsx)("img", {
-        className: c.emojiImage,
+        className: d.emojiImage,
         src: o,
         width: 24,
         height: 24,
@@ -41,7 +41,7 @@ function j(e) {
       }), (0, a.jsx)(l.Text, {
         color: "text-strong",
         variant: "text-md/medium",
-        className: c.emojiAlias,
+        className: d.emojiAlias,
         children: i.name
       })]
     })
@@ -60,13 +60,13 @@ function h(e) {
   return (0, a.jsx)(o.Modal, {
     transitionState: h,
     onClose: u,
-    title: d.intl.string(d.t.xC6tUv),
+    title: c.intl.string(c.t.xC6tUv),
     actions: [{
-      text: d.intl.string(d.t["ETE/oC"]),
+      text: c.intl.string(c.t["ETE/oC"]),
       variant: "secondary",
       onClick: u
     }, {
-      text: d.intl.format(d.t.pX74jh, {
+      text: c.intl.format(c.t.pX74jh, {
         totalEmoji: g.size
       }),
       variant: "primary",
@@ -79,11 +79,11 @@ function h(e) {
       gap: "md",
       children: [(0, a.jsx)(l.Text, {
         variant: "text-md/normal",
-        children: d.intl.format(d.t["OnK+C1"], {
+        children: c.intl.format(c.t["OnK+C1"], {
           transitionToManageEmoji: r
         })
       }), null != x && x.length > 0 && (0, a.jsx)("div", {
-        className: c.emojiContainer,
+        className: d.emojiContainer,
         children: x.map(e => null != t && t.has(e.id) ? null : (0, a.jsx)(j, {
           emoji: e,
           onChange: () => {

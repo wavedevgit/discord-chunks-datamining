@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let c = {
     async fetchUserApplicationIdentitiesWithProfiles(e, t) {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "USER_APPLICATION_IDENTITY_FETCH_USER_START",
         userId: e
       });
@@ -25,16 +25,16 @@ let c = {
           rejectWithError: true,
           signal: t
         });
-        o.Z.dispatch({
+        a.Z.dispatch({
           type: "USER_APPLICATION_IDENTITY_FETCH_USER_SUCCESS",
           userId: e,
           identities: n.body.identities
         })
       } catch (t) {
-        throw o.Z.dispatch({
+        throw a.Z.dispatch({
           type: "USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE",
           userId: e
-        }), a.Z.captureException(t), t
+        }), o.Z.captureException(t), t
       }
     }
   },

@@ -42,7 +42,7 @@ async function v(e) {
     case O.oC.GUILD_SHOP:
       return (0, i.r)(v, S);
     case O.oC.MEMBER_APPLICATIONS:
-      return (0, o.v)(t);
+      return (0, a.v)(t);
     case O.oC.GUILD_HOME:
       return (0, l.s)(t);
     case O.oC.CHANNEL_BROWSER:
@@ -52,7 +52,7 @@ async function v(e) {
     case O.oC.CUSTOMIZE_COMMUNITY:
       return null != v && v.features.has(y.GuildFeatures.COMMUNITY);
     case O.oC.MEMBER_SAFETY:
-      return (0, a.lv)(t);
+      return (0, o.lv)(t);
     case O.oC.GUILD_BOOSTS:
       returntrue;
     case O.oC.REPORT_TO_MOD:

@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => B
 }), require("./388685.js");
 var r, Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk442837 = require("./442837.js"),
   Chunk579092 = require("./579092.js"),
   Chunk570140 = require("./570140.js"),
@@ -34,7 +34,7 @@ let g = new Chunk579092.Yd("OverlayV3NativeClickZoneStore"),
   S = false;
 
 function I(e) {
-  return !o()(e, y)
+  return !a()(e, y)
 }
 
 function T(e) {
@@ -110,17 +110,17 @@ function x() {
 function L(e, t, n, r) {
   let i = c.Z.getWindow(m.$J);
   if (null == i) return;
-  let o = Math.ceil(n * i.innerWidth),
-    a = Math.ceil(r * i.innerHeight),
+  let a = Math.ceil(n * i.innerWidth),
+    o = Math.ceil(r * i.innerHeight),
     s = new MouseEvent((0, p.oc)(t), {
-      screenX: o,
-      screenY: a,
-      clientX: o,
-      clientY: a,
+      screenX: a,
+      screenY: o,
+      clientX: a,
+      clientY: o,
       bubbles: true,
       view: i
     }),
-    l = i.document.elementFromPoint(o, a);
+    l = i.document.elementFromPoint(a, o);
   null != l && l.dispatchEvent(s)
 }
 

@@ -1,7 +1,7 @@
-/** Chunk was on 46931 **/
+/** Chunk was on 48615 **/
 /** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,44 +13,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk822183 = require("./822183.js"),
   Chunk364125 = require("./364125.js"),
   Chunk90753 = require("./90753.js"),
-  Chunk806777 = require("./806777.js");
+  Chunk80109 = require("./80109.js");
 
-function m(e) {
+function b(e) {
   let {
     focused: t,
     channelId: n,
     streamerId: l,
     stream: u
-  } = e, m = i.useRef(null), _ = (0, o.e7)([s.default], () => s.default.getCurrentUser());
-  a()(null != _, "user cannot be null"), (0, f.Z)(m, _, l, n);
+  } = e, b = i.useRef(null), m = (0, o.e7)([s.default], () => s.default.getCurrentUser());
+  a()(null != m, "user cannot be null"), (0, f.Z)(b, m, l, n);
   let {
     handleClick: g,
     handleMouseDown: v,
-    handleMouseEnter: b,
-    handleMouseMove: h,
-    handleMouseUp: E
+    handleMouseEnter: h,
+    handleMouseMove: E,
+    handleMouseUp: _
   } = (0, d.Z)({
-    user: _,
+    user: m,
     channelId: n,
     streamerId: l,
     stream: u,
     focused: t,
-    canvas: m.current
+    canvas: b.current
   });
   return (0, r.jsx)(c.Z, {
     children: (0, r.jsx)("canvas", {
-      ref: m,
+      ref: b,
       onClick: g,
       onMouseDown: v,
-      onMouseEnter: b,
-      onMouseMove: h,
-      onMouseUp: E,
+      onMouseEnter: h,
+      onMouseMove: E,
+      onMouseUp: _,
       className: p.sharedCanvas
     })
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     isSharedCanvasEnabled: t
   } = u.Z.useExperiment({
@@ -59,7 +59,7 @@ function _(e) {
   }, {
     autoTrackExposure: true
   });
-  return !t || e.hasScreenMessage ? null : (0, r.jsx)(m, function(e) {
+  return !t || e.hasScreenMessage ? null : (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

@@ -20,32 +20,32 @@ function i(e, t, n) {
   return parseFloat(t)
 }
 
-function o(e) {
+function a(e) {
   let t, {
       hue: n,
       saturation: r,
       lightness: i,
-      alpha: o
+      alpha: a
     } = e,
-    a = (1 - Math.abs(2 * (i /= 255) - 1)) * (r /= 255),
-    s = a * (1 - Math.abs(n / 60 % 2 - 1)),
-    l = i - a / 2,
-    c = (t = n < 60 ? [a, s, 0] : n < 120 ? [s, a, 0] : n < 180 ? [0, a, s] : n < 240 ? [0, s, a] : n < 300 ? [s, 0, a] : [a, 0, s]).map(e => Math.round((e + l) * 255));
+    o = (1 - Math.abs(2 * (i /= 255) - 1)) * (r /= 255),
+    s = o * (1 - Math.abs(n / 60 % 2 - 1)),
+    l = i - o / 2,
+    c = (t = n < 60 ? [o, s, 0] : n < 120 ? [s, o, 0] : n < 180 ? [0, o, s] : n < 240 ? [0, s, o] : n < 300 ? [s, 0, o] : [o, 0, s]).map(e => Math.round((e + l) * 255));
   return {
     red: c[0],
     green: c[1],
     blue: c[2],
-    alpha: o
+    alpha: a
   }
 }
 
-function a(e) {
+function o(e) {
   let {
     red: t,
     green: n,
     blue: r,
     alpha: i
-  } = e, o = t / 255, a = n / 255, s = r / 255, l = Math.max(o, a, s), c = Math.min(o, a, s), u = l - c, d = (l + c) / 2, f = u > 0 ? u / (1 - Math.abs(2 * d - 1)) : 0;
+  } = e, a = t / 255, o = n / 255, s = r / 255, l = Math.max(a, o, s), c = Math.min(a, o, s), u = l - c, d = (l + c) / 2, f = u > 0 ? u / (1 - Math.abs(2 * d - 1)) : 0;
   if (0 === u) return {
     hue: 0,
     saturation: f,
@@ -54,14 +54,14 @@ function a(e) {
   };
   let p = 0;
   switch (l) {
-    case o:
-      p = (a - s) / u % 6;
-      break;
     case a:
-      p = (s - o) / u + 2;
+      p = (o - s) / u % 6;
+      break;
+    case o:
+      p = (s - a) / u + 2;
       break;
     case s:
-      p = (a - s) / u + 4
+      p = (o - s) / u + 4
   }
   return {
     hue: 60 * p,
@@ -102,20 +102,20 @@ class c {
     var t;
     let [, n, r] = null != (t = e.match(l)) ? t : [];
     if (null == n || null == r) return;
-    let a = r.split(/\s*[,/\s]\s*/).map(e => e.replace(",", "").trim()).filter(e => "" !== e).map((e, t) => i(n, e, t));
+    let o = r.split(/\s*[,/\s]\s*/).map(e => e.replace(",", "").trim()).filter(e => "" !== e).map((e, t) => i(n, e, t));
     if ("hsl" === n.substr(0, 3)) {
-      let e = o({
-        hue: a[0],
-        saturation: a[1],
-        lightness: a[2],
-        alpha: a[3]
+      let e = a({
+        hue: o[0],
+        saturation: o[1],
+        lightness: o[2],
+        alpha: o[3]
       });
       return new c(e.red, e.green, e.blue, e.alpha)
     }
-    return new c(a[0], a[1], a[2], "number" == typeof a[3] ? a[3] : 1)
+    return new c(o[0], o[1], o[2], "number" == typeof o[3] ? o[3] : 1)
   }
   toHSL() {
-    return a({
+    return o({
       red: this.red,
       green: this.green,
       blue: this.blue,

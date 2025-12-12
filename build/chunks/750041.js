@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => p
 }), require("./539854.js");
 var r, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js");
@@ -72,7 +72,7 @@ class p extends(r = Chunk442837.ZP.Store) {
     super(l.Z, f(u({}, e), {
       CLEAR_CACHES: () => (this.clear(), false),
       WRITE_CACHES: () => (this.save(), false)
-    }), t), o()(null != this.getClass().displayName, "Snapshot stores need a display name"), o()(!("CLEAR_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action"), o()(!("WRITE_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'WRITE_CACHES' action"), p.allStores.push(this)
+    }), t), a()(null != this.getClass().displayName, "Snapshot stores need a display name"), a()(!("CLEAR_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'CLEAR_CACHES' action"), a()(!("WRITE_CACHES" in e), "MobileCacheSnapshotStores cannot use the 'WRITE_CACHES' action"), p.allStores.push(this)
   }
 }
 c(p, "allStores", [])

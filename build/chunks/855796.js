@@ -12,8 +12,8 @@ var Chunk544891 = require("./544891.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e) {
-  let t = new a.Hx(e).getAnyErrorMessage();
-  o.Z.show({
+  let t = new o.Hx(e).getAnyErrorMessage();
+  a.Z.show({
     title: l.intl.string(l.t["328j/I"]),
     body: null != t ? t : l.intl.string(l.t.fEptJP)
   })
@@ -24,12 +24,12 @@ function u(e) {
     userId: t,
     applicationId: n,
     onSuccess: i,
-    type: o
+    type: a
   } = e;
   return r.tn.put({
     url: s.ANM.USER_GAME_RELATIONSHIP(t, n),
     body: {
-      type: o
+      type: a
     },
     oldFormErrors: true,
     rejectWithError: false

@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk427164 = require("./427164.js"),
   Chunk751823 = require("./751823.js");
-let o = {
+let a = {
     useAGC2: true,
     enableAnalog: false,
     enableDigital: true,
@@ -17,7 +17,7 @@ let o = {
     max_output_noise_level_dbfs: false,
     fixed_gain_db: 0
   },
-  a = (0, Chunk427164.le)({
+  o = (0, Chunk427164.le)({
     kind: "user",
     name: "2025-09-agc2-v2",
     defaultConfig: {
@@ -35,27 +35,27 @@ let o = {
       },
       2: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .5
       },
       3: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .7
       },
       4: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .8
       },
       5: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .9
       },
       6: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .95
       }
     }
@@ -78,27 +78,27 @@ let o = {
       },
       2: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .5
       },
       3: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .7
       },
       4: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .8
       },
       5: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .9
       },
       6: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .95
       }
     }
@@ -121,27 +121,27 @@ let o = {
       },
       2: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .5
       },
       3: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .7
       },
       4: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .8
       },
       5: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .9
       },
       6: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: o,
+        noiseCancellationConfig: a,
         vadKrispActivationThreshold: .95
       }
     }
@@ -164,7 +164,7 @@ function c(e) {
     disable: n,
     autoTrackExposure: true
   });
-  return r || n ? a.definition.defaultConfig : a.getConfig({
+  return r || n ? o.definition.defaultConfig : o.getConfig({
     location: t
   })
 }

@@ -25,8 +25,8 @@ function m() {
     m = Chunk722687.IU.useControlledSetting(exports);
 
   function h(e) {
-    if (!e && (0, a.S)()) return void i.Z.showAgeVerificationGetStartedModal({
-      entryPoint: o.cU.MESSAGE_REQUESTS_SETTINGS
+    if (!e && (0, o.S)()) return void i.Z.showAgeVerificationGetStartedModal({
+      entryPoint: a.cU.MESSAGE_REQUESTS_SETTINGS
     });
     s.IU.updateControlledSetting(t, !e)
   }

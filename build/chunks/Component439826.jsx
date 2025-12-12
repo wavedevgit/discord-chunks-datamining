@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 439826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk642145 = require("./642145.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518388 = require("./518388.js");
+  Chunk598589 = require("./598589.js");
 
 function Z(e) {
   let {
@@ -67,10 +67,10 @@ function L(e) {
   } = e, {
     ref: d,
     height: p = 0
-  } = (0, m.ZP)([i]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, x = (0, j.z)(n), {
-    type: f,
-    hints: g
-  } = r.useMemo(() => h || x ? {
+  } = (0, m.ZP)([i]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, f = (0, j.z)(n), {
+    type: x,
+    hints: b
+  } = r.useMemo(() => h || f ? {
     type: 2,
     hints: []
   } : i.length > 0 ? {
@@ -82,11 +82,11 @@ function L(e) {
   } : {
     type: 2,
     hints: []
-  }, [i, h, x, l]), b = 2 !== f, v = (0, u.q_F)({
-    opacity: +!!b,
-    height: b ? p : 0,
+  }, [i, h, f, l]), g = 2 !== x, v = (0, u.q_F)({
+    opacity: +!!g,
+    height: g ? p : 0,
     config: k.Y
-  }), _ = 0 === f ? u.Mgn : u.d3s, y = u.TVs.unsafe_rawColors.RED_345.css, C = 0 === f ? y : o ? u.TVs.colors.TEXT_DEFAULT : u.TVs.colors.WHITE;
+  }), y = 0 === x ? u.Mgn : u.d3s, C = u.TVs.unsafe_rawColors.RED_345.css, _ = 0 === x ? C : o ? u.TVs.colors.TEXT_DEFAULT : u.TVs.colors.WHITE;
   return (0, a.jsx)(s.animated.div, {
     style: v,
     children: (0, a.jsxs)("div", {
@@ -94,15 +94,15 @@ function L(e) {
       className: D.hints,
       children: [(0, a.jsxs)("div", {
         className: D.hintsContainer,
-        children: [(0, a.jsx)(_, {
+        children: [(0, a.jsx)(y, {
           size: "xs",
-          color: C
+          color: _
         }), (0, a.jsx)(u.Text, {
           variant: "text-xs/medium",
           color: o ? "text-muted" : "always-white",
-          children: g.at(0)
+          children: b.at(0)
         })]
-      }), 0 === f && (0, a.jsx)(u.Avr, {
+      }), 0 === x && (0, a.jsx)(u.Avr, {
         text: A.intl.string(A.t["yKJi+/"]),
         onClick: () => (0, S.y)({
           quest: n,
@@ -128,33 +128,33 @@ function M(e) {
     onCtxMenuOpen: G,
     onCtxMenuSelect: V,
     sourceQuestContent: H
-  } = e, W = (0, y.PB)(S), z = (0, p.ZP)(), q = ((0, d.wj)(z) ? R.BRd.DARK : R.BRd.LIGHT) === R.BRd.DARK, K = (0, j.tP)(S), Y = (null == (t = S.userStatus) ? true : t.claimedAt) != null, Q = (0, j.B6)(S.config.expiresAt, {
+  } = e, W = (0, C.PB)(S), z = (0, p.ZP)(), q = ((0, d.wj)(z) ? R.BRd.DARK : R.BRd.LIGHT) === R.BRd.DARK, K = (0, j.tP)(S), Y = (null == (t = S.userStatus) ? true : t.claimedAt) != null, Q = (0, j.B6)(S.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), X = (null == (n = S.userStatus) ? true : n.enrolledAt) != null, J = (null == (i = S.userStatus) ? true : i.completedAt) != null, {
     onAssetLoadComplete: $
   } = r.useContext(P.k), ee = q ? "text-muted" : "always-white", et = r.useCallback(async () => {
-    W && ((0, _.zi)(S) || X ? (0, N.openVideoQuestModal)({
+    W && ((0, y.zi)(S) || X ? (0, N.openVideoQuestModal)({
       quest: S,
-      questContent: b.jn.QUEST_HOME_DESKTOP,
+      questContent: g.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: H,
-      sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
+      sourceQuestContentCTA: x.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     }) : (0, v.R)(I.dr.QUEST_HOME_DESKTOP) ? await (0, N.enrollAndStartVideoQuestWithErrorHandling)(S, {
-      questContent: b.jn.QUEST_HOME_DESKTOP,
-      questContentCTA: f.jZ.ACCEPT_QUEST,
+      questContent: g.jn.QUEST_HOME_DESKTOP,
+      questContentCTA: x.jZ.ACCEPT_QUEST,
       sourceQuestContent: H,
-      sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
-    }) : ((0, x.AH)(S.id, {
-      questContent: b.jn.QUEST_HOME_DESKTOP,
-      questContentCTA: f.jZ.ACCEPT_QUEST,
+      sourceQuestContentCTA: x.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
+    }) : ((0, f.AH)(S.id, {
+      questContent: g.jn.QUEST_HOME_DESKTOP,
+      questContentCTA: x.jZ.ACCEPT_QUEST,
       sourceQuestContent: H
     }), (0, N.openVideoQuestModal)({
       quest: S,
-      questContent: b.jn.QUEST_HOME_DESKTOP,
+      questContent: g.jn.QUEST_HOME_DESKTOP,
       sourceQuestContent: H,
-      sourceQuestContentCTA: f.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
+      sourceQuestContentCTA: x.jZ.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
     })))
-  }, [W, S, X, H]), en = (0, o.e7)([g.Z], () => g.Z.getQuestHomeTakeoverConfig()), ea = r.useMemo(() => null != en && (0, C.P9)(en, S.id), [en, S.id]);
+  }, [W, S, X, H]), en = (0, o.e7)([b.Z], () => b.Z.getQuestHomeTakeoverConfig()), ea = r.useMemo(() => null != en && (0, _.P9)(en, S.id), [en, S.id]);
   return (0, a.jsxs)("div", {
     className: D.container,
     children: [(0, a.jsx)("div", {
@@ -187,14 +187,14 @@ function M(e) {
             direction: "horizontal",
             fullWidth: false,
             gap: 8,
-            children: [ea && !(0, _.zi)(S) && (0, a.jsx)(Z, {
+            children: [ea && !(0, y.zi)(S) && (0, a.jsx)(Z, {
               children: A.intl.string(A.t.Jt6u7B)
             }), S.preview && (0, a.jsx)(Z, {
               variant: "brand",
               children: A.intl.string(A.t.SKNnqq)
             })]
           }), W && (0, a.jsx)(c.u, {
-            text: J ? A.intl.string(A.t.YsCuyF) : X ? A.intl.string(A.t["74KqrR"]) : (0, _.zi)(S) ? A.intl.string(A.t.I6JG46) : A.intl.string(A.t.umdNin),
+            text: J ? A.intl.string(A.t.YsCuyF) : X ? A.intl.string(A.t["74KqrR"]) : (0, y.zi)(S) ? A.intl.string(A.t.I6JG46) : A.intl.string(A.t.umdNin),
             asContainer: true,
             tag: "span",
             children: (0, a.jsx)(u.P3F, {
@@ -210,7 +210,7 @@ function M(e) {
             onOpen: G,
             onClose: F,
             onSelect: V,
-            questContent: b.jn.QUEST_HOME_DESKTOP,
+            questContent: g.jn.QUEST_HOME_DESKTOP,
             quest: S,
             hideLearnMore: true,
             shouldShowDisclosure: true,

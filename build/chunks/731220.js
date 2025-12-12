@@ -1,29 +1,3 @@
-/** Chunk was on 11298 **/
-/** chunk id: 731220, original params: t,e,n (module,exports,require) **/
-require.d(exports, {
-  e: () => r
-}), require("./388685.js");
-var Chunk473749 = require("./473749.js"),
-  Chunk957115 = require("./957115.js"),
-  Chunk257126 = require("./257126.js");
-
-function r(t) {
-  let {
-    getOptions: e
-  } = t, n = l.useMemo(() => {
-    let t = e();
-    return (0, a.Bi)(t, i.Ef)
-  }, [e]), [r, u] = l.useState(null), [s, b] = l.useState(""), [d, o] = l.useState(false), v = l.useCallback(t => {
-    o(true), u(t)
-  }, []), O = l.useCallback(t => {
-    b(t)
-  }, []);
-  return l.useMemo(() => ({
-    options: n,
-    selectedOption: r,
-    freeformText: s,
-    isFreeformEnabled: d,
-    selectOption: v,
-    onFreeformTextChange: O
-  }), [n, r, s, d, v, O])
-}
+/** Chunk was on 26347 **/
+/** chunk id: 731220, original params: i (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfs":["Redaguoti nustatymus"],"NzUuLD":["+",[1,"count"]," ",[6,"count",{"one":["žinutė"],"few":["žinutės"],"other":["žinučių"]},0,"cardinal"]],"O+racd":["Pranešimų nėra."],"5H2Jd6":["Rodyti visus"],"Ko8NGn":["Rodyti žymes"],"dcpdhC":["Pasirink žinutę, kad ten pereitum."],"VAK+h9":["Labas! Tai tavo pranešimų centras"]}')

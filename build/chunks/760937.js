@@ -4,11 +4,11 @@ var Chunk565580 = require("./565580.js");
 module.exports = function(e, t) {
   var n = false,
     i = e.length,
-    o = i - 1;
+    a = i - 1;
   for (t = true === t ? i : t; ++n < t;) {
-    var a = r(n, o),
-      s = e[a];
-    e[a] = e[n], e[n] = s
+    var o = r(n, a),
+      s = e[o];
+    e[o] = e[n], e[n] = s
   }
   return e.length = t, e
 }

@@ -7,15 +7,15 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk450433 = require("./450433.js");
+  o = require.n(Chunk120356),
+  Chunk171532 = require("./171532.js");
 
 function l(e) {
   let {
     className: t
-  } = e, [n] = i.useState(() => Math.floor(60 * Math.random()) + 20), [o] = i.useState(() => Math.floor(60 * Math.random()) + 20), [l] = i.useState(() => Math.floor(1600 * Math.random()) / 1e3);
+  } = e, [n] = i.useState(() => Math.floor(60 * Math.random()) + 20), [a] = i.useState(() => Math.floor(60 * Math.random()) + 20), [l] = i.useState(() => Math.floor(1600 * Math.random()) / 1e3);
   return (0, r.jsx)("div", {
-    className: a()(t, s.placeholderCard),
+    className: o()(t, s.placeholderCard),
     style: {
       animationDelay: "".concat(l, "s")
     },
@@ -34,7 +34,7 @@ function l(e) {
         children: (0, r.jsx)("div", {
           className: s.placeholderDescription,
           style: {
-            width: "".concat(o, "%")
+            width: "".concat(a, "%")
           }
         })
       })]

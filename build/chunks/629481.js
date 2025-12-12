@@ -2,11 +2,11 @@
 /** chunk id: 629481, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Hr: () => o,
+  Hr: () => a,
   P4: () => s,
   TR: () => l,
   mz: () => r,
-  tM: () => a,
+  tM: () => o,
   xv: () => i
 });
 var r = function(e) {
@@ -15,7 +15,7 @@ var r = function(e) {
   i = function(e) {
     return e.CHANNEL_ROW_CONTEXT_MENU = "channel_row_context_menu", e.SHOP_HEADER_BUTTON = "shop_header_button", e
   }({});
-let o = "hasClickedGuildShopProductPreviewTab",
-  a = "hasClickedGuildShopChannelRow",
+let a = "hasClickedGuildShopProductPreviewTab",
+  o = "hasClickedGuildShopChannelRow",
   s = "https://discord.com/servershop",
   l = "1 GB"

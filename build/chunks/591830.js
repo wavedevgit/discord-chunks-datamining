@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 class i {
   build(e, t) {
-    return this.context = t, o(() => this.iterateCollection(e))
+    return this.context = t, a(() => this.iterateCollection(e))
   }* iterateCollection(e) {
     let {
       children: t,
@@ -44,8 +44,8 @@ class i {
     if ("cell" === t.type && null != t.key) return `${r}${t.key}`;
     let i = t.value;
     if (null != i) {
-      var o;
-      let e = null != (o = i.key) ? o : i.id;
+      var a;
+      let e = null != (a = i.key) ? a : i.id;
       if (null == e) throw Error("No key found for item");
       return e
     }
@@ -58,14 +58,14 @@ class i {
   }* getFullNode(e, t, n, i) {
     var l, c, u, d, f, p, _, m;
     if (r.isValidElement(e.element) && e.element.type === r.Fragment) {
-      let o = [];
+      let a = [];
       r.Children.forEach(e.element.props.children, e => {
-        o.push(e)
+        a.push(e)
       });
-      let a = null != (l = e.index) ? l : 0;
-      for (let e of o) yield* this.getFullNode({
+      let o = null != (l = e.index) ? l : 0;
+      for (let e of a) yield* this.getFullNode({
         element: e,
-        index: a++
+        index: o++
       }, t, n, i);
       return
     }
@@ -84,9 +84,9 @@ class i {
         let e = h.type;
         throw Error(`Unknown element <${e}> in collection.`)
       }
-      let o = r.getCollectionNode(h.props, this.context),
+      let a = r.getCollectionNode(h.props, this.context),
         l = null != (c = e.index) ? c : 0,
-        _ = o.next();
+        _ = a.next();
       for (; !_.done && _.value;) {
         let r = _.value;
         e.index = l;
@@ -96,13 +96,13 @@ class i {
           ...r,
           key: c,
           index: l,
-          wrapper: a(e.wrapper, r.wrapper)
+          wrapper: o(e.wrapper, r.wrapper)
         }, this.getChildState(t, r), n ? `${n}${h.key}` : h.key, i)];
         for (let t of m) {
           if (t.value = null != (f = null != (d = r.value) ? d : e.value) ? f : null, t.value && this.cache.set(t.value, t), e.type && t.type !== e.type) throw Error(`Unsupported type <${s(t.type)}> in <${s(null!=(p=null==i?true:i.type)?p:"unknown parent type")}>. Only <${s(e.type)}> is supported.`);
           l++, yield t
         }
-        _ = o.next(m)
+        _ = a.next(m)
       }
       return
     }
@@ -122,7 +122,7 @@ class i {
         wrapper: e.wrapper,
         shouldInvalidate: e.shouldInvalidate,
         hasChildNodes: e.hasChildNodes || false,
-        childNodes: o(function*() {
+        childNodes: a(function*() {
           if (!e.hasChildNodes || !e.childNodes) return;
           let n = 0;
           for (let r of e.childNodes())
@@ -139,7 +139,7 @@ class i {
   }
 }
 
-function o(e) {
+function a(e) {
   let t = [],
     n = null;
   return {
@@ -150,7 +150,7 @@ function o(e) {
   }
 }
 
-function a(e, t) {
+function o(e, t) {
   return e && t ? n => e(t(n)) : e || t || true
 }
 

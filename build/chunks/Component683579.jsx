@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 683579, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,45 +12,45 @@ var Chunk481060 = require("./481060.js"),
   Chunk769998 = require("./769998.jsx"),
   Chunk671066 = require("./671066.jsx"),
   Chunk273504 = require("./273504.js"),
-  Chunk464992 = require("./464992.js");
+  Chunk239244 = require("./239244.js");
 
-function d(e) {
+function u(e) {
   let {
     action: t,
     triggerType: n,
-    toggled: s,
-    onToggleAction: a
+    toggled: a,
+    onToggleAction: s
   } = e, o = (0, l.c)(t.type, t, n);
   if (null == o) return null;
   let {
     headerText: c,
-    descriptionText: d,
+    descriptionText: u,
     icon: g
   } = o;
   return (0, r.jsxs)("div", {
-    className: u.actionContainer,
+    className: d.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: u.actionIconContainer,
+      className: d.actionIconContainer,
       children: (0, r.jsx)(g, {
         size: "md",
         color: "currentColor",
-        className: u.actionIcon
+        className: d.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: u.actionTextContainer,
+      className: d.actionTextContainer,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-sm/semibold",
         children: c
       }), (0, r.jsx)(i.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: d
+        children: u
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(i.P3F, {
-        onClick: o.isEditable ? () => a(false) : true,
+        onClick: o.isEditable ? () => s(false) : true,
         children: (0, r.jsx)(i.FZ5, {
-          checked: s,
+          checked: a,
           disabled: !o.isEditable
         })
       })
@@ -64,7 +64,7 @@ function g(e) {
     guildId: n,
     triggerType: i,
     toggled: l,
-    onToggleAction: u
+    onToggleAction: d
   } = e;
   switch (t.type) {
     case c.jj.FLAG_TO_CHANNEL:
@@ -72,30 +72,30 @@ function g(e) {
         action: t,
         triggerType: i,
         toggled: l,
-        onToggleAction: u
+        onToggleAction: d
       });
     case c.jj.USER_COMMUNICATION_DISABLED:
-      return (0, r.jsx)(a.Z, {
-        action: t,
-        guildId: n,
-        triggerType: i,
-        toggled: l,
-        onToggleAction: u
-      });
-    case c.jj.BLOCK_MESSAGE:
       return (0, r.jsx)(s.Z, {
         action: t,
+        guildId: n,
         triggerType: i,
         toggled: l,
-        onToggleAction: u
+        onToggleAction: d
+      });
+    case c.jj.BLOCK_MESSAGE:
+      return (0, r.jsx)(a.Z, {
+        action: t,
+        triggerType: i,
+        toggled: l,
+        onToggleAction: d
       });
     default:
-      return (0, r.jsx)(d, {
+      return (0, r.jsx)(u, {
         action: t,
         guildId: n,
         toggled: l,
         triggerType: i,
-        onToggleAction: u
+        onToggleAction: d
       })
   }
 }

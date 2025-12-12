@@ -2,10 +2,10 @@
 /** chunk id: 211739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  N5: () => a,
+  N5: () => o,
   c4: () => i,
   lc: () => s,
-  mJ: () => o
+  mJ: () => a
 });
 var Chunk570140 = require("./570140.js");
 
@@ -16,14 +16,14 @@ function i(e) {
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "CATEGORY_EXPAND",
     id: e
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "CATEGORY_COLLAPSE_ALL",
     guildId: e

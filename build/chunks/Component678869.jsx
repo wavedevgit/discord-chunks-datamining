@@ -30,8 +30,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119835 = require("./119835.js"),
-  Chunk951948 = require("./951948.js");
+  Chunk36310 = require("./36310.js"),
+  Chunk813849 = require("./813849.js");
 
 function w(e, t) {
   return N.intl.formatToPlainString(N.t.h2yWWX, {
@@ -43,10 +43,10 @@ let D = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, o = N.t["6iNxrl"], a = h.ZP.getName(t.guild_id, t.id, n);
-  return N.intl.formatToMarkdownString(o, {
+  } = e, a = N.t["6iNxrl"], o = h.ZP.getName(t.guild_id, t.id, n);
+  return N.intl.formatToMarkdownString(a, {
     artist: r,
-    userName: a,
+    userName: o,
     media: i
   }).replaceAll("*", "")
 };
@@ -55,9 +55,9 @@ function x(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
-    now: o
+    now: a
   } = (0, I.tS)(), {
-    durationTimestamp: a,
+    durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
     var e;
@@ -66,18 +66,18 @@ function x(e) {
       end: r
     } = null != (e = t.timestamps) ? e : {};
     if (null == n || null == r) return {};
-    let i = Math.min(r, o),
-      a = r - n,
-      s = Math.floor(Math.max(i - n, 0) / a * 100);
+    let i = Math.min(r, a),
+      o = r - n,
+      s = Math.floor(Math.max(i - n, 0) / o * 100);
     return {
       seekBarStyles: {
         width: "".concat(s, "%")
       },
       durationTimestamp: (0, E.T_)({
         start: 0
-      }, a)
+      }, o)
     }
-  }, [t, o]);
+  }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
     className: P.listeningTimeline,
     children: [(0, r.jsx)(I.x3, {
@@ -93,7 +93,7 @@ function x(e) {
       variant: "text-xs/normal",
       tabularNumbers: true,
       color: true,
-      children: a
+      children: o
     })]
   })
 }
@@ -124,7 +124,7 @@ function L(e) {
       secondaryColor: Y
     } = (0, O.Z)(null == U ? true : U.src),
     W = (0, y.Z)(C.ABu.SPOTIFY),
-    K = (0, a.e7)([u.Z, _.default], () => (null == G ? true : G.type) === C.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, _.default, V, G) : true, [G, V], s.Z),
+    K = (0, o.e7)([u.Z, _.default], () => (null == G ? true : G.type) === C.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, _.default, V, G) : true, [G, V], s.Z),
     z = i.useCallback(() => {
       var e;
       if (null == P || null == V) return;
@@ -150,7 +150,7 @@ function L(e) {
   if (null == G || null == Z) return null;
   let q = F,
     Q = [];
-  if (Z.media.provider === o.p.SPOTIFY) {
+  if (Z.media.provider === a.p.SPOTIFY) {
     h = () => {
       (0, c.aG)(G)
     }, I = () => {
@@ -185,7 +185,7 @@ function L(e) {
     onClickThumbnail: I,
     channel: P,
     entry: L,
-    headerIcons: Z.media.provider === o.p.SPOTIFY ? (0, r.jsx)(T.Z, {
+    headerIcons: Z.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
       onClick: n,
       "aria-label": N.intl.string(N.t.rRffNz),
       Icon: m.Z

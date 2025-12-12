@@ -15,58 +15,58 @@ var Chunk657707 = require("./657707.js"),
   Chunk671728 = require("./671728.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605548 = require("./605548.js");
+  Chunk256465 = require("./256465.js");
 
 function h(e) {
   var t, n, h, m;
   let {
-    componentId: _,
-    promotionId: b,
-    content: E,
+    componentId: b,
+    promotionId: E,
+    content: _,
     renderModalProps: O,
     analyticsLocations: v,
     analyticsLocation: y,
     isLightTheme: I
-  } = e, C = "AnnouncementModalVariant1_".concat(_), {
+  } = e, C = "AnnouncementModalVariant1_".concat(b), {
     onClose: S
-  } = O, T = null != (m = null == (t = E.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
-    buttonAction: null == (h = E.button) ? true : h.buttonAction,
+  } = O, T = null != (m = null == (t = _.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = _.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
+    buttonAction: null == (h = _.button) ? true : h.buttonAction,
     analyticsLocations: v,
     analyticsLocation: y,
     onClose: S
-  }), P = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  }), P = "" !== _.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
     children: ["\xa0", (0, r.jsx)(s.Anchor, {
       className: g.termsApplyAnchor,
-      href: c.Z.getArticleURL(E.helpArticleId),
+      href: c.Z.getArticleURL(_.helpArticleId),
       children: f.intl.string(f.t["sBp+u0"])
     })]
   }) : true, x = {
     type: "video",
-    src: I ? E.heroArtVideoLinkLightTheme : E.videoLink
+    src: I ? _.heroArtVideoLinkLightTheme : _.videoLink
   };
-  null != E.heroArtVideoSubtitles && (x.subtitles = E.heroArtVideoSubtitles.map(e => ({
+  null != _.heroArtVideoSubtitles && (x.subtitles = _.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== E.heroArtImageLinkDarkTheme || "" !== E.heroArtImageLinkLightTheme) && (x = {
+  }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (x = {
     type: "image",
-    src: I ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
+    src: I ? _.heroArtImageLinkLightTheme : _.heroArtImageLinkDarkTheme
   });
-  let A = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
-    text: E.modalTopPill,
+  let A = "" !== _.modalTopPill ? () => (0, r.jsx)(u.mn, {
+    text: _.modalTopPill,
     className: g.modalTopPill
   }) : true;
   return {
-    componentId: _,
-    promotionId: b,
+    componentId: b,
+    promotionId: E,
     renderModalProps: O,
-    header: E.header,
+    header: _.header,
     modalTopExtra: A,
-    subHeader: E.subheader,
+    subHeader: _.subheader,
     subHeaderExtra: P,
-    body: E.body,
+    body: _.body,
     heroArt: x,
-    featureCards: E.featureCards.map(e => ({
+    featureCards: _.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
       imageSrc: I ? e.imageLinkLightTheme : e.imageLink,

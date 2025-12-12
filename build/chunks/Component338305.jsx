@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk466377 = require("./466377.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk818033 = require("./818033.js");
+  Chunk797720 = require("./797720.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,9 +51,9 @@ function d(e, t) {
 }
 
 function f(e) {
-  return (0, r.jsx)(o.Y0, d(c({}, e), {
-    "aria-label": a.intl.string(a.t.ZTNur7),
-    size: o.Cg.SMALL,
+  return (0, r.jsx)(a.Y0, d(c({}, e), {
+    "aria-label": o.intl.string(o.t.ZTNur7),
+    size: a.Cg.SMALL,
     parentComponent: "renderModalSpinner",
     children: (0, r.jsx)("div", {
       className: s.spinnerContainer,

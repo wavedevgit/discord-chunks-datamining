@@ -40,8 +40,8 @@ function c(e) {
     } = await n.e("76323").then(n.bind(n, 298237));
     return t => (0, r.jsx)(e, l({}, t))
   }, {
-    modalKey: o.$$,
-    onCloseRequest: a.dG,
+    modalKey: a.$$,
+    onCloseRequest: o.dG,
     onCloseCallback: e
   })
 }

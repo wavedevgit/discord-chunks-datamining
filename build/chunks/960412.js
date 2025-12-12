@@ -78,14 +78,14 @@ async function p() {
   }
 }
 async function _(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "EMAIL_SETTINGS_UPDATE",
     updates: {
       [e]: t
     }
   });
   try {
-    let n = await a.Z.patch({
+    let n = await o.Z.patch({
       url: l.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
@@ -103,12 +103,12 @@ async function _(e, t) {
       },
       rejectWithError: true
     });
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
       settings: n.body
     })
   } catch (e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "EMAIL_SETTINGS_UPDATE_FAILURE"
     })
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 73274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -46,7 +46,7 @@ function d(e) {
         })
       })
     }),
-    h = i.useCallback(e => {
+    f = i.useCallback(e => {
       var i, r, l;
       if (!n.keyboardModeEnabled) return;
       let a = null == (r = t.current) || null == (i = r.getScrollerNode()) ? true : i.ownerDocument,
@@ -57,17 +57,17 @@ function d(e) {
         callback: () => null == o ? true : o.focus()
       }))
     }, [n.keyboardModeEnabled, t]),
-    f = i.useCallback(() => {
+    h = i.useCallback(() => {
       n.hasMoreAfter || o.S.dispatchToLastSubscribed(u.CkL.TEXTAREA_FOCUS)
     }, [n.hasMoreAfter]),
     m = (0, r.ZP)({
       id: s.W,
       preserveFocusPosition: false,
-      setFocus: h,
+      setFocus: f,
       isEnabled: n.keyboardModeEnabled && !n.isEditing,
       scrollToStart: p,
       scrollToEnd: d,
-      onNavigateNextAtEnd: f
+      onNavigateNextAtEnd: h
     }),
     g = i.useCallback(e => {
       let {

@@ -4,8 +4,8 @@
 require.d(exports, {
   QD: () => s,
   U3: () => i,
-  dt: () => a,
-  gf: () => o
+  dt: () => o,
+  gf: () => a
 });
 var Chunk54381 = require("./54381.js");
 let i = () => (0, Chunk54381.jsxs)("svg", {
@@ -54,7 +54,7 @@ let i = () => (0, Chunk54381.jsxs)("svg", {
       })
     })]
   }),
-  o = () => (0, Chunk54381.jsxs)("svg", {
+  a = () => (0, Chunk54381.jsxs)("svg", {
     width: "20",
     height: "20",
     viewBox: "0 0 20 20",
@@ -100,7 +100,7 @@ let i = () => (0, Chunk54381.jsxs)("svg", {
       })
     })]
   }),
-  a = () => (0, Chunk54381.jsxs)("svg", {
+  o = () => (0, Chunk54381.jsxs)("svg", {
     width: "20",
     height: "20",
     viewBox: "0 0 20 20",

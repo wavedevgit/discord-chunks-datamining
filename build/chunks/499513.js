@@ -1,21 +1,21 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 499513, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk823379 = require("./823379.js"),
   Chunk131085 = require("./131085.js"),
   Chunk388032 = require("./388032.jsx");
 
-function s(e, t) {
+function a(e, t) {
   return l.intl.formatToPlainString(l.t.g79C8T, {
-    primaryColor: a(e),
-    secondaryColor: a(t)
+    primaryColor: s(e),
+    secondaryColor: s(t)
   })
 }
 
-function a(e) {
+function s(e) {
   switch (e) {
     case i.KD.HOT_PINK:
       return l.intl.string(l.t.DfOkjB);

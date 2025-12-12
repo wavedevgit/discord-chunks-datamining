@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 982072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -12,9 +12,9 @@ function o(e) {
   let {
     widget: t,
     onAction: n
-  } = e, [o, s] = (0, r.useState)(false), c = t instanceof a.q ? t.applicationId : null, {
+  } = e, [o, c] = (0, r.useState)(false), s = t instanceof l.q ? t.applicationId : null, {
     fetched: u
-  } = (0, l.o)(c), d = (0, r.useCallback)(e => {
+  } = (0, a.o)(s), d = (0, r.useCallback)(e => {
     e && (n(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -34,7 +34,7 @@ function o(e) {
       return e
     }({
       action: "VIEW_WIDGET"
-    }, t.getProfileAnalyticsOptions())), s(true))
+    }, t.getProfileAnalyticsOptions())), c(true))
   }, [n, t]);
-  return (0, i.O)(d, true, !o && (null == c || u))
+  return (0, i.O)(d, true, !o && (null == s || u))
 }

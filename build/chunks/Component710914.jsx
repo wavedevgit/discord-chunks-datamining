@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk862657 = require("./862657.js"),
   Chunk415104 = require("./415104.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk334525 = require("./334525.js");
+  Chunk784241 = require("./784241.js");
 
 function h(e) {
   let {
@@ -23,25 +23,25 @@ function h(e) {
     isFetching: l,
     hasFetched: h,
     hasFiltersApplied: m = false,
-    onClearFilters: _
-  } = e, b = i.useRef(false), E = (0, o.TH)(), O = i.useMemo(() => {
-    if (E.hash.length > 0) {
-      let e = E.hash.slice(1),
+    onClearFilters: b
+  } = e, E = i.useRef(false), _ = (0, o.TH)(), O = i.useMemo(() => {
+    if (_.hash.length > 0) {
+      let e = _.hash.slice(1),
         r = (0, d._x)(e, t, n);
       if (null != r) return r.id
     }
     return null
-  }, [t, n, E.hash]);
+  }, [t, n, _.hash]);
   i.useEffect(() => {
-    b.current = false
-  }, [E.hash]), i.useEffect(() => {
-    if (null == O || b.current || l || !h) return;
+    E.current = false
+  }, [_.hash]), i.useEffect(() => {
+    if (null == O || E.current || l || !h) return;
     let e = document.getElementById("quest-tile-".concat(O));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
-    }), b.current = true
-  }, [t, O, E, l, h]);
+    }), E.current = true
+  }, [t, O, _, l, h]);
   let v = null != O,
     [y, I] = i.useState(window.innerWidth);
   i.useEffect(() => {
@@ -64,7 +64,7 @@ function h(e) {
       variant: "text-md/normal",
       color: "text-subtle",
       children: m ? f.intl.format(f.t.LdYS1H, {
-        onClick: _
+        onClick: b
       }) : f.intl.string(f.t.LhD4yH)
     })]
   }) : (0, r.jsx)("div", {

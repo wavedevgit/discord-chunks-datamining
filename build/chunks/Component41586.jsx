@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk855935 = require("./855935.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk124831 = require("./124831.js");
+  Chunk6306 = require("./6306.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,19 +60,19 @@ let O = Chunk473749.forwardRef(function(e, t) {
     null != n && O && (0, d.ZDy)(async () => e => (0, r.jsx)(p.Z, y(v({}, e), {
       guild: n
     })))
-  }, [n, O]), _ = (0, u.e7)([b.Z], () => b.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, m.gm)(n.id), [S, Z] = l.useState(_.query), D = l.useCallback(e => {
+  }, [n, O]), w = (0, u.e7)([b.Z], () => b.Z.getSearchStateByGuildId(n.id), [n.id], s()), S = (0, m.gm)(n.id), [Z, D] = l.useState(w.query), N = l.useCallback(e => {
     let t = e.trim();
-    t.length > 0 && w(), (0, f.Dr)(n.id, {
+    t.length > 0 && S(), (0, f.Dr)(n.id, {
       query: t
     })
-  }, [n.id, w]), N = l.useMemo(() => o()(D, 300), [D]), R = l.useCallback(e => {
-    Z(e), N(e)
-  }, [N]), L = l.useCallback(() => {
-    Z(""), D("")
-  }, [D]);
+  }, [n.id, S]), _ = l.useMemo(() => o()(N, 300), [N]), R = l.useCallback(e => {
+    D(e), _(e)
+  }, [_]), L = l.useCallback(() => {
+    D(""), N("")
+  }, [N]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      Z("")
+      D("")
     }
   })), (0, r.jsxs)("div", {
     className: x.searchHeaderContainer,
@@ -91,7 +91,7 @@ let O = Chunk473749.forwardRef(function(e, t) {
         className: x.searchHeader,
         children: (0, r.jsx)(d.E1j, {
           size: "sm",
-          query: S,
+          query: Z,
           placeholder: j.intl.string(j.t["NVoAM+"]),
           onChange: R,
           onClear: L,

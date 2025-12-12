@@ -19,9 +19,9 @@ class u extends Chunk727916.Z {
     let n = t[l].toLowerCase(),
       i = r.LN[n];
     if (true === i) return null;
-    let o = t[c];
-    o = (o = o || "").toLowerCase();
+    let a = t[c];
+    a = (a = a || "").toLowerCase();
     let s = null;
-    return "dernier" == o ? s = "last" : "prochain" == o && (s = "next"), (0, a.Rv)(e.reference, i, s)
+    return "dernier" == a ? s = "last" : "prochain" == a && (s = "next"), (0, o.Rv)(e.reference, i, s)
   }
 }

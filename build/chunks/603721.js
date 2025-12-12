@@ -2,7 +2,7 @@
 /** chunk id: 603721, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B0: () => a,
+  B0: () => o,
   OG: () => c,
   kz: () => s,
   yr: () => l
@@ -11,7 +11,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n, r) {
+function o(e, t, n, r) {
   i.Z.dispatch({
     type: "QUEUE_INTERACTION_COMPONENT_STATE",
     messageId: e,
@@ -25,8 +25,8 @@ function s(e, t) {
   let {
     data: n,
     messageId: r,
-    preflight: o,
-    onCreate: a,
+    preflight: a,
+    onCreate: o,
     onSuccess: s,
     onFailure: l
   } = t;
@@ -35,8 +35,8 @@ function s(e, t) {
     data: n,
     nonce: e,
     messageId: r,
-    preflight: o,
-    onCreate: a,
+    preflight: a,
+    onCreate: o,
     onSuccess: s,
     onFailure: l
   })
@@ -53,7 +53,7 @@ function l(e, t, n, r) {
 }
 async function c(e, t) {
   let n = await r.tn.get({
-    url: o.ANM.MESSAGE_INTERACTION_DATA(e, t),
+    url: a.ANM.MESSAGE_INTERACTION_DATA(e, t),
     oldFormErrors: true,
     rejectWithError: false
   });

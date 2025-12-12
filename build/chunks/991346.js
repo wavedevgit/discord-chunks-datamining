@@ -112,12 +112,12 @@ function V(e) {
   }, {
     divider: true,
     settings: [M.s6.SOCIAL_LINKS, M.s6.CLIENT_DEBUG_INFO]
-  }], o = {
+  }], a = {
     header: U.intl.string(U.t.SmHCFf),
     divider: true,
     settings: [M.s6.ACTIVITY_PRIVACY, M.s6.REGISTERED_GAMES, M.s6.OVERLAY]
   };
-  return t ? i : i.toSpliced(3, 0, o)
+  return t ? i : i.toSpliced(3, 0, a)
 }
 
 function H() {
@@ -145,7 +145,7 @@ function H() {
 }
 
 function Y() {
-  var e, t, n, a;
+  var e, t, n, o;
   let v = (0, Chunk725727.YO)().length,
     R = (0, Chunk160913.U)(),
     j = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSearchParams()),
@@ -173,7 +173,7 @@ function Y() {
     z = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.hasTOTPEnabled()),
     q = Chunk695346.Sb.useSetting(),
     Q = (0, Chunk610697.Z)(),
-    X = null == (a = (0, Chunk880257.Z)()) || Chunk493544,
+    X = null == (o = (0, Chunk880257.Z)()) || Chunk493544,
     J = (null == (t = (0, Chunk921157.s)()) ? true : exports.length) > 0,
     {
       hasBlockedUsers: $,
@@ -193,11 +193,11 @@ function Y() {
       isInputProfileCustom: Chunk131951.Z.isInputProfileCustom()
     })),
     {
-      enabled: eo
+      enabled: ea
     } = (0, Chunk657871.zM)("useGenerateUserSettingsSections", {
       autoTrackExposure: false
     }),
-    ea = (0, Chunk945577.U)({
+    eo = (0, Chunk945577.U)({
       location: "useGenerateUserSettingsSections"
     }),
     es = (0, Chunk526665.gj)("useGenerateUserSettingsSections");
@@ -226,10 +226,10 @@ function Y() {
     inputMode: en,
     activeInputProfile: er,
     isInputProfileCustom: ei,
-    isChatMentionSuggestionsSettingEnabled: eo,
-    isCrossDMSearchEnabledSettingVisible: ea,
+    isChatMentionSuggestionsSettingEnabled: ea,
+    isCrossDMSearchEnabledSettingVisible: eo,
     isRedesignedNotificationsEnabled: es
-  }), [q, Z, $, ee, K, J, z, Chunk839469, X, W, H, V, Chunk388032, B, Q, Chunk726985, Y, F, Chunk413182, Chunk906467, et, en, er, ei, eo, ea, es])
+  }), [q, Z, $, ee, K, J, z, Chunk839469, X, W, H, V, Chunk388032, B, Q, Chunk726985, Y, F, Chunk413182, Chunk906467, et, en, er, ei, ea, eo, es])
 }
 
 function W(e) {
@@ -240,7 +240,7 @@ function W(e) {
       let [t, n] = e;
       return n.section === r.section
     })),
-    o = Object.fromEntries(Object.entries(i).filter(e => {
+    a = Object.fromEntries(Object.entries(i).filter(e => {
       let [t, {
         parent: n,
         section: i
@@ -252,16 +252,16 @@ function W(e) {
       }] = e;
       return [t, n]
     })),
-    a = new Set,
+    o = new Set,
     s = e => {
       let t = i[e];
       if (null == t) return;
-      a.add(e);
+      o.add(e);
       let n = t.parent;
       null != n && s(n)
     },
     l = e => {
-      for (let t of (a.add(e), Object.entries(o).filter(t => {
+      for (let t of (o.add(e), Object.entries(a).filter(t => {
           let [n, r] = t;
           return r === e
         }).map(e => {
@@ -270,13 +270,13 @@ function W(e) {
         }))) l(t)
     };
   for (let e of t.filter(e => e in i))
-    if (!a.has(e)) {
+    if (!o.has(e)) {
       if (null != i[e].element && null == i[e].parent) {
-        a.clear();
+        o.clear();
         break
       }
-      Object.values(o).includes(e) && l(e), s(e)
-    } return a
+      Object.values(a).includes(e) && l(e), s(e)
+    } return o
 }
 
 function K(e, t, n) {
@@ -286,16 +286,16 @@ function K(e, t, n) {
 function z(e, t, n) {
   let r = [],
     i = J(t),
-    o = q(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
+    a = q(t, new Set(Array.from(null != n ? n : []).filter(e => i.has(e))));
   return e.forEach(e => {
     0 !== e.settings.length && (true === e.divider && r.push({
-      section: a.ID.DIVIDER
+      section: o.ID.DIVIDER
     }), null != e.header && r.push({
-      section: a.ID.HEADER,
+      section: o.ID.HEADER,
       label: e.header
     }), e.settings.forEach(e => {
       r.push(B(Z({}, t[e]), {
-        tabPredicate: () => null == n || K(e, n, o)
+        tabPredicate: () => null == n || K(e, n, a)
       }))
     }))
   }), r

@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk593481 = require("./593481.jsx"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ class c extends Chunk473749.Component {
     let e, t, n, i, {
       props: {
         position: r,
-        zIndex: s
+        zIndex: a
       }
     } = this;
     switch (Chunk473749) {
@@ -58,26 +58,26 @@ class c extends Chunk473749.Component {
         notification: {
           props: {
             renderFooter: r,
-            onNotificationShow: s,
-            onDismissClick: l,
+            onNotificationShow: a,
+            onDismissClick: o,
             onNotificationClick: c,
             onConfirmClick: d,
             onCancelClick: u
           }
         }
       }
-    } = this, h = function(e, t) {
+    } = this, f = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          s = Object.keys(e);
-        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          a = Object.keys(e);
+        for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
@@ -88,11 +88,11 @@ class c extends Chunk473749.Component {
         "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), i.forEach(function(t) {
-          a(e, t, n[t])
+          l(e, t, n[t])
         })
       }
       return e
-    }({}, h), t = t = {
+    }({}, f), t = t = {
       locked: require,
       onNotificationShow: this.handleNotificationShow,
       onDismissClick: null != Chunk981631 ? this.handleDismissClick : true,
@@ -113,7 +113,7 @@ class c extends Chunk473749.Component {
     }), module))
   }
   constructor(...e) {
-    super(...e), a(this, "handleNotificationShow", () => {
+    super(...e), l(this, "handleNotificationShow", () => {
       let {
         id: e,
         props: {
@@ -121,15 +121,15 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       t(e)
-    }), a(this, "handleDismissClick", e => {
+    }), l(this, "handleDismissClick", e => {
       let {
         id: t,
         props: {
           onDismissClick: n
         }
       } = this.props.notification;
-      s.Z.updateNotificationStatus(t), null == n || n(e, t)
-    }), a(this, "handleNotificationClick", e => {
+      a.Z.updateNotificationStatus(t), null == n || n(e, t)
+    }), l(this, "handleNotificationClick", e => {
       let {
         id: t,
         props: {
@@ -137,7 +137,7 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), a(this, "handleConfirmClick", e => {
+    }), l(this, "handleConfirmClick", e => {
       let {
         id: t,
         props: {
@@ -145,7 +145,7 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), a(this, "handleCancelClick", e => {
+    }), l(this, "handleCancelClick", e => {
       let {
         id: t,
         props: {
@@ -153,7 +153,7 @@ class c extends Chunk473749.Component {
         }
       } = this.props.notification;
       null != n && n(e, t)
-    }), a(this, "renderFooter", e => {
+    }), l(this, "renderFooter", e => {
       let {
         id: t,
         props: {

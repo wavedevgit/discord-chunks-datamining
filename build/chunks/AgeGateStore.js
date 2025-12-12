@@ -2,7 +2,7 @@
 /** chunk id: 899370, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var r, i, Chunk973361 = require("./973361.js"),
   Chunk442837 = require("./442837.js"),
@@ -24,7 +24,7 @@ class h extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : h[r] = "AgeGateStore";
-let g = new h(Chunk570140.Z, {
+let f = new h(Chunk570140.Z, {
   AGE_GATE_PREVENT_UNDERAGE_REGISTRATION: function() {
     u = Date.now(), document.cookie = "".concat(d, "=1;path=/")
   },

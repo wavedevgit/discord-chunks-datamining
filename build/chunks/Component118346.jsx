@@ -1,4 +1,4 @@
-/** Chunk was on 74240 **/
+/** Chunk was on 93671 **/
 /** chunk id: 118346, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => f,
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk893776 = require("./893776.js"),
   Chunk489813 = require("./489813.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk624463 = require("./624463.js");
+  Chunk888327 = require("./888327.js");
 
 function d() {
   let [e, t] = Chunk473749.useState(false), [n, i] = Chunk473749.useState(false), [o, d] = Chunk473749.useState(false);
@@ -34,7 +34,7 @@ function d() {
     }
   };
   return require ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-    className: Chunk624463.verifyConfirmText,
+    className: Chunk888327.verifyConfirmText,
     variant: "text-sm/normal",
     color: "text-feedback-positive",
     children: Chunk388032.intl.string(Chunk388032.t.H3Q7U8)
@@ -49,7 +49,7 @@ function d() {
 
 function m() {
   return (0, Chunk54381.jsx)(Chunk489813.PU, {
-    className: Chunk624463.editableRequirementContainer,
+    className: Chunk888327.editableRequirementContainer,
     icon: Chunk481060._XJ,
     text: Chunk388032.intl.string(Chunk388032.t.c6EUJI),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
@@ -73,7 +73,7 @@ function f(e) {
   } = e, n = t ? c.intl.string(c.t.qY1jHN) : c.intl.string(c.t.c6EUJI);
   return (0, r.jsx)(o.PU, {
     className: u.editableRequirementContainer,
-    icon: s._XJ,
+    icon: a._XJ,
     text: n,
     footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: t,

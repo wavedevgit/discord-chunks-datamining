@@ -13,9 +13,9 @@ var Chunk473749 = require("./473749.js"),
 function l(e) {
   let t = (0, i.e7)([s.default], () => s.default.getFetchState()),
     n = (0, i.e7)([s.default], () => e ? s.default.getNewestTokensForNonChildrenApplications() : s.default.getNewestTokens()),
-    l = r.useMemo(() => null == n ? [] : n.filter(e => (0, a.Z)(e.application)).map(e => e.application), [n]);
+    l = r.useMemo(() => null == n ? [] : n.filter(e => (0, o.Z)(e.application)).map(e => e.application), [n]);
   return r.useEffect(() => {
-    o.Z.fetch()
+    a.Z.fetch()
   }, []), {
     showLoadingIndicator: t === s.FetchState.FETCHING && null == n,
     slayerSdkApplications: l

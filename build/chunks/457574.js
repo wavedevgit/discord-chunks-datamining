@@ -28,15 +28,15 @@ async function c(e) {
   let t = i.ZP.getEmojiURL({
       id: e.id,
       animated: e.animated,
-      size: a.eT,
+      size: o.eT,
       forcePNG: true
     }),
     n = await fetch(t),
     r = await n.blob(),
-    o = r.type;
-  (null == o || "application/octet-stream" === o) && (o = t.includes(".gif") ? "image/gif" : t.includes(".webp") ? "image/webp" : e.animated ? "image/gif" : "image/png");
-  let s = new File([r], "".concat(e.name, ".").concat(o.split("/")[1]), {
-    type: o
+    a = r.type;
+  (null == a || "application/octet-stream" === a) && (a = t.includes(".gif") ? "image/gif" : t.includes(".webp") ? "image/webp" : e.animated ? "image/gif" : "image/png");
+  let s = new File([r], "".concat(e.name, ".").concat(a.split("/")[1]), {
+    type: a
   });
   return {
     data: await new Promise((e, t) => {

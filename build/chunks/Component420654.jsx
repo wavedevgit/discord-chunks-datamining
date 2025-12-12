@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk785717 = require("./785717.jsx"),
   Chunk892001 = require("./892001.js"),
   Chunk280885 = require("./280885.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk108670 = require("./108670.js");
+  Chunk825293 = require("./825293.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ let E = 57.75,
     let {
       user: t,
       onClose: n,
-      bio: o,
+      bio: a,
       hidePersonalInformation: _,
       viewFullBioDisabled: h = false
     } = e, {
@@ -76,13 +76,13 @@ let E = 57.75,
     }, N = e => {
       null == T.current || T.current.contains(e.relatedTarget) || (T.current.scrollTop = 0)
     };
-    return _ || null == o || "" === o ? null : (0, r.jsxs)("div", {
+    return _ || null == a || "" === a ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         ref: C,
-        className: a()(p.descriptionClamp, S && p.maxBioHeight),
+        className: o()(p.descriptionClamp, S && p.maxBioHeight),
         onBlur: N,
         children: (0, r.jsx)(d.Z, {
-          userBio: o,
+          userBio: a,
           setLineClamp: false,
           textColor: "text-strong"
         })

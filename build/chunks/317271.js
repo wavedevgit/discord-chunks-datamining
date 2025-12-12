@@ -2,14 +2,14 @@
 /** chunk id: 317271, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F: () => a,
+  F: () => o,
   n: () => s
 }), require("./388685.js");
 var Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
-let o = new Set([Chunk981631.Sbl.FRIEND_ANNIVERSARIES_CHAT, Chunk981631.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON, Chunk981631.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK]);
+let a = new Set([Chunk981631.Sbl.FRIEND_ANNIVERSARIES_CHAT, Chunk981631.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON, Chunk981631.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON_COACHMARK]);
 
-function a(e) {
+function o(e) {
   return e === r.hX.FRIEND_ANNIVERSARY ? {
     chat: i.Sbl.FRIEND_ANNIVERSARIES_CHAT,
     actionButton: i.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
@@ -18,5 +18,5 @@ function a(e) {
 }
 
 function s(e) {
-  return o.has(e)
+  return a.has(e)
 }

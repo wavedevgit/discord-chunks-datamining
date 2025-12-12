@@ -332,33 +332,33 @@ function ei(e) {
   P = null != t ? t : []
 }
 
-function eo(e, t, n) {
+function ea(e, t, n) {
   if (!(0, d.NS)() || n !== u.default.getId() || null == t) returnfalse;
   let r = "__CLIP_METADATA__",
     i = t.indexOf(r);
   if (false === i) returnfalse;
   try {
     let n = i + r.length,
-      o = t.substring(n),
-      a = JSON.parse(o);
-    if (null == a.id) returnfalse;
+      a = t.substring(n),
+      o = JSON.parse(a);
+    if (null == o.id) returnfalse;
     let s = D.get(e);
-    return null == s && (s = new Set, D.set(e, s)), s.add(a.id), true
+    return null == s && (s = new Set, D.set(e, s)), s.add(o.id), true
   } catch (e) {
     returnfalse
   }
 }
 
-function ea(e) {
+function eo(e) {
   var t;
-  return eo(e.channelId, e.message.content, null == (t = e.message.author) ? true : t.id)
+  return ea(e.channelId, e.message.content, null == (t = e.message.author) ? true : t.id)
 }
 
 function es(e) {
   let t = false;
   for (let r of e.messages) {
     var n;
-    t = t || eo(e.channelId, r.content, null == (n = r.author) ? true : n.id)
+    t = t || ea(e.channelId, r.content, null == (n = r.author) ? true : n.id)
   }
   return t
 }
@@ -438,9 +438,9 @@ class el extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   getMatchingGroupClip(e, t) {
     if (null == e && null == t) return null;
-    for (let a of v) {
-      var n, r, i, o;
-      if (null != t && a.id === t || null != e && (null == (r = a.decision) || null == (n = r.signal) ? true : n.type) === f.Bs.DISTRIBUTED && (null == (o = a.decision) || null == (i = o.signal) ? true : i.remoteTriggerClipId) === e) return a
+    for (let o of v) {
+      var n, r, i, a;
+      if (null != t && o.id === t || null != e && (null == (r = o.decision) || null == (n = r.signal) ? true : n.type) === f.Bs.DISTRIBUTED && (null == (a = o.decision) || null == (i = a.signal) ? true : i.remoteTriggerClipId) === e) return o
     }
     return null
   }
@@ -555,7 +555,7 @@ let ec = new el(Chunk570140.Z, {
     CLIPS_DISMISS_EDUCATION: er,
     RUNNING_GAMES_CHANGE: en,
     CLIPS_SET_EXPORTING: ei,
-    MESSAGE_CREATE: ea,
+    MESSAGE_CREATE: eo,
     LOAD_MESSAGES_SUCCESS: es
   }),
   eu = ec

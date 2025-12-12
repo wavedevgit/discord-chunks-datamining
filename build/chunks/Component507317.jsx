@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 507317, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,18 +19,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk486324 = require("./486324.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197530 = require("./197530.js");
+  Chunk551952 = require("./551952.js");
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(m.GuildFeatures.BANNER), _ = i.useCallback((e, i) => {
+  } = e, j = t.features.has(f.GuildFeatures.BANNER), v = i.useCallback((e, i) => {
     if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
     (0, l.ZDy)(async () => {
       let {
         default: l
-      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("7016")]).then(n.bind(n, 712451));
+      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("76543")]).then(n.bind(n, 712451));
       return n => (0, r.jsx)(l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -59,108 +59,108 @@ let j = function(e) {
             homeHeader: n
           })
         },
-        uploadType: f.pC.HOME_HEADER
+        uploadType: b.pC.HOME_HEADER
       }, n))
     })
-  }, [t.id]), v = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.yw)(m.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
+  }, [t.id]), O = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, a.yw)(f.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
-        section: m.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: m.qAy.LEARN_MORE
+        section: f.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: f.qAy.LEARN_MORE
       },
       guild_id: null == t ? true : t.id,
       location_stack: []
     }), (0, o.Z)({
       analyticsLocations: [],
       analyticsSourceLocation: {
-        section: m.jXE.GUILD_SETTINGS_ONBOARDING,
-        object: m.qAy.ONBOARDING_EDIT,
-        page: m.ZY5.GUILD_SETTINGS
+        section: f.jXE.GUILD_SETTINGS_ONBOARDING,
+        object: f.qAy.ONBOARDING_EDIT,
+        page: f.ZY5.GUILD_SETTINGS
       },
       guild: t,
-      perks: (0, p.XO)()
+      perks: (0, m.XO)()
     })
-  }, [t]), O = (0, r.jsx)(c.Z, {
+  }, [t]), C = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
-    makeURL: e => null != e ? d.ZP.getGuildHomeHeaderURL({
+    makeURL: e => null != e ? u.ZP.getGuildHomeHeaderURL({
       id: t.id,
       homeHeader: e
     }) : null,
     disabled: !j,
-    onChange: _,
-    hint: x.intl.string(x.t.NyXznh),
+    onChange: v,
+    hint: h.intl.string(h.t.NyXznh),
     enabled: j,
-    maxFileSizeBytes: h.B
+    maxFileSizeBytes: p.B
   });
   return j ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.sectionHeader,
+      className: x.sectionHeader,
       children: [(0, r.jsx)(l.Heading, {
-        className: b.header,
+        className: x.header,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nY)
-      }), (0, r.jsx)(a.Z, {
-        className: b.boostIndicator,
+        children: h.intl.string(h.t.BBj1nY)
+      }), (0, r.jsx)(s.Z, {
+        className: x.boostIndicator,
         guild: t,
-        guildFeature: m.GuildFeatures.BANNER,
-        onClick: v
+        guildFeature: f.GuildFeatures.BANNER,
+        onClick: O
       })]
     }), (0, r.jsxs)("div", {
-      className: b.section,
+      className: x.section,
       children: [(0, r.jsxs)("div", {
-        className: b.homeBannerExplainer,
+        className: x.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: x.intl.string(x.t.Vwintv)
+          children: h.intl.string(h.t.Vwintv)
         }), (0, r.jsx)("div", {
-          className: b.uploadButton,
-          children: (0, r.jsx)(u.Z, {
-            onChange: _,
-            maxFileSizeBytes: h.B,
-            text: x.intl.string(x.t.yG2pUi),
+          className: x.uploadButton,
+          children: (0, r.jsx)(d.Z, {
+            onChange: v,
+            maxFileSizeBytes: p.B,
+            text: h.intl.string(h.t.yG2pUi),
             size: "md",
             variant: "primary"
           })
         })]
       }), (0, r.jsx)("div", {
-        children: O
+        children: C
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: b.sectionHeader,
+      className: x.sectionHeader,
       children: [(0, r.jsx)(l.Heading, {
-        className: b.header,
+        className: x.header,
         variant: "heading-lg/extrabold",
-        children: x.intl.string(x.t.BBj1nY)
-      }), (0, r.jsx)(a.Z, {
-        className: b.boostIndicator,
+        children: h.intl.string(h.t.BBj1nY)
+      }), (0, r.jsx)(s.Z, {
+        className: x.boostIndicator,
         guild: t,
-        guildFeature: m.GuildFeatures.BANNER,
-        onClick: v
+        guildFeature: f.GuildFeatures.BANNER,
+        onClick: O
       })]
     }), (0, r.jsxs)("div", {
-      className: b.section,
+      className: x.section,
       children: [(0, r.jsxs)("div", {
-        className: b.homeBannerExplainer,
+        className: x.homeBannerExplainer,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          className: b.bannerDescription,
-          children: x.intl.string(x.t.Vwintv)
+          className: x.bannerDescription,
+          children: h.intl.string(h.t.Vwintv)
         }), (0, r.jsx)(l.Button, {
           variant: "expressive",
           icon: l.Ucv,
-          text: x.intl.string(x.t["+7XY31"]),
-          onClick: v
+          text: h.intl.string(h.t["+7XY31"]),
+          onClick: O
         })]
       }), (0, r.jsx)("div", {
         children: (0, r.jsx)(l.P3F, {
           "aria-hidden": true,
           tabIndex: false,
-          onClick: v,
-          children: O
+          onClick: O,
+          children: C
         })
       })]
     })]

@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 let Chunk718939 = require("./718939.js"),
   Chunk148468 = require("./148468.js");
 
-function o(e) {
+function a(e) {
   let t = (0, i.getFileChunk)(e);
   return !!r.FileTypes.checkByFileType(t, "m4v") && (0, i.isftypStringIncluded)(t)
 }
@@ -17,7 +17,7 @@ exports.isAVI = function(e) {
 }, exports.isFLV = function(e) {
   let t = (0, i.getFileChunk)(e);
   return !!r.FileTypes.checkByFileType(t, "flv") && (0, i.isFlvStringIncluded)(t)
-}, exports.isM4V = o, exports.isMKV = function(e) {
+}, exports.isM4V = a, exports.isMKV = function(e) {
   let t = (0, i.getFileChunk)(e, 64);
   return !!r.FileTypes.checkByFileType(t, "mkv") && "mkv" === (0, i.findMatroskaDocTypeElements)(t)
 }, exports.isMOV = function(e) {
@@ -25,7 +25,7 @@ exports.isAVI = function(e) {
   return r.FileTypes.checkByFileType(t, "mov")
 }, exports.isMP4 = function(e, t) {
   let n = (0, i.getFileChunk)(e);
-  return !!r.FileTypes.checkByFileType(n, "mp4") || (null == t || !t.excludeSimilarTypes) && o(n)
+  return !!r.FileTypes.checkByFileType(n, "mp4") || (null == t || !t.excludeSimilarTypes) && a(n)
 }, exports.isOGG = function(e) {
   let t = (0, i.getFileChunk)(e);
   return r.FileTypes.checkByFileType(t, "ogg")

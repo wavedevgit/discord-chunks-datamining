@@ -33,7 +33,7 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  let n = new Audio((0, a.Z)(e));
+  let n = new Audio((0, o.Z)(e));
   n.volume = (0, s.Z)(t), n.play()
 }
 async function E() {
@@ -42,7 +42,7 @@ async function E() {
     let t = await window.navigator.mediaDevices.enumerateDevices(),
       n = Chunk131951.Z.getOutputDevices(),
       r = i()(require).sortBy(e => e.index).findIndex(e => e.id === l.Z.getOutputDeviceId()),
-      a = require[Chunk131951.Z.getOutputDeviceId()];
+      o = require[Chunk131951.Z.getOutputDeviceId()];
     if (null == Chunk22382) {
       m = f;
       return
@@ -53,7 +53,7 @@ async function E() {
       m = Chunk358085.deviceId;
       return
     }
-    if (c = i()(Chunk747071).maxBy(e => (0, o.stringSimilarity)(e.label, a.name)), null == Chunk358085 || (0, Chunk856901.stringSimilarity)(Chunk358085.label, Chunk22382.name) < p) {
+    if (c = i()(Chunk747071).maxBy(e => (0, a.stringSimilarity)(e.label, o.name)), null == Chunk358085 || (0, Chunk856901.stringSimilarity)(Chunk358085.label, Chunk22382.name) < p) {
       m = f;
       return
     }

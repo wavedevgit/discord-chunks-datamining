@@ -8,7 +8,7 @@ var Chunk676557 = require("./676557.js"),
 function s(t) {
   var n = "function" == typeof Map ? new Map : true;
   return e.exports = s = function(e) {
-    if (null === e || !o(e)) return e;
+    if (null === e || !a(e)) return e;
     if ("function" != typeof e) throw TypeError("Super expression must either be null or a function");
     if (true !== n) {
       if (n.has(e)) return n.get(e);
@@ -16,7 +16,7 @@ function s(t) {
     }
 
     function t() {
-      return a(e, arguments, r(this).constructor)
+      return o(e, arguments, r(this).constructor)
     }
     return t.prototype = Object.create(e.prototype, {
       constructor: {

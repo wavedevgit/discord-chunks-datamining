@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => ey
 });
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk287734 = require("./287734.js"),
@@ -66,8 +66,8 @@ async function F(e) {
   let t = {},
     n = b.Z.getVoiceChannelId();
   if (null != n) {
-    var r, i, o, a, s, c, u, f;
-    if ((null == (s = window) || null == (a = s.performance) || null == (o = a.getEntriesByType) || null == (i = o.call(a, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (f = R.processUtils) || null == (u = f.getLastCrash) ? true : u.call(f))) ? true : c.rendererCrashReason) == null && j) g.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+    var r, i, a, o, s, c, u, f;
+    if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? true : r.type) !== "reload" && (null == (c = await (null == R || null == (f = R.processUtils) || null == (u = f.getLastCrash) ? true : u.call(f))) ? true : c.rendererCrashReason) == null && j) g.Z.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
     else {
       let e = m.Z.getChannel(n);
       null != e && (t = {
@@ -178,7 +178,7 @@ function et() {
 }
 
 function en(e) {
-  return I.Wb.isSessionEstablished() && ("userIds" in e ? o()(e.userIds).chunk(D).forEach(t => {
+  return I.Wb.isSessionEstablished() && ("userIds" in e ? a()(e.userIds).chunk(D).forEach(t => {
     I.Wb.requestGuildMembers(e.guildIds, {
       userIds: t,
       presences: !!e.presences
@@ -209,14 +209,14 @@ function ei(e) {
   return I.Wb.isSessionEstablished() && I.Wb.updateGuildSubscriptions(t), false
 }
 
-function eo(e) {
+function ea(e) {
   let {
     channelId: t
   } = e;
   return I.Wb.isSessionEstablished() && I.Wb.callConnect(t), false
 }
 
-function ea(e) {
+function eo(e) {
   let {
     channelIds: t
   } = e;
@@ -253,8 +253,8 @@ function ed(e) {
     channelId: r
   } = e;
   if (I.Wb.isSessionEstablished()) {
-    var i, o;
-    let e = null != n ? null == (i = m.Z.getChannel(r)) ? true : i.rtcRegion : null == (o = _.Z.getCall(r)) ? true : o.region;
+    var i, a;
+    let e = null != n ? null == (i = m.Z.getChannel(r)) ? true : i.rtcRegion : null == (a = _.Z.getCall(r)) ? true : a.region;
     I.Wb.streamCreate(t, n, r, null != e ? e : E.Z.getPreferredRegion())
   }
   returnfalse
@@ -347,8 +347,8 @@ let ey = new eb(Chunk570140.Z, {
   GUILD_MEMBERS_REQUEST: en,
   GUILD_SEARCH_RECENT_MEMBERS: er,
   GUILD_SUBSCRIPTIONS_FLUSH: ei,
-  CALL_CONNECT: eo,
-  CALL_CONNECT_MULTIPLE: ea,
+  CALL_CONNECT: ea,
+  CALL_CONNECT_MULTIPLE: eo,
   STREAM_CREATE: W,
   STREAM_START: ed,
   STREAM_WATCH: ep,

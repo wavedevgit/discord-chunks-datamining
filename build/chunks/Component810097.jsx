@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk510659 = require("./510659.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk734623 = require("./734623.js");
+  Chunk46833 = require("./46833.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ function T(e) {
   let {
     user: t,
     sourceType: n,
-    isVisible: o,
+    isVisible: a,
     isExpandable: g,
     interactionSourceId: b,
     targetRef: O,
@@ -114,8 +114,8 @@ function T(e) {
       })
     };
   return (0, r.jsxs)(u.ZP, {
-    className: a()(h.popover, {
-      [h.visible]: o,
+    className: o()(h.popover, {
+      [h.visible]: a,
       [h.expandable]: g,
       [h.statusPopover]: n === _.n_.STATUS,
       [h.avatarPopover]: n === _.n_.AVATAR,
@@ -124,7 +124,7 @@ function T(e) {
     children: [(0, r.jsx)(l.u, {
       asContainer: true,
       text: m.intl.string(m.t.nhaI4b),
-      shouldShow: o,
+      shouldShow: a,
       delay: 0,
       ariaHidden: true,
       children: (0, r.jsx)(u.zx, {
@@ -140,7 +140,7 @@ function T(e) {
     }), (0, r.jsx)(l.u, {
       asContainer: true,
       text: m.intl.string(m.t.RmDYKK),
-      shouldShow: o,
+      shouldShow: a,
       delay: 0,
       ariaHidden: true,
       children: (0, r.jsx)(u.zx, {
@@ -161,7 +161,7 @@ function T(e) {
       return (0, r.jsx)(l.u, {
         asContainer: true,
         text: m.intl.string(m.t["UKOtz+"]),
-        shouldShow: o,
+        shouldShow: a,
         delay: 0,
         ariaHidden: true,
         children: (0, r.jsx)(u.zx, y(E({

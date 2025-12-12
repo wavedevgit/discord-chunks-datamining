@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk159635 = require("./159635.js"),
-  o = require.n(Chunk159635),
+  a = require.n(Chunk159635),
   Chunk481060 = require("./481060.js");
 
 function s(e, t, n) {
@@ -63,7 +63,7 @@ function d(e) {
         let t = e.context[e.target];
         t && t.onClick ? (i.onClick = t.onClick, i.onContextMenu = t.onContextMenu) : i.onClick = t
       }
-      return null == i.onClick && (i.href = o().sanitizeUrl(e.target)), (0, r.jsx)(a.Anchor, u(l({
+      return null == i.onClick && (i.href = a().sanitizeUrl(e.target)), (0, r.jsx)(o.Anchor, u(l({
         title: e.title
       }, i), {
         children: t(e.content, n)

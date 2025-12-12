@@ -24,7 +24,7 @@ function i(e) {
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -35,8 +35,8 @@ function o(e, t) {
   return n
 }
 
-function a(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+function o(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -46,28 +46,28 @@ function s(e, t) {
     {
       onBeforeBatch: r
     } = n,
-    o = new Set;
+    a = new Set;
 
   function s(e) {
-    null != e.channel_id && o.has(e.channel_id) && t(e)
+    null != e.channel_id && a.has(e.channel_id) && t(e)
   }
 
   function l() {
-    o.clear()
+    a.clear()
   }
 
   function c(e) {
     let {
       channelId: t
     } = e;
-    null != t && o.add(t)
+    null != t && a.add(t)
   }
 
   function u(e) {
     let {
       message: t
     } = e;
-    null != t.channel_id && o.has(t.channel_id) && (null == r || r(), s(t))
+    null != t.channel_id && a.has(t.channel_id) && (null == r || r(), s(t))
   }
 
   function d(e) {
@@ -75,7 +75,7 @@ function s(e, t) {
       channelId: t,
       messages: n
     } = e;
-    o.add(t), null == r || r(), n.forEach(e => s(e))
+    a.add(t), null == r || r(), n.forEach(e => s(e))
   }
 
   function f(e) {
@@ -110,7 +110,7 @@ function s(e, t) {
       })
     })
   }
-  e.actions = a(i({}, e.actions), {
+  e.actions = o(i({}, e.actions), {
     POST_CONNECTION_OPEN: l,
     MESSAGE_CREATE: {
       callback: u,

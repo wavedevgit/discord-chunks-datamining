@@ -22,14 +22,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk42101 = require("./42101.js");
+  Chunk285044 = require("./285044.js");
 let v = 3,
   S = 3;
 
 function I(e) {
   let {
     applications: t
-  } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), o = i.useMemo(() => {
+  } = e, n = i.useMemo(() => t.sort((e, t) => u.default.compare(t.id, e.id)), [t]), a = i.useMemo(() => {
     let e = [];
     for (let t = 0; t < v; t++) {
       let r = n[t];
@@ -55,14 +55,14 @@ function I(e) {
       let i = n[t];
       if (null == i) break;
       let {
-        icon: o,
+        icon: a,
         name: s,
         id: c
       } = i, u = l.ZP.getApplicationIconURL({
         id: c,
-        icon: o
+        icon: a
       });
-      e.push((0, r.jsx)(a.u, {
+      e.push((0, r.jsx)(o.u, {
         __unsupportedReactNodeAsText: s,
         children: (0, r.jsx)("img", {
           src: u,
@@ -92,7 +92,7 @@ function I(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         color: "text-strong",
-        children: o
+        children: a
       }), (0, r.jsxs)(s.P3F, {
         onClick: d,
         className: O.manageGamesLink,
@@ -166,14 +166,14 @@ function A() {
       children: [(0, Chunk54381.jsx)(I, {
         applications: exports
       }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)("div", {
-        className: Chunk42101.divider
+        className: Chunk285044.divider
       }), (0, Chunk54381.jsx)(C, {})]
     }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk42101.emptyContainer,
+      className: Chunk285044.emptyContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        className: Chunk42101.noGamesConnectedText,
+        className: Chunk285044.noGamesConnectedText,
         children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",

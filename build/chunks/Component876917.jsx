@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk119837 = require("./119837.js"),
   Chunk802433 = require("./802433.js"),
   Chunk680295 = require("./680295.jsx"),
-  Chunk803580 = require("./803580.js"),
+  Chunk585258 = require("./585258.js"),
   Chunk241822 = require("./241822.js");
 let f = e => {
   let {
     skuId: t,
     isHighlighted: n,
-    isPurchased: o,
+    isPurchased: a,
     removeSetHeight: f = false,
     withScaleAnimation: p = false,
     delayProfileEffectIntro: _ = false
@@ -33,7 +33,7 @@ let f = e => {
       }
     }
   }, [p]), null == t) ? null : (0, r.jsxs)("div", {
-    className: a()(u.previewContainer, {
+    className: o()(u.previewContainer, {
       [u.previewContainerAnimation]: p,
       [u.previewContainerSetHeight]: !f
     }),
@@ -44,7 +44,7 @@ let f = e => {
       "aria-hidden": true,
       draggable: false
     }), !m && (0, r.jsx)("div", {
-      className: o ? u.purchasedEffect : true,
+      className: a ? u.purchasedEffect : true,
       children: (0, r.jsx)(c.Z, {
         skuId: t,
         useThumbnail: true,

@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   GR: () => i,
-  NL: () => a,
+  NL: () => o,
   Wu: () => r,
-  zU: () => o
+  zU: () => a
 });
 let r = {
     零: 0,
@@ -34,7 +34,7 @@ let r = {
     六: 6
   };
 
-function o(e) {
+function a(e) {
   let t = 0;
   for (let n = 0; n < e.length; n++) {
     let i = e[n];
@@ -43,7 +43,7 @@ function o(e) {
   return t
 }
 
-function a(e) {
+function o(e) {
   let t = "";
   for (let n = 0; n < e.length; n++) t += r[e[n]];
   return parseInt(t)

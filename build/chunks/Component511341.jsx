@@ -21,32 +21,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk396579 = require("./396579.js");
+  Chunk84784 = require("./84784.js");
 let O = e => {
   let {
     emoji: t,
     username: n,
     sourceType: r,
     sourceDetails: i
-  } = e, o = ":".concat(t.name, ":");
+  } = e, a = ":".concat(t.name, ":");
   switch (r) {
     case m.n_.ACTIVITY:
-      let a = b.intl.formatToPlainString(b.t.EUFEJt, {
+      let o = b.intl.formatToPlainString(b.t.EUFEJt, {
           username: n
         }),
         s = "\n> ".concat(i);
-      return null != i ? "".concat(p.jd).concat(a, "*").concat(s, "\n").concat(o) : "".concat(p.jd).concat(a, "*\n").concat(o);
+      return null != i ? "".concat(p.jd).concat(o, "*").concat(s, "\n").concat(a) : "".concat(p.jd).concat(o, "*\n").concat(a);
     case m.n_.AVATAR:
       let l = b.intl.formatToPlainString(b.t.E6H15q, {
         username: n
       });
-      return "".concat(p.jd).concat(l, "*\n").concat(o);
+      return "".concat(p.jd).concat(l, "*\n").concat(a);
     case m.n_.STATUS:
       let u = b.intl.formatToPlainString(b.t.XPQgL2, {
           username: n
         }),
         d = "\n> ".concat(i);
-      return null != i ? "".concat(p.jd).concat(u, "*").concat(d, "\n").concat(o) : "".concat(p.jd).concat(u, "*\n").concat(o);
+      return null != i ? "".concat(p.jd).concat(u, "*").concat(d, "\n").concat(a) : "".concat(p.jd).concat(u, "*\n").concat(a);
     default:
       (0, c.vE)(r)
   }
@@ -67,7 +67,7 @@ function v(e) {
     setInteractionToast: C
   } = (0, f.Xo)(), {
     theme: A
-  } = (0, _.z)(), N = (0, o.e7)([l.Z], () => l.Z.theme), P = (0, a.wj)(N) ? !(0, a.wj)(A) : (0, a.wj)(A), R = i.useRef(null);
+  } = (0, _.z)(), N = (0, a.e7)([l.Z], () => l.Z.theme), P = (0, o.wj)(N) ? !(0, o.wj)(A) : (0, o.wj)(A), R = i.useRef(null);
   i.useEffect(() => {
     null == v || v(null == R ? true : R.current)
   }, [R, v]), i.useEffect(() => {

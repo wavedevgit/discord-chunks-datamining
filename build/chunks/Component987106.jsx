@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk970184 = require("./970184.jsx"),
   Chunk280501 = require("./280501.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk392061 = require("./392061.js");
+  Chunk296786 = require("./296786.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -122,7 +122,7 @@ function T(e) {
       href: null != b ? b : "",
       shouldConfirm: true
     })
-  } : P ? null != N && false === N.disabled ? N.onClick : a.noop : () => T(), (0, r.jsxs)(s.zx, {
+  } : P ? null != N && false === N.disabled ? N.onClick : o.noop : () => T(), (0, r.jsxs)(s.zx, {
     "data-migration-pending": true,
     color: S(i),
     size: s.zx.Sizes.SMALL,
@@ -135,7 +135,7 @@ function T(e) {
     },
     role: L ? "link" : "button",
     children: [(0, r.jsxs)("div", {
-      className: o()(E.content, {
+      className: a()(E.content, {
         [E.hidden]: j,
         [E.premium]: P
       }),
@@ -147,7 +147,7 @@ function T(e) {
           color: "white"
         })
       }) : null, D ? (0, r.jsx)(u.Z, {
-        className: o()({
+        className: a()({
           [E.textEmoji]: x
         }),
         src: g.src,

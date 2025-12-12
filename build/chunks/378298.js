@@ -20,7 +20,7 @@ function s(e, t) {
     channelId: e,
     warningIds: t
   }), r.tn.post({
-    url: a.ANM.CHANNEL_SAFETY_WARNINGS_ACK(e),
+    url: o.ANM.CHANNEL_SAFETY_WARNINGS_ACK(e),
     body: {
       warning_ids: t
     },
@@ -54,16 +54,16 @@ function u(e) {
 
 function d(e) {
   return r.tn.post({
-    url: a.ANM.SAFETY_WARNING_FALSE_POSITIVE(e),
+    url: o.ANM.SAFETY_WARNING_FALSE_POSITIVE(e),
     rejectWithError: false
   })
 }
 
 function f(e) {
   return r.tn.post({
-    url: a.ANM.ADD_SAFETY_WARNING(e),
+    url: o.ANM.ADD_SAFETY_WARNING(e),
     body: {
-      safety_warning_type: o.pj.STRANGER_DANGER
+      safety_warning_type: a.pj.STRANGER_DANGER
     },
     rejectWithError: false
   })

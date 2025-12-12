@@ -38,7 +38,7 @@ class d extends Chunk147913.Z {
       POST_CONNECTION_OPEN: this.handlePossibleCredentialFetch,
       LOGIN_RESET: this.handleLogout,
       LOGOUT: this.handleLogout
-    }), c(this, "stores", new Map().set(i.default, this.handlePossibleCredentialFetch).set(o.default, this.handlePossibleCredentialFetch).set(s.Z, this.handlePossibleCredentialFetch))
+    }), c(this, "stores", new Map().set(i.default, this.handlePossibleCredentialFetch).set(a.default, this.handlePossibleCredentialFetch).set(s.Z, this.handlePossibleCredentialFetch))
   }
 }
 let f = new d

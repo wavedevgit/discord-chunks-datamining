@@ -61,8 +61,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let v = (0, Chunk473749.createContext)({
@@ -103,7 +103,7 @@ let v = (0, Chunk473749.createContext)({
     var {
       skuId: t,
       analyticsLocations: n,
-      children: a
+      children: o
     } = e, s = y(e, ["skuId", "analyticsLocations", "children"]);
     let {
       environment: c,
@@ -132,7 +132,7 @@ let v = (0, Chunk473749.createContext)({
       hideConfirmStepConfetti: E,
       confettiCanvas: d
     }), [O, S, I, m, E, d]);
-    return (0, r.jsxs)(o.Gt, {
+    return (0, r.jsxs)(a.Gt, {
       value: O,
       children: [(0, r.jsx)(u.sy, {
         environment: c,
@@ -147,7 +147,7 @@ let v = (0, Chunk473749.createContext)({
         excludeSubscriptionPlansBySKU: true,
         children: (0, r.jsx)(v.Provider, {
           value: T,
-          children: a
+          children: o
         })
       }))]
     })
@@ -158,13 +158,13 @@ let v = (0, Chunk473749.createContext)({
       step: n
     } = e, {
       isGift: i,
-      giftingOrigin: o
+      giftingOrigin: a
     } = (0, s.wD)();
     return (0, r.jsx)(u.tw, {
       step: n,
       onClose: () => t(false),
       isGift: i,
-      giftingOrigin: o
+      giftingOrigin: a
     })
   },
   N = (0, Chunk467368.Dz)(),
@@ -176,8 +176,8 @@ let v = (0, Chunk473749.createContext)({
       handleStepChange: r,
       handleClose: i
     } = n, {
-      leftColumnComponent: o,
-      rightColumnComponent: a,
+      leftColumnComponent: a,
+      rightColumnComponent: o,
       onStepChange: s,
       ctaDisabled: u,
       loading: d
@@ -189,8 +189,8 @@ let v = (0, Chunk473749.createContext)({
     } = (0, l.JL)(), _ = p ? c.h8.REVIEW : c.h8.ADD_PAYMENT_STEPS;
     return t({
       unifiedStepProps: {
-        leftColumnComponent: o,
-        rightColumnComponent: a,
+        leftColumnComponent: a,
+        rightColumnComponent: o,
         primaryCTAButtonProps: {
           onClick: () => s(_),
           loading: d,
@@ -206,13 +206,13 @@ let v = (0, Chunk473749.createContext)({
       let {
         skuId: t,
         loadId: n,
-        analyticsSourceLocation: o,
-        renderModalProps: a,
+        analyticsSourceLocation: a,
+        renderModalProps: o,
         onClose: s,
         onComplete: l,
         flowSpecificOptions: c,
         children: d
-      } = e, f = a.onClose, _ = e => {
+      } = e, f = o.onClose, _ = e => {
         f(), null == s || s(e)
       }, {
         skuIDs: m,
@@ -232,9 +232,9 @@ let v = (0, Chunk473749.createContext)({
         loadId: n,
         skuId: t,
         analyticsLocations: E,
-        analyticsSourceLocation: o,
+        analyticsSourceLocation: a,
         flowSpecificOptions: c
-      }), [n, t, E, o, c]), I = (0, i.useMemo)(() => ({
+      }), [n, t, E, a, c]), I = (0, i.useMemo)(() => ({
         skuId: b,
         onClose: y,
         onComplete: O,
@@ -244,14 +244,14 @@ let v = (0, Chunk473749.createContext)({
         onStepChange: c.onStepChange,
         skipConfirm: h,
         hideShadow: true,
-        transitionState: a.transitionState,
-        returnRef: a.returnRef
-      }), [b, y, O, E, c.onStepChange, h, a.transitionState, a.returnRef]);
+        transitionState: o.transitionState,
+        returnRef: o.returnRef
+      }), [b, y, O, E, c.onStepChange, h, o.transitionState, o.returnRef]);
       return (0, r.jsx)(N.Provider, {
         value: {
           sharedCheckoutContext: v,
           paymentModalProps: I,
-          renderModalProps: a
+          renderModalProps: o
         },
         children: d
       })

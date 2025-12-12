@@ -62,7 +62,7 @@ let o = e => u(async (t, l) => {
   s = (e, t) => u(async (l, u) => {
     let {
       default: o
-    } = await n.e("64626").then(n.bind(n, 601787));
+    } = await n.e("92575").then(n.bind(n, 601787));
     return n => (0, r.jsx)(o, a(i({}, n), {
       ruleName: e,
       keyword: t,

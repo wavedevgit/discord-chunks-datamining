@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   gw: () => i,
-  rE: () => o,
-  tk: () => a
+  rE: () => a,
+  tk: () => o
 }), require("./467055.js"), require("./388685.js");
 var Chunk911969 = require("./911969.js");
 
@@ -12,11 +12,11 @@ function i(e, t) {
   return e === r.yU.CHAT ? "/" + t : t
 }
 
-function o(e, t) {
+function a(e, t) {
   return "".concat(e, ":").concat(t)
 }
 
-function a(e) {
-  return Object.fromEntries(e.map(e => [o(e.id, e.type), e]))
+function o(e) {
+  return Object.fromEntries(e.map(e => [a(e.id, e.type), e]))
 }
 require("./895924.js")

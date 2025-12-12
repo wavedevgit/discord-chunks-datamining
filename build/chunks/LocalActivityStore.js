@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => Y
 }), require("./539854.js"), require("./388685.js"), require("./997841.js");
 var r, Chunk348327 = require("./348327.js"),
-  o = require.n(Chunk348327),
+  a = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk95015 = require("./95015.js"),
@@ -80,7 +80,7 @@ function k() {
   null != r && ("0" === r.expiresAtMs || new Date(Number(r.expiresAtMs)).getTime() - new Date().getTime() > 0) && require.push((0, Chunk676035.I)(r));
   let i = Chunk406066.Z.getActivities();
   require.push(...Chunk348327);
-  let a = Chunk272053.Z.getStream();
+  let o = Chunk272053.Z.getStream();
   null != Chunk392711 && require.push(D({
     type: Chunk981631.IIU.STREAMING
   }, Chunk392711));
@@ -126,7 +126,7 @@ function k() {
       emoji: null == module ? true : module.emoji
     })
   }
-  o()(j, require) || (j = require)
+  a()(j, require) || (j = require)
 }
 
 function U() {
@@ -140,7 +140,7 @@ function G(e) {
     activity: r,
     partyPrivacy: i
   } = e;
-  if (o()(M[t], [n, r, i])) returnfalse;
+  if (a()(M[t], [n, r, i])) returnfalse;
   null != r ? M[t] = [n, r, i] : delete M[t], k()
 }
 
@@ -161,13 +161,13 @@ function F(e) {
 function B() {
   let e = {},
     t = false;
-  for (let [i, [o, a, s]] of Object.entries(M)) {
+  for (let [i, [a, o, s]] of Object.entries(M)) {
     var n, r;
     let c = null != (n = Chunk392711.flags) ? require : 0,
       u = (0, Chunk212517.S)(Chunk392711, (0, Chunk95015.yE)(null != (r = null == Chunk392711 ? true : Chunk392711.flags) ? r : 0, Chunk981631.xjy.INSTANCE), Chunk392711.platform === Chunk981631.M7m.EMBEDDED, (0, Chunk212517.D)(Chunk392711), s);
-    Chunk570140 !== Chunk442837 ? (module[Chunk348327] = [o, L(D({}, Chunk392711), {
+    Chunk570140 !== Chunk442837 ? (module[Chunk348327] = [a, L(D({}, Chunk392711), {
       flags: Chunk570140
-    }), s], t = true) : module[Chunk348327] = [o, Chunk392711, s]
+    }), s], t = true) : module[Chunk348327] = [a, Chunk392711, s]
   }
   return exports ? (M = module, "APPLICATION_ACTIVITIES_CHANGED") : "NO_CHANGES"
 }

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk825460 = require("./825460.js"),
+  Chunk60252 = require("./60252.js"),
   Chunk247844 = require("./247844.js");
 
 function u(e) {
@@ -20,10 +20,10 @@ function u(e) {
     children: i
   } = e;
   return (0, r.jsxs)("li", {
-    className: o()(l.card, t),
+    className: a()(l.card, t),
     children: [(0, r.jsx)(n, {
       className: l.icon
-    }), (0, r.jsx)(a.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: l.__invalid_description,
       variant: "text-sm/medium",
       children: i
@@ -38,7 +38,7 @@ let d = function(e) {
     className: l.wrapper,
     children: [(0, r.jsxs)("div", {
       className: l.content,
-      children: [(0, r.jsx)(a.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         className: l.heading,
         color: "always-white",
         variant: "heading-xxl/bold",
@@ -47,23 +47,23 @@ let d = function(e) {
         className: l.cards,
         children: [(0, r.jsx)(u, {
           className: t,
-          icon: a.$zw,
+          icon: o.$zw,
           children: s.intl.string(s.t.TZigSO)
         }), (0, r.jsx)(u, {
           className: t,
           icon: e => (0, r.jsx)("img", {
-            className: o()(e.className, l.iconImage),
+            className: a()(e.className, l.iconImage),
             src: c,
             alt: ""
           }),
           children: s.intl.string(s.t.hjQuV2)
         }), (0, r.jsx)(u, {
           className: t,
-          icon: a.lZ8,
+          icon: o.lZ8,
           children: s.intl.string(s.t["2RUcaM"])
         }), (0, r.jsx)(u, {
           className: t,
-          icon: a.h_8,
+          icon: o.h_8,
           children: s.intl.string(s.t.bJoZKV)
         })]
       })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk906280 = require("./906280.js"),
   l = require.n(Chunk906280),
   Chunk793030 = require("./793030.js"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk679400 = require("./679400.js"),
   Chunk493773 = require("./493773.js"),
   Chunk580747 = require("./580747.js"),
-  Chunk369019 = require("./369019.js");
+  Chunk326913 = require("./326913.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,7 +41,7 @@ function h(e) {
 
 function g(e, t) {
   let {
-    color: o,
+    color: a,
     useLottieDefaultColors: s,
     src: m,
     size: g = "md",
@@ -93,10 +93,10 @@ function g(e, t) {
     let r, {
         default: i
       } = e,
-      o = 1 === Object.keys(S).length ? Object.values(S)[0].name : true,
-      a = null != (n = null != (t = N.current) ? t : j.current) ? n : o;
-    if (null != a && null != S[a]) {
-      let e = S[a];
+      a = 1 === Object.keys(S).length ? Object.values(S)[0].name : true,
+      o = null != (n = null != (t = N.current) ? t : j.current) ? n : a;
+    if (null != o && null != S[o]) {
+      let e = S[o];
       r = [L ? e.start : null != v ? v : e.start, e.start + e.duration]
     }
     null != A.current && (P.current = i.loadAnimation({
@@ -112,10 +112,10 @@ function g(e, t) {
     null == (e = P.current) || e.destroy()
   }), [T, S, v, L]), (0, r.jsx)("div", {
     style: h({
-      "--__lottieIconColor": null != o && "string" == typeof o ? o : null == o ? true : o.css,
+      "--__lottieIconColor": null != a && "string" == typeof a ? a : null == a ? true : a.css,
       display: "flex"
     }, R),
-    className: a()(_.lottieIcon, s ? true : _.lottieIconColors, y),
+    className: o()(_.lottieIcon, s ? true : _.lottieIconColors, y),
     ref: A
   })
 }

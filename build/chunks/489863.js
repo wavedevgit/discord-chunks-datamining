@@ -46,8 +46,8 @@ async function p(e) {
     authorize: t,
     clientId: n,
     scopes: r,
-    responseType: o,
-    redirectUri: a,
+    responseType: a,
+    redirectUri: o,
     codeChallenge: s,
     codeChallengeMethod: c,
     state: u,
@@ -62,8 +62,8 @@ async function p(e) {
     url: l.ANM.OAUTH2_AUTHORIZE,
     query: {
       client_id: n,
-      response_type: o,
-      redirect_uri: a,
+      response_type: a,
+      redirect_uri: o,
       code_challenge: s,
       code_challenge_method: c,
       scope: r.join(" "),
@@ -91,8 +91,8 @@ async function _(e) {
     clientId: t,
     scopes: n,
     responseType: r,
-    redirectUri: o,
-    codeChallenge: a,
+    redirectUri: a,
+    codeChallenge: o,
     codeChallengeMethod: s,
     state: c,
     integrationType: u,
@@ -104,8 +104,8 @@ async function _(e) {
     query: {
       client_id: t,
       response_type: r,
-      redirect_uri: o,
-      code_challenge: a,
+      redirect_uri: a,
+      code_challenge: o,
       code_challenge_method: s,
       scope: n.join(" "),
       state: c,
@@ -133,7 +133,7 @@ async function m(e) {
 }
 
 function h(e, t) {
-  o.Z.logout(t, (0, r.Ui)(e.pathname + e.search, false))
+  a.Z.logout(t, (0, r.Ui)(e.pathname + e.search, false))
 }
 async function g(e) {
   return await i.tn.post({

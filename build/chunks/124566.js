@@ -10,14 +10,14 @@ var Chunk979554 = require("./979554.js"),
   Chunk717401 = require("./717401.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk12901 = require("./12901.js"),
-  Chunk868592 = require("./868592.js"),
-  Chunk908637 = require("./908637.js"),
-  Chunk233634 = require("./233634.js");
-require("./337357.js"), require("./349927.js");
-var Chunk191333 = require("./191333.js"),
-  Chunk81932 = require("./81932.js"),
-  Chunk770476 = require("./770476.js");
+  Chunk135058 = require("./135058.js"),
+  Chunk728993 = require("./728993.js"),
+  Chunk925831 = require("./925831.js"),
+  Chunk52484 = require("./52484.js");
+require("./900285.js"), require("./164327.js");
+var Chunk895255 = require("./895255.js"),
+  Chunk673650 = require("./673650.js"),
+  Chunk11120 = require("./11120.js");
 let h = {
     skuId: Chunk242433.d.SEASONAL_GIFTING_2025_HEAD_IN_THE_CLOUDS_SKU_ID,
     assetId: "a_670b722e56740d11d1e6fe55b8094013",
@@ -51,7 +51,7 @@ let h = {
     rewardAssetIdMap: (0, Chunk717401.YV)([h, g, E]),
     chatGiftIcon: {
       trinketsAnimation: {
-        getAnimationData: () => require.e("31675").then(require.bind(require, 177648)).then(e => {
+        getAnimationData: () => require.e("27569").then(require.bind(require, 628011)).then(e => {
           let {
             default: t
           } = e;
@@ -98,21 +98,21 @@ let h = {
       }),
       gradientConfig: b,
       getImageUrl: (e, t) => t ? f.Z : d.Z,
-      getBannerImageUrl: () => Chunk770476.Z,
-      getBackgroundImageUrl: () => Chunk81932.Z
+      getBannerImageUrl: () => Chunk11120.Z,
+      getBackgroundImageUrl: () => Chunk673650.Z
     },
     planSelectionBanner: {
       desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.Abiuci),
       mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.cMiNit),
-      getImageUrl: () => Chunk233634.Z,
+      getImageUrl: () => Chunk52484.Z,
       gradientConfig: () => b,
-      getBackgroundImageUrl: () => Chunk770476.Z
+      getBackgroundImageUrl: () => Chunk11120.Z
     },
     billingSettingsMarketingBanner: {
       getImageUrl: e => e ? f.Z : d.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.Eeqjcv),
       body: () => Chunk388032.intl.string(Chunk388032.t.IuMZS3),
-      getBackgroundImageUrl: () => Chunk191333.Z,
+      getBackgroundImageUrl: () => Chunk895255.Z,
       gradientConfig: y
     },
     giftPurchaseConfirmation: {

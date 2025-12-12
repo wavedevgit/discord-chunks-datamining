@@ -67,10 +67,10 @@ function T(e, t, n) {
 
 function C(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    o = [];
-  return (n.length > 0 || r) && o.push(I(e, t, i.BN.ROLE)), n.forEach(e => {
-    o.push(T(e, t, i.BN.ROLE))
-  }), o
+    a = [];
+  return (n.length > 0 || r) && a.push(I(e, t, i.BN.ROLE)), n.forEach(e => {
+    a.push(T(e, t, i.BN.ROLE))
+  }), a
 }
 
 function A(e, t) {
@@ -92,15 +92,15 @@ function P(e) {
 
 function R(e, t, n) {
   var r, i;
-  let o = e.getGuildId(),
-    s = n.getGuild(o),
+  let a = e.getGuildId(),
+    s = n.getGuild(a),
     l = null != (r = null == s ? true : s.maxVideoChannelUsers) ? r : false,
     c = null != (i = null == s ? true : s.maxStageVideoChannelUsers) ? i : false,
     u = _.ZP.countVoiceStatesForChannel(e.id),
     d = _.ZP.getVoiceStatesForChannel(e),
     p = f.Z.can(g.Plq.MOVE_MEMBERS, e) && f.Z.can(g.Plq.CONNECT, e),
     m = false;
-  m = e.type === v ? null != o && (t.hasVideo(e.id) || (0, a.a)(d)) && c > 0 && u >= c : null != o && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
+  m = e.type === v ? null != a && (t.hasVideo(e.id) || (0, o.a)(d)) && c > 0 && u >= c : null != a && t.hasVideo(e.id) && l > 0 && u >= l + +!!p;
   let h = e.userLimit > 0 && u >= e.userLimit;
   return m || h && !p
 }
@@ -115,14 +115,14 @@ function D(e) {
     selectedChannelId: n,
     selectedVoiceChannelId: r,
     voiceStates: i
-  } = e, o = [];
+  } = e, a = [];
   return t.forEach(e => {
     if (e.id === r || e.id === n) return;
     let t = i[e.id];
     null != t && (e.isGuildStageVoice() ? t.forEach(e => {
-      (0, l.gf)(e.voiceState) === l.xO.ON_STAGE && o.push(e)
-    }) : t.forEach(e => o.push(e)))
-  }), o
+      (0, l.gf)(e.voiceState) === l.xO.ON_STAGE && a.push(e)
+    }) : t.forEach(e => a.push(e)))
+  }), a
 }
 
 function x(e) {
@@ -201,9 +201,9 @@ function U(e, t, n, r) {
 }
 
 function G(e, t, n, r) {
-  let i, o = e.getGuildId(),
-    a = (0, s.BC)(o, t);
-  return null != t && a ? U(o, t.id, e.id, h.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(o, e.id, n)
+  let i, a = e.getGuildId(),
+    o = (0, s.BC)(a, t);
+  return null != t && o ? U(a, t.id, e.id, h.default.castChannelIdAsMessageId(e.id)) : null != r ? r : k(a, e.id, n)
 }
 
 function Z(e) {

@@ -31,7 +31,7 @@ function u(e) {
     for (let i of e)
       if (!r.has(i) && (t.push(i), r.add(i), t.length >= n)) break;
     return t
-  }, [u, n]), f = (0, i.Wu)([a.Z], () => d.map(e => a.Z.get(e)).filter(e => null != e), [d]), p = r.useMemo(() => f.map(e => new o.Z({
+  }, [u, n]), f = (0, i.Wu)([o.Z], () => d.map(e => o.Z.get(e)).filter(e => null != e), [d]), p = r.useMemo(() => f.map(e => new a.Z({
     sku_id: e.id,
     sku_product_line: l.POd.SOCIAL_LAYER_GAME_ITEM,
     sku_name: e.name,

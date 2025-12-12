@@ -19,7 +19,7 @@ var Chunk36056 = require("./36056.js"),
   Chunk647943 = require("./647943.js");
 class h {
   constructor(e, t, n) {
-    this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.nb), this.options = null != n ? n : {}, this.refTypeCheck = new i.Z(this), this.refJsonReader = new o.C(this), this.refJsonWriter = new a.k(this), this.refBinReader = new s.I(this), this.refBinWriter = new l.R(this)
+    this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.nb), this.options = null != n ? n : {}, this.refTypeCheck = new i.Z(this), this.refJsonReader = new a.C(this), this.refJsonWriter = new o.k(this), this.refBinReader = new s.I(this), this.refBinWriter = new l.R(this)
   }
   create(e) {
     let t = (0, c.t)(this);

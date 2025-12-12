@@ -47,7 +47,7 @@ function m(e) {
     userId: t,
     settings: n
   } = e, r = (0, s.ac)(n);
-  u[t] = (0, s.re)(o.o8, u[t], r)
+  u[t] = (0, s.re)(a.o8, u[t], r)
 }
 
 function h() {

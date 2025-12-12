@@ -14,23 +14,23 @@ function s(e, t, n) {
     validationBehavior: s,
     focus: l
   } = e;
-  (0, o.b)(() => {
+  (0, a.b)(() => {
     if ("native" === s && (null == n ? true : n.current) && !n.current.disabled) {
       let e = t.realtimeValidation.isInvalid ? t.realtimeValidation.validationErrors.join(" ") || "Invalid value." : "";
       n.current.setCustomValidity(e), n.current.hasAttribute("title") || (n.current.title = ""), t.realtimeValidation.isInvalid || t.updateValidation(c(n.current))
     }
   });
   let d = (0, i.useRef)(false),
-    f = (0, a.i)(() => {
+    f = (0, o.i)(() => {
       d.current || t.resetValidation()
     }),
-    p = (0, a.i)(e => {
-      var i, o;
+    p = (0, o.i)(e => {
+      var i, a;
       t.displayValidation.isInvalid || t.commitValidation();
-      let a = null == n || null == (i = n.current) ? true : i.form;
-      !e.defaultPrevented && n && a && u(a) === n.current && (l ? l() : null == (o = n.current) || o.focus(), (0, r._w)("keyboard")), e.preventDefault()
+      let o = null == n || null == (i = n.current) ? true : i.form;
+      !e.defaultPrevented && n && o && u(o) === n.current && (l ? l() : null == (a = n.current) || a.focus(), (0, r._w)("keyboard")), e.preventDefault()
     }),
-    _ = (0, a.i)(() => {
+    _ = (0, o.i)(() => {
       t.commitValidation()
     });
   (0, i.useEffect)(() => {

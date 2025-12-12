@@ -14,14 +14,14 @@ var Chunk913527 = require("./913527.js"),
   Chunk55935 = require("./55935.js"),
   Chunk70956 = require("./70956.js");
 let s = {
-    t: e => (0, o.vc)(e, "LT"),
-    T: e => (0, o.vc)(e, "LTS"),
-    d: e => (0, o.vc)(e, "L"),
-    D: e => (0, o.vc)(e, "LL"),
-    f: e => (0, o.vc)(e, "LLL"),
-    F: e => (0, o.vc)(e, "LLLL"),
-    s: e => (0, o.vc)(e, "L LT"),
-    S: e => (0, o.vc)(e, "L LTS"),
+    t: e => (0, a.vc)(e, "LT"),
+    T: e => (0, a.vc)(e, "LTS"),
+    d: e => (0, a.vc)(e, "L"),
+    D: e => (0, a.vc)(e, "LL"),
+    f: e => (0, a.vc)(e, "LLL"),
+    F: e => (0, a.vc)(e, "LLLL"),
+    s: e => (0, a.vc)(e, "L LT"),
+    S: e => (0, a.vc)(e, "L LTS"),
     R: e => {
       let t = i().relativeTimeThreshold("s");
       i().relativeTimeThreshold("s", 60);
@@ -29,11 +29,11 @@ let s = {
       i().relativeTimeThreshold("ss", false);
       let r = i().relativeTimeThreshold("m");
       i().relativeTimeThreshold("m", 60);
-      let o = null;
+      let a = null;
       try {
-        o = i()(e.toDate()).fromNow()
+        a = i()(e.toDate()).fromNow()
       } catch (e) {}
-      return i().relativeTimeThreshold("s", t), i().relativeTimeThreshold("ss", n), i().relativeTimeThreshold("m", r), null != o ? o : i()(e.toDate()).fromNow()
+      return i().relativeTimeThreshold("s", t), i().relativeTimeThreshold("ss", n), i().relativeTimeThreshold("m", r), null != a ? a : i()(e.toDate()).fromNow()
     }
   },
   l = "f";
@@ -45,15 +45,15 @@ function d(e) {
   let {
     timestamp: t,
     format: n
-  } = e, r = i()(Number(t) * a.Z.Millis.SECOND);
+  } = e, r = i()(Number(t) * o.Z.Millis.SECOND);
   if (!r.isValid()) return null;
-  let o = null != n ? s[n] : true;
-  return null == o && (o = s[l]), {
+  let a = null != n ? s[n] : true;
+  return null == a && (a = s[l]), {
     timestamp: t,
     format: n,
     parsed: r,
     full: s.F(r),
-    formatted: o(r)
+    formatted: a(r)
   }
 }
 

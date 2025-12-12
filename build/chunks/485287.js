@@ -77,7 +77,7 @@ class v extends Chunk147913.Z {
       channelId: t
     } = e;
     if (null != t) {
-      let e = a.Z.getChannel(t);
+      let e = o.Z.getChannel(t);
       (null == e ? true : e.isGuildStageVoice()) ? b(): (E.stop(), g = false)
     } else E.stop(), g = false
   }

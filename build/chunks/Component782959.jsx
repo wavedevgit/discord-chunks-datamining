@@ -44,7 +44,7 @@ function g(e) {
       o.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, s.hH)(t))), g(d.L.PRIMARY), (0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("29497"), n.e("53781")]).then(n.bind(n, 241865));
+        } = await Promise.all([n.e("29497"), n.e("59679")]).then(n.bind(n, 241865));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = f({}, n), l = l = {
@@ -64,10 +64,10 @@ function g(e) {
       })
     },
     variant: "primary"
-  }, _ = i.useRef(null);
+  }, b = i.useRef(null);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      ref: _,
+      ref: b,
       children: h()
     }), (0, r.jsx)(l.Mb, {
       title: p.intl.string(p.t.fW7UqM),
@@ -82,7 +82,7 @@ function g(e) {
         link: c.Z.getCreatorSupportArticleURL(u.BhN.MEDIA_CHANNEL),
         text: p.intl.string(p.t.w4DutA)
       },
-      targetElementRef: _,
+      targetElementRef: b,
       onRequestClose: () => g(d.L.DISMISS)
     })]
   })

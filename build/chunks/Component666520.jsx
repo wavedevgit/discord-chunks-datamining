@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 666520, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,33 +12,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk246946 = require("./246946.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk215258 = require("./215258.js");
+  Chunk221805 = require("./221805.js");
 
-function f(e) {
+function m(e) {
   let {
     autoFocus: n = false,
     className: t,
-    userId: f,
+    userId: m,
     onUpdate: p
-  } = e, x = (0, o.e7)([c.Z], () => c.Z.hidePersonalInformation), {
+  } = e, x = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), {
     loading: h,
-    note: v
-  } = (0, a.Z)(f), j = i.useRef(null);
+    note: b
+  } = (0, c.Z)(m), v = i.useRef(null);
   return (i.useEffect(() => {
     if (!n || x) return;
-    let e = j.current;
+    let e = v.current;
     (null == e ? true : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
   }, [n, x]), x) ? null : (0, l.jsx)("div", {
     className: t,
     children: (0, l.jsx)(r.lcI, {
-      ref: j,
-      className: m.textarea,
+      ref: v,
+      className: f.textarea,
       disabled: h,
       placeholder: h ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
       "aria-label": u.intl.string(u.t.PbMNh2),
       onBlur: e => {
         let n = e.currentTarget.value;
-        (null != v ? v : "") !== n && (null == p || p(), s.Z.updateNote(f, n))
+        (null != b ? b : "") !== n && (null == p || p(), a.Z.updateNote(m, n))
       },
       onKeyPress: e => {
         if (13 === e.which)
@@ -48,7 +48,7 @@ function f(e) {
           } else e.preventDefault(), e.currentTarget.blur();
         else e.which === d.yXg.SPACE && e.stopPropagation()
       },
-      defaultValue: null != v ? v : true,
+      defaultValue: null != b ? b : true,
       maxLength: d.vuo
     })
   })

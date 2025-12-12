@@ -22,13 +22,13 @@ function _(e) {
 let m = {
   sentinel: Chunk761652.a4,
   matches(e, t, n, r, i) {
-    var a, s;
-    return r && null != (s = null == (a = i.chatInputType.autocomplete) ? true : a.addReactionShortcut) && s && (o.Z.can(u.Plq.ADD_REACTIONS, e) || e.isPrivate())
+    var o, s;
+    return r && null != (s = null == (o = i.chatInputType.autocomplete) ? true : o.addReactionShortcut) && s && (a.Z.can(u.Plq.ADD_REACTIONS, e) || e.isPrivate())
   },
   queryResults(e, t, n, r, i) {
     let {
-      emojis: o
-    } = a.ZP.queryEmojiResults({
+      emojis: a
+    } = o.ZP.queryEmojiResults({
       query: n,
       channel: e,
       intention: d.Hz.REACTION,
@@ -36,7 +36,7 @@ let m = {
     });
     return {
       results: {
-        emojis: o.unlocked
+        emojis: a.unlocked
       }
     }
   },
@@ -46,15 +46,15 @@ let m = {
         emojis: t
       },
       selectedIndex: n,
-      query: o,
-      onHover: a,
+      query: a,
+      onHover: o,
       onClick: l
     } = e;
     return (0, s.HI)({
-      query: o,
+      query: a,
       selectedIndex: n,
       autocompletes: t,
-      onHover: a,
+      onHover: o,
       onClick: l,
       titleWithQuery: f.t.o1Nmpc,
       titleWithoutQuery: f.intl.string(f.t.sMOuuS),

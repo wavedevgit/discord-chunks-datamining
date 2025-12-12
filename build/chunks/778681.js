@@ -14,7 +14,7 @@ var Chunk126182 = require("./126182.js"),
   Chunk185546 = require("./185546.js");
 
 function _(e, t, n) {
-  var r = a.replaceWithFragment(e.getCurrentContent(), e.getSelection(), t);
+  var r = o.replaceWithFragment(e.getCurrentContent(), e.getSelection(), t);
   return l.push(e, r.set("entityMap", n), "insert-fragment")
 }
 
@@ -25,7 +25,7 @@ function m(e, t) {
 }
 module.exports = function(e, t) {
   t.preventDefault();
-  var n = new o(t.clipboardData);
+  var n = new a(t.clipboardData);
   if (!n.isRichText()) {
     var h = n.getFiles(),
       g = n.getText();
@@ -34,15 +34,15 @@ module.exports = function(e, t) {
       d(h, function(t) {
         if (t = t || g) {
           var n = e._latestEditorState,
-            o = p(t),
+            a = p(t),
             d = i.create({
               style: n.getCurrentInlineStyle(),
               entity: u(n.getCurrentContent(), n.getSelection())
             }),
             f = c.getCurrentBlockType(n),
-            _ = s.processText(o, d, f),
+            _ = s.processText(a, d, f),
             m = r.createFromArray(_),
-            h = a.replaceWithFragment(n.getCurrentContent(), n.getSelection(), m);
+            h = o.replaceWithFragment(n.getCurrentContent(), n.getSelection(), m);
           e.update(l.push(n, h, "insert-fragment"))
         }
       });

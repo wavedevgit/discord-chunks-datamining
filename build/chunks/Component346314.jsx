@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk756715 = require("./756715.jsx"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk865672 = require("./865672.jsx"),
   Chunk109161 = require("./109161.jsx"),
-  Chunk836484 = require("./836484.js");
+  Chunk557383 = require("./557383.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,8 +61,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -70,8 +70,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -79,7 +79,7 @@ function O(e) {
   let {
     roleStyle: t,
     name: n,
-    colorString: o,
+    colorString: a,
     roleName: l,
     colorStrings: c,
     dotAlignment: d = "left",
@@ -101,29 +101,29 @@ function O(e) {
     roleStyle: "username",
     animateGradient: E || v || (null == O ? true : O.animate)
   }), x = (0, f.EJ)(n), L = {
-    className: a()(_.name, g, y, {
+    className: o()(_.name, g, y, {
       [_.username]: C,
       [w]: P
     }),
     children: x
   }, j = {
-    className: a()(_.nameGlow, D, y),
+    className: o()(_.nameGlow, D, y),
     children: n
   }, M = A ? (0, r.jsx)(p.F, {
-    color: o,
+    color: a,
     colors: N ? c : null,
     name: l,
     className: "left" === d ? _.roleDotLeft : _.roleDotRight,
     hoverOverride: E || v || (null == O ? true : O.animate)
   }) : null;
   return (0, r.jsxs)("span", {
-    className: a()(m, _.container),
+    className: o()(m, _.container),
     onMouseEnter: I,
     onMouseLeave: T,
     children: ["left" === d && M, (0, r.jsxs)("span", {
       className: _.nameContainer,
       style: h({
-        color: C && !N && null != o ? o : true
+        color: C && !N && null != a ? a : true
       }, P ? R : {}),
       children: [null != b ? (0, r.jsx)(s.xvT, h({
         tag: "span",
@@ -146,8 +146,8 @@ function v(e) {
     name: t,
     colorString: n,
     roleName: i,
-    dotAlignment: o,
-    className: a,
+    dotAlignment: a,
+    className: o,
     colorStrings: s,
     animateRoleGradient: u,
     ref: f
@@ -156,8 +156,8 @@ function v(e) {
     name: t,
     colorString: n,
     roleName: i,
-    dotAlignment: o,
-    className: a,
+    dotAlignment: a,
+    className: o,
     colorStrings: s,
     animateRoleGradient: u
   }), y = m && null != n ? {

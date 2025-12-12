@@ -85,7 +85,7 @@ function x(e, t, n) {
 function L(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
     n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? l.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (x(e, t, (0, o.r1)(e.guild_id)) || !h.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === S.i.ALL_MESSAGES)
+  return !(null == e || e.isGuildVocal() && 0 === t || e.hasFlag(v.zZ.IS_GUILD_RESOURCE_CHANNEL) || (0 === t || n) && (e.isThread() ? l.Z.isMuted(e.id) || b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.parent_id) : b.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)) || !e.isPrivate() && (x(e, t, (0, a.r1)(e.guild_id)) || !h.Z.can(e.accessPermissions, e))) && (t > 0 || b.ZP.resolveUnreadSetting(e) === S.i.ALL_MESSAGES)
 }
 
 function j(e) {
@@ -137,17 +137,17 @@ function V(e, t) {
   let n = k(e),
     r = w(n),
     i = G(n, r),
-    o = false;
+    a = false;
   if (t.forEach(e => {
       let t = p.Z.getChannel(e);
       if (null == t) return void delete i.mentionCounts[e];
       if (t.getGuildId() !== n) return;
       let r = g.ZP.getMentionCount(e);
-      null !== n && !o && g.ZP.hasUnread(t.id) && L(t, r, true) && (o = true, i.unreadChannelId = t.id), r > 0 && L(t, r) ? i.mentionCounts[t.id] = {
+      null !== n && !a && g.ZP.hasUnread(t.id) && L(t, r, true) && (a = true, i.unreadChannelId = t.id), r > 0 && L(t, r) ? i.mentionCounts[t.id] = {
         count: r,
         isMentionLowImportance: g.ZP.getIsMentionLowImportance(e)
       } : delete i.mentionCounts[t.id]
-    }), i.unreadByType[S.W.CHANNEL] = o, i.unreadByType[S.W.CHANNEL] !== r.unreadByType[S.W.CHANNEL] && !i.unreadByType[S.W.CHANNEL]) {
+    }), i.unreadByType[S.W.CHANNEL] = a, i.unreadByType[S.W.CHANNEL] !== r.unreadByType[S.W.CHANNEL] && !i.unreadByType[S.W.CHANNEL]) {
     let e = p.Z.getChannel(r.unreadChannelId);
     if (!(null != e && !t.includes(e.id) && g.ZP.hasUnread(e.id) && L(e))) return Y(n);
     null != n && N.add(n), i.unreadByType[S.W.CHANNEL] = true
@@ -179,21 +179,21 @@ function Y(e, t) {
     let e = b.ZP.isMuted(n);
     if (e && false === t) returnfalse;
     let i = b.ZP.getMutedChannels(n),
-      a = b.ZP.getChannelOverrides(n),
-      c = (0, o.r1)(n),
+      o = b.ZP.getChannelOverrides(n),
+      c = (0, a.r1)(n),
       u = p.Z.getMutableBasicGuildChannelsForGuild(n);
     for (let t in u) {
       let n = u[t],
-        o = e || i.has(t) || null != n.parent_id && i.has(n.parent_id),
+        a = e || i.has(t) || null != n.parent_id && i.has(n.parent_id),
         s = r.unreadByType[S.W.CHANNEL],
         {
           mentionCount: l,
           unread: d,
           isMentionLowImportance: f
-        } = g.ZP.getGuildChannelUnreadState(n, c, a, o, s),
+        } = g.ZP.getGuildChannelUnreadState(n, c, o, a, s),
         p = l > 0;
-      if (!p && o) continue;
-      let _ = !s && (!o || p) && d;
+      if (!p && a) continue;
+      let _ = !s && (!a || p) && d;
       (_ || p) && M(n, l, c) && (_ && (r.unreadByType[S.W.CHANNEL] = true, r.unreadChannelId = t), p && (f ? r.lowImportanceMentionCount += l : r.highImportanceMentionCount += l, r.mentionCounts[n.id] = {
         count: l,
         isMentionLowImportance: f
@@ -329,7 +329,7 @@ function ei(e) {
   return i()(t).groupBy(e => e.getGuildId()).reduce((e, t, n) => V(n, t.map(e => e.id)) || e, false)
 }
 
-function eo(e) {
+function ea(e) {
   let {
     channels: t
   } = e;
@@ -344,7 +344,7 @@ function eo(e) {
   }).reduce((e, t, n) => V(n, t) || e, false)
 }
 
-function ea(e) {
+function eo(e) {
   let {
     channel: t
   } = e;
@@ -530,7 +530,7 @@ class ey extends Chunk750041.Z {
       GUILD_DELETE: Q,
       MESSAGE_CREATE: et,
       MESSAGE_ACK: ee,
-      BULK_ACK: eo,
+      BULK_ACK: ea,
       UPDATE_CHANNEL_DIMENSIONS: ee,
       CHANNEL_SELECT: en,
       CHANNEL_DELETE: X,
@@ -541,9 +541,9 @@ class ey extends Chunk750041.Z {
       GUILD_ROLE_UPDATE: em,
       CHANNEL_CREATE: er,
       CHANNEL_UPDATES: ei,
-      THREAD_CREATE: ea,
-      THREAD_UPDATE: ea,
-      THREAD_DELETE: ea,
+      THREAD_CREATE: eo,
+      THREAD_UPDATE: eo,
+      THREAD_DELETE: eo,
       THREAD_LIST_SYNC: ef,
       THREAD_MEMBER_UPDATE: eu,
       THREAD_MEMBERS_UPDATE: ed,

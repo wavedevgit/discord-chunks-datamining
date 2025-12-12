@@ -2,7 +2,7 @@
 /** chunk id: 312870, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  U: () => o,
+  U: () => a,
   s: () => i
 });
 let r = (0, require("./427164.js").le)({
@@ -21,7 +21,7 @@ let r = (0, require("./427164.js").le)({
     location: e
   }).enabled;
 
-function o(e) {
+function a(e) {
   return r.getConfig({
     location: e
   }).enabled

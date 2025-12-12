@@ -11,6 +11,6 @@ var Chunk473749 = require("./473749.js"),
 
 function s(e) {
   return r.useEffect(() => {
-    (0, o.Pu)()
-  }, []), (0, i.e7)([a.Z], () => a.Z.getMarketingComponentByType(e))
+    (0, a.Pu)()
+  }, []), (0, i.e7)([o.Z], () => o.Z.getMarketingComponentByType(e))
 }

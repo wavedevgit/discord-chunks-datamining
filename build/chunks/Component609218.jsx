@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk313666 = require("./313666.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -30,13 +30,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk124527 = require("./124527.js"),
-  Chunk591867 = require("./591867.js"),
-  Chunk325380 = require("./325380.js"),
-  Chunk428946 = require("./428946.js"),
-  Chunk42948 = require("./42948.js"),
-  Chunk109194 = require("./109194.js"),
-  Chunk352812 = require("./352812.js"),
+  Chunk313655 = require("./313655.js"),
+  Chunk90081 = require("./90081.js"),
+  Chunk51766 = require("./51766.js"),
+  Chunk526438 = require("./526438.js"),
+  Chunk572637 = require("./572637.js"),
+  Chunk371587 = require("./371587.js"),
+  Chunk699653 = require("./699653.js"),
   j = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.PARENT_CONTAINER = 1] = "PARENT_CONTAINER", e[e.TAB_PARENT_CONTAINER = 2] = "TAB_PARENT_CONTAINER", e
   }({});
@@ -45,7 +45,7 @@ function M(e) {
   let {
     containerContext: t,
     image: n,
-    title: o,
+    title: a,
     description: j,
     enableSocialProof: M,
     analyticsLocationSection: k,
@@ -109,12 +109,12 @@ function M(e) {
                 text: X
               }
             }), (0, r.jsx)(u.Heading, {
-              className: a()(N.title, {
+              className: o()(N.title, {
                 [N.withBadge]: null != X
               }),
               variant: "heading-xl/bold",
               color: "text-strong",
-              children: o
+              children: a
             }), (0, r.jsx)(u.Text, {
               variant: "text-md/medium",
               color: "text-subtle",
@@ -153,7 +153,7 @@ function M(e) {
       onClick: G,
       isVisible: true
     }), (0, r.jsxs)("div", {
-      className: a()(P.container, W()),
+      className: o()(P.container, W()),
       children: [(0, r.jsx)(u.olH, {
         "data-migration-pending": true,
         onClick: G,
@@ -167,11 +167,11 @@ function M(e) {
           src: n.url,
           alt: "Nitro Perk"
         }), (0, r.jsx)(u.Heading, {
-          className: a()(P.title, {
+          className: o()(P.title, {
             [P.titleNoSocialProof]: !Y
           }),
           variant: "heading-xl/bold",
-          children: o
+          children: a
         }), Y && (0, r.jsx)(I.Z, {
           affinities: V
         }), (0, r.jsx)(u.Text, {

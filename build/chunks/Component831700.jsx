@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -52,7 +52,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk55940 = require("./55940.js");
+  Chunk642915 = require("./642915.js");
 
 function $(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -111,11 +111,11 @@ class en extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk55940.containerUserOver;
+    if (require) return Chunk642915.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk55940.containerDragAfter;
-      else return Chunk55940.containerDragBefore;
-    return Chunk55940.containerDefault
+      if (module > exports) return Chunk642915.containerDragAfter;
+      else return Chunk642915.containerDragBefore;
+    return Chunk642915.containerDefault
   }
   renderSubtitle() {
     var e;
@@ -124,14 +124,14 @@ class en extends Chunk98597.ZP {
       connected: n,
       showEmptyChannelTopic: i
     } = this.props, l = null == (e = (0, Chunk873696.D)(this.props.subtitle)) ? true : module.subtitle, {
-      hovered: o
+      hovered: a
     } = this.state;
     return (0, Chunk54381.jsx)(Chunk653577.Z, {
       onClick: this.handleVoiceStatusClick,
       channel: exports,
       connected: require,
       subtitle: Chunk120356,
-      hovered: o,
+      hovered: a,
       showEmptyChannelTopic: Chunk473749
     })
   }
@@ -158,7 +158,7 @@ class en extends Chunk98597.ZP {
       channelInfo: e
     } = this.props;
     return null == module ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk55940.channelInfo,
+      className: Chunk642915.channelInfo,
       children: module
     })
   }
@@ -169,23 +169,23 @@ class en extends Chunk98597.ZP {
       connected: n,
       unread: i,
       resolvedUnreadSetting: l,
-      mentionCount: a,
+      mentionCount: o,
       locked: s,
       sorting: d,
       isUserOver: f,
       connectChannelDropTarget: h,
       connectChannelDragSource: p,
       connectUserDropTarget: g,
-      connectDragPreview: m,
-      canReorderChannel: b,
-      canMoveMembers: _,
-      showTutorial: v,
-      hasActiveEvent: j,
-      embeddedApps: C,
-      isSubscriptionGated: x,
-      isFavoriteSuggestion: E,
-      withGuildIcon: S,
-      hasStartTime: I,
+      connectDragPreview: b,
+      canReorderChannel: m,
+      canMoveMembers: y,
+      showTutorial: j,
+      hasActiveEvent: C,
+      embeddedApps: x,
+      isSubscriptionGated: E,
+      isFavoriteSuggestion: S,
+      withGuildIcon: I,
+      hasStartTime: _,
       shouldHighlightChannel: P,
       shouldUseAnimatedWaveform: N
     } = this.props, {
@@ -193,16 +193,16 @@ class en extends Chunk98597.ZP {
       shouldShowGuildVerificationPopout: w
     } = this.state, T = Chunk554747 || Chunk378844, R = this.getVoiceStatesCount(), D = (0, Chunk54381.jsxs)("li", {
       ref: this.ref,
-      className: o()(this.getModeClass(), {
-        [Chunk55940.disabled]: this.isDisabled(),
-        [Chunk55940.voiceChannelHighlightContainer]: Chunk554747
+      className: a()(this.getModeClass(), {
+        [Chunk642915.disabled]: this.isDisabled(),
+        [Chunk642915.voiceChannelHighlightContainer]: Chunk554747
       }),
       "data-dnd-name": module.name,
       children: [Chunk554747 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk55940.voiceChannelHighlightBorder
+          className: Chunk642915.voiceChannelHighlightBorder
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk55940.voiceChannelHighlightGlow
+          className: Chunk642915.voiceChannelHighlightGlow
         })]
       }), (0, Chunk54381.jsx)("div", {
         onMouseEnter: this.handleMouseEnter,
@@ -217,9 +217,9 @@ class en extends Chunk98597.ZP {
             text: this.getTooltipText(),
             children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
               ref: this.channelItemRef,
-              className: Chunk55940.iconVisibility,
-              iconClassName: o()({
-                [Chunk55940.iconLive]: Chunk557135 || Chunk66999 || Chunk359110
+              className: Chunk642915.iconVisibility,
+              iconClassName: a()({
+                [Chunk642915.iconLive]: Chunk557135 || Chunk66999 || Chunk359110
               }),
               hasActiveEvent: Chunk557135,
               channel: module,
@@ -286,17 +286,17 @@ class en extends Chunk98597.ZP {
         unverifiedAccount: r,
         needSubscriptionToAccess: i,
         enableOpenTIVForPing: l,
-        mentionCount: o
+        mentionCount: a
       } = this.props;
       r && this.setState({
         shouldShowGuildVerificationPopout: true
       });
-      let a = l && o > 0;
-      a && d.Z.updateChatOpen(n.id, true), j.Z.handleVoiceConnect({
+      let o = l && a > 0;
+      o && d.Z.updateChatOpen(n.id, true), C.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
-        routeDirectlyToChannel: a,
+        routeDirectlyToChannel: o,
         locked: e
       })
     }), $(this, "handleContextMenu", e => {
@@ -330,13 +330,13 @@ class en extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, S.n)(t) && (0, E.hk)(t), this.handleVoiceConnect()
+      null != t && (0, I.n)(t) && (0, S.hk)(t), this.handleVoiceConnect()
     }), $(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
         channel: n
       } = this.props;
-      t && (e.stopPropagation(), (0, m.Z)({
+      t && (e.stopPropagation(), (0, b.Z)({
         channel: n
       }))
     }), $(this, "renderPopout", () => {
@@ -346,16 +346,16 @@ class en extends Chunk98597.ZP {
         sorting: n,
         isUserOver: i,
         selected: l,
-        guild: o
+        guild: a
       } = this.props, {
-        shouldShowActivities: a,
+        shouldShowActivities: o,
         shouldShowGuildVerificationPopout: s
       } = this.state;
-      if (a && !n && !i && !s) {
-        let n = R.SE.getSetting().includes(o.id);
+      if (o && !n && !i && !s) {
+        let n = R.SE.getSetting().includes(a.id);
         return (0, r.jsx)(W.Z, {
           onAction: this.closePopout,
-          guild: o,
+          guild: a,
           channel: e,
           voiceStates: t,
           isChannelSelected: l,
@@ -378,7 +378,7 @@ class en extends Chunk98597.ZP {
         asContainer: true,
         text: X.intl.string(X.t.ZXxLQg),
         children: (0, r.jsx)(u.P3F, {
-          className: o()(J.iconItem, n ? J.alwaysShown : null),
+          className: a()(J.iconItem, n ? J.alwaysShown : null),
           onClick: () => {
             d.Z.updateChatOpen(e.id, true), (0, T.Kh)(e.id)
           },
@@ -406,13 +406,13 @@ function ei(e) {
     channel: n,
     disableSorting: i,
     isFavoriteCategory: l,
-    selected: o,
+    selected: a,
     collapsed: s,
     voiceStates: c
-  } = e, u = (0, a.cj)([G.ZP], () => ({
+  } = e, u = (0, o.cj)([G.ZP], () => ({
     unread: G.ZP.hasUnread(n.id),
     mentionCount: G.ZP.getMentionCount(n.id)
-  })), d = (0, a.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), f = (0, a.cj)([D.Z, L.Z, k.Z], () => {
+  })), d = (0, o.e7)([U.ZP], () => U.ZP.resolveUnreadSetting(n)), f = (0, o.cj)([D.Z, L.Z, k.Z], () => {
     let e = D.Z.getChannel(n.parent_id),
       r = L.Z.getCheck(n.guild_id);
     return {
@@ -423,10 +423,10 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), h = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), p = (0, g.ZP)(n), m = (0, v.ZP)(n), y = (0, P.qY)(n.id), O = (0, a.e7)([_.Z], () => null != _.Z.getStartTime(n), [n]), {
-    isSubscriptionGated: j,
-    needSubscriptionToAccess: C
-  } = (0, I.Z)(n.id), E = (0, x.Z)(), S = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), N = e.connected || (null == E ? true : E.channelId) === n.id, {
+  }), h = (0, o.e7)([B.Z], () => B.Z.hasVideo(n.id)), p = (0, g.ZP)(n), b = (0, j.ZP)(n), O = (0, P.qY)(n.id), v = (0, o.e7)([y.Z], () => null != y.Z.getStartTime(n), [n]), {
+    isSubscriptionGated: C,
+    needSubscriptionToAccess: x
+  } = (0, _.Z)(n.id), S = (0, E.Z)(), I = (0, o.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), N = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: T,
     showEmptyChannelTopic: A
   } = (0, Z.bN)({
@@ -442,27 +442,27 @@ function ei(e) {
   }), {
     enableHighlight: M,
     enableWaveformIcon: F
-  } = (0, b.M)(t.id, "VoiceChannel"), V = null != c && c.length > 0, z = M && V, W = F && V, K = (0, H.Z)({
+  } = (0, m.M)(t.id, "VoiceChannel"), V = null != c && c.length > 0, z = M && V, W = F && V, K = (0, H.Z)({
     channel: n,
-    isChannelSelected: o,
+    isChannelSelected: a,
     isChannelCollapsed: s,
     voiceStates: c,
-    isSubscriptionGated: j,
-    needSubscriptionToAccess: C,
+    isSubscriptionGated: C,
+    needSubscriptionToAccess: x,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), Y = N && null == K;
   return (0, r.jsx)(er, et(ee({
-    channelName: m,
+    channelName: b,
     embeddedApps: p,
     embeddedActivityType: q.IIU.PLAYING,
     video: h,
-    hasActiveEvent: null != y,
-    isSubscriptionGated: j,
-    needSubscriptionToAccess: C
+    hasActiveEvent: null != O,
+    isSubscriptionGated: C,
+    needSubscriptionToAccess: x
   }, u, f, e), {
     connected: N,
-    isFavoriteSuggestion: l && !S,
+    isFavoriteSuggestion: l && !I,
     forceShowButtons: Y,
     channelInfo: K,
     resolvedUnreadSetting: d,
@@ -470,7 +470,7 @@ function ei(e) {
     showEmptyChannelTopic: A,
     enableOpenTIVForPing: R,
     hasChannelInfo: null != K,
-    hasStartTime: O,
+    hasStartTime: v,
     shouldHighlightChannel: z,
     shouldUseAnimatedWaveform: W
   }))

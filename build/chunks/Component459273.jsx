@@ -49,9 +49,9 @@ let d = Chunk473749.createContext(new u),
   f = Chunk473749.forwardRef(function(e, t) {
     let {
       children: n
-    } = e, o = (0, a.Z)(() => new c);
-    return i.useImperativeHandle(t, () => o, [o]), (0, r.jsx)(d.Provider, {
-      value: o,
+    } = e, a = (0, o.Z)(() => new c);
+    return i.useImperativeHandle(t, () => a, [a]), (0, r.jsx)(d.Provider, {
+      value: a,
       children: n
     })
   });
@@ -60,21 +60,21 @@ function p(e) {
   let {
     event: t,
     handler: n
-  } = e, r = i.useContext(d), o = i.useRef(n);
+  } = e, r = i.useContext(d), a = i.useRef(n);
   i.useEffect(() => {
-    o.current = n
+    a.current = n
   }, [n]);
-  let a = null == n;
+  let o = null == n;
   return i.useEffect(() => {
-    if (a) return;
+    if (o) return;
     let e = function() {
       for (var e, t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
-      null == (e = o.current) || e.call(o, ...n)
+      null == (e = a.current) || e.call(a, ...n)
     };
     return r.subscribe(t, e), () => {
       r.unsubscribe(t, e)
     }
-  }, [r, t, a]), null
+  }, [r, t, o]), null
 }
 
 function _(e) {

@@ -5,8 +5,8 @@ module.exports = function(e) {
     n = /(?![A-Za-z0-9])(?![$])/,
     r = t.concat(/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/, n),
     i = t.concat(/(\\?[A-Z][a-z0-9_\x7f-\xff]+|\\?[A-Z]+(?=[A-Z][a-z0-9_\x7f-\xff])){1,}/, n),
-    o = t.concat(/[A-Z]+/, n),
-    a = {
+    a = t.concat(/[A-Z]+/, n),
+    o = {
       scope: "variable",
       match: "\\$+" + r
     },
@@ -136,7 +136,7 @@ module.exports = function(e) {
       begin: /\(/,
       end: /\)/,
       keywords: b,
-      contains: [I, a, S, e.C_BLOCK_COMMENT_MODE, _, m, O]
+      contains: [I, o, S, e.C_BLOCK_COMMENT_MODE, _, m, O]
     },
     C = {
       relevance: 0,
@@ -149,7 +149,7 @@ module.exports = function(e) {
   T.contains.push(C);
   let A = [I, S, e.C_BLOCK_COMMENT_MODE, _, m, O],
     N = {
-      begin: t.concat(/#\[\s*\\?/, t.either(i, o)),
+      begin: t.concat(/#\[\s*\\?/, t.either(i, a)),
       beginScope: "meta",
       end: /]/,
       endScope: "meta",
@@ -170,7 +170,7 @@ module.exports = function(e) {
         variants: [{
           match: i
         }, {
-          match: o
+          match: a
         }]
       }]
     };
@@ -197,7 +197,7 @@ module.exports = function(e) {
     }, s, {
       scope: "variable.language",
       match: /\$this\b/
-    }, a, C, S, {
+    }, o, C, S, {
       match: [/const/, /\s/, r],
       scope: {
         1: "keyword",
@@ -222,7 +222,7 @@ module.exports = function(e) {
         excludeBegin: true,
         excludeEnd: true,
         keywords: b,
-        contains: ["self", N, a, S, e.C_BLOCK_COMMENT_MODE, _, m]
+        contains: ["self", N, o, S, e.C_BLOCK_COMMENT_MODE, _, m]
       }]
     }, {
       scope: "class",

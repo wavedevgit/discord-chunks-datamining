@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk325767 = require("./325767.js"),
-  Chunk922013 = require("./922013.js");
+  Chunk188879 = require("./188879.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,8 +54,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function f(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var _ = function(e) {
@@ -99,10 +99,10 @@ let h = e => {
     className: u,
     title: p
   } = e, _ = f(e, ["width", "height", "color", "direction", "foreground", "className", "title"]);
-  return (0, r.jsxs)("svg", d(c({}, (0, a.Z)(_)), {
+  return (0, r.jsxs)("svg", d(c({}, (0, o.Z)(_)), {
     width: t,
     height: n,
-    className: o()(u, m(s)),
+    className: a()(u, m(s)),
     viewBox: "0 0 24 24",
     children: [null != p ? (0, r.jsx)("title", {
       children: p

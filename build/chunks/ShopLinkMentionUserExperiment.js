@@ -2,11 +2,11 @@
 /** chunk id: 914216, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2024-12_shop_link_mention",
     label: "Collectibles Shop Link Mention Experiment",
@@ -22,6 +22,6 @@ let o = (0, Chunk818083.B)({
     }],
     commonTriggerPoint: Chunk987338.$P.CONNECTION_OPEN
   }),
-  a = e => o.getCurrentConfig({
+  o = e => a.getCurrentConfig({
     location: e
   }).enabled

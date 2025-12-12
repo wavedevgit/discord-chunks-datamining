@@ -8,12 +8,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk519160 = require("./519160.jsx"),
   Chunk956664 = require("./956664.js"),
   Chunk730606 = require("./730606.jsx"),
   Chunk369171 = require("./369171.js"),
-  Chunk111173 = require("./111173.js");
+  Chunk338047 = require("./338047.js");
 let f = 24,
   p = 36,
   _ = 76,
@@ -29,16 +29,16 @@ function g(e, t) {
   };
   let {
     width: i,
-    height: o
-  } = t, a = window.innerWidth - 2 * h, s = window.innerHeight - (e ? m : p) * 2, c = (0, l.Tj)({
+    height: a
+  } = t, o = window.innerWidth - 2 * h, s = window.innerHeight - (e ? m : p) * 2, c = (0, l.Tj)({
     width: i,
-    height: o,
+    height: a,
     maxWidth: n,
     maxHeight: r
   }), u = (0, l.Tj)({
     width: i,
-    height: o,
-    maxWidth: a,
+    height: a,
+    maxWidth: o,
     maxHeight: s
   });
   return c.width >= u.width ? c : u
@@ -48,7 +48,7 @@ function E(e) {
   let {
     items: t,
     currentIndex: n,
-    children: o
+    children: a
   } = e, l = t[n], f = g(t.length > 1, {
     width: l.width,
     height: l.height
@@ -65,8 +65,8 @@ function E(e) {
   }, [n, t]), (0, r.jsx)(u.ZP, {
     mode: u.lx.PINNED,
     children: e => (0, r.jsx)("div", {
-      className: a()(d.mediaArea, e),
-      children: f.width > 0 && f.height > 0 && o(f.width, f.height)
+      className: o()(d.mediaArea, e),
+      children: f.width > 0 && f.height > 0 && a(f.width, f.height)
     }, l.url)
   })
 }

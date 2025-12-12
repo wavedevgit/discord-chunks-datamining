@@ -37,8 +37,8 @@ let f = 10,
   p = {
     getActiveErrors: () => (0, Chunk150457.LN)() ? Chunk199902.Z.getAllActiveStreams().reduce((e, t) => {
       var n;
-      let i = null == (n = a.Z.getRTCConnection((0, r.V9)(t))) ? true : n.getMediaEngineConnectionId();
-      if (null == i || t.ownerId === o.default.getId()) return e;
+      let i = null == (n = o.Z.getRTCConnection((0, r.V9)(t))) ? true : n.getMediaEngineConnectionId();
+      if (null == i || t.ownerId === a.default.getId()) return e;
       let u = (0, c.hj)(i, t.ownerId);
       return null == u || (100 * u.short.packetLossRate > f || 100 * u.long.packetLossRate > f) && e.push(d({
         type: s.u.STREAM_VIEW_HIGH_PACKET_LOSS

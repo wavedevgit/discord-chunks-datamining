@@ -2,12 +2,12 @@
 /** chunk id: 349992, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => o
+  t: () => a
 });
 var Chunk436759 = require("./436759.js"),
   Chunk240773 = require("./240773.js");
 
-function o(e) {
+function a(e) {
   let t = {};
   for (let n of (Object.defineProperty(t, i.C, {
       enumerable: false,

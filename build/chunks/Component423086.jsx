@@ -57,8 +57,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = "useReportAppItemModal";
@@ -76,7 +76,7 @@ function E(e) {
   var {
     applicationId: t
   } = e, n = m(e, ["applicationId"]);
-  return null == t ? null : (0, r.jsx)(o.sNh, {
+  return null == t ? null : (0, r.jsx)(a.sNh, {
     id: "report-app",
     color: n.color,
     label: u.intl.string(u.t.NgA5vp),
@@ -87,28 +87,28 @@ function E(e) {
 function b(e, t) {
   let n = () => {
     var e;
-    (0, o.Mr3)(g), null == (e = t.onSubmit) || e.call(t)
+    (0, a.Mr3)(g), null == (e = t.onSubmit) || e.call(t)
   };
-  (0, o.ZDy)(async () => {
+  (0, a.ZDy)(async () => {
     await l.ZP.fetchApplication(e);
     let d = c.Z.getApplication(e);
     return e => (0, r.jsx)(i.u_l, _(f({
       title: u.intl.string(u.t.Bd10bR),
       actions: []
     }, e), {
-      children: (0, r.jsxs)(o.Kqy, {
+      children: (0, r.jsxs)(a.Kqy, {
         children: [(0, r.jsx)(s.JZ, {
           variant: "clickable",
           title: u.intl.string(u.t.eyEkG1),
           description: u.intl.string(u.t.ptItsj),
-          onButtonPress: () => (0, a.pX)(t.user, t.guildId, n, t.appContext)
+          onButtonPress: () => (0, o.pX)(t.user, t.guildId, n, t.appContext)
         }), (0, r.jsx)(s.JZ, {
           variant: "clickable",
           title: u.intl.string(u.t.atP0yX),
           description: u.intl.string(u.t.UGg603),
           onButtonPress: () => {
             var e;
-            (0, a.uu)({
+            (0, o.uu)({
               application: d,
               entrypoint: null != (e = t.entrypoint) ? e : "user_profile",
               contextualGuildId: t.guildId,

@@ -11,7 +11,7 @@ var Chunk468363 = require("./468363.js"),
   Chunk771173 = require("./771173.jsx"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk599685 = require("./599685.js");
+  Chunk768142 = require("./768142.js");
 let d = function(e) {
   let {
     hovered: t,
@@ -28,7 +28,7 @@ let d = function(e) {
     voiceChannel: m
   } = (0, a.Z)({
     userId: null == f ? true : f.id
-  }), _ = h ? m : true;
+  }), b = h ? m : true;
   return g ? (0, r.jsx)("div", {
     className: u.text,
     children: c.intl.string(c.t.tFY5Zb)
@@ -36,13 +36,13 @@ let d = function(e) {
     activities: n,
     status: p,
     applicationStream: d,
-    voiceChannel: _
+    voiceChannel: b
   }) ? (0, r.jsx)(s.Z, {
     location: "StatusText",
     textClassName: u.statusText,
     activities: n,
     applicationStream: d,
-    voiceChannel: _,
+    voiceChannel: b,
     animateEmoji: t,
     user: f,
     textSize: "sm"

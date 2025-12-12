@@ -1,9 +1,9 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 429122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => _,
-  dt: () => m,
-  eo: () => b
+  ZP: () => y,
+  dt: () => b,
+  eo: () => m
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk700026 = require("./700026.js"),
   Chunk301342 = require("./301342.jsx"),
   Chunk327530 = require("./327530.js"),
-  Chunk776677 = require("./776677.js");
+  Chunk135445 = require("./135445.js");
 let g = Chunk473749.memo(function(e) {
   let {
     guildChannels: t,
@@ -27,22 +27,22 @@ let g = Chunk473749.memo(function(e) {
   })
 });
 
-function m(e) {
+function b(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
     voiceStates: r,
     selectedChannelId: i,
     selectedVoiceChannelId: l,
-    optInEnabled: o,
-    visualRefreshEnabled: a,
+    optInEnabled: a,
+    visualRefreshEnabled: o,
     density: s
   } = e;
   if (t === n.voiceChannelsSectionNumber) return 44;
   let {
     hasDivider: c,
     canHaveVoiceSummary: f
-  } = (0, d.ie)(n, o, t), p = c ? a ? 9 : h.QP : 0;
+  } = (0, d.ie)(n, a, t), p = c ? o ? 9 : h.QP : 0;
   if (!f || t === u.wZ) return p;
   let g = n.getNamedCategoryFromSection(t);
   return null == g ? p : (0, d.V5)({
@@ -50,10 +50,10 @@ function m(e) {
     selectedChannelId: i,
     selectedVoiceChannelId: l,
     voiceStates: r
-  }) ? (a ? "cozy" === s ? 42 : 34 : h.Vf) + p : p
+  }) ? (o ? "cozy" === s ? 42 : 34 : h.Vf) + p : p
 }
 
-function b(e, t, n) {
+function m(e, t, n) {
   if (e === t.voiceChannelsSectionNumber) return "voice-channels-button";
   let {
     hasDivider: r,
@@ -61,52 +61,52 @@ function b(e, t, n) {
   } = (0, d.ie)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(i ? "-voice-summary" : "")
 }
-let _ = Chunk473749.memo(function(e) {
+let y = Chunk473749.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
     guildChannelsVersion: f,
     voiceStates: h,
-    guildId: m,
-    selectedChannelId: b,
-    selectedVoiceChannelId: _,
-    optInEnabled: y
+    guildId: b,
+    selectedChannelId: m,
+    selectedVoiceChannelId: y,
+    optInEnabled: O
   } = e, {
-    hasDivider: O,
-    canHaveVoiceSummary: v
-  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, f]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, f]), C = (0, a.DM)(m), x = (0, l.Wu)([s.ZP], () => {
-    if (null == j || !j.isCollapsed || !v) return [];
-    let e = j.getChannelRecords(),
+    hasDivider: v,
+    canHaveVoiceSummary: j
+  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, f]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, f]), x = (0, o.DM)(b), E = (0, l.Wu)([s.ZP], () => {
+    if (null == C || !C.isCollapsed || !j) return [];
+    let e = C.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
-      let e = s.ZP.isChannelOrParentOptedIn(m, n.id);
-      (!C || e) && t.push(n)
+      let e = s.ZP.isChannelOrParentOptedIn(b, n.id);
+      (!x || e) && t.push(n)
     }
     return t
-  }, [j, v, m, C]), E = i.useMemo(() => (0, c.c4)({
-    channels: x,
-    selectedChannelId: b,
-    selectedVoiceChannelId: _,
+  }, [C, j, b, x]), S = i.useMemo(() => (0, c.c4)({
+    channels: E,
+    selectedChannelId: m,
+    selectedVoiceChannelId: y,
     voiceStates: h
-  }), [x, b, _, h]);
+  }), [E, m, y, h]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: f
   });
-  let S = O ? (0, r.jsx)("div", {
+  let I = v ? (0, r.jsx)("div", {
     className: p.sectionDivider
   }) : null;
-  return v && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
+  return j && 0 !== S.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.voiceUserSummary,
-      children: (0, r.jsx)(o.ZP, {
+      children: (0, r.jsx)(a.ZP, {
         renderIcon: true,
-        users: E,
+        users: S,
         max: 8,
         showUserPopout: true,
-        guildId: m
+        guildId: b
       })
-    }), S]
-  }) : S
+    }), I]
+  }) : I
 })

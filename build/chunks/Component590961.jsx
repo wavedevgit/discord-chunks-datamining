@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327);
+  o = require.n(Chunk348327);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,10 +41,10 @@ function d(e) {
   let {
     newValue: t,
     children: n
-  } = e, o = u(), s = i.useMemo(() => {
-    let e = l({}, o, t);
-    return a()(o, e) && null != o ? o : e
-  }, [o, t]);
+  } = e, a = u(), s = i.useMemo(() => {
+    let e = l({}, a, t);
+    return o()(a, e) && null != a ? a : e
+  }, [a, t]);
   return (0, r.jsx)(c.Provider, {
     value: s,
     children: n

@@ -2,17 +2,17 @@
 /** chunk id: 859678, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => a
+  G: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk15624 = require("./15624.js"),
   Chunk866483 = require("./866483.js");
 
-function a(e) {
+function o(e) {
   let t = i.Z.useCanUIRequestGatewaySocket();
   r.useEffect(() => {
-    if (t) return o.m$(e), () => {
-      o.HY(e)
+    if (t) return a.m$(e), () => {
+      a.HY(e)
     }
   }, [e, t])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 46931 **/
+/** Chunk was on 48615 **/
 /** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk175470 = require("./175470.js"),
   Chunk569545 = require("./569545.js"),
   Chunk314910 = require("./314910.jsx"),
-  Chunk565063 = require("./565063.js");
+  Chunk933300 = require("./933300.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -38,17 +38,17 @@ function g(e) {
 let v = {
     visibility: "hidden"
   },
-  b = {
+  h = {
     precision: 1e-4,
     duration: 300
   },
-  h = {
+  E = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
     bounce: 0
   },
-  E = {
+  _ = {
     duration: 1e3
   };
 
@@ -87,7 +87,7 @@ function y(e) {
       enter: {
         opacity: 0
       },
-      config: b
+      config: h
     }, "animate-always"),
     R = (0, i.useRef)(null),
     T = (0, c.Yzy)(I, {
@@ -123,24 +123,24 @@ function y(e) {
           left: P.current.left + 12
         }
       })())),
-      config: y.enabled ? E : h,
+      config: y.enabled ? _ : E,
       onRest: (e, t) => {
         null != t.item && null != I.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(C, t.item.timestamp)
       }
     }, "animate-always");
   return (0, l.useChain)([x, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: _.hidden,
+      className: m.hidden,
       ref: S
     }), Z((e, t) => null != t && (0, r.jsx)(l.animated.div, {
-      className: _.whiteFlash,
+      className: m.whiteFlash,
       style: e
-    })), (0, r.jsx)(m.ZP, {
+    })), (0, r.jsx)(b.ZP, {
       children: (0, r.jsx)("div", {
-        className: _.hidden,
+        className: m.hidden,
         children: T((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
           src: t.thumbnail,
-          className: _.movingImage,
+          className: m.movingImage,
           style: e
         }))
       })

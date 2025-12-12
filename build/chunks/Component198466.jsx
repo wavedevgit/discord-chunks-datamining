@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk745510 = require("./745510.jsx"),
-  Chunk315824 = require("./315824.js");
+  Chunk153251 = require("./153251.js");
 let d = 200,
   f = 20,
   p = 200;
@@ -24,7 +24,7 @@ function _(e) {
     setConfettiCount: c,
     setShouldFireConfetti: f,
     tooltipProps: _
-  } = e, [m, h] = i.useState(0), g = i.useRef(false), E = i.useRef(true), b = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), {
+  } = e, [m, h] = i.useState(0), g = i.useRef(false), E = i.useRef(true), b = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), {
     scaleFactor: y
   } = (0, s.q_F)({
     from: {
@@ -40,7 +40,7 @@ function _(e) {
   });
   return (i.useEffect(() => () => {
     E.current = false
-  }, []), b) ? t : (0, r.jsx)(o.animated.div, {
+  }, []), b) ? t : (0, r.jsx)(a.animated.div, {
     className: u.confettiTriggerWrapper,
     style: {
       transform: y.to(e => "scale(".concat(e, ")"))
@@ -74,12 +74,12 @@ let m = function(e) {
     confettiTriggerRef: n,
     isFiring: r
   } = e, {
-    cannon: o,
+    cannon: a,
     createMultipleConfettiAt: s
-  } = i.useContext(c.h), u = (0, a.e7)([l.Z], () => l.Z.useReducedMotion);
+  } = i.useContext(c.h), u = (0, o.e7)([l.Z], () => l.Z.useReducedMotion);
   return i.useEffect(() => () => {
-    null == o || o.clearConfetti()
-  }, [o]), i.useEffect(() => {
+    null == a || a.clearConfetti()
+  }, [a]), i.useEffect(() => {
     if (!r || u || null == n.current) return;
     let e = n.current.getBoundingClientRect();
     s(e.left + e.width / 2, e.top + e.height / 2, {

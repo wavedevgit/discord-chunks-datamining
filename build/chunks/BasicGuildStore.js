@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ class f extends(r = Chunk442837.ZP.Store) {
     return s
   }
 }
-a(f, "displayName", "BasicGuildStore");
+o(f, "displayName", "BasicGuildStore");
 let p = new f(Chunk570140.Z, {
   BASIC_GUILD_FETCH: c,
   BASIC_GUILD_FETCH_SUCCESS: u,

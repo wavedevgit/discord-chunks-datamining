@@ -1,0 +1,3 @@
+/** Chunk was on 54313 **/
+/** chunk id: 617293, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"+utqaz":["Опция за фон на подарък: ",[1,"giftStyle"]],"B9XqQk":["Кутия"],"AJ4iir":["Торта"],"P5keo3":["Сандък"],"w84vET":["Кафе"],"6dCq/u":["Чаша"],"+HMF8k":["Nitroween"],"vd1fu/":["Празнична кутия"],"aubYGR":["Празнична торта"],"vjxYqU":["Празничен сандък"],"bHuJLa":["Празнично кафе"],"M6cPwB":["Снежен глобус"],"GzPel1":["Кутия"]}')

@@ -3,7 +3,7 @@
 "use strict";
 var Chunk896471 = require("./896471.js"),
   i = TypeError,
-  o = function(e) {
+  a = function(e) {
     var t, n;
     this.promise = new e(function(e, r) {
       if (true !== t || true !== n) throw new i("Bad Promise constructor");
@@ -11,5 +11,5 @@ var Chunk896471 = require("./896471.js"),
     }), this.resolve = r(t), this.reject = r(n)
   };
 module.exports.f = function(e) {
-  return new o(e)
+  return new a(e)
 }

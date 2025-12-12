@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => X
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk786761 = require("./786761.js"),
@@ -61,14 +61,14 @@ let O = new Set,
   S = {};
 
 function I(e) {
-  v = o().omitBy(v, t => {
+  v = a().omitBy(v, t => {
     let n = t.guildId === e;
     return n && delete S[t.parentId], n
   })
 }
 
 function T(e) {
-  v = o().omitBy(v, t => t.parentId === e), delete S[e]
+  v = a().omitBy(v, t => t.parentId === e), delete S[e]
 }
 
 function C(e, t) {
@@ -221,9 +221,9 @@ function V(e) {
     sendMessageOptions: i
   } = e;
   if (n || r || null != i) returnfalse;
-  let o = f.Z.getChannel(t.channel_id);
-  if (null == o || !c.Ec.has(o.type) || !H(o, t)) returnfalse;
-  C(o, e => {
+  let a = f.Z.getChannel(t.channel_id);
+  if (null == a || !c.Ec.has(a.type) || !H(a, t)) returnfalse;
+  C(a, e => {
     e.count = Math.min(e.count + 1, m.M3), e.mostRecentRawMessage = t, e.mostRecentMessage = null
   })
 }
@@ -250,11 +250,11 @@ function W(e) {
   } = e, r = v[n];
   if (null == r) returnfalse;
   let i = _.default.castChannelIdAsMessageId(n) !== t,
-    o = !O.has(t);
+    a = !O.has(t);
   A(r, e => {
     var n;
     let r = null != (n = e.mostRecentRawMessage) ? n : e.mostRecentMessage;
-    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && o ? Math.max(e.count - 1, 0) : e.count, O.add(t)
+    null != r && r.id === t && (e.mostRecentMessage = null, e.mostRecentRawMessage = null), e.count = i && a ? Math.max(e.count - 1, 0) : e.count, O.add(t)
   })
 }
 

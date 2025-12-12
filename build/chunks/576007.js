@@ -29,26 +29,26 @@ async function d(e, t) {
     signal: _
   } = n;
   try {
-    let o = await r.tn.post({
+    let a = await r.tn.post({
       url: l.ANM.GUILD_MEMBER_SEARCH(e),
       body: t,
       signal: _,
       rejectWithError: false
     });
-    if (o.status === s.t) {
-      if (null == o.body.retry_after) throw Error("Indexing response did not include retry_after");
+    if (a.status === s.t) {
+      if (null == a.body.retry_after) throw Error("Indexing response did not include retry_after");
       if (!p) throw Error("Indexing response received but autoRetry is disabled");
       return await i.Z.dispatch({
         type: "MEMBER_SAFETY_GUILD_MEMBER_SEARCH_STILL_INDEXING",
         guildId: e
-      }), await new Promise(e => setTimeout(e, o.body.retry_after * a.Z.Millis.SECOND)), d(e, t, n, f + 1)
+      }), await new Promise(e => setTimeout(e, a.body.retry_after * o.Z.Millis.SECOND)), d(e, t, n, f + 1)
     }
     return {
       type: s.d.SUCCESSFUL_QUERY,
-      body: c(o.body)
+      body: c(a.body)
     }
   } catch (t) {
-    let e = new o.Hx(t);
+    let e = new a.Hx(t);
     return {
       type: s.d.ERROR,
       body: e

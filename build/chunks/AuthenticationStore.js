@@ -5,7 +5,7 @@ let r, i;
 require.r(exports), require.d(exports, {
   default: () => ek
 }), require("./539854.js"), require("./358797.js"), require("./415506.js");
-var o, Chunk213919 = require("./213919.js"),
+var a, Chunk213919 = require("./213919.js"),
   Chunk756647 = require("./756647.js"),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
@@ -63,7 +63,7 @@ let P = new Chunk710845.Z("AuthenticationStore"),
   $ = [];
 
 function ee(e) {
-  let t = null != a.getToken(),
+  let t = null != o.getToken(),
     n = null != u.K.get(C.B1h);
   P.verbose(e, {
     tokenManagerHasToken: t,
@@ -128,14 +128,14 @@ function er() {
 }
 
 function ei(e, t) {
-  ee("setAuthToken called."), (null == t || t !== x) && a.removeAnalyticsToken(), a.setToken(e, t)
+  ee("setAuthToken called."), (null == t || t !== x) && o.removeAnalyticsToken(), o.setToken(e, t)
 }
 
-function eo(e) {
-  Z = e, a.setAnalyticsToken(e)
+function ea(e) {
+  Z = e, o.setAnalyticsToken(e)
 }
 
-function ea() {
+function eo() {
   return ee("removeAuthToken called."), Chunk213919.removeAnalyticsToken(), Chunk213919.removeToken()
 }
 
@@ -150,7 +150,7 @@ function el(e) {
   let {
     isMultiAccount: t
   } = e;
-  F = C.u34.NONE, H = "", Y = false, W = null, i = null, r = null, t || (e_(), ea(), et(false))
+  F = C.u34.NONE, H = "", Y = false, W = null, i = null, r = null, t || (e_(), eo(), et(false))
 }
 
 function ec() {
@@ -201,11 +201,11 @@ function em(e) {
     ticket: t,
     sms: n,
     webauthn: r,
-    backup: o,
-    totp: a,
+    backup: a,
+    totp: o,
     loginInstanceId: s
   } = e;
-  null != t && (H = t, Y = n, W = null != r ? r : null, z = o, K = a, i = s, e_()), F = C.u34.MFA_STEP
+  null != t && (H = t, Y = n, W = null != r ? r : null, z = a, K = o, i = s, e_()), F = C.u34.MFA_STEP
 }
 
 function eh() {
@@ -260,11 +260,11 @@ function eI(e) {
     user: n,
     sessionId: r,
     authSessionIdHash: i,
-    analyticsToken: o,
-    auth: a,
+    analyticsToken: a,
+    auth: o,
     staticAuthSessionId: s
   } = e;
-  ee("handleConnectionOpen called"), S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, j = i, M = s, eo(o), x = n.id, true !== a && (V = a.authenticator_types), u.K.set(D, n.id)
+  ee("handleConnectionOpen called"), S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, j = i, M = s, ea(a), x = n.id, true !== o && (V = o.authenticator_types), u.K.set(D, n.id)
 }
 
 function eT(e) {
@@ -273,9 +273,9 @@ function eT(e) {
     user: n,
     sessionId: r,
     analyticsToken: i,
-    token: o
+    token: a
   } = e;
-  S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, Z = i, ei(o, n.id), null != i && eo(i), er(), x = n.id, u.K.set(D, n.id)
+  S.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, y.Z)(n)), L = r, Z = i, ei(a, n.id), null != i && ea(i), er(), x = n.id, u.K.set(D, n.id)
 }
 
 function eC(e) {
@@ -316,7 +316,7 @@ function eP() {
 function eR(e) {
   var t;
   ee("handleLogout called.");
-  let n = ea();
+  let n = eo();
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && er(), et()), l.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
@@ -348,7 +348,7 @@ function eL(e) {
 function ej() {
   Q = null, F = Chunk981631.u34.NONE, eR(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
 }
-class eM extends(o = Chunk442837.ZP.Store) {
+class eM extends(a = Chunk442837.ZP.Store) {
   initialize() {
     x = Chunk433517.K.get(D), null == Chunk213919.getToken() && et(), this.addChangeListener(() => (0, Chunk670890.u)(x))
   }

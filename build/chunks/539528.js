@@ -40,8 +40,8 @@ function f(e) {
     r = "",
     i = t.indexOf("#");
   false !== i && (r = t.substr(i), t = t.substr(0, i));
-  var o = t.indexOf("?");
-  return false !== o && (n = t.substr(o), t = t.substr(0, o)), {
+  var a = t.indexOf("?");
+  return false !== a && (n = t.substr(a), t = t.substr(0, a)), {
     pathname: t,
     search: "?" === n ? "" : n,
     hash: "#" === r ? "" : r
@@ -56,20 +56,20 @@ function p(e) {
   return n && "?" !== n && (i += "?" === n.charAt(0) ? n : "?" + n), r && "#" !== r && (i += "#" === r.charAt(0) ? r : "#" + r), i
 }
 
-function _(e, t, n, o) {
-  var a;
-  "string" == typeof e ? (a = f(e)).state = t : (true === (a = (0, r.Z)({}, e)).pathname && (a.pathname = ""), a.search ? "?" !== a.search.charAt(0) && (a.search = "?" + a.search) : a.search = "", a.hash ? "#" !== a.hash.charAt(0) && (a.hash = "#" + a.hash) : a.hash = "", true !== t && true === a.state && (a.state = t));
+function _(e, t, n, a) {
+  var o;
+  "string" == typeof e ? (o = f(e)).state = t : (true === (o = (0, r.Z)({}, e)).pathname && (o.pathname = ""), o.search ? "?" !== o.search.charAt(0) && (o.search = "?" + o.search) : o.search = "", o.hash ? "#" !== o.hash.charAt(0) && (o.hash = "#" + o.hash) : o.hash = "", true !== t && true === o.state && (o.state = t));
   try {
-    a.pathname = decodeURI(a.pathname)
+    o.pathname = decodeURI(o.pathname)
   } catch (e) {
-    if (e instanceof URIError) throw URIError('Pathname "' + a.pathname + '" could not be decoded. This is likely caused by an invalid percent-encoding.');
+    if (e instanceof URIError) throw URIError('Pathname "' + o.pathname + '" could not be decoded. This is likely caused by an invalid percent-encoding.');
     throw e
   }
-  return n && (a.key = n), o ? a.pathname ? "/" !== a.pathname.charAt(0) && (a.pathname = (0, i.Z)(a.pathname, o.pathname)) : a.pathname = o.pathname : a.pathname || (a.pathname = "/"), a
+  return n && (o.key = n), a ? o.pathname ? "/" !== o.pathname.charAt(0) && (o.pathname = (0, i.Z)(o.pathname, a.pathname)) : o.pathname = a.pathname : o.pathname || (o.pathname = "/"), o
 }
 
 function m(e, t) {
-  return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash && e.key === t.key && (0, o.Z)(e.state, t.state)
+  return e.pathname === t.pathname && e.search === t.search && e.hash === t.hash && e.key === t.key && (0, a.Z)(e.state, t.state)
 }
 
 function h() {
@@ -84,8 +84,8 @@ function h() {
     },
     confirmTransitionTo: function(t, n, r, i) {
       if (null != e) {
-        var o = "function" == typeof e ? e(t, n) : e;
-        "string" == typeof o ? "function" == typeof r ? r(o, i) : i(true) : i(false !== o)
+        var a = "function" == typeof e ? e(t, n) : e;
+        "string" == typeof a ? "function" == typeof r ? r(a, i) : i(true) : i(false !== a)
       } else i(true)
     },
     appendListener: function(e) {
@@ -143,16 +143,16 @@ function T() {
 }
 
 function C(e) {
-  true === e && (e = {}), g || (0, a.Z)(false);
+  true === e && (e = {}), g || (0, o.Z)(false);
   var t = window.history,
     n = b(),
     i = !y(),
-    o = e,
-    l = o.forceRefresh,
+    a = e,
+    l = a.forceRefresh,
     c = true !== l && l,
-    f = o.getUserConfirmation,
+    f = a.getUserConfirmation,
     m = true === f ? E : f,
-    O = o.keyLength,
+    O = a.keyLength,
     C = true === O ? 6 : O,
     A = e.basename ? d(s(e.basename)) : "";
 
@@ -161,8 +161,8 @@ function C(e) {
       n = t.key,
       r = t.state,
       i = window.location,
-      o = i.pathname + i.search + i.hash;
-    return A && (o = u(o, A)), _(o, r, n)
+      a = i.pathname + i.search + i.hash;
+    return A && (a = u(a, A)), _(a, r, n)
   }
 
   function P() {
@@ -214,23 +214,23 @@ function C(e) {
 
   function Z(e, r) {
     var i = "PUSH",
-      o = _(e, r, P(), Q.location);
-    R.confirmTransitionTo(o, i, m, function(e) {
+      a = _(e, r, P(), Q.location);
+    R.confirmTransitionTo(a, i, m, function(e) {
       if (e) {
-        var r = G(o),
-          a = o.key,
-          s = o.state;
+        var r = G(a),
+          o = a.key,
+          s = a.state;
         if (n)
           if (t.pushState({
-              key: a,
+              key: o,
               state: s
             }, null, r), c) window.location.href = r;
           else {
             var l = U.indexOf(Q.location.key),
               u = U.slice(0, l + 1);
-            u.push(o.key), U = u, w({
+            u.push(a.key), U = u, w({
               action: i,
-              location: o
+              location: a
             })
           }
         else window.location.href = r
@@ -240,22 +240,22 @@ function C(e) {
 
   function F(e, r) {
     var i = "REPLACE",
-      o = _(e, r, P(), Q.location);
-    R.confirmTransitionTo(o, i, m, function(e) {
+      a = _(e, r, P(), Q.location);
+    R.confirmTransitionTo(a, i, m, function(e) {
       if (e) {
-        var r = G(o),
-          a = o.key,
-          s = o.state;
+        var r = G(a),
+          o = a.key,
+          s = a.state;
         if (n)
           if (t.replaceState({
-              key: a,
+              key: o,
               state: s
             }, null, r), c) window.location.replace(r);
           else {
             var l = U.indexOf(Q.location.key);
-            false !== l && (U[l] = o.key), w({
+            false !== l && (U[l] = a.key), w({
               action: i,
-              location: o
+              location: a
             })
           }
         else window.location.replace(r)
@@ -352,12 +352,12 @@ function D(e) {
 }
 
 function x(e) {
-  true === e && (e = {}), g || (0, a.Z)(false);
+  true === e && (e = {}), g || (0, o.Z)(false);
   var t = window.history;
   O();
   var n = e,
     i = n.getUserConfirmation,
-    o = true === i ? E : i,
+    a = true === i ? E : i,
     l = n.hashType,
     c = true === l ? "slash" : l,
     f = e.basename ? d(s(e.basename)) : "",
@@ -397,7 +397,7 @@ function x(e) {
     if (T) T = false, I();
     else {
       var t = "POP";
-      S.confirmTransitionTo(e, t, o, function(n) {
+      S.confirmTransitionTo(e, t, a, function(n) {
         n ? I({
           action: t,
           location: e
@@ -430,15 +430,15 @@ function x(e) {
   function B(e, t) {
     var n = "PUSH",
       r = _(e, true, true, J.location);
-    S.confirmTransitionTo(r, n, o, function(e) {
+    S.confirmTransitionTo(r, n, a, function(e) {
       if (e) {
         var t = p(r),
           i = b(f + t),
-          o = R() !== i;
-        if (o) {
+          a = R() !== i;
+        if (a) {
           C = t, w(i);
-          var a = Z.lastIndexOf(p(J.location)),
-            s = Z.slice(0, a + 1);
+          var o = Z.lastIndexOf(p(J.location)),
+            s = Z.slice(0, o + 1);
           s.push(t), Z = s, I({
             action: n,
             location: r
@@ -451,14 +451,14 @@ function x(e) {
   function V(e, t) {
     var n = "REPLACE",
       r = _(e, true, true, J.location);
-    S.confirmTransitionTo(r, n, o, function(e) {
+    S.confirmTransitionTo(r, n, a, function(e) {
       if (e) {
         var t = p(r),
           i = b(f + t),
-          o = R() !== i;
-        o && (C = t, D(i));
-        var a = Z.indexOf(p(J.location));
-        false !== a && (Z[a] = t), I({
+          a = R() !== i;
+        a && (C = t, D(i));
+        var o = Z.indexOf(p(J.location));
+        false !== o && (Z[o] = t), I({
           action: n,
           location: r
         })
@@ -525,9 +525,9 @@ function j(e) {
   var t = e,
     n = t.getUserConfirmation,
     i = t.initialEntries,
-    o = true === i ? ["/"] : i,
-    a = t.initialIndex,
-    s = true === a ? 0 : a,
+    a = true === i ? ["/"] : i,
+    o = t.initialIndex,
+    s = true === o ? 0 : o,
     l = t.keyLength,
     c = true === l ? 6 : l,
     u = h();
@@ -539,8 +539,8 @@ function j(e) {
   function f() {
     return Math.random().toString(36).substr(2, c)
   }
-  var m = L(s, 0, o.length - 1),
-    g = o.map(function(e) {
+  var m = L(s, 0, a.length - 1),
+    g = a.map(function(e) {
       return "string" == typeof e ? _(e, true, f()) : _(e, true, e.key || f())
     }),
     E = p;
@@ -552,12 +552,12 @@ function j(e) {
       if (e) {
         var t = A.index,
           n = t + 1,
-          o = A.entries.slice(0);
-        o.length > n ? o.splice(n, o.length - n, i) : o.push(i), d({
+          a = A.entries.slice(0);
+        a.length > n ? a.splice(n, a.length - n, i) : a.push(i), d({
           action: r,
           location: i,
           index: n,
-          entries: o
+          entries: a
         })
       }
     })

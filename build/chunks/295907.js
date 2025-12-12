@@ -4,7 +4,7 @@
 require.d(exports, {
   Cg: () => p,
   Hs: () => u,
-  LT: () => a,
+  LT: () => o,
   Mo: () => c,
   RE: () => d,
   Sp: () => l,
@@ -25,7 +25,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function o(e) {
   }
   return e
 }
-let a = Chunk56742.Key.F6,
+let o = Chunk56742.Key.F6,
   s = new Map([
     [Chunk56742.Key.F6, "f6"],
     [Chunk56742.Key.Tab, "tab"],
@@ -286,7 +286,7 @@ let u = Object.freeze({
     down: 81,
     up: 82
   }),
-  f = Object.freeze(o({
+  f = Object.freeze(a({
     a: 65,
     s: 83,
     d: 68,

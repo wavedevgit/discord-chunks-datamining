@@ -18,10 +18,10 @@ let l = e => {
     gridNavigatorId: u,
     setInspectedStickerPosition: d,
     onGridItemSelect: f
-  } = e, p = (0, o.O)(), _ = r.useCallback(e => {
+  } = e, p = (0, a.O)(), _ = r.useCallback(e => {
     f(e, p)
   }, [f, p]), m = r.useCallback((e, t) => {
-    d(e, t, a.u.GRID_NAVIGATOR_EVENT)
+    d(e, t, o.u.GRID_NAVIGATOR_EVENT)
   }, [d]), {
     gridDispatch: h,
     getItemProps: g,
@@ -44,7 +44,7 @@ let l = e => {
       rowIndex: n,
       source: r
     } = e;
-    r !== a.u.GRID_NAVIGATOR_EVENT && h({
+    r !== o.u.GRID_NAVIGATOR_EVENT && h({
       type: i.s.SET_FOCUSED_POSITION,
       x: t,
       y: n

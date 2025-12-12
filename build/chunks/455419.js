@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   _e: () => r,
-  iS: () => a,
+  iS: () => o,
   u: () => s,
-  z9: () => o
+  z9: () => a
 });
 let r = new WeakMap;
 
@@ -13,18 +13,18 @@ function i(e) {
   return "string" == typeof e ? e.replace(/\s*/g, "") : "" + e
 }
 
-function o(e, t) {
+function a(e, t) {
   let n = r.get(e);
   if (!n) throw Error("Unknown grid");
   return `${n}-${i(t)}`
 }
 
-function a(e, t, n) {
-  let o = r.get(e);
-  if (!o) throw Error("Unknown grid");
-  return `${o}-${i(t)}-${i(n)}`
+function o(e, t, n) {
+  let a = r.get(e);
+  if (!a) throw Error("Unknown grid");
+  return `${a}-${i(t)}-${i(n)}`
 }
 
 function s(e, t) {
-  return [...e.collection.rowHeaderColumnKeys].map(n => a(e, t, n)).join(" ")
+  return [...e.collection.rowHeaderColumnKeys].map(n => o(e, t, n)).join(" ")
 }

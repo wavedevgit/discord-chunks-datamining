@@ -66,7 +66,7 @@ class m extends(r = Chunk442837.ZP.Store) {
     if (null != e) return d[e]
   }
   getCategoryRecord(e) {
-    return e in d && d[e].type === o.Dd.CATEGORY ? p(d[e]) : null
+    return e in d && d[e].type === a.Dd.CATEGORY ? p(d[e]) : null
   }
   getNickname(e) {
     var t;

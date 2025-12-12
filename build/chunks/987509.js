@@ -53,11 +53,11 @@ async function E(e) {
 }
 
 function b(e) {
-  if ("user" !== e.type) return (0, a.Z)(e.id);
+  if ("user" !== e.type) return (0, o.Z)(e.id);
   {
     let t = u.default.getUser(e.id);
     return null != t ? {
-      type: o.h8.USER,
+      type: a.h8.USER,
       record: t,
       score: 0
     } : null
@@ -69,7 +69,7 @@ function y(e) {
 }
 
 function O(e, t) {
-  return e.type === o.h8.USER ? t || null != l.Z.getDMChannelFromUserId(e.record.id) : e.type === o.h8.GROUP_DM || e.record.type !== p.d4z.GUILD_FORUM && e.record.type !== p.d4z.GUILD_MEDIA && c.Z.can(p.Plq.VIEW_CHANNEL, e.record) && c.Z.can(p.Plq.SEND_MESSAGES, e.record)
+  return e.type === a.h8.USER ? t || null != l.Z.getDMChannelFromUserId(e.record.id) : e.type === a.h8.GROUP_DM || e.record.type !== p.d4z.GUILD_FORUM && e.record.type !== p.d4z.GUILD_MEDIA && c.Z.can(p.Plq.VIEW_CHANNEL, e.record) && c.Z.can(p.Plq.SEND_MESSAGES, e.record)
 }
 
 function v(e, t) {
@@ -79,7 +79,7 @@ function v(e, t) {
   let i = [];
   for (let t of e)
     if (null == t) continue;
-    else if (t.type === o.h8.HEADER) n = t;
+    else if (t.type === a.h8.HEADER) n = t;
   else {
     let {
       id: e
@@ -90,7 +90,7 @@ function v(e, t) {
 }
 
 function S(e, t) {
-  return e.filter(e => (0, d.lm)(e) && (e.type === o.h8.HEADER || (0, f.o)(e) && O(e, t)))
+  return e.filter(e => (0, d.lm)(e) && (e.type === a.h8.HEADER || (0, f.o)(e) && O(e, t)))
 }
 
 function I(e) {
@@ -98,7 +98,7 @@ function I(e) {
     results: t,
     hasQuery: n,
     queryMode: i,
-    frequentChannels: o,
+    frequentChannels: a,
     targetDestination: l,
     selectedDestinations: c,
     pinnedDestinations: u,
@@ -108,8 +108,8 @@ function I(e) {
   if (n) return v(S(t, f));
   let p = null != u && u.length > 0 ? u.map(e => b(e)) : [],
     m = s.Z.getChannelHistory(),
-    h = m.length > 0 ? m.map(e => (0, a.Z)(e)) : [],
-    g = o.length > 0 ? o.map(e => (0, a.Z)(e.id)) : [],
+    h = m.length > 0 ? m.map(e => (0, o.Z)(e)) : [],
+    g = a.length > 0 ? a.map(e => (0, o.Z)(e.id)) : [],
     E = S([...p, null != l ? b(l) : null, ...h, ...g], f),
     y = (null == c ? true : c.find(e => (0, r.isEqual)(e, d))) != null,
     O = null == d || y ? [] : [d.id];

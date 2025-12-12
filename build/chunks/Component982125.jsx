@@ -7,20 +7,20 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk937397 = require("./937397.js"),
   Chunk735048 = require("./735048.js"),
   Chunk155127 = require("./155127.js"),
   Chunk657707 = require("./657707.js"),
   Chunk821541 = require("./821541.jsx"),
   Chunk777207 = require("./777207.jsx"),
-  Chunk726550 = require("./726550.js");
+  Chunk672 = require("./672.js");
 
 function _(e) {
   let {
     checked: t,
     description: n,
-    onChange: o,
+    onChange: a,
     disabled: _ = false,
     displayOnly: m,
     label: h,
@@ -38,9 +38,9 @@ function _(e) {
     C(t ? "animateIn" : "animateOut")
   }, [t]);
   let w = e => {
-      null != o && o(e)
+      null != a && a(e)
     },
-    D = a()(p.checkboxOption, "string" == typeof T && p[T], "indicator" !== O && p.spacing),
+    D = o()(p.checkboxOption, "string" == typeof T && p[T], "indicator" !== O && p.spacing),
     x = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: p.checkboxIndicator,

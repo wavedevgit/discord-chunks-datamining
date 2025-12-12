@@ -52,8 +52,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,8 +61,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = 13;
@@ -112,28 +112,28 @@ function m(e) {
           timestamps: n
         } = t,
         i = d(t, ["timestamps"]),
-        o = this.renderTime(this.state.hours, true),
+        a = this.renderTime(this.state.hours, true),
         s = this.renderTime(this.state.minutes),
         c = this.renderTime(this.state.seconds),
-        f = false === o ? "".concat(s, ":").concat(c) : "".concat(o, ":").concat(s, ":").concat(c);
+        f = false === a ? "".concat(s, ":").concat(c) : "".concat(a, ":").concat(s, ":").concat(c);
       return null != n.end ? (0, r.jsx)(e, u(l({}, i), {
-        message: a.intl.formatToPlainString(a.t["I/J7vI"], {
+        message: o.intl.formatToPlainString(o.t["I/J7vI"], {
           duration: f,
-          hours: o,
+          hours: a,
           minutes: s,
           seconds: c
         })
       })) : null != n.start ? (0, r.jsx)(e, u(l({}, i), {
-        message: a.intl.formatToPlainString(a.t.M9Fexd, {
+        message: o.intl.formatToPlainString(o.t.M9Fexd, {
           duration: f,
-          hours: o,
+          hours: a,
           minutes: s,
           seconds: c
         })
       })) : null
     }
     constructor(e) {
-      super(e), s(this, "_interval", true), this._interval = new o.Xp, this.state = l({}, this.getUpdatedTime())
+      super(e), s(this, "_interval", true), this._interval = new a.Xp, this.state = l({}, this.getUpdatedTime())
     }
   }
 }

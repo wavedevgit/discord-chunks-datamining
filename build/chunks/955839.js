@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk232567 = require("./232567.js"),
   Chunk281494 = require("./281494.js"),
@@ -16,8 +16,8 @@ let u = e => {
     searchQuery: t,
     selectedUsers: n,
     limit: i
-  } = e, u = (0, a.e7)([c.Z], () => c.Z.getRecipientStatus()), d = (0, a.e7)([c.Z], () => c.Z.getReferralsRemaining()), [f, p] = r.useState(0), [_, m] = r.useState([]), [h, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(new Map);
-  o()(null != d, "Referrals remaining should not be null");
+  } = e, u = (0, o.e7)([c.Z], () => c.Z.getRecipientStatus()), d = (0, o.e7)([c.Z], () => c.Z.getReferralsRemaining()), [f, p] = r.useState(0), [_, m] = r.useState([]), [h, g] = r.useState(false), [E, b] = r.useState(false), [y, O] = r.useState(new Map);
+  a()(null != d, "Referrals remaining should not be null");
   let v = async (e, r) => {
     if (!h && !E && null != e && 0 !== d) try {
       g(true);
@@ -26,15 +26,15 @@ let u = e => {
         if (t === l.Fe.PENDING && !y.has(e)) {
           let t = await (0, s.PR)(e);
           i.push(t)
-        } let o = await (0, l.iF)(e, t, r);
+        } let a = await (0, l.iF)(e, t, r);
       m(t => {
-        let r = o.users.filter(e => !n.has(e.id));
+        let r = a.users.filter(e => !n.has(e.id));
         return (i = i.filter(e => !n.has(e.id)), 0 === e) ? [...n.values(), ...i.values(), ...r] : [...t, ...r]
       }), O(e => {
         let t = new Map(e);
         for (let e of i) t.set(e.id, e);
         return t
-      }), p(o.nextIndex)
+      }), p(a.nextIndex)
     } catch (e) {
       b(true)
     } finally {

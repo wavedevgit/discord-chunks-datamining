@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,14 +18,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -46,9 +46,9 @@ function c(e) {
   let {
     component: t,
     children: n,
-    forceLevel: o
-  } = e, a = i.useContext(l), c = null != o ? o : a.level, u = c;
-  (null != t || null == o && a.consumed.current) && u++;
+    forceLevel: a
+  } = e, o = i.useContext(l), c = null != a ? a : o.level, u = c;
+  (null != t || null == a && o.consumed.current) && u++;
   let d = i.useRef(false),
     f = i.useRef(false),
     p = i.useMemo(() => s(c, d), [c]),
@@ -67,7 +67,7 @@ function c(e) {
 function u(e) {
   let t = d(),
     n = "h".concat(Math.min(t, 6));
-  return (0, r.jsx)(n, a({}, t > 6 ? {
+  return (0, r.jsx)(n, o({}, t > 6 ? {
     "data-excessive-heading-level": t
   } : {}, e))
 }

@@ -86,10 +86,10 @@ let E = {
     [Chunk981631.bL.NULL]: null
   });
 
-function y(e, t, n, a, s) {
+function y(e, t, n, o, s) {
   var l, d;
   let p = function(e) {
-      var t, n, r, i, o, a, s;
+      var t, n, r, i, a, o, s;
       let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
         c = null != l.mute_config && null != l.mute_config.end_time ? new Date(l.mute_config.end_time).getTime() : e.guild_muted_until,
         u = null != l.message_notifications ? b[l.message_notifications] : e.guild_message_notification_settings;
@@ -100,8 +100,8 @@ function y(e, t, n, a, s) {
         guild_message_notification_settings: u,
         guild_suppress_roles: null != (r = l.suppress_roles) ? r : e.guild_suppress_roles,
         guild_receive_mobile_push: null != (i = l.mobile_push) ? i : e.guild_receive_mobile_push,
-        guild_notify_highlights: null != (o = l.notify_highlights) ? o : e.guild_notify_highlights,
-        guild_suppress_everyone: null != (a = l.suppress_everyone) ? a : e.guild_suppress_everyone,
+        guild_notify_highlights: null != (a = l.notify_highlights) ? a : e.guild_notify_highlights,
+        guild_suppress_everyone: null != (o = l.suppress_everyone) ? o : e.guild_suppress_everyone,
         guild_scheduled_events_muted: null != (s = l.mute_scheduled_events) ? s : e.guild_scheduled_events_muted
       }
     },
@@ -111,11 +111,11 @@ function y(e, t, n, a, s) {
     y = null != (l = E("guild_flags")) ? l : 0,
     v = (null != (d = g.guild_flags) ? d : 0) ^ y,
     S = 0 === (0, r.M1)(v, f.vc.OPT_IN_CHANNELS_OFF, f.vc.OPT_IN_CHANNELS_ON);
-  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, g, o.Z.getStats(e)), {
+  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, g, a.Z.getStats(e)), {
     location: s,
     guild_id: e,
     update_type: u.I.GUILD,
-    label: a,
+    label: o,
     guild_flags_old: E("guild_flags"),
     guild_is_muted_old: E("guild_is_muted"),
     guild_suppress_roles_old: E("guild_suppress_roles"),
@@ -153,17 +153,17 @@ function S(e) {
     var t, n;
     let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
       i = null != (t = r.muted) ? t : null == e ? true : e.channel_is_muted,
-      o = null != r.message_notifications ? b[r.message_notifications] : null == e ? true : e.channel_message_notification_settings,
-      a = null == m ? null : true === i || null != o;
+      a = null != r.message_notifications ? b[r.message_notifications] : null == e ? true : e.channel_message_notification_settings,
+      o = null == m ? null : true === i || null != a;
     return {
       channel_is_muted: i,
-      channel_is_overridden: a,
+      channel_is_overridden: o,
       channel_flags: null != (n = r.flags) ? n : null == e ? true : e.channel_flags,
-      channel_message_notification_settings: o,
+      channel_message_notification_settings: a,
       channel_muted_until: v(r.mute_config)
     }
-  }, N = A(S), P = A(C(m, g), y), R = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), w = a.Z.getChannel(g), D = null != (n = R("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ D, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
-  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, P, o.Z.getStats(m)), {
+  }, N = A(S), P = A(C(m, g), y), R = O(N, P, "RETURN_PREVIOUS_WHEN_CHANGED"), w = o.Z.getChannel(g), D = null != (n = R("channel_flags")) ? n : 0, x = (null != (l = P.channel_flags) ? l : 0) ^ D, L = 0 === (0, r.M1)(x, f.ic.FAVORITED, f.ic.OPT_IN_ENABLED), j = null != (d = null == (t = s.Z.getLastMessage(g)) ? true : t.type) ? d : null;
+  i.ZP.trackWithMetadata(c.rMx.NOTIFICATION_SETTINGS_UPDATED, h(_({}, P, a.Z.getStats(m)), {
     location: T,
     guild_id: m,
     channel_id: g,

@@ -32,7 +32,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk673517 = require("./673517.js");
+  Chunk968847 = require("./968847.js");
 
 function S(e) {
   let {
@@ -50,9 +50,9 @@ function S(e) {
     onClose: G,
     sourceAnalyticsLocations: V = [],
     showGuildProfile: F
-  } = e, W = S === A.ME ? true : S, z = (0, u.ZP)(n.id, F ? W : true), H = c.ZP.getName(W, w, n), Y = (0, a.Dt)(), {
+  } = e, W = S === P.ME ? true : S, z = (0, u.ZP)(n.id, F ? W : true), H = s.ZP.getName(W, w, n), Y = (0, c.Dt)(), {
     analyticsLocations: K
-  } = (0, s.ZP)([...V, r.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
+  } = (0, a.ZP)([...V, r.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: R,
@@ -60,14 +60,14 @@ function S(e) {
     channelId: w,
     messageId: D,
     roleId: L
-  }), q = (0, N.Z)(n), X = (0, m.Z)({
+  }), q = (0, T.Z)(n), X = (0, f.Z)({
     user: n,
     guildId: W,
     channelId: w,
     displayProfile: z,
     onClose: G
   });
-  return (0, l.jsx)(s.Gt, {
+  return (0, l.jsx)(a.Gt, {
     value: K,
     children: (0, l.jsx)(d.Mt, {
       value: J,
@@ -86,17 +86,17 @@ function S(e) {
           component: (0, l.jsx)(i.nn4, {
             children: (0, l.jsx)(i.H, {
               id: Y,
-              children: E.intl.format(E.t.KRe1Fk, {
+              children: _.intl.format(_.t.KRe1Fk, {
                 name: H
               })
             })
           }),
-          children: (0, l.jsxs)(v.Z, {
+          children: (0, l.jsxs)(b.Z, {
             user: n,
             displayProfile: z,
-            themeType: P.l.MODAL,
+            themeType: E.l.MODAL,
             children: [(0, l.jsx)(y.Z, {
-              children: (0, l.jsx)(b.Z, {
+              children: (0, l.jsx)(g.Z, {
                 user: n,
                 guildId: W,
                 viewProfileItem: X
@@ -105,18 +105,18 @@ function S(e) {
               children: [(0, l.jsx)(x.Z, {
                 user: n,
                 displayProfile: z,
-                themeType: P.l.MODAL
+                themeType: E.l.MODAL
               }), (0, l.jsxs)("div", {
                 className: C.headerInner,
-                children: [(0, l.jsx)(f.Z, {
+                children: [(0, l.jsx)(m.Z, {
                   user: n,
                   displayProfile: z,
                   guildId: W,
                   channelId: w,
-                  themeType: P.l.MODAL
-                }), (0, l.jsx)(_.Z, {
+                  themeType: E.l.MODAL
+                }), (0, l.jsx)(O.Z, {
                   user: n,
-                  themeType: P.l.MODAL,
+                  themeType: E.l.MODAL,
                   hasEntered: U === i.Dvm.ENTERED,
                   onCloseProfile: G,
                   disableToolbar: true
@@ -139,7 +139,7 @@ function S(e) {
                   }), (0, l.jsx)(I.Z, {
                     user: n,
                     guildId: W
-                  }), (0, l.jsx)(g.Z, {
+                  }), (0, l.jsx)(j.Z, {
                     user: n
                   })]
                 })]
@@ -149,7 +149,7 @@ function S(e) {
               className: C.fetchError
             }), (0, l.jsxs)("div", {
               className: C.body,
-              children: [(0, l.jsx)(j.Z, {
+              children: [(0, l.jsx)(v.Z, {
                 className: C.username,
                 user: n,
                 guildId: W,
@@ -158,16 +158,16 @@ function S(e) {
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(p.Z, {
                   displayProfile: z,
-                  themeType: P.l.MODAL,
+                  themeType: E.l.MODAL,
                   onClose: G
                 })
-              }), (0, l.jsx)(O.Z, {
+              }), (0, l.jsx)(N.Z, {
                 user: n,
                 currentUser: t,
                 displayProfile: z,
                 guildId: W,
                 items: q,
-                initialSection: null != M ? M : T.oh.BOT_INFO,
+                initialSection: null != M ? M : A.oh.BOT_INFO,
                 initialSubsection: B,
                 onClose: G
               })]

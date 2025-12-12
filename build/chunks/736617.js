@@ -4,16 +4,16 @@
 require.d(exports, {
   Gy: () => l,
   H7: () => s,
-  U5: () => a,
+  U5: () => o,
   en: () => c
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function o(e) {
   return r.tn.get({
-    url: o.ANM.GUILD_VANITY_URL(e),
+    url: a.ANM.GUILD_VANITY_URL(e),
     oldFormErrors: true,
     rejectWithError: true
   }).then(e => {
@@ -48,7 +48,7 @@ function l(e) {
 
 function c(e, t, n) {
   return r.tn.patch({
-    url: o.ANM.GUILD_VANITY_URL(e),
+    url: a.ANM.GUILD_VANITY_URL(e),
     body: {
       code: t
     },

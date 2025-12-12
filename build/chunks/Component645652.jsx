@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk819758 = require("./819758.jsx"),
-  Chunk350432 = require("./350432.js");
+  Chunk783395 = require("./783395.js");
 
 function l(e) {
   let {
@@ -19,15 +19,15 @@ function l(e) {
     hideStars: l
   } = e;
   return (0, r.jsxs)("span", {
-    className: o()(s.container, t, {
+    className: a()(s.container, t, {
       [s.containerColored]: i
     }),
     children: [n, l ? null : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         foreground: s.sparkleStarTopRight
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(o.Z, {
         foreground: s.sparkleStarRight
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(o.Z, {
         foreground: s.sparkleStarBottomLeft
       })]
     })]

@@ -4,9 +4,9 @@
 var Chunk745872 = require("./745872.js"),
   Chunk638934 = require("./638934.js"),
   Chunk429675 = require("./429675.js"),
-  a = Chunk745872("%Promise.resolve%", true),
-  s = a && Chunk638934(a);
+  o = Chunk745872("%Promise.resolve%", true),
+  s = o && Chunk638934(o);
 module.exports = function(e, t) {
-  if (!s) throw new o("This environment does not support Promises.");
+  if (!s) throw new a("This environment does not support Promises.");
   return s(e, t)
 }

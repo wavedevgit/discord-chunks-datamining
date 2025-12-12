@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk556638 = require("./556638.js"),
-  Chunk80568 = require("./80568.js");
+  Chunk175996 = require("./175996.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ function _(e) {
   let {
     text: t,
     tooltipText: n,
-    textVariant: o = "text-xs/medium",
+    textVariant: a = "text-xs/medium",
     textClassName: u,
     "aria-label": f,
     icon: _,
@@ -68,35 +68,35 @@ function _(e) {
       children: [_, (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "none",
-        className: a()(c.tooltipText, u),
+        className: o()(c.tooltipText, u),
         children: e
       })]
     })
   }, y = {
-    variant: o,
+    variant: a,
     color: "none",
-    className: a()(m && c.truncated, u)
+    className: o()(m && c.truncated, u)
   }, O = null != t && null == n && m, v = !h && (null != n || O || g);
   return null == _ && g ? null : v ? (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: b(),
     "aria-label": f,
-    tooltipContentClassName: a()(c.container, c.activitiesTooltip),
+    tooltipContentClassName: o()(c.container, c.activitiesTooltip),
     delay: l.X,
     children: e => {
       let {
         onMouseEnter: i,
-        onMouseLeave: o
+        onMouseLeave: a
       } = e;
       return (0, r.jsxs)("div", {
-        className: a()(c.container, c.textWithIconContainer),
+        className: o()(c.container, c.textWithIconContainer),
         onMouseEnter: () => {
           let {
             current: e
           } = E, t = null != e && e.offsetWidth < e.scrollWidth;
           (null != n || t || g) && (null == i || i())
         },
-        onMouseLeave: o,
+        onMouseLeave: a,
         children: [_, !g && (0, r.jsx)(s.Text, p(d({
           ref: E
         }, y), {

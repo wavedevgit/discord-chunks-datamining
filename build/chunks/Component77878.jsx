@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk981631 = require("./981631.js"),
-  Chunk365778 = require("./365778.js");
+  Chunk136569 = require("./136569.js");
 let o = "1",
   c = "2",
   u = "3",
@@ -18,23 +18,23 @@ let o = "1",
   g = "1",
   h = "2",
   m = "3",
-  _ = "4",
-  b = "5",
-  E = {
+  b = "4",
+  E = "5",
+  _ = {
     [Chunk981631.aIt.ESRB]: {
-      [o]: Chunk365778.esrbEveryone,
-      [c]: Chunk365778.esrbEveryoneTenPlus,
-      [u]: Chunk365778.esrbTeen,
-      [d]: Chunk365778.esrbMature,
-      [p]: Chunk365778.esrbAdult,
-      [f]: Chunk365778.esrbRatingPending
+      [o]: Chunk136569.esrbEveryone,
+      [c]: Chunk136569.esrbEveryoneTenPlus,
+      [u]: Chunk136569.esrbTeen,
+      [d]: Chunk136569.esrbMature,
+      [p]: Chunk136569.esrbAdult,
+      [f]: Chunk136569.esrbRatingPending
     },
     [Chunk981631.aIt.PEGI]: {
-      [g]: Chunk365778.pegiThree,
-      [h]: Chunk365778.pegiSeven,
-      [m]: Chunk365778.pegiTwelve,
-      [_]: Chunk365778.pegiSixteen,
-      [b]: Chunk365778.pegiEighteen
+      [g]: Chunk136569.pegiThree,
+      [h]: Chunk136569.pegiSeven,
+      [m]: Chunk136569.pegiTwelve,
+      [b]: Chunk136569.pegiSixteen,
+      [E]: Chunk136569.pegiEighteen
     }
   },
   O = e => {
@@ -42,7 +42,7 @@ let o = "1",
       agency: t,
       rating: n,
       className: i
-    } = e, a = E[t][n];
+    } = e, a = _[t][n];
     return null == a ? null : (0, r.jsx)("div", {
       className: l()(s.contentRating, a, i)
     })

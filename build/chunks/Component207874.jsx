@@ -32,7 +32,7 @@ function d() {
     let e = e => {
       var t;
       let n = d.current;
-      (null == (t = (0, o.uB)(e)) ? true : t.activeElement) === document.body && (null == n || n.focus())
+      (null == (t = (0, a.uB)(e)) ? true : t.activeElement) === document.body && (null == n || n.focus())
     };
     return window.addEventListener("keydown", module), () => window.removeEventListener("keydown", module)
   }, [f]);

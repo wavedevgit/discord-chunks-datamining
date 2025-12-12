@@ -12,47 +12,47 @@
   }
 
   function n(e, n, r, i) {
-    var o = e + " ";
+    var a = e + " ";
     switch (r) {
       case "s":
         return n || i ? "nokkrar sek\xfandur" : "nokkrum sek\xfandum";
       case "ss":
-        if (t(e)) return o + (n || i ? "sek\xfandur" : "sek\xfandum");
-        return o + "sek\xfanda";
+        if (t(e)) return a + (n || i ? "sek\xfandur" : "sek\xfandum");
+        return a + "sek\xfanda";
       case "m":
         return n ? "m\xedn\xfata" : "m\xedn\xfatu";
       case "mm":
-        if (t(e)) return o + (n || i ? "m\xedn\xfatur" : "m\xedn\xfatum");
-        if (n) return o + "m\xedn\xfata";
-        return o + "m\xedn\xfatu";
+        if (t(e)) return a + (n || i ? "m\xedn\xfatur" : "m\xedn\xfatum");
+        if (n) return a + "m\xedn\xfata";
+        return a + "m\xedn\xfatu";
       case "hh":
-        if (t(e)) return o + (n || i ? "klukkustundir" : "klukkustundum");
-        return o + "klukkustund";
+        if (t(e)) return a + (n || i ? "klukkustundir" : "klukkustundum");
+        return a + "klukkustund";
       case "d":
         if (n) return "dagur";
         return i ? "dag" : "degi";
       case "dd":
         if (t(e)) {
-          if (n) return o + "dagar";
-          return o + (i ? "daga" : "d\xf6gum")
+          if (n) return a + "dagar";
+          return a + (i ? "daga" : "d\xf6gum")
         }
-        if (n) return o + "dagur";
-        return o + (i ? "dag" : "degi");
+        if (n) return a + "dagur";
+        return a + (i ? "dag" : "degi");
       case "M":
         if (n) return "m\xe1nu\xf0ur";
         return i ? "m\xe1nu\xf0" : "m\xe1nu\xf0i";
       case "MM":
         if (t(e)) {
-          if (n) return o + "m\xe1nu\xf0ir";
-          return o + (i ? "m\xe1nu\xf0i" : "m\xe1nu\xf0um")
+          if (n) return a + "m\xe1nu\xf0ir";
+          return a + (i ? "m\xe1nu\xf0i" : "m\xe1nu\xf0um")
         }
-        if (n) return o + "m\xe1nu\xf0ur";
-        return o + (i ? "m\xe1nu\xf0" : "m\xe1nu\xf0i");
+        if (n) return a + "m\xe1nu\xf0ur";
+        return a + (i ? "m\xe1nu\xf0" : "m\xe1nu\xf0i");
       case "y":
         return n || i ? "\xe1r" : "\xe1ri";
       case "yy":
-        if (t(e)) return o + (n || i ? "\xe1r" : "\xe1rum");
-        return o + (n || i ? "\xe1r" : "\xe1ri")
+        if (t(e)) return a + (n || i ? "\xe1r" : "\xe1rum");
+        return a + (n || i ? "\xe1r" : "\xe1ri")
     }
   }
   return e.defineLocale("is", {

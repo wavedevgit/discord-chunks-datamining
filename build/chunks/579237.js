@@ -38,7 +38,7 @@ class c extends Chunk836560.EventEmitter {
   }
   createOutput(e, t) {
     let n = this.outputs[e];
-    null == n && ((n = new o.Z(this.userId, this.audioContext)).mute = false, n.volume = 100, n.setSpeakingFlags(a.Dg.VOICE), n.setSinkId(this.sinkId), this.outputs[e] = n), n.addTrack(t), n.play()
+    null == n && ((n = new a.Z(this.userId, this.audioContext)).mute = false, n.volume = 100, n.setSpeakingFlags(o.Dg.VOICE), n.setSinkId(this.sinkId), this.outputs[e] = n), n.addTrack(t), n.play()
   }
   destroyOutput(e, t) {
     let n = this.outputs[e];

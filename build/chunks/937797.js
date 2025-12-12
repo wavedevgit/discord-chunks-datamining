@@ -2,7 +2,7 @@
 /** chunk id: 937797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  CD: () => a,
+  CD: () => o,
   DL: () => i,
   EO: () => l,
   eC: () => u,
@@ -25,7 +25,7 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  o = (0, Chunk427164.le)({
+  a = (0, Chunk427164.le)({
     name: "2025-08-sponsored-quest",
     kind: "user",
     defaultConfig: {
@@ -40,10 +40,10 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  a = e => {
+  o = e => {
     let {
       enabled: t
-    } = o.getConfig({
+    } = a.getConfig({
       location: e
     });
     return t

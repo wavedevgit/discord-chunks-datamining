@@ -17,14 +17,14 @@ let i = {
       files: t,
       channelId: n,
       showLargeMessageDialog: i,
-      draftType: o
+      draftType: a
     } = e;
     r.Z.dispatch({
       type: "UPLOAD_ATTACHMENT_ADD_FILES",
       channelId: n,
       files: t,
       showLargeMessageDialog: i,
-      draftType: o
+      draftType: a
     })
   },
   addFile(e) {
@@ -32,16 +32,16 @@ let i = {
       file: t,
       channelId: n,
       showLargeMessageDialog: i,
-      draftType: o,
-      allowOptimization: a
+      draftType: a,
+      allowOptimization: o
     } = e;
     r.Z.dispatch({
       type: "UPLOAD_ATTACHMENT_ADD_FILES",
       channelId: n,
       files: [t],
       showLargeMessageDialog: i,
-      draftType: o,
-      allowOptimization: a
+      draftType: a,
+      allowOptimization: o
     })
   },
   remove(e, t, n) {
@@ -69,8 +69,8 @@ let i = {
   },
   update(e, t, n, i) {
     let {
-      description: o,
-      filename: a,
+      description: a,
+      filename: o,
       spoiler: s,
       thumbnail: l
     } = i;
@@ -78,8 +78,8 @@ let i = {
       type: "UPLOAD_ATTACHMENT_UPDATE_FILE",
       channelId: e,
       id: t,
-      filename: a,
-      description: o,
+      filename: o,
+      description: a,
       thumbnail: l,
       spoiler: s,
       draftType: n
@@ -90,12 +90,12 @@ let i = {
       uploads: t,
       channelId: n,
       draftType: i,
-      resetState: o
+      resetState: a
     } = e;
     r.Z.dispatch({
       type: "UPLOAD_ATTACHMENT_SET_UPLOADS",
       channelId: n,
-      uploads: o ? t.map(e => e.resetState()) : t,
+      uploads: a ? t.map(e => e.resetState()) : t,
       draftType: i
     })
   },
@@ -104,16 +104,16 @@ let i = {
       file: t,
       channelId: n,
       id: i,
-      draftType: o,
-      allowOptimization: a
+      draftType: a,
+      allowOptimization: o
     } = e;
     r.Z.dispatch({
       type: "UPLOAD_ATTACHMENT_SET_FILE",
       channelId: n,
       id: i,
       file: t,
-      draftType: o,
-      allowOptimization: a
+      draftType: a,
+      allowOptimization: o
     })
   }
 }

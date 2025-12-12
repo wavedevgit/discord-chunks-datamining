@@ -22,25 +22,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk135899 = require("./135899.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk281718 = require("./281718.js");
+  Chunk687313 = require("./687313.js");
 
 function b(t) {
   let {
     guild: e
-  } = t, n = (0, s.e7)([S.Z], () => S.Z.getEveryoneRole(e));
+  } = t, n = (0, l.e7)([S.Z], () => S.Z.getEveryoneRole(e));
   if (null == n) return null;
   let {
     name: o,
-    color: l
+    color: a
   } = n;
   return (0, i.jsxs)("span", {
     className: h.roleRow,
-    children: [(0, i.jsx)(_.FhE, {
+    children: [(0, i.jsx)(u.FhE, {
       className: h.roleDot,
-      color: l.toString(),
+      color: a.toString(),
       background: false,
       tooltip: false
-    }), (0, i.jsx)(_.Text, {
+    }), (0, i.jsx)(u.Text, {
       className: h.roleName,
       variant: "text-sm/medium",
       color: "interactive-text-active",
@@ -57,7 +57,7 @@ function y(t) {
   } = t;
   return 2 === n ? null : (0, i.jsxs)("div", {
     className: h.tableContainer,
-    children: [(0, i.jsx)(_.Text, {
+    children: [(0, i.jsx)(u.Text, {
       className: h.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
@@ -68,7 +68,7 @@ function y(t) {
         className: h.permissionRow,
         children: [(0, i.jsx)("div", {
           className: 0 === n ? h.bulletPositive : h.bulletWarning
-        }), (0, i.jsx)(_.Text, {
+        }), (0, i.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-default",
           children: R(t)
@@ -85,7 +85,7 @@ function C(t) {
   } = t;
   return 0 === e.length && 2 !== n ? null : (2 === n && (e = m.$X), (0, i.jsxs)("div", {
     className: h.tableContainer,
-    children: [(0, i.jsx)(_.Text, {
+    children: [(0, i.jsx)(u.Text, {
       className: h.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
@@ -96,7 +96,7 @@ function C(t) {
         className: h.permissionRow,
         children: [(0, i.jsx)("div", {
           className: h.bullet
-        }), (0, i.jsx)(_.Text, {
+        }), (0, i.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
           children: R(t)
@@ -112,7 +112,7 @@ function g(t) {
     step: n
   } = t, {
     enabledPermissions: o,
-    disabledPermissions: l
+    disabledPermissions: a
   } = e;
   return 0 === o.length && 2 !== n ? null : (0, i.jsxs)("div", {
     className: h.table,
@@ -120,7 +120,7 @@ function g(t) {
       permissions: o,
       step: n
     }) : null, (0, i.jsx)(C, {
-      permissions: l,
+      permissions: a,
       step: n
     })]
   })
@@ -131,24 +131,24 @@ function L(t) {
     guild: e,
     permissions: n,
     step: o,
-    canEveryoneModerate: l,
-    isDefaultNotificationsAllMessages: s
+    canEveryoneModerate: a,
+    isDefaultNotificationsAllMessages: l
   } = t;
   return (0, i.jsxs)(i.Fragment, {
-    children: [s ? (0, i.jsxs)("div", {
+    children: [l ? (0, i.jsxs)("div", {
       className: h.checklistRow,
-      children: [(0, i.jsx)(_.owK, {
+      children: [(0, i.jsx)(u.owK, {
         size: "md",
         className: h.checklistIcon,
         color: r.Z.unsafe_rawColors.GREEN_360.css,
         secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
-      }), (0, i.jsx)(_.Text, {
+      }), (0, i.jsx)(u.Text, {
         variant: "text-md/normal",
         children: T.intl.format(T.t.K8Eg4P, {
           infoHook: () => (0, i.jsx)(c.u, {
             text: T.intl.string(T.t["3h2WyM"]),
             "aria-label": T.intl.string(T.t["3h2WyM"]),
-            children: (0, i.jsx)(_.d3s, {
+            children: (0, i.jsx)(u.d3s, {
               size: "xs",
               color: "currentColor",
               className: h.icon
@@ -156,14 +156,14 @@ function L(t) {
           })
         })
       })]
-    }) : null, l ? (0, i.jsxs)("div", {
+    }) : null, a ? (0, i.jsxs)("div", {
       className: h.checklistRow,
-      children: [(0, i.jsx)(_.owK, {
+      children: [(0, i.jsx)(u.owK, {
         size: "md",
         className: h.checklistIcon,
         color: r.Z.unsafe_rawColors.GREEN_360.css,
         secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
-      }), (0, i.jsx)(_.Text, {
+      }), (0, i.jsx)(u.Text, {
         variant: "text-md/normal",
         children: T.intl.string(T.t.LfeFFr)
       }), (0, i.jsx)(b, {
@@ -180,10 +180,10 @@ function x(t) {
   let {
     guild: e,
     canEveryoneModerate: n,
-    isDefaultNotificationsAllMessages: s,
+    isDefaultNotificationsAllMessages: l,
     transitionState: r,
     onClose: c
-  } = t, [_, E] = o.useState(0), h = o.useMemo(() => {
+  } = t, [u, E] = o.useState(0), h = o.useMemo(() => {
     let t = [],
       n = [];
     return m.$X.map(i => {
@@ -198,8 +198,8 @@ function x(t) {
       n && (() => {
         var t, n;
         let i = S.Z.getEveryoneRole(e),
-          o = l.Od(i.permissions, m.mu);
-        (0, p.Gf)(e.id, [(t = function(t) {
+          o = a.Od(i.permissions, m.mu);
+        (0, _.Gf)(e.id, [(t = function(t) {
           for (var e = 1; e < arguments.length; e++) {
             var n = null != arguments[e] ? arguments[e] : {},
               i = Object.keys(n);
@@ -228,26 +228,26 @@ function x(t) {
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t)])
-      })(), s && (u.Z.updateGuild({
+      })(), l && (p.Z.updateGuild({
         defaultMessageNotifications: O.bL.ONLY_MENTIONS
-      }), u.Z.saveGuild(e.id, {
+      }), p.Z.saveGuild(e.id, {
         defaultMessageNotifications: O.bL.ONLY_MENTIONS
       }))
     },
-    R = [...0 === _ ? [{
+    R = [...0 === u ? [{
       variant: "secondary",
       text: T.intl.string(T.t.gWQZvr),
       onClick: () => {
-        c(), (0, N.Qd)(a.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e.id, true, I.L.DISMISS)
+        c(), (0, N.Qd)(s.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e.id, true, I.L.DISMISS)
       }
     }] : [], {
       variant: "primary",
-      text: 0 === _ ? n ? T.intl.string(T.t.R7GC7b) : T.intl.string(T.t.iOSdAW) : T.intl.string(T.t.mVuDq5),
+      text: 0 === u ? n ? T.intl.string(T.t.R7GC7b) : T.intl.string(T.t.iOSdAW) : T.intl.string(T.t.mVuDq5),
       onClick: () => {
         var t, i;
-        n || (b(), c(), (0, N.Qd)(a.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : "", true, I.L.PRIMARY)), 0 === _ ? (E(1), setTimeout(() => E(2), 3e3)) : 2 === _ && (b(), c(), (0, N.Qd)(a.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == e ? true : e.id) ? i : "", true, I.L.PRIMARY))
+        n || (b(), c(), (0, N.Qd)(s.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : "", true, I.L.PRIMARY)), 0 === u ? (E(1), setTimeout(() => E(2), 3e3)) : 2 === u && (b(), c(), (0, N.Qd)(s.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == e ? true : e.id) ? i : "", true, I.L.PRIMARY))
       },
-      loading: 1 === _
+      loading: 1 === u
     }];
   return (0, i.jsx)(d.u_l, {
     transitionState: r,
@@ -259,9 +259,9 @@ function x(t) {
     children: (0, i.jsx)(L, {
       guild: e,
       permissions: h,
-      step: _,
+      step: u,
       canEveryoneModerate: n,
-      isDefaultNotificationsAllMessages: s
+      isDefaultNotificationsAllMessages: l
     })
   })
 }

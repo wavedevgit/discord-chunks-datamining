@@ -29,7 +29,7 @@ function m(e) {
 }
 
 function h(e, t, n, r, i) {
-  var o, a, s, l, c, u, d, f, p, _, h, g, E, b, y, O, v, S;
+  var a, o, s, l, c, u, d, f, p, _, h, g, E, b, y, O, v, S;
   let I = r.find(e => "video" === e.type);
   if (null == n && (n = {
       packetsSentOrReceived: 0,
@@ -44,10 +44,10 @@ function h(e, t, n, r, i) {
       entropyAggregated: 0,
       minVersion: e
     }), null == I) return n;
-  let T = m(I) ? null != (a = I.packetsSent) ? a : 0 : null != (s = I.packetsReceived) ? s : 0,
+  let T = m(I) ? null != (o = I.packetsSent) ? o : 0 : null != (s = I.packetsReceived) ? s : 0,
     C = m(I) ? null != (l = I.packetsLost) ? l : 0 : null != (c = I.packetsLost) ? c : 0,
     A = m(I) ? null != (u = I.frameRateEncode) ? u : 0 : null != (d = I.frameRateDecode) ? d : 0,
-    N = null != (f = null == (o = I.resolution) ? true : o.height) ? f : 0,
+    N = null != (f = null == (a = I.resolution) ? true : a.height) ? f : 0,
     P = m(I) && null != (p = I.videoEntropy) ? p : 0;
   n.numDatapoints += 1, n.frameRateAggregated += A, n.resolutionAggregated += N, n.entropyAggregated += P;
   let R = null == i ? true : i.find(e => "video" === e.type);
@@ -57,17 +57,17 @@ function h(e, t, n, r, i) {
       t = m(R) ? null != (E = R.packetsLost) ? E : 0 : null != (b = R.packetsLost) ? b : 0,
       r = m(R) ? null != (y = R.frameRateEncode) ? y : 0 : null != (O = R.frameRateDecode) ? O : 0,
       i = m(R) && null != (v = R.videoEntropy) ? v : 0,
-      o = null != (S = null == (_ = R.resolution) ? true : _.height) ? S : 0;
-    n.frameRateAggregated -= r, n.resolutionAggregated -= o, n.entropyAggregated -= i, n.packetsSentOrReceived = T - e, n.packetsLost = C - t
+      a = null != (S = null == (_ = R.resolution) ? true : _.height) ? S : 0;
+    n.frameRateAggregated -= r, n.resolutionAggregated -= a, n.entropyAggregated -= i, n.packetsSentOrReceived = T - e, n.packetsLost = C - t
   } else n.packetsSentOrReceived = T, n.packetsLost = C;
   return n.frameRate = n.frameRateAggregated / n.numDatapoints, n.resolution = n.resolutionAggregated / n.numDatapoints, n.entropy = n.entropyAggregated / n.numDatapoints, n.packetLossRate = n.packetsLost / (n.packetsSentOrReceived + n.packetsLost), n
 }
 
 function g(e, t, n, r) {
-  var i, o;
+  var i, a;
   null == e[t] && (e[t] = {});
-  let a = s.default.getId();
-  for (let s of (e[t][a] = h(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][a], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][s] = h(n.version, null != (o = null == r ? true : r.version) ? o : 0, e[t][s], n.stats.rtp.inbound[s], null == r ? true : r.stats.rtp.inbound[s])
+  let o = s.default.getId();
+  for (let s of (e[t][o] = h(n.version, null != (i = null == r ? true : r.version) ? i : 0, e[t][o], n.stats.rtp.outbound, null == r ? true : r.stats.rtp.outbound), Object.keys(n.stats.rtp.inbound))) e[t][s] = h(n.version, null != (a = null == r ? true : r.version) ? a : 0, e[t][s], n.stats.rtp.inbound[s], null == r ? true : r.stats.rtp.inbound[s])
 }
 
 function E(e) {
@@ -113,7 +113,7 @@ function v(e) {
   if (r) returnfalse;
   let i = null == (t = l.Z.getRTCConnection(n)) ? true : t.getMediaEngineConnectionId();
   if (null == i) returnfalse;
-  b(i, (0, a.my)(n).ownerId)
+  b(i, (0, o.my)(n).ownerId)
 }
 
 function S(e, t) {

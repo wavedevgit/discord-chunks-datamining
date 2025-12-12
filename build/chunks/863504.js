@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk692547 = require("./692547.js"),
   Chunk474936 = require("./474936.js");
-let o = Chunk474936.VU.PREMIUM_TENURE_1_MONTH,
-  a = {
+let a = Chunk474936.VU.PREMIUM_TENURE_1_MONTH,
+  o = {
     [Chunk474936.VU.PREMIUM_TENURE_1_MONTH]: {
       start: "EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START",
       end: "EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_END"
@@ -44,7 +44,7 @@ let o = Chunk474936.VU.PREMIUM_TENURE_1_MONTH,
 
 function s(e) {
   var t;
-  let n = null != (t = a[null != e ? e : o]) ? t : a[o];
+  let n = null != (t = o[null != e ? e : a]) ? t : o[a];
   return {
     type: "custom",
     start: r.Z.colors[n.start],

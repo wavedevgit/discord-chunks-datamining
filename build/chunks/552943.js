@@ -31,7 +31,7 @@ function s(e) {
 function l(e) {
   return (0, r.EQ)(e).with({
     config_version: 2
-  }, e => (0, a.Q)(e)).exhaustive()
+  }, e => (0, o.Q)(e)).exhaustive()
 }
 
 function c(e) {
@@ -133,7 +133,7 @@ function m(e) {
       secondary: e.colors.secondary
     },
     rewards: e.rewards.map(_),
-    cosponsorMetadata: (0, a.s)(e.cosponsor_metadata)
+    cosponsorMetadata: (0, o.s)(e.cosponsor_metadata)
   }
 }
 
@@ -231,10 +231,10 @@ function I(e) {
 }
 
 function T(e) {
-  if (1 !== e.version || !(o.rO.QUEST_HOME_BANNER in e.placements)) return null;
-  let t = e.placements[o.rO.QUEST_HOME_BANNER];
+  if (1 !== e.version || !(a.rO.QUEST_HOME_BANNER in e.placements)) return null;
+  let t = e.placements[a.rO.QUEST_HOME_BANNER];
   return null == t ? null : {
-    placementType: o.rO.QUEST_HOME_BANNER,
+    placementType: a.rO.QUEST_HOME_BANNER,
     campaignId: t.campaign_id,
     labelTitle: t.label_title,
     labelSubtitle: t.label_subtitle,

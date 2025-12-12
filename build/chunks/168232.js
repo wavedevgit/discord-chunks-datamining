@@ -19,17 +19,17 @@ function l(e, t, n) {
 }
 
 function c(e) {
-  return "production" === a.C.TEST && null != e ? e : "production"
+  return "production" === o.C.TEST && null != e ? e : "production"
 }
 
 function u(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true;
-  return c(t) === a.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === a.C.STAGING || null != e && (e.isStaff() || e.isStaffPersonal())
+  return c(t) === o.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === o.C.STAGING || null != e && (e.isStaff() || e.isStaffPersonal())
 }
 
 function d(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true;
-  return c(t) === a.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === a.C.STAGING || null != e && (!!(null != e.flags && (0, o.yE)(e.flags, s.xW$.STAFF)) || null != e.personal_connection_id)
+  return c(t) === o.C.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === o.C.STAGING || null != e && (!!(null != e.flags && (0, a.yE)(e.flags, s.xW$.STAFF)) || null != e.personal_connection_id)
 }
 
 function f(e) {

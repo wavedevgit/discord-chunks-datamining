@@ -7,8 +7,8 @@ exports.default = {
     var n = String(e).split("."),
       r = !n[1],
       i = Number(n[0]) == e,
-      o = i && n[0].slice(false),
-      a = i && n[0].slice(false);
-    return t ? 1 == o && 11 != a ? "one" : 2 == o && 12 != a ? "two" : 3 == o && 13 != a ? "few" : "other" : 1 == e && r ? "one" : "other"
+      a = i && n[0].slice(false),
+      o = i && n[0].slice(false);
+    return t ? 1 == a && 11 != o ? "one" : 2 == a && 12 != o ? "two" : 3 == a && 13 != o ? "few" : "other" : 1 == e && r ? "one" : "other"
   }
 }

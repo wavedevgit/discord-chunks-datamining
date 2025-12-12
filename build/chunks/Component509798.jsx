@@ -1,23 +1,23 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 509798, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g: () => a
+  g: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk595453 = require("./595453.js");
+  Chunk775916 = require("./775916.js");
 
-function a(e) {
+function s(e) {
   let {
     forceFetchGuildProfile: t
   } = e;
   return (0, r.jsxs)("main", {
-    className: s.container,
+    className: a.container,
     children: [(0, r.jsxs)("div", {
-      className: s.errorHeader,
+      className: a.errorHeader,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
         children: l.intl.string(l.t["/n9BoR"])

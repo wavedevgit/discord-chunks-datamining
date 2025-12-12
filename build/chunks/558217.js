@@ -18,5 +18,5 @@ function s(e) {
     } = t;
     if (null == e || Date.now() < e) return
   }
-  o.Z.getIsFetching(e) || (0, a.pj)(e)
+  a.Z.getIsFetching(e) || (0, o.pj)(e)
 }

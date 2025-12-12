@@ -24,7 +24,7 @@ let f = (0, Chunk481060.dcp)(Chunk481060.EFr.SIZE_120),
         location: "UserProfileModalActionCreators"
       });
     if (n || t) try {
-      await (0, a.Z)(e)
+      await (0, o.Z)(e)
     } catch (t) {
       p.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
     }
@@ -34,7 +34,7 @@ async function m(e) {
     userId: t,
     guildId: n,
     channelId: r,
-    messageId: a,
+    messageId: o,
     roleId: s,
     sessionId: l,
     joinRequestId: u,
@@ -47,7 +47,7 @@ async function m(e) {
     customStatusPrompt: y = null,
     disableActionsForPreview: O = false
   } = e, v = c.default.getUser(t);
-  _(t), null == v ? await (0, o.In)(t, {
+  _(t), null == v ? await (0, a.In)(t, {
     type: "modal",
     guildId: h && null != n ? n : true,
     withMutualFriendsCount: true,
@@ -66,7 +66,7 @@ async function m(e) {
     userId: t,
     guildId: null != n ? n : true,
     channelId: null != r ? r : true,
-    messageId: null != a ? a : true,
+    messageId: null != o ? o : true,
     roleId: null != s ? s : true,
     sessionId: null != l ? l : true,
     openedAt: Date.now(),

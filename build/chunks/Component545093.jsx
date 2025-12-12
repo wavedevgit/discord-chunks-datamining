@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk257914 = require("./257914.js");
+  Chunk280509 = require("./280509.js");
 
 function c(e) {
   let {
@@ -24,7 +24,7 @@ function c(e) {
     width: 20,
     height: 20
   });
-  return (0, r.jsx)(a.u, {
+  return (0, r.jsx)(o.u, {
     text: i,
     position: "bottom",
     children: (0, r.jsx)(s.kL8, {
@@ -32,7 +32,7 @@ function c(e) {
         t(e)
       },
       "aria-label": i,
-      className: o()(l.button, c),
+      className: a()(l.button, c),
       children: (0, r.jsx)("div", {
         className: l.buttonInner,
         children: u

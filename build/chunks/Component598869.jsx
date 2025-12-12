@@ -6,9 +6,9 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk777207 = require("./777207.jsx"),
-  Chunk549097 = require("./549097.js");
+  Chunk282029 = require("./282029.js");
 let l = {
   blurpleLight: "blurple-light",
   blurpleMedium: "blurple-medium",
@@ -41,9 +41,9 @@ function c(e) {
     text: t,
     variant: n = "grayLight"
   } = e, i = l[n];
-  return (0, r.jsx)(a.x, {
+  return (0, r.jsx)(o.x, {
     variant: "eyebrow",
-    className: o()(s.chip, s[i]),
+    className: a()(s.chip, s[i]),
     children: t
   })
 }

@@ -13,7 +13,7 @@ var Chunk327432 = require("./327432.js"),
 function l(e) {
   return e.setFragmentData = t => {
     if (null != e.selection && !s.Jz.equals(e.selection.anchor, e.selection.focus)) {
-      let n = (0, o.sk)(s.bN.richValue(e), {
+      let n = (0, a.sk)(s.bN.richValue(e), {
         mode: "plain",
         range: e.selection,
         preventEmojiSurrogates: true
@@ -27,20 +27,20 @@ function l(e) {
     if (0 === n.length) returnfalse;
     if (null != e.selection && s.M8.isExpanded(e.selection)) {
       let t = r.ML.string(e, e.selection),
-        o = (0, i.yw)(n),
+        a = (0, i.yw)(n),
         l = (0, i.yw)(t);
-      if (null != o && null == l) {
+      if (null != a && null == l) {
         let [t, n] = s.M8.edges(e.selection);
         return s.bN.withoutNormalizing(e, () => {
-          a.Q.select(e, t), e.insertText("["), a.Q.select(e, n), 0 === s.C0.compare(t.path, n.path) && a.Q.move(e, {
+          o.Q.select(e, t), e.insertText("["), o.Q.select(e, n), 0 === s.C0.compare(t.path, n.path) && o.Q.move(e, {
             distance: 1
-          }), e.insertText("](".concat(o.target, ")"))
+          }), e.insertText("](".concat(a.target, ")"))
         }), true
       }
-      if (null != o && null != l) return a.Q.delete(e, {
+      if (null != a && null != l) return o.Q.delete(e, {
         at: e.selection
-      }), e.insertText(o.target), true;
-      a.Q.delete(e, {
+      }), e.insertText(a.target), true;
+      o.Q.delete(e, {
         at: e.selection
       })
     }

@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 919755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk231338 = require("./231338.js");
 
 function u(e) {
-  return (0, r.cj)([i.Z, o.ZP, a.ZP, l.Z], () => s.default.keys(e).reduce((e, t) => {
+  return (0, r.cj)([i.Z, a.ZP, o.ZP, l.Z], () => s.default.keys(e).reduce((e, t) => {
     let n = i.Z.getChannel(t),
       r = null == n ? true : n.isGuildVocal();
-    return e.badge = e.badge + o.ZP.getMentionCount(t), e.unread = e.unread || !r && l.Z.can(c.Pl.VIEW_CHANNEL, n) && o.ZP.hasUnread(t) && !a.ZP.isChannelMuted(null == n ? true : n.getGuildId(), t), e
+    return e.badge = e.badge + a.ZP.getMentionCount(t), e.unread = e.unread || !r && l.Z.can(c.Pl.VIEW_CHANNEL, n) && a.ZP.hasUnread(t) && !o.ZP.isChannelMuted(null == n ? true : n.getGuildId(), t), e
   }, {
     badge: 0,
     unread: false

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk788911 = require("./788911.jsx"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk689079 = require("./689079.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk57507 = require("./57507.js"),
+  Chunk157787 = require("./157787.js"),
   Chunk239840 = require("./239840.js");
 let D = 512,
   x = 7,
@@ -47,7 +47,7 @@ let D = 512,
   F = Chunk473749.forwardRef(function(e, t) {
     let {
       channel: n,
-      canOnlyUseTextCommands: o
+      canOnlyUseTextCommands: a
     } = e, s = i.useRef(false), l = i.useRef(0), [F, V] = i.useState(0), H = i.useRef(null), [Y, W] = i.useState(false), K = h.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(N.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
@@ -68,8 +68,8 @@ let D = 512,
       },
       filters: {
         commandTypes: [u.yU.CHAT],
-        builtIns: o ? O.D.ONLY_TEXT : O.D.ALLOW,
-        applicationCommands: !o
+        builtIns: a ? O.D.ONLY_TEXT : O.D.ALLOW,
+        applicationCommands: !a
       },
       options: {
         placeholderCount: x,
@@ -99,8 +99,8 @@ let D = 512,
     }), i.useEffect(() => {
       ei.current(l.current)
     }, [J]);
-    let eo = i.useCallback(e => e !== q.length - 1 || X ? j : 0, [q.length, X]),
-      ea = Q.map(e => e.data.length);
+    let ea = i.useCallback(e => e !== q.length - 1 || X ? j : 0, [q.length, X]),
+      eo = Q.map(e => e.data.length);
     i.useEffect(() => {
       null != H.current && Y && null != F && H.current.scrollRowIntoView(F)
     }, [Y, F]), i.useLayoutEffect(() => {
@@ -150,7 +150,7 @@ let D = 512,
         let t = q[e];
         if (null == t) return null;
         let i = (0, C.ky)(t),
-          o = (0, r.jsx)(i, {
+          a = (0, r.jsx)(i, {
             channel: n,
             section: t,
             width: 16,
@@ -159,7 +159,7 @@ let D = 512,
           });
         return (0, r.jsx)(E.Z, {
           className: R.categoryHeader,
-          icon: o,
+          icon: a,
           children: t.name
         }, e)
       }, [n, q]),
@@ -167,15 +167,15 @@ let D = 512,
         let n = e === q.length - 1,
           i = q[e],
           {
-            data: o
+            data: a
           } = Q[e];
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-label": i.name,
-          className: a()(R.categorySection, {
+          className: o()(R.categorySection, {
             [R.categorySectionLast]: n
           }),
-          children: [t, 0 === o.length && (0, r.jsx)(c.Z, {
+          children: [t, 0 === a.length && (0, r.jsx)(c.Z, {
             message: P.intl.format(P.t.WoQXT6, {
               applicationName: i.name
             }),
@@ -186,20 +186,20 @@ let D = 512,
       }, [q, Q]),
       ed = i.useCallback((e, t) => {
         var i;
-        let o = Q[t.sectionIndex],
-          a = o.data[t.sectionRowIndex],
-          s = "".concat(o.section.id, ":").concat(null != (i = null == a ? true : a.id) ? i : e);
-        if (null == a || o.section.id !== a.applicationId && o.section.id !== A.bi.FRECENCY || a.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
-        let l = z.find(e => e.id === a.applicationId);
+        let a = Q[t.sectionIndex],
+          o = a.data[t.sectionRowIndex],
+          s = "".concat(a.section.id, ":").concat(null != (i = null == o ? true : o.id) ? i : e);
+        if (null == o || a.section.id !== o.applicationId && a.section.id !== A.bi.FRECENCY || o.inputType === v.iw.PLACEHOLDER) return (0, r.jsx)(T.Z, {}, s);
+        let l = z.find(e => e.id === o.applicationId);
         return (0, r.jsx)(f.ZP.NewCommand, {
           index: e,
-          command: a,
+          command: o,
           channel: n,
           className: R.itemWrapper,
           selected: F === e,
-          showImage: o.section.id !== a.applicationId,
+          showImage: a.section.id !== o.applicationId,
           section: l,
-          onClick: () => el(a, l, (0, S.tI)(o.section)),
+          onClick: () => el(o, l, (0, S.tI)(a.section)),
           onHover: () => {
             V(null), W(false)
           }
@@ -230,10 +230,10 @@ let D = 512,
         renderSection: eu,
         renderSectionHeader: ec,
         rowCount: q.length,
-        rowCountBySection: ea,
+        rowCountBySection: eo,
         rowHeight: L,
         sectionHeaderHeight: M,
-        sectionMarginBottom: eo,
+        sectionMarginBottom: ea,
         ref: H,
         stickyHeaders: true
       })]

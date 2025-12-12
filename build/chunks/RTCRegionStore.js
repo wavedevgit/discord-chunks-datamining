@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => m
 }), require("./35282.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk70956 = require("./70956.js");
@@ -51,7 +51,7 @@ class _ extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   shouldPerformLatencyTest(e) {
     var t, n;
-    return null === d.preferredRegions || !o().isEqual(e, null != (t = d.lastGeoRankedOrder) ? t : []) || Date.now() - (null != (n = d.lastTestTimestamp) ? n : 0) >= f
+    return null === d.preferredRegions || !a().isEqual(e, null != (t = d.lastGeoRankedOrder) ? t : []) || Date.now() - (null != (n = d.lastTestTimestamp) ? n : 0) >= f
   }
 }
 c(_, "displayName", "RTCRegionStore"), c(_, "persistKey", "RTCRegionStore"), c(_, "migrations", [e => (e.preferredRegion ? e.preferredRegions = [e.preferredRegion] : e.preferredRegions = null, delete e.preferredRegion, e)]);

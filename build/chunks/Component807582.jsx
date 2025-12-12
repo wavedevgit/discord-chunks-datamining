@@ -1,62 +1,62 @@
-/** Chunk was on 53488 **/
-/** chunk id: 807582, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 32603 **/
+/** chunk id: 807582, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
   Z: () => p
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  n = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk158638 = require("./158638.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk552461 = require("./552461.js");
+  Chunk754681 = require("./754681.js");
 let p = e => {
-  let t, i, a, {
+  let a, t, i, {
       guildFeature: p,
       guild: u,
       className: m,
-      hideTooltip: v = false,
-      tooltipPosition: h = "left",
-      onClick: g
+      hideTooltip: _ = false,
+      tooltipPosition: v = "left",
+      onClick: h
     } = e,
-    x = u.features.has(p),
-    b = (0, c.AR)(u.id, "GuildSettingsBoostPerks"),
-    A = (0, s._p)(p);
-  return !x && p === d.GuildFeatures.VANITY_URL && b ? null : (x ? (null != A && (a = _.intl.string(_.t.hUgjyP)), t = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(l.Ucv, {
-      color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: f.unlockedIcon
-    }), (0, n.jsx)(l.Heading, {
+    g = u.features.has(p),
+    x = (0, l.AR)(u.id, "GuildSettingsBoostPerks"),
+    A = (0, f._p)(p);
+  return !g && p === d.GuildFeatures.VANITY_URL && x ? null : (g ? (null != A && (i = s.intl.string(s.t.hUgjyP)), a = (0, c.jsxs)(c.Fragment, {
+    children: [(0, c.jsx)(r.Ucv, {
+      color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
+      className: b.unlockedIcon
+    }), (0, c.jsx)(r.Heading, {
       variant: "eyebrow",
-      className: f.description,
-      children: _.intl.string(_.t["0O+87i"])
+      className: b.description,
+      children: s.intl.string(s.t["0O+87i"])
     })]
-  })) : (null != A && (a = _.intl.string(_.t.L2wYYj)), t = (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(l.Ucv, {
+  })) : (null != A && (i = s.intl.string(s.t.L2wYYj)), a = (0, c.jsxs)(c.Fragment, {
+    children: [(0, c.jsx)(r.Ucv, {
       color: "currentColor",
-      className: f.icon
-    }), (0, n.jsx)(l.Heading, {
+      className: b.icon
+    }), (0, c.jsx)(r.Heading, {
       variant: "eyebrow",
-      className: f.description,
-      children: null != A && (0, s.e9)(A)
+      className: b.description,
+      children: null != A && (0, f.e9)(A)
     })]
-  })), i = v || null == a ? (0, n.jsx)("div", {
-    className: o()(f.availabilityIndicator, m),
-    children: t
-  }) : (0, n.jsx)(r.u, {
-    position: h,
-    text: a,
-    children: (0, n.jsx)("div", {
-      className: o()(f.availabilityIndicator, m),
-      children: t
+  })), t = _ || null == i ? (0, c.jsx)("div", {
+    className: n()(b.availabilityIndicator, m),
+    children: a
+  }) : (0, c.jsx)(o.u, {
+    position: v,
+    text: i,
+    children: (0, c.jsx)("div", {
+      className: n()(b.availabilityIndicator, m),
+      children: a
     })
-  }), null == g || x) ? i : (0, n.jsx)(l.P3F, {
-    onClick: g,
-    className: f.clickable,
-    children: i
+  }), null == h || g) ? t : (0, c.jsx)(r.P3F, {
+    onClick: h,
+    className: b.clickable,
+    children: t
   })
 }

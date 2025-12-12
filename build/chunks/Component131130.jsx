@@ -14,14 +14,14 @@ var Chunk704215 = require("./704215.js"),
   Chunk644916 = require("./644916.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
-  Chunk655227 = require("./655227.js");
+  Chunk710930 = require("./710930.js");
 let p = e => {
   let {
     dismissibleContent: t,
     noticeType: n
   } = e, {
     analyticsLocations: p
-  } = (0, a.ZP)(), _ = (0, l.Z)();
+  } = (0, o.ZP)(), _ = (0, l.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
     latestVersion: (0, c.t)(t),
@@ -30,22 +30,22 @@ let p = e => {
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: a
+        markAsDismissed: o
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
         let e = null == _ ? true : _.reminderNagbar;
-        return (0, r.jsxs)(o.qXd, {
-          color: o.DM8.PREMIUM_TIER_2,
-          children: [(0, r.jsx)(o.RyX, {
-            onClick: () => a(d.L.USER_DISMISS),
+        return (0, r.jsxs)(a.qXd, {
+          color: a.DM8.PREMIUM_TIER_2,
+          children: [(0, r.jsx)(a.RyX, {
+            onClick: () => o(d.L.USER_DISMISS),
             noticeType: n
-          }), (0, r.jsx)(o.OgN, {
+          }), (0, r.jsx)(a.OgN, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
             className: f.giftIcon
-          }), null == e ? true : e.description(), (0, r.jsx)(o.NoS, {
+          }), null == e ? true : e.description(), (0, r.jsx)(a.NoS, {
             onClick: () => {
               (0, s.Z)({
                 isGift: true,

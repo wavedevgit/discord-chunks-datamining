@@ -2,14 +2,14 @@
 /** chunk id: 836197, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ki: () => a,
+  Ki: () => o,
   Wc: () => s,
   zy: () => l
 });
 var Chunk296009 = require("./296009.js"),
   Chunk86419 = require("./86419.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,10 +17,10 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = [Chunk296009.l.CURRENT_GAMES, Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES, Chunk296009.l.PLAYED_GAMES];
+let o = [Chunk296009.l.CURRENT_GAMES, Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES, Chunk296009.l.PLAYED_GAMES];
 
 function s(e) {
-  return a.includes(e.type)
+  return o.includes(e.type)
 }
 class l {
   toSubmission() {
@@ -58,6 +58,6 @@ class l {
     type: t,
     games: n
   }) {
-    o(this, "id", true), o(this, "type", true), o(this, "games", true), this.id = e, this.type = t, this.games = n
+    a(this, "id", true), a(this, "type", true), a(this, "games", true), this.id = e, this.type = t, this.games = n
   }
 }

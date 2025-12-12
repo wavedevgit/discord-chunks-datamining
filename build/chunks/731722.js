@@ -44,10 +44,10 @@ function f(e) {
 }
 
 function p(e, t) {
-  let n = (0, r.e7)([a.default], () => a.default.getUser(e), [e]),
-    s = (0, r.e7)([o.ZP], () => {
+  let n = (0, r.e7)([o.default], () => o.default.getUser(e), [e]),
+    s = (0, r.e7)([a.ZP], () => {
       if (null == t || null == e) return null;
-      let n = o.ZP.getMember(t, e);
+      let n = a.ZP.getMember(t, e);
       return (0, i.EY)(n)
     }, [t, e]),
     {

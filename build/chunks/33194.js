@@ -14,7 +14,7 @@ require.d(exports, {
 var Chunk663042 = require("./663042.js"),
   Chunk690775 = require("./690775.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,14 +23,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -86,7 +86,7 @@ function _() {
 
 function m(e) {
   c.setState(t => ({
-    channelDismissTimestamps: l(a({}, t.channelDismissTimestamps), {
+    channelDismissTimestamps: l(o({}, t.channelDismissTimestamps), {
       [e]: Date.now()
     })
   }))
@@ -94,7 +94,7 @@ function m(e) {
 
 function h(e) {
   c.setState(t => ({
-    userDismissTimestamps: l(a({}, t.userDismissTimestamps), {
+    userDismissTimestamps: l(o({}, t.userDismissTimestamps), {
       [e]: Date.now()
     }),
     globalDismissTimestamp: Date.now()
@@ -104,7 +104,7 @@ function h(e) {
 function g(e) {
   let t = Array.from(e).reduce((e, t) => (e[t] = Date.now(), e), {});
   c.setState(e => ({
-    userDismissTimestamps: a({}, e.userDismissTimestamps, t),
+    userDismissTimestamps: o({}, e.userDismissTimestamps, t),
     globalDismissTimestamp: Date.now()
   }))
 }

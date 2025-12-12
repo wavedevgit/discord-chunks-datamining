@@ -17,11 +17,11 @@ var Chunk46973 = require("./46973.js"),
 
 function f(e) {
   switch (null == e ? true : e.type) {
-    case a.u.SCREENSHARE_OS_ERROR:
+    case o.u.SCREENSHARE_OS_ERROR:
       return d.intl.format(d.t.e9LMuh, {
         errorMessage: e.errorMessage
       });
-    case a.u.STREAM_FAILED_TO_START:
+    case o.u.STREAM_FAILED_TO_START:
     default:
       return d.intl.string(d.t.rSlOep)
   }
@@ -36,7 +36,7 @@ function p(e) {
     avErrorContext: m,
     selected: h = false,
     noArt: g = false
-  } = e, E = f(m), b = null == (t = (0, a.hp)(null != _ ? _ : a.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
+  } = e, E = f(m), b = null == (t = (0, o.hp)(null != _ ? _ : o.u.STREAM_FAILED_TO_START)) ? true : t.errorCode;
   return (0, r.jsx)(c.Z, {
     header: E,
     size: (0, c.L)(p),
@@ -49,7 +49,7 @@ function p(e) {
       errorCode: b
     }),
     onCTAClick: () => {
-      (0, o.w)(i.Yn.STREAM, n.ownerId), (0, s.Z)(n)
+      (0, a.w)(i.Yn.STREAM, n.ownerId), (0, s.Z)(n)
     },
     callToAction: d.intl.string(d.t["4EGMWL"])
   })

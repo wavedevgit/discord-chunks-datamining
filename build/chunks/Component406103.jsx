@@ -2,12 +2,12 @@
 /** chunk id: 406103, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => a
+  I: () => o
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js");
-let a = {
+let o = {
   title: "CheckboxGroup",
   stories: [{
     id: "checkboxgroup",
@@ -16,7 +16,7 @@ let a = {
       let {
         disabled: t,
         optionCount: n,
-        label: a,
+        label: o,
         optionLabel: s,
         description: l,
         showIcons: c,
@@ -25,31 +25,31 @@ let a = {
         label: null != s ? "".concat(s, " 1") : "Option 1",
         value: "option1",
         description: null == l || "" === l ? true : l,
-        leadingIcon: c ? o.d3s : true,
+        leadingIcon: c ? a.d3s : true,
         disabled: !u && true
       }, {
         label: null != s ? "".concat(s, " 2") : "Option 2",
         value: "option2",
         description: null == l || "" === l ? true : l,
-        leadingIcon: c ? o.d3s : true,
+        leadingIcon: c ? a.d3s : true,
         disabled: !!u || true
       }, {
         label: null != s ? "".concat(s, " 3") : "Option 3",
         value: "option3",
         description: null == l || "" === l ? true : l,
-        leadingIcon: c ? o.d3s : true,
+        leadingIcon: c ? a.d3s : true,
         disabled: !u && true
       }, {
         label: null != s ? "".concat(s, " 4") : "Option 4",
         value: "option4",
         description: null == l || "" === l ? true : l,
-        leadingIcon: c ? o.d3s : true,
+        leadingIcon: c ? a.d3s : true,
         disabled: !!u || true
       }, {
         label: null != s ? "".concat(s, " 5") : "Option 5",
         value: "option5",
         description: null == l || "" === l ? true : l,
-        leadingIcon: c ? o.d3s : true,
+        leadingIcon: c ? a.d3s : true,
         disabled: !u && true
       }].slice(0, Math.max(1, Math.min(5, n))), [n, s, l, c, u]), _ = i.useCallback(e => {
         f(e)
@@ -60,34 +60,34 @@ let a = {
       }, []), g = i.useCallback(() => {
         p.length > 0 && f([p[0].value])
       }, [p]);
-      return (0, r.jsxs)(o.Kqy, {
+      return (0, r.jsxs)(a.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, r.jsx)(o.cOn, {
+        children: [(0, r.jsx)(a.cOn, {
           selectedValues: d,
-          label: a,
+          label: o,
           onChange: _,
           options: p,
           disabled: t
-        }), (0, r.jsxs)(o.xvT, {
+        }), (0, r.jsxs)(a.xvT, {
           variant: "text-sm/normal",
           children: ["Current selection: ", d.length > 0 ? d.join(", ") : "None"]
-        }), (0, r.jsxs)(o.Kqy, {
+        }), (0, r.jsxs)(a.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(o.zxk, {
+          children: [(0, r.jsx)(a.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select All",
             onClick: m,
             disabled: t || 0 === p.length
-          }), (0, r.jsx)(o.zxk, {
+          }), (0, r.jsx)(a.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Select First",
             onClick: g,
             disabled: t || 0 === p.length
-          }), (0, r.jsx)(o.zxk, {
+          }), (0, r.jsx)(a.zxk, {
             variant: "primary",
             size: "sm",
             text: "Clear All",

@@ -7,19 +7,19 @@ require.d(exports, {
     z: () => r
   }),
   function(e) {
-    e.symbol = Symbol.for("protobuf-ts/unknown"), e.onRead = (n, r, i, o, a) => {
+    e.symbol = Symbol.for("protobuf-ts/unknown"), e.onRead = (n, r, i, a, o) => {
       (t(r) ? r[e.symbol] : r[e.symbol] = []).push({
         no: i,
-        wireType: o,
-        data: a
+        wireType: a,
+        data: o
       })
     }, e.onWrite = (t, n, r) => {
       for (let {
           no: t,
           wireType: i,
-          data: o
+          data: a
         }
-        of e.list(n)) r.tag(t, i).raw(o)
+        of e.list(n)) r.tag(t, i).raw(a)
     }, e.list = (n, r) => {
       if (t(n)) {
         let t = n[e.symbol];

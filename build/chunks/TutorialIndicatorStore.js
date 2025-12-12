@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 10401, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -44,8 +44,8 @@ function p(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = {},
-  f = {},
+let f = {},
+  h = {},
   m = true,
   g = {},
   b = false;
@@ -53,9 +53,9 @@ let h = {},
 function C() {
   if (g = {}, !m)
     for (let [e, t] of Object.entries(Chunk268967.Z)) {
-      let n = false !== h[module];
+      let n = false !== f[module];
       if (g[module] = require, require && null != exports.prerequisites)
-        for (let n of exports.prerequisites) false !== h[require] && (g[module] = false)
+        for (let n of exports.prerequisites) false !== f[require] && (g[module] = false)
     }
 }
 class y extends(i = Chunk442837.ZP.Store) {
@@ -69,7 +69,7 @@ class y extends(i = Chunk442837.ZP.Store) {
     return !m
   }
   getIndicators() {
-    return f
+    return h
   }
   getData() {
     return Chunk268967.Z
@@ -85,23 +85,23 @@ let v = new y(Chunk570140.Z, {
     let {
       tutorial: t
     } = e;
-    b = true, m = true, h = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => h[e] = false)), C()
+    b = true, m = true, f = {}, null != t && (m = t.indicators_suppressed, t.indicators_confirmed.forEach(e => f[e] = false)), C()
   },
   CONNECTION_CLOSED: function() {
     b = false
   },
   TUTORIAL_INDICATOR_DISMISS: function(e) {
-    h = p(d({}, h), {
+    f = p(d({}, f), {
       [e.tutorialId]: false
-    }), f = d({}, f), delete f[e.tutorialId], C()
+    }), h = d({}, h), delete h[e.tutorialId], C()
   },
   TUTORIAL_INDICATOR_SHOW: function(e) {
-    f = p(d({}, f), {
+    h = p(d({}, h), {
       [e.tutorialId]: e.renderData
     })
   },
   TUTORIAL_INDICATOR_HIDE: function(e) {
-    f = d({}, f), delete f[e.tutorialId]
+    h = d({}, h), delete h[e.tutorialId]
   },
   TUTORIAL_INDICATOR_SUPPRESS_ALL: function() {
     m = true

@@ -19,10 +19,10 @@ function p(e) {
   let {
     eligibility: t,
     eligibilityLoading: i,
-    eligibilityError: c,
+    eligibilityError: r,
     guildId: b,
     onEligibilityBecameStale: p
-  } = e, f = r.useMemo(() => ({
+  } = e, f = c.useMemo(() => ({
     onEligibilityBecameStale: p,
     sortedByIneligible: true,
     actions: {
@@ -32,15 +32,15 @@ function p(e) {
       }
     }
   }), [b, p]), j = (0, o.Z)(t, f);
-  return null != c ? (0, n.jsx)("div", {
+  return null != r ? (0, n.jsx)("div", {
     children: (0, n.jsx)(l.M14, {
       type: "critical",
-      children: c.message
+      children: r.message
     })
   }) : null == j || i ? (0, n.jsx)("div", {
     children: (0, n.jsx)(l.$jN, {})
   }) : (0, n.jsx)("div", {
-    children: j.map((e, t) => (0, n.jsxs)(r.Fragment, {
+    children: j.map((e, t) => (0, n.jsxs)(c.Fragment, {
       children: [(0, n.jsx)(d.d, {
         name: e.checked ? e.checkedLabel : e.uncheckedLabel,
         description: e.description,
@@ -56,12 +56,12 @@ function f(e) {
   let {
     eligibility: t,
     eligibilityLoading: i,
-    eligibilityError: r,
+    eligibilityError: c,
     refreshEligibility: o,
     guildId: s,
     transitionState: a
   } = e;
-  return (0, n.jsx)(c.Modal, {
+  return (0, n.jsx)(r.Modal, {
     transitionState: a,
     title: b.intl.string(b.t["3s47iN"]),
     actions: [],
@@ -71,7 +71,7 @@ function f(e) {
     children: (0, n.jsx)(p, {
       eligibility: t,
       eligibilityLoading: i,
-      eligibilityError: r,
+      eligibilityError: c,
       guildId: s,
       onEligibilityBecameStale: o
     })

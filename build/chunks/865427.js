@@ -39,7 +39,7 @@ function p() {
 function _(e) {
   if (y(e)) return Promise.resolve(O(e));
   let t = s.Z.safeParseWithQuery(e);
-  return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, o.tn.get({
+  return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, a.tn.get({
     url: i.format(t),
     oldFormErrors: true,
     rejectWithError: false
@@ -74,7 +74,7 @@ function y(e) {
 function O(e) {
   let t = e.match(b);
   if (null == t || 2 !== t.length) return null;
-  let n = (0, a.getNativePlatform)(),
+  let n = (0, o.getNativePlatform)(),
     r = t[1];
   return {
     targetBuildOverride: {

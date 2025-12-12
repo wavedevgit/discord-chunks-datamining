@@ -19,7 +19,7 @@ function s(e, t, n) {
 }
 class l {
   updateChannelIds(e) {
-    this._channelIds = new Set(e), this._messages = this._messages.filter(e => e.kind !== a.fL.ALL_MESSAGES_CHANNEL || this._channelIds.has(e.channelId))
+    this._channelIds = new Set(e), this._messages = this._messages.filter(e => e.kind !== o.fL.ALL_MESSAGES_CHANNEL || this._channelIds.has(e.channelId))
   }
   addMessage(e) {
     this._messages = [...this._messages, e], this.maybeTruncate()
@@ -30,11 +30,11 @@ class l {
       channelMessages: n,
       userId: r
     } = e;
-    this._messages = [...this._messages, ...n.filter(e => e.author.id !== r && o.default.age(e.id) < a.ib).map(e => ({
+    this._messages = [...this._messages, ...n.filter(e => e.author.id !== r && a.default.age(e.id) < o.ib).map(e => ({
       id: e.id,
       channelId: e.channel_id,
       guildId: null == t ? true : t.guild_id,
-      kind: e.mentioned ? a.fL.MENTION : a.fL.ALL_MESSAGES_CHANNEL,
+      kind: e.mentioned ? o.fL.MENTION : o.fL.ALL_MESSAGES_CHANNEL,
       message: e
     }))], this._isSorted = false, this.maybeTruncate()
   }
@@ -49,8 +49,8 @@ class l {
   }
   sortMessages() {
     this._isSorted || (this._messages = i().sortedUniqBy(this._messages.toSorted((e, t) => {
-      let n = o.default.compare(e.id, t.id);
-      return 0 !== n ? n : e.kind === a.fL.MENTION && t.kind !== a.fL.MENTION ? false : +(e.kind !== a.fL.MENTION && t.kind === a.fL.MENTION)
+      let n = a.default.compare(e.id, t.id);
+      return 0 !== n ? n : e.kind === o.fL.MENTION && t.kind !== o.fL.MENTION ? false : +(e.kind !== o.fL.MENTION && t.kind === o.fL.MENTION)
     }), "id"), this._isSorted = true)
   }
   maybeTruncate() {
@@ -63,7 +63,7 @@ class l {
     }), module.kind === Chunk982183.fL.MENTION ? exports[module.channelId].mentions.push(module) : exports[module.channelId].messages.push(module));
     let n = [];
     Object.values(exports).forEach(e => {
-      let t = [...e.mentions, ...e.messages].sort((e, t) => o.default.compare(e.id, t.id)).slice(-a.AQ),
+      let t = [...e.mentions, ...e.messages].sort((e, t) => a.default.compare(e.id, t.id)).slice(-o.AQ),
         r = new Set,
         i = [];
       for (let e of t) r.add(e.id), i.push(e);

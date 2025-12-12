@@ -1,12 +1,12 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 92504 **/
 /** chunk id: 796150, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk194594 = require("./194594.jsx"),
   Chunk359993 = require("./359993.js"),
@@ -15,58 +15,58 @@ var Chunk120356 = require("./120356.js"),
   Chunk691703 = require("./691703.jsx"),
   Chunk953989 = require("./953989.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk28552 = require("./28552.js");
+  Chunk758701 = require("./758701.js");
 
-function g(e) {
+function f(e) {
   let {
     className: t,
     view: n,
-    application: i
-  } = e, g = "embedded" === n, f = (0, o.Z)({
-    application: i
+    application: r
+  } = e, f = "embedded" === n, g = (0, o.Z)({
+    application: r
   });
-  return (0, r.jsxs)("div", {
-    className: a()(t, {
-      [h.sideContainer]: !g,
-      [h.gridContainer]: g
+  return (0, a.jsxs)("div", {
+    className: i()(t, {
+      [h.sideContainer]: !f,
+      [h.gridContainer]: f
     }),
-    children: [(0, r.jsxs)("div", {
-      className: a()(h.sectionContainer, {
-        [h.reducedGap]: g
+    children: [(0, a.jsxs)("div", {
+      className: i()(h.sectionContainer, {
+        [h.reducedGap]: f
       }),
-      children: [(0, r.jsx)("div", {
+      children: [(0, a.jsx)("div", {
         className: h.infoSection,
-        children: (0, r.jsx)(s.Z, {
-          application: i,
-          mutualGuilds: f,
+        children: (0, a.jsx)(s.Z, {
+          application: r,
+          mutualGuilds: g,
           mutualGuildShownMax: 3,
           className: h.guildCountContainer,
           guildIconSize: s.x.SMALL,
           guildsClassName: h.guildsIconContainer,
           compact: true,
-          children: (0, r.jsx)(l.X6q, {
+          children: (0, a.jsx)(l.X6q, {
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: m.intl.string(m.t["3NxHC4"])
           })
         })
-      }), (0, r.jsx)(c.Z, {
-        application: i,
+      }), (0, a.jsx)(c.Z, {
+        application: r,
         className: h.infoSection
-      }), (0, r.jsx)(p.Z, {
-        application: i,
+      }), (0, a.jsx)(p.Z, {
+        application: r,
         className: h.infoSection
       })]
-    }), (0, r.jsxs)("div", {
-      className: a()(h.sectionContainer, {
-        [h.reducedGap]: g
+    }), (0, a.jsxs)("div", {
+      className: i()(h.sectionContainer, {
+        [h.reducedGap]: f
       }),
-      children: [(0, r.jsx)(d.Z, {
-        application: i,
+      children: [(0, a.jsx)(d.Z, {
+        application: r,
         className: h.infoSection,
-        innerClassName: g ? h.linkGrid : true
-      }), (0, r.jsx)(u.Z, {
-        application: i,
+        innerClassName: f ? h.linkGrid : true
+      }), (0, a.jsx)(u.Z, {
+        application: r,
         className: h.infoSection
       })]
     })]

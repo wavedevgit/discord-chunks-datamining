@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 778825, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, p, _;
+let r, i, a, o, s, l, c, u, d, f, p, _;
 require.d(exports, {
   Z: () => V
 });
@@ -58,7 +58,7 @@ function R(e) {
   let {
     item: t
   } = e;
-  t.type === h.Z.AVATAR_DECORATION ? i = t.value : t.type === h.Z.PROFILE_EFFECT ? a = t.value : t.type === h.Z.NAMEPLATE && (o = t.value)
+  t.type === h.Z.AVATAR_DECORATION ? i = t.value : t.type === h.Z.PROFILE_EFFECT ? o = t.value : t.type === h.Z.NAMEPLATE && (a = t.value)
 }
 
 function w(e) {
@@ -108,11 +108,11 @@ function k() {
 }
 
 function U() {
-  r = true, u = true, i = true, o = true, f = true
+  r = true, u = true, i = true, a = true, f = true
 }
 
 function G() {
-  s = true, l = true, c = true, d = true, a = true
+  s = true, l = true, c = true, d = true, o = true
 }
 
 function Z() {
@@ -130,7 +130,7 @@ class B extends(m = Chunk442837.ZP.Store) {
     return v
   }
   showNotice() {
-    return true !== r || true !== i || true !== a || true !== s || true !== l || true !== c || true !== u || true !== d || true !== o || true !== f
+    return true !== r || true !== i || true !== o || true !== s || true !== l || true !== c || true !== u || true !== d || true !== a || true !== f
   }
   getIsSubmitDisabled() {
     return true !== l && l.length > Chunk981631.tPV
@@ -142,7 +142,7 @@ class B extends(m = Chunk442837.ZP.Store) {
     return i
   }
   getPendingProfileEffect() {
-    return a
+    return o
   }
   getPendingBanner() {
     return s
@@ -163,7 +163,7 @@ class B extends(m = Chunk442837.ZP.Store) {
     return d
   }
   getPendingNameplate() {
-    return o
+    return a
   }
   getPendingDisplayNameStyles() {
     return f
@@ -172,13 +172,13 @@ class B extends(m = Chunk442837.ZP.Store) {
     return {
       pendingAvatar: r,
       pendingAvatarDecoration: i,
-      pendingProfileEffect: a,
+      pendingProfileEffect: o,
       pendingBanner: s,
       pendingBio: l,
       pendingPronouns: c,
       pendingNickname: u,
       pendingThemeColors: d,
-      pendingNameplate: o,
+      pendingNameplate: a,
       pendingDisplayNameStyles: f
     }
   }

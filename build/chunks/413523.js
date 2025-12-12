@@ -147,7 +147,7 @@ class L {
     var t, n;
     return null != (n = null == (t = this.participants[e]) ? true : t.reduce((t, n) => {
       if (n.type === O.fO.USER) {
-        let t = (0, o.O)({
+        let t = (0, a.O)({
           userId: e,
           checkIsMuted: true
         });
@@ -199,7 +199,7 @@ class L {
     })
   }
   _getParticipantsForUser(e) {
-    var t, n, r, i, a, d;
+    var t, n, r, i, o, d;
     let b, y, v = [],
       I = m.default.getUser(e);
     if (null == I) return v;
@@ -215,7 +215,7 @@ class L {
       id: I.id,
       voiceState: C,
       voicePlatform: N,
-      speaking: (0, o.O)({
+      speaking: (0, a.O)({
         userId: e,
         checkIsMuted: true
       }),
@@ -229,7 +229,7 @@ class L {
       localVideoDisabled: p.Z.isLocalVideoDisabled(I.id),
       isPoppedOut: this.poppedOutParticipants.has(I.id)
     }), v.push(b));
-    let D = null != (a = c.Z.getStreamForUser(e, R)) ? a : c.Z.getActiveStreamForUser(e, R);
+    let D = null != (o = c.Z.getStreamForUser(e, R)) ? o : c.Z.getActiveStreamForUser(e, R);
     if (null != D && D.channelId === this.channelId) {
       let t = (0, l.V9)(D),
         n = this.getParticipant(t),

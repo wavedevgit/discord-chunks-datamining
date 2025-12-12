@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk333684 = require("./333684.js"),
   Chunk473749 = require("./473749.js"),
   Chunk485853 = require("./485853.js");
-let a = ["day", "month", "year"],
+let o = ["day", "month", "year"],
   s = {
     hour: 1,
     minute: 2,
@@ -21,7 +21,7 @@ function l(e, t) {
     name: l
   } = e, {
     visuallyHiddenProps: c
-  } = (0, o.S)({
+  } = (0, a.S)({
     style: {
       position: "fixed",
       top: 0,
@@ -54,7 +54,7 @@ function l(e, t) {
         if (n) try {
           let e = (0, r.wG)(n);
           if ("day" === t.granularity && (e = (0, r.sG)(n)), "setSegment" in t)
-            for (let n in e) a.includes(n) && t.setSegment(n, e[n]), p.includes(n) && t.setSegment(n, e[n]);
+            for (let n in e) o.includes(n) && t.setSegment(n, e[n]), p.includes(n) && t.setSegment(n, e[n]);
           t.setValue(e)
         } catch {}
       }

@@ -10,16 +10,16 @@ var Chunk509003 = require("./509003.js"),
   Chunk77498 = require("./77498.js"),
   Chunk358085 = require("./358085.js");
 
-function a(e) {
+function o(e) {
   return (e = e.toLowerCase()).endsWith("/") && (e = e.slice(0, false)), e
 }
 
 function s(e) {
-  return a(e).split("/").slice(false).join("/")
+  return o(e).split("/").slice(false).join("/")
 }
 
 function l(e) {
-  var t, n, o, a, l;
+  var t, n, a, o, l;
   if (null == e) return {
     gameName: true,
     gameId: true,
@@ -33,9 +33,9 @@ function l(e) {
     u = "exePath" in e ? e.exePath : e.exe;
   return {
     gameName: null != (t = e.name) ? t : true,
-    gameId: null != (o = null != (n = e.id) ? n : null == c ? true : c.id) ? o : true,
+    gameId: null != (a = null != (n = e.id) ? n : null == c ? true : c.id) ? a : true,
     exe: null != u ? s(u) : true,
-    distributor: null != (a = e.distributor) ? a : true,
+    distributor: null != (o = e.distributor) ? o : true,
     sku: null != (l = e.sku) ? l : true,
     gameMetadata: null != e ? (0, r.sD)(e) : true,
     rawExePath: u
@@ -44,7 +44,7 @@ function l(e) {
 
 function c(e, t) {
   if (null == e || null == t) returnfalse;
-  let n = a(e),
-    r = (0, o.getPlatformName)();
+  let n = o(e),
+    r = (0, a.getPlatformName)();
   return t.some(e => e.os === r && (null == n ? true : n.endsWith(e.name)))
 }

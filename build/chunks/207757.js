@@ -3,8 +3,8 @@
 e = require.nmd(module);
 var Chunk573401 = require("./573401.js"),
   Chunk88553 = require("./88553.js"),
-  o = exports && !exports.nodeType && exports,
-  a = o && module && !module.nodeType && module,
-  s = a && a.exports === o ? Chunk573401.Buffer : true,
+  a = exports && !exports.nodeType && exports,
+  o = a && module && !module.nodeType && module,
+  s = o && o.exports === a ? Chunk573401.Buffer : true,
   l = (s ? s.isBuffer : true) || Chunk88553;
 module.exports = l

@@ -1,8 +1,8 @@
-/** Chunk was on 86715 **/
-/** chunk id: 895563, original params: n,e,t (module,exports,require) **/
+/** Chunk was on 98414 **/
+/** chunk id: 895563, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  P: () => j,
-  l: () => p
+  P: () => m,
+  l: () => j
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,95 +18,95 @@ var Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(n, e) {
-  return n.type === b.d4z.GROUP_DM ? e ? h.intl.string(h.t["0BWmSM"]) : h.intl.string(h.t.uuVTOK) : n.type === b.d4z.DM ? e ? h.intl.string(h.t["2wfKGo"]) : h.intl.string(h.t.wPbAse) : e ? h.intl.string(h.t.Bou7lT) : h.intl.string(h.t["4wcdE/"])
+function p(e, n) {
+  return e.type === h.d4z.GROUP_DM ? n ? b.intl.string(b.t["0BWmSM"]) : b.intl.string(b.t.uuVTOK) : e.type === h.d4z.DM ? n ? b.intl.string(b.t["2wfKGo"]) : b.intl.string(b.t.wPbAse) : n ? b.intl.string(b.t.Bou7lT) : b.intl.string(b.t["4wcdE/"])
 }
 
-function p(n) {
-  let e = (0, c.e7)([a.ZP], () => a.ZP.getChannels(b.I_8))[b.d4z.GUILD_CATEGORY],
+function j(e) {
+  let n = (0, o.e7)([u.ZP], () => u.ZP.getChannels(h.I_8))[h.d4z.GUILD_CATEGORY],
     {
       isFavoritesPerk: t
     } = (0, f.z)("58e21a_1"),
     {
       notifyFavoriteAdded: i
-    } = (0, d.up)();
-  if (!(0, d.li)(n)) return null;
+    } = (0, s.up)();
+  if (!(0, s.li)(e)) return null;
   let [
-    [s], h
-  ] = l().partition(e, n => "null" === n.channel.id);
+    [c], b
+  ] = l().partition(n, e => "null" === e.channel.id);
 
-  function p(e) {
-    i(), (0, u.kj)(n.id, e)
+  function j(n) {
+    i(), (0, d.kj)(e.id, n)
   }
-  return 0 === h.length ? (0, r.jsx)(o.sNh, {
+  return 0 === b.length ? (0, r.jsx)(a.sNh, {
     id: "favorite-channel",
-    label: O(n, false),
-    action: () => p(null)
-  }) : (0, r.jsxs)(o.sNh, {
+    label: p(e, false),
+    action: () => j(null)
+  }) : (0, r.jsxs)(a.sNh, {
     id: "favorite-channel",
-    label: O(n, false),
-    action: () => p(null),
-    children: [t && (0, r.jsx)(o.kSQ, {
-      children: (0, r.jsx)(o.sNh, {
-        id: "favorite-".concat(s.channel.id),
-        label: s.channel.name,
-        action: () => p("null" === s.channel.id ? null : s.channel.id)
-      }, s.channel.id)
-    }), (0, r.jsx)(o.kSQ, {
-      children: h.map(n => (0, r.jsx)(o.sNh, {
-        id: "favorite-".concat(n.channel.id),
-        label: n.channel.name,
-        action: () => p(n.channel.id)
-      }, n.channel.id))
+    label: p(e, false),
+    action: () => j(null),
+    children: [t && (0, r.jsx)(a.kSQ, {
+      children: (0, r.jsx)(a.sNh, {
+        id: "favorite-".concat(c.channel.id),
+        label: c.channel.name,
+        action: () => j("null" === c.channel.id ? null : c.channel.id)
+      }, c.channel.id)
+    }), (0, r.jsx)(a.kSQ, {
+      children: b.map(e => (0, r.jsx)(a.sNh, {
+        id: "favorite-".concat(e.channel.id),
+        label: e.channel.name,
+        action: () => j(e.channel.id)
+      }, e.channel.id))
     })]
   })
 }
 
-function j(n) {
-  let e = (0, c.e7)([s.Z], () => s.Z.isFavorite(n.id));
-  return __OVERLAY__ || !e ? null : (0, r.jsx)(o.sNh, {
+function m(e) {
+  let n = (0, o.e7)([c.Z], () => c.Z.isFavorite(e.id));
+  return __OVERLAY__ || !n ? null : (0, r.jsx)(a.sNh, {
     id: "favorite-channel",
-    label: O(n, true),
+    label: p(e, true),
     color: "danger",
-    action: () => n.type === b.d4z.GUILD_CATEGORY ? (0, o.ZDy)(async () => {
+    action: () => e.type === h.d4z.GUILD_CATEGORY ? (0, a.ZDy)(async () => {
       let {
-        default: e
+        default: n
       } = await t.e("37720").then(t.bind(t, 357632));
       return t => {
         var i, l;
-        return (0, r.jsx)(e, (i = function(n) {
-          for (var e = 1; e < arguments.length; e++) {
-            var t = null != arguments[e] ? arguments[e] : {},
+        return (0, r.jsx)(n, (i = function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = null != arguments[n] ? arguments[n] : {},
               r = Object.keys(t);
-            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(n) {
-              return Object.getOwnPropertyDescriptor(t, n).enumerable
-            }))), r.forEach(function(e) {
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), r.forEach(function(n) {
               var r;
-              r = t[e], e in n ? Object.defineProperty(n, e, {
+              r = t[n], n in e ? Object.defineProperty(e, n, {
                 value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : n[e] = r
+              }) : e[n] = r
             })
           }
-          return n
+          return e
         }({}, t), l = l = {
           onConfirm: () => {
-            t.onClose(), (0, u.oC)(n.id)
+            t.onClose(), (0, d.oC)(e.id)
           },
-          channel: n
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(n, e) {
-          var t = Object.keys(n);
+          channel: e
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
+          var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(n);
+            var r = Object.getOwnPropertySymbols(e);
             t.push.apply(t, r)
           }
           return t
-        })(Object(l)).forEach(function(n) {
-          Object.defineProperty(i, n, Object.getOwnPropertyDescriptor(l, n))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
         }), i))
       }
-    }) : (0, u.oC)(n.id)
+    }) : (0, d.oC)(e.id)
   })
 }

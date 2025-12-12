@@ -12,8 +12,8 @@ var Chunk592125 = require("./592125.js"),
 
 function l(e, t, n) {
   var l, c;
-  a.default.track(s.rMx.VOICE_CALL_TRANSFER, {
-    source_platform: null != n ? null == (l = o.Z.getSessionById(n)) ? true : l.clientInfo.os : "discord_client",
+  o.default.track(s.rMx.VOICE_CALL_TRANSFER, {
+    source_platform: null != n ? null == (l = a.Z.getSessionById(n)) ? true : l.clientInfo.os : "discord_client",
     guild_id: null == (c = r.Z.getChannel(e)) ? true : c.guild_id,
     channel_id: e,
     rtc_connection_id: i.Z.getRTCConnectionId(),

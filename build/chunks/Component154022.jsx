@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
@@ -48,8 +48,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk611480 = require("./611480.js"),
   Chunk653477 = require("./653477.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk376437 = require("./376437.js"),
-  Chunk953752 = require("./953752.js"),
+  Chunk143525 = require("./143525.js"),
+  Chunk54354 = require("./54354.js"),
   Chunk328756 = require("./328756.js");
 
 function z(e, t, n) {
@@ -93,10 +93,10 @@ function X(e, t) {
 let J = (0, Chunk313201.hQ)(),
   $ = (0, Chunk313201.hQ)(),
   ee = (0, Chunk313201.hQ)(),
-  et = a().debounce(e => {
+  et = o().debounce(e => {
     (0, f.o2)(e)
   }, 250),
-  en = a().debounce(e => {
+  en = o().debounce(e => {
     (0, P.Ct)(e)
   }, 250);
 
@@ -159,7 +159,7 @@ function er(e) {
         })]
       }), i && (0, r.jsxs)(N.F, {
         setting: Z.s6.ACCESSIBILITY_SWITCH_ICON,
-        children: [(0, r.jsx)(ea, {}), (0, r.jsx)(c.izJ, {
+        children: [(0, r.jsx)(eo, {}), (0, r.jsx)(c.izJ, {
           gap: 4
         })]
       }), (0, r.jsx)(eb, {}), (0, r.jsx)(N.F, {
@@ -199,16 +199,16 @@ function ei() {
     });
   return (0, Chunk54381.jsx)(Chunk481060.Rny, {
     children: (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
-      className: Chunk953752.preview,
+      className: Chunk54354.preview,
       "aria-hidden": true,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk953752.previewHeader,
+        className: Chunk54354.previewHeader,
         children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["2RHHgz"])
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk953752.previewAvatars,
+          className: Chunk54354.previewAvatars,
           children: [Chunk981631.Skl.ONLINE, Chunk981631.Skl.DND, Chunk981631.Skl.IDLE].map(e => (0, r.jsx)(c.Xo$, {
             "aria-label": H.intl.string(H.t.lqaIxI),
             src: K,
@@ -217,7 +217,7 @@ function ei() {
           }, e))
         })]
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk953752.previewMessage,
+        className: Chunk54354.previewMessage,
         children: (0, Chunk54381.jsx)(Chunk753206.Z, {
           compact: module,
           author: X(q({}, (0, Chunk739566.ZH)(exports)), {
@@ -230,7 +230,7 @@ function ei() {
   })
 }
 
-function eo() {
+function ea() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.isHighContrastModeEnabled);
 
   function t(e) {
@@ -253,7 +253,7 @@ function eo() {
   })
 }
 
-function ea() {
+function eo() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.isSwitchIconsEnabled);
   return (0, Chunk54381.jsx)(Chunk481060.rsf, {
     label: Chunk388032.intl.string(Chunk388032.t["S3z+pV"]),
@@ -362,8 +362,8 @@ function ed() {
     })
   }
   return (0, Chunk54381.jsx)(Chunk481060.rsf, {
-    label: Chunk388032.intl.string(Chunk376437.default["2gFUEw"]),
-    description: Chunk388032.intl.format(Chunk376437.default.L8U56h, {
+    label: Chunk388032.intl.string(Chunk143525.default["2gFUEw"]),
+    description: Chunk388032.intl.format(Chunk143525.default.L8U56h, {
       onClickOpenModal() {
         (0, Chunk829716.I)({
           analyticsLocations: exports
@@ -406,23 +406,23 @@ function ep() {
   Chunk473749.useEffect(() => {
     require(module)
   }, [module]);
-  let o = Chunk473749.useRef(null);
+  let a = Chunk473749.useRef(null);
   Chunk473749.useEffect(() => {
     null != Chunk392711.current && (clearTimeout(Chunk392711.current), Chunk392711.current = null), exports !== module && (Chunk392711.current = setTimeout(() => (0, Chunk857595.qz)(exports), 150))
   }, [exports, module]);
-  let a = Chunk388032.intl.format(Chunk388032.t.GwEVE2, {
+  let o = Chunk388032.intl.format(Chunk388032.t.GwEVE2, {
     learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.FORCED_COLORS)
   });
   return (0, Chunk54381.jsxs)(Chunk481060.C3N, {
     label: Chunk388032.intl.string(Chunk388032.t["TYyfO/"]),
     children: [(0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_HIGH_CONTRAST,
-      children: (0, Chunk54381.jsx)(eo, {})
+      children: (0, Chunk54381.jsx)(ea, {})
     }), (0, Chunk627845.b)() ? (0, Chunk54381.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
       children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.cguiec),
-        description: a,
+        description: o,
         checked: exports,
         onChange: require
       })
@@ -435,8 +435,8 @@ function e_() {
     t = Chunk695346.Yk.useSetting(),
     {
       useReducedMotion: n,
-      rawPrefersReducedMotion: o,
-      systemPrefersReducedMotion: a,
+      rawPrefersReducedMotion: a,
+      systemPrefersReducedMotion: o,
       gifAutoPlayOverrideReason: l,
       animateEmojiOverrideReason: u
     } = (0, Chunk442837.cj)([Chunk607070.Z, Chunk263937.Z], () => ({
@@ -450,15 +450,15 @@ function e_() {
     _ = Chunk473749.useRef(null);
   (0, Chunk996073.Z)(Chunk299363, Chunk526761.rP.REDUCED_MOTION);
   let m = Chunk473749.useCallback(e => {
-      (0, f.Zt)(e ? "auto" : a)
-    }, [a]),
+      (0, f.Zt)(e ? "auto" : o)
+    }, [o]),
     h = Chunk473749.useCallback(e => {
       (0, f.Zt)(e ? "reduce" : "no-preference")
     }, []);
   return (0, Chunk54381.jsx)("div", {
     ref: Chunk299363,
     title: Chunk388032.intl.string(Chunk388032.t.e3TR1b),
-    className: Chunk953752.reducedMotion,
+    className: Chunk54354.reducedMotion,
     children: (0, Chunk54381.jsxs)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.e3TR1b),
       description: Chunk388032.intl.format(Chunk388032.t["2l9U2j"], {

@@ -9,10 +9,10 @@ require.d(exports, {
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js");
 var Chunk591759 = require("./591759.js");
 let i = RegExp("\\p{Cf}|\\p{Zl}|\\p{Zp}|[^\\P{Cc}\\n]|[^\\P{Zs} ]", "gu"),
-  o = RegExp("\\p{Cf}|\\p{Zl}|\\p{Zp}|[^\\P{Cc}\\n\\t]|[^\\P{Zs} ]", "gu"),
-  a = ["͏", "឴", "឵", "ᅠ", "ㅤ", "ﾠ"],
-  s = RegExp("".concat(i.source, "|").concat(a.join("|")), "gu"),
-  l = RegExp("".concat(o.source, "|").concat(a.join("|")), "gu");
+  a = RegExp("\\p{Cf}|\\p{Zl}|\\p{Zp}|[^\\P{Cc}\\n\\t]|[^\\P{Zs} ]", "gu"),
+  o = ["͏", "឴", "឵", "ᅠ", "ㅤ", "ﾠ"],
+  s = RegExp("".concat(i.source, "|").concat(o.join("|")), "gu"),
+  l = RegExp("".concat(a.source, "|").concat(o.join("|")), "gu");
 
 function c(e) {
   return e.replace(s, "")
@@ -67,19 +67,19 @@ function g(e) {
   if (null == t) return e;
   let n = "",
     i = e,
-    o = t;
+    a = t;
   for (; i.length > 0;) {
     let e = i.codePointAt(0),
-      t = o.codePointAt(0);
+      t = a.codePointAt(0);
     if (e === t) {
       let t = String.fromCodePoint(e);
-      n += t, i = i.substring(t.length), o = o.substring(t.length);
+      n += t, i = i.substring(t.length), a = a.substring(t.length);
       continue
     }
     let r = String.fromCodePoint(t),
-      a = encodeURIComponent(r),
-      s = a === r ? 3 : a.length;
-    n += m(t) ? r : a, i = i.substring(s), o = o.substring(r.length)
+      o = encodeURIComponent(r),
+      s = o === r ? 3 : o.length;
+    n += m(t) ? r : o, i = i.substring(s), a = a.substring(r.length)
   }
   return n
 }

@@ -8,5 +8,5 @@ var Chunk580983 = require("./580983.js"),
   s = RegExp.prototype;
 module.exports = function(e) {
   var t = e.flags;
-  return !(true === t && !("flags" in s) && !i(e, "flags") && o(s, e)) ? t : r(a, e)
+  return !(true === t && !("flags" in s) && !i(e, "flags") && a(s, e)) ? t : r(o, e)
 }

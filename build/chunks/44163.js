@@ -11,7 +11,7 @@ var Chunk374470 = require("./374470.js"),
 let s = {
   init() {
     document.addEventListener("paste", e => {
-      (0, o.Z)((0, r.uB)(e)) || i.S.dispatchToLastSubscribed(a.CkL.GLOBAL_CLIPBOARD_PASTE, {
+      (0, a.Z)((0, r.uB)(e)) || i.S.dispatchToLastSubscribed(o.CkL.GLOBAL_CLIPBOARD_PASTE, {
         event: e
       })
     })

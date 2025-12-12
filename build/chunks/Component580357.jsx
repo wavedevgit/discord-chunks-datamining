@@ -7,12 +7,12 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk75684 = require("./75684.js");
+  Chunk28578 = require("./28578.js");
 
 function s() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk75684.marker,
+      className: Chunk28578.marker,
       tag: "span",
       variant: "text-md/semibold",
       color: "text-feedback-critical",

@@ -17,17 +17,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk185625 = require("./185625.js"),
   Chunk255514 = require("./255514.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk584581 = require("./584581.js");
+  Chunk351356 = require("./351356.js");
 let h = e => {
   let {
     reportType: t,
     menu: n,
     modalProps: h,
-    onSubmit: f,
-    onNavigate: v,
+    onSubmit: v,
+    onNavigate: _,
     emailToken: j,
     isAuthenticated: y = true
-  } = e, O = (0, c.Dt)(), {
+  } = e, O = (0, d.Dt)(), {
     nodes: Z,
     root_node_id: I,
     success_node_id: C,
@@ -40,11 +40,11 @@ let h = e => {
       var n, r, l;
       let {
         destination: a
-      } = e, [, s] = a, c = Z[s];
-      if (true === c) return void d.Z.increment({
+      } = e, [, s] = a, d = Z[s];
+      if (true === d) return void c.Z.increment({
         name: i.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
       });
-      if (c.elements.some(e => "skip" === e.type) && (null == (n = c.button) ? true : n.type) === "next") return G((r = function(e) {
+      if (d.elements.some(e => "skip" === e.type) && (null == (n = d.button) ? true : n.type) === "next") return G((r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -62,7 +62,7 @@ let h = e => {
         }
         return e
       }({}, e), l = l = {
-        destination: ["", c.button.target]
+        destination: ["", d.button.target]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -73,32 +73,32 @@ let h = e => {
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r));
-      if (D([...M, e]), null != c.key && (null == v || v(c.key)), k(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
+      if (D([...M, e]), null != d.key && (null == _ || _(d.key)), k(true), w(true), t.name === b.b.MESSAGE || t.name === b.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
-          report_sub_type: c.report_type,
+          report_sub_type: d.report_type,
           current_node: Z[N].id,
-          next_node: c.id
+          next_node: d.id
         })
       }
       P(s)
     },
     H = async e => {
       var r;
-      let l = y ? await (0, g.ZD)(n, t, [...M, e]) : await (0, g.fw)(n, t, [...M, e], j),
+      let l = y ? await (0, p.ZD)(n, t, [...M, e]) : await (0, p.fw)(n, t, [...M, e], j),
         i = null == l || null == (r = l.body) ? true : r.report_id;
-      null != i && A(i), U(Z[e.nodeRef].report_type), null == f || f(i)
+      null != i && A(i), U(Z[e.nodeRef].report_type), null == v || v(i)
     }, W = () => {
       var e, n;
       if (M.length < 1) return;
       let r = [...M],
         l = r.pop(),
         i = null != (n = null == l ? true : l.nodeRef) ? n : I;
-      if (t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
+      if (t.name === b.b.MESSAGE || t.name === b.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
           report_sub_type: Z[i].report_type,
@@ -106,7 +106,7 @@ let h = e => {
           next_node: Z[i].id
         })
       }
-      k(null == l || null == (e = l.multiSelect) ? true : e.state), w(null == l ? true : l.textInput), P(i), D(r), null == v || v("..")
+      k(null == l || null == (e = l.multiSelect) ? true : e.state), w(null == l ? true : l.textInput), P(i), D(r), null == _ || _("..")
     }, F = l.useMemo(() => {
       let e = [],
         t = [];
@@ -139,8 +139,8 @@ let h = e => {
       children: F.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
-          className: b.slideContainer,
-          children: (0, r.jsx)(_.Z, {
+          className: x.slideContainer,
+          children: (0, r.jsx)(g.Z, {
             node: e,
             reportType: t,
             reportSubType: B,

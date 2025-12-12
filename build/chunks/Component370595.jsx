@@ -8,8 +8,8 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk220512 = require("./220512.js"),
-  Chunk87819 = require("./87819.js");
+  Chunk807121 = require("./807121.js"),
+  Chunk280533 = require("./280533.js");
 
 function u(e) {
   let {
@@ -21,7 +21,7 @@ function u(e) {
     children: [(0, r.jsx)("div", {
       className: o.headerTitle,
       children: (0, r.jsxs)(l.P3F, {
-        className: a.backButton,
+        className: s.backButton,
         onClick: () => null == t ? true : t(n),
         children: [(0, r.jsx)(l.whL, {
           size: "custom",
@@ -29,13 +29,13 @@ function u(e) {
           height: 20
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
-          children: s.intl.string(s.t["13/7kX"])
+          children: a.intl.string(a.t["13/7kX"])
         })]
       })
     }), (0, r.jsx)(l.M2$, {
       shortcut: "esc",
-      keyClassName: a.keyComboInner,
-      className: a.keyComboContainer
+      keyClassName: s.keyComboInner,
+      className: s.keyComboContainer
     })]
   })
 }

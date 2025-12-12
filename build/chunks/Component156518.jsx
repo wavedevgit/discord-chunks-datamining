@@ -22,15 +22,15 @@ function m(e) {
   let {
     user: t,
     analyticsLocation: n
-  } = e, r = (0, o.e7)([u.Z], () => u.Z.getRelationshipType(t.id) === p.OGo.PENDING_OUTGOING), {
-    trackUserProfileAction: a
+  } = e, r = (0, a.e7)([u.Z], () => u.Z.getRelationshipType(t.id) === p.OGo.PENDING_OUTGOING), {
+    trackUserProfileAction: o
   } = (0, f.KZ)(), _ = (0, s.Z)({
     user: t,
     location: n,
-    onFriendRemove: () => a({
+    onFriendRemove: () => o({
       action: "REMOVE_FRIEND"
     }),
-    onFriendRequestSent: () => a({
+    onFriendRequestSent: () => o({
       action: "SEND_FRIEND_REQUEST"
     })
   }), m = (0, l.Z)({
@@ -47,13 +47,13 @@ function h(e) {
     children: n,
     targetElementRef: i
   } = e;
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(o.yRy, {
     targetElementRef: i,
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "user-profile-friend-request-buttons",
         onSelect: true,
         onClose: n,

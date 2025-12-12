@@ -11,17 +11,17 @@ function i(e, t, n) {
       [t]: 1
     } : {},
     {
-      offset: o,
-      limit: a,
+      offset: a,
+      limit: o,
       results: s,
       totalResults: l
     } = null != n ? n : {};
   return {
     search_type: r.aib.GIF,
     load_id: e,
-    limit: a,
-    offset: o,
-    page: null != a && null != o ? Math.floor(o / a) + 1 : 1,
+    limit: o,
+    offset: a,
+    page: null != o && null != a ? Math.floor(a / o) + 1 : 1,
     total_results: l,
     page_results: null != s ? s : null,
     num_modifiers: Object.keys(i).length,

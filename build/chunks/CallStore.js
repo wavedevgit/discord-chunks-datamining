@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => D
 });
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -139,7 +139,7 @@ function A(e) {
     channelId: n,
     recipients: r
   } = e;
-  E[n] = o().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
+  E[n] = a().union(null != (t = E[n]) ? t : [], null != r ? r : ["all"])
 }
 
 function N(e) {
@@ -148,12 +148,12 @@ function N(e) {
     messageId: n,
     region: r,
     ringing: i
-  } = e, o = g[t], a = null != o && (o.regionUpdated || o.region !== r);
+  } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
   g[t] = h(_({}, g[t]), {
     messageId: n,
     region: r,
     ringing: i,
-    regionUpdated: a
+    regionUpdated: o
   })
 }
 

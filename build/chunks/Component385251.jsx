@@ -21,7 +21,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk355758 = require("./355758.js"),
+  Chunk817843 = require("./817843.js"),
   Chunk22767 = require("./22767.js");
 
 function O(e, t, n) {
@@ -72,18 +72,18 @@ function C(e) {
   let {
     premiumSubscription: t,
     discountInfo: n,
-    invoicePreview: o,
-    isDiscountActive: a
-  } = e, s = d.ZP.getPlanIdFromInvoice(t, o), l = c.Z.get(s);
-  if (null == l || null == o || null == n || null == n.duration || null == n.percentage) return null;
-  let u = o.invoiceItems.find(e => {
+    invoicePreview: a,
+    isDiscountActive: o
+  } = e, s = d.ZP.getPlanIdFromInvoice(t, a), l = c.Z.get(s);
+  if (null == l || null == a || null == n || null == n.duration || null == n.percentage) return null;
+  let u = a.invoiceItems.find(e => {
     let {
       subscriptionPlanId: t
     } = e;
     return t === l.id
   });
   if (null == u) return null;
-  let p = (0, f.T4)(u.amount, o.currency),
+  let p = (0, f.T4)(u.amount, a.currency),
     _ = (0, d.aS)(h.Xh.PREMIUM_MONTH_TIER_2, false, false, {
       currency: t.currency,
       paymentSourceId: t.paymentSourceId
@@ -99,7 +99,7 @@ function C(e) {
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: a ? E.intl.format(E.t["3ZiutU"], {
+      children: o ? E.intl.format(E.t["3ZiutU"], {
         percent: n.percentage,
         numMonths: n.duration,
         regularPrice: m
@@ -117,7 +117,7 @@ function A(e) {
   let {
     discountOffer: t,
     premiumSubscription: n
-  } = e, o = (0, p._n)(n, h.Xh.PREMIUM_MONTH_TIER_2, t);
+  } = e, a = (0, p._n)(n, h.Xh.PREMIUM_MONTH_TIER_2, t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
@@ -130,7 +130,7 @@ function A(e) {
       color: "text-default",
       children: E.intl.format(E.t["PH7Q+R"], {
         numMonths: t.discount.user_usage_limit,
-        discountedPrice: o,
+        discountedPrice: a,
         billingPeriod: (0, d.JP)(t.discount.user_usage_limit_interval)
       })
     })]
@@ -147,7 +147,7 @@ let N = function(e) {
     discountOffer: S
   } = e, {
     analyticsLocations: N
-  } = (0, a.ZP)(o.Z.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), P = () => {
+  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_SUBSCRIPTION_HEADER), P = () => {
     t.status !== g.O0b.CANCELED && R()
   }, R = e => {
     (0, i.ZDy)(async () => {

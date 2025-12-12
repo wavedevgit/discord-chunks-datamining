@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
@@ -22,8 +22,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk276444 = require("./276444.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk734501 = require("./734501.js"),
-  Chunk690813 = require("./690813.js");
+  Chunk631100 = require("./631100.js"),
+  Chunk726667 = require("./726667.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ let T = (e, t) => {
       status: n,
       onClose: i
     } = e, {
-      avatarSrc: o,
+      avatarSrc: a,
       eventHandlers: s
     } = (0, f.Z)({
       userId: null == t ? true : t.id,
@@ -66,10 +66,10 @@ let T = (e, t) => {
     return (0, r.jsxs)("div", {
       className: O.trialRecipientRow,
       children: [(0, r.jsx)(u.qEK, I({
-        imageClassName: a()({
+        imageClassName: o()({
           [O.erroredAvatar]: c
         }),
-        src: o,
+        src: a,
         "aria-label": l,
         size: u.EFr.SIZE_32
       }, s)), c ? (0, r.jsxs)(r.Fragment, {
@@ -104,13 +104,13 @@ let T = (e, t) => {
     let {
       results: t,
       onClose: n,
-      isReminderConfirmation: o
-    } = e, a = (0, l.e7)([E.Z], () => E.Z.getReferralsRemaining());
+      isReminderConfirmation: a
+    } = e, o = (0, l.e7)([E.Z], () => E.Z.getReferralsRemaining());
     _.default.track(b.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
     let {
       reducedMotion: d
     } = i.useContext(c.Sf);
-    if (null === a) return (0, r.jsx)(u.$jN, {});
+    if (null === o) return (0, r.jsx)(u.$jN, {});
     let f = () => d.enabled ? {
         src: v.Z,
         type: "image"
@@ -118,8 +118,8 @@ let T = (e, t) => {
         rive: u.p8m,
         type: "rive"
       },
-      p = () => 0 === t.filter(e => e.status === g.Fz.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : true === o ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
-      h = () => true === o ? y.intl.format(y.t["4gJJfD"], {
+      p = () => 0 === t.filter(e => e.status === g.Fz.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : true === a ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
+      h = () => true === a ? y.intl.format(y.t["4gJJfD"], {
         helpdeskArticle: m.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)
       }) : y.intl.format(y.t.AwGSWl, {
         helpdeskArticle: m.Z.getArticleURL(b.BhN.REFERRAL_PROGRAM)

@@ -2,11 +2,11 @@
 /** chunk id: 950697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk36056 = require("./36056.js"),
   Chunk350508 = require("./350508.js");
-class o {
+class a {
   constructor(e) {
     var t;
     this.fields = null != (t = e.fields) ? t : []
@@ -40,34 +40,34 @@ class o {
     if (null == e || "object" != typeof e) returnfalse;
     this.prepare();
     let r = Object.keys(e),
-      o = this.data;
-    if (r.length < o.req.length || o.req.some(e => !r.includes(e)) || !n && r.some(e => !o.known.includes(e))) returnfalse;
+      a = this.data;
+    if (r.length < a.req.length || a.req.some(e => !r.includes(e)) || !n && r.some(e => !a.known.includes(e))) returnfalse;
     if (t < 1) returntrue;
-    for (let r of o.oneofs) {
-      let o = e[r];
-      if (!(0, i.Li)(o)) returnfalse;
-      if (true === o.oneofKind) continue;
-      let a = this.fields.find(e => e.localName === o.oneofKind);
-      if (!a || !this.field(o[o.oneofKind], a, n, t)) returnfalse
+    for (let r of a.oneofs) {
+      let a = e[r];
+      if (!(0, i.Li)(a)) returnfalse;
+      if (true === a.oneofKind) continue;
+      let o = this.fields.find(e => e.localName === a.oneofKind);
+      if (!o || !this.field(a[a.oneofKind], o, n, t)) returnfalse
     }
     for (let r of this.fields)
       if (true === r.oneof && !this.field(e[r.localName], r, n, t)) returnfalse;
     returntrue
   }
   field(e, t, n, i) {
-    let o = t.repeat;
+    let a = t.repeat;
     switch (t.kind) {
       case "scalar":
         if (true === e) return t.opt;
-        if (o) return this.scalars(e, t.T, i, t.L);
+        if (a) return this.scalars(e, t.T, i, t.L);
         return this.scalar(e, t.T, t.L);
       case "enum":
         if (true === e) return t.opt;
-        if (o) return this.scalars(e, r.wx.INT32, i);
+        if (a) return this.scalars(e, r.wx.INT32, i);
         return this.scalar(e, r.wx.INT32);
       case "message":
         if (true === e) break;
-        if (o) return this.messages(e, t.T(), n, i);
+        if (a) return this.messages(e, t.T(), n, i);
         return this.message(e, t.T(), n, i);
       case "map":
         if ("object" != typeof e || null === e) returnfalse;

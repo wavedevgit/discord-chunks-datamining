@@ -62,8 +62,8 @@ function y(e) {
     application: t,
     branchId: n,
     buildId: r,
-    manifestIds: o,
-    installationPath: a,
+    manifestIds: a,
+    installationPath: o,
     analyticsLocation: s
   } = e;
   p.Z.setTargetManifest({
@@ -72,13 +72,13 @@ function y(e) {
     applicationIcon: t.icon,
     branchId: n,
     buildId: r,
-    manifestIds: o,
-    installationPath: a
+    manifestIds: a,
+    installationPath: o
   }), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_INSTALL",
     applicationId: t.id,
     branchId: n,
-    installationPath: a
+    installationPath: o
   }), u.default.track(m.rMx.LIBRARY_INSTALL_INITIATED, {
     application_id: t.id,
     application_name: t.name,
@@ -103,7 +103,7 @@ function O(e, t, n) {
 }
 
 function v(e, t, n, r) {
-  if (a.ZP.getRunningDiscordApplicationIds().includes(e.id)) return;
+  if (o.ZP.getRunningDiscordApplicationIds().includes(e.id)) return;
   let i = c.Z.getInstallationPath(e.id, t);
   if (null == i) throw Error("Missing installation path for application: ".concat(e.id, " ").concat(t));
   p.Z.setTargetManifest({
@@ -118,17 +118,17 @@ function v(e, t, n, r) {
 }
 
 function S(e, t, n, r) {
-  let o = arguments.length > 4 && true !== arguments[4] && arguments[4];
+  let a = arguments.length > 4 && true !== arguments[4] && arguments[4];
   v(e, t, n, r), i.Z.dispatch({
     type: "DISPATCH_APPLICATION_UPDATE",
     applicationId: e.id,
     branchId: t,
-    automatic: o
+    automatic: a
   })
 }
 
 function I(e, t, n) {
-  let r = o.Z.getApplication(e);
+  let r = a.Z.getApplication(e);
   null != r && (f.Z.removeShortcuts(r.name), u.default.track(m.rMx.LIBRARY_UNINSTALL_INITIATED, {
     application_id: r.id,
     application_name: r.name,
@@ -174,12 +174,12 @@ function P(e, t) {
 }
 
 function R(e, t) {
-  let n = o.Z.getApplication(e);
+  let n = a.Z.getApplication(e);
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
 function w(e, t) {
-  let i = o.Z.getApplication(e);
+  let i = a.Z.getApplication(e);
   r.tn.post({
     url: m.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),
     oldFormErrors: true,

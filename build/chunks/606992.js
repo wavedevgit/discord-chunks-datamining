@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk728285 = require("./728285.jsx"),
   Chunk590921 = require("./590921.js"),
-  Chunk953782 = require("./953782.js");
+  Chunk299477 = require("./299477.js");
 
 function s(e) {
   let {
@@ -19,8 +19,8 @@ function s(e) {
   } = r.useContext(i.ZP), p = r.useCallback(() => {
     var e, t, r, i;
     if (null != s && (null == u || !d)) return void c(true);
-    if ((null == u ? true : u.type) === o.eq.MENTION_SUGGESTIONS) {
-      let e = f.document.getElementsByClassName(a.mentionSuggestion)[0];
+    if ((null == u ? true : u.type) === a.eq.MENTION_SUGGESTIONS) {
+      let e = f.document.getElementsByClassName(o.mentionSuggestion)[0];
       if (null == e) return void c(true);
       {
         let t = e.getBoundingClientRect();
@@ -28,7 +28,7 @@ function s(e) {
         return
       }
     }
-    if ((null == u ? true : u.type) === o.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void c(null);
+    if ((null == u ? true : u.type) === a.eq.GIFS || null != n && !(null == (e = n.autocomplete) ? true : e.alwaysUseLayer)) return void c(null);
     let l = f.document.getSelection(),
       p = null != l && l.rangeCount > 0 ? l.getRangeAt(0) : null;
     if (null == p) return;

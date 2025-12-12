@@ -19,7 +19,7 @@ function f(e) {
 }
 
 function p(e, t, n) {
-  if ("focused" !== o.Z.getState() || f(e) || l.Z.isFetchingQuestToDeliverByPlacement(t)) return;
+  if ("focused" !== a.Z.getState() || f(e) || l.Z.isFetchingQuestToDeliverByPlacement(t)) return;
   let {
     enableNewRequestBehavior: r
   } = c.Z.getConfig({
@@ -31,17 +31,17 @@ function p(e, t, n) {
 function _(e) {
   let t = (0, r.useRef)(null),
     n = (0, i.e7)([l.Z], () => l.Z.questDeliveryOverride),
-    o = (0, i.e7)([l.Z], () => {
+    a = (0, i.e7)([l.Z], () => {
       var t;
       return null != (t = l.Z.questAdDecisionByPlacement.get(e)) ? t : null
     }),
-    a = (0, i.e7)([l.Z], () => {
+    o = (0, i.e7)([l.Z], () => {
       var e;
-      return (null == o ? true : o.questId) != null && null != (e = l.Z.quests.get(o.questId)) ? e : null
+      return (null == a ? true : a.questId) != null && null != (e = l.Z.quests.get(a.questId)) ? e : null
     });
   return ((0, r.useEffect)(() => {
     if (null != t.current && clearInterval(t.current), null != n) return;
-    p(o, e, "questBar-open"), t.current = setInterval(() => {
+    p(a, e, "questBar-open"), t.current = setInterval(() => {
       var t;
       p(null != (t = l.Z.questAdDecisionByPlacement.get(e)) ? t : null, e, "questBar-interval")
     }, d);
@@ -49,5 +49,5 @@ function _(e) {
     return () => {
       null != r && clearInterval(r)
     }
-  }, [o, e, n]), null != n) ? n : null == a || (0, u.zi)(a) ? null : a
+  }, [a, e, n]), null != n) ? n : null == o || (0, u.zi)(o) ? null : o
 }

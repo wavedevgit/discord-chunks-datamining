@@ -15,10 +15,10 @@ var Chunk703656 = require("./703656.js"),
 function u(e) {
   var t, n, u, d, f;
   let p = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null != e && a.Ec.has(e.type) ? {
+  return null != e && o.Ec.has(e.type) ? {
     location: p ? (0, r.At)() : true,
     thread_approximate_member_count: i.Z.getMemberCount(e.id),
-    thread_approximate_message_count: o.Z.getCount(e.id),
+    thread_approximate_message_count: a.Z.getCount(e.id),
     thread_archived: (null == (t = e.threadMetadata) ? true : t.archived) === true,
     thread_locked: null != (d = null == (n = e.threadMetadata) ? true : n.locked) && d,
     thread_auto_archive_duration_minutes: null != (f = null == (u = e.threadMetadata) ? true : u.autoArchiveDuration) ? f : 0,

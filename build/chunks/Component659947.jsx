@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk914010 = require("./914010.js"),
   Chunk727785 = require("./727785.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk704563 = require("./704563.js");
+  Chunk331924 = require("./331924.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,11 +71,11 @@ function T(e) {
 
 function C() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk704563.voiceListSearchEmpty,
+    className: Chunk331924.voiceListSearchEmpty,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: Chunk704563.noVoiceChannelSelected,
+      className: Chunk331924.noVoiceChannelSelected,
       children: Chunk388032.intl.string(Chunk388032.t.zHjCd1)
     })
   })
@@ -83,7 +83,7 @@ function C() {
 
 function A(e) {
   let t = "" !== e,
-    n = (0, a.Wu)([p.ZP, f.Z, m.Z], () => {
+    n = (0, o.Wu)([p.ZP, f.Z, m.Z], () => {
       let e = m.Z.getGuildId();
       if (t || null == e) return [];
       let n = [];
@@ -99,15 +99,15 @@ function A(e) {
 function N(e) {
   var t, n;
   let {
-    keybind: o
-  } = e, a = i.useRef(o);
+    keybind: a
+  } = e, o = i.useRef(a);
   i.useEffect(() => {
-    a.current = o
+    o.current = a
   });
-  let [c, d] = i.useState(null != (n = null == (t = o.params) ? true : t.channelId) ? n : true), f = i.useCallback(() => {
+  let [c, d] = i.useState(null != (n = null == (t = a.params) ? true : t.channelId) ? n : true), f = i.useCallback(() => {
     (0, s.ZDy)(async () => e => (0, r.jsx)(R, v(y({}, e), {
       onSelect: e => {
-        d(e), l.Z.setKeybind(v(y({}, a.current), {
+        d(e), l.Z.setKeybind(v(y({}, o.current), {
           params: {
             channelId: e
           }
@@ -154,7 +154,7 @@ function R(e) {
   let {
     transitionState: t,
     onClose: n,
-    onSelect: a
+    onSelect: o
   } = e, l = i.useId(), u = i.useRef(null), {
     query: p,
     updateQuery: m,
@@ -187,16 +187,16 @@ function R(e) {
       if ((null == e ? true : e.type) === h.h8.VOICE_CHANNEL) return e.record
     })();
     if (null == i) return null;
-    let o = null != i.parent_id ? f.Z.getChannel(i.parent_id) : true,
+    let a = null != i.parent_id ? f.Z.getChannel(i.parent_id) : true,
       s = _.Z.getGuild(i.guild_id);
     return (0, r.jsx)(d.$W, {
       id: i.id,
       channel: i,
-      category: o,
+      category: a,
       focused: O === t,
       onMouseEnter: () => v(t),
       onClick: () => {
-        a(i.id), n()
+        o(i.id), n()
       },
       onFocus: () => v(t),
       children: null != s ? (0, r.jsx)("div", {
@@ -218,7 +218,7 @@ function R(e) {
           let e = b[O];
           if ((null == e ? true : e.type) === h.h8.VOICE_CHANNEL) return e.record
         })();
-        null == e ? a(true) : a(e.id), n();
+        null == e ? o(true) : o(e.id), n();
         break
       }
       case "arrowup":
@@ -251,7 +251,7 @@ function R(e) {
       sectionHeight: 0,
       rowHeight: 52
     };
-  return (0, r.jsx)(o.Modal, {
+  return (0, r.jsx)(a.Modal, {
     transitionState: t,
     onClose: n,
     title: g.intl.string(g.t.Dm8O4e),
@@ -280,8 +280,8 @@ function w(e) {
   } = e, {
     channel: n,
     category: i,
-    guild: o
-  } = (0, a.cj)([f.Z, _.Z], () => {
+    guild: a
+  } = (0, o.cj)([f.Z, _.Z], () => {
     let e = null != t ? f.Z.getChannel(t) : true;
     return null != e ? {
       channel: e,
@@ -306,9 +306,9 @@ function w(e) {
     onFocus: S,
     onMouseEnter: S,
     focused: false,
-    children: null != o ? (0, r.jsx)("div", {
+    children: null != a ? (0, r.jsx)("div", {
       className: E.guildName,
-      children: o.name
+      children: a.name
     }) : null
   })
 }

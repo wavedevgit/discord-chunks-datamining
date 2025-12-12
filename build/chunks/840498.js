@@ -16,7 +16,7 @@ function i(e) {
   return Array.isArray(e) ? e.forEach(e => i(e, t)) : "string" == typeof e.content ? t.push(e.content) : null != e.content && i(e.content, t), t
 }
 
-function o(e, t) {
+function a(e, t) {
   if (Array.isArray(t)) {
     let {
       length: n
@@ -27,7 +27,7 @@ function o(e, t) {
   e.push(t)
 }
 
-function a(e) {
+function o(e) {
   let t = null;
   for (let n = 0; n < e.length; n++) {
     let r = e[n];
@@ -44,8 +44,8 @@ function s(e, t) {
   if (Array.isArray(t)) {
     let r = t.length,
       i = [];
-    for (let a = 0; a < r; a++) o(i, s(e, t[a], n));
-    return e.isSlate || a(i), i
+    for (let o = 0; o < r; o++) a(i, s(e, t[o], n));
+    return e.isSlate || o(i), i
   }
   return (null != t.content && (t.content = s(e, t.content, t)), "inlineCode" === t.type && delete t.validationChildContent, "list" === t.type && (t.items = t.items.map(t => Array.isArray(t) ? s(e, t, null) : t)), null != n && t.type === n.type) ? t.content : t
 }

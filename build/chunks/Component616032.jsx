@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 616032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk213609 = require("./213609.js"),
   Chunk441358 = require("./441358.jsx"),
   Chunk426521 = require("./426521.jsx"),
-  Chunk837284 = require("./837284.js");
+  Chunk383094 = require("./383094.js");
 
 function h(e) {
   let {
@@ -20,7 +20,7 @@ function h(e) {
     items: n,
     loading: h,
     loadMore: p
-  } = e, g = i.useRef(null), m = (0, s.Z)("for-you", g);
+  } = e, g = i.useRef(null), b = (0, s.Z)("for-you", g);
   (0, c.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.NOTIFICATION_CENTER_LANDING,
@@ -30,19 +30,19 @@ function h(e) {
   }, {
     disableTrack: !t
   }, [t]);
-  let b = () => {
+  let m = () => {
     var e;
     let t = null == (e = g.current) ? true : e.getScrollerState();
     null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 1500 && p()
   };
-  return t ? 0 === n.length ? (0, r.jsx)(u.v, {}) : (0, r.jsx)(o.bG, {
-    navigator: m,
-    children: (0, r.jsx)(o.SJ, {
+  return t ? 0 === n.length ? (0, r.jsx)(u.v, {}) : (0, r.jsx)(a.bG, {
+    navigator: b,
+    children: (0, r.jsx)(a.SJ, {
       children: e => {
         var t, i, {
             ref: l
           } = e,
-          o = function(e, t) {
+          a = function(e, t) {
             if (null == e) return {};
             var n, r, i = function(e, t) {
               if (null == e) return {};
@@ -57,7 +57,7 @@ function h(e) {
             }
             return i
           }(e, ["ref"]);
-        return (0, r.jsxs)(a.Den, (t = function(e) {
+        return (0, r.jsxs)(o.Den, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -80,11 +80,11 @@ function h(e) {
             var t;
             g.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
-        }, o), i = i = {
-          onScroll: b,
+        }, a), i = i = {
+          onScroll: m,
           children: [(0, r.jsx)(d.U, {
             items: n
-          }), h ? (0, r.jsx)(a.$jN, {
+          }), h ? (0, r.jsx)(o.$jN, {
             className: f.spinner
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -99,7 +99,7 @@ function h(e) {
         }), t))
       }
     })
-  }) : (0, r.jsx)(a.$jN, {
+  }) : (0, r.jsx)(o.$jN, {
     className: f.loadingPlaceholder
   })
 }

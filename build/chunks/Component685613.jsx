@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk475595 = require("./475595.js"),
   Chunk455357 = require("./455357.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk593710 = require("./593710.js"),
+  Chunk479470 = require("./479470.js"),
   m = function(e) {
     return e[e.SMALL = 24] = "SMALL", e[e.MEDIUM = 32] = "MEDIUM", e
   }({}),
@@ -48,7 +48,7 @@ let E = function(e) {
     onLoadComplete: v
   } = e, S = (0, l.wj)(E) ? p.BRd.DARK : p.BRd.LIGHT, I = (0, u.Gd)(m.id, S), T = b && null != m.config.cosponsorMetadata && null != I;
   return (0, r.jsxs)("div", {
-    className: o()(_.partnerBranding, t),
+    className: a()(_.partnerBranding, t),
     children: [y && (0, r.jsx)(f.Fl, {
       id: "QuestPartnerBranding_gameTile",
       children: e => (0, r.jsx)("img", {
@@ -65,9 +65,9 @@ let E = function(e) {
       })
     }), (0, r.jsx)(f.Fl, {
       id: "QuestPartnerBranding_gameLogotype",
-      children: e => (0, r.jsx)(a.animated.img, {
+      children: e => (0, r.jsx)(o.animated.img, {
         ref: e,
-        className: o()(_.partnerBrandingLogotype, n, {
+        className: a()(_.partnerBrandingLogotype, n, {
           [_.partnerBrandingLogotypeWithCosponsor]: T
         }),
         style: O,
@@ -89,9 +89,9 @@ let E = function(e) {
         id: "QuestPartnerBranding_cosponsorLogotype",
         children: e => {
           var t, i;
-          return (0, r.jsx)(a.animated.img, {
+          return (0, r.jsx)(o.animated.img, {
             ref: e,
-            className: o()(_.partnerBrandingLogotype, _.partnerBrandingLogotypeWithCosponsor, n),
+            className: a()(_.partnerBrandingLogotype, _.partnerBrandingLogotypeWithCosponsor, n),
             style: O,
             alt: null != (i = null == (t = m.config.cosponsorMetadata) ? true : t.name) ? i : "",
             src: I.url,

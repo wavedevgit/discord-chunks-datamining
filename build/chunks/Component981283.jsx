@@ -53,8 +53,8 @@ class p extends Chunk20528.Z {
       userId: t,
       sessionId: n
     } = e;
-    if (t !== a.default.getId() || n !== a.default.getSessionId()) return;
-    let r = o.Z.getAllActiveStreams(),
+    if (t !== o.default.getId() || n !== o.default.getSessionId()) return;
+    let r = a.Z.getAllActiveStreams(),
       i = s.Z.getChannelId();
     r.forEach(e => {
       e.channelId !== i && (0, u.Z)(e, false)

@@ -10,7 +10,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk979590 = require("./979590.js"),
-  o = require.n(Chunk979590),
+  a = require.n(Chunk979590),
   Chunk663042 = require("./663042.js"),
   Chunk731965 = require("./731965.js"),
   Chunk442837 = require("./442837.js"),
@@ -110,7 +110,7 @@ function O(e, t) {
 function v(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     i = h(t => null == e ? true : t.palette[e]),
-    a = (0, l.e7)([c.Z], () => n && c.Z.desaturateUserColors ? c.Z.saturation : 1);
+    o = (0, l.e7)([c.Z], () => n && c.Z.desaturateUserColors ? c.Z.saturation : 1);
   r.useEffect(() => {
     null != e && null == i && b(e)
   }, [e, i]);
@@ -119,16 +119,16 @@ function v(e, t) {
       h: i,
       s,
       l
-    } = o()({
+    } = a()({
       r: t,
       g: n,
       b: r
     }).toHsl();
-    return o()({
+    return a()({
       h: i,
-      s: s * a,
+      s: s * o,
       l
     }).toHexString()
-  }), [i, a]);
+  }), [i, o]);
   return null != s ? s : [t, t]
 }

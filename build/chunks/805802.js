@@ -23,16 +23,16 @@ function u(e, t) {
   var n = [],
     r = [],
     i = [],
-    o = [],
-    a = (0, l.o)(e),
-    s = a.dtstart,
-    c = a.tzid;
+    a = [],
+    o = (0, l.o)(e),
+    s = o.dtstart,
+    c = o.tzid;
   return g(e, t.unfold).forEach(function(e) {
     if (e) {
-      var t, a = h(e),
-        s = a.name,
-        u = a.parms,
-        d = a.value;
+      var t, o = h(e),
+        s = o.name,
+        u = o.parms,
+        d = o.value;
       switch (s.toUpperCase()) {
         case "RRULE":
           if (u.length) throw Error("unsupported RRULE parm: ".concat(u.join(",")));
@@ -48,7 +48,7 @@ function u(e, t) {
           i.push((0, l.B)(d));
           break;
         case "EXDATE":
-          o = o.concat(b(d, u));
+          a = a.concat(b(d, u));
           break;
         case "DTSTART":
           break;
@@ -62,24 +62,24 @@ function u(e, t) {
     rrulevals: n,
     rdatevals: r,
     exrulevals: i,
-    exdatevals: o
+    exdatevals: a
   }
 }
 
 function d(e, t) {
   var n = u(e, t),
     r = n.rrulevals,
-    a = n.rdatevals,
+    o = n.rdatevals,
     s = n.exrulevals,
     l = n.exdatevals,
     c = n.dtstart,
     d = n.tzid,
     f = false === t.cache;
-  if (t.compatible && (t.forceset = true, t.unfold = true), t.forceset || r.length > 1 || a.length || s.length || l.length) {
-    var _ = new o.p(f);
+  if (t.compatible && (t.forceset = true, t.unfold = true), t.forceset || r.length > 1 || o.length || s.length || l.length) {
+    var _ = new a.p(f);
     return _.dtstart(c), _.tzid(d || true), r.forEach(function(e) {
       _.rrule(new i.Ci(p(e, c, d), f))
-    }), a.forEach(function(e) {
+    }), o.forEach(function(e) {
       _.rdate(e)
     }), s.forEach(function(e) {
       _.exrule(new i.Ci(p(e, c, d), f))
@@ -155,6 +155,6 @@ function E(e) {
 
 function b(e, t) {
   return E(t), e.split(",").map(function(e) {
-    return (0, a.gE)(e)
+    return (0, o.gE)(e)
   })
 }

@@ -8,11 +8,11 @@ function i(e) {
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,10 +27,10 @@ var Chunk656968 = require("./656968.js"),
   d = require("./751827.js").setDraftEditorSelection;
 module.exports = function(e) {
   function t() {
-    for (var t, n = arguments.length, r = Array(n), o = 0; o < n; o++) r[o] = arguments[o];
-    return a(i(t = e.call.apply(e, [this].concat(r)) || this), "leaf", true), t
+    for (var t, n = arguments.length, r = Array(n), a = 0; a < n; a++) r[a] = arguments[a];
+    return o(i(t = e.call.apply(e, [this].concat(r)) || this), "leaf", true), t
   }
-  o(t, e);
+  a(t, e);
   var n = t.prototype;
   return n._setSelection = function() {
     var e, t = this.props.selection;
@@ -38,14 +38,14 @@ module.exports = function(e) {
       var n = this.props,
         r = n.block,
         i = n.start,
-        o = n.text,
-        a = r.getKey(),
-        s = i + o.length;
-      if (t.hasEdgeWithin(a, i, s)) {
+        a = n.text,
+        o = r.getKey(),
+        s = i + a.length;
+      if (t.hasEdgeWithin(o, i, s)) {
         var l = this.leaf;
         l || c(false);
         var f = l.firstChild;
-        f || c(false), f.nodeType === Node.TEXT_NODE ? e = f : u(f) ? e = l : (e = f.firstChild) || c(false), d(t, e, a, i, s)
+        f || c(false), f.nodeType === Node.TEXT_NODE ? e = f : u(f) ? e = l : (e = f.firstChild) || c(false), d(t, e, o, i, s)
       }
     }
   }, n.shouldComponentUpdate = function(e) {
@@ -61,16 +61,16 @@ module.exports = function(e) {
       n = this.props.text;
     n.endsWith("\n") && this.props.isLast && (n += "\n");
     var i = this.props,
-      o = i.customStyleMap,
-      a = i.customStyleFn,
+      a = i.customStyleMap,
+      o = i.customStyleFn,
       c = i.offsetKey,
       u = i.styleSet,
       d = u.reduce(function(e, t) {
         var n = {},
-          i = o[t];
+          i = a[t];
         return true !== i && e.textDecoration !== i.textDecoration && (n.textDecoration = [e.textDecoration, i.textDecoration].join(" ").trim()), r(e, i, n)
       }, {});
-    return a && (d = r(d, a(u, t))), l.createElement("span", {
+    return o && (d = r(d, o(u, t))), l.createElement("span", {
       "data-offset-key": c,
       ref: function(t) {
         return e.leaf = t

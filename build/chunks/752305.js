@@ -17,29 +17,29 @@ function r() {
 function i(e) {
   return {
     textValue: e,
-    richValue: a(e)
+    richValue: o(e)
   }
 }
 require.d(exports, {
   H2: () => r,
-  JM: () => a,
+  JM: () => o,
   VI: () => s,
   eK: () => i
 }), require("./35282.js"), require("./415506.js");
-let o = Object.freeze([Object.freeze({
+let a = Object.freeze([Object.freeze({
   type: "line",
   children: Object.freeze([Object.freeze({
     text: ""
   })])
 })]);
 
-function a(e) {
+function o(e) {
   return "" !== e ? e.split("\n").map(e => ({
     type: "line",
     children: [{
       text: e
     }]
-  })) : o
+  })) : a
 }
 
 function s(e) {

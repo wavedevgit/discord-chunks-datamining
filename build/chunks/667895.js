@@ -11,13 +11,13 @@ var Chunk261168 = require("./261168.js"),
     medium: "MMM d, y",
     short: "MM/dd/yyyy"
   },
-  o = {
+  a = {
     full: "h:mm:ss a zzzz",
     long: "h:mm:ss a z",
     medium: "h:mm:ss a",
     short: "h:mm a"
   },
-  a = {
+  o = {
     full: "{{date}} 'at' {{time}}",
     long: "{{date}} 'at' {{time}}",
     medium: "{{date}}, {{time}}",
@@ -29,11 +29,11 @@ let s = {
     defaultWidth: "full"
   }),
   time: (0, Chunk261168.Z)({
-    formats: o,
+    formats: a,
     defaultWidth: "full"
   }),
   dateTime: (0, Chunk261168.Z)({
-    formats: a,
+    formats: o,
     defaultWidth: "full"
   })
 }

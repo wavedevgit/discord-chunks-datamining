@@ -82,8 +82,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -91,8 +91,8 @@ function T(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = {
@@ -402,29 +402,29 @@ function q(e) {
 
 function Q(e) {
   var t, n, r, i;
-  let o = null != e ? e : {};
-  if (null != o.location) {
+  let a = null != e ? e : {};
+  if (null != a.location) {
     let {
       location: e
-    } = o;
-    o = v({}, T(o, ["location"]), H(e))
+    } = a;
+    a = v({}, T(a, ["location"]), H(e))
   }
-  if (null != o.source) {
+  if (null != a.source) {
     let {
       source: e
-    } = o;
-    o = v({}, T(o, ["source"]), Y(e))
+    } = a;
+    a = v({}, T(a, ["source"]), Y(e))
   }
-  o.client_performance_cpu = m.Z.getCurrentCPUUsagePercent(), o.client_performance_memory = m.Z.getCurrentMemoryUsageKB(), o.cpu_core_count = m.Z.getCPUCoreCount(), o.accessibility_features = W(), o.rendered_locale = y.intl.currentLocale, o.uptime_app = Math.floor((performance.now() - G) / R);
-  let a = m.Z.getProcessUptime();
-  null != a && (o.uptime_process_renderer = Math.floor(a));
+  a.client_performance_cpu = m.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = m.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = m.Z.getCPUCoreCount(), a.accessibility_features = W(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - G) / R);
+  let o = m.Z.getProcessUptime();
+  null != o && (a.uptime_process_renderer = Math.floor(o));
   let {
     utmSource: s,
     utmMedium: l,
     utmCampaign: c,
     utmContent: u
   } = P;
-  return o.utm_source = null != (t = o.utm_source) ? t : s, o.utm_medium = null != (n = o.utm_medium) ? n : l, o.utm_campaign = null != (r = o.utm_campaign) ? r : c, o.utm_content = null != (i = o.utm_content) ? i : u, o.launch_signature = Z, F.forEach(e => e(o)), o
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = Z, F.forEach(e => e(a)), a
 }
 
 function X(e, t) {
@@ -456,7 +456,7 @@ function ei(e, t) {
   return !!J && (null != t && (Array.isArray($[e]) ? $[e].push(t) : $[e] = [t]), true)
 }
 
-function eo(e, t) {
+function ea(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     r = String(e);
   if (f.R.includes(r) || h.Z.addBreadcrumb({
@@ -469,7 +469,7 @@ function eo(e, t) {
     fingerprint: n.fingerprint
   })
 }
-let ea = (0, Chunk990547.trackMaker)({
+let eo = (0, Chunk990547.trackMaker)({
   analyticEventConfigs: V,
   dispatcher: Chunk570140.Z,
   TRACK_ACTION_NAME: "TRACK"
@@ -485,7 +485,7 @@ function el(e, t) {
   }, t));
   (0, u.dT)(e, v({
     type: "action"
-  }, t)), X(e, n), ea(e, n)
+  }, t)), X(e, n), eo(e, n)
 }
 
 function ec() {
@@ -495,5 +495,5 @@ let eu = I(v({}, Chunk990547), {
   getCampaignParams: Chunk990547.getCampaignParams,
   setSystemAccessibilityFeatures: K,
   expandEventProperties: Q,
-  track: eo
+  track: ea
 })

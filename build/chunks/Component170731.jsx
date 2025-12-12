@@ -1,4 +1,4 @@
-/** Chunk was on 12693 **/
+/** Chunk was on 3472 **/
 /** chunk id: 170731, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk454399 = require("./454399.jsx"),
   Chunk28664 = require("./28664.jsx"),
@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk694781 = require("./694781.js");
+  Chunk968394 = require("./968394.js");
 let R = {
   FULL_WISHLIST: {
     title: Chunk388032.intl.string(Chunk388032.t["7lZ31J"]),
@@ -73,7 +73,7 @@ function M(i) {
     themeClass: s
   } = i;
   return (0, n.jsx)("div", {
-    className: l()(P.wishlistBannerHeader, s),
+    className: a()(P.wishlistBannerHeader, s),
     children: (0, n.jsxs)("div", {
       className: P.wishlistBannerTitleContainer,
       children: [(0, n.jsx)(d.Heading, {
@@ -92,7 +92,7 @@ function A() {
     children: [(0, Chunk54381.jsx)(Chunk481060.nn4, {
       children: Chunk388032.intl.string(Chunk388032.t.pfChQr)
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk694781.wishlistBannerGrid,
+      className: Chunk968394.wishlistBannerGrid,
       children: Array.from({
         length: Chunk602733.zL
       }, (i, e) => (0, n.jsx)(S.Z, {
@@ -111,13 +111,13 @@ function H(i) {
   } = i;
   return null == e ? null : (0, n.jsx)("li", {
     className: P.wishlistBannerListItem,
-    children: (0, n.jsx)(_.BO, {
+    children: (0, n.jsx)(b.BO, {
       item: e.item,
       remainingCount: t,
       onClick: r,
       cardSize: w.U.SMALL,
       renderItemPreview: i => {
-        if ((0, O.Q)(e.item)) {
+        if ((0, _.Q)(e.item)) {
           if (null != e.item.bundleItems && e.item.bundleItems.length > 0) {
             let t = {
               items: e.item.bundleItems
@@ -151,13 +151,13 @@ function G(i) {
     hasOverflow: t,
     overflowItem: s,
     overflowCount: r,
-    showIcons: l,
-    giftRecipient: a,
+    showIcons: a,
+    giftRecipient: l,
     defaultWishlistId: d,
     onOpenWishlist: u,
     onWishlistItemClick: m,
     tooltipConfigs: h,
-    analyticsLocations: g
+    analyticsLocations: f
   } = i;
   return (0, n.jsxs)("ul", {
     className: P.wishlistBannerGrid,
@@ -173,35 +173,35 @@ function G(i) {
           let {
             item: r,
             source: u
-          } = i, p = h[e], f = (0, n.jsx)(x.Z, {
+          } = i, g = h[e], p = (0, n.jsx)(x.Z, {
             item: r,
-            profileOwner: a,
+            profileOwner: l,
             wishlistId: d,
             isOwner: false,
             cardSize: w.U.SMALL,
             showOverlayButton: false,
             giftingOrigin: y.Wt.DM_CHANNEL_WISHLIST,
             source: u,
-            showIcons: l,
+            showIcons: a,
             onWishlistItemClick: m,
-            analyticsLocations: g
+            analyticsLocations: f
           });
-          return p.shouldShow ? null != p.title && null == p.body && null == p.renderIcon ? (0, n.jsx)(c.u, {
-            text: p.title,
+          return g.shouldShow ? null != g.title && null == g.body && null == g.renderIcon ? (0, n.jsx)(c.u, {
+            text: g.title,
             position: "top",
             asContainer: true,
             delay: L.rq,
-            children: f
+            children: p
           }) : (0, n.jsx)(o.i, {
-            title: p.title,
-            body: null != (s = p.body) ? s : "",
-            asset: null == (t = p.renderIcon) ? true : t.call(p, r),
+            title: g.title,
+            body: null != (s = g.body) ? s : "",
+            asset: null == (t = g.renderIcon) ? true : t.call(g, r),
             assetSize: L.EU,
             position: "top",
             asContainer: true,
             delay: L.rq,
-            children: f
-          }) : f
+            children: p
+          }) : p
         })({
           item: t,
           source: s
@@ -210,7 +210,7 @@ function G(i) {
     }), t && (0, n.jsx)(H, {
       lastItem: s,
       remainingCount: r,
-      giftRecipient: a,
+      giftRecipient: l,
       onOpenWishlist: u
     })]
   })
@@ -221,10 +221,10 @@ let W = function(i) {
     onWishlistItemClick: t
   } = i, {
     analyticsLocations: r
-  } = (0, m.ZP)(u.Z.WISHLIST_BANNER), o = (0, g.ZP)(null == e ? true : e.id), {
+  } = (0, m.ZP)(u.Z.WISHLIST_BANNER), o = (0, f.ZP)(null == e ? true : e.id), {
     displayItems: c,
     hasMoreItems: h,
-    totalWishlistItemCount: _,
+    totalWishlistItemCount: b,
     wishlistItemCountToBeDisplayed: j,
     fetchState: x,
     defaultWishlistId: w
@@ -233,17 +233,17 @@ let W = function(i) {
     numItems: L.zL,
     location: "Wishlist Banner",
     source: L.bd.WISHLIST_BANNER
-  }), S = s.useMemo(() => "loading" === x.status, [x.status]), O = T.ZP.getName(e), {
+  }), S = s.useMemo(() => "loading" === x.status, [x.status]), _ = T.ZP.getName(e), {
     theme: y,
     primaryColor: E,
     secondaryColor: H
-  } = (0, p.Z)({
+  } = (0, g.Z)({
     user: e,
     displayProfile: o
   }), {
     profileThemeStyle: W,
     profileThemeClassName: Z
-  } = (0, f.Z)({
+  } = (0, p.Z)({
     theme: y,
     themeType: null,
     primaryColor: E,
@@ -258,11 +258,11 @@ let W = function(i) {
       item: e,
       source: t
     } = i;
-    return t === L.lr.POPULAR && (0, b.F)(e)
+    return t === L.lr.POPULAR && (0, O.F)(e)
   }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [j, c])], D = null == o ? true : o.getBannerURL({
     canAnimate: false,
     size: 713
-  }), U = s.useMemo(() => h ? c.slice(0, L.zL - 1) : c, [c, h]), Y = (0, N.g)(U, e), X = h ? c[L.zL - 1] : null, K = _ - L.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
+  }), U = s.useMemo(() => h ? c.slice(0, L.zL - 1) : c, [c, h]), Y = (0, N.g)(U, e), X = h ? c[L.zL - 1] : null, K = b - L.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
     if (i && !S && c.length > 0) {
       let i = c.map(i => {
         let {
@@ -282,10 +282,10 @@ let W = function(i) {
         })))
       }), Q(true)
     }
-  }, [S, c, e.id, r]), V = (0, a.O)(J, true, !S && !q);
+  }, [S, c, e.id, r]), V = (0, l.O)(J, true, !S && !q);
   return "error" === x.status ? null : (0, n.jsxs)("div", {
     ref: V,
-    className: l()(P.wishlistBanner, Z),
+    className: a()(P.wishlistBanner, Z),
     style: W,
     children: [null != D && (0, n.jsx)("div", {
       className: P.backgroundImage,
@@ -297,7 +297,7 @@ let W = function(i) {
       children: i => (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(M, {
           title: F.title,
-          subtitle: F.getSubtitle(O),
+          subtitle: F.getSubtitle(_),
           themeClass: i
         }), (0, n.jsx)("div", {
           className: i,

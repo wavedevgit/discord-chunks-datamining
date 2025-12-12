@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk904245 = require("./904245.js"),
   Chunk375954 = require("./375954.js"),
@@ -18,21 +18,21 @@ let d = Chunk473749.createContext(true);
 function f(e) {
   var t;
   let n = null != (t = i.useContext(d)) ? t : e;
-  return a()(null != n, "Using PollReferenceMessageContext without a provider (or a fallback)"), n
+  return o()(null != n, "Using PollReferenceMessageContext without a provider (or a fallback)"), n
 }
 
 function p(e) {
   let {
     message: t,
     children: n
-  } = e, o = (0, s.e7)([c.Z], () => c.Z.getMessage(t.channel_id, t.id), [t.channel_id, t.id]), a = null != o;
+  } = e, a = (0, s.e7)([c.Z], () => c.Z.getMessage(t.channel_id, t.id), [t.channel_id, t.id]), o = null != a;
   return i.useEffect(() => {
-    a || l.Z.focusMessage({
+    o || l.Z.focusMessage({
       channelId: t.channel_id,
       messageId: t.id
     })
-  }, [a, t.channel_id, t.id]), (0, r.jsx)(d.Provider, {
-    value: null != o ? o : t,
+  }, [o, t.channel_id, t.id]), (0, r.jsx)(d.Provider, {
+    value: null != a ? a : t,
     children: n
   })
 }

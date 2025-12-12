@@ -24,5 +24,5 @@ function u(e, t) {
   let {
     locale: n
   } = (0, r.j)(), i = c(e, t);
-  return (0, a.useMemo)(() => new(0, o.E)(n, i), [n, i])
+  return (0, o.useMemo)(() => new(0, a.E)(n, i), [n, i])
 }

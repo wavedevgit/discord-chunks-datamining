@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 685201, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,8 +11,8 @@ var Chunk325767 = require("./325767.js");
 function l(e) {
   var t, n, {
       width: l = 24,
-      height: s = 24,
-      color: a = "currentColor",
+      height: a = 24,
+      color: s = "currentColor",
       foreground: o
     } = e,
     c = function(e, t) {
@@ -49,11 +49,11 @@ function l(e) {
     return e
   }({}, (0, i.Z)(c)), n = n = {
     width: l,
-    height: s,
+    height: a,
     viewBox: "0 0 24 24",
     children: (0, r.jsx)("path", {
       className: o,
-      fill: a,
+      fill: s,
       d: "M13.5605 11L11.2646 8.706L12.6842 7.294L17.4023 12.009L12.6822 16.708L11.2656 15.292L13.5685 13H2C2.50429 18.045 6.7842 22 11.9744 22C17.5025 22 22 17.513 22 12C22 6.487 17.5025 2 11.9744 2C6.7842 2 2.50429 5.954 2 11H13.5605Z"
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

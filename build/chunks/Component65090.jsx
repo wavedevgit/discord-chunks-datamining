@@ -43,8 +43,8 @@ let E = {
   stores: [Chunk271383.ZP],
   matches: (e, t, n, r, i) => i.mentions.user !== u.h3.DENY || i.mentions.role !== u.Fw.DENY || i.mentions.global !== u.VV.DENY,
   queryResults(e, t, n, r, i) {
-    let o = r.mentions.global === u.VV.ALLOW_EVERYONE || r.mentions.global === u.VV.ALLOW_EVERYONE_OR_HERE,
-      a = r.mentions.global === u.VV.ALLOW_EVERYONE_OR_HERE,
+    let a = r.mentions.global === u.VV.ALLOW_EVERYONE || r.mentions.global === u.VV.ALLOW_EVERYONE_OR_HERE,
+      o = r.mentions.global === u.VV.ALLOW_EVERYONE_OR_HERE,
       l = r.mentions.user !== u.h3.DENY,
       c = r.mentions.role !== u.Fw.DENY,
       d = r.mentions.user === u.h3.ALLOW_GUILD,
@@ -53,8 +53,8 @@ let E = {
       results: s.ZP.queryMentionResults({
         query: n,
         channel: e,
-        canMentionEveryone: o,
-        canMentionHere: a,
+        canMentionEveryone: a,
+        canMentionHere: o,
         canMentionUsers: l,
         canMentionRoles: c,
         canMentionOtherGlobals: r.mentions.otherGlobals,
@@ -67,7 +67,7 @@ let E = {
   renderResults(e) {
     let t, n, {
         results: {
-          users: a,
+          users: o,
           globals: s,
           roles: l
         },
@@ -78,7 +78,7 @@ let E = {
         onHover: g,
         onClick: E
       } = e,
-      b = a.map((e, t) => (0, r.jsx)(o.ZP.User, {
+      b = o.map((e, t) => (0, r.jsx)(a.ZP.User, {
         guildId: _.guild_id,
         onClick: E,
         onHover: g,
@@ -89,21 +89,21 @@ let E = {
         status: e.status,
         hidePersonalInformation: h.hidePersonalInformation
       }, e.user.id)),
-      y = s.map((e, t) => (0, r.jsx)(o.ZP.Generic, {
+      y = s.map((e, t) => (0, r.jsx)(a.ZP.Generic, {
         onClick: E,
         onHover: g,
-        selected: p === t + a.length,
-        index: a.length + t,
+        selected: p === t + o.length,
+        index: o.length + t,
         text: e.text,
         description: h.hideMentionDescription ? null : e.description,
         "aria-label": e.text,
         badge: "@game" === e.text || "@time" === e.text ? "new" : true
       }, e.text)),
-      O = l.map((e, t) => (0, r.jsx)(o.ZP.Role, {
+      O = l.map((e, t) => (0, r.jsx)(a.ZP.Role, {
         onClick: E,
         onHover: g,
-        selected: p === t + a.length + s.length,
-        index: a.length + s.length + t,
+        selected: p === t + o.length + s.length,
+        index: o.length + s.length + t,
         role: e,
         hideDescription: h.hideMentionDescription,
         guildId: _.guild_id
@@ -114,7 +114,7 @@ let E = {
         titleWithoutQuery: n,
         query: m,
         getQuery: e => "".concat(d.ME).concat(e)
-      }), b, a.length > 0 && s.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, y, a.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(o.ZP.Divider, {}) : null, O]
+      }), b, o.length > 0 && s.length > 0 ? (0, r.jsx)(a.ZP.Divider, {}) : null, y, o.length > 0 && l.length > 0 || s.length > 0 && l.length > 0 ? (0, r.jsx)(a.ZP.Divider, {}) : null, O]
     }, "mentions")
   },
   onSelect(e) {
@@ -125,10 +125,10 @@ let E = {
         roles: r
       },
       index: i,
-      options: o,
-      channel: a
+      options: a,
+      channel: o
     } = e, s = t[i], l = n[i - t.length], c = r[i - t.length - n.length], d = u.z2.MENTION;
-    return null != s ? o.insertText(p(s.user, a, o.hidePersonalInformation), _(s.user)) : null != l ? null != l.inlineAutocompleteType ? (o.insertAutocompleteInput(l.inlineAutocompleteType), d = "timestampMentionInput" === l.inlineAutocompleteType ? u.z2.TIMESTAMP : u.z2.GAME_MENTION) : o.insertText(m(l)) : null != c && o.insertText(h(c), g(c)), {
+    return null != s ? a.insertText(p(s.user, o, a.hidePersonalInformation), _(s.user)) : null != l ? null != l.inlineAutocompleteType ? (a.insertAutocompleteInput(l.inlineAutocompleteType), d = "timestampMentionInput" === l.inlineAutocompleteType ? u.z2.TIMESTAMP : u.z2.GAME_MENTION) : a.insertText(m(l)) : null != c && a.insertText(h(c), g(c)), {
       type: d
     }
   }

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk339453 = require("./339453.js");
+  Chunk306412 = require("./306412.js");
 let u = Chunk473749.memo(function(e) {
   let {
     emptyText: t,
@@ -18,7 +18,7 @@ let u = Chunk473749.memo(function(e) {
     absolute: i = false
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(c.emptyWidgetContainer, i && c.absolute),
+    className: o()(c.emptyWidgetContainer, i && c.absolute),
     children: (0, r.jsx)(s.u, {
       text: t,
       children: (0, r.jsx)("div", {

@@ -29,7 +29,7 @@ var Chunk23893 = require("./23893.js"),
 let S = (0, Chunk473749.createContext)(null),
   I = (0, Chunk473749.createContext)(null),
   T = (0, Chunk473749.forwardRef)(function(e, t) {
-    return [e, t] = (0, o.pE)(e, t, S), v.createElement(s.a$.Provider, {
+    return [e, t] = (0, a.pE)(e, t, S), v.createElement(s.a$.Provider, {
       value: null
     }, v.createElement(h.yF, {
       content: e.children
@@ -51,12 +51,12 @@ function C({
       id: c,
       ...u
     } = e;
-  [u, i] = (0, o.pE)(u, i, l.lU);
+  [u, i] = (0, a.pE)(u, i, l.lU);
   let {
     filter: p,
     shouldUseVirtualFocus: _,
     ...m
-  } = u, [h, g] = (0, o.xc)(!e["aria-label"] && !e["aria-labelledby"]), b = (0, O.n)({
+  } = u, [h, g] = (0, a.xc)(!e["aria-label"] && !e["aria-labelledby"]), b = (0, O.n)({
     ...m,
     children: true,
     collection: n
@@ -79,9 +79,9 @@ function C({
     slot: e.slot || true,
     className: null != (r = e.className) ? r : "react-aria-TagGroup",
     style: e.style
-  }, v.createElement(o.zt, {
+  }, v.createElement(a.zt, {
     values: [
-      [a.n, {
+      [o.n, {
         ...A,
         elementType: "span",
         ref: h
@@ -115,7 +115,7 @@ function N({
     {
       CollectionRoot: r
     } = (0, v.useContext)(i.Qk),
-    [a, l] = (0, o.pE)({}, t, I),
+    [o, l] = (0, a.pE)({}, t, I),
     {
       focusProps: c,
       isFocused: d,
@@ -127,7 +127,7 @@ function N({
       isFocusVisible: f,
       state: n
     },
-    m = (0, o.aX)({
+    m = (0, a.aX)({
       className: e.className,
       style: e.style,
       defaultClassName: "react-aria-TagList",
@@ -138,7 +138,7 @@ function N({
       global: true
     });
   return v.createElement("div", {
-    ...(0, b.d)(g, m, a, c),
+    ...(0, b.d)(g, m, o, c),
     ref: l,
     "data-empty": 0 === n.collection.size || true,
     "data-focused": d || true,
@@ -149,7 +149,7 @@ function N({
   })))
 }
 let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
-  let a = (0, v.useContext)(s.a$),
+  let o = (0, v.useContext)(s.a$),
     l = (0, y.B)(t),
     {
       focusProps: u,
@@ -164,7 +164,7 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
       ...O
     } = (0, _.E)({
       item: n
-    }, a, l),
+    }, o, l),
     {
       hoverProps: S,
       isHovered: I
@@ -174,7 +174,7 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
       onHoverChange: n.props.onHoverChange,
       onHoverEnd: n.props.onHoverEnd
     }),
-    T = (0, o.aX)({
+    T = (0, a.aX)({
       ...e,
       id: true,
       children: n.rendered,
@@ -183,8 +183,8 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
         ...O,
         isFocusVisible: d,
         isHovered: I,
-        selectionMode: a.selectionManager.selectionMode,
-        selectionBehavior: a.selectionManager.selectionBehavior
+        selectionMode: o.selectionManager.selectionMode,
+        selectionBehavior: o.selectionManager.selectionBehavior
       }
     });
   (0, v.useEffect)(() => {
@@ -203,13 +203,13 @@ let P = (0, Chunk406581.G5)(Chunk557635.s$, (e, t, n) => {
     "data-focus-visible": d || true,
     "data-pressed": O.isPressed || true,
     "data-allows-removing": O.allowsRemoving || true,
-    "data-selection-mode": "none" === a.selectionManager.selectionMode ? true : a.selectionManager.selectionMode
+    "data-selection-mode": "none" === o.selectionManager.selectionMode ? true : o.selectionManager.selectionMode
   }, v.createElement("div", {
     ...h,
     style: {
       display: "contents"
     }
-  }, v.createElement(o.zt, {
+  }, v.createElement(a.zt, {
     values: [
       [r.b, {
         slots: {

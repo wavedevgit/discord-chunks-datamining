@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk913527 = require("./913527.js"),
@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk74551 = require("./74551.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk125919 = require("./125919.js");
+  Chunk581201 = require("./581201.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,8 +83,8 @@ function F(e, t) {
   if (null == e) return {};
   var n, r, i = B(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -92,8 +92,8 @@ function F(e, t) {
 function B(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let V = {
@@ -142,8 +142,8 @@ function W(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: o,
-    popoutPosition: a,
+    children: a,
+    popoutPosition: o,
     popoutAlign: s
   } = e, [l, c] = i.useState(false), u = i.useRef(null), d = i.useCallback(() => {
     c(false), l && (null == n || n())
@@ -161,7 +161,7 @@ function W(e) {
   return (0, r.jsx)(_.yRy, {
     targetElementRef: u,
     animation: _.yRy.Animation.NONE,
-    position: a,
+    position: o,
     align: s,
     autoInvert: false,
     shouldShow: l,
@@ -172,7 +172,7 @@ function W(e) {
       let {
         isShown: n
       } = t;
-      return o(f, n, e, m, u)
+      return a(f, n, e, m, u)
     }
   })
 }
@@ -181,26 +181,26 @@ function K(e) {
   let {
     savedMessageKeys: t,
     closePopout: n
-  } = e, o = i.useRef(null), a = (0, h.Z)("for-later", o), [s, l] = i.useState(new Date);
+  } = e, a = i.useRef(null), o = (0, h.Z)("for-later", a), [s, l] = i.useState(new Date);
   return i.useEffect(() => {
     let e = setInterval(() => l(new Date), T.Z.Millis.MINUTE);
     return () => {
       clearInterval(e)
     }
   }, []), (0, r.jsx)(f.bG, {
-    navigator: a,
+    navigator: o,
     children: (0, r.jsx)(f.SJ, {
       children: e => {
         var {
           ref: i
-        } = e, a = F(e, ["ref"]);
+        } = e, o = F(e, ["ref"]);
         return (0, r.jsx)(_.h21, Z(U({
           ref: e => {
             var t;
-            o.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+            a.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           },
           className: M.messagesScroller
-        }, a), {
+        }, o), {
           children: t.map(e => (0, r.jsx)(q, {
             savedMessageKey: e,
             closePopout: n,
@@ -216,7 +216,7 @@ function z(e) {
   let {
     savedMessage: t,
     closePopout: n,
-    throttledNow: o
+    throttledNow: a
   } = e, s = (0, A.gr)(t), l = i.useCallback(async e => {
     var r;
     await (0, A.fC)(t, s), e.shiftKey || n(), S.default.track(L.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
@@ -235,7 +235,7 @@ function z(e) {
       "aria-label": j.intl.string(j.t["+TSRGD"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(x.Z, {
       reminder: t,
-      throttledNow: o
+      throttledNow: a
     }) : null, (0, r.jsx)(w.Z, {
       channel: s
     }), (0, r.jsx)(E.Z, {
@@ -254,7 +254,7 @@ function z(e) {
       })
     })]
   }) : (0, r.jsxs)("div", {
-    className: a()(M.messageContainer, M.deletedMessage),
+    className: o()(M.messageContainer, M.deletedMessage),
     children: [(0, r.jsx)("div", {
       className: M.deleteIcon,
       children: (0, r.jsx)(_.Mgn, {
@@ -282,9 +282,9 @@ function q(e) {
     savedMessageKey: t,
     closePopout: n,
     throttledNow: i
-  } = e, o = (0, p.e7)([N.Z], () => N.Z.getSavedMessage(t.channelId, t.messageId));
-  return null == o ? null : (0, r.jsx)(z, {
-    savedMessage: o,
+  } = e, a = (0, p.e7)([N.Z], () => N.Z.getSavedMessage(t.channelId, t.messageId));
+  return null == a ? null : (0, r.jsx)(z, {
+    savedMessage: a,
     closePopout: n,
     throttledNow: i
   })

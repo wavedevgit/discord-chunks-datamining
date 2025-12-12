@@ -21,17 +21,17 @@ function l(e) {
   let {
     theme: t,
     themeType: n,
-    primaryColor: o,
-    secondaryColor: a,
+    primaryColor: a,
+    secondaryColor: o,
     userId: l,
     children: c
   } = e, u = i.useMemo(() => ({
     theme: t,
     themeType: n,
-    primaryColor: o,
-    secondaryColor: a,
+    primaryColor: a,
+    secondaryColor: o,
     userId: l
-  }), [t, n, o, a, l]);
+  }), [t, n, a, o, l]);
   return (0, r.jsx)(s.Provider, {
     value: u,
     children: c

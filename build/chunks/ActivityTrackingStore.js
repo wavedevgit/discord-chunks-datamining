@@ -36,10 +36,10 @@ function P(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > I + C && (r = 0);
-  let i = (0, h.OT)(e.applicationId, b.Z),
+  let i = (0, h.OT)(e.applicationId, E.Z),
     l = O.Z.getVoiceChannelId(),
     a = m.default.getSessionId(),
-    c = E.Z.getMediaSessionId();
+    c = _.Z.getMediaSessionId();
   u.Z.updateActivity({
     applicationId: e.applicationId,
     distributor: e.isDiscordApplication ? v.GQo.DISCORD : e.distributor,

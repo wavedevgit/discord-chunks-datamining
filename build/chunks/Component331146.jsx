@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 331146, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  E: () => m
+  E: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,56 +13,56 @@ var Chunk120356 = require("./120356.js"),
   Chunk723047 = require("./723047.js"),
   Chunk570533 = require("./570533.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk562337 = require("./562337.js");
+  Chunk623918 = require("./623918.js");
 
 function g(e) {
   let {
     emoji: t,
     onRemoveEmoji: n,
     disabled: i = false
-  } = e, o = a.ZP.getEmojiURL({
+  } = e, o = s.ZP.getEmojiURL({
     id: t.id,
     animated: t.animated,
     size: 32
   });
   return (0, r.jsxs)("div", {
-    className: l()(d.emojiRow, {
-      [d.disabled]: i
+    className: l()(u.emojiRow, {
+      [u.disabled]: i
     }),
     children: [(0, r.jsx)("img", {
-      className: d.emojiImage,
+      className: u.emojiImage,
       src: o,
       alt: t.name
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       color: "text-strong",
       variant: "text-md/medium",
-      className: d.emojiAlias,
+      className: u.emojiAlias,
       children: t.name
     }), (0, r.jsx)("div", {
-      className: d.deleteButton,
-      children: (0, r.jsx)(s.hU, {
+      className: u.deleteButton,
+      children: (0, r.jsx)(a.hU, {
         variant: "secondary",
-        icon: s.XHJ,
+        icon: a.XHJ,
         onClick: () => n(t),
-        "aria-label": u.intl.string(u.t.dVS92c),
+        "aria-label": d.intl.string(d.t.dVS92c),
         disabled: i
       })
     })]
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     tierEmojiIds: t,
     guildId: n,
     onRemoveEmoji: i
-  } = e, l = (0, c.Z)(n), s = null != t ? l.filter(e => t.has(e.id)) : [], a = (0, o.mY)();
+  } = e, l = (0, c.Z)(n), a = null != t ? l.filter(e => t.has(e.id)) : [], s = (0, o.mY)();
   return (0, r.jsx)("div", {
-    className: d.container,
-    children: s.map(e => (0, r.jsx)(g, {
+    className: u.container,
+    children: a.map(e => (0, r.jsx)(g, {
       emoji: e,
       onRemoveEmoji: () => i(e),
-      disabled: a
+      disabled: s
     }, e.id))
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 }), require("./35282.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk930441 = require("./930441.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk197571 = require("./197571.js");
+  Chunk478411 = require("./478411.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,7 +48,7 @@ class v extends(r = Chunk473749.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new g.Z(n);
+      } = e, r = new f.Z(n);
       this.setState({
         success: true,
         busy: false,
@@ -69,28 +69,28 @@ class v extends(r = Chunk473749.PureComponent) {
     let {
       defaultRoute: n,
       transitionTo: r
-    } = this.props, s = _.intl.formatToPlainString(_.t.YDAohB, {
+    } = this.props, s = x.intl.formatToPlainString(x.t.YDAohB, {
       category: t
     });
     return (0, i.jsxs)(d.ZP, {
       children: [(0, i.jsx)(d.Dx, {
-        className: x.marginBottom8,
-        children: _.intl.string(_.t.f6rdLg)
+        className: _.marginBottom8,
+        children: x.intl.string(x.t.f6rdLg)
       }), (0, i.jsx)(d.DK, {
         children: s
       }), (0, i.jsx)("div", {
-        className: x.marginTop20,
+        className: _.marginTop20,
         children: (0, i.jsx)(c.Button, {
-          text: _.intl.string(_.t.fIv16B),
+          text: x.intl.string(x.t.fIv16B),
           fullWidth: true,
           onClick: () => r(n)
         })
       }), (0, i.jsx)("div", {
-        className: x.marginTop8,
+        className: _.marginTop8,
         children: (0, i.jsx)(c.Avr, {
-          text: _.intl.string(_.t.YYTirT),
+          text: x.intl.string(x.t.YYTirT),
           textVariant: "text-sm/normal",
-          onClick: () => r(p.Z5c.SETTINGS("notifications", f.vG))
+          onClick: () => r(m.Z5c.SETTINGS("notifications", p.vG))
         })
       })]
     })
@@ -111,14 +111,14 @@ class v extends(r = Chunk473749.PureComponent) {
       children: [(0, Chunk54381.jsx)(Chunk388905.qE, {
         src: null == require ? true : require.getAvatarURL(true, 100),
         size: Chunk481060.EFr.DEPRECATED_SIZE_100,
-        className: Chunk197571.marginBottom20
+        className: Chunk478411.marginBottom20
       }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t["6U6OMQ"])
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["yaDJ4/"])
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk197571.marginTop40,
+        className: Chunk478411.marginTop40,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
           fullWidth: true,
@@ -135,14 +135,14 @@ class v extends(r = Chunk473749.PureComponent) {
     return (0, Chunk54381.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk54381.jsx)(Chunk388905.Ee, {
         src: require("./105020.js"),
-        className: Chunk197571.marginBottom20
+        className: Chunk478411.marginBottom20
       }), (0, Chunk54381.jsx)(Chunk388905.Dx, {
-        className: Chunk197571.marginBottom8,
+        className: Chunk478411.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t["/dcuR5"])
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk197571.marginTop40,
+        className: Chunk478411.marginTop40,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           text: Chunk388032.intl.string(Chunk388032.t.fIv16B),
           fullWidth: true,
@@ -170,6 +170,6 @@ class v extends(r = Chunk473749.PureComponent) {
 E(v, "defaultProps", {
   transitionTo: e => n.g.location.assign(e)
 });
-let j = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
+let b = Chunk442837.ZP.connectStores([Chunk896797.Z], () => ({
   defaultRoute: Chunk896797.Z.defaultRoute
 }))(v)

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk809206 = require("./809206.js"),
   Chunk295474 = require("./295474.js"),
@@ -36,7 +36,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk436360 = require("./436360.js");
+  Chunk485344 = require("./485344.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ function G() {
   var e, t, n, i, j, k, G, Z, F;
   let B = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
-      return o()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
+      return a()(null != module, "DefaultCustomizationSections: user cannot be undefined"), module
     }),
     V = (0, Chunk442837.e7)([Chunk621853.Z], () => Chunk621853.Z.getUserProfile(B.id)),
     {
@@ -110,8 +110,8 @@ function G() {
     en = Chunk74538.ZP.canUsePremiumProfileCustomization(B),
     er = (0, Chunk150039.gd)(H, B.avatar),
     ei = (0, Chunk150039.f$)(W, null == V ? true : V.banner),
-    eo = (0, Chunk687158.ZP)(B.id),
-    ea = null == eo ? true : eo.getLegacyUsername(),
+    ea = (0, Chunk687158.ZP)(B.id),
+    eo = null == ea ? true : ea.getLegacyUsername(),
     es = (null != (i = null == (e = $.global_name) ? true : module.length) ? Chunk512722 : 0) > 0 ? $.global_name : null != (j = null == et ? true : et.nick) ? j : [],
     el = (null != (k = null == (t = $.bio) ? true : exports.length) ? k : 0) > 0 ? $.bio : null != (G = null == et ? true : et.bio) ? G : [],
     ec = (0, Chunk396402.w)(),
@@ -140,7 +140,7 @@ function G() {
       setPendingAccentColor: Chunk350327.CM
     }, "color");
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk436360.sectionsContainer,
+    className: Chunk485344.sectionsContainer,
     children: [(0, Chunk54381.jsx)(Chunk349177.Z, {
       placeholder: B.username,
       errors: es,
@@ -178,8 +178,8 @@ function G() {
       availablePrimaryGuilds: ec,
       pendingPrimaryGuildId: J,
       onChange: e => (0, s.s4)(e)
-    }), null != ea && (0, Chunk54381.jsx)(Chunk872736.Z, {
-      legacyUsername: ea,
+    }), null != eo && (0, Chunk54381.jsx)(Chunk872736.Z, {
+      legacyUsername: eo,
       pendingLegacyUsernameDisabled: X
     }, "legacy_username")]
   })

@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk990547 = require("./990547.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk984802 = require("./984802.js"),
-  Chunk163838 = require("./163838.js"),
-  Chunk325380 = require("./325380.js");
+  Chunk725419 = require("./725419.js"),
+  Chunk51766 = require("./51766.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function E(e) {
   var t;
   let {
     transitionState: n,
-    animationVariant: o = "default",
+    animationVariant: a = "default",
     returnRef: _,
     "aria-label": h,
     onClose: E,
@@ -72,7 +72,7 @@ function E(e) {
     dismissable: true
   }), [O, E]), S = (0, d.Ll)(), {
     theme: I
-  } = (0, u.TCT)(), T = (0, c.hvB)(n, o);
+  } = (0, u.TCT)(), T = (0, c.hvB)(n, a);
   return (0, r.jsx)(c.tCf.Provider, {
     value: v,
     children: (0, r.jsx)(u.VqE, g(m({
@@ -91,14 +91,14 @@ function E(e) {
             theme: S,
             children: e => (0, r.jsx)(s.animated.div, {
               "data-mana-component": "layer-modal",
-              className: a()(p.container, f.modal, e),
+              className: o()(p.container, f.modal, e),
               style: T,
               children: (0, r.jsx)("div", {
                 className: f.modalContent,
                 children: (0, r.jsx)(u.f6W, {
                   theme: I,
                   children: e => (0, r.jsx)("div", {
-                    className: a()(e, f.modalContentInner),
+                    className: o()(e, f.modalContentInner),
                     children: y
                   })
                 })

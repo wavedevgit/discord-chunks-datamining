@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk170245 = require("./170245.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk475823 = require("./475823.js");
+  Chunk626019 = require("./626019.js");
 
 function h(e) {
   let {
@@ -24,8 +24,8 @@ function h(e) {
     status: h,
     isFocused: m
   } = e, {
-    analyticsLocations: _
-  } = (0, a.ZP)(), b = e => {
+    analyticsLocations: b
+  } = (0, a.ZP)(), E = e => {
     null == e || e.stopPropagation(), l.Z.addRelationship({
       userId: t.id,
       context: {
@@ -34,7 +34,7 @@ function h(e) {
       type: true,
       fromFriendSuggestion: true
     })
-  }, E = e => {
+  }, _ = e => {
     null == e || e.stopPropagation(), s.Z.ignore(t.id)
   }, O = h === p.Skl.OFFLINE ? p.Skl.UNKNOWN : h;
   return (0, r.jsx)(u.Z, {
@@ -42,7 +42,7 @@ function h(e) {
     user: t,
     onClick: () => (0, o.openUserProfileModal)({
       userId: t.id,
-      sourceAnalyticsLocations: _
+      sourceAnalyticsLocations: b
     }),
     children: e => {
       let l = (0, r.jsxs)(r.Fragment, {
@@ -50,13 +50,13 @@ function h(e) {
           icon: i.dz2,
           actionType: c.Z.ActionTypes.ACCEPT,
           tooltip: f.intl.string(f.t.Zcibdf),
-          onClick: b,
+          onClick: E,
           shouldHighlight: e
         }), (0, r.jsx)(c.Z, {
           icon: i.Dio,
           actionType: c.Z.ActionTypes.DENY,
           tooltip: f.intl.string(f.t.xuio0C),
-          onClick: E,
+          onClick: _,
           shouldHighlight: e
         })]
       });

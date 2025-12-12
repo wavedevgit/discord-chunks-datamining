@@ -16,11 +16,11 @@ function u(e) {
   let {
     channelId: t
   } = e, n = (0, l.l6)(), u = (0, l.L5)(), d = i.useCallback(() => {
-    a.Z.showAgeVerificationGetStartedModal({
+    o.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.SYSTEM_DM_RETRY_BUTTON
     }), (0, s.Z7)(s.io.RETRY, t)
   }, [t]);
-  return (0, r.jsx)(o.Button, {
+  return (0, r.jsx)(a.Button, {
     variant: "primary",
     text: n ? c.intl.string(c.t.KPGVWl) : c.intl.string(c.t["/nicWo"]),
     onClick: d,

@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk729020 = require("./729020.js");
+  Chunk818547 = require("./818547.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,8 +53,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function f(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let _ = Chunk473749.forwardRef(function(e, t) {
@@ -76,10 +76,10 @@ let _ = Chunk473749.forwardRef(function(e, t) {
   } = e, _ = f(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
   let m = n <= 0,
     h = n >= i - 1,
-    g = p ? a.intl.format(a.t.MtpIwg, {
+    g = p ? o.intl.format(o.t.MtpIwg, {
       currentPage: n + 1,
       numPages: i
-    }) : a.intl.format(a.t.bKI77c, {
+    }) : o.intl.format(o.t.bKI77c, {
       currentPage: n + 1
     });
   return (0, r.jsxs)("div", d(c({
@@ -89,21 +89,21 @@ let _ = Chunk473749.forwardRef(function(e, t) {
       className: s.pageActions,
       children: (0, r.jsxs)("div", {
         className: s.buttons,
-        children: [(0, r.jsx)(o.hU, {
+        children: [(0, r.jsx)(a.hU, {
           variant: "icon-only",
-          icon: o.V7D,
+          icon: a.V7D,
           disabled: m,
           onClick: () => l(n - 1),
-          "aria-label": a.intl.string(a.t.vgfxaA)
-        }), (0, r.jsx)(o.Text, {
+          "aria-label": o.intl.string(o.t.vgfxaA)
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           children: g
-        }), (0, r.jsx)(o.hU, {
+        }), (0, r.jsx)(a.hU, {
           variant: "icon-only",
-          icon: o.Fbu,
+          icon: a.Fbu,
           disabled: h,
           onClick: () => l(n + 1),
-          "aria-label": a.intl.string(a.t.XiOHRX)
+          "aria-label": o.intl.string(o.t.XiOHRX)
         })]
       })
     })]

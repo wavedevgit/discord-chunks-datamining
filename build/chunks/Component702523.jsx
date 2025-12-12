@@ -52,7 +52,7 @@ function d(e, t) {
 
 function f(e, t, l, u, f) {
   let p = s.Z.getInstallationPath(e.id, t),
-    _ = null != e.eulaId && !a.Z.hasAcceptedEULA(e.eulaId);
+    _ = null != e.eulaId && !o.Z.hasAcceptedEULA(e.eulaId);
   null == p || _ ? (0, i.ZDy)(async () => {
     let {
       default: i
@@ -62,7 +62,7 @@ function f(e, t, l, u, f) {
       branchId: t,
       analyticsLocation: f
     }))
-  }) : (0, o.LO)({
+  }) : (0, a.LO)({
     application: e,
     branchId: t,
     buildId: l,

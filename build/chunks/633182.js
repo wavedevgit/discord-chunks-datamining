@@ -10,13 +10,13 @@ var Chunk592125 = require("./592125.js"),
   Chunk51144 = require("./51144.js"),
   Chunk484710 = require("./484710.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546484 = require("./546484.js");
+  Chunk792389 = require("./792389.js");
 
 function u(e, t, n) {
   var u;
   let d = i.default.getUser(t),
     f = r.Z.getChannel(n),
-    p = null != (u = o.ZP.getName(null == f ? true : f.guild_id, null == f ? true : f.id, d)) ? u : a.ZP.getGlobalName(d);
+    p = null != (u = a.ZP.getName(null == f ? true : f.guild_id, null == f ? true : f.id, d)) ? u : o.ZP.getGlobalName(d);
   switch (e) {
     case s.wQ.IGNORE_SUCCESS:
       return l.intl.formatToPlainString(l.t["+joqrP"], {

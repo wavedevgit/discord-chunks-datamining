@@ -8,9 +8,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk148806 = require("./148806.js"),
+  Chunk517319 = require("./517319.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk601582 = require("./601582.js");
+  Chunk603521 = require("./603521.js");
 let u = e => {
   let {
     currentUser: t,
@@ -24,33 +24,33 @@ let u = e => {
   }, []), {
     disconnectLinkRequest: O,
     isDisconnectLoading: m
-  } = (0, c.G)({
+  } = (0, i.G)({
     onSuccess: b,
     onError: y
   });
-  return (0, n.jsxs)(i.IX, {
+  return (0, n.jsxs)(c.IX, {
     transitionState: u,
     onClose: f,
-    children: [g && (0, n.jsx)(i.M14, {
+    children: [g && (0, n.jsx)(c.M14, {
       type: "critical",
       children: a.intl.string(s.default.krIDdy)
-    }), (0, n.jsxs)(i.fef, {
+    }), (0, n.jsxs)(c.fef, {
       children: [(0, n.jsx)(l.Z.Header, {
         currentUser: t,
         otherUser: r,
         header: a.intl.formatToPlainString(s.default["NMSTb/"], {
           isAdult: String(p)
         }),
-        icon: (0, n.jsx)(i.Dio, {
+        icon: (0, n.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",
           className: d.closeIcon
         })
-      }), (0, n.jsxs)(i.Kqy, {
+      }), (0, n.jsxs)(c.Kqy, {
         gap: 16,
         children: [(0, n.jsx)(l.Z.Notice, {
           notice: p ? a.intl.string(s.default.EvMGLT) : a.intl.string(s.default.f1SUeW)
-        }), (0, n.jsx)(i.Checkbox, {
+        }), (0, n.jsx)(c.Checkbox, {
           checked: h,
           onChange: e => {
             j(e), x(false)
@@ -58,7 +58,7 @@ let u = e => {
           label: p ? a.intl.string(s.default["/MYCee"]) : a.intl.string(s.default.VJaHUb)
         })]
       })]
-    }), (0, n.jsx)(i.Go$, {
+    }), (0, n.jsx)(c.Go$, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",

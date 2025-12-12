@@ -113,15 +113,15 @@ let u = (e, t, n) => c({
         h: 32,
         w: s.kC
       }, true);
-      let o = d(f, p);
-      (0, a.J)({
+      let a = d(f, p);
+      (0, o.J)({
         canvas: e,
-        badges: o,
+        badges: a,
         startPosition: s.Iq,
         maxWidth: s.kC
       })
     };
-    return await (0, o.f)({
+    return await (0, a.f)({
       assetsToLoad: g,
       drawImage: E,
       exportConfigs: {

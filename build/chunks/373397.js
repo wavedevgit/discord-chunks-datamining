@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk692547 = require("./692547.js");
 
 function i(e, t) {
-  var n, i, o, a, s;
-  return null != (s = null == (o = (a = r.Z.colors.BACKGROUND_SURFACE_HIGH).resolve) || null == (i = o.call(a, {
+  var n, i, a, o, s;
+  return null != (s = null == (a = (o = r.Z.colors.BACKGROUND_SURFACE_HIGH).resolve) || null == (i = a.call(o, {
     theme: e,
     saturation: t
   })) || null == (n = i.hex) ? true : n.call(i)) ? s : "#000"

@@ -54,7 +54,7 @@ function f(e) {
     cooldown: n,
     chance: r
   } = e;
-  d[t] = u(l({}, a.R[t]), {
+  d[t] = u(l({}, o.R[t]), {
     cooldown: n,
     chance: r
   })

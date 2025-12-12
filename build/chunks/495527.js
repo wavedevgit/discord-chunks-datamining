@@ -2,18 +2,18 @@
 /** chunk id: 495527, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk579806 = require("./579806.js");
 let i = new(require("./710845.js")).Z("IntentsBindings");
 
-function o() {
+function a() {
   var e;
   return null != (e = null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.features.supports("intents")) && module
 }
-let a = {
-  hasSearch: () => o(),
-  hasUserActivity: () => o(),
+let o = {
+  hasSearch: () => a(),
+  hasUserActivity: () => a(),
   clearSearchIndex() {
     try {
       null === Chunk579806.Z || true === Chunk579806.Z || Chunk579806.Z.ipc.invoke("DISCORD_SEARCH_CLEAR_INDEX")

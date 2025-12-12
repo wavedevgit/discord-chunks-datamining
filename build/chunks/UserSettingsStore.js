@@ -5,7 +5,7 @@ require.d(exports, {
   ZP: () => N
 });
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js");
@@ -193,7 +193,7 @@ class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
 }
 _(A, "displayName", "UnsyncedUserSettingsStore"), _(A, "persistKey", "UnsyncedUserSettingsStore"), _(A, "migrations", [() => {
   let e = Chunk433517.K.get("UserSettingsStore");
-  return Chunk433517.K.remove("UserSettingsStore"), o().pick(module, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations", "showPlayAgain")
+  return Chunk433517.K.remove("UserSettingsStore"), a().pick(module, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations", "showPlayAgain")
 }, e => {
   delete e.disableVisualRefresh
 }]);

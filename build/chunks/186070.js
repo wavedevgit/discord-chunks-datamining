@@ -2,19 +2,19 @@
 /** chunk id: 186070, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FI: () => a,
-  IL: () => o
+  FI: () => o,
+  IL: () => a
 });
 var Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let o = {
+let a = {
     binds: ["mod+return"],
     comboKeysBindGlobal: true,
     action() {
       if (Chunk585483.S.hasSubscribers(Chunk981631.CkL.CALL_ACCEPT)) return Chunk585483.S.dispatch(Chunk981631.CkL.CALL_ACCEPT), false
     }
   },
-  a = {
+  o = {
     binds: ["ctrl+'", "ctrl+shift+'"],
     comboKeysBindGlobal: true,
     action(e) {

@@ -2,12 +2,12 @@
 /** chunk id: 131734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk911969 = require("./911969.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e) {
+function a(e) {
   if (null == e) return null;
   let {
     linkedGames: t = []

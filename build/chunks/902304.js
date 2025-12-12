@@ -58,7 +58,7 @@ function R(e) {
 }
 class w extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), I(this, "rollbackCommandTimeout", new o.V7), I(this, "awaitRemoteTimeout", new o.V7), I(this, "actions", {
+    super(...e), I(this, "rollbackCommandTimeout", new a.V7), I(this, "awaitRemoteTimeout", new a.V7), I(this, "actions", {
       WAIT_FOR_REMOTE_SESSION: () => this.handleWaitForRemoteSession(),
       POST_CONNECTION_OPEN: () => this.handleSessionsChanged(),
       SESSIONS_REPLACE: () => this.handleSessionsChanged(),
@@ -82,11 +82,11 @@ class w extends Chunk147913.Z {
       if (!t || n !== v.Yn.DEFAULT) return;
       let r = d.Z.isSelfDeaf(),
         i = d.Z.isSelfMute(),
-        o = u.default.getId(),
-        a = E.default.getRemoteSessionId();
-      if (null == a) return;
-      let s = _.Z.getVoiceStateForSession(o, a);
-      null != s && (s.selfDeaf !== r || s.selfMute !== i) && ((0, h.Vv)(a, {
+        a = u.default.getId(),
+        o = E.default.getRemoteSessionId();
+      if (null == o) return;
+      let s = _.Z.getVoiceStateForSession(a, o);
+      null != s && (s.selfDeaf !== r || s.selfMute !== i) && ((0, h.Vv)(o, {
         selfDeaf: r,
         selfMute: i
       }), this.rollbackCommandTimeout.start(C, () => {
@@ -116,7 +116,7 @@ class w extends Chunk147913.Z {
       null != e && null == p.Z.getSessionById(e) && (0, h.s6)(), null == e && this.maybeConnect(Object.values(p.Z.getSessions()))
     }), I(this, "handleWaitForRemoteSession", () => {
       this.awaitRemoteTimeout.start(A, () => {
-        (0, h.s6)(), a.Z.show({
+        (0, h.s6)(), o.Z.show({
           title: S.intl.string(S.t.wGMxr3),
           body: S.intl.string(S.t.i5k8b5)
         })
@@ -130,10 +130,10 @@ class w extends Chunk147913.Z {
       } = e;
       if ("failed" !== r && "n/a" !== r || null == i) return;
       T.info("Console command Error result:", r, i);
-      let o = E.default.getAwaitingRemoteSessionInfo();
-      if ((null == o ? true : o.commandId) !== n) return;
-      let a = E.default.getDevice(o.type, null != (t = o.deviceId) ? t : ""),
-        s = (0, y.Z)(null != a ? a : {
+      let a = E.default.getAwaitingRemoteSessionInfo();
+      if ((null == a ? true : a.commandId) !== n) return;
+      let o = E.default.getDevice(a.type, null != (t = a.deviceId) ? t : ""),
+        s = (0, y.Z)(null != o ? o : {
           id: "id",
           platform: S.intl.string(S.t["UQMV/E"]),
           name: S.intl.string(S.t["UQMV/E"])
@@ -142,7 +142,7 @@ class w extends Chunk147913.Z {
         title: s.title,
         body: s.body,
         errorCodeMessage: s.errorCodeMessage,
-        reconnectPlatformType: s.isAccountLinkError ? o.type : true
+        reconnectPlatformType: s.isAccountLinkError ? a.type : true
       }), O.e8.has(i.code) && this.awaitRemoteTimeout.isStarted() ? this.awaitRemoteTimeout.start(N, () => (0, h.s6)(), true) : "failed" === r && (0, h.s6)()
     }), I(this, "handleRemoteSessionDisconnect", () => {
       this.awaitRemoteTimeout.stop()

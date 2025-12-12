@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   JH: () => s,
-  fN: () => a
+  fN: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     id: "2025-07_display_name_styles_viewer",
     kind: "user",
     label: "Display Name Styles Viewer",

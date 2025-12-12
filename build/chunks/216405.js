@@ -38,7 +38,7 @@ class T extends Chunk147913.Z {
   handleStats() {
     var e, t, n, r;
     if ((I += 1) % v != 0) return;
-    let a = Chunk199902.Z.getCurrentUserActiveStream();
+    let o = Chunk199902.Z.getCurrentUserActiveStream();
     if (null == Chunk147913) return;
     let m = Chunk959457.Z.getRTCConnection((0, Chunk569545.V9)(Chunk147913)),
       b = Chunk131951.Z.getGoLiveSource();

@@ -37,8 +37,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -46,15 +46,15 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = async e => {
   let {
     analyticsLocation: t = null
   } = e, c = d(e, ["analyticsLocation"]);
-  o.default.track(l.rMx.OPEN_MODAL, {
+  a.default.track(l.rMx.OPEN_MODAL, {
     type: "Emoji Studio",
     source: t
   }), await (0, i.ZDy)(async () => {
@@ -63,7 +63,7 @@ let p = async e => {
     } = await n.e("2262").then(n.bind(n, 546200));
     return t => (0, r.jsx)(e, u({}, t, c))
   }, {
-    modalKey: a.Hj,
+    modalKey: o.Hj,
     onCloseRequest: () => {
       (0, s.E)()
     }

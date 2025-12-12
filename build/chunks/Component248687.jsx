@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
   Chunk286379 = require("./286379.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk406128 = require("./406128.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk365861 = require("./365861.js");
+  Chunk750593 = require("./750593.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ function C() {
     loading: module
   })
 }
-let A = a().throttle(e => {
+let A = o().throttle(e => {
   h.Z.increment({
     name: c.V.APP_CRASHED,
     tags: ["reason:".concat(s.v.UNHANDLED_JS_ERROR), "level:".concat(l.c.FATAL), "modded_client:".concat(e)]
@@ -127,7 +127,7 @@ class N extends Chunk473749.PureComponent {
         title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),
         note: null != exports ? exports() : module,
         action: require,
-        className: Chunk365861.errorPage
+        className: Chunk750593.errorPage
       })
     }
     return module

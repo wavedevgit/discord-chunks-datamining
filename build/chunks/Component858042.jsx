@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -52,7 +52,7 @@ function u(e) {
   let t = () => (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("82077"), n.e("87087")]).then(n.bind(n, 953848));
+    } = await Promise.all([n.e("82077"), n.e("30709")]).then(n.bind(n, 953848));
     return n => (0, r.jsx)(t, c(s({}, n), {
       detectedActivity: {
         application_id: e,
@@ -62,7 +62,7 @@ function u(e) {
   });
   return (0, r.jsx)(i.sNh, {
     id: "game-profile-something-wrong",
-    label: o.intl.string(o.t.qP2cXd),
+    label: a.intl.string(a.t.qP2cXd),
     action: t
   })
 }

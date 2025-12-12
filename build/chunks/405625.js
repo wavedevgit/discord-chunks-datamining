@@ -11,7 +11,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk761122 = require("./761122.js");
 
 function l(e) {
-  return o.DZ.loadIfNecessary(), r.useMemo(() => {
+  return a.DZ.loadIfNecessary(), r.useMemo(() => {
     let t = [];
     e.forEach(e => t.push(e.application.id));
     let n = [...t];
@@ -29,8 +29,8 @@ let c = (e, t) => {
     }
   }), n.map((e, t) => [e, t]).filter(e => {
     var t, n;
-    let [r] = e, o = null == (n = r.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, s.Z)((0, a.getOS)())]) ? true : t.label_type;
-    return !!o && (o === i.ww.NEW || o === i.ww.UPDATED)
+    let [r] = e, a = null == (n = r.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, s.Z)((0, o.getOS)())]) ? true : t.label_type;
+    return !!a && (a === i.ww.NEW || a === i.ww.UPDATED)
   }).forEach(e => {
     let [t, r] = e, i = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : r;
     if (i < r) {

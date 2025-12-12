@@ -20,23 +20,23 @@ let c = Chunk473749.createContext({
 });
 
 function u(e) {
-  return (0, o.kK)(e, HTMLImageElement) ? e.complete : (0, o.kK)(e, HTMLVideoElement) ? e.readyState >= 2 : !!(0, o.kK)(e, HTMLDivElement) || true
+  return (0, a.kK)(e, HTMLImageElement) ? e.complete : (0, a.kK)(e, HTMLVideoElement) ? e.readyState >= 2 : !!(0, a.kK)(e, HTMLDivElement) || true
 }
 
 function d(e) {
-  return (0, o.kK)(e, HTMLImageElement) ? "load" : (0, o.kK)(e, HTMLVideoElement) ? "canplaythrough" : ((0, o.kK)(e, HTMLDivElement), "load")
+  return (0, a.kK)(e, HTMLImageElement) ? "load" : (0, a.kK)(e, HTMLVideoElement) ? "canplaythrough" : ((0, a.kK)(e, HTMLDivElement), "load")
 }
 
 function f(e) {
   var t, n;
-  return (0, o.kK)(e, HTMLImageElement) ? e.getAttribute("src") : (0, o.kK)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? true : t.getAttribute("src")) ? n : "video" : ((0, o.kK)(e, HTMLDivElement), e.tagName)
+  return (0, a.kK)(e, HTMLImageElement) ? e.getAttribute("src") : (0, a.kK)(e, HTMLVideoElement) ? null != (n = null == (t = e.querySelectorAll("source")[0]) ? true : t.getAttribute("src")) ? n : "video" : ((0, a.kK)(e, HTMLDivElement), e.tagName)
 }
 
 function p(e) {
   let {
     children: t,
     isPreview: n = false,
-    source: o,
+    source: a,
     questId: p
   } = e, [_, m] = i.useState(false), [h, g] = i.useState(new Set), [E, b] = i.useState(false), y = i.useRef(false);
   i.useEffect(() => {
@@ -51,16 +51,16 @@ function p(e) {
         errorPrefix: i,
         errorMessage: c
       } = e;
-      n || null == o || (a.default.track(l.rMx.QUEST_ASSET_LOADING_FAILURE, {
-        source: o,
+      n || null == a || (o.default.track(l.rMx.QUEST_ASSET_LOADING_FAILURE, {
+        source: a,
         quest_id: p,
         asset_id: f(t)
       }), s.Z.captureException(Error("".concat(i, ": ").concat(null != c ? "".concat(c, ", ") : "").concat(f(t), ", ").concat(r)), {
         tags: {
-          source: o
+          source: a
         }
       }), m(true))
-    }, [n, o, p]),
+    }, [n, a, p]),
     v = i.useCallback(e => {
       g(t => {
         let n = new Set(t);
@@ -111,14 +111,14 @@ function _(e) {
     children: n
   } = e, {
     registerAsset: r,
-    unregisterAsset: o
-  } = i.useContext(c), a = i.useRef(null);
+    unregisterAsset: a
+  } = i.useContext(c), o = i.useRef(null);
   return i.useEffect(() => {
-    let e = a.current;
+    let e = o.current;
     return null != e && r(e, t), () => {
-      null != e && o(e)
+      null != e && a(e)
     }
-  }, [r, o, t]), n(a)
+  }, [r, a, t]), n(o)
 }
 
 function m() {

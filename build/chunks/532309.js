@@ -16,8 +16,8 @@ function l(e) {
     commandId: n,
     searchResultsPosition: l,
     query: c
-  } = e, u = (0, i.e7)([a.Z], () => a.Z.entrypoint()), d = () => {
-    (0, o.h)({
+  } = e, u = (0, i.e7)([o.Z], () => o.Z.entrypoint()), d = () => {
+    (0, a.h)({
       type: r.ImpressionTypes.VIEW,
       name: r.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
       properties: {

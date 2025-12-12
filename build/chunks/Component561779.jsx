@@ -15,7 +15,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk506802 = require("./506802.jsx"),
   Chunk607070 = require("./607070.js"),
-  Chunk89079 = require("./89079.js");
+  Chunk440326 = require("./440326.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,31 +76,31 @@ function O(e) {
     initialValue: n,
     minValue: r,
     maxValue: i,
-    equidistant: o
-  } = e, a = [], s = [];
+    equidistant: a
+  } = e, o = [], s = [];
   if (null == t) return {
     min: r,
     max: i,
     range: i - r,
-    sortedMarkers: a,
+    sortedMarkers: o,
     markerPositions: s
   };
-  let l = y(n, a = t.sort((e, t) => e - t)),
-    c = a[0],
-    u = a[a.length - 1],
+  let l = y(n, o = t.sort((e, t) => e - t)),
+    c = o[0],
+    u = o[o.length - 1],
     d = u - c;
-  if (o) {
-    let e = 100 / (a.length - 1);
-    s = a.map((t, n) => n * e)
+  if (a) {
+    let e = 100 / (o.length - 1);
+    s = o.map((t, n) => n * e)
   } else {
     let e = e => 100 * (e - c) / d;
-    s = a.map(t => e(t))
+    s = o.map(t => e(t))
   }
   return {
     min: c,
     max: u,
     range: d,
-    sortedMarkers: a,
+    sortedMarkers: o,
     markerPositions: s,
     closestMarkerIndex: l
   }
@@ -137,8 +137,8 @@ class S extends(r = Chunk473749.PureComponent) {
       value: t,
       active: n,
       focused: r,
-      sortedMarkers: o,
-      markerPositions: a,
+      sortedMarkers: a,
+      markerPositions: o,
       closestMarkerIndex: l,
       newClosestIndex: c,
       min: d,
@@ -171,9 +171,9 @@ class S extends(r = Chunk473749.PureComponent) {
     y ? null != Chunk120356 && (null != c ? B = Chunk120356[c] : null != Chunk392711 && (B = Chunk120356[Chunk392711])) : B = this.scaleValue(exports);
     let V = "".concat(B, "%"),
       H = null != Chunk120356 && null != Chunk473749 ? Chunk120356.map((e, t) => {
-        let n = o[t],
+        let n = a[t],
           r = null != N && N === n,
-          a = this.renderMark(n);
+          o = this.renderMark(n);
         return (0, i.jsx)("div", {
           className: s()(m.mark, {
             [m.defaultValue]: r,
@@ -186,9 +186,9 @@ class S extends(r = Chunk473749.PureComponent) {
           children: null != w ? w(n) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               className: m.markValue,
-              children: a
+              children: o
             }), (0, i.jsx)("div", {
-              className: m["markDash".concat(null == a ? "simple" : "")]
+              className: m["markDash".concat(null == o ? "simple" : "")]
             })]
           })
         }, t)
@@ -199,18 +199,18 @@ class S extends(r = Chunk473749.PureComponent) {
       children: e => (0, i.jsx)(I, {
         active: n,
         keyboardFocused: r && _.Z.keyboardModeEnabled,
-        children: o => {
-          var a;
+        children: a => {
+          var o;
           return (0, i.jsx)(f.tEY, {
             focusTarget: this.containerRef,
             ringTarget: this.grabberRef,
             children: (0, i.jsxs)(u.animated.div, {
               className: s()(m.slider, O, {
-                [m.hasMarks]: (null != (a = null == H ? true : H.length) ? a : 0) > 0,
+                [m.hasMarks]: (null != (o = null == H ? true : H.length) ? o : 0) > 0,
                 [m.disabled]: E,
                 [m.mini]: C
               }),
-              style: null == o ? true : o.sliderStyles,
+              style: null == a ? true : a.sliderStyles,
               id: e.controlId,
               "aria-valuemin": d,
               "aria-valuemax": h,
@@ -234,8 +234,8 @@ class S extends(r = Chunk473749.PureComponent) {
               onBlur: () => {
                 this.onBlur()
               },
-              onMouseEnter: () => null == o ? true : o.setHovered(true),
-              onMouseLeave: () => null == o ? true : o.setHovered(false),
+              onMouseEnter: () => null == a ? true : a.setHovered(true),
+              onMouseLeave: () => null == a ? true : a.setHovered(false),
               ref: this.containerRef,
               children: [(0, i.jsx)("div", {
                 className: m.track,
@@ -296,8 +296,8 @@ class S extends(r = Chunk473749.PureComponent) {
         boundingRect: n,
         x: r = 0,
         closestMarkerIndex: i,
-        markerPositions: o,
-        sortedMarkers: a
+        markerPositions: a,
+        sortedMarkers: o
       } = this.state,
       {
         asValueChanges: s
@@ -310,39 +310,39 @@ class S extends(r = Chunk473749.PureComponent) {
     if (e.clientX <= l || e.clientX >= c) return;
     let u = c - l,
       d = (e.clientX - r) / u,
-      f = o[i] + 100 * d;
-    null != (t = this.props.equidistant ? y(f, o) : y(this.unscaleValue(f), a)) && (null == s || s(a[t])), this.setState({
+      f = a[i] + 100 * d;
+    null != (t = this.props.equidistant ? y(f, a) : y(this.unscaleValue(f), o)) && (null == s || s(o[t])), this.setState({
       newClosestIndex: t
     })
   }
   constructor(e) {
-    super(e), h(this, "containerRef", o.createRef()), h(this, "grabberRef", o.createRef()), h(this, "moveGrabber", e => {
+    super(e), h(this, "containerRef", a.createRef()), h(this, "grabberRef", a.createRef()), h(this, "moveGrabber", e => {
       let {
         sortedMarkers: t,
         value: n,
         min: r,
         max: i
       } = this.state, {
-        asValueChanges: o,
-        onValueChange: a,
+        asValueChanges: a,
+        onValueChange: o,
         stickToMarkers: s
       } = this.props, l = {};
       if (s) {
         let r = t.indexOf(n);
         if (r < 0) return;
         let i = r + e,
-          o = t[i];
-        if (null == o) return;
-        l.value = o, l.closestMarkerIndex = i, l.newClosestIndex = i
+          a = t[i];
+        if (null == a) return;
+        l.value = a, l.closestMarkerIndex = i, l.newClosestIndex = i
       } else l.value = c().clamp(n + e, r, i);
-      this.setState(l), l.value !== this.state.value && (null == o || o(l.value), null == a || a(l.value))
+      this.setState(l), l.value !== this.state.value && (null == a || a(l.value), null == o || o(l.value))
     }), h(this, "handleContainerMouseDown", e => {
       let t, {
           disabled: n,
           maxValue: r,
           minValue: i,
-          asValueChanges: o,
-          onValueChange: a,
+          asValueChanges: a,
+          onValueChange: o,
           stickToMarkers: s
         } = this.props,
         {
@@ -383,7 +383,7 @@ class S extends(r = Chunk473749.PureComponent) {
           dragStartValue: t
         }), this.handleMouseDown(e)
       }
-      null != a && a(t), null != o && o(t)
+      null != o && o(t), null != a && a(t)
     }), h(this, "handleKeyDown", e => {
       let {
         disabled: t,
@@ -393,18 +393,18 @@ class S extends(r = Chunk473749.PureComponent) {
       if (t) return;
       let {
         key: i
-      } = e, o = [], a = [];
+      } = e, a = [], o = [];
       switch (n) {
         case "horizontal":
-          o = ["ArrowRight"], a = ["ArrowLeft"];
+          a = ["ArrowRight"], o = ["ArrowLeft"];
           break;
         case "vertical":
-          o = ["ArrowUp"], a = ["ArrowDown"];
+          a = ["ArrowUp"], o = ["ArrowDown"];
           break;
         default:
-          o = ["ArrowRight", "ArrowUp"], a = ["ArrowLeft", "ArrowDown"]
+          a = ["ArrowRight", "ArrowUp"], o = ["ArrowLeft", "ArrowDown"]
       }
-      a.includes(i) ? (e.preventDefault(), e.stopPropagation(), this.moveGrabber(-r)) : o.includes(i) && (e.preventDefault(), e.stopPropagation(), this.moveGrabber(r))
+      o.includes(i) ? (e.preventDefault(), e.stopPropagation(), this.moveGrabber(-r)) : a.includes(i) && (e.preventDefault(), e.stopPropagation(), this.moveGrabber(r))
     }), h(this, "handleMouseDown", e => {
       var t, n;
       if (this.props.disabled) return;
@@ -454,9 +454,9 @@ class S extends(r = Chunk473749.PureComponent) {
       } = this.state;
       if (null == i) return;
       let {
-        left: o,
-        right: a
-      } = i, s = n - t, l = a - o, c = Math.min(Math.max(t + (e.clientX - o) / l * s, t), n);
+        left: a,
+        right: o
+      } = i, s = n - t, l = o - a, c = Math.min(Math.max(t + (e.clientX - a) / l * s, t), n);
       null == r || r(c), this.setState({
         value: c
       })
@@ -473,7 +473,7 @@ function I(e) {
     active: t,
     keyboardFocused: n,
     children: r
-  } = e, [i, a] = o.useState(false);
+  } = e, [i, o] = a.useState(false);
   return r({
     sliderStyles: (0, f.q_F)({
       "--grabber-size": n || t || i ? "20px" : "16px",
@@ -482,7 +482,7 @@ function I(e) {
         duration: 100
       })
     }),
-    setHovered: a
+    setHovered: o
   })
 }
 h(S, "defaultProps", {

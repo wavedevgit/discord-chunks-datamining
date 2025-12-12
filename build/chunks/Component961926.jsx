@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 961926, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk620436 = require("./620436.jsx"),
   Chunk273504 = require("./273504.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk145468 = require("./145468.js");
+  Chunk365604 = require("./365604.js");
 
-function p(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,49 +48,49 @@ function f(e, t) {
   }), e
 }
 
-function h(e) {
-  var t, n, h;
+function p(e) {
+  var t, n, p;
   let {
-    rule: x,
-    onChangeRule: b
+    rule: h,
+    onChangeRule: x
   } = e, j = i.useCallback(e => {
-    b(f(p({}, x), {
-      triggerMetadata: f(p({}, x.triggerMetadata), {
+    x(b(m({}, h), {
+      triggerMetadata: b(m({}, h.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [b, x]);
+  }, [x, h]);
   return (0, r.jsxs)("div", {
-    className: m.cardContentsContainer,
+    className: f.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: g.intl.string(g.t.CX5Yfc),
-      children: [(0, r.jsx)(s.Z, {
-        rule: x,
-        onChangeRule: b
+      children: [(0, r.jsx)(a.Z, {
+        rule: h,
+        onChangeRule: x
       }), (0, r.jsx)(l.Z, {
         onChange: j,
-        initialValue: null == (t = x.triggerMetadata) ? true : t.allowList,
-        maxWordCount: d.I3,
-        collapsed: (null == (n = x.triggerMetadata) ? true : n.allowList) == null || (null == (h = x.triggerMetadata) ? true : h.allowList.length) === 0
+        initialValue: null == (t = h.triggerMetadata) ? true : t.allowList,
+        maxWordCount: u.I3,
+        collapsed: (null == (n = h.triggerMetadata) ? true : n.allowList) == null || (null == (p = h.triggerMetadata) ? true : p.allowList.length) === 0
       })]
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.ARROW_DOWN
+    }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
       step: 2,
       header: g.intl.string(g.t["18TOiQ"]),
-      children: (0, r.jsx)(a.Z, {
-        rule: x,
-        onChangeRule: b
+      children: (0, r.jsx)(s.Z, {
+        rule: h,
+        onChangeRule: x
       })
-    }), (0, r.jsx)(u.Z, {
-      type: u.Z.Type.CROSS
+    }), (0, r.jsx)(d.Z, {
+      type: d.Z.Type.CROSS
     }), (0, r.jsx)(c.Z, {
       step: 3,
       header: g.intl.string(g.t.eq3gjh),
       children: (0, r.jsx)(o.Z, {
-        rule: x,
-        onChangeRule: b
+        rule: h,
+        onChangeRule: x
       })
     })]
   })

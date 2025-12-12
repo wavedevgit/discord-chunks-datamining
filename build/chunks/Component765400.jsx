@@ -8,9 +8,9 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk317673 = require("./317673.js");
+  Chunk384716 = require("./384716.js");
 let s = () => (0, Chunk54381.jsx)(Chunk481060.IGR, {
   color: Chunk481060.TVs.unsafe_rawColors.YELLOW_300.css,
   text: Chunk388032.intl.string(Chunk388032.t.vosPk5),
-  className: Chunk317673.draftBadge
+  className: Chunk384716.draftBadge
 })

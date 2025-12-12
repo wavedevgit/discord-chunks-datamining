@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk629481 = require("./629481.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk370541 = require("./370541.js");
+  Chunk692831 = require("./692831.js");
 
 function j(e) {
   let {
@@ -26,7 +26,7 @@ function j(e) {
     className: b.row,
     children: t.map(e => (0, n.jsx)("div", {
       className: b.pill,
-      children: (0, n.jsx)(s.Text, {
+      children: (0, n.jsx)(c.Text, {
         variant: "text-sm/normal",
         children: e
       })
@@ -60,13 +60,13 @@ function g(e) {
           }, "pill-row-".concat(t)))
         }), (0, n.jsxs)("div", {
           className: b.ctaContent,
-          children: [(0, n.jsx)(s.Text, {
+          children: [(0, n.jsx)(c.Text, {
             variant: "text-lg/medium",
             color: "text-strong",
             children: f.intl.string(f.t["67arYL"])
           }), r && (0, n.jsx)(l.zxk, {
             text: f.intl.string(f.t.oyzLpD),
-            icon: s.ZSh,
+            icon: c.ZSh,
             iconPosition: "end",
             size: "md",
             onClick: () => {
@@ -88,7 +88,7 @@ function g(e) {
                   })
                 }
                 return e
-              }({}, (0, c.hH)(t)), r = r = {
+              }({}, (0, s.hH)(t)), r = r = {
                 action_taken: C.mz.GET_STARTED_CLICK
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
                 var r = Object.keys(e);

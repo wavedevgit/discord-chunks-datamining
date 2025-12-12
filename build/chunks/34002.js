@@ -17,9 +17,9 @@ function _(e) {
   return p && (e == d || e == f)
 }
 
-function m(e, t, n, o, a) {
-  var s = r.replaceText(e.getCurrentContent(), e.getSelection(), t, n, o);
-  return i.push(e, s, "insert-characters", a)
+function m(e, t, n, a, o) {
+  var s = r.replaceText(e.getCurrentContent(), e.getSelection(), t, n, a);
+  return i.push(e, s, "insert-characters", o)
 }
 module.exports = function(e, t) {
   true !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = true);
@@ -27,14 +27,14 @@ module.exports = function(e, t) {
     r = t.data;
   if (r) {
     if (e.props.handleBeforeInput && s(e.props.handleBeforeInput(r, n, t.timeStamp))) return void t.preventDefault();
-    var o = n.getSelection(),
-      d = o.getStartOffset(),
-      f = o.getAnchorKey();
-    if (!o.isCollapsed()) {
-      t.preventDefault(), e.update(m(n, r, n.getCurrentInlineStyle(), a(n.getCurrentContent(), n.getSelection()), true));
+    var a = n.getSelection(),
+      d = a.getStartOffset(),
+      f = a.getAnchorKey();
+    if (!a.isCollapsed()) {
+      t.preventDefault(), e.update(m(n, r, n.getCurrentInlineStyle(), o(n.getCurrentContent(), n.getSelection()), true));
       return
     }
-    var p = m(n, r, n.getCurrentInlineStyle(), a(n.getCurrentContent(), n.getSelection()), false),
+    var p = m(n, r, n.getCurrentInlineStyle(), o(n.getCurrentContent(), n.getSelection()), false),
       h = false;
     if (h || (h = l(e._latestCommittedEditorState)), !h) {
       var g = n.getBlockTree(f),
@@ -43,13 +43,13 @@ module.exports = function(e, t) {
         var t = e[0],
           n = e[1],
           i = t.get("start"),
-          o = i + (i >= d ? r.length : 0),
-          a = t.get("end"),
-          s = a + (a >= d ? r.length : 0),
+          a = i + (i >= d ? r.length : 0),
+          o = t.get("end"),
+          s = o + (o >= d ? r.length : 0),
           l = n.get("start"),
           c = n.get("end"),
           u = n.get("decoratorKey");
-        return t.get("decoratorKey") !== u || t.get("leaves").size !== n.get("leaves").size || o !== l || s !== c || null != u && c - l != a - i
+        return t.get("decoratorKey") !== u || t.get("leaves").size !== n.get("leaves").size || a !== l || s !== c || null != u && c - l != o - i
       })
     }
     if (h || (h = _(r)), h || (h = c(p.getDirectionMap()).get(f) !== c(n.getDirectionMap()).get(f)), h) {

@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk663042 = require("./663042.js"),
   Chunk690775 = require("./690775.js"),
   Chunk731965 = require("./731965.js");
-let a = (0, Chunk663042.U)((0, Chunk690775.XR)(() => ({
+let o = (0, Chunk663042.U)((0, Chunk690775.XR)(() => ({
   commandAnalyticsContext: new Map
 })));
 
@@ -20,13 +20,13 @@ function s(e) {
     sectionName: r
   } = e, {
     commandAnalyticsContext: i
-  } = a.getState(), s = i.get(t);
+  } = o.getState(), s = i.get(t);
   if (null == s || s.location !== n || s.sectionName !== r) {
     let e = new Map(i);
     e.set(t, {
       location: n,
       sectionName: r
-    }), (0, o.j)(() => a.setState({
+    }), (0, a.j)(() => o.setState({
       commandAnalyticsContext: e
     }))
   }
@@ -35,17 +35,17 @@ function s(e) {
 function l(e) {
   let {
     commandAnalyticsContext: t
-  } = a.getState();
+  } = o.getState();
   return t.get(e)
 }
 
 function c(e) {
   let {
     commandAnalyticsContext: t
-  } = a.getState();
+  } = o.getState();
   if (t.has(e)) {
     let n = new Map(t);
-    n.delete(e), (0, o.j)(() => a.setState({
+    n.delete(e), (0, a.j)(() => o.setState({
       commandAnalyticsContext: n
     }))
   }

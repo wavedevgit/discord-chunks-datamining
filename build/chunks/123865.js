@@ -9,11 +9,11 @@ var Chunk154343 = require("./154343.js");
 function i(e, t, n) {
   let {
     node: i,
-    isVirtualized: o
-  } = e, a = {
+    isVirtualized: a
+  } = e, o = {
     role: "row"
   };
-  return o && !((0, r.OV)() && "expandedKeys" in t) && (a["aria-rowindex"] = i.index + 1), {
-    rowProps: a
+  return a && !((0, r.OV)() && "expandedKeys" in t) && (o["aria-rowindex"] = i.index + 1), {
+    rowProps: o
   }
 }

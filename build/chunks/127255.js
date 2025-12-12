@@ -17,9 +17,9 @@ function c(e) {
     enableFilter: n = false
   } = e, {
     filter: c
-  } = (0, i.cj)([o.Z], () => ({
-    filter: o.Z.getFilter()
-  })), u = (0, a.E)(t), d = (0, s.Z)(u), f = (0, l.o)();
+  } = (0, i.cj)([a.Z], () => ({
+    filter: a.Z.getFilter()
+  })), u = (0, o.E)(t), d = (0, s.Z)(u), f = (0, l.o)();
   return r.useMemo(() => {
     function e(e) {
       return !!(!n || "" === c || e.application.name.toLowerCase().includes(c.toLowerCase()))

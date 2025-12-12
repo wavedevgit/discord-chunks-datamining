@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ class c extends(r = Chunk442837.ZP.Store) {
     return s
   }
 }
-a(c, "displayName", "ProxyBlockStore");
+o(c, "displayName", "ProxyBlockStore");
 let u = new c(Chunk570140.Z, {
   PROXY_BLOCKED_REQUEST: l
 })

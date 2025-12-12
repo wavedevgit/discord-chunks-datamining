@@ -13,20 +13,20 @@ var Chunk473749 = require("./473749.js"),
 
 function l(e) {
   var t;
-  if (!(0, o.BQ)(e)) returnfalse;
+  if (!(0, a.BQ)(e)) returnfalse;
   let n = null != (t = e.flags) ? t : 0,
     r = (0, i.yE)(n, s.udG.EMBEDDED),
-    a = (0, i.yE)(n, s.udG.CONTEXTLESS_ACTIVITY);
-  return r && a
+    o = (0, i.yE)(n, s.udG.CONTEXTLESS_ACTIVITY);
+  return r && o
 }
 
 function c(e) {
-  return !!l(e) && (0, a.QK)("canLaunchFrame").enabled
+  return !!l(e) && (0, o.QK)("canLaunchFrame").enabled
 }
 
 function u(e) {
   let {
     enabled: t
-  } = (0, a.u$)("canLaunchFrame");
+  } = (0, o.u$)("canLaunchFrame");
   return r.useMemo(() => null != e && l(e) && t, [e, t])
 }

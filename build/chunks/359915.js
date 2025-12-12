@@ -38,11 +38,11 @@ class u extends Chunk147913.Z {
     var t, n, r;
     let {
       channelId: i,
-      message: o
+      message: a
     } = e, c = l.Z.getChannel(i);
-    if ((null == (t = o.author) ? true : t.id) !== s.default.getId() || !(null == c ? true : c.isActiveThread())) return;
+    if ((null == (t = a.author) ? true : t.id) !== s.default.getId() || !(null == c ? true : c.isActiveThread())) return;
     let u = new Date(null != (r = null == (n = c.threadMetadata) ? true : n.archiveTimestamp) ? r : 0).getTime();
-    Date.now() - u < 5e3 && a.Z.resort(c.parent_id)
+    Date.now() - u < 5e3 && o.Z.resort(c.parent_id)
   }
   handleGuildDelete(e) {
     let {

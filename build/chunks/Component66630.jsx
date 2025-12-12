@@ -33,8 +33,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk343190 = require("./343190.js");
-let E = "CLEAR_AFTER";
+  Chunk717695 = require("./717695.js");
+let _ = "CLEAR_AFTER";
 
 function M(e) {
   var t, n;
@@ -52,7 +52,7 @@ function M(e) {
   } = (0, g.ZP)(U, O.Z.CUSTOM_STATUS_MODAL), B = (0, u.e7)([S.default], () => {
     var e;
     return null != (e = S.default.getCurrentUser()) ? e : null
-  }), H = (0, y.a)(), [L, z] = i.useState(null != (t = null == H ? true : H.state) ? t : ""), [V, W] = i.useState(null != (n = null == H ? true : H.emoji) ? n : null), [q, G] = i.useState((0, _.Z)()), J = i.useRef(null), K = i.useRef(null), Q = i.useRef(null), X = k && null != F ? F.label() : N.intl.string(N.t.xod367), [$, ee] = i.useState(X), {
+  }), H = (0, C.a)(), [L, z] = i.useState(null != (t = null == H ? true : H.state) ? t : ""), [V, W] = i.useState(null != (n = null == H ? true : H.emoji) ? n : null), [q, G] = i.useState((0, x.Z)()), J = i.useRef(null), K = i.useRef(null), Q = i.useRef(null), X = k && null != F ? F.label() : R.intl.string(R.t.xod367), [$, ee] = i.useState(X), {
     ref: et,
     width: en
   } = (0, f.ZP)(X);
@@ -69,7 +69,7 @@ function M(e) {
       ee("".concat(X.substring(0, r)).concat("..."))
     }
   }, [en, X]), i.useEffect(() => {
-    T.default.track(Z.rMx.OPEN_MODAL, {
+    T.default.track(A.rMx.OPEN_MODAL, {
       type: O.Z.CUSTOM_STATUS_MODAL,
       location_stack: Y
     })
@@ -78,7 +78,7 @@ function M(e) {
     null == (e = J.current) || e.focus(), null == (t = J.current) || t.setSelection(L.length, L.length)
   });
   let er = () => {
-      q !== E && ((0, P.Z)({
+      q !== _ && ((0, P.Z)({
         text: L,
         emojiInfo: V,
         clearAfter: q,
@@ -86,31 +86,31 @@ function M(e) {
         analyticsLocations: Y
       }), M())
     },
-    ei = k ? N.intl.string(N.t.rp0ahn) : N.intl.string(N.t.UcdRn2),
+    ei = k ? R.intl.string(R.t.rp0ahn) : R.intl.string(R.t.UcdRn2),
     el = "custom-status-input";
   return (0, r.jsxs)(o.Modal, {
-    title: N.intl.string(N.t.Zx4jzN),
+    title: R.intl.string(R.t.Zx4jzN),
     actionBarInput: (0, r.jsx)("div", {
-      className: R.clearAfterSelectContainer,
+      className: E.clearAfterSelectContainer,
       children: (0, r.jsx)(s.y6, {
-        maxVisibleItems: D.wS.length + 1,
+        maxVisibleItems: Z.wS.length + 1,
         value: q,
         options: I ? [{
-          value: E,
-          key: E,
-          label: N.intl.string(N.t.E45wvP),
+          value: _,
+          key: _,
+          label: R.intl.string(R.t.E45wvP),
           disabled: true
-        }, ...D.wS.map(e => ({
+        }, ...Z.wS.map(e => ({
           value: e,
           key: e,
-          label: (0, x.Z)(e, true)
-        }))] : D.wS.map(e => ({
+          label: (0, w.Z)(e, true)
+        }))] : Z.wS.map(e => ({
           value: e,
           key: e,
-          label: (0, x.Z)(e)
+          label: (0, w.Z)(e)
         })),
         onChange: e => G(e),
-        optionClassName: R.clearAfterSelectOption,
+        optionClassName: E.clearAfterSelectOption,
         renderOptionLabel: e => {
           let {
             value: t,
@@ -118,8 +118,8 @@ function M(e) {
             disabled: i
           } = e;
           return (0, r.jsx)("span", {
-            className: a()(R.clearAfterSelectOptionLabel, i ? R.disabled : true),
-            children: t === E ? n : (0, w.Z)(t, I)
+            className: a()(E.clearAfterSelectOptionLabel, i ? E.disabled : true),
+            children: t === _ ? n : (0, y.Z)(t, I)
           })
         },
         variant: "text-only",
@@ -132,13 +132,13 @@ function M(e) {
     },
     transitionState: l,
     actions: [{
-      text: N.intl.string(N.t["R3BPH+"]),
+      text: R.intl.string(R.t["R3BPH+"]),
       variant: "primary",
       onClick: er
     }],
     children: [null != B && (0, r.jsx)("div", {
-      className: R.profilePreview,
-      children: (0, r.jsx)(C.Z, {
+      className: E.profilePreview,
+      children: (0, r.jsx)(D.Z, {
         user: B,
         previewText: L,
         previewEmoji: V,
@@ -146,22 +146,22 @@ function M(e) {
         transitionState: l
       })
     }), (0, r.jsxs)("div", {
-      className: R.formGroup,
+      className: E.formGroup,
       children: [(0, r.jsx)(d.Text, {
         tag: "label",
         htmlFor: el,
         variant: "heading-md/semibold",
-        className: R.customStatusInputTitle,
+        className: E.customStatusInputTitle,
         children: ei
       }), (0, r.jsxs)("div", {
-        className: R.inputContainer,
+        className: E.inputContainer,
         ref: et,
         children: [(0, r.jsx)("span", {
           ref: Q,
-          className: R.hiddenPlaceholder,
+          className: E.hiddenPlaceholder,
           "aria-hidden": "true"
         }), (0, r.jsx)("div", {
-          className: R.emojiButtonContainer,
+          className: E.emojiButtonContainer,
           children: (0, r.jsx)(d.yRy, {
             targetElementRef: K,
             renderPopout: e => {
@@ -186,7 +186,7 @@ function M(e) {
                     animated: false
                   }), i && t()
                 },
-                pickerIntention: A.Hz.STATUS,
+                pickerIntention: N.Hz.STATUS,
                 onNavigateAway: M
               })
             },
@@ -218,11 +218,11 @@ function M(e) {
               }({}, e), i = i = {
                 ref: K,
                 active: l,
-                className: R.emojiButton,
+                className: E.emojiButton,
                 spriteSize: 24,
                 tabIndex: 0,
                 renderButtonContents: null == V ? null : () => (0, r.jsx)(m.Z, {
-                  className: R.emoji,
+                  className: E.emoji,
                   emojiId: V.id,
                   emojiName: V.name,
                   animated: !!V.animated
@@ -242,7 +242,7 @@ function M(e) {
         }), (0, r.jsx)(c.iS, {
           autosize: true,
           value: L,
-          maxLength: D.s0,
+          maxLength: Z.s0,
           rows: 1,
           showRemainingCharacterCount: false,
           placeholder: $,
@@ -252,23 +252,23 @@ function M(e) {
           onKeyDown: e => {
             "Enter" === e.key && er()
           },
-          className: R.input,
+          className: E.input,
           inputRef: J,
           id: el
         }), (L.length > 0 || null != V) && (0, r.jsx)(d.P3F, {
-          "aria-label": N.intl.string(N.t.wfYTHe),
-          className: R.clearButton,
+          "aria-label": R.intl.string(R.t.wfYTHe),
+          className: E.clearButton,
           onClick: () => {
             z(""), W(null)
           },
           children: (0, r.jsx)(d.k$p, {
             size: "md",
             color: "currentColor",
-            className: R.clearIcon
+            className: E.clearIcon
           })
         })]
       }), (0, r.jsx)(d.nn4, {
-        children: "".concat(N.intl.string(N.t.EVV6uZ), ": ").concat(X)
+        children: "".concat(R.intl.string(R.t.EVV6uZ), ": ").concat(X)
       })]
     })]
   })

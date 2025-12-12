@@ -18,27 +18,27 @@ var Chunk442837 = require("./442837.js"),
   Chunk44359 = require("./44359.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk8280 = require("./8280.js");
+  Chunk781614 = require("./781614.js");
 
 function h(e, t, n) {
   let {
     highlightAdminWarningIfElevated: i,
-    useFlexboxLayout: o,
-    keybindClassName: a
+    useFlexboxLayout: a,
+    keybindClassName: o
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   return (0, r.jsx)(E, {
     keybind: e,
     message: t,
     messageWithoutKeybind: n,
     highlightAdminWarningIfElevated: i,
-    useFlexboxLayout: o,
-    keybindClassName: a
+    useFlexboxLayout: a,
+    keybindClassName: o
   })
 }
 let g = (e, t) => (0, r.jsx)(r.Fragment, {
   children: _.intl.format(t, {
     keybind: e,
-    keybindHook: (t, n) => (0, r.jsx)(o.M2$, {
+    keybindHook: (t, n) => (0, r.jsx)(a.M2$, {
       shortcut: e,
       className: m.keyCombo,
       keyClassName: m.keyComboKey
@@ -54,11 +54,11 @@ function E(e) {
     highlightAdminWarningIfElevated: g = false,
     useFlexboxLayout: E = false,
     keybindClassName: b
-  } = e, y = (0, d.o)(), O = (0, i.e7)([a.ZP], () => {
-    let e = a.ZP.getVisibleGame();
-    return null != e && e.elevated && a.ZP.canShowAdminWarning
+  } = e, y = (0, d.o)(), O = (0, i.e7)([o.ZP], () => {
+    let e = o.ZP.getVisibleGame();
+    return null != e && e.elevated && o.ZP.canShowAdminWarning
   }), v = (0, l.hi)();
-  return O ? (0, r.jsx)(o.Text, {
+  return O ? (0, r.jsx)(a.Text, {
     variant: "text-xxs/semibold",
     color: g ? "text-feedback-warning" : "text-muted",
     children: v ? _.intl.format(_.t.MVS9pV, {

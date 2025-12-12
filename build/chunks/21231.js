@@ -10,7 +10,7 @@ var Chunk528734 = require("./528734.js"),
   Chunk951516 = require("./951516.js");
 
 function s(e) {
-  (0, a.Z)(1, arguments);
+  (0, o.Z)(1, arguments);
   var t = (0, r.default)(e);
-  return (0, i.default)(t).getTime() === (0, o.default)(t).getTime()
+  return (0, i.default)(t).getTime() === (0, a.default)(t).getTime()
 }

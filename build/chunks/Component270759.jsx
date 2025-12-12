@@ -30,11 +30,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk236202 = require("./236202.js");
+  Chunk221534 = require("./221534.js");
 
 function x() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk236202.inviteToolbar,
+    className: Chunk221534.inviteToolbar,
     children: (0, Chunk54381.jsx)(Chunk518311.Z, {
       tooltip: Chunk388032.intl.string(Chunk388032.t["HfOgA/"]),
       location: "PeoplePageHeaderToolbar-CreateDMButton"
@@ -53,9 +53,9 @@ let A = function(e) {
       l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
+    d.Y(T.Z5c.FRIENDS), (0, _.e)("friends")
   }, []);
-  let _ = (0, o.e7)([O.Z], () => O.Z.theme),
+  let b = (0, o.e7)([O.Z], () => O.Z.theme),
     A = (0, I.If)(),
     {
       section: Z,
@@ -124,7 +124,7 @@ let A = function(e) {
     B = null,
     H = G ? null : (0, r.jsx)("div", {
       className: P.nowPlayingColumn,
-      children: (0, r.jsx)(b.Z, {})
+      children: (0, r.jsx)(E.Z, {})
     });
   return B = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
     titleId: k
@@ -134,7 +134,7 @@ let A = function(e) {
     children: [(0, r.jsx)(f.yY, {
       location: j.intl.string(j.t.TdEu5X)
     }), (0, r.jsx)(c.f6W, {
-      theme: _,
+      theme: b,
       children: e => (0, r.jsxs)(m.Z, {
         className: e,
         toolbar: (0, r.jsx)(x, {}),

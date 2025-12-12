@@ -21,9 +21,9 @@ var Chunk309987 = require("./309987.js"),
       u(t.getParentKey(), e, function(e) {
         var t = e.getChildKeys(),
           n = t.indexOf(r) + 1,
-          o = t.toArray();
-        return o.splice(n, 0, i), e.merge({
-          children: l(o)
+          a = t.toArray();
+        return a.splice(n, 0, i), e.merge({
+          children: l(a)
         })
       }), u(t.getNextSiblingKey(), e, function(e) {
         return e.merge({
@@ -41,10 +41,10 @@ var Chunk309987 = require("./309987.js"),
     })
   };
 module.exports = function(e, t) {
-  t.isCollapsed() || a(false);
+  t.isCollapsed() || o(false);
   var n = t.getAnchorKey(),
-    o = e.getBlockMap(),
-    l = o.get(n),
+    a = e.getBlockMap(),
+    l = a.get(n),
     u = l.getText();
   if (!u) {
     var f = l.getType();
@@ -69,17 +69,17 @@ module.exports = function(e, t) {
       characterList: _.slice(p),
       data: c()
     }),
-    b = o.toSeq().takeUntil(function(e) {
+    b = a.toSeq().takeUntil(function(e) {
       return e === l
     }),
-    y = o.toSeq().skipUntil(function(e) {
+    y = a.toSeq().skipUntil(function(e) {
       return e === l
     }).rest(),
     O = b.concat([
       [n, g],
       [m, E]
     ], y).toOrderedMap();
-  return h && (l.getChildKeys().isEmpty() || a(false), O = d(O, g, E)), e.merge({
+  return h && (l.getChildKeys().isEmpty() || o(false), O = d(O, g, E)), e.merge({
     blockMap: O,
     selectionBefore: t,
     selectionAfter: t.merge({

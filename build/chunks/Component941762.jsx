@@ -1,7 +1,7 @@
 /** Chunk was on 62934 **/
 /** chunk id: 941762, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,10 +13,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk47695 = require("./47695.js"),
   Chunk735276 = require("./735276.jsx"),
   Chunk619733 = require("./619733.js"),
-  Chunk847328 = require("./847328.js"),
+  Chunk914820 = require("./914820.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk799070 = require("./799070.js");
-let v = {
+  Chunk435261 = require("./435261.js");
+let x = {
   steps: {
     [Chunk619733.EK.SERVER_SETTINGS]: {
       onBack: {
@@ -29,12 +29,12 @@ let v = {
   }
 };
 
-function _(e) {
+function v(e) {
   let {
     guildId: n,
     instance: t
-  } = e, m = a.useRef(null), _ = (0, d.Z)(t.providerType, t.gameServerPanelUrl);
-  return (0, c.Z)(n) ? (0, r.jsx)(i.yRy, {
+  } = e, m = r.useRef(null), v = (0, d.Z)(t.providerType, t.gameServerPanelUrl);
+  return (0, c.Z)(n) ? (0, a.jsx)(i.yRy, {
     targetElementRef: m,
     align: "top",
     position: "right",
@@ -42,33 +42,33 @@ function _(e) {
     disablePointerEvents: false,
     renderPopout: e => {
       let {
-        closePopout: a
+        closePopout: r
       } = e;
-      return (0, r.jsx)(i.v2r, {
+      return (0, a.jsx)(i.v2r, {
         navId: "game_server-popout-context-menu",
         onClose: () => {
-          (0, l.Zy)(), a()
+          (0, l.Zy)(), r()
         },
         "aria-label": f.intl.string(g.default["yb+ork"]),
         onSelect: true,
-        children: (0, r.jsxs)(i.kSQ, {
-          children: [null != _ && (0, r.jsx)(i.sNh, {
+        children: (0, a.jsxs)(i.kSQ, {
+          children: [null != v && (0, a.jsx)(i.sNh, {
             id: "get-support",
             icon: i.kBi,
             label: f.intl.string(g.default.bBkeMs),
             action: () => {
               (0, o.q)({
-                href: _
+                href: v
               })
             }
-          }), (0, r.jsx)(i.sNh, {
+          }), (0, a.jsx)(i.sNh, {
             id: "settings",
             icon: i.ewm,
             label: f.intl.string(g.default["feUiM/"]),
             action: () => {
               (0, u.Z)({
                 guildId: n,
-                stepConfig: v,
+                stepConfig: x,
                 initialGameServerInstance: t,
                 analyticsLocation: s.Z.GAME_SERVER_PAGE
               })
@@ -79,37 +79,37 @@ function _(e) {
     },
     children: e => {
       var n, t;
-      return (0, r.jsx)(i.P3F, (n = function(e) {
+      return (0, a.jsx)(i.P3F, (n = function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},
-            r = Object.keys(t);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            a = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
             return Object.getOwnPropertyDescriptor(t, e).enumerable
-          }))), r.forEach(function(n) {
-            var r;
-            r = t[n], n in e ? Object.defineProperty(e, n, {
-              value: r,
+          }))), a.forEach(function(n) {
+            var a;
+            a = t[n], n in e ? Object.defineProperty(e, n, {
+              value: a,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[n] = r
+            }) : e[n] = a
           })
         }
         return e
       }({
         "aria-label": f.intl.string(f.t["UKOtz+"]),
-        className: x.clickable
+        className: b.clickable
       }, e), t = t = {
         innerRef: m,
-        children: (0, r.jsx)(i.xhG, {
+        children: (0, a.jsx)(i.xhG, {
           color: "currentColor",
           size: "sm"
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          t.push.apply(t, r)
+          var a = Object.getOwnPropertySymbols(e);
+          t.push.apply(t, a)
         }
         return t
       })(Object(t)).forEach(function(e) {

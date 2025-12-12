@@ -69,11 +69,11 @@ function I(e) {
     currentDeviceId: I,
     responsiveBackgroundOptions: T,
     className: C
-  } = e, A = (0, o.e7)([l.default], () => l.default.getCurrentUser()), [N, P] = i.useState(null), R = (0, _.Z)(), w = c.ZP.canUseCustomBackgrounds(A);
+  } = e, A = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, P] = i.useState(null), R = (0, _.Z)(), w = c.ZP.canUseCustomBackgrounds(A);
   i.useEffect(() => {
     (0, u.XV)()
   }, []);
-  let D = (0, o.cj)([d.Z], () => w ? d.Z.videoFilterAssets : {}),
+  let D = (0, a.cj)([d.Z], () => w ? d.Z.videoFilterAssets : {}),
     x = i.useMemo(() => Object.values(D).filter(e => e.type === h.xV.BACKGROUND), [D]),
     L = (0, s.O)(),
     j = {
@@ -116,7 +116,7 @@ function I(e) {
       })
     },
     G = () => {
-      (0, a.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("87200").then(n.bind(n, 592163));
@@ -130,7 +130,7 @@ function I(e) {
     };
   return R ? (0, r.jsx)("div", {
     className: C,
-    children: (0, r.jsx)(a.gNt, {
+    children: (0, r.jsx)(o.gNt, {
       label: b.intl.string(b.t.lZTUPs),
       errorMessage: N,
       children: (0, r.jsx)(m.Z, {

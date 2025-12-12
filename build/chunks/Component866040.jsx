@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk670188 = require("./670188.jsx"),
   Chunk210887 = require("./210887.js"),
   Chunk5192 = require("./5192.js"),
-  Chunk263884 = require("./263884.js");
+  Chunk935418 = require("./935418.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,7 +58,7 @@ function h(e) {
     participants: t,
     channel: i
   } = e;
-  return (0, r.jsx)(o.Ttm, {
+  return (0, r.jsx)(a.Ttm, {
     className: d.popout,
     children: t.map(e => (0, r.jsx)(s.Z, {
       user: e,
@@ -66,10 +66,10 @@ function h(e) {
       channelId: null == i ? true : i.id,
       nick: u.ZP.getNickname(null == i ? true : i.guild_id, null == i ? true : i.id, e),
       onContextMenu: t => {
-        (0, a.jW)(t, async () => {
+        (0, o.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, m(p({}, n), {
             user: e
           }))
@@ -83,28 +83,28 @@ function g(e) {
   let {
     children: t,
     participants: n,
-    channel: a,
+    channel: o,
     onPopoutClosed: s,
     targetElementRef: u
   } = e, d = (0, i.e7)([c.Z], () => c.Z.theme), f = 1 === n.length ? n[0] : null;
-  return null != f ? (0, r.jsx)(o.ze6, {
+  return null != f ? (0, r.jsx)(a.ze6, {
     theme: d,
     children: (0, r.jsx)(l.Z, {
       targetElementRef: u,
       user: f,
-      guildId: null == a ? true : a.guild_id,
-      channelId: null == a ? true : a.id,
+      guildId: null == o ? true : o.guild_id,
+      channelId: null == o ? true : o.id,
       onClosePopout: s,
       children: t
     })
-  }) : (0, r.jsx)(o.ze6, {
+  }) : (0, r.jsx)(a.ze6, {
     theme: d,
-    children: (0, r.jsx)(o.yRy, {
+    children: (0, r.jsx)(a.yRy, {
       targetElementRef: u,
       renderPopout: () => {
         if (null != n) return (0, r.jsx)(h, {
           participants: n,
-          channel: a
+          channel: o
         });
         throw Error("One of participant or participants is required")
       },

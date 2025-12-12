@@ -1,12 +1,12 @@
 /** Chunk was on 19038 **/
 /** chunk id: 571769, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk660815 = require("./660815.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -19,95 +19,95 @@ var Chunk54381 = require("./54381.js"),
   Chunk60482 = require("./60482.js"),
   Chunk587065 = require("./587065.js"),
   Chunk986841 = require("./986841.js"),
-  Chunk847328 = require("./847328.js"),
+  Chunk914820 = require("./914820.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk71124 = require("./71124.js");
+  Chunk321464 = require("./321464.js");
 
-function C(t) {
+function j(t) {
   let {
     guildId: e,
     instance: n,
-    onClose: r,
-    transitionState: C
-  } = t, g = (0, c.e7)([_.Z], () => {
+    onClose: i,
+    transitionState: j
+  } = t, C = (0, o.e7)([h.Z], () => {
     var t;
-    return null == (t = _.Z.getStateForGuild(e)) ? true : t.instructions[n.planId]
+    return null == (t = h.Z.getStateForGuild(e)) ? true : t.instructions[n.planId]
   });
-  i.useEffect(() => {
-    null == g && (0, m.iX)(e, n.planId)
-  }, [e, n.planId, g]);
-  let S = (0, v.Z)(n),
+  a.useEffect(() => {
+    null == C && (0, m.iX)(e, n.planId)
+  }, [e, n.planId, C]);
+  let g = (0, I.Z)(n),
     {
-      handleCopyServerIp: T,
-      animateCopyIcon: E
-    } = (0, h.Z)(e, n.id, d.Z.GAME_SERVER_INSTRUCTIONS_MODAL, null != S ? S : ""),
-    b = i.useMemo(() => {
+      handleCopyServerIp: S,
+      animateCopyIcon: T
+    } = (0, v.Z)(e, n.id, u.Z.GAME_SERVER_INSTRUCTIONS_MODAL, null != g ? g : ""),
+    E = a.useMemo(() => {
       switch (n.status) {
         case l.V.STARTING:
-          return N.intl.string(I.default.ud4hxY);
+          return N.intl.string(b.default.ud4hxY);
         case l.V.OFFLINE:
-          return N.intl.string(I.default.ABAm7x);
+          return N.intl.string(b.default.ABAm7x);
         default:
           return
       }
     }, [n.status]);
-  return (0, s.jsxs)(o.IX, {
+  return (0, s.jsxs)(c.IX, {
     size: "lg",
     paddingSize: "lg",
-    transitionState: C,
-    onClose: r,
-    children: [(0, s.jsx)(o.xBx, {
+    transitionState: j,
+    onClose: i,
+    children: [(0, s.jsx)(c.xBx, {
       gradientColor: "purple",
       graphic: {
         type: "dynamic",
-        component: p.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
+        component: f.DynamicGraphicComponent.GAME_SERVER_GAME_INSTRUCTIONS_ASSET,
         props: {
           instance: n
         }
       },
       alignCenter: true,
       title: n.name,
-      subtitle: N.intl.string(I.default["4HqfaU"])
-    }), null == g ? (0, s.jsx)(u.$jN, {}) : (0, s.jsxs)("div", {
-      className: j.content,
-      children: [null != b && (0, s.jsx)(x.Z, {
-        className: j.infoBox,
-        children: b
+      subtitle: N.intl.string(b.default["4HqfaU"])
+    }), null == C ? (0, s.jsx)(p.$jN, {}) : (0, s.jsxs)("div", {
+      className: _.content,
+      children: [null != E && (0, s.jsx)(x.Z, {
+        className: _.infoBox,
+        children: E
       }), (0, s.jsx)("div", {
-        className: j.stepsContainer,
-        children: g.map((t, e) => (0, s.jsxs)("div", {
-          className: j.step,
+        className: _.stepsContainer,
+        children: C.map((t, e) => (0, s.jsxs)("div", {
+          className: _.step,
           children: [(0, s.jsx)("div", {
-            className: j.stepNumber,
-            children: (0, s.jsx)(u.Text, {
+            className: _.stepNumber,
+            children: (0, s.jsx)(p.Text, {
               variant: "text-xs/semibold",
               color: "text-subtle",
-              children: N.intl.formatToPlainString(I.default.oSU1fF, {
+              children: N.intl.formatToPlainString(b.default.oSU1fF, {
                 step: e + 1
               })
             })
-          }), (0, s.jsx)(u.Text, {
+          }), (0, s.jsx)(p.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: f.Z.parse(t, false, {
+            children: d.Z.parse(t, false, {
               allowLinks: true
             })
           })]
         }, e))
-      }), null != S && (0, s.jsxs)("div", {
-        className: j.serverIpContainer,
+      }), null != g && (0, s.jsxs)("div", {
+        className: _.serverIpContainer,
         children: [(0, s.jsx)("div", {
-          className: a()(j.serverIpInput, E && j.animate),
-          children: (0, s.jsx)(u.Text, {
+          className: r()(_.serverIpInput, T && _.animate),
+          children: (0, s.jsx)(p.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: S
+            children: g
           })
-        }), (0, s.jsx)(u.Button, {
-          variant: E ? "active" : "primary",
-          text: E ? N.intl.string(N.t.t5VZ88) : N.intl.string(N.t.OpuAlK),
-          onClick: T,
-          icon: u.TIy
+        }), (0, s.jsx)(p.Button, {
+          variant: T ? "active" : "primary",
+          text: T ? N.intl.string(N.t.t5VZ88) : N.intl.string(N.t.OpuAlK),
+          onClick: S,
+          icon: p.TIy
         })]
       })]
     })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk742280 = require("./742280.js"),
@@ -49,10 +49,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk867983 = require("./867983.js");
+  Chunk400005 = require("./400005.js");
 
 function q(e) {
-  var t, n, o, s;
+  var t, n, a, s;
   let q, Q, {
       selectedPlanId: X,
       planGroup: J,
@@ -62,8 +62,8 @@ function q(e) {
       onCurrencyChange: en,
       onPaymentSourceChange: er,
       handlePaymentSourceAdd: ei,
-      setHasAcceptedTerms: eo,
-      legalTermsNodeRef: ea,
+      setHasAcceptedTerms: ea,
+      legalTermsNodeRef: eo,
       hasLegalTermsFlash: es,
       trialId: el,
       trialFooterMessageOverride: ec,
@@ -151,7 +151,7 @@ function q(e) {
       loadId: eT.loadId
     }),
     eJ = eD && (0, R.pO)(ex),
-    e$ = null != (o = null != (n = null != eY ? eY : eK) ? n : eq) ? o : eX;
+    e$ = null != (a = null != (n = null != eY ? eY : eK) ? n : eq) ? a : eX;
   i.useEffect(() => {
     eA(e$)
   }, [e$, eA]);
@@ -195,7 +195,7 @@ function q(e) {
     }, [eD, eI, eQ, eH]), null != e$);
   else if (eD && null != eQ) Q = (0, r.jsx)(B.e9, {
     plan: eU,
-    className: a()(z.invoice, eR),
+    className: o()(z.invoice, eR),
     isPrepaidPaymentSource: e5,
     isCustomGift: eJ,
     invoicePreview: eQ
@@ -204,7 +204,7 @@ function q(e) {
     children: [(0, r.jsx)(M.UN, {
       negativeMarginTop: !eC
     }), (0, r.jsxs)(M.aO, {
-      className: a()(z.invoice, eR),
+      className: o()(z.invoice, eR),
       children: [(0, r.jsxs)("div", {
         className: z.trialPriceLine,
         children: [(0, r.jsx)(f.Text, {
@@ -238,7 +238,7 @@ function q(e) {
         fractionalPremiumInfo: te,
         enablePremiumBrandRefresh: eP
       }), (0, r.jsxs)(M.aO, {
-        className: a()(z.invoice, eR),
+        className: o()(z.invoice, eR),
         children: [(0, r.jsx)(M.Z9, {
           children: K.intl.string(K.t["2eh+Co"])
         }), (0, r.jsx)(B.Lu, {
@@ -257,11 +257,11 @@ function q(e) {
       })]
     })
   }
-  let to = c.M.EEA_COUNTRIES.has(C.Z.ipCountryCodeWithFallback),
-    ta = K.intl.formatToPlainString(K.t["sBpy9/"], {
+  let ta = c.M.EEA_COUNTRIES.has(C.Z.ipCountryCodeWithFallback),
+    to = K.intl.formatToPlainString(K.t["sBpy9/"], {
       planName: eU.name
     });
-  eD && !eJ ? ta = K.intl.string(K.t.J5a0eb) : eD && eJ ? ta = "" : (0, w.PV)(eU.id) && (ta = w.ZP.getBillingReviewSubheader(null, eU));
+  eD && !eJ ? to = K.intl.string(K.t.J5a0eb) : eD && eJ ? to = "" : (0, w.PV)(eU.id) && (to = w.ZP.getBillingReviewSubheader(null, eU));
   let ts = null != eV && eV.length > 0 && (e1 === N.c || null === e3) && eN ? Z.w.SELECT_PAYMENT_METHOD : true;
   return e8 ? null : (0, r.jsxs)("div", {
     className: z.stepBody,
@@ -304,9 +304,9 @@ function q(e) {
       children: K.intl.format(K.t["7ZS2m1"], {
         trialEnd: null == eb ? true : eb.currentPeriodEnd
       })
-    }), !em && "" !== ta && (0, r.jsx)(f.Heading, {
+    }), !em && "" !== to && (0, r.jsx)(f.Heading, {
       variant: "heading-md/semibold",
-      children: ta
+      children: to
     }), eJ && null != eL && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(G.Z, {
         defaultAnimationState: x.SR.LOOP,
@@ -331,7 +331,7 @@ function q(e) {
         hidePersonalInformation: e0,
         isTrial: em,
         paymentGatewayRestrictions: eV,
-        className: a()({
+        className: o()({
           [z.premiumBrandRefreshInputBackground]: eP
         })
       }), e2 && null == e1 ? (0, r.jsx)("div", {
@@ -351,9 +351,9 @@ function q(e) {
       })]
     }), (0, r.jsx)(U.Z, {
       isActive: es,
-      ref: ea,
+      ref: eo,
       children: (0, r.jsx)(h.Z, {
-        onChange: eo,
+        onChange: ea,
         forceShow: true,
         finePrint: null != (s = !eC && ec) ? s : (0, r.jsx)(_.Z, {
           hide: em || eh,
@@ -365,7 +365,7 @@ function q(e) {
           basePrice: (0, w.aS)(eU.id, false, eD, ee)
         }),
         showPricingLink: eU.currency !== W.pK.USD,
-        showWithdrawalWaiver: to,
+        showWithdrawalWaiver: ta,
         disabled: eZ,
         isTrial: em && null == ec,
         inReverseTrial: eC,

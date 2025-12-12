@@ -7,16 +7,16 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk475595 = require("./475595.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk819838 = require("./819838.js");
+  Chunk633515 = require("./633515.js");
 
 function p(e) {
-  var t, n, o;
+  var t, n, a;
   let {
     showVideo: p,
     imageAsset: _,
@@ -48,7 +48,7 @@ function p(e) {
       preload: "auto",
       poster: I,
       playsInline: true,
-      className: a()(m.className, f.video, {
+      className: o()(m.className, f.video, {
         [f.hidden]: !p
       }),
       controls: false,
@@ -56,7 +56,7 @@ function p(e) {
       ref: E,
       children: (0, r.jsx)("source", {
         src: m.asset.url,
-        type: null != (o = m.asset.mimetype) ? o : true
+        type: null != (a = m.asset.mimetype) ? a : true
       })
     })]
   })

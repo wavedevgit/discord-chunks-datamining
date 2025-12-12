@@ -7,31 +7,31 @@ require.d(exports, {
 var Chunk477232 = require("./477232.js");
 let i = "undefined" != typeof Element && "checkVisibility" in Element.prototype;
 
-function o(e) {
+function a(e) {
   let t = (0, r.kR)(e);
   if (!(e instanceof t.HTMLElement) && !(e instanceof t.SVGElement)) returnfalse;
   let {
     display: n,
     visibility: i
-  } = e.style, o = "none" !== n && "hidden" !== i && "collapse" !== i;
-  if (o) {
+  } = e.style, a = "none" !== n && "hidden" !== i && "collapse" !== i;
+  if (a) {
     let {
       getComputedStyle: t
     } = e.ownerDocument.defaultView, {
       display: n,
       visibility: r
     } = t(e);
-    o = "none" !== n && "hidden" !== r && "collapse" !== r
+    a = "none" !== n && "hidden" !== r && "collapse" !== r
   }
-  return o
+  return a
 }
 
-function a(e, t) {
+function o(e, t) {
   return !e.hasAttribute("hidden") && !e.hasAttribute("data-react-aria-prevent-focus") && ("DETAILS" !== e.nodeName || !t || "SUMMARY" === t.nodeName || e.hasAttribute("open"))
 }
 
 function s(e, t) {
   return i ? e.checkVisibility({
     visibilityProperty: true
-  }) && !e.closest("[data-react-aria-prevent-focus]") : "#comment" !== e.nodeName && o(e) && a(e, t) && (!e.parentElement || s(e.parentElement, e))
+  }) && !e.closest("[data-react-aria-prevent-focus]") : "#comment" !== e.nodeName && a(e) && o(e, t) && (!e.parentElement || s(e.parentElement, e))
 }

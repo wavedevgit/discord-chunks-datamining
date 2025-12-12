@@ -1,14 +1,3 @@
-/** Chunk was on 384 **/
-/** chunk id: 267877, original params: e,t,n (module,exports,require) **/
-"use strict";
-module.exports = {
-  buttonsContainer: "buttonsContainer__24d0d",
-  colorSwatch: "colorSwatch__24d0d",
-  swatchDescription: "swatchDescription__24d0d",
-  swatch: "swatch__24d0d",
-  customSwatch: "customSwatch__24d0d swatch__24d0d",
-  defaultSwatch: "defaultSwatch__24d0d",
-  dropperIconButton: "dropperIconButton__24d0d",
-  dropperIcon: "dropperIcon__24d0d",
-  disabled: "disabled__24d0d"
-}
+/** Chunk was on 31818 **/
+/** chunk id: 267877, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"/cp93l":["Next month"],"raS6yf":["Previous month"],"JA5C7L":["Clear"],"I8kUqR":["Open calendar"],"db85vU":["No items to show"],"bPKiId":["No results for ‘",[1,"query"],"’"],"WfH9in":["Close"],"m3Vfcs":["Don\'t show again"],"cgdAs2":["(Will open in a new tab)"],"/Y7vRd":["Press delete to remove."],"VMNfsY":["Selected"],"A+pfVR":["Select..."],"YpT3kk":["Enlarge and play video"]}')

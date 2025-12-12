@@ -74,16 +74,16 @@ function T(e, t, n) {
   let {
     headers: r,
     status: i,
-    body: o
+    body: a
   } = e;
   if (429 === i) {
     if (n.isRetry) returntrue;
     let e = parseInt(r["retry-after"]);
     return isNaN(e) || setTimeout(t, e * m.Z.Millis.SECOND), false
   }
-  if (403 === i) switch (o && o.code) {
+  if (403 === i) switch (a && a.code) {
     case E.evJ.TOO_MANY_REACTIONS:
-      a.Z.show({
+      o.Z.show({
         title: b.intl.string(b.t.lFddsR),
         body: b.intl.string(b.t.h27eIm),
         confirmText: b.intl.string(b.t.BddRzS)
@@ -99,12 +99,12 @@ function T(e, t, n) {
 }
 
 function C(e, t, n, r, i) {
-  var a, s;
-  o.Z.dispatch({
+  var o, s;
+  a.Z.dispatch({
     type: e,
     channelId: t,
     messageId: n,
-    userId: null != (a = null == i ? true : i.userId) ? a : u.default.getId(),
+    userId: null != (o = null == i ? true : i.userId) ? o : u.default.getId(),
     emoji: r,
     optimistic: true,
     colors: null != (s = null == i ? true : i.colors) ? s : [],
@@ -118,10 +118,10 @@ function A(e) {
     messageId: n,
     emoji: r,
     userId: i,
-    useTypeEndpoint: o = false,
-    type: a = l.O.NORMAL
+    useTypeEndpoint: a = false,
+    type: o = l.O.NORMAL
   } = e, s = null != r.id ? "".concat(r.name, ":").concat(r.id) : r.name;
-  return null == i ? E.ANM.REACTIONS(t, n, s) : o ? E.ANM.REACTION_WITH_TYPE(t, n, s, i, a) : E.ANM.REACTION(t, n, s, i)
+  return null == i ? E.ANM.REACTIONS(t, n, s) : a ? E.ANM.REACTION_WITH_TYPE(t, n, s, i, o) : E.ANM.REACTION(t, n, s, i)
 }
 
 function N(e, t, n) {
@@ -134,7 +134,7 @@ async function P(e) {
     channelId: t,
     messageId: n,
     emoji: i,
-    limit: a,
+    limit: o,
     after: s,
     type: c
   } = e, u = c === l.O.VOTE ? N(t, n, i) : A({
@@ -144,14 +144,14 @@ async function P(e) {
   }), d = await r.tn.get({
     url: u,
     query: {
-      limit: a,
+      limit: o,
       after: s,
       type: c
     },
     oldFormErrors: true,
     rejectWithError: false
   }), f = c === l.O.VOTE ? d.body.users : d.body;
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "MESSAGE_REACTION_ADD_USERS",
     channelId: t,
     messageId: n,
@@ -161,11 +161,11 @@ async function P(e) {
   }), f
 }
 async function R(e, t, n) {
-  let o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "Message",
+  let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "Message",
     u = arguments.length > 4 ? arguments[4] : true,
     f = null != u && !!u.burst,
     _ = null != u && !!u.isRetry;
-  if (!_ && M(e, t, n, f)) return void a.Z.show({
+  if (!_ && M(e, t, n, f)) return void o.Z.show({
     title: b.intl.string(b.t["uaUU/g"]),
     body: b.intl.string(b.t.psMorl),
     confirmText: b.intl.string(b.t["NX+WJN"])
@@ -182,13 +182,13 @@ async function R(e, t, n) {
       userId: "@me"
     }),
     query: {
-      location: o,
+      location: a,
       type: f ? l.O.BURST : l.O.NORMAL
     },
     oldFormErrors: true,
     rejectWithError: false
   }).then(() => {
-    if ("Message Shortcut" === o) {
+    if ("Message Shortcut" === a) {
       var r;
       let i = d.Z.getChannel(e);
       p.default.track(E.rMx.MESSAGE_SHORTCUT_ACTION_SENT, O({
@@ -211,7 +211,7 @@ async function R(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    T(r, () => R(e, t, n, o, {
+    T(r, () => R(e, t, n, a, {
       burst: f,
       isRetry: true
     }), {
@@ -233,7 +233,7 @@ function w(e) {
     emoji: r,
     key: i
   } = e;
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "BURST_REACTION_EFFECT_PLAY",
     channelId: t,
     messageId: n,
@@ -256,18 +256,18 @@ async function D(e, t, n) {
   })
 }
 async function x(e, t, n, i) {
-  let o = null != i && !!i.isRetry;
+  let a = null != i && !!i.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e);
-  let a = null === n.id ? n.name : "".concat(n.name, ":").concat(n.id);
+  let o = null === n.id ? n.name : "".concat(n.name, ":").concat(n.id);
   r.tn.del({
-    url: E.ANM.REMOVE_EMOJI_REACTIONS(e, t, a),
+    url: E.ANM.REMOVE_EMOJI_REACTIONS(e, t, o),
     oldFormErrors: true,
     rejectWithError: false
   }).catch(r => {
     T(r, () => x(e, t, n, {
       isRetry: true
     }), {
-      isRetry: o
+      isRetry: a
     })
   })
 }
@@ -275,41 +275,41 @@ async function L(e) {
   let {
     channelId: t,
     messageId: n,
-    emoji: o,
-    location: a = "Message",
+    emoji: a,
+    location: o = "Message",
     userId: s,
     options: u
   } = e, d = null != u && !!u.burst, f = null != u && !!u.isRetry;
-  C("MESSAGE_REACTION_REMOVE", t, n, o, {
+  C("MESSAGE_REACTION_REMOVE", t, n, a, {
     userId: s,
     burst: d
   }), await c.Z.unarchiveThreadIfNecessary(t), r.tn.del({
     url: A({
       channelId: t,
       messageId: n,
-      emoji: o,
+      emoji: a,
       userId: null != s ? s : "@me",
       type: d ? l.O.BURST : l.O.NORMAL,
       useTypeEndpoint: true
     }),
     query: {
-      location: a,
+      location: o,
       burst: d
     },
     oldFormErrors: true,
     rejectWithError: false
   }).then(() => {
     (null == u ? true : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t["3l9f6u"], {
-      name: o.name
+      name: a.name
     })): i.uv.announce(b.intl.formatToPlainString(b.t["DQxi+7"], {
-      name: o.name
+      name: a.name
     }))
   }).catch(async e => {
     if (T(e, () => L({
         channelId: t,
         messageId: n,
-        emoji: o,
-        location: a,
+        emoji: a,
+        location: o,
         userId: s,
         options: {
           burst: d,
@@ -318,15 +318,15 @@ async function L(e) {
       }), {
         isRetry: f
       })) {
-      let e = await j(o, d);
-      C("MESSAGE_REACTION_ADD", t, n, o, {
+      let e = await j(a, d);
+      C("MESSAGE_REACTION_ADD", t, n, a, {
         userId: s,
         burst: d,
         colors: e
       }), (null == u ? true : u.burst) ? i.uv.announce(b.intl.formatToPlainString(b.t.OamVbV, {
-        name: o.name
+        name: a.name
       })) : i.uv.announce(b.intl.formatToPlainString(b.t["tD9+b+"], {
-        name: o.name
+        name: a.name
       }))
     }
   })

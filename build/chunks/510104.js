@@ -36,8 +36,8 @@ function f(e, t) {
     N = e.rects.popper,
     P = e.elements[S ? A : O],
     R = (0, r.Z)((0, c.kK)(P) ? P : P.contextElement || (0, i.Z)(e.elements.popper), g, b, m),
-    w = (0, o.Z)(e.elements.reference),
-    D = (0, a.Z)({
+    w = (0, a.Z)(e.elements.reference),
+    D = (0, o.Z)({
       reference: w,
       element: N,
       strategy: "absolute",

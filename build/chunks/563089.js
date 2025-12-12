@@ -2,7 +2,7 @@
 /** chunk id: 563089, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => a
+  ZP: () => o
 });
 var Chunk81825 = require("./81825.js");
 
@@ -14,9 +14,9 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk81825.Z {
+class a extends Chunk81825.Z {
   static createFromServer(e) {
-    return new o({
+    return new a({
       userId: e.user_id,
       subscriptionId: e.subscription_id,
       oldCurrency: e.old_currency,
@@ -44,4 +44,4 @@ class o extends Chunk81825.Z {
     super(), i(this, "userId", true), i(this, "subscriptionId", true), i(this, "oldCurrency", true), i(this, "oldPrice", true), i(this, "newCurrency", true), i(this, "newPrice", true), i(this, "priceChangeMode", true), i(this, "expectedChargeTime", true), i(this, "priceChangeId", true), this.userId = e.userId, this.subscriptionId = e.subscriptionId, this.oldCurrency = e.oldCurrency, this.oldPrice = e.oldPrice, this.newCurrency = e.newCurrency, this.newPrice = e.newPrice, this.priceChangeMode = e.priceChangeMode, this.expectedChargeTime = e.expectedChargeTime, this.priceChangeId = e.priceChangeId
   }
 }
-let a = o
+let o = a

@@ -16,10 +16,10 @@ function u(e) {
   let {
     messageId: t,
     channelId: n
-  } = e, u = (0, o.e7)([l.Z], () => l.Z.canSubmitFpReport(t)), d = i.useCallback(() => {
+  } = e, u = (0, a.e7)([l.Z], () => l.Z.canSubmitFpReport(t)), d = i.useCallback(() => {
     (0, s.e)(n, t)
   }, [n, t]);
-  return (0, r.jsx)(a.Button, {
+  return (0, r.jsx)(o.Button, {
     variant: "secondary",
     text: c.intl.string(c.t["4q1Elf"]),
     onClick: d,

@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk98528 = require("./98528.js"),
   Chunk429155 = require("./429155.jsx"),
   Chunk810462 = require("./810462.jsx"),
-  Chunk681561 = require("./681561.js");
+  Chunk341546 = require("./341546.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,7 @@ function _(e) {
     gridNotice: k,
     renderHeader: U,
     renderUpsell: G
-  } = e, Z = i.useRef(null), F = i.useRef(null), B = i.useRef(null), V = 0 === t.length, H = (0, o.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, a.ep)({
+  } = e, Z = i.useRef(null), F = i.useRef(null), B = i.useRef(null), V = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), Y = f.useStore(e => e.inspectedExpressionPosition), W = (0, o.ep)({
     gridWrapperRef: Z,
     containerWidth: u,
     showingEmptyState: V
@@ -93,7 +93,7 @@ function _(e) {
     rowCountBySection: q,
     columnCounts: Q,
     gutterWidth: X
-  } = (0, a.yi)({
+  } = (0, o.yi)({
     categories: t,
     collapsedCategories: n,
     gridWidth: W,
@@ -106,7 +106,7 @@ function _(e) {
     gridContainerProps: ee,
     handleGridContainerKeyDown: et,
     isUsingKeyboardNavigation: en
-  } = (0, a.t$)({
+  } = (0, o.t$)({
     columnCounts: Q,
     expressionsListRef: F,
     expressionsGrid: K,
@@ -119,7 +119,7 @@ function _(e) {
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, O, f, z]), ei = i.useCallback(e => null == S ? true : S(t[e], e), [t, S]), eo = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), ea = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, O, f, z]), ei = i.useCallback(e => null == S ? true : S(t[e], e), [t, S]), ea = i.useCallback(e => null == I ? true : I(t[e], e), [t, I]), eo = i.useCallback(() => {
     var e;
     return null == T ? true : T(null == K || null == (e = K[Y.rowIndex]) ? true : e[Y.columnIndex])
   }, [K, Y.columnIndex, Y.rowIndex, T]);
@@ -166,8 +166,8 @@ function _(e) {
           renderRow: er,
           renderSection: v,
           renderSectionHeader: null != S ? ei : true,
-          renderSectionFooter: null != I ? eo : true,
-          renderInspector: null != T ? ea : true,
+          renderSectionFooter: null != I ? ea : true,
+          renderInspector: null != T ? eo : true,
           renderEmptySearchState: C,
           rowCount: z,
           rowCountBySection: q,

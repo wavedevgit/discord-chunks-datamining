@@ -2,7 +2,7 @@
 /** chunk id: 603161, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 }), require("./388685.js");
 var Chunk467721 = require("./467721.js");
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk467721.FrameLoop {
+class a extends Chunk467721.FrameLoop {
   setRAF(e, t) {
     0 !== this.id && (this._cancelAnimationFrame(this.id), this.id = 0), this._requestAnimationFrame = e, this._cancelAnimationFrame = t, this.loop()
   }
@@ -35,7 +35,7 @@ class o extends Chunk467721.FrameLoop {
     }), i(this, "advance", () => {
       let e = r.Globals.now();
       if (this.startQueue.size > 0 && (this.startQueue.forEach(this.addAnimation), this.startQueue.clear()), this.timeoutQueue.length > 0 && r.Globals.batchedUpdates(() => {
-          let t = a(this.timeoutQueue, t => t.time > e);
+          let t = o(this.timeoutQueue, t => t.time > e);
           this.timeoutQueue.splice(0, t).forEach(e => e.handler())
         }), e > this.lastTime) {
         let t = Math.min(64, e - this.lastTime);
@@ -51,13 +51,13 @@ class o extends Chunk467721.FrameLoop {
           let e = this.timeoutQueue.findIndex(e => e.cancel === i);
           e >= 0 && this.timeoutQueue.splice(e, 1)
         },
-        o = a(this.timeoutQueue, e => e.time > n),
+        a = o(this.timeoutQueue, e => e.time > n),
         s = {
           time: n,
           handler: e,
           cancel: i
         };
-      return this.timeoutQueue.splice(o, 0, s), this.startLoop(), s
+      return this.timeoutQueue.splice(a, 0, s), this.startLoop(), s
     }), i(this, "onFrame", e => {
       this.frameQueue.add(e), this.startLoop()
     }), i(this, "onWrite", e => {
@@ -66,7 +66,7 @@ class o extends Chunk467721.FrameLoop {
   }
 }
 
-function a(e, t) {
+function o(e, t) {
   let n = e.findIndex(t);
   return n < 0 ? e.length : n
 }

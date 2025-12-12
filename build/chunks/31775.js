@@ -154,30 +154,30 @@ r = "function" == typeof Symbol ? function(e) {
     r = false;
   l(this, "allowStale") && (n += "\n  allowStale: true", r = true);
   var i = l(this, "max");
-  i && i !== 1 / 0 && (r && (n += ","), n += "\n  max: " + o.inspect(i, t), r = true);
-  var a = l(this, "maxAge");
-  a && (r && (n += ","), n += "\n  maxAge: " + o.inspect(a, t), r = true);
+  i && i !== 1 / 0 && (r && (n += ","), n += "\n  max: " + a.inspect(i, t), r = true);
+  var o = l(this, "maxAge");
+  o && (r && (n += ","), n += "\n  maxAge: " + a.inspect(o, t), r = true);
   var s = l(this, "lengthCalculator");
-  s && s !== c && (r && (n += ","), n += "\n  length: " + o.inspect(l(this, "length"), t), r = true);
+  s && s !== c && (r && (n += ","), n += "\n  length: " + a.inspect(l(this, "length"), t), r = true);
   var u = false;
   return l(this, "lruList").forEach(function(e) {
     u ? n += ",\n  " : (r && (n += ",\n"), u = true, n += "\n  ");
-    var i = o.inspect(e.key).split("\n").join("\n  "),
+    var i = a.inspect(e.key).split("\n").join("\n  "),
       l = {
         value: e.value
       };
-    e.maxAge !== a && (l.maxAge = e.maxAge), s !== c && (l.length = e.length), p(this, e) && (l.stale = true), l = o.inspect(l, t).split("\n").join("\n  "), n += i + " => " + l
+    e.maxAge !== o && (l.maxAge = e.maxAge), s !== c && (l.length = e.length), p(this, e) && (l.stale = true), l = a.inspect(l, t).split("\n").join("\n  "), n += i + " => " + l
   }), (u || r) && (n += "\n"), n += "}"
 }, u.prototype.set = function(e, t, n) {
   var r = (n = n || l(this, "maxAge")) ? Date.now() : 0,
     i = l(this, "lengthCalculator").call(this, t, e);
   if (l(this, "cache").has(e)) {
     if (i > l(this, "max")) return m(this, l(this, "cache").get(e)), false;
-    var o = l(this, "cache").get(e).value;
-    return l(this, "dispose") && l(this, "dispose").call(this, e, o.value), o.now = r, o.maxAge = n, o.value = t, l(this, "length", l(this, "length") + (i - o.length)), o.length = i, this.get(e), _(this), true
+    var a = l(this, "cache").get(e).value;
+    return l(this, "dispose") && l(this, "dispose").call(this, e, a.value), a.now = r, a.maxAge = n, a.value = t, l(this, "length", l(this, "length") + (i - a.length)), a.length = i, this.get(e), _(this), true
   }
-  var a = new h(e, t, i, r, n);
-  return a.length > l(this, "max") ? (l(this, "dispose") && l(this, "dispose").call(this, e, t), false) : (l(this, "length", l(this, "length") + a.length), l(this, "lruList").unshift(a), l(this, "cache").set(e, l(this, "lruList").head), _(this), true)
+  var o = new h(e, t, i, r, n);
+  return o.length > l(this, "max") ? (l(this, "dispose") && l(this, "dispose").call(this, e, t), false) : (l(this, "length", l(this, "length") + o.length), l(this, "lruList").unshift(o), l(this, "cache").set(e, l(this, "lruList").head), _(this), true)
 }, u.prototype.has = function(e) {
   return !(!l(this, "cache").has(e) || p(this, l(this, "cache").get(e).value))
 }, u.prototype.get = function(e) {
@@ -196,8 +196,8 @@ r = "function" == typeof Symbol ? function(e) {
       i = r.e || 0;
     if (0 === i) this.set(r.k, r.v);
     else {
-      var o = i - t;
-      o > 0 && this.set(r.k, r.v, o)
+      var a = i - t;
+      a > 0 && this.set(r.k, r.v, a)
     }
   }
 }, u.prototype.prune = function() {

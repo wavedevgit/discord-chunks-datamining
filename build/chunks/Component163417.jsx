@@ -24,7 +24,8 @@ function a(e) {
     renderRow: n,
     renderSection: a,
     footer: u,
-    sectionFilter: c
+    sectionFilter: c,
+    renderSectionFooter: d
   }) : (0, r.jsx)(l.Z, {
     rows: t,
     renderRow: n,

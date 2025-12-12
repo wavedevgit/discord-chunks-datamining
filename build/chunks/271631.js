@@ -2,14 +2,14 @@
 /** chunk id: 271631, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk522942 = require("./522942.js"),
   Chunk481060 = require("./481060.js");
 
-function a(e) {
-  let t = (0, o.dQu)(o.TVs.colors.TEXT_DEFAULT).int();
+function o(e) {
+  let t = (0, a.dQu)(a.TVs.colors.TEXT_DEFAULT).int();
   return r.useMemo(() => {
     switch (e) {
       case i.m.GRADIENT:

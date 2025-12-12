@@ -58,7 +58,7 @@ let A = e => {
   var t;
   let {
     markAsDismissed: n,
-    children: o,
+    children: a,
     mode: u = "popover",
     tooltipDelay: f = 300,
     targetElementRef: p
@@ -77,7 +77,7 @@ let A = e => {
   }, [n, S]), R = [{
     text: b.intl.string(b.t.iIvF2z),
     variant: "expressive",
-    icon: a.SrA,
+    icon: o.SrA,
     iconPosition: "start",
     onClick: P
   }], w = C >= y && C <= O ? Math.max(1, Math.min(100, (O - C) / O * 100)) : 1, D = C <= 10 ? "critical" : "warning";
@@ -94,6 +94,6 @@ let A = e => {
     actions: R,
     onShow: "tooltip" === u ? N : true,
     estimatedTooltipHeight: 300,
-    children: o
+    children: a
   })
 }

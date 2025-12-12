@@ -3,8 +3,8 @@
 "use strict";
 require.r(exports), require.d(exports, {
   getKrispModel: () => i,
-  setKrispModelOverride: () => a,
-  setKrispSuppressionLevel: () => o
+  setKrispModelOverride: () => o,
+  setKrispSuppressionLevel: () => a
 });
 var Chunk579806 = require("./579806.js");
 
@@ -16,14 +16,14 @@ function i() {
   }
 }
 
-function o(e) {
+function a(e) {
   try {
     var t, n;
     null == (t = (n = r.Z.nativeModules.requireModule("discord_krisp")).setSuppressionLevel) || t.call(n, e)
   } catch (e) {}
 }
 
-function a(e) {
+function o(e) {
   try {
     r.Z.nativeModules.requireModule("discord_krisp").setNcModel(e)
   } catch (e) {}

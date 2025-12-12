@@ -8,9 +8,9 @@ function i(e) {
     var t = e,
       n = t.getAttribute("data-offset-key");
     if (n) return n;
-    for (var o = 0; o < t.childNodes.length; o++) {
-      var a = i(t.childNodes[o]);
-      if (a) return a
+    for (var a = 0; a < t.childNodes.length; a++) {
+      var o = i(t.childNodes[a]);
+      if (o) return o
     }
   }
   return null

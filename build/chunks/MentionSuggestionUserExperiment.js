@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   kB: () => i,
-  zM: () => o
+  zM: () => a
 });
 let r = (0, require("./818083.js").B)({
   kind: "user",
@@ -92,7 +92,7 @@ function i(e, t) {
   }, t)
 }
 
-function o(e, t) {
+function a(e, t) {
   return r.useExperiment({
     location: e
   }, t)

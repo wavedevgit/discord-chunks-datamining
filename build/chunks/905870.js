@@ -86,16 +86,16 @@ class B extends Chunk147913.Z {
     let n = [],
       r = [],
       i = [],
-      o = [],
-      a = Object.entries(t);
-    for (let [e, t] of(a.sort((e, t) => {
+      a = [],
+      o = Object.entries(t);
+    for (let [e, t] of(o.sort((e, t) => {
         var n, r;
-        let [, i] = e, [, o] = t;
-        return (null != (n = null == o ? true : o.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
-      }), a.slice(0, 10)))
+        let [, i] = e, [, a] = t;
+        return (null != (n = null == a ? true : a.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
+      }), o.slice(0, 10)))
       if (null != t) {
         var s, l, u;
-        n.push(e), r.push(null != (s = t.total_allocation_kb) ? s : 0), i.push(null != (l = t.allocation_count) ? l : 0), o.push(null != (u = t.module_version) ? u : "")
+        n.push(e), r.push(null != (s = t.total_allocation_kb) ? s : 0), i.push(null != (l = t.allocation_count) ? l : 0), a.push(null != (u = t.module_version) ? u : "")
       } let f = _.Z.getPerfAttributedMemoryStats(),
       p = null == f ? true : f.events_dropped,
       m = {
@@ -103,11 +103,11 @@ class B extends Chunk147913.Z {
         module_name: n,
         allocation_total_size_kb: r,
         allocation_count: i,
-        module_version: o,
+        module_version: a,
         events_dropped: p
       };
     if (d.default.track(E.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY, m), C) {
-      let e = a.slice(0, 3).map(e => e[0]),
+      let e = o.slice(0, 3).map(e => e[0]),
         t = 3;
       for (let n of e.map(e => _.Z.getPerfAttributedMemoryCallstacks(e)).filter(e => null != e).flatMap(e => e).sort((e, t) => {
           var n, r;
@@ -143,14 +143,14 @@ class B extends Chunk147913.Z {
     let n = i.K.get(U);
     if (null != n && n.timestamp >= Date.now() - G) return;
     let {
-      enable: o,
-      enableForce: a
+      enable: a,
+      enableForce: o
     } = g.Z.getConfig({
       location: "DesktopPerfAnalyticsManager"
     });
-    o && setTimeout(() => {
+    a && setTimeout(() => {
       let n = true;
-      if (e < M || !a) {
+      if (e < M || !o) {
         let e = l.Z.getIdleSince();
         if (null == e || e > Date.now() - j || null != u.Z.getRTCConnection()) return
       } else n = false;
@@ -180,14 +180,14 @@ class B extends Chunk147913.Z {
       let e = Chunk848479.Z.getPerfAttributedPAMemory();
       if (null == module) return;
       let r = [],
-        o = [],
         a = [],
+        o = [],
         s = [],
         l = Object.entries(module);
       for (let [e, i] of(Chunk517100.sort((e, t) => {
           var n, r;
-          let [, i] = e, [, o] = t;
-          return (null != (n = null == o ? true : o.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
+          let [, i] = e, [, a] = t;
+          return (null != (n = null == a ? true : a.total_allocation_kb) ? n : 0) - (null != (r = null == i ? true : i.total_allocation_kb) ? r : 0)
         }), Chunk517100.slice(0, 10))) null != Chunk433517 && (Chunk268146.push(module), Chunk147913.push(null != (t = Chunk433517.total_allocation_kb) ? exports : 0), Chunk579806.push(null != (n = Chunk433517.allocation_count) ? require : 0), Chunk703558.push(""));
       let c = {
         memory_type: "part_alloc",

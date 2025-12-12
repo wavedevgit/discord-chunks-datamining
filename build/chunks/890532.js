@@ -7,7 +7,7 @@ require.d(exports, {
 let r = new Map,
   i = new Set;
 
-function o() {
+function a() {
   if ("undefined" == typeof window) return;
 
   function e(e) {
@@ -22,8 +22,8 @@ function o() {
     },
     n = t => {
       if (!e(t) || !t.target) return;
-      let o = r.get(t.target);
-      if (o && (o.delete(t.propertyName), 0 === o.size && (t.target.removeEventListener("transitioncancel", n), r.delete(t.target)), 0 === r.size)) {
+      let a = r.get(t.target);
+      if (a && (a.delete(t.propertyName), 0 === a.size && (t.target.removeEventListener("transitioncancel", n), r.delete(t.target)), 0 === r.size)) {
         for (let e of i) e();
         i.clear()
       }
@@ -31,13 +31,13 @@ function o() {
   document.body.addEventListener("transitionrun", exports), document.body.addEventListener("transitionend", require)
 }
 
-function a() {
+function o() {
   for (let [e] of r) "isConnected" in module && !module.isConnected && r.delete(module)
 }
 
 function s(e) {
   requestAnimationFrame(() => {
-    a(), 0 === r.size ? e() : i.add(e)
+    o(), 0 === r.size ? e() : i.add(e)
   })
 }
-"undefined" != typeof document && ("loading" !== document.readyState ? o() : document.addEventListener("DOMContentLoaded", o))
+"undefined" != typeof document && ("loading" !== document.readyState ? a() : document.addEventListener("DOMContentLoaded", a))

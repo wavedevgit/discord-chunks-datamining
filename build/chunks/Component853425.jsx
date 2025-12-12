@@ -13,11 +13,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk478543 = require("./478543.jsx"),
   Chunk366953 = require("./366953.js");
 async function d(e) {
-  if (200 !== (await (0, a.f0)(e)).status) throw Error("Build override couldn't apply");
+  if (200 !== (await (0, o.f0)(e)).status) throw Error("Build override couldn't apply");
   window.location.reload(true)
 }
 async function f(e) {
-  if (200 !== (await (0, a.aD)(e)).status) throw Error("Build override couldn't apply");
+  if (200 !== (await (0, o.aD)(e)).status) throw Error("Build override couldn't apply");
   window.location.reload(true)
 }
 async function p() {
@@ -26,19 +26,19 @@ async function p() {
 let _ = Chunk473749.memo(function(e) {
   let {
     url: t
-  } = e, n = (0, o.cj)([s.C], () => s.C.getCurrentBuildOverride()), a = (0, o.e7)([s.C], () => s.C.getBuildOverride(t)), {
+  } = e, n = (0, a.cj)([s.C], () => s.C.getCurrentBuildOverride()), o = (0, a.e7)([s.C], () => s.C.getBuildOverride(t)), {
     payload: _,
     validatedURL: m
-  } = a, h = n.state === s.Z.Resolving || a.state === s.Z.Resolving, g = i.useCallback(() => {
-    if ((0, l.mG)(a.url) && null != a.override) {
+  } = o, h = n.state === s.Z.Resolving || o.state === s.Z.Resolving, g = i.useCallback(() => {
+    if ((0, l.mG)(o.url) && null != o.override) {
       var e;
-      return f(null == (e = a.override) ? true : e.targetBuildOverride)
+      return f(null == (e = o.override) ? true : e.targetBuildOverride)
     }
-    return null == _ ? Promise.reject(Error("Invalid override payload")) : ((0, u.Z)(a.override, _), d(_))
-  }, [_, a]);
+    return null == _ ? Promise.reject(Error("Invalid override payload")) : ((0, u.Z)(o.override, _), d(_))
+  }, [_, o]);
   return null != m ? (0, r.jsx)(c.Z, {
     loading: h,
-    linkMeta: a.override,
+    linkMeta: o.override,
     currentOverrides: n.overrides,
     applyBuildOverride: g,
     clearBuildOverride: p,

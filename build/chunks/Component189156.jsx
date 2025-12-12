@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk833062 = require("./833062.jsx"),
   Chunk292814 = require("./292814.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk699568 = require("./699568.js");
+  Chunk79484 = require("./79484.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,13 +65,13 @@ function p(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function m(e) {
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     application: e
   }, e.id)
 }
@@ -80,15 +80,15 @@ function h(e) {
   var {
     userId: t,
     variant: n = "text-xs/normal",
-    color: o = "text-default"
+    color: a = "text-default"
   } = e, s = p(e, ["userId", "variant", "color"]);
-  let l = (0, a.e)({
+  let l = (0, o.e)({
     userId: t,
     renderApplicationName: m
   });
   return (0, r.jsx)(i.Text, f(u({
     variant: n,
-    color: o
+    color: a
   }, s), {
     children: l
   }))

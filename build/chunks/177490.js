@@ -13,7 +13,7 @@ function i() {
   }).apply(this, arguments)
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -26,7 +26,7 @@ function o(e) {
   return e
 }
 
-function a(e) {
+function o(e) {
   if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
@@ -45,7 +45,7 @@ function l(e, t) {
 }
 var Chunk329554 = require("./329554.js"),
   Chunk613990 = require("./613990.js"),
-  Chunk590297 = require("./590297.js"),
+  Chunk229450 = require("./229450.js"),
   Chunk410937 = require("./410937.js"),
   Chunk493807 = require("./493807.js"),
   Chunk529742 = require("./529742.js"),
@@ -69,7 +69,7 @@ var Chunk329554 = require("./329554.js"),
   D = !w,
   x = {
     edit: Chunk529742,
-    composite: Chunk590297,
+    composite: Chunk229450,
     drag: Chunk493807,
     cut: null,
     render: null
@@ -95,48 +95,48 @@ var Chunk329554 = require("./329554.js"),
   M = function(e) {
     function t(t) {
       var n;
-      return s(a(n = e.call(this, t) || this), "_blockSelectEvents", true), s(a(n), "_clipboard", true), s(a(n), "_handler", true), s(a(n), "_dragCount", true), s(a(n), "_internalDrag", true), s(a(n), "_editorKey", true), s(a(n), "_placeholderAccessibilityID", true), s(a(n), "_latestEditorState", true), s(a(n), "_latestCommittedEditorState", true), s(a(n), "_pendingStateFromBeforeInput", true), s(a(n), "_onBeforeInput", true), s(a(n), "_onBlur", true), s(a(n), "_onCharacterData", true), s(a(n), "_onCompositionEnd", true), s(a(n), "_onCompositionStart", true), s(a(n), "_onCopy", true), s(a(n), "_onCut", true), s(a(n), "_onDragEnd", true), s(a(n), "_onDragOver", true), s(a(n), "_onDragStart", true), s(a(n), "_onDrop", true), s(a(n), "_onInput", true), s(a(n), "_onFocus", true), s(a(n), "_onKeyDown", true), s(a(n), "_onKeyPress", true), s(a(n), "_onKeyUp", true), s(a(n), "_onMouseDown", true), s(a(n), "_onMouseUp", true), s(a(n), "_onPaste", true), s(a(n), "_onSelect", true), s(a(n), "editor", true), s(a(n), "editorContainer", true), s(a(n), "focus", true), s(a(n), "blur", true), s(a(n), "setMode", true), s(a(n), "exitCurrentMode", true), s(a(n), "restoreEditorDOM", true), s(a(n), "setClipboard", true), s(a(n), "getClipboard", true), s(a(n), "getEditorKey", true), s(a(n), "update", true), s(a(n), "onDragEnter", true), s(a(n), "onDragLeave", true), s(a(n), "_handleEditorContainerRef", function(e) {
+      return s(o(n = e.call(this, t) || this), "_blockSelectEvents", true), s(o(n), "_clipboard", true), s(o(n), "_handler", true), s(o(n), "_dragCount", true), s(o(n), "_internalDrag", true), s(o(n), "_editorKey", true), s(o(n), "_placeholderAccessibilityID", true), s(o(n), "_latestEditorState", true), s(o(n), "_latestCommittedEditorState", true), s(o(n), "_pendingStateFromBeforeInput", true), s(o(n), "_onBeforeInput", true), s(o(n), "_onBlur", true), s(o(n), "_onCharacterData", true), s(o(n), "_onCompositionEnd", true), s(o(n), "_onCompositionStart", true), s(o(n), "_onCopy", true), s(o(n), "_onCut", true), s(o(n), "_onDragEnd", true), s(o(n), "_onDragOver", true), s(o(n), "_onDragStart", true), s(o(n), "_onDrop", true), s(o(n), "_onInput", true), s(o(n), "_onFocus", true), s(o(n), "_onKeyDown", true), s(o(n), "_onKeyPress", true), s(o(n), "_onKeyUp", true), s(o(n), "_onMouseDown", true), s(o(n), "_onMouseUp", true), s(o(n), "_onPaste", true), s(o(n), "_onSelect", true), s(o(n), "editor", true), s(o(n), "editorContainer", true), s(o(n), "focus", true), s(o(n), "blur", true), s(o(n), "setMode", true), s(o(n), "exitCurrentMode", true), s(o(n), "restoreEditorDOM", true), s(o(n), "setClipboard", true), s(o(n), "getClipboard", true), s(o(n), "getEditorKey", true), s(o(n), "update", true), s(o(n), "onDragEnter", true), s(o(n), "onDragLeave", true), s(o(n), "_handleEditorContainerRef", function(e) {
         n.editorContainer = e, n.editor = null !== e ? e.firstChild : null
-      }), s(a(n), "focus", function(e) {
+      }), s(o(n), "focus", function(e) {
         var t = n.props.editorState,
           r = t.getSelection().getHasFocus(),
           i = n.editor;
         if (i) {
-          var o = O.getScrollParent(i),
-            a = e || C(o),
-            s = a.x,
-            l = a.y;
-          P(i) || N(false), i.focus(), o === window ? window.scrollTo(s, l) : y.setTop(o, l), r || n.update(E.forceSelection(t, t.getSelection()))
+          var a = O.getScrollParent(i),
+            o = e || C(a),
+            s = o.x,
+            l = o.y;
+          P(i) || N(false), i.focus(), a === window ? window.scrollTo(s, l) : y.setTop(a, l), r || n.update(E.forceSelection(t, t.getSelection()))
         }
-      }), s(a(n), "blur", function() {
+      }), s(o(n), "blur", function() {
         var e = n.editor;
         e && (P(e) || N(false), e.blur())
-      }), s(a(n), "setMode", function(e) {
+      }), s(o(n), "setMode", function(e) {
         var t = n.props,
           r = t.onPaste,
           i = t.onCut,
-          a = t.onCopy,
-          s = o({}, x.edit);
-        r && (s.onPaste = r), i && (s.onCut = i), a && (s.onCopy = a), n._handler = o({}, x, {
+          o = t.onCopy,
+          s = a({}, x.edit);
+        r && (s.onPaste = r), i && (s.onCut = i), o && (s.onCopy = o), n._handler = a({}, x, {
           edit: s
         })[e]
-      }), s(a(n), "exitCurrentMode", function() {
+      }), s(o(n), "exitCurrentMode", function() {
         n.setMode("edit")
-      }), s(a(n), "restoreEditorDOM", function(e) {
+      }), s(o(n), "restoreEditorDOM", function(e) {
         n.setState({
           contentsKey: n.state.contentsKey + 1
         }, function() {
           n.focus(e)
         })
-      }), s(a(n), "setClipboard", function(e) {
+      }), s(o(n), "setClipboard", function(e) {
         n._clipboard = e
-      }), s(a(n), "getClipboard", function() {
+      }), s(o(n), "getClipboard", function() {
         return n._clipboard
-      }), s(a(n), "update", function(e) {
+      }), s(o(n), "update", function(e) {
         n._latestEditorState = e, n.props.onChange(e)
-      }), s(a(n), "onDragEnter", function() {
+      }), s(o(n), "onDragEnter", function() {
         n._dragCount++
-      }), s(a(n), "onDragLeave", function() {
+      }), s(o(n), "onDragLeave", function() {
         n._dragCount--, 0 === n._dragCount && n.exitCurrentMode()
       }), n._blockSelectEvents = false, n._clipboard = null, n._handler = null, n._dragCount = 0, n._editorKey = t.editorKey || I(), n._placeholderAccessibilityID = "placeholder-" + n._editorKey, n._latestEditorState = t.editorState, n._latestCommittedEditorState = t.editorState, n._onBeforeInput = n._buildHandler("onBeforeInput"), n._onBlur = n._buildHandler("onBlur"), n._onCharacterData = n._buildHandler("onCharacterData"), n._onCompositionEnd = n._buildHandler("onCompositionEnd"), n._onCompositionStart = n._buildHandler("onCompositionStart"), n._onCopy = n._buildHandler("onCopy"), n._onCut = n._buildHandler("onCut"), n._onDragEnd = n._buildHandler("onDragEnd"), n._onDragOver = n._buildHandler("onDragOver"), n._onDragStart = n._buildHandler("onDragStart"), n._onDrop = n._buildHandler("onDrop"), n._onInput = n._buildHandler("onInput"), n._onFocus = n._buildHandler("onFocus"), n._onKeyDown = n._buildHandler("onKeyDown"), n._onKeyPress = n._buildHandler("onKeyPress"), n._onKeyUp = n._buildHandler("onKeyUp"), n._onMouseDown = n._buildHandler("onMouseDown"), n._onMouseUp = n._buildHandler("onMouseUp"), n._onPaste = n._buildHandler("onPaste"), n._onSelect = n._buildHandler("onSelect"), n.getEditorKey = function() {
         return n._editorKey
@@ -174,7 +174,7 @@ var Chunk329554 = require("./329554.js"),
         t = e.blockRenderMap,
         n = e.blockRendererFn,
         r = e.blockStyleFn,
-        a = e.customStyleFn,
+        o = e.customStyleFn,
         s = e.customStyleMap,
         l = e.editorState,
         c = e.preventScroll,
@@ -200,8 +200,8 @@ var Chunk329554 = require("./329554.js"),
           blockRenderMap: t,
           blockRendererFn: n,
           blockStyleFn: r,
-          customStyleMap: o({}, u, s),
-          customStyleFn: a,
+          customStyleMap: a({}, u, s),
+          customStyleFn: o,
           editorKey: this._editorKey,
           editorState: l,
           preventScroll: c,

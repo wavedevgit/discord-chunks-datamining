@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk7284 = require("./7284.js"),
   Chunk256139 = require("./256139.jsx"),
@@ -56,7 +56,7 @@ function m(e) {
   let {
     user: t,
     text: n,
-    channel: o,
+    channel: a,
     textClassName: d,
     onPopoutClosed: p,
     enableDisplayNameStyles: m = false
@@ -66,13 +66,13 @@ function m(e) {
   return (0, r.jsx)(u.Z, {
     targetElementRef: g,
     participants: h,
-    channel: o,
+    channel: a,
     onPopoutClosed: p,
     children: e => (0, r.jsx)(c.Z, _(f({}, e), {
       tag: "span",
       children: (0, r.jsx)(s.xvT, {
         ref: g,
-        className: m ? a()(d, E) : d,
+        className: m ? o()(d, E) : d,
         variant: "text-sm/semibold",
         color: "text-strong",
         lineClamp: 1,

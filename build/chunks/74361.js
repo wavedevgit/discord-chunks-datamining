@@ -9,8 +9,8 @@ var Chunk975898 = require("./975898.js");
 function i(e, t, n) {
   let {
     labelProps: i,
-    inputProps: o,
-    isSelected: a,
+    inputProps: a,
+    isSelected: o,
     isPressed: s,
     isDisabled: l,
     isReadOnly: c
@@ -18,11 +18,11 @@ function i(e, t, n) {
   return {
     labelProps: i,
     inputProps: {
-      ...o,
+      ...a,
       role: "switch",
-      checked: a
+      checked: o
     },
-    isSelected: a,
+    isSelected: o,
     isPressed: s,
     isDisabled: l,
     isReadOnly: c

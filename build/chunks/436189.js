@@ -23,10 +23,10 @@ class d extends Chunk727916.Z {
       d = e.createParsingComponents();
     switch (r) {
       case "jetzt":
-        d = a.zO(e.reference);
+        d = o.zO(e.reference);
         break;
       case "heute":
-        d = a.Lg(e.reference);
+        d = o.Lg(e.reference);
         break;
       case "morgen":
         n = (0, s.WK)(n, {
@@ -54,6 +54,6 @@ class d extends Chunk727916.Z {
           day: false
         })), (0, i.cz)(d, n), d.imply("hour", 0))
     }
-    return l && (d = o.Z.extractTimeComponents(d, l)), d
+    return l && (d = a.Z.extractTimeComponents(d, l)), d
   }
 }

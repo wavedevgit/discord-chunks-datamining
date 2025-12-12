@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk564355 = require("./564355.js");
+  Chunk72775 = require("./72775.js");
 let h = [Chunk541716.Ie.NORMAL, Chunk541716.Ie.SIDEBAR, Chunk541716.Ie.CREATE_FORUM_POST];
 
 function g(e) {
@@ -26,7 +26,7 @@ function g(e) {
     channel: n,
     inputType: d
   } = e, g = (0, u.v)(s.U);
-  return (0, i.e7)([l.Z], () => n.isPrivate() || l.Z.can(p.Plq.ATTACH_FILES, n) && l.Z.can(p.Plq.SEND_MESSAGES, n)) && h.includes(d) ? (0, r.jsx)(o.u, {
+  return (0, i.e7)([l.Z], () => n.isPrivate() || l.Z.can(p.Plq.ATTACH_FILES, n) && l.Z.can(p.Plq.SEND_MESSAGES, n)) && h.includes(d) ? (0, r.jsx)(a.u, {
     shouldShow: !t && null != g,
     keyboardShortcut: g,
     text: _.intl.string(_.t.nzoF5p),
@@ -40,7 +40,7 @@ function g(e) {
           channelId: n.id
         })
       },
-      children: (0, r.jsx)(a.XBm, {
+      children: (0, r.jsx)(o.XBm, {
         size: "refresh_sm",
         color: "currentColor"
       })

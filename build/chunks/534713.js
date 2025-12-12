@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk69580 = require("./69580.jsx");
 
 function i(e) {
-  var t, n, i, o;
-  let a = null == e ? true : e.get("client_id"),
+  var t, n, i, a;
+  let o = null == e ? true : e.get("client_id"),
     s = null == e || null == (t = e.get("scope")) ? true : t.split(" "),
     l = null == e ? true : e.get("state"),
     c = null == e ? true : e.get("redirect_uri"),
     u = null == e ? true : e.get("response_type"),
     d = null != (n = null == e ? true : e.get("nonce")) ? n : true,
     f = null != (i = null == e ? true : e.get("code_challenge")) ? i : true,
-    p = null != (o = null == e ? true : e.get("code_challenge_method")) ? o : true;
-  return null == a || null == s || null == c || null == u || ((0, r.openOAuth2Modal)({
-    clientId: a,
+    p = null != (a = null == e ? true : e.get("code_challenge_method")) ? a : true;
+  return null == o || null == s || null == c || null == u || ((0, r.openOAuth2Modal)({
+    clientId: o,
     scopes: s,
     redirectUri: c,
     state: null != l ? l : true,

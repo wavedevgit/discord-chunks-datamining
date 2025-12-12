@@ -11,7 +11,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk493773 = require("./493773.js"),
   Chunk930295 = require("./930295.jsx"),
   Chunk126306 = require("./126306.jsx"),
-  Chunk974101 = require("./974101.js");
+  Chunk74492 = require("./74492.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var g = function(e) {
@@ -99,8 +99,8 @@ class y extends(r = Chunk473749.Component) {
       shouldShow: t,
       onRequestOpen: n,
       onRequestClose: r,
-      align: o,
-      fixed: a,
+      align: a,
+      fixed: o,
       useRawTargetDimensions: s,
       onShiftClick: c,
       positionKey: u,
@@ -134,7 +134,7 @@ class y extends(r = Chunk473749.Component) {
       onRequestOpen: require,
       onRequestClose: r,
       onShiftClick: Chunk126306,
-      positionKey: Chunk974101,
+      positionKey: Chunk74492,
       popoutKey: d,
       disablePointerEvents: p,
       ignoreModalClicks: _,
@@ -146,7 +146,7 @@ class y extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), d(this, "ref", o.createRef()), d(this, "renderPopout", e => {
+    super(...e), d(this, "ref", a.createRef()), d(this, "renderPopout", e => {
       let {
         renderPopout: t,
         animation: n = "2",
@@ -173,22 +173,22 @@ function O(e) {
   var {
     renderPopout: t
   } = e, n = m(e, ["renderPopout"]);
-  let r = o.useRef(null),
-    [l, c] = o.useState(0);
+  let r = a.useRef(null),
+    [l, c] = a.useState(0);
 
   function d() {
     return h(), (0, i.jsx)(i.Fragment, {})
   }
-  o.useLayoutEffect(() => {
+  a.useLayoutEffect(() => {
     if (l > 0) {
-      var e, t, n, i, o;
-      null == (o = r.current) || null == (i = o.ref) || null == (n = i.current) || null == (t = n.layerRef) || null == (e = t.current) || e.updatePosition()
+      var e, t, n, i, a;
+      null == (a = r.current) || null == (i = a.ref) || null == (n = i.current) || null == (t = n.layerRef) || null == (e = t.current) || e.updatePosition()
     }
   }, [l]), (0, s.ZP)(() => {
     let e = setTimeout(t, 20 + 20 * Math.random());
     return () => clearTimeout(e)
   });
-  let p = o.useRef(false);
+  let p = a.useRef(false);
   async function h() {
     if (!p.current) {
       p.current = true;
@@ -201,21 +201,21 @@ function O(e) {
   }
 
   function g() {
-    var e, t, n, o;
-    let s = null == (o = r.current) || null == (n = o.ref) || null == (t = n.current) || null == (e = t.domElementRef) ? true : e.current,
+    var e, t, n, a;
+    let s = null == (a = r.current) || null == (n = a.ref) || null == (t = n.current) || null == (e = t.domElementRef) ? true : e.current,
       l = Math.max(100, null == s ? 100 : s.offsetWidth - 20);
     return (0, i.jsx)("div", {
       className: u.loader,
       style: {
         width: l
       },
-      children: (0, i.jsx)(a.$jN, {})
+      children: (0, i.jsx)(o.$jN, {})
     })
   }
-  let [E, b] = o.useState(() => d), O = o.useRef(d);
-  return o.useEffect(() => {
+  let [E, b] = a.useState(() => d), O = a.useRef(d);
+  return a.useEffect(() => {
     O.current = d
-  }), o.useEffect(() => {
+  }), a.useEffect(() => {
     p.current ? t().then(e => {
       b(() => e), c(e => e + 1)
     }) : b(() => O.current)

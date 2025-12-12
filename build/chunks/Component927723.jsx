@@ -12,7 +12,7 @@ var Chunk885387 = require("./885387.jsx"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546484 = require("./546484.js");
+  Chunk792389 = require("./792389.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ function _(e) {
   let {
     kind: t
   } = e;
-  (0, o.ZDy)(async () => {
+  (0, a.ZDy)(async () => {
     let {
       default: e
     } = await n.e("7285").then(n.bind(n, 951269));
@@ -69,8 +69,8 @@ function _(e) {
 
 function m() {
   (0, Chunk885387.Z)({
-    title: Chunk388032.intl.string(Chunk546484.default.odgSTk),
-    subtitle: Chunk388032.intl.format(Chunk546484.default.EZfHRq, {
+    title: Chunk388032.intl.string(Chunk792389.default.odgSTk),
+    subtitle: Chunk388032.intl.format(Chunk792389.default.EZfHRq, {
       helpURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NSFW_AGE_GATING)
     })
   })

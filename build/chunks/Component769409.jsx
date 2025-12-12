@@ -39,14 +39,14 @@ let u = (e, t) => {
       u = e
     },
     f = () => {
-      u ? o.Z.show({
+      u ? a.Z.show({
         title: s.intl.string(s.t.pvRCSu),
         body: s.intl.string(s.t.DRi46S),
         confirmText: s.intl.string(s.t["6GQDFu"]),
         confirmVariant: "critical-primary",
         cancelText: s.intl.string(s.t.DmDzZB),
         onConfirm: () => (0, i.Mr3)(l),
-        onCancel: a.dG
+        onCancel: o.dG
       }) : (0, i.Mr3)(l)
     };
   (0, i.ZDy)(async () => {

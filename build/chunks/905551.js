@@ -36,13 +36,13 @@ function _(e) {
       catalog: l.j.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3);
-  let a = null != (n = null == (t = o.default.getCurrentUser()) ? true : t.isStaff()) && n;
+  let o = null != (n = null == (t = a.default.getCurrentUser()) ? true : t.isStaff()) && n;
   return (0, s.Kb)({
     url: p.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(f.SW),
     query: {
       guild_id: e,
-      include_unpublished_products: a,
-      include_unpublished_collection: a
+      include_unpublished_products: o,
+      include_unpublished_collection: o
     },
     oldFormErrors: true,
     rejectWithError: false,
@@ -93,8 +93,8 @@ function h(e, t) {
     retries: 3
   }).then(n => {
     if (null != n.body) {
-      var r, o, a, s;
-      let l = null != (s = null == (a = n.body.tenant_metadata) || null == (o = a.guild_monetization) || null == (r = o.game_server) ? true : r.instructions.pc) ? s : [];
+      var r, a, o, s;
+      let l = null != (s = null == (o = n.body.tenant_metadata) || null == (a = o.guild_monetization) || null == (r = a.game_server) ? true : r.instructions.pc) ? s : [];
       i.Z.dispatch({
         type: "GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS",
         guildId: e,
@@ -108,8 +108,8 @@ function h(e, t) {
 function g(e, t) {
   if (e) {
     var n;
-    a.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
-      user_id: null == (n = o.default.getCurrentUser()) ? true : n.id,
+    o.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
+      user_id: null == (n = a.default.getCurrentUser()) ? true : n.id,
       provider: t
     })
   }

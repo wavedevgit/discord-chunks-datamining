@@ -46,7 +46,7 @@ async function _(e) {
   });
   if (null != t.text && "" !== t.text) {
     let n = s.Z.getChannel(e.channel_id);
-    null != n && ((0, a.fE)({
+    null != n && ((0, o.fE)({
       channel: n,
       message: e,
       shouldMention: false,
@@ -56,5 +56,5 @@ async function _(e) {
 }
 
 function m(e) {
-  c.Z.getMessages(e).hasMoreAfter ? o.Z.jumpToPresent(e, d.AQB) : u.S.dispatch(d.CkL.SCROLLTO_PRESENT)
+  c.Z.getMessages(e).hasMoreAfter ? a.Z.jumpToPresent(e, d.AQB) : u.S.dispatch(d.CkL.SCROLLTO_PRESENT)
 }

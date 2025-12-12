@@ -12,13 +12,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk659302 = require("./659302.jsx"),
   Chunk211712 = require("./211712.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk19895 = require("./19895.js");
+  Chunk331466 = require("./331466.js");
 
 function f(e) {
   let {
     preset: t,
     onShuffle: n
-  } = e, f = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), p = (0, l.g2)({
+  } = e, f = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), p = (0, l.g2)({
     useReducedMotion: f
   }), {
     name: _,
@@ -32,14 +32,14 @@ function f(e) {
   }, [t]);
   return (0, r.jsxs)("div", {
     className: d.container,
-    children: [(0, r.jsx)(a.P3F, {
+    children: [(0, r.jsx)(o.P3F, {
       onClick: () => {
         n(), p.startAnimation(false)
       },
       className: d.button,
       "aria-label": u.intl.string(u.t["44yJxh"]),
       children: p.render()
-    }), (0, r.jsxs)(a.P3F, {
+    }), (0, r.jsxs)(o.P3F, {
       onClick: () => {
         n(), p.startAnimation(false)
       },
@@ -50,7 +50,7 @@ function f(e) {
         "aria-hidden": true,
         src: m,
         className: d.presetImage
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: d.presetLabel,
         variant: "text-sm/bold",
         color: "always-white",

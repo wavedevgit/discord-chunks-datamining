@@ -45,12 +45,12 @@ function _() {
       i = () => {
         for (let {
             socket: n,
-            device: o
+            device: a
           }
-          of c.Z.getPlayableComputerDevices()) null == t.find(e => e.device.id === o.id) && (clearTimeout(r), c.Z.removeChangeListener(i), setImmediate(() => {
-          (0, s.Tu)(n.accountId, o.id), e({
+          of c.Z.getPlayableComputerDevices()) null == t.find(e => e.device.id === a.id) && (clearTimeout(r), c.Z.removeChangeListener(i), setImmediate(() => {
+          (0, s.Tu)(n.accountId, a.id), e({
             socket: n,
-            device: o
+            device: a
           })
         }))
       };
@@ -85,13 +85,13 @@ function g(e) {
 async function E(e, t) {
   var n;
   let i = await (0, r.sd)(e, t),
-    o = (0, u.c8)(g(null != (n = i.type) ? n : u.Hw.TRACK));
-  if (null === o) throw Error("invalid type ".concat(i.type));
+    a = (0, u.c8)(g(null != (n = i.type) ? n : u.Hw.TRACK));
+  if (null === a) throw Error("invalid type ".concat(i.type));
   return {
     context_uri: "string" == typeof i.context_uri ? i.context_uri : true,
     album_id: g(i.album_id),
     artist_ids: Array.isArray(i.artist_ids) ? i.artist_ids.map(g) : [],
-    type: o,
+    type: a,
     button_urls: Array.isArray(i.button_urls) ? i.button_urls.map(g) : []
   }
 }

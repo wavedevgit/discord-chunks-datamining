@@ -9,10 +9,10 @@ var Chunk992261 = require("./992261.js");
 function i(e, t, n) {
   let i = (0, r.HG)(n);
   return null == i ? e : "vc_probability" === i ? [...e].sort((e, n) => {
-    var r, i, o, a;
-    return (null != (o = null == (r = t.get(n.id)) ? true : r.vcProbability) ? o : 0) - (null != (a = null == (i = t.get(e.id)) ? true : i.vcProbability) ? a : 0)
+    var r, i, a, o;
+    return (null != (a = null == (r = t.get(n.id)) ? true : r.vcProbability) ? a : 0) - (null != (o = null == (i = t.get(e.id)) ? true : i.vcProbability) ? o : 0)
   }) : [...e].sort((e, n) => {
-    var r, i, o, a;
-    return (null != (o = null == (r = t.get(n.id)) ? true : r.communicationProbability) ? o : 0) - (null != (a = null == (i = t.get(e.id)) ? true : i.communicationProbability) ? a : 0)
+    var r, i, a, o;
+    return (null != (a = null == (r = t.get(n.id)) ? true : r.communicationProbability) ? a : 0) - (null != (o = null == (i = t.get(e.id)) ? true : i.communicationProbability) ? o : 0)
   })
 }

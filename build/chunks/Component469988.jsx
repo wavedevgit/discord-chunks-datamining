@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk808709 = require("./808709.js");
+  Chunk105960 = require("./105960.js");
 let s = e => {
   let {
     hasHub: t
@@ -38,7 +38,7 @@ let s = e => {
       onClick: () => (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("7082"), n.e("60903")]).then(n.bind(n, 650233));
+        } = await Promise.all([n.e("7082"), n.e("32454")]).then(n.bind(n, 650233));
         return t => (0, r.jsx)(e, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

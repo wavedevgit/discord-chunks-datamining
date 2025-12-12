@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 654544, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk582113 = require("./582113.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk369929 = require("./369929.js");
+  Chunk274156 = require("./274156.js");
 
 function d(e) {
   let {
@@ -18,12 +18,12 @@ function d(e) {
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: d,
     socialLayerStorefrontApplicationId: f
-  } = e, g = i.useRef(null), [p, m] = i.useState(false), b = (0, a.q)(f), h = i.useMemo(() => {
-    let e = null == b || b.id !== s.t9 ? c.intl.string(c.t.apFNLU) : c.intl.string(c.t["kq/75v"]);
-    if (null == b) return e;
+  } = e, g = i.useRef(null), [p, b] = i.useState(false), m = (0, l.q)(f), h = i.useMemo(() => {
+    let e = null == m || m.id !== c.t9 ? s.intl.string(s.t.apFNLU) : s.intl.string(s.t["kq/75v"]);
+    if (null == m) return e;
     let t = o.ZP.getApplicationIconURL({
-      id: b.id,
-      icon: b.icon,
+      id: m.id,
+      icon: m.icon,
       size: 20
     });
     return (0, r.jsxs)("div", {
@@ -32,43 +32,43 @@ function d(e) {
         className: u.applicationIcon,
         src: t,
         alt: e
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
         children: e
       })]
     })
-  }, [b]), y = i.useMemo(() => (0, r.jsxs)(l.kSQ, {
-    children: [(0, r.jsx)(l.sNh, {
+  }, [m]), y = i.useMemo(() => (0, r.jsxs)(a.kSQ, {
+    children: [(0, r.jsx)(a.sNh, {
       id: "browse-collectibles-shop",
-      label: c.intl.string(c.t["5upuqx"]),
-      iconLeft: l.EOn,
+      label: s.intl.string(s.t["5upuqx"]),
+      iconLeft: a.EOn,
       action: n
-    }), (0, r.jsx)(l.sNh, {
+    }), (0, r.jsx)(a.sNh, {
       id: "browse-social-layer-storefront",
       label: h,
-      iconLeft: null != b ? true : l.EOn,
+      iconLeft: null != m ? true : a.EOn,
       action: d
     })]
-  }), [n, d, h, b]);
-  return (0, r.jsx)(l.yRy, {
+  }), [n, d, h, m]);
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: g,
     position: "bottom",
-    onRequestOpen: () => m(true),
-    onRequestClose: () => m(false),
+    onRequestOpen: () => b(true),
+    onRequestClose: () => b(false),
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(l.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: "wishlist-overflow-menu",
         onSelect: true,
         onClose: t,
-        "aria-label": c.intl.string(c.t.GdNkvG),
+        "aria-label": s.intl.string(s.t.GdNkvG),
         children: y
       })
     },
-    children: e => (0, r.jsx)(l.Button, function(e) {
+    children: e => (0, r.jsx)(a.Button, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -89,7 +89,7 @@ function d(e) {
       buttonRef: g,
       variant: "secondary",
       size: "sm",
-      icon: p ? l.Dio : l.CJ0,
+      icon: p ? a.Dio : a.CJ0,
       iconPosition: "end",
       text: t
     }, e))

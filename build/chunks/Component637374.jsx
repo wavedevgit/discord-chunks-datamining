@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk494452 = require("./494452.js");
+  Chunk609626 = require("./609626.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -124,7 +124,7 @@ class z extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), V(this, "renderMedia", () => (0, r.jsx)("div", {
-      className: a()(B.invalidPoop, {
+      className: o()(B.invalidPoop, {
         [B.invalidPoopHorizontal]: this.isHorizontal
       })
     })), V(this, "renderTitle", () => this.props.isSelfGift ? F.intl.string(F.t.mT9B49) : F.intl.string(F.t.Vo5yHw)), V(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
@@ -189,11 +189,11 @@ class q extends Chunk473749.Component {
       libraryApplication: t,
       currentUser: n,
       isSelfGift: i
-    } = this.props, o = {
+    } = this.props, a = {
       onClick: this.handleAccept,
       color: u.zx.Colors.BRAND
-    }, a = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, j.I5)(n);
-    return (e.redeemed || a || e.isClaimed || !n.verified) && (o.color = u.zx.Colors.BRAND, o.disabled = true), (0, r.jsx)(u.zx, W(H({}, o), {
+    }, o = !e.isSubscription && null != t || !e.isSelfRedeemable && i || e.isExistingPremiumSubscriptionDisallowed && (0, j.I5)(n);
+    return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, W(H({}, a), {
       className: (0, g.mO)(e) ? B.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
       children: e.redeemed ? F.intl.string(F.t.BTihou) : null != e.giftStyle ? F.intl.string(F.t.TiZFqX) : F.intl.string(F.t.bUvv1f)
@@ -221,8 +221,8 @@ class q extends Chunk473749.Component {
       isSelfGift: n,
       sku: r,
       gifter: i,
-      subscriptionPlan: o,
-      currentUser: a
+      subscriptionPlan: a,
+      currentUser: o
     } = this.props;
     if (null == r) return F.intl.string(F.t.ZTNur7);
     if (!n && this.isCustomGiftMessage() && !e.redeemed) return;
@@ -238,7 +238,7 @@ class q extends Chunk473749.Component {
       onViewInLibrary: this.handleViewLibrary
     });
     if (e.isClaimed) return F.intl.string(F.t.ARWFQX);
-    if (!a.verified) return F.intl.format(F.t.GQxl7v, {
+    if (!o.verified) return F.intl.format(F.t.GQxl7v, {
       onClick: this.handleVerificationClick
     });
     if (n) return e.isSelfRedeemable ? F.intl.string(F.t["lQI+cB"]) : F.intl.formatToPlainString(F.t["A+etHx"], {
@@ -261,19 +261,19 @@ class q extends Chunk473749.Component {
       skuName: s
     });
     if (e.isSubscription) {
-      if (null == o) return F.intl.string(F.t.ZTNur7);
+      if (null == a) return F.intl.string(F.t.ZTNur7);
       if (null != i) {
-        let e = o.interval === Z.rV.MONTH ? F.t["/RDIEA"] : F.t["3CX6Ev"];
+        let e = a.interval === Z.rV.MONTH ? F.t["/RDIEA"] : F.t["3CX6Ev"];
         return F.intl.format(e, {
           username: k.ZP.getUserTag(i),
           skuName: s,
-          intervalCount: o.intervalCount
+          intervalCount: a.intervalCount
         })
       }
-      let e = o.interval === Z.rV.MONTH ? F.t["2O4lo5"] : F.t["+XjmsR"];
+      let e = a.interval === Z.rV.MONTH ? F.t["2O4lo5"] : F.t["+XjmsR"];
       return F.intl.format(e, {
         skuName: s,
-        intervalCount: o.intervalCount
+        intervalCount: a.intervalCount
       })
     }
     return null != i ? F.intl.format(F.t["3HsdQ/"], {
@@ -332,7 +332,7 @@ class q extends Chunk473749.Component {
         isHorizontal: require >= Chunk568836.aL
       });
     return (0, Chunk884697.mO)(module) ? (0, Chunk54381.jsx)("div", {
-      className: Chunk494452.collectiblesEmbedWrapper,
+      className: Chunk609626.collectiblesEmbedWrapper,
       children: this.renderEmbed()
     }) : this.renderEmbed()
   }
@@ -356,7 +356,7 @@ class q extends Chunk473749.Component {
         code: n,
         content: r,
         type: i,
-        giftInfo: o
+        giftInfo: a
       } = this.props;
       e.preventDefault(), e.stopPropagation(), x.default.track(G.rMx.OPEN_MODAL, {
         type: "gift_accept",
@@ -364,12 +364,12 @@ class q extends Chunk473749.Component {
           object: G.qAy.BUTTON_CTA
         })
       });
-      let a = i !== G.uaV.CUSTOM_GIFT ? true : r;
+      let o = i !== G.uaV.CUSTOM_GIFT ? true : r;
       (0, y.V)({
         processedCode: n,
         channelContext: t,
-        customGiftMessage: a,
-        giftInfo: o
+        customGiftMessage: o,
+        giftInfo: a
       })
     }), V(this, "handleEmbedClick", e => {
       let {
@@ -397,11 +397,11 @@ class q extends Chunk473749.Component {
       } = this.props;
       if (null == e || null == e.giftStyle) return null;
       let n = Z.jy.includes(e.giftStyle),
-        i = a()(B.customGiftEmbedWrapper, {
+        i = o()(B.customGiftEmbedWrapper, {
           [B.legacySeasonalGiftEmbedWrapper]: n,
           [B.giftEmbedWrapperHorizontal]: t >= f.aL
         }),
-        o = a()({
+        a = o()({
           [B.legacySeasonalGiftEmbedBox]: n,
           [B.legacySeasonalGiftEmbedBoxHorizontal]: n && t >= f.aL,
           [B.customGiftEmbedBox]: !n,
@@ -414,7 +414,7 @@ class q extends Chunk473749.Component {
         }), null != e.giftStyle && (0, r.jsx)(O.Z, {
           defaultAnimationState: e.redeemed ? b.SR.LOOP : b.SR.IDLE,
           giftStyle: e.giftStyle,
-          className: o
+          className: a
         })]
       })
     })
@@ -427,16 +427,16 @@ let Q = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
       author: n
     } = e, {
       giftCode: i,
-      resolved: o
+      resolved: a
     } = (0, c.cj)([N.Z], () => ({
       giftCode: N.Z.get(t),
       resolved: N.Z.getIsResolved(t)
-    })), a = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([w.Z], () => null != i ? w.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([A.default], () => null != i ? A.default.getId() === i.userId : A.default.getId() === n.id);
+    })), o = (0, c.e7)([R.default], () => null != i && null != i.userId ? R.default.getUser(i.userId) : null), s = (0, c.e7)([w.Z], () => null != i ? w.Z.get(i.skuId) : null), l = (0, c.e7)([P.Z], () => null != s && (null == i ? true : i.entitlementBranches) != null ? L.z2(i.entitlementBranches, s, P.Z) : null), u = (0, h.q)(null == s ? true : s.applicationId), d = (0, M.IV)(null == i ? true : i.subscriptionPlanId), f = (0, c.e7)([A.default], () => null != i ? A.default.getId() === i.userId : A.default.getId() === n.id);
     return (0, r.jsx)(Q, W(H({}, e), {
       skuApplication: u,
       giftCode: i,
-      resolved: o,
-      gifter: a,
+      resolved: a,
+      gifter: o,
       libraryApplication: l,
       subscriptionPlan: d,
       sku: s,

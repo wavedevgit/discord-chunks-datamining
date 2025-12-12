@@ -20,13 +20,13 @@ function i(e) {
   return null != e.video_low_res && (t.videoLowRes = r(e.video_low_res)), null != e.video_hls && (t.videoHls = r(e.video_hls)), t
 }
 
-function o(e) {
+function a(e) {
   return {
     videoTitle: e.video_title
   }
 }
 
-function a(e) {
+function o(e) {
   let t = {
     video: r(e.video)
   };
@@ -39,8 +39,8 @@ function s(e) {
   }
 }
 require.d(exports, {
-  I9: () => o,
+  I9: () => a,
   _c: () => i,
-  c1: () => a,
+  c1: () => o,
   jZ: () => s
 })

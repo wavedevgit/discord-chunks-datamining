@@ -59,8 +59,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = {
@@ -85,8 +85,8 @@ class y extends Chunk473749.PureComponent {
         skus: t,
         children: n,
         applicationId: i,
-        primarySKU: o,
-        onSKUSelect: a
+        primarySKU: a,
+        onSKUSelect: o
       } = module,
       s = g(module, ["skus", "children", "applicationId", "primarySKU", "onSKUSelect"]);
     return (0, Chunk54381.jsx)(Chunk585237.Z, h(_({
@@ -104,12 +104,12 @@ class y extends Chunk473749.PureComponent {
         onSKUSelect: t,
         onMenuSelect: n
       } = this.props;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         onSelect: n,
         navId: "test-skus",
         "aria-label": f.intl.string(f.t.ogxXGq),
         onClose: s.Zy,
-        children: e.map(e => (0, r.jsx)(a.sNh, {
+        children: e.map(e => (0, r.jsx)(o.sNh, {
           id: "".concat(e.id),
           label: e.name,
           action: () => {

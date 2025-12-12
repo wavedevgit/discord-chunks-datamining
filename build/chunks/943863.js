@@ -9,7 +9,7 @@ var Chunk638934 = require("./638934.js"),
   Chunk378044 = require("./378044.js"),
   c = Chunk638934(Chunk98570()),
   u = function(e) {
-    return o(e), c(e)
+    return a(e), c(e)
   };
 Chunk286233(u, {
   getPolyfill: Chunk98570,

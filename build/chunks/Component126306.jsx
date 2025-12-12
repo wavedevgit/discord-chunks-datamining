@@ -7,33 +7,33 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk846519 = require("./846519.js"),
-  Chunk840954 = require("./840954.js");
+  Chunk711560 = require("./711560.js");
 let u = 200;
 var d = function(e) {
   return e[e.TRANSLATE = 1] = "TRANSLATE", e[e.SCALE = 2] = "SCALE", e[e.FADE = 3] = "FADE", e
 }(d || {});
 let f = Object.freeze({
-    1: Chunk840954.translate,
-    2: Chunk840954.scale,
-    3: Chunk840954.fade
+    1: Chunk711560.translate,
+    2: Chunk711560.scale,
+    3: Chunk711560.fade
   }),
   p = Object.freeze({
-    top: Chunk840954.animatorTop,
-    bottom: Chunk840954.animatorBottom,
-    left: Chunk840954.animatorLeft,
-    right: Chunk840954.animatorRight,
-    center: Chunk840954.animatorCenter,
-    window_center: Chunk840954.animatorCenter
+    top: Chunk711560.animatorTop,
+    bottom: Chunk711560.animatorBottom,
+    left: Chunk711560.animatorLeft,
+    right: Chunk711560.animatorRight,
+    center: Chunk711560.animatorCenter,
+    window_center: Chunk711560.animatorCenter
   });
 
 function _(e) {
   let {
     position: t,
     type: n,
-    children: o
+    children: a
   } = e, {
     reducedMotion: d
   } = i.useContext(s.Sfi), _ = d.enabled ? 3 : n, [m, h] = i.useState(null != t), [g] = i.useState(() => new l.V7), [E, b] = i.useState(true), y = i.useRef(null);
@@ -48,11 +48,11 @@ function _(e) {
     null != t && g.start(10, () => h(true))
   }, [t, g]), (0, r.jsx)("div", {
     "data-popout-animating": E,
-    className: a()(null != t ? p[t] : null, {
+    className: o()(null != t ? p[t] : null, {
       [f[_]]: null != t,
       [c.didRender]: m
     }),
-    children: o
+    children: a
   })
 }
 _.Types = d

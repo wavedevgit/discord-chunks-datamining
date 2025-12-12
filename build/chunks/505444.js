@@ -55,7 +55,7 @@ Object.keys(t).forEach(function(e) {
   })
 });
 var i = t,
-  o = {
+  a = {
     background: {
       backgroundAttachment: true,
       backgroundColor: true,
@@ -107,13 +107,13 @@ var i = t,
       outlineColor: true
     }
   },
-  a = !!("undefined" != typeof window && window.document && window.document.createElement),
+  o = !!("undefined" != typeof window && window.document && window.document.createElement),
   s = {
-    canUseDOM: a,
+    canUseDOM: o,
     canUseWorkers: "undefined" != typeof Worker,
-    canUseEventListeners: a && !!(window.addEventListener || window.attachEvent),
-    canUseViewport: a && !!window.screen,
-    isInWorker: !a
+    canUseEventListeners: o && !!(window.addEventListener || window.attachEvent),
+    canUseViewport: o && !!window.screen,
+    isInWorker: !o
   },
   l = i;
 
@@ -147,12 +147,12 @@ module.exports = {
     var r = e.style;
     for (var i in t)
       if (t.hasOwnProperty(i)) {
-        var a = 0 === i.indexOf("--"),
-          s = c(i, t[i], a);
-        if ("float" === i && (i = "cssFloat"), a) r.setProperty(i, s);
+        var o = 0 === i.indexOf("--"),
+          s = c(i, t[i], o);
+        if ("float" === i && (i = "cssFloat"), o) r.setProperty(i, s);
         else if (s) r[i] = s;
         else {
-          var l = f && o[i];
+          var l = f && a[i];
           if (l)
             for (var u in l) r[u] = "";
           else r[i] = ""

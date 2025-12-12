@@ -15,7 +15,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk372563 = require("./372563.js");
+  Chunk169592 = require("./169592.js");
 
 function _(e) {
   let {
@@ -30,7 +30,7 @@ function _(e) {
     channelId: n.id,
     guildId: true,
     messageId: true
-  })(), E = (0, o.q)(t.applicationId);
+  })(), E = (0, a.q)(t.applicationId);
   if (null == E) return null;
   let b = f.intl.format(f.t.m7Lwas, {
     username: h,
@@ -38,9 +38,9 @@ function _(e) {
     gameName: E.name,
     gameIconHook: e => (0, r.jsxs)("span", {
       className: p.gameContainer,
-      children: [(0, r.jsx)(a.Z, {
+      children: [(0, r.jsx)(o.Z, {
         game: E,
-        size: a.A.XXSMALL,
+        size: o.A.XXSMALL,
         className: p.inlineIcon
       }), " ", e]
     }),

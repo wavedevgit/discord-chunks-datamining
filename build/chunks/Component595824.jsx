@@ -53,15 +53,15 @@ function f(e, t) {
 
 function p(e) {
   var t, n;
-  let a = i.useContext(o.KJ);
-  return (null == a || null == (n = a.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(s.C, u({}, e)) : (0, r.jsx)(_, u({}, e))
+  let o = i.useContext(a.KJ);
+  return (null == o || null == (n = o.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(s.C, u({}, e)) : (0, r.jsx)(_, u({}, e))
 }
 
 function _(e) {
   let {
     label: t,
     checked: n,
-    onChange: o,
+    onChange: a,
     labelType: s = "primary",
     description: c,
     leadingIcon: d
@@ -77,12 +77,12 @@ function _(e) {
         color: "currentColor",
         "aria-hidden": true,
         focusable: false
-      }), (0, r.jsx)(a.x, {
+      }), (0, r.jsx)(o.x, {
         variant: "text-md/normal",
         color: "primary" === s ? "text-strong" : "text-subtle",
         children: t
       })]
-    }), null != c && "" !== c && (0, r.jsx)(a.x, {
+    }), null != c && "" !== c && (0, r.jsx)(o.x, {
       variant: "text-sm/normal",
       color: "text-subtle",
       style: {
@@ -93,7 +93,7 @@ function _(e) {
   }) : null;
   return (0, r.jsx)(l.$q, f(u({}, e), {
     value: n,
-    onChange: (e, t) => null == o ? true : o(t),
+    onChange: (e, t) => null == a ? true : a(t),
     children: p
   }))
 }

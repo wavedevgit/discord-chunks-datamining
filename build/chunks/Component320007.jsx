@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 320007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,11 +19,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function E(e) {
   let {
     canShowReminder: t = false,
-    className: b
-  } = e, E = (0, f.Z)(u.Z), {
+    className: E
+  } = e, _ = (0, f.Z)(u.Z), {
     showClipsHeaderEntrypoint: O
   } = d.NV.useExperiment({
     location: "ClipsButton"
@@ -48,7 +48,7 @@ function b(e) {
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("61342"), n.e("2161")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("61342"), n.e("17316")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -71,7 +71,7 @@ function b(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (C ? P() : x(), () => x()), [C, P, x]), O && E) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (C ? P() : x(), () => x()), [C, P, x]), O && _) ? (0, r.jsxs)(r.Fragment, {
     children: [null != T && t && I && S && !(0, a.$sL)() && !j && (0, r.jsx)(h.Z, {
       clipIconRef: T,
       lastClipsSession: y,
@@ -79,10 +79,10 @@ function b(e) {
     }), (0, r.jsx)("div", {
       ref: N,
       children: (0, r.jsx)(s.JO, {
-        className: b,
+        className: E,
         icon: a.AlX,
         showBadge: v,
-        tooltip: _.intl.string(_.t.MXaLEM),
+        tooltip: b.intl.string(b.t.MXaLEM),
         onClick: A
       })
     })]

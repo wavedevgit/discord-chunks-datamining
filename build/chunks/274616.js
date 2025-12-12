@@ -19,7 +19,7 @@ async function f() {
   if (!(0, Chunk804739.Q)() || 0 === module.length) return [];
   let t = i().chunk(module, d);
   try {
-    let e = exports.map(async e => (await o.tn.post({
+    let e = exports.map(async e => (await a.tn.post({
         url: u.ANM.APPLICATION_BRANCHES,
         body: {
           branch_ids: e
@@ -42,19 +42,19 @@ async function f() {
 }
 async function p(e) {
   try {
-    let t = await o.tn.get({
+    let t = await a.tn.get({
         url: u.ANM.OWNED_APPLICATION_BRANCHES(e),
         oldFormErrors: true,
         rejectWithError: true
       }),
       n = Array.isArray(t.body) ? t.body.map(s.Z.createFromServer) : [];
-    return a.Z.dispatch({
+    return o.Z.dispatch({
       type: "OWNED_APPLICATION_BRANCHES_FETCH_SUCCESS",
       applicationId: e,
       branches: n
     }), n
   } catch (t) {
-    return a.Z.dispatch({
+    return o.Z.dispatch({
       type: "OWNED_APPLICATION_BRANCHES_FETCH_FAIL",
       applicationId: e
     }), []

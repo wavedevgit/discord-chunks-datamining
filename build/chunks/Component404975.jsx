@@ -1,4 +1,4 @@
-/** Chunk was on 88569 **/
+/** Chunk was on 91968 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => h
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk873546 = require("./873546.js"),
   Chunk704215 = require("./704215.js"),
@@ -20,13 +20,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk886880 = require("./886880.jsx"),
   Chunk854014 = require("./854014.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk845435 = require("./845435.js");
+  Chunk492860 = require("./492860.js");
 
 function h(e) {
   let {
     root: t,
     footer: n,
-    onClose: i,
+    onClose: a,
     emptyState: s,
     searchQuery: O,
     onSearchChange: m
@@ -47,34 +47,34 @@ function h(e) {
         }
       })
     }), e
-  }, [t.layout]), [_, w] = o.useMemo(() => {
+  }, [t.layout]), [w, T] = o.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
       t.hoisted ? e.push(t) : n.push(t)
     }), [e, n]
-  }, [t.layout]), T = (0, y.Ll)(), k = (0, f.Z)("settings-sidebar", P), E = g.Z.useField("currentPanelKey");
+  }, [t.layout]), k = (0, y.Ll)(), E = (0, d.Z)("settings-sidebar", P), N = g.Z.useField("currentPanelKey");
   return o.useEffect(() => {
     var e;
-    if (null == P.current || null == E) return;
+    if (null == P.current || null == N) return;
     let t = g.Z.getField("navTransition"),
       n = null == t || t.animateScroll,
-      r = null == (e = P.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(E, '"]'));
+      r = null == (e = P.current.getScrollerNode()) ? true : e.querySelector('[data-settings-sidebar-item="'.concat(N, '"]'));
     null != r && P.current.scrollIntoViewNode({
       node: r,
       padding: 8,
-      animate: !b.Z.useReducedMotion && n
+      animate: !f.Z.useReducedMotion && n
     })
-  }, [E]), (0, r.jsx)(u.f6W, {
-    theme: T,
-    children: e => (0, r.jsx)(d.ZP, {
+  }, [N]), (0, r.jsx)(u.f6W, {
+    theme: k,
+    children: e => (0, r.jsx)(b.ZP, {
       contentTypes: C,
       children: t => {
         let {
           visibleContent: o
         } = t;
         return (0, r.jsxs)("div", {
-          className: l()(v.sidebar, e, {
+          className: i()(v.sidebar, e, {
             [v.mobile]: c.tq,
             [v.mobileNavigationOpen]: h
           }),
@@ -84,13 +84,13 @@ function h(e) {
               className: v.mobileCloseButton,
               children: (0, r.jsx)(u.hU, {
                 icon: u.Uz9,
-                onClick: i,
+                onClick: a,
                 variant: "icon-only",
                 size: "sm",
                 "aria-label": j.intl.string(j.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
-              children: _.map(e => (0, r.jsx)(x, {
+              children: w.map(e => (0, r.jsx)(x, {
                 section: e,
                 visibleContent: o,
                 hoisted: true
@@ -98,26 +98,26 @@ function h(e) {
             }), null != O && null != m && (0, r.jsx)(S, {
               searchQuery: O,
               onSearchChange: m
-            }), null != s && 0 === w.length && (0, r.jsx)(s, {})]
-          }), (0, r.jsx)(a.bG, {
-            navigator: k,
-            children: (0, r.jsx)(a.SJ, {
+            }), null != s && 0 === T.length && (0, r.jsx)(s, {})]
+          }), (0, r.jsx)(l.bG, {
+            navigator: E,
+            children: (0, r.jsx)(l.SJ, {
               children: e => {
-                var t, i, {
-                    ref: l
+                var t, a, {
+                    ref: i
                   } = e,
-                  a = function(e, t) {
+                  l = function(e, t) {
                     if (null == e) return {};
                     var n, r, o = function(e, t) {
                       if (null == e) return {};
                       var n, r, o = {},
-                        i = Object.keys(e);
-                      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+                        a = Object.keys(e);
+                      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
                       return o
                     }(e, t);
                     if (Object.getOwnPropertySymbols) {
-                      var i = Object.getOwnPropertySymbols(e);
-                      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+                      var a = Object.getOwnPropertySymbols(e);
+                      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
                     }
                     return o
                   }(e, ["ref"]);
@@ -141,27 +141,27 @@ function h(e) {
                 }({
                   ref: e => {
                     var t;
-                    P.current = e, l.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
+                    P.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
                   },
                   className: v.navScroller,
                   fade: true
-                }, a), i = i = {
+                }, l), a = a = {
                   children: [(0, r.jsx)("nav", {
                     className: v.nav,
-                    children: w.map(e => (0, r.jsx)(x, {
+                    children: T.map(e => (0, r.jsx)(x, {
                       section: e,
                       visibleContent: o
                     }, e.key))
                   }), null != n && (0, r.jsx)(n, {})]
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
                     n.push.apply(n, r)
                   }
                   return n
-                })(Object(i)).forEach(function(e) {
-                  Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+                })(Object(a)).forEach(function(e) {
+                  Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
                 }), t))
               }
             })
@@ -177,23 +177,23 @@ function x(e) {
   let {
     section: n,
     visibleContent: o,
-    hoisted: i = false
-  } = e, l = null == (t = n.useTitle) ? true : t.call(n);
+    hoisted: a = false
+  } = e, i = null == (t = n.useTitle) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
     className: v.section,
-    "aria-label": l,
-    children: [null != l && (0, r.jsx)("div", {
+    "aria-label": i,
+    children: [null != i && (0, r.jsx)("div", {
       className: v.sectionLabel,
       children: (0, r.jsx)(u.Heading, {
         className: v.label,
         variant: "heading-sm/medium",
         color: "text-muted",
-        children: l
+        children: i
       })
     }), n.layout.map(e => (0, r.jsx)(m.y, {
       node: e,
       visibleContent: o,
-      hoisted: i
+      hoisted: a
     }, e.key))]
   })
 }
@@ -202,9 +202,9 @@ function S(e) {
   let {
     searchQuery: t,
     onSearchChange: n
-  } = e, i = o.useRef(null), [l, a] = (0, d.US)([s.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = o.useCallback(() => {
+  } = e, a = o.useRef(null), [i, l] = (0, b.US)([s.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER]), c = o.useCallback(() => {
     n("")
-  }, [n]), b = o.useMemo(() => ({
+  }, [n]), f = o.useMemo(() => ({
     title: j.intl.string(j.t.Kv519a),
     body: j.intl.string(j.t.cTGJBZ),
     badge: "new",
@@ -221,13 +221,13 @@ function S(e) {
       onClear: c
     }), (0, r.jsx)("div", {
       className: v.popoverAnchor,
-      ref: i
+      ref: a
     }), (0, r.jsx)(O.Z, {
       dismissibleContentType: s.z.USER_SETTINGS_REDESIGN_EDUCATION_POPOVER,
-      targetElementRef: i,
-      visibleContent: l,
-      markAsDismissed: a,
-      props: b
+      targetElementRef: a,
+      visibleContent: i,
+      markAsDismissed: l,
+      props: f
     })]
   })
 }

@@ -21,64 +21,64 @@ class f extends Chunk495852.C {
       },
       contentIdentifier: ""
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let o = null != i ? i : this.create(),
-      a = e.pos + t;
-    for (; e.pos < a;) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          o.properties = {
+          a.properties = {
             oneofKind: "placeholder",
             placeholder: e.string()
           };
           break;
         case 2:
-          o.properties = {
+          a.properties = {
             oneofKind: "announcementModalVariant1",
-            announcementModalVariant1: d.xY.internalBinaryRead(e, e.uint32(), n, o.properties.announcementModalVariant1)
+            announcementModalVariant1: d.xY.internalBinaryRead(e, e.uint32(), n, a.properties.announcementModalVariant1)
           };
           break;
         case 4:
-          o.properties = {
+          a.properties = {
             oneofKind: "premiumTab",
-            premiumTab: u.C.internalBinaryRead(e, e.uint32(), n, o.properties.premiumTab)
+            premiumTab: u.C.internalBinaryRead(e, e.uint32(), n, a.properties.premiumTab)
           };
           break;
         case 5:
-          o.properties = {
+          a.properties = {
             oneofKind: "marketingPageBanner",
-            marketingPageBanner: c.w.internalBinaryRead(e, e.uint32(), n, o.properties.marketingPageBanner)
+            marketingPageBanner: c.w.internalBinaryRead(e, e.uint32(), n, a.properties.marketingPageBanner)
           };
           break;
         case 6:
-          o.properties = {
+          a.properties = {
             oneofKind: "paymentModalBanner",
-            paymentModalBanner: l.j.internalBinaryRead(e, e.uint32(), n, o.properties.paymentModalBanner)
+            paymentModalBanner: l.j.internalBinaryRead(e, e.uint32(), n, a.properties.paymentModalBanner)
           };
           break;
         case 7:
-          o.properties = {
+          a.properties = {
             oneofKind: "mobileBottomSheet",
-            mobileBottomSheet: s.g.internalBinaryRead(e, e.uint32(), n, o.properties.mobileBottomSheet)
+            mobileBottomSheet: s.g.internalBinaryRead(e, e.uint32(), n, a.properties.mobileBottomSheet)
           };
           break;
         case 3:
-          o.contentIdentifier = e.string();
+          a.contentIdentifier = e.string();
           break;
         default:
-          let a = n.readUnknownField;
-          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let f = e.skip(i);
-          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, f)
+          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, f)
       }
     }
-    return o
+    return a
   }
   internalBinaryWrite(e, t, n) {
     "placeholder" === e.properties.oneofKind && t.tag(1, r.TD.LengthDelimited).string(e.properties.placeholder), "announcementModalVariant1" === e.properties.oneofKind && d.xY.internalBinaryWrite(e.properties.announcementModalVariant1, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "premiumTab" === e.properties.oneofKind && u.C.internalBinaryWrite(e.properties.premiumTab, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "marketingPageBanner" === e.properties.oneofKind && c.w.internalBinaryWrite(e.properties.marketingPageBanner, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "paymentModalBanner" === e.properties.oneofKind && l.j.internalBinaryWrite(e.properties.paymentModalBanner, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), "mobileBottomSheet" === e.properties.oneofKind && s.g.internalBinaryWrite(e.properties.mobileBottomSheet, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), "" !== e.contentIdentifier && t.tag(3, r.TD.LengthDelimited).string(e.contentIdentifier);

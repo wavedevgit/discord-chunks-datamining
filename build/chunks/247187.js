@@ -8,7 +8,7 @@ for (var n = {
     control: "ctrlKey",
     meta: "metaKey",
     shift: "shiftKey"
-  }, o = {
+  }, a = {
     add: "+",
     break: "pause",
     cmd: "meta",
@@ -30,7 +30,7 @@ for (var n = {
     up: "arrowup",
     win: "meta",
     windows: "meta"
-  }, a = {
+  }, o = {
     backspace: 8,
     tab: 9,
     enter: 13,
@@ -65,7 +65,7 @@ for (var n = {
     "\\": 220,
     "]": 221,
     "'": 222
-  }, s = 1; s < 20; s++) a["f" + s] = 111 + s;
+  }, s = 1; s < 20; s++) o["f" + s] = 111 + s;
 
 function l(e, t, n) {
   !t || "byKey" in t || (n = t, t = null), Array.isArray(e) || (e = [e]);
@@ -93,20 +93,20 @@ function u(e, t) {
 function d(e, t) {
   var n = t && t.byKey,
     r = {},
-    o = (e = e.replace("++", "+add")).split("+"),
-    a = o.length;
+    a = (e = e.replace("++", "+add")).split("+"),
+    o = a.length;
   for (var s in i) r[i[s]] = false;
   var l = true,
     c = false,
     u = true;
   try {
-    for (var d, f = o[Symbol.iterator](); !(l = (d = f.next()).done); l = true) {
+    for (var d, f = a[Symbol.iterator](); !(l = (d = f.next()).done); l = true) {
       var m = d.value,
         h = m.endsWith("?") && m.length > 1;
       h && (m = m.slice(0, false));
       var g = _(m),
         E = i[g];
-      1 !== a && E || (n ? r.key = g : r.which = p(m)), E && (r[E] = !h || null)
+      1 !== o && E || (n ? r.key = g : r.which = p(m)), E && (r[E] = !h || null)
     }
   } catch (e) {
     c = true, u = e
@@ -130,10 +130,10 @@ function f(e, t) {
 }
 
 function p(e) {
-  return a[e = _(e)] || e.toUpperCase().charCodeAt(0)
+  return o[e = _(e)] || e.toUpperCase().charCodeAt(0)
 }
 
 function _(e) {
-  return e = o[e = e.toLowerCase()] || e
+  return e = a[e = e.toLowerCase()] || e
 }
 n = l, n = l, n = c, exports.isKeyHotkey = u

@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk313741 = require("./313741.js"),
   Chunk526079 = require("./526079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk939964 = require("./939964.js");
+  Chunk10805 = require("./10805.js");
 
-function f(e) {
+function h(e) {
   let {
     className: t,
     guildId: i,
@@ -56,7 +56,7 @@ function v(e) {
     title: O,
     description: F,
     isGuildSupported: I
-  } = (0, b.K)(r), [_, M] = l.useState(), [j, w] = l.useState(false), y = async () => {
+  } = (0, b.K)(r), [M, j] = l.useState(), [_, w] = l.useState(false), y = async () => {
     w(true);
     let e = await new Promise(e => {
       c.Z.openCreateGuildModal({
@@ -74,7 +74,7 @@ function v(e) {
     "aria-labelledby": m,
     parentComponent: "GuildSettingsPickerModal",
     children: [(0, n.jsxs)(u.xBx, {
-      className: h.modalHeader,
+      className: f.modalHeader,
       separator: false,
       children: [(0, n.jsx)(u.Heading, {
         id: m,
@@ -84,7 +84,7 @@ function v(e) {
         onClick: i
       })]
     }), (0, n.jsxs)(u.hzk, {
-      className: h.modalContent,
+      className: f.modalContent,
       children: [(0, n.jsxs)(u.Kqy, {
         direction: "vertical",
         gap: 8,
@@ -92,21 +92,21 @@ function v(e) {
           variant: "text-md/medium",
           children: F
         }), (0, n.jsxs)("div", {
-          className: h.guildSelection,
+          className: f.guildSelection,
           children: [(0, n.jsx)("div", {
-            className: h.guildSelectorContainer,
-            children: (0, n.jsx)(f, {
-              guildId: _,
-              onChange: M,
+            className: f.guildSelectorContainer,
+            children: (0, n.jsx)(h, {
+              guildId: M,
+              onChange: j,
               isGuildIncluded: I
             })
           }), (0, n.jsx)(u.Button, {
             variant: "primary",
             text: E,
             onClick: () => {
-              a()(null != _, "Guild ID must not be null on click"), g.Z.hasSeenCreatorOnboardingForGuild(_) || (0, p.k)(_), G.Z.open(_, o, true, C), null == i || i()
+              a()(null != M, "Guild ID must not be null on click"), g.Z.hasSeenCreatorOnboardingForGuild(M) || (0, p.k)(M), G.Z.open(M, o, true, C), null == i || i()
             },
-            disabled: null == _
+            disabled: null == M
           })]
         })]
       }), v && (0, n.jsxs)(u.Kqy, {
@@ -117,8 +117,8 @@ function v(e) {
           children: x
         }), (0, n.jsx)(s.zx, {
           onClick: y,
-          submitting: j,
-          className: h.createGuildButton,
+          submitting: _,
+          className: f.createGuildButton,
           children: Z
         })]
       })]

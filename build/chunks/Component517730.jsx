@@ -67,8 +67,8 @@ let f = "social-layer-storefront-item-claimed-successfully-modal",
     }, {
       modalKey: f,
       onCloseCallback: () => {
-        o.default.track(s.rMx.SLAYER_STOREFRONT_MODAL_CLOSED, {
-          type: a.ng,
+        a.default.track(s.rMx.SLAYER_STOREFRONT_MODAL_CLOSED, {
+          type: o.ng,
           sku_id: t.id,
           application_id: l.id,
           location_stack: null != u ? u : []

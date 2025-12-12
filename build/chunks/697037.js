@@ -21,7 +21,7 @@ function u(e) {
     isMember: n,
     analyticsLocations: c
   } = e;
-  return null != t && !n && (0, i.bN)() && (0, i.Yt)(t) ? ((0, r.mN)(l.L0.NSFW_SERVER_INVITE_EMBED), "AGE_GATE_SHOWN") : (0, o.yU)() ? ((0, a.Z)({
+  return null != t && !n && (0, i.bN)() && (0, i.Yt)(t) ? ((0, r.mN)(l.L0.NSFW_SERVER_INVITE_EMBED), "AGE_GATE_SHOWN") : (0, a.yU)() ? ((0, o.Z)({
     analyticsSource: {
       page: s.ZY5.INVITE_EMBED
     },

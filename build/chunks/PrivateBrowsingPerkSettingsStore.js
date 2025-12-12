@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
     return l
   }
 }
-a(u, "displayName", "PrivateBrowsingPerkSettingsStore"), a(u, "persistKey", "PrivateBrowsingPerkSettingsStore");
+o(u, "displayName", "PrivateBrowsingPerkSettingsStore"), o(u, "persistKey", "PrivateBrowsingPerkSettingsStore");
 let d = new u(Chunk570140.Z, {
   PRIVATE_BROWSING_PERK_SETTINGS_INSTALL_DISCORD: c
 })

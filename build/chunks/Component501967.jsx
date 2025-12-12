@@ -13,7 +13,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk215569 = require("./215569.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk216509 = require("./216509.js");
+  Chunk609541 = require("./609541.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -25,10 +25,10 @@ function _(e, t, n) {
 }
 let m = 3e3,
   h = {
-    [Chunk981631.AEg.NORMAL]: Chunk216509.normal,
-    [Chunk981631.AEg.MINIMUM]: Chunk216509.minimum,
-    [Chunk981631.AEg.NO_CHAT]: Chunk216509.noChat,
-    [Chunk981631.AEg.FULL_SCREEN]: Chunk216509.fullScreen
+    [Chunk981631.AEg.NORMAL]: Chunk609541.normal,
+    [Chunk981631.AEg.MINIMUM]: Chunk609541.minimum,
+    [Chunk981631.AEg.NO_CHAT]: Chunk609541.noChat,
+    [Chunk981631.AEg.FULL_SCREEN]: Chunk609541.fullScreen
   };
 class g extends Chunk473749.PureComponent {
   componentDidAppear() {
@@ -51,7 +51,7 @@ class g extends Chunk473749.PureComponent {
   }
   render() {
     return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: s()(Chunk216509.videoBackgroundTransition, this.props.className),
+      className: s()(Chunk609541.videoBackgroundTransition, this.props.className),
       style: {
         opacity: this.state.animation
       },
@@ -89,7 +89,7 @@ class E extends(r = Chunk473749.PureComponent) {
       layout: n
     } = this.props, r = "".concat(require, "-").concat(null != exports ? exports : "");
     return (0, Chunk54381.jsx)(Chunk215569.W, {
-      className: Chunk216509.videoBackground,
+      className: Chunk609541.videoBackground,
       component: "div",
       children: (0, Chunk54381.jsx)(g, {
         children: module
@@ -102,34 +102,34 @@ class E extends(r = Chunk473749.PureComponent) {
       center: t,
       bottom: n,
       layout: r,
-      focused: o
+      focused: a
     } = this.props, {
-      idle: a
+      idle: o
     } = this.state;
     return (0, Chunk54381.jsx)(Chunk600164.Z, {
-      className: s()(Chunk216509.video, h[r], {
-        [Chunk216509.idle]: Chunk120356
+      className: s()(Chunk609541.video, h[r], {
+        [Chunk609541.idle]: Chunk120356
       }),
       direction: Chunk600164.Z.Direction.VERTICAL,
       justify: Chunk600164.Z.Justify.CENTER,
       children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        className: Chunk216509.videoWrapper,
+        className: Chunk609541.videoWrapper,
         direction: Chunk600164.Z.Direction.VERTICAL,
         children: [this.renderBackground(), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          className: s()(Chunk216509.videoInner, {
-            [Chunk216509.focused]: Chunk473749
+          className: s()(Chunk609541.videoInner, {
+            [Chunk609541.focused]: Chunk473749
           }),
           direction: Chunk600164.Z.Direction.VERTICAL,
           justify: Chunk600164.Z.Justify.BETWEEN,
           children: [(0, Chunk54381.jsx)(Chunk600164.Z, {
-            className: Chunk216509.videoTop,
+            className: Chunk609541.videoTop,
             grow: 0,
             children: module
           }), (0, Chunk54381.jsx)(Chunk600164.Z, {
-            className: Chunk216509.videoCenter,
+            className: Chunk609541.videoCenter,
             children: exports
           }), (0, Chunk54381.jsx)(Chunk600164.Z, {
-            className: Chunk216509.videoBottom,
+            className: Chunk609541.videoBottom,
             grow: 0,
             children: require
           })]
@@ -144,8 +144,8 @@ class E extends(r = Chunk473749.PureComponent) {
       animated: n
     } = this.props;
     return (0, Chunk54381.jsx)("div", {
-      className: s()(Chunk216509.videoHeight, h[module], exports, {
-        [Chunk216509.animated]: require
+      className: s()(Chunk609541.videoHeight, h[module], exports, {
+        [Chunk609541.animated]: require
       }),
       children: this.renderContents()
     })

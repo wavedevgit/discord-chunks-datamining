@@ -20,7 +20,7 @@ var Chunk473749 = require("./473749.js"),
 let m = () => {
     let e = (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.gradientPreset),
       t = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.useSystemTheme === Chunk874893.KW.ON),
-      [n, o] = (0, Chunk473749.useState)(exports);
+      [n, a] = (0, Chunk473749.useState)(exports);
     return (0, Chunk473749.useEffect)(() => {
       null == module && Chunk524437(exports)
     }, [module, exports]), (0, Chunk473749.useCallback)(() => {

@@ -26,7 +26,7 @@ var Chunk921254 = require("./921254.js"),
   Chunk29121 = require("./29121.js"),
   Chunk391594 = require("./391594.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk222311 = require("./222311.js");
+  Chunk505281 = require("./505281.js");
 let I = t => {
   let {
     transitionState: e,
@@ -35,11 +35,11 @@ let I = t => {
     analyticsLocations: N,
     overrideTitle: O,
     overrideDescription: P,
-    shouldShowPromotionalExperience: j,
-    purchaseType: k = _.o8.FIAT,
-    overrideGraphic: w,
-    rentalDuration: y,
-    rentalExpiresAt: b
+    shouldShowPromotionalExperience: b,
+    purchaseType: j = R.o8.FIAT,
+    overrideGraphic: k,
+    rentalDuration: w,
+    rentalExpiresAt: y
   } = t, D = (0, d.o)(n), S = (0, m.W)(n, D), {
     analyticsLocations: g
   } = (0, c.ZP)([...N, s.Z.COLLECTIBLES_COLLECTED_MODAL]), {
@@ -77,7 +77,7 @@ let I = t => {
     confettiCanvas: G,
     setConfettiCanvas: X,
     customConfettiDisplayOptions: $
-  } = (0, Z.$0)(S, k), q = (0, T.kd)(S);
+  } = (0, Z.$0)(S, j), q = (0, T.kd)(S);
   (0, Z.f1)(S, g);
   let {
     handleUseNow: H,
@@ -90,17 +90,17 @@ let I = t => {
     product: S,
     overrideTitle: O,
     isVariantsGroupEnabled: true,
-    shouldShowPromotionalExperience: j,
+    shouldShowPromotionalExperience: b,
     productName: q,
-    rentalDuration: y
+    rentalDuration: w
   }), z = (0, Z.ys)({
     product: S,
     overrideDescription: P,
     productName: q,
-    shouldShowPromotionalExperience: j,
+    shouldShowPromotionalExperience: b,
     promotionalRewardCollectedText: F,
-    isRental: null != y,
-    expiresAt: b
+    isRental: null != w,
+    expiresAt: y
   }), J = (0, Z.cf)({
     product: S,
     onClose: I,
@@ -122,7 +122,7 @@ let I = t => {
   }
   let {
     confettiColors: Y
-  } = (0, v.Z)(S.styles), tt = null != w ? w : {
+  } = (0, v.Z)(S.styles), tt = null != k ? k : {
     type: "dynamic",
     component: o.AX$.COLLECTIBLES_PREVIEW,
     aspectRatio: Q,
@@ -137,7 +137,7 @@ let I = t => {
       ref: W,
       children: [(0, l.jsx)(r.O_, {
         ref: X,
-        className: R.confettiCanvas,
+        className: _.confettiCanvas,
         environment: V
       }), (0, l.jsx)(i.ExpressiveModal, {
         graphic: tt,

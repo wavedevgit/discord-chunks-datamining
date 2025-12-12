@@ -8,7 +8,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -35,8 +35,8 @@ function l(e) {
 }
 
 function c(e, t) {
-  let [n, a] = r.useState(t), [c, u] = r.useState(l(n)), d = r.useRef(c), f = r.useRef(null), p = r.useCallback(e => {
-    a(t => {
+  let [n, o] = r.useState(t), [c, u] = r.useState(l(n)), d = r.useRef(c), f = r.useRef(null), p = r.useCallback(e => {
+    o(t => {
       let n = s({}, t, e),
         r = l(n);
       return r !== d.current && (d.current = r, null != f.current && (cancelAnimationFrame(f.current), f.current = null), r ? u(true) : f.current = requestAnimationFrame(() => u(false))), n
@@ -53,7 +53,7 @@ function c(e, t) {
         emojiBurstPicker: n
       })
     };
-    return i.S.subscribeKeyed(o.LPv.TOGGLE_REACTION_POPOUT, e, t), () => void i.S.unsubscribeKeyed(o.LPv.TOGGLE_REACTION_POPOUT, e, t)
+    return i.S.subscribeKeyed(a.LPv.TOGGLE_REACTION_POPOUT, e, t), () => void i.S.unsubscribeKeyed(a.LPv.TOGGLE_REACTION_POPOUT, e, t)
   }, [e, p]), {
     popouts: n,
     setPopout: p,

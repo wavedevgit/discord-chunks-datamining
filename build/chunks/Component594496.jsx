@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -37,15 +37,15 @@ var Chunk512722 = require("./512722.js"),
   Chunk291334 = require("./291334.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk737788 = require("./737788.js");
+  Chunk822462 = require("./822462.js");
 
 function M(e) {
   var t, n, i, M;
   let {
     guild: k
-  } = e, U = (0, a.e7)([T.default], () => {
+  } = e, U = (0, o.e7)([T.default], () => {
     let e = T.default.getCurrentUser();
-    return o()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
+    return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
   }), G = (0, d.m)(x.PremiumTypes.TIER_2), {
     pendingAvatar: Z,
     pendingNickname: F,
@@ -55,14 +55,14 @@ function M(e) {
     pendingThemeColors: Y,
     errors: W,
     guild: K
-  } = (0, a.cj)([P.Z], () => {
+  } = (0, o.cj)([P.Z], () => {
     let {
       pendingAvatar: e,
       pendingNickname: t,
       pendingBio: n,
       pendingPronouns: r,
       pendingBanner: i,
-      pendingThemeColors: o
+      pendingThemeColors: a
     } = P.Z.getAllPending();
     return {
       pendingAvatar: e,
@@ -70,7 +70,7 @@ function M(e) {
       pendingBanner: i,
       pendingBio: n,
       pendingPronouns: r,
-      pendingThemeColors: o,
+      pendingThemeColors: a,
       errors: P.Z.getErrors(),
       guild: P.Z.getGuild()
     }
@@ -78,10 +78,10 @@ function M(e) {
     userId: U.id,
     image: Z
   }), q = null != k ? k : K;
-  o()(null != q, "guild should not be null");
+  a()(null != q, "guild should not be null");
   let Q = (0, u.gS)(q.id),
-    X = (0, a.e7)([I.ZP], () => null == q.id ? null : I.ZP.getMember(q.id, U.id)),
-    J = (0, a.e7)([S.Z], () => S.Z.getGuildMemberProfile(U.id, q.id)),
+    X = (0, o.e7)([I.ZP], () => null == q.id ? null : I.ZP.getMember(q.id, U.id)),
+    J = (0, o.e7)([S.Z], () => S.Z.getGuildMemberProfile(U.id, q.id)),
     $ = c.JH.useExperiment({
       location: "GuildIdentityCustomizationSections"
     }).enabled,
@@ -90,13 +90,13 @@ function M(e) {
     en = (0, f.f$)(B, null == J ? true : J.banner),
     er = (0, R.p)(Y, null == J ? true : J.themeColors),
     ei = null != (t = null == J ? true : J.bio) ? t : "",
-    eo = null != (n = null == J ? true : J.pronouns) ? n : "",
-    ea = (e, t, n) => {
+    ea = null != (n = null == J ? true : J.pronouns) ? n : "",
+    eo = (e, t, n) => {
       let r = null != t ? null : true;
       n(null != e ? e : r)
     },
-    es = e => ea(e, null == J ? true : J.banner, N.g_),
-    el = e => ea(e, null == X ? true : X.avatar, N.I5);
+    es = e => eo(e, null == J ? true : J.banner, N.g_),
+    el = e => eo(e, null == X ? true : X.avatar, N.I5);
   return (0, r.jsxs)("div", {
     className: j.sectionsContainer,
     children: [(0, r.jsx)(w.Z, {
@@ -110,10 +110,10 @@ function M(e) {
       sectionTitle: L.intl.string(L.t["+T3RI/"]),
       errors: null == W ? true : W.pronouns,
       onPronounsChange: e => {
-        (0, R.xs)(e, eo)
+        (0, R.xs)(e, ea)
       },
       pendingPronouns: H,
-      currentPronouns: eo
+      currentPronouns: ea
     }, "pronouns"), (0, r.jsxs)(D.Z, {
       user: U,
       showOverlay: !ee,

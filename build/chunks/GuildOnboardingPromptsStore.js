@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => F
 }), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk160404 = require("./160404.js"),
@@ -71,10 +71,10 @@ function T(e, t, n) {
   let r = false,
     i = [];
   for (let t = 0; t < e.options.length; t++) {
-    let o = e.options[t],
-      a = null == n[o.id];
-    a && (r = true), i.push(E(h({}, o), {
-      isUnseen: a
+    let a = e.options[t],
+      o = null == n[a.id];
+    o && (r = true), i.push(E(h({}, a), {
+      isUnseen: o
     }))
   }
   return E(h({}, e), {
@@ -94,8 +94,8 @@ function A(e) {
     prompts: n,
     defaultChannelIds: r,
     enabled: i,
-    responses: o,
-    onboardingPromptsSeen: a,
+    responses: a,
+    onboardingPromptsSeen: o,
     onboardingResponsesSeen: s,
     mode: l,
     belowRequirements: c,
@@ -103,7 +103,7 @@ function A(e) {
   } = e;
   v = false;
   let d = p.ZP.getOnboardingStatus(t) === p.uX.READY,
-    _ = C(n, a, s);
+    _ = C(n, o, s);
   b[t] = {
     enabled: i,
     mode: l,
@@ -111,11 +111,11 @@ function A(e) {
     prompts: _,
     onboardingPrompts: _.filter(e => e.inOnboarding),
     defaultChannelIds: r.filter(e => (0, f.s)(t, e)),
-    responses: d ? [] : o,
-    onboardingPromptsSeen: a,
+    responses: d ? [] : a,
+    onboardingPromptsSeen: o,
     onboardingResponsesSeen: s,
     connections: null != u ? u : []
-  }, d || w(t, o), O[t] = Date.now()
+  }, d || w(t, a), O[t] = Date.now()
 }
 
 function N() {
@@ -123,11 +123,11 @@ function N() {
 }
 
 function P(e) {
-  var t, n, r, i, o, a, s, l, c;
+  var t, n, r, i, a, o, s, l, c;
   let {
     guildId: u,
     updates: d
-  } = e, f = null != (o = null != (i = d.onboardingPromptsSeen) ? i : null == (t = b[u]) ? true : t.onboardingPromptsSeen) ? o : {}, p = null != (s = null != (a = d.onboardingResponsesSeen) ? a : null == (n = b[u]) ? true : n.onboardingResponsesSeen) ? s : {}, _ = C(null != (c = null != (l = d.prompts) ? l : null == (r = b[u]) ? true : r.prompts) ? c : [], f, p);
+  } = e, f = null != (a = null != (i = d.onboardingPromptsSeen) ? i : null == (t = b[u]) ? true : t.onboardingPromptsSeen) ? a : {}, p = null != (s = null != (o = d.onboardingResponsesSeen) ? o : null == (n = b[u]) ? true : n.onboardingResponsesSeen) ? s : {}, _ = C(null != (c = null != (l = d.prompts) ? l : null == (r = b[u]) ? true : r.prompts) ? c : [], f, p);
   b[u] = E(h({}, b[u], d), {
     prompts: _
   })
@@ -140,7 +140,7 @@ function R(e) {
     selected: r,
     removedOptionIds: i
   } = e;
-  return !!l.Z.isFullServerPreview(t) || null != b[t] && (null != i && i.length > 0 && o().pullAll(b[t].responses, i), r ? b[t].responses.push(n) : o().pull(b[t].responses, n), null == y[t] && (y[t] = {}), y[t][n] = r, null != i && i.forEach(e => y[t][e] = false), y[t] = h({}, y[t]), true)
+  return !!l.Z.isFullServerPreview(t) || null != b[t] && (null != i && i.length > 0 && a().pullAll(b[t].responses, i), r ? b[t].responses.push(n) : a().pull(b[t].responses, n), null == y[t] && (y[t] = {}), y[t][n] = r, null != i && i.forEach(e => y[t][e] = false), y[t] = h({}, y[t]), true)
 }
 
 function w(e, t) {
@@ -165,12 +165,12 @@ function D(e) {
     options_seen: i
   } = e;
   w(t, n);
-  let o = b[t];
-  if (null == o) returnfalse;
-  let a = C(o.prompts, r, i);
-  b[t] = E(h({}, o), {
-    prompts: a,
-    onboardingPrompts: a.filter(e => e.inOnboarding),
+  let a = b[t];
+  if (null == a) returnfalse;
+  let o = C(a.prompts, r, i);
+  b[t] = E(h({}, a), {
+    prompts: o,
+    onboardingPrompts: o.filter(e => e.inOnboarding),
     onboardingPromptsSeen: r,
     onboardingResponsesSeen: i
   })
@@ -232,7 +232,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
     let n = b[e];
     if (null == n) return k;
     let r = n.prompts.find(e => e.id === t);
-    return null == r ? k : o().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
+    return null == r ? k : a().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
   }
   getEnabledOnboardingPrompts(e) {
     var t, n;

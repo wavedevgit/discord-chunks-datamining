@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk348327 = require("./348327.js"),
   i = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
   Chunk846027 = require("./846027.js"),
   Chunk287734 = require("./287734.js"),
@@ -57,28 +57,28 @@ class S extends Chunk317770.Z {
     }), v(this, "isSupported", (0, E.isMac)() || (0, E.isWindows)()), v(this, "prevButtons", []), v(this, "buttonClicked", e => {
       if (!(e.buttonName in this.callbackActions)) return void console.error('ThumbarButtonsManager: Unknown callback eventName: "'.concat(e.buttonName, '"'), e);
       this.callbackActions[e.buttonName]()
-    }), v(this, "handleViewUpdate", a().debounce(() => {
+    }), v(this, "handleViewUpdate", o().debounce(() => {
       let e = g.Z.getVoiceChannelId();
       if (null == e) return void this.setThumbarButtons([]);
       let t = h.Z.isSelfMute(),
         n = h.Z.isSelfDeaf(),
         r = h.Z.isVideoEnabled(),
         i = h.Z.isVideoAvailable(),
-        o = m.Z.getChannel(e),
-        a = null == o || (0, f.y)(o),
+        a = m.Z.getChannel(e),
+        o = null == a || (0, f.y)(a),
         {
           reachedLimit: s,
           limit: l
-        } = null != o ? (0, d.t)(o) : {
+        } = null != a ? (0, d.t)(a) : {
           reachedLimit: true,
           limit: true
         },
         c = (0, p.X)({
           enabled: r,
           join: false,
-          channel: o,
+          channel: a,
           cameraUnavailable: !i,
-          hasPermission: a,
+          hasPermission: o,
           channelLimit: l,
           channelLimitReached: s
         });

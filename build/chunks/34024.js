@@ -36,9 +36,9 @@ let u = {
     let {
       voiceChannelId: t,
       voiceState: n
-    } = e, l = r.Z.getChannel(t), u = (null == l ? true : l.isGuildStageVoice()) && (null == n ? true : n.suppress), d = 0 === Object.keys(i.Z.getInputDevices()).length, f = o.Z.getMediaSessionId();
+    } = e, l = r.Z.getChannel(t), u = (null == l ? true : l.isGuildStageVoice()) && (null == n ? true : n.suppress), d = 0 === Object.keys(i.Z.getInputDevices()).length, f = a.Z.getMediaSessionId();
     if (d && null != l && null != f && !u) return [c({
-      type: a.u.NO_INPUT_DEVICES
+      type: o.u.NO_INPUT_DEVICES
     }, (0, s.Y9)())]
   },
   makeErrorContextKey: e => "".concat(e.mediaSessionId)

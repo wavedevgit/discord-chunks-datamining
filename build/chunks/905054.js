@@ -9,7 +9,7 @@ module.exports = function(e) {
     }), e.COMMENT(/\(\*/, /\*\)/, {
       relevance: 10
     })],
-    o = {
+    a = {
       className: "string",
       begin: /'/,
       end: /'/,
@@ -17,7 +17,7 @@ module.exports = function(e) {
         begin: /''/
       }]
     },
-    a = {
+    o = {
       className: "string",
       begin: /(#\d+)+/
     },
@@ -42,7 +42,7 @@ module.exports = function(e) {
         begin: /\(/,
         end: /\)/,
         keywords: n,
-        contains: [o, a, e.NUMBER_MODE]
+        contains: [a, o, e.NUMBER_MODE]
       }, ...i]
     },
     u = ["Table", "Form", "Report", "Dataport", "Codeunit", "XMLport", "MenuSuite", "Page", "Query"],
@@ -68,6 +68,6 @@ module.exports = function(e) {
       match: /[\w]+(?=\=)/,
       scope: "attribute",
       relevance: 0
-    }, o, a, s, l, e.NUMBER_MODE, d, c]
+    }, a, o, s, l, e.NUMBER_MODE, d, c]
   }
 }

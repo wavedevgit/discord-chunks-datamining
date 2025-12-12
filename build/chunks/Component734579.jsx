@@ -1,12 +1,12 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 734579, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => I
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk692547 = require("./692547.js"),
@@ -25,28 +25,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk509612 = require("./509612.js");
-let S = Chunk473749.memo(function(e) {
+  Chunk323453 = require("./323453.js");
+let I = Chunk473749.memo(function(e) {
   let {
     guild: t,
     selected: l
-  } = e, S = i.useRef(null), I = i.useRef(null), P = (0, u.useHasAnyModalOpen)(), N = (0, a.e7)([O.Z], () => O.Z.hasLayers()), [Z, w] = (0, h.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
+  } = e, I = i.useRef(null), _ = i.useRef(null), P = (0, u.useHasAnyModalOpen)(), N = (0, o.e7)([v.Z], () => v.Z.hasLayers()), [Z, w] = (0, h.ZT)([s.z.GAME_SHOP_NEW_BADGE], t.id);
   i.useEffect(() => {
-    l && Z === s.z.GAME_SHOP_NEW_BADGE && w(C.L.INDIRECT_ACTION)
+    l && Z === s.z.GAME_SHOP_NEW_BADGE && w(x.L.INDIRECT_ACTION)
   }, [w, l, Z]);
   let T = i.useCallback(() => {
       var e, n;
-      w(C.L.USER_DISMISS);
-      let r = null != (n = null == (e = m.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
-      (0, p.uL)(j.Z5c.CHANNELS_GAME_SHOP(t.id, r))
+      w(x.L.USER_DISMISS);
+      let r = null != (n = null == (e = b.Z.getStorefrontState(t.id)) ? true : e.activePage) ? n : 0;
+      (0, p.uL)(C.Z5c.CHANNELS_GAME_SHOP(t.id, r))
     }, [t, w]),
     A = i.useCallback(() => {
-      (0, b.eagerNavigateToSocialLayerStorefront)({
+      (0, m.eagerNavigateToSocialLayerStorefront)({
         guildId: t.id
       })
     }, [t.id]),
     R = i.useCallback(() => {
-      w(C.L.USER_DISMISS)
+      w(x.L.USER_DISMISS)
     }, [w]),
     D = i.useCallback(e => {
       null != t && (0, f.jW)(e, async () => {
@@ -89,23 +89,23 @@ let S = Chunk473749.memo(function(e) {
     }, [t]),
     M = i.useCallback(() => {
       var e;
-      null == (e = S.current) || e.onMouseEnter(null, 500)
-    }, [S]),
-    L = i.useCallback((e, n, i, a) => (0, r.jsx)(v.m, {
+      null == (e = I.current) || e.onMouseEnter(null, 500)
+    }, [I]),
+    L = i.useCallback((e, n, i, o) => (0, r.jsx)(j.m, {
       innerClassName: e,
-      ref: I,
+      ref: _,
       id: "game-shop-".concat(t.id),
       renderIcon: e => (0, r.jsx)(d.EOn, {
         size: "custom",
         color: "currentColor",
         width: 20,
         height: 20,
-        className: o()(e, i)
+        className: a()(e, i)
       }),
       text: (0, r.jsx)(d.Text, {
         variant: "text-md/medium",
-        className: o()(E.name, n),
-        children: (null == t ? true : t.id) === (0, g.ac)() ? x.intl.string(x.t.xFQAPs) : x.intl.string(x.t.vyaWs7)
+        className: a()(S.name, n),
+        children: (null == t ? true : t.id) === (0, g.ac)() ? E.intl.string(E.t.xFQAPs) : E.intl.string(E.t.vyaWs7)
       }),
       selected: l,
       onMouseDown: A,
@@ -113,20 +113,20 @@ let S = Chunk473749.memo(function(e) {
       onContextMenu: D,
       trailing: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.IGR, {
-          text: x.intl.string(x.t.y2b7CA),
+          text: E.intl.string(E.t.y2b7CA),
           color: c.Z.colors.BACKGROUND_BRAND.css
-        }), a]
+        }), o]
       })
     }), [t.id, l, A, T, D]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.Z, {
-      ref: S,
+    children: [(0, r.jsx)(O.Z, {
+      ref: I,
       children: L
-    }), P || N || (null == t ? true : t.id) !== (0, g.ac)() || Z !== s.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(_.Z, {
+    }), P || N || (null == t ? true : t.id) !== (0, g.ac)() || Z !== s.z.GAME_SHOP_NEW_BADGE ? null : (0, r.jsx)(y.Z, {
       onActionClick: T,
       onRender: M,
       onRequestClose: R,
-      targetElementRef: I
+      targetElementRef: _
     })]
   })
 })

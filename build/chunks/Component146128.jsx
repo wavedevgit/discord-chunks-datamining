@@ -44,15 +44,15 @@ function E(e) {
     children: t
   } = e, {
     triggerAnimation: n,
-    untriggerAnimation: o
-  } = i.useContext(g), a = (0, l.bp)(), s = i.useMemo(() => ({
+    untriggerAnimation: a
+  } = i.useContext(g), o = (0, l.bp)(), s = i.useMemo(() => ({
     triggerAnimation: e => {
-      a !== m.IlC.OVERLAY && h(e) && n(e)
+      o !== m.IlC.OVERLAY && h(e) && n(e)
     },
     untriggerAnimation: e => {
-      a !== m.IlC.OVERLAY && h(e) && o(e)
+      o !== m.IlC.OVERLAY && h(e) && a(e)
     }
-  }), [a, n, o]);
+  }), [o, n, a]);
   return (0, r.jsx)(g.Provider, {
     value: s,
     children: t
@@ -62,7 +62,7 @@ function E(e) {
 function b(e) {
   let {
     children: t
-  } = e, n = d.Z.useIsEligible(), o = i.useCallback((e, t) => {
+  } = e, n = d.Z.useIsEligible(), a = i.useCallback((e, t) => {
     switch (t) {
       case u.O.THROW_EMOJI:
         return (0, r.jsx)(_.t, {
@@ -74,7 +74,7 @@ function b(e) {
         })
     }
   }, []);
-  return n && null != u.Z.emojiAnimationType ? o((0, r.jsx)(E, {
+  return n && null != u.Z.emojiAnimationType ? a((0, r.jsx)(E, {
     children: t
   }), u.Z.emojiAnimationType) : t
 }
@@ -84,8 +84,8 @@ function y(e) {
     emojiRef: t,
     channelId: n,
     messageId: r,
-    emojiName: a
-  } = e, s = (0, o.e7)([c.Z], () => c.Z.getMessage(n, r)), {
+    emojiName: o
+  } = e, s = (0, a.e7)([c.Z], () => c.Z.getMessage(n, r)), {
     triggerAnimation: l
   } = i.useContext(g);
   return i.useEffect(() => {
@@ -94,8 +94,8 @@ function y(e) {
       top: e,
       bottom: n
     } = t.getBoundingClientRect();
-    e >= 0 && n <= window.innerHeight && (l(a), (0, f.i9)(r))
-  }, [a, t, null == s ? true : s.state, r, l]), null
+    e >= 0 && n <= window.innerHeight && (l(o), (0, f.i9)(r))
+  }, [o, t, null == s ? true : s.state, r, l]), null
 }
 
 function O(e) {
@@ -105,7 +105,7 @@ function O(e) {
     emojiName: i,
     disable: s,
     emojiRef: c
-  } = e, u = (0, o.e7)([a.Z], () => a.Z.useReducedMotion), f = d.Z.useIsEligible(), p = (0, l.bp)();
+  } = e, u = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), f = d.Z.useIsEligible(), p = (0, l.bp)();
   return s || p === m.IlC.OVERLAY || !f || null == n || null == t || u || null == c || !h(i) ? null : (0, r.jsx)(y, {
     emojiRef: c,
     channelId: t,

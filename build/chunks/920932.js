@@ -27,7 +27,7 @@ function f(e, t, n) {
   } = e, {
     rowProps: _,
     ...m
-  } = (0, o.K)(e, t, n), {
+  } = (0, a.K)(e, t, n), {
     direction: h
   } = (0, c.j)();
   p && !((0, l.OV)() && "expandedKeys" in t) ? _["aria-rowindex"] = f.index + 1 + t.collection.headerRows.length : delete _["aria-rowindex"];
@@ -48,7 +48,7 @@ function f(e, t, n) {
       }
     }
   }
-  let N = (0, a.fU)(f.props),
+  let N = (0, o.fU)(f.props),
     P = m.hasAction ? N : {};
   return {
     rowProps: {

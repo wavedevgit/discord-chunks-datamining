@@ -14,6 +14,6 @@ var Chunk592125 = require("./592125.js"),
 function c(e, t, n) {
   let c = r.Z.getChannel(n);
   if ((null == e ? true : e.guildId) === s.X8 || (null == e ? true : e.guildId) === (null == c ? true : c.guild_id) || (null == e ? true : e.guildId) === t) returntrue;
-  let u = a.ZP.canUseSoundboardEverywhere(o.default.getCurrentUser());
+  let u = o.ZP.canUseSoundboardEverywhere(a.default.getCurrentUser());
   return (null == c || null == c.guild_id || i.Z.can(l.Pl.USE_EXTERNAL_SOUNDS, c)) && u
 }

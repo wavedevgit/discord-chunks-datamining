@@ -19,7 +19,7 @@ var Chunk473749 = require("./473749.js"),
 
 function m(e) {
   let t = e.ctrlKey || e.altKey || e.metaKey;
-  e.key !== _.mR.Tab || t || __OVERLAY__ || (0, a.hasAnyModalOpen)() || d.Z.maybeShowKeyboardNavigationExplainerModal()
+  e.key !== _.mR.Tab || t || __OVERLAY__ || (0, o.hasAnyModalOpen)() || d.Z.maybeShowKeyboardNavigationExplainerModal()
 }
 
 function h(e) {
@@ -41,17 +41,17 @@ function h(e) {
 
 function g(e, t) {
   var n, r;
-  let o = (0, i.VG)(null == (n = (0, i.uB)(e)) ? true : n.activeElement);
-  if (o && e.key !== _.mR.Tab || e.ctrlKey || e.altKey || e.metaKey || e.key !== _.mR.Tab && e.shiftKey) return;
-  let a = h(e);
-  null == a || f.ZP.hasExactKeybind(a) || l.Z.hasBind(null != (r = p.H9(a[0])) ? r : "") || ((0, c.Qj)(), o && !t && e.preventDefault())
+  let a = (0, i.VG)(null == (n = (0, i.uB)(e)) ? true : n.activeElement);
+  if (a && e.key !== _.mR.Tab || e.ctrlKey || e.altKey || e.metaKey || e.key !== _.mR.Tab && e.shiftKey) return;
+  let o = h(e);
+  null == o || f.ZP.hasExactKeybind(o) || l.Z.hasBind(null != (r = p.H9(o[0])) ? r : "") || ((0, c.Qj)(), a && !t && e.preventDefault())
 }
 
 function E() {
   (0, Chunk857595.rf)()
 }
 let b = function(e, t) {
-  let n = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled);
+  let n = (0, a.e7)([u.Z], () => u.Z.keyboardModeEnabled);
   (0, s.JDz)(n);
   let i = (0, r.useCallback)(e => {
     g(e, t)

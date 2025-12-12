@@ -54,16 +54,16 @@ function h(e, t) {
     var n = [],
       r = true,
       i = false,
-      o = true;
+      a = true;
     try {
-      for (var a, s = e[Symbol.iterator](); !(r = (a = s.next()).done) && (n.push(a.value), !t || n.length !== t); r = true);
+      for (var o, s = e[Symbol.iterator](); !(r = (o = s.next()).done) && (n.push(o.value), !t || n.length !== t); r = true);
     } catch (e) {
-      i = true, o = e
+      i = true, a = e
     } finally {
       try {
         r || null == s.return || s.return()
       } finally {
-        if (i) throw o
+        if (i) throw a
       }
     }
     return n
@@ -75,11 +75,11 @@ function g(e) {
 }
 
 function E(e) {
-  var t = (0, o.p)().toString();
+  var t = (0, a.p)().toString();
   switch (e) {
-    case a.t.SOURCE:
+    case o.t.SOURCE:
       return "S".concat(t);
-    case a.t.TARGET:
+    case o.t.TARGET:
       return "T".concat(t);
     default:
       throw Error("Unknown Handler Role: ".concat(e))
@@ -89,9 +89,9 @@ function E(e) {
 function b(e) {
   switch (e[0]) {
     case "S":
-      return a.t.SOURCE;
+      return o.t.SOURCE;
     case "T":
-      return a.t.TARGET;
+      return o.t.TARGET;
     default:
       (0, r.k)(false, "Cannot parse handler ID: ".concat(e))
   }
@@ -102,9 +102,9 @@ function y(e, t) {
     r = false;
   do {
     var i = n.next(),
-      o = i.done;
+      a = i.done;
     if (f(i.value, 2)[1] === t) returntrue;
-    r = !!o
+    r = !!a
   } while (!r);
   returnfalse
 }
@@ -116,14 +116,14 @@ var O = function() {
     key: "addSource",
     value: function(e, t) {
       (0, s.sM)(e), (0, s.up)(t);
-      var n = this.addHandler(a.t.SOURCE, e, t);
+      var n = this.addHandler(o.t.SOURCE, e, t);
       return this.store.dispatch((0, i.j1)(n)), n
     }
   }, {
     key: "addTarget",
     value: function(e, t) {
       (0, s.sM)(e, true), (0, s.JP)(t);
-      var n = this.addHandler(a.t.TARGET, e, t);
+      var n = this.addHandler(o.t.TARGET, e, t);
       return this.store.dispatch((0, i.jn)(n)), n
     }
   }, {
@@ -155,12 +155,12 @@ var O = function() {
   }, {
     key: "isSourceId",
     value: function(e) {
-      return b(e) === a.t.SOURCE
+      return b(e) === o.t.SOURCE
     }
   }, {
     key: "isTargetId",
     value: function(e) {
-      return b(e) === a.t.TARGET
+      return b(e) === o.t.TARGET
     }
   }, {
     key: "removeSource",
@@ -190,7 +190,7 @@ var O = function() {
     key: "addHandler",
     value: function(e, t, n) {
       var r = E(e);
-      return this.types.set(r, t), e === a.t.SOURCE ? this.dragSources.set(r, n) : e === a.t.TARGET && this.dropTargets.set(r, n), r
+      return this.types.set(r, t), e === o.t.SOURCE ? this.dragSources.set(r, n) : e === o.t.TARGET && this.dropTargets.set(r, n), r
     }
   }]), module
 }()

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -36,7 +36,7 @@ function b(e) {
   let {
     rootClassName: t,
     lang: n,
-    theme: o,
+    theme: a,
     density: E,
     focused: b,
     fontScale: y,
@@ -53,7 +53,7 @@ function b(e) {
     highContrastMode: w,
     isPopoutWindow: D,
     children: x
-  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.e7)([d.Z], () => d.Z.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = "font-size: ".concat(y, "%; --saturation-factor: ").concat(I, "; ").concat(M), U = (0, m.Z)("highlight_mana_buttons"), G = (0, m.Z)("highlight_mana_components"), Z = (0, m.Z)("highlight_void_toggleables"), F = (0, m.Z)("highlight_void_buttons"), B = a()((0, f.Z)(), (0, c.QeD)(o), "density-".concat(E), O, {
+  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.e7)([d.Z], () => d.Z.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = "font-size: ".concat(y, "%; --saturation-factor: ").concat(I, "; ").concat(M), U = (0, m.Z)("highlight_mana_buttons"), G = (0, m.Z)("highlight_mana_components"), Z = (0, m.Z)("highlight_void_toggleables"), F = (0, m.Z)("highlight_void_buttons"), B = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
     "low-saturation": I <= c.AEw,
     "keyboard-mode": S,
     "decorate-links": P,

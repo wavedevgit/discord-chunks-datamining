@@ -23,7 +23,7 @@ module.exports = function(e) {
         end: /\}/
       }]
     },
-    o = {
+    a = {
       className: "string",
       relevance: 0,
       begin: /'/,
@@ -34,7 +34,7 @@ module.exports = function(e) {
         relevance: 0
       }]
     },
-    a = {
+    o = {
       className: "string",
       relevance: 0,
       variants: [{
@@ -45,7 +45,7 @@ module.exports = function(e) {
       }],
       contains: [e.BACKSLASH_ESCAPE, i]
     },
-    s = e.inherit(a, {
+    s = e.inherit(o, {
       variants: [{
         begin: /'/,
         end: /'/,
@@ -130,7 +130,7 @@ module.exports = function(e) {
       className: "number",
       begin: e.C_NUMBER_RE + "\\b",
       relevance: 0
-    }, u, d, o, a],
+    }, u, d, a, o],
     p = [...f];
   return p.pop(), p.push(s), c.contains = p, {
     name: "YAML",

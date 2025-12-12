@@ -109,7 +109,7 @@ function v(e) {
 function S(e) {
   let {
     getRawDevices: t
-  } = b(e), n = (0, o.e7)([l.Z], () => t(l.Z));
+  } = b(e), n = (0, a.e7)([l.Z], () => t(l.Z));
   return (0, r.useMemo)(() => {
     let t = h({}, n),
       r = t[p.w5];
@@ -124,7 +124,7 @@ function I(e) {
     {
       getCurrentDeviceId: n
     } = b(e);
-  return t[(0, o.e7)([l.Z], () => n(l.Z))]
+  return t[(0, a.e7)([l.Z], () => n(l.Z))]
 }
 
 function T(e, t) {
@@ -136,17 +136,17 @@ function T(e, t) {
     location: n
   }), l = S(e), {
     getAllDeviceIdsSortedByFrecency: u
-  } = b(e), _ = (0, a.Z)((0, o.Wu)([d.Z], () => u(d.Z))), {
+  } = b(e), _ = (0, o.Z)((0, a.Wu)([d.Z], () => u(d.Z))), {
     id: m
   } = I(e);
   return (0, r.useMemo)(() => {
     let t = e => e.map(e => l[e]).filter(c.lm),
       n = Object.keys(l),
       r = s && e !== p.h7.VIDEO_INPUT ? [p.w5] : [],
-      o = (0, i.intersection)(_, n),
-      a = (0, i.difference)(n, _),
-      u = (0, i.difference)(a, r, [m]);
-    return (null == o ? true : o.length) === 0 || u.length <= 1 ? [(0, i.union)(r, [m], o, a), []].map(t) : [(0, i.union)(r, [m], o), u].map(t)
+      a = (0, i.intersection)(_, n),
+      o = (0, i.difference)(n, _),
+      u = (0, i.difference)(o, r, [m]);
+    return (null == a ? true : a.length) === 0 || u.length <= 1 ? [(0, i.union)(r, [m], a, o), []].map(t) : [(0, i.union)(r, [m], a), u].map(t)
   }, [l, e, _, m, s])
 }
 
@@ -156,11 +156,11 @@ function C(e) {
     getCurrentDeviceId: r,
     getSelectedDeviceId: i
   } = b(e), {
-    resolvedId: a,
+    resolvedId: o,
     selectedId: c
-  } = (0, o.cj)([l.Z], () => ({
+  } = (0, a.cj)([l.Z], () => ({
     resolvedId: r(l.Z),
     selectedId: i(l.Z)
-  })), u = null != (t = (0, s.Z)(a)) ? t : a, d = a !== u, f = null != (n = (0, s.Z)(c)) ? n : c, p = c !== f;
+  })), u = null != (t = (0, s.Z)(o)) ? t : o, d = o !== u, f = null != (n = (0, s.Z)(c)) ? n : c, p = c !== f;
   return d && !p
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 429080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk898444 = require("./898444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk818923 = require("./818923.js"),
-  Chunk746882 = require("./746882.js");
-let _ = function(e) {
+  Chunk683103 = require("./683103.js"),
+  Chunk647053 = require("./647053.js");
+let b = function(e) {
   let {
     quest: t
-  } = e, [n, l] = i.useState(false), _ = i.useRef(null), b = (0, s.e7)([u.default], () => u.default.getCurrentUser()), E = d.ZP.useName(b), O = (0, c.Z)(null == b ? true : b.id), v = i.useCallback(e => {
+  } = e, [n, l] = i.useState(false), b = i.useRef(null), E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), _ = d.ZP.useName(E), O = (0, c.Z)(null == E ? true : E.id), v = i.useCallback(e => {
     var n, i;
     return (0, r.jsx)(p.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -40,9 +40,9 @@ let _ = function(e) {
       }
       return e
     }({
-      name: E,
+      name: _,
       quest: t,
-      memberListItemRef: _,
+      memberListItemRef: b,
       applicationStream: O
     }, e), i = i = {
       closePopout: () => {
@@ -58,7 +58,7 @@ let _ = function(e) {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
     }), n))
-  }, [t, O, E]);
+  }, [t, O, _]);
   return (0, r.jsx)("div", {
     className: h.previewBackground,
     children: (0, r.jsxs)("div", {
@@ -73,7 +73,7 @@ let _ = function(e) {
       }), (0, r.jsx)("div", {
         className: m.memberListContainer,
         children: (0, r.jsx)(o.yRy, {
-          targetElementRef: _,
+          targetElementRef: b,
           renderPopout: v,
           position: "bottom",
           shouldShow: n,
@@ -85,7 +85,7 @@ let _ = function(e) {
           fixed: true,
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
-            ref: _,
+            ref: b,
             className: a()(m.minimalMemberItem, {
               [m.selected]: n
             }),
@@ -96,15 +96,15 @@ let _ = function(e) {
                 className: m.memberItemContent,
                 children: [(0, r.jsx)(o.qEK, {
                   size: o.EFr.SIZE_32,
-                  src: null == b ? true : b.getAvatarURL(true, 32),
+                  src: null == E ? true : E.getAvatarURL(true, 32),
                   status: f.Skl.ONLINE,
-                  "aria-label": null == b ? true : b.username
+                  "aria-label": null == E ? true : E.username
                 }), (0, r.jsxs)("div", {
                   className: m.memberInfo,
                   children: [(0, r.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    children: E
+                    children: _
                   }), (0, r.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",

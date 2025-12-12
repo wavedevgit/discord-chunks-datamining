@@ -13,12 +13,12 @@ function i() {
   }).apply(this, arguments)
 }
 
-function o(e) {
+function a(e) {
   if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 
@@ -66,8 +66,8 @@ var O = function(e, t) {
   S = function(e, t, n) {
     var r = [],
       i = true,
-      o = false,
-      a = true;
+      a = false,
+      o = true;
     try {
       for (var s, l = n.reverse()[Symbol.iterator](); !(i = (s = l.next()).done); i = true) {
         var c = s.value;
@@ -75,12 +75,12 @@ var O = function(e, t) {
         r.push(c)
       }
     } catch (e) {
-      o = true, a = e
+      a = true, o = e
     } finally {
       try {
         i || null == l.return || l.return()
       } finally {
-        if (o) throw a
+        if (a) throw o
       }
     }
     n.splice(n.indexOf(r[0]), r.length + 1);
@@ -107,35 +107,35 @@ var O = function(e, t) {
       customEditable: n.editable
     } : {}
   },
-  C = function(e, t, n, r, i, o) {
-    var a = {
+  C = function(e, t, n, r, i, a) {
+    var o = {
         "data-block": true,
         "data-editor": t,
         "data-offset-key": n,
         key: e.getKey(),
-        ref: o
+        ref: a
       },
       l = r(e);
-    return l && (a.className = l), true !== i.customEditable && (a = s({}, a, {
+    return l && (o.className = l), true !== i.customEditable && (o = s({}, o, {
       contentEditable: i.customEditable,
       suppressContentEditableWarning: true
-    })), a
+    })), o
   };
 module.exports = function(e) {
   function t() {
     for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-    return l(o(t = e.call.apply(e, [this].concat(r)) || this), "wrapperRef", d.createRef()), t
+    return l(a(t = e.call.apply(e, [this].concat(r)) || this), "wrapperRef", d.createRef()), t
   }
-  a(t, e);
+  o(t, e);
   var n = t.prototype;
   return n.shouldComponentUpdate = function(e) {
     var t = this.props,
       n = t.block,
       r = t.direction,
       i = t.tree,
-      o = !n.getChildKeys().isEmpty(),
-      a = n !== e.block || i !== e.tree || r !== e.direction || O(e.selection, e.block.getKey()) && e.forceSelection;
-    return o || a
+      a = !n.getChildKeys().isEmpty(),
+      o = n !== e.block || i !== e.tree || r !== e.direction || O(e.selection, e.block.getKey()) && e.forceSelection;
+    return a || o
   }, n.componentDidMount = function() {
     var e, t = this.props.selection,
       n = t.getEndKey();
@@ -143,14 +143,14 @@ module.exports = function(e) {
       var r = this.wrapperRef.current;
       if (r) {
         var i = p.getScrollParent(r),
-          o = m(i);
+          a = m(i);
         if (i === window) {
-          var a = _(r);
-          (e = a.y + a.height - h().height) > 0 && window.scrollTo(o.x, o.y + e + y)
+          var o = _(r);
+          (e = o.y + o.height - h().height) > 0 && window.scrollTo(a.x, a.y + e + y)
         } else {
           b(r) || E(false);
           var s = r;
-          (e = s.offsetHeight + s.offsetTop - (i.offsetHeight + o.y)) > 0 && f.setTop(i, f.getTop(i) + e + y)
+          (e = s.offsetHeight + s.offsetTop - (i.offsetHeight + a.y)) > 0 && f.setTop(i, f.getTop(i) + e + y)
         }
       }
     }
@@ -158,8 +158,8 @@ module.exports = function(e) {
     var e = this,
       n = this.props,
       r = n.block,
-      o = n.blockRenderMap,
-      a = n.blockRendererFn,
+      a = n.blockRenderMap,
+      o = n.blockRendererFn,
       l = n.blockStyleFn,
       f = n.contentState,
       p = n.decorator,
@@ -175,9 +175,9 @@ module.exports = function(e) {
     r.children.size && (N = r.children.reduce(function(n, r) {
       var i = u.encode(r, 0, 0),
         c = f.getBlockForKey(r),
-        p = T(c, a),
+        p = T(c, o),
         h = p.CustomComponent || t,
-        g = I(c, o),
+        g = I(c, a),
         E = g.Element,
         b = g.wrapperTemplate,
         y = C(c, _, i, l, p, null),
@@ -191,7 +191,7 @@ module.exports = function(e) {
     }, []));
     var P = r.getKey(),
       R = u.encode(P, 0, 0),
-      w = T(r, a),
+      w = T(r, o),
       D = w.CustomComponent,
       x = null != D ? d.createElement(D, i({}, this.props, {
         tree: m.getBlockTree(P),
@@ -212,7 +212,7 @@ module.exports = function(e) {
         tree: A
       });
     if (r.getParentKey()) return x;
-    var L = I(r, o).Element,
+    var L = I(r, a).Element,
       j = C(r, _, R, l, w, this.wrapperRef);
     return d.createElement(L, j, x)
   }, t

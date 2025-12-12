@@ -63,7 +63,7 @@ class p extends(r = Chunk473749.PureComponent) {
       disabled: t,
       className: n,
       tabIndex: r,
-      "aria-label": o,
+      "aria-label": a,
       filters: s
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk53281.Z, {
@@ -79,7 +79,7 @@ class p extends(r = Chunk473749.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), c(this, "_ref", o.createRef()), c(this, "_isMounted", false), c(this, "handleFileChange", e => {
+    super(...e), c(this, "_ref", a.createRef()), c(this, "_isMounted", false), c(this, "handleFileChange", e => {
       let {
         onFileSizeError: t,
         maxFileSizeBytes: n

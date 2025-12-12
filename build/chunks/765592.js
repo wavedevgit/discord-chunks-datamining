@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk610388 = require("./610388.js"),
   Chunk822632 = require("./822632.js");
-let o = 0,
-  a = 1,
+let a = 0,
+  o = 1,
   s = 2,
   l = 3,
   c = 4,
@@ -34,11 +34,11 @@ function h(e) {
   let t = 2,
     n = {},
     i = [];
-  for (let o = 0; o < e.byteLength; o += t + _) {
-    let a = r.Z.getShortAt(e, o);
-    g[a] && (n[a] || (n[a] = g[a].description), i.push({
-      type: a,
-      path: g[a].path(e, o + t)
+  for (let a = 0; a < e.byteLength; a += t + _) {
+    let o = r.Z.getShortAt(e, a);
+    g[o] && (n[o] || (n[o] = g[o].description), i.push({
+      type: o,
+      path: g[o].path(e, a + t)
     }))
   }
   return JSON.stringify({
@@ -47,11 +47,11 @@ function h(e) {
   })
 }
 let g = {
-  [o]: {
+  [a]: {
     description: "Closed subpath length",
     path: (e, t) => [r.Z.getShortAt(e, t)]
   },
-  [a]: {
+  [o]: {
     description: "Closed subpath Bezier knot, linked",
     path: E
   },
@@ -104,9 +104,9 @@ function y(e, t) {
 }
 
 function O(e, t, n) {
-  let o = r.Z.getLongAt(e, t),
-    a = o >>> 31 == 0 ? 1 : false,
-    s = (0x7f000000 & o) >>> 32 - n,
-    l = o & parseInt((0, i._f)("1", 32 - n), 2);
-  return a * (0, i.HI)(s.toString(2) + "." + (0, i.Sk)(l.toString(2), 32 - n, "0"), 2)
+  let a = r.Z.getLongAt(e, t),
+    o = a >>> 31 == 0 ? 1 : false,
+    s = (0x7f000000 & a) >>> 32 - n,
+    l = a & parseInt((0, i._f)("1", 32 - n), 2);
+  return o * (0, i.HI)(s.toString(2) + "." + (0, i.Sk)(l.toString(2), 32 - n, "0"), 2)
 }

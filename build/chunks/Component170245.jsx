@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk700582 = require("./700582.jsx"),
   Chunk699516 = require("./699516.js");
 require("./51144.js");
-var Chunk913139 = require("./913139.js");
+var Chunk639845 = require("./639845.js");
 let h = function(e) {
   let {
     user: t,
@@ -22,7 +22,7 @@ let h = function(e) {
     status: p,
     isMobile: d,
     className: m
-  } = e, N = (0, o.e7)([u.Z], () => u.Z.getNickname(t.id));
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.getNickname(t.id));
   return (0, n.jsxs)("div", {
     className: r()(c.userInfo, m, {
       [c.hovered]: i
@@ -37,7 +37,7 @@ let h = function(e) {
       className: c.text,
       children: [(0, n.jsx)(a.Z, {
         user: t,
-        nick: N,
+        nick: O,
         botClass: c.botTag,
         className: r()(c.discordTag, {
           [c.alignPomelo]: t.hasUniqueUsername()

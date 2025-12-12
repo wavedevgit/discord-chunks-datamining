@@ -38,7 +38,7 @@ function p(e) {
 }
 let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
   m = function() {
-    var e, t, n, o, a;
+    var e, t, n, a, o;
     let s = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       l = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.MODAL_BACKGROUND),
       c = (0, Chunk481060.dQu)(Chunk481060.TVs.colors.TEXT_STRONG),
@@ -46,8 +46,8 @@ let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
       d = null != (e = Chunk351402.theme) ? module : "flat",
       f = null != (t = Chunk351402.colorText) ? exports : Chunk947673.hex(),
       p = null != (n = Chunk351402.colorBackground) ? require : Chunk122289.hex(),
-      _ = null != (o = Chunk351402.inputBackgroundColor) ? Chunk493773 : Chunk720452.hex(),
-      m = null != (a = Chunk351402.tabBackgroundColor) ? Chunk710845 : Chunk720452.hex();
+      _ = null != (a = Chunk351402.inputBackgroundColor) ? Chunk493773 : Chunk720452.hex(),
+      m = null != (o = Chunk351402.tabBackgroundColor) ? Chunk710845 : Chunk720452.hex();
     return {
       elementsAppearance: Chunk473749.useMemo(() => ({
         theme: Chunk637286,
@@ -77,7 +77,7 @@ let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
     let {
       onSetupError: t,
       elementsAppearanceOptions: n = {}
-    } = e, [i, a] = r.useState(true), [f, h] = r.useState(null), [g, E] = r.useState(true), [b, y] = r.useState([]), [O, v] = r.useState({}), S = r.useCallback(async () => {
+    } = e, [i, o] = r.useState(true), [f, h] = r.useState(null), [g, E] = r.useState(true), [b, y] = r.useState([]), [O, v] = r.useState({}), S = r.useCallback(async () => {
       var e;
       let n = (0, u.Q)({
         ipCountryCode: null != (e = s.Z.ipCountryCode) ? e : "ALL",
@@ -88,7 +88,7 @@ let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
           client_secret: e,
           custom_payment_methods: t
         } = await (0, c.V)(n), r = (0, d.Po)(t), i = t.reduce((e, t) => (e[t.custom_payment_method_id] = t.payment_source_type, e), {});
-        y(r), v(i), a(e)
+        y(r), v(i), o(e)
       } catch (e) {
         h(e), null != t && t(e), _.error("there was an error on setup for Payment Elements: ", e), (0, l.q2)(e, {
           tags: {
@@ -98,7 +98,7 @@ let _ = new Chunk710845.Z("useStripePaymentElementOptions"),
       }
       E(false)
     }, [t]);
-    (0, o.ZP)(() => {
+    (0, a.ZP)(() => {
       S()
     });
     let {

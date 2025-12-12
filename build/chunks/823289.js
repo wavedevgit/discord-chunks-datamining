@@ -25,10 +25,10 @@ class d {
     null != this.timeoutTimer && (clearTimeout(this.timeoutTimer), this.timeoutTimer = null)
   }
   sendMetric(e, t, n) {
-    Math.random() > u || (o.Z.distribution({
+    Math.random() > u || (a.Z.distribution({
       name: r.V.QUEST_BAR_RENDER_DELAY,
       tags: ["quest_id:".concat(e), "timeout:".concat(t)]
-    }, n), a.default.track(s.rMx.QUEST_BAR_RENDER_DELAY, {
+    }, n), o.default.track(s.rMx.QUEST_BAR_RENDER_DELAY, {
       quest_id: e,
       timeout: t,
       duration: n

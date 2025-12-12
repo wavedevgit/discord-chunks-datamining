@@ -8,7 +8,7 @@ var Chunk806262 = require("./806262.js"),
   Chunk752689 = require("./752689.js"),
   Chunk218769 = require("./218769.js");
 
-function a(e) {
+function o(e) {
   return e && e.__esModule ? e.default : e
 }
 
@@ -19,7 +19,7 @@ function s(e, t) {
   return {
     checkboxProps: {
       id: l,
-      "aria-label": (0, o.q)(a(r.Z), "@react-aria/grid").format("select"),
+      "aria-label": (0, a.q)(o(r.Z), "@react-aria/grid").format("select"),
       isSelected: u,
       isDisabled: c,
       onChange: d

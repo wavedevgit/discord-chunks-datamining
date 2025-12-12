@@ -9,7 +9,7 @@ require.d(exports, {
   vN: () => Z
 }), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var i, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
+  o = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -102,23 +102,23 @@ let L = "1001",
     return null != t && (1 !== e.length || e[0][1] !== t)
   },
   U = (e, t, n, r) => {
-    var i, o;
-    let a = (0, b.pz)(false).get("Backquote"),
+    var i, a;
+    let o = (0, b.pz)(false).get("Backquote"),
       s = (0, b.pz)(true).get("Backquote");
     w.log(e, {
       tags: {
-        backquoteKey: null != a ? a : "unknown",
+        backquoteKey: null != o ? o : "unknown",
         nativeBackquoteKey: null != s ? s : "unknown",
-        backquoteCode: "".concat(null == (i = (0, b.T_)(null != a ? a : "`")) ? true : i.keyCode),
-        nativeBackquoteCode: "".concat(null == (o = (0, b.T_)(null != s ? s : "`")) ? true : o.keyCode)
+        backquoteCode: "".concat(null == (i = (0, b.T_)(null != o ? o : "`")) ? true : i.keyCode),
+        nativeBackquoteCode: "".concat(null == (a = (0, b.T_)(null != s ? s : "`")) ? true : a.keyCode)
       },
       extra: N({
         keyCombo: t,
         combo: n,
-        layoutMapBacktick: a,
+        layoutMapBacktick: o,
         env: T.Cg[(0, y.dU)()],
         backtickEventShape: (0, b.T_)("`"),
-        backquoteKeyShape: (0, b.T_)(null != a ? a : "`"),
+        backquoteKeyShape: (0, b.T_)(null != o ? o : "`"),
         nativeBackquoteKeyShape: (0, b.T_)(null != s ? s : "`")
       }, r)
     })
@@ -186,9 +186,9 @@ function $(e, t) {
   if (null == r) return;
   let i = null == (n = Y[r.action]) ? true : n.keyEvents;
   if (null == i) return;
-  let o = Y[r.action];
+  let a = Y[r.action];
   if (i.keydown && i.keyup) {
-    null != o && J(t, Y[r.action], r);
+    null != a && J(t, Y[r.action], r);
     return
   }
   q.push(e), setTimeout(() => {
@@ -201,7 +201,7 @@ function $(e, t) {
       }
     }
     try {
-      null != o && J(t, o, r)
+      null != a && J(t, a, r)
     } finally {
       setTimeout(() => {
         q.includes(e) && q.splice(q.indexOf(e), 1)
@@ -217,7 +217,7 @@ function ee() {
 
 function et() {
   let e = Z();
-  K && (ea(module.id), K = false)
+  K && (eo(module.id), K = false)
 }
 
 function en() {
@@ -231,7 +231,7 @@ function en() {
 
 function er() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  (W || module) && (ea(D.id), W = false)
+  (W || module) && (eo(D.id), W = false)
 }
 
 function ei(e) {
@@ -241,7 +241,7 @@ function ei(e) {
   t ? en() : er(true)
 }
 
-function eo(e, t, n, r) {
+function ea(e, t, n, r) {
   if (g.isPlatformEmbedded) try {
     E.ZP.inputEventRegister(e, t, n, r)
   } catch (n) {
@@ -250,13 +250,13 @@ function eo(e, t, n, r) {
       shortcut: t
     }, n), n
   } else {
-    ea(e.toString());
+    eo(e.toString());
     let i = (0, p.r)(document);
     r.keyup && i.bindGlobal((0, y.BB)(t), () => n(false), "keyup"), r.keydown && i.bindGlobal((0, y.BB)(t), () => n(true), "keydown"), F[e] = i
   }
 }
 
-function ea(e) {
+function eo(e) {
   if (g.isPlatformEmbedded) E.ZP.inputEventUnregister(parseInt(e, 10));
   else {
     let t = F[e];
@@ -281,17 +281,17 @@ function es(e) {
   if (0 === t.length || null == t || n === v.kg4.UNASSIGNED || !r) return;
   if (null == Y[n]) return void w.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
   let i = e.id,
-    o = parseInt(i, 10);
-  if (isNaN(o)) return void w.error("[kb store] KeybindStore: Keybind id is not a number. Skipping registration.", {
+    a = parseInt(i, 10);
+  if (isNaN(a)) return void w.error("[kb store] KeybindStore: Keybind id is not a number. Skipping registration.", {
     keybind: e
   });
-  let a = Y[n].keyEvents;
-  e.action === v.kg4.TOGGLE_MUTE && er(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && et(), eo(o, t, e => $(i, e), N({
+  let o = Y[n].keyEvents;
+  e.action === v.kg4.TOGGLE_MUTE && er(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(a, t, e => $(i, e), N({
     focused: true,
     blurred: true,
     keydown: false,
     keyup: false
-  }, a)), d.Z.validateKeybind((0, y.BB)(t))
+  }, o)), d.Z.validateKeybind((0, y.BB)(t))
 }
 
 function el(e) {
@@ -309,7 +309,7 @@ function el(e) {
 }
 
 function ec(e) {
-  ea(e.id), B = N({}, B), delete B[e.id], e.action === v.kg4.TOGGLE_MUTE && en(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && ee()
+  eo(e.id), B = N({}, B), delete B[e.id], e.action === v.kg4.TOGGLE_MUTE && en(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && ee()
 }
 
 function eu(e) {
@@ -351,7 +351,7 @@ function ep(e) {
   let {
     enable: t
   } = e;
-  H = t, t ? (d.Z.enable(), l().forEach(B, es), en(), ee()) : (d.Z.disable(), l().forEach(B, e => ea(e.id)), er(), et())
+  H = t, t ? (d.Z.enable(), l().forEach(B, es), en(), ee()) : (d.Z.disable(), l().forEach(B, e => eo(e.id)), er(), et())
 }
 
 function e_(e) {
@@ -498,7 +498,7 @@ A(ey, "displayName", "KeybindsStore"), A(ey, "persistKey", "keybinds"), A(ey, "m
     if ((0, g.isLinux)() && t.action === v.kg4.SOUNDBOARD_HOLD) {
       let n = t.shortcut.map(e => e[1]),
         r = (0, y.Kd)("`").map(e => e[1]);
-      if (a()(n, r)) return e
+      if (o()(n, r)) return e
     }
     return R(N({}, e), {
       [n]: t

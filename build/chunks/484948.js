@@ -6,13 +6,13 @@ require.d(exports, {
 });
 var r, Chunk159447 = require("./159447.js"),
   Chunk473749 = require("./473749.js");
-let a = null != (r = Chunk473749.useInsertionEffect) ? r : Chunk159447.b;
+let o = null != (r = Chunk473749.useInsertionEffect) ? r : Chunk159447.b;
 
 function s(e) {
-  let t = (0, o.useRef)(null);
-  return a(() => {
+  let t = (0, a.useRef)(null);
+  return o(() => {
     t.current = e
-  }, [e]), (0, o.useCallback)((...e) => {
+  }, [e]), (0, a.useCallback)((...e) => {
     let n = t.current;
     return null == n ? true : n(...e)
   }, [])

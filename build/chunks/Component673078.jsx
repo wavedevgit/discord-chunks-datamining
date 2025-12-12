@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk240864 = require("./240864.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk696242 = require("./696242.js");
+  Chunk234426 = require("./234426.js");
 
 function m(t) {
   let {
@@ -23,7 +23,7 @@ function m(t) {
     guildId: r
   } = t, o = (0, c.e7)([u.Z], () => {
     var t;
-    return u.Z.getRole(r, null != (t = null == e ? true : e.role_id) ? t : f.lds)
+    return u.Z.getRole(r, null != (t = null == e ? true : e.role_id) ? t : g.lds)
   });
   return null == o ? null : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(a.Heading, {
@@ -66,8 +66,8 @@ function O(t) {
       }
       return o
     }(t, ["guildId", "productId"]);
-  let [f] = o.useState(() => g.Z.getGuildProduct(c));
-  l()(null != f, "guildProductListing cannot be null");
+  let [g] = o.useState(() => f.Z.getGuildProduct(c));
+  l()(null != g, "guildProductListing cannot be null");
   let [O, y] = o.useState(false), j = async () => {
     try {
       y(true), await d.mh(i, c)
@@ -107,10 +107,10 @@ function O(t) {
     children: [(0, n.jsx)(a.Text, {
       variant: "text-md/normal",
       children: p.intl.format(p.t.CPQsjo, {
-        productName: f.name
+        productName: g.name
       })
     }), (0, n.jsx)(m, {
-      guildProductListing: f,
+      guildProductListing: g,
       guildId: i
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {

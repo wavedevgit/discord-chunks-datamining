@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -56,7 +56,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk442010 = require("./442010.js");
+  Chunk749570 = require("./749570.js");
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,23 +93,23 @@ function er(e, t) {
   }), e
 }
 
-function es(e, t) {
+function ea(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
     var n, i, r = {},
-      s = Object.keys(e);
-    for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      a = Object.keys(e);
+    for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
     return r
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var s = Object.getOwnPropertySymbols(e);
-    for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
   }
   return r
 }
-let eo = Chunk987650.wF.TOP;
-class el extends Chunk473749.Component {
+let es = Chunk987650.wF.TOP;
+class eo extends Chunk473749.Component {
   componentDidUpdate(e) {
     e.channel.id !== this.props.channel.id && this.draftDidChange(this.props), (this.props.channel !== e.channel || this.props.isTemporarilyActive && !e.isTemporarilyActive) && this.setState({
       focused: true
@@ -124,11 +124,11 @@ class el extends Chunk473749.Component {
         channel: t,
         placeholder: n
       } = module,
-      r = es(module, ["channel", "placeholder"]),
+      r = ea(module, ["channel", "placeholder"]),
       {
-        focused: s,
-        textValue: o,
-        contentWarningProps: l,
+        focused: a,
+        textValue: s,
+        contentWarningProps: o,
         richValue: c
       } = this.state,
       u = (0, Chunk54381.jsx)(Chunk481060.yRy, {
@@ -145,9 +145,9 @@ class el extends Chunk473749.Component {
           let {
             closePopout: t
           } = e;
-          return a()(null != l, "ConnectedChannelTextArea.render - renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(P.Z, ei({
+          return l()(null != o, "ConnectedChannelTextArea.render - renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(P.Z, ei({
             onClose: t
-          }, l))
+          }, o))
         },
         children: () => (0, Chunk54381.jsx)(Chunk893718.ZP, er(ei({}, Chunk473749), {
           ref: this.textAreaRef,
@@ -161,7 +161,7 @@ class el extends Chunk473749.Component {
             focused: false
           }),
           placeholder: require,
-          textValue: o,
+          textValue: s,
           richValue: Chunk442837,
           onSubmit: this.handleSendMessage,
           onChange: this.handleTextareaChange,
@@ -185,14 +185,14 @@ class el extends Chunk473749.Component {
           textValue: n
         } = t.state,
         i = R.Z.getDraft(e.channel.id, R.d.ChannelMessage);
-      n !== i && "" === i && t.setState((0, x.eK)(i))
+      n !== i && "" === i && t.setState((0, S.eK)(i))
     }), en(this, "handleTextareaKeyDown", e => {
       if (e.which === Q.yXg.ARROW_UP && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && 0 === this.state.textValue.length) {
         e.preventDefault();
         let {
           channel: t
         } = this.props, n = M.Z.getLastEditableMessage(t.id);
-        null != n && p.Z.startEditMessageRecord(t.id, n)
+        null != n && h.Z.startEditMessageRecord(t.id, n)
       }
     }), en(this, "handleTextareaChange", (e, t, n) => {
       let {
@@ -200,7 +200,7 @@ class el extends Chunk473749.Component {
           id: i
         }
       } = this.props;
-      h.Z.changeDraft(i, this.state.textValue, R.d.ChannelMessage), "" !== t ? g.Z.startTyping(i) : g.Z.stopTyping(i), this.setState({
+      f.Z.changeDraft(i, this.state.textValue, R.d.ChannelMessage), "" !== t ? g.Z.startTyping(i) : g.Z.stopTyping(i), this.setState({
         textValue: t,
         richValue: n
       })
@@ -219,25 +219,25 @@ class el extends Chunk473749.Component {
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
-        type: E.Ie.OVERLAY,
+        type: x.Ie.OVERLAY,
         content: t,
         channel: n
       }).then(e => {
         let {
-          valid: s,
-          failureReason: o
+          valid: a,
+          failureReason: s
         } = e;
-        if (!s) return o === Q.zYc.SLOWMODE_COOLDOWN ? (B.S.dispatch(Q.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
+        if (!a) return s === Q.zYc.SLOWMODE_COOLDOWN ? (B.S.dispatch(Q.CkL.EMPHASIZE_SLOWMODE_COOLDOWN), {
           shouldClear: false,
           shouldRefocus: true
         }) : {
           shouldClear: false,
           shouldRefocus: false
         };
-        let l = p.Z.getSendMessageOptionsForReply(i);
-        return (p.Z.sendMessage(n.id, I.ZP.parse(n, t), true, er(ei({}, l), {
+        let o = h.Z.getSendMessageOptionsForReply(i);
+        return (h.Z.sendMessage(n.id, I.ZP.parse(n, t), true, er(ei({}, o), {
           location: $.dy.OVERLAY
-        })), this.setState((0, x.H2)()), (0, N.A6)(n.id), r) ? (f.Z.deactivateAllRegions(), {
+        })), this.setState((0, S.H2)()), (0, N.A6)(n.id), r) ? (p.Z.deactivateAllRegions(), {
           shouldClear: false,
           shouldRefocus: false
         }) : {
@@ -253,29 +253,29 @@ class el extends Chunk473749.Component {
       this.setState({
         focused: false
       })
-    }), en(this, "renderAttachButton", (e, t) => (0, i.jsx)(S.Z, {
+    }), en(this, "renderAttachButton", (e, t) => (0, i.jsx)(_.Z, {
       className: t,
       channel: this.props.channel,
       draftType: R.d.ChannelMessage,
       editorTextContent: this.state.textValue,
-      setValue: e => this.handleTextareaChange(null, e, (0, x.JM)(e)),
+      setValue: e => this.handleTextareaChange(null, e, (0, S.JM)(e)),
       canOnlyUseTextCommands: e,
-      chatInputType: E.Ie.OVERLAY
+      chatInputType: x.Ie.OVERLAY
     })), R.Z.addChangeListener(this.draftDidChange);
     let n = R.Z.getDraft(e.channel.id, R.d.ChannelMessage);
-    this.state = er(ei({}, (0, x.eK)(n)), {
+    this.state = er(ei({}, (0, S.eK)(n)), {
       focused: false,
       contentWarningProps: null
     }), B.S.subscribe(Q.CkL.TEXTAREA_FOCUS, this.focusInput), B.S.subscribe(Q.CkL.TEXTAREA_BLUR, this.blurInput)
   }
 }
-class ea extends Chunk473749.PureComponent {
+class el extends Chunk473749.PureComponent {
   componentDidUpdate(e) {
     let {
       channel: t,
       activated: n
     } = this.props;
-    (0, K.CR)(e, this.props, this.shouldDisplay), null != t && n && !e.activated && f.Z.track(Q.rMx.OVERLAY_UNLOCKED, {
+    (0, K.CR)(e, this.props, this.shouldDisplay), null != t && n && !e.activated && p.Z.track(Q.rMx.OVERLAY_UNLOCKED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
@@ -297,73 +297,73 @@ class ea extends Chunk473749.PureComponent {
     let e, {
       channel: t,
       placeholder: n,
-      nsfwAgree: s,
-      guild: l,
-      locked: a,
+      nsfwAgree: a,
+      guild: o,
+      locked: l,
       activated: c,
       chatKeybind: d,
       pinned: u,
-      isPreviewingInGame: h,
-      dragging: p,
-      pendingReply: f
+      isPreviewingInGame: f,
+      dragging: h,
+      pendingReply: p
     } = this.props;
     if (null == exports) return null;
-    let g = a || Chunk430742,
-      _ = !Chunk120356 && null != exports && exports.isNSFW(),
+    let g = l || Chunk430742,
+      m = !Chunk120356 && null != exports && exports.isNSFW(),
       y = !Chunk144144 || Chunk442837;
     return e = Chunk655687 && null != Chunk512722 ? (0, Chunk54381.jsx)(Chunk271172.Z, {
       guild: Chunk512722,
       channelId: exports.id
     }) : (0, Chunk54381.jsx)(Chunk400023.Z, {
       channel: exports,
-      className: Chunk442010.messages,
+      className: Chunk749570.messages,
       forceCompact: Chunk239091,
       showNewMessagesBar: !Chunk144144,
-      scrollerClassName: Chunk239091 ? Chunk442010.scroller : true,
+      scrollerClassName: Chunk239091 ? Chunk749570.scroller : true,
       showingQuarantineBanner: false
     }, exports.id), (0, Chunk54381.jsx)(Chunk249458.G.Provider, {
       value: {
-        disableInteractions: Chunk239091 && a && !Chunk442837,
+        disableInteractions: Chunk239091 && l && !Chunk442837,
         disableAnimations: Chunk239091 && Chunk144144 && !Chunk442837
       },
       children: (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
-        children: [!a && !Chunk430742 && (0, Chunk54381.jsx)(Chunk25007.Z, {
+        children: [!l && !Chunk430742 && (0, Chunk54381.jsx)(Chunk25007.Z, {
           channel: exports,
           guild: Chunk512722
         }), (0, Chunk54381.jsx)(Chunk518084.ZP.Background, {
-          opacityOverride: a || Chunk430742 ? null : eo,
+          opacityOverride: l || Chunk430742 ? null : es,
           children: (0, Chunk54381.jsx)("div", {
-            className: o()(Chunk442010.messagesContainer, {
-              [Chunk442010.isDragging]: Chunk904245,
-              [Chunk442010.disableHoverStates]: Chunk239091 && a && !Chunk442837
+            className: s()(Chunk749570.messagesContainer, {
+              [Chunk749570.isDragging]: Chunk904245,
+              [Chunk749570.disableHoverStates]: Chunk239091 && l && !Chunk442837
             }),
             children: module
           })
         }), Chunk655687 ? null : (0, Chunk54381.jsx)("div", {
           children: Chunk823748 ? (0, Chunk54381.jsx)(Chunk518084.ZP.Background, {
-            opacityOverride: a || Chunk430742 ? null : eo,
+            opacityOverride: l || Chunk430742 ? null : es,
             children: (0, Chunk54381.jsxs)("div", {
-              className: Chunk442010.footerContent,
-              children: [(0, Chunk54381.jsx)(el, {
+              className: Chunk749570.footerContent,
+              children: [(0, Chunk54381.jsx)(eo, {
                 channel: exports,
                 placeholder: require,
                 isTemporarilyActive: Chunk442837,
                 pendingReply: Chunk13245
               }), (0, Chunk54381.jsx)("div", {
-                className: Chunk442010.typingWrapper,
+                className: Chunk749570.typingWrapper,
                 children: (0, Chunk54381.jsx)(Chunk738619.ZP, {
                   channel: exports,
-                  className: Chunk442010.typing,
+                  className: Chunk749570.typing,
                   isInTextChannel: true
                 })
               })]
             })
           }) : (0, Chunk54381.jsx)("div", {
-            className: Chunk442010.activateContainer,
+            className: Chunk749570.activateContainer,
             children: (0, Chunk54381.jsx)(Chunk518084.ZP.Background, {
               opacityOverride: Chunk987650.wF.LOWER,
               children: (0, Chunk54381.jsx)("div", {
-                className: o()(Chunk442010.activateKeybind, Chunk442010.__invalid_mediumBackgroundOpacity),
+                className: s()(Chunk749570.activateKeybind, Chunk749570.__invalid_mediumBackgroundOpacity),
                 children: null != exports.name && exports.name.length > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["9TkYMO"], {
                   keybind: Chunk481060,
                   channelName: exports.isMultiUserDM() ? exports.name : "#".concat(exports.name)
@@ -382,28 +382,28 @@ class ea extends Chunk473749.PureComponent {
       locked: t,
       pinned: n,
       activated: r,
-      isPreviewingInGame: s,
-      opacity: l,
-      className: a
+      isPreviewingInGame: a,
+      opacity: o,
+      className: l
     } = this.props, c = Q.t_t.UNPINNED;
-    r ? c = Q.t_t.IN_GAME_ACTIVE : n && t || s ? c = Q.t_t.IN_GAME_TEXT : n && (c = Q.t_t.PINNED);
-    let d = t && !r || s,
+    r ? c = Q.t_t.IN_GAME_ACTIVE : n && t || a ? c = Q.t_t.IN_GAME_TEXT : n && (c = Q.t_t.PINNED);
+    let d = t && !r || a,
       u = n && (d || r),
-      h = n && r,
-      p = n && d && !r,
-      f = (0, Y.Z)(l);
+      f = n && r,
+      h = n && d && !r,
+      p = (0, Y.Z)(o);
     return (0, i.jsx)(J.ZP, {
-      className: o()(f, {
+      className: s()(p, {
         [et.widgetWrapper]: !n,
         [et.widgetWrapperPinned]: n,
-        [et.locked]: p,
+        [et.locked]: h,
         [et.inGame]: u,
-        [et.inGameActive]: h,
+        [et.inGameActive]: f,
         [et.pinned]: n,
         "overlay-unlocked": !t
-      }, a),
+      }, l),
       type: c,
-      opacity: l,
+      opacity: o,
       children: e
     })
   }
@@ -422,40 +422,40 @@ class ea extends Chunk473749.PureComponent {
       locked: e,
       channel: t,
       pinned: n,
-      isPreviewingInGame: s,
-      contained: o
+      isPreviewingInGame: a,
+      contained: s
     } = this.props;
     if (null == exports || !this.shouldDisplay()) return null;
-    let l = (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
+    let o = (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk786906.Z, {
-        draggableClassName: Chunk442010.draggableStartArea,
-        className: Chunk442010.headerDefault,
+        draggableClassName: Chunk749570.draggableStartArea,
+        className: Chunk749570.headerDefault,
         channel: exports,
         locked: module,
         pinned: require,
-        disableDragIndicator: o,
+        disableDragIndicator: s,
         isPreviewingInGame: Chunk120356,
         handlePin: this.handlePin,
         onContextMenu: this.handleContextMenu,
         onMouseDown: this.moveDragStart
       }), this.renderContent(), module || Chunk120356 ? null : (0, Chunk54381.jsx)("div", {
-        className: Chunk442010.resizeIcon,
+        className: Chunk749570.resizeIcon,
         onMouseDown: this.resizeDragStart
       })]
     });
-    return o ? this.renderContainedWrapper(Chunk512722) : this.renderWidgetWrapper(Chunk512722)
+    return s ? this.renderContainedWrapper(Chunk512722) : this.renderWidgetWrapper(Chunk512722)
   }
   constructor(...e) {
     super(...e), en(this, "handlePin", () => {
       var e, t, n;
       let i = !this.props.pinned;
-      f.Z.track(Q.rMx.OVERLAY_PIN_TOGGLED, {
+      p.Z.track(Q.rMx.OVERLAY_PIN_TOGGLED, {
         pinned: i,
         guild_id: null == (e = this.props.channel) ? true : e.guild_id,
         channel_id: null == (t = this.props.channel) ? true : t.id,
         channel_type: null == (n = this.props.channel) ? true : n.type,
         widget_type: Q.Odu.TEXT
-      }), f.Z.setPinChat(i)
+      }), p.Z.setPinChat(i)
     }), en(this, "handleContextMenu", e => {
       let {
         channel: t,
@@ -464,7 +464,7 @@ class ea extends Chunk473749.PureComponent {
       null != t && null != r && (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("93896")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, er(ei({}, n), {
           user: r,
           channelSelected: true,
@@ -488,35 +488,35 @@ class ea extends Chunk473749.PureComponent {
 function ec(e) {
   var {
     contained: t = false
-  } = e, n = es(e, ["contained"]);
+  } = e, n = ea(e, ["contained"]);
   let r = (0, c.e7)([V.Z], () => V.Z.getGuildId()),
-    s = (0, c.e7)([z.Z], () => z.Z.getChannelId(r)),
-    o = (0, c.e7)([k.Z], () => k.Z.getChannel(s)),
-    l = (0, c.e7)([U.ZP], () => U.ZP.getOverlayChatKeybind()),
-    a = null != l ? (0, F.BB)(l.shortcut, true) : "]",
-    [d, u, h] = (0, c.Wu)([G.default], () => [G.default.getTextWidgetOpacity(), G.default.getActiveRegions(), !t && G.default.isPreviewingInGame()]),
-    p = (0, c.e7)([L.Z], () => L.Z.getGuild(r)),
-    f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
-    g = null != o && o.isPrivate() ? o.getRecipientId() : null,
-    m = (0, c.e7)([T.Z], () => null != s ? T.Z.getPendingReply(s) : true),
+    a = (0, c.e7)([z.Z], () => z.Z.getChannelId(r)),
+    s = (0, c.e7)([k.Z], () => k.Z.getChannel(a)),
+    o = (0, c.e7)([U.ZP], () => U.ZP.getOverlayChatKeybind()),
+    l = null != o ? (0, F.BB)(o.shortcut, true) : "]",
+    [d, u, f] = (0, c.Wu)([G.default], () => [G.default.getTextWidgetOpacity(), G.default.getActiveRegions(), !t && G.default.isPreviewingInGame()]),
+    h = (0, c.e7)([L.Z], () => L.Z.getGuild(r)),
+    p = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
+    g = null != s && s.isPrivate() ? s.getRecipientId() : null,
+    b = (0, c.e7)([T.Z], () => null != a ? T.Z.getPendingReply(a) : true),
     v = (0, c.e7)([W.default], () => null != g ? W.default.getUser(g) : null),
     {
-      placeholder: b
-    } = (0, _.Z)({
-      channel: o
+      placeholder: O
+    } = (0, m.Z)({
+      channel: s
     });
-  return null != o && null != p && Q.TPd.GUILD_THREADS_ONLY.has(o.type) ? (0, i.jsx)(y.Z, {}) : (0, i.jsx)(ea, ei({
-    guild: p,
-    channel: o,
+  return null != s && null != h && Q.TPd.GUILD_THREADS_ONLY.has(s.type) ? (0, i.jsx)(y.Z, {}) : (0, i.jsx)(el, ei({
+    guild: h,
+    channel: s,
     user: v,
     opacity: d,
-    nsfwAgree: f,
-    chatKeybind: a,
+    nsfwAgree: p,
+    chatKeybind: l,
     activated: u.has(Q.O0n.TEXT_WIDGET),
-    isPreviewingInGame: h,
-    pendingReply: m,
+    isPreviewingInGame: f,
+    pendingReply: b,
     contained: t,
-    placeholder: b,
+    placeholder: O,
     widget: Q.Odu.TEXT
   }, n))
 }

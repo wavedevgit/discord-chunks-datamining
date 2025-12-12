@@ -10,10 +10,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk553795 = require("./553795.js");
 
 function s(e) {
-  let t = (0, i.e7)([a.Z], () => a.Z.getAccounts().some(t => t.type === e)),
+  let t = (0, i.e7)([o.Z], () => o.Z.getAccounts().some(t => t.type === e)),
     n = r.useCallback(() => {
       if (null == e) return null;
-      (0, o.Z)({
+      (0, a.Z)({
         platformType: e,
         location: "Member List Content Popout"
       })

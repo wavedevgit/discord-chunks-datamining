@@ -6,27 +6,27 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk210887 = require("./210887.js"),
-  Chunk556849 = require("./556849.js");
+  Chunk10723 = require("./10723.js");
 let d = e => {
   let {
     className: t,
     options: n
-  } = e, i = (0, a.e7)([c.Z], () => (0, s.wj)(c.Z.theme));
+  } = e, i = (0, o.e7)([c.Z], () => (0, s.wj)(c.Z.theme));
   return null == n ? null : null != n ? n.animated ? (0, r.jsx)(l.Z, {
     src: n.getSrc(i),
-    className: o()(u.customConfetti, t),
+    className: a()(u.customConfetti, t),
     style: n.style,
     loop: false,
     muted: true,
     autoPlay: true
   }) : (0, r.jsx)("img", {
     src: n.getSrc(i),
-    className: o()(u.customConfetti, t),
+    className: a()(u.customConfetti, t),
     style: n.style,
     alt: "",
     "aria-hidden": "true"

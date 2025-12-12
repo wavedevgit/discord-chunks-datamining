@@ -17,17 +17,17 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 async function c(e) {
   if (0 === e.length) return;
-  let t = (0, o.F)(),
+  let t = (0, a.F)(),
     n = await t.uploadFiles(e);
   if (t._aborted) throw Error("Upload aborted");
-  return n.map((e, t) => (0, a.B)(e, t))
+  return n.map((e, t) => (0, o.B)(e, t))
 }
 async function u(e) {
   let {
     channelId: t,
     scheduledTimestamp: n,
-    messageSendData: o,
-    attachments: a,
+    messageSendData: a,
+    attachments: o,
     attachmentsToUpload: u
   } = e;
   i.Z.dispatch({
@@ -36,10 +36,10 @@ async function u(e) {
   });
   try {
     let [e, d] = (0, s.Uo)({
-      content: o.content,
-      flags: o.flags
+      content: a.content,
+      flags: a.flags
     });
-    null != u && (a = await c(u));
+    null != u && (o = await c(u));
     let f = await r.tn.post({
       url: l.ANM.SCHEDULED_MESSAGES,
       body: {
@@ -47,9 +47,9 @@ async function u(e) {
         content: e,
         scheduled_timestamp: n,
         flags: d,
-        message_reference: o.message_reference,
-        allowed_mentions: o.allowed_mentions,
-        attachments: null != a ? a : []
+        message_reference: a.message_reference,
+        allowed_mentions: a.allowed_mentions,
+        attachments: null != o ? o : []
       },
       rejectWithError: true
     });
@@ -89,9 +89,9 @@ async function d(e, t) {
       scheduledMessageSend: (0, s.IR)(n.body)
     })
   } catch (r) {
-    var n, o;
+    var n, a;
     s.GO.error("Failed to update scheduled message", r);
-    let t = null != (o = null == (n = r.body) ? true : n.message) ? o : r.message;
+    let t = null != (a = null == (n = r.body) ? true : n.message) ? a : r.message;
     throw i.Z.dispatch({
       type: "SCHEDULED_MESSAGES_UPDATE_FAILURE",
       scheduledMessageId: e,
@@ -113,10 +113,10 @@ async function f(e) {
       type: "SCHEDULED_MESSAGES_DELETE_SUCCESS",
       scheduledMessageId: e
     })
-  } catch (o) {
+  } catch (a) {
     var t, n;
-    s.GO.error("Failed to cancel scheduled message", o);
-    let r = null != (n = null == (t = o.body) ? true : t.message) ? n : o.message;
+    s.GO.error("Failed to cancel scheduled message", a);
+    let r = null != (n = null == (t = a.body) ? true : t.message) ? n : a.message;
     throw i.Z.dispatch({
       type: "SCHEDULED_MESSAGES_DELETE_FAILURE",
       scheduledMessageId: e,

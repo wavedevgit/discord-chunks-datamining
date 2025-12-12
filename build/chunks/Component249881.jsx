@@ -11,12 +11,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk375369 = require("./375369.js");
+  Chunk536780 = require("./536780.js");
 let d = e => {
     let {
       markAsDismissed: t
     } = e;
-    return i.useEffect(() => t(l.L.UNKNOWN), [t]), (0, r.jsx)(a.IGR, {
+    return i.useEffect(() => t(l.L.UNKNOWN), [t]), (0, r.jsx)(o.IGR, {
       className: u.newBadge,
       text: c.intl.string(c.t.y2b7CA)
     })
@@ -46,16 +46,16 @@ let d = e => {
                 markAsDismissed: n
               }) : null
             }
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-md/semibold",
             children: t
           })]
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           children: n
         })]
-      }), (0, r.jsx)(o.zx, {
-        size: o.Ph.MEDIUM,
+      }), (0, r.jsx)(a.zx, {
+        size: a.Ph.MEDIUM,
         onClick: f,
         className: u.reconnectButton,
         children: c.intl.string(c.t.vD60Pv)

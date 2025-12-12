@@ -20,7 +20,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk110924 = require("./110924.js"),
   Chunk358085 = require("./358085.js"),
   Chunk425493 = require("./425493.jsx"),
-  Chunk630016 = require("./630016.js");
+  Chunk306174 = require("./306174.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,8 +65,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,8 +74,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let S = {
@@ -92,16 +92,16 @@ class T extends(r = Chunk473749.PureComponent) {
       } = module,
       n = O(module, ["scrollerRef"]);
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk630016.customContainer,
+      className: Chunk306174.customContainer,
       children: (0, Chunk54381.jsx)(Chunk481060._2F, y(E({}, require), {
-        className: s()(Chunk630016.customScroller, Chunk630016.contentRegionScroller),
+        className: s()(Chunk306174.customScroller, Chunk306174.contentRegionScroller),
         ref: exports
       }))
     })
   }
   render() {
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk630016.customColumn,
+      className: Chunk306174.customColumn,
       children: this.renderContent()
     })
   }
@@ -142,7 +142,7 @@ function P(e) {
     isMobile: t,
     mobileSidebarOpen: n,
     closeAction: r
-  } = e, a = o.useRef(null);
+  } = e, o = a.useRef(null);
   return null == r ? null : (0, i.jsx)("div", {
     className: s()(h.toolsContainer, {
       [h.mobileToolsContainer]: t,
@@ -150,9 +150,9 @@ function P(e) {
       [h.closeIconOnly]: !n,
       [h.isMobileAndroid]: !n && true === (0, _.isAndroidWeb)()
     }),
-    ref: a,
+    ref: o,
     children: (0, i.jsx)(f.JcV, {
-      containerRef: a,
+      containerRef: o,
       children: (0, i.jsx)("div", {
         className: h.tools,
         children: (0, i.jsx)(m.Z, {
@@ -171,7 +171,7 @@ let R = function(e) {
     sidebar: t,
     content: n,
     notice: r,
-    section: a,
+    section: o,
     closeAction: _,
     sidebarTheme: m,
     contentType: g,
@@ -179,7 +179,7 @@ let R = function(e) {
     mobileSidebarOpen: b,
     toggleSidebar: y,
     hideSidebar: O = false
-  } = e, v = o.useRef(null), S = o.useRef(null), T = (0, p.Z)(a), C = (0, f.Yzy)(O, {
+  } = e, v = a.useRef(null), S = a.useRef(null), T = (0, p.Z)(o), C = (0, f.Yzy)(O, {
     from: {
       position: "absolute",
       opacity: 0
@@ -189,14 +189,14 @@ let R = function(e) {
     },
     reverse: O,
     config: l.config.stiff
-  }, "animate-always"), A = o.useCallback(e => {
+  }, "animate-always"), A = a.useCallback(e => {
     v.current = e, null != E && (E.current = e)
   }, [E]);
-  o.useLayoutEffect(() => {
-    null != v.current && T !== a && v.current.scrollTo({
+  a.useLayoutEffect(() => {
+    null != v.current && T !== o && v.current.scrollTo({
       to: 0
     })
-  }, [a, T, v]);
+  }, [o, T, v]);
   let R = (0, i.jsx)(P, {
     isMobile: u.tq,
     mobileSidebarOpen: b,
@@ -209,7 +209,7 @@ let R = function(e) {
         [h.noticeRegionHiddenSidebar]: O
       }),
       children: r
-    }, a)
+    }, o)
   }
 
   function D() {
@@ -260,7 +260,7 @@ let R = function(e) {
           children: [(0, i.jsx)(I.Provider, {
             value: v.current,
             children: (0, i.jsx)(f.njP.Panel, {
-              id: a,
+              id: o,
               className: s()(h.contentColumn, h[r], {
                 [h.mobileContent]: u.tq
               }),

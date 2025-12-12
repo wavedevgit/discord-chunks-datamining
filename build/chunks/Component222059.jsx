@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => L
@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk815141 = require("./815141.js");
+  Chunk992397 = require("./992397.js");
 let D = {
   origin: {
     x: false,
@@ -51,25 +51,25 @@ let D = {
 function M(e) {
   var t, n;
   let {
-    selected: o,
+    selected: a,
     user: d,
     badge: h,
     link: g,
-    showProgressBadge: _
-  } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [C, x] = i.useState(null), [E, w] = i.useState(0), M = (0, l.Ie)("home"), L = (0, f.oq)().activePanel === f.wh.APP_ICON, k = () => {
-    x(null), w(0), clearTimeout(C)
+    showProgressBadge: y
+  } = e, [O, v] = i.useState(false), [j, C] = i.useState(false), [x, E] = i.useState(null), [S, w] = i.useState(0), M = (0, l.Ie)("home"), L = (0, f.oq)().activePanel === f.wh.APP_ICON, k = () => {
+    E(null), w(0), clearTimeout(x)
   }, G = p.o.useConfig({
     location: "home button"
   }).dmsTab;
   if (null == d) return null;
   let U = G ? A.intl.string(A.t.Ym2Ri6) : A.intl.string(A.t.YUU0RF);
-  v && (U = a.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
+  j && (U = o.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
   let B = null;
-  !o && _ && (B = (0, r.jsx)(c.Z, {
+  !a && y && (B = (0, r.jsx)(c.Z, {
     className: R.downloadProgress,
     determineOwnVisibility: false
   }));
-  let F = o || y || L,
+  let F = a || O || L,
     V = (0, r.jsx)(s.aRk, {
       selected: true,
       lowerBadge: h > 0 ? (0, N.Ne)(h) : null,
@@ -95,21 +95,21 @@ function M(e) {
         }
         return e
       }({
-        onMouseEnter: () => O(true),
-        onMouseLeave: () => O(false),
+        onMouseEnter: () => v(true),
+        onMouseLeave: () => v(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != C && clearTimeout(C), x(setTimeout(k, 500)), w(E + 1), 15 === E)) {
+          if (!__OVERLAY__ && (null != x && clearTimeout(x), E(setTimeout(k, 500)), w(S + 1), 15 === S)) {
             k();
-            let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(T.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
-              j(false)
+            let e = !o.K.get(Z.wli);
+            o.K.set(Z.wli, e), e && o.K.set(T.O, true), e ? (0, b.GN)("discodo") : (0, b.GN)("user_leave"), C(true), setTimeout(() => {
+              C(false)
             }, 1e3)
           }
         },
         selected: F,
         ariaLabel: A.intl.string(A.t.YUU0RF),
         "aria-owns": "guild-list-unread-dms",
-        "aria-selected": o
+        "aria-selected": a
       }, M), n = n = {
         to: {
           pathname: g,
@@ -135,19 +135,19 @@ function M(e) {
     });
   return (0, r.jsx)("div", {
     className: R.tutorialContainer,
-    children: (0, r.jsx)(b.Z, {
+    children: (0, r.jsx)(m.Z, {
       inlineSpecs: D,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(I.H, {
-        children: [(0, r.jsx)(S.Z, {
-          selected: o,
-          hovered: y,
+      children: (0, r.jsxs)(_.H, {
+        children: [(0, r.jsx)(I.Z, {
+          selected: a,
+          hovered: O,
           className: R.pill
         }), (0, r.jsx)(P.Z, {
           hideOnClick: true,
           text: U,
-          selected: o,
+          selected: a,
           children: V
         })]
       })
@@ -170,7 +170,7 @@ function L() {
     i = Object.keys(Chunk474936.nG),
     l = (0, Chunk975298.Z)(),
     {
-      unviewedTrialCount: a,
+      unviewedTrialCount: o,
       unviewedDiscountCount: s
     } = (0, Chunk442837.cj)([Chunk431.Z], () => ({
       unviewedTrialCount: Chunk431.Z.getUnacknowledgedOffers(Chunk473749).length,
@@ -179,10 +179,10 @@ function L() {
     u = Chunk91192.fractionalState === Chunk474936.a$.NONE ? Chunk433517 + Chunk481060 : 0,
     f = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     p = (0, Chunk899740.q)(),
-    m = require + Chunk864682 + Chunk365113,
-    b = Chunk460181 === Chunk864682 && Chunk864682 > 0 && require + Chunk365113 === 0,
-    S = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (S = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(M, {
+    b = require + Chunk864682 + Chunk365113,
+    m = Chunk460181 === Chunk864682 && Chunk864682 > 0 && require + Chunk365113 === 0,
+    I = Chunk774343.Z.getHomeLink();
+  return Chunk155409 && (I = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(M, {
     selected: module,
     user: Chunk550385,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),

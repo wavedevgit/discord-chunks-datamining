@@ -2,26 +2,26 @@
 /** chunk id: 994587, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Nd: () => a,
+  Nd: () => o,
   ni: () => s
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
-let o = Chunk473749.createContext(null);
+let a = Chunk473749.createContext(null);
 
-function a() {
-  return Chunk473749.useContext(o)
+function o() {
+  return Chunk473749.useContext(a)
 }
 
 function s(e) {
   let {
     tab: t,
     children: n
-  } = e, a = i.useMemo(() => ({
+  } = e, o = i.useMemo(() => ({
     tab: t
   }), [t]);
-  return (0, r.jsx)(o.Provider, {
-    value: a,
+  return (0, r.jsx)(a.Provider, {
+    value: o,
     children: n
   })
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 231610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk619326 = require("./619326.jsx"),
   Chunk553204 = require("./553204.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk549556 = require("./549556.js");
+  Chunk357923 = require("./357923.js");
 
-function p() {
+function m() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, Chunk727843.N)(), [, p] = Chunk290348.p9(module, exports), [f, h] = Chunk290348.Ek(module, exports), x = Chunk290348.qs(module, exports);
+  } = (0, Chunk727843.N)(), [, m] = Chunk290348.p9(module, exports), [b, p] = Chunk290348.Ek(module, exports), h = Chunk290348.qs(module, exports);
 
-  function b() {
+  function x() {
     (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
-      } = await require.e("22942").then(require.bind(require, 660727));
+      } = await require.e("63635").then(require.bind(require, 660727));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = function(e) {
@@ -48,11 +48,11 @@ function p() {
           return e
         }({}, n), l = l = {
           guildId: t,
-          onUploadIcon: e => p({
+          onUploadIcon: e => m({
             icon: e,
             unicodeEmoji: null
           }),
-          onSelectUnicodeEmoji: e => p({
+          onSelectUnicodeEmoji: e => m({
             icon: null,
             unicodeEmoji: e
           })
@@ -80,8 +80,8 @@ function p() {
         label: Chunk388032.intl.string(Chunk388032.t["6OUqDa"]),
         disabled: j,
         children: (0, Chunk54381.jsx)(Chunk619326.Z, {
-          value: f,
-          onChange: h,
+          value: b,
+          onChange: p,
           disabled: j
         })
       }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
@@ -92,30 +92,30 @@ function p() {
           direction: "horizontal",
           gap: 16,
           children: [(0, Chunk54381.jsx)(Chunk553204.Z, {
-            role: x,
+            role: h,
             "aria-label": Chunk388032.intl.string(Chunk388032.t.mD1oGB),
-            onClick: b,
+            onClick: x,
             disabled: j
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "secondary",
-            onClick: b,
+            onClick: x,
             disabled: j,
             text: Chunk388032.intl.string(Chunk388032.t.mD1oGB)
           })]
         })
       }), (0, Chunk54381.jsx)(Chunk481060.Rny, {
         children: (0, Chunk54381.jsxs)("div", {
-          className: Chunk549556.previewContainer,
+          className: Chunk357923.previewContainer,
           "aria-hidden": true,
           children: [(0, Chunk54381.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: x,
-            className: Chunk549556.messageContainer,
+            role: h,
+            className: Chunk357923.messageContainer,
             theme: "light"
           }), (0, Chunk54381.jsx)(Chunk893729.Z, {
             guildId: exports,
-            role: x,
-            className: Chunk549556.messageContainer,
+            role: h,
+            className: Chunk357923.messageContainer,
             theme: "dark"
           })]
         })

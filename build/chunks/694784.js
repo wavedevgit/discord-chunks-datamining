@@ -17,17 +17,17 @@ async function u(e) {
   let n = e.messageReference.guild_id,
     u = e.messageReference.channel_id,
     d = e.messageReference.message_id,
-    f = o.Z.getChannel(u),
+    f = a.Z.getChannel(u),
     p = false;
-  if (null == f && null != n && null == a.Z.getGuild(n)) try {
+  if (null == f && null != n && null == o.Z.getGuild(n)) try {
     await (0, l.Ub)(n, {
       object: c.qAy.FORWARD_BREADCRUMB
     }, {
       shouldNavigate: false
-    }), p = true, await (0, r.V)(n), f = o.Z.getChannel(u)
+    }), p = true, await (0, r.V)(n), f = a.Z.getChannel(u)
   } catch (e) {}
   s.default.track(c.rMx.FORWARD_BREADCRUMB_CLICKED, {
-    guild_id: null == (t = o.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
+    guild_id: null == (t = a.Z.getBasicChannel(e.channel_id)) ? true : t.guild_id,
     channel_id: e.channel_id,
     message_id: e.id,
     breadcrumb_guild_id: n,

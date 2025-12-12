@@ -3,9 +3,9 @@
 require.d(exports, {
   Df: () => d,
   S_: () => u,
-  V5: () => a,
-  VX: () => o,
-  ZP: () => h,
+  V5: () => o,
+  VX: () => a,
+  ZP: () => f,
   ih: () => s,
   xc: () => c
 });
@@ -15,8 +15,8 @@ let r = {
     reappearTimeMs: 1e4
   },
   l = (0, Chunk972959.H)(() => r),
-  o = 1e4,
-  a = 2e4,
+  a = 1e4,
+  o = 2e4,
   s = 500,
   c = 1e3;
 
@@ -31,4 +31,4 @@ function d(e) {
     reappearTimeMs: e
   })
 }
-let h = l
+let f = l

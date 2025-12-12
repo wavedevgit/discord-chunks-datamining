@@ -18,18 +18,18 @@ class s extends Chunk727916.Z {
       s = e.createParsingComponents();
     switch (i) {
       case "maintenant":
-        return a.zO(e.reference);
+        return o.zO(e.reference);
       case "aujourd'hui":
-        return a.Lg(e.reference);
+        return o.Lg(e.reference);
       case "hier":
-        return a.Cv(e.reference);
+        return o.Cv(e.reference);
       case "demain":
-        return a.Ro(e.reference);
+        return o.Ro(e.reference);
       default:
-        if (i.match(/cette\s*nuit/))(0, o.cz)(s, n), s.imply("hour", 22), s.imply("meridiem", r.GG.PM);
+        if (i.match(/cette\s*nuit/))(0, a.cz)(s, n), s.imply("hour", 22), s.imply("meridiem", r.GG.PM);
         else if (i.match(/la\s*veille/)) {
           let e = new Date(n.getTime());
-          e.setDate(e.getDate() - 1), (0, o.cz)(s, e), s.imply("hour", 0)
+          e.setDate(e.getDate() - 1), (0, a.cz)(s, e), s.imply("hour", 0)
         }
     }
     return s

@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 280102, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk21265 = require("./21265.js");
+  Chunk570291 = require("./570291.js");
 
 function s(e) {
   let {
@@ -17,20 +17,20 @@ function s(e) {
     videoLimit: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.wrapper,
+    className: o.wrapper,
     children: [(0, r.jsxs)("span", {
-      className: l()(a.users, {
-        [a.video]: i,
-        [a.extraLong]: n >= 100
+      className: l()(o.users, {
+        [o.video]: i,
+        [o.extraLong]: n >= 100
       }),
-      children: [i ? (0, r.jsx)(o.Odl, {
+      children: [i ? (0, r.jsx)(a.Odl, {
         size: "md",
         color: "currentColor",
-        className: a.videoIcon
+        className: o.videoIcon
       }) : null, n.toString().padStart(2, "0")]
     }), (0, r.jsx)("span", {
-      className: l()(a.total, {
-        [a.extraLong]: t >= 100
+      className: l()(o.total, {
+        [o.extraLong]: t >= 100
       }),
       children: t.toString().padStart(2, "0")
     })]

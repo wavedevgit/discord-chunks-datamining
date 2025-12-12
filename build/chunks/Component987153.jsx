@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk990547 = require("./990547.js"),
   Chunk974955 = require("./974955.jsx"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk624653 = require("./624653.js"),
   Chunk635146 = require("./635146.js"),
   Chunk219855 = require("./219855.js"),
-  Chunk325380 = require("./325380.js");
+  Chunk51766 = require("./51766.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,7 +61,7 @@ function b(e) {
   var t;
   let {
     transitionState: n,
-    animationVariant: o = "default",
+    animationVariant: a = "default",
     size: p = "md",
     paddingSize: m = "sm",
     fullScreenOnMobile: g = true,
@@ -78,7 +78,7 @@ function b(e) {
     headingId: "heading-".concat(A),
     onClose: S,
     dismissable: v
-  }), [v, A, S]), P = (0, f.hv)(n, o);
+  }), [v, A, S]), P = (0, f.hv)(n, a);
   return (0, r.jsx)(d.t.Provider, {
     value: N,
     children: (0, r.jsx)(c.V, {
@@ -93,12 +93,12 @@ function b(e) {
       children: (0, r.jsx)(u.y, {
         forceLevel: 1,
         children: (0, r.jsxs)("div", {
-          className: a()(_.outerContainer, {
+          className: o()(_.outerContainer, {
             [_.fullScreenOnMobile]: g
           }),
           children: [I, (0, r.jsx)(s.animated.div, {
             "data-mana-component": "modal",
-            className: a()(_.container, _["size-".concat(p)], _["padding-size-".concat(m)]),
+            className: o()(_.container, _["size-".concat(p)], _["padding-size-".concat(m)]),
             style: P,
             children: C
           })]

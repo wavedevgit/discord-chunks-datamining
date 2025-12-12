@@ -24,7 +24,7 @@ function f(e) {
       applicationId: t
     } = e;
     return t
-  }) : d, [p, t]), g = (0, a.Z)(h, p), E = i.useMemo(() => g.filter(s.lm), [g]), {
+  }) : d, [p, t]), g = (0, o.Z)(h, p), E = i.useMemo(() => g.filter(s.lm), [g]), {
     tooltipText: b,
     ariaLabel: y
   } = i.useMemo(() => {
@@ -58,8 +58,8 @@ function f(e) {
     ariaLabel: y,
     tooltipText: b,
     icon: i.useMemo(() => {
-      if (t.length > 0) return o.KED;
-      if (n || f) return o.iHX;
+      if (t.length > 0) return a.KED;
+      if (n || f) return a.iHX;
       throw Error("[GameRelationshipButton] Icon should not be undefined.")
     }, [t.length, n, f])
   }

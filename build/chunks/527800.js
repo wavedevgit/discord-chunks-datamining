@@ -2,22 +2,22 @@
 /** chunk id: 527800, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 module.exports = function(e, t, r, i) {
-  var o = this;
+  var a = this;
 
-  function a(t) {
+  function o(t) {
     return function() {
-      o.nextExpectedAction = t, ++o.sequenceLevels[e], o.resetSequenceTimer()
+      a.nextExpectedAction = t, ++a.sequenceLevels[e], a.resetSequenceTimer()
     }
   }
 
   function s(t) {
-    o.fireCallback(r, t, e), "keyup" !== i && (o.ignoreNextKeyup = n(619820)(t)), setTimeout(function() {
-      o.resetSequences()
+    a.fireCallback(r, t, e), "keyup" !== i && (a.ignoreNextKeyup = n(619820)(t)), setTimeout(function() {
+      a.resetSequences()
     }, 10)
   }
-  o.sequenceLevels[e] = 0;
+  a.sequenceLevels[e] = 0;
   for (var l = 0; l < t.length; ++l) {
-    var c = l + 1 === t.length ? s : a(i || o.getKeyInfo(t[l + 1]).action);
-    o.bindSingle(t[l], c, i, e, l)
+    var c = l + 1 === t.length ? s : o(i || a.getKeyInfo(t[l + 1]).action);
+    a.bindSingle(t[l], c, i, e, l)
   }
 }

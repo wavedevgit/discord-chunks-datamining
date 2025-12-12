@@ -15,9 +15,9 @@ var Chunk278074 = require("./278074.js"),
   }({});
 
 function l(e, t) {
-  return (0, r.EQ)([t, e]).with([i.bL.ALL_MESSAGES, o.i.ALL_MESSAGES], () => "all_messages").with([i.bL.ONLY_MENTIONS, o.i.UNSET], () => "mentions").with([i.bL.ONLY_MENTIONS, o.i.ONLY_MENTIONS], () => "mentions").with([i.bL.NO_MESSAGES, o.i.UNSET], () => "nothing").with([i.bL.NO_MESSAGES, o.i.ONLY_MENTIONS], () => "nothing").otherwise(() => "custom")
+  return (0, r.EQ)([t, e]).with([i.bL.ALL_MESSAGES, a.i.ALL_MESSAGES], () => "all_messages").with([i.bL.ONLY_MENTIONS, a.i.UNSET], () => "mentions").with([i.bL.ONLY_MENTIONS, a.i.ONLY_MENTIONS], () => "mentions").with([i.bL.NO_MESSAGES, a.i.UNSET], () => "nothing").with([i.bL.NO_MESSAGES, a.i.ONLY_MENTIONS], () => "nothing").otherwise(() => "custom")
 }
 
 function c(e) {
-  return (0, r.EQ)(e).with("all_messages", () => a.intl.string(a.t.hZrr6k)).with("mentions", () => a.intl.string(a.t.y59NJm)).with("nothing", () => a.intl.string(a.t["pGn/bJ"])).with("custom", () => a.intl.string(a.t["32yow9"])).exhaustive()
+  return (0, r.EQ)(e).with("all_messages", () => o.intl.string(o.t.hZrr6k)).with("mentions", () => o.intl.string(o.t.y59NJm)).with("nothing", () => o.intl.string(o.t["pGn/bJ"])).with("custom", () => o.intl.string(o.t["32yow9"])).exhaustive()
 }

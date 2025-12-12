@@ -50,18 +50,18 @@ function S(e) {
 function I(e, t, n) {
   let r = p.default.getCurrentUser(),
     i = e.guild_id,
-    o = m.dg(i),
+    a = m.dg(i),
     s = Array.from(t).map(e => e.size),
     l = Array.from(t).map(e => null != e.type ? e.type : "unknown"),
     u = s.reduce((e, t) => e + t, 0),
     d = s.length > 0 ? Math.max(...s) : 0,
     f = s.length;
-  if (d > o) {
+  if (d > a) {
     let t = null == n ? true : n.reduce((e, t) => e + t, 0);
     (0, c.yw)(E.rMx.FILE_SIZE_LIMIT_EXCEEDED, {
       channel_id: e.id,
       guild_id: i,
-      user_individual_file_size_limit: o,
+      user_individual_file_size_limit: a,
       pre_compression_file_sizes: s,
       pre_compression_aggregate_file_size: u,
       num_attachments: f,
@@ -69,14 +69,14 @@ function I(e, t, n) {
       attachment_mimetypes: l,
       post_compression_file_sizes: n,
       post_compression_aggregate_file_size: t
-    }), (0, a.openUploadError)({
+    }), (0, o.openUploadError)({
       title: O.intl.string(O.t["/tGlcj"]),
       help: (0, g.BK)(r, i),
       showPremiumUpsell: !(0, h.M5)(r, y.PremiumTypes.TIER_2),
       fileSize: d
     });
     return
-  }(0, a.openUploadError)({
+  }(0, o.openUploadError)({
     title: O.intl.string(O.t["/tGlcj"]),
     help: O.intl.formatToPlainString(O.t.tUOJdH, {
       maxSize: m.Ng(m.OC())
@@ -101,7 +101,7 @@ async function T(e, t, n) {
     }));
   if (await Promise.resolve(), (0, g.Bf)(T, v)) return void I(t, T);
   if (f.Z.getUploadCount(t.id, n) + T.length > E.dN1) {
-    (0, a.openUploadError)({
+    (0, o.openUploadError)({
       title: O.intl.string(O.t.wOr6hB),
       help: O.intl.formatToPlainString(O.t["qqyp/e"], {
         limit: E.dN1
@@ -120,7 +120,7 @@ async function T(e, t, n) {
       origin: y,
       compressionMetadata: C[t]
     }, null == c ? true : c[t]));
-    o.Z.addFiles({
+    a.Z.addFiles({
       files: e,
       channelId: t.id,
       showLargeMessageDialog: m,

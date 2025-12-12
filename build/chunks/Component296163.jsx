@@ -38,7 +38,7 @@ function _(e) {
 }
 
 function m(e) {
-  return (0, r.jsx)(a.u_l, _({
+  return (0, r.jsx)(o.u_l, _({
     size: "md",
     title: f.intl.string(f.t.NYklhr),
     subtitle: f.intl.string(f.t.EJ26Oh),

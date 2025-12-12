@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk358085 = require("./358085.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_back_forward",
   label: "Back Forward",
@@ -41,7 +41,7 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a() {
+function o() {
   return {
     autoTrackExposure: true,
     disable: !(0, Chunk358085.isDesktop)()
@@ -49,12 +49,12 @@ function a() {
 }
 
 function s(e) {
-  return o.useExperiment(e, a())
+  return a.useExperiment(e, o())
 }
 
 function l(e) {
   let {
     backForwardButtons: t
-  } = o.getCurrentConfig(e, a());
+  } = a.getCurrentConfig(e, o());
   return t
 }

@@ -40,11 +40,11 @@ function b(e, t) {
   for (; n > 0 && g.test(e[n - 1]);) n--;
   for (; r < e.length && g.test(e[r]);) r++;
   let i = e.substring(n, r),
-    o = e.substring(0, n);
+    a = e.substring(0, n);
   return {
     startIndex: n,
     query: i,
-    prefix: o,
+    prefix: a,
     suffix: e.substring(r, e.length)
   }
 }
@@ -74,14 +74,14 @@ function y(e, t, n, r) {
     C[t.author.id] = (null != (d = C[t.author.id]) ? d : 1) + (A.length - e) / A.length, N.add(t.author.id)
   }
   let P = false;
-  S && (P = null != e.guild_id && (null != (g = a.Z.getMemberCount(e.guild_id)) ? g : 0) > h);
+  S && (P = null != e.guild_id && (null != (g = o.Z.getMemberCount(e.guild_id)) ? g : 0) > h);
   let R = l.ZP.queryMentionSuggestionResults({
     query: T,
     channel: e,
     boosters: C,
     onlyExactMatch: O && (!v || P)
   });
-  return (P ? R = R.filter(e => N.has(e.user.id)) : v && (R = R.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || y === o.eq.MENTION_SUGGESTIONS || !(T.length < _) || R.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {
+  return (P ? R = R.filter(e => N.has(e.user.id)) : v && (R = R.filter(e => "exact" === e.matchType || N.has(e.user.id))), E || y === a.eq.MENTION_SUGGESTIONS || !(T.length < _) || R.some(e => "exact" === e.matchType || v && N.has(e.user.id))) ? {
     results: {
       suggestions: R,
       queryInfo: I

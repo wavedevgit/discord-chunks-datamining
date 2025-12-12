@@ -1,14 +1,14 @@
 /** Chunk was on 18417 **/
 /** chunk id: 941848, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk458044 = require("./458044.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk291191 = require("./291191.js");
+  Chunk612922 = require("./612922.js");
 
 function c(t) {
   for (var e = 1; e < arguments.length; e++) {
@@ -29,7 +29,7 @@ function c(t) {
   return t
 }
 
-function g(t, e) {
+function d(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -42,19 +42,19 @@ function g(t, e) {
   }), t
 }
 
-function d(t) {
+function g(t) {
   let {
     user: e,
     tagId: n,
     title: i,
     messageCount: s,
     reactionCount: c,
-    activeAgo: g,
-    tags: d,
+    activeAgo: d,
+    tags: g,
     attachment: m
   } = t, {
     name: u,
-    avatarSrc: x
+    avatarSrc: f
   } = e;
   return (0, a.jsxs)("div", {
     className: l.post,
@@ -66,7 +66,7 @@ function d(t) {
           variant: "text-xs/medium",
           className: l.inline,
           children: [(0, a.jsx)("img", {
-            src: x,
+            src: f,
             alt: o.intl.string(o.t.lqaIxI),
             width: 16,
             height: 16
@@ -79,7 +79,7 @@ function d(t) {
             color: "text-strong",
             variant: "text-xxs/medium",
             className: l.inlineTag,
-            children: d[n]
+            children: g[n]
           })]
         })]
       }), (0, a.jsx)(r.Heading, {
@@ -119,7 +119,7 @@ function d(t) {
         }), (0, a.jsx)(r.Text, {
           color: "text-default",
           variant: "text-xs/medium",
-          children: g
+          children: d
         })]
       })]
     }), null != m && (0, a.jsx)("img", {
@@ -235,14 +235,14 @@ function u(t) {
   })
 }
 
-function x(t) {
+function f(t) {
   let {
     id: e
   } = t, [n, o] = i.useState(0), m = i.useRef(null), {
-    tags: x,
-    posts: p,
-    postPreview: f,
-    ariaLabel: h
+    tags: f,
+    posts: x,
+    postPreview: p,
+    ariaLabel: b
   } = (0, s.Z)(e);
   return i.useEffect(() => {
     o(0)
@@ -252,14 +252,14 @@ function x(t) {
   }, [n]), (0, a.jsxs)("div", {
     className: l.container,
     role: "image",
-    "aria-label": h,
+    "aria-label": b,
     children: [(0, a.jsxs)("div", {
       ref: m,
       className: l.browser,
       "aria-hidden": true,
       children: [(0, a.jsx)("div", {
         className: l.tags,
-        children: x.map((t, e) => (0, a.jsx)(r.Text, {
+        children: f.map((t, e) => (0, a.jsx)(r.Text, {
           color: "text-strong",
           variant: "text-xs/medium",
           className: l.tag,
@@ -267,11 +267,11 @@ function x(t) {
         }, e))
       }), (0, a.jsx)("div", {
         className: l.posts,
-        children: p.map((t, e) => (0, a.jsx)(d, g(c({}, t), {
-          tags: x
+        children: x.map((t, e) => (0, a.jsx)(g, d(c({}, t), {
+          tags: f
         }), e))
       })]
-    }), (0, a.jsx)(u, g(c({}, f), {
+    }), (0, a.jsx)(u, d(c({}, p), {
       maxHeight: n
     }))]
   })

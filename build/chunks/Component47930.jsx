@@ -10,7 +10,7 @@ require("./473749.js");
 var Chunk385499 = require("./385499.jsx"),
   Chunk245315 = require("./245315.js"),
   Chunk368859 = require("./368859.js"),
-  Chunk724913 = require("./724913.js");
+  Chunk549578 = require("./549578.js");
 
 function l(e) {
   let t, {
@@ -19,31 +19,31 @@ function l(e) {
     user: s,
     isRepliedMessage: l
   } = e;
-  return (null == n ? true : n.isSystemDM()) ? t = i.Z.Types.SYSTEM_DM : null != n && (0, a.Z)(n) ? t = (0, o.cp)(n) ? i.Z.Types.OFFICIAL : i.Z.Types.SERVER : (null == s ? true : s.bot) ? t = i.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == s ? true : s.id) && !l && (t = i.Z.Types.ORIGINAL_POSTER), t
+  return (null == n ? true : n.isSystemDM()) ? t = i.Z.Types.SYSTEM_DM : null != n && (0, o.Z)(n) ? t = (0, a.cp)(n) ? i.Z.Types.OFFICIAL : i.Z.Types.SERVER : (null == s ? true : s.bot) ? t = i.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == s ? true : s.id) && !l && (t = i.Z.Types.ORIGINAL_POSTER), t
 }
 
 function c(e) {
   let {
     message: t,
     channel: n,
-    user: o,
-    compact: a,
+    user: a,
+    compact: o,
     isRepliedMessage: c,
     hideIcon: u = false,
     children: d
   } = e, f = l({
     message: t,
     channel: n,
-    user: o,
-    compact: a,
+    user: a,
+    compact: o,
     isRepliedMessage: c,
     hideIcon: u,
     children: d
   });
   return null == f ? null : (0, r.jsx)(i.Z, {
-    className: a ? s.botTagCompact : s.botTagCozy,
+    className: o ? s.botTagCompact : s.botTagCozy,
     type: f,
-    verified: null == o ? true : o.isVerifiedBot(),
+    verified: null == a ? true : a.isVerifiedBot(),
     hideIcon: u,
     useRemSizes: true,
     children: d

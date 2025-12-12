@@ -2,23 +2,23 @@
 /** chunk id: 591526, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 var Chunk710845 = require("./710845.js"),
   Chunk287328 = require("./287328.js");
-let o = new Chunk710845.Z("ChannelReader");
-class a {
+let a = new Chunk710845.Z("ChannelReader");
+class o {
   static getSync(e, t) {
     let n = performance.now(),
       r = i.Z.channels(e).getManySyncUnsafe(t),
-      a = performance.now() - n;
-    return o.log("synchronously loaded in ".concat(a, "ms (guild: ").concat(t, ", channels: ").concat(r.length, ")")), [r, a]
+      o = performance.now() - n;
+    return a.log("synchronously loaded in ".concat(o, "ms (guild: ").concat(t, ", channels: ").concat(r.length, ")")), [r, o]
   }
   static async getAsync(e, t) {
     let n = performance.now(),
       r = await i.Z.channels(e).getMany(t),
-      a = performance.now() - n;
-    return o.verbose("loaded in ".concat(a, "ms (guild: ").concat(t, ", channels: ").concat(r.length, ")")), r
+      o = performance.now() - n;
+    return a.verbose("loaded in ".concat(o, "ms (guild: ").concat(t, ", channels: ").concat(r.length, ")")), r
   }
   static async getGuildIds() {
     try {
@@ -28,7 +28,7 @@ class a {
       let n = (null != (e = await exports.getGuildIds()) ? module : []).filter(e => null !== e && "string" == typeof e);
       return new Set(require)
     } catch (e) {
-      return o.warn("couldn't get guild ids", module), new Set
+      return a.warn("couldn't get guild ids", module), new Set
     }
   }
 }

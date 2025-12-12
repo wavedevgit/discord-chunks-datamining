@@ -1,7 +1,7 @@
 /** Chunk was on 5749 **/
 /** chunk id: 463439, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,65 +18,65 @@ var Chunk54381 = require("./54381.js"),
   Chunk850165 = require("./850165.jsx"),
   Chunk134612 = require("./134612.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk394968 = require("./394968.js");
+  Chunk72595 = require("./72595.js");
 
-function b(t) {
+function O(t) {
   let {
     senderId: e,
     channelId: n,
-    hasReported: b,
-    onReport: O,
-    trackAnalyticsEvent: j
-  } = t, v = (0, a.e7)([p.Z], () => p.Z.isBlocked(e)), [T, E] = r.useState(v), S = (0, d.o)(), N = (0, d.Q)(), [y, A] = r.useState(false), C = (0, h.q)(n), M = r.useMemo(() => S ? 0 : N ? 2 : 1, [S, N]), R = async () => {
+    hasReported: O,
+    onReport: j,
+    trackAnalyticsEvent: v
+  } = t, _ = (0, s.e7)([f.Z], () => f.Z.isBlocked(e)), [T, E] = r.useState(_), S = (0, d.o)(), N = (0, d.Q)(), [y, A] = r.useState(false), C = (0, x.q)(n), M = r.useMemo(() => S ? 0 : N ? 2 : 1, [S, N]), R = async () => {
     null != C && (A(true), await (0, l.J7)(C, () => {
-      u.Z.showReportSuccessToast(e, n), O()
+      u.Z.showReportSuccessToast(e, n), j()
     }, () => {
       u.Z.showFailedToast()
-    }), A(false), j(x.NM.USER_TAKEOVER_MODAL_REPORT))
+    }), A(false), v(p.NM.USER_TAKEOVER_MODAL_REPORT))
   }, Z = r.useMemo(() => {
     switch (M) {
       case 0:
-        return m.intl.string(m.t.sZf6cz);
+        return g.intl.string(g.t.sZf6cz);
       case 2:
-        return m.intl.string(m.t.HQ2nKl);
+        return g.intl.string(g.t.HQ2nKl);
       default:
-        return m.intl.string(m.t["65XQar"])
+        return g.intl.string(g.t["65XQar"])
     }
   }, [M]);
-  return (0, i.jsx)(_.Z, {
-    header: m.intl.string(m.t["mWO+ys"]),
-    description: m.intl.string(m.t.S0XtKF),
+  return (0, i.jsx)(h.Z, {
+    header: g.intl.string(g.t["mWO+ys"]),
+    description: g.intl.string(g.t.S0XtKF),
     children: (0, i.jsxs)("div", {
-      className: f.buttonContainer,
-      children: [(0, i.jsx)(s.Button, {
-        text: T ? m.intl.string(m.t.XyHpKH) : m.intl.string(m.t.l4Emac),
+      className: m.buttonContainer,
+      children: [(0, i.jsx)(a.Button, {
+        text: T ? g.intl.string(g.t.XyHpKH) : g.intl.string(g.t.l4Emac),
         variant: "primary",
         fullWidth: true,
-        icon: s.k$p,
+        icon: a.k$p,
         onClick: () => {
           T ? (E(false), o.Z.unblockUser(e, {
-            location: g.DL
-          }), j(x.NM.USER_TAKEOVER_MODAL_UNBLOCK), u.Z.showUnblockSuccessToast(e, n)) : (E(true), j(x.NM.USER_TAKEOVER_MODAL_BLOCK), o.Z.blockUser(e, {
-            location: g.DL
+            location: b.DL
+          }), v(p.NM.USER_TAKEOVER_MODAL_UNBLOCK), u.Z.showUnblockSuccessToast(e, n)) : (E(true), v(p.NM.USER_TAKEOVER_MODAL_BLOCK), o.Z.blockUser(e, {
+            location: b.DL
           }).then(() => {
             u.Z.showBlockSuccessToast(e, n)
           }))
         }
-      }), (0, i.jsx)(s.Button, {
-        text: b ? m.intl.string(m.t.QvwOJ6) : m.intl.string(m.t["7fHyE6"]),
+      }), (0, i.jsx)(a.Button, {
+        text: O ? g.intl.string(g.t.QvwOJ6) : g.intl.string(g.t["7fHyE6"]),
         variant: "secondary",
         fullWidth: true,
-        icon: s.U65,
+        icon: a.U65,
         onClick: R,
         loading: y,
-        disabled: b
-      }), (0, i.jsx)(s.Button, {
+        disabled: O
+      }), (0, i.jsx)(a.Button, {
         text: Z,
         variant: "secondary",
         fullWidth: true,
-        icon: s.kBi,
+        icon: a.kBi,
         onClick: () => {
-          0 === M ? ((0, c.Z)(g.EI), j(x.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === M ? ((0, c.Z)(g.$l), j(x.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, c.Z)(g.n4), j(x.NM.USER_TAKEOVER_MODAL_NO_FILTR))
+          0 === M ? ((0, c.Z)(b.EI), v(p.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === M ? ((0, c.Z)(b.$l), v(p.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, c.Z)(b.n4), v(p.NM.USER_TAKEOVER_MODAL_NO_FILTR))
         }
       })]
     })

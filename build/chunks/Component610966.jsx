@@ -21,7 +21,7 @@ function d(e) {
     savedUserColor: d,
     pendingColor: f,
     setPendingAccentColor: p
-  } = e, _ = n.getAvatarURL(null, 80), m = (0, a.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), h = (0, s.Cf)(_, m, false), g = (0, i._i)(h[0]);
+  } = e, _ = n.getAvatarURL(null, 80), m = (0, o.dQu)(a.Z.unsafe_rawColors.PRIMARY_530).hex(), h = (0, s.Cf)(_, m, false), g = (0, i._i)(h[0]);
   return (0, r.jsx)(c.Z, {
     title: u.intl.string(u.t["/X3fkf"]),
     children: (0, r.jsx)(l.Z, {

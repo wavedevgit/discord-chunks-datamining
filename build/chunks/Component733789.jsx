@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk157684 = require("./157684.js");
+  Chunk807770 = require("./807770.js");
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,19 +27,19 @@ function _(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
-let E = {
+let _ = {
   [Chunk981631.AzA.NOW_PLAYING]: {
     single: (e, t) => h.intl.format(h.t.NEckza, {
       user1: e.username,
@@ -88,7 +88,7 @@ let E = {
 };
 class O extends Chunk473749.PureComponent {
   renderDescription(e, t) {
-    let n = E[e];
+    let n = _[e];
     return 1 === t.length ? n.single(t[0].user, e => this.renderActivityDiscordTag(e)) : 2 === t.length ? n.double(t[0].user, t[1].user, e => this.renderActivityDiscordTag(e)) : n.other(t.length)
   }
   renderActivityDiscordTag(e) {
@@ -99,7 +99,7 @@ class O extends Chunk473749.PureComponent {
       clickTrap: true,
       children: t => {
         var n, i;
-        return (0, r.jsx)("span", (n = b({
+        return (0, r.jsx)("span", (n = E({
           ref: this.activityDiscordTagRef,
           className: m.username
         }, t), i = i = {
@@ -126,9 +126,9 @@ class O extends Chunk473749.PureComponent {
       userInfo: i
     } = module;
     return 0 === Chunk473749.length ? null : (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk157684.recommendationActivity, exports),
+      className: a()(Chunk807770.recommendationActivity, exports),
       children: [(0, Chunk54381.jsx)(Chunk237583.Z, {
-        className: Chunk157684.players,
+        className: Chunk807770.players,
         users: Chunk473749.map(e => {
           let {
             user: t
@@ -139,13 +139,13 @@ class O extends Chunk473749.PureComponent {
         max: 4,
         renderMoreUsers: this.renderPlayerOverflow
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk157684.description,
+        className: Chunk807770.description,
         children: this.renderDescription(require, Chunk473749)
       })]
     })
   }
   constructor(...e) {
-    super(...e), _(this, "activityDiscordTagRef", i.createRef()), _(this, "playerAvatarRef", i.createRef()), _(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
+    super(...e), b(this, "activityDiscordTagRef", i.createRef()), b(this, "playerAvatarRef", i.createRef()), b(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
       className: m.tooltip,
       children: [(0, r.jsx)("div", {
         children: f.ZP.getUserTag(e)
@@ -155,7 +155,7 @@ class O extends Chunk473749.PureComponent {
         end: n,
         location: u.ZP.Locations.ACTIVITY_FEED
       })]
-    })), _(this, "renderPlayer", (e, t, n, i) => {
+    })), b(this, "renderPlayer", (e, t, n, i) => {
       if (null == e) return null;
       let l = this.props.reason.userInfo.find(t => t.user === e);
       return null == l ? null : (0, r.jsx)(d.Z, {
@@ -168,7 +168,7 @@ class O extends Chunk473749.PureComponent {
           "aria-label": (0, f.W5)(e, {
             decoration: "never"
           }),
-          children: (0, r.jsx)(o.qEK, b({
+          children: (0, r.jsx)(o.qEK, E({
             ref: this.playerAvatarRef,
             className: a()(m.playerAvatar, {
               [m.avatarMasked]: !i
@@ -179,7 +179,7 @@ class O extends Chunk473749.PureComponent {
           }, t))
         })
       }, e.id)
-    }), _(this, "renderPlayerOverflow", (e, t, n) => (0, r.jsx)("div", {
+    }), b(this, "renderPlayerOverflow", (e, t, n) => (0, r.jsx)("div", {
       className: m.playerOverflow,
       children: e
     }, n))

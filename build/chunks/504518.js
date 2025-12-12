@@ -2,12 +2,12 @@
 /** chunk id: 504518, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk81825 = require("./81825.js"),
   Chunk598077 = require("./598077.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,9 +15,9 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a extends Chunk81825.Z {
+class o extends Chunk81825.Z {
   static createFromServer(e) {
-    return new a(e)
+    return new o(e)
   }
   isPrimary() {
     return 1 === this.member_type
@@ -29,6 +29,6 @@ class a extends Chunk81825.Z {
     return 2 === this.member_type && null == this.accepted_at
   }
   constructor(e) {
-    super(), o(this, "user", true), o(this, "member_type", true), o(this, "accepted_at", true), this.user = new i.Z(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
+    super(), a(this, "user", true), a(this, "member_type", true), a(this, "accepted_at", true), this.user = new i.Z(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
   }
 }

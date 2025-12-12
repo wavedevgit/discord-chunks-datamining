@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 217599, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => L
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk35215 = require("./35215.jsx"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk802378 = require("./802378.js");
+  Chunk306946 = require("./306946.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ function w(e) {
     onClick: () => {
       var e;
       let a = (null == (e = t.userStatus) ? true : e.enrolledAt) == null ? d.jZ.ACCEPT_QUEST : d.jZ.WATCH_VIDEO;
-      (0, C.openVideoQuestModal)({
+      (0, _.openVideoQuestModal)({
         quest: t,
         questContent: m.jn.QUEST_BAR_V2,
         sourceQuestContent: n,
@@ -81,18 +81,18 @@ function w(e) {
       })
     },
     size: "sm",
-    text: (0, _.F9)(r)
+    text: (0, y.F9)(r)
   })
 }
 let I = e => {
     let {
       quest: t,
       sourceQuestContent: n
-    } = e, r = (0, u.aM)(), l = (0, f.V_)(t);
+    } = e, r = (0, u.aM)(), l = (0, x.V_)(t);
     return (0, a.jsx)(i.zxk, {
       size: "sm",
       fullWidth: true,
-      onClick: () => (0, g.nc)(t, {
+      onClick: () => (0, b.nc)(t, {
         content: m.jn.QUEST_BAR_V2,
         ctaContent: d.jZ.OPEN_GAME_LINK,
         impressionId: r,
@@ -109,7 +109,7 @@ let I = e => {
     } = e, l = null == (t = (0, u.WD)()) ? true : t.getId();
     return (0, a.jsx)(i.zxk, {
       fullWidth: true,
-      onClick: () => (0, g.gI)({
+      onClick: () => (0, b.gI)({
         quest: n
       }, {
         content: m.jn.QUEST_BAR_V2,
@@ -128,11 +128,11 @@ let I = e => {
       quest: t
     }), {
       launchInGameActivity: r
-    } = (0, x.zB)(t);
+    } = (0, f.zB)(t);
     return (0, j.Rt)(t) ? (0, a.jsx)(i.zxk, {
       fullWidth: true,
       variant: "primary",
-      icon: (0, C.getPrimaryCtaIcon)(t),
+      icon: (0, _.getPrimaryCtaIcon)(t),
       onClick: r,
       size: "sm",
       text: n
@@ -168,14 +168,14 @@ let I = e => {
     var t, n, {
         quest: u,
         useReducedMotion: h,
-        isExpanded: x,
-        className: f,
-        ctaLabel: g,
+        isExpanded: f,
+        className: x,
+        ctaLabel: b,
         onClick: v,
         questContent: j = m.jn.QUEST_BAR_V2,
-        sourceQuestContent: _
+        sourceQuestContent: y
       } = e,
-      C = function(e, t) {
+      _ = function(e, t) {
         if (null == e) return {};
         var n, a, r = function(e, t) {
           if (null == e) return {};
@@ -191,14 +191,14 @@ let I = e => {
         return r
       }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]);
     let S = (null == (t = u.userStatus) ? true : t.completedAt) != null,
-      w = (0, y.hf)({
+      w = (0, C.hf)({
         quest: u,
         questContent: j,
-        sourceQuestContent: _
+        sourceQuestContent: y
       }),
       I = r.useCallback(e => {
         var t;
-        null == v || v(e), (0, b.xN)(u.config) && (null == (t = u.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
+        null == v || v(e), (0, g.xN)(u.config) && (null == (t = u.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
           tab: E.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: o.Z.QUEST_HOME_PAGE
@@ -207,24 +207,24 @@ let I = e => {
       {
         shouldUseShinyButton: k
       } = p.Z.useConfig({
-        location: (0, d._b)(_) + "- CtaButton"
+        location: (0, d._b)(y) + "- CtaButton"
       });
     return k ? (0, a.jsx)(s.gtL, P(N({
       fullWidth: true,
       size: l.zx.Sizes.SMALL,
       onClick: I,
-      pauseAnimation: h || !x && !S,
-      className: f,
+      pauseAnimation: h || !f && !S,
+      className: x,
       buttonShineClassName: T.shine,
       "data-migration-pending": true
-    }, C), {
-      children: null != g ? g : O.intl.string(O.t.cfY4PE)
+    }, _), {
+      children: null != b ? b : O.intl.string(O.t.cfY4PE)
     })) : (0, a.jsx)(i.zxk, P(N({
       fullWidth: true,
       onClick: I,
-      text: null != g ? g : O.intl.string(O.t.cfY4PE)
-    }, C), {
-      size: C.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
+      text: null != b ? b : O.intl.string(O.t.cfY4PE)
+    }, _), {
+      size: _.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
   },
   Z = e => {
@@ -241,35 +241,35 @@ let I = e => {
       taskDetails: u,
       popoutTargetElementRef: p,
       onGameSheetOpened: h,
-      onGameSheetClosed: x
-    } = e, f = (null == (t = n.userStatus) ? true : t.completedAt) != null, g = (0, v.q8)(n), b = d !== m.LI.SELECT && !o && !c, _ = null;
-    return f ? _ = (0, a.jsx)(D, {
+      onGameSheetClosed: f
+    } = e, x = (null == (t = n.userStatus) ? true : t.completedAt) != null, b = (0, v.q8)(n), g = d !== m.LI.SELECT && !o && !c, y = null;
+    return x ? y = (0, a.jsx)(D, {
       quest: n,
       sourceQuestContent: r,
       useReducedMotion: i,
       isExpanded: l
-    }) : g ? _ = (0, a.jsx)(w, {
+    }) : b ? y = (0, a.jsx)(w, {
       quest: n,
       sourceQuestContent: r,
       taskDetails: u
-    }) : (0, j.Rt)(n) ? _ = (0, a.jsx)(R, {
+    }) : (0, j.Rt)(n) ? y = (0, a.jsx)(R, {
       quest: n
-    }) : d === m.LI.CONSOLE && s ? _ = (0, a.jsx)(k, {
+    }) : d === m.LI.CONSOLE && s ? y = (0, a.jsx)(k, {
       quest: n,
       sourceQuestContent: r
-    }) : b && (0, j.Pb)(n) ? _ = (0, a.jsx)(A, {
+    }) : g && (0, j.Pb)(n) ? y = (0, a.jsx)(A, {
       quest: n,
       sourceQuestContent: r,
       taskDetails: u,
       popoutTargetElementRef: p,
       onGameSheetOpened: h,
-      onGameSheetClosed: x
-    }) : b && (_ = (0, a.jsx)(I, {
+      onGameSheetClosed: f
+    }) : g && (y = (0, a.jsx)(I, {
       quest: n,
       sourceQuestContent: r
-    })), null == _ ? null : (0, a.jsx)("div", {
+    })), null == y ? null : (0, a.jsx)("div", {
       className: T.cta,
-      children: _
+      children: y
     })
   };
 

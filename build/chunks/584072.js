@@ -7,12 +7,12 @@ module.exports = function(e, t) {
   var n = [];
   return e.findEntityRanges(function(e) {
     return !!e.getEntity()
-  }, function(o, a) {
+  }, function(a, o) {
     var s = e.getText(),
-      l = e.getEntityAt(o);
+      l = e.getEntityAt(a);
     n.push({
-      offset: i(s.slice(0, o)),
-      length: i(s.slice(o, a)),
+      offset: i(s.slice(0, a)),
+      length: i(s.slice(a, o)),
       key: Number(t[r.stringify(l)])
     })
   }), n

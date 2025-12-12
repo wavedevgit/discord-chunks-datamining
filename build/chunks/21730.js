@@ -27,8 +27,8 @@ function l() {
 function c(e) {
   let {
     initiallyExpanded: t
-  } = e, [n, o] = r.useState(t), [a, s] = r.useState(false), l = r.useCallback(() => {
-    o(e => !e), s(true)
+  } = e, [n, a] = r.useState(t), [o, s] = r.useState(false), l = r.useCallback(() => {
+    a(e => !e), s(true)
   }, []), {
     expansionSpring: c
   } = (0, i.q_F)({
@@ -41,7 +41,7 @@ function c(e) {
   });
   return {
     expansionSpring: c,
-    isAnimating: a,
+    isAnimating: o,
     isExpanded: n,
     toggleExpanded: l
   }

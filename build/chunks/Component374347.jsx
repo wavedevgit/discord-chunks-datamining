@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk277053 = require("./277053.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk657254 = require("./657254.js");
+  Chunk637378 = require("./637378.js");
 
 function f() {
   let e = (0, Chunk442837.e7)([Chunk277053.Z], () => Chunk277053.Z.advancedMode),
     [t] = Chunk473749.useState(new Chunk748780.Z.Value(+!!module));
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {
-      className: Chunk657254.advancedModeDivider
+      className: Chunk637378.advancedModeDivider
     }), (0, Chunk54381.jsx)(Chunk481060.y5t, {
       component: (0, Chunk54381.jsx)(Chunk755721.zx, {
         look: Chunk755721.zx.Looks.BLANK,
@@ -40,10 +40,10 @@ function f() {
         },
         children: (0, Chunk54381.jsxs)(Chunk481060.Text, {
           variant: "text-lg/semibold",
-          className: Chunk657254.advancedTitle,
+          className: Chunk637378.advancedTitle,
           children: [Chunk388032.intl.string(Chunk388032.t.dYRsrm), (0, Chunk54381.jsx)(Chunk259580.Z, {
             expanded: module,
-            className: Chunk657254.titleCaret,
+            className: Chunk637378.titleCaret,
             width: 20,
             height: 20
           })]

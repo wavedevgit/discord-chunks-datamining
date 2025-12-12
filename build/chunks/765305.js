@@ -14,19 +14,19 @@ require.d(exports, {
   gv: () => I,
   j8: () => _,
   nz: () => m,
-  p: () => o,
+  p: () => a,
   p1: () => u,
   pg: () => g,
   rC: () => b,
   sy: () => p,
-  wm: () => a,
+  wm: () => o,
   zV: () => v,
   zw: () => l
 }), require("./388685.js");
 var Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js");
-let o = 100,
-  a = 1e3,
+let a = 100,
+  o = 1e3,
   s = 100,
   l = "Guild Events Modal",
   c = "-1";

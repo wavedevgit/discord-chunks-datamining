@@ -15,7 +15,7 @@ async function l(e) {
     method: t,
     classificationId: n
   } = e;
-  return (0, o.yF)() ? await u({
+  return (0, a.yF)() ? await u({
     classificationId: n,
     method: t
   }) : await c(t)
@@ -33,7 +33,7 @@ async function u(e) {
   let {
     classificationId: t,
     method: n
-  } = e, i = a.default.getSuspendedUserToken();
+  } = e, i = o.default.getSuspendedUserToken();
   return (await r.tn.post({
     url: s.ANM.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION,
     body: {

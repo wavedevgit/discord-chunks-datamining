@@ -46,10 +46,10 @@ function _(e, t, n) {
     } = (0, u.kc)({}, n),
     I = (null == (_ = t.sortDescriptor) ? true : _.column) === E.key,
     T = null == (m = t.sortDescriptor) ? true : m.direction;
-  E.props.allowsSorting && !(0, o.Dt)() && (g = I ? T : "none");
+  E.props.allowsSorting && !(0, a.Dt)() && (g = I ? T : "none");
   let C = (0, f.q)(p(i.Z), "@react-aria/table");
-  b && (h = `${C.format("sortable")}`, I && T && (0, o.Dt)() && (h = `${h}, ${C.format(T)}`));
-  let A = (0, a.P)(h),
+  b && (h = `${C.format("sortable")}`, I && T && (0, a.Dt)() && (h = `${h}, ${C.format(T)}`));
+  let A = (0, o.P)(h),
     N = 0 === t.collection.size;
   return (0, l.useEffect)(() => {
     N && t.selectionManager.focusedKey === E.key && t.selectionManager.setFocusedKey(null)

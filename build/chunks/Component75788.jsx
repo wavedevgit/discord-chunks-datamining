@@ -19,10 +19,10 @@ function A(t) {
     error: e,
     setEmailToken: A,
     setError: _,
-    onNext: C,
-    onClose: d,
+    onNext: d,
+    onClose: C,
     transitionState: x
-  } = t, [N, S] = i.useState(false), [g, p] = i.useState(""), [f, m] = i.useState(false), v = (0, a.e7)([c.Z], () => c.Z.getErrors()), y = i.useRef(null);
+  } = t, [N, S] = i.useState(false), [g, f] = i.useState(""), [p, m] = i.useState(false), v = (0, a.e7)([c.Z], () => c.Z.getErrors()), y = i.useRef(null);
   i.useEffect(() => {
     var t;
     null == (t = y.current) || t.focus()
@@ -33,14 +33,14 @@ function A(t) {
       let {
         token: t
       } = await (0, o.w)(g);
-      A(t), C()
+      A(t), d()
     } catch (t) {
       _(new s.Z(t).getAnyErrorMessage())
     } finally {
       S(false)
     }
   }, M = async () => {
-    if (!f) {
+    if (!p) {
       m(true);
       try {
         await (0, o.i)(true), (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["84yeoz"]), l.ToastType.SUCCESS))
@@ -60,7 +60,7 @@ function A(t) {
       src: E
     },
     transitionState: x,
-    onClose: d,
+    onClose: C,
     actions: [{
       variant: "primary",
       text: u.intl.string(u.t.PDTjLN),
@@ -73,7 +73,7 @@ function A(t) {
         label: u.intl.string(u.t["8mZX6M"]),
         error: null != e ? e : null == v || null == (n = v.email_token) ? true : n[0],
         value: g,
-        onChange: p,
+        onChange: f,
         inputRef: y
       }), (0, r.jsx)(l.Avr, {
         textVariant: "text-sm/normal",

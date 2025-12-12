@@ -1,10 +1,10 @@
-/** Chunk was on 98878 **/
+/** Chunk was on 97476 **/
 /** chunk id: 118998, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  H: () => i,
-  T: () => r
+  H: () => a,
+  T: () => i
 });
-let i = e => {
+let a = e => {
   let {
     guildId: n,
     guildEventId: t
@@ -12,6 +12,6 @@ let i = e => {
   return "https://discord.com/events/".concat(n, "/").concat(t)
 };
 
-function r(e, n, t) {
+function i(e, n, t) {
   return e && n && null != t
 }

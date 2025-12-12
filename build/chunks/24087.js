@@ -18,13 +18,13 @@ function c(e) {
 
 function u(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = [...e].sort((e, t) => o.default.compare(e.soundId, t.soundId));
+    n = [...e].sort((e, t) => a.default.compare(e.soundId, t.soundId));
   return t ? c(n) : n
 }
 
 function d(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = [...e].sort((e, t) => o.default.compare(t.soundId, e.soundId));
+    n = [...e].sort((e, t) => a.default.compare(t.soundId, e.soundId));
   return t ? c(n) : n
 }
 
@@ -36,20 +36,20 @@ function f(e, t) {
     let t = r.get(e);
     null != t && (i.push(t), r.delete(e))
   });
-  let o = [...i, ...u(Array.from(r.values()), n)];
-  return n ? c(o) : o
+  let a = [...i, ...u(Array.from(r.values()), n)];
+  return n ? c(a) : a
 }
 
 function p() {
   let {
     sortingStrategy: e
-  } = (0, Chunk771784.q3)("useSoundOrganizer"), t = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.getAllTopSoundsForGuilds()), n = (0, Chunk442837.e7)([Chunk178106.Z], () => Chunk178106.Z.frecentlyPlayedSounds), o = Chunk473749.useRef(require).current, c = Chunk473749.useCallback(e => {
+  } = (0, Chunk771784.q3)("useSoundOrganizer"), t = (0, Chunk442837.e7)([Chunk763296.Z], () => Chunk763296.Z.getAllTopSoundsForGuilds()), n = (0, Chunk442837.e7)([Chunk178106.Z], () => Chunk178106.Z.frecentlyPlayedSounds), a = Chunk473749.useRef(require).current, c = Chunk473749.useCallback(e => {
     if (0 === e.length) return e;
     let n = e[0].guildId;
     if (!e.every(e => e.guildId === n)) return e;
     let r = t.get(n);
     return null == r ? u(e) : f(e, r.map(e => e.soundId))
-  }, [exports]), p = Chunk473749.useCallback(e => f(e, o.map(e => e.soundId)), [Chunk709054]);
+  }, [exports]), p = Chunk473749.useCallback(e => f(e, a.map(e => e.soundId)), [Chunk709054]);
   if (__OVERLAY__) return u;
   switch (module) {
     case Chunk771784.du.TOP_SOUNDS:

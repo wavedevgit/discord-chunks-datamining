@@ -4,8 +4,8 @@
 require.d(exports, {
   Jq: () => r,
   Lk: () => i,
-  iU: () => a,
-  sp: () => o
+  iU: () => o,
+  sp: () => a
 }), require("./473749.js");
 var r = function(e) {
   return e[e.ROOT = 0] = "ROOT", e[e.SECTION = 1] = "SECTION", e[e.SIDEBAR_ITEM = 2] = "SIDEBAR_ITEM", e[e.PANEL = 3] = "PANEL", e[e.SPLIT = 4] = "SPLIT", e[e.CATEGORY = 5] = "CATEGORY", e[e.ACCORDION = 6] = "ACCORDION", e[e.LIST = 7] = "LIST", e[e.RELATED = 8] = "RELATED", e[e.FIELD_SET = 9] = "FIELD_SET", e[e.TAB_ITEM = 10] = "TAB_ITEM", e[e.STATIC = 11] = "STATIC", e[e.BUTTON = 12] = "BUTTON", e[e.TOGGLE = 13] = "TOGGLE", e[e.SLIDER = 14] = "SLIDER", e[e.SELECT = 15] = "SELECT", e[e.RADIO = 16] = "RADIO", e[e.CHECKBOX = 17] = "CHECKBOX", e[e.NAVIGATOR = 18] = "NAVIGATOR", e[e.CUSTOM = 19] = "CUSTOM", e
@@ -15,10 +15,10 @@ function i(e) {
   return "layout" in e
 }
 
-function o(e) {
+function a(e) {
   return e.every(e => 10 === e.type) && e.length > 0
 }
 
-function a(e) {
+function o(e) {
   return e.every(e => 5 === e.type) && e.length > 0
 }

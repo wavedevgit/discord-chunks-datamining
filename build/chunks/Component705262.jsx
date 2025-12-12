@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk526761 = require("./526761.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk227674 = require("./227674.js");
+  Chunk598699 = require("./598699.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,8 +84,8 @@ function F(e, t) {
   if (null == e) return {};
   var n, r, i = B(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -93,8 +93,8 @@ function F(e, t) {
 function B(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var V = function(e) {
@@ -123,7 +123,7 @@ let H = Object.freeze({
       type: t,
       isPreview: n,
       isCoachmark: i
-    } = e, a = (0, o.EQ)({
+    } = e, o = (0, a.EQ)({
       type: t,
       isPreview: n,
       isCoachmark: i
@@ -138,10 +138,10 @@ let H = Object.freeze({
     return (0, r.jsxs)("div", {
       className: M.title,
       children: [(0, r.jsx)(c.Heading, {
-        "aria-label": a,
+        "aria-label": o,
         className: M.titleText,
         variant: "text-md/medium",
-        children: a
+        children: o
       }), (0, r.jsx)(b.Z, {
         className: M.premiumIcon
       })]
@@ -151,13 +151,13 @@ let H = Object.freeze({
     var t, n;
     let {
       type: i,
-      isPreview: a,
+      isPreview: o,
       isCoachmark: s
     } = e;
-    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2 && a) return null;
-    let l = (0, o.EQ)({
+    if ((null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2 && o) return null;
+    let l = (0, a.EQ)({
       type: i,
-      isPreview: a,
+      isPreview: o,
       isCoachmark: s
     }).with({
       type: "EDITOR",
@@ -184,11 +184,11 @@ let H = Object.freeze({
   q = e => {
     var t, n;
     let {
-      renderCTAButtons: o,
+      renderCTAButtons: a,
       isCoachmark: s
     } = e, {
       type: l
-    } = i.useContext(Y), [c] = (0, a.Wu)([C.Z], () => [C.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2;
+    } = i.useContext(Y), [c] = (0, o.Wu)([C.Z], () => [C.Z.isPreview]), u = (null == (n = (0, g.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === w.Si.TIER_2;
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: w.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: w.Si.TIER_2,
@@ -208,30 +208,30 @@ let H = Object.freeze({
           isPreview: c,
           isCoachmark: s
         })]
-      }), null == o ? true : o()]
+      }), null == a ? true : a()]
     })
   },
   Q = e => {
     let {
       disabled: t
     } = e, {
-      type: o,
+      type: a,
       delay: l
     } = i.useContext(Y), {
       analyticsLocations: m
-    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [h, g] = (0, a.Wu)([C.Z], () => {
+    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [h, g] = (0, o.Wu)([C.Z], () => {
       var e;
       return [C.Z.isPreview, null == (e = C.Z.gradientPreset) ? true : e.id]
-    }), [E, b] = i.useState(false), [y, O] = i.useState(false), v = (0, a.e7)([d.Z], () => d.Z.useReducedMotion);
+    }), [E, b] = i.useState(false), [y, O] = i.useState(false), v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
     i.useEffect(() => {
-      (y === P.XV.length - 2 && "EDITOR" === o || g === s.Us.EASTER_EGG) && b(true)
-    }, [y, o, g]);
+      (y === P.XV.length - 2 && "EDITOR" === a || g === s.Us.EASTER_EGG) && b(true)
+    }, [y, a, g]);
     let I = (e, t) => {
         if ((0, T.zO)(e.id), W({
             isPersisted: !h,
             analyticsLocations: m,
             themeName: s.Us[e.id]
-          }), h && "SETTINGS" === o ? R(e) : (0, u.ZI)({
+          }), h && "SETTINGS" === a ? R(e) : (0, u.ZI)({
             backgroundGradientPresetId: e.id,
             theme: e.theme,
             useSystemTheme: h ? D.KW.OFF : true
@@ -274,8 +274,8 @@ let H = Object.freeze({
         isDisabled: t,
         onSelect: () => {
           (0, _.XO)(_.wh.CUSTOM_THEME, {
-            from: "SETTINGS" === o ? _.tE.SETTING : _.tE.CLIENT_THEMES_EDITOR
-          }), "SETTINGS" === o && (0, S.default)()
+            from: "SETTINGS" === a ? _.tE.SETTING : _.tE.CLIENT_THEMES_EDITOR
+          }), "SETTINGS" === a && (0, S.default)()
         }
       }), P.XV.filter(e => {
         let {
@@ -298,13 +298,13 @@ let H = Object.freeze({
       className: t,
       renderCTAButtons: n,
       disabled: i = false,
-      isCoachmark: o
+      isCoachmark: a
     } = e;
     return (0, r.jsxs)("section", {
       className: t,
       children: [(0, r.jsx)(q, {
         renderCTAButtons: n,
-        isCoachmark: o
+        isCoachmark: a
       }), (0, r.jsx)(c.Kqy, {
         direction: "horizontal",
         wrap: true,
@@ -323,17 +323,17 @@ let H = Object.freeze({
       systemSelectorFirst: t,
       hideSystemSelector: n = false
     } = e, {
-      delay: o
+      delay: a
     } = i.useContext(Y), {
       analyticsLocations: s
-    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, a.Wu)([y.Z, O.ZP, C.Z], () => [y.Z.theme, null == C.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === D.KW.ON]), _ = e => {
+    } = (0, p.ZP)(f.Z.CLIENT_THEMES_THEME_SELECTOR), [l, c, d] = (0, o.Wu)([y.Z, O.ZP, C.Z], () => [y.Z.theme, null == C.Z.gradientPreset && null == v.L1.getSetting().customUserThemeSettings, O.ZP.useSystemTheme === D.KW.ON]), _ = e => {
       (0, T.xs)(), W({
         isPersisted: true,
         analyticsLocations: s,
         themeName: "default ".concat(e)
       }), (0, u.ZI)({
         theme: e
-      }, o)
+      }, a)
     };
     return (0, r.jsxs)(r.Fragment, {
       children: [!n && t && (0, r.jsx)(N.bD, {
@@ -368,14 +368,14 @@ let H = Object.freeze({
       isEditor: t,
       className: n,
       renderCTAButtons: i,
-      isCoachmark: o
+      isCoachmark: a
     } = e;
     return (0, r.jsxs)("section", {
       className: n,
       children: [!t && (0, r.jsx)(q, {
         renderCTAButtons: i,
-        isCoachmark: o
-      }), t && o && (0, r.jsx)(c.Heading, {
+        isCoachmark: a
+      }), t && a && (0, r.jsx)(c.Heading, {
         className: M.upsellText,
         variant: "heading-sm/semibold",
         children: j.intl.string(j.t.POSLGY)
@@ -399,12 +399,12 @@ let H = Object.freeze({
     let {
       type: t,
       children: n
-    } = e, o = (0, m.Dt)(), a = (0, l.Jb)({
+    } = e, a = (0, m.Dt)(), o = (0, l.Jb)({
       orientation: "horizontal",
-      labelledBy: o
+      labelledBy: a
     }), {
       ref: s
-    } = a, c = F(a, ["ref"]), u = i.useMemo(() => ({
+    } = o, c = F(o, ["ref"]), u = i.useMemo(() => ({
       type: t,
       delay: H[t]
     }), [t]);

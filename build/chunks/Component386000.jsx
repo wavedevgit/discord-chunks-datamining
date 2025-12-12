@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 386000, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,8 +18,8 @@ function d(e) {
     serverMute: n,
     suppress: d,
     centerButton: p = false,
-    awaitingRemote: h,
-    onMouseEnter: f,
+    awaitingRemote: f,
+    onMouseEnter: h,
     onMouseLeave: m,
     onClick: g
   } = e, b = function(e, t) {
@@ -39,12 +39,12 @@ function d(e) {
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
     parentAnalyticsLocation: C
-  } = (0, a.ZP)(), y = t || n || d, v = p ? u.d : u.Z, _ = (0, o.Z)(t, n, d, h), {
-    events: O,
-    play: x,
-    Component: E
-  } = (0, c.b)(y), j = n || d ? l.v0G : E;
-  return r.useEffect(() => () => x(), [x, y]), (0, i.jsx)(v, function(e) {
+  } = (0, a.ZP)(), y = t || n || d, v = p ? u.d : u.Z, O = (0, o.Z)(t, n, d, f), {
+    events: x,
+    play: E,
+    Component: j
+  } = (0, c.b)(y), S = n || d ? l.v0G : j;
+  return r.useEffect(() => () => E(), [E, y]), (0, i.jsx)(v, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -62,16 +62,16 @@ function d(e) {
     }
     return e
   }({
-    iconComponent: j,
+    iconComponent: S,
     isTrayButton: true,
     caretColor: y ? "red" : "primaryDark",
     color: y ? "red" : true,
-    label: _,
+    label: O,
     onMouseEnter: e => {
-      null == f || f(e), O.onMouseEnter()
+      null == h || h(e), x.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == m || m(e), O.onMouseLeave()
+      null == m || m(e), x.onMouseLeave()
     },
     onClick: e => {
       null == g || g(e), (0, s.v)(C, s.d.MIC, t)

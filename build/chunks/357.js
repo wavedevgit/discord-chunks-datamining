@@ -25,7 +25,7 @@ class l extends Chunk81825.Z {
     return new l({
       id: e.id,
       componentType: e.component_type,
-      properties: o.t.fromBinary((0, r.c)(e.properties), {
+      properties: a.t.fromBinary((0, r.c)(e.properties), {
         readUnknownField: true,
         readerFactory: e => new i.o(e, t)
       }),

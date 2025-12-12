@@ -2,13 +2,13 @@
 /** chunk id: 312046, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => a,
+  Q: () => o,
   s: () => s
 });
 var Chunk666977 = require("./666977.js"),
   Chunk418793 = require("./418793.js"),
   Chunk460597 = require("./460597.js");
-let a = e => ({
+let o = e => ({
   id: e.id,
   configVersion: 2,
   startsAt: e.starts_at,
@@ -39,7 +39,7 @@ let a = e => ({
     gameTitle: e.messages.game_title,
     gamePublisher: e.messages.game_publisher
   },
-  taskConfigV2: (0, o._)(e.task_config_v2),
+  taskConfigV2: (0, a._)(e.task_config_v2),
   rewardsConfig: (0, i.v)(e.rewards_config),
   cosponsorMetadata: s(e.cosponsor_metadata),
   sharePolicy: e.share_policy,

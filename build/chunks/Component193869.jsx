@@ -14,8 +14,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk302221 = require("./302221.js"),
   Chunk324060 = require("./324060.js"),
   Chunk687581 = require("./687581.js"),
-  Chunk609054 = require("./609054.js"),
-  Chunk167262 = require("./167262.js");
+  Chunk477993 = require("./477993.js"),
+  Chunk596375 = require("./596375.js");
 let p = 500;
 class _ extends EventTarget {}
 let m = Chunk473749.createContext(new _);
@@ -24,7 +24,7 @@ function h(e) {
   var t;
   let {
     slide: n
-  } = e, _ = i.useRef(null), h = i.useRef(null), g = i.useRef(0), E = i.useRef(Date.now()), b = i.useContext(m), y = i.useContext(c.Q), O = (0, a.dQu)(y.gradient[0]).hex(), v = (0, a.dQu)(y.gradient[1]).hex(), S = null != (t = (0, s.Z)(y)) ? t : y, I = (0, a.dQu)(S.gradient[0]).hex(), T = (0, a.dQu)(S.gradient[1]).hex();
+  } = e, _ = i.useRef(null), h = i.useRef(null), g = i.useRef(0), E = i.useRef(Date.now()), b = i.useContext(m), y = i.useContext(c.Q), O = (0, o.dQu)(y.gradient[0]).hex(), v = (0, o.dQu)(y.gradient[1]).hex(), S = null != (t = (0, s.Z)(y)) ? t : y, I = (0, o.dQu)(S.gradient[0]).hex(), T = (0, o.dQu)(S.gradient[1]).hex();
   return i.useEffect(() => {
     let e = () => {
       let t = _.current,
@@ -40,9 +40,9 @@ function h(e) {
           })), r.save();
           let e = r.createLinearGradient(0, 0, t.width, t.height),
             i = Math.min((Date.now() - E.current) / p, 1),
-            o = i >= 1 ? O : (0, l.BM)(I, O, i),
-            a = i >= 1 ? v : (0, l.BM)(T, v, i);
-          e.addColorStop(0, o), e.addColorStop(1, a), r.fillStyle = e, r.globalCompositeOperation = "multiply", r.fillRect(0, 0, t.width, t.height), r.restore(), b.dispatchEvent(new CustomEvent("frameEnd", {
+            a = i >= 1 ? O : (0, l.BM)(I, O, i),
+            o = i >= 1 ? v : (0, l.BM)(T, v, i);
+          e.addColorStop(0, a), e.addColorStop(1, o), r.fillStyle = e, r.globalCompositeOperation = "multiply", r.fillRect(0, 0, t.width, t.height), r.restore(), b.dispatchEvent(new CustomEvent("frameEnd", {
             detail: {
               context: r,
               canvas: t
@@ -59,7 +59,7 @@ function h(e) {
     children: [(0, r.jsx)("canvas", {
       className: d.canvas,
       ref: _
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       autoPlay: true,
       muted: true,
       loop: true,

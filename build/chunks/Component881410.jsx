@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   wl: () => y,
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk302627 = require("./302627.js");
+  Chunk935587 = require("./935587.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -47,59 +47,59 @@ function p(e, t) {
   }), e
 }
 
-function m(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      l = Object.keys(e);
-    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var l = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function b(e) {
+function m(e) {
   var {
     widgetType: t,
     widget: n,
-    onAddGame: b,
+    onAddGame: m,
     children: h
-  } = e, y = m(e, ["widgetType", "widget", "onAddGame", "children"]);
+  } = e, y = b(e, ["widgetType", "widget", "onAddGame", "children"]);
   let O = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]),
     {
       trackUserProfileEditAction: v
-    } = (0, c.KZ)(),
+    } = (0, s.KZ)(),
     [j, x] = i.useState(""),
     P = i.useRef(""),
-    _ = i.useCallback(e => {
+    I = i.useCallback(e => {
       (0, u.ES)(t, {
         applicationId: e
       }), o.uvj.announce(d.intl.string(d.t.q0U3DE)), v({
         action: "GAME_ADDED",
         gameId: e,
         widgetEdited: t
-      }), null == b || b()
-    }, [t, v, b]),
+      }), null == m || m()
+    }, [t, v, m]),
     {
-      options: I,
-      matchSorterOptions: w
-    } = (0, s.h)(),
-    S = i.useMemo(() => I.map(e => ({
+      options: w,
+      matchSorterOptions: S
+    } = (0, c.h)(),
+    E = i.useMemo(() => w.map(e => ({
       id: String(e.value),
       value: String(e.value),
       label: e.label,
       disabled: O.has(e.value)
-    })), [I, O]),
-    E = i.useMemo(() => p(g({}, w), {
-      threshold: l.Lu.rankings.CONTAINS,
+    })), [w, O]),
+    _ = i.useMemo(() => p(g({}, S), {
+      threshold: a.Lu.rankings.CONTAINS,
       keys: ["label"]
-    }), [w]),
-    T = i.useCallback(e => "" === e.trim() ? S.length : (0, l.Lu)(S, e, E).length, [S, E]),
+    }), [S]),
+    T = i.useCallback(e => "" === e.trim() ? E.length : (0, a.Lu)(E, e, _).length, [E, _]),
     C = i.useCallback(e => {
       let n = e.target.value;
       "" === j.trim() && "" !== n.trim() && v({
@@ -131,21 +131,21 @@ function b(e) {
       return (0, r.jsx)(o.VqE, {
         className: f.gameSearchCombobox,
         "aria-label": d.intl.string(d.t.uqw8wK),
-        children: (0, r.jsxs)(a.uz, {
+        children: (0, r.jsxs)(l.uz, {
           selectionMode: "single",
           value: null,
           onSelectionChange: e => {
-            null != e && (_(e), t())
+            null != e && (I(e), t())
           },
-          options: S,
-          matchSorterOptions: E,
-          children: [(0, r.jsx)(a.Ct, {
+          options: E,
+          matchSorterOptions: _,
+          children: [(0, r.jsx)(l.Ct, {
             label: d.intl.string(d.t["5h0QOP"]),
             hideLabel: true,
             placeholder: d.intl.string(d.t["5h0QOP"]),
             autoFocus: true,
             onQueryChange: C
-          }), (0, r.jsx)(a.px, {
+          }), (0, r.jsx)(l.px, {
             maxVisibleItems: 7
           })]
         })
@@ -158,15 +158,15 @@ function b(e) {
 function h(e) {
   var {
     disabled: t
-  } = e, n = m(e, ["disabled"]);
-  let l = i.useRef(null);
-  return (0, r.jsx)(b, p(g({
-    targetElementRef: l,
+  } = e, n = b(e, ["disabled"]);
+  let a = i.useRef(null);
+  return (0, r.jsx)(m, p(g({
+    targetElementRef: a,
     position: "bottom",
     align: "center"
   }, n), {
     children: e => (0, r.jsx)(o.Button, g({
-      buttonRef: l,
+      buttonRef: a,
       variant: "secondary",
       size: "sm",
       icon: o.qJs,
@@ -178,7 +178,7 @@ function h(e) {
 
 function y(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(b, p(g({
+  return (0, r.jsx)(m, p(g({
     targetElementRef: t,
     position: "right",
     align: "top"

@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => T
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk379649 = require("./379649.js"),
   Chunk570140 = require("./570140.js"),
@@ -65,13 +65,13 @@ function E(e) {
     speakingFlags: i
   } = e;
   if (n !== f.Yn.DEFAULT) returnfalse;
-  let o = null == (t = d.default.getCurrentUser()) ? true : t.id;
-  if (null == o) returnfalse;
-  let a = r === o ? f.h7.AUDIO_INPUT : f.h7.AUDIO_OUTPUT;
-  if (i === f.Dg.NONE && I.isSampling(a)) I.stopSampling(a);
+  let a = null == (t = d.default.getCurrentUser()) ? true : t.id;
+  if (null == a) returnfalse;
+  let o = r === a ? f.h7.AUDIO_INPUT : f.h7.AUDIO_OUTPUT;
+  if (i === f.Dg.NONE && I.isSampling(o)) I.stopSampling(o);
   else {
-    if (i === f.Dg.NONE || I.isSampling(a)) returnfalse;
-    I.startSampling(a)
+    if (i === f.Dg.NONE || I.isSampling(o)) returnfalse;
+    I.startSampling(o)
   }
 }
 
@@ -163,7 +163,7 @@ class S extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-p(S, "displayName", "DeviceFrecencyStore"), p(S, "persistKey", "DeviceFrecencyStore"), p(S, "migrations", [e => o().mapKeys(e, (e, t) => _[t])]);
+p(S, "displayName", "DeviceFrecencyStore"), p(S, "persistKey", "DeviceFrecencyStore"), p(S, "migrations", [e => a().mapKeys(e, (e, t) => _[t])]);
 let I = new S(Chunk570140.Z, {
     AUDIO_SET_INPUT_DEVICE: e => g(f.h7.AUDIO_INPUT, e),
     AUDIO_SET_OUTPUT_DEVICE: e => g(f.h7.AUDIO_OUTPUT, e),

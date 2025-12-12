@@ -10,7 +10,7 @@ var Chunk840475 = require("./840475.js"),
   c = Chunk840475.exportTypedArrayMethod,
   u = Chunk46015(Chunk840475.TypedArrayPrototype.sort);
 c("toSorted", function(e) {
-  true !== e && o(e);
+  true !== e && a(e);
   var t = s(this);
-  return u(a(l(t), t), e)
+  return u(o(l(t), t), e)
 })

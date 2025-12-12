@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -30,14 +30,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk292419 = require("./292419.js"),
   Chunk756043 = require("./756043.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975279 = require("./975279.js");
+  Chunk764055 = require("./764055.js");
 
 function R(e) {
   let {
     dropping: t,
     fileInputRef: n,
     minValues: i,
-    maxValues: o,
+    maxValues: a,
     guildId: s
   } = e, l = (0, v.dg)(s), c = (0, O.BU)(l / O.XD, {
     useKibibytes: true,
@@ -46,7 +46,7 @@ function R(e) {
   return (0, r.jsxs)("div", {
     className: P.mainWrapper,
     children: [(0, r.jsxs)("div", {
-      className: a()(P.mainBody, {
+      className: o()(P.mainBody, {
         [P.hidden]: t
       }),
       children: [(0, r.jsx)(u.xD0, {
@@ -60,25 +60,25 @@ function R(e) {
             var e;
             return null == (e = n.current) ? true : e.activateUploadDialogue()
           },
-          maxValues: o
+          maxValues: a
         })
       }), (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: i > 1 ? i === o ? N.intl.format(N.t.SAr31z, {
+        children: i > 1 ? i === a ? N.intl.format(N.t.SAr31z, {
           minValues: i,
           maxSize: c
         }) : N.intl.format(N.t["ZG+3Ck"], {
           minValues: i,
-          maxValues: o,
+          maxValues: a,
           maxSize: c
         }) : N.intl.format(N.t.tyxwW1, {
-          maxValues: o,
+          maxValues: a,
           maxSize: c
         })
       })]
     }), t && (0, r.jsxs)("div", {
-      className: a()(P.mainBody, P.absolutelyPositioned),
+      className: o()(P.mainBody, P.absolutelyPositioned),
       children: [(0, r.jsx)(u.xD0, {
         color: u.TVs.colors.ICON_STRONG,
         size: "refresh_sm"
@@ -93,7 +93,7 @@ function R(e) {
 
 function w() {
   return (0, Chunk54381.jsxs)("div", {
-    className: a()(Chunk975279.mainWrapper, Chunk975279.mainBody),
+    className: o()(Chunk764055.mainWrapper, Chunk764055.mainBody),
     children: [(0, Chunk54381.jsx)(Chunk481060.owK, {
       color: Chunk481060.TVs.colors.ICON_STRONG,
       size: "refresh_sm"
@@ -114,17 +114,17 @@ function D(e) {
   let {
     upload: n,
     handleRemoveFile: i,
-    singleFileInput: o
+    singleFileInput: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(P.file, {
-      [P.singleFileInput]: o
+    className: o()(P.file, {
+      [P.singleFileInput]: a
     }),
     children: [(0, r.jsx)(g.r, {
       upload: n,
-      size: o ? h.q.XSMALL : h.q.XXSMALL
+      size: a ? h.q.XSMALL : h.q.XXSMALL
     }), (0, r.jsx)(u.Text, {
-      variant: "text-".concat(o ? "md" : "xs", "/medium"),
+      variant: "text-".concat(a ? "md" : "xs", "/medium"),
       className: P.filename,
       children: null != (t = n.filename) ? t : N.intl.string(N.t.ZMirp0)
     }), (0, r.jsx)(E.ZP, {
@@ -148,7 +148,7 @@ function x(e) {
   var t;
   let {
     minValues: n,
-    maxValues: o
+    maxValues: a
   } = e, s = i.useRef(null), u = i.useRef(null), [m, h] = i.useState(false), g = (0, T.CJ)();
   l()(null != g, "FileUploadActionComponent must be used within a ComponentStateContextProvider");
   let E = g.channelId;
@@ -172,10 +172,10 @@ function x(e) {
     }, []),
     G = i.useCallback((e, t) => {
       if (0 === e.length) return;
-      if (v.length + e.length > o) return (0, p.openUploadError)({
+      if (v.length + e.length > a) return (0, p.openUploadError)({
         title: N.intl.string(N.t.wOr6hB),
         help: N.intl.formatToPlainString(N.t.dy6viJ, {
-          maxValues: o
+          maxValues: a
         })
       });
       if ((0, I.Bf)(e, M.guild_id)) return (0, S.G)(M, e);
@@ -196,7 +196,7 @@ function x(e) {
         }), n
       });
       x(v.concat(n))
-    }, [v, o, M, x, O, E]),
+    }, [v, a, M, x, O, E]),
     Z = i.useCallback(e => {
       var t, n;
       e.preventDefault(), h(false), G(Array.from(null != (n = null == (t = e.dataTransfer) ? true : t.files) ? n : []), "drag_drop")
@@ -213,21 +213,21 @@ function x(e) {
     return null == e || e.addEventListener("dragover", k), null == e || e.addEventListener("dragleave", U), null == e || e.addEventListener("drop", Z), () => {
       null == e || e.removeEventListener("dragover", k), null == e || e.removeEventListener("dragleave", U), null == e || e.removeEventListener("drop", Z)
     }
-  }, [k, U, Z]), 1 === o && 1 === L.length) ? (0, r.jsx)(D, {
+  }, [k, U, Z]), 1 === a && 1 === L.length) ? (0, r.jsx)(D, {
     upload: L[0],
     handleRemoveFile: B,
     singleFileInput: true
   }) : (0, r.jsxs)("div", {
     ref: u,
-    className: a()(P.container, {
+    className: o()(P.container, {
       [P.dropping]: m,
       [P.error]: null != j
     }),
-    children: [v.length >= o ? (0, r.jsx)(w, {}) : (0, r.jsx)(R, {
+    children: [v.length >= a ? (0, r.jsx)(w, {}) : (0, r.jsx)(R, {
       dropping: m,
       fileInputRef: s,
       minValues: n,
-      maxValues: o,
+      maxValues: a,
       guildId: M.guild_id
     }), L.length > 0 && (0, r.jsx)("div", {
       className: P.files,
@@ -238,7 +238,7 @@ function x(e) {
     }), (0, r.jsx)(f.Z, {
       ref: s,
       onChange: F,
-      multiple: o > 1,
+      multiple: a > 1,
       tabIndex: false,
       className: P.fileInput
     })]

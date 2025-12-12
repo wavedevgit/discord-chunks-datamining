@@ -6,22 +6,22 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk724825 = require("./724825.js");
+  Chunk571069 = require("./571069.js");
 
 function s(e) {
   let {
     rewardName: t
   } = e;
-  return (0, r.jsx)(i.Text, {
+  return (0, a.jsx)(r.Text, {
     variant: "text-xs/medium",
     className: o.rewardPill,
-    children: a.intl.format(a.t.loyTil, {
-      rewardName: (e, n) => (0, r.jsx)(i.Text, {
+    children: i.intl.format(i.t.loyTil, {
+      rewardName: (e, n) => (0, a.jsx)(r.Text, {
         variant: "text-xs/medium",
         className: o.rewardName,
         children: t
       }, n),
-      verticalDivider: (e, t) => (0, r.jsx)("div", {
+      verticalDivider: (e, t) => (0, a.jsx)("div", {
         className: o.divider
       }, t)
     })

@@ -28,7 +28,7 @@ function m() {
 async function h() {
   if (null == r) {
     if (!m()) return void new Chunk710845.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
-    await Chunk998502.ZP.ensureModule("discord_cloudsync"), (r = new(Chunk998502.ZP.getCloudSync())).on("state", e => o.Z.dispatch({
+    await Chunk998502.ZP.ensureModule("discord_cloudsync"), (r = new(Chunk998502.ZP.getCloudSync())).on("state", e => a.Z.dispatch({
       type: "GAME_CLOUD_SYNC_UPDATE",
       state: e
     }))
@@ -41,14 +41,14 @@ function g(e, t) {
   if (!c.Z.supportsCloudSync(e, t)) return Promise.resolve({
     type: p.QCD.NONE
   });
-  let o = _(),
-    a = c.Z.getState(e, t);
-  if (null == a) throw Error("No dispatch state for ".concat(e, ":").concat(t));
-  let d = null != (n = a.storage) ? n : {},
+  let a = _(),
+    o = c.Z.getState(e, t);
+  if (null == o) throw Error("No dispatch state for ".concat(e, ":").concat(t));
+  let d = null != (n = o.storage) ? n : {},
     f = (0, u.Tu)(e, t),
     m = l.default.getToken();
   if (null == m) throw Error("Cannot use cloud sync when not authenticated.");
-  let h = null != a.installPath ? (0, s.Z)(a.installPath) : null;
+  let h = null != o.installPath ? (0, s.Z)(o.installPath) : null;
   if (null == h) throw Error("No install path for ".concat(e, ":").concat(t));
   let g = l.default.getId(),
     E = {
@@ -72,5 +72,5 @@ function g(e, t) {
         BRANCHID: t
       }
     };
-  return o.sync(f, E)
+  return a.sync(f, E)
 }

@@ -9,6 +9,6 @@ require.d(exports, {
 let {
   Layer: r,
   LayerContainer: i,
-  LayerProvider: o,
-  layerContext: a
-} = (0, require("./481060.js").Xvx)("PictureInPicture"), s = i, l = o, c = r
+  LayerProvider: a,
+  layerContext: o
+} = (0, require("./481060.js").Xvx)("PictureInPicture"), s = i, l = a, c = r

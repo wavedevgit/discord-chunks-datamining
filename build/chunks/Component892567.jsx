@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk522942 = require("./522942.js"),
   Chunk342905 = require("./342905.js"),
   Chunk442837 = require("./442837.js"),
@@ -20,14 +20,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk821795 = require("./821795.js"),
   Chunk760692 = require("./760692.js"),
   Chunk7284 = require("./7284.js"),
-  Chunk492333 = require("./492333.js");
+  Chunk24730 = require("./24730.js");
 let y = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
   O = Chunk473749.memo(function(e) {
     var t;
     let {
       userName: n,
       displayNameStyles: i,
-      effectDisplayType: o = h.F.STATIC,
+      effectDisplayType: a = h.F.STATIC,
       inProfile: O = false,
       textClassName: S,
       loop: I = false,
@@ -58,22 +58,22 @@ let y = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       }),
       U = v(x);
     return (0, r.jsxs)("div", {
-      className: a()(b.container, N, S, {
-        [b.showEffect]: o !== h.F.PLAIN,
-        [b.animated]: o === h.F.ANIMATED && !P,
+      className: o()(b.container, N, S, {
+        [b.showEffect]: a !== h.F.PLAIN,
+        [b.animated]: a === h.F.ANIMATED && !P,
         [b.loop]: I,
         [b.inProfile]: O
       }),
       style: k,
       children: [(0, r.jsx)("span", {
         "data-username-with-effects": L,
-        className: a()(b.innerContainer, null == U ? true : U.effectClassName, {
+        className: o()(b.innerContainer, null == U ? true : U.effectClassName, {
           [b.underlineOnHover]: A,
           [b.chicle]: i.fontId === l.C.CHICLE
         }),
         children: j
       }), (null == U ? true : U.glowClassName) != null && (0, r.jsx)("span", {
-        className: a()(b.glowContainer, b.innerContainer, U.glowClassName, {
+        className: o()(b.glowContainer, b.innerContainer, U.glowClassName, {
           [b.chicle]: i.fontId === l.C.CHICLE
         }),
         "aria-hidden": true,

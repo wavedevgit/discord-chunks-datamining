@@ -18,10 +18,10 @@ class l extends Chunk727916.Z {
   }
   innerExtract(e, t) {
     let n = t[1] ? (0, r.IX)(t[1]) : 1,
-      o = r.pS[t[3].toLowerCase()],
-      a = {};
-    a[o] = n;
+      a = r.pS[t[3].toLowerCase()],
+      o = {};
+    o[a] = n;
     let l = t[2] || t[4] || "";
-    if (l = l.toLowerCase()) return (/derni[eè]re?s?/.test(l) || /pass[ée]e?s?/.test(l) || /pr[ée]c[ée]dents?/.test(l)) && (a = (0, s.de)(a)), i.L.createRelativeFromReference(e.reference, a)
+    if (l = l.toLowerCase()) return (/derni[eè]re?s?/.test(l) || /pass[ée]e?s?/.test(l) || /pr[ée]c[ée]dents?/.test(l)) && (o = (0, s.de)(o)), i.L.createRelativeFromReference(e.reference, o)
   }
 }

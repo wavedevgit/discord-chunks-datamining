@@ -42,7 +42,7 @@ let k = (e, t, n) => (0, i.wj)(e) ? t : n,
   U = e => {
     let {
       styles: t
-    } = e, i = (0, o.ZP)(), U = (0, r.e7)([s.default], () => {
+    } = e, i = (0, a.ZP)(), U = (0, r.e7)([s.default], () => {
       let e = s.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
     }), G = e => {
@@ -51,7 +51,7 @@ let k = (e, t, n) => (0, i.wj)(e) ? t : n,
           let {
             openUserSettings: t
           } = n(518596);
-          t(a.n.PROFILE_PANEL, {
+          t(o.n.PROFILE_PANEL, {
             section: d.oAB.PROFILE_CUSTOMIZATION,
             scrollPosition: f.Y_.TRY_IT_OUT,
             analyticsLocations: e

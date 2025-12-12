@@ -2,11 +2,11 @@
 /** chunk id: 930145, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => a
 });
 var Chunk198584 = require("./198584.js"),
   Chunk350167 = require("./350167.js");
-class o {
+class a {
   static open(e, t) {
     return i.r.executeAsync("database_open", n => {
       var i;

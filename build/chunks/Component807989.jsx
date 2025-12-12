@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk243814 = require("./243814.js"),
   Chunk95015 = require("./95015.js"),
   Chunk993365 = require("./993365.js"),
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk713938 = require("./713938.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk852303 = require("./852303.js");
+  Chunk887022 = require("./887022.js");
 let E = e => {
   switch (e) {
     case d.ZC.IP_LOCATION:
@@ -54,7 +54,7 @@ function b(e) {
     location: "oauth2_authorize"
   });
   return (0, r.jsxs)("div", {
-    className: o()(g.applicationDetails, {
+    className: a()(g.applicationDetails, {
       [g.noPadding]: A.enabled
     }),
     children: [null != n ? (0, r.jsx)(y, {
@@ -70,7 +70,7 @@ function b(e) {
       text: h.intl.formatToPlainString(h.t["+1bjc8"], {
         date: I
       })
-    }), l.includes(a.x.BOT) && null != O ? (0, r.jsx)(y, {
+    }), l.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: c.wGt,
       text: h.intl.formatToPlainString(h.t.UHGHSP, {
         guildCount: O

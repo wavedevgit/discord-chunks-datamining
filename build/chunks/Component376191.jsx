@@ -22,11 +22,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk332712 = require("./332712.js"),
   Chunk81471 = require("./81471.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk79072 = require("./79072.js");
+  Chunk68599 = require("./68599.js");
 let y = e => {
     let {
       userId: t
-    } = e, n = (0, b.O)(t);
+    } = e, n = (0, E.O)(t);
     return null == n || 0 === n.length ? (0, r.jsx)(a.Text, {
       className: v.mutualGuilds,
       variant: "text-sm/normal",
@@ -57,7 +57,7 @@ function C(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, i.e7)([g.Z], () => null == l ? null : g.Z.getNickname(l.id)), C = !m && u, S = (0, _.c)(n), {
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), E = (0, i.e7)([g.Z], () => null == l ? null : g.Z.getNickname(l.id)), C = !m && u, S = (0, b.c)(n), {
     avatarDecorationSrc: T
   } = (0, p.Z)({
     user: l,
@@ -76,7 +76,7 @@ function C(e) {
       children: [(0, r.jsxs)("div", {
         className: v.userContainerWithPreview,
         children: [(0, r.jsx)(s.Z, {
-          nick: b,
+          nick: E,
           user: l,
           showAccountIdentifier: true,
           className: v.tagContainer,
@@ -89,7 +89,7 @@ function C(e) {
           children: S
         })]
       }), (0, r.jsx)(c.Z, {
-        hoverText: (0, r.jsx)(E.Z, {
+        hoverText: (0, r.jsx)(_.Z, {
           channel: n
         }),
         forceHover: u,

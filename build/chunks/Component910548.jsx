@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk921254 = require("./921254.js"),
   Chunk772848 = require("./772848.js"),
   Chunk468194 = require("./468194.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465687 = require("./465687.js");
+  Chunk333748 = require("./333748.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -248,9 +248,9 @@ function et(e) {
   let {
     onAnimationComplete: t,
     onClick: n,
-    position: o,
+    position: a,
     size: c
-  } = e, u = i.useRef(null), [p, _] = i.useState(null), [m] = i.useState(null != o ? o : Y()), {
+  } = e, u = i.useRef(null), [p, _] = i.useState(null), [m] = i.useState(null != a ? a : Y()), {
     createMultipleConfettiAt: h,
     confettiCanvas: g
   } = i.useContext(f.h), [E, b] = i.useState(null), y = (0, s.uR)(g, E), O = J(p, m), v = w.includes(m), I = v && "exit" === p, T = i.useCallback(e => {
@@ -328,7 +328,7 @@ function et(e) {
       spriteHeight: W
     }), (0, r.jsx)(d.P3F, {
       onClick: n,
-      className: a()(S.easterEggAnimationClickTarget, {
+      className: o()(S.easterEggAnimationClickTarget, {
         [S.easterEggAnimationClickTargetTopLeft]: "TOP_LEFT" === m,
         [S.easterEggAnimationClickTargetTopRight]: "TOP_RIGHT" === m,
         [S.easterEggAnimationClickTargetBottomLeft]: "BOTTOM_LEFT" === m,
@@ -336,7 +336,7 @@ function et(e) {
       }),
       children: (0, r.jsx)(d.kci, {
         animationRef: A,
-        className: a()(S.easterEggAnimation, {
+        className: o()(S.easterEggAnimation, {
           [S.easterEggAnimationHideLeaf]: I
         }),
         nextScene: O,
@@ -353,8 +353,8 @@ function et(e) {
 function en(e) {
   let t, {
       message: n,
-      compact: o,
-      guild: a,
+      compact: a,
+      guild: o,
       usernameHook: s,
       onClickMessage: l
     } = e,
@@ -372,7 +372,7 @@ function en(e) {
     w = (0, b.ZP)(n),
     D = w.nick,
     x = s(w);
-  t = null == c || null == a ? u > 1 ? v.intl.format(v.t.yfC9ds, {
+  t = null == c || null == o ? u > 1 ? v.intl.format(v.t.yfC9ds, {
     username: D,
     usernameHook: x,
     numSubscriptions: u
@@ -383,12 +383,12 @@ function en(e) {
     username: D,
     usernameHook: x,
     numSubscriptions: u,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, E.nW)(c)
   }) : v.intl.format(v.t.cUfTTE, {
     username: D,
     usernameHook: x,
-    guildName: a.name,
+    guildName: o.name,
     newTierName: (0, E.nW)(c)
   });
   let L = i.useCallback(() => {
@@ -430,7 +430,7 @@ function en(e) {
   return (0, r.jsxs)(y.Z, {
     iconNode: G,
     timestamp: n.timestamp,
-    compact: o,
+    compact: a,
     children: [(0, r.jsx)("div", {
       onClick: U,
       className: S.message,

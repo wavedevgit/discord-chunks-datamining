@@ -36,21 +36,21 @@ function c(e) {
   let {
     transitionState: t,
     title: n,
-    body: o,
+    body: a,
     onClose: s
   } = e;
   return (0, r.jsx)(i.Modal, {
     title: n,
     actions: [{
-      text: a.intl.string(a.t["NX+WJN"]),
+      text: o.intl.string(o.t["NX+WJN"]),
       onClick: s
     }],
     transitionState: t,
     onClose: s,
-    subtitle: o
+    subtitle: a
   })
 }
 
 function u(e) {
-  (0, o.h7j)(t => (0, r.jsx)(c, l({}, t, e)))
+  (0, a.h7j)(t => (0, r.jsx)(c, l({}, t, e)))
 }

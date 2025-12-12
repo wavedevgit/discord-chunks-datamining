@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 3861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,19 +19,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk45430 = require("./45430.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk394024 = require("./394024.js");
+  Chunk676465 = require("./676465.js");
 let v = (0, Chunk112724.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: a,
     participantsVersion: v,
-    layout: _,
-    onSelectParticipant: O,
-    onContextMenuParticipant: x,
-    onFullscreenParticipant: E,
-    channel: j,
-    hasConnectPermission: S,
+    layout: O,
+    onSelectParticipant: x,
+    onContextMenuParticipant: E,
+    onFullscreenParticipant: j,
+    channel: S,
+    hasConnectPermission: _,
     className: P,
     inCall: I,
     showParticipants: Z = true,
@@ -47,27 +47,27 @@ let v = (0, Chunk112724.Z)(e => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, L.width, L.height]);
   let D = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, v]),
-    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(j.id), [j.id]);
-  if ((null == R ? true : R.channelId) === j.id) return (0, i.jsx)(h.Z, {
+    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(S.id), [S.id]);
+  if ((null == R ? true : R.channelId) === S.id) return (0, i.jsx)(f.Z, {
     height: N
   });
-  if ((null == j ? true : j.isGuildVocalOrThread()) && !I) return (0, i.jsx)(p.Z, {
-    channel: j,
+  if ((null == S ? true : S.isGuildVocalOrThread()) && !I) return (0, i.jsx)(p.Z, {
+    channel: S,
     participants: t,
-    hasConnectPermission: S
+    hasConnectPermission: _
   });
   if (w === b.WtW.VOICE) return (0, i.jsx)(c.Z, {
-    guildId: j.guild_id,
+    guildId: S.guild_id,
     width: T,
     className: y.voiceCallWrapper,
     participants: t,
-    onContextMenu: x
+    onContextMenu: E
   });
   if (n = I ? n : t, null == a) {
     if (0 === n.length) {
       let e = t.length > 0 && !k;
       return (0, i.jsx)(g.Z, {
-        channelId: j.id,
+        channelId: S.id,
         allPoppedOut: e
       })
     }
@@ -75,23 +75,23 @@ let v = (0, Chunk112724.Z)(e => {
       className: y.videoGridWrapper,
       justify: u.Z.Justify.CENTER,
       align: u.Z.Align.CENTER,
-      children: (0, i.jsx)(f.Z, {
-        channel: j,
+      children: (0, i.jsx)(h.Z, {
+        channel: S,
         className: y.videoGrid,
         participants: D,
         totalNumberOfParticipants: t.length,
-        onClick: O,
-        onDoubleClick: E,
-        onContextMenu: x,
+        onClick: x,
+        onDoubleClick: j,
+        onContextMenu: E,
         inCall: I,
         popoutType: M
       })
     })
   }
   return (0, i.jsx)(m.Z, {
-    onFullscreenParticipant: E,
-    onContextMenuParticipant: x,
-    onSelectParticipant: O,
+    onFullscreenParticipant: j,
+    onContextMenuParticipant: E,
+    onSelectParticipant: x,
     selectedParticipant: a,
     filteredParticipants: D,
     participants: t,
@@ -100,9 +100,9 @@ let v = (0, Chunk112724.Z)(e => {
     idle: A,
     height: N,
     width: T,
-    layout: _,
+    layout: O,
     inCall: I,
-    channel: j,
+    channel: S,
     showParticipants: Z
   })
 })

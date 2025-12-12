@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk159635 = require("./159635.js"),
   i = require.n(Chunk159635),
   Chunk914216 = require("./914216.js");
-let a = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?\\.com|staging\\.discord\\.co)/shop(?:\\?tab=[a-z]+)?#itemSkuId=(\\d+)"),
+let o = RegExp("^https://(?:(?:canary\\.|ptb\\.)?discord(?:app)?\\.com|staging\\.discord\\.co)/shop(?:\\?tab=[a-z]+)?#itemSkuId=(\\d+)"),
   s = {
     shopLink: {
       order: i().defaultRules.url.order - .5,
       requiredFirstCharacters: ["h"],
       match(e) {
-        let t = a.exec(e);
-        return null == t || (0, o.Z)("MarkupShopLinkRule") ? t : null
+        let t = o.exec(e);
+        return null == t || (0, a.Z)("MarkupShopLinkRule") ? t : null
       },
       parse(e, t, n) {
         let r = e[0],

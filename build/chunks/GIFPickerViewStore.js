@@ -110,16 +110,16 @@ function U(e) {
       height: n,
       src: r,
       gif_src: i,
-      url: o,
-      id: a
+      url: a,
+      id: o
     } = e;
     return {
       width: t,
       height: n,
       src: k(r),
       gifSrc: k(i),
-      url: o,
-      id: a,
+      url: a,
+      id: o,
       format: C
     }
   })

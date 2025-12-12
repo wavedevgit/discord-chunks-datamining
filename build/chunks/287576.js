@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 287576, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,33 +16,33 @@ function c(e) {
   let {
     application: n,
     loading: c
-  } = (0, i.Z)(e, a.wW.GUILD_ROLE_SUBSCRIPTIONS), {
-    payoutsByPeriod: u,
-    loading: d
-  } = (0, s.Z)(null == n ? true : n.id, {
+  } = (0, i.Z)(e, s.wW.GUILD_ROLE_SUBSCRIPTIONS), {
+    payoutsByPeriod: d,
+    loading: u
+  } = (0, a.Z)(null == n ? true : n.id, {
     groupType: o.uw.GUILD_PRODUCT,
     teamId: null == n || null == (t = n.team) ? true : t.id
   }), {
     currentPeriod: g,
-    previousPeriods: m,
-    metrics: p
+    previousPeriods: f,
+    metrics: m
   } = r.useMemo(() => {
     let {
       currentPeriod: e,
       previousPeriods: t
-    } = (0, l.Br)(u), n = (0, l.Uj)(e, t[0]);
+    } = (0, l.Br)(d), n = (0, l.Uj)(e, t[0]);
     return {
       currentPeriod: e,
       previousPeriods: t,
       metrics: n
     }
-  }, [u]);
+  }, [d]);
   return {
-    loading: c || d,
-    payoutsByPeriod: u,
+    loading: c || u,
+    payoutsByPeriod: d,
     currentPeriod: g,
-    previousPeriods: m,
-    metrics: p,
+    previousPeriods: f,
+    metrics: m,
     application: n
   }
 }

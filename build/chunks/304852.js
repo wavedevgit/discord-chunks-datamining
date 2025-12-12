@@ -2,25 +2,25 @@
 /** chunk id: 304852, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => o,
-  Z: () => a
+  J: () => a,
+  Z: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk149203 = require("./149203.js");
 
-function o(e) {
+function a(e) {
   let {
     topEmojis: t,
     newlyAddedEmojis: n,
     rowSize: r = i.N6
-  } = e, o = t.slice(0, r - n.length);
+  } = e, a = t.slice(0, r - n.length);
   return {
-    visibleTopEmojis: o,
+    visibleTopEmojis: a,
     visibleNewlyAddedEmojis: n,
-    allEmojis: o.concat(n)
+    allEmojis: a.concat(n)
   }
 }
 
-function a(e) {
-  return r.useMemo(() => o(e), [e])
+function o(e) {
+  return r.useMemo(() => a(e), [e])
 }

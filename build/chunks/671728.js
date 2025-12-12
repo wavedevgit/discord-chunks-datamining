@@ -59,11 +59,11 @@ function f(e) {
   switch (t) {
     case r.Wc.OPEN_MARKETING_PAGE:
       return () => {
-        (0, o.uL)(s.Z5c.APPLICATION_STORE), null == u || u()
+        (0, a.uL)(s.Z5c.APPLICATION_STORE), null == u || u()
       };
     case r.Wc.OPEN_TIER_1_PAYMENT_MODAL:
       return () => (0, i.Z)({
-        subscriptionTier: a.Si.TIER_1,
+        subscriptionTier: o.Si.TIER_1,
         analyticsLocations: n,
         analyticsObject: d(c({}, l), {
           object: s.qAy.BUTTON_CTA,
@@ -77,7 +77,7 @@ function f(e) {
     case r.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
       return () => (0, i.Z)({
-        subscriptionTier: a.Si.TIER_2,
+        subscriptionTier: o.Si.TIER_2,
         analyticsLocations: n,
         analyticsObject: d(c({}, l), {
           object: s.qAy.BUTTON_CTA,

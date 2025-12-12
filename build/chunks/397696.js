@@ -15,34 +15,34 @@ class s extends Chunk495852.C {
       serverVersion: 0,
       dataVersion: 0
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let o = null != i ? i : this.create(),
-      a = e.pos + t;
-    for (; e.pos < a;) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          o.clientVersion = e.uint32();
+          a.clientVersion = e.uint32();
           break;
         case 2:
-          o.serverVersion = e.uint32();
+          a.serverVersion = e.uint32();
           break;
         case 3:
-          o.dataVersion = e.uint32();
+          a.dataVersion = e.uint32();
           break;
         default:
-          let a = n.readUnknownField;
-          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
+          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
       }
     }
-    return o
+    return a
   }
   internalBinaryWrite(e, t, n) {
     0 !== e.clientVersion && t.tag(1, r.TD.Varint).uint32(e.clientVersion), 0 !== e.serverVersion && t.tag(2, r.TD.Varint).uint32(e.serverVersion), 0 !== e.dataVersion && t.tag(3, r.TD.Varint).uint32(e.dataVersion);

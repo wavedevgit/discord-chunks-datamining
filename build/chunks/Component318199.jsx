@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 318199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _,
+  default: () => b,
   r: () => m
 });
 var Chunk54381 = require("./54381.js");
@@ -34,7 +34,7 @@ function m(e) {
   }
 }
 
-function _(e) {
+function b(e) {
   let {
     componentId: t,
     promotionId: n,
@@ -44,7 +44,7 @@ function _(e) {
     location: a
   } = (0, o.O)(), {
     analyticsLocations: p
-  } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.ZP)(), _ = (0, s.apv)(m);
+  } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.ZP)(), b = (0, s.apv)(m);
   if ("announcementModalVariant1" === l.properties.oneofKind) {
     let e = (0, g.N)({
       componentId: t,
@@ -53,7 +53,7 @@ function _(e) {
       renderModalProps: i,
       analyticsLocations: p,
       analyticsLocation: a,
-      isLightTheme: _
+      isLightTheme: b
     });
     return (0, r.jsx)(h.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {

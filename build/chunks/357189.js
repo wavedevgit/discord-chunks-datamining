@@ -10,10 +10,10 @@ var Chunk772848 = require("./772848.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e, t, n) {
-  let s = new URL(o.Z.makeUrl(a.Z5c.BILLING_LOGIN_HANDOFF, false)),
+  let s = new URL(a.Z.makeUrl(o.Z5c.BILLING_LOGIN_HANDOFF, false)),
     l = (0, r.Z)();
   return s.searchParams.append("handoff_key", l), s.searchParams.append("redirect_to", e), i.tn.post({
-    url: a.ANM.HANDOFF,
+    url: o.ANM.HANDOFF,
     body: {
       key: l
     },
@@ -26,12 +26,12 @@ function l(e, t, n) {
   let {
     planId: r,
     isGift: i,
-    loadId: o,
+    loadId: a,
     paymentMethodType: l,
     deepLinkType: c,
     usePresetOffer: u
   } = e;
-  return s(a.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(r, i, o, l, c, u), t, n)
+  return s(o.Z5c.BILLING_STANDALONE_CHECKOUT_PAGE(r, i, a, l, c, u), t, n)
 }
 
 function c(e, t) {

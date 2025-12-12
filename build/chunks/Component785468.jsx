@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk138324 = require("./138324.js");
+  Chunk615017 = require("./615017.js");
 let S = e => {
     let {
       guildId: t,
@@ -205,7 +205,7 @@ function w(e) {
         f(E.WX.STAGE_INSTANCE), (0, c.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("38697"), n.e("33285"), n.e("29497"), n.e("60565")]).then(n.bind(n, 241865));
+          } = await Promise.all([n.e("38697"), n.e("33285"), n.e("29497"), n.e("43282")]).then(n.bind(n, 241865));
           return n => {
             var r, i;
             return (0, l.jsx)(e, (r = function(e) {

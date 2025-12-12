@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 535834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk32482 = require("./32482.js");
+  Chunk791486 = require("./791486.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,11 +58,11 @@ function w(e) {
     channel: s,
     status: u,
     activities: p
-  } = e, h = (0, a.e7)([O.Z], () => null != O.Z.getTypingUsers(s.id)[t.id]), g = (0, a.e7)([x.default], () => x.default.getCurrentUser()), j = (0, a.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), C = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), S = (0, f.Z)(t.id), P = i.useRef(null), N = e => {
+  } = e, h = (0, a.e7)([x.Z], () => null != x.Z.getTypingUsers(s.id)[t.id]), g = (0, a.e7)([j.default], () => j.default.getCurrentUser()), v = (0, a.e7)([y.Z], () => y.Z.isMobileOnline(t.id)), I = (0, a.e7)([O.Z], () => O.Z.getNickname(t.id)), S = (0, f.Z)(t.id), P = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("49062")]).then(n.bind(n, 354589));
+      } = await Promise.all([n.e("79695"), n.e("66165"), n.e("82456")]).then(n.bind(n, 354589));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = T({}, n), l = l = {
@@ -81,13 +81,13 @@ function w(e) {
       }
     })
   }, w = () => {
-    let e = "@".concat(I.ZP.getUserTag(t, {
+    let e = "@".concat(_.ZP.getUserTag(t, {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    v.S.dispatch(E.CkL.TEXTAREA_FOCUS, {
+    C.S.dispatch(E.CkL.TEXTAREA_FOCUS, {
       channelId: s.id
-    }), v.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(s.id)
@@ -136,8 +136,8 @@ function w(e) {
         channel: s,
         onContextMenu: N,
         selected: D,
-        isMobile: j,
-        nick: C,
+        isMobile: v,
+        nick: I,
         nameplate: A,
         onClick: e => {
           e.shiftKey ? null == w || w() : L(e => !e)
@@ -163,18 +163,18 @@ function A(e, t) {
 function D(e) {
   let {
     channel: t
-  } = e, n = x.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
+  } = e, n = j.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
     analyticsLocations: o
   } = (0, p.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, a.e7)([y.Z, x.default, _.Z], () => {
-    let e = (0, C.T)(t.recipients, x.default),
+  } = (0, a.e7)([O.Z, j.default, y.Z], () => {
+    let e = (0, I.T)(t.recipients, j.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      y.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
-        status: null != (i = _.Z.getStatus(t.id)) ? i : E.Skl.OFFLINE,
-        activities: null != (l = _.Z.getActivities(t.id)) ? l : N
+      O.Z.isFriend(t.id) || t.id === (null == (r = j.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+        status: null != (i = y.Z.getStatus(t.id)) ? i : E.Skl.OFFLINE,
+        activities: null != (l = y.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {
         status: E.Skl.OFFLINE,
         activities: N
@@ -194,7 +194,7 @@ function D(e) {
     }
   }, [t], A);
   i.useEffect(() => {
-    j.default.track(E.rMx.MEMBER_LIST_VIEWED, {
+    v.default.track(E.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

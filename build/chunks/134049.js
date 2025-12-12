@@ -20,13 +20,13 @@ let u = (0, Chunk343203.M)((e, t) => ({
   notificationDismissedInGuilds: c(),
   dismissNotification: n => {
     let r = t().notificationDismissedInGuilds;
-    r.add(n), s.K.set(l.hL, r), (0, a.j)(() => e({
+    r.add(n), s.K.set(l.hL, r), (0, o.j)(() => e({
       notificationDismissedInGuilds: r
     }))
   },
   resetNotification: n => {
     let r = t().notificationDismissedInGuilds;
-    r.has(n) && (r.delete(n), s.K.set(l.hL, r), (0, a.j)(() => e({
+    r.has(n) && (r.delete(n), s.K.set(l.hL, r), (0, o.j)(() => e({
       notificationDismissedInGuilds: r
     })))
   }

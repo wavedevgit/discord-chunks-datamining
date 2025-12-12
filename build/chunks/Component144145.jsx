@@ -66,7 +66,7 @@ function P(e) {
   } = e, n = t.length > 1, P = function(e) {
     let {
       currentActivities: t
-    } = e, n = (0, l.e7)([_.Z], () => _.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
+    } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
       let {
         activity: t
       } = e;
@@ -85,19 +85,19 @@ function P(e) {
     let {
       currentActivities: t
     } = e, n = i.useContext(v.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, E.Z, g.Z, O.Z, b.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    return (0, l.Wu)([f.ZP, _.Z, g.Z, O.Z, E.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
-      } = e, i = E.Z.getActiveLibraryApplication(r.id);
+      } = e, i = _.Z.getActiveLibraryApplication(r.id);
       return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
         canPlay: (0, y.t)({
-          LibraryApplicationStore: E.Z,
+          LibraryApplicationStore: _.Z,
           LaunchableGameStore: g.Z,
           DispatchApplicationStore: O.Z,
-          ConnectedAppsStore: b.Z,
+          ConnectedAppsStore: E.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),

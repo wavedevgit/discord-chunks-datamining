@@ -1,4 +1,4 @@
-/** Chunk was on 91848 **/
+/** Chunk was on 24028 **/
 /** chunk id: 599219, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => S
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk834891 = require("./834891.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk751629 = require("./751629.js");
+  Chunk22742 = require("./22742.js");
 
 function F(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,7 +65,7 @@ function D(e, t) {
 }
 
 function S(e) {
-  let t = (0, _.Dt)(),
+  let t = (0, f.Dt)(),
     {
       onSlideChange: n
     } = e,
@@ -88,7 +88,7 @@ function S(e) {
       onClose: S
     } = i,
     [L, w] = o.useState(false),
-    M = (0, l.e7)([b.default], () => b.default.getCurrentUser()),
+    M = (0, l.e7)([h.default], () => h.default.getCurrentUser()),
     k = null != M && null == M.nsfwAllowed,
     [P, U] = o.useState(k ? j.F.AGE_GATE : j.F.CHOOSE_TEMPLATE),
     [R, B] = o.useState(null);
@@ -103,7 +103,7 @@ function S(e) {
   }, [z, U]), {
     content: q,
     footer: X
-  } = (0, f.v)({
+  } = (0, b.v)({
     hasFooter: false,
     onBack: () => {
       z(null), U(j.F.CHOOSE_TEMPLATE)
@@ -217,7 +217,7 @@ function S(e) {
               impressionProperties: er,
               children: (0, a.jsx)("div", {
                 className: s()(G.container, G.shortFooter),
-                children: (0, a.jsx)(h.Z, {
+                children: (0, a.jsx)(_.Z, {
                   className: G.templates,
                   onChooseTemplate: K,
                   isNewUser: true

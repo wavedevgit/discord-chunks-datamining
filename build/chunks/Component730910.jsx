@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 730910, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk976269 = require("./976269.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk982086 = require("./982086.js");
+  Chunk602886 = require("./602886.js");
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,20 +77,20 @@ function A() {
 function L(e) {
   let {
     guild: t
-  } = e, f = t.id, A = (0, s.e7)([O.Z], () => O.Z.getCurrentPage()), L = (0, y.Z)(f), {
+  } = e, b = t.id, A = (0, a.e7)([C.Z], () => C.Z.getCurrentPage()), L = (0, N.Z)(b), {
     hasChanges: k,
     hasConfiguredAnythingForCurrentStep: G,
     hasErrors: M
-  } = (0, s.cj)([O.Z], () => ({
-    hasChanges: O.Z.hasChanges(),
-    hasConfiguredAnythingForCurrentStep: O.Z.hasConfiguredAnythingForCurrentStep(),
-    hasErrors: O.Z.hasErrors()
-  })), U = (0, s.e7)([O.Z], () => {
-    let e = (0, C.lg)(A);
-    return null != e && !O.Z.isEducationUpsellDismissed(e)
-  }), B = (0, d.ZP)(), F = i.useRef(null), [{
+  } = (0, a.cj)([C.Z], () => ({
+    hasChanges: C.Z.hasChanges(),
+    hasConfiguredAnythingForCurrentStep: C.Z.hasConfiguredAnythingForCurrentStep(),
+    hasErrors: C.Z.hasErrors()
+  })), U = (0, a.e7)([C.Z], () => {
+    let e = (0, y.lg)(A);
+    return null != e && !C.Z.isEducationUpsellDismissed(e)
+  }), B = (0, u.ZP)(), F = i.useRef(null), [{
     spring: H
-  }, W] = (0, u.q_F)(() => ({
+  }, W] = (0, d.q_F)(() => ({
     spring: 0
   }), "animate-always");
   i.useEffect(() => {
@@ -104,80 +104,80 @@ function L(e) {
         delay: 1e3
       })
     }
-    return p.S.subscribe(P.CkL.EMPHASIZE_NOTICE, e), () => {
-      p.S.unsubscribe(P.CkL.EMPHASIZE_NOTICE, e)
+    return m.S.subscribe(P.CkL.EMPHASIZE_NOTICE, e), () => {
+      m.S.unsubscribe(P.CkL.EMPHASIZE_NOTICE, e)
     }
   }, [W]);
-  let z = (0, u.dQu)(a.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
-    V = (0, u.dQu)(a.Z.unsafe_rawColors.PRIMARY_160).hex(),
+  let z = (0, d.dQu)(s.Z.colors.BACKGROUND_SURFACE_HIGH).hex(),
+    V = (0, d.dQu)(s.Z.unsafe_rawColors.PRIMARY_160).hex(),
     K = (0, c.wj)(B) ? z : V,
     Y = H.to({
       range: [0, 1],
-      output: [K, (0, u.dQu)(a.Z.colors.STATUS_DANGER).hex()]
+      output: [K, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
   if (L) {
-    if (A === C.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
-    else if (A === C.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(S.Zm, {});
-    else if (A === C.PG.HOME_SETTINGS) return (0, r.jsx)(T.Z, {});
-    else if (A === C.PG.CONNECTIONS) return (0, r.jsx)(I.u, {});
-    else if ((A === C.PG.LANDING || A === C.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(T.Z, {})
+    if (A === y.PG.DEFAULT_CHANNELS) return (0, r.jsx)(I.j, {});
+    else if (A === y.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(_.Zm, {});
+    else if (A === y.PG.HOME_SETTINGS) return (0, r.jsx)(T.Z, {});
+    else if (A === y.PG.CONNECTIONS) return (0, r.jsx)(S.u, {});
+    else if ((A === y.PG.LANDING || A === y.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(T.Z, {})
   }
-  let q = A === C.xh[C.xh.length - 1],
+  let q = A === y.xh[y.xh.length - 1],
     X = async () => {
-      let e = v.Z.advancedMode;
+      let e = O.Z.advancedMode;
       if (k) try {
-        if (A === C.PG.DEFAULT_CHANNELS) await (0, h.DO)(t).then(() => e ? (0, _.rS)(t, {
+        if (A === y.PG.DEFAULT_CHANNELS) await (0, p.DO)(t).then(() => e ? (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         }) : Promise.resolve());
-        else if (A === C.PG.CUSTOMIZATION_QUESTIONS) await (0, _.rS)(t, {
+        else if (A === y.PG.CUSTOMIZATION_QUESTIONS) await (0, v.rS)(t, {
           ignoreDefaultPrompt: true
         });
-        else if (A === C.PG.HOME_SETTINGS) {
+        else if (A === y.PG.HOME_SETTINGS) {
           let e = j.Z.getSettings();
-          await (0, b.oo)(t.id, e)
+          await (0, x.oo)(t.id, e)
         }
       } catch (e) {
         returnfalse
       }
       returntrue
     }, J = async () => {
-      m.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(f)), {
-        step: C.PG[A],
+      f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
+        step: y.PG[A],
         back: false,
         skip: !k
-      })), (0, x.Nb)((0, C.lg)(A)), await X() && (0, x.IG)(f, A)
+      })), (0, h.Nb)((0, y.lg)(A)), await X() && (0, h.IG)(b, A)
     }, Q = async () => {
-      m.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(f)), {
-        step: C.PG[A],
+      f.default.track(P.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, D(R({}, (0, g.hH)(b)), {
+        step: y.PG[A],
         back: true,
         skip: false
-      })), await X() && (0, x.Wy)(f, A)
+      })), await X() && (0, h.Wy)(b, A)
     }, $ = null;
-  U && (A === C.PG.SAFETY_CHECK ? $ = (0, r.jsx)(N.j7, {}) : A === C.PG.DEFAULT_CHANNELS ? $ = (0, r.jsx)(N.Io, {}) : A === C.PG.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(N.cZ, {}) : A === C.PG.HOME_SETTINGS && ($ = (0, r.jsx)(N.g6, {})));
+  U && (A === y.PG.SAFETY_CHECK ? $ = (0, r.jsx)(E.j7, {}) : A === y.PG.DEFAULT_CHANNELS ? $ = (0, r.jsx)(E.Io, {}) : A === y.PG.CUSTOMIZATION_QUESTIONS ? $ = (0, r.jsx)(E.cZ, {}) : A === y.PG.HOME_SETTINGS && ($ = (0, r.jsx)(E.g6, {})));
   let ee = (0, r.jsx)("div", {
       className: U ? Z.hidden : true,
-      children: (0, r.jsx)(u.Button, {
+      children: (0, r.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
         text: w.intl.string(w.t["13/7kX"]),
-        icon: u.whL,
+        icon: d.whL,
         iconPosition: "start",
         onClick: Q,
         disabled: U || M
       })
     }),
-    et = (0, r.jsx)(u.Button, {
+    et = (0, r.jsx)(d.Button, {
       size: "sm",
       variant: G ? "primary" : "secondary",
       text: G ? w.intl.string(w.t.PDTjLN) : w.intl.string(w.t["5Wxrcd"]),
-      icon: u.ZSh,
+      icon: d.ZSh,
       iconPosition: "end",
       onClick: J,
       disabled: U || M
     });
   return (0, r.jsx)(o.W, {
     component: "div",
-    children: (0, r.jsx)(u.oXn, {
+    children: (0, r.jsx)(d.oXn, {
       className: Z.noticeRegion,
       children: (0, r.jsx)(l.animated.div, {
         className: Z.container,
@@ -199,13 +199,13 @@ function L(e) {
                 className: Z.educationUpsellArrow
               })]
             })]
-          }) : null, (0, r.jsx)(u.JcV, {
+          }) : null, (0, r.jsx)(d.JcV, {
             containerRef: F,
             children: (0, r.jsxs)("div", {
               className: Z.actions,
               children: [ee, (0, r.jsxs)("div", {
                 className: Z.next,
-                children: [M ? (0, r.jsx)(u.Text, {
+                children: [M ? (0, r.jsx)(d.Text, {
                   variant: "text-sm/normal",
                   color: "status-warning",
                   children: w.intl.string(w.t.DhYsPL)

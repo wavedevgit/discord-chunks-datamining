@@ -3,11 +3,11 @@
 "use strict";
 var Chunk733359 = require("./733359.js"),
   i = require("./65183.js").OrderedSet,
-  o = Chunk733359.substr,
-  a = i();
+  a = Chunk733359.substr,
+  o = i();
 module.exports = function(e, t) {
-  var n = Array(e.length).fill(a);
+  var n = Array(e.length).fill(o);
   return t && t.forEach(function(t) {
-    for (var r = o(e, 0, t.offset).length, i = r + o(e, t.offset, t.length).length; r < i;) n[r] = n[r].add(t.style), r++
+    for (var r = a(e, 0, t.offset).length, i = r + a(e, t.offset, t.length).length; r < i;) n[r] = n[r].add(t.style), r++
   }), n
 }

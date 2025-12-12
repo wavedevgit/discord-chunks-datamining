@@ -29,7 +29,7 @@ function p(e) {
     targetElementRef: y
   } = e, [O, v] = i.useState(false), {
     analyticsLocations: S
-  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.Z)({
+  } = (0, s.ZP)(o.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.Z)({
     display: h,
     user: p,
     activity: _,
@@ -45,7 +45,7 @@ function p(e) {
     isMenuOpen: O,
     appContext: b
   });
-  return 0 === N.length || p.bot ? null : (0, r.jsx)(o.yRy, {
+  return 0 === N.length || p.bot ? null : (0, r.jsx)(a.yRy, {
     targetElementRef: null != y ? y : A,
     align: "top",
     position: "right",
@@ -61,14 +61,14 @@ function p(e) {
       } = e;
       return (0, r.jsx)("div", {
         onClick: e => e.stopPropagation(),
-        children: (0, r.jsx)(o.v2r, {
+        children: (0, r.jsx)(a.v2r, {
           navId: l.N,
           onClose: () => {
             t(), v(false)
           },
           "aria-label": f.intl.string(f.t.PlAQz1),
           onSelect: g,
-          children: (0, r.jsx)(o.kSQ, {
+          children: (0, r.jsx)(a.kSQ, {
             children: N
           })
         })

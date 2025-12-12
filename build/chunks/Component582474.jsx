@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk670596 = require("./670596.js"),
   Chunk743236 = require("./743236.js"),
   Chunk481060 = require("./481060.js"),
   Chunk939350 = require("./939350.js"),
-  Chunk334405 = require("./334405.js");
+  Chunk564546 = require("./564546.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ function h(e) {
   let {
     color: t = "default",
     label: n,
-    checked: o,
+    checked: a,
     disabled: f = false,
     isFocused: _,
     menuItemProps: h,
@@ -76,10 +76,10 @@ function h(e) {
   }, [g, b]);
   return (0, r.jsxs)("div", m(p({
     ref: y,
-    className: a()(d.item, d.switchItem, d.hideInteraction, u._e[t], E, {
+    className: o()(d.item, d.switchItem, d.hideInteraction, u._e[t], E, {
       [d.disabled]: f
     }),
-    "aria-checked": o,
+    "aria-checked": a,
     "aria-disabled": f
   }, h), {
     children: [null != n ? (0, r.jsx)("div", {
@@ -93,7 +93,7 @@ function h(e) {
       className: d.switchContainer,
       children: (0, r.jsx)(c.rsf, {
         id: O,
-        checked: o,
+        checked: a,
         onChange: v,
         disabled: f
       })

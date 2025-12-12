@@ -2,11 +2,11 @@
 /** chunk id: 786074, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk490983 = require("./490983.js"),
   Chunk388032 = require("./388032.jsx");
-let o = {
+let a = {
   MENTION_EVERYONE: () => ({
     test: "everyone",
     text: "@everyone",

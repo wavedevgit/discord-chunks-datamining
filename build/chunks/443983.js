@@ -35,7 +35,7 @@ function d(e) {
         }), m.current = setTimeout(() => {
           e.target.dispatchEvent(new PointerEvent("pointercancel", {
             bubbles: true
-          })), (0, o.r3)(e.target).activeElement !== e.target && (0, a.A)(e.target), f && f({
+          })), (0, a.r3)(e.target).activeElement !== e.target && (0, o.A)(e.target), f && f({
             ...e,
             type: "longpress"
           }), m.current = true

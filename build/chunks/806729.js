@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk621853 = require("./621853.js");
 
 function u(e) {
-  let [t, n, u, d, f] = (0, o.Wu)([c.Z], () => [c.Z.getMutualFriendsCount(e.id), c.Z.getMutualFriends(e.id), c.Z.getMutualGuilds(e.id), c.Z.isFetchingProfile(e.id), c.Z.isFetchingFriends(e.id)]), p = (0, o.e7)([s.Z], () => s.Z.getUserAffinitiesMap()), _ = (0, o.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), m = (0, r.useMemo)(() => null == n || n.length < 2 ? n : (0, i.sortBy)(n, e => {
+  let [t, n, u, d, f] = (0, a.Wu)([c.Z], () => [c.Z.getMutualFriendsCount(e.id), c.Z.getMutualFriends(e.id), c.Z.getMutualGuilds(e.id), c.Z.isFetchingProfile(e.id), c.Z.isFetchingFriends(e.id)]), p = (0, a.e7)([s.Z], () => s.Z.getUserAffinitiesMap()), _ = (0, a.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), m = (0, r.useMemo)(() => null == n || n.length < 2 ? n : (0, i.sortBy)(n, e => {
     var t, n;
     let {
       user: r
@@ -29,7 +29,7 @@ function u(e) {
       } = t;
       return null != (n = e[r.id]) ? n : _.length
     })
-  }, [u, _]), g = (0, a.Z)(t), E = (0, a.Z)(m), b = (0, a.Z)(h);
+  }, [u, _]), g = (0, o.Z)(t), E = (0, o.Z)(m), b = (0, o.Z)(h);
   return {
     mutualFriendsCount: null != t ? t : g,
     mutualFriends: null != m ? m : E,

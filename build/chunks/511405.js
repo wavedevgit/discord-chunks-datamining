@@ -11,15 +11,15 @@ var Chunk392711 = require("./392711.js"),
   Chunk915486 = require("./915486.js");
 
 function s(e) {
-  return i().cloneDeepWith(e, e => (0, o.Bw)(e) ? {
+  return i().cloneDeepWith(e, e => (0, a.Bw)(e) ? {
     __tag__: "bigflag",
     data: e.toJSON()
-  } : (0, a.lq)(e) ? {
+  } : (0, o.lq)(e) ? {
     __tag__: "uint8array",
     data: Array.from(e)
   } : true)
 }
 
 function l(e) {
-  return i().cloneDeepWith(e, e => null != e && "object" == typeof e && "__tag__" in e && "bigflag" === e.__tag__ ? o.vB(e.data) : (0, a.Bx)(e) ? new Uint8Array(e.data) : true)
+  return i().cloneDeepWith(e, e => null != e && "object" == typeof e && "__tag__" in e && "bigflag" === e.__tag__ ? a.vB(e.data) : (0, o.Bx)(e) ? new Uint8Array(e.data) : true)
 }

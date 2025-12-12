@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,8 +33,8 @@ class c extends(r = Chunk473749.Component) {
       tabIndex: t,
       className: n,
       name: r,
-      "aria-label": o,
-      "aria-hidden": a,
+      "aria-label": a,
+      "aria-hidden": o,
       id: c
     } = this.props, u = "";
     return this.props.filters && (u = this.props.filters.map(e => e.extensions.map(e => ".".concat(e)).join(",")).join(",")), (0, Chunk54381.jsx)("input", {
@@ -51,7 +51,7 @@ class c extends(r = Chunk473749.Component) {
       accept: u,
       name: r,
       "aria-label": Chunk473749,
-      "aria-hidden": a || true,
+      "aria-hidden": o || true,
       ref: e => {
         this._input = e
       },
@@ -59,18 +59,18 @@ class c extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), a(this, "_input", null), a(this, "activateUploadDialogue", () => {
+    super(...e), o(this, "_input", null), o(this, "activateUploadDialogue", () => {
       this._input && this._input.click()
-    }), a(this, "handleNativeClick", () => {
+    }), o(this, "handleNativeClick", () => {
       this.props.handleNativeClick && this.props.handleNativeClick(this.props)
-    }), a(this, "handleNativeKeyDown", e => {
+    }), o(this, "handleNativeKeyDown", e => {
       (" " === e.key || "Enter" === e.key) && this.handleNativeClick()
-    }), a(this, "handleBrowserInputMouseDown", e => {
+    }), o(this, "handleBrowserInputMouseDown", e => {
       e.currentTarget.value = null
     })
   }
 }
-a(c, "defaultProps", {
+o(c, "defaultProps", {
   multiple: false,
   disabled: false,
   tabIndex: 0

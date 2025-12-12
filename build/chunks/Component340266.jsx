@@ -13,7 +13,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk5192 = require("./5192.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk671955 = require("./671955.js"),
-  Chunk16535 = require("./16535.js");
+  Chunk964542 = require("./964542.js");
 let f = 4,
   p = 1,
   _ = 3,
@@ -149,11 +149,11 @@ function g(e) {
           children: (0, r.jsx)(s.Text, {
             variant: "text-xxs/semibold",
             lineClamp: 1,
-            children: (0, r.jsx)(o.Z, {
+            children: (0, r.jsx)(a.Z, {
               children: y > 99 ? ">99" : "+".concat(y)
             })
           })
-        }) : (0, r.jsx)(a.u, {
+        }) : (0, r.jsx)(o.u, {
           text: l.ZP.getName(n.guild_id, n.id, c),
           children: (0, r.jsx)("img", {
             className: d.avatar,

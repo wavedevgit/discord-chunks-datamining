@@ -24,10 +24,10 @@ function _(e) {
     guildId: n,
     color: s,
     onAction: d,
-    location: _ = a.Z.CONTEXT_MENU,
+    location: _ = o.Z.CONTEXT_MENU,
     appContext: m
   } = e, h = (0, c.oV)(_), g = (0, i.e7)([u.default], () => u.default.getId() === t.id);
-  return !h || g || t.isNonUserBot() ? null : (0, r.jsx)(o.sNh, {
+  return !h || g || t.isNonUserBot() ? null : (0, r.jsx)(a.sNh, {
     id: "report-user",
     color: s,
     label: p.intl.string(p.t.A1MM3D),
@@ -39,13 +39,13 @@ function m(e) {
   let {
     user: t,
     guildId: n,
-    color: a,
+    color: o,
     onAction: c,
     appContext: u
   } = e, p = (0, i.e7)([s.ZP], () => s.ZP.get("iar_testing")), _ = (0, i.e7)([d.default], () => d.default.getCurrentUser());
-  return null != _ && (t.id === _.id || t.isNonUserBot() || !_.isStaff() || !p) ? null : (0, r.jsx)(o.sNh, {
+  return null != _ && (t.id === _.id || t.isNonUserBot() || !_.isStaff() || !p) ? null : (0, r.jsx)(a.sNh, {
     id: "staff-test-report-user",
-    color: a,
+    color: o,
     label: "[STAFF] Test Profile Report",
     action: () => (0, l.I6)(t, n === f.ME ? true : n, c, u)
   })

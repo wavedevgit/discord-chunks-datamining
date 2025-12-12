@@ -31,7 +31,7 @@ async function h(e, t) {
     context: s
   } = e, u = null;
   if (null != s) try {
-    u = (0, o.G)(s)
+    u = (0, a.G)(s)
   } catch (e) {
     try {
       u = {
@@ -47,7 +47,7 @@ async function h(e, t) {
   let d = {
     type: l.BmY.LOG_MESSAGES,
     token: t,
-    pid: (0, a.getPID)(),
+    pid: (0, o.getPID)(),
     payload: {
       level: n,
       message: r,
@@ -203,14 +203,14 @@ function b(e) {
       n = false;
       continue
     }
-    let o = e[i];
-    if ("string" == typeof o && o.includes("%c")) {
+    let a = e[i];
+    if ("string" == typeof a && a.includes("%c")) {
       var r;
-      let e = o.replace(/%c/g, "");
-      "" !== e.trim() && t.push(e), i += (null != (r = o.match(/%c/g)) ? r : []).length;
+      let e = a.replace(/%c/g, "");
+      "" !== e.trim() && t.push(e), i += (null != (r = a.match(/%c/g)) ? r : []).length;
       continue
     }
-    "string" == typeof o && /^\s*(font-weight|color|background|padding|margin|border)/.test(o) || t.push(o)
+    "string" == typeof a && /^\s*(font-weight|color|background|padding|margin|border)/.test(a) || t.push(a)
   }
   return t
 }

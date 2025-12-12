@@ -1,4 +1,4 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 915718, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -130,7 +130,7 @@ class A extends Chunk473749.PureComponent {
         notFriend: r,
         appContext: i
       } = this.props, l = r ? n.getRecipientId() : null, a = () => c.Z.call(n.id, t, !r && !n.isManaged() && !(null == e ? true : e.shiftKey), l);
-      t ? (0, y.Z)(a, i) : a()
+      t ? (0, O.Z)(a, i) : a()
     }), w(this, "handleJoinCall", e => {
       d.default.selectVoiceChannel(this.props.channel.id, e)
     }), w(this, "handleVoiceClick", e => {
@@ -150,9 +150,9 @@ class A extends Chunk473749.PureComponent {
       let {
         appContext: e
       } = this.props, t = () => this.handleJoinCall(true);
-      (0, y.Z)(t, e)
+      (0, O.Z)(t, e)
     }), w(this, "handleBrowserNotSupported", () => {
-      (0, _.Z)()
+      (0, y.Z)()
     })
   }
 }
@@ -161,28 +161,28 @@ function D(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, m.Z)(), s = (0, l.e7)([h.Z], () => h.Z.getMode(n.id)), o = (0, l.e7)([I.Z], () => I.Z.isInChannel(n.id)), c = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
+  } = e, i = (0, m.Z)(), s = (0, l.e7)([h.Z], () => h.Z.getMode(n.id)), o = (0, l.e7)([_.Z], () => _.Z.isInChannel(n.id)), c = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), {
     callActive: d,
     callUnavailable: f
-  } = (0, l.cj)([O.Z], () => ({
-    callActive: O.Z.isCallActive(n.id),
-    callUnavailable: O.Z.isCallUnavailable(n.id)
+  } = (0, l.cj)([x.Z], () => ({
+    callActive: x.Z.isCallActive(n.id),
+    callUnavailable: x.Z.isCallUnavailable(n.id)
   })), g = n.getRecipientId(), {
-    notFriend: _,
-    isBlocked: y
-  } = (0, l.cj)([v.Z], () => ({
-    notFriend: n.type === Z.d4z.DM && null != g && !v.Z.isFriend(g),
-    isBlocked: n.type === Z.d4z.DM && null != g && v.Z.isBlocked(g)
-  })), j = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([x.Z], () => x.Z.hasLayers());
-  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == j ? true : j.bot)) ? null : (0, r.jsx)(A, {
+    notFriend: y,
+    isBlocked: O
+  } = (0, l.cj)([C.Z], () => ({
+    notFriend: n.type === Z.d4z.DM && null != g && !C.Z.isFriend(g),
+    isBlocked: n.type === Z.d4z.DM && null != g && C.Z.isBlocked(g)
+  })), v = (0, l.e7)([I.default], () => I.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, p.Z)(n.id), T = (0, l.e7)([j.Z], () => j.Z.hasLayers());
+  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == v ? true : v.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,
     inCall: o,
     callActive: d,
-    isProvisional: null != (t = null == j ? true : j.isProvisional) && t,
+    isProvisional: null != (t = null == v ? true : v.isProvisional) && t,
     callUnavailable: f,
-    notFriend: _,
-    isBlocked: y,
+    notFriend: y,
+    isBlocked: O,
     appContext: S,
     dismissibleContentTypes: E,
     useReducedMotion: c

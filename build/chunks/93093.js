@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a extends Chunk442837.ZP.Store {
+class o extends Chunk442837.ZP.Store {
   allGuildIds() {
     return this.guildIds
   }
@@ -44,7 +44,7 @@ class a extends Chunk442837.ZP.Store {
       CONNECTION_OPEN: e => this.handleConnectionOpen(e),
       GUILD_CREATE: e => this.handleGuildCreate(e),
       GUILD_DELETE: e => this.handleGuildDelete(e)
-    }, Chunk570140.c.Early), o(this, "guildIds", new Set)
+    }, Chunk570140.c.Early), a(this, "guildIds", new Set)
   }
 }
-let s = new a
+let s = new o

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 926958, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js"), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -18,36 +18,36 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = [],
-  d = false,
+let d = [],
+  u = false,
   g = [];
 
-function m() {
+function f() {
   let e = Chunk999382.Z.getGuildId();
   if (null == module) {
-    u = [], g = [], d = false;
+    d = [], g = [], u = false;
     return
   }
-  u = [...Chunk45966.Z.getConnections(module)], g = [], d = false
+  d = [...Chunk45966.Z.getConnections(module)], g = [], u = false
 }
-class p extends(r = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk45966.Z, Chunk999382.Z)
   }
   getEditedConnections() {
-    return u
+    return d
   }
   getErrors() {
     return g
   }
   isSubmitting() {
-    return d
+    return u
   }
   hasChanges() {
     let e = Chunk999382.Z.getGuildId();
     if (null == module) returnfalse;
     let t = Chunk45966.Z.getConnections(module);
-    return u.length !== exports.length || u.some((e, n) => {
+    return d.length !== exports.length || d.some((e, n) => {
       let r = t[n];
       return null == r || e.connection_type !== r.connection_type || e.application_id !== r.application_id || e.provider_id !== r.provider_id || e.description !== r.description
     })
@@ -59,33 +59,33 @@ class p extends(r = Chunk442837.ZP.Store) {
     return g.length > 0
   }
 }
-c(p, "displayName", "GuildSettingsOnboardingConnectionsStore");
-let f = new p(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: m,
-  GUILD_SETTINGS_SET_SECTION: m,
-  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: m,
+c(m, "displayName", "GuildSettingsOnboardingConnectionsStore");
+let b = new m(Chunk570140.Z, {
+  GUILD_SETTINGS_INIT: f,
+  GUILD_SETTINGS_SET_SECTION: f,
+  GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: f,
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD: function(e) {
     let {
       connection: t
     } = e;
-    if (u.length >= o.yx) {
+    if (d.length >= o.yx) {
       g = ["Maximum ".concat(o.yx, " connections allowed")];
       return
     }
-    u = [...u, t], g = (0, o.rZ)(u)
+    d = [...d, t], g = (0, o.rZ)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REMOVE: function(e) {
     let {
       index: t
     } = e;
-    u = u.filter((e, n) => n !== t), g = (0, o.rZ)(u)
+    d = d.filter((e, n) => n !== t), g = (0, o.rZ)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE: function(e) {
     let {
       index: t,
       updates: n
     } = e;
-    u = u.map((e, r) => r === t ? function(e) {
+    d = d.map((e, r) => r === t ? function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -96,35 +96,35 @@ let f = new p(Chunk570140.Z, {
         })
       }
       return e
-    }({}, e, n) : e), g = (0, o.rZ)(u)
+    }({}, e, n) : e), g = (0, o.rZ)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER: function(e) {
     let {
       connections: t
     } = e;
-    u = [...t], g = (0, o.rZ)(u)
+    d = [...t], g = (0, o.rZ)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET: function() {
     let e = Chunk999382.Z.getGuildId();
     if (null == module) {
-      u = [], g = [];
+      d = [], g = [];
       return
     }
-    u = [...Chunk45966.Z.getConnections(module)], g = []
+    d = [...Chunk45966.Z.getConnections(module)], g = []
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT: function() {
-    d = true, g = (0, Chunk290511.rZ)(u)
+    u = true, g = (0, Chunk290511.rZ)(d)
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: function(e) {
     let {
       connections: t
     } = e;
-    d = false, g = [], u = [...t]
+    u = false, g = [], d = [...t]
   },
   GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED: function(e) {
     let {
       errors: t
     } = e;
-    d = false, g = t
+    u = false, g = t
   }
 })

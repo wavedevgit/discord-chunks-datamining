@@ -11,8 +11,8 @@ function i(e) {
     image: t,
     file: n,
     uploadType: i,
-    guildId: o,
-    analyticsSource: a,
+    guildId: a,
+    analyticsSource: o,
     isTryItOut: s = false
   } = e;
   r.Z.dispatch({
@@ -20,8 +20,8 @@ function i(e) {
     image: t,
     file: n,
     uploadType: i,
-    guildId: o,
-    analyticsSource: a,
+    guildId: a,
+    analyticsSource: o,
     isTryItOut: s
   })
 }

@@ -24,7 +24,7 @@ function i(e) {
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -35,8 +35,8 @@ function o(e, t) {
   return n
 }
 
-function a(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+function o(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -50,7 +50,7 @@ class s {
     true !== r[n = "soundshare_state_transition" === t.type ? "soundshare_state_transition_".concat(i[t.newState], "_count") : "".concat(t.type, "_count")] ? r[n] < 32767 && r[n]++ : r.soundshare_unknown_event_count++, "pid" in t && (0 === r.soundshare_first_pid && (r.soundshare_first_pid = t.pid), r.soundshare_last_pid = t.pid, this._pids.add(t.pid)), null != e && (null == r.soundshare_first_session && (r.soundshare_first_session = e), r.soundshare_last_session = e)
   }
   getStats() {
-    return a(i({}, this._report), {
+    return o(i({}, this._report), {
       soundshare_unique_pids: this._pids.size
     })
   }

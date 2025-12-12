@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => C
 }), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk704907 = require("./704907.js"),
@@ -85,7 +85,7 @@ function S() {
   var e;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.stickerFrecency) ? true : module.stickers;
   if (null == exports) returnfalse;
-  b.overwriteHistory(o().mapValues(exports, e => h(_({}, e), {
+  b.overwriteHistory(a().mapValues(exports, e => h(_({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), g.pendingUsages)
 }

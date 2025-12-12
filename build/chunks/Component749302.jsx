@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk699516 = require("./699516.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk450779 = require("./450779.js");
+  Chunk539372 = require("./539372.js");
 let p = [];
 
 function _(e, t) {
@@ -52,7 +52,7 @@ function h(e) {
   } = e, {
     id: E,
     bot: b
-  } = n, y = (0, o.e7)([u.default], () => {
+  } = n, y = (0, a.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === E
   }) || b, O = y ? p : f, [v, S] = i.useState(false), I = i.useCallback(() => S(true), []), T = i.useMemo(() => O.map(e => {
@@ -60,13 +60,13 @@ function h(e) {
       applicationId: t
     } = e;
     return t
-  }), [O]), C = (0, o.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), A = _(T, v || 1 === O.length);
+  }), [O]), C = (0, a.e7)([c.Z], () => c.Z.getRelationshipType(E), [E]), A = _(T, v || 1 === O.length);
   if (y || 0 === O.length || C === d.OGo.FRIEND) return null;
   if (1 === O.length) {
     let {
       applicationId: e
     } = O[0], n = A.get(e);
-    return null == n ? null : (0, r.jsx)(a.sNh, {
+    return null == n ? null : (0, r.jsx)(o.sNh, {
       color: g,
       id: t,
       label: s,
@@ -82,7 +82,7 @@ function h(e) {
     let {
       applicationId: t
     } = e, n = A.get(t);
-    null != n && N.push((0, r.jsx)(a.sNh, {
+    null != n && N.push((0, r.jsx)(o.sNh, {
       id: t,
       label: n.name,
       icon: (0, r.jsx)(l.Z, {
@@ -91,7 +91,7 @@ function h(e) {
       }),
       action: () => h(n)
     }, t))
-  }), 0 === N.length) ? null : (0, r.jsx)(a.sNh, {
+  }), 0 === N.length) ? null : (0, r.jsx)(o.sNh, {
     color: g,
     id: t,
     label: s,

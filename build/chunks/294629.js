@@ -17,9 +17,9 @@ function u(e) {
   var t;
   let {
     channel: n,
-    authenticationStore: r = o.default,
+    authenticationStore: r = a.default,
     voiceStateStore: u = l.Z,
-    mediaEngineStore: d = a.Z,
+    mediaEngineStore: d = o.Z,
     permissionStore: f = s.Z,
     impersonateStore: p = i.Z
   } = e, _ = null != n ? u.getVoiceState(n.getGuildId(), r.getId()) : null, m = d.isSelfMute() || d.isSelfMutedTemporarily(), h = null == n ? true : n.getGuildId(), g = p.isViewingRoles(h) && !f.can(c.Plq.SPEAK, n);
@@ -31,11 +31,11 @@ function u(e) {
 }
 
 function d(e) {
-  return (0, r.cj)([o.default, l.Z, a.Z, s.Z, i.Z], () => u({
+  return (0, r.cj)([a.default, l.Z, o.Z, s.Z, i.Z], () => u({
     channel: e,
-    authenticationStore: o.default,
+    authenticationStore: a.default,
     voiceStateStore: l.Z,
-    mediaEngineStore: a.Z,
+    mediaEngineStore: o.Z,
     permissionStore: s.Z,
     impersonateStore: i.Z
   }))

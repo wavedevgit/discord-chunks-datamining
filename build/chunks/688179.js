@@ -14,8 +14,8 @@ function s(e) {
     stickerPack: t,
     stickerPickerCategories: n
   } = e;
-  i.S.dispatchToLastSubscribed(o.CkL.OPEN_EXPRESSION_PICKER, {
-    activeView: a.X1.STICKER
+  i.S.dispatchToLastSubscribed(a.CkL.OPEN_EXPRESSION_PICKER, {
+    activeView: o.X1.STICKER
   });
   let s = n.findIndex(e => e.id === t.id);
   false !== s && r.ZN.setActiveCategoryIndex(s)

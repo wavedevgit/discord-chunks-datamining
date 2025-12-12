@@ -11,14 +11,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk941651 = require("./941651.js"),
+  Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740908 = require("./740908.js");
+  Chunk779872 = require("./779872.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -45,7 +45,7 @@ let h = e => {
     let {
       user: t,
       isOwnUser: n,
-      label: o,
+      label: a,
       onRemove: s,
       isFaded: d
     } = e, {
@@ -56,13 +56,13 @@ let h = e => {
       size: l.EFr.SIZE_24
     }), g = (0, u.XM)(t), [E, b] = i.useState(false);
     return (0, r.jsxs)("div", {
-      className: a()(p.container, {
+      className: o()(p.container, {
         [p.hoverBackground]: null != s
       }),
       onMouseEnter: () => b(true),
       onMouseLeave: () => b(false),
       children: [(0, r.jsxs)("div", {
-        className: a()(p.userInfoContainer, {
+        className: o()(p.userInfoContainer, {
           [p.faded]: d
         }),
         children: [(0, r.jsx)(l.qEK, m({
@@ -75,11 +75,11 @@ let h = e => {
           variant: "text-sm/medium",
           color: "text-strong",
           children: [g, !!n && " (".concat(f.intl.string(f.t.LuZzxn), ")")]
-        }), null != o && (0, r.jsx)(l.Text, {
+        }), null != a && (0, r.jsx)(l.Text, {
           className: p.label,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: o
+          children: a
         })]
       }), null != s && E && (0, r.jsx)("div", {
         className: p.textButtonContainer,
@@ -141,9 +141,9 @@ let h = e => {
     let {
       onInvite: t,
       canInvite: n
-    } = e, [o, c] = i.useState(false);
+    } = e, [a, c] = i.useState(false);
     return (0, r.jsxs)("div", {
-      className: a()(p.container, {
+      className: o()(p.container, {
         [p.hoverBackground]: n
       }),
       onMouseEnter: () => c(true),
@@ -151,7 +151,7 @@ let h = e => {
       children: [(0, r.jsxs)("div", {
         className: p.userInfoContainer,
         children: [(0, r.jsx)("div", {
-          className: a()(p.userIconCircle, p.avatar),
+          className: o()(p.userIconCircle, p.avatar),
           children: (0, r.jsx)(l.tBG, {
             size: "xxs",
             color: s.Z.colors.ICON_SUBTLE
@@ -162,7 +162,7 @@ let h = e => {
           color: "text-strong",
           children: f.intl.string(d.default["/x7DVG"])
         })]
-      }), o && n && (0, r.jsx)("div", {
+      }), a && n && (0, r.jsx)("div", {
         className: p.textButtonContainer,
         children: (0, r.jsx)(l.Avr, {
           textVariant: "text-sm/medium",

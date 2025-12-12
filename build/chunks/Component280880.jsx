@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk357156 = require("./357156.js"),
   Chunk343747 = require("./343747.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk463063 = require("./463063.js"),
-  Chunk799641 = require("./799641.js");
+  Chunk349971 = require("./349971.js"),
+  Chunk441419 = require("./441419.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,8 +59,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,8 +68,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -82,7 +82,7 @@ function b(e) {
   let {
     canCreateExpressions: m
   } = (0, l.XJ)(t);
-  return (0, r.jsx)(a.u, {
+  return (0, r.jsx)(o.u, {
     text: u.intl.string(u.t["fHo+z1"]),
     shouldShow: !m,
     children: (0, r.jsx)("li", {
@@ -91,7 +91,7 @@ function b(e) {
         "aria-label": u.intl.formatToPlainString(u.t.c1qVYh, {
           guildName: t.name
         }),
-        className: o()(f.soundAddButton, {
+        className: a()(f.soundAddButton, {
           [f.focused]: n,
           [f.disabled]: !m
         }),

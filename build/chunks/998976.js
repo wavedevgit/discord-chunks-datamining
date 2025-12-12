@@ -14,8 +14,8 @@ require.d(exports, {
 var Chunk615673 = require("./615673.js"),
   Chunk473749 = require("./473749.js"),
   Chunk24156 = require("./24156.js"),
-  a = function() {},
-  s = "undefined" != typeof document ? Chunk473749.useLayoutEffect : a;
+  o = function() {},
+  s = "undefined" != typeof document ? Chunk473749.useLayoutEffect : o;
 
 function l(e, t) {
   let n, r, i;
@@ -62,7 +62,7 @@ function f(e) {
   let {
     placement: t = "bottom",
     strategy: n = "absolute",
-    middleware: a = [],
+    middleware: o = [],
     platform: f,
     elements: {
       reference: p,
@@ -78,8 +78,8 @@ function f(e) {
     placement: t,
     middlewareData: {},
     isPositioned: false
-  }), [y, O] = i.useState(a);
-  l(y, a) || O(a);
+  }), [y, O] = i.useState(o);
+  l(y, o) || O(o);
   let [v, S] = i.useState(null), [I, T] = i.useState(null), C = i.useCallback(e => {
     e !== R.current && (R.current = e, S(e))
   }, []), A = i.useCallback(e => {
@@ -96,7 +96,7 @@ function f(e) {
         ...e,
         isPositioned: false !== M.current
       };
-      U.current && !l(D.current, t) && (D.current = t, o.flushSync(() => {
+      U.current && !l(D.current, t) && (D.current = t, a.flushSync(() => {
         b(t)
       }))
     })

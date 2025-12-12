@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => U
 });
 var i, Chunk954955 = require("./954955.js"),
-  a = require.n(Chunk954955),
+  o = require.n(Chunk954955),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk287734 = require("./287734.js"),
@@ -96,7 +96,7 @@ if (!__OVERLAY__) {
   }), Chunk579806.Z.remotePowerMonitor.on("unlock-screen", () => {
     S = false, R(false)
   })) : setInterval(N, 30 * Chunk70956.Z.Millis.SECOND);
-  let e = a()(() => {
+  let e = o()(() => {
     Chunk491966.Z.getConfig({
       location: "handleGenericInput"
     }).generic_inputs && j({})

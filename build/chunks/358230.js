@@ -21,7 +21,7 @@ function p(e) {
     withVoiceChannels: t = false,
     withCurrentVoiceChannel: n = false
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, r = arguments.length > 2 ? arguments[2] : true;
-  return m(e === f._ || e === d.I_8 ? (0, a.t)() : o.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+  return m(e === f._ || e === d.I_8 ? (0, o.t)() : a.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
     currentVoiceChannelId: u.Z.getVoiceChannelId(),
     selectedChannelId: u.Z.getChannelId()
   }, {
@@ -32,8 +32,8 @@ function p(e) {
 
 function _(e, t, n) {
   let {
-    withVoiceChannels: o = false,
-    withCurrentVoiceChannel: a = false
+    withVoiceChannels: a = false,
+    withCurrentVoiceChannel: o = false
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {}, s = arguments.length > 4 ? arguments[4] : true, d = (0, i.e7)([c.default], () => c.default.getGuildChangeSentinel(e)), f = (0, i.e7)([l.Z], () => l.Z.version), {
     currentVoiceChannelId: p,
     selectedChannelId: _
@@ -45,8 +45,8 @@ function _(e, t, n) {
     currentVoiceChannelId: p,
     selectedChannelId: _
   }, {
-    withVoiceChannels: o,
-    withCurrentVoiceChannel: a
+    withVoiceChannels: a,
+    withCurrentVoiceChannel: o
   }, s).map(e => e.id), [t, n, d, f])
 }
 
@@ -56,9 +56,9 @@ function m(e, t) {
     selectedChannelId: r
   } = t, {
     withVoiceChannels: i,
-    withCurrentVoiceChannel: o
-  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, a = arguments.length > 3 ? arguments[3] : true, l = [];
+    withCurrentVoiceChannel: a
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, o = arguments.length > 3 ? arguments[3] : true, l = [];
   return e.forEachShownChannel(e => {
-    ((0, s.r8)(e.type) || i && (0, s.bw)(e.type) || o && (e.id === n || e.id === r)) && l.push(e)
-  }, a), l
+    ((0, s.r8)(e.type) || i && (0, s.bw)(e.type) || a && (e.id === n || e.id === r)) && l.push(e)
+  }, o), l
 }

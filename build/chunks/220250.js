@@ -58,7 +58,7 @@ function g(e) {
     profile: t,
     defaultColor: n,
     forceDefaultColor: i
-  } = e, o = i ? null : h(t), s = r.useRef(n), c = (0, a.Z)(s), u = (0, l.ZP)(o, c);
+  } = e, a = i ? null : h(t), s = r.useRef(n), c = (0, o.Z)(s), u = (0, l.ZP)(a, c);
   return (r.useEffect(() => {
     s.current = u
   }, [u]), null == t.icon) ? n : u

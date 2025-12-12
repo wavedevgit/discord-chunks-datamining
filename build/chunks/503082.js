@@ -62,18 +62,18 @@ class m {
   getImage(e, t, n) {
     var r;
     let i = null != n ? n : "default",
-      o = this.imageMap.get(e);
-    if (null != o && null != o[i]) return o[i];
+      a = this.imageMap.get(e);
+    if (null != a && null != a[i]) return a[i];
     if (this.needsReset && this.reset(), t.width > this.MAX_ROW_WIDTH || t.height > this.MAX_HEIGHT) throw Error("Image: ".concat(e, " is too wide to use with offscreen canvas. (").concat(t.width, " x ").concat(t.height));
     (this.nextX + t.width + p > this.MAX_ROW_WIDTH || this.nextY + t.height + p > this.MAX_HEIGHT) && this.breakToNewRow(true), this.context.save(), null != n && (this.context.filter = n), this.context.drawImage(t, this.nextX, this.nextY, t.width, t.height), this.context.restore();
-    let a = null != (r = this.imageMap.get(e)) ? r : {},
+    let o = null != (r = this.imageMap.get(e)) ? r : {},
       s = {
         x: this.nextX,
         y: this.nextY,
         w: t.width,
         h: t.height
       };
-    return this.imageMap.set(e, d(c({}, a), {
+    return this.imageMap.set(e, d(c({}, o), {
       [i]: s
     })), t.height > this.tallestImageHeight && (this.tallestImageHeight = t.height), this.nextX += t.width + p, this.nextX > this.MAX_ROW_WIDTH && this.breakToNewRow(), s
   }
@@ -134,10 +134,10 @@ class h extends Chunk129508.Z {
     let {
       x: r,
       y: i,
-      w: o,
-      h: a
+      w: a,
+      h: o
     } = e;
-    n && this.setContextProperties(), t ? this.context.fillRect(r, i, o, a) : this.context.strokeRect(r, i, o, a)
+    n && this.setContextProperties(), t ? this.context.fillRect(r, i, a, o) : this.context.strokeRect(r, i, a, o)
   }
   drawRoundedRect(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 0,
@@ -146,14 +146,14 @@ class h extends Chunk129508.Z {
     if (null == this.context) return;
     let {
       x: i,
-      y: o,
-      w: a,
+      y: a,
+      w: o,
       h: s
     } = e;
-    r && this.setContextProperties(), this.context.beginPath(), this.context.roundRect(i, o, a, s, t), n ? this.context.fill() : this.context.stroke()
+    r && this.setContextProperties(), this.context.beginPath(), this.context.roundRect(i, a, o, s, t), n ? this.context.fill() : this.context.stroke()
   }
   drawText(e, t, n) {
-    var r, o;
+    var r, a;
     if (null == this.context) return;
     this.setContextProperties();
     let l = null != (r = t.w) ? r : this.canvas.width - t.x,
@@ -164,28 +164,28 @@ class h extends Chunk129508.Z {
         null != this.context && (n ? this.context.fillText(e, t.x, t.y) : this.context.strokeText(e, t.x, t.y))
       },
       p = e => {
-        if (null == this.context || c.width <= a.F) return "";
+        if (null == this.context || c.width <= o.F) return "";
         let t = "".concat(e);
-        for (; c.width + a.F > l;) t = t.slice(0, false), c = this.context.measureText(t), u = true;
+        for (; c.width + o.F > l;) t = t.slice(0, false), c = this.context.measureText(t), u = true;
         return u && (t += "..."), t
       };
     if (this.font.truncate === s.GX.None && f(e, t), this.font.truncate === s.GX.Truncate && f(e = p(e), t), this.font.truncate === s.GX.Wrap) {
       let n = e.split(" "),
         r = 1 / 0,
-        a = "",
+        o = "",
         s = 0;
       for (null != t.h && (r = t.h / d, i()(r > 0, "DiscordCavas: boundingBox.h of ".concat(t.h, " results in 0 visible lines with font size of ").concat(d))); n.length > 0;)
-        if ((c = this.context.measureText(a + " " + n[0])).width > l) {
+        if ((c = this.context.measureText(o + " " + n[0])).width > l) {
           let e = false;
-          if (s + 1 >= r && n.length > 0 && (e = true), "" !== a ? (f(e ? p(a + "...") : a, {
+          if (s + 1 >= r && n.length > 0 && (e = true), "" !== o ? (f(e ? p(o + "...") : o, {
               x: t.x,
               y: t.y + d * s
-            }), a = "") : f(p(null != (o = n.shift()) ? o : ""), {
+            }), o = "") : f(p(null != (a = n.shift()) ? a : ""), {
               x: t.x,
               y: t.y + d * s
             }), e) break;
           s += 1
-        } else a += " ".concat(n.shift()), 0 === n.length && f(a, {
+        } else o += " ".concat(n.shift()), 0 === n.length && f(o, {
           x: t.x,
           y: t.y + d * s
         })
@@ -204,21 +204,21 @@ class h extends Chunk129508.Z {
         let i;
         return "strong" === e.type && this.setFont({
           weight: 700
-        }), i = Array.isArray(e.content) ? o(e.content, t, n) : this.drawText(e.content, t, n), this.setFont({
+        }), i = Array.isArray(e.content) ? a(e.content, t, n) : this.drawText(e.content, t, n), this.setFont({
           weight: r
         }), i
       },
-      o = (e, t, n) => {
+      a = (e, t, n) => {
         let r = 0;
         return e.forEach(e => {
           let {
-            x: o,
-            y: a,
+            x: a,
+            y: o,
             w: s,
             h: l
           } = t, c = null != s ? s - r : true, u = i(e, {
-            x: o + r,
-            y: a,
+            x: a + r,
+            y: o,
             w: c,
             h: l
           }, n);
@@ -230,7 +230,7 @@ class h extends Chunk129508.Z {
           h: this.font.size
         }
       };
-    Array.isArray(e) ? o(e, t, n) : i(e, t, n)
+    Array.isArray(e) ? a(e, t, n) : i(e, t, n)
   }
   drawImage(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
@@ -238,21 +238,21 @@ class h extends Chunk129508.Z {
     };
     i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized.");
     let {
-      fillMode: o
+      fillMode: a
     } = r;
     if (null == this.context) return s.vP.Failure;
     this.setContextProperties();
-    let a = this.assetMap.get(e);
-    if (null == a) return s.vP.ImageNotLoaded;
+    let o = this.assetMap.get(e);
+    if (null == o) return s.vP.ImageNotLoaded;
     if (null != n) {
-      if (o === s.JU.Contain) {
+      if (a === s.JU.Contain) {
         let r, i = {
-            w: a.width,
-            h: a.height
+            w: o.width,
+            h: o.height
           },
-          o = +(i.w / i.h).toFixed(1);
-        if (+(n.w / n.h).toFixed(1) > o) {
-          let e = n.h * o;
+          a = +(i.w / i.h).toFixed(1);
+        if (+(n.w / n.h).toFixed(1) > a) {
+          let e = n.h * a;
           r = {
             x: t.x + (n.w - e) / 2,
             y: t.y,
@@ -260,7 +260,7 @@ class h extends Chunk129508.Z {
             h: n.h
           }
         } else {
-          let e = n.w / o;
+          let e = n.w / a;
           r = {
             x: t.x,
             y: t.y + (n.h - e) / 2,
@@ -280,31 +280,31 @@ class h extends Chunk129508.Z {
           h: r.h
         }), s.vP.Success
       }
-      if (o === s.JU.Cover) {
+      if (a === s.JU.Cover) {
         var l, u, f, p;
-        let i, o = {
-            w: a.width,
-            h: a.height
+        let i, a = {
+            w: o.width,
+            h: o.height
           },
-          _ = +(o.w / o.h).toFixed(1),
+          _ = +(a.w / a.h).toFixed(1),
           m = +(n.w / n.h).toFixed(1);
         if (m > _) {
-          let e = o.w / m;
+          let e = a.w / m;
           i = d(c({}, {
             x: 0,
-            y: (o.h - e) * (null != (u = null == r || null == (l = r.focus) ? true : l.y) ? u : .5)
+            y: (a.h - e) * (null != (u = null == r || null == (l = r.focus) ? true : l.y) ? u : .5)
           }), {
-            w: a.width,
+            w: o.width,
             h: e
           })
         } else {
-          let e = o.h * m;
+          let e = a.h * m;
           i = d(c({}, {
-            x: (a.width - e) * (null != (p = null == r || null == (f = r.focus) ? true : f.x) ? p : .5),
+            x: (o.width - e) * (null != (p = null == r || null == (f = r.focus) ? true : f.x) ? p : .5),
             y: 0
           }), {
             w: e,
-            h: a.height
+            h: o.height
           })
         }
         return this.drawCroppedImage(e, i, {
@@ -315,25 +315,25 @@ class h extends Chunk129508.Z {
         }), s.vP.Success
       }
       if (null != this.offscreenCanvasCache) return this.drawCachedImage(e, t, n);
-      this.context.drawImage(a, t.x, t.y, n.w, n.h)
+      this.context.drawImage(o, t.x, t.y, n.w, n.h)
     } else {
       if (null != this.offscreenCanvasCache) return this.drawCachedImage(e, t);
-      this.context.drawImage(a, t.x, t.y)
+      this.context.drawImage(o, t.x, t.y)
     }
     return s.vP.Success
   }
   drawRoundedImage(e, t, n, r, i) {
     if (null == this.context) return s.vP.Failure;
     let {
-      x: o,
-      y: a
+      x: a,
+      y: o
     } = t, {
       w: l,
       h: c
     } = n;
     this.context.save();
     let u = new Path2D;
-    u.roundRect(o, a, l, c, r), this.context.clip(u);
+    u.roundRect(a, o, l, c, r), this.context.clip(u);
     let d = this.drawImage(e, t, n, i);
     return this.restoreContext(), d
   }
@@ -347,34 +347,34 @@ class h extends Chunk129508.Z {
       let {
         x: e,
         y: r,
-        w: o,
-        h: a
+        w: a,
+        h: o
       } = t, {
         x: s,
         y: l,
         w: c,
         h: u
       } = n;
-      this.context.drawImage(i, e, r, o, a, s, l, c, u)
+      this.context.drawImage(i, e, r, a, o, s, l, c, u)
     }
     return s.vP.Success
   }
   drawCachedImage(e, t, n) {
-    var r, o;
+    var r, a;
     if (i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), i()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return s.vP.Failure;
-    let a = this.assetMap.get(e);
-    if (null == a) return s.vP.ImageNotLoaded;
-    let l = this.offscreenCanvasCache.getImage(e.toString(), a, this.getFilterString());
-    return null == l ? s.vP.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, l.x, l.y, l.w, l.h, t.x, t.y, null != (r = null == n ? true : n.w) ? r : l.w, null != (o = null == n ? true : n.h) ? o : l.h), s.vP.Success)
+    let o = this.assetMap.get(e);
+    if (null == o) return s.vP.ImageNotLoaded;
+    let l = this.offscreenCanvasCache.getImage(e.toString(), o, this.getFilterString());
+    return null == l ? s.vP.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, l.x, l.y, l.w, l.h, t.x, t.y, null != (r = null == n ? true : n.w) ? r : l.w, null != (a = null == n ? true : n.h) ? a : l.h), s.vP.Success)
   }
   drawCroppedCachedImage(e, t, n) {
     if (i()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), i()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return s.vP.Failure;
     let r = this.assetMap.get(e);
     if (null == r) return s.vP.ImageNotLoaded;
-    let o = this.offscreenCanvasCache.getImage(e.toString(), r, this.getFilterString());
-    if (null == o) return s.vP.Failure;
+    let a = this.offscreenCanvasCache.getImage(e.toString(), r, this.getFilterString());
+    if (null == a) return s.vP.Failure;
     let {
-      x: a,
+      x: o,
       y: l,
       w: c,
       h: u
@@ -384,7 +384,7 @@ class h extends Chunk129508.Z {
       w: p,
       h: _
     } = n;
-    return this.context.drawImage(this.offscreenCanvasCache.canvas, o.x + a, o.y + l, c, u, d, f, p, _), s.vP.Success
+    return this.context.drawImage(this.offscreenCanvasCache.canvas, a.x + o, a.y + l, c, u, d, f, p, _), s.vP.Success
   }
   drawPath(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
@@ -426,14 +426,14 @@ class h extends Chunk129508.Z {
       x: n,
       y: r,
       w: i,
-      h: o
+      h: a
     } = e;
     if (t) {
       let e = new Path2D;
-      e.moveTo(0, 0), e.lineTo(this.canvas.width, 0), e.lineTo(this.canvas.width, this.canvas.height), e.lineTo(0, this.canvas.height), e.lineTo(0, 0), e.closePath(), e.rect(n, r, i, o), this.context.clip(e, "evenodd")
+      e.moveTo(0, 0), e.lineTo(this.canvas.width, 0), e.lineTo(this.canvas.width, this.canvas.height), e.lineTo(0, this.canvas.height), e.lineTo(0, 0), e.closePath(), e.rect(n, r, i, a), this.context.clip(e, "evenodd")
     } else {
       let e = new Path2D;
-      e.rect(n, r, i, o), this.context.clip(e)
+      e.rect(n, r, i, a), this.context.clip(e)
     }
   }
   clipRoundedRect(e) {
@@ -444,15 +444,15 @@ class h extends Chunk129508.Z {
     let {
       x: r,
       y: i,
-      w: o,
-      h: a
+      w: a,
+      h: o
     } = e;
     if (n) {
       let e = new Path2D;
-      e.moveTo(0, 0), e.lineTo(this.canvas.width, 0), e.lineTo(this.canvas.width, this.canvas.height), e.lineTo(0, this.canvas.height), e.lineTo(0, 0), e.closePath(), e.roundRect(r, i, o, a, t), this.context.clip(e, "evenodd")
+      e.moveTo(0, 0), e.lineTo(this.canvas.width, 0), e.lineTo(this.canvas.width, this.canvas.height), e.lineTo(0, this.canvas.height), e.lineTo(0, 0), e.closePath(), e.roundRect(r, i, a, o, t), this.context.clip(e, "evenodd")
     } else {
       let e = new Path2D;
-      e.roundRect(r, i, o, a, t), this.context.clip(e)
+      e.roundRect(r, i, a, o, t), this.context.clip(e)
     }
   }
   constructor(e, t) {

@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   PO: () => s,
-  vE: () => a,
-  yI: () => o
+  vE: () => o,
+  yI: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-07_family_center_v2",
   label: "Family Center V2",
@@ -25,8 +25,8 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
-  return o.getCurrentConfig({
+function o(e) {
+  return a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
@@ -34,7 +34,7 @@ function a(e) {
 }
 
 function s(e) {
-  return o.useExperiment({
+  return a.useExperiment({
     location: e
   }, {
     autoTrackExposure: false

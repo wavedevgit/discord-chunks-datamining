@@ -6,7 +6,7 @@ require.d(exports, {
   d: () => E
 }), require("./388685.js"), require("./781311.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk823379 = require("./823379.js"),
@@ -74,12 +74,12 @@ function v(e) {
     channelId: n,
     draft: r,
     draftType: i
-  } = e, o = d.Z.getChannel(n);
-  r === (null == o ? true : o.template) && (r = "");
-  let a = u.default.getId();
-  if (null != a && null != r && "" !== r) {
+  } = e, a = d.Z.getChannel(n);
+  r === (null == a ? true : a.template) && (r = "");
+  let o = u.default.getId();
+  if (null != o && null != r && "" !== r) {
     var s;
-    let e = O(a),
+    let e = O(o),
       t = e[n];
     null == t && (t = e[n] = {}), (r = y(r)) !== (null == (s = t[i]) ? true : s.draft) && (t[i] = {
       timestamp: Date.now(),
@@ -104,10 +104,10 @@ function I(e) {
   } = e, r = u.default.getId();
   if (null == r) return;
   let i = O(r),
-    o = i[t];
-  null == o && (o = i[t] = {}), o[1] = h(_({
+    a = i[t];
+  null == a && (a = i[t] = {}), a[1] = h(_({
     timestamp: Date.now()
-  }, o[1], n), {
+  }, a[1], n), {
     parentChannelId: t
   })
 }
@@ -118,7 +118,7 @@ function T(e, t) {
   let r = O(n),
     i = r[e];
   if (null == i) returnfalse;
-  delete i[t], o().isEmpty(i) && delete r[e]
+  delete i[t], a().isEmpty(i) && delete r[e]
 }
 
 function C() {
@@ -156,13 +156,13 @@ function R(e) {
   let r = O(n),
     i = r[t.parent_id];
   if (null == i) returnfalse;
-  let o = i[1];
-  if (null == o || o.parentMessageId !== c.default.castChannelIdAsMessageId(t.id)) returnfalse;
+  let a = i[1];
+  if (null == a || a.parentMessageId !== c.default.castChannelIdAsMessageId(t.id)) returnfalse;
   {
-    var a, s;
+    var o, s;
     let e = r[t.parent_id];
     if (null == e) returnfalse;
-    let n = null != (s = null == (a = e[2]) ? true : a.draft) ? s : "";
+    let n = null != (s = null == (o = e[2]) ? true : o.draft) ? s : "";
     "" !== n && (r[t.id] = {
       0: {
         timestamp: Date.now(),
@@ -208,7 +208,7 @@ class L extends(r = Chunk442837.ZP.PersistedStore) {
     let t = u.default.getId();
     if (null == t) return [];
     let n = O(t);
-    return o()(n).mapValues(t => null == t ? true : t[e]).pickBy(l.lm).toPairs().map(e => {
+    return a()(n).mapValues(t => null == t ? true : t[e]).pickBy(l.lm).toPairs().map(e => {
       let [t, {
         timestamp: n,
         draft: r

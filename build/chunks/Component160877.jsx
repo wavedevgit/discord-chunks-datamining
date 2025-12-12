@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk470167 = require("./470167.js"),
   Chunk793030 = require("./793030.js"),
   Chunk572691 = require("./572691.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk247206 = require("./247206.js"),
   Chunk719548 = require("./719548.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk463300 = require("./463300.js");
+  Chunk44332 = require("./44332.js");
 let g = e => {
     let {
       attachment: t
@@ -34,12 +34,12 @@ let g = e => {
   E = e => {
     var t, n, i;
     let {
-      embed: o
+      embed: a
     } = e;
-    if (!_.n2.has(o.type)) return null;
-    let a = true !== o.video && o.type !== s.h.GIFV ? o.video.url : null != (i = null == (t = o.thumbnail) ? true : t.url) ? i : null == (n = o.image) ? true : n.url;
-    return null == a ? null : (0, r.jsx)(b, {
-      url: a
+    if (!_.n2.has(a.type)) return null;
+    let o = true !== a.video && a.type !== s.h.GIFV ? a.video.url : null != (i = null == (t = a.thumbnail) ? true : t.url) ? i : null == (n = a.image) ? true : n.url;
+    return null == o ? null : (0, r.jsx)(b, {
+      url: o
     })
   },
   b = e => {
@@ -50,11 +50,11 @@ let g = e => {
     return (0, r.jsx)("div", {
       className: h.mediaContainer,
       children: i ? (0, r.jsx)(u.Z, {
-        className: a()(h.video, h.media),
+        className: o()(h.video, h.media),
         controls: true,
         src: t
       }) : (0, r.jsx)("img", {
-        className: a()(h.image, h.media),
+        className: o()(h.image, h.media),
         src: t,
         alt: n
       })
@@ -72,8 +72,8 @@ function O(e) {
   let {
     channelId: t,
     messageId: n,
-    isReportFalsePositiveLoading: o,
-    analyticsContext: a,
+    isReportFalsePositiveLoading: a,
+    analyticsContext: o,
     attachmentPreview: s,
     embedPreview: c,
     onConfirmPress: u,
@@ -84,24 +84,24 @@ function O(e) {
       action: p.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
       channelId: t,
       messageId: n,
-      context: a
+      context: o
     }), f()
-  }, [t, n, a, f]), h = i.useCallback(() => {
+  }, [t, n, o, f]), h = i.useCallback(() => {
     null == u || u(), (0, p.aP)({
       action: p.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
       messageId: n,
-      context: a
+      context: o
     })
-  }, [t, n, a, u]);
+  }, [t, n, o, u]);
   return i.useEffect(() => {
     (0, p.aP)({
       action: p.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
       channelId: t,
       messageId: n,
-      context: a
+      context: o
     })
-  }, [t, n, a]), (0, r.jsxs)(l.Modal, {
+  }, [t, n, o]), (0, r.jsxs)(l.Modal, {
     transitionState: d,
     onClose: f,
     title: m.intl.string(m.t.TPpVkI),
@@ -110,12 +110,12 @@ function O(e) {
       text: m.intl.string(m.t["ETE/oC"]),
       onClick: _,
       variant: "secondary",
-      disabled: o
+      disabled: a
     }, {
       text: m.intl.string(m.t["cY+Oob"]),
       onClick: h,
-      loading: o,
-      disabled: o
+      loading: a,
+      disabled: a
     }],
     children: [null != s && (0, r.jsx)(g, {
       attachment: s

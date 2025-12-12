@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk793030 = require("./793030.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk892001 = require("./892001.js"),
-  Chunk326218 = require("./326218.js");
+  Chunk713302 = require("./713302.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ let g = e => {
   let {
     userId: t,
     children: n,
-    isLast: o,
+    isLast: a,
     className: p
   } = e, m = 1, [g, E] = i.useState(false), {
     analyticsLocations: b
@@ -82,8 +82,8 @@ let g = e => {
         style: {
           opacity: m
         },
-        className: a()(f.rowItem, p, {
-          [f.last]: o,
+        className: o()(f.rowItem, p, {
+          [f.last]: a,
           [f.active]: g
         }),
         onMouseEnter: O,

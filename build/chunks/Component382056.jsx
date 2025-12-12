@@ -2,11 +2,11 @@
 /** chunk id: 382056, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js"),
   Chunk797874 = require("./797874.jsx");
-let o = {
+let a = {
   react(e) {
     let {
       applicationId: t,

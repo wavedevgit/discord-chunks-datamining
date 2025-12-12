@@ -2,18 +2,18 @@
 /** chunk id: 490095, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk737062 = require("./737062.js");
-let a = e => {
+  Chunk997002 = require("./997002.js");
+let o = e => {
   let {
     size: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.unownedStickerLockContainer,
+    className: a.unownedStickerLockContainer,
     style: {
       width: t,
       height: t
@@ -21,7 +21,7 @@ let a = e => {
     children: (0, r.jsx)(i.mBM, {
       size: "xxs",
       color: "currentColor",
-      className: o.unownedStickerLockIcon
+      className: a.unownedStickerLockIcon
     })
   })
 }

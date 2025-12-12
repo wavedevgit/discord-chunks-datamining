@@ -36,8 +36,8 @@ async function u(e) {
     t = null == (f = n.guild) ? true : f.id, d = new Set(null == (p = n.guild) ? true : p.features)
   }
   if (null == t) return;
-  let _ = o.Z.getGuild(t);
-  (null == _ ? true : _.joinedAt) == null && (null == d || d.has(l.GuildFeatures.PREVIEW_ENABLED) ? await (0, a.Ub)(t, {}, {
+  let _ = a.Z.getGuild(t);
+  (null == _ ? true : _.joinedAt) == null && (null == d || d.has(l.GuildFeatures.PREVIEW_ENABLED) ? await (0, o.Ub)(t, {}, {
     shouldNavigate: false
   }) : null != n && await r.ZP.acceptInvite({
     inviteKey: n.code,

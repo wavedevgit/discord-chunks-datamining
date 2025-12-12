@@ -8,7 +8,7 @@ var Chunk379649 = require("./379649.js"),
   Chunk866960 = require("./866960.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,11 +55,11 @@ class l {
   incrementNetworkStats(e) {
     let t = (e - this._lastSampleTimestamp) / 1e3,
       n = i.Z.getEffectiveConnectionSpeed();
-    n === o.IyS.SLOW_TWO_G && (n = o.IyS.TWO_G);
+    n === a.IyS.SLOW_TWO_G && (n = a.IyS.TWO_G);
     let r = i.Z.getType();
-    r === o.IWh.WIMAX && (r = o.IWh.WIFI), this._networkStats.effectiveConnectionSpeedBuckets[n] += t, this._networkStats.connectionTypeBuckets[r] += t, this._lastSampleTimestamp = e
+    r === a.IWh.WIMAX && (r = a.IWh.WIFI), this._networkStats.effectiveConnectionSpeedBuckets[n] += t, this._networkStats.connectionTypeBuckets[r] += t, this._lastSampleTimestamp = e
   }
   constructor() {
-    a(this, "_networkStats", true), a(this, "_lastSampleTimestamp", true), this._networkStats = this._initStats(), this._lastSampleTimestamp = (0, Chunk379649.zO)()
+    o(this, "_networkStats", true), o(this, "_lastSampleTimestamp", true), this._networkStats = this._initStats(), this._lastSampleTimestamp = (0, Chunk379649.zO)()
   }
 }

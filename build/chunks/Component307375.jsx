@@ -1,13 +1,13 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 307375, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  h: () => h
+  h: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,63 +16,63 @@ var Chunk54381 = require("./54381.js"),
   Chunk384632 = require("./384632.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk140367 = require("./140367.js");
+  Chunk640940 = require("./640940.js");
 
-function h(e) {
+function p(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: l
-  } = e, h = l.features.has(m.GuildFeatures.COMMUNITY), x = (0, a.e7)([u.Z], () => u.Z.can(m.Plq.ADMINISTRATOR, l)), b = i.useMemo(() => {
-    let e = t === g.A.DISCOVERABLE && !x,
-      n = h && (t === g.A.DISCOVERABLE || x);
+  } = e, p = l.features.has(f.GuildFeatures.COMMUNITY), h = (0, s.e7)([d.Z], () => d.Z.can(f.Plq.ADMINISTRATOR, l)), x = i.useMemo(() => {
+    let e = t === g.A.DISCOVERABLE && !h,
+      n = p && (t === g.A.DISCOVERABLE || h);
     return [{
       id: g.A.INVITE,
-      title: p.intl.string(p.t["HQVS/L"]),
-      body: p.intl.string(p.t.KzXzFa),
+      title: m.intl.string(m.t["HQVS/L"]),
+      body: m.intl.string(m.t.KzXzFa),
       icon: c.mBM,
       enabled: !e,
-      ineligibleText: p.intl.string(p.t.LIZgwJ)
+      ineligibleText: m.intl.string(m.t.LIZgwJ)
     }, {
       id: g.A.APPLY,
-      title: p.intl.string(p.t.LrFEYW),
-      body: p.intl.string(p.t.kJj2oG),
+      title: m.intl.string(m.t.LrFEYW),
+      body: m.intl.string(m.t.kJj2oG),
       icon: c._XJ,
       enabled: !e,
-      ineligibleText: p.intl.string(p.t.LIZgwJ)
+      ineligibleText: m.intl.string(m.t.LIZgwJ)
     }, {
       id: g.A.DISCOVERABLE,
-      title: p.intl.string(p.t.lhOHL3),
-      body: p.intl.string(p.t.pqQylS),
+      title: m.intl.string(m.t.lhOHL3),
+      body: m.intl.string(m.t.pqQylS),
       icon: c.enf,
       enabled: n,
-      ineligibleText: h ? p.intl.string(p.t.iBpXPg) : p.intl.string(p.t["5TQ+eE"])
+      ineligibleText: p ? m.intl.string(m.t.iBpXPg) : m.intl.string(m.t["5TQ+eE"])
     }]
-  }, [t, h, x]);
+  }, [t, p, h]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Heading, {
       color: "text-strong",
       variant: "text-md/semibold",
-      children: p.intl.string(p.t["N+GnP2"])
+      children: m.intl.string(m.t["N+GnP2"])
     }), (0, r.jsx)(c.Text, {
       color: "text-subtle",
       variant: "text-sm/medium",
-      className: f.bodyText,
-      children: p.intl.format(p.t["Y/jYwu"], {
-        helpdeskArticle: d.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
+      className: b.bodyText,
+      children: m.intl.format(m.t["Y/jYwu"], {
+        helpdeskArticle: u.Z.getArticleURL(f.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(c.njP, {
       selectedItem: t,
       onItemSelect: n,
       orientation: "horizontal",
-      className: f.joinOptions,
-      children: b.map(e => {
+      className: b.joinOptions,
+      children: x.map(e => {
         let n = e.id === t;
         return (0, r.jsx)(c.njP.Item, {
           id: e.id,
           selectedItem: t,
           disableItemStyles: true,
-          className: f.joinOptionTab,
+          className: b.joinOptionTab,
           disabled: !e.enabled,
           "aria-label": e.title,
           children: (0, r.jsx)(o.u, {
@@ -82,9 +82,9 @@ function h(e) {
             spacing: 16,
             hideOnClick: false,
             children: (0, r.jsxs)("div", {
-              className: s()(f.joinOptionContent, {
-                [f.active]: n,
-                [f.uninteractive]: !e.enabled
+              className: a()(b.joinOptionContent, {
+                [b.active]: n,
+                [b.uninteractive]: !e.enabled
               }),
               children: [(0, r.jsx)(e.icon, {
                 size: "md",

@@ -8,7 +8,7 @@ require.r(exports), require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk159635 = require("./159635.js"),
   l = require.n(Chunk159635),
   Chunk481060 = require("./481060.js"),
@@ -78,10 +78,10 @@ let C = e => {
       level: t,
       children: n,
       className: r = null,
-      styleSheet: o = {}
+      styleSheet: a = {}
     } = e, s = (0, c.xSt)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
     return i.createElement("h".concat(u), {
-      className: a()(...T(o, r))
+      className: o()(...T(a, r))
     }, n)
   },
   A = null != Chunk454585.Z ? Chunk454585.Z.defaultRules : null,
@@ -89,15 +89,15 @@ let C = e => {
     link: {
       parse(e, t, n) {
         let r, i = e[2],
-          o = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-          a = i.startsWith("/activities");
-        return r = o ? e => {
+          a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
+          o = i.startsWith("/activities");
+        return r = a ? e => {
           I(), (0, _.openUserSettings)(p.n.NITRO_PANEL, {
             section: h.oAB.PREMIUM
           }), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
             cta_type: "nitro"
           }), (0, c.Mr3)(g.Xd), e.preventDefault()
-        } : a ? e => {
+        } : o ? e => {
           (0, f.uL)(i), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, b({}, m.default.getCampaignParams(i))), (0, u.Ou)(), (0, c.Mr3)(g.Xd), e.preventDefault()
         } : () => {
           n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(h.rMx.CHANGE_LOG_CTA_CLICKED, b({
@@ -133,10 +133,10 @@ let C = e => {
     },
     image: {
       react(e, t, i) {
-        let o = n(595173)("./".concat(e.target));
+        let a = n(595173)("./".concat(e.target));
         return (0, r.jsx)("img", {
           alt: e.alt,
-          src: o
+          src: a
         }, i.key)
       }
     },

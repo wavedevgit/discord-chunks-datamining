@@ -2,7 +2,7 @@
 /** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => m
+  q: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,29 +15,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk794324 = require("./794324.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310582 = require("./310582.js");
-let m = e => {
-  var t, n, m;
-  let C, {
-    category: h,
-    subblock: _,
-    badgeText: b,
-    handleTransition: v
+  Chunk222194 = require("./222194.js");
+let b = e => {
+  var t, n, b;
+  let m, {
+    category: C,
+    subblock: h,
+    badgeText: v,
+    handleTransition: E
   } = e;
-  null != _ && (C = null == (t = c.Z.getCategoryByStoreListingId(null == _ ? true : _.categoryStoreListingId)) ? true : t.skuId);
-  let E = null != (n = null != C ? C : null == h ? true : h.skuId) ? n : "",
+  null != h && (m = null == (t = c.Z.getCategoryByStoreListingId(null == h ? true : h.categoryStoreListingId)) ? true : t.skuId);
+  let S = null != (n = null != m ? m : null == C ? true : C.skuId) ? n : "",
     {
-      handleCardVisibilityChange: S
-    } = (0, u.E)(E, "home", "marketing featured block"),
-    O = (0, d.YG)(h, _),
+      handleCardVisibilityChange: _
+    } = (0, u.E)(S, "home", "marketing featured block"),
+    O = (0, d.YG)(C, h),
     x = l.useRef(null),
-    y = null == _ ? true : _.bodyText,
-    j = (0, a.sp)();
-  return (0, r.jsx)(o.$, {
+    y = null == h ? true : h.bodyText,
+    j = (0, s.sp)();
+  return (0, r.jsx)(a.$, {
     innerRef: x,
-    onChange: S,
+    onChange: _,
     threshold: 0,
-    children: (0, r.jsxs)(i.P3F, {
+    children: (0, r.jsxs)(o.P3F, {
       className: p.featuredBlock,
       innerRef: x,
       style: function(e) {
@@ -61,14 +61,14 @@ let m = e => {
         backgroundImage: "url(".concat(O, ")")
       }),
       onClick: () => {
-        v({
+        E({
           sourceButton: "shop marketing tile",
-          categorySkuId: E,
+          categorySkuId: S,
           isInternalShopDeeplink: true,
-          isOrbsExclusive: null == h ? true : h.isOrbsExclusive
-        }), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          isOrbsExclusive: null == C ? true : C.isOrbsExclusive
+        }), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
-          sku_id: E,
+          sku_id: S,
           page_type: "home",
           page_section: null == j ? true : j.pageSection,
           page_category: null == j ? true : j.pageCategory,
@@ -77,35 +77,35 @@ let m = e => {
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(i.IGR, {
+      children: [null != v && (0, r.jsx)(o.IGR, {
         disableColor: true,
-        text: b,
+        text: v,
         className: p.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(i.Heading, {
+        children: null != y && (0, r.jsx)(o.Heading, {
           lineClamp: 4,
           className: p.featuredBlockBodyText,
           style: {
-            color: null != (m = null == _ ? true : _.bannerTextColor) ? m : "white"
+            color: null != (b = null == h ? true : h.bannerTextColor) ? b : "white"
           },
           variant: "heading-md/medium",
           children: y
         })
       }), (0, r.jsx)("div", {
         className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(i.Button, {
+        children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
-          text: f.intl.string(f.t.jVcuVY),
+          text: g.intl.string(g.t.jVcuVY),
           onClick: e => {
-            v({
+            E({
               sourceButton: "shop marketing take me there button",
-              categorySkuId: E,
+              categorySkuId: S,
               isInternalShopDeeplink: true,
-              isOrbsExclusive: null == h ? true : h.isOrbsExclusive
-            }), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              isOrbsExclusive: null == C ? true : C.isOrbsExclusive
+            }), e.stopPropagation(), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
-              sku_id: E,
+              sku_id: S,
               page_type: "home",
               page_section: null == j ? true : j.pageSection,
               page_category: null == j ? true : j.pageCategory,

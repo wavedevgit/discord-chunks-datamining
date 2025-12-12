@@ -6,16 +6,16 @@ require.d(exports, {
   IQ: () => d,
   J4: () => l,
   JD: () => c,
-  g_: () => a
+  g_: () => o
 });
 var Chunk720479 = require("./720479.js"),
   Chunk745597 = require("./745597.js");
-let o = 1721426;
+let a = 1721426;
 
-function a(e, t, n, r) {
+function o(e, t, n, r) {
   let i = (t = l(e, t)) - 1,
-    a = false;
-  return n <= 2 ? a = 0 : s(t) && (a = false), o - 1 + 365 * i + Math.floor(i / 4) - Math.floor(i / 100) + Math.floor(i / 400) + Math.floor((367 * n - 362) / 12 + a + r)
+    o = false;
+  return n <= 2 ? o = 0 : s(t) && (o = false), a - 1 + 365 * i + Math.floor(i / 4) - Math.floor(i / 100) + Math.floor(i / 400) + Math.floor((367 * n - 362) / 12 + o + r)
 }
 
 function s(e) {
@@ -37,7 +37,7 @@ let u = {
 class d {
   fromJulianDay(e) {
     let t = e,
-      n = t - o,
+      n = t - a,
       l = Math.floor(n / 146097),
       u = (0, i.w)(n, 146097),
       d = Math.floor(u / 36524),
@@ -45,15 +45,15 @@ class d {
       p = Math.floor(f / 1461),
       _ = Math.floor((0, i.w)(f, 1461) / 365),
       [m, h] = c(400 * l + 100 * d + 4 * p + _ + +(4 !== d && 4 !== _)),
-      g = t - a(m, h, 1, 1),
+      g = t - o(m, h, 1, 1),
       E = 2;
-    t < a(m, h, 3, 1) ? E = 0 : s(h) && (E = 1);
+    t < o(m, h, 3, 1) ? E = 0 : s(h) && (E = 1);
     let b = Math.floor(((g + E) * 12 + 373) / 367),
-      y = t - a(m, h, b, 1) + 1;
+      y = t - o(m, h, b, 1) + 1;
     return new(0, r.aw)(m, h, b, y)
   }
   toJulianDay(e) {
-    return a(e.era, e.year, e.month, e.day)
+    return o(e.era, e.year, e.month, e.day)
   }
   getDaysInMonth(e) {
     return u[s(e.year) ? "leapyear" : "standard"][e.month - 1]

@@ -3,14 +3,14 @@
 "use strict";
 require.d(exports, {
   gc: () => i,
-  hH: () => a,
-  uX: () => o
+  hH: () => o,
+  uX: () => a
 });
 var Chunk473749 = require("./473749.js"),
   i = function(e) {
     return e.HOME = "home", e.LIST = "list", e.APPLICATION = "application", e
   }({});
-let o = Chunk473749.createContext({
+let a = Chunk473749.createContext({
   history: [],
   discard: {},
   currentView: true,
@@ -21,6 +21,6 @@ let o = Chunk473749.createContext({
   setSlideReady: () => {}
 });
 
-function a() {
-  return Chunk473749.useContext(o)
+function o() {
+  return Chunk473749.useContext(a)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 997519, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,17 +15,17 @@ function c(e, t) {
   let n = null == t ? true : t.team,
     {
       payoutsByPeriod: c,
-      loading: u
+      loading: d
     } = (0, l.Z)(null == t ? true : t.id, {
       groupType: o.uw.SERVER_ROLE_SUBSCRIPTION,
       teamId: null == n ? true : n.id
     }),
-    d = (0, s.f)("useEarningMetrics"),
-    g = (0, a.Z)(e),
+    u = (0, a.f)("useEarningMetrics"),
+    g = (0, s.Z)(e),
     {
-      currentPeriod: m,
-      previousPeriods: p,
-      metrics: f
+      currentPeriod: f,
+      previousPeriods: m,
+      metrics: b
     } = r.useMemo(() => {
       var e, t;
       let {
@@ -68,11 +68,11 @@ function c(e, t) {
       }
     }, [c, g]);
   return {
-    loading: u || !d,
+    loading: d || !u,
     team: n,
-    currentPeriod: m,
-    previousPeriods: p,
+    currentPeriod: f,
+    previousPeriods: m,
     allPeriods: c,
-    metrics: f
+    metrics: b
   }
 }

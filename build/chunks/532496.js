@@ -52,8 +52,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,8 +61,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 class p extends Chunk170216.L {
@@ -72,7 +72,7 @@ class p extends Chunk170216.L {
       searchTabs: n,
       getLimit: r,
       pagination: i,
-      trackExactTotalHits: a
+      trackExactTotalHits: o
     } = e, {
       include_nsfw: s,
       channel_id: c
@@ -80,13 +80,13 @@ class p extends Chunk170216.L {
       include_nsfw: s,
       channel_ids: c,
       tabs: {},
-      track_exact_total_hits: a
+      track_exact_total_hits: o
     };
     return n.forEach(e => {
       let t = r(e),
-        n = o.yY[e],
-        a = null != n ? o.SO[n] : {};
-      p.tabs[e] = u(l({}, o.E2, a, f, i), {
+        n = a.yY[e],
+        o = null != n ? a.SO[n] : {};
+      p.tabs[e] = u(l({}, a.E2, o, f, i), {
         limit: t
       })
     }), p
@@ -96,24 +96,24 @@ class p extends Chunk170216.L {
       searchContext: t,
       searchQuery: n,
       searchTabs: i,
-      getLimit: o,
+      getLimit: a,
       pagination: s,
       trackExactTotalHits: l
     } = e, c = this.createRequestPayload({
       searchQuery: n,
       searchTabs: i,
-      getLimit: o,
+      getLimit: a,
       pagination: s,
       trackExactTotalHits: l
     });
     switch (t.type) {
-      case a.aib.GUILD:
-      case a.aib.GUILD_CHANNEL:
-      case a.aib.THREAD:
+      case o.aib.GUILD:
+      case o.aib.GUILD_CHANNEL:
+      case o.aib.THREAD:
         return new r.tJ(t.guildId, t.type, n, c);
-      case a.aib.CHANNEL:
+      case o.aib.CHANNEL:
         return new r.tJ(t.channelId, t.type, n, c);
-      case a.aib.DMS:
+      case o.aib.DMS:
         return new r.tJ(t.type, t.type, n, c);
       default:
         throw Error("[SearchFetchManager] Unsupported search context type: ".concat(t.type))
@@ -125,8 +125,8 @@ class p extends Chunk170216.L {
       searchContext: n,
       searchQuery: r,
       searchTabs: i,
-      getLimit: o,
-      pagination: a,
+      getLimit: a,
+      pagination: o,
       trackExactTotalHits: s
     } = e;
     this.cancel(t);
@@ -134,8 +134,8 @@ class p extends Chunk170216.L {
       searchContext: n,
       searchQuery: r,
       searchTabs: i,
-      getLimit: o,
-      pagination: a,
+      getLimit: a,
+      pagination: o,
       trackExactTotalHits: s
     });
     return this.set(t, l), l

@@ -1,4 +1,4 @@
-/** Chunk was on 49941 **/
+/** Chunk was on 85032 **/
 /** chunk id: 729424, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -6,23 +6,23 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk706454 = require("./706454.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk415334 = require("./415334.js");
+  Chunk395356 = require("./395356.js");
 
 function g(e) {
   let {
     className: t
-  } = e, l = ["en-US", "en-GB"].includes((0, o.e7)([c.default], () => c.default.locale)) ? d.intl.string(d.t.OYlggR) : d.intl.string(d.t.Y55Tua), {
+  } = e, a = ["en-US", "en-GB"].includes((0, o.e7)([s.default], () => s.default.locale)) ? d.intl.string(d.t.OYlggR) : d.intl.string(d.t.Y55Tua), {
     trackUserProfileEditAction: g
   } = (0, u.KZ)(), p = i.useCallback(() => {
     g({
       action: "PRESS_ADD_WIDGET"
-    }), (0, s.ZDy)(async () => {
+    }), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("38576").then(n.bind(n, 925170));
@@ -63,13 +63,13 @@ function g(e) {
     })
   }, [g]);
   return (0, r.jsxs)("div", {
-    className: a()(f.header, t),
-    children: [(0, r.jsx)(s.Text, {
+    className: l()(f.header, t),
+    children: [(0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
       color: "text-subtle",
-      children: l
-    }), (0, r.jsx)(s.Button, {
-      icon: s.qJs,
+      children: a
+    }), (0, r.jsx)(c.Button, {
+      icon: c.qJs,
       text: d.intl.string(d.t["lBG2s/"]),
       size: "sm",
       variant: "secondary",

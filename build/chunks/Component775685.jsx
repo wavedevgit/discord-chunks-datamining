@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk749280 = require("./749280.jsx"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk570220 = require("./570220.js"),
   Chunk314734 = require("./314734.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk124886 = require("./124886.js");
+  Chunk259225 = require("./259225.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,12 +63,12 @@ function S(e, t) {
 let I = Chunk473749.forwardRef(function(e, t) {
   let {
     type: n,
-    channelId: o
+    channelId: a
   } = e, {
     tooltipsWithKeybinds: y
   } = m.n.useConfig({
     location: "ChannelAppLauncherButton"
-  }), v = (0, l.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === n && p.Z.activeChannelId() === o), {
+  }), v = (0, l.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === n && p.Z.activeChannelId() === a), {
     Component: I,
     events: T,
     play: C
@@ -82,21 +82,21 @@ let I = Chunk473749.forwardRef(function(e, t) {
     }
   }, [A, T]);
   let N = i.useCallback(() => {
-      v ? f.y(_.ti.DISMISSED) : (f._(_._b.TEXT, n, true, o), d.ux()), C()
-    }, [v, n, o, C]),
+      v ? f.y(_.ti.DISMISSED) : (f._(_._b.TEXT, n, true, a), d.ux()), C()
+    }, [v, n, a, C]),
     P = (0, r.jsx)(I, {
       size: "refresh_sm",
       color: "currentColor"
     });
   return (0, r.jsx)("div", {
-    className: a()(b.buttonContainer, g.t4),
+    className: o()(b.buttonContainer, g.t4),
     ref: t,
     children: (0, r.jsx)(u.u, {
       text: E.intl.string(E.t.dHDxOF),
       shouldShow: y,
       children: (0, r.jsx)(s.P3F, S(O({
         tabIndex: 0,
-        className: a()(b.button, {
+        className: o()(b.button, {
           [b.buttonActive]: v
         }),
         onClick: N,

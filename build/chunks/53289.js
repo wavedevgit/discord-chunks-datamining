@@ -21,8 +21,8 @@ let d = (0, Chunk392711.debounce)(e => {
 
 function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : window,
-    i = (0, o.e7)([s.Z], () => s.Z.keyboardModeEnabled),
-    f = (0, a.Z)(),
+    i = (0, a.e7)([s.Z], () => s.Z.keyboardModeEnabled),
+    f = (0, o.Z)(),
     [p, _] = r.useState(false),
     m = (0, l.Aq)();
   return r.useEffect(() => {
@@ -35,17 +35,17 @@ function f(e, t) {
     var r;
     if (i || !p || !t) return;
     let {
-      current: o
-    } = e, a = f;
+      current: a
+    } = e, o = f;
 
     function s(t) {
       let n = t.relatedTarget;
       setTimeout(() => {
-        null != n && "BUTTON" !== n.tagName || a || d(e)
+        null != n && "BUTTON" !== n.tagName || o || d(e)
       }, 100)
     }
-    return null == o || o.addEventListener("focusout", s), (null == (r = n.document.activeElement) ? true : r.tagName) === "IFRAME" || a || null == o || o.focus(), () => {
-      null == o || o.removeEventListener("focusout", s), a = true
+    return null == a || a.addEventListener("focusout", s), (null == (r = n.document.activeElement) ? true : r.tagName) === "IFRAME" || o || null == a || a.focus(), () => {
+      null == a || a.removeEventListener("focusout", s), o = true
     }
   }, [t, p, i, e, n, f]), _
 }

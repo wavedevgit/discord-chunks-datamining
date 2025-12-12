@@ -18,12 +18,12 @@ function l(e) {
     guildId: t,
     emojiId: n,
     emojiName: r
-  } = e, a = i.De.get(t);
+  } = e, o = i.De.get(t);
   if (null == n && null == r) return null;
   if (null != n)
-    if (null != a) return a.getById(n);
+    if (null != o) return o.getById(n);
     else return null;
-  return null != r ? o.ZP.getByName(r) : null
+  return null != r ? a.ZP.getByName(r) : null
 }
 let c = {
   label: ""
@@ -31,14 +31,14 @@ let c = {
 
 function u(e, t) {
   let n = Array(r.Sn).fill(c);
-  for (let o of t) {
+  for (let a of t) {
     var i;
-    o.position < 0 || o.position >= r.Sn || (n[o.position] = {
-      label: o.label,
+    a.position < 0 || a.position >= r.Sn || (n[a.position] = {
+      label: a.label,
       emoji: null != (i = l({
         guildId: e,
-        emojiId: o.emoji_id,
-        emojiName: o.emoji_name
+        emojiId: a.emoji_id,
+        emojiName: a.emoji_name
       })) ? i : true
     })
   }
@@ -96,7 +96,7 @@ function _(e) {
       emoji_name: null == (r = e.emoji) ? true : r.name,
       emoji_animated: null == (i = e.emoji) ? true : i.animated
     }
-  }).filter(a.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), true !== e.tag && (t.tag = e.tag), true !== e.badge && (t.badge = e.badge), true !== e.badgeColorPrimary && (t.badge_color_primary = e.badgeColorPrimary), true !== e.badgeColorSecondary && (t.badge_color_secondary = e.badgeColorSecondary), t
+  }).filter(o.lm)), null != e.gameApplicationIds && (t.game_application_ids = e.gameApplicationIds), true !== e.tag && (t.tag = e.tag), true !== e.badge && (t.badge = e.badge), true !== e.badgeColorPrimary && (t.badge_color_primary = e.badgeColorPrimary), true !== e.badgeColorSecondary && (t.badge_color_secondary = e.badgeColorSecondary), t
 }
 
 function m(e) {
@@ -107,7 +107,7 @@ function m(e) {
 }
 
 function h(e) {
-  var t, n, r, i, o, a;
+  var t, n, r, i, a, o;
   let {
     guild: l,
     profile: c
@@ -119,12 +119,12 @@ function h(e) {
     icon: l.icon,
     customBanner: l.banner,
     onlineCount: null != (r = null != (n = l.approximate_presence_count) ? n : e.approximate_presence_count) ? r : 0,
-    memberCount: null != (o = null != (i = l.approximate_member_count) ? i : e.approximate_member_count) ? o : 0,
+    memberCount: null != (a = null != (i = l.approximate_member_count) ? i : e.approximate_member_count) ? a : 0,
     visibility: s.k.NOT_SPECIFIED,
     traits: [],
     gameApplicationIds: [],
     gameActivity: {},
-    features: null != (a = l.features) ? a : [],
+    features: null != (o = l.features) ? o : [],
     brandColorPrimary: null,
     tag: null,
     badge: null,

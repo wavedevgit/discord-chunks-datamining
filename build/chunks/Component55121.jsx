@@ -10,7 +10,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk22928 = require("./22928.jsx"),
   Chunk438926 = require("./438926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk475495 = require("./475495.js");
+  Chunk924422 = require("./924422.js");
 
 function u(t) {
   let {
@@ -18,15 +18,15 @@ function u(t) {
     application: n,
     primaryCTAButtonProps: l,
     transitionState: u,
-    onClose: x,
-    hasAlreadyLinked: f,
-    canStartAuthorization: _,
-    bodyText: m,
+    onClose: f,
+    hasAlreadyLinked: x,
+    canStartAuthorization: m,
+    bodyText: _,
     title: g
   } = t;
   return (0, i.jsxs)(a.IX, {
     transitionState: u,
-    onClose: x,
+    onClose: f,
     children: [(0, i.jsx)(o.y, {
       sku: e,
       title: g
@@ -37,17 +37,17 @@ function u(t) {
           variant: "text-md/normal",
           color: "text-subtle",
           className: c.modalBodyText,
-          children: m
+          children: _
         }), (0, i.jsx)(d, {
-          isConnected: f,
+          isConnected: x,
           application: n
         })]
-      }), !_ && !f && (0, i.jsx)(s.Text, {
+      }), !m && !x && (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
         className: c.cannotLinkAccountWarning,
         color: "text-feedback-warning",
         children: r.intl.string(r.t.GDL8wb)
-      }), !f && (0, i.jsx)("div", {
+      }), !x && (0, i.jsx)("div", {
         className: c.expirationWarningContainer,
         children: (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",

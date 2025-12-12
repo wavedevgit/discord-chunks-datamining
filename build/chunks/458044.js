@@ -1,7 +1,7 @@
 /** Chunk was on 18417 **/
 /** chunk id: 458044, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => f
 });
 var Chunk388032 = require("./388032.jsx"),
   Chunk918298 = require("./918298.js"),
@@ -15,13 +15,13 @@ var Chunk388032 = require("./388032.jsx"),
   Chunk140574 = require("./140574.js"),
   Chunk765434 = require("./765434.js");
 
-function x(t) {
+function f(t) {
   return [{
     tags: [a.intl.string(a.t["/XjSo3"]), a.intl.string(a.t["Af/56e"]), a.intl.string(a.t.LNsW0L)],
     posts: [{
       user: {
         name: "pocketman",
-        avatarSrc: d
+        avatarSrc: g
       },
       tagId: 2,
       title: a.intl.string(a.t.g1hPkw),
@@ -34,7 +34,7 @@ function x(t) {
     }, {
       user: {
         name: "skaterdood12",
-        avatarSrc: g
+        avatarSrc: d
       },
       tagId: 1,
       title: a.intl.string(a.t["5GM0TY"]),
@@ -74,14 +74,14 @@ function x(t) {
       messages: [{
         author: {
           name: "skaterdood12",
-          avatarSrc: g,
+          avatarSrc: d,
           isOP: true
         },
         content: a.intl.string(a.t.zEDYfk)
       }, {
         author: {
           name: "pocketman",
-          avatarSrc: d,
+          avatarSrc: g,
           isOP: false
         },
         content: a.intl.string(a.t["+XGMDs"])
@@ -113,7 +113,7 @@ function x(t) {
     }, {
       user: {
         name: "pocketman",
-        avatarSrc: d
+        avatarSrc: g
       },
       tagId: 1,
       title: a.intl.string(a.t.EQIrvX),
@@ -125,7 +125,7 @@ function x(t) {
     }, {
       user: {
         name: "skaterdood12",
-        avatarSrc: g
+        avatarSrc: d
       },
       tagId: 1,
       title: a.intl.string(a.t.f9n6Ue),
@@ -153,14 +153,14 @@ function x(t) {
       messages: [{
         author: {
           name: "skaterdood12",
-          avatarSrc: g,
+          avatarSrc: d,
           isOP: true
         },
         content: a.intl.string(a.t.VeQaUn)
       }, {
         author: {
           name: "pocketman",
-          avatarSrc: d,
+          avatarSrc: g,
           isOP: false
         },
         content: a.intl.string(a.t.lwjElH)
@@ -179,7 +179,7 @@ function x(t) {
     posts: [{
       user: {
         name: "skaterdood12",
-        avatarSrc: g
+        avatarSrc: d
       },
       tagId: null,
       title: a.intl.string(a.t.to6uUe),
@@ -192,7 +192,7 @@ function x(t) {
     }, {
       user: {
         name: "pocketman",
-        avatarSrc: d
+        avatarSrc: g
       },
       tagId: 1,
       title: a.intl.string(a.t.dsQXOj),
@@ -232,14 +232,14 @@ function x(t) {
       messages: [{
         author: {
           name: "skaterdood12",
-          avatarSrc: g,
+          avatarSrc: d,
           isOP: true
         },
         content: a.intl.string(a.t["6DyhGl"])
       }, {
         author: {
           name: "pocketman",
-          avatarSrc: d,
+          avatarSrc: g,
           isOP: false
         },
         content: a.intl.string(a.t.BLiuYI)

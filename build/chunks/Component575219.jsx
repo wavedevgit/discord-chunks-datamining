@@ -22,10 +22,10 @@ let c = {
         status: n
       } = e, {
         user: s
-      } = (0, i.cj)([o.default], () => ({
-        user: o.default.getCurrentUser()
+      } = (0, i.cj)([a.default], () => ({
+        user: a.default.getCurrentUser()
       })), c = Number(t.split("_")[1]);
-      return (0, r.jsx)(a.qE, {
+      return (0, r.jsx)(o.qE, {
         src: null == s ? true : s.getAvatarURL(true, c),
         size: t,
         "aria-label": "Sample User",

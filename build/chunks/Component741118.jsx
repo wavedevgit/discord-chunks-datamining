@@ -58,8 +58,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function h(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = Chunk473749.createContext(null);
@@ -90,7 +90,7 @@ function y(e) {
     O = h(e, ["steps", "currentStepKey", "onStepChange", "onComplete", "stepCount"]);
   let {
     i18n: v
-  } = (0, a.ZF)(), S = O.onClose, I = f.find(e => e.stepKey === _);
+  } = (0, o.ZF)(), S = O.onClose, I = f.find(e => e.stepKey === _);
   if (null == I) throw Error("Step with key ".concat(_, " not found"));
   let T = f.findIndex(e => e.stepKey === _),
     C = T === f.length - 1,
@@ -130,7 +130,7 @@ function y(e) {
         N && L()
       }
     },
-    G = I.hideBackButton || A ? true : (0, r.jsx)(o.A, m(p({}, k, I.backButtonProps), {
+    G = I.hideBackButton || A ? true : (0, r.jsx)(a.A, m(p({}, k, I.backButtonProps), {
       onClick: j
     }));
   return (0, r.jsx)(E.Provider, {

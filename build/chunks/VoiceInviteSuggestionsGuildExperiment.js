@@ -2,12 +2,12 @@
 /** chunk id: 71133, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => o,
-  o: () => a
+  W: () => a,
+  o: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "guild",
   id: "2025-10_voice_invite_suggestions",
   label: "Voice Invite Suggestions",
@@ -24,13 +24,13 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     autoTrackExposure: t,
     location: n,
     guildId: r
   } = e;
-  return o.useExperiment({
+  return a.useExperiment({
     guildId: r,
     location: n
   }, {

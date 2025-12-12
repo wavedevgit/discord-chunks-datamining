@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 789574, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b,
+  Z: () => x,
   j: () => j
 });
 var Chunk54381 = require("./54381.js");
@@ -22,39 +22,39 @@ var Chunk13107 = require("./13107.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function x(e) {
   let {
     refToScroller: t
   } = e, n = (0, l.e7)([g.Z], () => g.Z.getGuild()), {
     section: i,
-    sectionId: s,
-    integrations: a,
+    sectionId: a,
+    integrations: s,
     editedIntegration: o,
-    webhooks: u,
-    editedWebhook: d,
-    isFetching: p,
-    errors: f
-  } = (0, l.cj)([m.default], () => ({
-    editedIntegration: m.default.editedIntegration,
-    editedWebhook: m.default.editedWebhook,
-    errors: m.default.getErrors(),
-    integrations: m.default.integrations,
-    isFetching: m.default.isFetching(),
-    section: m.default.getSection(),
-    sectionId: m.default.getSectionId(),
-    webhooks: m.default.webhooks
+    webhooks: d,
+    editedWebhook: u,
+    isFetching: m,
+    errors: b
+  } = (0, l.cj)([f.default], () => ({
+    editedIntegration: f.default.editedIntegration,
+    editedWebhook: f.default.editedWebhook,
+    errors: f.default.getErrors(),
+    integrations: f.default.integrations,
+    isFetching: f.default.isFetching(),
+    section: f.default.getSection(),
+    sectionId: f.default.getSectionId(),
+    webhooks: f.default.webhooks
   }));
   return null == n ? null : (0, r.jsx)(c.Z, {
     guild: n,
     section: i,
-    sectionId: s,
-    integrations: a,
-    webhooks: u,
+    sectionId: a,
+    integrations: s,
+    webhooks: d,
     editedIntegration: o,
-    editedWebhook: d,
-    isFetchingWebhooks: p,
-    hasChanges: m.default.hasChanges,
-    errors: f,
+    editedWebhook: u,
+    isFetchingWebhooks: m,
+    hasChanges: f.default.hasChanges,
+    errors: b,
     refToScroller: t
   })
 }
@@ -67,14 +67,14 @@ function j() {
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => ({
     guild: Chunk999382.Z.getGuild(),
     submitting: Chunk999382.Z.isSubmitting()
-  })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), b = false, j = null;
-  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (b = true, j = (0, Chunk54381.jsx)(Chunk481060.Text, {
+  })), c = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.can(Chunk981631.Plq.KICK_MEMBERS, exports)), x = false, j = null;
+  return Chunk490655 || (null == (e = Chunk145260.default.editedIntegration) ? true : module.expire_behavior) !== Chunk13107.l.KICK || (x = true, j = (0, Chunk54381.jsx)(Chunk481060.Text, {
     color: "text-feedback-critical",
     variant: "text-md/normal",
     children: Chunk388032.intl.string(Chunk388032.t["mrO/ZQ"])
   })), (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: require,
-    disabled: b,
+    disabled: x,
     errorMessage: j,
     onReset: () => {
       Chunk139387.Z.init(), Chunk821864.Ui(), null != exports && Chunk434404.Z.init(exports.id)

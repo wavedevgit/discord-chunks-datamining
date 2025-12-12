@@ -18,10 +18,10 @@ function A(t) {
   let {
     emailToken: A,
     onClose: _,
-    onBack: C,
-    onNext: d,
+    onBack: d,
+    onNext: C,
     transitionState: x
-  } = t, [N, S] = i.useState(""), [g, p] = i.useState(""), [f, m] = i.useState(false), v = (0, a.e7)([o.Z], () => o.Z.getErrors()), y = i.useRef(null);
+  } = t, [N, S] = i.useState(""), [g, f] = i.useState(""), [p, m] = i.useState(false), v = (0, a.e7)([o.Z], () => o.Z.getErrors()), y = i.useRef(null);
   async function h(t) {
     t.preventDefault(), m(true);
     let n = await (0, s.Mn)({
@@ -29,10 +29,10 @@ function A(t) {
       emailToken: A,
       password: g
     });
-    if (m(false), null == n ? true : n.ok) d(N);
+    if (m(false), null == n ? true : n.ok) C(N);
     else {
       var e, r;
-      (null == n || null == (e = n.body) ? true : e.username) != null ? (0, c.P)() : (null == n || null == (r = n.body) ? true : r.email_token) != null && (null == C || C())
+      (null == n || null == (e = n.body) ? true : e.username) != null ? (0, c.P)() : (null == n || null == (r = n.body) ? true : r.email_token) != null && (null == d || d())
     }
   }
   return i.useEffect(() => {
@@ -47,10 +47,10 @@ function A(t) {
     subtitle: u.intl.string(u.t["1k44EL"]),
     onClose: _,
     transitionState: x,
-    actions: [null != C ? {
+    actions: [null != d ? {
       variant: "secondary",
       text: u.intl.string(u.t["13/7kX"]),
-      onClick: C
+      onClick: d
     } : {
       variant: "secondary",
       text: u.intl.string(u.t["ETE/oC"]),
@@ -58,7 +58,7 @@ function A(t) {
     }, {
       variant: "primary",
       text: u.intl.string(u.t.i4jeWR),
-      loading: f,
+      loading: p,
       onClick: h
     }],
     children: (0, r.jsxs)(l.Kqy, {
@@ -75,7 +75,7 @@ function A(t) {
         error: null == v || null == (e = v.password) ? true : e[0],
         type: "password",
         value: g,
-        onChange: p
+        onChange: f
       })]
     })
   })

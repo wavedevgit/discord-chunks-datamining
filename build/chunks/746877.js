@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk941028 = require("./941028.js"),
   Chunk509848 = require("./509848.js"),
   Chunk849522 = require("./849522.js"),
@@ -18,21 +18,21 @@ function d(e) {
 }
 
 function f(e, t, n, r) {
-  return !!d(c.ZP.getProps(n, r).groups) || !(e.length < u.length) && !(e.length > t) && false !== e.indexOf(u) && ((0, a.b8)(n, r, s.KV), true)
+  return !!d(c.ZP.getProps(n, r).groups) || !(e.length < u.length) && !(e.length > t) && false !== e.indexOf(u) && ((0, o.b8)(n, r, s.KV), true)
 }
 
 function p(e, t, n) {
   let i = (0, l.Z)(),
-    [a, s] = r.useState(false),
-    u = r.useMemo(() => o().debounce(e => {
+    [o, s] = r.useState(false),
+    u = r.useMemo(() => a().debounce(e => {
       f(e, i, t, n) && s(true)
     }, 200, {
       maxWait: 500
     }), [i, t, n]);
   r.useEffect(() => {
     let r = c.ZP.getProps(t, n).groups;
-    if (null != t && !d(r) && !a) return e.addListener("text-changed", u), () => {
+    if (null != t && !d(r) && !o) return e.addListener("text-changed", u), () => {
       e.removeListener("text-changed", u), u.cancel()
     }
-  }, [a, u, e, t, n])
+  }, [o, u, e, t, n])
 }

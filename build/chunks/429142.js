@@ -10,6 +10,6 @@ require.d(exports, {
 let {
   Layer: r,
   LayerContainer: i,
-  LayerProvider: o,
-  layerContext: a
-} = (0, require("./793030.js").Xvx)("Verification"), s = i, l = o, c = a, u = r
+  LayerProvider: a,
+  layerContext: o
+} = (0, require("./793030.js").Xvx)("Verification"), s = i, l = a, c = o, u = r

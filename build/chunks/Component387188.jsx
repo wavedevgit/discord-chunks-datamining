@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk139688 = require("./139688.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk871320 = require("./871320.js");
+  Chunk434604 = require("./434604.js");
 
 function O(e) {
   let {
@@ -45,7 +45,7 @@ function v(e) {
   let {
     message: t,
     className: n
-  } = e, [o, s] = i.useState(false), d = t.getChannelId(), f = (0, g.xE)(t.content), p = i.useCallback(() => {
+  } = e, [a, s] = i.useState(false), d = t.getChannelId(), f = (0, g.xE)(t.content), p = i.useCallback(() => {
     null != f && (0, _.rU)(d, t.id, {
       id: f.id,
       name: f.name
@@ -64,7 +64,7 @@ function v(e) {
       messageId: t.id
     }),
     children: (0, r.jsx)(c.P3F, {
-      className: a()(n, y.ctaReactionButton),
+      className: o()(n, y.ctaReactionButton),
       onClick: p,
       onMouseEnter: () => {
         s(true)
@@ -82,7 +82,7 @@ function v(e) {
             size: "default",
             emojiId: f.id,
             animated: f.animated,
-            isInteracting: o,
+            isInteracting: a,
             channelId: d,
             messageId: t.id,
             className: y.ctaEmoji
@@ -97,14 +97,14 @@ function S(e) {
   let {
     message: t,
     compact: n,
-    usernameHook: o
-  } = e, a = t.content, [l, u] = i.useState(false), _ = (0, d.ZP)(t), O = o(_), v = (0, g.xE)(a), S = i.useCallback(() => {
+    usernameHook: a
+  } = e, o = t.content, [l, u] = i.useState(false), _ = (0, d.ZP)(t), O = a(_), v = (0, g.xE)(o), S = i.useCallback(() => {
     null != v && h.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: ":".concat(v.name, ":"),
-      rawText: a,
+      rawText: o,
       addSpace: true
     })
-  }, [v, a]), I = i.useMemo(() => null == v ? null : {
+  }, [v, o]), I = i.useMemo(() => null == v ? null : {
     src: m.ZP.getEmojiURL({
       id: v.id,
       animated: v.animated,

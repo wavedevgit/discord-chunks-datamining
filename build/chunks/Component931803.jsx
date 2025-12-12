@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk762328 = require("./762328.jsx"),
   Chunk793030 = require("./793030.js"),
-  Chunk708438 = require("./708438.js");
+  Chunk438744 = require("./438744.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ let f = {
         portal: p,
         blockPointerEvents: _
       } = e, [m, h] = i.useState(false);
-      return (0, r.jsx)(o.pS, {
+      return (0, r.jsx)(a.pS, {
         open: m,
         onOpenChange: h,
         placement: t,
@@ -75,7 +75,7 @@ let f = {
         blockPointerEvents: _,
         renderLayer: () => (0, r.jsx)("div", {
           className: s.layer,
-          children: (0, r.jsx)(a.xvT, {
+          children: (0, r.jsx)(o.xvT, {
             variant: "text-sm/medium",
             children: "FloatingLayer Content"
           })
@@ -85,7 +85,7 @@ let f = {
             ref: t,
             props: n
           } = e;
-          return (0, r.jsx)(a.zxk, d(c({
+          return (0, r.jsx)(o.zxk, d(c({
             variant: "primary",
             text: "Target Element",
             onClick: () => h(!m)

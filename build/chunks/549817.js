@@ -74,15 +74,15 @@ function w(e) {
   let n = t ? O.Z.getOnboardingPromptsForOnboarding(e) : O.Z.getOnboardingPrompts(e),
     r = O.Z.getOnboardingResponses(e),
     i = n.map(e => e.options.filter(e => r.includes(e.id))).flat(),
-    o = {},
+    a = {},
     l = {};
   return (n.forEach(e => {
-    o[e.id] = Date.now(), e.options.forEach(e => l[e.id] = Date.now())
-  }), t) ? a.tn.post({
+    a[e.id] = Date.now(), e.options.forEach(e => l[e.id] = Date.now())
+  }), t) ? o.tn.post({
     url: I.ANM.GUILD_ONBOARDING_RESPONSES(e),
     body: {
       onboarding_responses: i.map(e => e.id),
-      onboarding_prompts_seen: o,
+      onboarding_prompts_seen: a,
       onboarding_responses_seen: l
     },
     rejectWithError: true
@@ -94,11 +94,11 @@ function w(e) {
       prompts_seen: t.body.onboarding_prompts_seen,
       options_seen: t.body.onboarding_responses_seen
     })
-  }).catch(e => b.Z.captureException(e)) : a.tn.put({
+  }).catch(e => b.Z.captureException(e)) : o.tn.put({
     url: I.ANM.GUILD_ONBOARDING_RESPONSES(e),
     body: {
       onboarding_responses: i.map(e => e.id),
-      onboarding_prompts_seen: o,
+      onboarding_prompts_seen: a,
       onboarding_responses_seen: l
     },
     rejectWithError: false
@@ -118,29 +118,29 @@ function w(e) {
 }
 
 function D(e, t, n) {
-  var r, o;
-  let a = null != (o = null == (r = m.ZP.getSelfMember(e)) ? true : r.roles) ? o : [];
-  if (f.Z.isViewingRoles(e)) return void(0, d.og)(e, i().difference(i().union(a, t), n));
+  var r, a;
+  let o = null != (a = null == (r = m.ZP.getSelfMember(e)) ? true : r.roles) ? a : [];
+  if (f.Z.isViewingRoles(e)) return void(0, d.og)(e, i().difference(i().union(o, t), n));
   (t.length > 0 || n.length > 0) && s.Z.dispatch({
     type: "GUILD_MEMBER_UPDATE_LOCAL",
     guildId: e,
-    roles: i().difference(i().union(a, t), n),
+    roles: i().difference(i().union(o, t), n),
     addedRoleIds: t,
     removedRoleIds: n
   })
 }
 let x = {
   selectOption(e, t, n, r) {
-    let o = O.Z.getOnboardingPrompt(t);
-    if (null == o) return;
-    let a = o.singleSelect ? i().without(i().map(o.options, "id"), n) : [];
+    let a = O.Z.getOnboardingPrompt(t);
+    if (null == a) return;
+    let o = a.singleSelect ? i().without(i().map(a.options, "id"), n) : [];
     s.Z.dispatch({
       type: "GUILD_ONBOARDING_SELECT_OPTION",
       guildId: e,
       promptId: t,
       optionId: n,
       selected: r,
-      removedOptionIds: a
+      removedOptionIds: o
     })
   },
   updateOnboardingResponses: i().debounce(w, 1e3),
@@ -149,10 +149,10 @@ let x = {
     let n = t.length > 0 ? t[t.length - 1] : null,
       r = O.Z.getSelectedOptions(e),
       i = (0, v.L6)(r),
-      a = (0, v.dX)(r),
+      o = (0, v.dX)(r),
       s = O.Z.getEnabled(e) ? O.Z.getDefaultChannelIds(e) : [],
       [u, p] = (0, v.Ee)(e, t, s),
-      b = [...a, ...s],
+      b = [...o, ...s],
       A = b.map(e => _.Z.getChannel(e)).filter(E.lm),
       P = (0, S.v)(e, new Set(b), A, true).length,
       D = null == n ? [] : n.options.map(e => e.id),
@@ -184,7 +184,7 @@ let x = {
         let n = null != (k = null == (M = m.ZP.getMember(e, t.id)) ? true : M.flags) ? k : 0;
         (0, d.aq)(e, {
           memberOptions: {
-            flags: (0, o.mB)(n, T.q.COMPLETED_ONBOARDING, true)
+            flags: (0, a.mB)(n, T.q.COMPLETED_ONBOARDING, true)
           }
         })
       }
@@ -215,7 +215,7 @@ let x = {
       var n, r;
       let i = null != (r = null == (n = m.ZP.getMember(e, t.id)) ? true : n.flags) ? r : 0;
       await (0, u.e)(e, {
-        flags: (0, o.mB)(i, T.q.COMPLETED_ONBOARDING, false)
+        flags: (0, a.mB)(i, T.q.COMPLETED_ONBOARDING, false)
       })
     }
   }

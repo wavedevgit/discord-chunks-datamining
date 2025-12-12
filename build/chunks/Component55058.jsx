@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk74538 = require("./74538.js"),
   Chunk45474 = require("./45474.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk660770 = require("./660770.js"),
+  Chunk992164 = require("./992164.js"),
   Chunk947866 = require("./947866.js");
 
 function m(e, t, n) {
@@ -83,8 +83,8 @@ let b = function(e) {
       }))
     })
   };
-  return (0, r.jsx)(a.animated.div, {
-    className: o()(p.wrapper, {
+  return (0, r.jsx)(o.animated.div, {
+    className: a()(p.wrapper, {
       [p.invisible]: !t
     }),
     style: y,

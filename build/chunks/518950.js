@@ -28,7 +28,7 @@ function u(e) {
   } = (0, c.Z)({
     user: m,
     guildId: n,
-    size: (0, o.dcp)(u),
+    size: (0, a.dcp)(u),
     showPending: d,
     animateOnHover: f,
     avatarOverride: _
@@ -40,7 +40,7 @@ function u(e) {
     user: m,
     guildId: n,
     avatarDecorationOverride: p,
-    size: (0, a.y9)(u),
+    size: (0, o.y9)(u),
     onlyAnimateOnHoverOrFocus: f
   });
   return {

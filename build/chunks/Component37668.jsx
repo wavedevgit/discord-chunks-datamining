@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk107669 = require("./107669.js");
+  Chunk316067 = require("./316067.js");
 
 function x(t) {
   let {
@@ -57,8 +57,8 @@ function h(t) {
     }({
       action: "WIDGET_REMOVED"
     }, n.getProfileEditAnalyticsOptions())), h(), (0, b.L$)(f.qb.WIDGET_REMOVED)
-  }, [n, h, w]), y = (0, a.e7)([s.default], () => s.default.getUser(d));
-  return null == y ? null : (0, i.jsxs)(l.Modal, {
+  }, [n, h, w]), y = (0, l.e7)([s.default], () => s.default.getUser(d));
+  return null == y ? null : (0, i.jsxs)(a.Modal, {
     transitionState: e,
     onClose: h,
     title: p.intl.string(p.t.Mm07Yc),

@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk544989 = require("./544989.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116649 = require("./116649.js");
+  Chunk155493 = require("./155493.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ function R(e) {
     disableAutoFocus: U = false
   } = e, G = (0, m.ZP)(n.id, N), {
     analyticsLocations: Z
-  } = (0, s.ZP)([...k, a.Z.USER_PROFILE_POPOUT]), F = (0, p.ZB)({
+  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_POPOUT]), F = (0, p.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: N,
@@ -86,7 +86,7 @@ function R(e) {
       }, F))
     },
     Y = !M && (0, l.Z)(n.id),
-    W = () => Y ? (0, r.jsx)(o.sNh, {
+    W = () => Y ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: C.intl.string(C.t["+Xp3hq"]),
       action: () => {
@@ -96,7 +96,7 @@ function R(e) {
         }, F))
       }
     }) : null,
-    K = U ? "div" : o.VqE,
+    K = U ? "div" : a.VqE,
     z = (0, c.Dt)(),
     q = f.ZP.useName(N, R, n);
   return (0, r.jsx)(s.Gt, {
@@ -110,8 +110,8 @@ function R(e) {
       children: (0, r.jsxs)(K, {
         ref: B,
         "aria-labelledby": z,
-        children: [(0, r.jsx)(o.nn4, {
-          children: (0, r.jsx)(o.H, {
+        children: [(0, r.jsx)(a.nn4, {
+          children: (0, r.jsx)(a.H, {
             id: z,
             children: C.intl.format(C.t.KRe1Fk, {
               name: q
@@ -141,7 +141,7 @@ function R(e) {
               themeType: T.l.POPOUT,
               onOpenProfile: Y ? H : true
             })]
-          }), (0, r.jsxs)(o.Ttm, {
+          }), (0, r.jsxs)(a.Ttm, {
             fade: true,
             className: A.body,
             children: [(0, r.jsx)(v.Z, {

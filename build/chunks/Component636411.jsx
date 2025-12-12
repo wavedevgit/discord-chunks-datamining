@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk717461 = require("./717461.js");
+  Chunk87911 = require("./87911.js");
 let E = "https://cdn.discordapp.com/assets/22_211_SuperReactions_GTM_Hero_v09.mp4",
   b = 32;
 
@@ -27,7 +27,7 @@ function y(e) {
   var t, n;
   let {
     onDismiss: i
-  } = e, y = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), O = h.intl.string(h.t.eikz43), v = (0, d.N)(), S = (0, u.N)(), I = (null == v ? true : v.subscription_trial) != null || null != S, T = {
+  } = e, y = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), O = h.intl.string(h.t.eikz43), v = (0, d.N)(), S = (0, u.N)(), I = (null == v ? true : v.subscription_trial) != null || null != S, T = {
     object: _.qAy.BUTTON_CTA,
     section: _.jXE.SUPER_REACTION_PICKER
   };
@@ -46,7 +46,7 @@ function y(e) {
       children: [(0, r.jsx)("div", {
         className: g.contentFill,
         children: (0, r.jsx)(c.Z, {
-          className: o()(g.banner, {
+          className: a()(g.banner, {
             [g.hasTrialOffer]: I
           }),
           src: E,

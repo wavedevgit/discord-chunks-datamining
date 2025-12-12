@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711);
+  o = require.n(Chunk392711);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -26,15 +26,15 @@ class c extends(r = Chunk473749.PureComponent) {
       totalPageCount: e,
       maxVisiblePages: t,
       selectedPage: n
-    } = this.props, r = Math.ceil(exports / 2), i = Math.floor(exports / 2), o = [1, module], [a, s] = o = require <= r ? [1, exports] : require > module - Chunk473749 ? [module - exports + 1, module] : [require - r + 1, require + Chunk473749];
-    return [Math.max(a, 1), Math.min(s, module)]
+    } = this.props, r = Math.ceil(exports / 2), i = Math.floor(exports / 2), a = [1, module], [o, s] = a = require <= r ? [1, exports] : require > module - Chunk473749 ? [module - exports + 1, module] : [require - r + 1, require + Chunk473749];
+    return [Math.max(o, 1), Math.min(s, module)]
   }
   getPageList() {
     let {
       totalPageCount: e,
       selectedPage: t,
       hideMaxPage: n
-    } = this.props, [r, i] = this.getNeighborBounds(), o = {
+    } = this.props, [r, i] = this.getNeighborBounds(), a = {
       type: "BACK",
       key: "back",
       disabled: 1 === exports,
@@ -63,7 +63,7 @@ class c extends(r = Chunk473749.PureComponent) {
       key: "page-".concat(module),
       targetPage: module,
       navigateToPage: () => this.handleJump(module)
-    }), i -= 2), [Chunk392711, ...l, ...a().range(r, Chunk473749 + 1).map(e => ({
+    }), i -= 2), [Chunk392711, ...l, ...o().range(r, Chunk473749 + 1).map(e => ({
       type: "PAGE",
       key: "page-".concat(e),
       targetPage: e,

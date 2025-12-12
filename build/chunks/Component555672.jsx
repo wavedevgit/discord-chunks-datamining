@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk561308 = require("./561308.js"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
-  Chunk451419 = require("./451419.js");
+  Chunk925002 = require("./925002.js");
 let f = [Chunk297781.E6],
   p = [Chunk317261._.WEEK];
 
@@ -28,8 +28,8 @@ let m = e => {
       channel: n,
       selected: i
     } = e, {
-      largeImage: o
-    } = (0, a.rv)({
+      largeImage: a
+    } = (0, o.rv)({
       entry: t,
       showCoverImage: false
     }), p = (0, l.Nq)(t);
@@ -49,10 +49,10 @@ let m = e => {
           }, n))
         })]
       }), (0, r.jsx)(s.f, {
-        src: null == o ? true : o.src,
+        src: null == a ? true : a.src,
         size: 48,
         className: d.thumbnail,
-        alt: null == o ? true : o.alt
+        alt: null == a ? true : a.alt
       })]
     }) : null
   },

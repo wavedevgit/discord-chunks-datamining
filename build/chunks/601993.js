@@ -15,12 +15,12 @@ var Chunk579806 = require("./579806.js"),
   Chunk405826 = require("./405826.js"),
   Chunk358085 = require("./358085.js");
 
-function a() {
+function o() {
   return (null === Chunk579806.Z || true === Chunk579806.Z ? true : Chunk579806.Z.spellCheck) != null
 }
 
 function s() {
-  return (0, Chunk358085.isDesktop)() && a()
+  return (0, Chunk358085.isDesktop)() && o()
 }
 let l = s() ? (0, Chunk405826.N)() : null;
 async function c(e) {
@@ -52,7 +52,7 @@ async function _(e) {
 }
 
 function m(e) {
-  if (!a()) return () => {};
+  if (!o()) return () => {};
   let t = r.Z.spellCheck.on("spellcheck-result", e);
   return null != t ? t : () => {}
 }

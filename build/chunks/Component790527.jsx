@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,15 +28,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk144867 = require("./144867.js"),
+  Chunk509716 = require("./509716.js"),
   Chunk769860 = require("./769860.js");
 
 function P(e, t) {
   if (null == e) return {};
   var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -44,8 +44,8 @@ function P(e, t) {
 function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -65,7 +65,7 @@ function w(e) {
 }
 
 function D(e) {
-  var t, n, o, {
+  var t, n, a, {
       title: R,
       type: D,
       guildBoostProps: x,
@@ -94,8 +94,8 @@ function D(e) {
       subscriptionTier: en = I.Si.TIER_2,
       isLoading: er = false,
       hideBackButton: ei,
-      backButtonText: eo,
-      showEnhancedUpsell: ea,
+      backButtonText: ea,
+      showEnhancedUpsell: eo,
       useSubscribeButtonGradient: es,
       subscribeButtonClassname: el,
       hidePremiumOfferUpsell: ec,
@@ -158,7 +158,7 @@ function D(e) {
         guild: x.guild,
         onClose: W
       });
-      let e = ea ? C.intl.string(C.t.pj0XBN) : true;
+      let e = eo ? C.intl.string(C.t.pj0XBN) : true;
       if (eb)
         if (null != eg) {
           var t, n;
@@ -171,11 +171,11 @@ function D(e) {
         }));
       return (0, r.jsx)(y.Z, {
         className: el,
-        showGradient: ea || es,
+        showGradient: eo || es,
         premiumModalAnalyticsLocation: j,
         subscriptionTier: en,
         size: l.zx.Sizes.SMALL,
-        color: ea || es ? l.zx.Colors.CUSTOM : l.zx.Colors.GREEN,
+        color: eo || es ? l.zx.Colors.CUSTOM : l.zx.Colors.GREEN,
         onClick: () => {
           null == K || K(), W()
         },
@@ -185,15 +185,15 @@ function D(e) {
         }
       })
     },
-    eA = et ? a()(A.artContainer, A.artContainerBoxShadow, F) : a()(A.artContainer, F),
+    eA = et ? o()(A.artContainer, A.artContainerBoxShadow, F) : o()(A.artContainer, F),
     eN = null;
   return null != em.artURL ? eN = (0, r.jsx)("img", {
-    className: a()(B, A.art),
+    className: o()(B, A.art),
     alt: "",
     src: em.artURL
   }) : null != em.artElement && (eN = em.artElement), (0, r.jsxs)(c.Y0X, {
     "data-migration-pending": true,
-    className: a()(A.root, !eb && G),
+    className: o()(A.root, !eb && G),
     "aria-label": R,
     transitionState: Y,
     parentComponent: "PremiumUpsellModal",
@@ -207,11 +207,11 @@ function D(e) {
     }), (0, r.jsx)(c.hzk, {
       "data-migration-pending": true,
       scrollbarType: "none",
-      className: a()(ea ? A.enhancedContent : A.content, !eb && Z),
+      className: o()(eo ? A.enhancedContent : A.content, !eb && Z),
       children: er ? (0, r.jsx)(c.$jN, {}) : eb ? (0, r.jsx)(v.ZP, {
         onClose: W,
         type: D,
-        subscriptionTier: null != (o = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? o : I.Si.TIER_2,
+        subscriptionTier: null != (a = null == eg || null == (n = eg.subscription_trial) ? true : n.sku_id) ? a : I.Si.TIER_2,
         headingText: R,
         context: k,
         analyticsLocationObject: j,
@@ -223,8 +223,8 @@ function D(e) {
         children: [ed, (0, r.jsxs)("div", {
           className: A.bodyContent,
           children: [(0, r.jsxs)(c.Heading, {
-            className: a()(A.header, {
-              [A.enhancedHeader]: ea
+            className: o()(A.header, {
+              [A.enhancedHeader]: eo
             }, V),
             variant: "heading-xl/bold",
             children: [R, ee ? (0, r.jsx)(p.Z, {
@@ -234,38 +234,38 @@ function D(e) {
             affinities: eS
           }) : true, eu, (0, r.jsx)(c.Text, {
             variant: ep ? "text-sm/normal" : "text-md/normal",
-            className: a()(H, A.subHeader),
+            className: o()(H, A.subHeader),
             children: M
           })]
         })]
       })
     }), (0, r.jsxs)(c.mzw, {
       "data-migration-pending": true,
-      className: a()(A.footer, e_, {
-        [A.enhancedFooter]: ea
+      className: o()(A.footer, e_, {
+        [A.enhancedFooter]: eo
       }),
       children: [(0, r.jsxs)("div", {
-        className: a()(A.primaryActions, {
-          [A.enhancedPrimaryActions]: ea
+        className: o()(A.primaryActions, {
+          [A.enhancedPrimaryActions]: eo
         }),
         children: [null != Q ? (0, r.jsx)(l.zx, {
           "data-migration-pending": true,
-          className: a()(A.secondaryAction, X, {
-            [A.enhancedSecondaryAction]: ea
+          className: o()(A.secondaryAction, X, {
+            [A.enhancedSecondaryAction]: eo
           }),
           onClick: q,
           size: l.zx.Sizes.SMALL,
-          color: ea ? l.zx.Colors.CUSTOM : l.zx.Colors.PRIMARY,
+          color: eo ? l.zx.Colors.CUSTOM : l.zx.Colors.PRIMARY,
           look: l.zx.Looks.LINK,
           children: Q
         }) : null, eC()]
-      }), !ei && !ea && (0, r.jsx)(c.Button, {
+      }), !ei && !eo && (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        text: null != eo ? eo : C.intl.string(C.t["13/7kX"]),
+        text: null != ea ? ea : C.intl.string(C.t["13/7kX"]),
         onClick: W
       })]
-    }), ea ? (0, r.jsx)(c.olH, {
+    }), eo ? (0, r.jsx)(c.olH, {
       "data-migration-pending": true,
       onClick: W,
       className: A.closeButton

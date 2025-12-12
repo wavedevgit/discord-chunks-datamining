@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk890663 = require("./890663.js");
+  Chunk991021 = require("./991021.js");
 let f = [{
     getQuestion: () => Chunk388032.intl.string(Chunk388032.t.C4J8UB),
     getAnswer: () => Chunk388032.intl.string(Chunk388032.t.nhkk6k)
@@ -46,9 +46,9 @@ let f = [{
   p = function(e) {
     let {
       className: t
-    } = e, [n, o] = i.useState(null);
+    } = e, [n, a] = i.useState(null);
     return (0, r.jsxs)("div", {
-      className: a()(d.wrapper, t),
+      className: o()(d.wrapper, t),
       children: [(0, r.jsx)(s.Heading, {
         className: d.heading,
         variant: "heading-xxl/bold",
@@ -60,10 +60,10 @@ let f = [{
           return (0, r.jsxs)("div", {
             className: d.listItem,
             children: [(0, r.jsxs)(s.P3F, {
-              className: a()(d.questionWrapper, {
+              className: o()(d.questionWrapper, {
                 [d.questionWrapperExpanded]: i
               }),
-              onClick: () => o(e => e === t ? null : t),
+              onClick: () => a(e => e === t ? null : t),
               tag: "li",
               children: [(0, r.jsx)(s.Text, {
                 className: d.question,

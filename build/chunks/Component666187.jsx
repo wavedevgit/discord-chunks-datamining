@@ -14,9 +14,9 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk993365 = require("./993365.js"),
   Chunk639317 = require("./639317.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk8542 = require("./8542.js"),
-  Chunk979712 = require("./979712.js"),
-  Chunk154257 = require("./154257.js");
+  Chunk132648 = require("./132648.js"),
+  Chunk191228 = require("./191228.js"),
+  Chunk164701 = require("./164701.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -67,8 +67,8 @@ class S extends(r = Chunk473749.Component) {
         maxLength: n
       } = this.props;
       return (0, Chunk54381.jsxs)("div", {
-        className: s()(Chunk8542.maxLength, {
-          [Chunk8542.errorOverflow]: this.hasError()
+        className: s()(Chunk132648.maxLength, {
+          [Chunk132648.errorOverflow]: this.hasError()
         }),
         "aria-hidden": "true",
         children: [null != (e = null == exports ? true : exports.length) ? module : 0, " ", null != require && "/ ".concat(require)]
@@ -80,8 +80,8 @@ class S extends(r = Chunk473749.Component) {
     if (this.props.showCharacterCount || false === this.props.showRemainingCharacterCount) return null;
     let e = this.getCharsLeftLength();
     return null == module ? null : (0, Chunk54381.jsx)("div", {
-      className: s()(Chunk8542.maxLength, {
-        [Chunk8542.errorOverflow]: module < 0
+      className: s()(Chunk132648.maxLength, {
+        [Chunk132648.errorOverflow]: module < 0
       }),
       "aria-hidden": "true",
       children: module
@@ -108,7 +108,7 @@ class S extends(r = Chunk473749.Component) {
       id: E,
       variant: "text-xs/normal",
       color: "text-feedback-critical",
-      className: Chunk8542.errorMessage,
+      className: Chunk132648.errorMessage,
       children: module
     })
   }
@@ -117,8 +117,8 @@ class S extends(r = Chunk473749.Component) {
     let {
       disabled: n,
       value: r,
-      placeholder: o,
-      autoFocus: a,
+      placeholder: a,
+      autoFocus: o,
       minLength: l,
       maxLength: u,
       allowOverflow: d,
@@ -134,20 +134,20 @@ class S extends(r = Chunk473749.Component) {
       inputRef: N
     } = this.props, P = T ? Chunk639317.g : "textarea", R = this.hasError(), w = null != (t = this.props["aria-labelledby"]) ? exports : null == (e = this.context) ? true : module.titleId, D = this.getAriaDescribedBy();
     return (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk979712.inputWrapper, {
-        [Chunk8542.flex]: I
+      className: s()(Chunk191228.inputWrapper, {
+        [Chunk132648.flex]: I
       }),
       children: [(0, Chunk54381.jsxs)("div", {
-        className: s()(Chunk8542.inputMaxLength, {
-          [Chunk8542.flex]: I
+        className: s()(Chunk132648.inputMaxLength, {
+          [Chunk132648.flex]: I
         }),
         children: [(0, Chunk54381.jsx)(Chunk793030.tEY, {
           children: (0, Chunk54381.jsx)(P, {
             type: "text",
-            className: s()(Chunk979712.input, Chunk8542.textArea, Chunk154257.scrollbarDefault, O, {
-              [Chunk979712.error]: R,
-              [Chunk979712.disabled]: require,
-              [Chunk8542.resizeable]: E
+            className: s()(Chunk191228.input, Chunk132648.textArea, Chunk164701.scrollbarDefault, O, {
+              [Chunk191228.error]: R,
+              [Chunk191228.disabled]: require,
+              [Chunk132648.resizeable]: E
             }),
             "aria-labelledby": w,
             "aria-describedby": D,
@@ -194,8 +194,8 @@ class S extends(r = Chunk473749.Component) {
         maxLength: t,
         minLength: n,
         error: r
-      } = this.props, i = [], o = null == (e = this.context) ? true : e.errorId;
-      return null != o && i.push(o), null != r ? i.push(E) : (null != t && i.push(y), null != n && i.push(b)), i.length > 0 ? i.join(" ") : true
+      } = this.props, i = [], a = null == (e = this.context) ? true : e.errorId;
+      return null != a && i.push(a), null != r ? i.push(E) : (null != t && i.push(y), null != n && i.push(b)), i.length > 0 ? i.join(" ") : true
     }), g(this, "onChange", e => {
       let {
         onChange: t,

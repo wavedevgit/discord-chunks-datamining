@@ -51,7 +51,7 @@ function h(e) {
   } = e, g = (0, s.Z)({
     location: "UploadError"
   }), E = () => {
-    (0, a.Z)(), h(), d.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
+    (0, o.Z)(), h(), d.default.track(f.rMx.PREMIUM_PROMOTION_OPENED, {
       location_section: f.jXE.FILE_UPLOAD_UPSELL_MODAL,
       location_object: f.qAy.NAVIGATION_LINK
     }), (0, u.uL)(f.Z5c.APPLICATION_STORE)
@@ -65,7 +65,7 @@ function h(e) {
     onClose: h,
     handleLearnMore: E,
     fileSize: m
-  }) : (0, r.jsx)(o.u_l, {
+  }) : (0, r.jsx)(a.u_l, {
     title: t,
     subtitle: n,
     transitionState: _,

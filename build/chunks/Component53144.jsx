@@ -58,7 +58,7 @@ function g(e) {
   let {
     token: t,
     onClose: n
-  } = e, [o, a] = i.useState("loading");
+  } = e, [a, o] = i.useState("loading");
   i.useEffect(() => {
     u.default.track(d.rMx.ONE_TIME_LOGIN_MODAL_OPENED, {
       has_token: null != t
@@ -67,21 +67,21 @@ function g(e) {
   let p = i.useCallback(async () => {
     try {
       if (null == t) {
-        a("error"), u.default.track(d.rMx.ONE_TIME_LOGIN_ERROR, {
+        o("error"), u.default.track(d.rMx.ONE_TIME_LOGIN_ERROR, {
           source: "web_modal",
           error_reason: "missing_token",
           error_message: "No token provided"
         });
         return
       }
-      a("loading"), u.default.track(d.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
+      o("loading"), u.default.track(d.rMx.ONE_TIME_LOGIN_ATTEMPTED, {
         source: "web_modal"
-      }), await s.Z.oneTimeLogin(t), a("success"), u.default.track(d.rMx.LOGIN_SUCCESSFUL, {
+      }), await s.Z.oneTimeLogin(t), o("success"), u.default.track(d.rMx.LOGIN_SUCCESSFUL, {
         source: "web_modal",
         login_method: "one_time_login"
       })
     } catch (t) {
-      a("error");
+      o("error");
       let e = t instanceof Error ? t.message : "Login failed";
       u.default.track(d.rMx.ONE_TIME_LOGIN_ERROR, {
         source: "web_modal",
@@ -95,12 +95,12 @@ function g(e) {
   }, [p]);
   let _ = i.useCallback(() => {
     u.default.track(d.rMx.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, {
-      current_state: o
+      current_state: a
     }), null == n || n()
-  }, [n, o]);
+  }, [n, a]);
   switch (i.useEffect(() => {
-      "success" === o && (null == n || n(), (0, c.uL)(d.Z5c.ME))
-    }, [o, n]), o) {
+      "success" === a && (null == n || n(), (0, c.uL)(d.Z5c.ME))
+    }, [a, n]), a) {
     case "loading":
     case "success":
       return {
@@ -123,26 +123,26 @@ function E(e) {
     title: t,
     subtitle: n,
     body: i,
-    actions: a
+    actions: o
   } = g(e);
-  return (0, r.jsxs)(o.IX, h(_({}, e), {
+  return (0, r.jsxs)(a.IX, h(_({}, e), {
     onClose: () => {
       var t;
       return Promise.resolve(null == (t = e.onClose) ? true : t.call(e))
     },
     size: "sm",
-    children: [(0, r.jsx)(o.xBx, {
+    children: [(0, r.jsx)(a.xBx, {
       title: null != t ? t : "",
       subtitle: n
-    }), (0, r.jsx)(o.fef, {
+    }), (0, r.jsx)(a.fef, {
       children: i
-    }), (0, r.jsx)(o.Go$, {
-      actions: null != a ? a : [],
+    }), (0, r.jsx)(a.Go$, {
+      actions: null != o ? o : [],
       actionsFullWidth: true
     })]
   }))
 }
 
 function b(e) {
-  (0, a.ZDy)(() => Promise.resolve(t => (0, r.jsx)(E, _({}, t, e))))
+  (0, o.ZDy)(() => Promise.resolve(t => (0, r.jsx)(E, _({}, t, e))))
 }

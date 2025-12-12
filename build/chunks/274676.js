@@ -10,34 +10,34 @@ function i(e) {
   return s(e) ? (e.nodeName || "").toLowerCase() : "#document"
 }
 
-function o(e) {
+function a(e) {
   var t;
   return (null == e || null == (t = e.ownerDocument) ? true : t.defaultView) || window
 }
 
-function a(e) {
+function o(e) {
   var t;
   return null == (t = (s(e) ? e.ownerDocument : e.document) || window.document) ? true : t.documentElement
 }
 
 function s(e) {
-  return !!r() && (e instanceof Node || e instanceof o(e).Node)
+  return !!r() && (e instanceof Node || e instanceof a(e).Node)
 }
 
 function l(e) {
-  return !!r() && (e instanceof Element || e instanceof o(e).Element)
+  return !!r() && (e instanceof Element || e instanceof a(e).Element)
 }
 
 function c(e) {
-  return !!r() && (e instanceof HTMLElement || e instanceof o(e).HTMLElement)
+  return !!r() && (e instanceof HTMLElement || e instanceof a(e).HTMLElement)
 }
 
 function u(e) {
-  return !!r() && "undefined" != typeof ShadowRoot && (e instanceof ShadowRoot || e instanceof o(e).ShadowRoot)
+  return !!r() && "undefined" != typeof ShadowRoot && (e instanceof ShadowRoot || e instanceof a(e).ShadowRoot)
 }
 require.d(exports, {
   Dx: () => T,
-  Jj: () => o,
+  Jj: () => a,
   Kx: () => P,
   Lw: () => C,
   Ow: () => A,
@@ -50,7 +50,7 @@ require.d(exports, {
   gQ: () => O,
   hT: () => y,
   kK: () => l,
-  tF: () => a,
+  tF: () => o,
   tR: () => h,
   wK: () => R,
   wk: () => i
@@ -112,7 +112,7 @@ function I(e) {
 }
 
 function T(e) {
-  return o(e).getComputedStyle(e)
+  return a(e).getComputedStyle(e)
 }
 
 function C(e) {
@@ -127,7 +127,7 @@ function C(e) {
 
 function A(e) {
   if ("html" === i(e)) return e;
-  let t = e.assignedSlot || e.parentNode || u(e) && e.host || a(e);
+  let t = e.assignedSlot || e.parentNode || u(e) && e.host || o(e);
   return u(t) ? t.host : t
 }
 
@@ -140,9 +140,9 @@ function P(e, t, n) {
   var r;
   true === t && (t = []), true === n && (n = true);
   let i = N(e),
-    a = i === (null == (r = e.ownerDocument) ? true : r.body),
-    s = o(i);
-  if (a) {
+    o = i === (null == (r = e.ownerDocument) ? true : r.body),
+    s = a(i);
+  if (o) {
     let e = R(s);
     return t.concat(s, s.visualViewport || [], f(i) ? i : [], e && n ? P(e) : [])
   }

@@ -23,7 +23,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var o, Chunk50153 = require("./50153.js"),
+var a, Chunk50153 = require("./50153.js"),
   Chunk117242 = require("./117242.js"),
   Chunk309987 = require("./309987.js"),
   Chunk329554 = require("./329554.js"),
@@ -54,7 +54,7 @@ var o, Chunk50153 = require("./50153.js"),
   L = ["light", "lighter", "normal", "100", "200", "300", "400"],
   j = ["className", "href", "rel", "target", "title"],
   M = ["alt", "className", "height", "src", "width"],
-  k = (i(o = {}, Chunk606166("public/DraftStyleDefault/depth0"), 0), i(o, Chunk606166("public/DraftStyleDefault/depth1"), 1), i(o, Chunk606166("public/DraftStyleDefault/depth2"), 2), i(o, Chunk606166("public/DraftStyleDefault/depth3"), 3), i(o, Chunk606166("public/DraftStyleDefault/depth4"), 4), o),
+  k = (i(a = {}, Chunk606166("public/DraftStyleDefault/depth0"), 0), i(a, Chunk606166("public/DraftStyleDefault/depth1"), 1), i(a, Chunk606166("public/DraftStyleDefault/depth2"), 2), i(a, Chunk606166("public/DraftStyleDefault/depth3"), 3), i(a, Chunk606166("public/DraftStyleDefault/depth4"), 4), a),
   U = E({
     b: "BOLD",
     code: "CODE",
@@ -97,9 +97,9 @@ var o, Chunk50153 = require("./50153.js"),
     var n = e,
       r = n.style.fontWeight,
       i = n.style.fontStyle,
-      o = n.style.textDecoration;
+      a = n.style.textDecoration;
     return t.withMutations(function(e) {
-      x.indexOf(r) >= 0 ? e.add("BOLD") : L.indexOf(r) >= 0 && e.remove("BOLD"), "italic" === i ? e.add("ITALIC") : "normal" === i && e.remove("ITALIC"), "underline" === o && e.add("UNDERLINE"), "line-through" === o && e.add("STRIKETHROUGH"), "none" === o && (e.remove("UNDERLINE"), e.remove("STRIKETHROUGH"))
+      x.indexOf(r) >= 0 ? e.add("BOLD") : L.indexOf(r) >= 0 && e.remove("BOLD"), "italic" === i ? e.add("ITALIC") : "normal" === i && e.remove("ITALIC"), "underline" === a && e.add("UNDERLINE"), "line-through" === a && e.add("STRIKETHROUGH"), "none" === a && (e.remove("UNDERLINE"), e.remove("STRIKETHROUGH"))
     })
   },
   H = function(e) {
@@ -138,20 +138,20 @@ var o, Chunk50153 = require("./50153.js"),
     }, exports._toBlockConfigs = function(e, t) {
       for (var n = [], r = 0; r < e.length; r++) {
         var i = e[r],
-          o = i.nodeName.toLowerCase();
-        if ("body" === o || H(o)) {
+          a = i.nodeName.toLowerCase();
+        if ("body" === a || H(a)) {
           this._trimCurrentText(), "" !== this.currentText && n.push(this._makeBlockConfig());
-          var a = this.currentDepth,
+          var o = this.currentDepth,
             s = this.wrapper;
-          H(o) && (this.wrapper = o, H(s) && this.currentDepth++), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), t)), this.currentDepth = a, this.wrapper = s;
+          H(a) && (this.wrapper = a, H(s) && this.currentDepth++), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), t)), this.currentDepth = o, this.wrapper = s;
           continue
         }
-        var l = this.blockTypeMap.get(o);
+        var l = this.blockTypeMap.get(a);
         if (true !== l) {
           this._trimCurrentText(), "" !== this.currentText && n.push(this._makeBlockConfig());
           var c = this.currentDepth,
             u = this.wrapper;
-          if (this.wrapper = "pre" === o ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(o, this.wrapper) || l[0] || "unstyled"), !I && v(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
+          if (this.wrapper = "pre" === a ? "pre" : this.wrapper, "string" != typeof l && (l = this.disambiguate(a, this.wrapper) || l[0] || "unstyled"), !I && v(i) && ("unordered-list-item" === l || "ordered-list-item" === l)) {
             var d = i;
             this.currentDepth = Z(d, this.currentDepth)
           }
@@ -164,11 +164,11 @@ var o, Chunk50153 = require("./50153.js"),
           })), this.currentDepth = c, this.wrapper = u;
           continue
         }
-        if ("#text" === o) {
+        if ("#text" === a) {
           this._addTextNode(i, t);
           continue
         }
-        if ("br" === o) {
+        if ("br" === a) {
           this._addBreakNode(i, t);
           continue
         }
@@ -181,12 +181,12 @@ var o, Chunk50153 = require("./50153.js"),
           continue
         }
         var m = t;
-        U.has(o) && (m = m.add(U.get(o))), m = V(i, m), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), m))
+        U.has(a) && (m = m.add(U.get(a))), m = V(i, m), n.push.apply(n, this._toBlockConfigs(Array.from(i.childNodes), m))
       }
       return n
     }, exports._appendText = function(e, t) {
       this.currentText += e;
-      var n, r = a.create({
+      var n, r = o.create({
         style: t,
         entity: this.currentEntity
       });
@@ -226,10 +226,10 @@ var o, Chunk50153 = require("./50153.js"),
       }
     }, exports._toContentBlocks = function(e) {
       for (var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null, n = e.length - 1, i = 0; i <= n; i++) {
-        var o = e[i];
-        o.parent = t, o.prevSibling = i > 0 ? e[i - 1].key : null, o.nextSibling = i < n ? e[i + 1].key : null, o.children = g(o.childConfigs.map(function(e) {
+        var a = e[i];
+        a.parent = t, a.prevSibling = i > 0 ? e[i - 1].key : null, a.nextSibling = i < n ? e[i + 1].key : null, a.children = g(a.childConfigs.map(function(e) {
           return e.key
-        })), this.contentBlocks.push(new l(r({}, o))), this._toContentBlocks(o.childConfigs, o.key)
+        })), this.contentBlocks.push(new l(r({}, a))), this._toContentBlocks(a.childConfigs, a.key)
       }
     }, exports._hoistContainersInBlockConfigs = function(e) {
       var t = this;
@@ -241,18 +241,18 @@ var o, Chunk50153 = require("./50153.js"),
       this._hoistContainersInBlockConfigs(e).forEach(function(e) {
         var n = t._extractTextFromBlockConfigs(e.childConfigs),
           i = n.text,
-          o = n.characterList;
+          a = n.characterList;
         t.contentBlocks.push(new s(r({}, e, {
           text: e.text + i,
-          characterList: e.characterList.concat(o)
+          characterList: e.characterList.concat(a)
         })))
       })
     }, exports._extractTextFromBlockConfigs = function(e) {
       for (var t = e.length - 1, n = "", r = g(), i = 0; i <= t; i++) {
-        var o = e[i];
-        n += o.text, r = r.concat(o.characterList), "" !== n && "unstyled" !== o.type && (n += "\n", r = r.push(r.last()));
-        var a = this._extractTextFromBlockConfigs(o.childConfigs);
-        n += a.text, r = r.concat(a.characterList)
+        var a = e[i];
+        n += a.text, r = r.concat(a.characterList), "" !== n && "unstyled" !== a.type && (n += "\n", r = r.push(r.last()));
+        var o = this._extractTextFromBlockConfigs(a.childConfigs);
+        n += o.text, r = r.concat(o.characterList)
       }
       return {
         text: n,

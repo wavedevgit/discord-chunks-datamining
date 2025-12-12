@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk481060 = require("./481060.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk125988 = require("./125988.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk407780 = require("./407780.js");
+  Chunk101490 = require("./101490.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,7 +70,7 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       avatarPlaceholderSrc: v
     } = (0, c.Z)({
       user: n,
-      avatarDecorationOverride: (null == t ? true : t.type) === a.Z.AVATAR_DECORATION ? t : true,
+      avatarDecorationOverride: (null == t ? true : t.type) === o.Z.AVATAR_DECORATION ? t : true,
       size: b,
       onlyAnimateOnHoverOrFocus: !i
     }), S = d.intl.formatToPlainString(d.t.Do2lxE, {
@@ -80,7 +80,7 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       avatarDecoration: y,
       src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != m ? m : v,
       imageClassName: i ? f.fadeInAvatarImg : true,
-      className: o()(E, f.avatar, {
+      className: a()(E, f.avatar, {
         [f.avatarPurchased]: u && !i
       }),
       size: p,

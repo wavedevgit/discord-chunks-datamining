@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk163289 = require("./163289.js");
+  Chunk747691 = require("./747691.js");
 let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
   N = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_SIZE),
   P = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_ICON_MARGIN),
@@ -42,23 +42,23 @@ let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
     let {
       activeIndex: t,
       stickerPickerCategories: n,
-      categoryListRef: o,
+      categoryListRef: a,
       firstStandardStickerCategoryOffsetTop: l,
       setShouldRenderShortcut: f
-    } = e, _ = (0, u.O)(), g = (0, p.Iu)(e => "" !== e.searchQuery), E = i.useCallback((e, o, l) => {
+    } = e, _ = (0, u.O)(), g = (0, p.Iu)(e => "" !== e.searchQuery), E = i.useCallback((e, a, l) => {
       var u, f;
       let p, E = (null == (u = n[0]) ? true : u.type) === y.Ih.FAVORITE,
         A = +!!E,
         P = (null == (f = n[A]) ? true : f.type) === y.Ih.RECENT,
         w = n.length > 0,
         D = n.length;
-      if (0 === o && E) return (0, r.jsx)("div", {
+      if (0 === a && E) return (0, r.jsx)("div", {
         role: "listitem",
         "aria-setsize": D,
-        "aria-posinset": o,
+        "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
           "aria-label": T.intl.string(T.t.y3LQCG),
-          className: a()(C.stickerCategory, C.stickerCategoryGeneric, {
+          className: o()(C.stickerCategory, C.stickerCategoryGeneric, {
             [C.stickerCategoryGenericDisabled]: w && !E,
             [C.stickerCategoryGenericSelected]: !g && E && 0 === t,
             [C.stickerCategoryGenericLast]: !P
@@ -73,13 +73,13 @@ let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
           })
         })
       }, "favorites");
-      if (o === A && P) return (0, r.jsx)("div", {
+      if (a === A && P) return (0, r.jsx)("div", {
         role: "listitem",
         "aria-setsize": D,
-        "aria-posinset": o,
+        "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
           "aria-label": T.intl.string(T.t.RxAmVC),
-          className: a()(C.stickerCategory, C.stickerCategoryGeneric, C.stickerCategoryGenericLast, {
+          className: o()(C.stickerCategory, C.stickerCategoryGeneric, C.stickerCategoryGenericLast, {
             [C.stickerCategoryGenericDisabled]: w && !P,
             [C.stickerCategoryGenericSelected]: !g && P && t === A
           }),
@@ -93,9 +93,9 @@ let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
           })
         })
       }, "recent");
-      let x = t === o,
-        L = n[o],
-        j = n[o + 1],
+      let x = t === a,
+        L = n[a],
+        j = n[a + 1],
         M = null != j && L.type === y.Ih.GUILD && j.type !== y.Ih.GUILD,
         k = L.type === y.Ih.PACK,
         U = "",
@@ -121,10 +121,10 @@ let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
           children: (0, r.jsx)("div", {
             role: "listitem",
             "aria-setsize": D,
-            "aria-posinset": o,
+            "aria-posinset": a,
             children: (0, r.jsx)(c.P3F, {
               "aria-label": U,
-              className: a()(C.stickerCategory, {
+              className: o()(C.stickerCategory, {
                 [C.firstPartyCategory]: k,
                 [C.firstPartyCategorySelected]: !g && x && k
               }),
@@ -154,16 +154,16 @@ let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       }, [n]),
       onScroll: i.useCallback(e => {
         var t;
-        let n = null == (t = o.current) ? true : t.getListDimensions();
+        let n = null == (t = a.current) ? true : t.getListDimensions();
         null != n && f(e + n.height - w < l)
-      }, [l, o, f])
+      }, [l, a, f])
     }
   },
   U = e => {
     let {
       stickersListRef: t,
       channel: n
-    } = e, o = i.useRef(null), [s, l] = i.useState(true), u = f.ZN.useStore(e => e.activeCategoryIndex), d = (0, E.Sd)(n), {
+    } = e, a = i.useRef(null), [s, l] = i.useState(true), u = f.ZN.useStore(e => e.activeCategoryIndex), d = (0, E.Sd)(n), {
       firstStandardStickerCategoryIndex: p,
       firstStandardStickerCategoryOffsetTop: m,
       guildCategoryCount: h,
@@ -190,16 +190,16 @@ let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
     } = k({
       activeIndex: u,
       stickerPickerCategories: d,
-      categoryListRef: o,
+      categoryListRef: a,
       firstStandardStickerCategoryOffsetTop: m,
       setShouldRenderShortcut: l
     }), S = i.useCallback(e => {
       var t;
-      e(p), null == (t = o.current) || t.scrollTo(m)
+      e(p), null == (t = a.current) || t.scrollTo(m)
     }, [p, m]);
     return (0, r.jsx)(_.Z, {
       className: C.categoryList,
-      categoryListRef: o,
+      categoryListRef: a,
       expressionsListRef: t,
       store: f.ZN,
       listPadding: x,
@@ -209,7 +209,7 @@ let A = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
       categories: d,
       categoryHeight: O,
       children: e => g && s && (0, r.jsx)(c.P3F, {
-        className: a()(C.standardStickerShortcut, {
+        className: o()(C.standardStickerShortcut, {
           [C.invisibleShortcut]: !s
         }),
         onClick: () => S(e),

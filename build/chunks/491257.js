@@ -7,18 +7,18 @@ function t(e, t) {
 }
 module.exports = function(e, n, r, i) {
   n = n || "&", r = r || "=";
-  var o = {};
-  if ("string" != typeof e || 0 === e.length) return o;
-  var a = /\+/g;
+  var a = {};
+  if ("string" != typeof e || 0 === e.length) return a;
+  var o = /\+/g;
   e = e.split(n);
   var s = 1e3;
   i && "number" == typeof i.maxKeys && (s = i.maxKeys);
   var l = e.length;
   s > 0 && l > s && (l = s);
   for (var c = 0; c < l; ++c) {
-    var u, d, f, p, _ = e[c].replace(a, "%20"),
+    var u, d, f, p, _ = e[c].replace(o, "%20"),
       m = _.indexOf(r);
-    m >= 0 ? (u = _.substr(0, m), d = _.substr(m + 1)) : (u = _, d = ""), f = decodeURIComponent(u), p = decodeURIComponent(d), t(o, f) ? Array.isArray(o[f]) ? o[f].push(p) : o[f] = [o[f], p] : o[f] = p
+    m >= 0 ? (u = _.substr(0, m), d = _.substr(m + 1)) : (u = _, d = ""), f = decodeURIComponent(u), p = decodeURIComponent(d), t(a, f) ? Array.isArray(a[f]) ? a[f].push(p) : a[f] = [a[f], p] : a[f] = p
   }
-  return o
+  return a
 }

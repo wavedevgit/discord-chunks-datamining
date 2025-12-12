@@ -2,7 +2,7 @@
 /** chunk id: 789952, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  hasDomParent: () => a,
+  hasDomParent: () => o,
   isDOMRangeCollapsed: () => s,
   normalizeDOMPoint: () => l
 }), require("./415506.js"), require("./388685.js");
@@ -21,12 +21,12 @@ function i(e) {
     focusOffset: e.endOffset
   }
 }
-let o = false;
+let a = false;
 {
   Chunk685578.F3.toSlateRange = (e, t, n) => {
     let {
-      exactMatch: o,
-      suppressThrow: a
+      exactMatch: a,
+      suppressThrow: o
     } = n, {
       anchorNode: l,
       anchorOffset: c,
@@ -34,16 +34,16 @@ let o = false;
       focusOffset: d
     } = i(t), f = s(l, c, u, d);
     if (null == l || null == u || null == c || null == d) {
-      if (a) return null;
+      if (o) return null;
       throw Error("Cannot resolve a Slate range from DOM range")
     }
     let p = r.F3.toSlatePoint(e, [l, c], {
-        exactMatch: o,
-        suppressThrow: a
+        exactMatch: a,
+        suppressThrow: o
       }),
       _ = f ? p : r.F3.toSlatePoint(e, [u, d], {
-        exactMatch: o,
-        suppressThrow: a
+        exactMatch: a,
+        suppressThrow: o
       });
     return null != p && null != _ ? {
       anchor: p,
@@ -54,23 +54,23 @@ let o = false;
   Chunk685578.F3.toSlatePoint = (t, n, r) => {
     let {
       exactMatch: i,
-      suppressThrow: o,
-      direction: a = "forward"
+      suppressThrow: a,
+      direction: o = "forward"
     } = r;
-    i || (n = l(n, a));
+    i || (n = l(n, o));
     try {
       return e(t, n, {
         exactMatch: true,
-        suppressThrow: o
+        suppressThrow: a
       })
     } catch (e) {
-      if (o) return null;
+      if (a) return null;
       throw e
     }
-  }, o = true
+  }, a = true
 }
 
-function a(e, t) {
+function o(e, t) {
   if (null == t) returnfalse;
   for (; null != e;) {
     if (e === t) returntrue;
@@ -90,25 +90,25 @@ function l(e, t) {
     let e = "backward" === t ? r.childNodes.length - 1 : 0;
     r = c(r, e, t)[0]
   }
-  let o = "backward" === t && null != r.textContent ? r.textContent.length : 0;
-  return [r, o]
+  let a = "backward" === t && null != r.textContent ? r.textContent.length : 0;
+  return [r, a]
 }
 
 function c(e, t, n) {
   let {
     childNodes: r
-  } = e, i = r[t], o = t, a = false, s = false;
+  } = e, i = r[t], a = t, o = false, s = false;
   for (;
-    (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!a || !s);) {
-    if (o >= r.length) {
-      a = true, o = t - 1, n = "backward";
+    (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!o || !s);) {
+    if (a >= r.length) {
+      o = true, a = t - 1, n = "backward";
       continue
     }
-    if (o < 0) {
-      s = true, o = t + 1, n = "forward";
+    if (a < 0) {
+      s = true, a = t + 1, n = "forward";
       continue
     }
-    i = r[o], t = o, o += "forward" === n ? 1 : false
+    i = r[a], t = a, a += "forward" === n ? 1 : false
   }
   return [i, t]
 }

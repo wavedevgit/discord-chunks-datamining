@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk676201 = require("./676201.js"),
+  Chunk596039 = require("./596039.js"),
   u = function(e) {
     return e.DEFAULT = "", e.BOLD = "Bold", e.SOLID = "Solid", e
   }(u || {});
@@ -24,9 +24,9 @@ function d(e) {
     className: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(c.container, u),
+    className: a()(c.container, u),
     children: [(0, r.jsx)(s.P3F, {
-      className: o()(c.closeButton, {
+      className: a()(c.closeButton, {
         [c.closeButtonBold]: "Bold" === n,
         [c.closeButtonSolid]: "Solid" === n
       }),
@@ -41,7 +41,7 @@ function d(e) {
         color: "currentColor",
         "aria-hidden": true
       })
-    }), a.tq ? null : (0, r.jsx)("div", {
+    }), o.tq ? null : (0, r.jsx)("div", {
       className: c.keybind,
       "aria-hidden": true,
       children: i

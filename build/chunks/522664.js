@@ -2,35 +2,35 @@
 /** chunk id: 522664, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Eq: () => a,
-  Uj: () => o,
+  Eq: () => o,
+  Uj: () => a,
   gx: () => l,
   qO: () => s
 });
 var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e, t, n, o) {
+function a(e, t, n, a) {
   return r.tn.post({
     url: i.ANM.EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE,
     body: {
       channel_id: e,
       message_id: t,
       attachment_ids: n,
-      embed_ids: o
+      embed_ids: a
     },
     rejectWithError: false
   })
 }
 
-function a(e, t, n, o) {
+function o(e, t, n, a) {
   return r.tn.post({
     url: i.ANM.EXPLICIT_MEDIA_SENDER_REPORT_FALSE_POSITIVE,
     body: {
       channel_id: e,
       message_id: t,
       attachment_ids: n,
-      filenames: o
+      filenames: a
     },
     rejectWithError: false
   })

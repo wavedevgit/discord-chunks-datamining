@@ -28,8 +28,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -37,8 +37,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = new Chunk710845.Z("AVErrorManager");
@@ -63,7 +63,7 @@ class y extends Chunk147913.Z {
     if (__OVERLAY__) return;
     let n = null != (e = Chunk944486.Z.getVoiceChannelId()) ? module : null,
       i = null != require && null != (t = Chunk979651.Z.getVoiceStateForChannel(require)) ? exports : null,
-      o = Chunk199902.Z.getAllActiveStreams(),
+      a = Chunk199902.Z.getAllActiveStreams(),
       u = new Map;
     for (let e of Object.values(Chunk990291.C)) {
       let t = module.getActiveErrors({

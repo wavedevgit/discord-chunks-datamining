@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 830880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => _
+  R: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk252319 = require("./252319.js");
+  Chunk45639 = require("./45639.js");
 
-function _() {
+function b() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
   return Chunk473749.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk54381.jsx)(Chunk907995.f, {
     label: Chunk388032.t.zqv4nV,
@@ -30,7 +30,7 @@ function _() {
       })
     },
     dismissNotice: () => exports(Chunk921944.L.USER_DISMISS),
-    className: Chunk252319.blockedIgnoredSettingsNotice,
+    className: Chunk45639.blockedIgnoredSettingsNotice,
     noticeType: Chunk484710.nq.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   }) : null
 }

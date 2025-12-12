@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 372444, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,74 +14,74 @@ var Chunk120356 = require("./120356.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk678558 = require("./678558.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk736692 = require("./736692.js");
-let m = e => {
+  Chunk255258 = require("./255258.js");
+let f = e => {
   let {
     guild: t,
     analyticsLocation: n,
     className: i,
     buttonProps: l = {
-      color: s.Tt.BRAND_INVERTED,
-      text: d.intl.string(d.t.oqweNx)
+      color: a.Tt.BRAND_INVERTED,
+      text: u.intl.string(u.t.oqweNx)
     },
-    useExpressiveButton: a
+    useExpressiveButton: s
   } = e, {
     color: o,
     text: c
   } = l, g = t.premiumTier + 1;
-  return (0, r.jsx)(u.Z, {
+  return (0, r.jsx)(d.Z, {
     color: o,
     analyticsLocation: n,
     guild: t,
     buttonText: c,
     targetBoostedGuildTier: g,
     className: i,
-    useExpressiveButton: a
+    useExpressiveButton: s
   })
 };
 
-function p(e) {
+function m(e) {
   let {
     header: t,
     text: i,
-    analyticsLocation: s,
-    guild: u,
-    className: d,
-    textColor: p,
-    headerColor: f,
-    buttonProps: h,
-    useExpressiveButton: x
+    analyticsLocation: a,
+    guild: d,
+    className: u,
+    textColor: m,
+    headerColor: b,
+    buttonProps: p,
+    useExpressiveButton: h
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: x
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
   return (0, r.jsx)(c.Gt, {
-    value: b,
+    value: x,
     children: (0, r.jsxs)("div", {
-      className: l()(g.banner, d),
+      className: l()(g.banner, u),
       children: [(0, r.jsx)("img", {
         className: g.__invalid_headerGraphic,
         alt: "",
         src: n(322393)
       }), (0, r.jsxs)("div", {
         className: g.content,
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-lg/semibold",
-          color: null != f ? f : "always-white",
+          color: null != b ? b : "always-white",
           className: g.header,
           children: t
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          color: null != p ? p : "always-white",
+          color: null != m ? m : "always-white",
           children: i
         })]
       }), (0, r.jsx)("div", {
         className: g.ctaContainer,
-        children: (0, r.jsx)(m, {
-          guild: u,
-          analyticsLocation: s,
+        children: (0, r.jsx)(f, {
+          guild: d,
+          analyticsLocation: a,
           className: g.button,
-          buttonProps: h,
-          useExpressiveButton: x
+          buttonProps: p,
+          useExpressiveButton: h
         })
       })]
     })

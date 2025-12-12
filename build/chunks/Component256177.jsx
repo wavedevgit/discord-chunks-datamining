@@ -32,10 +32,10 @@ let s = {
       }, []), E = i.useCallback(() => {
         _(e => !e)
       }, []);
-      return (0, r.jsxs)(a.Kqy, {
+      return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, r.jsx)(o.$q, {
+        children: [(0, r.jsx)(a.$q, {
           "data-migration-pending": true,
           value: p,
           onChange: m,
@@ -46,29 +46,29 @@ let s = {
           size: c,
           align: u,
           shape: d,
-          children: (0, r.jsx)(a.Text, {
+          children: (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             children: f
           })
-        }), (0, r.jsxs)(a.Text, {
+        }), (0, r.jsxs)(o.Text, {
           variant: "text-sm/normal",
           children: ["Current state: ", p ? "Checked" : "Unchecked"]
-        }), (0, r.jsxs)(a.Kqy, {
+        }), (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(a.Button, {
+          children: [(0, r.jsx)(o.Button, {
             variant: "secondary",
             size: "sm",
             text: "Check",
             onClick: h,
             disabled: t || n
-          }), (0, r.jsx)(a.Button, {
+          }), (0, r.jsx)(o.Button, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
             onClick: g,
             disabled: t || n
-          }), (0, r.jsx)(a.Button, {
+          }), (0, r.jsx)(o.Button, {
             variant: "primary",
             size: "sm",
             text: "Toggle",

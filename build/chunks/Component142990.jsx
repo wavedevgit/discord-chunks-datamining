@@ -26,10 +26,10 @@ function p(e) {
     }),
     react: (e, t, n) => {
       let s = e.target[0];
-      return (0, o.mG)(s) ? (0, r.jsxs)(i.Fragment, {
+      return (0, a.mG)(s) ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("span", {
           children: s
-        }), (0, r.jsx)(a.Z, {
+        }), (0, r.jsx)(o.Z, {
           url: s
         }, s)]
       }, n.key) : (0, l.$2)(s) ? (0, r.jsxs)(i.Fragment, {

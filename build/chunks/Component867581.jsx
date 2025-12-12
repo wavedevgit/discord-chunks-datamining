@@ -1,4 +1,4 @@
-/** Chunk was on 24209 **/
+/** Chunk was on 92241 **/
 /** chunk id: 867581, original params: e,t,n (module,exports,require) **/
 let r, o;
 require.d(exports, {
@@ -15,41 +15,41 @@ var Chunk54381 = require("./54381.js"),
   Chunk782605 = require("./782605.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk604509 = require("./604509.js"),
+  Chunk391972 = require("./391972.js"),
   Chunk216019 = require("./216019.js"),
   Chunk286359 = require("./286359.js");
-let O = "hTKzmak",
-  S = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
-  b = [O, "".concat(S).concat(O), "".concat(S).concat("wumpus-friends")],
+let T = "hTKzmak",
+  O = (r = window.GLOBAL_ENV.INVITE_HOST, o = "", null == r && (r = location.host, o = Chunk981631.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(r).concat(o, "/")),
+  S = [T, "".concat(O).concat(T), "".concat(O).concat("wumpus-friends")],
   E = e => {
     let {
       onClick: t
     } = e;
-    return (0, i.jsxs)(s.P3F, {
-      className: I.rowContainer,
+    return (0, a.jsxs)(c.P3F, {
+      className: b.rowContainer,
       onClick: () => {
-        t(), (0, d.uL)(m.Z5c.GUILD_DISCOVERY)
+        t(), (0, f.uL)(m.Z5c.GUILD_DISCOVERY)
       },
-      children: [(0, i.jsx)("img", {
+      children: [(0, a.jsx)("img", {
         width: 40,
         height: 40,
-        className: I.rowIcon,
-        alt: "",
-        src: T
-      }), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(s.Heading, {
-          className: I.rowText,
-          variant: "heading-md/semibold",
-          children: f.intl.string(f.t.DwDxDU)
-        }), (0, i.jsx)(s.Text, {
-          className: I.rowText,
-          variant: "text-xs/normal",
-          children: f.intl.string(f.t["5RL4CD"])
-        })]
-      }), (0, i.jsx)("img", {
-        className: I.rowArrow,
+        className: b.rowIcon,
         alt: "",
         src: N
+      }), (0, a.jsxs)("div", {
+        children: [(0, a.jsx)(c.Heading, {
+          className: b.rowText,
+          variant: "heading-md/semibold",
+          children: _.intl.string(_.t.DwDxDU)
+        }), (0, a.jsx)(c.Text, {
+          className: b.rowText,
+          variant: "text-xs/normal",
+          children: _.intl.string(_.t["5RL4CD"])
+        })]
+      }), (0, a.jsx)("img", {
+        className: b.rowArrow,
+        alt: "",
+        src: I
       })]
     })
   };
@@ -59,106 +59,106 @@ function g(e) {
     onBack: t,
     onClose: n,
     isSlideReady: r
-  } = e, [o, d] = l.useState(""), [m, N] = l.useState(false), [T, g] = l.useState(null), C = l.useRef(null);
-  l.useEffect(() => {
+  } = e, [o, f] = i.useState(""), [m, I] = i.useState(false), [N, g] = i.useState(null), C = i.useRef(null);
+  i.useEffect(() => {
     var e;
     r && (null == (e = C.current) || e.focus())
   }, [r]);
   let h = e => {
     e.preventDefault();
     let t = o.trim();
-    if ("" === t) return void g(f.intl.string(f.t.IRq5ah));
-    g(null), N(true);
+    if ("" === t) return void g(_.intl.string(_.t.IRq5ah));
+    g(null), I(true);
     let r = t.split("/"),
-      i = r[r.length - 1];
-    c.ZP.resolveInvite(i, "Join Guild", {
+      a = r[r.length - 1];
+    s.ZP.resolveInvite(a, "Join Guild", {
       inputValue: t
     }).then(e => {
       let {
         invite: t
       } = e;
-      if (N(false), null == t) return void g(f.intl.string(f.t["GEYI+Z"]));
+      if (I(false), null == t) return void g(_.intl.string(_.t["GEYI+Z"]));
       if (null != t.channel) {
-        let e = c.ZP.getInviteContext("Join Guild", t);
-        c.ZP.acceptInvite({
+        let e = s.ZP.getInviteContext("Join Guild", t);
+        s.ZP.acceptInvite({
           inviteKey: t.code,
           context: e,
           callback: e => {
-            n(), c.ZP.transitionToInvite(e)
+            n(), s.ZP.transitionToInvite(e)
           }
         }).then(() => {}, e => {
-          e instanceof u.yZ || e instanceof u.Hx ? g((0, p.O)(e.code)) : g(f.intl.string(f.t.dDZRdy))
+          e instanceof u.yZ || e instanceof u.Hx ? g((0, p.O)(e.code)) : g(_.intl.string(_.t.dDZRdy))
         })
       }
     }, e => {
-      N(false);
+      I(false);
       let t = new u.yZ(e);
       g((0, p.O)(t.code))
     })
   };
-  return (0, i.jsxs)("div", {
-    children: [(0, i.jsxs)(s.xBx, {
+  return (0, a.jsxs)("div", {
+    children: [(0, a.jsxs)(c.xBx, {
       "data-migration-pending": true,
-      className: I.header,
-      direction: _.Z.Direction.VERTICAL,
+      className: b.header,
+      direction: d.Z.Direction.VERTICAL,
       separator: false,
-      children: [(0, i.jsx)(s.Heading, {
-        className: I.title,
+      children: [(0, a.jsx)(c.Heading, {
+        className: b.title,
         variant: "heading-xl/semibold",
-        children: f.intl.string(f.t.riOUtB)
-      }), (0, i.jsx)(s.Text, {
+        children: _.intl.string(_.t.riOUtB)
+      }), (0, a.jsx)(c.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: f.intl.string(f.t["7jub2t"])
-      }), (0, i.jsx)(s.olH, {
+        children: _.intl.string(_.t["7jub2t"])
+      }), (0, a.jsx)(c.olH, {
         "data-migration-pending": true,
-        className: I.closeButton,
+        className: b.closeButton,
         onClick: n
       })]
-    }), (0, i.jsxs)(s.hzk, {
+    }), (0, a.jsxs)(c.hzk, {
       "data-migration-pending": true,
-      className: I.__invalid_content,
-      children: [(0, i.jsx)("form", {
+      className: b.__invalid_content,
+      children: [(0, a.jsx)("form", {
         onSubmit: h,
-        className: I.inputForm,
-        children: (0, i.jsx)(s.oil, {
-          label: f.intl.string(f.t.qreV25),
+        className: b.inputForm,
+        children: (0, a.jsx)(c.oil, {
+          label: _.intl.string(_.t.qreV25),
           required: true,
-          error: T,
+          error: N,
           value: o,
-          onChange: d,
-          placeholder: "".concat(S).concat(O),
+          onChange: f,
+          placeholder: "".concat(O).concat(T),
           inputRef: C
         })
-      }), (0, i.jsx)(s.Text, {
+      }), (0, a.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: f.intl.string(f.t.Bnq46H)
-      }), (0, i.jsx)("div", {
-        className: I.sampleLinks,
-        children: b.map(e => (0, i.jsx)(s.P3F, {
-          className: I.sampleLink,
-          onClick: () => d(e),
+        children: _.intl.string(_.t.Bnq46H)
+      }), (0, a.jsx)("div", {
+        className: b.sampleLinks,
+        children: S.map(e => (0, a.jsx)(c.P3F, {
+          className: b.sampleLink,
+          onClick: () => f(e),
           children: e
         }, e))
-      }), (0, i.jsx)(E, {
+      }), (0, a.jsx)(E, {
         onClick: n
       })]
-    }), (0, i.jsxs)(s.mzw, {
+    }), (0, a.jsxs)(c.mzw, {
       "data-migration-pending": true,
-      className: I.footer,
-      children: [(0, i.jsx)(s.Button, {
+      className: b.footer,
+      children: [(0, a.jsx)(c.Button, {
         variant: "primary",
-        text: f.intl.string(f.t["Ts/9Ac"]),
+        text: _.intl.string(_.t["Ts/9Ac"]),
         loading: m,
         onClick: h
-      }), (0, i.jsx)(a.zx, {
+      }), (0, a.jsx)(l.zx, {
         "data-migration-pending": true,
-        color: a.zx.Colors.PRIMARY,
-        look: a.zx.Looks.LINK,
-        size: a.zx.Sizes.MIN,
+        color: l.zx.Colors.PRIMARY,
+        look: l.zx.Looks.LINK,
+        size: l.zx.Sizes.MIN,
         onClick: t,
-        children: f.intl.string(f.t["13/7kX"])
+        children: _.intl.string(_.t["13/7kX"])
       })]
     })]
   })

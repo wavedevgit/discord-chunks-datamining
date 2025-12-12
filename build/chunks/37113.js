@@ -4,7 +4,7 @@
 require.d(exports, {
   ApplicationStreamFPS: () => l,
   ApplicationStreamPresets: () => c,
-  ApplicationStreamResolutions: () => a,
+  ApplicationStreamResolutions: () => o,
   L9: () => u,
   ND: () => f,
   WC: () => _,
@@ -19,7 +19,7 @@ require.d(exports, {
 var Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  a = function(e) {
+  o = function(e) {
     return e[e.RESOLUTION_480 = 480] = "RESOLUTION_480", e[e.RESOLUTION_720 = 720] = "RESOLUTION_720", e[e.RESOLUTION_1080 = 1080] = "RESOLUTION_1080", e[e.RESOLUTION_1440 = 1440] = "RESOLUTION_1440", e[e.RESOLUTION_SOURCE = 0] = "RESOLUTION_SOURCE", e
   }({});
 
@@ -170,7 +170,7 @@ function p(e, t) {
 }
 let _ = [p(720), p(1080), p(1440), p(0, () => Chunk388032.intl.string(Chunk388032.t.XjXqzh))],
   m = [p(720), p(1080), p(1440)],
-  h = e => 0 === e ? o.intl.string(o.t.XjXqzh) : o.intl.formatToPlainString(o.t.TEOC0I, {
+  h = e => 0 === e ? a.intl.string(a.t.XjXqzh) : a.intl.formatToPlainString(a.t.TEOC0I, {
     resolution: e
   }),
   g = [p(480, () => h(480)), p(720, () => h(720)), p(1080, () => h(1080)), p(1440, () => h(1440)), p(0, () => h(0))],

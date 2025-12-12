@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk124072 = require("./124072.jsx"),
   Chunk457926 = require("./457926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk695719 = require("./695719.js");
+  Chunk902682 = require("./902682.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,8 +64,8 @@ function I(e, t) {
 let T = function(e) {
   let {
     gameId: t,
-    channelId: o
-  } = e, O = i.useRef(null), S = (0, s.e7)([m.Z], () => m.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(o)), C = null != T ? T.getGuildId() : null, A = null != S ? e => {
+    channelId: a
+  } = e, O = i.useRef(null), S = (0, s.e7)([m.Z], () => m.Z.getDetectableGame(t)), T = (0, s.e7)([_.Z], () => _.Z.getChannel(a)), C = null != T ? T.getGuildId() : null, A = null != S ? e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -77,7 +77,7 @@ let T = function(e) {
     })
   } : true, N = null != S ? (0, r.jsx)("img", {
     alt: "",
-    className: a()(y.icon, y.imageIcon),
+    className: o()(y.icon, y.imageIcon),
     src: h.ZP.getApplicationIconURL({
       id: S.id,
       icon: S.icon,

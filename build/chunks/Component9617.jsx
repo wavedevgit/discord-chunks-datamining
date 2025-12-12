@@ -17,14 +17,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk700803 = require("./700803.js");
+  Chunk983240 = require("./983240.js");
 let g = () => {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = module === Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, g = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
   return (0, Chunk54381.jsx)(Chunk993413.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.Jzj9q4),
     description: Chunk388032.intl.string(Chunk388032.t.lfF1Sp),
     titleIcon: require ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
-      className: Chunk700803.newBadge,
+      className: Chunk983240.newBadge,
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null,
     borderType: Chunk504983.Y.LIMITED,

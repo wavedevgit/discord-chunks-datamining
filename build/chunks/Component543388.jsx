@@ -10,7 +10,7 @@ var Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk925329 = require("./925329.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk56651 = require("./56651.js");
+  Chunk147685 = require("./147685.js");
 
 function c(e) {
   let {
@@ -18,8 +18,8 @@ function c(e) {
     children: n
   } = e;
   return (0, r.jsx)(i.i_, {
-    asset: (0, r.jsx)(a.Z, {
-      size: a.A.MEDIUM_LARGE,
+    asset: (0, r.jsx)(o.Z, {
+      size: o.A.MEDIUM_LARGE,
       game: t
     }),
     body: s.intl.format(s.t.J3s8JP, {
@@ -28,7 +28,7 @@ function c(e) {
     position: "top",
     asContainer: true,
     "aria-label": s.intl.string(s.t["5nMcv1"]),
-    children: (0, r.jsx)(o.P3F, {
+    children: (0, r.jsx)(a.P3F, {
       tag: "span",
       children: n
     })
@@ -43,7 +43,7 @@ function u(e) {
   } = e;
   return (0, r.jsxs)(c, {
     application: t,
-    children: [n ? null : (0, r.jsx)(o.iWm, {
+    children: [n ? null : (0, r.jsx)(a.iWm, {
       className: l.gameIcon,
       size: "custom",
       width: 14,

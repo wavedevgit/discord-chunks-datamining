@@ -2,8 +2,8 @@
 /** chunk id: 491819, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  MY: () => o,
-  Xr: () => a
+  MY: () => a,
+  Xr: () => o
 });
 var Chunk474936 = require("./474936.js");
 
@@ -16,21 +16,21 @@ function i(e) {
   return null != n ? n : r.Xh.NONE_MONTH
 }
 
-function o(e) {
+function a(e) {
   return e.find(e => {
     let t = r.GP[e.planId];
     return null != t && null != t.premiumType
   })
 }
 
-function a(e, t, n) {
-  let a = o(e);
-  if (null == a) {
+function o(e, t, n) {
+  let o = a(e);
+  if (null == o) {
     if (e.length > 0) {
       let i = r.GP[e[0].planId];
       t = i.interval, n = i.intervalCount
     }
     return i(t, n)
   }
-  return a.planId
+  return o.planId
 }

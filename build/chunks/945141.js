@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk433517 = require("./433517.js"),
   Chunk147913 = require("./147913.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,23 +15,23 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = "formGuidelinesStorageKey";
+let o = "formGuidelinesStorageKey";
 class s extends Chunk147913.Z {
   _initialize() {
-    let e = Chunk433517.K.get(a);
+    let e = Chunk433517.K.get(o);
     null != module && (this.seenForumGuidelines = new Set(module))
   }
   _terminate() {
-    Chunk433517.K.set(a, this.seenForumGuidelines)
+    Chunk433517.K.set(o, this.seenForumGuidelines)
   }
   markAsSeen(e) {
-    this.seenForumGuidelines.add(e), r.K.set(a, this.seenForumGuidelines)
+    this.seenForumGuidelines.add(e), r.K.set(o, this.seenForumGuidelines)
   }
   hasSeen(e) {
     return this.seenForumGuidelines.has(e)
   }
   constructor(...e) {
-    super(...e), o(this, "seenForumGuidelines", new Set)
+    super(...e), a(this, "seenForumGuidelines", new Set)
   }
 }
 let l = new s

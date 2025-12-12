@@ -8,8 +8,8 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk512250 = require("./512250.js"),
-  Chunk156843 = require("./156843.js");
+  Chunk575953 = require("./575953.js"),
+  Chunk901195 = require("./901195.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,8 +54,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,36 +63,36 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = {
-    VERTICAL: Chunk512250.flexVertical,
-    HORIZONTAL: Chunk512250.flexHorizontal,
-    HORIZONTAL_REVERSE: Chunk512250.flexHorizontalReverse
+    VERTICAL: Chunk575953.flexVertical,
+    HORIZONTAL: Chunk575953.flexHorizontal,
+    HORIZONTAL_REVERSE: Chunk575953.flexHorizontalReverse
   },
   E = {
-    START: Chunk512250.flexJustifyStart,
-    END: Chunk512250.flexJustifyEnd,
-    CENTER: Chunk512250.flexJustifyCenter,
-    BETWEEN: Chunk512250.flexJustifyBetween,
-    AROUND: Chunk512250.flexJustifyAround
+    START: Chunk575953.flexJustifyStart,
+    END: Chunk575953.flexJustifyEnd,
+    CENTER: Chunk575953.flexJustifyCenter,
+    BETWEEN: Chunk575953.flexJustifyBetween,
+    AROUND: Chunk575953.flexJustifyAround
   },
   b = {
-    NO_WRAP: Chunk512250.flexNowrap,
-    WRAP: Chunk512250.flexWrap,
-    WRAP_REVERSE: Chunk512250.flexWrapReverse
+    NO_WRAP: Chunk575953.flexNowrap,
+    WRAP: Chunk575953.flexWrap,
+    WRAP_REVERSE: Chunk575953.flexWrapReverse
   },
   y = {
-    START: Chunk512250.flexAlignStart,
-    END: Chunk512250.flexAlignEnd,
-    CENTER: Chunk512250.flexAlignCenter,
-    STRETCH: Chunk512250.flexAlignStretch
+    START: Chunk575953.flexAlignStart,
+    END: Chunk575953.flexAlignEnd,
+    CENTER: Chunk575953.flexAlignCenter,
+    STRETCH: Chunk575953.flexAlignStretch
   },
   O = {
-    SMALL: Chunk156843.flexGutterSmall,
-    LARGE: Chunk156843.flexGutterLarge
+    SMALL: Chunk901195.flexGutterSmall,
+    LARGE: Chunk901195.flexGutterLarge
   };
 class v extends(r = Chunk473749.PureComponent) {
   render() {
@@ -112,8 +112,8 @@ class v extends(r = Chunk473749.PureComponent) {
           flexGrow: i,
           flexShrink: r,
           flexBasis: Chunk120356
-        }, Chunk512250),
-        className: require === Chunk156843.flexChild ? require : l()(Chunk156843.flexChild, require)
+        }, Chunk575953),
+        className: require === Chunk901195.flexChild ? require : l()(Chunk901195.flexChild, require)
       }, p);
     if (!d && "string" != typeof exports && 1 === Chunk473749.Children.count(exports)) {
       let e = Chunk473749.Children.only(exports);
@@ -125,7 +125,7 @@ class v extends(r = Chunk473749.PureComponent) {
   }
 }
 d(v, "defaultProps", {
-  className: Chunk156843.flexChild,
+  className: Chunk901195.flexChild,
   style: {},
   wrap: false
 });
@@ -137,7 +137,7 @@ class S extends(i = Chunk473749.PureComponent) {
         className: n,
         direction: r,
         justify: i,
-        align: a,
+        align: o,
         wrap: s,
         shrink: c,
         grow: d,
@@ -147,13 +147,13 @@ class S extends(i = Chunk473749.PureComponent) {
       } = module,
       E = m(module, ["children", "className", "direction", "justify", "align", "wrap", "shrink", "grow", "basis", "style", "gutter"]),
       b = f({
-        flexShrink: Chunk512250,
+        flexShrink: Chunk575953,
         flexGrow: d,
         flexBasis: p
       }, h);
     return (0, Chunk54381.jsx)("div", _(f({
       style: b,
-      className: l()(Chunk156843.flex, r, i, Chunk473749, Chunk120356, g, require)
+      className: l()(Chunk901195.flex, r, i, Chunk473749, Chunk120356, g, require)
     }, E), {
       children: exports
     }))

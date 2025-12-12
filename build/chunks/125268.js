@@ -1,4 +1,4 @@
-/** Chunk was on 46931 **/
+/** Chunk was on 48615 **/
 /** chunk id: 125268, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AX: () => s,
@@ -8,8 +8,8 @@ require.d(exports, {
   LT: () => v,
   ZZ: () => p,
   cV: () => u,
-  fW: () => _,
-  gr: () => m,
+  fW: () => m,
+  gr: () => b,
   oW: () => c
 });
 var Chunk261470 = require("./261470.js"),
@@ -77,7 +77,7 @@ function p(e, t) {
   })
 }
 
-function m(e, t, n) {
+function b(e, t, n) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_UPDATE_EMOJI_HOSE",
     emojiHose: e,
@@ -86,7 +86,7 @@ function m(e, t, n) {
   })
 }
 
-function _(e, t) {
+function m(e, t) {
   l.Z.dispatch({
     type: "SHARED_CANVAS_CLEAR_DRAWABLES",
     drawables: e,

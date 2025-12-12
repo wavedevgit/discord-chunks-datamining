@@ -1,0 +1,22 @@
+/** Chunk was on web.js **/
+/** chunk id: 918820, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  topPerksCard: "_3add81a1a1ae9da9-topPerksCard",
+  animatedTopPerksCard: "_3add81a1a1ae9da9-animatedTopPerksCard",
+  animate: "_3add81a1a1ae9da9-animate",
+  fadeEffects: "_3add81a1a1ae9da9-fadeEffects",
+  topPerksCardImageWrapper: "_3add81a1a1ae9da9-topPerksCardImageWrapper",
+  contentContainer: "_3add81a1a1ae9da9-contentContainer",
+  buttonsContainer: "_3add81a1a1ae9da9-buttonsContainer",
+  button: "_3add81a1a1ae9da9-button",
+  topPerksCardImage: "_3add81a1a1ae9da9-topPerksCardImage",
+  topPerksCardHeading: "_3add81a1a1ae9da9-topPerksCardHeading",
+  topPerksCardDescription: "_3add81a1a1ae9da9-topPerksCardDescription",
+  topPerksCardNew: "_3add81a1a1ae9da9-topPerksCardNew",
+  topPerksCardLabelContainer: "_3add81a1a1ae9da9-topPerksCardLabelContainer",
+  labelsContainer: "_3add81a1a1ae9da9-labelsContainer",
+  intObserver: "_3add81a1a1ae9da9-intObserver",
+  shineLine: "_3add81a1a1ae9da9-shineLine",
+  shineEffect: "_3add81a1a1ae9da9-shineEffect"
+}

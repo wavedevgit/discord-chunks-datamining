@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 56706, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk358820 = require("./358820.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk451429 = require("./451429.js"),
-  Chunk877600 = require("./877600.js");
+  Chunk663618 = require("./663618.js"),
+  Chunk533477 = require("./533477.js");
 
 function p() {
   let [e, t] = Chunk473749.useState(30), n = Chunk473749.useCallback(() => {
@@ -22,15 +22,15 @@ function p() {
     })
   }, []);
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk451429.panel,
+    className: Chunk663618.panel,
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk877600.panelInner,
+      className: Chunk533477.panelInner,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk877600.panelHeader,
+        className: Chunk533477.panelHeader,
         variant: "text-lg/bold",
         children: "Voice Filters"
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk533477.panelRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Set number of seconds remaining in countdown"
@@ -49,7 +49,7 @@ function p() {
           })
         })]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk533477.panelRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Reset to API values"
@@ -62,7 +62,7 @@ function p() {
           }
         })]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk533477.panelRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Pretend the native module is loading so when you close your app it'll look as if it crashed on load"
@@ -73,7 +73,7 @@ function p() {
           onClick: require
         })]
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk877600.panelRow,
+        className: Chunk533477.panelRow,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",

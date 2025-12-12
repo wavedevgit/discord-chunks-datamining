@@ -21,14 +21,14 @@ var l = function(e) {
 async function u(e) {
   try {
     return (await r.tn.get({
-      url: a.ANM.ORDER_GET(e),
+      url: o.ANM.ORDER_GET(e),
       rejectWithError: true
     })).body || null
   } catch (t) {
     return s.error("failed to fetch order", {
       error: t,
       orderId: e
-    }), (0, o.q2)(t, {
+    }), (0, a.q2)(t, {
       tags: {
         source: "OrderActionCreators_getOrder"
       },

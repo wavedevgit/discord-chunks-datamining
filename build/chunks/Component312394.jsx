@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk821541 = require("./821541.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk963115 = require("./963115.js"),
-  Chunk712542 = require("./712542.js");
+  Chunk716772 = require("./716772.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -74,13 +74,13 @@ function g(e) {
   var {
     children: t,
     label: n,
-    description: o
+    description: a
   } = e, d = m(e, ["children", "label", "description"]);
   let {
     spacing: p
-  } = i.useContext(c.q), h = i.useId(), g = null != o && "" !== o;
+  } = i.useContext(c.q), h = i.useId(), g = null != a && "" !== a;
   return (0, r.jsxs)("fieldset", _(f({}, d), {
-    className: a()(u.fieldset, d.className),
+    className: o()(u.fieldset, d.className),
     "aria-describedby": g ? h : true,
     children: [null != n ? (0, r.jsx)(l.x, {
       tag: "legend",
@@ -93,7 +93,7 @@ function g(e) {
       color: "text-default",
       className: u.description,
       id: h,
-      children: o
+      children: a
     }) : null, (0, r.jsx)(s.K, {
       direction: "vertical",
       gap: p,

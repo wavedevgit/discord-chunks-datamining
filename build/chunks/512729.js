@@ -18,7 +18,7 @@ function d(e, t, n, d) {
   let {
     enabled: p,
     highlightDesign: _
-  } = (0, o.kB)("decorateMentionSuggestion", {
+  } = (0, a.kB)("decorateMentionSuggestion", {
     autoTrackExposure: false
   }), m = e.selection, {
     currentAutocompleteType: h
@@ -34,7 +34,7 @@ function d(e, t, n, d) {
         suggestions: v,
         queryInfo: S
       }
-    } = (0, a.r)(n, E.text, O, d);
+    } = (0, o.r)(n, E.text, O, d);
   return 0 === v.length ? u : [{
     anchor: {
       path: b,

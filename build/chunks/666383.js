@@ -10,8 +10,8 @@ var Chunk695346 = require("./695346.js"),
   Chunk468788 = require("./468788.js");
 
 function s(e) {
-  r.vc.updateSetting(e), i.default.track(o.rMx.NOTIFICATION_SETTINGS_UPDATED, {
-    update_type: a.I.ACCOUNT,
+  r.vc.updateSetting(e), i.default.track(a.rMx.NOTIFICATION_SETTINGS_UPDATED, {
+    update_type: o.I.ACCOUNT,
     friend_anniversary_notifications: e
   })
 }

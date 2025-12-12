@@ -2,18 +2,18 @@
 /** chunk id: 655409, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => a
+  A: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n, a) {
+function o(e, t, n, o) {
   let s = r.useRef(false),
     l = r.useRef(t),
     c = r.useRef({
       positionInSection: n,
-      analyticsLocations: a
+      analyticsLocations: o
     });
   return r.useEffect(() => {
     l.current = t
@@ -24,7 +24,7 @@ function a(e, t, n, a) {
           sessionId: t,
           guildId: n,
           pageIndex: r,
-          pageTitle: a,
+          pageTitle: o,
           pageSection: u,
           pageSectionTitle: d,
           isUserGuildMember: f,
@@ -33,12 +33,12 @@ function a(e, t, n, a) {
           positionInSection: _,
           analyticsLocations: m
         } = c.current;
-        i.default.track(o.rMx.SLAYER_STOREFRONT_CARD_HOVERED, {
+        i.default.track(a.rMx.SLAYER_STOREFRONT_CARD_HOVERED, {
           slayer_storefront_session_id: t,
           sku_id: e,
           guild_id: n,
           page_index: r,
-          page_title: a,
+          page_title: o,
           page_section: u,
           page_section_title: d,
           position_in_section: _,

@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 279988, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,51 +14,51 @@ var Chunk120356 = require("./120356.js"),
   Chunk196345 = require("./196345.jsx"),
   Chunk137158 = require("./137158.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31829 = require("./31829.js");
-let m = function(e) {
+  Chunk938645 = require("./938645.js");
+let f = function(e) {
   let {
     channelId: t,
     formField: n,
     index: i,
-    isDragEnabled: m,
-    isDropHovered: p,
-    onDrop: f,
-    onEdit: h,
-    onRemove: x,
-    canRemove: b,
+    isDragEnabled: f,
+    isDropHovered: m,
+    onDrop: b,
+    onEdit: p,
+    onRemove: h,
+    canRemove: x,
     title: j,
-    actionsLocation: _,
-    fieldStyle: v
-  } = e, O = n.values, C = O.slice(0, 1), y = O.length - C.length;
-  return (0, r.jsxs)(u.Z, {
+    actionsLocation: v,
+    fieldStyle: O
+  } = e, C = n.values, y = C.slice(0, 1), N = C.length - y.length;
+  return (0, r.jsxs)(d.Z, {
     field: n,
     index: i,
-    isDragEnabled: m,
-    isDropHovered: p,
-    onDrop: f,
-    onEdit: h,
-    onRemove: x,
+    isDragEnabled: f,
+    isDropHovered: m,
+    onDrop: b,
+    onEdit: p,
+    onRemove: h,
     title: j,
-    canRemove: b,
-    actionsLocation: _,
-    fieldStyle: v,
+    canRemove: x,
+    actionsLocation: v,
+    fieldStyle: O,
     children: [(0, r.jsx)(c.EK, {
-      terms: C,
+      terms: y,
       channelId: t
-    }), 0 !== y && (0, r.jsxs)(a.P3F, {
+    }), 0 !== N && (0, r.jsxs)(s.P3F, {
       className: l()(g.fieldFooterContainer, g.clickable),
-      onClick: h,
-      children: [(0, r.jsx)(a.Text, {
+      onClick: p,
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: g.clickable,
-        children: d.intl.format(d.t.jnhD0S, {
-          count: y
+        children: u.intl.format(u.t.jnhD0S, {
+          count: N
         })
       }), (0, r.jsx)(o.Z, {
         className: g.termsFieldCaretIcon,
         height: 14,
         width: 14,
-        color: s.Z.unsafe_rawColors.WHITE_500.css
+        color: a.Z.unsafe_rawColors.WHITE_500.css
       })]
     }), (0, r.jsx)(c.G0, {
       disabled: true,

@@ -30,10 +30,10 @@ function E(e) {
     appContext: y
   } = e, {
     newestAnalyticsLocation: O
-  } = (0, a.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), S = (0, l.m)(null != n ? n : null), I = (0, i.e7)([p.Z], () => null != E ? E : p.Z.getChannelId(n, true), [E, n]);
+  } = (0, o.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), S = (0, l.m)(null != n ? n : null), I = (0, i.e7)([p.Z], () => null != E ? E : p.Z.getChannelId(n, true), [E, n]);
   return null == n || !S || v ? null : (0, r.jsx)(_.f6, {
     action: "PRESS_MOD_VIEW",
-    icon: o.HI3,
+    icon: a.HI3,
     tooltipText: g.intl.string(g.t.kj3tz2),
     onClick: () => {
       c.Z.close(), null != I && (0, d.Kh)(I), (0, u.i)(y), (0, s.r)(n, t.id, null != I ? I : m.oC.MEMBER_SAFETY, {

@@ -1,3 +1,16 @@
-/** Chunk was on 29355 **/
-/** chunk id: 736226, original params: p (module,exports,require) **/
-module.exports = JSON.parse('{"RPb8Zk":["Τα σχόλιά σου μάς βοηθούν να βελτιώσουμε τις λειτουργίες ασφαλείας του Discord."],"cDP3b4":["Τα σχόλια υποβλήθηκαν"],"KZw6kn":["Τι δεν λειτουργεί σωστά;"],"eSP1F9":["Άλλαξα γνώμη σχετικά με την προβολή αυτού του περιεχομένου"],"bC0QVX":["Οι οδηγίες δεν ήταν κατανοητές"],"8JFGXc":["Προσπάθησα να ακολουθήσω τα βήματα, αλλά δεν τα κατάφερα"],"Dl4A+U":["Δεν είχα τα σωστά έγγραφα μαζί μου"],"ZsnNgz":["Ανησυχώ για την κοινοποίηση προσωπικών πληροφοριών"],"ep5SQp":["Κάτι άλλο"],"kkKhVJ":["Παίρνει πάρα πολύ χρόνο"],"maxf2S":["Δεν ήμουν σίγουρος/η γιατί αυτό ήταν απαραίτητο"],"Q5cQ46":["Περίγραψε το θέμα που είχες"],"zApKaR":["Θα ήθελες να μας πεις περισσότερα;"],"4djgO/":["Σε ευχαριστούμε για τα σχόλια!"],"RqoA4v":["Πώς ήταν η εμπειρία επαλήθευσης ηλικίας σου;"]}')
+/** Chunk was on 23032 **/
+/** chunk id: 736226, original params: e,t,r (module,exports,require) **/
+"use strict";
+require.d(exports, {
+  Z: () => n
+});
+var Chunk21075 = require("./21075.js");
+
+function n(e, t, r) {
+  return (t = (0, a.Z)(t)) in e ? Object.defineProperty(e, t, {
+    value: r,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = r, e
+}

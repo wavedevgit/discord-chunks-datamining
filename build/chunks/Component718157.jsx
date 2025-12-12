@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 718157, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,12 +19,12 @@ function g(e) {
     label: t,
     description: n,
     guildId: g,
-    guildMetadata: m,
-    isDisabled: p,
-    clearable: f = true
-  } = e, h = (0, l.Wu)([c.Z], () => c.Z.getPrimaryCategories()), x = i.useCallback(e => {
-    (0, o.TA)(g, null != e ? e : u.o3)
-  }, [g]), b = i.useMemo(() => h.map(e => {
+    guildMetadata: f,
+    isDisabled: m,
+    clearable: b = true
+  } = e, p = (0, l.Wu)([c.Z], () => c.Z.getPrimaryCategories()), h = i.useCallback(e => {
+    (0, o.TA)(g, null != e ? e : d.o3)
+  }, [g]), x = i.useMemo(() => p.map(e => {
     let {
       categoryId: t,
       name: n
@@ -33,15 +33,15 @@ function g(e) {
       value: t,
       label: n
     }
-  }), [h]);
-  return 0 === h.length ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(s.d, {
-    value: m.primaryCategoryId === u.o3 ? null : m.primaryCategoryId,
+  }), [p]);
+  return 0 === p.length ? (0, r.jsx)(s.$jN, {}) : (0, r.jsx)(a.d, {
+    value: f.primaryCategoryId === d.o3 ? null : f.primaryCategoryId,
     label: t,
     description: n,
-    placeholder: d.intl.string(d.t.XqMe3N),
-    options: b,
-    onChange: x,
-    isDisabled: p,
-    clearable: f
-  }, b.length)
+    placeholder: u.intl.string(u.t.XqMe3N),
+    options: x,
+    onChange: h,
+    isDisabled: m,
+    clearable: b
+  }, x.length)
 }

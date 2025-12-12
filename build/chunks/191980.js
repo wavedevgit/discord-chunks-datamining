@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   $: () => i,
-  C: () => o
+  C: () => a
 });
 var Chunk570140 = require("./570140.js");
 
@@ -13,7 +13,7 @@ function i() {
   })
 }
 
-function o() {
+function a() {
   Chunk570140.Z.dispatch({
     type: "HIDE_KEYBOARD_SHORTCUTS"
   })

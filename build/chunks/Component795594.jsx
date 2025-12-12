@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk658722 = require("./658722.js"),
   l = require.n(Chunk658722),
   Chunk512722 = require("./512722.js"),
@@ -58,9 +58,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk468788 = require("./468788.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk392082 = require("./392082.js"),
-  Chunk430864 = require("./430864.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk380735 = require("./380735.js"),
+  Chunk960324 = require("./960324.js"),
+  Chunk478411 = require("./478411.js");
 
 function ei(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function ei(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eo(e) {
+function ea(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -84,7 +84,7 @@ function eo(e) {
   return e
 }
 
-function ea(e, t) {
+function eo(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -96,7 +96,7 @@ function ea(e, t) {
 }
 
 function es(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ea(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : eo(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -110,7 +110,7 @@ function ec(e) {
     text: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(et.warningOuterContainer, t),
+    className: o()(et.warningOuterContainer, t),
     children: [(0, r.jsx)(E.d3s, {
       size: "md",
       color: "currentColor",
@@ -150,21 +150,21 @@ let eu = e => {
       i = ee.intl.formatToPlainString(ee.t.QWGvxA, {
         applicationName: e.name
       }),
-      o = null;
+      a = null;
     return (0, A.Z)(e) && (n = ee.intl.formatToPlainString(ee.t["paC+US"], {
       applicationName: e.name
     }), i = ee.intl.formatToPlainString(ee.t.inM1Yt, {
       applicationName: e.name
-    }), o = (0, r.jsx)(z.Z, {
+    }), a = (0, r.jsx)(z.Z, {
       look: z.z.WARNING,
       children: ee.intl.string(ee.t.LY35Zy)
-    })), (0, K.Z)(e.id) && (o = (0, r.jsxs)(r.Fragment, {
-      children: [o, (0, r.jsx)(z.Z, {
+    })), (0, K.Z)(e.id) && (a = (0, r.jsxs)(r.Fragment, {
+      children: [a, (0, r.jsx)(z.Z, {
         children: ee.intl.format(ee.t.KRnERi, {
           applicationName: e.name
         })
       })]
-    })), (0, E.h7j)(e => (0, r.jsx)(_.Modal, es(eo({
+    })), (0, E.h7j)(e => (0, r.jsx)(_.Modal, es(ea({
       title: n,
       subtitle: i,
       actions: [{
@@ -181,7 +181,7 @@ let eu = e => {
     }, e), {
       children: (0, r.jsx)("div", {
         className: et.deleteModalBody,
-        children: o
+        children: a
       })
     })))
   },
@@ -194,7 +194,7 @@ let eu = e => {
         href: t.terms_of_service_url,
         shouldConfirm: true
       })
-    }, o = () => {
+    }, a = () => {
       null != t.privacy_policy_url && (0, U.q)({
         href: t.privacy_policy_url,
         shouldConfirm: true
@@ -220,7 +220,7 @@ let eu = e => {
         children: [null != t.terms_of_service_url ? (0, r.jsx)("div", {
           className: et.divider
         }) : null, (0, r.jsxs)(E.Anchor, {
-          onClick: o,
+          onClick: a,
           className: et.privacy,
           tabIndex: n ? 0 : false,
           children: [(0, r.jsx)(E.Text, {
@@ -239,19 +239,19 @@ let eu = e => {
   ep = e => {
     let {
       scopes: t,
-      application: o,
+      application: a,
       selectedChannelId: s,
       selectedGuildId: l,
       onDelete: c,
       disclosures: d,
       locale: _,
       id: h
-    } = e, b = o.id, v = i.useMemo(() => D.ZP.createFromServer(o), [o]), S = (0, p.yE)(v.flags, J.udG.EMBEDDED), A = (0, m.e7)([Y.Z], () => {
+    } = e, b = a.id, v = i.useMemo(() => D.ZP.createFromServer(a), [a]), S = (0, p.yE)(v.flags, J.udG.EMBEDDED), A = (0, m.e7)([Y.Z], () => {
       var e, t, n, r;
       return null == (r = Y.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[b]) || null == (e = t.appDmSettings) ? true : e.allowMobilePush
     }, [b]), x = T.w.useExperiment({
       location: "oauth2_authorize"
-    }), j = o.bot, U = (0, m.e7)([L.Z], () => L.Z.getDMFromUserId(null == j ? true : j.id)), {
+    }), j = a.bot, U = (0, m.e7)([L.Z], () => L.Z.getDMFromUserId(null == j ? true : j.id)), {
       appDMChannelMuteConfig: F,
       dmChannelMuted: B
     } = (0, m.cj)([M.ZP], () => null == U ? {
@@ -260,7 +260,7 @@ let eu = e => {
     } : {
       appDMChannelMuteConfig: M.ZP.getChannelMuteConfig(null, U),
       dmChannelMuted: M.ZP.isChannelMuted(null, U)
-    }), [z, q] = i.useState(false), [ei, ea] = i.useState(false), es = () => {
+    }), [z, q] = i.useState(false), [ei, eo] = i.useState(false), es = () => {
       let e = [];
       for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(ee.intl.string(ee.t.Ls2XRq));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.zF9, {
@@ -297,7 +297,7 @@ let eu = e => {
             children: [(0, r.jsxs)(E.P3F, {
               className: et.appDetailsSectionHeader,
               onClick: e => {
-                ea(!ei), n(e)
+                eo(!ei), n(e)
               },
               children: [(0, r.jsx)(E.Heading, {
                 variant: "heading-sm/medium",
@@ -313,7 +313,7 @@ let eu = e => {
             }), !ei && (0, r.jsx)(E.Text, {
               variant: "text-sm/normal",
               color: "text-subtle",
-              className: a()(et.appDetailsContent, et.permissionsDescription),
+              className: o()(et.appDetailsContent, et.permissionsDescription),
               children: ee.intl.format(ee.t.nZOS8j, {
                 numPermissions: e.length
               })
@@ -322,22 +322,22 @@ let eu = e => {
         }
       })
     }, el = i.useMemo(() => {
-      if (null != o.description && "" !== o.description) return (0, r.jsx)(E.Text, {
+      if (null != a.description && "" !== a.description) return (0, r.jsx)(E.Text, {
         className: en.markup,
         variant: "text-sm/normal",
         color: "text-default",
-        children: (0, R.parseBioReact)(o.description)
+        children: (0, R.parseBioReact)(a.description)
       })
-    }, [o.description]), ep = () => {
-      let e = null != o.description && "" !== o.description,
-        t = null != o.terms_of_service_url || null != o.privacy_policy_url;
+    }, [a.description]), ep = () => {
+      let e = null != a.description && "" !== a.description,
+        t = null != a.terms_of_service_url || null != a.privacy_policy_url;
       return e || t ? (0, r.jsx)(E.zF9, {
         className: et.appDetailsSection,
         isExpanded: z,
         collapsibleContent: (0, r.jsxs)("div", {
           className: et.appDetailsContent,
           children: [e && el, t && (0, r.jsx)(ef, {
-            application: o,
+            application: a,
             isVisible: z
           })]
         }),
@@ -366,8 +366,8 @@ let eu = e => {
       }) : null
     }, e_ = () => {
       let e = k.ZP.getApplicationIconURL({
-          id: o.id,
-          icon: o.icon
+          id: a.id,
+          icon: a.icon
         }),
         t = null != e ? (0, r.jsx)(P.Z.Child, {
           className: et.appAvatarV2,
@@ -384,8 +384,8 @@ let eu = e => {
           className: et.headerTextContainerV2,
           children: [(0, r.jsx)(E.Heading, {
             variant: "heading-md/semibold",
-            className: a()(et.headerText, er.marginBottom4),
-            children: o.name
+            className: o()(et.headerText, er.marginBottom4),
+            children: a.name
           }), (0, r.jsx)(E.Text, {
             variant: "text-sm/normal",
             color: "text-default",
@@ -410,24 +410,24 @@ let eu = e => {
         })
       }, H.fy.INFREQUENT_USER_ACTION), I.ZP.trackWithMetadata(J.rMx.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: $.I.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
-        application_id: o.id,
+        application_id: a.id,
         label: e ? G.ZB.Unmuted : G.ZB.Muted
       })
     }, eh = i.useCallback(async () => {
       u()(null != j, "dm channel mute setting requires having a bot user");
       let e = U;
-      null == e && (e = await y.Z.ensurePrivateChannel(j.id)), B ? O.Z.updateAppDMOverrideSettings(null, e, o.id, {
+      null == e && (e = await y.Z.ensurePrivateChannel(j.id)), B ? O.Z.updateAppDMOverrideSettings(null, e, a.id, {
         muted: false
       }, G.ZB.Unmuted) : (0, E.ZDy)(async () => {
         let {
           default: t
         } = await n.e("8246").then(n.bind(n, 540679));
-        return n => (0, r.jsx)(t, eo({
+        return n => (0, r.jsx)(t, ea({
           channelId: e,
-          applicationId: o.id
+          applicationId: a.id
         }, n))
       })
-    }, [U, j, B, o.id]), eg = () => x.enabled ? (0, r.jsxs)("div", {
+    }, [U, j, B, a.id]), eg = () => x.enabled ? (0, r.jsxs)("div", {
       className: et.directMessagesSection,
       children: [(0, r.jsx)(E.Heading, {
         variant: "heading-sm/medium",
@@ -456,17 +456,17 @@ let eu = e => {
           onChange: em
         }) : null]
       })]
-    }) : null, eE = (0, K.O)(o.id), eb = (0, N.Z)(o), ey = () => (0, r.jsxs)("div", {
+    }) : null, eE = (0, K.O)(a.id), eb = (0, N.Z)(a), ey = () => (0, r.jsxs)("div", {
       className: et.footer,
       children: [eb ? (0, r.jsx)(ec, {
         className: et.warningContainer,
         text: ee.intl.format(ee.t.j4B7EW, {
-          applicationName: o.name
+          applicationName: a.name
         })
       }) : eE ? (0, r.jsx)(ec, {
         className: et.warningContainer,
         text: ee.intl.format(ee.t.jUhnwb, {
-          applicationName: o.name,
+          applicationName: a.name,
           onConnectionPress: () => (0, X.openUserSettings)(V.n.CONNECTIONS_PANEL, {
             section: J.oAB.CONNECTIONS
           })
@@ -477,12 +477,12 @@ let eu = e => {
           variant: "critical-secondary",
           size: "sm",
           text: ee.intl.string(ee.t.xUqheM),
-          onClick: () => ed(o, c)
+          onClick: () => ed(a, c)
         })
       })]
     }), eO = (0, W.wy)("AuthorizedApps");
     return (0, r.jsx)("div", {
-      className: a()(et.authedAppV2, {
+      className: o()(et.authedAppV2, {
         [et.authedAppV2UserSettingsRedesign]: eO
       }),
       children: (0, r.jsx)(E.y5t, {
@@ -504,13 +504,13 @@ let eu = e => {
     } = (0, Chunk442837.cj)([Chunk881998.default], () => ({
       fetchState: Chunk881998.default.getFetchState(),
       appAuthTokens: Chunk881998.default.getNewestTokensForNonChildrenApplications()
-    })), n = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale), o = (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getSelfEmbeddedActivities()), a = (0, Chunk442837.e7)([Chunk592125.Z, Chunk944486.Z], () => Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId())), s = null == a ? true : a.getGuildId(), c = e => {
+    })), n = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale), a = (0, Chunk442837.e7)([Chunk317381.ZP], () => Chunk317381.ZP.getSelfEmbeddedActivities()), o = (0, Chunk442837.e7)([Chunk592125.Z, Chunk944486.Z], () => Chunk592125.Z.getChannel(Chunk944486.Z.getChannelId())), s = null == o ? true : o.getGuildId(), c = e => {
       let {
         id: t,
         application: n
       } = e;
       b.Z.delete(t);
-      let r = o.get(n.id);
+      let r = a.get(n.id);
       null != r && S.Z.leaveActivity({
         location: r.location,
         applicationId: n.id,
@@ -523,7 +523,7 @@ let eu = e => {
     }, p = () => {
       Chunk663042("")
     }, _ = () => (0, Chunk54381.jsx)("div", {
-      className: Chunk392082.searchContainer,
+      className: Chunk380735.searchContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.E1j, {
         query: u,
         onChange: Chunk243814,
@@ -541,22 +541,22 @@ let eu = e => {
       let e = u.trim().toLowerCase();
       return "" === module || null == exports ? exports : exports.length < 100 ? exports.filter(t => l()(e, t.application.name.toLowerCase())) : exports.filter(t => t.application.name.toLowerCase().includes(e))
     }, [exports, u]), y = () => null == exports || null == Chunk524437 || module !== Chunk881998.FetchState.FETCHED ? (0, Chunk54381.jsx)(Chunk481060.$jN, {
-      className: Chunk197571.marginTop20,
+      className: Chunk478411.marginTop20,
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE
     }) : 0 === exports.length ? Chunk921072(Chunk388032.intl.string(Chunk388032.t.CpPv5l), Chunk388032.intl.string(Chunk388032.t["E+SM6T"])) : 0 === Chunk524437.length ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [Chunk793030(), Chunk921072(null, Chunk388032.intl.string(Chunk388032.t.EVWFNr))]
     }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [Chunk793030(), Chunk524437.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ep, eo({
+      children: [Chunk793030(), Chunk524437.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ep, ea({
         locale: n,
         onDelete: () => c(e),
-        selectedChannelId: null == a ? true : a.id,
+        selectedChannelId: null == o ? true : o.id,
         selectedGuildId: null != s ? s : true
       }, e), e.id))]
     });
     return (0, Chunk54381.jsx)(Chunk481060.y5t, {
       component: (0, Chunk54381.jsxs)(Chunk481060.Zbd, {
         type: Chunk481060.Zbd.Types.PRIMARY,
-        className: Chunk392082.headingCard,
+        className: Chunk380735.headingCard,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/medium",
           children: Chunk388032.intl.string(Chunk388032.t.HU3RFw)

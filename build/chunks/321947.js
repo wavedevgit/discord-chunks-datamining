@@ -9,7 +9,7 @@ var Chunk659181 = require("./659181.js"),
   Chunk523080 = require("./523080.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -57,6 +57,6 @@ class d extends Chunk523080.Z {
     }))
   }
   constructor(e) {
-    super(e), a(this, "sku", true), this.skuProductLine = o.POd.SOCIAL_LAYER_GAME_ITEM, this.sku = e.sku
+    super(e), o(this, "sku", true), this.skuProductLine = a.POd.SOCIAL_LAYER_GAME_ITEM, this.sku = e.sku
   }
 }

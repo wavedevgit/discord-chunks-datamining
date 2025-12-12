@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk74538 = require("./74538.js"),
   Chunk474936 = require("./474936.js"),
   Chunk282793 = require("./282793.js"),
-  Chunk941651 = require("./941651.js"),
+  Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
 let u = [{
     Icon: Chunk481060.dz2,
@@ -136,16 +136,16 @@ let u = [{
   }],
   h = [{
     Icon: Chunk481060.iFz,
-    getText: () => Chunk388032.intl.formatToPlainString(Chunk941651.default.eP3Ar7, {
+    getText: () => Chunk388032.intl.formatToPlainString(Chunk353149.default.eP3Ar7, {
       totalSeats: Chunk282793.Q5
     })
   }, {
     Icon: Chunk481060.SrA,
-    getText: () => Chunk388032.intl.string(Chunk941651.default.woz1Kg)
+    getText: () => Chunk388032.intl.string(Chunk353149.default.woz1Kg)
   }, {
     Icon: Chunk481060.Ucv,
-    getText: () => Chunk388032.intl.string(Chunk941651.default.QnbVrt)
+    getText: () => Chunk388032.intl.string(Chunk353149.default.QnbVrt)
   }, {
     Icon: Chunk481060.vdY,
-    getText: () => Chunk388032.intl.string(Chunk941651.default["409DEa"])
+    getText: () => Chunk388032.intl.string(Chunk353149.default["409DEa"])
   }]

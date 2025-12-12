@@ -16,13 +16,13 @@ var Chunk50153 = require("./50153.js"),
   Chunk20271 = require("./20271.js"),
   h = Chunk65183.OrderedSet,
   g = {
-    replaceText: function(e, t, n, i, o) {
-      var a = _(p(e, t), t),
+    replaceText: function(e, t, n, i, a) {
+      var o = _(p(e, t), t),
         s = r.create({
           style: i || h(),
-          entity: o || null
+          entity: a || null
         });
-      return u(a, a.getSelectionAfter(), n, s)
+      return u(o, o.getSelectionAfter(), n, s)
     },
     insertText: function(e, t, n, r, i) {
       return t.isCollapsed() || d(false), g.replaceText(e, t, n, r, i)
@@ -44,14 +44,14 @@ var Chunk50153 = require("./50153.js"),
         focusKey: t.getAnchorKey(),
         focusOffset: t.getAnchorOffset(),
         isBackward: false
-      })), r = t.getAnchorKey(), i = t.getFocusKey(), o = e.getBlockForKey(r);
-      var r, i, o, s = e.getBlockForKey(i),
+      })), r = t.getAnchorKey(), i = t.getFocusKey(), a = e.getBlockForKey(r);
+      var r, i, a, s = e.getBlockForKey(i),
         l = t.getStartOffset(),
         c = t.getEndOffset(),
-        u = o.getEntityAt(l),
+        u = a.getEntityAt(l),
         d = s.getEntityAt(c - 1);
       if (r === i && u && u === d) {
-        var f = a(e.getEntityMap(), o, s, t, n);
+        var f = o(e.getEntityMap(), a, s, t, n);
         return _(e, f)
       }
       return _(p(e, t), t)
@@ -89,7 +89,7 @@ var Chunk50153 = require("./50153.js"),
       })
     },
     applyEntity: function(e, t, n) {
-      return o(p(e, t), t, n)
+      return a(p(e, t), t, n)
     }
   };
 module.exports = g

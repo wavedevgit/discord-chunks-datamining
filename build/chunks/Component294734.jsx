@@ -28,17 +28,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk39154 = require("./39154.js"),
   Chunk245216 = require("./245216.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk823914 = require("./823914.js");
+  Chunk154706 = require("./154706.js");
 
 function N() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk823914.headerContainer,
+    className: Chunk154706.headerContainer,
     children: [(0, Chunk54381.jsx)(Chunk245216.Z, {
       size: "xs",
-      className: Chunk823914.headerIcon,
+      className: Chunk154706.headerIcon,
       color: Chunk692547.Z.colors.TEXT_MUTED
     }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
-      className: Chunk823914.headerText,
+      className: Chunk154706.headerText,
       variant: "text-sm/semibold",
       color: "text-muted",
       children: Chunk388032.intl.string(Chunk388032.t.ToyvLk)
@@ -51,7 +51,7 @@ function P(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, f = i.useMemo(() => new v.r(t, n, d), [t, n, d]), p = (0, a.e7)([h.Z, O.default, y.Z, b.Z, E.Z, u.Z], () => f.getForwardInfo(h.Z, O.default, y.Z, b.Z, E.Z, u.Z).footerInfo, [f], s.Z), _ = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new v.r(t, n, d), [t, n, d]), p = (0, o.e7)([h.Z, O.default, y.Z, b.Z, E.Z, u.Z], () => f.getForwardInfo(h.Z, O.default, y.Z, b.Z, E.Z, u.Z).footerInfo, [f], s.Z), _ = i.useCallback(() => {
     (0, S.Z)(t)
   }, [t]);
   return null == p ? null : (0, r.jsxs)(c.P3F, {
@@ -62,7 +62,7 @@ function P(e) {
       className: A.originIcon,
       src: p.originIconUrl,
       alt: ""
-    }) : null, (0, r.jsx)(o.xvT, {
+    }) : null, (0, r.jsx)(a.xvT, {
       className: A.footerText,
       variant: "text-sm/medium",
       color: "none",
@@ -78,9 +78,9 @@ function R(e) {
   var t;
   let {
     message: n,
-    snapshot: o,
+    snapshot: a,
     index: s
-  } = e, l = i.useMemo(() => (0, I.Z)(n, o), [n, o]), c = m.RS.useSetting(), u = m.NA.useSetting(), E = c && u, b = (0, a.e7)([g.Z], () => g.Z.isDeveloper), y = (0, d.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
+  } = e, l = i.useMemo(() => (0, I.Z)(n, a), [n, a]), c = m.RS.useSetting(), u = m.NA.useSetting(), E = c && u, b = (0, o.e7)([g.Z], () => g.Z.isDeveloper), y = (0, d.A)((null != (t = l.editedTimestamp) ? t : l.timestamp).valueOf()), {
     content: O,
     hasSpoilerEmbeds: v,
     hasBailedAst: S
@@ -93,7 +93,7 @@ function R(e) {
     allowLinks: true,
     allowDevLinks: b,
     previewLinkTarget: true
-  }), T = (0, a.e7)([h.Z], () => h.Z.getChannel(n.channel_id)), C = m.jU.useSetting();
+  }), T = (0, o.e7)([h.Z], () => h.Z.getChannel(n.channel_id)), C = m.jU.useSetting();
   return null == T ? null : (0, r.jsxs)("div", {
     className: A.container,
     children: [(0, r.jsx)("div", {
@@ -117,7 +117,7 @@ function R(e) {
         renderThreadAccessory: false
       }), (0, r.jsx)(P, {
         message: n,
-        snapshot: o,
+        snapshot: a,
         index: s
       })]
     })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk330726 = require("./330726.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk149203 = require("./149203.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk999642 = require("./999642.js");
+  Chunk8905 = require("./8905.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,8 +73,8 @@ function D(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -82,14 +82,14 @@ function D(e, t) {
 function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let L = e => {
   let {
     emojiDescriptors: t,
-    emojiSize: o,
+    emojiSize: a,
     onSelect: N,
     onSelectSoundmoji: R,
     onInspect: x,
@@ -120,18 +120,18 @@ let L = e => {
   } = (0, d.qt)({
     location: "emoji_picker_list_row",
     autoTrackExposure: false
-  }), J = n(187119), $ = n(39874), ee = n(853871), et = n(63149), en = n(263112), er = n(490567), ei = n(292795), eo = n(7940), ea = (0, u.ZP)(), es = m.kJ.getState(), [el, ec] = i.useState(es.inspectedExpressionPosition), [eu, ed] = (0, c.Z)(null, 300), ef = i.useRef(null);
+  }), J = n(187119), $ = n(39874), ee = n(853871), et = n(63149), en = n(263112), er = n(490567), ei = n(292795), ea = n(7940), eo = (0, u.ZP)(), es = m.kJ.getState(), [el, ec] = i.useState(es.inspectedExpressionPosition), [eu, ed] = (0, c.Z)(null, 300), ef = i.useRef(null);
   i.useEffect(() => m.kJ.subscribe(e => e.inspectedExpressionPosition, e => ec(e)), []), i.useEffect(() => {
     E.DZ.loadIfNecessary()
   }, []);
-  let ep = o === I.Su.LARGE,
-    e_ = o === I.Su.MEDIUM,
+  let ep = a === I.Su.LARGE,
+    e_ = a === I.Su.MEDIUM,
     em = e => {
       let t = "".concat(e.rowIndex, "c").concat(e.columnIndex),
         n = function() {
           var n;
           let {
-            onMouseEnter: o,
+            onMouseEnter: a,
             onMouseLeave: s,
             handleSelect: c,
             icon: u,
@@ -153,7 +153,7 @@ let L = e => {
             children: (0, r.jsx)("button", {
               "aria-label": d,
               ref: h,
-              className: a()(A.emojiItem, {
+              className: o()(A.emojiItem, {
                 [A.emojiItemLarge]: ep,
                 [A.emojiItemMedium]: e_,
                 [A.emojiItemSelected]: y && !f,
@@ -162,7 +162,7 @@ let L = e => {
               }),
               onFocus: null != E ? E : O,
               onMouseOver: O,
-              onMouseEnter: o,
+              onMouseEnter: a,
               onMouseLeave: s,
               onClick: c,
               tabIndex: g,
@@ -175,7 +175,7 @@ let L = e => {
           let {
             visibleRowIndex: t,
             columnIndex: i
-          } = e, o = el.rowIndex === t && el.columnIndex === i, a = t => {
+          } = e, a = el.rowIndex === t && el.columnIndex === i, o = t => {
             t.stopPropagation(), k.current || U.current || (N(e, {
               isFinalSelection: true,
               toggleFavorite: false
@@ -183,9 +183,9 @@ let L = e => {
               collapsed: e.sectionCollapsedToThreeRows,
               guild_id: e.guildId
             }))
-          }, l = e.sectionCollapsedToThreeRows ? o ? (0, s.wj)(ea) ? er : eo : (0, s.wj)(ea) ? J : $ : o ? (0, s.wj)(ea) ? en : ei : (0, s.wj)(ea) ? ee : et, c = C.intl.string(e.sectionCollapsedToThreeRows ? C.t.NZI2Zk : C.t["/K2RDH"]);
+          }, l = e.sectionCollapsedToThreeRows ? a ? (0, s.wj)(eo) ? er : ea : (0, s.wj)(eo) ? J : $ : a ? (0, s.wj)(eo) ? en : ei : (0, s.wj)(eo) ? ee : et, c = C.intl.string(e.sectionCollapsedToThreeRows ? C.t.NZI2Zk : C.t["/K2RDH"]);
           return n({
-            handleSelect: a,
+            handleSelect: o,
             icon: (0, r.jsx)("img", {
               className: A.icon,
               src: l,
@@ -216,16 +216,16 @@ let L = e => {
           })
         }
         case v.ld.EMOJI: {
-          var o;
+          var a;
           let {
             columnIndex: n,
             visibleRowIndex: i
-          } = e, a = el.rowIndex === i && el.columnIndex === n;
+          } = e, o = el.rowIndex === i && el.columnIndex === n;
           return (0, r.jsx)(S.Z, {
             rowIndex: G,
             descriptor: e,
             emojiItemKey: t,
-            isInspected: a,
+            isInspected: o,
             isScrolling: k,
             isUsingKeyboardNavigation: U,
             surrogateCodePoint: L,
@@ -242,7 +242,7 @@ let L = e => {
             showEmojiFavoriteTooltip: F,
             messageId: W,
             isBurstReaction: K,
-            rowPosition: null == ef || null == (o = ef.current) ? true : o.getBoundingClientRect(),
+            rowPosition: null == ef || null == (a = ef.current) ? true : a.getBoundingClientRect(),
             inNitroLockedSection: z
           }, t)
         }
@@ -251,7 +251,7 @@ let L = e => {
       }
     },
     eh = e => (0, r.jsx)("ul", w(P({}, M(G)), {
-      className: a()(A.emojiListRow, {
+      className: o()(A.emojiListRow, {
         [A.emojiListRowLargeSize]: ep,
         [A.emojiListRowMediumSize]: e_
       }),
@@ -279,20 +279,20 @@ let L = e => {
   return 0 === eE.length ? eh(t) : (0, r.jsxs)("div", {
     className: A.topEmojiSectionContainer,
     children: [(0, r.jsx)("div", {
-      className: a()(A.topEmojiContainer, {
+      className: o()(A.topEmojiContainer, {
         [A.noEmojis]: 0 === eg.length
       }),
       children: eh(eg)
     }), (0, r.jsxs)("div", {
       className: A.newlyAddedHighlightContainer,
       children: [(0, r.jsx)("div", {
-        className: a()(A.newlyAddedHighlight, {
+        className: o()(A.newlyAddedHighlight, {
           [A.oneItem]: 1 === eE.length,
           [A.alignRight]: eg.length > 0
         }),
         children: eh(eE)
       }), (0, r.jsxs)("div", {
-        className: a()(A.newlyAddedBadge, {
+        className: o()(A.newlyAddedBadge, {
           [A.newlyAddedBadgeLarge]: ep,
           [A.newlyAddedBadgeMedium]: e_,
           [A.alignRight]: eg.length > 0

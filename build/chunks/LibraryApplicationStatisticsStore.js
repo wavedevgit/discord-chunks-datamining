@@ -47,15 +47,15 @@ function g(e) {
     duration: t,
     applicationId: n,
     distributor: r
-  } = e, i = u[n], o = new Date().toISOString(), a = 0, s = 0;
+  } = e, i = u[n], a = new Date().toISOString(), o = 0, s = 0;
   if (null != i) {
     var c;
-    a = i.total_duration, s = null != (c = i.total_discord_sku_duration) ? c : 0
+    o = i.total_duration, s = null != (c = i.total_discord_sku_duration) ? c : 0
   }
-  a += t, r === l.GQo.DISCORD && (s += t), u[n] = {
+  o += t, r === l.GQo.DISCORD && (s += t), u[n] = {
     application_id: n,
-    total_duration: a,
-    last_played_at: o,
+    total_duration: o,
+    last_played_at: a,
     total_discord_sku_duration: s
   }
 }

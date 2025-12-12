@@ -7,18 +7,18 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk98880 = require("./98880.jsx"),
-  Chunk202874 = require("./202874.js");
+  Chunk589118 = require("./589118.js");
 
 function f(e) {
   let {
     look: t = u.U4.LARGE_BANNER
   } = e, n = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-    styleLarge: o,
+    styleLarge: a,
     styleSmall: f
   } = i.useMemo(() => ({
     styleLarge: {
@@ -29,29 +29,29 @@ function f(e) {
     }
   }), []);
   return (0, r.jsxs)("div", {
-    className: a()(d.container, d.loadingAnimation, {
+    className: o()(d.container, d.loadingAnimation, {
       [d.noAnimation]: n,
       [d.containerBorderRadius]: t !== u.U4.ROW,
       [d.rowContainer]: t === u.U4.ROW
     }),
     children: [(0, r.jsx)("div", {
-      className: a()(d.bannerImage, {
+      className: o()(d.bannerImage, {
         [d.mediumBanner]: t === u.U4.MEDIUM_BANNER,
         [d.largeBanner]: t === u.U4.LARGE_BANNER
       })
     }), (0, r.jsxs)("div", {
-      className: a()(d.appDetailsContainer, {
+      className: o()(d.appDetailsContainer, {
         [d.appDetailsRowContainer]: t === u.U4.ROW
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(d.iconPlaceholder, {
+        className: o()(d.iconPlaceholder, {
           [d.rowIconPlaceholder]: t === u.U4.ROW
         })
       }), (0, r.jsxs)("div", {
         className: d.textContainer,
         children: [(0, r.jsx)("div", {
           className: d.textPlaceholder,
-          style: o,
+          style: a,
           children: (0, r.jsx)(l.Heading, {
             className: d.hidden,
             variant: "heading-md/semibold",

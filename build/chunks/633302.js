@@ -117,7 +117,7 @@ function A(e) {
 }
 
 function N(e) {
-  let t = o.Z.convert.toCodePoint(e);
+  let t = a.Z.convert.toCodePoint(e);
   return null != t ? t : ""
 }
 
@@ -143,7 +143,7 @@ function L(e) {
   let t = x.get(e);
   if (null == t) {
     let n = b[e];
-    t = a.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(A), x.set(e, t)
+    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(A), x.set(e, t)
   }
   return t
 }
@@ -180,9 +180,9 @@ function F(e, t) {
   }];
   let r = "",
     i = [],
-    o = null != (n = e.match(g)) ? n : [];
-  for (let e = 0; e < o.length; e++) {
-    let t = o[e];
+    a = null != (n = e.match(g)) ? n : [];
+  for (let e = 0; e < a.length; e++) {
+    let t = a[e];
     if (null != r && "" !== r)
       if (t === U) t = r + t, r = "";
       else if (Z.test(t)) {
@@ -226,8 +226,8 @@ function Y(e) {
   var t, n;
   let r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "",
-    o = null != (n = null == (t = T(e)) ? true : t.names[0]) ? n : i;
-  return r ? ":".concat(o, ":") : o
+    a = null != (n = null == (t = T(e)) ? true : t.names[0]) ? n : i;
+  return r ? ":".concat(a, ":") : a
 }
 
 function W(e) {

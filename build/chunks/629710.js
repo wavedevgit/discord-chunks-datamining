@@ -80,14 +80,14 @@ function S(e, t) {
 function I(e) {
   return (Array.isArray(e) ? e : [e]).flatMap(e => {
     switch (e.type) {
-      case o.re.MEDIA_GALLERY:
+      case a.re.MEDIA_GALLERY:
         return e.items.map(e => e.media);
-      case o.re.THUMBNAIL:
+      case a.re.THUMBNAIL:
         return e.media;
-      case o.re.FILE:
+      case a.re.FILE:
         return e.file;
-      case o.re.SECTION:
-      case o.re.ACTION_ROW:
+      case a.re.SECTION:
+      case a.re.ACTION_ROW:
         return e.components.flatMap(I);
       default:
         return []
@@ -109,30 +109,30 @@ function T(e, t) {
       type: _.l.GenericMedia,
       media: e
     }, i))) returntrue;
-  let o = null;
-  if ("messageSnapshots" in e ? o = e.messageSnapshots : "message_snapshots" in e && (o = e.message_snapshots), null == o || 0 === o.length) returnfalse;
-  for (let e of o)
+  let a = null;
+  if ("messageSnapshots" in e ? a = e.messageSnapshots : "message_snapshots" in e && (a = e.message_snapshots), null == a || 0 === a.length) returnfalse;
+  for (let e of a)
     if (T(e.message, i)) returntrue;
   returnfalse
 }
 
 function C(e) {
   var t, n, r, i;
-  let o = b(e);
-  if (o === h.qn.NONE) return {
+  let a = b(e);
+  if (a === h.qn.NONE) return {
     attachmentIds: [],
     embedIds: []
   };
-  let a = null == (t = e.attachments) ? true : t.filter(e => P({
+  let o = null == (t = e.attachments) ? true : t.filter(e => P({
       type: _.l.Attachment,
       media: e
-    }, o)),
+    }, a)),
     s = null == (n = e.embeds) ? true : n.filter(e => P({
       type: _.l.Embed,
       media: e
-    }, o));
+    }, a));
   return {
-    attachmentIds: null != (r = null == a ? true : a.map(e => e.id).filter(Boolean)) ? r : [],
+    attachmentIds: null != (r = null == o ? true : o.map(e => e.id).filter(Boolean)) ? r : [],
     embedIds: null != (i = null == s ? true : s.map((e, t) => "embed_".concat(t)).filter(Boolean)) ? i : []
   }
 }
@@ -150,7 +150,7 @@ function N(e, t) {
 }
 
 function P(e, t) {
-  if (t === h.qn.NONE || a.ZP.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
+  if (t === h.qn.NONE || o.ZP.get("explicit_media_redaction_ignore_pending_scan")) returnfalse;
   let n = D(t);
   if (0 === n.length) returnfalse;
   switch (e.type) {
@@ -166,17 +166,17 @@ function P(e, t) {
 }
 
 function R(e, t) {
-  var n, i, o, s;
+  var n, i, a, s;
   if (null == e) returnfalse;
   let l = h.Fj[e];
-  if (null != l.devSettingKey && a.ZP.get(l.devSettingKey)) returntrue;
+  if (null != l.devSettingKey && o.ZP.get(l.devSettingKey)) returntrue;
   switch (t.type) {
     case _.l.Embed:
       return (0, r.yE)(null != (n = t.media.flags) ? n : 0, l.embedFlag);
     case _.l.Attachment:
       return (0, r.yE)(null != (i = t.media.flags) ? i : 0, l.attachmentFlag);
     case _.l.GenericMedia:
-      return (0, r.yE)(null != (s = null == (o = t.media.contentScanMetadata) ? true : o.flags) ? s : 0, l.genericMediaFlag);
+      return (0, r.yE)(null != (s = null == (a = t.media.contentScanMetadata) ? true : a.flags) ? s : 0, l.genericMediaFlag);
     default:
       returnfalse
   }
@@ -207,17 +207,17 @@ function D(e) {
 function x(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [c.Z, d.Z],
     [r, i] = n,
-    o = r.getChannel(e),
-    a = f.default.getCurrentUser();
-  return null == a || t === a.id || null == o ? null : o.isDM() || o.isGroupDM() ? null != t && i.getFriendIDs().includes(t) ? _.n.FRIEND_DM : _.n.NON_FRIEND_DM : _.n.GUILD
+    a = r.getChannel(e),
+    o = f.default.getCurrentUser();
+  return null == o || t === o.id || null == a ? null : a.isDM() || a.isGroupDM() ? null != t && i.getFriendIDs().includes(t) ? _.n.FRIEND_DM : _.n.NON_FRIEND_DM : _.n.GUILD
 }
 
 function L(e, t) {
-  var n, r, i, o, a, s, l;
+  var n, r, i, a, o, s, l;
   return !(0 === t.length || null == e || 0 === t.filter(t => !R(t, {
     type: _.l.Embed,
     media: e
-  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (o = e.thumbnail) ? true : o.height) === 0 || "image" in e && null != e.image && (null == (a = e.image) ? true : a.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(Z(e), t)
+  })).length || "video" in e && null != e.video && (null == (n = e.video) ? true : n.width) === 0 && (null == (r = e.video) ? true : r.height) === 0 || "thumbnail" in e && null != e.thumbnail && (null == (i = e.thumbnail) ? true : i.width) === 0 && (null == (a = e.thumbnail) ? true : a.height) === 0 || "image" in e && null != e.image && (null == (o = e.image) ? true : o.width) === 0 && (null == (s = e.image) ? true : s.height) === 0 || "images" in e && (null == (l = e.images) ? true : l.some(e => null != e && 0 === e.width && 0 === e.height))) && k(Z(e), t)
 }
 
 function j(e, t) {

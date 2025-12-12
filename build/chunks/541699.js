@@ -25,9 +25,9 @@ let u = e => {
       case r.Z.AVATAR_DECORATION:
         return i.Z.fromServer(e);
       case r.Z.PROFILE_EFFECT:
-        return a.Z.fromServer(e);
-      case r.Z.NAMEPLATE:
         return o.Z.fromServer(e);
+      case r.Z.NAMEPLATE:
+        return a.Z.fromServer(e);
       default:
         return null
     }

@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk215062 = require("./215062.js");
+  Chunk390434 = require("./390434.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,9 +42,9 @@ function f(e) {
   } = e, {
     avatarSrc: c,
     eventHandlers: f
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     userId: null == t ? true : t.id,
-    size: n ? a.EF.SIZE_24 : a.EF.SIZE_32,
+    size: n ? o.EF.SIZE_24 : o.EF.SIZE_32,
     animateOnHover: true
   });
   return (0, r.jsx)("div", {
@@ -57,7 +57,7 @@ function f(e) {
           className: l.icon,
           src: c,
           "aria-label": t.username,
-          size: a.EF.SIZE_32
+          size: o.EF.SIZE_32
         }, f))
       }), (0, r.jsx)(i.Heading, {
         variant: "heading-sm/normal",

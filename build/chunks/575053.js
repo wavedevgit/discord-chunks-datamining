@@ -20,7 +20,7 @@
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {};
       t % 2 ? n(Object(r), true).forEach(function(t) {
-        o(e, t, r[t])
+        a(e, t, r[t])
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : n(Object(r)).forEach(function(t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
       })
@@ -36,7 +36,7 @@
     })(e)
   }
 
-  function o(e, t, n) {
+  function a(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
       value: n,
       enumerable: true,
@@ -45,20 +45,20 @@
     }) : e[t] = n, e
   }
 
-  function a(e, t) {
+  function o(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      o = Object.keys(e);
-    for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      a = Object.keys(e);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }
 
   function s(e, t) {
     if (null == e) return {};
-    var n, r, i = a(e, t);
+    var n, r, i = o(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }
@@ -74,21 +74,21 @@
   function u(e, t) {
     var n, r, i = e && ("undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"]);
     if (null != i) {
-      var o = [],
-        a = true,
+      var a = [],
+        o = true,
         s = false;
       try {
-        for (i = i.call(e); !(a = (n = i.next()).done) && (o.push(n.value), !t || o.length !== t); a = true);
+        for (i = i.call(e); !(o = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); o = true);
       } catch (e) {
         s = true, r = e
       } finally {
         try {
-          a || null == i.return || i.return()
+          o || null == i.return || i.return()
         } finally {
           if (s) throw r
         }
       }
-      return o
+      return a
     }
   }
 
@@ -130,8 +130,8 @@
 
     function n() {}
     return n.resetWarningCache = t, g = function() {
-      function r(t, n, r, i, o, a) {
-        if (a !== e) {
+      function r(t, n, r, i, a, o) {
+        if (o !== e) {
           var s = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
           throw s.name = "Invariant Violation", s
         }
@@ -141,7 +141,7 @@
         return r
       }
       r.isRequired = r;
-      var o = {
+      var a = {
         array: r,
         bool: r,
         func: r,
@@ -163,25 +163,25 @@
         checkPropTypes: n,
         resetWarningCache: t
       };
-      return o.PropTypes = o, o
+      return a.PropTypes = a, a
     }
   })()();
   var O = _(b.exports),
     v = function(e, n, r) {
       var i = !!r,
-        o = t.useRef(r);
+        a = t.useRef(r);
       t.useEffect(function() {
-        o.current = r
+        a.current = r
       }, [r]), t.useEffect(function() {
         if (!i || !e) return function() {};
         var t = function() {
-          o.current && o.current.apply(o, arguments)
+          a.current && a.current.apply(a, arguments)
         };
         return e.on(n, t),
           function() {
             e.off(n, t)
           }
-      }, [i, n, e, o])
+      }, [i, n, e, a])
     },
     S = function(e) {
       var n = t.useRef(e);
@@ -206,13 +206,13 @@
       var i = Object.prototype.toString.call(t) === A;
       if (i !== (Object.prototype.toString.call(n) === A)) returnfalse;
       if (!i && !r) return t === n;
-      var o = Object.keys(t),
-        a = Object.keys(n);
-      if (o.length !== a.length) returnfalse;
-      for (var s = {}, l = 0; l < o.length; l += 1) s[o[l]] = true;
-      for (var c = 0; c < a.length; c += 1) s[a[c]] = true;
+      var a = Object.keys(t),
+        o = Object.keys(n);
+      if (a.length !== o.length) returnfalse;
+      for (var s = {}, l = 0; l < a.length; l += 1) s[a[l]] = true;
+      for (var c = 0; c < o.length; c += 1) s[o[c]] = true;
       var u = Object.keys(s);
-      if (u.length !== o.length) returnfalse;
+      if (u.length !== a.length) returnfalse;
       var d = t,
         f = n,
         p = function(t) {
@@ -221,9 +221,9 @@
       return u.every(p)
     },
     P = function(e, t, n) {
-      return I(e) ? Object.keys(e).reduce(function(i, a) {
-        var s = !I(t) || !N(e[a], t[a]);
-        return n.includes(a) ? (s && console.warn("Unsupported prop change: options.".concat(a, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, o({}, a, e[a])) : i
+      return I(e) ? Object.keys(e).reduce(function(i, o) {
+        var s = !I(t) || !N(e[o], t[o]);
+        return n.includes(o) ? (s && console.warn("Unsupported prop change: options.".concat(o, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, a({}, o, e[o])) : i
       }, null) : null
     },
     R = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
@@ -268,17 +268,17 @@
       var n = e.stripe,
         r = e.options,
         i = e.children,
-        o = t.useMemo(function() {
+        a = t.useMemo(function() {
           return D(n)
         }, [n]),
-        a = l(t.useState(function() {
+        o = l(t.useState(function() {
           return {
-            stripe: "sync" === o.tag ? o.stripe : null,
-            elements: "sync" === o.tag ? o.stripe.elements(r) : null
+            stripe: "sync" === a.tag ? a.stripe : null,
+            elements: "sync" === a.tag ? a.stripe.elements(r) : null
           }
         }), 2),
-        s = a[0],
-        c = a[1];
+        s = o[0],
+        c = o[1];
       t.useEffect(function() {
         var e = true,
           t = function(e) {
@@ -289,13 +289,13 @@
               }
             })
           };
-        return "async" !== o.tag || s.stripe ? "sync" !== o.tag || s.stripe || t(o.stripe) : o.stripePromise.then(function(n) {
+        return "async" !== a.tag || s.stripe ? "sync" !== a.tag || s.stripe || t(a.stripe) : a.stripePromise.then(function(n) {
             n && e && t(n)
           }),
           function() {
             e = false
           }
-      }, [o, s, r]);
+      }, [a, s, r]);
       var u = S(n);
       t.useEffect(function() {
         null !== u && u !== n && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.")
@@ -348,15 +348,15 @@
       var n = e.stripe,
         r = e.options,
         i = e.children,
-        o = t.useMemo(function() {
+        a = t.useMemo(function() {
           return D(n, Y)
         }, [n]),
-        a = l(t.useState(null), 2),
-        s = a[0],
-        c = a[1],
+        o = l(t.useState(null), 2),
+        s = o[0],
+        c = o[1],
         u = l(t.useState(function() {
           return {
-            stripe: "sync" === o.tag ? o.stripe : null,
+            stripe: "sync" === a.tag ? a.stripe : null,
             checkoutSdk: null
           }
         }), 2),
@@ -373,9 +373,9 @@
         _ = t.useRef(false);
       t.useEffect(function() {
         var e = true;
-        return "async" !== o.tag || d.stripe ? "sync" === o.tag && o.stripe && !_.current && (_.current = true, o.stripe.initCheckout(r).then(function(e) {
-            e && (p(o.stripe, e), e.on("change", c))
-          })) : o.stripePromise.then(function(t) {
+        return "async" !== a.tag || d.stripe ? "sync" === a.tag && a.stripe && !_.current && (_.current = true, a.stripe.initCheckout(r).then(function(e) {
+            e && (p(a.stripe, e), e.on("change", c))
+          })) : a.stripePromise.then(function(t) {
             t && e && !_.current && (_.current = true, t.initCheckout(r).then(function(e) {
               e && (p(t, e), e.on("change", c))
             }))
@@ -383,7 +383,7 @@
           function() {
             e = false
           }
-      }, [o, d, r, c]);
+      }, [a, d, r, c]);
       var m = S(n);
       t.useEffect(function() {
         null !== m && m !== n && console.warn("Unsupported prop change on CheckoutProvider: You cannot change the `stripe` prop after setting it.")
@@ -394,9 +394,9 @@
         if (d.checkoutSdk) {
           var e, t, n = null == h || null == (e = h.elementsOptions) ? true : e.appearance,
             i = null == r || null == (t = r.elementsOptions) ? true : t.appearance,
-            o = !N(i, n),
-            a = !g && d.checkoutSdk;
-          i && (o || a) && d.checkoutSdk.changeAppearance(i)
+            a = !N(i, n),
+            o = !g && d.checkoutSdk;
+          i && (a || o) && d.checkoutSdk.changeAppearance(i)
         }
       }, [r, h, d.checkoutSdk, g]), t.useEffect(function() {
         x(d.stripe)
@@ -439,8 +439,8 @@
     J = function(e, n) {
       var r = "".concat(X(e), "Element"),
         i = function(n) {
-          var i, o = n.id,
-            a = n.className,
+          var i, a = n.id,
+            o = n.className,
             c = n.options,
             u = true === c ? {} : c,
             d = n.onBlur,
@@ -507,12 +507,12 @@
               } catch (e) {}
             }
           }, []), t.createElement("div", {
-            id: o,
-            className: a,
+            id: a,
+            className: o,
             ref: L
           })
         },
-        o = function(e) {
+        a = function(e) {
           z("mounts <".concat(r, ">"));
           var n = e.id,
             i = e.className;
@@ -521,8 +521,8 @@
             className: i
           })
         },
-        a = n ? o : i;
-      return a.propTypes = {
+        o = n ? a : i;
+      return o.propTypes = {
         id: O.string,
         className: O.string,
         onChange: O.func,
@@ -539,7 +539,7 @@
         onShippingAddressChange: O.func,
         onShippingRateChange: O.func,
         options: O.object
-      }, a.displayName = r, a.__elementType = e, a
+      }, o.displayName = r, o.__elementType = e, o
     },
     $ = "undefined" == typeof window,
     ee = t.createContext(null);
@@ -554,10 +554,10 @@
       var n = e.stripe,
         r = e.options,
         i = e.children,
-        o = t.useMemo(function() {
+        a = t.useMemo(function() {
           return D(n, en)
         }, [n]),
-        a = t.useRef(null),
+        o = t.useRef(null),
         s = t.useRef(null),
         c = l(t.useState({
           embeddedCheckout: null
@@ -565,22 +565,22 @@
         u = c[0],
         d = c[1];
       t.useEffect(function() {
-        if (!s.current && !a.current) {
+        if (!s.current && !o.current) {
           var e = function(e) {
-            s.current || a.current || (s.current = e, a.current = s.current.initEmbeddedCheckout(r).then(function(e) {
+            s.current || o.current || (s.current = e, o.current = s.current.initEmbeddedCheckout(r).then(function(e) {
               d({
                 embeddedCheckout: e
               })
             }))
           };
-          "async" === o.tag && !s.current && (r.clientSecret || r.fetchClientSecret) ? o.stripePromise.then(function(t) {
+          "async" === a.tag && !s.current && (r.clientSecret || r.fetchClientSecret) ? a.stripePromise.then(function(t) {
             t && e(t)
-          }) : "sync" === o.tag && !s.current && (r.clientSecret || r.fetchClientSecret) && e(o.stripe)
+          }) : "sync" === a.tag && !s.current && (r.clientSecret || r.fetchClientSecret) && e(a.stripe)
         }
-      }, [o, r, u, s]), t.useEffect(function() {
+      }, [a, r, u, s]), t.useEffect(function() {
         return function() {
-          u.embeddedCheckout ? (a.current = null, u.embeddedCheckout.destroy()) : a.current && a.current.then(function() {
-            a.current = null, u.embeddedCheckout && u.embeddedCheckout.destroy()
+          u.embeddedCheckout ? (o.current = null, u.embeddedCheckout.destroy()) : o.current && o.current.then(function() {
+            o.current = null, u.embeddedCheckout && u.embeddedCheckout.destroy()
           })
         }
       }, [u.embeddedCheckout]), t.useEffect(function() {
@@ -604,22 +604,22 @@
       var n = e.id,
         r = e.className,
         i = et().embeddedCheckout,
-        o = t.useRef(false),
-        a = t.useRef(null);
+        a = t.useRef(false),
+        o = t.useRef(null);
       return t.useLayoutEffect(function() {
-        return !o.current && i && null !== a.current && (i.mount(a.current), o.current = true),
+        return !a.current && i && null !== o.current && (i.mount(o.current), a.current = true),
           function() {
-            if (o.current && i) try {
-              i.unmount(), o.current = false
+            if (a.current && i) try {
+              i.unmount(), a.current = false
             } catch (e) {}
           }
       }, [i]), t.createElement("div", {
-        ref: a,
+        ref: o,
         id: n,
         className: r
       })
     },
-    eo = function(e) {
+    ea = function(e) {
       var n = e.id,
         r = e.className;
       return et(), t.createElement("div", {
@@ -627,7 +627,7 @@
         className: r
       })
     },
-    ea = $ ? eo : ei,
+    eo = $ ? ea : ei,
     es = function() {
       return z("calls useStripe()").stripe
     },
@@ -651,5 +651,5 @@
     eT = J("paymentMethodMessaging", $),
     eC = J("affirmMessage", $),
     eA = J("afterpayClearpayMessage", $);
-  e.AddressElement = eS, e.AffirmMessageElement = eC, e.AfterpayClearpayMessageElement = eA, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = ea, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = em, e.LinkAuthenticationElement = ev, e.P24BankElement = eh, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eT, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eI, e.useCheckout = q, e.useElements = U, e.useStripe = es
+  e.AddressElement = eS, e.AffirmMessageElement = eC, e.AfterpayClearpayMessageElement = eA, e.AuBankAccountElement = el, e.CardCvcElement = ef, e.CardElement = ec, e.CardExpiryElement = ed, e.CardNumberElement = eu, e.CheckoutProvider = W, e.CurrencySelectorElement = ey, e.Elements = M, e.ElementsConsumer = G, e.EmbeddedCheckout = eo, e.EmbeddedCheckoutProvider = er, e.EpsBankElement = eg, e.ExpressCheckoutElement = eb, e.FpxBankElement = ep, e.IbanElement = e_, e.IdealBankElement = em, e.LinkAuthenticationElement = ev, e.P24BankElement = eh, e.PaymentElement = eE, e.PaymentMethodMessagingElement = eT, e.PaymentRequestButtonElement = eO, e.ShippingAddressElement = eI, e.useCheckout = q, e.useElements = U, e.useStripe = es
 })

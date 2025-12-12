@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk967249 = require("./967249.js"),
   Chunk245335 = require("./245335.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk969016 = require("./969016.js");
+  Chunk99320 = require("./99320.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,8 +82,8 @@ function Z(e) {
     members: t,
     membersOnline: n,
     textColor: i
-  } = e, o = [];
-  return null != n && n > 0 && o.push((0, r.jsxs)("div", {
+  } = e, a = [];
+  return null != n && n > 0 && a.push((0, r.jsxs)("div", {
     className: j.statusWrapper,
     children: [(0, r.jsx)("i", {
       className: j.statusOnline
@@ -95,7 +95,7 @@ function Z(e) {
         membersOnline: n
       })
     })]
-  }, "onlineCount")), null != t && o.push((0, r.jsxs)("div", {
+  }, "onlineCount")), null != t && a.push((0, r.jsxs)("div", {
     className: j.statusWrapper,
     children: [(0, r.jsx)("i", {
       className: j.statusOffline
@@ -109,7 +109,7 @@ function Z(e) {
     })]
   }, "memberCount")), (0, r.jsx)("div", {
     className: j.statusCounts,
-    children: o
+    children: a
   })
 }
 
@@ -118,12 +118,12 @@ function F(e) {
     channel: t,
     guild: n,
     hasEnded: i,
-    textColor: o
+    textColor: a
   } = e;
   if (null != t && null != n) {
     let e = (0, v.KS)(t, n);
     return (0, r.jsxs)("div", {
-      className: a()(j.channel, {
+      className: o()(j.channel, {
         [j.ended]: i
       }),
       children: [null != e ? (0, r.jsx)(e, {
@@ -133,7 +133,7 @@ function F(e) {
       }) : null, (0, r.jsx)(u.Z, {
         children: (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
-          color: o,
+          color: a,
           children: L.intl.format(L.t["dc+LW4"], {
             channelName: t.name,
             serverName: n.name
@@ -143,13 +143,13 @@ function F(e) {
     })
   }
   return null != n ? (0, r.jsx)("div", {
-    className: a()(j.channel, {
+    className: o()(j.channel, {
       [j.ended]: i
     }),
     children: (0, r.jsx)(u.Z, {
       children: (0, r.jsx)(d.Text, {
         variant: "text-xs/normal",
-        color: o,
+        color: a,
         children: L.intl.format(L.t.u0vaDE, {
           guildName: n.name
         })
@@ -160,7 +160,7 @@ function F(e) {
 
 function B(e) {
   var t, n;
-  let o, a, {
+  let a, o, {
       invite: s,
       message: u,
       getAcceptInviteContext: d
@@ -219,9 +219,9 @@ function B(e) {
     if (null == s.guild) return (0, r.jsx)(R.Z, {});
     v = (0, P.Qs)(s.guild)
   }
-  o = H ? D ? L.intl.string(L.t.DPfdsq) : j ? L.intl.string(L.t.sqe0hj) : L.intl.string(L.t.RscU7I) : L.intl.string(L.t["2BP08E"]);
+  a = H ? D ? L.intl.string(L.t.DPfdsq) : j ? L.intl.string(L.t.sqe0hj) : L.intl.string(L.t.RscU7I) : L.intl.string(L.t["2BP08E"]);
   let Y = H && !k || H && D;
-  return (k || (a = L.intl.string(L.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(m.Gt, {
+  return (k || (o = L.intl.string(L.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(m.Gt, {
     value: U,
     children: (0, r.jsx)(V, {
       app: N,
@@ -234,9 +234,9 @@ function B(e) {
       membersOnline: g,
       isActivityActive: j,
       submitting: B,
-      buttonLabel: o,
+      buttonLabel: a,
       disabled: Y,
-      disabledReason: a,
+      disabledReason: o,
       handleAcceptInvite: F,
       onView: y
     })
@@ -247,8 +247,8 @@ function V(e) {
   let {
     app: t,
     activityUsers: n,
-    isMember: o,
-    channel: a,
+    isMember: a,
+    channel: o,
     guild: s,
     message: l,
     members: c,
@@ -269,12 +269,12 @@ function V(e) {
     bot: S
   }), C = (0, y.G)(t), A = (0, b.E)(t), P = n.length, R = i.useMemo(() => [{
     label: p,
-    trackingArea: o ? E.j_.PLAY : E.j_.JOIN_SERVER,
+    trackingArea: a ? E.j_.PLAY : E.j_.JOIN_SERVER,
     submitting: f,
     disabled: _,
     disabledReason: _ && null != m ? m : true,
     onClick: O
-  }], [p, o, f, _, m, O]);
+  }], [p, a, f, _, m, O]);
   return (0, r.jsx)(h.W, G(k({
     header: t.name,
     title: L.intl.string(L.t["7vb6nw"]),
@@ -284,11 +284,11 @@ function V(e) {
     info: (0, r.jsxs)("div", {
       className: j.infoWrapper,
       children: [(0, r.jsx)(F, {
-        channel: a,
+        channel: o,
         guild: s,
         hasEnded: !d,
         textColor: "none"
-      }), o ? P > 0 && (0, r.jsx)(g.K, {
+      }), a ? P > 0 && (0, r.jsx)(g.K, {
         activityUsers: n,
         guildId: s.id,
         activityText: L.intl.formatToPlainString(L.t.yJj035, {
@@ -307,7 +307,7 @@ function V(e) {
       linkType: D.U.ACTIVITY_INVITE,
       onView: v,
       guildId: s.id,
-      channelId: null == a ? true : a.id,
+      channelId: null == o ? true : o.id,
       messageId: l.id,
       isDeadEnd: !d
     }

@@ -44,8 +44,8 @@ let _ = {
       N = (0, i.Z)(t.placement),
       P = (0, d.Z)(t.placement),
       R = !P,
-      w = (0, o.Z)(N),
-      D = (0, a.Z)(w),
+      w = (0, a.Z)(N),
+      D = (0, o.Z)(w),
       x = t.modifiersData.popperOffsets,
       L = t.rects.reference,
       j = t.rects.popper,
@@ -87,10 +87,10 @@ let _ = {
           en = R ? L[V] / 2 - K - et - $ - k.mainAxis : z - et - $ - k.mainAxis,
           er = R ? -L[V] / 2 + K + et + ee + k.mainAxis : q + et + ee + k.mainAxis,
           ei = t.elements.arrow && (0, c.Z)(t.elements.arrow),
-          eo = ei ? "y" === w ? ei.clientTop || 0 : ei.clientLeft || 0 : 0,
-          ea = null != (Z = null == U ? true : U[w]) ? Z : 0,
-          es = H + en - ea - eo,
-          el = H + er - ea,
+          ea = ei ? "y" === w ? ei.clientTop || 0 : ei.clientLeft || 0 : 0,
+          eo = null != (Z = null == U ? true : U[w]) ? Z : 0,
+          es = H + en - eo - ea,
+          el = H + er - eo,
           ec = (0, s.u)(I ? (0, p.VV)(Y, es) : Y, H, I ? (0, p.Fp)(W, el) : W);
         x[w] = ec, G[w] = ec - H
       }

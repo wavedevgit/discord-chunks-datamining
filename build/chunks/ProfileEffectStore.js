@@ -23,9 +23,9 @@ let u = {},
   f = e => {
     var t, n;
     let r = false;
-    if (e.type !== o.Z.PROFILE_EFFECT && e.type !== o.Z.VARIANTS_GROUP) return r;
-    let a = [...e.items, ...null != (n = null == (t = e.variants) ? true : t.flatMap(e => e.items)) ? n : []].filter(l.H);
-    for (let e of (0, i.uniqBy)(a, "skuId")) {
+    if (e.type !== a.Z.PROFILE_EFFECT && e.type !== a.Z.VARIANTS_GROUP) return r;
+    let o = [...e.items, ...null != (n = null == (t = e.variants) ? true : t.flatMap(e => e.items)) ? n : []].filter(l.H);
+    for (let e of (0, i.uniqBy)(o, "skuId")) {
       let t = {
         skuId: e.skuId,
         config: e

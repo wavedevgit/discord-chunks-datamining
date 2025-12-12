@@ -2,11 +2,11 @@
 /** chunk id: 318793, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => a
+  $: () => o
 });
 var Chunk722733 = require("./722733.js"),
   Chunk751823 = require("./751823.js");
-let o = (0, Chunk722733.Z)({
+let a = (0, Chunk722733.Z)({
   kind: "user",
   name: "2025-10-surface-unwatched-streams",
   defaultConfig: {
@@ -19,7 +19,7 @@ let o = (0, Chunk722733.Z)({
   }
 });
 
-function a(e) {
+function o(e) {
   let {
     location: t
   } = e, {
@@ -29,7 +29,7 @@ function a(e) {
   }, {
     autoTrackExposure: true
   });
-  return n ? o.definition.defaultConfig : o.getConfig({
+  return n ? a.definition.defaultConfig : a.getConfig({
     location: t
   })
 }

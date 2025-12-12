@@ -24,7 +24,7 @@ function _(e) {
     onAction: _
   } = e, {
     newestAnalyticsLocation: m
-  } = (0, a.ZP)(), {
+  } = (0, o.ZP)(), {
     themeType: h
   } = (0, c.z)(), g = h === f.l.MODAL_V2;
   if ((0, i.e7)([l.Z], () => null != l.Z.getAccount(null, t))) return null;
@@ -41,7 +41,7 @@ function _(e) {
   return (0, r.jsx)(u.O1, {
     icon: n,
     text: p.intl.formatToPlainString(p.t.XWSHTb, {
-      platform: o.Z.get(t).name
+      platform: a.Z.get(t).name
     }),
     fullWidth: !g,
     onClick: E

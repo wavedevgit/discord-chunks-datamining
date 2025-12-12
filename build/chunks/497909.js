@@ -29,7 +29,7 @@ function d() {
 }
 
 function f(e) {
-  return (0, a.le)({
+  return (0, o.le)({
     kind: "user",
     name: e.id,
     defaultConfig: {

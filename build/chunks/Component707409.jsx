@@ -11,7 +11,7 @@ require("./473749.js");
 var Chunk144830 = require("./144830.jsx"),
   Chunk379649 = require("./379649.js");
 
-function a(e) {
+function o(e) {
   let {
     children: t,
     className: n
@@ -21,4 +21,4 @@ function a(e) {
     children: t
   })
 }
-let s = (0, Chunk144830.Z)(a)
+let s = (0, Chunk144830.Z)(o)

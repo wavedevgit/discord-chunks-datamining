@@ -52,7 +52,7 @@ function y(e) {
   } = (0, _.KZ)(), {
     analyticsLocations: v,
     newestAnalyticsLocation: S
-  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, o.e7)([m.Z], () => m.Z.getUserProfile(t.id)), T = null == I ? true : I.application, C = (0, f.Z)({
+  } = (0, l.ZP)(s.Z.USER_PROFILE_OVERFLOW_MENU), I = (0, a.e7)([m.Z], () => m.Z.getUserProfile(t.id)), T = null == I ? true : I.application, C = (0, f.Z)({
     user: t,
     guildId: n,
     location: S,
@@ -105,18 +105,18 @@ function y(e) {
       })
     }), P]
   ];
-  return R.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(a.yRy, {
+  return R.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.yRy, {
     targetElementRef: y,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(a.v2r, {
+      return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-overflow-menu",
         onSelect: true,
         onClose: t,
         "aria-label": g.intl.string(g.t.AXIHpV),
-        children: R.map((e, t) => (0, r.jsx)(a.kSQ, {
+        children: R.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
       })
@@ -124,7 +124,7 @@ function y(e) {
     children: e => (0, r.jsx)(h.f6, b({
       buttonRef: y,
       action: "PRESS_OPTIONS",
-      icon: a.xhG,
+      icon: o.xhG,
       tooltipText: g.intl.string(g.t["UKOtz+"])
     }, e))
   })

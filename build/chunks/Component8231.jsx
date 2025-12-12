@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk694338 = require("./694338.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk893296 = require("./893296.js"),
+  Chunk234798 = require("./234798.js"),
   Chunk102655 = require("./102655.js"),
   Chunk768236 = require("./768236.js"),
   Chunk314907 = require("./314907.js"),
@@ -68,17 +68,17 @@ function R(e, t) {
   }), e
 }
 let w = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk893296.comparisonTablePill,
+    className: Chunk234798.comparisonTablePill,
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk893296.mostPopularText,
+      className: Chunk234798.mostPopularText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.TR2B4T)
     })
   }),
   D = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk893296.comparisonTablePill,
+    className: Chunk234798.comparisonTablePill,
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-      className: Chunk893296.mostPopularText,
+      className: Chunk234798.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
       children: Chunk388032.intl.string(Chunk388032.t.IBYG5U)
     })
@@ -128,11 +128,11 @@ let w = () => (0, Chunk54381.jsx)("div", {
       label: t,
       tier0ColumnData: n,
       tier2ColumnData: i,
-      withBottomMargin: o
+      withBottomMargin: a
     } = e;
     return (0, r.jsxs)("tr", {
-      className: a()(v.row, v.rowBottomBorder, {
-        [v.bottomMargin]: o
+      className: o()(v.row, v.rowBottomBorder, {
+        [v.bottomMargin]: a
       }),
       children: [(0, r.jsx)("th", {
         scope: "row",
@@ -185,33 +185,33 @@ let w = () => (0, Chunk54381.jsx)("div", {
       } = e,
       i = (0, u.ZP)();
     t = n === y.PremiumTypes.TIER_0 ? (0, l.wj)(i) ? S : I : (0, l.wj)(i) ? T : C;
-    let o = (0, m.Px)(n);
+    let a = (0, m.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
       className: v.logo,
-      alt: o
+      alt: a
     })
   },
   U = () => (0, Chunk54381.jsx)("thead", {
     children: (0, Chunk54381.jsxs)("tr", {
-      className: a()(Chunk893296.headerRow, Chunk893296.topBorderRadius),
+      className: o()(Chunk234798.headerRow, Chunk234798.topBorderRadius),
       children: [(0, Chunk54381.jsx)("th", {
         scope: "col",
-        className: Chunk893296.headerLabelCell,
+        className: Chunk234798.headerLabelCell,
         children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
-          className: Chunk893296.__invalid_textColor,
+          className: Chunk234798.__invalid_textColor,
           variant: "heading-xl/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.XXENra)
         })
       }), (0, Chunk54381.jsx)("th", {
         scope: "col",
-        className: Chunk893296.headerCell,
+        className: Chunk234798.headerCell,
         children: (0, Chunk54381.jsx)(k, {
           premiumType: Chunk474936.PremiumTypes.TIER_0
         })
       }), (0, Chunk54381.jsx)("th", {
         scope: "col",
-        className: a()(Chunk893296.headerCell, Chunk893296.topBorderRadius),
+        className: o()(Chunk234798.headerCell, Chunk234798.topBorderRadius),
         children: (0, Chunk54381.jsx)(k, {
           premiumType: Chunk474936.PremiumTypes.TIER_2
         })
@@ -223,10 +223,10 @@ let w = () => (0, Chunk54381.jsx)("div", {
       tier0MonthlyPrice: t,
       tier2MonthlyPrice: n,
       shouldUseDiscountPrice: i,
-      tier2DiscountedPriceString: o
+      tier2DiscountedPriceString: a
     } = e;
     return (0, r.jsxs)("tr", {
-      className: a()(v.row, v.rowBottomBorder, v.bottomMargin),
+      className: o()(v.row, v.rowBottomBorder, v.bottomMargin),
       children: [(0, r.jsx)("th", {
         scope: "row",
         className: v.labelCell,
@@ -242,7 +242,7 @@ let w = () => (0, Chunk54381.jsx)("div", {
       }), (0, r.jsx)("td", {
         className: v.cell,
         children: (0, r.jsx)(x, {
-          text: i ? o : m.ZP.formatPriceString(n, y.rV.MONTH)
+          text: i ? a : m.ZP.formatPriceString(n, y.rV.MONTH)
         })
       })]
     })
@@ -250,7 +250,7 @@ let w = () => (0, Chunk54381.jsx)("div", {
   Z = e => {
     var t;
     let n, {
-        className: o,
+        className: a,
         hidePill: l = false,
         selectedPlanColumnClassName: c,
         selectedPlanTier: u = y.PremiumTypes.TIER_2
@@ -275,17 +275,17 @@ let w = () => (0, Chunk54381.jsx)("div", {
     return (0, r.jsx)(f.Gt, {
       value: O,
       children: (0, r.jsx)("div", {
-        className: a()(v.root, o),
+        className: o()(v.root, a),
         "data-testid": "application-home-marketing-page-comparison-table",
         children: (0, r.jsxs)("div", {
           className: v.tableWrapper,
           children: [(0, r.jsxs)("div", {
-            className: a()(c, {
+            className: o()(c, {
               [v.tier0ColumnPosition]: F,
               [v.tier2ColumnPosition]: !F
             }),
             children: [!F && n, (0, r.jsx)("div", {
-              className: a()({
+              className: o()({
                 [v.tier0ColumnOuter]: F,
                 [v.tier2ColumnOuter]: !F
               })

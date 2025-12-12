@@ -61,7 +61,7 @@ let h = (() => {
         n !== (null != t) && (n ? t = setTimeout(r, 0) : (clearTimeout(t), t = null, s.tn.del({
           url: e,
           headers: {
-            Authorization: o.getToken()
+            Authorization: a.getToken()
           },
           oldFormErrors: true,
           rejectWithError: true

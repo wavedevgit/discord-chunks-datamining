@@ -7,23 +7,23 @@ require.d(exports, {
 });
 var Chunk746047 = require("./746047.js"),
   Chunk266310 = require("./266310.js");
-let o = "row-header-column-" + Math.random().toString(36).slice(2),
-  a = "row-header-column-" + Math.random().toString(36).slice(2);
-for (; o === a;) a = "row-header-column-" + Math.random().toString(36).slice(2);
+let a = "row-header-column-" + Math.random().toString(36).slice(2),
+  o = "row-header-column-" + Math.random().toString(36).slice(2);
+for (; a === o;) o = "row-header-column-" + Math.random().toString(36).slice(2);
 
 function s(e, t) {
   if (0 === t.length) return [];
   let n = [],
     r = new Map;
-  for (let a of t) {
-    let t = a.parentKey,
-      s = [a];
+  for (let o of t) {
+    let t = o.parentKey,
+      s = [o];
     for (; t;) {
       let n = e.get(t);
       if (!n) break;
       if (r.has(n)) {
-        var i, o;
-        null != (o = (i = n).colSpan) || (i.colSpan = 0), n.colSpan++, n.colspan = n.colSpan;
+        var i, a;
+        null != (a = (i = n).colSpan) || (i.colSpan = 0), n.colSpan++, n.colspan = n.colSpan;
         let {
           column: e,
           index: t
@@ -37,13 +37,13 @@ function s(e, t) {
       });
       t = n.parentKey
     }
-    n.push(s), a.index = n.length - 1
+    n.push(s), o.index = n.length - 1
   }
-  let a = Math.max(...n.map(e => e.length)),
-    s = Array(a).fill(0).map(() => []),
+  let o = Math.max(...n.map(e => e.length)),
+    s = Array(o).fill(0).map(() => []),
     l = 0;
   for (let e of n) {
-    let t = a - 1;
+    let t = o - 1;
     for (let n of e) {
       if (n) {
         let e = s[t],
@@ -171,7 +171,7 @@ class l extends Chunk266310.V {
     if (null == n ? true : n.showSelectionCheckboxes) {
       let e = {
         type: "column",
-        key: o,
+        key: a,
         value: null,
         textValue: "",
         level: 0,
@@ -188,7 +188,7 @@ class l extends Chunk266310.V {
     if (null == n ? true : n.showDragButtons) {
       let e = {
         type: "column",
-        key: a,
+        key: o,
         value: null,
         textValue: "",
         level: 0,

@@ -12,17 +12,17 @@ var Chunk399606 = require("./399606.js"),
 
 function s(e, t) {
   switch (e) {
-    case a.A2N.ALWAYS:
+    case o.A2N.ALWAYS:
       returntrue;
-    case a.A2N.IF_MODERATOR:
+    case o.A2N.IF_MODERATOR:
       return t;
-    case a.A2N.ON_CLICK:
+    case o.A2N.ON_CLICK:
     default:
       returnfalse
   }
 }
 
 function l(e) {
-  let t = (0, r.e7)([o.Z], () => o.Z.can(a.Plq.MANAGE_MESSAGES, e));
+  let t = (0, r.e7)([a.Z], () => a.Z.can(o.Plq.MANAGE_MESSAGES, e));
   return !s(i.cC.useSetting(), t)
 }

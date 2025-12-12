@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk674563 = require("./674563.js"),
   Chunk524484 = require("./524484.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk894723 = require("./894723.js");
+  Chunk619514 = require("./619514.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,8 +82,8 @@ function Z(e, t) {
   if (null == e) return {};
   var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -91,8 +91,8 @@ function Z(e, t) {
 function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
@@ -149,8 +149,8 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       user: t,
       isOwner: n,
       lostPermissionTooltipText: i,
-      ownerTooltipText: o,
-      premiumSince: a,
+      ownerTooltipText: a,
+      premiumSince: o,
       onClickPremiumGuildIcon: s
     } = e;
     return (0, r.jsxs)(r.Fragment, {
@@ -159,9 +159,9 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       }), (0, r.jsx)(H, {
         isOwner: n,
         lostPermissionTooltipText: i,
-        ownerTooltipText: o
+        ownerTooltipText: a
       }), (0, r.jsx)(Y, {
-        premiumSince: a,
+        premiumSince: o,
         onClickPremiumGuildIcon: s
       })]
     })
@@ -171,8 +171,8 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       colorRoleName: t,
       colorString: n,
       colorStrings: i,
-      name: o,
-      hideClanTag: a,
+      name: a,
+      hideClanTag: o,
       user: s,
       guildId: l,
       isHovering: u
@@ -184,7 +184,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
     }), p = null == l && null != d;
     return (0, r.jsxs)(r.Fragment, {
       children: [p ? (0, r.jsx)(O.Z, {
-        userName: null != o ? o : "",
+        userName: null != a ? a : "",
         displayNameStyles: d,
         effectDisplayType: u ? y.F.ANIMATED : y.F.STATIC,
         loop: true
@@ -192,11 +192,11 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         roleName: t,
         colorString: n,
         colorStrings: i,
-        name: o,
+        name: a,
         className: j.name,
         displayNameStylesFont: f,
         animateRoleGradient: u
-      }), !a && (0, r.jsx)(S.ZP, {
+      }), !o && (0, r.jsx)(S.ZP, {
         primaryGuild: null == s ? true : s.primaryGuild,
         userId: null == s ? true : s.id,
         contextGuildId: l,
@@ -210,8 +210,8 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       user: t,
       shouldAnimateStatus: n,
       activities: i,
-      status: o,
-      eventHandlers: a,
+      status: a,
+      eventHandlers: o,
       avatarSrc: s,
       isMobile: l,
       isTyping: d,
@@ -219,9 +219,9 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       handleSetTypingRef: p,
       typingRef: _,
       currentUser: m
-    } = e, h = o === w.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? w.Skl.STREAMING : o;
+    } = e, h = a === w.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? w.Skl.STREAMING : a;
     return E = h ? true : E, (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g, G(k({}, a), {
+      children: [(0, r.jsx)(g, G(k({}, o), {
         size: c.EFr.SIZE_32,
         src: s,
         isMobile: l,
@@ -242,8 +242,8 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
     let {
       hideSubtext: t,
       hideTooltip: n = false,
-      activities: o,
-      status: a,
+      activities: a,
+      status: o,
       applicationStream: s,
       voiceStatusChannel: l,
       user: c,
@@ -251,12 +251,12 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       isHoveringOrFocusing: d,
       quest: p
     } = e, m = i.useMemo(() => (0, f.Z)({
-      activities: o,
-      status: a,
+      activities: a,
+      status: o,
       applicationStream: s,
       voiceChannel: l
-    }), [o, a, s, l]), h = i.useMemo(() => !(0, E.Z)({
-      activity: null == o ? true : o.find(e => {
+    }), [a, o, s, l]), h = i.useMemo(() => !(0, E.Z)({
+      activity: null == a ? true : a.find(e => {
         let {
           type: t
         } = e;
@@ -264,11 +264,11 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       }),
       user: c,
       channel: u
-    }), [o, c, u]);
+    }), [a, c, u]);
     return t || !m ? null : (0, r.jsx)(_.Z, {
       location: "MemberListSubtext",
       user: c,
-      activities: o,
+      activities: a,
       applicationStream: s,
       voiceChannel: l,
       animateEmoji: d,
@@ -281,7 +281,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
     let {
       selected: t = false,
       colorString: n,
-      colorStrings: o,
+      colorStrings: a,
       colorRoleName: l,
       isOwner: u,
       ownerTooltipText: f,
@@ -313,8 +313,8 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       "aria-posinset": en,
       "aria-setsize": er,
       id: ei,
-      tabIndex: eo,
-      itemProps: ea,
+      tabIndex: ea,
+      itemProps: eo,
       ref: es
     } = e, el = null == b ? true : b.id, ec = R.ZP.useName(b), eu = i.useRef(null), ed = null != es ? es : eu, [ef, ep] = i.useState(false), [e_, em] = i.useState(false), [eh, eg] = i.useState(null), {
       voiceChannel: eE
@@ -334,9 +334,9 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       size: c.EFr.SIZE_32,
       animateOnHover: !(t || ef),
       guildId: L
-    }), eI = null != ea ? ea : {}, {
+    }), eI = null != eo ? eo : {}, {
       onFocus: eT
-    } = eI, eC = Z(eI, ["onFocus"]), eA = (0, T.X7)(L, el, null != o ? o : null), [eN, eP] = i.useState(false);
+    } = eI, eC = Z(eI, ["onFocus"]), eA = (0, T.X7)(L, el, null != a ? a : null), [eN, eP] = i.useState(false);
     i.useEffect(() => {
       t && eP(false)
     }, [t]);
@@ -380,7 +380,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       children: () => (0, r.jsx)(g.Z, k({
         ref: ed,
         selected: t,
-        className: a()(j.member, M, {
+        className: o()(j.member, M, {
           [j.offline]: S === w.Skl.OFFLINE && !t,
           [j.flatBottom]: ew
         }),
@@ -408,7 +408,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         }) : (0, r.jsx)(s.u, {
           text: _,
           children: (0, r.jsx)("span", {
-            className: a()(j.username, j.lostPermission),
+            className: o()(j.username, j.lostPermission),
             children: (0, r.jsx)(z, {
               colorRoleName: l,
               colorString: null != n ? n : null,
@@ -461,7 +461,7 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         "aria-setsize": er,
         "aria-posinset": en,
         id: ei,
-        tabIndex: eo,
+        tabIndex: ea,
         onFocus: eL,
         focusProps: {
           offset: {

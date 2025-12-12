@@ -53,10 +53,10 @@ function u(e) {
       T.current && (null != h ? h : A)(e)
     }, [h]),
     R = r.useCallback(e => {
-      if (v.current = e, null == e) return void(0, o.h)(t, null, g);
+      if (v.current = e, null == e) return void(0, a.h)(t, null, g);
       let n = (0, l.P1)(e),
         r = (0, l.x3)(e);
-      N(n, r), (0, o.h)(t, r, g)
+      N(n, r), (0, a.h)(t, r, g)
     }, [t, g, N]),
     w = r.useMemo(() => (0, i.E)({
       getFocusableElements: () => c(t, I),
@@ -73,10 +73,10 @@ function u(e) {
     L.current = D
   }, [D]), r.useLayoutEffect(() => {
     let e = I.current;
-    if (null != e && u) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", i), e.addEventListener("scroll", o, {
+    if (null != e && u) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", i), e.addEventListener("scroll", a, {
       passive: true
     }), () => {
-      e.removeEventListener("focusin", n), e.removeEventListener("focusout", r), e.removeEventListener("focus", i), e.removeEventListener("scroll", o)
+      e.removeEventListener("focusin", n), e.removeEventListener("focusout", r), e.removeEventListener("focus", i), e.removeEventListener("scroll", a)
     };
 
     function n() {
@@ -98,14 +98,14 @@ function u(e) {
           r = C(t);
         if (null != r) {
           if (true !== S.current) return N(t, (0, l.x3)(n));
-          else if (await (0, a.JJ)(e, r)) return N(t, (0, l.x3)(n))
+          else if (await (0, o.JJ)(e, r)) return N(t, (0, l.x3)(n))
         }
       }
-      let r = await (0, a.KG)(e, c(t, I));
+      let r = await (0, o.KG)(e, c(t, I));
       null !== r && R(r)
     }
 
-    function o() {
+    function a() {
       S.current = true
     }
   }, [u, t, g, N, h, P, R]);
@@ -165,14 +165,14 @@ function u(e) {
             var i;
             let n = C((0, l.P1)(t)),
               r = null != (i = null == n ? true : n.ownerDocument) ? i : document,
-              o = E || n === r.activeElement;
-            null != n && o && (e.preventDefault(), e.stopPropagation(), null == n || n.click())
+              a = E || n === r.activeElement;
+            null != n && a && (e.preventDefault(), e.stopPropagation(), null == n || n.click())
           }
         }
       }
     }, [M, k, t, y, f, d, R, E]),
     G = r.useCallback(e => {
-      v.current = null != e ? (0, l.jb)(t, e) : null, (0, o.h)(t, e, g)
+      v.current = null != e ? (0, l.jb)(t, e) : null, (0, a.h)(t, e, g)
     }, [t, g]);
   return r.useMemo(() => ({
     id: t,
@@ -185,12 +185,12 @@ function u(e) {
     setFocus: G,
     async focusLastVisibleItem() {
       var e;
-      let n = await (0, a.jo)(null != (e = I.current) ? e : document.body, c(t, I));
+      let n = await (0, o.jo)(null != (e = I.current) ? e : document.body, c(t, I));
       null !== n && R(n)
     },
     async focusFirstVisibleItem() {
       var e;
-      let n = await (0, a.KG)(null != (e = I.current) ? e : document.body, c(t, I));
+      let n = await (0, o.KG)(null != (e = I.current) ? e : document.body, c(t, I));
       null !== n && R(n)
     },
     focusPreviousItem: k,

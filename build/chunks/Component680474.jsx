@@ -1,7 +1,7 @@
-/** Chunk was on 69844 **/
+/** Chunk was on 92504 **/
 /** chunk id: 680474, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,39 +15,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk24746 = require("./24746.jsx"),
   Chunk970731 = require("./970731.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk964645 = require("./964645.js");
+  Chunk195006 = require("./195006.js");
 
-function f(e) {
+function g(e) {
   let {
     application: t
-  } = e, n = i.useMemo(() => {
-    var e, n, r;
-    return null != (r = (null != (n = null == (e = t.directory_entry) ? true : e.carousel_items) ? n : []).map(s.RF).filter(l.lm)) ? r : []
+  } = e, n = r.useMemo(() => {
+    var e, n, a;
+    return null != (a = (null != (n = null == (e = t.directory_entry) ? true : e.carousel_items) ? n : []).map(s.RF).filter(l.lm)) ? a : []
   }, [t]);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)("div", {
-      className: g.aboutContainer,
-      children: [(0, r.jsx)(o.Z, {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsxs)("div", {
+      className: f.aboutContainer,
+      children: [(0, a.jsx)(o.Z, {
         application: t,
         carouselItems: n
-      }), (0, r.jsx)(p.Z, {
+      }), (0, a.jsx)(p.Z, {
         application: t
-      }), (0, r.jsx)(c.Z, {
+      }), (0, a.jsx)(c.Z, {
         application: t
-      }), (0, r.jsx)(m.Z, {
+      }), (0, a.jsx)(m.Z, {
         application: t
-      }), (0, r.jsx)(d.Z, {
+      }), (0, a.jsx)(d.Z, {
         application: t
       })]
-    }), (0, r.jsxs)("div", {
-      className: g.informationContainer,
-      children: [(0, r.jsx)("div", {
-        className: g.divider
-      }), (0, r.jsx)(a.X6q, {
+    }), (0, a.jsxs)("div", {
+      className: f.informationContainer,
+      children: [(0, a.jsx)("div", {
+        className: f.divider
+      }), (0, a.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: h.intl.string(h.t["mD+J/i"])
-      }), (0, r.jsx)(u.Z, {
+      }), (0, a.jsx)(u.Z, {
         application: t,
         view: "embedded"
       })]

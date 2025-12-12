@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  f: () => a
+  f: () => o
 }), require("./415506.js");
 var Chunk4646 = require("./4646.js"),
   Chunk665672 = require("./665672.js");
@@ -15,11 +15,11 @@ try {
 } catch (e) {
   r = null
 }
-async function a(e) {
+async function o(e) {
   let {
     assetsToLoad: t,
     drawImage: r,
-    exportConfigs: a
+    exportConfigs: o
   } = e, s = await (0, i.k2)(t);
   await s.loadFonts();
   {
@@ -28,9 +28,9 @@ async function a(e) {
       i = document.createElement("canvas"),
       l = new e(i, s),
       c = new t,
-      u = new o.Z(l, c);
+      u = new a.Z(l, c);
     r(u.canvas);
-    let d = await u.export(a);
+    let d = await u.export(o);
     return i.remove(), d
   }
 }

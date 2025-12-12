@@ -41,7 +41,7 @@ function g(e) {
     nonce: n,
     channelId: r,
     deviceId: i,
-    commandId: o
+    commandId: a
   } = e;
   u = {
     type: t,
@@ -49,7 +49,7 @@ function g(e) {
     channelId: r,
     startedAt: Date.now(),
     deviceId: i,
-    commandId: o
+    commandId: a
   }
 }
 
@@ -89,7 +89,7 @@ function O(e) {
 let v = Object.freeze({});
 class S extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(a.Z, s.Z)
+    null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(o.Z, s.Z)
   }
   getUserAgnosticState() {
     return {

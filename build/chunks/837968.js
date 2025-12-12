@@ -19,10 +19,10 @@ function l(e) {
     isPriority: t,
     isLatched: n
   });
-  let l = o.Z.getMode() === a.pM4.PUSH_TO_TALK,
+  let l = a.Z.getMode() === o.pM4.PUSH_TO_TALK,
     c = (0, i.f)({
       location: "doPTT",
       autoTrackExposure: false
-    }).enableLatching && true === o.Z.getModeOptions().pttLatchingEnabled;
-  o.Z.getMediaEngine().eachConnection(r => r.setForceAudioInput(e, t, l && c && !n && !e), s.Yn.DEFAULT)
+    }).enableLatching && true === a.Z.getModeOptions().pttLatchingEnabled;
+  a.Z.getMediaEngine().eachConnection(r => r.setForceAudioInput(e, t, l && c && !n && !e), s.Yn.DEFAULT)
 }

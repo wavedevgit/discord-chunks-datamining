@@ -1,1 +1,1 @@
-{"id":"864133","type":"store","data":{"name":"GuildTagChangedCoachmarkStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getGuildLastSeenInfo","args":["e"]}],"events":["GUILD_TAG_CHANGED_COACHMARK_SEEN","LOGOUT"]},"fromModule":{"id":"88499"}}
+{"id":"864133","type":"store","data":{"name":"GuildTagChangedCoachmarkStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getGuildLastSeenInfo","args":["e"]}],"events":["GUILD_TAG_CHANGED_COACHMARK_SEEN","LOGOUT"]},"fromModule":{"id":"23736"}}

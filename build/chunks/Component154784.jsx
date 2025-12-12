@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
 function h(e) {
   let {
     isRedesign: t = false
-  } = e, n = (0, a.O)(), h = i.useRef(false), g = (0, o.e7)([f.Z], () => f.Z.getVideoDeviceId()), [E, b] = i.useState((0, l.P)(p.default.getCurrentUser())), y = i.useRef(E);
+  } = e, n = (0, o.O)(), h = i.useRef(false), g = (0, a.e7)([f.Z], () => f.Z.getVideoDeviceId()), [E, b] = i.useState((0, l.P)(p.default.getCurrentUser())), y = i.useRef(E);
   i.useEffect(() => () => {
     h.current && (0, c.Up)(y.current)
   }, []);

@@ -25,7 +25,7 @@ function l(e, t) {
     fieldProps: m,
     descriptionProps: h,
     errorMessageProps: g
-  } = (0, a.U)({
+  } = (0, o.U)({
     ...e,
     labelElementType: "span",
     isInvalid: d,
@@ -49,7 +49,7 @@ function l(e, t) {
       onFocusWithinChange: e.onFocusChange
     });
   return {
-    groupProps: (0, o.d)(E, {
+    groupProps: (0, a.d)(E, {
       role: "group",
       "aria-disabled": n || true,
       ...m,

@@ -67,7 +67,7 @@ async function g(e, t) {
   if (null != n && !await (0, c.Z)(n)) return void(0, u.k)({
     kind: "channel"
   });
-  if (null == n) return void(0, o.uL)(e, t);
+  if (null == n) return void(0, a.uL)(e, t);
   let r = h(n);
-  return null == r.channelId ? void(0, a.X)(r.guildId) : (0, i.WF)(r.channelId) && (0, i.WF)(r.threadId) ? void(null != r.threadId ? (0, o.uL)(d.Z5c.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, o.uL)(d.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId), t)) : void(0, u.V)()
+  return null == r.channelId ? void(0, o.X)(r.guildId) : (0, i.WF)(r.channelId) && (0, i.WF)(r.threadId) ? void(null != r.threadId ? (0, a.uL)(d.Z5c.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, a.uL)(d.Z5c.CHANNEL(r.guildId, r.channelId, r.messageId), t)) : void(0, u.V)()
 }

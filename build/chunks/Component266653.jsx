@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk71509 = require("./71509.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518474 = require("./518474.js");
+  Chunk436313 = require("./436313.js");
 
 function C(e) {
   let {
@@ -29,27 +29,27 @@ function C(e) {
   } = (0, r.cj)([d.default, u.Z], () => ({
     currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.Z.getUsers()
-  })), [b, E] = i.useState(false), [N, A] = i.useState(h.lds), [v, p] = i.useState(null);
+  })), [E, N] = i.useState(false), [_, A] = i.useState(h.lds), [v, p] = i.useState(null);
   return i.useEffect(() => {
-    if (b) p((0, s.jsx)(c.Wn, {
+    if (E) p((0, s.jsx)(c.Wn, {
       messageType: c.QYI.ERROR,
       className: g.infoMessage,
-      children: _.intl.format(_.t.HAuRSM, {
+      children: b.intl.format(b.t.HAuRSM, {
         maxNumAccounts: f.$H
       })
     })), A(h.lds);
-    else if (null != N) {
-      let e = d.default.getUser(N);
+    else if (null != _) {
+      let e = d.default.getUser(_);
       null != e && p((0, s.jsx)(c.Wn, {
         messageType: c.QYI.POSITIVE,
         className: g.infoMessage,
-        children: _.intl.format(_.t["09qide"], {
+        children: b.intl.format(b.t["09qide"], {
           username: e.username
         })
-      })), E(false)
+      })), N(false)
     }
-  }, [N, b]), i.useEffect(() => {
-    T.length < f.$H && E(false)
+  }, [_, E]), i.useEffect(() => {
+    T.length < f.$H && N(false)
   }, [T]), (0, o.Z)({
     type: a.ImpressionTypes.MODAL,
     name: a.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
@@ -57,19 +57,19 @@ function C(e) {
     onClose: n,
     transitionState: t,
     size: "md",
-    "aria-label": _.intl.string(_.t.WbFpq4),
-    title: _.intl.string(_.t.WbFpq4),
-    subtitle: _.intl.string(_.t["+1Uk3c"]),
+    "aria-label": b.intl.string(b.t.WbFpq4),
+    title: b.intl.string(b.t.WbFpq4),
+    subtitle: b.intl.string(b.t["+1Uk3c"]),
     actions: [{
-      text: _.intl.string(_.t["9g2mqT"]),
+      text: b.intl.string(b.t["9g2mqT"]),
       variant: "secondary",
       onClick: () => {
-        if (T.length >= f.$H) return void E(true);
+        if (T.length >= f.$H) return void N(true);
         n(), (0, x.y)()
       }
     }],
     children: [v, (0, s.jsx)(m.Z, {
-      actionText: _.intl.string(_.t.Wf421J),
+      actionText: b.intl.string(b.t.Wf421J),
       onAction: (e, t) => {
         switch (e) {
           case m.W.LOGIN_REQUIRED:

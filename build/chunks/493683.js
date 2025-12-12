@@ -68,14 +68,14 @@ let C = {
       recipientIds: t,
       joinCall: n = false,
       joinCallVideo: i = false,
-      location: o,
-      onBeforeTransition: a,
+      location: a,
+      onBeforeTransition: o,
       navigateToChannel: s = true
     } = e, l = this._getRecipients(t), c = e => {
       n && E.Z.call(e.id, i, true, e.isDM() ? e.getRecipientId() : null)
     };
     if (1 === l.length) {
-      let [e] = l, t = this._openCachedDMChannel(e, a, s);
+      let [e] = l, t = this._openCachedDMChannel(e, o, s);
       if (null != t) return c(t), Promise.resolve(t.id)
     }
     try {
@@ -85,14 +85,14 @@ let C = {
           recipients: l
         },
         context: {
-          location: o
+          location: a
         },
         oldFormErrors: true,
         retries: 3,
         rejectWithError: false
       });
       if (s) {
-        null == a || a();
+        null == o || o();
         let t = this._openPrivateChannel(e.body);
         c(t)
       }
@@ -121,7 +121,7 @@ let C = {
         rejectWithError: false
       }),
       i = (0, p.q_)(n.body);
-    return o.Z.dispatch({
+    return a.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: i
     }), i.id
@@ -136,7 +136,7 @@ let C = {
         rejectWithError: true
       }),
       n = (0, p.q_)(t.body);
-    return o.Z.dispatch({
+    return a.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: n
     }), n.id
@@ -144,7 +144,7 @@ let C = {
   _getRecipients: e => null != e ? Array.isArray(e) ? e : [e] : [],
   _openPrivateChannel(e) {
     let t = (0, p.q_)(e);
-    return o.Z.dispatch({
+    return a.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
     }), null != (0, c.D)() ? (0, f.Kh)(t.id, {
@@ -155,9 +155,9 @@ let C = {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = arguments.length > 2 && true !== arguments[2] && arguments[2];
     return (0, s.Z)(e) && h.default.track(y.rMx.CHANGE_LOG_DM_REMOVED, {
-      last_changelog_id: a.Z.latestChangelogId(),
+      last_changelog_id: o.Z.latestChangelogId(),
       unread_count: m.ZP.getUnreadCount(e)
-    }), o.Z.dispatch({
+    }), a.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: {
         id: e,
@@ -185,7 +185,7 @@ let C = {
       oldFormErrors: true,
       rejectWithError: false
     });
-    return o.Z.dispatch({
+    return a.Z.dispatch({
       type: "CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS",
       channelId: e,
       overwrite: t
@@ -197,13 +197,13 @@ let C = {
       oldFormErrors: true,
       rejectWithError: false
     });
-    return o.Z.dispatch({
+    return a.Z.dispatch({
       type: "CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS",
       channelId: e,
       overwriteId: t
     }), n
   },
-  addRecipient(e, t, n, o) {
+  addRecipient(e, t, n, a) {
     return r.tn.put({
       url: y.ANM.CHANNEL_RECIPIENT(e, t),
       context: {
@@ -211,7 +211,7 @@ let C = {
       },
       oldFormErrors: true,
       rejectWithError: true
-    }).then(t => (i.uv.announce(O.intl.string(O.t.cU0t1F)), null == o || o(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (i.uv.announce(O.intl.string(O.t["8GEdej"])), e))
+    }).then(t => (i.uv.announce(O.intl.string(O.t.cU0t1F)), null == a || a(), 201 === t.status) ? this._openPrivateChannel(t.body).id : e).catch(() => (i.uv.announce(O.intl.string(O.t["8GEdej"])), e))
   },
   addRecipients(e, t, n, r) {
     return this.addRecipient(e, t[0], n, r).then(e => Promise.all(t.slice(1).map(t => this.addRecipient(e, t, n))).then(() => e))
@@ -239,19 +239,19 @@ let C = {
         oldFormErrors: true,
         rejectWithError: true
       }),
-      o = null == n ? true : n.getGuildId();
-    return null == o || (null == n ? true : n.isThread()) || l.Z.checkGuildTemplateDirty(o), i
+      a = null == n ? true : n.getGuildId();
+    return null == a || (null == n ? true : n.isThread()) || l.Z.checkGuildTemplateDirty(a), i
   },
   async setIcon(e, t, n) {
     let i = _.Z.getChannel(e),
-      o = {
+      a = {
         channel_id: e,
         channel_type: null == i ? true : i.type,
         old_icon_set: (null == i ? true : i.icon) != null,
         new_icon_set: null != t,
         location: n
       };
-    h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, o), {
+    h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
       status: "initiated"
     }));
     try {
@@ -264,36 +264,36 @@ let C = {
         rejectWithError: true,
         failImmediatelyWhenRateLimited: true
       });
-      h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, o), {
+      h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
         status: "success"
       }));
-      let a = null == i ? true : i.getGuildId();
-      return null == a || (null == i ? true : i.isThread()) || l.Z.checkGuildTemplateDirty(a), n
+      let o = null == i ? true : i.getGuildId();
+      return null == o || (null == i ? true : i.isThread()) || l.Z.checkGuildTemplateDirty(o), n
     } catch (e) {
-      var a, s;
-      throw h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, o), {
+      var o, s;
+      throw h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, a), {
         status: "failed",
-        is_rate_limited: (null == e || null == (a = e.body) ? true : a.retry_after) != null,
+        is_rate_limited: (null == e || null == (o = e.body) ? true : o.retry_after) != null,
         error_message: null == e || null == (s = e.body) ? true : s.message
       })), e
     }
   },
   async updateChannel(e, t, n) {
     let i = "icon" in t,
-      o = _.Z.getChannel(e),
-      a = t.icon,
+      a = _.Z.getChannel(e),
+      o = t.icon,
       s = {
         channel_id: e,
-        channel_type: null == o ? true : o.type,
-        old_icon_set: (null == o ? true : o.icon) != null,
-        new_icon_set: null != a,
+        channel_type: null == a ? true : a.type,
+        old_icon_set: (null == a ? true : a.icon) != null,
+        new_icon_set: null != o,
         location: n
       };
     i && h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
       status: "initiated"
     }));
     try {
-      let a = await r.tn.patch({
+      let o = await r.tn.patch({
           context: {
             location: n
           },
@@ -302,10 +302,10 @@ let C = {
           oldFormErrors: true,
           rejectWithError: true
         }),
-        c = null == o ? true : o.getGuildId();
-      return null == c || (null == o ? true : o.isThread()) || l.Z.checkGuildTemplateDirty(c), i && h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
+        c = null == a ? true : a.getGuildId();
+      return null == c || (null == a ? true : a.isThread()) || l.Z.checkGuildTemplateDirty(c), i && h.default.track(y.rMx.CHANNEL_ICON_EDIT_PROGRESSED, T(S({}, s), {
         status: "success"
-      })), a
+      })), o
     } catch (e) {
       if (i) {
         var c, u;
@@ -324,7 +324,7 @@ let C = {
     rejectWithError: true
   }),
   preload(e, t) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "CHANNEL_PRELOAD",
       guildId: e === y.ME ? null : e,
       channelId: t,
@@ -334,7 +334,7 @@ let C = {
   fetchChannelStoreListing(e, t) {
     let n = null != t ? y.ANM.CHANNEL_STORE_LISTING_SKU(e, t) : y.ANM.CHANNEL_STORE_LISTING(e);
     return (0, g.Kb)(n).then(t => {
-      o.Z.dispatch({
+      a.Z.dispatch({
         type: "STORE_LISTING_FETCH_SUCCESS",
         channelId: e,
         storeListing: t.body
@@ -342,19 +342,19 @@ let C = {
     })
   },
   async createTextChannel(e, t, n, i) {
-    let o = {
+    let a = {
       type: y.d4z.GUILD_TEXT,
       name: t,
       permission_overwrites: []
     };
-    null != n && (o.parent_id = n), null != i && (o.topic = i);
-    let a = await r.tn.post({
+    null != n && (a.parent_id = n), null != i && (a.topic = i);
+    let o = await r.tn.post({
       url: y.ANM.GUILD_CHANNELS(e),
-      body: o,
+      body: a,
       oldFormErrors: true,
       rejectWithError: false
     });
-    return l.Z.checkGuildTemplateDirty(e), a
+    return l.Z.checkGuildTemplateDirty(e), o
   },
   fetchChannel: async e => (await r.tn.get({
     url: y.ANM.CHANNEL(e),

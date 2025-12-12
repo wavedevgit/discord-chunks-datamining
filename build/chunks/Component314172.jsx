@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk608798 = require("./608798.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk880033 = require("./880033.js");
+  Chunk722181 = require("./722181.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ function b(e) {
   } = e, O = (0, i.e7)([l.Z], () => l.Z.roleStyle);
   if (!(0, i.e7)([u.Z], () => u.Z.can(f.Plq.MANAGE_ROLES, t))) return null;
   let v = e => !(0, c.fI)(e) && !e.managed && u.Z.isRoleHigher(t, g, e) && false === n.roles.indexOf(e.id);
-  return (0, r.jsx)(o.y, {
+  return (0, r.jsx)(a.y, {
     targetElementRef: y,
     position: "bottom",
     align: "center",
@@ -84,7 +84,7 @@ function b(e) {
         onClose: n
       })
     },
-    children: e => (0, r.jsx)(a.u, {
+    children: e => (0, r.jsx)(o.u, {
       asContainer: true,
       text: p.intl.string(p.t.icyMgc),
       "aria-label": false,

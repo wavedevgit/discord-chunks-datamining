@@ -8,15 +8,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk522942 = require("./522942.js"),
   Chunk342905 = require("./342905.js"),
   Chunk271631 = require("./271631.js"),
-  Chunk376437 = require("./376437.js"),
+  Chunk143525 = require("./143525.js"),
   Chunk388032 = require("./388032.jsx");
 let c = {
-    [Chunk522942.m.SOLID]: Chunk376437.default.OpWJ3f,
-    [Chunk522942.m.GRADIENT]: Chunk376437.default["i9e/u1"],
-    [Chunk522942.m.GLOW]: Chunk376437.default["Ra3/93"],
-    [Chunk522942.m.NEON]: Chunk376437.default.x68b1F,
-    [Chunk522942.m.TOON]: Chunk376437.default.otpeeM,
-    [Chunk522942.m.POP]: Chunk376437.default.cjQOKb
+    [Chunk522942.m.SOLID]: Chunk143525.default.OpWJ3f,
+    [Chunk522942.m.GRADIENT]: Chunk143525.default["i9e/u1"],
+    [Chunk522942.m.GLOW]: Chunk143525.default["Ra3/93"],
+    [Chunk522942.m.NEON]: Chunk143525.default.x68b1F,
+    [Chunk522942.m.TOON]: Chunk143525.default.otpeeM,
+    [Chunk522942.m.POP]: Chunk143525.default.cjQOKb
   },
   u = {
     [Chunk522942.m.SOLID]: 3,
@@ -28,14 +28,14 @@ let c = {
   };
 
 function d(e) {
-  let t = (0, a.Z)(e);
+  let t = (0, o.Z)(e);
   return r.useMemo(() => {
     var n, r;
     return {
       name: l.intl.string(null != (n = c[e]) ? n : s.default.OpWJ3f),
       defaultColors: t,
       previewStyles: {
-        fontId: o.C.DEFAULT,
+        fontId: a.C.DEFAULT,
         effectId: e,
         colors: t
       },

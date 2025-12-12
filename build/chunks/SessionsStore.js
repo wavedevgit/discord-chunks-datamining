@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => _
 });
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js");
@@ -39,19 +39,19 @@ class p extends(r = Chunk442837.ZP.Store) {
   }
   getRemoteActivities() {
     let e = Chunk314897.default.getSessionId(),
-      t = o().find(d, t => t.active && t.sessionId !== e);
+      t = a().find(d, t => t.active && t.sessionId !== e);
     return null != exports ? exports.activities : u
   }
   getHiddenActivities() {
     let e = Chunk314897.default.getSessionId(),
-      t = o().find(d, t => t.active && t.sessionId !== e);
+      t = a().find(d, t => t.active && t.sessionId !== e);
     return null != exports && null != exports.hiddenActivities ? exports.hiddenActivities : u
   }
   getSessionById(e) {
     return d[e]
   }
   getActiveSession() {
-    return o().find(d, e => {
+    return a().find(d, e => {
       let {
         active: t
       } = e;
@@ -62,7 +62,7 @@ class p extends(r = Chunk442837.ZP.Store) {
     var t;
     if (null == e) return null;
     let n = l.default.getSessionId(),
-      r = o().find(d, e => e.active && e.sessionId !== n);
+      r = a().find(d, e => e.active && e.sessionId !== n);
     if (null == r) return null;
     let i = r.activities.find(t => t.application_id === e);
     return null != i ? i : null == (t = r.hiddenActivities) ? true : t.find(t => t.application_id === e)

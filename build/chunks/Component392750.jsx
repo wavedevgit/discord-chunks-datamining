@@ -1,4 +1,4 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 392750, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -10,11 +10,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk752048 = require("./752048.js"),
   Chunk594174 = require("./594174.js"),
   Chunk681619 = require("./681619.jsx"),
-  Chunk996279 = require("./996279.js"),
-  Chunk451429 = require("./451429.js");
+  Chunk439267 = require("./439267.js"),
+  Chunk663618 = require("./663618.js");
 let u = [{
   key: "user",
-  cellClassName: Chunk996279.userCell,
+  cellClassName: Chunk439267.userCell,
   render(e) {
     var t;
     let {
@@ -29,7 +29,7 @@ let u = [{
     variant: "text-sm/semibold",
     children: "COMMUNICATION AFFINITY"
   }),
-  cellClassName: Chunk996279.affinityCell,
+  cellClassName: Chunk439267.affinityCell,
   render(e) {
     let {
       affinity: t
@@ -42,7 +42,7 @@ let u = [{
     variant: "text-sm/semibold",
     children: "VOICE AFFINITY"
   }),
-  cellClassName: Chunk996279.affinityCell,
+  cellClassName: Chunk439267.affinityCell,
   render(e) {
     let {
       vcProbability: t
@@ -55,7 +55,7 @@ let u = [{
     variant: "text-sm/semibold",
     children: "IS FRIEND"
   }),
-  cellClassName: Chunk996279.affinityCell,
+  cellClassName: Chunk439267.affinityCell,
   render(e) {
     let {
       isFriend: t
@@ -81,9 +81,9 @@ function m() {
     }
   }));
   return 0 === module.length ? null : (0, Chunk54381.jsx)(Chunk681619.Z, {
-    className: Chunk451429.panel,
+    className: Chunk663618.panel,
     columns: u,
-    rowClassName: Chunk996279.row,
+    rowClassName: Chunk439267.row,
     data: module
   })
 }

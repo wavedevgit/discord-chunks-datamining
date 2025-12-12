@@ -44,7 +44,7 @@ function u(e) {
 }
 
 function d(e) {
-  (0, o.Z)("connection_replay_log_enabled", e, a.ZP.shouldRecordNextConnection()), r.Z.dispatch({
+  (0, a.Z)("connection_replay_log_enabled", e, o.ZP.shouldRecordNextConnection()), r.Z.dispatch({
     type: "RTC_DEBUG_SET_RECORDING_FLAG",
     value: e
   })

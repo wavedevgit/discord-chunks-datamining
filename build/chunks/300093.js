@@ -14,15 +14,15 @@ module.exports = function(e) {
     i = e.inherit(e.APOS_STRING_MODE, {
       relevance: 0
     }),
-    o = e.inherit(e.QUOTE_STRING_MODE, {
+    a = e.inherit(e.QUOTE_STRING_MODE, {
       relevance: 0
     }),
-    a = {
+    o = {
       className: "subst",
       begin: "\\\\[abfnrtv]\\|\\\\x[0-9a-fA-F]*\\\\\\|%[-+# *.0-9]*[dioxXucsfeEgGp]",
       relevance: 0
     };
-  return o.contains = o.contains.slice(), o.contains.push(a), {
+  return a.contains = a.contains.slice(), a.contains.push(o), {
     name: "Mercury",
     aliases: ["m", "moo"],
     keywords: t,
@@ -49,7 +49,7 @@ module.exports = function(e) {
         begin: "=",
         relevance: 0
       }]
-    }, n, e.C_BLOCK_COMMENT_MODE, r, e.NUMBER_MODE, i, o, {
+    }, n, e.C_BLOCK_COMMENT_MODE, r, e.NUMBER_MODE, i, a, {
       begin: /:-/
     }, {
       begin: /\.$/

@@ -5,33 +5,33 @@ require.d(exports, {
 });
 var n, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let s = {
+let d = {
   canPlayWowMoment: false,
   isFetchingWowMomentMedia: false,
   wowMomentWumpusMediaUrl: null
 };
-class d extends(i = Chunk442837.ZP.Store) {
+class s extends(i = Chunk442837.ZP.Store) {
   getState() {
-    return s
+    return d
   }
   get canPlayWowMoment() {
-    return s.canPlayWowMoment
+    return d.canPlayWowMoment
   }
   get isFetchingWowMomentMedia() {
-    return s.isFetchingWowMomentMedia
+    return d.isFetchingWowMomentMedia
   }
   get wowMomentWumpusMedia() {
-    return s.wowMomentWumpusMediaUrl
+    return d.wowMomentWumpusMediaUrl
   }
-}(n = "displayName") in d ? Object.defineProperty(d, n, {
+}(n = "displayName") in s ? Object.defineProperty(s, n, {
   value: "PurchasedItemsFestivityStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : d[n] = "PurchasedItemsFestivityStore";
-let r = new d(Chunk570140.Z, {
+}) : s[n] = "PurchasedItemsFestivityStore";
+let r = new s(Chunk570140.Z, {
   LOGOUT: function() {
-    s = {
+    d = {
       canPlayWowMoment: false,
       isFetchingWowMomentMedia: false,
       wowMomentWumpusMediaUrl: null
@@ -41,18 +41,18 @@ let r = new d(Chunk570140.Z, {
     let {
       value: t
     } = e;
-    s.canPlayWowMoment = t
+    d.canPlayWowMoment = t
   },
   PURCHASED_ITEMS_FESTIVITY_IS_FETCHING_WOW_MOMENT_MEDIA: function() {
-    s.isFetchingWowMomentMedia = true
+    d.isFetchingWowMomentMedia = true
   },
   PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_SUCCESS: function(e) {
     let {
       wumpusMedia: t
     } = e;
-    s.wowMomentWumpusMediaUrl = t, s.isFetchingWowMomentMedia = false
+    d.wowMomentWumpusMediaUrl = t, d.isFetchingWowMomentMedia = false
   },
   PURCHASED_ITEMS_FESTIVITY_FETCH_WOW_MOMENT_MEDIA_FAILURE: function() {
-    s.isFetchingWowMomentMedia = false, s.canPlayWowMoment = false
+    d.isFetchingWowMomentMedia = false, d.canPlayWowMoment = false
   }
 })

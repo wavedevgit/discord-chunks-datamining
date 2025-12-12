@@ -2,7 +2,7 @@
 /** chunk id: 391110, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  MQ: () => o,
+  MQ: () => a,
   gM: () => r,
   zW: () => i
 });
@@ -12,6 +12,6 @@ var r = function(e) {
   i = function(e) {
     return e[e.DEFAULT = 0] = "DEFAULT", e[e.REWARD = 1] = "REWARD", e[e.PROMOTION_REDEMPTION = 2] = "PROMOTION_REDEMPTION", e[e.NITRO_GRADIENT_HOVER_BORDER = 3] = "NITRO_GRADIENT_HOVER_BORDER", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e.SEE_ALL = "See All Nitro Perks", e.MARKETING = "Marketing", e.HOME = "Home", e
   }({})

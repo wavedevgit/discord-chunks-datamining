@@ -13,13 +13,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk11844 = require("./11844.jsx"),
   Chunk300037 = require("./300037.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk567897 = require("./567897.js");
+  Chunk43658 = require("./43658.js");
 let p = 3,
   _ = function(e) {
     let {
       canAddBoosts: t,
       canApplyBoosts: n
-    } = e, _ = (0, o.e7)([s.Z], () => s.Z.affinities), m = (0, o.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), h = i.useMemo(() => {
+    } = e, _ = (0, a.e7)([s.Z], () => s.Z.affinities), m = (0, a.e7)([l.ZP], () => l.ZP.getFlattenedGuildIds()), h = i.useMemo(() => {
       let e = _.slice(0, p).map(e => e.guildId);
       for (let t = 0; t < m.length && !(e.length >= 3); t++) {
         let n = m[t];
@@ -29,7 +29,7 @@ let p = 3,
     }, [_, m]);
     return 0 === h.length ? null : (0, r.jsxs)("div", {
       className: f.wrapper,
-      children: [t && (0, r.jsx)(a.Heading, {
+      children: [t && (0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         className: f.header,
         children: d.intl.string(d.t.r90Wgo)

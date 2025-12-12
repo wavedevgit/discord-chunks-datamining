@@ -1,25 +1,25 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 566084, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = null,
+let s = null,
   o = 0,
   c = null,
-  u = null,
-  d = false;
+  d = null,
+  u = false;
 class g extends(i = Chunk442837.ZP.Store) {
   hasChanges() {
-    return a !== c
+    return s !== c
   }
   showNotice() {
     return this.hasChanges()
   }
   get vanityURLCode() {
-    return a
+    return s
   }
   get originalVanityURLCode() {
     return c
@@ -28,13 +28,13 @@ class g extends(i = Chunk442837.ZP.Store) {
     return o
   }
   hasError() {
-    return null != u
+    return null != d
   }
   get errorDetails() {
-    return u
+    return d
   }
   get fetchedVanityURL() {
-    return d
+    return u
   }
 }(r = "displayName") in g ? Object.defineProperty(g, r, {
   value: "GuildSettingsVanityURLStore",
@@ -42,21 +42,21 @@ class g extends(i = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : g[r] = "GuildSettingsVanityURLStore";
-let m = new g(Chunk570140.Z, {
+let f = new g(Chunk570140.Z, {
   GUILD_SETTINGS_SET_VANITY_URL: function(e) {
     var t, n;
-    c = a = null != (t = e.code) ? t : "", o = e.uses, u = null != (n = e.error) ? n : null, d = true
+    c = s = null != (t = e.code) ? t : "", o = e.uses, d = null != (n = e.error) ? n : null, u = true
   },
   GUILD_SETTINGS_CLOSE: function() {
-    c = a = null, o = 0, u = null, d = false
+    c = s = null, o = 0, d = null, u = false
   },
   GUILD_SETTINGS_VANITY_URL_RESET: function() {
-    a = c, o = 0, u = null
+    s = c, o = 0, d = null
   },
   GUILD_SETTINGS_VANITY_URL_SET: function(e) {
-    a = e.code, o = 0
+    s = e.code, o = 0
   },
   GUILD_SETTINGS_VANITY_URL_ERROR: function(e) {
-    u = e.error
+    d = e.error
   }
 })

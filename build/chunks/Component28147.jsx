@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk209173 = require("./209173.js"),
   Chunk110924 = require("./110924.js"),
   Chunk367907 = require("./367907.js"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk399235 = require("./399235.js");
+  Chunk425838 = require("./425838.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,9 +85,9 @@ function F(e) {
   let {
     context: t,
     query: n,
-    entrypoint: o,
+    entrypoint: a,
     isScrollCloseToBottom: l
-  } = e, c = o === g._b.TEXT, u = o === g._b.TEXT, {
+  } = e, c = a === g._b.TEXT, u = a === g._b.TEXT, {
     loading: d,
     isEmptyState: f,
     commandResults: _,
@@ -108,7 +108,7 @@ function F(e) {
     context: t,
     fetches: true,
     pageLimit: G,
-    entrypoint: o
+    entrypoint: a
   });
   i.useEffect(() => {
     l && b === p.M.FETCHED && O()
@@ -125,7 +125,7 @@ function F(e) {
           } = e;
           return t
         }));
-      return [...e, ...a().compact(y.map(e => e.type === s.s.CONNECTION || t.has(e.data.id) ? null : {
+      return [...e, ...o().compact(y.map(e => e.type === s.s.CONNECTION || t.has(e.data.id) ? null : {
         application: e.data,
         installOnDemand: true
       }))]
@@ -135,7 +135,7 @@ function F(e) {
   return d ? (0, r.jsx)(W, {}) : C ? (0, r.jsx)(S.A, {
     type: g.LG.SEARCH_EMPTY,
     searchQuery: n,
-    textContent: o === g._b.TEXT ? P.intl.string(P.t.LSNOYf) : P.intl.string(P.t.Clu7Qh)
+    textContent: a === g._b.TEXT ? P.intl.string(P.t.LSNOYf) : P.intl.string(P.t.Clu7Qh)
   }) : (0, r.jsxs)("div", {
     children: [m && (0, r.jsx)(B, {
       context: t,
@@ -154,10 +154,10 @@ function F(e) {
 function B(e) {
   var t, n;
   let {
-    context: o,
-    commandResults: a,
+    context: a,
+    commandResults: o,
     query: s
-  } = e, p = a.length > U, E = i.useMemo(() => p ? a.slice(0, U) : a, [a, p]), [b, y] = i.useState(false), v = null != (t = (0, l.Z)(b)) ? t : b, S = i.useCallback(() => y(e => !e), []), C = (null != (n = (0, l.Z)(s)) ? n : s)[0] !== s[0], w = b && !C;
+  } = e, p = o.length > U, E = i.useMemo(() => p ? o.slice(0, U) : o, [o, p]), [b, y] = i.useState(false), v = null != (t = (0, l.Z)(b)) ? t : b, S = i.useCallback(() => y(e => !e), []), C = (null != (n = (0, l.Z)(s)) ? n : s)[0] !== s[0], w = b && !C;
   i.useLayoutEffect(() => y(false), [C]);
   let {
     ref: D,
@@ -173,12 +173,12 @@ function B(e) {
     !v && b && (0, c.yw)(N.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
       section_name: g.L3.SEARCH,
       source: h.Z.entrypoint(),
-      num: a.length
+      num: o.length
     })
-  }, [a.length, v, b]);
+  }, [o.length, v, b]);
   let j = w || x,
     M = w ? I.Z.buttonTypes.VIEW_LESS : I.Z.buttonTypes.VIEW_MORE,
-    k = j ? a : E;
+    k = j ? o : E;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(I.Z, {
       title: P.intl.string(P.t["0hKkS+"]),
@@ -192,7 +192,7 @@ function B(e) {
         let {
           command: n,
           application: i,
-          section: a
+          section: o
         } = e;
         return (0, r.jsx)(T.Z, {
           command: n,
@@ -205,10 +205,10 @@ function B(e) {
               command: n,
               location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
               sectionName: g.L3.SEARCH
-            }), "channel" === o.type && (u.Po({
-              channelId: o.channel.id,
+            }), "channel" === a.type && (u.Po({
+              channelId: a.channel.id,
               command: n,
-              section: a,
+              section: o,
               location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
               triggerSection: true,
               queryLength: s.length,
@@ -217,7 +217,7 @@ function B(e) {
               searchResultsPosition: t,
               source: e
             }), _.S.dispatch(N.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-              channelId: o.channel.id
+              channelId: a.channel.id
             }))
           }
         }, n.id)
@@ -251,10 +251,10 @@ function H(e) {
     context: t,
     applicationResults: n,
     includePlaceholder: i,
-    query: o,
-    searchesBots: a
+    query: a,
+    searchesBots: o
   } = e;
-  return a ? (0, r.jsxs)("div", {
+  return o ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(I.Z, {
       title: P.intl.string(P.t.PHjkRE)
     }), (0, r.jsxs)("div", {
@@ -262,7 +262,7 @@ function H(e) {
       children: [n.map((e, n) => {
         let {
           application: i,
-          installOnDemand: a
+          installOnDemand: o
         } = e;
         return (0, r.jsx)(Y, {
           context: t,
@@ -270,8 +270,8 @@ function H(e) {
           location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
           sectionName: g.L3.SEARCH,
           resultsPosition: n,
-          installOnDemand: a,
-          query: o
+          installOnDemand: o,
+          query: a
         }, i.id)
       }), i && M.map(e => (0, r.jsx)(C.Z, {}, e))]
     })]
@@ -283,7 +283,7 @@ function H(e) {
       children: [n.map((e, n) => {
         let {
           application: i,
-          installOnDemand: a
+          installOnDemand: o
         } = e;
         return (0, r.jsx)(V, {
           context: t,
@@ -292,8 +292,8 @@ function H(e) {
           location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
           sectionName: g.L3.SEARCH,
           resultsPosition: n,
-          installOnDemand: a,
-          query: o
+          installOnDemand: o,
+          query: a
         }, i.id)
       }), i && k.map(e => (0, r.jsx)(y.Z, {
         look: b.U4.LARGE_BANNER
@@ -319,12 +319,12 @@ function W() {
     children: [(0, Chunk54381.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["0hKkS+"])
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk399235.sectionContentContainer,
+      className: Chunk425838.sectionContentContainer,
       children: j.map(e => (0, r.jsx)(C.Z, {}, e))
     }), (0, Chunk54381.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk399235.sectionContentContainer,
+      className: Chunk425838.sectionContentContainer,
       children: M.map(e => (0, r.jsx)(C.Z, {}, e))
     })]
   })

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk556638 = require("./556638.js"),
-  Chunk80568 = require("./80568.js");
+  Chunk175996 = require("./175996.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,12 +58,12 @@ function p(e) {
     tooltipAriaLabel: i,
     className: c,
     onTooltipShow: d
-  } = e, p = (0, a.vjg)(a.Skl.ONLINE);
+  } = e, p = (0, o.vjg)(o.Skl.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
     color: p,
-    className: o()(l.icon, c)
-  }) : (0, r.jsx)(a.aML, {
+    className: a()(l.icon, c)
+  }) : (0, r.jsx)(o.aML, {
     "data-migration-pending": true,
     text: n,
     "aria-label": i,
@@ -73,7 +73,7 @@ function p(e) {
     children: e => (0, r.jsx)(t, f(u({}, e), {
       size: "custom",
       color: p,
-      className: o()(l.icon, c)
+      className: a()(l.icon, c)
     }))
   })
 }

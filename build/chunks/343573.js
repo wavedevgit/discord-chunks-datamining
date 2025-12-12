@@ -4,22 +4,22 @@
 let r;
 require.d(exports, {
   ph: () => s,
-  yW: () => a
+  yW: () => o
 });
 var Chunk606093 = require("./606093.js");
-let o = 1e3;
+let a = 1e3;
 
-function a() {
-  return Date.now() / o
+function o() {
+  return Date.now() / a
 }
 let s = function() {
   let {
     performance: e
   } = Chunk606093.n;
-  if (!module || !module.now) return a;
+  if (!module || !module.now) return o;
   let t = Date.now() - module.now(),
     n = true == module.timeOrigin ? exports : module.timeOrigin;
-  return () => (require + module.now()) / o
+  return () => (require + module.now()) / a
 }();
 (() => {
   let {
@@ -31,14 +31,14 @@ let s = function() {
   }
   let t = 36e5,
     n = module.now(),
-    o = Date.now(),
-    a = module.timeOrigin ? Math.abs(module.timeOrigin + require - o) : exports,
-    s = a < exports,
+    a = Date.now(),
+    o = module.timeOrigin ? Math.abs(module.timeOrigin + require - a) : exports,
+    s = o < exports,
     l = module.timing && module.timing.navigationStart,
-    c = "number" == typeof l ? Math.abs(l + require - o) : exports,
+    c = "number" == typeof l ? Math.abs(l + require - a) : exports,
     u = c < exports;
   if (s || u)
-    if (a <= c) return r = "timeOrigin", module.timeOrigin;
+    if (o <= c) return r = "timeOrigin", module.timeOrigin;
     else return r = "navigationStart";
   return r = "dateNow"
 })()

@@ -15,7 +15,7 @@ function l(e) {
     message: t,
     channel: n,
     author: i,
-    compact: a,
+    compact: o,
     animateAvatar: l,
     guildId: c,
     isGroupStart: u = true,
@@ -24,12 +24,12 @@ function l(e) {
     hideGuildTag: p,
     preview: _
   } = e;
-  return !(0, o.Z)(t) && (u || a) ? (0, r.jsx)(s, {
+  return !(0, a.Z)(t) && (u || o) ? (0, r.jsx)(s, {
     message: t,
     channel: n,
     author: i,
     guildId: c,
-    compact: a,
+    compact: o,
     animate: l,
     roleIcon: d,
     hideTimestamp: f,

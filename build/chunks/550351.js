@@ -37,7 +37,7 @@ function E(e) {
     let {
       ownerId: t
     } = i.my(e);
-    if (t !== a.default.getId()) {
+    if (t !== o.default.getId()) {
       let e = l.Z.getActivities(t).find(e => e.type === m.IIU.PLAYING);
       return {
         sourceName: null == e ? true : e.name,
@@ -46,7 +46,7 @@ function E(e) {
       }
     }
   }
-  let f = o.Z.getStreamerActiveStreamMetadata(),
+  let f = a.Z.getStreamerActiveStreamMetadata(),
     p = null == f ? true : f.pid,
     _ = null == f ? true : f.sourceName,
     h = (() => {
@@ -79,14 +79,14 @@ function b(e) {
     r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : [],
     i = arguments.length > 4 ? arguments[4] : true,
     {
-      sourceName: o,
+      sourceName: a,
       sourceApplicationId: s,
       activity: l,
       isVoiceOnly: u
     } = E(e),
     m = c.Z.getChannelId(),
     g = c.Z.getGuildId(),
-    b = new Set([a.default.getId()]);
+    b = new Set([o.default.getId()]);
   null != m && (b = b.union(new Set(Object.keys(d.Z.getVoiceStatesForChannel(m)))));
   let y = "auto" === t;
   r.forEach(e => {
@@ -99,7 +99,7 @@ function b(e) {
   return {
     id: f.default.fromTimestamp(Date.now()),
     version: _.Bg,
-    applicationName: null != o ? o : h.intl.string(h.t.qtSJxb),
+    applicationName: null != a ? a : h.intl.string(h.t.qtSJxb),
     applicationId: s,
     activity: l,
     users: Array.from(b),

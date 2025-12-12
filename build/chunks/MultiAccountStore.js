@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => P,
   q: () => h
 }), require("./539854.js");
-var o, Chunk213919 = require("./213919.js"),
+var a, Chunk213919 = require("./213919.js"),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk990492 = require("./990492.js"),
@@ -99,7 +99,7 @@ function O(e) {
       id: n
     } = t;
     return n !== e
-  }), a.removeToken(e)
+  }), o.removeToken(e)
 }
 
 function v(e) {
@@ -158,7 +158,7 @@ function A(e) {
     pushSyncToken: null
   }) : e)
 }
-class N extends(o = Chunk442837.ZP.PersistedStore) {
+class N extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;

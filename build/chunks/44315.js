@@ -6,16 +6,16 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk688619 = require("./688619.js"),
-  o = require.n(Chunk688619),
+  a = require.n(Chunk688619),
   Chunk399606 = require("./399606.js"),
   Chunk607070 = require("./607070.js");
 
 function l(e) {
-  let t = (0, a.e7)([s.Z], () => s.Z.saturation);
+  let t = (0, o.e7)([s.Z], () => s.Z.saturation);
   return r.useMemo(() => {
     if (null == e) return null;
     if ("currentColor" === e || e.startsWith("var(")) return e;
-    let n = o()(e);
+    let n = a()(e);
     return n.set("hsl.s", n.get("hsl.s") * t).hex()
   }, [e, t])
 }

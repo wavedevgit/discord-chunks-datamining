@@ -2,7 +2,7 @@
 /** chunk id: 704965, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  m: () => o,
+  m: () => a,
   w: () => i
 });
 var Chunk822632 = require("./822632.js");
@@ -26,7 +26,7 @@ let i = {
       name: "Technology"
     }
   },
-  o = {
+  a = {
     4: {
       name: "Preferred CMM type",
       value: (e, t) => (0, r.oH)(e, t, 4),
@@ -78,7 +78,7 @@ let i = {
     },
     24: {
       name: "ICC Profile Date",
-      value: (e, t) => a(e, t).toISOString()
+      value: (e, t) => o(e, t).toISOString()
     },
     36: {
       name: "ICC Signature",
@@ -122,12 +122,12 @@ let i = {
     }
   };
 
-function a(e, t) {
+function o(e, t) {
   let n = e.getUint16(t),
     r = e.getUint16(t + 2) - 1,
     i = e.getUint16(t + 4),
-    o = e.getUint16(t + 6);
-  return new Date(Date.UTC(n, r, i, o, e.getUint16(t + 8), e.getUint16(t + 10)))
+    a = e.getUint16(t + 6);
+  return new Date(Date.UTC(n, r, i, a, e.getUint16(t + 8), e.getUint16(t + 10)))
 }
 
 function s(e) {

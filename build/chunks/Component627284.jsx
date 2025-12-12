@@ -45,8 +45,8 @@ function b(e, t) {
   if (null == e) return {};
   var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -54,8 +54,8 @@ function b(e, t) {
 function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -63,10 +63,10 @@ function O(e) {
   var {
     currentGame: t
   } = e, n = b(e, ["currentGame"]);
-  let [o, u] = i.useState(false);
+  let [a, u] = i.useState(false);
   return (0, c.zq)(() => {
-    o && l.Z.clearPTTAdminWarning()
-  }), (0, r.jsx)(a.u_l, E({
+    a && l.Z.clearPTTAdminWarning()
+  }), (0, r.jsx)(o.u_l, E({
     size: "md",
     title: h.intl.string(h.t.eotlXE),
     subtitle: h.intl.formatToPlainString(h.t.Lw6KXV, {
@@ -79,7 +79,7 @@ function O(e) {
       }
     }],
     actionBarInput: (0, r.jsx)(s.Checkbox, {
-      checked: o,
+      checked: a,
       onChange: e => u(e),
       label: h.intl.string(h.t["5E9SB9"]),
       labelType: "secondary"
@@ -88,7 +88,7 @@ function O(e) {
 }
 
 function v() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk594190.ZP], () => [Chunk594190.ZP.canShowAdminWarning, Chunk594190.ZP.getVisibleGame()], []), n = (0, Chunk442837.e7)([Chunk19780.Z], () => Chunk19780.Z.isConnected(), []), a = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK, []), l = null != exports && exports.elevated && require && Chunk159691 && module, c = Chunk473749.useRef(null);
+  let [e, t] = (0, Chunk442837.Wu)([Chunk594190.ZP], () => [Chunk594190.ZP.canShowAdminWarning, Chunk594190.ZP.getVisibleGame()], []), n = (0, Chunk442837.e7)([Chunk19780.Z], () => Chunk19780.Z.isConnected(), []), o = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK, []), l = null != exports && exports.elevated && require && Chunk159691 && module, c = Chunk473749.useRef(null);
   return Chunk473749.useEffect(() => {
     if (!(0, Chunk865066.s2)(Chunk594190.ZP)) return Chunk923928 ? Chunk493773.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(O, E({
       currentGame: t

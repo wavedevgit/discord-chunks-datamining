@@ -3,9 +3,9 @@
 "use strict";
 var Chunk488437 = require("./488437.js"),
   Chunk429675 = require("./429675.js"),
-  o = "object" == typeof StopIteration ? StopIteration : null;
+  a = "object" == typeof StopIteration ? StopIteration : null;
 module.exports = function(e) {
-  if (!o) throw new i("this environment lacks StopIteration");
+  if (!a) throw new i("this environment lacks StopIteration");
   r.set(e, "[[Done]]", false);
   var t = {
     next: function() {
@@ -17,7 +17,7 @@ module.exports = function(e) {
           value: t ? true : e.next()
         }
       } catch (t) {
-        if (r.set(e, "[[Done]]", true), t !== o) throw t;
+        if (r.set(e, "[[Done]]", true), t !== a) throw t;
         return {
           done: true,
           value: true

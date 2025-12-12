@@ -18,7 +18,7 @@ var Chunk830121 = require("./830121.js"),
 let f = 40;
 
 function p(e) {
-  var t, n, r, i, o;
+  var t, n, r, i, a;
   let {
     mediaPostEmbedData: c,
     guild: p,
@@ -34,7 +34,7 @@ function p(e) {
     v = b ? d.intl.string(d.t.UsZEBI) : d.intl.string(d.t.ReFzYZ),
     S = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : true,
     I = null == g ? true : g.getAvatarURL(null == p ? true : p.id, f);
-  (null == I || E !== c.guild_id) && (I = a.ZP.getGuildIconURL({
+  (null == I || E !== c.guild_id) && (I = o.ZP.getGuildIconURL({
     id: c.guild_id,
     icon: c.guild_icon,
     size: f,
@@ -54,7 +54,7 @@ function p(e) {
     messageId: c.message_id,
     canAccess: b,
     guildId: c.guild_id,
-    guildName: null != (o = null == p ? true : p.name) ? o : c.guild_name,
+    guildName: null != (a = null == p ? true : p.name) ? a : c.guild_name,
     authorId: null == c ? true : c.author_id,
     authorName: S,
     channelName: null == _ ? true : _.name,
@@ -86,7 +86,7 @@ function m(e) {
 }
 
 function h(e, t) {
-  let n = o.Z.getGuild(e);
+  let n = a.Z.getGuild(e);
   if (null == n || null == t) returnfalse;
   let r = n.features.has(c.GuildFeatures.CREATOR_MONETIZABLE) || n.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);
   returntrue === t.isMediaChannel() && r

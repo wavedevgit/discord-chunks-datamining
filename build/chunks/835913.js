@@ -36,7 +36,7 @@ class c extends Chunk495852.C {
     return new Date(n).toISOString().replace(".000Z", r)
   }
   internalJsonRead(e, t, n) {
-    if ("string" != typeof e) throw Error("Unable to parse Timestamp from JSON " + (0, a.Z)(e) + ".");
+    if ("string" != typeof e) throw Error("Unable to parse Timestamp from JSON " + (0, o.Z)(e) + ".");
     let r = e.match(/^([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2})(?:Z|\.([0-9]{3,9})Z|([+-][0-9][0-9]:[0-9][0-9]))$/);
     if (!r) throw Error("Unable to parse Timestamp from JSON. Invalid format.");
     let i = Date.parse(r[1] + "-" + r[2] + "-" + r[3] + "T" + r[4] + ":" + r[5] + ":" + r[6] + (r[8] ? r[8] : "Z"));
@@ -49,31 +49,31 @@ class c extends Chunk495852.C {
       seconds: "0",
       nanos: 0
     };
-    return globalThis.Object.defineProperty(t, o.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let o = null != i ? i : this.create(),
-      a = e.pos + t;
-    for (; e.pos < a;) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          o.seconds = e.int64().toString();
+          a.seconds = e.int64().toString();
           break;
         case 2:
-          o.nanos = e.int32();
+          a.nanos = e.int32();
           break;
         default:
-          let a = n.readUnknownField;
-          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
+          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
       }
     }
-    return o
+    return a
   }
   internalBinaryWrite(e, t, n) {
     "0" !== e.seconds && t.tag(1, r.TD.Varint).int64(e.seconds), 0 !== e.nanos && t.tag(2, r.TD.Varint).int32(e.nanos);

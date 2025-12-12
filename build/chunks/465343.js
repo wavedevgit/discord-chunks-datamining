@@ -22,11 +22,11 @@ var Chunk933557 = require("./933557.js"),
 function h(e, t, n, r) {
   let {
     allowUsers: i = true,
-    allowRoles: o = true
+    allowRoles: a = true
   } = null != r ? r : {};
   switch (e[0]) {
     case "@":
-      return E(e, t, n, i, o);
+      return E(e, t, n, i, a);
     case ":":
       return O(e, t);
     case "#":
@@ -41,10 +41,10 @@ function g(e, t, n, r) {
 }
 
 function E(e, t, n, r, i) {
-  let [o, a] = e.slice(1).split("#", 2), l = null != t ? d.Z.getGuild(t) : null;
-  if (i && null == a && null != l) {
+  let [a, o] = e.slice(1).split("#", 2), l = null != t ? d.Z.getGuild(t) : null;
+  if (i && null == o && null != l) {
     for (let e of u.Z.getSortedRoles(l.id))
-      if (o === e.name) return {
+      if (a === e.name) return {
         type: "roleMention",
         roleId: e.id,
         children: [{
@@ -60,10 +60,10 @@ function E(e, t, n, r, i) {
         userId: t
       } = e;
       return t
-    })).map(e => f.default.getUser(e)).filter(e => true !== e && b(o, a, e));
+    })).map(e => f.default.getUser(e)).filter(e => true !== e && b(a, o, e));
     if (1 === r.length) {
       let e = r[0];
-      if (b(o, a, e, {
+      if (b(a, o, e, {
           requireExact: true
         })) return {
         type: "userMention",
@@ -110,12 +110,12 @@ function y(e, t) {
             text: ""
           }]
         }
-    } let o = a.Z.getActiveJoinedThreadsForGuild(t);
-  for (let e of _.default.keys(o))
-    for (let t of _.default.keys(o[e])) {
+    } let a = o.Z.getActiveJoinedThreadsForGuild(t);
+  for (let e of _.default.keys(a))
+    for (let t of _.default.keys(a[e])) {
       let {
         channel: r
-      } = o[e][t];
+      } = a[e][t];
       if (r.name === n) return {
         type: "channelMention",
         channelId: r.id,
@@ -128,12 +128,12 @@ function y(e, t) {
 }
 
 function O(e, t) {
-  let n = o.ZP.EMOJI_NAME_RE.exec(e);
+  let n = a.ZP.EMOJI_NAME_RE.exec(e);
   if (null == n) return null;
   let r = n[1],
-    a = i.ZP.getDisambiguatedEmojiContext(t).getCustomEmoji();
-  if (null != a && r in a) {
-    let e = a[r];
+    o = i.ZP.getDisambiguatedEmojiContext(t).getCustomEmoji();
+  if (null != o && r in o) {
+    let e = o[r];
     return {
       type: "customEmoji",
       emoji: {

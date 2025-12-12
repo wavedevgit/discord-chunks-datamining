@@ -35,7 +35,7 @@ function _(e) {
 }
 
 function m(e) {
-  let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP], n = t.getGameOrTransformedSubgameForPID(e);
+  let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [a.ZP], n = t.getGameOrTransformedSubgameForPID(e);
   try {
     return null == n ? s.ZP.GetWindowFullscreenTypeByPid(e) : s.ZP.GetWindowFullscreenTypeByPid(n.pid, n.name, n.fullscreenType)
   } catch (t) {
@@ -46,7 +46,7 @@ function m(e) {
 
 function h(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
-    [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [o.ZP];
+    [n] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [a.ZP];
   return new Promise(r => {
     setTimeout(() => {
       r(m(e, [n]))
@@ -100,9 +100,9 @@ async function I(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : v,
     r = await h(e, n),
-    i = o.ZP.getGameOrTransformedSubgameForPID(e);
+    i = a.ZP.getGameOrTransformedSubgameForPID(e);
   if (null == i || null == i.name) return r;
-  let s = null == (t = a.Z.getGameByName(i.name)) ? true : t.id;
+  let s = null == (t = o.Z.getGameByName(i.name)) ? true : t.id;
   if (null == s) return r;
   let l = y[s];
   return null != l ? l(e, i, r) : r
@@ -110,12 +110,12 @@ async function I(e) {
 
 function T(e) {
   var t;
-  let n = null == (t = a.Z.getGameByName(e.name)) ? true : t.id;
+  let n = null == (t = o.Z.getGameByName(e.name)) ? true : t.id;
   return null != n && O.has(n)
 }
 
 function C(e) {
-  let t = o.ZP.getGameOrTransformedSubgameForPID(e);
+  let t = a.ZP.getGameOrTransformedSubgameForPID(e);
   return null != t && null != t.name && T(t)
 }
 let A = new Set([Chunk593472.Jx.UNKNOWN, Chunk593472.Jx.FULLSCREEN]);
@@ -154,5 +154,5 @@ function w(e) {
     enabledOOP: false,
     enabledLegacy: false,
     overlayMethod: c.gl.Disabled
-  } : (0, o.b6)(e, S)
+  } : (0, a.b6)(e, S)
 }

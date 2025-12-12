@@ -7,11 +7,11 @@ require.r(exports), require.d(exports, {
 var Chunk424421 = require("./424421.js"),
   Chunk767629 = require("./767629.js"),
   Chunk951516 = require("./951516.js"),
-  a = 864e5;
+  o = 864e5;
 
 function s(e, t) {
-  (0, o.Z)(2, arguments);
+  (0, a.Z)(2, arguments);
   var n = (0, i.default)(e),
     s = (0, i.default)(t);
-  return Math.round((n.getTime() - (0, r.Z)(n) - (s.getTime() - (0, r.Z)(s))) / a)
+  return Math.round((n.getTime() - (0, r.Z)(n) - (s.getTime() - (0, r.Z)(s))) / o)
 }

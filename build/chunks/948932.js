@@ -24,12 +24,12 @@ function u(e) {
 
 function d(e) {
   var t;
-  let n, c, d = (0, o.q)(l(r.Z), "@react-aria/calendar");
+  let n, c, d = (0, a.q)(l(r.Z), "@react-aria/calendar");
   "highlightedRange" in e ? {
     start: n,
     end: c
   } = e.highlightedRange || {} : n = c = null != (t = e.value) ? t : true;
-  let f = (0, a.a)({
+  let f = (0, o.a)({
       weekday: "long",
       month: "long",
       year: "numeric",
@@ -55,16 +55,16 @@ function d(e) {
 }
 
 function f(e, t, n, c) {
-  let d = (0, o.q)(l(r.Z), "@react-aria/calendar"),
+  let d = (0, a.q)(l(r.Z), "@react-aria/calendar"),
     f = u(e) || u(t),
-    _ = (0, a.a)({
+    _ = (0, o.a)({
       month: "long",
       year: "numeric",
       era: f,
       calendar: e.calendar.identifier,
       timeZone: n
     }),
-    m = (0, a.a)({
+    m = (0, o.a)({
       month: "long",
       year: "numeric",
       day: "numeric",
@@ -75,25 +75,25 @@ function f(e, t, n, c) {
   return (0, s.useMemo)(() => {
     if ((0, i.KC)(e, (0, i.Nm)(e))) {
       let r = e,
-        o = t;
-      if (e.calendar.getFormattableMonth && (r = e.calendar.getFormattableMonth(e)), t.calendar.getFormattableMonth && (o = t.calendar.getFormattableMonth(t)), (0, i.KC)(t, (0, i.Vf)(e))) return _.format(r.toDate(n));
-      if ((0, i.KC)(t, (0, i.Vf)(t))) return c ? p(_, d, r, o, n) : _.formatRange(r.toDate(n), o.toDate(n))
+        a = t;
+      if (e.calendar.getFormattableMonth && (r = e.calendar.getFormattableMonth(e)), t.calendar.getFormattableMonth && (a = t.calendar.getFormattableMonth(t)), (0, i.KC)(t, (0, i.Vf)(e))) return _.format(r.toDate(n));
+      if ((0, i.KC)(t, (0, i.Vf)(t))) return c ? p(_, d, r, a, n) : _.formatRange(r.toDate(n), a.toDate(n))
     }
     return c ? p(m, d, e, t, n) : m.formatRange(e.toDate(n), t.toDate(n))
   }, [e, t, _, m, d, n, c])
 }
 
 function p(e, t, n, r, i) {
-  let o = e.formatRangeToParts(n.toDate(i), r.toDate(i)),
-    a = false;
-  for (let e = 0; e < o.length; e++) {
-    let t = o[e];
-    if ("shared" === t.source && "literal" === t.type) a = e;
+  let a = e.formatRangeToParts(n.toDate(i), r.toDate(i)),
+    o = false;
+  for (let e = 0; e < a.length; e++) {
+    let t = a[e];
+    if ("shared" === t.source && "literal" === t.type) o = e;
     else if ("endRange" === t.source) break
   }
   let s = "",
     l = "";
-  for (let e = 0; e < o.length; e++) e < a ? s += o[e].value : e > a && (l += o[e].value);
+  for (let e = 0; e < a.length; e++) e < o ? s += a[e].value : e > o && (l += a[e].value);
   return t.format("dateRange", {
     startDate: s,
     endDate: l

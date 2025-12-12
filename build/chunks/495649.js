@@ -52,13 +52,13 @@ class b extends Chunk147913.Z {
       (0, f.EI)(t.id)
     }), h(this, "_openOnboardingIfIncomplete", async (e, t) => {
       var n, i;
-      if ((0, f.hz)(e)) return void(0, o.uL)(p.Z5c.CHANNEL(e, _.oC.GUILD_ONBOARDING));
+      if ((0, f.hz)(e)) return void(0, a.uL)(p.Z5c.CHANNEL(e, _.oC.GUILD_ONBOARDING));
       let l = s.Z.getGuild(e);
       if (null == l || !l.features.has(p.GuildFeatures.GUILD_ONBOARDING)) return;
-      let c = a.ZP.getSelfMember(e);
+      let c = o.ZP.getSelfMember(e);
       !(null == c || (0, r.yE)(null != (n = c.flags) ? n : 0, m.q.COMPLETED_ONBOARDING)) && (0, r.yE)(null != (i = c.flags) ? i : 0, m.q.STARTED_ONBOARDING) && (await (0, f.default)({
         guildId: e
-      }), (0, o.uL)(p.Z5c.CHANNEL(e, t)))
+      }), (0, a.uL)(p.Z5c.CHANNEL(e, t)))
     })
   }
 }

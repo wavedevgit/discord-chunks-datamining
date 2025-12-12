@@ -1,8 +1,8 @@
-/** Chunk was on 91053 **/
+/** Chunk was on 41700 **/
 /** chunk id: 602034, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
-  r: () => y
+  r: () => O
 });
 var Chunk473749 = require("./473749.js"),
   Chunk55160 = require("./55160.js"),
@@ -27,8 +27,8 @@ function b(e) {
     privateThreadMode: c,
     location: d,
     onThreadCreated: b,
-    useDefaultThreadName: _
-  } = e, y = r.useCallback((e, t, n, r) => {
+    useDefaultThreadName: y
+  } = e, O = r.useCallback((e, t, n, r) => {
     a.Z.sendMessage(e.id, u.ZP.parse(e, n), true, {
       eagerDispatch: false,
       location: g.dy.THREAD_CREATION,
@@ -54,11 +54,11 @@ function b(e) {
     privateThreadMode: c,
     location: d,
     onThreadCreated: b,
-    useDefaultThreadName: _,
-    uploadHandler: y
+    useDefaultThreadName: y,
+    uploadHandler: O
   })
 }
-async function _(e) {
+async function y(e) {
   let t = new c.Z,
     n = await t.uploadFiles(e);
   return {
@@ -67,7 +67,7 @@ async function _(e) {
   }
 }
 
-function y(e) {
+function O(e) {
   let {
     parentChannel: t
   } = e, {
@@ -87,6 +87,6 @@ function y(e) {
     parentChannel: t,
     name: n,
     appliedTags: r,
-    upload: _
+    upload: y
   })
 }

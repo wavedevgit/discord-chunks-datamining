@@ -19,8 +19,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk474936 = require("./474936.js");
 
 function s() {
-  let [e, t] = Chunk473749.useState(), n = (0, Chunk347896.Z)(), a = null == require ? true : require.rewards, s = null == require ? true : require.variants;
-  null != s && (a = s.flatMap(e => e.variants));
+  let [e, t] = Chunk473749.useState(), n = (0, Chunk347896.Z)(), o = null == require ? true : require.rewards, s = null == require ? true : require.variants;
+  null != s && (o = s.flatMap(e => e.variants));
   let {
     purchases: l,
     hasPreviouslyFetched: c,
@@ -61,7 +61,7 @@ function f(e, t, n) {
 }
 
 function p(e) {
-  return [a.Xh.PREMIUM_YEAR_TIER_2, a.Xh.PREMIUM_MONTH_TIER_2].includes(null == e ? true : e.id)
+  return [o.Xh.PREMIUM_YEAR_TIER_2, o.Xh.PREMIUM_MONTH_TIER_2].includes(null == e ? true : e.id)
 }
 
 function _(e, t) {
@@ -70,11 +70,11 @@ function _(e, t) {
     reverse: n = false,
     colorStops: r,
     defaultAngle: i = 78.98
-  } = null != t ? t : {}, o = Array.isArray(e) ? e : e.gradient, a = Array.isArray(e) || null == e.angle ? i : e.angle;
-  n && (a = (a + 180) % 360);
-  let s = null != r ? o.map((e, t) => "".concat(e, " ").concat(r[t], "%")).join(", ") : o.join(", ");
+  } = null != t ? t : {}, a = Array.isArray(e) ? e : e.gradient, o = Array.isArray(e) || null == e.angle ? i : e.angle;
+  n && (o = (o + 180) % 360);
+  let s = null != r ? a.map((e, t) => "".concat(e, " ").concat(r[t], "%")).join(", ") : a.join(", ");
   return {
-    background: "linear-gradient(".concat(a, "deg, ").concat(s, ")")
+    background: "linear-gradient(".concat(o, "deg, ").concat(s, ")")
   }
 }
 
@@ -90,10 +90,10 @@ function m(e) {
 function h(e, t, n) {
   if (null != e && null != t) {
     var r, i;
-    let o = t.background,
-      a = e.backgroundImage;
+    let a = t.background,
+      o = e.backgroundImage;
     return {
-      backgroundImage: "".concat(a, ", ").concat(o),
+      backgroundImage: "".concat(o, ", ").concat(a),
       backgroundColor: "lightgray",
       backgroundSize: null != (r = null == n ? true : n.backgroundSize) ? r : "auto 110%, auto",
       backgroundPosition: null != (i = null == n ? true : n.backgroundPosition) ? i : "right 90% center, 0% 0%",

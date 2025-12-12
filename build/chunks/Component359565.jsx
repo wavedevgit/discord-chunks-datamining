@@ -1,4 +1,4 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 359565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => C,
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk665906 = require("./665906.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk856426 = require("./856426.js");
+  Chunk690584 = require("./690584.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -59,17 +59,17 @@ function b(e) {
       banner_type: "thread"
     }))
   }, [t]), (0, i.jsxs)("div", {
-    className: a()(f.chatHeaderBar, {
-      [f.narrow]: n
+    className: a()(h.chatHeaderBar, {
+      [h.narrow]: n
     }),
     children: [(0, i.jsx)(o.Text, {
-      className: f.chatHeaderBarText,
+      className: h.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "text-default",
-      children: t.isForumPost() ? h.intl.string(h.t["833FDn"]) : h.intl.string(h.t.rEeodK)
+      children: t.isForumPost() ? f.intl.string(f.t["833FDn"]) : f.intl.string(f.t.rEeodK)
     }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",
-      text: h.intl.string(h.t["0dvvEi"]),
+      text: f.intl.string(f.t["0dvvEi"]),
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",
@@ -91,17 +91,17 @@ function C(e) {
       banner_type: "thread"
     }))
   }, [t]), (0, i.jsxs)("div", {
-    className: a()(f.chatHeaderBar, {
-      [f.narrow]: n
+    className: a()(h.chatHeaderBar, {
+      [h.narrow]: n
     }),
     children: [(0, i.jsx)(o.Text, {
-      className: f.chatHeaderBarText,
+      className: h.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "text-default",
-      children: t.isForumPost() ? h.intl.string(h.t.E7oO8u) : h.intl.string(h.t["V/JF2N"])
+      children: t.isForumPost() ? f.intl.string(f.t.E7oO8u) : f.intl.string(f.t["V/JF2N"])
     }), l ? (0, i.jsx)(o.Button, {
       variant: "secondary",
-      text: h.intl.string(h.t.zA9d1J),
+      text: f.intl.string(f.t.zA9d1J),
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",

@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk367719 = require("./367719.js"),
   Chunk882101 = require("./882101.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk184618 = require("./184618.js");
+  Chunk111534 = require("./111534.js");
 let p = e => {
   let {
     listingId: t,
@@ -32,10 +32,10 @@ let p = e => {
         listingName: h
       }), (0, r.jsxs)("div", {
         className: f.tierPriceContainer,
-        children: [!n && (0, r.jsx)(o.v, {}), (0, r.jsxs)(i.Text, {
+        children: [!n && (0, r.jsx)(a.v, {}), (0, r.jsxs)(i.Text, {
           variant: "text-xs/normal",
           className: f.tierPrice,
-          children: [(0, a.T4)(E.price, E.currency), " ", d.intl.format(d.t.isLGyX, {
+          children: [(0, o.T4)(E.price, E.currency), " ", d.intl.format(d.t.isLGyX, {
             period: (0, s.JE)({
               interval: E.interval,
               interval_count: E.interval_count

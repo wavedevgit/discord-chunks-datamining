@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk894694 = require("./894694.js"),
   Chunk356659 = require("./356659.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -46,21 +46,21 @@ function l(e, t) {
   }), e
 }
 let c = [e => {
-    let t = l(a({}, e), {
+    let t = l(o({}, e), {
       version: 1,
       applicationName: e.gameName,
       applicationId: true
     });
     return delete t.gameName, t
-  }, e => l(a({}, e), {
+  }, e => l(o({}, e), {
     version: 2,
     name: e.name.startsWith("Clip - ") ? true : e.name
-  }), e => l(a({}, e), {
+  }), e => l(o({}, e), {
     version: 3,
     name: "" === e.name ? true : e.name
   }), e => {
     let t = e.filepath.endsWith(".jpeg") || e.filepath.endsWith(".jpg");
-    return l(a({}, e), {
+    return l(o({}, e), {
       version: 4,
       timeline: [],
       type: t ? r.NJ.SCREENSHOT : r.NJ.CLIP

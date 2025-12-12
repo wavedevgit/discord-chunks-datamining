@@ -69,9 +69,9 @@ let p = false;
 let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     richValue: e => e.children,
     blocks: e => _.richValue(e).map((e, t) => [e, [t]]),
-    isBlock: (e, t) => h.isElement(t) && o.ML.isBlock(e, t),
-    isInline: (e, t) => h.isElement(t) && o.ML.isInline(e, t),
-    isVoid: (e, t) => h.isElement(t) && o.ML.isVoid(e, t),
+    isBlock: (e, t) => h.isElement(t) && a.ML.isBlock(e, t),
+    isInline: (e, t) => h.isElement(t) && a.ML.isInline(e, t),
+    isVoid: (e, t) => h.isElement(t) && a.ML.isVoid(e, t),
     isEditorEmpty(e) {
       let t = _.richValue(e);
       return !(t.length > 1) && (0 === t.length || "line" === t[0].type && h.isEmpty(t[0]))
@@ -152,10 +152,10 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       if (y.isExpanded(e.selection)) {
         let [n, r] = y.edges(e.selection), i = _.after(e, n, {
           unit: "offset"
-        }), o = _.before(e, r, {
+        }), a = _.before(e, r, {
           unit: "offset"
         });
-        if (null == i || null == o || !b.equals(i, o)) return null;
+        if (null == i || null == a || !b.equals(i, a)) return null;
         t = i
       } else t = e.selection.anchor;
       return null == t ? null : _.getParentVoid(e, t)
@@ -163,10 +163,10 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     getSelectedText(e, t) {
       let n = null;
       if (t) {
-        let t = a.F3.findDocumentOrShadowRoot(e).getSelection();
+        let t = o.F3.findDocumentOrShadowRoot(e).getSelection();
         if (null != t && t.rangeCount > 0) {
           let r = t.getRangeAt(0);
-          null != r && (n = a.F3.toSlateRange(e, r, {
+          null != r && (n = o.F3.toSlateRange(e, r, {
             exactMatch: true,
             suppressThrow: true
           }))
@@ -179,13 +179,13 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
         at: t,
         mode: "lowest",
         match: e => g.isText(e)
-      }), o = "";
+      }), a = "";
       for (let [e, t] of i) {
         let i = E.equals(t, n.path) ? n.offset : 0,
-          a = E.equals(t, r.path) ? r.offset : 0;
-        o += e.text.substring(i, a)
+          o = E.equals(t, r.path) ? r.offset : 0;
+        a += e.text.substring(i, o)
       }
-      return o
+      return a
     },
     withoutNormalizing(e, t) {
       let n = _.isNormalizing(e);
@@ -204,12 +204,12 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
         r = n[0],
         i = (null == r ? true : r.type) === "line" ? r.children[0] : null;
       if (null == i || !g.isText(i)) returnfalse;
-      let o = e.chatInputType,
-        a = i.text;
-      return 1 === n.length && 1 === r.children.length && (true === o.sedReplace && a.startsWith("s/") || (null == (t = o.autocomplete) ? true : t.reactions) === true && a.startsWith("+"))
+      let a = e.chatInputType,
+        o = i.text;
+      return 1 === n.length && 1 === r.children.length && (true === a.sedReplace && o.startsWith("s/") || (null == (t = a.autocomplete) ? true : t.reactions) === true && o.startsWith("+"))
     },
     focus(e) {
-      a.F3.isFocused(e) || (a.F3.focus(e), a.F3.deselect(e))
+      o.F3.isFocused(e) || (o.F3.focus(e), o.F3.deselect(e))
     },
     getSelectionOverlap(e, t) {
       if (null == e.selection) return {
@@ -228,16 +228,16 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
           }
         } else t = n
       }
-      let [n, r] = y.edges(t), i = null, o = null;
-      return b.equals(e.selection.anchor, n) ? i = "start" : b.equals(e.selection.anchor, r) ? i = "end" : y.includes(t, e.selection.anchor) && (i = "inside"), b.equals(e.selection.focus, n) ? o = "start" : b.equals(e.selection.focus, r) ? o = "end" : y.includes(t, e.selection.focus) && (o = "inside"), {
+      let [n, r] = y.edges(t), i = null, a = null;
+      return b.equals(e.selection.anchor, n) ? i = "start" : b.equals(e.selection.anchor, r) ? i = "end" : y.includes(t, e.selection.anchor) && (i = "inside"), b.equals(e.selection.focus, n) ? a = "start" : b.equals(e.selection.focus, r) ? a = "end" : y.includes(t, e.selection.focus) && (a = "inside"), {
         anchor: i,
-        focus: o
+        focus: a
       }
     }
   }),
   m = f(u({}, Chunk327432.NB), {
-    isType: (e, t) => o.W_.isElement(e) && e.type === t,
-    isInTypes: (e, t) => o.W_.isElement(e) && t.has(e.type)
+    isType: (e, t) => a.W_.isElement(e) && e.type === t,
+    isInTypes: (e, t) => a.W_.isElement(e) && t.has(e.type)
   }),
   h = f(u({}, Chunk327432.W_), {
     updateElement(e, t) {
@@ -247,11 +247,11 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     markdown(e, t, n) {
       var r;
       let i = "line" === e.type && (null == (r = e.codeBlockState) ? true : r.wasInCodeBlock) === true,
-        o = e.children.map(e => g.isText(e) ? e.text : "?"),
-        a = o.join("");
+        a = e.children.map(e => g.isText(e) ? e.text : "?"),
+        o = a.join("");
       return {
-        entries: s.Q(a, null != t ? t : null, i, n),
-        serializedChildren: o
+        entries: s.Q(o, null != t ? t : null, i, n),
+        serializedChildren: a
       }
     },
     isEmpty(e) {
@@ -310,8 +310,8 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
       }
     },
     clamp(e, t) {
-      let [n, r] = y.edges(e), [i, o] = y.edges(t);
-      return (b.isBefore(n, i) && (n = i), b.isAfter(r, o) && (r = o), y.isForward(e)) ? {
+      let [n, r] = y.edges(e), [i, a] = y.edges(t);
+      return (b.isBefore(n, i) && (n = i), b.isAfter(r, a) && (r = a), y.isForward(e)) ? {
         anchor: n,
         focus: r
       } : {
@@ -329,8 +329,8 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
         focus: r
       } = t;
       if (!_.hasPath(e, n.path) || !_.hasPath(e, r.path)) returnfalse;
-      let [i] = _.node(e, n.path), [o] = _.node(e, r.path);
-      return g.isText(i) && g.isText(o) && n.offset <= i.text.length && r.offset <= o.text.length
+      let [i] = _.node(e, n.path), [a] = _.node(e, r.path);
+      return g.isText(i) && g.isText(a) && n.offset <= i.text.length && r.offset <= a.text.length
     }
   },
   v = (e, t) => {
@@ -347,36 +347,36 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
         anchor: t,
         focus: t
       },
-      o = 0,
-      a = n.length,
-      s = Math.floor((o + a) / 2);
-    for (; s !== o;)
+      a = 0,
+      o = n.length,
+      s = Math.floor((a + o) / 2);
+    for (; s !== a;)
       if (S(e, {
           anchor: n[s],
           focus: n[s]
-        }, i) ? r ? a = s : o = s : r ? o = s : a = s, s = Math.floor((o + a) / 2), !r && s === n.length - 2 && a === n.length - 1) {
+        }, i) ? r ? o = s : a = s : r ? a = s : o = s, s = Math.floor((a + o) / 2), !r && s === n.length - 2 && o === n.length - 1) {
         let t = n[n.length - 1];
         S(e, {
           anchor: t,
           focus: t
-        }, i) && (s = a)
+        }, i) && (s = o)
       } return n[s]
   },
   T = {
     getLineStart(e, t, n) {
       let r, i = _.getParentElement(e, t);
       if (null == i) return null;
-      let o = _.previous(e, {
+      let a = _.previous(e, {
         at: t,
         match: t => _.isInline(e, t) && !_.isVoid(e, t) && t !== i[0]
       });
-      null != o && (r = _.after(e, o[1])), null == r && (r = _.start(e, i[1]));
-      let a = {
+      null != a && (r = _.after(e, a[1])), null == r && (r = _.start(e, i[1]));
+      let o = {
           anchor: r,
           focus: t
         },
         s = Array.from(_.positions(e, {
-          at: a
+          at: o
         })),
         l = I(e, t, s, true);
       if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {
@@ -389,17 +389,17 @@ let _ = f(u({}, Chunk327432.ML, Chunk685578.F3), {
     getLineEnd(e, t, n) {
       let r, i = _.getParentElement(e, t);
       if (null == i) return null;
-      let o = _.next(e, {
+      let a = _.next(e, {
         at: t,
         match: t => _.isInline(e, t) && !_.isVoid(e, t) && t !== i[0]
       });
-      null != o && (r = _.before(e, o[1])), null == r && (r = _.end(e, i[1]));
-      let a = {
+      null != a && (r = _.before(e, a[1])), null == r && (r = _.end(e, i[1]));
+      let o = {
           anchor: t,
           focus: r
         },
         s = Array.from(_.positions(e, {
-          at: a
+          at: o
         })),
         l = I(e, t, s, false);
       if (n && b.equals(t, l) && !b.isAtEnd(t, i)) {

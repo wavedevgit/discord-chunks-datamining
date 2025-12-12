@@ -22,12 +22,12 @@ let c = {
         console.log("onDone response: ", e)
       })
     };
-    return (0, r.jsx)(a.PaymentContextProvider, {
+    return (0, r.jsx)(o.PaymentContextProvider, {
       stepConfigs: [],
       skuIDs: [],
       activeSubscription: null,
       children: (0, r.jsxs)(l.$0, {
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-xl/semibold",
           children: "Deep Link Test"
         }), (0, r.jsx)(l.E_, {

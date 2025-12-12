@@ -11,14 +11,14 @@ try {
     signDisplay: "exceptZero"
   }).resolvedOptions().signDisplay
 } catch {}
-let o = false;
+let a = false;
 try {
-  o = "unit" === new Intl.NumberFormat("de-DE", {
+  a = "unit" === new Intl.NumberFormat("de-DE", {
     style: "unit",
     unit: "degree"
   }).resolvedOptions().style
 } catch {}
-let a = {
+let o = {
   degree: {
     narrow: {
       default: "\xb0",
@@ -31,7 +31,7 @@ let a = {
 class s {
   format(e) {
     let t = "";
-    if (t = i || null == this.options.signDisplay ? this.numberFormatter.format(e) : c(this.numberFormatter, this.options.signDisplay, e), "unit" === this.options.style && !o) {
+    if (t = i || null == this.options.signDisplay ? this.numberFormatter.format(e) : c(this.numberFormatter, this.options.signDisplay, e), "unit" === this.options.style && !a) {
       var n;
       let {
         unit: e,
@@ -39,8 +39,8 @@ class s {
         locale: i
       } = this.resolvedOptions();
       if (!e) return t;
-      let o = null == (n = a[e]) ? true : n[r];
-      t += o[i] || o.default
+      let a = null == (n = o[e]) ? true : n[r];
+      t += a[i] || a.default
     }
     return t
   }
@@ -74,7 +74,7 @@ class s {
     return i || null == this.options.signDisplay || (e = {
       ...module,
       signDisplay: this.options.signDisplay
-    }), o || "unit" !== this.options.style || (e = {
+    }), a || "unit" !== this.options.style || (e = {
       ...module,
       style: "unit",
       unit: this.options.unit,
@@ -90,14 +90,14 @@ function l(e, t = {}) {
   let {
     numberingSystem: n
   } = t;
-  if (n && e.includes("-nu-") && (e.includes("-u-") || (e += "-u-"), e += `-nu-${n}`), "unit" === t.style && !o) {
+  if (n && e.includes("-nu-") && (e.includes("-u-") || (e += "-u-"), e += `-nu-${n}`), "unit" === t.style && !a) {
     var i;
     let {
       unit: e,
       unitDisplay: n = "short"
     } = t;
     if (!e) throw Error('unit option must be provided with style: "unit"');
-    if (!(null == (i = a[e]) ? true : i[n])) throw Error(`Unsupported unit ${e} with unitDisplay = ${n}`);
+    if (!(null == (i = o[e]) ? true : i[n])) throw Error(`Unsupported unit ${e} with unitDisplay = ${n}`);
     t = {
       ...t,
       style: "decimal"

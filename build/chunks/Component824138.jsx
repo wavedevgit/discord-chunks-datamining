@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk115530 = require("./115530.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk79822 = require("./79822.js");
+  Chunk139661 = require("./139661.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,10 +95,10 @@ class I extends Chunk473749.PureComponent {
   }
   render() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk79822.listeningAlong,
+      className: Chunk139661.listeningAlong,
       children: [this.renderTitle(), (0, Chunk54381.jsx)(Chunk600164.Z, {
         justify: Chunk600164.Z.Justify.END,
-        className: Chunk79822.party,
+        className: Chunk139661.party,
         children: (0, Chunk54381.jsx)(Chunk237583.Z, {
           users: this.props.party,
           max: this.isHost() ? 5 : 4,
@@ -106,7 +106,7 @@ class I extends Chunk473749.PureComponent {
           renderMoreUsers: this.renderPartyMemberOverflow
         })
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk79822.icons,
+        className: Chunk139661.icons,
         children: [this.renderHelpIcon(), this.renderStopListeningButton()]
       })]
     })
@@ -119,7 +119,7 @@ class I extends Chunk473749.PureComponent {
         host: l,
         onUserContextMenu: u
       } = this.props;
-      return n = (null == l ? true : l.id) === e.id ? b.intl.string(b.t["N9bqD+"]) : b.intl.string(b.t.Z2Y4c9), (0, r.jsx)(d.Z, {
+      return n = (null == l ? true : l.id) === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, r.jsx)(d.Z, {
         targetElementRef: this.partyMemberAvatarRef,
         user: e,
         newAnalyticsLocations: [c.Z.AVATAR],
@@ -132,7 +132,7 @@ class I extends Chunk473749.PureComponent {
             key: e.id,
             src: e.getAvatarURL(true, 24),
             size: o.EFr.SIZE_24,
-            className: a()(E.avatar, t),
+            className: a()(_.avatar, t),
             "aria-label": e.username,
             onContextMenu: t => void(null != e && (null == u || u(t, e))),
             avatarContentRef: this.partyMemberAvatarRef
@@ -147,10 +147,10 @@ class I extends Chunk473749.PureComponent {
         renderPopout: i,
         targetElementRef: this.partyMemberOverflowRef,
         children: n => (0, r.jsx)(s.u, {
-          text: b.intl.string(b.t.Zf4NPe),
+          text: E.intl.string(E.t.Zf4NPe),
           children: (0, r.jsx)("div", y(v({}, n), {
             ref: this.partyMemberOverflowRef,
-            className: a()(E.overflow, t),
+            className: a()(_.overflow, t),
             children: e
           }))
         })

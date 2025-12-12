@@ -52,8 +52,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,14 +61,14 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function p(e) {
   e.removeAttribute("src"), Array.from(e.children).forEach(e => {
-    (0, o.kK)(e, HTMLSourceElement) && (e.removeAttribute("src"), e.removeAttribute("type")), (0, o.kK)(e, HTMLImageElement) && e.removeAttribute("src")
+    (0, a.kK)(e, HTMLSourceElement) && (e.removeAttribute("src"), e.removeAttribute("type")), (0, a.kK)(e, HTMLImageElement) && e.removeAttribute("src")
   });
   try {
     e.load()
@@ -78,13 +78,13 @@ let _ = e => {
     var {
       alt: t,
       externalRef: n,
-      autoPlay: o,
+      autoPlay: a,
       playOnHover: s,
       responsive: c,
       mediaLayoutType: u,
       useReducedMotion: f
     } = e, _ = d(e, ["alt", "externalRef", "autoPlay", "playOnHover", "responsive", "mediaLayoutType", "useReducedMotion"]);
-    let m = !f && !s && o,
+    let m = !f && !s && a,
       h = i.useRef(null);
 
     function g() {
@@ -98,7 +98,7 @@ let _ = e => {
     }
 
     function b() {
-      return u === a.h.MOSAIC ? {
+      return u === o.h.MOSAIC ? {
         width: "100%",
         height: "100%",
         maxHeight: "inherit",

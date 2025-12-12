@@ -1,8 +1,8 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 73563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m,
-  e: () => h
+  e: () => f
 });
 var i, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk507675 = require("./507675.jsx"),
-  Chunk349364 = require("./349364.js");
+  Chunk848390 = require("./848390.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -31,9 +31,9 @@ function p(e) {
   }
   return e
 }
-var h = ((i = {})[i.TOP = 0] = "TOP", i[i.BOTTOM = 1] = "BOTTOM", i);
+var f = ((i = {})[i.TOP = 0] = "TOP", i[i.BOTTOM = 1] = "BOTTOM", i);
 
-function f(e) {
+function h(e) {
   let {
     disableGradients: t = false,
     renderHeader: n,
@@ -87,7 +87,7 @@ function m(e) {
     idle: a,
     children: s,
     renderChatToasts: c,
-    renderVoiceChannelEffects: h,
+    renderVoiceChannelEffects: f,
     style: m
   } = e, g = function(e, t) {
     if (null == e) return {};
@@ -115,6 +115,6 @@ function m(e) {
     onDoubleClick: n,
     children: [s, null != t ? (0, r.jsx)(u.Z, p({
       size: "large"
-    }, t)) : null, (0, r.jsx)(f, p({}, g)), null == c ? true : c(), null == h ? true : h()]
+    }, t)) : null, (0, r.jsx)(h, p({}, g)), null == c ? true : c(), null == f ? true : f()]
   })
 }

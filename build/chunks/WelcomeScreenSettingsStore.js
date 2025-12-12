@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 575258, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./953529.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -22,60 +22,60 @@ let c = {
     channels: [],
     enabled: false
   },
-  u = c,
-  d = false,
+  d = c,
+  u = false,
   g = false,
-  m = c;
+  f = c;
 
-function p(e) {
+function m(e) {
   let {
     welcomeScreen: t,
     guildId: n
-  } = e, r = s.Z.getGuild(n);
+  } = e, r = a.Z.getGuild(n);
   if (null != t) {
     var i, l;
-    m = u = {
+    f = d = {
       description: null != (i = t.description) ? i : "",
       channels: null != (l = t.welcome_channels) ? l : [],
-      enabled: null == r ? true : r.features.has(a.GuildFeatures.WELCOME_SCREEN_ENABLED)
+      enabled: null == r ? true : r.features.has(s.GuildFeatures.WELCOME_SCREEN_ENABLED)
     }
-  } else m = u = c;
+  } else f = d = c;
   g = false
 }
-class f extends(r = Chunk442837.ZP.Store) {
+class b extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk430824.Z)
   }
   get() {
-    return m
+    return f
   }
   showNotice() {
     return g
   }
   getSettingsProps() {
     return {
-      submitting: d,
+      submitting: u,
       hasErrors: g,
-      welcomeSettings: m,
-      originalWelcomeSettings: u
+      welcomeSettings: f,
+      originalWelcomeSettings: d
     }
   }
 }
-o(f, "displayName", "WelcomeScreenSettingsStore");
-let h = new f(Chunk570140.Z, {
-  WELCOME_SCREEN_FETCH_SUCCESS: p,
-  WELCOME_SCREEN_UPDATE: p,
+o(b, "displayName", "WelcomeScreenSettingsStore");
+let p = new b(Chunk570140.Z, {
+  WELCOME_SCREEN_FETCH_SUCCESS: m,
+  WELCOME_SCREEN_UPDATE: m,
   WELCOME_SCREEN_SETTINGS_RESET: function() {
-    m = u, g = false
+    f = d, g = false
   },
   WELCOME_SCREEN_SETTINGS_CLEAR: function() {
-    m = c, u = c
+    f = c, d = c
   },
   WELCOME_SCREEN_SETTINGS_UPDATE: function(e) {
     let {
       settings: t
     } = e;
-    m = function(e) {
+    f = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -86,15 +86,15 @@ let h = new f(Chunk570140.Z, {
         })
       }
       return e
-    }({}, m, t)
+    }({}, f, t)
   },
   WELCOME_SCREEN_SUBMIT: function() {
-    d = true
+    u = true
   },
   WELCOME_SCREEN_SUBMIT_SUCCESS: function(e) {
-    p(e), d = false
+    m(e), u = false
   },
   WELCOME_SCREEN_SUBMIT_FAILURE: function() {
-    g = true, d = false
+    g = true, u = false
   }
 })

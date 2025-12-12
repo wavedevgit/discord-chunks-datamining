@@ -5,10 +5,10 @@ var Chunk896859 = require("./896859.js");
 
 function i() {}
 
-function o() {}
-o.resetWarningCache = i, module.exports = function() {
-  function e(e, t, n, i, o, a) {
-    if (a !== r) {
+function a() {}
+a.resetWarningCache = i, module.exports = function() {
+  function e(e, t, n, i, a, o) {
+    if (o !== r) {
       var s = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
       throw s.name = "Invariant Violation", s
     }
@@ -37,7 +37,7 @@ o.resetWarningCache = i, module.exports = function() {
     oneOfType: exports,
     shape: exports,
     exact: exports,
-    checkPropTypes: o,
+    checkPropTypes: a,
     resetWarningCache: i
   };
   return require.PropTypes = require, require

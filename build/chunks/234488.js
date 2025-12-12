@@ -13,7 +13,7 @@ var Chunk46015 = require("./46015.js"),
   f = Chunk46015(d.exec),
   p = !d.test(c),
   _ = function(e) {
-    if (!o(e)) returnfalse;
+    if (!a(e)) returnfalse;
     try {
       return u(c, [], e), true
     } catch (e) {
@@ -21,8 +21,8 @@ var Chunk46015 = require("./46015.js"),
     }
   },
   m = function(e) {
-    if (!o(e)) returnfalse;
-    switch (a(e)) {
+    if (!a(e)) returnfalse;
+    switch (o(e)) {
       case "AsyncFunction":
       case "GeneratorFunction":
       case "AsyncGeneratorFunction":

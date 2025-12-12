@@ -14,13 +14,13 @@ let s = e => {
     defaultStep: n
   } = e, s = (0, i.useRef)(false), {
     blockedPayments: l
-  } = (0, a.JL)(), {
+  } = (0, o.JL)(), {
     handleStepChange: c,
     handleClose: u
   } = t;
   return ((0, i.useEffect)(() => {
     l || s.current || (c(n), s.current = true)
-  }, [l, c, n]), l) ? (0, r.jsx)(o.Vq, {
+  }, [l, c, n]), l) ? (0, r.jsx)(a.Vq, {
     onClose: u
   }) : null
 }

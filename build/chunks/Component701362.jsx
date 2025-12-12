@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk717881 = require("./717881.jsx"),
+  Chunk350922 = require("./350922.jsx"),
   Chunk616780 = require("./616780.js"),
   Chunk850827 = require("./850827.jsx"),
   Chunk576855 = require("./576855.jsx"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk871118 = require("./871118.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk839021 = require("./839021.js");
+  Chunk724506 = require("./724506.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,8 +73,8 @@ function D(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -82,8 +82,8 @@ function D(e, t) {
 function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 class L extends Chunk473749.PureComponent {
@@ -106,8 +106,8 @@ class L extends Chunk473749.PureComponent {
       onWatch: t,
       activeStream: n,
       currentUserId: i,
-      canWatch: o,
-      unavailableReason: a
+      canWatch: a,
+      unavailableReason: o
     } = this.props;
     return (0, r.jsxs)(l.P3F, {
       onClick: t,
@@ -115,13 +115,13 @@ class L extends Chunk473749.PureComponent {
       children: [(0, r.jsx)(I.Z, {
         className: A.previewImage,
         stream: e
-      }), o ? (0, r.jsx)("div", {
+      }), a ? (0, r.jsx)("div", {
         className: A.previewHover,
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "none",
           className: A.white,
-          children: (0, S.Z)(e, n, i, a)
+          children: (0, S.Z)(e, n, i, o)
         })
       }) : null]
     })
@@ -132,20 +132,20 @@ class L extends Chunk473749.PureComponent {
       user: t,
       stream: n,
       previewIsOpen: i,
-      onAction: o,
+      onAction: a,
       hideTip: s
     } = this.props;
     return null == require ? null : (0, Chunk54381.jsx)("div", {
-      className: a()(Chunk839021.streamPreviewWrapper, {
-        [Chunk839021.mounted]: Chunk473749
+      className: o()(Chunk724506.streamPreviewWrapper, {
+        [Chunk724506.mounted]: Chunk473749
       }),
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk839021.streamPreview,
+        className: Chunk724506.streamPreview,
         children: [this.renderPreview(require), (0, Chunk54381.jsxs)("div", {
-          className: Chunk839021.body,
-          children: [null != module ? (0, Chunk54381.jsx)(Chunk717881.Z, {
+          className: Chunk724506.body,
+          children: [null != module ? (0, Chunk54381.jsx)(Chunk350922.Z, {
             hideHeader: true,
-            type: Chunk717881.P.STREAM_PREVIEW,
+            type: Chunk350922.P.STREAM_PREVIEW,
             activity: module,
             user: exports,
             guildId: require.guildId,
@@ -158,16 +158,16 @@ class L extends Chunk473749.PureComponent {
             },
             onAction: Chunk120356
           }) : (0, Chunk54381.jsx)(Chunk850827.Z, {
-            type: Chunk717881.P.STREAM_PREVIEW,
+            type: Chunk350922.P.STREAM_PREVIEW,
             applicationStream: require,
             user: exports,
             guildId: require.guildId,
             channelId: require.channelId,
-            className: Chunk839021.activityActions,
+            className: Chunk724506.activityActions,
             onAction: Chunk120356
           }), !Chunk442837 && (0, Chunk54381.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,
-            className: Chunk839021.protip,
+            className: Chunk724506.protip,
             children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t.YRdw70) : Chunk388032.intl.string(Chunk388032.t.CCTgbF)
           })]
         })]
@@ -180,12 +180,12 @@ function j(e) {
   var {
     user: t,
     channel: n
-  } = e, o = D(e, ["user", "channel"]);
-  let [a, l] = (0, s.Wu)([b.Z, h.Z, g.Z, p.default], () => (0, O.p9)(n, b.Z, h.Z, g.Z, p.default)), c = (0, s.e7)([_.Z], () => _.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([_.Z], () => _.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([m.default], () => m.default.getId()), y = (0, v.Cf)(c), S = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), I = i.useMemo(() => ({
+  } = e, a = D(e, ["user", "channel"]);
+  let [o, l] = (0, s.Wu)([b.Z, h.Z, g.Z, p.default], () => (0, O.p9)(n, b.Z, h.Z, g.Z, p.default)), c = (0, s.e7)([_.Z], () => _.Z.getStreamForUser(t.id, n.getGuildId())), d = (0, s.e7)([_.Z], () => _.Z.getActiveStreamForApplicationStream(c)), f = (0, s.e7)([m.default], () => m.default.getId()), y = (0, v.Cf)(c), S = (0, s.e7)([E.Z], () => (0, v.Um)(c, E.Z)), I = i.useMemo(() => ({
     [n.guild_id]: [t.id]
   }), [n.guild_id, t.id]);
-  return (0, u.$)(I, "StreamPreviewPopout"), (0, r.jsx)(L, w(P({}, o), {
-    canWatch: a,
+  return (0, u.$)(I, "StreamPreviewPopout"), (0, r.jsx)(L, w(P({}, a), {
+    canWatch: o,
     unavailableReason: l,
     user: t,
     streamApplication: y,

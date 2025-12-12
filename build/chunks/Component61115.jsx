@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk968843 = require("./968843.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk741463 = require("./741463.js"),
+  Chunk326814 = require("./326814.js"),
   Chunk677486 = require("./677486.js");
 
 function b(e, t, n) {
@@ -67,8 +67,8 @@ function T(e) {
   let {
     questId: t,
     survey: n,
-    transitionState: o,
-    onClose: a,
+    transitionState: a,
+    onClose: o,
     onSubmit: f
   } = e, p = (0, _.B4)(t), [b, O] = i.useState(0), [T, A] = (0, l.q_F)(() => ({
     from: {
@@ -85,13 +85,13 @@ function T(e) {
   }, R = async e => {
     1 === e && (await A({
       width: "100%"
-    }), a())
+    }), o())
   };
   return (0, c.ZP)(() => {
     null != p && d.default.track(m.rMx.QUEST_SURVEY_DISPLAYED, N(p, n))
-  }), null == p && a(), (0, r.jsx)(l.Y0X, {
+  }), null == p && o(), (0, r.jsx)(l.Y0X, {
     "data-migration-pending": true,
-    transitionState: o,
+    transitionState: a,
     size: l.CgR.DYNAMIC,
     className: g.modalRoot,
     parentComponent: "QuestSurveyModal",
@@ -109,7 +109,7 @@ function T(e) {
           children: [(0, r.jsx)(l.olH, {
             "data-migration-pending": true,
             className: g.closeBtn,
-            onClick: a
+            onClick: o
           }), (0, r.jsx)("img", {
             src: E,
             alt: "",
@@ -154,7 +154,7 @@ function T(e) {
             children: [(0, r.jsx)(l.Button, {
               variant: "primary",
               text: h.intl.string(h.t.cpT0Cq),
-              onClick: a
+              onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,
               style: T
@@ -173,7 +173,7 @@ function C(e) {
     onClick: i
   } = e;
   return (0, r.jsxs)(l.P3F, {
-    className: a()(g.choiceContainer, t),
+    className: o()(g.choiceContainer, t),
     onClick: () => i(n),
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",

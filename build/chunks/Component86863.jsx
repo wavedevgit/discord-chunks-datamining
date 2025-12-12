@@ -1,7 +1,7 @@
-/** Chunk was on 7891 **/
+/** Chunk was on 40184 **/
 /** chunk id: 86863, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => h
+  n: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,21 +13,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = e => {
+let f = e => {
   let {
     channel: t,
     user: n,
-    application: h,
-    oauth2Token: f
+    application: f,
+    oauth2Token: h
   } = e, m = (0, r.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities());
-  if (!n.bot || null == h) return null;
+  if (!n.bot || null == f) return null;
 
   function g() {
-    o.Z.delete(f.id);
-    let e = m.get(h.id);
+    o.Z.delete(h.id);
+    let e = m.get(f.id);
     null != e && c.Z.leaveActivity({
       location: e.location,
-      applicationId: h.id
+      applicationId: f.id
     })
   }
   return (0, i.jsx)(a.Button, {
@@ -55,7 +55,7 @@ let h = e => {
       }({
         title: p.intl.string(p.t["DT39A+"]),
         subtitle: p.intl.formatToPlainString(p.t.QWGvxA, {
-          applicationName: h.name
+          applicationName: f.name
         }),
         actions: [{
           text: p.intl.string(p.t["ETE/oC"]),
@@ -69,7 +69,7 @@ let h = e => {
           }
         }]
       }, e))), u.default.track(d.rMx.APP_MANAGE_CTA_CLICKED, {
-        application_id: h.id,
+        application_id: f.id,
         channel_id: t.id,
         channel_type: t.type
       })

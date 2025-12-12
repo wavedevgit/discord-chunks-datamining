@@ -1,0 +1,22 @@
+/** Chunk was on 84802 **/
+/** chunk id: 224527, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  item: "_87d056f7fba198b5-item",
+  currentItem: "_87d056f7fba198b5-currentItem",
+  itemImage: "_87d056f7fba198b5-itemImage",
+  currentImage: "_87d056f7fba198b5-currentImage _87d056f7fba198b5-itemImage",
+  itemImageWrapper: "_87d056f7fba198b5-itemImageWrapper",
+  paginationItem: "_87d056f7fba198b5-paginationItem",
+  storePaginationImg: "_87d056f7fba198b5-storePaginationImg",
+  selectedStorePaginationItem: "_87d056f7fba198b5-selectedStorePaginationItem",
+  unselectedStorePaginationItem: "_87d056f7fba198b5-unselectedStorePaginationItem",
+  pagination: "_87d056f7fba198b5-pagination",
+  carouselButtonsContainer: "_87d056f7fba198b5-carouselButtonsContainer",
+  arrow: "_87d056f7fba198b5-arrow",
+  arrowHovered: "_87d056f7fba198b5-arrowHovered",
+  scroller: "_87d056f7fba198b5-scroller",
+  video: "_87d056f7fba198b5-video",
+  mediaPlayer: "_87d056f7fba198b5-mediaPlayer",
+  videoWrapper: "_87d056f7fba198b5-videoWrapper",
+  carousel: "_87d056f7fba198b5-carousel"
+}

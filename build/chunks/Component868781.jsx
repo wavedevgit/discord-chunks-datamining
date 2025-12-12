@@ -43,15 +43,15 @@ function b(e) {
 }
 let y = function(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, c.dS)(e) ? o.ewx : (0, a.Z)(e) ? t ? o.iWm : o.jje : e.type === g.IIU.PLAYING ? o.iWm : e.type === g.IIU.LISTENING ? o.RZG : e.type === g.IIU.WATCHING || e.type === g.IIU.STREAMING ? o.ARS : e.type === g.IIU.COMPETING ? o.iWm : null
+  return (0, c.dS)(e) ? a.ewx : (0, o.Z)(e) ? t ? a.iWm : a.jje : e.type === g.IIU.PLAYING ? a.iWm : e.type === g.IIU.LISTENING ? a.RZG : e.type === g.IIU.WATCHING || e.type === g.IIU.STREAMING ? a.ARS : e.type === g.IIU.COMPETING ? a.iWm : null
 };
 
 function O(e) {
   let {
     activity: t,
     textVariant: n,
-    textClassName: o,
-    iconClassName: a,
+    textClassName: a,
+    iconClassName: o,
     hideIcon: c = false,
     hideText: u = false,
     hideTooltip: h = false,
@@ -82,11 +82,11 @@ function O(e) {
     children: [!c && null != T && (0, r.jsx)(_.Z, {
       icon: T,
       tooltipText: C ? I : true,
-      className: a,
+      className: o,
       onTooltipShow: C ? v : true
     }), !u && (0, r.jsx)(m.Z, {
       variant: n,
-      className: o,
+      className: a,
       canTruncate: g,
       hideTooltip: h,
       children: S
@@ -99,8 +99,8 @@ function v(e) {
     activity: t,
     textVariant: n,
     textClassName: i,
-    iconClassName: o,
-    hideIcon: a = false,
+    iconClassName: a,
+    hideIcon: o = false,
     hideText: s = false,
     hideTooltip: c = false,
     canTruncate: u = true
@@ -115,11 +115,11 @@ function v(e) {
   }), {
     text: g,
     tooltip: E
-  } = (0, f.Z)(t, p || m), b = y(t), O = null != b && !a;
+  } = (0, f.Z)(t, p || m), b = y(t), O = null != b && !o;
   return (0, r.jsx)(h.Z, {
     icon: O ? (0, r.jsx)(_.Z, {
       icon: b,
-      className: o
+      className: a
     }) : true,
     text: g,
     textVariant: n,

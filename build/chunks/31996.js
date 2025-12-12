@@ -11,7 +11,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let l = new Set;
 async function c(e) {
-  if (null == o.Z.getGuild(e) && null == a.Z.getGuildOrStatus(e) && !l.has(e)) {
+  if (null == a.Z.getGuild(e) && null == o.Z.getGuildOrStatus(e) && !l.has(e)) {
     i.Z.dispatch({
       type: "BASIC_GUILD_FETCH",
       guildId: e

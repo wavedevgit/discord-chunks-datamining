@@ -4,11 +4,11 @@
 require.d(exports, {
   EI: () => i,
   XM: () => r,
-  qK: () => o
+  qK: () => a
 });
 let r = 30 * require("./70956.js").Z.Millis.MINUTE,
   i = 1;
 
-function o(e) {
+function a(e) {
   return r + e.lastUsedTimestamp - Date.now() <= 0
 }

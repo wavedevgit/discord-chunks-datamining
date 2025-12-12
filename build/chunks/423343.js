@@ -25,7 +25,7 @@ class c {
   update(e) {
     this.current !== e && (this.current = e, this.history.push({
       state: e,
-      startTime: (0, o.zO)()
+      startTime: (0, a.zO)()
     }))
   }
   getVoiceConnectionSuccessStats() {
@@ -45,7 +45,7 @@ class c {
   }
   getStateDurations(e) {
     if (0 === this.history.length) return [];
-    let t = (0, a.Z)(this.history, (e, t) => ({
+    let t = (0, o.Z)(this.history, (e, t) => ({
         state: e.state,
         durationMs: t.startTime - e.startTime
       })),

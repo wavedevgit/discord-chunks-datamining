@@ -1,7 +1,7 @@
-/** Chunk was on 47168 **/
-/** chunk id: 445968, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 31800 **/
+/** chunk id: 445968, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  PremiumResubscribeModal: () => v
+  PremiumResubscribeModal: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,75 +19,75 @@ var Chunk54381 = require("./54381.js"),
   Chunk320941 = require("./320941.jsx"),
   Chunk474936 = require("./474936.js");
 
-function C(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), a.forEach(function(t) {
-      var a;
-      a = r[t], t in e ? Object.defineProperty(e, t, {
-        value: a,
+    var a = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(a);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(a, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = a[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = a
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function S(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var a = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, a)
+      var r = Object.getOwnPropertySymbols(e);
+      a.push.apply(a, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return a
+  })(Object(t)).forEach(function(a) {
+    Object.defineProperty(e, a, Object.getOwnPropertyDescriptor(t, a))
   }), e
 }
-let v = e => {
+let w = e => {
   var t;
   let {
-    analyticsLocations: r,
+    analyticsLocations: a,
     premiumSubscription: o
-  } = e, v = null == (t = (0, b.Af)(o)) ? true : t.planId, w = null != v ? (0, b.Rd)(v) : null;
-  i()(null != w, "Should not be resubscribing Nitro without premiumType");
-  let y = w === f.PremiumTypes.TIER_0,
-    [P, x] = n.useState(_.R.CONFIRM),
-    O = n.useCallback(() => {
-      switch (P) {
-        case _.R.CONFIRM:
-          return (0, a.jsx)(m.G, S(C({}, e), {
-            setStep: x
+  } = e, w = null == (t = (0, f.Af)(o)) ? true : t.planId, y = null != w ? (0, f.Rd)(w) : null;
+  i()(null != y, "Should not be resubscribing Nitro without premiumType");
+  let P = y === C.PremiumTypes.TIER_0,
+    [x, O] = n.useState(m.R.CONFIRM),
+    _ = n.useCallback(() => {
+      switch (x) {
+        case m.R.CONFIRM:
+          return (0, r.jsx)(u.G, v(S({}, e), {
+            setStep: O
           }));
-        case _.R.SUCCESS:
-          return (0, a.jsx)(h.n, S(C({}, e), {
-            premiumType: w
+        case m.R.SUCCESS:
+          return (0, r.jsx)(h.n, v(S({}, e), {
+            premiumType: y
           }));
         default:
-          return (0, a.jsx)(m.G, S(C({}, e), {
-            setStep: x
+          return (0, r.jsx)(u.G, v(S({}, e), {
+            setStep: O
           }))
       }
-    }, [P, e, w]);
-  return (0, a.jsx)(l.Gt, {
-    value: r,
-    children: (0, a.jsx)(s.PaymentContextProvider, {
+    }, [x, e, y]);
+  return (0, r.jsx)(c.Gt, {
+    value: a,
+    children: (0, r.jsx)(d.PaymentContextProvider, {
       activeSubscription: o,
-      stepConfigs: (0, u.O)(),
+      stepConfigs: (0, p.O)(),
       skuIDs: [],
-      breadcrumbs: [d.h8.CONFIRM],
-      children: (0, a.jsx)(c.b6, {
-        children: (0, a.jsx)(p.Z, {
-          isConfirmationStep: P === _.R.SUCCESS,
-          isEligibleForWowMoment: !y,
-          shouldPrefetchWowMoment: !y,
-          children: O()
+      breadcrumbs: [s.h8.CONFIRM],
+      children: (0, r.jsx)(l.b6, {
+        children: (0, r.jsx)(b.Z, {
+          isConfirmationStep: x === m.R.SUCCESS,
+          isEligibleForWowMoment: !P,
+          shouldPrefetchWowMoment: !P,
+          children: _()
         })
       })
     })

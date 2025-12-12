@@ -14,53 +14,53 @@ var Chunk54381 = require("./54381.js"),
   Chunk916001 = require("./916001.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk929148 = require("./929148.js");
+  Chunk405122 = require("./405122.js");
 let h = "expanded-area";
 
 function j(e) {
   let {
     attachments: t,
     role: n,
-    roleLocked: a
-  } = e, [l, m] = i.useState(false);
-  return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(s.P3F, {
+    roleLocked: i
+  } = e, [l, m] = r.useState(false);
+  return (0, a.jsxs)(a.Fragment, {
+    children: [(0, a.jsxs)(s.P3F, {
       className: f.viewContents,
       onClick: () => {
         m(e => !e)
       },
       "aria-expanded": l,
       "aria-controls": h,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, a.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
         children: l ? x.intl.string(x.t.DKNxgB) : x.intl.string(x.t.ESEKua)
-      }), (0, r.jsx)(o.Z, {
+      }), (0, a.jsx)(o.Z, {
         className: f.caretIcon,
         direction: l ? o.Z.Directions.UP : o.Z.Directions.DOWN
       })]
-    }), (0, r.jsx)(s.LZC, {
+    }), (0, a.jsx)(s.LZC, {
       size: 12
-    }), l && (0, r.jsxs)("ul", {
+    }), l && (0, a.jsxs)("ul", {
       className: f.contentsContainer,
       id: h,
-      children: [(0, r.jsx)(d.Z, {
+      children: [(0, a.jsx)(d.Z, {
         label: x.intl.string(x.t.DWYJua),
-        children: (0, r.jsx)("ul", {
+        children: (0, a.jsx)("ul", {
           className: f.attachmentGrid,
-          children: t.map(e => (0, r.jsx)(c.Z, {
+          children: t.map(e => (0, a.jsx)(c.Z, {
             attachment: e
           }, e.id))
         })
-      }), null != n && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)("div", {
+      }), null != n && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)("div", {
           className: f.separator
-        }), (0, r.jsx)(d.Z, {
+        }), (0, a.jsx)(d.Z, {
           label: x.intl.string(x.t.o9xphc),
-          children: (0, r.jsx)(u.Z, {
+          children: (0, a.jsx)(u.Z, {
             role: n,
             textVariant: "text-md/medium",
-            locked: a
+            locked: i
           })
         })]
       })]
@@ -72,16 +72,16 @@ function p(e) {
   var t;
   let {
     listing: n
-  } = e, i = null != (t = n.attachments) ? t : [], s = (0, a.e7)([l.Z], () => {
+  } = e, r = null != (t = n.attachments) ? t : [], s = (0, i.e7)([l.Z], () => {
     var e;
     return l.Z.getRole(n.guild_id, null != (e = n.role_id) ? e : m.lds)
   }), o = !n.has_entitlement;
-  return 0 === i.length && null == s ? null : 0 === i.length && null != s ? (0, r.jsx)(u.Z, {
+  return 0 === r.length && null == s ? null : 0 === r.length && null != s ? (0, a.jsx)(u.Z, {
     role: s,
     textVariant: "text-md/medium",
     locked: o
-  }) : (0, r.jsx)(j, {
-    attachments: i,
+  }) : (0, a.jsx)(j, {
+    attachments: r,
     role: s,
     roleLocked: o
   })

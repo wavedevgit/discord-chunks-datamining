@@ -3,12 +3,12 @@
 "use strict";
 var Chunk710845 = require("./710845.js"),
   Chunk511495 = require("./511495.js");
-let o = new Chunk710845.Z("libdiscore");
+let a = new Chunk710845.Z("libdiscore");
 !async function() {
   try {
     __OVERLAY__ || await (0, Chunk511495.e)()
   } catch (e) {
-    o.error("Failed to initialize libdiscore", module)
+    a.error("Failed to initialize libdiscore", module)
   }
   try {
     require("./750081.jsx")

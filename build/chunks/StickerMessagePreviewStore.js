@@ -25,14 +25,14 @@ function u(e) {
     sticker: n,
     draftType: r
   } = e;
-  (r === a.d.FirstThreadMessage ? c : l)[t] = [n]
+  (r === o.d.FirstThreadMessage ? c : l)[t] = [n]
 }
 
 function d(e) {
   let {
     channelId: t,
     draftType: n
-  } = e, r = n === a.d.FirstThreadMessage ? c : l;
+  } = e, r = n === o.d.FirstThreadMessage ? c : l;
   null != r[t] && delete r[t]
 }
 
@@ -41,7 +41,7 @@ function f() {
 }
 class p extends(r = Chunk442837.ZP.Store) {
   getStickerPreview(e, t) {
-    return (t === a.d.FirstThreadMessage ? c : l)[e]
+    return (t === o.d.FirstThreadMessage ? c : l)[e]
   }
 }
 s(p, "displayName", "StickerMessagePreviewStore");

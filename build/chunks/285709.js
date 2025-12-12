@@ -3,13 +3,13 @@
 e = require.nmd(module);
 var Chunk788255 = require("./788255.js"),
   i = exports && !exports.nodeType && exports,
-  o = i && module && !module.nodeType && module,
-  a = o && o.exports === i && Chunk788255.process,
+  a = i && module && !module.nodeType && module,
+  o = a && a.exports === i && Chunk788255.process,
   s = function() {
     try {
-      var e = o && o.require && o.require("util").types;
+      var e = a && a.require && a.require("util").types;
       if (module) return module;
-      return a && a.binding && a.binding("util")
+      return o && o.binding && o.binding("util")
     } catch (e) {}
   }();
 module.exports = s

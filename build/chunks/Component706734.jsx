@@ -19,7 +19,7 @@ function E(t) {
     reason: E,
     onReasonChange: A,
     transitionState: _
-  } = t, C = o.zf.map(t => ({
+  } = t, d = o.zf.map(t => ({
     value: t,
     name: (0, a.S)(t)
   }));
@@ -43,7 +43,7 @@ function E(t) {
     }],
     children: (0, r.jsx)(i.FXm, {
       value: E,
-      options: C,
+      options: d,
       onChange: t => {
         l.default.track(s.rMx.USER_ACCOUNT_EMAIL_CHANGE_REASON_SELECTED, {
           change_email_reason_enum: t

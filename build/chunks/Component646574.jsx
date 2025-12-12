@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk74538 = require("./74538.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975377 = require("./975377.js");
+  Chunk538497 = require("./538497.js");
 let b = {
     tension: 750,
     mass: 2.5,
@@ -31,7 +31,7 @@ function O(e) {
   let {
     checked: t,
     onClick: n,
-    id: o = "burst-reaction-toggle-button"
+    id: a = "burst-reaction-toggle-button"
   } = e, O = (0, l.e7)([f.Z], () => f.Z.useReducedMotion), v = _.default.getCurrentUser(), S = null == v || (0, m.I5)(v) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, T] = (0, p.US)(S), [C, A] = i.useState(false), [N, P] = (0, d.q_F)(() => ({})), R = (0, s.animated)(d.Pt5);
 
   function w() {
@@ -67,11 +67,11 @@ function O(e) {
         className: E.visuallyHidden,
         checked: t,
         onChange: w,
-        id: o,
+        id: a,
         type: "checkbox"
       }), (0, r.jsxs)("label", {
-        htmlFor: o,
-        className: a()(E.label, {
+        htmlFor: a,
+        className: o()(E.label, {
           [E.labelChecked]: t
         }),
         children: [(0, r.jsx)(R, {

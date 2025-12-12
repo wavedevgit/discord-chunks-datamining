@@ -21,8 +21,8 @@ let u = function(e) {
     buttonLabel: f,
     analyticsLocations: p
   } = e, _ = async () => {
-    let e = a.Z.getPaymentSource(d);
-    null != e && (await (0, l.i1)(d, (0, c.yb)(t)), await o.tq(t, e, t.currency, (0, s.UX)(t.items, t.currency, t.paymentSourceId), p), n())
+    let e = o.Z.getPaymentSource(d);
+    null != e && (await (0, l.i1)(d, (0, c.yb)(t)), await a.tq(t, e, t.currency, (0, s.UX)(t.items, t.currency, t.paymentSourceId), p), n())
   };
   return (0, r.jsx)(i.Button, {
     variant: "active",

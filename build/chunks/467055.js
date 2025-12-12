@@ -11,7 +11,7 @@ Chunk98405({
   fromEntries: function(e) {
     var t = {};
     return i(e, function(e, n) {
-      o(t, e, n)
+      a(t, e, n)
     }, {
       AS_ENTRIES: true
     }), t

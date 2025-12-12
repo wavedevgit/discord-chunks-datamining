@@ -9,7 +9,7 @@ var Chunk772848 = require("./772848.js"),
   Chunk544891 = require("./544891.js"),
   Chunk579092 = require("./579092.js"),
   Chunk981631 = require("./981631.js");
-let a = [window.GLOBAL_ENV.ADS_MANAGER_ENDPOINT].filter(Boolean);
+let l = [window.GLOBAL_ENV.ADS_MANAGER_ENDPOINT].filter(Boolean);
 
 function o(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : window.location.href,
@@ -19,7 +19,7 @@ function o(e) {
 
 function c(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : window.location.href,
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : a;
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : l;
   try {
     let {
       origin: r
@@ -38,7 +38,7 @@ async function u(e) {
   let t = (0, r.Z)();
   try {
     let n = (await i.tn.post({
-        url: l.ANM.HANDOFF,
+        url: a.ANM.HANDOFF,
         body: {
           key: t
         },

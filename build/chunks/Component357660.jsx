@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk111161 = require("./111161.jsx"),
   Chunk700425 = require("./700425.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk764516 = require("./764516.js");
+  Chunk520118 = require("./520118.js");
 
 function b(e) {
   let {
@@ -31,7 +31,7 @@ function b(e) {
   } = (0, d.Cu)(), u = null == t ? true : t.stores;
   i.useEffect(() => {
     if (null != u) {
-      let e = new o.Fh(u, () => {
+      let e = new a.Fh(u, () => {
         c(u)
       });
       return e.attach("SettingPanelNotice"), c(u), () => {
@@ -50,7 +50,7 @@ function b(e) {
     })
   }, [t, l]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [n, (0, r.jsx)(a.W, {
+    children: [n, (0, r.jsx)(o.W, {
       component: "div",
       children: f
     })]
@@ -61,11 +61,11 @@ function y(e) {
   let {
     scrollerRef: t,
     panelKey: n,
-    notice: o,
-    children: a
+    notice: a,
+    children: o
   } = e, l = i.useRef(null);
   return (0, r.jsx)(b, {
-    notice: o,
+    notice: a,
     children: (0, r.jsx)(s.w0Z, {
       "data-settings-panel-scroller": true,
       className: E.scroller,
@@ -75,7 +75,7 @@ function y(e) {
         ref: l,
         children: (0, r.jsx)(s.JcV, {
           containerRef: l,
-          children: a
+          children: o
         })
       })
     }, n)
@@ -101,32 +101,32 @@ function O(e) {
 function v(e) {
   var t, n;
   let {
-    panelKey: o,
-    layout: a,
+    panelKey: a,
+    layout: o,
     notice: l
   } = e, c = null != (t = p.Z.useState(e => {
     let {
       currentTabKeys: t
     } = e;
-    return t.get(o)
-  })) ? t : a[0].key;
+    return t.get(a)
+  })) ? t : o[0].key;
   i.useEffect(() => {
     let e = p.Z.getField("currentTabKeys");
-    if (a.some(t => t.key === e.get(o))) return;
+    if (o.some(t => t.key === e.get(a))) return;
     let t = new Map(e);
-    t.set(o, a[0].key), p.Z.setState({
+    t.set(a, o[0].key), p.Z.setState({
       currentTabKeys: t
     })
-  }, [a, o]);
+  }, [o, a]);
   let u = e => {
       let t = new Map(p.Z.getField("currentTabKeys"));
-      t.set(o, e), p.Z.setState({
+      t.set(a, e), p.Z.setState({
         currentTabKeys: t
       })
     },
-    d = null != (n = a.find(e => e.key === c)) ? n : a[0];
+    d = null != (n = o.find(e => e.key === c)) ? n : o[0];
   return (0, r.jsxs)(y, {
-    panelKey: o,
+    panelKey: a,
     notice: l,
     children: [(0, r.jsx)(s.njP, {
       className: E.tabBar,
@@ -135,7 +135,7 @@ function v(e) {
       orientation: "horizontal",
       type: "top",
       look: "brand",
-      children: a.map(e => {
+      children: o.map(e => {
         let {
           key: t,
           getTitle: n
@@ -158,14 +158,14 @@ function S(e) {
   let {
     panelKey: t,
     notice: n,
-    layout: o
-  } = e, a = i.useRef(null);
-  return (0, h.i)(t, o, a), (0, r.jsx)(y, {
-    scrollerRef: a,
+    layout: a
+  } = e, o = i.useRef(null);
+  return (0, h.i)(t, a, o), (0, r.jsx)(y, {
+    scrollerRef: o,
     panelKey: t,
     notice: n,
     children: (0, r.jsx)(O, {
-      layout: o
+      layout: a
     })
   })
 }
@@ -188,7 +188,7 @@ function T(e) {
     node: t
   } = e, {
     layout: n
-  } = t, a = (0, o.e7)([u.Z], () => u.Z.hidePersonalInformation);
+  } = t, o = (0, a.e7)([u.Z], () => u.Z.hidePersonalInformation);
   if (i.useEffect(() => {
       var e, n;
       if ((null == (e = t.parent) ? true : e.type) !== f.Jq.SIDEBAR_ITEM || null == t.parent.trailing) return;
@@ -201,7 +201,7 @@ function T(e) {
           forceTrack: true
         })
       })
-    }, [t]), a && t.hideInStreamerMode) return (0, r.jsx)(l.Z, {});
+    }, [t]), o && t.hideInStreamerMode) return (0, r.jsx)(l.Z, {});
   if (null != t.StronglyDiscouragedCustomComponent) return (0, r.jsx)(I, {
     component: t.StronglyDiscouragedCustomComponent,
     panelKey: t.key,

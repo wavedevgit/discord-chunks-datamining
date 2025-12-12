@@ -37,7 +37,7 @@ function _() {
 }
 
 function m(e) {
-  f = e.locale, (0, a._2)(f)
+  f = e.locale, (0, o._2)(f)
 }
 d().then(e => {
   p = e

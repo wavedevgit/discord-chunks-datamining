@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk486324 = require("./486324.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk199306 = require("./199306.js");
+  Chunk859554 = require("./859554.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ function k(e) {
     icon: t,
     onClick: n,
     text: i,
-    children: o,
+    children: a,
     className: s,
     selected: l = false,
     disabled: u = false,
@@ -93,7 +93,7 @@ function k(e) {
     onBlur: f
   } = e;
   return (0, r.jsxs)(c.P3F, {
-    className: a()(s, P.backgroundOption, {
+    className: o()(s, P.backgroundOption, {
       [P.backgroundOptionSelected]: l,
       [P.backgroundOptionDisabled]: u
     }),
@@ -104,7 +104,7 @@ function k(e) {
       className: P.backgroundOptionRing
     }) : null, (0, r.jsxs)("div", {
       className: P.backgroundOptionInner,
-      children: [o, (0, r.jsxs)("div", {
+      children: [a, (0, r.jsxs)("div", {
         className: P.backgroundOptionContent,
         children: [(0, r.jsx)(t, {
           className: P.backgroundIconOptionIcon,
@@ -127,11 +127,11 @@ function U(e) {
   let {
     option: t,
     source: n,
-    isAnimated: o
-  } = e, [a, s] = i.useState(false);
+    isAnimated: a
+  } = e, [o, s] = i.useState(false);
   if (i.useEffect(() => {
       new Image().src = n
-    }, [n]), !o || null == t) return (0, r.jsx)("div", {
+    }, [n]), !a || null == t) return (0, r.jsx)("div", {
     className: P.backgroundImageOption,
     style: {
       backgroundImage: "url(".concat(n, ")")
@@ -148,7 +148,7 @@ function U(e) {
     onMouseMove: () => s(true),
     onMouseLeave: () => s(false),
     className: P.backgroundImageOption,
-    src: a ? n : l,
+    src: o ? n : l,
     alt: t.id
   })
 }
@@ -157,7 +157,7 @@ function G(e) {
   let {
     option: t,
     source: i,
-    selected: o = false,
+    selected: a = false,
     onSelectOption: l,
     isAnimatedImage: f,
     isVideo: b,
@@ -184,8 +184,8 @@ function G(e) {
     }))
   }
   return (0, r.jsxs)(c.P3F, {
-    className: a()(P.backgroundOption, {
-      [P.backgroundOptionSelected]: o
+    className: o()(P.backgroundOption, {
+      [P.backgroundOptionSelected]: a
     }),
     onClick: () => l(t),
     onContextMenu: e => (0, u.jW)(e, async () => {
@@ -194,10 +194,10 @@ function G(e) {
       } = await n.e("99414").then(n.bind(n, 187658));
       return n => (0, r.jsx)(e, x(w({}, n), {
         backgroundOption: t,
-        optionIsInUse: o
+        optionIsInUse: a
       }))
     }),
-    children: [o ? (0, r.jsx)("div", {
+    children: [a ? (0, r.jsx)("div", {
       className: P.backgroundOptionRing
     }) : null, (0, r.jsx)("div", {
       onFocus: R,
@@ -219,11 +219,11 @@ function G(e) {
 
 function Z() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk199306.customBackgroundTooltip,
+    className: Chunk859554.customBackgroundTooltip,
     children: [(0, Chunk54381.jsx)(Chunk481060.SrA, {
       size: "md",
       color: "currentColor",
-      className: Chunk199306.customBackgroundTooltipIcon
+      className: Chunk859554.customBackgroundTooltipIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["T+yRY3"])
@@ -236,12 +236,12 @@ function F(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = false
-  } = e, o = (0, s.e7)([g.Z], () => g.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, a = (0, s.e7)([g.Z], () => g.Z.hasHotspot(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
-  function a() {
+  function o() {
     h.Kw(T.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
-  let u = o ? N.intl.string(N.t["5TUJOv"]) : n;
+  let u = a ? N.intl.string(N.t["5TUJOv"]) : n;
   return (0, r.jsx)(l.u, {
     text: u,
     children: (0, r.jsxs)("div", {
@@ -251,8 +251,8 @@ function F(e) {
         disabled: i,
         icon: c.FmF,
         onClick: t,
-        onMouseLeave: a,
-        onBlur: a,
+        onMouseLeave: o,
+        onBlur: o,
         text: (0, r.jsxs)("div", {
           className: P.backgroundCustomInlineUpsell,
           children: [(0, r.jsx)(c.SrA, {
@@ -269,7 +269,7 @@ function F(e) {
         }), (0, r.jsx)("div", {
           className: P.backgroundCustomInlineUpsellBackgroundDarkener
         })]
-      }), o && (0, r.jsx)(c.IGR, {
+      }), a && (0, r.jsx)(c.IGR, {
         text: N.intl.string(N.t.y2b7CA),
         className: P.newTextBadge
       })]
@@ -299,7 +299,7 @@ function V(e) {
   let {
     onAddBackgroundImage: t,
     disabled: i
-  } = e, o = (0, c.vRw)(), a = i ? N.intl.formatToPlainString(N.t.ykGFeD, {
+  } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeD, {
     maxCustomBackgrounds: L
   }) : N.intl.string(N.t.Qx0tFc), s = M();
 
@@ -307,7 +307,7 @@ function V(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
+      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("32603")]).then(n.bind(n, 28130));
       return n => (0, r.jsx)(e, w({
         maxFileSizeBytes: S.SJ,
         onComplete: e => {
@@ -326,13 +326,13 @@ function V(e) {
         showUpsellHeader: true
       }, n))
     }, {
-      contextKey: o
+      contextKey: a
     })
   }
   return (0, r.jsx)(F, {
     disabled: i,
     onClick: l,
-    tooltipText: a
+    tooltipText: o
   })
 }
 
@@ -340,7 +340,7 @@ function H(e) {
   let {
     canUseCustomBackgrounds: t,
     customBackgroundOptions: n,
-    selectedOption: o,
+    selectedOption: a,
     onSelectOption: s,
     onUpsellClick: u,
     onAddBackgroundImage: d,
@@ -351,14 +351,14 @@ function H(e) {
   return (0, r.jsx)(_.Gt, {
     value: g,
     children: (0, r.jsxs)("div", {
-      className: a()(P.backgroundOptions, !f && P.backgroundOptionsLarge),
+      className: o()(P.backgroundOptions, !f && P.backgroundOptionsLarge),
       children: [(0, r.jsx)(k, {
-        selected: null == o,
+        selected: null == a,
         icon: c.t6m,
         onClick: () => s(null),
         text: N.intl.string(N.t.fUdMeO)
       }), (0, r.jsx)(k, {
-        selected: o === S.f7,
+        selected: a === S.f7,
         icon: c.yMH,
         onClick: () => s(S.f7),
         text: N.intl.string(N.t.LhSyL8),
@@ -383,7 +383,7 @@ function H(e) {
           children: (0, r.jsx)(G, {
             option: e,
             source: t,
-            selected: (0, O.rD)(o) && o.id === e.id,
+            selected: (0, O.rD)(a) && a.id === e.id,
             onSelectOption: s,
             isVideo: (0, b.ay)(e.asset),
             isAnimatedImage: (0, b.xR)(e.asset)
@@ -397,7 +397,7 @@ function H(e) {
           children: (0, r.jsx)(G, {
             option: e.id,
             source: e.source,
-            selected: o === e.id,
+            selected: a === e.id,
             onSelectOption: s,
             isVideo: t,
             isAnimatedImage: false,

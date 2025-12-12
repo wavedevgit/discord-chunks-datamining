@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk459931 = require("./459931.js"),
+  Chunk867998 = require("./867998.js"),
   Chunk740353 = require("./740353.js");
 let v = "VoiceChannelStatusModal",
   S = 500;
@@ -33,7 +33,7 @@ function I(e) {
     transitionState: n,
     sourceAnalyticsLocations: I,
     onClose: T
-  } = e, C = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), A = (0, a.e7)([m.Z], () => m.Z.getMediaSessionId()), [N, P] = i.useState(null != C ? C : ""), [R, w] = i.useState(false), [D, x] = i.useState(null), L = (0, a.e7)([h.default], () => h.default.getCurrentUser()), j = N.length > S;
+  } = e, C = (0, o.e7)([u.Z], () => u.Z.getChannelStatus(t)), A = (0, o.e7)([m.Z], () => m.Z.getMediaSessionId()), [N, P] = i.useState(null != C ? C : ""), [R, w] = i.useState(false), [D, x] = i.useState(null), L = (0, o.e7)([h.default], () => h.default.getCurrentUser()), j = N.length > S;
   i.useEffect(() => {
     g.default.track(E.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",
@@ -66,9 +66,9 @@ function I(e) {
         r = N.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
         i = _.ZP.parse(t, N),
         {
-          hasErrors: o
+          hasErrors: a
         } = k(i);
-      if (!o) {
+      if (!a) {
         try {
           let e = await l.ZP.updateVoiceChannelStatus(t.id, i.content);
           204 === e.status ? (g.default.track(E.rMx.VOICE_CHANNEL_TOPIC_SET, {
@@ -89,7 +89,7 @@ function I(e) {
     }, B = async () => (j || R || await U(), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
-    })), V = (0, r.jsx)(o.gNt, {
+    })), V = (0, r.jsx)(a.gNt, {
       label: b.intl.string(b.t.Fq5lwN),
       errorMessage: D,
       children: (0, r.jsx)(p.ZP, {
@@ -113,7 +113,7 @@ function I(e) {
         emojiPickerCloseOnModalOuterClick: true
       })
     });
-  return (0, r.jsx)(o.ExpressiveModal, {
+  return (0, r.jsx)(a.ExpressiveModal, {
     transitionState: n,
     onClose: T,
     graphic: {

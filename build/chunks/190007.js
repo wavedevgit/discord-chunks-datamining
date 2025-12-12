@@ -1,13 +1,13 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 190007, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  HE: () => d,
-  HZ: () => m,
-  Pk: () => f,
-  e$: () => h,
-  l_: () => p,
-  ss: () => b,
+  HE: () => u,
+  HZ: () => f,
+  Pk: () => b,
+  e$: () => p,
+  l_: () => m,
+  ss: () => x,
   xI: () => g
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk570140 = require("./570140.js"),
@@ -19,7 +19,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function u(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_ADD",
     connection: e
@@ -33,7 +33,7 @@ function g(e) {
   })
 }
 
-function m(e, t) {
+function f(e, t) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_UPDATE",
     index: e,
@@ -41,28 +41,28 @@ function m(e, t) {
   })
 }
 
-function p(e) {
+function m(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_REORDER",
     connections: e
   })
 }
 
-function f() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_RESET"
   })
 }
-async function h(e) {
-  var t, n, d;
-  let g = a.Z.getEditedConnections(),
-    m = [];
+async function p(e) {
+  var t, n, u;
+  let g = s.Z.getEditedConnections(),
+    f = [];
   if (g.forEach(e => {
       let t = (0, c.t9)(e);
-      m.push(...t)
-    }), m.length > 0) throw x(m), i.Z.show({
-    title: u.intl.string(u.t.ISppXw),
-    body: m.join("\n")
+      f.push(...t)
+    }), f.length > 0) throw h(f), i.Z.show({
+    title: d.intl.string(d.t.ISppXw),
+    body: f.join("\n")
   }), Error("failed to validate connections");
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SUBMIT"
@@ -79,22 +79,22 @@ async function h(e) {
     let {
       fieldName: e,
       error: t
-    } = null != (d = new l.Hx(r).getAnyErrorMessageAndField()) ? d : {}, n = [e, t].filter(s.lm).join(": ");
-    throw x([n]), i.Z.show({
-      title: u.intl.string(u.t.iLdiqY),
+    } = null != (u = new l.Hx(r).getAnyErrorMessageAndField()) ? u : {}, n = [e, t].filter(a.lm).join(": ");
+    throw h([n]), i.Z.show({
+      title: d.intl.string(d.t.iLdiqY),
       body: n
     }), r
   }
 }
 
-function x(e) {
+function h(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_FAILED",
     errors: e
   })
 }
 
-function b(e) {
+function x(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return t || a.Z.hasChanges() ? h(e) : Promise.resolve()
+  return t || s.Z.hasChanges() ? p(e) : Promise.resolve()
 }

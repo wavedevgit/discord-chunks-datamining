@@ -5,23 +5,23 @@ require.d(exports, {
   Ge: () => s,
   H6: () => g,
   JF: () => m,
-  LN: () => a,
+  LN: () => o,
   RA: () => v,
   SH: () => E,
   _$: () => l,
   aK: () => _,
-  f: () => o,
+  f: () => a,
   km: () => O,
   pS: () => d
 });
 var Chunk800911 = require("./800911.js"),
   Chunk140081 = require("./140081.js");
-let o = {
+let a = {
     leftBoundary: "([^\\p{L}\\p{N}_]|^)",
     rightBoundary: "(?=[^\\p{L}\\p{N}_]|$)",
     flags: "iu"
   },
-  a = {
+  o = {
     воскресенье: 0,
     воскресенья: 0,
     вск: 0,

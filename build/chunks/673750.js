@@ -69,8 +69,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function T(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var A = function(e) {
@@ -153,11 +153,11 @@ class D extends Chunk651655.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, a = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : true, f = (0, u.d)(), _ = v({
       mobile_network_type: p.Z.getType()
-    }, a, null != f && {
+    }, o, null != f && {
       signal_strength: f
     });
     if (c.ZP.get("send_fail_100")) {
@@ -173,7 +173,7 @@ class D extends Chunk651655.Z {
     }
     let m = this.createResponseHandler(e.nonce, t),
       h = new AbortController;
-    this.startQueueMetricTimers(e.nonce), o.tn.post(I(v({
+    this.startQueueMetricTimers(e.nonce), a.tn.post(I(v({
       url: b.ANM.MESSAGES(r),
       body: _,
       context: l,
@@ -191,11 +191,11 @@ class D extends Chunk651655.Z {
     let {
       channelId: r,
       analyticsLocation: i
-    } = e, a = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
+    } = e, o = T(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.Z)()) ? n : i, l = null != s ? {
       location: s
     } : true, f = (0, u.d)(), _ = v({
       mobile_network_type: p.Z.getType()
-    }, a, null != f && {
+    }, o, null != f && {
       signal_strength: f
     });
     if (c.ZP.get("send_fail_100")) {
@@ -211,7 +211,7 @@ class D extends Chunk651655.Z {
     }
     let m = this.createResponseHandler(e.nonce, t),
       h = new AbortController;
-    this.startQueueMetricTimers(e.nonce), o.tn.post(I(v({
+    this.startQueueMetricTimers(e.nonce), a.tn.post(I(v({
       url: b.ANM.MESSAGES_ANNOUNCEMENT(r),
       body: _,
       context: l,
@@ -237,7 +237,7 @@ class D extends Chunk651655.Z {
       sectionName: _,
       source: h
     } = e, y = {
-      type: a.B8.APPLICATION_COMMAND,
+      type: o.B8.APPLICATION_COMMAND,
       application_id: n,
       guild_id: r,
       channel_id: s,
@@ -250,7 +250,7 @@ class D extends Chunk651655.Z {
     };
     null != u && (y.data.attachments = u.map((e, t) => (i()(e.status === E.mw.COMPLETED, "Uploads must be staged before trying to send a message"), (0, g.B)(e, t))));
     let O = new AbortController;
-    o.tn.post({
+    a.tn.post({
       url: b.ANM.INTERACTIONS,
       body: y,
       signal: O.signal,
@@ -271,12 +271,12 @@ class D extends Chunk651655.Z {
         channelId: n,
         messageId: r,
         isCrossposted: i
-      } = e, a = T(e, ["channelId", "messageId", "isCrossposted"]);
+      } = e, o = T(e, ["channelId", "messageId", "isCrossposted"]);
       let s = new AbortController,
         l = this.createResponseHandler(r, t),
         c = {
           url: b.ANM.MESSAGE(n, r),
-          body: a,
+          body: o,
           retries: 1,
           oldFormErrors: true,
           signal: s.signal,
@@ -285,7 +285,7 @@ class D extends Chunk651655.Z {
             this.requests.set(r, s)
           }
         };
-      i && (c.failImmediatelyWhenRateLimited = true), o.tn.patch(c, l)
+      i && (c.failImmediatelyWhenRateLimited = true), a.tn.patch(c, l)
     }
   }
 }

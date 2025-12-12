@@ -13,60 +13,61 @@ var Chunk54381 = require("./54381.js"),
   Chunk617015 = require("./617015.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk983703 = require("./983703.js");
+  Chunk535881 = require("./535881.js");
 let g = function(e) {
   let {
     rows: t,
     renderRow: n,
     renderSection: g,
     footer: h,
-    sectionFilter: m
-  } = e, _ = e => {
+    sectionFilter: m,
+    renderSectionFooter: b
+  } = e, E = e => {
     let {
       section: r,
       row: i
     } = e, l = t[r];
     if (null == l || null == i) return null;
     let a = l[i];
-    return null == a ? null : n(a)
-  }, b = i.useCallback((e, n) => {
+    return null == a ? null : n(a, r)
+  }, _ = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
-    return m === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY ? u.fJ : u.NV
-  }, [t, m]), E = i.useCallback(e => {
+    return m === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY && 0 === e ? u.fJ : u.NV
+  }, [t, m]), O = i.useCallback(e => {
     let {
       section: t
     } = e;
     return g(t)
-  }, [g]), O = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), v = i.useRef(null), y = i.useCallback(() => new Promise(e => {
-    let t = v.current;
+  }, [g]), v = i.useCallback(e => null == b ? null : b(e.section), [b]), y = i.useCallback(e => null == b ? 0 : null != b(e) ? u.lC : 0, [b]), I = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), C = i.useRef(null), S = i.useCallback(() => new Promise(e => {
+    let t = C.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), I = i.useCallback(() => new Promise(e => {
-    let t = v.current;
+  }), []), T = i.useCallback(() => new Promise(e => {
+    let t = C.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), []), C = i.useCallback(e => {
+  }), []), N = i.useCallback(e => {
     let t = document.querySelector(e),
-      n = v.current;
+      n = C.current;
     null != t && null != n && n.scrollIntoViewNode({
       node: t,
       padding: 8,
       callback: () => null == t ? true : t.focus()
     })
-  }, []), S = (0, l.ZP)({
+  }, []), j = (0, l.ZP)({
     id: "people-list",
-    isEnabled: O,
-    scrollToStart: y,
-    scrollToEnd: I,
-    setFocus: C
-  }), T = i.useMemo(() => t.map(e => e.length), [t]);
+    isEnabled: I,
+    scrollToStart: S,
+    scrollToEnd: T,
+    setFocus: N
+  }), P = i.useMemo(() => t.map(e => e.length), [t]);
   return (0, r.jsx)(a.bG, {
-    navigator: S,
+    navigator: j,
     children: (0, r.jsx)(a.SJ, {
       children: e => {
         var {
@@ -107,13 +108,15 @@ let g = function(e) {
           }({
             ref: e => {
               var n;
-              v.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
+              C.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: _,
-            rowHeight: b,
-            renderSection: E,
+            renderRow: E,
+            rowHeight: _,
+            renderSection: O,
             sectionHeight: u.aS,
-            sections: T,
+            renderFooter: v,
+            footerHeight: y,
+            sections: P,
             className: f.peopleList
           }, n)), h]
         })

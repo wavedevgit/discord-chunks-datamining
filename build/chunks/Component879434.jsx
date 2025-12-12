@@ -1,7 +1,7 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 879434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,19 +15,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk538645 = require("./538645.jsx"),
   Chunk383036 = require("./383036.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk511130 = require("./511130.js");
-let f = e => {
+  Chunk55915 = require("./55915.js");
+let x = e => {
     let {
       setTab: t
     } = e, n = (0, o.e7)([u.Z], () => u.Z.getWindowOpen(h.KJ3.DEVTOOLS_POPOUT));
     return (0, a.jsxs)("div", {
-      className: x.content,
+      className: f.content,
       children: [(0, a.jsx)(s.P3F, {
         onClick: () => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.pfxBanner),
+          className: l()(f.banner, f.pfxBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -39,7 +39,7 @@ let f = e => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.nameplateBanner),
+          className: l()(f.banner, f.nameplateBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -51,7 +51,7 @@ let f = e => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.bundlesBanner),
+          className: l()(f.banner, f.bundlesBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -84,12 +84,12 @@ let f = e => {
       })]
     })
   },
-  g = () => {
+  b = () => {
     let [e, t] = Chunk473749.useState(0);
     return (0, Chunk54381.jsxs)(Chunk793030.zJl, {
-      className: Chunk511130.wrapper,
+      className: Chunk55915.wrapper,
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk511130.nav,
+        className: Chunk55915.nav,
         children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
           children: "Collectibles DevTools"
@@ -107,7 +107,7 @@ let f = e => {
           case 3:
             return (0, Chunk54381.jsx)(Chunk383036.Z, {});
           default:
-            return (0, Chunk54381.jsx)(f, {
+            return (0, Chunk54381.jsx)(x, {
               setTab: exports
             })
         }

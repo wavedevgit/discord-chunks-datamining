@@ -7,7 +7,7 @@ require.d(exports, {
   Z: () => m
 }), require("./704826.js"), require("./35282.js"), require("./539854.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk579806 = require("./579806.js"),
   Chunk710845 = require("./710845.js"),
   Chunk358085 = require("./358085.js"),
@@ -47,5 +47,5 @@ async function m() {
     p(module.LOCALAPPDATA), p(module["PROGRAMFILES(X86)"]), p(module.PROGRAMFILES), p(module.PROGRAMW6432), p(module.PROGRAMDATA), p("/games/"), p("/steamlibrary/steamapps/common/")
   } else(0, Chunk358085.isMac)() ? p("/Applications") : (0, Chunk358085.isLinux)() && (p("/app/bin"), p("/usr/bin"), p("/usr/local/bin"));
   let e = Chunk579806.Z.remoteApp.getPath;
-  return p(await module("home")), p(await module("appData")), p(await module("desktop")), p(await module("documents")), p(await module("downloads")), (u = o().uniq(u)).sort((e, t) => t.length - e.length), r
+  return p(await module("home")), p(await module("appData")), p(await module("desktop")), p(await module("documents")), p(await module("downloads")), (u = a().uniq(u)).sort((e, t) => t.length - e.length), r
 }

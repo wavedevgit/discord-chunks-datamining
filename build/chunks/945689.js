@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk31775 = require("./31775.js"),
   i = require.n(Chunk31775);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let a = 3;
+let o = 3;
 class s {
   reset() {
     this._subscriptions = {}
@@ -32,7 +32,7 @@ class s {
   _get(e) {
     var t;
     return null != (t = this._subscriptions[e]) ? t : new(i())({
-      max: a,
+      max: o,
       updateAgeOnGet: true
     })
   }
@@ -49,6 +49,6 @@ class s {
     return !!n.has(t) && (n.del(t), this._onChange(e, n.keys()), true)
   }
   constructor(e) {
-    o(this, "_subscriptions", {}), o(this, "_onChange", true), this._onChange = e
+    a(this, "_subscriptions", {}), a(this, "_onChange", true), this._onChange = e
   }
 }

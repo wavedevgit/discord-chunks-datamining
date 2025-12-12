@@ -3,23 +3,23 @@
 "use strict";
 require.d(exports, {
   E: () => s,
-  _: () => a
+  _: () => o
 }), require("./314940.js");
 var Chunk278074 = require("./278074.js"),
   Chunk263568 = require("./263568.js"),
-  Chunk807554 = require("./807554.js");
+  Chunk549598 = require("./549598.js");
 
-function a(e, t) {
-  let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => o.normalStylesImageOnlyAnswers).otherwise(() => o.normalStylesDefault);
+function o(e, t) {
+  let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => a.normalStylesImageOnlyAnswers).otherwise(() => a.normalStylesDefault);
   return {
     styles: {
       loserSelected: n,
       normal: n,
       notVoted: n,
       selected: n,
-      voted: o.votedStyles,
-      victorSelected: o.victorStyles,
-      victorNotSelected: o.victorStyles,
+      voted: a.votedStyles,
+      victorSelected: a.victorStyles,
+      victorNotSelected: a.victorStyles,
       normalVote: n
     }
   }

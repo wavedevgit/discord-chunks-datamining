@@ -26,19 +26,19 @@ function _() {
       children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t["7x9dyE"]),
         value: _.all,
-        onChange: e => a.vB.updateControlledSetting(t, e ? f.HGf : f.HGf & ~f.SOq.NO_RELATION)
+        onChange: e => o.vB.updateControlledSetting(t, e ? f.HGf : f.HGf & ~f.SOq.NO_RELATION)
       })
     }), (0, Chunk54381.jsx)(Chunk838436.U, {
       children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.NfeuZ3),
         value: _.all || _.mutualFriends,
-        onChange: e => a.vB.updateControlledSetting(t, e ? o.pj(n, f.SOq.MUTUAL_FRIENDS) : o.M1(n, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION))
+        onChange: e => o.vB.updateControlledSetting(t, e ? a.pj(n, f.SOq.MUTUAL_FRIENDS) : a.M1(n, f.SOq.MUTUAL_FRIENDS, f.SOq.NO_RELATION))
       })
     }), (0, Chunk54381.jsx)(Chunk838436.U, {
       children: (0, Chunk54381.jsx)(Chunk51331.ZP, {
         title: Chunk388032.intl.string(Chunk388032.t.qsMfsH),
         value: _.all || _.mutualGuilds,
-        onChange: e => a.vB.updateControlledSetting(t, e ? o.pj(n, f.SOq.MUTUAL_GUILDS) : o.M1(n, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION))
+        onChange: e => o.vB.updateControlledSetting(t, e ? a.pj(n, f.SOq.MUTUAL_GUILDS) : a.M1(n, f.SOq.MUTUAL_GUILDS, f.SOq.NO_RELATION))
       })
     })]
   })

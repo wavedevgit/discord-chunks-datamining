@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk28664 = require("./28664.jsx"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk5192 = require("./5192.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk120230 = require("./120230.js");
+  Chunk826529 = require("./826529.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,8 +63,8 @@ function O(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function O(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -81,12 +81,12 @@ function S() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk481060.EFr.SIZE_24;
   switch (module) {
     case Chunk481060.EFr.SIZE_16:
-      return Chunk120230.size16;
+      return Chunk826529.size16;
     case Chunk481060.EFr.SIZE_20:
-      return Chunk120230.size20;
+      return Chunk826529.size20;
     case Chunk481060.EFr.SIZE_24:
     default:
-      return Chunk120230.size24
+      return Chunk826529.size24
   }
 }
 
@@ -107,15 +107,15 @@ function T(e) {
     users: t,
     maxUsers: n,
     guildId: i,
-    channelId: o,
+    channelId: a,
     size: s = u.EFr.SIZE_24,
     shouldShowOverflowCount: d,
     disableUsernameTooltip: f
   } = e, m = S(s), g = d ? n - 1 : Math.min(t.length, n), E = g - 1, b = l()(t).take(g).map((e, t) => {
-    let n = p.ZP.getNickname(i, o, e),
+    let n = p.ZP.getNickname(i, a, e),
       l = null != n ? n : _.ZP.getName(e),
       g = t === E && !d,
-      b = a()(h.avatar, m, g && h.isLast),
+      b = o()(h.avatar, m, g && h.isLast),
       y = (0, r.jsx)(u.qEK, {
         src: e.getAvatarURL(i, 24),
         size: s,
@@ -149,13 +149,13 @@ function C(e) {
     count: t,
     textVariant: n,
     color: i = "interactive-text-default",
-    size: o = u.EFr.SIZE_24,
+    size: a = u.EFr.SIZE_24,
     className: s
-  } = e, l = S(o), c = null != n ? n : I(o);
+  } = e, l = S(a), c = null != n ? n : I(a);
   return (0, r.jsxs)(u.Text, {
     variant: c,
     color: i,
-    className: a()(h.overflow, l, s),
+    className: o()(h.overflow, l, s),
     children: [(0, r.jsx)(u.nn4, {
       children: m.intl.formatToPlainString(m.t.RGr9tj, {
         count: t
@@ -172,8 +172,8 @@ function A(e) {
     users: t,
     maxUsers: n,
     guildId: i,
-    channelId: o,
-    size: a = u.EFr.SIZE_24,
+    channelId: a,
+    size: o = u.EFr.SIZE_24,
     overflowCountClassName: s,
     overflowCountColor: l = "interactive-text-default",
     hideOverflowCount: c = false
@@ -183,14 +183,14 @@ function A(e) {
       users: t,
       maxUsers: n,
       guildId: i,
-      channelId: o,
-      size: a,
+      channelId: a,
+      size: o,
       shouldShowOverflowCount: p,
       disableUsernameTooltip: true
     }), p && (0, r.jsx)(C, {
       count: f,
       color: l,
-      size: a,
+      size: o,
       className: s
     })]
   })
@@ -201,14 +201,14 @@ function N(e) {
     className: t,
     "aria-label": n,
     "aria-labelledby": i,
-    "aria-hidden": o
+    "aria-hidden": a
   } = e, s = O(e, ["className", "aria-label", "aria-labelledby", "aria-hidden"]);
   return (0, r.jsx)("div", {
     role: "group",
-    className: a()(t, h.avatars),
+    className: o()(t, h.avatars),
     "aria-label": n,
     "aria-labelledby": i,
-    "aria-hidden": o,
+    "aria-hidden": a,
     children: (0, r.jsx)(A, E({}, s))
   })
 }
@@ -216,7 +216,7 @@ function N(e) {
 function P(e) {
   let {
     users: t,
-    maxUsers: o,
+    maxUsers: a,
     guildId: s,
     channelId: l,
     className: c,
@@ -234,7 +234,7 @@ function P(e) {
     "aria-label": w,
     "aria-labelledby": D,
     "aria-hidden": x
-  } = e, [L, j] = i.useState(false), M = i.useRef(null), k = t.length - o, U = k + 1, G = k > 0 && !v && !x, Z = () => (0, r.jsx)(u.VqE, {
+  } = e, [L, j] = i.useState(false), M = i.useRef(null), k = t.length - a, U = k + 1, G = k > 0 && !v && !x, Z = () => (0, r.jsx)(u.VqE, {
     className: h.popoutWrapper,
     "aria-label": w,
     "aria-labelledby": D,
@@ -253,7 +253,7 @@ function P(e) {
         onContextMenu: t => (0, d.jW)(t, async () => {
           let {
             default: t
-          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
+          } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
           return n => (0, r.jsx)(t, y(E({}, n), {
             user: e,
             guildId: s,
@@ -293,11 +293,11 @@ function P(e) {
     role: "group",
     "aria-label": w,
     "aria-labelledby": D,
-    className: a()(c, h.avatars),
+    className: o()(c, h.avatars),
     "aria-hidden": x,
     children: [(0, r.jsx)(T, {
       users: t,
-      maxUsers: o,
+      maxUsers: a,
       guildId: s,
       channelId: l,
       size: _,

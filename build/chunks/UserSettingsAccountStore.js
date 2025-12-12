@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 25990, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, o, a, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O;
+let r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E, b, y, O;
 require.d(exports, {
   Z: () => ec
 });
@@ -71,7 +71,7 @@ function U(e) {
   let {
     item: t
   } = e;
-  t.type === S.Z.AVATAR_DECORATION ? o = t.value : t.type === S.Z.PROFILE_EFFECT ? a = t.value : t.type === S.Z.NAMEPLATE && (s = t.value)
+  t.type === S.Z.AVATAR_DECORATION ? a = t.value : t.type === S.Z.PROFILE_EFFECT ? o = t.value : t.type === S.Z.NAMEPLATE && (s = t.value)
 }
 
 function G(e) {
@@ -184,26 +184,26 @@ function ee() {
 }
 
 function et() {
-  en(), er(), eo(), ea(), P = {}
+  en(), er(), ea(), eo(), P = {}
 }
 
 function en() {
-  r = true, i = true, o = true, a = true, s = true, m = true
+  r = true, i = true, a = true, o = true, s = true, m = true
 }
 
 function er() {
-  l = true, c = true, u = true, d = true, f = true, a = true
+  l = true, c = true, u = true, d = true, f = true, o = true
 }
 
 function ei() {
   g = true, E = true, b = true, y = true, h = true, O = true
 }
 
-function eo() {
+function ea() {
   p = true
 }
 
-function ea() {
+function eo() {
   _ = true
 }
 
@@ -218,7 +218,7 @@ class el extends(v = Chunk442837.ZP.Store) {
     return P
   }
   showNotice() {
-    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== o || true !== a || true !== i || true !== s || true !== p || true !== _ || true !== m
+    return true !== r || true !== l || true !== c || true !== u || true !== d || true !== f || true !== a || true !== o || true !== i || true !== s || true !== p || true !== _ || true !== m
   }
   getIsSubmitDisabled() {
     return true !== c && c.length > Chunk981631.tPV
@@ -245,13 +245,13 @@ class el extends(v = Chunk442837.ZP.Store) {
     return f
   }
   getPendingAvatarDecoration() {
-    return o
+    return a
   }
   getPendingNameplate() {
     return s
   }
   getPendingProfileEffect() {
-    return a
+    return o
   }
   getPendingDisplayNameStyles() {
     return m
@@ -264,8 +264,8 @@ class el extends(v = Chunk442837.ZP.Store) {
       pendingPronouns: u,
       pendingAccentColor: d,
       pendingThemeColors: f,
-      pendingAvatarDecoration: o,
-      pendingProfileEffect: a,
+      pendingAvatarDecoration: a,
+      pendingProfileEffect: o,
       pendingGlobalName: i,
       pendingNameplate: s,
       pendingLegacyUsernameDisabled: p,
@@ -335,7 +335,7 @@ let ec = new el(Chunk570140.Z, {
   USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: er,
   USER_SETTINGS_RESET_ALL_PENDING: et,
   USER_SETTINGS_RESET_ALL_TRY_IT_OUT: ei,
-  USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED: eo,
-  USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: ea,
+  USER_SETTINGS_ACCOUNT_RESET_PENDING_LEGACY_USERNAME_DISABLED: ea,
+  USER_SETTINGS_RESET_PENDING_PRIMARY_GUILD_CHANGES: eo,
   LOGOUT: $
 })

@@ -87,10 +87,10 @@ function m(e) {
 
 function h(e) {
   var t, n;
-  let o = 0;
-  (0, r.yE)(null != (t = e.flags) ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (o |= 1);
   let a = 0;
-  return (0, r.yE)(null != (n = e.flags) ? n : 0, s.J0y.IS_ANIMATED) && (a |= 1), {
+  (0, r.yE)(null != (t = e.flags) ? t : 0, s.J0y.CONTAINS_EXPLICIT_MEDIA) && (a |= 1);
+  let o = 0;
+  return (0, r.yE)(null != (n = e.flags) ? n : 0, s.J0y.IS_ANIMATED) && (o |= 1), {
     url: e.url,
     proxyUrl: e.proxy_url,
     height: e.height,
@@ -102,18 +102,18 @@ function h(e) {
     loadingState: i.f.LOADED_SUCCESS,
     contentScanMetadata: null == e.content_scan_version ? true : {
       version: e.content_scan_version,
-      flags: o
+      flags: a
     },
-    flags: a
+    flags: o
   }
 }
 
 function g(e) {
-  return (0, o.tw)(e.contentType) ? "IMAGE" : (0, o.X2)(e.contentType) && null != e.proxyUrl && null != a.Z.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
+  return (0, a.tw)(e.contentType) ? "IMAGE" : (0, a.X2)(e.contentType) && null != e.proxyUrl && null != o.Z.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
 }
 
 function E(e) {
-  return (0, o.CO)(e.filename) ? "IMAGE" : (0, o.NU)(e.filename) ? "VIDEO" : "INVALID"
+  return (0, a.CO)(e.filename) ? "IMAGE" : (0, a.NU)(e.filename) ? "VIDEO" : "INVALID"
 }
 
 function b(e, t) {

@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
   getLanguages: () => Chunk424395.Vb,
   getSystemLocale: () => m,
   initialLocale: () => g,
-  international: () => Chunk834291.Z,
+  international: () => Chunk589531.Z,
   intl: () => E,
   systemLocale: () => h,
   t: () => Chunk253185.k,
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   s = require.n(Chunk159635),
   Chunk253185 = require("./253185.js"),
   Chunk424395 = require("./424395.js"),
-  Chunk834291 = require("./834291.js");
+  Chunk589531 = require("./589531.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,23 +86,23 @@ let h = m("en-US"),
         children: e
       }, t),
       $link: (e, t, r) => {
-        let [o] = r, {
-          Anchor: a
+        let [a] = r, {
+          Anchor: o
         } = n(756715), l = {};
-        switch (typeof o) {
+        switch (typeof a) {
           case "string":
-            l.href = s().sanitizeUrl(o);
+            l.href = s().sanitizeUrl(a);
             break;
           case "function":
           default:
-            l.onClick = o;
+            l.onClick = a;
             break;
           case "object":
             var c;
-            if (null == o) break;
-            l.onClick = null != (c = o.onClick) ? c : o, l.onContextMenu = o.onContextMenu
+            if (null == a) break;
+            l.onClick = null != (c = a.onClick) ? c : a, l.onContextMenu = a.onContextMenu
         }
-        return (0, i.createElement)(a, _(f({}, l), {
+        return (0, i.createElement)(o, _(f({}, l), {
           key: t
         }), e)
       }

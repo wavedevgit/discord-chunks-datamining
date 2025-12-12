@@ -23,6 +23,6 @@ let l = () => [{
     useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.dyamEI), Chunk388032.intl.string(Chunk388032.t.p8NOwi), Chunk388032.intl.string(Chunk388032.t["+o/sOo"])],
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.dyamEI),
     useValue: () => Chunk695346.hg.useSetting(),
-    setValue: e => o.hg.updateSetting(e),
+    setValue: e => a.hg.updateSetting(e),
     useOptions: l
   })

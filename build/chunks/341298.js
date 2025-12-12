@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
   Chunk558921 = require("./558921.js");
-let a = 3e3,
+let o = 3e3,
   s = 36e5;
 
 function l() {
@@ -20,7 +20,7 @@ function l() {
 }
 
 function c(e) {
-  return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === o.g && l()
+  return e.isDM() && 1 === e.rawRecipients.length && e.rawRecipients[0].id === a.g && l()
 }
 
 function u(e) {
@@ -28,13 +28,13 @@ function u(e) {
     if (i.Z.getGuildId() === e) return void t();
     let r = setTimeout(() => {
         s(), n()
-      }, a),
-      o = () => {
+      }, o),
+      a = () => {
         i.Z.getGuildId() === e && (s(), t())
       },
       s = () => {
-        i.Z.removeChangeListener(o), clearTimeout(r)
+        i.Z.removeChangeListener(a), clearTimeout(r)
       };
-    i.Z.addChangeListener(o)
+    i.Z.addChangeListener(a)
   })
 }

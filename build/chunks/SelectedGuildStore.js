@@ -76,10 +76,10 @@ function C() {
 }
 class A extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    var t, n, r, o;
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.Z, f.Z, s.Z), E = null != (n = null == e ? true : e.selectedGuildTimestampMillis) ? n : {}, h = null != (r = null == e ? true : e.selectedGuildId) ? r : null, g = null != (o = null == e ? true : e.lastSelectedGuildId) ? o : null;
-    let a = d.Z.lastNonVoiceRoute,
-      c = (0, i.LX)(a, {
+    var t, n, r, a;
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.Z, f.Z, s.Z), E = null != (n = null == e ? true : e.selectedGuildTimestampMillis) ? n : {}, h = null != (r = null == e ? true : e.selectedGuildId) ? r : null, g = null != (a = null == e ? true : e.lastSelectedGuildId) ? a : null;
+    let o = d.Z.lastNonVoiceRoute,
+      c = (0, i.LX)(o, {
         path: p.Z5c.CHANNEL(l.Hw.guildId())
       });
     null == c || null == (t = c.params) || t.guildId

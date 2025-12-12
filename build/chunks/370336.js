@@ -2,12 +2,12 @@
 /** chunk id: 370336, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Sh: () => a
+  Sh: () => o
 });
 var Chunk467510 = require("./467510.js"),
   Chunk573736 = require("./573736.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   try {
     Object.defineProperty(e, t, {
       value: n,
@@ -19,7 +19,7 @@ function o(e, t, n) {
   }
 }
 
-function a(e) {
+function o(e) {
   if ((0, i.VZ)(e)) return {
     message: e.message,
     name: e.name,

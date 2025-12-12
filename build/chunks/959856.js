@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk264344 = require("./264344.js"),
-  a = require.n(Chunk264344),
+  o = require.n(Chunk264344),
   Chunk47770 = require("./47770.js"),
   Chunk174498 = require("./174498.js"),
   c = require.n(Chunk174498),
@@ -19,7 +19,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk68721 = require("./68721.js"),
   Chunk997653 = require("./997653.js"),
   Chunk740197 = require("./740197.js"),
-  Chunk548820 = require("./548820.js"),
+  Chunk340217 = require("./340217.js"),
   Chunk586021 = require("./586021.js"),
   Chunk579237 = require("./579237.js"),
   Chunk867985 = require("./867985.js"),
@@ -46,7 +46,7 @@ class N extends Chunk47770.Z {
     this.interacted || (document.createElement("audio").play(), this.interacted = true), this.eachConnection(e => e.interact())
   }
   static supported() {
-    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (A.info("WebRTC is not supported on", a().name, a().version), false))
+    return !__OVERLAY__ && (Chunk436620.fi && null != window.AudioContext && null != window.RTCPeerConnection ? (require("./266370.js"), true) : (A.info("WebRTC is not supported on", o().name, o().version), false))
   }
   supported() {
     returntrue
@@ -63,7 +63,7 @@ class N extends Chunk47770.Z {
         var t;
         return (null == (t = navigator.mediaDevices) ? true : t.getDisplayMedia) != null;
       case I.AN.VOICE_PROCESSING:
-        return "Chrome" === a().name;
+        return "Chrome" === o().name;
       case I.AN.NATIVE_PING:
       case I.AN.DIAGNOSTICS:
         return T.Fo;
@@ -71,7 +71,7 @@ class N extends Chunk47770.Z {
       case I.AN.LOOPBACK:
       case I.AN.NOISE_SUPPRESSION:
       case I.AN.AUTOMATIC_GAIN_CONTROL:
-        return "Safari" !== a().name;
+        return "Safari" !== o().name;
       case I.AN.NOISE_CANCELLATION:
         return c()();
       case I.AN.QOS:
@@ -102,8 +102,8 @@ class N extends Chunk47770.Z {
     let {
       ssrc: r,
       address: i,
-      port: o,
-      modes: a,
+      port: a,
+      modes: o,
       streamUserId: s,
       streamParameters: l
     } = n, c = {
@@ -131,12 +131,12 @@ class N extends Chunk47770.Z {
   }
   async _enable() {
     if (this.enabled) return;
-    await this.getAudioContext().audioWorklet.addModule(Chunk548820);
+    await this.getAudioContext().audioWorklet.addModule(Chunk340217);
     let e = new Chunk68721.Z(this.getAudioContext());
     module.on("permission", this.handleAudioPermission);
     try {
       var t;
-      await module.enable(), "Firefox" === a().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), Chunk65154.Yn.DEFAULT), null == (t = this.voiceActivityInput) || exports.enable()
+      await module.enable(), "Firefox" === o().name && await this.handleDeviceChange(), this.enabled = true, this.eachConnection(e => e.input.enableAudioInput(), Chunk65154.Yn.DEFAULT), null == (t = this.voiceActivityInput) || exports.enable()
     } finally {
       module.destroy()
     }

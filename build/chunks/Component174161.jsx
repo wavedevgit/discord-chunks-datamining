@@ -18,19 +18,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk709054 = require("./709054.js"),
   Chunk997431 = require("./997431.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk212229 = require("./212229.js");
+  Chunk80253 = require("./80253.js");
 
 function E(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, l = t.id, u = (0, o.e7)([f.ZP, d.default], () => {
+  } = e, l = t.id, u = (0, a.e7)([f.ZP, d.default], () => {
     var e;
     return (null == (e = f.ZP.getMember(l, d.default.getId())) ? true : e.joinedAt) != null
   }, [l]), p = i.useCallback(e => {
     u && (e.stopPropagation(), (0, c.X)(t.id))
   }, [u, t.id]);
-  return !u || n ? (0, r.jsx)(a.u, {
+  return !u || n ? (0, r.jsx)(o.u, {
     text: t.name,
     overflowOnly: true,
     children: (0, r.jsx)(s.Heading, {
@@ -42,7 +42,7 @@ function E(e) {
   }) : (0, r.jsx)(s.P3F, {
     className: g.guildNameContainer,
     onClick: p,
-    children: (0, r.jsx)(a.u, {
+    children: (0, r.jsx)(o.u, {
       text: t.name,
       overflowOnly: true,
       children: (0, r.jsx)(s.Heading, {
@@ -59,7 +59,7 @@ function b(e) {
   let {
     profile: t,
     disableGuildNameClick: n
-  } = e, a = (0, o.e7)([u.default], () => u.default.locale), c = (0, m.M)(_.default.extractTimestamp(t.id), a), d = i.useMemo(() => {
+  } = e, o = (0, a.e7)([u.default], () => u.default.locale), c = (0, m.M)(_.default.extractTimestamp(t.id), o), d = i.useMemo(() => {
     let e = (0, p.$5)(t);
     return (0, r.jsx)(l.Z, {
       guild: e,

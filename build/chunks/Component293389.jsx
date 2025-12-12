@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk668339 = require("./668339.jsx"),
@@ -30,10 +30,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740508 = require("./740508.js"),
-  Chunk315091 = require("./315091.js"),
-  Chunk149715 = require("./149715.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk675433 = require("./675433.js"),
+  Chunk533348 = require("./533348.js"),
+  Chunk727829 = require("./727829.js"),
+  Chunk478411 = require("./478411.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,14 +83,14 @@ let k = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
 function F(e) {
   let {
     onClose: t
-  } = e, n = (0, s.e7)([_.ZP], () => _.ZP.getCandidateGames()), [o, l] = i.useState(null);
+  } = e, n = (0, s.e7)([_.ZP], () => _.ZP.getCandidateGames()), [a, l] = i.useState(null);
 
   function f(e) {
     l(e)
   }
 
   function p() {
-    null != o && (d.Z.addGame(o.pid, o.name), t())
+    null != a && (d.Z.addGame(a.pid, a.name), t())
   }
   let m = n.map(e => ({
     key: e.pid,
@@ -98,11 +98,11 @@ function F(e) {
     label: null != e.name ? e.name : ""
   }));
   return (0, r.jsxs)(u.VqE, {
-    className: a()(P.addGamePopout, R.elevationBorderHigh),
+    className: o()(P.addGamePopout, R.elevationBorderHigh),
     "aria-label": N.intl.string(N.t.GTCx0p),
     children: [(0, r.jsx)(c.d, {
       placeholder: N.intl.string(N.t.XqMe3N),
-      value: o,
+      value: a,
       options: m,
       onChange: f,
       renderOptionLabel: e => (0, r.jsx)(u.Text, {
@@ -112,9 +112,9 @@ function F(e) {
         children: e.label
       })
     }), (0, r.jsx)(u.izJ, {
-      className: a()(D.marginTop8, D.marginBottom8)
+      className: o()(D.marginTop8, D.marginBottom8)
     }), (0, r.jsxs)("div", {
-      className: a()(P.actions, w.horizontal),
+      className: o()(P.actions, w.horizontal),
       children: [(0, r.jsx)(u.Avr, {
         variant: "secondary",
         text: N.intl.string(N.t["ETE/oC"]),
@@ -122,7 +122,7 @@ function F(e) {
       }), (0, r.jsx)(u.Button, {
         variant: "primary",
         text: N.intl.string(N.t.GTCx0p),
-        disabled: null == o,
+        disabled: null == a,
         onClick: p
       })]
     })]
@@ -132,7 +132,7 @@ function F(e) {
 function B(e) {
   let {
     rawGame: t,
-    nowPlaying: o = false,
+    nowPlaying: a = false,
     isOverride: c,
     subgames: m,
     isSubgame: g = false,
@@ -145,10 +145,10 @@ function B(e) {
     isCurrentGameDetectionEnabled: _.ZP.isDetectionEnabled(S)
   })), R = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [D, x] = i.useState(false), j = i.useMemo(() => (0, E.le)(S) ? g ? S.gameName : N.intl.formatToPlainString(N.t.G6BGdx, {
     subgameName: S.gameName
-  }) : S.name, [S, g]), [k, Z] = i.useState(null != j ? j : "???"), F = a()(w.flexCenter, {
-    [P.game]: !o,
-    [P.activeGame]: o,
-    [P.nowPlaying]: null != S && o,
+  }) : S.name, [S, g]), [k, Z] = i.useState(null != j ? j : "???"), F = o()(w.flexCenter, {
+    [P.game]: !a,
+    [P.activeGame]: a,
+    [P.nowPlaying]: null != S && a,
     [P.subgame]: g,
     [P.gameHasSubgame]: null != m && m.length > 0
   });
@@ -207,13 +207,13 @@ function B(e) {
     }), x(true), (0, u.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("82077"), n.e("87087")]).then(n.bind(n, 953848));
+      } = await Promise.all([n.e("82077"), n.e("30709")]).then(n.bind(n, 953848));
       return n => {
-        var i, o, a;
+        var i, a, o;
         return (0, r.jsx)(t, M(L({}, n), {
           detectedActivity: {
             name: null != (i = S.name) ? i : "",
-            application_id: null != (a = null != (o = null == e ? true : e.id) ? o : S.id) ? a : true,
+            application_id: null != (o = null != (a = null == e ? true : e.id) ? a : S.id) ? o : true,
             type: C.IIU.PLAYING
           },
           onSubmitted: () => {}
@@ -245,7 +245,7 @@ function B(e) {
         }))
       })]
     }) : (0, r.jsx)("input", {
-      className: a()(P.gameName, P.gameNameInput),
+      className: o()(P.gameName, P.gameNameInput),
       type: "text",
       maxLength: 128,
       value: k,
@@ -260,7 +260,7 @@ function B(e) {
       played: t,
       exePath: n
     } = S;
-    return o || et ? e = N.intl.string(N.t.VbV5dv) : null != t && "" !== t && (e = N.intl.format(N.t["gGeOE+"], {
+    return a || et ? e = N.intl.string(N.t.VbV5dv) : null != t && "" !== t && (e = N.intl.format(N.t["gGeOE+"], {
       when: t
     })), (0, r.jsx)("div", {
       className: P.lastPlayed,
@@ -294,7 +294,7 @@ function B(e) {
       }, e))
     }) : null;
     return (0, r.jsxs)("div", {
-      className: a()(w.flexCenter, w.noWrap, w.justifyBetween, P.toggleContainer),
+      className: o()(w.flexCenter, w.noWrap, w.justifyBetween, P.toggleContainer),
       children: [i, (0, r.jsx)(u.aML, {
         "data-migration-pending": true,
         text: N.intl.string(N.t["1+O+Tu"]),
@@ -323,7 +323,7 @@ function B(e) {
       colorClass: P.fill
     });
     return (0, r.jsx)("div", {
-      className: a()(w.flexCenter, w.noWrap, w.justifyBetween, P.toggleContainer),
+      className: o()(w.flexCenter, w.noWrap, w.justifyBetween, P.toggleContainer),
       children: (0, r.jsx)(u.aML, {
         "data-migration-pending": true,
         text: N.intl.string(N.t.QmitzM),
@@ -339,7 +339,7 @@ function B(e) {
 
   function $() {
     return D ? null : (0, r.jsx)("div", {
-      className: a()(w.flexCenter, w.noWrap, w.justifyBetween, P.toggleContainer),
+      className: o()(w.flexCenter, w.noWrap, w.justifyBetween, P.toggleContainer),
       children: (0, r.jsx)(u.aML, {
         "data-migration-pending": true,
         text: N.intl.string(N.t["y0B+lo"]),
@@ -370,10 +370,10 @@ function B(e) {
     children: [(0, r.jsxs)("div", {
       className: F,
       children: [(0, r.jsxs)("div", {
-        className: a()(P.gameNameLastPlayed, w.vertical),
+        className: o()(P.gameNameLastPlayed, w.vertical),
         children: [q(), Q()]
-      }), c ? null : $(), J(), X(), o && !c || en ? null : ee()]
-    }), null != m && m.length > 0 && !o && (0, r.jsx)("div", {
+      }), c ? null : $(), J(), X(), a && !c || en ? null : ee()]
+    }), null != m && m.length > 0 && !a && (0, r.jsx)("div", {
       className: P.subgameContainer,
       children: m.map((e, t) => (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(B, {
@@ -391,14 +391,14 @@ function B(e) {
 
 function V() {
   return (0, Chunk54381.jsx)("div", {
-    className: a()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
+    className: o()(Chunk727829.flexCenter, Chunk675433.notDetected, Chunk675433.activeGame),
     children: (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
+      className: o()(Chunk675433.gameNameLastPlayed, Chunk727829.vertical),
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk740508.gameName,
+        className: Chunk675433.gameName,
         children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk740508.lastPlayed,
+        className: Chunk675433.lastPlayed,
         children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
       })]
     })
@@ -427,7 +427,7 @@ let Y = (0, Chunk251625.oH)(function() {
     let {
       className: t,
       showHeader: n = true
-    } = e, o = (0, s.Wu)([_.ZP], () => _.ZP.getGamesSeen(false)), {
+    } = e, a = (0, s.Wu)([_.ZP], () => _.ZP.getGamesSeen(false)), {
       runningGame: l,
       overrideExePaths: c
     } = (0, s.cj)([_.ZP], () => ({
@@ -436,10 +436,10 @@ let Y = (0, Chunk251625.oH)(function() {
     })), {
       gameHistory: d,
       robloxSubgameHistory: f
-    } = i.useMemo(() => o.reduce((e, t) => ((0, E.le)(t) ? e.robloxSubgameHistory.push(t) : e.gameHistory.push(t), e), {
+    } = i.useMemo(() => a.reduce((e, t) => ((0, E.le)(t) ? e.robloxSubgameHistory.push(t) : e.gameHistory.push(t), e), {
       gameHistory: [],
       robloxSubgameHistory: []
-    }), [o]), p = i.useRef(null);
+    }), [a]), p = i.useRef(null);
 
     function h() {
       return 0 === d.length ? (0, r.jsx)(H, {
@@ -468,7 +468,7 @@ let Y = (0, Chunk251625.oH)(function() {
         nowPlaying: true,
         subgames: l.id === g.eB ? f : true
       }, (0, _.rH)(l)) : (0, r.jsx)(V, {}), (0, r.jsxs)("div", {
-        className: a()(P.nowPlayingAdd, D.marginReset, D.marginTop8, D.marginBottom20),
+        className: o()(P.nowPlayingAdd, D.marginReset, D.marginTop8, D.marginBottom20),
         children: [(0, r.jsx)("span", {
           children: N.intl.string(N.t.xwhoqM)
         }), (0, r.jsx)(u.yRy, {

@@ -79,8 +79,8 @@ function k(e, t) {
   if (null == e) return {};
   var n, r, i = U(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -88,8 +88,8 @@ function k(e, t) {
 function U(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let G = new Chunk710845.Z("ConnectionStore"),
@@ -101,11 +101,11 @@ let G = new Chunk710845.Z("ConnectionStore"),
     };
     let r = (0, b.q_)(t),
       i = v.Z.getChannel(t.id),
-      o = null == i ? true : i.merge(M(L({}, r), {
+      a = null == i ? true : i.merge(M(L({}, r), {
         recipients: i.recipients,
         bitrate: null != (n = r.bitrate) ? n : i.bitrate
       }));
-    return e.channels.push(null != o ? o : r), e
+    return e.channels.push(null != a ? a : r), e
   }, e => "CHANNEL_UPDATE" !== e),
   F = new Chunk483012.Z(Chunk955132.Wb, (e, t) => ((e = null == e ? {
     type: "SOUNDBOARD_SOUNDS_RECEIVED",
@@ -179,14 +179,14 @@ function z(e) {
 }
 
 function q(e) {
-  a.Z.dispatch(e).catch(t => D.Wb.resetSocketOnDispatchError({
+  o.Z.dispatch(e).catch(t => D.Wb.resetSocketOnDispatchError({
     error: t,
     action: e.type
   }))
 }
 
 function Q(e, t, n) {
-  var r, o, a, s;
+  var r, a, o, s;
   let {
     roles: l,
     nick: c,
@@ -201,7 +201,7 @@ function Q(e, t, n) {
     collectibles: y,
     display_name_styles: O
   } = n, v = S.ZP.getMember(e, t.id), I = (0, f.bN)(O);
-  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != p ? p : null) && v.premiumSince === m && v.isPending === h && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === _ && (null != (o = v.unusualDMActivityUntil) ? o : null) === (null != b ? b : null) && i().isEqual(null != (a = v.collectibles) ? a : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != I ? I : null) || q({
+  null != v && v.nick === c && v.avatar === d && i().isEqual(v.roles, l) && (0, u.sr)(null != (r = v.avatarDecoration) ? r : null, null != p ? p : null) && v.premiumSince === m && v.isPending === h && v.joinedAt === g && v.communicationDisabledUntil === E && v.flags === _ && (null != (a = v.unusualDMActivityUntil) ? a : null) === (null != b ? b : null) && i().isEqual(null != (o = v.collectibles) ? o : null, null != y ? y : null) && i().isEqual(null != (s = v.displayNameStyles) ? s : null, null != I ? I : null) || q({
     type: "GUILD_MEMBER_ADD",
     guildId: e,
     user: t,
@@ -258,23 +258,23 @@ function $(e) {
     user: n,
     status: r,
     activities: i,
-    hiddenActivities: o,
-    clientStatus: a,
+    hiddenActivities: a,
+    clientStatus: o,
     processedAtTimestamp: s
   } = e;
   V.add({
     guildId: t,
     user: n,
     status: r,
-    clientStatus: a,
+    clientStatus: o,
     activities: i,
-    hiddenActivities: o,
+    hiddenActivities: a,
     processedAtTimestamp: s
   })
 }
 W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id]), e => {
   g.Z.initialGuild.measure(() => {
-    o.ZP.Emitter.batched(() => {
+    a.ZP.Emitter.batched(() => {
       let t = R.Fx(e, D.Wb.identifyStartTime);
       null != T.default.getCurrentUser() && (q({
         type: "GUILD_CREATE",
@@ -304,7 +304,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   })
 }), Y(["READY_SUPPLEMENTAL"], e => {
   g.Z.readySupplemental.measure(() => {
-    o.ZP.Emitter.batched(() => {
+    a.ZP.Emitter.batched(() => {
       var t;
       e = g.Z.hydrateReadySupplemental.measure(() => R.r$(e, D.Wb.identifyStartTime));
       let n = e => e.map(e => ({
@@ -320,22 +320,22 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         e.presences = n(e.presences || [])
       });
       let i = e.presences ? n(e.presences) : [],
-        o = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, b.q_)(e));
+        a = (null != (t = e.lazy_private_channels) ? t : []).map(e => (0, b.q_)(e));
       g.Z.dispatchReadySupplemental.measure(() => {
         var t;
         q({
           type: "CONNECTION_OPEN_SUPPLEMENTAL",
           guilds: r,
           presences: i,
-          lazyPrivateChannels: o,
+          lazyPrivateChannels: a,
           userActivities: null != (t = e.user_activities) ? t : true
         })
       });
-      let a = [];
+      let o = [];
       r.forEach(e => {
         e.voice_states.forEach(t => {
           var n, r;
-          a.push({
+          o.push({
             userId: t.user_id,
             guildId: e.id,
             sessionId: t.session_id,
@@ -353,7 +353,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         })
       }), q({
         type: "VOICE_STATE_UPDATES",
-        voiceStates: a,
+        voiceStates: o,
         initial: true
       }), D.GC.update()
     })
@@ -376,15 +376,15 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     type: "LOGOUT"
   });
   g.Z.ready.measure(() => {
-    o.ZP.Emitter.batched(() => {
+    a.ZP.Emitter.batched(() => {
       let t = (e = g.Z.hydrateReady.measure(() => R.IM(e, D.Wb.identifyStartTime, n))).private_channels.map(e => (0, b.q_)(e)),
         r = e.guilds.filter(e => true === e.unavailable && true !== e.geo_restricted).map(e => e.id),
         i = e.guilds.filter(e => true !== e.unavailable),
-        o = e.guilds.filter(e => true === e.geo_restricted);
+        a = e.guilds.filter(e => true === e.geo_restricted);
       i.forEach(e => {
         e.presences = []
       });
-      let a = null == e.user_settings_proto ? true : (0, E.ac)(e.user_settings_proto);
+      let o = null == e.user_settings_proto ? true : (0, E.ac)(e.user_settings_proto);
       g.Z.dispatchReady.measure(() => {
         var n, s, l;
         q({
@@ -415,13 +415,13 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
           pendingPayments: e.pending_payments,
           countryCode: null != (s = e.country_code) ? s : true,
           guildJoinRequests: e.guild_join_requests || [],
-          userSettingsProto: a,
+          userSettingsProto: o,
           apiCodeVersion: e.api_code_version,
           auth: e.auth,
           notificationSettings: {
             flags: e.notification_settings.flags
           },
-          geoRestrictedGuilds: o,
+          geoRestrictedGuilds: a,
           explicitContentScanVersion: e.explicit_content_scan_version,
           failedStates: e.failed_states,
           linkedUsers: null != (l = e.linked_users) ? l : true
@@ -710,7 +710,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     guildId: e.id
   })
 }), Y(["GUILD_MEMBERS_CHUNK"], e => {
-  o.ZP.Emitter.batched(() => {
+  a.ZP.Emitter.batched(() => {
     B.add({
       guildId: e.guild_id,
       members: e.members,
@@ -720,23 +720,23 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         user: n,
         status: r,
         client_status: i,
-        activities: o,
-        hidden_activities: a,
+        activities: a,
+        hidden_activities: o,
         processed_at_timestamp: s
       } = t;
       return $({
         guildId: e.guild_id,
         user: n,
         status: r,
-        activities: o,
-        hiddenActivities: a,
+        activities: a,
+        hiddenActivities: o,
         clientStatus: i,
         processedAtTimestamp: s
       })
     }), w.Z.flush("GUILD_MEMBERS_CHUNK")
   })
 }), Y(["THREAD_MEMBER_LIST_UPDATE"], e => {
-  o.ZP.Emitter.batched(() => {
+  a.ZP.Emitter.batched(() => {
     q({
       type: "THREAD_MEMBER_LIST_UPDATE",
       guildId: e.guild_id,
@@ -747,16 +747,16 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         user: n,
         status: r,
         client_status: i,
-        activities: o,
-        hidden_activities: a,
+        activities: a,
+        hidden_activities: o,
         processed_at_timestamp: s
       } = t;
       return $({
         guildId: e.guild_id,
         user: n,
         status: r,
-        activities: o,
-        hiddenActivities: a,
+        activities: a,
+        hiddenActivities: o,
         clientStatus: i,
         processedAtTimestamp: s
       })
@@ -1152,7 +1152,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     })
   })
 }), Y(["GUILD_MEMBER_LIST_UPDATE"], e => {
-  o.ZP.Emitter.batched(() => {
+  a.ZP.Emitter.batched(() => {
     let t = t => {
       if (null == t.member) return;
       let {

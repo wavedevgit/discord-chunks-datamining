@@ -7,8 +7,8 @@ require.r(exports), require.d(exports, {
 });
 let r = 0x9e3779b185ebca87n,
   i = 0xc2b2ae3d27d4eb4fn,
-  o = 0x165667b19e3779f9n,
-  a = 0x85ebca77c2b2ae63n,
+  a = 0x165667b19e3779f9n,
+  o = 0x85ebca77c2b2ae63n,
   s = 0x27d4eb2f165667c5n,
   l = 64n,
   c = 2n ** l - 1n,
@@ -35,47 +35,47 @@ class m {
   #n;
   #r;
   #i;
-  #o;
   #a;
+  #o;
   #s;
   constructor(e = 0) {
     this.reset(e)
   }
   reset(e = this.#e) {
-    return this.#e = BigInt.asUintN(32, BigInt(e)), this.#t = _(this.#e + r + i), this.#n = _(this.#e + i), this.#r = this.#e, this.#i = _(this.#e - r), this.#o = null, this.#a = 0, this.#s = 0, this
+    return this.#e = BigInt.asUintN(32, BigInt(e)), this.#t = _(this.#e + r + i), this.#n = _(this.#e + i), this.#r = this.#e, this.#i = _(this.#e - r), this.#a = null, this.#o = 0, this.#s = 0, this
   }
   update(e) {
     "string" == typeof e && (e = u.encode(e));
     let t = 0,
       n = e.length,
-      o = t + n;
+      a = t + n;
     if (0 === n) return this;
-    if (this.#a += n, 0 === this.#s && (this.#o = new Uint8Array(32)), this.#s + n < 32) return this.#o.set(e.subarray(0, n), this.#s), this.#s += n, this;
+    if (this.#o += n, 0 === this.#s && (this.#a = new Uint8Array(32)), this.#s + n < 32) return this.#a.set(e.subarray(0, n), this.#s), this.#s += n, this;
     if (this.#s > 0) {
       let n;
-      this.#o.set(e.subarray(0, 32 - this.#s), this.#s);
-      let o = 0;
-      n = f(this.#o, o), this.#t = _(p(_(this.#t + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#n = _(p(_(this.#n + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#r = _(p(_(this.#r + n * i), 31n) * r), o += 8, n = f(this.memory, o), this.#i = _(p(_(this.#i + n * i), 31n) * r), t += 32 - this.#s, this.#s = 0
+      this.#a.set(e.subarray(0, 32 - this.#s), this.#s);
+      let a = 0;
+      n = f(this.#a, a), this.#t = _(p(_(this.#t + n * i), 31n) * r), a += 8, n = f(this.memory, a), this.#n = _(p(_(this.#n + n * i), 31n) * r), a += 8, n = f(this.memory, a), this.#r = _(p(_(this.#r + n * i), 31n) * r), a += 8, n = f(this.memory, a), this.#i = _(p(_(this.#i + n * i), 31n) * r), t += 32 - this.#s, this.#s = 0
     }
-    if (t <= o - 32) {
-      let n = o - 32;
+    if (t <= a - 32) {
+      let n = a - 32;
       do {
         let n;
         n = f(e, t), this.#t = _(p(_(this.#t + n * i), 31n) * r), t += 8, n = f(e, t), this.#n = _(p(_(this.#n + n * i), 31n) * r), t += 8, n = f(e, t), this.#r = _(p(_(this.#r + n * i), 31n) * r), t += 8, n = f(e, t), this.#i = _(p(_(this.#i + n * i), 31n) * r), t += 8
       } while (t <= n)
     }
-    return t < o && (this.#o.set(e.subarray(t, o), this.#s), this.#s = o - t), this
+    return t < a && (this.#a.set(e.subarray(t, a), this.#s), this.#s = a - t), this
   }
   digest() {
-    let e = this.#o,
+    let e = this.#a,
       t = this.#s,
       n = 0,
       l = 0n,
       c = 0n,
       u = 0n;
-    for (this.#a >= 32 ? (l = _((l = p(this.#t, 1n) + p(this.#n, 7n) + p(this.#r, 12n) + p(this.#i, 18n)) ^ p(_(this.#t * i), 31n) * r), l = _(l * r + a), l = _(l ^ p(_(this.#n * i), 31n) * r), l = _(l * r + a), l = _(l ^ p(_(this.#r * i), 31n) * r), l = _(l * r + a), l = _(l ^ p(_(this.#i * i), 31n) * r), l = _(l * r + a)) : l = _(this.#e + s), l += BigInt(this.#a); require <= exports - 8;) u = _(p(_((u = f(module, require)) * i), 31n) * r), l = _(p(l ^ u, 27n) * r + a), n += 8;
-    for (require + 4 <= exports && (l = _(p(l ^ _((u = d(module[require + 1] << 8 | module[require], module[require + 3] << 8 | module[require + 2], 0, 0)) * r), 23n) * i + o), n += 4); require < exports;) l = _(p(l ^ _((u = d(module[require++], 0, 0, 0)) * s), 11n) * r);
-    return c = _(l >> 33n), l = _((l ^ c) * i), c = _(l >> 29n), l = _((l ^ c) * o), c = _(l >> 32n), l = _(l ^ c)
+    for (this.#o >= 32 ? (l = _((l = p(this.#t, 1n) + p(this.#n, 7n) + p(this.#r, 12n) + p(this.#i, 18n)) ^ p(_(this.#t * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#n * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#r * i), 31n) * r), l = _(l * r + o), l = _(l ^ p(_(this.#i * i), 31n) * r), l = _(l * r + o)) : l = _(this.#e + s), l += BigInt(this.#o); require <= exports - 8;) u = _(p(_((u = f(module, require)) * i), 31n) * r), l = _(p(l ^ u, 27n) * r + o), n += 8;
+    for (require + 4 <= exports && (l = _(p(l ^ _((u = d(module[require + 1] << 8 | module[require], module[require + 3] << 8 | module[require + 2], 0, 0)) * r), 23n) * i + a), n += 4); require < exports;) l = _(p(l ^ _((u = d(module[require++], 0, 0, 0)) * s), 11n) * r);
+    return c = _(l >> 33n), l = _((l ^ c) * i), c = _(l >> 29n), l = _((l ^ c) * a), c = _(l >> 32n), l = _(l ^ c)
   }
 }
 

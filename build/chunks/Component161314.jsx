@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk886176 = require("./886176.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk736636 = require("./736636.js");
+  Chunk587435 = require("./587435.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ function N(e) {
   var t;
   let {
     guildId: n
-  } = e, o = (0, l.e7)([E.Z], () => E.Z.getGuild(n)), {
+  } = e, a = (0, l.e7)([E.Z], () => E.Z.getGuild(n)), {
     loading: C,
     subscriptionsSettings: N
   } = (0, y.H)(n), {
@@ -68,13 +68,13 @@ function N(e) {
     type: s.ImpressionTypes.VIEW,
     name: s.ImpressionNames.GUILD_SHOP_EMBED
   }, {
-    disableTrack: null == o
+    disableTrack: null == a
   });
   let D = R.length > 0 ? new Date(Math.min(...R.map(e => Date.parse(e.published_at)))) : true;
   return C || !P ? (0, r.jsx)("div", {
-    className: a()(T.guildShopEmbed, T.spinnerContainer),
+    className: o()(T.guildShopEmbed, T.spinnerContainer),
     children: (0, r.jsx)(d.$jN, {})
-  }) : null == o || null == N ? null : (0, r.jsxs)("div", {
+  }) : null == a || null == N ? null : (0, r.jsxs)("div", {
     className: T.guildShopEmbed,
     children: [(0, r.jsx)(O.Z, {
       coverImageAsset: null != (t = N.cover_image_asset) ? t : null
@@ -98,7 +98,7 @@ function N(e) {
       variant: "heading-md/semibold",
       color: "text-default",
       children: I.intl.format(I.t.NZeik9, {
-        guildName: o.name
+        guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
       size: 4
@@ -114,7 +114,7 @@ function N(e) {
     }), (0, r.jsxs)("div", {
       className: T.guildShopEmbedFooter,
       children: [(0, r.jsx)(_.Z, {
-        guild: o
+        guild: a
       }), (0, r.jsxs)("ul", {
         className: T.guildShopSummary,
         children: [(0, r.jsx)("li", {

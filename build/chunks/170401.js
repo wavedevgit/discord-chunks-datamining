@@ -8,7 +8,7 @@ var Chunk658722 = require("./658722.js"),
   i = require.n(Chunk658722),
   Chunk697497 = require("./697497.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,8 +31,8 @@ class u {
     {
       let t = [];
       return this.terms.forEach(n => {
-        let [r, o] = n;
-        for (let n of o)
+        let [r, a] = n;
+        for (let n of a)
           if (i()(e.toLowerCase(), n.toLowerCase())) {
             t.push(r);
             break
@@ -49,11 +49,11 @@ class u {
     return this.preprocessed.forEach(e => {
       let [n, {
         normalizedTokens: i,
-        normalizedSearchTerms: a
+        normalizedSearchTerms: o
       }] = e, u = 0;
-      a.some(e => e === t) ? u = s : i.some(e => e.startsWith(t)) ? u = l : a.forEach(e => {
+      o.some(e => e === t) ? u = s : i.some(e => e.startsWith(t)) ? u = l : o.forEach(e => {
         let n = 0,
-          r = (0, o.H)(t, e);
+          r = (0, a.H)(t, e);
         r >= c && (n = r), u = Math.max(u, n)
       }), u > 0 && r.push({
         setting: n,
@@ -62,12 +62,12 @@ class u {
     }), this.cacheScored.set(t, r), r
   }
   constructor(e) {
-    a(this, "terms", true), a(this, "cache", true), a(this, "cacheScored", true), a(this, "preprocessed", true), this.terms = e, this.cache = new Map, this.cacheScored = new Map, this.preprocessed = [], e.forEach(e => {
-      let [t, n] = e, r = [], i = [], o = new Set;
+    o(this, "terms", true), o(this, "cache", true), o(this, "cacheScored", true), o(this, "preprocessed", true), this.terms = e, this.cache = new Map, this.cacheScored = new Map, this.preprocessed = [], e.forEach(e => {
+      let [t, n] = e, r = [], i = [], a = new Set;
       n.forEach(e => {
         r.push(e.toLocaleLowerCase()), e.includes(" ") && e.split(/\s+/).forEach(e => {
           let t = e.toLocaleLowerCase();
-          o.has(t) || (i.push(t), o.add(t))
+          a.has(t) || (i.push(t), a.add(t))
         })
       }), this.preprocessed.push([t, {
         normalizedSearchTerms: r,

@@ -1,9 +1,9 @@
-/** Chunk was on 90499 **/
-/** chunk id: 642145, original params: e,t,o (module,exports,require) **/
+/** Chunk was on 23736 **/
+/** chunk id: 642145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => r
+  Y: () => a
 });
-let r = {
+let a = {
   tension: 250,
   friction: 20
 }

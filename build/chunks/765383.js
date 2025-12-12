@@ -60,10 +60,10 @@ class h extends Chunk147913.Z {
     if (null != this.currentlyVisibleMessageTimers[r] || this.viewsInCurrentChannel.has(r)) return;
     let i = this.recentViewTimes.get(r);
     if (null != i && Date.now() - i < c) return;
-    let o = setTimeout(() => {
+    let a = setTimeout(() => {
       delete this.currentlyVisibleMessageTimers[r], this.viewsInCurrentChannel.add(r), this.recentViewTimes.set(r, Date.now()), this.bufferViewTrack(e)
     }, u);
-    this.currentlyVisibleMessageTimers[r] = o
+    this.currentlyVisibleMessageTimers[r] = a
   }
   handleMessageLostVisibility(e, t) {
     let n = "".concat(e, "-").concat(t),

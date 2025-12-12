@@ -58,10 +58,10 @@ function d(e) {
     getQuery: s,
     headerClassName: l,
     headerTrailingContent: c
-  } = e, u = i.length > 0 ? a.intl.formatToPlainString(t, {
+  } = e, u = i.length > 0 ? o.intl.formatToPlainString(t, {
     prefix: s(i)
   }) : n;
-  return (0, r.jsx)(o.ZP.Title, {
+  return (0, r.jsx)(a.ZP.Title, {
     className: l,
     title: u,
     children: c
@@ -72,8 +72,8 @@ function f(e) {
   let {
     query: t,
     selectedIndex: n,
-    autocompletes: o,
-    onHover: a,
+    autocompletes: a,
+    onHover: o,
     onClick: s,
     titleWithQuery: c,
     titleWithoutQuery: f,
@@ -86,17 +86,17 @@ function f(e) {
     headerTrailingContent: b,
     footer: y
   } = e;
-  if (null == y && (null == o || 0 === o.length)) return null;
-  let O = null == o ? true : o.map((e, t) => {
+  if (null == y && (null == a || 0 === a.length)) return null;
+  let O = null == a ? true : a.map((e, t) => {
     let r = t + g,
-      o = _(e, r);
+      a = _(e, r);
     return (0, i.createElement)(p, u(l({
       onClick: s,
-      onHover: a,
+      onHover: o,
       selected: n === r,
       index: r
-    }, o), {
-      key: o.key
+    }, a), {
+      key: a.key
     }))
   });
   return (0, r.jsxs)(i.Fragment, {

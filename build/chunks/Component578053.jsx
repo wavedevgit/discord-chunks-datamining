@@ -1,9 +1,9 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 578053, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  g: () => v,
-  u: () => O
+  g: () => O,
+  u: () => C
 }), require("./290780.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,40 +20,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk434404 = require("./434404.js"),
   Chunk388032 = require("./388032.jsx");
-let b = "NO_CHANNEL";
+let x = "NO_CHANNEL";
 
 function j(e) {
   return {
     value: e.id,
-    label: (0, u.F6)(e, f.default, p.Z),
+    label: (0, d.F6)(e, b.default, m.Z),
     channel: e,
     category: g.Z.getChannel(e.parent_id)
   }
 }
 
-function _(e) {
+function v(e) {
   let {
     option: t
   } = e, {
     label: n,
     channel: l,
-    category: s
-  } = t, o = i.useMemo(() => (0, d.KS)(l), [l]), c = (0, u.ZP)(l);
-  return (0, r.jsx)(a.Z, {
+    category: a
+  } = t, o = i.useMemo(() => (0, u.KS)(l), [l]), c = (0, d.ZP)(l);
+  return (0, r.jsx)(s.Z, {
     title: n,
     icon: o,
-    subtitle: null != s ? c : null
+    subtitle: null != a ? c : null
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     canManageGuild: t,
     guildId: n,
-    afkChannelId: a,
+    afkChannelId: s,
     label: o
-  } = e, u = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), d = i.useMemo(() => {
-    let e = (0, c.Z)(u._categories, u).filter(e => {
+  } = e, d = (0, a.e7)([f.Z], () => f.Z.getCategories(n)), u = i.useMemo(() => {
+    let e = (0, c.Z)(d._categories, d).filter(e => {
       let {
         channel: t
       } = e;
@@ -65,33 +65,33 @@ function v(e) {
       return j(t)
     });
     return e.unshift({
-      value: b,
-      label: x.intl.string(x.t.wGiHkK)
+      value: x,
+      label: h.intl.string(h.t.wGiHkK)
     }), e
-  }, [u]), g = i.useCallback(e => {
-    let t = e === b ? null : e;
-    h.Z.updateGuild({
+  }, [d]), g = i.useCallback(e => {
+    let t = e === x ? null : e;
+    p.Z.updateGuild({
       afkChannelId: t
     })
   }, []);
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(y, {
     label: o,
-    value: null != a ? a : b,
-    options: d,
+    value: null != s ? s : x,
+    options: u,
     canManageGuild: t,
     onChange: g
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     canManageGuild: t,
     guildId: n,
-    systemChannelId: a,
+    systemChannelId: s,
     label: o,
-    description: u,
-    layout: d
-  } = e, g = (0, s.e7)([m.Z], () => m.Z.getCategories(n)), p = i.useMemo(() => {
+    description: d,
+    layout: u
+  } = e, g = (0, a.e7)([f.Z], () => f.Z.getCategories(n)), m = i.useMemo(() => {
     let e = (0, c.Z)(g._categories, g).filter(e => {
       let {
         channel: t
@@ -104,49 +104,49 @@ function O(e) {
       return j(t)
     });
     return e.unshift({
-      value: b,
-      label: x.intl.string(x.t.ibUhoa)
+      value: x,
+      label: h.intl.string(h.t.ibUhoa)
     }), e
-  }, [g]), f = i.useCallback(e => {
-    let t = e === b ? null : e;
-    h.Z.updateGuild({
+  }, [g]), b = i.useCallback(e => {
+    let t = e === x ? null : e;
+    p.Z.updateGuild({
       systemChannelId: t
     })
   }, []);
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(y, {
     label: o,
-    description: u,
-    layout: d,
-    value: null != a ? a : b,
-    options: p,
+    description: d,
+    layout: u,
+    value: null != s ? s : x,
+    options: m,
     canManageGuild: t,
-    onChange: f
+    onChange: b
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     value: t,
     options: n,
     canManageGuild: l,
-    onChange: s,
-    label: a,
+    onChange: a,
+    label: s,
     description: c,
-    layout: u
-  } = e, d = i.useCallback(e => {
-    if (null != e) return (0, r.jsx)(_, {
+    layout: d
+  } = e, u = i.useCallback(e => {
+    if (null != e) return (0, r.jsx)(v, {
       option: e
     })
-  }, []), g = i.useCallback(e => d(e[0]), [d]);
+  }, []), g = i.useCallback(e => u(e[0]), [u]);
   return (0, r.jsx)(o.y6, {
-    label: a,
+    label: s,
     description: c,
     value: t,
     options: n,
     isDisabled: !l,
-    onChange: s,
-    renderOptionLabel: d,
+    onChange: a,
+    renderOptionLabel: u,
     renderOptionValue: g,
-    layout: u
+    layout: d
   })
 }

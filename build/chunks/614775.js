@@ -13,9 +13,9 @@ var Chunk566817 = require("./566817.js"),
   Chunk936342 = require("./936342.js"),
   Chunk951575 = require("./951575.js");
 module.exports = function(e, t, n) {
-  if (!p(e)) throw new o("Assertion failed: O must be an Object");
-  if (!c(t)) throw new o("Assertion failed: P must be a Property Key");
-  if (!a(n)) throw new o("Assertion failed: Desc must be a Property Descriptor");
+  if (!p(e)) throw new a("Assertion failed: O must be an Object");
+  if (!c(t)) throw new a("Assertion failed: P must be a Property Key");
+  if (!o(n)) throw new a("Assertion failed: Desc must be a Property Descriptor");
   if (!r) {
     if (s(n)) throw new i("This environment does not support accessor property descriptors.");
     var _ = !(t in e) && n["[[Writable]]"] && n["[[Enumerable]]"] && n["[[Configurable]]"] && "[[Value]]" in n,

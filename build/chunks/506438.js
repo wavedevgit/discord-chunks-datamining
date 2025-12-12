@@ -6,11 +6,11 @@ require.d(exports, {
 });
 var Chunk462049 = require("./462049.js");
 let i = {
-  isHeicFile: o,
-  findHeicOffsets: a
+  isHeicFile: a,
+  findHeicOffsets: o
 };
 
-function o(e) {
+function a(e) {
   if (!e) returnfalse;
   let t = ["heic", "heix", "hevc", "hevx", "heim", "heis", "hevm", "hevs", "mif1"];
   try {
@@ -21,6 +21,6 @@ function o(e) {
   }
 }
 
-function a(e) {
+function o(e) {
   return (0, r.ku)(e)
 }

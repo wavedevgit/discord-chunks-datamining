@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   a: () => i,
-  g: () => o
+  g: () => a
 });
 var Chunk911969 = require("./911969.js");
 
@@ -11,7 +11,7 @@ function i(e) {
   return null != e.interactionMetadata
 }
 
-function o(e) {
+function a(e) {
   var t, n;
   return (null == (t = e.interactionMetadata) ? true : t.type) === r.B8.APPLICATION_COMMAND && (null == (n = e.interactionMetadata) ? true : n.command_type) === r.yU.PRIMARY_ENTRY_POINT
 }

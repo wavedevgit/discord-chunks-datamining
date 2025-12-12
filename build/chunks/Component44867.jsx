@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 44867, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  c: () => m
+  c: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,55 +13,55 @@ var Chunk54381 = require("./54381.js"),
   Chunk976288 = require("./976288.jsx"),
   Chunk386885 = require("./386885.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk366869 = require("./366869.js");
+  Chunk487840 = require("./487840.js");
 
-function m(e) {
+function f(e) {
   let {
     fetchDiscoveryData: t,
     settingsView: n,
-    requireTerms: m,
-    rules: p
-  } = e, f = (0, l.e7)([a.Z], () => a.Z.getProps().guild);
+    requireTerms: f,
+    rules: m
+  } = e, b = (0, l.e7)([s.Z], () => s.Z.getProps().guild);
   if (i.useEffect(() => {
-      null != f && t(f.id)
-    }, [t, f]), null == f) return null;
+      null != b && t(b.id)
+    }, [t, b]), null == b) return null;
   switch (n) {
-    case u.U.DISQUALIFIED:
+    case d.U.DISQUALIFIED:
       return (0, r.jsx)(o.Z, {
-        guild: f,
-        guildId: f.id,
+        guild: b,
+        guildId: b.id,
         headerContent: (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(s.Heading, {
+          children: [(0, r.jsx)(a.Heading, {
             variant: "text-md/semibold",
             color: "text-strong",
             className: g.header,
-            children: d.intl.format(d.t.n1LDQM, {
+            children: u.intl.format(u.t.n1LDQM, {
               removedHook: (e, t) => (0, r.jsx)("strong", {
                 className: g.danger,
                 children: e
               }, t)
             })
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: d.intl.string(d.t.Qgaw3d)
+            children: u.intl.string(u.t.Qgaw3d)
           })]
         })
       });
-    case u.U.ELIGIBLE_DISABLED:
-    case u.U.ELIGIBLE_ENABLED:
+    case d.U.ELIGIBLE_DISABLED:
+    case d.U.ELIGIBLE_ENABLED:
       return (0, r.jsx)(c.d, {
-        requireTerms: m,
-        rules: p,
+        requireTerms: f,
+        rules: m,
         settingsView: n
       });
-    case u.U.INELIGIBLE:
+    case d.U.INELIGIBLE:
       return (0, r.jsx)(o.Z, {
-        guild: f,
-        guildId: f.id,
-        headerContent: (0, r.jsx)(s.Heading, {
+        guild: b,
+        guildId: b.id,
+        headerContent: (0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          children: d.intl.format(d.t["+6Hylv"], {
+          children: u.intl.format(u.t["+6Hylv"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
               className: g.danger,
               children: e
@@ -70,6 +70,6 @@ function m(e) {
         })
       });
     default:
-      return (0, r.jsx)(s.$jN, {})
+      return (0, r.jsx)(a.$jN, {})
   }
 }

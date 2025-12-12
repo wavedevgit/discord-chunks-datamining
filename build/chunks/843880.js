@@ -19,7 +19,7 @@ function f(e) {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: r
-  } = e, f = (0, o.e7)([l.Z], () => l.Z.getGuildProduct(n)), p = (0, o.e7)([a.Z], () => a.Z.getGuild(t), [t]), _ = (0, u.Z)({
+  } = e, f = (0, a.e7)([l.Z], () => l.Z.getGuildProduct(n)), p = (0, a.e7)([o.Z], () => o.Z.getGuild(t), [t]), _ = (0, u.Z)({
     guildId: t,
     productId: n
   });

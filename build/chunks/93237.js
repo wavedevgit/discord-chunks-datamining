@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let t = (e - Date.now()) / a.Z.Millis.HOUR;
+  let t = (e - Date.now()) / o.Z.Millis.HOUR;
   return t > 24 ? u.intl.formatToPlainString(u.t["g9s+dA"], {
     numDays: Math.floor(t / 24)
   }) : t >= 1 ? u.intl.formatToPlainString(u.t.k9v33y, {
@@ -40,8 +40,8 @@ let f = () => (0, Chunk266454.zu)(Chunk704215.z.REFERRAL_PROGRAM_NITRO_TAB_BADGE
     let n = true !== t.referrer_id,
       r = true === t.redeemed_at,
       i = new Date(s.default.extractTimestamp(t.id)),
-      o = new Date >= i;
-    return n && r && o
+      a = new Date >= i;
+    return n && r && a
   },
   m = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.REFERRAL_PROGRAM_POPOVER)

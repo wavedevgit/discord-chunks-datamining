@@ -35,14 +35,14 @@ function b(e) {
     channelId: n,
     guildId: r,
     ReadStateStore_: i = _.ZP,
-    GuildStore_: o = p.Z
+    GuildStore_: a = p.Z
   } = e;
   if (!i.hasUnread(n)) returnfalse;
-  let a = o.getGuild(r);
-  if (null == a || null == a.joinedAt) returnfalse;
+  let o = a.getGuild(r);
+  if (null == o || null == o.joinedAt) returnfalse;
   let s = i.ackMessageId(n);
   if (null == s) {
-    let e = o.getGuild(r);
+    let e = a.getGuild(r);
     null != e && null != e.joinedAt && (s = m.default.fromTimestamp(e.joinedAt.getTime()))
   }
   return m.default.compare(t, s) > 0

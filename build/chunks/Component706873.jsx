@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk949558 = require("./949558.js");
+  Chunk196317 = require("./196317.js");
 
 function l(e) {
   let {
@@ -24,8 +24,8 @@ function l(e) {
       variant: "heading-md/semibold",
       color: "text-default",
       className: s.title,
-      children: a.intl.string(a.t.rPREPG)
-    }), t.layout.map(e => (0, r.jsx)(o.Z, {
+      children: o.intl.string(o.t.rPREPG)
+    }), t.layout.map(e => (0, r.jsx)(a.Z, {
       node: e
     }, e.key))]
   })

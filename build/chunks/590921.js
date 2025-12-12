@@ -7,20 +7,20 @@ require.d(exports, {
   L8: () => c,
   QB: () => u,
   QZ: () => p,
-  VV: () => o,
+  VV: () => a,
   W7: () => _,
   YP: () => r,
   eq: () => d,
-  h3: () => a,
+  h3: () => o,
   nS: () => l,
   z2: () => f
 });
 let r = 3,
   i = 20;
-var o = function(e) {
+var a = function(e) {
     return e[e.DENY = 0] = "DENY", e[e.ALLOW_EVERYONE = 1] = "ALLOW_EVERYONE", e[e.ALLOW_EVERYONE_OR_HERE = 2] = "ALLOW_EVERYONE_OR_HERE", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e[e.DENY = 0] = "DENY", e[e.ALLOW_CHANNEL = 1] = "ALLOW_CHANNEL", e[e.ALLOW_GUILD = 2] = "ALLOW_GUILD", e
   }({}),
   s = function(e) {

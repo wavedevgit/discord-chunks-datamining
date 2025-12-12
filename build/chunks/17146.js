@@ -12,8 +12,8 @@ require.d(exports, {
   ug: () => c
 });
 let i = 34028234663852886e22,
-  o = false,
-  a = 0xffffffff,
+  a = false,
+  o = 0xffffffff,
   s = 0x7fffffff,
   l = false;
 
@@ -24,10 +24,10 @@ function c(e) {
 
 function u(e) {
   if ("number" != typeof e) throw Error("invalid uint 32: " + typeof e);
-  if (!Number.isInteger(e) || e > a || e < 0) throw Error("invalid uint 32: " + e)
+  if (!Number.isInteger(e) || e > o || e < 0) throw Error("invalid uint 32: " + e)
 }
 
 function d(e) {
   if ("number" != typeof e) throw Error("invalid float 32: " + typeof e);
-  if (Number.isFinite(e) && (e > i || e < o)) throw Error("invalid float 32: " + e)
+  if (Number.isFinite(e) && (e > i || e < a)) throw Error("invalid float 32: " + e)
 }

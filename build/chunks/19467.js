@@ -16,16 +16,16 @@ class i {
     let n = [],
       r = t[0],
       i = null;
-    for (let o = 1; o < t.length; o++) {
-      i = t[o];
-      let a = e.text.substring(r.index + r.text.length, i.index);
-      if (this.shouldMergeResults(a, r, i, e)) {
+    for (let a = 1; a < t.length; a++) {
+      i = t[a];
+      let o = e.text.substring(r.index + r.text.length, i.index);
+      if (this.shouldMergeResults(o, r, i, e)) {
         let t = r,
           n = i,
-          o = this.mergeResults(a, t, n, e);
+          a = this.mergeResults(o, t, n, e);
         e.debug(() => {
-          console.log(`${this.constructor.name} merged ${t} and ${n} into ${o}`)
-        }), r = o
+          console.log(`${this.constructor.name} merged ${t} and ${n} into ${a}`)
+        }), r = a
       } else n.push(r), r = i
     }
     return null != r && n.push(r), n

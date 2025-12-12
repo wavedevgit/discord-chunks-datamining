@@ -2,11 +2,11 @@
 /** chunk id: 405909, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk894186 = require("./894186.js"),
   Chunk727916 = require("./727916.js");
-class o extends Chunk727916.Z {
+class a extends Chunk727916.Z {
   innerPattern(e) {
     return /(cet?)?\s*(matin|soir|après-midi|aprem|a midi|à minuit)(?=\W|$)/i
   }

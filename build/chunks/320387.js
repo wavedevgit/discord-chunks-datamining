@@ -14,18 +14,18 @@ if ("function" == typeof i && "function" == typeof Object.defineProperty) try {
 } catch (e) {
   module !== n && (i = null)
 } else i = null;
-var o = /^\s*class\b/,
-  a = function(e) {
+var a = /^\s*class\b/,
+  o = function(e) {
     try {
       var t = r.call(e);
-      return o.test(t)
+      return a.test(t)
     } catch (e) {
       returnfalse
     }
   },
   s = function(e) {
     try {
-      if (a(e)) returnfalse;
+      if (o(e)) returnfalse;
       return r.call(e), true
     } catch (e) {
       returnfalse
@@ -61,12 +61,12 @@ module.exports = i ? function(e) {
   } catch (e) {
     if (e !== n) returnfalse
   }
-  return !a(e) && s(e)
+  return !o(e) && s(e)
 } : function(e) {
   if (g(e)) returntrue;
   if (!e || "function" != typeof e && "object" != typeof e) returnfalse;
   if (m) return s(e);
-  if (a(e)) returnfalse;
+  if (o(e)) returnfalse;
   var t = l.call(e);
   return (t === u || t === d || !!/^\[object HTML/.test(t)) && s(e)
 }

@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk249458 = require("./249458.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk700977 = require("./700977.js");
+  Chunk836940 = require("./836940.js");
 
 function d(e) {
   let {
     onPlay: t,
     className: n,
-    inactive: o
+    inactive: a
   } = e, d = i.useRef(null), f = (0, r.jsx)("div", {
     className: u.iconWrapper,
     ref: d,
@@ -28,11 +28,11 @@ function d(e) {
     })
   });
   return (0, r.jsx)(l.G.Consumer, {
-    children: e => o || null == t ? (0, r.jsx)("div", {
+    children: e => a || null == t ? (0, r.jsx)("div", {
       className: u.cover,
       children: f
     }) : (0, r.jsx)(s.P3F, {
-      className: a()(n, u.cover, {
+      className: o()(n, u.cover, {
         [u.active]: !e.disableInteractions
       }),
       onClick: t,

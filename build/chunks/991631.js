@@ -20,14 +20,14 @@ class c extends Chunk727916.Z {
   }
   innerExtract(e, t) {
     let n = t[1].toLowerCase(),
-      o = (0, r.RA)(t[2]);
-    if (!o) return null;
+      a = (0, r.RA)(t[2]);
+    if (!a) return null;
     switch (n) {
       case "f\xf6rra":
       case "passerade":
       case "-":
-        o = (0, a.de)(o)
+        a = (0, o.de)(a)
     }
-    return i.L.createRelativeFromReference(e.reference, o)
+    return i.L.createRelativeFromReference(e.reference, a)
   }
 }

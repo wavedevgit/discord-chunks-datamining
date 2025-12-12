@@ -21,13 +21,13 @@ function _(e) {
   var t;
   let {
     application: n
-  } = e, r = null != (t = c.Z.getGuildId()) ? t : true, o = () => {
+  } = e, r = null != (t = c.Z.getGuildId()) ? t : true, a = () => {
     (0, i.Mr3)(f.e9), (0, u.y)(d.ti.DISMISSED)
   };
   return (0, s.Z)({
     application: n,
     guildId: r,
-    onItemClick: o
+    onItemClick: a
   })
 }
 
@@ -35,7 +35,7 @@ function m(e) {
   let {
     application: t,
     onSelect: n
-  } = e, s = l.Sb.useSetting(), c = (0, a.Z)({
+  } = e, s = l.Sb.useSetting(), c = (0, o.Z)({
     id: t.id,
     label: p.intl.string(p.t["+NP/b2"])
   }), u = _({
@@ -43,7 +43,7 @@ function m(e) {
   });
   return (0, r.jsxs)(i.v2r, {
     navId: "activity-shelf-item-context",
-    onClose: o.Zy,
+    onClose: a.Zy,
     "aria-label": p.intl.string(p.t.WkcHT9),
     onSelect: n,
     children: [null != u && (0, r.jsx)(i.kSQ, {

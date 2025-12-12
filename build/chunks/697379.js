@@ -13,11 +13,11 @@ var Chunk442837 = require("./442837.js"),
 
 function l(e) {
   let t = i.Z.getGuild(e);
-  return null != t && t.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && o.Z.can(s.Plq.KICK_MEMBERS, t)
+  return null != t && t.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && a.Z.can(s.Plq.KICK_MEMBERS, t)
 }
 
 function c(e) {
   let t = (0, r.e7)([i.Z], () => i.Z.getGuild(e)),
-    n = o.Z.can(s.Plq.KICK_MEMBERS, t) || o.Z.can(s.Plq.MANAGE_GUILD, t);
-  return null != t && t.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && n && (0, a.Dc)(t)
+    n = a.Z.can(s.Plq.KICK_MEMBERS, t) || a.Z.can(s.Plq.MANAGE_GUILD, t);
+  return null != t && t.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && n && (0, o.Dc)(t)
 }

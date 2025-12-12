@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk840724 = require("./840724.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk54602 = require("./54602.js");
+  Chunk179047 = require("./179047.js");
 
 function I(e) {
   var t, n, I, T, C, A, N, P;
@@ -32,11 +32,11 @@ function I(e) {
     guildId: R,
     skuId: w,
     channel: D
-  } = e, x = (0, a.e7)([p.Z], () => p.Z.isFetchingForSKU(w)), L = (0, a.e7)([f.Z], () => f.Z.get(w)), j = null == L ? true : L.applicationId, {
+  } = e, x = (0, o.e7)([p.Z], () => p.Z.isFetchingForSKU(w)), L = (0, o.e7)([f.Z], () => f.Z.get(w)), j = null == L ? true : L.applicationId, {
     analyticsLocations: M
   } = (0, c.ZP)(l.Z.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
   (0, u.p2)();
-  let k = (0, a.e7)([d.default], () => D.isDM() && null != D.recipients && 0 !== D.recipients.length ? d.default.getUser(D.recipients[0]) : null),
+  let k = (0, o.e7)([d.default], () => D.isDM() && null != D.recipients && 0 !== D.recipients.length ? d.default.getUser(D.recipients[0]) : null),
     {
       primaryIconAsset: U,
       primaryIconLabel: G
@@ -102,15 +102,15 @@ function I(e) {
             children: (0, _.T4)(null != (C = null == (t = L.price) ? true : t.amount) ? C : 0, null != (A = null == (n = L.price) ? true : n.currency) ? A : O.pK.USD)
           })]
         })]
-      }), (0, r.jsxs)(o.hE2, {
+      }), (0, r.jsxs)(a.hE2, {
         wrap: false,
         fullWidth: true,
-        children: [(0, r.jsx)(o.zxk, {
+        children: [(0, r.jsx)(a.zxk, {
           variant: "secondary",
           onClick: Z,
           text: v.intl.string(v.t.KLBTgF),
           fullWidth: true
-        }), (0, r.jsx)(o.zxk, {
+        }), (0, r.jsx)(a.zxk, {
           variant: "primary",
           onClick: F,
           text: v.intl.format(v.t.Xp5WTn, {

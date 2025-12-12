@@ -1,9 +1,9 @@
-/** Chunk was on 90499 **/
-/** chunk id: 617889, original params: e,t,o (module,exports,require) **/
+/** Chunk was on 23736 **/
+/** chunk id: 617889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EK: () => d,
+  EK: () => o,
   GX: () => s,
-  qe: () => l
+  qe: () => d
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,31 +29,31 @@ function s() {
   }
 }
 
-function d(e, t) {
-  var o;
-  let r = (0, i.z)(e),
-    n = null != (o = (0, a.i6)()) ? o : 0,
+function o(e, t) {
+  var n;
+  let a = (0, l.z)(e),
+    r = null != (n = (0, i.i6)()) ? n : 0,
     s = "var(--green-330)",
-    d = ["var(--background-base-lowest)", "var(--interactive-text-default)"];
+    o = ["var(--background-base-lowest)", "var(--interactive-text-default)"];
   return {
-    backgroundTop: t ? d[n] : ["#828288", "#CBCDD4"][n],
-    backgroundBottom: t ? d[n] : ["#535356", "#8B8C95"][n],
+    backgroundTop: t ? o[r] : ["#828288", "#CBCDD4"][r],
+    backgroundBottom: t ? o[r] : ["#535356", "#8B8C95"][r],
     foreground: s,
-    glow: t && r ? s : "#C4C1D66E"
+    glow: t && a ? s : "#C4C1D66E"
   }
 }
-let _ = () => {
+let c = () => {
   let e = document.body.style.getPropertyValue("--custom-guild-sidebar-width").slice(0, false);
   return parseInt("" !== module ? module : "375")
 };
 
-function l() {
+function d() {
   return {
     label: ! function() {
-      let [e, t] = Chunk473749.useState(() => 270 > _());
+      let [e, t] = Chunk473749.useState(() => 270 > c());
       return Chunk473749.useEffect(() => {
         let e = new MutationObserver(() => {
-          exports(270 > _())
+          exports(270 > c())
         });
         return module.observe(document.body, {
           attributes: true,

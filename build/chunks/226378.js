@@ -53,14 +53,14 @@ function d(e) {
     embeddedActivity: t,
     joinability: n,
     currentEmbeddedActivity: i,
-    channel: o
+    channel: a
   } = e;
   return r.useMemo(() => f({
     embeddedActivity: t,
     joinability: n,
     currentEmbeddedActivity: i,
-    channel: o
-  }), [t, n, i, o])
+    channel: a
+  }), [t, n, i, a])
 }
 
 function f(e) {
@@ -72,44 +72,44 @@ function f(e) {
   } = e, c = null == t, d = {
     disabled: false,
     isJoinAction: !c,
-    text: c ? a.intl.string(a.t.RscU7I) : a.intl.string(a.t.sqe0hj),
+    text: c ? o.intl.string(o.t.RscU7I) : o.intl.string(o.t.sqe0hj),
     tooltip: true
   }, f = (0, i.WS)(s);
   if (null != t && null != r && t.launchId === r.launchId) return u(l({}, d), {
     disabled: true,
-    text: a.intl.string(a.t.DPfdsq),
+    text: o.intl.string(o.t.DPfdsq),
     tooltip: true
   });
   if (c) return u(l({}, d), {
     disabled: !f,
-    tooltip: f ? true : a.intl.string(a.t.f41E1g)
+    tooltip: f ? true : o.intl.string(o.t.f41E1g)
   });
-  if (null != n && n !== o.Fw.CAN_JOIN) {
+  if (null != n && n !== a.Fw.CAN_JOIN) {
     let e;
     switch (n) {
-      case o.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
-        e = a.intl.string(a.t.hHGrWz);
+      case a.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
+        e = o.intl.string(o.t.hHGrWz);
         break;
-      case o.Fw.ACTIVITY_AGE_GATED:
-        e = a.intl.string(a.t["4WuFRE"]);
+      case a.Fw.ACTIVITY_AGE_GATED:
+        e = o.intl.string(o.t["4WuFRE"]);
         break;
-      case o.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
-        e = a.intl.string(a.t.uGDCcw);
+      case a.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
+        e = o.intl.string(o.t.uGDCcw);
         break;
-      case o.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
-        e = a.intl.string(a.t.UXoQTp);
+      case a.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
+        e = o.intl.string(o.t.UXoQTp);
         break;
-      case o.Fw.CHANNEL_FULL:
-        e = a.intl.string(a.t.rZfiNq);
+      case a.Fw.CHANNEL_FULL:
+        e = o.intl.string(o.t.rZfiNq);
         break;
-      case o.Fw.NO_CHANNEL_CONNECT_PERMISSION:
-        e = a.intl.string(a.t.w5SAps);
+      case a.Fw.NO_CHANNEL_CONNECT_PERMISSION:
+        e = o.intl.string(o.t.w5SAps);
         break;
-      case o.Fw.NO_CHANNEL:
-      case o.Fw.NO_GUILD:
-      case o.Fw.NO_USER:
-      case o.Fw.IS_AFK_CHANNEL:
-        e = a.intl.string(a.t.Etp6uI)
+      case a.Fw.NO_CHANNEL:
+      case a.Fw.NO_GUILD:
+      case a.Fw.NO_USER:
+      case a.Fw.IS_AFK_CHANNEL:
+        e = o.intl.string(o.t.Etp6uI)
     }
     return u(l({}, d), {
       disabled: true,

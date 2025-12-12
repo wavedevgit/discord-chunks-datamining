@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g: () => i,
-  m: () => o
+  m: () => a
 });
 let r = false;
 
@@ -11,6 +11,6 @@ function i(e) {
   r = e
 }
 
-function o() {
+function a() {
   return r
 }

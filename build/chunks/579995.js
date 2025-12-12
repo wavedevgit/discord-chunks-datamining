@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   C8: () => i,
-  dK: () => a,
-  mq: () => o
+  dK: () => o,
+  mq: () => a
 });
 var Chunk473749 = require("./473749.js"),
   i = Chunk473749.createContext(),
-  o = Chunk473749.createContext();
+  a = Chunk473749.createContext();
 
-function a(e) {
+function o(e) {
   var t = e.children,
     n = r.useState(null),
-    a = n[0],
+    o = n[0],
     s = n[1],
     l = r.useRef(false);
   r.useEffect(function() {
@@ -25,8 +25,8 @@ function a(e) {
     l.current || s(e)
   }, []);
   return r.createElement(i.Provider, {
-    value: a
-  }, r.createElement(o.Provider, {
+    value: o
+  }, r.createElement(a.Provider, {
     value: c
   }, t))
 }

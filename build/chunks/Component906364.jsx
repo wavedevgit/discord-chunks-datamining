@@ -25,12 +25,12 @@ function l(e) {
   function p(e) {
     l(e === d ? true : e)
   }
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     title: t,
     errors: n,
     disabled: f,
     children: (0, r.jsx)(i.oil, {
-      placeholder: null != u ? u : a.intl.string(a.t.NPEUUu),
+      placeholder: null != u ? u : o.intl.string(o.t.NPEUUu),
       maxLength: s,
       value: null != c ? c : d,
       onChange: p,

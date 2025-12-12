@@ -19,14 +19,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk178088 = require("./178088.jsx"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk741047 = require("./741047.js");
+  Chunk651072 = require("./651072.js");
 
 function O(e) {
   let {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, s.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), y = (0, s.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, _.W.NOTIFICATION_CENTER) > 0), {
+  } = e, O = (0, s.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), y = (0, s.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
@@ -50,7 +50,7 @@ function O(e) {
         children: [(0, r.jsx)(c.u, {
           targetElementRef: v,
           shouldShow: !t,
-          text: b.intl.string(b.t.GSmTKJ),
+          text: E.intl.string(E.t.GSmTKJ),
           children: (0, r.jsx)(u.P3F, (s = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -73,9 +73,9 @@ function O(e) {
             innerRef: v,
             onClick: e,
             "data-jump-section": l,
-            "aria-label": b.intl.string(b.t.GSmTKJ),
-            className: a()(E.clickable, {
-              [E.withHighlight]: C
+            "aria-label": E.intl.string(E.t.GSmTKJ),
+            className: a()(_.clickable, {
+              [_.withHighlight]: C
             }),
             children: y || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
@@ -84,8 +84,8 @@ function O(e) {
                 width: o.Z[S],
                 children: T
               }), (0, r.jsx)("span", {
-                className: a()(E.badge, {
-                  [E.smol]: "refresh_sm" === S
+                className: a()(_.badge, {
+                  [_.smol]: "refresh_sm" === S
                 })
               })]
             }) : T

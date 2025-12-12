@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   l = require.n(Chunk954955),
   Chunk772848 = require("./772848.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk338949 = require("./338949.js"),
   Chunk561064 = require("./561064.js"),
   Chunk501787 = require("./501787.js"),
-  Chunk149123 = require("./149123.js");
+  Chunk895764 = require("./895764.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -112,7 +112,7 @@ function T(e) {
   let {
     observe: t = true,
     className: n,
-    style: o,
+    style: a,
     children: s
   } = e, l = i.useContext(I), c = (0, u.e7)([g.Z], () => g.Z.hasRenderDebugMode(h.GO.ClickZones)), d = (0, u.e7)([_.default], () => _.default.disableClickableRegions), [{
     refHandler: f,
@@ -132,8 +132,8 @@ function T(e) {
     d ? p(false) : p(t)
   }, [t, p, d]), (0, r.jsx)("div", {
     ref: f,
-    style: o,
-    className: a()(n, y.clickable, c && y.debugMode),
+    style: a,
+    className: o()(n, y.clickable, c && y.debugMode),
     "data-click-zone": true,
     children: s
   })

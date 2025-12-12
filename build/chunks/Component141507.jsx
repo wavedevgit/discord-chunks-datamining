@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk784222 = require("./784222.js"),
   Chunk149203 = require("./149203.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk545424 = require("./545424.js");
+  Chunk886162 = require("./886162.js");
 let P = 250;
 
 function R(e) {
@@ -90,12 +90,12 @@ let w = e => {
           allNamesString: null == F ? true : F.name
         }
     }
-    let B = (0, o.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
-      V = (0, o.e7)([E.Z], () => E.Z.isFocused()),
-      H = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
+    let B = (0, a.e7)([g.Z], () => null !== t && t.type === u.B.GUILD ? g.Z.getGuild(t.guildId) : null, [t]),
+      V = (0, a.e7)([E.Z], () => E.Z.isFocused()),
+      H = (0, a.e7)([l.Z], () => l.Z.useReducedMotion, []),
       Y = h.Yk.useSetting(),
       W = (0, v.C1)(M, R(t) ? t : null),
-      K = (0, o.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
+      K = (0, a.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: z
       } = (0, S.Z)(M, k),
@@ -137,15 +137,15 @@ let w = e => {
     else if ("EXPAND_OR_COLLAPSE_EMOJI" === t.type) {
       let e = n(187119),
         i = n(39874),
-        o = n(853871),
+        a = n(853871),
         s = n(63149);
       D = K.has(t.guildId) ? (0, r.jsx)("img", {
         className: N.icon,
-        src: (0, a.wj)(Q) ? o : s,
+        src: (0, o.wj)(Q) ? a : s,
         alt: ""
       }) : (0, r.jsx)("img", {
         className: N.icon,
-        src: (0, a.wj)(Q) ? e : i,
+        src: (0, o.wj)(Q) ? e : i,
         alt: ""
       })
     }

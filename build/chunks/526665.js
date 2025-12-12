@@ -35,7 +35,7 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  o = (0, Chunk427164.le)({
+  a = (0, Chunk427164.le)({
     name: "2025-09-user-settings-redesign-2a",
     kind: "user",
     defaultConfig: {
@@ -53,7 +53,7 @@ let i = (0, Chunk427164.le)({
       }
     }
   }),
-  a = (0, Chunk427164.le)({
+  o = (0, Chunk427164.le)({
     name: "2025-12-user-settings-redesign-3",
     kind: "user",
     defaultConfig: {
@@ -76,28 +76,28 @@ let i = (0, Chunk427164.le)({
   }).enabled,
   c = e => {
     let t = l(e),
-      n = o.useConfig({
+      n = a.useConfig({
         location: e
       }).showRedesignedNotifications;
     return t && n
   },
-  u = e => !!s(e) && o.getConfig({
+  u = e => !!s(e) && a.getConfig({
     location: e
   }).showRedesignedNotifications,
   d = e => {
     let t = l(e),
-      n = o.useConfig({
+      n = a.useConfig({
         location: e
       }).showRedesignedVoiceAndVideo;
     return t && n
   },
-  f = e => !!s(e) && o.getConfig({
+  f = e => !!s(e) && a.getConfig({
     location: e
   }).showRedesignedVoiceAndVideo,
-  p = e => a.useConfig({
+  p = e => o.useConfig({
     location: e
   }).enabled,
-  _ = e => a.getConfig({
+  _ = e => o.getConfig({
     location: e
   }).enabled,
   m = e => i.useConfig({

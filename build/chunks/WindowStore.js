@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => I
 }), require("./388685.js");
 var r, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk830917 = require("./830917.js");
@@ -65,13 +65,13 @@ function m(e) {
 }
 
 function h(e) {
-  o()(!_.has(e.windowId), "Window initialized multiple times");
+  a()(!_.has(e.windowId), "Window initialized multiple times");
   let {
     width: t,
     height: n,
     isElementFullscreen: r,
     focused: i,
-    visible: a
+    visible: o
   } = e;
   return _.set(e.windowId, {
     windowSize: {
@@ -80,7 +80,7 @@ function h(e) {
     },
     isElementFullscreen: r,
     focused: i,
-    visible: a
+    visible: o
   }), i && (p = e.windowId), true
 }
 

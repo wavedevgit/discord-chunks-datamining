@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk348327 = require("./348327.js"),
   i = require.n(Chunk348327);
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function o(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -33,7 +33,7 @@ class s {
     returntrue
   }
   setState(e) {
-    this.state = a({}, this.state, e)
+    this.state = o({}, this.state, e)
   }
   getState() {
     return this.state
@@ -44,7 +44,7 @@ class s {
   update() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
       t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = this.getNextState(a({}, this.state, module));
+      n = this.getNextState(o({}, this.state, module));
     if (exports) this.dirty = !i()(require, this.getInitialState());
     else
       for (let e of Object.keys(require)) this.dirty = this.dirty || !i()(this.state[module], require[module]);
@@ -55,6 +55,6 @@ class s {
     this.dirty = false, this.didCommit(this.state)
   }
   constructor(e = true) {
-    o(this, "alwaysUpdateState", true), o(this, "dirty", true), o(this, "state", true), this.alwaysUpdateState = e, this.dirty = false, this.state = this.getInitialState()
+    a(this, "alwaysUpdateState", true), a(this, "dirty", true), a(this, "state", true), this.alwaysUpdateState = e, this.dirty = false, this.state = this.getInitialState()
   }
 }

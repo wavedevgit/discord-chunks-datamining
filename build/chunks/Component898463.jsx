@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk273031 = require("./273031.jsx"),
   Chunk859235 = require("./859235.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk635085 = require("./635085.js");
+  Chunk278048 = require("./278048.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function P(e) {
   let {
     alt: t,
     spoiler: n,
-    renderContent: o,
+    renderContent: a,
     size: s
   } = e, [l, c] = i.useState(false);
   return (0, r.jsx)(h.aQ.Provider, {
@@ -84,13 +84,13 @@ function P(e) {
       } : true,
       type: h.ZP.Types.ATTACHMENT,
       onReveal: () => c(true),
-      className: a()(S.spoilerContainer, {
+      className: o()(S.spoilerContainer, {
         [S.sizeXSmall]: s === O.q.XSMALL,
         [S.sizeXXSmall]: s === O.q.XXSMALL
       }),
       children: e => (0, r.jsxs)("div", {
         className: S.spoilerWrapper,
-        children: [o(e), (0, r.jsxs)("div", {
+        children: [a(e), (0, r.jsxs)("div", {
           className: S.tags,
           children: [null != t && "" !== t ? (0, r.jsx)("span", {
             className: S.altTag,
@@ -109,7 +109,7 @@ function R(e) {
   let {
     file: t,
     alt: n,
-    spoiler: o,
+    spoiler: a,
     size: s = O.q.MEDIUM,
     onMouseEnter: l
   } = e, [u, d] = i.useState(), [f, p] = i.useState({
@@ -141,7 +141,7 @@ function R(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       return null == u ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)("img", {
         src: u,
-        className: a()(S.media, {
+        className: o()(S.media, {
           [S.spoiler]: e,
           [S.imageSmall]: _,
           [S.sizeXSmall]: s === O.q.XSMALL,
@@ -171,7 +171,7 @@ function R(e) {
     });
   return (0, r.jsx)("div", {
     onMouseEnter: l,
-    className: a()(S.mediaContainer, {
+    className: o()(S.mediaContainer, {
       [S.imageSmall]: _
     }),
     children: (0, r.jsx)(c.P3F, {
@@ -181,7 +181,7 @@ function R(e) {
       children: (0, r.jsx)(P, {
         size: s,
         alt: n,
-        spoiler: o,
+        spoiler: a,
         renderContent: h
       })
     })
@@ -192,7 +192,7 @@ function w(e) {
   let {
     file: t,
     alt: n,
-    spoiler: o,
+    spoiler: a,
     size: s = O.q.MEDIUM,
     onMouseEnter: l,
     onVideoLoadError: c
@@ -209,11 +209,11 @@ function w(e) {
     children: (0, r.jsx)(P, {
       size: s,
       alt: n,
-      spoiler: o,
+      spoiler: a,
       renderContent: e => (0, r.jsx)(_.Z, {
         ref: f,
         src: u,
-        className: a()(S.media, {
+        className: o()(S.media, {
           [S.spoiler]: e,
           [S.sizeClip]: s === O.q.CLIP,
           [S.sizeXSmall]: s === O.q.XSMALL,
@@ -231,28 +231,28 @@ function D(e) {
   var t;
   let {
     upload: n,
-    size: o = O.q.MEDIUM,
+    size: a = O.q.MEDIUM,
     onMouseEnter: s
   } = e, [l, c] = i.useState(false);
   return n.isImage && n.item.platform === f.ow.WEB ? (0, r.jsx)(R, {
     file: n.item.file,
     alt: n.description,
     spoiler: n.spoiler,
-    size: o,
+    size: a,
     onMouseEnter: s
   }) : !l && n.isVideo && n.item.platform === f.ow.WEB ? (0, r.jsx)(w, {
     file: n.item.file,
-    size: o,
+    size: a,
     alt: n.description,
     spoiler: n.spoiler,
     onMouseEnter: s,
     onVideoLoadError: () => c(true)
   }) : (0, r.jsx)("div", {
     onMouseEnter: s,
-    className: a()(S.icon, S[null != (t = n.classification) ? t : ""], {
-      [S.imageSmall]: o === O.q.SMALL,
-      [S.sizeXSmall]: o === O.q.XSMALL,
-      [S.sizeXXSmall]: o === O.q.XXSMALL
+    className: o()(S.icon, S[null != (t = n.classification) ? t : ""], {
+      [S.imageSmall]: a === O.q.SMALL,
+      [S.sizeXSmall]: a === O.q.XSMALL,
+      [S.sizeXXSmall]: a === O.q.XXSMALL
     }),
     children: (0, r.jsx)("div", {
       className: S.tags,
@@ -268,7 +268,7 @@ function x(e) {
   let {
     channelId: t,
     draftType: n,
-    upload: o,
+    upload: a,
     keyboardModeEnabled: f,
     label: _,
     size: m = O.q.MEDIUM,
@@ -281,18 +281,18 @@ function x(e) {
   }), R = e => {
     e.stopPropagation(), (0, c.h7j)(e => (0, r.jsx)(d.default, A(T({}, e), {
       draftType: n,
-      upload: o,
+      upload: a,
       channelId: t,
       onSubmit: e => {
         let {
           name: r,
           description: i,
-          spoiler: a
+          spoiler: o
         } = e;
-        u.Z.update(t, o.id, n, {
+        u.Z.update(t, a.id, n, {
           filename: r,
           description: i,
-          spoiler: a
+          spoiler: o
         })
       }
     })))
@@ -300,28 +300,28 @@ function x(e) {
   return (0, r.jsxs)(O.Z, {
     actions: (0, r.jsxs)(i.Fragment, {
       children: [h ? (0, r.jsx)(y.Z, {
-        className: a()({
+        className: o()({
           [S.action]: N
         }),
         tooltip: C ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzA),
-        onClick: () => u.Z.update(t, o.id, n, {
-          spoiler: !o.spoiler
+        onClick: () => u.Z.update(t, a.id, n, {
+          spoiler: !a.spoiler
         }),
-        children: o.spoiler ? (0, r.jsx)(c.kZF, {
+        children: a.spoiler ? (0, r.jsx)(c.kZF, {
           size: "md",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [S.actionBarIcon]: N
           })
         }) : (0, r.jsx)(c.tEF, {
           size: "xs",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [S.actionBarIcon]: N
           })
         })
       }) : null, h && !C ? (0, r.jsx)(y.Z, {
-        className: a()({
+        className: o()({
           [S.action]: N
         }),
         tooltip: v.intl.string(v.t.Y8ujqr),
@@ -329,37 +329,37 @@ function x(e) {
         children: (0, r.jsx)(c.vdY, {
           size: "xs",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [S.actionBarIcon]: N
           })
         })
       }) : null, (0, r.jsx)(y.Z, {
-        className: a()({
+        className: o()({
           [S.action]: N
         }),
         tooltip: C ? v.intl.string(v.t.MskAXa) : v.intl.string(v.t.vN7REz),
-        onClick: () => u.Z.remove(t, o.id, n),
+        onClick: () => u.Z.remove(t, a.id, n),
         dangerous: true,
         children: (0, r.jsx)(c.XHJ, {
           size: "md",
           color: "currentColor",
-          className: a()({
+          className: o()({
             [S.actionBarIcon]: N
           })
         })
       })]
     }),
     draftType: n,
-    id: o.id,
+    id: a.id,
     channelId: t,
     handleEditModal: R,
     keyboardModeEnabled: f,
     size: m,
-    className: a()({
+    className: o()({
       [S.attachmentItemSmall]: N
     }),
     children: [(0, r.jsx)(D, {
-      upload: o,
+      upload: a,
       size: m
     }), !E && !C && (0, r.jsx)("div", {
       className: S.filenameContainer,
@@ -367,7 +367,7 @@ function x(e) {
       children: (0, r.jsx)(c.Text, {
         className: S.filename,
         variant: "text-sm/normal",
-        children: null != _ ? _ : o.filename
+        children: null != _ ? _ : a.filename
       })
     }), C && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.Z, {

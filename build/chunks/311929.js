@@ -64,28 +64,28 @@ function p(e, t) {
   let n = null;
   for (let r in t) {
     let i = e[r],
-      o = t[r];
-    true === o || g(i, o) || (null == n ? n = d(c({}, e), {
-      [r]: o
-    }) : n[r] = o)
+      a = t[r];
+    true === a || g(i, a) || (null == n ? n = d(c({}, e), {
+      [r]: a
+    }) : n[r] = a)
   }
   return null != n ? n : e
 }
 
 function _(e, t, n) {
-  return (i()(null == t || t[a.O] === e, "Existing record type does not match the expected type"), null != t && E(t, n)) ? t : h(e, n)
+  return (i()(null == t || t[o.O] === e, "Existing record type does not match the expected type"), null != t && E(t, n)) ? t : h(e, n)
 }
 
 function m(e, t) {
-  return "object" == typeof t && null != t && (a.O in t && t[a.O]) === e
+  return "object" == typeof t && null != t && (o.O in t && t[o.O]) === e
 }
 
 function h(e, t) {
-  return t[a.O] = e, t
+  return t[o.O] = e, t
 }
 
 function g(e, t) {
-  return null == e || null == t ? e === t : e === t || (e instanceof Date && t instanceof Date ? e.getTime() === t.getTime() : e instanceof Set && t instanceof Set ? (0, o.O)(e, t) : Array.isArray(e) && Array.isArray(t) ? (0, s.E)(e, t) : "object" == typeof e && "object" == typeof t && (0, s.Z)(e, t))
+  return null == e || null == t ? e === t : e === t || (e instanceof Date && t instanceof Date ? e.getTime() === t.getTime() : e instanceof Set && t instanceof Set ? (0, a.O)(e, t) : Array.isArray(e) && Array.isArray(t) ? (0, s.E)(e, t) : "object" == typeof e && "object" == typeof t && (0, s.Z)(e, t))
 }
 
 function E(e, t) {

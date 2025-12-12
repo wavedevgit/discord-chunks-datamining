@@ -2,20 +2,20 @@
 /** chunk id: 320830, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk954955 = require("./954955.js"),
-  l = require.n(Chunk954955),
+  a = require.n(Chunk954955),
   Chunk748780 = require("./748780.js"),
   Chunk873546 = require("./873546.js"),
   Chunk477690 = require("./477690.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624138 = require("./624138.js"),
-  Chunk955393 = require("./955393.js");
+  Chunk161843 = require("./161843.js");
 
-function g(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,24 +24,24 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
-let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
-  f = {
+let m = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+  p = {
     friction: 10,
     tension: 130
   },
-  _ = function(e) {
+  x = function(e) {
     return class extends i.Component {
       componentDidMount() {
         o.tq || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
@@ -59,9 +59,9 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(0, e) : e()
       }
       animateTo(e, t) {
-        a.Z.spring(this.anim, m({
+        l.Z.spring(this.anim, g({
           toValue: e
-        }, f)).start(t)
+        }, p)).start(t)
       }
       getAnimatedStyle(e) {
         return this.state.shouldAnimate ? {
@@ -89,24 +89,24 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               let {
                 reducedMotion: n
               } = t;
-              return (0, r.jsx)(a.Z.div, {
+              return (0, r.jsx)(l.Z.div, {
                 className: h.animatedDiv,
                 style: this.getAnimatedStyle(n.enabled),
-                children: (0, r.jsx)(e, m({}, this.props))
+                children: (0, r.jsx)(e, g({}, this.props))
               })
             }
           })
         })
       }
       constructor(...e) {
-        super(...e), g(this, "timeout", true), g(this, "anim", new a.Z.Value(0)), g(this, "state", {
+        super(...e), f(this, "timeout", true), f(this, "anim", new l.Z.Value(0)), f(this, "state", {
           shouldAnimate: !o.tq
-        }), g(this, "handleResize", () => {
-          let e = window.innerWidth > p;
+        }), f(this, "handleResize", () => {
+          let e = window.innerWidth > m;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })
-        }), g(this, "handleResizeDebounced", l()(this.handleResize, 60))
+        }), f(this, "handleResizeDebounced", a()(this.handleResize, 60))
       }
     }
   }

@@ -7,26 +7,26 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk70097 = require("./70097.jsx"),
   Chunk881474 = require("./881474.js"),
   Chunk168352 = require("./168352.js"),
   Chunk379839 = require("./379839.js"),
   Chunk359135 = require("./359135.js"),
-  Chunk993447 = require("./993447.js");
+  Chunk899170 = require("./899170.js");
 
 function p(e) {
   let {
     nameplate: t,
     hovered: n,
-    selected: o,
+    selected: a,
     content: s,
     placement: c
-  } = e, p = (0, u.p)(s, t, n, o, c), m = (0, l.C)(n, o), h = i.useRef(null == t);
+  } = e, p = (0, u.p)(s, t, n, a, c), m = (0, l.C)(n, a), h = i.useRef(null == t);
   return (i.useEffect(() => {
     h.current || null != t || (h.current = true)
   }, [t]), null == t) ? null : (0, r.jsx)("div", {
-    className: a()(f.container, {
+    className: o()(f.container, {
       [f.fadeIn]: h.current,
       [f.fitInAccount]: c === d.i.ACCOUNT
     }),
@@ -36,9 +36,9 @@ function p(e) {
     "aria-hidden": true,
     children: (0, r.jsx)(_, {
       nameplate: t,
-      className: a()(f.img, {
+      className: o()(f.img, {
         [f.hover]: n,
-        [f.selected]: o,
+        [f.selected]: a,
         [f.account]: c === d.i.ACCOUNT,
         [f.preview]: c === d.i.PREVIEW,
         [f.mini_preview]: c === d.i.MINI_PREVIEW,
@@ -58,21 +58,21 @@ function _(e) {
     nameplate: t,
     className: n,
     style: i,
-    animate: o,
-    loop: a
+    animate: a,
+    loop: o
   } = e, {
     staticAsset: s,
     animatedAsset: l
   } = (0, c._)(t), u = !(null == l ? true : l.endsWith(".webm"));
   return null == s || null == l ? null : u ? (0, r.jsx)(h, {
-    asset: o ? l : s,
+    asset: a ? l : s,
     className: n,
     style: i
   }) : (0, r.jsx)(m, {
     animatedAsset: l,
     staticAsset: s,
-    animate: o,
-    loop: a,
+    animate: a,
+    loop: o,
     style: i,
     className: n
   })
@@ -82,14 +82,14 @@ function m(e) {
   let {
     staticAsset: t,
     animatedAsset: n,
-    animate: o,
-    loop: a,
+    animate: a,
+    loop: o,
     className: l,
     style: c
   } = e, u = i.useRef(null);
   return i.useEffect(() => {
-    null != u.current && (o || a ? u.current.play() : u.current.pause())
-  }, [o, a]), (0, r.jsx)("div", {
+    null != u.current && (a || o ? u.current.play() : u.current.pause())
+  }, [a, o]), (0, r.jsx)("div", {
     className: f.videoContainer,
     style: c,
     children: (0, r.jsx)(s.Z, {
@@ -97,7 +97,7 @@ function m(e) {
       poster: t,
       ref: u,
       playsInline: true,
-      loop: a,
+      loop: o,
       controls: false,
       className: l,
       tabIndex: false

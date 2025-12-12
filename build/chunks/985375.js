@@ -8,7 +8,7 @@ require.d(exports, {
 }), require("./583741.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk516373 = require("./516373.js");
 
 function s(e, t, n) {
@@ -58,7 +58,7 @@ function f() {
 
 function p(e) {
   let t = f();
-  return r.useMemo(() => o()(t).map((t, n) => {
+  return r.useMemo(() => a()(t).map((t, n) => {
     var r;
     return u(l({}, t), {
       url: n,

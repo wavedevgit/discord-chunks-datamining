@@ -55,8 +55,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -104,19 +104,19 @@ let b = (0, Chunk748521.F)()((0, Chunk690775.tJ)((e, t) => ({
     videoProgress: {},
     transcript: null,
     setVolume: t => {
-      (0, o.j)(() => e({
+      (0, a.j)(() => e({
         volume: t
       }))
     },
     setMuted: t => {
-      (0, o.j)(() => e({
+      (0, a.j)(() => e({
         muted: t
       }))
     },
     setVideoProgress: (n, r, i) => {
-      var a, s;
-      let c = Math.max(null != (s = null == (a = t().videoProgress[n]) ? true : a.maxTimestampSec) ? s : 0, Math.floor(r));
-      (0, o.j)(() => e({
+      var o, s;
+      let c = Math.max(null != (s = null == (o = t().videoProgress[n]) ? true : o.maxTimestampSec) ? s : 0, Math.floor(r));
+      (0, a.j)(() => e({
         videoProgress: u(l({}, t().videoProgress), {
           [n]: {
             timestampSec: r,
@@ -127,17 +127,17 @@ let b = (0, Chunk748521.F)()((0, Chunk690775.tJ)((e, t) => ({
       }))
     },
     setTranscriptEnabled: t => {
-      (0, o.j)(() => e({
+      (0, a.j)(() => e({
         transcriptEnabled: t
       }))
     },
     setCaptionEnabled: t => {
-      (0, o.j)(() => e({
+      (0, a.j)(() => e({
         captionEnabled: t
       }))
     },
     setFullScreenEnabled: t => {
-      (0, o.j)(() => e({
+      (0, a.j)(() => e({
         fullScreenEnabled: t
       }))
     },
@@ -147,7 +147,7 @@ let b = (0, Chunk748521.F)()((0, Chunk690775.tJ)((e, t) => ({
       return null == n ? "UNKNOWN" : 0 === n.timestampSec ? "NOT_STARTED" : n.timestampSec >= n.duration ? "COMPLETED" : "IN_PROGRESS"
     },
     resetQuest: n => {
-      (0, o.j)(() => {
+      (0, a.j)(() => {
         let r = t().videoProgress,
           {
             [n]: i
@@ -158,7 +158,7 @@ let b = (0, Chunk748521.F)()((0, Chunk690775.tJ)((e, t) => ({
       })
     },
     setTranscriptAsset: t => {
-      (0, o.j)(() => {
+      (0, a.j)(() => {
         e({
           transcript: t
         })
@@ -169,10 +169,10 @@ let b = (0, Chunk748521.F)()((0, Chunk690775.tJ)((e, t) => ({
     storage: (0, Chunk690775.FL)(() => ({
       getItem: e => {
         var t;
-        return null != (t = a.K.get(e)) ? t : null
+        return null != (t = o.K.get(e)) ? t : null
       },
-      setItem: (e, t) => a.K.set(e, t),
-      removeItem: e => a.K.remove(e)
+      setItem: (e, t) => o.K.set(e, t),
+      removeItem: e => o.K.remove(e)
     })),
     partialize: e => ({
       volume: e.volume,

@@ -6,9 +6,9 @@ require.d(exports, {
 });
 var Chunk96280 = require("./96280.js"),
   Chunk240481 = require("./240481.js");
-let o = new Chunk96280.W,
-  a = new Chunk240481.g(o.registerPendingError);
+let a = new Chunk96280.W,
+  o = new Chunk240481.g(a.registerPendingError);
 
 function s(e) {
-  o.enqueueTask(a.create(e))
+  a.enqueueTask(o.create(e))
 }

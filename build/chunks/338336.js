@@ -17,8 +17,8 @@ function l(e, t, n) {
     allowedPoorFpsRatio: u,
     fpsThreshold: d,
     backoffTimeSec: f
-  } = o.y.defaultConfig;
-  a.default.track(s.rMx.VIDEO_TOGGLED, {
+  } = a.y.defaultConfig;
+  o.default.track(s.rMx.VIDEO_TOGGLED, {
     video_toggle_reason: t,
     toggled_user_id: e,
     rtc_connection_id: null == r ? true : r(),

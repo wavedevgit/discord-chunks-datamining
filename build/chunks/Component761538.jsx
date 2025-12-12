@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk903893 = require("./903893.js");
+  Chunk547803 = require("./547803.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,14 +48,14 @@ function c(e) {
   };
   return (0, r.jsxs)(i.P3F, {
     onClick: s,
-    className: a.accessory,
+    className: o.accessory,
     children: [(0, r.jsx)(i.d3s, {
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      className: a.accessoryText,
-      children: o.intl.string(o.t["2aXnfa"])
+      className: o.accessoryText,
+      children: a.intl.string(a.t["2aXnfa"])
     })]
   })
 }

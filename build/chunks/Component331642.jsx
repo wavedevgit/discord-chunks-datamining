@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk603074 = require("./603074.jsx"),
   Chunk294206 = require("./294206.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk298879 = require("./298879.js");
+  Chunk462135 = require("./462135.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,16 +62,16 @@ function O(e, t) {
 function v(e) {
   let {
     onSelect: t
-  } = e, [n, a] = i.useState(false), l = (0, o.e7)([c.default], () => c.default.getCurrentUser()), d = u.ZP.canUseCustomCallSounds(l), f = i.useRef(null);
+  } = e, [n, o] = i.useState(false), l = (0, a.e7)([c.default], () => c.default.getCurrentUser()), d = u.ZP.canUseCustomCallSounds(l), f = i.useRef(null);
 
   function E(e) {
-    d && (a(false), null == t || t(e))
+    d && (o(false), null == t || t(e))
   }
   return (0, r.jsx)(s.yRy, {
     targetElementRef: f,
     shouldShow: n,
     position: "left",
-    onRequestClose: () => a(false),
+    onRequestClose: () => o(false),
     renderPopout: e => {
       let {
         closePopout: t
@@ -92,7 +92,7 @@ function v(e) {
     children: e => (0, r.jsx)(m.hU, O(b({}, e), {
       ref: f,
       onClick: () => {
-        a(!n)
+        o(!n)
       },
       text: h.intl.string(h.t.uOe0Az),
       children: (0, r.jsx)(s.vdY, {
@@ -129,7 +129,7 @@ function I(e) {
     sound: t,
     isGlobal: n,
     onSelect: i
-  } = e, o = null != t, c = null == t ? true : t.emojiId, u = null == t ? true : t.emojiName, d = o && (null != u || null != c), f = e => (0, r.jsx)(s.Text, {
+  } = e, a = null != t, c = null == t ? true : t.emojiId, u = null == t ? true : t.emojiName, d = a && (null != u || null != c), f = e => (0, r.jsx)(s.Text, {
     variant: "text-xs/medium",
     color: "text-default",
     tag: "span",
@@ -155,7 +155,7 @@ function I(e) {
         color: "text-strong",
         className: g.soundText,
         children: p()
-      }), o ? (0, r.jsx)(S, {
+      }), a ? (0, r.jsx)(S, {
         sound: t
       }) : (0, r.jsx)(s.gj8, {
         size: "md",
@@ -166,12 +166,12 @@ function I(e) {
       className: g.container,
       children: [(0, r.jsx)(v, {
         onSelect: i
-      }), o && !n && (0, r.jsx)(m.hU, {
+      }), a && !n && (0, r.jsx)(m.hU, {
         onClick: () => i(null),
         text: h.intl.string(h.t.jmtcGA),
         children: (0, r.jsx)(s.XHJ, {
           size: "md",
-          color: a.Z.unsafe_rawColors.RED_400.css,
+          color: o.Z.unsafe_rawColors.RED_400.css,
           className: g.secondaryIcon
         })
       })]

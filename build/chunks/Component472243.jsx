@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk781990 = require("./781990.js");
+  Chunk384214 = require("./384214.js");
 
 function y(e) {
   var t, n, i, y;
@@ -31,7 +31,7 @@ function y(e) {
     maxCharacterCount: S,
     showRemainingCharsAfterCount: I,
     className: T
-  } = e, C = (0, a.e7)([p.default], () => _.ZP.canUseIncreasedMessageLength(p.default.getCurrentUser())), A = (0, d.Z)(), N = null != S ? S : A, P = null != (y = null != I ? I : S) ? y : A / 10, R = v.length, w = null != O.upsellLongMessages && (null != R ? R : 0) > h.J6R && C, D = null != O.upsellLongMessages && !C, x = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, L = N - R, j = L > P, M = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
+  } = e, C = (0, o.e7)([p.default], () => _.ZP.canUseIncreasedMessageLength(p.default.getCurrentUser())), A = (0, d.Z)(), N = null != S ? S : A, P = null != (y = null != I ? I : S) ? y : A / 10, R = v.length, w = null != O.upsellLongMessages && (null != R ? R : 0) > h.J6R && C, D = null != O.upsellLongMessages && !C, x = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, L = N - R, j = L > P, M = L < 0 && x, k = 0 === L ? E.intl.string(E.t.tU6YQ7) : L > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
     count: L
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U
@@ -41,7 +41,7 @@ function y(e) {
   return (0, r.jsx)(u.Gt, {
     value: U,
     children: (0, r.jsxs)("div", {
-      className: o()(T, b.characterCount),
+      className: a()(T, b.characterCount),
       children: [(0, r.jsxs)("div", {
         className: b.flairContainer,
         children: [w && G ? (0, r.jsx)(s.u, {

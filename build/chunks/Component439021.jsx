@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk502109 = require("./502109.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk527094 = require("./527094.js");
+  Chunk403095 = require("./403095.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,7 +42,7 @@ function u(e) {
       paymentRequestWallet: p
     } = e,
     _ = {
-      paymentLabel: a.intl.string(a.t.ZURqX0),
+      paymentLabel: o.intl.string(o.t.ZURqX0),
       paymentRequestRef: f,
       renderConnectorView: true,
       onStripePaymentMethodReceived: l,
@@ -56,10 +56,10 @@ function u(e) {
         type: i.RAz.PULSING_ELLIPSIS
       })
     };
-  return t = "applePay" === p ? (0, r.jsx)(o.Ch, c({}, _)) : (0, r.jsx)(o.Tr, c({}, _)), (0, r.jsx)("div", {
+  return t = "applePay" === p ? (0, r.jsx)(a.Ch, c({}, _)) : (0, r.jsx)(a.Tr, c({}, _)), (0, r.jsx)("div", {
     className: s.body,
     children: (0, r.jsx)(i.gNt, {
-      label: a.intl.string(a.t.eQ2bLp),
+      label: o.intl.string(o.t.eQ2bLp),
       children: t
     })
   })

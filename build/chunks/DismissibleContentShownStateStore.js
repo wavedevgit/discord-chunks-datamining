@@ -107,7 +107,7 @@ let h = new(require("./499303.js")).I,
     if (0 === e.candidates.size) return e;
     let t = new Date().getTime() - e.lastWinnerTime > g;
     return R(e) && !t ? (h.unschedule(), A(e, N(e))) : (null != e.shownFatigableCandidate && !t || h.scheduled() || x(e) || h.schedule(() => {
-      (0, o.j)(() => {
+      (0, a.j)(() => {
         y.setState(e => {
           let t = v(e);
           return A(t, P(t))
@@ -122,7 +122,7 @@ let h = new(require("./499303.js")).I,
   },
   L = e => {
     let t = d.O.has(e.content);
-    (0, o.j)(() => {
+    (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
         return O ? r : t ? I(r, e) : w(T(r, e))
@@ -130,7 +130,7 @@ let h = new(require("./499303.js")).I,
     })
   },
   j = (e, t) => {
-    (0, o.j)(() => {
+    (0, a.j)(() => {
       y.setState(n => {
         let r = v(n);
         return t ? w(S(C(r, e), e)) : S(C(r, e), e)

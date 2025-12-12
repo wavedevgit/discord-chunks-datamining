@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk562558 = require("./562558.js"),
   Chunk681102 = require("./681102.jsx"),
   Chunk463194 = require("./463194.jsx"),
-  Chunk505044 = require("./505044.js");
+  Chunk413953 = require("./413953.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,20 +41,20 @@ function _(e) {
     profile: t,
     className: n
   } = e, {
-    gamesToDisplay: o,
+    gamesToDisplay: a,
     lastGameToDisplay: f,
     remainingGames: _
   } = (0, l.Z)(t), m = i.useMemo(() => t.traits.map((e, t) => p({
     key: "trait-".concat(t)
   }, e)).filter(e => e.label.length > 0), [t]), h = t.description.length > 0;
-  return h || o.length > 0 || m.length > 0 ? (0, r.jsxs)("div", {
-    className: a()(d.body, n),
+  return h || a.length > 0 || m.length > 0 ? (0, r.jsxs)("div", {
+    className: o()(d.body, n),
     children: [h ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-subtle",
       children: t.description
     }) : null, (0, r.jsx)(c.Z, {
-      gamesToDisplay: o,
+      gamesToDisplay: a,
       lastGameToDisplay: f,
       remainingGames: _,
       activity: t.gameActivity

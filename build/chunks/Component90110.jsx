@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
@@ -24,9 +24,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk757266 = require("./757266.js"),
   Chunk695103 = require("./695103.js"),
   Chunk524995 = require("./524995.js"),
-  Chunk100971 = require("./100971.js"),
+  Chunk349350 = require("./349350.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk428498 = require("./428498.js");
+  Chunk536789 = require("./536789.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,7 +75,7 @@ function R() {
     {
       canStartAuthorization: n,
       hasAlreadyLinked: i,
-      startAuthorization: a,
+      startAuthorization: o,
       preferredFlow: u,
       connectionApp: p,
       debug: {
@@ -92,35 +92,35 @@ function R() {
     L = "authorization_debug",
     j = [{
       id: "authorization_debug",
-      name: Chunk388032.intl.string(Chunk100971.default.vR0zs6)
+      name: Chunk388032.intl.string(Chunk349350.default.vR0zs6)
     }],
     M = () => (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk428498.header,
+        className: Chunk536789.header,
         children: (0, Chunk54381.jsx)("div", {
-          className: Chunk428498.headerTextContainer,
+          className: Chunk536789.headerTextContainer,
           children: (0, Chunk54381.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/extrabold",
-            children: Chunk388032.intl.format(Chunk100971.default.KoK4J9, {
+            children: Chunk388032.intl.format(Chunk349350.default.KoK4J9, {
               appName: ""
             })
           })
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk428498.body,
+        className: Chunk536789.body,
         children: (0, Chunk54381.jsx)(Chunk793030.$jN, {
-          className: Chunk428498.spinner
+          className: Chunk536789.spinner
         })
       })]
     }),
     k = () => (s()(null != module, "Application should be defined when rendering the test mode panel"), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk428498.header,
+        className: Chunk536789.header,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk428498.headerTextContainer,
+          className: Chunk536789.headerTextContainer,
           children: (0, Chunk54381.jsx)(Chunk793030.X6q, {
             variant: "heading-lg/extrabold",
-            children: Chunk388032.intl.format(Chunk100971.default.KoK4J9, {
+            children: Chunk388032.intl.format(Chunk349350.default.KoK4J9, {
               appName: module.name
             })
           })
@@ -131,16 +131,16 @@ function R() {
           onClick: () => (0, Chunk550385.Ll)()
         })]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk428498.body,
+        className: Chunk536789.body,
         children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
-          className: Chunk428498.tabBar,
+          className: Chunk536789.tabBar,
           selectedItem: L,
           onItemSelect: () => {},
           orientation: "horizontal",
           type: "top",
           look: "brand",
           children: j.map(e => (0, r.jsx)(d.njP.Item, {
-            className: o()(T.tab, {
+            className: a()(T.tab, {
               [T.selected]: e.id === L
             }),
             id: e.id,
@@ -150,36 +150,36 @@ function R() {
         }), (0, Chunk54381.jsx)(Chunk793030.xvT, {
           variant: "text-md/medium",
           color: "text-subtle",
-          children: Chunk388032.intl.string(Chunk100971.default["no+FQS"])
+          children: Chunk388032.intl.string(Chunk349350.default["no+FQS"])
         }), (0, Chunk54381.jsx)(w, {
           overallStatus: C ? 0 : R ? 3 : 1,
-          name: Chunk388032.intl.string(Chunk100971.default.AGLx00),
+          name: Chunk388032.intl.string(Chunk349350.default.AGLx00),
           steps: [{
             status: R ? 2 : 4,
-            text: Chunk388032.intl.string(Chunk100971.default.kxF9br),
-            description: R ? null : Chunk388032.intl.string(Chunk100971.default.PFxxJa),
+            text: Chunk388032.intl.string(Chunk349350.default.kxF9br),
+            description: R ? null : Chunk388032.intl.string(Chunk349350.default.PFxxJa),
             learnMoreLink: R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }, {
             status: C ? 2 : R ? 3 : 4,
-            text: Chunk388032.intl.string(Chunk100971.default.S94dzs),
-            description: C || !R ? null : Chunk388032.intl.string(Chunk100971.default.aTULMB),
+            text: Chunk388032.intl.string(Chunk349350.default.S94dzs),
+            description: C || !R ? null : Chunk388032.intl.string(Chunk349350.default.aTULMB),
             learnMoreLink: C || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
           isChosen: Chunk692547 === Chunk524995.r.RPC
         }), (0, Chunk54381.jsx)(w, {
           overallStatus: +!N,
-          name: Chunk388032.intl.string(Chunk100971.default.K3ObrU),
+          name: Chunk388032.intl.string(Chunk349350.default.K3ObrU),
           steps: [{
             status: N ? 2 : 4,
-            text: Chunk388032.intl.string(Chunk100971.default["8a7IrV"]),
-            description: N ? Chunk388032.intl.formatToPlainString(Chunk100971.default["9iLeL2"], {
+            text: Chunk388032.intl.string(Chunk349350.default["8a7IrV"]),
+            description: N ? Chunk388032.intl.formatToPlainString(Chunk349350.default["9iLeL2"], {
               url: null == Chunk782568 ? true : Chunk782568.connectionEntrypointUrl
             }) : null
           }],
           isChosen: Chunk692547 === Chunk524995.r.WEB
         })]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk428498.footer,
+        className: Chunk536789.footer,
         children: [(0, Chunk54381.jsx)(D, {
           status: +!Chunk120356,
           text: Chunk388032.intl.string(Chunk388032.t["Vu/zmQ"])
@@ -189,14 +189,14 @@ function R() {
             overflow: "hidden"
           },
           variant: "text-md/medium",
-          children: Chunk388032.intl.string(Chunk100971.default.eg0mNa)
+          children: Chunk388032.intl.string(Chunk349350.default.eg0mNa)
         }), (0, Chunk54381.jsx)(Chunk793030.zxk, {
           variant: "secondary",
           disabled: !require || Chunk120356,
           onClick: () => Chunk512722({
             analyticsLocations: exports
           }),
-          text: Chunk388032.intl.string(Chunk100971.default.w0pN4R),
+          text: Chunk388032.intl.string(Chunk349350.default.w0pN4R),
           fullWidth: true
         }), null != A && (0, Chunk54381.jsx)(Chunk793030.zxk, {
           variant: "secondary",
@@ -209,14 +209,14 @@ function R() {
               showFeedback: false
             })
           },
-          text: Chunk388032.intl.string(Chunk100971.default.tkIymA),
+          text: Chunk388032.intl.string(Chunk349350.default.tkIymA),
           fullWidth: true
         })]
       })]
     }));
   return (0, Chunk54381.jsx)("div", {
     "data-app-right-panel": true,
-    className: Chunk428498.debugToolsPanel,
+    className: Chunk536789.debugToolsPanel,
     children: (0, Chunk54381.jsx)(Chunk793030.y5t, {
       children: null != module ? k() : M()
     })
@@ -228,14 +228,14 @@ function w(e) {
     overallStatus: t,
     name: n,
     steps: i,
-    isChosen: o
+    isChosen: a
   } = e;
   return (0, r.jsxs)("div", {
     className: T.categoryContainer,
     children: [(0, r.jsx)(D, {
       status: t,
       text: n
-    }), i.map((e, t) => (0, r.jsx)(x, A({}, e), t)), o && (0, r.jsx)("div", {
+    }), i.map((e, t) => (0, r.jsx)(x, A({}, e), t)), a && (0, r.jsx)("div", {
       className: T.calloutBox,
       children: (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
@@ -268,7 +268,7 @@ function x(e) {
     status: t,
     text: n,
     description: i,
-    learnMoreLink: o
+    learnMoreLink: a
   } = e;
   return (0, r.jsxs)("div", {
     className: T.statusRow,
@@ -283,10 +283,10 @@ function x(e) {
         variant: "text-sm/medium",
         color: "text-subtle",
         children: i
-      }), null != o && (0, r.jsx)(l.Avr, {
+      }), null != a && (0, r.jsx)(l.Avr, {
         textVariant: "text-sm/medium",
         text: I.intl.string(I.t.hvVgAZ),
-        onClick: () => (0, p.Z)(o)
+        onClick: () => (0, p.Z)(a)
       })]
     })]
   })

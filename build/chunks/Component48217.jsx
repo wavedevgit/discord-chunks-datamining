@@ -1,7 +1,7 @@
 /** Chunk was on 72891 **/
 /** chunk id: 48217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => _
+  c: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,9 +13,9 @@ var Chunk481060 = require("./481060.js"),
   Chunk30513 = require("./30513.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk131115 = require("./131115.js");
+  Chunk550293 = require("./550293.js");
 
-function g(e) {
+function b(e) {
   let {
     guild: t,
     banner: n
@@ -42,7 +42,7 @@ function g(e) {
   })
 }
 
-function _(e) {
+function g(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: n,
@@ -64,7 +64,7 @@ function _(e) {
           targetLevelOrPlan: n
         })
       }(f, o),
-      image: (0, i.jsx)(g, {
+      image: (0, i.jsx)(b, {
         guild: a,
         banner: r
       })

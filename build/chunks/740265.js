@@ -13,17 +13,17 @@ function s(e) {
   var t;
   let n = null != (t = (0, i.Z)(e)) ? t : "";
   switch (n) {
-    case o.M7m.PS4:
-    case o.M7m.PS5:
-      return a.intl.formatToPlainString(a.t.A17aM8, {
+    case a.M7m.PS4:
+    case a.M7m.PS5:
+      return o.intl.formatToPlainString(o.t.A17aM8, {
         platform: n.toUpperCase()
       });
-    case o.M7m.XBOX:
-    case o.M7m.SAMSUNG:
-      return a.intl.formatToPlainString(a.t.A17aM8, {
+    case a.M7m.XBOX:
+    case a.M7m.SAMSUNG:
+      return o.intl.formatToPlainString(o.t.A17aM8, {
         platform: r.Z.get(n).name
       });
     default:
-      return a.intl.string(a.t["2TbM/G"])
+      return o.intl.string(o.t["2TbM/G"])
   }
 }

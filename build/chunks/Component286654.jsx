@@ -50,15 +50,15 @@ function f(e, t) {
   }), e
 }
 
-function p(e, t, i, a) {
+function p(e, t, i, o) {
   let c = s.default.getCurrentUser();
-  (null != t || l.ZP.canUseCustomCallSounds(c)) && (0, o.jW)(e, async () => {
+  (null != t || l.ZP.canUseCustomCallSounds(c)) && (0, a.jW)(e, async () => {
     let {
       default: e
     } = await n.e("93741").then(n.bind(n, 547652));
     return n => (0, r.jsx)(e, f(u({}, n), {
       soundGuild: t,
-      activeCallGuildId: a,
+      activeCallGuildId: o,
       sound: i
     }))
   })
@@ -67,7 +67,7 @@ function p(e, t, i, a) {
 function _(e, t) {
   return i.useCallback(n => {
     n.stopPropagation();
-    let r = a.Z.getGuild(e.guildId),
+    let r = o.Z.getGuild(e.guildId),
       i = s.default.getCurrentUser();
     (null != r || l.ZP.canUseCustomCallSounds(i)) && p(n, r, e, t)
   }, [e, t])

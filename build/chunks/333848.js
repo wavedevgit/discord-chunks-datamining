@@ -27,7 +27,7 @@ let p = {
       skuId: E,
       branchId: b
     } = e;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "CREATE_CHANNEL_MODAL_SUBMIT",
       guildId: t,
       channelType: n
@@ -59,19 +59,19 @@ let p = {
       rejectWithError: false
     }).then(e => (s.ZP.isOptInEnabled(t) && u.Z.updateChannelOverrideSettings(t, e.body.id, {
       flags: f.ic.OPT_IN_ENABLED
-    }, l.ZB.OptedIn), a.Z.checkGuildTemplateDirty(t), e), e => {
-      throw o.Z.dispatch({
+    }, l.ZB.OptedIn), o.Z.checkGuildTemplateDirty(t), e), e => {
+      throw a.Z.dispatch({
         type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
         errors: e.body
       }), e
     })
   },
-  createRoleSubscriptionTemplateChannel: (e, t, n, o) => c.Z.post({
+  createRoleSubscriptionTemplateChannel: (e, t, n, a) => c.Z.post({
     url: d.ANM.GUILD_CHANNELS(e),
     body: {
       name: t,
       type: n,
-      topic: o
+      topic: a
     },
     oldFormErrors: true,
     trackedActionData: {

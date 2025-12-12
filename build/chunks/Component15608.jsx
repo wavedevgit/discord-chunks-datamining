@@ -1,7 +1,7 @@
 /** Chunk was on 79764 **/
 /** chunk id: 15608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,45 +9,45 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk109983 = require("./109983.jsx"),
   Chunk120298 = require("./120298.js"),
-  Chunk75666 = require("./75666.js"),
+  Chunk486527 = require("./486527.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk496563 = require("./496563.js");
+  Chunk995666 = require("./995666.js");
 
-function m(e) {
+function f(e) {
   let {
     guildTemplate: t,
     onClick: n,
-    autoFocus: a
-  } = e, r = l.useCallback(() => {
+    autoFocus: l
+  } = e, r = a.useCallback(() => {
     n(t)
   }, [t, n]);
   return (0, i.jsx)(s.Z, {
     icon: o.M[t.id],
     message: t.label,
     onClick: r,
-    autoFocus: a
+    autoFocus: l
   })
 }
 
-function x(e) {
+function m(e) {
   var t, n;
   let {
-    onBack: l,
+    onBack: a,
     onChooseTemplate: s,
     directoryGuildName: o
-  } = e, x = (0, c.Pp)();
+  } = e, m = (0, c.Pp)();
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.xBx, {
+    children: [(0, i.jsx)(l.xBx, {
       title: d.intl.formatToPlainString(d.t.T7aLYT, {
         guildName: o
       }),
       subtitle: d.intl.string(d.t["RA+St6"])
-    }), (0, i.jsx)(a.fef, {
+    }), (0, i.jsx)(l.fef, {
       children: (0, i.jsx)(r.w0Z, {
         className: u.scroller,
         children: (0, i.jsxs)("div", {
           className: u.templatesList,
-          children: [(0, i.jsx)(m, {
+          children: [(0, i.jsx)(f, {
             guildTemplate: (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -65,7 +65,7 @@ function x(e) {
                 })
               }
               return e
-            }({}, x[c.sE.CREATE]), n = n = {
+            }({}, m[c.sE.CREATE]), n = n = {
               label: d.intl.string(d.t.WqJbLi)
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
@@ -83,33 +83,33 @@ function x(e) {
             color: "text-default",
             variant: "text-xs/bold",
             children: d.intl.string(d.t.JGDkfg)
-          }), (0, i.jsx)(m, {
-            guildTemplate: x[c.sE.HUB_STUDY],
+          }), (0, i.jsx)(f, {
+            guildTemplate: m[c.sE.HUB_STUDY],
             onClick: s
-          }), (0, i.jsx)(m, {
-            guildTemplate: x[c.sE.HUB_SCHOOL_CLUB],
+          }), (0, i.jsx)(f, {
+            guildTemplate: m[c.sE.HUB_SCHOOL_CLUB],
             onClick: s
-          }), (0, i.jsx)(m, {
-            guildTemplate: x[c.sE.HUB_CLASS],
+          }), (0, i.jsx)(f, {
+            guildTemplate: m[c.sE.HUB_CLASS],
             onClick: s
-          }), (0, i.jsx)(m, {
-            guildTemplate: x[c.sE.HUB_SOCIAL],
+          }), (0, i.jsx)(f, {
+            guildTemplate: m[c.sE.HUB_SOCIAL],
             onClick: s
-          }), (0, i.jsx)(m, {
-            guildTemplate: x[c.sE.HUB_MAJOR],
+          }), (0, i.jsx)(f, {
+            guildTemplate: m[c.sE.HUB_MAJOR],
             onClick: s
-          }), (0, i.jsx)(m, {
-            guildTemplate: x[c.sE.HUB_DORM],
+          }), (0, i.jsx)(f, {
+            guildTemplate: m[c.sE.HUB_DORM],
             onClick: s
           })]
         })
       })
-    }), (0, i.jsx)(a.Go$, {
+    }), (0, i.jsx)(l.Go$, {
       leading: (0, i.jsx)(r.Avr, {
         textVariant: "text-sm/medium",
         variant: "secondary",
         text: d.intl.string(d.t["13/7kX"]),
-        onClick: l
+        onClick: a
       })
     })]
   })

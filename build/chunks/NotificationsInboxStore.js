@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => eb
 }), require("./361932.js"), require("./187205.js"), require("./539854.js"), require("./388685.js"), require("./642613.js"), require("./387201.js");
 var r, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk622822 = require("./622822.js"),
@@ -64,8 +64,8 @@ function H() {
   }
   for (let e in exports)
     for (let i in exports[module])
-      for (let o in exports[module][Chunk512722]) {
-        let e = Chunk592125.Z.getBasicChannel(o);
+      for (let a in exports[module][Chunk512722]) {
+        let e = Chunk592125.Z.getBasicChannel(a);
         null != module && require(module) && r.push(module)
       }
   return r.map(e => e.id).sort((e, t) => {
@@ -109,7 +109,7 @@ function K() {
     notifyingChannelIds: e,
     staleChannelIds: t
   } = H();
-  D = module, x = exports, o()(null != D, "notifyingChannelIds should not be null");
+  D = module, x = exports, a()(null != D, "notifyingChannelIds should not be null");
   let n = D.filter(e => null == w[e]),
     r = Object.keys(w).filter(e => !(null == D ? true : D.includes(e)));
   if (0 !== D.length && 0 === require.length && 0 === r.length) returnfalse;
@@ -121,8 +121,8 @@ function K() {
       }, Chunk375954.Z.isReady(module)) {
       let t = Y(module);
       if (null != exports) {
-        var i, a;
-        w[module].loadState = Chunk982183.a7.LOADED, w[module].mostRecentMessageId = null != (a = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : w[module].mostRecentMessageId
+        var i, o;
+        w[module].loadState = Chunk982183.a7.LOADED, w[module].mostRecentMessageId = null != (o = null == (i = exports.last()) ? true : Chunk512722.id) ? Chunk442837 : w[module].mostRecentMessageId
       }
     } L.updateChannelIds(D), W()
 }
@@ -168,22 +168,22 @@ function $(e) {
   var t, n, r;
   let {
     channelId: i,
-    message: o
+    message: a
   } = e;
-  if (null == D || (null == (t = o.author) ? true : t.id) === (null == (n = v.default.getCurrentUser()) ? true : n.id)) returnfalse;
-  let a = D.includes(i);
+  if (null == D || (null == (t = a.author) ? true : t.id) === (null == (n = v.default.getCurrentUser()) ? true : n.id)) returnfalse;
+  let o = D.includes(i);
   if ((0, l.zd)(i)) returnfalse;
-  let s = J(o),
+  let s = J(a),
     c = s.mentioned;
-  if (!a && !c) {
+  if (!o && !c) {
     if (!x.includes(i)) returnfalse;
     K()
   }
-  if (!a && c && !(0, u.ln)(s)) returnfalse;
+  if (!o && c && !(0, u.ln)(s)) returnfalse;
   L.addMessage({
-    id: o.id,
-    channelId: o.channel_id,
-    guildId: null == (r = h.Z.getBasicChannel(o.channel_id)) ? true : r.guild_id,
+    id: a.id,
+    channelId: a.channel_id,
+    guildId: null == (r = h.Z.getBasicChannel(a.channel_id)) ? true : r.guild_id,
     kind: c ? A.fL.MENTION : A.fL.ALL_MESSAGES_CHANNEL,
     message: s
   })
@@ -237,7 +237,7 @@ function ei() {
   j = true
 }
 
-function eo(e) {
+function ea(e) {
   let {
     preload: t,
     hasMoreToLoad: n,
@@ -246,7 +246,7 @@ function eo(e) {
   j = false, t ? U = true : (null != n && (Z = n), k = true), B = null != r ? r : null
 }
 
-function ea(e) {
+function eo(e) {
   var t;
   let {
     preload: n
@@ -317,13 +317,13 @@ function e_(e) {
     id: n,
     addedMembers: r,
     removedMemberIds: i
-  } = e, o = null == (t = v.default.getCurrentUser()) ? true : t.id;
-  if (null == o) returnfalse;
-  if (null == r ? true : r.some(e => e.userId === o)) {
+  } = e, a = null == (t = v.default.getCurrentUser()) ? true : t.id;
+  if (null == a) returnfalse;
+  if (null == r ? true : r.some(e => e.userId === a)) {
     let e = h.Z.getBasicChannel(n);
     return !(null == e || f.Z.isMuted(n)) && (0, p.J)(e) !== P.iN.NO_MESSAGES && void Q()
   }
-  return null != i && !!i.includes(o) && void Q()
+  return null != i && !!i.includes(a) && void Q()
 }
 
 function em(e) {
@@ -356,7 +356,7 @@ class eE extends(r = Chunk442837.ZP.Store) {
     let {
       preload: t
     } = e;
-    return ea({
+    return eo({
       preload: t
     })
   }
@@ -422,7 +422,7 @@ let eb = new eE(Chunk570140.Z, {
   THREAD_MEMBERS_UPDATE: e_,
   NOTIFICATIONS_INBOX_OPEN: eu,
   NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_START: ei,
-  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS: eo,
+  NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS: ea,
   NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_FAILURE: es,
   NOTIFICATIONS_INBOX_ITEM_CLICK: el,
   NOTIFICATIONS_INBOX_ITEM_ACK: ec,

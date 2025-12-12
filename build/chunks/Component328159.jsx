@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 328159, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,27 +15,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx");
-let p = e => {
+let m = e => {
     var t;
     let {
       reason: n = "",
-      emoji_name: u,
-      onSetReason: m,
-      onSelectEmoji: p,
-      onClearPressed: f,
-      reasonMinLength: h,
-      reasonMaxLength: x,
-      placeholder: b,
+      emoji_name: d,
+      onSetReason: f,
+      onSelectEmoji: m,
+      onClearPressed: b,
+      reasonMinLength: p,
+      reasonMaxLength: h,
+      placeholder: x,
       position: j
-    } = e, _ = i.useRef(null), [v, O] = i.useState(false), C = (0, l.e7)([d.Z], () => d.Z.isGuildMetadataLoaded()), y = (0, r.jsx)(s.yRy, {
-      targetElementRef: _,
+    } = e, v = i.useRef(null), [O, C] = i.useState(false), y = (0, l.e7)([u.Z], () => u.Z.isGuildMetadataLoaded()), N = (0, r.jsx)(a.yRy, {
+      targetElementRef: v,
       onRequestClose: () => {
-        O(false)
+        C(false)
       },
-      shouldShow: v,
+      shouldShow: O,
       position: "right",
       align: "top",
-      animation: s.yRy.Animation.NONE,
+      animation: a.yRy.Animation.NONE,
       renderPopout: e => {
         let {
           closePopout: t
@@ -48,50 +48,50 @@ let p = e => {
               emoji: n,
               willClose: r
             } = e;
-            null != n && p(n), r && t()
+            null != n && m(n), r && t()
           }
         })
       },
       children: () => (0, r.jsx)(o.Z, {
         active: false,
         onClick: () => {
-          O(true)
+          C(true)
         },
         tabIndex: 0,
-        renderButtonContents: null != u ? () => (0, r.jsx)(a.Z, {
-          emojiName: u,
+        renderButtonContents: null != d ? () => (0, r.jsx)(s.Z, {
+          emojiName: d,
           animated: false
         }) : null,
-        ref: _
+        ref: v
       })
     });
-    return (0, r.jsx)(s.oil, {
-      placeholder: b,
+    return (0, r.jsx)(a.oil, {
+      placeholder: x,
       value: n,
-      minLength: h,
-      maxLength: x,
+      minLength: p,
+      maxLength: h,
       defaultDirty: (null == n ? true : n.length) > 0,
       leading: {
         type: "emoji",
-        button: y
+        button: N
       },
       onChange: e => {
-        m(e)
+        f(e)
       },
       clearable: {
-        show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != u
+        show: (null != (t = null == n ? true : n.length) ? t : 0) > 0 || null != d
       },
-      onClear: f
-    }, "text-input-".concat(j, "-").concat(C))
+      onClear: b
+    }, "text-input-".concat(j, "-").concat(y))
   },
-  f = e => {
+  b = e => {
     let {
       reasonMinLength: t,
       reasonMaxLength: n,
       guildId: i,
       reasons: l
-    } = e, a = [m.intl.string(m.t["9dhBGo"]), m.intl.string(m.t["8RmhKF"]), m.intl.string(m.t["2t0V83"]), m.intl.string(m.t.l8WqCR)], o = [];
-    for (let e = 0; e < 4; e++) o.push((0, r.jsx)(p, function(e, t) {
+    } = e, s = [f.intl.string(f.t["9dhBGo"]), f.intl.string(f.t["8RmhKF"]), f.intl.string(f.t["2t0V83"]), f.intl.string(f.t.l8WqCR)], o = [];
+    for (let e = 0; e < 4; e++) o.push((0, r.jsx)(m, function(e, t) {
       return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -121,21 +121,21 @@ let p = e => {
       return e
     }({
       position: e,
-      placeholder: a[e]
+      placeholder: s[e]
     }, l[e]), {
       onSetReason: t => {
         let n = [...l],
           r = Object.assign({}, l[e], {
             reason: t
           });
-        n[e] = r, (0, u.P$)(i, n)
+        n[e] = r, (0, d.P$)(i, n)
       },
       onSelectEmoji: t => {
         let n = [...l],
           r = Object.assign({}, l[e], {
             emoji_name: t.optionallyDiverseSequence
           });
-        n[e] = r, (0, u.P$)(i, n)
+        n[e] = r, (0, d.P$)(i, n)
       },
       onClearPressed: () => {
         let t = [...l],
@@ -143,12 +143,12 @@ let p = e => {
             reason: "",
             emoji_name: null
           };
-        t[e] = n, (0, u.P$)(i, t)
+        t[e] = n, (0, d.P$)(i, t)
       },
       reasonMinLength: t,
       reasonMaxLength: n
     }), "reasonListItem-" + e));
-    return (0, r.jsx)(s.Kqy, {
+    return (0, r.jsx)(a.Kqy, {
       gap: 16,
       children: o
     })

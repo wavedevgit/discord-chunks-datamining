@@ -39,12 +39,12 @@ let m = {
       if (!(0, r.yE)(null != (t = null == m ? true : m.flags) ? t : 0, h.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
         errorCode: h.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let _ = (0, a.U)(o),
-        b = {
+      let b = (0, a.U)(o),
+        E = {
           activity_application_id: o,
           activity_channel_type: null == p ? true : p.type,
           activity_guild_id: g,
-          activity_user_session_id: null == _ ? true : _.activityUserSessionId
+          activity_user_session_id: null == b ? true : b.activityUserSessionId
         };
       c.default.track(i, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ let m = {
           })
         }
         return e
-      }({}, b, l))
+      }({}, E, l))
     }
   },
   [Chunk981631.Etm.GET_APPLICATION_TICKET]: {

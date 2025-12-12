@@ -13,10 +13,10 @@ var Chunk473749 = require("./473749.js"),
 function s(e) {
   var t;
   if (null == e) return null;
-  if (e.type !== a.wW.GAME) return e;
+  if (e.type !== o.wW.GAME) return e;
   for (let n of null != (t = e.linkedGames) ? t : []) {
     let e = i.Z.getApplication(n.id);
-    if (null != e && n.type === o.tE.OFFICIAL) return e
+    if (null != e && n.type === a.tE.OFFICIAL) return e
   }
   return null
 }

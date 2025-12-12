@@ -13,7 +13,7 @@ require.d(exports, {
 var Chunk358085 = require("./358085.js"),
   Chunk259493 = require("./259493.js"),
   Chunk804059 = require("./804059.js");
-let a = (e, t) => {
+let o = (e, t) => {
     if (null == e) returnfalse;
     let [n, r] = e.split(/\?/, 1);
     return t.test(n)
@@ -27,7 +27,7 @@ let a = (e, t) => {
   c = e => null != e && l.test(e),
   u = e => s(e, "image"),
   d = /\.(webp|gif|avif)$/i,
-  f = e => a(e, d),
+  f = e => o(e, d),
   p = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
   _ = /\.(mp3|m4a|wav|ogg|opus|flac)$/i,
   m = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i,
@@ -37,11 +37,11 @@ let a = (e, t) => {
   b = /\.(mp4|webm|mov)$/i,
   y = /\.(riv)$/i,
   O = (0, Chunk358085.isIOS)() ? g : (0, Chunk358085.isAndroid)() ? E : b,
-  v = e => (0, o.W)() && i.Z.getConfig({
+  v = e => (0, a.W)() && i.Z.getConfig({
     location: "isWebPlayerVideoUrl"
-  }).enabled && a(e, h),
-  S = e => a(e, O) || v(e),
-  I = e => null != e && (0, o.W)() && i.Z.getConfig({
+  }).enabled && o(e, h),
+  S = e => o(e, O) || v(e),
+  I = e => null != e && (0, a.W)() && i.Z.getConfig({
     location: "isWebPlayerVideoFile"
   }).enabled && h.test(e),
   T = e => null != e && (O.test(e) || I(e)),

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ class c extends(r = Chunk442837.ZP.Store) {
     return null != (t = s.surveys.get(e)) ? t : null
   }
 }
-a(c, "displayName", "QualtricsStore");
+o(c, "displayName", "QualtricsStore");
 let u = new c(Chunk570140.Z, {
   QUALTRICS_SURVEY_FETCH_SUCCESS: l
 })

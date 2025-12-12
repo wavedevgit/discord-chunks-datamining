@@ -45,7 +45,7 @@ function m(e) {
   let {
     credential: t
   } = e;
-  if (t.type !== a.Pi.WEBAUTHN || true !== c.find(e => e.id === t.id)) returnfalse;
+  if (t.type !== o.Pi.WEBAUTHN || true !== c.find(e => e.id === t.id)) returnfalse;
   c = [...c, t]
 }
 
@@ -53,7 +53,7 @@ function h(e) {
   let {
     credential: t
   } = e;
-  if (t.type !== a.Pi.WEBAUTHN) returnfalse;
+  if (t.type !== o.Pi.WEBAUTHN) returnfalse;
   c = c.map(e => e.id === t.id ? t : e)
 }
 
@@ -61,7 +61,7 @@ function g(e) {
   let {
     credential: t
   } = e;
-  if (t.type !== a.Pi.WEBAUTHN) returnfalse;
+  if (t.type !== o.Pi.WEBAUTHN) returnfalse;
   c = c.filter(e => e.id !== t.id)
 }
 class E extends(r = Chunk442837.ZP.Store) {

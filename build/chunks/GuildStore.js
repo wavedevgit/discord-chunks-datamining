@@ -40,7 +40,7 @@ class f extends Chunk516888.f {
   constructor(...e) {
     super(...e), u(this, "getGuild", e => {
       if (null != e) return e === l.I_8 ? c.g : this.get(e)
-    }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => a.default.keys(e)))
+    }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => o.default.keys(e)))
   }
 }
 u(f, "displayName", "GuildStore");
@@ -51,7 +51,7 @@ let p = new f({
     } = e;
     for (let e of n) {
       let n = t.get(e.id);
-      null != n && "unavailable" !== e.data_mode && t.set(e.id, o.sp(e, n))
+      null != n && "unavailable" !== e.data_mode && t.set(e.id, a.sp(e, n))
     }
   },
   CONNECTION_OPEN: (e, t) => {
@@ -59,7 +59,7 @@ let p = new f({
       guilds: n
     } = e;
     t.reset((e, t) => {
-      for (let r of n) e[r.id] = o.wD(r, t[r.id])
+      for (let r of n) e[r.id] = a.wD(r, t[r.id])
     })
   },
   OVERLAY_INITIALIZE: (e, t) => {
@@ -72,7 +72,7 @@ let p = new f({
             properties: t,
             additionalFields: r
           }
-          of n) e[t.id] = o.Ee(t, {
+          of n) e[t.id] = a.Ee(t, {
           joinedAt: null != r.joinedAt ? new Date(r.joinedAt) : null,
           premiumSubscriberCount: r.premiumSubscriberCount
         })
@@ -83,7 +83,7 @@ let p = new f({
       guilds: n
     } = e;
     t.reset(e => {
-      for (let t of n) e[t.id] = o.cL(t)
+      for (let t of n) e[t.id] = a.cL(t)
     })
   },
   CACHE_LOADED_LAZY: (e, t) => {
@@ -91,20 +91,20 @@ let p = new f({
       guilds: n
     } = e;
     0 !== n.length && t.reset(e => {
-      for (let t of n) e[t.id] = o.cL(t)
+      for (let t of n) e[t.id] = a.cL(t)
     })
   },
   GUILD_CREATE: (e, t) => {
     let {
       guild: n
     } = e;
-    t.set(n.id, e => o.wD(n, e))
+    t.set(n.id, e => a.wD(n, e))
   },
   GUILD_UPDATE: (e, t) => {
     let {
       guild: n
     } = e;
-    t.set(n.id, e => o.R(n, e))
+    t.set(n.id, e => a.R(n, e))
   },
   GUILD_DELETE: (e, t) => {
     let {
@@ -116,9 +116,9 @@ let p = new f({
     let {
       guildId: n,
       joinedAt: r,
-      user: o
-    } = e, a = s.default.getId(), l = t.get(n);
-    if (a !== o.id || null == l) return;
+      user: a
+    } = e, o = s.default.getId(), l = t.get(n);
+    if (o !== a.id || null == l) return;
     let c = "string" == typeof r ? new Date(r) : r;
     c !== l.joinedAt && null != c && t.set(n, (0, i.kH)(l, c))
   }

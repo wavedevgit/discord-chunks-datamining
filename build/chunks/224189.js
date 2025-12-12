@@ -14,7 +14,7 @@ async function c(e, t) {
   var n;
   let c = r.Z.getApplication(e);
   if (u(c)) return c;
-  let d = null == (n = a.Z.getChannel(t)) ? true : n.guild_id,
+  let d = null == (n = o.Z.getChannel(t)) ? true : n.guild_id,
     {
       activityConfigs: f,
       applications: p
@@ -29,7 +29,7 @@ async function c(e, t) {
   if (u(null == _ ? true : _.application)) return null == _ ? true : _.application;
   {
     let t = await (0, i.UM)(e);
-    return o.ZP.createFromServer(t)
+    return a.ZP.createFromServer(t)
   }
 }
 

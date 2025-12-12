@@ -1,8 +1,8 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 132580, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,9 +10,9 @@ var Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function s(e) {
   var t, n, {
-      className: a,
+      className: s,
       color: o = i.Z.unsafe_rawColors.BRAND_500.css
     } = e,
     c = function(e, t) {
@@ -48,9 +48,9 @@ function a(e) {
     }
     return e
   }({}, c), n = n = {
-    text: s.intl.string(s.t.G6GWZ4),
+    text: a.intl.string(a.t.G6GWZ4),
     color: o,
-    className: a
+    className: s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

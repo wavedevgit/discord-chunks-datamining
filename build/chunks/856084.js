@@ -3,11 +3,11 @@
 "use strict";
 var Chunk581079 = require("./581079.js"),
   i = "LTR",
-  o = "RTL",
-  a = null;
+  a = "RTL",
+  o = null;
 
 function s(e) {
-  return e === i || e === o
+  return e === i || e === a
 }
 
 function l(e) {
@@ -19,7 +19,7 @@ function c(e, t) {
 }
 
 function u(e) {
-  a = e
+  o = e
 }
 
 function d() {
@@ -28,13 +28,13 @@ function d() {
 module.exports = {
   NEUTRAL: "NEUTRAL",
   LTR: i,
-  RTL: o,
+  RTL: a,
   isStrong: s,
   getHTMLDir: l,
   getHTMLDirIfDifferent: c,
   setGlobalDir: u,
   initGlobalDir: d,
   getGlobalDir: function() {
-    return a || this.initGlobalDir(), a || Chunk581079(false), a
+    return o || this.initGlobalDir(), o || Chunk581079(false), o
   }
 }

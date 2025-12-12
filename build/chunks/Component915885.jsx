@@ -1,7 +1,7 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 915885, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,36 +19,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function y(e) {
   let {
     guild: t,
     selected: n
-  } = e, _ = (0, l.e7)([p.Z], () => p.Z.can(m.Plq.KICK_MEMBERS, t)), y = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), O = _ && null != y ? y : 0;
+  } = e, y = (0, l.e7)([p.Z], () => p.Z.can(b.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), v = y && null != O ? O : 0;
   i.useEffect(() => {
-    _ && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    y && t.features.has(b.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(b.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
       limit: f.p
     })
-  }, [_, t]);
-  let v = i.useCallback(() => {
+  }, [y, t]);
+  let j = i.useCallback(() => {
       (0, g._X)(t.id)
     }, [t.id]),
-    j = (0, s.XL)(t.id, o.z.MEMBERS_LAUNCH_UPSELL);
+    C = (0, s.XL)(t.id, a.z.MEMBERS_LAUNCH_UPSELL);
   return (0, r.jsx)("div", {
-    ref: j,
+    ref: C,
     children: (0, r.jsx)(h.m, {
       id: "members-".concat(t.id),
-      renderIcon: e => (0, r.jsx)(a.BFJ, {
+      renderIcon: e => (0, r.jsx)(o.BFJ, {
         size: "md",
         color: "currentColor",
         className: e
       }),
-      text: b.intl.string(b.t.oclz3Z),
+      text: m.intl.string(m.t.oclz3Z),
       selected: n,
-      onClick: v,
-      trailing: O > 0 ? (0, r.jsx)(a.mAB, {
-        count: O
+      onClick: j,
+      trailing: v > 0 ? (0, r.jsx)(o.mAB, {
+        count: v
       }) : null
     })
   })

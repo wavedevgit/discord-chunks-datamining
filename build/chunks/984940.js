@@ -14,10 +14,10 @@ function s(e = {}) {
     autoFocus: t = false,
     isTextInput: n,
     within: l
-  } = e, c = (0, a.useRef)({
+  } = e, c = (0, o.useRef)({
     isFocused: false,
     isFocusVisible: t || (0, r.E)()
-  }), [u, d] = (0, a.useState)(false), [f, p] = (0, a.useState)(() => c.current.isFocused && c.current.isFocusVisible), _ = (0, a.useCallback)(() => p(c.current.isFocused && c.current.isFocusVisible), []), m = (0, a.useCallback)(e => {
+  }), [u, d] = (0, o.useState)(false), [f, p] = (0, o.useState)(() => c.current.isFocused && c.current.isFocusVisible), _ = (0, o.useCallback)(() => p(c.current.isFocused && c.current.isFocusVisible), []), m = (0, o.useCallback)(e => {
     c.current.isFocused = e, d(e), _()
   }, [_]);
   (0, r.mG)(e => {
@@ -32,7 +32,7 @@ function s(e = {}) {
     onFocusChange: m
   }), {
     focusWithinProps: g
-  } = (0, o.L)({
+  } = (0, a.L)({
     isDisabled: !l,
     onFocusWithinChange: m
   });

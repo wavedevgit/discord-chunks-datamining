@@ -63,7 +63,7 @@ function p(e) {
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, s, d) => (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.JO, f(u({}, n), {
+      children: [(0, r.jsx)(a.JO, f(u({}, n), {
         ref: d,
         className: c,
         onClick: e,
@@ -72,7 +72,7 @@ function p(e) {
         tooltip: t ? null : l.intl.string(l.t["2pAkDA"]),
         selected: t,
         showBadge: s
-      })), (0, r.jsx)(a.U, {
+      })), (0, r.jsx)(o.U, {
         location: "bookmarks-button",
         targetElementRef: d
       })]

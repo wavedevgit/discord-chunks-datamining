@@ -13,9 +13,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk25251 = require("./25251.js");
 let u = e => {
   let t = (0, i.e7)([c.Z], () => c.Z.getProfileEffect(e)),
-    n = (0, i.e7)([a.Z, s.Z], () => {
+    n = (0, i.e7)([o.Z, s.Z], () => {
       if (null == e) return;
-      let t = a.Z.getProduct(e);
+      let t = o.Z.getProduct(e);
       if ((0, l.H)(null == t ? true : t.items[0])) return t.items[0];
       let n = s.Z.getPurchase(e);
       if ((0, l.H)(null == n ? true : n.items[0])) return n.items[0]
@@ -26,6 +26,6 @@ let u = e => {
     } : t, [n, t]),
     d = null != e && null == u;
   return r.useEffect(() => {
-    d && (0, o.lW)(e)
+    d && (0, a.lW)(e)
   }, [d, e]), u
 }

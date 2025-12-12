@@ -36,9 +36,9 @@ function f(e) {
     scrollTop: n,
     scrollHeight: r,
     offsetHeight: i
-  } = e, a = l[t];
+  } = e, o = l[t];
   if (null == n || null == r || null == i) {
-    if (null == a) returnfalse;
+    if (null == o) returnfalse;
     delete l[t]
   } else {
     let e = {
@@ -47,7 +47,7 @@ function f(e) {
       scrollHeight: r,
       offsetHeight: i
     };
-    if (null != a && (0, o.Z)(a, e)) returnfalse;
+    if (null != o && (0, a.Z)(o, e)) returnfalse;
     l[t] = e
   }
 }

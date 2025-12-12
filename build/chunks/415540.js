@@ -15,7 +15,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,7 +28,7 @@ function o(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,7 +40,7 @@ function a(e, t) {
 }
 
 function s(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -50,8 +50,8 @@ function l(e) {
     active: t,
     options: n,
     renderOption: i
-  } = e, a = "function" == typeof n, [l, c] = r.useState({
-    options: a ? [] : n,
+  } = e, o = "function" == typeof n, [l, c] = r.useState({
+    options: o ? [] : n,
     query: "",
     debouncedQuery: "",
     loading: false
@@ -60,16 +60,16 @@ function l(e) {
     loading: d,
     query: f,
     debouncedQuery: p
-  } = l, _ = r.useCallback(e => c(t => s(o({}, t), {
-    loading: a,
+  } = l, _ = r.useCallback(e => c(t => s(a({}, t), {
+    loading: o,
     query: e,
     debouncedQuery: e
-  })), [a]);
+  })), [o]);
   return r.useEffect(() => {
     t && _("")
   }, [t, _]), r.useEffect(() => {
     let e;
-    return a ? (c(e => s(o({}, e), {
+    return o ? (c(e => s(a({}, e), {
       loading: true,
       debouncedQuery: null
     })), e = setTimeout(() => {
@@ -77,25 +77,25 @@ function l(e) {
     }, 500)) : _(f), () => {
       clearTimeout(e)
     }
-  }, [a, f, _]), r.useEffect(() => {
+  }, [o, f, _]), r.useEffect(() => {
     let e = false;
 
     function r() {
       return "function" == typeof n ? n(p) : Promise.resolve(n)
     }
-    return (t && null !== p && a || !a) && r().then(t => {
-      e || (null != i && (t = t.map(i)), c(e => s(o({}, e), {
+    return (t && null !== p && o || !o) && r().then(t => {
+      e || (null != i && (t = t.map(i)), c(e => s(a({}, e), {
         options: t,
         loading: false
       })))
     }), () => {
       e = true
     }
-  }, [t, n, p, i, a]), {
+  }, [t, n, p, i, o]), {
     options: u,
     loading: d,
     onQueryChange: r.useCallback(e => {
-      c(t => s(o({}, t), {
+      c(t => s(a({}, t), {
         query: e
       }))
     }, [])

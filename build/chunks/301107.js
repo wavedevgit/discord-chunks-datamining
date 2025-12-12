@@ -14,8 +14,8 @@ function l(e) {
     desiredLength: l
   } = e, i = n.useMemo(() => {
     if (null == t || "" === t) return null;
-    let e = o.toByteArray(t),
-      n = (0, c.Dq)(e, l, r);
+    let e = c.toByteArray(t),
+      n = (0, o.Dq)(e, l, r);
     if (null == n) return null;
     let i = RegExp(".{1,".concat(r, "}"), "g"),
       s = n.match(i);

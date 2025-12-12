@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 61642, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,7 +18,7 @@ function d(e) {
     guild: t,
     selected: d
   } = e;
-  return (0, r.jsx)(a.m, {
+  return (0, r.jsx)(o.m, {
     id: "subscriptions-".concat(t.id),
     renderIcon: e => (0, r.jsx)(l.Z, {
       className: e
@@ -26,7 +26,7 @@ function d(e) {
     text: u.intl.string(u.t["KzCF/6"]),
     selected: d,
     onClick: () => {
-      (0, o.uL)(s.Z5c.CHANNEL(t.id, c.oC.ROLE_SUBSCRIPTIONS))
+      (0, a.uL)(s.Z5c.CHANNEL(t.id, c.oC.ROLE_SUBSCRIPTIONS))
     },
     onContextMenu: e => {
       null != t && (0, i.jW)(e, async () => {

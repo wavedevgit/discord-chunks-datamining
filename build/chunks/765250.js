@@ -20,7 +20,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk145597 = require("./145597.js");
 
 function s(e, t, n) {
-  let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : a.OVERLAY_DEFAULT_RESOLUTION;
+  let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : o.OVERLAY_DEFAULT_RESOLUTION;
   r.Z.dispatch({
     type: "LAYOUT_CREATE",
     layoutId: e,
@@ -35,8 +35,8 @@ function l(e) {
     widgetId: t,
     anchor: n,
     size: i,
-    minSize: o,
-    defaultSize: a,
+    minSize: a,
+    defaultSize: o,
     opacity: s
   } = e;
   r.Z.dispatch({
@@ -44,8 +44,8 @@ function l(e) {
     widgetId: t,
     anchor: n,
     size: i,
-    minSize: o,
-    defaultSize: a,
+    minSize: a,
+    defaultSize: o,
     opacity: s
   })
 }
@@ -61,16 +61,16 @@ function u(e) {
   let {
     forcedPinnedState: t,
     shouldTrack: n = true
-  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, a = r.Z.dispatch({
+  } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, o = r.Z.dispatch({
     type: "LAYOUT_SET_PINNED",
     widgetId: e,
     pinned: t
   });
-  if (!n) return a;
-  let s = o.Z.getWidget(e);
+  if (!n) return o;
+  let s = a.Z.getWidget(e);
   return null == s || (0, i.JS)(s.type, {
     pinned: null != t ? t : !s.pinned
-  }), a
+  }), o
 }
 
 function d(e) {

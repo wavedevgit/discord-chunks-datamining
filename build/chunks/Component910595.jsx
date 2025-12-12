@@ -1,4 +1,4 @@
-/** Chunk was on 64722 **/
+/** Chunk was on 51235 **/
 /** chunk id: 910595, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,7 +17,7 @@ function u(e) {
     guild: t,
     selected: n
   } = e;
-  return (0, r.jsx)(o.m, {
+  return (0, r.jsx)(a.m, {
     id: "home-tab-".concat(t.id),
     renderIcon: e => (0, r.jsx)(i.Vy8, {
       size: "md",
@@ -27,7 +27,7 @@ function u(e) {
     text: c.intl.string(c.t.VbpLyU),
     selected: n,
     onClick: function() {
-      (0, l.uL)(a.Z5c.CHANNEL(t.id, s.oC.GUILD_HOME))
+      (0, l.uL)(o.Z5c.CHANNEL(t.id, s.oC.GUILD_HOME))
     }
   })
 }

@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk879443 = require("./879443.js"),
   i = require.n(Chunk879443),
   Chunk414861 = require("./414861.js"),
-  a = require.n(Chunk414861);
+  o = require.n(Chunk414861);
 
 function s(e) {
-  return a()(new(i())(e))
+  return o()(new(i())(e))
 }

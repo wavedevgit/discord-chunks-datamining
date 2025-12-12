@@ -2,12 +2,12 @@
 /** chunk id: 245585, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => a
+  u: () => o
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk503461 = require("./503461.js"),
   Chunk190313 = require("./190313.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,12 +15,12 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a {
+class o {
   get prefix() {
     return this.table.prefix
   }
   withoutLogging() {
-    return new a(this.originalPrefix, this.table.tableId, this.table.database, false)
+    return new o(this.originalPrefix, this.table.tableId, this.table.database, false)
   }
   get(e, t, n) {
     return this.table.get([e, t, c(n)])
@@ -43,8 +43,8 @@ class a {
   }
   putAll(e, t, n) {
     let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r.Sn.Replace,
-      o = n.map(n => l(e, t, n));
-    return this.table.putAll(o, i)
+      a = n.map(n => l(e, t, n));
+    return this.table.putAll(a, i)
   }
   deleteAll() {
     return this.table.delete()
@@ -65,7 +65,7 @@ class a {
     return new s(this.table.upgradeTransaction(e))
   }
   constructor(e, t, n, r = true) {
-    o(this, "originalPrefix", true), o(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
+    a(this, "originalPrefix", true), a(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
   }
 }
 class s {
@@ -81,8 +81,8 @@ class s {
   }
   putAll(e, t, n) {
     let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : r.Sn.Replace,
-      o = n.map(n => l(e, t, n));
-    this.transaction.putAll(o, i)
+      a = n.map(n => l(e, t, n));
+    this.transaction.putAll(a, i)
   }
   replaceChannel(e, t, n) {
     this.deleteChannel(e, t), this.putAll(e, t, n)
@@ -116,7 +116,7 @@ class s {
     this.transaction.messages.trimChannelsNotIn(e, t)
   }
   constructor(e) {
-    o(this, "transaction", true), this.transaction = e
+    a(this, "transaction", true), this.transaction = e
   }
 }
 

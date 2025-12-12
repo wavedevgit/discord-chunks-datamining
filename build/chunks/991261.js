@@ -4,14 +4,14 @@
 require.d(exports, {
   OU: () => d,
   ZP: () => f,
-  fC: () => a
+  fC: () => o
 });
 var Chunk473749 = require("./473749.js"),
   i = function() {
     this.locks = [], this.listeners = []
   };
 
-function o(e, t, n) {
+function a(e, t, n) {
   true === n && (n = false);
   var r = function(e) {
       return document.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, {
@@ -21,8 +21,8 @@ function o(e, t, n) {
       })
     }(e),
     i = t.compareDocumentPosition(e),
-    o = null;
-  i & Node.DOCUMENT_POSITION_PRECEDING || n ? o = r.firstChild() : i & Node.DOCUMENT_POSITION_FOLLOWING && (o = r.lastChild()), (null != o ? o : e).focus()
+    a = null;
+  i & Node.DOCUMENT_POSITION_PRECEDING || n ? a = r.firstChild() : i & Node.DOCUMENT_POSITION_FOLLOWING && (a = r.lastChild()), (null != a ? a : e).focus()
 }
 i.prototype.add = function(e, t) {
   var n = {
@@ -63,12 +63,12 @@ i.prototype.add = function(e, t) {
     return n(t, e.locks)
   })
 };
-var a = new i,
+var o = new i,
   s = 0;
 
 function l(e) {
   (0, r.useEffect)(function() {
-    return a.subscribe(e)
+    return o.subscribe(e)
   }, [e])
 }
 
@@ -89,11 +89,11 @@ function u(e) {
     })[0],
     n = (0, r.useRef)(false);
   return (0, r.useLayoutEffect)(function() {
-    return a.add(t, function(e) {
+    return o.add(t, function(e) {
         return n.current = e
       }),
       function() {
-        return a.remove(t)
+        return o.remove(t)
       }
   }, [t]), n
 }
@@ -114,10 +114,10 @@ function f(e, t) {
   true === t && (t = {});
   var n = t.returnRef,
     i = t.disableReturnRef,
-    a = t.attachTo;
-  true === a && (a = document);
+    o = t.attachTo;
+  true === o && (o = document);
   var s = t.disable,
-    l = a instanceof HTMLElement ? a.ownerDocument : a,
+    l = o instanceof HTMLElement ? o.ownerDocument : o,
     d = u();
   (0, r.useEffect)(function() {
     s && (d.current = false)
@@ -129,7 +129,7 @@ function f(e, t) {
         var n = e.current;
         if (null != n) {
           var r = t.target || l.body;
-          n.contains(r) || (t.preventDefault(), t.stopImmediatePropagation(), o(n, r))
+          n.contains(r) || (t.preventDefault(), t.stopImmediatePropagation(), a(n, r))
         }
       }
     }
@@ -140,21 +140,21 @@ function f(e, t) {
         if (null != n) {
           null != t.relatedTarget && t.relatedTarget !== l.body || (t.preventDefault(), n.focus());
           var r = t.target || l.body;
-          n.contains(r) || o(n, r)
+          n.contains(r) || a(n, r)
         }
       }
     }
-    return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || o(t, l.activeElement, true), a.addEventListener("focusin", n, {
+    return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || a(t, l.activeElement, true), o.addEventListener("focusin", n, {
         capture: true
-      }), a.addEventListener("focusout", r, {
+      }), o.addEventListener("focusout", r, {
         capture: true
       }),
       function() {
-        a.removeEventListener("focusin", n, {
+        o.removeEventListener("focusin", n, {
           capture: true
-        }), a.removeEventListener("focusout", r, {
+        }), o.removeEventListener("focusout", r, {
           capture: true
         })
       }
-  }, [a, l, e, d]), c(n, i)
+  }, [o, l, e, d]), c(n, i)
 }

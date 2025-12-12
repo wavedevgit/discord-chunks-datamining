@@ -2,17 +2,17 @@
 /** chunk id: 337482, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B2: () => o,
-  gN: () => a
+  B2: () => a,
+  gN: () => o
 });
 var Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js");
-let o = {
+let a = {
     binds: ["pageup"],
     comboKeysBindGlobal: true,
     action: () => (Chunk585483.S.dispatchToLastSubscribed(Chunk981631.CkL.SCROLL_PAGE_UP), false)
   },
-  a = {
+  o = {
     binds: ["pagedown"],
     comboKeysBindGlobal: true,
     action: () => (Chunk585483.S.dispatchToLastSubscribed(Chunk981631.CkL.SCROLL_PAGE_DOWN), false)

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk481060 = require("./481060.js"),
   Chunk829968 = require("./829968.js"),
@@ -18,15 +18,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk768581 = require("./768581.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk520816 = require("./520816.js");
+  Chunk811578 = require("./811578.js");
 let g = {
-  XXSMALL: Chunk520816.xxsmall,
-  XSMALL: Chunk520816.xsmall,
-  SMALL: Chunk520816.small,
-  MEDIUM: Chunk520816.medium,
-  MEDIUM_LARGE: Chunk520816.mediumLarge,
-  LARGE: Chunk520816.large,
-  XLARGE: Chunk520816.xlarge
+  XXSMALL: Chunk811578.xxsmall,
+  XSMALL: Chunk811578.xsmall,
+  SMALL: Chunk811578.small,
+  MEDIUM: Chunk811578.medium,
+  MEDIUM_LARGE: Chunk811578.mediumLarge,
+  LARGE: Chunk811578.large,
+  XLARGE: Chunk811578.xlarge
 };
 
 function E(e) {
@@ -80,7 +80,7 @@ function y(e) {
 }
 let O = Chunk473749.forwardRef(function(e, t) {
   let n, {
-      game: o,
+      game: a,
       guild: _,
       skuId: O,
       pid: v,
@@ -99,9 +99,9 @@ let O = Chunk473749.forwardRef(function(e, t) {
     null != D.current && P && (cancelIdleCallback(D.current), D.current = null)
   }, [P]);
   let x = (0, s.O)(w);
-  if (null != O && (n = b(O)), null != o && null == n && (o instanceof f.ZP ? n = o.getIconURL(E(T)) : null != o.icon && (n = p.ZP.getApplicationIconURL({
-      id: o.id,
-      icon: o.icon
+  if (null != O && (n = b(O)), null != a && null == n && (a instanceof f.ZP ? n = a.getIconURL(E(T)) : null != a.icon && (n = p.ZP.getApplicationIconURL({
+      id: a.id,
+      icon: a.icon
     }))), n = (0, c.Z)(v, n), i.useEffect(() => {
       if (null == n || "" === n) return;
       if ((0, p.pU)(n) || (0, d.Vv)(n)) {
@@ -121,7 +121,7 @@ let O = Chunk473749.forwardRef(function(e, t) {
     }, [n, P]), true === n && null != _) {
     let e = y(T);
     return (0, r.jsx)(u.Z, {
-      className: a()(h.gameIcon, I, S),
+      className: o()(h.gameIcon, I, S),
       guild: _,
       size: e
     })
@@ -129,9 +129,9 @@ let O = Chunk473749.forwardRef(function(e, t) {
   if (null == n || "" === n) return C ? (0, r.jsx)(l.IMN, {
     size: "md",
     color: "currentColor",
-    className: a()(h.gameIcon, T, S)
+    className: o()(h.gameIcon, T, S)
   }) : null;
-  let L = null == o ? true : o.name,
+  let L = null == a ? true : a.name,
     j = null != L && "" !== L ? m.intl.formatToPlainString(m.t.tiKyYg, {
       applicationName: L
     }) : m.intl.string(m.t["2B/phM"]),
@@ -140,12 +140,12 @@ let O = Chunk473749.forwardRef(function(e, t) {
     U = A === n || M || k;
   return (0, r.jsxs)(r.Fragment, {
     children: [U ? null : (0, r.jsx)("div", {
-      className: a()(h.gameIconLoading, T, S)
+      className: o()(h.gameIconLoading, T, S)
     }), (0, r.jsx)("img", {
       ref: t,
       alt: j,
       src: n,
-      className: a()(h.gameIcon, T, S),
+      className: o()(h.gameIcon, T, S),
       style: U ? true : {
         display: "none"
       }

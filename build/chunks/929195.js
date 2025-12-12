@@ -2,12 +2,12 @@
 /** chunk id: 929195, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk773567 = require("./773567.js"),
   Chunk86465 = require("./86465.js"),
   Chunk727916 = require("./727916.js");
-class a extends Chunk727916.Z {
+class o extends Chunk727916.Z {
   innerPattern() {
     return RegExp(`(?:en|por|durante|de|dentro de)\\s*(${Chunk773567.km})(?=\\W|$)`, "i")
   }

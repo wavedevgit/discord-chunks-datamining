@@ -3,9 +3,9 @@
 "use strict";
 var Chunk209957 = require("./209957.js"),
   Chunk840475 = require("./840475.js"),
-  o = Chunk840475.aTypedArray,
-  a = Chunk840475.exportTypedArrayMethod,
+  a = Chunk840475.aTypedArray,
+  o = Chunk840475.exportTypedArrayMethod,
   s = Chunk840475.getTypedArrayConstructor;
-a("toReversed", function() {
-  return Chunk209957(o(this), s(this))
+o("toReversed", function() {
+  return Chunk209957(a(this), s(this))
 })

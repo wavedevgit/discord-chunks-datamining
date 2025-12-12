@@ -10,7 +10,7 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk574657 = require("./574657.js");
+  Chunk216746 = require("./216746.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,8 +21,8 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = {
-  BLOCK: Chunk574657.block,
-  INLINE: Chunk574657.inline
+  BLOCK: Chunk216746.block,
+  INLINE: Chunk216746.inline
 };
 class p extends(r = Chunk473749.PureComponent) {
   render() {
@@ -31,7 +31,7 @@ class p extends(r = Chunk473749.PureComponent) {
       className: t,
       textClassName: n,
       type: r = f.BLOCK,
-      style: o
+      style: a
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
       className: s()(exports, r),
@@ -40,10 +40,10 @@ class p extends(r = Chunk473749.PureComponent) {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
-        className: Chunk574657.pro,
+        className: Chunk216746.pro,
         children: [Chunk388032.intl.string(Chunk388032.t["8tvIiN"]), ":"]
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: s()(Chunk574657.tip, require),
+        className: s()(Chunk216746.tip, require),
         variant: "text-sm/normal",
         children: module
       })]

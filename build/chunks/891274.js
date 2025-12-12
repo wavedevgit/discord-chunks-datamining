@@ -24,7 +24,7 @@ function u(e) {
     } = e;
     if (t === s.g.INVITE);
     else if (t === s.g.TEMPLATE)(0, l.V)(async () => {
-      null == o.Z.getGuildTemplate(n) && await i.Z.resolveGuildTemplate(n)
+      null == a.Z.getGuildTemplate(n) && await i.Z.resolveGuildTemplate(n)
     });
     else if (t === s.g.BUILD_OVERRIDE || t === s.g.MANUAL_BUILD_OVERRIDE);
     else if (t === s.g.EVENT);

@@ -6,14 +6,14 @@ require.d(exports, {
 });
 var Chunk610388 = require("./610388.js");
 let i = {
-  read: o
+  read: a
 };
 
-function o(e, t) {
-  let n = a(e, t),
+function a(e, t) {
+  let n = o(e, t),
     r = f(e, t, n),
     i = p(e, t, n),
-    o = {
+    a = {
       "JFIF Version": s(e, t, n),
       "Resolution Unit": l(e, t, n),
       XResolution: u(e, t, n),
@@ -22,35 +22,35 @@ function o(e, t) {
       "JFIF Thumbnail Height": i
     };
   if (true !== r && true !== i) {
-    let a = _(e, t, 3 * r.value * i.value, n);
-    a && (o["JFIF Thumbnail"] = a)
+    let o = _(e, t, 3 * r.value * i.value, n);
+    o && (a["JFIF Thumbnail"] = o)
   }
-  for (let e in o) true === o[e] && delete o[e];
-  return o
+  for (let e in a) true === a[e] && delete a[e];
+  return a
 }
 
-function a(e, t) {
+function o(e, t) {
   return r.Z.getShortAt(e, t)
 }
 
 function s(e, t, n) {
   let i = 7;
   if (9 > n) return;
-  let o = r.Z.getByteAt(e, t + i),
-    a = r.Z.getByteAt(e, t + i + 1);
+  let a = r.Z.getByteAt(e, t + i),
+    o = r.Z.getByteAt(e, t + i + 1);
   return {
-    value: 256 * o + a,
-    description: o + "." + a
+    value: 256 * a + o,
+    description: a + "." + o
   }
 }
 
 function l(e, t, n) {
   let i = 9;
   if (10 > n) return;
-  let o = r.Z.getByteAt(e, t + i);
+  let a = r.Z.getByteAt(e, t + i);
   return {
-    value: o,
-    description: c(o)
+    value: a,
+    description: c(a)
   }
 }
 
@@ -61,40 +61,40 @@ function c(e) {
 function u(e, t, n) {
   let i = 10;
   if (12 > n) return;
-  let o = r.Z.getShortAt(e, t + i);
+  let a = r.Z.getShortAt(e, t + i);
   return {
-    value: o,
-    description: "" + o
+    value: a,
+    description: "" + a
   }
 }
 
 function d(e, t, n) {
   let i = 12;
   if (14 > n) return;
-  let o = r.Z.getShortAt(e, t + i);
+  let a = r.Z.getShortAt(e, t + i);
   return {
-    value: o,
-    description: "" + o
+    value: a,
+    description: "" + a
   }
 }
 
 function f(e, t, n) {
   let i = 14;
   if (15 > n) return;
-  let o = r.Z.getByteAt(e, t + i);
+  let a = r.Z.getByteAt(e, t + i);
   return {
-    value: o,
-    description: `${o}px`
+    value: a,
+    description: `${a}px`
   }
 }
 
 function p(e, t, n) {
   let i = 15;
   if (16 > n) return;
-  let o = r.Z.getByteAt(e, t + i);
+  let a = r.Z.getByteAt(e, t + i);
   return {
-    value: o,
-    description: `${o}px`
+    value: a,
+    description: `${a}px`
   }
 }
 

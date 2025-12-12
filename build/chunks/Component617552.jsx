@@ -55,8 +55,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -86,7 +86,7 @@ function h(e) {
     h = () => {
       t(), l.onClose()
     };
-  return (0, r.jsx)(o.Modal, p(d({}, l), {
+  return (0, r.jsx)(a.Modal, p(d({}, l), {
     size: "md",
     title: c.intl.string(c.t.ye21jI),
     subtitle: c.intl.string(c.t.hbagWD),
@@ -99,7 +99,7 @@ function h(e) {
       onClick: h,
       variant: "primary"
     }],
-    actionBarInput: (0, r.jsx)(a.Checkbox, {
+    actionBarInput: (0, r.jsx)(o.Checkbox, {
       checked: u,
       onChange: e => f(e),
       label: c.intl.string(c.t.wGAwOS)
@@ -113,8 +113,8 @@ function g(e) {
     onCancel: n,
     usesPopoutContext: i = false
   } = e;
-  l.ZP.disableEmbeddedActivityPopOutAlert ? t() : (0, a.h7j)(e => (0, r.jsx)(h, p(d({}, e), {
+  l.ZP.disableEmbeddedActivityPopOutAlert ? t() : (0, o.h7j)(e => (0, r.jsx)(h, p(d({}, e), {
     onConfirm: t,
     onCancel: n
-  })), {}, i ? a.u1M : true)
+  })), {}, i ? o.u1M : true)
 }

@@ -66,7 +66,7 @@ function d(e) {
 
 function f(e) {
   let t = e.item.originalItem.media;
-  return (0, a.Yi)(u(l({}, e), {
+  return (0, o.Yi)(u(l({}, e), {
     alt: e.item.originalItem.description,
     src: t.proxyUrl,
     original: t.url,
@@ -84,8 +84,8 @@ function f(e) {
 
 function p(e) {
   let t = e.item.originalItem.media,
-    n = o.Z.toURLSafe(t.proxyUrl);
-  return null == n ? null : (n.searchParams.append("format", "webp"), (0, a.lV)(u(l({}, e), {
+    n = a.Z.toURLSafe(t.proxyUrl);
+  return null == n ? null : (n.searchParams.append("format", "webp"), (0, o.lV)(u(l({}, e), {
     poster: n.toString(),
     alt: e.item.originalItem.description,
     src: t.proxyUrl,

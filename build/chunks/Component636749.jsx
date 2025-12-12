@@ -14,16 +14,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk359119 = require("./359119.js"),
   Chunk473092 = require("./473092.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk332287 = require("./332287.js"),
-  Chunk583140 = require("./583140.js");
+  Chunk665283 = require("./665283.js"),
+  Chunk141291 = require("./141291.js");
 
 function v() {
   return (0, Chunk54381.jsxs)("div", {
-    className: c()(Chunk583140.toast, Chunk332287.toast),
+    className: c()(Chunk141291.toast, Chunk665283.toast),
     children: [(0, Chunk54381.jsx)(Chunk481060.b7C, {
       color: Chunk481060.TVs.colors.TEXT_BRAND
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk583140.__invalid_content,
+      className: Chunk141291.__invalid_content,
       color: "text-strong",
       variant: "text-md/normal",
       children: Chunk388032.intl.string(Chunk388032.t["gd/Yqs"])
@@ -36,44 +36,44 @@ function k(t) {
     channelId: n,
     warningId: e,
     senderId: i,
-    safetyWarning: x
-  } = t, k = s.useMemo(() => (null == x ? true : x.feedback_type) === u.ny.UPVOTE, [x]), p = s.useMemo(() => (null == x ? true : x.feedback_type) === u.ny.DOWNVOTE, [x]), h = s.useCallback((t, s) => {
-    (null == x ? true : x.feedback_type) !== t && ((0, d.Ms)(n, e, t), (0, o.showToast)((0, o.createToast)(b.intl.string(b.t["gd/Yqs"]), o.ToastType.CUSTOM, {
+    safetyWarning: _
+  } = t, k = s.useMemo(() => (null == _ ? true : _.feedback_type) === u.ny.UPVOTE, [_]), p = s.useMemo(() => (null == _ ? true : _.feedback_type) === u.ny.DOWNVOTE, [_]), h = s.useCallback((t, s) => {
+    (null == _ ? true : _.feedback_type) !== t && ((0, d.Ms)(n, e, t), (0, o.showToast)((0, o.createToast)(g.intl.string(g.t["gd/Yqs"]), o.ToastType.CUSTOM, {
       component: (0, a.jsx)(v, {})
-    })), (0, _.qc)({
+    })), (0, b.qc)({
       channelId: n,
       warningId: e,
       senderId: i,
-      warningType: null == x ? true : x.type,
+      warningType: null == _ ? true : _.type,
       cta: s
     }))
-  }, [x, n, e, i]);
+  }, [_, n, e, i]);
   return (0, a.jsxs)("div", {
-    className: g.feedback,
+    className: x.feedback,
     children: [(0, a.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: b.intl.string(b.t.L84yVm)
+      children: g.intl.string(g.t.L84yVm)
     }), (0, a.jsxs)("div", {
-      className: g.buttonsContainer,
+      className: x.buttonsContainer,
       children: [(0, a.jsx)(o.P3F, {
-        className: c()([g.buttonsBackground, k ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
-          [g.disabled]: k
+        className: c()([x.buttonsBackground, k ? x.buttonsBackgroundActive : x.buttonsBackgroundInactive, {
+          [x.disabled]: k
         }]),
-        onClick: () => h(u.ny.UPVOTE, _.NM.FEEDBACK_UPVOTE),
-        "aria-label": b.intl.string(b.t["2GrOCN"]),
+        onClick: () => h(u.ny.UPVOTE, b.NM.FEEDBACK_UPVOTE),
+        "aria-label": g.intl.string(g.t["2GrOCN"]),
         children: (0, a.jsx)(r.Z, {
-          className: g.__invalid_buttonIcon,
+          className: x.__invalid_buttonIcon,
           color: "interactive-text-default"
         })
       }), (0, a.jsx)(o.P3F, {
-        className: c()([g.buttonsBackground, p ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
-          [g.disabled]: p
+        className: c()([x.buttonsBackground, p ? x.buttonsBackgroundActive : x.buttonsBackgroundInactive, {
+          [x.disabled]: p
         }]),
-        onClick: () => h(u.ny.DOWNVOTE, _.NM.FEEDBACK_DOWNVOTE),
-        "aria-label": b.intl.string(b.t.COp9BO),
+        onClick: () => h(u.ny.DOWNVOTE, b.NM.FEEDBACK_DOWNVOTE),
+        "aria-label": g.intl.string(g.t.COp9BO),
         children: (0, a.jsx)(l.Z, {
-          className: g.__invalid_buttonIcon,
+          className: x.__invalid_buttonIcon,
           color: "interactive-text-default"
         })
       })]

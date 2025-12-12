@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => s,
-  c: () => o
+  c: () => a
 });
 var Chunk388032 = require("./388032.jsx");
 
@@ -15,10 +15,10 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var o = function(e) {
+var a = function(e) {
   return e[e.GENERAL = 0] = "GENERAL", e[e.NO_FILE = 1] = "NO_FILE", e[e.PROGRESS = 2] = "PROGRESS", e[e.UPLOAD = 3] = "UPLOAD", e[e.READ = 4] = "READ", e
 }({});
-class a {
+class o {
   get displayMessage() {
     switch (this.code) {
       case 1:
@@ -37,4 +37,4 @@ class a {
     i(this, "code", true), this.code = e
   }
 }
-let s = a
+let s = o

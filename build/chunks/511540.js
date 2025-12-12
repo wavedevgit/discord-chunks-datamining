@@ -10,26 +10,26 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s(e, t, n) {
-  let [s, l] = r.useState(false), [c, d] = r.useState(null), u = r.useCallback(async () => {
+  let [s, c] = a.useState(false), [l, d] = a.useState(null), u = a.useCallback(async () => {
     try {
-      l(true);
-      let n = await (0, a.tV)(e);
-      l(false), t({
+      c(true);
+      let n = await (0, r.tV)(e);
+      c(false), t({
         userCode: e,
         clientId: n.body.client_id,
         scopes: n.body.scopes,
         twoWayLinkCode: n.body.two_way_link_code
       })
     } catch (e) {
-      var r;
-      d(429 === (r = null == e ? true : e.status) ? i.intl.string(i.t.BPmZvj) : 404 === r || 400 === r ? i.intl.string(i.t.aWa1Pw) : i.intl.string(i.t.JNQRU4)), l(false), (null == e ? true : e.status) === 401 && n()
+      var a;
+      d(429 === (a = null == e ? true : e.status) ? i.intl.string(i.t.BPmZvj) : 404 === a || 400 === a ? i.intl.string(i.t.aWa1Pw) : i.intl.string(i.t.JNQRU4)), c(false), (null == e ? true : e.status) === 401 && n()
     }
   }, [e, t, n]);
-  return r.useEffect(() => {
+  return a.useEffect(() => {
     e.length === o.A.USER_CODE_LENGTH ? u() : d(null)
   }, [e, u]), {
     manualSubmit: u,
-    error: c,
+    error: l,
     submitting: s
   }
 }

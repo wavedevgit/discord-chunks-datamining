@@ -3,17 +3,17 @@
 "use strict";
 require.r(exports), require.d(exports, {
   CaptchaCancelError: () => l,
-  CaptchaError: () => o,
+  CaptchaError: () => a,
   emitCaptchaDistributionMetric: () => s,
-  extractCaptchaPropsFromResponse: () => a
+  extractCaptchaPropsFromResponse: () => o
 }), require("./415506.js");
 var Chunk644947 = require("./644947.js"),
   Chunk234888 = require("./234888.js"),
-  o = function(e) {
+  a = function(e) {
     return e.CANCEL = "cancel", e.ERROR = "error", e.EXPIRED = "expired", e
   }({});
 
-function a(e) {
+function o(e) {
   var t;
   return {
     captchaService: e.captcha_service,

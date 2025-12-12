@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => el
 }), require("./539854.js"), require("./388685.js"), require("./583741.js"), require("./290780.js"), require("./781311.js"), require("./35282.js");
 var i, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -57,7 +57,7 @@ let w = "seenQSTutorial",
   W = null;
 
 function K() {
-  G = Chunk430824.Z.getGuildCount() >= 3 || a().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, H = []
+  G = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, H = []
 }
 
 function z(e) {
@@ -129,22 +129,22 @@ function Q() {
       })
   }
   let i = [],
-    o = new Set,
-    a = z(e => e === r || Y.includes(e) || o.has(e));
-  if (a.length > 0)
-    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jZ"]))), a)) Chunk392711.add(module.channelId), i.push(module.record);
-  let s = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !Y.includes(e) && !o.has(e)).map(e => q(e)).filter(Chunk823379.lm).reverse();
+    a = new Set,
+    o = z(e => e === r || Y.includes(e) || a.has(e));
+  if (o.length > 0)
+    for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["4B63jZ"]))), o)) Chunk392711.add(module.channelId), i.push(module.record);
+  let s = Chunk306680.ZP.getMentionChannelIds().filter(e => e !== r && !Y.includes(e) && !a.has(e)).map(e => q(e)).filter(Chunk823379.lm).reverse();
   if (Chunk442837.length > 0)
     for (let e of (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t["61Df13"]))), Chunk442837)) Chunk392711.add(module.record.id), i.push(module);
   if (null != require) {
     let e = Chunk984933.ZP.getSelectableChannelIds(require).filter(e => {
       let t = h.Z.getChannel(e);
-      return !(null == t || e === r || Y.includes(e) || o.has(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
+      return !(null == t || e === r || Y.includes(e) || a.has(e) || T.ZP.isChannelMuted(t.guild_id, e) || null != t.parent_id && T.ZP.isChannelMuted(t.guild_id, t.parent_id)) && (0, f.d)(t)
     }).map(e => q(e)).filter(e => e);
     Object.values(Chunk601070.Z.getActiveJoinedUnreadThreadsForGuild(require)).forEach(t => {
       for (let n in t) {
         let t = q(n);
-        null == t || o.has(t.record.id) || Y.includes(n) || e.push(t)
+        null == t || a.has(t.record.id) || Y.includes(n) || e.push(t)
       }
     }), module.length > 0 && (i.push((0, Chunk212819.o6)(Chunk388032.intl.string(Chunk388032.t.ieCAhD))), i = i.concat(module))
   }
@@ -194,12 +194,12 @@ function J(e) {
   let {
     query: n,
     queryMode: i
-  } = e, o = n.trim(), a = null != (t = I.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(m.default.getId())]);
-  null != a && s.add("guild:".concat(a)), W = Date.now(), r = null != r ? r : new u.ZP(et, M, null != i ? j : D, {
+  } = e, a = n.trim(), o = null != (t = I.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(m.default.getId())]);
+  null != o && s.add("guild:".concat(o)), W = Date.now(), r = null != r ? r : new u.ZP(et, M, null != i ? j : D, {
     frecencyBoosters: true,
     blacklist: s,
     allowSnowflake: true
-  }, j), B = null, V = o.length, Z = i, r.search(o)
+  }, j), B = null, V = a.length, Z = i, r.search(a)
 }
 
 function $(e) {
@@ -232,39 +232,39 @@ function er(e) {
   var t, n;
   let {
     query: i,
-    queryMode: o
-  } = e, a = i.trim();
+    queryMode: a
+  } = e, o = i.trim();
   if (null == r) returnfalse;
-  if (Z !== o) {
-    r.setResultTypes(null != o ? [o] : M), r.setLimit(null != o ? j : D);
+  if (Z !== a) {
+    r.setResultTypes(null != a ? [a] : M), r.setLimit(null != a ? j : D);
     let e = null != (t = I.Z.getGuildId()) ? t : true;
-    o === u.h8.USER && null != e ? r.setOptions({
+    a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
         guild: e,
         friends: true
       }
-    }, true) : o === u.h8.VOICE_CHANNEL ? r.setOptions({
+    }, true) : a === u.h8.VOICE_CHANNEL ? r.setOptions({
       voiceChannelGuildFilter: null
     }, true) : r.setOptions({
       userFilters: null,
       voiceChannelGuildFilter: true
     }, true)
   }
-  if ((Z = o) === u.h8.USER) {
+  if ((Z = a) === u.h8.USER) {
     let e = null != (n = I.Z.getGuildId()) ? n : null;
-    r.search(a, e)
-  } else r.search(a, true)
+    r.search(o, e)
+  } else r.search(o, true)
 }
 
 function ei(e) {
   k = e.selectedIndex
 }
 
-function eo() {
+function ea() {
   if (U) returnfalse;
   U = true, Chunk433517.K.set(w, true)
 }
-class ea extends(i = Chunk442837.ZP.PersistedStore) {
+class eo extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     this.waitFor(p.Z, m.default, h.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, S.Z, I.Z, _.Z, T.ZP), this.syncWith([_.Z], () => true), U = l.K.get(w) || false, Y = null != (t = null == e ? true : e.channelHistory) ? t : []
@@ -308,8 +308,8 @@ class ea extends(i = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-R(ea, "displayName", "QuickSwitcherStore"), R(ea, "persistKey", "QuickSwitcherStore");
-let es = new ea(Chunk570140.Z, {
+R(eo, "displayName", "QuickSwitcherStore"), R(eo, "persistKey", "QuickSwitcherStore");
+let es = new eo(Chunk570140.Z, {
     CONNECTION_OPEN: K,
     CONNECTION_OPEN_SUPPLEMENTAL: K,
     QUICKSWITCHER_SHOW: J,
@@ -319,7 +319,7 @@ let es = new ea(Chunk570140.Z, {
     HIDE_ACTION_SHEET_QUICK_SWITCHER: en,
     QUICKSWITCHER_SEARCH: er,
     QUICKSWITCHER_SELECT: ei,
-    QUICKSWITCHER_SWITCH_TO: eo,
+    QUICKSWITCHER_SWITCH_TO: ea,
     CHANNEL_SELECT: $
   }),
   el = es

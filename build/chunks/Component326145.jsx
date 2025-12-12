@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk745752 = require("./745752.js"),
   Chunk17181 = require("./17181.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk76531 = require("./76531.js"),
-  Chunk718215 = require("./718215.js");
+  Chunk337917 = require("./337917.js"),
+  Chunk321347 = require("./321347.js");
 
 function v(e) {
   let {
@@ -31,7 +31,7 @@ function v(e) {
     width: v,
     height: y
   } = (0, c.ZP)(), I = i.useCallback(() => {
-    null != t && null != n && ((0, m.I1)(t), (0, _.default)({
+    null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
       returnChannelId: n
     }))
@@ -40,7 +40,7 @@ function v(e) {
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
   return (0, r.jsxs)("div", {
-    className: a()(E.outerWrapping, O.main, {
+    className: a()(_.outerWrapping, O.main, {
       [O.fullBorderWithGradient]: null == S
     }),
     ref: l,
@@ -58,22 +58,22 @@ function v(e) {
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient
     }), (0, r.jsxs)("div", {
-      className: a()(E.explainerContainer, E.transparentBackground),
+      className: a()(_.explainerContainer, _.transparentBackground),
       children: [(0, r.jsxs)("div", {
-        className: E.header,
+        className: _.header,
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: b.intl.string(b.t.CCmhpF)
+          children: E.intl.string(E.t.CCmhpF)
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: b.intl.string(b.t.gRAHcZ)
+          children: E.intl.string(E.t.gRAHcZ)
         })]
       }), (0, r.jsx)(o.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: b.intl.string(b.t.VVFjAC),
+        text: E.intl.string(E.t.VVFjAC),
         onClick: I
       })]
     })]

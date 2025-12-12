@@ -7,9 +7,9 @@ e = require.nmd(module), (function() {
       object: true
     },
     i = r[typeof window] && window || this,
-    o = r[typeof exports] && exports,
-    a = r.object && module && !module.nodeType && module,
-    s = o && a && "object" == typeof require.g && require.g;
+    a = r[typeof exports] && exports,
+    o = r.object && module && !module.nodeType && module,
+    s = a && o && "object" == typeof require.g && require.g;
   s && (s.global === s || s.window === s || s.self === s) && (i = s);
   var l = 0x1fffffffffffff,
     c = /\bOpera/,
@@ -81,24 +81,24 @@ e = require.nmd(module), (function() {
 
   function S(e) {
     var t, n, r = i,
-      o = e && "object" == typeof e && "String" != E(e);
-    o && (r = e, e = null);
-    var a = r.navigator || {},
-      s = a.userAgent || "";
+      a = e && "object" == typeof e && "String" != E(e);
+    a && (r = e, e = null);
+    var o = r.navigator || {},
+      s = o.userAgent || "";
     e || (e = s);
-    var l = o ? !!a.likeChrome : /\bChrome\b/.test(e) && !/internal|\n/i.test(f.toString()),
+    var l = a ? !!o.likeChrome : /\bChrome\b/.test(e) && !/internal|\n/i.test(f.toString()),
       u = "Object",
-      d = o ? u : "ScriptBridgingProxyObject",
-      p = o ? u : "Environment",
-      m = o && r.java ? "JavaPackage" : E(r.java),
-      I = o ? u : "RuntimeObject",
+      d = a ? u : "ScriptBridgingProxyObject",
+      p = a ? u : "Environment",
+      m = a && r.java ? "JavaPackage" : E(r.java),
+      I = a ? u : "RuntimeObject",
       T = /\bJava/.test(m) && r.java,
       C = T && E(r.environment) == p,
       A = T ? "a" : "α",
       N = T ? "b" : "β",
       P = r.document || {},
       R = r.operamini || r.opera,
-      w = c.test(w = o && R ? R["[[Class]]"] : E(R)) ? w : R = null,
+      w = c.test(w = a && R ? R["[[Class]]"] : E(R)) ? w : R = null,
       D = e,
       x = [],
       L = null,
@@ -318,7 +318,7 @@ e = require.nmd(module), (function() {
       else E(t = r.runtime) == d ? (U = "Adobe AIR", F = t.flash.system.Capabilities.os) : E(t = r.phantom) == I ? (U = "PhantomJS", M = (t = t.version || null) && t.major + "." + t.minor + "." + t.patch) : "number" == typeof P.documentMode && (t = /\bTrident\/(\d+)/i.exec(e)) ? (M = [M, P.documentMode], (t = +t[1] + 4) != M[1] && (x.push("IE " + M[1] + " mode"), k && (k[1] = ""), M[1] = t), M = "IE" == U ? String(M[1].toFixed(1)) : M[0]) : "number" == typeof P.documentMode && /^(?:Chrome|Firefox)\b/.test(U) && (x.push("masking as " + U + " " + M), U = "IE", M = "11.0", k = ["Trident"], F = "Windows");
       F = F && h(F)
     }
-    if (M && (t = /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(M) || /(?:alpha|beta)(?: ?\d)?/i.exec(e + ";" + (j && a.appMinorVersion)) || /\bMinefield\b/i.test(e) && "a") && (L = /b/i.test(t) ? "beta" : "alpha", M = M.replace(RegExp(t + "\\+?$"), "") + ("beta" == L ? N : A) + (/\d+\+?/.exec(t) || "")), "Fennec" == U || "Firefox" == U && /\b(?:Android|Firefox OS|KaiOS)\b/.test(F)) U = "Firefox Mobile";
+    if (M && (t = /(?:[ab]|dp|pre|[ab]\d+pre)(?:\d+\+?)?$/i.exec(M) || /(?:alpha|beta)(?: ?\d)?/i.exec(e + ";" + (j && o.appMinorVersion)) || /\bMinefield\b/i.test(e) && "a") && (L = /b/i.test(t) ? "beta" : "alpha", M = M.replace(RegExp(t + "\\+?$"), "") + ("beta" == L ? N : A) + (/\d+\+?/.exec(t) || "")), "Fennec" == U || "Firefox" == U && /\b(?:Android|Firefox OS|KaiOS)\b/.test(F)) U = "Firefox Mobile";
     else if ("Maxthon" == U && M) M = M.replace(/\.[\d.]+/, ".x");
     else if (/\bXbox\b/i.test(G)) "Xbox 360" == G && (F = null), "Xbox 360" == G && /\bIEMobile\b/.test(e) && x.unshift("mobile mode");
     else if ((/^(?:Chrome|IE|Opera)$/.test(U) || U && !G && !/Browser|Mobi/.test(U)) && ("Windows CE" == F || /Mobi/i.test(e))) U += " Mobile";
@@ -335,7 +335,7 @@ e = require.nmd(module), (function() {
         var e = this.version;
         return this.family + (e && !n ? " " + e : "") + (64 == this.architecture ? " 64-bit" : "")
       }
-    }), (t = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(D)) && !/\bi686\b/i.test(D) ? (F && (F.architecture = 64, F.family = F.family.replace(RegExp(" *" + t), "")), U && (/\bWOW64\b/i.test(e) || j && /\w(?:86|32)$/.test(a.cpuClass || a.platform) && !/\bWin64; x64\b/i.test(e)) && x.unshift("32-bit")) : F && /^OS X/.test(F.family) && "Chrome" == U && parseFloat(M) >= 39 && (F.architecture = 64), e || (e = null);
+    }), (t = /\b(?:AMD|IA|Win|WOW|x86_|x)64\b/i.exec(D)) && !/\bi686\b/i.test(D) ? (F && (F.architecture = 64, F.family = F.family.replace(RegExp(" *" + t), "")), U && (/\bWOW64\b/i.test(e) || j && /\w(?:86|32)$/.test(o.cpuClass || o.platform) && !/\bWin64; x64\b/i.test(e)) && x.unshift("32-bit")) : F && /^OS X/.test(F.family) && "Chrome" == U && parseFloat(M) >= 39 && (F.architecture = 64), e || (e = null);
     var q = {};
     return q.description = e, q.layout = k && k[0], q.manufacturer = Z, q.name = U, q.prerelease = L, q.product = G, q.ua = e, q.version = U && M, q.os = F || {
       architecture: null,
@@ -349,7 +349,7 @@ e = require.nmd(module), (function() {
   var I = S();
   "function" == typeof define && "object" == typeof define.amd && define.amd ? (i.platform = I, define(function() {
     return I
-  })) : o && a ? g(I, function(e, t) {
-    o[t] = e
+  })) : a && o ? g(I, function(e, t) {
+    a[t] = e
   }) : i.platform = I
 }).call(this)

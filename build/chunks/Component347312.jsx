@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk393238 = require("./393238.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk328187 = require("./328187.js"),
   Chunk607889 = require("./607889.js"),
   Chunk94432 = require("./94432.js"),
-  Chunk784506 = require("./784506.js");
+  Chunk94863 = require("./94863.js");
 let h = 40,
   g = Chunk94432.e3 / 1e3,
   E = 294,
@@ -84,10 +84,10 @@ function L(e) {
     devicePixelRatio: n,
     canvasHeight: r,
     segmentValue: i,
-    segmentIndex: o,
-    constrainMin: a
-  } = e, s = a ? (S - I) * i + I : S * i;
-  0 !== s && D(t, o * (2 * y + O) * n, (r / 2 - s / 2) * n, s * n, y * n)
+    segmentIndex: a,
+    constrainMin: o
+  } = e, s = o ? (S - I) * i + I : S * i;
+  0 !== s && D(t, a * (2 * y + O) * n, (r / 2 - s / 2) * n, s * n, y * n)
 }
 
 function j(e, t) {
@@ -100,23 +100,23 @@ function j(e, t) {
 }
 
 function M(e, t, n) {
-  let [r, o] = i.useState(e), [a, s] = i.useState(e), l = i.useRef(a);
+  let [r, a] = i.useState(e), [o, s] = i.useState(e), l = i.useRef(o);
   return i.useLayoutEffect(() => {
-    l.current = a
+    l.current = o
   }), i.useLayoutEffect(() => {
-    o(l.current), s(e)
-  }, [e, t, n]), [r, a]
+    a(l.current), s(e)
+  }, [e, t, n]), [r, o]
 }
 
 function k(e, t) {
   let n = (0, l.dQu)(s.Z.colors.INTERACTIVE_MUTED).hex(),
     r = (0, l.dQu)(s.Z.colors.INTERACTIVE_TEXT_DEFAULT).hex(),
     i = (0, l.dQu)(s.Z.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
-    o = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
-    a = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
-    c = t ? o : n,
+    a = (0, l.dQu)(s.Z.unsafe_rawColors.BRAND_430).hex(),
+    o = (0, l.dQu)(s.Z.unsafe_rawColors.WHITE_500).hex(),
+    c = t ? a : n,
     [u, d] = M(c, t, e),
-    [f, p] = M(t ? a : e ? i : r, t, e),
+    [f, p] = M(t ? o : e ? i : r, t, e),
     [_, m] = M(e ? c : r, t, e);
   return {
     lastBackgroundFillColor: u,
@@ -138,7 +138,7 @@ function G(e) {
   let {
     className: t,
     waveform: n,
-    currentTime: o,
+    currentTime: a,
     duration: s,
     played: l,
     playing: d,
@@ -156,7 +156,7 @@ function G(e) {
     lastInactiveFillColor: G,
     inactiveFillColor: Z
   } = k(l, d), F = {
-    currentTime: o,
+    currentTime: a,
     duration: s,
     played: l
   }, B = i.useRef(F);
@@ -179,7 +179,7 @@ function G(e) {
     if (null == e) return;
     let t = x({
       showAll: !l,
-      currentTime: o,
+      currentTime: a,
       duration: s,
       numSegments: O.length
     });
@@ -191,20 +191,20 @@ function G(e) {
       }
       r.reset()
     }
-  }, [O, o, s, l]), i.useEffect(() => {
+  }, [O, a, s, l]), i.useEffect(() => {
     let e = null;
 
     function t(n) {
       let r = g.current,
         i = null == r ? true : r.getContext("2d"),
-        o = y.current;
-      if (null == r || null == i || null == o) return;
-      let a = false;
+        a = y.current;
+      if (null == r || null == i || null == a) return;
+      let o = false;
       (v.current !== l || I.current !== d) && (v.current = l, I.current = d, C.current = n), null != C.current && n > C.current + A && (C.current = null);
       let s = r.height / N;
       i.clearRect(0, 0, r.width, r.height), i.beginPath();
       let [c, u] = U(P, w, n, C.current);
-      a = a || u, i.fillStyle = c;
+      o = o || u, i.fillStyle = c;
       for (let e = 0; e < O.length; e++) L({
         context: i,
         devicePixelRatio: N,
@@ -215,11 +215,11 @@ function G(e) {
       });
       i.fill();
       let [f, p] = U(G, Z, n, C.current);
-      a = a || p;
+      o = o || p;
       let [_, m] = U(D, M, n, C.current);
-      a = a || m;
-      for (let e = 0; e < o.length; e++) {
-        let t = o[e],
+      o = o || m;
+      for (let e = 0; e < a.length; e++) {
+        let t = a[e],
           n = Math.max(t.getCurrentValue(), O[e] - .1);
         i.beginPath(), i.fillStyle = t.isReset ? f : _, L({
           context: i,
@@ -228,14 +228,14 @@ function G(e) {
           segmentValue: n,
           segmentIndex: e,
           constrainMin: !t.isReset
-        }), a = a || t.isAnimating(), i.fill()
+        }), o = o || t.isAnimating(), i.fill()
       }
-      a && (e = requestAnimationFrame(t))
+      o && (e = requestAnimationFrame(t))
     }
     return e = requestAnimationFrame(t), () => {
       null != e && cancelAnimationFrame(e)
     }
-  }, [g, N, O, E, o, s, l, d, P, w, D, M, G, Z]);
+  }, [g, N, O, E, a, s, l, d, P, w, D, M, G, Z]);
   let [, V] = (0, u.Z)({
     ref: g,
     onDrag: f,
@@ -244,7 +244,7 @@ function G(e) {
   });
   return (0, r.jsx)("canvas", {
     onMouseDown: V,
-    className: a()(m.canvas, t),
+    className: o()(m.canvas, t),
     style: {
       width: b
     },

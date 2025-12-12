@@ -2,19 +2,19 @@
 /** chunk id: 618158, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => a,
+  Y: () => o,
   Z: () => s
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk937995 = require("./937995.jsx");
 
-function a(e) {
+function o(e) {
   let {
     onPreventIdle: t,
     onAllowIdle: n,
     onActive: r
-  } = i.useContext(o.nM);
+  } = i.useContext(a.nM);
   return {
     preventIdle: i.useCallback(() => {
       t(e)
@@ -33,10 +33,10 @@ function s(e) {
   } = e, {
     onForceIdle: s,
     onActive: l
-  } = i.useContext(o.nM), {
+  } = i.useContext(a.nM), {
     preventIdle: c,
     allowIdle: u
-  } = a("interact");
+  } = o("interact");
   i.useEffect(() => () => u(), [u]);
   let d = i.useCallback(e => {
     var t;

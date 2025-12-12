@@ -2,14 +2,14 @@
 /** chunk id: 168308, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Jw: () => a,
+  Jw: () => o,
   bC: () => l
 });
 var Chunk442837 = require("./442837.js"),
   Chunk509140 = require("./509140.js"),
   Chunk358085 = require("./358085.js");
 
-function a() {
+function o() {
   return Chunk358085.isPlatformEmbedded
 }
 

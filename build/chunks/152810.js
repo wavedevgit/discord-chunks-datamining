@@ -15,12 +15,12 @@ function l(e, t) {
     role: n = "dialog"
   } = e, l = (0, r.mp)();
   l = e["aria-label"] ? true : l;
-  let c = (0, a.useRef)(false);
-  return (0, a.useEffect)(() => {
+  let c = (0, o.useRef)(false);
+  return (0, o.useEffect)(() => {
     if (t.current && !t.current.contains(document.activeElement)) {
-      (0, o.e)(t.current);
+      (0, a.e)(t.current);
       let e = setTimeout(() => {
-        (document.activeElement === t.current || document.activeElement === document.body) && (c.current = true, t.current && (t.current.blur(), (0, o.e)(t.current)), c.current = false)
+        (document.activeElement === t.current || document.activeElement === document.body) && (c.current = true, t.current && (t.current.blur(), (0, a.e)(t.current)), c.current = false)
       }, 500);
       return () => {
         clearTimeout(e)

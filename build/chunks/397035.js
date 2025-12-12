@@ -59,7 +59,7 @@ function m(e) {
     } = e,
     p = (0, i.q)(n.extra.application_id),
     m = null == p ? true : p.getIconURL(128),
-    h = (0, o.xF)(n.extra.application_id, n.extra.media_assets_large_image, [c.Si.LARGE, c.Si.LARGE]),
+    h = (0, a.xF)(n.extra.application_id, n.extra.media_assets_large_image, [c.Si.LARGE, c.Si.LARGE]),
     g = n.extra.media_title,
     E = n.extra.media_subtitle,
     b = (0, s.Jg)(n) ? u.t["LH+Z3y"] : u.t.YuKgml,
@@ -68,11 +68,11 @@ function m(e) {
     },
     O = r.useMemo(() => {
       if (null == n.extra.url) return;
-      let e = a.Z.safeParseWithQuery(n.extra.url);
+      let e = o.Z.safeParseWithQuery(n.extra.url);
       if (null != e && null != e.protocol && null != e.hostname) return e
     }, [n.extra.url]);
   return null != O && (t = {
-    href: a.Z.format(O),
+    href: o.Z.format(O),
     ariaDescription: u.intl.formatToPlainString(u.t.aFFQ3g, {
       title: g
     })

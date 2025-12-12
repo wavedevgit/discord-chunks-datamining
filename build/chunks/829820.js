@@ -27,7 +27,7 @@ function E(e) {
     currentUserTrackId: t,
     syncingWithUser: n,
     syncingWithParty: i
-  } = e, [s, l] = r.useState(false), [c] = r.useState(() => new o.V7), u = (0, a.Z)(t);
+  } = e, [s, l] = r.useState(false), [c] = r.useState(() => new a.V7), u = (0, o.Z)(t);
   r.useEffect(() => {
     s && (t !== u || n || i) && (l(false), c.stop())
   }, [t, u, n, i, s, c]);
@@ -51,8 +51,8 @@ function b(e, t) {
 function y(e, t, n) {
   let i = b(e, t),
     {
-      notPlayable: o,
-      isCurrentUser: a,
+      notPlayable: a,
+      isCurrentUser: o,
       playingSameTrack: s
     } = i,
     {
@@ -66,7 +66,7 @@ function y(e, t, n) {
   return {
     label: (0, d.Z)(i, h.kG.USER_ACTIVITY_PLAY),
     tooltip: (0, f.Z)(i, h.kG.USER_ACTIVITY_PLAY),
-    disabled: !l && (a || o || s),
+    disabled: !l && (o || a || s),
     loading: l,
     onClick: p,
     spotifyData: i
@@ -74,37 +74,37 @@ function y(e, t, n) {
 }
 
 function O(e, t, n, i) {
-  let o = null != i ? i : c.ZP.getName(t),
-    a = b(e, t),
+  let a = null != i ? i : c.ZP.getName(t),
+    o = b(e, t),
     {
       notPlayable: s,
       syncingWithUser: l,
       syncingWithParty: u,
       isCurrentUser: p
-    } = a,
+    } = o,
     {
       loading: m,
       startLoading: g,
       clearLoading: y
-    } = E(a),
+    } = E(o),
     O = r.useCallback(() => {
-      g(), (0, _.Z)(a, h.kG.USER_ACTIVITY_SYNC, n).catch(y)
-    }, [a, n, g, y]);
+      g(), (0, _.Z)(o, h.kG.USER_ACTIVITY_SYNC, n).catch(y)
+    }, [o, n, g, y]);
   return {
-    label: (0, d.Z)(a, h.kG.USER_ACTIVITY_SYNC),
-    tooltip: (0, f.Z)(a, h.kG.USER_ACTIVITY_SYNC, o),
+    label: (0, d.Z)(o, h.kG.USER_ACTIVITY_SYNC),
+    tooltip: (0, f.Z)(o, h.kG.USER_ACTIVITY_SYNC, a),
     disabled: !m && (s || p || l || u),
     loading: m,
     onClick: O,
-    spotifyData: a
+    spotifyData: o
   }
 }
 
 function v(e, t, n) {
   let i = b(e, t),
     {
-      notPlayable: o,
-      syncingWithUser: a,
+      notPlayable: a,
+      syncingWithUser: o,
       syncingWithParty: s,
       isCurrentUser: l
     } = i,
@@ -119,7 +119,7 @@ function v(e, t, n) {
   return {
     label: (0, d.Z)(i, h.kG.EMBED_SYNC),
     tooltip: (0, f.Z)(i, h.kG.EMBED_SYNC),
-    disabled: !c && (l || a || s || o),
+    disabled: !c && (l || o || s || a),
     loading: c,
     onClick: m,
     spotifyData: i

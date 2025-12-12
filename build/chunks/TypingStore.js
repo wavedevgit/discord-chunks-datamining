@@ -53,10 +53,10 @@ function O(e) {
   if (null == n || t === l.V) returnfalse;
   null != r && r.channelId !== t && (null != r.timeout && clearTimeout(r.timeout), r = null);
   let i = Date.now(),
-    o = .8 * m;
-  if (null != r && (null != r.timeout || r.prevSend + o > i)) returnfalse;
+    a = .8 * m;
+  if (null != r && (null != r.timeout || r.prevSend + a > i)) returnfalse;
   let c = setTimeout(() => {
-    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, P(t) > g || a.tn.post({
+    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, P(t) > g || o.tn.post({
       url: f.ANM.TYPING(t),
       oldFormErrors: true,
       rejectWithError: true
@@ -64,21 +64,21 @@ function O(e) {
       if (200 === e.status) {
         var n, r;
         let i = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
-          o = null != (r = e.body.thread_create_cooldown_ms) ? r : 0;
+          a = null != (r = e.body.thread_create_cooldown_ms) ? r : 0;
         i > 0 && s.Z.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
           slowmodeType: d.S.SendMessage,
           cooldownMs: i
-        }), o > 0 && s.Z.dispatch({
+        }), a > 0 && s.Z.dispatch({
           type: "SLOWMODE_SET_COOLDOWN",
           channelId: t,
           slowmodeType: d.S.CreateThread,
-          cooldownMs: o
+          cooldownMs: a
         })
       }
     }))
-  }, null == r || r.prevSend > i - 2 * o ? h : 0);
+  }, null == r || r.prevSend > i - 2 * a ? h : 0);
   return r = {
     channelId: t,
     timeout: c,

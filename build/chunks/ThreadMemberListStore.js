@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => M
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
@@ -33,7 +33,7 @@ class O {
   rebuild(e) {
     this.version++, this.sections = {}, null != e && (this.allUserIds = new Set(e));
     let t = l.Z.getChannel(this.parentId);
-    o()(Array.from(this.allUserIds)).map(e => {
+    a()(Array.from(this.allUserIds)).map(e => {
       let [n, r, i] = this.calculateNewState(e, t);
       return {
         userId: e,
@@ -50,8 +50,8 @@ class O {
   }
   updateUserId(e) {
     if (!this.allUserIds.has(e)) returnfalse;
-    let [t, n, r] = this.findOldState(e), [i, o, a] = this.calculateNewState(e, l.Z.getChannel(this.parentId));
-    return (t !== i || n !== o || r !== a) && (this.removeUserId(e, t), this.addUser(e, i, o, a), true)
+    let [t, n, r] = this.findOldState(e), [i, a, o] = this.calculateNewState(e, l.Z.getChannel(this.parentId));
+    return (t !== i || n !== a || r !== o) && (this.removeUserId(e, t), this.addUser(e, i, a, o), true)
   }
   addUserId(e) {
     let [t, n, r] = this.calculateNewState(e, l.Z.getChannel(this.parentId));
@@ -65,22 +65,22 @@ class O {
   }
   addUser(e, t, n, r, i) {
     this.allUserIds.add(e);
-    let o = p.default.getUser(e);
-    if (null == o || "" === o.username) return;
+    let a = p.default.getUser(e);
+    if (null == a || "" === a.username) return;
     t in this.sections || (this.sections[t] = {
       sectionId: t,
       usersById: {},
       userIds: []
     });
-    let a = this.sections[t];
-    if (a.usersById[e] = {
+    let o = this.sections[t];
+    if (o.usersById[e] = {
         userId: e,
         displayName: n,
         canViewChannel: r
-      }, i) a.userIds.push(e);
+      }, i) o.userIds.push(e);
     else {
-      let t = this.findUserIdSortedPosition(a, e, n);
-      a.userIds.splice(t, 0, e)
+      let t = this.findUserIdSortedPosition(o, e, n);
+      o.userIds.splice(t, 0, e)
     }
     this.version++
   }
@@ -90,13 +90,13 @@ class O {
       usersById: i
     } = e;
     for (let e = 0; e < r.length; e++) {
-      let o = r[e],
-        a = i[o].displayName;
-      if (a === n) {
-        if (t < o) return e
-      } else if (null == a) {
+      let a = r[e],
+        o = i[a].displayName;
+      if (o === n) {
+        if (t < a) return e
+      } else if (null == o) {
         if (null != n) return e
-      } else if (null != n && n < a) return e
+      } else if (null != n && n < o) return e
     }
     return r.length
   }
@@ -117,16 +117,16 @@ class O {
   calculateNewState(e, t) {
     var n, r;
     let i = c.ZP.getMember(this.guildId, e),
-      o = p.default.getUser(e),
-      a = p.default.getCurrentUser(),
-      s = (null == o ? true : o.id) === (null == a ? true : a.id) ? f.Z.getStatus() : d.Z.getStatus(e, this.guildId),
-      l = null != o && null != t && m.BT({
+      a = p.default.getUser(e),
+      o = p.default.getCurrentUser(),
+      s = (null == a ? true : a.id) === (null == o ? true : o.id) ? f.Z.getStatus() : d.Z.getStatus(e, this.guildId),
+      l = null != a && null != t && m.BT({
         permission: E.Plq.VIEW_CHANNEL,
-        user: o,
+        user: a,
         context: t
       }),
       u = s !== E.Skl.OFFLINE && s !== E.Skl.INVISIBLE && s !== E.Skl.UNKNOWN ? null != (n = null == i ? true : i.hoistRoleId) ? n : "online" : "offline",
-      _ = null != (r = null == i ? true : i.nick) ? r : g.ZP.getName(o);
+      _ = null != (r = null == i ? true : i.nick) ? r : g.ZP.getName(a);
     return [u, null == _ ? true : _.toLowerCase(), l]
   }
   constructor(e, t, n) {
@@ -154,8 +154,8 @@ function I(e) {
     threadId: t,
     guildId: n,
     members: r
-  } = e, i = l.Z.getChannel(t), o = null == i ? true : i.parent_id;
-  null != o && (y[t] = new O(n, o, t), y[t].rebuild(r.map(e => e.user_id)))
+  } = e, i = l.Z.getChannel(t), a = null == i ? true : i.parent_id;
+  null != a && (y[t] = new O(n, a, t), y[t].rebuild(r.map(e => e.user_id)))
 }
 
 function T(e) {
@@ -188,7 +188,7 @@ function N(e) {
 function P(e) {
   let {
     presences: t
-  } = e, n = o()(t).map(e => {
+  } = e, n = a()(t).map(e => {
     var t;
     return null == (t = e.user) ? true : t.id
   }).filter(_.lm).uniq().value(), r = false;
@@ -265,10 +265,10 @@ class j extends(r = Chunk442837.ZP.Store) {
   }
   canUserViewChannel(e, t, n) {
     var r, i;
-    let o = y[e];
-    if (null == o) returnfalse;
-    let a = null == (r = o.sections[t]) ? true : r.usersById[n];
-    return null != (i = null == a ? true : a.canViewChannel) && i
+    let a = y[e];
+    if (null == a) returnfalse;
+    let o = null == (r = a.sections[t]) ? true : r.usersById[n];
+    return null != (i = null == o ? true : o.canViewChannel) && i
   }
 }
 b(j, "displayName", "ThreadMemberListStore");

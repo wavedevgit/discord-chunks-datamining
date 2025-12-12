@@ -24,7 +24,7 @@ var Chunk873546 = require("./873546.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
-  Chunk979905 = require("./979905.js");
+  Chunk350724 = require("./350724.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,8 +69,8 @@ function C(e, t) {
   if (null == e) return {};
   var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function C(e, t) {
 function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 async function N(e) {
@@ -109,7 +109,7 @@ function P(e) {
     hideSearch: w,
     showDivider: D,
     disableDoubleClick: x
-  } = e, L = null == s || (0, y.AB)(s) ? null : s, j = (0, o.e7)([m.Z], () => m.Z.isInChannel(L) || false), M = (0, o.e7)([c.Z], () => null != L && c.Z.getParticipantsListOpen(L)), {
+  } = e, L = null == s || (0, y.AB)(s) ? null : s, j = (0, a.e7)([m.Z], () => m.Z.isInChannel(L) || false), M = (0, a.e7)([c.Z], () => null != L && c.Z.getParticipantsListOpen(L)), {
     enabled: k,
     inInbox: U
   } = d.Z.useExperiment({
@@ -131,7 +131,7 @@ function P(e) {
       }, null != h ? h : s) : null, D && (0, r.jsx)(E.ZP.Divider, {}), k && !U ? (0, r.jsx)(f.Z, {}) : null, G && j && null != L && !M && l === b.d4z.GROUP_DM && (0, r.jsxs)("div", {
         className: O.controlButtonWrapper,
         children: [(0, r.jsx)(E.ZP.Divider, {}), (0, r.jsx)(_.Z, {
-          onClick: () => a.Z.toggleParticipantsList(L, !M)
+          onClick: () => o.Z.toggleParticipantsList(L, !M)
         })]
       })]
     })
@@ -156,16 +156,16 @@ function R(e) {
     children: t,
     className: n,
     "aria-label": i,
-    "aria-labelledby": o,
-    role: a,
+    "aria-labelledby": a,
+    role: o,
     disableDoubleClick: s
   } = e;
   return (0, r.jsx)(E.ZP, {
     className: n,
     onDoubleClick: () => N(s),
     "aria-label": i,
-    "aria-labelledby": o,
-    role: a,
+    "aria-labelledby": a,
+    role: o,
     children: t
   })
 }

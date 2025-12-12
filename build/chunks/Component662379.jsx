@@ -1,4 +1,4 @@
-/** Chunk was on 384 **/
+/** Chunk was on 9536 **/
 /** chunk id: 662379, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,27 +9,27 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk964269 = require("./964269.js"),
+  Chunk780970 = require("./780970.js"),
   Chunk961618 = require("./961618.js"),
   Chunk217684 = require("./217684.js"),
   Chunk174618 = require("./174618.js");
 
-function d(e) {
+function u(e) {
   let {
     imageSrc: t,
     description: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.howItWorksCard,
+    className: s.howItWorksCard,
     children: [(0, r.jsx)("div", {
-      className: a.howItWorksImageContainer,
+      className: s.howItWorksImageContainer,
       children: (0, r.jsx)("img", {
-        className: a.howItWorksImage,
+        className: s.howItWorksImage,
         src: t,
         alt: ""
       })
     }), (0, r.jsx)("div", {
-      className: a.howItWorksDescription,
+      className: s.howItWorksDescription,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-strong",
@@ -58,8 +58,8 @@ function g() {
     }), (0, Chunk54381.jsx)(Chunk481060.LZC, {
       size: 24
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk964269.howItWorksContainer,
-      children: module.map(e => (0, r.jsx)(d, {
+      className: Chunk780970.howItWorksContainer,
+      children: module.map(e => (0, r.jsx)(u, {
         imageSrc: e.imageSrc,
         description: e.description
       }, e.imageSrc))

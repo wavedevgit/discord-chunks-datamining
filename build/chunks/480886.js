@@ -11,7 +11,7 @@ module.exports = function(e) {
   var t = 0;
   return e = r(e, function(e) {
     if (s(e)) return t = l(e.length, t), true
-  }), a(t, function(t) {
-    return i(e, o(t))
+  }), o(t, function(t) {
+    return i(e, a(t))
   })
 }

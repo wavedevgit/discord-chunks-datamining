@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk595824 = require("./595824.jsx"),
   Chunk483566 = require("./483566.jsx"),
   Chunk402453 = require("./402453.jsx"),
-  Chunk415957 = require("./415957.js");
+  Chunk265519 = require("./265519.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -89,13 +89,13 @@ function g(e) {
     };
   return (0, r.jsx)(l.g, _(f({}, E), {
     role: "group",
-    children: y ? (0, r.jsx)(o.cO, {
+    children: y ? (0, r.jsx)(a.cO, {
       className: u.group,
       value: h.map(String),
       onChange: O,
       "data-mana-component": "checkbox-group",
       isDisabled: g,
-      children: p.map(e => (0, r.jsx)(a.C, {
+      children: p.map(e => (0, r.jsx)(o.C, {
         disabled: g || e.disabled,
         checked: h.includes(e.value),
         label: e.label,

@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800371 = require("./800371.js"),
-  Chunk451419 = require("./451419.js");
+  Chunk835406 = require("./835406.js"),
+  Chunk925002 = require("./925002.js");
 let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk297781.wO, Chunk297781.f, Chunk297781.n8, Chunk297781.v1, Chunk297781.pQ],
   E = e => {
     var t;
@@ -35,7 +35,7 @@ let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
       showCoverImage: false
     }), {
       data: v
-    } = (0, l.IX)(n.extra.application_id), S = (0, s.q)(v) && y, I = S ? [o.z.CLOUD_PLAY_NEW_BADGE] : [], [T] = (0, c.US)(I);
+    } = (0, l.IX)(n.extra.application_id), S = (0, s.q)(v) && y, I = S ? [a.z.CLOUD_PLAY_NEW_BADGE] : [], [T] = (0, c.US)(I);
     return (0, r.jsxs)(p.Zb, {
       selected: E,
       usesCardRows: true,
@@ -66,17 +66,17 @@ let g = [Chunk297781.OV, Chunk297781.EE, Chunk297781.Af, Chunk297781.U9, Chunk29
           className: m.cloudPlaySection,
           children: [(0, r.jsxs)("div", {
             className: m.cloudPlaySectionTextContainer,
-            children: [(0, r.jsx)(a.v3n, {
-              color: a.TVs.colors.ICON_SUBTLE,
+            children: [(0, r.jsx)(o.v3n, {
+              color: o.TVs.colors.ICON_SUBTLE,
               size: "xxs"
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-subtle",
               children: _.intl.string(_.t["5HiF2i"])
             })]
-          }), T === o.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(a.IGR, {
+          }), T === a.z.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.IGR, {
             text: _.intl.string(_.t.y2b7CA),
-            color: a.TVs.colors.BACKGROUND_BRAND.css
+            color: o.TVs.colors.BACKGROUND_BRAND.css
           })]
         })]
       })]

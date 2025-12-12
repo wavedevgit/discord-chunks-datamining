@@ -57,7 +57,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk748717 = require("./748717.jsx"),
   Chunk419636 = require("./419636.jsx"),
   Chunk154022 = require("./154022.jsx"),
-  Chunk736752 = require("./736752.jsx"),
+  Chunk393681 = require("./393681.jsx"),
   Chunk309739 = require("./309739.jsx"),
   Chunk64914 = require("./64914.jsx"),
   Chunk501348 = require("./501348.jsx"),
@@ -92,11 +92,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk376437 = require("./376437.js"),
-  Chunk542395 = require("./542395.js"),
-  Chunk148806 = require("./148806.js"),
-  Chunk665525 = require("./665525.js"),
-  Chunk202323 = require("./202323.js");
+  Chunk143525 = require("./143525.js"),
+  Chunk307139 = require("./307139.js"),
+  Chunk517319 = require("./517319.js"),
+  Chunk472057 = require("./472057.js"),
+  Chunk256529 = require("./256529.js");
 let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTOP_CUSTOM_APP_ICON_BADGE, Chunk704215.z.CLIENT_THEMES_APPEARANCE_SETTINGS_NEW_BADGE],
   eG = () => {
     let e = eU(),
@@ -343,7 +343,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         label: eD.intl.string(eD.t["+o1pDZ"]),
         searchableTitles: [eD.intl.string(eD.t["+o1pDZ"])],
         ariaLabel: eD.intl.string(eD.t["+o1pDZ"]),
-        element: eo.Z,
+        element: ea.Z,
         url: eR.Z5c.SETTINGS("content-and-social")
       },
       [eN.s6.CONTENT_SOCIAL_DISCORD_TAB]: {
@@ -374,7 +374,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         label: eD.intl.string(eD.t.OAuOHD),
         searchableTitles: [eD.intl.string(eD.t.OAuOHD)],
         ariaLabel: eD.intl.string(eD.t.OAuOHD),
-        element: ea.Z,
+        element: eo.Z,
         url: eR.Z5c.SETTINGS("data-and-privacy")
       },
       [eN.s6.PRIVACY_AND_SAFETY_STANDING]: {
@@ -549,9 +549,9 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         badgeCount: M,
         newIndicator: (0, r.jsx)(l.IGR, {
           text: eD.intl.string(eD.t.y2b7CA),
-          color: a.Z.colors.BACKGROUND_BRAND.css
+          color: o.Z.colors.BACKGROUND_BRAND.css
         }),
-        newIndicatorDismissibleContentTypes: [o.z.FAMILY_CENTER_NEW_BADGE],
+        newIndicatorDismissibleContentTypes: [a.z.FAMILY_CENTER_NEW_BADGE],
         url: eR.Z5c.SETTINGS("family-center")
       },
       [eN.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY]: {
@@ -572,7 +572,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         label: eD.intl.string(eD.t["+1h0k/"]),
         ariaLabel: eD.intl.string(eD.t["+1h0k/"]),
         element: eg.ZP,
-        newIndicatorDismissibleContentTypes: [o.z.AUTH_SESSIONS_NEW],
+        newIndicatorDismissibleContentTypes: [a.z.AUTH_SESSIONS_NEW],
         impressionName: i.ImpressionNames.USER_SETTINGS_SESSIONS,
         impressionProperties: {
           source: null == v ? true : v.source
@@ -588,7 +588,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         impressionProperties: {
           source: null == v ? true : v.source
         },
-        newIndicatorDismissibleContentTypes: [o.z.NEW_CRUNCHYROLL_CONNECTION],
+        newIndicatorDismissibleContentTypes: [a.z.NEW_CRUNCHYROLL_CONNECTION],
         url: eR.Z5c.SETTINGS("connections")
       },
       [eN.s6.THIRD_PARTY_ACCESS]: {
@@ -674,7 +674,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         element: D.Z,
         icon: O ? (0, r.jsx)(l.Mgn, {
           size: "xs",
-          color: a.Z.unsafe_rawColors.YELLOW_300.css
+          color: o.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
       },
       [eN.s6.SUBSCRIPTIONS_CREDITS]: {
@@ -767,7 +767,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         parent: eN.s6.APPEARANCE,
         newIndicator: (0, r.jsx)(l.IGR, {
           text: eD.intl.string(eD.t.y2b7CA),
-          color: a.Z.colors.BACKGROUND_BRAND.css
+          color: o.Z.colors.BACKGROUND_BRAND.css
         })
       },
       [eN.s6.APPEARANCE_SCALING_SPACING]: {

@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk159691 = require("./159691.js"),
   Chunk393903 = require("./393903.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk968413 = require("./968413.js");
+  Chunk956406 = require("./956406.js");
 let f = 200,
   p = e => "var(--space-".concat(e, ")"),
   _ = e => null != e && "object" == typeof e && e.$$typeof === Symbol.for("react.portal"),
@@ -20,7 +20,7 @@ let f = 200,
     let {
       children: t,
       gap: n = 8,
-      edgeFade: o = "xl",
+      edgeFade: a = "xl",
       hideActionsWhenDisabled: m = true
     } = e, h = i.useRef(0), g = i.useRef(0), E = i.useRef(0), b = i.useRef(false), y = i.useRef(null), O = i.useMemo(() => i.Children.map(t, e => !i.isValidElement(e) || _(e) ? e : i.cloneElement(e, {
       tabIndex: false
@@ -107,7 +107,7 @@ let f = 200,
         }, 10)
       },
       k = {
-        "--custom-edge-fade-width": p(o)
+        "--custom-edge-fade-width": p(a)
       };
     return (0, r.jsxs)("div", {
       ref: w,
@@ -116,7 +116,7 @@ let f = 200,
       children: [v && (0, r.jsxs)("div", {
         className: d.actions,
         children: [(0, r.jsx)("div", {
-          className: a()(d.button, {
+          className: o()(d.button, {
             [d.disabled]: !I && m
           }),
           children: (0, r.jsx)(l.hU, {
@@ -128,7 +128,7 @@ let f = 200,
             "aria-hidden": !I && m
           })
         }), (0, r.jsx)("div", {
-          className: a()(d.button, {
+          className: o()(d.button, {
             [d.disabled]: !C && m
           }),
           children: (0, r.jsx)(l.hU, {
@@ -144,7 +144,7 @@ let f = 200,
         direction: "horizontal",
         gap: n,
         ref: D,
-        className: a()(d.children, {
+        className: o()(d.children, {
           [d.scrollLeft]: I,
           [d.scrollRight]: C,
           [d.scrollBoth]: I && C
@@ -170,11 +170,11 @@ let f = 200,
           if (null == n) return;
           let r = n.children,
             i = null != (t = y.current) ? t : 0,
-            o = r[i];
-          null != o && o.setAttribute("tabIndex", "-1");
-          let a = ["ArrowLeft"],
+            a = r[i];
+          null != a && a.setAttribute("tabIndex", "-1");
+          let o = ["ArrowLeft"],
             s = ["ArrowRight"];
-          [...a, ...s].includes(e.key) && (e.preventDefault(), a.includes(e.key) && (i = Math.max(0, i - 1)), s.includes(e.key) && (i = Math.min(n.childElementCount - 1, i + 1)), null != (o = r[i]) ? (o.setAttribute("tabIndex", "0"), n.setAttribute("tabIndex", "-1"), o.focus(), y.current = i) : (n.setAttribute("tabIndex", "0"), P()))
+          [...o, ...s].includes(e.key) && (e.preventDefault(), o.includes(e.key) && (i = Math.max(0, i - 1)), s.includes(e.key) && (i = Math.min(n.childElementCount - 1, i + 1)), null != (a = r[i]) ? (a.setAttribute("tabIndex", "0"), n.setAttribute("tabIndex", "-1"), a.focus(), y.current = i) : (n.setAttribute("tabIndex", "0"), P()))
         },
         onScroll: e => {
           b.current || (E.current = e.target.scrollLeft, R())

@@ -56,9 +56,9 @@ function m(e, t) {
 function h(e, t) {
   let n = (0, u.AT)(),
     f = (0, i.e7)([l.default], () => l.default.getCurrentUser()),
-    _ = (0, i.e7)([a.Z, s.Z], () => (0, u.hi)(e, t, [a.Z, s.Z])),
-    h = (0, i.e7)([o.Z], () => n.reduce((e, t) => m(p({}, e), {
-      [t.harmType]: t.getProtoUserSettings(o.Z.settings)
+    _ = (0, i.e7)([o.Z, s.Z], () => (0, u.hi)(e, t, [o.Z, s.Z])),
+    h = (0, i.e7)([a.Z], () => n.reduce((e, t) => m(p({}, e), {
+      [t.harmType]: t.getProtoUserSettings(a.Z.settings)
     }), {}), [n], d.l),
     g = r.useMemo(() => null == _ || t === (null == f ? true : f.id) || null == f ? [] : n.map(e => {
       let t = h[e.harmType],

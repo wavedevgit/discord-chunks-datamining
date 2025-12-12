@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk436444 = require("./436444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk228103 = require("./228103.js");
+  Chunk993346 = require("./993346.js");
 let m = 200,
   h = 250,
   g = 36,
@@ -27,9 +27,9 @@ function y(e) {
     fillFactor: t,
     guildBoostCount: n,
     premiumTier: r,
-    isRevealed: o,
-    useReducedMotion: a
-  } = e, [l, c] = i.useState(a ? r : false), [u, p] = i.useState(0 === n), [_, h] = i.useState(false), b = i.useRef(true);
+    isRevealed: a,
+    useReducedMotion: o
+  } = e, [l, c] = i.useState(o ? r : false), [u, p] = i.useState(0 === n), [_, h] = i.useState(false), b = i.useRef(true);
 
   function y(e) {
     let {
@@ -48,7 +48,7 @@ function y(e) {
       widthFactor: 0
     },
     to: {
-      widthFactor: o ? t : 0
+      widthFactor: a ? t : 0
     },
     config: {
       tension: 15,
@@ -79,7 +79,7 @@ function y(e) {
 function O(e) {
   let {
     guild: t
-  } = e, n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [s, m] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
+  } = e, n = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [s, m] = i.useState(false), [g, E] = i.useState(0), O = i.useRef(null), v = s || n, {
     fillFactor: S,
     totalAvailableBoostsCount: I
   } = i.useMemo(() => (0, c.Hl)(t), [t]), {
@@ -116,7 +116,7 @@ function O(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: _.progressBarScrubber,
-      children: [(0, r.jsx)(o.animated.div, {
+      children: [(0, r.jsx)(a.animated.div, {
         className: _.progressBarFill,
         style: {
           width: T.to({

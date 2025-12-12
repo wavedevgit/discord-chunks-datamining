@@ -10,13 +10,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk60482 = require("./60482.js"),
   Chunk535396 = require("./535396.js"),
   Chunk619733 = require("./619733.js"),
-  Chunk847328 = require("./847328.js"),
+  Chunk914820 = require("./914820.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611087 = require("./611087.js");
+  Chunk796571 = require("./796571.js");
 
 function f(e) {
-  let t = (0, o.BU)(e, "useGameServerPerk"),
-    n = (0, i.e7)([a.Z], () => a.Z.getLowestGameCostForGuild(e));
+  let t = (0, a.BU)(e, "useGameServerPerk"),
+    n = (0, i.e7)([o.Z], () => o.Z.getLowestGameCostForGuild(e));
   return r.useMemo(() => t && null != n ? {
     skuId: l.fj,
     title: u.intl.string(c.default["B3OfL/"]),

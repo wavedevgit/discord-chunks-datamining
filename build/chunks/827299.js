@@ -45,11 +45,11 @@ function u(e) {
 
 function d(e) {
   let [t, n] = (0, r.useState)(e);
-  return e === t || (0, a.E)(e, t) || n(e), t
+  return e === t || (0, o.E)(e, t) || n(e), t
 }
 
 function f(e, t) {
-  return Array.isArray(e) && Array.isArray(t) ? (0, a.E)(e, t) : Object.is(e, t)
+  return Array.isArray(e) && Array.isArray(t) ? (0, o.E)(e, t) : Object.is(e, t)
 }
 
 function p(e) {
@@ -69,8 +69,8 @@ let h = (0, Chunk663042.U)(() => ({
 function g(e, t) {
   let {
     getQueryId: n,
-    get: o,
-    load: a,
+    get: a,
+    load: o,
     getIsLoading: l,
     getError: c,
     retryConfig: {
@@ -97,10 +97,10 @@ function g(e, t) {
       refetch: i = false,
       useStoreState: s = O(n)
     } = e, c = s.getState().backoff, d = null != (t = null == l ? true : l(...r)) ? t : s.getState().isLoading;
-    if (null != n && !d && (i || null == o(...r))) try {
+    if (null != n && !d && (i || null == a(...r))) try {
       s.setState({
         isLoading: true
-      }), await a(...r), c.succeed(), s.setState({
+      }), await o(...r), c.succeed(), s.setState({
         error: null,
         isLoading: false
       })
@@ -123,7 +123,7 @@ function g(e, t) {
   }
 
   function S() {
-    for (var t = arguments.length, i = Array(t), a = 0; a < t; a++) i[a] = arguments[a];
+    for (var t = arguments.length, i = Array(t), o = 0; o < t; o++) i[o] = arguments[o];
     let u = d(i),
       p = Array.isArray(e) ? e : [e],
       _ = n(...u),
@@ -134,7 +134,7 @@ function g(e, t) {
       b = (0, s.e7)(p, () => null == c ? true : c(...u), [u]),
       y = m(e => null == c ? e.error : null),
       S = null != b ? b : y,
-      I = (0, s.e7)(p, () => o(...u), [u], f);
+      I = (0, s.e7)(p, () => a(...u), [u], f);
     return (0, r.useEffect)(() => {
       v({
         queryId: _,

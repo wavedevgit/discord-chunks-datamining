@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   $u: () => s,
-  Ig: () => a,
-  p1: () => o
+  Ig: () => o,
+  p1: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-04_culture_creation_holdout",
   label: "Culture Creation Holdout",
@@ -25,10 +25,10 @@ let o = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function o(e) {
   let {
     inHoldout: t
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: e
   }, {
     autoTrackExposure: false
@@ -39,7 +39,7 @@ function a(e) {
 function s(e) {
   let {
     inHoldout: t
-  } = o.getCurrentConfig({
+  } = a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false

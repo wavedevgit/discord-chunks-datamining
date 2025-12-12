@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk208049 = require("./208049.js"),
@@ -20,45 +20,45 @@ var Chunk54381 = require("./54381.js"),
   Chunk74538 = require("./74538.js"),
   Chunk710111 = require("./710111.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk174717 = require("./174717.js");
+  Chunk785174 = require("./785174.js");
 let y = 4;
 
 function O(e) {
   let t = (0, s.e7)([m.default], () => h.ZP.canUseSoundboardEverywhere(m.default.getCurrentUser())),
     n = (0, s.e7)([u.Z], () => u.Z.getSoundsForGuild(g.X8)),
     r = (0, s.Wu)([p.Z], () => p.Z.getGuildIds()),
-    o = i.useMemo(() => _.Z.can(E.Pl.USE_EXTERNAL_SOUNDS, e), [e]);
+    a = i.useMemo(() => _.Z.can(E.Pl.USE_EXTERNAL_SOUNDS, e), [e]);
   return i.useMemo(() => {
     let i = [];
-    if (t && o) {
+    if (t && a) {
       let e = r.flatMap(e => {
         var t, n;
         return null != (n = null == (t = u.Z.getSoundsForGuild(e)) ? true : t.filter(e => e.available)) ? n : []
       });
-      i.push(...a().sampleSize(e, y))
+      i.push(...o().sampleSize(e, y))
     } else if ((null == e ? true : e.guild_id) != null) {
       var s;
       let t = null == (s = u.Z.getSoundsForGuild(null == e ? true : e.guild_id)) ? true : s.filter(e => e.available);
-      i.push(...a().sampleSize(t, y))
+      i.push(...o().sampleSize(t, y))
     }
-    return i.length < y && i.push(...a().sampleSize(null != n ? n : [], y - i.length)), i
-  }, [o, null == e ? true : e.guild_id, n, r, t])
+    return i.length < y && i.push(...o().sampleSize(null != n ? n : [], y - i.length)), i
+  }, [a, null == e ? true : e.guild_id, n, r, t])
 }
 let v = Chunk473749.memo(function(e) {
   let {
     channelId: t,
     onSelectSoundmoji: n
-  } = e, o = (0, s.e7)([u.Z], () => !u.Z.isFetching() && !u.Z.hasFetchedAllSounds(), []), a = (0, s.e7)([f.Z], () => f.Z.getChannel(t)), p = O(a);
+  } = e, a = (0, s.e7)([u.Z], () => !u.Z.isFetching() && !u.Z.hasFetchedAllSounds(), []), o = (0, s.e7)([f.Z], () => f.Z.getChannel(t)), p = O(o);
   return (i.useEffect(() => {
     (0, c.w)()
-  }, [o]), 0 === p.length) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)("div", {
+  }, [a]), 0 === p.length) ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)("div", {
     className: b.rowContainer,
     children: p.map((e, t) => (0, r.jsx)(d.ZP, {
       suppressPlaySound: true,
       enableSecondaryActions: true,
       isSoundmoji: true,
       sound: e,
-      channel: a,
+      channel: o,
       onSelectItem: t => null == n ? true : n(e, !t.shiftKey)
     }, t))
   })

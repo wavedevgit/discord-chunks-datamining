@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
   c = [],
   u = function(e, t, n) {
     true === n && (n = {});
-    var a = r.useRef(null),
+    var o = r.useRef(null),
       u = {
         onFirstUpdate: n.onFirstUpdate,
         placement: n.placement || "bottom",
@@ -67,14 +67,14 @@ var Chunk473749 = require("./473749.js"),
             enabled: false
           }])
         };
-        return s()(a.current, e) ? a.current || e : (a.current = e, e)
+        return s()(o.current, e) ? o.current || e : (o.current = e, e)
       }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, _]),
       h = r.useRef();
     return (0, l.LI)(function() {
       h.current && h.current.setOptions(m)
     }, [m]), (0, l.LI)(function() {
       if (null != e && null != t) {
-        var r = n.createPopper || o.fi,
+        var r = n.createPopper || a.fi,
           i = r(e, t, m);
         return h.current = i,
           function() {

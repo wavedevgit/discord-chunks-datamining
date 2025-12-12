@@ -519,7 +519,7 @@ let d = {
     return null != (t = c[e]) ? t : null
   },
   getByUrl(e) {
-    let t = a.Z.toURLSafe(e);
+    let t = o.Z.toURLSafe(e);
     if (null == t) return;
     let n = t.hostname;
     return u[n.startsWith("www.") ? n.slice(4) : n]

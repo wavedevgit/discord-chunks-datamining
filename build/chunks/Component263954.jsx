@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk56589 = require("./56589.js");
+  a = require.n(Chunk120356),
+  Chunk11777 = require("./11777.js");
 
 function s(e) {
   let {
@@ -18,15 +18,15 @@ function s(e) {
     color: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.perkRow,
+    className: o.perkRow,
     children: [(0, r.jsx)("div", {
-      className: a.perkIconContainer,
+      className: o.perkIconContainer,
       children: (0, r.jsx)(t, {
         color: null != s ? s : "currentColor",
-        className: o()(a.perkIcon, n)
+        className: a()(o.perkIcon, n)
       })
     }), (0, r.jsx)("div", {
-      className: a.perkDescription,
+      className: o.perkDescription,
       children: i
     })]
   })

@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => en
 });
 var r, Chunk979079 = require("./979079.js"),
-  o = require.n(Chunk979079),
+  a = require.n(Chunk979079),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk531441 = require("./531441.js"),
@@ -53,10 +53,10 @@ function x(e) {
     accountStanding: n,
     isDsaEligible: r,
     isAppealEligible: i,
-    username: a,
+    username: o,
     appealEligibility: s
   } = e;
-  d = o()(t, "id"), p = n, E = r, b = i, _ = false, m = true, h = null, T = a, y = s
+  d = a()(t, "id"), p = n, E = r, b = i, _ = false, m = true, h = null, T = o, y = s
 }
 
 function L(e) {
@@ -76,9 +76,9 @@ function M(e) {
     accountStanding: n,
     isDsaEligible: r,
     username: i,
-    isAppealEligible: o
+    isAppealEligible: a
   } = e;
-  d[t.id] = t, f[t.id] = l.OY.SUCCESS, p = n, _ = false, h = null, E = r, b = o, m = true, T = i
+  d[t.id] = t, f[t.id] = l.OY.SUCCESS, p = n, _ = false, h = null, E = r, b = a, m = true, T = i
 }
 
 function k(e) {

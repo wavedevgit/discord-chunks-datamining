@@ -145,7 +145,7 @@ let d = "1340102344645283891",
   v = {
     [Chunk981631.GuildFeatures.GAME_SERVERS]: {
       boostPrice: 3,
-      isEnabled: e => (0, a.v$)(e, "GuildPowerupsConstants")
+      isEnabled: e => (0, o.v$)(e, "GuildPowerupsConstants")
     }
   },
   S = {

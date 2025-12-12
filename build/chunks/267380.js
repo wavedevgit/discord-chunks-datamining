@@ -8,7 +8,7 @@ require.d(exports, {
   lw: () => O
 });
 var Chunk720479 = require("./720479.js");
-let a = 1948440,
+let o = 1948440,
   s = 1948439,
   l = 1300,
   c = 1600,
@@ -21,8 +21,8 @@ function d(e, t, n, r) {
 function f(e, t, n) {
   let r = Math.floor((30 * (n - t) + 10646) / 10631),
     i = Math.min(12, Math.ceil((n - (29 + d(t, r, 1, 1))) / 29.5) + 1),
-    a = n - d(t, r, i, 1) + 1;
-  return new(0, o.aw)(e, r, i, a)
+    o = n - d(t, r, i, 1) + 1;
+  return new(0, a.aw)(e, r, i, o)
 }
 
 function p(e) {
@@ -30,10 +30,10 @@ function p(e) {
 }
 class _ {
   fromJulianDay(e) {
-    return f(this, a, e)
+    return f(this, o, e)
   }
   toJulianDay(e) {
-    return d(a, e.year, e.month, e.day)
+    return d(o, e.year, e.month, e.day)
   }
   getDaysInMonth(e) {
     let t = 29 + e.month % 2;
@@ -88,7 +88,7 @@ function y(e) {
 }
 class O extends _ {
   fromJulianDay(e) {
-    let t = e - a,
+    let t = e - o,
       n = g(l),
       r = g(c);
     if (t < n || t > r) return super.fromJulianDay(e);
@@ -109,11 +109,11 @@ class O extends _ {
           break
         }
       }
-      return new(0, o.aw)(this, e, n, t - b(e, n) + 1)
+      return new(0, a.aw)(this, e, n, t - b(e, n) + 1)
     }
   }
   toJulianDay(e) {
-    return e.year < l || e.year > c ? super.toJulianDay(e) : a + b(e.year, e.month) + (e.day - 1)
+    return e.year < l || e.year > c ? super.toJulianDay(e) : o + b(e.year, e.month) + (e.day - 1)
   }
   getDaysInMonth(e) {
     return e.year < l || e.year > c ? super.getDaysInMonth(e) : E(e.year, e.month)

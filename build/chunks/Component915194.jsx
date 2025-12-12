@@ -13,16 +13,16 @@ var Chunk442837 = require("./442837.js"),
   Chunk922156 = require("./922156.js"),
   Chunk63063 = require("./63063.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk534084 = require("./534084.js");
+  Chunk377856 = require("./377856.js");
 let h = l => {
   let {
     onClose: n,
     transitionState: i
   } = l, {
     error: h,
-    applicationName: x
-  } = (0, t.cj)([d.Z, a.Z], () => {
-    let l = d.Z.getLastError(),
+    applicationName: b
+  } = (0, t.cj)([s.Z, a.Z], () => {
+    let l = s.Z.getLastError(),
       n = null;
     if (null != l && null != l.applicationId) {
       let i = a.Z.getApplication(l.applicationId);
@@ -39,15 +39,15 @@ let h = l => {
     "aria-label": u.intl.string(u.t["6kHRYP"]),
     parentComponent: "DispatchErrorModal",
     children: [(0, r.jsxs)(e.xBx, {
-      justify: s.Z.Justify.BETWEEN,
+      justify: d.Z.Justify.BETWEEN,
       separator: false,
-      children: [(0, r.jsx)(s.Z.Child, {
+      children: [(0, r.jsx)(d.Z.Child, {
         grow: 1,
         children: (0, r.jsx)(e.Heading, {
           variant: "heading-lg/semibold",
           children: u.intl.string(u.t["6kHRYP"])
         })
-      }), (0, r.jsx)(s.Z.Child, {
+      }), (0, r.jsx)(d.Z.Child, {
         grow: 0,
         children: (0, r.jsx)(e.olH, {
           onClick: n
@@ -69,7 +69,7 @@ let h = l => {
         }), (0, r.jsx)("div", {
           className: p.errorDetails,
           children: (0, r.jsxs)("div", {
-            children: [null != x ? "Game: ".concat(x, "\n") : null, (null == h ? true : h.applicationId) != null ? "Game ID: ".concat(h.applicationId, "\n") : null, (null == h ? true : h.branchId) != null && (null == h ? true : h.applicationId) !== (null == h ? true : h.branchId) ? "Branch ID: ".concat(null == h ? true : h.branchId, "\n") : null, (null == h ? true : h.code) != null ? "Error Code: ".concat(null == h ? true : h.code, "\n") : null, (null == h ? true : h.uuid) != null ? "Unique Case ID: ".concat(null == h ? true : h.uuid) : null]
+            children: [null != b ? "Game: ".concat(b, "\n") : null, (null == h ? true : h.applicationId) != null ? "Game ID: ".concat(h.applicationId, "\n") : null, (null == h ? true : h.branchId) != null && (null == h ? true : h.applicationId) !== (null == h ? true : h.branchId) ? "Branch ID: ".concat(null == h ? true : h.branchId, "\n") : null, (null == h ? true : h.code) != null ? "Error Code: ".concat(null == h ? true : h.code, "\n") : null, (null == h ? true : h.uuid) != null ? "Unique Case ID: ".concat(null == h ? true : h.uuid) : null]
           })
         })]
       })

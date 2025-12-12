@@ -93,52 +93,52 @@ function P(e) {
 }
 let R = e => {
   let t = m.Z.getChannel(e),
-    n = (0, o.e7)([g.Z], () => (null == t ? true : t.guild_id) == null || g.Z.canChatInGuild(t.guild_id), [t]),
-    r = (0, o.e7)([p.Z], () => (null == t ? true : t.guild_id) != null && p.Z.isLurking(t.guild_id), [t]),
-    i = (0, o.e7)([h.ZP, E.default], () => {
+    n = (0, a.e7)([g.Z], () => (null == t ? true : t.guild_id) == null || g.Z.canChatInGuild(t.guild_id), [t]),
+    r = (0, a.e7)([p.Z], () => (null == t ? true : t.guild_id) != null && p.Z.isLurking(t.guild_id), [t]),
+    i = (0, a.e7)([h.ZP, E.default], () => {
       var e, n;
       let r = E.default.getCurrentUser();
       return null != (n = (null == t ? true : t.guild_id) != null && null != r ? null == (e = h.ZP.getMember(null == t ? true : t.guild_id, r.id)) ? true : e.isPending : null) && n
     }),
-    [, a] = (0, c.AB)(null == t ? true : t.guild_id),
+    [, o] = (0, c.AB)(null == t ? true : t.guild_id),
     s = (0, _.Xb)(t),
     l = (0, _.tc)(t);
-  return !!(!n || r || i || (null == t ? true : t.isLockedThread()) && !s || (null == t ? true : t.isArchivedThread()) && !l) || !!a
+  return !!(!n || r || i || (null == t ? true : t.isLockedThread()) && !s || (null == t ? true : t.isArchivedThread()) && !l) || !!o
 };
 
 function w(e, t) {
   var n, r;
-  let o = i.useContext(M),
-    a = i.useCallback(t => {
+  let a = i.useContext(M),
+    o = i.useCallback(t => {
       var n;
-      let r = (0, v.Z)(e, t, null != o.modal ? "modal" : "message");
-      return null == (n = o.setValidationErrors) || n.call(o, t => C(I({}, t), {
+      let r = (0, v.Z)(e, t, null != a.modal ? "modal" : "message");
+      return null == (n = a.setValidationErrors) || n.call(a, t => C(I({}, t), {
         [e.id]: r
       })), null == r
-    }, [e, o]);
+    }, [e, a]);
   return i.useEffect(() => {
     var e;
-    let n = () => a(t);
-    return null == (e = o.validators) || e.add(n), () => {
+    let n = () => o(t);
+    return null == (e = a.validators) || e.add(n), () => {
       var e;
-      null == (e = o.validators) || e.delete(n)
+      null == (e = a.validators) || e.delete(n)
     }
-  }, [o.validators, a, t, e.id]), {
-    error: null != (r = null == (n = o.validationErrors) ? true : n[e.id]) ? r : null,
-    validate: a
+  }, [a.validators, o, t, e.id]), {
+    error: null != (r = null == (n = a.validationErrors) ? true : n[e.id]) ? r : null,
+    validate: o
   }
 }
 
 function D(e, t, n, r) {
-  var a;
-  let s = (0, o.e7)([O.Z], () => O.Z.getInteractionComponentState(e.id, n.id)),
-    l = (0, o.e7)([u.ZP], () => u.ZP.getInteraction(e), [e]),
+  var o;
+  let s = (0, a.e7)([O.Z], () => O.Z.getInteractionComponentState(e.id, n.id)),
+    l = (0, a.e7)([u.ZP], () => u.ZP.getInteraction(e), [e]),
     c = R(e.channel_id) || t,
     {
       error: d,
       validate: p
     } = w(n, s),
-    _ = null != (a = e.applicationId) ? a : e.author.id;
+    _ = null != (o = e.applicationId) ? o : e.author.id;
   return {
     state: s,
     executeStateUpdate: i.useCallback(t => {
@@ -163,12 +163,12 @@ function D(e, t, n, r) {
 }
 
 function x(e, t, n) {
-  let r = (0, o.e7)([O.Z], () => O.Z.getInteractionComponentState(e.customId, t.id)),
+  let r = (0, a.e7)([O.Z], () => O.Z.getInteractionComponentState(e.customId, t.id)),
     {
       error: s,
       validate: c
     } = w(t, r),
-    u = i.useCallback(n => null == n || (a.Z.dispatch({
+    u = i.useCallback(n => null == n || (o.Z.dispatch({
       type: "SET_INTERACTION_COMPONENT_STATE",
       rootContainerId: e.customId,
       componentId: t.id,
@@ -202,8 +202,8 @@ function k(e) {
   let {
     children: t,
     message: n,
-    modal: o,
-    applicationWidget: a,
+    modal: a,
+    applicationWidget: o,
     validators: s,
     validationErrors: l,
     setValidationErrors: c,
@@ -217,27 +217,27 @@ function k(e) {
       validators: s,
       getParents: e => (0, y.cd)(n.components, e)
     };
-    if (null != o) return {
-      useComponentState: x.bind(null, o),
-      channelId: o.channelId,
-      containerId: o.customId,
-      modal: o,
+    if (null != a) return {
+      useComponentState: x.bind(null, a),
+      channelId: a.channelId,
+      containerId: a.customId,
+      modal: a,
       validators: s,
       validationErrors: l,
       setValidationErrors: c,
-      getParents: e => (0, y.cd)(o.components, e)
+      getParents: e => (0, y.cd)(a.components, e)
     };
-    if (null != a) return {
+    if (null != o) return {
       useComponentState: L("ApplicationWidget"),
-      containerId: P(a),
-      applicationWidget: a,
+      containerId: P(o),
+      applicationWidget: o,
       validators: s,
       validationErrors: l,
       setValidationErrors: c,
       getParents: j("ApplicationWidget")
     };
     throw Error("ComponentStateContextProvider requires at least one of message, modal, or applicationWidget")
-  }, [n, o, a, u, s, l, c]);
+  }, [n, a, o, u, s, l, c]);
   return (0, r.jsx)(M.Provider, {
     value: d,
     children: t

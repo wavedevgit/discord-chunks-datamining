@@ -36,7 +36,7 @@ async function c(e) {
     url: s.ANM.APPLICATION_BRANCH_LIST(e.id),
     oldFormErrors: true,
     rejectWithError: false
-  }).then(e => e.body)).map(n => o.Z.createForTestMode({
+  }).then(e => e.body)).map(n => a.Z.createForTestMode({
     id: e.id,
     skuId: t,
     branch: n

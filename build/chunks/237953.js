@@ -4,12 +4,12 @@
 require.d(exports, {
   Ib: () => r,
   WT: () => i,
-  c$: () => a
+  c$: () => o
 });
 var r = 1e-6,
   i = "undefined" != typeof Float32Array ? Float32Array : Array,
-  o = Math.PI / 180;
+  a = Math.PI / 180;
 
-function a(e) {
-  return e * o
+function o(e) {
+  return e * a
 }

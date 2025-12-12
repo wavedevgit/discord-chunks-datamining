@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk996146 = require("./996146.jsx"),
@@ -32,8 +32,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk30989 = require("./30989.js"),
-  Chunk564355 = require("./564355.js");
+  Chunk124907 = require("./124907.js"),
+  Chunk72775 = require("./72775.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,22 +106,22 @@ function U(e) {
     events: n,
     play: i
   } = (0, c.$)(), {
-    tooltipsWithKeybinds: o
+    tooltipsWithKeybinds: a
   } = T.n.useConfig({
     location: "TrinketsAnimationButton"
-  }), a = () => {
+  }), o = () => {
     var t;
     i(), null == (t = e.onClick) || t.call(e)
   };
   return (0, r.jsx)(u.u, {
-    shouldShow: o,
+    shouldShow: a,
     text: R.intl.string(R.t.Ve9Ge6),
     children: (0, r.jsx)(A.Z, M(L({
       className: D.button,
       "aria-label": R.intl.string(R.t.Z1RnTk),
       isActive: false,
       noHover: true,
-      onClick: a
+      onClick: o
     }, n), {
       children: (0, r.jsxs)("div", {
         className: w.iconContainer,
@@ -147,19 +147,19 @@ function Z(e) {
   var t;
   let {
     giftingPromotionConfig: n,
-    disabled: o,
+    disabled: a,
     channel: c
   } = e, {
     analyticsLocations: u
   } = (0, p.ZP)(f.Z.GIFT_BUTTON), [d, v] = i.useState(false), T = (0, s.e7)([y.Z], () => !(null === y.Z || true === y.Z ? true : y.Z.hasLayers())), A = (0, s.e7)([O.default], () => O.default.getCurrentUser()), R = null != A ? S.default.age(A.id) : 0, {
     giftBoxAnimation: D,
     trinketsAnimation: x
-  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, L = null != n.firstTimeNotice && !o && T && R >= G, [j, M] = (0, m.XR)(L ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Z = null != j, F = d || Z, B = (0, I.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
+  } = null != (t = null == n ? true : n.chatGiftIcon) ? t : {}, L = null != n.firstTimeNotice && !a && T && R >= G, [j, M] = (0, m.XR)(L ? l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK : null, (0, _.t)(l.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK)), Z = null != j, F = d || Z, B = (0, I.Ft)(c), V = c.type === N.d4z.DM, H = (0, b.ao)({
     location: "gift-promotion-button",
     isGift: true,
     giftRecipient: B
   });
-  if (o) return null;
+  if (a) return null;
   let Y = () => {
       H && V && null != B ? (0, E.Z)({
         giftRecipient: B,
@@ -195,11 +195,11 @@ function Z(e) {
       hovered: F,
       onClick: W
     }) : (0, r.jsx)(C.Z, {
-      disabled: o,
+      disabled: a,
       channel: c
     });
   return (0, r.jsx)("div", {
-    className: a()(w.container, {
+    className: o()(w.container, {
       [w.containerHovered]: F
     }),
     onMouseEnter: () => {

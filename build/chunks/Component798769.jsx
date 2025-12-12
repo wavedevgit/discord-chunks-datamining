@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk616030 = require("./616030.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk15962 = require("./15962.js");
+  Chunk81137 = require("./81137.js");
 
 function m(e) {
   let {
@@ -34,7 +34,7 @@ function m(e) {
     enablePremiumBrandRefresh: I,
     isDisplayingWowMomentConfirmation: T,
     isPremiumGroupPurchase: C
-  } = e, A = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), N = () => {
+  } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), N = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
         return h === f.PremiumTypes.TIER_0 ? p.intl.string(p.t.rk4Uu8) : p.intl.string(p.t["7YWj6+"]);
@@ -46,14 +46,14 @@ function m(e) {
         return p.intl.string(p.t["7YWj6+"])
     }
   };
-  return O && (0, l.pO)(v) && t !== s.h8.CONFIRM ? (0, r.jsxs)(o.xBx, {
+  return O && (0, l.pO)(v) && t !== s.h8.CONFIRM ? (0, r.jsxs)(a.xBx, {
     className: _.modalHeaderCustomGift,
     separator: false,
     "data-migration-pending": true,
-    children: [(0, r.jsx)(o.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       children: N()
-    }), (0, r.jsx)(o.olH, {
+    }), (0, r.jsx)(a.olH, {
       onClick: g,
       className: _.closeButton,
       innerClassName: _.closeButtonInner,

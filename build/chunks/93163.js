@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk85707 = require("./85707.js"),
   Chunk299407 = require("./299407.js");
-let a = e => {
+let o = e => {
     let t = "translate(".concat(e.x.toFixed(1), "px, ").concat(e.y.toFixed(1), "px)");
     return {
       pointerEvents: "none",
@@ -21,7 +21,7 @@ let a = e => {
   s = () => {
     let e = (0, Chunk473749.useRef)(null),
       t = (0, Chunk85707.f)(t => ({
-        currentOffset: (0, o.s)(t, e),
+        currentOffset: (0, a.s)(t, e),
         isDragging: t.isDragging(),
         itemType: t.getItemType(),
         item: t.getItem(),
@@ -31,7 +31,7 @@ let a = e => {
       display: true,
       itemType: exports.itemType,
       item: exports.item,
-      style: a(exports.currentOffset),
+      style: o(exports.currentOffset),
       monitor: exports.monitor,
       ref: module
     } : {

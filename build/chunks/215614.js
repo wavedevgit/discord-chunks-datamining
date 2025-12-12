@@ -57,10 +57,10 @@ function d(e, t, n) {
     S = (0, c.p)(n, {
       isDisabled: 0 !== t.collection.size
     }),
-    I = (0, o.z)(e, {
+    I = (0, a.z)(e, {
       labelable: true
     }),
-    T = (0, a.d)(I, {
+    T = (0, o.d)(I, {
       role: "grid",
       id: O,
       "aria-multiselectable": "multiple" === t.selectionManager.selectionMode ? "true" : true

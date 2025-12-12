@@ -14,8 +14,8 @@ function l(e, t) {
   if (null == e) return {};
   var n, r, i = c(e, t);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -23,8 +23,8 @@ function l(e, t) {
 function c(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    o = Object.keys(e);
-  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -46,12 +46,12 @@ function u(e) {
     size: null != i ? i : n,
     isTyping: c,
     status: u
-  }) : (0, r.jsx)(o.qEK, {
+  }) : (0, r.jsx)(a.qEK, {
     "aria-hidden": p["aria-hidden"],
     "aria-label": p["aria-label"],
     className: d,
     size: n,
-    src: (0, a.x)(t, 80, f)
+    src: (0, o.x)(t, 80, f)
   })
 }
 let d = Chunk473749.memo(u)

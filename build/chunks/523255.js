@@ -15,9 +15,9 @@ let c = e => {
     var t;
     if (!d(e)) returnfalse;
     let n = null == (t = s.Z.settings.userContent) ? true : t.safetyUserSentimentNoticeDismissedAt,
-      r = null != n ? o.E.toDate(n) : true,
-      a = null != r ? i()().diff(r, "days") : null,
-      c = null != a && a > 30;
+      r = null != n ? a.E.toDate(n) : true,
+      o = null != r ? i()().diff(r, "days") : null,
+      c = null != o && o > 30;
     if (null != n && !c) returnfalse;
     let {
       isEligible: u

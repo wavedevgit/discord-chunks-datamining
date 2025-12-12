@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk496526 = require("./496526.js");
+  Chunk802749 = require("./802749.js");
 
 function l(e) {
   let {
@@ -18,17 +18,17 @@ function l(e) {
     onDismiss: l,
     showCloseButton: c
   } = e;
-  return (0, r.jsxs)(o.qXd, {
+  return (0, r.jsxs)(a.qXd, {
     className: s.backNotice,
-    children: [c && (0, r.jsx)(o.RyX, {
+    children: [c && (0, r.jsx)(a.RyX, {
       onClick: l,
       className: s.closeButton,
-      noticeType: a.kVF.BACK_TO_PREVIOUS_SCREEN
+      noticeType: o.kVF.BACK_TO_PREVIOUS_SCREEN
     }), (0, r.jsx)(i.zxk, {
       text: t,
       variant: "overlay-secondary",
       size: "sm",
-      icon: o.whL,
+      icon: a.whL,
       onClick: n
     })]
   })

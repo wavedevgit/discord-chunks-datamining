@@ -7,35 +7,35 @@ require.d(exports, {
 });
 var Chunk579092 = require("./579092.js"),
   Chunk128813 = require("./128813.js");
-let o = null,
-  a = new Chunk579092.Yd("libdiscore");
+let a = null,
+  o = new Chunk579092.Yd("libdiscore");
 
 function s(e) {
-  a.error(e)
+  o.error(e)
 }
 
 function l(e) {
-  a.warn(e)
+  o.warn(e)
 }
 
 function c(e) {
-  a.info(e)
+  o.info(e)
 }
 
 function u(e) {
-  a.verbose(e)
+  o.verbose(e)
 }
 
 function d(e) {
-  a.trace(e)
+  o.trace(e)
 }
 
 function f() {
-  return null == o && (o = (async () => {
+  return null == a && (a = (async () => {
     await Chunk128813.mX();
     let e = Chunk128813.Qw();
     module.installLogCallback(s, l, c, u, d), await module.initLibdiscore()
-  })()), o
+  })()), a
 }
 
 function p() {

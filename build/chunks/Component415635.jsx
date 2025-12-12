@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk963838 = require("./963838.js"),
   Chunk39127 = require("./39127.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk57495 = require("./57495.js");
+  Chunk320310 = require("./320310.js");
 let _ = 50;
 
 function m(e) {
@@ -23,23 +23,23 @@ function m(e) {
     guildId: n,
     userId: m,
     containerDimensions: h
-  } = e, g = (0, a.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < _;
+  } = e, g = (0, o.e7)([l.Z], () => l.Z.useReducedMotion), [E, b] = i.useState([]), y = E.length < _;
   i.useEffect(() => {
     function e(e) {
       let {
         channelId: r,
         userId: i,
-        emoji: a,
+        emoji: o,
         animationType: s,
         animationId: l
       } = e;
       if (null != m && m !== i) return;
-      let d = null != a && null != s && null != l;
+      let d = null != o && null != s && null != l;
       if (r === t && !g && y && d) {
-        let e = (0, u._r)(a),
-          r = null != a.id && !a.animated,
+        let e = (0, u._r)(o),
+          r = null != o.id && !o.animated,
           d = {
-            id: (0, o.Z)(),
+            id: (0, a.Z)(),
             animationType: s,
             animationId: l,
             shouldResize: r,

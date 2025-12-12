@@ -16,13 +16,13 @@ var Chunk19780 = require("./19780.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, t, n, r) {
-  let o = t[0],
-    a = i.ZP.getName(e, n, o),
+  let a = t[0],
+    o = i.ZP.getName(e, n, a),
     s = null != r ? r : t.length;
-  return 1 === s && null != o ? a : null == o ? u.intl.formatToPlainString(u.t.chmM9N, {
+  return 1 === s && null != a ? o : null == a ? u.intl.formatToPlainString(u.t.chmM9N, {
     count: s
   }) : u.intl.formatToPlainString(u.t.GhkJ21, {
-    name: a,
+    name: o,
     count: s - 1
   })
 }
@@ -42,13 +42,13 @@ function f(e, t) {
 }
 
 function p(e) {
-  let t = a.Z.getStageInstanceByChannel(e.id);
+  let t = o.Z.getStageInstanceByChannel(e.id);
   return {
     channel_id: e.id,
     guild_id: e.guild_id,
     topic: null == t ? true : t.topic,
     media_session_id: r.Z.getMediaSessionId(),
-    request_to_speak_state: o.Uu(l.Plq.REQUEST_TO_SPEAK, e) ? s.BM.EVERYONE : s.BM.NO_ONE,
+    request_to_speak_state: a.Uu(l.Plq.REQUEST_TO_SPEAK, e) ? s.BM.EVERYONE : s.BM.NO_ONE,
     stage_instance_id: null == t ? true : t.id
   }
 }

@@ -18,8 +18,8 @@ function u(e) {
     ensureFresh: n,
     hasFetched: r,
     hasRoleSubscriptions: i
-  } = e, o = a.Z.getActiveGuildSubscriptions();
-  return (null != (t = null == o ? true : o.length) ? t : 0) === 0 && !!i || !!n && !r || !r && !a.Z.hasFetchedSubscriptions()
+  } = e, a = o.Z.getActiveGuildSubscriptions();
+  return (null != (t = null == a ? true : a.length) ? t : 0) === 0 && !!i || !!n && !r || !r && !o.Z.hasFetchedSubscriptions()
 }
 
 function d() {

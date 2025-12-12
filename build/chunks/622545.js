@@ -14,18 +14,18 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = ["a", "b", "c", "d"],
-  a = e => e;
+let a = ["a", "b", "c", "d"],
+  o = e => e;
 
 function s(e, t) {
   let n = {},
-    r = Math.min(e.length, o.length);
-  for (let i = 0; i < r; ++i) n[o[i]] = (n, r) => t(e[i], r);
+    r = Math.min(e.length, a.length);
+  for (let i = 0; i < r; ++i) n[a[i]] = (n, r) => t(e[i], r);
   return n
 }
 class l {
   asString() {
-    return this.transformed(a)
+    return this.transformed(o)
   }
   isEmpty() {
     return 0 === this.items.length

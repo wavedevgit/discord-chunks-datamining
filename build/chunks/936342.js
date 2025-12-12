@@ -18,15 +18,15 @@ module.exports = function(e, t, n, m, h) {
   if (true !== e && !_(e)) throw new r("Assertion failed: O must be undefined or an Object");
   if (!d(t)) throw new r("Assertion failed: P must be a Property Key");
   if ("boolean" != typeof n) throw new r("Assertion failed: extensible must be a Boolean");
-  if (!a(m)) throw new r("Assertion failed: Desc must be a Property Descriptor");
-  if (true !== h && !a(h)) throw new r("Assertion failed: current must be a Property Descriptor, or undefined");
+  if (!o(m)) throw new r("Assertion failed: Desc must be a Property Descriptor");
+  if (true !== h && !o(h)) throw new r("Assertion failed: current must be a Property Descriptor, or undefined");
   if (true === h) return !!n && ("Undefined" === b || (l(m) ? i(c, f, s, e, t, m) : i(c, f, s, e, t, {
     "[[Configurable]]": !!m["[[Configurable]]"],
     "[[Enumerable]]": !!m["[[Enumerable]]"],
     "[[Value]]": m["[[Value]]"],
     "[[Writable]]": !!m["[[Writable]]"]
   })));
-  if (!o({
+  if (!a({
       IsAccessorDescriptor: l,
       IsDataDescriptor: c
     }, h)) throw new r("`current`, when present, must be a fully populated and valid Property Descriptor");

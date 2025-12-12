@@ -7,7 +7,7 @@ require.d(exports, {
   nH: () => k
 }), require("./415506.js"), require("./388685.js"), require("./35282.js"), require("./704826.js"), require("./49124.js");
 var Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk261470 = require("./261470.js"),
   Chunk544891 = require("./544891.js"),
   Chunk710845 = require("./710845.js"),
@@ -75,8 +75,8 @@ class x extends Error {
     var n;
     let r = null != (n = null == t ? true : t.status) ? n : 0,
       i = r >= 500 && r < 600,
-      o = e.message.toLowerCase().includes("network") || e.message.toLowerCase().includes("terminated") || e.message.toLowerCase().includes("offline") || e.message.toLowerCase().includes("changed");
-    return i ? "server_error" : o ? "network_error" : "unknown"
+      a = e.message.toLowerCase().includes("network") || e.message.toLowerCase().includes("terminated") || e.message.toLowerCase().includes("offline") || e.message.toLowerCase().includes("changed");
+    return i ? "server_error" : a ? "network_error" : "unknown"
   }
   static rejectionHandler(e) {
     return t => {
@@ -98,11 +98,11 @@ class x extends Error {
     var n, r;
     let {
       cause: i,
-      response: o
-    } = t, a = x.getErrorKind(null != i ? i : Error("".concat(null != (n = null == o ? true : o.text) ? n : "Unknown error")), o), s = "server_error" === a ? "".concat(e, ":").concat(a, ":status_").concat(null != (r = null == o ? true : o.status) ? r : 0) : "".concat(e, ":").concat(a);
+      response: a
+    } = t, o = x.getErrorKind(null != i ? i : Error("".concat(null != (n = null == a ? true : a.text) ? n : "Unknown error")), a), s = "server_error" === o ? "".concat(e, ":").concat(o, ":status_").concat(null != (r = null == a ? true : a.status) ? r : 0) : "".concat(e, ":").concat(o);
     super(s, {
       cause: i
-    }), N(this, "kind", true), N(this, "phase", true), N(this, "messageShort", true), this.name = "ResumableUploadError", this.phase = e, this.kind = a, this.messageShort = s
+    }), N(this, "kind", true), N(this, "phase", true), N(this, "messageShort", true), this.name = "ResumableUploadError", this.phase = e, this.kind = o, this.messageShort = s
   }
 }
 let L = "Content-MD5";
@@ -122,11 +122,11 @@ class k extends Chunk476326.ZP {
       channelId: n,
       showLargeMessageDialog: r,
       reactNativeFileIndex: i
-    } = e, o = new k(t, n, r, i);
+    } = e, a = new k(t, n, r, i);
     return Object.entries(e).forEach(e => {
       let [t, n] = e;
-      t.startsWith("_") || (o[t] = n)
-    }), "COMPLETED" !== o.status && (o.status = "NOT_STARTED"), o
+      t.startsWith("_") || (a[t] = n)
+    }), "COMPLETED" !== a.status && (a.status = "NOT_STARTED"), a
   }
   parseRangeHeader(e) {
     let t = e.match(/^bytes=(\d+)-(\d+)(?:\/\d+)?$/);
@@ -177,7 +177,7 @@ class k extends Chunk476326.ZP {
       body: module,
       headers: r,
       signal: this._abortController.signal,
-      onRequestProgress: o().throttle(this.createResumeAwareProgressFn(0), 50),
+      onRequestProgress: a().throttle(this.createResumeAwareProgressFn(0), 50),
       rejectWithError: false
     }, this.retryOpts());
     return Chunk544891.tn.put(Chunk392711)
@@ -212,7 +212,7 @@ class k extends Chunk476326.ZP {
         "Content-Range": "bytes ".concat(t, "-").concat(this.currentSize - 1, "/").concat(this.currentSize)
       })
     }
-    e.onRequestProgress = o().throttle(this.createResumeAwareProgressFn(t), 50);
+    e.onRequestProgress = a().throttle(this.createResumeAwareProgressFn(t), 50);
     let r = await this._uploadHttpClient.doUpload(e, {
       fileByteRange: {
         start: t
@@ -227,7 +227,7 @@ class k extends Chunk476326.ZP {
     let {
       timeout: r,
       backoff: i,
-      retries: a
+      retries: o
     } = this.retryOpts(), s = {
       url: e,
       body: t,
@@ -235,12 +235,12 @@ class k extends Chunk476326.ZP {
         "Content-Type": n
       },
       signal: this._abortController.signal,
-      onRequestProgress: o().throttle(this.createResumeAwareProgressFn(0), 50),
+      onRequestProgress: a().throttle(this.createResumeAwareProgressFn(0), 50),
       retries: 0,
       rejectWithError: true,
       timeout: r
     }, l = 0;
-    for (; this.uploadAttempts <= a && !this._aborted;) {
+    for (; this.uploadAttempts <= o && !this._aborted;) {
       this.uploadAttempts++, this.uploadAnalytics.numUploadAttempts = this.uploadAttempts;
       try {
         if (this.uploadAttempts > 1) {
@@ -286,13 +286,13 @@ class k extends Chunk476326.ZP {
       let e = await k.tryConvertToWebP(this.item.file, () => this._aborted, this.id);
       null != module && (null != module.convertedFile && (this.item.file = module.convertedFile, this.currentSize = module.convertedFile.size), null != module.convertedMimeType && (this.uploadAnalytics.convertedMimeType = module.convertedMimeType), null != module.hashTimeMs && (this.uploadAnalytics.timing.hashTimeMs = module.hashTimeMs), null != module.conversionFailureReason && (this.uploadAnalytics.conversionFailureReason = module.conversionFailureReason), this.uploadAnalytics.timing.compressTimeMs = module.compressTimeMs)
     }
-    let o = await r.getUploadPayload(this),
-      a = (0, Chunk983544.F)(this.item.target),
+    let a = await r.getUploadPayload(this),
+      o = (0, Chunk983544.F)(this.item.target),
       l = (0, Chunk171638.G)({
         location: "CloudUpload.upload"
       });
-    if (null == o.filename || "" === o.filename) {
-      D.error("File does not have a filename.", JSON.stringify(o)), this.handleError(Chunk981631.evJ.INVALID_FILE_ASSET);
+    if (null == a.filename || "" === a.filename) {
+      D.error("File does not have a filename.", JSON.stringify(a)), this.handleError(Chunk981631.evJ.INVALID_FILE_ASSET);
       return
     }
     if (Chunk710845.useDetectedFileSize && 0 === this.currentSize && null != this.item.file) try {
@@ -300,7 +300,7 @@ class k extends Chunk476326.ZP {
       module > 0 && (this.currentSize = module)
     } catch (e) {
       D.warn("Failed to detect file size, proceeding with original", {
-        filename: o.filename,
+        filename: a.filename,
         error: module instanceof Error ? module.message : String(module)
       })
     }
@@ -323,7 +323,7 @@ class k extends Chunk476326.ZP {
         return await Chunk544891.tn.post(w(P({
           url: module,
           body: {
-            files: [o]
+            files: [a]
           }
         }, this.createAttachmentUrlRetryOpts()), {
           rejectWithError: false
@@ -376,8 +376,8 @@ class k extends Chunk476326.ZP {
       uri: r,
       type: require.file.type
     }));
-    let o = null == (e = Chunk392711.split(".").pop()) ? true : module.toLowerCase(),
-      a = "jpg" === o || "jpeg" === o ? "image/jpeg" : require.file.type;
+    let a = null == (e = Chunk392711.split(".").pop()) ? true : module.toLowerCase(),
+      o = "jpg" === a || "jpeg" === a ? "image/jpeg" : require.file.type;
     this.uploadAnalytics.convertedMimeType = Chunk261470;
     let s = null != (t = require.fileSize) ? exports : (await (0, Chunk861990.Lc)(r)).size;
     if (this.postCompressionSize = Chunk544891, this.currentSize = Chunk544891, null == Chunk544891) throw D.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
@@ -390,8 +390,8 @@ class k extends Chunk476326.ZP {
     return this.item = P({}, this.item, Chunk710845), this.reactNativeFilePrepped = true, this
   }
   static async tryConvertToWebP(e, t, n) {
-    var r, i, o;
-    let a, s = (0, f.n)({
+    var r, i, a;
+    let o, s = (0, f.n)({
       location: "CloudUpload.maybeConvertToWebP"
     });
     if (!s.enabled) return D.warn("webp conversion skipped for ".concat(n, ": not enabled")), null;
@@ -403,20 +403,20 @@ class k extends Chunk476326.ZP {
         compressTimeMs: 0
       };
     try {
-      if (a = await (0, C.t3)(e), t()) return null;
-      if (a.success && null != a.convertedBlob) D.log("webp conversion worked for ".concat(n, ": ").concat(a.sizeBefore, " -> ").concat(a.sizeAfter, " bytes (").concat(a.compressionRatio.toFixed(2), "x)")), c.convertedFile = new File([a.convertedBlob], e.name, {
+      if (o = await (0, C.t3)(e), t()) return null;
+      if (o.success && null != o.convertedBlob) D.log("webp conversion worked for ".concat(n, ": ").concat(o.sizeBefore, " -> ").concat(o.sizeAfter, " bytes (").concat(o.compressionRatio.toFixed(2), "x)")), c.convertedFile = new File([o.convertedBlob], e.name, {
         type: "image/webp",
         lastModified: e.lastModified
-      }), c.convertedMimeType = "image/webp", c.hashTimeMs = null != (r = a.hashTimeMs) ? r : true;
+      }), c.convertedMimeType = "image/webp", c.hashTimeMs = null != (r = o.hashTimeMs) ? r : true;
       else {
-        let e = null != (i = a.reason) ? i : C.S8.UNKNOWN_ERROR;
+        let e = null != (i = o.reason) ? i : C.S8.UNKNOWN_ERROR;
         D.log("webp conversion skipped for ".concat(n, ": ").concat(e)), c.conversionFailureReason = e
       }
     } catch (e) {
       D.warn("webp conversion failed for ".concat(n, ":"), e), c.conversionFailureReason = C.S8.UNKNOWN_ERROR
     }
     let u = Math.round(performance.now() - l);
-    return c.compressTimeMs = null != (o = null == a ? true : a.compressTimeMs) ? o : u, c
+    return c.compressTimeMs = null != (a = null == o ? true : o.compressTimeMs) ? a : u, c
   }
   handleError(e) {
     this.setStatus("ERROR"), this.error = e, this.trackUploadFinished("ERROR");
@@ -477,10 +477,10 @@ class k extends Chunk476326.ZP {
     })
   }
   trackUploadFinished(e) {
-    var t, n, r, i, o;
-    let a = null != this.startTime ? performance.now() - this.startTime : false;
+    var t, n, r, i, a;
+    let o = null != this.startTime ? performance.now() - this.startTime : false;
     g.default.track(A.rMx.ATTACHMENT_UPLOAD_FINISHED, {
-      duration_ms: a,
+      duration_ms: o,
       file_size: this.currentSize,
       pre_compression_file_size: this.preCompressionSize,
       final_state: e,
@@ -495,7 +495,7 @@ class k extends Chunk476326.ZP {
       upload_time_ms: this.uploadAnalytics.timing.uploadTimeMs,
       converted_mime_type: null != (r = this.uploadAnalytics.convertedMimeType) ? r : "unknown",
       image_compression_quality: null != (i = this.uploadAnalytics.imageCompressionQuality) ? i : 0,
-      video_compression_quality: null != (o = this.uploadAnalytics.videoCompressionQuality) ? o : "unknown",
+      video_compression_quality: null != (a = this.uploadAnalytics.videoCompressionQuality) ? a : "unknown",
       was_converted: null != this.uploadAnalytics.convertedMimeType && this.mimeType !== this.uploadAnalytics.convertedMimeType,
       was_compressed: this.currentSize < this.preCompressionSize,
       source_media_width: this.uploadAnalytics.sourceMediaWidth,
@@ -534,12 +534,12 @@ class k extends Chunk476326.ZP {
     })
   }
   constructor(e, t, n, r, i) {
-    var o, a, s, l;
+    var a, o, s, l;
     super(e, n), N(this, "status", "NOT_STARTED"), N(this, "channelId", true), N(this, "responseUrl", true), N(this, "currentSize", true), N(this, "preCompressionSize", true), N(this, "postCompressionSize", true), N(this, "loaded", 0), N(this, "reactNativeFileIndex", true), N(this, "error", true), N(this, "reactNativeFilePrepped", false), N(this, "allowOptimization", true), N(this, "startTime", true), N(this, "uploadAnalytics", new M), N(this, "contentHash", true), N(this, "etag", true), N(this, "uploadAttempts", 0), N(this, "_abortController", true), N(this, "_xhr", true), N(this, "_aborted", false), N(this, "_uploadHttpClient", true), N(this, "_libdiscoreEnabled", true), N(this, "_resumptionEnabled", true), N(this, "createResumeAwareProgressFn", e => t => {
       let n = t.loaded + e,
         r = t.total + e,
         i = n - this.loaded;
       this.emit("progress", n, r, i), this.loaded = n
-    }), this.channelId = t, this.preCompressionSize = null != (s = null == (o = e.file) ? true : o.size) ? s : 0, this.currentSize = null != (l = null == (a = e.file) ? true : a.size) ? l : 0, this.reactNativeFileIndex = r, null != i && (this.allowOptimization = i), e.platform === S.ow.WEB && null != e.compressionMetadata && (this.mimeType = e.compressionMetadata.originalContentType), this._abortController = new AbortController, null != this.origin && (this.uploadAnalytics.origin = "string" == typeof this.origin ? this.origin : S.BS[this.origin]), this._uploadHttpClient = new T.LD, this._libdiscoreEnabled = false, this._resumptionEnabled = false
+    }), this.channelId = t, this.preCompressionSize = null != (s = null == (a = e.file) ? true : a.size) ? s : 0, this.currentSize = null != (l = null == (o = e.file) ? true : o.size) ? l : 0, this.reactNativeFileIndex = r, null != i && (this.allowOptimization = i), e.platform === S.ow.WEB && null != e.compressionMetadata && (this.mimeType = e.compressionMetadata.originalContentType), this._abortController = new AbortController, null != this.origin && (this.uploadAnalytics.origin = "string" == typeof this.origin ? this.origin : S.BS[this.origin]), this._uploadHttpClient = new T.LD, this._libdiscoreEnabled = false, this._resumptionEnabled = false
   }
 }

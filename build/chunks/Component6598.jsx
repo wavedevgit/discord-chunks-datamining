@@ -9,13 +9,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk55373 = require("./55373.jsx"),
   Chunk761006 = require("./761006.jsx"),
-  Chunk460196 = require("./460196.js"),
-  Chunk798500 = require("./798500.js");
+  Chunk640560 = require("./640560.js"),
+  Chunk319515 = require("./319515.js");
 let u = () => {
   let e = (0, Chunk399606.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk460196.jumpingWumpusContainer,
+      className: Chunk640560.jumpingWumpusContainer,
       children: (0, Chunk54381.jsx)(Chunk55373.ZP, {
         scaleAnimationData: {
           startScale: .9,
@@ -30,23 +30,23 @@ let u = () => {
         animateXAxisWiggle: true,
         isMotionReduced: module,
         children: (0, Chunk54381.jsx)("img", {
-          src: Chunk798500.Z,
+          src: Chunk319515.Z,
           alt: "",
-          className: Chunk460196.jumpingWumpus
+          className: Chunk640560.jumpingWumpus
         })
       })
     }), (0, Chunk54381.jsx)(Chunk761006.Z, {
       isMotionReduced: module,
-      boltContainerClassName: Chunk460196.boltContainer,
-      carContainerClassName: Chunk460196.carContainer,
-      hammerContainerClassName: Chunk460196.hammerContainer,
-      keyContainerClassName: Chunk460196.keyContainer,
-      starContainerClassName: Chunk460196.starContainer,
-      boltAssetClassName: Chunk460196.boltTrinket,
-      carAssetClassName: Chunk460196.carTrinket,
-      hammerAssetClassName: Chunk460196.hammerTrinket,
-      keyAssetClassName: Chunk460196.keyTrinket,
-      starAssetClassName: Chunk460196.starTrinket
+      boltContainerClassName: Chunk640560.boltContainer,
+      carContainerClassName: Chunk640560.carContainer,
+      hammerContainerClassName: Chunk640560.hammerContainer,
+      keyContainerClassName: Chunk640560.keyContainer,
+      starContainerClassName: Chunk640560.starContainer,
+      boltAssetClassName: Chunk640560.boltTrinket,
+      carAssetClassName: Chunk640560.carTrinket,
+      hammerAssetClassName: Chunk640560.hammerTrinket,
+      keyAssetClassName: Chunk640560.keyTrinket,
+      starAssetClassName: Chunk640560.starTrinket
     })]
   })
 }

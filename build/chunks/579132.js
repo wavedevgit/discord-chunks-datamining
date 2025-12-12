@@ -19,11 +19,11 @@ function l(e) {
       saturation: t
     };
     return {
-      overlaySyncedWithUserTheme: a.Z.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME.resolve(n).hex(),
-      overlay: a.Z.colors.PROFILE_GRADIENT_OVERLAY.resolve(n).hex(),
-      sectionBox: a.Z.colors.PROFILE_GRADIENT_SECTION_BOX.resolve(n).hex(),
-      dividerOpacity: e === (0, o.RC)().DARK ? .24 : .12,
-      rolePillBackgroundColor: a.Z.colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND.resolve(n).hex()
+      overlaySyncedWithUserTheme: o.Z.colors.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME.resolve(n).hex(),
+      overlay: o.Z.colors.PROFILE_GRADIENT_OVERLAY.resolve(n).hex(),
+      sectionBox: o.Z.colors.PROFILE_GRADIENT_SECTION_BOX.resolve(n).hex(),
+      dividerOpacity: e === (0, a.RC)().DARK ? .24 : .12,
+      rolePillBackgroundColor: o.Z.colors.PROFILE_GRADIENT_ROLE_PILL_BACKGROUND.resolve(n).hex()
     }
   }, [e, t])
 }

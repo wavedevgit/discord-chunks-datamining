@@ -42,7 +42,7 @@ let p = (0, Chunk473749.createContext)(null),
       {
         buttonProps: S,
         panelProps: I
-      } = (0, o.q)({
+      } = (0, a.q)({
         ...e,
         isExpanded: b,
         isDisabled: v
@@ -50,7 +50,7 @@ let p = (0, Chunk473749.createContext)(null),
       {
         isFocusVisible: T,
         focusProps: C
-      } = (0, a.F)({
+      } = (0, o.F)({
         within: true
       }),
       A = (0, i.aX)({
@@ -93,12 +93,12 @@ let p = (0, Chunk473749.createContext)(null),
     let {
       role: n = "group"
     } = e, {
-      panelProps: o,
+      panelProps: a,
       panelRef: s
     } = (0, f.useContext)(h), {
       isFocusVisible: l,
       focusProps: p
-    } = (0, a.F)({
+    } = (0, o.F)({
       within: true
     }), _ = (0, i.aX)({
       ...e,
@@ -110,7 +110,7 @@ let p = (0, Chunk473749.createContext)(null),
       global: true
     });
     return f.createElement("div", {
-      ...(0, u.d)(m, _, o, p),
+      ...(0, u.d)(m, _, a, p),
       ref: (0, d.l)(t, s),
       role: n,
       "data-focus-visible-within": l || true

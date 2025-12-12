@@ -1,7 +1,7 @@
-/** Chunk was on 88499 **/
+/** Chunk was on 23736 **/
 /** chunk id: 650613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk897674 = require("./897674.js"),
   Chunk561308 = require("./561308.js"),
   Chunk206583 = require("./206583.js"),
-  Chunk281327 = require("./281327.js");
+  Chunk165831 = require("./165831.js");
 
-function f(e) {
+function x(e) {
   let {
     id: t
   } = e, n = (0, r.e7)([o.default], () => o.default.getUser(t));
   return null == n ? null : (0, a.jsx)(i.P3F, {
-    className: x.entryAuthor,
+    className: f.entryAuthor,
     onClick: function() {
       (0, s.openUserProfileModal)({
         sourceAnalyticsLocations: [l.Z.DEV_TOOLS],
@@ -36,7 +36,7 @@ function f(e) {
   })
 }
 
-function g() {
+function b() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFilters()),
@@ -55,8 +55,8 @@ function g() {
     if (!(0, m.g)(n, t)) return [];
     let r = l[(0, c.T)(t)];
     return (0, a.jsxs)("li", {
-      className: x.locatorEntry,
-      children: [(0, a.jsx)(f, {
+      className: f.locatorEntry,
+      children: [(0, a.jsx)(x, {
         type: t.author_type,
         id: t.author_id
       }), !r && (0, a.jsx)(i.Text, {

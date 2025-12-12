@@ -5,7 +5,7 @@ require.d(exports, {
   Mt: () => d,
   Sh: () => Chunk839548.S,
   TO: () => l,
-  W$: () => a,
+  W$: () => o,
   Yn: () => Chunk65154.Yn,
   aB: () => Chunk946695.a,
   jj: () => u,
@@ -14,7 +14,7 @@ require.d(exports, {
 var Chunk839548 = require("./839548.js"),
   Chunk946695 = require("./946695.js"),
   Chunk65154 = require("./65154.js"),
-  a = function(e) {
+  o = function(e) {
     return e.INPUT_DEVICE = "input_device", e.STREAM = "stream", e
   }({}),
   s = function(e) {
@@ -26,11 +26,11 @@ var Chunk839548 = require("./839548.js"),
 
 function c(e) {
   switch (e) {
-    case o.AS.NATIVE:
+    case a.AS.NATIVE:
       return n(743426).Z;
-    case o.AS.WEBRTC:
+    case a.AS.WEBRTC:
       return n(959856).Z;
-    case o.AS.DUMMY:
+    case a.AS.DUMMY:
     default:
       return n(135670).Z
   }

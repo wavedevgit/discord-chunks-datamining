@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 840475, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-var r, i, o, Chunk848120 = require("./848120.js"),
+var r, i, a, Chunk848120 = require("./848120.js"),
   Chunk507604 = require("./507604.js"),
   Chunk127849 = require("./127849.js"),
   Chunk880181 = require("./880181.js"),
@@ -77,12 +77,12 @@ var r, i, o, Chunk848120 = require("./848120.js"),
     if (s) {
       if (n)
         for (var i in U) {
-          var o = l[i];
-          if (o && d(o.prototype, e)) try {
-            delete o.prototype[e]
+          var a = l[i];
+          if (a && d(a.prototype, e)) try {
+            delete a.prototype[e]
           } catch (n) {
             try {
-              o.prototype[e] = t
+              a.prototype[e] = t
             } catch (e) {}
           }
         }(!R[e] || n) && m(R, e, n ? t : M && C[e] || t, r)
@@ -106,8 +106,8 @@ var r, i, o, Chunk848120 = require("./848120.js"),
       for (r in U)(i = l[r]) && (!i[e] || n) && m(i, e, t)
     }
   };
-for (r in U)(o = (i = Chunk127849[r]) && i.prototype) ? S(o)[j] = i : M = false;
-for (r in G)(o = (i = Chunk127849[r]) && i.prototype) && (S(o)[j] = i);
+for (r in U)(a = (i = Chunk127849[r]) && i.prototype) ? S(a)[j] = i : M = false;
+for (r in G)(a = (i = Chunk127849[r]) && i.prototype) && (S(a)[j] = i);
 if ((!M || !Chunk880181(P) || P === Function.prototype) && (P = function() {
     throw new D("Incorrect invocation")
   }, M))

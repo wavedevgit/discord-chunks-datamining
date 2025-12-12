@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
 
 function c(e, t, n, i) {
   let {
-    delay: o = l.fy.INFREQUENT_USER_ACTION,
+    delay: a = l.fy.INFREQUENT_USER_ACTION,
     comparator: c = (e, t) => e === t
   } = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {}, u = () => {
     var r;
@@ -24,30 +24,30 @@ function c(e, t, n, i) {
   }, d = () => (0, r.e7)([s.Z], u, true, c);
   return {
     getSetting: u,
-    updateSetting: p(u, n => a.hW.updateAsync(e, e => {
+    updateSetting: p(u, n => o.hW.updateAsync(e, e => {
       e[t] = i(n, e[t])
-    }, o)),
+    }, a)),
     useSetting: d
   }
 }
 
 function u(e, t, n) {
-  let a = () => {
+  let o = () => {
     var r;
-    let i = o.Z.getState()[t];
+    let i = a.Z.getState()[t];
     return null != (r = null == i ? true : i.settings[n]) ? r : e.getSetting()
   };
   return {
-    getSetting: a,
+    getSetting: o,
     useSetting: () => {
       let i = e.useSetting(),
-        a = (0, r.e7)([o.Z], () => {
-          let e = o.Z.getState()[t];
+        o = (0, r.e7)([a.Z], () => {
+          let e = a.Z.getState()[t];
           return null == e ? true : e.settings[n]
         });
-      return null != a ? a : i
+      return null != o ? o : i
     },
-    updateSetting: p(a, r => o.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
+    updateSetting: p(o, r => a.Z.shouldSync(t) ? e.updateSetting(r) : (i.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         [t]: {
@@ -61,18 +61,18 @@ function u(e, t, n) {
 }
 
 function d(e, t, n, r) {
-  let o = () => {
+  let a = () => {
     var t;
     return null != (t = n()) ? t : e.getSetting()
   };
   return {
-    getSetting: o,
+    getSetting: a,
     useSetting: () => {
       let t = e.useSetting(),
         n = r();
       return null != n ? n : t
     },
-    updateSetting: p(o, n => (i.Z.dispatch({
+    updateSetting: p(a, n => (i.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_CLEAR",
       settings: [t]
     }), e.updateSetting(n)))
@@ -85,18 +85,18 @@ function f(e) {
     isEligible: n,
     useIsEligible: r,
     eligibleDefault: i,
-    ineligibleDefault: o,
-    onUseDefault: a
+    ineligibleDefault: a,
+    onUseDefault: o
   } = e;
   return {
     getSetting: () => {
       let e = t.getSetting();
-      return null != e ? e : (null == a || a(), n() ? i() : o)
+      return null != e ? e : (null == o || o(), n() ? i() : a)
     },
     useSetting: () => {
       let e = t.useSetting(),
         n = r();
-      return null != e ? e : (null == a || a(), n ? i() : o)
+      return null != e ? e : (null == o || o(), n ? i() : a)
     },
     updateSetting: e => t.updateSetting(e)
   }

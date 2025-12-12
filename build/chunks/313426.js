@@ -1,57 +1,57 @@
-/** Chunk was on 77635 **/
-/** chunk id: 313426, original params: e,r,t (module,exports,require) **/
+/** Chunk was on 29709 **/
+/** chunk id: 313426, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => s
 });
 var Chunk772848 = require("./772848.js"),
   Chunk570140 = require("./570140.js"),
   Chunk643327 = require("./643327.js");
-let u = {
+let s = {
   createGroup(e) {
-    let r = (0, n.Z)();
-    return s.Z.dispatch({
+    let t = (0, r.Z)();
+    return i.Z.dispatch({
       type: "CREATE_FRIEND_GROUP",
-      groupId: r,
+      groupId: t,
       name: e
-    }), r
+    }), t
   },
-  updateGroup(e, r) {
-    s.Z.dispatch({
+  updateGroup(e, t) {
+    i.Z.dispatch({
       type: "UPDATE_FRIEND_GROUP",
       groupId: e,
-      name: r
+      name: t
     })
   },
   deleteGroup(e) {
-    s.Z.dispatch({
+    i.Z.dispatch({
       type: "DELETE_FRIEND_GROUP",
       groupId: e
     })
   },
   reorderGroups(e) {
-    s.Z.dispatch({
+    i.Z.dispatch({
       type: "REORDER_FRIEND_GROUPS",
       groupIds: e
     })
   },
-  addUsersToGroup(e, r) {
-    let t = Array.isArray(r) ? r : [r];
-    s.Z.dispatch({
+  addUsersToGroup(e, t) {
+    let n = Array.isArray(t) ? t : [t];
+    i.Z.dispatch({
       type: "ADD_USERS_TO_GROUP",
       groupId: e,
-      userIds: t
+      userIds: n
     })
   },
-  removeUsersFromGroup(e, r) {
-    let t = Array.isArray(r) ? r : [r];
-    s.Z.dispatch({
+  removeUsersFromGroup(e, t) {
+    let n = Array.isArray(t) ? t : [t];
+    i.Z.dispatch({
       type: "REMOVE_USERS_FROM_GROUP",
       groupId: e,
-      userIds: t
+      userIds: n
     })
   },
-  toggleUserInGroup(e, r) {
-    let t = i.Z.getGroup(e);
-    null != t && (t.userIds.includes(r) ? this.removeUsersFromGroup(e, r) : this.addUsersToGroup(e, r))
+  toggleUserInGroup(e, t) {
+    let n = l.Z.getGroup(e);
+    null != n && (n.userIds.includes(t) ? this.removeUsersFromGroup(e, t) : this.addUsersToGroup(e, t))
   }
 }

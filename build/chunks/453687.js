@@ -9,13 +9,13 @@ require.d(exports, {
   bX: () => d,
   bY: () => u,
   iG: () => f,
-  ut: () => a
+  ut: () => o
 }), require("./781311.js");
 var Chunk446108 = require("./446108.js"),
   Chunk901461 = require("./901461.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function o(e) {
   return "message-content-".concat(e.id)
 }
 
@@ -41,16 +41,16 @@ function d(e) {
 }
 
 function f(e, t, n) {
-  let u = e.type === o.uaV.REPLY && null != e.messageReference,
+  let u = e.type === a.uaV.REPLY && null != e.messageReference,
     f = e.embeds.length > 0,
     p = e.attachments.length > 0,
     _ = e.stickerItems.length > 0,
     m = e.codedLinks.length > 0,
     h = e.components.length > 0,
-    g = e.hasFlag(o.iLy.HAS_THREAD),
-    E = f || p || _ || m || g || h || e.type === o.uaV.THREAD_CREATED,
-    b = f && e.content === e.embeds[0].url && e.embeds[0].type === o.hBH.GIFV,
-    y = e.type !== o.uaV.DEFAULT || !b && "" !== e.content,
+    g = e.hasFlag(a.iLy.HAS_THREAD),
+    E = f || p || _ || m || g || h || e.type === a.uaV.THREAD_CREATED,
+    b = f && e.content === e.embeds[0].url && e.embeds[0].type === a.hBH.GIFV,
+    y = e.type !== a.uaV.DEFAULT || !b && "" !== e.content,
     O = (0, i.Z)(e),
     v = !O && (null == n ? true : n.hasTimestamp) !== false,
     S = !O,
@@ -59,7 +59,7 @@ function f(e, t, n) {
     C = u ? T : I,
     A = S ? "".concat(C, " ").concat(r.Z0) : "";
   if (y) {
-    let t = a(e);
+    let t = o(e);
     A += " ".concat(t)
   }
   if (E) {

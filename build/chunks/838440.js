@@ -61,7 +61,7 @@ function _(e) {
     return
   }
   if (null != m) {
-    if (null != m.getGuildId() && g && a.Z.getSlowmodeCooldownGuess(m.id) > 0) return void b({
+    if (null != m.getGuildId() && g && o.Z.getSlowmodeCooldownGuess(m.id) > 0) return void b({
       valid: false,
       failureReason: d.zYc.SLOWMODE_COOLDOWN
     });
@@ -88,7 +88,7 @@ function _(e) {
         })
       }
   }
-  if (o.ZP.isFull()) {
+  if (a.ZP.isFull()) {
     i.Z.show({
       title: f.intl.string(f.t["7Q4eo2"]),
       body: f.intl.string(f.t.gi6XHp),
@@ -110,8 +110,8 @@ function m(e) {
     type: n,
     content: r,
     stickers: i,
-    uploads: o,
-    channel: a,
+    uploads: a,
+    channel: o,
     restrictMentions: l = true,
     respectCooldown: c = true
   } = e, d = u.ZP.canUseIncreasedMessageLength(s.default.getCurrentUser());
@@ -120,8 +120,8 @@ function m(e) {
     type: n,
     content: r,
     stickers: i,
-    uploads: o,
-    channel: a,
+    uploads: a,
+    channel: o,
     restrictMentions: l,
     respectCooldown: c,
     userCanUsePremiumMessageLength: d,

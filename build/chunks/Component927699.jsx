@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk541716 = require("./541716.js"),
   Chunk752305 = require("./752305.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk12033 = require("./12033.js");
+  Chunk765989 = require("./765989.js");
 let g = (0, Chunk131704.createChannelRecord)({
   id: "1",
   type: Chunk981631.d4z.DM
@@ -27,7 +27,7 @@ function E(e) {
   let {
     sectionTitle: t,
     errors: n,
-    onTextChange: o,
+    onTextChange: a,
     pendingText: f,
     placeholder: _,
     currentText: E,
@@ -38,7 +38,7 @@ function E(e) {
   } = e, [S, I] = i.useState(null != f ? f : E), [T, C] = i.useState((0, c.JM)(S)), A = i.useRef(false);
 
   function N(e, t, n) {
-    t !== S && (I(t), C(n), o(t))
+    t !== S && (I(t), C(n), a(t))
   }
 
   function P() {
@@ -57,13 +57,13 @@ function E(e) {
       I(E), C(e)
     }
   }, [f, E]), (0, r.jsx)("div", {
-    className: a()(h.body, b),
+    className: o()(h.body, b),
     children: (0, r.jsxs)(d.Z, {
       title: t,
       errors: n,
       disabled: O,
       children: [(0, r.jsx)(u.ZP, {
-        innerClassName: a()(h.textArea, y),
+        innerClassName: o()(h.textArea, y),
         editorClassName: h.editorTextArea,
         maxCharacterCount: p.$n,
         onChange: N,

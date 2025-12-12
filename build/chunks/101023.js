@@ -19,7 +19,7 @@ function l(e, t) {
     key: n
   } = e, {
     checkboxProps: i
-  } = (0, o.U)(e, t);
+  } = (0, a.U)(e, t);
   return {
     checkboxProps: {
       ...i,
@@ -36,7 +36,7 @@ function c(e) {
   } = e.selectionManager;
   return {
     checkboxProps: {
-      "aria-label": (0, a.q)(s(i.Z), "@react-aria/table").format("single" === r ? "select" : "selectAll"),
+      "aria-label": (0, o.q)(s(i.Z), "@react-aria/table").format("single" === r ? "select" : "selectAll"),
       isSelected: n,
       isDisabled: "multiple" !== r || 0 === e.collection.size || 1 === e.collection.rows.length && "loader" === e.collection.rows[0].type,
       isIndeterminate: !t && !n,

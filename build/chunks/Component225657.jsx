@@ -33,9 +33,9 @@ let u = e => {
       wrapperClassName: d,
       label: c.intl.string(c.t.xFn72s),
       placeholder: c.intl.string(c.t.R0vK0N),
-      renderOptionPrefix: e => (null == e ? true : e.value) == null ? null : (0, r.jsx)(a.Z, {
+      renderOptionPrefix: e => (null == e ? true : e.value) == null ? null : (0, r.jsx)(o.Z, {
         user: e.value,
-        size: o.EFr.SIZE_20
+        size: a.EFr.SIZE_20
       }),
       value: p,
       onChange: m,

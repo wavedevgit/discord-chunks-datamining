@@ -37,9 +37,9 @@ let d = 30,
   p = 30,
   _ = {
     getActiveErrors: () => {
-      var e, t, n, a, c, _;
+      var e, t, n, o, c, _;
       if ((null != (c = null == (e = Chunk19780.Z.getRTCConnection()) ? true : module.getDurationSeconds()) ? c : 0) < d || performance.now() - Chunk131951.Z.getLastAudioInputDeviceChangeTimestamp() < f) return;
-      let m = null != (_ = null == (n = Chunk450109.Z.getConnectionStats(null == (a = Chunk19780.Z.getRTCConnection()) ? true : Chunk70956.getMediaEngineConnectionId())) || null == (t = require.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : exports.sampleRateMismatchPercent) ? _ : 0;
+      let m = null != (_ = null == (n = Chunk450109.Z.getConnectionStats(null == (o = Chunk19780.Z.getRTCConnection()) ? true : Chunk70956.getMediaEngineConnectionId())) || null == (t = require.stats.rtp.outbound.find(e => "audio" === e.type)) ? true : exports.sampleRateMismatchPercent) ? _ : 0;
       if (Math.abs(m) > p) return [u({
         type: Chunk458725.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
         audioCaptureSampleRateMismatchPercent: m

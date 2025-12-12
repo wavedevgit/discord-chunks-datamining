@@ -66,16 +66,16 @@ async function m(e) {
     n = t.body;
   if (n.token) {
     let t = n.token;
-    delete n.token, a.Z.dispatch({
+    delete n.token, o.Z.dispatch({
       type: "UPDATE_TOKEN",
       token: t,
       userId: n.id
-    }), (null == e ? true : e.password) != null && (null == e ? true : e.new_password) != null && a.Z.dispatch({
+    }), (null == e ? true : e.password) != null && (null == e ? true : e.new_password) != null && o.Z.dispatch({
       type: "PASSWORD_UPDATED",
       userId: n.id
     })
   }
-  return a.Z.dispatch({
+  return o.Z.dispatch({
     type: "CURRENT_USER_UPDATE",
     user: n
   }), t
@@ -85,7 +85,7 @@ function h(e) {
   var t, n;
   let {
     username: r,
-    discriminator: o,
+    discriminator: a,
     email: s,
     emailToken: l,
     password: d,
@@ -100,7 +100,7 @@ function h(e) {
     primaryGuildId: O,
     displayNameStyles: v
   } = e;
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT"
   });
   let S = {
@@ -111,7 +111,7 @@ function h(e) {
     avatar: f,
     avatar_description: p,
     avatar_id: _,
-    discriminator: o,
+    discriminator: a,
     global_name: E,
     legacy_username: b,
     new_password: g
@@ -121,11 +121,11 @@ function h(e) {
     T = (0, u.xJ)();
   null != T && null != I && (S.push_provider = T, S.push_token = I);
   let C = i.K.get(c.scU);
-  return null != u.mv && null != C && (S.push_voip_provider = u.mv, S.push_voip_token = C), m(S).then(e => (a.Z.dispatch({
+  return null != u.mv && null != C && (S.push_voip_provider = u.mv, S.push_voip_token = C), m(S).then(e => (o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS"
-  }), (null != f || null != _) && a.Z.dispatch({
+  }), (null != f || null != _) && o.Z.dispatch({
     type: "RECENT_AVATARS_UPDATE"
-  }), e), e => (a.Z.dispatch({
+  }), e), e => (o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE",
     errors: e.body
   }), e))
@@ -143,42 +143,42 @@ function g(e) {
 }
 
 function E(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e
-  }), null == e ? o.uv.announce(d.intl.string(d.t["f1+oNk"])) : o.uv.announce(d.intl.string(d.t.NstziV))
+  }), null == e ? a.uv.announce(d.intl.string(d.t["f1+oNk"])) : a.uv.announce(d.intl.string(d.t.NstziV))
 }
 
 function b(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_GLOBAL_NAME",
     globalName: e
   })
 }
 
 function y(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED",
     legacyUsernameDisabled: e
   })
 }
 
 function O(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM",
     item: e
   })
 }
 
 function v(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID",
     primaryGuildId: e
   })
 }
 
 function S(e) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES",
     displayNameStyles: e
   })

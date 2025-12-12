@@ -62,7 +62,7 @@ function S(e, t) {
 }
 
 function I(e, t) {
-  (0, a.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
       default: e
     } = await n.e("28479").then(n.bind(n, 78865));
@@ -70,7 +70,7 @@ function I(e, t) {
       analyticsSource: t
     }))
   }, {
-    contextKey: e === h.IlC.POPOUT ? a.u1M : a.z1l
+    contextKey: e === h.IlC.POPOUT ? o.u1M : o.z1l
   })
 }
 
@@ -80,12 +80,12 @@ function T(e, t) {
     resolution: y,
     fps: v,
     soundshareEnabled: T
-  } = (0, o.cj)([u.Z], () => u.Z.getState()), C = (0, o.e7)([p.Z], () => p.Z.getGoLiveSource()), A = (0, o.e7)([m.default], () => m.default.getCurrentUser()), N = (0, o.e7)([f.Z], () => {
+  } = (0, a.cj)([u.Z], () => u.Z.getState()), C = (0, a.e7)([p.Z], () => p.Z.getGoLiveSource()), A = (0, a.e7)([m.default], () => m.default.getCurrentUser()), N = (0, a.e7)([f.Z], () => {
     var t;
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
     location: P
-  } = (0, l.O)(), R = (0, o.e7)([_.Z, d.Z], () => d.Z.getChannel(_.Z.getVoiceChannelId())), w = i.useCallback((e, n, r, i) => {
+  } = (0, l.O)(), R = (0, a.e7)([_.Z, d.Z], () => d.Z.getChannel(_.Z.getVoiceChannelId())), w = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != C) {
         let e = {
@@ -116,7 +116,7 @@ function T(e, t) {
         value: t,
         label: n
       } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, y, t, A, N, R);
-      return (0, r.jsx)(a.k5B, {
+      return (0, r.jsx)(o.k5B, {
         group: "stream-settings-fps",
         id: "stream-settings-fps-".concat(t),
         label: n,
@@ -129,7 +129,7 @@ function T(e, t) {
         value: t,
         label: n
       } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, t, D, A, N, R);
-      return (0, r.jsx)(a.k5B, {
+      return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
@@ -138,10 +138,10 @@ function T(e, t) {
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.kSQ, {
+    children: [(0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.SkkeIt),
       children: x
-    }), (0, r.jsx)(a.kSQ, {
+    }), (0, r.jsx)(o.kSQ, {
       label: b.intl.string(b.t.rHyPXg),
       children: L
     })]

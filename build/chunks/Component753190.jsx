@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk906881 = require("./906881.js"),
   s = require.n(Chunk906881),
   Chunk692547 = require("./692547.js"),
-  Chunk626707 = require("./626707.js");
+  Chunk140960 = require("./140960.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -43,26 +43,26 @@ function p(e) {
     className: t,
     percents: n,
     size: i = "small",
-    foregroundColors: a = [l.Z.unsafe_rawColors.BRAND_500.css],
+    foregroundColors: o = [l.Z.unsafe_rawColors.BRAND_500.css],
     backgroundColor: u = "var(--interactive-background-active)",
     animate: f = true
-  } = e, p = s()(null != n ? n : [], a).map((e, t) => {
-    let n, [a, s] = e;
+  } = e, p = s()(null != n ? n : [], o).map((e, t) => {
+    let n, [o, s] = e;
     return n = Array.isArray(s) ? {
       background: "linear-gradient(to right, ".concat(s[0], ", ").concat(s[1], ")")
     } : {
       backgroundColor: s
     }, (0, r.jsx)("div", {
-      className: o()(c.progressBar, c[i], {
+      className: a()(c.progressBar, c[i], {
         [c.animating]: f
       }),
       style: d({
-        transform: "translate3d(".concat(Math.min(Math.max(0, null != a ? a : 0), 100) - 100, "%, 0, 0)")
+        transform: "translate3d(".concat(Math.min(Math.max(0, null != o ? o : 0), 100) - 100, "%, 0, 0)")
       }, n)
     }, t)
   }).reverse();
   return (0, r.jsx)("div", {
-    className: o()(t, c.progress, c[i]),
+    className: a()(t, c.progress, c[i]),
     style: {
       backgroundColor: u
     },

@@ -82,7 +82,7 @@ function A(e) {
 function N(e) {
   let {
     guildId: t
-  } = e, n = a.default.getId();
+  } = e, n = o.default.getId();
   return y(t).updateMembersByMemberIds([n])
 }
 
@@ -160,14 +160,14 @@ function j(e) {
   } = e, r = Object.values(n);
   if (0 === r.length) returnfalse;
   let i = y(t),
-    o = r.reduce((e, t) => {
+    a = r.reduce((e, t) => {
       if (null != t.owner) {
         let n = t.owner.user.id;
         e.push(n)
       }
       return e
     }, []);
-  return i.updateMembersByMemberIds(o)
+  return i.updateMembersByMemberIds(a)
 }
 
 function M(e) {
@@ -195,13 +195,13 @@ function U(e) {
     let {
       id: n,
       activity_instances: r
-    } = e, i = y(n), o = [];
+    } = e, i = y(n), a = [];
     null == r || r.forEach(e => {
       var t;
       null == (t = e.participants) || t.forEach(e => {
-        (0, u.lm)(e.member) && o.push(e.member)
+        (0, u.lm)(e.member) && a.push(e.member)
       })
-    }), t = i.updateServerMembers(o) || t
+    }), t = i.updateServerMembers(a) || t
   }), t
 }
 
@@ -291,7 +291,7 @@ function q(e) {
 }
 
 function Q(e) {
-  var t, n, r, i, o, a;
+  var t, n, r, i, a, o;
   let s, l, {
       guildId: c,
       members: u,
@@ -306,16 +306,16 @@ function Q(e) {
         member: n,
         source_invite_code: r,
         join_source_type: i,
-        join_source_application_id: o,
-        join_source_channel_id: a,
+        join_source_application_id: a,
+        join_source_channel_id: o,
         inviter_id: s
       } = t, l = n.user;
       return e.memberIds.push(l.id), e.memberSupplementals.push({
         userId: l.id,
         sourceInviteCode: r,
         joinSourceType: i,
-        joinSourceApplicationId: o,
-        joinSourceChannelId: a,
+        joinSourceApplicationId: a,
+        joinSourceChannelId: o,
         inviterId: s
       }), e
     }, {
@@ -331,11 +331,11 @@ function Q(e) {
     elasticSearchCursor: {
       before: (0, p.si)({
         joinedAt: null == s || null == (t = s.member) ? true : t.joined_at,
-        userId: null != (o = null == s || null == (n = s.member) ? true : n.user.id) ? o : h.lds
+        userId: null != (a = null == s || null == (n = s.member) ? true : n.user.id) ? a : h.lds
       }),
       after: (0, p.si)({
         joinedAt: null == l || null == (r = l.member) ? true : r.joined_at,
-        userId: null != (a = null == l || null == (i = l.member) ? true : i.user.id) ? a : h.lds
+        userId: null != (o = null == l || null == (i = l.member) ? true : i.user.id) ? o : h.lds
       })
     }
   }, false);

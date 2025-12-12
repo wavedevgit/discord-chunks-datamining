@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk872810 = require("./872810.js"),
@@ -16,14 +16,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk592125 = require("./592125.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk15456 = require("./15456.js");
+  Chunk134119 = require("./134119.js");
 
 function m(e) {
   var t;
   let {
     stream: n,
     width: i
-  } = e, m = (0, a.e7)([d.Z], () => d.Z.getChannel(n.channelId));
+  } = e, m = (0, o.e7)([d.Z], () => d.Z.getChannel(n.channelId));
   (0, c.ZP)(() => {
     (null == m ? true : m.isGuildStageVoice()) && (0, l.aP)((0, u.V9)(n), false)
   });
@@ -33,13 +33,13 @@ function m(e) {
     disableAdaptiveTheme: true,
     theme: f.BR.MIDNIGHT,
     children: e => (0, r.jsx)("div", {
-      className: o()(_.container, e),
+      className: a()(_.container, e),
       children: (0, r.jsxs)("div", {
         className: _.content,
         children: [(0, r.jsx)("div", {
-          className: o()(_.artContainer, _[g]),
+          className: a()(_.artContainer, _[g]),
           children: (0, r.jsx)("div", {
-            className: o()(_.art, _[g])
+            className: a()(_.art, _[g])
           })
         }), (0, r.jsxs)("div", {
           className: _.cta,

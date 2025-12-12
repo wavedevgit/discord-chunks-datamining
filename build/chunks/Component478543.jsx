@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk145022 = require("./145022.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk322108 = require("./322108.js");
+  Chunk80558 = require("./80558.js");
 
 function y(e, t) {
   return null != t && null != t.discord_web && e.id === t.discord_web.id && e.type === t.discord_web.type
@@ -29,13 +29,13 @@ function y(e, t) {
 function O(e) {
   let {
     url: t
-  } = e, [n, o] = i.useState(false), s = i.useRef(true), l = i.useCallback(() => {
+  } = e, [n, a] = i.useState(false), s = i.useRef(true), l = i.useCallback(() => {
     n || (0, p.JG)(t, () => {
-      o(true), s.current = setTimeout(() => o(false), 2e3)
+      a(true), s.current = setTimeout(() => a(false), 2e3)
     })
   }, [t, n]);
   return i.useEffect(() => () => clearTimeout(s.current), []), p.wS ? (0, r.jsxs)(c.P3F, {
-    className: a()(b.copyLink, n ? b.copied : null),
+    className: o()(b.copyLink, n ? b.copied : null),
     onClick: l,
     children: [(0, r.jsx)(c.xPt, {
       size: "md",
@@ -48,14 +48,14 @@ function O(e) {
 function v() {
   return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk322108.buildInfo,
+      className: Chunk80558.buildInfo,
       children: [(0, Chunk54381.jsx)("div", {
-        className: a()(Chunk322108.barLoader, Chunk322108.barTitle)
+        className: o()(Chunk80558.barLoader, Chunk80558.barTitle)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk322108.barLoader
+        className: Chunk80558.barLoader
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk322108.buttonLoader
+      className: Chunk80558.buttonLoader
     })]
   })
 }
@@ -64,8 +64,8 @@ function S(e) {
   let {
     subHead: t,
     buildDetails: n,
-    variant: o,
-    buttonClick: a,
+    variant: a,
+    buttonClick: o,
     buttonText: s,
     disabled: l = false,
     submitting: u = false
@@ -84,8 +84,8 @@ function S(e) {
     }), (0, r.jsx)(c.Button, {
       text: s,
       loading: u,
-      variant: o,
-      onClick: a,
+      variant: a,
+      onClick: o,
       fullWidth: true,
       disabled: l
     })]
@@ -95,21 +95,21 @@ function S(e) {
 function I(e) {
   let t, n, r, {
       currentOverrides: i,
-      linkMeta: o,
-      applyBuildOverride: a,
+      linkMeta: a,
+      applyBuildOverride: o,
       clearBuildOverride: s,
       submitting: c
     } = e,
     f = ["discord_web"];
   m.isPlatformEmbedded || f.push("discord_marketing", "discord_developers");
-  let p = (0, h.Z)(o, f);
+  let p = (0, h.Z)(a, f);
   if (!p.valid) return T(p.reason);
-  l()(null != o, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
+  l()(null != a, "BuildOverrideEmbed.renderResolved: linkMeta should never be null if resolved");
   let {
     discord_web: _,
     discord_developers: g
-  } = o.targetBuildOverride, b = null != _ ? _ : g;
-  l()(null != b, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(b, i) ? (n = E.intl.string(E.t.tX4xrt), t = s, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = a, r = "primary");
+  } = a.targetBuildOverride, b = null != _ ? _ : g;
+  l()(null != b, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(b, i) ? (n = E.intl.string(E.t.tX4xrt), t = s, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = o, r = "primary");
   let O = () => {
     d.Z.isConnected() ? u.Z.show({
       title: E.intl.string(E.t.tiu1ly),
@@ -167,8 +167,8 @@ let A = e => {
   let {
     loading: t = false,
     currentOverrides: n,
-    linkMeta: o,
-    url: a,
+    linkMeta: a,
+    url: o,
     applyBuildOverride: s,
     clearBuildOverride: l
   } = e, [c, u] = i.useState(false), d = i.useCallback(() => {
@@ -178,13 +178,13 @@ let A = e => {
   }, [l, c]);
   return (0, r.jsxs)("div", {
     className: b.wrapper,
-    children: [C(o, a, t), (0, r.jsxs)("div", {
+    children: [C(a, o, t), (0, r.jsxs)("div", {
       className: b.content,
       children: [(0, r.jsx)(f.Z, {
         className: b.icon
       }), t ? v() : I({
         currentOverrides: n,
-        linkMeta: o,
+        linkMeta: a,
         applyBuildOverride: d,
         clearBuildOverride: p,
         submitting: c

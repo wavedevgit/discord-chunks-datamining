@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk677599 = require("./677599.js"),
+  Chunk548768 = require("./548768.js"),
   Chunk865215 = require("./865215.js");
 let L = e => {
   let {
@@ -47,7 +47,7 @@ let L = e => {
     M(true)
   }, []), (0, _.z)(p.X);
   let n = i.useRef(null),
-    o = i.useRef(null),
+    a = i.useRef(null),
     L = (0, s.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()),
     [j, M] = i.useState(false),
     k = (0, y.$)(),
@@ -66,7 +66,7 @@ let L = e => {
       location: "SubscriberNitroHome"
     });
   return null == q ? (0, r.jsx)("div", {
-    className: a()(D.container, D.loading),
+    className: o()(D.container, D.loading),
     children: (0, r.jsx)(c.$jN, {})
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.yWw, {
@@ -74,7 +74,7 @@ let L = e => {
       ref: n,
       children: [(0, r.jsx)(c.$1m, {
         color: "nitro-pink",
-        className: a()(D.container, D.responsiveContainer, {
+        className: o()(D.container, D.responsiveContainer, {
           [D.hiddenGradient]: !Q
         }),
         children: (0, r.jsxs)(f.Gt, {
@@ -115,14 +115,14 @@ let L = e => {
           }), (0, r.jsx)("div", {
             className: D.footerSpacing
           }), (0, r.jsx)(l.$, {
-            innerRef: o,
+            innerRef: a,
             onChange: e => {
               e && !K && (E.default.track(R.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                 location_stack: W
               }), z(true))
             },
             children: (0, r.jsx)("div", {
-              ref: o,
+              ref: a,
               className: D.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {

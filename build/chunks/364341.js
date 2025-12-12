@@ -31,8 +31,8 @@ m("set", function(e) {
     n = l(e);
   if (h) return i(p, this, n, t);
   var r = this.length,
-    o = a(n),
+    a = o(n),
     c = 0;
-  if (o + t > r) throw new u("Wrong length");
-  for (; c < o;) this[t + c] = n[c++]
+  if (a + t > r) throw new u("Wrong length");
+  for (; c < a;) this[t + c] = n[c++]
 }, !h || g)

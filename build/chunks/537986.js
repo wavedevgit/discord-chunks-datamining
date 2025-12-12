@@ -8,7 +8,7 @@ var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk846519 = require("./846519.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ class s {
     this._pendingRequests.add(e)
   }
   constructor(e, t) {
-    a(this, "_guildId", true), a(this, "_pendingRequests", new Set), a(this, "_sentRequests", new Set), a(this, "_unacknowledgedRequests", new Set), a(this, "_guildMemberExists", true), this._guildId = e, this._guildMemberExists = n => t(e, n)
+    o(this, "_guildId", true), o(this, "_pendingRequests", new Set), o(this, "_sentRequests", new Set), o(this, "_unacknowledgedRequests", new Set), o(this, "_guildMemberExists", true), this._guildId = e, this._guildMemberExists = n => t(e, n)
   }
 }
 class l {
@@ -73,6 +73,6 @@ class l {
     }
   }
   constructor(e, t) {
-    a(this, "_onChange", true), a(this, "_guildMemberExists", true), a(this, "_guildStates", {}), a(this, "_flush", new o.sW(0, () => this.flushRequests())), this._guildMemberExists = e, this._onChange = t
+    o(this, "_onChange", true), o(this, "_guildMemberExists", true), o(this, "_guildStates", {}), o(this, "_flush", new a.sW(0, () => this.flushRequests())), this._guildMemberExists = e, this._onChange = t
   }
 }
