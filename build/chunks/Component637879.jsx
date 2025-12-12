@@ -149,8 +149,8 @@ function x(e) {
     className: T.channelNameContainer,
     children: [(0, r.jsx)(y.MC, {
       channel: e,
-      className: T.channelNameIcon,
       avatarSize: l.EFr.SIZE_16,
+      iconClassName: T.channelNameIcon,
       iconSize: "xs"
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
@@ -386,8 +386,8 @@ function V(e) {
     className: o()(T.answerPill, T.channelAnswerPill),
     children: [(0, r.jsx)(y.MC, {
       channel: f,
-      className: T.channelPillIcon,
       avatarSize: i,
+      iconClassName: T.channelPillIcon,
       iconSize: s
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/semibold",
@@ -501,8 +501,8 @@ function z(e) {
   } = t;
   if (null != i) return (0, r.jsx)(y.MC, {
     channel: i,
-    className: T.itemIcon,
     avatarSize: l.EFr.SIZE_20,
+    iconClassName: T.itemIcon,
     iconSize: "refresh_sm"
   });
   if (null != o) return (0, r.jsx)(U, {

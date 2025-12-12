@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -69,34 +69,34 @@ function S(e) {
     {
       onSlideChange: n
     } = e,
-    s = function(e, t) {
+    i = function(e, t) {
       if (null == e) return {};
       var n, a, o = function(e, t) {
         if (null == e) return {};
         var n, a, o = {},
-          s = Object.keys(e);
-        for (a = 0; a < s.length; a++) n = s[a], t.indexOf(n) >= 0 || (o[n] = e[n]);
+          i = Object.keys(e);
+        for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (a = 0; a < s.length; a++) n = s[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["onSlideChange"]),
     {
       onClose: S
-    } = s,
+    } = i,
     [L, w] = o.useState(false),
-    M = (0, r.e7)([b.default], () => b.default.getCurrentUser()),
+    M = (0, l.e7)([b.default], () => b.default.getCurrentUser()),
     k = null != M && null == M.nsfwAllowed,
-    [P, U] = o.useState(k ? O.F.AGE_GATE : O.F.CHOOSE_TEMPLATE),
+    [P, U] = o.useState(k ? j.F.AGE_GATE : j.F.CHOOSE_TEMPLATE),
     [R, B] = o.useState(null);
   o.useEffect(() => {
-    n(L ? O.F.COMPLETE : P)
+    n(L ? j.F.COMPLETE : P)
   }, [n, P, L]);
-  let [Z, H] = o.useState(null), [W, z] = o.useState(null), [Y, V] = o.useState(false), J = (0, r.e7)([N.Z], () => N.Z.getType() === j.M5.INVITE_UNCLAIMED), K = o.useCallback(e => {
-    z(e), U(O.F.CREATION_INTENT), E.default.track(y.rMx.GUILD_TEMPLATE_SELECTED, {
+  let [Z, H] = o.useState(null), [W, z] = o.useState(null), [Y, V] = o.useState(false), J = (0, l.e7)([N.Z], () => N.Z.getType() === g.M5.INVITE_UNCLAIMED), K = o.useCallback(e => {
+    z(e), U(j.F.CREATION_INTENT), E.default.track(O.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
     })
@@ -106,10 +106,10 @@ function S(e) {
   } = (0, f.v)({
     hasFooter: false,
     onBack: () => {
-      z(null), U(O.F.CHOOSE_TEMPLATE)
+      z(null), U(j.F.CHOOSE_TEMPLATE)
     },
     onCreationIntentChosen: e => {
-      V(e === I.lr.COMMUNITY), U(O.F.CUSTOMIZE_GUILD)
+      V(e === v.lr.COMMUNITY), U(j.F.CUSTOMIZE_GUILD)
     }
   }), {
     content: Q,
@@ -119,12 +119,12 @@ function S(e) {
     titleClassName: G.customizeGuildTitle,
     hasFooter: false,
     onGuildCreated: e => {
-      H(e), (null == W ? true : W.id) === v.l.CREATE ? U(O.F.CHANNEL_PROMPT) : w(true)
+      H(e), (null == W ? true : W.id) === y.l.CREATE ? U(j.F.CHANNEL_PROMPT) : w(true)
     },
     onBack: () => {
-      U(O.F.CREATION_INTENT)
+      U(j.F.CREATION_INTENT)
     },
-    isSlideReady: R === O.F.CUSTOMIZE_GUILD,
+    isSlideReady: R === j.F.CUSTOMIZE_GUILD,
     isCommunity: Y
   }), {
     content: ee,
@@ -135,48 +135,50 @@ function S(e) {
     onChannelPromptCompleted: () => {
       w(true)
     },
-    isSlideReady: R === O.F.CHANNEL_PROMPT
+    isSlideReady: R === j.F.CHANNEL_PROMPT
   }), {
     content: en,
     footer: ea
   } = (0, T.Z)({
-    onBack: () => U(O.F.CHOOSE_TEMPLATE),
+    onBack: () => U(j.F.CHOOSE_TEMPLATE),
     onComplete: () => {
       S()
     },
     onConnect: S,
-    isSlideReady: R === O.F.JOIN_GUILD
+    isSlideReady: R === j.F.JOIN_GUILD
   }), eo = null;
   switch (P) {
-    case O.F.CUSTOMIZE_GUILD:
+    case j.F.CUSTOMIZE_GUILD:
       eo = $;
       break;
-    case O.F.CHANNEL_PROMPT:
+    case j.F.CHANNEL_PROMPT:
       eo = et;
       break;
-    case O.F.JOIN_GUILD:
+    case j.F.JOIN_GUILD:
       eo = ea;
       break;
-    case O.F.CREATION_INTENT:
+    case j.F.CREATION_INTENT:
       eo = X
   }
   let {
-    ref: es,
-    width: el
-  } = (0, u.ZP)();
-  if (L) return (0, a.jsx)(c.Y0X, D(F({}, s), {
+    ref: ei,
+    width: es
+  } = (0, d.ZP)();
+  if (L) return (0, a.jsx)(c.Y0X, D(F({}, i), {
+    "data-migration-pending": true,
     size: c.CgR.MEDIUM,
-    className: l()(G.modal, G.completed),
+    className: s()(G.modal, G.completed),
     "aria-labelledby": t,
     parentComponent: "NUFModal",
     children: (0, a.jsx)(A.Z, {
       onComplete: S
     })
   }));
-  let ei = {
-    impression_group: i.ImpressionGroups.GUILD_ADD_NUF
+  let er = {
+    impression_group: r.ImpressionGroups.GUILD_ADD_NUF
   };
-  return (0, a.jsxs)(c.Y0X, D(F({}, s), {
+  return (0, a.jsxs)(c.Y0X, D(F({}, i), {
+    "data-migration-pending": true,
     size: c.CgR.MEDIUM,
     className: G.modal,
     "aria-labelledby": t,
@@ -187,34 +189,34 @@ function S(e) {
         step: P
       })
     }), (0, a.jsx)(c.f6W, {
-      theme: y.BRd.LIGHT,
+      theme: O.BRd.LIGHT,
       children: e => (0, a.jsxs)("div", {
-        className: l()(G.content, e),
-        ref: es,
+        className: s()(G.content, e),
+        ref: ei,
         children: [(0, a.jsx)("div", {
           className: G.slidesContainer,
           children: (0, a.jsxs)(c.MyZ, {
             activeSlide: P,
             onSlideReady: e => B(e),
             centered: false,
-            width: el,
+            width: es,
             children: [(0, a.jsx)(c.Mi4, {
-              id: O.F.AGE_GATE,
+              id: j.F.AGE_GATE,
               children: (0, a.jsx)("div", {
                 className: G.container,
                 children: (0, a.jsx)(x.Z, {
                   onComplete: () => {
-                    J ? S() : U(O.F.CHOOSE_TEMPLATE)
+                    J ? S() : U(j.F.CHOOSE_TEMPLATE)
                   },
                   onClose: S
                 })
               })
             }), (0, a.jsx)(c.Mi4, {
-              id: O.F.CHOOSE_TEMPLATE,
-              impressionName: i.ImpressionNames.GUILD_ADD_LANDING,
-              impressionProperties: ei,
+              id: j.F.CHOOSE_TEMPLATE,
+              impressionName: r.ImpressionNames.GUILD_ADD_LANDING,
+              impressionProperties: er,
               children: (0, a.jsx)("div", {
-                className: l()(G.container, G.shortFooter),
+                className: s()(G.container, G.shortFooter),
                 children: (0, a.jsx)(h.Z, {
                   className: G.templates,
                   onChooseTemplate: K,
@@ -222,58 +224,61 @@ function S(e) {
                 })
               })
             }), (0, a.jsx)(c.Mi4, {
-              id: O.F.CREATION_INTENT,
-              impressionName: i.ImpressionNames.GUILD_ADD_INTENT_SELECTION,
-              impressionProperties: ei,
+              id: j.F.CREATION_INTENT,
+              impressionName: r.ImpressionNames.GUILD_ADD_INTENT_SELECTION,
+              impressionProperties: er,
               children: (0, a.jsx)("div", {
-                className: l()(G.container, G.standardFooter),
+                className: s()(G.container, G.standardFooter),
                 children: q
               })
             }), (0, a.jsx)(c.Mi4, {
-              id: O.F.CUSTOMIZE_GUILD,
-              impressionName: i.ImpressionNames.GUILD_ADD_CUSTOMIZE,
-              impressionProperties: ei,
+              id: j.F.CUSTOMIZE_GUILD,
+              impressionName: r.ImpressionNames.GUILD_ADD_CUSTOMIZE,
+              impressionProperties: er,
               children: (0, a.jsx)("div", {
-                className: l()(G.container, G.standardFooter),
+                className: s()(G.container, G.standardFooter),
                 children: Q
               })
             }), (0, a.jsx)(c.Mi4, {
-              id: O.F.CHANNEL_PROMPT,
-              impressionName: i.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
-              impressionProperties: ei,
+              id: j.F.CHANNEL_PROMPT,
+              impressionName: r.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
+              impressionProperties: er,
               children: (0, a.jsx)("div", {
-                className: l()(G.container, G.standardFooter),
+                className: s()(G.container, G.standardFooter),
                 children: ee
               })
             }), (0, a.jsx)(c.Mi4, {
-              id: O.F.JOIN_GUILD,
-              impressionName: i.ImpressionNames.GUILD_ADD_JOIN,
-              impressionProperties: ei,
+              id: j.F.JOIN_GUILD,
+              impressionName: r.ImpressionNames.GUILD_ADD_JOIN,
+              impressionProperties: er,
               children: (0, a.jsx)("div", {
-                className: l()(G.container, G.standardFooter),
+                className: s()(G.container, G.standardFooter),
                 children: en
               })
             })]
           })
-        }), P !== O.F.AGE_GATE ? (0, a.jsx)(c.olH, {
+        }), P !== j.F.AGE_GATE ? (0, a.jsx)(c.olH, {
+          "data-migration-pending": true,
           onClick: S,
           className: G.closeButton
-        }) : null, P === O.F.CHOOSE_TEMPLATE ? (0, a.jsx)(c.mzw, {
-          justify: d.Z.Justify.BETWEEN,
-          className: l()(G.footer, G.join),
+        }) : null, P === j.F.CHOOSE_TEMPLATE ? (0, a.jsx)(c.mzw, {
+          "data-migration-pending": true,
+          justify: u.Z.Justify.BETWEEN,
+          className: s()(G.footer, G.join),
           children: (0, a.jsx)(c.Anchor, {
             className: G.joinCTA,
             onClick: () => {
-              U(O.F.JOIN_GUILD)
+              U(j.F.JOIN_GUILD)
             },
             children: (0, a.jsxs)(c.Text, {
               variant: "text-sm/medium",
               className: G.joinCTA,
-              children: [g.intl.string(g.t["N+Mi/U"]), " ", g.intl.string(g.t.yRjK4p)]
+              children: [I.intl.string(I.t["N+Mi/U"]), " ", I.intl.string(I.t.yRjK4p)]
             })
           })
         }) : null, null != eo ? (0, a.jsx)(c.mzw, {
-          justify: d.Z.Justify.BETWEEN,
+          "data-migration-pending": true,
+          justify: u.Z.Justify.BETWEEN,
           className: G.footer,
           children: eo
         }) : null]

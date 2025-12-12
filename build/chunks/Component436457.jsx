@@ -25,16 +25,16 @@ function N(e) {
     onComplete: n,
     onConnect: a,
     isSlideReady: o
-  } = e, [N, x] = l.useState(""), [A, T] = l.useState(false), [C, j] = l.useState(null), O = l.useRef(null);
-  l.useEffect(() => {
+  } = e, [N, x] = s.useState(""), [A, T] = s.useState(false), [C, g] = s.useState(null), j = s.useRef(null);
+  s.useEffect(() => {
     var e;
-    o && (null == (e = O.current) || e.focus())
+    o && (null == (e = j.current) || e.focus())
   }, [o]);
-  let y = l.useCallback(e => {
+  let O = s.useCallback(e => {
     e.preventDefault();
     let t = N.trim();
-    if ("" === t) return void j(h.intl.string(h.t.IRq5ah));
-    j(null), T(true);
+    if ("" === t) return void g(h.intl.string(h.t.IRq5ah));
+    g(null), T(true);
     let a = t.split("/"),
       o = a[a.length - 1];
     c.ZP.resolveInvite(o, "Join Guild", {
@@ -43,7 +43,7 @@ function N(e) {
       let {
         invite: t
       } = e;
-      if (T(false), null == t) return void j(h.intl.string(h.t["GEYI+Z"]));
+      if (T(false), null == t) return void g(h.intl.string(h.t["GEYI+Z"]));
       if (null != t.channel) {
         let e = c.ZP.getInviteContext("Join Guild", t);
         c.ZP.acceptInvite({
@@ -53,49 +53,51 @@ function N(e) {
             n(), c.ZP.transitionToInvite(e)
           }
         }).catch(e => {
-          e instanceof u.yZ || e instanceof u.Hx ? j((0, f.O)(e.code)) : j(h.intl.string(h.t.dDZRdy))
+          e instanceof d.yZ || e instanceof d.Hx ? g((0, f.O)(e.code)) : g(h.intl.string(h.t.dDZRdy))
         })
       }
     }, e => {
       T(false);
-      let t = new u.yZ(e);
-      j((0, f.O)(t.code))
+      let t = new d.yZ(e);
+      g((0, f.O)(t.code))
     })
-  }, [N, T, j, n]);
+  }, [N, T, g, n]);
   return {
-    content: (0, s.jsxs)(s.Fragment, {
-      children: [(0, s.jsxs)(r.xBx, {
+    content: (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsxs)(l.xBx, {
+        "data-migration-pending": true,
         className: b.header,
-        direction: d.Z.Direction.VERTICAL,
+        direction: u.Z.Direction.VERTICAL,
         separator: false,
-        children: [(0, s.jsx)(r.Heading, {
+        children: [(0, i.jsx)(l.Heading, {
           variant: "heading-xl/bold",
           color: "text-strong",
           className: b.title,
           children: h.intl.string(h.t.riOUtB)
-        }), (0, s.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-default",
           children: h.intl.string(h.t["7jub2t"])
         })]
-      }), (0, s.jsxs)(r.hzk, {
-        children: [(0, s.jsx)("form", {
-          onSubmit: y,
+      }), (0, i.jsxs)(l.hzk, {
+        "data-migration-pending": true,
+        children: [(0, i.jsx)("form", {
+          onSubmit: O,
           className: b.inputForm,
-          children: (0, s.jsx)(r.oil, {
+          children: (0, i.jsx)(l.oil, {
             label: h.intl.string(h.t.qreV25),
             error: C,
             value: N,
             onChange: x,
-            inputRef: O
+            inputRef: j
           })
-        }), (0, s.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
           color: "text-default",
           variant: "text-xs/normal",
           children: h.intl.format(h.t.lHTZl2, {
             examples: "".concat(E).concat("wumpus-friends", ", ").concat("hTKzmak")
           })
-        }), (0, s.jsx)(r.Text, {
+        }), (0, i.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "text-default",
           className: b.connectCTA,
@@ -109,17 +111,18 @@ function N(e) {
         })]
       })]
     }),
-    footer: (0, s.jsxs)(s.Fragment, {
-      children: [(0, s.jsx)(r.Button, {
+    footer: (0, i.jsxs)(i.Fragment, {
+      children: [(0, i.jsx)(l.Button, {
         variant: "primary",
         text: h.intl.string(h.t.VJlc0S),
-        onClick: y,
+        onClick: O,
         disabled: 0 === N.length,
         loading: A
-      }), (0, s.jsx)(i.zx, {
+      }), (0, i.jsx)(r.zx, {
+        "data-migration-pending": true,
         className: b.__invalid_skipButton,
-        look: i.zx.Looks.BLANK,
-        size: i.zx.Sizes.MIN,
+        look: r.zx.Looks.BLANK,
+        size: r.zx.Sizes.MIN,
         onClick: t,
         children: h.intl.string(h.t["13/7kX"])
       })]

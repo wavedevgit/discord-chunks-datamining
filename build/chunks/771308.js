@@ -2,8 +2,8 @@
 /** chunk id: 771308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Av: () => c,
-  hp: () => d,
-  wE: () => u
+  hp: () => u,
+  wE: () => d
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -13,11 +13,11 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 
 function c(e, t) {
-  return (0, s.Z)(e, t), l.default.track(r.rMx.AGE_GATE_ACTION, {
+  return (0, i.Z)(e, t), s.default.track(l.rMx.AGE_GATE_ACTION, {
     source: t,
-    action: i.Al.AGE_GATE_SUBMITTED
+    action: r.Al.AGE_GATE_SUBMITTED
   }), a.tn.patch({
-    url: r.ANM.ME,
+    url: l.ANM.ME,
     oldFormErrors: true,
     body: {
       date_of_birth: e.format("YYYY-MM-DD")
@@ -28,27 +28,27 @@ function c(e, t) {
     o.Z.dispatch({
       type: "CURRENT_USER_UPDATE",
       user: n
-    }), l.default.track(r.rMx.AGE_GATE_ACTION, {
+    }), s.default.track(l.rMx.AGE_GATE_ACTION, {
       source: t,
-      action: i.Al.AGE_GATE_SUCCESS
+      action: r.Al.AGE_GATE_SUCCESS
     })
-  })
-}
-
-function u(e) {
-  o.Z.dispatch({
-    type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION"
-  }), l.default.track(r.rMx.AGE_GATE_ACTION, {
-    source: e,
-    action: i.Al.AGE_GATE_PREVENT_UNDERAGE_REGISTRATION
   })
 }
 
 function d(e) {
   o.Z.dispatch({
-    type: "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER"
-  }), l.default.track(r.rMx.AGE_GATE_ACTION, {
+    type: "AGE_GATE_PREVENT_UNDERAGE_REGISTRATION"
+  }), s.default.track(l.rMx.AGE_GATE_ACTION, {
     source: e,
-    action: i.Al.AGE_GATE_LOGOUT_UNDERAGE_NEW_USER
+    action: r.Al.AGE_GATE_PREVENT_UNDERAGE_REGISTRATION
+  })
+}
+
+function u(e) {
+  o.Z.dispatch({
+    type: "AGE_GATE_LOGOUT_UNDERAGE_NEW_USER"
+  }), s.default.track(l.rMx.AGE_GATE_ACTION, {
+    source: e,
+    action: r.Al.AGE_GATE_LOGOUT_UNDERAGE_NEW_USER
   })
 }

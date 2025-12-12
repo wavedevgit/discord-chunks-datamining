@@ -25,19 +25,19 @@ var Chunk120356 = require("./120356.js"),
 function h(e) {
   let {
     channel: t,
-    className: n,
-    avatarSize: i,
-    iconSize: o
+    avatarSize: n,
+    iconSize: i,
+    iconClassName: o
   } = e;
   if (t.isDM()) {
     let e = t.getRecipientId(),
-      n = p.default.getUser(e);
-    if (null == n) return null;
-    let o = n.getAvatarURL(null, a.ny6[i].size);
+      i = p.default.getUser(e);
+    if (null == i) return null;
+    let o = i.getAvatarURL(null, a.ny6[n].size);
     return (0, r.jsx)(a.qEK, {
       "aria-hidden": true,
       className: m.searchResultDMChannelIcon,
-      size: i,
+      size: n,
       src: o
     })
   }
@@ -45,13 +45,13 @@ function h(e) {
     "aria-hidden": true,
     className: m.searchResultGDMChannelIcon,
     channel: t,
-    size: i
+    size: n
   });
   let s = (0, l.KS)(t);
   return null == s ? null : (0, r.jsx)(s, {
-    className: n,
+    className: o,
     color: "currentColor",
-    size: o
+    size: i
   })
 }
 

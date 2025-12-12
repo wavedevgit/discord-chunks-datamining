@@ -153,9 +153,9 @@ let Q = (e, t, n) => {
       className: Z.resultChannel,
       children: [(0, r.jsx)(L.MC, {
         channel: i,
-        className: Z.searchResultChannelIcon,
         avatarSize: h.EFr.SIZE_16,
-        iconSize: "xs"
+        iconSize: "xs",
+        iconClassName: Z.searchResultChannelIcon
       }), (0, r.jsx)(L.GQ, {
         channel: i
       }), (0, r.jsx)(L.P, {
