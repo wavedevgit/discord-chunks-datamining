@@ -1,13 +1,12 @@
 /** Chunk was on 23736 **/
 /** chunk id: 442954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => C
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk990547 = require("./990547.js"),
   Chunk46973 = require("./46973.js"),
-  Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk480916 = require("./480916.js"),
   Chunk138464 = require("./138464.js"),
@@ -15,14 +14,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk78839 = require("./78839.js"),
   Chunk585483 = require("./585483.js"),
-  Chunk246992 = require("./246992.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk68428 = require("./68428.js"),
   Chunk663618 = require("./663618.js");
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -41,7 +39,7 @@ function y(e) {
   return e
 }
 
-function C(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,20 +51,20 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = {
+let y = {
   CollectiblesExpiryModal: async () => {
     let {
       default: e
     } = await require.e("77370").then(require.bind(require, 83950));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   EmailEnterModal: async () => {
     let {
       default: e
     } = await require.e("20670").then(require.bind(require, 993018));
-    return t => (0, a.jsx)(e, C(y({}, t), {
-      headerText: g.intl.string(g.t.ZLRYGU),
-      confirmButtonText: g.intl.string(g.t.PDTjLN),
+    return t => (0, a.jsx)(e, j(v({}, t), {
+      headerText: x.intl.string(x.t.ZLRYGU),
+      confirmButtonText: x.intl.string(x.t.PDTjLN),
       confirmButtonVariant: "primary"
     }))
   },
@@ -74,12 +72,12 @@ let _ = {
     let {
       default: e
     } = await require.e("56499").then(require.bind(require, 433570));
-    return t => (0, a.jsx)(e, C(y({}, t), {
-      headerText: g.intl.string(g.t.H3Q7U8),
+    return t => (0, a.jsx)(e, j(v({}, t), {
+      headerText: x.intl.string(x.t.H3Q7U8),
       onFormSubmit: () => {},
       onResend: () => {},
       onSuccess: () => {},
-      confirmButtonText: g.intl.string(g.t["13ofGu"]),
+      confirmButtonText: x.intl.string(x.t["13ofGu"]),
       impression: {
         impressionName: i.ImpressionNames.URF_CONFIRM_EMAIL_CODE
       }
@@ -89,35 +87,35 @@ let _ = {
     let {
       default: e
     } = await require.e("22447").then(require.bind(require, 686768));
-    return t => (0, a.jsx)(e, C(y({}, t), {
-      entryPoint: c.cU.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL
+    return t => (0, a.jsx)(e, j(v({}, t), {
+      entryPoint: o.cU.DEV_TOOLS_AGE_VERIFICATION_RETRY_MODAL
     }))
   },
   ExistingUserAgeGatePrompt: async () => {
     let {
       default: e
     } = await Promise.all([require.e("1716"), require.e("79689")]).then(require.bind(require, 746882));
-    return t => (0, a.jsx)(e, C(y({}, t), {
-      source: b.L0.NSFW_SERVER
+    return t => (0, a.jsx)(e, j(v({}, t), {
+      source: f.L0.NSFW_SERVER
     }))
   },
   ExistingUserAgeGateUnderage: async () => {
     let {
       default: e
     } = await require.e("80478").then(require.bind(require, 920644));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   NewUserAgeGate: async () => {
     let {
       default: e
     } = await require.e("76323").then(require.bind(require, 298237));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   AutomatedUnderageAppealModal: async () => {
     let {
       default: e
     } = await require.e("75435").then(require.bind(require, 751744));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       classificationId: "123"
     }))
   },
@@ -125,7 +123,7 @@ let _ = {
     let {
       default: e
     } = await require.e("28382").then(require.bind(require, 537623));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guildId: "123",
       messageId: null
     }))
@@ -134,7 +132,7 @@ let _ = {
     let {
       default: e
     } = await require.e("20156").then(require.bind(require, 251871));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guildId: "123"
     }))
   },
@@ -142,7 +140,7 @@ let _ = {
     let {
       default: e
     } = await Promise.resolve().then(require.bind(require, 145454));
-    return t => (0, a.jsx)(e, y({
+    return t => (0, a.jsx)(e, v({
       error: null,
       working: false,
       validPhone: false
@@ -152,7 +150,7 @@ let _ = {
     let {
       default: e
     } = await require.e("51749").then(require.bind(require, 800740));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       mediaEngineContext: l.Yn.DEFAULT,
       subtitle: "Devtools subtitle"
     }))
@@ -161,7 +159,7 @@ let _ = {
     let {
       DynamicGraphicComponent: e
     } = await Promise.resolve().then(require.bind(require, 198168));
-    return t => (0, a.jsx)(o.Ioy, C(y({}, t), {
+    return t => (0, a.jsx)(s.Ioy, j(v({}, t), {
       title: "Dynamic Graphics Demo",
       subtitle: "This modal demonstrates the dynamic graphics system",
       graphic: {
@@ -188,7 +186,7 @@ let _ = {
     } = await require.e("20114").then(require.bind(require, 536920)), {
       OverlayToggledClientSettingType: t
     } = await Promise.resolve().then(require.bind(require, 444295));
-    return n => (0, a.jsx)(e, C(y({}, n), {
+    return n => (0, a.jsx)(e, j(v({}, n), {
       clientSettingType: t.LEGACY_GAME,
       gameId: "123456789"
     }))
@@ -243,7 +241,7 @@ let _ = {
         children: (0, a.jsx)(e, {})
       })
     });
-    return Chunk199849.displayName = "PremiumSubscriptionPauseModalWrapper", e => (0, a.jsx)(s, y({}, e))
+    return Chunk481060.displayName = "PremiumSubscriptionPauseModalWrapper", e => (0, a.jsx)(s, v({}, e))
   },
   NewMemberActionModal: async () => {
     let {
@@ -258,7 +256,7 @@ let _ = {
       emoji: null,
       icon: null
     };
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guildId: "123456789",
       action: r,
       onSave: (e, t, n) => {
@@ -332,22 +330,22 @@ let _ = {
         s = t.default.getFetchingDevices,
         o = t.default.getLastSelectedDeviceByPlatform,
         c = t.default.getAwaitingRemoteSessionInfo;
-      t.default.getDevicesForPlatform = e => e === x.ABu.PLAYSTATION ? l : r.call(t.default, e), t.default.getFetchingDevices = e => e !== x.ABu.PLAYSTATION && s.call(t.default, e), t.default.getLastSelectedDeviceByPlatform = e => e === x.ABu.PLAYSTATION ? "device-1" : o.call(t.default, e), t.default.getAwaitingRemoteSessionInfo = () => null;
+      t.default.getDevicesForPlatform = e => e === h.ABu.PLAYSTATION ? l : r.call(t.default, e), t.default.getFetchingDevices = e => e !== h.ABu.PLAYSTATION && s.call(t.default, e), t.default.getLastSelectedDeviceByPlatform = e => e === h.ABu.PLAYSTATION ? "device-1" : o.call(t.default, e), t.default.getAwaitingRemoteSessionInfo = () => null;
       let d = n.onClose;
       return n.onClose = async () => {
         t.default.getDevicesForPlatform = r, t.default.getFetchingDevices = s, t.default.getLastSelectedDeviceByPlatform = o, t.default.getAwaitingRemoteSessionInfo = c, await d()
-      }, (0, a.jsx)(e, C(y({}, n), {
+      }, (0, a.jsx)(e, j(v({}, n), {
         channel: i,
-        platform: x.ABu.PLAYSTATION
+        platform: h.ABu.PLAYSTATION
       }))
     };
-    return Chunk199849.displayName = "PlayStationModalWrapper", Chunk199849
+    return Chunk481060.displayName = "PlayStationModalWrapper", Chunk481060
   },
   GameDetectionReportModal: async () => {
     let {
       default: e
     } = await Promise.all([require.e("82077"), require.e("66724")]).then(require.bind(require, 953848));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       detectedActivity: {
         application_id: "123456789",
         name: "Test Game"
@@ -358,7 +356,7 @@ let _ = {
     let {
       default: e
     } = await Promise.all([require.e("65652"), require.e("3243")]).then(require.bind(require, 208265));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       classificationId: "123456789"
     }))
   },
@@ -366,7 +364,7 @@ let _ = {
     let {
       default: e
     } = await require.e("21971").then(require.bind(require, 201049));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       channelId: "123456789",
       guildId: "987654321"
     }))
@@ -381,7 +379,7 @@ let _ = {
       emojiName: "\uD83D\uDC1B",
       moderated: true
     };
-    return n => (0, a.jsx)(e, C(y({}, n), {
+    return n => (0, a.jsx)(e, j(v({}, n), {
       channelId: "123456789",
       guildId: "987654321",
       tag: t
@@ -391,7 +389,7 @@ let _ = {
     let {
       ConfirmModal: e
     } = await Promise.resolve().then(require.bind(require, 793030));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       title: "Confirm Action",
       subtitle: "Are you sure you want to perform this action? This action cannot be undone.",
       confirmText: "Confirm",
@@ -403,7 +401,7 @@ let _ = {
     let {
       default: e
     } = await require.e("84112").then(require.bind(require, 273352));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       title: "Alert",
       body: "This is an alert message with a single action.",
       confirmText: "OK",
@@ -414,7 +412,7 @@ let _ = {
     let {
       default: e
     } = await require.e("84112").then(require.bind(require, 273352));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       title: "Confirm Action",
       body: "Are you sure you want to proceed with this action?",
       confirmText: "Yes",
@@ -427,7 +425,7 @@ let _ = {
     let {
       default: e
     } = await require.e("84112").then(require.bind(require, 273352));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       title: "Settings Change",
       body: "This will change your account settings.",
       confirmText: "Apply",
@@ -451,7 +449,7 @@ let _ = {
       thumbnail: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
       url: "screen:0:0"
     };
-    return n => (0, a.jsx)(e, C(y({}, n), {
+    return n => (0, a.jsx)(e, j(v({}, n), {
       selectedSource: l,
       selectedPreset: t.PRESET_VIDEO,
       selectedResolution: r.RESOLUTION_1080,
@@ -591,7 +589,7 @@ let _ = {
         })]
       })
     }
-    return e => (0, a.jsx)(u, y({}, e))
+    return e => (0, a.jsx)(u, v({}, e))
   },
   GuildPowerupDeactivateModal: async () => {
     let {
@@ -708,7 +706,7 @@ let _ = {
         })]
       })
     }
-    return e => (0, a.jsx)(u, y({}, e))
+    return e => (0, a.jsx)(u, v({}, e))
   },
   DataHarvestModal: async () => {
     let {
@@ -727,7 +725,7 @@ let _ = {
     let {
       default: e
     } = await Promise.all([require.e("57486"), require.e("116")]).then(require.bind(require, 87026));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       onClose: () => {
         console.log("EnableCommunityModal: Closed"), t.onClose()
       }
@@ -735,7 +733,7 @@ let _ = {
   },
   DeprivateModal: async () => {
     let e = (await Promise.all([require.e("38697"), require.e("82140")]).then(require.bind(require, 89216))).default;
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guildId: "123456789012345678",
       startingChannelId: "987654321098765432"
     }))
@@ -744,7 +742,7 @@ let _ = {
     let {
       default: e
     } = await require.e("91018").then(require.bind(require, 601572));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       videoEnabled: false,
       onEnable: () => console.log("Camera enabled")
     }))
@@ -753,7 +751,7 @@ let _ = {
     let {
       default: e
     } = await require.e("91018").then(require.bind(require, 601572));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       videoEnabled: true,
       onEnable: () => console.log("Camera enabled")
     }))
@@ -762,7 +760,7 @@ let _ = {
     let {
       default: e
     } = await require.e("52282").then(require.bind(require, 5101));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       handleResolveFlag: () => console.log("ModeratorReportResolveConfirmModal: Flag resolved")
     }))
   },
@@ -794,7 +792,7 @@ let _ = {
     let {
       default: e
     } = await require.e("95257").then(require.bind(require, 610617));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       parentId: null
     }))
   },
@@ -802,7 +800,7 @@ let _ = {
     let {
       default: e
     } = await Promise.all([require.e("49049"), require.e("4530"), require.e("15696")]).then(require.bind(require, 899201));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       applicationId: "123456789",
       mediaUrl: "https://picsum.photos/400/300.jpg"
     }))
@@ -811,7 +809,7 @@ let _ = {
     let {
       default: e
     } = await require.e("27157").then(require.bind(require, 736454));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       onSubmit: () => {
         console.log("CallUserConfirmationModal: Call confirmed"), t.onClose()
       }
@@ -821,7 +819,7 @@ let _ = {
     let {
       default: e
     } = await require.e("82560").then(require.bind(require, 391312));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       onClose: () => (console.log("OptInReorderAttemptModal: Modal closed"), t.onClose())
     }))
   },
@@ -829,7 +827,7 @@ let _ = {
     let {
       default: e
     } = await require.e("9354").then(require.bind(require, 461533));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guildId: "123456789",
       onClose: () => (console.log("GuildAntiRaidReportModal: Modal closed"), t.onClose())
     }))
@@ -847,7 +845,7 @@ let _ = {
 
     function o(n) {
       let [o, c] = s.useState(false), [d, u] = s.useState(false);
-      return (0, a.jsx)(t, C(y({}, n), {
+      return (0, a.jsx)(t, j(v({}, n), {
         header: "Consent CheckBox Examples",
         confirmText: "Close",
         cancelText: "",
@@ -929,13 +927,13 @@ let _ = {
         })
       }))
     }
-    return Chunk481060.displayName = "ConsentCheckBoxModalContent", e => (0, a.jsx)(o, y({}, e))
+    return Chunk480916.displayName = "ConsentCheckBoxModalContent", e => (0, a.jsx)(o, v({}, e))
   },
   GuildRaidLockdownFeedbackModal: async () => {
     let {
       default: e
     } = await require.e("53324").then(require.bind(require, 821312));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guildId: "123456789",
       onClose: () => (console.log("GuildRaidLockdownFeedbackModal: Modal closed"), t.onClose())
     }))
@@ -985,7 +983,7 @@ let _ = {
       premiumFeatures: null,
       moderatorReporting: null
     });
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guild: r
     }))
   },
@@ -1036,7 +1034,7 @@ let _ = {
       premiumFeatures: null,
       moderatorReporting: null
     });
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guild: i
     }))
   },
@@ -1044,7 +1042,7 @@ let _ = {
     let {
       EmojiAddModal: e
     } = await require.e("21112").then(require.bind(require, 301160));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       guildId: "123456789",
       initialTierEmojiIds: new Set(["emoji1"]),
       onSubmit: e => {
@@ -1060,7 +1058,7 @@ let _ = {
     let {
       default: e
     } = await require.e("63757").then(require.bind(require, 309690));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   FamilyCenterAcceptLinkModal: async () => {
     let e = Chunk594174.default.getUser("12345"),
@@ -1069,7 +1067,7 @@ let _ = {
     let {
       default: r
     } = await require.e("59716").then(require.bind(require, 275370));
-    return n => (0, a.jsx)(r, C(y({}, n), {
+    return n => (0, a.jsx)(r, j(v({}, n), {
       currentUser: t,
       otherUser: e
     }))
@@ -1081,7 +1079,7 @@ let _ = {
     let {
       default: r
     } = await require.e("958").then(require.bind(require, 4526));
-    return n => (0, a.jsx)(r, C(y({}, n), {
+    return n => (0, a.jsx)(r, j(v({}, n), {
       currentUser: t,
       otherUser: e
     }))
@@ -1093,7 +1091,7 @@ let _ = {
     let {
       default: r
     } = await require.e("69015").then(require.bind(require, 247265));
-    return n => (0, a.jsx)(r, C(y({}, n), {
+    return n => (0, a.jsx)(r, j(v({}, n), {
       currentUser: e,
       otherUser: t
     }))
@@ -1105,7 +1103,7 @@ let _ = {
     let {
       default: r
     } = await require.e("50872").then(require.bind(require, 442673));
-    return n => (0, a.jsx)(r, C(y({}, n), {
+    return n => (0, a.jsx)(r, j(v({}, n), {
       currentUser: e,
       otherUser: t
     }))
@@ -1114,13 +1112,13 @@ let _ = {
     let {
       default: e
     } = await Promise.all([require.e("10695"), require.e("90688")]).then(require.bind(require, 978305));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   PremiumGroupFriendsSelectorModal: async () => {
     let {
       default: e
     } = await require.e("86948").then(require.bind(require, 153241)), t = Chunk78839.Z.getPremiumGroupSubscription();
-    return null == exports ? () => null : n => (0, a.jsx)(e, C(y({}, n), {
+    return null == exports ? () => null : n => (0, a.jsx)(e, j(v({}, n), {
       subscription: t
     }))
   },
@@ -1128,7 +1126,7 @@ let _ = {
     let {
       default: e
     } = await require.e("26450").then(require.bind(require, 382927));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       premiumGroupSubscriptionId: "1234567890",
       isExistingSub: false,
       premiumGroupPrimaryName: "Test User"
@@ -1138,25 +1136,25 @@ let _ = {
     let {
       default: e
     } = await require.e("98137").then(require.bind(require, 397013));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   SafetyUserSentimentFeedbackModal: async () => {
     let {
       default: e
     } = await Promise.all([require.e("26860"), require.e("52432")]).then(require.bind(require, 349994));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   CaptchaTestModal: async () => {
     let {
       default: e
     } = await require.e("61323").then(require.bind(require, 333636));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   PasswordConfirm: async () => {
     let {
       default: e
     } = await Promise.resolve().then(require.bind(require, 355497));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       title: "Confirm Password",
       actionText: "Submit",
       handleSubmit: async e => {
@@ -1168,7 +1166,7 @@ let _ = {
     let {
       default: e
     } = await require.e("2435").then(require.bind(require, 821606));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       url: "https://example-phishing-site.com/malicious-page"
     }))
   },
@@ -1176,7 +1174,7 @@ let _ = {
     let {
       default: e
     } = await require.e("35489").then(require.bind(require, 582712)), t = Object.keys(Chunk430824.Z.getGuilds())[0];
-    return n => (0, a.jsx)(e, C(y({}, n), {
+    return n => (0, a.jsx)(e, j(v({}, n), {
       guildId: t
     }))
   },
@@ -1184,7 +1182,7 @@ let _ = {
     let {
       default: e
     } = await require.e("74194").then(require.bind(require, 269817));
-    return t => (0, a.jsx)(e, C(y({}, t), {
+    return t => (0, a.jsx)(e, j(v({}, t), {
       url: "https://external-website.com/some-page"
     }))
   },
@@ -1192,19 +1190,19 @@ let _ = {
     let {
       default: e
     } = await require.e("37971").then(require.bind(require, 848548));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   UserAgreementsModal: async () => {
     let {
       default: e
     } = await require.e("50536").then(require.bind(require, 133876));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   DisableRiskyPermsModal: async () => {
     let {
       default: e
     } = await require.e("59298").then(require.bind(require, 193845)), t = Object.values(Chunk430824.Z.getGuilds())[0];
-    return null == exports ? () => null : n => (0, a.jsx)(e, C(y({}, n), {
+    return null == exports ? () => null : n => (0, a.jsx)(e, j(v({}, n), {
       guild: t
     }))
   },
@@ -1212,46 +1210,47 @@ let _ = {
     let {
       default: e
     } = await Promise.all([require.e("74969"), require.e("27284")]).then(require.bind(require, 153932));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   },
   AcceptInviteModal: async () => {
     let {
       default: e
     } = await Promise.all([require.e("13873"), require.e("86872"), require.e("92977")]).then(require.bind(require, 472365));
-    return t => (0, a.jsx)(e, y({}, t))
+    return t => (0, a.jsx)(e, v({}, t))
   }
 };
 
-function S() {
-  let e = Chunk473749.useMemo(() => Object.keys(_).map(e => ({
+function C() {
+  let e = Chunk473749.useMemo(() => Object.keys(y).map(e => ({
       label: e,
-      value: e
+      value: e,
+      id: e
     })).sort((e, t) => e.label.localeCompare(t.label)), []),
-    [t, n] = Chunk473749.useState(module[0].value);
+    [t, n] = Chunk473749.useState(null);
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk663618.panel,
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk68428.panelInner,
-      children: [(0, Chunk54381.jsxs)("section", {
+      children: [(0, Chunk54381.jsx)("section", {
         className: Chunk68428.section,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-          variant: "heading-md/semibold",
-          children: "Open a Modal"
-        }), (0, Chunk54381.jsxs)("div", {
-          className: Chunk68428.inputRow,
-          children: [(0, Chunk54381.jsx)(Chunk199849.B6, {
-            className: Chunk68428.input,
+        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+          direction: "horizontal",
+          gap: 8,
+          align: "end",
+          children: [(0, Chunk54381.jsx)(Chunk481060.VcW, {
+            label: "Open a Modal",
+            placeholder: "Select a modal",
             options: module,
-            isSelected: e => t === e,
-            serialize: e => e,
-            select: e => n(e),
-            popoutLayerContext: Chunk246992.O$
+            value: exports,
+            selectionMode: "single",
+            onSelectionChange: e => n(e)
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Open",
-            onClick: () => (0, Chunk481060.ZDy)(_[exports])
+            disabled: null == exports,
+            onClick: () => null != exports && (0, Chunk481060.ZDy)(y[exports])
           })]
-        })]
+        })
       }), (0, Chunk54381.jsxs)("section", {
         className: Chunk68428.section,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {

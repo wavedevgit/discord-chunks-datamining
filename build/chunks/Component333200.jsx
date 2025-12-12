@@ -84,20 +84,23 @@ function m(e) {
     onKeyDown: E,
     onFocus: b,
     onBlur: y,
-    placeholder: O
+    placeholder: O,
+    closeOnSelect: v,
+    selectionMode: S
   } = d, {
-    isOpen: v,
-    setIsOpen: S,
-    refs: I,
-    floatingStyles: T,
-    getFloatingProps: C,
-    getReferenceProps: A,
-    transitionStyles: N
+    isOpen: I,
+    setIsOpen: T,
+    refs: C,
+    floatingStyles: A,
+    getFloatingProps: N,
+    getReferenceProps: P,
+    transitionStyles: R
   } = (0, s.C)();
   return (0, r.jsxs)(a.uz, f(u({}, d), {
     isCollapsible: true,
-    isOpen: v,
-    setIsOpen: S,
+    isOpen: I,
+    setIsOpen: T,
+    closeOnSelect: null != v ? v : "single" === S,
     children: [(0, r.jsx)(a.Ct, u({
       hideTags: t,
       required: h,
@@ -108,13 +111,13 @@ function m(e) {
       onFocus: b,
       onKeyDown: E,
       showChevronButton: true,
-      ref: I.setReference,
+      ref: C.setReference,
       placeholder: O
-    }, _, A())), v && (0, r.jsx)("div", f(u({
-      ref: I.setFloating,
+    }, _, P())), I && (0, r.jsx)("div", f(u({
+      ref: C.setFloating,
       className: l.selectDropdown,
-      style: u({}, T, N)
-    }, C()), {
+      style: u({}, A, R)
+    }, N()), {
       children: (0, r.jsx)(a.px, {
         renderListItem: e => (0, r.jsx)(o.W, u({}, e)),
         maxVisibleItems: c
