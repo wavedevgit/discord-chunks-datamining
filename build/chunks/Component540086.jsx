@@ -21,7 +21,6 @@ function c(e) {
         eventId: t.data.eventId
       });
     case "message":
-    case "channelSummary":
     case "generatedCandidate":
     case "forumThread":
       return (0, r.jsx)(o.Z, {

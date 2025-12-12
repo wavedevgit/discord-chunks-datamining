@@ -26,10 +26,6 @@ function p(e) {
         return {
           channelId: t.data.message.channel_id, messageIds: [t.data.message.id], title: true
         };
-      case "channelSummary":
-        return {
-          channelId: t.data.topic.channelId, messageIds: [t.data.topic.startId], title: t.data.topic.topic
-        };
       case "generatedCandidate":
         return {
           channelId: t.data.item.channel_id, messageIds: t.data.item.message_ids.slice(0, 1), title: t.data.item.primary_text

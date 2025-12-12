@@ -65,18 +65,8 @@ function h(e) {
       } = e;
       if (r.some(e => "end" === e.item.data.kind) && _(true), 0 === r.length) return;
       T(r), (null != (n = null == (t = r[r.length - 1]) ? true : t.index) ? n : 0) > 10 && (null == h || h());
-      let i = [];
-      r.forEach(e => {
-        let {
-          item: t
-        } = e;
-        "channelSummary" === t.data.kind && i.push({
-          id: t.id,
-          type: "summary",
-          timestamp: Date.now()
-        })
-      });
-      let l = (0, d.FJ)(r),
+      let i = [],
+        l = (0, d.FJ)(r),
         o = Date.now();
       for (let e = l.length - 1; e >= 0; e--) {
         let t = l[e];

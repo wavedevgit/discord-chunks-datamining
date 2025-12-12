@@ -2,7 +2,7 @@
 /** chunk id: 643281, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => C
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -85,20 +85,14 @@ function v() {
   d.membersData.isUpdating = false
 }
 
-function S() {
-  var e, t, n;
-  let r = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.id;
-  return null != r ? r : null != (n = null == (t = d.membershipData.data) ? true : exports.subscriptionId) ? require : null
-}
-
-function I(e) {
+function S(e) {
   let {
     subscriptionId: t
   } = e;
   return !d.membersData.isFetching && (o.Z.wait(() => (0, s.i1)(t).catch(c.VqG)), true)
 }
 
-function T() {
+function I() {
   d = {
     membersData: {
       data: null,
@@ -112,7 +106,7 @@ function T() {
     }
   }
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk78839.Z)
   }
@@ -135,10 +129,24 @@ class C extends(r = Chunk442837.ZP.Store) {
     return d.membershipData.isFetching
   }
   hasFetchedMembership() {
-    return d.membershipData.hasFetched
+    return null !== d.membershipData.data
   }
   getPremiumGroupSubscriptionId() {
-    return S()
+    var e, t, n;
+    let r = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.id;
+    return null != r ? r : null != (n = null == (t = d.membershipData.data) ? true : exports.subscriptionId) ? require : null
+  }
+  getPremiumGroupSubscriptionStatus() {
+    var e, t, n;
+    let r = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.status;
+    return null != r ? r : null != (n = null == (t = d.membershipData.data) ? true : exports.subscriptionStatus) ? require : null
+  }
+  getPremiumGroupCurrentPeriodEnd() {
+    var e, t;
+    let n = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.currentPeriodEnd;
+    if (null != require) return require;
+    let r = null == (t = d.membershipData.data) ? true : exports.currentPeriodEnd;
+    return null != r && "" !== r ? new Date(r) : null
   }
   getNumUsedSeats() {
     return null == d.membersData.data ? 0 : d.membersData.data.members.length
@@ -152,9 +160,9 @@ class C extends(r = Chunk442837.ZP.Store) {
     return Chunk282793.v$
   }
 }
-u(C, "displayName", "PremiumGroupStore");
-let A = new C(Chunk570140.Z, {
-  PREMIUM_GROUP_MEMBERS_REQUEST: I,
+u(T, "displayName", "PremiumGroupStore");
+let C = new T(Chunk570140.Z, {
+  PREMIUM_GROUP_MEMBERS_REQUEST: S,
   PREMIUM_GROUP_MEMBERS_FETCH_START: f,
   PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS: p,
   PREMIUM_GROUP_MEMBERS_FETCH_FAILURE: _,
@@ -172,5 +180,5 @@ let A = new C(Chunk570140.Z, {
   PREMIUM_GROUP_REMOVE_INVITE_START: y,
   PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: O,
   PREMIUM_GROUP_REMOVE_INVITE_FAILURE: v,
-  LOGOUT: T
+  LOGOUT: I
 })

@@ -10,17 +10,6 @@ var Chunk473749 = require("./473749.js"),
   Chunk797394 = require("./797394.js");
 
 function o(e, t, n) {
-  if (t.type === s.Ni.SUMMARY) return {
-    id: e.id,
-    timestamp: Date.now(),
-    data: {
-      kind: "channelSummary",
-      topic: t.summary
-    },
-    score: e.score,
-    debugScore: JSON.stringify(e.score_components),
-    unread: n
-  };
   if (t.type === s.Ni.MESSAGE) return t.message.id === t.message.channel_id && null != t.threadChannel ? {
     id: e.id,
     timestamp: Date.now(),
@@ -79,7 +68,7 @@ function o(e, t, n) {
     debugScore: JSON.stringify(e.score_components),
     unread: n
   };
-  else if (t.type === s.Ni.GENERATED_CANDIDATE) return {
+  if (t.type === s.Ni.GENERATED_CANDIDATE) return {
     id: e.id,
     timestamp: Date.now(),
     data: {

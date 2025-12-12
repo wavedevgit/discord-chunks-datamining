@@ -32,7 +32,9 @@ async function d() {
       type: "PREMIUM_GROUP_MEMBERSHIP_FETCH_SUCCESS",
       membership: {
         subscriptionId: module.subscription_id,
-        memberType: module.member_type
+        memberType: module.member_type,
+        subscriptionStatus: module.subscription_status,
+        currentPeriodEnd: module.current_period_end
       }
     }) : Chunk570140.Z.dispatch({
       type: "PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND"

@@ -1,17 +1,16 @@
 /** Chunk was on 1272 **/
 /** chunk id: 948053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk695346 = require("./695346.js"),
   Chunk960048 = require("./960048.js"),
-  Chunk518929 = require("./518929.js"),
   Chunk613928 = require("./613928.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -29,13 +28,13 @@ function u(e) {
   }
   return e
 }
-let d = {
+let u = {
   async fetchPopularGuildsFromCategories(e, t) {
     try {
       let {
         guilds: n
       } = (await r.tn.post({
-        url: c.ANM.GRAVITY_TOPIC_GUILDS,
+        url: o.ANM.GRAVITY_TOPIC_GUILDS,
         body: {
           category_ids: e,
           offset: t
@@ -87,9 +86,9 @@ let d = {
     }
   },
   async gravityJoinGuild(e, t) {
-    if ((0, o.rK)("gravityJoinGuild") && 0 !== e.length) try {
+    if ((0, s.rK)("gravityJoinGuild") && 0 !== e.length) try {
       return await r.tn.post({
-        url: c.ANM.GRAVITY_JOIN_GUILD,
+        url: o.ANM.GRAVITY_JOIN_GUILD,
         body: {
           guild_ids: e,
           location: t
@@ -101,15 +100,14 @@ let d = {
     }
   },
   async fetchForNotification(e, t) {
-    if ((0, o.rK)("fetchInitial")) try {
+    if ((0, s.rK)("fetchInitial")) try {
       let n = await r.tn.post({
-        url: c.ANM.GRAVITY_ITEMS_HYDRATE,
+        url: o.ANM.GRAVITY_ITEMS_HYDRATE,
         body: {
           message_items: [{
             channel_id: e,
             message_id: t
           }],
-          summary_items: [],
           activity_items: [],
           generated_candidate_items: []
         },
@@ -125,29 +123,24 @@ let d = {
     }
   },
   fetchForStatusNotification(e) {
-    (0, o.rK)("fetchInitialStatus") && i.Z.dispatch({
+    (0, s.rK)("fetchInitialStatus") && i.Z.dispatch({
       type: "LOAD_ICYMI_FROM_NOTIFICATION",
       customStatusItem: e
     })
   },
   async fetchHydrated(e, t, n) {
-    if (!(0, o.rK)("fetchHydrated")) return;
+    if (!(0, s.rK)("fetchHydrated")) return;
     let {
-      contentGenerationEnabled: l
-    } = (0, s.q3)("fetchHydrated", false), {
-      messageItems: u,
-      summaryItems: d,
-      activityItems: p,
-      generatedCandidateItems: f
+      messageItems: l,
+      activityItems: c,
+      generatedCandidateItems: u
     } = n;
-    if (0 === u.length && 0 === d.length && 0 === p.length && 0 === f.length) return void i.Z.dispatch({
+    if (0 === l.length && 0 === c.length && 0 === u.length) return void i.Z.dispatch({
       type: "LOAD_ICYMI_HYDRATED",
       requestMessageItems: [],
-      requestSummaryItems: [],
       requestActivityItems: [],
       requestGeneratedCandidateItems: [],
       messageItems: [],
-      summaryItems: [],
       activityItems: [],
       generatedCandidateItems: [],
       startingIndex: e,
@@ -155,31 +148,28 @@ let d = {
     });
     try {
       let n = await r.tn.post({
-        url: c.ANM.GRAVITY_ITEMS_HYDRATE,
+        url: o.ANM.GRAVITY_ITEMS_HYDRATE,
         body: {
-          message_items: u,
-          summary_items: d,
-          activity_items: p,
-          generated_candidate_items: l ? f : []
+          message_items: l,
+          activity_items: c,
+          generated_candidate_items: u
         },
         rejectWithError: false
       });
       i.Z.dispatch({
         type: "LOAD_ICYMI_HYDRATED",
-        requestMessageItems: u,
-        requestSummaryItems: d,
-        requestActivityItems: p,
-        requestGeneratedCandidateItems: l ? f : [],
+        requestMessageItems: l,
+        requestActivityItems: c,
+        requestGeneratedCandidateItems: u,
         messageItems: n.body.message_items,
-        summaryItems: n.body.summary_items,
         activityItems: n.body.activity_items,
-        generatedCandidateItems: l ? n.body.generated_candidate_items : [],
+        generatedCandidateItems: n.body.generated_candidate_items,
         startingIndex: e,
         endingIndex: t
       })
     } catch (r) {
       a.Z.captureException(r);
-      let n = (0, o.y_)(e, t);
+      let n = (0, s.y_)(e, t);
       i.Z.dispatch({
         type: "LOAD_ICYMI_HYDRATED_FAILED",
         hydrationId: n
@@ -321,17 +311,17 @@ let d = {
     })
   },
   feedItemActioned(e) {
-    i.Z.dispatch(u({
+    i.Z.dispatch(c({
       type: "ICYMI_FEED_ITEM_ACTIONED"
     }, e))
   },
   feedFilterActioned(e) {
-    i.Z.dispatch(u({
+    i.Z.dispatch(c({
       type: "ICYMI_FEED_FILTER_ACTIONED"
     }, e))
   },
   feedPageActioned(e) {
-    i.Z.dispatch(u({
+    i.Z.dispatch(c({
       type: "ICYMI_FEED_PAGE_ACTIONED"
     }, e))
   }
