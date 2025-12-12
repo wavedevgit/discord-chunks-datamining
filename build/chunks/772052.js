@@ -1,0 +1,9 @@
+/** Chunk was on 97158 **/
+/** chunk id: 772052, original params: e,t,n (module,exports,require) **/
+module.exports = {
+  contentContainer: "contentContainer__665be",
+  rewardTileContainer: "rewardTileContainer__665be",
+  rewardTile: "rewardTile__665be",
+  copyContainer: "copyContainer__665be",
+  heading: "heading__665be"
+}

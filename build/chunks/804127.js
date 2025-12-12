@@ -1,4 +1,4 @@
-/** Chunk was on 96861 **/
+/** Chunk was on 66547 **/
 /** chunk id: 804127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   In: () => c,
@@ -18,27 +18,27 @@ function l(e) {
     quest: o,
     rewardCode: l,
     preview: c
-  } = e, [u, d] = r.useState(false), [m, p] = r.useState(false), C = r.useCallback(async (e, t, n) => {
+  } = e, [d, u] = r.useState(false), [m, p] = r.useState(false), C = r.useCallback(async (e, t, n) => {
     try {
-      p(true), await (0, i.QB)(e, t, n), d(false), p(false)
+      p(true), await (0, i.QB)(e, t, n), u(false), p(false)
     } catch (e) {
-      d(true), p(false)
+      u(true), p(false)
     }
   }, []), f = r.useCallback(e => {
     try {
       (0, i.pf)(e)
     } catch (e) {
-      d(true)
+      u(true)
     }
   }, []);
   return r.useEffect(() => {
     var e, r;
-    true === c || null != l || u || t || m || n || (d(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null ? C(o.id, s.y$.CROSS_PLATFORM, a) : (null == (r = o.userStatus) ? true : r.claimedAt) != null && f(o.id))
-  }, [C, f, u, t, m, n, a, o, l, c]), {
+    true === c || null != l || d || t || m || n || (u(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null ? C(o.id, s.y$.CROSS_PLATFORM, a) : (null == (r = o.userStatus) ? true : r.claimedAt) != null && f(o.id))
+  }, [C, f, d, t, m, n, a, o, l, c]), {
     claimCode: C,
     fetchCode: f,
-    hasError: u,
-    setHasError: d
+    hasError: d,
+    setHasError: u
   }
 }
 

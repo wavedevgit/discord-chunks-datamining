@@ -4,7 +4,7 @@ require.d(exports, {
   d: () => i
 });
 let r = (0, require("./427164.js").le)({
-  name: "2025-11-message-context-menu-mana-design",
+  name: "2025-11-message-context-menu",
   kind: "user",
   defaultConfig: {
     variant: "control",
